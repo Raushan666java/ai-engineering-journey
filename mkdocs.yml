@@ -24,7 +24,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    text: Inter
+    text: Source Serif 4
     code: JetBrains Mono
   features:
     - navigation.tabs
@@ -70,6 +70,13 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
+
+extra_css:
+  - assets/css/blueprint.css
+
+extra_javascript:
+  - assets/js/noise.js
+  - assets/js/blueprint.js
 
 extra:
   social:
@@ -151,3 +158,17 @@ nav:
     - All Resources: resources/index.md
     - Cheatsheets: resources/cheatsheets.md
     - PHP to Python: resources/php-to-python.md
+
+  - Placement Prep:
+    - Overview: placement/index.md
+    - 90-Day Plan: placement/goal.md
+    - Meta Skills: placement/01-meta-skills/index.md
+    - CS Core: placement/02-cs-core/index.md
+    - Programming: placement/03-programming/index.md
+    - Web Development: placement/04-web-dev/index.md
+    - AI & ML: placement/05-ai-ml/index.md
+    - DevOps: placement/06-devops/index.md
+    - Projects: placement/07-projects/index.md
+    - Interview Prep: placement/08-interview-prep/index.md
+    - Resources: placement/09-resources/index.md
+    - System Design: placement/10-system-design/index.md

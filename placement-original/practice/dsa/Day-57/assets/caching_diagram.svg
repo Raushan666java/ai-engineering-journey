@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="200">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="18" y="26" font-family="Arial" font-size="16" fill="#333">Day 57 — Caching Layers &amp; Eviction Flow</text>
+  
+  <rect x="40" y="60" width="180" height="50" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="55" y="82" font-size="12" font-weight="bold">L1: In-Process</text>
+  <text x="55" y="98" font-size="11">(LRU/LFU Cache)</text>
+  
+  <rect x="260" y="60" width="180" height="50" rx="6" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="275" y="82" font-size="12" font-weight="bold">L2: Distributed</text>
+  <text x="275" y="98" font-size="11">(Redis/Memcached)</text>
+  
+  <rect x="480" y="60" width="180" height="50" rx="6" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="495" y="82" font-size="12" font-weight="bold">L3: Database</text>
+  <text x="495" y="98" font-size="11">(Query Cache + Persist)</text>
+  
+  <line x1="220" y1="85" x2="260" y2="85" stroke="#666" marker-end="url(#arrow)"/>
+  <line x1="440" y1="85" x2="480" y2="85" stroke="#666" marker-end="url(#arrow)"/>
+  
+  <text x="220" y="145" font-size="11" fill="#555">Cache Miss →</text>
+  <text x="440" y="145" font-size="11" fill="#555">Cache Miss →</text>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#666"/>
+    </marker>
+  </defs>
+</svg>

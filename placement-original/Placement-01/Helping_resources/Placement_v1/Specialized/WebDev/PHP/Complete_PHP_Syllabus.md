@@ -1,0 +1,790 @@
+# Complete PHP Syllabus
+
+## Introduction to PHP
+
+### 1. History and Evolution of PHP
+- Origins of PHP (Personal Home Page)
+- Evolution from PHP/FI to PHP 8.x
+- Major milestones in PHP development
+- PHP's role in web development
+- PHP Foundation and community
+
+### 2. Setting Up PHP Environment
+- Installing PHP on different operating systems
+  - Windows installation
+  - macOS installation
+  - Linux installation
+- Web server options
+  - Apache with PHP
+  - Nginx with PHP-FPM
+  - Built-in PHP server
+- Development environments
+  - XAMPP, WAMP, MAMP
+  - Docker-based PHP environments
+  - Laragon for Windows
+- PHP configuration (php.ini)
+- Development tools and IDEs
+  - VS Code with PHP extensions
+  - PhpStorm
+  - Sublime Text
+
+### 3. Basic Syntax
+- PHP tags (`<?php ?>`, `<?= ?>`)
+- Statements and semicolons
+- Comments (single-line, multi-line)
+- Case sensitivity in PHP
+- Whitespace and formatting
+- PHP and HTML integration
+- PHP script execution flow
+
+## PHP Fundamentals
+
+### 4. Variables and Data Types
+- Variable declaration and naming rules
+- PHP's dynamic typing
+- Basic data types
+  - Integers
+  - Floats/doubles
+  - Strings
+  - Booleans
+  - NULL
+  - Arrays
+  - Objects
+  - Resources
+- Type juggling and type casting
+- Variable scope (global, local, static)
+- Variable variables
+- Constants
+- Magic constants
+
+### 5. Operators
+- Arithmetic operators (`+`, `-`, `*`, `/`, `%`, `**`)
+- Assignment operators (`=`, `+=`, `-=`, etc.)
+- Comparison operators (`==`, `===`, `!=`, `!==`, `<`, `>`, etc.)
+- Logical operators (`&&`, `||`, `!`, `and`, `or`, `xor`)
+- String operators (`.`, `.=`)
+- Array operators (`+`, `==`, `===`, `!=`, `!==`)
+- Increment/decrement operators (`++`, `--`)
+- Bitwise operators (`&`, `|`, `^`, `~`, `<<`, `>>`)
+- Execution operators (backticks)
+- Error control operator (`@`)
+- Ternary operator (`? :`)
+- Null coalescing operator (`??`)
+- Nullsafe operator (`?->`)
+- Spaceship operator (`<=>`)
+
+### 6. Control Structures
+- Conditional statements
+  - if, else, elseif/else if
+  - Alternative syntax (if:, endif;)
+  - switch statement
+  - match expression (PHP 8+)
+- Loops
+  - for loop
+  - while loop
+  - do-while loop
+  - foreach loop
+  - Alternative syntax for loops
+- Control flow
+  - break
+  - continue
+  - return
+  - goto (rarely used)
+  - include, require, include_once, require_once
+
+### 7. Functions
+- Function declaration and calling
+- Function parameters
+  - Default parameter values
+  - Type declarations
+  - Variable-length parameter lists
+  - Named arguments (PHP 8+)
+- Return values and type declarations
+- Variable scope in functions
+- Anonymous functions and closures
+- Arrow functions (PHP 7.4+)
+- Callable type and callbacks
+- Recursive functions
+- Built-in functions overview
+
+### 8. Arrays
+- Array types
+  - Indexed arrays
+  - Associative arrays
+  - Multidimensional arrays
+- Array creation and syntax
+- Accessing array elements
+- Array operations
+  - Adding elements
+  - Removing elements
+  - Merging arrays
+  - Slicing and splicing
+- Array functions
+  - Iteration functions (map, filter, reduce)
+  - Sorting functions
+  - Search functions
+  - Information functions
+- Array destructuring (PHP 7.1+)
+- Array spread operator (PHP 7.4+)
+
+### 9. Strings
+- String creation
+  - Single and double quotes
+  - Heredoc and Nowdoc syntax
+- String operations
+  - Concatenation
+  - String length
+  - Accessing characters
+  - Comparing strings
+- String manipulation
+  - Case conversion
+  - Substring operations
+  - Search and replace
+  - Trimming
+  - Padding
+  - Splitting and joining
+- Regular expressions
+  - Pattern matching
+  - Pattern replacement
+- String formatting
+  - printf and sprintf
+  - number_format
+- Multibyte string functions
+
+## Web Development with PHP
+
+### 10. Forms and User Input
+- HTML forms basics
+  - Form structure
+  - Form methods (GET vs POST)
+- Accessing form data
+  - $_GET, $_POST, $_REQUEST
+  - Form arrays
+- Input validation and sanitization
+  - Basic validation
+  - Filter functions
+  - Custom validation
+- Security considerations
+  - Cross-Site Scripting (XSS) prevention
+  - Cross-Site Request Forgery (CSRF) protection
+- File uploads
+  - HTML form setup
+  - Processing uploads
+  - Security considerations
+- Handling multiple form pages
+- AJAX form handling
+
+### 11. Sessions and Cookies
+- HTTP statelessness
+- Sessions
+  - Session basics
+  - Session configuration
+  - Session security
+  - Session storage
+- Cookies
+  - Setting cookies
+  - Reading cookies
+  - Deleting cookies
+- Session-based authentication
+- Remember Me functionality
+- Best practices for sessions and cookies
+
+### 12. File Handling
+- Basic file operations
+  - Reading files
+  - Writing files
+  - File modes
+- File information
+  - File existence and properties
+  - File paths
+- Directory operations
+  - Reading directories
+  - Creating and removing directories
+- File manipulation
+  - Copying and moving files
+  - File permissions
+- CSV file handling
+- JSON file handling
+- File uploads
+  - Basic file upload
+  - Secure file upload
+
+### 13. Error Handling and Debugging
+- Error types
+  - Error levels
+  - Common error scenarios
+- Error reporting
+  - Configuration
+  - PHP.ini settings
+- Exception handling
+  - Basic try-catch
+  - Multiple catch blocks
+  - Custom exceptions
+  - Exception hierarchy (PHP 7+)
+- Custom error handlers
+  - Set error handler
+  - Set exception handler
+  - Error to exception conversion
+- Shutdown function
+- Logging
+  - Basic error logging
+  - Advanced logging with Monolog
+- Debugging techniques
+  - Basic debugging
+  - Using Xdebug
+  - Error reporting in development vs production
+
+### 14. Database Integration
+- Database connection methods
+  - MySQLi (Object-Oriented)
+  - MySQLi (Procedural)
+  - PDO (PHP Data Objects)
+  - Connection comparison
+- CRUD operations
+  - Create (INSERT)
+  - Read (SELECT)
+  - Update (UPDATE)
+  - Delete (DELETE)
+- Prepared statements
+  - Why use prepared statements
+  - MySQLi prepared statement types
+  - PDO parameter binding
+- Transactions
+  - MySQLi transactions
+  - PDO transactions
+- Error handling
+  - MySQLi error handling
+  - PDO error handling
+- Database design patterns
+  - Data Access Object (DAO)
+  - Active Record pattern
+
+## Object-Oriented PHP
+
+### 15. Classes and Objects
+- Basic class definition
+- Constructor and destructor
+- Constructor property promotion (PHP 8.0+)
+- Properties and methods
+  - Access modifiers
+  - Property types (PHP 7.4+)
+  - Static properties and methods
+  - Constants
+
+### 16. Inheritance and Polymorphism
+- Basic inheritance
+- Final keyword
+- Abstract classes and methods
+- Interfaces
+  - Basic interface
+  - Interface inheritance
+- Traits
+  - Basic trait usage
+  - Trait method conflict resolution
+  - Trait visibility modification
+- Namespaces
+  - Basic namespace usage
+  - Multiple namespaces
+  - Importing classes with aliases
+
+### 17. Advanced OOP Concepts
+- Magic methods
+  - __construct, __destruct
+  - __get, __set, __isset, __unset
+  - __call, __callStatic
+  - __toString, __invoke
+  - __clone, __sleep, __wakeup
+- Type hinting and return types
+  - Parameter and return type declarations
+  - Nullable types
+  - Union types (PHP 8.0+)
+  - void return type
+  - mixed type (PHP 8.0+)
+- Method chaining
+- Late static binding
+- Object cloning
+- Anonymous classes
+- Enumerations (PHP 8.1+)
+- Readonly properties (PHP 8.1+)
+- First-class callable syntax (PHP 8.1+)
+- Intersection types (PHP 8.1+)
+
+### 18. Design Patterns in PHP
+- Creational patterns
+  - Singleton
+  - Factory
+  - Abstract Factory
+  - Builder
+  - Prototype
+- Structural patterns
+  - Adapter
+  - Bridge
+  - Composite
+  - Decorator
+  - Facade
+  - Proxy
+- Behavioral patterns
+  - Observer
+  - Strategy
+  - Command
+  - Iterator
+  - Mediator
+  - State
+  - Template Method
+- MVC pattern
+- Repository pattern
+- Dependency injection
+
+## Advanced PHP
+
+### 19. Working with External Services
+- HTTP requests with cURL
+  - Basic requests
+  - Request options
+  - Response handling
+  - Error handling
+- Working with APIs
+  - RESTful APIs
+  - SOAP APIs
+  - GraphQL APIs
+  - Authentication methods
+- JSON and XML processing
+  - JSON encoding/decoding
+  - XML parsing and generation
+  - SimpleXML
+  - DOM
+- OAuth integration
+- Webhook handling
+- Email sending
+  - mail() function
+  - PHPMailer library
+  - SMTP configuration
+- PDF generation
+  - FPDF
+  - TCPDF
+  - mPDF
+- Image manipulation
+  - GD library
+  - Imagick extension
+- Working with ZIP files
+- CSV processing
+- Excel file generation
+
+### 20. Security Best Practices
+- Input validation and sanitization
+- Output escaping
+- SQL injection prevention
+- Cross-site scripting (XSS) prevention
+- Cross-site request forgery (CSRF) protection
+- Session security
+- Password hashing
+  - password_hash()
+  - password_verify()
+  - Password strength
+- File upload security
+- Directory traversal prevention
+- Remote file inclusion prevention
+- Content Security Policy
+- HTTPS and TLS
+- Security headers
+- Secure coding practices
+- Security auditing tools
+
+### 21. Performance Optimization
+- Opcode caching (OPcache)
+- Memory management
+- Profiling PHP applications
+  - Xdebug profiler
+  - Blackfire.io
+- Query optimization
+- Caching strategies
+  - Output caching
+  - Object caching
+  - Fragment caching
+- Optimizing loops and algorithms
+- Reducing database calls
+- Efficient string operations
+- Autoloading optimization
+- Composer optimization
+- Static analysis tools
+- Benchmarking techniques
+
+### 22. Testing in PHP
+- PHPUnit framework
+  - Installation and setup
+  - Writing tests
+  - Assertions
+  - Test suites
+- Test-driven development
+- Mocking and stubbing
+  - Mock objects
+  - Stub methods
+  - Test doubles
+- Code coverage
+- Integration testing
+- Functional testing
+- Behavior-driven development
+  - Behat
+  - PHPSpec
+- Continuous integration
+- Testing best practices
+
+### 23. Package Management with Composer
+- Composer basics
+  - Installation
+  - composer.json
+  - composer.lock
+- Managing dependencies
+  - Installing packages
+  - Updating packages
+  - Removing packages
+- Semantic versioning
+- Publishing packages
+- Private repositories
+- Composer scripts
+- Autoloading with Composer
+  - PSR-4 autoloading
+  - Classmap autoloading
+  - Files autoloading
+- Packagist
+- Composer optimization
+
+### 24. Asynchronous PHP
+- Swoole extension
+- ReactPHP
+- Amp
+- Fibers (PHP 8.1+)
+- Concurrent request handling
+- Event loops
+- Promises and coroutines
+- WebSockets in PHP
+- Long-running PHP processes
+- Worker processes
+- Task scheduling
+
+### 25. PHP Frameworks
+- Laravel
+  - Architecture
+  - Features
+  - Ecosystem
+- Symfony
+  - Components
+  - Framework
+  - Ecosystem
+- CodeIgniter
+  - Simplicity
+  - Performance
+  - Features
+- Yii
+  - Component-based architecture
+  - Performance
+  - Features
+- Laminas (formerly Zend)
+  - Enterprise features
+  - Modularity
+  - Integration
+- Slim
+  - Micro-framework
+  - API development
+  - Middleware
+- CakePHP
+  - Convention over configuration
+  - ORM
+  - Features
+- Framework architecture concepts
+- MVC pattern implementation
+- Choosing the right framework
+
+### 26. DevOps for PHP
+- Deployment strategies
+  - Traditional deployment
+  - Continuous deployment
+  - Blue-green deployment
+  - Canary releases
+- Containerization with Docker
+  - PHP Docker images
+  - Docker Compose for PHP applications
+  - Multi-stage builds
+- PHP-FPM configuration
+  - Process manager settings
+  - Pool configuration
+  - Performance tuning
+- Web server configuration
+  - Nginx with PHP
+  - Apache with PHP
+  - Optimizing for PHP applications
+- Environment configuration
+  - Environment variables
+  - Configuration management
+  - Secrets management
+- CI/CD pipelines
+  - GitHub Actions
+  - GitLab CI
+  - Jenkins
+- Monitoring PHP applications
+  - Application monitoring
+  - Error tracking
+  - Performance monitoring
+- Logging best practices
+  - Structured logging
+  - Log aggregation
+  - Log analysis
+- Scaling PHP applications
+  - Horizontal scaling
+  - Load balancing
+  - Caching strategies
+- Server security hardening
+  - Firewall configuration
+  - Security updates
+  - Principle of least privilege
+
+### 27. Modern PHP Features (PHP 7.x and 8.x)
+- PHP 7.0 features
+  - Scalar type declarations
+  - Return type declarations
+  - Null coalescing operator
+  - Spaceship operator
+  - Anonymous classes
+- PHP 7.1 features
+  - Nullable types
+  - Void return type
+  - Symmetric array destructuring
+  - Class constant visibility
+- PHP 7.2 features
+  - Object type hint
+  - Abstract method overriding
+  - Trailing commas in list syntax
+- PHP 7.3 features
+  - Flexible Heredoc and Nowdoc syntax
+  - Array destructuring with reference
+  - Trailing commas in function calls
+- PHP 7.4 features
+  - Typed properties
+  - Arrow functions
+  - Null coalescing assignment operator
+  - Spread operator in arrays
+  - Numeric literal separator
+  - Weak references
+- PHP 8.0 features
+  - Named arguments
+  - Attributes
+  - Constructor property promotion
+  - Union types
+  - Match expression
+  - Nullsafe operator
+  - JIT compilation
+- PHP 8.1 features
+  - Enumerations
+  - Readonly properties
+  - First-class callable syntax
+  - Intersection types
+  - Never return type
+  - Final class constants
+  - Fibers
+- PHP 8.2 features
+  - Readonly classes
+  - Disjunctive normal form types
+  - Null, false, and true as standalone types
+  - Deprecated dynamic properties
+- PHP 8.3 features
+  - Typed class constants
+  - Dynamic class constant fetch
+  - New json_validate function
+  - Randomizer class improvementslications
+  - Xdebug profiler
+  - Blackfire.io
+- Query optimization
+- Caching strategies
+  - Output caching
+  - Object caching
+  - Fragment caching
+- Optimizing loops and algorithms
+- Reducing database calls
+- Efficient string operations
+- Autoloading optimization
+- Composer optimization
+- Static analysis tools
+- Benchmarking techniques
+
+### 22. Testing in PHP
+- PHPUnit framework
+  - Installation and setup
+  - Writing tests
+  - Assertions
+  - Test suites
+- Test-driven development
+- Mocking and stubbing
+  - Mock objects
+  - Stub methods
+  - Test doubles
+- Code coverage
+- Integration testing
+- Functional testing
+- Behavior-driven development
+  - Behat
+  - PHPSpec
+- Continuous integration
+- Testing best practices
+
+### 23. Package Management with Composer
+- Composer basics
+  - Installation
+  - composer.json
+  - composer.lock
+- Managing dependencies
+  - Installing packages
+  - Updating packages
+  - Removing packages
+- Semantic versioning
+- Publishing packages
+- Private repositories
+- Composer scripts
+- Autoloading with Composer
+  - PSR-4 autoloading
+  - Classmap autoloading
+  - Files autoloading
+- Packagist
+- Composer optimization
+
+### 24. Asynchronous PHP
+- Swoole extension
+- ReactPHP
+- Amp
+- Fibers (PHP 8.1+)
+- Concurrent request handling
+- Event loops
+- Promises and coroutines
+- WebSockets in PHP
+- Long-running PHP processes
+- Worker processes
+- Task scheduling
+
+### 25. PHP Frameworks
+- Laravel
+  - Architecture
+  - Features
+  - Ecosystem
+- Symfony
+  - Components
+  - Framework
+  - Ecosystem
+- CodeIgniter
+  - Simplicity
+  - Performance
+  - Features
+- Yii
+  - Component-based architecture
+  - Performance
+  - Features
+- Laminas (formerly Zend)
+  - Enterprise features
+  - Modularity
+  - Integration
+- Slim
+  - Micro-framework
+  - API development
+  - Middleware
+- CakePHP
+  - Convention over configuration
+  - ORM
+  - Features
+- Framework architecture concepts
+- MVC pattern implementation
+- Choosing the right framework
+
+### 26. DevOps for PHP
+- Deployment strategies
+  - Traditional deployment
+  - Continuous deployment
+  - Blue-green deployment
+  - Canary releases
+- Containerization with Docker
+  - PHP Docker images
+  - Docker Compose for PHP applications
+  - Multi-stage builds
+- PHP-FPM configuration
+  - Process manager settings
+  - Pool configuration
+  - Performance tuning
+- Web server configuration
+  - Nginx with PHP
+  - Apache with PHP
+  - Optimizing for PHP applications
+- Environment configuration
+  - Environment variables
+  - Configuration management
+  - Secrets management
+- CI/CD pipelines
+  - GitHub Actions
+  - GitLab CI
+  - Jenkins
+- Monitoring PHP applications
+  - Application monitoring
+  - Error tracking
+  - Performance monitoring
+- Logging best practices
+  - Structured logging
+  - Log aggregation
+  - Log analysis
+- Scaling PHP applications
+  - Horizontal scaling
+  - Load balancing
+  - Caching strategies
+- Server security hardening
+  - Firewall configuration
+  - Security updates
+  - Principle of least privilege
+
+### 27. Modern PHP Features (PHP 7.x and 8.x)
+- PHP 7.0 features
+  - Scalar type declarations
+  - Return type declarations
+  - Null coalescing operator
+  - Spaceship operator
+  - Anonymous classes
+- PHP 7.1 features
+  - Nullable types
+  - Void return type
+  - Symmetric array destructuring
+  - Class constant visibility
+- PHP 7.2 features
+  - Object type hint
+  - Abstract method overriding
+  - Trailing commas in list syntax
+- PHP 7.3 features
+  - Flexible Heredoc and Nowdoc syntax
+  - Array destructuring with reference
+  - Trailing commas in function calls
+- PHP 7.4 features
+  - Typed properties
+  - Arrow functions
+  - Null coalescing assignment operator
+  - Spread operator in arrays
+  - Numeric literal separator
+  - Weak references
+- PHP 8.0 features
+  - Named arguments
+  - Attributes
+  - Constructor property promotion
+  - Union types
+  - Match expression
+  - Nullsafe operator
+  - JIT compilation
+- PHP 8.1 features
+  - Enumerations
+  - Readonly properties
+  - First-class callable syntax
+  - Intersection types
+  - Never return type
+  - Final class constants
+  - Fibers
+- PHP 8.2 features
+  - Readonly classes
+  - Disjunctive normal form types
+  - Null, false, and true as standalone types
+  - Deprecated dynamic properties
+- PHP 8.3 features
+  - Typed class constants
+  - Dynamic class constant fetch
+  - New json_validate function
+  - Randomizer class improvements

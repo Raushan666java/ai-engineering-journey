@@ -1,0 +1,151 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.placement</groupId>
+  <artifactId>placement-tests</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <junit.jupiter.version>5.9.3</junit.jupiter.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${junit.jupiter.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>${junit.jupiter.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version>
+        <configuration>
+          <release>17</release>
+        </configuration>
+      </plugin>
+
+      <!-- Add all day tests as test sources -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>3.3.0</version>
+        <executions>
+          <execution>
+            <id>add-test-sources</id>
+            <phase>generate-test-sources</phase>
+            <goals>
+              <goal>add-test-source</goal>
+            </goals>
+            <configuration>
+              <sources>
+                <source>practice/dsa/Day-41/tests</source>
+                <source>practice/dsa/Day-41/code</source>
+
+                <source>practice/dsa/Day-42/tests</source>
+                <source>practice/dsa/Day-42/code</source>
+
+                <source>practice/dsa/Day-43/tests</source>
+                <source>practice/dsa/Day-43/code</source>
+
+                <source>practice/dsa/Day-44/tests</source>
+                <source>practice/dsa/Day-44/code</source>
+
+                <source>practice/dsa/Day-45/tests</source>
+                <source>practice/dsa/Day-45/code</source>
+
+                <source>practice/dsa/Day-46/tests</source>
+                <source>practice/dsa/Day-46/code</source>
+
+                <source>practice/dsa/Day-47/tests</source>
+                <source>practice/dsa/Day-47/code</source>
+
+                <source>practice/dsa/Day-48/tests</source>
+                <source>practice/dsa/Day-48/code</source>
+
+                <source>practice/dsa/Day-49/tests</source>
+                <source>practice/dsa/Day-49/code</source>
+
+                <source>practice/dsa/Day-50/tests</source>
+                <source>practice/dsa/Day-50/code</source>
+
+                <source>practice/dsa/Day-51/tests</source>
+                <source>practice/dsa/Day-51/code</source>
+
+                <source>practice/dsa/Day-52/tests</source>
+                <source>practice/dsa/Day-52/code</source>
+                <source>practice/dsa/Day-52/task-manager/src/main/java</source>
+
+                <source>practice/dsa/Day-53/tests</source>
+                <source>practice/dsa/Day-53/code</source>
+
+                <source>practice/dsa/Day-54/tests</source>
+                <source>practice/dsa/Day-54/code</source>
+
+                <source>practice/dsa/Day-55/tests</source>
+                <source>practice/dsa/Day-55/code</source>
+
+                <source>practice/dsa/Day-56/tests</source>
+                <source>practice/dsa/Day-56/code</source>
+
+                <source>practice/dsa/Day-57/tests</source>
+                <source>practice/dsa/Day-57/code</source>
+
+                <source>practice/dsa/Day-58/tests</source>
+                <source>practice/dsa/Day-58/code</source>
+
+                <source>practice/dsa/Day-59/tests</source>
+                <source>practice/dsa/Day-59/code</source>
+
+                <source>practice/dsa/Day-60/tests</source>
+                <source>practice/dsa/Day-60/code</source>
+              </sources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M8</version>
+        <configuration>
+          <useModulePath>false</useModulePath>
+          <includes>
+            <include>**/*Test*.java</include>
+          </includes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>ci</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M8</version>
+            <configuration>
+              <reportFormat>brief</reportFormat>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

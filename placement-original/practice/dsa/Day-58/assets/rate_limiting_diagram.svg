@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="320">
+  <rect width="100%" height="100%" fill="#fff"/>
+  <text x="18" y="26" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Day 58 — Rate Limiting Algorithms Comparison</text>
+  
+  <!-- Token Bucket -->
+  <rect x="40" y="60" width="220" height="100" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="55" y="85" font-size="14" font-weight="bold" fill="#1e40af">Token Bucket</text>
+  <text x="55" y="105" font-size="11" fill="#555">✓ Allows controlled bursts</text>
+  <text x="55" y="122" font-size="11" fill="#555">✓ O(1) time &amp; space</text>
+  <text x="55" y="139" font-size="11" fill="#555">✗ Large bursts after idle</text>
+  <circle cx="230" cy="115" r="8" fill="#22c55e"/>
+  
+  <!-- Leaky Bucket -->
+  <rect x="290" y="60" width="220" height="100" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="305" y="85" font-size="14" font-weight="bold" fill="#92400e">Leaky Bucket</text>
+  <text x="305" y="105" font-size="11" fill="#555">✓ Smooth fixed-rate output</text>
+  <text x="305" y="122" font-size="11" fill="#555">✓ Queues excess requests</text>
+  <text x="305" y="139" font-size="11" fill="#555">✗ Queue management cost</text>
+  <circle cx="480" cy="115" r="8" fill="#f59e0b"/>
+  
+  <!-- Fixed Window -->
+  <rect x="540" y="60" width="220" height="100" rx="8" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+  <text x="555" y="85" font-size="14" font-weight="bold" fill="#9f1239">Fixed Window</text>
+  <text x="555" y="105" font-size="11" fill="#555">✓ Simple, O(1) space</text>
+  <text x="555" y="122" font-size="11" fill="#555">✗ Boundary burst (2x limit)</text>
+  <text x="555" y="139" font-size="11" fill="#555">Use: Simple scenarios</text>
+  
+  <!-- Sliding Window Log -->
+  <rect x="40" y="190" width="220" height="100" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="55" y="215" font-size="14" font-weight="bold" fill="#15803d">Sliding Window Log</text>
+  <text x="55" y="235" font-size="11" fill="#555">✓ Most accurate</text>
+  <text x="55" y="252" font-size="11" fill="#555">✗ O(N) memory (timestamps)</text>
+  <text x="55" y="269" font-size="11" fill="#555">Use: Low-traffic precise</text>
+  <circle cx="230" cy="240" r="8" fill="#16a34a"/>
+  
+  <!-- Sliding Window Counter -->
+  <rect x="290" y="190" width="220" height="100" rx="8" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/>
+  <text x="305" y="215" font-size="14" font-weight="bold" fill="#3730a3">Sliding Counter</text>
+  <text x="305" y="235" font-size="11" fill="#555">✓ Balanced accuracy</text>
+  <text x="305" y="252" font-size="11" fill="#555">✓ O(1) memory</text>
+  <text x="305" y="269" font-size="11" fill="#555">Use: Production (Cloudflare)</text>
+  <circle cx="480" cy="240" r="8" fill="#6366f1"/>
+  
+  <!-- Legend -->
+  <text x="550" y="215" font-size="12" fill="#666" font-weight="bold">Recommended:</text>
+  <circle cx="555" cy="235" r="6" fill="#22c55e"/>
+  <text x="568" y="240" font-size="11" fill="#555">Token Bucket (burst OK)</text>
+  <circle cx="555" cy="255" r="6" fill="#6366f1"/>
+  <text x="568" y="260" font-size="11" fill="#555">Sliding Counter (prod)</text>
+</svg>

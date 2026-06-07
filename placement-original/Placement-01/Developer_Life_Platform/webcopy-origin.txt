@@ -1,0 +1,864 @@
+Uri: https://cdn.jsdelivr.net/npm/jsvectormap
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\npm\jsvectormap-1
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\npm\jsvectormap\dist\css\jsvectormap.min.css
+Content Type: text/css
+
+Uri: https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\npm\jsvectormap\dist\maps\world.js
+Content Type: application/javascript
+
+Uri: https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\npm\simplebar@latest\dist\simplebar.min.js
+Content Type: application/javascript
+
+Uri: https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\css2
+Content Type: text/css
+
+Uri: https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZg.ttf
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\s\inter\v19\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyfMZg.ttf
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\s\inter\v19\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\s\inter\v19\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\s\inter\v19\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\s\inter\v19\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\s\inter\v19\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyeMZg.ttf
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\s\inter\v19\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyeMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\s\inter\v19\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://fonts.gstatic.com/s/inter/v19/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\s\inter\v19\UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf
+Content Type: font/ttf
+
+Uri: https://studyq-tailwind.vercel.app/add-certification.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\add-certification.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/add-course.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\add-course.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/add-resource.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\add-resource.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/add-student.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\add-student.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/add-teacher.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\add-teacher.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/add-transaction.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\add-transaction.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/assets/css/output.css
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\css\output.css
+Content Type: text/css
+
+Uri: https://studyq-tailwind.vercel.app/assets/css/quill.snow.css
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\css\quill.snow.css
+Content Type: text/css
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/achivemnt/b-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\achivemnt\b-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/achivemnt/b-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\achivemnt\b-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/achivemnt/b-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\achivemnt\b-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/achivemnt/b-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\achivemnt\b-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-10.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-10.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-8.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-8.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-9.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-9.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-xs-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-xs-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-xs-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-xs-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-xs-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-xs-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/av-xs-7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\av-xs-7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-10.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-10.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-8.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-8.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/cav-9.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\cav-9.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/group/6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\group\6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/group/7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\group\7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/avatar/group/8.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\avatar\group\8.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/blog/av-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\blog\av-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/blog/bt-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\blog\bt-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/blog/bt-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\blog\bt-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/blog/bt-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\blog\bt-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/blog/bt-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\blog\bt-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/cards/av-lg.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\cards\av-lg.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/cards/gg-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\cards\gg-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/cards/gg-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\cards\gg-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/cards/gg-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\cards\gg-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/cards/pro-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\cards\pro-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/cards/pro-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\cards\pro-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/cards/pro-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\cards\pro-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-10.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-10.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-8.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-8.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-9.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-9.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-md-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-md-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-md-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-md-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/certificate/c-md-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\certificate\c-md-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/av-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\av-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/av-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\av-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/c-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\c-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/c-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\c-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/c-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\c-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/c-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\c-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/c-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\c-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/c-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\c-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/c-7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\c-7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/g-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\g-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/g-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\g-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/g-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\g-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/gp-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\gp-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/gp-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\gp-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/courses/gp-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\courses\gp-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/delete-modal.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\delete-modal.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-10.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-10.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-11.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-11.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-12.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-12.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-8.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-8.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-9.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-9.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-a-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-a-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-a-10.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-a-10.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-a-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-a-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-a-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-a-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-a-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-a-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-a-7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-a-7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-a-8.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-a-8.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/ebook/eb-a-9.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\ebook\eb-a-9.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/forgot-im.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\forgot-im.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/green-men.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\green-men.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/Illustration.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\Illustration.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-1.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-1.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-10.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-10.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-11.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-11.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-12.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-12.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-2.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-2.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-3.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-3.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-4.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-4.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-5.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-5.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-6.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-6.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-7.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-7.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-8.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-8.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/integrations/l-9.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\integrations\l-9.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/logo/logo-full.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\logo\logo-full.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/logo/logo-icon.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\logo\logo-icon.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/logo/logo-opacity.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\logo\logo-opacity.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/logo/logo-sm.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\logo\logo-sm.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/message/user-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\message\user-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/message/user-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\message\user-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/message/user-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\message\user-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/message/user-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\message\user-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/message/user-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\message\user-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/message/user-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\message\user-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/order/av-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\order\av-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/password.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\password.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/Avatar-lg.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\Avatar-lg.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/flag-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\flag-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/flag-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\flag-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/flag-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\flag-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/flag-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\flag-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/flag-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\flag-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/flag-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\flag-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/flag-7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\flag-7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/flag-8.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\flag-8.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/settings/flag-9.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\settings\flag-9.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/sidebar/ajay.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\sidebar\ajay.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/sidebar/avatar.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\sidebar\avatar.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/sign-up-img.svg
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\sign-up-img.svg
+Content Type: image/svg+xml
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/spain.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\spain.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/students/av-xl.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\students\av-xl.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/support/user-lg.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\support\user-lg.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/support/user-y.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\support\user-y.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/teacher/av-xl.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\teacher\av-xl.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/teacher/av-xxl.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\teacher\av-xxl.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/av-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\av-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/av-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\av-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/av-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\av-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/file-lg-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\file-lg-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/file.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\file.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-10.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-10.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-11.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-11.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-12.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-12.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-2.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-2.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-3.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-3.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-4.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-4.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-5.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-5.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-6.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-6.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-7.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-7.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-8.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-8.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/im-9.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\im-9.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/todo/user-1.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\todo\user-1.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/uk.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\uk.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/img/users/user-lg.png
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\img\users\user-lg.png
+Content Type: image/png
+
+Uri: https://studyq-tailwind.vercel.app/assets/js/chart.js
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\js\chart.js
+Content Type: application/javascript
+
+Uri: https://studyq-tailwind.vercel.app/assets/js/chartjs-plugin-annotation.min.js
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\js\chartjs-plugin-annotation.min.js
+Content Type: application/javascript
+
+Uri: https://studyq-tailwind.vercel.app/assets/js/full-calendar.js
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\js\full-calendar.js
+Content Type: application/javascript
+
+Uri: https://studyq-tailwind.vercel.app/assets/js/jquery-3.6.0.min.js
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\js\jquery-3.6.0.min.js
+Content Type: application/javascript
+
+Uri: https://studyq-tailwind.vercel.app/assets/js/main.js
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\js\main.js
+Content Type: application/javascript
+
+Uri: https://studyq-tailwind.vercel.app/assets/js/quill.js
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\assets\js\quill.js
+Content Type: application/javascript
+
+Uri: https://studyq-tailwind.vercel.app/calenders-month-events.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\calenders-month-events.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/certificate-list.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\certificate-list.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/course-details.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\course-details.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/course-list.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\course-list.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/edit-course.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\edit-course.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/edit-student.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\edit-student.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/edit-teacher.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\edit-teacher.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/edit-transaction.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\edit-transaction.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/forgot-pass.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\forgot-pass.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/index-2.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\index-2.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/index.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\index.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/integrations.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\integrations.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/messages.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\messages.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/new-password.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\new-password.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/order-details.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\order-details.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/otp.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\otp.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/projects.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\projects.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/resource-blog.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\resource-blog.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/resource-ebook.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\resource-ebook.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/settings.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\settings.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/sign-in.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\sign-in.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/sign-up.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\sign-up.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/student-profile.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\student-profile.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/students-list.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\students-list.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/support-ticket-list.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\support-ticket-list.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/support-ticket.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\support-ticket.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/teacher-profile.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\teacher-profile.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/teachers-list.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\teachers-list.html
+Content Type: text/html
+
+Uri: https://studyq-tailwind.vercel.app/transaction-list.html
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\transaction-list.html
+Content Type: text/html
+
+Uri: https://unpkg.com/simplebar@6.3.2/dist/simplebar.css
+File Name: C:\Downloaded Web Sites\studyq-tailwind.vercel.app\simplebar@6.3.2\dist\simplebar.css
+Content Type: text/css
+

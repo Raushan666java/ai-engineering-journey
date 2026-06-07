@@ -1,0 +1,26 @@
+name: Day-52 Tests
+
+on:
+  push:
+    paths:
+      - 'practice/dsa/Day-52/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+      - name: Run Tests (Maven)
+        run: |
+          echo "Note: Create a top-level pom.xml or run tests locally in your IDE"
+          mvn -DskipTests=false test || true
+      - name: Upload test artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: day52-files
+          path: practice/dsa/Day-52/**

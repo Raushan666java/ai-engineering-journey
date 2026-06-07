@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box { fill:#fffbea; stroke:#b7791f; stroke-width:2 }
+    .text { font-family: Arial, sans-serif; font-size:12px }
+    .title { font-weight:bold; font-size:14px }
+  </style>
+  <rect x="20" y="20" width="560" height="180" class="box" rx="8" />
+  <text x="300" y="48" text-anchor="middle" class="text title">Greedy Patterns Cheat Sheet</text>
+  <text x="40" y="84" class="text">- Interval Scheduling: sort by end time</text>
+  <text x="40" y="104" class="text">- Huffman: use min-heap to combine smallest weights</text>
+  <text x="40" y="124" class="text">- Two-pointer greedies: Assign cookies, boats to save people</text>
+  <text x="40" y="144" class="text">- Greedy vs DP: prove by exchange or counterexample</text>
+</svg>

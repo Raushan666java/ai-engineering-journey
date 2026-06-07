@@ -1,0 +1,30 @@
+<?php
+
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+
+class Review extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'learning_course_id',
+        'user_id',
+        'rating',
+        'comment',
+        'is_approved'
+    ];
+
+    public function course()
+    {
+        return $this->belongsTo(LearningCourse::class, 'learning_course_id');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
+    }
+}

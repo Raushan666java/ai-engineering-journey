@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="240" viewBox="0 0 640 240">
+  <style>
+    .node { fill:#fff7e6; stroke:#b76300; stroke-width:2px; }
+    .edge { stroke:#bdbdbd; stroke-width:2px; marker-end:url(#arrow); }
+    .label { font-family: Arial, sans-serif; font-size:12px; fill:#3b3b3b; }
+    .info { font-family: Arial, sans-serif; font-size:12px; fill:#000; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 z" fill="#bdbdbd" />
+    </marker>
+  </defs>
+  <g transform="translate(40,20)">
+    <!-- Graph nodes with id/low display -->
+    <g>
+      <rect x="0" y="0" width="120" height="40" rx="6" class="node" />
+      <text class="label" x="10" y="18">Node 0 (id=0, low=0)</text>
+    </g>
+
+    <g transform="translate(140,0)">
+      <rect x="0" y="0" width="140" height="40" rx="6" class="node" />
+      <text class="label" x="10" y="18">Node 1 (id=1, low=0) — back-edge to 0</text>
+    </g>
+
+    <g transform="translate(320,0)">
+      <rect x="0" y="0" width="120" height="40" rx="6" class="node" />
+      <text class="label" x="10" y="18">Node 2 (id=2, low=1)</text>
+    </g>
+
+    <g transform="translate(320,80)">
+      <rect x="0" y="0" width="120" height="40" rx="6" class="node" />
+      <text class="label" x="10" y="18">Node 3 (id=3, low=3)</text>
+    </g>
+
+    <!-- Edges -->
+    <line class="edge" x1="120" y1="18" x2="140" y2="18" />
+    <line class="edge" x1="260" y1="18" x2="320" y2="18" />
+    <line class="edge" x1="380" y1="40" x2="380" y2="80" />
+    <line class="edge" x1="200" y1="18" x2="260" y2="18" stroke-dasharray="4 2" />
+
+    <text class="info" x="10" y="160">Low-link propagation: low[u] = min(id[u], low[v] for children v, id[w] for back-edges)</text>
+  </g>
+</svg>

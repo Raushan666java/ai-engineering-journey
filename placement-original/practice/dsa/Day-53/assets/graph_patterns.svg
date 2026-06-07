@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="200">
+  <rect width="100%" height="100%" fill="#fff" />
+  <text x="20" y="30" font-family="Arial" font-size="18" fill="#333">Day 53 — Graph Patterns</text>
+  <circle cx="120" cy="100" r="20" stroke="#333" fill="#f8f8f8"/>
+  <circle cx="200" cy="60" r="20" stroke="#333" fill="#f8f8f8"/>
+  <circle cx="280" cy="120" r="20" stroke="#333" fill="#f8f8f8"/>
+  <line x1="120" y1="100" x2="200" y2="60" stroke="#666"/>
+  <line x1="200" y1="60" x2="280" y2="120" stroke="#666"/>
+  <line x1="280" y1="120" x2="120" y2="100" stroke="#666"/>
+  <text x="100" y="160" font-size="12" fill="#555">Dijkstra / Bellman-Ford / SCC / Max-Flow</text>
+</svg>

@@ -1,0 +1,142 @@
+
+site_name: AI Engineering Journey
+site_description: 3-month curriculum — Python, DSA, LangChain, RAG, Multi-Agent Systems, Production
+site_url: https://raushan666java.github.io/ai-engineering-journey
+repo_url: https://github.com/Raushan666java/ai-engineering-journey
+repo_name: Raushan666java/ai-engineering-journey
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.svg
+
+extra_css:
+  - assets/css/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Raushan666java
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/Raushan666java
+  generator: false
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - attr_list
+  - md_in_html
+  - footnotes
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      fallback_to_build_date: true
+      enable_git_follow: false
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - skip-lightbox
+
+nav:
+  - Home: index.md
+  - Roadmap:
+    - Overview: roadmap.md
+    - Daily Log: daily-log/index.md
+  - Phase 1 — Foundation:
+    - Overview: phase-1-foundation/index.md
+    - "Week 1: Python Basics": phase-1-foundation/week-1-python-basics.md
+    - "Week 2: Python OOP": phase-1-foundation/week-2-python-oop.md
+    - "Week 3: FastAPI": phase-1-foundation/week-3-fastapi.md
+    - "Week 4: Project": phase-1-foundation/week-4-project.md
+  - Phase 2 — DSA:
+    - Overview: phase-2-dsa/index.md
+    - "Week 1: Arrays & Strings": phase-2-dsa/week-1-arrays-strings.md
+    - "Week 2: HashMap & Linked Lists": phase-2-dsa/week-2-hashmap-linkedlist.md
+    - "Week 3: Stack, Queue & Trees": phase-2-dsa/week-3-stack-queue-trees.md
+    - "Week 4: Revision & Mock": phase-2-dsa/week-4-revision-mock.md
+  - Phase 3 — LangChain:
+    - Overview: phase-3-langchain/index.md
+    - "Week 1: LangChain Core": phase-3-langchain/week-1-langchain-core.md
+    - "Week 2: RAG": phase-3-langchain/week-2-rag.md
+    - "Week 3: LangGraph & Agents": phase-3-langchain/week-3-langgraph-agents.md
+    - "Week 4: Project": phase-3-langchain/week-4-project.md
+  - Phase 4 — Advanced RAG:
+    - Overview: phase-4-rag-memory/index.md
+    - "Week 1: Advanced RAG": phase-4-rag-memory/week-1-advanced-rag.md
+    - "Week 2: Vector DBs": phase-4-rag-memory/week-2-vector-dbs.md
+    - "Week 3: Memory Systems": phase-4-rag-memory/week-3-memory.md
+    - "Week 4: ApexERP AI Module": phase-4-rag-memory/week-4-apexerp.md
+  - Phase 5 — Multi-Agent:
+    - Overview: phase-5-multi-agent/index.md
+    - "Week 1: CrewAI": phase-5-multi-agent/week-1-crewai.md
+    - "Week 2: n8n Automation": phase-5-multi-agent/week-2-n8n.md
+    - "Week 3: Purvanchal Pipeline": phase-5-multi-agent/week-3-purvanchal.md
+    - "Week 4: Production Deploy": phase-5-multi-agent/week-4-production.md
+  - Phase 6 — System Design:
+    - Overview: phase-6-production/index.md
+    - "Week 1: System Design": phase-6-production/week-1-system-design.md
+    - "Week 2: AI System Design": phase-6-production/week-2-ai-system-design.md
+    - "Week 3: DevOps": phase-6-production/week-3-devops.md
+    - "Week 4: Portfolio & Job Hunt": phase-6-production/week-4-portfolio.md
+  - Projects: projects/index.md
+  - Resources: resources.md
+
+watch:
+  - docs

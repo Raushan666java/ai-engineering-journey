@@ -1,25 +1,27 @@
-
-site_name: AI Engineering Journey
-site_description: 3-month curriculum — Python, DSA, LangChain, RAG, Multi-Agent Systems, Production
+site_name: "Raushan's AI Engineering Journey"
 site_url: https://raushan666java.github.io/ai-engineering-journey
-repo_url: https://github.com/Raushan666java/ai-engineering-journey
+site_author: Raushan Kumar
+site_description: "3 Month AI Engineering Roadmap — Python, LangChain, RAG, Agents, Automation"
+
 repo_name: Raushan666java/ai-engineering-journey
+repo_url: https://github.com/Raushan666java/ai-engineering-journey
 edit_uri: edit/main/docs/
 
 theme:
   name: material
+  language: en
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/weather-night
+        icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
-        icon: material/weather-sunny
+        icon: material/brightness-4
         name: Switch to light mode
   font:
     text: Inter
@@ -29,25 +31,21 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
-    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - navigation.footer
     - search.highlight
     - search.suggest
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
-  logo: assets/images/logo.svg
-  favicon: assets/images/favicon.svg
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
 
-extra_css:
-  - assets/css/extra.css
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/Raushan666java
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/Raushan666java
-  generator: false
+plugins:
+  - search
+  - glightbox
 
 markdown_extensions:
   - admonition
@@ -58,85 +56,98 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.critic
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - toc:
-      permalink: true
-      toc_depth: 3
   - attr_list
   - md_in_html
+  - tables
   - footnotes
+  - toc:
+      permalink: true
 
-plugins:
-  - search
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-      fallback_to_build_date: true
-      enable_git_follow: false
-  - glightbox:
-      touchNavigation: true
-      loop: false
-      effect: zoom
-      slide_effect: slide
-      width: 100%
-      height: auto
-      zoomable: true
-      draggable: true
-      skip_classes:
-        - skip-lightbox
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Raushan666java
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/raushan-kumar-477465250
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
 
 nav:
   - Home: index.md
-  - Roadmap:
-    - Overview: roadmap.md
-    - Daily Log: daily-log/index.md
-  - Phase 1 — Foundation:
-    - Overview: phase-1-foundation/index.md
-    - "Week 1: Python Basics": phase-1-foundation/week-1-python-basics.md
-    - "Week 2: Python OOP": phase-1-foundation/week-2-python-oop.md
-    - "Week 3: FastAPI": phase-1-foundation/week-3-fastapi.md
-    - "Week 4: Project": phase-1-foundation/week-4-project.md
-  - Phase 2 — DSA:
-    - Overview: phase-2-dsa/index.md
-    - "Week 1: Arrays & Strings": phase-2-dsa/week-1-arrays-strings.md
-    - "Week 2: HashMap & Linked Lists": phase-2-dsa/week-2-hashmap-linkedlist.md
-    - "Week 3: Stack, Queue & Trees": phase-2-dsa/week-3-stack-queue-trees.md
-    - "Week 4: Revision & Mock": phase-2-dsa/week-4-revision-mock.md
-  - Phase 3 — LangChain:
-    - Overview: phase-3-langchain/index.md
-    - "Week 1: LangChain Core": phase-3-langchain/week-1-langchain-core.md
-    - "Week 2: RAG": phase-3-langchain/week-2-rag.md
-    - "Week 3: LangGraph & Agents": phase-3-langchain/week-3-langgraph-agents.md
-    - "Week 4: Project": phase-3-langchain/week-4-project.md
-  - Phase 4 — Advanced RAG:
-    - Overview: phase-4-rag-memory/index.md
-    - "Week 1: Advanced RAG": phase-4-rag-memory/week-1-advanced-rag.md
-    - "Week 2: Vector DBs": phase-4-rag-memory/week-2-vector-dbs.md
-    - "Week 3: Memory Systems": phase-4-rag-memory/week-3-memory.md
-    - "Week 4: ApexERP AI Module": phase-4-rag-memory/week-4-apexerp.md
-  - Phase 5 — Multi-Agent:
-    - Overview: phase-5-multi-agent/index.md
-    - "Week 1: CrewAI": phase-5-multi-agent/week-1-crewai.md
-    - "Week 2: n8n Automation": phase-5-multi-agent/week-2-n8n.md
-    - "Week 3: Purvanchal Pipeline": phase-5-multi-agent/week-3-purvanchal.md
-    - "Week 4: Production Deploy": phase-5-multi-agent/week-4-production.md
-  - Phase 6 — System Design:
-    - Overview: phase-6-production/index.md
-    - "Week 1: System Design": phase-6-production/week-1-system-design.md
-    - "Week 2: AI System Design": phase-6-production/week-2-ai-system-design.md
-    - "Week 3: DevOps": phase-6-production/week-3-devops.md
-    - "Week 4: Portfolio & Job Hunt": phase-6-production/week-4-portfolio.md
-  - Projects: projects/index.md
-  - Resources: resources.md
+  - Roadmap: roadmap.md
 
-watch:
-  - docs
+  - Phase 1 — Python:
+    - Overview: phase-01-python/index.md
+    - Week 1 — Syntax & Basics: phase-01-python/week-01/index.md
+    - Week 2 — OOP & Modules: phase-01-python/week-02/index.md
+    - Week 3 — FastAPI: phase-01-python/week-03/index.md
+    - Week 4 — Advanced + Docker: phase-01-python/week-04/index.md
+    - Project — WhatsApp Analyzer: phase-01-python/projects/whatsapp-analyzer.md
+
+  - Phase 2 — DSA:
+    - Overview: phase-02-dsa/index.md
+    - Week 1 — Arrays & Strings: phase-02-dsa/week-01/index.md
+    - Week 2 — HashMap & Linked List: phase-02-dsa/week-02/index.md
+    - Week 3 — Trees & Stack: phase-02-dsa/week-03/index.md
+    - Week 4 — Binary Search & Revision: phase-02-dsa/week-04/index.md
+
+  - Phase 3 — LangChain:
+    - Overview: phase-03-langchain/index.md
+    - Week 1 — LangChain Core: phase-03-langchain/week-01/index.md
+    - Week 2 — RAG Basics: phase-03-langchain/week-02/index.md
+    - Week 3 — LangGraph & Agents: phase-03-langchain/week-03/index.md
+    - Week 4 — Project Build: phase-03-langchain/week-04/index.md
+    - Project — Document AI: phase-03-langchain/projects/document-ai.md
+
+  - Phase 4 — Advanced RAG:
+    - Overview: phase-04-rag/index.md
+    - Week 1 — Advanced Techniques: phase-04-rag/week-01/index.md
+    - Week 2 — Vector DBs Production: phase-04-rag/week-02/index.md
+    - Project — ApexERP RAG: phase-04-rag/projects/apexerp-rag.md
+
+  - Phase 5 — Agents:
+    - Overview: phase-05-agents/index.md
+    - Week 1 — Memory Systems: phase-05-agents/week-01/index.md
+    - Week 2 — Production Agents: phase-05-agents/week-02/index.md
+    - Project — ApexERP Agent: phase-05-agents/projects/apexerp-agent.md
+
+  - Phase 6 — Multi-Agent:
+    - Overview: phase-06-multiagent/index.md
+    - Week 1 — CrewAI: phase-06-multiagent/week-01/index.md
+    - Week 2 — LangGraph Advanced: phase-06-multiagent/week-02/index.md
+    - Project — Multi-Agent ERP: phase-06-multiagent/projects/multi-agent-erp.md
+
+  - Phase 7 — Automation:
+    - Overview: phase-07-automation/index.md
+    - Week 1 — n8n Advanced: phase-07-automation/week-01/index.md
+    - Week 2 — Purvanchal Pipeline: phase-07-automation/week-02/index.md
+    - Project — Flow Studio: phase-07-automation/projects/flow-studio.md
+
+  - Phase 8 — System Design:
+    - Overview: phase-08-systemdesign/index.md
+    - Week 1 — Basics: phase-08-systemdesign/week-01/index.md
+    - Week 2 — AI System Design: phase-08-systemdesign/week-02/index.md
+
+  - Phase 9 — DevOps:
+    - Overview: phase-09-devops/index.md
+    - Week 1 — Docker & Deploy: phase-09-devops/week-01/index.md
+    - Week 2 — CI/CD & Monitoring: phase-09-devops/week-02/index.md
+
+  - Phase 10 — Portfolio:
+    - Overview: phase-10-portfolio/index.md
+    - Job Hunt Strategy: phase-10-portfolio/job-hunt.md
+    - Interview Prep: phase-10-portfolio/interview-prep.md
+
+  - Resources:
+    - All Resources: resources/index.md
+    - Cheatsheets: resources/cheatsheets.md
+    - PHP to Python: resources/php-to-python.md

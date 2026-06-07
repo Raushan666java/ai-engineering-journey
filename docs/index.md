@@ -1,101 +1,102 @@
-{% set phases = [
-  ("Phase 1", "Foundation", "Python, FastAPI, CLI", "in-progress"),
-  ("Phase 2", "Data Structures & Algorithms", "Arrays, HashMap, Trees, 60 problems", "planned"),
-  ("Phase 3", "LangChain & RAG", "LLM pipelines, Vector DB, Agents", "planned"),
-  ("Phase 4", "Advanced RAG & Memory", "Hybrid search, Memory systems, ApexERP AI", "planned"),
-  ("Phase 5", "Multi-Agent & Automation", "CrewAI, n8n, Purvanchal pipeline", "planned"),
-  ("Phase 6", "System Design & Production", "Design, DevOps, Portfolio, Job hunt", "planned"),
-] %}
+# 🚀 Raushan's AI Engineering Journey
 
-<div class="hero-section">
-
-<div class="hero-title">AI Engineering<br>Journey</div>
-
-<p class="hero-tagline">3-month curriculum — Python to production AI systems. Every week builds on the last. Follow along as I learn in public.</p>
-
-</div>
-
-<div class="stat-grid">
-
-<div class="stat-card">
-  <span class="stat-number">6</span>
-  <span class="stat-label">Phases</span>
-</div>
-
-<div class="stat-card">
-  <span class="stat-number">24</span>
-  <span class="stat-label">Weeks</span>
-</div>
-
-<div class="stat-card">
-  <span class="stat-number">3</span>
-  <span class="stat-label">Projects</span>
-</div>
-
-<div class="stat-card">
-  <span class="stat-number">60+</span>
-  <span class="stat-label">DSA Problems</span>
-</div>
-
-</div>
+> **Laravel Developer → AI Automation Engineer**
+> 3 Months | 5 Hours/Day | June 2026 → September 2026
 
 ---
 
-## The Curriculum
+## Who Am I?
 
-<div class="phase-grid">
+**Raushan Kumar** — Full-Stack Laravel Engineer, Founder of [ApexPillar Technologies](https://apexpillar.tech), based in Patna, Bihar.
 
-{% for num, title, desc, status in phases %}
-<a href="{{ 'phase-' ~ num.lower().replace(' ', '-') }}/" class="phase-card" style="text-decoration:none;color:inherit;">
-
-  <div class="phase-card-num">{{ num }}</div>
-  <div class="phase-card-title">{{ title }}</div>
-  <div class="phase-card-desc">{{ desc }}</div>
-  <div class="phase-card-status {{ status }}">{{ status.replace('-', ' ') }}</div>
-
-</a>
-{% endfor %}
-
-</div>
+- 3+ years production experience (SaaS, CRM, ERP)
+- Core stack: PHP 8.x, Laravel 12, Vue 3, Docker
+- Currently building: **ApexERP** (WhatsApp-first AI ERP for Bihar SMBs)
+- Goal: AI Automation Engineer by September 2026
 
 ---
-## Quick Start
 
-Clone the repo and start following along:
+## What Is This Site?
 
-```bash
-git clone https://github.com/Raushan666java/ai-engineering-journey.git
-cd ai-engineering-journey
+Yeh mera **public learning journal** hai.
 
-# Install dependencies
-pip install mkdocs-material mkdocs-git-revision-date-localized-plugin
-pip install mkdocs-glightbox
+- Har din kya padha, kya banaya — sab yahan
+- Code snippets, notes, projects — sab documented
+- Galtiyan bhi — kyunki learning real hoti hai
+- Koi bhi follow kar sakta hai same path
 
-# Serve locally
-mkdocs serve
+!!! tip "Philosophy"
+    **Padhte padhte banao.** Har week kuch live hona chahiye.
+    Tutorial hell se door. Consistency > intensity.
+
+---
+
+## 3 Month Plan — At a Glance
+
+```
+MONTH 1 (June 2026)      → Python + DSA Foundation
+MONTH 2 (July 2026)      → LangChain + RAG + Agents  
+MONTH 3 (August 2026)    → Automation + Projects + Deploy
 ```
 
-Open `http://localhost:8000` to view the site.
+### Progress Tracker
+
+| Phase | Topic | Status | Project |
+|-------|-------|--------|---------|
+| 01 | Python Basics | 🔄 In Progress | WhatsApp Analyzer |
+| 02 | DSA Patterns | ⏳ Planned | 60 Problems |
+| 03 | LangChain + RAG | ⏳ Planned | Document AI |
+| 04 | Advanced RAG | ⏳ Planned | ApexERP RAG |
+| 05 | Memory + Agents | ⏳ Planned | ApexERP Agent |
+| 06 | Multi-Agent | ⏳ Planned | ERP Automation |
+| 07 | n8n Automation | ⏳ Planned | Purvanchal Pipeline |
+| 08 | System Design | ⏳ Planned | Case Studies |
+| 09 | DevOps | ⏳ Planned | Full Deploy |
+| 10 | Portfolio | ⏳ Planned | Job Hunt |
 
 ---
 
-## About This Journey
+## My Projects
 
-I'm a Laravel developer with 3 years of experience building SaaS, CRM, and ERP systems. This is my structured path into AI Engineering.
+### 🏗️ ApexERP
+WhatsApp-first AI ERP for Bihar/UP SMBs.
+Stack: Laravel 13 + Next.js + LangGraph + WhatsApp API
+[GitHub →](#) | [Live →](#)
 
-**The approach:**
-- Phase 1-2 → Foundation (Python + DSA)
-- Phase 3-4 → AI Engineering (LangChain + RAG + Memory)
-- Phase 5-6 → Production (Multi-Agent + System Design + Deployment)
+### 🎵 Purvanchal Flow Studio
+Fully automated Bhojpuri music content pipeline.
+Stack: ACE-Step + YuE + n8n + FFmpeg
+[GitHub →](#) | [YouTube →](#)
 
-**Daily commitment:** 5 hours every day, full weekends — 3 months total.
-
-**3 live projects by the end:**
-1. Business Document AI Assistant
-2. ApexERP WhatsApp AI Module
-3. Purvanchal Flow Studio (Automated Music Pipeline)
+### 📄 Document AI Assistant
+RAG-based business document Q&A system.
+Stack: FastAPI + LangGraph + Qdrant
+[GitHub →](#) | [Demo →](#)
 
 ---
 
-<a href="roadmap/" class="md-button md-button--primary">View Full Roadmap →</a>
-<a href="https://github.com/Raushan666java/ai-engineering-journey" class="md-button">Follow on GitHub</a>
+## Quick Links
+
+<div class="grid cards" markdown>
+
+- :fontawesome-solid-map: **[Roadmap](roadmap.md)**
+  Full 3-month plan with daily breakdown
+
+- :fontawesome-solid-book: **[Phase 1 — Python](phase-01-python/index.md)**
+  Start here if you're a PHP/Laravel dev
+
+- :fontawesome-solid-link-slash: **[PHP → Python](resources/php-to-python.md)**
+  Direct mapping for Laravel developers
+
+- :fontawesome-solid-code: **[Resources](resources/index.md)**
+  All links, tools, and references
+
+</div>
+
+---
+
+## Connect
+
+- GitHub: [github.com/Raushan666java](https://github.com/Raushan666java)
+- LinkedIn: [linkedin.com/in/raushan-kumar-477465250](https://linkedin.com/in/raushan-kumar-477465250)
+- Company: [apexpillar.tech](https://apexpillar.tech)

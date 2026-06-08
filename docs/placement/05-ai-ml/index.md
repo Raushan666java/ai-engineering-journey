@@ -1,8 +1,36 @@
-# AI & ML — Machine Learning se Agentic AI tak
-
-AI/ML kaafi broad hai. Placement ke liye basics strong rakh, aur advanced topics (Agentic AI, LangChain) mein expertise bana. Sab content `placement-original/Main-Course/Placement-01/05-AI-ML/`, `placement-original/Learning-Techniques/Learning_Course/`, aur `placement-original/Agentic-AI-Course/` mein hai.
+<div class="module-hero">
+<div class="module-icon">🤖</div>
+<h1>AI &amp; ML — Machine Learning se Agentic AI tak</h1>
+<p>AI/ML kaafi broad hai. Placement ke liye basics strong rakh, aur advanced topics (Agentic AI, LangChain) mein expertise bana. Sab content <code>placement-original/Main-Course/Placement-01/05-AI-ML/</code>, <code>placement-original/Learning-Techniques/Learning_Course/</code>, aur <code>placement-original/Agentic-AI-Course/</code> mein hai.</p>
+<div class="module-meta">16-week course · ML/DL/Agentic AI · Real Projects</div>
+</div>
 
 **Complete Source**: `placement-original/Main-Course/Placement-01/05-AI-ML/AI-ML-Complete.md` (1073 lines) — 16-week AI/ML mastery plan.
+
+## Learning Roadmap
+
+<div class="roadmap-path">
+<div class="roadmap-step" data-step="1">
+<h4>Python for ML</h4>
+<p>NumPy, Pandas, Matplotlib — data handling ka foundation</p>
+</div>
+<div class="roadmap-step" data-step="2">
+<h4>Machine Learning</h4>
+<p>Supervised + Unsupervised algorithms, evaluation, feature engineering</p>
+</div>
+<div class="roadmap-step" data-step="3">
+<h4>Deep Learning</h4>
+<p>Neural Networks, CNN, RNN, Transfer Learning</p>
+</div>
+<div class="roadmap-step" data-step="4">
+<h4>Agentic AI</h4>
+<p>LangChain, AI Agents, RAG pipelines — current market ka USP</p>
+</div>
+<div class="roadmap-step" data-step="5">
+<h4>Projects</h4>
+<p>End-to-end ML pipelines, deployment, portfolio-ready demos</p>
+</div>
+</div>
 
 ## Python for ML
 
@@ -17,7 +45,13 @@ import seaborn as sns
 
 Tutorials `placement-original/Main-Course/Placement-01/05-AI-ML/Week-03-NumPy-Complete.md` aur `Week-04-Pandas-Complete.md` mein hain.
 
-### 16-Week Course Structure (from `AI-ML-Complete.md`)
+## 16-Week Course Structure
+
+<div class="phase-section">
+<div class="phase-header">
+<span class="tag tag-hot">Phase 1</span> Python Foundation — Weeks 1-4
+</div>
+<div class="phase-body">
 
 | Week | Topic | File |
 |------|-------|------|
@@ -25,12 +59,51 @@ Tutorials `placement-original/Main-Course/Placement-01/05-AI-ML/Week-03-NumPy-Co
 | 2 | Advanced Python (OOP, generators, file I/O) | `Week-02-Advanced-Python-Complete.md` |
 | 3 | NumPy (arrays, broadcasting, linear algebra) | `Week-03-NumPy-Complete.md` |
 | 4 | Pandas (DataFrame, groupby, merge, pivot) | `Week-04-Pandas-Complete.md` |
+
+</div>
+</div>
+
+<div class="phase-section">
+<div class="phase-header">
+<span class="tag tag-hot">Phase 2</span> Machine Learning — Weeks 5-10
+</div>
+<div class="phase-body">
+
+| Week | Topic | File |
+|------|-------|------|
 | 5 | ML Introduction | `Week-05-ML-Introduction-Complete.md` |
 | 6-8 | Supervised Learning | Regression + Classification |
 | 9-10 | Unsupervised Learning | Clustering + Dimensionality Reduction |
+
+</div>
+</div>
+
+<div class="phase-section">
+<div class="phase-header">
+<span class="tag tag-hot">Phase 3</span> Deep Learning &amp; Advanced — Weeks 11-14
+</div>
+<div class="phase-body">
+
+| Week | Topic | File |
+|------|-------|------|
 | 11-12 | Deep Learning | Neural Networks, CNN, RNN |
 | 13-14 | Advanced Topics | NLP, Transformers, Transfer Learning |
+
+</div>
+</div>
+
+<div class="phase-section">
+<div class="phase-header">
+<span class="tag tag-hot">Phase 4</span> Capstone Projects — Weeks 15-16
+</div>
+<div class="phase-body">
+
+| Week | Topic | File |
+|------|-------|------|
 | 15-16 | Capstone Projects | End-to-end ML pipeline |
+
+</div>
+</div>
 
 ### Python Data Analysis Example
 
@@ -62,36 +135,88 @@ results = analyzer.preprocess().analyze()
 
 ### Supervised Learning
 
-| Algorithm | Use Case | Key Concept |
-|-----------|----------|-------------|
-| Linear Regression | Continuous values | MSE, Gradient Descent, R-squared |
-| Polynomial Regression | Non-linear trends | Feature engineering, overfitting |
-| Ridge / Lasso | High-dimensional data | L1/L2 regularization, bias-variance tradeoff |
-| Logistic Regression | Binary classification | Sigmoid, Cross-entropy loss, Decision boundary |
-| Decision Trees | Interpretable models | Gini impurity, Information gain, Pruning |
-| Random Forest | Robust classification | Bagging, Feature importance, Out-of-bag error |
-| SVM | Complex boundaries | Kernel trick, Support vectors, Margin |
-| KNN | Instance-based learning | Distance metrics, K value selection |
+<div class="topic-grid">
+<div class="topic-card">
+<h4>Linear Regression</h4>
+<p>Continuous values prediction</p>
+<span class="tag tag-method">MSE · Gradient Descent · R-squared</span>
+</div>
+<div class="topic-card">
+<h4>Polynomial Regression</h4>
+<p>Non-linear trends</p>
+<span class="tag tag-method">Feature engineering · Overfitting</span>
+</div>
+<div class="topic-card">
+<h4>Ridge / Lasso</h4>
+<p>High-dimensional data</p>
+<span class="tag tag-method">L1/L2 regularization · Bias-variance tradeoff</span>
+</div>
+<div class="topic-card">
+<h4>Logistic Regression</h4>
+<p>Binary classification</p>
+<span class="tag tag-method">Sigmoid · Cross-entropy loss · Decision boundary</span>
+</div>
+<div class="topic-card">
+<h4>Decision Trees</h4>
+<p>Interpretable models</p>
+<span class="tag tag-method">Gini impurity · Information gain · Pruning</span>
+</div>
+<div class="topic-card">
+<h4>Random Forest</h4>
+<p>Robust classification</p>
+<span class="tag tag-method">Bagging · Feature importance · Out-of-bag error</span>
+</div>
+<div class="topic-card">
+<h4>SVM</h4>
+<p>Complex boundaries</p>
+<span class="tag tag-method">Kernel trick · Support vectors · Margin</span>
+</div>
+<div class="topic-card">
+<h4>KNN</h4>
+<p>Instance-based learning</p>
+<span class="tag tag-method">Distance metrics · K value selection</span>
+</div>
+</div>
 
 ### Unsupervised Learning
 
-| Algorithm | Application | Key Concept |
-|-----------|-------------|-------------|
-| K-Means | Customer segmentation | Elbow method, Silhouette score |
-| Hierarchical | Biology, taxonomy | Dendrogram, Agglomerative vs Divisive |
-| DBSCAN | Anomaly detection | Epsilon, MinPts, Noise points |
-| PCA | Dimensionality reduction | Eigenvalues, Explained variance, Feature reduction |
-| t-SNE | Visualization | Perplexity, Non-linear embedding |
+<div class="topic-grid">
+<div class="topic-card">
+<h4>K-Means</h4>
+<p>Customer segmentation</p>
+<span class="tag tag-method">Elbow method · Silhouette score</span>
+</div>
+<div class="topic-card">
+<h4>Hierarchical</h4>
+<p>Biology, taxonomy</p>
+<span class="tag tag-method">Dendrogram · Agglomerative vs Divisive</span>
+</div>
+<div class="topic-card">
+<h4>DBSCAN</h4>
+<p>Anomaly detection</p>
+<span class="tag tag-method">Epsilon · MinPts · Noise points</span>
+</div>
+<div class="topic-card">
+<h4>PCA</h4>
+<p>Dimensionality reduction</p>
+<span class="tag tag-method">Eigenvalues · Explained variance · Feature reduction</span>
+</div>
+<div class="topic-card">
+<h4>t-SNE</h4>
+<p>Visualization</p>
+<span class="tag tag-method">Perplexity · Non-linear embedding</span>
+</div>
+</div>
 
 ### Key ML Interview Questions
 
-1. Bias-Variance Tradeoff — overfitting kaise detect aur fix karein?
-2. Regularization — L1 vs L2 (L1 feature selection karta hai, L2 weights ko chota karta hai)
-3. Cross-validation — K-Fold, Stratified, Leave-One-Out
-4. Feature Scaling — StandardScaler vs MinMaxScaler (tree-based models ko scaling nahi chahiye)
-5. Handling missing data — mean/median imputation, model-based imputation
-6. Classification metrics — Accuracy vs Precision vs Recall vs F1 vs ROC-AUC
-7. Imbalanced dataset — SMOTE, class weights, undersampling/oversampling
+1. **Bias-Variance Tradeoff** — overfitting kaise detect aur fix karein?
+2. **Regularization** — L1 vs L2 (L1 feature selection karta hai, L2 weights ko chota karta hai)
+3. **Cross-validation** — K-Fold, Stratified, Leave-One-Out
+4. **Feature Scaling** — StandardScaler vs MinMaxScaler (tree-based models ko scaling nahi chahiye)
+5. **Handling missing data** — mean/median imputation, model-based imputation
+6. **Classification metrics** — Accuracy vs Precision vs Recall vs F1 vs ROC-AUC
+7. **Imbalanced dataset** — SMOTE, class weights, undersampling/oversampling
 
 ### Practice
 
@@ -147,7 +272,10 @@ Fine-tune on your dataset
 
 **Location**: `placement-original/Agentic-AI-Course/`
 
-Agentic AI aaj ka hottest topic hai. Ye tera USP ho sakta hai:
+<div class="tip-banner">
+<span class="tip-badge">🔥 Hot Take</span>
+Agentic AI aaj ka hottest topic hai. Ye tera USP ho sakta hai — LangChain + RAG seekhna current market mein sabse valuable skill hai. Har company AI agents integrate kar rahi hai.
+</div>
 
 | Concept | Description |
 |---------|-------------|
@@ -189,12 +317,35 @@ Learning_Course/
 
 ## Study Tips (Hinglish)
 
-- **📅 16-Week Plan**: Weeks 1-4 Python + libraries, 5-10 ML algorithms, 11-12 Deep Learning, 13-16 Advanced + Projects.
-- **🧮 Math Basics**: Linear algebra (matrices, eigenvalues), calculus (derivatives), statistics (mean, variance, Bayes) — ML interview mein puchte hain, lekin har formula na ratto, intuition samajh.
-- **💻 Practice > Theory**: ML theory 30% time, coding 70%. Kaggle datasets lo aur real models train karo.
-- **📊 Project Portfolio**: 2-3 solid projects rakho jo deployment tak gaye hain. Kaggle notebooks bhi kaam aate hain.
-- **🤖 Agentic AI USP**: LangChain + RAG seekhna is current market mein sabse valuable skill hai. Har company AI agents integrate kar rahi hai.
-- **🗣️ Prompt Engineering**: LLM se kaam lena seekho. Placement mein bhi AI tools ka use puchte hain.
+<div class="tip-banner">
+<span class="tip-badge">📌 Study Tip</span>
+<strong>16-Week Plan</strong>: Weeks 1-4 Python + libraries, 5-10 ML algorithms, 11-12 Deep Learning, 13-16 Advanced + Projects.
+</div>
+
+<div class="tip-banner">
+<span class="tip-badge">🧮 Math Basics</span>
+Linear algebra (matrices, eigenvalues), calculus (derivatives), statistics (mean, variance, Bayes) — ML interview mein puchte hain, lekin har formula na ratto, intuition samajh.
+</div>
+
+<div class="tip-banner">
+<span class="tip-badge">💻 Practice > Theory</span>
+ML theory 30% time, coding 70%. Kaggle datasets lo aur real models train karo.
+</div>
+
+<div class="tip-banner">
+<span class="tip-badge">📊 Project Portfolio</span>
+2-3 solid projects rakho jo deployment tak gaye hain. Kaggle notebooks bhi kaam aate hain.
+</div>
+
+<div class="tip-banner">
+<span class="tip-badge">🤖 Agentic AI USP</span>
+LangChain + RAG seekhna is current market mein sabse valuable skill hai. Har company AI agents integrate kar rahi hai.
+</div>
+
+<div class="tip-banner">
+<span class="tip-badge">🗣️ Prompt Engineering</span>
+LLM se kaam lena seekho. Placement mein bhi AI tools ka use puchte hain.
+</div>
 
 ## Checklist
 

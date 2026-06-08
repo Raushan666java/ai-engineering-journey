@@ -1,37 +1,62 @@
-# System Design — Bada Soch, Bada Banao
+<div class="module-hero">
+  <div class="module-hero-icon">🏛️</div>
+  <div class="module-hero-body">
+    <h1>System Design — Bada Soch, Bada Banao</h1>
+    <p>System design senior role aur FAANG interviews mein make-or-break hota hai. Ye section tujhe fundamentals se lekar advanced distributed systems tak le jayega.</p>
+    <div class="module-hero-meta">
+      <span class="tag tag-hot">10-Week Course</span>
+      <span class="tag tag-star">FAANG Interview</span>
+      <span class="tag tag-method">Advanced</span>
+    </div>
+  </div>
+</div>
 
-System design senior role aur FAANG interviews mein make-or-break hota hai. Ye section tujhe fundamentals se lekar advanced distributed systems tak le jayega. Master content `placement-original/Main-Course/Placement-01/10-System-design/` mein hai.
+## Learning Roadmap
 
-Placement-original mein:
-- `placement-original/Main-Course/Placement-01/10-System-design/syllabus.md` — Poora 10-week breakdown (1464 lines of pure gold)
-- `placement-original/Main-Course/Placement-01/10-System-design/INTERVIEW_PREPARATION_GUIDE.md` — FAANG interview framework, practice questions, pro tips
-- `placement-original/Main-Course/Placement-01/10-System-design/Case-Studies/url-shortener-complete.md` — TinyURL/bitly ka full HLD + LLD
-- `placement-original/Main-Course/Placement-01/10-System-design/Case-Studies/social-media-platform-complete.md` — Twitter-like platform ka end-to-end design
+<div class="roadmap-path">
+  <div class="roadmap-step" data-step="1"><strong>Foundations</strong><span>CAP theorem, scalability metrics, network fundamentals</span></div>
+  <div class="roadmap-step" data-step="2"><strong>Core Building Blocks</strong><span>SQL/NoSQL, caching, load balancing, reverse proxy</span></div>
+  <div class="roadmap-step" data-step="3"><strong>API Design &amp; Messaging</strong><span>REST, GraphQL, gRPC, Kafka, RabbitMQ</span></div>
+  <div class="roadmap-step" data-step="4"><strong>Advanced Patterns</strong><span>Microservices, circuit breaker, observability</span></div>
+  <div class="roadmap-step" data-step="5"><strong>Storage &amp; Processing</strong><span>S3, CDN, Elasticsearch, MapReduce, Spark</span></div>
+  <div class="roadmap-step" data-step="6"><strong>Case Studies</strong><span>URL shortener, Twitter, Instagram, Uber, WhatsApp</span></div>
+  <div class="roadmap-step" data-step="7"><strong>Interview Prep</strong><span>PEDALS framework, mock interviews, FAANG prep</span></div>
+</div>
+
+<div class="tip-banner">
+  <span class="tip-badge">💡 System Design Study Tip</span>
+  <strong>Theory + Practice dono chahiye:</strong> Pehle concept samajh (YouTube + books), phir whiteboard pe draw kar. Har system design problem ko 3 baar practice kar — pehle bina dekhe, phir notes ke saath, phir time limit mein. Mock interviews ke liye Pramp ya Interviewing.io use kar. Aur haan, <strong>Hinglish mein sochne mein koi shame nahi</strong> — jab tak concepts clear hain, language matter nahi karti!
+</div>
 
 ## Course Structure
 
-From `placement-original/Main-Course/Placement-01/10-System-design/syllabus.md`:
-
-| Week | Topic | Key Highlights |
-|------|-------|---------------|
-| 1 | Foundations | CAP theorem, consistency models, scalability metrics, network fundamentals |
-| 2 | Core Building Blocks | SQL/NoSQL, caching strategies (LRU, LFU, TTL), load balancing, reverse proxy |
-| 3 | API Design & Messaging | REST, GraphQL, gRPC, Kafka, RabbitMQ, event sourcing, saga pattern, CQRS |
-| 4 | Advanced Patterns | Microservices, circuit breaker, service mesh, observability (Prometheus, Grafana, ELK) |
-| 5 | Data Storage & Processing | S3, CDN, Elasticsearch, MapReduce, Spark, Kafka Streams |
-| 6 | Distributed Systems | Consensus (Paxos/Raft), distributed transactions, consistent hashing, gossip protocol |
-| 7 | Reliability & Monitoring | SLA/SLO/SLI, chaos engineering, incident response, distributed tracing |
-| 8 | Security & Infrastructure | OAuth 2.0, JWT, rate limiting, DDoS protection, secrets management |
-| 9 | Advanced Patterns | CQRS, event sourcing, bucket 4-rate limiting, bloom filters, Merkle trees |
-| 10 | Interview Mastery | Mock interviews, whiteboarding, 40+ case studies, FAANG-specific prep |
+<table class="table-dash">
+  <thead><tr><th>Week</th><th>Topic</th><th>Key Highlights</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Foundations</td><td>CAP theorem, consistency models, scalability metrics, network fundamentals</td></tr>
+    <tr><td>2</td><td>Core Building Blocks</td><td>SQL/NoSQL, caching strategies (LRU, LFU, TTL), load balancing, reverse proxy</td></tr>
+    <tr><td>3</td><td>API Design &amp; Messaging</td><td>REST, GraphQL, gRPC, Kafka, RabbitMQ, event sourcing, saga pattern, CQRS</td></tr>
+    <tr><td>4</td><td>Advanced Patterns</td><td>Microservices, circuit breaker, service mesh, observability (Prometheus, Grafana, ELK)</td></tr>
+    <tr><td>5</td><td>Data Storage &amp; Processing</td><td>S3, CDN, Elasticsearch, MapReduce, Spark, Kafka Streams</td></tr>
+    <tr><td>6</td><td>Distributed Systems</td><td>Consensus (Paxos/Raft), distributed transactions, consistent hashing, gossip protocol</td></tr>
+    <tr><td>7</td><td>Reliability &amp; Monitoring</td><td>SLA/SLO/SLI, chaos engineering, incident response, distributed tracing</td></tr>
+    <tr><td>8</td><td>Security &amp; Infrastructure</td><td>OAuth 2.0, JWT, rate limiting, DDoS protection, secrets management</td></tr>
+    <tr><td>9</td><td>Advanced Patterns</td><td>CQRS, event sourcing, bucket 4-rate limiting, bloom filters, Merkle trees</td></tr>
+    <tr><td>10</td><td>Interview Mastery</td><td>Mock interviews, whiteboarding, 40+ case studies, FAANG-specific prep</td></tr>
+  </tbody>
+</table>
 
 Har week ka detailed breakdown syllabus mein hai — Week 1 se Week 10 tak har topic, hands-on lab, aur exercise ke saath.
 
 ---
 
-## Week 1 — Foundations (12 hrs)
+<div class="phase-section">
+  <div class="phase-header"><span>📐 Weeks 1-2: Foundations &amp; Core Building Blocks</span><span class="tag tag-hot">24 hrs</span></div>
+  <div class="phase-body">
 
-**Day 1-2: Introduction & Core Principles**
+### Week 1 — Foundations (12 hrs)
+
+**Day 1-2: Introduction &amp; Core Principles**
 - High-Level Design (HLD) vs Low-Level Design (LLD)
 - RADIO Framework (Requirements, Architecture, Design, Identify, Optimize)
 - Functional vs Non-Functional Requirements
@@ -50,11 +75,9 @@ Har week ka detailed breakdown syllabus mein hai — Week 1 se Week 10 tak har t
 
 Lab: Twitter-like system ke liye capacity estimation (200M DAU, 50 tweets/day)
 
----
+### Week 2 — Core Building Blocks (12 hrs)
 
-## Week 2 — Core Building Blocks (12 hrs)
-
-**Databases & Storage**
+**Databases &amp; Storage**
 - SQL: ACID, normalization (1NF-3NF-BCNF), indexing (B-Tree, B+ Tree, Hash Index)
 - NoSQL: Document (MongoDB), Key-Value (Redis), Column-Family (Cassandra), Graph (Neo4j)
 - BASE vs ACID — kab kya select karein
@@ -67,7 +90,7 @@ Lab: Twitter-like system ke liye capacity estimation (200M DAU, 50 tweets/day)
 - Distributed Caching: Redis (data structures, pub/sub, cluster, sentinel), Memcached
 - Cache Stampede Problem aur solutions
 
-**Load Balancing & Proxies**
+**Load Balancing &amp; Proxies**
 - Layer 4 (Transport) vs Layer 7 (Application)
 - Algorithms: Round Robin, Least Connections, IP Hash, Geo-based
 - Tools: Nginx, HAProxy, AWS ELB/ALB
@@ -75,9 +98,14 @@ Lab: Twitter-like system ke liye capacity estimation (200M DAU, 50 tweets/day)
 
 Lab: Implement Consistent Hashing in Python + LRU Cache implementation
 
----
+  </div>
+</div>
 
-## Week 3 — API Design & Messaging (12 hrs)
+<div class="phase-section">
+  <div class="phase-header"><span>🔌 Weeks 3-4: API Design, Messaging &amp; Advanced Patterns</span><span class="tag tag-hot">24 hrs</span></div>
+  <div class="phase-body">
+
+### Week 3 — API Design &amp; Messaging (12 hrs)
 
 **API Design**
 - RESTful principles: HTTP methods, status codes, versioning, pagination, HATEOAS
@@ -97,17 +125,15 @@ Lab: Implement Consistent Hashing in Python + LRU Cache implementation
 
 Lab: Build notification system with message queues + event streaming pipeline with Kafka
 
----
-
-## Week 4 — Advanced Patterns & Practices (12 hrs)
+### Week 4 — Advanced Patterns &amp; Practices (12 hrs)
 
 **Microservices Architecture**
 - Monolith → Microservices migration (Netflix journey)
 - Service boundaries, Domain-Driven Design
 - Service mesh: Istio, Linkerd
-- Circuit Breaker (Hystrix, Resilience4j), Bulkhead Pattern, Retry & Timeout
+- Circuit Breaker (Hystrix, Resilience4j), Bulkhead Pattern, Retry &amp; Timeout
 
-**Security & Authentication**
+**Security &amp; Authentication**
 - Auth methods: Session-based, JWT, OAuth 2.0 + OpenID Connect, MFA
 - Authorization: RBAC, ABAC, ACL
 - OWASP Top 10, SQL injection prevention, XSS/CSRF protection
@@ -122,17 +148,20 @@ Lab: Build notification system with message queues + event streaming pipeline wi
 
 Lab: Spring Boot circuit breaker implementation + Prometheus/Grafana monitoring dashboard
 
----
+  </div>
+</div>
 
-## Week 5 — Storage & Data Processing (12 hrs)
+<div class="phase-section">
+  <div class="phase-header"><span>💾 Week 5: Storage &amp; Data Processing</span><span class="tag tag-hot">12 hrs</span></div>
+  <div class="phase-body">
 
-**File Storage & CDN**
+**File Storage &amp; CDN**
 - S3 Architecture: Durability (11 nines), storage classes (hot/cold/archive), multipart upload, pre-signed URLs
 - CDN: CloudFront, Cloudflare, Akamai — edge locations, cache control, invalidation
 - Block Storage (EBS) vs File Storage (NFS) vs Object Storage (S3)
 
-**Search & Indexing**
-- Elasticsearch: Inverted index, TF-IDF, BM25, shards & replicas, Query DSL
+**Search &amp; Indexing**
+- Elasticsearch: Inverted index, TF-IDF, BM25, shards &amp; replicas, Query DSL
 - Fuzzy matching, auto-complete, faceted search, geo-spatial search
 
 **Big Data Processing**
@@ -140,25 +169,28 @@ Lab: Spring Boot circuit breaker implementation + Prometheus/Grafana monitoring 
 - Stream: Kafka Streams, Apache Flink, windowing, stateful processing
 - Data Warehouses: Redshift, BigQuery, Snowflake
 
----
+  </div>
+</div>
 
-## Week 6-7 — Real-World Case Studies (24 hrs)
+<div class="phase-section">
+  <div class="phase-header"><span>🏗️ Weeks 6-7: Real-World Case Studies</span><span class="tag tag-hot">24 hrs</span></div>
+  <div class="phase-body">
 
 Har case study follows same structure:
-1. Problem Statement & Constraints
+1. Problem Statement &amp; Constraints
 2. Functional + Non-Functional Requirements
 3. Capacity Estimation (traffic, storage, bandwidth)
 4. API Design (REST endpoints)
 5. Database Schema
 6. High-Level Architecture Diagram
 7. Deep Dive into Critical Components
-8. Bottlenecks & Solutions
-9. Trade-offs & Alternatives
+8. Bottlenecks &amp; Solutions
+9. Trade-offs &amp; Alternatives
 10. Interview Questions
 
 ### Case Study: URL Shortener (TinyURL)
 
-**Requirements**: 100M URLs/month, 10:1 read-to-write, <50ms redirect, 99.99% availability
+**Requirements**: 100M URLs/month, 10:1 read-to-write, &lt;50ms redirect, 99.99% availability
 
 **Capacity**:
 ```
@@ -178,25 +210,38 @@ GET  /api/v1/analytics/{short_code} → { "clicks": 1234 }
 
 **Deep Dive**: Base62 encoding for short codes, cache hot URLs in Redis, async analytics via Kafka, consistent hashing for DB sharding.
 
-Poore case studies ke saath `placement-original/Main-Course/Placement-01/10-System-design/Case-Studies/` folder mein code, schema, aur architecture diagrams hain.
+Poore case studies ke saath `Case-Studies/` folder mein code, schema, aur architecture diagrams hain.
 
----
+  </div>
+</div>
 
 ## Scalability
 
-### Horizontal vs Vertical Scaling
+<div class="phase-section">
+  <div class="phase-header"><span>📈 Horizontal vs Vertical Scaling</span><span class="tag tag-method">Core</span></div>
+  <div class="phase-body">
 
 ```
 Vertical:   Bigger machine → limits exist
 Horizontal: More machines → infinite scaling
 ```
 
-### Load Balancing
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>⚖️ Load Balancing</span><span class="tag tag-method">Network</span></div>
+  <div class="phase-body">
 
 - Round Robin, Weighted, Least Connections
 - Tools: Nginx, HAProxy, AWS ELB
 
-### Caching
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>⚡ Caching</span><span class="tag tag-star">Performance</span></div>
+  <div class="phase-body">
 
 - **Redis**: In-memory cache, data structures, pub/sub
 - **Memcached**: Simple key-value cache
@@ -208,24 +253,37 @@ redis-cli SET user:123 '{"name":"Raushan"}'
 redis-cli GET user:123
 ```
 
----
+  </div>
+</div>
 
 ## Database Design
 
-### Sharding
+<div class="phase-section">
+  <div class="phase-header"><span>🔀 Sharding</span><span class="tag tag-method">Scale</span></div>
+  <div class="phase-body">
 
 ```
 Horizontal sharding: Users 1-1000 → Shard 1, 1001-2000 → Shard 2
 Vertical sharding: User data → One DB, Posts → Another DB
 ```
 
-### Replication
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🔄 Replication</span><span class="tag tag-method">HA</span></div>
+  <div class="phase-body">
 
 - **Master-Slave**: Read replicas
 - **Multi-Master**: Write to any node
 - **Quorum**: Consensus-based replication
 
-### CAP Theorem
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🧩 CAP Theorem</span><span class="tag tag-hot">Fundamental</span></div>
+  <div class="phase-body">
 
 ```
 Consistency → Availability → Partition Tolerance
@@ -235,16 +293,24 @@ AP: Social media
 CA: Single-node systems
 ```
 
----
+  </div>
+</div>
 
 ## Microservices
 
-### Communication
+<div class="phase-section">
+  <div class="phase-header"><span>📡 Communication</span><span class="tag tag-method">Pattern</span></div>
+  <div class="phase-body">
 
 - **Synchronous**: REST, gRPC
 - **Asynchronous**: Message Queues (RabbitMQ, Kafka)
 
-### API Gateway
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🚪 API Gateway</span><span class="tag tag-method">Entry</span></div>
+  <div class="phase-body">
 
 ```yaml
 Gateway:
@@ -254,7 +320,12 @@ Gateway:
     /payments/* → Payment Service
 ```
 
-### Circuit Breaker
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🛡️ Circuit Breaker</span><span class="tag tag-method">Resilience</span></div>
+  <div class="phase-body">
 
 Failures ko cascade hone se bachata hai:
 
@@ -262,108 +333,136 @@ Failures ko cascade hone se bachata hai:
 CLOSED → OPEN (failure threshold crossed) → HALF_OPEN (test) → CLOSED
 ```
 
----
+  </div>
+</div>
 
 ## Case Studies
 
-### WhatsApp (1B+ Users)
-
-From `placement-original/Main-Course/Placement-01/10-System-design/Case-Studies/`:
-
-- **Chat**: Custom XMPP → own protocol
-- **Storage**: Messages on device, not server
-- **Real-time**: Persistent TCP connection
-- **Scaling**: Erlang (soft real-time, massive concurrency)
-- **Group chat**: Fanout approach, delivery receipts
-
-### Instagram
-
-- **Feed**: Redis sorted sets, fanout-on-write for small users, fanout-on-load for large
-- **Photos**: S3 for storage, CDN for delivery
-- **Stories**: Ephemeral storage, pre-loading
-- **Ranking**: ML-based feed ranking algorithm
-
-### Uber
-
-- **Matching**: Geospatial indexing (QuadTrees, H3), real-time driver location via WebSockets
-- **Ride flow**: State machine (requesting → accepted → in-progress → completed)
-- **Pricing**: Surge pricing algorithm, supply-demand curves
-- **ETA**: Real-time traffic data, ML-based prediction
-
-### Netflix
-
-- **Content delivery**: Open Connect CDN (custom CDN at ISP edges)
-- **Microservices**: 500+ services, each independently deployable
-- **Resilience**: Chaos Monkey, Hystrix circuit breaker, Chaos Engineering
-- **Recommendations**: Personalized ML models, A/B testing at scale
-
-### YouTube
-
-- **Upload pipeline**: Video transcoding (multiple resolutions), adaptive bitrate streaming (HLS/DASH)
-- **CDN**: Google's global edge network, pre-fetching popular content
-- **Recommendations**: Deep neural networks, user history, watch time optimization
-
-### Google Search
-
-- **Crawling**: Distributed web crawler, politeness policies, freshness
-- **Indexing**: Inverted index at petabyte scale, MapReduce for index building
-- **Ranking**: PageRank algorithm, 200+ ranking signals, BERT for query understanding
-
----
+<div class="topic-grid">
+  <div class="topic-card">
+    <h4>WhatsApp (1B+ Users)</h4>
+    <p>Chat: Custom XMPP → own protocol. Storage: Messages on device, not server. Real-time: Persistent TCP connection. Scaling: Erlang (soft real-time, massive concurrency). Group chat: Fanout approach, delivery receipts.</p>
+    <div class="topic-meta">Real-time Messaging</div>
+  </div>
+  <div class="topic-card">
+    <h4>Instagram</h4>
+    <p>Feed: Redis sorted sets, fanout-on-write for small users, fanout-on-load for large. Photos: S3 for storage, CDN for delivery. Stories: Ephemeral storage, pre-loading. Ranking: ML-based feed ranking algorithm.</p>
+    <div class="topic-meta">Social Media</div>
+  </div>
+  <div class="topic-card">
+    <h4>Uber</h4>
+    <p>Matching: Geospatial indexing (QuadTrees, H3), real-time driver location via WebSockets. Ride flow: State machine. Pricing: Surge pricing algorithm. ETA: Real-time traffic data, ML-based prediction.</p>
+    <div class="topic-meta">Real-time Logistics</div>
+  </div>
+  <div class="topic-card">
+    <h4>Netflix</h4>
+    <p>Content delivery: Open Connect CDN (custom CDN at ISP edges). Microservices: 500+ services, each independently deployable. Resilience: Chaos Monkey, Hystrix circuit breaker. Recommendations: Personalized ML models.</p>
+    <div class="topic-meta">Streaming</div>
+  </div>
+  <div class="topic-card">
+    <h4>YouTube</h4>
+    <p>Upload pipeline: Video transcoding (multiple resolutions), adaptive bitrate streaming (HLS/DASH). CDN: Google's global edge network, pre-fetching popular content. Recommendations: Deep neural networks.</p>
+    <div class="topic-meta">Video Platform</div>
+  </div>
+  <div class="topic-card">
+    <h4>Google Search</h4>
+    <p>Crawling: Distributed web crawler, politeness policies, freshness. Indexing: Inverted index at petabyte scale, MapReduce for index building. Ranking: PageRank algorithm, 200+ ranking signals, BERT for query understanding.</p>
+    <div class="topic-meta">Search Engine</div>
+  </div>
+</div>
 
 ## AI System Design
 
 From main curriculum Phase 8:
 
-### RAG Pipeline (Retrieval Augmented Generation)
+<div class="phase-section">
+  <div class="phase-header"><span>🔍 RAG Pipeline (Retrieval Augmented Generation)</span><span class="tag tag-star">Trending</span></div>
+  <div class="phase-body">
 
 ```ascii
 User Query → Embedding → Vector Search (Pinecone/Weaviate)
     → Retrieve relevant chunks → LLM → Response
 ```
 
-### Agent Systems
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🤖 Agent Systems</span><span class="tag tag-hot">AI</span></div>
+  <div class="phase-body">
 
 - **Orchestrator Agent**: Routes tasks
 - **Specialist Agents**: Code, research, data
 - **Memory**: Conversation history, vector store
 - **Tools**: API calls, database queries, code execution
 
-### Model Serving
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🚀 Model Serving</span><span class="tag tag-method">MLOps</span></div>
+  <div class="phase-body">
 
 - **Batch**: Offline predictions
 - **Real-time**: REST/gRPC endpoints
 - **Streaming**: WebSockets for live
 
----
+  </div>
+</div>
 
 ## Design Patterns
 
-### Creational
+<div class="phase-section">
+  <div class="phase-header"><span>🏗️ Creational</span><span class="tag tag-method">Creation</span></div>
+  <div class="phase-body">
 
-| Pattern | Use Case |
-|---------|----------|
-| **Singleton** | Database connection, Cache instance |
-| **Factory** | Creating objects without exposing logic |
-| **Builder** | Complex object construction |
+<table class="table-dash">
+  <thead><tr><th>Pattern</th><th>Use Case</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Singleton</strong></td><td>Database connection, Cache instance</td></tr>
+    <tr><td><strong>Factory</strong></td><td>Creating objects without exposing logic</td></tr>
+    <tr><td><strong>Builder</strong></td><td>Complex object construction</td></tr>
+  </tbody>
+</table>
 
-### Structural
+  </div>
+</div>
 
-| Pattern | Use Case |
-|---------|----------|
-| **Adapter** | Integrate incompatible interfaces |
-| **Decorator** | Add behavior dynamically |
-| **Facade** | Simplified interface to complex system |
+<div class="phase-section">
+  <div class="phase-header"><span>🔗 Structural</span><span class="tag tag-method">Structure</span></div>
+  <div class="phase-body">
 
-### Behavioral
+<table class="table-dash">
+  <thead><tr><th>Pattern</th><th>Use Case</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Adapter</strong></td><td>Integrate incompatible interfaces</td></tr>
+    <tr><td><strong>Decorator</strong></td><td>Add behavior dynamically</td></tr>
+    <tr><td><strong>Facade</strong></td><td>Simplified interface to complex system</td></tr>
+  </tbody>
+</table>
 
-| Pattern | Use Case |
-|---------|----------|
-| **Observer** | Event handling, notifications |
-| **Strategy** | Interchangeable algorithms |
-| **Command** | Request queuing, undo operations |
+  </div>
+</div>
 
-### SOLID Principles
+<div class="phase-section">
+  <div class="phase-header"><span>⚡ Behavioral</span><span class="tag tag-method">Behavior</span></div>
+  <div class="phase-body">
+
+<table class="table-dash">
+  <thead><tr><th>Pattern</th><th>Use Case</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Observer</strong></td><td>Event handling, notifications</td></tr>
+    <tr><td><strong>Strategy</strong></td><td>Interchangeable algorithms</td></tr>
+    <tr><td><strong>Command</strong></td><td>Request queuing, undo operations</td></tr>
+  </tbody>
+</table>
+
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🧱 SOLID Principles</span><span class="tag tag-star">Essential</span></div>
+  <div class="phase-body">
 
 ```
 S — Single Responsibility: Ek class ka ek kaam
@@ -373,23 +472,32 @@ I — Interface Segregation: Chhote, focused interfaces
 D — Dependency Inversion: High-level modules depend on abstractions
 ```
 
----
+  </div>
+</div>
 
 ## Interview Preparation
 
-From `placement-original/Main-Course/Placement-01/10-System-design/INTERVIEW_PREPARATION_GUIDE.md`:
+<div class="phase-section">
+  <div class="phase-header"><span>🎯 Interview Format (45-60 min)</span><span class="tag tag-hot">FAANG</span></div>
+  <div class="phase-body">
 
-### Interview Format (45-60 min)
+<table class="table-dash">
+  <thead><tr><th>Phase</th><th>Time</th><th>What to Do</th></tr></thead>
+  <tbody>
+    <tr><td>Clarification</td><td>5-10 min</td><td>Ask questions, define scope, functional + non-functional requirements</td></tr>
+    <tr><td>High-Level Design</td><td>10-15 min</td><td>Draw architecture diagram, components, data flow</td></tr>
+    <tr><td>Deep Dive</td><td>15-20 min</td><td>Discuss critical components in detail (feed generation, sharding, caching)</td></tr>
+    <tr><td>Scaling &amp; Trade-offs</td><td>10-15 min</td><td>Bottlenecks, scale solutions, pros/cons of decisions</td></tr>
+    <tr><td>Q&amp;A</td><td>5 min</td><td>Answer interviewer questions</td></tr>
+  </tbody>
+</table>
 
-| Phase | Time | What to Do |
-|-------|------|------------|
-| Clarification | 5-10 min | Ask questions, define scope, functional + non-functional requirements |
-| High-Level Design | 10-15 min | Draw architecture diagram, components, data flow |
-| Deep Dive | 15-20 min | Discuss critical components in detail (feed generation, sharding, caching) |
-| Scaling & Trade-offs | 10-15 min | Bottlenecks, scale solutions, pros/cons of decisions |
-| Q&A | 5 min | Answer interviewer questions |
+  </div>
+</div>
 
-### The PEDALS Framework
+<div class="phase-section">
+  <div class="phase-header"><span>📋 The PEDALS Framework</span><span class="tag tag-method">Structured</span></div>
+  <div class="phase-body">
 
 ```
 P — Problem Understanding: Clarify requirements, don't assume
@@ -400,7 +508,12 @@ L — Low-Level Design: Deep dive into critical components
 S — Scale & Trade-offs: Discuss how to scale and trade-off decisions
 ```
 
-### Framework for Any Design Problem
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>📐 Framework for Any Design Problem</span><span class="tag tag-method">Template</span></div>
+  <div class="phase-body">
 
 ```
 1. REQUIREMENTS → Functional + Non-functional (scale, latency, availability)
@@ -411,7 +524,12 @@ S — Scale & Trade-offs: Discuss how to scale and trade-off decisions
 6. BOTTLENECKS → Trade-offs, improvements
 ```
 
-### Back-of-Envelope Calculations
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🧮 Back-of-Envelope Calculations</span><span class="tag tag-hot">Must Know</span></div>
+  <div class="phase-body">
 
 ```
 DAU = 100M
@@ -421,61 +539,82 @@ Daily storage = 1TB
 5 year storage = 1TB × 365 × 5 = 1.8PB
 ```
 
+  </div>
+</div>
+
 ### Common Interview Questions
 
-#### Easy (Entry Level)
+<div class="phase-section">
+  <div class="phase-header"><span>🟢 Easy (Entry Level)</span><span class="tag tag-method">Start</span></div>
+  <div class="phase-body">
+
 1. **Design URL Shortener (TinyURL)** — Hash collisions, base62, expiration, analytics
 2. **Design Pastebin** — Text storage, syntax highlighting, rate limiting
 3. **Design Parking Lot System** — Slot management, entry/exit tracking, payment
 
-#### Medium (Mid-Senior)
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🟡 Medium (Mid-Senior)</span><span class="tag tag-hot">Practice</span></div>
+  <div class="phase-body">
+
 4. **Design Twitter** — Fanout (push vs pull), hot user problem, timeline caching
 5. **Design Instagram** — Image storage (S3 + CDN), feed ranking, stories
 6. **Design Uber** — Geo-spatial indexing (QuadTrees, H3), real-time WebSockets, surge pricing
 7. **Design WhatsApp** — Message storage, delivery guarantees, offline messages, E2E encryption
 
-#### Hard (Senior+)
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header"><span>🔴 Hard (Senior+)</span><span class="tag tag-star">Advanced</span></div>
+  <div class="phase-body">
+
 8. **Design YouTube** — Video transcoding pipeline, adaptive bitrate streaming, CDN strategy
 9. **Design Netflix** — Multi-bitrate encoding, Open Connect CDN, recommendation engine
 10. **Design Google Search** — Distributed crawling, inverted index, PageRank, query optimization
 
-### Interview Tips — Do's & Don'ts
+  </div>
+</div>
 
-#### ✅ Do's:
-- Out loud soch — har decision explain kar
-- Start simple, phir iterate — pehle basic diagram bana, then components add kar
-- Trade-offs discuss kar — koi perfect solution nahi hota
-- Concrete numbers use kar — DAU, QPS, storage estimates de
-- Multiple approaches compare kar (push vs pull, SQL vs NoSQL)
-- Interviewer ke hints ko catch kar — woh tujhe direction de raha hai
-- Design for failure — SPOF, redundancy, disaster recovery soch
+### Interview Tips — Do's &amp; Don'ts
 
-#### ❌ Don'ts:
-- Seedha solution mat jump kar — requirements pehle clear kar
-- Requirements assume mat kar (especially non-functional ones)
-- Defensive mat ho — suggestions accept kar
-- Buzzwords mat pel without understanding
-- Over-engineer mat kar initially — simple, then iterate
-- Estimation skip mat kar — FAANG interviewers check this
+<div class="topic-grid">
+  <div class="topic-card">
+    <h4>✅ Do's</h4>
+    <p>Out loud soch — har decision explain kar. Start simple, phir iterate — pehle basic diagram bana, then components add kar. Trade-offs discuss kar — koi perfect solution nahi hota. Concrete numbers use kar — DAU, QPS, storage estimates de. Multiple approaches compare kar (push vs pull, SQL vs NoSQL). Interviewer ke hints ko catch kar — woh tujhe direction de raha hai. Design for failure — SPOF, redundancy, disaster recovery soch.</p>
+  </div>
+  <div class="topic-card">
+    <h4>❌ Don'ts</h4>
+    <p>Seedha solution mat jump kar — requirements pehle clear kar. Requirements assume mat kar (especially non-functional ones). Defensive mat ho — suggestions accept kar. Buzzwords mat pel without understanding. Over-engineer mat kar initially — simple, then iterate. Estimation skip mat kar — FAANG interviewers check this.</p>
+  </div>
+</div>
 
 ### 4-Week Interview Prep Plan
 
-| Week | Focus | Key Actions |
-|------|-------|-------------|
-| 1 | Foundations | CAP theorem, capacity estimation, study 3-5 case studies |
-| 2 | Core Concepts | Databases deep dive, caching strategies, load balancing, message queues |
-| 3 | Practice | Solve 10+ system design problems, draw diagrams, 3-5 mock interviews |
-| 4 | Polish | Whiteboarding practice, time yourself (45 min), review weak areas |
+<table class="table-dash">
+  <thead><tr><th>Week</th><th>Focus</th><th>Key Actions</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Foundations</td><td>CAP theorem, capacity estimation, study 3-5 case studies</td></tr>
+    <tr><td>2</td><td>Core Concepts</td><td>Databases deep dive, caching strategies, load balancing, message queues</td></tr>
+    <tr><td>3</td><td>Practice</td><td>Solve 10+ system design problems, draw diagrams, 3-5 mock interviews</td></tr>
+    <tr><td>4</td><td>Polish</td><td>Whiteboarding practice, time yourself (45 min), review weak areas</td></tr>
+  </tbody>
+</table>
 
 Mock interviews ke liye use kar: LeetCode System Design, Pramp, Interviewing.io, Exponent.
 
 ### What Interviewers Look For
 
-| Level | Expectation |
-|-------|-------------|
-| Hire | Clear communication, structured approach, good trade-off analysis, handles scale, asks great questions |
-| Maybe | Basic design works, some gaps, limited scale discussion, needs prompting |
-| No Hire | Can't design basic system, poor communication, no scale consideration, doesn't ask questions |
+<table class="table-dash">
+  <thead><tr><th>Level</th><th>Expectation</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Hire</strong></td><td>Clear communication, structured approach, good trade-off analysis, handles scale, asks great questions</td></tr>
+    <tr><td><strong>Maybe</strong></td><td>Basic design works, some gaps, limited scale discussion, needs prompting</td></tr>
+    <tr><td><strong>No Hire</strong></td><td>Can't design basic system, poor communication, no scale consideration, doesn't ask questions</td></tr>
+  </tbody>
+</table>
 
 ---
 

@@ -1,26 +1,70 @@
-# CS Core — Computer Science Ki Jaan
+<div class="module-hero">
+  🖥️
+  <h1>CS Core — Computer Science Ki Jaan</h1>
+  <p>Placement interviews ka backbone. DSA, OS, DBMS, CN, CO, TOC — har company poochti hai. Is module mein 7 subjects ka comprehensive coverage hai.</p>
+  <p><span class="tag-hot">7 Subjects</span> <span class="tag-star">500+ Problems</span> <span class="tag-method">Interview Ready</span></p>
+</div>
 
-Ye module placement interviews ka backbone hai. DSA, OS, DBMS, CN, CO, TOC — har company poochti hai. Iska structure `placement-original/Main-Course/Placement-01/02-CS-Core/` mein milega. Har subject ka detailed breakdown neeche diya hai source files se.
+<div class="tip-banner">
+  <span class="tip-badge">💡 TIP</span>
+  Ye module placements ki jaan hai. Har subject ek pillar hai — ek bhi weak mat chhodo. Rozana 2-3 ghante CS Core ko do aur interview-ready ban jao. DSA + OS + DBMS + CN — ye 4 subjects toh har company mandatory poochti hai. Inhe pehle pakka karo!
+</div>
+
+<div class="roadmap-path">
+  <div class="roadmap-step" data-step="1">
+    <h4>DSA — Data Structures &amp; Algorithms</h4>
+    <p>12-week mastery — Arrays se DP tak, 500+ problems. Sabse important subject.</p>
+  </div>
+  <div class="roadmap-step" data-step="2">
+    <h4>OS — Operating Systems</h4>
+    <p>16-week A to Z course — Process, Memory, Deadlocks, Virtualization, Security.</p>
+  </div>
+  <div class="roadmap-step" data-step="3">
+    <h4>DBMS — Database Management Systems</h4>
+    <p>8-week course — SQL, Normalization, Transactions, NoSQL, CAP Theorem.</p>
+  </div>
+  <div class="roadmap-step" data-step="4">
+    <h4>CN — Computer Networks</h4>
+    <p>8-week course — OSI, TCP/IP, Subnetting, Routing, Network Security.</p>
+  </div>
+  <div class="roadmap-step" data-step="5">
+    <h4>COA — Computer Organization &amp; Architecture</h4>
+    <p>Pipeline, Cache, Addressing Modes, Data Representation.</p>
+  </div>
+  <div class="roadmap-step" data-step="6">
+    <h4>TOC — Theory of Computation</h4>
+    <p>Automata, Grammars, Turing Machines, Chomsky Hierarchy basics.</p>
+  </div>
+  <div class="roadmap-step" data-step="7">
+    <h4>SE — Software Engineering</h4>
+    <p>15-week program — SDLC, Testing, Design Patterns, CI/CD.</p>
+  </div>
+</div>
 
 ---
 
 ## DSA — Data Structures & Algorithms
 
-**Location**: `placement-original/Main-Course/Placement-01/02-CS-Core/01-DSA/DSA-Roadmap.md` — 12-week mastery plan
+**Duration**: 12-week mastery plan
 
-### Detailed Topic Breakdown (from `DSA-Roadmap.md`)
+### Detailed Topic Breakdown
 
-| Week | Topic | Key Patterns | Problems |
-|------|-------|-------------|----------|
-| 1-2 | Arrays & Strings | Two Pointers, Sliding Window, Prefix/Suffix Arrays | 50 (20E, 20M, 10H) |
-| 3 | Linked Lists | Fast & Slow Pointers, Reverse, Cycle Detection | 25 |
-| 4 | Stacks & Queues | Monotonic Stack, Expression Evaluation, BFS | 25 |
-| 5-6 | Trees | Recursive Traversals, Level-order, BST Ops, Path Sum | 40 |
-| 7-8 | Graphs | DFS/BFS, Dijkstra, Topological Sort, Union-Find, MST | 40 |
-| 9-10 | Dynamic Programming | Memoization vs Tabulation, 1D/2D DP, LCS, KnapSack | 40 |
-| 11-12 | Advanced | Tries, Segment Trees, BIT, Advanced Sorting | 30 |
+<table class="table-dash">
+<thead>
+<tr><th>Week</th><th>Topic</th><th>Key Patterns</th><th>Problems</th></tr>
+</thead>
+<tbody>
+<tr><td>1-2</td><td>Arrays &amp; Strings</td><td>Two Pointers, Sliding Window, Prefix/Suffix Arrays</td><td>50 (20E, 20M, 10H)</td></tr>
+<tr><td>3</td><td>Linked Lists</td><td>Fast &amp; Slow Pointers, Reverse, Cycle Detection</td><td>25</td></tr>
+<tr><td>4</td><td>Stacks &amp; Queues</td><td>Monotonic Stack, Expression Evaluation, BFS</td><td>25</td></tr>
+<tr><td>5-6</td><td>Trees</td><td>Recursive Traversals, Level-order, BST Ops, Path Sum</td><td>40</td></tr>
+<tr><td>7-8</td><td>Graphs</td><td>DFS/BFS, Dijkstra, Topological Sort, Union-Find, MST</td><td>40</td></tr>
+<tr><td>9-10</td><td>Dynamic Programming</td><td>Memoization vs Tabulation, 1D/2D DP, LCS, KnapSack</td><td>40</td></tr>
+<tr><td>11-12</td><td>Advanced</td><td>Tries, Segment Trees, BIT, Advanced Sorting</td><td>30</td></tr>
+</tbody>
+</table>
 
-### Practice Target (from `placement-original/DSA-Practice/practice/PRACTICE_TRACKER.md`)
+### Practice Target
 
 - **Easy**: 150 problems
 - **Medium**: 200 problems
@@ -38,8 +82,8 @@ Ye module placement interviews ka backbone hai. DSA, OS, DBMS, CN, CO, TOC — h
 
 ### Reference PDFs
 
-- **Handwritten DSA Notes**: `placement-original/PDF-References/Data Structure and Algorithms Handwritten Notes.!!.pdf`
-- **DSA Summary**: `placement-original/DSA-Practice/practice/dsa/COMPLETE_DSA_PRACTICE_SUMMARY.md`
+- **Handwritten DSA Notes**: Available in PDF References
+- **DSA Summary**: Complete DSA Practice Summary (500+ problems mapped)
 
 ### Key Interview Questions
 
@@ -56,16 +100,21 @@ Ye module placement interviews ka backbone hai. DSA, OS, DBMS, CN, CO, TOC — h
 
 ## OS — Operating Systems
 
-**Location**: `placement-original/Main-Course/Placement-01/02-CS-Core/04-OS/COURSE_INDEX.md` — 16-week A to Z course
+**Duration**: 16-week A to Z course
 
-### Detailed Topic Breakdown (from `COURSE_INDEX.md`)
+### Detailed Topic Breakdown
 
-| Phase | Modules | Key Concepts |
-|-------|---------|-------------|
-| Phase 1: OS Foundations (Weeks 1-4) | OS Intro, System Architecture, Process Mgmt, Threading | System Calls, Process States, Context Switching, IPC |
-| Phase 2: Core Concepts (Weeks 5-8) | CPU Scheduling, Process Sync, Deadlocks, Memory Mgmt | Scheduling Algorithms, Semaphores, Deadlock Prevention, Fragmentation |
-| Phase 3: Advanced Memory & Storage (Weeks 9-12) | Virtual Memory, File Systems, Storage Mgmt, I/O Systems | Demand Paging, Page Replacement, Disk Scheduling, RAID |
-| Phase 4: Modern OS Concepts (Weeks 13-16) | Security, Distributed Systems, Virtualization, Modern Topics | Access Control, Distributed FS, Hypervisors, RTOS |
+<table class="table-dash">
+<thead>
+<tr><th>Phase</th><th>Modules</th><th>Key Concepts</th></tr>
+</thead>
+<tbody>
+<tr><td>Phase 1: OS Foundations (Weeks 1-4)</td><td>OS Intro, System Architecture, Process Mgmt, Threading</td><td>System Calls, Process States, Context Switching, IPC</td></tr>
+<tr><td>Phase 2: Core Concepts (Weeks 5-8)</td><td>CPU Scheduling, Process Sync, Deadlocks, Memory Mgmt</td><td>Scheduling Algorithms, Semaphores, Deadlock Prevention, Fragmentation</td></tr>
+<tr><td>Phase 3: Advanced Memory &amp; Storage (Weeks 9-12)</td><td>Virtual Memory, File Systems, Storage Mgmt, I/O Systems</td><td>Demand Paging, Page Replacement, Disk Scheduling, RAID</td></tr>
+<tr><td>Phase 4: Modern OS Concepts (Weeks 13-16)</td><td>Security, Distributed Systems, Virtualization, Modern Topics</td><td>Access Control, Distributed FS, Hypervisors, RTOS</td></tr>
+</tbody>
+</table>
 
 ### CPU Scheduling Algorithms
 
@@ -108,16 +157,21 @@ Ye module placement interviews ka backbone hai. DSA, OS, DBMS, CN, CO, TOC — h
 
 ## DBMS — Database Management Systems
 
-**Location**: `placement-original/Main-Course/Placement-01/02-CS-Core/02-DBMS/DBMS-Complete.md` — 8-week complete course
+**Duration**: 8-week complete course
 
-### Detailed Topic Breakdown (from `DBMS-Complete.md`)
+### Detailed Topic Breakdown
 
-| Weeks | Module | Core Concepts |
-|-------|--------|--------------|
-| 1-2 | Database Fundamentals & ER Modeling | DBMS vs File Systems, ER Diagrams, Entities/Attributes, Cardinality, Weak Entities |
-| 3-4 | Relational Model & SQL | Keys (Primary, Foreign, Candidate), DDL/DML/DCL/TCL, Joins, Subqueries, Window Functions |
-| 5-6 | Normalization & Schema Design | Functional Dependencies, 1NF → BCNF, Anomalies (Insert/Delete/Update), Denormalization |
-| 7-8 | Transactions & Concurrency | ACID Properties, Locking, Isolation Levels, Deadlock Detection, Log-based Recovery |
+<table class="table-dash">
+<thead>
+<tr><th>Weeks</th><th>Module</th><th>Core Concepts</th></tr>
+</thead>
+<tbody>
+<tr><td>1-2</td><td>Database Fundamentals &amp; ER Modeling</td><td>DBMS vs File Systems, ER Diagrams, Entities/Attributes, Cardinality, Weak Entities</td></tr>
+<tr><td>3-4</td><td>Relational Model &amp; SQL</td><td>Keys (Primary, Foreign, Candidate), DDL/DML/DCL/TCL, Joins, Subqueries, Window Functions</td></tr>
+<tr><td>5-6</td><td>Normalization &amp; Schema Design</td><td>Functional Dependencies, 1NF → BCNF, Anomalies (Insert/Delete/Update), Denormalization</td></tr>
+<tr><td>7-8</td><td>Transactions &amp; Concurrency</td><td>ACID Properties, Locking, Isolation Levels, Deadlock Detection, Log-based Recovery</td></tr>
+</tbody>
+</table>
 
 ### Normalization — Step by Step
 
@@ -143,11 +197,16 @@ Ye module placement interviews ka backbone hai. DSA, OS, DBMS, CN, CO, TOC — h
 
 ### SQL Practice: 50 Problems
 
-| Level | Count | Examples |
-|-------|-------|----------|
-| Easy | 20 | SELECT, WHERE, ORDER BY, GROUP BY, HAVING, JOINs |
-| Medium | 20 | Subquery (2nd highest salary), Self-join, Window Functions, Correlated Subqueries |
-| Hard | 10 | Recursive CTE, Dynamic Pivot, Analytical Queries, Transaction Isolation |
+<table class="table-dash">
+<thead>
+<tr><th>Level</th><th>Count</th><th>Examples</th></tr>
+</thead>
+<tbody>
+<tr><td>Easy</td><td>20</td><td>SELECT, WHERE, ORDER BY, GROUP BY, HAVING, JOINs</td></tr>
+<tr><td>Medium</td><td>20</td><td>Subquery (2nd highest salary), Self-join, Window Functions, Correlated Subqueries</td></tr>
+<tr><td>Hard</td><td>10</td><td>Recursive CTE, Dynamic Pivot, Analytical Queries, Transaction Isolation</td></tr>
+</tbody>
+</table>
 
 ### NoSQL Overview
 
@@ -174,19 +233,24 @@ Ye module placement interviews ka backbone hai. DSA, OS, DBMS, CN, CO, TOC — h
 
 ## CN — Computer Networks
 
-**Location**: `placement-original/Main-Course/Placement-01/02-CS-Core/03-CN/COMPLETE_CN_COURSE_INDEX.md` — 8-week course, 500+ practice questions
+**Duration**: 8-week course, 500+ practice questions
 
-### Detailed Topic Breakdown (from source)
+### Detailed Topic Breakdown
 
-| Module | Weeks | Topics | Practice |
-|--------|-------|--------|----------|
-| 1: Network Fundamentals | 1 | Network Types (LAN/WAN/MAN), Topologies, Components | 50 Q + 3 Labs |
-| 2: Physical Layer | 2 | Transmission Media, Signal Encoding, Multiplexing, Error Detection | 60 Q + 4 Labs |
-| 3: Data Link Layer | 3-4 | Framing, Error Correction, Flow Control, MAC, Ethernet/WiFi | 80 Q + 5 Labs |
-| 4: Network Layer | 5-6 | IP Addressing & Subnetting, Routing, IPv4/IPv6, ICMP/ARP/DHCP | 100 Q + 6 Labs |
-| 5: Transport Layer | 7 | TCP vs UDP, Port Numbers, Connection Mgmt, Congestion Control | 70 Q + 4 Labs |
-| 6: Application Layer | 8 | HTTP/HTTPS, FTP, SMTP, DNS, Socket Programming | 80 Q + 3 Labs |
-| 7: Network Security | 9 | Cryptography, SSL/TLS, VPN, Firewalls | 60 Q + 2 Labs |
+<table class="table-dash">
+<thead>
+<tr><th>Module</th><th>Weeks</th><th>Topics</th><th>Practice</th></tr>
+</thead>
+<tbody>
+<tr><td>1: Network Fundamentals</td><td>1</td><td>Network Types (LAN/WAN/MAN), Topologies, Components</td><td>50 Q + 3 Labs</td></tr>
+<tr><td>2: Physical Layer</td><td>2</td><td>Transmission Media, Signal Encoding, Multiplexing, Error Detection</td><td>60 Q + 4 Labs</td></tr>
+<tr><td>3: Data Link Layer</td><td>3-4</td><td>Framing, Error Correction, Flow Control, MAC, Ethernet/WiFi</td><td>80 Q + 5 Labs</td></tr>
+<tr><td>4: Network Layer</td><td>5-6</td><td>IP Addressing &amp; Subnetting, Routing, IPv4/IPv6, ICMP/ARP/DHCP</td><td>100 Q + 6 Labs</td></tr>
+<tr><td>5: Transport Layer</td><td>7</td><td>TCP vs UDP, Port Numbers, Connection Mgmt, Congestion Control</td><td>70 Q + 4 Labs</td></tr>
+<tr><td>6: Application Layer</td><td>8</td><td>HTTP/HTTPS, FTP, SMTP, DNS, Socket Programming</td><td>80 Q + 3 Labs</td></tr>
+<tr><td>7: Network Security</td><td>9</td><td>Cryptography, SSL/TLS, VPN, Firewalls</td><td>60 Q + 2 Labs</td></tr>
+</tbody>
+</table>
 
 ### Top 20 Interview Topics (from source)
 
@@ -218,7 +282,7 @@ Ye module placement interviews ka backbone hai. DSA, OS, DBMS, CN, CO, TOC — h
 
 ## COA — Computer Organization & Architecture
 
-No dedicated folder in source — concepts spread across `placement-original/Main-Course/Placement-01/02-CS-Core/` reference docs. Ye subjects often OS ke saath padhe jaate hain.
+No dedicated folder in source — concepts spread across reference docs. Ye subjects often OS ke saath padhe jaate hain.
 
 ### Core Topics
 
@@ -270,19 +334,24 @@ Topics spread across reference material. Placement perspective me ye basics kaaf
 
 ## SE — Software Engineering
 
-**Location**: `placement-original/Main-Course/Placement-01/02-CS-Core/05-SE/Software-Engineering-Complete-Course.md` — 15-week professional program
+**Duration**: 15-week professional program
 
-### Detailed Topic Breakdown (from source)
+### Detailed Topic Breakdown
 
-| Module | Weeks | Topics |
-|--------|-------|--------|
-| 1: SDLC Models | 1-2 | Waterfall, Agile, Scrum, Kanban |
-| 2: Requirements & Design | 3-4 | SRS, Functional vs Non-functional, System Architecture |
-| 3: Testing & QA | 5-7 | TDD, BDD, Testing Levels (Unit, Integration, System) |
-| 4: Version Control & Collaboration | 8-9 | Git, Branching, Code Review, CI/CD Pipeline |
-| 5: Project Management | 10-11 | Estimation, Risk Management, Stakeholder Management |
-| 6: Advanced Testing | 12-13 | Performance/Security Testing, Automation Frameworks |
-| 7: Design Patterns | 14-15 | Creational (Singleton, Factory), Structural (Adapter, Proxy), Behavioral (Observer, Strategy) |
+<table class="table-dash">
+<thead>
+<tr><th>Module</th><th>Weeks</th><th>Topics</th></tr>
+</thead>
+<tbody>
+<tr><td>1: SDLC Models</td><td>1-2</td><td>Waterfall, Agile, Scrum, Kanban</td></tr>
+<tr><td>2: Requirements &amp; Design</td><td>3-4</td><td>SRS, Functional vs Non-functional, System Architecture</td></tr>
+<tr><td>3: Testing &amp; QA</td><td>5-7</td><td>TDD, BDD, Testing Levels (Unit, Integration, System)</td></tr>
+<tr><td>4: Version Control &amp; Collaboration</td><td>8-9</td><td>Git, Branching, Code Review, CI/CD Pipeline</td></tr>
+<tr><td>5: Project Management</td><td>10-11</td><td>Estimation, Risk Management, Stakeholder Management</td></tr>
+<tr><td>6: Advanced Testing</td><td>12-13</td><td>Performance/Security Testing, Automation Frameworks</td></tr>
+<tr><td>7: Design Patterns</td><td>14-15</td><td>Creational (Singleton, Factory), Structural (Adapter, Proxy), Behavioral (Observer, Strategy)</td></tr>
+</tbody>
+</table>
 
 ### Key Interview Questions
 
@@ -298,7 +367,7 @@ Topics spread across reference material. Placement perspective me ye basics kaaf
 
 ## 90-Day Plan Alignment
 
-`placement-original/Main-Course/Placement-01/90-Day-Plan/` mein har din ka topic likha hai:
+90-Day Plan mein har din ka topic likha hai:
 
 - Days 1-30: DSA basics (arrays, strings, linked lists, stacks, queues, trees)
 - Days 31-60: Advanced DSA (DP, graphs) + OS + DBMS

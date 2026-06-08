@@ -1,10 +1,50 @@
-# Web Development — Frontend se Backend tak
+<div class="module-hero">
+    <div class="module-hero-icon">🌐</div>
+    <div class="module-hero-body">
+        <h1>Web Development — Frontend se Backend tak</h1>
+        <p>Ye section tujhe complete web developer banata hai. HTML/CSS se lekar Laravel + React full-stack tak. Sab kuch <code>placement-original/Web-Development/WebDev/</code> aur <code>placement-original/Main-Course/Placement-01/04-Web-Development/</code> mein hai.</p>
+        <div class="module-hero-meta">
+            <span>📂 placement-original/Main-Course/Placement-01/04-Web-Development/Web-Development-Complete.md</span>
+            <span>📄 1075 lines · 12-week roadmap</span>
+        </div>
+    </div>
+</div>
 
-Ye section tujhe complete web developer banata hai. HTML/CSS se lekar Laravel + React full-stack tak. Sab kuch `placement-original/Web-Development/WebDev/` aur `placement-original/Main-Course/Placement-01/04-Web-Development/` mein hai.
-
-**Complete Source**: `placement-original/Main-Course/Placement-01/04-Web-Development/Web-Development-Complete.md` (1075 lines) — 12-week roadmap HTML/CSS se Full-stack tak.
+<div class="roadmap-path">
+    <div class="roadmap-step" data-step="1">
+        <strong>HTML5</strong>
+        <span>Semantics, Forms, SEO, ARIA Accessibility</span>
+    </div>
+    <div class="roadmap-step" data-step="2">
+        <strong>CSS3</strong>
+        <span>Flexbox, Grid, Animations, Responsive Design</span>
+    </div>
+    <div class="roadmap-step" data-step="3">
+        <strong>JavaScript</strong>
+        <span>DOM, ES6+, Async/Await, Fetch API</span>
+    </div>
+    <div class="roadmap-step" data-step="4">
+        <strong>Backend (PHP / Laravel / Node)</strong>
+        <span>MVC, REST APIs, Eloquent, Express.js</span>
+    </div>
+    <div class="roadmap-step" data-step="5">
+        <strong>Databases</strong>
+        <span>MySQL, PostgreSQL, MongoDB — Joins, Indexes, Aggregation</span>
+    </div>
+    <div class="roadmap-step" data-step="6">
+        <strong>Full-Stack</strong>
+        <span>React + Laravel + Inertia — E-commerce, Blog CMS, Social Dashboard</span>
+    </div>
+</div>
 
 ## Frontend
+
+<div class="phase-section">
+    <div class="phase-header">
+        <span>🎨 Frontend Fundamentals</span>
+        <span>Weeks 1-6</span>
+    </div>
+    <div class="phase-body">
 
 ### HTML5
 
@@ -51,12 +91,13 @@ Ye section tujhe complete web developer banata hai. HTML/CSS se lekar Laravel + 
 
 #### Core Concepts
 
-| Topic | Details |
-|-------|---------|
-| Selectors & Specificity | Class, ID, attribute, pseudo-classes, cascade |
-| Box Model | content, padding, border, margin — interview must |
-| Units | px, em, rem, %, vh, vw |
-| Colors & Typography | hex, rgb, hsl, web fonts |
+<table class="table-dash">
+    <tr><th>Topic</th><th>Details</th></tr>
+    <tr><td>Selectors & Specificity</td><td>Class, ID, attribute, pseudo-classes, cascade</td></tr>
+    <tr><td>Box Model</td><td>content, padding, border, margin — <span class="tag tag-hot">Interview Must</span></td></tr>
+    <tr><td>Units</td><td>px, em, rem, %, vh, vw</td></tr>
+    <tr><td>Colors & Typography</td><td>hex, rgb, hsl, web fonts</td></tr>
+</table>
 
 #### Layout Techniques
 
@@ -114,11 +155,11 @@ Ye section tujhe complete web developer banata hai. HTML/CSS se lekar Laravel + 
 **Complete syllabus**: `placement-original/Web-Development/WebDev/JavaScript/` (19 modules)
 
 Key topics for web dev:
-- DOM Manipulation (module 09) — querySelector, createElement, event delegation
-- Events (module 10) — bubbling, capturing, preventDefault
-- ES6+ (module 11): arrow functions, destructuring, spread, modules
-- Async JS (module 12): fetch API, promises, async/await
-- Browser APIs (module 18): localStorage, sessionStorage, geolocation
+- <span class="tag tag-method">DOM</span> DOM Manipulation (module 09) — querySelector, createElement, event delegation
+- <span class="tag tag-method">Events</span> Events (module 10) — bubbling, capturing, preventDefault
+- <span class="tag tag-method">ES6+</span> ES6+ (module 11): arrow functions, destructuring, spread, modules
+- <span class="tag tag-method">Async</span> Async JS (module 12): fetch API, promises, async/await
+- <span class="tag tag-method">Browser</span> Browser APIs (module 18): localStorage, sessionStorage, geolocation
 
 ### jQuery
 
@@ -156,8 +197,17 @@ Reference: `placement-original/Web-Development/react-laravel-inertia-tutorials/`
 5. Laravel + Inertia — server-side rendering with React
 6. Complete Todo Example — CRUD fullstack
 7. Testing — React Testing Library, Vitest
+    </div>
+</div>
 
 ## Backend
+
+<div class="phase-section">
+    <div class="phase-header">
+        <span>⚙️ Backend Development</span>
+        <span>Weeks 7-9</span>
+    </div>
+    <div class="phase-body">
 
 ### PHP
 
@@ -182,8 +232,17 @@ MVC → Routes → Controllers → Blade → Eloquent
 - npm/yarn package management
 - REST API building
 - Authentication (JWT, sessions)
+    </div>
+</div>
 
 ## Databases
+
+<div class="phase-section">
+    <div class="phase-header">
+        <span>🗄️ Databases & Data Modeling</span>
+        <span>Weeks 9-10</span>
+    </div>
+    <div class="phase-body">
 
 ### MySQL
 
@@ -203,6 +262,8 @@ MVC → Routes → Controllers → Blade → Eloquent
 2. Department-wise max salary — `GROUP BY` + `JOIN`
 3. Duplicate rows remove — `ROW_NUMBER()` + `PARTITION BY`
 4. Index performance — `EXPLAIN` output interpret karo
+    </div>
+</div>
 
 ## Full-Stack Projects
 
@@ -226,15 +287,19 @@ npm install @inertiajs/react
 
 Inertia approach: Server-side routing + Client-side rendering — no full API needed.
 
-## Study Tips (Hinglish)
-
-- **📅 12-Week Plan**: Pehle 3 weeks frontend (HTML+CSS+JS), agle 3 weeks backend (PHP+Laravel), phir 2 weeks databases, last 4 weeks full-stack projects.
-- **💻 Project Driven**: Har concept padhne ke baad immediately ek mini-project banao. Theory 30%, Practice 70%.
-- **🎨 CSS Mastery**: Roz 1 layout banao flexbox/grid se. CSS Art challenge try karo — kaafi fun hai aur interview mein bhi puchte hain.
-- **🗄️ Database Practice**: SQL queries roz likho. LeetCode Database section is good for practice.
-- **✨ Full-Stack Flow**: Ek hi project lo aur usko HTML+CSS → PHP → Laravel → React+Laravel+Inertia step by step upgrade karo. Portfolio ka king piece banega.
+<div class="tip-banner">
+    <span class="tip-badge">💡 Bhai Ka Gyaan</span>
+    <strong>📅 12-Week Plan:</strong> Pehle 3 weeks frontend (HTML+CSS+JS), agle 3 weeks backend (PHP+Laravel), phir 2 weeks databases, last 4 weeks full-stack projects.<br>
+    <strong>💻 Project Driven:</strong> Har concept padhne ke baad immediately ek mini-project banao. Theory 30%, Practice 70%.<br>
+    <strong>🎨 CSS Mastery:</strong> Roz 1 layout banao flexbox/grid se. CSS Art challenge try karo — kaafi fun hai aur interview mein bhi puchte hain.<br>
+    <strong>🗄️ Database Practice:</strong> SQL queries roz likho. LeetCode Database section is good for practice.<br>
+    <strong>✨ Full-Stack Flow:</strong> Ek hi project lo aur usko HTML+CSS → PHP → Laravel → React+Laravel+Inertia step by step upgrade karo. Portfolio ka king piece banega.
+</div>
 
 ## Checklist
+
+<div class="checklist-visual">
+    <span class="check-cat">⏳ In Progress — Tick as you go</span>
 
 - [ ] HTML5 semantics aur forms complete kiye
 - [ ] HTML practice projects (5) banaye
@@ -247,6 +312,8 @@ Inertia approach: Server-side routing + Client-side rendering — no full API ne
 - [ ] SQL joins, subqueries, normalization practice ki
 - [ ] Full-stack project banaya (E-commerce ya Blog)
 - [ ] React + Laravel + Inertia tutorial follow kiya
+
+</div>
 
 ---
 

@@ -1,14 +1,58 @@
 # Interview Prep — Placement Ki Final War
 
-Ye section tujhe technical, system design aur behavioral interviews ke liye ready karega. Complete guide `placement-original/Main-Course/Placement-01/08-Interview-Prep/Interview-Complete.md` (633 lines) mein hai.
+<div class="module-hero">
+  <div class="hero-icon">🎯</div>
+  <div class="hero-content">
+    <h2>Technical + System Design + Behavioral — Ek Dam Tayaar</h2>
+    <p>Ye section tujhe technical, system design aur behavioral interviews ke liye ready karega. 3-phase preparation: Foundation → Technical Deep Dive → Company-Specific.</p>
+    <div class="hero-meta">
+      <span class="tag tag-hot">500+ Problems</span>
+      <span class="tag tag-star">System Design</span>
+      <span class="tag tag-method">Behavioral STAR</span>
+    </div>
+  </div>
+</div>
 
-**Complete Source**: `placement-original/Main-Course/Placement-01/08-Interview-Prep/Interview-Complete.md` (633 lines) — 3-phase preparation: Foundation → Technical Deep Dive → Company-Specific.
+## Preparation Roadmap
 
-## Phase 1: Technical Interviews — Foundation Building (Month 9-10)
+<div class="roadmap-path">
+  <div class="roadmap-step" data-step="1">
+    <h4>Foundation</h4>
+    <p>DSA patterns + communication — Month 9-10</p>
+  </div>
+  <div class="roadmap-step" data-step="2">
+    <h4>Technical Deep Dive</h4>
+    <p>Topic-wise practice + PHP-Laravel — Month 10-11</p>
+  </div>
+  <div class="roadmap-step" data-step="3">
+    <h4>System Design</h4>
+    <p>Case studies + frameworks — Month 11-12</p>
+  </div>
+  <div class="roadmap-step" data-step="4">
+    <h4>Behavioral</h4>
+    <p>STAR stories + leadership — Month 11-12</p>
+  </div>
+  <div class="roadmap-step" data-step="5">
+    <h4>Company-Specific</h4>
+    <p>FAANG / Product / Startup — Month 11-12</p>
+  </div>
+  <div class="roadmap-step" data-step="6">
+    <h4>Mock Interviews</h4>
+    <p>Self → Peer → Senior → Real — Month 12</p>
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header">
+    <span class="phase-num">01</span>
+    <div>
+      <h3>Technical Interviews — Foundation Building</h3>
+      <p>Month 9-10</p>
+    </div>
+  </div>
+  <div class="phase-body">
 
 ### Problem-Solving Framework
-
-From `placement-original/Main-Course/Placement-01/08-Interview-Prep/Interview-Complete.md`:
 
 ```
 1. CLARIFY — Inputs, outputs, constraints, edge cases
@@ -35,16 +79,32 @@ From `placement-original/Main-Course/Placement-01/08-Interview-Prep/Interview-Co
 - **Ask questions** — clarifying questions se confidence dikhta hai
 - **Handle hints** — interviewer ke hints ko gracefully accept karo
 
-## Phase 2: Technical Deep Dive (Month 10-11)
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header">
+    <span class="phase-num">02</span>
+    <div>
+      <h3>Technical Deep Dive</h3>
+      <p>Month 10-11</p>
+    </div>
+  </div>
+  <div class="phase-body">
 
 ### DSA Practice Target
 
-| Level | Target | Current |
-|-------|--------|---------|
-| Easy | 150 problems | `placement-original/Main-Course/Placement-01/03-Programming/01-DSA/` |
-| Medium | 200 problems | `placement-original/Main-Course/Placement-01/03-Programming/01-DSA/` |
-| Hard | 100 problems | `placement-original/Main-Course/Placement-01/03-Programming/01-DSA/` |
-| **Total** | **500+** | |
+<table class="table-dash">
+  <thead>
+    <tr><th>Level</th><th>Target</th><th>Source</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Easy</td><td>150 problems</td><td><code>03-Programming/01-DSA/</code></td></tr>
+    <tr><td>Medium</td><td>200 problems</td><td><code>03-Programming/01-DSA/</code></td></tr>
+    <tr><td>Hard</td><td>100 problems</td><td><code>03-Programming/01-DSA/</code></td></tr>
+    <tr><td><strong>Total</strong></td><td><strong>500+</strong></td><td></td></tr>
+  </tbody>
+</table>
 
 ### Topic-Wise Questions with Code Patterns
 
@@ -88,17 +148,22 @@ def lengthOfLongestSubstring(s):
     return max_length
 ```
 
-| Topic | Key Questions | Pattern |
-|-------|--------------|---------|
-| Arrays & Strings | Two Sum, Anagrams, Longest Substring, 3Sum | HashMap, Sliding Window, Two Pointers |
-| Linked Lists | Cycle detection, Merge, Reverse, Middle | Fast & Slow, Dummy Node, Recursion |
-| Trees | BFS, DFS, LCA, Max Depth, Validate BST | Stack/Queue, Recursion |
-| DP | Knapsack, LCS, Edit Distance, Coin Change | Tabulation, Memoization |
-| Graphs | Dijkstra, Topo Sort, MST, Number of Islands | BFS/DFS, Union Find, Priority Queue |
+<table class="table-dash">
+  <thead>
+    <tr><th>Topic</th><th>Key Questions</th><th>Pattern</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Arrays & Strings</td><td>Two Sum, Anagrams, Longest Substring, 3Sum</td><td>HashMap, Sliding Window, Two Pointers</td></tr>
+    <tr><td>Linked Lists</td><td>Cycle detection, Merge, Reverse, Middle</td><td>Fast & Slow, Dummy Node, Recursion</td></tr>
+    <tr><td>Trees</td><td>BFS, DFS, LCA, Max Depth, Validate BST</td><td>Stack/Queue, Recursion</td></tr>
+    <tr><td>DP</td><td>Knapsack, LCS, Edit Distance, Coin Change</td><td>Tabulation, Memoization</td></tr>
+    <tr><td>Graphs</td><td>Dijkstra, Topo Sort, MST, Number of Islands</td><td>BFS/DFS, Union Find, Priority Queue</td></tr>
+  </tbody>
+</table>
 
 ### PHP-Laravel Interview
 
-`placement-original/Main-Course/Placement-01/php-laravel-interview-questions-answers-part-1-main/` — 6 parts:
+`php-laravel-interview-questions-answers-part-1-main/` — 6 parts:
 
 ```bash
 Part - 1.md           # Core PHP, Laravel basics
@@ -119,16 +184,24 @@ Part - 6.md           # Final summary
 7. SOLID principles with Laravel examples
 8. Dependency Injection in Laravel
 
+  </div>
+</div>
+
 ## System Design Interviews
 
-Detailed in module 10 (`docs/placement/10-system-design/`). Key topics:
+Detailed in <code>docs/placement/10-system-design/</code>. Key topics:
 
-| Topic | Must-Know Concepts |
-|-------|-------------------|
-| Database Design | Sharding, Replication, CAP Theorem, ACID vs BASE |
-| Scalability | Horizontal vs Vertical, Caching (Redis), CDN, Load Balancer |
-| Microservices | API Gateway, Circuit Breaker, Message Queue, Service Discovery |
-| Consistency | Eventual vs Strong, Quorum, Leader Election |
+<table class="table-dash">
+  <thead>
+    <tr><th>Topic</th><th>Must-Know Concepts</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Database Design</td><td>Sharding, Replication, CAP Theorem, ACID vs BASE</td></tr>
+    <tr><td>Scalability</td><td>Horizontal vs Vertical, Caching (Redis), CDN, Load Balancer</td></tr>
+    <tr><td>Microservices</td><td>API Gateway, Circuit Breaker, Message Queue, Service Discovery</td></tr>
+    <tr><td>Consistency</td><td>Eventual vs Strong, Quorum, Leader Election</td></tr>
+  </tbody>
+</table>
 
 ### Case Studies to Practice
 
@@ -138,7 +211,7 @@ Detailed in module 10 (`docs/placement/10-system-design/`). Key topics:
 4. **Netflix** — Video streaming, recommendation
 5. **Twitter** — Tweet timeline, fan-out pattern
 
-From `placement-original/Main-Course/Placement-01/10-System-design/`:
+From <code>10-System-design/</code>:
 - Weekly structure (10 weeks, 70+ days)
 - 15+ case studies
 - 50+ practice problems
@@ -167,8 +240,6 @@ R — Result: Kya outcome aaya, kya seekha
 
 ### Common Questions (with preparation tips)
 
-From `placement-original/Main-Course/Placement-01/08-Interview-Prep/Interview-Complete.md`:
-
 1. **Tell me about yourself** — 30-60 sec pitch: Current → Past → Why here
 2. **Biggest challenge** — STAR se batao, failure se kya seekha dikhao
 3. **Team conflict** — How you resolved it, what you learned
@@ -179,23 +250,44 @@ From `placement-original/Main-Course/Placement-01/08-Interview-Prep/Interview-Co
 
 Prepare 3-4 stories — har story STAR format mein honi chahiye:
 
-| Story Type | What to Show |
-|------------|-------------|
-| **Technical challenge** | Production bug fix, architecture decision |
-| **Leadership** | Mentored junior, led project, owned feature |
-| **Failure** | Project delay, wrong approach, lessons learned |
-| **Impact** | Revenue increase, performance improvement, user growth |
+<table class="table-dash">
+  <thead>
+    <tr><th>Story Type</th><th>What to Show</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Technical challenge</strong></td><td>Production bug fix, architecture decision</td></tr>
+    <tr><td><strong>Leadership</strong></td><td>Mentored junior, led project, owned feature</td></tr>
+    <tr><td><strong>Failure</strong></td><td>Project delay, wrong approach, lessons learned</td></tr>
+    <tr><td><strong>Impact</strong></td><td>Revenue increase, performance improvement, user growth</td></tr>
+  </tbody>
+</table>
 
 **How to prepare**: Har story ko 2 versions mein ready rakho — 2-min detailed aur 30-sec crisp.
 
 ## Company-Specific Prep
 
-| Type | Example Companies | Focus |
-|------|------------------|-------|
-| FAANG | Google, Amazon, Microsoft | Hard DSA + Advanced System Design + Leadership Principles |
-| Product | Flipkart, Zomato, Paytm | Medium DSA + Project discussion + System Design basics |
-| Startup | Early-stage | Full-stack knowledge + adaptability + product thinking |
-| Service | TCS, Infosys, Wipro | CS core (OS, DBMS, Networking) + Communication |
+<div class="topic-grid">
+  <div class="topic-card">
+    <h4><span class="tag tag-hot">FAANG</span></h4>
+    <p>Google, Amazon, Microsoft</p>
+    <p>Hard DSA + Advanced System Design + Leadership Principles</p>
+  </div>
+  <div class="topic-card">
+    <h4><span class="tag tag-star">Product</span></h4>
+    <p>Flipkart, Zomato, Paytm</p>
+    <p>Medium DSA + Project discussion + System Design basics</p>
+  </div>
+  <div class="topic-card">
+    <h4><span class="tag tag-method">Startup</span></h4>
+    <p>Early-stage</p>
+    <p>Full-stack knowledge + adaptability + product thinking</p>
+  </div>
+  <div class="topic-card">
+    <h4><span class="tag">Service</span></h4>
+    <p>TCS, Infosys, Wipro</p>
+    <p>CS core (OS, DBMS, Networking) + Communication</p>
+  </div>
+</div>
 
 ## Mock Interview Schedule
 
@@ -220,21 +312,55 @@ Week 7-8: Real interviews start
 
 ## Study Tips (Hinglish)
 
-- **📅 3-Phase Plan**: Month 9-10 foundation (DSA patterns + communication), Month 10-11 deep dive (topic-wise practice), Month 11-12 company-specific + mocks.
-- **📝 DSA Notebook**: Har problem ka brute force + optimal solution notebook mein likho. Pattern wise organize karo — "yeh sliding window ka problem hai."
-- **🎙️ Practice Loud**: Interview mein silence sabse deadly hai. Recording karo apne aap ko aur suno — improvements dikhenge.
-- **🔄 Revision Cycle**: Har 3 din mein purane problems revise karo. Active recall > passive reading.
-- **📊 Company Research**: Apply karne se pehle company ka product, tech stack, recent news — sab research karo. Interview mein genuine interest dikhta hai.
-- **💪 Rejection = Learning**: Placement process mein rejections aayenge. Har rejection se 1 lesson lo aur improve karo. Consistency matters.
-- **🤝 Peer Mock Groups**: 3-4 friends ka group banao. Weekly mocks lo. Cross feedback se confidence badhega.
+<div class="tip-banner">
+  <span class="tip-badge">🧠</span>
+  <div>
+    <strong>DSA Notebook:</strong> Har problem ka brute force + optimal solution notebook mein likho. Pattern wise organize karo — "yeh sliding window ka problem hai."
+  </div>
+</div>
+
+<div class="tip-banner">
+  <span class="tip-badge">🎙️</span>
+  <div>
+    <strong>Practice Loud:</strong> Interview mein silence sabse deadly hai. Recording karo apne aap ko aur suno — improvements dikhenge.
+  </div>
+</div>
+
+<div class="tip-banner">
+  <span class="tip-badge">🔄</span>
+  <div>
+    <strong>Revision Cycle:</strong> Har 3 din mein purane problems revise karo. Active recall > passive reading.
+  </div>
+</div>
+
+<div class="tip-banner">
+  <span class="tip-badge">📊</span>
+  <div>
+    <strong>Company Research:</strong> Apply karne se pehle company ka product, tech stack, recent news — sab research karo. Interview mein genuine interest dikhta hai.
+  </div>
+</div>
+
+<div class="tip-banner">
+  <span class="tip-badge">💪</span>
+  <div>
+    <strong>Rejection = Learning:</strong> Placement process mein rejections aayenge. Har rejection se 1 lesson lo aur improve karo. Consistency matters.
+  </div>
+</div>
+
+<div class="tip-banner">
+  <span class="tip-badge">🤝</span>
+  <div>
+    <strong>Peer Mock Groups:</strong> 3-4 friends ka group banao. Weekly mocks lo. Cross feedback se confidence badhega.
+  </div>
+</div>
 
 ## Resources
 
-- `placement-original/Main-Course/Placement-01/08-Interview-Prep/Interview-Complete.md` (633 lines)
-- `placement-original/Main-Course/Placement-01/03-Programming/01-DSA/` — DSA problems
-- `placement-original/Main-Course/Placement-01/php-laravel-interview-questions-answers-part-1-main/` (6 parts)
-- `placement-original/PDF-References/Data Structure and Algorithms Handwritten Notes.!!.pdf`
-- `placement-original/Main-Course/Placement-01/10-System-design/` — System design (10 weeks)
+- `Interview-Complete.md` (633 lines)
+- `03-Programming/01-DSA/` — DSA problems
+- `php-laravel-interview-questions-answers-part-1-main/` (6 parts)
+- `Data Structure and Algorithms Handwritten Notes.pdf`
+- `10-System-design/` — System design (10 weeks)
 
 ## Checklist
 

@@ -1,14 +1,29 @@
-# Programming — Languages Ki Baap Baat
+<div class="module-hero">
+💻 **Programming — Languages Ki Baap Baat**
 
 Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest skill hai. Java, JavaScript, Python bhi hai. Ye section tujhe batayega kya padhna hai aur resources kahan hain.
+</div>
 
-## PHP + Laravel (Tera Superpower)
+<div class="roadmap-path">
+<div class="roadmap-step" data-step="1">**PHP + Laravel** <span class="tag-star">Superpower</span></div>
+<div class="roadmap-step" data-step="2">**JavaScript** <span class="tag">ES6+</span></div>
+<div class="roadmap-step" data-step="3">**Java** <span class="tag-hot">10-Week Mastery</span></div>
+<div class="roadmap-step" data-step="4">**Python** <span class="tag">Basics</span></div>
+<div class="roadmap-step" data-step="5">**C** <span class="tag">Fundamentals</span></div>
+</div>
 
-**Location**: `placement-original/Web-Development/WebDev/PHP/` + `placement-original/Web-Development/WebDev/Laravel/` + `placement-original/Web-Development/WebDev/php-for-laravel/`
+<div class="phase-section">
+<div class="phase-header">
+<span class="phase-number">01</span>
+<h2>PHP + Laravel <span class="tag-star">Tera Superpower</span></h2>
+</div>
+<div class="phase-body">
+
+**Location**: `Web-Development/WebDev/PHP/` + `Web-Development/WebDev/Laravel/` + `Web-Development/WebDev/php-for-laravel/`
 
 ### PHP Basics
 
-`placement-original/Web-Development/WebDev/PHP/PHP_Syllabus.md` se padh:
+`Web-Development/WebDev/PHP/PHP_Syllabus.md` se padh:
 
 - Syntax, Variables, Loops, Functions
 - OOP in PHP (Classes, Inheritance, Interfaces, Traits)
@@ -18,7 +33,7 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 
 ### PHP for Laravel (16 Topics)
 
-`placement-original/Web-Development/WebDev/php-for-laravel/` mein 16 files hain:
+`Web-Development/WebDev/php-for-laravel/` mein 16 files hain:
 
 ```
 01_Classes_and_Traits_Eloquent.md
@@ -41,7 +56,7 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 
 ### Laravel Syllabus
 
-`placement-original/Web-Development/WebDev/Laravel/Laravel_12x_Detailed_Syllabus.md`:
+`Web-Development/WebDev/Laravel/Laravel_12x_Detailed_Syllabus.md`:
 
 - MVC Architecture
 - Routing, Controllers, Blade
@@ -54,7 +69,7 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 
 ### Interview Q&A — PHP Laravel
 
-`placement-original/Web-Development/WebDev/php-laravel-interview-questions-answers-part-1-main/` — 6 parts mein complete Q&A:
+`Web-Development/WebDev/php-laravel-interview-questions-answers-part-1-main/` — 6 parts mein complete Q&A:
 
 - Part 1: Core PHP + Laravel basics
 - Part 2: Eloquent, Database, Migrations
@@ -63,11 +78,19 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 - Part 5: Advanced Laravel patterns
 - Part 6: Final summary + author details
 
-Also available at: `placement-original/Main-Course/placement-original/Main-Course/Placement-01/php-laravel-interview-questions-answers-part-1-main/`
+Also available at: `Main-Course/Placement-01/php-laravel-interview-questions-answers-part-1-main/`
 
-## JavaScript
+</div>
+</div>
 
-**Location**: `placement-original/Web-Development/WebDev/JavaScript/` — 19 modules complete
+<div class="phase-section">
+<div class="phase-header">
+<span class="phase-number">02</span>
+<h2>JavaScript <span class="tag">ES6+ Complete</span></h2>
+</div>
+<div class="phase-body">
+
+**Location**: `Web-Development/WebDev/JavaScript/` — 19 modules complete
 
 ```
 01_Introduction to ES6+
@@ -91,11 +114,11 @@ Also available at: `placement-original/Main-Course/placement-original/Main-Cours
 19_Frameworks Ecosystem
 ```
 
-**Reference PDF**: `placement-original/PDF-References/JavaScript Handwritten Notes.pdf`
+**Reference PDF**: `PDF-References/JavaScript Handwritten Notes.pdf`
 
 ### jQuery + AJAX
 
-**Location**: `placement-original/Web-Development/WebDev/JavaScript/` — 15 jQuery modules + AJAX docs:
+**Location**: `Web-Development/WebDev/JavaScript/` — 15 jQuery modules + AJAX docs:
 
 ```
 jQuery_01_Introduction through jQuery_15_Interview
@@ -103,11 +126,19 @@ AJAX_Detailed_Syllabus.md
 AJAX_Interview_Questions_and_Revision.md
 ```
 
-## Java — 10-Week Complete Mastery
+</div>
+</div>
 
-**Source**: `placement-original/Main-Course/Placement-01/03-Programming/02-Java/Java-Complete.md` (571 lines)
+<div class="phase-section">
+<div class="phase-header">
+<span class="phase-number">03</span>
+<h2>Java <span class="tag-hot">10-Week Complete Mastery</span></h2>
+</div>
+<div class="phase-body">
 
-Also refer: `placement-original/Main-Course/Placement-01/03-Programming/02-Java/Java_Complete_Syllabus.md` (531 lines) — FAANG-focused interview-first approach.
+**Source**: `Main-Course/Placement-01/03-Programming/02-Java/Java-Complete.md` (571 lines)
+
+Also refer: `Main-Course/Placement-01/03-Programming/02-Java/Java_Complete_Syllabus.md` (531 lines) — FAANG-focused interview-first approach.
 
 ### Week 1-2: Java Fundamentals
 
@@ -151,7 +182,7 @@ interface Vehicle {
 
 ### Week 3-4: Collections Framework
 
-`placement-original/Main-Course/Placement-01/03-Programming/02-Java/04_Collections_Framework.md`
+`Main-Course/Placement-01/03-Programming/02-Java/04_Collections_Framework.md`
 
 ```
 Collection
@@ -167,7 +198,7 @@ Map (HashMap, LinkedHashMap, TreeMap, ConcurrentHashMap)
 
 ### Week 4-5: Multithreading
 
-`placement-original/Main-Course/Placement-01/03-Programming/02-Java/05_Generics_Multithreading.md`
+`Main-Course/Placement-01/03-Programming/02-Java/05_Generics_Multithreading.md`
 
 - Thread creation: `extends Thread` vs `implements Runnable`
 - synchronized, volatile, atomic classes
@@ -176,7 +207,7 @@ Map (HashMap, LinkedHashMap, TreeMap, ConcurrentHashMap)
 
 ### Week 5-6: Modern Java Features
 
-`placement-original/Main-Course/Placement-01/03-Programming/02-Java/06_Modern_Java_Features.md`
+`Main-Course/Placement-01/03-Programming/02-Java/06_Modern_Java_Features.md`
 
 ```java
 // Streams & Lambda
@@ -197,7 +228,7 @@ name.ifPresent(System.out::println);
 
 ### Interview Q&A
 
-`placement-original/Main-Course/Placement-01/03-Programming/02-Java/Java_Interview_Questions_Bank.md` + `Interview_Ready_Code_Templates.md`
+`Main-Course/Placement-01/03-Programming/02-Java/Java_Interview_Questions_Bank.md` + `Interview_Ready_Code_Templates.md`
 
 **Core Java Interview Topics:**
 1. OOP concepts with real examples
@@ -209,13 +240,13 @@ name.ifPresent(System.out::println);
 7. JVM Architecture — classloader, runtime data areas, GC algorithms
 8. Design Patterns — Singleton, Factory, Builder (PHP-Laravel mein bhi use hote hain)
 
-### Study Tips (Hinglish)
+</div>
+</div>
 
-- **📖 Padhai**: Pehle concepts samajh, fir code likh. Java-Complete.md ek book ki tarah padh.
-- **✍️ Practice**: Har concept ke 2-3 code examples khud likh bina dekhe.
-- **💬 Interview Ready**: `Interview_Ready_Code_Templates.md` ke templates ratt lo — boilerplate code yaad rakhna free me time bachata hai.
-- **🎯 FAANG Focus**: HashMap internal, multithreading, streams — yahi se maximum questions aate hain.
-- **📅 Routine**: Roz 1-2 Java programs likho. Week 1-2 core, week 3-4 collections, week 5-6 advanced.
+<div class="tip-banner">
+<span class="tip-badge">💡 STRATEGY</span>
+**Bhai ka gyaan — Hinglish Study Strategy:** Pehle **PHP+Laravel** full command kar — ye tera superpower hai. Phir **JavaScript** ke 19 modules ek hafte mein utha. **Java** ke liye 10-week plan follow kar — roz 1-2 programs likh. **Python** aur **C** ko overview level pe rakh. Har language ke **interview Q&A** zaroor padh. Lekin sabse important: **code likh bina dekhe** — confidence tab aata hai jab tera dimaag khud se logic likhne lage.
+</div>
 
 ## Python Basics
 

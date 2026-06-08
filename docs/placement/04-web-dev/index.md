@@ -317,6 +317,14 @@ Inertia approach: Server-side routing + Client-side rendering — no full API ne
 
 ---
 
+## 📂 Original Deep Content
+
+The full Web Development original content:
+
+- [Web Development Complete Guide](../original/04-Web-Development/Web-Development-Complete.md)
+
+---
+
 ## Notes
 
 <div id="page-notes"></div>

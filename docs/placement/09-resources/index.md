@@ -860,6 +860,14 @@ Resources ka sahi istemal kaise kare:
 
 ---
 
+## 📂 Original Deep Content
+
+The complete resources index:
+
+- [Resources Master Index](../original/09-Resources/)
+
+---
+
 ## Notes
 
 <div id="page-notes"></div>

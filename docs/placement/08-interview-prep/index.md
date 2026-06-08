@@ -569,6 +569,15 @@ Week 7-8: Real interviews start
 
 ---
 
+## 📂 Original Deep Content
+
+Original interview prep content:
+
+- [Interview Complete Guide](../original/08-Interview-Prep/Interview-Complete.md)
+- PHP-Laravel Interview Q&A (6 parts) in [original/08-Interview-Prep/](../original/08-Interview-Prep/)
+
+---
+
 ## Notes
 
 <div id="page-notes"></div>

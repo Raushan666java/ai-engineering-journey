@@ -764,6 +764,15 @@ Naye zamane mein AI system design bhi poochte hain:
 
 ---
 
+## 📂 Original Deep Content
+
+Original System Design course — 61+ files covering 10 weeks:
+
+- [System Design Course Index](../original/10-System-design/)
+- Load Balancing, Caching, Database Design, Microservices, Case Studies
+
+---
+
 ## Notes
 
 <div id="page-notes"></div>

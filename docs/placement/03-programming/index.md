@@ -321,6 +321,18 @@ Topics: Pointers, Memory allocation, Structs, File I/O.
 
 ---
 
+## 📂 Original Deep Content
+
+Original programming content with language-wise breakdowns:
+
+- [C Programming](../original/03-Programming/C/)
+- [Java Mastery](../original/03-Programming/Java/)
+- [Python](../original/03-Programming/Python/)
+- [PHP Syllabus](../original/03-Programming/PHP/)
+- [Go, Rust, TypeScript](../original/03-Programming/Future-Proof/)
+
+---
+
 ## Notes
 
 <div id="page-notes"></div>

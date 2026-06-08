@@ -312,6 +312,18 @@ resource "aws_instance" "web" {
 
 ---
 
+## 📂 Original Deep Content
+
+Original DevOps content — 43+ files:
+
+- [DevOps Complete Guide](../original/06-DevOps/)
+- [Docker](../original/06-DevOps/Docker/)
+- [Kubernetes](../original/06-DevOps/Kubernetes/)
+- [CI/CD](../original/06-DevOps/CI-CD/)
+- [Cloud (AWS)](../original/06-DevOps/Cloud/)
+
+---
+
 ## Notes
 
 <div id="page-notes"></div>

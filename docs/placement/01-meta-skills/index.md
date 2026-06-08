@@ -519,6 +519,13 @@ Next Week: 🎯 Goal 1  🎯 Goal 2  🎯 Goal 3
   </div>
 </div>
 
+## 📂 Original Deep Content
+
+The original Meta Skills module has detailed breakdowns:
+
+- [How to Learn](../original/01-Meta-Skills/How-to-Learn.md)
+- [Progress Tracker](../original/01-Meta-Skills/Progress-Tracker.md)
+
 ## References
 
 All content derived from learning science research: Testing Effect (Roediger & Karpicke), Spacing Effect (Ebbinghaus), Growth Mindset (Dweck), Self-Determination Theory (Deci & Ryan), Habit Formation (Duhigg, Clear), SQ3R (Robinson), Pomodoro (Cirillo), GTD (Allen).

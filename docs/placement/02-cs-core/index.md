@@ -469,6 +469,22 @@ Topics spread across reference material. Placement perspective me ye basics kaaf
 
 ---
 
+## 📂 Original Deep Content
+
+Original CS Core module — 7 subjects with 200+ files covering everything in depth:
+
+| Subject | Link |
+|---------|------|
+| DSA (500+ problems) | [original/02-CS-Core/DSA/](../original/02-CS-Core/DSA/) |
+| Operating Systems | [original/02-CS-Core/OS/](../original/02-CS-Core/OS/) |
+| DBMS | [original/02-CS-Core/DBMS/](../original/02-CS-Core/DBMS/) |
+| Computer Networks | [original/02-CS-Core/CN/](../original/02-CS-Core/CN/) |
+| COA | [original/02-CS-Core/COA/](../original/02-CS-Core/COA/) |
+| Software Engineering | [original/02-CS-Core/SE/](../original/02-CS-Core/SE/) |
+| Distributed Systems | [original/02-CS-Core/DS/](../original/02-CS-Core/DS/) |
+
+---
+
 ## Notes
 
 <div id="page-notes"></div>

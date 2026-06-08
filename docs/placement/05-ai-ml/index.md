@@ -363,6 +363,17 @@ LLM se kaam lena seekho. Placement mein bhi AI tools ka use puchte hain.
 
 ---
 
+## 📂 Original Deep Content
+
+Original AI-ML content — 58+ files covering the full spectrum:
+
+- [AI-ML Complete Guide](../original/05-AI-ML/AI-ML-Complete.md)
+- [Deep Learning](../original/05-AI-ML/Deep-Learning/)
+- [Machine Learning](../original/05-AI-ML/Machine-Learning/)
+- [Agentic AI / LangChain](../original/05-AI-ML/Agentic-AI/)
+
+---
+
 ## Notes
 
 <div id="page-notes"></div>

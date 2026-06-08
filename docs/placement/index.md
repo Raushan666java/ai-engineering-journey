@@ -2,12 +2,12 @@
 
 <span class="ascii-rule"></span>
 
-> **Fig 1.** Complete A–Z placement preparation system. 10 modules. 24 weeks. Every algorithm, every concept, every interview question.
+> **Fig 1.** Complete A–Z placement preparation system. 12 modules. 24 weeks. Every algorithm, every concept, every interview question.
 
 <div class="stat-row">
   <span class="stat-row-label">Modules</span>
-  <span class="stat-row-bar" data-bar-pct="10"></span>
-  <span class="stat-row-value">10 / 10</span>
+  <span class="stat-row-bar" data-bar-pct="12"></span>
+  <span class="stat-row-value">12 / 12</span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">Weeks</span>
@@ -36,6 +36,8 @@
 | 08 | Interview Prep | DSA, System Design, Behavioral, Mock | Weeks 21–24 | <span class="status-dot planned"></span> Planned |
 | 09 | Resources | Books, Courses, Tools, Communities | Ongoing | <span class="status-dot planned"></span> Planned |
 | 10 | System Design | Scalability, Microservices, Case Studies | Weeks 17–20 | <span class="status-dot planned"></span> Planned |
+| 11 | Cyber Security | Ethical Hacking, Network Security, 30 Modules | Weeks 17–24 | <span class="status-dot planned"></span> Planned |
+| 12 | 90-Day Plan | Daily Roadmap, Placement Ready in 90 Days | Ongoing | <span class="status-dot planned"></span> Planned |
 
 ## Recommended Path
 
@@ -66,13 +68,6 @@
 
 ## Quick Links
 
-- **90-Day Plan** → `placement-original/Study-Plans/Plan/90_DAY_PLACEMENT_PLAN.md`
-- **A–Z Complete Course** → `placement-original/Main-Course/Placement-01/COMPLETE_A_TO_Z_PLACEMENT_COURSE.md`
-- **DSA Practice** → `placement-original/DSA-Practice/practice/dsa/`
-- **Web Dev Syllabus** → `placement-original/Web-Development/WebDev/`
-- **React + Laravel + Inertia** → `placement-original/Web-Development/react-laravel-inertia-tutorials/`
-- **Agentic AI Course** → `placement-original/Agentic-AI-Course/`
-- **Modern AI Engineer** → `placement-original/Modern-Stack-Course/a-modern-day/`
-- **Skills Development** → `placement-original/Coding-Skills/`
-
-> **Note:** The original Placement folder content is referenced above. Navigate to each section for detailed study guides.
+- [Original Content Index](original/) — Browse all 12 modules
+- [Cyber Security Complete](original/11-Cyber-Security/CYBER_SECURITY_COMPLETE_INDEX.md)
+- [90-Day Plan Curriculum](original/90-Day-Plan/COMPLETE_90_DAY_CURRICULUM.md)

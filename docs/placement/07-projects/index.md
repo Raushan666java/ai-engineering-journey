@@ -504,6 +504,14 @@
 
 ---
 
+## 📂 Original Deep Content
+
+The complete projects guide:
+
+- [Projects Portfolio Guide](../original/07-Projects/Project-Portfolio.md)
+
+---
+
 ## Notes
 
 <div id="page-notes"></div>

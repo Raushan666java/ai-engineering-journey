@@ -164,7 +164,7 @@ nav:
     - Dashboard: placement/dashboard.md
     - DSA Tracker: placement/dsa-tracker.md
     - Overview: placement/index.md
-    - 90-Day Plan: placement/goal.md
+    - Original Content: placement/original/index.md
     - Meta Skills: placement/01-meta-skills/index.md
     - CS Core: placement/02-cs-core/index.md
     - Programming: placement/03-programming/index.md
@@ -175,3 +175,5 @@ nav:
     - Interview Prep: placement/08-interview-prep/index.md
     - Resources: placement/09-resources/index.md
     - System Design: placement/10-system-design/index.md
+    - Cyber Security: placement/11-cyber-security/index.md
+    - 90-Day Plan: placement/12-ninety-day-plan/index.md

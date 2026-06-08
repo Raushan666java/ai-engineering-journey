@@ -5,11 +5,12 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 </div>
 
 <div class="roadmap-path">
-<div class="roadmap-step" data-step="1">**PHP + Laravel** <span class="tag-star">Superpower</span></div>
+<div class="roadmap-step" data-step="1">**PHP + Laravel** <span class="tag tag-star">Superpower</span></div>
 <div class="roadmap-step" data-step="2">**JavaScript** <span class="tag">ES6+</span></div>
-<div class="roadmap-step" data-step="3">**Java** <span class="tag-hot">10-Week Mastery</span></div>
+<div class="roadmap-step" data-step="3">**Java** <span class="tag tag-hot">10-Week Mastery</span></div>
 <div class="roadmap-step" data-step="4">**Python** <span class="tag">Basics</span></div>
 <div class="roadmap-step" data-step="5">**C** <span class="tag">Fundamentals</span></div>
+<div class="roadmap-step" data-step="6">**Go / Rust / TS** <span class="tag tag-hot">Future-Proof</span></div>
 </div>
 
 <div class="phase-section">
@@ -257,6 +258,41 @@ Reference Phase 1 of main curriculum. Topics:
 - OOP in Python
 - Key libraries: NumPy, Pandas, Matplotlib
 
+## 🚀 Future-Proof Languages — Big Tech ke Favourite
+
+<div class="tip-banner">
+  <span class="tip-badge">🔥 WHY THIS MATTERS</span>
+  PHP+Laravel tera superpower hai — but big tech companies ka primary stack <strong>Go, Rust, TypeScript</strong> hai. Inhe jaanna teri <strong>future-proofing</strong> hai. Placement mein bonus points milte hain jab tu inki baat karta hai.
+</div>
+
+<div class="lang-grid">
+  <div class="lang-card">
+    <h4>🦫 Go (Golang)</h4>
+    <p>Google ka language. Docker, Kubernetes, Terraform isme likhe. Concurrency model (goroutines) game-changer hai. Backend microservices ke liye best.</p>
+    <div class="lang-meta"><span>Google</span><span>Uber</span><span>Netflix</span><span>Twitch</span></div>
+  </div>
+  <div class="lang-card">
+    <h4>🦀 Rust</h4>
+    <p>Memory safety without garbage collection. Mozilla → now Linux kernel, AWS, Cloudflare, Dropbox isme likhte hain. Systems programming ka future.</p>
+    <div class="lang-meta"><span>Amazon AWS</span><span>Cloudflare</span><span>Dropbox</span><span>Meta</span></div>
+  </div>
+  <div class="lang-card">
+    <h4>📘 TypeScript</h4>
+    <p>JavaScript + types = big tech ka web standard. Microsoft ka project, ab har jagah. React/Angular/Vue — sab TypeScript use karte hain.</p>
+    <div class="lang-meta"><span>Microsoft</span><span>Airbnb</span><span>Google</span><span>Slack</span></div>
+  </div>
+  <div class="lang-card">
+    <h4>☕ Kotlin</h4>
+    <p>Google's preferred Android language. Modern, concise, null-safe. Backend development mein bhi growing.</p>
+    <div class="lang-meta"><span>Google</span><span>Uber</span><span>Trello</span><span>CashApp</span></div>
+  </div>
+</div>
+
+<div class="tip-banner">
+  <span class="tip-badge">💡 MINIMUM VIABLE LEARNING</span>
+  Sab kuch seekhna zaroori nahi. <strong>Go basics + concurrency</strong> — 40 hrs mein aa jayega. <strong>TypeScript types + generics</strong> — 20 hrs. Interview mein mention karna ki tu aware hai aur basics aata hai — enough hai.
+</div>
+
 ## C Programming Basics
 
 ```c
@@ -280,8 +316,8 @@ Topics: Pointers, Memory allocation, Structs, File I/O.
 - [ ] Java fundamentals + OOP + Collections practice ki
 - [ ] Java 8+ features (Streams, Lambda) padh liye
 - [ ] Java interview questions bank revise kiya
-- [ ] Interview Q&A ke 6 parts padh liye
 - [ ] Python aur C basics cover kiye
+- [ ] Future-proof languages (Go/TypeScript) basics padhe
 
 ---
 

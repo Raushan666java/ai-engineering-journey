@@ -388,7 +388,77 @@
   </div>
 </div>
 
+### Big Tech Projects — FAANG-Level Portfolio
 
+<div class="tip-banner">
+  <span class="tip-badge">🚀 IMPACT MATTERS</span>
+  Big tech companies <strong>impact dekhte hain</strong> — kitne users handle kar sakta hai, kaise scale karega, real-world problem solve karta hai ya nahi. Ye projects resume mein <strong>differentiator</strong> hain.
+</div>
+
+<div class="topic-grid">
+  <div class="topic-card">
+    <h4>🏪 Distributed URL Shortener</h4>
+    <p><strong>Stack:</strong> Laravel + Redis + MySQL + Queue Workers</p>
+    <p>Bit.ly clone but distributed. Base62 encoding, Redis caching, read replicas, rate limiting. Handle 10K QPS.</p>
+    <div class="topic-meta">
+      <span class="level-badge level-badge-hard">SCALABLE</span>
+      <span class="tag tag-hot">System Design</span>
+    </div>
+  </div>
+  <div class="topic-card">
+    <h4>📊 Real-Time Analytics Dashboard</h4>
+    <p><strong>Stack:</strong> Laravel + WebSockets + Redis + Chart.js</p>
+    <p>Real-time user analytics with event streaming, live updates, aggregation pipelines, data visualization.</p>
+    <div class="topic-meta">
+      <span class="level-badge level-badge-hard">REAL-TIME</span>
+      <span class="tag tag-star">Full Stack</span>
+    </div>
+  </div>
+  <div class="topic-card">
+    <h4>🛒 Multi-Tenant E-Commerce Platform</h4>
+    <p><strong>Stack:</strong> Laravel + PostgreSQL + Redis + Docker</p>
+    <p>Amazon-style platform with multi-tenancy, microservices, API gateway, caching layer, queue jobs.</p>
+    <div class="topic-meta">
+      <span class="level-badge level-badge-hard">ARCHITECTURE</span>
+      <span class="tag tag-method">FAANG Level</span>
+    </div>
+  </div>
+  <div class="topic-card">
+    <h4>💬 Real-Time Chat (WhatsApp Clone)</h4>
+    <p><strong>Stack:</strong> Laravel Reverb + WebSockets + Redis</p>
+    <p>Typing indicators, read receipts, group chats, message queues, horizontal scaling.</p>
+    <div class="topic-meta">
+      <span class="level-badge level-badge-medium">REAL-TIME</span>
+      <span class="tag tag-hot">WebSockets</span>
+    </div>
+  </div>
+  <div class="topic-card">
+    <h4>📝 Collaborative Document Editor</h4>
+    <p><strong>Stack:</strong> Laravel + TipTap + WebSockets + CRDT</p>
+    <p>Google Docs clone. CRDT for conflict resolution, real-time sync, version history.</p>
+    <div class="topic-meta">
+      <span class="level-badge level-badge-hard">DISTRIBUTED</span>
+      <span class="tag tag-star">CRDT</span>
+    </div>
+  </div>
+  <div class="topic-card">
+    <h4>🐳 Microservices + API Gateway</h4>
+    <p><strong>Stack:</strong> Laravel multi-service + RabbitMQ + Docker + K8s</p>
+    <p>User/order/payment/notification services. API Gateway, rate limiting, service discovery.</p>
+    <div class="topic-meta">
+      <span class="level-badge level-badge-hard">MICROSERVICES</span>
+      <span class="tag tag-method">K8s</span>
+    </div>
+  </div>
+</div>
+
+<div class="tip-banner">
+  <span class="tip-badge">💡 RESUME TIP</span>
+  Har project ke liye <strong>metrics likho</strong>. "Built a URL shortener" nahi — "Built a distributed URL shortener handling <strong>10K+ QPS</strong> with 99.9% uptime using Laravel + Redis caching, <strong>60% latency reduction</strong>".
+</div>
+
+</div>
+</div>
 
 <div class="phase-section">
   <div class="phase-header">

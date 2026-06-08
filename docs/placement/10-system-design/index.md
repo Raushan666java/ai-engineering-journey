@@ -618,7 +618,120 @@ Mock interviews ke liye use kar: LeetCode System Design, Pramp, Interviewing.io,
 
 ---
 
-## AI System Design Interview Questions
+## 🏛️ Big Tech Architecture Patterns — FAANG-Level System Design
+
+<div class="tip-banner">
+  <span class="tip-badge">🔥 WHY THIS MATTERS</span>
+  FAANG interviews mein tu system design round mein <strong>ye patterns demonstrate kare</strong> ki tu real-world distributed systems samajhta hai. Senior role ke liye ye mandatory hai.
+</div>
+
+### Core Distributed Patterns
+
+<div class="ds-grid">
+  <div class="ds-card">
+    <h4>🔀 CQRS</h4>
+    <p>Command Query Responsibility Segregation — read aur write models alag. Amazon, eBay use karte hain for high write throughput.</p>
+    <div class="ds-meta">Amazon · eBay</div>
+  </div>
+  <div class="ds-card">
+    <h4>📋 Event Sourcing</h4>
+    <p>State nahi, events store karo. Full audit trail, temporal queries. Kafka-based systems, banking, Git.</p>
+    <div class="ds-meta">Kafka · EventStore</div>
+  </div>
+  <div class="ds-card">
+    <h4>🛡️ Saga Pattern</h4>
+    <p>Distributed transactions without 2PC. Choreography vs Orchestration. Each step has compensating action on failure.</p>
+    <div class="ds-meta">Uber · Netflix</div>
+  </div>
+  <div class="ds-card">
+    <h4>🔌 Circuit Breaker</h4>
+    <p>Fail fast, degrade gracefully. Three states: Closed → Open → Half-Open. Prevent cascading failures.</p>
+    <div class="ds-meta">Netflix Hystrix · Resilience4j</div>
+  </div>
+  <div class="ds-card">
+    <h4>🔄 Bulkhead Pattern</h4>
+    <p>Resources isolate karo — ek component fail ho toh doosra unaffected. Thread pools, connection pools per service.</p>
+    <div class="ds-meta">Ship analogy</div>
+  </div>
+  <div class="ds-card">
+    <h4>🔁 Retry + Backoff</h4>
+    <p>Exponential backoff with jitter. Transient failures handle karo. Don't retry immediately — amplify mat karo.</p>
+    <div class="ds-meta">AWS SDKs</div>
+  </div>
+  <div class="ds-card">
+    <h4>🌊 Eventual Consistency</h4>
+    <p>Strong consistency chodni padti hai scale ke liye. DynamoDB, Cassandra, DNS — eventually consistent hote hain.</p>
+    <div class="ds-meta">DynamoDB · Cassandra</div>
+  </div>
+  <div class="ds-card">
+    <h4>⚖️ Rate Limiting</h4>
+    <p>Token bucket, sliding window, leaky bucket. API abuse prevention, fair usage. Distributed counters via Redis.</p>
+    <div class="ds-meta">Stripe · GitHub</div>
+  </div>
+</div>
+
+### Big Tech Scale Patterns
+
+<div class="table-dash">
+<table>
+  <tr><th>Pattern</th><th>Amazon</th><th>Google</th><th>Meta</th><th>Netflix</th><th>Uber</th></tr>
+  <tr>
+    <td><strong>Database</strong></td>
+    <td>DynamoDB (NoSQL)</td>
+    <td>Spanner (Global SQL)</td>
+    <td>TAO (Graph)</td>
+    <td>EVCache (Redis)</td>
+    <td>Schemaless (MySQL)</td>
+  </tr>
+  <tr>
+    <td><strong>Messaging</strong></td>
+    <td>SQS/SNS</td>
+    <td>Pub/Sub</td>
+    <td>Thrift + Scribe</td>
+    <td>Kafka</td>
+    <td>Ringpop + Kafka</td>
+  </tr>
+  <tr>
+    <td><strong>Service Mesh</strong></td>
+    <td>AWS App Mesh</td>
+    <td>Istio (internal)</td>
+    <td>Internal</td>
+    <td>Envoy + Zuul</td>
+    <td>TChannel</td>
+  </tr>
+  <tr>
+    <td><strong>Container Orchestration</strong></td>
+    <td>ECS/EKS</td>
+    <td>Borg (internal)</td>
+    <td>Twine (internal)</td>
+    <td>Titus (internal)</td>
+    <td>Peloton (internal)</td>
+  </tr>
+  <tr>
+    <td><strong>Observability</strong></td>
+    <td>CloudWatch + X-Ray</td>
+    <td>Monarch + Dapper</td>
+    <td>Scuba + ODS</td>
+    <td>Atlas + Spinnaker</td>
+    <td>Jaeger + M3</td>
+  </tr>
+  <tr>
+    <td><strong>CI/CD</strong></td>
+    <td>CodePipeline</td>
+    <td>Jenkins-based</td>
+    <td>Phabricator + Sandcastle</td>
+    <td>Spinnaker + Nebula</td>
+    <td>Buildkite + Deployator</td>
+  </tr>
+</table>
+</div>
+
+<div class="tip-banner">
+  <span class="tip-badge">💡 INTERVIEW TIP</span>
+  Jab tu koi system design kare, toh mention karo <strong>"Amazon ka DynamoDB eventually consistent hai, lekin Google ka Spanner externally consistent hai — different trade-offs for different use cases"</strong>. Ye dikhata hai ki tu real-world systems jaanta hai.
+</div>
+
+---
 
 Naye zamane mein AI system design bhi poochte hain:
 

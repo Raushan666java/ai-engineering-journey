@@ -39,6 +39,10 @@
     <h4>SE — Software Engineering</h4>
     <p>15-week program — SDLC, Testing, Design Patterns, CI/CD.</p>
   </div>
+  <div class="roadmap-step" data-step="8">
+    <h4>DS — Distributed Systems</h4>
+    <p>CAP, Consensus, Scaling, Big Tech fundamental.</p>
+  </div>
 </div>
 
 ---
@@ -365,6 +369,75 @@ Topics spread across reference material. Placement perspective me ye basics kaaf
 
 ---
 
+## 🌐 DS — Distributed Systems (Big Tech Essential)
+
+<div class="tip-banner">
+  <span class="tip-badge">🔥 FUTURE PROOF</span>
+  Distributed Systems <strong>har big tech company</strong> poochhti hai — Amazon, Google, Meta, Uber, Stripe. Scaling, CAP theorem, consistency models — ye concepts senior roles mein make-or-break hote hain.
+</div>
+
+**Why Distributed Systems for placements?** FAANG companies expect you to understand how systems work at scale. Even freshers with distributed systems knowledge stand out.
+
+<div class="ds-grid">
+  <div class="ds-card">
+    <h4>🔄 CAP Theorem</h4>
+    <p>Consistency vs Availability vs Partition Tolerance — sirf 2 choose kar sakte ho. Real-world systems kaise trade-off karte hain.</p>
+    <div class="ds-meta">Foundation — Week 1</div>
+  </div>
+  <div class="ds-card">
+    <h4>📊 Consistency Models</h4>
+    <p>Strong → Eventual → Causal → Read-your-writes. Har model ka use-case alag. Amazon Dynamo vs Google Spanner.</p>
+    <div class="ds-meta">Core — Week 1-2</div>
+  </div>
+  <div class="ds-card">
+    <h4>🗳️ Consensus Algorithms</h4>
+    <p>Paxos vs Raft — kaise multiple nodes agree karte hain. Leader election, log replication. Raft is interview favorite.</p>
+    <div class="ds-meta">Advanced — Week 2-3</div>
+  </div>
+  <div class="ds-card">
+    <h4>🔗 Consistent Hashing</h4>
+    <p>Cassandra, DynamoDB ki backbone. Add/remove nodes without major rehashing. Virtual nodes concept.</p>
+    <div class="ds-meta">Core — Week 3</div>
+  </div>
+  <div class="ds-card">
+    <h4>📬 Gossip Protocol</h4>
+    <p>Cassandra, Redis Cluster use karte hain. Node failure detection + metadata propagation. Epidemic style.</p>
+    <div class="ds-meta">Advanced — Week 4</div>
+  </div>
+  <div class="ds-card">
+    <h4>🧩 Sharding & Partitioning</h4>
+    <p>Horizontal sharding, vertical sharding, range vs hash-based. Rebalancing strategies. Database scaling ka answer.</p>
+    <div class="ds-meta">Core — Week 4-5</div>
+  </div>
+  <div class="ds-card">
+    <h4>📦 Distributed Transactions</h4>
+    <p>Two-Phase Commit (2PC), Three-Phase Commit (3PC), SAGA pattern. When to use which.</p>
+    <div class="ds-meta">Advanced — Week 5</div>
+  </div>
+  <div class="ds-card">
+    <h4>🔍 Distributed Tracing</h4>
+    <p>Jaeger, Zipkin — request ka flow multiple microservices across trace karo. Latency analysis.</p>
+    <div class="ds-meta">Observability — Week 6</div>
+  </div>
+</div>
+
+### Key Interview Questions
+
+1. **Explain CAP theorem** — Real-world example ke saath (CP: HBase, AP: Cassandra, CA: traditional RDBMS)
+2. **Design a distributed key-value store** — Consistent hashing, replication, quorum
+3. **Difference between Paxos and Raft** — Raft ka simpler leader-based approach
+4. **How does DynamoDB achieve high availability?** — Eventually consistent reads, hinted handoff
+5. **What is gossip protocol?** — Epidemic propagation, failure detection in Cassandra
+6. **How to handle distributed transactions?** — 2PC vs SAGA pattern trade-offs
+7. **Design a distributed rate limiter** — Sliding window, token bucket, distributed counters
+
+### Resources
+- **"Designing Data-Intensive Applications" (Martin Kleppmann)** — Distributed systems bible
+- **MIT 6.824** — Distributed Systems course (YouTube)
+- **System Design Interview (Alex Xu)** — Vol 1 & 2
+
+---
+
 ## 90-Day Plan Alignment
 
 90-Day Plan mein har din ka topic likha hai:
@@ -390,6 +463,7 @@ Topics spread across reference material. Placement perspective me ye basics kaaf
 - [ ] OSI vs TCP/IP, subnetting, DNS resolution process aata hai
 - [ ] COA — pipeline, cache, addressing modes basics clear
 - [ ] SE — SDLC models, design patterns, testing types cover kiye
+- [ ] DS — CAP theorem, consistency models, consensus algorithms cover kiye
 - [ ] 90-day plan ke hisaab se daily topic kar raha hoon
 - [ ] Mock interviews dena start kar diya
 

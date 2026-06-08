@@ -154,6 +154,75 @@
 - [DSA Problem Tracker](dsa-tracker.md)
 - [Placement-Ori](https://github.com/Raushan666java/ai-engineering-journey/tree/main/placement-original)
 
+---
+
+## 🏢 Big Tech Track — FAANG aur Top Product Companies
+
+<div class="track-banner">
+  <div class="track-banner-icon">🚀</div>
+  <div class="track-banner-body">
+    <strong>Global-level prep</strong> — Amazon, Google, Microsoft, Meta, Uber, Airbnb, Stripe. Ye section systematically tujhe le jayega from zero to big tech offer.
+  </div>
+</div>
+
+<div class="track-grid">
+  <div class="track-card">
+    <div class="track-card-header">
+      <span class="track-phase">Phase 1</span>
+      <span class="track-tag track-tag-hot">FOUNDATION</span>
+    </div>
+    <h4>DSA + CS Core</h4>
+    <p>500+ problems, OS, DBMS, CN, Distributed Systems. Har big tech ka first filter.</p>
+    <div class="track-meta">
+      <span>Module <a href="../02-cs-core/">02 →</a></span>
+      <span>3-6 months</span>
+    </div>
+  </div>
+  <div class="track-card">
+    <div class="track-card-header">
+      <span class="track-phase">Phase 2</span>
+      <span class="track-tag track-tag-star">SYSTEM DESIGN</span>
+    </div>
+    <h4>HLD + LLD + Case Studies</h4>
+    <p>Scalable systems, distributed patterns, 12+ case studies. Senior roles ka differentiator.</p>
+    <div class="track-meta">
+      <span>Module <a href="../10-system-design/">10 →</a></span>
+      <span>2-3 months</span>
+    </div>
+  </div>
+  <div class="track-card">
+    <div class="track-card-header">
+      <span class="track-phase">Phase 3</span>
+      <span class="track-tag track-tag-method">BEHAVIORAL</span>
+    </div>
+    <h4>Leadership + STAR Stories</h4>
+    <p>Amazon LPs, Google Googleyness, Meta Move Fast. Stories ready karo jo impress kare.</p>
+    <div class="track-meta">
+      <span>Module <a href="../08-interview-prep/">08 →</a></span>
+      <span>1-2 months</span>
+    </div>
+  </div>
+  <div class="track-card">
+    <div class="track-card-header">
+      <span class="track-phase">Phase 4</span>
+      <span class="track-tag track-tag-hot">INTERVIEWS</span>
+    </div>
+    <h4>Mock Interviews + Strategy</h4>
+    <p>Company-specific prep, mocks (Pramp/Interviewing.io), offer negotiation, timeline strategy.</p>
+    <div class="track-meta">
+      <span>Module <a href="../08-interview-prep/">08 →</a></span>
+      <span>1-2 months</span>
+    </div>
+  </div>
+</div>
+
+<div class="tip-banner" style="margin-top:0">
+  <span class="tip-badge">💡 Big Tech Mantra</span>
+  70% DSA + CS Core, 20% System Design, 10% Behavioral. <strong>Consistency matters more than intensity</strong> — 2 hrs daily > 10 hrs on Sunday.
+</div>
+
+<hr class="rule">
+
 <style>
 #study-timer {
   background: var(--bg-surface);

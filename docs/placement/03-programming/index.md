@@ -251,3 +251,9 @@ Topics: Pointers, Memory allocation, Structs, File I/O.
 - [ ] Java interview questions bank revise kiya
 - [ ] Interview Q&A ke 6 parts padh liye
 - [ ] Python aur C basics cover kiye
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

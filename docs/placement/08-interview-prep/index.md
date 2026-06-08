@@ -247,3 +247,9 @@ Week 7-8: Real interviews start
 - [ ] Problem-solving framework roj practice mein hai
 - [ ] Mock interview feedback template ready hai
 - [ ] Self-recording practice ki hai (≥5 sessions)
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

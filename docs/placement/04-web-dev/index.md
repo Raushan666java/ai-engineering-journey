@@ -247,3 +247,9 @@ Inertia approach: Server-side routing + Client-side rendering — no full API ne
 - [ ] SQL joins, subqueries, normalization practice ki
 - [ ] Full-stack project banaya (E-commerce ya Blog)
 - [ ] React + Laravel + Inertia tutorial follow kiya
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

@@ -323,3 +323,9 @@ Topics spread across reference material. Placement perspective me ye basics kaaf
 - [ ] SE — SDLC models, design patterns, testing types cover kiye
 - [ ] 90-day plan ke hisaab se daily topic kar raha hoon
 - [ ] Mock interviews dena start kar diya
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

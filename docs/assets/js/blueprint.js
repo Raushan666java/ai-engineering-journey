@@ -271,6 +271,63 @@
     }
   })();
 
+  // === PER-PAGE NOTES ===
+  (function() {
+    var key = 'aej:notes:v1';
+    var data = JSON.parse(localStorage.getItem(key)) || {};
+    var pagePath = window.location.pathname.replace(/\/+$/, '') || '/';
+    var noteEl = document.getElementById('page-notes');
+    if (noteEl) {
+      var ta = document.createElement('textarea');
+      ta.className = 'page-notes-textarea';
+      ta.placeholder = 'Write your notes for this page... (auto-saved)';
+      ta.value = data[pagePath] || '';
+      ta.addEventListener('input', function() {
+        data[pagePath] = this.value;
+        localStorage.setItem(key, JSON.stringify(data));
+      });
+      noteEl.appendChild(ta);
+    }
+  })();
+
+  // === 90-DAY PLAN AUTO-HIGHLIGHT (days elapsed) ===
+  (function() {
+    var el = document.getElementById('plan-highlight');
+    if (!el) return;
+    // find current day row
+    // goal page has tables with Day | Topic | Problems | Status
+    // We calculate days from a start date stored in localStorage or use data-start attribute
+    var startDate = el.getAttribute('data-start');
+    if (!startDate) {
+      // try localStorage
+      startDate = localStorage.getItem('aej:plan:start') || '2026-06-01';
+    }
+    var start = new Date(startDate);
+    var now = new Date();
+    var elapsed = Math.floor((now - start) / (1000*60*60*24)) + 1;
+    if (elapsed < 1) elapsed = 1;
+    if (elapsed > 90) elapsed = 90;
+    // highlight the table row if we can find it
+    var tables = document.querySelectorAll('.md-typeset table');
+    for (var t = 0; t < tables.length; t++) {
+      var rows = tables[t].querySelectorAll('tbody tr');
+      for (var r = 0; r < rows.length; r++) {
+        var firstTd = rows[r].querySelector('td');
+        if (!firstTd) continue;
+        var text = firstTd.textContent.trim();
+        // match "Day X" patterns
+        var match = text.match(/Day\s*(\d+)/i);
+        if (match) {
+          var dayNum = parseInt(match[1], 10);
+          if (dayNum === elapsed) {
+            rows[r].className = 'today-highlight';
+            rows[r].scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      }
+    }
+  })();
+
   // === OBSERVER FOR STAT BAR ANIMATIONS ===
   document.addEventListener('DOMContentLoaded', function() {
     var statBars = document.querySelectorAll('.stat-row-bar');

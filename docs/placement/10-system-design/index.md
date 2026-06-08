@@ -509,3 +509,9 @@ Naye zamane mein AI system design bhi poochte hain:
 - [ ] Back-of-envelope calculations (DAU, QPS, storage, bandwidth) practice ki
 - [ ] 4-week interview prep plan follow kiya
 - [ ] 10-week system design course structure follow kiya
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

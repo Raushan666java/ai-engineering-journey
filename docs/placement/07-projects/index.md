@@ -327,3 +327,9 @@ Yeh ek complete Laravel platform hai:
 - [ ] Projects ke live demos deploy kiye
 - [ ] Har project ka README.md likha
 - [ ] Har project ke liye talking points ready
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

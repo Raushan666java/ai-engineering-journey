@@ -461,3 +461,9 @@ Resources ka sahi istemal kaise kare:
 - [ ] Spaced repetition (Anki) setup kiya
 - [ ] At least one university course enrolled (CS50 recommended)
 - [ ] Job search platforms pe profile banayi
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

@@ -1,5 +1,5 @@
 site_name: "Raushan's AI Engineering Journey"
-site_url: https://raushan666java.github.io/ai-engineering-journey
+site_url: https://raushan666java.github.io/placement/
 site_author: Raushan Kumar
 site_description: "3 Month AI Engineering Roadmap — Python, LangChain, RAG, Agents, Automation"
 
@@ -42,9 +42,6 @@ theme:
     - toc.follow
   icon:
     repo: fontawesome/brands/github
-
-hooks:
-  - hooks.py
 
 plugins:
   - search

@@ -513,3 +513,9 @@ Study group mein turns lo concepts explain karne ke liye. Ask clarifying questio
 - [ ] "Padhte padhte banao" mindset adopt kiya
 - [ ] Weak areas identify kar li
 - [ ] Weekly review schedule fix kiya
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

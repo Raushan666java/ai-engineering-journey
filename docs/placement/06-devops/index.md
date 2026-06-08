@@ -134,3 +134,9 @@ resource "aws_instance" "web" {
 - [ ] AWS (EC2, S3, RDS) basics cover kiye
 - [ ] Terraform ya Ansible ka ek project kiya
 - [ ] Monitoring (Prometheus/Grafana) setup kiya
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

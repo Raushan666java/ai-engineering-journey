@@ -209,3 +209,9 @@ Learning_Course/
 - [ ] Prompt Engineering complete kiya
 - [ ] Learning_Course ka 21-day structure follow kiya
 - [ ] Kaggle pe 2-3 competitions participate kiya
+
+---
+
+## Notes
+
+<div id="page-notes"></div>

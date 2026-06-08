@@ -445,6 +445,30 @@ body {
   font-size: 0.78rem !important;
 }
 
+/* === PAGE NOTES === */
+#page-notes { margin: 24px 0; }
+.page-notes-textarea {
+  width: 100%; min-height: 80px;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.82rem !important;
+  line-height: 1.6 !important;
+  padding: 12px;
+  background: var(--bg-surface);
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  resize: vertical;
+  outline: none;
+}
+.page-notes-textarea:focus { border-color: var(--blueprint); box-shadow: var(--shadow-hard); }
+
+/* === GOAL PAGE TODAY HIGHLIGHT === */
+tr.today-highlight {
+  outline: 3px solid var(--blueprint);
+  outline-offset: -2px;
+  background: var(--bg-surface) !important;
+}
+tr.today-highlight td { background: var(--bg-surface) !important; }
+
 /* === RESPONSIVE === */
 @media screen and (max-width: 768px) {
   .stat-row { grid-template-columns: 1fr 1fr; }

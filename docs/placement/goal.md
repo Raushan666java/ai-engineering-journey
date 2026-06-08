@@ -101,3 +101,61 @@ Refer to the original Placement folder for detailed daily breakdowns:
 2. **Suj Bhujh** — Awareness. Jaano kya padhna hai, kyu padhna hai.
 3. **Duddhi** — Milkcake? No — sheer hard work. Koi shortcut nahi.
 4. **Prakaram** — Bravery. Darna mat. Fail hoge to seekhoge.
+
+---
+
+## Progress Tracker
+
+<div id="plan-highlight" data-start="2026-06-01">
+  <p>Today is <strong>Day <span id="plan-day-num">?</span></strong> of 90</p>
+  <div class="progress-bar" style="max-width:400px;margin:8px 0"><div class="progress-bar-fill" id="plan-bar" style="width:0%"></div></div>
+  <label style="font-family:'JetBrains Mono',monospace;font-size:0.72rem;display:flex;align-items:center;gap:8px;margin-top:8px;cursor:pointer">
+    Start date:
+    <input type="date" id="plan-start-picker" style="font-family:inherit;padding:4px 8px;border:1px solid var(--rule-soft);background:var(--bg);color:var(--ink)">
+  </label>
+</div>
+
+<script>
+(function() {
+  var el = document.getElementById('plan-highlight');
+  var picker = document.getElementById('plan-start-picker');
+  var dayNum = document.getElementById('plan-day-num');
+  var bar = document.getElementById('plan-bar');
+  var stored = localStorage.getItem('aej:plan:start') || '2026-06-01';
+  picker.value = stored;
+  function update() {
+    var start = new Date(picker.value);
+    var now = new Date();
+    var elapsed = Math.floor((now - start) / (1000*60*60*24)) + 1;
+    if (elapsed < 1) elapsed = 1;
+    if (elapsed > 90) elapsed = 90;
+    dayNum.textContent = elapsed;
+    bar.style.width = Math.round(elapsed/90*100) + '%';
+    // highlight matching table row
+    var tables = document.querySelectorAll('.md-typeset table');
+    for (var t = 0; t < tables.length; t++) {
+      var rows = tables[t].querySelectorAll('tbody tr');
+      for (var r = 0; r < rows.length; r++) {
+        var firstTd = rows[r].querySelector('td');
+        if (!firstTd) continue;
+        var match = firstTd.textContent.trim().match(/Day\s*(\d+)/i);
+        if (match) {
+          var d = parseInt(match[1], 10);
+          if (d === elapsed) { rows[r].className = 'today-highlight'; }
+        }
+      }
+    }
+  }
+  update();
+  picker.addEventListener('change', function() {
+    localStorage.setItem('aej:plan:start', this.value);
+    update();
+  });
+  // re-run after page fully loads for highlight
+  setTimeout(update, 500);
+})();
+</script>
+
+## Notes
+
+<div id="page-notes"></div>

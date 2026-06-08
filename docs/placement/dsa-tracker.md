@@ -7,6 +7,8 @@
 <div id="dsa-stats-bar" class="dsa-header">
   <span class="dsa-total">Solved: <strong id="dsa-solved">0</strong> / <strong id="dsa-total">0</strong></span>
   <div class="progress-bar" style="flex:1;max-width:300px"><div class="progress-bar-fill" id="dsa-bar" style="width:0%"></div></div>
+  <input type="text" id="dsa-search" placeholder="Filter problems..." style="font-family:'JetBrains Mono',monospace;font-size:0.72rem;padding:4px 8px;border:1px solid var(--rule-soft);background:var(--bg);color:var(--ink);flex:1;min-width:120px">
+  <button class="btn btn-small" id="dsa-random">🎲 RANDOM</button>
   <button class="btn btn-small" id="dsa-reset">RESET ALL</button>
 </div>
 
@@ -205,42 +207,105 @@
   'use strict';
   var KEY = 'aej:dsa:v1';
   var data = JSON.parse(localStorage.getItem(KEY)) || {};
+  var allItems = [];
 
   function save() { localStorage.setItem(KEY, JSON.stringify(data)); }
 
   function updateStats() {
-    var cbs = document.querySelectorAll('.task-list-item input[type="checkbox"]');
-    var total = cbs.length;
+    var items = document.querySelectorAll('.task-list-item');
+    var total = items.length;
     var done = 0;
-    for (var i = 0; i < total; i++) { if (cbs[i].checked) done++; }
+    for (var i = 0; i < total; i++) {
+      var cb = items[i].querySelector('input[type="checkbox"]');
+      if (cb && cb.checked) done++;
+    }
     document.getElementById('dsa-solved').textContent = done;
     document.getElementById('dsa-total').textContent = total;
     var pct = total > 0 ? Math.round(done / total * 100) : 0;
     document.getElementById('dsa-bar').style.width = pct + '%';
   }
 
+  function applyFilter() {
+    var q = document.getElementById('dsa-search').value.toLowerCase();
+    for (var i = 0; i < allItems.length; i++) {
+      var li = allItems[i];
+      var text = li.textContent.toLowerCase();
+      var show = !q || text.indexOf(q) !== -1;
+      li.style.display = show ? '' : 'none';
+    }
+    // also hide empty section headings
+    var sections = document.querySelectorAll('.md-typeset h2');
+    for (var s = 0; s < sections.length; s++) {
+      var section = sections[s];
+      var next = section.nextElementSibling;
+      var hasVisible = false;
+      while (next && next.tagName !== 'H2') {
+        if (next.tagName === 'UL' || next.tagName === 'P') {
+          var items = next.querySelectorAll('.task-list-item');
+          for (var ii = 0; ii < items.length; ii++) {
+            if (items[ii].style.display !== 'none') { hasVisible = true; break; }
+          }
+        }
+        next = next.nextElementSibling;
+      }
+      section.style.display = hasVisible ? '' : 'none';
+    }
+  }
+
+  function pickRandom() {
+    var unchecked = [];
+    for (var i = 0; i < allItems.length; i++) {
+      var cb = allItems[i].querySelector('input[type="checkbox"]');
+      if (cb && !cb.checked) unchecked.push(allItems[i]);
+    }
+    if (unchecked.length === 0) { alert('All problems solved! 🎉'); return; }
+    var pick = unchecked[Math.floor(Math.random() * unchecked.length)];
+    // scroll to it
+    pick.style.outline = '3px solid var(--blueprint)';
+    pick.style.outlineOffset = '2px';
+    pick.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    setTimeout(function() { pick.style.outline = ''; }, 3000);
+    // flash the search to show it
+    document.getElementById('dsa-search').value = '';
+    applyFilter();
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
-    var cbs = document.querySelectorAll('.task-list-item input[type="checkbox"]');
-    for (var i = 0; i < cbs.length; i++) {
-      var cb = cbs[i];
-      var label = cb.parentElement.textContent.trim();
+    // collect all items
+    allItems = Array.prototype.slice.call(document.querySelectorAll('.task-list-item'));
+
+    // wire checkboxes
+    for (var i = 0; i < allItems.length; i++) {
+      var cb = allItems[i].querySelector('input[type="checkbox"]');
+      if (!cb) continue;
+      var label = allItems[i].textContent.trim();
       if (data[label]) cb.checked = true;
-      cb.addEventListener('change', function() {
-        var lbl = this.parentElement.textContent.trim();
-        if (this.checked) data[lbl] = true;
-        else delete data[lbl];
-        save();
-        updateStats();
-      });
+      (function(cbEl, lbl) {
+        cbEl.addEventListener('change', function() {
+          if (this.checked) data[lbl] = true;
+          else delete data[lbl];
+          save();
+          updateStats();
+        });
+      })(cb, label);
     }
     updateStats();
 
+    // search
+    document.getElementById('dsa-search').addEventListener('input', applyFilter);
+
+    // random
+    document.getElementById('dsa-random').addEventListener('click', pickRandom);
+
+    // reset
     document.getElementById('dsa-reset').addEventListener('click', function() {
       if (confirm('Reset all DSA progress?')) {
         data = {};
         save();
-        var cbs = document.querySelectorAll('.task-list-item input[type="checkbox"]');
-        for (var i = 0; i < cbs.length; i++) cbs[i].checked = false;
+        for (var i = 0; i < allItems.length; i++) {
+          var cb2 = allItems[i].querySelector('input[type="checkbox"]');
+          if (cb2) cb2.checked = false;
+        }
         updateStats();
       }
     });

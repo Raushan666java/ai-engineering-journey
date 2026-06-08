@@ -4,15 +4,10 @@
   var STORAGE_KEY = 'aej:progress:v1';
   var root = document.documentElement;
 
-  // === THEME TOGGLE ===
-  var storedTheme = localStorage.getItem('theme');
-  if (storedTheme) {
-    root.setAttribute('data-theme', storedTheme);
-  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    root.setAttribute('data-theme', 'dark');
-  } else {
-    root.setAttribute('data-theme', 'light');
-  }
+  // === THEME TOGGLE (dark default) ===
+  root.setAttribute('data-theme', 'dark');
+  var storedTheme = localStorage.getItem('theme') || 'dark';
+  root.setAttribute('data-theme', storedTheme);
 
   // Listen for theme toggle from MkDocs palette
   document.addEventListener('DOMContentLoaded', function() {

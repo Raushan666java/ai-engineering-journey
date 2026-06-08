@@ -2,10 +2,10 @@
     <div class="module-hero-icon">🌐</div>
     <div class="module-hero-body">
         <h1>Web Development — Frontend se Backend tak</h1>
-        <p>Ye section tujhe complete web developer banata hai. HTML/CSS se lekar Laravel + React full-stack tak. Sab kuch <code>placement-original/Web-Development/WebDev/</code> aur <code>placement-original/Main-Course/Placement-01/04-Web-Development/</code> mein hai.</p>
+        <p>Ye section tujhe complete web developer banata hai. HTML/CSS se lekar Laravel + React full-stack tak. Sab kuch <code>original/Web-Development/WebDev/</code> aur <code>original/Main-Course/Placement-01/04-Web-Development/</code> mein hai.</p>
         <div class="module-hero-meta">
-            <span>📂 placement-original/Main-Course/Placement-01/04-Web-Development/Web-Development-Complete.md</span>
-            <span>📄 1075 lines · 12-week roadmap</span>
+            <span>📂 original/Main-Course/Placement-01/04-Web-Development/Web-Development-Complete.md</span>
+            <span>📄 1075 lines · Full roadmap</span>
         </div>
     </div>
 </div>
@@ -42,13 +42,12 @@
 <div class="phase-section">
     <div class="phase-header">
         <span>🎨 Frontend Fundamentals</span>
-        <span>Weeks 1-6</span>
     </div>
     <div class="phase-body">
 
 ### HTML5
 
-`placement-original/Main-Course/Placement-01/04-Web-Development/Web-Development-Complete.md` se padh:
+`original/Main-Course/Placement-01/04-Web-Development/Web-Development-Complete.md` se padh:
 
 #### Core Concepts
 
@@ -87,7 +86,7 @@
 
 ### CSS3
 
-**Source**: `Web-Development-Complete.md` — Week 1-3 Frontend Fundamentals
+**Source**: `Web-Development-Complete.md` — Frontend Fundamentals
 
 #### Core Concepts
 
@@ -152,7 +151,7 @@
 
 ### JavaScript
 
-**Complete syllabus**: `placement-original/Web-Development/WebDev/JavaScript/` (19 modules)
+**Complete syllabus**: `original/Web-Development/WebDev/JavaScript/` (19 modules)
 
 Key topics for web dev:
 - <span class="tag tag-method">DOM</span> DOM Manipulation (module 09) — querySelector, createElement, event delegation
@@ -163,7 +162,7 @@ Key topics for web dev:
 
 ### jQuery
 
-`placement-original/Web-Development/WebDev/JavaScript/` mein jQuery ke 15 modules hain:
+`original/Web-Development/WebDev/JavaScript/` mein jQuery ke 15 modules hain:
 
 ```javascript
 // jQuery Ajax Example
@@ -180,7 +179,7 @@ $.ajax({
 
 ### AJAX
 
-`placement-original/Web-Development/WebDev/JavaScript/AJAX_Detailed_Syllabus.md`:
+`original/Web-Development/WebDev/JavaScript/AJAX_Detailed_Syllabus.md`:
 - XMLHttpRequest (legacy)
 - Fetch API (modern, promise-based)
 - JSON parsing & stringifying
@@ -188,7 +187,7 @@ $.ajax({
 
 ### React Basics
 
-Reference: `placement-original/Web-Development/react-laravel-inertia-tutorials/` (7 parts):
+Reference: `original/Web-Development/react-laravel-inertia-tutorials/` (7 parts):
 
 1. React Fundamentals — JSX, components, props
 2. React Hooks — useState, useEffect, useContext, custom hooks
@@ -205,33 +204,159 @@ Reference: `placement-original/Web-Development/react-laravel-inertia-tutorials/`
 <div class="phase-section">
     <div class="phase-header">
         <span>⚙️ Backend Development</span>
-        <span>Weeks 7-9</span>
     </div>
     <div class="phase-body">
 
 ### PHP
 
-`placement-original/Web-Development/WebDev/PHP/PHP_Syllabus.md` + `php-for-laravel/` (16 topics).
+`original/Web-Development/WebDev/PHP/PHP_Syllabus.md` + `php-for-laravel/` (16 topics).
+
+```php
+<?php
+// PHP Basics — OOP + PDO
+
+class User {
+    private $name;
+    private $email;
+    private $password;
+
+    public function __construct($name, $email, $password) {
+        $this->name = $name;
+        $this->email = $email;
+        $this->password = password_hash($password, PASSWORD_DEFAULT);
+    }
+
+    public function verifyPassword($password) {
+        return password_verify($password, $this->password);
+    }
+}
+
+// PDO Database Connection
+class Database {
+    private $pdo;
+
+    public function __construct() {
+        $this->pdo = new PDO(
+            "mysql:host=localhost;dbname=myapp",
+            "root", "",
+            [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
+        );
+    }
+
+    public function fetchAll($sql, $params = []) {
+        $stmt = $this->pdo->prepare($sql);
+        $stmt->execute($params);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+}
+
+// Form handling
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars(trim($_POST["name"]));
+    $email = filter_var($_POST["email"], FILTER_VALIDATE_EMAIL);
+    if (!$email) { echo "Invalid email"; exit; }
+}
+```
+
+**Interview Topics:** `password_hash()` vs md5, PDO vs MySQLi, SQL injection prevention, CSRF tokens, session security.
 
 ### Laravel
 
-`placement-original/Web-Development/WebDev/Laravel/Laravel_12x_Detailed_Syllabus.md`:
+`original/Web-Development/WebDev/Laravel/Laravel_12x_Detailed_Syllabus.md`:
 
 ```
 MVC → Routes → Controllers → Blade → Eloquent
 → Auth → API → Testing → Queues → Events → Broadcasting
 ```
 
-**Eloquent Advanced Topics**: relationships (hasManyThrough, morphMany), mutators, accessors, scopes, eager loading, N+1 problem.
+```php
+// Route (routes/web.php)
+Route::resource('users', UserController::class);
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+});
 
-**Interview Patterns**: Service-Repository pattern, SOLID in Laravel, Facade vs Dependency Injection.
+// Model with relationships
+class User extends Authenticatable {
+    public function posts() { return $this->hasMany(Post::class); }
+    public function comments() { return $this->hasMany(Comment::class); }
+}
+
+// Controller with pagination
+class UserController extends Controller {
+    public function index() {
+        $users = User::with('posts')->paginate(10);
+        return view('users.index', compact('users'));
+    }
+
+    public function store(Request $request) {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users',
+            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+        ]);
+        $user = User::create($validated);
+        return redirect()->route('users.show', $user);
+    }
+}
+
+// Blade Template (resources/views/users/index.blade.php)
+@foreach($users as $user)
+    <tr>
+        <td>{{ $user->id }}</td>
+        <td>{{ $user->name }}</td>
+        <td>{{ $user->email }}</td>
+        <td>{{ $user->posts->count() }}</td>
+    </tr>
+@endforeach
+{{ $users->links() }}
+
+// Migration
+Schema::create('posts', function (Blueprint $table) {
+    $table->id();
+    $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+    $table->string('title');
+    $table->text('body');
+    $table->timestamps();
+});
+```
+
+**Eloquent Advanced Topics:** relationships (hasManyThrough, morphMany, belongsToMany), mutators, accessors, global scopes, eager loading, N+1 problem solution.
+
+**Interview Patterns:** Service-Repository pattern, SOLID in Laravel, Facade vs Dependency Injection, Eloquent vs Query Builder.
 
 ### Node.js Basics
+
+```javascript
+const express = require('express');
+const app = express();
+app.use(express.json());
+
+// REST API route
+app.get('/api/users', async (req, res) => {
+    const users = await User.find().select('-password');
+    res.json({ success: true, data: users });
+});
+
+// Middleware — auth check
+const auth = (req, res, next) => {
+    const token = req.headers.authorization?.split(' ')[1];
+    if (!token) return res.status(401).json({ error: 'Unauthorized' });
+    jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+        if (err) return res.status(403).json({ error: 'Invalid token' });
+        req.user = decoded;
+        next();
+    });
+};
+
+app.listen(3000, () => console.log('Server running on port 3000'));
+```
 
 - Express.js routing, middleware
 - npm/yarn package management
 - REST API building
 - Authentication (JWT, sessions)
+- Environment variables (.env)
     </div>
 </div>
 
@@ -240,7 +365,6 @@ MVC → Routes → Controllers → Blade → Eloquent
 <div class="phase-section">
     <div class="phase-header">
         <span>🗄️ Databases & Data Modeling</span>
-        <span>Weeks 9-10</span>
     </div>
     <div class="phase-body">
 
@@ -267,7 +391,7 @@ MVC → Routes → Controllers → Blade → Eloquent
 
 ## Full-Stack Projects
 
-Reference `placement-original/Main-Course/Placement-01/07-Projects/Project-Portfolio.md`:
+Reference `original/Main-Course/Placement-01/07-Projects/Project-Portfolio.md`:
 
 1. **E-commerce** (PHP + MySQL): Product catalog, cart, orders, payments
 2. **Blog CMS** (Laravel): Posts, categories, comments, tags, search
@@ -277,7 +401,7 @@ Reference `placement-original/Main-Course/Placement-01/07-Projects/Project-Portf
 
 ### React + Laravel + Inertia
 
-Full tutorial: `placement-original/Web-Development/react-laravel-inertia-tutorials/REACT_LARAVEL_INERTIA_COMPLETE.md`
+Full tutorial: `original/Web-Development/react-laravel-inertia-tutorials/REACT_LARAVEL_INERTIA_COMPLETE.md`
 
 ```bash
 composer create-project laravel/laravel my-app
@@ -287,13 +411,35 @@ npm install @inertiajs/react
 
 Inertia approach: Server-side routing + Client-side rendering — no full API needed.
 
+### Deployment Basics
+
+```bash
+# Laravel on shared hosting
+git push origin main
+composer install --optimize
+php artisan migrate
+php artisan config:cache
+php artisan route:cache
+
+# Frontend build
+npm run build
+
+# Node.js on VPS
+npm install
+pm2 start app.js
+pm2 save
+pm2 startup
+```
+
+**Key Concepts:** Shared hosting vs VPS, CPanel, Nginx config, Environment variables, SSL certificates, CI/CD basics.
+
 <div class="tip-banner">
     <span class="tip-badge">💡 Bhai Ka Gyaan</span>
-    <strong>📅 12-Week Plan:</strong> Pehle 3 weeks frontend (HTML+CSS+JS), agle 3 weeks backend (PHP+Laravel), phir 2 weeks databases, last 4 weeks full-stack projects.<br>
-    <strong>💻 Project Driven:</strong> Har concept padhne ke baad immediately ek mini-project banao. Theory 30%, Practice 70%.<br>
-    <strong>🎨 CSS Mastery:</strong> Roz 1 layout banao flexbox/grid se. CSS Art challenge try karo — kaafi fun hai aur interview mein bhi puchte hain.<br>
-    <strong>🗄️ Database Practice:</strong> SQL queries roz likho. LeetCode Database section is good for practice.<br>
-    <strong>✨ Full-Stack Flow:</strong> Ek hi project lo aur usko HTML+CSS → PHP → Laravel → React+Laravel+Inertia step by step upgrade karo. Portfolio ka king piece banega.
+    <strong>Study Sequence:</strong> Pehle frontend (HTML+CSS+JS), phir backend (PHP+Laravel), phir databases, finally full-stack projects.<br>
+    <strong>Project Driven:</strong> Har concept padhne ke baad immediately ek mini-project banao. Theory 30%, Practice 70%.<br>
+    <strong>CSS Mastery:</strong> Roz 1 layout banao flexbox/grid se. CSS Art challenge try karo — kaafi fun hai aur interview mein bhi puchte hain.<br>
+    <strong>Database Practice:</strong> SQL queries roz likho. LeetCode Database section is good for practice.<br>
+    <strong>Full-Stack Flow:</strong> Ek hi project lo aur usko HTML+CSS → PHP → Laravel → React+Laravel+Inertia step by step upgrade karo. Portfolio ka king piece banega.
 </div>
 
 ## Checklist

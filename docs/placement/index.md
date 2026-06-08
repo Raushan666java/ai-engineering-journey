@@ -24,43 +24,43 @@
 
 ## Study Structure
 
-| # | Module | Coverage | Time | Status |
-|---|--------|----------|------|--------|
-| 01 | Meta Skills | How to Learn, Progress Tracking | Week 1 | <span class="status-dot planned"></span> Planned |
-| 02 | CS Core | DSA, OS, DBMS, Networks, COA, TOC | Weeks 1–8 | <span class="status-dot planned"></span> Planned |
-| 03 | Programming | C, Java, Python, PHP, JavaScript | Weeks 1–8 | <span class="status-dot planned"></span> Planned |
-| 04 | Web Development | Frontend, Backend, Full-Stack | Weeks 9–16 | <span class="status-dot planned"></span> Planned |
-| 05 | AI & ML | Python, ML, Deep Learning, AI Projects | Weeks 9–16 | <span class="status-dot planned"></span> Planned |
-| 06 | DevOps | Git, Docker, CI/CD, Cloud, IaC | Weeks 17–20 | <span class="status-dot planned"></span> Planned |
-| 07 | Projects | Portfolio Projects (Beginner → Capstone) | Ongoing | <span class="status-dot planned"></span> Planned |
-| 08 | Interview Prep | DSA, System Design, Behavioral, Mock | Weeks 21–24 | <span class="status-dot planned"></span> Planned |
-| 09 | Resources | Books, Courses, Tools, Communities | Ongoing | <span class="status-dot planned"></span> Planned |
-| 10 | System Design | Scalability, Microservices, Case Studies | Weeks 17–20 | <span class="status-dot planned"></span> Planned |
-| 11 | Cyber Security | Ethical Hacking, Network Security, 30 Modules | Weeks 17–24 | <span class="status-dot planned"></span> Planned |
-| 12 | 90-Day Plan | Daily Roadmap, Placement Ready in 90 Days | Ongoing | <span class="status-dot planned"></span> Planned |
+| # | Module | Coverage | Status |
+|---|--------|----------|--------|
+| 01 | Meta Skills | How to Learn, Progress Tracking | <span class="status-dot planned"></span> Planned |
+| 02 | CS Core | DSA, OS, DBMS, Networks, COA, TOC | <span class="status-dot planned"></span> Planned |
+| 03 | Programming | C, Java, Python, PHP, JavaScript | <span class="status-dot planned"></span> Planned |
+| 04 | Web Development | Frontend, Backend, Full-Stack | <span class="status-dot planned"></span> Planned |
+| 05 | AI & ML | Python, ML, Deep Learning, AI Projects | <span class="status-dot planned"></span> Planned |
+| 06 | DevOps | Git, Docker, CI/CD, Cloud, IaC | <span class="status-dot planned"></span> Planned |
+| 07 | Projects | Portfolio Projects (Beginner → Capstone) | <span class="status-dot planned"></span> Planned |
+| 08 | Interview Prep | DSA, System Design, Behavioral, Mock | <span class="status-dot planned"></span> Planned |
+| 09 | Resources | Books, Courses, Tools, Communities | <span class="status-dot planned"></span> Planned |
+| 10 | System Design | Scalability, Microservices, Case Studies | <span class="status-dot planned"></span> Planned |
+| 11 | Cyber Security | Ethical Hacking, Network Security, 30 Modules | <span class="status-dot planned"></span> Planned |
+| 12 | 90-Day Plan | Daily Roadmap, Placement Ready in 90 Days | <span class="status-dot planned"></span> Planned |
 
 ## Recommended Path
 
 <div class="grid-cards">
   <div class="grid-card">
     <h3>Phase 1 · Foundation</h3>
-    <p>Month 1–2: DSA basics, pick a language, build 3 mini projects</p>
-    <div class="card-meta">Weeks 1–8 · 60 problems</div>
+    <p>DSA basics, pick a language, build 3 mini projects</p>
+    <div class="card-meta">~60 problems</div>
   </div>
   <div class="grid-card">
     <h3>Phase 2 · Core CS</h3>
-    <p>Month 3–4: OS, DBMS, Networks, Web Dev, AI/ML fundamentals</p>
-    <div class="card-meta">Weeks 9–16 · 20 projects</div>
+    <p>OS, DBMS, Networks, Web Dev, AI/ML fundamentals</p>
+    <div class="card-meta">~20 projects</div>
   </div>
   <div class="grid-card">
     <h3>Phase 3 · Advanced</h3>
-    <p>Month 5: System Design, DevOps, advanced DSA</p>
-    <div class="card-meta">Weeks 17–20 · 5 system designs</div>
+    <p>System Design, DevOps, advanced DSA</p>
+    <div class="card-meta">5 system designs</div>
   </div>
   <div class="grid-card">
     <h3>Phase 4 · Interview</h3>
-    <p>Month 6: Mock interviews, behavioral prep, company-specific</p>
-    <div class="card-meta">Weeks 21–24 · 20 mocks</div>
+    <p>Mock interviews, behavioral prep, company-specific</p>
+    <div class="card-meta">20 mocks</div>
   </div>
 </div>
 

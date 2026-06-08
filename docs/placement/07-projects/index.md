@@ -12,10 +12,10 @@
 ## 🗺️ Project Progression
 
 <div class="roadmap-path">
-  <div class="roadmap-step" data-step="1">Beginner <small>Month 1–3</small></div>
-  <div class="roadmap-step" data-step="2">Intermediate <small>Month 4–6</small></div>
-  <div class="roadmap-step" data-step="3">Advanced <small>Month 7–9</small></div>
-  <div class="roadmap-step" data-step="4">Expert <small>Month 10–12</small></div>
+  <div class="roadmap-step" data-step="1">Beginner</div>
+  <div class="roadmap-step" data-step="2">Intermediate</div>
+  <div class="roadmap-step" data-step="3">Advanced</div>
+  <div class="roadmap-step" data-step="4">Expert</div>
   <div class="roadmap-step" data-step="5">Capstone</div>
 </div>
 
@@ -28,7 +28,7 @@
 
 <div class="phase-section">
   <div class="phase-header">
-    <h2>Beginner Projects <span class="tag tag-hot">Month 1–3</span></h2>
+    <h2>Beginner Projects</h2>
     <p>Foundation build karo — HTML, CSS, JS, PHP ke saath solid hands-on practice.</p>
   </div>
   <div class="phase-body">
@@ -42,10 +42,61 @@
     <span class="tag">JavaScript</span>
     <span class="tag">PHP</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐☆☆☆</span> <span class="tag">2–3 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐☆☆☆</span></p>
   <p>Responsive portfolio with About, Skills, Projects, Contact sections. Contact form with PHP backend, smooth scrolling, mobile-first approach, CSS animations and transitions.</p>
   <p><strong>Learning Outcomes:</strong> HTML5 semantic elements, advanced CSS styling, JavaScript DOM manipulation, basic PHP form handling, responsive design principles.</p>
-  <p><strong>Implementation Steps:</strong> Week 1 — HTML structure + CSS styling. Week 2 — JS interactivity + animations. Week 3 — PHP contact form + deployment.</p>
+  <p><strong>Implementation Steps:</strong> HTML structure + CSS styling → JS interactivity + animations → PHP contact form + deployment.</p>
+
+```html
+<!-- Portfolio — responsive grid with CSS Grid/Flexbox -->
+<section class="projects">
+  <div class="projects-grid">
+    <div class="project-card" data-category="web">
+      <img src="project1.jpg" alt="Project" loading="lazy">
+      <h3>E-Commerce Platform</h3>
+      <div class="project-links">
+        <a href="#" class="btn">Live Demo</a>
+        <a href="#" class="btn btn-outline">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+```css
+/* CSS Grid layout — responsive without media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+```
+
+```php
+<?php
+// Contact form handler — sanitization + validation + email
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+    $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
+
+    if ($name && $email && $message) {
+        mail("you@example.com", "Portfolio Contact", $message, "From: $email");
+        $response = ['status' => 'success', 'message' => 'Thanks!'];
+    } else {
+        $response = ['status' => 'error', 'message' => 'Invalid input'];
+    }
+    header('Content-Type: application/json');
+    echo json_encode($response);
+}
+```
 </div>
 
 <div class="topic-card">
@@ -54,7 +105,7 @@
     <span class="tag">Vanilla JS</span>
     <span class="tag">LocalStorage</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐☆☆☆</span> <span class="tag">2 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐☆☆☆</span></p>
   <p>Add, edit, delete tasks with mark-as-complete. Filter tasks (all, active, completed), data persistence with localStorage, drag-and-drop, CSS animations.</p>
   <p><strong>Learning Outcomes:</strong> JS array methods and manipulation, event handling and delegation, browser storage APIs.</p>
 </div>
@@ -66,7 +117,7 @@
     <span class="tag">REST API</span>
     <span class="tag">Chart.js</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐⭐☆☆</span> <span class="tag">2 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐⭐☆☆</span></p>
   <p>Current weather display + 5-day forecast, search by city name, geolocation integration, weather charts and graphs, error handling and user feedback.</p>
   <p><strong>Learning Outcomes:</strong> API integration, async JavaScript, data visualization, browser geolocation API.</p>
 </div>
@@ -79,7 +130,7 @@
 
 <div class="phase-section">
   <div class="phase-header">
-    <h2>Intermediate Projects <span class="tag tag-hot">Month 4–6</span></h2>
+    <h2>Intermediate Projects</h2>
     <p>Database-driven applications, authentication, full-stack patterns.</p>
   </div>
   <div class="phase-body">
@@ -93,10 +144,10 @@
     <span class="tag">JavaScript</span>
     <span class="tag">Bootstrap</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐⭐☆☆</span> <span class="tag">3–4 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐⭐☆☆</span></p>
   <p>Product catalog with categories, shopping cart, user registration and login, order management, admin panel for product management.</p>
   <p><strong>Learning Outcomes:</strong> Database design and normalization, PHP sessions and authentication, CRUD operations, SQL queries and relationships, security best practices.</p>
-  <p><strong>Database Schema:</strong></p>
+  <p><strong>Complete Database Schema:</strong></p>
   ```sql
   CREATE TABLE users (
       id INT PRIMARY KEY AUTO_INCREMENT,
@@ -105,8 +156,56 @@
       password VARCHAR(255) NOT NULL,
       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   );
-  -- Categories, Products, Orders, Order_items tables bhi similar
+
+  CREATE TABLE categories (
+      id INT PRIMARY KEY AUTO_INCREMENT,
+      name VARCHAR(50) NOT NULL,
+      description TEXT
+  );
+
+  CREATE TABLE products (
+      id INT PRIMARY KEY AUTO_INCREMENT,
+      name VARCHAR(100) NOT NULL,
+      description TEXT,
+      price DECIMAL(10,2) NOT NULL,
+      stock_quantity INT DEFAULT 0,
+      category_id INT,
+      image_url VARCHAR(255),
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (category_id) REFERENCES categories(id)
+  );
+
+  CREATE TABLE orders (
+      id INT PRIMARY KEY AUTO_INCREMENT,
+      user_id INT NOT NULL,
+      total_amount DECIMAL(10,2) NOT NULL,
+      status ENUM('pending','processing','shipped','delivered') DEFAULT 'pending',
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+      FOREIGN KEY (user_id) REFERENCES users(id)
+  );
+
+  CREATE TABLE order_items (
+      id INT PRIMARY KEY AUTO_INCREMENT,
+      order_id INT NOT NULL,
+      product_id INT NOT NULL,
+      quantity INT NOT NULL,
+      price DECIMAL(10,2) NOT NULL,
+      FOREIGN KEY (order_id) REFERENCES orders(id),
+      FOREIGN KEY (product_id) REFERENCES products(id)
+  );
   ```
+
+**API Routes Pattern:**
+```
+GET    /api/products          → List all products
+GET    /api/products/{id}     → Single product detail
+POST   /api/cart/add          → Add item to cart
+GET    /api/cart              → View cart
+POST   /api/orders            → Place order
+GET    /api/orders/{id}       → Order status
+POST   /api/auth/login        → User login
+POST   /api/auth/register     → User registration
+```
 </div>
 
 <div class="topic-card">
@@ -116,9 +215,54 @@
     <span class="tag">MySQL</span>
     <span class="tag">Vue.js</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐⭐⭐☆</span> <span class="tag">4 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐⭐⭐☆</span></p>
   <p>Article creation with rich text editor, category and tag management, user authentication and roles, comment system, search functionality, SEO optimization.</p>
   <p><strong>Learning Outcomes:</strong> Laravel framework mastery, Eloquent ORM relationships, authentication and authorization, frontend-backend integration.</p>
+
+**Eloquent Relationships:**
+```php
+// Post model — belongsTo + morphMany + belongsToMany
+class Post extends Model {
+    public function user() {
+        return $this->belongsTo(User::class);
+    }
+    public function comments() {
+        return $this->morphMany(Comment::class, 'commentable');
+    }
+    public function tags() {
+        return $this->belongsToMany(Tag::class);
+    }
+    public function category() {
+        return $this->belongsTo(Category::class);
+    }
+}
+
+// API Routes
+Route::apiResource('posts', PostController::class);
+Route::post('posts/{post}/comments', [CommentController::class, 'store']);
+Route::get('posts/{post}/seo', [SeoController::class, 'analyze']);
+```
+
+**Controller Pattern:**
+```php
+class PostController extends Controller {
+    public function index() {
+        return Post::with(['user', 'category', 'tags'])
+            ->latest()
+            ->paginate(15);
+    }
+
+    public function store(StorePostRequest $request) {
+        $post = auth()->user()->posts()->create($request->validated());
+
+        if ($request->has('tags')) {
+            $post->tags()->sync($request->tags);
+        }
+
+        return PostResource::make($post);
+    }
+}
+```
 </div>
 
 <div class="topic-card">
@@ -129,9 +273,58 @@
     <span class="tag">MongoDB</span>
     <span class="tag">React</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐⭐⭐☆</span> <span class="tag">4 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐⭐⭐☆</span></p>
   <p>User profiles and friend system, post creation and interaction, real-time messaging, image upload and processing, activity feeds.</p>
   <p><strong>Learning Outcomes:</strong> Full-stack JavaScript development, NoSQL database design, real-time communication (WebSockets), RESTful API design.</p>
+
+```javascript
+// Express API with JWT auth
+const express = require('express');
+const jwt = require('jsonwebtoken');
+const mongoose = require('mongoose');
+
+// User schema
+const userSchema = new mongoose.Schema({
+    username: { type: String, unique: true, required: true },
+    email:    { type: String, unique: true, required: true },
+    password: { type: String, required: true },
+    friends:  [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+    avatar:   { type: String, default: 'default.png' }
+}, { timestamps: true });
+
+// Auth middleware
+const auth = (req, res, next) => {
+    const token = req.header('Authorization')?.replace('Bearer ', '');
+    if (!token) return res.status(401).json({ error: 'Access denied' });
+    try {
+        req.user = jwt.verify(token, process.env.JWT_SECRET);
+        next();
+    } catch (e) {
+        res.status(401).json({ error: 'Invalid token' });
+    }
+};
+
+// Post route — with auth middleware
+app.post('/api/posts', auth, async (req, res) => {
+    const post = new Post({ ...req.body, user: req.user.id });
+    await post.save();
+    res.status(201).json(post);
+});
+```
+
+**API Endpoints:**
+```
+POST   /api/auth/register    → Create account
+POST   /api/auth/login       → Login → JWT token
+GET    /api/users/me         → Profile
+PUT    /api/users/me         → Update profile
+GET    /api/posts            → Feed (paginated)
+POST   /api/posts            → Create post
+POST   /api/posts/{id}/like  → Toggle like
+POST   /api/friends/request  → Send friend request
+GET    /api/friends          → Friend list
+WS     /ws/chat              → Real-time messaging
+```
 </div>
 
 <div class="topic-card">
@@ -154,7 +347,7 @@
 
 <div class="phase-section">
   <div class="phase-header">
-    <h2>Advanced Projects <span class="tag tag-hot">Month 7–9</span></h2>
+    <h2>Advanced Projects</h2>
     <p>Complex architecture, real-time systems, payments, caching, and deployment.</p>
   </div>
   <div class="phase-body">
@@ -168,7 +361,7 @@
     <span class="tag">MySQL</span>
     <span class="tag">Redis</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐⭐⭐⭐</span> <span class="tag">6 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐⭐⭐⭐</span></p>
   <p>Course creation and management, video streaming and progress tracking, quiz and assessment system, certificate generation, payment integration (Stripe), analytics dashboard.</p>
   <p><strong>Learning Outcomes:</strong> Complex system architecture, video processing and streaming, payment gateway integration, caching strategies with Redis.</p>
   <p><strong>Architecture:</strong></p>
@@ -185,7 +378,7 @@
     <span class="tag">React</span>
     <span class="tag">MongoDB</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐⭐⭐☆</span> <span class="tag">4 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐⭐⭐☆</span></p>
   <p>Real-time messaging, group chat rooms, file sharing, voice/video calling (WebRTC), message encryption, mobile responsive.</p>
   <p><strong>Learning Outcomes:</strong> WebSocket programming, real-time communication protocols, WebRTC for peer-to-peer, end-to-end encryption.</p>
 </div>
@@ -199,7 +392,7 @@
     <span class="tag">Chart.js</span>
     <span class="tag">Docker</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐⭐⭐☆</span> <span class="tag">5 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐⭐⭐☆</span></p>
   <p>Expense categorization and tracking, budget planning and alerts, financial analytics and reports, multi-currency support, data export functionality.</p>
   <p><strong>Learning Outcomes:</strong> Django framework proficiency, data analysis and visualization, RESTful API development, containerization with Docker.</p>
 </div>
@@ -212,7 +405,7 @@
 
 <div class="phase-section">
   <div class="phase-header">
-    <h2>Expert-Level Projects <span class="tag tag-hot">Month 10–12</span></h2>
+    <h2>Expert-Level Projects</h2>
     <p>Microservices, ML integration, distributed systems, DevOps.</p>
   </div>
   <div class="phase-body">
@@ -227,7 +420,7 @@
     <span class="tag">React</span>
     <span class="tag">PostgreSQL</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐⭐⭐⭐</span> <span class="tag">8 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐⭐⭐⭐</span></p>
   <p><strong>Architecture:</strong></p>
   ```
   Frontend → API Gateway → Microservices (User, Product, Order, Payment, Notification, Inventory) → Databases (PostgreSQL, MongoDB, Redis)
@@ -245,7 +438,7 @@
     <span class="tag">React</span>
     <span class="tag">PostgreSQL</span>
   </p>
-  <p><span class="tag tag-star">⭐⭐⭐⭐⭐</span> <span class="tag">6 weeks</span></p>
+  <p><span class="tag tag-star">⭐⭐⭐⭐⭐</span></p>
   <p>AI content generation (GPT-2 based), automatic content categorization, sentiment analysis (TextBlob), SEO optimization suggestions, image recognition and tagging (YOLO), multi-language support.</p>
   <p><strong>AI Components:</strong></p>
   ```python
@@ -456,6 +649,121 @@
   <span class="tip-badge">💡 RESUME TIP</span>
   Har project ke liye <strong>metrics likho</strong>. "Built a URL shortener" nahi — "Built a distributed URL shortener handling <strong>10K+ QPS</strong> with 99.9% uptime using Laravel + Redis caching, <strong>60% latency reduction</strong>".
 </div>
+
+### Implementation Patterns — FAANG-Level
+
+```php
+// URL Shortener — Base62 encoding + Redis cache
+class UrlShortenerService {
+    public function __construct(
+        private readonly Redis $redis,
+        private readonly UrlRepository $repository
+    ) {}
+
+    public function encode(string $originalUrl): string {
+        $hash = $this->repository->findHashByUrl($originalUrl);
+        if ($hash) return $hash;
+
+        $id = $this->repository->nextId();
+        $hash = $this->base62Encode($id);
+
+        // Cache aggressively — 60% latency reduction ka source
+        $this->redis->setex("url:$hash", 86400, $originalUrl);
+        $this->repository->save(['id' => $id, 'hash' => $hash, 'url' => $originalUrl]);
+
+        return $hash;
+    }
+
+    public function decode(string $hash): ?string {
+        // Redis first, DB second — cache-aside pattern
+        return $this->redis->get("url:$hash")
+            ?? $this->repository->findUrlByHash($hash);
+    }
+
+    private function base62Encode(int $id): string {
+        $chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $hash = '';
+        while ($id > 0) {
+            $hash = $chars[$id % 62] . $hash;
+            $id = intdiv($id, 62);
+        }
+        return $hash ?: '0';
+    }
+}
+```
+
+```php
+// Rate Limiting Middleware — prevent abuse, handle 10K QPS
+class RateLimitMiddleware {
+    public function handle(Request $request, Closure $next, int $maxAttempts = 60): Response {
+        $key = 'rate_limit:' . $request->ip();
+
+        $current = (int) Cache::increment($key);
+
+        if ($current === 1) {
+            Cache::expire($key, 60); // 1-minute window
+        }
+
+        if ($current > $maxAttempts) {
+            return response()->json([
+                'error' => 'Too many requests',
+                'retry_after' => Cache::ttl($key)
+            ], 429);
+        }
+
+        return $next($request);
+    }
+}
+```
+
+```javascript
+// Collaborative Editing — CRDT-based conflict resolution
+const { createDocument, modifyText } = require('automerge');
+
+class CollaborativeEditor {
+    constructor(docId) {
+        this.doc = createDocument();
+        this.docId = docId;
+        this.clients = new Map();
+    }
+
+    applyOperation(clientId, operation) {
+        // CRDT ensures convergence without central coordinator
+        this.doc = modifyText(this.doc, operation.path, (text) => {
+            text.insertAt(operation.pos, ...operation.chars);
+        });
+
+        // Broadcast to all other clients
+        this.broadcast(clientId, operation);
+    }
+}
+```
+
+### System Design Patterns for FAANG Projects
+
+| Pattern | Description | Project |
+|---------|-------------|---------|
+| **CQRS** | Separate read/write models | Analytics Dashboard |
+| **Event Sourcing** | State changes as events | Order Processing |
+| **Cache-Aside** | Lazy loading + TTL | URL Shortener |
+| **Pub/Sub** | Async event distribution | Real-time Chat |
+| **Saga** | Distributed transaction | Microservices E-commerce |
+| **Bulkhead** | Isolate failures per service | Microservices |
+| **Circuit Breaker** | Fail fast on service down | API Gateway |
+| **Rate Limiting** | Token bucket / sliding window | All public APIs |
+
+### Resume Metrics Template
+
+```
+• Built a distributed URL shortener handling 10K+ QPS with 99.9% uptime
+• Reduced API response time by 60% via Redis caching and query optimization
+• Architected microservices platform with 6 services, handling 50K+ daily users
+• Implemented real-time chat supporting 1K+ concurrent connections via WebSockets
+• Designed database schema supporting 100K+ products with <50ms query time
+• Deployed CI/CD pipeline reducing deployment time from 2hrs to 15mins
+• Achieved 95% test coverage with automated testing suite
+• Containerized application reducing environment setup time by 80%
+```
 
 </div>
 </div>

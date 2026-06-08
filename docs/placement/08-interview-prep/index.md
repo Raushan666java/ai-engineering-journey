@@ -18,27 +18,27 @@
 <div class="roadmap-path">
   <div class="roadmap-step" data-step="1">
     <h4>Foundation</h4>
-    <p>DSA patterns + communication — Month 9-10</p>
+    <p>DSA patterns + communication</p>
   </div>
   <div class="roadmap-step" data-step="2">
     <h4>Technical Deep Dive</h4>
-    <p>Topic-wise practice + PHP-Laravel — Month 10-11</p>
+    <p>Topic-wise practice + PHP-Laravel</p>
   </div>
   <div class="roadmap-step" data-step="3">
     <h4>System Design</h4>
-    <p>Case studies + frameworks — Month 11-12</p>
+    <p>Case studies + frameworks</p>
   </div>
   <div class="roadmap-step" data-step="4">
     <h4>Behavioral</h4>
-    <p>STAR stories + leadership — Month 11-12</p>
+    <p>STAR stories + leadership</p>
   </div>
   <div class="roadmap-step" data-step="5">
     <h4>Company-Specific</h4>
-    <p>FAANG / Product / Startup — Month 11-12</p>
+    <p>FAANG / Product / Startup</p>
   </div>
   <div class="roadmap-step" data-step="6">
     <h4>Mock Interviews</h4>
-    <p>Self → Peer → Senior → Real — Month 12</p>
+    <p>Self → Peer → Senior → Real</p>
   </div>
 </div>
 
@@ -47,7 +47,6 @@
     <span class="phase-num">01</span>
     <div>
       <h3>Technical Interviews — Foundation Building</h3>
-      <p>Month 9-10</p>
     </div>
   </div>
   <div class="phase-body">
@@ -87,7 +86,6 @@
     <span class="phase-num">02</span>
     <div>
       <h3>Technical Deep Dive</h3>
-      <p>Month 10-11</p>
     </div>
   </div>
   <div class="phase-body">
@@ -146,7 +144,125 @@ def lengthOfLongestSubstring(s):
         char_index[char] = right
         max_length = max(max_length, right - left + 1)
     return max_length
+
+# 3Sum — Two Pointers
+def three_sum(nums):
+    nums.sort()
+    result = []
+    for i in range(len(nums) - 2):
+        if i > 0 and nums[i] == nums[i - 1]: continue
+        left, right = i + 1, len(nums) - 1
+        while left < right:
+            total = nums[i] + nums[left] + nums[right]
+            if total < 0: left += 1
+            elif total > 0: right -= 1
+            else:
+                result.append([nums[i], nums[left], nums[right]])
+                while left < right and nums[left] == nums[left + 1]: left += 1
+                while left < right and nums[right] == nums[right - 1]: right -= 1
+                left += 1; right -= 1
+    return result
 ```
+
+#### Trees & Graphs — Key Code Patterns
+
+```python
+# Binary Tree BFS (Level Order)
+from collections import deque
+
+def level_order(root):
+    if not root: return []
+    result, queue = [], deque([root])
+    while queue:
+        level = []
+        for _ in range(len(queue)):
+            node = queue.popleft()
+            level.append(node.val)
+            if node.left: queue.append(node.left)
+            if node.right: queue.append(node.right)
+        result.append(level)
+    return result
+
+# Lowest Common Ancestor (BST)
+def lowest_common_ancestor(root, p, q):
+    if p.val < root.val and q.val < root.val:
+        return lowest_common_ancestor(root.left, p, q)
+    if p.val > root.val and q.val > root.val:
+        return lowest_common_ancestor(root.right, p, q)
+    return root
+
+# Number of Islands — DFS
+def num_islands(grid):
+    def dfs(i, j):
+        if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == '0':
+            return
+        grid[i][j] = '0'
+        dfs(i + 1, j); dfs(i - 1, j)
+        dfs(i, j + 1); dfs(i, j - 1)
+
+    count = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            if grid[i][j] == '1':
+                dfs(i, j)
+                count += 1
+    return count
+```
+
+#### Dynamic Programming — Pattern Templates
+
+```python
+# 1D DP — Fibonacci style
+def fib(n):
+    if n <= 1: return n
+    dp = [0] * (n + 1)
+    dp[1] = 1
+    for i in range(2, n + 1):
+        dp[i] = dp[i - 1] + dp[i - 2]
+    return dp[n]
+
+# 2D DP — Longest Common Subsequence
+def longest_common_subsequence(text1, text2):
+    m, n = len(text1), len(text2)
+    dp = [[0] * (n + 1) for _ in range(m + 1)]
+    for i in range(1, m + 1):
+        for j in range(1, n + 1):
+            if text1[i - 1] == text2[j - 1]:
+                dp[i][j] = dp[i - 1][j - 1] + 1
+            else:
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])
+    return dp[m][n]
+
+# Knapsack 0/1
+def knapsack(weights, values, capacity):
+    n = len(weights)
+    dp = [[0] * (capacity + 1) for _ in range(n + 1)]
+    for i in range(1, n + 1):
+        for w in range(capacity + 1):
+            if weights[i - 1] <= w:
+                dp[i][w] = max(dp[i - 1][w],
+                               dp[i - 1][w - weights[i - 1]] + values[i - 1])
+            else:
+                dp[i][w] = dp[i - 1][w]
+    return dp[n][capacity]
+```
+
+#### DSA — Quick Reference Cheat Sheet
+
+| Pattern | When to Use | Time/Space |
+|---------|-------------|------------|
+| **Two Pointers** | Sorted array, pair sum | O(n), O(1) |
+| **Sliding Window** | Subarray/substring, contiguous | O(n), O(k) |
+| **Fast & Slow** | Cycle detection, middle node | O(n), O(1) |
+| **Merge Intervals** | Overlap, meeting rooms | O(n log n), O(n) |
+| **Cyclic Sort** | 1-n range, missing numbers | O(n), O(1) |
+| **In-place Reversal** | Reverse linked list | O(n), O(1) |
+| **BFS** | Shortest path, level order | O(V+E), O(V) |
+| **DFS** | All paths, connected components | O(V+E), O(V) |
+| **Binary Search** | Sorted array, search space | O(log n), O(1) |
+| **Top K elements** | K largest/smallest, Heap | O(n log k), O(k) |
+| **Backtracking** | Permutations, subsets, combinations | O(n!), O(n) |
+| **DP** | Optimal substructure, overlapping | O(n²), O(n²) |
 
 <table class="table-dash">
   <thead>
@@ -184,6 +300,96 @@ Part - 6.md           # Final summary
 7. SOLID principles with Laravel examples
 8. Dependency Injection in Laravel
 
+**PHP-Laravel Code Patterns:**
+```php
+// Service Provider registration
+class AppServiceProvider extends ServiceProvider {
+    public function register(): void {
+        $this->app->bind(UserRepositoryInterface::class, UserRepository::class);
+        $this->app->singleton(PaymentGateway::class, function ($app) {
+            return new StripePaymentGateway(config('services.stripe.key'));
+        });
+    }
+}
+
+// Eloquent N+1 fix — Eager Loading
+// ❌ Bad: N+1 queries
+$posts = Post::all();
+foreach ($posts as $post) {
+    echo $post->user->name;  // N queries for N posts
+}
+// ✅ Good: 2 queries total
+$posts = Post::with('user', 'comments.author')->get();
+
+// Queue job — async processing
+class ProcessPayment implements ShouldQueue {
+    use Queueable;
+    public function handle(PaymentService $service): void {
+        $service->charge($this->order);
+    }
+}
+
+// Custom Artisan Command
+class GenerateReport extends Command {
+    protected $signature = 'report:generate {type} {--force}';
+    public function handle(): int {
+        $this->info("Generating {$this->argument('type')} report...");
+        // ... business logic
+        return Command::SUCCESS;
+    }
+}
+```
+
+### SQL Interview Questions
+
+```sql
+-- Second highest salary — LIMIT/OFFSET vs subquery
+SELECT DISTINCT salary
+FROM employees
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+
+-- Department-wise max salary with employee details
+SELECT d.name AS department, e.name AS employee, e.salary
+FROM employees e
+JOIN departments d ON e.department_id = d.id
+WHERE e.salary = (
+    SELECT MAX(salary) FROM employees WHERE department_id = e.department_id
+);
+
+-- Employees with no manager (self-join)
+SELECT e1.name AS employee
+FROM employees e1
+LEFT JOIN employees e2 ON e1.manager_id = e2.id
+WHERE e2.id IS NULL;
+
+-- Running total — window functions
+SELECT date, amount,
+       SUM(amount) OVER (ORDER BY date) AS running_total
+FROM sales;
+
+-- Find duplicates by email
+SELECT email, COUNT(*)
+FROM users
+GROUP BY email
+HAVING COUNT(*) > 1;
+
+-- Nth highest salary
+SELECT DISTINCT salary
+FROM employees e1
+WHERE N = (SELECT COUNT(DISTINCT salary) FROM employees e2 WHERE e2.salary >= e1.salary);
+```
+
+**SQL Topics for Interview:**
+- Joins (INNER, LEFT, RIGHT, CROSS, SELF)
+- Window functions (ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD)
+- GROUP BY + HAVING vs WHERE
+- Indexes (Clustered vs Non-clustered, Composite)
+- Normalization (1NF, 2NF, 3NF) vs Denormalization
+- ACID properties
+- Query optimization (EXPLAIN, index usage, slow queries)
+- Transactions + Isolation Levels
+
   </div>
 </div>
 
@@ -212,7 +418,7 @@ Detailed in <code>docs/placement/10-system-design/</code>. Key topics:
 5. **Twitter** — Tweet timeline, fan-out pattern
 
 From <code>10-System-design/</code>:
-- Weekly structure (10 weeks, 70+ days)
+- Structured weekly plan
 - 15+ case studies
 - 50+ practice problems
 
@@ -484,11 +690,11 @@ Google "Googleyness" round mein ye check karte hain:
 
 ## Mock Interview Schedule
 
-```markdown
-Week 1-2: Self-practice (record yourself, Pramp/ interviewing.io)
-Week 3-4: Peer mock interviews (2-3 per week)
-Week 5-6: Senior engineer mock (1-2 per week, get real feedback)
-Week 7-8: Real interviews start
+```
+1. Self-practice (record yourself, Pramp/ interviewing.io)
+2. Peer mock interviews
+3. Senior engineer mock (get real feedback)
+4. Real interviews start
 ```
 
 ### Feedback Template
@@ -502,6 +708,45 @@ Week 7-8: Real interviews start
 - Areas to improve:
 - What went well:
 ```
+
+### OS & Networking — Interview Quick Reference
+
+| Concept | Key Points |
+|---------|------------|
+| **Process vs Thread** | Process = independent memory, Thread = shared memory |
+| **Deadlock** | 4 conditions: Mutual exclusion, Hold & wait, No preemption, Circular wait |
+| **Context Switch** | OS saves/restores process state — expensive operation |
+| **Virtual Memory** | Paging, Page fault, LRU/FIFO replacement |
+| **TCP vs UDP** | TCP: reliable, ordered, connection-oriented. UDP: fast, no guarantee |
+| **HTTP/1.1 vs HTTP/2** | HTTP/2: multiplexing, server push, header compression |
+| **DNS** | Recursive vs Iterative, TTL, caching layers |
+| **OSI Model** | 7 layers: Physical → Data Link → Network → Transport → Session → Presentation → Application |
+| **Load Balancer** | Round-robin, Least connections, IP hash |
+| **CDN** | Edge caching, origin pull, DDoS protection |
+
+### Day Before Interview Checklist
+
+```
+□ Company research refresh (product, culture, recent news)
+□ 2 STAR stories loud practice (record yourself)
+□ 5 DSA problems quick solve (warmup, not new topics)
+□ System design framework revision
+□ Computer setup check (camera, mic, IDE, stable internet)
+□ Background check (clean, well-lit, quiet)
+□ Glassdoor recent interview experience read
+□ Notification silence mode ON
+□ Sleep on time (7-8 hours minimum)
+```
+
+### During Interview — Pro Tips
+
+1. **First 2 minutes matter** — smile, confident greeting, thank interviewer
+2. **Clarify before coding** — repeat the problem, ask about constraints
+3. **Think out loud** — interviewer cannot read your mind
+4. **Stuck?** — don't freeze, talk about what you're thinking, ask for hint
+5. **No "I don't know"** — say "I haven't encountered this exactly, but I'd approach it by..."
+6. **Code review yourself** — after writing, manually run through your code
+7. **Ask questions at end** — show genuine interest (team culture, tech stack, growth)
 
 ## Study Tips (Hinglish)
 
@@ -543,7 +788,7 @@ Week 7-8: Real interviews start
 <div class="tip-banner">
   <span class="tip-badge">🤝</span>
   <div>
-    <strong>Peer Mock Groups:</strong> 3-4 friends ka group banao. Weekly mocks lo. Cross feedback se confidence badhega.
+    <strong>Peer Mock Groups:</strong> 3-4 friends ka group banao. Regular mocks lo. Cross feedback se confidence badhega.
   </div>
 </div>
 
@@ -553,7 +798,7 @@ Week 7-8: Real interviews start
 - `03-Programming/01-DSA/` — DSA problems
 - `php-laravel-interview-questions-answers-part-1-main/` (6 parts)
 - `Data Structure and Algorithms Handwritten Notes.pdf`
-- `10-System-design/` — System design (10 weeks)
+- `10-System-design/` — System design
 
 ## Checklist
 

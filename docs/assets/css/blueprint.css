@@ -1,64 +1,66 @@
-/* BLUEPRINT THEME — Monochrome v4 */
+/* BLUEPRINT THEME v5 — Color + Inter */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap');
 
 /* === CSS CUSTOM PROPERTIES — Dark (default) === */
 :root, [data-theme="dark"] {
-  --bg: #0a0a0a;
-  --bg-surface: #141414;
-  --bg-surface-hover: #1e1e1e;
-  --bg-elevated: #242424;
-  --ink: #ebebeb;
-  --ink-soft: #999;
-  --ink-mute: #666;
-  --blueprint: #ebebeb;
-  --blueprint-tint: rgba(235, 235, 235, 0.05);
-  --blueprint-tint-strong: rgba(235, 235, 235, 0.1);
-  --accent-green: #bbb;
-  --accent-amber: #bbb;
-  --accent-rose: #bbb;
-  --accent-purple: #bbb;
-  --accent-teal: #bbb;
-  --rule: #ebebeb;
-  --rule-soft: rgba(235, 235, 235, 0.1);
-  --code-bg: #181818;
+  --bg: #09090b;
+  --bg-surface: #18181b;
+  --bg-surface-hover: #27272a;
+  --bg-elevated: #3f3f46;
+  --ink: #f4f4f5;
+  --ink-soft: #a1a1aa;
+  --ink-mute: #71717a;
+  --blueprint: #60a5fa;
+  --blueprint-tint: rgba(96, 165, 250, 0.08);
+  --blueprint-tint-strong: rgba(96, 165, 250, 0.15);
+  --accent-green: #34d399;
+  --accent-amber: #fbbf24;
+  --accent-rose: #fb7185;
+  --accent-purple: #a78bfa;
+  --accent-teal: #2dd4bf;
+  --rule: #f4f4f5;
+  --rule-soft: rgba(244, 244, 245, 0.1);
+  --code-bg: #18181b;
   --shadow-hard: 3px 3px 0 var(--rule);
   --shadow-hard-lg: 5px 5px 0 var(--rule);
   --shadow-soft: 0 1px 3px rgba(0,0,0,0.3);
-  --status-complete: #bbb;
-  --status-in-progress: #ebebeb;
-  --status-planned: #444;
+  --status-complete: #34d399;
+  --status-in-progress: #60a5fa;
+  --status-planned: #52525b;
 }
 
 /* === LIGHT === */
 [data-theme="light"] {
-  --bg: #eee;
-  --bg-surface: #ddd;
-  --bg-surface-hover: #ccc;
+  --bg: #f8fafc;
+  --bg-surface: #f1f5f9;
+  --bg-surface-hover: #e2e8f0;
   --bg-elevated: #fff;
-  --ink: #111;
-  --ink-soft: #555;
-  --ink-mute: #888;
-  --blueprint: #111;
-  --blueprint-tint: rgba(17,17,17,0.05);
-  --blueprint-tint-strong: rgba(17,17,17,0.1);
-  --accent-green: #444;
-  --accent-amber: #444;
-  --accent-rose: #444;
-  --accent-purple: #444;
-  --accent-teal: #444;
-  --rule: #111;
-  --rule-soft: rgba(17,17,17,0.1);
-  --code-bg: #d5d5d5;
+  --ink: #1e293b;
+  --ink-soft: #64748b;
+  --ink-mute: #94a3b8;
+  --blueprint: #2563eb;
+  --blueprint-tint: rgba(37, 99, 235, 0.06);
+  --blueprint-tint-strong: rgba(37, 99, 235, 0.12);
+  --accent-green: #059669;
+  --accent-amber: #d97706;
+  --accent-rose: #e11d48;
+  --accent-purple: #7c3aed;
+  --accent-teal: #0d9488;
+  --rule: #1e293b;
+  --rule-soft: rgba(30, 41, 59, 0.1);
+  --code-bg: #e2e8f0;
   --shadow-hard: 3px 3px 0 var(--rule);
   --shadow-hard-lg: 5px 5px 0 var(--rule);
   --shadow-soft: 0 1px 3px rgba(0,0,0,0.06);
-  --status-complete: #444;
-  --status-in-progress: #111;
-  --status-planned: #aaa;
+  --status-complete: #059669;
+  --status-in-progress: #2563eb;
+  --status-planned: #cbd5e1;
 }
 
 /* === OVERRIDE MKDOCOLS MATERIAL THEME === */
 .md-header {
-  background: rgba(10, 10, 10, 0.94) !important;
+  background: rgba(9, 9, 11, 0.94) !important;
   backdrop-filter: blur(10px) !important;
   color: var(--ink) !important;
   box-shadow: none !important;
@@ -66,7 +68,7 @@
 }
 
 [data-theme="light"] .md-header {
-  background: rgba(238, 238, 238, 0.94) !important;
+  background: rgba(248, 250, 252, 0.94) !important;
 }
 
 .md-header__inner {
@@ -124,7 +126,7 @@
 }
 
 .md-nav__title {
-  font-family: 'VT323', monospace !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: 1.1rem !important;
   letter-spacing: 0.02em !important;
   text-transform: uppercase !important;
@@ -144,7 +146,7 @@
 
 /* === TYPOGRAPHY === */
 .md-typeset h1 {
-  font-family: 'VT323', monospace !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: clamp(2.4rem, 6vw, 4.4rem) !important;
   font-weight: 400 !important;
   letter-spacing: 0.02em !important;
@@ -156,7 +158,7 @@
 }
 
 .md-typeset h2 {
-  font-family: 'VT323', monospace !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: 1.8rem !important;
   font-weight: 400 !important;
   letter-spacing: 0.02em !important;
@@ -229,7 +231,7 @@
   border-bottom: 1px solid var(--rule-soft) !important;
   padding-bottom: 12px !important;
   margin-bottom: 16px !important;
-  font-family: 'VT323', monospace !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: 1.4rem !important;
   letter-spacing: 0.02em !important;
   text-transform: uppercase !important;
@@ -317,7 +319,7 @@
   box-shadow: var(--shadow-hard-lg);
 }
 .grid-card h3 {
-  font-family: 'VT323', monospace !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: 1.3rem !important;
   letter-spacing: 0.02em !important;
   text-transform: uppercase !important;
@@ -342,6 +344,7 @@
 }
 
 /* grid card accent variants */
+.grid-card-accent-blueprint { border-top-color: var(--blueprint); }
 .grid-card-accent-green { border-top-color: var(--accent-green); }
 .grid-card-accent-amber { border-top-color: var(--accent-amber); }
 .grid-card-accent-rose { border-top-color: var(--accent-rose); }
@@ -605,7 +608,7 @@ tr.today-highlight td { background: var(--bg-surface) !important; }
   background: var(--bg-surface-hover);
 }
 .topic-card h4 {
-  font-family: 'VT323', monospace !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: 1.15rem !important;
   margin: 0 0 8px 0 !important;
   text-transform: uppercase !important;

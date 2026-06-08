@@ -1,6 +1,6 @@
 # 📂 Original Placement Content
 
-> **Source**: `placement-original/Main-Course/Placement-01/` — raw, unabridged study material copied here for reference.
+> **Source**: `original/Main-Course/Placement-01/` — raw, unabridged study material copied here for reference.
 
 All original content has been organized into 12 modules below.
 

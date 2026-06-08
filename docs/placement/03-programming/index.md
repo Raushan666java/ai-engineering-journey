@@ -7,7 +7,7 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 <div class="roadmap-path">
 <div class="roadmap-step" data-step="1">**PHP + Laravel** <span class="tag tag-star">Superpower</span></div>
 <div class="roadmap-step" data-step="2">**JavaScript** <span class="tag">ES6+</span></div>
-<div class="roadmap-step" data-step="3">**Java** <span class="tag tag-hot">10-Week Mastery</span></div>
+<div class="roadmap-step" data-step="3">**Java** <span class="tag tag-hot">Complete Mastery</span></div>
 <div class="roadmap-step" data-step="4">**Python** <span class="tag">Basics</span></div>
 <div class="roadmap-step" data-step="5">**C** <span class="tag">Fundamentals</span></div>
 <div class="roadmap-step" data-step="6">**Go / Rust / TS** <span class="tag tag-hot">Future-Proof</span></div>
@@ -133,7 +133,7 @@ AJAX_Interview_Questions_and_Revision.md
 <div class="phase-section">
 <div class="phase-header">
 <span class="phase-number">03</span>
-<h2>Java <span class="tag-hot">10-Week Complete Mastery</span></h2>
+<h2>Java <span class="tag-hot">Complete Mastery</span></h2>
 </div>
 <div class="phase-body">
 
@@ -141,7 +141,7 @@ AJAX_Interview_Questions_and_Revision.md
 
 Also refer: `Main-Course/Placement-01/03-Programming/02-Java/Java_Complete_Syllabus.md` (531 lines) — FAANG-focused interview-first approach.
 
-### Week 1-2: Java Fundamentals
+### Java Fundamentals
 
 | Topic | Key Points |
 |-------|-----------|
@@ -161,7 +161,7 @@ s1.equals(s2) → true
 - Autoboxing / Unboxing of wrapper classes
 - String immutability — kyun beneficial hai?
 
-### Week 2-3: OOP Mastery
+### OOP Mastery
 
 | Concept | Real Code Pattern |
 |---------|------------------|
@@ -181,7 +181,7 @@ interface Vehicle {
 }
 ```
 
-### Week 3-4: Collections Framework
+### Collections Framework
 
 `Main-Course/Placement-01/03-Programming/02-Java/04_Collections_Framework.md`
 
@@ -197,35 +197,179 @@ Map (HashMap, LinkedHashMap, TreeMap, ConcurrentHashMap)
 - Comparable vs Comparator
 - fail-fast vs fail-safe iterators
 
-### Week 4-5: Multithreading
+### Multithreading
 
 `Main-Course/Placement-01/03-Programming/02-Java/05_Generics_Multithreading.md`
 
-- Thread creation: `extends Thread` vs `implements Runnable`
-- synchronized, volatile, atomic classes
-- ExecutorService, Callable, Future
-- Producer-Consumer pattern
+```java
+// Thread creation — extends Thread
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("Thread running: " + Thread.currentThread().getName());
+    }
+}
+new MyThread().start();
 
-### Week 5-6: Modern Java Features
+// Thread creation — implements Runnable (preferred)
+class MyTask implements Runnable {
+    public void run() {
+        System.out.println("Task in thread: " + Thread.currentThread().getName());
+    }
+}
+new Thread(new MyTask()).start();
+
+// Lambda style
+new Thread(() -> System.out.println("Lambda thread")).start();
+```
+
+**Synchronization:**
+```java
+class Counter {
+    private int count = 0;
+    public synchronized void increment() { count++; }
+    public synchronized int getCount() { return count; }
+}
+```
+
+**ExecutorService:**
+```java
+ExecutorService pool = Executors.newFixedThreadPool(5);
+pool.submit(() -> System.out.println("Task executed"));
+pool.shutdown();
+```
+
+**Producer-Consumer with BlockingQueue:**
+```java
+BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);
+// Producer
+new Thread(() -> { for (int i = 0; i < 10; i++) queue.put(i); }).start();
+// Consumer
+new Thread(() -> { for (int i = 0; i < 10; i++) System.out.println(queue.take()); }).start();
+```
+
+- Thread lifecycle: New → Runnable → Running → Blocked → Terminated
+- `volatile` keyword — visibility guarantee, no caching
+- `AtomicInteger`, `AtomicBoolean` — lock-free thread-safe operations
+- `deadlock` — circular wait prevention (lock ordering)
+- `race condition` — happens when multiple threads read/write shared data without sync
+
+### Modern Java Features
 
 `Main-Course/Placement-01/03-Programming/02-Java/06_Modern_Java_Features.md`
 
+**Lambda Expressions:**
 ```java
-// Streams & Lambda
-list.stream()
-    .filter(x -> x > 5)
-    .map(x -> x * 2)
-    .collect(Collectors.toList());
-
-// Optional — NullPointerException se bachav
-Optional<String> name = Optional.ofNullable(getName());
-name.ifPresent(System.out::println);
+// Traditional vs Lambda
+Runnable r1 = () -> System.out.println("Hello");
+Comparator<String> cmp = (a, b) -> a.compareTo(b);
+Consumer<String> printer = s -> System.out.println(s);
 ```
 
-- Stream API: map, filter, reduce, collect
-- Optional, Method References
-- Functional Interfaces (Predicate, Function, Consumer)
-- Records, Sealed Classes (Java 17+)
+**Functional Interfaces:**
+| Interface | Input | Output | Use Case |
+|-----------|-------|--------|----------|
+| `Predicate<T>` | T | boolean | Filtering |
+| `Function<T,R>` | T | R | Mapping |
+| `Consumer<T>` | T | void | Side effects |
+| `Supplier<T>` | none | T | Lazy generation |
+| `BinaryOperator<T>` | T,T | T | Reduction |
+
+**Stream API — Chaining Operations:**
+```java
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie", "Dave");
+
+// Filter + Map + Collect
+List<String> filtered = names.stream()
+    .filter(name -> name.length() > 3)
+    .map(String::toUpperCase)
+    .collect(Collectors.toList());
+
+// Grouping
+Map<Integer, List<String>> byLength = names.stream()
+    .collect(Collectors.groupingBy(String::length));
+
+// Reduce
+int totalChars = names.stream()
+    .mapToInt(String::length)
+    .sum();
+```
+
+**Optional:**
+```java
+Optional<String> name = Optional.ofNullable(getName());
+String result = name.orElse("Default");
+name.ifPresent(System.out::println);
+name.orElseThrow(() -> new RuntimeException("Name not found"));
+```
+
+**Method References:**
+```java
+// Instead of: s -> System.out.println(s)
+Consumer<String> printer = System.out::println;
+// Instead of: s -> s.length()
+Function<String, Integer> len = String::length;
+```
+
+- Records (Java 14+): `public record Point(int x, int y) {}` — immutable data carrier
+- Sealed Classes (Java 17+): `sealed class Shape permits Circle, Rectangle {}`
+- Pattern Matching (Java 16+): `if (obj instanceof String s) { System.out.println(s.length()); }`
+
+### Exception Handling
+
+```java
+// Checked vs Unchecked
+// Checked: caught at compile time — IOException, SQLException
+// Unchecked: caught at runtime — NullPointerException, ArithmeticException
+
+// Try-with-resources (Java 7+)
+try (BufferedReader br = new BufferedReader(new FileReader("file.txt"))) {
+    System.out.println(br.readLine());
+} catch (IOException e) {
+    System.out.println("Error: " + e.getMessage());
+}
+// Resource automatically closed — no finally needed
+
+// Custom exception
+public class InsufficientFundsException extends Exception {
+    public InsufficientFundsException(String msg) {
+        super(msg);
+    }
+}
+```
+
+### Generics
+
+```java
+// Generic class
+public class Box<T> {
+    private T content;
+    public void set(T content) { this.content = content; }
+    public T get() { return content; }
+}
+
+Box<String> stringBox = new Box<>();  // Type safe
+Box<Integer> intBox = new Box<>();
+
+// Bounded type parameter
+public static <T extends Number> double sum(T[] nums) {
+    double total = 0;
+    for (T n : nums) total += n.doubleValue();
+    return total;
+}
+
+// Wildcards
+List<? extends Number> readList;   // Can read Numbers (covariance)
+List<? super Integer> writeList;  // Can write Integers (contravariance)
+```
+
+**HashMap Internals — FAANG Favourite:**
+```java
+// Internal Working:
+// 1. Array of buckets (size 16) → index = hash(key) & (n-1)
+// 2. Collision → linked list (Java 7) or tree (Java 8+ if >8 nodes)
+// 3. Load factor 0.75 → resize at 75% capacity
+// 4. Resize → doubles size + rehash all entries
+```
 
 ### Interview Q&A
 
@@ -240,23 +384,84 @@ name.ifPresent(System.out::println);
 6. Java 8 features — Stream API, Lambda, Optional
 7. JVM Architecture — classloader, runtime data areas, GC algorithms
 8. Design Patterns — Singleton, Factory, Builder (PHP-Laravel mein bhi use hote hain)
+9. HashMap internal working — hashCode(), equals() contract, collision handling
+10. Immutable class creation — final class, final fields, no setters, defensive copying
 
 </div>
 </div>
 
 <div class="tip-banner">
 <span class="tip-badge">💡 STRATEGY</span>
-**Bhai ka gyaan — Hinglish Study Strategy:** Pehle **PHP+Laravel** full command kar — ye tera superpower hai. Phir **JavaScript** ke 19 modules ek hafte mein utha. **Java** ke liye 10-week plan follow kar — roz 1-2 programs likh. **Python** aur **C** ko overview level pe rakh. Har language ke **interview Q&A** zaroor padh. Lekin sabse important: **code likh bina dekhe** — confidence tab aata hai jab tera dimaag khud se logic likhne lage.
+**Bhai ka gyaan — Hinglish Study Strategy:** Pehle **PHP+Laravel** full command kar — ye tera superpower hai. Phir **JavaScript** ke 19 modules utha. **Java** ke liye regular programs likh — roz 1-2 programs. **Python** aur **C** ko overview level pe rakh. Har language ke **interview Q&A** zaroor padh. Lekin sabse important: **code likh bina dekhe** — confidence tab aata hai jab tera dimaag khud se logic likhne lage.
 </div>
 
 ## Python Basics
 
-Reference Phase 1 of main curriculum. Topics:
+`Main-Course/Placement-01/05-AI-ML/AI-ML-Complete.md` se Python section padh. AI/ML ke liye Python zaroori hai.
 
-- Data Types, Control Structures
-- Functions, Modules
-- OOP in Python
-- Key libraries: NumPy, Pandas, Matplotlib
+### Fundamentals
+
+```python
+# Data Types
+name = "Raushan"       # str
+age = 22               # int
+marks = 85.5           # float
+is_placed = True       # bool
+
+# List, Tuple, Set, Dict
+fruits = ["apple", "banana", "cherry"]
+coordinates = (10, 20)
+unique_nums = {1, 2, 3, 2, 1}  # {1, 2, 3}
+student = {"name": "Raushan", "age": 22}
+
+# List Comprehension
+squares = [x**2 for x in range(10)]
+even_squares = [x**2 for x in range(10) if x % 2 == 0]
+```
+
+### Functions & Modules
+
+```python
+# Lambda
+double = lambda x: x * 2
+list(map(lambda x: x**2, [1, 2, 3]))  # [1, 4, 9]
+
+# Generator — memory efficient
+def fibonacci(limit):
+    a, b = 0, 1
+    while a < limit:
+        yield a
+        a, b = b, a + b
+
+for num in fibonacci(100):
+    print(num)
+```
+
+### OOP in Python
+
+```python
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self._salary = salary  # protected
+
+    @property
+    def salary(self):
+        return self._salary
+
+    @salary.setter
+    def salary(self, value):
+        if value > 0:
+            self._salary = value
+
+emp = Employee("Raushan", 50000)
+print(emp.salary)  # 50000 (getter)
+```
+
+- `*args` (tuple) aur `**kwargs` (dict) — flexible function parameters
+- Decorators — `@staticmethod`, `@classmethod`, `@property`
+- Context managers — `with open("file.txt") as f:`
+- Key libraries: NumPy, Pandas, Matplotlib (detailed in AI/ML module)
 
 ## 🚀 Future-Proof Languages — Big Tech ke Favourite
 
@@ -290,10 +495,12 @@ Reference Phase 1 of main curriculum. Topics:
 
 <div class="tip-banner">
   <span class="tip-badge">💡 MINIMUM VIABLE LEARNING</span>
-  Sab kuch seekhna zaroori nahi. <strong>Go basics + concurrency</strong> — 40 hrs mein aa jayega. <strong>TypeScript types + generics</strong> — 20 hrs. Interview mein mention karna ki tu aware hai aur basics aata hai — enough hai.
+  Sab kuch seekhna zaroori nahi. <strong>Go basics + concurrency</strong> aur <strong>TypeScript types + generics</strong> basics kaafi hain. Interview mein mention karna ki tu aware hai aur basics aata hai — enough hai.
 </div>
 
 ## C Programming Basics
+
+`Main-Course/Placement-01/03-Programming/` mein C content refer karo.
 
 ```c
 // Basic structure
@@ -302,9 +509,38 @@ int main() {
     printf("Hello, Placement!");
     return 0;
 }
+
+// Pointers — C ka superpower
+int x = 10;
+int *ptr = &x;
+printf("%d\n", *ptr);  // Dereference → 10
+
+// Dynamic memory allocation
+int *arr = (int*)malloc(5 * sizeof(int));
+if (arr != NULL) {
+    for (int i = 0; i < 5; i++) arr[i] = i * 10;
+    free(arr);  // Always free!
+}
+
+// Struct — custom data type
+struct Student {
+    char name[50];
+    int age;
+    float marks;
+};
+
+// File I/O
+FILE *fp = fopen("data.txt", "r");
+if (fp != NULL) {
+    char buffer[100];
+    while (fgets(buffer, 100, fp) != NULL) {
+        printf("%s", buffer);
+    }
+    fclose(fp);
+}
 ```
 
-Topics: Pointers, Memory allocation, Structs, File I/O.
+**Interview Topics:** Pointers vs arrays, Call by reference, Memory leak prevention, `malloc` vs `calloc`, Structure padding.
 
 ## Checklist
 

@@ -469,6 +469,16 @@ tr.today-highlight {
 }
 tr.today-highlight td { background: var(--bg-surface) !important; }
 
+/* === STREAK CELEBRATION === */
+.streak-celebrate {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.82rem;
+  color: var(--blueprint);
+  padding: 6px 0;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
 /* === RESPONSIVE === */
 @media screen and (max-width: 768px) {
   .stat-row { grid-template-columns: 1fr 1fr; }

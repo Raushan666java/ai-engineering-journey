@@ -4,6 +4,18 @@
 
 > Placement ki taiyari ka command center. Progress track karo, timer lagao, aaj ka plan dekho.
 
+<div class="daily-banner" id="daily-banner">
+  <div class="banner-greeting">
+    <span class="banner-wave" id="banner-wave">👋</span>
+    <span class="banner-text" id="banner-greeting">Loading...</span>
+  </div>
+  <div class="banner-quote" id="banner-quote">“Padhne ka mann nahi? Ek baar soch — tere paas option hai time waste karna ya life change karna.”</div>
+  <div class="banner-tip">
+    <span class="tip-label">💡 TIP:</span>
+    <span class="tip-text" id="daily-tip">Loading daily tip...</span>
+  </div>
+</div>
+
 ## Pomodoro Timer
 
 <div class="timer-card" id="study-timer">
@@ -84,52 +96,52 @@
 <div class="stat-row">
   <span class="stat-row-label">01 · Meta Skills</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="01-meta-skills/">Start →</a></span>
+  <span class="stat-row-value"><a href="../01-meta-skills/">Start →</a></span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">02 · CS Core</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="02-cs-core/">Start →</a></span>
+  <span class="stat-row-value"><a href="../02-cs-core/">Start →</a></span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">03 · Programming</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="03-programming/">Start →</a></span>
+  <span class="stat-row-value"><a href="../03-programming/">Start →</a></span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">04 · Web Development</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="04-web-dev/">Start →</a></span>
+  <span class="stat-row-value"><a href="../04-web-dev/">Start →</a></span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">05 · AI & ML</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="05-ai-ml/">Start →</a></span>
+  <span class="stat-row-value"><a href="../05-ai-ml/">Start →</a></span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">06 · DevOps</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="06-devops/">Start →</a></span>
+  <span class="stat-row-value"><a href="../06-devops/">Start →</a></span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">07 · Projects</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="07-projects/">Start →</a></span>
+  <span class="stat-row-value"><a href="../07-projects/">Start →</a></span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">08 · Interview Prep</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="08-interview-prep/">Start →</a></span>
+  <span class="stat-row-value"><a href="../08-interview-prep/">Start →</a></span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">09 · Resources</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="09-resources/">Start →</a></span>
+  <span class="stat-row-value"><a href="../09-resources/">Start →</a></span>
 </div>
 <div class="stat-row">
   <span class="stat-row-label">10 · System Design</span>
   <span class="stat-row-bar" data-bar-pct="0"></span>
-  <span class="stat-row-value"><a href="10-system-design/">Start →</a></span>
+  <span class="stat-row-value"><a href="../10-system-design/">Start →</a></span>
 </div>
 
 ## Quick Links
@@ -231,4 +243,60 @@
 }
 .module-nav-link.prev { margin-right: auto; }
 .module-nav-link.next { margin-left: auto; }
+
+/* Streak celebration */
+.streak-celebrate {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.82rem;
+  color: var(--blueprint);
+  padding: 6px 0;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+/* Daily banner - motivational greeting */
+.daily-banner {
+  background: var(--bg-surface);
+  border: 2px solid var(--ink);
+  box-shadow: var(--shadow-hard);
+  padding: 20px 24px;
+  margin: 20px 0;
+}
+.banner-greeting {
+  font-family: 'Source Serif 4', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.banner-wave { font-size: 1.4rem; }
+.banner-quote {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--blueprint);
+  padding: 8px 0;
+  line-height: 1.5;
+}
+.banner-tip {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule-soft);
+  display: flex;
+  gap: 6px;
+}
+.tip-label {
+  color: var(--ink-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+.banner-tip .tip-text { color: var(--ink); }
 </style>
+

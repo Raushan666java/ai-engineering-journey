@@ -80,6 +80,7 @@ extra_css:
 extra_javascript:
   - assets/js/noise.js
   - assets/js/blueprint.js
+  - assets/js/study-timer.js
 
 extra:
   social:
@@ -163,6 +164,8 @@ nav:
     - PHP to Python: resources/php-to-python.md
 
   - Placement Prep:
+    - Dashboard: placement/dashboard.md
+    - DSA Tracker: placement/dsa-tracker.md
     - Overview: placement/index.md
     - 90-Day Plan: placement/goal.md
     - Meta Skills: placement/01-meta-skills/index.md

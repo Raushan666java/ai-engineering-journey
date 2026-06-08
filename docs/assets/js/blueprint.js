@@ -75,6 +75,202 @@
     }
   };
 
+  // === INTERACTIVE CHECKLISTS ===
+  // Wires markdown tasklist checkboxes to localStorage via AEJProgress
+  document.addEventListener('DOMContentLoaded', function() {
+    // skip DSA tracker page — it manages its own checklists
+    if (window.location.pathname.indexOf('dsa-tracker') !== -1) { return; }
+    var checkboxes = document.querySelectorAll('.task-list-item input[type="checkbox"]');
+    var pageKey = window.location.pathname.replace(/\/+$/, '') || '/';
+
+    for (var i = 0; i < checkboxes.length; i++) {
+      var cb = checkboxes[i];
+      var label = cb.parentElement.textContent.trim().substring(0, 80);
+      var itemKey = pageKey + '::' + label;
+
+      cb.setAttribute('data-aej-key', itemKey);
+
+      if (window.AEJProgress.isComplete(itemKey)) {
+        cb.checked = true;
+      }
+
+      cb.addEventListener('change', function() {
+        var key = this.getAttribute('data-aej-key');
+        if (this.checked) {
+          window.AEJProgress.markComplete(key);
+        } else {
+          window.AEJProgress.unmarkComplete(key);
+        }
+        updateChecklistCounter();
+      });
+    }
+
+    function updateChecklistCounter() {
+      var total = checkboxes.length;
+      var done = 0;
+      for (var i = 0; i < total; i++) {
+        if (checkboxes[i].checked) done++;
+      }
+      var el = document.querySelector('.checklist-counter');
+      if (el) {
+        el.textContent = done + ' / ' + total + ' done';
+      }
+      var pct = total > 0 ? Math.round(done / total * 100) : 0;
+      var bar = document.querySelector('.checklist-bar-fill');
+      if (bar) { bar.style.width = pct + '%'; }
+    }
+
+    var counter = document.querySelector('.checklist-counter');
+    if (!counter && checkboxes.length > 0) {
+      var container = checkboxes[0].closest('.md-typeset') || document.querySelector('.md-content__inner');
+      if (container) {
+        var div = document.createElement('div');
+        div.className = 'checklist-tracker';
+        div.innerHTML = '<span class="checklist-counter"></span><div class="progress-bar checklist-bar"><div class="progress-bar-fill checklist-bar-fill"></div></div>';
+        var firstList = container.querySelector('.task-list');
+        if (firstList) {
+          container.insertBefore(div, firstList.parentElement || firstList);
+        }
+      }
+    }
+    updateChecklistCounter();
+  });
+
+  // === STREAK TRACKING ===
+  (function() {
+    var streakKey = 'aej:streak:v1';
+    var data = JSON.parse(localStorage.getItem(streakKey)) || { days: {}, last: null };
+    var today = new Date().toISOString().slice(0, 10);
+    if (data.days[today] !== true) {
+      data.days[today] = true;
+      data.last = today;
+      localStorage.setItem(streakKey, JSON.stringify(data));
+    }
+    // returns consecutive days ending at today
+    function calcStreak(obj) {
+      var d = new Date();
+      var count = 0;
+      for (var i = 0; i < 365; i++) {
+        var key = d.toISOString().slice(0, 10);
+        if (obj.days[key]) { count++; }
+        else if (i > 0) { break; } // gap before today doesn't break streak
+        d.setDate(d.getDate() - 1);
+      }
+      return count;
+    }
+    window.AEJStreak = {
+      current: function() { return calcStreak(data); },
+      totalDays: function() { return Object.keys(data.days).length; },
+      todayKey: today,
+      data: data
+    };
+  })();
+
+  // === AUTO TODAY'S PLAN (day-of-week based) ===
+  (function() {
+    var plans = {
+      1: { area: 'DSA (Arrays, Strings, Linked Lists)', icon: '▣', tip: 'Solve 1 easy + 1 medium problem' },
+      2: { area: 'DSA (Trees, Graphs, DP)', icon: '▣', tip: 'Focus on one pattern — BFS/DFS/recursion' },
+      3: { area: 'OS + DBMS', icon: '◆', tip: 'Pick 3 topics, make 1-pager notes' },
+      4: { area: 'OS + DBMS', icon: '◆', tip: 'Solve 5 interview questions from each' },
+      5: { area: 'CN + COA', icon: '◈', tip: 'Draw diagrams for each protocol/algorithm' },
+      6: { area: 'Programming + Project', icon: '⚙', tip: 'Build one small feature or fix a bug' },
+      0: { area: 'System Design + Revision', icon: '◉', tip: 'Design 1 system + revise weak topics' }
+    };
+    var day = new Date().getDay(); // 0=Sun
+    var plan = plans[day] || plans[0];
+    // write to DOM if container exists
+    var el = document.getElementById('today-plan');
+    if (el) {
+      el.innerHTML = '<span class="plan-icon">' + plan.icon + '</span>'
+        + '<span class="plan-area">' + plan.area + '</span>'
+        + '<span class="plan-tip">' + plan.tip + '</span>';
+    }
+  })();
+
+  // === STREAK DISPLAY ===
+  (function() {
+    var el = document.getElementById('streak-display');
+    if (el) {
+      var s = window.AEJStreak;
+      var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+      var now = new Date();
+      var weekHtml = '';
+      for (var i = 6; i >= 0; i--) {
+        var d = new Date(now);
+        d.setDate(d.getDate() - i);
+        var key = d.toISOString().slice(0, 10);
+        var cls = s.data.days[key] ? 'streak-day done' : 'streak-day';
+        weekHtml += '<span class="' + cls + '">' + days[d.getDay()][0] + '</span>';
+      }
+      el.innerHTML = '<div class="streak-row"><span class="streak-count">' + s.current() + ' day streak</span></div>'
+        + '<div class="streak-week">' + weekHtml + '</div>';
+    }
+  })();
+
+  // === TODAY'S COMPLETED COUNT ===
+  (function() {
+    var el = document.getElementById('today-completed');
+    if (el) {
+      var total = window.AEJProgress.totalCompleted();
+      el.textContent = total + ' items done';
+    }
+  })();
+
+  // === MODULE NAVIGATION (prev/next) ===
+  (function() {
+    var nav = {
+      'placement/index.md': { prev: null, next: '01-meta-skills/', label: 'Placement Overview' },
+      'placement/01-meta-skills/': { prev: 'index.md', next: '02-cs-core/', label: 'Meta Skills' },
+      'placement/02-cs-core/': { prev: '01-meta-skills/', next: '03-programming/', label: 'CS Core' },
+      'placement/03-programming/': { prev: '02-cs-core/', next: '04-web-dev/', label: 'Programming' },
+      'placement/04-web-dev/': { prev: '03-programming/', next: '05-ai-ml/', label: 'Web Dev' },
+      'placement/05-ai-ml/': { prev: '04-web-dev/', next: '06-devops/', label: 'AI & ML' },
+      'placement/06-devops/': { prev: '05-ai-ml/', next: '07-projects/', label: 'DevOps' },
+      'placement/07-projects/': { prev: '06-devops/', next: '08-interview-prep/', label: 'Projects' },
+      'placement/08-interview-prep/': { prev: '07-projects/', next: '09-resources/', label: 'Interview Prep' },
+      'placement/09-resources/': { prev: '08-interview-prep/', next: '10-system-design/', label: 'Resources' },
+      'placement/10-system-design/': { prev: '09-resources/', next: null, label: 'System Design' }
+    };
+    var path = window.location.pathname.replace(/\/site\//, '/').replace(/\/+$/, '') + '/';
+    // try matching
+    var key = null;
+    for (var k in nav) {
+      if (path.indexOf(k) !== -1 || path.indexOf(k.replace('placement/', '')) !== -1) {
+        key = k; break;
+      }
+    }
+    if (!key) {
+      // also try bare path
+      var bare = path.replace(/\/docs\//, '/');
+      for (var k in nav) {
+        if (bare.indexOf(k) !== -1 || bare.indexOf(k.replace('placement/', '')) !== -1) {
+          key = k; break;
+        }
+      }
+    }
+    if (key && nav[key]) {
+      var container = document.querySelector('.md-content__inner');
+      if (container) {
+        var navDiv = document.createElement('div');
+        navDiv.className = 'module-nav';
+        var prev = nav[key].prev;
+        var next = nav[key].next;
+        var label = nav[key].label;
+        var prevHtml = prev ? '<a href="../' + prev + '" class="module-nav-link prev">← ' + (nav[Object.keys(nav).find(function(k) { return k.indexOf(prev) !== -1; })] || {}).label || 'Previous' + '</a>' : '<span></span>';
+        var nextHtml = next ? '<a href="../' + next + '" class="module-nav-link next">' + (nav[Object.keys(nav).find(function(k) { return k.indexOf(next) !== -1; })] || {}).label || 'Next' + ' →</a>' : '<span></span>';
+        // simpler approach: just use direct mapping
+        var prevLabels = { 'placement/index.md': 'Overview', 'placement/01-meta-skills/': 'Meta Skills', 'placement/02-cs-core/': 'CS Core', 'placement/03-programming/': 'Programming', 'placement/04-web-dev/': 'Web Dev', 'placement/05-ai-ml/': 'AI & ML', 'placement/06-devops/': 'DevOps', 'placement/07-projects/': 'Projects', 'placement/08-interview-prep/': 'Interview Prep', 'placement/09-resources/': 'Resources', 'placement/10-system-design/': 'System Design' };
+        var prevKey = prev ? Object.keys(prevLabels).find(function(k) { return k.indexOf(prev.replace('../', '')) !== -1; }) : null;
+        var nextKey = next ? Object.keys(prevLabels).find(function(k) { return k.indexOf(next.replace('../', '')) !== -1; }) : null;
+        var pHtml = prev && prevKey ? '<a href="../' + prev + '" class="module-nav-link prev">← ' + prevLabels[prevKey] + '</a>' : '<span></span>';
+        var nHtml = next && nextKey ? '<a href="../' + next + '" class="module-nav-link next">' + prevLabels[nextKey] + ' →</a>' : '<span></span>';
+        navDiv.innerHTML = pHtml + nHtml;
+        container.appendChild(navDiv);
+      }
+    }
+  })();
+
   // === OBSERVER FOR STAT BAR ANIMATIONS ===
   document.addEventListener('DOMContentLoaded', function() {
     var statBars = document.querySelectorAll('.stat-row-bar');

@@ -66,13 +66,13 @@
 
 ## Quick Links
 
-- **90-Day Plan** → `Placement/Plan/90_DAY_PLACEMENT_PLAN.md`
-- **A–Z Complete Course** → `Placement-01/COMPLETE_A_TO_Z_PLACEMENT_COURSE.md`
-- **DSA Practice** → `Placement/practice/dsa/`
-- **Web Dev Syllabus** → `Placement/WebDev/`
-- **React + Laravel + Inertia** → `Placement/react-laravel-inertia-tutorials/`
-- **Agentic AI Course** → `Placement/agentic_ai_course/`
-- **Modern AI Engineer** → `Placement/a-modern-day/`
-- **Skills Development** → `Placement/skills/`
+- **90-Day Plan** → `placement-original/Study-Plans/Plan/90_DAY_PLACEMENT_PLAN.md`
+- **A–Z Complete Course** → `placement-original/Main-Course/Placement-01/COMPLETE_A_TO_Z_PLACEMENT_COURSE.md`
+- **DSA Practice** → `placement-original/DSA-Practice/practice/dsa/`
+- **Web Dev Syllabus** → `placement-original/Web-Development/WebDev/`
+- **React + Laravel + Inertia** → `placement-original/Web-Development/react-laravel-inertia-tutorials/`
+- **Agentic AI Course** → `placement-original/Agentic-AI-Course/`
+- **Modern AI Engineer** → `placement-original/Modern-Stack-Course/a-modern-day/`
+- **Skills Development** → `placement-original/Coding-Skills/`
 
 > **Note:** The original Placement folder content is referenced above. Navigate to each section for detailed study guides.

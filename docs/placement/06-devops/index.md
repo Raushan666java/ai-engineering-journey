@@ -1,10 +1,10 @@
 # DevOps — CI/CD se Cloud tak
 
-DevOps sirf deployment nahi hai — ye ek culture hai. Placement mein DevOps kaafi poochha jaata hai, khaaskar service-based aur product companies mein. Content `Placement-01/06-DevOps/` folder mein milega.
+DevOps sirf deployment nahi hai — ye ek culture hai. Placement mein DevOps kaafi poochha jaata hai, khaaskar service-based aur product companies mein. Content `placement-original/Main-Course/Placement-01/06-DevOps/` folder mein milega.
 
 ## Git & GitHub
 
-**Location**: `Placement-01/06-DevOps/Module-01-Git-Complete.md`
+**Location**: `placement-original/Main-Course/Placement-01/06-DevOps/Module-01-Git-Complete.md`
 
 ```bash
 git init
@@ -19,7 +19,7 @@ git push origin main
 
 ## Docker
 
-**Location**: `Placement-01/06-DevOps/Module-02-Docker-Complete.md`
+**Location**: `placement-original/Main-Course/Placement-01/06-DevOps/Module-02-Docker-Complete.md`
 
 ```dockerfile
 # Multi-stage build example
@@ -48,7 +48,7 @@ EXPOSE 80
 
 ## CI/CD
 
-**Location**: `Placement-01/06-DevOps/Module-03-CICD-Complete.md`
+**Location**: `placement-original/Main-Course/Placement-01/06-DevOps/Module-03-CICD-Complete.md`
 
 ### GitHub Actions
 
@@ -71,7 +71,7 @@ jobs:
 
 ## Cloud Platforms
 
-**Location**: `Placement-01/06-DevOps/Module-04-Cloud-Infrastructure-Complete.md`
+**Location**: `placement-original/Main-Course/Placement-01/06-DevOps/Module-04-Cloud-Infrastructure-Complete.md`
 
 ### AWS
 

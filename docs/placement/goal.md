@@ -91,9 +91,9 @@ Evening   (0.5h) → Review + plan next day
 
 Refer to the original Placement folder for detailed daily breakdowns:
 
-- `C:\xampp\htdocs\Placement\Placement-01\90-Day-Plan\` — detailed daily breakdowns
-- `C:\xampp\htdocs\Placement\Plan\DAILY_PROGRESS_TRACKER.md` — progress log
-- `C:\xampp\htdocs\Placement\Plan\DAILY_PLANS_MASTER_INDEX.md` — master index
+- `placement-original/Main-Course/Placement-01/90-Day-Plan/` — detailed daily breakdowns
+- `placement-original/Study-Plans/Plan/DAILY_PROGRESS_TRACKER.md` — progress log
+- `placement-original/Study-Plans/Plan/DAILY_PLANS_MASTER_INDEX.md` — master index
 
 ## Success Mantras
 

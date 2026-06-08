@@ -4,11 +4,11 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 
 ## PHP + Laravel (Tera Superpower)
 
-**Location**: `Placement/WebDev/PHP/` + `Placement/WebDev/Laravel/` + `Placement/WebDev/php-for-laravel/`
+**Location**: `placement-original/Web-Development/WebDev/PHP/` + `placement-original/Web-Development/WebDev/Laravel/` + `placement-original/Web-Development/WebDev/php-for-laravel/`
 
 ### PHP Basics
 
-`Placement/WebDev/PHP/PHP_Syllabus.md` se padh:
+`placement-original/Web-Development/WebDev/PHP/PHP_Syllabus.md` se padh:
 
 - Syntax, Variables, Loops, Functions
 - OOP in PHP (Classes, Inheritance, Interfaces, Traits)
@@ -18,7 +18,7 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 
 ### PHP for Laravel (16 Topics)
 
-`Placement/WebDev/php-for-laravel/` mein 16 files hain:
+`placement-original/Web-Development/WebDev/php-for-laravel/` mein 16 files hain:
 
 ```
 01_Classes_and_Traits_Eloquent.md
@@ -41,7 +41,7 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 
 ### Laravel Syllabus
 
-`Placement/WebDev/Laravel/Laravel_12x_Detailed_Syllabus.md`:
+`placement-original/Web-Development/WebDev/Laravel/Laravel_12x_Detailed_Syllabus.md`:
 
 - MVC Architecture
 - Routing, Controllers, Blade
@@ -54,7 +54,7 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 
 ### Interview Q&A — PHP Laravel
 
-`Placement/WebDev/php-laravel-interview-questions-answers-part-1-main/` — 6 parts mein complete Q&A:
+`placement-original/Web-Development/WebDev/php-laravel-interview-questions-answers-part-1-main/` — 6 parts mein complete Q&A:
 
 - Part 1: Core PHP + Laravel basics
 - Part 2: Eloquent, Database, Migrations
@@ -63,11 +63,11 @@ Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest ski
 - Part 5: Advanced Laravel patterns
 - Part 6: Final summary + author details
 
-Also available at: `Placement/Placement-01/php-laravel-interview-questions-answers-part-1-main/`
+Also available at: `placement-original/Main-Course/placement-original/Main-Course/Placement-01/php-laravel-interview-questions-answers-part-1-main/`
 
 ## JavaScript
 
-**Location**: `Placement/WebDev/JavaScript/` — 19 modules complete
+**Location**: `placement-original/Web-Development/WebDev/JavaScript/` — 19 modules complete
 
 ```
 01_Introduction to ES6+
@@ -91,11 +91,11 @@ Also available at: `Placement/Placement-01/php-laravel-interview-questions-answe
 19_Frameworks Ecosystem
 ```
 
-**Reference PDF**: `Placement/study-doc/JavaScript Handwritten Notes.pdf`
+**Reference PDF**: `placement-original/PDF-References/JavaScript Handwritten Notes.pdf`
 
 ### jQuery + AJAX
 
-**Location**: `Placement/WebDev/JavaScript/` — 15 jQuery modules + AJAX docs:
+**Location**: `placement-original/Web-Development/WebDev/JavaScript/` — 15 jQuery modules + AJAX docs:
 
 ```
 jQuery_01_Introduction through jQuery_15_Interview
@@ -103,18 +103,119 @@ AJAX_Detailed_Syllabus.md
 AJAX_Interview_Questions_and_Revision.md
 ```
 
-## Java
+## Java — 10-Week Complete Mastery
 
-**Location**: `Placement/practice/java/basics/` + `Placement/practice/java/oops/`
+**Source**: `placement-original/Main-Course/Placement-01/03-Programming/02-Java/Java-Complete.md` (571 lines)
 
-Topics:
+Also refer: `placement-original/Main-Course/Placement-01/03-Programming/02-Java/Java_Complete_Syllabus.md` (531 lines) — FAANG-focused interview-first approach.
 
-- OOP Concepts (Inheritance, Polymorphism, Encapsulation, Abstraction)
-- Collections Framework (List, Set, Map, Queue)
-- Multithreading & Concurrency
-- Exception Handling
-- Java 8+ Features (Streams, Lambda, Optional)
-- JVM Architecture, Garbage Collection
+### Week 1-2: Java Fundamentals
+
+| Topic | Key Points |
+|-------|-----------|
+| JVM, JRE, JDK | Platform independence, compilation process |
+| Syntax & Data Types | Primitives (byte, short, int, long, float, double, char, boolean), String Pool |
+| Operators & Control | if/switch, loops, ternary |
+| Methods & Classes | Method overloading, constructors, static vs instance |
+
+**Interview Essentials:**
+```
+String s1 = "Hello";            // String pool
+String s2 = new String("Hello"); // Heap
+s1 == s2   → false
+s1.equals(s2) → true
+```
+- `==` vs `equals()` — **most asked Java question**
+- Autoboxing / Unboxing of wrapper classes
+- String immutability — kyun beneficial hai?
+
+### Week 2-3: OOP Mastery
+
+| Concept | Real Code Pattern |
+|---------|------------------|
+| Encapsulation | `private` fields + getters/setters |
+| Inheritance | `extends` keyword, `super()` call |
+| Polymorphism | Method overloading (compile-time) + overriding (run-time) |
+| Abstraction | `abstract` classes vs `interface` (Java 8+ default methods) |
+
+```java
+// Runtime Polymorphism — Interview favourite
+Animal animal = new Dog();
+animal.eat(); // Dog's version runs
+
+// Interface with default method
+interface Vehicle {
+    default void start() { System.out.println("Starting..."); }
+}
+```
+
+### Week 3-4: Collections Framework
+
+`placement-original/Main-Course/Placement-01/03-Programming/02-Java/04_Collections_Framework.md`
+
+```
+Collection
+├── List (ArrayList, LinkedList, Vector)
+├── Set (HashSet, LinkedHashSet, TreeSet)
+└── Queue (PriorityQueue, Deque)
+Map (HashMap, LinkedHashMap, TreeMap, ConcurrentHashMap)
+```
+
+- HashMap internal working → **FAANG must-know**
+- Comparable vs Comparator
+- fail-fast vs fail-safe iterators
+
+### Week 4-5: Multithreading
+
+`placement-original/Main-Course/Placement-01/03-Programming/02-Java/05_Generics_Multithreading.md`
+
+- Thread creation: `extends Thread` vs `implements Runnable`
+- synchronized, volatile, atomic classes
+- ExecutorService, Callable, Future
+- Producer-Consumer pattern
+
+### Week 5-6: Modern Java Features
+
+`placement-original/Main-Course/Placement-01/03-Programming/02-Java/06_Modern_Java_Features.md`
+
+```java
+// Streams & Lambda
+list.stream()
+    .filter(x -> x > 5)
+    .map(x -> x * 2)
+    .collect(Collectors.toList());
+
+// Optional — NullPointerException se bachav
+Optional<String> name = Optional.ofNullable(getName());
+name.ifPresent(System.out::println);
+```
+
+- Stream API: map, filter, reduce, collect
+- Optional, Method References
+- Functional Interfaces (Predicate, Function, Consumer)
+- Records, Sealed Classes (Java 17+)
+
+### Interview Q&A
+
+`placement-original/Main-Course/Placement-01/03-Programming/02-Java/Java_Interview_Questions_Bank.md` + `Interview_Ready_Code_Templates.md`
+
+**Core Java Interview Topics:**
+1. OOP concepts with real examples
+2. String, StringBuilder, StringBuffer differences
+3. Exception Handling — checked vs unchecked, try-with-resources
+4. Collections — when to use what?
+5. Multithreading — deadlock, starvation, race condition
+6. Java 8 features — Stream API, Lambda, Optional
+7. JVM Architecture — classloader, runtime data areas, GC algorithms
+8. Design Patterns — Singleton, Factory, Builder (PHP-Laravel mein bhi use hote hain)
+
+### Study Tips (Hinglish)
+
+- **📖 Padhai**: Pehle concepts samajh, fir code likh. Java-Complete.md ek book ki tarah padh.
+- **✍️ Practice**: Har concept ke 2-3 code examples khud likh bina dekhe.
+- **💬 Interview Ready**: `Interview_Ready_Code_Templates.md` ke templates ratt lo — boilerplate code yaad rakhna free me time bachata hai.
+- **🎯 FAANG Focus**: HashMap internal, multithreading, streams — yahi se maximum questions aate hain.
+- **📅 Routine**: Roz 1-2 Java programs likho. Week 1-2 core, week 3-4 collections, week 5-6 advanced.
 
 ## Python Basics
 
@@ -145,6 +246,8 @@ Topics: Pointers, Memory allocation, Structs, File I/O.
 - [ ] Laravel detailed syllabus cover kiya
 - [ ] JavaScript ke 19 modules padh liye
 - [ ] jQuery + AJAX complete kiya
-- [ ] Java OOP + Collections practice ki
+- [ ] Java fundamentals + OOP + Collections practice ki
+- [ ] Java 8+ features (Streams, Lambda) padh liye
+- [ ] Java interview questions bank revise kiya
 - [ ] Interview Q&A ke 6 parts padh liye
 - [ ] Python aur C basics cover kiye

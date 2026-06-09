@@ -1,4 +1,4 @@
-﻿site_name: "Raushan's CS Journey"
+site_name: "Raushan's CS Journey"
 site_url: https://raushan666java.github.io/ai-engineering-journey/
 site_author: Raushan Kumar
 site_description: "A complete, university-level Computer Science curriculum. Every subject from foundations to advanced electives, taught in textbook style."
@@ -28,6 +28,8 @@ theme:
     text: Source Serif 4
     code: JetBrains Mono
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.indexes
     - navigation.path
     - navigation.top
@@ -88,10 +90,10 @@ extra:
     property: G-XXXXXXXXXX
 
 nav:
-  - Home: index.md
-  - Roadmap: roadmap.md
+  - "🏠 Home": index.md
+  - "🗺️ Roadmap": roadmap.md
 
-  - C Programming:
+  - "⚙️ C Programming":
     - Overview: courses/c-programming/index.md
     - Introduction: courses/c-programming/01-introduction.md
     - Variables Datatypes: courses/c-programming/02-variables-datatypes.md
@@ -111,7 +113,7 @@ nav:
     - Stacks Queues: courses/c-programming/16-stacks-queues.md
     - Standard Library: courses/c-programming/17-standard-library.md
     - Advanced C: courses/c-programming/18-advanced-c.md
-  - Discrete Mathematics:
+  - "∑ Discrete Mathematics":
     - Overview: courses/discrete-mathematics/index.md
     - Sets: courses/discrete-mathematics/01-sets.md
     - Logic: courses/discrete-mathematics/02-logic.md
@@ -128,7 +130,7 @@ nav:
     - Probability: courses/discrete-mathematics/13-probability.md
     - Number Theory: courses/discrete-mathematics/14-number-theory.md
     - Applications: courses/discrete-mathematics/15-applications.md
-  - Digital Logic:
+  - "🔲 Digital Logic":
     - Overview: courses/digital-logic/index.md
     - Number Systems: courses/digital-logic/01-number-systems.md
     - Boolean Algebra: courses/digital-logic/02-boolean-algebra.md
@@ -145,7 +147,7 @@ nav:
     - Memory Hierarchy: courses/digital-logic/13-memory-hierarchy.md
     - Io: courses/digital-logic/14-io.md
     - Modern Arch: courses/digital-logic/15-modern-arch.md
-  - Data Structures:
+  - "🗃️ Data Structures":
     - Overview: courses/data-structures/index.md
     - Complexity: courses/data-structures/01-complexity.md
     - Arrays: courses/data-structures/02-arrays.md
@@ -165,7 +167,7 @@ nav:
     - Trie: courses/data-structures/16-trie.md
     - Segment Tree: courses/data-structures/17-segment-tree.md
     - Union Find: courses/data-structures/18-union-find.md
-  - OOP C++:
+  - "🧩 OOP C++":
     - Overview: courses/oop-cpp/index.md
     - Introduction: courses/oop-cpp/01-introduction.md
     - Classes Objects: courses/oop-cpp/02-classes-objects.md
@@ -183,7 +185,7 @@ nav:
     - Lambdas: courses/oop-cpp/14-lambdas.md
     - Concurrency: courses/oop-cpp/15-concurrency.md
     - Design Patterns: courses/oop-cpp/16-design-patterns.md
-  - Algorithms:
+  - "⚡ Algorithms":
     - Overview: courses/algorithms/index.md
     - Analysis: courses/algorithms/01-analysis.md
     - Searching: courses/algorithms/02-searching.md
@@ -204,7 +206,7 @@ nav:
     - Randomized: courses/algorithms/17-randomized.md
     - Advanced: courses/algorithms/18-advanced.md
 
-  - Operating Systems:
+  - "💻 Operating Systems":
     - Overview: courses/operating-systems/index.md
     - Introduction: courses/operating-systems/01-introduction.md
     - Processes: courses/operating-systems/02-processes.md
@@ -224,7 +226,7 @@ nav:
     - Security: courses/operating-systems/16-security.md
     - Virtualization: courses/operating-systems/17-virtualization.md
     - Case Studies: courses/operating-systems/18-case-studies.md
-  - Database Management Systems:
+  - "🗄️ Database Management Systems":
     - Overview: courses/database-management-systems/index.md
     - Introduction: courses/database-management-systems/01-introduction.md
     - Er Model: courses/database-management-systems/02-er-model.md
@@ -244,7 +246,7 @@ nav:
     - Redis: courses/database-management-systems/16-redis.md
     - Distributed: courses/database-management-systems/17-distributed-db.md
     - Security: courses/database-management-systems/18-security.md
-  - Computer Networks:
+  - "🌐 Computer Networks":
     - Overview: courses/computer-networks/index.md
     - Introduction: courses/computer-networks/01-introduction.md
     - Physical Layer: courses/computer-networks/02-physical-layer.md
@@ -265,7 +267,7 @@ nav:
     - Troubleshooting: courses/computer-networks/17-troubleshooting.md
     - Modern: courses/computer-networks/18-modern.md
 
-  - Theory of Computation:
+  - "⚛️ Theory of Computation":
     - Overview: courses/theory-of-computation/index.md
     - Dfa: courses/theory-of-computation/01-dfa.md
     - Nfa: courses/theory-of-computation/02-nfa.md
@@ -282,7 +284,7 @@ nav:
     - Space Complexity: courses/theory-of-computation/13-space-complexity.md
     - Advanced Complexity: courses/theory-of-computation/14-advanced-complexity.md
     - Applications: courses/theory-of-computation/15-applications.md
-  - Compiler Design:
+  - "🔄 Compiler Design":
     - Overview: courses/compiler-design/index.md
     - Introduction: courses/compiler-design/01-introduction.md
     - Lexical: courses/compiler-design/02-lexical.md
@@ -299,7 +301,7 @@ nav:
     - Loop Optimization: courses/compiler-design/13-loop-optimization.md
     - Register Allocation: courses/compiler-design/14-register-allocation.md
     - Advanced: courses/compiler-design/15-advanced.md
-  - Software Engineering:
+  - "📋 Software Engineering":
     - Overview: courses/software-engineering/index.md
     - Process Models: courses/software-engineering/01-process-models.md
     - Requirements: courses/software-engineering/02-requirements.md
@@ -318,7 +320,7 @@ nav:
     - Metrics: courses/software-engineering/15-metrics.md
     - Capstone: courses/software-engineering/16-capstone.md
 
-  - Python Programming:
+  - "🐍 Python Programming":
     - Overview: courses/python-programming/index.md
     - Introduction: courses/python-programming/01-introduction.md
     - Variables: courses/python-programming/02-variables.md
@@ -340,7 +342,7 @@ nav:
     - Stdlib: courses/python-programming/18-stdlib.md
     - Apis Testing: courses/python-programming/19-apis-testing.md
     - Numpy Pandas: courses/python-programming/20-numpy-pandas.md
-  - Web Development:
+  - "🌍 Web Development":
     - Overview: courses/web-development/index.md
     - Html: courses/web-development/01-html.md
     - Css: courses/web-development/02-css.md
@@ -360,7 +362,7 @@ nav:
     - Testing Web: courses/web-development/16-testing-web.md
     - Performance: courses/web-development/17-performance.md
     - Fullstack Project: courses/web-development/18-fullstack-project.md
-  - Artificial Intelligence:
+  - "🤖 Artificial Intelligence":
     - Overview: courses/artificial-intelligence/index.md
     - Introduction: courses/artificial-intelligence/01-introduction.md
     - Agents: courses/artificial-intelligence/02-agents.md
@@ -389,7 +391,7 @@ nav:
     - Expert Systems: courses/artificial-intelligence/16-expert-systems.md
     - Modern Ai: courses/artificial-intelligence/17-modern-ai.md
     - Ai Applications: courses/artificial-intelligence/18-ai-applications.md
-  - Machine Learning:
+  - "📊 Machine Learning":
     - Overview: courses/machine-learning/index.md
     - Introduction: courses/machine-learning/01-introduction.md
     - Linear Regression: courses/machine-learning/02-linear-regression.md
@@ -402,7 +404,7 @@ nav:
     - Dimensionality Reduction: courses/machine-learning/09-dimensionality-reduction.md
     - Model Evaluation: courses/machine-learning/10-model-evaluation.md
 
-  - System Design:
+  - "🏗️ System Design":
     - Overview: courses/system-design/index.md
     - Introduction: courses/system-design/01-introduction.md
     - Scalability Load Balancing: courses/system-design/02-scalability-load-balancing.md
@@ -414,7 +416,7 @@ nav:
     - Microservices Apis: courses/system-design/08-microservices-apis.md
     - Distributed Coordination: courses/system-design/09-distributed-coordination.md
     - Case Studies: courses/system-design/10-case-studies.md
-  - DevOps:
+  - "🔧 DevOps":
     - Overview: courses/devops/index.md
     - Introduction: courses/devops/01-introduction.md
     - Git: courses/devops/02-git.md
@@ -443,7 +445,7 @@ nav:
     - Networking: courses/devops/16-networking.md
     - Sre: courses/devops/17-sre.md
     - Capstone: courses/devops/18-capstone.md
-  - Cloud Computing:
+  - "☁️ Cloud Computing":
     - Overview: courses/cloud-computing/index.md
     - Introduction: courses/cloud-computing/01-introduction.md
     - Virtualization: courses/cloud-computing/02-virtualization.md
@@ -455,7 +457,7 @@ nav:
     - Serverless: courses/cloud-computing/08-serverless.md
     - Containerization: courses/cloud-computing/09-containerization.md
     - Architecture: courses/cloud-computing/10-architecture.md
-  - Cyber Security:
+  - "🔒 Cyber Security":
     - Overview: courses/cyber-security/index.md
     - Fundamentals: courses/cyber-security/01-fundamentals.md
     - Cryptography: courses/cyber-security/02-cryptography.md
@@ -467,7 +469,7 @@ nav:
     - Forensics Ir: courses/cyber-security/08-forensics-ir.md
     - Grc: courses/cyber-security/09-grc.md
     - Pentesting: courses/cyber-security/10-pentesting.md
-  - Blockchain:
+  - "⛓️ Blockchain":
     - Overview: courses/blockchain/index.md
     - Introduction: courses/blockchain/01-introduction.md
     - Cryptography: courses/blockchain/02-cryptography.md

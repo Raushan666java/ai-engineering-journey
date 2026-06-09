@@ -1889,6 +1889,96 @@ tr.today-highlight td {
   .md-typeset { font-size: 16px !important; }
 }
 
+/* === TAB BAR (navigation.tabs) === */
+.md-tabs {
+  background: var(--bg) !important;
+  border-bottom: 2px solid var(--ink) !important;
+}
+
+.md-tabs__list {
+  margin: 0 auto !important;
+  max-width: 1100px !important;
+}
+
+.md-tabs__link {
+  font-family: var(--font-display) !important;
+  font-size: 0.7rem !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: var(--ink-mute) !important;
+  margin-top: 0 !important;
+  opacity: 1 !important;
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: var(--ink) !important;
+  opacity: 1 !important;
+}
+
+.md-tabs__item {
+  padding: 10px 0 8px 0 !important;
+}
+
+/* === SIDEBAR (tabs-mode) === */
+/* Course name header */
+.md-nav--primary .md-nav__title {
+  font-family: var(--font-display) !important;
+  font-size: 0.82rem !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+  color: var(--ink) !important;
+  background: var(--bg) !important;
+  padding: 16px 12px 12px 16px !important;
+  border-bottom: 2px solid var(--ink) !important;
+}
+
+/* Chapter links in tabs-mode — direct children of primary nav */
+.md-nav--primary .md-nav__list > .md-nav__item > .md-nav__link {
+  font-family: var(--font-body) !important;
+  font-size: 0.82rem !important;
+  line-height: 1.5 !important;
+  padding: 7px 12px 7px 16px !important;
+  color: var(--ink-soft) !important;
+  border-left: 2px solid transparent !important;
+  transition: all 0.15s !important;
+  position: relative !important;
+}
+
+.md-nav--primary .md-nav__list > .md-nav__item > .md-nav__link:hover {
+  color: var(--ink) !important;
+  border-left-color: var(--rule-soft) !important;
+  background: var(--bg-surface) !important;
+}
+
+/* On desktop (≥ 76.25em) when tabs are visible, hide non-active courses from sidebar */
+/* Only the current course's chapters + Home + Roadmap remain visible */
+@media screen and (min-width: 76.25em) {
+  .md-nav--primary > .md-nav__list > .md-nav__item--nested:not(.md-nav__item--active) {
+    display: none;
+  }
+}
+
+/* Active chapter link */
+.md-nav--primary .md-nav__list > .md-nav__item--active > .md-nav__link {
+  color: var(--ink) !important;
+  font-weight: 700 !important;
+  border-left-color: var(--ink) !important;
+  background: var(--bg-surface) !important;
+}
+
+/* Section headers inside chapters (e.g., index page subsections) */
+.md-nav--primary .md-nav__item--nested .md-nav__link {
+  font-family: var(--font-body) !important;
+  font-size: 0.78rem !important;
+  padding: 4px 12px 4px 24px !important;
+  color: var(--ink-mute) !important;
+}
+
+.md-nav--primary .md-nav__item--nested .md-nav__link:hover {
+  color: var(--ink) !important;
+}
+
 /* === COURSE NAMES IN SIDEBAR — display font, uppercase === */
 .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link {
   font-family: var(--font-display) !important;

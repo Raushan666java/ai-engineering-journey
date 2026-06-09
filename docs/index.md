@@ -1,68 +1,66 @@
-# Computer Science — Complete Curriculum
+---
+hide:
+  - navigation
+  - toc
+---
+
+# Complete Computer Science Curriculum
 
 Welcome to a **complete, self-contained Computer Science curriculum** — every subject taught like a university textbook. Designed for self-learners, students, and professionals who want to master CS from first principles to advanced topics.
 
 ---
 
+## The Curriculum
+
 <div class="grid cards" markdown>
 
-- **:fontawesome-solid-code: Programming** — C · C++ · Python · Web Development
-- **:fontawesome-solid-diagram-project: Data & Logic** — DSA · Algorithms · Discrete Math · Digital Logic
-- **:fontawesome-solid-microchip: Systems** — OS · DBMS · Computer Networks · Cloud
-- **:fontawesome-solid-brain: AI & Intelligence** — AI · ML · Theory of Computation
-- **:fontawesome-solid-gears: Engineering** — System Design · DevOps · Software Engineering
-- **:fontawesome-solid-shield-halved: Security** — Cyber Security · Blockchain
-- **:fontawesome-solid-cubes: Toolchain** — Compiler Design
+-   :fontawesome-solid-layer-group: **Foundation (Year 1-2)**
+    ---
+    Start your journey with the core building blocks of computing.
+
+    - [C Programming](courses/c-programming/index.md)
+    - [Discrete Mathematics](courses/discrete-mathematics/index.md)
+    - [Digital Logic](courses/digital-logic/index.md)
+    - [Data Structures](courses/data-structures/index.md)
+    - [OOP with C++](courses/oop-cpp/index.md)
+    - [Algorithms](courses/algorithms/index.md)
+
+-   :fontawesome-solid-server: **Core Systems (Year 2-3)**
+    ---
+    Understand how software interacts with hardware and networks.
+
+    - [Operating Systems](courses/operating-systems/index.md)
+    - [Database Management Systems](courses/database-management-systems/index.md)
+    - [Computer Networks](courses/computer-networks/index.md)
+
+-   :fontawesome-solid-microchip: **Theoretical CS (Year 3)**
+    ---
+    Dive into the mathematical and theoretical boundaries of computation.
+
+    - [Theory of Computation](courses/theory-of-computation/index.md)
+    - [Compiler Design](courses/compiler-design/index.md)
+    - [Software Engineering](courses/software-engineering/index.md)
+
+-   :fontawesome-solid-code: **Applied & Modern (Year 3-4)**
+    ---
+    Learn the tools and frameworks powering modern applications and intelligence.
+
+    - [Python Programming](courses/python-programming/index.md)
+    - [Web Development](courses/web-development/index.md)
+    - [Artificial Intelligence](courses/artificial-intelligence/index.md)
+    - [Machine Learning](courses/machine-learning/index.md)
+
+-   :fontawesome-solid-cloud: **Advanced Electives (Year 4)**
+    ---
+    Master enterprise-scale architectures, deployment, and security.
+
+    - [System Design](courses/system-design/index.md)
+    - [DevOps](courses/devops/index.md)
+    - [Cloud Computing](courses/cloud-computing/index.md)
+    - [Cyber Security](courses/cyber-security/index.md)
+    - [Blockchain](courses/blockchain/index.md)
 
 </div>
-
----
-
-## Foundation (Year 1-2)
-
-| Course | Description |
-|--------|-------------|
-| [C Programming](courses/c-programming/) | Core programming language — pointers, memory, systems programming |
-| [Discrete Mathematics](courses/discrete-mathematics/) | Logic, sets, graphs, combinatorics — the math behind CS |
-| [Digital Logic & Computer Architecture](courses/digital-logic/) | Binary, gates, ALU, memory, pipelining |
-| [Data Structures](courses/data-structures/) | Arrays to tries — organize and manage data |
-| [OOP with C++](courses/oop-cpp/) | Objects, inheritance, polymorphism, STL |
-| [Algorithms](courses/algorithms/) | Sorting, searching, DP, graphs, complexity |
-
-## Core Systems (Year 2-3)
-
-| Course | Description |
-|--------|-------------|
-| [Operating Systems](courses/operating-systems/) | Processes, memory, scheduling, file systems |
-| [Database Management Systems](courses/database-management-systems/) | SQL, normalization, indexing, transactions, NoSQL |
-| [Computer Networks](courses/computer-networks/) | TCP/IP, routing, HTTP, security, cloud networking |
-
-## Theoretical CS (Year 3)
-
-| Course | Description |
-|--------|-------------|
-| [Theory of Computation](courses/theory-of-computation/) | Automata, Turing machines, complexity, NP-completeness |
-| [Compiler Design](courses/compiler-design/) | Lexing, parsing, code generation, optimization |
-| [Software Engineering](courses/software-engineering/) | Process models, testing, agile, project management |
-
-## Applied & Modern (Year 3-4)
-
-| Course | Description |
-|--------|-------------|
-| [Python Programming](courses/python-programming/) | Python — data science, APIs, automation, deployment |
-| [Web Development](courses/web-development/) | HTML, CSS, JS, React, Node.js, full-stack |
-| [Artificial Intelligence](courses/artificial-intelligence/) | Search, logic, planning, NLP, computer vision |
-| [Machine Learning](courses/machine-learning/) | Regression, neural nets, deep learning, production ML |
-
-## Advanced & Electives (Year 4)
-
-| Course | Description |
-|--------|-------------|
-| [System Design](courses/system-design/) | Scalability, microservices, distributed systems, design cases |
-| [DevOps](courses/devops/) | Docker, K8s, CI/CD, IaC, monitoring, SRE |
-| [Cloud Computing](courses/cloud-computing/) | AWS, Azure, GCP, serverless, cloud architecture |
-| [Cyber Security](courses/cyber-security/) | Cryptography, network security, pentesting, forensics |
-| [Blockchain](courses/blockchain/) | Bitcoin, Ethereum, Solidity, DApps, DeFi |
 
 ---
 

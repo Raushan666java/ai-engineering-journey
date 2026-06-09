@@ -1889,34 +1889,65 @@ tr.today-highlight td {
   .md-typeset { font-size: 16px !important; }
 }
 
-/* === NAV SECTION HEADERS — Year-group labels === */
-.md-nav--primary .md-nav__item--section > .md-nav__link {
+/* === YEAR-GROUP HEADERS — clickable, display font, uppercase === */
+.md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link {
   font-family: var(--font-display) !important;
   font-size: 0.85rem !important;
   letter-spacing: 0.06em !important;
   color: var(--ink-mute) !important;
   text-transform: uppercase !important;
-  padding: 8px 12px !important;
-  margin: 16px 0 4px 0 !important;
+  padding: 12px 12px 4px 12px !important;
+  margin-top: 12px !important;
   border-bottom: 1px solid var(--rule-soft) !important;
-  pointer-events: none !important;
 }
 
-.md-nav--primary .md-nav__item--section > .md-nav__link:hover {
-  color: var(--ink-mute) !important;
+.md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link:hover {
+  color: var(--ink) !important;
 }
 
-/* Indent course names under section headers */
-.md-nav--primary .md-nav__item--section .md-nav__list {
-  padding-left: 8px !important;
+/* Course names under year groups — reset to body font */
+.md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item > .md-nav__link {
+  font-family: var(--font-body) !important;
+  font-size: 0.82rem !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  color: var(--ink) !important;
+  border-bottom: none !important;
+  padding: 6px 12px !important;
 }
 
-/* Active course name bolder + border */
-.md-nav--primary .md-nav__item--active > .md-nav__link {
-  border-left: 2px solid var(--ink) !important;
-  padding-left: 10px !important;
+.md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__list > .md-nav__item--nested > .md-nav__link {
+  font-family: var(--font-body) !important;
+  font-size: 0.82rem !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  color: var(--ink) !important;
+  border-bottom: none !important;
+  padding: 6px 12px !important;
+}
+
+/* Chapter links under courses — smaller body font */
+.md-nav--primary > .md-nav__list > .md-nav__item--nested .md-nav__item--nested .md-nav__item > .md-nav__link {
+  font-family: var(--font-body) !important;
+  font-size: 0.78rem !important;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  border-bottom: none !important;
+  padding: 4px 12px 4px 20px !important;
+  color: var(--ink-soft) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item--nested .md-nav__item--nested .md-nav__item--active > .md-nav__link {
   color: var(--ink) !important;
   font-weight: 700 !important;
+  border-left: 2px solid var(--ink) !important;
+  padding-left: 18px !important;
+}
+
+/* Home and Roadmap items at top level — plain */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
+  padding: 6px 12px !important;
+  font-size: 0.82rem !important;
 }
 
 /* === CONTENT AREA POLISH === */

@@ -345,6 +345,150 @@ def three_sum(nums):
 
 **Misc (10):** 41. LRU cache (dll+hashmap). 42. Median from stream (two heaps). 43. Top K frequent (hashmap+min heap). 44. Sort colors (3 pointers). 45. Subarray sum = K (prefix+hashmap). 46. Sliding window max (deque). 47. Search rotated array (modified binary). 48. Pow(x,n) (binary expo). 49. Gas station (total>=cost, running sum). 50. Largest rectangle histogram (monotonic stack).
 
+### Additional Code Examples
+
+#### Merge Two Sorted Lists
+```python
+def merge_two_lists(l1, l2):
+    dummy = ListNode(0); curr = dummy
+    while l1 and l2:
+        if l1.val < l2.val:
+            curr.next = l1; l1 = l1.next
+        else:
+            curr.next = l2; l2 = l2.next
+        curr = curr.next
+    curr.next = l1 or l2
+    return dummy.next
+```
+
+#### Valid Parentheses
+```python
+def is_valid(s):
+    stack = []; pairs = {')': '(', ']': '[', '}': '{'}
+    for ch in s:
+        if ch in '([{':
+            stack.append(ch)
+        else:
+            if not stack or stack.pop() != pairs[ch]:
+                return False
+    return not stack
+```
+
+#### Max Depth & Level Order Traversal
+```python
+def max_depth(root):
+    if not root: return 0
+    return 1 + max(max_depth(root.left), max_depth(root.right))
+
+from collections import deque
+def level_order(root):
+    if not root: return []
+    res, q = [], deque([root])
+    while q:
+        level = []
+        for _ in range(len(q)):
+            node = q.popleft()
+            level.append(node.val)
+            if node.left: q.append(node.left)
+            if node.right: q.append(node.right)
+        res.append(level)
+    return res
+```
+
+#### Topological Sort (Kahn's Algorithm)
+```python
+from collections import deque
+def topological_sort(num_courses, prerequisites):
+    graph = [[] for _ in range(num_courses)]
+    indegree = [0] * num_courses
+    for course, prereq in prerequisites:
+        graph[prereq].append(course)
+        indegree[course] += 1
+    q = deque([i for i in range(num_courses) if indegree[i] == 0])
+    result = []
+    while q:
+        node = q.popleft()
+        result.append(node)
+        for neighbor in graph[node]:
+            indegree[neighbor] -= 1
+            if indegree[neighbor] == 0:
+                q.append(neighbor)
+    return result if len(result) == num_courses else []
+```
+
+#### Container With Most Water
+```python
+def max_area(height):
+    left, right = 0, len(height) - 1
+    max_water = 0
+    while left < right:
+        area = min(height[left], height[right]) * (right - left)
+        max_water = max(max_water, area)
+        if height[left] < height[right]:
+            left += 1
+        else:
+            right -= 1
+    return max_water
+```
+
+#### Binary Search in Rotated & First/Last Position
+```python
+def search_rotated(nums, target):
+    l, r = 0, len(nums) - 1
+    while l <= r:
+        mid = (l + r) // 2
+        if nums[mid] == target: return mid
+        if nums[l] <= nums[mid]:
+            if nums[l] <= target < nums[mid]: r = mid - 1
+            else: l = mid + 1
+        else:
+            if nums[mid] < target <= nums[r]: l = mid + 1
+            else: r = mid - 1
+    return -1
+
+def search_range(nums, target):
+    def first():
+        l, r = 0, len(nums) - 1
+        while l <= r:
+            m = (l + r) // 2
+            if nums[m] < target: l = m + 1
+            else: r = m - 1
+        return l if l < len(nums) and nums[l] == target else -1
+    def last():
+        l, r = 0, len(nums) - 1
+        while l <= r:
+            m = (l + r) // 2
+            if nums[m] <= target: l = m + 1
+            else: r = m - 1
+        return r if r >= 0 and nums[r] == target else -1
+    return [first(), last()]
+```
+
+#### Trie with startsWith
+```python
+class Trie:
+    def __init__(self):
+        self.children = {}; self.is_end = False
+    def insert(self, word):
+        node = self
+        for ch in word:
+            if ch not in node.children: node.children[ch] = Trie()
+            node = node.children[ch]
+        node.is_end = True
+    def search(self, word):
+        node = self
+        for ch in word:
+            if ch not in node.children: return False
+            node = node.children[ch]
+        return node.is_end
+    def starts_with(self, prefix):
+        node = self
+        for ch in prefix:
+            if ch not in node.children: return False
+            node = node.children[ch]
+        return True
+```
+
 ---
 
 ## OS — Operating Systems
@@ -594,6 +738,103 @@ def best_fit(blocks, procs):
 24. **Starvation?** — Process indefinitely delayed by higher priority processes
 25. **Difference between wait and signal?** — wait() decrements (block if 0), signal() increments (wake if blocked)
 
+### Additional OS Code
+
+#### SJF (Non-Preemptive) Scheduling
+```python
+def sjf(processes):
+    n = len(processes); curr = 0; done = [False]*n
+    sum_wt = sum_tat = 0; completed = 0
+    while completed < n:
+        idx = -1; min_bt = float('inf')
+        for i in range(n):
+            if not done[i] and processes[i][1] <= curr and processes[i][2] < min_bt:
+                min_bt = processes[i][2]; idx = i
+        if idx == -1: curr += 1; continue
+        bt = processes[idx][2]; curr += bt
+        sum_tat += curr - processes[idx][1]
+        sum_wt += curr - processes[idx][1] - bt
+        done[idx] = True; completed += 1
+    return sum_wt/n, sum_tat/n
+```
+
+#### Priority Scheduling (Non-Preemptive)
+```python
+def priority_scheduling(processes):
+    n = len(processes); curr = 0; done = [False]*n
+    sum_wt = sum_tat = 0; completed = 0
+    while completed < n:
+        idx = -1; high = float('inf')
+        for i in range(n):
+            if not done[i] and processes[i][1] <= curr and processes[i][3] < high:
+                high = processes[i][3]; idx = i
+        if idx == -1: curr += 1; continue
+        bt = processes[idx][2]; curr += bt
+        sum_tat += curr - processes[idx][1]
+        sum_wt += curr - processes[idx][1] - bt
+        done[idx] = True; completed += 1
+    return sum_wt/n, sum_tat/n
+```
+
+#### Dining Philosophers
+```python
+from threading import Semaphore, Thread
+import time, random
+
+class DiningPhilosophers:
+    def __init__(self, n=5):
+        self.forks = [Semaphore(1) for _ in range(n)]
+
+    def eat(self, pid):
+        left, right = pid, (pid + 1) % len(self.forks)
+        if pid % 2 == 0:
+            self.forks[left].acquire(); self.forks[right].acquire()
+        else:
+            self.forks[right].acquire(); self.forks[left].acquire()
+        print(f"Philosopher {pid} eating...")
+        time.sleep(random.uniform(0.1, 0.5))
+        self.forks[left].release(); self.forks[right].release()
+        print(f"Philosopher {pid} thinking...")
+
+    def run(self, pid):
+        for _ in range(3):
+            self.eat(pid); time.sleep(random.uniform(0.1, 0.5))
+
+dp = DiningPhilosophers(5)
+threads = [Thread(target=dp.run, args=(i,)) for i in range(5)]
+for t in threads: t.start()
+for t in threads: t.join()
+```
+
+#### Optimal Page Replacement
+```python
+def optimal(pages, frames):
+    page_set, faults = set(), 0
+    for i, p in enumerate(pages):
+        if p not in page_set:
+            if len(page_set) == frames:
+                furthest = -1; to_remove = -1
+                for pp in page_set:
+                    try: idx = pages[i+1:].index(pp)
+                    except ValueError: idx = float('inf')
+                    if idx > furthest: furthest = idx; to_remove = pp
+                page_set.remove(to_remove)
+            page_set.add(p); faults += 1
+    return faults
+```
+
+#### Worst Fit Memory Allocation
+```python
+def worst_fit(blocks, procs):
+    alloc = [-1]*len(procs)
+    for i, ps in enumerate(procs):
+        worst = -1; idx = -1
+        for j, bs in enumerate(blocks):
+            if bs >= ps and bs > worst: worst = bs; idx = j
+        if idx != -1: alloc[i]=idx; blocks[idx]-=ps
+    return alloc
+```
+
 ---
 
 ## DBMS — Database Management Systems
@@ -763,6 +1004,49 @@ SELECT name, salary, NTILE(4) OVER (ORDER BY salary DESC) as quartile FROM emplo
 13. **Two-phase locking (2PL)?** — Growing (acquire) + Shrinking (release); guarantees serializability
 14. **Timestamp ordering?** — Assign timestamps to transactions; abort older on conflict
 15. **Cursor?** — Iterate row-by-row (slow, avoid if possible)
+
+### More SQL Practice Queries
+
+```sql
+-- Department-wise max salary
+SELECT d.name, MAX(e.salary) as max_salary
+FROM departments d JOIN employees e ON d.id = e.dept_id
+GROUP BY d.name;
+
+-- Students who take ALL required courses (double NOT EXISTS)
+SELECT s.name FROM students s
+WHERE NOT EXISTS (
+    SELECT 1 FROM required_courses r
+    WHERE NOT EXISTS (
+        SELECT 1 FROM enrollments e
+        WHERE e.student_id = s.id AND e.course_id = r.course_id
+    )
+);
+
+-- Second highest salary using window function
+SELECT DISTINCT salary FROM (
+    SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) as rnk
+    FROM employees
+) ranked WHERE rnk = 2;
+
+-- Moving average (last 7 days)
+SELECT date, amount,
+       AVG(amount) OVER (ORDER BY date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) as moving_avg_7d
+FROM sales;
+
+-- Employees with salary above dept average
+SELECT e.name, e.salary, d.name as dept
+FROM employees e JOIN departments d ON e.dept_id = d.id
+WHERE e.salary > (
+    SELECT AVG(e2.salary) FROM employees e2 WHERE e2.dept_id = e.dept_id
+);
+
+-- Find managers who earn less than their subordinates
+SELECT m.name as manager, AVG(e.salary) as avg_sub_salary
+FROM employees e JOIN employees m ON e.manager_id = m.id
+GROUP BY m.id, m.name
+HAVING AVG(e.salary) > m.salary;
+```
 
 ---
 
@@ -1011,6 +1295,24 @@ Result: 0 10000100 01010010000000000000000 = 0x42288000
 7. **I/O mapped vs memory mapped I/O?** — Separate I/O space vs same address space
 8. **Virtual memory?** — Maps virtual→physical; MMU handles; program larger than RAM
 
+### RISC vs CISC Comparison
+
+| Feature | RISC | CISC |
+|---|---|---|
+| Instruction set | Simple, fixed size (32-bit) | Complex, variable size |
+| Instructions | Few (50-100) | Many (200-500+) |
+| Addressing modes | Few (1-2) | Many (10-20) |
+| Execution | Single cycle per instruction | Multiple cycles |
+| Pipeline | Easy (uniform instructions) | Hard (variable formats) |
+| Memory access | Load/Store only | Direct memory ops in ALU |
+| Registers | Many (32-128) | Few (8-16) |
+| Examples | ARM, MIPS, RISC-V | x86, x86-64 |
+| Compiler complexity | High (optimizes for HW) | Lower (HW does heavy lifting) |
+| Power efficiency | High | Low |
+
+**RISC**: Simple HW, compiler handles complexity. ARM processors use RISC.
+**CISC**: Complex HW, simpler assembly. x86/x64 use CISC.
+
 ---
 
 ## TOC — Theory of Computation
@@ -1066,6 +1368,43 @@ ab:   → NFA(a) --ε→ NFA(b)
 **Type 3**: `S → aS | bA | ε; A → bA | ε` → a*b*
 **Type 2**: `S → aSb | ε` → aⁿbⁿ
 **Type 1**: `S → aSBC | aBC; CB→BC; aB→ab; bB→bb; bC→bc; cC→cc` → aⁿbⁿcⁿ
+
+### NFA to DFA Conversion Steps
+
+**Step-by-step process**:
+1. Start state of DFA = ε-closure of NFA start state
+2. For each DFA state, compute transition on each input symbol:
+   - Move = all NFA states reachable via that symbol
+   - ε-closure(Move) = new DFA state
+3. Repeat until no new states appear
+4. DFA accepting states = any DFA state containing an NFA accepting state
+
+**Example**: NFA for `a|b`
+
+NFA: q0 --a--> q1 (accept), q0 --b--> q2 (accept), ε from start to q0
+
+| DFA State | NFA States | on 'a' | on 'b' |
+|---|---|---|---|
+| {q0} | {q0} | {q1} | {q2} |
+| {q1} | {q1} | {} | {} |
+| {q2} | {q2} | {} | {} |
+| {} | {} | {} | {} |
+
+### Pumping Lemma for Regular Languages
+
+**Statement**: For every regular language L, there exists a pumping length p such that any string s in L with |s| >= p can be split as s = xyz where:
+- |xy| <= p
+- |y| > 0
+- xyⁿz is in L for all n >= 0
+
+**Application**: Prove L = {aⁿbⁿ | n >= 0} is NOT regular
+```
+Assume L is regular with pumping length p
+Take s = aᵖbᵖ (length 2p >= p)
+y must contain only 'a's (since |xy| <= p)
+Pumping y: xy²z = aᵖ⁺ᵏbᵖ — unequal a's and b's → not in L
+Contradiction! L is not regular.
+```
 
 ---
 
@@ -1190,6 +1529,37 @@ class Strategy:
 13. **Smoke vs Sanity test?** — Broad critical functionality vs narrow focused
 14. **SCM?** — Version control + change management for code/docs
 15. **Forward vs Reverse engineering?** — Design→Code vs Code→Design
+
+### Additional Design Patterns
+
+**Adapter Pattern**:
+```python
+class EuropeanSocket:
+    def voltage(self): return 230
+class USPlug:
+    def connect(self, voltage): return f"US plug running on {voltage}V"
+class Adapter(EuropeanSocket):
+    def __init__(self, device): self.device = device
+    def plug_in(self): return self.device.connect(self.voltage())
+```
+
+**Decorator Pattern**:
+```python
+def log_execution(fn):
+    def wrapper(*args, **kwargs):
+        print(f"Calling {fn.__name__}")
+        result = fn(*args, **kwargs)
+        print(f"{fn.__name__} returned {result}")
+        return result
+    return wrapper
+
+@log_execution
+def add(a, b): return a + b
+```
+
+**MVC Pattern**: Model (data + logic), View (UI), Controller (input handling). Django = MTV, Rails = MVC.
+
+**Repository Pattern**: Abstracts data access — `UserRepository.get_by_id(id)` instead of raw SQL. Easier mocking in tests.
 
 ---
 
@@ -1353,6 +1723,12 @@ def release_lock(redis_nodes, resource, lock_id):
 9. **Distributed rate limiter?** — Token bucket + Redis sorted sets with Lua script for atomicity.
 10. **Design KV store?** — Consistent hashing (partitioning) + replication (N=3) + quorum (R+W>N) + hinted handoff + Merkle tree anti-entropy.
 
+11. **What is vector clock?** — (node, counter) pairs tracking causality. Used in Dynamo. Detect concurrent vs causal updates.
+12. **CRDT vs OT?** — CRDT: conflict-free data types (merge commutative). OT: operational transform (Google Docs). CRDT simpler for P2P.
+13. **Quorum in Dynamo?** — N=3 replicas, R=2 reads, W=2 writes. R+W>N guarantees strong consistency. Tune for latency vs durability.
+14. **Hinted handoff?** — If replica unavailable, another node accepts write with HINT. When replica recovers, hint replayed. Ensures availability.
+15. **Merkle tree anti-entropy?** — Each replica builds hash tree of its keys. Compare trees root-down. O(log n) sync instead of full compare.
+
 ---
 
 ## Checklist
@@ -1456,6 +1832,20 @@ Common ports: 20/21=FTP, 22=SSH, 25=SMTP, 53=DNS, 80=HTTP, 443=HTTPS, 3306=MySQL
 | Header | 20-60 bytes | 8 bytes |
 | Speed | Slower | Faster |
 | Use cases | HTTP, SMTP, FTP | DNS, VoIP, Gaming |
+
+### Cache Mapping Techniques
+
+| Feature | Direct Mapped | Fully Associative | Set-Associative (2-way) |
+|---|---|---|---|
+| Block → Cache line | One fixed line | Any line | One set (2 lines) |
+| Tag comparison | 1 comparator | N comparators (all lines) | 2 comparators (per set) |
+| Conflict misses | High (many blocks→same line) | None | Low |
+| Hardware cost | Low | High (expensive) | Moderate |
+| Hit time | Fast | Slow | Moderate |
+| Address bits | Tag | Index | Offset | Tag | Offset | Tag | Set | Offset |
+| Example | 8KB cache, 16B blocks: 19T, 9I, 4O | 8KB: 19T, 13O | 8KB, 2-way: 19T, 8S, 4O |
+
+**Typical L1 cache**: 32KB, 64B blocks, 8-way set-associative. Best performance/cost tradeoff.
 
 ---
 

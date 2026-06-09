@@ -164,6 +164,10 @@ nav:
     - Dashboard: placement/dashboard.md
     - DSA Tracker: placement/dsa-tracker.md
     - Overview: placement/index.md
+    - "🎯 Interview War Room":
+      - Start Here: placement/war-room/index.md
+      - "Foundation — Tell Me About Yourself": placement/war-room/01-foundation/tell-me-about-yourself.md
+      - "Laravel — N+1 Query Problem": placement/war-room/05-laravel/n-plus-one.md
     - Original Content: placement/original/index.md
     - Meta Skills: placement/01-meta-skills/index.md
     - CS Core: placement/02-cs-core/index.md

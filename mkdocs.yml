@@ -92,6 +92,13 @@ extra:
 nav:
   - "🏠 Home": index.md
   - "🗺️ Roadmap": roadmap.md
+  - "🤖 AI Engineering":
+    - "Overview": references/ai-engineering/index.md
+    - "About": references/ai-engineering/about.md
+    - "Lesson Catalog": references/ai-engineering/catalog.md
+    - "Roadmap": references/ai-engineering/roadmap.md
+    - "Glossary": references/ai-engineering/glossary.md
+    - "Contact": references/ai-engineering/contact.md
 
   - "⚙️ C Programming":
     - Overview: courses/c-programming/index.md

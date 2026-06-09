@@ -1920,7 +1920,7 @@ tr.today-highlight td {
   padding: 10px 0 8px 0 !important;
 }
 
-/* === SIDEBAR (tabs-mode) === */
+/* === LEFT SIDEBAR (primary nav) === */
 /* Course name header */
 .md-nav--primary .md-nav__title {
   font-family: var(--font-display) !important;
@@ -1933,7 +1933,14 @@ tr.today-highlight td {
   border-bottom: 2px solid var(--ink) !important;
 }
 
-/* Chapter links in tabs-mode — direct children of primary nav */
+/* Active course container — subtle background tint */
+.md-nav--primary > .md-nav__list > .md-nav__item--nested.md-nav__item--active {
+  background: var(--bg-surface) !important;
+  border-left: 3px solid var(--ink) !important;
+  margin-left: 0 !important;
+}
+
+/* Chapter links in tabs-mode */
 .md-nav--primary .md-nav__list > .md-nav__item > .md-nav__link {
   font-family: var(--font-body) !important;
   font-size: 0.82rem !important;
@@ -1949,17 +1956,17 @@ tr.today-highlight td {
   color: var(--ink) !important;
   border-left-color: var(--rule-soft) !important;
   background: var(--bg-surface) !important;
+  transform: translateX(2px);
 }
 
 /* On desktop (≥ 76.25em) when tabs are visible, hide non-active courses from sidebar */
-/* Only the current course's chapters + Home + Roadmap remain visible */
 @media screen and (min-width: 76.25em) {
   .md-nav--primary > .md-nav__list > .md-nav__item--nested:not(.md-nav__item--active) {
     display: none;
   }
 }
 
-/* Active chapter link */
+/* Active chapter link — bold with strong left border */
 .md-nav--primary .md-nav__list > .md-nav__item--active > .md-nav__link {
   color: var(--ink) !important;
   font-weight: 700 !important;
@@ -1967,7 +1974,7 @@ tr.today-highlight td {
   background: var(--bg-surface) !important;
 }
 
-/* Section headers inside chapters (e.g., index page subsections) */
+/* Section headers inside chapters */
 .md-nav--primary .md-nav__item--nested .md-nav__link {
   font-family: var(--font-body) !important;
   font-size: 0.78rem !important;
@@ -1979,7 +1986,7 @@ tr.today-highlight td {
   color: var(--ink) !important;
 }
 
-/* === COURSE NAMES IN SIDEBAR — display font, uppercase === */
+/* === COURSE NAMES IN SIDEBAR (top-level nested items) === */
 .md-nav--primary > .md-nav__list > .md-nav__item--nested > .md-nav__link {
   font-family: var(--font-display) !important;
   font-size: 0.9rem !important;
@@ -1994,28 +2001,133 @@ tr.today-highlight td {
   color: var(--ink) !important;
 }
 
-/* Chapter links under courses — body font, smaller */
+/* Active course name — stronger bottom border */
+.md-nav--primary > .md-nav__list > .md-nav__item--nested.md-nav__item--active > .md-nav__link {
+  border-bottom: 2px solid var(--ink) !important;
+  font-weight: 700 !important;
+}
+
+/* Divider between different courses in sidebar */
+.md-nav--primary > .md-nav__list > .md-nav__item--nested + .md-nav__item--nested {
+  border-top: 1px solid var(--rule-soft) !important;
+  margin-top: 4px !important;
+  padding-top: 4px !important;
+}
+
+/* Chapter links under courses */
 .md-nav--primary > .md-nav__list > .md-nav__item--nested .md-nav__item > .md-nav__link {
   font-family: var(--font-body) !important;
   font-size: 0.78rem !important;
   text-transform: none !important;
   letter-spacing: normal !important;
   border-bottom: none !important;
-  padding: 4px 12px 4px 20px !important;
+  padding: 5px 12px 5px 20px !important;
   color: var(--ink-soft) !important;
+  position: relative !important;
+  transition: all 0.12s ease !important;
 }
 
+/* Chapter hover — subtle indent + icon */
+.md-nav--primary > .md-nav__list > .md-nav__item--nested .md-nav__item > .md-nav__link:hover {
+  color: var(--ink) !important;
+  padding-left: 24px !important;
+}
+
+/* Active chapter under a course */
 .md-nav--primary > .md-nav__list > .md-nav__item--nested .md-nav__item--active > .md-nav__link {
   color: var(--ink) !important;
   font-weight: 700 !important;
-  border-left: 2px solid var(--ink) !important;
-  padding-left: 18px !important;
+  border-left: 3px solid var(--ink) !important;
+  padding-left: 17px !important;
+  background: var(--bg-surface) !important;
 }
 
-/* Home and Roadmap items at top level — plain */
+/* Home and Roadmap items at top level */
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link {
   padding: 6px 12px !important;
   font-size: 0.82rem !important;
+}
+
+/* Home/Roadmap hover */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__link:hover {
+  background: var(--bg-surface) !important;
+  color: var(--ink) !important;
+}
+
+/* Active Home/Roadmap */
+.md-nav--primary > .md-nav__list > .md-nav__item--active > .md-nav__link {
+  font-weight: 700 !important;
+  color: var(--ink) !important;
+  border-left: 3px solid var(--ink) !important;
+  padding-left: 9px !important;
+}
+
+/* === RIGHT SIDEBAR (TOC / table of contents) === */
+.md-sidebar--secondary .md-nav--secondary {
+  padding-top: 4px !important;
+}
+
+.md-sidebar--secondary .md-nav--secondary .md-nav__title {
+  font-family: var(--font-display) !important;
+  font-size: 0.65rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: var(--ink-mute) !important;
+  background: none !important;
+  padding: 8px 12px 6px 16px !important;
+  border-bottom: 1px solid var(--rule-soft) !important;
+  box-shadow: none !important;
+}
+
+.md-sidebar--secondary .md-nav--secondary .md-nav__item .md-nav__link {
+  font-family: var(--font-body) !important;
+  font-size: 0.75rem !important;
+  line-height: 1.4 !important;
+  color: var(--ink-soft) !important;
+  padding: 3px 12px 3px 16px !important;
+  border-left: 2px solid transparent !important;
+  transition: all 0.12s ease !important;
+}
+
+.md-sidebar--secondary .md-nav--secondary .md-nav__item .md-nav__link:hover {
+  color: var(--ink) !important;
+  border-left-color: var(--rule-soft) !important;
+}
+
+.md-sidebar--secondary .md-nav--secondary .md-nav__item--active > .md-nav__link {
+  color: var(--ink) !important;
+  font-weight: 600 !important;
+  border-left-color: var(--ink) !important;
+}
+
+/* Nested TOC items (level 3+) */
+.md-sidebar--secondary .md-nav--secondary .md-nav__item .md-nav__item .md-nav__link {
+  padding-left: 28px !important;
+  font-size: 0.7rem !important;
+}
+
+/* TOC scroll indicator */
+.md-sidebar--secondary .md-nav--secondary {
+  max-height: calc(100vh - 180px) !important;
+  overflow-y: auto !important;
+}
+
+/* === SIDEBAR SCROLLBAR REFINEMENT === */
+.md-sidebar--primary .md-sidebar__scrollwrap,
+.md-sidebar--secondary .md-sidebar__scrollwrap {
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--ink-mute) transparent !important;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar,
+.md-sidebar--secondary .md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 4px !important;
+}
+
+.md-sidebar--primary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb,
+.md-sidebar--secondary .md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: var(--ink-mute) !important;
+  border-radius: 0 !important;
 }
 
 /* === CONTENT AREA POLISH === */
@@ -2108,6 +2220,113 @@ tr.today-highlight td {
 .md-typeset .grid.cards > ul > li a:hover,
 .md-typeset .grid.cards > div a:hover {
   border-bottom-color: var(--ink) !important;
+}
+
+/* === HOME PAGE CURRICULUM GRID === */
+.curriculum-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 32px 0;
+}
+
+.course-group {
+  border: 2px solid var(--ink);
+  padding: 20px 24px;
+  background: var(--bg-surface);
+}
+
+.course-group__title {
+  font-family: var(--font-mono) !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--ink-mute) !important;
+  margin: 0 0 16px 0 !important;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule-soft);
+}
+
+ol.course-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 32px;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  counter-reset: course-counter;
+}
+
+ol.course-list > li {
+  counter-increment: course-counter;
+  margin: 0 !important;
+  padding: 10px 12px 10px 40px !important;
+  position: relative;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+ol.course-list > li::before {
+  content: counter(course-counter);
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--ink-mute);
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--ink-mute);
+}
+
+ol.course-list > li:hover {
+  border-color: var(--ink);
+  background: var(--bg);
+}
+
+ol.course-list > li:hover::before {
+  color: var(--bg);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+ol.course-list > li a {
+  color: var(--ink) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+ol.course-list > li a:hover {
+  border-bottom-color: var(--ink);
+}
+
+@media (max-width: 60em) {
+  ol.course-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 40em) {
+  .course-group {
+    padding: 16px;
+  }
+  ol.course-list > li {
+    font-size: 0.9rem;
+    padding: 8px 12px 8px 36px !important;
+  }
+  ol.course-list > li::before {
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    font-size: 0.65rem;
+  }
 }
 
 /* === PRINT === */

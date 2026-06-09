@@ -14,9 +14,8 @@ Welcome to a **complete, self-contained Computer Science curriculum** — every 
 
 <div class="grid cards" markdown>
 
--   :fontawesome-solid-layer-group: **Foundation (Year 1-2)**
+-   :fontawesome-solid-layer-group: **Foundation**
     ---
-    Start your journey with the core building blocks of computing.
 
     - [C Programming](courses/c-programming/index.md)
     - [Discrete Mathematics](courses/discrete-mathematics/index.md)
@@ -25,34 +24,30 @@ Welcome to a **complete, self-contained Computer Science curriculum** — every 
     - [OOP with C++](courses/oop-cpp/index.md)
     - [Algorithms](courses/algorithms/index.md)
 
--   :fontawesome-solid-server: **Core Systems (Year 2-3)**
+-   :fontawesome-solid-server: **Core Systems**
     ---
-    Understand how software interacts with hardware and networks.
 
     - [Operating Systems](courses/operating-systems/index.md)
     - [Database Management Systems](courses/database-management-systems/index.md)
     - [Computer Networks](courses/computer-networks/index.md)
 
--   :fontawesome-solid-microchip: **Theoretical CS (Year 3)**
+-   :fontawesome-solid-microchip: **Theoretical CS**
     ---
-    Dive into the mathematical and theoretical boundaries of computation.
 
     - [Theory of Computation](courses/theory-of-computation/index.md)
     - [Compiler Design](courses/compiler-design/index.md)
     - [Software Engineering](courses/software-engineering/index.md)
 
--   :fontawesome-solid-code: **Applied & Modern (Year 3-4)**
+-   :fontawesome-solid-code: **Applied & Modern**
     ---
-    Learn the tools and frameworks powering modern applications and intelligence.
 
     - [Python Programming](courses/python-programming/index.md)
     - [Web Development](courses/web-development/index.md)
     - [Artificial Intelligence](courses/artificial-intelligence/index.md)
     - [Machine Learning](courses/machine-learning/index.md)
 
--   :fontawesome-solid-cloud: **Advanced Electives (Year 4)**
+-   :fontawesome-solid-cloud: **Advanced Electives**
     ---
-    Master enterprise-scale architectures, deployment, and security.
 
     - [System Design](courses/system-design/index.md)
     - [DevOps](courses/devops/index.md)

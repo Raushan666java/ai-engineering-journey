@@ -12,50 +12,27 @@ Welcome to a **complete, self-contained Computer Science curriculum** — every 
 
 ## The Curriculum
 
-<div class="grid cards" markdown>
-
--   :fontawesome-solid-layer-group: **Foundation**
-    ---
-
-    - [C Programming](courses/c-programming/index.md)
-    - [Discrete Mathematics](courses/discrete-mathematics/index.md)
-    - [Digital Logic](courses/digital-logic/index.md)
-    - [Data Structures](courses/data-structures/index.md)
-    - [OOP with C++](courses/oop-cpp/index.md)
-    - [Algorithms](courses/algorithms/index.md)
-
--   :fontawesome-solid-server: **Core Systems**
-    ---
-
-    - [Operating Systems](courses/operating-systems/index.md)
-    - [Database Management Systems](courses/database-management-systems/index.md)
-    - [Computer Networks](courses/computer-networks/index.md)
-
--   :fontawesome-solid-microchip: **Theoretical CS**
-    ---
-
-    - [Theory of Computation](courses/theory-of-computation/index.md)
-    - [Compiler Design](courses/compiler-design/index.md)
-    - [Software Engineering](courses/software-engineering/index.md)
-
--   :fontawesome-solid-code: **Applied & Modern**
-    ---
-
-    - [Python Programming](courses/python-programming/index.md)
-    - [Web Development](courses/web-development/index.md)
-    - [Artificial Intelligence](courses/artificial-intelligence/index.md)
-    - [Machine Learning](courses/machine-learning/index.md)
-
--   :fontawesome-solid-cloud: **Advanced Electives**
-    ---
-
-    - [System Design](courses/system-design/index.md)
-    - [DevOps](courses/devops/index.md)
-    - [Cloud Computing](courses/cloud-computing/index.md)
-    - [Cyber Security](courses/cyber-security/index.md)
-    - [Blockchain](courses/blockchain/index.md)
-
-</div>
+1. [C Programming](courses/c-programming/index.md)
+2. [Discrete Mathematics](courses/discrete-mathematics/index.md)
+3. [Digital Logic](courses/digital-logic/index.md)
+4. [Data Structures](courses/data-structures/index.md)
+5. [OOP with C++](courses/oop-cpp/index.md)
+6. [Algorithms](courses/algorithms/index.md)
+7. [Operating Systems](courses/operating-systems/index.md)
+8. [Database Management Systems](courses/database-management-systems/index.md)
+9. [Computer Networks](courses/computer-networks/index.md)
+10. [Theory of Computation](courses/theory-of-computation/index.md)
+11. [Compiler Design](courses/compiler-design/index.md)
+12. [Software Engineering](courses/software-engineering/index.md)
+13. [Python Programming](courses/python-programming/index.md)
+14. [Web Development](courses/web-development/index.md)
+15. [Artificial Intelligence](courses/artificial-intelligence/index.md)
+16. [Machine Learning](courses/machine-learning/index.md)
+17. [System Design](courses/system-design/index.md)
+18. [DevOps](courses/devops/index.md)
+19. [Cloud Computing](courses/cloud-computing/index.md)
+20. [Cyber Security](courses/cyber-security/index.md)
+21. [Blockchain](courses/blockchain/index.md)
 
 ---
 

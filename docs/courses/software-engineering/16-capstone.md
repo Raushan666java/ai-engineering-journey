@@ -194,3 +194,25 @@ Assessment rubrics should weight each phase appropriately, with emphasis on the 
 ## Summary
 
 The capstone project integrates all knowledge areas covered in this textbook. Students plan the project, specify requirements, design the architecture, implement a subsystem, develop a testing strategy, create a quality assurance plan, and formulate a deployment plan. The consistent thread across all phases is the application of software engineering discipline — systematic processes, reasoned decisions, documented artefacts, and attention to quality. Successful completion of the capstone demonstrates competency in the core practices of professional software engineering.
+
+---
+
+## Exercises
+
+### Review Questions
+
+1. What is the purpose of a software project management plan, and what are its essential components?
+2. Explain why a requirements specification must be validated before architectural design begins.
+3. How does a traceability matrix help maintain consistency across software engineering artefacts?
+4. Describe the role of risk management in the capstone project lifecycle.
+5. Why should deployment plans include rollback procedures?
+
+### Application Problems
+
+1. Write a one-page Software Project Management Plan for a project of your choice. Include scope, schedule, budget, risk register, and quality goals.
+2. From your SRS in Exercise 1, derive a traceability matrix that maps each functional requirement to at least one test case and one architectural component.
+3. Create a checklist for a pre-deployment readiness review based on the deployment plan template in this chapter. Add at least five items not included in the template.
+
+### Challenge Problem
+
+1. Select a real-world open-source project from GitHub. Analyse it through the lens of the capstone lifecycle: reverse-engineer its requirements, infer its architectural decisions, critique its testing strategy, and propose a deployment plan for the next major release. Present your analysis as a formal 10-15 page engineering report.

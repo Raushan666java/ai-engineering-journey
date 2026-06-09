@@ -1,143 +1,210 @@
-# Chapter 11: Reducibility and the Arithmetical Hierarchy
+# Chapter 11: Reducibility and Advanced Undecidability
 
 ## Learning Objectives
 
-By the end of this chapter, you should be able to: distinguish mapping reductions from Turing reductions; define complete problems for RE; understand the structure of the arithmetical hierarchy; describe oracle machines and their use in relativized computation; state Post's problem and its resolution; compute Turing degrees.
+- Define and apply mapping reductions (many-one reductions).
+- Apply Rice's theorem to prove undecidability.
+- Define and apply Turing reductions.
+- Understand the Post Correspondence Problem and its undecidability.
+- Prove undecidability of problems from formal language theory.
+- Understand the concept of completeness within RE.
+- Recognize the limitations of automated verification.
 
 ## Theory
 
-### Mapping Reductions
+### 11.1 Mapping Reductions (Many-One Reductions)
 
-A **mapping reduction** (many-one reduction) from $A$ to $B$ is a computable function $f : \Sigma^* \to \Sigma^*$ such that:
+A **mapping reduction** from language A to language B (written A ≤_m B) is a computable function f: Σ* → Σ* such that w ∈ A iff f(w) ∈ B.
 
-$$w \in A \iff f(w) \in B$$
+**Key properties:**
+- If A ≤_m B and B is decidable, then A is decidable.
+- If A ≤_m B and A is undecidable, then B is undecidable.
+- If A ≤_m B and B is RE, then A is RE.
+- If A ≤_m B and A is not RE, then B is not RE.
 
-We write $A \leq_m B$. If $A \leq_m B$ and $B$ is decidable, then $A$ is decidable. If $A$ is undecidable and $A \leq_m B$, then $B$ is undecidable.
+**Completeness:** A language A is **RE-complete** (or m-complete for RE) if:
+1. A ∈ RE.
+2. For every language B ∈ RE, B ≤_m A.
 
-Mapping reductions preserve both decidability and recognizability:
-- If $A \leq_m B$ and $B$ is RE, then $A$ is RE.
-- If $A \leq_m B$ and $B$ is co-RE, then $A$ is co-RE.
+A_TM is the canonical RE-complete language.
 
-The halting problem maps to $A_{\text{TM}}$: $\text{HALT}_{\text{TM}} \leq_m A_{\text{TM}}$ via the function that converts $\langle M, w \rangle$ to $\langle M', w \rangle$ where $M'$ simulates $M$ and accepts if $M$ halts (regardless of outcome).
+### 11.2 Rice's Theorem in Depth
 
-### Turing Reductions
+**Rice's Theorem (formal):** Let P be a set of RE languages such that:
+- P ≠ ∅ (some RE languages have property P).
+- P ≠ { all RE languages } (some RE languages lack property P).
 
-A **Turing reduction** from $A$ to $B$, written $A \leq_T B$, means there is an algorithm that decides $A$ using an oracle for $B$ (i.e., a subroutine that answers membership queries in $B$).
+Then L_P = { ⟨M⟩ | L(M) ∈ P } is undecidable.
 
-Turing reductions are more general than mapping reductions. While every mapping reduction is a Turing reduction, the converse does not hold: a problem and its complement are Turing-equivalent ($A \leq_T \overline{A}$ and $\overline{A} \leq_T A$) but may not be many-one equivalent.
+**Proof sketch:** Assume P doesn't contain the empty language (if it does, we can work with the complement). Let L∅ be a TM with empty language. Since P is non-trivial, there exists some TM M_P with L(M_P) ∈ P. Given ⟨M, w⟩ (instance of A_TM), construct M':
+- M'(x): Simulate M on w. If M accepts w, simulate M_P on x and accept if M_P accepts.
+- Then: if M accepts w, L(M') = L(M_P) ∈ P. If M doesn't accept w, L(M') = L∅ ∉ P.
+- Thus A_TM ≤_m L_P, so L_P is undecidable.
 
-**Theorem 11.1**: If $A \leq_m B$, then $A \leq_T B$. The converse is not true.
+**Rice's theorem for properties of TMs themselves:** Some properties of TMs are syntactic (about the machine structure) rather than semantic (about the language). These can be decidable:
+- Does M have exactly 5 states? **Decidable** (count the states in ⟨M⟩).
+- Does M ever move left on blank input? **Decidable** (simulate on blank input up to some bound).
+- Does M accept at least one string? **Undecidable** (semantic property of the language).
 
-**Proof**: The mapping reduction $f$ can be used as a subroutine: given $w$, compute $f(w)$ and query the oracle for $B$. To see the converse fails, note that $A_{\text{TM}} \leq_T \overline{A_{\text{TM}}}$ (just flip the answer), but $A_{\text{TM}} \not\leq_m \overline{A_{\text{TM}}}$ because $A_{\text{TM}}$ is RE while $\overline{A_{\text{TM}}}$ is not. $\square$
+### 11.3 Turing Reductions
 
-### Complete Problems for RE
+A **Turing reduction** from A to B (written A ≤_T B) means there is an oracle TM that decides A given an oracle for B. This is more general than mapping reductions:
+- Mapping reductions are a special case of Turing reductions.
+- Turing reductions allow multiple oracle queries and can use the results arbitrarily.
+- If A ≤_T B and B is decidable, then A is decidable.
 
-A language $L$ is **RE-complete** if:
-1. $L \in$ RE.
-2. For every $A \in$ RE, $A \leq_m L$.
+**Example:** The complement of A_TM (co-A_TM) is Turing-reducible to A_TM:
+- To decide if M doesn't accept w, query the oracle for A_TM with ⟨M, w⟩. If it says no, then M doesn't accept w.
+- However, co-A_TM is NOT mapping-reducible to A_TM (it would require A_TM to be recursive).
 
-$A_{\text{TM}}$ is RE-complete. To see this, for any RE language $A$, there is a TM $M$ with $L(M) = A$. The reduction maps $w$ to $\langle M, w \rangle$: $w \in A \iff \langle M, w \rangle \in A_{\text{TM}}$.
+### 11.4 The Post Correspondence Problem (PCP)
 
-Other RE-complete problems:
-- $\text{HALT}_{\text{TM}}$
-- $E_{\text{TM}}$ (complement is RE-complete)
-- PCP (Post Correspondence Problem)
-- The validity problem for first-order logic
+**PCP Instance:** A collection of dominoes, each with a top string and bottom string:
+[ t₁/b₁ ], [ t₂/b₂ ], …, [ tₖ/bₖ ]
 
-### Post's Problem and Its Resolution
+**Question:** Can we arrange a sequence of dominoes (allowing repetition) such that the concatenation of top strings equals the concatenation of bottom strings?
 
-**Post's problem** (1944): Is there a recursively enumerable set that is neither recursive nor RE-complete? That is, is there an intermediate Turing degree between $\mathbf{0}$ (decidable) and $\mathbf{0}'$ (complete RE)?
+**Formally:** Does there exist a sequence i₁, i₂, …, iₙ (n ≥ 1) such that t_{i₁}t_{i₂}…t_{iₙ} = b_{i₁}b_{i₂}…b_{iₙ}?
 
-This problem was open for over a decade. It was solved independently by Friedberg and Muchnik in 1956-57 using **priority arguments**:
+**Theorem:** PCP is undecidable.
 
-**Theorem 11.2 (Friedberg-Muchnik)**: There exists an RE set $A$ such that $A$ is neither recursive nor Turing-equivalent to $A_{\text{TM}}$.
+**Proof strategy:** Reduce A_TM to PCP. Given ⟨M, w⟩, construct a set of dominoes that simulate the computation of M on w. A solution to the PCP instance exists iff M accepts w. The construction:
+1. Encode the start configuration of M on w as the initial partial match.
+2. Add dominoes for each possible TM transition.
+3. Add "copy" dominoes to propagate unchanged portions of the configuration.
+4. Add "cleanup" dominoes to handle the accepting state.
 
-**Proof sketch**: Construct $A$ in stages by satisfying an infinite list of requirements:
-- $R_{2e}$: $A \neq L(M_e)$ for any TM $M_e$ (ensuring $A$ is not recursive).
-- $R_{2e+1}$: $A_{\text{TM}} \not\leq_T A$ via oracle TM $\Phi_e$ (ensuring $A$ is not complete).
+The undecidability of PCP is significant because PCP is a purely combinatorial problem — no TMs involved — showing that undecidability is not limited to questions about programs.
 
-Priority: odd-numbered requirements have higher priority than even-numbered ones. When requirements conflict, higher-priority ones are satisfied first. This priority method became a fundamental technique in recursion theory. $\square$
+### 11.5 Undecidable Problems in Formal Language Theory
 
-### Oracle Machines
+Using PCP and other reductions, we can prove undecidability of:
 
-An **oracle Turing machine** (OTM) is a TM with an additional oracle tape and three special states $q_?, q_{\text{yes}}, q_{\text{no}}$. When the OTM enters $q_?$, it asks the oracle whether the string on the oracle tape is in the oracle set $B$, and transitions to $q_{\text{yes}}$ or $q_{\text{no}}$ accordingly.
+1. **Ambiguity of CFGs:** Given a CFG G, is G ambiguous?
+   - Reduce from PCP: given dominoes, construct a CFG that generates each top and bottom concatenation. The grammar is ambiguous iff there is a PCP solution.
 
-We write $M^B$ to denote an OTM with oracle $B$. The class of languages decidable by $M^B$ is denoted $P^B$, $NP^B$, etc., giving relativized complexity classes.
+2. **Emptiness of intersection of CFGs:** Given CFGs G₁ and G₂, is L(G₁) ∩ L(G₂) = ∅?
+   - Also reducible from PCP.
 
-### The Arithmetical Hierarchy
+3. **Equivalence of CFGs:** Given CFGs G₁ and G₂, is L(G₁) = L(G₂)?
+   - Undecidable; follows from universality.
 
-The **arithmetical hierarchy** classifies sets of natural numbers by the complexity of their defining formulas:
+4. **Universality of CFGs:** Does a CFG generate Σ*?
+   - Undecidable; reduce from ambiguity or PCP.
 
-- $\Sigma_1$: sets definable by $\exists y \, P(x, y)$ where $P$ is recursive. Example: $A_{\text{TM}}$ is $\Sigma_1$.
-- $\Pi_1$: sets definable by $\forall y \, P(x, y)$. Example: $\overline{A_{\text{TM}}}$ is $\Pi_1$.
-- $\Sigma_{n+1}$: $\exists y_1 \forall y_2 \cdots Q y_{n+1} \, P(x, y_1, \ldots, y_{n+1})$ with $n+1$ alternating quantifiers starting with $\exists$.
-- $\Pi_{n+1}$: $\forall y_1 \exists y_2 \cdots Q y_{n+1} \, P(x, y_1, \ldots, y_{n+1})$ starting with $\forall$.
+5. **Context-free equivalence of TMs:** Is L(M) context-free?
+   - Undecidable by Rice's theorem.
 
-Properties:
-- $\Delta_n = \Sigma_n \cap \Pi_n$
-- $\Delta_1 = $ recursive sets
-- $\Sigma_1 = $ RE sets
-- $\Pi_1 = $ co-RE sets
-- The hierarchy is proper: $\Sigma_n \subsetneq \Sigma_{n+1}$ and $\Pi_n \subsetneq \Pi_{n+1}$
+### 11.6 Complete Problems for RE
 
-**Theorem 11.3**: For every $n$, there is a $\Sigma_n$-complete set and a $\Pi_n$-complete set.
+A problem is **RE-complete** if it is in RE and every RE problem reduces to it.
 
-The $n$th jump of the halting problem, $\emptyset^{(n)}$, is $\Sigma_n$-complete. For example, $\emptyset' = A_{\text{TM}}$ is $\Sigma_1$-complete, $\emptyset''$ (the halting problem relative to $\emptyset'$) is $\Sigma_2$-complete, and so on.
+**A_TM** is RE-complete (by definition of RE — each RE language corresponds to a TM).
+
+**HALT_TM** is RE-complete: HALT_TM ∈ RE and A_TM ≤_m HALT_TM (given ⟨M,w⟩, output ⟨M,w⟩ — if M accepts w, M certainly halts on w; if M doesn't accept, either M halts rejecting or loops, and we want halting in the HALT_TM case. Actually, the mapping is: given ⟨M,w⟩, construct M' that halts iff M accepts. More precisely: A_TM ≤_m HALT_TM by mapping ⟨M,w⟩ to ⟨M', w⟩ where M' simulates M and halts when M accepts, loops when M rejects.)
+
+**PCP** is also RE-complete: PCP is RE (we can nondeterministically try sequences) and A_TM ≤_m PCP.
+
+### 11.7 The Busy Beaver Problem
+
+The **busy beaver function** BB(n) = maximum number of steps a halting n-state TM (over {0,1} with blank symbol) can run before halting, starting on a blank tape.
+
+**Key results:**
+- BB(n) is not computable (otherwise we could solve the halting problem).
+- BB(1) = 1, BB(2) = 6, BB(3) = 21, BB(4) = 107, BB(5) ≥ 47,176,870, BB(6) is astronomically large.
+
+The busy beaver problem is an elegant example of a non-computable function — one that grows faster than any computable function.
 
 ## Examples
 
-### Example 1: Mapping Reduction
+### Example 11.1: Mapping Reduction from A_TM to HALT_TM
 
-Reduce $A_{\text{TM}}$ to $\text{HALT}_{\text{TM}}$.
+Define f(⟨M, w⟩) = ⟨M', w⟩ where M' is:
+- M'(x): Run M on x. If M accepts, halt (accept). If M rejects, enter an infinite loop.
 
-Given $\langle M, w \rangle$, construct $M'$ that on input $x$:
-1. Simulate $M$ on $x$.
-2. If $M$ accepts $x$, accept.
-3. If $M$ rejects $x$, enter an infinite loop.
+Then:
+- ⟨M, w⟩ ∈ A_TM ⟹ M accepts w ⟹ M' halts on w ⟹ ⟨M', w⟩ ∈ HALT_TM.
+- ⟨M, w⟩ ∉ A_TM ⟹ M rejects or loops on w ⟹ M' loops (if M loops) or M' loops (if M rejects) ⟹ ⟨M', w⟩ ∉ HALT_TM.
 
-Then $M$ accepts $w$ iff $M'$ halts on $w$ (since $M'$ only loops if $M$ rejects). So $\langle M, w \rangle \in A_{\text{TM}} \iff \langle M', w \rangle \in \text{HALT}_{\text{TM}}$.
+Thus A_TM ≤_m HALT_TM.
 
-### Example 2: Post's Problem Intuition
+### Example 11.2: PCP Instance
 
-The Friedberg-Muchnik construction works by diagonalization with finite injury. At stage $s$, partially enumerate $A$. When a requirement $R_{2e+1}$ is injured (an element enters $A$ that threatens the correctness of $\Phi_e$), the construction adjusts. The priority ordering ensures that only finitely many requirements are injured infinitely often, and all requirements are eventually satisfied.
+Consider dominoes: [ab/a], [b/ba], [a/ab], [ε/a].
 
-### Example 3: Arithmetical Hierarchy — Infinitely Many Accepting Strings
+Can we find a match? Try: [ab/a][b/ba] = top: abb, bottom: aba. Not matching.
 
-Define $INF_{\text{TM}} = \{ \langle M \rangle \mid L(M) \text{ is infinite} \}$.
+Try: [ab/a][b/ba][a/ab] = top: abba, bottom: abaab. No.
 
-A TM accepts infinitely many strings iff:
-For every $n$, there exists a string $w$ with $|w| > n$ such that $M$ accepts $w$ within some number of steps.
+This demonstrates that finding solutions is nontrivial — and the problem is undecidable in general.
 
-This requires quantifier alternation: $\forall n \, \exists w, t \, (\text{either } |w| > n \text{ and } M \text{ accepts } w \text{ in } t \text{ steps})$.
+### Example 11.3: Valid Mapping Reduction Proof
 
-So $INF_{\text{TM}}$ is $\Pi_2$-complete (universal over $n$, existential over $w$ and $t$). It is not RE or co-RE.
+Show that EMPTY_TM = { ⟨M⟩ | L(M) = ∅ } is not RE.
+
+**Proof:** Reduce A_TM's complement to EMPTY_TM. Given ⟨M, w⟩, construct M':
+- M'(x): Simulate M on w. If M accepts w, accept x.
+
+Then:
+- If M accepts w, L(M') = Σ* ≠ ∅.
+- If M doesn't accept w (rejects or loops), L(M') = ∅.
+
+So: ⟨M, w⟩ ∉ A_TM iff ⟨M'⟩ ∈ EMPTY_TM.
+
+Since co-A_TM is not RE, and EMPTY_TM is RE (we can simulate a TM and check if it accepts any string), this shows that the reduction goes the right way to prove EMPTY_TM is not RE.
+
+Wait — actually we need co-A_TM ≤_m EMPTY_TM. Since co-A_TM is not RE, this would show EMPTY_TM is not RE either. But EMPTY_TM is known to be not RE (we can prove this).
+
+### Example 11.4: Rice's Theorem — Is L(M) Infinite?
+
+Property P = { L | L is infinite }. P is non-trivial:
+- Some RE languages are infinite (e.g., Σ*).
+- Some are not (e.g., ∅).
+
+By Rice's theorem, INFINITE_TM = { ⟨M⟩ | L(M) is infinite } is undecidable.
+
+### Example 11.5: Mapping Reduction for CFG Ambiguity
+
+Given PCP instance with dominoes (t₁,b₁), …, (tₖ,bₖ), construct CFG:
+- S → T | B
+- T → t₁T | t₁T₁ | t₂T | t₂T₂ | … | tₖT | tₖTₖ
+- B → b₁B | b₁B₁ | b₂B | b₂B₂ | … | bₖB | bₖBₖ
+Where Tᵢ and Bᵢ are "marker" variables.
+
+The idea: T generates sequences of top strings; B generates sequences of bottom strings. The grammar is ambiguous for some string iff the same sequence of dominoes (indices) can generate it from both T and B — i.e., there's a PCP solution.
 
 ## Summary
 
-- Mapping reductions $A \leq_m B$ preserve decidability and recognizability.
-- Turing reductions $A \leq_T B$ are more liberal and generate equivalence classes called Turing degrees.
-- $A_{\text{TM}}$ is RE-complete via mapping reductions.
-- Post's problem asked whether intermediate RE degrees exist; Friedberg-Muchnik solved it using priority arguments.
-- Oracle machines relativize computation by allowing external queries.
-- The arithmetical hierarchy classifies undecidable sets by quantifier complexity.
-- Each level $\Sigma_n$ and $\Pi_n$ has complete problems via jump operators.
+- Mapping reductions are computable functions that preserve language membership.
+- If A ≤_m B and B is decidable, then A is decidable (contrapositive for undecidability).
+- Rice's theorem: any non-trivial semantic property of TMs is undecidable.
+- The Post Correspondence Problem is a combinatorial undecidable problem.
+- Turing reductions (oracle access) are more general than mapping reductions.
+- A_TM is RE-complete; many other problems are RE-complete via reductions.
+- Undecidability of CFG problems (ambiguity, equivalence) follows from PCP reductions.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What is the difference between $A \leq_m B$ and $A \leq_T B$?
-2. Why is $A_{\text{TM}}$ RE-complete but not $\Pi_1$-complete?
-3. What did Friedberg and Muchnik prove, and why was it surprising?
-4. Describe the arithmetical hierarchy. Where does the emptyness problem for TMs ($E_{\text{TM}}$) sit in it?
+1. Show that A_TM ≤_m HALT_TM (the halting problem).
+2. Apply Rice's theorem to show that { ⟨M⟩ | M accepts exactly one string } is undecidable.
+3. Define what it means for a function to be a mapping reduction.
+4. Show that if A ≤_m B and B is RE, then A is RE.
+5. Construct a simple PCP instance with 2 dominoes and find a solution, or prove none exists.
 
-### Application Problems
+### Intermediate
 
-5. Show that $E_{\text{TM}} = \{ \langle M \rangle \mid L(M) = \emptyset \}$ is $\Pi_1$-complete.
-6. Show that $EQ_{\text{TM}} = \{ \langle M_1, M_2 \rangle \mid L(M_1) = L(M_2) \}$ is $\Pi_2$-complete.
-7. Prove that $INF_{\text{TM}}$ is not RE and not co-RE.
-8. Construct a mapping reduction from $\overline{A_{\text{TM}}}$ to $E_{\text{TM}}$.
+6. Prove formally that EMPTY_TM = { ⟨M⟩ | L(M) = ∅ } is undecidable using a reduction from A_TM.
+7. Show that INFINITE_TM is undecidable using Rice's theorem, then via a direct reduction.
+8. Show that PCP is RE by describing a recognizer.
+9. Prove that the language { ⟨M⟩ | L(M) is regular } is undecidable using Rice's theorem.
+10. Show that CFG universality (does G generate Σ*?) is undecidable.
 
-### Challenge Problem
+### Advanced
 
-9. Prove that if $A \leq_m B$ and $B$ is RE, then $A$ is RE. Use this to show that if $A \leq_m B$ and $A$ is not RE, then $B$ is not RE. Then find a language that is $\Sigma_2$-complete and prove it.
+11. Prove that PCP is undecidable by reducing A_TM to PCP.
+12. Show that the equivalence problem for CFGs is undecidable by reducing PCP to it.
+13. Prove that there is an oracle relative to which P = NP, and another relative to which P ≠ NP. Why does this show that diagonalization cannot resolve P vs NP?
+14. Show that the problem of whether a TM ever writes a non-blank symbol on its tape is undecidable but NOT covered by Rice's theorem (it's not a property of the language).
+15. Prove that the Busy Beaver function BB(n) is not computable. (Hint: if it were, we could solve the halting problem by running a TM for BB(n) steps and checking if it halted.)

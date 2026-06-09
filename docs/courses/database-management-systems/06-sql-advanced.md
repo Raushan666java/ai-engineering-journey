@@ -1,129 +1,499 @@
-# Chapter 6 — Advanced SQL
+# Chapter 6: Advanced SQL
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) apply aggregate functions with GROUP BY and HAVING; (2) use window functions for analytical queries; (3) write common table expressions and recursive CTEs; and (4) perform pivot and unpivot transformations.
+- Write GROUP BY queries with aggregate functions
+- Filter groups using HAVING
+- Use window functions for analytical queries (ROW_NUMBER, RANK, LEAD, LAG)
+- Write Common Table Expressions (CTEs) and recursive CTEs
+- Create and manage views for abstraction and security
+- Understand B-tree and hash indexes and when to create them
+- Apply aggregate functions: COUNT, SUM, AVG, MIN, MAX
 
-## 6.1 Aggregate Functions
+## Theory
 
-SQL provides five built-in aggregate functions. COUNT returns the number of tuples. SUM returns the sum of numeric values. AVG returns the arithmetic mean. MIN returns the minimum value. MAX returns the maximum value. All aggregate functions except COUNT(*) ignore NULL values. The DISTINCT keyword can be applied within an aggregate: COUNT(DISTINCT major) returns the number of distinct majors.
+### 6.1 Aggregate Functions
 
-SELECT COUNT(*) AS total_students,
-       AVG(gpa) AS average_gpa,
-       MAX(gpa) AS highest_gpa
-FROM Student;
+Aggregate functions compute a single result from a set of input rows. They ignore NULL values unless explicitly stated.
 
-## 6.2 Group By and Having
+**Core Aggregates:**
 
-The GROUP BY clause partitions the result set into groups based on one or more attributes. Aggregate functions are then applied to each group independently. The SELECT clause may contain only grouping attributes and aggregate functions; all non-aggregated, non-grouping attributes are invalid in standard SQL.
+```sql
+-- COUNT: Number of rows
+SELECT COUNT(*) FROM employees;                    -- Total rows (including NULLs)
+SELECT COUNT(department_id) FROM employees;        -- Non-null dept_id count
+SELECT COUNT(DISTINCT department_id) FROM employees;  -- Unique departments
 
-SELECT major, AVG(gpa) AS avg_gpa, COUNT(*) AS num_students
-FROM Student
-GROUP BY major;
+-- SUM: Total of numeric column
+SELECT SUM(salary) FROM employees;
+SELECT SUM(quantity * unit_price) AS total_revenue FROM order_items;
 
-The HAVING clause filters groups after aggregation, analogous to how the WHERE clause filters tuples before aggregation. WHERE conditions apply to individual rows; HAVING conditions apply to groups.
+-- AVG: Average of numeric column
+SELECT AVG(salary) FROM employees WHERE department_id = 10;
 
-SELECT major, AVG(gpa) AS avg_gpa
-FROM Student
-GROUP BY major
-HAVING AVG(gpa) greater than 3.5;
+-- MIN / MAX: Minimum and maximum values
+SELECT MIN(price), MAX(price), AVG(price) FROM products;
+SELECT MIN(enrollment_date), MAX(enrollment_date) FROM students;
+```
 
-The evaluation order of a query with grouping is: FROM then WHERE then GROUP BY then HAVING then SELECT then ORDER BY.
+**Aggregates with FILTER (PostgreSQL):**
 
-## 6.3 Window Functions
+```sql
+SELECT
+    department_id,
+    COUNT(*) AS total,
+    COUNT(*) FILTER (WHERE salary > 100000) AS high_earners,
+    AVG(salary) FILTER (WHERE salary > 50000) AS avg_high_salary
+FROM employees
+GROUP BY department_id;
+```
 
-Window functions perform calculations across a set of rows related to the current row without collapsing them into a single output row. Each row retains its identity, and the window function returns a value computed over a window defined by the OVER clause.
+### 6.2 GROUP BY and HAVING
 
-The OVER clause specifies the window partitioning, ordering, and frame. PARTITION BY divides the rows into groups. ORDER BY determines the order within each partition. The frame specification defines which rows relative to the current row are included in the window.
+GROUP BY divides rows into groups; aggregate functions operate within each group.
 
-The ROW_NUMBER function assigns a sequential integer to each row within a partition, starting at one:
+```sql
+-- Basic GROUP BY
+SELECT department_id, COUNT(*) AS employee_count, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department_id;
 
-SELECT name, salary, department_id,
-       ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) AS rank_in_dept
-FROM Employee;
+-- GROUP BY with JOIN
+SELECT d.department_name, COUNT(e.emp_id) AS headcount
+FROM departments d
+LEFT JOIN employees e ON d.department_id = e.department_id
+GROUP BY d.department_name
+ORDER BY headcount DESC;
 
-The RANK function assigns the same rank to tied rows and leaves gaps in the sequence. DENSE_RANK assigns the same rank to tied rows but does not leave gaps. NTILE(n) divides the rows into n approximately equal buckets.
+-- Multiple columns in GROUP BY
+SELECT department_id, job_title, COUNT(*) AS count
+FROM employees
+GROUP BY department_id, job_title;
 
-The LEAD function accesses the next row in the partition; the LAG function accesses the previous row. These functions are used for time-series analysis and delta calculations:
+-- GROUP BY with expression
+SELECT EXTRACT(YEAR FROM order_date) AS year, COUNT(*) AS orders
+FROM orders
+GROUP BY EXTRACT(YEAR FROM order_date)
+ORDER BY year;
+```
 
-SELECT date, revenue,
-       LAG(revenue, 1) OVER (ORDER BY date) AS prev_day_revenue,
-       revenue - LAG(revenue, 1) OVER (ORDER BY date) AS daily_change
-FROM DailySales;
+**HAVING:** Filters groups after aggregation (WHERE filters rows before aggregation).
 
-Window frame clauses like ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW define the extent of the window for moving calculations such as running totals and moving averages.
+```sql
+-- Departments with average salary > 80000
+SELECT department_id, AVG(salary) AS avg_salary
+FROM employees
+GROUP BY department_id
+HAVING AVG(salary) > 80000;
 
-## 6.4 Common Table Expressions
+-- Products categories with more than 5 products
+SELECT category_id, COUNT(*) AS product_count
+FROM products
+WHERE is_active = TRUE
+GROUP BY category_id
+HAVING COUNT(*) > 5;
 
-A common table expression (CTE) is a temporary named result set defined within a query using the WITH clause. CTEs improve readability by breaking complex queries into modular steps and can be referenced multiple times within the same query.
+-- Customers with total spending > $1000 in 2026
+SELECT customer_id, SUM(total_amount) AS total_spent
+FROM orders
+WHERE status = 'completed'
+  AND order_date >= '2026-01-01'
+  AND order_date < '2027-01-01'
+GROUP BY customer_id
+HAVING SUM(total_amount) > 1000;
+```
 
-WITH HighEarners AS (
-    SELECT name, salary FROM Employee WHERE salary greater than 100000
+**SQL Execution Order in Memory:**
+1. FROM / JOIN
+2. WHERE
+3. GROUP BY
+4. HAVING
+5. SELECT (including aggregates)
+6. ORDER BY
+7. LIMIT / OFFSET
+
+### 6.3 Window Functions
+
+Window functions perform calculations across a set of rows related to the current row, without collapsing rows like GROUP BY.
+
+**Syntax:** `function() OVER (PARTITION BY col ORDER BY col frame_clause)`
+
+**Partitioning:** Divides the result set into groups (partitions). The window function operates within each partition. Without PARTITION BY, the entire result set is one partition.
+
+**Ordering:** Defines the order of rows within each partition for functions like ROW_NUMBER.
+
+**Frame Clause:** Defines the subset of rows within the partition (ROWS BETWEEN ... AND ...).
+
+**Ranking Functions:**
+
+```sql
+SELECT
+    employee_id,
+    department_id,
+    salary,
+    ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) AS row_num,
+    RANK() OVER (PARTITION BY department_id ORDER BY salary DESC) AS rank,
+    DENSE_RANK() OVER (PARTITION BY department_id ORDER BY salary DESC) AS dense_rank,
+    NTILE(4) OVER (ORDER BY salary DESC) AS quartile
+FROM employees;
+```
+
+ROW_NUMBER: Unique sequential number. RANK: Same rank for ties, skips numbers. DENSE_RANK: Same rank for ties, no skipping. NTILE: Divides into N equal buckets.
+
+**Aggregate Window Functions:**
+
+```sql
+SELECT
+    order_date,
+    total_amount,
+    SUM(total_amount) OVER (ORDER BY order_date) AS running_total,
+    AVG(total_amount) OVER (ORDER BY order_date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) AS moving_avg_7day,
+    total_amount - AVG(total_amount) OVER () AS deviation_from_overall_avg
+FROM orders
+WHERE customer_id = 1;
+```
+
+**Value Window Functions (LEAD and LAG):**
+
+```sql
+-- Compare each employee's salary to their department's previous employee (by hire date)
+SELECT
+    name,
+    department_id,
+    salary,
+    hire_date,
+    LAG(salary) OVER (PARTITION BY department_id ORDER BY hire_date) AS prev_salary,
+    LEAD(salary) OVER (PARTITION BY department_id ORDER BY hire_date) AS next_salary,
+    salary - LAG(salary) OVER (PARTITION BY department_id ORDER BY hire_date) AS salary_change
+FROM employees;
+
+-- FIRST_VALUE and LAST_VALUE
+SELECT
+    date,
+    close_price,
+    FIRST_VALUE(close_price) OVER (ORDER BY date) AS first_price_of_period,
+    LAST_VALUE(close_price) OVER (ORDER BY date RANGE BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING) AS last_price
+FROM stock_prices
+WHERE symbol = 'AAPL';
+```
+
+### 6.4 Common Table Expressions (CTEs)
+
+CTEs (WITH clauses) create temporary named result sets within a query. They improve readability and enable recursive queries.
+
+```sql
+-- Basic CTE
+WITH high_earners AS (
+    SELECT employee_id, name, salary
+    FROM employees
+    WHERE salary > 100000
 )
-SELECT dept_id, COUNT(*) AS num_high_earners
-FROM Employee
-WHERE name IN (SELECT name FROM HighEarners)
-GROUP BY dept_id;
+SELECT d.department_name, COUNT(he.employee_id) AS count
+FROM high_earners he
+JOIN departments d ON he.department_id = d.department_id
+GROUP BY d.department_name;
 
-CTEs are particularly valuable when the same subquery must appear in multiple places within a query, as the CTE name can be referenced repeatedly.
+-- Multiple CTEs
+WITH
+sales_2025 AS (
+    SELECT customer_id, SUM(total) AS total_2025
+    FROM orders WHERE EXTRACT(YEAR FROM order_date) = 2025
+    GROUP BY customer_id
+),
+sales_2026 AS (
+    SELECT customer_id, SUM(total) AS total_2026
+    FROM orders WHERE EXTRACT(YEAR FROM order_date) = 2026
+    GROUP BY customer_id
+)
+SELECT
+    COALESCE(s25.customer_id, s26.customer_id) AS customer_id,
+    COALESCE(s25.total_2025, 0) AS sales_2025,
+    COALESCE(s26.total_2026, 0) AS sales_2026,
+    COALESCE(s26.total_2026, 0) - COALESCE(s25.total_2025, 0) AS growth
+FROM sales_2025 s25
+FULL OUTER JOIN sales_2026 s26 ON s25.customer_id = s26.customer_id;
+```
 
-## 6.5 Recursive CTEs
+**Recursive CTE:**
 
-A recursive CTE is a CTE that references itself, enabling the expression of recursive queries such as hierarchical tree traversal. The recursive CTE consists of two parts separated by UNION ALL. The anchor member is a non-recursive SELECT that produces the initial result set. The recursive member references the CTE name and is evaluated repeatedly until it produces no new rows.
+Recursive CTEs reference themselves. Common uses: tree traversal, hierarchy expansion, date generation.
 
-WITH RECURSIVE Subordinates AS (
-    -- Anchor member: start with the given manager
-    SELECT emp_id, name, manager_id, 1 AS level
-    FROM Employee
+```sql
+-- Generate a sequence of numbers
+WITH RECURSIVE numbers(n) AS (
+    SELECT 1                               -- Anchor member
+    UNION ALL
+    SELECT n + 1 FROM numbers WHERE n < 10  -- Recursive member
+)
+SELECT n FROM numbers;
+
+-- Organizational chart (employee hierarchy)
+WITH RECURSIVE org_chart AS (
+    -- Anchor: top-level managers (no manager)
+    SELECT employee_id, name, manager_id, 0 AS level, name::TEXT AS path
+    FROM employees
     WHERE manager_id IS NULL
 
     UNION ALL
 
-    -- Recursive member: find direct reports of those already found
-    SELECT E.emp_id, E.name, E.manager_id, S.level + 1
-    FROM Employee E
-    INNER JOIN Subordinates S ON E.manager_id = S.emp_id
+    -- Recursive: employees reporting to those above
+    SELECT e.employee_id, e.name, e.manager_id, oc.level + 1,
+           oc.path || ' -> ' || e.name
+    FROM employees e
+    JOIN org_chart oc ON e.manager_id = oc.employee_id
 )
-SELECT * FROM Subordinates;
+SELECT * FROM org_chart ORDER BY level, name;
 
-Recursive CTEs are crucial for queries involving bill-of-materials structures, organizational charts, network graphs, and any data with recursive hierarchical relationships.
+-- Find all subcategories of a given category
+WITH RECURSIVE category_tree AS (
+    SELECT category_id, category_name, parent_category_id, 0 AS depth
+    FROM categories
+    WHERE category_id = 1  -- Start with 'Electronics'
 
-## 6.6 Pivot and Unpivot
+    UNION ALL
 
-The PIVOT operation rotates rows into columns, transforming values from a column into multiple columns in the output. This operation is useful for creating cross-tabulation reports. While PIVOT syntax is not universally standardized, most DBMS platforms provide some mechanism.
+    SELECT c.category_id, c.category_name, c.parent_category_id, ct.depth + 1
+    FROM categories c
+    JOIN category_tree ct ON c.parent_category_id = ct.category_id
+)
+SELECT * FROM category_tree;
+```
 
-In databases that support it:
+### 6.5 Views
+
+A view is a virtual table defined by a query. It does not store data itself — it is a stored query.
+
+```sql
+-- Create a view
+CREATE VIEW active_customers AS
+SELECT customer_id, first_name, last_name, email
+FROM customers
+WHERE status = 'active'
+  AND last_purchase_date > CURRENT_DATE - INTERVAL '1 year';
+
+-- Use a view like a table
+SELECT * FROM active_customers ORDER BY last_name;
+
+-- Create a materialized view (stores data physically, refreshed periodically)
+CREATE MATERIALIZED VIEW monthly_sales_summary AS
+SELECT
+    EXTRACT(YEAR FROM order_date) AS year,
+    EXTRACT(MONTH FROM order_date) AS month,
+    COUNT(*) AS orders,
+    SUM(total_amount) AS revenue
+FROM orders
+WHERE status = 'completed'
+GROUP BY EXTRACT(YEAR FROM order_date), EXTRACT(MONTH FROM order_date)
+WITH DATA;
+
+-- Refresh materialized view
+REFRESH MATERIALIZED VIEW monthly_sales_summary;
+
+-- Updateable views (simple views can support INSERT/UPDATE/DELETE)
+CREATE VIEW engineering_employees AS
+SELECT emp_id, name, salary
+FROM employees
+WHERE department_id = 3;
+
+-- Insert through a view
+INSERT INTO engineering_employees (emp_id, name, salary)
+VALUES (101, 'New Engineer', 85000);
+
+-- Drop a view
+DROP VIEW IF EXISTS old_view;
+DROP MATERIALIZED VIEW IF EXISTS old_materialized_view;
+```
+
+### 6.6 Indexes
+
+Indexes accelerate data retrieval at the cost of slower writes and storage space.
+
+```sql
+-- B-tree index (default, good for equality and range queries)
+CREATE INDEX idx_employees_last_name ON employees(last_name);
+CREATE INDEX idx_orders_customer_date ON orders(customer_id, order_date);
+
+-- Unique index (automatically created for PRIMARY KEY and UNIQUE columns)
+CREATE UNIQUE INDEX idx_products_sku ON products(sku);
+
+-- Partial index (index only a subset of rows)
+CREATE INDEX idx_active_products ON products(product_id)
+WHERE is_active = TRUE;
+
+-- Expression index (index based on expression result)
+CREATE INDEX idx_lower_email ON customers(LOWER(email));
+
+-- Hash index (equality queries only, smaller than B-tree)
+CREATE INDEX idx_hash_customer_id ON customers USING HASH(customer_id);
+
+-- Composite index (multi-column, column order matters)
+CREATE INDEX idx_name_dept ON employees(last_name, first_name, department_id);
+
+-- Drop index
+DROP INDEX IF EXISTS idx_old_index;
+```
+
+**Index Guidelines:**
+- Index columns used in WHERE, JOIN, ORDER BY frequently
+- Index foreign key columns
+- Don't over-index write-heavy tables
+- Composite index column order: put high-selectivity columns first
+- NULL values in unique indexes: In PostgreSQL, multiple NULLs are allowed
+
+### 6.7 Querying the Information Schema
+
+```sql
+-- List all tables in the current database
+SELECT table_name, table_type
+FROM information_schema.tables
+WHERE table_schema = 'public';
+
+-- List columns of a table
+SELECT column_name, data_type, is_nullable
+FROM information_schema.columns
+WHERE table_name = 'employees';
+
+-- List indexes
+SELECT indexname, indexdef
+FROM pg_indexes
+WHERE tablename = 'employees';
+```
+
+## Examples
+
+**Example 6.1: Employee Analytics with Window Functions**
+
+```sql
+-- Schema: employees(emp_id, name, dept_id, salary, hire_date)
+
+-- For each department, show employee salaries with:
+-- - Rank within department
+-- - Difference from department average
+-- - Running total ordered by hire date
+
+SELECT
+    d.department_name,
+    e.name,
+    e.salary,
+    RANK() OVER (PARTITION BY e.dept_id ORDER BY e.salary DESC) AS salary_rank,
+    e.salary - AVG(e.salary) OVER (PARTITION BY e.dept_id) AS diff_from_dept_avg,
+    SUM(e.salary) OVER (PARTITION BY e.dept_id ORDER BY e.hire_date
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) AS dept_running_total
+FROM employees e
+JOIN departments d ON e.dept_id = d.dept_id
+ORDER BY d.department_name, salary_rank;
+```
+
+**Example 6.2: Sales Pipeline CTE**
+
+```sql
+-- Find the sales pipeline: from first contact to closed deal
+-- Schema: leads(lead_id, customer_name, contacted_date, status, converted_to_deal_id)
+--         deals(deal_id, lead_id, value, stage, closed_date)
+
+WITH sales_pipeline AS (
+    SELECT
+        l.lead_id,
+        l.customer_name,
+        l.contacted_date AS first_contact,
+        d.deal_id,
+        d.value,
+        d.closed_date,
+        d.closed_date - l.contacted_date AS days_to_close,
+        CASE
+            WHEN d.value >= 10000 THEN 'High Value'
+            WHEN d.value >= 5000 THEN 'Medium Value'
+            ELSE 'Standard'
+        END AS deal_tier
+    FROM leads l
+    LEFT JOIN deals d ON l.converted_to_deal_id = d.deal_id
+    WHERE d.stage = 'closed_won'
+),
+tier_stats AS (
+    SELECT
+        deal_tier,
+        COUNT(*) AS deals,
+        AVG(days_to_close)::INT AS avg_days,
+        SUM(value) AS total_revenue
+    FROM sales_pipeline
+    GROUP BY deal_tier
+)
+SELECT * FROM tier_stats
+ORDER BY total_revenue DESC;
+```
+
+**Example 6.3: Pivoting with Crosstab**
+
+```sql
+-- Cross-tabulation: sales by month and product category
+-- Using PostgreSQL tablefunc extension (crosstab)
+
+-- First, create the base data
+CREATE EXTENSION IF NOT EXISTS tablefunc;
 
 SELECT *
-FROM (SELECT year, quarter, revenue FROM Sales)
-PIVOT (
-    SUM(revenue)
-    FOR quarter IN ('Q1' AS Q1, 'Q2' AS Q2, 'Q3' AS Q3, 'Q4' AS Q4)
-) AS p;
-
-The UNPIVOT operation is the inverse, rotating columns into rows. Alternative approaches using CASE expressions with GROUP BY can achieve the same effect in databases without native PIVOT support.
+FROM crosstab(
+    'SELECT
+        category_name,
+        EXTRACT(MONTH FROM order_date) AS month,
+        SUM(oi.quantity * oi.unit_price) AS revenue
+    FROM categories c
+    JOIN products p ON c.category_id = p.category_id
+    JOIN order_items oi ON p.product_id = oi.product_id
+    JOIN orders o ON oi.order_id = o.order_id
+    WHERE EXTRACT(YEAR FROM order_date) = 2026
+    GROUP BY category_name, EXTRACT(MONTH FROM order_date)
+    ORDER BY category_name, month',
+    'SELECT generate_series(1, 12)'
+) AS pivot(
+    category TEXT,
+    jan NUMERIC, feb NUMERIC, mar NUMERIC, apr NUMERIC,
+    may NUMERIC, jun NUMERIC, jul NUMERIC, aug NUMERIC,
+    sep NUMERIC, oct NUMERIC, nov NUMERIC, dec NUMERIC
+);
+```
 
 ## Summary
 
-This chapter covered the advanced SQL features that transform the language from a simple query tool into a powerful analytical platform. Aggregate functions with grouping enable summarization. Window functions support ranking, time-series analysis, and moving calculations without collapsing rows. CTEs and recursive CTEs modularize queries and enable hierarchical traversal. Pivot operations restructure data for reporting.
+- Aggregate functions (COUNT, SUM, AVG, MIN, MAX) compute single values from row sets.
+- GROUP BY partitions rows; HAVING filters groups after aggregation.
+- Window functions perform per-row calculations across partitions without collapsing rows.
+- CTEs (WITH clauses) simplify complex queries and enable recursion.
+- Views provide abstraction, security, and query simplification.
+- Materialized views store query results for faster access at the cost of staleness.
+- Indexes speed up data access but add write overhead and storage cost.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What is the difference between WHERE and HAVING?
-2. When is it necessary to use GROUP BY?
-3. How does RANK differ from DENSE_RANK?
-4. What is the purpose of the RECURSIVE keyword in a CTE?
-5. In a window function, what does the PARTITION BY clause do?
+1. Write a query that counts the number of employees in each department and shows the average salary.
 
-### Application Problems
+2. Explain the difference between WHERE and HAVING. Provide an example of each using the same table.
 
-1. Given Sales(store_id, product_id, quantity, sale_date): Write a query that returns the total quantity sold per store per product. Then write a query that shows the running total of sales for each store ordered by date.
-2. Given Employee(emp_id, name, salary, dept_id): Write a query using a window function that returns the top three highest-paid employees in each department.
-3. Using a recursive CTE, generate all ancestors of a given node in a table Categories(category_id, name, parent_category_id).
-4. Write a query that pivots quarterly sales data: Sales(product_id, year, quarter, revenue). The result should have one row per product with columns for each quarter's revenue.
+3. Write a CTE that calculates the total sales per customer, then selects customers with total sales > $500.
 
-### Challenge Problem
+4. Create a view named `recent_orders` that shows all orders from the last 30 days.
 
-Design a query that computes the median salary per department without using any built-in median function. You may use window functions and CTEs. Then extend the solution to handle departments with an even number of employees correctly, returning the average of the two middle values.
+### Intermediate
+
+5. Using ROW_NUMBER, write a query to find the top 3 highest-paid employees in each department.
+
+6. Write a recursive CTE that generates dates from January 1, 2026 to December 31, 2026.
+
+7. Find employees whose salary is above their department's average salary. Write this using: a) a correlated subquery, b) a window function.
+
+8. Create an index on `orders(customer_id, order_date)` and explain which queries this index would benefit.
+
+### Advanced
+
+9. Write a query that uses LAG to compute the day-over-day percentage change in stock price. Schema: `prices(symbol, date, close_price)`. Return symbol, date, price, and pct_change columns.
+
+10. Using a recursive CTE, find the management chain (all ancestors) for a given employee. Schema: `employees(emp_id, name, manager_id)`. Starting from a specific employee_id, show the full chain up to the CEO.
+
+11. Compare the performance of a regular view vs. a materialized view for a sales reporting query that aggregates millions of rows. Under what circumstances would you use each?
+
+12. Write a query using PARTITION BY that calculates for each product:
+    - Its price rank within its category
+    - The difference between its price and the category average
+    - The running total of prices ordered by product_name within the category

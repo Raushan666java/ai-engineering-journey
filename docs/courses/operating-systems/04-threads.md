@@ -1,191 +1,352 @@
-# Chapter 4 — Threads
+# Chapter 4: Threads
 
 ## Learning Objectives
 
-1. Define a thread and distinguish it from a process.
-2. Compare user-level and kernel-level threads.
-3. Describe the three multithreading models.
-4. Implement multithreaded programs using POSIX threads.
-5. Explain thread pools and their advantages.
+- Define a thread and differentiate it from a process
+- Compare user-level threads and kernel-level threads
+- Explain the three multithreading models (many-to-one, one-to-one, many-to-many)
+- Use POSIX threads (pthreads) for multithreaded programming
+- Identify issues in multithreaded programs (safety, liveness, performance)
+- Understand how threading maps to modern multicore hardware
 
-## 4.1 Thread Concept
+## Theory
 
-A **thread** is the smallest unit of CPU utilisation. A process can contain one or more threads, each with its own program counter, register set, and stack space. Threads within the same process share the address space, open files, signal handlers, and other OS resources.
+### Thread Concept
 
-The key distinction between processes and threads:
+A **thread** is the basic unit of CPU utilization. It consists of a thread ID, a program counter, a register set, and a stack. Threads share with their sibling threads:
 
-| Property | Process | Thread |
-|----------|---------|--------|
-| Address space | Private | Shared with process siblings |
-| Resource ownership | Owns resources | Shares process resources |
-| Creation cost | High (PCB, address space) | Low (stack only) |
-| Context switch cost | High (address space switch) | Low (same address space) |
-| Communication | IPC mechanisms | Shared memory directly |
+- The code section (text)
+- The data section (global variables, heap)
+- Open file descriptors
+- Signal handlers
 
-Because threads share the address space, creating and switching between threads is significantly cheaper than creating and switching between processes. A thread context switch changes only the program counter, registers, and stack pointer; the page table remains unchanged.
+```
+┌─────────────────────────┐
+│       Process            │
+│  ┌───────────────────┐   │
+│  │     Address Space  │   │
+│  │  ┌─────┐┌─────┐   │   │
+│  │  │ Code││ Data │   │   │
+│  │  └─────┘└─────┘   │   │
+│  │  ┌─────┐┌─────┐   │   │
+│  │  │Heap ││ ... │   │   │
+│  │  └─────┘└─────┘   │   │
+│  └───────────────────┘   │
+│  ┌───────┐┌───────┐      │
+│  │Thread1││Thread2│ ...  │
+│  │ PC,R  ││ PC,R  │      │
+│  │ Stack ││ Stack │      │
+│  └───────┘└───────┘      │
+└─────────────────────────┘
+```
 
-## 4.2 Benefits of Multithreading
+**Key insight**: Threads are lightweight compared to processes. Creating a thread is 10–100× faster than creating a process because less state needs to be duplicated.
 
-- **Responsiveness**: A multithreaded interactive application remains responsive even if one thread blocks (e.g., a web browser with one thread for UI and another for network I/O).
-- **Resource sharing**: Threads automatically share memory and file descriptors, avoiding the overhead of IPC.
-- **Economy**: Thread creation requires a fraction of the memory and time required for process creation.
-- **Scalability**: On multiprocessor systems, threads can execute in parallel on different cores, improving throughput.
+### Benefits of Multithreading
 
-## 4.3 User-Level Threads
+1. **Responsiveness**: Even if one thread is blocked, the program continues
+2. **Resource sharing**: Threads share address space automatically
+3. **Economy**: Creating and switching threads is cheaper than processes
+4. **Scalability**: Threads can run on different cores in parallel
 
-User-level threads (ULTs) are managed entirely in user space by a thread library (e.g., GNU Pth, early Java threads). The kernel is unaware of threads; it schedules only the containing process.
+### Thread vs Process Comparison
 
-**Advantages**:
-- Thread switching does not require kernel entry, avoiding mode-switch overhead.
-- Scheduling can be customised per application.
-- Works on OSs that do not support kernel threads.
+| Aspect | Process | Thread |
+|--------|---------|--------|
+| Address space | Separate | Shared |
+| Creation time | Slow (copy address space) | Fast (share address space) |
+| Context switch | Heavy (mmu, TLB flush) | Lightweight |
+| Communication | IPC (shared mem, msg) | Direct memory access |
+| Protection | OS-enforced isolation | Programmer-managed |
+| Crash impact | Other processes unaffected | Can crash entire process |
 
-**Disadvantages**:
-- A blocking system call (e.g., `read()`) blocks all threads in the process because the kernel only sees the process.
-- Multi-core parallelism is impossible — the kernel schedules only the process, not individual threads.
-- A page fault in one thread blocks all others.
+### User-Level Threads
 
-## 4.4 Kernel-Level Threads
+Thread management is done by a **thread library in user space**, without kernel involvement.
 
-Kernel-level threads (KLTs) are managed by the OS kernel. The kernel schedules each thread independently. Windows, Linux, macOS, and modern UNIX systems use kernel threads.
+**How it works**: The kernel sees only a single process. The thread library manages thread creation, scheduling, and switching entirely in user space. Switching threads is as fast as saving/restoring a few registers.
 
-**Advantages**:
-- Threads can run in parallel on multiple cores.
-- A blocking call blocks only the calling thread; other threads in the same process continue.
-- The kernel can schedule threads from different processes on different cores.
+**Pros**:
+- No kernel involvement → very fast (microsecond-level switching)
+- Works on any OS that supports processes
+- Customizable scheduling policy
 
-**Disadvantages**:
-- Thread operations (create, synchronise, switch) require system calls, incurring mode-switch overhead.
-- Kernel thread control blocks consume kernel memory.
+**Cons**:
+- A blocking system call blocks **all** threads
+- Cannot utilize multiple cores (kernel only schedules the process, not individual threads)
+- Page faults block entire process
 
-## 4.5 Multithreading Models
+### Kernel-Level Threads
 
-### 4.5.1 Many-to-One
+Thread management is handled by the kernel. Each thread is a separate schedulable entity.
 
-Many user-level threads map to a single kernel thread. The thread library schedules ULTs in user space; the kernel sees one thread per process. Used by early Java VMs and GNU Pth. Suffers from the blocking problem described in §4.3.
+**How it works**: The kernel creates and schedules threads just like processes (on Linux, `clone()` with flags shares address space). Thread switching requires a system call.
 
-### 4.5.2 One-to-One
+**Pros**:
+- Blocking one thread does not block others
+- Can run on multiple cores in parallel
+- Kernel can schedule threads intelligently
 
-Each user-level thread maps to a separate kernel thread. This provides full parallelism but incurs overhead for thread management. Linux (via `clone()`) and Windows use this model. Most modern systems default to one-to-one.
+**Cons**:
+- Slower thread operations (system call overhead)
+- More memory overhead (each thread has a kernel stack and PCB)
+- OS-specific threading APIs
 
-### 4.5.3 Many-to-Many
+### Multithreading Models
 
-Many user-level threads multiplex onto a smaller or equal number of kernel threads. The thread library manages the mapping; the kernel schedules kernel threads. This model combines the efficiency of user-level creation with kernel parallelism. Solaris (prior to Solaris 9) and older IRIX implementations used this model. The **two-level model** variant allows some user threads to be bound to specific kernel threads for real-time guarantees.
+#### Many-to-One Model
 
-## 4.6 POSIX Threads (pthreads)
+Many user-level threads map to a single kernel thread.
 
-POSIX threads (pthreads) is a standard API for thread creation and synchronisation, defined in IEEE 1003.1c. The API is available on UNIX-like systems and via libraries on Windows (pthreads-w32).
+```
+User space:  T1   T2   T3    (thread library manages these)
+                \  |  /
+Kernel space:     K1          (single kernel thread)
+```
 
-### 4.6.1 Thread Creation
+**Used in**: Solaris Green Threads, GNU Portable Threads.
+
+**Problem**: No parallelism — can't use multiple cores. A single blocking call blocks everything.
+
+#### One-to-One Model
+
+Each user thread maps to a separate kernel thread.
+
+```
+User space:   T1    T2    T3
+              |     |     |
+Kernel space: K1    K2    K3
+```
+
+**Used in**: Linux (via NPTL — Native POSIX Thread Library), Windows, Solaris 9+.
+
+**Pro**: True parallelism on multicore. Blocking one thread doesn't block others.
+**Con**: Creating a kernel thread is expensive; many threads can hurt performance.
+
+#### Many-to-Many Model (Two-Level Model)
+
+Many user-level threads multiplex onto a smaller or equal number of kernel threads.
+
+```
+User space:   T1  T2  T3  T4  T5
+               \ /     \ /   |
+                M1      M2   M3
+Kernel space:   K1      K2   K3
+```
+
+**Used in**: Solaris (before version 9), IRIX, Tru64 Unix.
+
+**Best of both worlds**: Fast user-level creation + kernel parallelism. But complex to implement.
+
+### Thread Libraries
+
+#### POSIX Threads (pthreads)
+
+The standard threading API on Unix-like systems.
 
 ```c
-#include <pthread.h>
 #include <stdio.h>
+#include <pthread.h>
+#include <stdlib.h>
 
-void *worker(void *arg) {
-    int thread_id = *(int *)arg;
-    printf("Thread %d: Hello from worker\n", thread_id);
+#define NUM_THREADS 5
+
+void *thread_function(void *arg) {
+    int id = *(int *)arg;
+    printf("Thread %d: Hello from thread!\n", id);
+    return NULL;
+}
+
+int main() {
+    pthread_t threads[NUM_THREADS];
+    int thread_ids[NUM_THREADS];
+
+    for (int i = 0; i < NUM_THREADS; i++) {
+        thread_ids[i] = i;
+        int rc = pthread_create(&threads[i], NULL, thread_function, &thread_ids[i]);
+        if (rc) {
+            fprintf(stderr, "Error creating thread %d: %d\n", i, rc);
+            exit(1);
+        }
+    }
+
+    for (int i = 0; i < NUM_THREADS; i++) {
+        pthread_join(threads[i], NULL);
+    }
+
+    printf("Main: All threads done.\n");
+    return 0;
+}
+```
+
+Compile with: `gcc program.c -lpthread`
+
+#### Thread Synchronization Primitives
+
+pthreads provides mutexes and condition variables:
+
+```c
+#include <stdio.h>
+#include <pthread.h>
+
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+int shared_counter = 0;
+
+void *increment(void *arg) {
+    for (int i = 0; i < 100000; i++) {
+        pthread_mutex_lock(&mutex);
+        shared_counter++;
+        pthread_mutex_unlock(&mutex);
+    }
     return NULL;
 }
 
 int main() {
     pthread_t t1, t2;
-    int id1 = 1, id2 = 2;
-    
-    pthread_create(&t1, NULL, worker, &id1);
-    pthread_create(&t2, NULL, worker, &id2);
-    
+
+    pthread_create(&t1, NULL, increment, NULL);
+    pthread_create(&t2, NULL, increment, NULL);
+
     pthread_join(t1, NULL);
     pthread_join(t2, NULL);
+
+    printf("Final counter: %d (expected: 200000)\n", shared_counter);
     return 0;
 }
 ```
 
-`pthread_create()` takes four arguments: a pointer to a `pthread_t` to store the thread ID, thread attributes (NULL for defaults), the function to execute, and an argument to pass to that function.
+### Threading Issues
 
-### 4.6.2 Thread Termination
+#### fork() in Multithreaded Programs
 
-- The thread function returns.
-- `pthread_exit()` is called explicitly.
-- `pthread_cancel()` cancels the thread from another thread.
-- The process exits (all threads terminate).
+If one thread calls `fork()`, the child process should duplicate only the calling thread or all threads? Two options:
 
-`pthread_join()` blocks the calling thread until the target thread finishes, analogous to `waitpid()`.
+- `fork()` duplicates only the calling thread (Linux behavior)
+- If exec() is called immediately after fork(), only duplicating the calling thread is sufficient
+- If the child does not call exec(), all threads should be duplicated
 
-### 4.6.3 Thread Attributes
+#### Thread Cancellation
 
-Thread attributes are specified via a `pthread_attr_t` object, initialised with `pthread_attr_init()`. Attributes include:
+A thread can be **cancelled** before it finishes:
 
-- **Detached state**: A detached thread's resources are reclaimed automatically when it terminates (no `join` needed).
-- **Stack size**: Override the default stack size.
-- **Scheduling policy**: Set SCHED_FIFO, SCHED_RR, or SCHED_OTHER.
+- **Deferred cancellation**: Target thread periodically checks if it should cancel (safe, default)
+- **Asynchronous cancellation**: Target thread is cancelled immediately (dangerous — could leave resources in inconsistent state)
 
 ```c
-pthread_attr_t attr;
-pthread_attr_init(&attr);
-pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
-pthread_create(&tid, &attr, worker, NULL);
+pthread_cancel(thread_id);  // Request cancellation (deferred by default)
 ```
 
-## 4.7 Thread Pools
+#### Signal Handling
 
-Creating a thread for each incoming request is inefficient — thread creation overhead can dominate the request-handling time, and unlimited threads can exhaust system resources. A **thread pool** pre-creates a fixed number of threads that wait for work.
+- **Synchronous signals**: Sent to the offending thread (SIGSEGV, SIGFPE)
+- **Asynchronous signals**: Sent to the process; the OS delivers to any thread not blocking the signal
 
-When a new task arrives, it is placed into a work queue. An idle thread from the pool dequeues and executes the task. If no thread is available, the task waits.
+### Thread Pools
 
-**Advantages**:
-- Eliminates per-task creation overhead.
-- Bounds resource consumption.
-- Enables latency control (pool size can be tuned).
+Creating a thread per task has overhead. A **thread pool** creates a fixed number of threads at startup. Idle threads wait in a pool; when work arrives, a thread is assigned. Benefits:
+
+- Eliminates thread creation latency
+- Limits the number of threads (resource management)
+- Easy to manage (no unbounded thread growth)
+
+## Examples
+
+### Example 1: Computing Pi with Multiple Threads
 
 ```c
-// Pseudocode for a thread pool:
-ThreadPool pool(num_threads);
-while (task = get_next_request()) {
-    pool.enqueue(task);
-}
+#include <stdio.h>
+#include <pthread.h>
+#include <stdlib.h>
 
-// Each pool thread:
-void *pool_worker(void *arg) {
-    while (true) {
-        Task t = queue.dequeue(); // blocks if empty
-        t.execute();
+#define NUM_THREADS 4
+#define NUM_STEPS 1000000
+
+double step;
+double partial_sums[NUM_THREADS];
+
+void *compute(void *arg) {
+    int id = *(int *)arg;
+    double x, sum = 0.0;
+
+    for (int i = id; i < NUM_STEPS; i += NUM_THREADS) {
+        x = (i + 0.5) * step;
+        sum += 4.0 / (1.0 + x * x);
     }
+
+    partial_sums[id] = sum;
+    return NULL;
+}
+
+int main() {
+    pthread_t threads[NUM_THREADS];
+    int ids[NUM_THREADS];
+
+    step = 1.0 / NUM_STEPS;
+
+    for (int i = 0; i < NUM_THREADS; i++) {
+        ids[i] = i;
+        pthread_create(&threads[i], NULL, compute, &ids[i]);
+    }
+
+    double total = 0.0;
+    for (int i = 0; i < NUM_THREADS; i++) {
+        pthread_join(threads[i], NULL);
+        total += partial_sums[i];
+    }
+
+    double pi = total * step;
+    printf("Computed pi = %.15f\n", pi);
+    printf("Error = %.15f\n", pi - 3.141592653589793);
+
+    return 0;
 }
 ```
 
-Thread pool size is a critical parameter. A CPU-bound pool should be roughly `n_cpus + 1`. An I/O-bound pool can be larger, up to `2 * n_cpus` or more, because threads spend much time blocked.
+### Example 2: Amdahl's Law
 
-## 4.8 Thread-Local Storage
+The theoretical speedup from parallelization is bounded by the serial portion of the program:
 
-Threads share the process address space, but each thread may need its own private data. **Thread-local storage (TLS)** provides per-thread variables. In C11, the `_Thread_local` storage class specifier declares a variable with thread-specific lifetime:
+```
+Speedup = 1 / (S + (1-S)/N)
 
-```c
-_Thread_local int errno; // each thread has its own errno
+Where:
+  S = fraction of program that is serial
+  N = number of processors
 ```
 
-The `pthreads` API offers `pthread_key_create()`, `pthread_setspecific()`, and `pthread_getspecific()` for dynamic TLS management.
+If 10% of a program is serial, the maximum speedup on 16 cores is:
+```
+Speedup = 1 / (0.1 + 0.9/16) = 1 / (0.1 + 0.05625) = 6.4x
+```
+
+Even with infinite cores, the speedup cannot exceed 1/S = 10x.
 
 ## Summary
 
-Threads enable lightweight concurrency within a process. User-level threads offer low switching cost but block on kernel operations; kernel threads provide full parallelism with higher overhead. The one-to-one model dominates modern systems. pthreads provides a portable API. Thread pools manage resource utilisation under load. TLS gives threads private data within a shared address space.
+- A thread is a lightweight unit of CPU execution sharing address space with sibling threads
+- User-level threads are fast but cannot utilize multiple cores or handle blocking calls well
+- Kernel-level threads support parallelism but have higher overhead
+- Many-to-many models attempt to combine benefits of both
+- pthreads is the standard POSIX API for threads
+- Thread pools amortize creation cost and limit resource usage
+- Amdahl's Law governs the theoretical speedup from parallelization
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What resources are shared among threads in the same process? What resources are per-thread?
-2. Compare user-level and kernel-level threads along three dimensions: creation cost, parallel execution, and blocking behaviour.
-3. Draw and explain the three multithreading models (many-to-one, one-to-one, many-to-many).
-4. What is a thread pool, and what problems does it solve?
-5. How does thread-local storage differ from using a global variable?
+1. What are the differences between a thread and a process? List at least four.
+2. Write a program that creates 10 threads, each printing its own ID. Verify that IDs from different threads can interleave.
+3. What happens if you forget to call `pthread_join()`? What if the main thread exits before all threads finish?
 
-### Application Problems
+### Intermediate
 
-1. Write a C program using pthreads that creates four threads. Each thread computes the sum of a distinct quarter of a 10,000-element integer array. The main thread prints the total sum after all threads join.
-2. A server uses a thread pool of size 8. Each incoming request requires 50 ms of computation (CPU-bound) and 100 ms of I/O. Plot the throughput as a function of request arrival rate (requests/second). When does the system saturate?
-3. Compare the memory consumed by 100 processes (each with a 256 KB stack) vs. 100 threads in a single process (each with a 64 KB stack). Include PCB and TCB overhead estimates.
+4. Write a producer-consumer program using pthreads and a mutex-protected shared buffer. Create 2 producer threads and 2 consumer threads.
+5. Compare the performance of `fork()` vs `pthread_create()`. Create 1000 processes vs 1000 threads, measuring total creation time.
+6. Explain the many-to-many threading model. Under what circumstances does it outperform one-to-one? When does it underperform?
 
-### Challenge Problem
+### Advanced
 
-1. Implement a minimal thread pool library in C: `tp_create(int n)`, `tp_enqueue(tp, void (*fn)(void *), void *arg)`, `tp_destroy(tp)`. Use a mutex and condition variable to synchronise access to the work queue. Test it by scheduling 100 tasks that each compute a Fibonacci number.
+7. Implement a simple thread pool: a fixed set of worker threads that pull tasks from a queue. The queue should support `enqueue(void (*function)(void*), void *arg)`.
+8. Write a program that demonstrates the **false sharing** problem: two threads writing to adjacent heap variables that share a cache line. Measure the slowdown. Fix with alignment.
+9. The Linux `clone()` system call allows fine-grained control over what is shared between parent and child. Research the CLONE_VM, CLONE_FILES, and CLONE_SIGHAND flags. Write a small program that creates a process that shares memory with its parent (like a thread) but has its own PID.

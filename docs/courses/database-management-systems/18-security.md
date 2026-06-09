@@ -1,114 +1,740 @@
-# Chapter 18 — Database Security
+# Chapter 18: Database Security
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) describe the principal threats to database security; (2) distinguish among discretionary, mandatory, and role-based access control; (3) identify and prevent SQL injection vulnerabilities; (4) explain encryption techniques for data at rest and in transit; (5) describe database auditing mechanisms; and (6) describe GDPR compliance requirements for database systems.
+- Understand the database security threat landscape
+- Implement authentication and authorization mechanisms
+- Prevent SQL injection attacks through defensive coding
+- Configure encryption at rest and in transit
+- Audit database activity for compliance
+- Apply row-level security and data masking
+- Understand GDPR and privacy regulations
 
-## 18.1 Security Threats
+## Theory
 
-Database security encompasses the protection of the database against unauthorized access, modification, destruction, and disclosure. The principal threats include the following categories.
+### 18.1 The Database Security Landscape
 
-Unauthorized access occurs when an attacker gains access to data without proper authorization. This may result from weak authentication, credential theft, or privilege escalation. Unauthorized modification involves the alteration of data by an unauthorized party, which can result in data corruption, financial fraud, or reputational damage. Denial of service attacks render the database unavailable to legitimate users through resource exhaustion or network flooding. SQL injection attacks exploit vulnerabilities in application code to execute arbitrary SQL commands. Insider threats originate from users with legitimate access who exploit their privileges for malicious purposes. Data exfiltration involves the unauthorized extraction of sensitive data, often through covert channels or compromised credentials.
+Databases store an organization's most valuable asset — data. Security breaches can lead to:
 
-## 18.2 Access Control
+- **Financial loss:** Fines (GDPR: up to 4% of global revenue), fraud
+- **Reputation damage:** Loss of customer trust
+- **Legal liability:** Lawsuits, regulatory action
+- **Operational disruption:** Ransomware, data destruction
 
-Discretionary Access Control (DAC) governs access based on the identity of the user and authorization rules. In SQL, DAC is implemented through the GRANT and REVOKE statements. The owner of a database object has full control and can grant privileges to other users. Privileges include SELECT, INSERT, UPDATE, DELETE, REFERENCES, and EXECUTE. The GRANT OPTION allows a user to pass privileges to others. DAC is flexible but does not prevent a user with legitimate access from propagating data to unauthorized recipients.
+**Threat Categories:**
 
-GRANT SELECT, INSERT ON Employee TO user_alice WITH GRANT OPTION;
-REVOKE INSERT ON Employee FROM user_alice CASCADE;
+| Threat | Example | Impact |
+|--------|---------|--------|
+| SQL Injection | `' OR 1=1 --` | Data exfiltration |
+| Credential theft | Stolen DB passwords | Full database access |
+| Privilege escalation | User gets admin rights | Unauthorized access |
+| Insider threat | Employee exports customer data | Data leak |
+| Network eavesdropping | Unencrypted connection | Credential/data theft |
+| Backup compromise | Stolen backup tapes | Offline data access |
+| Social engineering | DBA tricked into revealing password | Credential compromise |
+| Ransomware | Encrypt database files | Data unavailability |
 
-Mandatory Access Control (MAC) enforces access based on classifications assigned to both subjects (users) and objects (data). Each subject has a clearance level. Each object has a classification level. A subject can read an object only if the subject's clearance is at least the object's classification. A subject can write an object only if the subject's clearance is at most the object's classification, preventing the writing of high-classification data into low-classification objects. MAC is more restrictive than DAC and is used in military and intelligence applications. The Bell-LaPadula model formalizes MAC for confidentiality, while the Biba model addresses integrity.
+### 18.2 Authentication
 
-Role-Based Access Control (RBAC) mediates access through roles. Permissions are assigned to roles, and roles are assigned to users. RBAC simplifies administration because permissions change less frequently than personnel assignments. A user may have multiple roles, and roles may be organized hierarchically. The SQL standard supports roles through the CREATE ROLE, GRANT, and REVOKE statements.
+Authentication verifies the identity of a user or application connecting to the database.
 
-CREATE ROLE manager;
-GRANT SELECT, INSERT, UPDATE ON Employee TO manager;
-GRANT manager TO user_alice;
+**Password Authentication:**
 
-RBAC is the dominant access control model in enterprise database systems because it balances security with administrative practicality.
+```sql
+-- PostgreSQL: Create user with password
+CREATE USER app_user WITH PASSWORD 'StrongP@ssw0rd!';
 
-## 18.3 SQL Injection Prevention
+-- Always enforce password complexity
+-- Use SCRAM-SHA-256 (PostgreSQL 10+) for secure password storage
+SET password_encryption = 'scram-sha-256';
 
-SQL injection is one of the most common and dangerous database security vulnerabilities. It occurs when user input is incorporated into SQL statements without proper sanitization, allowing an attacker to modify the query structure.
+-- MySQL
+CREATE USER 'app_user'@'192.168.1.%' IDENTIFIED BY 'StrongP@ssw0rd!';
+```
 
-Consider a login query constructed as follows:
+**Certificate-Based Authentication:**
 
-query = "SELECT * FROM Users WHERE username = '" + username + "' AND password = '" + password + "'";
+```sql
+-- PostgreSQL: Certificate authentication
+-- pg_hba.conf:
+-- hostssl all all 0.0.0.0/0 cert clientcert=1
 
-If an attacker provides the username admin' --, the query becomes:
+CREATE USER ssl_user;
+-- User must present valid client certificate matching common name
+```
 
-SELECT * FROM Users WHERE username = 'admin' --' AND password = '';
+**LDAP/Active Directory Integration:**
 
-The comment operator -- removes the password check, allowing the attacker to log in as admin without knowing the password. More dangerous injection attacks can modify data, execute stored procedures, or read arbitrary tables.
+```sql
+-- PostgreSQL with LDAP
+-- pg_hba.conf:
+-- host all all 0.0.0.0/0 ldap ldapserver=ldap.example.com ldapprefix="cn=" ldapsuffix=",dc=example,dc=com"
 
-Prevention strategies include the following. Parameterized queries, also called prepared statements, separate SQL code from data. Placeholders in the SQL statement are bound to parameter values by the database driver, which automatically escapes special characters. Stored procedures can encapsulate SQL logic and accept parameters without dynamic query construction. Input validation rejects or sanitizes values that do not match expected patterns. The principle of least privilege ensures that database accounts used by applications have only the minimum necessary permissions.
+-- MySQL with LDAP
+CREATE USER 'external_user' IDENTIFIED WITH auth_ldap_simple
+  AS 'uid=app_user,ou=People,dc=example,dc=com';
+```
 
-Parameterized query example in Java:
+**Multi-Factor Authentication:**
 
-PreparedStatement pstmt = connection.prepareStatement(
-    "SELECT * FROM Users WHERE username = ? AND password = ?"
+- Increasingly supported via PAM modules or connection poolers (PgBouncer)
+- Combine database password with client certificate, TOTP, or SSH key
+
+**Best Practices:**
+- Never use default or blank passwords
+- Rotate passwords regularly (or use short-lived credentials via vaults)
+- Use separate credentials for each application
+- Revoke credentials immediately when personnel leave
+- Use connection pooling with credential management (PgBouncer, ProxySQL)
+
+### 18.3 Authorization and Access Control
+
+**RBAC (Role-Based Access Control):**
+
+```sql
+-- PostgreSQL: Create roles and grant privileges
+CREATE ROLE read_only;
+CREATE ROLE read_write;
+CREATE ROLE admin;
+
+-- Grant privileges to roles
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO read_only;
+GRANT INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO read_write;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO admin;
+
+-- Assign roles to users
+GRANT read_only TO alice;       -- Alice can only read
+GRANT read_write TO bob;        -- Bob can read and write
+GRANT admin TO carol;           -- Carol is admin
+
+-- Column-level permissions (PostgreSQL)
+GRANT SELECT (id, name, email) ON users TO support_team;
+REVOKE SELECT (credit_card, ssn) ON users FROM support_team;
+```
+
+**MySQL:**
+
+```sql
+-- MySQL: User-level privileges
+CREATE USER 'analyst'@'%' IDENTIFIED BY 'password';
+GRANT SELECT ON company.* TO 'analyst'@'%';
+GRANT SELECT, INSERT, UPDATE ON company.orders TO 'analyst'@'%';
+
+-- Revoke granular access
+REVOKE SELECT (ssn), SELECT (salary) ON company.employees FROM 'analyst'@'%';
+```
+
+**Principle of Least Privilege:**
+- Grant the minimum permissions needed
+- Prefer role-based grants over per-user grants
+- Regularly audit and revoke unused permissions
+- Never use superuser accounts for application connections
+
+**Default-Deny:**
+
+```sql
+-- PostgreSQL: Revoke all from public
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON ALL TABLES IN SCHEMA public FROM PUBLIC;
+
+-- Then explicitly grant only what's needed
+GRANT USAGE ON SCHEMA public TO app_role;
+GRANT SELECT, INSERT, UPDATE ON orders TO app_role;
+```
+
+### 18.4 SQL Injection
+
+SQL injection is the most critical database security vulnerability. It occurs when user input is directly concatenated into SQL queries.
+
+**Vulnerable Code (NEVER do this):**
+
+```python
+# BAD — vulnerable to SQL injection
+user_input = request.GET["username"]  # User enters: ' OR '1'='1
+query = f"SELECT * FROM users WHERE username = '{user_input}'"
+cursor.execute(query)
+
+# Now: SELECT * FROM users WHERE username = '' OR '1'='1'
+# Returns ALL users!
+```
+
+**Malicious Input Examples:**
+
+```sql
+-- Input: ' OR 1=1 --
+SELECT * FROM users WHERE username = '' OR 1=1 --' AND password = 'x'
+-- Returns all users (comments out password check)
+
+-- Input: '; DROP TABLE users; --
+SELECT * FROM users WHERE username = ''; DROP TABLE users; --'
+-- Deletes entire table
+
+-- Input: ' UNION SELECT credit_card FROM payments --
+SELECT * FROM users WHERE username = '' UNION SELECT credit_card FROM payments --'
+-- Data exfiltration via UNION
+
+-- Blind SQL injection (boolean-based)
+-- Input: ' OR (SELECT COUNT(*) FROM users) > 0 --
+-- If page returns normally, attacker knows table exists
+```
+
+**Defensive Measures:**
+
+**1. Parameterized Queries (Prepared Statements) — BEST:**
+
+```python
+# Python with psycopg2 — SAFE
+cursor.execute(
+    "SELECT * FROM users WHERE username = %s AND password = %s",
+    (username, password)
+)
+
+# Python with SQLAlchemy — SAFE
+result = session.query(User).filter(
+    User.username == username,
+    User.password == password
+).all()
+
+# Java with JDBC — SAFE
+PreparedStatement ps = conn.prepareStatement(
+    "SELECT * FROM users WHERE username = ? AND password = ?"
 );
-pstmt.setString(1, username);
-pstmt.setString(2, password);
+ps.setString(1, username);
+ps.setString(2, password);
+ResultSet rs = ps.executeQuery();
 
-## 18.4 Encryption
+# Node.js with pg — SAFE
+const result = await client.query(
+    'SELECT * FROM users WHERE username = $1 AND password = $2',
+    [username, password]
+);
+```
 
-Encryption protects data from unauthorized access even when other security mechanisms are bypassed. Transparent Data Encryption (TDE) encrypts the entire database at the storage level. Data is automatically encrypted when written to disk and decrypted when read into memory. TDE protects against media theft, backup compromise, and unauthorized file access. TDE operates below the database engine and is transparent to applications.
+**2. Stored Procedures:**
 
-Column-level encryption encrypts specific sensitive columns, such as social security numbers or credit card numbers. The application or database engine encrypts the value before storage and decrypts it on retrieval. Column-level encryption provides finer granularity than TDE but requires key management infrastructure and may affect query performance because encrypted columns cannot be indexed efficiently.
+```sql
+CREATE OR REPLACE FUNCTION get_user(p_username TEXT, p_password TEXT)
+RETURNS TABLE(id INT, username TEXT, email TEXT) AS $$
+BEGIN
+    RETURN QUERY
+    SELECT id, username, email FROM users
+    WHERE username = p_username AND password_hash = crypt(p_password, password_hash);
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+```
 
-Encryption in transit protects data as it travels between the database and clients. TLS (Transport Layer Security) encrypts the network connection. Most database protocols support TLS encryption, and many regulatory frameworks require it.
+**3. Input Validation (defense in depth):**
 
-Key management is the most challenging aspect of database encryption. Encryption keys must be stored separately from encrypted data, rotated periodically, and protected against unauthorized access. Hardware security modules (HSMs) provide tamper-resistant key storage. Key vault services, such as AWS KMS and Azure Key Vault, offer managed key management.
+```python
+import re
 
-## 18.5 Auditing
+def sanitize_username(username):
+    # Whitelist approach: only allow alphanumeric
+    if not re.match(r'^[a-zA-Z0-9_]+$', username):
+        raise ValueError("Invalid username")
+    return username
+```
 
-Database auditing records and monitors database activity for security analysis, compliance reporting, and forensic investigation. Audit logs capture events such as login attempts, data modifications, schema changes, and privilege grants. The audit trail provides evidence for investigating security incidents and demonstrating regulatory compliance.
+**4. Least Privilege for Application User:**
 
-Fine-grained auditing allows selective monitoring of specific operations on specific objects. For example, an auditor might monitor all SELECT statements on the Patient table or all GRANT statements by any user.
+```sql
+-- App user should NOT have DROP or TRUNCATE permissions
+CREATE ROLE app_user LOGIN PASSWORD 'app_password';
+GRANT SELECT, INSERT, UPDATE ON orders TO app_user;
+GRANT SELECT, INSERT, UPDATE ON customers TO app_user;
+-- NO DROP, NO TRUNCATE, NO CREATE
+```
 
-Audit records should be stored in a secure, append-only location that is separate from the audited database. Audit log tampering must be detectable. Many compliance frameworks require that audit logs be retained for specified periods, often several years.
+**5. Query Monitoring (detect injection attempts):**
 
-Automated audit analysis detects anomalous patterns that may indicate security incidents. Unusual login times, repeated failed authentication attempts, bulk data extraction, and privilege escalation attempts are common audit-based detection signals.
+```sql
+-- Log all queries for analysis
+ALTER DATABASE mydb SET log_statement = 'all';
 
-## 18.6 GDPR Compliance
+-- Detect suspicious patterns
+SELECT query, calls, total_time FROM pg_stat_statements
+WHERE query ~* '(union.*select|drop|truncate|exec|xp_cmdshell|--|;)';
+```
 
-The General Data Protection Regulation (GDPR) imposes requirements on any organization that processes the personal data of European Union residents. GDPR compliance affects database design and administration in several areas.
+### 18.5 Encryption
 
-The right to erasure, also called the right to be forgotten, requires that organizations delete personal data upon request. Database schemas must support efficient deletion of all data associated with a specific individual. Cascade deletion rules must be carefully designed to avoid integrity violations.
+**Encryption at Rest:**
 
-Data minimization requires that organizations collect and retain only the personal data necessary for the specified purpose. Database schemas should not include optional personal data fields that are not needed. Retention policies must be implemented to purge data that has reached its retention limit.
+```sql
+-- PostgreSQL: pgcrypto extension for column-level encryption
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
-Pseudonymization and anonymization reduce the risk of processing personal data. Pseudonymization replaces identifying fields with artificial identifiers, allowing data processing without direct identification. Anonymization irreversibly removes identifying information, transforming the data so that individuals cannot be re-identified.
+-- Encrypt sensitive data
+INSERT INTO users (username, ssn)
+VALUES ('bob', pgp_sym_encrypt('123-45-6789', 'encryption_key'));
 
-Data portability requires that organizations provide personal data in a structured, commonly used, machine-readable format upon request. Database systems must support exporting data in formats such as JSON or CSV.
+-- Decrypt when needed
+SELECT username, pgp_sym_decrypt(ssn, 'encryption_key') AS ssn
+FROM users WHERE id = 1;
 
-Breach notification requires that organizations report personal data breaches to supervisory authorities within 72 hours. Database audit logs and monitoring systems must provide sufficient information to determine the scope and impact of a breach.
+-- Key management: Use a vault (HashiCorp Vault, AWS KMS)
+-- Never hardcode keys in application code or database functions
+```
+
+**MySQL:**
+
+```sql
+-- MySQL: AES encryption
+INSERT INTO users (username, ssn)
+VALUES ('bob', AES_ENCRYPT('123-45-6789', 'encryption_key'));
+
+SELECT username, AES_DECRYPT(ssn, 'encryption_key') AS ssn
+FROM users WHERE id = 1;
+```
+
+**Transparent Data Encryption (TDE):** Encrypt entire database files at the filesystem level.
+
+```sql
+-- SQL Server: TDE
+CREATE DATABASE ENCRYPTION KEY
+  WITH ALGORITHM = AES_256
+  ENCRYPTION BY SERVER CERTIFICATE MyServerCert;
+
+ALTER DATABASE MyDatabase SET ENCRYPTION ON;
+
+-- Oracle: TDE
+-- Column-level
+CREATE TABLE employees (
+  emp_id NUMBER,
+  ssn VARCHAR2(11) ENCRYPT USING 'AES256'
+);
+
+-- Tablespace-level
+CREATE TABLESPACE secure_ts
+  DATAFILE 'secure01.dbf' SIZE 100M
+  ENCRYPTION USING 'AES256' DEFAULT STORAGE(ENCRYPT);
+```
+
+**Encryption in Transit:**
+
+```sql
+-- PostgreSQL: Force SSL connections
+-- postgresql.conf:
+ssl = on
+ssl_cert_file = 'server.crt'
+ssl_key_file = 'server.key'
+ssl_ca_file = 'root.crt'
+
+-- pg_hba.conf: Require SSL for all connections
+hostssl all all 0.0.0.0/0 md5
+
+-- MySQL: Force SSL
+-- my.cnf:
+[mysqld]
+ssl-ca = /path/to/ca.pem
+ssl-cert = /path/to/server-cert.pem
+ssl-key = /path/to/server-key.pem
+require_secure_transport = ON
+
+-- Client connection string (verify server identity)
+psql "host=db.example.com port=5432 dbname=mydb sslmode=verify-full sslrootcert=root.crt"
+```
+
+### 18.6 Auditing
+
+**Logging Database Activity:**
+
+```sql
+-- PostgreSQL: Audit log via configuration
+-- postgresql.conf:
+log_statement = 'ddl'       -- Log schema changes
+log_duration = on           -- Log query duration
+log_connections = on        -- Log all connections
+log_disconnections = on     -- Log all disconnections
+log_line_prefix = '%t %u %d %r '  -- Timestamp, user, database, host
+
+-- MySQL: General query log (caution — high volume)
+SET GLOBAL general_log = ON;
+
+-- Better: MySQL Audit Plugin (Enterprise)
+INSTALL PLUGIN audit_log SONAME 'audit_log.so';
+```
+
+**pgaudit (PostgreSQL Extension):**
+
+```sql
+-- Load pgaudit extension
+CREATE EXTENSION IF NOT EXISTS pgaudit;
+
+-- Configure audit
+SET pgaudit.log = 'write,ddl,role';
+SET pgaudit.log_level = 'notice';
+SET pgaudit.log_relation = ON;
+SET pgaudit.log_catalog = OFF;
+
+-- Now all DDL, DML writes, and role changes are logged with:
+-- AUDIT: SESSION,1,1,DDL,CREATE TABLE,,,CREATE TABLE employees(...),<not logged>
+```
+
+**Database Activity Monitoring (DAM):** Third-party tools that monitor database traffic in real-time:
+
+- **Imperva SecureSphere:** Analyzes SQL traffic, blocks injection
+- **Guardium:** IBM's DAM solution
+- **DataSunrise:** Database firewall with audit
+
+**UNIFIED AUDIT (Oracle 12c+):**
+
+```sql
+-- Create unified audit policy
+CREATE AUDIT POLICY sensitive_data_access
+  ACTIONS SELECT ON employees.salary
+  ACTIONS SELECT ON customers.credit_card
+  WHEN 'SYS_CONTEXT(''USERENV'',''SESSION_USER'') != ''ADMIN'''
+  EVALUATE PER SESSION;
+
+-- Enable policy
+AUDIT POLICY sensitive_data_access;
+
+-- View audit trail
+SELECT * FROM unified_audit_trail
+  WHERE unified_audit_policies = 'SENSITIVE_DATA_ACCESS';
+```
+
+### 18.7 Row-Level Security
+
+SQL databases can enforce access control based on row properties.
+
+**PostgreSQL Row-Level Security (RLS):**
+
+```sql
+-- Create a table with sensitive data
+CREATE TABLE customer_data (
+    customer_id INT,
+    region TEXT,
+    revenue DECIMAL,
+    contact_name TEXT,
+    ssn TEXT
+);
+
+-- Enable RLS
+ALTER TABLE customer_data ENABLE ROW LEVEL SECURITY;
+
+-- Create policies
+CREATE POLICY region_isolation ON customer_data
+    FOR ALL
+    USING (region = current_setting('app.region'));
+
+CREATE POLICY manager_access ON customer_data
+    FOR SELECT
+    USING (current_user IN (SELECT user_name FROM regional_managers WHERE region = region));
+
+-- Now users only see rows matching their region
+
+-- Example: User in 'EU' region
+SET app.region = 'EU';
+SELECT * FROM customer_data;
+-- Only shows rows where region = 'EU'
+```
+
+**SQL Server Row-Level Security:**
+
+```sql
+-- Create predicate function
+CREATE FUNCTION dbo.fn_security_predicate(@region SYSNAME)
+    RETURNS TABLE
+    WITH SCHEMABINDING
+AS
+    RETURN SELECT 1 AS result
+    WHERE @region = USER_NAME()
+    OR USER_NAME() = 'admin';
+
+-- Create security policy
+CREATE SECURITY POLICY RegionFilter
+    ADD FILTER PREDICATE dbo.fn_security_predicate(region)
+    ON dbo.customer_data;
+```
+
+### 18.8 Dynamic Data Masking
+
+Hide sensitive data from non-privileged users.
+
+**SQL Server Dynamic Data Masking:**
+
+```sql
+CREATE TABLE employees (
+    emp_id INT,
+    name VARCHAR(100),
+    email VARCHAR(100) MASKED WITH (FUNCTION = 'email()'),
+    ssn VARCHAR(11) MASKED WITH (FUNCTION = 'partial(0,"XXX-XX-",4)'),
+    salary DECIMAL(10,2) MASKED WITH (FUNCTION = 'default()')
+);
+
+-- Unmasked view (admin):
+SELECT * FROM employees;
+-- emp_id: 1, name: Alice, email: alice@example.com, ssn: 123-45-6789, salary: 120000
+
+-- Masked view (regular user):
+SELECT * FROM employees;
+-- emp_id: 1, name: Alice, email: aXXX@XXXX.com, ssn: XXX-XX-6789, salary: 0.00
+```
+
+**PostgreSQL: Custom masking via views:**
+
+```sql
+-- Create a masked view
+CREATE VIEW employees_public AS
+SELECT
+    emp_id,
+    name,
+    CASE WHEN current_user IN ('hr_dept', 'admin') THEN email
+         ELSE regexp_replace(email, '(.)(.*)(@.*)', '\1***\3') END AS email_masked,
+    CASE WHEN current_user IN ('hr_dept', 'admin') THEN ssn
+         ELSE 'XXX-XX-' || substring(ssn, 8, 4) END AS ssn_masked
+FROM employees;
+
+-- Grant access to view, not base table
+REVOKE ALL ON employees FROM PUBLIC;
+GRANT SELECT ON employees_public TO PUBLIC;
+```
+
+### 18.9 Backup Security
+
+Backups are a frequent target for attackers. Secure them:
+
+```sql
+-- pg_dump with encryption
+pg_dump mydb | gpg --symmetric --cipher-algo AES256 -o backup.sql.gpg
+
+-- MySQL with encryption
+mysqldump --all-databases | gzip | openssl enc -aes-256-cbc -out backup.sql.gz.enc
+
+-- Best practices:
+-- 1. Encrypt all backups (at rest and in transit)
+-- 2. Store backups offsite (geographically separate)
+-- 3. Test restore procedures regularly
+-- 4. Limit access to backup files (IAM/bucket policies)
+-- 5. Use immutable storage (S3 Object Lock)
+-- 6. Rotate encryption keys
+```
+
+### 18.10 GDPR and Data Privacy
+
+**GDPR Principles (applies to EU personal data):**
+1. **Lawfulness, fairness, transparency:** Tell users what data you collect and why
+2. **Purpose limitation:** Only collect data for specified purposes
+3. **Data minimization:** Collect only necessary data
+4. **Accuracy:** Keep data accurate and up to date
+5. **Storage limitation:** Delete data when no longer needed
+6. **Integrity and confidentiality:** Secure data appropriately
+7. **Accountability:** Demonstrate compliance
+
+**Database Implementation:**
+
+```sql
+-- Data minimization: Mask or pseudo-anonymize personal data
+CREATE VIEW analytics_users AS
+SELECT
+    id,
+    age_range(CASE WHEN age >= 18 THEN age ELSE NULL END) AS age_group,
+    substring(email, 1, 1) || '@' || split_part(email, '@', 2) AS anonymized_email,
+    CASE WHEN current_setting('app.purpose') = 'analytics'
+         THEN NULL ELSE city
+    END AS location
+FROM users;
+
+-- Right to be forgotten (GDPR Article 17)
+-- Option 1: Hard delete
+DELETE FROM users WHERE email = 'user@example.com';
+
+-- Option 2: Anonymization (keep record but remove identifiers)
+UPDATE users SET
+    email = 'deleted-' || id || '@example.com',
+    name = 'Deleted User',
+    phone = NULL,
+    address = NULL
+WHERE id = 42;
+
+-- Data retention: Automatically expire old data
+DELETE FROM raw_logs WHERE created_at < NOW() - INTERVAL '90 days';
+
+-- Use PostgreSQL TTL pattern (no native TTL):
+CREATE VIEW active_sessions AS
+SELECT * FROM sessions WHERE last_access > NOW() - INTERVAL '30 minutes';
+```
+
+## Examples
+
+**Example 18.1: Complete Security Setup**
+
+```sql
+-- 1. Create roles hierarchy
+CREATE ROLE app_readonly;
+CREATE ROLE app_readwrite;
+CREATE ROLE app_admin;
+
+-- 2. Grant table-level permissions
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO app_readonly;
+GRANT INSERT, UPDATE, DELETE ON orders, order_items, customers TO app_readwrite;
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO app_admin;
+
+-- 3. Create application user (least privilege)
+CREATE USER web_app WITH PASSWORD 'secure_password';
+GRANT app_readwrite TO web_app;
+
+-- 4. Create admin user
+CREATE USER db_admin WITH PASSWORD 'admin_password';
+GRANT app_admin TO db_admin;
+
+-- 5. Create reporting user (read-only)
+CREATE USER reporting WITH PASSWORD 'report_password';
+GRANT app_readonly TO reporting;
+
+-- 6. Enable RLS for multi-tenant data
+ALTER TABLE customer_orders ENABLE ROW LEVEL SECURITY;
+CREATE POLICY tenant_isolation ON customer_orders
+    USING (tenant_id = current_setting('app.tenant_id')::INT);
+```
+
+**Example 18.2: SQL Injection Safe Coding**
+
+```python
+import psycopg2
+from psycopg2 import sql
+
+def get_user_orders(user_id, status=None):
+    conn = psycopg2.connect("dbname=mydb user=web_app")
+    cur = conn.cursor()
+
+    # SAFE: Using parameterized query
+    if status:
+        cur.execute("""
+            SELECT order_id, total, status, created_at
+            FROM orders
+            WHERE user_id = %s AND status = %s
+            ORDER BY created_at DESC
+        """, (user_id, status))
+    else:
+        cur.execute("""
+            SELECT order_id, total, status, created_at
+            FROM orders
+            WHERE user_id = %s
+            ORDER BY created_at DESC
+        """, (user_id,))
+
+    # SAFE: For dynamic identifiers (table/column names), use SQL composition
+    column = "order_id"  # Must be validated, not from user input
+    query = sql.SQL("SELECT {} FROM orders WHERE user_id = %s").format(
+        sql.Identifier(column)
+    )
+    cur.execute(query, (user_id,))
+
+    return cur.fetchall()
+```
+
+**Example 18.3: Audit Trail Implementation**
+
+```sql
+-- Create audit table
+CREATE TABLE audit_log (
+    id BIGSERIAL PRIMARY KEY,
+    user_name TEXT,
+    table_name TEXT,
+    operation TEXT,      -- INSERT, UPDATE, DELETE
+    old_data JSONB,
+    new_data JSONB,
+    query TEXT,
+    ip_address INET,
+    changed_at TIMESTAMPTZ DEFAULT NOW(),
+    application TEXT
+);
+
+-- Create audit trigger function
+CREATE OR REPLACE FUNCTION audit_trigger()
+RETURNS TRIGGER AS $$
+BEGIN
+    INSERT INTO audit_log (
+        user_name, table_name, operation,
+        old_data, new_data, query, ip_address, application
+    ) VALUES (
+        session_user,
+        TG_TABLE_NAME,
+        TG_OP,
+        CASE WHEN TG_OP IN ('UPDATE', 'DELETE')
+             THEN row_to_json(OLD)::JSONB ELSE NULL END,
+        CASE WHEN TG_OP IN ('INSERT', 'UPDATE')
+             THEN row_to_json(NEW)::JSONB ELSE NULL END,
+        current_query(),
+        inet_client_addr(),
+        current_setting('app.name', TRUE)
+    );
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+-- Apply audit trigger to sensitive tables
+CREATE TRIGGER audit_customers
+    AFTER INSERT OR UPDATE OR DELETE ON customers
+    FOR EACH ROW EXECUTE FUNCTION audit_trigger();
+
+CREATE TRIGGER audit_payments
+    AFTER INSERT OR UPDATE OR DELETE ON payments
+    FOR EACH ROW EXECUTE FUNCTION audit_trigger();
+```
 
 ## Summary
 
-Database security is a multi-layered discipline encompassing access control, input validation, encryption, auditing, and regulatory compliance. Access control models range from simple discretionary grants to mandatory classification systems. SQL injection remains a prevalent vulnerability that is entirely preventable through parameterized queries. Encryption protects data at rest and in transit. Auditing provides accountability. GDPR compliance imposes specific requirements on database systems that process personal data.
+- Database security requires defense in depth: authentication, authorization, encryption, auditing.
+- SQL injection is the most critical risk — always use parameterized queries.
+- Least privilege: grant minimum permissions needed, never use superuser for apps.
+- Encryption at rest (TDE, column-level) and in transit (SSL/TLS) protects data.
+- Row-level security and dynamic data masking provide fine-grained access control.
+- Auditing is essential for compliance and breach detection.
+- GDPR requires data minimization, right to be forgotten, and retention policies.
+- Backups must be encrypted, tested, and stored securely.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. How does RBAC simplify database security administration compared to DAC?
-2. What is the principle of least privilege, and how does it relate to database security?
-3. Why does column-level encryption prevent efficient indexing?
-4. What events should be captured in a database audit log?
-5. What is data pseudonymization and how does it differ from anonymization?
+1. Explain the principle of least privilege in database security. Give an example of a good vs. poor permission setup for an e-commerce application user.
 
-### Application Problems
+2. What is SQL injection? Write an example of vulnerable code and its safe equivalent using parameterized queries.
 
-1. Design an RBAC scheme for a hospital database containing tables for Patients, Doctors, Appointments, MedicalRecords, and Billing. Define roles for Doctor, Nurse, Administrator, and BillingStaff. Specify the permissions each role should have. Explain your reasoning.
-2. The following PHP code is vulnerable to SQL injection. Rewrite it using parameterized queries:
+3. What is the difference between encryption at rest and encryption in transit? When is each needed?
 
-$name = $_GET['name'];
-$result = mysql_query("SELECT * FROM Products WHERE name LIKE '%$name%'");
+4. Create a PostgreSQL user with SELECT-only access on the `orders` table.
 
-3. Design a database audit policy for a financial application. Specify which operations on which tables should be audited, how the audit logs should be protected, and how long they should be retained. Explain how you would detect a data exfiltration attempt from the audit logs.
+### Intermediate
 
-### Challenge Problem
+5. Design a role hierarchy for a hospital database with: doctors (read/write patient records), nurses (read patient records, update vitals), administrators (read billing data), and auditors (read-only everything). Show the SQL to create roles, grant permissions, and assign users.
 
-Design a comprehensive database security architecture for a multi-tenant SaaS application. Each tenant's data must be isolated from other tenants. The architecture must address authentication, access control, encryption (at rest and in transit), SQL injection prevention, auditing, and GDPR compliance. Compare the advantages and disadvantages of three isolation strategies: separate databases per tenant, separate schemas with shared database, and row-level security within shared tables. Recommend the appropriate strategy for a healthcare SaaS application and justify your recommendation.
+6. Implement row-level security for a multi-tenant SaaS application. Each tenant should only see their own data. Show the RLS policy and explain how it works at query time.
+
+7. Write a SQL injection attack and defense walkthrough:
+   - Show the vulnerable query
+   - Demonstrate three different injection payloads
+   - Show the corrected parameterized version
+   - Explain why the parameterized version is safe
+
+8. What is the difference between dynamic data masking and encryption? When would you use each? Can a user bypass data masking?
+
+### Advanced
+
+9. Design a complete database security audit system that:
+   - Logs all DDL changes (schema modifications)
+   - Logs all DML on sensitive tables (customers, payments)
+   - Logs all failed login attempts
+   - Provides a query interface for the security team to search audit logs
+   - Implements audit log retention and rotation
+   - Prevents tampering with audit logs (append-only)
+   Show the schema, triggers, and queries.
+
+10. Implement a key management system for column-level encryption:
+    - Use a master key stored in an external vault (HashiCorp Vault or AWS KMS)
+    - Generate data encryption keys per table/column
+    - Rotate keys without re-encrypting all data (envelope encryption)
+    - Handle key loss recovery
+    Show the architecture, SQL functions, and key lifecycle.
+
+11. GDPR's "right to be forgotten" (Article 17) requires deletion of personal data on request. But in a relational database, deleting a user's data may violate referential integrity and destroy analytics data. Design a strategy that:
+    - Removes personally identifiable information (PII)
+    - Preserves aggregate analytics and business records
+    - Maintains referential integrity
+    - Supports audit requirements
+    - Works at scale (millions of users)
+    Compare hard delete, soft delete, and anonymization approaches.

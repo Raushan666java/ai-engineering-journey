@@ -1,215 +1,435 @@
-# Chapter 17 — Virtualization
+# Chapter 17: Virtualization
 
 ## Learning Objectives
 
-1. Distinguish full virtualisation, paravirtualisation, and OS-level virtualisation.
-2. Compare Type 1 and Type 2 hypervisors.
-3. Explain the performance overhead of virtualisation and hardware-assisted techniques.
-4. Understand containers and their relationship to the host OS.
-5. Describe Docker and Kubernetes at an architectural level.
+- Define virtualization and distinguish it from emulation and paravirtualization
+- Explain hypervisor types: Type 1 (bare-metal) vs Type 2 (hosted)
+- Describe hardware-assisted virtualization (Intel VT-x, AMD-V)
+- Contrast containers vs virtual machines in terms of isolation and overhead
+- Explain paravirtualization and its performance benefits
+- Understand memory virtualization: shadow page tables vs nested paging
+- Describe the Linux KVM and Docker architectures
 
-## 17.1 Why Virtualization?
+## Theory
 
-Virtualisation decouples software from physical hardware, enabling multiple virtual machines (VMs) to share a single physical host. Benefits include:
+### Virtualization Concepts
 
-- **Server consolidation**: Many underutilised physical servers replaced by VMs on fewer hosts.
-- **Isolation**: Faults and security breaches in one VM do not affect others.
-- **Portability**: VMs can migrate between hosts (live migration).
-- **Legacy support**: Run old OSs on modern hardware.
-- **Development and testing**: Snapshots of system state can be created and restored instantly.
-
-## 17.2 Virtualization Types
-
-### 17.2.1 Full Virtualization
-
-The hypervisor presents a complete virtual hardware platform to the guest OS. The guest OS is unmodified, running as if on physical hardware. The hypervisor must handle **sensitive** but **non-privileged** instructions — instructions that modify or read hardware state and must be trapped and emulated.
-
-On x86, approximately 17 instructions (including `POPF`, `PUSHF`, and certain segment-register operations) fall into this category. Binary translation was used to handle them before hardware support existed.
-
-### 17.2.2 Paravirtualization
-
-The guest OS is modified to replace sensitive instructions with explicit **hypercalls** — direct calls to the hypervisor. This eliminates the need for binary translation and improves performance. The guest OS "knows" it is virtualised and cooperates with the hypervisor.
-
-Xen pioneered paravirtualization with modified Linux, FreeBSD, and NetBSD kernels. The disadvantage is the need to maintain out-of-tree kernel patches for each OS version.
-
-### 17.2.3 Hardware-Assisted Virtualization
-
-Modern CPUs (Intel VT-x, AMD-V) provide a new CPU mode for hypervisors:
-
-- **Root mode**: The hypervisor runs in a new, more privileged ring.
-- **Non-root mode**: Guest OSs run in a slightly less privileged ring mode.
-
-Sensitive instructions are automatically trapped and handled by the hypervisor without binary translation. This dramatically simplifies the hypervisor and reduces overhead. Almost all modern VMMs (KVM, VMware, Hyper-V) use hardware-assisted virtualisation.
-
-## 17.3 Hypervisor Architectures
-
-### 17.3.1 Type 1 (Bare-Metal)
-
-The hypervisor runs directly on the hardware. The first VM is typically a management partition (Domain 0 in Xen) that runs the management toolstack and device drivers.
+**Virtualization** is the creation of a virtual version of a resource (CPU, memory, storage, network). A **virtual machine (VM)** is an isolated environment that runs its own operating system and appears as a physical machine to that OS.
 
 ```
-┌─────────┐ ┌─────────┐ ┌─────────┐
-│  VM 1   │ │  VM 2   │ │  VM 3   │
-│ (Guest) │ │ (Guest) │ │ (Guest) │
-└────┬────┘ └────┬────┘ └────┬────┘
-     └───────────┼───────────┘
-                 ▼
-         ┌───────────────┐
-         │  Hypervisor   │
-         │  (Type 1)     │
-         └───────┬───────┘
-                 ▼
-         ┌───────────────┐
-         │   Hardware    │
-         └───────────────┘
+Virtual Machine:
+┌─────────────────────────────────────────────┐
+│  App A    App B          App C    App D      │
+│  Guest OS (Linux)         Guest OS (BSD)     │
+│  Virtual Hardware         Virtual Hardware   │
+│  ──────────────────────────────────────────  │
+│            Hypervisor (VMM)                  │
+│  ──────────────────────────────────────────  │
+│              Physical Hardware               │
+│  (CPU, Memory, Disk, NIC, GPU)              │
+└─────────────────────────────────────────────┘
 ```
 
-Examples: VMware ESXi, Microsoft Hyper-V, Xen, KVM (Linux kernel module).
+#### Emulation vs Virtualization vs Paravirtualization
 
-### 17.3.2 Type 2 (Hosted)
+| Approach | Technique | Performance | Example |
+|----------|-----------|-------------|---------|
+| **Emulation** | Software mimics entire hardware | Very slow | QEMU (no KVM), Bochs |
+| **Full virtualization** | Guest runs unmodified; sensitive instructions trapped | ~80-95% native | VMware ESXi, KVM with Intel VT-x |
+| **Paravirtualization** | Guest OS is modified to call hypervisor directly | ~95-98% native | Xen (PV mode) |
+| **Hardware-assisted** | CPU extensions virtualize sensitive instructions | ~95-99% native | KVM, Hyper-V, VMware |
 
-The hypervisor runs as an application process on top of a host OS. The host OS provides device drivers and resource management.
+### Hypervisor Types
+
+#### Type 1: Bare-Metal Hypervisor
+
+The hypervisor runs directly on the hardware with no host OS.
 
 ```
-┌─────────┐ ┌─────────┐
-│  VM 1   │ │  VM 2   │
-│ (Guest) │ │ (Guest) │
-└────┬────┘ └────┬────┘
-     └────┬──────┘
-          ▼
-┌──────────────────┐
-│   Hypervisor     │
-│   (Type 2)       │
-├──────────────────┤
-│   Host OS        │
-├──────────────────┤
-│   Hardware       │
-└──────────────────┘
+┌──────────────────────────────────────────┐
+│ VM1           VM2           VM3           │
+│ (Linux)       (Windows)     (BSD)         │
+└──────────────┴──────────────┴─────────────┘
+              ┌──────────┐
+              │ Hypervisor│
+              │ (Xen,    │
+              │  VMware  │
+              │  ESXi)   │
+              └─────┬────┘
+              ┌─────┴────┐
+              │ Hardware  │
+              └──────────┘
 ```
 
-Examples: VirtualBox, VMware Workstation, QEMU (user mode).
+**Pros**: Minimal overhead, maximum performance, used in data centers.
+**Cons**: Device drivers must be in the hypervisor, management interface needed.
 
-## 17.4 CPU Virtualization
+#### Type 2: Hosted Hypervisor
 
-The guest OS expects to control the full machine state. The hypervisor must virtualise:
+The hypervisor runs as an application on a host OS.
 
-- **Privilege level**: Guest runs at ring 2 (or ring 0 in non-root mode with VT-x). The hypervisor intercepts attempts to change the page table, interrupt descriptor table, or control registers.
-- **Interrupts**: Physical interrupts are handled by the hypervisor, which injects virtual interrupts into the appropriate guest.
-- **Timers**: Guest-visible time must be independent of actual wall-clock time (or track it accurately).
-
-## 17.5 Memory Virtualization
-
-The guest OS manages **guest physical addresses** (GPAs). The hypervisor maps GPAs to **machine physical addresses** (MPAs). A two-level address translation is required:
-
-- Guest virtual address (GVA) → guest physical address (GPA) — managed by guest OS page table.
-- Guest physical address (GPA) → machine physical address (MPA) — managed by the hypervisor.
-
-**Shadow page tables**: The hypervisor maintains a direct mapping from GVA to MPA, updated whenever the guest changes its page table. This is expensive — each guest page-table modification causes a trap.
-
-**Hardware-assisted paging** (Intel EPT, AMD NPT): A second level of page tables in hardware translates GPA to MPA directly. The guest manages its own page tables normally; the MMU walks both levels transparently. EPT reduces the overhead of memory virtualisation to near zero.
-
-## 17.6 I/O Virtualization
-
-- **Emulated I/O**: The hypervisor presents a virtual device (e.g., RTL8139 network card). Guest drivers are unmodified, but emulation has high overhead.
-- **Paravirtualized I/O** (virtio): The guest uses a specialised driver that communicates with the hypervisor via shared memory rings. Nearly as fast as native.
-- **Passthrough (VT-d, SR-IOV)**: A physical device is assigned directly to a VM. The VM has exclusive, direct DMA access. SR-IOV (Single Root I/O Virtualization) splits a physical device into multiple virtual functions, each assignable to a different VM.
-
-## 17.7 Containers
-
-Containers provide OS-level virtualisation: multiple isolated user-space instances share a single kernel. Unlike VMs, containers do not run a separate kernel or emulate hardware.
-
-### 17.7.1 Namespaces
-
-Linux namespaces isolate global system resources:
-
-| Namespace | Isolates |
-|-----------|----------|
-| PID | Process IDs |
-| Network | Network interfaces, routing |
-| Mount | Filesystem mount points |
-| UTS | Hostname, domain name |
-| IPC | System V IPC, POSIX message queues |
-| User | User and group IDs |
-| Cgroup | Control group hierarchy |
-
-Each namespace gives the process inside it an independent view of the corresponding resource.
-
-### 17.7.2 Cgroups
-
-Control groups (cgroups) limit, account for, and isolate resource usage:
-
-- **cpu**: CPU time scheduling.
-- **memory**: Memory usage limits and accounting.
-- **blkio**: Block I/O throttling.
-- **net_prio**: Network priority.
-- **pids**: Number of processes/threads.
-
-A container is constructed by creating new namespaces and assigning cgroup limits for the process group.
-
-### 17.7.3 Docker
-
-Docker automates container creation, deployment, and execution. Key concepts:
-
-- **Image**: A read-only template (layered filesystem) containing the application and its dependencies.
-- **Container**: A runnable instance of an image (namespaced process + writable layer).
-- **Dockerfile**: Script to build an image:
-
-```dockerfile
-FROM ubuntu:22.04
-RUN apt-get update && apt-get install -y python3
-COPY app.py /app/
-CMD ["python3", "/app/app.py"]
+```
+┌──────────────────────────────────────────┐
+│ VM1           VM2           VM3           │
+│ (Linux)       (BSD)         (Windows)    │
+└──────────────┴──────────────┴─────────────┘
+              ┌──────────┐
+              │ Hypervisor│
+              │ (VirtualBox, │
+              │  VMware  │
+              │  Workstation)│
+              └─────┬────┘
+              ┌─────┴────┐
+              │  Host OS  │
+              │ (Linux)   │
+              └─────┬────┘
+              ┌─────┴────┐
+              │ Hardware  │
+              └──────────┘
 ```
 
-- **Registry**: Repository for images (Docker Hub, private registry).
+**Pros**: Easy to use, coexists with host OS, development-friendly.
+**Cons**: Double scheduling, more overhead, not for production.
 
-Each container sees its own filesystem, process table, and network stack, but shares the host kernel.
+### CPU Virtualization
 
-## 17.8 Kubernetes
+#### The Challenge
 
-Kubernetes (K8s) orchestrates containerised applications across a cluster of machines (nodes).
+The x86 architecture was not originally designed for virtualization. Some sensitive instructions (like `popf` or `lgdt`) silently fail in user mode rather than trapping.
 
-- **Pod**: The smallest deployable unit; one or more containers sharing a network namespace and storage.
-- **Node**: A worker machine running pods; managed by the kubelet agent.
-- **Control plane**: Manages the cluster state (API server, scheduler, controller-manager, etcd).
-
-Desired state is declared in YAML:
-
-```yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: web-server
-spec:
-  containers:
-  - name: nginx
-    image: nginx:latest
-    ports:
-    - containerPort: 80
+Ring levels in x86:
+```
+Ring 0: Kernel mode — most privileged
+Ring 1: Used by hypervisors in some schemes
+Ring 2: (Unused in practice)
+Ring 3: User mode — least privileged
 ```
 
-The control plane reads the desired state, schedules the pod to a node, and continually reconciles actual state with desired state. Pods are ephemeral — if a node fails, the scheduler recreates the pod on another node.
+**Trap-and-emulate**: Run the guest OS in Ring 1. Privileged instructions trigger a trap to the hypervisor (Ring 0), which emulates the operation. This was impossible on older x86 for some instructions.
+
+#### Hardware-Assisted Virtualization (Intel VT-x / AMD-V)
+
+Intel VT-x (and AMD-V) added new CPU modes:
+
+```
+VMX Root Mode (hypervisor):
+  ┌──────────────────────────┐
+  │ Hypervisor (KVM, VMware) │
+  │ Full Ring 0-3 access     │
+  └──────────────────────────┘
+
+VMX Non-Root Mode (guest):
+  ┌──────────────────────────┐
+  │ Guest OS + Applications  │
+  │ Guest thinks it has      │
+  │ Ring 0-3                  │
+  └──────────────────────────┘
+```
+
+When the guest executes a privileged instruction, the CPU automatically **VM-exits** to the hypervisor, which handles it and **VM-enter** resumes the guest.
+
+```c
+// Simplified KVM setup (conceptual)
+struct kvm_vcpu {
+    struct kvm_run *run;          // Shared page between host and guest
+    struct kvm_vcpu_arch arch;    // Architecture-specific state
+    
+    int vcpu_id;
+    struct kvm *kvm;              // Pointer to parent VM
+};
+
+// ioctl interface — user-space (QEMU) controls VCPUs
+int kvm_fd = open("/dev/kvm", O_RDWR);
+int vm_fd = ioctl(kvm_fd, KVM_CREATE_VM, 0);
+int vcpu_fd = ioctl(vm_fd, KVM_CREATE_VCPU, 0);
+
+// Run loop:
+while (1) {
+    ioctl(vcpu_fd, KVM_RUN, 0);  // VM-entry
+    // On VM-exit, KVM returns with reason in kvm_run->exit_reason
+    switch (kvm_run->exit_reason) {
+        case KVM_EXIT_IO:     // Handle port I/O
+        case KVM_EXIT_MMIO:   // Handle memory-mapped I/O
+        case KVM_EXIT_HLT:    // Guest halted
+        case KVM_EXIT_SHUTDOWN:
+    }
+}
+```
+
+### Memory Virtualization
+
+#### Shadow Page Tables
+
+The hypervisor maintains shadow page tables that map guest virtual addresses directly to host physical addresses.
+
+```
+Guest:  Guest Virtual Address (GVA)
+         ↓ Guest page table (guest thinks it maps to guest physical)
+         Guest Physical Address (GPA)
+         ↓ Hypervisor intercepts
+         Host Physical Address (HPA)
+
+Shadow page table: GVA → HPA (direct, maintained by hypervisor)
+```
+
+**Problem**: Every guest page table modification causes a VM-exit (expensive).
+
+#### Nested Page Tables (Intel EPT / AMD NPT)
+
+The CPU handles two levels of page tables simultaneously:
+
+- **Guest page table**: GVA → GPA (managed by guest OS)
+- **Extended page table**: GPA → HPA (managed by hypervisor)
+
+The CPU walks both tables in hardware — no VM-exit needed for page table updates.
+
+```
+GVA → GPA → HPA (single hardware walk)
+       ↑ EPT  ↑
+       (one CPU operation)
+
+Performance: ~10-15x fewer VM-exits than shadow page tables
+```
+
+### I/O Virtualization
+
+| Method | Description | Performance |
+|--------|-------------|-------------|
+| **Emulated I/O** | Hypervisor emulates real hardware (e.g., e1000 NIC) | Poor — every I/O traps |
+| **Paravirtualized I/O** | Guest uses virtio drivers (shared ring buffers) | Good — 80-90% of native |
+| **SR-IOV (passthrough)** | Physical device presents multiple virtual functions | Excellent — near-native |
+| **VFIO (passthrough)** | Dedicate PCI device to one VM via VFIO | Native performance |
+
+#### virtio — Paravirtualized I/O
+
+A standard interface for virtual I/O devices:
+
+```
+Guest (QEMU):
+  virtio-blk driver       virtio-net driver
+            │                     │
+            │  virtqueue (shared  │
+            │  ring buffer)       │
+            └──────┬──────────────┘
+                   │
+            ┌──────┴──────┐
+Guest memory │ virtio ring │ ← Shared between host and guest
+            └──────┬──────┘
+                   │
+Hypervisor         │
+  QEMU: ───────────┘
+  vhost-blk        vhost-net
+```
+
+### Containers vs Virtual Machines
+
+#### Virtual Machine
+
+```
+┌──────────┐ ┌──────────┐ ┌──────────┐
+│ App A    │ │ App B    │ │ App C    │
+│ Libs     │ │ Libs     │ │ Libs     │
+│ Guest OS │ │ Guest OS │ │ Guest OS │
+│ (full OS)│ │ (full OS)│ │ (full OS)│
+├──────────┴─┴──────────┴─┴──────────┤
+│            Hypervisor               │
+├─────────────────────────────────────┤
+│            Host OS (optional)       │
+├─────────────────────────────────────┤
+│            Hardware                 │
+└─────────────────────────────────────┘
+```
+
+Each VM has its own kernel, init system, and full OS. High isolation, high resource overhead (GBs per VM).
+
+#### Container
+
+```
+┌──────────┐ ┌──────────┐ ┌──────────┐
+│ App A    │ │ App B    │ │ App C    │
+│ Libs     │ │ Libs     │ │ Libs     │
+├──────────┴─┴──────────┴─┴──────────┤
+│         Shared Host OS Kernel       │
+├─────────────────────────────────────┤
+│            Hardware                 │
+└─────────────────────────────────────┘
+```
+
+Containers share the host kernel. Isolation via **namespaces** (PID, mount, net, IPC, UTS, user) and **cgroups** (resource limits).
+
+```
+Docker container = several namespaces stacked together:
+  PID namespace:    Container sees only its own processes
+  Mount namespace:  Container has its own filesystem tree
+  Network namespace: Container has its own network stack
+  UTS namespace:    Container has its own hostname
+  IPC namespace:    Container has its own IPC resources
+  User namespace:   Container can map UIDs (root inside ≠ root outside)
+
+Control groups (cgroups):
+  Limit and account for resource usage:
+    cpu:     CPU time limits
+    memory:  Memory limits
+    blkio:   Block I/O limits
+    pids:    Number of processes
+    network: Network bandwidth
+```
+
+### KVM (Kernel-based Virtual Machine)
+
+KVM turns Linux into a Type 1 hypervisor. KVM is a kernel module (`kvm.ko` + `kvm_intel.ko`) that exposes `/dev/kvm` to user space.
+
+```
+User space:
+  QEMU (emulates devices, manages VMs)
+    │
+    ↓ ioctl(KVM_CREATE_VM, KVM_CREATE_VCPU, KVM_RUN, ...)
+Kernel space:
+  KVM module (CPU virtualization, MMU, interrupts)
+    │
+    ↓ VMX root mode
+Hardware:
+  Intel VT-x / AMD-V
+```
+
+### Xen
+
+Xen uses a different architecture: **Domain 0** (privileged control VM) manages other **Domain U** (unprivileged VMs).
+
+```
+┌──────────────────────────────┐
+│ Domain 0     Domain U        │
+│ (control VM) (unpriv VMs)   │
+│ paravirt     Linux  Windows  │
+│ or HVM       HVM    HVM      │
+│ Xen tools                    │
+└──────────┬───────────────────┘
+           │
+    ┌──────┴──────┐
+    │   Xen        │
+    │ Hypervisor   │
+    └──────┬──────┘
+    ┌──────┴──────┐
+    │   Hardware   │
+    └──────────────┘
+```
+
+## Examples
+
+### Example 1: Creating a VM with KVM/QEMU (Command Line)
+
+```bash
+#!/bin/bash
+# Create a disk image
+qemu-img create -f qcow2 ubuntu-disk.qcow2 20G
+
+# Install an OS
+qemu-system-x86_64 \
+    -enable-kvm \
+    -cdrom ubuntu-24.04.iso \
+    -drive file=ubuntu-disk.qcow2,format=qcow2 \
+    -m 2048 \
+    -smp 2 \
+    -netdev user,id=net0 \
+    -device e1000,netdev=net0
+
+# Run the VM
+qemu-system-x86_64 \
+    -enable-kvm \
+    -drive file=ubuntu-disk.qcow2,format=qcow2 \
+    -m 4096 \
+    -smp 4 \
+    -netdev user,id=net0,hostfwd=tcp::2222-:22 \
+    -device virtio-net,netdev=net0 \
+    -vga virtio
+```
+
+### Example 2: Docker Container Lifecycle
+
+```bash
+# Run a container
+docker run -d --name web -p 8080:80 nginx:latest
+
+# Inspect namespaces
+docker inspect web | grep -A 10 "Id"
+
+# List processes inside the container
+docker exec web ps aux
+
+# Check cgroup limits
+cat /sys/fs/cgroup/memory/docker/<container_id>/memory.limit_in_bytes
+
+# Build a container image
+cat > Dockerfile << 'EOF'
+FROM python:3.12-slim
+WORKDIR /app
+COPY app.py .
+RUN pip install flask
+EXPOSE 5000
+CMD ["python", "app.py"]
+EOF
+
+docker build -t myapp .
+docker run -d -p 5000:5000 myapp
+```
+
+### Example 3: Verifying Hardware Virtualization Support
+
+```c
+#include <stdio.h>
+
+// Check for Intel VT-x support using CPUID instruction
+static inline int cpuid_support_vmx() {
+    unsigned int eax, ebx, ecx, edx;
+    
+    __asm__ volatile(
+        "cpuid"
+        : "=a" (eax), "=b" (ebx), "=c" (ecx), "=d" (edx)
+        : "a" (1)       // CPUID function 1
+    );
+    
+    // Bit 5 of ECX indicates VMX support
+    return (ecx >> 5) & 1;
+}
+
+int main() {
+    if (cpuid_support_vmx()) {
+        printf("Intel VT-x is supported on this CPU\n");
+    } else {
+        printf("Intel VT-x is NOT supported\n");
+    }
+    return 0;
+}
+```
 
 ## Summary
 
-Virtualisation abstracts hardware to run multiple OSs concurrently. Hardware-assisted virtualisation (VT-x, EPT, SR-IOV) reduces performance overhead to near-native levels. Containers provide lighter-weight isolation by sharing the host kernel through namespaces and cgroups. Docker packages applications into images; Kubernetes orchestrates containers across clusters.
+- Virtualization creates virtual resources shaped by a Virtual Machine Monitor (VMM/hypervisor)
+- Type 1 hypervisors run directly on hardware; Type 2 run on a host OS
+- Hardware-assisted virtualization (Intel VT-x/AMD-V) eliminates trap-and-emulate overhead
+- Nested page tables (EPT/NPT) accelerate memory virtualization by avoiding shadow page tables
+- Paravirtualization (Xen PV, virtio) modifies guests for better performance
+- Containers share the host kernel via namespaces (isolation) and cgroups (resource limits)
+- VMs provide stronger isolation (separate kernels) at higher resource cost
+- KVM turns Linux into a Type 1 hypervisor via the `/dev/kvm` ioctl interface
+- Docker popularized containers by adding image layering, registries, and ease of use
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What is the difference between full virtualisation and paravirtualisation?
-2. How does hardware-assisted virtualisation (Intel VT-x, AMD-V) help the hypervisor?
-3. What is the role of shadow page tables? How does EPT improve on them?
-4. What Linux kernel features enable containers?
-5. What is a Kubernetes pod and how does it differ from a container?
+1. What is the difference between Type 1 and Type 2 hypervisors? Give an example of each.
+2. Explain the difference between a container and a virtual machine. When would you use each?
+3. How does Intel VT-x solve the problem of sensitive instructions that don't trap?
 
-### Application Problems
+### Intermediate
 
-1. A physical server runs 10 Type-1 VMs. Each VM has 2 vCPUs, 4 GB RAM, and 50 GB disk. The physical host has 32 cores, 128 GB RAM, and 2 TB SSD storage. Compute the oversubscription ratio for each resource. Discuss which hypervisor features make this practical despite oversubscription.
-2. A Java application runs in a Docker container with the JVM memory settings `-Xmx2g`. If the container has a memory limit of 1 GB (set via cgroups), what happens when the JVM tries to allocate beyond the limit? Explain the interaction between the JVM heap and the cgroup OOM killer.
-3. Compare the minimum boot time for a VM (including BIOS, bootloader, kernel init) versus a container start. Why is the container difference significant for scaling?
+4. Use `lscpu` to check if your system supports hardware virtualization. Run `kvm-ok` (Linux) or check `cat /proc/cpuinfo | grep vmx`. Write a program using the `cpuid` instruction to detect VMX/SVM support and print the features.
+5. Create a Dockerfile for a simple web application. Build and run it. Use `docker stats` to observe CPU and memory usage. Then use `strace -f` to trace the container process and identify the system calls used for namespace and cgroup creation.
+6. Use QEMU to create a minimal Linux VM. Start with a 512 MB disk and 128 MB RAM. Boot a minimal kernel (use `make tinyconfig`). Measure boot time and memory overhead compared to native.
 
-### Challenge Problem
+### Advanced
 
-1. Write a minimal container runtime in C or Go. Use `clone()` with CLONE_NEWPID, CLONE_NEWNS, CLONE_NEWNET, and CLONE_NEWUTS flags to create a namespaced child process. Set a memory limit via cgroups. Inside the namespace, mount a minimal proc filesystem and execute `/bin/bash`. Verify isolation: the process tree inside the namespace should show PID 1.
+7. Write a program that creates a **PID namespace** using `clone()` with `CLONE_NEWPID`. The child process should see itself as PID 1. Demonstrate that it cannot see host processes (e.g., parent's PID). Add a mount namespace and proc mount so `ps` works inside.
+8. Research and implement a **minimal hypervisor** using KVM's ioctl interface. Create a VM, load a small binary into guest memory (a "hello world" that writes to a debug port), and handle the VM-exit when the guest writes to the port. Measure VM-entry/VM-exit latency.
+9. Write a benchmark that compares **native execution**, **VM execution**, and **container execution** for CPU-bound and I/O-bound workloads. For CPU: compute the first 10 million primes. For I/O: write 1 GB using sequential writes. Measure wall-clock time and CPU overhead. Explain the differences.

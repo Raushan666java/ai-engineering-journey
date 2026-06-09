@@ -28,10 +28,8 @@ theme:
     text: Source Serif 4
     code: JetBrains Mono
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
+    - navigation.indexes
     - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.top
     - navigation.footer
@@ -94,396 +92,387 @@ nav:
   - Home: index.md
   - Roadmap: roadmap.md
 
-  - Foundation (Year 1-2):
-    - C Programming:
-      - Overview: courses/c-programming/index.md
-      - Introduction: courses/c-programming/01-introduction.md
-      - Variables Datatypes: courses/c-programming/02-variables-datatypes.md
-      - Operators: courses/c-programming/03-operators.md
-      - Control Flow: courses/c-programming/04-control-flow.md
-      - Loops: courses/c-programming/05-loops.md
-      - Arrays: courses/c-programming/06-arrays.md
-      - Strings: courses/c-programming/07-strings.md
-      - Functions: courses/c-programming/08-functions.md
-      - Pointers: courses/c-programming/09-pointers.md
-      - Structures Unions: courses/c-programming/10-structures-unions.md
-      - Dma: courses/c-programming/11-dma.md
-      - File Handling: courses/c-programming/12-file-handling.md
-      - Preprocessor: courses/c-programming/13-preprocessor.md
-      - Recursion: courses/c-programming/14-recursion.md
-      - Linked Lists: courses/c-programming/15-linked-lists.md
-      - Stacks Queues: courses/c-programming/16-stacks-queues.md
-      - Standard Library: courses/c-programming/17-standard-library.md
-      - Advanced C: courses/c-programming/18-advanced-c.md
-    - Discrete Mathematics:
-      - Overview: courses/discrete-mathematics/index.md
-      - Sets: courses/discrete-mathematics/01-sets.md
-      - Logic: courses/discrete-mathematics/02-logic.md
-      - Predicates: courses/discrete-mathematics/03-predicates.md
-      - Proofs: courses/discrete-mathematics/04-proofs.md
-      - Combinatorics: courses/discrete-mathematics/05-combinatorics.md
-      - Recurrence: courses/discrete-mathematics/06-recurrence.md
-      - Relations: courses/discrete-mathematics/07-relations.md
-      - Functions: courses/discrete-mathematics/08-functions.md
-      - Graph Theory: courses/discrete-mathematics/09-graph-theory.md
-      - Trees: courses/discrete-mathematics/10-trees.md
-      - Algebra: courses/discrete-mathematics/11-algebra.md
-      - Boolean: courses/discrete-mathematics/12-boolean.md
-      - Probability: courses/discrete-mathematics/13-probability.md
-      - Number Theory: courses/discrete-mathematics/14-number-theory.md
-      - Applications: courses/discrete-mathematics/15-applications.md
-    - Digital Logic:
-      - Overview: courses/digital-logic/index.md
-      - Number Systems: courses/digital-logic/01-number-systems.md
-      - Boolean Algebra: courses/digital-logic/02-boolean-algebra.md
-      - Gates: courses/digital-logic/03-gates.md
-      - Combinational Circuits: courses/digital-logic/04-combinational-circuits.md
-      - Flipflops: courses/digital-logic/05-flipflops.md
-      - Sequential Circuits: courses/digital-logic/06-sequential-circuits.md
-      - Memory: courses/digital-logic/07-memory.md
-      - Computer Architecture: courses/digital-logic/08-computer-architecture.md
-      - Datapath: courses/digital-logic/09-datapath.md
-      - Control Unit: courses/digital-logic/10-control-unit.md
-      - Isa: courses/digital-logic/11-isa.md
-      - Pipelining: courses/digital-logic/12-pipelining.md
-      - Memory Hierarchy: courses/digital-logic/13-memory-hierarchy.md
-      - Io: courses/digital-logic/14-io.md
-      - Modern Arch: courses/digital-logic/15-modern-arch.md
-    - Data Structures:
-      - Overview: courses/data-structures/index.md
-      - Complexity: courses/data-structures/01-complexity.md
-      - Arrays: courses/data-structures/02-arrays.md
-      - Singly Linked List: courses/data-structures/03-singly-linked-list.md
-      - Doubly Linked List: courses/data-structures/04-doubly-linked-list.md
-      - Stacks: courses/data-structures/05-stacks.md
-      - Queues: courses/data-structures/06-queues.md
-      - Hash Tables: courses/data-structures/07-hash-tables.md
-      - Binary Trees: courses/data-structures/08-binary-trees.md
-      - Bst: courses/data-structures/09-bst.md
-      - Heaps: courses/data-structures/10-heaps.md
-      - Graphs: courses/data-structures/11-graphs.md
-      - Graph Traversals: courses/data-structures/12-graph-traversals.md
-      - Avl: courses/data-structures/13-avl.md
-      - Red Black: courses/data-structures/14-red-black.md
-      - B Trees: courses/data-structures/15-b-trees.md
-      - Trie: courses/data-structures/16-trie.md
-      - Segment Tree: courses/data-structures/17-segment-tree.md
-      - Union Find: courses/data-structures/18-union-find.md
-    - Oop Cpp:
-      - Overview: courses/oop-cpp/index.md
-      - Introduction: courses/oop-cpp/01-introduction.md
-      - Classes Objects: courses/oop-cpp/02-classes-objects.md
-      - Constructors: courses/oop-cpp/03-constructors.md
-      - Inheritance: courses/oop-cpp/04-inheritance.md
-      - Polymorphism: courses/oop-cpp/05-polymorphism.md
-      - Operator Overloading: courses/oop-cpp/06-operator-overloading.md
-      - Templates: courses/oop-cpp/07-templates.md
-      - Exceptions: courses/oop-cpp/08-exceptions.md
-      - Stl Containers: courses/oop-cpp/09-stl-containers.md
-      - Stl Algorithms: courses/oop-cpp/10-stl-algorithms.md
-      - File Io: courses/oop-cpp/11-file-io.md
-      - Smart Pointers: courses/oop-cpp/12-smart-pointers.md
-      - Move Semantics: courses/oop-cpp/13-move-semantics.md
-      - Lambdas: courses/oop-cpp/14-lambdas.md
-      - Concurrency: courses/oop-cpp/15-concurrency.md
-      - Design Patterns: courses/oop-cpp/16-design-patterns.md
-    - Algorithms:
-      - Overview: courses/algorithms/index.md
-      - Analysis: courses/algorithms/01-analysis.md
-      - Searching: courses/algorithms/02-searching.md
-      - Sorting Nlogn: courses/algorithms/03-sorting-nlogn.md
-      - Sorting Linear: courses/algorithms/04-sorting-linear.md
-      - Divide Conquer: courses/algorithms/05-divide-conquer.md
-      - Greedy: courses/algorithms/06-greedy.md
-      - Dp Intro: courses/algorithms/07-dp-intro.md
-      - Dp Knapsack: courses/algorithms/08-dp-knapsack.md
-      - Dp Sequences: courses/algorithms/09-dp-sequences.md
-      - Dp Trees Grids: courses/algorithms/10-dp-trees-grids.md
-      - Graph Shortest: courses/algorithms/11-graph-shortest.md
-      - Graph Mst: courses/algorithms/12-graph-mst.md
-      - Graph Flow: courses/algorithms/13-graph-flow.md
-      - String Algorithms: courses/algorithms/14-string-algorithms.md
-      - Np Completeness: courses/algorithms/15-np-completeness.md
-      - Approximation: courses/algorithms/16-approximation.md
-      - Randomized: courses/algorithms/17-randomized.md
-      - Advanced: courses/algorithms/18-advanced.md
-
-  - Core Systems (Year 2-3):
-    - Operating Systems:
-      - Overview: courses/operating-systems/index.md
-      - Introduction: courses/operating-systems/01-introduction.md
-      - Processes: courses/operating-systems/02-processes.md
-      - Cpu Scheduling: courses/operating-systems/03-cpu-scheduling.md
-      - Threads: courses/operating-systems/04-threads.md
-      - Synchronization: courses/operating-systems/05-synchronization.md
-      - Semaphores Monitors: courses/operating-systems/06-semaphores-monitors.md
-      - Deadlocks: courses/operating-systems/07-deadlocks.md
-      - Memory Management: courses/operating-systems/08-memory-management.md
-      - Virtual Memory: courses/operating-systems/09-virtual-memory.md
-      - File Systems: courses/operating-systems/10-file-systems.md
-      - File System Impl: courses/operating-systems/11-file-system-impl.md
-      - Secondary Storage: courses/operating-systems/12-secondary-storage.md
-      - Io Systems: courses/operating-systems/13-io-systems.md
-      - Linux Kernel: courses/operating-systems/14-linux-kernel.md
-      - Shell Scripting: courses/operating-systems/15-shell-scripting.md
-      - Security: courses/operating-systems/16-security.md
-      - Virtualization: courses/operating-systems/17-virtualization.md
-      - Case Studies: courses/operating-systems/18-case-studies.md
-    - Database Management Systems:
-      - Overview: courses/database-management-systems/index.md
-      - Introduction: courses/database-management-systems/01-introduction.md
-      - Er Model: courses/database-management-systems/02-er-model.md
-      - Relational Model: courses/database-management-systems/03-relational-model.md
-      - Sql Basics: courses/database-management-systems/04-sql-basics.md
-      - Sql Joins: courses/database-management-systems/05-sql-joins.md
-      - Sql Advanced: courses/database-management-systems/06-sql-advanced.md
-      - Normalization: courses/database-management-systems/07-normalization.md
-      - Higher Nf: courses/database-management-systems/08-higher-nf.md
-      - Transactions: courses/database-management-systems/09-transactions.md
-      - Concurrency: courses/database-management-systems/10-concurrency.md
-      - Recovery: courses/database-management-systems/11-recovery.md
-      - Indexing: courses/database-management-systems/12-indexing.md
-      - Query Processing: courses/database-management-systems/13-query-processing.md
-      - Nosql: courses/database-management-systems/14-nosql.md
-      - Mongodb: courses/database-management-systems/15-mongodb.md
-      - Redis: courses/database-management-systems/16-redis.md
-      - Distributed: courses/database-management-systems/17-distributed.md
-      - Security: courses/database-management-systems/18-security.md
-    - Computer Networks:
-      - Overview: courses/computer-networks/index.md
-      - Introduction: courses/computer-networks/01-introduction.md
-      - Physical Layer: courses/computer-networks/02-physical-layer.md
-      - Datalink Layer: courses/computer-networks/03-datalink-layer.md
-      - Mac: courses/computer-networks/04-mac.md
-      - Ethernet Switching: courses/computer-networks/05-ethernet-switching.md
-      - Network Layer: courses/computer-networks/06-network-layer.md
-      - Routing: courses/computer-networks/07-routing.md
-      - Transport Layer: courses/computer-networks/08-transport-layer.md
-      - Tcp Congestion: courses/computer-networks/09-tcp-congestion.md
-      - Application Layer: courses/computer-networks/10-application-layer.md
-      - Security: courses/computer-networks/11-security.md
-      - Wireless: courses/computer-networks/12-wireless.md
-      - Sockets: courses/computer-networks/13-sockets.md
-      - Sdn: courses/computer-networks/14-sdn.md
-      - Web Apis: courses/computer-networks/15-web-apis.md
-      - Cloud Networking: courses/computer-networks/16-cloud-networking.md
-      - Troubleshooting: courses/computer-networks/17-troubleshooting.md
-      - Modern: courses/computer-networks/18-modern.md
-
-  - Theoretical CS (Year 3):
-    - Theory Of Computation:
-      - Overview: courses/theory-of-computation/index.md
-      - Dfa: courses/theory-of-computation/01-dfa.md
-      - Nfa: courses/theory-of-computation/02-nfa.md
-      - Regex: courses/theory-of-computation/03-regex.md
-      - Regular Languages: courses/theory-of-computation/04-regular-languages.md
-      - Cfg: courses/theory-of-computation/05-cfg.md
-      - Pda: courses/theory-of-computation/06-pda.md
-      - Cfl: courses/theory-of-computation/07-cfl.md
-      - Turing: courses/theory-of-computation/08-turing.md
-      - Turing Extensions: courses/theory-of-computation/09-turing-extensions.md
-      - Decidability: courses/theory-of-computation/10-decidability.md
-      - Reducibility: courses/theory-of-computation/11-reducibility.md
-      - Time Complexity: courses/theory-of-computation/12-time-complexity.md
-      - Space Complexity: courses/theory-of-computation/13-space-complexity.md
-      - Advanced Complexity: courses/theory-of-computation/14-advanced-complexity.md
-      - Applications: courses/theory-of-computation/15-applications.md
-    - Compiler Design:
-      - Overview: courses/compiler-design/index.md
-      - Introduction: courses/compiler-design/01-introduction.md
-      - Lexical: courses/compiler-design/02-lexical.md
-      - Parsing Topdown: courses/compiler-design/03-parsing-topdown.md
-      - Parsing Bottomup: courses/compiler-design/04-parsing-bottomup.md
-      - Sdt: courses/compiler-design/05-sdt.md
-      - Intermediate Code: courses/compiler-design/06-intermediate-code.md
-      - Type Checking: courses/compiler-design/07-type-checking.md
-      - Runtime Env: courses/compiler-design/08-runtime-env.md
-      - Code Gen: courses/compiler-design/09-code-gen.md
-      - Optimization: courses/compiler-design/10-optimization.md
-      - Cfa: courses/compiler-design/11-cfa.md
-      - Dfa: courses/compiler-design/12-dfa.md
-      - Loop Optimization: courses/compiler-design/13-loop-optimization.md
-      - Register Allocation: courses/compiler-design/14-register-allocation.md
-      - Advanced: courses/compiler-design/15-advanced.md
-    - Software Engineering:
-      - Overview: courses/software-engineering/index.md
-      - Process Models: courses/software-engineering/01-process-models.md
-      - Requirements: courses/software-engineering/02-requirements.md
-      - System Modeling: courses/software-engineering/03-system-modeling.md
-      - Architectural Design: courses/software-engineering/04-architectural-design.md
-      - Design Implementation: courses/software-engineering/05-design-implementation.md
-      - Testing: courses/software-engineering/06-testing.md
-      - Software Evolution: courses/software-engineering/07-software-evolution.md
-      - Project Management: courses/software-engineering/08-project-management.md
-      - Quality Management: courses/software-engineering/09-quality-management.md
-      - Configuration Management: courses/software-engineering/10-configuration-management.md
-      - Agile Methodologies: courses/software-engineering/11-agile-methodologies.md
-      - Devops Cicd: courses/software-engineering/12-devops-cicd.md
-      - Security Engineering: courses/software-engineering/13-security-engineering.md
-      - Formal Methods: courses/software-engineering/14-formal-methods.md
-      - Metrics: courses/software-engineering/15-metrics.md
-      - Capstone: courses/software-engineering/16-capstone.md
-
-  - Applied & Modern (Year 3-4):
-    - Python Programming:
-      - Overview: courses/python-programming/index.md
-      - Introduction: courses/python-programming/01-introduction.md
-      - Variables: courses/python-programming/02-variables.md
-      - Control Flow: courses/python-programming/03-control-flow.md
-      - Loops: courses/python-programming/04-loops.md
-      - Strings: courses/python-programming/05-strings.md
-      - Lists: courses/python-programming/06-lists.md
-      - Tuples Sets: courses/python-programming/07-tuples-sets.md
-      - Dictionaries: courses/python-programming/08-dictionaries.md
-      - Functions: courses/python-programming/09-functions.md
-      - Lambda: courses/python-programming/10-lambda.md
-      - Modules: courses/python-programming/11-modules.md
-      - Oop: courses/python-programming/12-oop.md
-      - Inheritance: courses/python-programming/13-inheritance.md
-      - Magic Methods: courses/python-programming/14-magic-methods.md
-      - Decorators: courses/python-programming/15-decorators.md
-      - Generators: courses/python-programming/16-generators.md
-      - Exceptions Files: courses/python-programming/17-exceptions-files.md
-      - Stdlib: courses/python-programming/18-stdlib.md
-      - Apis Testing: courses/python-programming/19-apis-testing.md
-      - Numpy Pandas: courses/python-programming/20-numpy-pandas.md
-    - Web Development:
-      - Overview: courses/web-development/index.md
-      - Html: courses/web-development/01-html.md
-      - Css: courses/web-development/02-css.md
-      - Js Basics: courses/web-development/03-js-basics.md
-      - Js Dom: courses/web-development/04-js-dom.md
-      - Es6 Plus: courses/web-development/05-es6-plus.md
-      - React Basics: courses/web-development/06-react-basics.md
-      - React Advanced: courses/web-development/07-react-advanced.md
-      - Node Express: courses/web-development/08-node-express.md
-      - Rest Apis: courses/web-development/09-rest-apis.md
-      - Auth: courses/web-development/10-auth.md
-      - Databases Web: courses/web-development/11-databases-web.md
-      - Deployment: courses/web-development/12-deployment.md
-      - Security: courses/web-development/13-security.md
-      - Typescript: courses/web-development/14-typescript.md
-      - Nextjs: courses/web-development/15-nextjs.md
-      - Testing Web: courses/web-development/16-testing-web.md
-      - Performance: courses/web-development/17-performance.md
-      - Fullstack Project: courses/web-development/18-fullstack-project.md
-    - Artificial Intelligence:
-      - Overview: courses/artificial-intelligence/index.md
-      - Introduction: courses/artificial-intelligence/01-introduction.md
-      - Agents: courses/artificial-intelligence/02-agents.md
-      - Problem Solving: courses/artificial-intelligence/02-problem-solving.md
-      - Informed Search: courses/artificial-intelligence/03-informed-search.md
-      - Search: courses/artificial-intelligence/03-search.md
-      - Adversarial Search: courses/artificial-intelligence/04-adversarial-search.md
-      - Csp: courses/artificial-intelligence/04-csp.md
-      - Csp: courses/artificial-intelligence/05-csp.md
-      - Game Playing: courses/artificial-intelligence/05-game-playing.md
-      - Knowledge Representation: courses/artificial-intelligence/06-knowledge-representation.md
-      - Logic: courses/artificial-intelligence/06-logic.md
-      - Fol: courses/artificial-intelligence/07-fol.md
-      - Logical Reasoning: courses/artificial-intelligence/07-logical-reasoning.md
-      - Planning: courses/artificial-intelligence/08-planning.md
-      - Uncertainty: courses/artificial-intelligence/08-uncertainty.md
-      - Machine Learning: courses/artificial-intelligence/09-machine-learning.md
-      - Uncertainty: courses/artificial-intelligence/09-uncertainty.md
-      - Deep Learning: courses/artificial-intelligence/10-deep-learning.md
-      - Probabilistic Reasoning: courses/artificial-intelligence/10-probabilistic-reasoning.md
-      - Reinforcement Learning: courses/artificial-intelligence/11-reinforcement-learning.md
-      - Nlp: courses/artificial-intelligence/12-nlp.md
-      - Computer Vision: courses/artificial-intelligence/13-computer-vision.md
-      - Robotics: courses/artificial-intelligence/14-robotics.md
-      - Ethics Ai: courses/artificial-intelligence/15-ethics-ai.md
-      - Expert Systems: courses/artificial-intelligence/16-expert-systems.md
-      - Modern Ai: courses/artificial-intelligence/17-modern-ai.md
-      - Ai Applications: courses/artificial-intelligence/18-ai-applications.md
-    - Machine Learning:
-      - Overview: courses/machine-learning/index.md
-      - Introduction: courses/machine-learning/01-introduction.md
-      - Linear Regression: courses/machine-learning/02-linear-regression.md
-      - Logistic Regression: courses/machine-learning/03-logistic-regression.md
-      - Decision Trees: courses/machine-learning/04-decision-trees.md
-      - Ensemble Methods: courses/machine-learning/05-ensemble-methods.md
-      - Support Vector Machines: courses/machine-learning/06-support-vector-machines.md
-      - Neural Networks: courses/machine-learning/07-neural-networks.md
-      - Unsupervised Learning: courses/machine-learning/08-unsupervised-learning.md
-      - Dimensionality Reduction: courses/machine-learning/09-dimensionality-reduction.md
-      - Model Evaluation: courses/machine-learning/10-model-evaluation.md
-
-  - Advanced Electives (Year 4):
-    - System Design:
-      - Overview: courses/system-design/index.md
-      - Introduction: courses/system-design/01-introduction.md
-      - Scalability Load Balancing: courses/system-design/02-scalability-load-balancing.md
-      - Caching: courses/system-design/03-caching.md
-      - Database Foundations: courses/system-design/04-database-foundations.md
-      - Partitioning Sharding: courses/system-design/05-partitioning-sharding.md
-      - Distributed Consistency: courses/system-design/06-distributed-consistency.md
-      - Message Queues: courses/system-design/07-message-queues.md
-      - Microservices Apis: courses/system-design/08-microservices-apis.md
-      - Distributed Coordination: courses/system-design/09-distributed-coordination.md
-      - Case Studies: courses/system-design/10-case-studies.md
-    - Devops:
-      - Overview: courses/devops/index.md
-      - Introduction: courses/devops/01-introduction.md
-      - Git: courses/devops/02-git.md
-      - Linux Basics: courses/devops/02-linux-basics.md
-      - Build Tools: courses/devops/03-build-tools.md
-      - Version Control: courses/devops/03-version-control.md
-      - Cicd: courses/devops/04-cicd.md
-      - Continuous Integration: courses/devops/04-continuous-integration.md
-      - Containerization: courses/devops/05-containerization.md
-      - Docker: courses/devops/05-docker.md
-      - Docker Compose: courses/devops/06-docker-compose.md
-      - Orchestration: courses/devops/06-orchestration.md
-      - Infrastructure As Code: courses/devops/07-infrastructure-as-code.md
-      - Kubernetes: courses/devops/07-kubernetes.md
-      - Configuration Management: courses/devops/08-configuration-management.md
-      - K8S Advanced: courses/devops/08-k8s-advanced.md
-      - Continuous Delivery: courses/devops/09-continuous-delivery.md
-      - Iac: courses/devops/09-iac.md
-      - Configuration Mgmt: courses/devops/10-configuration-mgmt.md
-      - Monitoring: courses/devops/10-monitoring.md
-      - Cloud Platforms: courses/devops/11-cloud-platforms.md
-      - Monitoring Logging: courses/devops/12-monitoring-logging.md
-      - Observability: courses/devops/13-observability.md
-      - Devsecops: courses/devops/14-devsecops.md
-      - Database Devops: courses/devops/15-database-devops.md
-      - Networking: courses/devops/16-networking.md
-      - Sre: courses/devops/17-sre.md
-      - Capstone: courses/devops/18-capstone.md
-    - Cloud Computing:
-      - Overview: courses/cloud-computing/index.md
-      - Introduction: courses/cloud-computing/01-introduction.md
-      - Virtualization: courses/cloud-computing/02-virtualization.md
-      - Cloud Compute: courses/cloud-computing/03-cloud-compute.md
-      - Cloud Storage: courses/cloud-computing/04-cloud-storage.md
-      - Cloud Database: courses/cloud-computing/05-cloud-database.md
-      - Cloud Networking: courses/cloud-computing/06-cloud-networking.md
-      - Cloud Security: courses/cloud-computing/07-cloud-security.md
-      - Serverless: courses/cloud-computing/08-serverless.md
-      - Containerization: courses/cloud-computing/09-containerization.md
-      - Architecture: courses/cloud-computing/10-architecture.md
-    - Cyber Security:
-      - Overview: courses/cyber-security/index.md
-      - Fundamentals: courses/cyber-security/01-fundamentals.md
-      - Cryptography: courses/cyber-security/02-cryptography.md
-      - Network Security: courses/cyber-security/03-network-security.md
-      - System Software: courses/cyber-security/04-system-software.md
-      - Web Security: courses/cyber-security/05-web-security.md
-      - Iam: courses/cyber-security/06-iam.md
-      - Cloud Mobile: courses/cyber-security/07-cloud-mobile.md
-      - Forensics Ir: courses/cyber-security/08-forensics-ir.md
-      - Grc: courses/cyber-security/09-grc.md
-      - Pentesting: courses/cyber-security/10-pentesting.md
-    - Blockchain:
-      - Overview: courses/blockchain/index.md
-      - Introduction: courses/blockchain/01-introduction.md
-      - Cryptography: courses/blockchain/02-cryptography.md
-      - Consensus: courses/blockchain/03-consensus.md
-      - Bitcoin: courses/blockchain/04-bitcoin.md
-      - Ethereum: courses/blockchain/05-ethereum.md
-      - Solidity: courses/blockchain/06-solidity.md
-      - Dapps: courses/blockchain/07-dapps.md
-      - Defi: courses/blockchain/08-defi.md
-      - Enterprise: courses/blockchain/09-enterprise.md
-      - Security Scalability: courses/blockchain/10-security-scalability.md
+  - C Programming:
+    - Overview: courses/c-programming/index.md
+    - Introduction: courses/c-programming/01-introduction.md
+    - Variables Datatypes: courses/c-programming/02-variables-datatypes.md
+    - Operators: courses/c-programming/03-operators.md
+    - Control Flow: courses/c-programming/04-control-flow.md
+    - Loops: courses/c-programming/05-loops.md
+    - Arrays: courses/c-programming/06-arrays.md
+    - Strings: courses/c-programming/07-strings.md
+    - Functions: courses/c-programming/08-functions.md
+    - Pointers: courses/c-programming/09-pointers.md
+    - Structures Unions: courses/c-programming/10-structures-unions.md
+    - Dma: courses/c-programming/11-dma.md
+    - File Handling: courses/c-programming/12-file-handling.md
+    - Preprocessor: courses/c-programming/13-preprocessor.md
+    - Recursion: courses/c-programming/14-recursion.md
+    - Linked Lists: courses/c-programming/15-linked-lists.md
+    - Stacks Queues: courses/c-programming/16-stacks-queues.md
+    - Standard Library: courses/c-programming/17-standard-library.md
+    - Advanced C: courses/c-programming/18-advanced-c.md
+  - Discrete Mathematics:
+    - Overview: courses/discrete-mathematics/index.md
+    - Sets: courses/discrete-mathematics/01-sets.md
+    - Logic: courses/discrete-mathematics/02-logic.md
+    - Predicates: courses/discrete-mathematics/03-predicates.md
+    - Proofs: courses/discrete-mathematics/04-proofs.md
+    - Combinatorics: courses/discrete-mathematics/05-combinatorics.md
+    - Recurrence: courses/discrete-mathematics/06-recurrence.md
+    - Relations: courses/discrete-mathematics/07-relations.md
+    - Functions: courses/discrete-mathematics/08-functions.md
+    - Graph Theory: courses/discrete-mathematics/09-graph-theory.md
+    - Trees: courses/discrete-mathematics/10-trees.md
+    - Algebra: courses/discrete-mathematics/11-algebra.md
+    - Boolean: courses/discrete-mathematics/12-boolean.md
+    - Probability: courses/discrete-mathematics/13-probability.md
+    - Number Theory: courses/discrete-mathematics/14-number-theory.md
+    - Applications: courses/discrete-mathematics/15-applications.md
+  - Digital Logic:
+    - Overview: courses/digital-logic/index.md
+    - Number Systems: courses/digital-logic/01-number-systems.md
+    - Boolean Algebra: courses/digital-logic/02-boolean-algebra.md
+    - Gates: courses/digital-logic/03-gates.md
+    - Combinational Circuits: courses/digital-logic/04-combinational-circuits.md
+    - Flipflops: courses/digital-logic/05-flipflops.md
+    - Sequential Circuits: courses/digital-logic/06-sequential-circuits.md
+    - Memory: courses/digital-logic/07-memory.md
+    - Computer Architecture: courses/digital-logic/08-computer-architecture.md
+    - Datapath: courses/digital-logic/09-datapath.md
+    - Control Unit: courses/digital-logic/10-control-unit.md
+    - Isa: courses/digital-logic/11-isa.md
+    - Pipelining: courses/digital-logic/12-pipelining.md
+    - Memory Hierarchy: courses/digital-logic/13-memory-hierarchy.md
+    - Io: courses/digital-logic/14-io.md
+    - Modern Arch: courses/digital-logic/15-modern-arch.md
+  - Data Structures:
+    - Overview: courses/data-structures/index.md
+    - Complexity: courses/data-structures/01-complexity.md
+    - Arrays: courses/data-structures/02-arrays.md
+    - Singly Linked List: courses/data-structures/03-singly-linked-list.md
+    - Doubly Linked List: courses/data-structures/04-doubly-linked-list.md
+    - Stacks: courses/data-structures/05-stacks.md
+    - Queues: courses/data-structures/06-queues.md
+    - Hash Tables: courses/data-structures/07-hash-tables.md
+    - Binary Trees: courses/data-structures/08-binary-trees.md
+    - Bst: courses/data-structures/09-bst.md
+    - Heaps: courses/data-structures/10-heaps.md
+    - Graphs: courses/data-structures/11-graphs.md
+    - Graph Traversals: courses/data-structures/12-graph-traversals.md
+    - Avl: courses/data-structures/13-avl.md
+    - Red Black: courses/data-structures/14-red-black.md
+    - B Trees: courses/data-structures/15-b-trees.md
+    - Trie: courses/data-structures/16-trie.md
+    - Segment Tree: courses/data-structures/17-segment-tree.md
+    - Union Find: courses/data-structures/18-union-find.md
+  - OOP C++:
+    - Overview: courses/oop-cpp/index.md
+    - Introduction: courses/oop-cpp/01-introduction.md
+    - Classes Objects: courses/oop-cpp/02-classes-objects.md
+    - Constructors: courses/oop-cpp/03-constructors.md
+    - Inheritance: courses/oop-cpp/04-inheritance.md
+    - Polymorphism: courses/oop-cpp/05-polymorphism.md
+    - Operator Overloading: courses/oop-cpp/06-operator-overloading.md
+    - Templates: courses/oop-cpp/07-templates.md
+    - Exceptions: courses/oop-cpp/08-exceptions.md
+    - Stl Containers: courses/oop-cpp/09-stl-containers.md
+    - Stl Algorithms: courses/oop-cpp/10-stl-algorithms.md
+    - File Io: courses/oop-cpp/11-file-io.md
+    - Smart Pointers: courses/oop-cpp/12-smart-pointers.md
+    - Move Semantics: courses/oop-cpp/13-move-semantics.md
+    - Lambdas: courses/oop-cpp/14-lambdas.md
+    - Concurrency: courses/oop-cpp/15-concurrency.md
+    - Design Patterns: courses/oop-cpp/16-design-patterns.md
+  - Algorithms:
+    - Overview: courses/algorithms/index.md
+    - Analysis: courses/algorithms/01-analysis.md
+    - Searching: courses/algorithms/02-searching.md
+    - Sorting Nlogn: courses/algorithms/03-sorting-nlogn.md
+    - Sorting Linear: courses/algorithms/04-sorting-linear.md
+    - Divide Conquer: courses/algorithms/05-divide-conquer.md
+    - Greedy: courses/algorithms/06-greedy.md
+    - Dp Intro: courses/algorithms/07-dp-intro.md
+    - Dp Knapsack: courses/algorithms/08-dp-knapsack.md
+    - Dp Sequences: courses/algorithms/09-dp-sequences.md
+    - Dp Trees Grids: courses/algorithms/10-dp-trees-grids.md
+    - Graph Shortest: courses/algorithms/11-graph-shortest.md
+    - Graph Mst: courses/algorithms/12-graph-mst.md
+    - Graph Flow: courses/algorithms/13-graph-flow.md
+    - String Algorithms: courses/algorithms/14-string-algorithms.md
+    - Np Completeness: courses/algorithms/15-np-completeness.md
+    - Approximation: courses/algorithms/16-approximation.md
+    - Randomized: courses/algorithms/17-randomized.md
+    - Advanced: courses/algorithms/18-advanced.md
+  - Operating Systems:
+    - Overview: courses/operating-systems/index.md
+    - Introduction: courses/operating-systems/01-introduction.md
+    - Processes: courses/operating-systems/02-processes.md
+    - Cpu Scheduling: courses/operating-systems/03-cpu-scheduling.md
+    - Threads: courses/operating-systems/04-threads.md
+    - Synchronization: courses/operating-systems/05-synchronization.md
+    - Semaphores Monitors: courses/operating-systems/06-semaphores-monitors.md
+    - Deadlocks: courses/operating-systems/07-deadlocks.md
+    - Memory Management: courses/operating-systems/08-memory-management.md
+    - Virtual Memory: courses/operating-systems/09-virtual-memory.md
+    - File Systems: courses/operating-systems/10-file-systems.md
+    - File System Impl: courses/operating-systems/11-file-system-impl.md
+    - Secondary Storage: courses/operating-systems/12-secondary-storage.md
+    - Io Systems: courses/operating-systems/13-io-systems.md
+    - Linux Kernel: courses/operating-systems/14-linux-kernel.md
+    - Shell Scripting: courses/operating-systems/15-shell-scripting.md
+    - Security: courses/operating-systems/16-security.md
+    - Virtualization: courses/operating-systems/17-virtualization.md
+    - Case Studies: courses/operating-systems/18-case-studies.md
+  - Database Management Systems:
+    - Overview: courses/database-management-systems/index.md
+    - Introduction: courses/database-management-systems/01-introduction.md
+    - Er Model: courses/database-management-systems/02-er-model.md
+    - Relational Model: courses/database-management-systems/03-relational-model.md
+    - Sql Basics: courses/database-management-systems/04-sql-basics.md
+    - Sql Joins: courses/database-management-systems/05-sql-joins.md
+    - Sql Advanced: courses/database-management-systems/06-sql-advanced.md
+    - Normalization: courses/database-management-systems/07-normalization.md
+    - Higher Nf: courses/database-management-systems/08-higher-nf.md
+    - Transactions: courses/database-management-systems/09-transactions.md
+    - Concurrency: courses/database-management-systems/10-concurrency.md
+    - Recovery: courses/database-management-systems/11-recovery.md
+    - Indexing: courses/database-management-systems/12-indexing.md
+    - Query Processing: courses/database-management-systems/13-query-processing.md
+    - Nosql: courses/database-management-systems/14-nosql.md
+    - Mongodb: courses/database-management-systems/15-mongodb.md
+    - Redis: courses/database-management-systems/16-redis.md
+    - Distributed: courses/database-management-systems/17-distributed-db.md
+    - Security: courses/database-management-systems/18-security.md
+  - Computer Networks:
+    - Overview: courses/computer-networks/index.md
+    - Introduction: courses/computer-networks/01-introduction.md
+    - Physical Layer: courses/computer-networks/02-physical-layer.md
+    - Datalink Layer: courses/computer-networks/03-datalink-layer.md
+    - Mac: courses/computer-networks/04-mac.md
+    - Ethernet Switching: courses/computer-networks/05-ethernet-switching.md
+    - Network Layer: courses/computer-networks/06-network-layer.md
+    - Routing: courses/computer-networks/07-routing.md
+    - Transport Layer: courses/computer-networks/08-transport-layer.md
+    - Tcp Congestion: courses/computer-networks/09-tcp-congestion.md
+    - Application Layer: courses/computer-networks/10-application-layer.md
+    - Security: courses/computer-networks/11-security.md
+    - Wireless: courses/computer-networks/12-wireless.md
+    - Sockets: courses/computer-networks/13-sockets.md
+    - Sdn: courses/computer-networks/14-sdn.md
+    - Web Apis: courses/computer-networks/15-web-apis.md
+    - Cloud Networking: courses/computer-networks/16-cloud-networking.md
+    - Troubleshooting: courses/computer-networks/17-troubleshooting.md
+    - Modern: courses/computer-networks/18-modern.md
+  - Theory of Computation:
+    - Overview: courses/theory-of-computation/index.md
+    - Dfa: courses/theory-of-computation/01-dfa.md
+    - Nfa: courses/theory-of-computation/02-nfa.md
+    - Regex: courses/theory-of-computation/03-regex.md
+    - Regular Languages: courses/theory-of-computation/04-regular-languages.md
+    - Cfg: courses/theory-of-computation/05-cfg.md
+    - Pda: courses/theory-of-computation/06-pda.md
+    - Cfl: courses/theory-of-computation/07-cfl.md
+    - Turing: courses/theory-of-computation/08-turing.md
+    - Turing Extensions: courses/theory-of-computation/09-turing-extensions.md
+    - Decidability: courses/theory-of-computation/10-decidability.md
+    - Reducibility: courses/theory-of-computation/11-reducibility.md
+    - Time Complexity: courses/theory-of-computation/12-time-complexity.md
+    - Space Complexity: courses/theory-of-computation/13-space-complexity.md
+    - Advanced Complexity: courses/theory-of-computation/14-advanced-complexity.md
+    - Applications: courses/theory-of-computation/15-applications.md
+  - Compiler Design:
+    - Overview: courses/compiler-design/index.md
+    - Introduction: courses/compiler-design/01-introduction.md
+    - Lexical: courses/compiler-design/02-lexical.md
+    - Parsing Topdown: courses/compiler-design/03-parsing-topdown.md
+    - Parsing Bottomup: courses/compiler-design/04-parsing-bottomup.md
+    - Sdt: courses/compiler-design/05-sdt.md
+    - Intermediate Code: courses/compiler-design/06-intermediate-code.md
+    - Type Checking: courses/compiler-design/07-type-checking.md
+    - Runtime Env: courses/compiler-design/08-runtime-env.md
+    - Code Gen: courses/compiler-design/09-code-gen.md
+    - Optimization: courses/compiler-design/10-optimization.md
+    - Cfa: courses/compiler-design/11-cfa.md
+    - Dfa: courses/compiler-design/12-dfa.md
+    - Loop Optimization: courses/compiler-design/13-loop-optimization.md
+    - Register Allocation: courses/compiler-design/14-register-allocation.md
+    - Advanced: courses/compiler-design/15-advanced.md
+  - Software Engineering:
+    - Overview: courses/software-engineering/index.md
+    - Process Models: courses/software-engineering/01-process-models.md
+    - Requirements: courses/software-engineering/02-requirements.md
+    - System Modeling: courses/software-engineering/03-system-modeling.md
+    - Architectural Design: courses/software-engineering/04-architectural-design.md
+    - Design Implementation: courses/software-engineering/05-design-implementation.md
+    - Testing: courses/software-engineering/06-testing.md
+    - Software Evolution: courses/software-engineering/07-software-evolution.md
+    - Project Management: courses/software-engineering/08-project-management.md
+    - Quality Management: courses/software-engineering/09-quality-management.md
+    - Configuration Management: courses/software-engineering/10-configuration-management.md
+    - Agile Methodologies: courses/software-engineering/11-agile-methodologies.md
+    - Devops Cicd: courses/software-engineering/12-devops-cicd.md
+    - Security Engineering: courses/software-engineering/13-security-engineering.md
+    - Formal Methods: courses/software-engineering/14-formal-methods.md
+    - Metrics: courses/software-engineering/15-metrics.md
+    - Capstone: courses/software-engineering/16-capstone.md
+  - Python Programming:
+    - Overview: courses/python-programming/index.md
+    - Introduction: courses/python-programming/01-introduction.md
+    - Variables: courses/python-programming/02-variables.md
+    - Control Flow: courses/python-programming/03-control-flow.md
+    - Loops: courses/python-programming/04-loops.md
+    - Strings: courses/python-programming/05-strings.md
+    - Lists: courses/python-programming/06-lists.md
+    - Tuples Sets: courses/python-programming/07-tuples-sets.md
+    - Dictionaries: courses/python-programming/08-dictionaries.md
+    - Functions: courses/python-programming/09-functions.md
+    - Lambda: courses/python-programming/10-lambda.md
+    - Modules: courses/python-programming/11-modules.md
+    - Oop: courses/python-programming/12-oop.md
+    - Inheritance: courses/python-programming/13-inheritance.md
+    - Magic Methods: courses/python-programming/14-magic-methods.md
+    - Decorators: courses/python-programming/15-decorators.md
+    - Generators: courses/python-programming/16-generators.md
+    - Exceptions Files: courses/python-programming/17-exceptions-files.md
+    - Stdlib: courses/python-programming/18-stdlib.md
+    - Apis Testing: courses/python-programming/19-apis-testing.md
+    - Numpy Pandas: courses/python-programming/20-numpy-pandas.md
+  - Web Development:
+    - Overview: courses/web-development/index.md
+    - Html: courses/web-development/01-html.md
+    - Css: courses/web-development/02-css.md
+    - Js Basics: courses/web-development/03-js-basics.md
+    - Js Dom: courses/web-development/04-js-dom.md
+    - Es6 Plus: courses/web-development/05-es6-plus.md
+    - React Basics: courses/web-development/06-react-basics.md
+    - React Advanced: courses/web-development/07-react-advanced.md
+    - Node Express: courses/web-development/08-node-express.md
+    - Rest Apis: courses/web-development/09-rest-apis.md
+    - Auth: courses/web-development/10-auth.md
+    - Databases Web: courses/web-development/11-databases-web.md
+    - Deployment: courses/web-development/12-deployment.md
+    - Security: courses/web-development/13-security.md
+    - Typescript: courses/web-development/14-typescript.md
+    - Nextjs: courses/web-development/15-nextjs.md
+    - Testing Web: courses/web-development/16-testing-web.md
+    - Performance: courses/web-development/17-performance.md
+    - Fullstack Project: courses/web-development/18-fullstack-project.md
+  - Artificial Intelligence:
+    - Overview: courses/artificial-intelligence/index.md
+    - Introduction: courses/artificial-intelligence/01-introduction.md
+    - Agents: courses/artificial-intelligence/02-agents.md
+    - Problem Solving: courses/artificial-intelligence/02-problem-solving.md
+    - Informed Search: courses/artificial-intelligence/03-informed-search.md
+    - Search: courses/artificial-intelligence/03-search.md
+    - Adversarial Search: courses/artificial-intelligence/04-adversarial-search.md
+    - Csp Basics: courses/artificial-intelligence/04-csp.md
+    - Csp Advanced: courses/artificial-intelligence/05-csp.md
+    - Game Playing: courses/artificial-intelligence/05-game-playing.md
+    - Knowledge Representation: courses/artificial-intelligence/06-knowledge-representation.md
+    - Logic: courses/artificial-intelligence/06-logic.md
+    - Fol: courses/artificial-intelligence/07-fol.md
+    - Logical Reasoning: courses/artificial-intelligence/07-logical-reasoning.md
+    - Planning: courses/artificial-intelligence/08-planning.md
+    - Reasoning Under Uncertainty: courses/artificial-intelligence/08-uncertainty.md
+    - Machine Learning: courses/artificial-intelligence/09-machine-learning.md
+    - Advanced Uncertainty: courses/artificial-intelligence/09-uncertainty.md
+    - Deep Learning: courses/artificial-intelligence/10-deep-learning.md
+    - Probabilistic Reasoning: courses/artificial-intelligence/10-probabilistic-reasoning.md
+    - Reinforcement Learning: courses/artificial-intelligence/11-reinforcement-learning.md
+    - Nlp: courses/artificial-intelligence/12-nlp.md
+    - Computer Vision: courses/artificial-intelligence/13-computer-vision.md
+    - Robotics: courses/artificial-intelligence/14-robotics.md
+    - Ethics Ai: courses/artificial-intelligence/15-ethics-ai.md
+    - Expert Systems: courses/artificial-intelligence/16-expert-systems.md
+    - Modern Ai: courses/artificial-intelligence/17-modern-ai.md
+    - Ai Applications: courses/artificial-intelligence/18-ai-applications.md
+  - Machine Learning:
+    - Overview: courses/machine-learning/index.md
+    - Introduction: courses/machine-learning/01-introduction.md
+    - Linear Regression: courses/machine-learning/02-linear-regression.md
+    - Logistic Regression: courses/machine-learning/03-logistic-regression.md
+    - Decision Trees: courses/machine-learning/04-decision-trees.md
+    - Ensemble Methods: courses/machine-learning/05-ensemble-methods.md
+    - Support Vector Machines: courses/machine-learning/06-support-vector-machines.md
+    - Neural Networks: courses/machine-learning/07-neural-networks.md
+    - Unsupervised Learning: courses/machine-learning/08-unsupervised-learning.md
+    - Dimensionality Reduction: courses/machine-learning/09-dimensionality-reduction.md
+    - Model Evaluation: courses/machine-learning/10-model-evaluation.md
+  - System Design:
+    - Overview: courses/system-design/index.md
+    - Introduction: courses/system-design/01-introduction.md
+    - Scalability Load Balancing: courses/system-design/02-scalability-load-balancing.md
+    - Caching: courses/system-design/03-caching.md
+    - Database Foundations: courses/system-design/04-database-foundations.md
+    - Partitioning Sharding: courses/system-design/05-partitioning-sharding.md
+    - Distributed Consistency: courses/system-design/06-distributed-consistency.md
+    - Message Queues: courses/system-design/07-message-queues.md
+    - Microservices Apis: courses/system-design/08-microservices-apis.md
+    - Distributed Coordination: courses/system-design/09-distributed-coordination.md
+    - Case Studies: courses/system-design/10-case-studies.md
+  - DevOps:
+    - Overview: courses/devops/index.md
+    - Introduction: courses/devops/01-introduction.md
+    - Git: courses/devops/02-git.md
+    - Linux Basics: courses/devops/02-linux-basics.md
+    - Build Tools: courses/devops/03-build-tools.md
+    - Version Control: courses/devops/03-version-control.md
+    - Cicd: courses/devops/04-cicd.md
+    - Continuous Integration: courses/devops/04-continuous-integration.md
+    - Containerization: courses/devops/05-containerization.md
+    - Docker: courses/devops/05-docker.md
+    - Docker Compose: courses/devops/06-docker-compose.md
+    - Orchestration: courses/devops/06-orchestration.md
+    - Infrastructure As Code: courses/devops/07-infrastructure-as-code.md
+    - Kubernetes: courses/devops/07-kubernetes.md
+    - Configuration Management: courses/devops/08-configuration-management.md
+    - K8S Advanced: courses/devops/08-k8s-advanced.md
+    - Continuous Delivery: courses/devops/09-continuous-delivery.md
+    - Iac: courses/devops/09-iac.md
+    - Configuration Mgmt: courses/devops/10-configuration-mgmt.md
+    - Monitoring: courses/devops/10-monitoring.md
+    - Cloud Platforms: courses/devops/11-cloud-platforms.md
+    - Monitoring Logging: courses/devops/12-monitoring-logging.md
+    - Observability: courses/devops/13-observability.md
+    - Devsecops: courses/devops/14-devsecops.md
+    - Database Devops: courses/devops/15-database-devops.md
+    - Networking: courses/devops/16-networking.md
+    - Sre: courses/devops/17-sre.md
+    - Capstone: courses/devops/18-capstone.md
+  - Cloud Computing:
+    - Overview: courses/cloud-computing/index.md
+    - Introduction: courses/cloud-computing/01-introduction.md
+    - Virtualization: courses/cloud-computing/02-virtualization.md
+    - Cloud Compute: courses/cloud-computing/03-cloud-compute.md
+    - Cloud Storage: courses/cloud-computing/04-cloud-storage.md
+    - Cloud Database: courses/cloud-computing/05-cloud-database.md
+    - Cloud Networking: courses/cloud-computing/06-cloud-networking.md
+    - Cloud Security: courses/cloud-computing/07-cloud-security.md
+    - Serverless: courses/cloud-computing/08-serverless.md
+    - Containerization: courses/cloud-computing/09-containerization.md
+    - Architecture: courses/cloud-computing/10-architecture.md
+  - Cyber Security:
+    - Overview: courses/cyber-security/index.md
+    - Fundamentals: courses/cyber-security/01-fundamentals.md
+    - Cryptography: courses/cyber-security/02-cryptography.md
+    - Network Security: courses/cyber-security/03-network-security.md
+    - System Software: courses/cyber-security/04-system-software.md
+    - Web Security: courses/cyber-security/05-web-security.md
+    - Iam: courses/cyber-security/06-iam.md
+    - Cloud Mobile: courses/cyber-security/07-cloud-mobile.md
+    - Forensics Ir: courses/cyber-security/08-forensics-ir.md
+    - Grc: courses/cyber-security/09-grc.md
+    - Pentesting: courses/cyber-security/10-pentesting.md
+  - Blockchain:
+    - Overview: courses/blockchain/index.md
+    - Introduction: courses/blockchain/01-introduction.md
+    - Cryptography: courses/blockchain/02-cryptography.md
+    - Consensus: courses/blockchain/03-consensus.md
+    - Bitcoin: courses/blockchain/04-bitcoin.md
+    - Ethereum: courses/blockchain/05-ethereum.md
+    - Solidity: courses/blockchain/06-solidity.md
+    - Dapps: courses/blockchain/07-dapps.md
+    - Defi: courses/blockchain/08-defi.md
+    - Enterprise: courses/blockchain/09-enterprise.md
+    - Security Scalability: courses/blockchain/10-security-scalability.md

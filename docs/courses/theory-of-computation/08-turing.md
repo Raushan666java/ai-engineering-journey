@@ -2,149 +2,238 @@
 
 ## Learning Objectives
 
-By the end of this chapter, you should be able to: define a Turing machine formally; design TMs for simple languages; explain the differences between TMs and finite automata/PDAs; understand TM variants (multi-tape, nondeterministic, multi-head) and their equivalence; describe the universal Turing machine and its significance; compute functions using TMs.
+- Define a Turing machine formally.
+- Trace Turing machine computations.
+- Design Turing machines for specific languages and functions.
+- Understand Turing machine variants: multitape, nondeterministic.
+- Prove equivalence of Turing machine variants.
+- Compare Turing machines with finite automata and PDAs.
+- Describe the relationship between Turing machines and algorithms.
 
 ## Theory
 
-### Formal Definition
+### 8.1 The Turing Machine Model
 
-A **Turing machine** (TM) is a 7-tuple
+Alan Turing introduced the Turing machine in 1936 as a model of "computation by a human clerk." It is the most powerful model of computation we have — anything computable by any mechanical process can be computed by a Turing machine (the Church-Turing thesis).
 
-$$M = (Q, \Sigma, \Gamma, \delta, q_0, q_{\text{accept}}, q_{\text{reject}})$$
+A Turing machine consists of:
+- An **infinite tape** divided into cells, each containing a symbol from a finite alphabet.
+- A **tape head** that can read and write symbols and move left or right.
+- A **finite control** (states) that determines the machine's behavior.
 
-where:
+Unlike finite automata, the TM has **unbounded memory** (the infinite tape) and can both **read and write**. Unlike PDAs, the TM can access **any position** on the tape (not just the top of a stack).
 
-- $Q$ is a finite set of states
-- $\Sigma$ is the input alphabet (does not contain the blank symbol $\sqcup$)
-- $\Gamma$ is the tape alphabet, with $\Sigma \subset \Gamma$ and $\sqcup \in \Gamma$
-- $\delta : Q \times \Gamma \to Q \times \Gamma \times \{L, R\}$ is the transition function (partial)
-- $q_0 \in Q$ is the start state
-- $q_{\text{accept}} \in Q$ is the accepting state
-- $q_{\text{reject}} \in Q$ is the rejecting state ($q_{\text{reject}} \neq q_{\text{accept}}$)
+### 8.2 Formal Definition of a Turing Machine
 
-A TM has an infinite tape (one-dimensional, unbounded in both directions) divided into cells, each containing a symbol from $\Gamma$. The machine has a read/write head that moves left or right one cell per step. The initial tape contains the input string with blanks elsewhere.
+A **Turing machine** is a 7-tuple (Q, Σ, Γ, δ, q₀, q_accept, q_reject) where:
 
-### Configuration and Computation
+- **Q** is a finite set of states.
+- **Σ** is the input alphabet (does not contain the blank symbol).
+- **Γ** is the tape alphabet (Σ ⊂ Γ, includes blank symbol ␣).
+- **δ: Q × Γ → Q × Γ × {L, R}** is the transition function.
+- **q₀ ∈ Q** is the start state.
+- **q_accept ∈ Q** is the accepting state.
+- **q_reject ∈ Q** is the rejecting state (q_reject ≠ q_accept).
 
-A **configuration** of a TM is a triple $(q, u, v)$ where $q$ is the state, $u$ is the tape content to the left of the head, and $v$ is the tape content from the head position rightward. We write $u q v$ as shorthand.
+A transition δ(q, a) = (r, b, L) means:
+- In state q, reading symbol a on the tape,
+- Write symbol b, move the head left, and go to state r.
 
-A configuration $C_1$ **yields** $C_2$ ($C_1 \vdash C_2$) if a single transition applies. For example, if $\delta(q, a) = (p, b, R)$, then:
+**Computation:** Starting with the input on the tape (head at leftmost symbol), the TM repeatedly applies δ until it enters q_accept (accepts) or q_reject (rejects). The TM may also **loop forever** (never halt).
 
-$$u q a v \vdash u b p v$$
+### 8.3 Configuration and Computation
 
-The TM **halts** when it enters $q_{\text{accept}}$ or $q_{\text{reject}}$. Note: unlike finite automata, a TM may also loop forever.
+A **configuration** of a TM is a triple (q, u, v) where:
+- q ∈ Q is the current state.
+- uv is the tape content (with the head at the first symbol of v).
+- All cells beyond the last symbol of uv are blank.
 
-### Language of a TM
+We write configurations as: u q v, where the current state is before the symbol under the head.
 
-A TM $M$ **accepts** input $w$ if there exists a computation $(q_0, \epsilon, w) \vdash^* (q_{\text{accept}}, u, v)$ for some $u, v$. The language of $M$ is:
+Example: `q₀ 0101` means state q₀, tape contains "0101", head at the first 0.
 
-$$L(M) = \{ w \in \Sigma^* \mid M \text{ accepts } w \}$$
+The start configuration on input w is: q₀ w.
 
-A TM **decides** a language $L$ if it halts on every input (rejecting or accepting) and accepts exactly $L$. A language is **decidable** (recursive) if some TM decides it.
+An **accepting configuration** has state q_accept. A **rejecting configuration** has state q_reject.
 
-A TM **recognizes** a language $L$ if it accepts exactly $L$ but may loop on non-members. A language is **recognizable** (recursively enumerable) if some TM recognizes it.
+A TM **halts** when it enters q_accept or q_reject. Otherwise it loops.
 
-### TM Design
+### 8.4 Turing Machine Language
 
-Designing TMs involves specifying transitions that manipulate the tape. Common techniques:
+A Turing machine M **accepts** string w if there is a sequence of configurations C₀, C₁, …, Cₖ where:
+- C₀ is the start configuration for w.
+- Each Cᵢ yields Cᵢ₊₁ via δ.
+- Cₖ is an accepting configuration.
 
-- **Marking**: Use symbols like $\dot{a}$ to mark cells already processed.
-- **Shifting**: Move a block of symbols right or left to make room.
-- **Subroutines**: Copy common patterns (copy, compare, shift) across multiple states.
-- **Multiple tracks**: Treat the tape as having multiple tracks by using pairs of symbols from $\Gamma \times \Gamma$.
+The **language recognized** by M is:
+L(M) = { w | M accepts w }
 
-### TM Variants
+Turing machines recognize exactly the **recursively enumerable** (RE) languages. If a TM halts on all inputs, it's a **decider** and recognizes a **recursive** language.
 
-**Multi-tape TM**: Has $k$ tapes, each with an independent head. A transition reads all $k$ heads and writes/moves each independently. Multi-tape TMs are no more powerful than single-tape TMs, but they can be faster.
+### 8.5 Designing Turing Machines
 
-**Theorem 8.1**: Every multi-tape TM has an equivalent single-tape TM.
+Designing TMs is akin to writing low-level programs. Common design patterns:
 
-**Proof**: Use a single tape with tracks separated by a delimiter $\#$. Track $i$ stores tape $i$'s content with a marker $\dot{}$ for head position. Simulate one step of the multi-tape TM by scanning all tracks, reading the marked symbols, then making a second pass to update. The single-tape TM accepts iff the multi-tape TM does. $\square$
+1. **Marking symbols:** Use tape symbols with dots (e.g., á) to mark already-processed symbols.
+2. **Multiple passes:** Sweep the tape left-to-right and right-to-left repeatedly.
+3. **Shift and insert:** Move data to make room for new symbols.
+4. **Subroutine states:** Use sets of states to implement subroutine-like behavior.
+5. **Multi-track tape:** Treat each tape cell as containing a tuple (like an array).
 
-**Nondeterministic TM**: The transition function maps to $\mathcal{P}(Q \times \Gamma \times \{L, R\})$.
+### 8.6 Multitape Turing Machines
 
-**Theorem 8.2**: Every nondeterministic TM has an equivalent deterministic TM.
+A **k-tape Turing machine** has k independent tapes, each with its own read/write head. The transition function becomes:
 
-**Proof**: Perform a breadth-first search (BFS) through the tree of possible configurations. Each node is a configuration; children are the configurations reachable in one nondeterministic step. If any branch reaches $q_{\text{accept}}$, the deterministic TM accepts. BFS ensures that if a finite accepting path exists, it will be found. $\square$
+δ: Q × Γᵏ → Q × Γᵏ × {L, R}ᵏ
 
-### Universal Turing Machine
+The machine reads all k heads simultaneously, writes to all k tapes, and moves all k heads.
 
-**Theorem 8.3 (Existence of Universal TM)**: There exists a TM $U$ that, given as input the encoding $\langle M \rangle$ of a TM $M$ and a string $w$, simulates $M$ on $w$ and accepts iff $M$ accepts $w$.
+**Theorem:** Every multitape Turing machine has an equivalent single-tape Turing machine.
 
-**Proof sketch**: The encoding $\langle M \rangle$ lists the states, alphabet, and transition function in binary. The universal TM $U$ has three tapes: one for $\langle M \rangle$, one for $M$'s tape contents, and one for $M$'s current state. $U$ repeatedly:
-1. Reads the current symbol under $M$'s head.
-2. Searches $\langle M \rangle$ for the matching transition.
-3. Writes the new symbol, moves the head, and updates the state.
-4. Accepts if $M$ enters $q_{\text{accept}}$. $\square$
+**Proof sketch:** Use a single tape with "tracks" separated by a delimiter #. Each track stores the content of one tape. A special marker (ḃ) indicates the position of each tape's head. Simulating one step of the k-tape machine may require sweeping the entire tape to find all head positions, making the simulation potentially slow but correct.
 
-The universal TM is the theoretical foundation of the stored-program computer: it treats program descriptions as data.
+### 8.7 Nondeterministic Turing Machines
 
-### TM-Decidable vs. TM-Recognizable
+A **nondeterministic Turing machine (NTM)** has a transition function:
 
-- **Decidable** (recursive): TM always halts. Examples: $\{ w \in \{0, 1\}^* \mid w \text{ has equal 0s and 1s} \}$, $A_{\text{DFA}} = \{ \langle D, w \rangle \mid D \text{ is a DFA accepting } w \}$.
-- **Recognizable but not decidable**: TM accepts when it should accept but may loop otherwise. Example: $A_{\text{TM}} = \{ \langle M, w \rangle \mid M \text{ is a TM that accepts } w \}$.
-- **Not recognizable**: No TM can recognize the language. Example: $\overline{A_{\text{TM}}}$.
+δ: Q × Γ → P(Q × Γ × {L, R})
+
+At each step, the NTM may have multiple choices. It accepts if **any** branch leads to q_accept.
+
+**Theorem:** Every NTM has an equivalent deterministic Turing machine.
+
+**Proof sketch:** Simulate the NTM using a **breadth-first** search of the computation tree. The DTM uses three tapes: (1) input tape, (2) work tape, (3) address tape that encodes which branch to take at each step. The DTM systematically tries all possible sequences of nondeterministic choices.
+
+**Consequence for complexity:** The simulation may require exponential time (exploring all branches), but for computability, NTMs add no power.
+
+### 8.8 Turing Machine Variants
+
+Other equivalent variants:
+- **Doubly infinite tape:** Tape extends infinitely in both directions.
+- **Random access TM:** Can jump to any tape position in one step.
+- **Multi-dimensional tape:** Tape is a grid.
+- **Oblivious TM:** Head movement depends only on step number, not on input.
+- **Write-once TM:** Can write each cell only once.
+- **Counter machine:** Uses counters instead of a tape (with 2+ counters, equivalent to TM).
+
+All of these are equivalent in power to the standard single-tape TM.
 
 ## Examples
 
-### Example 1: TM for $\{ w\#w \mid w \in \{0, 1\}^* \}$
+### Example 8.1: TM for L = { aⁿbⁿcⁿ | n ≥ 0 }
 
-Design a TM that checks if the input consists of two identical strings separated by $\#$.
+Strategy: Scan left to right, marking one a, one b, and one c each pass. Repeat until all symbols are marked.
 
-Strategy (multi-tape):
-1. Copy the part before $\#$ to tape 2.
-2. Move tape 2's head to the start and advance past $\#$ on tape 1.
-3. Compare symbol by symbol: mismatch → reject; all match and both at end → accept.
+Detailed transitions:
 
-Single-tape version: zigzag between the two halves, marking matched symbols.
+1. **Initial setup:** Read first symbol.
+   - If blank → accept (empty string).
+   - If a → mark it as X, move right to find b.
+   - If b or c → reject (wrong order).
 
-### Example 2: TM for Binary Increment
+2. **Mark a, b, c cycle:**
+   - From marked a, move right past all a's and Y's to find first b, mark as Y.
+   - Move right past all b's and Z's to find first c, mark as Z.
+   - Move left to the leftmost X or beginning, repeat.
 
-Design a TM that adds 1 to a binary number on the tape.
+3. **Cleanup:**
+   - When no unmarked a remains, verify all b's and c's are marked.
+   - If so, accept.
 
-Strategy: move the head to the right end of the number, then:
-- If current symbol is 0, write 1 and halt (accept).
-- If current symbol is 1, write 0 and move left; repeat.
+State design:
+- q₀: Initial — find first a, mark as X, go to q₁
+- q₁: Finding b — scan right over a, Y; mark first b as Y, go to q₂
+- q₂: Finding c — scan right over b, Z; mark first c as Z, go to q₃
+- q₃: Return left — scan left over X, Y, Z, a, b, c to leftmost; go to q₀
+- q₄: Verification — check all symbols are X, Y, Z
+- q_accept, q_reject
 
-Formally, with $q_0$ = start, $q_1$ = moving right, $q_2$ = incrementing:
-$\delta(q_0, a) = (q_1, a, R)$ for $a \in \{0, 1\}$ — move to right end.
-$\delta(q_1, \sqcup) = (q_2, \sqcup, L)$ — found the right end.
-$\delta(q_2, 1) = (q_2, 0, L)$ — carry.
-$\delta(q_2, 0) = (q_{\text{accept}}, 1, L)$ — done.
-$\delta(q_2, \sqcup) = (q_{\text{accept}}, 1, L)$ — overflow (e.g., 111 + 1 = 1000).
+### Example 8.2: TM for Binary Increment
 
-### Example 3: Universal TM Simulation
+Given a binary number on the tape, add 1 to it.
 
-Simulate a TM $M$ that checks parity. $M$ has states $\{q_0, q_1, q_{\text{accept}}, q_{\text{reject}}\}$ and reads bits. If the universal TM $U$ is given $\langle M \rangle 001$, it will:
-1. Write $M$'s encoding and tape content on its tapes.
-2. Step through $M$'s transitions: $q_0$ read 0 → go to $q_0$, move right; $q_0$ read 0 → go to $q_0$; $q_0$ read 1 → go to $q_1$; $q_1$ read $\sqcup$ → reject.
-3. $U$ halts in $q_{\text{reject}}$ and reports "reject."
+Strategy: Start at the least significant bit (rightmost), propagate carries leftward.
+
+```
+State q₀: move right to end of input
+  δ(q₀, 0) = (q₀, 0, R)
+  δ(q₀, 1) = (q₀, 1, R)
+  δ(q₀, ␣) = (q₁, ␣, L)  -- reached end, start incrementing
+
+State q₁: increment current digit
+  δ(q₁, 0) = (q₂, 1, L)  -- 0→1, done
+  δ(q₁, 1) = (q₁, 0, L)  -- 1→0, carry
+  δ(q₁, ␣) = (q₂, 1, L)  -- overflow: 1000... → 1000...1
+
+State q₂: move to start and halt
+  δ(q₂, 0) = (q₂, 0, L)
+  δ(q₂, 1) = (q₂, 1, L)
+  δ(q₂, ␣) = (q_accept, ␣, R)
+```
+
+Trace for "1011" (11): q₀1011 → * → 1011 q₁ (at ␣) → 101 q₁ 1 → 10 q₁ 01 → 1 q₁ 001 → q₂ 1100 → * → q_accept 1100 (12).
+
+### Example 8.3: TM for Palindrome Recognition
+
+Language: L = { w ∈ {0,1}* | w = wʀ }.
+
+**Strategy:**
+1. Compare first and last symbols — if they match, erase both and repeat.
+2. If only ε or one symbol remains, accept.
+
+Transitions (sketch):
+- q₀: Read first symbol. If 0 → replace with X, go to q₁ (looking for 0 at end). If 1 → replace with X, go to q₂. If blank → accept.
+- q₁: Scan right to end, ignoring 0,1. At blank, move left. If 0 → replace with X, go to q₃. If 1 or X → reject.
+- q₂: Symmetric to q₁ for 1.
+- q₃: Scan left to beginning (past X's, 0's, 1's). At X → move right to next unprocessed symbol, go to q₀.
+
+### Example 8.4: Simulating a Multitape TM on a Single Tape
+
+To simulate a 2-tape TM on a single tape:
+1. Represent tape contents as: #tape1#tape2#.
+2. Mark head positions with dots: #0ḃ1#1ǟ0#.
+3. To simulate one step: scan from first # to last # to find head positions, read both symbols, then scan back to write and move heads.
+
+### Example 8.5: NTM for the Satisfiability Problem (SAT)
+
+Given a Boolean formula in CNF, determine if there is a satisfying assignment. An NTM can:
+1. Nondeterministically write 0 or 1 for each variable (the "guess" phase).
+2. Deterministically evaluate the formula (the "check" phase).
+
+If any assignment satisfies the formula, the NTM accepts. The DTM simulation would try all 2ⁿ assignments exponentially.
 
 ## Summary
 
-- TMs have infinite tape, read/write head, and finite control.
-- A TM can accept, reject, or loop.
-- Multi-tape and nondeterministic TMs are equivalent to the basic model.
-- The universal TM can simulate any other TM given its encoding.
-- Decidable languages have TMs that always halt; recognizable languages have TMs that may loop.
-- TMs formalize the intuitive notion of "algorithm."
+- Turing machines have infinite tape, read/write capability, and bidirectional head movement.
+- Formal definition: 7-tuple (Q, Σ, Γ, δ, q₀, q_accept, q_reject).
+- TM configurations encode state, tape content, and head position.
+- Multitape TMs are equivalent to single-tape TMs (with slower simulation).
+- Nondeterministic TMs are equivalent to deterministic TMs (for computability).
+- TM recognizes RE languages; TM decider recognizes recursive languages.
+- Many TM variants (multitape, multi-dimensional, random-access) are equivalent.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. Why does a TM tape need to be infinite?
-2. What does it mean for a language to be decidable?
-3. How does a universal TM differ from an ordinary TM?
-4. Why is the nondeterministic-to-deterministic TM conversion result nontrivial (unlike for finite automata)?
+1. Design a TM that recognizes L = { 0ⁿ1ⁿ | n ≥ 0 }.
+2. Trace the TM from Example 8.1 on input "aabbcc".
+3. Design a TM that accepts strings over {a,b} with an equal number of a's and b's.
+4. Design a TM that performs binary addition of two numbers separated by +.
+5. Explain why every PDA can be simulated by a TM but not vice versa.
 
-### Application Problems
+### Intermediate
 
-5. Design a TM that accepts $\{ a^n b^n c^n \mid n \geq 0 \}$.
-6. Design a TM that adds two binary numbers (given as $x + y$ on the tape).
-7. Describe how to simulate a 3-tape TM on a single-tape TM.
-8. Design a TM that decides whether a given string over $\{0, 1\}$ is a palindrome.
+6. Design a TM that computes the function f(n) = n mod 2 (binary to single-bit output).
+7. Design a TM that recognizes L = { w ∈ {a,b}* | w = wʀ } (palindromes).
+8. Show formally that a TM with a doubly infinite tape is equivalent to a standard TM.
+9. Design a 2-tape TM to recognize { aⁿbⁿcⁿ | n ≥ 0 } and then simulate it on a single tape.
+10. Design an NTM for the language of Hamiltonian paths in a graph (given as adjacency matrix on the tape).
 
-### Challenge Problem
+### Advanced
 
-9. Prove that a TM with a doubly-infinite tape (unbounded in both directions) is equivalent to a standard TM with a singly-infinite tape. Show how to simulate one with the other.
+11. Prove formally that the class of languages recognized by TMs is closed under union, intersection, and concatenation.
+12. Show that any multitape TM can be simulated by a single-tape TM with at most quadratic slowdown.
+13. Design a TM that recognizes the language { aⁿ | n is a prime number }.
+14. Prove that the simulation of an NTM by a DTM may require exponential time (show a language that an NTM decides in O(n) time but requires Ω(2ⁿ) time on a DTM).
+15. Implement (in a high-level description) a TM that simulates an arbitrary TM given its description — this is the universal Turing machine concept from Chapter 9.

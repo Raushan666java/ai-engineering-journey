@@ -2,131 +2,193 @@
 
 ## Learning Objectives
 
-By the end of this chapter, you should be able to: define a DFA formally using the 5-tuple; construct transition diagrams and tables from formal descriptions; design DFAs for regular languages over small alphabets; compute the language of a given DFA; apply the product construction to build DFAs for intersection and union; prove language properties using DFA invariants.
+- Define a deterministic finite automaton (DFA) formally as a 5-tuple.
+- Construct transition diagrams and transition tables from DFA specifications.
+- Trace the computation of a DFA on an input string.
+- Determine the language accepted by a given DFA.
+- Design DFAs for specific regular languages.
+- Prove properties of DFA-recognizable languages.
 
 ## Theory
 
-### Formal Definition
+### 1.1 What is a Finite Automaton?
 
-A **deterministic finite automaton** (DFA) is a 5-tuple
+A finite automaton is a simplest computational model with **finite memory**. It reads an input string one symbol at a time, moves through a sequence of states, and decides whether to accept or reject the string. The memory is limited — the automaton cannot store arbitrary amounts of data; only its current state matters.
 
-$$M = (Q, \Sigma, \delta, q_0, F)$$
+### 1.2 Formal Definition of a DFA
 
-where:
+A **deterministic finite automaton (DFA)** is a 5-tuple (Q, Σ, δ, q₀, F) where:
 
-- $Q$ is a finite set of **states**
-- $\Sigma$ is a finite **alphabet**
-- $\delta : Q \times \Sigma \to Q$ is the **transition function**
-- $q_0 \in Q$ is the **start state**
-- $F \subseteq Q$ is the set of **accepting (final) states**
+- **Q** is a finite set of **states**.
+- **Σ** is a finite **input alphabet**.
+- **δ: Q × Σ → Q** is the **transition function**.
+- **q₀ ∈ Q** is the **start state**.
+- **F ⊆ Q** is the set of **accepting (final) states**.
 
-The DFA is called *deterministic* because for each state and each input symbol, there is exactly one next state. The transition function maps every pair $(q, a)$ to a single state $q' = \delta(q, a)$.
+The term *deterministic* means that for each state and each input symbol, there is exactly one next state. The transition function δ(q, a) = p means: when the automaton is in state q and reads symbol a, it moves to state p.
 
-### Extended Transition Function
+### 1.3 Transition Diagrams and Transition Tables
 
-We extend $\delta$ to strings: $\hat{\delta} : Q \times \Sigma^* \to Q$ is defined recursively:
+**Transition Diagram:** A directed graph where:
+- Vertices represent states (circles with state names inside).
+- Accepting states are drawn as double circles.
+- The start state is indicated by an incoming arrow from nowhere.
+- Edges labeled with input symbols represent transitions δ(q, a) = p.
 
-$$\hat{\delta}(q, \epsilon) = q$$
-$$\hat{\delta}(q, wa) = \delta(\hat{\delta}(q, w), a) \quad \text{for } w \in \Sigma^*, a \in \Sigma$$
+**Transition Table:** A tabular representation where rows are states, columns are symbols, and entries are the next states.
 
-Intuitively, $\hat{\delta}(q, w)$ is the state reached after reading the entire string $w$ starting from state $q$.
+*Example for a DFA that accepts strings ending with '01' over Σ = {0, 1}:*
 
-### Language of a DFA
+Transition Diagram (text description):
+```
+Three states: q0 (start), q1, q2 (accept)
+q0 --0--> q0, q0 --1--> q1
+q1 --0--> q2, q1 --1--> q1
+q2 --0--> q0, q2 --1--> q1
+```
 
-A DFA $M = (Q, \Sigma, \delta, q_0, F)$ **accepts** a string $w \in \Sigma^*$ if $\hat{\delta}(q_0, w) \in F$. The **language** of $M$ is:
+Transition Table:
+| State | 0 | 1 |
+|-------|---|---|
+| →q₀   | q₀ | q₁ |
+| q₁    | q₂ | q₁ |
+| *q₂   | q₀ | q₁ |
 
-$$L(M) = \{ w \in \Sigma^* \mid \hat{\delta}(q_0, w) \in F \}$$
+### 1.4 Language of a DFA
 
-A language $L \subseteq \Sigma^*$ is called **regular** if there exists a DFA $M$ such that $L(M) = L$.
+The **extended transition function** δ̂: Q × Σ* → Q generalizes δ to strings:
+- δ̂(q, ε) = q
+- δ̂(q, wa) = δ(δ̂(q, w), a) for string w and symbol a
 
-### Transition Diagrams
+A DFA **accepts** string w if δ̂(q₀, w) ∈ F.
 
-A DFA is visualized as a directed graph: states are vertices, transitions are labeled edges, the start state is marked with an incoming arrow $\to$, and accepting states are drawn with double circles.
+The **language recognized** by DFA M is:
+L(M) = { w ∈ Σ* | δ̂(q₀, w) ∈ F }
 
-### Dead States
+A language is called **regular** if some DFA recognizes it.
 
-A **dead state** (or trap state) is a non-accepting state that transitions only to itself for all inputs. Once the machine enters a dead state, it can never reach an accepting state. Dead states are sometimes omitted from diagrams but are implicitly present in the formal definition.
+### 1.5 DFA Design Methodology
 
-### Complementation
+To design a DFA for a language L:
 
-If $M = (Q, \Sigma, \delta, q_0, F)$ is a DFA, then the complement DFA $\overline{M}$ is $(Q, \Sigma, \delta, q_0, Q \setminus F)$. That is, we swap accepting and non-accepting states. This works **only** because $\delta$ is a total function: every string leads to exactly one state, so a string is in $L(M)$ iff it is not in $L(\overline{M})$.
+1. **Understand the acceptance condition.** What property must the input have?
+2. **Identify the essential information** that must be remembered. This becomes the states.
+3. **Assign meaning to each state.** For each state, describe what the DFA knows about the input read so far.
+4. **Define transitions.** For each state and symbol, determine what the new state of knowledge should be.
+5. **Identify accepting states.** Which states correspond to a valid prefix or complete string?
+6. **Verify.** Test the DFA on representative strings (both accepted and rejected).
 
-### Product Construction
+### 1.6 Formal Description of DFA Computation
 
-Given two DFAs $M_1 = (Q_1, \Sigma, \delta_1, q_1, F_1)$ and $M_2 = (Q_2, \Sigma, \delta_2, q_2, F_2)$, we can construct a DFA that recognizes $L(M_1) \cap L(M_2)$:
+A DFA M = (Q, Σ, δ, q₀, F) on input w = w₁w₂…wₙ (each wᵢ ∈ Σ) computes as follows:
+- Start in state q₀.
+- For i = 1 to n: replace current state r with δ(r, wᵢ).
+- Accept if final state r ∈ F; reject otherwise.
 
-$$M_\cap = (Q_1 \times Q_2, \Sigma, \delta_\cap, (q_1, q_2), F_1 \times F_2)$$
+### 1.7 Regular Languages
 
-where $\delta_\cap((p, q), a) = (\delta_1(p, a), \delta_2(q, a))$. The product DFA simulates both DFAs in parallel. For union, set the final states to $(F_1 \times Q_2) \cup (Q_1 \times F_2)$.
+A language is **regular** if there exists some DFA that recognizes it. The class of regular languages has important closure properties (Chapter 4) and corresponds exactly to what can be expressed with regular expressions (Chapter 3).
 
 ## Examples
 
-### Example 1: DFA for Binary Strings Ending in 01
+### Example 1.1: DFA for Strings Starting with '0'
 
-Design a DFA over $\Sigma = \{0, 1\}$ that accepts strings ending with the substring "01".
+Design a DFA over Σ = {0, 1} that accepts strings that begin with 0.
 
-Let $Q = \{q_0, q_1, q_2\}$ where:
-- $q_0$: no progress toward "01" (last symbol was not 0 and no partial match)
-- $q_1$: last symbol was 0 (partial match)
-- $q_2$: "01" has been seen (accepting)
+**Solution:**
 
-Transitions: $\delta(q_0, 0) = q_1$, $\delta(q_0, 1) = q_0$, $\delta(q_1, 0) = q_1$, $\delta(q_1, 1) = q_2$, $\delta(q_2, 0) = q_1$, $\delta(q_2, 1) = q_0$.
+We need to remember whether we have seen the first symbol and whether it was 0.
 
-Check: "00101" is accepted. The DFA follows: $q_0 \xrightarrow{0} q_1 \xrightarrow{0} q_1 \xrightarrow{1} q_2 \xrightarrow{0} q_1 \xrightarrow{1} q_2$. Since $q_2 \in F$, the string is accepted.
+- q₀: Start state, haven't read any symbol yet.
+- q₁: First symbol was 0 (good — maybe accept).
+- q₂: First symbol was 1 (bad — will never accept).
+- q₃: Dead state for strings that already failed.
 
-### Example 2: DFA for Strings with Even Number of 1s
+Transition Table:
+| State | 0 | 1 |
+|-------|---|---|
+| →q₀   | q₁ | q₂ |
+| *q₁   | q₁ | q₁ |
+| q₂    | q₃ | q₃ |
+| q₃    | q₃ | q₃ |
 
-Design a DFA over $\Sigma = \{0, 1\}$ where the number of 1s is even.
+Accepting state: q₁. Any string beginning with 0 stays in q₁ and is accepted. Any string beginning with 1 goes to q₂ then q₃ and is rejected. The empty string ε begins with nothing, so it is rejected (not accepted as it doesn't start with 0).
 
-Let $Q = \{q_{\text{even}}, q_{\text{odd}}\}$. State $q_{\text{even}}$ means an even number of 1s have been seen; $q_{\text{odd}}$ means an odd number. Both states are accepting? No — only $q_{\text{even}}$ accepts.
+### Example 1.2: DFA for Exactly Two '1's
 
-Transitions: $\delta(q_{\text{even}}, 0) = q_{\text{even}}$, $\delta(q_{\text{even}}, 1) = q_{\text{odd}}$, $\delta(q_{\text{odd}}, 0) = q_{\text{odd}}$, $\delta(q_{\text{odd}}, 1) = q_{\text{even}}$.
+Design a DFA over Σ = {0, 1} that accepts strings containing exactly two 1s.
 
-This DFA has exactly two states. It illustrates that a DFA must maintain enough memory (as states) to distinguish equivalence classes of strings.
+**Solution:**
 
-### Example 3: Product Construction
+We count the number of 1s seen, up to 3 where we stop caring (beyond 2 is already too many).
 
-Let $M_1$ accept strings with an even number of 1s (above). Let $M_2$ accept strings ending in 01 (Example 1). Construct $M_\cap$ accepting strings that satisfy both conditions.
+- q₀: Seen zero 1s (start).
+- q₁: Seen exactly one 1.
+- q₂: Seen exactly two 1s (accept).
+- q₃: Seen three or more 1s (dead).
 
-The product has $2 \times 3 = 6$ states: $\{q_{\text{even}}, q_{\text{odd}}\} \times \{q_0, q_1, q_2\}$. The start state is $(q_{\text{even}}, q_0)$. Accepting states are $(q_{\text{even}}, q_2)$.
+Transitions:
+| State | 0 | 1 |
+|-------|---|---|
+| →q₀   | q₀ | q₁ |
+| q₁    | q₁ | q₂ |
+| *q₂   | q₂ | q₃ |
+| q₃    | q₃ | q₃ |
 
-Transition example: $\delta_\cap((q_{\text{even}}, q_0), 1) = (\delta_1(q_{\text{even}}, 1), \delta_2(q_0, 1)) = (q_{\text{odd}}, q_0)$. After "1", parity is odd and no partial match.
+On 0, each state stays in itself (count of 1s doesn't change). On 1, we advance to the next state. L(M) = { w | w contains exactly two 1s }.
 
-### Example 4: DFA with Dead State
+### Example 1.3: DFA for Binary Numbers Divisible by 3
 
-Design a DFA over $\Sigma = \{0, 1\}$ accepting strings containing exactly one 1.
+Design a DFA over Σ = {0, 1} that accepts binary strings representing numbers divisible by 3 (leading zeros allowed).
 
-States: $q_0$ = no 1s seen yet; $q_1$ = exactly one 1 seen; $q_{\text{dead}}$ = more than one 1 seen.
+**Solution:**
 
-Transitions: $\delta(q_0, 0) = q_0$, $\delta(q_0, 1) = q_1$, $\delta(q_1, 0) = q_1$, $\delta(q_1, 1) = q_{\text{dead}}$, $\delta(q_{\text{dead}}, 0) = q_{\text{dead}}$, $\delta(q_{\text{dead}}, 1) = q_{\text{dead}}$.
+When we read a binary string left to right, we can track the remainder modulo 3. If the current remainder is r and we read bit b, the new remainder is (2r + b) mod 3.
 
-$F = \{q_1\}$. The dead state $q_{\text{dead}}$ ensures the DFA is total — every state has a defined transition for every symbol.
+- q₀: remainder 0 (start, accept — empty string represents 0).
+- q₁: remainder 1.
+- q₂: remainder 2.
+
+Transitions (from remainder r with bit b to (2r + b) mod 3):
+| State | 0 | 1 |
+|-------|---|---|
+| *→q₀  | q₀ | q₁ |
+| q₁    | q₂ | q₀ |
+| q₂    | q₁ | q₂ |
+
+Check: On input "110" (binary for 6): q₀ → q₁ (1) → q₀ (1) → q₀ (0). Accept. On input "100" (binary for 4): q₀ → q₁ (1) → q₂ (0) → q₁ (0). Reject.
 
 ## Summary
 
-- A DFA is a 5-tuple $(Q, \Sigma, \delta, q_0, F)$ with a deterministic transition function.
-- The language of a DFA is the set of strings that lead from the start state to an accepting state.
-- Regular languages are those recognized by some DFA.
-- Complement works by flipping accepting/non-accepting states (requires total $\delta$).
-- The product construction builds a DFA for the intersection (or union) of two DFA-recognizable languages.
-- Dead states complete the transition function and make complement well-defined.
+- A DFA is a 5-tuple (Q, Σ, δ, q₀, F) with a deterministic transition function.
+- The transition diagram and transition table are equivalent representations.
+- The extended transition function δ̂ processes strings inductively.
+- A language recognized by some DFA is called regular.
+- DFA design requires identifying the finite-state information needed to determine acceptance.
+- Every DFA has exactly one computation path for any input string.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. Why must the transition function $\delta$ be defined for every $(q, a) \in Q \times \Sigma$?
-2. What is the language accepted by a DFA with $F = \emptyset$? With $F = Q$?
-3. Explain why complement works for DFAs but would fail for nondeterministic automata without modification.
-4. How many states does the product DFA for three input DFAs have?
+1. Design a DFA over Σ = {a, b} that accepts strings ending with "aa".
+2. Design a DFA over Σ = {0, 1} that accepts strings of odd length.
+3. Design a DFA over Σ = {a, b} that accepts strings where the first and last symbols are the same.
+4. For the DFA in Example 1.1, list 3 strings that are accepted and 3 that are rejected.
+5. Design a DFA over Σ = {0, 1} that accepts strings containing "000" as a substring.
 
-### Application Problems
+### Intermediate
 
-5. Design a DFA over $\Sigma = \{a, b\}$ that accepts strings where every occurrence of "aa" is immediately followed by "b".
-6. Design a DFA over $\Sigma = \{0, 1\}$ that accepts strings whose binary value is divisible by 3. (Hint: track the remainder modulo 3.)
-7. Use the product construction to build a DFA accepting strings over $\{0, 1\}$ that both have an even number of 0s and have an even number of 1s.
-8. Construct the complement of the DFA from Example 1. What language does it accept?
+6. Design a DFA for binary strings that contain an even number of 0s and an odd number of 1s.
+7. Design a DFA over Σ = {a, b} that accepts strings where every occurrence of "ab" is followed immediately by "a".
+8. Design a DFA that accepts strings over {0, 1} where the binary number represented is at least 4 (leading zeros allowed).
+9. Design a DFA for strings over {a, b} where the number of a's is a multiple of 3 and the number of b's is even.
+10. Prove that the language L = { w ∈ {0,1}* | w = reverse(w) } (palindromes) is NOT regular, using the pigeonhole principle and DFA state arguments. (Hint: assume a DFA with k states exists and consider strings 0ⁱ1 for i = 1,…,k+1.)
 
-### Challenge Problem
+### Advanced
 
-9. Prove that for any DFA with $n$ states, if the DFA accepts some string of length at least $n$, then it accepts infinitely many strings. (Hint: use the pigeonhole principle on the sequence of states visited while reading the string.)
+11. Let L = { w ∈ {0,1}* | the number of occurrences of "01" as a substring equals the number of occurrences of "10" }. Design a DFA for L.
+12. Show that the class of regular languages is closed under complement (if L is regular, then L̅ = Σ* − L is regular) by constructing a DFA for L̅ from a DFA for L.
+13. Design a DFA for the language L = { w ∈ {a,b}* | |w| mod 3 = 0 and w contains at least one 'a' and at least one 'b' }.
+14. Prove formally that the DFA in Example 1.3 correctly recognizes binary strings divisible by 3 by induction on string length.
+15. Let M₁ accept L₁ and M₂ accept L₂. Show how to construct a DFA that accepts L₁ ∪ L₂ using the Cartesian product of states. Apply this to combine the DFA from Example 1.2 with the DFA from Example 1.3.

@@ -1,82 +1,78 @@
-# Database Management Systems — A Complete University Textbook
+# Database Management Systems — Complete Textbook
 
-## Course Description
+## Course Overview
 
-This textbook provides a rigorous, comprehensive treatment of database management systems (DBMS), spanning foundational concepts through advanced implementation techniques. The material is appropriate for upper-division undergraduate and graduate-level courses in computer science and related disciplines. Each chapter integrates theoretical exposition with worked examples and progressively challenging exercises.
+This textbook provides a comprehensive introduction to Database Management Systems (DBMS), covering the fundamental concepts, design methodologies, query languages, system internals, and modern distributed database technologies. The content progresses from foundational theory through practical SQL and into advanced topics including transaction processing, query optimization, NoSQL systems, and database security.
+
+**Target Audience:** Undergraduate computer science students, software engineering students, and self-learners with basic programming knowledge.
+
+**Estimated Completion Time:** 12–16 weeks (at 4–6 hours/week)
+
+---
 
 ## Prerequisites
 
-Students are expected to have a working knowledge of data structures, discrete mathematics, and proficiency in at least one general-purpose programming language. Prior exposure to file systems and operating system concepts is beneficial but not required.
+- Basic programming knowledge (variables, control flow, functions)
+- Familiarity with data structures (arrays, lists, hash tables)
+- Understanding of basic file I/O concepts
+- Discrete mathematics (sets, logic) is helpful but not required
 
-## Organization
-
-The text is divided into five thematic units comprising eighteen chapters. The first unit establishes the conceptual and architectural foundations of database systems. The second unit develops the relational model and the SQL language in depth. The third unit treats database design theory, including normalization and its practical implications. The fourth unit addresses transaction processing, concurrency control, and recovery mechanisms. The fifth unit surveys indexing, query processing, advanced data models including NoSQL and distributed databases, and database security.
+---
 
 ## Chapter List
 
-### Unit I — Foundations
+| # | Chapter | Topics | Difficulty |
+|---|---------|--------|------------|
+| 01 | [Introduction to DBMS](01-introduction.md) | File systems vs DBMS, data models, schemas, three-level architecture, DBMS languages | ★☆☆ |
+| 02 | [Entity-Relationship Model](02-er-model.md) | Entities, attributes, relationships, ER diagrams, weak entities, generalization | ★★☆ |
+| 03 | [Relational Model](03-relational-model.md) | Relations, keys, integrity constraints, relational algebra operations | ★★☆ |
+| 04 | [SQL Basics](04-sql-basics.md) | DDL, DML, DCL, CREATE, INSERT, SELECT, UPDATE, DELETE, constraints | ★☆☆ |
+| 05 | [SQL Joins and Subqueries](05-sql-joins.md) | Inner/outer joins, cross/self joins, subqueries, EXISTS, correlated subqueries | ★★☆ |
+| 06 | [Advanced SQL](06-sql-advanced.md) | GROUP BY, aggregates, window functions, CTEs, views, indexes | ★★☆ |
+| 07 | [Normalization](07-normalization.md) | 1NF, 2NF, 3NF, BCNF, functional dependencies, decomposition | ★★★ |
+| 08 | [Higher Normal Forms](08-higher-nf.md) | 4NF, 5NF, join dependencies, DKNF, denormalization | ★★★ |
+| 09 | [Transactions](09-transactions.md) | ACID, transaction states, schedules, serializability | ★★★ |
+| 10 | [Concurrency Control](10-concurrency.md) | Locking protocols, 2PL, timestamp ordering, MVCC, deadlock | ★★★ |
+| 11 | [Recovery System](11-recovery.md) | Failure types, log-based recovery, checkpoints, ARIES | ★★★ |
+| 12 | [Indexing](12-indexing.md) | B+ trees, hash indexes, composite indexes, bitmap indexes | ★★★ |
+| 13 | [Query Processing](13-query-processing.md) | Parsing, optimization, cost estimation, join algorithms | ★★★ |
+| 14 | [NoSQL Overview](14-nosql.md) | CAP theorem, BASE, document stores, key-value, column-family, graph | ★★☆ |
+| 15 | [MongoDB Deep Dive](15-mongodb.md) | CRUD, aggregation, indexing, replication, sharding | ★★☆ |
+| 16 | [Redis Deep Dive](16-redis.md) | Data types, persistence, replication, clustering, caching | ★★☆ |
+| 17 | [Distributed Databases](17-distributed-db.md) | Fragmentation, replication, distributed query processing, homogeneity | ★★★ |
+| 18 | [Database Security](18-security.md) | Access control, SQL injection, encryption, auditing, GDPR | ★★☆ |
 
-| Chapter | Title | Topics |
-|---------|-------|--------|
-| 1 | Introduction | Database vs file system, DBMS functions, data models, three-schema architecture, data independence, DDL/DML/DCL |
-| 2 | The Entity-Relationship Model | Entities, attributes, relationships, keys, ER diagrams, weak entities, specialization, generalization, aggregation |
-| 3 | The Relational Model | Relation schema, keys, relational algebra, tuple calculus, domain calculus |
+---
 
-### Unit II — Structured Query Language
+## How to Use This Textbook
 
-| Chapter | Title | Topics |
-|---------|-------|--------|
-| 4 | SQL — Basics | DDL statements, DML statements, SELECT queries, constraints, NULL handling |
-| 5 | SQL — Joins and Subqueries | Join types, set operations, correlated and nested subqueries |
-| 6 | SQL — Advanced Features | Aggregate functions, grouping, window functions, CTEs, recursive CTEs, pivot operations |
+Each chapter follows a consistent structure:
 
-### Unit III — Database Design Theory
+- **Learning Objectives** — What you will know after completing the chapter
+- **Theory** — Comprehensive explanation of concepts with subsections
+- **Examples** — Practical examples with SQL code, diagrams, or pseudocode
+- **Summary** — Key takeaways for quick review
+- **Exercises** — Tiered practice problems (Basic, Intermediate, Advanced)
 
-| Chapter | Title | Topics |
-|---------|-------|--------|
-| 7 | Normalization | Functional dependencies, Armstrong's axioms, closure, canonical cover, 1NF through BCNF |
-| 8 | Higher Normal Forms | 4NF, 5NF, DKNF, denormalization, practical trade-offs |
+Start with Chapters 1–4 for foundational understanding, then progress according to your interest:
 
-### Unit IV — Transaction Processing
+- **Application developers** focus on Chapters 4–6 and 15–16
+- **System designers** focus on Chapters 7–8 and 14–18
+- **Performance engineers** focus on Chapters 9–13
 
-| Chapter | Title | Topics |
-|---------|-------|--------|
-| 9 | Transactions | ACID properties, schedules, serializability, precedence graphs, recoverability |
-| 10 | Concurrency Control | Lock-based protocols, deadlock, timestamp protocols, validation, MVCC |
-| 11 | Recovery | Failure classification, log-based recovery, checkpoints, ARIES, shadow paging |
+---
 
-### Unit V — Advanced Topics
+## Reference Materials
 
-| Chapter | Title | Topics |
-|---------|-------|--------|
-| 12 | Indexing | B+ trees, hash indices, bitmap indices, dense vs sparse, index trade-offs |
-| 13 | Query Processing and Optimization | Selection/join algorithms, cost estimation, heuristic and cost-based optimization |
-| 14 | NoSQL Databases | CAP theorem, data models, BASE, comparison with RDBMS, use cases |
-| 15 | MongoDB | Document model, CRUD, indexing, aggregation, replication, sharding |
-| 16 | Redis | Data structures, persistence, replication, pub/sub, caching |
-| 17 | Distributed Databases | Fragmentation, replication, transparency, 2PC, 3PC, distributed query processing |
-| 18 | Database Security | Access control, SQL injection, encryption, auditing, GDPR |
+- SQL queries target PostgreSQL 15+ syntax unless otherwise noted
+- NoSQL examples target MongoDB 7+ and Redis 7+
+- All examples are tested against the stated versions
+- Exercises marked with ★ include solutions in the chapter appendix
 
-## How to Use This Text
+---
 
-Each chapter opens with a set of learning objectives that delineate the knowledge and skills the student should acquire. The theoretical exposition is interspersed with worked examples, SQL queries, and computational problems that illustrate the application of concepts. Every chapter concludes with a summary that recapitulates the principal ideas and three tiers of exercises. Review Questions test factual recall and conceptual understanding. Application Problems require synthesis of material and implementation of techniques demonstrated in the chapter. The Challenge Problem at the end of each chapter integrates multiple concepts, often requiring formal proofs, system design, or implementation in a programming language.
+## Version
 
-## Recommended Course Schedule
-
-A one-semester course at the undergraduate level can cover the first fourteen chapters in sequence, with the remaining four chapters selected based on instructor emphasis. A suggested schedule allocates two weeks for Unit I (chapters 1 through 3), three weeks for Unit II (chapters 4 through 6), three weeks for Unit III (chapters 7 and 8), three weeks for Unit IV (chapters 9 through 11), and three weeks for selected topics from Unit V (chapters 12 through 18). Each chapter's Challenge Problem is appropriate for a term project or take-home examination.
-
-## Supplementary Resources
-
-Instructors may supplement this text with the following resources. SQL exercises can be practiced on any relational DBMS. The sample databases used in the exercises are available in a companion repository. Students are encouraged to experiment with EXPLAIN PLAN and query execution tools to develop an intuition for query optimization. For the NoSQL chapters, MongoDB and Redis are available as free community editions.
-
-## Notation
-
-Throughout this text, we adopt the following conventions. SQL keywords are rendered in uppercase for clarity. Relation names appear in italic typeface. Attribute names appear in monospace font when embedded in running text. We use the symbol r to denote a relation instance and R to denote a relation schema. Functional dependencies are written with a right arrow symbol. Set operations appear with standard mathematical notation. The symbol sigma denotes the selection operation in relational algebra, pi denotes projection, bowtie denotes natural join, and rho denotes rename.
-
-## Acknowledgments
-
-This text draws on the foundational contributions of Edgar F. Codd, Peter Chen, Jim Gray, Michael Stonebraker, and the many researchers and practitioners who have advanced the theory and practice of database management systems over the past five decades. The exercises and examples have benefited from classroom testing and the feedback of students and colleagues.
-
-## About the Author
-
-This textbook was developed for use in university-level database courses and is maintained as an open educational resource. Revisions and errata are tracked in the companion repository. Contributions, corrections, and suggestions for improvement are welcomed by the maintainers.
+**Textbook Version:** 1.0  
+**Last Updated:** June 2026  
+**License:** Educational use — freely distributable with attribution

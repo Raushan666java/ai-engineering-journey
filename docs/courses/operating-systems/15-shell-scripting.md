@@ -1,320 +1,596 @@
-# Chapter 15 — Shell Scripting
+# Chapter 15: Shell Scripting
 
 ## Learning Objectives
 
-1. Write shell scripts with variables, conditionals, loops, and functions.
-2. Use pipes and redirection to compose commands.
-3. Manage jobs and processes from the command line.
-4. Monitor system utilisation with ps, top, and strace.
-5. Understand the execution environment of a shell.
+- Understand the role of the shell as both a command interpreter and scripting language
+- Write shell scripts with variables, conditionals, loops, and functions
+- Use pipes and redirection to combine commands into pipelines
+- Manage processes: background execution, job control, signals, and process substitution
+- Use common text-processing utilities: grep, sed, awk, cut, sort, uniq
+- Debug and write robust shell scripts with proper error handling
 
-## 15.1 The UNIX Shell
+## Theory
 
-A shell is a command-line interpreter that provides a user interface to the operating system. It parses commands, expands wildcards and variables, sets up I/O redirection, and executes programs. The most common shell on Linux is Bash (Bourne Again SHell).
+### The Shell
 
-A shell script is a file containing a sequence of shell commands. The first line specifies the interpreter:
+A **shell** is a program that acts as an intermediary between the user and the operating system kernel. It has two modes:
+
+1. **Interactive mode**: Read commands from the terminal, execute them, display results
+2. **Script mode**: Read commands from a file (script) and execute them sequentially
+
+Common Unix shells:
+
+| Shell | Path | Features |
+|-------|------|----------|
+| Bourne (sh) | `/bin/sh` | Original Unix shell, minimal |
+| Bash | `/bin/bash` | Bourne Again SHell — de facto standard, advanced features |
+| Zsh | `/bin/zsh` | Extended Bash, powerful tab-completion, theming |
+| Fish | `/usr/bin/fish` | User-friendly, auto-suggestions, web-based config |
+
+### Shell Basics
+
+#### Shebang
+
+Every script should start with a **shebang** (`#!`) that tells the kernel which interpreter to use:
 
 ```bash
 #!/bin/bash
+# The rest of the script...
 ```
 
-## 15.2 Variables
-
-Shell variables are untyped — they store strings:
+#### Variables
 
 ```bash
+# Assignment (no spaces around =)
 name="Alice"
-echo "Hello, $name"
-echo "Filename: ${name}.txt"
+count=10
+greeting="Hello, $name!"   # Variable expansion
 
-# Command substitution
-files=$(ls)
-echo "Files: $files"
+# Read-only variable
+readonly pi=3.14159
+
+# Environment variables
+export PATH="$PATH:/custom/bin"
+
+# Command substitution — two syntaxes:
+today=$(date +%Y-%m-%d)
+also_today=`date +%Y-%m-%d`    # Legacy syntax
 
 # Arithmetic
-((result = 3 + 5))
-echo $result
+sum=$((count + 5))
+
+# Special variables
+echo "Script name:  $0"
+echo "First arg:    $1"
+echo "Second arg:   $2"
+echo "All args:     $@"
+echo "Args count:   $#"
+echo "Exit code:    $?"
+echo "PID:          $$"
 ```
 
-### 15.2.1 Special Variables
+### Control Flow
 
-| Variable | Meaning |
-|----------|---------|
-| `$0` | Script name |
-| `$1`, `$2`, ... | Positional parameters |
-| `$#` | Number of arguments |
-| `$@` | All arguments as separate words |
-| `$*` | All arguments as single word |
-| `$?` | Exit status of last command |
-| `$$` | PID of the current shell |
-| `$!` | PID of the last background process |
-
-## 15.3 Conditionals
+#### Conditionals
 
 ```bash
-if [ "$1" = "hello" ]; then
-    echo "Hello to you too"
-elif [ -f "$1" ]; then
-    echo "$1 is a file"
+# if/then/elif/else
+if [ "$1" = "start" ]; then
+    echo "Starting..."
+elif [ "$1" = "stop" ]; then
+    echo "Stopping..."
 else
-    echo "Unknown: $1"
+    echo "Usage: $0 {start|stop}"
+    exit 1
 fi
 
-# Test operators
-# -f file : file exists and is regular
-# -d dir  : directory exists
-# -z str  : string is empty
-# -n str  : string is non-empty
-# s1 = s2 : string equality
-# n1 -eq n2 : numeric equality
+# test command (same as [ ])
+# File tests:
+#   -f file    file exists and is regular file
+#   -d dir     directory exists
+#   -x file    file is executable
+#   -e file    file exists
 
+if [ -f /etc/passwd ]; then
+    echo "Password file exists"
+fi
+
+# String comparisons: =, !=, -z (empty), -n (non-empty)
+# Integer comparisons: -eq, -ne, -lt, -le, -gt, -ge
+
+# Logical operators
+if [ -f "$file" ] && [ -r "$file" ]; then
+    echo "File exists and is readable"
+fi
+
+# [[ ]] — extended test (Bash-only, more features)
+if [[ "$name" == A* ]]; then
+    echo "Name starts with A"
+fi
+
+# case statement
 case "$1" in
-    start)
+    start|begin)
         echo "Starting..."
         ;;
-    stop)
+    stop|end)
         echo "Stopping..."
         ;;
+    restart)
+        $0 stop
+        $0 start
+        ;;
     *)
-        echo "Usage: $0 {start|stop}"
+        echo "Unknown command: $1"
         exit 1
         ;;
 esac
 ```
 
-## 15.4 Loops
+#### Loops
 
 ```bash
-# For loop over explicit list
+# for loop over explicit list
 for color in red green blue; do
     echo "Color: $color"
 done
 
-# For loop over command output
-for file in *.txt; do
-    echo "Processing: $file"
+# for loop over range
+for i in {1..10}; do
+    echo "Number: $i"
 done
 
-# C-style for loop
-for ((i = 0; i < 10; i++)); do
-    echo "Iteration $i"
+# for loop with C-style syntax
+for ((i=0; i<10; i++)); do
+    echo "i = $i"
 done
 
-# While loop
+# while loop
 count=0
-while [ $count -lt 10 ]; do
+while [ $count -lt 5 ]; do
     echo "Count: $count"
-    ((count++))
+    count=$((count + 1))
 done
 
 # Reading a file line by line
 while IFS= read -r line; do
     echo "Line: $line"
-done < input.txt
+done < "input.txt"
+
+# until loop
+count=10
+until [ $count -eq 0 ]; do
+    echo "Countdown: $count"
+    count=$((count - 1))
+done
 ```
 
-## 15.5 Functions
+#### Functions
 
 ```bash
+# Function definition (two syntaxes)
 greet() {
-    local name="$1"   # local scope
+    local name="$1"        # local variable
     echo "Hello, $name!"
 }
 
-greet "World"
-
-# Function returning a value via stdout
-get_uptime() {
-    uptime | awk '{print $3}'
-}
-
-echo "System uptime: $(get_uptime)"
-```
-
-## 15.6 Pipes and Redirection
-
-### 15.6.1 Redirection
-
-```bash
-# Redirect stdout to file (overwrite)
-command > output.txt
-
-# Redirect stdout to file (append)
-command >> output.txt
-
-# Redirect stderr to file
-command 2> error.txt
-
-# Redirect both stdout and stderr
-command &> all_output.txt
-
-# Read input from file
-command < input.txt
-
-# Here document (multiline input)
-cat << EOF > config.txt
-host=localhost
-port=8080
-EOF
-```
-
-### 15.6.2 Pipes
-
-A pipe connects stdout of one process to stdin of another:
-
-```bash
-# List processes, filter for 'bash', count lines
-ps aux | grep bash | wc -l
-
-# Find the largest file in /var/log
-ls -1S /var/log | head -5
-
-# Sort disk usage by size
-du -sk * | sort -rn | head -10
-```
-
-Pipes are implemented by the `pipe()` system call and `dup2()` to redirect file descriptors.
-
-## 15.7 Job Control
-
-```bash
-# Run command in background
-sleep 100 &
-
-# List background jobs
-jobs
-
-# Bring job to foreground
-fg %1
-
-# Send job to background (after Ctrl+Z)
-bg %1
-
-# Run command immune to SIGHUP
-nohup long_running_command &
-
-# Run with diminished priority
-nice -n 19 slow_command
-
-# Change priority of running process
-renice +5 -p 1234
-```
-
-## 15.8 Process Monitoring
-
-### 15.8.1 ps
-
-```bash
-# All processes (BSD style)
-ps aux
-
-# Process tree
-ps axjf
-
-# Thread view
-ps -eLf
-
-# Custom output
-ps -eo pid,ppid,user,%cpu,%mem,comm --sort=-%cpu | head
-```
-
-### 15.8.2 top and htop
-
-Interactive process viewers:
-
-```
-top - 14:23:01 up 10 days,  2 users,  load average: 0.15, 0.10, 0.05
-Tasks: 231 total,   1 running, 230 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  2.3 us,  1.2 sy,  0.0 ni, 96.1 id,  0.4 wa,  0.0 hi,  0.0 si
-MiB Mem :  15934.8 total,   8234.5 free,   3201.2 used,   4499.1 buff/cache
-MiB Swap:   8192.0 total,   8192.0 free,      0.0 used.  11144.7 avail Mem
-```
-
-### 15.8.3 strace
-
-`strace` intercepts and records system calls made by a process:
-
-```bash
-# Trace all system calls of a command
-strace ls /tmp
-
-# Trace specific calls
-strace -e open,read,write ./program
-
-# Trace a running process
-strace -p 1234
-
-# Show timestamps
-strace -t -T ./program
-
-# Count system calls
-strace -c ./program
-```
-
-## 15.9 Practical Script Patterns
-
-### 15.9.1 Safe Script Template
-
-```bash
-#!/bin/bash
-set -euo pipefail
-
-# -e : exit on any error
-# -u : treat unset variables as errors
-# -o pipefail : pipeline fails if any command fails
-
-log() {
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >&2
-}
-
-die() {
-    log "FATAL: $*"
+function error_exit {
+    echo "ERROR: $1" >&2
     exit 1
 }
 
-main() {
-    local input="${1:?Usage: $0 <input>}"
-    log "Processing $input"
-    # ... script logic ...
+# Call functions
+greet "World"
+error_exit "Something went wrong"
+
+# Return values (exit code, 0–255)
+is_even() {
+    [ $(( $1 % 2 )) -eq 0 ]
+    return $?              # return is optional
 }
 
-main "$@"
+if is_even 42; then
+    echo "42 is even"
+fi
 ```
 
-### 15.9.2 Parallel Processing
+### Pipes and Redirection
+
+#### File Descriptors
+
+| Number | Name | Default | Description |
+|--------|------|---------|-------------|
+| 0 | stdin | Keyboard | Standard input |
+| 1 | stdout | Screen | Standard output |
+| 2 | stderr | Screen | Standard error |
+
+#### Redirection Operators
 
 ```bash
-# Run tasks in parallel with a limit
-for url in $(cat urls.txt); do
-    (curl -s "$url" > "downloads/$(basename $url)" &)
-    while [ $(jobs -r | wc -l) -ge 4 ]; do
-        sleep 1
-    done
+# Output redirection
+command > file      # stdout → file (overwrite)
+command >> file     # stdout → file (append)
+command 2> file     # stderr → file
+command 2>> file    # stderr → file (append)
+command &> file     # stdout + stderr → file (Bash)
+
+# Input redirection
+command < file      # stdin ← file
+
+# Here document — inline input
+cat << EOF
+This is a multi-line
+"here document" that
+preserves whitespace.
+EOF
+
+# Here string
+grep "error" <<< "line 1: error found
+line 2: ok"
+
+# Discard output
+command > /dev/null       # Suppress stdout
+command 2> /dev/null      # Suppress stderr
+command &> /dev/null      # Suppress both
+
+# File descriptor manipulation
+command 2>&1              # Merge stderr into stdout
+command 2>&1 | less       # Both stdout and stderr through pager
+```
+
+#### Pipes
+
+Pipes connect the standard output of one command to the standard input of another:
+
+```bash
+# Pipe: use output of cmd1 as input to cmd2
+cmd1 | cmd2
+
+# Pipeline examples
+ps aux | grep firefox
+cat access.log | grep "404" | wc -l
+sort data.txt | uniq -c | sort -rn | head -10
+```
+
+#### Named Pipes (FIFOs)
+
+A named pipe persists as a filesystem entry:
+
+```bash
+mkfifo mypipe
+cat mypipe &                  # Reader (background)
+echo "Hello through pipe" > mypipe  # Writer
+kill %1
+rm mypipe
+```
+
+### Job Control
+
+```bash
+# Run in background
+long_running_command &
+
+# List jobs
+jobs
+# [1]+  Running    command &
+
+# Bring to foreground
+fg %1
+
+# Send to background (after Ctrl+Z to suspend)
+bg %1
+
+# Run immune to terminal hangups
+nohup long_running_command &
+
+# Process groups and sessions
+# Ctrl+C → SIGINT to foreground process group
+# Ctrl+Z → SIGTSTP to foreground process group
+# Ctrl+\ → SIGQUIT with core dump
+```
+
+### Process Substitution (Bash)
+
+```bash
+# Process substitution feeds the output of a command as a file
+diff <(ls dir1) <(ls dir2)
+
+# Useful when a command expects a file argument
+grep "error" <(tail -100 logfile)
+```
+
+### Text Processing Utilities
+
+#### grep — Pattern Matching
+
+```bash
+grep "pattern" file           # Basic search
+grep -i "pattern" file        # Case-insensitive
+grep -r "pattern" dir/        # Recursive
+grep -l "pattern" *.txt       # List filenames only
+grep -c "pattern" file        # Count matches
+grep -n "pattern" file        # Show line numbers
+grep -v "pattern" file        # Invert match (lines NOT matching)
+grep -E "[0-9]+" file         # Extended regex (grep -E = egrep)
+grep -A 3 "error" file        # Show 3 lines After match
+grep -B 2 "error" file        # Show 2 lines Before match
+grep -C 1 "error" file        # Show 1 line Context around match
+```
+
+#### sed — Stream Editor
+
+```bash
+# Substitution
+sed 's/old/new/' file         # Replace first occurrence on each line
+sed 's/old/new/g' file        # Replace all occurrences
+sed 's/old/new/2' file        # Replace second occurrence on each line
+sed 's/old/new/g' file > new  # Write to new file
+sed -i 's/old/new/g' file     # In-place edit
+
+# Line addressing
+sed '3s/old/new/' file        # Only line 3
+sed '10,20s/old/new/' file    # Lines 10–20
+sed '/pattern/s/old/new/' file # Lines matching pattern
+
+# Deletion
+sed '/^#/d' file              # Delete comment lines
+sed '1d' file                 # Delete first line
+
+# Print
+sed -n '5,10p' file           # Print lines 5–10 (no -n = all lines printed)
+```
+
+#### awk — Pattern Scanning and Processing
+
+```bash
+# awk is a programming language for field-oriented text processing
+# Fields: $1, $2, $3, ... $NF (last field)
+
+awk '{ print $1, $3 }' file           # Print fields 1 and 3
+awk '/error/ { print $0 }' file       # Print entire line matching "error"
+awk '$3 > 50 { print $1, $3 }' file   # Conditional
+
+# Field separator
+awk -F: '{ print $1, $6 }' /etc/passwd
+
+# Built-in variables
+awk '{ print NR, NF, $0 }' file       # Line number, field count, whole line
+
+# BEGIN and END blocks
+awk 'BEGIN { sum=0 } { sum += $1 } END { print "Total:", sum }' numbers.txt
+
+# Formatting
+awk '{ printf "%-15s %5d\n", $1, $2 }' file
+```
+
+#### sort, uniq, cut, wc, head, tail
+
+```bash
+sort file                             # Alphabetical sort
+sort -n file                          # Numeric sort
+sort -r file                          # Reverse sort
+sort -t: -k3 -n /etc/passwd           # Sort by field 3 (numeric, colon-separated)
+
+uniq                                  # Remove adjacent duplicates (requires sorted input)
+uniq -c                               # Count occurrences
+uniq -d                               # Show only duplicates
+uniq -u                               # Show only unique lines
+
+cut -d: -f1,3 /etc/passwd             # Extract fields 1 and 3
+cut -c1-10 file                       # Extract characters 1–10
+
+wc -l file                            # Count lines
+wc -w file                            # Count words
+wc -c file                            # Count characters
+
+head -n 20 file                       # First 20 lines
+tail -n 20 file                       # Last 20 lines
+tail -f logfile                       # Follow (watch) growing file
+```
+
+### Signals and Signal Handling
+
+```bash
+# The trap command catches signals
+cleanup() {
+    echo "Interrupted! Cleaning up..."
+    rm -f /tmp/temp_$$
+    exit 1
+}
+
+trap cleanup SIGINT SIGTERM
+
+# Ignoring signals
+trap '' SIGINT     # Ignore Ctrl+C (until trap is reset)
+
+# Reset signal handling
+trap - SIGINT      # Restore default behavior
+
+# Timeouts
+timeout 5 command  # Kill command after 5 seconds
+```
+
+### Writing Robust Shell Scripts
+
+```bash
+#!/bin/bash
+
+# Safety options
+set -e   # Exit on any error
+set -u   # Treat unset variables as errors
+set -o pipefail  # Fail if any command in a pipeline fails
+
+# Alternative: combine all
+set -euo pipefail
+
+# Validate arguments
+if [ $# -ne 2 ]; then
+    echo "Usage: $0 <input_file> <output_file>" >&2
+    exit 1
+fi
+
+INPUT_FILE="$1"
+OUTPUT_FILE="$2"
+
+# Check prerequisites
+for cmd in awk sed grep; do
+    if ! command -v "$cmd" &> /dev/null; then
+        echo "Error: $cmd is not installed" >&2
+        exit 1
+    fi
 done
-wait
-echo "All downloads complete"
+
+# Check input file
+if [ ! -r "$INPUT_FILE" ]; then
+    echo "Error: Cannot read $INPUT_FILE" >&2
+    exit 1
+fi
+
+# Main logic
+main() {
+    echo "Processing $INPUT_FILE..."
+    # ... processing ...
+    echo "Done. Output written to $OUTPUT_FILE"
+}
+
+main
+```
+
+## Examples
+
+### Example 1: System Info Script
+
+```bash
+#!/bin/bash
+# A script that prints system information
+
+echo "=== System Information ==="
+echo "Hostname: $(hostname)"
+
+echo "=== CPU ==="
+lscpu | grep "Model name" | head -1
+
+echo "=== Memory ==="
+free -h | head -2
+
+echo "=== Disk Usage ==="
+df -h / | tail -1
+
+echo "=== Network ==="
+ip addr | grep "inet " | awk '{print $2}'
+
+echo "=== Running Processes ==="
+ps aux --sort=-%cpu | head -5
+
+echo "=== Uptime ==="
+uptime
+```
+
+### Example 2: Log Analyzer
+
+```bash
+#!/bin/bash
+# Analyze a web server access log
+
+LOG_FILE="${1:-/var/log/nginx/access.log}"
+
+if [ ! -f "$LOG_FILE" ]; then
+    echo "Error: Cannot read $LOG_FILE" >&2
+    exit 1
+fi
+
+echo "=== Log Analysis: $LOG_FILE ==="
+
+echo "Total requests:"
+wc -l < "$LOG_FILE"
+
+echo "HTTP Status Code Distribution:"
+awk '{print $9}' "$LOG_FILE" | sort | uniq -c | sort -rn
+
+echo "Top 10 IP addresses:"
+awk '{print $1}' "$LOG_FILE" | sort | uniq -c | sort -rn | head -10
+
+echo "Top 10 requested URLs:"
+awk '{print $7}' "$LOG_FILE" | sort | uniq -c | sort -rn | head -10
+
+echo "Requests per day:"
+awk '{print $4}' "$LOG_FILE" | cut -d: -f1 | tr -d '[' | sort | uniq -c
+
+echo "Most active 5-minute window:"
+awk '{
+    gsub(/^\[|\]$/, "", $4);
+    window = substr($4, 1, 14) "0]";
+    print window
+}' "$LOG_FILE" | sort | uniq -c | sort -rn | head -5
+```
+
+### Example 3: File Organizer
+
+```bash
+#!/bin/bash
+# Organize files in a directory by type
+
+TARGET_DIR="${1:-.}"  # Default to current directory
+
+if [ ! -d "$TARGET_DIR" ]; then
+    echo "Error: $TARGET_DIR is not a directory" >&2
+    exit 1
+fi
+
+cd "$TARGET_DIR" || exit 1
+
+# Organize by file extension
+for file in *; do
+    if [ -f "$file" ]; then
+        ext="${file##*.}"  # Get extension after last '.'
+        ext_dir="${ext:-no_extension}"
+
+        mkdir -p "$ext_dir"
+        cp -n "$file" "$ext_dir/"  # -n = no overwrite
+        echo "Copied $file → $ext_dir/"
+    fi
+done
+
+echo "Done. Files organized by extension."
+
+# Show summary
+echo ""
+echo "=== Summary ==="
+for dir in */; do
+    count=$(find "$dir" -type f | wc -l)
+    echo "  $dir: $count files"
+done
 ```
 
 ## Summary
 
-Shell scripting automates system administration and development tasks. Variables, conditionals, loops, and functions provide programming constructs within the shell. Pipes and redirection compose single-purpose tools into powerful pipelines. Job control manages concurrent processes. Monitoring commands (ps, top, strace) provide visibility into system state. Safe scripting patterns with `set -euo pipefail` prevent common errors.
+- The shell is both an interactive command interpreter and script interpreter
+- Shebang (`#!/bin/bash`) specifies the interpreter for scripts
+- Variables use `$name` or `${name}` for expansion; arithmetic with `$((...))`
+- Conditionals: `if`, `case`; loops: `for`, `while`, `until`
+- Pipes (`|`) connect commands into powerful pipelines
+- Redirection controls stdin/stdout/stderr (`>`, `<`, `2>`, `&>`)
+- Job control: background (`&`), foreground, suspend, `nohup`
+- `grep` for pattern matching, `sed` for stream editing, `awk` for field processing
+- `trap` handles signals; `set -euo pipefail` for robust scripts
+- Named pipes (FIFOs) allow inter-process communication through the filesystem
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What is the difference between `$@` and `$*`?
-2. How does a pipe differ from I/O redirection?
-3. What is the purpose of `set -euo pipefail` in a shell script?
-4. How does `strace` help in debugging a program?
-5. What is the difference between a foreground job and a background job?
+1. Write a script that lists all files in the current directory, sorted by size (largest first). Include the file size and name in the output.
+2. Write a script that renames all `.txt` files in a directory to `.bak` extension.
+3. Write a script that counts the number of files in a directory, broken down by extension (e.g., `.txt: 5`, `.jpg: 12`, `.md: 3`).
 
-### Application Problems
+### Intermediate
 
-1. Write a shell script that monitors CPU and memory usage of a given process (by PID) for 60 seconds, sampling every 5 seconds. Output a timestamped log.
-2. Write a pipeline that finds the top 10 IP addresses accessing an Apache web server from its access log, sorted by request count.
-3. Write a script that takes a directory as argument, finds all empty files and directories, and prompts the user before deleting each one.
+4. Write a script that monitors a log file (use `tail -f`) for lines containing "ERROR" and sends an email alert (use `mail` or write to a file) if more than 10 errors appear in 60 seconds.
+5. Write a script that takes a directory path and creates a dated backup: `backup_project_2026-06-09_1430.tar.gz`. The script should keep only the last 7 backups and delete older ones.
+6. Write an Apache/nginx log analyzer that generates an HTML report with tables showing top IPs, top URLs, response code distribution, and a simple line chart using inline SVG.
 
-### Challenge Problem
+### Advanced
 
-1. Write a shell script-based parallel file downloader. It takes a file of URLs as input and a concurrency level N (default 4). Using background jobs and job control, maintain exactly N concurrent `curl` downloads. When one completes, start the next. Print progress information (URL, size, elapsed time) for each completed download. Handle errors (failed downloads, network timeouts) gracefully.
+7. Write a shell script that implements a simple **pipeline scheduler**: given a file listing commands and their estimated run times, schedule them across N parallel workers. Use job control (`wait -n`, background processes) to execute up to N tasks in parallel. Report completion times.
+8. Write a script that performs **fuzzy file search**. Given a partial filename, search the entire filesystem and show matches. Use a fast find strategy: search home directory first, then common locations (`/etc`, `/var/log`), and only if not found search `/usr` and `/opt`. Show the search path and time taken.
+9. Write a **shell-based REPL** calculator that supports variables, arithmetic, and a history command. Use `read -e` (readline) for line editing, store history in a file, and support `+`, `-`, `*`, `/`, `%` operators with `$((...))` evaluation.

@@ -1,85 +1,414 @@
-# Chapter 12 — Indexing
+# Chapter 12: Indexing
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) distinguish between ordered and hash indices; (2) differentiate between dense and sparse indices; (3) describe the structure and operations of B+ trees; (4) describe static, extensible, and linear hashing; (5) describe bitmap indices; and (6) evaluate index selection trade-offs.
+- Explain the purpose of indexes in query acceleration
+- Describe B+ tree structure, operations, and performance characteristics
+- Implement hash indexes and understand their use cases
+- Design composite indexes based on query patterns
+- Understand bitmap indexes for low-cardinality columns
+- Choose appropriate index types based on workload
 
-## 12.1 Basic Concepts
+## Theory
 
-An index is an auxiliary data structure that accelerates data access by providing efficient paths to tuples based on attribute values. Without an index, the DBMS must perform a sequential scan of the entire relation to locate tuples satisfying a condition. With a suitable index, the access cost can be reduced to logarithmic or constant time.
+### 12.1 Why Indexes?
 
-Every index is associated with a search key, which is a set of attributes used to look up tuples. The search key is distinct from the primary key: the search key may be any attribute or combination of attributes, and multiple indices may be defined on different search keys for the same relation. Each index contains entries in the form (search-key value, pointer). The pointer may reference the actual tuple directly or may reference the disk block containing the tuple.
+Without indexes, finding data requires a **full table scan** — reading every row in the table sequentially. For a table with 10 million rows, a full scan can take minutes. An index reduces this to milliseconds by providing a direct path to the data.
 
-## 12.2 Ordered Indices
+**Concept:** An index is a data structure organized for fast search. For each search key value, the index stores the physical location (row ID, page ID) where the corresponding data is stored.
 
-Ordered indices maintain the search key values in sorted order. A primary index, also called a clustering index, determines the physical order of data records on disk. A relation can have at most one primary index because data records can be sorted in only one physical order. A secondary index maps search key values to records without affecting the physical order.
+**Trade-off:** Indexes speed up reads but slow down writes (INSERT, UPDATE, DELETE) because the index must be maintained. They also consume storage.
 
-A dense index contains one index entry for every search key value in the relation. A sparse index contains one entry per data block. Sparse indices are smaller and thus faster to traverse, but they can only be used when the search key order matches the physical record order. Dense indices are necessary for secondary indices and for queries requiring verification of duplicate key existence.
+### 12.2 B+ Tree Indexes
 
-The primary trade-off between dense and sparse indices is space versus access speed. Dense indices require more storage but always point directly to the desired record. Sparse indices require less storage but may require scanning a block after the initial lookup. For a primary index, a sparse index is typically sufficient.
+The B+ tree is the most common index structure in relational databases. It is a balanced multi-way search tree optimized for disk-based storage.
 
-Secondary indices must always be dense because the physical order of data does not correspond to the search key order. A secondary index on a non-key attribute may have duplicate search key values, which are typically handled by storing a list of pointers for each value.
+**B+ Tree Structure:**
 
-## 12.3 B+ Tree Index Structure
+```
+                    [50, 90]
+                   /    |    \
+           [20, 35]   [60, 75]   [100, 120]
+          /   |   \    /  |  \    /   |    \
+        [10] [25][40] [55][65][80] [95] [110][130]
+         |    |    |    |   |   |    |     |    |
+        Data Data Data Data Data Data Data Data Data
+```
 
-The B+ tree is the most widely used index structure in relational database systems. It is a balanced tree structure that supports efficient insertion, deletion, and search operations with logarithmic cost.
+**Key properties:**
+- All keys reside in the **leaf nodes**
+- Internal nodes contain **routing keys** (directory) to guide searches
+- Leaf nodes are linked together in a **linked list** for efficient range scans
+- Every leaf path has the same depth (the tree is perfectly balanced)
+- Each node typically holds hundreds of keys (node size ≈ disk page size, 4–16 KB)
 
-A B+ tree consists of two types of nodes. Internal nodes contain between ceiling(n/2) and n pointers and between ceiling(n/2)-1 and n-1 key values, where n is the maximum fanout. Internal nodes direct the search toward the appropriate leaf node. Leaf nodes contain between ceiling(n/2) and n pointers and corresponding key values. Leaf nodes are linked together in a sequential chain, enabling efficient range queries.
+**Operations:**
 
-All leaves are at the same depth, ensuring that every search path has the same length. The height of a B+ tree is logarithmic in the number of entries. For a typical fanout of 100, a tree with 10 million entries has a height of approximately 4.
+**Search (equality):** Start at root. At each internal node, find the smallest key ≥ search key. Follow the corresponding pointer. Repeat until reaching a leaf node, then linearly scan the leaf for the exact key.
 
-Search in a B+ tree begins at the root and follows internal node pointers until reaching a leaf node. At each internal node, the search key is compared with the key values to determine the appropriate child pointer. At the leaf, a linear search identifies the correct entry.
+```
+Search for 65 in the tree above:
+Root: 65 is between 50 and 90 → follow middle pointer
+Level 2: 65 is > 60 and < 75 → follow middle pointer
+Leaf: Scan [55, 65, 80] → found 65 at position 2
+```
 
-Insertion first locates the correct leaf node. If the leaf has space, the entry is inserted in sorted order. If the leaf is full, it is split into two leaves, and the median key is promoted to the parent internal node. Splits may propagate upward; if the root splits, a new root is created and the height increases by one.
+**Range scan (e.g., WHERE key BETWEEN 60 AND 100):**
+1. Search for 60 (the lower bound) to reach the correct leaf
+2. Follow leaf pointers forward until exceeding 100
+3. Collect all qualifying records
 
-Deletion locates the entry, removes it, and may merge leaf nodes if they fall below the minimum occupancy. Merges may propagate upward. In practice, many implementations delay merging to avoid thrashing.
+**Insertion:**
+1. Search to find the correct leaf node
+2. If the leaf has room: insert the key in sorted order
+3. If the leaf is full: **split** into two leaves, distribute keys evenly, promote the middle key to the parent
+4. Splits may propagate upward; if the root splits, the tree grows by one level
 
-## 12.4 Hash Indices
+**Deletion:**
+1. Search to find the key in the leaf
+2. Remove the key
+3. If the leaf is too empty (< 50% full typically): try to **redistribute** from a sibling, or **merge** with a sibling
+4. Merges may propagate upward; if the root has only one child, the tree shrinks by one level
 
-Hash indices map search key values to bucket addresses using a hash function. The hash function should distribute values uniformly across buckets to minimize collisions.
+**Performance:**
+- Search: O(log n) I/O operations (typically 2–4 for real databases)
+- Insert: O(log n) — read path + write modified nodes
+- Delete: O(log n)
+- Range scan: O(log n + k) where k is the number of results
 
-Static hashing uses a fixed number of buckets. Queries are extremely efficient when there are no collisions: a single hash computation locates the desired bucket. However, collisions degrade performance, and the fixed bucket count makes static hashing unsuitable for growing databases.
+**Fan-out:** A B+ tree with a fan-out (node capacity) of 500 can store:
+- 500² = 250,000 keys at depth 2
+- 500³ = 125,000,000 keys at depth 3
+- 500⁴ = 62,500,000,000 keys at depth 4
 
-Extensible hashing uses a directory of pointers to buckets. The global depth d determines the directory size: 2 to the power d entries. The hash function produces an integer, and the last d bits of the hash value index the directory. When a bucket overflows, it splits, the local depth is incremented, and the directory may double in size. Extensible hashing maintains good performance under growth because the directory expands as needed. However, the directory itself can become large, and the doubling operation is expensive.
+This is why large databases can be searched with 3–4 I/O operations.
 
-Linear hashing avoids the directory structure of extensible hashing. Buckets are split in a predetermined linear order rather than splitting only overflowing buckets. A pointer tracks the next bucket to split. As new buckets are added, the hash function range gradually expands. Linear hashing uses a family of hash functions selected by a level parameter. The technique avoids the space overhead of a directory but may cause higher collision rates.
+### 12.3 Clustered vs. Unclustered Indexes
 
-## 12.5 Bitmap Indices
+**Clustered Index:** The table data is physically ordered and stored according to the index key. There can be only one clustered index per table. The leaf nodes of a clustered index contain the actual data rows.
 
-Bitmap indices are designed for queries involving multiple Boolean or low-cardinality attributes. A bitmap index maintains a separate bitmap, which is a sequence of bits, for each distinct value of the indexed attribute. Each bit position corresponds to a tuple; the bit is set to 1 if the tuple possesses the attribute value.
+- Fast for range queries (data is physically adjacent)
+- Slower for inserts at non-sequential locations (may require page splits and reorganization)
+- Example: Primary key index in MySQL InnoDB
 
-Bitmap indices support efficient Boolean operations. Multiple bitmaps can be combined using bitwise AND, OR, and NOT operations, which can be executed extremely efficiently on modern hardware. Bitmap indices are particularly useful in data warehousing and decision support systems where queries involve complex combinations of conditions on low-cardinality attributes such as region, product category, or customer status.
+**Unclustered Index (Secondary Index):** The index is separate from the data. Leaf nodes contain pointers (row IDs) to the data rows, which are stored independently.
 
-The primary limitation of bitmap indices is that they are inefficient for high-cardinality attributes, where the number of distinct values is large. In such cases, the bitmap for each value becomes sparse, and the storage cost becomes prohibitive.
+- Multiple unclustered indexes per table possible
+- Each index lookup requires: index search + data page access (could be 2 I/Os instead of 1)
+- If the query needs many rows, the DBMS may still do a full table scan
 
-## 12.6 Index Trade-offs
+```sql
+-- PostgreSQL: Indexes are unclustered by default
+CREATE INDEX idx_orders_customer ON orders(customer_id);
 
-The decision to create an index involves trade-offs. Indices accelerate read queries but slow down write operations because each index must be updated when the underlying data changes. The space overhead of indices must also be considered; a secondary index may require as much storage as the data itself.
+-- Cluster command (one-time physical reorganization)
+CLUSTER orders USING idx_orders_customer;
+```
 
-Not all queries benefit from indices. A query that retrieves a large fraction of the relation will be faster with a sequential scan than with an index because the index lookup overhead per tuple is high. The break-even point is typically around 5 to 10 percent of the relation.
+### 12.4 Hash Indexes
 
-The query optimizer automatically considers available indices when choosing a query plan. The database administrator's task is to provide the optimizer with a useful set of indices without imposing excessive write overhead.
+Hash indexes use a hash function to map keys to buckets. They excel at **equality lookups** but cannot support range queries.
+
+**Structure:**
+- A hash function maps each key to a bucket number
+- Each bucket is a chain of records (or a fixed-size overflow area)
+
+**Operations:**
+- **Search (equality):** Hash the key → find the bucket → scan for the exact match → O(1) average
+- **Insert:** Hash the key → place in the bucket → O(1) average
+- **Range query:** Not supported (hash destroys ordering)
+
+**Types:**
+- **Static Hashing:** Fixed number of buckets. As data grows, chains become long.
+- **Extendable Hashing:** Uses a directory that doubles as needed. Handles growth smoothly.
+- **Linear Hashing:** Gradual reorganization without a directory.
+
+```sql
+-- PostgreSQL: Hash index (useful for equality only)
+CREATE INDEX idx_hash_employee_id ON employees USING HASH(employee_id);
+
+-- Query that benefits:
+SELECT * FROM employees WHERE employee_id = 1001;  -- Fast!
+
+-- Query that cannot use hash index:
+SELECT * FROM employees WHERE employee_id > 1000;  -- Must scan!
+```
+
+### 12.5 Composite (Multi-Column) Indexes
+
+A composite index on (A, B, C) creates a B+ tree ordered first by A, then by B, then by C.
+
+**The Column Order Matters!**
+
+```sql
+CREATE INDEX idx_composite ON orders(customer_id, order_date, status);
+```
+
+**Queries that benefit:**
+```sql
+-- Full match: Excellent
+SELECT * FROM orders WHERE customer_id = 5 AND order_date = '2026-01-15' AND status = 'shipped';
+
+-- Prefix match: Excellent (uses customer_id and order_date)
+SELECT * FROM orders WHERE customer_id = 5 AND order_date > '2026-01-01';
+
+-- Partial prefix: Good (uses customer_id only)
+SELECT * FROM orders WHERE customer_id = 5;
+
+-- Skipped first column: Poor (cannot use the index effectively)
+SELECT * FROM orders WHERE order_date = '2026-01-15';
+```
+
+**The "Best" Column Order Rule:**
+1. Put equality columns first: `WHERE col1 = 5 AND col2 > 10` → index on (col1, col2)
+2. Put high-selectivity columns first (columns that filter out more rows)
+3. Example: In a `gender` (2 values) and `salary` (many values) composite index, put `salary` first
+
+**Index-Only Scan (Covering Index):** If all columns needed by a query are in the index, the DBMS can return results from the index alone without accessing the table:
+
+```sql
+CREATE INDEX idx_covering ON employees(last_name, first_name, salary);
+
+-- This query reads ONLY the index (no table access):
+SELECT last_name, first_name, salary FROM employees
+WHERE last_name LIKE 'S%';
+```
+
+### 12.6 Bitmap Indexes
+
+Bitmap indexes use a bit array (bitmap) for each distinct value of a column. They are efficient for **low-cardinality** columns (few distinct values but many rows) and **data warehousing** workloads.
+
+**Example:** A `gender` column with values M and F in a table of 10 million rows.
+
+```
+Gender = M bitmap:  1011010010...  (1M bits = ~125KB)
+Gender = F bitmap:  0100101101...  (1M bits = ~125KB)
+
+Row 1: M → M bit = 1, F bit = 0
+Row 2: F → M bit = 0, F bit = 1
+```
+
+**Bitmap Operations:**
+```sql
+-- Find male employees in department 10
+-- M_bitmap AND Dept10_bitmap → result bitmap
+-- Fast bitwise operations on compressed bitmaps
+```
+
+**PostgreSQL:**
+```sql
+-- PostgreSQL can use bitmap scan plans automatically
+-- No explicit BITMAP index type, but it generates bitmap scans from B-tree indexes
+EXPLAIN SELECT * FROM employees WHERE gender = 'M' AND department_id = 10;
+-- Output may show: BitmapAnd (BitmapOr) of multiple B-tree indexes
+```
+
+**Advantages:** Space-efficient for low cardinality. Supports fast AND, OR, NOT, COUNT operations.
+
+**Disadvantages:** Poor for high-cardinality columns. Updates can be expensive (bitmaps may need rebuilding).
+
+### 12.7 Index Selection
+
+**When to Create an Index:**
+- Columns frequently used in WHERE, JOIN, ORDER BY, or GROUP BY
+- Foreign key columns
+- Columns with high selectivity (many distinct values)
+- Large tables where full scans are prohibitively slow
+- Queries that return a small percentage of rows (typically < 5%)
+
+**When NOT to Create an Index:**
+- Small tables (full scan is fast enough)
+- Columns rarely used in queries
+- Columns frequently updated (index maintenance cost)
+- Columns with very low selectivity (e.g., boolean column)
+- Tables with heavy write workloads
+
+```sql
+-- Example: Creating indexes based on query patterns
+-- Common query: find orders by customer and date
+CREATE INDEX idx_orders_customer_date ON orders(customer_id, order_date);
+
+-- Common query: look up products by category
+CREATE INDEX idx_products_category ON products(category_id);
+
+-- Common query: search employees by name
+CREATE INDEX idx_employees_name ON employees(last_name, first_name);
+
+-- Monitor index usage (PostgreSQL)
+SELECT schemaname, tablename, indexname, idx_scan, idx_tup_read
+FROM pg_stat_user_indexes
+ORDER BY idx_scan;
+```
+
+### 12.8 Index-Organized Tables (IOT)
+
+Some databases (Oracle, MySQL InnoDB) store the table as a clustered index. The data is the index, and the index is the data:
+
+```sql
+-- MySQL InnoDB automatically creates a clustered index on the PRIMARY KEY
+CREATE TABLE employees (
+    emp_id INTEGER PRIMARY KEY,  -- This IS the clustered index
+    name VARCHAR(100),
+    department_id INTEGER
+);
+-- Secondary indexes on name or department_id contain pointers to the primary key
+```
+
+### 12.9 Partial and Functional Indexes
+
+**Partial Index:** Indexes only a subset of rows.
+
+```sql
+CREATE INDEX idx_active_orders ON orders(order_id)
+WHERE status NOT IN ('completed', 'cancelled');
+
+-- This index is small and only benefits queries about active orders
+SELECT * FROM orders WHERE status = 'pending';  -- Uses the partial index
+```
+
+**Functional Index (Expression Index):** Indexes the result of an expression.
+
+```sql
+CREATE INDEX idx_lower_email ON customers(LOWER(email));
+
+-- Query that benefits:
+SELECT * FROM customers WHERE LOWER(email) = 'user@example.com';
+
+-- PostgreSQL functional index on JSON column
+CREATE INDEX idx_order_total ON orders(((items->>'total')::DECIMAL));
+```
+
+## Examples
+
+**Example 12.1: B+ Tree Insertion Trace**
+
+Insert keys 10, 20, 30, 40, 50 into a B+ tree with leaf capacity = 3 and internal capacity = 3.
+
+```
+Step 1: Insert 10 → [10]
+Step 2: Insert 20 → [10, 20]
+Step 3: Insert 30 → [10, 20, 30]   (leaf full)
+Step 4: Insert 40 → split!          New leaves: [10, 20] and [30, 40]
+                                     Parent root: [30]
+Step 5: Insert 50 → [30]           Search: 50 > 30, go to right leaf
+                  /     \           Right leaf: [30, 40, 50] → full → split
+                [10,20] [30,40,50]  New leaves: [30, 40] and [50]
+                                     Promote 50 to root: [30, 50]
+```
+
+```
+Final tree:
+          [30, 50]
+         /    |    \
+    [10,20] [30,40] [50]
+```
+
+**Example 12.2: Index Selection for an E-Commerce App**
+
+```sql
+-- Table with 1M+ orders
+CREATE TABLE orders (
+    order_id BIGINT PRIMARY KEY,
+    customer_id INTEGER NOT NULL,
+    order_date TIMESTAMP NOT NULL,
+    status VARCHAR(20),
+    total_amount DECIMAL(12,2),
+    shipping_zip VARCHAR(10)
+);
+
+-- Query pattern 1: Customer's recent orders
+-- Index: (customer_id, order_date DESC)
+CREATE INDEX idx_orders_customer_date ON orders(customer_id, order_date DESC);
+
+-- Query pattern 2: Orders by status for fulfillment
+-- Partial index for efficiency
+CREATE INDEX idx_orders_pending ON orders(order_date, order_id)
+WHERE status IN ('pending', 'processing');
+
+-- Query pattern 3: Admin search by zip code
+CREATE INDEX idx_orders_zip ON orders(shipping_zip);
+
+-- Query pattern 4: Reporting — daily totals
+-- Consider a materialized view instead of indexes for aggregates
+```
+
+**Example 12.3: Analyzing Index Performance**
+
+```sql
+-- Before index: Full table scan
+EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 42;
+-- Seq Scan on orders (cost=0.00..17340.00 rows=1 width=120)
+-- Actual time: 85.324..85.326 rows=5 loops=1
+
+-- After index:
+CREATE INDEX idx_orders_customer ON orders(customer_id);
+EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 42;
+-- Index Scan using idx_orders_customer on orders (cost=0.43..8.45 rows=5 width=120)
+-- Actual time: 0.035..0.058 rows=5 loops=1
+-- Improvement: 85ms → 0.05ms (1700x faster)
+```
 
 ## Summary
 
-This chapter surveyed indexing techniques. Ordered indices, particularly B+ trees, are the primary indexing mechanism in relational databases. Hash indices provide efficient equality lookups. Bitmap indices serve data warehousing needs. The selection of indices requires balancing query performance against write overhead and storage cost.
+- B+ trees are the dominant index structure, providing O(log n) search, insert, and delete.
+- Clustered indexes store data in index order; unclustered indexes store pointers to data.
+- Hash indexes provide O(1) equality lookups but cannot support range queries.
+- Composite index column order determines which queries benefit.
+- Bitmap indexes excel at low-cardinality columns in data warehouse environments.
+- Partial and functional indexes optimize specific query patterns.
+- Index selection should be driven by actual query patterns and performance measurements.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What is the difference between a primary (clustering) index and a secondary index?
-2. Under what conditions is a sparse index usable?
-3. Why is the B+ tree height logarithmic in the number of entries?
-4. How does extensible hashing handle bucket overflow?
-5. What type of query workload benefits from bitmap indices?
+1. Explain the difference between a clustered and unclustered index. What are the trade-offs?
 
-### Application Problems
+2. Why can B+ tree indexes support range queries (e.g., WHERE id BETWEEN 10 AND 100) but hash indexes cannot?
 
-1. Given a relation with 1,000,000 tuples and an index with fanout 200, calculate the approximate height of the B+ tree. How many node accesses are required for a single equality lookup? For a range query returning 10,000 tuples?
-2. Design a B+ tree insertion sequence for the values 1, 4, 7, 10, 13, 16, 19, 22, 25, 28 with a node capacity of 4 (3 keys, 4 pointers). Show the tree after each insertion. Trace the split propagation for the insertion that causes the root to split.
-3. Compare the storage requirements of a dense primary index, a sparse primary index, and a secondary index on a relation with 500,000 tuples of 200 bytes each. Assume index entries are 12 bytes.
+3. Given an INDEX on (state, city), which of the following queries can use the index effectively?
+   a) `WHERE state = 'CA' AND city = 'Los Angeles'`
+   b) `WHERE city = 'Los Angeles'`
+   c) `WHERE state = 'CA'`
+   d) `WHERE state = 'CA' AND population > 100000`
 
-### Challenge Problem
+4. What is a covering index? How does it improve query performance?
 
-Consider a B+ tree of order d (each node holds between d and 2d keys). Prove that any sequence of n insertions into an initially empty tree results in at most O(n/d) node splits. Then construct a worst-case insertion sequence that forces the maximum number of splits. How many splits does your sequence produce for d=2 and n=20?
+### Intermediate
+
+5. Insert keys 5, 15, 25, 35, 45, 55 into a B+ tree with leaf capacity = 2 and internal capacity = 2. Show the tree after each insertion.
+
+6. For the composite index (department_id, hire_date, salary):
+   - Which queries can use all three columns efficiently?
+   - Which queries can use only two columns?
+   - Which queries cannot use the index effectively?
+   
+   Explain the "column order matters" principle with concrete examples.
+
+7. You have a table `employees(emp_id, name, department, salary, hire_date)`. The most common query is:
+   ```sql
+   SELECT name, salary FROM employees
+   WHERE department = 'Engineering' AND hire_date > '2025-01-01'
+   ORDER BY salary DESC;
+   ```
+   Design an optimal index strategy. Justify your choice.
+
+8. What is a bitmap index scan? In PostgreSQL, why might the optimizer choose a bitmap scan over an index scan?
+
+### Advanced
+
+9. Design an index strategy for a logging table that receives 10,000 INSERTs per second:
+   - Queries: "Find all errors in the last hour," "Count warnings per day for the last month"
+   - Constraints: Minimal impact on write throughput
+   - Consider: Partial indexes, time-based partitioning, B-tree vs. BRIN indexes
+
+10. For a product catalog with categories (∼100 distinct values), prices (continuously varying), and active status (boolean):
+    - Write queries that filter by category, price range, and status
+    - Design composite indexes for each query pattern
+    - Explain why you might also use partial indexes
+
+11. Given the B-tree variation factor: a typical B+ tree internal node might hold 500 keys (assuming 8-byte key + 8-byte pointer = 16 bytes, 8KB page). Calculate how many levels are needed for:
+    - 1 million records
+    - 1 billion records
+    - 1 trillion records
+    What does this tell you about the scalability of B+ trees?

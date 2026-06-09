@@ -1,87 +1,353 @@
-# Chapter 14 — NoSQL Databases
+# Chapter 14: NoSQL Databases
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) explain the motivations for NoSQL databases; (2) state the CAP theorem and its implications; (3) distinguish among document, key-value, column-family, and graph databases; (4) compare BASE with ACID semantics; (5) analyze appropriate use cases for each NoSQL type; and (6) evaluate trade-offs between NoSQL and relational databases.
+- Understand the limitations of relational databases for modern applications
+- Explain the CAP theorem and its implications for distributed systems
+- Distinguish ACID from BASE consistency models
+- Classify NoSQL database types: document, key-value, column-family, graph
+- Select appropriate NoSQL solutions based on application requirements
+- Understand when to use SQL vs. NoSQL
 
-## 14.1 Motivation for NoSQL
+## Theory
 
-The term NoSQL encompasses a diverse family of database systems that depart from the relational model. The emergence of NoSQL databases in the mid-2000s was driven by several factors. Web-scale applications such as social networks, search engines, and e-commerce platforms required horizontal scalability across hundreds or thousands of servers. Relational databases, designed for vertical scaling on monolithic hardware, faced architectural limitations. The cost of maintaining ACID guarantees across distributed systems proved prohibitive for applications willing to relax consistency for availability and partition tolerance.
+### 14.1 The Rise of NoSQL
 
-Simultaneously, the diversity of data structures expanded dramatically. Semi-structured and unstructured data, including JSON documents, social graphs, and time-series data, did not fit naturally into the rigid schema of relational tables. Agile development methodologies demanded flexible schemas that could evolve rapidly without costly migration operations. NoSQL databases addressed these requirements by offering schema flexibility, horizontal scalability, and specialized data models.
+Relational databases dominated data management for decades, but the 2000s brought new challenges:
 
-## 14.2 The CAP Theorem
+**Scale:** Web applications (Google, Amazon, Facebook) needed to handle petabytes of data across thousands of servers. Relational databases struggled with horizontal scaling.
 
-The CAP theorem, formulated by Eric Brewer and later proved by Seth Gilbert and Nancy Lynch, states that a distributed data system can provide at most two of three properties simultaneously: consistency, availability, and partition tolerance.
+**Schema Flexibility:** Agile development and semi-structured data (JSON, XML) demanded flexible schemas that relational databases could not easily provide.
 
-Consistency means that every read receives the most recent write or an error. In a consistent system, all nodes see the same data at the same time. Availability means that every request receives a non-error response, without guarantee that it contains the most recent write. An available system continues to function even when some nodes are unreachable. Partition tolerance means that the system continues to operate despite arbitrary message loss or network failures between nodes.
+**Data Variety:** Relational normalization is designed for structured data, but modern applications handle documents, graphs, time-series, and key-value patterns.
 
-In a distributed system, network partitions are inevitable. The CAP theorem therefore forces a choice between consistency and availability when a partition occurs. CP systems choose consistency over availability: they stop accepting writes or reads on the minority side of a partition. AP systems choose availability over consistency: they accept writes on both sides of a partition and reconcile differences later. CA systems, which sacrifice partition tolerance, are effectively non-distributed.
+**The "NoSQL" Name:** The term "NoSQL" was popularized at a 2009 meetup about distributed non-relational databases. It was originally "No SQL" but is now commonly understood as "Not Only SQL."
 
-The CAP theorem has been refined over time. Modern systems recognize that partition tolerance is not optional in distributed environments. The practical design space involves tuning consistency levels, ranging from strong to eventual, rather than making a binary CAP choice.
+### 14.2 The CAP Theorem
 
-## 14.3 Types of NoSQL Databases
+Proposed by Eric Brewer in 2000 (proven by Gilbert and Lynch in 2002), the CAP theorem states that a distributed data system can only guarantee **two** of the following three properties simultaneously:
 
-Document databases store data as documents, typically in JSON or BSON format, with each document containing a self-describing set of key-value pairs. Documents are grouped into collections, analogous to tables in the relational model. Unlike relational tables, documents within a collection may have different fields. Document databases support nested structures, arrays, and flexible schemas. Prominent implementations include MongoDB and Couchbase.
+**Consistency (C):** Every read receives the most recent write or an error. All nodes see the same data at the same time.
 
-Key-value stores are the simplest NoSQL type. Data is stored as a collection of key-value pairs, where the key serves as a unique identifier and the value is opaque to the database. The API provides basic get, put, and delete operations. Key-value stores offer exceptional performance for simple lookup workloads. Redis, DynamoDB, and Riak are representative implementations.
+**Availability (A):** Every request receives a (non-error) response, without guarantee that it contains the most recent write.
 
-Column-family databases, also called wide-column stores, organize data by columns rather than rows. Each row is identified by a row key, and columns are grouped into column families. Column families are defined in advance, but individual columns within a family can be added dynamically. This design suits workloads involving large-scale analytical queries over a subset of columns. Apache Cassandra, HBase, and Google Bigtable are column-family databases.
+**Partition Tolerance (P):** The system continues to operate despite arbitrary network partitions (nodes being disconnected from each other).
 
-Graph databases represent data as nodes, edges, and properties. Nodes represent entities, edges represent relationships, and properties store attributes. Graph databases excel at relationship-heavy queries such as path finding, shortest-path computation, and graph traversal. They are widely used in social networks, recommendation engines, and fraud detection. Neo4j and Amazon Neptune are leading graph databases.
+```
+      Consistency
+         /\
+        /  \
+       /    \
+      / CAP  \
+     /        \
+    /__________\
+Availability  Partition Tolerance
+```
 
-## 14.4 BASE versus ACID
+**CAP Trade-offs:**
+- **CP (Consistent + Partition Tolerant):** If a partition occurs, some nodes become unavailable to maintain consistency. Example: HBase, MongoDB (default)
+- **AP (Available + Partition Tolerant):** If a partition occurs, all nodes remain available but may return stale data. Example: Cassandra, CouchDB
+- **CA (Consistent + Available):** Not possible in a distributed system (you cannot avoid partitions in practice). Traditional RDBMS in a single-node setup are CA.
 
-BASE is an acronym that describes the consistency model of many NoSQL systems: Basically Available, Soft state, Eventual consistency. Basically Available means that the system guarantees availability in the sense of the CAP theorem. Soft state means that the state of the system may change over time without input, as nodes converge on consistency. Eventual consistency means that given sufficient time without updates, all replicas will converge to the same value.
+**Important nuance:** CAP is not "pick 2 of 3 forever" but rather "during a network partition, you must choose between C and A." Outside of partitions, you can have both C and A.
 
-ACID provides strong guarantees: transactions are atomic, consistent, isolated, and durable. These guarantees simplify application development because the programmer does not need to reason about partial updates, inconsistent reads, or concurrent interference. However, ACID systems struggle with horizontal scalability and high availability.
+### 14.3 BASE vs. ACID
 
-BASE sacrifices immediate consistency for availability and scalability. The application programmer must handle the possibility of stale reads and reconcile conflicting writes. The TANGO principle, encapsulated in the phrase pick your trade-offs, guides the decision between ACID and BASE. Financial transaction systems require ACID. Social news feeds can tolerate BASE.
+NoSQL systems often use **BASE** instead of ACID:
 
-## 14.5 Comparison with RDBMS
+- **Basically Available:** The system guarantees availability (per CAP)
+- **Soft State:** The system state may change over time without input (due to eventual consistency)
+- **Eventual Consistency:** Given enough time without updates, all replicas will converge to the same value
 
-The relational model provides a mature, mathematically rigorous framework with standardized SQL, decades of optimization research, and robust tooling. Relational databases excel in environments requiring complex joins, multi-row transactions, ad-hoc analytical queries, and strict consistency. They are the default choice for enterprise applications, financial systems, and any domain where data integrity is paramount.
+**Eventual Consistency:** After a write, reads may see stale data for a period, but eventually all replicas will agree on the latest value.
 
-NoSQL databases offer superior horizontal scalability, flexible schemas, and specialized performance characteristics. They are appropriate for applications with high write throughput, rapidly evolving data structures, naturally hierarchical data (documents), or complex relationship traversal (graphs). Many organizations employ a polyglot persistence strategy, using multiple database types within a single application, each optimized for its specific workload.
+**Consistency Models (from weak to strong):**
+1. **Eventual:** Reads may return any value; will converge eventually
+2. **Causal:** Reads are consistent with cause-effect relationships
+3. **Read-your-writes:** A process always sees its own writes
+4. **Monotonic reads:** Once you see a value, you never see an older version
+5. **Strong (Linearizable):** Every read sees the latest write (like ACID)
 
-The choice between RDBMS and NoSQL should be based on concrete requirements rather than fashion. The relational model remains the most versatile and best-understood data management paradigm. NoSQL databases should be selected when specific requirements for scalability, schema flexibility, or data model fit cannot be met by a relational system.
+### 14.4 NoSQL Database Categories
 
-## 14.6 Polyglot Persistence
+#### 14.4.1 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)
 
-Polyglot persistence is the practice of using multiple database types within a single application, each selected for its suitability to a specific workload. A typical e-commerce platform might use a relational database for inventory and order management, a document store for the product catalog, a key-value store for the session cache, a graph database for product recommendations, and a search engine for full-text product search.
+**Data Model:** Semi-structured documents (JSON, BSON, XML). Each document is self-contained with its own schema (schema-on-read).
 
-The advantages of polyglot persistence include optimal performance for each workload, the ability to use the most natural data model for each component, and the flexibility to adopt new database technologies incrementally. The disadvantages include operational complexity, the need for expertise in multiple systems, and the challenge of maintaining data consistency across heterogeneous databases.
+**Key Features:**
+- Schema flexibility: Documents in the same collection can have different fields
+- Rich querying: Query by document fields, nested fields, arrays
+- Indexes: Secondary indexes on any field
+- Aggregation: MapReduce or aggregation pipelines
 
-Polyglot persistence represents a mature approach to database selection. Rather than seeking a single database that satisfies all requirements, architects design each component around its specific data access patterns and choose the database that fits best. This approach requires careful system decomposition and well-defined service boundaries.
+**When to use:**
+- Content management systems
+- E-commerce product catalogs (varying product attributes)
+- Real-time analytics and event logging
+- User profiles with varying data
 
-## 14.7 NewSQL
+**When NOT to use:**
+- Highly normalized, join-heavy data
+- Multi-row transactions (ACID across documents is limited)
 
-NewSQL is a category of database systems that aim to provide the horizontal scalability of NoSQL while retaining the relational data model and ACID guarantees. NewSQL systems emerged in response to the limitations of both traditional relational databases (limited scalability) and NoSQL databases (weakened consistency and non-relational interfaces).
+```javascript
+// MongoDB document example
+{
+  "_id": ObjectId("507f1f77bcf86cd799439011"),
+  "username": "alice",
+  "email": "alice@example.com",
+  "profile": {
+    "first_name": "Alice",
+    "last_name": "Chen",
+    "age": 28
+  },
+  "orders": [
+    { "order_id": 1001, "total": 59.99, "status": "shipped" },
+    { "order_id": 1002, "total": 129.99, "status": "pending" }
+  ],
+  "created_at": ISODate("2026-01-15T10:30:00Z")
+}
+```
 
-Representative NewSQL systems include Google Spanner, which provides global-scale ACID transactions using a TrueTime API for clock synchronization; CockroachDB, a distributed SQL database inspired by Spanner; VoltDB, an in-memory relational database that partitions data and executes transactions sequentially within each partition; and Amazon Aurora, which decouples compute and storage to achieve high performance and durability.
+#### 14.4.2 Key-Value Stores (Redis, DynamoDB, Riak, Memcached)
 
-NewSQL systems typically employ a shared-nothing architecture with automatic data partitioning, synchronous replication for fault tolerance, and distributed transaction coordination. They represent a convergence of relational and distributed database technologies and are increasingly adopted for applications that require both ACID guarantees and horizontal scalability.
+**Data Model:** A simple key-value map. The value is opaque to the database (usually a blob or simple data type).
+
+**Key Features:**
+- Extremely fast: O(1) lookups by primary key
+- Simple data model: Get/Set/Delete operations
+- Often in-memory (Redis) or SSD-optimized (DynamoDB)
+- Supports TTL (time-to-live) expiration
+
+**When to use:**
+- Caching layers
+- Session storage
+- Real-time counters and leaderboards
+- Simple metadata lookups
+
+**When NOT to use:**
+- Complex queries or joins
+- Multi-key transactions
+- Hierarchical or relationship-heavy data
+
+```
+// Redis key-value examples (Chapter 16 covers Redis in depth)
+SET user:1001:name "Alice Chen"
+SET user:1001:email "alice@example.com"
+GET user:1001:name
+// Result: "Alice Chen"
+```
+
+#### 14.4.3 Column-Family Stores (Cassandra, HBase, ScyllaDB, Bigtable)
+
+**Data Model:** Data is stored in column families (similar to tables but sparse). Each row can have different columns. Columns are grouped into column families.
+
+**Key Features:**
+- Wide-column storage: Optimized for queries over large ranges of columns
+- Excellent write throughput
+- Built for horizontal scaling (add nodes, no downtime)
+- Tunable consistency (per-query consistency level)
+
+**When to use:**
+- Time-series data (IoT sensor readings, logs)
+- Large-scale data warehousing
+- Applications needing high write throughput
+- Event logging and activity feeds
+
+**When NOT to use:**
+- Ad-hoc queries requiring joins
+- Strongly consistent transactions across rows
+- Evolving query patterns requiring schema changes on the fly
+
+```
+// Cassandra table (CQL)
+CREATE TABLE sensor_data (
+    sensor_id UUID,
+    timestamp TIMESTAMP,
+    temperature DOUBLE,
+    humidity DOUBLE,
+    pressure DOUBLE,
+    PRIMARY KEY (sensor_id, timestamp)
+) WITH CLUSTERING ORDER BY (timestamp DESC);
+
+// Query
+SELECT temperature, humidity
+FROM sensor_data
+WHERE sensor_id = 123e4567-e89b-12d3-a456-426614174000
+  AND timestamp > '2026-01-01'
+ORDER BY timestamp DESC;
+```
+
+#### 14.4.4 Graph Databases (Neo4j, Amazon Neptune, ArangoDB, JanusGraph)
+
+**Data Model:** Nodes (entities) and edges (relationships). Both nodes and edges can have properties.
+
+**Key Features:**
+- Relationship traversal is fast (constant time per hop, regardless of data size)
+- Expressive query languages (Cypher, Gremlin, SPARQL)
+- Natural for connected data
+
+**When to use:**
+- Social networks (friends, followers)
+- Recommendation engines
+- Fraud detection (relationship patterns)
+- Knowledge graphs
+- Network and IT operations
+
+**When NOT to use:**
+- Simple CRUD applications
+- Bulk aggregation/analytics
+- Tabular reporting
+
+```
+// Neo4j Cypher query
+MATCH (p:Person)-[:FRIENDS_WITH]->(friend:Person)
+WHERE p.name = "Alice"
+RETURN friend.name, friend.email
+ORDER BY friend.name
+LIMIT 20
+
+// Find recommendation: friends of friends
+MATCH (p:Person {name: "Alice"})-[:FRIENDS_WITH]->()-[:FRIENDS_WITH]->(recommendation)
+WHERE NOT (p)-[:FRIENDS_WITH]->(recommendation)
+RETURN DISTINCT recommendation.name
+LIMIT 10
+```
+
+### 14.5 NoSQL Query Languages
+
+Unlike SQL's universal standard, NoSQL systems have diverse query languages:
+
+| System | Query Language | Example Syntax |
+|--------|---------------|----------------|
+| MongoDB | MQL (MongoDB Query Language) | `db.users.find({age: {$gt: 25}})` |
+| Cassandra | CQL (Cassandra Query Language) | `SELECT * FROM users WHERE age > 25;` |
+| Neo4j | Cypher | `MATCH (u:User) WHERE u.age > 25 RETURN u` |
+| Redis | Commands | `SCAN 0 MATCH user:*` |
+| DynamoDB | PartiQL / API | `SELECT * FROM Users WHERE age > 25` |
+
+### 14.6 Polyglot Persistence
+
+Modern applications often use **multiple** database types, each optimized for specific workloads:
+
+```python
+# E-commerce application stack:
+# - PostgreSQL: Orders, inventory, payments (ACID needed)
+# - Redis: Session cache, product cache, shopping cart
+# - MongoDB: Product catalog (varying attributes)
+# - Elasticsearch: Full-text product search
+# - Neo4j: Product recommendation engine
+```
+
+### 14.7 SQL vs. NoSQL Decision Guide
+
+| Criteria | SQL (RDBMS) | NoSQL |
+|----------|-------------|-------|
+| **Schema** | Fixed, predefined | Flexible, dynamic |
+| **Consistency** | Strong (ACID) | Varies (BASE) |
+| **Scaling** | Vertical (primary) | Horizontal (native) |
+| **Joins** | Built-in, optimized | Limited or none |
+| **Transactions** | Full ACID | Limited or single-document |
+| **Query complexity** | Very high (SQL) | Varies by type |
+| **Maturity** | 50+ years | 15-20 years |
+| **When to use** | Structured data, complex queries, ACID required | Scale-out, flexible schemas, high throughput |
+
+**The SQL vs. NoSQL Question:**
+- "Which is better?" is the wrong question
+- The right question: "What data access patterns does my application need?"
+- Many modern apps use both (polyglot persistence)
+
+## Examples
+
+**Example 14.1: CAP in Practice — Network Partition**
+
+A distributed database with nodes in us-east-1 and us-west-1.
+
+Network partition occurs. User A writes value X to us-east-1. User B reads from us-west-1.
+
+- **CP choice:** us-west-1 returns an error (unavailable) because it cannot confirm consistency.
+- **AP choice:** us-west-1 returns a value (possibly stale) to maintain availability.
+
+**Example 14.2: Choosing the Right Database**
+
+Scenario: A social media application.
+
+| Component | Data Pattern | Database Choice | Reason |
+|-----------|-------------|-----------------|--------|
+| User profiles | Document, varying fields | MongoDB | Schema flexibility |
+| Friend graph | Highly connected | Neo4j | Fast traversals |
+| Feed cache | Key-value, TTL | Redis | Low latency |
+| Activity logs | Append-only, time-range queries | Cassandra | High write throughput |
+| Payments | ACID required | PostgreSQL | Transaction safety |
+
+**Example 14.3: Same Data, Different Models**
+
+A person with their hobbies:
+
+```sql
+-- Relational (SQL)
+CREATE TABLE person (id INT PK, name VARCHAR);
+CREATE TABLE hobby (id INT PK, name VARCHAR);
+CREATE TABLE person_hobby (person_id FK, hobby_id FK);
+```
+
+```javascript
+// Document (MongoDB)
+{
+  "name": "Alice",
+  "hobbies": ["reading", "hiking", "photography"]
+}
+```
+
+```
+// Graph (Neo4j)
+(Person {name: "Alice"})-[:LIKES]->(Hobby {name: "reading"})
+(Person {name: "Alice"})-[:LIKES]->(Hobby {name: "hiking"})
+```
+
+Each representation has different trade-offs for querying, updating, and scaling.
 
 ## Summary
 
-This chapter introduced the NoSQL landscape. The CAP theorem explains the fundamental trade-off in distributed data systems. Document, key-value, column-family, and graph databases each address distinct use cases. BASE semantics trade consistency for availability and scalability. Polyglot persistence recognizes that different workloads benefit from different database types. NewSQL systems aim to combine the scalability of NoSQL with the consistency of relational databases. The appropriate choice between relational and NoSQL depends on the specific requirements of the application.
+- NoSQL emerged to handle scale, schema flexibility, and diverse data models.
+- The CAP theorem: in a partition, choose consistency or availability.
+- BASE (Basically Available, Soft State, Eventual Consistency) is the NoSQL alternative to ACID.
+- Four main NoSQL types: Document, Key-Value, Column-Family, and Graph.
+- Each type excels at specific workloads; no single database is best for everything.
+- Polyglot persistence uses multiple database types in one application.
+- The SQL vs. NoSQL choice depends on your data access patterns, not dogma.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What problem does the CAP theorem address?
-2. What is the difference between CP and AP systems?
-3. How does a column-family database differ from a key-value store?
-4. What does eventual consistency mean?
-5. When would a graph database be preferred over a relational database?
+1. Explain the CAP theorem. What three properties does it describe? Why can you only have two in a distributed system?
 
-### Application Problems
+2. List the four main categories of NoSQL databases and give an example system for each.
 
-1. For each of the following applications, recommend a database type and justify your choice: (a) a social network with friend graphs and recommendations, (b) an inventory management system for a retail chain, (c) a real-time analytics pipeline processing millions of events per second, (d) a banking system managing customer accounts and transactions.
-2. Consider a social media platform that must support 100,000 writes per second. Explain why a traditional RDBMS might struggle with this workload and how a NoSQL system might handle it.
-3. Design a data model in both relational and document form for an e-commerce product catalog. Compare the two approaches for handling products with varying attributes.
+3. What is eventual consistency? How does it differ from strong consistency?
 
-### Challenge Problem
+4. For each scenario, suggest the best database type: a) user session cache, b) social network graph, c) sensor data time series, d) product catalog with varying attributes.
 
-Design a distributed key-value store that is AP in the CAP theorem's terms. Describe the replication strategy, conflict resolution mechanism, and read repair approach. Then modify the design to become CP, explaining what must change. Analyze the performance implications of each version under normal operation and during a network partition.
+### Intermediate
+
+5. Compare ACID and BASE consistency models. In what scenarios would you choose BASE over ACID?
+
+6. Explain the concept of polyglot persistence. For an e-commerce platform, list at least three different databases that might be used and what each handles.
+
+7. A team is building a real-time chat application. They need low-latency message delivery, presence indicators, and message history. Which database type(s) would you recommend for each concern?
+
+8. Why is "CA" (Consistent + Available without Partition Tolerance) considered impractical in distributed systems?
+
+### Advanced
+
+9. Design a data model for a Twitter-like microblogging platform using:
+   a) A relational database (PostgreSQL)
+   b) A document database (MongoDB)
+   c) A graph database (Neo4j)
+   
+   Consider: users, tweets, follows, likes, retweets. What queries are easy/hard in each model?
+
+10. Consider the "PACELC" theorem (an extension of CAP). It states: "In a distributed system, if a partition occurs (P), you must trade between Availability (A) and Consistency (C); otherwise (E — Else), you trade between Latency (L) and Consistency (C)." Explain this extension and how it applies to DynamoDB's design choices.
+
+11. Eventual consistency can lead to "stale reads." Design a system that uses a version vector or vector clock to detect conflicting updates during an eventual consistency reconciliation process. How does Amazon Dynamo handle conflict resolution? How does Cassandra?

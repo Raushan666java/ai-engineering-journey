@@ -2,147 +2,219 @@
 
 ## Learning Objectives
 
-By the end of this chapter, you should be able to: define regular expressions and their recursive semantics; apply algebraic laws to simplify regular expressions; convert regular expressions to NFAs using Thompson's construction; convert NFAs to regular expressions using state elimination; prove Kleene's theorem equating regular expressions and finite automata; design regular expressions for practical pattern matching.
+- Define regular expressions and the languages they denote.
+- Describe the three basic operators: union, concatenation, and Kleene star.
+- Understand operator precedence in regular expressions.
+- State the algebraic laws for regular expressions.
+- Convert between regular expressions and finite automata.
+- Apply Arden's lemma to solve regular expression equations.
+- Understand the limitations of regular expressions.
 
 ## Theory
 
-### Definition of Regular Expressions
+### 3.1 What is a Regular Expression?
 
-Let $\Sigma$ be an alphabet. The set of **regular expressions** over $\Sigma$ is defined inductively:
+A **regular expression** is a algebraic notation for describing a pattern — a set of strings. Regular expressions are used extensively in text processing, lexical analysis, and input validation.
 
-1. $\emptyset$ is a regular expression denoting the empty language.
-2. $\epsilon$ is a regular expression denoting $\{\epsilon\}$.
-3. For each $a \in \Sigma$, $a$ is a regular expression denoting $\{a\}$.
-4. If $R$ and $S$ are regular expressions, then:
-   - $(R + S)$ denotes $L(R) \cup L(S)$ (union)
-   - $(RS)$ denotes $L(R)L(S) = \{ xy \mid x \in L(R), y \in L(S) \}$ (concatenation)
-   - $(R^*)$ denotes $\bigcup_{i \geq 0} L(R)^i$ (Kleene star)
-5. Nothing else is a regular expression.
+A regular expression **r** denotes a language **L(r)**, which is a set of strings over some alphabet Σ.
 
-The Kleene star is the reflexive transitive closure under concatenation: $R^* = \epsilon + R + RR + RRR + \cdots$.
+### 3.2 Formal Definition
 
-### Algebraic Laws
+**Basis:**
+- ε is a regular expression denoting L(ε) = {ε} (the set containing the empty string).
+- ∅ is a regular expression denoting L(∅) = ∅ (the empty language).
+- For each a ∈ Σ, a is a regular expression denoting L(a) = {a}.
 
-Regular expressions satisfy algebraic identities that aid simplification:
+**Inductive Step:**
+Let r and s be regular expressions denoting languages L(r) and L(s). Then:
+
+1. **(r + s)** or **(r | s)**: union/alternation — L(r + s) = L(r) ∪ L(s).
+2. **(r · s)** or **(rs)**: concatenation — L(rs) = L(r)L(s) = { xy | x ∈ L(r), y ∈ L(s) }.
+3. **(r\*)**: Kleene star — L(r*) = ∪_{i ≥ 0} L(r)ⁱ where L(r)⁰ = {ε} and L(r)ⁱ⁺¹ = L(r)ⁱL(r).
+4. **(r)**: parentheses for grouping — L((r)) = L(r).
+
+Additional derived operators:
+- **r⁺** = rr* (one or more repetitions).
+- **r?** = r + ε (optional).
+- **.** (in some notations) = any single symbol.
+
+### 3.3 Operator Precedence
+
+When interpreting regular expressions without explicit parentheses, the order is:
+1. **Kleene star** (*) — highest precedence (binds tightest).
+2. **Concatenation** (·).
+3. **Union** (+ or |) — lowest precedence.
+
+So `ab*c` means `a(b*)c`, not `(ab)*c` or `ab(*c)`.
+
+### 3.4 Algebraic Laws of Regular Expressions
+
+Regular expressions satisfy algebraic laws that can be used to simplify and manipulate them.
 
 | Law | Expression |
 |-----|-----------|
-| Union associativity | $(R + S) + T = R + (S + T)$ |
-| Union commutativity | $R + S = S + R$ |
-| Union identity | $R + \emptyset = R$ |
-| Concatenation associativity | $(RS)T = R(ST)$ |
-| Concatenation identity | $R\epsilon = \epsilon R = R$ |
-| Concatenation annihilator | $R\emptyset = \emptyset R = \emptyset$ |
-| Distributivity (left) | $R(S + T) = RS + RT$ |
-| Distributivity (right) | $(R + S)T = RT + ST$ |
-| Idempotence of star | $(R^*)^* = R^*$ |
-| Star identity | $\epsilon^* = \epsilon$ |
-| Cross-product | $R^*R^* = R^*$ |
-| Star of sum | $(R + S)^* = (R^*S^*)^*$ |
+| Associativity of union | (r + s) + t = r + (s + t) |
+| Commutativity of union | r + s = s + r |
+| Identity for union | r + ∅ = r = ∅ + r |
+| Annihilator for concat | ∅r = r∅ = ∅ |
+| Identity for concat | εr = rε = r |
+| Associativity of concat | (rs)t = r(st) |
+| Distributive (left) | r(s + t) = rs + rt |
+| Distributive (right) | (s + t)r = sr + tr |
+| Idempotence of union | r + r = r |
+| Kleene star | ∅* = ε |
+| Kleene star | ε* = ε |
+| Kleene star | (r*)* = r* |
+| Kleene star | r* = ε + rr* |
+| Kleene star | r* = (ε + r)* |
+| Kleene star | r* = (r*)* |
+| r**r* | r*r* = r* |
 
-These laws allow algebraic manipulation similar to arithmetic, but with union instead of addition and concatenation instead of multiplication. Note that concatenation is not commutative ($RS \neq SR$ in general).
+### 3.5 Equivalence of Regular Expressions and Finite Automata
 
-### Thompson Construction (RE to NFA)
+**Theorem:** A language is regular if and only if it can be described by a regular expression.
 
-**Theorem 3.1 (Kleene)**: Every regular expression $R$ can be converted to an NFA $N$ with $\epsilon$-transitions such that $L(N) = L(R)$.
+This theorem has two directions:
 
-**Proof (Thompson construction)**: The construction is structural induction on the expression:
+**Direction 1 (RE → FA):** Every regular expression can be converted to an NFA-ε.
 
-- **Base case $\emptyset$**: NFA with start state and no accepting states.
-- **Base case $\epsilon$**: NFA with start state $q_0$ that is also accepting, and no transitions.
-- **Base case $a$**: NFA with $q_0 \xrightarrow{a} q_1$, $F = \{q_1\}$.
-- **Union $R + S$**: Create a new start state $q$ with $\epsilon$-transitions to the start states of the NFAs for $R$ and $S$. The accepting states are the unions of the accepting states of both.
-- **Concatenation $RS$**: Connect the accepting states of $R$ to the start state of $S$ via $\epsilon$-transitions. The accepting states are those of $S$.
-- **Kleene star $R^*$**: Add a new start state $q$ (accepting) with $\epsilon$ to the old start state and $\epsilon$ from the old accepting states back to the old start state.
+The conversion follows the structural induction of the regular expression definition. Each subexpression is converted to an NFA-ε with:
+- Exactly one start state (no incoming transitions).
+- Exactly one accepting state (no outgoing transitions).
 
-Each construction adds a constant number of states and transitions, so the final NFA has size $O(|R|)$. $\square$
+**Basis conversions:**
+- For ε: start state connected to accept state via ε-transition.
+- For ∅: start state (non-accepting) with no outgoing transitions.
+- For a ∈ Σ: start --a--> accept.
 
-### State Elimination (NFA to RE)
+**Inductive conversions (using modular construction):**
+Let N₁ and N₂ be the NFAs for r and s with start states s₁, s₂ and accept states a₁, a₂.
 
-We can convert any DFA (or NFA) to a regular expression via **state elimination**:
+- **Union** (r + s): New start s₀ --ε--> s₁ and s₀ --ε--> s₂; a₁ --ε--> new accept a₀ and a₂ --ε--> a₀.
+- **Concatenation** (rs): a₁ (of N₁) --ε--> s₂ (of N₂); a₁ becomes non-accepting; a₂ is the accept state.
+- **Star** (r*): New start s₀ --ε--> new accept a₀ (for ε); s₀ --ε--> s₁; a₁ --ε--> s₁ (for loop) and a₁ --ε--> a₀.
 
-1. Add a new start state $s$ with an $\epsilon$-transition to the old start state.
-2. Add a new accepting state $t$ with $\epsilon$-transitions from all old accepting states to $t$.
-3. Repeatedly eliminate internal states: for state $q$ with incoming label $A$, outgoing label $B$, and self-loop $C$, and a path through $q$ from $p$ to $r$ with label $D$, replace with a direct transition $p \xrightarrow{A C^* B + D} r$.
-4. After eliminating all internal states, the remaining single edge from $s$ to $t$ gives the regular expression.
+**Direction 2 (FA → RE):** Every DFA can be converted to a regular expression using one of:
+- **State elimination method:** Remove states one by one, updating transitions with regular expressions.
+- **Arden's lemma** (see Section 3.6): Solve a system of linear equations over languages.
 
-### DFA to RE via Transitive Closure
+### 3.6 Arden's Lemma
 
-An alternative method uses the **transitive closure** formulation. Let $R_{ij}^{(k)}$ be the set of strings that take the DFA from state $i$ to state $j$ using only intermediate states from $\{1, \ldots, k\}$. Then:
+Arden's lemma is a key tool for converting DFA to regular expressions by solving equations.
 
-$$R_{ij}^{(0)} = \{ a \in \Sigma \mid \delta(q_i, a) = q_j \} \cup (\{ \epsilon \} \text{ if } i = j)$$
-$$R_{ij}^{(k)} = R_{ij}^{(k-1)} + R_{ik}^{(k-1)} (R_{kk}^{(k-1)})^* R_{kj}^{(k-1)}$$
+**Lemma:** For languages A, B ⊆ Σ* with ε ∉ A (unless B = ∅ or A = ∅), the equation X = AX ∪ B has the unique solution X = A*B.
 
-The language of the DFA is $\bigcup_{q_j \in F} R_{1j}^{(n)}$ where $n = |Q|$ and $q_1$ is the start state.
+**Proof intuition:** Unrolling the equation gives X = B ∪ AB ∪ A²B ∪ ... = A*B. The condition ε ∉ A ensures uniqueness.
+
+To convert a DFA to a regular expression:
+1. For each state qᵢ, write the equation: Lᵢ = ∪_{a ∈ Σ} a · Lⱼ (where δ(qᵢ, a) = qⱼ) ∪ (if qᵢ ∈ F then ε).
+2. Solve the system of equations using substitution and Arden's lemma.
+3. The language recognized is the solution for L₀ (start state).
 
 ## Examples
 
-### Example 1: Design a Regular Expression
+### Example 3.1: Building Regular Expressions for Common Languages
 
-Find a regular expression for binary strings containing an even number of 0s.
+| Language Description | Regular Expression |
+|---------------------|-------------------|
+| Strings containing "ab" | (a+b)* ab (a+b)* |
+| Strings starting with 'a' | a(a+b)* |
+| Strings ending with 'b' | (a+b)* b |
+| Strings with even number of 'a's | (b* a b* a b*)* |
+| Strings with no consecutive 0s | (1* 011*)* (ε + 0) |
+| Binary strings divisible by 2 | (0+1)* 0 |
+| Strings of alternating 0s and 1s | (01)* + (10)* + 0(10)* + 1(01)* |
 
-Let $E$ denote strings with even zeros, $O$ denote strings with odd zeros. We can write equations:
+### Example 3.2: Convert Regular Expression to NFA-ε
 
-$E = \epsilon + 1^* + E$ actually we need a systematic approach.
+Convert r = a(a+b)* b to an NFA-ε.
 
-Observation: Any string with an even number of 0s consists of blocks of 1s separated by pairs of 0s. So: $(1^* 0 1^* 0 1^*)^*$ — but this misses the case of zero pairs. The complete expression is $(1^* + 1^* 0 1^* 0 1^*)^*$ which simplifies to $(1^* 0 1^* 0 1^*)^*$.
+**Step 1:** Parse: concatenation of a, (a+b)*, and b.
 
-Alternatively: $(00 + 1)^*$ also works, since any string of 0s and 1s with even zeros can be formed.
+**Step 2:** Build NFA for "a": q₀ --a--> q₁.
 
-### Example 2: Thompson Construction
+**Step 3:** Build NFA for "a+b": q₂ --a--> q₃, q₂ --b--> q₃.
 
-Build an NFA for $(0 + 1)^* 01$.
+**Step 4:** Build NFA for "(a+b)*": New start q₄ --ε--> q₅ (accept for ε); q₄ --ε--> q₂; q₃ --ε--> q₂; q₃ --ε--> q₅.
 
-First construct $0$ and $1$ as base NFAs. Take their union for $0 + 1$. Apply Kleene star to get $(0 + 1)^*$. Concatenate with $0$, then with $1$.
+Simplified representation (text):
+```
+q₀ --a--> q₁ --ε--> q₄ --ε--> q₂ --a--> q₃ --ε--> q₂
+                              q₂ --b--> q₃      q₃ --ε--> q₅
+q₅ --ε--> q₆
+q₆ --b--> q₇ (accept)
+```
 
-The resulting NFA has $\epsilon$-transitions structuring the operations. After applying the subset construction, we get the DFA from Chapter 1, Example 1.
+This can be simplified further during construction.
 
-### Example 3: State Elimination
+### Example 3.3: Convert DFA to Regular Expression (State Elimination)
 
-Take the DFA for binary strings ending in 01 (Example 1, Chapter 1). Convert to a regular expression.
+Given DFA for strings with an even number of 0s over {0,1}:
+- q₀ (start, accept): on 0 → q₁, on 1 → q₀
+- q₁: on 0 → q₀, on 1 → q₁
 
-States: $q_0$ (start), $q_1$, $q_2$ (accept). Add $s$ and $t$.
+**Step 1:** Add a new start s with ε → q₀ and new accept a with ε from q₀.
 
-Transitions (as generalized NFA):
-$s \xrightarrow{\epsilon} q_0$
-$q_2 \xrightarrow{\epsilon} t$
+**Step 2:** Eliminate q₁:
+- q₀ → q₁ → q₀: path q₀ --0--> q₁ --0--> q₀ adds label 00
+- q₁ → q₁: loop 1
+- So new transition q₀ --0·(1)*·0--> q₀
+- Plus existing q₀ --1--> q₀
 
-Edges between states with labels:
-$q_0 \xrightarrow{0} q_1$, $q_0 \xrightarrow{1} q_0$
-$q_1 \xrightarrow{0} q_1$, $q_1 \xrightarrow{1} q_2$
-$q_2 \xrightarrow{0} q_1$, $q_2 \xrightarrow{1} q_0$
+**Step 3:** Result: q₀ has loop (1 + 0·1*·0)*. Remove q₀ connecting s to a: (1 + 01*0)*.
 
-Eliminate $q_1$:
-- $q_0 \xrightarrow{0} q_1$ and $q_1 \xrightarrow{1} q_2$ with $q_1$ self-loop $0$ gives $q_0 \xrightarrow{0(0)^*1} q_2$.
-- $q_0 \xrightarrow{0} q_1$ and $q_1 \xrightarrow{0} q_1$ gives $q_0 \xrightarrow{0(0)^*0} q_1$ (self loop on $q_0$).
+The language is L = { w | w has an even number of 0s } = (1 + 01*0)*.
 
-Eliminate $q_2$ and $q_0$ eventually yields $(0 + 1)^*01$, which is the expected expression.
+### Example 3.4: Using Arden's Lemma
+
+Solve for the language of the DFA with:
+- L₀ = 0·L₁ + 1·L₂ + ε (accepting)
+- L₁ = 1·L₀
+- L₂ = 0·L₁
+
+Where L₀, L₁, L₂ are the languages accepted from states q₀, q₁, q₂ respectively.
+
+**Step 1:** From L₁: L₁ = 1·L₀
+
+**Step 2:** From L₂: L₂ = 0·L₁ = 0·1·L₀
+
+**Step 3:** Substitute into L₀:
+L₀ = 0·(1·L₀) + 1·(0·1·L₀) + ε = (01 + 101)·L₀ + ε
+
+**Step 4:** Apply Arden's lemma (X = AX + B → X = A*B):
+L₀ = (01 + 101)*·ε = (01 + 101)*
 
 ## Summary
 
-- Regular expressions provide an algebraic notation for regular languages.
-- Thompson construction systematically converts any RE to an NFA in $O(|R|)$ size.
-- State elimination converts any NFA/DFA to a regular expression.
-- Kleene's theorem establishes the equivalence of regular expressions, DFAs, and NFAs.
-- Algebraic laws allow simplification and manipulation of REs.
-- Regular expressions are the foundation of pattern matching in programming languages and tools like `grep`, `sed`, and lexical analyzers.
+- Regular expressions describe languages algebraically using union (+), concatenation, and Kleene star (*).
+- Regular expressions and finite automata are equivalent: each can be converted to the other.
+- Arden's lemma solves language equations of the form X = AX ∪ B.
+- The state elimination method converts DFA to regular expression by removing states.
+- Algebraic laws allow algebraic manipulation and simplification of regular expressions.
+- Three basic operations correspond to modular NFA constructions (union, concatenation, star).
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. Show that $\emptyset^* = \epsilon$.
-2. Prove $R + RS^* = RS^*$ using algebraic laws.
-3. What language does $(a^* b^*)^*$ denote?
-4. Explain why Thompson construction introduces epsilon transitions.
+1. Write regular expressions for: (a) strings ending with "00", (b) strings starting with "a" and ending with "b", (c) strings of length exactly 4.
+2. Describe in English the languages denoted by: (a) a* b*, (b) (a+b)* aa (a+b)*, (c) (00+11)*.
+3. Convert r = (0+1)* 0 (0+1) to an NFA-ε using the modular construction.
+4. Show that (ε + a)* = a* using algebraic laws.
+5. Simplify the regular expression: a* + a*b + a*bb.
 
-### Application Problems
+### Intermediate
 
-5. Find a regular expression for binary strings that do not contain two consecutive 0s.
-6. Convert $(a + b)^* a (a + b)^*$ to an NFA using Thompson construction.
-7. Derive a regular expression for the DFA that accepts strings over $\{0, 1\}$ with exactly two 1s.
-8. Use state elimination to convert the DFA from Exercise 5 of Chapter 1 to a regular expression.
+6. Convert the DFA from Example 1.2 (exactly two 1s) to a regular expression using state elimination.
+7. Prove (r + s)* = r* (s r*)* using algebraic laws or set equality.
+8. Convert r = (a + b)* a (a + b)* b (a + b)* to an NFA-ε, then to a DFA via subset construction.
+9. Using Arden's lemma, solve for the language of a DFA for strings over {0,1} where every 0 is followed immediately by a 1.
+10. Find a regular expression for the language L = { w ∈ {0,1}* | w has no two consecutive 0s and no two consecutive 1s }.
 
-### Challenge Problem
+### Advanced
 
-9. Prove that the language of balanced parentheses (Dyck language) is **not** regular. Then show that the language of prefixes of balanced parentheses **is** regular by designing a DFA. Explain the difference.
+11. Prove that the set of regular languages is closed under complement using DFA-to-regular-expression conversion.
+12. Derive a regular expression for binary strings that represent numbers divisible by 3 (from Example 1.3).
+13. Prove that the language { 0ⁿ1ⁿ | n ≥ 0 } is not regular (cannot be described by a regular expression).
+14. Show that every regular expression can be converted to an equivalent ε-free NFA (no ε-transitions) with at most 2|r| states, where |r| is the length of the expression.
+15. Implement (in pseudocode) the Thompson construction: given a parse tree of a regular expression, produce an NFA-ε. Your algorithm should handle union, concatenation, and Kleene star.

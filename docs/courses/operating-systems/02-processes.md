@@ -1,202 +1,359 @@
-# Chapter 2 — Processes
+# Chapter 2: Processes
 
 ## Learning Objectives
 
-1. Define the process abstraction and distinguish a process from a program.
-2. Describe the process control block and its role in context switching.
-3. Illustrate the five-state process model and transitions.
-4. Implement process creation using `fork()` and `exec()`.
-5. Explain the mechanisms for inter-process communication.
+- Define a process and differentiate it from a program
+- Describe the five-state process model and transitions
+- Explain the structure and contents of a Process Control Block
+- Understand context switching and its overhead
+- Implement process creation and termination using Unix system calls
+- Compare interprocess communication methods: shared memory and message passing
+- Distinguish between independent and cooperating processes
 
-## 2.1 The Process Concept
+## Theory
 
-A **process** is a program in execution. While a program is a passive collection of instructions stored on disk, a process is an active entity with its own address space, register state, and system resources. The operating system multiplexes execution across many processes, giving each the illusion of owning the CPU.
+### Process Concept
 
-A process in memory comprises four segments:
+A **process** is an instance of a program in execution. While a program is a passive entity (a file on disk), a process is active — it has a program counter, register values, a stack, and data sections.
 
-- **Text section**: The compiled machine code (read-only, sharable).
-- **Data section**: Global and static variables (initialised and uninitialised BSS).
-- **Heap**: Dynamically allocated memory (grows upward via `malloc`/`sbrk`).
-- **Stack**: Local variables, function arguments, return addresses (grows downward).
+The key insight: **one program can produce many processes**. Opening three terminal windows running `bash` creates three processes from the same binary.
 
-## 2.2 Process Control Block
+### Process in Memory
 
-The OS represents each process with a **process control block (PCB)**, also called a task struct. The PCB is the kernel's data structure for tracking process state. It contains:
+A process occupies memory divided into four sections:
 
-| Field | Description |
-|-------|-------------|
-| Process ID (PID) | Unique numeric identifier |
-| State | Running, ready, blocked, etc. |
-| Program counter | Address of next instruction to execute |
-| CPU registers | Saved context for the process |
-| Memory limits | Base and limit registers, page table pointer |
-| Open files | Array of file descriptors |
-| Scheduling info | Priority, queue pointers, CPU burst data |
-| Accounting | CPU time used, process creation time |
+```
++------------------+  high address
+|      Stack       |  Local variables, function parameters, return addresses
+|       ↓          |
+|       ↑          |
+|      Heap        |  Dynamically allocated memory (malloc, new)
++------------------+
+|      Data        |  Global and static variables
++------------------+
+|      Text        |  Program code (machine instructions)
++------------------+  low address
+```
 
-## 2.3 Process States
+- **Text section**: Contains compiled binary code. Read-only to prevent accidental modification.
+- **Data section**: Global and static variables (BSS for uninitialized data, initialized data segment).
+- **Heap**: Dynamically allocated memory — grows upward toward higher addresses.
+- **Stack**: Function call frames, local variables — grows downward.
 
-The canonical five-state model:
+### Process States
+
+A process transitions through a series of states during its lifetime. The classic **five-state model**:
 
 ```
          ┌──────────────────────────────┐
-         │         NEW                  │
-         └───────────┬──────────────────┘
-                     │ admit
-                     ▼
+         │          NEW                  │
+         └──────────────┬───────────────┘
+                        │ admitted
+                        ↓
          ┌──────────────────────────────┐
-   ┌─────│          READY               │◄──────────────┐
-   │     └───────────┬──────────────────┘               │
-   │                 │ schedule (dispatch)               │
-   │                 ▼                                   │
-   │     ┌──────────────────────────────┐               │
-   │     │         RUNNING             │────┐           │
-   │     └───────────┬──────────────────┘   │           │
-   │                 │                      │ I/O or    │
-   │                 │ preempt              │ event     │
-   │                 ▼                      │ wait      │
-   │     ┌──────────────────────────────┐   │           │
-   │     │         READY               │◄──┘           │
-   │     └──────────────────────────────┘               │
-   │                                                    │
-   │     ┌──────────────────────────────┐               │
-   │     │       BLOCKED (WAITING)      │───────────────┘
-   │     └──────────────────────────────┘   I/O complete
-   │                 │                      or event occurs
-   │                 │ exit
-   │                 ▼
-   │     ┌──────────────────────────────┐
-   └─────│       TERMINATED             │
+    ┌───│          READY                │◄──────────────┐
+    │   └──────────────┬───────────────┘                │
+    │                  │ scheduler dispatch             │
+    │                  ↓                                │
+    │   ┌──────────────────────────────┐                │
+    │   │         RUNNING              │                │
+    │   └──────┬───────────────┬───────┘                │
+    │          │               │                        │
+    │   I/O or event wait   interrupt                  │
+    │          │               │                        │
+    │          ↓               └────────────────────────┘
+    │   ┌──────────────────────────────┐
+    │   │         WAITING (BLOCKED)    │
+    │   └──────────────┬───────────────┘
+    │                  │ I/O or event completion
+    └──────────────────┘
+    
+         ┌──────────────────────────────┐
+         │        TERMINATED            │
          └──────────────────────────────┘
 ```
 
-- **New**: The process is being created.
-- **Ready**: The process is loaded into memory and is waiting to be assigned to the CPU.
-- **Running**: Instructions are being executed on the CPU.
-- **Blocked** (or waiting): The process is waiting for some event (I/O completion, signal).
-- **Terminated**: The process has finished execution.
+1. **New**: Process is being created
+2. **Ready**: Process is in memory, waiting to be assigned to CPU
+3. **Running**: Instructions are being executed on the CPU
+4. **Waiting (Blocked)**: Process is waiting for some event (I/O completion, signal)
+5. **Terminated**: Process has finished execution
 
-Operating systems may add states such as **suspended ready** and **suspended blocked** to support swapping processes out of memory.
+### Process Control Block (PCB)
 
-## 2.4 Context Switch
+The OS maintains a **Process Control Block** for every process — a data structure that holds all information needed to manage that process. Also known as a task control block.
 
-A context switch is the mechanism by which the OS suspends one process and resumes another. When a context switch occurs:
+**PCB contents**:
 
-1. The CPU's current register state (program counter, stack pointer, general-purpose registers) is saved into the PCB of the running process.
-2. The PCB of the next process to run is loaded into the CPU registers.
-3. The memory-management unit (MMU) is reconfigured to point to the new process's page table.
-4. Execution resumes at the new process's saved program counter.
+| Field | Description |
+|-------|-------------|
+| Process ID (PID) | Unique integer identifier |
+| Program counter | Address of the next instruction to execute |
+| CPU registers | All registers saved during context switch (accumulators, index registers, stack pointer, etc.) |
+| CPU scheduling info | Priority, scheduling queue pointers, any scheduling parameters |
+| Memory management | Page tables, segment tables, memory limits |
+| Accounting info | CPU time used, time limits, account numbers, process number |
+| I/O status | List of open files, I/O requests, allocated devices |
 
-Context switching is pure overhead — the CPU does no useful work during the switch. The switch time depends on hardware support (hardware context switching on some architectures) and is typically in the range of 1–10 microseconds.
+On Linux, the PCB is the `task_struct` structure in `<linux/sched.h>`. It contains hundreds of fields.
 
-## 2.5 Process Creation: fork() and exec()
+### Context Switch
 
-In UNIX-like systems, process creation occurs through the `fork()`–`exec()` pair.
+When the OS switches from one process to another, it must save the state of the currently running process and restore the saved state of the next process. This is called a **context switch**.
 
-### 2.5.1 fork()
+```
+Process P0                    Scheduler                   Process P1
+   │                             │                            │
+   │         running             │                            │
+   │◄────────────────────────────►                            │
+   │                      interrupt or system call            │
+   │                             │                            │
+   │                    save state of P0                      │
+   │                    into PCB₀                             │
+   │                             │                            │
+   │                    reload state of P1                    │
+   │                    from PCB₁                             │
+   │                             │                            │
+   │                             │          running           │
+   │◄────────────────────────────►                            │
+```
 
-The `fork()` system call creates a new process (the child) by duplicating the calling process (the parent). After `fork()`, both processes execute the next instruction. `fork()` returns the child's PID to the parent and 0 to the child.
+**Context switch time is pure overhead** — the CPU does no useful work during a switch. Typical switch time is 1–10 microseconds (thousands of cycles). Modern systems may do hundreds or thousands of context switches per second.
+
+### Process Creation
+
+Processes create other processes via system calls. On Unix: `fork()`. On Windows: `CreateProcess()`.
+
+#### Unix fork-exec Pattern
 
 ```c
-#include <unistd.h>
 #include <stdio.h>
-
-int main() {
-    pid_t pid = fork();
-    
-    if (pid < 0) {
-        perror("fork failed");
-        return 1;
-    } else if (pid == 0) {
-        printf("Child process: PID = %d\n", getpid());
-    } else {
-        printf("Parent process: child PID = %d\n", pid);
-    }
-    return 0;
-}
-```
-
-The child inherits copies of the parent's address space, open file descriptors, signal handlers, and environment variables. Modern implementations use **copy-on-write (COW)** semantics to avoid immediately copying the entire address space; physical memory pages are shared until one process writes to them.
-
-### 2.5.2 exec()
-
-The `exec()` family of system calls replaces the current process's address space with a new program image. The PID does not change, but all prior code, data, stack, and heap are discarded.
-
-```c
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 
 int main() {
     pid_t pid = fork();
-    if (pid == 0) {
-        char *args[] = {"/bin/ls", "-l", NULL};
-        execvp(args[0], args);
-        perror("exec failed"); // only reached if exec fails
+
+    if (pid < 0) {
+        // Fork failed
+        perror("fork");
+        return 1;
     }
+
+    if (pid == 0) {
+        // CHILD PROCESS
+        printf("Child: My PID = %d, Parent PID = %d\n", getpid(), getppid());
+
+        // Replace child process with a new program
+        char *args[] = {"/bin/echo", "Hello from exec!", NULL};
+        execvp("/bin/echo", args);
+
+        // If exec fails, we reach here
+        perror("exec failed");
+        return 1;
+    } else {
+        // PARENT PROCESS
+        printf("Parent: Created child PID = %d\n", pid);
+
+        int status;
+        waitpid(pid, &status, 0);
+
+        if (WIFEXITED(status)) {
+            printf("Child exited with status %d\n", WEXITSTATUS(status));
+        }
+    }
+
     return 0;
 }
 ```
 
-The `wait()` system call allows the parent to block until the child terminates, collecting its exit status.
+**fork()** creates an almost exact copy of the calling process. The child gets a copy of the parent's address space, file descriptors, and signal handlers. The difference: `fork()` returns the child's PID to the parent and 0 to the child.
 
-### 2.5.3 Zombies and Orphans
+**exec()** replaces the current process's memory with a new program. The PID does not change, but the text, data, heap, and stack are completely replaced.
 
-If the parent does not `wait()` for a child, the child's PCB persists after termination — the process becomes a **zombie**. Zombies consume only PCB space. If the parent terminates before the child, the child becomes an **orphan** and is adopted by the `init` process (PID 1), which periodically reaps orphaned children.
+### Process Termination
 
-## 2.6 Inter-Process Communication (IPC)
+A process terminates when:
 
-Processes may communicate through message-based or memory-based mechanisms.
+- It calls `exit()` (normal termination)
+- It returns from `main()` (implicit exit)
+- It receives a signal it cannot handle (e.g., SIGKILL)
+- It causes an unrecoverable error (segmentation fault)
 
-### 2.6.1 Pipes
+When a process terminates, the OS:
 
-A pipe is a unidirectional communication channel. The `pipe()` system call creates a pair of file descriptors: `fd[0]` for reading and `fd[1]` for writing.
+1. Releases all resources (memory, open files, I/O buffers)
+2. Records termination status in the parent's wait queue
+3. Removes the process from all scheduling queues
+4. The process becomes a **zombie** until the parent calls `wait()`
+
+**Zombie process**: A terminated process whose parent has not yet called `wait()`. The PCB is retained so the parent can read the exit status. Zombies consume minimal resources (just the PCB) but a leak of zombies can exhaust the PID table.
+
+**Orphan process**: A process whose parent terminates before the child. Orphans are adopted by the `init` process (PID 1), which periodically calls `wait()` to clean them up.
+
+### Interprocess Communication (IPC)
+
+Processes can communicate via two primary mechanisms:
+
+#### Shared Memory
+
+A region of memory is shared between processes. Once mapped, data written by one process is immediately visible to others. This is the fastest IPC method (no kernel involvement after setup).
 
 ```c
-int fd[2];
-pipe(fd);
-pid_t pid = fork();
-if (pid == 0) {
-    close(fd[1]);          // close write end
-    read(fd[0], buf, len); // read from pipe
-} else {
-    close(fd[0]);          // close read end
-    write(fd[1], data, len);
+// Producer process — simplified shared memory example
+#include <stdio.h>
+#include <sys/shm.h>
+#include <sys/ipc.h>
+#include <string.h>
+
+#define SHM_SIZE 1024
+
+int main() {
+    key_t key = ftok("shmfile", 65);
+    int shmid = shmget(key, SHM_SIZE, IPC_CREAT | 0666);
+
+    char *data = (char *)shmat(shmid, NULL, 0);
+
+    strcpy(data, "Hello from producer!");
+    printf("Producer wrote: %s\n", data);
+
+    shmdt(data);
+    return 0;
 }
 ```
 
-**Named pipes** (FIFOs) persist in the file system and allow unrelated processes to communicate.
+```c
+// Consumer process
+#include <stdio.h>
+#include <sys/shm.h>
+#include <sys/ipc.h>
 
-### 2.6.2 Message Queues
+#define SHM_SIZE 1024
 
-A message queue is a linked list of messages managed by the kernel. Processes send and receive typed messages without a direct connection. The System V API uses `msgget()`, `msgsnd()`, and `msgrcv()`.
+int main() {
+    key_t key = ftok("shmfile", 65);
+    int shmid = shmget(key, SHM_SIZE, IPC_CREAT | 0666);
 
-### 2.6.3 Shared Memory
+    char *data = (char *)shmat(shmid, NULL, 0);
 
-Shared memory is the fastest IPC mechanism: multiple processes map the same physical memory pages into their address spaces. The POSIX API uses `shm_open()` and `mmap()`. Synchronisation (semaphores or mutexes) is required to prevent race conditions.
+    printf("Consumer read: %s\n", data);
 
-### 2.6.4 Sockets
+    shmdt(data);
+    shmctl(shmid, IPC_RMID, NULL);  // Remove shared memory
+    return 0;
+}
+```
 
-A socket is an endpoint for communication across a network or within the same host (UNIX domain sockets). The socket API (`socket()`, `bind()`, `listen()`, `connect()`, `send()`, `recv()`) enables bidirectional communication between processes on the same or different machines.
+#### Message Passing
+
+Processes communicate by exchanging messages through the kernel. Messages are sent and received via system calls. No shared address space is needed — making this suitable for distributed systems.
+
+```c
+#include <stdio.h>
+#include <sys/msg.h>
+#include <sys/ipc.h>
+#include <string.h>
+
+struct msg_buffer {
+    long msg_type;
+    char msg_text[100];
+};
+
+int main() {
+    key_t key = ftok("msgfile", 65);
+    int msgid = msgget(key, IPC_CREAT | 0666);
+
+    // Send a message
+    struct msg_buffer message;
+    message.msg_type = 1;
+    strcpy(message.msg_text, "Hello via message queue!");
+    msgsnd(msgid, &message, sizeof(message.msg_text), 0);
+
+    printf("Message sent: %s\n", message.msg_text);
+
+    return 0;
+}
+```
+
+| Feature | Shared Memory | Message Passing |
+|---------|---------------|-----------------|
+| Speed | Fast (no kernel involvement after setup) | Slower (kernel copies messages) |
+| Synchronization | Explicit (mutex/semaphore needed) | Implicit via blocking send/receive |
+| Complexity | Higher (must manage synchronization) | Lower (kernel manages buffers) |
+| Distributed support | No (requires shared physical memory) | Yes (works across network) |
+
+### Cooperating Processes
+
+Processes are **independent** if they cannot affect or be affected by other processes. They are **cooperating** if they can interact. Reasons for cooperation:
+
+- **Information sharing**: Multiple users accessing the same database
+- **Computation speedup**: Breaking a task into sub-tasks running in parallel
+- **Modularity**: Separate components for separate functions
+- **Convenience**: A user running multiple tasks simultaneously
+
+## Examples
+
+### Example 1: Process Tree with ps
+
+```bash
+$ ps -eo pid,ppid,comm,state
+  PID  PPID COMMAND         S
+    1     0 systemd         S
+  345     1 sshd            S
+  678   345 bash            S
+  712   678 ps              R
+```
+
+### Example 2: Visualizing Process State Changes
+
+```c
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+
+int main() {
+    pid_t pid = fork();
+
+    if (pid == 0) {
+        printf("Child: Now in RUNNING state (about to sleep)\n");
+        sleep(2);  // Child moves to WAITING state
+        printf("Child: Woke up, back in RUNNING\n");
+    } else {
+        printf("Parent: Running, waiting for child\n");
+        wait(NULL);  // Parent could wait or do other work
+        printf("Parent: Child finished\n");
+    }
+    return 0;
+}
+```
 
 ## Summary
 
-A process is the OS unit of execution, described by a PCB and transitioning through well-defined states. Context switching enables multiprogramming. `fork()` and `exec()` provide a clean process-creation model. IPC mechanisms — pipes, message queues, shared memory, and sockets — enable inter-process data exchange with varying performance and complexity trade-offs.
+- A process is an active instance of a program, containing text, data, heap, and stack
+- The five-state model: NEW → READY → RUNNING → WAITING → TERMINATED
+- The PCB (task_struct in Linux) holds every piece of state the kernel needs about a process
+- Context switching is pure overhead — saving and restoring process state
+- `fork()` creates a child; `exec()` replaces the current program; `exit()` terminates
+- IPC: shared memory (fast, needs synchronization) or message passing (slower, more structured)
+- Zombies are dead processes waiting for parent `wait()`; orphans are adopted by init
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What four memory segments constitute a process's address space?
-2. List five fields stored in a process control block.
-3. Draw and label the five-state process model, including all valid transitions.
-4. Why is copy-on-write desirable in `fork()` implementation?
-5. What is a zombie process? How does it arise, and how is it cleaned up?
+1. Draw the process state diagram. Identify which transitions are initiated by the OS, which by the process, and which by hardware.
+2. Run `ps -eo pid,ppid,state,wchan,comm` on your system. Identify the state of each process. Which processes are waiting? What are they waiting on (wchan)?
+3. Write a program that creates a zombie process. Use `ps` to confirm the zombie exists.
 
-### Application Problems
+### Intermediate
 
-1. A system performs 2000 context switches per second. Each switch requires 8 microseconds. What percentage of CPU time is consumed by context switching?
-2. Write a C program that creates a child process using `fork()`. The child should execute `ls -la` after printing its own PID. The parent should wait for the child and print the child's exit status.
-3. Two processes communicate via shared memory. One writes an array of 1000 integers; the other reads it. Estimate the time difference between this method and a pipe-based transfer for 1000 integers. Assume the context switch time is 5 microseconds.
+4. Write a program that creates three child processes. Each child prints its PID and exits. The parent waits for all children in order and prints their exit statuses. Use `waitpid()` with the WNOHANG option to demonstrate non-blocking wait.
+5. Compare the performance of shared memory vs message passing. Write programs that transfer 1 MB of data using each method and measure the time.
+6. Explain the orphan process scenario. Write a program where the parent exits before the child. Verify that `init` (PID 1) becomes the child's new parent using `getppid()`.
 
-### Challenge Problem
+### Advanced
 
-1. Implement a bounded buffer using shared memory and a named semaphore. The producer reads lines from stdin and writes them into the buffer; the consumer reads lines from the buffer and writes them to stdout. Handle the case where the producer receives EOF. Allocate the shared memory segment using `shm_open()` and `mmap()`.
+7. Implement a simple producer-consumer using shared memory and a circular buffer. The producer writes integers 0–999; the consumer reads and prints them. Use atomic operations or a flag for synchronization.
+8. The `vfork()` system call creates a child that shares the parent's address space and blocks the parent until the child calls `exec()` or `exit()`. Research why `vfork()` exists, then write a benchmark comparing `fork()` and `vfork()` latency over 10,000 iterations.
+9. Design and implement a message-passing library in C that provides `send(pid, msg)` and `recv(pid, &msg)` using POSIX message queues. The library should handle messages up to 1024 bytes and support non-blocking receives.

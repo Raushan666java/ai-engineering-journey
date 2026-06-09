@@ -2,160 +2,226 @@
 
 ## Learning Objectives
 
-By the end of this chapter, you should be able to: define space complexity and the classes $PSPACE$, $NPSPACE$, $L$, $NL$; prove Savitch's theorem and use it to relate $PSPACE$ and $NPSPACE$; prove PSPACE-completeness of TQBF; prove NL-completeness of PATH; understand the relationship between time and space complexity classes.
+- Define space complexity classes SPACE and NSPACE.
+- Analyze the space complexity of algorithms.
+- State and prove Savitch's theorem.
+- Define PSPACE and PSPACE-completeness.
+- Identify key PSPACE-complete problems.
+- Understand the relationship between time and space complexity classes.
+- Apply the reachability method for space-efficient computation.
 
 ## Theory
 
-### Space Complexity
+### 13.1 Space Complexity
 
-Let $M$ be a deterministic TM that halts on all inputs. The **space complexity** of $M$ is the function $f : \mathbb{N} \to \mathbb{N}$ where $f(n)$ is the maximum number of tape cells $M$ uses on any input of length $n$. For offline TMs, the input tape is not counted (it is read-only).
+The **space complexity** of a Turing machine is the maximum number of tape cells used on any input of length n. For a multitape TM, the space used is the sum of cells used on all work tapes (the input tape is often excluded if it's read-only).
 
-**Definition**: $SPACE(f(n)) = \{ L \mid L \text{ is decided by an } O(f(n)) \text{ space TM} \}$.
-$NSPACE(f(n)) = \{ L \mid L \text{ is decided by an } O(f(n)) \text{ space NTM} \}$.
+**Formal definition:** SPACE(s(n)) = { L | L is decided by a TM using O(s(n)) space }.
+Similarly, NSPACE(s(n)) = { L | L is decided by an NTM using O(s(n)) space }.
 
-### The Classes L and NL
+### 13.2 Fundamental Space Classes
 
-$L = SPACE(\log n)$ — problems solvable with logarithmic space.
-$NL = NSPACE(\log n)$ — problems solvable with logarithmic space on an NTM.
+| Class | Description |
+|-------|-------------|
+| **L** = SPACE(log n) | Deterministic log space |
+| **NL** = NSPACE(log n) | Nondeterministic log space |
+| **PSPACE** = ∪_{k} SPACE(nᵏ) | Polynomial space |
+| **NPSPACE** = ∪_{k} NSPACE(nᵏ) | Nondeterministic polynomial space |
+| **EXPSPACE** = ∪_{k} SPACE(2^{nᵏ}) | Exponential space |
 
-Logarithmic space is interesting because it is sublinear: the TM cannot store the entire input; it must process the input as a stream or use the read-only input efficiently.
+**Key relationships:**
+- L ⊆ NL ⊆ P ⊆ NP ⊆ PSPACE ⊆ EXPTIME ⊆ EXPSPACE
+- L ≠ PSPACE (space hierarchy theorem).
+- P ≠ EXPTIME (time hierarchy theorem).
 
-**Example problems in $L$**:
-- Connectivity in undirected graphs (the result that this is in $L$ is nontrivial — **Reingold's theorem**, 2005)
-- Determining if a string is in a regular language
-- Arithmetic with fixed-size numbers
+### 13.3 Savitch's Theorem
 
-**Example problem in $NL$**:
-- PATH (also called ST-CONN): given directed graph $G$ and vertices $s, t$, is there a path from $s$ to $t$?
+**Savitch's Theorem:** For any function s(n) ≥ log n,
+NSPACE(s(n)) ⊆ SPACE(s(n)²)
 
-### NL-Completeness
+**Corollary:** NPSPACE = PSPACE (nondeterminism doesn't add power for polynomial space).
 
-**Definition**: $L$ is **NL-complete** if:
-1. $L \in NL$
-2. For every $A \in NL$, $A \leq_L L$ (log-space reducible)
+**Proof sketch:** Given an NTM N that uses s(n) space, we construct a deterministic TM that uses O(s(n)²) space by solving the **reachability problem** in the configuration graph of N.
 
-**Theorem 13.1**: PATH is NL-complete.
+The configuration graph has nodes = configurations of N on input w. Each configuration uses O(s(n)) symbols. N accepts if there is a path from start to accept in this graph.
 
-**Proof**: PATH is in $NL$: nondeterministically guess the next vertex on the path from $s$ to $t$, maintaining only the current vertex in memory. If we reach $t$ within $n$ steps, accept.
+The deterministic TM uses a recursive **divide-and-conquer** approach: to check if configuration c₂ is reachable from c₁ in t steps, try all possible intermediate configurations cₘ and check:
+- Can we reach cₘ from c₁ in t/2 steps?
+- Can we reach c₂ from cₘ in t/2 steps?
 
-To show completeness, let $L \in NL$ be recognized by NTM $N$ using $O(\log n)$ space. The configuration graph of $N$ on input $w$ has vertices = configurations, edges = possible transitions. $N$ accepts $w$ iff there is a path from the start configuration to an accepting configuration in this graph. The reduction writes this configuration graph (polynomial size, but the important part is that it can be produced by a log-space transducer). $\square$
+The depth of recursion is log(2^{O(s(n))}) = O(s(n)), and each level stores a configuration of size O(s(n)). Total space: O(s(n)²).
 
-### The Classes PSPACE and NPSPACE
+### 13.4 PSPACE
 
-$PSPACE = \bigcup_{k \geq 0} SPACE(n^k)$
-$NPSPACE = \bigcup_{k \geq 0} NSPACE(n^k)$
+**PSPACE** = languages decidable in polynomial space on a DTM.
 
-### Savitch's Theorem
+Since NPSPACE = PSPACE, nondeterminism doesn't add power here (unlike for time).
 
-**Theorem 13.2 (Savitch)**: For any function $f(n) \geq \log n$,
+**Problems in PSPACE:**
+- **QBF (Quantified Boolean Formulas):** Is a fully quantified Boolean formula (∀x∃y∀z…) true?
+- **GEOGRAPHY:** Can the first player force a win in the geography game?
+- **Generalized CHECKERS, GO, and other games** on n×n boards.
+- **REGULAR EXPRESSION EQUIVALENCE** (for some variants).
+- **LBA (Linear Bounded Automaton) acceptance.**
 
-$$NSPACE(f(n)) \subseteq SPACE(f(n)^2)$$
+### 13.5 PSPACE-Completeness
 
-**Proof**: Let $N$ be an NTM with space bound $f(n)$. Define a reachability predicate $CANREACH(c_1, c_2, t)$ which is true iff there is a path of length at most $t$ from configuration $c_1$ to $c_2$ in $N$'s configuration graph.
+A language B is **PSPACE-complete** if:
+1. B ∈ PSPACE.
+2. For every A ∈ PSPACE, A ≤_P B (B is PSPACE-hard).
 
-$CANREACH(c_1, c_2, t)$ is computed recursively:
-- If $t = 1$: check if $c_1 = c_2$ or $c_1 \vdash c_2$ in one step.
-- If $t > 1$: for each configuration $c_m$:
-  Compute $CANREACH(c_1, c_m, t/2)$ and $CANREACH(c_m, c_2, t/2)$.
-  If both true, return true.
+**QBF** was the first problem proven PSPACE-complete (the space analog of Cook-Levin).
 
-The recursion depth is $\log(2^{O(f(n))}) = O(f(n))$. Each recursive call requires $O(f(n))$ space to store the current configuration, giving total space $O(f(n)^2)$. $\square$
+**TQBF (True Quantified Boolean Formulas):** Given a fully quantified Boolean formula (all variables quantified), is it true?
+- QBF ∈ PSPACE: Recursively evaluate the formula using polynomial space.
+- QBF is PSPACE-hard: Similar to Cook-Levin, but we encode the recursive space-bounded computation.
 
-**Corollary**: $PSPACE = NPSPACE$. Unlike time, nondeterminism does not increase the power of polynomial space.
+**Other PSPACE-complete problems:**
+- **GEOGRAPHY:** Given a directed graph and start vertex, can the current player force a win?
+- **SUCCINCT REACHABILITY:** Given a succinctly described graph, is there a path from s to t?
+- **MASTERMIND** (the game).
+- **NUMBER-LABELED PARTITION.**
 
-### PSPACE-Completeness
+### 13.6 L and NL
 
-**Definition**: $L$ is **PSPACE-complete** if:
-1. $L \in PSPACE$
-2. For every $A \in PSPACE$, $A \leq_p L$
+**L** (deterministic log space): Problems solvable using only O(log n) work space (excluding the input).
 
-**Theorem 13.3**: TQBF (True Quantified Boolean Formulas) is PSPACE-complete.
+**Examples in L:**
+- Checking if parentheses are balanced.
+- Determining if a linked list has a cycle.
+- Computing the parity of the number of 1 bits.
 
-**Proof sketch**: TQBF is the problem of determining whether a fully quantified Boolean formula $\phi = Q_1 x_1 Q_2 x_2 \cdots Q_n x_n \, \psi(x_1, \ldots, x_n)$ is true, where each $Q_i$ is $\exists$ or $\forall$.
+**NL** (nondeterministic log space): Problems solvable on an NTM using O(log n) space.
 
-Membership in $PSPACE$: recursively evaluate the formula. For $\exists x_i \phi$, return true if $\phi[x_i = 0] \lor \phi[x_i = 1]$. For $\forall x_i \phi$, return true if $\phi[x_i = 0] \land \phi[x_i = 1]$. The recursion depth is $n$, and each level stores one bit, so $O(n)$ space suffices.
+**PATH** (is there a directed path from s to t?) is NL-complete.
+- PATH ∈ NL: Nondeterministically guess the next vertex on the path; O(log n) bits to store current vertex.
+- PATH is NL-hard: Every NL problem reduces to PATH (configuration graph reachability).
 
-Completeness: Given any $L \in PSPACE$ recognized by TM $M$ using $n^k$ space, reduce $w$ to a QBF $\phi$ that is true iff $M$ accepts $w$. The construction extends the Cook-Levin tableau approach with alternating quantifiers. For each time step $t$, we introduce variables for the configuration at time $t$. The formula $\exists c_0 \exists c_f \forall t_1 \cdots$ expresses that there exists a computation path from the start to an accepting configuration. The alternation of quantifiers encodes the nondeterministic choices (existential) and their verification (universal). $\square$
+**Important theorem:** NL ⊆ P (since PATH ∈ P via BFS, and PATH is NL-complete).
 
-### Relationship Between Classes
+**NL = co-NL** (Immerman-Szelepcsényi theorem): Nondeterministic log space is closed under complement.
+- Proven independently by Immerman and Szelepcsényi (1987).
+- The proof uses a clever counting technique to verify that no path exists to an accepting configuration.
 
-$$L \subseteq NL \subseteq P \subseteq NP \subseteq PSPACE \subseteq EXP$$
+### 13.7 The Reachability Method
 
-Known strict containments:
-- $L \neq PSPACE$ (by space hierarchy theorem)
-- $P \neq EXP$ (by time hierarchy theorem)
-- $NL \neq PSPACE$ (by space hierarchy theorem)
+Many space-bounded algorithms use the configuration graph approach:
 
-Open questions:
-- $L \stackrel{?}{=} NL$
-- $P \stackrel{?}{=} PSPACE$ (probably not, but unknown)
-- $NP \stackrel{?}{=} PSPACE$
+1. Define configurations of the computation.
+2. Show that the acceptance problem reduces to reachability in this graph.
+3. Use space-efficient reachability algorithms.
 
-### The Space Hierarchy Theorem
+**For Savitch's theorem:** Use divide-and-conquer reachability in O(log² n) space for NL problems, generalized to O(s²) for NSPACE(s).
 
-**Theorem 13.4**: For any space-constructible $f(n) \geq \log n$, there exists a language decidable in $O(f(n))$ space but not in $o(f(n))$ space.
+**For NL ⊆ P:** The configuration graph of an NL machine is of polynomial size, and reachability in this graph is in P (via DFS/BFS).
 
-**Proof**: Diagonalization. Construct a TM $D$ that, on input $\langle M \rangle$, simulates $M$ on $\langle M \rangle$ using $f(n)$ space while counting. If $M$ uses less than $f(n)$ space and halts, $D$ outputs the opposite. By the usual diagonalization argument, $L(D)$ separates $SPACE(f(n))$ from $SPACE(o(f(n)))$. $\square$
+### 13.8 The Space Hierarchy
+
+**Space Hierarchy Theorem:** For any space-constructible function f(n) ≥ log n,
+SPACE(f(n)) ⊂ SPACE(g(n)) whenever f(n) = o(g(n)).
+
+**Consequences:**
+- L ⊂ PSPACE (more space allows more problems to be solved).
+- PSPACE ⊂ EXPSPACE.
+
+This gives a strict hierarchy: L ⊂ PSPACE ⊂ EXPSPACE ⊂ … unlike time, where we only know P ⊆ NP ⊆ PSPACE with unknown strictness.
 
 ## Examples
 
-### Example 1: PATH is in NL
+### Example 13.1: PATH ∈ NL
 
-For a directed graph $G$ with $n$ vertices, a log-space nondeterministic algorithm for PATH:
+**Algorithm:** Given directed graph G = (V, E), vertices s and t.
+1. Set current = s.
+2. For i = 1 to |V|:
+   - Nondeterministically choose a vertex v ∈ V (O(log n) bits).
+   - If (current, v) ∈ E, set current = v.
+   - If current = t, accept.
+3. Reject.
 
-```
-current = s
-for i = 1 to n:
-    if current == t: accept
-    nondeterministically choose next vertex v
-    if (current, v) is not an edge: reject
-    current = v
-reject
-```
+The algorithm stores only the current vertex (log n bits) and a counter (log n bits). Space = O(log n). Nondeterminism guesses the path.
 
-Only $O(\log n)$ bits are needed to store `current` and `i`.
+### Example 13.2: Savitch's Theorem in Action
 
-### Example 2: TQBF
+Given an NTM that uses s(n) = n space, show the equivalent DTM uses O(n²) space.
 
-Evaluate $\phi = \exists x \, \forall y \, (x \lor y)$. 
+The NTM has at most 2^{O(n)} configurations. The DTM uses recursion:
+- REACH(c₁, c₂, i): can we go from c₁ to c₂ in ≤ 2ⁱ steps?
+  - If i = 0: check if c₁ = c₂ or c₁ → c₂ in one step.
+  - Otherwise: for each configuration cₘ (O(n) space):
+    - If REACH(c₁, cₘ, i-1) and REACH(cₘ, c₂, i-1), return true.
+  - Return false.
 
-For $x = 0$: $\forall y \, (0 \lor y) = \forall y \, y = (0 \land 1) = 0$ (false).
-For $x = 1$: $\forall y \, (1 \lor y) = \forall y \, 1 = 1$ (true).
+Recursion depth: i = log(2^{O(n)}) = O(n). Each call stores a constant number of configurations of size O(n). Total: O(n²) space.
 
-So there exists $x = 1$ making the formula true. $\phi$ is true.
+### Example 13.3: QBF is PSPACE-Complete
 
-### Example 3: Savitch's Theorem
+A QBF formula: ∃x₁ ∀x₂ ∃x₃ … φ(x₁, …, xₙ)
 
-Apply to PATH. The standard deterministic algorithm for PATH (BFS/DFS) uses $O(n)$ space. But Savitch's theorem gives a $O(\log^2 n)$ space algorithm!
+**PSPACE membership:** Evaluate the formula recursively:
+- If φ has no quantifiers (all variables bound), evaluate directly.
+- If φ = ∃x ψ(x, …): return True if ψ(0) or ψ(1) is true.
+- If φ = ∀x ψ(x, …): return True if both ψ(0) and ψ(1) are true.
 
-The $CANREACH(s, t, n)$ recursion divides the path length in half each time, requiring $O(\log n)$ recursive calls, each storing a vertex name of $O(\log n)$ bits. Total: $O(\log^2 n)$ space.
+The recursion depth is O(n), and each level stores partial variable assignments. Total space: O(n²) — polynomial.
+
+**PSPACE-hardness:** Given any PSPACE machine M and input w, construct a QBF formula that is true iff M accepts w. This is similar to Cook-Levin, but the quantifiers ∀ and ∃ handle the alternation between universal and existential configurations in the nondeterministic computation.
+
+### Example 13.4: L Contains Balanced Parentheses
+
+**Algorithm** for checking if a string w of '(' and ')' is balanced:
+1. Initialize counter = 0 (log n bits).
+2. For each symbol c in w:
+   - If c = '(': counter++.
+   - If c = ')': counter--.
+   - If counter < 0: reject (too many closing).
+3. If counter = 0: accept. Else reject.
+
+Space used: one counter (⌈log₂(n+1)⌉ bits) = O(log n). So this problem is in L.
+
+### Example 13.5: NL-Completeness of PATH
+
+To show EVERY NL problem A reduces to PATH:
+- Let N be an NTM for A with space log n.
+- On input w, construct the configuration graph G of N on w: vertices = configurations, edges = transitions.
+- Let s = start configuration, t = accept configuration.
+- N accepts w iff there is a path from s to t in G.
+- G has O(n·2^{log n}) = O(n²) vertices, and can be constructed in log space (each edge can be generated on demand).
+
+Thus A ≤_L PATH, and PATH is NL-complete.
 
 ## Summary
 
-- $L = SPACE(\log n)$, $NL = NSPACE(\log n)$
-- PATH is NL-complete
-- $PSPACE = NPSPACE$ by Savitch's theorem ($NSPACE(f) \subseteq SPACE(f^2)$)
-- TQBF is PSPACE-complete
-- $L \subseteq NL \subseteq P \subseteq NP \subseteq PSPACE \subseteq EXP$
-- Space hierarchy theorem proves strict containments
-- Many games (GO, generalized chess, Othello with $n \times n$ boards) are PSPACE-complete
+- Space complexity measures the maximum tape cells used during computation.
+- L = O(log n) space; NL = nondeterministic O(log n) space.
+- Savitch's theorem: NSPACE(s) ⊆ SPACE(s²), so NPSPACE = PSPACE.
+- PSPACE = polynomial space; PSPACE-complete problems include QBF, GEOGRAPHY, and generalized games.
+- L ⊆ NL ⊆ P ⊆ NP ⊆ PSPACE, but some containments are not known to be strict.
+- NL = co-NL (Immerman-Szelepcsényi theorem).
+- The configuration graph approach is central to space complexity proofs.
+- Space hierarchy is strict (L ⊂ PSPACE ⊂ EXPSPACE), unlike the time hierarchy where P vs PSPACE is unknown.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. Why is logarithmic space interesting even though it is sublinear?
-2. Explain Savitch's theorem in your own words. Why is the time bound exponential even though the space bound is $O(f^2)$?
-3. What distinguishes PSPACE-complete from NP-complete problems?
-4. Why does the configuration graph of an $f(n)$-space NTM have $2^{O(f(n))}$ vertices?
+1. Show that the problem of checking if a binary number is divisible by 3 is in L.
+2. Show that every regular language is in L.
+3. Prove that PATH is in P by giving a polynomial-time algorithm.
+4. Explain Savitch's theorem in your own words.
+5. Show that if L₁ ∈ PSPACE and L₂ ∈ PSPACE then L₁ ∩ L₂ ∈ PSPACE.
 
-### Application Problems
+### Intermediate
 
-5. Show that the language $\{ 0^n 1^n \mid n \geq 0 \}$ is in $L$ (log-space decidable).
-6. Prove that $NL \subseteq P$ by showing a polynomial-time algorithm for PATH.
-7. Show that TQBF is in PSPACE by giving a recursive evaluation algorithm.
-8. Prove that if $PSPACE = NP$, then $NP = coNP$. (Hint: PSPACE is closed under complement.)
+6. Prove that QBF is in PSPACE by describing a polynomial-space algorithm.
+7. Show that NL ⊆ P using the configuration graph approach.
+8. Prove that the problem of determining if a DFA accepts all strings (universality) is in PSPACE — and actually in NL if the DFA is presented differently.
+9. Show that if A ≤_P B and B ∈ PSPACE, then A ∈ PSPACE.
+10. Give an example of a problem in PSPACE that is not known to be in NP.
 
-### Challenge Problem
+### Advanced
 
-9. The **geography game** (a two-player game on a directed graph where players alternately move a token along edges, and vertices cannot be revisited) is PSPACE-complete. Show that GEOGRAPHY is in PSPACE by describing a recursive algorithm using polynomial space.
+11. Prove Savitch's theorem in detail: show NSPACE(s(n)) ⊆ SPACE(s(n)²).
+12. Prove the Immerman-Szelepcsényi theorem (NL = co-NL).
+13. Show that the problem of deciding whether two regular expressions with exponentiation (a^n means a repeated n times) denote different languages is PSPACE-complete.
+14. Prove that GEOGRAPHY (the game) is PSPACE-complete.
+15. Show that the space hierarchy is strict: SPACE(n) ⊂ SPACE(n²).

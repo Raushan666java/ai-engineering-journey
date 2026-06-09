@@ -1,226 +1,374 @@
-# Chapter 5 — Synchronization
+# Chapter 5: Process Synchronization
 
 ## Learning Objectives
 
-1. Identify and explain race conditions with examples.
-2. State and justify the three requirements for a correct critical-section solution.
-3. Implement Peterson's algorithm for two processes.
-4. Describe hardware primitives: test-and-set, compare-and-swap.
-5. Solve classical synchronisation problems using mutex locks.
+- Define race conditions and explain why they occur in concurrent systems
+- Formulate the critical section problem and characterize a valid solution
+- Implement Peterson's solution for two processes
+- Explain hardware support for synchronization (test-and-set, compare-and-swap)
+- Use mutex locks and semaphores for process synchronization
+- Recognize classic synchronization problems and their solutions
 
-## 5.1 Race Conditions
+## Theory
 
-A **race condition** occurs when multiple processes or threads concurrently access and manipulate shared data, and the final result depends on the relative timing of their execution. Race conditions are notoriously difficult to reproduce and debug.
+### Race Conditions
 
-**Example**: Two threads increment a shared counter `count`:
+A **race condition** occurs when multiple processes or threads access shared data concurrently, and the final result depends on the order of execution.
 
-```c
-// Thread 1
-count = count + 1;
-// Thread 2
-count = count + 1;
-```
-
-The increment instruction compiles to:
-```
-LOAD  R1, count
-ADD   R1, 1
-STORE count, R1
-```
-
-If both threads execute the LOAD before either executes STORE, the final count is incremented by 1 instead of 2 — the second STORE overwrites the first.
-
-## 5.2 The Critical-Section Problem
-
-A **critical section** is a segment of code that accesses shared resources (variables, files, devices) and must not be executed by more than one process at a time.
-
-A valid solution to the critical-section problem must satisfy three conditions:
-
-1. **Mutual exclusion**: If process P_i is executing in its critical section, no other process may execute in its critical section.
-2. **Progress**: If no process is in its critical section and some processes wish to enter, only those processes not in their remainder sections can participate in deciding which enters next; the selection cannot be postponed indefinitely.
-3. **Bounded waiting**: There exists a bound on the number of times other processes are allowed to enter their critical sections after a process has made a request to enter its critical section and before that request is granted.
-
-## 5.3 Peterson's Algorithm
-
-Peterson's algorithm provides a software-based solution for two processes using shared variables `flag` and `turn`.
+Consider two threads executing this code on a shared variable `counter`:
 
 ```c
-// Shared variables
-int flag[2] = {0, 0};
+counter++;  // Actually three machine instructions:
+            // 1. LOAD counter into register
+            // 2. INCREMENT register
+            // 3. STORE register to counter
+```
+
+If both threads execute simultaneously:
+
+```
+Thread 1: LOAD counter (5)
+Thread 1: INCREMENT (register = 6)
+Thread 2: LOAD counter (5)      ← reads stale value!
+Thread 2: INCREMENT (register = 6)
+Thread 1: STORE counter (6)
+Thread 2: STORE counter (6)     ← final value is 6, not 7!
+```
+
+The problem: the two increment operations interleaved incorrectly. This is a race condition.
+
+### The Critical Section Problem
+
+Consider a system with n processes, each containing a **critical section** — code that accesses shared data. The critical section problem is to design a protocol that processes can use to coordinate access.
+
+A valid solution must satisfy three requirements:
+
+1. **Mutual Exclusion**: If process Pᵢ is executing in its critical section, no other process can be executing in its critical section
+2. **Progress**: If no process is in its critical section and some processes want to enter, only those not in their remainder sections can participate in deciding which will enter next; this selection cannot be postponed indefinitely
+3. **Bounded Waiting**: There is a bound on the number of times other processes are allowed to enter their critical sections after a process has made a request to enter
+
+### Peterson's Solution
+
+A software-based solution for two processes, by Gary Peterson (1981).
+
+```c
+#include <stdio.h>
+#include <pthread.h>
+#include <stdbool.h>
+
+#define THREADS 2
+
 int turn;
+bool flag[THREADS];
+int shared_counter = 0;
 
-// Process P_i (i = 0 or 1)
-void enter_critical(int i) {
-    int j = 1 - i;
-    flag[i] = 1;       // I want to enter
-    turn = j;          // I let the other process go first
-    while (flag[j] && turn == j)
-        ;              // busy wait
+void lock(int self) {
+    int other = 1 - self;
+    flag[self] = true;      // I want to enter
+    turn = other;            // But I'll let the other go first
+    while (flag[other] && turn == other) {
+        // Busy wait — spin until it's my turn
+    }
 }
 
-void leave_critical(int i) {
-    flag[i] = 0;       // I am done
+void unlock(int self) {
+    flag[self] = false;     // I'm done
+}
+
+void *worker(void *arg) {
+    int id = *(int *)arg;
+
+    for (int i = 0; i < 100000; i++) {
+        lock(id);
+        shared_counter++;   // Critical section
+        unlock(id);
+    }
+    return NULL;
+}
+
+int main() {
+    pthread_t t1, t2;
+    int id1 = 0, id2 = 1;
+
+    flag[0] = flag[1] = false;
+    turn = 0;
+
+    pthread_create(&t1, NULL, worker, &id1);
+    pthread_create(&t2, NULL, worker, &id2);
+
+    pthread_join(t1, NULL);
+    pthread_join(t2, NULL);
+
+    printf("Counter: %d (expected: 200000)\n", shared_counter);
+    return 0;
 }
 ```
 
-**Proof of mutual exclusion**: If both processes are in their critical sections simultaneously, then both `flag[0]` and `flag[1]` are true, and `turn` is both 0 and 1 — a contradiction. Therefore mutual exclusion holds.
+Peterson's solution works but only for two processes. It also requires **busy waiting** — the CPU spins uselessly.
 
-**Progress**: If P1 is in its remainder section, then `flag[1]` is false, so P0 cannot be blocked by the `while` loop — progress is satisfied.
+### Hardware Support for Synchronization
 
-**Bounded waiting**: P0 can enter at most once before P1 enters again because P0 sets `turn = 1` before waiting.
+Modern hardware provides atomic instructions that make synchronization more efficient.
 
-Peterson's algorithm assumes `LOAD` and `STORE` instructions are atomic, a guarantee not provided by modern hardware. In practice, Peterson's is a pedagogical tool rather than a production mechanism.
-
-## 5.4 Hardware Support for Synchronization
-
-### 5.4.1 Disabling Interrupts
-
-In a uniprocessor system, mutual exclusion can be achieved by disabling interrupts before entering the critical section and re-enabling them after. This prevents the scheduler from preempting the process. However, it is dangerous (the process might never re-enable interrupts) and does not work on multiprocessors.
-
-### 5.4.2 Test-and-Set (TSL)
-
-The test-and-set instruction atomically reads a memory word and writes a nonzero value. It is typically executed as a single, indivisible CPU instruction.
+#### Test-and-Set (TSL)
 
 ```c
-// Pseudo-implementation of test-and-set:
-int test_and_set(int *lock) {
-    int old = *lock;
-    *lock = 1;
+// Atomic hardware instruction — implemented in hardware on most architectures
+int test_and_set(int *target) {
+    int old = *target;
+    *target = 1;     // Always set to 1
+    return old;      // Return original value
+}
+```
+
+Used to implement a simple lock:
+
+```c
+struct lock {
+    int flag;
+};
+
+void lock_init(struct lock *l) {
+    l->flag = 0;
+}
+
+void acquire(struct lock *l) {
+    while (test_and_set(&l->flag) == 1) {
+        // Busy wait
+    }
+}
+
+void release(struct lock *l) {
+    l->flag = 0;
+}
+```
+
+#### Compare-and-Swap (CAS)
+
+```c
+// Atomic compare and swap (x86: CMPXCHG instruction)
+int compare_and_swap(int *value, int expected, int new_value) {
+    int old = *value;
+    if (*value == expected) {
+        *value = new_value;
+    }
     return old;
 }
-
-// Usage:
-while (test_and_set(&lock))
-    ; // busy wait
-// critical section
-lock = 0;
 ```
 
-### 5.4.3 Compare-and-Swap (CAS)
+CAS is the foundation of **lock-free** data structures.
 
-CAS atomically compares a memory location to a given value and, if they match, stores a new value. It is the fundamental primitive for lock-free data structures.
+### Mutex Locks
 
-```c
-// Pseudo-implementation:
-int compare_and_swap(int *ptr, int expected, int new) {
-    int actual = *ptr;
-    if (actual == expected)
-        *ptr = new;
-    return actual;
-}
-
-// Usage for mutual exclusion:
-while (compare_and_swap(&lock, 0, 1) != 0)
-    ; // busy wait
-```
-
-CAS is supported on x86 via the `CMPXCHG` instruction, on ARM via `LDREX`/`STREX`.
-
-## 5.5 Mutex Locks
-
-A mutex (mutual exclusion) lock is a higher-level abstraction built on hardware primitives. The simplest mutex API:
+A **mutex** (mutual exclusion) is a simple lock that protects a critical section.
 
 ```c
-pthread_mutex_lock(&mutex);
-// critical section
-pthread_mutex_unlock(&mutex);
-```
+#include <stdio.h>
+#include <pthread.h>
 
-### 5.5.1 Busy-Waiting vs. Blocking
-
-The implementations above use **busy-waiting** (spinning): the thread repeatedly checks the lock condition, consuming CPU cycles. This is appropriate when the critical section is very short and the CPU has cores to spare.
-
-A **blocking mutex** puts the waiting thread to sleep and yields the CPU:
-
-```c
-void mutex_lock(mutex_t *m) {
-    while (test_and_set(&m->flag)) {
-        // Atomically add this thread to the wait queue
-        schedule(); // yield CPU
-    }
-}
-```
-
-The trade-off: spinning wastes CPU but avoids a context switch; blocking saves CPU but incurs context-switch overhead.
-
-### 5.5.2 Spinlocks
-
-A spinlock is a mutex that busy-waits. It is used in kernel contexts where sleeping is prohibited (e.g., interrupt handlers). The x86 `PAUSE` instruction is inserted into spin loops to improve performance on hyperthreaded processors.
-
-## 5.6 Classical Synchronisation Problems
-
-### 5.6.1 Bounded-Buffer Problem
-
-A producer places data into a fixed-size buffer; a consumer removes it. The producer must not write into a full buffer; the consumer must not read from an empty buffer.
-
-Using mutexes (without semaphores — semaphores are covered in Chapter 6):
-
-```c
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
-int count = 0;
-int buffer[BUFFER_SIZE];
+int shared = 0;
 
-void *producer(void *arg) {
-    while (true) {
-        int item = produce_item();
-        // Wait if full (busy-wait variant)
-        while (count == BUFFER_SIZE)
-            ;
+void *critical_section(void *arg) {
+    for (int i = 0; i < 100000; i++) {
         pthread_mutex_lock(&mutex);
-        buffer[in] = item;
-        in = (in + 1) % BUFFER_SIZE;
-        count++;
+        // Critical section — only one thread at a time
+        shared++;
         pthread_mutex_unlock(&mutex);
+    }
+    return NULL;
+}
+```
+
+**Spinlocks** vs **Mutexes**:
+- Spinlock: Busy-waits (good for short critical sections, no context switch)
+- Mutex: Blocks and yields CPU (good for long critical sections)
+
+### Semaphores
+
+A **semaphore** (Dijkstra, 1965) is an integer variable accessed only through two atomic operations: `wait()` (P — _proberen_, "to test") and `signal()` (V — _verhogen_, "to increment").
+
+```c
+// Semaphore as an abstract data type
+struct semaphore {
+    int value;
+    struct process *queue;  // Queue of waiting processes
+};
+
+void wait(struct semaphore *s) {
+    s->value--;
+    if (s->value < 0) {
+        // Add process to s->queue
+        // Block the process (yield CPU)
     }
 }
 
-void *consumer(void *arg) {
-    while (true) {
-        while (count == 0)
-            ;
-        pthread_mutex_lock(&mutex);
-        int item = buffer[out];
-        out = (out + 1) % BUFFER_SIZE;
-        count--;
-        pthread_mutex_unlock(&mutex);
-        consume_item(item);
+void signal(struct semaphore *s) {
+    s->value++;
+    if (s->value <= 0) {
+        // Remove a process from s->queue
+        // Wake up that process (move to ready queue)
     }
 }
 ```
 
-This busy-wait approach is inefficient. Chapter 6 introduces semaphores and condition variables to solve this elegantly.
+**Binary semaphores** (value 0 or 1) behave like mutexes.
 
-## 5.7 Atomic Operations in C11
+**Counting semaphores** allow multiple units of a resource. For example, a semaphore initialized to 5 could allow up to 5 concurrent accesses to a pool of 5 identical resources.
 
-C11 provides an atomic types library for lock-free programming:
+#### POSIX Semaphores
 
 ```c
-#include <stdatomic.h>
+#include <stdio.h>
+#include <pthread.h>
+#include <semaphore.h>
 
-atomic_int counter = ATOMIC_VAR_INIT(0);
-atomic_fetch_add(&counter, 1);  // atomic increment
+sem_t semaphore;
+int shared_counter = 0;
+
+void *worker(void *arg) {
+    for (int i = 0; i < 100000; i++) {
+        sem_wait(&semaphore);     // P operation
+        shared_counter++;
+        sem_post(&semaphore);     // V operation
+    }
+    return NULL;
+}
+
+int main() {
+    pthread_t t1, t2;
+
+    sem_init(&semaphore, 0, 1);  // Binary semaphore (value = 1)
+
+    pthread_create(&t1, NULL, worker, NULL);
+    pthread_create(&t2, NULL, worker, NULL);
+
+    pthread_join(t1, NULL);
+    pthread_join(t2, NULL);
+
+    printf("Counter: %d\n", shared_counter);
+
+    sem_destroy(&semaphore);
+    return 0;
+}
+```
+
+### Synchronization in Linux
+
+Linux provides several synchronization mechanisms:
+
+- **Atomic integers**: `atomic_t`, `atomic_inc()`, `atomic_dec_and_test()`
+- **Spinlocks**: `spin_lock()`, `spin_unlock()` — for short critical sections in interrupt context
+- **Mutexes**: `struct mutex`, `mutex_lock()`, `mutex_unlock()` — for longer critical sections
+- **Reader-writer spinlocks**: Many readers OR one writer
+- **Sequential locks (seqlocks)**: Writers never wait; readers detect concurrent writes
+
+## Examples
+
+### Example 1: Race Condition Demonstration
+
+```c
+// race.c — compile with: gcc race.c -lpthread -o race
+// Run several times to see the counter vary
+#include <stdio.h>
+#include <pthread.h>
+
+int counter = 0;  // UNSYNCHRONIZED shared variable
+
+void *add_many(void *arg) {
+    for (int i = 0; i < 1000000; i++) {
+        counter++;  // Race condition here!
+    }
+    return NULL;
+}
+
+int main() {
+    pthread_t t1, t2;
+
+    pthread_create(&t1, NULL, add_many, NULL);
+    pthread_create(&t2, NULL, add_many, NULL);
+
+    pthread_join(t1, NULL);
+    pthread_join(t2, NULL);
+
+    printf("Counter: %d (expected: 2000000)\n", counter);
+    return 0;
+}
+```
+
+### Example 2: Semaphore as a Resource Counter
+
+A counting semaphore managing a pool of 3 identical printers:
+
+```c
+#include <stdio.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <unistd.h>
+
+sem_t printers;
+
+void *print_job(void *arg) {
+    int id = *(int *)arg;
+
+    printf("Job %d waiting for printer...\n", id);
+    sem_wait(&printers);  // Acquire a printer
+
+    printf("Job %d printing...\n", id);
+    sleep(2);  // Simulate printing
+
+    printf("Job %d done.\n", id);
+    sem_post(&printers);  // Release the printer
+
+    return NULL;
+}
+
+int main() {
+    pthread_t jobs[10];
+    int ids[10];
+
+    sem_init(&printers, 0, 3);  // 3 printers available
+
+    for (int i = 0; i < 10; i++) {
+        ids[i] = i;
+        pthread_create(&jobs[i], NULL, print_job, &ids[i]);
+    }
+
+    for (int i = 0; i < 10; i++) {
+        pthread_join(jobs[i], NULL);
+    }
+
+    sem_destroy(&printers);
+    return 0;
+}
 ```
 
 ## Summary
 
-Race conditions arise from unsynchronised concurrent access. The critical-section problem requires mutual exclusion, progress, and bounded waiting. Peterson's algorithm provides a software solution for two processes. Hardware primitives — test-and-set and compare-and-swap — enable spinlocks and higher-level mutexes. Busy-waiting vs. blocking trades CPU cycles against context-switch overhead. These foundations underpin the semaphore and monitor constructs in Chapter 6.
+- Race conditions happen when concurrent operations interleave incorrectly on shared data
+- The critical section must satisfy mutual exclusion, progress, and bounded waiting
+- Peterson's solution demonstrates software-based synchronization (for 2 processes)
+- Hardware provides test-and-set and compare-and-swap for atomic operations
+- Mutex locks protect critical sections; semaphores generalize counting and signaling
+- Busy waiting wastes CPU cycles; blocking (wait queue) is more efficient for longer waits
+- POSIX provides `pthread_mutex_t` and `sem_t` for user-level synchronization
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. Define a race condition and provide a concrete code example.
-2. What are the three requirements for a critical-section solution?
-3. Explain how Peterson's algorithm guarantees mutual exclusion.
-4. What is the difference between test-and-set and compare-and-swap?
-5. When would you choose a spinlock over a blocking mutex?
+1. What is a race condition? Provide an example beyond counter increment.
+2. Explain the three requirements for a solution to the critical section problem.
+3. What is the difference between a mutex and a binary semaphore?
 
-### Application Problems
+### Intermediate
 
-1. Use Peterson's algorithm to synchronise two threads incrementing a shared counter 1 million times each. Verify that the final value equals 2 million.
-2. Suppose a multiprocessor system where two threads on separate CPUs execute the same spinlock code. Trace the sequence of memory operations that leads to correct mutual exclusion.
-3. A mutex implementation uses `test_and_set` with busy-waiting. If the average critical section is 50 ns and the average context switch is 5 microseconds, what fraction of lock acquisitions would need to contend before a blocking mutex becomes preferable?
+4. Prove that Peterson's solution satisfies mutual exclusion, progress, and bounded waiting.
+5. Implement a **ticket lock**, where each thread takes a number and waits until its number is called. Demonstrate that it provides FIFO fairness (bounded waiting).
+6. Compare spinlocks and mutexes. Write a benchmark that measures the performance of each for a critical section that takes (a) 10ns, (b) 10μs, (c) 10ms.
 
-### Challenge Problem
+### Advanced
 
-1. Implement a lock-free stack using CAS. The stack supports `push(value)` and `pop()` operations. Multiple threads must be able to operate concurrently without locks. Demonstrate correctness under contention using a test with 10 threads performing 1000 operations each.
+7. Implement a lock-free stack using compare-and-swap (CAS). The stack should support `push()` and `pop()` without locks. Handle the ABA problem.
+8. The **Dekker algorithm** is another software-based two-process mutual exclusion solution from 1965. Implement it, prove its correctness, and compare it to Peterson's solution.
+9. Implement a **reader-writer lock** using semaphores. Multiple readers should be able to access the shared data simultaneously, but writers must have exclusive access. Show that readers can starve writers in your implementation, then fix it.

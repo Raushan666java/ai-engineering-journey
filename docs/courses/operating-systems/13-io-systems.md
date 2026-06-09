@@ -1,191 +1,481 @@
-# Chapter 13 — I/O Systems
+# Chapter 13: I/O Systems
 
 ## Learning Objectives
 
-1. Describe I/O hardware components: ports, buses, controllers.
-2. Compare programmed I/O, interrupt-driven I/O, and DMA.
-3. Explain the layered I/O software architecture.
-4. Understand interrupt handling and the interrupt vector.
-5. Analyse the role of device drivers in the OS.
+- Describe I/O hardware components: ports, buses, controllers, and devices
+- Compare programmed I/O, interrupt-driven I/O, and DMA
+- Explain the interrupt handling sequence in a modern OS
+- Design the kernel I/O subsystem: buffering, caching, spooling, error handling
+- Describe the device driver interface and the I/O request life cycle
+- Understand the performance implications of different I/O models
 
-## 13.1 I/O Hardware
+## Theory
 
-### 13.1.1 Ports and Buses
+### I/O Hardware
 
-A device connects to the computer via a **port** (a connection point) or a **bus** (a shared set of wires and protocols). Common buses:
+I/O devices vary enormously in function, but they share common hardware interfaces.
 
-- **PCI Express (PCIe)**: A high-speed serial bus connecting CPU/memory to peripherals (GPU, NVMe SSD, network cards). Uses lanes; x16 provides 32 GB/s in PCIe 4.0.
-- **SATA**: Serial bus for HDDs and SATA SSDs, up to 6 Gbps (SATA 3.0).
-- **NVMe**: Direct connection to PCIe for SSDs, bypassing the SATA protocol. Low latency, high queue depth.
+#### Device Types
 
-### 13.1.2 Device Controllers
+| Category | Examples | Data Rate | Interface |
+|----------|----------|-----------|-----------|
+| Character | Keyboard, mouse, serial ports | 10–1000 B/s | Interrupt-driven |
+| Block | Disk, SSD, USB storage | 50–5000 MB/s | DMA, block commands |
+| Network | Ethernet, Wi-Fi | 1–100 Gb/s | DMA, packet-oriented |
 
-A **device controller** is electronic circuitry that operates the physical device. It has local buffer storage and a set of registers (control, status, data). The OS communicates with the controller by reading and writing these registers.
+#### Communication with Devices
 
-Registers may be accessed via:
+Three fundamental approaches for the CPU to communicate with I/O devices:
 
-- **Memory-mapped I/O**: Device registers appear in the CPU's memory address space. Reads and writes to those addresses are intercepted by the hardware and routed to the device.
-- **Port-mapped I/O (I/O ports)**: Special CPU instructions (`IN`, `OUT` on x86) address the device via a separate I/O address space.
+1. **Port-mapped I/O**: Special CPU instructions (`IN`, `OUT` on x86) read/write device registers
+2. **Memory-mapped I/O**: Device registers appear in the memory address space; regular load/store instructions access them
+3. **Hybrid**: Some devices use port I/O for control and memory-mapped for data
 
-### 13.1.3 Polling
-
-The host repeatedly checks the device's status register to determine whether it is ready to transfer data.
-
-```c
-// Polling loop for reading a byte from a device
-while ((inb(STATUS_PORT) & BUSY) != 0)
-    ; // wait
-byte = inb(DATA_PORT);
+```
+Memory-mapped I/O:
+CPU Address Space:
+┌──────────────────────┐
+│ RAM                   │
+├──────────────────────┤
+│ Device registers      │  ← Reading/writing here
+│ (Video RAM, NIC,     │     communicates with device
+│  disk controller)     │
+└──────────────────────┘
 ```
 
-Polling is simple but wastes CPU cycles. If the device is almost always ready, polling is acceptable; otherwise, interrupt-driven I/O is preferred.
+#### Polling vs Interrupts
 
-### 13.1.4 Interrupts
-
-When a device needs attention (data available, operation complete, error), it asserts an interrupt signal on the CPU's interrupt request line. The CPU finishes the current instruction, saves state, and jumps to an **interrupt handler** (determined by the interrupt vector — a table mapping interrupt numbers to handler addresses).
-
-On x86, the Interrupt Descriptor Table (IDT) stores up to 256 interrupt gate entries. The Programmable Interrupt Controller (PIC) or Advanced PIC (APIC) manages prioritisation and delivery.
-
-**Interrupt-driven I/O sequence**:
-
-1. Application issues a `read()` system call.
-2. The device driver starts the device read and returns.
-3. The process is blocked (yields the CPU).
-4. When the device completes the read, it asserts an interrupt.
-5. The interrupt handler copies data from device registers to memory and wakes the waiting process.
-6. The scheduler continues the process, which now has the requested data.
-
-### 13.1.5 Direct Memory Access (DMA)
-
-Polling and interrupt-driven I/O both require the CPU to transfer each byte between the device and memory. DMA gives the device controller direct access to system memory, freeing the CPU.
-
-**DMA operation**:
-
-1. The OS sets up a DMA transfer: provides the buffer address, transfer size, and device command.
-2. The DMA controller transfers data directly between the device and memory.
-3. When the transfer completes, the DMA controller raises a single interrupt.
-
-DMA is essential for high-throughput devices like disk controllers and network interfaces. Without DMA, every packet would require a CPU copy.
+**Polling**: The CPU repeatedly checks a device's status register. Simple but wasteful.
 
 ```c
-// Conceptual DMA setup (simplified)
-struct dma_descriptor {
-    void *buffer_addr;
-    size_t count;
-    int device_id;
-    int direction; // READ or WRITE
-};
-
-void start_dma(struct dma_descriptor *desc) {
-    // Program the DMA controller
-    outl(desc->buffer_addr, DMA_ADDR_REG);
-    outl(desc->count, DMA_COUNT_REG);
-    outb(desc->direction, DMA_CMD_REG);
-    // DMA proceeds autonomously
+// Polling loop — CPU spins until device is ready
+while (!(status_register & DEVICE_READY)) {
+    // Busy wait — CPU does nothing useful
 }
+data = data_register;  // Read data from device
 ```
 
-## 13.2 I/O Software Layers
+**Interrupts**: The device notifies the CPU when it needs attention. More efficient — the CPU can do other work.
 
-I/O software is organised in layers to provide device independence and modularity.
-
-### 13.2.1 User-Level I/O Library
-
-Provides standard functions (`printf`, `scanf`, `fread`, `fwrite`, `connect`, `send`) that invoke system calls on behalf of the application. The C standard library (`libc`) provides buffering (e.g., stdio's `setvbuf`).
-
-### 13.2.2 Device-Independent OS Layer
-
-Provides common I/O services that apply across all devices:
-
-- Device naming (e.g., `/dev/sda`).
-- Protection (access checks).
-- Blocking vs. non-blocking I/O.
-- Buffering and caching.
-- Error handling (retry logic).
-- Allocation and deallocation of dedicated devices.
-
-### 13.2.3 Device Driver
-
-A **device driver** is a kernel module that translates OS-generic I/O requests into device-specific register operations. The driver is device-specific but interfaces with the OS through a standard interface.
-
-Block device driver interface (Linux):
-
-```c
-static struct block_device_operations mydrv_ops = {
-    .open = mydrv_open,
-    .release = mydrv_release,
-    .submit_bio = mydrv_submit_bio,
-};
+```
+CPU executes user process
+         │
+    ┌────┴────┐
+    │         │
+    ↓         │ (interrupt occurs)
+Device ──────→│ CPU saves state
+signals       │ Load interrupt handler
+              │ Handle interrupt
+              │ Restore state
+              │ Resume user process
 ```
 
-The driver must handle:
+#### DMA (Direct Memory Access)
 
-- Initialisation (probe the device, allocate resources).
-- I/O requests (start, complete, timeout).
-- Power management (suspend, resume).
-- Interrupt handling.
+For block transfers, interrupt-driven I/O is still wasteful — the CPU would have to copy every byte from the device register to memory.
 
-### 13.2.4 Interrupt Handler
+**DMA** solves this: a specialized controller transfers data directly between device and memory without CPU involvement.
 
-The lowest layer responds to device interrupts. It must run quickly — typically it acknowledges the interrupt, copies a minimal amount of data, and schedules a **bottom half** (Linux tasklet, workqueue) for heavyweight processing deferred to a safer context.
+```
+Without DMA:
+  CPU: for each byte: read from device register, write to memory
+  CPU is occupied for the entire transfer
+
+With DMA:
+  1. CPU tells DMA controller: "transfer N bytes from device to memory address X"
+  2. DMA controller handles the transfer
+  3. DMA controller interrupts CPU when done
+  4. CPU is free during the transfer!
+```
+
+```
+DMA Transfer:
+┌─────┐  request bus  ┌──────────────────┐
+│ CPU │◄──────────────│ DMA Controller    │
+│     │  grant bus    │                   │
+└─────┘   │          │ Registers:        │
+          │          │  source addr      │
+          │          │  dest addr        │
+          │          │  byte count       │
+          │          └────────┬──────────┘
+          │                   │
+          │    ┌──────────────┼──────────────┐
+          │    │  Read from   │  Write to    │
+          │    │  Device      │  Memory      │
+          │    │              │              │
+          │    ↓              ↓              │
+          │  ┌─────┐      ┌────────┐        │
+          │  │Device│      │ Memory │        │
+          │  └─────┘      └────────┘        │
+```
+
+### Kernel I/O Subsystem
+
+The kernel provides a range of services to manage I/O.
+
+#### I/O Scheduling
+
+The kernel maintains a queue of pending I/O requests for each device. The scheduler reorders requests to improve performance (disk scheduling from Chapter 12).
+
+```
+Request Queue for /dev/sda:
+┌────┬────┬────┬────┬────┬────┐
+│ R1 │ R2 │ R3 │ R4 │ R5 │ R6 │  ← Rearranged by scheduler
+└────┴────┴────┴────┴────┴────┘
+  ↓
+Device Driver → Disk
+```
+
+#### Buffering
+
+A **buffer** is a memory region that holds data while it is being transferred between two devices or between a device and an application.
+
+**Why buffer?**
+1. **Speed mismatch**: Keyboard input is slow; CPU is fast. Buffer accumulates keystrokes.
+2. **Data transfer size**: Network packets may be small; application expects larger chunks.
+3. **Copy semantics**: Data written by an application is copied to a kernel buffer; the application can then modify its buffer without affecting the I/O.
+
+```
+Application space:    write(fd, buf, 1024)
+                           │
+Kernel buffer:           [ copy ]
+                           │
+Device buffer:           [   ] → Disk
+```
+
+**Double buffering**: Two buffers are used. While one is being filled, the other is being drained. Eliminates waiting.
+
+```
+Buffer A:   [ being read from disk → ]  ← application reads from
+Buffer B:   [ ← application writes to ]  ← disk fills this next
+
+When A is consumed and B is filled, they swap roles.
+```
+
+#### Caching
+
+A **cache** holds copies of frequently accessed data for faster access. The difference from buffering:
+
+- A buffer holds data **in transit** (temporary storage)
+- A cache holds data that might be **reused** (faster access on next use)
+
+The **page cache** (Chapter 9) caches file data. The **buffer cache** caches disk blocks. Linux unifies these into the **page cache**.
+
+#### Spooling
+
+A **spool** (Simultaneous Peripheral Operations On-Line) is a buffer that holds output for a device that cannot serve interleaved requests.
+
+**Example**: Printing. Without spooling, if two applications try to print simultaneously, their output would interleave. A **print spooler** serializes requests:
+
+```
+Application 1: write to printer → spool file job001.pdf
+Application 2: write to printer → spool file job002.pdf
+
+Print daemon:
+  {spool files} → printer (one at a time)
+```
+
+#### Error Handling
+
+I/O errors can occur at many levels. The kernel I/O subsystem layers error handling:
+
+- **Transient errors**: Retry the operation (bad disk sector? try again)
+- **Persistent errors**: Return error code to application
+- **Fatal errors**: Panic or halt the system
 
 ```c
-// Simplified interrupt handler
-irqreturn_t mydrv_interrupt(int irq, void *dev_id) {
-    struct my_device *dev = dev_id;
-    
-    // Acknowledge interrupt to the device
-    writeb(ACK, dev->ioaddr + STATUS_REG);
-    
-    if (dev->dma_in_progress) {
-        // DMA completed; wake waiting process
-        dev->dma_in_progress = 0;
-        complete(&dev->dma_done);
+// I/O system call with error handling
+ssize_t bytes = read(fd, buffer, sizeof(buffer));
+if (bytes < 0) {
+    switch (errno) {
+        case EAGAIN:   // Non-blocking, try again
+        case EINTR:    // Interrupted by signal, try again
+        case EIO:      // Hardware error
+        case ENOSPC:   // No space on device
+        case EBADF:    // Bad file descriptor
     }
-    
-    return IRQ_HANDLED;
 }
 ```
 
-## 13.3 Block Devices vs. Character Devices
+### Device Drivers
 
-- **Block devices** (disks): Random-access, buffered, block-addressable (sectors). The kernel caches block device data in the page cache and the buffer cache.
-- **Character devices** (keyboard, serial port): Sequential, unbuffered, stream-of-bytes. Each read or write goes directly to the device.
+A **device driver** is kernel code that understands the specifics of a particular hardware device. The driver presents a standard interface to the kernel.
 
-## 13.4 Synchronous vs. Asynchronous I/O
+```
+Application
+    ↓  (system calls)
+Kernel I/O Subsystem
+    ↓  (block/char/network interface)
+Device Driver  ── The translation layer
+    ↓  (device-specific commands)
+Device Controller
+    ↓  (electrical signals)
+Hardware Device
+```
 
-- **Synchronous (blocking) I/O**: The system call blocks the process until the I/O completes. Simple programming model but may underutilise the CPU.
-- **Asynchronous (non-blocking) I/O**: The system call returns immediately; the process checks for completion later or receives a signal/callback. The POSIX AIO interface (`aio_read`, `aio_write`) and Linux `io_uring` support asynchronous I/O.
+The driver provides operations like:
+- `open(device)`: Initialize the device
+- `read(device, buf, count)`: Read data from device
+- `write(device, buf, count)`: Write data to device
+- `ioctl(device, command, arg)`: Device-specific control operations
 
-**io_uring** (Linux 5.1+): A shared ring buffer between user space and kernel for submission and completion of I/O operations. Eliminates the overhead of per-operation system calls, achieving millions of IOPS.
+#### Device Driver Lifecycle
 
-## 13.5 I/O Buffering
+1. **Initialization**: Driver registers itself with the kernel (in Linux: module init)
+2. **Device detection**: Find and initialize device hardware
+3. **Operation**: Service requests from the kernel (read, write, ioctl)
+4. **Interrupt handling**: Respond to device interrupts
+5. **Cleanup**: Release resources when driver is unloaded
 
-- **Single buffer**: One kernel buffer; data is copied from device to kernel buffer, then to user buffer.
-- **Double buffering**: Two kernel buffers; one is filled while the other is drained to user space.
-- **Circular buffer**: Multiple buffers in a ring; producer (device) writes to the current buffer; consumer (process) reads from the oldest filled buffer.
-- **Caching**: Data read from a device is kept in memory (page cache) for future accesses, reducing or eliminating repeated device I/O.
+```c
+// Simplified Linux block device driver structure
+// (not actual code — illustrates the pattern)
+
+#include <linux/module.h>
+#include <linux/blkdev.h>
+
+static struct block_device_operations my_driver_ops = {
+    .owner   = THIS_MODULE,
+    .open    = my_open,
+    .release = my_release,
+    .ioctl   = my_ioctl,
+};
+
+static int __init my_driver_init(void) {
+    // Allocate major device number
+    // Initialize hardware
+    // Register with the block layer
+    printk(KERN_INFO "My driver loaded\n");
+    return 0;
+}
+
+static void __exit my_driver_exit(void) {
+    // Unregister, release resources
+    printk(KERN_INFO "My driver unloaded\n");
+}
+
+module_init(my_driver_init);
+module_exit(my_driver_exit);
+```
+
+### STREAMS (System V)
+
+STREAMS provide a framework for building character I/O as a pipeline of processing modules. Data flows through the stream, passing through each module.
+
+```
+Application
+    ↓
+Stream Head  ── Interface to user space
+    ↓
+Module 1     ── Line discipline (e.g., terminal processing)
+    ↓
+Module 2     ── Protocol processing
+    ↓
+Driver        ── Device hardware interface
+```
+
+Used in System V Unix for networking and terminal I/O. Linux does not use STREAMS (uses different architecture).
+
+### I/O Models
+
+| Model | Description | Pros | Cons |
+|-------|-------------|------|------|
+| **Blocking I/O** | Process sleeps until I/O completes | Simple | Process is blocked |
+| **Non-blocking I/O** | `read()` returns immediately with `EAGAIN` | CPU can do other work | Must poll or use event-driven |
+| **I/O multiplexing** | `select()` / `poll()` / `epoll()` — wait on multiple fds | Single thread manages many I/Os | System call overhead |
+| **Signal-driven I/O** | SIGIO when device is ready | Asynchronous notification | Signal handling complexity |
+| **Asynchronous I/O** | `aio_read()` — initiates I/O, callback on completion | True parallelism | Complex API |
+
+#### Non-Blocking I/O Example
+
+```c
+#include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
+
+int main() {
+    int fd = open("/dev/tty", O_RDONLY | O_NONBLOCK);
+    if (fd < 0) {
+        perror("open");
+        return 1;
+    }
+
+    char buffer[256];
+    ssize_t n;
+
+    while (1) {
+        n = read(fd, buffer, sizeof(buffer) - 1);
+        if (n > 0) {
+            buffer[n] = '\0';
+            printf("Got: %s", buffer);
+            break;
+        } else if (n == 0) {
+            printf("EOF\n");
+            break;
+        } else if (errno == EAGAIN) {
+            printf("No input yet — doing other work...\n");
+            sleep(1);  // In a real program, do something useful here
+        } else {
+            perror("read");
+            break;
+        }
+    }
+
+    close(fd);
+    return 0;
+}
+```
+
+#### I/O Multiplexing with epoll
+
+```c
+#include <stdio.h>
+#include <sys/epoll.h>
+#include <fcntl.h>
+#include <unistd.h>
+
+#define MAX_EVENTS 10
+
+int main() {
+    int epoll_fd = epoll_create1(0);
+    if (epoll_fd < 0) {
+        perror("epoll_create");
+        return 1;
+    }
+
+    struct epoll_event event;
+    event.events = EPOLLIN;  // Monitor for readable
+    event.data.fd = STDIN_FILENO;
+
+    if (epoll_ctl(epoll_fd, EPOLL_CTL_ADD, STDIN_FILENO, &event) < 0) {
+        perror("epoll_ctl");
+        return 1;
+    }
+
+    struct epoll_event events[MAX_EVENTS];
+
+    printf("Waiting for input (5 second timeout)...\n");
+
+    int nfds = epoll_wait(epoll_fd, events, MAX_EVENTS, 5000);
+
+    if (nfds < 0) {
+        perror("epoll_wait");
+        return 1;
+    } else if (nfds == 0) {
+        printf("Timeout — no input received\n");
+    } else {
+        printf("Input available on fd %d!\n", events[0].data.fd);
+    }
+
+    close(epoll_fd);
+    return 0;
+}
+```
+
+## Examples
+
+### Example 1: Character Device — Reading Keyboard Input
+
+```c
+#include <stdio.h>
+#include <termios.h>
+#include <unistd.h>
+
+int main() {
+    struct termios old, new;
+
+    // Get current terminal settings
+    tcgetattr(STDIN_FILENO, &old);
+
+    // Turn off canonical mode and echo
+    new = old;
+    new.c_lflag &= ~(ICANON | ECHO);
+    tcsetattr(STDIN_FILENO, TCSANOW, &new);
+
+    printf("Type characters (press 'q' to quit):\n");
+
+    char c;
+    while (read(STDIN_FILENO, &c, 1) == 1) {
+        if (c == 'q') break;
+        printf("You pressed: '%c' (0x%02x)\n", c, c);
+    }
+
+    // Restore terminal settings
+    tcsetattr(STDIN_FILENO, TCSANOW, &old);
+    return 0;
+}
+```
+
+### Example 2: Measuring I/O Performance
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/time.h>
+
+double get_time() {
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    return tv.tv_sec + tv.tv_usec / 1000000.0;
+}
+
+int main() {
+    int fd = open("test.dat", O_CREAT | O_WRONLY | O_TRUNC | O_SYNC, 0644);
+    if (fd < 0) { perror("open"); return 1; }
+
+    int block_size = 4096;
+    int num_blocks = 256;  // 1 MB total
+    char *buffer = malloc(block_size);
+
+    // Measure write performance
+    double start = get_time();
+    for (int i = 0; i < num_blocks; i++) {
+        write(fd, buffer, block_size);
+    }
+    double elapsed = get_time() - start;
+    double throughput = (num_blocks * block_size) / (1024.0 * 1024.0) / elapsed;
+
+    printf("Wrote %d blocks of %d bytes (O_SYNC)\n", num_blocks, block_size);
+    printf("Time: %.3f seconds\n", elapsed);
+    printf("Throughput: %.2f MB/s\n", throughput);
+
+    free(buffer);
+    close(fd);
+    unlink("test.dat");
+    return 0;
+}
+```
 
 ## Summary
 
-I/O systems bridge the gap between physical devices and software abstractions. Polling wastes CPU; interrupts provide responsiveness; DMA enables high throughput without CPU copying. The layered I/O architecture isolates device-specific code in drivers while providing generic interfaces for the rest of the OS. Modern I/O frameworks like io_uring further reduce overhead to near-zero in the fast path.
+- I/O devices communicate via ports, memory-mapped registers, or a hybrid approach
+- Polling wastes CPU; interrupts allow overlap of I/O and computation
+- DMA transfers data directly between device and memory without CPU involvement
+- The kernel I/O subsystem provides scheduling, buffering, caching, spooling, and error handling
+- Device drivers act as translators between the kernel and hardware
+- Five I/O models: blocking, non-blocking, multiplexing, signal-driven, asynchronous
+- `epoll` (Linux) enables efficient I/O multiplexing for thousands of connections
+- The page cache unifies file caching with virtual memory management
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What is the difference between memory-mapped I/O and port-mapped I/O?
-2. Describe the sequence of events in interrupt-driven I/O.
-3. Why is DMA necessary for high-performance devices?
-4. What are the four layers of I/O software?
-5. What advantage does asynchronous I/O provide over synchronous I/O?
+1. What is DMA and why is it important for block I/O? Walk through a DMA transfer.
+2. What is the difference between buffering and caching? Give an example of each.
+3. Explain the difference between blocking and non-blocking I/O. When would you use each?
 
-### Application Problems
+### Intermediate
 
-1. A network device generates 50,000 interrupts per second. The interrupt handler takes 2 microseconds. What fraction of CPU time is spent handling interrupts? How would DMA and interrupt coalescing reduce this overhead?
-2. A disk with DMA transfers 64 KB blocks. DMA setup takes 5 microseconds; the DMA transfer runs at 800 MB/s. Compare the CPU overhead of DMA-based I/O versus programmed I/O (byte-by-byte with polling at 100 ns per byte).
-3. A device uses double buffering with two 1 KB kernel buffers. The device produces data at 500 KB/s. The process consumes data at 200 KB/s. Will the system ever lose data? Explain.
+4. Write a program that measures the overhead of system calls. Call `getpid()` in a loop 1 million times and measure total time. Compare with a simple function call. What does this tell you about the cost of kernel transitions?
+5. Implement a simple I/O scheduler that takes a sequence of (arrival_time, block_number) requests and schedules them using FCFS and a deadline-aware approach (prioritize requests with approaching deadlines).
+6. Explain spooling. Implement a simple print spooler using a directory for spool files. Each "print" creates a file; the spooler daemon reads and "prints" (writes to stdout) files in order.
 
-### Challenge Problem
+### Advanced
 
-1. Implement a character device driver (as a Linux kernel module) that creates a `/dev/pingpong` device. Reading from the device returns the string "pong". Writing to the device stores the written data in a kernel buffer; reading it back returns the stored data. Include `open`, `release`, `read`, and `write` operations. Test the module with userspace `echo` and `cat` commands.
+7. Write a benchmark comparing `read()/write()` system calls with memory-mapped I/O (`mmap()`). Create a 512 MB file, then measure the time to sum every integer in the file using each method. Explain the results.
+8. Research and implement an **epoll-based TCP echo server**. The server should handle 1000+ concurrent connections using a single thread. Measure the latency and throughput and compare with a multi-threaded blocking I/O server.
+9. Write a Linux kernel module that creates a simple character device. The device should maintain a circular buffer; `read()` removes bytes from the buffer and `write()` adds bytes. Test it with user-space `cat` and `echo` commands.

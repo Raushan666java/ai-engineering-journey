@@ -2,165 +2,222 @@
 
 ## Learning Objectives
 
-By the end of this chapter, you should be able to: define time complexity classes $P$ and $NP$ formally; analyze the asymptotic running time of algorithms using Big-O notation; perform polynomial-time reductions between problems; state and outline the proof of the Cook-Levin theorem; prove NP-completeness of classic problems (SAT, 3-SAT, CLIQUE, VERTEX-COVER, HAMILTONIAN-PATH, SUBSET-SUM); distinguish between $P$, $NP$, and $NP$-complete.
+- Define time complexity classes P and NP.
+- Analyze the time complexity of algorithms using big-O notation.
+- Define polynomial-time reductions.
+- State and understand the Cook-Levin theorem.
+- Prove NP-completeness for classic problems.
+- Distinguish between P, NP, and NP-complete.
+- Understand the significance of the P vs NP question.
 
 ## Theory
 
-### Time Complexity
+### 12.1 Time Complexity
 
-Let $M$ be a deterministic TM that halts on all inputs. The **running time** of $M$ is the function $f : \mathbb{N} \to \mathbb{N}$ where $f(n)$ is the maximum number of steps $M$ takes on any input of length $n$.
+The **time complexity** of a Turing machine M is the function t: ℕ → ℕ where t(n) is the maximum number of steps M takes on any input of length n.
 
-**Definition**: $TIME(f(n)) = \{ L \mid L \text{ is decided by an } O(f(n)) \text{ time TM} \}$.
+For a **multitape TM**, the time complexity is defined similarly, but one step may involve all heads simultaneously.
 
-**Big-O Notation**: $f(n) = O(g(n))$ if there exist constants $c, n_0 > 0$ such that $f(n) \leq c \cdot g(n)$ for all $n \geq n_0$. This suppresses constant factors and lower-order terms, allowing machine-independent analysis.
+**Big-O notation:** f(n) = O(g(n)) if there exist constants c > 0 and n₀ such that for all n ≥ n₀, f(n) ≤ c·g(n).
 
-### The Class P
+Common complexity classes: O(1), O(log n), O(n), O(n log n), O(n²), O(2ⁿ), O(n!).
 
-$$P = \bigcup_{k \geq 0} TIME(n^k)$$
+### 12.2 The Class P
 
-$P$ is the class of languages decidable in polynomial time on a deterministic TM. Problems in $P$ are considered **tractable** (feasibly solvable).
+**P = ∪_{k ≥ 0} TIME(nᵏ)**
 
-**Examples of problems in $P$**:
-- Shortest paths in graphs (Dijkstra's algorithm: $O(m \log n)$)
-- Minimum spanning tree (Prim's or Kruskal's: $O(m \log n)$)
-- Context-free grammar membership (CYK: $O(n^3)$)
-- Linear programming (Khachiyan's ellipsoid: $O(n^4 L)$)
-- Matching in bipartite graphs
-- Primality testing (AKS: $O(n^6)$)
+P is the class of languages decidable in **polynomial time** on a deterministic Turing machine.
 
-The **polynomial-time Church-Turing thesis** refines the classical thesis: the class $P$ is robust across all "reasonable" deterministic models of computation (single/multi-tape TMs, RAM machines) that differ by at most a polynomial factor.
+**Key principles:**
+- P represents problems that are "efficiently solvable" or "tractable."
+- The exact polynomial degree matters less than the classification as polynomial.
+- Any polynomial-time algorithm on a reasonable model can be simulated in polynomial time on a TM (with at most polynomial slowdown).
 
-### The Class NP
+**Problems in P:**
+- Path existence in graphs (DFS/BFS).
+- Sorting a list (O(n log n)).
+- Matrix multiplication (O(n³)).
+- Linear programming (O(n³·L)).
+- GCD computation (Euclidean algorithm).
+- Context-free language membership (CYK algorithm).
+- DFA equivalence.
 
-$NP$ is the class of languages that can be **verified** in polynomial time by a deterministic TM, given a certificate (witness) of polynomial length.
+### 12.3 The Class NP
 
-**Definition (Verifier-based)**: $L \in NP$ if there exists a polynomial-time TM $V$ (the verifier) and a constant $k$ such that:
+**NP = ∪_{k ≥ 0} NTIME(nᵏ)**
 
-$$x \in L \iff \exists y \in \Sigma^* \text{ with } |y| \leq |x|^k \text{ and } V(x, y) \text{ accepts}$$
+NP is the class of languages decidable in polynomial time on a **nondeterministic** Turing machine.
 
-**Definition (Nondeterministic)**: $L \in NP$ if there exists a nondeterministic TM $N$ running in polynomial time that accepts $L$. The two definitions are equivalent: nondeterministic branches represent guesses of the certificate.
+**Equivalent characterization:** A language L is in NP if there exists a **verifier** V such that:
+- V is a polynomial-time deterministic TM.
+- For any string x ∈ L, there exists a proof y (|y| ≤ p(|x|) for some polynomial p) such that V accepts ⟨x, y⟩.
+- For any x ∉ L, V rejects ⟨x, y⟩ for all y.
 
-**Examples of problems in $NP$**:
-- SAT: given a Boolean formula, is there a satisfying assignment?
-- CLIQUE: given a graph $G$ and $k$, does $G$ contain a $k$-clique?
-- VERTEX-COVER: given a graph $G$ and $k$, is there a vertex cover of size $k$?
-- SUBSET-SUM: given a set of integers and a target, is there a subset summing to the target?
-- HAMILTONIAN-CYCLE: does a graph contain a Hamiltonian cycle?
+**Intuition:** NP = problems where solutions can be **verified** in polynomial time. The certificate y is the "solution" to the problem; checking it is efficient.
 
-### $P$ vs $NP$
+**Problems in NP:**
+- SAT (Boolean satisfiability): given a formula, does a satisfying assignment exist?
+- TSP (Traveling Salesman Problem): is there a tour of length ≤ K?
+- CLIQUE: does a graph contain a K-clique?
+- SUBSET-SUM: does a subset of numbers sum to exactly T?
+- VERTEX-COVER: is there a vertex cover of size ≤ K?
 
-The central open question: Is $P = NP$? That is, can every problem whose solution can be verified quickly also be solved quickly? It is widely believed that $P \neq NP$, but no proof exists.
+**P vs NP:** The most famous open problem in computer science. Does P = NP?
+- If P = NP: all efficiently verifiable problems are efficiently solvable.
+- If P ≠ NP: some problems are inherently hard — their solutions can be verified quickly but not found quickly.
 
-Note: $P \subseteq NP$ trivially (if we can solve it, we can verify it). The question is whether the containment is strict.
+Most researchers believe P ≠ NP.
 
-### Polynomial-Time Reductions
+### 12.4 Polynomial-Time Reductions
 
-$A$ is **polynomial-time reducible** to $B$, written $A \leq_p B$, if there exists a function $f$ computable in polynomial time such that:
+A language A is **polynomial-time reducible** to B (written A ≤_P B) if there exists a function f computable in polynomial time such that w ∈ A iff f(w) ∈ B.
 
-$$w \in A \iff f(w) \in B$$
+**Properties:**
+- If A ≤_P B and B ∈ P, then A ∈ P.
+- If A ≤_P B and A ∉ P, then B ∉ P.
+- Polynomial-time reductions are **transitive**: if A ≤_P B and B ≤_P C, then A ≤_P C.
 
-Properties:
-- If $B \in P$ and $A \leq_p B$, then $A \in P$.
-- If $B \in NP$ and $A \leq_p B$, then $A \in NP$.
-- $\leq_p$ is transitive.
+### 12.5 NP-Completeness
 
-### NP-Completeness
+A language B is **NP-complete** if:
+1. B ∈ NP.
+2. For every A ∈ NP, A ≤_P B (B is NP-hard).
 
-**Definition**: $L$ is **NP-complete** if:
-1. $L \in NP$
-2. For every $A \in NP$, $A \leq_p L$
+**Significance:** If any NP-complete problem is in P, then P = NP. If any NP-complete problem is not in P, then no NP-complete problem is in P.
 
-If any NP-complete problem is in $P$, then $P = NP$.
+### 12.6 Cook-Levin Theorem
 
-### The Cook-Levin Theorem
+**Theorem (Cook 1971, Levin 1973):** SAT is NP-complete.
 
-**Theorem 12.1 (Cook-Levin)**: SAT is NP-complete.
+**Proof sketch:**
 
-**Proof sketch**: Let $L \in NP$, so there is a nondeterministic TM $N$ running in $n^k$ time that recognizes $L$. Given an input $w$ of length $n$, the computation of $N$ on $w$ can be described by a tableau of size $n^k \times n^k$ (rows = configurations, columns = tape cells).
+1. **SAT ∈ NP:** Given a formula and an assignment, verify in polynomial time.
+2. **SAT is NP-hard:** For any A ∈ NP with NTM N running in nᵏ time, construct a Boolean formula φ that is satisfiable iff N accepts w.
 
-Construct a Boolean formula $\phi$ that is satisfiable iff there exists an accepting computation of $N$ on $w$. The formula has variables for each cell $(i, j)$ of the tableau. It consists of conjunctions of clauses:
+The formula encodes:
+- **Cell states:** Variables x_{i,j,s} meaning "cell i,j contains symbol s." (i = time step, j = tape position.)
+- **Initial state:** φ_start encodes the initial configuration q₀ w.
+- **Valid transitions:** φ_move ensures each configuration follows from the previous via N's transition relation.
+- **Acceptance:** φ_accept ensures at least one configuration is accepting.
 
-1. **Cell constraints**: Each cell contains exactly one symbol.
-2. **Start configuration**: The first row represents $q_0 w$.
-3. **Acceptance**: The last row contains $q_{\text{accept}}$.
-4. **Transition constraints**: Each row follows from the previous by a legal nondeterministic TM move.
+The formula size is O(n²ᵏ), which is polynomial in n. A satisfying assignment corresponds to an accepting computation of N.
 
-The transition constraint is the core: it says that each $2 \times 3$ window of the tableau is locally consistent with $\delta$ of $N$. This is a local condition, expressible as a conjunction of small clauses.
+**Consequences:**
+- Thousands of problems have been proven NP-complete.
+- The first NP-complete problem enables a chain of reductions: SAT ≤_P 3SAT ≤_P CLIQUE ≤_P VERTEX-COVER ≤_P HAM-CYCLE ≤_P TSP, etc.
 
-The formula $\phi$ is polynomial in $n^k$, so the reduction runs in polynomial time. $\square$
+### 12.7 Proving NP-Completeness
 
-### Proving NP-Completeness
+To prove a problem B is NP-complete:
+1. **Show B ∈ NP:** Give a polynomial-time verifier.
+2. **Show B is NP-hard:** Choose a known NP-complete problem A and show A ≤_P B.
 
-To prove $B$ is NP-complete:
-1. Show $B \in NP$.
-2. Choose a known NP-complete problem $A$ and show $A \leq_p B$.
+**Standard NP-complete problems:**
+- **3SAT:** Boolean formulas in CNF with exactly 3 literals per clause.
+- **CLIQUE:** Does G contain a K-clique? (K ≤ |V|)
+- **VERTEX-COVER:** Does G have a vertex cover of size K?
+- **HAM-CYCLE/HAM-PATH:** Does G have a Hamiltonian cycle/path?
+- **TSP:** Does the complete graph have a tour of weight ≤ D?
+- **SUBSET-SUM:** Does a set of integers have a subset summing to T?
+- **PARTITION:** Can a multiset be partitioned into equal-sum subsets?
+- **BIN-PACKING:** Can items of given sizes fit into K bins of capacity C?
+- **GRAPH-COLORING (3-COLOR):** Is G 3-colorable?
 
-Common known NP-complete problems for reductions:
-- 3-SAT (each clause has exactly 3 literals)
-- CLIQUE (NP-complete via SAT reduction)
-- VERTEX-COVER (NP-complete via CLIQUE reduction)
-- HAMILTONIAN-PATH (NP-complete via 3SAT reduction)
-- SUBSET-SUM (NP-complete via 3SAT reduction)
-- GRAPH-3-COLORABILITY
+### 12.8 Beyond NP
+
+**NP-hard:** Problems to which every NP problem reduces (but may not be in NP). Includes:
+- The halting problem (much harder than NP).
+- All NP-complete problems.
+- Optimization versions of NP-complete problems.
+
+**co-NP:** Languages whose complements are in NP. Example: TAUTOLOGY = { φ | φ is true for all assignments } ∈ co-NP.
+
+**NPI (NP-Intermediate):** If P ≠ NP, there exist problems in NP that are neither in P nor NP-complete (Ladner's theorem). Candidates: Graph Isomorphism, Factoring.
 
 ## Examples
 
-### Example 1: SAT to 3-SAT
+### Example 12.1: Proving a Problem is in NP — CLIQUE
 
-Convert $(x_1 \lor x_2) \land (\overline{x_2} \lor x_3 \lor x_4 \lor x_5)$ to 3-CNF.
+CLIQUE = { ⟨G, K⟩ | G has a K-clique }.
 
-For the first clause (2 literals): $(x_1 \lor x_2 \lor y_1) \land (x_1 \lor x_2 \lor \overline{y_1})$.
-For the second clause (4 literals): $(\overline{x_2} \lor x_3 \lor y_2) \land (\overline{y_2} \lor x_4 \lor x_5)$.
+**Verifier:** Given input ⟨G, K⟩ and certificate (a set of K vertices V'):
+- Verify |V'| = K.
+- Verify that for every pair u, v ∈ V', (u, v) is an edge in G.
+- If all checks pass, accept; otherwise reject.
 
-The conversion uses auxiliary variables to split long clauses while preserving satisfiability.
+Runtime: O(K²) ⊆ O(|V|²) — polynomial. So CLIQUE ∈ NP.
 
-### Example 2: CLIQUE from 3-SAT
+### Example 12.2: 3SAT ≤_P CLIQUE
 
-Reduce $\phi = (x_1 \lor \overline{x_2} \lor x_3) \land (\overline{x_1} \lor x_2 \lor x_3)$ to CLIQUE.
+Given a 3CNF formula φ with k clauses, construct graph G:
+- Create 3 vertices per clause (one for each literal).
+- Connect vertices if they are in different clauses AND are not contradictory (not x and ¬x).
+- Set K = k (number of clauses).
 
-Create a graph with one vertex per literal occurrence. Connect vertices if they are in different clauses and are not contradictory ($x_i$ and $\overline{x_i}$).
+**Correctness:** φ is satisfiable iff there is a k-clique in G. A clique of size k picks one literal from each clause, all of which can be simultaneously true.
 
-For $\phi$, we have 6 vertices: $C_1: \{x_1, \overline{x_2}, x_3\}$, $C_2: \{\overline{x_1}, x_2, x_3\}$.
+Construction: O(k²·3²) = O(k²) — polynomial.
 
-Edges exist between non-contradictory vertices in different clauses:
-- $x_1$ connects to $x_2$, $x_3$ (not to $\overline{x_1}$)
-- $\overline{x_2}$ connects to $\overline{x_1}$, $x_2$? No — $\overline{x_2}$ does not connect to $x_2$ (contradictory). Connects to $\overline{x_1}$, $x_3$.
-- etc.
+### Example 12.3: VERTEX-COVER ≤_P CLIQUE (via complement)
 
-A 2-clique in this graph corresponds to a satisfying assignment (one vertex from each clause, no contradiction). $\phi$ is satisfiable iff there is a $k$-clique where $k = \#\text{clauses} = 2$.
+Given graph G = (V, E) and integer k, the complement graph Ḡ = (V, Ē) where Ē = { (u,v) | u ≠ v and (u,v) ∉ E }.
 
-### Example 3: Subset Sum
+**Key fact:** C is a vertex cover in G iff V − C is a clique in Ḡ.
 
-Given numbers $\{3, 5, 7, 9, 11\}$, target $T = 14$.
+So: G has a k-vertex-cover iff Ḡ has an (|V|−k)-clique.
 
-Is there a subset summing to 14? $3 + 11 = 14$, so yes. SUBSET-SUM is NP-complete, so in general no polynomial algorithm is known.
+This gives: VERTEX-COVER ≤_P CLIQUE.
+
+### Example 12.4: SAT ≤_P 3SAT
+
+Given SAT formula φ, convert to 3SAT φ':
+- Each clause in φ is replaced by a set of 3-clauses using auxiliary variables.
+- For a 1-literal clause (x): replace with (x ∨ x ∨ x).
+- For a 2-literal clause (x ∨ y): replace with (x ∨ y ∨ z) ∧ (x ∨ y ∨ ¬z) for fresh z.
+- For a k-literal clause (k > 3): introduce k-3 new variables to split into 3-clauses.
+
+The transformation is polynomial and preserves satisfiability.
+
+### Example 12.5: SUBSET-SUM is NP-Complete
+
+Given numbers a₁, …, aₙ and target T.
+
+**In NP:** Certificate is the subset. Verify sum = T.
+
+**NP-hardness:** Reduce 3SAT to SUBSET-SUM. For each variable, create two numbers (one for true, one for false). For each clause, create two "slack" numbers. The construction ensures a subset summing to T corresponds to a satisfying assignment (each clause's sum is satisfied by at least one literal).
 
 ## Summary
 
-- $P$ contains problems solvable in polynomial time.
-- $NP$ contains problems verifiable in polynomial time.
-- $P \stackrel{?}{=} NP$ is the central open question in computer science.
-- NP-complete problems are the hardest problems in NP; if any one is in $P$, then $P = NP$.
-- The Cook-Levin theorem established SAT as the first NP-complete problem.
-- Thousands of problems across computer science, operations research, and engineering are NP-complete.
-- Polynomial-time reductions preserve membership in $P$ and $NP$.
+- P = problems solvable in polynomial time on a DTM.
+- NP = problems verifiable in polynomial time = solvable in polynomial time on an NTM.
+- Polynomial-time reductions (≤_P) preserve polynomial-time solvability.
+- A problem is NP-complete if it's in NP and all NP problems reduce to it.
+- The Cook-Levin theorem proves SAT is NP-complete by encoding TM computations as Boolean formulas.
+- Thousands of NP-complete problems span computing, optimization, and mathematics.
+- P vs NP remains the most important open question in theoretical CS.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. Why is polynomial time considered efficient?
-2. Explain the two equivalent definitions of NP.
-3. What does it mean for a problem to be NP-complete? Why is this concept important?
-4. Why does the Cook-Levin theorem use a tableau to encode TM computations?
+1. Show that PATH (is there a path from s to t in a directed graph?) is in P.
+2. Show that COMPOSITE (is n composite?) is in NP.
+3. Show that P is closed under union, intersection, and complement.
+4. Explain why a polynomial-time reduction from A to B combined with B ∈ P implies A ∈ P.
+5. Classify: Sorting, TSP, Matrix multiplication, Graph connectivity — which are in P and which are in NP?
 
-### Application Problems
+### Intermediate
 
-5. Prove that VERTEX-COVER is NP-complete by reduction from CLIQUE.
-6. Prove that HAMILTONIAN-PATH is NP-complete by reduction from 3-SAT (outline the construction).
-7. Show that SUBSET-SUM is NP-complete by reduction from 3-SAT.
-8. Prove that if $P = NP$, then every NP-complete problem is in $P$.
+6. Prove that CLIQUE is NP-complete by reducing 3SAT to CLIQUE (construct the standard reduction).
+7. Prove that VERTEX-COVER is NP-complete.
+8. Show that HAM-CYCLE is NP-complete.
+9. Prove that SUBSET-SUM is NP-complete (reduce 3SAT to SUBSET-SUM).
+10. Show that if P = NP, then every polynomial-time verifiable problem has a polynomial-time algorithm.
 
-### Challenge Problem
+### Advanced
 
-9. Show that the **traveling salesman problem** (TSP) — given $n$ cities with pairwise distances and a budget $k$, is there a tour visiting all cities with total distance $\leq k$? — is NP-complete by reduction from HAMILTONIAN-CYCLE.
+11. Prove the Cook-Levin theorem: construct the formula φ for a nondeterministic TM and show it is satisfiable iff the TM accepts.
+12. Prove Ladner's theorem: if P ≠ NP, then there exists an NP-intermediate language.
+13. Show that GRAPH-ISOMORPHISM is in NP (and is a candidate for NP-intermediate status).
+14. Prove that the optimization version of TSP (find the shortest tour) is NP-hard.
+15. Show that if SAT ∈ P, then every NP problem has an algorithm running in O(nᵏ) time for some fixed k (the same polynomial degree for all problems).

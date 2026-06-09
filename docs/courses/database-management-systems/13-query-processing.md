@@ -1,91 +1,448 @@
-# Chapter 13 — Query Processing and Optimization
+# Chapter 13: Query Processing and Optimization
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) describe the stages of query processing; (2) compare selection algorithms and their costs; (3) compare join algorithms and their costs; (4) describe projection and sorting algorithms; (5) estimate query execution costs; and (6) explain heuristic and cost-based query optimization.
+- Trace the lifecycle of a SQL query from text to result
+- Explain how query parsing and validation works
+- Understand query optimization and cost-based estimation
+- Compare join algorithms: nested loop, hash join, merge join
+- Describe pipelining and materialization in query execution
+- Read and interpret query execution plans (EXPLAIN)
 
-## 13.1 Query Processing Pipeline
+## Theory
 
-Query processing transforms a high-level declarative query into an efficient execution plan. The pipeline consists of several stages. Parsing and translation converts the SQL text into an internal representation, typically a parse tree, and checks for syntactic and semantic correctness. The parser verifies that all referenced relations and attributes exist and that the user has appropriate privileges. The resulting parse tree is translated into a relational algebra expression.
+### 13.1 Query Processing Overview
 
-The query optimizer receives the relational algebra expression and produces an execution plan. The optimizer explores alternative evaluation strategies, estimates their costs, and selects the lowest-cost plan. The cost estimate considers disk I/O, CPU utilization, and network communication. The execution engine interprets the selected plan and produces the result.
+When a user submits a SQL query, the DBMS transforms it through several stages:
 
-## 13.2 Selection Algorithms
+```
+SQL Query Text
+    ↓
+[Parser] — Checks syntax, produces parse tree
+    ↓
+[Preprocessor] — Validates tables and columns, resolves views
+    ↓
+[Query Optimizer] — Generates alternative plans, estimates costs
+    ↓
+[Execution Engine] — Executes the chosen plan
+    ↓
+Result
+```
 
-Several algorithms exist for evaluating selection operations. A linear scan, or table scan, reads every block of the relation and tests the selection condition. The cost is the number of blocks in the relation. Linear scan is the baseline strategy and is optimal when no index exists or when the selection retrieves a large fraction of the relation.
+### 13.2 Parsing and Preprocessing
 
-An index scan uses an available index to retrieve qualifying tuples directly. For a primary index on a key attribute, a single equality condition costs approximately the height of the index tree plus one block access. For a non-key attribute, the cost may be higher because the index may yield multiple pointers. A clustering index reduces the cost of retrieving multiple tuples because consecutive data blocks are likely to be contiguous on disk.
+**Parsing:** The SQL text is tokenized into keywords, identifiers, operators, and literals. The parser builds a **parse tree** (or abstract syntax tree) representing the query structure.
 
-Conjunctive selection conditions can be evaluated using a composite index on multiple attributes, using one index to retrieve candidates and filtering the rest, or using bitmap intersection. Disjunctive conditions are more difficult to optimize and often require a full scan or the union of multiple index results.
+```sql
+SELECT e.name, d.dept_name
+FROM employees e
+JOIN departments d ON e.dept_id = d.dept_id
+WHERE e.salary > 50000;
+```
 
-## 13.3 Join Algorithms
+Parse tree (conceptual):
+```
+QUERY
+├── SELECT
+│   ├── e.name
+│   └── d.dept_name
+├── FROM
+│   ├── employees AS e
+│   └── departments AS d
+├── JOIN condition: e.dept_id = d.dept_id
+└── WHERE: e.salary > 50000
+```
 
-The nested-loop join is the simplest algorithm. For each tuple in the outer relation, scan the entire inner relation, testing the join condition. The cost in block accesses is nr blocks of outer plus nr times br, where nr is the number of tuples in the outer relation and br is the number of blocks in the inner relation. If the smaller relation is the outer, the cost reduces. The block nested-loop join improves on the basic algorithm by processing outer blocks rather than outer tuples. The cost becomes br plus br times bs divided by (M minus 2), where M is the number of available buffer blocks.
+**Preprocessing (Semantic Analysis):**
+- Validates that tables (`employees`, `departments`) exist
+- Validates that columns (`name`, `dept_name`, `salary`, `dept_id`) exist in those tables
+- Resolves view references to their underlying queries
+- Verifies data type compatibility in comparisons and joins
 
-The index nested-loop join uses an index on the join attribute of the inner relation. For each tuple in the outer relation, the index is probed to locate matching inner tuples. The cost includes scanning the outer relation plus, for each outer tuple, the cost of probing the index and retrieving matching inner tuples. This algorithm is effective when the inner relation has a low join-selectivity factor.
+### 13.3 Query Optimization
 
-The sort-merge join sorts both relations on the join attribute and then merges them in a single pass. The cost is dominated by the sorting cost: approximately (br times log base M-1 of br) plus (bs times log base M-1 of bs). After sorting, the merge pass reads both relations sequentially, which is efficient for large relations. Sort-merge join is particularly effective when the relations are already sorted on the join attribute, such as when the result of a previous operation is already sorted.
+The optimizer transforms the parse tree into an efficient **execution plan**. This is the most complex and important part of query processing.
 
-The hash join partitions both relations into buckets using a hash function on the join attribute. During the build phase, the smaller relation is partitioned and stored in memory. During the probe phase, the larger relation is partitioned using the same hash function, and each partition is compared with the corresponding in-memory partition. The hash join is typically the fastest join algorithm when sufficient memory is available. Grace hash join handles the case where memory is insufficient by recursively partitioning.
+**Relational Algebra Equivalences (used for rewriting):**
 
-## 13.4 Projection and Sorting
+```sql
+-- Original query
+SELECT * FROM employees WHERE salary > 50000 AND department = 'Engineering'
 
-Projection eliminates specified attributes and then removes duplicate tuples. Duplicate elimination can be accomplished by sorting, by hashing, or by using an index on the projection attributes. Sorting-based projection sorts the result on all projected attributes, then scans to remove adjacent duplicates. Hashing-based projection hashes each tuple and discards duplicates during the hash collision check.
+-- Equivalent forms:
+-- 1. σ_salary>50000(σ_dept='Eng'(employees))
+-- 2. σ_dept='Eng'(σ_salary>50000(employees))
+-- 3. σ_salary>50000 AND dept='Eng'(employees)
+```
 
-Sorting is a fundamental operation required by ORDER BY, GROUP BY, and sort-merge joins. External merge sort handles data that exceeds available memory. The algorithm has two phases. In the sorting phase, chunks of data that fit in memory are read, sorted in memory, and written back to disk as sorted runs. In the merge phase, the sorted runs are merged together. The number of passes required is log base M-1 of (br/M), where M is the number of buffer pages.
+The optimizer applies transformations:
 
-## 13.5 Cost Estimation
+- **Selection pushing:** Move selections closer to the tables they filter
+- **Join reordering:** Consider different join orders
+- **Projection pushing:** Reduce column width early
+- **View inlining:** Expand views into their base queries
 
-Query optimization relies on accurate cost estimates. The cost model typically counts disk block accesses as the dominant cost because I/O is the primary bottleneck. The optimizer needs statistical information about each relation: the number of tuples (nr), the number of blocks (br), the number of distinct values for each attribute, and the distribution of values.
+**Cost-Based Optimization:**
 
-The histogram is the most common representation of value distributions. An equi-width histogram divides the value range into equal intervals and records the count of tuples in each interval. An equi-depth histogram divides the value range into intervals such that each interval contains approximately the same number of tuples. Equi-depth histograms provide better accuracy for skewed distributions.
+The optimizer generates multiple alternative plans and estimates costs:
 
-Selectivity estimation predicts the fraction of tuples that satisfy a condition. For an equality condition, the selectivity is approximately one divided by the number of distinct values. For a range condition, the selectivity is based on the histogram. For a join condition, the selectivity is one over max(n_distinct(outer), n_distinct(inner)). These estimates are used to compute the cost of each candidate plan.
+```sql
+-- Different access methods for: SELECT * FROM employees WHERE id = 100
 
-## 13.6 Query Optimization
+-- Plan A: Sequential scan
+-- Cost: N pages (read all pages)
 
-Heuristic optimization applies transformation rules to produce a better plan without exhaustive cost estimation. Typical heuristics include performing selection and projection as early as possible, combining cascading selections and projections, and identifying common sub-expressions. Heuristics are fast and often produce good plans, but they may miss optimal plans that require counterintuitive orderings.
+-- Plan B: Index scan on PRIMARY KEY
+-- Cost: 3-4 B+ tree levels + 1 page read
+```
 
-Cost-based optimization enumerates alternative execution plans and selects the one with the lowest estimated cost. For a query with n relations joined, the number of possible join orders is the n-th Catalan number, approximately 4 to the power n divided by n to the 3/2. For n=10, this exceeds 17 million orders. Dynamic programming reduces the search space by exploiting the principle of optimality: the optimal way to join a subset of relations does not depend on how that subset is joined with the rest. The System R optimizer, developed at IBM, uses dynamic programming to explore join orders.
+**Cost Estimation Formula:**
+```
+Total Cost = CPU Cost + I/O Cost
+I/O Cost = Number of disk pages read × Cost per page
+CPU Cost = Number of tuples processed × Cost per tuple
+```
 
-The optimizer considers physical operators such as index scans, different join algorithms, and pipelining. Pipelining allows the result of one operator to be consumed incrementally by the next operator without materializing the entire intermediate result.
+The optimizer uses **statistics** from the system catalog:
 
-## 13.7 Materialized Views
+```sql
+-- PostgreSQL: View table statistics
+SELECT relname, reltuples, relpages FROM pg_class WHERE relname = 'employees';
 
-A materialized view is a view whose result is computed and stored physically, unlike a virtual view whose result is computed on demand. Materialized views accelerate queries by precomputing expensive joins and aggregations. The DBMS automatically rewrites queries to use materialized views when appropriate.
+-- Column statistics
+SELECT attname, n_distinct, most_common_vals, most_common_freqs
+FROM pg_stats WHERE tablename = 'employees';
+```
 
-The cost of materialized views is the storage space they consume and the overhead of maintaining them when the base data changes. Incremental view maintenance updates the materialized view based on changes to base relations rather than recomputing the entire view. Commercial systems support various forms of incremental maintenance.
+**Cardinality Estimation:** The optimizer estimates the number of rows at each stage:
 
-The query optimizer considers materialized views when estimating query plans. If a materialized view contains all the data needed for a query, the optimizer can redirect the query to the view, potentially reducing query execution time by orders of magnitude.
+- Equality filter: Estimate = total_rows / n_distinct
+- Range filter: Estimate ≈ total_rows / 3 (heuristic)
+- AND of two conditions: Estimate = rows_after_first × selectivity_of_second
+- Join: Estimate ≈ rows_left × rows_right / max(n_distinct(join_column))
 
-## 13.8 Parallel Query Processing
+### 13.4 Join Algorithms
 
-Parallel query processing exploits multiple processors and disks to reduce query execution time. Intra-query parallelism splits a single query across multiple processors. Inter-query parallelism executes multiple queries simultaneously.
+Join operations are the most performance-critical part of query processing. Three main algorithms:
 
-Intra-query parallelism includes several forms. Intra-operation parallelism partitions the input data across processors and executes the same operation on each partition. Inter-operation parallelism, or pipelining, feeds the output of one operator as input to another operator running on a different processor. Bushy parallelism fans out intermediate results to multiple downstream operators.
+**1. Nested Loop Join:**
 
-Parallel database systems are classified by their hardware architecture. Shared-memory systems share all processors and memory. Shared-disk systems share disks but not memory. Shared-nothing systems partition both data and processing across independent nodes. Shared-nothing architectures scale most effectively for large-scale data processing and are the basis for most modern distributed database systems.
+```python
+# For each row in outer table, scan inner table for matches
+for each row_r in R:
+    for each row_s in S:
+        if row_r.join_attr == row_s.join_attr:
+            output(row_r, row_s)
+```
+
+- Cost (no indexes): M × N (M = pages of R, N = pages of S)
+- Cost (with index on inner): M + M × index_lookup_cost
+- Best when: Small outer table, inner table joined via index
+- Used for: Small-to-medium tables, or when one side is small
+
+**2. Hash Join:**
+
+```python
+# Phase 1: Build a hash table on the smaller table
+# Phase 2: Probe the hash table with the larger table
+build_table = smaller_table(R, S)
+for each row in build_table:
+    hash[hash_func(row.join_attr)] = row
+
+for each row in probe_table:
+    matches = hash[hash_func(row.join_attr)]
+    for each match in matches:
+        if row.join_attr == match.join_attr:
+            output(row, match)
+```
+
+- Cost: 3 × (pages(R) + pages(S)) approximately
+- Best when: No useful indexes, equi-joins, one table is much smaller
+- Used for: Large tables, data warehouse queries
+
+**3. Merge Join (Sort-Merge Join):**
+
+```python
+# Phase 1: Sort both tables on the join attribute
+# Phase 2: Merge the sorted lists
+sort(R, join_attr)
+sort(S, join_attr)
+
+i, j = 0, 0
+while i < len(R) and j < len(S):
+    if R[i].join_attr == S[j].join_attr:
+        output(R[i], S[j])
+        # Handle duplicates
+        if next(R) also matches: output all combinations
+        i += 1; j += 1
+    elif R[i].join_attr < S[j].join_attr:
+        i += 1
+    else:
+        j += 1
+```
+
+- Cost: O(M log M + N log N + M + N) for sorting + merge
+- Best when: Data is already sorted (e.g., via index), or large equi-joins
+- Used for: Large tables when sorting is already needed for ORDER BY
+
+### 13.5 Other Operations
+
+**Aggregation:**
+
+Two approaches:
+- **Sort-based:** Sort by GROUP BY columns, then scan and aggregate adjacent rows
+- **Hash-based:** Build a hash table keyed by group-by columns, compute aggregates per bucket
+
+**Duplicate Elimination (DISTINCT):**
+- Sort and remove adjacent duplicates, or
+- Hash and track seen values
+
+**Sorting (ORDER BY):**
+- If an index provides the desired order, use it
+- Otherwise, sort in memory (if fits) or use external merge sort
+
+### 13.6 Pipelining vs. Materialization
+
+**Pipelining:** Results flow upward through the query plan tree without intermediate storage. Each operator processes one row at a time and passes it to the parent operator.
+
+```
+Index Scan → Nested Loop → Projection → Output
+               ↑
+           Index Scan
+```
+Result: First row appears quickly (low latency).
+
+**Materialization:** Intermediate results are fully computed and stored in temporary tables.
+
+```
+Hash Join
+   (build hash table from small table first)
+   ↓
+Materialized build side
+```
+
+Result: Better for algorithms needing random access (hash joins, sort operations).
+
+### 13.7 Reading Execution Plans
+
+```sql
+-- PostgreSQL: View query plan without executing
+EXPLAIN SELECT * FROM employees WHERE salary > 100000;
+
+-- Output:
+-- Seq Scan on employees  (cost=0.00..17340.00 rows=500 width=120)
+--   Filter: (salary > 100000)
+
+-- With actual execution statistics
+EXPLAIN ANALYZE SELECT e.name, d.dept_name
+FROM employees e
+JOIN departments d ON e.dept_id = d.dept_id
+WHERE e.salary > 100000;
+
+-- Output might show:
+-- Hash Join  (cost=350.00..4200.00 rows=450 width=80)
+--   Hash Cond: (e.dept_id = d.dept_id)
+--   -> Seq Scan on employees e  (cost=0.00..3400.00 rows=500 width=40)
+--        Filter: (salary > 100000)
+--   -> Hash  (cost=30.00..30.00 rows=100 width=44)
+--        -> Seq Scan on departments d  (cost=0.00..30.00 rows=100 width=44)
+```
+
+**Reading Plans — Key Terms:**
+- **cost:** Arbitrary units (lower is better). Format: startup_cost..total_cost
+- **rows:** Estimated number of output rows
+- **width:** Average output row width in bytes
+- **actual time:** With EXPLAIN ANALYZE, real execution time
+- **loops:** How many times the node executed
+
+**Common Plan Nodes:**
+| Node Type | Meaning |
+|-----------|---------|
+| Seq Scan | Full table scan |
+| Index Scan | B+ tree index lookup |
+| Index Only Scan | All needed data in index |
+| Bitmap Scan | Bitmap of matching pages |
+| Nested Loop | For each outer row, probe inner |
+| Hash Join | Build hash on one side, probe with other |
+| Merge Join | Sort both sides, then merge |
+| Sort | External sort |
+| Aggregate | GROUP BY or other aggregation |
+| Limit | Stop after N rows |
+
+### 13.8 Query Plan Selection Example
+
+```sql
+SELECT o.order_id, c.name
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+WHERE c.state = 'CA'
+  AND o.order_date >= '2026-01-01';
+```
+
+**Possible Plans:**
+
+Plan A: Scan customers (state='CA'), join with orders via index
+```
+Index Scan on customers (state='CA') → Nested Loop → Output
+                                            ↑
+                                     Index Scan on orders(customer_id, order_date)
+```
+Good if: Many customers in state='CA' ← Actually, if only 2% of customers are in CA, this is excellent.
+
+Plan B: Scan orders (date), join with customers via index
+```
+Index Scan on orders (date >= '2026-01-01') → Nested Loop → Output
+                                                    ↑
+                                            Index Scan on customers(customer_id)
+```
+Good if: Few orders in 2026.
+
+Plan C: Hash join
+```
+Seq Scan on customers (state='CA') → Hash Join → Output
+                                          ↑
+                                Seq Scan on orders (date >= '2026-01-01')
+```
+Good if: Both tables are large and moderate portions are filtered.
+
+The optimizer estimates which plan has the lowest total cost.
+
+### 13.9 Optimization Hints
+
+Most DBMS allow hints to override the optimizer:
+
+```sql
+-- PostgreSQL (via extension):
+SET pg_hint_plan.enable_hint = ON;
+SELECT /*+ SeqScan(employees) */ * FROM employees;
+
+-- Oracle:
+SELECT /*+ FULL(employees) */ * FROM employees;
+SELECT /*+ INDEX(employees idx_salary) */ * FROM employees WHERE salary > 50000;
+
+-- MySQL:
+SELECT STRAIGHT_JOIN e.* FROM employees e JOIN departments d ON e.dept_id = d.dept_id;
+```
+
+**When to hint:** Rarely. Modern optimizers make good choices for 95%+ of queries. Hints should only be used when:
+- The optimizer consistently chooses a bad plan
+- The statistics are out of date
+- The query has unusual characteristics
+
+## Examples
+
+**Example 13.1: EXPLAIN Analysis**
+
+```sql
+-- Create a sample table and analyze a query
+CREATE TABLE large_orders AS
+SELECT generate_series(1, 1000000) AS order_id,
+       (random() * 10000)::INT AS customer_id,
+       NOW() - (random() * 365 * '1 day'::INTERVAL) AS order_date;
+
+CREATE INDEX idx_customer ON large_orders(customer_id);
+
+-- Query 1: Single row lookup
+EXPLAIN ANALYZE SELECT * FROM large_orders WHERE order_id = 500000;
+-- Output: Index Scan using large_orders_pkey (cost=0.42..8.44 rows=1 width=20)
+--         Actual time: 0.043..0.044 rows=1 loops=1
+
+-- Query 2: Range lookup
+EXPLAIN ANALYZE SELECT * FROM large_orders WHERE order_id BETWEEN 500000 AND 501000;
+-- Output: Index Scan using large_orders_pkey (cost=0.42..35.50 rows=1000 width=20)
+--         Actual time: 0.052..0.350 rows=1001 loops=1
+
+-- Query 3: Large range (may choose full scan vs. index)
+EXPLAIN ANALYZE SELECT * FROM large_orders WHERE order_id < 500000;
+-- Might switch to Seq Scan if optimizer decides it covers too many rows
+
+-- Query 4: No useful index (date function)
+EXPLAIN ANALYZE SELECT * FROM large_orders
+WHERE order_date > NOW() - INTERVAL '7 days';
+-- Seq Scan (unless we create an index on order_date)
+```
+
+**Example 13.2: Join Strategy Comparison**
+
+```sql
+-- Table sizes: employees (10K rows), departments (100 rows)
+
+-- Join with small result set
+EXPLAIN ANALYZE
+SELECT e.name, d.dept_name
+FROM employees e
+JOIN departments d ON e.dept_id = d.dept_id
+WHERE e.emp_id = 42;
+-- Likely: Nested Loop — Index Scan on employees, then Index Scan on departments
+
+-- Join selecting many employees
+EXPLAIN ANALYZE
+SELECT e.name, d.dept_name
+FROM employees e
+JOIN departments d ON e.dept_id = d.dept_id
+WHERE e.salary > 30000;
+-- Likely: Hash Join — because many employees will match
+
+-- Join with no filtering
+EXPLAIN ANALYZE
+SELECT * FROM employees e
+JOIN departments d ON e.dept_id = d.dept_id;
+-- Likely: Nested Loop or Hash Join depending on data sizes and indexes
+```
 
 ## Summary
 
-Query processing translates declarative SQL into efficient execution plans. Selection and join algorithms each have distinct cost profiles that suit different data characteristics. External sorting and hashing are foundational operations. Query optimization combines heuristics and cost estimation to select among the vast space of alternative plans. Materialized views precompute expensive operations. Parallel query processing exploits multiple processors and disks.
+- SQL queries go through: parsing → preprocessing → optimization → execution.
+- The optimizer uses statistics to estimate costs and select the best plan.
+- Join algorithms: Nested Loop (small result sets), Hash Join (large, no indexes), Merge Join (sorted data).
+- Pipelining streams results without intermediate storage; materialization stores intermediate results.
+- EXPLAIN shows the query plan; EXPLAIN ANALYZE includes actual execution statistics.
+- The optimizer's statistics must be kept up to date (ANALYZE / VACUUM).
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. List the stages of query processing in order.
-2. Under what conditions is a hash join preferable to a sort-merge join?
-3. What statistical information does the query optimizer require?
-4. Why is equi-depth histogram more accurate than equi-width for skewed data?
-5. What is the principle of optimality and how does it apply to join optimization?
+1. List the main stages of query processing from SQL text to result.
 
-### Application Problems
+2. What information does the optimizer use to estimate query costs?
 
-1. Given relations R with 10,000 tuples and S with 5,000 tuples, each stored in 100-byte blocks. Assuming 50 buffer blocks, compute the I/O cost for (a) nested-loop join, (b) block nested-loop join, (c) sort-merge join, and (d) hash join. Assume tuples are 100 bytes each.
-2. For the query SELECT * FROM R WHERE A = 5 AND B > 10, with indices on R(A) and R(B), explain how the optimizer would evaluate alternative plans. Assume R(A) has 100 distinct values and R(B) has 1,000 distinct values.
-3. Construct an example query where performing selection early produces a dramatically cheaper plan. Show the cost of the optimized plan versus the unoptimized plan using relational algebra.
+3. Describe three join algorithms and when each is most appropriate.
 
-### Challenge Problem
+4. Execute and interpret: `EXPLAIN SELECT * FROM employees WHERE department_id = 5;`
 
-Design a query optimizer for a subset of SQL that handles conjunctive queries with equi-joins. Implement a dynamic programming algorithm that finds the optimal join order for up to 6 relations. The algorithm should consider both left-deep and bushy tree plans. Demonstrate your optimizer on a set of three relations with given sizes and join selectivities.
+### Intermediate
+
+5. Given the query `SELECT * FROM orders WHERE customer_id = 42 AND order_date > '2026-01-01'` and an index on (customer_id, order_date), explain why the optimizer can use the index efficiently. What if the index were (order_date, customer_id)?
+
+6. For a table with 1 million rows and an equality filter on a column with 10,000 distinct values, estimate the number of result rows. Would the optimizer prefer an index scan or a full table scan? How does the answer change if the column has only 2 distinct values?
+
+7. Create a table and populate it with at least 100,000 rows. Use EXPLAIN ANALYZE to compare:
+   - A query with an index on the filtered column
+   - Same query without the index
+   Document the difference in execution time and cost estimates.
+
+8. What is the difference between pipelining and materialization in query execution? Give an example of an operator that requires materialization.
+
+### Advanced
+
+9. Analyze the following query plan and identify potential problems:
+```
+Sort (cost=25000.00..25500.00 rows=200000 width=40)
+  Sort Key: o.order_date
+  -> Hash Join (cost=5000.00..15000.00 rows=200000 width=40)
+       Hash Cond: (o.customer_id = c.customer_id)
+       -> Seq Scan on orders o (cost=0.00..8000.00 rows=500000 width=28)
+       -> Hash (cost=1000.00..1000.00 rows=50000 width=16)
+            -> Seq Scan on customers c (cost=0.00..1000.00 rows=50000 width=16)
+```
+What indexes would you recommend? Why is the sort needed?
+
+10. Design a query optimization experiment:
+    - Create a table `sales(product_id INT, sale_date DATE, amount DECIMAL)` with 5M rows
+    - Write a complex query with GROUP BY, JOIN to a products table, and ORDER BY
+    - Create appropriate indexes
+    - Compare execution plans with and without indexes
+    - Which plan has the lowest cost? Is it the fastest?
+
+11. Some databases support "adaptive" join methods (e.g., Adaptive Join in SQL Server). How do adaptive joins work? When would they choose a different join algorithm mid-execution?

@@ -1,133 +1,269 @@
-# Chapter 1 — Introduction to Operating Systems
+# Chapter 1: Introduction to Operating Systems
 
 ## Learning Objectives
 
-1. Define the role of an operating system and distinguish it from application software.
-2. Describe the evolution of operating systems from batch processing to distributed systems.
-3. Explain the services an OS provides to users and programs.
-4. Understand the system call interface and differentiate modes of execution (user vs. kernel).
-5. Compare monolithic, microkernel, and hybrid OS structures.
+- Define an operating system and explain its role as a resource manager
+- Trace the historical evolution from batch to modern OS
+- Distinguish among batch, time-sharing, distributed, real-time, and embedded OS types
+- Describe the services an OS provides to users and programs
+- Explain system calls and differentiate standard APIs from actual system calls
+- Compare OS structures: monolithic, microkernel, layered, modular, hybrid
 
-## 1.1 What Is an Operating System?
+## Theory
 
-An operating system is a layer of system software that manages computer hardware and provides a virtual machine abstraction to application programs. A computer system can be decomposed into four components: hardware (CPU, memory, I/O devices), the operating system, application programs, and users. The OS operates as an intermediary, controlling execution of programs and arbitrating access to shared resources.
+### What is an Operating System?
 
-The operating system has two primary responsibilities:
+An operating system is system software that manages computer hardware and software resources and provides common services for computer programs. Every general-purpose computer must have an OS to run other programs. The OS acts as an intermediary between users/applications and the hardware.
 
-- **Resource management**: Allocating CPU time, memory space, storage capacity, and I/O bandwidth among competing processes.
-- **Abstraction**: Presenting a clean, high-level interface that hides the complexity of the underlying hardware. For example, the file abstraction replaces raw disk sector addressing with named, randomly accessible byte sequences.
+Two primary views exist:
 
-## 1.2 Evolution of Operating Systems
+1. **Resource allocator** — The OS manages all resources (CPU, memory, I/O devices) and decides between competing requests for efficient and fair use.
+2. **Control program** — The OS controls execution of user programs to prevent errors and improper use of the computer.
 
-### 1.2.1 Batch Systems (1950s–1960s)
+### Operating System Functions
 
-Early computers lacked an operating system. Programmers signed up for machine time, loaded their program via punch cards, and ran the machine exclusively until completion. The first OS software emerged to automate job sequencing: a resident monitor loaded one job after another, eliminating human intervention between runs. A job control language (JCL) specified resource requirements.
+At its core, an OS performs these functions:
 
-### 1.2.2 Multiprogramming (1960s–1970s)
+- **Process management**: Creating, scheduling, and terminating processes; synchronizing and communicating between processes
+- **Memory management**: Allocating and deallocating memory; tracking which parts are in use; handling virtual memory
+- **File system management**: Organizing files into directories; controlling access; managing disk space
+- **I/O system management**: Buffering, caching, and interfacing with device drivers
+- **Protection and security**: Controlling access to resources; authenticating users; defending against threats
+- **Networking**: Implementing protocols and providing interfaces for network communication
 
-When a running job waited for I/O, the CPU remained idle. Multiprogramming increased utilisation by keeping several jobs in memory simultaneously. While one job waited for I/O, the OS switched the CPU to another ready job. This required hardware support for memory protection and interrupt-driven I/O. The OS now had to schedule jobs, manage memory across multiple resident programs, and coordinate concurrent access to devices.
+### History of Operating Systems
 
-### 1.2.3 Timesharing (1970s–1980s)
+#### Phase 1: Batch Systems (1940s–1950s)
 
-Timesharing extended multiprogramming to provide interactive use. The CPU was shared among many users by rapidly switching between processes, giving each user the illusion of a dedicated machine. Response time became a primary metric. Timesharing introduced process scheduling with time quanta, demand paging for virtual memory, and file systems designed for interactive access. The UNIX operating system emerged in this era.
+Early computers (ENIAC, UNIVAC) had no OS. Programmers interacted directly with the hardware using switches and paper tape. The first OS appeared in the 1950s with the GM-NAA I/O system for the IBM 701.
 
-### 1.2.4 Distributed Systems (1980s–Present)
+Batch systems collected jobs (programs + data) into batches. A resident monitor loaded and executed them sequentially. When one job finished, the monitor loaded the next. This eliminated significant setup time but offered no interactivity.
 
-A distributed OS manages a collection of independent, networked computers as a single coherent system. Users see a unified resource namespace. Modern operating systems incorporate distributed features: network file systems (NFS), remote procedure calls, and clustering support. Cloud computing extends this model to data-centre scale, where hypervisors and container orchestrators manage vast resource pools.
+#### Phase 2: Multiprogramming (1960s)
 
-## 1.3 Operating System Services
+Multiprogramming improved CPU utilization by keeping multiple jobs in memory simultaneously. While one job waited for I/O, the CPU switched to another. This required interrupt hardware and memory protection.
 
-Operating systems provide a standard set of services accessible through system calls:
+IBM's OS/360 (1964) was a landmark multiprogramming system — and also famously one of the most complex software projects ever attempted (Fred Brooks wrote _The Mythical Man-Month_ about it).
 
-- **Process execution**: Load a program into memory, run it, handle its termination.
-- **I/O operations**: Read and write files, communicate with devices.
-- **File system manipulation**: Create, delete, read, write, and search files and directories.
-- **Communication**: Exchange data between processes on the same machine (pipes, shared memory) or across a network (sockets).
-- **Error detection**: Detect and respond to hardware failures, memory access violations, and invalid instructions.
-- **Resource allocation**: Schedule CPU cycles, allocate memory, manage disk space.
-- **Accounting**: Track resource usage for billing or profiling.
-- **Protection and security**: Enforce access controls, authenticate users, isolate processes.
+#### Phase 3: Time-Sharing (1970s)
 
-## 1.4 System Calls
+Time-sharing extended multiprogramming to provide interactive computing. The CPU rapidly switched between users, giving each the illusion of a dedicated machine.
 
-A system call is the programmatic interface between a user-space application and the OS kernel. Applications request OS services by invoking library functions (e.g., `read()`, `write()`, `fork()`) that trap into kernel mode.
+CTSS (MIT, 1961) and Multics (MIT/Bell Labs/GE, 1965) pioneered time-sharing. Unix (Ken Thompson and Dennis Ritchie, 1970s) evolved from Multics and became the foundation of modern OS design.
 
-**Example** — The C standard library `printf()` ultimately calls `write()`:
+#### Phase 4: Personal Computing (1980s)
+
+Microprocessors made personal computers viable. CP/M, MS-DOS (Microsoft, 1981), and early Mac OS (1984) brought OS to desktops. These were simpler — single-user, single-task — but introduced graphical user interfaces (GUIs) to the mainstream.
+
+#### Phase 5: Modern Era (1990s–Present)
+
+Linux (Linus Torvalds, 1991) brought Unix-like power to PCs as free software. Windows NT (1993) provided a true, portable OS core. Mobile OS (iOS, Android) adapted kernel designs for resource-constrained, touch-based devices. Cloud and container OS (VMware ESXi, Linux containers) abstract entire machines.
+
+### Types of Operating Systems
+
+#### Batch OS
+
+Jobs with similar needs are batched together. No direct user interaction during execution. Used in early mainframes. **Advantage**: efficient for high-volume similar jobs. **Disadvantage**: poor turnaround, hard to debug.
+
+#### Time-Sharing OS
+
+CPU time is sliced into quanta and distributed among users. Response time is short. Each user feels they own the machine. **Examples**: Unix, Linux, Windows, macOS.
+
+#### Distributed OS
+
+Manages a group of independent computers and makes them appear as a single computer. Resources are shared across a network. **Challenges**: synchronization, fault tolerance, transparency. **Examples**: Amoeba, Sprite, Plan 9.
+
+#### Real-Time OS (RTOS)
+
+Guarantees that critical tasks complete within a strict time bound. Two subtypes:
+
+- **Hard real-time**: Missing a deadline is catastrophic (aircraft control, medical devices)
+- **Soft real-time**: Missing deadlines degrades quality but does not cause failure (multimedia, games)
+
+**Examples**: FreeRTOS, VxWorks, QNX.
+
+#### Embedded OS
+
+Designed for devices with limited resources (sensors, smart appliances, IoT). Often runs on ROM, has minimal footprint. **Examples**: Embedded Linux, Windows IoT, TinyOS.
+
+### System Calls
+
+A system call is a programmatic way for a user-space program to request a service from the OS kernel. System calls provide the interface between a process and the OS.
+
+#### System Call Categories
+
+1. **Process control**: `fork()`, `exec()`, `exit()`, `waitpid()`
+2. **File management**: `open()`, `read()`, `write()`, `close()`, `lseek()`
+3. **Device management**: `ioctl()`, `read()`, `write()`
+4. **Information maintenance**: `getpid()`, `alarm()`, `sleep()`
+5. **Communication**: `pipe()`, `shmget()`, `msgget()`, `socket()`
+
+#### System Call Flow
+
+1. User program invokes an API function (e.g., `printf()`)
+2. The C library (`libc`) places arguments in registers and triggers a trap/interrupt
+3. The CPU switches to kernel mode, saves the user process state
+4. The kernel's system call handler dispatches to the appropriate service routine
+5. The service routine executes in kernel mode
+6. Control returns to the user program, CPU switches back to user mode
 
 ```c
+#include <stdio.h>
 #include <unistd.h>
-ssize_t write(int fd, const void *buf, size_t count);
+#include <sys/types.h>
+#include <sys/wait.h>
+
+int main() {
+    pid_t pid = fork();  // system call — creates a new process
+
+    if (pid == 0) {
+        // Child process
+        printf("Child PID: %d\n", getpid());  // getpid() is another system call
+    } else if (pid > 0) {
+        // Parent process
+        printf("Parent created child PID: %d\n", pid);
+        wait(NULL);  // system call — wait for child to finish
+    } else {
+        perror("fork failed");
+    }
+
+    return 0;
+}
 ```
 
-When `write()` is called, the C library stub places arguments in fixed registers, triggers a software interrupt or `syscall` instruction, which switches the CPU to kernel mode. The kernel dispatches to the appropriate handler, performs the operation, and returns to user mode.
+#### API vs System Call
 
-### 1.4.1 System Call Categories
+Most programs use an **API** (Application Programming Interface) rather than invoking system calls directly. The C standard library provides wrapper functions that make the system call on your behalf. The API call `printf()` eventually triggers the `write()` system call.
 
-| Category | Examples |
-|----------|----------|
-| Process control | `fork()`, `exec()`, `wait()`, `exit()` |
-| File management | `open()`, `close()`, `read()`, `write()`, `lseek()` |
-| Device management | `ioctl()`, `read()`, `write()` |
-| Information maintenance | `getpid()`, `alarm()`, `time()` |
-| Communication | `pipe()`, `shmget()`, `socket()`, `send()` |
+### Operating System Structures
 
-## 1.5 Operating System Structure
+#### Monolithic Kernel
 
-### 1.5.1 Monolithic Structure
+The entire OS runs in kernel space as a single large program. All components share the same memory space. **Pro**: high performance due to fast communication. **Con**: a bug in any component crashes the entire system.
 
-In a monolithic kernel, all OS services (scheduling, file system, networking, device drivers) run in kernel space with full hardware access. This provides excellent performance due to low intra-kernel call overhead but creates a large trusted computing base (TCB) — any driver bug can crash the entire system. Early UNIX and Linux use a monolithic design.
+**Example**: Linux, traditional Unix, MS-DOS.
 
-### 1.5.2 Microkernel Structure
+#### Microkernel
 
-A microkernel minimises the kernel to only essential mechanisms: address-space management, thread scheduling, and inter-process communication (IPC). All other services (file systems, networking, device drivers) run as user-space processes. This improves modularity and fault isolation — a crashed file server does not bring down the whole system — but IPC overhead can degrade performance. Examples: MINIX, QNX, L4, seL4.
+The kernel is minimized to essential functions (IPC, basic scheduling, low-level memory management). Most services (file systems, device drivers, networking) run as user-space processes. **Pro**: reliability, security, easier maintenance. **Con**: performance overhead from IPC.
 
-### 1.5.3 Hybrid Structure
+**Example**: Mach (the foundation of macOS/XNU), MINIX, QNX.
 
-Modern operating systems adopt a hybrid approach, combining monolithic performance with microkernel modularity. The Linux kernel is monolithic but supports loadable kernel modules (LKMs) that can be inserted and removed at runtime. Windows NT uses a hybrid kernel with an executive layer, kernel-mode drivers, and user-mode subsystems. macOS X uses the XNU kernel (X is Not UNIX), which combines a Mach microkernel core with a monolithic BSD layer.
+#### Layered Approach
 
-### 1.5.4 Layered Approach
+The OS is divided into layers, each built on top of the layer below. Layer 0 is hardware; layer N is the user interface. Each layer only uses services from the layer immediately below. **Pro**: modularity, abstraction. **Con**: less efficient, hard to define clean layers.
 
-A layered system is organised as a hierarchy of abstractions, where each layer depends only on the layer immediately below. The Hardware Abstraction Layer (HAL) hides platform-specific details; above it sit the kernel, system services, and applications. Layering simplifies design and verification at the cost of some performance due to layer-crossing overhead.
+**Example**: THE system (Dijkstra, 1968), Venus.
 
-## 1.6 System Boot
+#### Modular Kernel (Hybrid)
 
-When a computer is powered on, the OS must be loaded into memory. The bootstrap program (firmware BIOS or UEFI) locates the bootloader on a designated storage device, loads it into memory, and transfers control. The bootloader then loads the OS kernel. This process establishes the initial kernel data structures, detects hardware, and mounts the root filesystem before launching the first user-space process (init). The boot process is examined in detail in Chapter 18.
+Modern kernels combine monolithic and microkernel ideas. The kernel is a core with loadable modules (device drivers, file systems, protocol stacks). Modules run in kernel space but can be loaded/unloaded dynamically.
 
-## 1.7 User Mode and Kernel Mode
+**Example**: Linux (loadable kernel modules), Windows NT.
 
-The CPU provides at least two modes of operation:
+```
++-------------------------------------------+
+|  User Applications  |  Shell  |  GUIs     |
++-------------------------------------------+
+|         System Libraries (libc)            |
++-------------------------------------------+
+|         System Call Interface              |
++-------------------------------------------+
+|  Process   | Memory   | File    | Network |
+|  Manager   | Manager  | System  | Stack   |
+|            |          |         |         |
+|     Scheduler    |    | Device Drivers    |
+|     IPC          |    | I/O Manager       |
++-------------------------------------------+
+|      Hardware Abstraction Layer           |
++-------------------------------------------+
+|              Hardware                      |
++-------------------------------------------+
+```
 
-- **Kernel mode** (supervisor mode, ring 0): The executing code has full access to all hardware and privileged instructions.
-- **User mode** (ring 3 on x86): Execution is restricted; privileged instructions and direct hardware access cause traps.
+## Examples
 
-The mode bit in the processor status register tracks the current mode. When a system call, interrupt, or exception occurs, the CPU switches to kernel mode; the OS handles the event and returns to user mode before resuming the application. This hardware-enforced separation is the foundation of OS security.
+### Example 1: Tracing System Calls with strace
 
-## 1.8 System Calls in Detail
+The `strace` tool on Linux shows every system call a program makes:
 
-The system-call mechanism is the sole entry point into the kernel from user space. On x86-64 Linux, system calls are made via the `syscall` instruction, which sets the register `rcx` to the return address and `r11` to `rflags`, then loads the kernel stack and jumps to a predefined entry point. The system-call number is passed in `rax`; arguments are passed in `rdi`, `rsi`, `rdx`, `r10`, `r8`, and `r9`. The kernel dispatches to the handler registered in the `sys_call_table` array. On return, `sysret` or `sysexit` restores user mode.
+```bash
+$ strace -c ls /tmp
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+  0.00    0.000000           0         5           read
+  0.00    0.000000           0         1           write
+  0.00    0.000000           0        11           openat
+  0.00    0.000000           0        11           close
+  0.00    0.000000           0         7           fstat
+  0.00    0.000000           0        18           mmap
+  0.00    0.000000           0         4           mprotect
+  0.00    0.000000           0         2           munmap
+  0.00    0.000000           0         3           brk
+  0.00    0.000000           0         2           ioctl
+  0.00    0.000000           0         1           getdents64
+  0.00    0.000000           0         1           set_tid_address
+  0.00    0.000000           0        12           newfstatat
+  0.00    0.000000           0         1           set_robust_list
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000000                    79           total
+```
 
-Parameter passing through registers (rather than the stack) avoids the overhead of memory access during the switch. This design is critical because system calls are frequent operations: a typical web server may perform thousands per second.
+Even a simple `ls` command makes nearly 80 system calls!
+
+### Example 2: Kernel vs User Mode
+
+Processors support at least two privilege levels:
+
+- **User mode**: Restricted access — cannot execute privileged instructions, cannot access kernel memory
+- **Kernel mode**: Full access — can execute any instruction, access any memory
+
+On x86, these are implemented via protection rings (Ring 0 = kernel, Ring 3 = user). The `syscall` instruction (or `int 0x80` on older systems) transitions from user to kernel mode.
+
+```c
+// This code will crash in user mode because it tries
+// to execute a privileged instruction directly
+#include <stdio.h>
+
+int main() {
+    // Attempt to modify the interrupt descriptor table
+    // This would cause a segmentation fault in user mode
+    printf("About to attempt privileged operation...\n");
+
+    // Halt instruction — only valid in kernel mode
+    __asm__("hlt");
+
+    printf("This line never executes\n");
+    return 0;
+}
+```
 
 ## Summary
 
-The operating system manages hardware and provides abstractions that make computing practical. From batch monitors to distributed cloud platforms, OS design has evolved to maximise resource utilisation, support interactive use, and enforce security. System calls bridge user programs to kernel services. OS structure ranges from monolithic (fast, large TCB) to microkernel (modular, IPC overhead), with modern systems choosing pragmatic hybrids.
+- An operating system manages hardware resources and provides services to user programs
+- OS history progressed from batch (no interactivity) through multiprogramming to time-sharing to modern systems
+- Major OS types: batch, time-sharing, distributed, real-time (hard/soft), embedded
+- System calls are the interface between user programs and the kernel — they switch to kernel mode
+- OS structures vary: monolithic (Linux), microkernel (MINIX), layered, modular (hybrid)
+- Key abstractions: processes, files, virtual memory, and the system call interface
+- The API is not the system call — the library wraps the system call for convenience and portability
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What are the two primary roles of an operating system?
-2. How does multiprogramming improve CPU utilisation over simple batch processing?
-3. List four categories of system calls and give an example of each.
-4. What is the difference between kernel mode and user mode, and why is it important?
-5. Name two advantages and two disadvantages of a microkernel architecture.
+1. List five services an OS provides and explain why each is necessary.
+2. What is the difference between user mode and kernel mode? Why does this distinction exist?
+3. Use `strace` on your system to trace any command (`ls`, `cat`, `echo`). Identify five different system calls and their purposes.
 
-### Application Problems
+### Intermediate
 
-1. Consider a system with one CPU. A program performs a `read()` system call. Trace the sequence of mode switches, identifying where each switch occurs and what triggers it.
-2. Compare the number of mode switches required for a file write in a monolithic kernel vs. a microkernel where the file server is a user-space process.
-3. A batch system processes 100 jobs per hour with 40% CPU utilisation. After upgrading to multiprogramming with degree 4, utilisation rises to 85%. What is the throughput in jobs per hour? (Assume CPU-bound jobs.)
+4. Compare batch processing with time-sharing. What hardware features made time-sharing possible?
+5. Explain the sequence of events from a user calling `printf()` to characters appearing on the terminal. List every OS component involved.
+6. A monolithic kernel is faster but less reliable than a microkernel. If you were designing an OS for a spacecraft, which would you choose? Justify your answer.
 
-### Challenge Problem
+### Advanced
 
-1. Design a minimal set of system calls sufficient to implement a UNIX-like shell. Justify each call by identifying which shell operations it enables. Provide signatures and semantics for your proposed calls.
+7. Research the Mach microkernel that underpins macOS/XNU. Identify which OS services run in user space and which remain in the kernel. Why does Apple still call XNU a "hybrid" kernel?
+8. The HAL (Hardware Abstraction Layer) allows Windows NT to run on x86, ARM, and Itanium. Design a minimal HAL interface (5–8 functions) that would let a kernel scheduler operate without knowing the underlying CPU architecture.
+9. Write a short C program that uses `fork()`, `exec()`, and `waitpid()` to create a simple job-control shell that runs a command, reports its exit status, and prints resource usage from `getrusage()`.

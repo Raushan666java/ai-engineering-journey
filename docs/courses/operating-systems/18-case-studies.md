@@ -1,227 +1,399 @@
-# Chapter 18 — Case Studies
+# Chapter 18: Case Studies
 
 ## Learning Objectives
 
-1. Describe the Linux boot process from power-on to login prompt.
-2. Explain the Windows NT executive, kernel, and subsystem architecture.
-3. Identify key architectural differences between Android (Linux-based) and desktop Linux.
-4. Characterise real-time operating systems and their scheduling guarantees.
-5. Discuss the challenges of distributed operating systems.
+- Compare Windows, Linux, and macOS kernel architectures
+- Analyze each OS's approach to processes, threads, and scheduling
+- Compare memory management strategies across systems
+- Understand the macOS XNU kernel and its hybrid architecture
+- Describe FreeBSD's design contributions to modern operating systems
+- Explore the architecture of real-time operating systems (RTOS)
+- Understand the principles of microkernel design through Minix and seL4
 
-## 18.1 Linux Boot Process
+## Theory
 
-The boot process transforms a cold machine into a running system with user-space services.
+### Windows NT Architecture
 
-### 18.1.1 BIOS/UEFI
-
-- The CPU is reset and begins executing at a fixed address (0xFFFF0 on x86 = top of 1 MB region).
-- The BIOS (Basic I/O System) or UEFI (Unified Extensible Firmware Interface) firmware initialises hardware: CPU, memory controller, chipset, and basic I/O devices.
-- POST (Power-On Self-Test) verifies that essential hardware is functional.
-- The firmware reads the boot device's first sector (MBR for BIOS, EFI System Partition for UEFI) and loads the bootloader.
-
-### 18.1.2 Bootloader
-
-- **GRUB 2** (Grand Unified Bootloader) reads its configuration from `/boot/grub/grub.cfg`.
-- GRUB presents a menu of kernels to boot (with options for recovery, single-user mode).
-- GRUB loads the selected kernel (`/boot/vmlinuz-...`) and the initramfs into memory.
-- GRUB switches to protected mode (32-bit), then long mode (64-bit) if applicable.
-- GRUB passes control to the kernel entry point with parameters (root device, quiet, etc.).
-
-### 18.1.3 Kernel Initialisation
+The Windows NT kernel (used in Windows 10/11, Server) is a **hybrid kernel** — combining microkernel-inspired design with monolithic kernel performance.
 
 ```
-start_kernel()  [init/main.c]
-  ├── trap_init()        — Set up IDT entries for exceptions and interrupts
-  ├── mm_init()          — Memory management init (page tables, buddy allocator)
-  ├── sched_init()       — Initialise scheduler (CFS, real-time)
-  ├── init_IRQ()         — Set up interrupt controllers (APIC)
-  ├── softirq_init()     — Initialise softirqs/tasklets
-  ├── rest_init()        — Create kernel_init and kthreadd processes
-  │     ├── kernel_init()
-  │     │     └── do_basic_setup()
-  │     │           ├── driver_init()   — Bus, class, device initialisation
-  │     │           ├── init_espfix()   — Architecture-specific setup
-  │     │           └── do_initcalls()  — Run all __init functions
-  │     └── kthreadd()   — Kernel thread daemon (spawns kworker, watchdog, etc.)
+┌──────────────────────────────────────────────────────┐
+│ User Mode                                            │
+│ ┌──────────┐ ┌──────────┐ ┌──────────┐              │
+│ │ System   │ │ Service  │ │ User     │              │
+│ │ Processes│ │ Processes│ │ Apps     │              │
+│ │ (winlogon│ │ (SvcHost)│ │ (chrome, │              │
+│ │  smss)   │ │  spoolsv)│ │  notepad)│              │
+│ └──────────┘ └──────────┘ └──────────┘              │
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ Subsystem DLLs (ntdll.dll, kernel32.dll, ...)     │ │
+│ └──────────────────────────────────────────────────┘ │
+├──────────────────────────────────────────────────────┤
+│ Kernel Mode                                          │
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ Executive Layer                                   │ │
+│ │ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌────────┐ │ │
+│ │ │I/O   │ │Proc  │ │Memory│ │Cache │ │Security│ │ │
+│ │ │Mgr   │ │Mgr   │ │Mgr   │ │Mgr   │ │RefMon  │ │ │
+│ │ └──────┘ └──────┘ └──────┘ └──────┘ └────────┘ │ │
+│ │ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐             │ │
+│ │ │Obj   │ │Plug  │ │Power │ │Win32 │             │ │
+│ │ │Mgr   │ │&Play │ │Mgr   │ │KSS   │             │ │
+│ │ └──────┘ └──────┘ └──────┘ └──────┘             │ │
+│ └──────────────────────────────────────────────────┘ │
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ Kernel (core): scheduler, sync, IRQL, traps       │ │
+│ └──────────────────────────────────────────────────┘ │
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ Hardware Abstraction Layer (HAL)                  │ │
+│ └──────────────────────────────────────────────────┘ │
+├──────────────────────────────────────────────────────┤
+│ Hardware                                              │
+└──────────────────────────────────────────────────────┘
 ```
 
-Key milestones:
+#### Windows Kernel Features
 
-1. **mm_init**: The memory map is established; SLAB allocator is initialised.
-2. **sched_init**: The idle thread (PID 0) is running; the scheduler is functional.
-3. **kernel_init** (PID 1): The first user-space process is `init`. It loads the initramfs as a temporary root filesystem, runs device probing via udev, and eventually pivots to the real root filesystem.
+**Process Structure**: Each Windows process contains:
+- A process object (EPROCESS in kernel)
+- A private virtual address space (4 GB on 32-bit, 128 TB on 64-bit)
+- A security access token (SID-based)
+- At least one thread
 
-### 18.1.4 init System
+**Thread Structure**: Each thread (ETHREAD) includes:
+- CPU register state
+- Two stacks (kernel-mode and user-mode)
+- A thread-local storage (TLS) array
+- Base and current priority
 
-- **systemd** (default on most distributions) is PID 1. It:
-  1. Reads unit files from `/etc/systemd/system/` and `/usr/lib/systemd/system/`.
-  2. Mounts filesystems listed in `/etc/fstab`.
-  3. Starts system services (networking, cron, sshd, getty).
-  4. Presents the login prompt (`getty` on TTY1).
+#### Windows Scheduling
 
-```
-systemd[1]: Starting Journal Service...
-systemd[1]: Started Journal Service.
-systemd[1]: Starting Network Manager...
-systemd[1]: Started Network Manager.
-systemd[1]: Reached target Multi-User System.
-Ubuntu 22.04 LTS tty1
-localhost login: _
-```
+Windows uses a **priority-driven preemptive scheduler** with 32 priority levels:
 
-## 18.2 Windows NT Architecture
+| Priority Range | Category | Assignment |
+|----------------|----------|------------|
+| 0 | Zero page thread | System, idle |
+| 1–15 | Dynamic | Variable class |
+| 16–31 | Real-time | Real-time class |
 
-Windows NT (New Technology) was designed as a portable, secure, multithreaded OS. Its architecture is a hybrid kernel with a microkernel-like core and monolithic performance characteristics.
+**Priority boosting**: When a thread receives input (keyboard/mouse), its priority is temporarily boosted.
 
-### 18.2.1 Layered Structure
+**Quantum**: Default quantum is 2 clock intervals (~30ms) for client SKUs, 12 for server SKUs.
 
-```
-┌───────────────────────────────────────────────┐
-│  Subsystems (Environment)                     │
-│  ┌──────────┐ ┌──────────┐ ┌──────────┐      │
-│  │ Win32    │ │ POSIX    │ │ OS/2     │      │
-│  └────┬─────┘ └────┬─────┘ └────┬─────┘      │
-│       │            │            │             │
-├───────┴────────────┴────────────┴─────────────┤
-│  Executive Services                            │
-│  ┌───┐ ┌───┐ ┌───┐ ┌──────┐ ┌──────┐ ┌────┐ │
-│  │I/O│ │IPC│ │VM │ │Proc │ │Sec  │ │Win │ │
-│  │Mgr│ │Mgr│ │Mgr│ │Mgr  │ │ Ref │ │Mgr │ │
-│  └───┘ └───┘ └───┘ └──────┘ └──────┘ └────┘ │
-├───────────────────────────────────────────────┤
-│  Kernel (thread scheduling, interrupts, DPCs) │
-├───────────────────────────────────────────────┤
-│  HAL (Hardware Abstraction Layer)             │
-├───────────────────────────────────────────────┤
-│  Hardware                                      │
-└───────────────────────────────────────────────┘
+```c
+// Windows thread creation (native API)
+HANDLE CreateThread(
+    LPSECURITY_ATTRIBUTES lpThreadAttributes,
+    SIZE_T dwStackSize,
+    LPTHREAD_START_ROUTINE lpStartAddress,
+    LPVOID lpParameter,
+    DWORD dwCreationFlags,
+    LPDWORD lpThreadId
+);
 ```
 
-### 18.2.2 Key Components
+#### Windows Memory Management
 
-- **HAL**: Abstracts platform differences (APIC, DMA, timer hardware). Each HAL supports a family of systems (SMP, UP, NUMA).
-- **Kernel**: Provides low-level mechanisms: thread scheduling, interrupt handling, DPCs (Deferred Procedure Calls), and synchronisation. The kernel does not implement policies — the executive layer does.
-- **Executive**: Implements OS policies through managers:
-  - **Object Manager**: Names and manages all OS objects (files, processes, threads, events).
-  - **Virtual Memory Manager**: Manages address spaces, demand paging, and working sets.
-  - **Process Manager**: Creates and terminates processes and threads.
-  - **I/O Manager**: Handles I/O requests, driver model (WDM, WDF).
-  - **Security Reference Monitor**: Enforces access validation and auditing.
-  - **Win32k.sys**: Window management, GDI (graphics).
-- **Subsystems**: Environment subsystems translate OS-specific APIs to native NT system calls. The Win32 subsystem is the primary one; POSIX and OS/2 subsystems are legacy.
-
-### 18.2.3 NTFS
-
-NTFS (New Technology File System) features:
-
-- **Journaling**: Metadata changes are logged for crash recovery.
-- **Access control**: Full ACL support per file and directory.
-- **Compression**: Transparent file compression.
-- **Encryption** (EFS): Per-file encryption.
-- **Alternate data streams**: Multiple data streams per file.
-- **MFT (Master File Table)**: A relational database of all files and directories.
-
-## 18.3 Android (Linux-Based OS)
-
-Android is a mobile OS built on a modified Linux kernel. It is not a traditional Linux distribution — it differs significantly in the user-space stack.
-
-### 18.3.1 Architecture
+Windows uses a **demand-paged virtual memory** system with a **working-set** model.
 
 ```
-┌───────────────────────────────────┐
-│  Applications (Java/Kotlin)       │
-├───────────────────────────────────┤
-│  Application Framework            │
-│  ┌───┐┌───┐┌───┐┌───┐┌────┐┌──┐ │
-│  │Act││Win││Pkg││Res││Tel ││Loc│ │
-│  │Mgr││Mgr││Mgr││Mgr││phny││n..│ │
-│  └───┘└───┘└───┘└───┘└────┘└──┘ │
-├───────────────────────────────────┤
-│  Binder IPC                       │
-├───────────────────────────────────┤
-│  Android Runtime (ART)            │
-│  (DEX bytecode, JIT/AOT, GC)      │
-├───────────────────────────────────┤
-│  Hardware Abstraction Layer (HAL) │
-├───────────────────────────────────┤
-│  Linux Kernel (modified)          │
-│  ├─ wakelocks                     │
-│  ├─ low-memory killer             │
-│  ├─ binder driver                 │
-│  └─ ashmem                        │
-└───────────────────────────────────┘
+Virtual address space layout (64-bit x86):
+┌──────────────────────────────┐ 0xFFFF`FFFF`FFFF`FFFF
+│ Kernel space (exec/hal/win32k)│
+├──────────────────────────────┤ 0xFFFF`0800`0000`0000
+│ System mapped views          │
+├──────────────────────────────┤ 0xFFFF`0000`0000`0000
+│ Hyperspace / session space   │
+├──────────────────────────────┤ 0x0000`0000`7FFF`FFFF
+│ Page file backed (for apps)  │
+├──────────────────────────────┤
+│ Mapped files / DLLs          │
+├──────────────────────────────┤
+│ Heap / stacks                │
+├──────────────────────────────┤
+│ Executable image             │
+├──────────────────────────────┤ 0x0000`0000`0000`0000
+│ NULL pointer guard           │
+└──────────────────────────────┘
+
+Working set management:
+- Each process has a min/max working set size
+- Memory manager uses a FIFO-based working set replacement
+- Modified (dirty) pages are written to the page file by the modified page writer
+- Standby list holds pages removed from working sets (available for reuse)
+- Free list holds truly free pages
+- Zeroed list holds pages cleared for security
 ```
 
-### 18.3.2 Key Differences from Desktop Linux
+#### IRQL — Interrupt Request Level
 
-- **Binder**: A high-performance IPC mechanism for inter-component communication. All Android IPC goes through Binder, not D-Bus.
-- **Wake locks**: Power management mechanism; prevents the CPU from sleeping while a critical operation is in progress.
-- **Low-memory killer**: Instead of swap (disabled on most Android devices), the kernel kills the least important processes when memory is low.
-- **No X11/Wayland**: Android uses SurfaceFlinger for compositing and hardware-accelerated rendering.
-- **No glibc**: Android uses Bionic libc, a minimalist BSD-derived C library optimised for mobile.
-- **Package system**: APK files contain all assets and native libraries; the Package Manager handles installation and permissions.
+Windows uses IRQL (not IRQ) to prioritize interrupts:
 
-## 18.4 Real-Time Operating Systems (RTOS)
+| Level (highest→lowest) | Source |
+|------------------------|--------|
+| HIGH_LEVEL | Machine checks, NMIs |
+| POWER_LEVEL | Power failure |
+| IPI_LEVEL | Inter-processor interrupts |
+| CLOCK_LEVEL | Clock interrupts |
+| PROFILE_LEVEL | Profiling timer |
+| DISPATCH_LEVEL | Thread scheduler and DPCs |
+| APC_LEVEL | Asynchronous procedure calls |
+| PASSIVE_LEVEL | Normal thread execution |
 
-A real-time OS guarantees that time-critical tasks complete within specified deadlines.
+**Key rule**: No page faults can occur at DISPATCH_LEVEL or above.
 
-### 18.4.1 Hard vs. Soft Real-Time
+### Linux Kernel Architecture
 
-- **Hard real-time**: Missing a deadline causes system failure (avionics, medical devices, automotive engine control).
-- **Soft real-time**: Missing deadlines degrades quality but does not cause failure (multimedia streaming, VoIP).
+Linux is a **monolithic kernel** with **loadable modules**:
 
-### 18.4.2 RTOS Scheduling
+```
+┌──────────────────────────────────────────────────────┐
+│ User Mode                                            │
+│ ┌──────────┐ ┌──────────┐ ┌──────────┐              │
+│ │ Shell    │ │ Web      │ │ Compiler │              │
+│ │ (bash)   │ │ Server   │ │ (gcc)    │              │
+│ └──────────┘ └──────────┘ └──────────┘              │
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ glibc (C library — user-space)                   │ │
+│ └──────────────────────────────────────────────────┘ │
+├──────────────────────────────────────────────────────┤
+│ Kernel Mode                                          │
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ System call handler (arch/x86/entry)              │ │
+│ └──────────────────────────────────────────────────┘ │
+│ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌────────┐  │ │
+│ │ VFS      │ │ Process  │ │ Memory   │ │ Network │  │ │
+│ │ (ext4,   │ │ Scheduler│ │ Manager  │ │ Stack   │  │ │
+│ │  btrfs)  │ │ (CFS)    │ │ (MMU)    │ │ (TCP/IP)│  │ │
+│ └──────────┘ └──────────┘ └──────────┘ └────────┘  │ │
+│ ┌──────────┐ ┌──────────┐ ┌────────────────────────┐│
+│ │ Device   │ │ File     │ │ Kernel Modules         ││
+│ │ Drivers  │ │ Systems  │ │ (loadable .ko files)   ││
+│ └──────────┘ └──────────┘ └────────────────────────┘│
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ Architecture-specific code (x86, arm, riscv)       │ │
+│ └──────────────────────────────────────────────────┘ │
+├──────────────────────────────────────────────────────┤
+│ Hardware                                              │
+└──────────────────────────────────────────────────────┘
+```
 
-RTOS schedulers prioritise deterministic behaviour over throughput:
+#### Linux Comparison Points
 
-- **Rate-Monotonic Scheduling (RMS)**: Static priority assignment; shorter period = higher priority. Provably optimal among fixed-priority algorithms (Liu & Layland, 1973). A set of n tasks is schedulable if total utilisation ≤ n(2^{1/n} − 1). For large n, this converges to ln 2 ≈ 69%.
-- **Earliest Deadline First (EDF)**: Dynamic priority; the task with the closest deadline runs next. EDF can schedule up to 100% utilisation.
+| Feature | Linux | Windows |
+|---------|-------|---------|
+| Kernel type | Monolithic (with modules) | Hybrid |
+| Process representation | `task_struct` | `EPROCESS` |
+| Thread representation | `task_struct` (same as process) | `ETHREAD` |
+| Scheduling | CFS (vruntime-based) | Priority-driven (32 levels) |
+| IPC variants | Pipes, signals, sockets, shared memory, msg queues, semaphores | Named pipes, mailslots, LPC/ALPC, sockets |
+| File systems | ext4, XFS, btrfs, ZFS | NTFS, ReFS, FAT32, exFAT |
+| Device driver model | Modular, in-kernel | WDM, WDF |
+| Security | SELinux, AppArmor, capabilities | ACLs, Integrity Levels, Mandatory Integrity Control |
 
-### 18.4.3 RTOS Examples
+### macOS XNU Kernel
 
-- **FreeRTOS**: Small footprint, designed for microcontrollers (Cortex-M, AVR). Kernel is approximately 9 KB.
-- **VxWorks**: Commercial RTOS used in aerospace, industrial, medical.
-- **QNX**: Microkernel RTOS used in automotive (QNX Neutrino in many car infotainment systems).
-- **RTLinux**: A real-time extension for Linux that runs the entire Linux kernel as a low-priority task under a small real-time kernel.
+XNU (X is Not Unix) is a **hybrid kernel** combining the Mach microkernel and a FreeBSD monolithic kernel component.
 
-## 18.5 Distributed Operating Systems
+```
+┌──────────────────────────────────────────────────────┐
+│ User Mode (Darwin)                                   │
+│ ┌────────────┐ ┌──────────────────────────────────┐  │
+│ │ Aqua UI    │ │ User-space BSD layer              │  │
+│ │ (Window    │ │ (fork, exec, signals, ptrace)     │  │
+│ │  Server)   │ └──────────────────────────────────┘  │
+│ └────────────┘                                       │
+│ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────────┐   │
+│ │Mach  │ │BSD   │ │Libc  │ │IOKit│ │Other     │   │
+│ │Tasks │ │Procs │ │      │ │     │ │libs      │   │
+│ └──────┘ └──────┘ └──────┘ └──────┘ └──────────┘   │
+├──────────────────────────────────────────────────────┤
+│ XNU Kernel (kernel_task)                            │
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ BSD Layer: Processes, signals, file systems,      │ │
+│ │ networking (TCP/IP stack from FreeBSD)            │ │
+│ └──────────────────────────────────────────────────┘ │
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ Mach Layer: Tasks, threads, IPC (messages, ports,│ │
+│ │ mig), virtual memory, scheduler                   │ │
+│ │  - Mach message passing as core IPC               │ │
+│ │  - Task = resource container (address space)      │ │
+│ │  - Thread = unit of scheduling                    │ │
+│ └──────────────────────────────────────────────────┘ │
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ I/O Kit: Device drivers (C++ subclassing)         │ │
+│ │  - Driver extends IOService class                 │ │
+│ │  - Probe/match architecture for device discovery  │ │
+│ └──────────────────────────────────────────────────┘ │
+├──────────────────────────────────────────────────────┤
+│ Hardware (Apple Silicon M-series / Intel x86)        │
+└──────────────────────────────────────────────────────┘
+```
 
-A distributed OS manages multiple independent computers as a single coherent system.
+#### macOS Memory Management
 
-### 18.5.1 Design Challenges
+- **Mach VM**: Uses a **copy-on-write** architecture throughout
+- **Unified memory** (Apple Silicon): CPU and GPU share the same physical memory
+- **Memory pressure**: The kernel signals applications when memory is low, asking them to free memory
+- **Compressed memory**: Inactive pages are compressed (not paged to disk) for faster access
 
-- **Absence of shared memory**: Communication via message passing (network).
-- **No global clock**: Each node has its own clock; clock synchronisation (NTP, Lamport timestamps, vector clocks) is necessary.
-- **Partial failures**: One node failing should not disable the entire system. Detecting and recovering from failures is complex.
-- **Scalability**: Increased nodes increase coordination overhead.
-- **Security**: Communication channels must be authenticated and encrypted.
+#### macOS Security
 
-### 18.5.2 Distributed File Systems
+- **SIP** (System Integrity Protection): Prevents modification of system files even by root
+- **Sandboxing**: App Store apps run in sandboxes with per-app entitlements
+- **Hardened Runtime**: Code signing + runtime integrity checks
+- **Gatekeeper**: Verifies apps are signed by known developers before running
 
-- **NFS (Network File System)**: Standard UNIX distributed file system. Clients mount remote directories transparently. NFSv4 supports delegation, stateful operations, and strong security (Kerberos).
-- **AFS (Andrew File System)**: Designed for scalability (thousands of clients). Uses whole-file caching and callbacks for cache consistency.
-- **Ceph**: A modern distributed file and object store, providing POSIX compatibility through its RADOS block layer and CRUSH data placement algorithm.
+### FreeBSD
+
+FreeBSD is a complete, open-source Unix-like operating system known for stability and performance.
+
+| Feature | FreeBSD | Linux |
+|---------|---------|-------|
+| License | BSD (permissive) | GPL (copyleft) |
+| Kernel+userland | Developed together as a complete OS | Kernel only; userland from GNU |
+| Device driver | Newbus (abstraction layer) | Platform-specific |
+| Networking | Highly optimized, kernel-level | Strong, mostly in-kernel |
+| File system | UFS2 (ZFS in FreeBSD) | VFS layer, many F/S |
+| jails | Lightweight virtualization | Namespaces |
+
+#### FreeBSD Jails
+
+**Jails** are FreeBSD's OS-level virtualization (precursor to Linux containers):
+
+```bash
+# Creating a jail
+ezjail-admin create webjail '192.168.1.100'
+ezjail-admin start webjail
+
+# Comparison with Docker:
+# - Jail shares the kernel (same as containers)
+# - Jail has its own IP address (mandatory)
+# - No image layering (Docker innovation)
+# - Jails predate Linux namespaces by ~5 years
+```
+
+### Minix and Microkernels
+
+**Minix** (by Andrew Tanenbaum) is a **microkernel** — only essential services run in kernel mode.
+
+```
+┌──────────────────────────────────────────────────────┐
+│ User Mode                                            │
+│ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐│
+│ │ File     │ │ Process  │ │ Device   │ │ Network  ││
+│ │ Server   │ │ Manager  │ │ Drivers  │ │ Stack    ││
+│ └──────────┘ └──────────┘ └──────────┘ └──────────┘│
+│ ┌──────────────────────────────────────────────────┐ │
+│ │ IPC: message passing                              │ │
+│ └──────────────────────────────────────────────────┘ │
+├──────────────────────────────────────────────────────┤
+│ Kernel Mode (microkernel)                            │
+│ Only: IPC, scheduling, lowest-level interrupt        │
+│ handling                                             │
+│ Size: ~12,000 lines of code (Minix 3)                │
+├──────────────────────────────────────────────────────┤
+│ Hardware                                              │
+└──────────────────────────────────────────────────────┘
+```
+
+**Advantage**: If a file server crashes, it can be restarted without crashing the whole system.
+**Disadvantage**: IPC overhead makes microkernels slower for some operations.
+
+**seL4**: A formally verified microkernel. Proved mathematically correct with Isabelle/HOL theorem prover. IPC latency ~130ns (highly optimized).
+
+### Real-Time Operating Systems
+
+#### Types of Real-Time Systems
+
+| Type | Description | Deadline Consequences | Example |
+|------|-------------|----------------------|---------|
+| **Hard real-time** | Missing a deadline is catastrophic | System failure, data loss | Airbag controller, pacemaker |
+| **Firm real-time** | Results become worthless | Data degradation | Video streaming |
+| **Soft real-time** | Value degrades after deadline | Quality reduction | Audio processing |
+
+#### RTOS Scheduling
+
+**Rate Monotonic Scheduling (RMS)**: Preemptive, fixed-priority. Shorter period = higher priority.
+
+**Earliest Deadline First (EDF)**: Dynamic priority — the task with the earliest deadline runs next.
+
+```c
+// Simplified EDF scheduler
+struct task {
+    int deadline;        // Absolute deadline (ticks)
+    int computation;     // Remaining computation time
+    void (*run)(void);
+};
+
+struct task *edf_schedule(struct task tasks[], int n) {
+    struct task *best = NULL;
+    for (int i = 0; i < n; i++) {
+        if (tasks[i].computation > 0) {  // Runnable
+            if (!best || tasks[i].deadline < best->deadline) {
+                best = &tasks[i];  // Earliest deadline
+            }
+        }
+    }
+    return best;
+}
+```
+
+#### RTOS Examples
+
+| RTOS | Type | Use Case |
+|------|------|----------|
+| VxWorks | Hard real-time | SpaceX Dragon, Mars rovers |
+| FreeRTOS | Hard real-time | Embedded/IoT, ESP32 |
+| QNX | Hard real-time | Automotive (BlackBerry), medical |
+| RT-Linux | Soft/Hard real-time | Industrial, audio production |
+| Zephyr | Hard real-time | IoT, Bluetooth devices |
+
+#### Priority Inversion Problem
+
+A high-priority task is blocked waiting for a resource held by a low-priority task that has been preempted by a medium-priority task.
+
+```
+Time →
+High:    ████────WAITING─────────────────────────────────────────████
+Medium:  ──────██████████████████████████████████────────────────────
+Low:     ──────────███───(preempted by medium)───────────────███
+                    ↑ High waits for Low's mutex
+                    ↑ Medium runs (unrelated), preventing Low from finishing
+
+Solution: Priority inheritance — Low temporarily inherits High's priority
+(POSIX: pthread_mutexattr_setprotocol with PTHREAD_PRIO_INHERIT)
+```
 
 ## Summary
 
-The Linux boot process transitions from firmware to bootloader to kernel to init. Windows NT combines a microkernel-like core with monolithic executive services. Android adapts Linux for mobile with Binder IPC, wake locks, and ART. RTOS guarantees deterministic scheduling through RMS and EDF. Distributed OSs face fundamental challenges of partial failure, clock synchronisation, and scalability.
+- Windows uses a hybrid kernel with an Executive layer, HAL, and priority-driven scheduler
+- Linux uses a monolithic kernel with CFS scheduler, dynamic task_struct, and loadable modules
+- macOS XNU combines Mach (IPC, VM, threads) + BSD (processes, networking, FS) + I/O Kit
+- FreeBSD developed jails (precursor to containers) and ZFS
+- Minix and seL4 demonstrate microkernel principles: minimal kernel, servers in user space
+- Real-time systems require deterministic timing: RMS and EDF scheduling
+- Priority inversion is solved by priority inheritance
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. List the four major stages of the Linux boot process.
-2. What is the role of the HAL in Windows NT?
-3. How does the Android kernel differ from standard Linux kernels?
-4. What distinguishes hard real-time from soft real-time scheduling?
-5. What is the biggest architectural challenge in building a distributed operating system?
+1. Compare the kernel architectures of Windows, Linux, and macOS. What are the advantages and disadvantages of each approach?
+2. What is priority inversion? How does priority inheritance solve it?
+3. What is the difference between a hard real-time and a soft real-time system? Give examples of each.
 
-### Application Problems
+### Intermediate
 
-1. An RTOS must schedule three periodic tasks: T1 (period 10 ms, execution 3 ms), T2 (period 20 ms, execution 5 ms), T3 (period 30 ms, execution 8 ms). Determine whether this set is schedulable under RMS using the Liu & Layland bound.
-2. Explain the sequence of system calls from the moment a user presses the power button on an Android device to the appearance of the home screen. Which Android-specific components (Binder, Zygote, System Server) are involved?
-3. A distributed file system uses write-back caching. If a client caches a file modification and crashes before writing back, the change is lost. Propose a mechanism to reduce this window while maintaining write performance.
+4. Write a program demonstrating priority inheritance on Linux. Create three threads at different priorities that share a mutex (use `pthread_mutexattr_setprotocol` with `PTHREAD_PRIO_INHERIT`). Show the thread execution order with and without priority inheritance.
+5. Install and run FreeRTOS in a QEMU VM. Write a program with two tasks: a periodic sensor reading task (1 Hz) and a data processing task. Use a queue to pass data between them. Measure worst-case execution time (WCET).
+6. Write a **simple EDF scheduler simulator** in C. Given a list of tasks (period, computation time), simulate scheduling over 1000 time units. Count deadline misses. Compare the number of deadline misses for EDF vs rate-monotonic scheduling.
 
-### Challenge Problem
+### Advanced
 
-1. Implement a minimal bootloader simulator: write a program that reads an ELF binary (representing a kernel), loads it into memory at the appropriate address, switches the CPU mode (using assembly), and jumps to the entry point. The "kernel" should initialise a minimal GDT and IDT, set up a basic page table, and print "Hello from kernel!" to the VGA text buffer. (Requires understanding of real-mode/protected-mode switching and x86 assembly.)
+7. Create a **Minix-style microkernel prototype** using `setjmp`/`longjmp` or signals. Implement: a kernel (message passing only), a file server process, a process manager server, and a user program. Each component runs as a separate process. The kernel provides only IPC; the file server handles file operations; the process manager handles fork/exit. Demonstrate that the file server can be restarted without crashing the kernel.
+8. Build a **minimal kernel** for x86 using GRUB as a bootloader. Implement: a GDT with ring 0/3, a simple page allocator, a keyboard interrupt handler (IRQ 1), and a system call interface. Boot it in QEMU using `multiboot`. Measure how many lines of code are needed for the absolute minimum OS.
+9. Write a benchmark comparing **IPC performance** across systems. Measure message latency and throughput for:
+   - Linux: pipe, Unix domain socket, shared memory, TCP localhost
+   - Compare with microbenchmark numbers from seL4 (130ns IPC), Mach (3-5µs), and Windows ALPC
+   - Explain the performance differences in terms of kernel design (monolithic vs microkernel, number of context switches per IPC, cache effects)

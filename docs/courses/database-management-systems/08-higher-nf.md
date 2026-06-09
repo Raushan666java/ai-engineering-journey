@@ -1,89 +1,397 @@
-# Chapter 8 — Higher Normal Forms
+# Chapter 8: Higher Normal Forms and Denormalization
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) identify multi-valued dependencies and determine when a relation violates 4NF; (2) decompose a relation into 4NF; (3) recognize join dependencies and 5NF; (4) state the domain-key normal form; and (5) evaluate the practical trade-offs involved in denormalization.
+- Define multi-valued dependencies and fourth normal form (4NF)
+- Define join dependencies and fifth normal form (5NF)
+- Understand the Domain-Key Normal Form (DKNF) as the ultimate normal form
+- Recognize when to denormalize for performance
+- Apply practical trade-offs between normalization and performance
 
-## 8.1 Multi-valued Dependencies
+## Theory
 
-A multi-valued dependency (MVD), denoted by alpha rarrrarr beta, captures a constraint in which the set of values of beta is independent of the set of values of the remaining attributes. Formally, given a relation r with attributes R, let gamma = R minus (alpha union beta). The MVD alpha rarrrarr beta holds if for any two tuples t1 and t2 with t1[alpha] = t2[alpha], there exist tuples t3 and t4 such that t3[alpha] = t1[alpha], t3[beta] = t1[beta], t3[gamma] = t2[gamma], and t4[alpha] = t1[alpha], t4[beta] = t2[beta], t4[gamma] = t1[gamma].
+### 8.1 Beyond BCNF
 
-Intuitively, the MVD means that the values of beta are independent of the values of gamma given a fixed value of alpha. Every functional dependency is also a multi-valued dependency: if alpha rarr beta, then alpha rarrrarr beta. However, the converse does not hold.
+BCNF eliminates redundancy from functional dependencies, but other types of dependencies can still cause redundancy:
 
-Consider a relation Projects(emp_id, skill, language). An employee may have multiple skills and may speak multiple languages. These are independent attributes. The relation contains redundancy because each skill is repeated for each language. The MVDs emp_id rarrrarr skill and emp_id rarrrarr language hold.
+- **Multi-valued dependencies (MVDs)** — cause independent attributes to repeat
+- **Join dependencies (JDs)** — cause information to be split/rejoined in specific patterns
 
-## 8.2 Fourth Normal Form
+Higher normal forms address these: 4NF handles MVDs, 5NF handles JDs, and DKNF is the theoretical endpoint of normalization.
 
-Fourth normal form (4NF) eliminates redundancy caused by multi-valued dependencies. A relation R is in 4NF if it is in BCNF and for every non-trivial MVD alpha rarrrarr beta in F-plus, alpha is a superkey.
+### 8.2 Multi-Valued Dependencies
 
-The 4NF decomposition algorithm is analogous to BCNF decomposition. Given a relation R and a set of FDs and MVDs, if R is not in 4NF, identify a violating MVD alpha rarrrarr beta. Decompose R into (alpha union beta) and (R minus beta). Repeat recursively until all relations are in 4NF.
+A **multi-valued dependency (MVD)** X →→ Y holds if, given a value for X, the set of Y values is independent of all other attributes.
 
-Using the earlier example, Projects(emp_id, skill, language) violates 4NF because emp_id is not a superkey but emp_id rarrrarr skill holds. Decompose into EmployeeSkill(emp_id, skill) and EmployeeLanguage(emp_id, language). Both resulting relations are in 4NF.
+Formally: In relation R, X →→ Y if for any two tuples t1 and t2 with t1[X] = t2[X], there exists a tuple t3 such that: t3[X] = t1[X], t3[Y] = t1[Y], t3[Z] = t2[Z] (where Z = R − (X ∪ Y)).
 
-## 8.3 Join Dependencies and Fifth Normal Form
+**Example:** Consider a relation for university clubs:
 
-A join dependency (JD), denoted by bowtie {R1, R2, Rk}, states that a relation is equal to the natural join of its projections onto the attribute sets R1 through Rk. A relation satisfies a join dependency if it can be losslessly decomposed into those projections and then reconstructed via natural join.
+```
+CLUB_MEMBER(club, student_name, activity)
+```
 
-Fifth normal form (5NF), also called project-join normal form (PJNF), requires that every join dependency in the relation be implied by the candidate keys. Formally, a relation R is in 5NF if for every non-trivial JD bowtie {R1, R2, Rk}, each Ri is a superkey of R.
+A club has many members and many activities. These facts are independent.
 
-A join dependency is trivial if one of the Ri equals the entire relation. The non-trivial case typically arises when a relation represents a ternary or higher-degree relationship that must be decomposed into its component binary relationships.
+| club | student_name | activity |
+|------|-------------|----------|
+| Chess | Alice | Tournament |
+| Chess | Alice | Practice |
+| Chess | Bob | Tournament |
+| Chess | Bob | Practice |
 
-Consider a relation Supply(supplier, part, project) with the constraint that if supplier s supplies part p and supplier s supplies project j and part p is used in project j, then supplier s supplies part p to project j. This constraint cannot be expressed as a functional or multi-valued dependency but can be expressed as the JD bowtie { {supplier, part}, {part, project}, {supplier, project} }. If this JD holds and is not implied by candidate keys, the relation is not in 5NF.
+This table has 4 rows for just 2 students and 2 activities. This is **redundancy** caused by the MVD `club →→ student_name` and `club →→ activity`.
 
-In practice, 5NF violations are rare, and the decomposition may introduce more complexity than it resolves. Most database designs that are in 4NF are acceptably normalized.
+The MVD says: For a given club, the set of members and the set of activities are independent. Every member participates in every activity.
 
-## 8.4 Domain-Key Normal Form
+**Trivial MVDs:** An MVD X →→ Y is trivial if Y ⊆ X or X ∪ Y = R (all attributes).
 
-Domain-key normal form (DKNF) is the ultimate normal form in which all constraints are enforced purely through domain constraints and key constraints. A relation is in DKNF if every constraint on the relation is a logical consequence of the domain constraints and the key constraints.
+**FDs vs. MVDs:**
+- Every FD is also an MVD: If X → Y, then X →→ Y
+- But not vice versa: MVDs indicate independence, not determination
 
-A schema in DKNF has the property that all integrity constraints can be checked simply by verifying domain membership and key uniqueness. No additional check constraints or assertion mechanisms are required. Achieving DKNF is difficult in practice because many real-world constraints cannot be expressed as domain or key constraints alone.
+### 8.3 Fourth Normal Form (4NF)
 
-## 8.5 Denormalization and Practical Trade-offs
+A relation is in 4NF if:
+1. It is in BCNF
+2. For every non-trivial MVD X →→ Y, X is a **superkey**
 
-Normalization is not an end in itself but a means to eliminate update anomalies and redundancy. In practice, designers sometimes deliberately denormalize a schema by combining relations that satisfy higher normal forms. Denormalization trades update-time correctness for query-time performance.
+**Fixing the Club_Member example:** The MVD `club →→ student_name` has left side "club" which is NOT a superkey. Decompose by the MVD:
 
-The typical motivation for denormalization is query performance. A fully normalized schema may require many joins for common queries, and join operations are expensive, especially on large datasets. By storing redundant data, a denormalized schema can reduce the number of joins required.
+```sql
+-- Decompose into two tables, eliminating the MVD
+CREATE TABLE club_member (
+    club VARCHAR(50),
+    student_name VARCHAR(100),
+    PRIMARY KEY (club, student_name)
+);
 
-However, denormalization introduces update anomalies. When the same fact is stored in multiple places, updates must be applied consistently in every location, or the database becomes inconsistent. Denormalization may be justified when the database is predominantly read-only, when query performance is critical, or when the data warehouse context favors star schemas and snowflake schemas over normalized designs.
+CREATE TABLE club_activity (
+    club VARCHAR(50),
+    activity VARCHAR(100),
+    PRIMARY KEY (club, activity)
+);
 
-The decision to denormalize should be made carefully, with a clear understanding of the query patterns, update frequency, and acceptable levels of inconsistency. In many cases, materialized views and indexes can achieve performance goals without sacrificing normalization.
+-- Now adding a third activity only adds 1 row to club_activity
+-- The cross product of members × activities is no longer materialized
+```
 
-## 8.6 Comparison of Normal Forms
+**Another Example:** Employee skills and languages
 
-The normal forms form a strict hierarchy. Every relation in BCNF is also in 3NF. Every relation in 3NF is also in 2NF. Every relation in 2NF is also in 1NF. Similarly, every relation in 4NF is in BCNF, and every relation in 5NF is in 4NF. The hierarchy is: 5NF subset of 4NF subset of BCNF subset of 3NF subset of 2NF subset of 1NF.
+```
+EMP_SKILL_LANG(emp_id, skill, language)
+```
 
-Each progressively stricter normal form eliminates additional anomalies. A relation in 1NF eliminates repeating groups. A relation in 2NF eliminates partial dependencies. A relation in 3NF eliminates transitive dependencies. A relation in BCNF eliminates dependencies where the determinant is not a candidate key. A relation in 4NF eliminates non-trivial multi-valued dependencies that are not implied by candidate keys. A relation in 5NF eliminates join dependencies not implied by candidate keys.
+FDs: `emp_id →→ skill`, `emp_id →→ language` (MVDs)
 
-In practice, achieving BCNF or 3NF is the standard target for most database designs. Fourth normal form is targeted when multi-valued dependencies are identified. Fifth normal form is rarely pursued because violations are uncommon and the resulting decomposition may introduce more complexity than it resolves.
+This is not in 4NF unless emp_id is a superkey. Decompose:
 
-## 8.7 Normalization and Performance
+```sql
+CREATE TABLE emp_skill (emp_id INTEGER, skill VARCHAR(50), PRIMARY KEY (emp_id, skill));
+CREATE TABLE emp_language (emp_id INTEGER, language VARCHAR(50), PRIMARY KEY (emp_id, language));
+```
 
-Normalization should not be viewed as a purely mechanical process. The normalized schema provides a clean, anomaly-free representation of the data. However, queries on a normalized schema may require many joins, and joins are among the most expensive database operations. The physical database design process, which occurs after logical schema design, addresses performance through indexing, materialized views, and selective denormalization.
+**4NF Decomposition Algorithm:**
+1. Find a violating MVD X →→ Y (X not a superkey)
+2. Decompose R into R1 = (X ∪ Y) and R2 = (R − Y)
+3. Continue until all relations are in 4NF
 
-The relationship between normalization and performance is sometimes misunderstood. Normalization does not cause poor performance in itself. Poor performance is caused by the absence of appropriate access structures. A fully normalized schema with appropriate indexes often outperforms a denormalized schema without indexes because the optimizer can choose among alternative access paths.
+### 8.5 Join Dependencies and Fifth Normal Form (5NF)
 
-Denormalization becomes relevant when queries require data from multiple relations and the join overhead is unacceptable despite indexing. In such cases, the designer may selectively denormalize by storing redundant data while maintaining application-level consistency. This decision should be documented, and the expected anomalies should be clearly identified.
+A **join dependency (JD)** specifies that a relation can be losslessly decomposed into a set of projections and then reconstructed via joins.
+
+JD notation: `⋈{R₁, R₂, ..., Rₙ}` — the relation is losslessly joinable over these projections.
+
+**Example:** Consider a relation tracking agents, companies, and products:
+
+```
+AGENT_PRODUCT(agent_name, company, product)
+```
+
+Suppose the rule is: "An agent sells for a company AND the agent sells the company's products." This creates a 3-way constraint.
+
+| agent_name | company | product |
+|------------|---------|---------|
+| Alice | Acme | Widget |
+| Alice | Acme | Gizmo |
+| Alice | Beta | Widget |
+| Bob | Acme | Widget |
+
+This relation has a join dependency: `⋈{AGENT_PRODUCT(agent_name, company), AGENT_PRODUCT(company, product), AGENT_PRODUCT(agent_name, product)}`
+
+The relation is a 3-way join of its three binary projections. This JD means the relation cannot be decomposed into fewer than 3 tables without losing information.
+
+**Fifth Normal Form (5NF) / Projection-Join Normal Form (PJNF):**
+
+A relation is in 5NF if for every non-trivial join dependency `⋈{R₁, ..., Rₙ}`, every Rᵢ is a superkey.
+
+If a relation is in 5NF, it cannot be decomposed further without losing information — it is in "ultimate normal form" with respect to projections and joins.
+
+**Practical note:** 5NF is rare in practice. Most designs that reach 4NF are effectively in 5NF. The AGENT_PRODUCT example above must be decomposed into three tables:
+
+```sql
+CREATE TABLE agent_company (
+    agent_name VARCHAR(50),
+    company VARCHAR(50),
+    PRIMARY KEY (agent_name, company)
+);
+
+CREATE TABLE company_product (
+    company VARCHAR(50),
+    product VARCHAR(50),
+    PRIMARY KEY (company, product)
+);
+
+CREATE TABLE agent_product (
+    agent_name VARCHAR(50),
+    product VARCHAR(50),
+    PRIMARY KEY (agent_name, product)
+);
+
+-- The original data is recovered via:
+-- SELECT * FROM agent_company
+-- NATURAL JOIN company_product
+-- NATURAL JOIN agent_product;
+```
+
+### 8.6 Domain-Key Normal Form (DKNF)
+
+**Domain-Key Normal Form** (Ronald Fagin, 1981) is the theoretical ultimate normal form.
+
+A relation is in DKNF if every constraint is a logical consequence of:
+- **Domain constraints:** Attribute values are from specified domains
+- **Key constraints:** Every relation has a key
+
+If a database is in DKNF, all constraints are enforced automatically by the domain and key mechanisms of the DBMS. No additional CHECK constraints, assertions, or triggers are needed.
+
+In practice, DKNF is rarely achievable because:
+- Business rules are often too complex to express purely as domain and key constraints
+- The decomposition required may be impractical
+
+### 8.7 Denormalization
+
+**Denormalization** is the intentional introduction of redundancy into a normalized database to improve query performance. It is the opposite of normalization.
+
+**When to denormalize:**
+- **Read-heavy workloads:** When reads vastly outnumber writes
+- **Reporting queries:** Complex aggregations across many joined tables
+- **Pre-joined data:** Materialized views that pre-compute joins
+- **Caching summary data:** Storing computed aggregates (e.g., order total alongside line items)
+
+**Denormalization Techniques:**
+
+**1. Pre-joining:** Storing frequently joined data in one table.
+
+```sql
+-- Normalized (3NF)
+SELECT c.name, o.order_date FROM customers c JOIN orders o ON c.id = o.customer_id;
+
+-- Denormalized: Add customer_name to orders table
+CREATE TABLE orders (
+    order_id INTEGER PRIMARY KEY,
+    customer_id INTEGER,
+    customer_name VARCHAR(100),  -- Denormalized!
+    order_date DATE
+);
+-- Now: SELECT name, order_date FROM orders (no join needed)
+```
+
+**2. Pre-calculated aggregates:**
+
+```sql
+-- Denormalized order_summary for fast reporting
+CREATE TABLE order_summary (
+    order_id INTEGER PRIMARY KEY,
+    item_count INTEGER,       -- Denormalized: COUNT of line items
+    total_amount DECIMAL(12,2) -- Denormalized: SUM of line item totals
+);
+```
+
+**3. Derived tables and materialized views:**
+
+```sql
+-- PostgreSQL materialized view (automatically maintained denormalization)
+CREATE MATERIALIZED VIEW customer_monthly_sales AS
+SELECT c.customer_id, c.name,
+       EXTRACT(YEAR FROM o.order_date) AS year,
+       EXTRACT(MONTH FROM o.order_date) AS month,
+       SUM(oi.quantity * oi.price) AS total
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id
+JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY c.customer_id, c.name, EXTRACT(YEAR FROM o.order_date), EXTRACT(MONTH FROM o.order_date);
+```
+
+**4. Storing derived values with triggers:**
+
+```sql
+-- Maintain denormalized product_review_count
+CREATE TABLE product (
+    product_id INTEGER PRIMARY KEY,
+    product_name VARCHAR(200),
+    review_count INTEGER DEFAULT 0,  -- Denormalized
+    avg_rating DECIMAL(3,2)           -- Denormalized
+);
+
+-- Trigger to keep review_count updated
+CREATE FUNCTION update_product_stats() RETURNS TRIGGER AS $$
+BEGIN
+    UPDATE product
+    SET review_count = (SELECT COUNT(*) FROM review WHERE product_id = NEW.product_id),
+        avg_rating = (SELECT ROUND(AVG(rating), 2) FROM review WHERE product_id = NEW.product_id)
+    WHERE product_id = NEW.product_id;
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+```
+
+**5. Array or JSON columns:**
+
+```sql
+-- Store related data in a JSON column instead of a separate table
+CREATE TABLE orders (
+    order_id INTEGER PRIMARY KEY,
+    customer_id INTEGER,
+    items JSONB,  -- Denormalized: order items stored as JSON
+    total DECIMAL(12,2)
+);
+
+-- Sample data: items = '[{"product": "Widget", "qty": 2, "price": 9.99}]'
+```
+
+### 8.8 Risks of Denormalization
+
+- **Update anomalies return:** Data must be updated in multiple places
+- **Increased storage:** Redundant data consumes disk space
+- **Application complexity:** Code must maintain redundant data correctly
+- **Inconsistency risk:** If updates are not synchronized, data becomes inconsistent
+- **Less flexible:** Denormalized schemas are harder to adapt to new requirements
+
+**Best Practice:** Start with a fully normalized design. Denormalize only when:
+1. Performance measurements show a clear need
+2. The performance gain is significant (typically 10x or more for affected queries)
+3. You have mechanisms to maintain consistency (triggers, application logic, materialized view refresh)
+
+## Examples
+
+**Example 8.1: Full 4NF Decomposition**
+
+Given: `DOCTOR_INFO(doctor_id, patient, specialty)`
+
+Suppose a doctor can have multiple specialties and treat multiple patients, and these are independent (any doctor can apply any of their specialties to any patient).
+
+MVDs: `doctor_id →→ patient`, `doctor_id →→ specialty`
+
+Candidate key: (doctor_id, patient, specialty) — all three columns
+
+This is in BCNF (the only key is the full set of attributes, so no non-trivial FDs exist). But it violates 4NF because of the MVDs.
+
+Decomposition:
+
+```sql
+-- 4NF decomposition
+CREATE TABLE doctor_patient (
+    doctor_id INTEGER,
+    patient VARCHAR(100),
+    PRIMARY KEY (doctor_id, patient)
+);
+
+CREATE TABLE doctor_specialty (
+    doctor_id INTEGER,
+    specialty VARCHAR(100),
+    PRIMARY KEY (doctor_id, specialty)
+);
+```
+
+**Example 8.2: Practical Denormalization — E-Commerce**
+
+```sql
+-- Fully normalized schema (BCNF)
+-- To display an order, we need 5 JOINs
+
+-- Denormalized: add summary columns to orders
+CREATE TABLE orders_denormalized (
+    order_id INTEGER PRIMARY KEY,
+    customer_id INTEGER,
+    customer_name VARCHAR(200),       -- denormalized from customers
+    customer_email VARCHAR(255),       -- denormalized from customers
+    order_date TIMESTAMP,
+    status VARCHAR(20),
+    item_count INTEGER,                -- denormalized aggregate
+    total_amount DECIMAL(12,2),        -- denormalized aggregate
+    last_modified TIMESTAMP
+);
+
+-- Maintain with application logic or triggers
+INSERT INTO orders_denormalized (
+    order_id, customer_id, customer_name, customer_email,
+    order_date, status, item_count, total_amount
+)
+SELECT
+    o.order_id, o.customer_id, c.name, c.email,
+    o.order_date, o.status,
+    COUNT(oi.*), COALESCE(SUM(oi.quantity * oi.price), 0)
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+LEFT JOIN order_items oi ON o.order_id = oi.order_id
+GROUP BY o.order_id, c.name, c.email, o.order_date, o.status;
+```
 
 ## Summary
 
-This chapter extended normalization theory beyond BCNF. Multi-valued dependencies and 4NF address a class of redundancy not captured by functional dependencies. Join dependencies and 5NF handle higher-order constraints. DKNF represents the theoretical ideal. The normal forms form a strict hierarchy, and achieving BCNF or 3NF is the standard target for most practical designs. The practical decision to denormalize should be based on concrete performance requirements and an understanding of the trade-offs involved.
+- Multi-valued dependencies (MVDs) model independent multi-valued attributes.
+- 4NF eliminates redundancy from MVDs by requiring every MVD left side to be a superkey.
+- Join dependencies (JDs) model lossless decomposition across multiple projections.
+- 5NF is the "ultimate normal form" for projections — no further lossless decomposition is possible.
+- DKNF is the theoretical ideal where all constraints follow from domain and key constraints.
+- Denormalization re-introduces redundancy for performance, but adds complexity and risk.
+- Always measure before denormalizing; start normalized and optimize based on evidence.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. How does a multi-valued dependency differ from a functional dependency?
-2. What is the 4NF decomposition rule?
-3. How does a join dependency differ from a multi-valued dependency?
-4. Why is 5NF rarely pursued in practice?
-5. What conditions might justify denormalization?
+1. What is a multi-valued dependency? How does it differ from a functional dependency?
 
-### Application Problems
+2. Given `PERSON(name, degree, hobby)` where a person can have multiple degrees and multiple hobbies independently, identify the MVDs and explain why this table violates 4NF.
 
-1. Given R(A, B, C, D) with MVDs A rarrrarr B and A rarrrarr C, and FD A rarr D: (a) identify the candidate keys, (b) determine the highest normal form, (c) decompose into 4NF.
-2. Consider a relation CourseInstructor(instructor, course, textbook) where an instructor teaches a course using one set of textbooks, and multiple instructors may teach the same course using different textbooks. Identify the MVDs and normalize to 4NF.
-3. A relation Salesperson(car, customer, color) records which car each salesperson sold to which customer and the car's color. If a salesperson sells a particular model in a particular color and a customer buys that model in that color from that salesperson, then the relation records exactly that triple. Is this relation in 5NF? Justify your answer.
+3. Describe a scenario where 4NF decomposition would eliminate redundancy but the table was already in BCNF.
 
-### Challenge Problem
+4. What is denormalization? Name two situations where denormalization is appropriate.
 
-Research the concept of embedded join dependencies and prove that any relation with a join dependency that is not implied by candidate keys must have a specific structure. Construct a concrete example of a relation in 4NF that is not in 5NF, showing all data and the join dependency. Explain why this redundancy cannot be detected by functional or multi-valued dependency analysis alone.
+### Intermediate
+
+5. Given `CAR(vin, color, feature)` where a car has one color but multiple features, and `vin → color` is an FD and `vin →→ feature` is an MVD:
+   a) What normal form is this in?
+   b) Decompose to 4NF.
+   c) Write the CREATE TABLE statements.
+
+6. Explain the difference between 4NF and 5NF. Give an example of a relation that is in 4NF but not in 5NF.
+
+7. For the `AGENT_PRODUCT` relation in Section 8.5, explain why the 3-table decomposition is necessary and what anomaly would occur with a 2-table decomposition.
+
+8. A social media database has a table `FRIENDS(user_id, friend_id, interest, group)`:
+   - Users have friends (MVD on user →→ friend)
+   - Users have interests (MVD on user →→ interest)
+   - Users belong to groups (MVD on user →→ group)
+   - These are all independent
+   
+   Normalize to 4NF. How many tables result?
+
+### Advanced
+
+9. Consider a university database with the rule: "A student can take a course only if the course is offered by the student's department." The relation `ENROLLMENT(student_id, dept_id, course_id)` has constraints:
+   - `student_id → dept_id` (students belong to one department)
+   - `course_id → dept_id` (courses belong to one department)
+   
+   Is this in BCNF? 4NF? 5NF? Decompose if necessary.
+
+10. For a STREAMING service:
+    - A user can have multiple subscriptions
+    - A user can watch on multiple devices
+    - A device can be used by multiple users
+    - A subscription covers multiple devices
+    
+    Design a normalized schema. Then design a denormalized version suitable for a dashboard that shows "active users today" with sub-second response time. What trade-offs does each design make?
+
+11. Research and explain: Why is DKNF considered the "ultimate" normal form but rarely achieved in practice? Provide an example of a business constraint that cannot be expressed as domain/key constraints alone.

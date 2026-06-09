@@ -1,87 +1,356 @@
-# Chapter 11 — Recovery
+# Chapter 11: Recovery System
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) classify the types of failures that can affect a database; (2) describe the storage hierarchy and its implications for recovery; (3) explain log-based recovery using UNDO, REDO, and UNDO/REDO logging; (4) describe the role of checkpoints; (5) explain the ARIES recovery algorithm; and (6) describe backup and restore strategies.
+- Classify types of database failures and their causes
+- Understand the role of the log in database recovery
+- Implement log-based recovery with undo and redo
+- Explain checkpointing and its purpose
+- Describe the ARIES recovery algorithm
+- Understand steal/no-steal and force/no-force buffer policies
 
-## 11.1 Failure Classification
+## Theory
 
-Database failures are classified into several categories. Transaction failures occur when a transaction cannot complete due to logical errors, such as division by zero or constraint violations, or system-induced aborts, such as deadlock resolution. System failures, also called soft crashes, occur when the database system stops functioning but the storage media remain intact. Power outages, operating system crashes, and DBMS software errors cause system failures. The contents of main memory are lost, but data on disk persists. Media failures, or hard crashes, occur when physical storage media are damaged. Disk head crashes, controller failures, and accidental data deletion are media failures. Natural disasters and physical site destruction constitute catastrophic failures. Recovery mechanisms must address each failure type appropriately.
+### 11.1 Types of Failures
 
-## 11.2 Storage Hierarchy
+Database systems face various failure scenarios, each requiring different recovery strategies:
 
-The storage hierarchy in a database system spans three levels. Volatile storage, such as main memory and CPU cache, loses all contents when the system loses power. Access is extremely fast, but data is not persistent. Non-volatile storage, primarily magnetic disks and solid-state drives, retains data across power failures. Access is slower than main memory by several orders of magnitude. Stable storage is a theoretical construct in which data cannot be lost, approximated in practice by redundant RAID configurations and replication.
+**Transaction Failures:** A transaction cannot complete due to:
+- Logical errors (division by zero, constraint violation, deadlock victim)
+- System errors (deadlock, resource limit exceeded)
 
-The fundamental observation underlying recovery is that data must be on non-volatile storage to survive system failures. However, operations on non-volatile storage are orders of magnitude slower than operations on volatile storage. The DBMS therefore maintains a buffer pool in main memory. Data items are read from disk into the buffer pool before being accessed. Modified data items are written back to disk periodically. If a system failure occurs before modified data reaches disk, the database may be in an inconsistent state. Recovery algorithms manage this tension between performance and durability.
+**System Failures (Soft Crashes):** The DBMS, operating system, or hardware crashes, but non-volatile storage is intact. The contents of volatile memory (buffers) are lost. This is the most common recovery scenario.
 
-## 11.3 Log-Based Recovery
+**Media Failures (Hard Crashes):** The storage device fails. Data on disk is partially or fully lost. Requires recovery from backups.
 
-The log is a sequential record of all modifications to the database. Every log record describes a single write operation and contains the transaction identifier, the data item identifier, the old value (before-image), and the new value (after-image). Additional log records mark transaction start and commit or abort.
+**Natural Disasters:** Fire, flood, earthquake. Requires geographically distributed backups.
 
-The write-ahead logging (WAL) protocol requires that log records be written to stable storage before the corresponding data modifications are written to disk. Specifically, the before-image of a modification must be written to the log before the data page is written to disk, and the commit log record must be written before the transaction is considered committed. WAL ensures that both UNDO and REDO information are available in the log when needed.
+**Human Error:** Accidental DROP TABLE, incorrect UPDATE without WHERE clause, or malicious data destruction.
 
-UNDO logging writes only before-images. During recovery, any transaction that did not commit is undone by restoring before-images. The undo operation is idempotent: applying the same before-image multiple times produces the same result. UNDO logging alone does not guarantee durability; if a committed transaction's data has not been written to disk before a crash, the update is lost.
+### 11.2 Storage Hierarchy
 
-REDO logging writes only after-images. During recovery, any transaction that committed is redone by applying after-images. REDO logging alone does not guarantee atomicity; if an uncommitted transaction wrote data to disk before crashing, REDO cannot undo it.
+- **Volatile Storage (RAM, CPU cache):** Fast but loses data on crash. Used for buffers and intermediate results.
+- **Non-Volatile Storage (SSD, HDD):** Persistent. Used for the database itself, logs, and backups.
+- **Stable Storage:** Fully replicated non-volatile storage (RAID, remote mirroring). Survives individual device failures.
 
-UNDO/REDO logging writes both before-images and after-images, providing comprehensive recovery. During recovery, uncommitted transactions are undone using before-images, and committed transactions whose data did not reach disk are redone using after-images. UNDO/REDO logging requires the buffer manager to implement either steal (allowing uncommitted data to be written to disk) and no-force (allowing committed data to remain in the buffer pool), which are precisely the policies that most DBMS implementations use for performance.
+### 11.3 Buffer Management Policies
 
-## 11.4 Checkpoints
+Four policy combinations determine when pages are written to disk:
 
-A checkpoint is a synchronization point between the buffer pool and the log. During a checkpoint, the DBMS flushes all modified buffer pages to disk and writes a checkpoint record to the log. Checkpoints bound the amount of log that must be processed during recovery. Without checkpoints, recovery would require scanning the entire log from the beginning. Checkpoints also ensure that all data modifications up to a certain point are on stable storage, which means that the corresponding log records can be truncated or archived.
+**Force vs. No-Force:**
+- **Force:** All modifications are written to disk BEFORE the transaction commits. Simple recovery (no redo needed), but poor performance (increased I/O).
+- **No-Force:** Modifications may remain in the buffer after commit. Better performance but requires redo during recovery (committed writes might not have reached disk).
 
-Fuzzy checkpointing allows the system to continue processing transactions during the checkpoint operation. The checkpoint record identifies all active transactions and dirty buffer pages, but pages are written to disk asynchronously. After all dirty pages have been written, a checkpoint-end record is written to the log. Fuzzy checkpoints minimize disruption to normal processing.
+**Steal vs. No-Steal:**
+- **Steal:** Dirty pages (modified but uncommitted) can be written to disk before the transaction commits. Requires undo during recovery.
+- **No-Steal:** Dirty pages stay in buffer until commit. No undo needed, but the buffer must be large enough.
 
-## 11.5 ARIES
+**Common Combinations:**
+| Policy | Recovery Needs | Performance |
+|--------|---------------|-------------|
+| Force/No-Steal | Undo only (no redo) | Poor (always flush, no early eviction) |
+| No-Force/Steal | Undo AND redo (most DBMS use this) | Best performance |
 
-ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is the most widely used recovery algorithm in commercial database systems. It employs three passes during recovery. The analysis pass scans the log forward from the last checkpoint to determine the set of dirty pages and the set of active transactions at the time of the crash. The redo pass scans forward from the earliest dirty page identified during analysis and reapplies all logged updates, regardless of whether the originating transactions committed. The undo pass scans backward from the end of the log and undoes the updates of all transactions that were active at the time of the crash.
+Most commercial DBMS (Oracle, PostgreSQL, SQL Server) use **STEAL/NO-FORCE** with ARIES-style recovery.
 
-ARIES uses a data structure called the dirty page table (DPT) to track which buffer pages contain modifications that have not yet been written to disk. Each entry records the page ID and the log sequence number (LSN) of the first log record that dirtied the page. The transaction table records the state and last LSN of each active transaction. The page LSN is stored on each data page and records the LSN of the most recent log record for an update to that page.
+### 11.4 The Write-Ahead Log (WAL)
 
-The key principles of ARIES are write-ahead logging, repeating history during redo, and logging logical operations during undo. Repeating history ensures that after the redo pass, the state of the database reflects exactly the state at the time of the crash. Logging UNDO as a logical operation allows compensation log records to be themselves recoverable.
+The foundation of all modern recovery. **Write-Ahead Logging** requires:
 
-## 11.6 Shadow Paging
+1. Every log record is written to stable storage BEFORE the corresponding data page is written to disk
+2. A transaction's COMMIT record is written to stable storage BEFORE the transaction is reported as committed
 
-Shadow paging is an alternative recovery technique that does not require a log. The database is organized into fixed-size pages. A page table maps logical page numbers to physical disk addresses. When a transaction modifies a page, a new copy of that page is written to a new disk location, and the page table is updated to point to the new copy. The old page remains unchanged and is referred to as the shadow.
+**Log Record Structure:**
+```
+<LSN, TransactionID, PageID, RedoInfo, UndoInfo, PrevLSN>
+```
 
-At transaction commit, the current page table becomes the active page table, and shadow pages are reclaimed. If a crash occurs before commit, the page table is discarded, and the system reverts to the shadow pages. Shadow paging eliminates the need for UNDO logging but requires a separate mechanism for REDO and may cause significant write overhead due to page-copy operations.
+**LSN (Log Sequence Number):** Monotonically increasing number that identifies each log record. Typically the byte offset in the log file.
 
-## 11.7 Backup and Restore Strategies
+**PrevLSN:** Pointer to the previous log record of the same transaction, forming a linked list for each transaction.
 
-A backup is a copy of the database at a point in time. Full backups contain the entire database. Incremental backups contain only data that has changed since the last full backup. Differential backups contain only data that has changed since the most recent full backup.
+**Types of Log Records:**
 
-The recovery point objective (RPO) is the maximum acceptable data loss measured in time. The recovery time objective (RTO) is the maximum acceptable time to restore service. These objectives guide the backup strategy. A typical strategy involves weekly full backups, daily differential backups, and continuous log archiving. High-availability systems may employ mirroring, replication, or standby databases to achieve RPOs of seconds and RTOs of minutes.
+```
+<T1, BEGIN>
+<T1, UPDATE, Table=Accounts, Row=123, OldValue=1000, NewValue=500>
+<T1, COMMIT>
+<T2, BEGIN>
+<T2, UPDATE, Table=Accounts, Row=456, OldValue=2000, NewValue=2500>
+<T2, ABORT>
+```
 
-## 11.8 Buffer Management Policies
+**Physical vs. Logical Logging:**
+- **Physical:** Stores the exact bytes changed (page ID, offset, before/after image). Accurate but more data.
+- **Logical:** Stores the operation (e.g., "INSERT INTO accounts VALUES (1, 500)"). Compact but complex to undo.
+- **Physiological:** Hybrid — physical at page level, logical within page. Used by most systems.
 
-The buffer manager's replacement policy and write policy significantly affect recovery. The replacement policy determines which buffer page to evict when space is needed. Common policies include LRU (least recently used), CLOCK (an approximation of LRU), and DB2's sequential prefetch-aware policy. The choice of replacement policy affects the number of buffer misses and thus overall performance.
+### 11.5 Log-Based Recovery Algorithms
 
-The steal policy determines whether a buffer manager can write uncommitted data to disk. A steal policy improves performance by allowing the buffer manager to evict dirty pages belonging to ongoing transactions. A no-steal policy simplifies recovery because uncommitted data is never on disk, but it may degrade performance severely because the buffer pool must hold all uncommitted data.
+**Undo:** Revert the effects of a failed transaction by restoring old values.
 
-The force policy determines whether all pages modified by a transaction must be written to disk before the transaction commits. A force policy ensures durability without REDO logging but increases commit latency. A no-force policy allows committed data to remain in the buffer pool, improving response times but requiring REDO logging.
+**Redo:** Re-apply the effects of a committed transaction whose changes may not have reached disk.
 
-Most commercial systems implement steal and no-force policies because they provide the best overall performance. This combination also requires the most complex recovery algorithm, ARIES, which can handle uncommitted data on disk (undo needed) and committed data not on disk (redo needed).
+**Recovery After System Crash:**
+
+```
+1. Analyze Phase: Read the log to determine:
+   - Which transactions had committed before the crash (REDO set)
+   - Which transactions were active at the time of the crash (UNDO set)
+   - The location (LSN) of dirty pages in the buffer
+
+2. Redo Phase: Reapply all changes from all transactions (both committed and uncommitted):
+   - Start from the earliest LSN that could have dirty pages
+   - Process log records forward, reapplying updates
+   - This brings the database to the state at the time of crash
+
+3. Undo Phase: Roll back all uncommitted transactions:
+   - Process log records backward for each transaction in the UNDO set
+   - Restore old values using the undo information in each log record
+   - Write CLRs (Compensation Log Records) to track undo progress
+```
+
+### 11.6 Checkpointing
+
+A checkpoint synchronizes the database state with the log. After a checkpoint, certain dirty pages are guaranteed to be on disk, reducing the amount of work needed during recovery.
+
+**Types of Checkpoints:**
+
+**Quiescent Checkpoint (simple, old-style):**
+1. Stop accepting new transactions
+2. Wait for all active transactions to complete
+3. Flush all dirty pages to disk
+4. Write a checkpoint record to the log
+5. Resume accepting transactions
+
+Problem: Database is unavailable during checkpointing.
+
+**Fuzzy Checkpoint (used in modern systems):**
+1. Write a BEGIN_CHECKPOINT record
+2. Record the current transaction table and dirty page table
+3. Flush dirty pages to disk gradually (in background)
+4. Write an END_CHECKPOINT record
+
+The database remains fully operational during fuzzy checkpoints.
+
+**Action Consistent Checkpoint:** Checkpoint at a point where no actions are in progress (simpler but still requires coordination).
+
+### 11.7 The ARIES Algorithm
+
+ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is the most widely used recovery algorithm, developed at IBM. It is used by IBM DB2, Microsoft SQL Server, and influences many others.
+
+**Three Principles of ARIES:**
+1. **Write-Ahead Logging:** Log records precede data writes
+2. **Repeating History During Redo:** Re-process all operations from the point of the last checkpoint
+3. **Logging During Undo:** Track undo progress with Compensation Log Records (CLRs) to ensure idempotent recovery
+
+**ARIES Data Structures:**
+
+**Transaction Table:** Tracks the state of each active transaction:
+- Transaction ID
+- Status (Running, Preparing, Committed, Aborted)
+- Last LSN (the LSN of the most recent log record for this transaction)
+
+**Dirty Page Table (DPT):** Tracks pages modified in the buffer:
+- Page ID
+- Recovery LSN (the LSN of the first log record that caused this page to become dirty)
+
+**ARIES Recovery Phases (in detail):**
+
+```
+Phase 1 — Analysis:
+  - Start from the most recent BEGIN_CHECKPOINT record
+  - Scan log forward to build:
+    - Transaction table (active transactions at crash)
+    - Dirty page table (pages that may not be on disk)
+  - Determine the REDO LSN (the earliest LSN in the dirty page table)
+
+Phase 2 — Redo:
+  - Start from the REDO LSN
+  - Scan log forward to the end
+  - For each update log record:
+    - If the page is dirty AND the page LSN < log LSN: redo the change
+    - Otherwise: skip (page already reflects this change)
+  - Write the REDO END record
+
+Phase 3 — Undo:
+  - Process backward from the end of the log
+  - For each active transaction found during analysis:
+    - Read log records backward
+    - Restore old values using UndoInfo
+    - Write a Compensation Log Record (CLR) for each undo action
+    - CLRs have the format: <CLR, TransactionID, UndoNextLSN, PageID, RedoInfo>
+    - UndoNextLSN points to the next record to undo
+  - Continue until all active transactions are fully undone
+  - Write ABORT END records
+```
+
+**Why ARIES is Idempotent:** If the system crashes again during recovery, ARIES starts over. The CLRs ensure that already-undone operations are not redone, and the redo phase correctly handles pages that were already brought to the correct state.
+
+### 11.8 Media Recovery
+
+For media failures (disk failure), recovery from backups is needed:
+
+```sql
+-- Full backup
+pg_dump database_name > backup.sql        -- Logical backup (PostgreSQL)
+pg_basebackup -D /backup/location          -- Physical backup
+
+-- Point-in-time recovery (PostgreSQL)
+-- 1. Restore from base backup
+-- 2. Apply WAL archives up to the desired point
+-- 3. Start the server in recovery mode
+```
+
+**Backup Strategies:**
+- **Full backup:** Complete copy of the database. Slow, large, but comprehensive.
+- **Incremental backup:** Only data changed since last full or incremental backup. Faster, smaller.
+- **Differential backup:** Only data changed since last full backup. Middle ground.
+- **Continuous archiving:** Stream transaction logs to a remote location. Used for point-in-time recovery.
+
+### 11.9 SQL Recovery Commands
+
+```sql
+-- Explicit transaction control
+BEGIN;
+UPDATE accounts SET balance = balance - 500 WHERE id = 1;
+SAVEPOINT before_fee;
+UPDATE accounts SET fee_applied = TRUE;
+-- Oops, this was a mistake
+ROLLBACK TO SAVEPOINT before_fee;
+-- fee_applied change is undone, balance change is preserved
+UPDATE accounts SET balance = balance - 10 WHERE id = 1;  -- Fee
+COMMIT;
+
+-- System-level recovery
+-- PostgreSQL: Recovery settings in postgresql.conf
+-- restore_command = 'cp /mnt/wal_archive/%f %p'
+-- recovery_target_time = '2026-06-09 14:30:00'
+
+-- MySQL: Binary log replay
+-- mysqlbinlog mysql-bin.000001 | mysql -u root
+```
+
+### 11.10 Recovery in Distributed Systems
+
+Distributed transactions require the **Two-Phase Commit (2PC)** protocol:
+
+**Phase 1 — Prepare:**
+1. Coordinator sends PREPARE to all participants
+2. Each participant writes prepare log record
+3. Each participant responds YES (ready) or NO (abort)
+
+**Phase 2 — Commit/Abort:**
+1. If ALL responded YES: Coordinator writes COMMIT log record, sends COMMIT to all
+2. If ANY responded NO: Coordinator writes ABORT log record, sends ABORT to all
+3. Participants write the final log record and acknowledge
+
+2PC ensures all participants agree on the outcome, even with failures. The **Three-Phase Commit (3PC)** protocol adds a pre-commit phase to avoid blocking under certain failure scenarios.
+
+## Examples
+
+**Example 11.1: Log-Based Recovery Trace**
+
+Consider a simple database with account balances. Initial state: A=100, B=200.
+
+Transactions:
+```
+T1: A = A - 50  (A = 50)
+T1: B = B + 50  (B = 250)
+T1: COMMIT
+T2: A = A + 20  (A = 70)
+--- CRASH ---
+```
+
+Log (simplified):
+```
+LSN 1: <T1, BEGIN>
+LSN 2: <T1, UPDATE, Page=A, Old=100, New=50>
+LSN 3: <T1, UPDATE, Page=B, Old=200, New=250>
+LSN 4: <T1, COMMIT>
+LSN 5: <T2, BEGIN>
+LSN 6: <T2, UPDATE, Page=A, Old=50, New=70>
+--- CRASH ---
+```
+
+Analysis Phase:
+- Transaction Table: T1 committed, T2 active → UNDO set = {T2}, REDO set = {T1, T2}
+- Dirty Page Table: Page A (recovery LSN = 2), Page B (recovery LSN = 3)
+- REDO LSN = 2
+
+Redo Phase (from LSN 2):
+- LSN 2: Redo: A = 50 (ensure A is 50)
+- LSN 3: Redo: B = 250
+- LSN 4: No action (commit — no data change)
+- LSN 5: No action (begin — no data change)
+- LSN 6: Redo: A = 70 (even though T2 will be undone — T2's changes are redone first)
+
+Undo Phase (backward from crash):
+- LSN 6: Undo: A = 50 (restore T2's change). Write CLR: <LSN 7: CLR, T2, UndoNext=5, Page=A, Old=70, New=50>
+- LSN 5: No action needed (BEGIN)
+- Write <T2, ABORT>
+
+Final state: A = 50, B = 250. Correct!
 
 ## Summary
 
-This chapter examined the recovery subsystem of a DBMS. After classifying failures, we described the storage hierarchy and the role of the log. UNDO, REDO, and UNDO/REDO logging strategies were presented, each with different trade-offs for performance and recovery capability. Checkpoints bound the amount of log that must be processed during recovery. The ARIES algorithm, the industry standard, was described in detail with its three-pass recovery procedure. Shadow paging offers a log-free alternative. Backup strategies must balance RPO, RTO, and storage costs. Buffer management policies, particularly the steal and force choices, determine the complexity of the required recovery mechanism.
+- Database failures are classified as transaction, system, media, or catastrophic.
+- The buffer management policy (STEAL/NO-FORCE) determines whether undo and redo are needed.
+- Write-Ahead Logging ensures log records precede data writes to disk.
+- Checkpoints reduce recovery time by establishing safe restart points.
+- ARIES (Analysis → Redo → Undo) is the dominant recovery algorithm.
+- Compensation Log Records make recovery idempotent.
+- Two-Phase Commit coordinates distributed transactions across multiple databases.
+- Regular backups and continuous WAL archiving protect against media failures.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. How does a system failure differ from a media failure?
-2. What is the write-ahead logging protocol and why is it necessary?
-3. What is the purpose of a checkpoint?
-4. What are the three passes of ARIES and what does each accomplish?
-5. Distinguish between incremental and differential backups.
+1. List three types of database failures and give an example of each.
 
-### Application Problems
+2. Explain the Write-Ahead Logging (WAL) protocol. Why is it essential for recovery?
 
-1. Given the following sequence of operations: T1: write(X, old=10, new=20); T2: write(Y, old=5, new=15); T1: commit; T2: write(Z, old=30, new=40); system crash. Assuming UNDO/REDO logging, trace the recovery process. Which transactions are redone? Which are undone?
-2. Explain why the no-steal, force buffer management policy simplifies recovery but degrades performance.
-3. Design a backup schedule for a financial database that requires a maximum data loss of 15 minutes and a maximum recovery time of 4 hours. Justify your choices.
+3. What is the purpose of a checkpoint? How does a fuzzy checkpoint differ from a quiescent checkpoint?
 
-### Challenge Problem
+4. What are the three phases of ARIES recovery? What does each phase accomplish?
 
-Implement a simplified version of the ARIES analysis pass in pseudocode or a programming language. The input should include the checkpoint record, the log records, and the dirty page table from the last checkpoint. The output should be the reconstructed dirty page table and transaction table at the time of the crash. Explain how your algorithm handles the case where a transaction is in the active state during the checkpoint but commits before the crash.
+### Intermediate
+
+5. Consider the following log with a crash occurring at the indicated point:
+```
+LSN 1: <T1, BEGIN>
+LSN 2: <T1, UPDATE, X, Old=10, New=20>
+LSN 3: <T2, BEGIN>
+LSN 4: <T1, UPDATE, Y, Old=5, New=15>
+LSN 5: <T2, UPDATE, X, Old=20, New=30>
+LSN 6: <T1, COMMIT>
+LSN 7: <T2, UPDATE, Z, Old=100, New=200>
+--- CRASH ---
+```
+Determine:
+a) The redo set and undo set
+b) The recovery LSN
+c) The order of redo operations
+d) The order of undo operations
+
+6. Explain the difference between force/no-force and steal/no-steal buffer management policies. Which combination do most commercial databases use and why?
+
+7. What is a Compensation Log Record (CLR) in ARIES? Why are CLRs important for idempotent recovery?
+
+### Advanced
+
+8. Design a recovery scheme for a database that stores bank transactions. The system uses STEAL/NO-FORCE buffering. Write the log records for the following sequence:
+   - T1 begins
+   - T1 debits $500 from Account 1 (balance was $1000)
+   - T2 begins
+   - T2 credits $300 to Account 2 (balance was $500)
+   - T1 commits
+   - T2 debits $200 from Account 1 (balance was $500)
+   - CRASH
+   
+   Then walk through the ARIES recovery process step by step.
+
+9. Compare and contrast the "redo" phase of ARIES with the recovery approach that would be needed for a FORCE/NO-STEAL policy. Which approach is more efficient during normal operation? Which is faster during recovery?
+
+10. In distributed database recovery, the Two-Phase Commit protocol can leave participants in an uncertain ("in-doubt") state. Explain this problem and describe how a participant resolves in-doubt transactions after a failure. How does Three-Phase Commit improve upon 2PC?

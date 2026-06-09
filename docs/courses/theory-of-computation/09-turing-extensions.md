@@ -1,141 +1,183 @@
-# Chapter 9: Extended TM Models and the Church-Turing Thesis
+# Chapter 9: Turing Machine Extensions and the Church-Turing Thesis
 
 ## Learning Objectives
 
-By the end of this chapter, you should be able to: describe extended TM models (multi-dimensional, random-access, offline); understand unrestricted grammars and their equivalence to TMs; distinguish recursive from recursively enumerable languages; understand primitive recursive and partial recursive functions; articulate the Church-Turing thesis and its implications; describe alternative models of computation and their equivalence.
+- Distinguish between recursively enumerable and recursive languages.
+- Describe the universal Turing machine and its significance.
+- Explain the Church-Turing thesis and its implications.
+- Understand the encoding of Turing machines as strings.
+- Recognize the limits of TM-based computation.
+- Understand the concept of oracles and relativized computation.
 
 ## Theory
 
-### Extended Turing Machine Models
+### 9.1 Recursively Enumerable vs Recursive Languages
 
-Several extensions to the basic TM have been proposed, and all turn out to be equivalent in power:
+A language L is **recursively enumerable (RE)** if there exists a Turing machine M such that L(M) = L. This means M halts in the accept state for every w ∈ L, and for w ∉ L, M either halts in reject or **loops forever**.
 
-**Multi-dimensional TM**: The tape extends in two or more dimensions. The head can move up, down, left, or right. This can be simulated on a standard TM by flattening the grid using a pairing function (like the Cantor pairing function $\pi(x, y) = \frac{(x+y)(x+y+1)}{2} + y$).
+A language L is **recursive** (or **decidable**) if there exists a Turing machine M that **halts on all inputs** and L(M) = L. Such a machine is called a **decider**.
 
-**Random-Access TM**: The TM has an additional "address tape" on which it can write an address; a special instruction loads the symbol at that position on the work tape. This allows constant-time random access rather than sequential scanning. Despite the speed advantage, it is no more powerful computationally: a standard TM can simulate random access by scanning to the required position.
+**Relationship:**
+- Every recursive language is RE (a decider is a special case of a recognizer).
+- There exist RE languages that are NOT recursive (Chapter 10: the halting problem).
 
-**Offline TM**: The input is on a separate read-only tape, and the work tape is the only rewritable tape. This model is used in complexity theory to isolate space complexity (the input tape does not count toward space usage).
+**Intuition:** Recognizing a language only requires positive answers to be correct. Deciding requires both positive and negative answers to be correct.
 
-**Oblivious TM**: A TM whose head movement depends only on time (step number), not on input. Every TM can be converted to an oblivious TM.
+### 9.2 Complement of RE Languages
 
-### Unrestricted Grammars
+For a language L:
+- If L is recursive, then L̅ is also recursive (swap accept and reject states in the decider).
+- If L is RE, L̅ may or may not be RE.
+- A language is **co-RE** if its complement is RE.
+- L is recursive **iff** L is both RE and co-RE.
 
-An **unrestricted grammar** is a 4-tuple $G = (V, \Sigma, R, S)$ where productions are of the form $\alpha \to \beta$ with $\alpha, \beta \in (V \cup \Sigma)^*$ and $\alpha$ contains at least one variable. Unlike CFGs, the left-hand side can be a string, not just a single variable. This allows productions to depend on context:
+**Theorem:** L is recursive iff L is RE and co-RE.
 
-$$\alpha A \beta \to \alpha \gamma \beta$$
+**Proof:** If L is recursive, then L is RE and L̅ is recursive (hence RE), so L is RE and co-RE. Conversely, if L is RE via M₁ and L̅ is RE via M₂, construct a decider M that simulates M₁ and M₂ in parallel. One must eventually accept. If M₁ accepts, M accepts; if M₂ accepts, M rejects.
 
-**Theorem 9.1**: Unrestricted grammars generate exactly the recursively enumerable languages.
+### 9.3 Encoding Turing Machines
 
-**Proof sketch**: Given a TM $M$, construct an unrestricted grammar that simulates $M$'s computation in reverse: starting from an accepting configuration, the grammar generates all initial configurations (inputs) that $M$ accepts. Conversely, given an unrestricted grammar, a nondeterministic TM can enumerate derivations and accept those that yield the input string. $\square$
+To talk about TMs as inputs to other TMs, we need to encode them as strings. Turing machines can be encoded in a standard format:
 
-### Recursive and Recursively Enumerable Languages
+Let TM M be described as (Q, Σ, Γ, δ, q₀, q_accept, q_reject). We encode:
+1. Encode states as strings in {q}* (e.g., q = q₀, qq = q₁, etc.).
+2. Encode tape symbols similarly.
+3. Encode transitions as tuples: (state, symbol, new_state, new_symbol, direction).
+4. Concatenate all parts with separators.
 
-**Definition**: A language $L$ is:
+The encoded TM is denoted ⟨M⟩. This encoding allows a TM to examine other TMs as data — a crucial capability.
 
-- **recursive** (decidable) if there exists a TM that decides $L$ (halts on all inputs).
-- **recursively enumerable** (RE, recognizable) if there exists a TM that recognizes $L$ (accepts all strings in $L$ and may loop on strings not in $L$).
+### 9.4 The Universal Turing Machine
 
-**Theorem 9.2**: $L$ is recursive iff both $L$ and $\overline{L}$ are RE.
+A **universal Turing machine (UTM)** is a TM U that takes as input ⟨M, w⟩ (the encoding of a TM M and an input string w) and simulates M on w. U accepts if M accepts w, rejects if M rejects w, and loops if M loops on w.
 
-**Proof**: ($\Rightarrow$) If $L$ is recursive, a decider for $L$ also recognizes $L$, and by flipping accept/reject, recognizes $\overline{L}$.
+**Construction of UTM:**
+U uses a *multitape* architecture (simulatable on a single tape):
 
-($\Leftarrow$) If both $L$ and $\overline{L}$ are RE, let $M_1$ recognize $L$ and $M_2$ recognize $\overline{L}$. Simulate $M_1$ and $M_2$ in parallel (using a 2-tape TM, alternating steps). Exactly one will eventually accept. If $M_1$ accepts, accept; if $M_2$ accepts, reject. This TM always halts and decides $L$. $\square$
+1. **Tape 1:** Stores the description of M (⟨M⟩).
+2. **Tape 2:** Simulates M's tape (copies w, then simulates read/write).
+3. **Tape 3:** Stores M's current state.
 
-### Primitive Recursive Functions
+**Simulation algorithm:**
+1. Initialize Tape 2 with w, Tape 3 with q₀.
+2. Repeat:
+   a. Read symbol under M's head on Tape 2.
+   b. Search Tape 1 for a transition matching current state and symbol.
+   c. If found: update state on Tape 3, write symbol on Tape 2, move head.
+   d. If M is in q_accept → accept. If in q_reject → reject.
+   e. If no matching transition → reject.
 
-The class of **primitive recursive functions** is defined inductively from basic functions using composition and primitive recursion:
+**Significance:** The UTM is the theoretical basis for stored-program computers. A single machine can simulate any other machine by reading its program. This is exactly what happens when you run a program on your computer.
 
-**Basic functions**:
-1. Zero: $Z(x) = 0$
-2. Successor: $S(x) = x + 1$
-3. Projection: $P_i^n(x_1, \ldots, x_n) = x_i$
+### 9.5 The Church-Turing Thesis
 
-**Building operations**:
-1. **Composition**: $f(g_1(\vec{x}), \ldots, g_k(\vec{x}))$
-2. **Primitive recursion**: $f(0, \vec{x}) = g(\vec{x})$, $f(n+1, \vec{x}) = h(f(n, \vec{x}), n, \vec{x})$
+**Church-Turing Thesis:** Everything that is intuitively computable can be computed by a Turing machine.
 
-All primitive recursive functions are total (defined for all inputs). Examples include addition, multiplication, exponentiation, factorial, and the Ackermann function's early levels.
+This is not a theorem (it cannot be proved) but a **thesis** — a claim about the nature of computation that is universally accepted because:
+- Every proposed model of computation (λ-calculus, general recursive functions, Post systems, RAM machines, cellular automata) has been shown equivalent to Turing machines.
+- No one has found a computation that humans would call "effective" but that cannot be simulated by a TM.
+- The thesis has held for 90+ years despite intensive investigation.
 
-However, not all computable functions are primitive recursive. The **Ackermann function**:
+**Variants:**
+- **Physical Church-Turing thesis:** Any physically realizable computing device can be simulated by a Turing machine (with implications for quantum computing).
+- **Extended Church-Turing thesis:** Probabilistic TMs can simulate any physically realizable computation with at most polynomial slowdown (challenged by quantum computing).
 
-$$A(0, n) = n + 1$$
-$$A(m, 0) = A(m-1, 1)$$
-$$A(m, n) = A(m-1, A(m, n-1))$$
+### 9.6 Oracle Turing Machines and Relativization
 
-grows faster than any primitive recursive function and is computable but not primitive recursive.
+An **oracle Turing machine** is a TM with an additional "oracle tape" and a special query state. When the machine enters the query state, the oracle (an external device) answers whether a string belongs to some fixed language A.
 
-### Partial Recursive Functions and the Church-Turing Thesis
+**Notation:** Mᴬ denotes a Turing machine with oracle A.
 
-Adding the **minimization** operator ($\mu$-operator) to primitive recursive functions gives the class of **partial recursive functions**:
+Oracle machines allow us to:
+- **Classify problems relative to oracles.** For example, Pᴬ and NPᴬ are classes relativized to A.
+- **Prove relativization results.** There exist oracles A and B such that Pᴬ = NPᴬ and Pᴮ ≠ NPᴮ. This shows that any proof resolving P vs NP must be "non-relativizing" — it cannot work for all possible oracles.
 
-$$\mu y [g(\vec{x}, y) = 0] = \text{the least } y \text{ such that } g(\vec{x}, y) = 0, \text{ if such } y \text{ exists}$$
+### 9.7 The Arithmetic Hierarchy
 
-This operator introduces partiality: if no such $y$ exists, the function is undefined.
+Languages definable by alternating quantifiers over recursive predicates form the **arithmetic hierarchy**:
+- Σ₁: Languages of the form { x | ∃y R(x,y) } where R is recursive (these are exactly RE).
+- Π₁: Languages of the form { x | ∀y R(x,y) } (these are co-RE).
+- Σ₂: Languages of the form { x | ∃y₁ ∀y₂ R(x,y₁,y₂) }.
+- Π₂: Languages of the form { x | ∀y₁ ∃y₂ R(x,y₁,y₂) }.
+- etc.
 
-**Theorem 9.3**: The class of partial recursive functions equals the class of functions computable by a Turing machine.
-
-**Church-Turing Thesis**: The intuitive notion of "effectively computable" coincides with the formal notion of Turing machine computability.
-
-This is a thesis, not a theorem — it cannot be proved formally because "effective computability" is intuitive. However, overwhelming evidence supports it:
-- All proposed formalizations of computability are equivalent: TMs, $\lambda$-calculus, partial recursive functions, Post systems, Markov algorithms, counter machines, cellular automata.
-- No counterexample has ever been found.
-- Every intuitively computable function has been shown to be TM-computable.
+This hierarchy is strict: Σₙ ⊂ Σ_{n+1} and Πₙ ⊂ Π_{n+1} for all n.
 
 ## Examples
 
-### Example 1: Recursive vs. RE
+### Example 9.1: RE but Not Recursive — The Halting Problem (Preview)
 
-$L_1 = \{ \langle M, w \rangle \mid M \text{ is a DFA that accepts } w \}$ is recursive (we can simulate $M$ on $w$; the simulation always halts).
+HALT_TM = { ⟨M, w⟩ | M halts on input w }.
 
-$L_2 = \{ \langle M, w \rangle \mid M \text{ is a TM that accepts } w \}$ is RE but not recursive (this is the $A_{\text{TM}}$ problem — Chapter 10 proves undecidability).
+- HALT_TM is RE: A UTM can simulate M on w; if M halts (accepts or rejects), the UTM accepts. This shows HALT_TM ∈ RE.
+- HALT_TM is not recursive: A diagonalization argument (Chapter 10) shows no decider can correctly determine whether arbitrary M halts on w.
 
-$L_3 = \{ \langle M \rangle \mid M \text{ is a TM that halts on all inputs} \}$ is not even RE. (Proved via reduction from $\overline{A_{\text{TM}}}$.)
+### Example 9.2: A Language That Is Neither RE Nor co-RE
 
-### Example 2: Primitive Recursive Functions
+Consider L = { ⟨M₁, M₂⟩ | L(M₁) = L(M₂) } (equivalence of TMs).
+- This language is not RE and not co-RE.
+- Intuitively: there's no way to check if two TMs accept the same language because either one might loop on some input.
 
-Define addition: $\text{add}(0, y) = P_1^1(y) = y$; $\text{add}(n+1, y) = S(P_1^3(\text{add}(n, y), n, y)) = \text{add}(n, y) + 1$.
+### Example 9.3: Many-One Reductions
 
-Define multiplication: $\text{mult}(0, y) = Z(y) = 0$; $\text{mult}(n+1, y) = \text{add}(P_1^3(\text{mult}(n, y), n, y), y) = \text{mult}(n, y) + y$.
+To show a language A is not recursive, we can reduce a known non-recursive language (like HALT_TM) to A. If A were recursive, then HALT_TM would be recursive too — contradiction.
 
-### Example 3: The Ackermann Function
+For language EMPTY_TM = { ⟨M⟩ | L(M) = ∅ }:
+- We can reduce HALT_TM to EMPTY_TM.
+- Given ⟨M, w⟩, construct M': on input x, M' simulates M on w; if M accepts w, M' accepts x; otherwise M' loops.
+- Then: if M halts on w, L(M') = Σ* ≠ ∅. If M doesn't halt on w, L(M') = ∅.
+- So ⟨M, w⟩ ∈ HALT_TM iff ⟨M'⟩ ∉ EMPTY_TM. A decider for EMPTY_TM would give a decider for HALT_TM — impossible.
 
-Compute $A(1, 2)$:
-$A(1, 2) = A(0, A(1, 1))$
-$A(1, 1) = A(0, A(1, 0))$
-$A(1, 0) = A(0, 1) = 2$
-$A(1, 1) = A(0, 2) = 3$
-$A(1, 2) = A(0, 3) = 4$
+### Example 9.4: UTMs as Stored-Program Computers
 
-$A(2, 2) = A(1, A(2, 1)) = A(1, A(1, A(2, 0))) = A(1, A(1, A(1, 1))) = A(1, A(1, 3)) = A(1, 5) = 7$
+The UTM architecture mirrors modern computers:
+- ⟨M⟩ is the **program** (stored in memory).
+- w is the **input data**.
+- The UTM is the **CPU** that fetches, decodes, and executes instructions.
 
-$A(3, 3)$ is already $2^{2^{2^2}} - 3 = 65533$, and $A(4, 3)$ is astronomically large.
+This is why the UTM is considered the theoretical foundation of general-purpose computing.
+
+### Example 9.5: Relativization
+
+Define Pᴬ = languages decidable in polynomial time by a TM with oracle A.
+Let SAT be the language of satisfiable Boolean formulas.
+
+- If we could decide SAT in polynomial time, then P^SAT = NP^SAT (since an oracle for SAT, the hardest NP problem, would collapse NP into P relative to SAT).
+- However, there also exist oracles B where this doesn't hold.
+- This "relativization barrier" explains why standard diagonalization techniques cannot resolve P vs NP.
 
 ## Summary
 
-- Extended TM models (multi-dimensional, random-access, offline) are equivalent to the standard TM.
-- Unrestricted grammars generate exactly the RE languages.
-- Recursive languages are those for which both $L$ and $\overline{L}$ are RE.
-- Primitive recursive functions are total and built from basic functions by composition and primitive recursion.
-- Partial recursive functions add the $\mu$-operator and equal TM-computable functions.
-- The Church-Turing thesis asserts that TMs capture all effective computation.
-- Alternative models ($\lambda$-calculus, Post systems, cellular automata) confirm the thesis.
+- Recursive languages are decidable (TM always halts); RE languages are recognizable (TM may loop).
+- L is recursive iff L is both RE and co-RE.
+- TMs can be encoded as strings ⟨M⟩, allowing them to be inputs to other TMs.
+- The universal TM simulates any TM on any input — the stored-program concept.
+- The Church-Turing thesis claims TMs capture all effective computation.
+- Oracle TMs relativize computation and create complexity class hierarchies.
+- The arithmetic hierarchy classifies languages by quantifier alternation depth.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What distinguishes an unrestricted grammar from a context-free grammar?
-2. Explain the difference between a recursive language and a recursively enumerable language.
-3. Why is the Church-Turing thesis a thesis rather than a theorem?
-4. What operation distinguishes partial recursive from primitive recursive functions?
+1. Explain why every recursive language is RE but not vice versa.
+2. Describe how a UTM simulates another TM. Why is the UTM's ability to read ⟨M⟩ important?
+3. State the Church-Turing thesis in your own words.
+4. Show that if L is recursive, then L̅ is recursive.
+5. Give an example of a language in RE ∩ co-RE that is not obviously recursive.
 
-### Application Problems
+### Intermediate
 
-5. Show that the class of RE languages is closed under union and intersection but not complement.
-6. Define the factorial function $n!$ using primitive recursion.
-7. Prove that if $L$ is recursive, then $\overline{L}$ is recursive.
-8. Show that a TM with a 2-dimensional tape can be simulated by a standard TM.
+6. Prove: If a language L is RE, then L is recursive iff L̅ is also RE.
+7. Show that the language { ⟨M⟩ | M accepts ε } is RE but not recursive (reduce from the halting problem).
+8. Describe how to construct a UTM with 4 states and 6 symbols (or argue why this is the minimum).
+9. Prove that the arithmetic hierarchy is strict: Σₙ ≠ Σ_{n+1} for all n ≥ 1.
+10. Explain the relevance of the Church-Turing thesis to quantum computing.
 
-### Challenge Problem
+### Advanced
 
-9. Prove that there exists a function that is not primitive recursive but is computable by a TM. (Hint: diagonalize over all primitive recursive functions, or study the Ackermann function's growth rate.)
+11. Prove that the language of descriptions of TMs that accept at least one string (NONEMPTY_TM) is RE but not recursive.
+12. Construct an encoding scheme for TMs and prove that the set of all TM descriptions is countable.
+13. Prove that there are uncountably many languages but only countably many TMs — conclude that most languages are not RE.
+14. Show relativization: find oracles A and B such that Pᴬ = NPᴬ and Pᴮ ≠ NPᴮ.
+15. Prove that the universal language U = { ⟨M, w⟩ | M accepts w } is RE but not recursive.

@@ -1,131 +1,564 @@
-# Chapter 15 — MongoDB
+# Chapter 15: MongoDB
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) describe MongoDB's document data model; (2) perform CRUD operations; (3) create and use secondary indices; (4) build aggregation pipelines; (5) configure replication for high availability; (6) configure sharding for horizontal scaling; and (7) decide between embedding and referencing documents.
+- Understand MongoDB's document data model and BSON format
+- Perform CRUD operations using MongoDB Query Language
+- Design and use indexes for query optimization
+- Build aggregation pipelines for data analysis
+- Explain replication and sharding for high availability and scaling
+- Apply best practices for schema design
 
-## 15.1 Document Model
+## Theory
 
-MongoDB is a document-oriented NoSQL database that stores data as BSON (Binary JSON) documents. A document is a set of key-value pairs analogous to a JSON object. Documents are organized into collections, which are analogous to tables in the relational model. Unlike relational tables, collections do not enforce a schema. Documents within the same collection may have different fields, data types, and structures.
+### 15.1 MongoDB Overview
 
-A sample MongoDB document representing a student:
+MongoDB is a **document-oriented NoSQL database** released in 2009. It stores data as BSON (Binary JSON) documents in collections.
 
+**Key Concepts:**
+- **Database:** Container for collections
+- **Collection:** Group of documents (similar to a table)
+- **Document:** A single record (similar to a row)
+- **Field:** A key-value pair in a document (similar to a column)
+- **\_id:** Every document has a unique primary key field
+
+```
+Database (ecommerce)
+  └── Collection (users)
+  │     ├── Document {_id: 1, name: "Alice", email: "alice@example.com"}
+  │     ├── Document {_id: 2, name: "Bob", email: "bob@example.com"}
+  │     └── ...
+  └── Collection (orders)
+        ├── Document {_id: 101, user_id: 1, total: 59.99, items: [...]}
+        └── ...
+```
+
+**BSON Format:**
+- Extends JSON with additional data types: ObjectId, Date, Binary, Decimal128, Timestamp
+- BSON documents are traversable (unlike plain JSON, BSON encodes type and length info)
+
+### 15.2 CRUD Operations
+
+**Create (Insert):**
+
+```javascript
+// Insert a single document
+db.users.insertOne({
+    name: "Alice Chen",
+    email: "alice@example.com",
+    age: 28,
+    address: {
+        street: "123 Main St",
+        city: "San Francisco",
+        state: "CA",
+        zip: "94102"
+    },
+    interests: ["reading", "hiking", "photography"],
+    created_at: new Date()
+})
+
+// Insert multiple documents
+db.users.insertMany([
+    { name: "Bob", email: "bob@example.com", age: 35 },
+    { name: "Carol", email: "carol@example.com", age: 42 },
+    { name: "Dave", email: "dave@example.com", age: 29 }
+])
+```
+
+**Read (Query):**
+
+```javascript
+// Find all users
+db.users.find()
+
+// Find with filter
+db.users.find({ age: { $gt: 30 } })
+
+// Find with projection (only return specific fields)
+db.users.find(
+    { age: { $gt: 30 } },
+    { name: 1, email: 1, _id: 0 }
+)
+
+// Find a single document
+db.users.findOne({ email: "alice@example.com" })
+
+// Query operators
+db.users.find({ age: { $gte: 25, $lte: 40 } })
+db.users.find({ name: { $in: ["Alice", "Bob"] } })
+db.users.find({ interests: "hiking" }) // array contains
+db.users.find({ "address.city": "San Francisco" }) // nested field
+
+// Logical operators
+db.users.find({
+    $and: [
+        { age: { $gte: 25 } },
+        { "address.state": "CA" }
+    ]
+})
+
+// Sort, limit, skip
+db.users.find()
+    .sort({ age: -1 })   // descending
+    .limit(10)
+    .skip(20)           // pagination
+
+// Count
+db.users.countDocuments({ age: { $gt: 30 } })
+```
+
+**Update:**
+
+```javascript
+// Update one document (replace matching document)
+db.users.updateOne(
+    { email: "alice@example.com" },
+    { $set: { age: 29, "address.city": "Los Angeles" } }
+)
+
+// Update with increment
+db.users.updateOne(
+    { name: "Alice Chen" },
+    { $inc: { login_count: 1 } }
+)
+
+// Add to array, remove duplicates
+db.users.updateOne(
+    { name: "Alice Chen" },
+    { $addToSet: { interests: "cycling" } }
+)
+
+// Pull from array
+db.users.updateOne(
+    { name: "Alice Chen" },
+    { $pull: { interests: "photography" } }
+)
+
+// Update many
+db.users.updateMany(
+    { "address.state": "CA" },
+    { $set: { region: "West Coast" } }
+)
+
+// Upsert (insert if not found)
+db.users.updateOne(
+    { email: "newuser@example.com" },
+    { $set: { name: "New User", age: 25 } },
+    { upsert: true }
+)
+```
+
+**Delete:**
+
+```javascript
+// Delete one document
+db.users.deleteOne({ email: "bob@example.com" })
+
+// Delete many documents
+db.users.deleteMany({ age: { $lt: 18 } })
+
+// Drop entire collection
+db.users.drop()
+
+// Delete all documents but keep collection
+db.users.deleteMany({})
+```
+
+### 15.3 Indexing
+
+Indexes in MongoDB work similarly to B+ tree indexes in relational databases.
+
+**Types of Indexes:**
+
+```javascript
+// Single field index
+db.users.createIndex({ email: 1 })  // 1 = ascending, -1 = descending
+
+// Compound index (order matters!)
+db.orders.createIndex({ user_id: 1, created_at: -1 })
+
+// Multikey index (for array fields)
+db.users.createIndex({ interests: 1 })
+
+// Text index (full-text search)
+db.articles.createIndex({ content: "text", title: "text" })
+
+// Geospatial index
+db.places.createIndex({ location: "2dsphere" })
+
+// Unique index
+db.users.createIndex({ email: 1 }, { unique: true })
+
+// TTL index (auto-expire documents after time)
+db.sessions.createIndex({ created_at: 1 }, { expireAfterSeconds: 3600 })
+
+// Partial index (index only matching documents)
+db.users.createIndex(
+    { age: 1 },
+    { partialFilterExpression: { age: { $gte: 18 } } }
+)
+
+// Sparse index (only index documents with the field)
+db.users.createIndex({ optional_field: 1 }, { sparse: true })
+```
+
+**Index Usage:**
+
+```javascript
+// Check query plan
+db.users.find({ age: { $gt: 30 } }).explain("executionStats")
+
+// Output shows:
+// - winningPlan (which index was used, or COLLSCAN)
+// - executionTimeMillis
+// - totalDocsExamined
+// - nReturned
+```
+
+**Hinting the Optimizer:**
+
+```javascript
+// Force the query to use a specific index
+db.users.find({ age: { $gt: 30 } }).hint({ age: 1 })
+```
+
+### 15.4 Aggregation Pipeline
+
+The aggregation pipeline is MongoDB's equivalent of GROUP BY and complex transformations.
+
+```
+db.collection.aggregate([
+    { $match: { status: "active" } },      // Stage 1: Filter
+    { $group: { _id: "$city", count: { $sum: 1 } } },  // Stage 2: Group
+    { $sort: { count: -1 } },               // Stage 3: Sort
+    { $limit: 10 }                          // Stage 4: Limit
+])
+```
+
+**Pipeline Stages:**
+
+```javascript
+// $match: Filter documents (like WHERE)
+db.orders.aggregate([
+    { $match: { status: "shipped", total: { $gte: 50 } } }
+])
+
+// $group: Group documents (like GROUP BY)
+db.orders.aggregate([
+    { $group: {
+        _id: "$customer_id",
+        total_spent: { $sum: "$total" },
+        order_count: { $sum: 1 },
+        avg_order: { $avg: "$total" },
+        first_order: { $min: "$order_date" },
+        last_order: { $max: "$order_date" }
+    }}
+])
+
+// $project: Reshape documents (like SELECT with expressions)
+db.users.aggregate([
+    { $project: {
+        full_name: { $concat: ["$first_name", " ", "$last_name"] },
+        age_plus_10: { $add: ["$age", 10] },
+        is_adult: { $gte: ["$age", 18] },
+        _id: 0
+    }}
+])
+
+// $lookup: Join collections (like SQL JOIN)
+db.orders.aggregate([
+    { $lookup: {
+        from: "customers",
+        localField: "customer_id",
+        foreignField: "_id",
+        as: "customer"
+    }},
+    { $unwind: "$customer" },  // Deconstruct array
+    { $project: {
+        order_id: 1,
+        total: 1,
+        "customer.name": 1,
+        "customer.email": 1
+    }}
+])
+
+// $unwind: Deconstruct arrays into separate documents
+db.articles.aggregate([
+    { $unwind: "$tags" },
+    { $group: { _id: "$tags", count: { $sum: 1 } } },
+    { $sort: { count: -1 } }
+])
+
+// $bucket: Bucketing (like CASE WHEN)
+db.orders.aggregate([
+    { $bucket: {
+        groupBy: "$total",
+        boundaries: [0, 50, 100, 200, 500, 1000],
+        default: "1000+",
+        output: {
+            count: { $sum: 1 },
+            avg_total: { $avg: "$total" }
+        }
+    }}
+])
+
+// $facet: Multiple aggregations in parallel
+db.orders.aggregate([
+    { $facet: {
+        by_status: [
+            { $group: { _id: "$status", count: { $sum: 1 } } }
+        ],
+        by_year: [
+            { $group: {
+                _id: { $year: "$order_date" },
+                total: { $sum: "$total" }
+            }}
+        ]
+    }}
+])
+```
+
+**Aggregation Pipeline vs. SQL:**
+
+| SQL | MongoDB Aggregation |
+|-----|-------------------|
+| WHERE | $match |
+| GROUP BY | $group |
+| HAVING | $match after $group |
+| SELECT | $project |
+| ORDER BY | $sort |
+| LIMIT | $limit |
+| JOIN | $lookup |
+| DISTINCT | $group with $addToSet |
+| UNION | Not directly (use $unionWith in 4.4+) |
+
+### 15.5 Replication
+
+**Replica Set:** A group of MongoDB servers that maintain the same data set.
+
+```
+┌──────────────┐
+│  Primary      │  ← All writes go here
+│  (active)     │
+└──────┬───────┘
+       │ replication (oplog)
+       ├─────────────────┐
+       ▼                 ▼
+┌──────────────┐  ┌──────────────┐
+│  Secondary 1  │  │  Secondary 2  │  ← Read may go here (optional)
+│  (hot standby)│  │  (hot standby)│
+└──────────────┘  └──────────────┘
+```
+
+- **Primary:** Accepts all write operations
+- **Secondary:** Replicates data from primary (async)
+- **Arbiter:** Votes in elections but stores no data
+
+```javascript
+// Configure read preference (client-side)
+// Primary: Default. All reads from primary
+// PrimaryPreferred: Read from primary; fallback to secondary
+// Secondary: Read only from secondaries
+// SecondaryPreferred: Read from secondary; fallback to primary
+// Nearest: Read from lowest-latency node
+
+// Connection string with read preference
+mongodb://host1:27017,host2:27017,host3:27017/mydb?replicaSet=rs0&readPreference=secondaryPreferred
+```
+
+**Election:** If the primary fails, secondaries hold an election to choose a new primary.
+
+### 15.6 Sharding
+
+**Sharding:** Horizontal partitioning of data across multiple servers.
+
+```
+┌──────────────────────────────────────────┐
+│              mongos (Router)              │
+│  Routes queries to appropriate shard     │
+└────┬──────────┬──────────────┬───────────┘
+     │          │              │
+     ▼          ▼              ▼
+┌──────────┐ ┌──────────┐ ┌──────────┐
+│ Shard A   │ │ Shard B  │ │ Shard C  │
+│ (chunks   │ │ (chunks  │ │ (chunks  │
+│  user_0.. │ │  user_1M │ │  user_2M │
+│  1M)      │ │  ..2M)   │ │  ..3M)   │
+└──────────┘ └──────────┘ └──────────┘
+```
+
+**Shard Key:** The field MongoDB uses to distribute documents across shards.
+
+```javascript
+// Enable sharding on a database
+sh.enableSharding("ecommerce")
+
+// Shard a collection by hashed _id (good for uniform distribution)
+sh.shardCollection("ecommerce.orders", { _id: "hashed" })
+
+// Shard by range on a natural key
+sh.shardCollection("ecommerce.users", { country: 1, user_id: 1 })
+```
+
+**Shard Key Selection:**
+- **Good:** High cardinality, monotonically distributed (hashed, or highly varied)
+- **Bad:** Low cardinality (boolean), monotonically increasing without hashing
+- **Impact:** Poor shard key leads to "jumbo chunks" and uneven distribution
+
+**Components of Sharding:**
+- **mongos:** Query router (client connects to this)
+- **Config Server:** Stores metadata about which data is on which shard
+- **Shard:** Individual replica set holding a portion of the data
+
+### 15.7 Schema Design Best Practices
+
+**Embedding vs. Referencing:**
+
+```javascript
+// EMBEDDING (preferred when data is accessed together)
+// Good for: one-to-few, read-heavy, data that changes together
 {
-  "_id": ObjectId("507f1f77bcf86cd799439011"),
-  "student_id": 1001,
-  "name": "Alice Zhang",
-  "major": "Computer Science",
-  "gpa": 3.8,
-  "address": {
-    "street": "123 College Ave",
-    "city": "University City",
-    "zip": "12345"
-  },
-  "enrolled_courses": ["CS101", "CS201", "MATH301"],
-  "graduating": true
+    user: "Alice",
+    orders: [
+        { item: "laptop", price: 999 },
+        { item: "mouse", price: 25 }
+    ]
 }
 
-Each document must contain the _id field, which serves as the primary key. The _id is automatically indexed and must be unique within the collection. Applications may assign custom _id values or allow MongoDB to generate ObjectId values automatically.
+// REFERENCING (preferred when data grows unbounded or is shared)
+// Good for: one-to-many, many-to-many, frequently updated separately
+{
+    user: "Alice"
+}
+// Separate collection
+{
+    user_id: ObjectId("..."),
+    item: "laptop",
+    price: 999
+}
+```
 
-The document model offers several advantages. Related data that is accessed together can be stored in a single document, avoiding costly join operations. The schema flexibility accommodates evolving application requirements without migration scripts. Nested documents and arrays model complex hierarchical relationships naturally.
+**Design Principles:**
+1. **Data that is accessed together should be stored together** (embed)
+2. **Arrays should not grow unboundedly** (max ~100 embedded items)
+3. **Use references for shared or frequently updated data**
+4. **Prefer $lookup (joins) over application-side joins**
+5. **Design for your query patterns, not for normalization**
 
-## 15.2 CRUD Operations
+## Examples
 
-The insertOne method inserts a single document into a collection. The insertMany method inserts multiple documents in a single operation, which is more efficient than individual inserts.
+**Example 15.1: Complete E-commerce Schema**
 
-db.students.insertOne({
-  student_id: 1002,
-  name: "Bob Chen",
-  major: "Mathematics"
-});
+```javascript
+// Users collection
+db.users.createIndex({ email: 1 }, { unique: true })
+db.users.insertOne({
+    _id: ObjectId(),
+    name: "Alice Chen",
+    email: "alice@example.com",
+    addresses: [
+        { label: "home", street: "123 Main St", city: "SF", zip: "94102" },
+        { label: "work", street: "456 Market St", city: "SF", zip: "94105" }
+    ],
+    created_at: new Date()
+})
 
-The find method retrieves documents matching a query filter. The first argument is the filter; the second argument is a projection that specifies which fields to return. The findOne method returns a single document.
+// Products collection
+db.products.createIndex({ category: 1, price: 1 })
+db.products.insertOne({
+    sku: "LAP-001",
+    name: "UltraBook Pro 15",
+    category: "electronics",
+    price: 1499.99,
+    stock: 50,
+    specs: { cpu: "Intel i7", ram: "16GB", storage: "512GB SSD" },
+    tags: ["laptop", "ultrabook", "new"]
+})
 
-db.students.find({ major: "Computer Science" }, { name: 1, gpa: 1, _id: 0 });
+// Orders collection
+db.orders.createIndex({ customer_id: 1, created_at: -1 })
+db.orders.insertOne({
+    customer_id: ObjectId("..."),
+    items: [
+        { product_id: ObjectId("..."), qty: 1, price: 1499.99 },
+        { product_id: ObjectId("..."), qty: 2, price: 24.99 }
+    ],
+    shipping_address: { street: "123 Main St", city: "SF", zip: "94102" },
+    total: 1549.97,
+    status: "pending",
+    created_at: new Date()
+})
+```
 
-The updateOne method updates a single document matching the filter. The updateMany method updates all matching documents. The $set operator sets field values; $unset removes fields; $inc increments numeric fields.
+**Example 15.2: Aggregation for Sales Report**
 
-db.students.updateOne(
-  { student_id: 1001 },
-  { $set: { gpa: 3.9 }, $inc: { credits_completed: 15 } }
-);
-
-The deleteOne method deletes a single matching document. The deleteMany method deletes all matching documents.
-
-db.students.deleteMany({ graduating: true });
-
-Replace operations use replaceOne, which replaces an entire document while preserving the _id field.
-
-## 15.3 Indexing
-
-MongoDB supports several index types. The default _id index is created automatically on every collection. Single-field indices accelerate queries on a single field. Compound indices accelerate queries on multiple fields, with the index key order affecting query effectiveness.
-
-db.students.createIndex({ major: 1, gpa: -1 });
-
-Multikey indices are created automatically when indexing an array field; MongoDB creates an index entry for each element of the array. Text indices support full-text search on string content. Geospatial indices support location-based queries. Hashed indices support hash-based sharding.
-
-The explain method provides query execution statistics, including index usage and the number of documents examined. The hint method forces the query optimizer to use a specific index.
-
-## 15.4 Aggregation Pipeline
-
-The aggregation pipeline processes documents through a sequence of stages. Each stage transforms the documents that pass through it. The pipeline is expressed as an array of stage documents.
-
-Common stages include: $match, which filters documents; $group, which groups documents by a specified key and computes aggregate values; $sort, which sorts documents; $project, which shapes documents by including, excluding, or computing new fields; $unwind, which deconstructs an array field into multiple documents; and $lookup, which performs a left outer join with another collection.
-
-An example computing the average GPA by major:
-
-db.students.aggregate([
-  { $group: { _id: "$major", avgGpa: { $avg: "$gpa" }, count: { $sum: 1 } } },
-  { $sort: { avgGpa: -1 } },
-  { $project: { major: "$_id", avgGpa: 1, count: 1, _id: 0 } }
-]);
-
-The aggregation pipeline is a powerful alternative to map-reduce and is optimized for efficient execution using indices where possible.
-
-## 15.5 Replication
-
-A replica set in MongoDB is a group of mongod processes that maintain the same data set. One node is the primary, receiving all write operations. The other nodes are secondaries, applying operations from the primary through asynchronous replication. If the primary fails, the replica set automatically elects a new primary through a consensus protocol.
-
-Replication provides high availability and data redundancy. Secondaries can serve read operations, improving throughput. Delayed secondaries provide point-in-time recovery capability. Hidden secondaries are not visible to client applications and can be dedicated to analytics or backup.
-
-The election process uses a majority-based protocol. Each node votes for a candidate based on its optime, which is the timestamp of its most recent applied operation. The node with the highest optime wins the election. A replica set can tolerate the failure of up to floor((n-1)/2) nodes, where n is the number of voting members.
-
-## 15.6 Sharding
-
-Sharding distributes data across multiple servers to support horizontal scaling. A sharded cluster consists of three components. Shards store the data; each shard is typically a replica set. The config server stores cluster metadata. The mongos router directs client requests to the appropriate shard based on the shard key.
-
-The shard key is a field or compound field that determines data distribution. The choice of shard key is critical for performance. A good shard key provides high cardinality, prevents jumbo chunks, and supports the most common query patterns. Hash-based sharding distributes data uniformly. Range-based sharding places related data on the same shard.
-
-When a shard's data exceeds a configurable chunk size, the chunk is split and balanced across shards automatically. The balancer runs in the background and ensures that all shards have approximately equal amounts of data.
-
-## 15.7 Embedded versus Referenced Documents
-
-A central design decision in MongoDB is whether to embed related data within a document or to reference documents in separate collections using manual references or the DBRef convention.
-
-Embedding is appropriate when the embedded data is always accessed with the parent, when the embedded data has a one-to-one or one-to-few cardinality, and when the embedded data does not grow without bound. Embedding provides better read performance because a single query retrieves all related data.
-
-Referencing is appropriate when the related data is accessed independently, when the cardinality is many-to-many, or when the embedded data would cause the document to exceed the 16-megabyte BSON document size limit. Referencing avoids data duplication but requires multiple queries or $lookup stages.
+```javascript
+// Monthly sales report by category
+db.orders.aggregate([
+    { $match: { status: { $in: ["shipped", "delivered"] } } },
+    { $unwind: "$items" },
+    { $lookup: {
+        from: "products",
+        localField: "items.product_id",
+        foreignField: "_id",
+        as: "product"
+    }},
+    { $unwind: "$product" },
+    { $group: {
+        _id: {
+            year: { $year: "$created_at" },
+            month: { $month: "$created_at" },
+            category: "$product.category"
+        },
+        total_sales: { $sum: { $multiply: ["$items.qty", "$items.price"] } },
+        units_sold: { $sum: "$items.qty" },
+        avg_price: { $avg: "$items.price" }
+    }},
+    { $sort: { "_id.year": 1, "_id.month": 1 } }
+])
+```
 
 ## Summary
 
-MongoDB is the leading document-oriented NoSQL database. Its flexible document model, rich query language, aggregation pipeline, replication, and sharding capabilities make it suitable for a wide range of applications. The design decisions around indexing, shard keys, and document structure have significant performance implications.
+- MongoDB stores documents in BSON format within collections.
+- CRUD operations use a JSON-like query syntax with rich operators.
+- Indexes support single, compound, multikey, text, geospatial, TTL, and partial types.
+- The aggregation pipeline provides powerful data processing with $match, $group, $lookup, $unwind, $project, etc.
+- Replica sets provide high availability via primary-secondary replication.
+- Sharding horizontally partitions data across servers using a shard key.
+- Schema design should favor embedding for co-accessed data and referencing for shared/growing data.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What is the difference between a collection and a table?
-2. What is the purpose of the _id field?
-3. How does MongoDB ensure high availability?
-4. What components constitute a sharded cluster?
-5. When should embedded documents be preferred over references?
+1. Create a MongoDB collection called `books`. Insert five book documents with fields: title, author, year, genres (array), rating.
 
-### Application Problems
+2. Write queries to: a) Find books published after 2020, b) Find books by a specific author, c) Find books containing "sci-fi" in their genres array.
 
-1. Design a MongoDB document schema for an e-commerce product. Include nested data for variants, reviews, and categories. Justify your embedding and referencing decisions.
-2. Write an aggregation pipeline that computes monthly revenue for an orders collection. The orders collection contains documents with order_date, total, and items (array). Include only orders from the current year.
-3. Design a shard key strategy for a social media application with 100 million users. The application supports queries for a user's posts (ordered by timestamp) and queries for posts by content.
+3. Create an index on the `author` field and verify the query uses it with `.explain()`.
 
-### Challenge Problem
+4. Update a book's rating by 0.5. Then delete a book by its `_id`.
 
-Implement a migration script in JavaScript (using the MongoDB shell or Node.js driver) that converts a referenced relationship into an embedded one. The source schema has Users and Posts in separate collections with posts referencing users via user_id. The target schema embeds the three most recent posts within each user document. Handle users with no posts, and ensure the migration can be rolled back.
+### Intermediate
+
+5. Design a MongoDB schema for a blog platform with users, posts, comments, and tags. Show embedded vs. referenced relationships. Justify your choices.
+
+6. Write an aggregation pipeline that counts the number of posts per tag, sorted by popularity, returning the top 10 tags.
+
+7. Create a compound index on { category: 1, price: -1 }. Write a query that uses it. Verify with `.explain("executionStats")`. What happens if you filter by price without category?
+
+8. A product collection has 500,000 documents with schema: name, category, price, stock. Queries filter by category + sort by price, or filter by price range only. Design the indexes. Explain why.
+
+### Advanced
+
+9. Design a shard key for a global e-commerce order database with 100M+ orders. Queries: by customer_id (customer sees their own orders), by date range (admin reports), by order_id (lookup). What shard key do you choose? What are the trade-offs?
+
+10. In a MongoDB replica set, a network partition isolates the primary from two secondaries. What happens? Can the secondaries elect a new primary? What happens to writes sent to the isolated primary? How does the system recover when the partition heals?
+
+11. Design and implement an aggregation pipeline that generates a real-time sales dashboard:
+    - Revenue by hour (last 24 hours)
+    - Top 5 selling products this week
+    - Average order value by customer segment
+    - Geographic distribution of orders
+    Show the complete pipeline stages for each metric.

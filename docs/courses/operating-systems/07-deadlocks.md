@@ -1,231 +1,471 @@
-# Chapter 7 — Deadlocks
+# Chapter 7: Deadlocks
 
 ## Learning Objectives
 
-1. Characterise deadlock using the four necessary conditions.
-2. Construct and interpret a resource-allocation graph.
-3. Apply deadlock prevention by negating necessary conditions.
-4. Implement the banker's algorithm for deadlock avoidance.
-5. Describe deadlock detection and recovery techniques.
+- Characterize deadlocks using the four necessary conditions
+- Construct and interpret resource-allocation graphs
+- Apply deadlock prevention by breaking one of the four conditions
+- Implement Banker's algorithm for deadlock avoidance
+- Design deadlock detection algorithms for single and multiple resource types
+- Compare recovery strategies: process termination vs resource preemption
 
-## 7.1 System Model
+## Theory
 
-A system comprises a finite set of resources R = {R1, R2, ..., Rm} and processes P = {P1, P2, ..., Pn}. Each resource type Ri has Wi instances. A process requests resources, uses them, and releases them. The OS grants resources in a way that avoids or manages deadlock.
+### Deadlock Definition
 
-## 7.2 Deadlock Characterisation
+A **deadlock** is a state in which every process in a set is waiting for an event that can only be caused by another process in the set. Since all are waiting, none can proceed — the system is permanently blocked.
 
-A **deadlock** is a state in which every process in a set is waiting for an event that can only be caused by another process in the set. Since all are waiting, none can proceed.
+### The Four Necessary Conditions
 
-### 7.2.1 Necessary Conditions
+For a deadlock to occur, all four conditions must hold simultaneously:
 
-Four conditions must hold simultaneously for deadlock to occur:
+1. **Mutual Exclusion**: At least one resource must be held in a non-sharable mode (only one process can use it at a time)
+2. **Hold and Wait**: A process holding at least one resource is waiting to acquire additional resources held by other processes
+3. **No Preemption**: Resources cannot be forcibly taken from a process — they must be released voluntarily
+4. **Circular Wait**: There exists a set {P₀, P₁, ..., Pₙ} where P₀ is waiting for a resource held by P₁, P₁ is waiting for a resource held by P₂, ..., Pₙ₋₁ is waiting for a resource held by Pₙ, and Pₙ is waiting for a resource held by P₀
 
-1. **Mutual exclusion**: At least one resource must be held in a non-sharable mode. Only one process at a time can use the resource.
-2. **Hold and wait**: A process holding at least one resource is waiting to acquire additional resources held by other processes.
-3. **No preemption**: Resources cannot be forcibly taken away; they must be released voluntarily by the holding process.
-4. **Circular wait**: A set of processes {P0, P1, ..., Pn} exists such that P0 waits for a resource held by P1, P1 waits for P2, ..., Pn−1 waits for Pn, and Pn waits for P0.
+### Resource-Allocation Graphs
 
-### 7.2.2 Resource-Allocation Graph (RAG)
+A **Resource-Allocation Graph (RAG)** is a directed graph that represents processes (circles), resources (squares), and their relationships.
 
-A deadlock can be visualised using a directed bipartite graph:
+- **Request edge**: Pᵢ → Rⱼ (process i wants resource j)
+- **Assignment edge**: Rⱼ → Pᵢ (resource j is assigned to process i)
 
-- Processes are circles. Resources are rectangles (with dots for instances).
-- A **request edge** (P → R) means P is waiting for R.
-- An **assignment edge** (R → P) means an instance of R is allocated to P.
-
-A cycle in the RAG is necessary for deadlock. If each resource type has exactly one instance, a cycle is both necessary and sufficient. If resource types have multiple instances, a cycle is necessary but not sufficient — the system may be in a deadlock-free state despite having a cycle.
-
-## 7.3 Handling Deadlocks
-
-The OS may use one of four strategies:
-
-1. Prevent deadlock by ensuring at least one necessary condition never holds.
-2. Avoid deadlock by making judicious resource-allocation decisions at runtime.
-3. Detect deadlock and recover after it occurs.
-4. Ignore the problem (the **ostrich algorithm**) — let the system administrator reboot.
-
-## 7.4 Deadlock Prevention
-
-### 7.4.1 Break Mutual Exclusion
-
-If a resource is sharable, mutual exclusion does not hold. Read-only files do not cause deadlock. However, many resources (printers, mutexes) are inherently non-sharable.
-
-### 7.4.2 Break Hold-and-Wait
-
-Require every process to request all its resources before beginning execution, or release all resources before requesting more. This underutilises resources (a process holds resources it does not yet need) and can cause starvation.
-
-### 7.4.3 Break No Preemption
-
-If a process holding resources is denied a new request, it must release all held resources (they are implicitly preempted). The process later re-requests everything. This is difficult to implement because resources may be in an unrecoverable state (partially written printer spool file).
-
-### 7.4.4 Break Circular Wait
-
-Impose a total order on resource types and require processes to request resources in increasing order. Proof: if all processes request resources in increasing order, a circular chain of waiting would require a process holding Ri to wait for Rj where j < i, which is prohibited.
-
-```c
-// Example: order resources as R1 < R2 < R3
-void process() {
-    // Must request R1 before R2, R2 before R3
-    request(R1); request(R2); request(R3);
-    use_resources();
-    release(R3); release(R2); release(R1);
-}
+```
+    P1 ──→ R1 ──→ P2 ──→ R2 ──→ P1
 ```
 
-## 7.5 Deadlock Avoidance
+If the graph contains a **cycle**, there may be a deadlock:
+- One resource per type: cycle = deadlock
+- Multiple resources per type: cycle = possible deadlock (must examine further)
 
-Avoidance requires knowledge of future resource requests. The system only grants a request if the resulting state is **safe**.
+```
+     ┌─────────────────────────┐
+     │                         │
+     ▼                         │
+    R1 ──→ P2 ──→ R2 ──→ P3 ──┘
+     ▲         │               ▲
+     │         └───────────────┘
+    P1
+```
 
-### 7.5.1 Safe State
+This cycle means P1 holds R? and wants R?, P2 holds R? and wants R?, etc. If every resource in the cycle has only one instance, it's a deadlock.
 
-A state is safe if there exists a sequence of process executions that allows all processes to complete. An unsafe state is not necessarily deadlocked but may lead to deadlock.
+### Deadlock Handling Strategies
 
-**Example**: A system with 12 tape drives and three processes:
+| Strategy | Description | Overhead |
+|----------|-------------|----------|
+| Prevention | Ensure at least one condition never holds | Resource utilization may suffer |
+| Avoidance | OS decides if granting a request leads to unsafe state | Must know future resource needs |
+| Detection | Allow deadlock, then detect and recover | Runtime detection cost |
+| Ignorance | Assume deadlocks never happen (Ostrich algorithm) | System may freeze |
 
-| Process | Max needs | Currently held |
-|---------|-----------|----------------|
-| P0 | 10 | 5 |
-| P1 | 4 | 2 |
-| P2 | 9 | 2 |
+Most modern OS use the **Ostrich algorithm** for most resources — ignoring the problem because deadlocks are rare enough to justify rebooting.
 
-Available = 3. Safe sequence: P1 (needs 2 more → has 2, completes, releases 2+2=4) → P0 (needs 5 more → has 5+4=9, completes) → P2 (needs 7 more → has 9+5=14... wait). Actually: P1 needs 2 more (max 4, has 2), available = 3, grant 2 → P1 runs, releases 4 → available = 5. P0 needs 5, grant 5 → P0 runs, releases 10 → available = 10. P2 needs 7, grant 7 → P2 runs. This is a safe state.
+### Deadlock Prevention
 
-### 7.5.2 Banker's Algorithm
+Prevention ensures that at least one of the four necessary conditions cannot hold.
 
-The banker's algorithm (Dijkstra, 1965) is the canonical deadlock-avoidance algorithm. Data structures:
+#### Breaking Mutual Exclusion
 
-- `Available[m]`: number of instances available for each resource type.
-- `Max[n][m]`: maximum demand of each process.
-- `Allocation[n][m]`: currently allocated resources.
-- `Need[n][m] = Max - Allocation`: remaining need.
+Some resources are inherently non-sharable (printers, tape drives). Making them sharable would require spooling (spooling directories make printers appear sharable). Not always possible.
 
-**Safety algorithm** — determines if a state is safe:
+#### Breaking Hold and Wait
+
+Require a process to request **all** resources before it starts execution. Or: a process can request resources only when it has none.
+
+**Problem**: Low resource utilization — processes hold resources for much longer than needed. Potential for starvation.
+
+#### Breaking No Preemption
+
+If a process that holds resources requests another that cannot be granted, it must release all currently held resources. It can request them again later (along with the new one).
+
+**Problem**: Complex to implement. If preemption is not safe (e.g., partially updated data structures), it may cause corruption.
+
+#### Breaking Circular Wait
+
+Impose a **total ordering** of all resource types. A process can only request resources in increasing order.
 
 ```c
+// Resource ordering: R1 < R2 < R3
+// If a process holds R2, it can only request R3 (higher), never R1 (lower)
+
+// Example system with 3 resource types:
+// R = {Tape drive, Disk, Printer}
+// Order: Tape drive (1) < Disk (2) < Printer (3)
+
+// Allowed: Process holds tape(1), requests disk(2) ✓
+// Allowed: Process holds disk(2), requests printer(3) ✓
+// Not allowed: Process holds printer(3), requests tape(1) ✗
+```
+
+This breaks circular wait because a cycle would require an ordering violation.
+
+### Deadlock Avoidance
+
+Avoidance requires that the system knows in advance the **maximum** number of resources each process will ever need. The system decides whether granting a request would leave the system in a **safe state**.
+
+#### Safe State
+
+A state is **safe** if there exists a sequence of process executions that allows every process to complete. A safe state is not a deadlock; a deadlock is necessarily an unsafe state.
+
+```
+Safe state:     P2 completes → releases resources → P1 completes → P0 completes
+Unsafe state:   No such sequence exists
+```
+
+#### Banker's Algorithm (Dijkstra, 1965)
+
+Named because it models how a banker would allocate loans. Data structures:
+
+- **Available**: Vector of length m (m = number of resource types). Available[j] = k means k instances of resource type Rⱼ are available.
+- **Max**: n × m matrix. Max[i][j] = k means process Pᵢ will request at most k instances of Rⱼ.
+- **Allocation**: n × m matrix. Allocation[i][j] = k means Pᵢ currently holds k instances of Rⱼ.
+- **Need**: n × m matrix. Need[i][j] = Max[i][j] - Allocation[i][j].
+
+```c
+#include <stdio.h>
+#include <stdbool.h>
+
+#define NUM_PROCESSES 5
+#define NUM_RESOURCES 3
+
+int available[NUM_RESOURCES] = {3, 3, 2};
+int max[NUM_PROCESSES][NUM_RESOURCES] = {
+    {7, 5, 3},
+    {3, 2, 2},
+    {9, 0, 2},
+    {2, 2, 2},
+    {4, 3, 3}
+};
+int allocation[NUM_PROCESSES][NUM_RESOURCES] = {
+    {0, 1, 0},
+    {2, 0, 0},
+    {3, 0, 2},
+    {2, 1, 1},
+    {0, 0, 2}
+};
+int need[NUM_PROCESSES][NUM_RESOURCES];
+
+void calculate_need() {
+    for (int i = 0; i < NUM_PROCESSES; i++) {
+        for (int j = 0; j < NUM_RESOURCES; j++) {
+            need[i][j] = max[i][j] - allocation[i][j];
+        }
+    }
+}
+
 bool is_safe() {
-    int Work[m] = Available;
-    bool Finish[n] = {false};
-    
-    for (int step = 0; step < n; step++) {
-        // Find an unfinished process whose needs can be met
-        int i = -1;
-        for (int j = 0; j < n; j++) {
-            if (!Finish[j] && Need[j] <= Work) {
-                i = j;
-                break;
+    int work[NUM_RESOURCES];
+    bool finish[NUM_PROCESSES];
+    int safe_sequence[NUM_PROCESSES];
+    int seq_idx = 0;
+
+    // Initialize work = available
+    for (int j = 0; j < NUM_RESOURCES; j++) {
+        work[j] = available[j];
+    }
+    for (int i = 0; i < NUM_PROCESSES; i++) {
+        finish[i] = false;
+    }
+
+    while (seq_idx < NUM_PROCESSES) {
+        bool found = false;
+
+        for (int i = 0; i < NUM_PROCESSES; i++) {
+            if (!finish[i]) {
+                // Check if need[i] <= work
+                bool can_run = true;
+                for (int j = 0; j < NUM_RESOURCES; j++) {
+                    if (need[i][j] > work[j]) {
+                        can_run = false;
+                        break;
+                    }
+                }
+
+                if (can_run) {
+                    // Process i can finish
+                    for (int j = 0; j < NUM_RESOURCES; j++) {
+                        work[j] += allocation[i][j];
+                    }
+                    finish[i] = true;
+                    safe_sequence[seq_idx++] = i;
+                    found = true;
+                }
             }
         }
-        if (i == -1) return false; // no such process → unsafe
-        Work += Allocation[i];
-        Finish[i] = true;
+
+        if (!found) {
+            printf("System is NOT in a safe state.\n");
+            return false;
+        }
     }
-    return true; // all processes finished → safe
+
+    printf("Safe sequence: ");
+    for (int i = 0; i < NUM_PROCESSES; i++) {
+        printf("P%d ", safe_sequence[i]);
+    }
+    printf("\n");
+    return true;
+}
+
+bool request_resources(int pid, int request[]) {
+    // Check if request <= need
+    for (int j = 0; j < NUM_RESOURCES; j++) {
+        if (request[j] > need[pid][j]) {
+            printf("Error: Process exceeded max claim\n");
+            return false;
+        }
+    }
+
+    // Check if request <= available
+    for (int j = 0; j < NUM_RESOURCES; j++) {
+        if (request[j] > available[j]) {
+            printf("Resources not available yet\n");
+            return false;
+        }
+    }
+
+    // Pretend to allocate
+    for (int j = 0; j < NUM_RESOURCES; j++) {
+        available[j] -= request[j];
+        allocation[pid][j] += request[j];
+        need[pid][j] -= request[j];
+    }
+
+    if (is_safe()) {
+        return true;  // Allocation is safe
+    } else {
+        // Roll back
+        for (int j = 0; j < NUM_RESOURCES; j++) {
+            available[j] += request[j];
+            allocation[pid][j] -= request[j];
+            need[pid][j] += request[j];
+        }
+        printf("Request would lead to unsafe state — denied\n");
+        return false;
+    }
+}
+
+int main() {
+    calculate_need();
+
+    printf("Initial state:\n");
+    is_safe();
+
+    int request[] = {1, 0, 2};
+    printf("\nP1 requests (1,0,2): ");
+    request_resources(1, request);
+
+    return 0;
 }
 ```
 
-**Resource-request algorithm** — called when a process Pi requests Request[i]:
+### Deadlock Detection
 
-```c
-if (Request[i] > Need[i])
-    error("exceeded maximum claim");
-if (Request[i] > Available)
-    block(); // not enough resources available
+If the system does not prevent or avoid deadlocks, it must be able to detect them.
 
-// Pretend to grant request
-Available -= Request[i];
-Allocation[i] += Request[i];
-Need[i] -= Request[i];
+#### Detection with Single Instance per Resource Type
 
-if (is_safe())
-    grant(); // state remains safe
-else {
-    // deny and roll back
-    Available += Request[i];
-    Allocation[i] -= Request[i];
-    Need[i] += Request[i];
-    block();
-}
+Use a **wait-for graph** — derived from the resource-allocation graph by removing resources and connecting processes directly. If the wait-for graph contains a cycle, there is a deadlock.
+
+```
+Resource-allocation graph:      Wait-for graph:
+P1 → R1 → P2                    P1 → P2
+     R1 → P1, P2                P2 → P3
+P2 → R2 → P3                    P3 → P1 (cycle!)
+P3 → R1 → P1 (cycle)
 ```
 
-## 7.6 Deadlock Detection
+#### Detection with Multiple Instances per Resource Type
 
-If the system does not prevent or avoid deadlock, it must detect it.
-
-### 7.6.1 Single Instance per Resource Type
-
-Maintain a wait-for graph derived from the RAG (remove resource nodes, connect processes waiting for resources directly to the processes holding them). Periodically run a cycle-detection algorithm. If a cycle exists, deadlock is present.
-
-### 7.6.2 Multiple Instances per Resource Type
-
-A detection algorithm similar to the banker's safety algorithm searches for processes that can finish. If any processes remain unfinished, they are deadlocked.
+Similar to Banker's algorithm but modified:
 
 ```c
 bool detect_deadlock() {
-    int Work[m] = Available;
-    bool Finish[n];
-    for (int i = 0; i < n; i++)
-        Finish[i] = (Allocation[i] == 0); // finished if no allocation
-    
-    while (true) {
-        int i = find_unfinished_with_need_le_work(Finish, Work);
-        if (i == -1) break;
-        Work += Allocation[i];
-        Finish[i] = true;
+    int work[NUM_RESOURCES];
+    bool finish[NUM_PROCESSES];
+
+    // Initialize work = available
+    for (int j = 0; j < NUM_RESOURCES; j++) {
+        work[j] = available[j];
     }
-    
-    for (int i = 0; i < n; i++)
-        if (!Finish[i]) return true; // deadlock detected
-    return false;
+
+    // Processes with allocation > 0 are initially unfinished
+    for (int i = 0; i < NUM_PROCESSES; i++) {
+        bool allocated = false;
+        for (int j = 0; j < NUM_RESOURCES; j++) {
+            if (allocation[i][j] > 0) {
+                allocated = true;
+                break;
+            }
+        }
+        finish[i] = !allocated;  // Processes with no resources can never deadlock
+    }
+
+    // Look for an unfinished process whose request <= work
+    bool changed;
+    do {
+        changed = false;
+        for (int i = 0; i < NUM_PROCESSES; i++) {
+            if (!finish[i]) {
+                bool can_run = true;
+                for (int j = 0; j < NUM_RESOURCES; j++) {
+                    if ((max[i][j] - allocation[i][j]) > work[j]) {
+                        can_run = false;
+                        break;
+                    }
+                }
+                if (can_run) {
+                    for (int j = 0; j < NUM_RESOURCES; j++) {
+                        work[j] += allocation[i][j];
+                    }
+                    finish[i] = true;
+                    changed = true;
+                }
+            }
+        }
+    } while (changed);
+
+    // Check for deadlocked processes
+    bool deadlock = false;
+    for (int i = 0; i < NUM_PROCESSES; i++) {
+        if (!finish[i]) {
+            printf("Process P%d is deadlocked\n", i);
+            deadlock = true;
+        }
+    }
+
+    return deadlock;
 }
 ```
 
-Detection frequency trades overhead against deadlock duration: running it every request incurs high overhead; running it infrequently means deadlocked processes waste resources for longer periods.
+### Deadlock Recovery
 
-## 7.7 Recovery from Deadlock
+Once a deadlock is detected, the system must recover.
 
-### 7.7.1 Process Termination
+#### Process Termination
 
-- **Abort all deadlocked processes**: Expensive, may lose computation.
-- **Abort one process at a time**: After each abort, re-run detection. Minimal aborts, but significant overhead.
+- **Abort all deadlocked processes**: Expensive — processes may have computed for a long time
+- **Abort one process at a time**: After each abort, re-run detection to see if deadlock is broken
 
-### 7.7.2 Resource Preemption
+**Selection criteria**: Choose the process with the smallest cost:
+- Lowest priority
+- Most time remaining
+- Most resources held
+- Least total work done so far
 
-Select a victim process and forcibly preempt its resources. Considerations:
+#### Resource Preemption
 
-- **Selecting a victim**: Minimise cost — consider process priority, CPU time used, resources held.
-- **Rollback**: The process must be rolled back to a safe checkpoint and restarted.
-- **Starvation**: A process may be selected repeatedly as the victim. Ensure the cost factor includes the number of times a process has been preempted.
+Forcibly take resources from some processes and give them to others.
+
+**Challenges**:
+1. **Select a victim**: Which process to preempt?
+2. **Rollback**: The preempted process must be rolled back to a safe state and restarted
+3. **Starvation**: A process might always be selected as the victim. Use a cost metric that increases with each preemption.
+
+## Examples
+
+### Example 1: Deadlock Demonstration
+
+```c
+// deadlock.c — compile with: gcc deadlock.c -lpthread -o deadlock
+#include <stdio.h>
+#include <pthread.h>
+#include <unistd.h>
+
+pthread_mutex_t mutex1 = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t mutex2 = PTHREAD_MUTEX_INITIALIZER;
+
+void *thread1(void *arg) {
+    pthread_mutex_lock(&mutex1);
+    printf("Thread 1: locked mutex1\n");
+    sleep(1);  // Force deadlock timing
+    pthread_mutex_lock(&mutex2);
+    printf("Thread 1: locked mutex2\n");
+
+    pthread_mutex_unlock(&mutex2);
+    pthread_mutex_unlock(&mutex1);
+    return NULL;
+}
+
+void *thread2(void *arg) {
+    pthread_mutex_lock(&mutex2);
+    printf("Thread 2: locked mutex2\n");
+    sleep(1);
+    pthread_mutex_lock(&mutex1);  // Deadlock here
+    printf("Thread 2: locked mutex1\n");
+
+    pthread_mutex_unlock(&mutex1);
+    pthread_mutex_unlock(&mutex2);
+    return NULL;
+}
+
+int main() {
+    pthread_t t1, t2;
+
+    pthread_create(&t1, NULL, thread1, NULL);
+    pthread_create(&t2, NULL, thread2, NULL);
+
+    pthread_join(t1, NULL);  // Never returns
+    pthread_join(t2, NULL);
+
+    return 0;
+}
+```
+
+### Example 2: Preventing Deadlock with Resource Ordering
+
+Fix the above by always locking mutex1 before mutex2:
+
+```c
+void *thread2_fixed(void *arg) {
+    pthread_mutex_lock(&mutex1);  // Changed: same order as thread1
+    pthread_mutex_lock(&mutex2);
+    printf("Thread 2: locked both mutexes\n");
+
+    pthread_mutex_unlock(&mutex2);
+    pthread_mutex_unlock(&mutex1);
+    return NULL;
+}
+```
 
 ## Summary
 
-Deadlock requires mutual exclusion, hold-and-wait, no preemption, and circular wait. Prevention statically ensures one condition cannot hold. Avoidance uses the banker's algorithm to maintain safe states. Detection identifies deadlock via wait-for graph analysis or a detection algorithm; recovery terminates processes or preempts resources. Most general-purpose OSs prefer prevention or the ostrich algorithm, while critical systems employ avoidance or detection.
+- Deadlock requires four conditions: mutual exclusion, hold-and-wait, no preemption, circular wait
+- Resource-allocation graphs can detect cycles; a cycle with single-instance resources means deadlock
+- Prevention breaks one condition; avoidance (Banker's algorithm) identifies unsafe states
+- Detection algorithms find deadlocked processes; recovery uses termination or preemption
+- The Ostrich algorithm is the most common strategy: assume deadlocks won't happen
+- Banker's algorithm is an O(m·n²) algorithm where m = resource types, n = processes
+- Deadlock detection with multiple resource instances uses a variant of Banker's algorithm
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. List and explain the four necessary conditions for deadlock.
-2. Is a cycle in a resource-allocation graph sufficient for deadlock? Justify your answer.
-3. How does the ordering of resource requests prevent circular wait?
-4. What is a safe state, and how does it relate to deadlock avoidance?
-5. What trade-offs exist in choosing how frequently to run deadlock detection?
+1. List the four necessary conditions for deadlock and explain each in one sentence.
+2. Draw the resource-allocation graph for: P1 holds R1, wants R2; P2 holds R2, wants R1. Is this a deadlock?
+3. What is the difference between deadlock prevention and deadlock avoidance?
 
-### Application Problems
+### Intermediate
 
-1. A system has three resource types: A (10 units), B (5 units), C (7 units). Processes P0–P3 have the following allocation and max matrices. Is the current state safe?
+4. Given a system with three resource types (A:10, B:5, C:7) and these processes:
+   - P0: Max (7,5,3), Allocation (0,1,0)
+   - P1: Max (3,2,2), Allocation (2,0,0)
+   - P2: Max (9,0,2), Allocation (3,0,2)
+   - P3: Max (2,2,2), Allocation (2,1,1)
+   - P4: Max (4,3,3), Allocation (0,0,2)
+   Use Banker's algorithm to determine if (3,3,0) available is a safe state.
 
-| Process | Allocation (A,B,C) | Max (A,B,C) |
-|---------|-------------------|-------------|
-| P0 | (1,1,2) | (4,3,3) |
-| P1 | (2,1,1) | (3,2,2) |
-| P2 | (3,1,0) | (6,1,3) |
-| P3 | (1,2,1) | (3,3,3) |
+5. Implement a program that detects deadlock in a system by constructing a wait-for graph (not by using Banker's algorithm). Represent the graph as an adjacency matrix and use cycle detection.
 
-Available = (3,0,3).
+6. Explain why the "hold and wait" condition is the easiest to prevent in practice, and why this prevention leads to poor resource utilization.
 
-2. Run the banker's algorithm on the system from problem 1. Can a request by P0 for (2,0,1) be granted safely?
-3. A system has 6 tape drives and 4 processes. Process P0 needs 5, P1 needs 4, P2 needs 2, P3 needs 3. Currently P0 holds 2, P1 holds 2, P2 holds 0, P3 holds 1. Determine whether this state is safe.
+### Advanced
 
-### Challenge Problem
+7. Implement Banker's algorithm for a system with up to 10 processes and 5 resource types. Your program should accept resource request vectors and either grant or deny them, displaying the safe sequence.
 
-1. Implement a deadlock detection tool in C that reads a snapshot of system state (available resources, current allocation, waiting requests) and determines whether deadlock exists. If deadlock exists, output the set of deadlocked processes and recommend a recovery plan (which process to terminate).
+8. Research and implement the **Ostrich algorithm** in a small multithreaded program: after some time with no progress, assume deadlock and abort all threads. What heuristic would you use to detect "no progress"?
+
+9. Consider the dining philosophers problem with resource ordering. Assign chopsticks numbers 0–4. Philosopher i must acquire lower-numbered chopstick first, then higher. Does this prevent deadlock? Prove it or find a counterexample.

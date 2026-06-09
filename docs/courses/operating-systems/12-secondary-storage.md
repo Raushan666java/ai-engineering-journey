@@ -1,167 +1,380 @@
-# Chapter 12 — Secondary Storage
+# Chapter 12: Secondary Storage
 
 ## Learning Objectives
 
-1. Analyse disk scheduling algorithms and their performance characteristics.
-2. Compare RAID levels in terms of performance, capacity, and fault tolerance.
-3. Understand swap-space management and its role in virtual memory.
-4. Calculate access times considering seek, rotation, and transfer.
+- Describe disk hardware: platters, tracks, sectors, cylinders, and seek time
+- Implement and compare disk scheduling algorithms (FCFS, SCAN, C-SCAN, LOOK, C-LOOK)
+- Calculate disk access latency (seek + rotation + transfer)
+- Explain disk formatting, partitioning, and bad-block management
+- Design RAID structures and compare RAID levels (0, 1, 5, 6, 10)
+- Understand swap space management
 
-## 12.1 Disk Structure
+## Theory
 
-A hard disk drive (HDD) stores data on rotating platters with magnetic surfaces. Each platter is divided into concentric tracks, and each track is divided into sectors (typically 512 bytes or 4 KB). The set of tracks at the same radial position across all platters is a **cylinder**.
+### Disk Structure
 
-Access time for a disk read has three components:
+Magnetic hard disk drives (HDDs) consist of:
 
-1. **Seek time**: Time to move the disk arm to the correct cylinder (dominant component, 2–15 ms).
-2. **Rotational latency**: Time for the desired sector to rotate under the head (half a rotation on average; at 7200 RPM, average = 4.17 ms).
-3. **Transfer time**: Time to read or write the data (typically 100–200 MB/s).
-
-Total average access time = seek + (0.5 / RPM × 60 × 1000) + (data_size / transfer_rate).
-
-## 12.2 Disk Scheduling Algorithms
-
-Disk scheduling reorders pending I/O requests to minimise seek time.
-
-### 12.2.1 FCFS
-
-Process requests in arrival order. Simple but results in long random seek patterns.
-
-**Example**: Requests for cylinders: 98, 183, 37, 122, 14, 124, 65, 67. Starting at 53.
-
-Head movement: 53 → 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67 = 640 cylinders.
-
-### 12.2.2 SSTF (Shortest Seek Time First)
-
-Select the request with the shortest seek from the current position. Reduces total movement but can cause starvation of distant requests.
-
-Starting at 53: 53 → 65 (12) → 67 (2) → 37 (30) → 14 (23) → 98 (84) → 122 (24) → 124 (2) → 183 (59) = 236 cylinders.
-
-### 12.2.3 SCAN (Elevator Algorithm)
-
-The arm moves in one direction, servicing all requests in its path, then reverses direction. Like an elevator traversing floors.
-
-Starting at 53, moving toward 0: 53 → 37 → 14 → 0 → 65 → 67 → 98 → 122 → 124 → 183 = 53 + 183 = 236 (or compute as: 53 to 0 = 53, 0 to 183 = 183, total = 236).
-
-### 12.2.4 C-SCAN (Circular SCAN)
-
-The arm moves in one direction, servicing requests to the end of the disk, then jumps back to the beginning and repeats. Provides uniform waiting time.
-
-Starting at 53, moving toward 199: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 199 → 0 → 14 → 37 = 199 − 53 + 199 + 37 = 382.
-
-### 12.2.5 LOOK and C-LOOK
-
-Variants of SCAN and C-SCAN that only go as far as the last request in each direction rather than to the end of the disk. These are what real OSs actually implement.
-
-C-LOOK starting at 53: 53 → 65 → 67 → 98 → 122 → 124 → 183 → 14 → 37 = (183 − 53) + (183 − 14) + (37 − 14) = 130 + 169 + 23 = 322.
-
-## 12.3 Disk Scheduling in Modern Systems
-
-Modern SSDs (Solid State Drives) have no moving parts — seek time and rotational latency do not apply. Consequently, FCFS is adequate for SSDs; the overhead of scheduling provides no benefit. The OS must still manage the I/O queue for fairness and merging of adjacent requests (regardless of disk type).
-
-I/O **merging** combines adjacent requests: if requests for blocks 4 and 5 are waiting, they are merged into a single request for blocks 4–6. This benefits both HDDs and SSDs.
-
-## 12.4 RAID
-
-RAID (Redundant Array of Independent Disks) combines multiple physical drives into a single logical unit to improve reliability and/or performance.
-
-### 12.4.1 RAID Levels
-
-| Level | Description | Min drives | Capacity | Read perf | Write perf | Fault tolerance |
-|-------|-------------|-----------|----------|-----------|------------|-----------------|
-| 0 | Striping | 2 | 100% | Excellent | Excellent | None |
-| 1 | Mirroring | 2 | 50% | Good (read both) | Good | N−1 drives |
-| 4 | Block-level parity | 3 | (N−1)/N | Good (no parity read) | Poor (parity bottleneck) | 1 drive |
-| 5 | Distributed parity | 3 | (N−1)/N | Good | Good | 1 drive |
-| 6 | Dual parity | 4 | (N−2)/N | Good | Moderate | 2 drives |
-| 10 | Stripe of mirrors | 4 | 50% | Excellent | Good | Per stripe: 1 drive |
-
-- **RAID 0**: Data is striped across drives. No redundancy — one failure loses all data.
-- **RAID 1**: Data is mirrored. Writes go to both drives; reads can come from either.
-- **RAID 5**: Data and parity are striped across all drives. Parity is computed as XOR of the data blocks. Single-drive failure tolerance; degraded mode reads reconstruct missing data from the remaining drives plus parity.
-- **RAID 6**: Similar to RAID 5 but with two parity blocks per stripe, tolerating two simultaneous failures.
-- **RAID 10**: Combine mirroring and striping. Drives are mirrored in pairs, then striped across pairs. High performance and redundancy.
-
-### 12.4.2 Parity Calculation
-
-For RAID 5, parity = XOR of data blocks:
+- **Platters**: Rigid disks coated with magnetic material
+- **Surfaces**: Top and bottom of each platter (each surface has a read/write head)
+- **Tracks**: Concentric circles on a surface
+- **Sectors**: Smallest unit of data transfer (typically 512 bytes or 4 KB)
+- **Cylinders**: The set of tracks at the same radius across all platters
 
 ```
-Block 0: 1010
-Block 1: 1100
-Block 2: 0110
-Parity P: 1010 ⊕ 1100 ⊕ 0110 = 0000
+                    ┌─────────────────┐
+                    │   Spindle        │
+                    │    ┌───┐         │
+                    │    │   │         │
+                    │  ┌─┴───┴─┐       │
+                    │  │Platter│       │
+                    │  │ 0     │       │
+                    │  ├───────┤       │
+                   ╔╣  │Platter│       │
+                   ║ ║ │ 1     │       │
+                   ╚╝  ├───────┤       │
+                    │  │Platter│       │
+                    │  │ 2     │       │
+                    │  └───────┘       │
+                    │  Read/Write      │
+                    │  Heads (arm)     │
+                    └─────────────────┘
 ```
 
-If Block 1 fails, it can be recovered: Block 1 = Block 0 ⊕ Block 2 ⊕ P = 1010 ⊕ 0110 ⊕ 0000 = 1100.
+### Disk Access Time
 
-### 12.4.3 RAID in Software vs. Hardware
+The time to read or write a disk block has three components:
 
-- **Hardware RAID**: Dedicated controller card with its own CPU and cache. OS sees one logical drive. Battery-backed cache enables safe write-back caching.
-- **Software RAID**: Implemented by the OS (Linux md, Windows Storage Spaces). Uses CPU cycles for parity computation but is cheaper and more flexible.
-
-## 12.4.4 Software RAID (md) on Linux
-
-The Linux `md` (multiple device) subsystem implements RAID in software. It aggregates block devices (partitions, whole disks) into a single virtual device `/dev/md0`. Management is done via the `mdadm` utility.
-
-```bash
-# Create RAID 1 from two partitions
-mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb1 /dev/sdc1
-
-# Create RAID 5 from four devices
-mdadm --create /dev/md1 --level=5 --raid-devices=4 /dev/sdd1 /dev/sde1 /dev/sdf1 /dev/sdg1
-
-# Check array status
-cat /proc/mdstat
-mdadm --detail /dev/md0
-
-# Replace a failed device
-mdadm /dev/md0 --fail /dev/sdb1
-mdadm /dev/md0 --remove /dev/sdb1
-mdadm /dev/md0 --add /dev/sdh1
+```
+Access Time = Seek Time + Rotational Latency + Transfer Time
 ```
 
-The `/proc/mdstat` output shows the state of each array, rebuild progress, and device membership. Software RAID allows any combination of disks and levels, limited only by CPU bandwidth for parity computation.
+1. **Seek Time**: Time to move the disk arm to the correct cylinder (dominant factor: 3–15 ms)
+   - Average seek time on modern HDDs: 4–10 ms
+   - Depends on the distance the arm must travel
 
-## 12.5 Swap-Space Management
+2. **Rotational Latency**: Time for the desired sector to rotate under the read/write head
+   - Average: half a rotation
+   - At 7200 RPM: 60 / 7200 = 8.33 ms per rotation → average 4.17 ms
+   - At 15000 RPM: 60 / 15000 = 4 ms per rotation → average 2 ms
 
-Swap space provides backing store for pages evicted from physical memory. It is distinct from the filesystem — swap is managed as a raw disk partition or a file.
+3. **Transfer Time**: Time to read/write the data once the head is in position
+   - Transfer rate: 100–200 MB/s for modern HDDs
+   - For a 4 KB sector: 4 KB / 150 MB/s ≈ 0.027 ms (negligible compared to seek+rotation)
 
-### 12.5.1 Swap Location
+**Typical random I/O latency** (7200 RPM HDD): 5 ms (seek) + 4 ms (rotation) + 0.03 ms (transfer) ≈ 9 ms. This is about **100,000× slower** than main memory access (∼100 ns).
 
-- **Swap partition**: Dedicated disk partition (Linux). No filesystem overhead; block-sized I/O is more efficient.
-- **Swap file**: Regular file within an existing filesystem (Windows `pagefile.sys`). Flexible sizing but may suffer from fragmentation.
+### Disk Scheduling
 
-### 12.5.2 Swap Performance
+The OS can reorder pending disk I/O requests to improve performance. The disk scheduler selects which request to service next.
 
-The OS attempts to keep frequently accessed pages in physical memory and swap rarely used pages. The swap space is only written when a dirty page is evicted. Systems with sufficient RAM may never touch swap.
+#### FCFS (First-Come, First-Served)
 
-The **swappiness** parameter (/proc/sys/vm/swappiness on Linux, range 0–100) controls the kernel's tendency to swap. A value of 0 disables proactive swapping (pages are only swapped under memory pressure); 100 encourages aggressive swapping.
+Process requests in arrival order. Fair but can cause wild arm movements.
 
-### 12.5.3 Swap Space Sizing
+```
+Queue: 98, 183, 37, 122, 14, 124, 65, 67
+Head starts at 53
 
-Traditional rule of thumb: 2× physical RAM. Modern systems with large memories (16–64 GB) rarely need more than swap = RAM for hibernation support (hibernation saves the entire contents of RAM to swap). With suspend-to-RAM, swap can be as small as necessary to provide headroom.
+Movement: 53 → 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67
+Total head movement: |53-98| + |98-183| + |183-37| + |37-122| + |122-14| + |14-124| + |124-65| + |65-67|
+= 45 + 85 + 146 + 85 + 108 + 110 + 59 + 2 = 640 cylinders
+```
+
+#### SCAN (Elevator Algorithm)
+
+The arm moves in one direction, servicing all requests in its path. When it reaches the end, it reverses direction.
+
+```
+Queue: 98, 183, 37, 122, 14, 124, 65, 67
+Head starts at 53, moving toward 0 (inner tracks first)
+
+Direction ← 0:
+Movement: 53 → 37 → 14 → 0 → 65 → 67 → 98 → 122 → 124 → 183
+Total: |53-37| + |37-14| + |14-0| + |0-65| + |65-67| + |67-98| + |98-122| + |122-124| + |124-183|
+= 16 + 23 + 14 + 65 + 2 + 31 + 24 + 2 + 59 = 236 cylinders
+```
+
+#### C-SCAN (Circular SCAN)
+
+Like SCAN, but the arm only services requests in one direction. When it reaches the end, it jumps back to the beginning without servicing.
+
+```
+Movement: 53 → 37 → 14 → 0 → (jump to 199) → 199 → 183 → 124 → 122 → 98 → 67 → 65
+                                            (no service during jump)
+Total: 16 + 23 + 14 + 65 + 199 + |199-183| + |183-124| + |124-122| + |122-98| + |98-67| + |67-65|
+= 16 + 23 + 14 + 65 + 199 + 16 + 59 + 2 + 24 + 31 + 2 = 451 cylinders
+```
+
+**Advantage over SCAN**: Uniform waiting time. In SCAN, cylinders in the middle get faster service than those at the edges.
+
+#### LOOK and C-LOOK
+
+Like SCAN/C-SCAN, but the arm only goes as far as the last request in each direction, not to the end of the disk.
+
+```
+C-LOOK (same queue, head at 53 moving toward 0):
+Movement: 53 → 37 → 14 → (jump to 183) → 183 → 124 → 122 → 98 → 67 → 65
+Total: 16 + 23 + 14 + |183-14| + |183-124| + |124-122| + |122-98| + |98-67| + |67-65|
+= 16 + 23 + 14 + 169 + 59 + 2 + 24 + 31 + 2 = 340 cylinders
+```
+
+#### Scheduling Algorithm Comparison
+
+| Algorithm | Total Movement | Starvation | Uniform Wait |
+|-----------|---------------|------------|--------------|
+| FCFS | 640 | No | Yes |
+| SCAN | 236 | Possible at edges | No |
+| C-SCAN | 451 | No | Yes |
+| LOOK | ~200 | Possible at edges | No |
+| C-LOOK | ~340 | No | Yes |
+
+Modern Linux uses **completely fair queueing** and **deadline scheduler** — both consider request age and prioritize reads over writes.
+
+### Disk Management
+
+#### Formatting
+
+1. **Low-level formatting** (physical): Divides disk into sectors that the controller can read/write. Done at the factory.
+2. **Partitioning**: Divides the disk into logical groups of cylinders. Each partition is treated as a separate device.
+3. **Logical formatting**: Creates a file system on a partition (writes superblock, inode table, etc.)
+
+#### Boot Block
+
+The first sector of the disk (MBR or GPT) contains the boot loader — a small program that loads the OS kernel.
+
+```
+MBR (Master Boot Record):
+┌──────────────────────────────────┐
+│ Boot code (440 bytes)             │
+│ Disk signature (4 bytes)          │
+│ Partition table entries (16×4=64) │
+│ Magic number 0xAA55 (2 bytes)     │
+└──────────────────────────────────┘
+```
+
+Modern systems use **GPT** (GUID Partition Table) instead of MBR, supporting disks larger than 2 TB and more than 4 partitions.
+
+#### Bad Blocks
+
+Disks develop defects (bad sectors). Two approaches:
+
+1. **Sector sparing (forwarding)**: The disk controller remaps bad sectors to spare sectors from a reserved pool. Transparent to the OS.
+2. **Sector slipping**: When a bad sector is detected during formatting, sectors are shifted past it so the bad sector is never used.
+
+### RAID
+
+**Redundant Array of Independent Disks** uses multiple disks to improve reliability and/or performance.
+
+#### RAID Levels
+
+**RAID 0 (Striping)**: Data is striped across all disks. No redundancy.
+
+```
+Disk 0    Disk 1    Disk 2
+stripe0   stripe1   stripe2
+stripe3   stripe4   stripe5
+stripe6   stripe7   stripe8
+```
+**Performance**: Excellent reads/writes. **Reliability**: Any disk failure loses all data.
+
+**RAID 1 (Mirroring)**: Data is duplicated on two disks.
+
+```
+Disk 0    Disk 1
+block 0   block 0
+block 1   block 1
+block 2   block 2
+```
+**Performance**: Good reads (read from either), slower writes (write to both). **Reliability**: One disk can fail.
+
+**RAID 5 (Striping with Parity)**: Data and parity are striped across all disks. Parity is computed using XOR.
+
+```
+Disk 0    Disk 1    Disk 2    Disk 3
+Data 0    Data 1    Data 2    Parity 0-2
+Data 3    Data 4    Parity    Data 5
+...       ...       ...       ...
+```
+**Performance**: Good reads, slow writes (must read old data + old parity, compute new parity). **Reliability**: One disk can fail.
+
+**RAID 6 (Striping with Dual Parity)**: Two parity blocks per stripe. Can survive two disk failures.
+
+**RAID 10 (1+0)**: Mirrored stripes. Combine mirroring (RAID 1) with striping (RAID 0).
+
+```
+            RAID 0
+       ┌──────┴──────┐
+     RAID 1        RAID 1
+    ┌──┴──┐       ┌──┴──┐
+   Disk0 Disk1   Disk2 Disk3
+```
+**Performance**: Excellent. **Reliability**: Can survive multiple failures (one per mirror set).
+
+#### RAID Comparison
+
+| Level | Min Disks | Redundancy | Read perf | Write perf | Capacity |
+|-------|-----------|------------|-----------|------------|----------|
+| 0 | 2 | None | Excellent | Excellent | 100% |
+| 1 | 2 | Mirror | Good | Good (2× writes) | 50% |
+| 5 | 3 | Parity | Good | Poor | (N-1)/N |
+| 6 | 4 | Dual parity | Good | Very poor | (N-2)/N |
+| 10 | 4 | Mirror+stripe | Excellent | Good | 50% |
+
+### Swap Space
+
+Swap space is used by the virtual memory system to hold pages evicted from physical memory.
+
+**Swap partition**: A dedicated partition on disk (Linux). No file system — just raw blocks for efficiency.
+
+**Swap file**: A file within a file system (Windows `pagefile.sys`, Linux `swapfile`).
+
+## Examples
+
+### Example 1: Disk Scheduling Simulation
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+#define REQUESTS 8
+#define DISK_MAX 200
+
+void fcfs(int queue[], int n, int start) {
+    int total = 0;
+    printf("FCFS: %d", start);
+
+    for (int i = 0; i < n; i++) {
+        total += abs(start - queue[i]);
+        start = queue[i];
+        printf(" → %d", start);
+    }
+    printf("\n  Total movement: %d\n", total);
+}
+
+void scan(int queue[], int n, int start) {
+    // Sort requests
+    int sorted[n];
+    for (int i = 0; i < n; i++) sorted[i] = queue[i];
+
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (sorted[j] > sorted[j + 1]) {
+                int t = sorted[j]; sorted[j] = sorted[j + 1]; sorted[j + 1] = t;
+            }
+        }
+    }
+
+    int total = 0;
+    int current = start;
+    bool direction = false;  // false = toward 0, true = toward max
+
+    printf("SCAN: %d", start);
+
+    if (!direction) {
+        // Go toward 0
+        for (int i = n - 1; i >= 0; i--) {
+            if (sorted[i] < start) continue;
+            // Actually we need to go from start down to the smallest request
+        }
+        // Let me rewrite this more carefully
+        int pos = 0;
+        while (pos < n && sorted[pos] < start) pos++;
+
+        // Go down first
+        for (int i = pos - 1; i >= 0; i--) {
+            total += abs(current - sorted[i]);
+            current = sorted[i];
+            printf(" → %d", current);
+        }
+        // Go to 0
+        if (current != 0) {
+            total += current;
+            current = 0;
+            printf(" → %d", current);
+        }
+        // Reverse and go up
+        for (int i = pos; i < n; i++) {
+            total += abs(current - sorted[i]);
+            current = sorted[i];
+            printf(" → %d", current);
+        }
+    }
+
+    printf("\n  Total movement: %d\n", total);
+}
+
+int main() {
+    int queue[] = {98, 183, 37, 122, 14, 124, 65, 67};
+    int start = 53;
+
+    fcfs(queue, REQUESTS, start);
+    // scan(queue, REQUESTS, start);  // Uncomment to test
+
+    return 0;
+}
+```
+
+### Example 2: Estimating Disk Throughput
+
+```c
+#include <stdio.h>
+
+int main() {
+    double avg_seek = 5.0;       // ms
+    double rpm = 7200.0;
+    double rotational_latency = (60.0 / rpm / 2.0) * 1000.0;  // ms
+    double transfer_rate = 150.0;  // MB/s
+    int block_size = 4096;       // bytes
+
+    double transfer_time = (block_size / 1024.0 / 1024.0) / transfer_rate * 1000.0;
+
+    double random_access = avg_seek + rotational_latency + transfer_time;
+    double random_iops = 1000.0 / random_access;
+
+    // Sequential: no seek, just rotation + transfer
+    // Transfer 1 MB sequentially
+    double sequential_transfer = (1.0 / transfer_rate) * 1000.0;
+    double sequential_throughput = 1.0 / (sequential_transfer / 1000.0);
+
+    printf("Disk: 7200 RPM, avg seek = %.1f ms\n", avg_seek);
+    printf("Rotational latency: %.2f ms\n", rotational_latency);
+    printf("Transfer time (4 KB): %.4f ms\n", transfer_time);
+    printf("\nRandom 4 KB I/O: %.3f ms (%.0f IOPS)\n", random_access, random_iops);
+    printf("Sequential throughput: ~%.0f MB/s\n", sequential_throughput);
+
+    return 0;
+}
+```
 
 ## Summary
 
-Disk scheduling reduces seek time on HDDs through intelligent request ordering. SCAN-derived algorithms (C-SCAN, C-LOOK) provide bounded waiting and good throughput. RAID improves reliability and performance through redundancy and striping. Swap space extends virtual memory to disk. Modern practice increasingly favours SSDs, which eliminate the mechanical seek bottleneck and simplify I/O scheduling.
+- Disk access time = seek + rotation + transfer; seek dominates (∼5–10 ms)
+- SCAN/C-SCAN and LOOK/C-LOOK reduce total arm movement compared to FCFS
+- C-SCAN and C-LOOK provide more uniform waiting times than SCAN-based algorithms
+- RAID 0 (striping) improves performance; RAID 1 (mirroring) improves reliability
+- RAID 5 and 6 use parity for space-efficient redundancy
+- RAID 10 (1+0) combines mirroring and striping for best performance and reliability
+- Bad blocks are handled by sector sparing (remapping) or sector slipping
+- Swap space extends virtual memory onto disk for page eviction
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What are the three components of disk access time?
-2. How does C-SCAN provide more uniform waiting times than SCAN?
-3. Why is disk scheduling less important for SSDs than for HDDs?
-4. What is the storage efficiency (usable capacity / raw capacity) of RAID 5 with 5 drives? RAID 6 with 5 drives?
-5. What is the purpose of swap space?
+1. Given a disk with 200 cylinders, compute total head movement for FCFS and SCAN for the queue: 86, 147, 12, 95, 177, 23, 55, 104. Head starts at 50 moving toward 0.
+2. What are the three components of disk access time? Which is typically the largest?
+3. Describe RAID 0, RAID 1, and RAID 5. What is the effective capacity of each with 4 × 1 TB disks?
 
-### Application Problems
+### Intermediate
 
-1. Given pending requests for cylinders: 10, 22, 20, 2, 40, 6, 38 (current position 20). Compute the total head movement for FCFS, SSTF, SCAN (toward 0), and C-LOOK (toward 0). Assume the disk has 50 cylinders.
-2. A RAID 5 array has 6 drives, each 4 TB. How much usable capacity does it provide? How many drive failures can it survive?
-3. For a 7200 RPM drive with average seek time 8 ms and transfer rate 100 MB/s, compute the average time to read a 4 KB file. Then compute the time for a 1 MB contiguous file.
+4. Write a complete disk scheduling simulator that supports FCFS, SCAN, C-SCAN, LOOK, and C-LOOK. Generate random request queues and compare the algorithms on total seek distance, variance in waiting time, and maximum waiting time.
+5. What is the difference between formatting and partitioning? A 500 GB disk is divided into 4 equal partitions. How much capacity does RAID 5 and RAID 10 provide with four such disks?
+6. Explain the RAID 5 write penalty. Why is writing to a RAID 5 array slower than writing to a single disk? Use a specific example with a 4-disk RAID 5 array.
 
-### Challenge Problem
+### Advanced
 
-1. Write a disk scheduling simulator. Read a trace file containing (arrival_time, cylinder) pairs. Implement FCFS, SSTF, SCAN, and C-LOOK. For each algorithm, report total head movement, average response time, and maximum response time. Analyse how SSTF can cause starvation by running a trace with a cluster of near cylinders and a single distant cylinder arriving periodically.
+7. Write a benchmark that measures random vs sequential I/O performance on an actual disk. Use `O_DIRECT` to bypass the page cache. Test with 512-byte, 4 KB, 64 KB, and 1 MB access sizes. Report IOPS and throughput for each pattern.
+8. Research the **Linux CFQ** (Completely Fair Queueing) and **deadline** I/O schedulers. Write a test program that produces a mix of random reads and sequential writes. Compare latency and throughput under each scheduler (select with `echo deadline > /sys/block/sda/queue/scheduler`).
+9. Implement a FUSE file system that presents a **RAID 0 view** of two directories. When a file is created, stripe its data across the two directories in 4 KB chunks. When read, reassemble from both directories.

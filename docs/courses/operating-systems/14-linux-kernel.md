@@ -1,228 +1,410 @@
-# Chapter 14 — The Linux Kernel
+# Chapter 14: Linux Kernel Internals
 
 ## Learning Objectives
 
-1. Identify the major subsystems of the Linux kernel.
-2. Describe the `task_struct` and its role in process management.
-3. Explain the buddy allocator and the slab allocator.
-4. Understand the Virtual File System (VFS) abstraction.
-5. Explore the `/proc` filesystem and kernel module infrastructure.
+- Describe the Linux process model and the `task_struct`
+- Explain the Linux clone() system call and its role in creating threads
+- Analyze the Completely Fair Scheduler (CFS) design and its virtual runtime
+- Describe the Linux memory management architecture (buddy allocator, slab, vmalloc)
+- Explain the Virtual File System (VFS) layer and its data structures
+- Understand the /proc filesystem and how it exposes kernel state
 
-## 14.1 Linux Kernel Overview
+## Theory
 
-The Linux kernel is a monolithic, modular, POSIX-compatible kernel that supports a broad range of hardware architectures. Its source tree is organised into roughly 30 major subsystems:
+### Linux Process Model
 
-- **sched/**: Process scheduling (CFS, real-time).
-- **kernel/**: Core kernel (process management, signals, timers).
-- **mm/**: Memory management (page allocator, VM, slab).
-- **fs/**: Filesystems (VFS layer and individual filesystems).
-- **net/**: Networking stack (TCP/IP, sockets, netfilter).
-- **drivers/**: Device drivers (largest subsystem by line count).
-- **arch/**: Architecture-specific code (x86, ARM, RISC-V).
-- **block/**: Block I/O layer (I/O schedulers, bio layer).
-- **ipc/**: Inter-process communication (pipes, SysV IPC, mqueue).
-- **security/**: Security frameworks (SELinux, AppArmor, capabilities).
-
-## 14.2 Process Management
-
-### 14.2.1 task_struct
-
-Each process and thread in Linux is represented by a `task_struct`, defined in `include/linux/sched.h`. It is the largest and most complex data structure in the kernel (approximately 2 KB in size on x86-64).
-
-Key fields:
+Linux processes are represented by the **task_struct** structure (defined in `include/linux/sched.h`). This is one of the largest structures in the kernel, containing hundreds of fields.
 
 ```c
+// Simplified task_struct (very much abridged)
 struct task_struct {
-    unsigned int             __state;          // TASK_RUNNING, TASK_INTERRUPTIBLE, etc.
-    struct list_head         tasks;            // global process list
-    struct mm_struct         *mm;              // memory descriptor
-    struct fs_struct         *fs;              // filesystem info (root, pwd)
-    struct files_struct      *files;           // open file descriptors
-    const struct cred        *cred;            // credentials (UID, GID)
-    struct task_struct       *parent;          // parent process
-    struct list_head         children;         // list of children
-    struct sched_entity      se;               // scheduler entity (CFS)
-    pid_t                    pid;              // process ID
-    char                     comm[TASK_COMM_LEN]; // executable name
-    unsigned int             policy;           // scheduling policy
-    cpumask_t                cpus_allowed;     // CPU affinity mask
-    // ... hundreds more fields
+    // State
+    volatile long state;           // TASK_RUNNING, TASK_INTERRUPTIBLE, etc.
+    int exit_code;
+    pid_t pid;
+    pid_t tgid;                    // Thread group ID (PID of the main thread)
+
+    // Scheduling
+    unsigned int policy;           // SCHED_FIFO, SCHED_RR, SCHED_NORMAL, etc.
+    int prio, static_prio, normal_prio;
+    struct sched_entity se;        // Scheduling entity for CFS
+
+    // Memory
+    struct mm_struct *mm;          // Memory descriptor
+    struct mm_struct *active_mm;
+
+    // Files
+    struct files_struct *files;    // Open file descriptors
+    struct fs_struct *fs;          // Filesystem information
+
+    // Signal handling
+    struct signal_struct *signal;
+
+    // Parent/child relationships
+    struct task_struct *parent;
+    struct list_head children;
+    struct list_head sibling;
+
+    // Namespace
+    struct nsproxy *nsproxy;
+
+    // Wait queue
+    wait_queue_head_t *wait_channel;
+
+    // Timers
+    cputime_t utime, stime;        // User and system CPU time
+
+    // Thread-specific
+    struct thread_struct thread;   // CPU-specific state (registers, etc.)
 };
 ```
 
-The `current` macro returns a pointer to the current task's `task_struct`, typically by referencing a per-CPU variable or a dedicated register (`sp_el0` on ARM64).
-
-### 14.2.2 Process Creation
-
-Process creation on Linux uses the `clone()` system call, which provides flags to control resource sharing between parent and child:
+#### Process States in Linux
 
 ```c
-clone(CLONE_VM | CLONE_FS | CLONE_FILES | CLONE_SIGHAND, 0);
-// Creates a thread (shares memory, fs, files, signal handlers)
-
-clone(0, 0);
-// Creates a child process (shares nothing)
+#define TASK_RUNNING        0
+#define TASK_INTERRUPTIBLE  1
+#define TASK_UNINTERRUPTIBLE 2
+#define __TASK_STOPPED      4
+#define __TASK_TRACED       8
+// (additional states in modern kernels)
 ```
 
-The `fork()` and `vfork()` libc wrappers call `clone()` with appropriate flags.
+| State | Meaning | Wake-up |
+|-------|---------|---------|
+| TASK_RUNNING | Running or ready to run | Already runnable |
+| TASK_INTERRUPTIBLE | Waiting for event, can receive signals | Signal or event |
+| TASK_UNINTERRUPTIBLE | Waiting for event, no signals | Event only |
+| __TASK_STOPPED | Stopped (SIGSTOP) | SIGCONT |
+| __TASK_TRACED | Being traced by ptrace | ptrace event |
 
-### 14.2.3 Wait Queues
+#### Process Creation: The clone() System Call
 
-Blocked processes are placed on **wait queues**, linked lists managed by the scheduler:
+Linux uses `clone()` rather than `fork()` internally. The `fork()`, `vfork()`, and `pthread_create()` library functions all call `clone()` with different flags.
 
 ```c
-DECLARE_WAIT_QUEUE_HEAD(wq);
+// clone() system call
+pid_t clone(int (*fn)(void *), void *child_stack, int flags, void *arg, ...);
 
-// In a read() implementation:
-wait_event_interruptible(wq, buffer_has_data());
-// Process sleeps here until condition is true
+// Flags control what is shared between parent and child:
+// CLONE_VM:      Share memory address space (creates a thread)
+// CLONE_FILES:   Share open file descriptors
+// CLONE_SIGHAND: Share signal handlers
+// CLONE_FS:      Share filesystem information (umask, root, cwd)
 
-// In an interrupt handler:
-wake_up_interruptible(&wq);
-// Wakes one or all processes waiting on wq
+// fork() is essentially:
+clone(CLONE_CHILD_SETTID | CLONE_CHILD_CLEARTID | SIGCHLD, ...)
+
+// pthread_create() is essentially:
+clone(CLONE_VM | CLONE_FILES | CLONE_SIGHAND | CLONE_THREAD |
+      CLONE_SYSVSEM | CLONE_SETTLS | CLONE_PARENT_SETTID, ...)
 ```
 
-## 14.3 Memory Management
+### Linux Scheduler
 
-### 14.3.1 Buddy Allocator
+#### O(1) Scheduler (Linux 2.6.0–2.6.22)
 
-The physical page allocator uses a **buddy system** to manage free pages. Memory is partitioned into blocks of size 2^k pages, where k ranges from 0 (single page, 4 KB) to MAX_ORDER − 1 (typically 10 = 4 MB on x86-64).
+The O(1) scheduler maintained two arrays per CPU: **active** and **expired**.
 
-When a request for 2^k pages arrives:
-
-1. Search the free list for a block of size 2^k.
-2. If no block of that size exists, split a larger block (2^{k+1}) into two buddies of size 2^k.
-3. Allocate one buddy; add the other to the 2^k free list.
-4. When blocks are freed, check if the buddy is also free; if so, merge them back into the larger block.
-
-```c
-struct page *alloc_pages(gfp_t gfp_mask, unsigned int order);
-// Returns the head page of a 2^order-page block
-
-void free_pages(struct page *page, unsigned int order);
 ```
+Priority levels: 0 (highest) to 139 (lowest)
+  - 0–99: Real-time (SCHED_FIFO, SCHED_RR)
+  - 100–139: Normal (SCHED_NORMAL)
 
-### 14.3.2 Slab Allocator
+Each priority level has a runqueue (list of processes).
 
-The slab allocator provides caching for frequently allocated kernel objects (task_struct, inode, dentry). It avoids the fragmentation and overhead of allocating small objects from the buddy allocator.
-
-- **Cache**: A pool of objects of a specific type (e.g., `kmalloc-64`, `task_struct_cache`).
-- **Slab**: One or more contiguous pages divided into equal-sized objects.
-- **Object**: An instance of the type being cached.
-
-```c
-struct kmem_cache *cache = kmem_cache_create("my_obj", sizeof(struct my_obj), 0, 0, NULL);
-struct my_obj *obj = kmem_cache_alloc(cache, GFP_KERNEL);
-// use obj
-kmem_cache_free(cache, obj);
-```
-
-The slab allocator tracks which objects are free, partially used, and full, and returns freed objects to the partial list without returning pages to the buddy system. This reduces allocation latency.
-
-Linux 2.6.22 replaced the original slab allocator with **SLUB** as the default. SLUB simplifies the per-CPU object management and reduces metadata overhead. A **SLOB** allocator is available for tiny embedded systems.
-
-## 14.4 Virtual File System (VFS)
-
-The VFS is an abstraction layer that provides a common interface for all filesystem implementations. It defines four primary object types:
-
-| Object | Description | Key operations |
-|--------|-------------|----------------|
-| `super_block` | Represents a mounted filesystem | `alloc_inode`, `sync_fs` |
-| `inode` | Represents a file or directory | `lookup`, `create`, `unlink` |
-| `dentry` | Directory entry (name-to-inode mapping) | `d_compare`, `d_release` |
-| `file` | An open file descriptor | `read`, `write`, `mmap` |
-
-Each filesystem registers a set of operations:
-
-```c
-static const struct super_operations ext4_super_ops = {
-    .alloc_inode    = ext4_alloc_inode,
-    .destroy_inode  = ext4_destroy_inode,
-    .write_inode    = ext4_write_inode,
-    .sync_fs        = ext4_sync_fs,
+struct prio_array {
+    int nr_active;              // Number of active tasks
+    unsigned long bitmap[5];    // Bitmap of non-empty queues
+    struct list_head queue[140]; // Per-priority-level queues
 };
 ```
 
-When `open("/home/user/doc.txt", O_RDONLY)` is called:
+When all processes in the active array have exhausted their time slices, the active and expired arrays are swapped — O(1) operation.
 
-1. VFS traverses the dentry cache from `/` to `home` to `user` to `doc.txt`.
-2. If the dentry is not cached, VFS invokes the ext4 `lookup` operation to find the inode.
-3. VFS creates a `file` object with a pointer to the dentry/inode and the ext4 `file_operations`.
-4. Returns a file descriptor.
+**Problems**: Interactive heuristics were complex and sometimes inaccurate.
 
-## 14.5 /proc Filesystem
+#### Completely Fair Scheduler (CFS) — Linux 2.6.23+
 
-The `/proc` filesystem is a virtual filesystem that exposes kernel data structures as files. It is mounted at boot and provides process-specific and system-wide information.
+The CFS, designed by Ingo Molnár, aims to give each process a **fair share** of CPU time. It models the CPU as a perfectly fair multitasking processor.
+
+**Key concepts**:
+
+1. **Virtual runtime (vruntime)**: A per-process value representing how much time the process has run, weighted by priority. CFS always runs the process with the smallest vruntime.
+
+2. **Red-black tree**: Processes are stored in a red-black tree keyed by vruntime. The leftmost node has the smallest vruntime.
 
 ```
-/proc/[pid]/           — Process-specific directory
-  /cmdline             — Command line arguments
-  /status              — Process state, memory usage
-  /fd/                 — Open file descriptors
-  /maps                — Memory-mapped regions
-  /mem                 — Process memory (accessible via ptrace)
-/proc/cpuinfo          — CPU type, features, frequency
-/proc/meminfo          — Memory usage statistics
-/proc/version          — Kernel version string
-/proc/sys/             — Tunable kernel parameters (sysctl)
+Red-black tree (keyed by vruntime):
+       [vruntime=15]
+      /            \
+  [v=10]          [v=20]
+  /    \          /    \
+[v=5] [v=12]   [v=18] [v=25]
+↑
+Leftmost = next to run
 ```
 
-Reading `/proc` files triggers kernel callbacks that format the requested data dynamically:
+3. **Target latency**: The time interval in which every runnable task should get at least one chance to run. Typically 20ms.
+
+4. **Minimum granularity**: The smallest time slice a task can receive (to avoid excessive context switching). Typically 1ms.
+
+5. **Nice value**: The weight (priority) of a process. Lower nice value = higher weight = more CPU time.
 
 ```c
-static int my_proc_show(struct seq_file *m, void *v) {
-    seq_printf(m, "Custom data: %d\n", my_data);
-    return 0;
+// Simplified CFS scheduling tick (very abridged)
+void scheduler_tick(void) {
+    struct task_struct *curr = current;
+    struct sched_entity *se = &curr->se;
+
+    // Update current task's vruntime
+    se->vruntime += delta_exec * (NICE_0_LOAD / se->load.weight);
+
+    // If vruntime exceeds the leftmost node's vruntime,
+    // mark current as needing rescheduling
+    if (se->vruntime > leftmost_se->vruntime) {
+        set_tsk_need_resched(curr);
+    }
 }
 ```
 
-## 14.6 Kernel Modules
+### Memory Management
 
-Loadable Kernel Modules (LKMs) allow code to be added to or removed from the kernel at runtime without recompilation or reboot. Modules implement device drivers, filesystems, system calls, and network protocols.
+#### Buddy Allocator
+
+The **buddy allocator** manages physical page allocation. It maintains lists of free blocks that are powers of 2 pages (order 0 = 1 page, order 1 = 2 pages, order 2 = 4 pages, ..., order 10 = 1024 pages).
+
+```
+Free area lists:
+order 0: [page 4] [page 17] [page 93]
+order 1: [pages 8-9] [pages 56-57]
+order 2: [pages 12-15]
+order 3: (empty)
+order 4: [pages 64-79]
+
+Allocation: request 3 pages → 4 pages (next power of 2) → order 2
+  - If order 2 list is empty, split order 3, give half back
+```
+
+When a block is freed, the allocator checks if its **buddy** (the adjacent block of the same size) is also free. If so, they are merged back into the larger block.
+
+#### SLAB Allocator
+
+The **SLAB allocator** manages kernel objects (task_struct, inode, mm_struct, etc.). It caches commonly used objects to avoid expensive allocation and initialization.
+
+```
+SLAB Cache for task_struct:
+┌──────────────────────────────────────┐
+│ SLAB 1 (full)                         │
+│ [task][task][task][task][task][task]   │
+├──────────────────────────────────────┤
+│ SLAB 2 (partial)                      │
+│ [task][task][task][  free  ][  free  ]│
+├──────────────────────────────────────┤
+│ SLAB 3 (empty)                        │
+│ [  free  ][  free  ][  free  ][  free]│
+└──────────────────────────────────────┘
+```
+
+- **kmem_cache_create()**: Create a slab cache for a specific object type
+- **kmem_cache_alloc()**: Allocate an object (from partial or free slab)
+- **kmem_cache_free()**: Return an object to its slab cache
+
+Linux also provides `kmalloc()` (for physically contiguous allocations) and `vmalloc()` (for virtually contiguous but physically non-contiguous allocations).
+
+#### Kernel Same-Page Merging (KSM)
+
+KSM scans memory and merges identical pages (common in virtual machines running the same OS). Merged pages are marked copy-on-write.
+
+### Virtual File System (VFS)
+
+The VFS is a kernel abstraction that supports multiple file systems through a common interface.
+
+#### VFS Objects
+
+| Object | Description | Key Operations |
+|--------|-------------|----------------|
+| `super_block` | Represents a mounted file system | `alloc_inode`, `destroy_inode`, `sync_fs` |
+| `inode` | Represents a file or directory (metadata) | `lookup`, `create`, `link`, `unlink` |
+| `dentry` | Represents a directory entry (path component) | `d_compare`, `d_release` |
+| `file` | Represents an open file (process view) | `read`, `write`, `llseek`, `mmap` |
+
+```
+struct file {
+    struct file_operations *f_op;  // Operations specific to this file
+    struct dentry *f_dentry;       // Directory entry
+    struct vfsmount *f_vfsmnt;     // Mount point
+    loff_t f_pos;                  // Current file position
+    fmode_t f_mode;                // Access mode (read/write)
+    int f_flags;                   // File flags (O_SYNC, O_NONBLOCK, etc.)
+};
+
+struct file_operations {
+    ssize_t (*read)(struct file *, char __user *, size_t, loff_t *);
+    ssize_t (*write)(struct file *, const char __user *, size_t, loff_t *);
+    int (*mmap)(struct file *, struct vm_area_struct *);
+    int (*open)(struct inode *, struct file *);
+    int (*release)(struct inode *, struct file *);
+    // ... many more
+};
+```
+
+The VFS **path walk** resolves a path like `/home/user/docs/file.txt`:
+
+1. Start at the root dentry (`/`)
+2. Look up `home` in the root directory's dentry cache
+3. Follow the dentry to its inode
+4. Look up `user` in `home`'s inode
+5. Continue until the final component `file.txt` is resolved
+
+### The /proc Filesystem
+
+`/proc` is a virtual filesystem that exposes kernel data structures as files and directories. Reading a /proc file triggers kernel code that generates the output dynamically.
+
+```bash
+$ cat /proc/cpuinfo
+processor   : 0
+vendor_id   : GenuineIntel
+cpu family  : 6
+model       : 158
+model name  : Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+stepping    : 10
+cpu MHz     : 3696.000
+cache size  : 12288 KB
+...
+
+$ cat /proc/meminfo
+MemTotal:       16266192 kB
+MemFree:         3845680 kB
+Buffers:          491284 kB
+Cached:          8031932 kB
+...
+
+$ cat /proc/$$/status   # Info about the current shell process
+Name:   bash
+Pid:    1234
+PPid:   567
+VmSize: 12345 kB
+VmRSS:  3456 kB
+Threads: 1
+...
+
+$ cat /proc/$$/maps     # Memory mappings of the current process
+00400000-004d8000 r-xp 00000000 08:01 1234567    /bin/bash
+006d7000-006d8000 r--p 000d7000 08:01 1234567    /bin/bash
+006d8000-006dc000 rw-p 000d8000 08:01 1234567    /bin/bash
+...
+7ffd8b400000-7ffd8b422000 rw-p 00000000 00:00 0  [stack]
+7ffd8b439000-7ffd8b43c000 r--p 00000000 00:00 0  [vvar]
+7ffd8b43c000-7ffd8b43e000 r-xp 00000000 00:00 0  [vdso]
+```
+
+### Loadable Kernel Modules
+
+Linux supports loading and unloading code at runtime via **Loadable Kernel Modules** (LKMs).
 
 ```c
+// hello.c — A minimal kernel module
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
 
-static int __init mymodule_init(void) {
-    printk(KERN_INFO "My module loaded\n");
+static int __init hello_init(void) {
+    printk(KERN_INFO "Hello, kernel! Module loaded.\n");
     return 0;
 }
 
-static void __exit mymodule_exit(void) {
-    printk(KERN_INFO "My module unloaded\n");
+static void __exit hello_exit(void) {
+    printk(KERN_INFO "Goodbye, kernel! Module unloaded.\n");
 }
 
-module_init(mymodule_init);
-module_exit(mymodule_exit);
+module_init(hello_init);
+module_exit(hello_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_DESCRIPTION("Example kernel module");
+MODULE_AUTHOR("OS Student");
+MODULE_DESCRIPTION("A simple example module");
 ```
 
-Modules are managed with `insmod`, `rmmod`, and `modprobe`. The kernel tracks module dependencies and reference counts to prevent unloading a module while it is in use.
+```bash
+# Compile and use the module
+$ make  # Uses kernel build system
+$ sudo insmod hello.ko     # Load module
+$ sudo rmmod hello         # Unload module
+$ dmesg | tail -2          # See the messages
+[ 1234.567890] Hello, kernel! Module loaded.
+[ 1235.678901] Goodbye, kernel! Module unloaded.
+```
+
+## Examples
+
+### Example 1: Reading Process Information from /proc
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main() {
+    FILE *fp = fopen("/proc/self/status", "r");
+    if (!fp) {
+        perror("fopen");
+        return 1;
+    }
+
+    char line[256];
+    while (fgets(line, sizeof(line), fp)) {
+        // Print only selected fields
+        if (strncmp(line, "Name:", 5) == 0 ||
+            strncmp(line, "Pid:", 4) == 0 ||
+            strncmp(line, "VmSize:", 7) == 0 ||
+            strncmp(line, "VmRSS:", 6) == 0 ||
+            strncmp(line, "Threads:", 8) == 0) {
+            printf("%s", line);
+        }
+    }
+
+    fclose(fp);
+    return 0;
+}
+```
+
+### Example 2: Using strace to Trace fork()
+
+```bash
+$ strace -e trace=clone,fork,vfork sleep 1
+execve("/bin/sleep", ["sleep", "1"], 0x7fff...) = 0
+... (much output from dynamic linker)
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=...) = 12345
+```
 
 ## Summary
 
-The Linux kernel is a large, mature monolithic kernel with modular extensions. Process management centres on `task_struct` and `clone()`. Memory management combines the buddy allocator for pages and the slab allocator for small objects. The VFS provides a uniform filesystem interface. /proc exposes kernel state to user space. Kernel modules enable dynamic extensibility without rebooting.
+- Linux `task_struct` is a large structure containing all process state (∼2 KB each)
+- `clone()` system call with different flags creates processes or threads
+- CFS uses red-black trees keyed by vruntime for fair CPU allocation
+- Buddy allocator manages physical pages in power-of-2 groups
+- SLAB allocator caches frequently used kernel objects
+- VFS provides a uniform interface for multiple file system types via inode, dentry, file, and super_block objects
+- `/proc` exposes kernel data as virtual files for user-space access
+- Loadable kernel modules can extend the kernel at runtime
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. Name five major subsystems in the Linux kernel source tree.
-2. What is the purpose of the buddy allocator? The slab allocator?
-3. Describe the four primary VFS objects and their roles.
-4. How does reading from `/proc/meminfo` differ from reading a regular file?
-5. What is the purpose of `module_init()` and `module_exit()` in a kernel module?
+1. What fields does `task_struct` contain? Why is it so large?
+2. What is the difference between `fork()` and `clone()`? What flags does `pthread_create()` use?
+3. How does the Completely Fair Scheduler ensure fairness among processes?
 
-### Application Problems
+### Intermediate
 
-1. Write a kernel module that creates a `/proc/hello` entry. Reading the entry should return "Hello, kernel!". Test it by compiling, loading with `insmod`, and reading the file with `cat`.
-2. Explain why the slab allocator is more efficient than the buddy allocator for allocating `task_struct` objects. Quantify the waste if `task_struct` (2 KB) were allocated directly from a buddy allocator with 4 KB minimum block size on a system with 10,000 processes.
-3. Trace the kernel code path from a user-space `write(fd, buf, len)` system call through VFS to an ext4 filesystem. Identify where each VFS object (super_block, inode, dentry, file) is involved.
+4. Write a program that reads `/proc/self/status` and `/proc/self/maps`. Explain each field and each memory region shown in the maps file.
+5. Read `/proc/sched_debug` (or use `cat /proc/sched_debug | head -50`). Identify the CFS runqueue, vruntime values, and scheduling entities.
+6. Compile and load the example kernel module. Add code to create a `/proc/hello` file that returns "Hello from kernel!" when read. Test it.
 
-### Challenge Problem
+### Advanced
 
-1. Implement a simple character device driver (not just /proc) that creates `/dev/mydriver`. The driver should support `open`, `release`, `read`, `write`, and `ioctl`. The `ioctl` should support two commands: `MYDRV_RESET` (clears an internal buffer) and `MYDRV_LEN` (returns the number of bytes in the buffer). Demonstrate the driver with a user-space test program that writes 100 bytes, reads them back, and queries the length via `ioctl`.
+7. Write a kernel module that creates a `/proc/my_device` file. Writing to it should store a string; reading it should return the stored string (like a tiny character device).
+8. Analyze the CFS by reading `kernel/sched/fair.c` in the Linux source. Explain how `pick_next_task_fair()` selects the next task from the red-black tree. What is the time complexity?
+9. Write a program that uses `perf` to measure the cost of a system call: `perf stat -e cycles,instructions,cache-misses ./your_program`. Then instrument the same program to compare the overhead of `read()` from a regular file vs from `/proc/self/status`.

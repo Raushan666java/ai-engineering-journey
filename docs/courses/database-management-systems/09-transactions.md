@@ -1,93 +1,350 @@
-# Chapter 9 — Transactions
+# Chapter 9: Transactions
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) define a transaction and enumerate the ACID properties; (2) describe the states through which a transaction passes; (3) classify schedules as serial or non-serial; (4) determine whether a schedule is conflict-serializable or view-serializable; (5) construct precedence graphs; and (6) distinguish among recoverable, cascadeless, and strict schedules.
+- Define a transaction and explain its necessity for data integrity
+- Master the ACID properties: Atomicity, Consistency, Isolation, Durability
+- Understand transaction states and the transaction lifecycle
+- Classify schedules and determine serializability
+- Use conflict serializability and view serializability
+- Understand the role of the transaction manager and recovery manager
 
-## 9.1 Transaction Definition
+## Theory
 
-A transaction is a logical unit of work that comprises one or more database operations, typically a combination of read and write operations. A transaction transforms the database from one consistent state to another, preserving all stated integrity constraints. In SQL, a transaction begins implicitly with the first executable SQL statement and terminates with an explicit COMMIT or ROLLBACK statement.
+### 9.1 What Is a Transaction?
 
-Transactions serve as the fundamental unit of atomicity and recovery in a database system. When a transaction commits, its effects are guaranteed to survive subsequent failures. When a transaction rolls back, any changes it made are undone, and the database returns to the state it was in before the transaction began.
+A **transaction** is a logical unit of work that accesses and possibly modifies the database. It is a sequence of operations (reads and writes) that forms a single logical unit.
 
-## 9.2 ACID Properties
+Transactions address failures and concurrent access. Without transactions, a system crash in the middle of a multi-step operation can leave the database in an inconsistent state, and concurrent operations can interfere with each other in unexpected ways.
 
-The ACID acronym captures four essential properties of database transactions.
+**Example:** A bank transfer
 
-Atomicity requires that a transaction be executed in its entirety or not at all. If a transaction is interrupted by a failure before completion, any partial effects must be undone. The DBMS recovery subsystem ensures atomicity through undo logging.
+```
+BEGIN TRANSACTION;
+    SELECT balance INTO @bal FROM accounts WHERE account_id = 'A100';
+    IF @bal >= 500 THEN
+        UPDATE accounts SET balance = balance - 500 WHERE account_id = 'A100';
+        UPDATE accounts SET balance = balance + 500 WHERE account_id = 'B200';
+    END IF;
+COMMIT;
+```
 
-Consistency requires that a transaction preserve the consistency of the database. If the database is consistent before the transaction begins, it must be consistent after the transaction completes. Consistency is the responsibility of the application programmer, who must ensure that all integrity constraints are satisfied. The DBMS enforces certain classes of constraints, such as primary key and foreign key constraints, but the application is responsible for business-rule consistency.
+This transfer must happen atomically — either both account updates happen or neither does.
 
-Isolation requires that the execution of one transaction be isolated from the effects of concurrent transactions. Even though transactions execute concurrently, the final result must be the same as if the transactions executed serially in some order. The DBMS concurrency control subsystem provides isolation.
+### 9.2 ACID Properties
 
-Durability requires that the effects of a committed transaction persist across failures. Once the DBMS confirms a commit, the changes are guaranteed to be present in the database even if the system crashes immediately afterward. The recovery subsystem ensures durability through redo logging.
+**Atomicity:** A transaction executes completely or not at all. If the system crashes after debiting A100 but before crediting B200, the DBMS must undo the debit (rollback).
 
-## 9.3 Transaction States
+**Consistency:** A transaction brings the database from one valid state to another valid state. All integrity constraints must be satisfied at the end of the transaction. The DBMS does not guarantee that intermediate states are consistent — that would be impractical.
 
-A transaction progresses through a series of states during its lifetime. The active state is the initial state; the transaction remains in this state while executing its read and write operations. The partially committed state occurs after the final statement has been executed but before the commit has been confirmed. The committed state is reached when the transaction has completed successfully and all effects are durable. The failed state is entered when the transaction cannot proceed due to logical errors, system failures, or abort commands. The aborted state follows the rollback of a failed transaction, at which point the transaction may be restarted or terminated.
+**Isolation:** Concurrent transactions should not interfere with each other. Each transaction should execute as if it were the only transaction in the system. The DBMS achieves this through concurrency control (Chapter 10).
 
-The transition diagram is: active to partially committed, partially committed to committed; active to failed, failed to aborted.
+**Durability:** Once a transaction commits, its changes persist even if the system crashes immediately after. Committed data must be recoverable from non-volatile storage.
 
-## 9.4 Schedules
+### 9.3 Transaction States
 
-A schedule is a sequence of operations from one or more transactions that preserves the order of operations within each individual transaction. A schedule of n transactions T1, T2, Tn is a permutation of the operations of the transactions such that for each transaction Ti, the operations of Ti appear in the order specified by Ti.
+A transaction goes through defined states in its lifecycle:
 
-A serial schedule is a schedule in which the operations of each transaction are executed consecutively without interleaving. For n transactions, there are n factorial possible serial schedules, each potentially producing a different result.
+```
+                ┌──────────┐
+                │  ACTIVE  │
+                └────┬─────┘
+                     │
+           ┌─────────┴──────────┐
+           │                    │
+           ▼                    ▼
+     ┌──────────┐         ┌──────────┐
+     │PARTIALLY │         │  FAILED  │
+     │ COMMITTED│         └────┬─────┘
+     └────┬─────┘              │
+          │                    │
+          ▼                    ▼
+     ┌──────────┐         ┌──────────┐
+     │ COMMITTED│         │  ABORTED │
+     └──────────┘         └──────────┘
+```
 
-A non-serial schedule interleaves operations from multiple transactions. The goal of concurrency control is to ensure that non-serial schedules are correct, meaning that they are equivalent to some serial schedule.
+- **ACTIVE:** Initial state. The transaction is executing.
+- **PARTIALLY COMMITTED:** After the final statement executes. The transaction has completed its operations but changes may still be in memory (buffer).
+- **COMMITTED:** All changes are safely written to permanent storage. The transaction cannot be undone.
+- **FAILED:** The transaction cannot continue due to an error or crash.
+- **ABORTED:** The transaction has been rolled back to undo any changes made.
 
-## 9.5 Serializability
+### 9.4 Schedules
 
-Conflict serializability is the most widely used correctness criterion. Two operations conflict if they belong to different transactions, access the same data item, and at least one is a write. A schedule is conflict-serializable if it can be transformed into a serial schedule through a sequence of swaps of non-conflicting adjacent operations.
+A **schedule** is a sequence of operations from one or more transactions, ordered by time. For example, with two transactions T1 and T2:
 
-A precedence graph, also called a serialization graph, is used to test conflict serializability. For a schedule S, construct a directed graph where each transaction Ti is a node. Add an edge Ti rarr Tj if there exists a conflicting pair (operation of Ti) followed by (conflicting operation of Tj) where the operations access the same data item and one is a write. The schedule is conflict-serializable if and only if the precedence graph is acyclic.
+```
+T1: READ(A), WRITE(A), READ(B), WRITE(B)
+T2: READ(A), WRITE(A), READ(B), WRITE(B)
+```
 
-View serializability is a weaker correctness criterion. Two schedules S and S-prime are view-equivalent if: for each data item, the initial read in S produces the same value as the initial read in S-prime; for each read operation, the transaction that performed the write that produced the value read is the same in both schedules; and the final write operations on each data item are performed by the same transaction in both schedules. A schedule is view-serializable if it is view-equivalent to some serial schedule.
+**Serial schedule:** Transactions execute one after another. Simple but limits concurrency.
 
-All conflict-serializable schedules are view-serializable, but the converse is not true. View serializability is computationally expensive to test; the problem is NP-complete, so practical systems use conflict serializability.
+```
+Schedule S1 (serial):
+T1: READ(A), WRITE(A), READ(B), WRITE(B)
+T2:                              READ(A), WRITE(A), READ(B), WRITE(B)
+```
 
-## 9.6 Recoverability
+**Interleaved schedule (concurrent):** Operations from different transactions can be interleaved. This improves throughput but risks inconsistency.
 
-A schedule is recoverable if no transaction Tj commits before a transaction Ti that wrote a data item that Tj read. In other words, if Tj reads a value written by Ti, Tj must commit after Ti commits. This prevents situations where Tj commits, Ti subsequently aborts, and Tj has read data that no longer exists.
+```
+Schedule S2 (interleaved — could be problematic):
+T1: READ(A), WRITE(A)
+T2:             READ(A), WRITE(A), READ(B), WRITE(B)
+T1:                           READ(B), WRITE(B)
+```
 
-A schedule is cascadeless if for every pair of transactions Ti and Tj such that Tj reads a data item previously written by Ti, the commit operation of Ti appears before the read operation of Tj. Cascadeless schedules avoid cascading rollbacks, where the abort of one transaction forces the abort of other transactions that read its uncommitted data.
+**Complete schedule:** Contains commit or abort for every transaction.
 
-A schedule is strict if transactions can neither read nor write a data item until the transaction that last wrote it has committed. The strictest recoverability condition simplifies recovery because in-place updates can be undone using before-images.
+### 9.5 Serializability
 
-## 9.7 Transaction Isolation Levels
+A schedule is **serializable** if it is equivalent to some serial schedule. Two schedules are **equivalent** if they produce the same result when executed.
 
-The SQL standard defines four transaction isolation levels that balance consistency guarantees against concurrency performance. Each isolation level prevents certain phenomena while permitting others. The three phenomena are dirty read, non-repeatable read, and phantom read.
+Serializability is the criterion for correctness in concurrent execution. If a schedule is serializable, we can be confident that it maintains database consistency.
 
-A dirty read occurs when a transaction reads data written by a concurrent uncommitted transaction. If the concurrent transaction subsequently aborts, the first transaction has read data that never existed in the committed state.
+**Conflict Serializability:**
 
-A non-repeatable read occurs when a transaction reads a data item twice and obtains different values because another transaction committed an update between the two reads.
+Two operations **conflict** if:
+1. They belong to different transactions
+2. They access the same data item
+3. At least one is a write
 
-A phantom read occurs when a transaction executes the same query twice and obtains different sets of tuples because another transaction committed an insert or delete between the two executions.
+**Conflict pairs:**
+- READ(A) and WRITE(A): READ-WRITE conflict
+- WRITE(A) and READ(A): WRITE-READ conflict
+- WRITE(A) and WRITE(A): WRITE-WRITE conflict
 
-The isolation levels are as follows. Read uncommitted permits dirty reads, non-repeatable reads, and phantom reads. It provides the highest concurrency but the weakest consistency. Read committed prevents dirty reads but permits non-repeatable and phantom reads. It is the default isolation level in many commercial databases. Repeatable read prevents dirty and non-repeatable reads but permits phantom reads. Serializable prevents all three phenomena and guarantees that concurrent executions produce the same result as some serial execution.
+Two schedules are **conflict-equivalent** if they order all conflicting operations in the same way.
 
-Higher isolation levels provide stronger consistency guarantees at the cost of reduced concurrency. The implementation mechanisms include locking, multiversion concurrency control, and predicate locking. The appropriate isolation level depends on the application's tolerance for inconsistency and its performance requirements.
+A schedule is **conflict-serializable** if it is conflict-equivalent to a serial schedule.
+
+**Testing with Precedence Graph:**
+1. Create a directed graph where each transaction is a node
+2. For each conflict between operations in Tᵢ and Tⱼ, add an edge Tᵢ → Tⱼ
+3. If the graph has a cycle, the schedule is NOT conflict-serializable
+4. If the graph is acyclic, it IS conflict-serializable
+
+**Example:**
+```
+T1: READ(A), WRITE(A), READ(B), WRITE(B)
+T2:           WRITE(A)                    , WRITE(B)
+```
+
+Conflicts:
+- T1 WRITE(A) conflicts with T2 WRITE(A) → edge T1 → T2 (T1 writes A before T2)
+- T1 READ(A) conflicts with T2 WRITE(A) → edge T1 → T2
+
+Precedence graph: T1 → T2 (no cycle) → Conflict-serializable.
+
+**View Serializability:**
+
+A schedule is **view-serializable** if:
+1. For each read of a data item, the transaction that wrote it is the same as in some serial schedule
+2. The final write of each item is the same as in some serial schedule
+
+View serializability is broader than conflict serializability: every conflict-serializable schedule is view-serializable, but not vice versa.
+
+**Blind writes** (WRITE without READ) can create view-serializable schedules that are not conflict-serializable.
+
+### 9.6 Recoverable and Cascadeless Schedules
+
+**Recoverable schedule:** If a transaction Tⱼ reads data written by Tᵢ, then Tᵢ's commit must appear before Tⱼ's commit. This ensures Tⱼ can be rolled back if Tᵢ aborts.
+
+**Cascadeless schedule:** A transaction only reads data written by transactions that have already committed. This prevents cascading rollbacks.
+
+**Cascading rollback:** If T₁ writes A, then T₂ reads A and writes B, then T₃ reads B, and T₁ aborts — all three must be rolled back. This is expensive and undesirable.
+
+### 9.7 SQL Transaction Control
+
+```sql
+-- Start a transaction
+BEGIN TRANSACTION;
+-- or
+BEGIN;
+-- or
+START TRANSACTION;
+
+-- Savepoint (sub-transaction)
+BEGIN;
+INSERT INTO log VALUES ('Step 1');
+SAVEPOINT sp1;
+INSERT INTO log VALUES ('Step 2 that might fail');
+ROLLBACK TO SAVEPOINT sp1;  -- Undo step 2, keep step 1
+INSERT INTO log VALUES ('Step 3');
+COMMIT;
+
+-- Set isolation level (Chapter 10 detail)
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+
+-- Complete transaction
+COMMIT;
+-- or abort
+ROLLBACK;
+
+-- Auto-commit mode (default in most DBMS)
+-- Each statement is its own transaction
+-- Turn off:
+SET autocommit = OFF;
+```
+
+### 9.8 Isolation Levels in SQL
+
+SQL standard defines four isolation levels that trade consistency for performance:
+
+| Isolation Level | Dirty Read | Non-repeatable Read | Phantom Read |
+|----------------|------------|-------------------|--------------|
+| READ UNCOMMITTED | Possible | Possible | Possible |
+| READ COMMITTED | Prevented | Possible | Possible |
+| REPEATABLE READ | Prevented | Prevented | Possible |
+| SERIALIZABLE | Prevented | Prevented | Prevented |
+
+**Dirty Read:** Reading uncommitted data from another transaction. If that transaction aborts, the read is invalid.
+
+**Non-repeatable Read:** Same query returns different results within a transaction because another transaction modified and committed data.
+
+**Phantom Read:** Same query returns different rows because another transaction inserted or deleted data matching the WHERE clause.
+
+```sql
+-- Set isolation level for a transaction
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+BEGIN;
+SELECT balance FROM accounts WHERE id = 1;  -- First read
+-- ... other transaction might modify balance here ...
+SELECT balance FROM accounts WHERE id = 1;  -- Could differ!
+COMMIT;
+
+-- Serializable (most strict, slowest)
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+BEGIN;
+SELECT * FROM orders WHERE status = 'pending';
+-- ... no other transaction can modify pending orders ...
+SELECT * FROM orders WHERE status = 'pending';  -- Guaranteed same
+COMMIT;
+```
+
+### 9.9 Transactions in Practice
+
+**Optimistic vs. Pessimistic Approaches:**
+- **Pessimistic:** Assume conflicts will happen. Lock data preemptively.
+- **Optimistic:** Assume conflicts are rare. Check for conflicts at commit time.
+
+**Retry Logic:** Applications should be prepared to retry transactions that fail due to serialization errors:
+
+```python
+# Pseudo-code for application-level retry
+max_retries = 3
+for attempt in range(max_retries):
+    try:
+        db.execute("BEGIN")
+        db.execute("UPDATE accounts SET balance = balance - 500 WHERE id = 1")
+        db.execute("UPDATE accounts SET balance = balance + 500 WHERE id = 2")
+        db.execute("COMMIT")
+        break
+    except SerializationError:
+        db.execute("ROLLBACK")
+        if attempt == max_retries - 1:
+            raise
+        # Exponential backoff
+        time.sleep(0.1 * (2 ** attempt))
+```
+
+## Examples
+
+**Example 9.1: Testing Serializability**
+
+Schedule S:
+```
+T1: READ(A), WRITE(A)
+T2:           READ(A), WRITE(A), READ(B), WRITE(B)
+T3:                     READ(B)
+```
+
+Identify conflicts:
+1. T1 WRITE(A) with T2 READ(A): T1 → T2 (T1 writes before T2 reads)
+2. T2 WRITE(A) with T1 READ(A): T1 → T2 (T1 reads A, then T2 writes A — wait, T1 READ(A) comes before T2 WRITE(A), so T1 → T2)
+3. T2 WRITE(B) with T3 READ(B): T2 → T3 (T2 writes B before T3 reads B)
+
+Edges: T1 → T2, T2 → T3
+No cycle → Conflict-serializable.
+
+**Example 9.2: Non-Serializable Schedule**
+
+```
+T1: READ(A), WRITE(B)
+T2: READ(B), WRITE(A)
+```
+
+Conflicts:
+- T1 WRITE(B) conflicts with T2 READ(B): T1 → T2
+- T2 WRITE(A) conflicts with T1 READ(A): T2 → T1
+
+Edges: T1 → T2 and T2 → T1 (CYCLE!). This schedule is NOT conflict-serializable.
 
 ## Summary
 
-This chapter established the theoretical foundation for transaction processing. The ACID properties define the correctness guarantees that transactions provide. Serializability provides a precise criterion for determining whether a concurrent execution produces correct results. Precedence graphs offer a practical test for conflict serializability. Recoverability conditions ensure that transaction failures do not leave the database in an inconsistent state. Transaction isolation levels allow applications to balance consistency guarantees against concurrency performance.
+- A transaction is a logical unit of work with ACID properties.
+- Atomicity ensures all-or-nothing execution. Consistency preserves database validity. Isolation prevents interference. Durability ensures committed changes persist.
+- Transactions go through states: Active → Partially Committed → Committed (or Failed → Aborted).
+- Schedules order operations from concurrent transactions.
+- Conflict serializability is checked via precedence graphs (acyclic = serializable).
+- Recoverable and cascadeless schedules prevent cascading rollbacks.
+- SQL provides four isolation levels: READ UNCOMMITTED, READ COMMITTED, REPEATABLE READ, SERIALIZABLE.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. Why is atomicity important in database systems?
-2. Distinguish between the partially committed and committed states.
-3. What is a schedule, and why are schedules studied?
-4. How is conflict serializability different from view serializability?
-5. What is a cascading rollback, and how does a cascadeless schedule prevent it?
+1. Define ACID. Explain each property with a banking example.
 
-### Application Problems
+2. What is the difference between COMMIT and ROLLBACK? When would each be used?
 
-1. Consider the following schedule: R1(A), W1(A), R2(A), W2(A), R1(B), W1(B), R2(B), W2(B), Commit1, Commit2. Construct the precedence graph and determine if the schedule is conflict-serializable.
-2. Given transactions T1: R(A), W(A), R(B), W(B) and T2: R(A), W(A), R(B), W(B). Construct two distinct interleavings: one that is conflict-serializable and one that is not. Explain why.
-3. A schedule S is given: R1(A), R2(A), W1(A), R1(B), W2(A), W1(B), Commit2, Commit1. Is S conflict-serializable? Is it recoverable? Is it cascadeless?
+3. List the four SQL isolation levels and the anomaly each prevents (or allows).
 
-### Challenge Problem
+4. Draw the precedence graph and determine serializability for:
+```
+T1: READ(A), WRITE(A), READ(B)
+T2: WRITE(A), READ(B), WRITE(B)
+```
 
-Design a schedule of three transactions that is view-serializable but not conflict-serializable. Prove that the schedule is view-serializable by identifying the serial schedule to which it is view-equivalent. Then demonstrate that the precedence graph contains a cycle, confirming that it is not conflict-serializable. Explain the practical implications of this distinction for DBMS implementation.
+### Intermediate
+
+5. Given the schedule:
+```
+T1: WRITE(A), READ(B)
+T2: READ(A), WRITE(B)
+T3: WRITE(B), READ(A), READ(B)
+```
+Draw the precedence graph and determine if the schedule is conflict-serializable.
+
+6. Explain the difference between conflict serializability and view serializability. Provide a schedule that is view-serializable but not conflict-serializable.
+
+7. What is a cascading rollback? Why is it undesirable? Design a schedule where a cascading rollback occurs.
+
+8. Write a SQL transaction that transfers money between two bank accounts. Include error handling (rollback on insufficient funds).
+
+### Advanced
+
+9. For the following schedule, determine:
+   a) Is it conflict-serializable?
+   b) Is it recoverable?
+   c) Is it cascadeless?
+   
+   Justify each answer.
+```
+T1: READ(A), WRITE(A)
+T2:           READ(A), WRITE(A)
+T3:                    READ(A), WRITE(A)
+```
+
+10. Implement a booking system transaction for a flight reservation that:
+    - Checks seat availability
+    - Reserves the seat (decrements available count)
+    - Creates a booking record
+    - Creates a payment record
+    - All or nothing
+    
+    Include isolation level selection and explain your choice.
+
+11. Research the concept of "snapshot isolation" (used in PostgreSQL and Oracle). How does it differ from the four standard SQL isolation levels? What anomaly does it prevent? What anomaly (write skew) can still occur?

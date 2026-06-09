@@ -1,89 +1,377 @@
-# Chapter 10 — Concurrency Control
+# Chapter 10: Concurrency Control
 
 ## Learning Objectives
 
-By the conclusion of this chapter, the student will be able to: (1) describe lock-based concurrency control protocols including two-phase locking; (2) detect and resolve deadlock; (3) explain the timestamp-based ordering protocol; (4) describe the optimistic concurrency control protocol; and (5) explain multiversion concurrency control.
+- Understand the need for concurrency control in multi-user databases
+- Implement lock-based protocols including 2PL and its variants
+- Explain timestamp-based concurrency control
+- Describe optimistic concurrency control
+- Understand Multi-Version Concurrency Control (MVCC)
+- Detect and resolve deadlocks in database systems
 
-## 10.1 Lock-Based Protocols
+## Theory
 
-A lock is a mechanism that prevents concurrent transactions from interfering with each other. The two fundamental lock modes are shared and exclusive. A shared lock, denoted S, grants read-only access to a data item. Multiple transactions may hold shared locks on the same data item simultaneously. An exclusive lock, denoted X, grants both read and write access. Only one transaction may hold an exclusive lock on a given data item at any time, and no shared locks may coexist.
+### 10.1 The Concurrency Problem
 
-Each transaction must request a lock in the appropriate mode before accessing a data item. After finishing the operation, the transaction releases the lock. The lock manager is a subsystem that maintains a lock table, grants lock requests, and detects conflicts. When a transaction requests a lock that conflicts with an existing lock held by another transaction, the requesting transaction is blocked until the conflicting lock is released.
+When multiple transactions execute simultaneously without coordination, several problems arise:
 
-Two-phase locking (2PL) is a protocol that ensures conflict serializability. Under 2PL, every transaction is divided into two phases. In the growing phase, the transaction may acquire locks but may not release any. In the shrinking phase, the transaction may release locks but may not acquire any. The point at which the transaction holds its maximum lock set is called the lock point.
+**Lost Update:** Two transactions read the same value, modify it independently, and write back. The second write overwrites the first.
 
-Strict two-phase locking is a variant in which all exclusive locks are held until the transaction commits or aborts. This ensures that no other transaction can read or write uncommitted data, which simplifies recovery. Strict 2PL is the most commonly used protocol in commercial database systems.
+```
+T1: READ(X) → X=100          T2: READ(X) → X=100
+T1: X = X + 50 → X=150       T2: X = X - 30 → X=70
+T1: WRITE(X)                  T2: WRITE(X)
+-- Final value: 70 (T1's increase is lost!)
+```
 
-Rigorous two-phase locking requires that all locks, both shared and exclusive, be held until commit or abort. This ensures that the order in which transactions commit is consistent with the serialization order, which simplifies both recovery and concurrency control.
+**Dirty Read:** Reading uncommitted data that may later be rolled back.
 
-## 10.2 Deadlock
+```
+T1: WRITE(X, 200)            -- X changed but not committed
+T2: READ(X) → 200            -- T2 reads uncommitted value
+T1: ROLLBACK                 -- X reverts to 100
+-- T2 now has an invalid value (200 never existed)
+```
 
-Deadlock occurs when two or more transactions are each waiting for a lock held by another transaction in the set, forming a cycle of waiting. For example, transaction T1 holds a lock on item A and requests a lock on item B, while transaction T2 holds a lock on item B and requests a lock on item A.
+**Incorrect Summary:** Reading different versions of the same data due to interleaving.
 
-Two principal strategies address deadlock. Deadlock prevention ensures that the system never enters a deadlock state. One prevention method grants all locks to a transaction at once, before execution begins. Another method preempts locks using transaction priorities: if an older transaction requests a lock held by a younger transaction, the younger transaction is aborted (wait-die scheme), or if an older transaction requests a lock held by a younger transaction, the older transaction waits (wound-wait scheme). In the wait-die scheme, if an older transaction requests a lock held by a younger one, the older waits; if a younger requests a lock held by an older, the younger is aborted. In the wound-wait scheme, if an older requests a lock held by a younger, the younger is preempted; if a younger requests a lock held by an older, the younger waits.
+```
+T1: READ(A) → 100
+T1: WRITE(A, A-10) → A=90
+T2: READ(A) → 90, READ(B) → 200
+T1: READ(B) → 200
+T1: WRITE(B, B+10) → B=210
+-- T2's summary: A+B = 290 (inconsistent — A was after, B was before T1's changes)
+```
 
-Deadlock detection allows deadlock to occur but detects and breaks it. The system maintains a wait-for graph whose nodes are transactions. An edge from Ti to Tj indicates that Ti is waiting for a lock held by Tj. A cycle in the wait-for graph indicates deadlock. When deadlock is detected, the DBMS selects a victim transaction to abort, releasing its locks. The choice of victim is typically based on the low-cost, not-youngest heuristic: abort the transaction with the fewest locks, fewest updates, or shortest remaining execution time.
+Concurrency control protocols prevent these anomalies.
 
-## 10.3 Timestamp-Based Protocol
+### 10.2 Lock-Based Protocols
 
-The timestamp-based concurrency control protocol assigns each transaction a unique timestamp when it begins, typically the system clock value or an incrementing counter. Each data item Q stores two timestamps: W-timestamp(Q), the timestamp of the most recent transaction that successfully executed write(Q), and R-timestamp(Q), the timestamp of the most recent transaction that successfully executed read(Q).
+A **lock** is a mechanism that prevents concurrent access to a data item. The two basic lock modes:
 
-When a transaction Ti issues read(Q), the protocol compares the timestamp of Ti with W-timestamp(Q). If TS(Ti) less than W-timestamp(Q), the read is rejected and Ti is rolled back. Otherwise, the read is executed, and R-timestamp(Q) is set to max(R-timestamp(Q), TS(Ti)).
+**Shared Lock (S):** For reading only. Multiple transactions can hold shared locks simultaneously.
 
-When Ti issues write(Q), the protocol checks both R-timestamp(Q) and W-timestamp(Q). If TS(Ti) less than R-timestamp(Q), the write is rejected because a younger transaction has already read the value that Ti would overwrite. If TS(Ti) less than W-timestamp(Q), the write is rejected because a younger transaction has already written Q. Otherwise, the write is executed.
+**Exclusive Lock (X):** For writing. Only one transaction can hold an exclusive lock, and no shared locks can coexist.
 
-The timestamp protocol ensures conflict serializability. The serialization order is the order of the timestamps. However, the protocol may cause cascading rollbacks because transactions may read data written by aborted transactions. Thomas's write rule provides an optimization: if TS(Ti) less than W-timestamp(Q), the write is ignored rather than rejected, because a younger write has already superseded it.
+**Lock Compatibility Matrix:**
 
-## 10.4 Validation-Based Protocol (Optimistic)
+| Request | S | X |
+|---------|---|---|
+| S | Yes | No |
+| X | No | No |
 
-The validation, or optimistic, protocol assumes that conflicts are rare and allows transactions to proceed without locks. The execution is divided into three phases. In the read phase, the transaction reads data items into local workspace and performs all writes in the workspace without updating the actual database. In the validation phase, the system checks whether the transaction's updates conflict with other concurrent transactions. In the write phase, if validation succeeds, the updates are applied to the database.
+**Lock Manager:** A component of the DBMS that maintains a lock table, grants locks, and queues lock requests that cannot be granted immediately.
 
-The validation test uses timestamps assigned at the beginning of the validation phase. The system checks that for each pair of concurrent transactions, the write sets do not intersect, ensuring that no conflicts exist. The optimistic protocol is efficient when conflicts are rare but degrades significantly when conflicts are frequent.
+### 10.3 Two-Phase Locking (2PL)
 
-## 10.5 Multiversion Concurrency Control
+**Basic 2PL Protocol:**
+1. **Growing Phase:** A transaction can acquire locks but cannot release any
+2. **Shrinking Phase:** A transaction can release locks but cannot acquire any
 
-Multiversion concurrency control (MVCC) maintains multiple versions of each data item. When a transaction writes a data item, the DBMS creates a new version rather than overwriting the existing one. Readers can access older versions without being blocked by writers, and writers are not blocked by readers.
+The dividing point is when the transaction releases its first lock.
 
-Each version is tagged with the timestamp of the transaction that created it. A read operation on a data item returns the version with the highest timestamp less than or equal to the reading transaction's timestamp. This guarantees that every read sees a consistent snapshot of the database as of the transaction's start time.
+**Strict 2PL:** The transaction holds all exclusive locks until it commits or aborts (the most common variant in practice). This ensures strict schedules (write locks released only after commit/abort).
 
-MVCC is the dominant concurrency control mechanism in modern database systems, including Oracle, PostgreSQL, MySQL (InnoDB), and Microsoft SQL Server. The primary advantage is that read operations never block write operations, and write operations never block read operations. The principal disadvantage is the storage overhead for maintaining multiple versions and the need for periodic garbage collection to reclaim space from old versions.
+**Rigorous 2PL:** All locks (shared and exclusive) are held until commit/abort.
 
-Snapshot isolation is a common MVCC-based isolation level. It guarantees that all reads in a transaction see a consistent snapshot of the database as of the start of the transaction. However, snapshot isolation does not guarantee serializability; the write-skew anomaly can occur.
+**Why 2PL Works:** 2PL ensures conflict serializability. By forcing all lock acquisitions before any releases, it creates a total order of transactions based on when they enter their shrinking phase.
 
-## 10.6 Granularity of Locks
+```sql
+-- Strict 2PL in action (conceptual — locking is automatic in most DBMS)
+BEGIN;
+-- Growing phase: locks acquired implicitly
+UPDATE accounts SET balance = balance - 500 WHERE id = 1;
+-- → acquires X-lock on account 1
+UPDATE accounts SET balance = balance + 500 WHERE id = 2;
+-- → acquires X-lock on account 2
 
-The granularity of a lock determines the size of the data item being locked. The spectrum includes database-level locks, table-level locks, page-level locks, tuple-level locks, and attribute-level locks. Coarse granularity reduces lock management overhead but increases the probability of conflicts. Fine granularity allows more concurrency but increases lock management cost.
+-- Shrinking phase: cannot start until commit
+COMMIT;
+-- → all locks released
+```
 
-Multiple granularity locking uses a hierarchy of lock granularities. To lock a node in the hierarchy, a transaction must first acquire an intention lock on its ancestors. Intention locks indicate that the transaction intends to acquire a finer-granularity lock at a lower level. The intention shared (IS) lock indicates that a shared lock will be acquired on a descendant. The intention exclusive (IX) lock indicates that an exclusive lock will be acquired on a descendant. The shared intention exclusive (SIX) lock indicates that the transaction holds a shared lock on the node and intends to acquire exclusive locks on some descendants.
+**Possible Problem with Basic 2PL — Cascading Rollbacks:**
+```
+T1: WRITE(A) → releases lock
+T2: READ(A)  → reads T1's uncommitted write
+T1: ABORT    → T2 must also abort!
+```
+Strict 2PL prevents this by holding write locks until commit.
 
-The multiple granularity protocol allows transactions to lock at the appropriate granularity for their operation. A transaction scanning the entire relation locks the table, avoiding per-tuple lock overhead. A transaction accessing a single tuple locks only that tuple, allowing other transactions to access other tuples concurrently. The protocol is used by many commercial database systems.
+### 10.4 Deadlock
 
-## 10.7 Concurrency Control in Practice
+A **deadlock** occurs when two or more transactions are each waiting for a lock held by the other.
 
-Modern database systems employ combinations of the techniques described in this chapter. Oracle uses MVCC with snapshot isolation, providing read-consistent views without read locks. PostgreSQL uses MVCC with a variant of snapshot isolation and supports serializable isolation through serializable snapshot isolation (SSI), which detects serialization anomalies using a conflict graph. MySQL's InnoDB engine uses MVCC with next-key locking to prevent phantom reads. Microsoft SQL Server supports multiple isolation levels, using locking for the lower levels and an optimistic concurrency control variant for snapshot isolation.
+```
+T1: X-lock(A)                 T2: X-lock(B)
+T1: requests X-lock(B)  ←    T2: requests X-lock(A)  ←
+    BLOCKED (waiting for T2)      BLOCKED (waiting for T1)
+```
 
-The trend in modern systems is toward MVCC with snapshot isolation as the default. This provides good concurrency for typical transactional workloads. Serializable isolation is available for applications that require the strongest guarantees, though it imposes higher overhead.
+**Deadlock Detection — Wait-for Graph:**
+The DBMS maintains a directed graph where nodes are transactions and an edge Tᵢ → Tⱼ means Tᵢ is waiting for a lock held by Tⱼ. A cycle indicates deadlock.
+
+```
+T1 → T2 → T1  → deadlock!
+```
+
+On detection, the DBMS **chooses a victim** (usually the transaction with the lowest cost to abort, based on age, locks held, or work done) and aborts it, releasing its locks.
+
+**Deadlock Prevention:**
+- **Wait-Die (non-preemptive):** If older transaction waits for younger, older waits; otherwise, younger dies (aborts and retries).
+- **Wound-Wait (preemptive):** If older transaction waits for younger, older wounds younger (younger aborts); otherwise, younger waits.
+- **Timeout:** If a transaction waits longer than a threshold, assume deadlock and abort.
+
+### 10.5 Lock Granularity
+
+The **granularity** of locks affects concurrency and overhead:
+
+- **Fine granularity (row-level):** High concurrency, high overhead (more locks to manage)
+- **Coarse granularity (table-level):** Low concurrency, low overhead
+
+Most modern DBMS use **row-level locking** by default with automatic escalation.
+
+**Intention Locks:** Used with hierarchical locking. Before locking a row, the transaction acquires an intention lock at the table level to signal its intent.
+
+- **IS (Intention Shared):** Wants to read some rows
+- **IX (Intention Exclusive):** Wants to write some rows
+- **SIX (Shared Intention Exclusive):** Reading all rows but writing some
+
+**Lock Escalation:** When a transaction holds many row-level locks, the DBMS may escalate to a page or table lock to reduce overhead.
+
+### 10.6 Timestamp-Based Protocols
+
+Timestamp ordering assigns each transaction a unique timestamp (typically the system clock). The protocol ensures conflict serializability by preventing conflicting operations from executing in the "wrong" order.
+
+**Basic Timestamp Ordering (TO):**
+- Each data item X has two timestamps: `W-TS(X)` = timestamp of the last transaction that wrote X; `R-TS(X)` = timestamp of the largest timestamp that read X.
+- A transaction T with timestamp TS(T) reads X:
+  - If TS(T) < W-TS(X), the write is "future" — reject read, abort T
+  - Otherwise, allow read, set R-TS(X) = max(R-TS(X), TS(T))
+- A transaction T writes X:
+  - If TS(T) < R-TS(X) or TS(T) < W-TS(X), reject write (data has been read/written by a "later" transaction)
+  - Otherwise, allow write, set W-TS(X) = TS(T)
+
+**Thomas's Write Rule:** An optimization. If TS(T) < W-TS(X), the write is outdated and can be ignored (rather than aborting) — a later write already exists.
+
+Timestamp ordering avoids deadlocks (no waiting for locks) but can cause cascading aborts.
+
+### 10.7 Optimistic Concurrency Control
+
+Optimistic protocols assume conflicts are rare. They use three phases:
+
+1. **Read Phase:** Execute transaction on a private copy of the data
+2. **Validation Phase:** Check if the transaction conflicts with others
+3. **Write Phase:** If validated, write changes to the database
+
+**Validation Test (backward validation):**
+For transaction T with start time S and validation time V, check against each concurrent transaction. If any concurrent transaction that committed between S and V wrote data that T read, T must abort.
+
+Optimistic concurrency control works well for read-heavy, low-contention workloads.
+
+### 10.8 Multi-Version Concurrency Control (MVCC)
+
+MVCC is the most widely used concurrency control mechanism (PostgreSQL, Oracle, MySQL InnoDB, SQL Server). Instead of locking, each write creates a new **version** of the data. Readers see a snapshot of the database at a point in time.
+
+**Key Ideas:**
+- Each data item can have multiple versions
+- Each version has a creation timestamp and expiration timestamp
+- A transaction sees a **snapshot** of the database as of its start time
+- Writers do not block readers; readers do not block writers
+
+**MVCC Implementation Example (PostgreSQL):**
+
+In PostgreSQL, each row has:
+- `xmin`: Transaction ID that created this version
+- `xmax`: Transaction ID that deleted/updated this version
+- The actual data
+
+When transaction Tx reads a row:
+- It sees the row if `xmin < Tx` and `xmax > Tx` (or xmax is null/aborted)
+- It does NOT see the row if `xmax` is a committed transaction ≤ Tx
+
+```sql
+-- In PostgreSQL, MVCC is transparent to users
+-- But it affects behavior:
+BEGIN;
+SELECT amount FROM accounts WHERE id = 1;  -- Sees snapshot at BEGIN
+-- Another session updates account 1
+SELECT amount FROM accounts WHERE id = 1;  -- Same result (snapshot isolation!)
+COMMIT;
+```
+
+**Advantages of MVCC:**
+- Readers never wait
+- Read-heavy workloads perform excellently
+- Most common anomalies are prevented
+
+**Challenges:**
+- Storage overhead (multiple versions)
+- Old versions must be cleaned up (VACUUM in PostgreSQL)
+- Write skew anomalies (two transactions write to different rows with overlapping read sets)
+
+### 10.9 Granularity of Data Access
+
+In practice, the DBMS determines lock granularity automatically:
+
+```sql
+-- Row-level locking (default in most modern DBMS)
+UPDATE products SET price = 29.99 WHERE product_id = 5;
+-- Only the row with product_id=5 is locked
+
+-- Table-level lock (explicit)
+LOCK TABLE products IN EXCLUSIVE MODE;
+
+-- Page-level locks may be used internally
+```
+
+### 10.10 Concurrency in SQL
+
+```sql
+-- Setting isolation level affects concurrency behavior
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+-- Most common. Uses row-level locks on modified data.
+-- Readers use MVCC snapshots in PostgreSQL/Oracle.
+
+SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
+-- Highest isolation. Uses predicate locks or conflict detection.
+-- May reject transactions with serialization errors.
+
+SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
+-- PostgreSQL: MVCC provides this naturally.
+-- MySQL/InnoDB: Uses gap locks to prevent phantoms.
+```
+
+**Concurrency Monitoring:**
+
+```sql
+-- PostgreSQL: View current locks
+SELECT relation::REGCLASS, locktype, mode, granted
+FROM pg_locks WHERE pid = pg_backend_pid();
+
+-- See blocking queries
+SELECT
+    blocked.pid AS blocked_pid,
+    blocked.query AS blocked_query,
+    blocker.pid AS blocker_pid,
+    blocker.query AS blocker_query
+FROM pg_catalog.pg_stat_activity blocked
+JOIN pg_catalog.pg_locks blocked_locks ON blocked.pid = blocked_locks.pid
+JOIN pg_catalog.pg_locks blocker_locks ON blocked_locks.locktype = blocker_locks.locktype
+    AND blocked_locks.database IS NOT DISTINCT FROM blocker_locks.database
+    AND blocked_locks.relation IS NOT DISTINCT FROM blocker_locks.relation
+    AND blocked_locks.page IS NOT DISTINCT FROM blocker_locks.page
+    AND blocked_locks.tuple IS NOT DISTINCT FROM blocker_locks.tuple
+    AND blocked_locks.virtualxid IS NOT DISTINCT FROM blocker_locks.virtualxid
+    AND blocked_locks.transactionid IS NOT DISTINCT FROM blocker_locks.transactionid
+    AND blocked_locks.classid IS NOT DISTINCT FROM blocker_locks.classid
+    AND blocked_locks.objid IS NOT DISTINCT FROM blocker_locks.objid
+    AND blocked_locks.objsubid IS NOT DISTINCT FROM blocker_locks.objsubid
+    AND blocked_locks.pid != blocker_locks.pid,
+    pg_catalog.pg_stat_activity blocker
+WHERE blocker.pid = blocker_locks.pid
+    AND NOT blocked_locks.granted;
+```
+
+## Examples
+
+**Example 10.1: Deadlock in Action**
+
+```sql
+-- Session 1
+BEGIN;
+UPDATE accounts SET balance = balance - 100 WHERE id = 1;  -- Locks account 1
+
+-- Session 2
+BEGIN;
+UPDATE accounts SET balance = balance - 50 WHERE id = 2;   -- Locks account 2
+
+-- Session 1
+UPDATE accounts SET balance = balance + 100 WHERE id = 2;  -- Waits for Session 2's lock
+
+-- Session 2
+UPDATE accounts SET balance = balance + 50 WHERE id = 1;   -- Waits for Session 1's lock
+-- DEADLOCK!
+
+-- The DBMS detects the cycle and aborts one transaction
+-- "ERROR: deadlock detected" in one session
+-- The other transaction proceeds normally
+```
+
+**Example 10.2: MVCC Behavior**
+
+```sql
+-- PostgreSQL MVCC: updates create new row versions
+
+-- Session A:
+BEGIN;
+SELECT amount FROM accounts WHERE id = 1;
+-- Result: 1000
+
+-- Session B (concurrent):
+UPDATE accounts SET amount = 500 WHERE id = 1;
+COMMIT;
+
+-- Session A (still in transaction):
+SELECT amount FROM accounts WHERE id = 1;
+-- Result: 1000 (sees the old snapshot!)
+-- Session A is isolated from Session B's commit
+
+-- Session A commits and re-reads:
+COMMIT;
+BEGIN;
+SELECT amount FROM accounts WHERE id = 1;
+-- Result: 500 (now sees the committed change)
+```
 
 ## Summary
 
-This chapter surveyed the principal concurrency control mechanisms. Lock-based protocols, particularly strict two-phase locking, are the most widely deployed. Deadlock must be managed through prevention or detection. Timestamp protocols offer an alternative without locks. Optimistic protocols suit low-conflict environments. Multiversion concurrency control, the dominant modern approach, provides excellent read performance at the cost of storage overhead. Multiple granularity locking allows appropriate lock-size selection. Commercial systems implement hybrid approaches that combine these techniques.
+- Concurrency control prevents lost updates, dirty reads, and inconsistent summaries.
+- Lock-based protocols use shared (S) and exclusive (X) locks to control access.
+- 2PL ensures serializability by separating lock acquisition and release into two phases.
+- Deadlock is detected via wait-for graphs and resolved by aborting a victim transaction.
+- Timestamp ordering provides an alternative that avoids deadlocks.
+- Optimistic concurrency control works well in low-contention environments.
+- MVCC is the dominant approach — readers see snapshots and never block writers.
+- Isolation levels in SQL control the degree of concurrency protection.
 
 ## Exercises
 
-### Review Questions
+### Basic
 
-1. What is the difference between shared and exclusive locks?
-2. Why does strict two-phase locking simplify recovery?
-3. Contrast deadlock prevention with deadlock detection.
-4. Under what conditions does the timestamp protocol reject a write operation?
-5. How does MVCC allow reads and writes to proceed without blocking each other?
+1. Explain the "lost update" problem. Write a schedule that demonstrates it.
 
-### Application Problems
+2. What is the difference between a shared lock and an exclusive lock? When would each be used?
 
-1. Consider two transactions T1: R(A), W(A), R(B), W(B) and T2: R(A), W(A), R(B), W(B). Show a schedule using strict two-phase locking that avoids deadlock. Show another schedule using two-phase locking that results in deadlock.
-2. Using the timestamp protocol, determine whether each of the following operations is accepted or rejected given the current timestamps. Current state: W-timestamp(A)=10, R-timestamp(A)=15, W-timestamp(B)=8, R-timestamp(B)=12. Transaction T6 (timestamp=6) issues write(A). Transaction T14 (timestamp=14) issues read(B). Transaction T9 (timestamp=9) issues write(B).
-3. Explain why snapshot isolation can produce the write-skew anomaly. Construct a concrete example with two concurrent transactions.
+3. Why does 2PL ensure serializability? Draw the growing and shrinking phases.
 
-### Challenge Problem
+4. What is the difference between strict 2PL and basic 2PL?
 
-Implement a simulation of the strict two-phase locking protocol with deadlock detection in pseudocode or a programming language of your choice. The simulation should accept as input a set of transactions with their read and write sets, execute them using a lock manager that detects deadlocks via wait-for graph cycles, and output a conflict-serializable schedule. Handle the case where deadlock requires victim selection.
+### Intermediate
+
+5. Draw a wait-for graph showing a deadlock between three transactions. Explain how the DBMS would detect and resolve it.
+
+6. Explain how MVCC allows a reader and writer to proceed simultaneously without blocking. What storage overhead does it introduce?
+
+7. For the following schedule, determine what locking protocol would allow it and whether it is serializable:
+```
+T1: READ(A), READ(B), SUM = A+B
+T2: WRITE(A, 10), WRITE(B, 20)
+```
+
+8. Compare optimistic concurrency control with pessimistic (lock-based) concurrency control. When would you choose each?
+
+### Advanced
+
+9. Design a high-contention banking system. A single account ("hot account") receives thousands of deposits and withdrawals per second. Explain the concurrency challenges and propose at least three strategies to handle them (e.g., batch updates, partitioned counters, optimistic concurrency with retry).
+
+10. In PostgreSQL's MVCC, implement an inventory management system where two concurrent sessions attempt to purchase the last item of a product:
+    - Session 1 reads stock = 1
+    - Session 2 reads stock = 1
+    - Session 1 decrements stock to 0 and commits
+    - Session 2 decrements stock to -1
+    
+    How does PostgreSQL's REPEATABLE READ isolation prevent this? What about READ COMMITTED? Write the SQL and explain.
+
+11. Research "write skew" in snapshot isolation. Give a concrete example of two transactions that each check a constraint, find it satisfied, then update data such that the constraint is violated after both commit. Can SERIALIZABLE isolation prevent this?

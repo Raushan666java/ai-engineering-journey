@@ -125,20 +125,21 @@ Find your level with the built-in agent skill:
 
 ## Local Mirror
 
-A full mirror of the repository is available at:
+A full copy of the repository is bundled with this site at the project root:
 
 ```
-C:\xampp\htdocs\ai-engineering-from-scratch\
+ai-engineering-from-scratch/
 ├── phases/         503 lessons across 20 phases
 ├── glossary/       Glossary terms
 ├── outputs/        Reusable artifacts (prompts, skills, agents, MCP)
 ├── projects/       Capstone project scaffolds
 ├── scripts/        Utility scripts
+├── .claude/        Agent skills (find-your-level, check-understanding)
 ├── site/           Website source
 └── web/            Web assets
 ```
 
-**2,871 files** — offline, searchable, fully runnable. `git pull` to update.
+**2,873 files** — offline, searchable, fully runnable. `git pull` on the source repo and recopy to refresh.
 
 ---
 

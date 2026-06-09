@@ -1,7 +1,5 @@
 # Phase 2 — DSA
 
-**Duration:** Parallel with Phase 3 (July 2026)
-**Daily:** 1 problem (45 min) alongside main study
 **Target:** 60 problems — Easy + Medium only
 
 ---

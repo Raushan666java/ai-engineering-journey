@@ -1,7 +1,7 @@
 # Phase 1 — Python
 
 **Duration:** June 8 → July 7, 2026 (4 Weeks)
-**Daily:** 5 hours | **Goal:** Python production-ready
+**Goal:** Python production-ready
 
 ---
 

@@ -1,4 +1,4 @@
-/* BLUEPRINT THEME v6 — Warm Paper + Blueprint Blue (raushan666java.github.io) */
+/* MONOCHROME THEME v6 — Warm Paper + Black Ink (raushan666java.github.io) */
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
@@ -14,9 +14,6 @@
   --ink: #1a1a1a;
   --ink-soft: #4a4a4a;
   --ink-mute: #7a7a78;
-  --blueprint: #3553ff;
-  --blueprint-tint: rgba(53, 83, 255, 0.08);
-  --blueprint-tint-strong: rgba(53, 83, 255, 0.18);
   --rule: #1a1a1a;
   --rule-soft: rgba(26, 26, 26, 0.16);
   --paper-rule: rgba(26, 26, 26, 0.08);
@@ -24,15 +21,10 @@
   --shadow-hard: 3px 3px 0 var(--ink);
   --shadow-hard-lg: 5px 5px 0 var(--ink);
   --shadow-soft: 0 1px 3px rgba(0,0,0,0.06);
-  --accent-green: #059669;
-  --accent-amber: #d97706;
-  --accent-rose: #e11d48;
-  --accent-purple: #7c3aed;
-  --accent-teal: #0d9488;
-  --md-primary-fg-color: #3553ff;
+  --md-primary-fg-color: #1a1a1a;
   --md-default-fg-color--light: #4a4a4a;
-  --status-complete: #3553ff;
-  --status-in-progress: #3553ff;
+  --status-complete: #1a1a1a;
+  --status-in-progress: #1a1a1a;
   --status-planned: #bbb9ae;
 }
 
@@ -48,9 +40,6 @@
   --ink: #e8e6e0;
   --ink-soft: #a8a69e;
   --ink-mute: #6e6c66;
-  --blueprint: #6b8aff;
-  --blueprint-tint: rgba(107, 138, 255, 0.08);
-  --blueprint-tint-strong: rgba(107, 138, 255, 0.18);
   --rule: #e8e6e0;
   --rule-soft: rgba(232, 230, 224, 0.12);
   --paper-rule: rgba(232, 230, 224, 0.04);
@@ -58,19 +47,14 @@
   --shadow-hard: 3px 3px 0 var(--rule);
   --shadow-hard-lg: 5px 5px 0 var(--rule);
   --shadow-soft: 0 1px 3px rgba(0,0,0,0.3);
-  --accent-green: #34d399;
-  --accent-amber: #fbbf24;
-  --accent-rose: #fb7185;
-  --accent-purple: #a78bfa;
-  --accent-teal: #2dd4bf;
-  --status-complete: #6b8aff;
-  --status-in-progress: #6b8aff;
+  --status-complete: #e8e6e0;
+  --status-in-progress: #e8e6e0;
   --status-planned: #3a3a3a;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-::selection { background: var(--blueprint); color: #fff; }
+::selection { background: var(--ink); color: var(--bg); }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
@@ -123,7 +107,7 @@ body {
 }
 
 .md-header__button:hover {
-  color: var(--blueprint) !important;
+  color: var(--ink) !important;
 }
 
 .md-tabs {
@@ -146,11 +130,11 @@ body {
 }
 
 .md-tabs__link--active {
-  color: var(--blueprint) !important;
+  color: var(--ink) !important;
 }
 
 .md-tabs__link:hover {
-  color: var(--blueprint) !important;
+  color: var(--ink) !important;
 }
 
 .md-main {
@@ -192,7 +176,7 @@ body {
   font-size: 0.72rem !important;
   letter-spacing: 0.12em !important;
   text-transform: uppercase !important;
-  color: var(--blueprint) !important;
+  color: var(--ink) !important;
 }
 
 .md-nav__list {
@@ -206,11 +190,11 @@ body {
 }
 
 .md-nav__link:hover {
-  color: var(--blueprint) !important;
+  color: var(--ink) !important;
 }
 
 .md-nav__item--active > .md-nav__link {
-  color: var(--blueprint) !important;
+  color: var(--ink) !important;
   font-weight: 700 !important;
 }
 
@@ -226,7 +210,7 @@ body {
   letter-spacing: 0.02em !important;
   text-transform: uppercase !important;
   color: var(--ink) !important;
-  border-bottom: 3px solid var(--blueprint) !important;
+  border-bottom: 3px solid var(--ink) !important;
   padding-bottom: 8px !important;
   margin-bottom: 32px !important;
   line-height: 1 !important;
@@ -286,32 +270,25 @@ body {
 }
 
 .md-typeset a {
-  color: var(--blueprint) !important;
+  color: var(--ink) !important;
   text-decoration: underline !important;
   text-underline-offset: 3px !important;
 }
 
 .md-typeset a:hover {
   color: var(--ink) !important;
-  text-decoration-color: var(--blueprint) !important;
+  text-decoration-color: var(--ink) !important;
 }
 
 .md-typeset hr {
   border: none !important;
-  height: 6px !important;
+  height: 3px !important;
   margin: 32px 0 !important;
-  background-image:
-    repeating-linear-gradient(to right,
-      var(--blueprint) 0, var(--blueprint) 4px, transparent 4px, transparent 8px),
-    repeating-linear-gradient(to right,
-      transparent 0, transparent 8px, var(--blueprint-tint-strong) 8px, var(--blueprint-tint-strong) 14px) !important;
-  background-size: 100% 3px, 100% 3px !important;
-  background-position: 0 0, 0 3px !important;
-  background-repeat: no-repeat !important;
+  background: var(--ink) !important;
 }
 
 .md-typeset blockquote {
-  border-left: 4px solid var(--blueprint) !important;
+  border-left: 4px solid var(--ink) !important;
   color: var(--ink-soft) !important;
   font-style: italic !important;
 }
@@ -336,15 +313,15 @@ body {
 }
 
 .md-typeset .md-button--primary {
-  background: var(--blueprint) !important;
-  color: #fff !important;
-  border-color: var(--blueprint) !important;
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+  border-color: var(--ink) !important;
 }
 
 .md-typeset .md-button--primary:hover {
-  background: #2840d6 !important;
-  border-color: #2840d6 !important;
-  color: #fff !important;
+  background: #000 !important;
+  border-color: #000 !important;
+  color: var(--bg) !important;
 }
 
 .md-typeset .grid {
@@ -372,16 +349,9 @@ body {
 .ascii-rule {
   display: block;
   width: 100%;
-  height: 6px;
+  height: 3px;
   margin: 32px 0;
-  background-image:
-    repeating-linear-gradient(to right,
-      var(--blueprint) 0, var(--blueprint) 4px, transparent 4px, transparent 8px),
-    repeating-linear-gradient(to right,
-      transparent 0, transparent 8px, var(--blueprint-tint-strong) 8px, var(--blueprint-tint-strong) 14px);
-  background-size: 100% 3px, 100% 3px;
-  background-position: 0 0, 0 3px;
-  background-repeat: no-repeat;
+  background: var(--ink);
   user-select: none;
 }
 
@@ -392,7 +362,7 @@ body {
   font-size: 4.2rem;
   line-height: 0.85;
   padding: 0.08em 0.12em 0 0;
-  color: var(--blueprint);
+  color: var(--ink);
 }
 
 /* === LABEL === */
@@ -416,12 +386,12 @@ body {
 .section-num {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 4vw, 2.6rem);
-  color: var(--blueprint);
+  color: var(--ink);
   text-transform: uppercase;
   line-height: 1;
 }
 
-/* === BLUEPRINT CARDS === */
+/* === MONOCHROME CARDS === */
 .blueprint-card {
   background: var(--bg-surface) !important;
   border: 2px solid var(--ink) !important;
@@ -509,7 +479,7 @@ body {
   left: 0;
   height: 100%;
   width: var(--bar-pct, 0%);
-  background: var(--blueprint);
+  background: var(--ink);
   transition: width 0.6s ease;
 }
 
@@ -532,7 +502,7 @@ body {
 .grid-card {
   background: var(--bg-surface);
   border: 2px solid var(--ink);
-  border-top: 3px solid var(--blueprint);
+  border-top: 3px solid var(--ink);
   box-shadow: var(--shadow-hard);
   padding: 24px;
   transition: transform 0.2s, box-shadow 0.2s;
@@ -573,11 +543,11 @@ body {
   border-top: 1px solid var(--rule-soft);
 }
 
-.grid-card-accent-green { border-top-color: var(--accent-green); }
-.grid-card-accent-amber { border-top-color: var(--accent-amber); }
-.grid-card-accent-rose { border-top-color: var(--accent-rose); }
-.grid-card-accent-purple { border-top-color: var(--accent-purple); }
-.grid-card-accent-teal { border-top-color: var(--accent-teal); }
+.grid-card-accent-green { border-top-color: var(--ink); }
+.grid-card-accent-amber { border-top-color: var(--ink); }
+.grid-card-accent-rose { border-top-color: var(--ink); }
+.grid-card-accent-purple { border-top-color: var(--ink); }
+.grid-card-accent-teal { border-top-color: var(--ink); }
 
 /* === PROGRESS BAR === */
 .progress-bar {
@@ -590,7 +560,7 @@ body {
 
 .progress-bar-fill {
   height: 100%;
-  background: var(--blueprint);
+  background: var(--ink);
   transition: width 0.6s ease;
 }
 
@@ -619,15 +589,15 @@ body {
 }
 
 .btn-blueprint {
-  background: var(--blueprint) !important;
-  color: #fff !important;
-  border-color: var(--blueprint) !important;
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+  border-color: var(--ink) !important;
 }
 
 .btn-blueprint:hover {
-  background: #2840d6 !important;
-  border-color: #2840d6 !important;
-  color: #fff !important;
+  background: #000 !important;
+  border-color: #000 !important;
+  color: var(--bg) !important;
 }
 
 .btn-secondary {
@@ -724,7 +694,7 @@ body {
 }
 
 .md-footer-copyright a {
-  color: var(--blueprint) !important;
+  color: var(--ink) !important;
 }
 
 .md-footer-nav {
@@ -801,7 +771,7 @@ body {
 }
 
 .md-search-result__link:hover {
-  background: var(--blueprint-tint) !important;
+  background: var(--bg-surface-hover) !important;
 }
 
 .md-search-result__link h1,
@@ -826,7 +796,7 @@ body {
   border: 2px solid var(--ink);
   padding: 20px;
   transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
-  border-top: 3px solid var(--blueprint);
+  border-top: 3px solid var(--ink);
 }
 
 .topic-card:hover {
@@ -864,11 +834,11 @@ body {
   padding-top: 10px;
 }
 
-.topic-card-green { border-top-color: var(--accent-green); }
-.topic-card-amber { border-top-color: var(--accent-amber); }
-.topic-card-rose { border-top-color: var(--accent-rose); }
-.topic-card-purple { border-top-color: var(--accent-purple); }
-.topic-card-teal { border-top-color: var(--accent-teal); }
+.topic-card-green { border-top-color: var(--ink); }
+.topic-card-amber { border-top-color: var(--ink); }
+.topic-card-rose { border-top-color: var(--ink); }
+.topic-card-purple { border-top-color: var(--ink); }
+.topic-card-teal { border-top-color: var(--ink); }
 
 /* === FOCUS / STUDY TAGS === */
 .tag {
@@ -915,9 +885,7 @@ body {
   gap: 24px;
   padding: 32px 24px;
   margin: 32px 0;
-  background:
-    linear-gradient(135deg, var(--blueprint-tint-strong) 0%, transparent 50%),
-    var(--bg-surface);
+  background: var(--bg-surface);
   border: 3px solid var(--ink);
   box-shadow: var(--shadow-hard-lg);
   position: relative;
@@ -971,8 +939,8 @@ body {
   gap: 12px;
 }
 
-.module-hero-blueprint { border-bottom: 3px solid var(--blueprint); }
-.module-hero-teal { border-bottom: 3px solid var(--accent-teal); }
+.module-hero-blueprint { border-bottom: 3px solid var(--ink); }
+.module-hero-teal { border-bottom: 3px solid var(--ink); }
 
 /* === PHASE SECTION === */
 .phase-section {
@@ -983,9 +951,7 @@ body {
 }
 
 .phase-header {
-  background:
-    linear-gradient(135deg, var(--blueprint-tint-strong) 0%, transparent 80%),
-    var(--bg-surface-hover);
+  background: var(--bg-surface-hover);
   padding: 16px 20px;
   border-bottom: 2px solid var(--ink);
   display: flex;
@@ -1029,7 +995,7 @@ body {
   align-items: flex-start;
   gap: 12px;
   background: var(--bg-surface);
-  border-left: 4px solid var(--accent-teal);
+  border-left: 4px solid var(--ink-soft);
   padding: 16px 20px;
   margin: 24px 0;
   font-family: var(--font-body);
@@ -1046,19 +1012,19 @@ body {
   white-space: nowrap;
   flex-shrink: 0;
   margin-top: 2px;
-  color: var(--accent-teal);
-  border: 1px solid var(--accent-teal);
+  color: var(--ink-soft);
+  border: 1px solid var(--ink-soft);
   padding: 2px 8px;
 }
 
-.tip-banner-rose { border-left-color: var(--accent-rose); }
-.tip-banner-rose .tip-badge { color: var(--accent-rose); border-color: var(--accent-rose); }
-.tip-banner-amber { border-left-color: var(--accent-amber); }
-.tip-banner-amber .tip-badge { color: var(--accent-amber); border-color: var(--accent-amber); }
-.tip-banner-green { border-left-color: var(--accent-green); }
-.tip-banner-green .tip-badge { color: var(--accent-green); border-color: var(--accent-green); }
-.tip-banner-blue { border-left-color: var(--blueprint); }
-.tip-banner-blue .tip-badge { color: var(--blueprint); border-color: var(--blueprint); }
+.tip-banner-rose { border-left-color: var(--ink); }
+.tip-banner-rose .tip-badge { color: var(--ink); border-color: var(--ink); }
+.tip-banner-amber { border-left-color: var(--ink-soft); }
+.tip-banner-amber .tip-badge { color: var(--ink-soft); border-color: var(--ink-soft); }
+.tip-banner-green { border-left-color: var(--ink-mute); }
+.tip-banner-green .tip-badge { color: var(--ink-mute); border-color: var(--ink-mute); }
+.tip-banner-blue { border-left-color: var(--ink); }
+.tip-banner-blue .tip-badge { color: var(--ink); border-color: var(--ink); }
 
 /* === CHECKLIST === */
 .checklist-visual {
@@ -1091,7 +1057,7 @@ body {
 .track-card {
   background: var(--bg-surface);
   border: 2px solid var(--ink);
-  border-top: 3px solid var(--blueprint);
+  border-top: 3px solid var(--ink);
   box-shadow: var(--shadow-hard);
   padding: 20px;
   display: flex;
@@ -1105,10 +1071,10 @@ body {
   box-shadow: var(--shadow-hard-lg);
 }
 
-.track-card-green { border-top-color: var(--accent-green); }
-.track-card-amber { border-top-color: var(--accent-amber); }
-.track-card-purple { border-top-color: var(--accent-purple); }
-.track-card-teal { border-top-color: var(--accent-teal); }
+.track-card-green { border-top-color: var(--ink); }
+.track-card-amber { border-top-color: var(--ink); }
+.track-card-purple { border-top-color: var(--ink); }
+.track-card-teal { border-top-color: var(--ink); }
 
 .track-card-header {
   display: flex;
@@ -1153,7 +1119,7 @@ body {
 }
 
 .track-meta a {
-  color: var(--blueprint) !important;
+  color: var(--ink) !important;
   text-decoration: none !important;
   font-weight: 600;
 }
@@ -1254,7 +1220,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  border-top: 3px solid var(--accent-teal);
+  border-top: 3px solid var(--ink-soft);
   transition: transform 0.15s, box-shadow 0.15s;
 }
 
@@ -1309,7 +1275,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  border-top: 3px solid var(--accent-purple);
+  border-top: 3px solid var(--ink-soft);
   transition: transform 0.15s, box-shadow 0.15s;
 }
 
@@ -1375,7 +1341,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0;
-  border-left: 3px solid var(--blueprint);
+  border-left: 3px solid var(--ink);
 }
 
 .roadmap-step {
@@ -1390,7 +1356,7 @@ body {
   position: absolute;
   left: -13px;
   background: var(--bg);
-  color: var(--blueprint);
+  color: var(--ink);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: 700;
@@ -1399,7 +1365,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--blueprint);
+  border: 2px solid var(--ink);
 }
 
 .roadmap-step strong {
@@ -1564,7 +1530,7 @@ body {
 .streak-count {
   font-family: 'VT323', monospace;
   font-size: 1.8rem;
-  color: var(--blueprint);
+  color: var(--ink);
 }
 
 .streak-week {
@@ -1586,15 +1552,15 @@ body {
 }
 
 .streak-day.done {
-  background: var(--blueprint);
-  color: #fff;
-  border-color: var(--blueprint);
+  background: var(--status-complete);
+  color: var(--bg);
+  border-color: var(--status-complete);
 }
 
 .stats-big {
   font-family: 'VT323', monospace;
   font-size: 1.4rem;
-  color: var(--blueprint);
+  color: var(--ink);
   display: block;
 }
 
@@ -1638,7 +1604,7 @@ body {
 .streak-celebrate {
   font-family: var(--font-body);
   font-size: 0.82rem;
-  color: var(--blueprint);
+  color: var(--ink);
   padding: 6px 0;
   margin-bottom: 6px;
   border-bottom: 1px solid var(--rule-soft);
@@ -1670,7 +1636,7 @@ body {
   font-family: var(--font-body);
   font-size: 0.95rem;
   font-style: italic;
-  color: var(--blueprint);
+  color: var(--ink);
   padding: 8px 0;
   line-height: 1.5;
 }
@@ -1729,7 +1695,7 @@ body {
   font-family: var(--font-body);
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--blueprint);
+  color: var(--ink);
   letter-spacing: 0.02em;
 }
 
@@ -1752,9 +1718,9 @@ body {
 }
 
 .link-chip:hover {
-  background: var(--blueprint-tint);
-  border-color: var(--blueprint);
-  color: var(--blueprint) !important;
+  background: var(--bg-surface-hover);
+  border-color: var(--ink);
+  color: var(--ink) !important;
 }
 
 /* === POMODORO TIMER === */
@@ -1806,7 +1772,7 @@ body {
 }
 
 .week-dot.today {
-  border-color: var(--blueprint);
+  border-color: var(--ink);
   border-width: 2px;
 }
 
@@ -1856,7 +1822,7 @@ body {
 
 /* === GOAL PAGE TODAY HIGHLIGHT === */
 tr.today-highlight {
-  outline: 3px solid var(--blueprint);
+  outline: 3px solid var(--ink);
   outline-offset: -2px;
   background: var(--bg-surface) !important;
 }
@@ -1900,7 +1866,7 @@ tr.today-highlight td {
 }
 
 .page-notes-textarea:focus {
-  border-color: var(--blueprint);
+  border-color: var(--ink);
   box-shadow: var(--shadow-hard);
 }
 

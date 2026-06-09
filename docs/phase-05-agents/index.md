@@ -1,7 +1,7 @@
 # Phase 5 — AI Agents
 
 **Duration:** 2 Weeks (Sep 2026)
-**Daily:** 5 hours | **Goal:** Production AI agents
+**Goal:** Production AI agents
 
 ---
 

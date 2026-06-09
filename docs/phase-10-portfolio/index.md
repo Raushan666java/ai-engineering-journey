@@ -1,7 +1,7 @@
 # Phase 10 — Portfolio
 
 **Duration:** Sep 1–7, 2026
-**Daily:** 5 hours | **Goal:** Job-ready portfolio banao + applications start karo
+**Goal:** Job-ready portfolio banao + applications start karo
 
 ---
 

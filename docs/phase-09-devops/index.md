@@ -1,7 +1,7 @@
 # Phase 9 — DevOps
 
 **Duration:** 2 Weeks (Aug 25 – Sep 7, 2026)
-**Daily:** 5 hours | **Goal:** AI applications deploy, monitor, and scale karna seekho
+**Goal:** AI applications deploy, monitor, and scale karna seekho
 
 ---
 

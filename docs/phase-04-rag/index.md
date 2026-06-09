@@ -1,7 +1,7 @@
 # Phase 4 — Advanced RAG
 
 **Duration:** 2 Weeks (Aug 2026)
-**Daily:** 5 hours | **Goal:** Production-ready RAG systems
+**Goal:** Production-ready RAG systems
 
 ---
 

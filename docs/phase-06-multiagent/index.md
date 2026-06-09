@@ -1,7 +1,7 @@
 # Phase 6 — Multi-Agent Systems
 
 **Duration:** 2 Weeks (Oct 2026)
-**Daily:** 5 hours | **Goal:** Multi-agent systems with CrewAI & LangGraph
+**Goal:** Multi-agent systems with CrewAI & LangGraph
 
 ---
 

@@ -1,7 +1,7 @@
 # Phase 7 — Automation
 
 **Duration:** 2 Weeks (Nov 2026)
-**Daily:** 5 hours | **Goal:** AI-powered workflows with n8n
+**Goal:** AI-powered workflows with n8n
 
 ---
 

@@ -1,7 +1,7 @@
 # Phase 8 — System Design
 
 **Duration:** 2 Weeks (Aug 18–31, 2026)
-**Daily:** 5 hours | **Goal:** AI systems design karna seekho
+**Goal:** AI systems design karna seekho
 
 ---
 

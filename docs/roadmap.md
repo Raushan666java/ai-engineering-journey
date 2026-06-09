@@ -1,7 +1,6 @@
 # 🗺️ 3 Month Roadmap
 
 **Start:** June 8, 2026 | **End:** September 7, 2026
-**Daily:** 5 hours | **Weekend:** Full day
 
 ---
 

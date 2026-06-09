@@ -17,31 +17,6 @@
   <span class="stat-row-value">10%</span>
 </div>
 
-<div class="grid-cards">
-  <div class="grid-card grid-card-accent-blueprint">
-    <h3>📖 10 Phases</h3>
-    <p>Python → DSA → LangChain → RAG → Agents → Multi-Agent → Automation → System Design → DevOps → Portfolio</p>
-    <div class="card-meta">End-to-end AI engineering curriculum</div>
-  </div>
-  <div class="grid-card grid-card-accent-amber">
-    <h3>⏱️ 24 Weeks</h3>
-    <p>Har week ka structured plan. Phase 1 se Phase 10 tak. Daily 5 hours: theory + coding + projects.</p>
-    <div class="card-meta">Consistency > Intensity</div>
-  </div>
-  <div class="grid-card grid-card-accent-green">
-    <h3>🏗️ 10+ Projects</h3>
-    <p>WhatsApp Analyzer, Document AI, ApexERP Agent, Multi-Agent ERP, Flow Studio — har week kuch live.</p>
-    <div class="card-meta">Padhte padhte banao</div>
-  </div>
-  <div class="grid-card grid-card-accent-rose">
-    <h3>📋 Placement Prep</h3>
-    <p>12 modules · 500+ DSA problems · System Design · CS Core · Web Dev · AI/ML · Mock Interviews</p>
-    <div class="card-meta">FAANG + Top Product Companies</div>
-  </div>
-</div>
-
----
-
 ## Who Am I?
 
 <div class="grid-cards">
@@ -50,6 +25,156 @@
     <p>3+ years production experience building SaaS, CRM, and ERP systems. Currently building <strong>ApexERP</strong> — a WhatsApp-first AI ERP for Bihar/UP SMBs. Transitioning to AI Automation Engineer by September 2026.</p>
     <div class="card-meta">PHP 8.x · Laravel 12 · Vue 3 · Docker · LangChain · LangGraph</div>
   </div>
+</div>
+
+---
+
+## All Courses
+
+<div class="topic-grid">
+
+### 🎯 Placement Prep — 12 Modules
+
+<div class="topic-card">
+  <h4>01 · Meta Skills</h4>
+  <p>Learning Science, Memory Techniques, Study Methods, Time Management, Mindset. Kaise padhna hai — pehla step.</p>
+  <div class="topic-meta"><a href="placement/01-meta-skills/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>02 · CS Core</h4>
+  <p>DSA (500+ problems), OS, DBMS, Computer Networks, COA, TOC, SE, Distributed Systems. Placement interviews ka backbone.</p>
+  <div class="topic-meta"><a href="placement/02-cs-core/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>03 · Programming</h4>
+  <p>PHP+Laravel (superpower), JavaScript, Java, Python, C, Go/Rust/TS. 2-3 languages strong karo.</p>
+  <div class="topic-meta"><a href="placement/03-programming/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>04 · Web Development</h4>
+  <p>HTML5, CSS3, JavaScript, Backend (PHP/Laravel/Node), Databases (MySQL/PG/Mongo), Full-Stack React+Laravel.</p>
+  <div class="topic-meta"><a href="placement/04-web-dev/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>05 · AI & ML</h4>
+  <p>Python for ML, Machine Learning, Deep Learning, Agentic AI (LangChain, RAG), End-to-end ML projects.</p>
+  <div class="topic-meta"><a href="placement/05-ai-ml/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>06 · DevOps</h4>
+  <p>Git, Docker, Kubernetes, CI/CD, Cloud (AWS/GCP/Azure), IaC (Terraform/Ansible), Monitoring (Prometheus/Grafana/ELK).</p>
+  <div class="topic-meta"><a href="placement/06-devops/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>07 · Projects</h4>
+  <p>Beginner → Capstone. Portfolio Website, E-Commerce, Social Dashboard, AI Content Generator, Scalable Microservices.</p>
+  <div class="topic-meta"><a href="placement/07-projects/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>08 · Interview Prep</h4>
+  <p>Technical DSA, System Design, Behavioral STAR, Company-Specific (FAANG/Product/Startup), Mock Interviews.</p>
+  <div class="topic-meta"><a href="placement/08-interview-prep/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>09 · Resources</h4>
+  <p>Books & PDFs (DSA/JS/UI notes), Online Courses, Dev Tools, Communities, Job Search — 50+ curated resources.</p>
+  <div class="topic-meta"><a href="placement/09-resources/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>10 · System Design</h4>
+  <p>HLD + LLD, CAP Theorem, Scalability, Microservices, Kafka, Distributed Systems, 40+ Case Studies, FAANG prep.</p>
+  <div class="topic-meta"><a href="placement/10-system-design/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>11 · Cyber Security</h4>
+  <p>CIA Triad, STRIDE, Web Security (OWASP Top 10), Cryptography, Bug Bounty, Network Security, Incident Response. 30 modules, 500+ code examples.</p>
+  <div class="topic-meta"><a href="placement/11-cyber-security/">Start →</a></div>
+</div>
+
+<div class="topic-card">
+  <h4>12 · 90-Day Plan</h4>
+  <p>5 Phases, 14 Chapters. Java+DSA Foundation → Advanced DSA → Web Dev → System Design/ML → Interview Prep. Placement ready in 90 days.</p>
+  <div class="topic-meta"><a href="placement/12-ninety-day-plan/">Start →</a></div>
+</div>
+
+</div>
+
+---
+
+<div class="topic-grid">
+
+### 🤖 AI Engineering — 10 Phases
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 1 — Python</h4>
+  <p>Python syntax, OOP, FastAPI, Docker. Project: WhatsApp Analyzer CLI.</p>
+  <div class="topic-meta"><a href="phase-01-python/">Start →</a></div>
+</div>
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 2 — DSA</h4>
+  <p>Arrays, Strings, HashMap, Linked Lists, Trees, Stack, Binary Search. 60+ problems.</p>
+  <div class="topic-meta"><a href="phase-02-dsa/">Start →</a></div>
+</div>
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 3 — LangChain</h4>
+  <p>LangChain Core, RAG Basics, LangGraph & Agents, Project Build. Document AI Assistant.</p>
+  <div class="topic-meta"><a href="phase-03-langchain/">Start →</a></div>
+</div>
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 4 — Advanced RAG</h4>
+  <p>Advanced Retrieval, Vector DBs in Production, ApexERP RAG integration.</p>
+  <div class="topic-meta"><a href="phase-04-rag/">Start →</a></div>
+</div>
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 5 — Agents</h4>
+  <p>Memory Systems, Production Agents, ApexERP Agent with WhatsApp integration.</p>
+  <div class="topic-meta"><a href="phase-05-agents/">Start →</a></div>
+</div>
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 6 — Multi-Agent</h4>
+  <p>CrewAI, LangGraph Advanced, Multi-Agent ERP — content crews, agent orchestration.</p>
+  <div class="topic-meta"><a href="phase-06-multiagent/">Start →</a></div>
+</div>
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 7 — Automation</h4>
+  <p>n8n Advanced, Purvanchal Music Pipeline, Flow Studio — business process automation.</p>
+  <div class="topic-meta"><a href="phase-07-automation/">Start →</a></div>
+</div>
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 8 — System Design</h4>
+  <p>System Design Basics, AI System Design Patterns, scalability for AI workloads.</p>
+  <div class="topic-meta"><a href="phase-08-systemdesign/">Start →</a></div>
+</div>
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 9 — DevOps</h4>
+  <p>Docker & Deploy, CI/CD & Monitoring, production deployment pipelines.</p>
+  <div class="topic-meta"><a href="phase-09-devops/">Start →</a></div>
+</div>
+
+<div class="topic-card topic-card-teal">
+  <h4>Phase 10 — Portfolio</h4>
+  <p>Portfolio Building, Job Hunt Strategy, Interview Prep — career launchpad.</p>
+  <div class="topic-meta"><a href="phase-10-portfolio/">Start →</a></div>
+</div>
+
 </div>
 
 ---
@@ -103,7 +228,7 @@
       <span class="track-tag track-tag-method">COMING SOON</span>
     </div>
     <h4>ApexERP Agent</h4>
-    <p>Whatsap⏤first AI agent for ERP — order management, inventory, CRM automation.</p>
+    <p>WhatsApp-first AI agent for ERP — order management, inventory, CRM automation.</p>
     <div class="track-meta"><span class="tag tag-time">August</span><span>Laravel + LangGraph + WhatsApp API</span></div>
   </div>
   <div class="track-card track-card-rose">
@@ -146,11 +271,6 @@
     <h3>🎯 <a href="placement/index.md">Placement Prep</a></h3>
     <p>12 modules, 500+ DSA, System Design, CS Core, Interview prep.</p>
     <div class="card-meta">FAANG prep →</div>
-  </div>
-  <div class="grid-card grid-card-accent-purple">
-    <h3>📊 <a href="placement/dashboard.md">Study Dashboard</a></h3>
-    <p>Pomodoro timer, daily plan, streak tracker, progress stats.</p>
-    <div class="card-meta">Track your journey →</div>
   </div>
 </div>
 

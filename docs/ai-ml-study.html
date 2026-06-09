@@ -119,10 +119,14 @@
       padding: 10px 14px; font-size: 0.82rem;
     }
     .lesson:hover { background: var(--bg-hover); border-color: var(--ink); }
-    .lesson a { text-decoration: none; color: inherit; display: block; }
+    .lesson a {
+      text-decoration: none; color: inherit;
+      display: flex; align-items: baseline; gap: 4px;
+    }
     .lesson-num {
       font-family: var(--font-mono); font-size: 0.6rem;
       letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-mute);
+      flex-shrink: 0;
     }
     .lesson-name {
       font-family: var(--font-mono); font-size: 0.75rem;

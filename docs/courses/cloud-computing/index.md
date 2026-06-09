@@ -45,24 +45,18 @@ Upon completion of this course, students will be able to:
 
 ## Chapter Outline
 
-| Chapter | Title |
-|---------|-------|
-| 1 | Introduction to Cloud Computing |
-| 2 | Virtualization |
-| 3 | AWS Compute |
-| 4 | AWS Storage |
-| 5 | AWS Database Services |
-| 6 | AWS Networking |
-| 7 | AWS Security |
-| 8 | Serverless Computing |
-| 9 | Microsoft Azure Fundamentals |
-| 10 | Google Cloud Platform Fundamentals |
-| 11 | Cloud Architecture Patterns |
-| 12 | Containerization in the Cloud |
-| 13 | Cloud Monitoring and Cost Management |
-| 14 | Multi-Cloud and Hybrid Cloud Strategies |
-| 15 | Cloud Security and Compliance |
-| 16 | Capstone Project |
+| Chapter | Title | Description |
+|---------|-------|-------------|
+| 1 | Introduction to Cloud Computing | Foundations, service models (IaaS/PaaS/SaaS), and economics. |
+| 2 | Virtualization Technology | Hypervisors, server/storage/network virtualization, and containers vs VMs. |
+| 3 | Cloud Compute Services | Virtual machine instances, auto-scaling, and lifecycle management. |
+| 4 | Cloud Storage Services | Object, block, and file storage systems across major providers. |
+| 5 | Cloud Database Services | Relational, NoSQL, in-memory, and data warehousing solutions. |
+| 6 | Cloud Networking and Delivery | VPCs, subnets, load balancing, DNS, and Content Delivery Networks. |
+| 7 | Cloud Security and Identity | IAM, encryption, network security, and compliance frameworks. |
+| 8 | Serverless Computing | Function-as-a-Service (FaaS) and event-driven architectures. |
+| 9 | Containerization and Orchestration | Docker, Kubernetes, and managed container services (EKS/AKS/GKE). |
+| 10 | Cloud Architecture and Management | Well-Architected patterns, monitoring, cost optimization, and governance. |
 
 ## How to Use This Textbook
 

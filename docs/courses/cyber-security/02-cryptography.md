@@ -1,81 +1,111 @@
-# Cryptography
+# Chapter 2: Cryptography
+
+---
 
 ## Learning Objectives
 
-After completing this chapter, students will be able to distinguish symmetric and asymmetric encryption, select appropriate cipher modes for given use cases, explain the mathematical foundations of RSA and elliptic curve cryptography, evaluate hash function properties and identify weaknesses in MD5 and SHA-1, describe the TLS handshake protocol, manage cryptographic keys throughout their lifecycle, and apply PGP/GPG for secure communication.
+- Distinguish between symmetric and asymmetric encryption algorithms.
+- Explain the role of cryptographic hash functions in ensuring data integrity.
+- Describe the process of digital signatures and their use for non-repudiation.
+- Understand the components and purpose of a Public Key Infrastructure (PKI).
+- Discuss the fundamental mechanics of the TLS/SSL protocol for secure communication.
+
+---
 
 ## Theory
 
 ### Symmetric Encryption
-
-Symmetric encryption uses a single shared key for both encryption and decryption. The Advanced Encryption Standard (AES) operates on 128-bit blocks with key sizes of 128, 192, or 256 bits. AES replaced the Data Encryption Standard (DES), whose 56-bit key is vulnerable to brute force. Triple DES (3DES) applies DES three times but is computationally inefficient and deprecated. Blowfish is a fast 64-bit block cipher; its successor Twofish uses 128-bit blocks. ChaCha20 is a stream cipher providing high performance on mobile devices, widely adopted in TLS and SSH.
-
-### Block Cipher Modes
-
-Electronic Codebook (ECB) encrypts each block independently, producing identical ciphertext for identical plaintext blocks, leaking pattern information. Cipher Block Chaining (CBC) XORs each plaintext block with the previous ciphertext block before encryption, requiring an initialisation vector (IV). Cipher Feedback (CFB) and Output Feedback (OFB) convert a block cipher into a stream cipher. Counter (CTR) mode encrypts incrementing counter values, enabling parallel encryption and decryption. Galois Counter Mode (GCM) combines CTR mode with authentication, providing both confidentiality and integrity.
+In symmetric-key cryptography, a single shared secret key is used for both encryption and decryption.
+- **Characteristics:** Fast and computationally efficient. Ideal for bulk data encryption.
+- **Challenge:** The key must be securely shared between parties before communication can begin (the key distribution problem).
+- **Common Algorithms:** AES (Advanced Encryption Standard), ChaCha20, DES (obsolete).
 
 ### Asymmetric Encryption
+Asymmetric-key cryptography uses a pair of mathematically related keys: a **public key** (shared with everyone) and a **private key** (kept secret).
+- **Mechanism:** Data encrypted with the public key can only be decrypted with the corresponding private key, and vice versa.
+- **Purpose:** Solves the key distribution problem and provides a basis for digital signatures.
+- **Common Algorithms:** RSA, Diffie-Hellman, Elliptic Curve Cryptography (ECC).
 
-Asymmetric encryption uses a public-private key pair. RSA security relies on the computational difficulty of factoring large semiprime numbers. Typical key sizes range from 2048 to 4096 bits. Elliptic Curve Cryptography (ECC) provides equivalent security with significantly smaller keys, based on the elliptic curve discrete logarithm problem. The Diffie-Hellman key exchange enables two parties to establish a shared secret over an insecure channel. Elliptic Curve Diffie-Hellman (ECDH) provides the same functionality with ECC efficiency.
-
-### Hash Functions
-
-Cryptographic hash functions map arbitrary-length input to fixed-length output with three critical properties: preimage resistance (given a hash, finding any input that produces it is infeasible), second preimage resistance (given an input, finding a different input with the same hash is infeasible), and collision resistance (finding any two inputs with the same hash is infeasible). SHA-256 and SHA-3 are current standards. MD5 produces 128-bit hashes and is collision-broken; it must not be used for security. SHA-1 (160-bit) is deprecated due to demonstrated collision attacks.
+### Cryptographic Hash Functions
+A hash function takes an input of any size and produces a fixed-size output (digest).
+- **Properties:**
+    1.  **Deterministic:** Same input always produces the same output.
+    2.  **Pre-image Resistance:** Computationally infeasible to reverse the hash to find the original input.
+    3.  **Collision Resistance:** Computationally infeasible to find two different inputs that produce the same hash output.
+- **Common Algorithms:** SHA-256, SHA-3, Blake2.
 
 ### Digital Signatures
+A digital signature provides authentication, integrity, and non-repudiation.
+1.  The sender hashes the message.
+2.  The sender encrypts the hash with their **private key** to create the signature.
+3.  The recipient decrypts the signature with the sender's **public key** to retrieve the hash.
+4.  The recipient hashes the received message and compares it to the decrypted hash. If they match, the signature is valid.
 
-Digital signatures provide authentication, integrity, and non-repudiation. The signer hashes the message and encrypts the hash with their private key. The verifier decrypts the hash with the signer's public key and compares it to a freshly computed hash. Standards include RSA-PSS, ECDSA, and EdDSA (Ed25519).
+### Public Key Infrastructure (PKI)
+PKI is a system of hardware, software, people, and policies used to manage digital certificates.
+- **Certificate Authority (CA):** A trusted third party that issues digital certificates.
+- **Digital Certificate:** Binds a public key to an identity (using the X.509 standard).
+- **Registration Authority (RA):** Verifies the identity of entities requesting certificates.
 
-### Public Key Infrastructure
-
-A PKI binds public keys to identities through certificates. X.509 certificates contain the subject identity, public key, issuer identity, validity period, and digital signature. Certificate Authorities (CAs) issue certificates after verifying identity. A certificate chain traces from an end-entity certificate through intermediate CAs to a trusted root CA. Certificate Revocation Lists (CRLs) and the Online Certificate Status Protocol (OCSP) provide revocation status.
-
-### TLS Protocol
-
-Transport Layer Security (TLS) provides authenticated, encrypted communication. The TLS handshake begins with a ClientHello specifying supported cipher suites and TLS version. The server responds with its certificate and selects parameters. For key exchange, the client generates a pre-master secret, encrypts it with the server's public key (RSA key exchange), or both parties contribute to key agreement via Diffie-Hellman (preferred). Certificate verification confirms the server's identity. Finished messages confirm the handshake integrity. TLS 1.3 reduces handshake round trips to one and removes insecure options.
-
-### Key Management
-
-Key management encompasses generation, distribution, storage, rotation, and destruction. Keys must be generated using cryptographically secure random number generators. Hardware Security Modules (HSMs) and Trusted Platform Modules (TPMs) provide tamper-resistant key storage. Key rotation limits exposure from key compromise. Key destruction must render the key irrecoverable, accomplished through cryptographic erase or physical destruction.
-
-### PGP and GPG
-
-Pretty Good Privacy (PGP) and its open implementation GNU Privacy Guard (GPG) provide email and file encryption. The Web of Trust model allows users to sign each other's keys, creating a decentralised trust network. GPG operations include key generation (`--gen-key`), encryption (`--encrypt`), signing (`--sign`), and verification (`--verify`).
+---
 
 ## Examples
 
-### AES-CBC vs AES-GCM
+### Example 1: Symmetric Encryption with Python (AES)
+Using the `cryptography` library to encrypt a message:
+```python
+from cryptography.fernet import Fernet
 
-AES-CBC with HMAC provides confidentiality and integrity but requires two separate operations and careful IV management. AES-GCM provides both in a single mode, is faster, and is the recommended choice for TLS and most modern applications. CBC is vulnerable to padding oracle attacks if error messages leak padding validity.
+# Generate a key
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
 
-### TLS 1.3 Handshake
+# Encrypt a message
+message = b"Secret university data"
+cipher_text = cipher_suite.encrypt(message)
+print(f"Encrypted: {cipher_text}")
 
-The TLS 1.3 handshake completes in one round trip. The client sends a ClientHello with key share (from ECDHE). The server responds with ServerHello, its certificate, certificate verification, and finished message. The client sends finished message. All handshake messages after ServerHello are encrypted, protecting certificate privacy.
+# Decrypt the message
+plain_text = cipher_suite.decrypt(cipher_text)
+print(f"Decrypted: {plain_text.decode()}")
+```
+*Demonstrates the use of a single shared key for both operations.*
 
-### GPG Encryption
+### Example 2: Hashing for File Integrity
+Verifying that a downloaded file has not been tampered with:
+```bash
+# Calculate the SHA-256 hash of a file
+sha256sum software_update.tar.gz
+# Output: a1b2c3d4e5f6g7h8... software_update.tar.gz
 
-To encrypt a file for recipient: `gpg --encrypt --recipient alice@example.com document.pdf`. To decrypt: `gpg --decrypt document.pdf.gpg`. To sign: `gpg --sign document.pdf`. To verify: `gpg --verify document.pdf.sig`.
+# Compare this output with the hash provided on the official website.
+```
+*Demonstrates how hashes can be used to detect even a single-bit change in a large file.*
+
+---
 
 ## Summary
 
-Cryptography is the engineering of secure communication in the presence of adversaries. Symmetric ciphers provide performance; asymmetric ciphers enable key distribution. Hash functions ensure integrity; digital signatures provide non-repudiation. PKI and TLS enable secure communications across the internet. Key management is often the most vulnerable component in practice. Subsequent chapters will apply these primitives to network security, web security, and beyond.
+- Symmetric encryption is fast but requires secure key sharing; Asymmetric encryption uses public/private keys for secure exchange and signatures.
+- Hash functions provide a "fingerprint" of data, essential for verifying integrity.
+- Digital signatures use asymmetric encryption to ensure authenticity and non-repudiation.
+- PKI provides the trust framework necessary for global secure communication (like the web's HTTPS).
+- Modern security protocols (like TLS) often combine symmetric and asymmetric encryption to achieve both speed and security.
+
+---
 
 ## Exercises
 
 ### Review Questions
-
-1. Why is ECB mode considered dangerous for encrypting structured data? Provide a visual example.
-2. Compare RSA-2048 and ECC-256 in terms of security level, computational cost, and key size.
-3. Explain why MD5 is unsuitable for digital signatures but may still be acceptable for non-security checksums. Reference specific attacks.
-4. Describe the role of the Certificate Authority in the PKI model. What happens if a root CA is compromised?
-5. Differentiate between preimage resistance and collision resistance. Which property is more relevant for password storage?
+1. Compare and contrast symmetric and asymmetric encryption in terms of speed and key management.
+2. What are the three essential properties of a cryptographic hash function?
+3. How does a digital signature provide non-repudiation?
+4. What is the role of a Certificate Authority (CA) in a PKI?
 
 ### Application Problems
-
-1. Using OpenSSL, generate an RSA key pair, create a self-signed certificate, and configure a TLS listener on port 443. Verify the connection with `openssl s_client`.
-2. Encrypt a file with AES-256-GCM using GPG. Verify that tampering with the ciphertext causes decryption to fail. Document the commands and observations.
-3. Analyse the certificate chain of any HTTPS website. Identify the root CA, intermediate CAs, and certificate properties including validity period, key usage, and signature algorithm.
+1. Explain the step-by-step process of how Alice can send an encrypted message to Bob that only Bob can read, using asymmetric cryptography.
+2. Calculate the SHA-256 hash of the string "CyberSecurity" using a tool or programming language of your choice.
+3. If an attacker manages to find a collision in a hash function used for digital signatures, what type of attack can they perform?
 
 ### Challenge Problem
-
-Design a secure messaging protocol for a two-party chat application. Specify the cryptographic primitives for encryption, authentication, and key exchange. Address forward secrecy (compromise of long-term keys does not compromise past sessions) and deniability (messages are not digitally attributable to the sender). Implement a proof-of-concept in Python using the `cryptography` library, demonstrating key agreement, message encryption, and verification.
+1. Research and explain the "Diffie-Hellman Key Exchange" algorithm. Show mathematically (using modular arithmetic) how two parties can arrive at a shared secret over an insecure channel without ever transmitting the secret itself.

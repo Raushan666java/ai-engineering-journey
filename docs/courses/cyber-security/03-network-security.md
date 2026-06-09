@@ -1,85 +1,102 @@
-# Network Security
+# Chapter 3: Network Security
+
+---
 
 ## Learning Objectives
 
-After completing this chapter, students will be able to differentiate firewall architectures and select appropriate types for network segments, configure intrusion detection and prevention systems, establish site-to-site and remote-access VPNs, design network segmentation schemes using VLANs and DMZs, implement network access control with 802.1X, secure wireless networks with enterprise-grade authentication, deploy network monitoring tools, and design honeypot-based deception systems.
+- Identify common security threats at different layers of the OSI model.
+- Compare various firewall architectures, including packet filtering and stateful inspection.
+- Explain the functionality and differences between Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS).
+- Understand the mechanisms of Virtual Private Networks (VPNs) and secure tunneling protocols.
+- Describe the principles of wireless security and common vulnerabilities in Wi-Fi networks.
+
+---
 
 ## Theory
 
+### The OSI Model and Security
+Security must be addressed at multiple layers of the Open Systems Interconnection (OSI) model:
+- **Layer 2 (Data Link):** MAC flooding, ARP spoofing, VLAN hopping.
+- **Layer 3 (Network):** IP spoofing, ICMP attacks (Ping of Death), routing protocol attacks.
+- **Layer 4 (Transport):** SYN flooding (TCP), port scanning.
+- **Layer 7 (Application):** HTTP attacks, DNS poisoning, SMTP spoofing.
+
 ### Firewalls
+A firewall is a network security device that monitors and filters incoming and outgoing network traffic based on an organization's previously established security policies.
+- **Packet Filtering:** Examines individual packets in isolation based on IP addresses and port numbers (stateless).
+- **Stateful Inspection:** Tracks the state of active connections and makes decisions based on the context of the entire session.
+- **Next-Generation Firewalls (NGFW):** Combines traditional firewalling with additional features like deep packet inspection (DPI), application-level filtering, and encrypted traffic analysis.
 
-Packet-filtering firewalls inspect packet headers against rules based on source and destination IP addresses, ports, and protocols at the network layer. They are fast but lack application-layer awareness. Stateful firewalls maintain connection state tables, allowing return traffic for established connections while blocking unsolicited packets. Application gateways (proxies) terminate and re-establish connections, inspecting application-layer payload. Next-Generation Firewalls (NGFWs) integrate intrusion prevention, TLS inspection, identity awareness, and application identification into a single platform.
+### IDS and IPS
+Systems designed to detect and respond to malicious activity:
+- **Intrusion Detection System (IDS):** A passive system that monitors network traffic or host activity for signs of unauthorized access or policy violations. It generates alerts but does not block traffic.
+- **Intrusion Prevention System (IPS):** An active system that sits in-line with network traffic. It can automatically block or drop traffic identified as malicious.
+- **Detection Methods:**
+    - **Signature-Based:** Matches traffic against a database of known attack patterns.
+    - **Anomaly-Based:** Establishes a baseline of "normal" behavior and flags significant deviations.
 
-### Intrusion Detection and Prevention
-
-Intrusion Detection Systems (IDS) monitor network traffic and generate alerts without blocking. Intrusion Prevention Systems (IPS) are inline and can drop malicious traffic. Signature-based detection matches traffic against known attack patterns, producing few false positives but missing novel attacks. Anomaly-based detection establishes a baseline of normal behaviour and flags deviations, detecting unknown attacks but generating more false positives. Snort is an open-source IDS/IPS using rule-based detection. Suricata is a multi-threaded successor supporting HTTP, TLS, and file inspection.
-
-### Virtual Private Networks
-
-VPNs create encrypted tunnels over untrusted networks. IPSec operates at the network layer in transport mode (protecting payload only) or tunnel mode (encapsulating entire packets). IKEv2 handles key exchange. SSL/TLS VPNs operate at the application layer, accessible through a web browser without dedicated client software. WireGuard is a modern VPN protocol using state-of-the-art cryptography (Curve25519, ChaCha20, Poly1305, BLAKE2s) with a minimal codebase of approximately 4,000 lines.
-
-### Network Segmentation
-
-Segmentation limits lateral movement by isolating network zones. Virtual LANs (VLANs) segment broadcast domains logically, with inter-VLAN routing controlled by a firewall. Demilitarised Zones (DMZs) host public-facing servers with strict access controls from both internal and external networks. Micro-segmentation extends segmentation to the workload level, often implemented through software-defined networking.
-
-### Network Access Control
-
-NAC ensures that only compliant devices gain network access. 802.1X is a port-based authentication standard. The supplicant (client) authenticates to an authenticator (switch or wireless access point), which forwards credentials to an authentication server (RADIUS). Upon successful authentication, the port is opened, and the device is placed on the appropriate VLAN. MAB (MAC Authentication Bypass) provides fallback for devices that do not support 802.1X.
-
-### Port Security and MAC Filtering
-
-Port security limits the number of MAC addresses per switch port, preventing CAM table overflow attacks and rogue device connections. Violations can be configured to shut down the port, restrict traffic, or generate an alert. Static MAC filtering is trivial to bypass through MAC spoofing and provides minimal security in isolation.
+### Virtual Private Networks (VPNs)
+VPNs create a secure, encrypted "tunnel" over an untrusted network (like the internet).
+- **Encryption:** Ensures confidentiality of the data in transit.
+- **Authentication:** Verifies the identity of the remote user or site.
+- **Protocols:**
+    - **IPsec (Internet Protocol Security):** Operates at Layer 3; commonly used for site-to-site VPNs.
+    - **SSL/TLS (OpenVPN, WireGuard):** Operates at higher layers; flexible for remote access.
 
 ### Wireless Security
+Wi-Fi networks are inherently vulnerable because signals travel through open space.
+- **WPA2 (Wi-Fi Protected Access 2):** Uses CCMP/AES for encryption. Vulnerable to KRACK attacks.
+- **WPA3:** Improves security with SAE (Simultaneous Authentication of Equals) to protect against offline brute-force attacks.
+- **Common Threats:** Rogue access points, evil twin attacks, packet sniffing.
 
-WPA3 replaces WPA2, replacing the Pre-Shared Key (PSK) model with Simultaneous Authentication of Equals (SAE), which provides forward secrecy and resists offline dictionary attacks. Enterprise deployments use 802.1X with EAP methods (PEAP, EAP-TLS, EAP-TTLS) for per-user authentication. The RADIUS server centralises authentication and can enforce policies such as device compliance checks and VLAN assignment.
-
-### Network Monitoring
-
-Monitoring provides visibility for incident detection and capacity planning. SNMP (Simple Network Management Protocol) collects device metrics. NetFlow, sFlow, and IPFIX provide flow-level traffic analysis. PCAP-based analysis with tools such as tcpdump and Wireshark enables deep packet inspection. Zeek (formerly Bro) is a network analysis framework that generates connection, protocol, and file logs for threat detection.
-
-### Honeypots
-
-Honeypots are decoy systems designed to attract attackers, providing early warning and intelligence on attacker techniques. Low-interaction honeypots emulate services with limited functionality. High-interaction honeypots run full operating systems and applications, capturing detailed attacker activity. Honeynets are networks of honeypots. Cowrie is a medium-interaction SSH and Telnet honeypot. T-Pot is a platform that bundles multiple honeypot types.
+---
 
 ## Examples
 
-### Firewall Rule Design
+### Example 1: Configuring a Simple Packet Filter (iptables)
+Blocking all incoming SSH traffic from a specific IP address on a Linux system:
+```bash
+# Append a rule to the INPUT chain to drop TCP traffic on port 22 from 192.168.1.50
+sudo iptables -A INPUT -p tcp -s 192.168.1.50 --dport 22 -j DROP
 
-A perimeter firewall should deny all inbound traffic by default, permitting only necessary services. Example rules: permit HTTP/HTTPS to web server (10.0.1.10:80/443), permit SMTP to mail server (10.0.1.20:25), permit DNS queries to DNS server (10.0.1.30:53), deny all other inbound traffic. Outbound traffic may be restricted to prevent data exfiltration and C2 communication.
+# List current rules
+sudo iptables -L -v
+```
+*Demonstrates Layer 3/4 filtering based on source IP and destination port.*
 
-### Snort Rule Syntax
+### Example 2: Analyzing a SYN Flood Attack
+Using `tcpdump` to observe a flood of TCP SYN packets without corresponding ACKs:
+```bash
+# Capture 100 packets on interface eth0, looking for TCP SYN flags
+sudo tcpdump -i eth0 "tcp[tcpflags] & (tcp-syn) != 0" -c 100
+```
+*Expected Output:* A high volume of SYN packets from various (often spoofed) source IPs directed at a single target port in a very short duration.
+*Demonstrates a Layer 4 Denial of Service attack.*
 
-A Snort rule detecting SQL injection attempts: `alert tcp $EXTERNAL_NET any -> $HTTP_SERVERS $HTTP_PORTS (msg:"SQL Injection - UNION SELECT"; content:"UNION"; nocase; content:"SELECT"; nocase; distance:1; within:10; sid:1000001; rev:1;)`. This rule alerts when UNION and SELECT appear in proximity within HTTP traffic to web servers.
-
-### WireGuard Configuration
-
-WireGuard configuration consists of a simple INI-style file. Interface section contains the private key and listening port. Peer section contains the public key, allowed IPs (tunnel subnets), and endpoint (public IP and port). Key exchange occurs through out-of-band sharing or dynamic QR codes.
-
-### VLAN Segmentation Example
-
-A typical segmented network includes VLAN 10 (management, 10.0.10.0/24), VLAN 20 (servers, 10.0.20.0/24), VLAN 30 (user workstations, 10.0.30.0/24), VLAN 40 (DMZ, 10.0.40.0/24), and VLAN 50 (guest wireless, 10.0.50.0/24). Inter-VLAN routing policies permit traffic from VLAN 30 to VLAN 20 on ports 80/443, allow DMZ to internet, and block VLAN 50 from all internal subnets.
+---
 
 ## Summary
 
-Network security controls form the perimeter defence layer of an organisation. Firewalls filter traffic, IDS/IPS detect and prevent attacks, VPNs secure remote access, segmentation limits breach propagation, NAC validates device posture, and wireless security extends controls to radio-frequency environments. Monitoring and honeypots provide visibility and deception. These controls must be layered, consistently configured, and regularly audited to remain effective.
+- Network security requires a multi-layered approach corresponding to the OSI model.
+- Firewalls act as the first line of defense, with stateful inspection providing more security than simple packet filtering.
+- IDS/IPS systems provide visibility and automated response to network threats.
+- VPNs are essential for securing remote access and interconnecting sites over public infrastructure.
+- Wireless security must account for the broadcast nature of radio signals and use strong encryption like WPA3.
+
+---
 
 ## Exercises
 
 ### Review Questions
-
-1. Compare packet filtering, stateful inspection, and application-level gateway firewalls. When is each appropriate?
-2. Explain the differences between signature-based and anomaly-based intrusion detection. Why do many organisations use both?
-3. Describe the 802.1X authentication process. What roles do the supplicant, authenticator, and authentication server play?
-4. How does WPA3 SAE improve upon WPA2 PSK? What attack does it specifically prevent?
-5. What information can a honeypot capture that a firewall or IDS cannot?
+1. At which OSI layer does an IPsec VPN primarily operate?
+2. Explain the difference between signature-based and anomaly-based intrusion detection.
+3. Why is stateful inspection more secure than stateless packet filtering?
+4. What is an "Evil Twin" attack in the context of wireless security?
 
 ### Application Problems
-
-1. Using VirtualBox, create a network with three VMs. Configure iptables on one VM as a stateful firewall. Verify connection tracking, and demonstrate that unsolicited inbound packets are dropped.
-2. Install Snort on a Linux machine. Write a custom rule detecting SYN flood attempts. Test by generating a SYN flood with hping3 and verify the alert.
-3. Configure a site-to-site WireGuard VPN between two Linux VMs. Verify that traffic between two private subnets is encrypted. Capture traffic with tcpdump and confirm the payload is not readable.
+1. Design a firewall rule set for a small company that allows internal users to browse the web (HTTP/HTTPS) and receive email (IMAP/SMTP), but blocks all incoming traffic from the internet to the internal network.
+2. An organization is experiencing a sudden spike in traffic that looks like normal web requests but is coming from thousands of different IP addresses. Is a signature-based IDS likely to catch this? Why or why not?
+3. What are the security implications of using a public, unencrypted Wi-Fi hotspot for banking? List at least three specific risks.
 
 ### Challenge Problem
-
-Design a complete network architecture for a small enterprise with 200 employees, a public web application, remote worker access, and PCI-DSS compliance requirements. Specify firewall placement and rule sets, VLAN layout, IDS/IPS deployment, VPN configuration for remote access and site-to-site, wireless security architecture, NAC implementation, and monitoring strategy. Defend each design decision with reference to security principles from Chapter 1.
+1. Research the "DNS Cache Poisoning" (Kaminsky) attack. Explain how it works at the network protocol level and why it was so significant. Propose a modern protocol-level solution (e.g., DNSSEC) and explain how it mitigates the threat.

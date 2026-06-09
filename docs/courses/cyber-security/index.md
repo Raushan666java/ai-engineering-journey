@@ -1,42 +1,55 @@
-# Cyber Security — Complete University Textbook
+# CS 410: Comprehensive Cyber Security
 
-## Course Overview
+**Course Overview:** A technical and theoretical exploration of modern cyber security. Students will master cryptographic foundations, network defense, system hardening, web application security, and the methodologies used in digital forensics and ethical hacking.
 
-This textbook provides a comprehensive treatment of modern cyber security, spanning foundational principles through advanced topics in offensive and defensive operations. The material is organised across sixteen chapters that progress from theoretical underpinnings to practical application, preparing students for professional roles in security engineering, penetration testing, security operations, digital forensics, and governance.
+**Prerequisites:** Computer Networks, Operating Systems, Discrete Mathematics.
 
-## Scope and Prerequisites
+**Core Text:** Stallings, Lawrie. *Computer Security: Principles and Practice*, Fifth Edition. Pearson, 2022.
 
-Students should possess a working knowledge of operating systems (Windows, Linux), computer networking (TCP/IP, OSI model), and basic programming concepts. Each chapter builds upon preceding material; however, instructors may re-sequence chapters to accommodate course structure.
+---
 
-## Learning Approach
+## Course Philosophy
 
-Each chapter presents theoretical foundations followed by concrete examples using industry-standard tools. Exercises progress from review questions through application problems to open-ended challenge problems suitable for laboratory environments.
+In an era of ubiquitous connectivity, security is not a feature but a fundamental requirement of system design. This course approaches cyber security through the lens of the CIA triad, emphasizing a multi-layered defense-in-depth strategy. Each chapter combines rigorous theoretical foundations with practical examples, code implementations, and exercises that challenge students to think like both defenders and adversaries.
+
+---
 
 ## Chapter List
 
-| # | Chapter | Description |
-|---|---------|-------------|
-| 1 | Security Fundamentals | CIA triad, AAA, security principles, risk management, threat modelling, security policies |
-| 2 | Cryptography | Symmetric and asymmetric encryption, hash functions, digital signatures, PKI, TLS |
-| 3 | Network Security | Firewalls, IDS/IPS, VPNs, network segmentation, wireless security, network monitoring |
-| 4 | Web Security | OWASP Top 10, SQL injection, XSS, CSRF, SSRF, XXE, security headers |
-| 5 | Malware Analysis | Malware types, static and dynamic analysis, reverse engineering, anti-analysis techniques |
-| 6 | Penetration Testing | PTES methodology, reconnaissance, scanning, exploitation, post-exploitation, reporting |
-| 7 | Security Operations | SOC tiers, SIEM, log management, SOAR, threat hunting, alert triage |
-| 8 | Digital Forensics | Forensic methodology, volatile data, disk forensics, memory analysis, chain of custody |
-| 9 | Identity and Access Management | Authentication, MFA, SSO, LDAP, Active Directory, PAM, RBAC, identity lifecycle |
-| 10 | Cloud Security | Shared responsibility, AWS, Azure, GCP security, CASB, CSPM, CWPP |
-| 11 | Mobile Security | Platform threats, Android and iOS security, mobile app pentesting, OWASP MASVS |
-| 12 | IoT Security | IoT architecture, protocols, firmware analysis, OWASP IoT Top 10, embedded security |
-| 13 | Incident Response | NIST SP 800-61, SANS PICERL, detection, containment, eradication, recovery, postmortem |
-| 14 | Compliance and Governance | GDPR, HIPAA, PCI-DSS, ISO 27001, SOC 2, NIST CSF, data protection, audit |
-| 15 | Ethical Hacking | Legal frameworks, OSINT, vulnerability assessment, exploitation, social engineering, certifications |
-| 16 | Security Trends | AI security, zero trust, SASE, XDR, threat intelligence, supply chain, post-quantum cryptography |
+| # | Title | Topics |
+|---|-------|--------|
+| 1 | **Security Fundamentals** | CIA triad, AAA, security principles, threat modeling, risk management |
+| 2 | **Cryptography** | Symmetric/asymmetric encryption, hashing, digital signatures, PKI, TLS |
+| 3 | **Network Security** | Firewall architectures, IDS/IPS, VPNs, protocol security (IPSec, SSH), wireless security |
+| 4 | **System & Software Security** | OS hardening, buffer overflows, malware types, secure software development lifecycle |
+| 5 | **Web Security** | OWASP Top 10, XSS, SQL injection, CSRF, Secure headers, HTTPS |
+| 6 | **Identity & Access Management** | Authentication factors, RBAC, ABAC, OAuth 2.0, OpenID Connect, MFA |
+| 7 | **Cloud & Mobile Security** | Virtualization security, Shared Responsibility Model, Mobile OS sandboxing, App permissions |
+| 8 | **Forensics & Incident Response** | Digital evidence, chain of custody, memory forensics, incident lifecycle, recovery |
+| 9 | **Governance, Risk & Compliance** | Security frameworks (NIST, ISO), GDPR, HIPAA, policy development, auditing |
+| 10 | **Ethical Hacking & Pentesting** | Reconnaissance, scanning, exploitation, post-exploitation, reporting |
 
-## Recommended Reading
+---
 
-Each chapter references primary sources including RFCs, NIST Special Publications, OWASP documentation, and seminal texts. Students should consult these sources alongside this textbook for deeper technical detail.
+## How to Read This Textbook
 
-## Laboratory Environment
+Each chapter follows a consistent structure:
 
-Many exercises require a controlled laboratory environment. The recommended configuration uses virtual machines (VirtualBox or VMware) running Kali Linux as the attack platform and Metasploitable, DVWA, or custom-configured targets. Cloud-based labs are suitable for chapters covering AWS, Azure, and GCP security.
+1. **Learning Objectives** — Concrete skills gained in the chapter.
+2. **Theory** — In-depth technical explanation of concepts.
+3. **Examples** — Real-world scenarios and code-based implementations.
+4. **Summary** — Key takeaways for quick review.
+5. **Exercises** — Three-tiered problem sets: Review, Application, and Challenge.
+
+---
+
+## Notation & Common Terms
+
+| Term | Definition |
+|------|------------|
+| **CVE** | Common Vulnerabilities and Exposures |
+| **CVSS** | Common Vulnerability Scoring System |
+| **APT** | Advanced Persistent Threat |
+| **PoC** | Proof of Concept |
+| **Zero-Day** | A vulnerability unknown to the software vendor |
+| **Payload** | The part of transmitted data that is the intended message/malicious action |

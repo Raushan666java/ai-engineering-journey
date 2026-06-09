@@ -1889,6 +1889,128 @@ tr.today-highlight td {
   .md-typeset { font-size: 16px !important; }
 }
 
+/* === NAV SECTION HEADERS — Year-group labels === */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  font-family: var(--font-display) !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.06em !important;
+  color: var(--ink-mute) !important;
+  text-transform: uppercase !important;
+  padding: 8px 12px !important;
+  margin: 16px 0 4px 0 !important;
+  border-bottom: 1px solid var(--rule-soft) !important;
+  pointer-events: none !important;
+}
+
+.md-nav--primary .md-nav__item--section > .md-nav__link:hover {
+  color: var(--ink-mute) !important;
+}
+
+/* Indent course names under section headers */
+.md-nav--primary .md-nav__item--section .md-nav__list {
+  padding-left: 8px !important;
+}
+
+/* Active course name bolder + border */
+.md-nav--primary .md-nav__item--active > .md-nav__link {
+  border-left: 2px solid var(--ink) !important;
+  padding-left: 10px !important;
+  color: var(--ink) !important;
+  font-weight: 700 !important;
+}
+
+/* === CONTENT AREA POLISH === */
+.md-content {
+  padding: 0 24px !important;
+}
+
+.md-content__inner {
+  max-width: 800px !important;
+  margin: 0 auto !important;
+}
+
+.md-content__inner > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Better table alignment */
+.md-typeset table:not([class]) {
+  box-shadow: none !important;
+  border: 1px solid var(--ink) !important;
+  border-radius: 0 !important;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+}
+
+.md-typeset table:not([class]) td {
+  border-bottom: 1px solid var(--rule-soft) !important;
+}
+
+/* === BREADCRUMB / NAV PATH === */
+.md-path {
+  font-family: var(--font-mono) !important;
+  font-size: 0.65rem !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+}
+
+.md-path .md-path__link {
+  color: var(--ink-mute) !important;
+}
+
+.md-path .md-path__item--active .md-path__link {
+  color: var(--ink) !important;
+}
+
+/* === HOME PAGE GRID CARDS — tighter layout === */
+.md-typeset .grid {
+  gap: 20px !important;
+}
+
+.md-typeset .grid.cards > ol > li,
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > div {
+  padding: 20px 24px !important;
+}
+
+.md-typeset .grid.cards > ol > li > p:first-child,
+.md-typeset .grid.cards > ul > li > p:first-child,
+.md-typeset .grid.cards > div > p:first-child {
+  font-family: var(--font-display) !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 0.03em !important;
+  margin-bottom: 8px !important;
+}
+
+/* Tighten list spacing in cards */
+.md-typeset .grid.cards > ol > li li,
+.md-typeset .grid.cards > ul > li li {
+  margin: 2px 0 !important;
+  font-size: 0.9rem !important;
+}
+
+.md-typeset .grid.cards > ol > li a,
+.md-typeset .grid.cards > ul > li a,
+.md-typeset .grid.cards > div a {
+  color: var(--ink) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--rule-soft) !important;
+  transition: border-color 0.15s !important;
+}
+
+.md-typeset .grid.cards > ol > li a:hover,
+.md-typeset .grid.cards > ul > li a:hover,
+.md-typeset .grid.cards > div a:hover {
+  border-bottom-color: var(--ink) !important;
+}
+
 /* === PRINT === */
 @media print {
   .md-header,

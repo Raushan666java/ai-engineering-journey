@@ -1,0 +1,488 @@
+# Chapter 18: The Python Standard Library
+
+## Learning Objectives
+
+By the end of this chapter, students will be able to:
+- Use operating-system interfaces with os, sys, and shutil
+- Navigate the filesystem with pathlib
+- Work with dates and times using datetime and time
+- Write regular expressions with re
+- Process structured data with json and csv
+- Use collections, itertools, and functools effectively
+- Apply math, random, and statistics modules
+- Add type safety with typing
+- Write command-line interfaces with argparse
+- Implement logging in applications
+
+## 18.1 os — Operating System Interface
+
+```python
+import os
+
+# Current working directory
+print(os.getcwd())
+
+# Listing directory
+entries = os.listdir(".")
+print(entries[:5])
+
+# Environment variables
+print(os.environ.get("HOME"))
+print(os.environ.get("PATH")[:50])
+
+# Path operations (legacy — prefer pathlib)
+print(os.path.join("dir", "subdir", "file.txt"))
+print(os.path.expanduser("~/documents"))
+print(os.path.exists("test.txt"))
+print(os.path.isfile("test.txt"))
+print(os.path.isdir("test.txt"))
+print(os.path.getsize("test.txt"))
+
+# Process management
+pid = os.getpid()
+print(f"Current PID: {pid}")
+
+# Executing shell commands
+os.system("echo Hello from os")  # simple, non-capturing
+
+# Walking directories
+for root, dirs, files in os.walk("."):
+    for file in files:
+        if file.endswith(".py"):
+            print(os.path.join(root, file))
+```
+
+## 18.2 sys — System-Specific Parameters
+
+```python
+import sys
+
+# Command-line arguments
+print(f"Script: {sys.argv[0]}")
+print(f"Arguments: {sys.argv[1:]}")
+
+# Python version
+print(f"Python {sys.version}")
+print(f"Version info: {sys.version_info}")
+
+# Module search path
+for path in sys.path:
+    print(path)
+
+# Standard streams
+sys.stdout.write("Using stdout directly\n")
+# sys.stderr.write("Error message\n")
+
+# Exit
+sys.exit(0)  # 0 = success, non-zero = error
+```
+
+## 18.3 pathlib — Object-Oriented Filesystem
+
+Already covered in depth in Chapter 17 — here is a quick reference:
+
+```python
+from pathlib import Path
+
+p = Path("data/input.txt")
+content = p.read_text()
+p.write_text(content)
+for child in Path(".").iterdir():
+    print(child.name)
+for py_file in Path(".").rglob("*.py"):
+    pass
+```
+
+## 18.4 shutil — High-Level File Operations
+
+```python
+import shutil
+
+# Copy files
+shutil.copy("source.txt", "dest.txt")
+shutil.copy2("source.txt", "dest.txt")  # preserves metadata
+
+# Copy directory tree
+shutil.copytree("src_dir", "backup_dir")
+
+# Move/rename
+shutil.move("old.txt", "new.txt")
+
+# Remove directory tree
+shutil.rmtree("temp_dir")
+
+# Disk usage
+usage = shutil.disk_usage("/")
+print(f"Total: {usage.total // (1024**3)} GB")
+print(f"Free: {usage.free // (1024**3)} GB")
+
+# Archive creation
+shutil.make_archive("backup", "zip", "my_project")
+shutil.unpack_archive("backup.zip", "extracted")
+```
+
+## 18.5 datetime — Dates and Times
+
+```python
+from datetime import datetime, date, time, timedelta, timezone
+
+# Current date and time
+now = datetime.now()
+today = date.today()
+
+print(f"Now: {now}")
+print(f"Today: {today}")
+print(f"Year: {now.year}, Month: {now.month}, Day: {now.day}")
+print(f"Hour: {now.hour}, Minute: {now.minute}, Second: {now.second}")
+
+# Creating dates
+d = date(2025, 3, 15)
+dt = datetime(2025, 3, 15, 14, 30, 0)
+print(dt)  # 2025-03-15 14:30:00
+
+# Formatting
+print(dt.strftime("%Y-%m-%d %H:%M:%S"))   # 2025-03-15 14:30:00
+print(dt.strftime("%A, %B %d, %Y"))        # Saturday, March 15, 2025
+
+# Parsing
+parsed = datetime.strptime("2025-03-15", "%Y-%m-%d")
+print(parsed)  # 2025-03-15 00:00:00
+
+# Time deltas
+tomorrow = today + timedelta(days=1)
+yesterday = today - timedelta(days=1)
+next_week = today + timedelta(weeks=1)
+
+print(tomorrow - yesterday)  # 2 days, 0:00:00
+
+# Timezone awareness
+utc_now = datetime.now(timezone.utc)
+print(utc_now)
+```
+
+## 18.6 time — Low-Level Time Access
+
+```python
+import time
+
+# Timestamps
+print(time.time())       # seconds since epoch
+print(time.ctime())      # human-readable string
+
+# Sleeping
+print("Waiting...")
+time.sleep(0.5)
+print("Done!")
+
+# Performance timer (for benchmarking)
+start = time.perf_counter()
+sum(x ** 2 for x in range(1_000_000))
+elapsed = time.perf_counter() - start
+print(f"Took {elapsed:.4f}s")
+```
+
+## 18.7 re — Regular Expressions
+
+```python
+import re
+
+# Pattern matching
+pattern = r"\d+\.\d+"  # decimal numbers
+text = "Price: 29.99, Discount: 5.50, Code: ABC123"
+
+match = re.search(pattern, text)
+if match:
+    print(match.group())  # 29.99
+
+# Find all matches
+prices = re.findall(pattern, text)
+print(prices)  # ['29.99', '5.50']
+
+# Find all with groups
+pattern = r"(\w+): (\d+\.\d+)"
+matches = re.findall(pattern, text)
+print(matches)  # [('Price', '29.99'), ('Discount', '5.50')]
+
+# Substitution
+result = re.sub(r"\d+\.\d+", "***", text)
+print(result)  # Price: ***, Discount: ***, Code: ABC123
+
+# Splitting
+parts = re.split(r"[,:] ", text)
+print(parts)  # ['Price', '29.99', 'Discount', '5.50', 'Code', 'ABC123']
+
+# Compilation (for reuse)
+email_pattern = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
+text2 = "Contact: alice@example.com or bob@test.org"
+emails = email_pattern.findall(text2)
+print(emails)  # ['alice@example.com', 'bob@test.org']
+```
+
+### 18.7.1 Common Patterns
+
+```python
+# Email
+r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+
+# URL
+r"https?://[^\s/$.?#].[^\s]*"
+
+# IP address
+r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b"
+
+# Phone (US)
+r"\b\d{3}[-.]?\d{3}[-.]?\d{4}\b"
+
+# Date (YYYY-MM-DD)
+r"\b\d{4}-\d{2}-\d{2}\b"
+
+# HTML tags
+r"<[^>]+>"
+```
+
+## 18.8 json and csv
+
+Already covered in Chapter 17 — quick reference:
+
+```python
+import json
+import csv
+
+# JSON
+data = json.loads('{"key": "value"}')
+json_str = json.dumps(data, indent=2)
+
+with open("data.json") as f:
+    data = json.load(f)
+
+# CSV
+with open("data.csv", newline="") as f:
+    for row in csv.DictReader(f):
+        print(row)
+```
+
+## 18.9 collections
+
+```python
+from collections import defaultdict, Counter, OrderedDict, deque, ChainMap
+
+# defaultdict — already covered
+d = defaultdict(list)
+d["key"].append(1)
+
+# Counter — already covered
+c = Counter("mississippi")
+print(c.most_common(2))  # [('i', 4), ('s', 4)]
+
+# deque — double-ended queue
+queue = deque([1, 2, 3])
+queue.append(4)          # [1, 2, 3, 4]
+queue.appendleft(0)      # [0, 1, 2, 3, 4]
+queue.pop()              # 4
+queue.popleft()          # 0
+print(queue)             # [1, 2, 3]
+
+# ChainMap — combine multiple dictionaries
+defaults = {"theme": "light", "font": "Arial"}
+user_settings = {"theme": "dark"}
+settings = ChainMap(user_settings, defaults)
+print(settings["theme"])  # dark
+print(settings["font"])   # Arial
+```
+
+## 18.10 itertools
+
+Already covered in Chapter 16 — quick reference:
+
+```python
+from itertools import count, cycle, permutations, combinations, product, chain, groupby
+```
+
+## 18.11 functools
+
+```python
+from functools import partial, reduce, lru_cache, singledispatch
+
+# partial — already covered
+def multiply(a, b): return a * b
+double = partial(multiply, 2)
+
+# lru_cache — least recently used cache
+@lru_cache(maxsize=128)
+def expensive(n: int) -> int:
+    return n ** n
+
+# singledispatch — function overloading by type
+@singledispatch
+def format_item(item):
+    return str(item)
+
+@format_item.register
+def _(item: int) -> str:
+    return f"int({item})"
+
+@format_item.register
+def _(item: list) -> str:
+    return f"list({len(item)} items)"
+
+print(format_item(42))       # int(42)
+print(format_item([1, 2]))   # list(2 items)
+print(format_item("hello"))  # hello (default)
+```
+
+## 18.12 math, random, statistics
+
+```python
+import math
+import random
+import statistics
+
+# math
+print(math.pi)           # 3.14159...
+print(math.sqrt(16))     # 4.0
+print(math.floor(3.7))   # 3
+print(math.ceil(3.2))    # 4
+print(math.sin(math.pi / 2))  # 1.0
+print(math.gcd(12, 18))  # 6
+print(math.comb(5, 2))   # 10 (combinations count)
+print(math.factorial(5)) # 120
+print(math.log(100, 10)) # 2.0
+print(math.isfinite(float("inf")))  # False
+
+# random
+print(random.randint(1, 6))     # random dice roll
+print(random.choice(["a", "b", "c"]))  # random pick
+print(random.sample(range(100), 5))    # 5 unique samples
+items = [1, 2, 3, 4, 5]
+random.shuffle(items)
+print(items)
+random.seed(42)  # reproducible sequence
+
+# statistics
+data = [2, 3, 5, 7, 11, 13]
+print(statistics.mean(data))      # 6.833...
+print(statistics.median(data))    # 6.0
+print(statistics.stdev(data))     # 4.400...
+```
+
+## 18.13 typing
+
+```python
+from typing import List, Dict, Tuple, Optional, Union, Any, Callable, TypeVar, Generic
+
+# Basic annotations
+def process(items: list[int]) -> dict[str, int]:
+    return {str(i): i for i in items}
+
+# Optional
+def find_user(user_id: int) -> Optional[str]:
+    db = {1: "Alice", 2: "Bob"}
+    return db.get(user_id)  # Optional[str] → str or None
+
+# Union (or | in 3.10+)
+def parse(value: Union[int, str]) -> int | str:
+    if isinstance(value, int):
+        return value * 2
+    return value.upper()
+
+# Callable
+def apply(func: Callable[[int], int], value: int) -> int:
+    return func(value)
+
+# TypeVar and Generics
+T = TypeVar("T")
+
+def first(items: list[T]) -> T | None:
+    return items[0] if items else None
+
+print(first([1, 2, 3]))  # 1
+```
+
+## 18.14 argparse — Command-Line Arguments
+
+```python
+import argparse
+
+parser = argparse.ArgumentParser(
+    description="Process input files with optional verbose output.",
+)
+parser.add_argument("input", help="Input file path")
+parser.add_argument("output", help="Output file path")
+parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose output")
+parser.add_argument("--count", type=int, default=1, help="Number of times to process")
+parser.add_argument("--mode", choices=["fast", "accurate"], default="fast")
+
+args = parser.parse_args()
+
+if args.verbose:
+    print(f"Processing {args.input} -> {args.output} ({args.count} times, {args.mode} mode)")
+```
+
+Usage:
+
+```bash
+python script.py input.txt output.txt -v --count 5 --mode accurate
+```
+
+## 18.15 logging
+
+```python
+import logging
+
+# Configuration
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
+
+logger = logging.getLogger(__name__)
+
+# Logging levels (increasing severity)
+logger.debug("Detailed debugging information")
+logger.info("General operational information")
+logger.warning("Something unexpected but not critical")
+logger.error("A more serious problem")
+logger.critical("Program may be unable to continue")
+
+# Exception logging
+try:
+    1 / 0
+except ZeroDivisionError:
+    logger.exception("Division failed")  # includes traceback
+
+# File logging
+fh = logging.FileHandler("app.log")
+fh.setLevel(logging.DEBUG)
+logger.addHandler(fh)
+```
+
+## Summary
+
+- `os` and `sys` provide low-level system access; `pathlib` and `shutil` are higher-level.
+- `datetime` and `time` handle dates, times, and performance measurement.
+- `re` provides powerful text pattern matching.
+- `collections` extends built-in types; `itertools` provides iteration tools.
+- `functools` offers higher-order functions and caching.
+- `math`, `random`, `statistics` cover numerical operations.
+- `typing` enables static type checking.
+- `argparse` builds CLI interfaces; `logging` provides structured logging.
+
+## Exercises
+
+### Review Questions
+
+1. What is the advantage of `pathlib` over `os.path`?
+2. Why would you use `re.compile` instead of directly using `re.search`?
+3. What is the difference between `logging.info` and `logging.debug`?
+4. How does `functools.singledispatch` achieve function overloading?
+5. When would you use `argparse` over manually parsing `sys.argv`?
+
+### Application Problems
+
+1. Write a program that walks a directory tree, finds all files larger than 1 MB, groups them by extension using `collections.Counter`, and prints a report sorted by count descending. Use `pathlib` for paths.
+2. Implement a log parser that reads an Apache-style access log, extracts IP addresses using regex, counts requests per hour, and identifies the top 10 IP addresses. Use `collections.Counter` and `datetime`.
+3. Write a CLI tool using `argparse` that accepts a directory path, a file pattern (glob), and an output format (csv/json). It should scan the directory for matching files and output their metadata (name, size, modified time) in the chosen format.
+
+### Challenge Problem
+
+Build a simple HTTP request logger and inspector using `http.server` and `logging`. Create a custom HTTP handler that logs every request's method, path, headers, and response status. Parse query parameters with `urllib.parse` and log them separately. Support a `--port` and `--log-level` argument via argparse. Route `/stats` to return a JSON summary of recent requests (count by method, count by status code). Use `statistics` for response time metrics.

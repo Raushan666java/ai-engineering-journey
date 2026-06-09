@@ -1,7 +1,14 @@
 <div class="module-hero">
-💻 **Programming — Languages Ki Baap Baat**
-
-Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest skill hai. Java, JavaScript, Python bhi hai. Ye section tujhe batayega kya padhna hai aur resources kahan hain.
+  <div class="module-hero-icon">💻</div>
+  <div class="module-hero-body">
+    <h1>Programming — Languages Ki Baap Baat</h1>
+    <p>Placement mein 2-3 languages strong honi chahiye. PHP+Laravel teri strongest skill hai. Java, JavaScript, Python bhi hai. Ye section tujhe batayega kya padhna hai aur resources kahan hain.</p>
+    <div class="module-hero-meta">
+      <span>PHP + Laravel</span>
+      <span>JavaScript</span>
+      <span>Java · Python · C</span>
+    </div>
+  </div>
 </div>
 
 <div class="roadmap-path">

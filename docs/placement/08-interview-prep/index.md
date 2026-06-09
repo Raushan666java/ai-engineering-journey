@@ -1,14 +1,12 @@
-# Interview Prep — Placement Ki Final War
-
 <div class="module-hero">
-  <div class="hero-icon">🎯</div>
-  <div class="hero-content">
-    <h2>Technical + System Design + Behavioral — Ek Dam Tayaar</h2>
+  <div class="module-hero-icon">🎯</div>
+  <div class="module-hero-body">
+    <h1>Interview Prep — Placement Ki Final War</h1>
     <p>Ye section tujhe technical, system design aur behavioral interviews ke liye ready karega. 3-phase preparation: Foundation → Technical Deep Dive → Company-Specific.</p>
-    <div class="hero-meta">
-      <span class="tag tag-hot">500+ Problems</span>
-      <span class="tag tag-star">System Design</span>
-      <span class="tag tag-method">Behavioral STAR</span>
+    <div class="module-hero-meta">
+      <span>500+ Problems</span>
+      <span>System Design</span>
+      <span>Behavioral STAR</span>
     </div>
   </div>
 </div>
@@ -44,10 +42,8 @@
 
 <div class="phase-section">
   <div class="phase-header">
-    <span class="phase-num">01</span>
-    <div>
-      <h3>Technical Interviews — Foundation Building</h3>
-    </div>
+    <span class="phase-number">01</span>
+    <h2>Technical Interviews — Foundation Building</h2>
   </div>
   <div class="phase-body">
 
@@ -83,10 +79,8 @@
 
 <div class="phase-section">
   <div class="phase-header">
-    <span class="phase-num">02</span>
-    <div>
-      <h3>Technical Deep Dive</h3>
-    </div>
+    <span class="phase-number">02</span>
+    <h2>Technical Deep Dive</h2>
   </div>
   <div class="phase-body">
 
@@ -393,7 +387,12 @@ WHERE N = (SELECT COUNT(DISTINCT salary) FROM employees e2 WHERE e2.salary >= e1
   </div>
 </div>
 
-## System Design Interviews
+<div class="phase-section">
+  <div class="phase-header">
+    <span class="phase-number">03</span>
+    <h2>System Design Interviews</h2>
+  </div>
+  <div class="phase-body">
 
 Detailed in <code>docs/placement/10-system-design/</code>. Key topics:
 
@@ -433,7 +432,15 @@ From <code>10-System-design/</code>:
 6. Trade-offs — Consistency vs Availability, SQL vs NoSQL
 ```
 
-## Behavioral Interviews
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header">
+    <span class="phase-number">04</span>
+    <h2>Behavioral Interviews</h2>
+  </div>
+  <div class="phase-body">
 
 ### STAR Method
 
@@ -470,7 +477,15 @@ Prepare 3-4 stories — har story STAR format mein honi chahiye:
 
 **How to prepare**: Har story ko 2 versions mein ready rakho — 2-min detailed aur 30-sec crisp.
 
-## 🏢 FAANG aur Big Tech — Company-Specific Deep Dive
+  </div>
+</div>
+
+<div class="phase-section">
+  <div class="phase-header">
+    <span class="phase-number">05</span>
+    <h2>FAANG aur Big Tech — Company-Specific Deep Dive</h2>
+  </div>
+  <div class="phase-body">
 
 <div class="tip-banner">
   <span class="tip-badge">🚀 BIG TECH MINDSET</span>
@@ -687,6 +702,9 @@ Google "Googleyness" round mein ye check karte hain:
 4. **Amazon LPs in negotiation** — "Think Big" karte hue mutual benefit dikhao
 5. **Level matching** — Fir bhi Google L3 vs L4 ka difference $50k-100k+ hai
 6. **Resources:** Levels.fyi, Blind app, TeamBlind — real salary data dekho
+
+</div>
+</div>
 
 ## Mock Interview Schedule
 

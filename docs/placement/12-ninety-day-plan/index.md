@@ -12,13 +12,14 @@
   </div>
 </div>
 
----
-
-## Phase 1 — Programming & DSA Foundation  
+<div class="phase-section">
+<div class="phase-header">
+<span class="phase-number">01</span>
+<h2>Phase 1 — Programming & DSA Foundation</h2>
+</div>
+<div class="phase-body">
 
 Placement ka sabse important phase. Java + DSA ka solid foundation banega yahan. Har concept ko code ke saath practice karo — theory sirf 30% hai, baaki 70% coding hai.
-
----
 
 ### Chapter 1: Programming Fundamentals — Java
 
@@ -455,13 +456,17 @@ int binarySearch(int[] arr, int target) {
 **Total DSA Practice:** 150+ problems across all patterns
 **Source:** `Day-08/` through `Day-28/` for daily DSA study plans + `02-cs-core` module
 
----
+</div>
+</div>
 
-## Phase 2 — Core Computer Science
+<div class="phase-section">
+<div class="phase-header">
+<span class="phase-number">02</span>
+<h2>Phase 2 — Core Computer Science</h2>
+</div>
+<div class="phase-body">
 
 Theory-heavy phase. Har subject ke core concepts strong karo — interviewers CS fundamentals boht test karte hain.
-
----
 
 ### Chapter 3: Computer Networks
 
@@ -640,13 +645,17 @@ sem.release();
 
 **Reference:** `02-cs-core` — OS section + `Day-52/` to `Day-53/`
 
----
+</div>
+</div>
 
-## Phase 3 — Web Development
+<div class="phase-section">
+<div class="phase-header">
+<span class="phase-number">03</span>
+<h2>Phase 3 — Web Development</h2>
+</div>
+<div class="phase-body">
 
 Full-stack banne ke liye. Frontend (HTML/CSS/JS) + Backend (PHP/Laravel) — yeh combination placement mein sabse zyada demand mein hai.
-
----
 
 ### Chapter 6: Frontend — HTML, CSS, JavaScript
 
@@ -851,13 +860,17 @@ with open('data.txt', 'r') as f:
 
 **Reference:** `03-programming` module
 
----
+</div>
+</div>
 
-## Phase 4 — Advanced Topics
+<div class="phase-section">
+<div class="phase-header">
+<span class="phase-number">04</span>
+<h2>Phase 4 — Advanced Topics</h2>
+</div>
+<div class="phase-body">
 
 Ye topics tujhe average candidates se alag karenge. System design senior roles ke liye must hai, AI/ML emerging trend hai.
-
----
 
 ### Chapter 9: System Design
 
@@ -1037,13 +1050,17 @@ echo -n "password123" | sha256sum
 
 **Reference:** `11-cyber-security` module (30 modules of detailed content)
 
----
+</div>
+</div>
 
-## Phase 5 — Interview & Placement
+<div class="phase-section">
+<div class="phase-header">
+<span class="phase-number">05</span>
+<h2>Phase 5 — Interview & Placement</h2>
+</div>
+<div class="phase-body">
 
 Theory aur coding dono complete hai. Ab interview patterns pe focus karo.
-
----
 
 ### Chapter 13: Interview Preparation
 
@@ -1135,7 +1152,8 @@ Projects resume mein weight dete hain. Quality over quantity — 3 solid project
 
 **Reference:** `07-projects` module (517 lines, 20+ project descriptions with code) + `Day-82/` to `Day-88/`
 
----
+</div>
+</div>
 
 ## Source Content
 

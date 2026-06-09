@@ -1,8 +1,14 @@
 <div class="module-hero">
-  🖥️
-  <h1>CS Core — Computer Science Ki Jaan</h1>
-  <p>Placement interviews ka backbone. DSA, OS, DBMS, CN, CO, TOC — har company poochti hai. Is module mein 7 subjects ka comprehensive coverage hai.</p>
-  <p><span class="tag-hot">7 Subjects</span> <span class="tag-star">500+ Problems</span> <span class="tag-method">Interview Ready</span></p>
+  <div class="module-hero-icon">🖥️</div>
+  <div class="module-hero-body">
+    <h1>CS Core — Computer Science Ki Jaan</h1>
+    <p>Placement interviews ka backbone. DSA, OS, DBMS, CN, CO, TOC — har company poochti hai. Is module mein 7 subjects ka comprehensive coverage hai.</p>
+    <div class="module-hero-meta">
+      <span>7 Subjects</span>
+      <span>500+ Problems</span>
+      <span>Interview Ready</span>
+    </div>
+  </div>
 </div>
 
 <div class="tip-banner">

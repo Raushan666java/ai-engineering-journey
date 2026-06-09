@@ -1,8 +1,13 @@
 <div class="module-hero">
-<div class="module-icon">🤖</div>
-<h1>AI &amp; ML — Machine Learning se Agentic AI tak</h1>
-<p>AI/ML kaafi broad hai. Placement ke liye basics strong rakh, aur advanced topics (Agentic AI, LangChain) mein expertise bana. Sab content <code>original/Main-Course/Placement-01/05-AI-ML/</code>, <code>original/Learning-Techniques/Learning_Course/</code>, aur <code>original/Agentic-AI-Course/</code> mein hai.</p>
-<div class="module-meta">ML/DL/Agentic AI · Real Projects</div>
+  <div class="module-hero-icon">🤖</div>
+  <div class="module-hero-body">
+    <h1>AI & ML — Machine Learning se Agentic AI tak</h1>
+    <p>AI/ML kaafi broad hai. Placement ke liye basics strong rakh, aur advanced topics (Agentic AI, LangChain) mein expertise bana. Sab content <code>original/Main-Course/Placement-01/05-AI-ML/</code>, <code>original/Learning-Techniques/Learning_Course/</code>, aur <code>original/Agentic-AI-Course/</code> mein hai.</p>
+    <div class="module-hero-meta">
+      <span>ML / DL / Agentic AI</span>
+      <span>Real Projects</span>
+    </div>
+  </div>
 </div>
 
 **Complete Source**: `original/Main-Course/Placement-01/05-AI-ML/AI-ML-Complete.md` (1073 lines) — Complete AI/ML content.

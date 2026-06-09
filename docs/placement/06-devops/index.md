@@ -79,8 +79,8 @@ Prometheus, Grafana, ELK Stack
 <div class="phase-section">
 
 <div class="phase-header">
-
-### <span class="tag tag-hot">Phase 1</span> Git & GitHub
+<span class="phase-number">01</span>
+<h2>Git & GitHub</h2>
 </div>
 
 <div class="phase-body">
@@ -212,8 +212,8 @@ Deleted commits ya branches recover kar sakte ho.
 <div class="phase-section">
 
 <div class="phase-header">
-
-### <span class="tag tag-hot">Phase 2</span> Docker
+<span class="phase-number">02</span>
+<h2>Docker</h2>
 </div>
 
 <div class="phase-body">
@@ -407,8 +407,8 @@ docker exec -it <id> sh   # shell inside container
 <div class="phase-section">
 
 <div class="phase-header">
-
-### <span class="tag tag-star">Phase 3</span> Kubernetes Basics
+<span class="phase-number">03</span>
+<h2>Kubernetes Basics</h2>
 </div>
 
 <div class="phase-body">
@@ -677,8 +677,8 @@ kubectl delete -f manifest.yaml
 <div class="phase-section">
 
 <div class="phase-header">
-
-### <span class="tag tag-method">Phase 4</span> CI/CD
+<span class="phase-number">04</span>
+<h2>CI/CD</h2>
 </div>
 
 <div class="phase-body">
@@ -915,8 +915,8 @@ jobs:
 <div class="phase-section">
 
 <div class="phase-header">
-
-### <span class="tag tag-star">Phase 5</span> Cloud Platforms
+<span class="phase-number">05</span>
+<h2>Cloud Platforms</h2>
 </div>
 
 <div class="phase-body">
@@ -1084,8 +1084,8 @@ CPU 80% se upar 2 baar gaya toh SNS notification.
 <div class="phase-section">
 
 <div class="phase-header">
-
-### <span class="tag tag-method">Phase 6</span> IaC — Infrastructure as Code
+<span class="phase-number">06</span>
+<h2>IaC — Infrastructure as Code</h2>
 </div>
 
 <div class="phase-body">
@@ -1344,8 +1344,8 @@ ansible-project/
 <div class="phase-section">
 
 <div class="phase-header">
-
-### <span class="tag">Phase 7</span> Monitoring Basics
+<span class="phase-number">07</span>
+<h2>Monitoring Basics</h2>
 </div>
 
 <div class="phase-body">
@@ -1541,7 +1541,12 @@ External monitoring services (Pingdom, UptimeRobot, StatusCake) is endpoint ko h
 **Monitoring**: Apne project mein Prometheus + Grafana lagao. Docker compose mein ek click mein setup ho jaata hai. CPU/memory dashboard dikhana aana chahiye.
 </div>
 
-## DevOps Interview Questions
+<div class="phase-section">
+<div class="phase-header">
+<span class="phase-number">08</span>
+<h2>DevOps Interview Questions</h2>
+</div>
+<div class="phase-body">
 
 Har phase ke common interview questions — placement ke liye must read.
 
@@ -1633,6 +1638,9 @@ Har phase ke common interview questions — placement ke liye must read.
 - **A**: Application ka endpoint jo status batata hai — `/health` ya `/readyz`. Liveness/readiness probes use karte hain.
 - **Q**: Scenario — Your application is running slow. How do you debug?
 - **A**: Check monitoring (CPU/memory/disk), logs (ELK/Grafana), database queries, network latency. Pod logs + metrics + tracing.
+
+</div>
+</div>
 
 ## Syllabus Table
 

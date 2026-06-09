@@ -1,11 +1,13 @@
 <div class="module-hero">
-  <div class="module-icon">🏗️</div>
-  <h1>Projects — Portfolio Ka Dum</h1>
-  <p class="module-desc">Placement mein projects hi teri real identity hai. Ye section tujhe beginner se lekar advanced projects tak le jayega.</p>
-  <div class="module-meta">
-    <span class="tag tag-hot">Beginner → Capstone</span>
-    <span class="tag tag-star">12+ Projects</span>
-    <span class="tag tag-method">Portfolio Ready</span>
+  <div class="module-hero-icon">🏗️</div>
+  <div class="module-hero-body">
+    <h1>Projects — Portfolio Ka Dum</h1>
+    <p>Placement mein projects hi teri real identity hai. Ye section tujhe beginner se lekar advanced projects tak le jayega.</p>
+    <div class="module-hero-meta">
+      <span>Beginner → Capstone</span>
+      <span>12+ Projects</span>
+      <span>Portfolio Ready</span>
+    </div>
   </div>
 </div>
 

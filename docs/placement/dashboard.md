@@ -2,7 +2,14 @@
 
 <span class="ascii-rule"></span>
 
-> Placement ki taiyari ka command center. Progress track karo, timer lagao, aaj ka plan dekho.
+> Placement ki taiyari ka command center. Progress track karo, timer lagao, aaj ka plan dekho. Har din ka ek clear roadmap — CS Core se leke System Design, AI/ML se leke FAANG interviews tak.
+
+<div class="stats-bar">
+  <div class="stat-item"><span class="stat-num">12</span> Modules</div>
+  <div class="stat-item"><span class="stat-num">90</span> Day Plan</div>
+  <div class="stat-item"><span class="stat-num">FAANG</span> Track</div>
+  <div class="stat-item"><span class="stat-num">₹∞</span> Potential</div>
+</div>
 
 <div class="daily-banner" id="daily-banner">
   <div class="banner-greeting">
@@ -143,16 +150,28 @@
   <span class="stat-row-bar" data-bar-pct="0"></span>
   <span class="stat-row-value"><a href="../10-system-design/">Start →</a></span>
 </div>
+<div class="stat-row">
+  <span class="stat-row-label">11 · Cyber Security</span>
+  <span class="stat-row-bar" data-bar-pct="0"></span>
+  <span class="stat-row-value"><a href="../11-cyber-security/">Start →</a></span>
+</div>
+<div class="stat-row">
+  <span class="stat-row-label">12 · 90-Day Plan</span>
+  <span class="stat-row-bar" data-bar-pct="0"></span>
+  <span class="stat-row-value"><a href="../12-ninety-day-plan/">Start →</a></span>
+</div>
 
 ## Quick Links
 
-- [Full Placement Overview](index.md)
-- [90-Day Plan](goal.md)
-- [Interview Questions](08-interview-prep/index.md)
-- [DSA Practice](02-cs-core/index.md#dsa)
-- [Checklist Tracker](02-cs-core/index.md#checklist)
-- [DSA Problem Tracker](dsa-tracker.md)
-- [Placement-Ori](https://github.com/Raushan666java/ai-engineering-journey/tree/main/placement-original)
+<div class="link-grid-row">
+  <a href="index.md" class="link-chip">Full Overview</a>
+  <a href="goal.md" class="link-chip">90-Day Plan</a>
+  <a href="../08-interview-prep/" class="link-chip">Interview Prep</a>
+  <a href="../02-cs-core/#dsa" class="link-chip">DSA Practice</a>
+  <a href="../02-cs-core/#checklist" class="link-chip">Checklist Tracker</a>
+  <a href="dsa-tracker.md" class="link-chip">DSA Tracker</a>
+  <a href="https://github.com/Raushan666java/ai-engineering-journey/tree/main/placement-original" class="link-chip">Placement-Ori</a>
+</div>
 
 ---
 
@@ -222,150 +241,4 @@
 </div>
 
 <hr class="rule">
-
-<style>
-#study-timer {
-  background: var(--bg-surface);
-  border: 2px solid var(--ink);
-  box-shadow: var(--shadow-hard);
-  padding: 32px;
-  text-align: center;
-  margin: 24px 0;
-}
-.timer-ring-wrap { position: relative; width: 160px; height: 160px; margin: 0 auto 20px; }
-.timer-ring { width: 100%; height: 100%; }
-.timer-display {
-  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-  text-align: center;
-}
-.timer-mode {
-  font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;
-  letter-spacing: 0.12em; color: var(--ink-mute); text-transform: uppercase;
-  display: block; margin-bottom: 4px;
-}
-.timer-time {
-  font-family: 'VT323', monospace; font-size: 2.4rem; color: var(--ink);
-  letter-spacing: 0.04em;
-}
-.timer-controls { margin: 20px 0; display: flex; gap: 12px; justify-content: center; }
-.timer-stats {
-  font-family: 'JetBrains Mono', monospace; font-size: 0.72rem;
-  color: var(--ink-soft); letter-spacing: 0.04em;
-}
-.timer-stats span { display: block; margin: 4px 0; }
-.checklist-tracker {
-  display: flex; align-items: center; gap: 16px;
-  padding: 12px 16px; margin-bottom: 20px;
-  background: var(--bg-surface); border: 1px solid var(--rule-soft);
-  font-family: 'JetBrains Mono', monospace; font-size: 0.78rem;
-}
-.checklist-tracker .checklist-counter { color: var(--ink-soft); white-space: nowrap; text-transform: uppercase; letter-spacing: 0.08em; }
-.checklist-tracker .progress-bar { flex: 1; }
-
-/* Today header grid */
-.today-header {
-  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;
-  margin-bottom: 24px;
-}
-@media (max-width: 700px) { .today-header { grid-template-columns: 1fr; } }
-.today-plan-card, .streak-card, .stats-card {
-  background: var(--bg-surface); border: 2px solid var(--ink);
-  box-shadow: var(--shadow-hard); padding: 20px;
-}
-.today-label {
-  font-family: 'JetBrains Mono', monospace; font-size: 0.65rem;
-  text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-mute);
-  display: block; margin-bottom: 8px;
-}
-.today-plan-body { display: flex; flex-direction: column; gap: 4px; }
-.plan-icon { font-size: 1.4rem; }
-.plan-area { font-family: 'Source Serif 4', serif; font-size: 1rem; font-weight: 600; color: var(--ink); }
-.plan-tip { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--ink-soft); }
-.streak-count { font-family: 'VT323', monospace; font-size: 1.8rem; color: var(--blueprint); }
-.streak-week { display: flex; gap: 6px; margin-top: 10px; }
-.streak-day {
-  font-family: 'JetBrains Mono', monospace; font-size: 0.6rem;
-  width: 28px; height: 28px; display: flex; align-items: center; justify-content: center;
-  border: 1px solid var(--rule-soft); border-radius: 4px; color: var(--ink-mute);
-}
-.streak-day.done { background: var(--blueprint); color: #fff; border-color: var(--blueprint); }
-.stats-big {
-  font-family: 'VT323', monospace; font-size: 1.4rem; color: var(--blueprint); display: block;
-}
-.stats-label {
-  font-family: 'JetBrains Mono', monospace; font-size: 0.6rem;
-  text-transform: uppercase; letter-spacing: 0.12em; color: var(--ink-mute);
-}
-
-.module-nav {
-  display: flex; justify-content: space-between; align-items: center;
-  margin-top: 48px; padding-top: 24px; border-top: 2px solid var(--rule-soft);
-}
-.module-nav-link {
-  font-family: 'JetBrains Mono', monospace; font-size: 0.8rem;
-  padding: 10px 20px; border: 2px solid var(--ink);
-  text-decoration: none !important; color: var(--ink) !important;
-  transition: all 0.15s ease;
-}
-.module-nav-link:hover {
-  background: var(--ink); color: var(--bg) !important;
-}
-.module-nav-link.prev { margin-right: auto; }
-.module-nav-link.next { margin-left: auto; }
-
-/* Streak celebration */
-.streak-celebrate {
-  font-family: 'Source Serif 4', serif;
-  font-size: 0.82rem;
-  color: var(--blueprint);
-  padding: 6px 0;
-  margin-bottom: 6px;
-  border-bottom: 1px solid var(--rule-soft);
-}
-
-/* Daily banner - motivational greeting */
-.daily-banner {
-  background: var(--bg-surface);
-  border: 2px solid var(--ink);
-  box-shadow: var(--shadow-hard);
-  padding: 20px 24px;
-  margin: 20px 0;
-}
-.banner-greeting {
-  font-family: 'Source Serif 4', serif;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--ink);
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.banner-wave { font-size: 1.4rem; }
-.banner-quote {
-  font-family: 'Source Serif 4', serif;
-  font-size: 0.95rem;
-  font-style: italic;
-  color: var(--blueprint);
-  padding: 8px 0;
-  line-height: 1.5;
-}
-.banner-tip {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem;
-  color: var(--ink-soft);
-  margin-top: 6px;
-  padding-top: 8px;
-  border-top: 1px solid var(--rule-soft);
-  display: flex;
-  gap: 6px;
-}
-.tip-label {
-  color: var(--ink-mute);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  white-space: nowrap;
-}
-.banner-tip .tip-text { color: var(--ink); }
-</style>
 

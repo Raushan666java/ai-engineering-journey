@@ -37,11 +37,10 @@
     </div>
 </div>
 
-## Frontend
-
 <div class="phase-section">
     <div class="phase-header">
-        <span>🎨 Frontend Fundamentals</span>
+        <span class="phase-number">01</span>
+        <h2>Frontend</h2>
     </div>
     <div class="phase-body">
 
@@ -199,11 +198,10 @@ Reference: `original/Web-Development/react-laravel-inertia-tutorials/` (7 parts)
     </div>
 </div>
 
-## Backend
-
 <div class="phase-section">
     <div class="phase-header">
-        <span>⚙️ Backend Development</span>
+        <span class="phase-number">02</span>
+        <h2>Backend</h2>
     </div>
     <div class="phase-body">
 
@@ -360,11 +358,10 @@ app.listen(3000, () => console.log('Server running on port 3000'));
     </div>
 </div>
 
-## Databases
-
 <div class="phase-section">
     <div class="phase-header">
-        <span>🗄️ Databases & Data Modeling</span>
+        <span class="phase-number">03</span>
+        <h2>Databases</h2>
     </div>
     <div class="phase-body">
 
@@ -389,7 +386,12 @@ app.listen(3000, () => console.log('Server running on port 3000'));
     </div>
 </div>
 
-## Full-Stack Projects
+<div class="phase-section">
+  <div class="phase-header">
+    <span class="phase-number">04</span>
+    <h2>Full-Stack Projects</h2>
+  </div>
+  <div class="phase-body">
 
 Reference `original/Main-Course/Placement-01/07-Projects/Project-Portfolio.md`:
 
@@ -440,6 +442,9 @@ pm2 startup
     <strong>CSS Mastery:</strong> Roz 1 layout banao flexbox/grid se. CSS Art challenge try karo — kaafi fun hai aur interview mein bhi puchte hain.<br>
     <strong>Database Practice:</strong> SQL queries roz likho. LeetCode Database section is good for practice.<br>
     <strong>Full-Stack Flow:</strong> Ek hi project lo aur usko HTML+CSS → PHP → Laravel → React+Laravel+Inertia step by step upgrade karo. Portfolio ka king piece banega.
+</div>
+
+  </div>
 </div>
 
 ## Checklist

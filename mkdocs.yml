@@ -91,6 +91,7 @@ extra:
 
 nav:
   - "🏠 Home": index.md
+  - "📚 AI/ML Study Portal": ai-ml-study.html
   - "🗺️ Roadmap": roadmap.md
   - "🤖 AI Engineering":
     - Overview: ai-engineering-from-scratch/README.md

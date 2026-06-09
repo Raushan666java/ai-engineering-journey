@@ -1,59 +1,69 @@
-# AI Engineering Journey
+# Complete Computer Science Curriculum
 
-[![GitHub Pages](https://img.shields.io/badge/site-live-blue)](https://raushan666java.github.io/ai-engineering-journey)
+[![GitHub Pages](https://img.shields.io/badge/site-live-blue)](https://raushan666java.github.io/study/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
-> 3-month structured curriculum — Python to production AI systems.  
-> Every week builds on the last. Learning in public.
+> A comprehensive, university-level Computer Science curriculum.  
+> 21 courses, 360+ chapters, taught from first principles to advanced electives.
 
 ## Site
 
-Published at: **https://raushan666java.github.io/ai-engineering-journey**
+Published at: **https://raushan666java.github.io/study/**
 
-Built with MkDocs + Material theme. Content in Markdown.
+Built with MkDocs + Material theme. Every chapter follows a strict textbook structure:  
+**Learning Objectives → Theory → Examples → Summary → Exercises**
 
-## Curriculum
+## Curriculum Overview
 
-| # | Phase | Duration | Status |
-|---|-------|----------|--------|
-| 1 | Foundation (Python + FastAPI) | 4 weeks | ⏳ |
-| 2 | Data Structures & Algorithms | 4 weeks | 📋 |
-| 3 | LangChain & RAG | 4 weeks | 📋 |
-| 4 | Advanced RAG & Memory | 4 weeks | 📋 |
-| 5 | Multi-Agent & Automation | 4 weeks | 📋 |
-| 6 | System Design & Production | 4 weeks | 📋 |
+### 1. Foundation (Year 1-2)
+- **C Programming** — Core memory and systems
+- **Discrete Mathematics** — Logic, sets, and proofs
+- **Digital Logic** — Architecture and binary systems
+- **Data Structures** — Organizing and managing data
+- **OOP with C++** — Advanced object-oriented patterns
+- **Algorithms** — Complexity and problem-solving
 
-## 3 Projects
+### 2. Core Systems (Year 2-3)
+- **Operating Systems** — Scheduling, memory, and kernels
+- **DBMS** — SQL, NoSQL, and data integrity
+- **Computer Networks** — TCP/IP and internet protocols
 
-1. **Document AI Assistant** — RAG system for business documents
-2. **ApexERP AI Module** — WhatsApp AI agent for ERP
-3. **Purvanchal Flow Studio** — Automated music pipeline
+### 3. Theoretical CS (Year 3)
+- **Theory of Computation** — Automata and complexity
+- **Compiler Design** — Lexing and parsing engines
+- **Software Engineering** — SDLC and agile methodology
+
+### 4. Applied & Modern (Year 3-4)
+- **Python Programming** — Modern scripting and APIs
+- **Web Development** — Full-stack React and Node.js
+- **Artificial Intelligence** — Search and logic systems
+- **Machine Learning** — Data science and neural networks
+
+### 5. Advanced Electives (Year 4)
+- **System Design** — High-scale distributed systems
+- **DevOps** — CI/CD, Docker, and Kubernetes
+- **Cloud Computing** — AWS, Azure, and GCP
+- **Cyber Security** — Cryptography and network defense
+- **Blockchain** — Decentralized ledgers and DApps
 
 ## Local Development
 
 ```bash
-# Install
-pip install mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-glightbox
+# Install dependencies
+pip install mkdocs-material mkdocs-glightbox
 
-# Serve
-mkdocs serve
+# Serve locally
+python -m mkdocs serve
 
-# Build
-mkdocs build
+# Build the site
+python -m mkdocs build --clean
 ```
-
-## Tech Stack
-
-- **Language:** Python, Laravel, TypeScript
-- **AI:** LangChain, LangGraph, CrewAI, OpenAI
-- **Infra:** Docker, n8n, Hetzner VPS
-- **Frontend:** MkDocs Material (this site)
 
 ## Connect
 
-- GitHub: [@Raushan666java](https://github.com/Raushan666java)
-- LinkedIn: [Raushan666java](https://linkedin.com/in/Raushan666java)
+- **GitHub:** [@Raushan666java](https://github.com/Raushan666java)
+- **LinkedIn:** [Raushan Kumar](https://linkedin.com/in/raushan-kumar-477465250)
 
 ---
 
-> *Started: June 8, 2026*
+> *The Complete CS Journey — Master the fundamentals.*

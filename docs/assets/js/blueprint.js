@@ -4,17 +4,19 @@
   var STORAGE_KEY = 'aej:progress:v1';
   var root = document.documentElement;
 
-  // === THEME TOGGLE (dark default) ===
-  root.setAttribute('data-theme', 'dark');
-  var storedTheme = localStorage.getItem('theme') || 'dark';
-  root.setAttribute('data-theme', storedTheme);
+  // === THEME TOGGLE ===
+  // Sync with Material's palette system on load
+  var scheme = document.body.getAttribute('data-md-color-scheme') || 'default';
+  var storedTheme = localStorage.getItem('theme');
+  var initialTheme = storedTheme || (scheme === 'slate' || scheme === 'dark' ? 'dark' : 'light');
+  root.setAttribute('data-theme', initialTheme);
 
   // Listen for theme toggle from MkDocs palette
   document.addEventListener('DOMContentLoaded', function() {
     var paletteToggles = document.querySelectorAll('[data-md-color-scheme]');
     for (var i = 0; i < paletteToggles.length; i++) {
       paletteToggles[i].addEventListener('click', function() {
-        var currentScheme = root.getAttribute('data-md-color-scheme') || 'default';
+        var currentScheme = document.body.getAttribute('data-md-color-scheme') || 'default';
         var nextTheme = currentScheme === 'default' || currentScheme === 'light' ? 'dark' : 'light';
         root.setAttribute('data-theme', nextTheme);
         localStorage.setItem('theme', nextTheme);

@@ -976,6 +976,17 @@ nav:
     - 35 Legal: courses/laravel/35-legal.md
     - 36 Manufacturing: courses/laravel/36-manufacturing.md
     - 37 Enterprise Capstone: courses/laravel/37-enterprise-capstone.md
+    - 38 Interview General: courses/laravel/38-interview-general.md
+    - 39 Interview Healthcare: courses/laravel/39-interview-healthcare.md
+    - 40 Interview Finance: courses/laravel/40-interview-finance.md
+    - 41 Interview Education: courses/laravel/41-interview-education.md
+    - 42 Interview Logistics: courses/laravel/42-interview-logistics.md
+    - 43 Interview HR: courses/laravel/43-interview-hr.md
+    - 44 Interview Marketing: courses/laravel/44-interview-marketing.md
+    - 45 Interview Customer Service: courses/laravel/45-interview-customer-service.md
+    - 46 Interview Real Estate: courses/laravel/46-interview-real-estate.md
+    - 47 Interview Legal: courses/laravel/47-interview-legal.md
+    - 48 Interview Manufacturing: courses/laravel/48-interview-manufacturing.md
   - "🤖 Artificial Intelligence":
     - Overview: courses/artificial-intelligence/index.md
     - Introduction: courses/artificial-intelligence/01-introduction.md

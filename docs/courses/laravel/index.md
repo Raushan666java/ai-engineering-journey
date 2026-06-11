@@ -29,6 +29,7 @@ The course is organized into eight parts, each building on the last:
 | VI | 25–26 | Multi-Agent Systems & Business Automation — agent orchestration, workflows |
 | VII | 27–36 | Industry Verticals — AI/automation per sector (healthcare, finance, education, logistics, HR, marketing, customer service, real estate, legal, manufacturing) |
 | VIII | 37 | Enterprise Capstone — multi-agent platform integrating all patterns |
+| IX | 38–48 | Interview Preparation — general Laravel + 10 industry-specific interview Q&A chapters |
 
 ## Chapter Listing
 
@@ -108,6 +109,22 @@ The course is organized into eight parts, each building on the last:
 | # | Chapter | Topics |
 |---|---------|--------|
 | 37 | [Capstone: Enterprise Multi-Agent Platform](37-enterprise-capstone.md) | Full specification: cross-industry multi-agent platform, centralized agent registry, shared memory & knowledge base, agent communication bus, monitoring & observability, multi-tenant isolation, integration with MCP servers, deployment architecture, testing strategy, performance budget |
+
+### Part IX: Interview Preparation
+
+| # | Chapter | Focus |
+|---|---------|-------|
+| 38 | [Laravel General Interview Q&A](38-interview-general.md) | Top 100+ interview questions covering fundamentals, advanced Laravel, AI SDK, MCP, system design, multi-agent systems, and automation patterns |
+| 39 | [Healthcare Interview Q&A](39-interview-healthcare.md) | Common interview questions for Laravel developer roles in healthcare and health-tech companies |
+| 40 | [Finance Interview Q&A](40-interview-finance.md) | Common interview questions for Laravel developer roles in fintech and financial services |
+| 41 | [Education Interview Q&A](41-interview-education.md) | Common interview questions for Laravel developer roles in edtech and educational institutions |
+| 42 | [Logistics Interview Q&A](42-interview-logistics.md) | Common interview questions for Laravel developer roles in logistics and supply chain |
+| 43 | [HR & Recruitment Interview Q&A](43-interview-hr.md) | Common interview questions for Laravel developer roles in HR technology |
+| 44 | [Marketing Interview Q&A](44-interview-marketing.md) | Common interview questions for Laravel developer roles in marketing and adtech |
+| 45 | [Customer Service Interview Q&A](45-interview-customer-service.md) | Common interview questions for Laravel developer roles in customer support platforms |
+| 46 | [Real Estate Interview Q&A](46-interview-real-estate.md) | Common interview questions for Laravel developer roles in real estate and property technology |
+| 47 | [Legal Interview Q&A](47-interview-legal.md) | Common interview questions for Laravel developer roles in legal technology |
+| 48 | [Manufacturing Interview Q&A](48-interview-manufacturing.md) | Common interview questions for Laravel developer roles in manufacturing and industrial technology |
 
 ## Supplementary Resources
 

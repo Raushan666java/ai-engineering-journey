@@ -6,21 +6,15 @@ This comprehensive textbook covers **Laravel 13**, PHP's premier full-stack web 
 
 The curriculum is designed for a single purpose: to prepare you to build, deploy, and scale **production-grade Laravel applications with AI capabilities woven in at every layer**. Each chapter builds on the previous, following the university textbook template: Learning Objectives, Theory with code examples, Summary, and Exercises (Review Questions, Application Problems, Challenge Problems). The course culminates in a capstone project that integrates everything into a complete AI-powered SaaS platform.
 
-## Prerequisites
-
-- **PHP Fundamentals:** Variable types, arrays, functions, OOP classes and inheritance, namespaces, error handling
-- **Basic Web Development:** HTTP fundamentals, HTML/CSS, basic SQL queries
-- **Command Line:** Basic terminal proficiency, file navigation, package management concepts
-- **Version Control:** Basic Git workflow (clone, add, commit, push, pull)
-
-Familiarity with Composer, MVC architecture, and dependency injection is helpful but not required—all concepts are introduced from first principles.
+Part 0 provides foundational knowledge for students who need a refresher on PHP, MySQL, HTML, CSS, JavaScript, and AI/ML concepts before diving into Laravel.
 
 ## Course Structure
 
-The course is organized into eight parts, each building on the last:
+The course is organized into ten parts, each building on the last.
 
 | Part | Chapters | Focus |
 |------|----------|-------|
+| 0 | P1–P6 | Foundations — PHP, MySQL, HTML, CSS, JavaScript, AI/ML fundamentals |
 | I | 1–6 | Laravel Fundamentals — from zero to working application |
 | II | 7–11 | Advanced Laravel — APIs, real-time, packages, testing, performance |
 | III | 12–18 | AI & Automation — AI SDK, MCP, vector search, Boost, automation patterns |
@@ -30,8 +24,20 @@ The course is organized into eight parts, each building on the last:
 | VII | 27–36 | Industry Verticals — AI/automation per sector (healthcare, finance, education, logistics, HR, marketing, customer service, real estate, legal, manufacturing) |
 | VIII | 37 | Enterprise Capstone — multi-agent platform integrating all patterns |
 | IX | 38–48 | Interview Preparation — general Laravel + 10 industry-specific interview Q&A chapters |
+| X | 49–54 | Foundations Interview Preparation — PHP, MySQL, HTML, CSS, JS, AI/ML interview Q&A |
 
 ## Chapter Listing
+
+### Part 0: Foundations for Laravel
+
+| # | Chapter | Topics |
+|---|---------|--------|
+| P1 | [PHP Foundations for Laravel](php-basics.md) | PHP syntax, variables, arrays, functions, OOP (classes, inheritance, interfaces, traits, namespaces), error handling, Composer, autoloading, PHP 8.3 features (readonly classes, enums, typed properties), design patterns for Laravel devs |
+| P2 | [MySQL & Database Design](mysql-database.md) | Relational database concepts, SQL queries (SELECT, JOIN, GROUP BY, subqueries), indexing strategies, normalization & denormalization, transactions & locking, database design patterns, migration concepts |
+| P3 | [HTML Fundamentals](html-basics.md) | HTML document structure, semantic HTML5 elements, forms & input types, accessibility (ARIA, semantic landmarks), SEO basics, HTML APIs (Canvas, Drag & Drop, Storage, History) |
+| P4 | [CSS Fundamentals](css-basics.md) | CSS selectors & specificity, box model, flexbox & grid, responsive design (media queries, mobile-first), CSS custom properties, animations & transitions, Tailwind CSS overview |
+| P5 | [JavaScript Fundamentals](javascript-basics.md) | JS syntax, DOM manipulation, ES6+ (arrow functions, promises, async/await, destructuring, modules), AJAX & Fetch API, event handling, basic Vue.js/React concepts, JavaScript for Laravel devs (Alpine.js focus) |
+| P6 | [AI/ML Fundamentals & Laravel Integration](ai-ml-fundamentals.md) | Classical ML concepts (regression, classification, clustering, NLP), PHP-ML & Rubix ML libraries, training & deploying models, Laravel AI SDK integration with ML pipelines, feature engineering, model evaluation, MLOps basics, combining classical ML with LLM agents |
 
 ### Part I: Laravel Fundamentals
 
@@ -125,6 +131,17 @@ The course is organized into eight parts, each building on the last:
 | 46 | [Real Estate Interview Q&A](46-interview-real-estate.md) | Common interview questions for Laravel developer roles in real estate and property technology |
 | 47 | [Legal Interview Q&A](47-interview-legal.md) | Common interview questions for Laravel developer roles in legal technology |
 | 48 | [Manufacturing Interview Q&A](48-interview-manufacturing.md) | Common interview questions for Laravel developer roles in manufacturing and industrial technology |
+
+### Part X: Foundations Interview Preparation
+
+| # | Chapter | Focus |
+|---|---------|-------|
+| 49 | [PHP Interview Q&A](49-interview-php.md) | 100+ interview questions on PHP fundamentals, OOP, design patterns, Composer, PHP 8.3 features, and Laravel-era PHP |
+| 50 | [MySQL Interview Q&A](50-interview-mysql.md) | Interview questions on SQL queries, database design, indexing, normalization, transactions, query optimization, and Laravel database layer |
+| 51 | [HTML Interview Q&A](51-interview-html.md) | Interview questions on semantic HTML, forms, accessibility, SEO, HTML5 APIs, and Blade integration patterns |
+| 52 | [CSS Interview Q&A](52-interview-css.md) | Interview questions on selectors, box model, flexbox/grid, responsive design, animations, Tailwind/CSS frameworks, and Laravel frontend integration |
+| 53 | [JavaScript Interview Q&A](53-interview-javascript.md) | Interview questions on ES6+, DOM, async/await, promises, Fetch API, Alpine.js, Vue.js/React integration, and JavaScript in Laravel ecosystems |
+| 54 | [AI/ML Interview Q&A](54-interview-ai-ml.md) | Interview questions on classical ML, PHP-ML/Rubix ML, model deployment, Laravel AI SDK, MCP integration, and production AI/ML workflows |
 
 ## Supplementary Resources
 

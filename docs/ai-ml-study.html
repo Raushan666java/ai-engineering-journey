@@ -363,9 +363,74 @@
           font-size: 0.6rem;
         }
       }
+      /* === NAV SCROLLER === */
+      .nav-scroller {
+        position: fixed;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-family: var(--font-mono);
+        font-size: 0.65rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .nav-scroller a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: var(--ink-mute);
+        justify-content: flex-end;
+        transition: color 0.15s, gap 0.2s;
+      }
+      .nav-scroller a:hover {
+        color: var(--ink);
+      }
+      .nav-scroller .dot {
+        width: 8px;
+        height: 8px;
+        border: 1px solid var(--ink-mute);
+        border-radius: 50%;
+        transition: background 0.15s, border-color 0.15s;
+        flex-shrink: 0;
+      }
+      .nav-scroller a:hover .dot {
+        border-color: var(--ink);
+        background: var(--ink);
+      }
+      .nav-scroller a.active .dot {
+        background: var(--ink);
+        border-color: var(--ink);
+      }
+      .nav-scroller .label {
+        display: none;
+        white-space: nowrap;
+        font-size: 0.6rem;
+        letter-spacing: 0.12em;
+        color: var(--ink);
+      }
+      .nav-scroller a.active .label,
+      .nav-scroller a:hover .label {
+        display: inline;
+      }
+      @media (max-width: 1024px) {
+        .nav-scroller { display: none; }
+      }
     </style>
+
   </head>
   <body>
+    <nav class="nav-scroller">
+      <a href="#sec-ai"><span class="label">AI</span><span class="dot"></span></a>
+      <a href="#sec-ml"><span class="label">ML</span><span class="dot"></span></a>
+      <a href="#sec-ai-eng"><span class="label">AI Eng</span><span class="dot"></span></a>
+      <a href="#sec-resources"><span class="label">Resources</span><span class="dot"></span></a>
+      <a href="#sec-dsa"><span class="label">DSA</span><span class="dot"></span></a>
+    </nav>
     <div class="main">
       <div class="page-head">
         <h1>AI &amp; ML Study Portal</h1>
@@ -392,7 +457,7 @@
       </div>
 
       <!-- AI Course -->
-      <div class="section">
+      <div class="section" id="sec-ai">
         <div class="section-head"><span class="num">01</span></div>
         <h2 class="section-title">Artificial Intelligence &mdash; Textbook</h2>
         <p class="section-sub">
@@ -416,7 +481,7 @@
       </div>
 
       <!-- ML Course -->
-      <div class="section">
+      <div class="section" id="sec-ml">
         <div class="section-head"><span class="num">02</span></div>
         <h2 class="section-title">Machine Learning &mdash; Textbook</h2>
         <p class="section-sub">
@@ -441,7 +506,7 @@
       </div>
 
       <!-- AI Engineering Curriculum -->
-      <div class="section">
+      <div class="section" id="sec-ai-eng">
         <div class="section-head">
           <span class="num">03</span
           ><span class="section-title">AI Engineering &mdash; 20 Phases</span>
@@ -4551,7 +4616,7 @@
         </div>
       </div>
 
-      <div class="section">
+      <div class="section" id="sec-resources">
         <div class="section-head"><span class="num">04</span></div>
         <h2 class="section-title">Resources &amp; Tools</h2>
         <p class="section-sub">
@@ -4602,7 +4667,7 @@
 
 
 
-<div class="section">
+<div class="section" id="sec-dsa">
   <div class="section-head"><span class="num">05</span></div>
 
   <h2 class="section-title">DSA Cheat Sheet</h2>
@@ -5134,5 +5199,26 @@
         </p>
       </footer>
     </div>
+  
+    <script>
+      (function() {
+        const links = document.querySelectorAll('.nav-scroller a');
+        const sections = [];
+        links.forEach(a => {
+          const id = a.getAttribute('href').slice(1);
+          sections.push(document.getElementById(id));
+        });
+        const observer = new IntersectionObserver(function(entries) {
+          for (const entry of entries) {
+            if (entry.isIntersecting) {
+              links.forEach(l => l.classList.remove('active'));
+              const active = document.querySelector('.nav-scroller a[href="#' + entry.target.id + '"]');
+              if (active) active.classList.add('active');
+            }
+          }
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        sections.forEach(s => { if (s) observer.observe(s); });
+      })();
+    </script>
   </body>
 </html>

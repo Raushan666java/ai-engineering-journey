@@ -17,7 +17,7 @@ Familiarity with Composer, MVC architecture, and dependency injection is helpful
 
 ## Course Structure
 
-The course is organized into five parts, each building on the last:
+The course is organized into eight parts, each building on the last:
 
 | Part | Chapters | Focus |
 |------|----------|-------|
@@ -26,6 +26,9 @@ The course is organized into five parts, each building on the last:
 | III | 12–18 | AI & Automation — AI SDK, MCP, vector search, Boost, automation patterns |
 | IV | 19–21 | System Design — architecture patterns, scaling, enterprise design |
 | V | 22–24 | Case Studies & Capstone — real-world applications end-to-end |
+| VI | 25–26 | Multi-Agent Systems & Business Automation — agent orchestration, workflows |
+| VII | 27–36 | Industry Verticals — AI/automation per sector (healthcare, finance, education, logistics, HR, marketing, customer service, real estate, legal, manufacturing) |
+| VIII | 37 | Enterprise Capstone — multi-agent platform integrating all patterns |
 
 ## Chapter Listing
 
@@ -77,6 +80,34 @@ The course is organized into five parts, each building on the last:
 | 22 | [Case Study: SaaS E-Commerce Platform](22-case-study-ecommerce.md) | Requirements (multi-tenant, 100K products, 1M users), data model (tenant→store→product→order), checkout pipeline (cart service, payment processing with Cashier, inventory management, order confirmation queue), search architecture (Scout + Meilisearch), multi-tenant caching strategy, full system design with capacity estimation |
 | 23 | [Case Study: AI-Powered Content Platform](23-case-study-ai-content.md) | Requirements (1M documents, semantic search, AI-generated content), architecture (Laravel backend + AI SDK agents), RAG pipeline (document ingestion → embedding → pgvector → similarity search → LLM augmentation), agent design (content writer, editor, researcher agents), vector store strategy, MCP tool exposure, content moderation with AI |
 | 24 | [Capstone Project: AI-Powered SaaS Platform](24-capstone.md) | Full specification: team collaboration SaaS with AI features, system architecture diagram, data model, AI agent layer (document analysis agent, meeting summarizer, code reviewer), MCP server for external tool access, search & RAG pipeline, deployment architecture (Vapor/Cloud), testing strategy, performance budget, monitoring setup |
+
+### Part VI: Multi-Agent Systems & Business Automation
+
+| # | Chapter | Topics |
+|---|---------|--------|
+| 25 | [Multi-Agent Systems & Orchestration](25-multi-agent-systems.md) | Supervisor/worker pattern, agent teams & handoffs, router agents, parallel agent execution, state management across agents, memory sharing, queue-backed orchestration, agent observability, multi-agent failure modes, testing multi-agent systems |
+| 26 | [Business Automation Agents](26-business-automation-agents.md) | Scheduled agents for recurring tasks, event-triggered agents, webhook-driven automation, approval workflows with agents, human-in-the-loop patterns, agent-based data pipelines, notification & escalation agents, audit logging for automated decisions |
+
+### Part VII: Industry Verticals — AI & Automation per Sector
+
+| # | Chapter | Topics |
+|---|---------|--------|
+| 27 | [Healthcare](27-healthcare.md) | Patient management agents, clinical decision support, HIPAA compliance, appointment scheduling AI, medical record RAG, diagnostic assistance agents, claims processing automation, medication management, healthcare data models |
+| 28 | [Finance & FinTech](28-finance.md) | Fraud detection agents, transaction monitoring, KYC/AML verification, credit scoring pipelines, trading signal automation, portfolio management agents, regulatory reporting, payment processing automation, financial forecasting |
+| 29 | [Education & EdTech](29-education.md) | Personalized learning path agents, assessment & grading automation, content generation for courses, adaptive quiz engines, student progress tracking, enrollment workflow automation, recommendation systems for curricula |
+| 30 | [Logistics & Supply Chain](30-logistics.md) | Inventory prediction agents, route optimization, shipment tracking automation, supplier management, warehouse automation, demand forecasting, fleet management, procurement agents, supply chain visibility dashboards |
+| 31 | [HR & Recruitment](31-hr-recruitment.md) | Resume screening & ranking agents, interview scheduling automation, candidate matching, onboarding workflow agents, performance review analysis, employee sentiment monitoring, training recommendation, compliance tracking |
+| 32 | [Marketing & Advertising](32-marketing.md) | Campaign optimization agents, audience segmentation & targeting, content generation pipelines, A/B testing automation, SEO analysis agents, social media scheduling, lead scoring & nurturing, marketing analytics dashboards |
+| 33 | [Customer Service & Support](33-customer-service.md) | Ticket triage & routing agents, sentiment analysis, knowledge base RAG, escalation automation, multi-channel support agents, customer satisfaction tracking, self-service portal agents, SLA monitoring |
+| 34 | [Real Estate & Property](34-real-estate.md) | Property listing agents, valuation prediction, tour scheduling automation, document processing, lead qualification agents, market analysis, rental management, CRM automation for agents |
+| 35 | [Legal & Compliance](35-legal.md) | Contract review & analysis agents, document discovery automation, compliance monitoring, case management workflows, legal research agents, e-discovery pipelines, automated report generation |
+| 36 | [Manufacturing & Industrial](36-manufacturing.md) | Predictive maintenance agents, quality control automation, IoT data ingestion & processing, supply chain optimization, production scheduling, safety compliance monitoring, inventory automation, equipment lifecycle management |
+
+### Part VIII: Enterprise Capstone
+
+| # | Chapter | Topics |
+|---|---------|--------|
+| 37 | [Capstone: Enterprise Multi-Agent Platform](37-enterprise-capstone.md) | Full specification: cross-industry multi-agent platform, centralized agent registry, shared memory & knowledge base, agent communication bus, monitoring & observability, multi-tenant isolation, integration with MCP servers, deployment architecture, testing strategy, performance budget |
 
 ## Supplementary Resources
 

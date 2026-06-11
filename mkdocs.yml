@@ -963,6 +963,19 @@ nav:
     - 22 Case Study Ecommerce: courses/laravel/22-case-study-ecommerce.md
     - 23 Case Study AI Content: courses/laravel/23-case-study-ai-content.md
     - 24 Capstone: courses/laravel/24-capstone.md
+    - 25 Multi Agent Systems: courses/laravel/25-multi-agent-systems.md
+    - 26 Business Automation: courses/laravel/26-business-automation-agents.md
+    - 27 Healthcare: courses/laravel/27-healthcare.md
+    - 28 Finance: courses/laravel/28-finance.md
+    - 29 Education: courses/laravel/29-education.md
+    - 30 Logistics: courses/laravel/30-logistics.md
+    - 31 HR Recruitment: courses/laravel/31-hr-recruitment.md
+    - 32 Marketing: courses/laravel/32-marketing.md
+    - 33 Customer Service: courses/laravel/33-customer-service.md
+    - 34 Real Estate: courses/laravel/34-real-estate.md
+    - 35 Legal: courses/laravel/35-legal.md
+    - 36 Manufacturing: courses/laravel/36-manufacturing.md
+    - 37 Enterprise Capstone: courses/laravel/37-enterprise-capstone.md
   - "🤖 Artificial Intelligence":
     - Overview: courses/artificial-intelligence/index.md
     - Introduction: courses/artificial-intelligence/01-introduction.md

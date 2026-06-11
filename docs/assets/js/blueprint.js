@@ -413,3 +413,100 @@
     setInterval(updateBanner, 3600000);
   });
 })();
+
+/* === HORIZONTAL SCROLLABLE TABS === */
+(function() {
+  'use strict';
+
+  function initScrollableTabs() {
+    var tabs = document.querySelector('.md-tabs');
+    var list = tabs ? tabs.querySelector('.md-tabs__list') : null;
+    if (!tabs || !list) return;
+
+    var btnLeft = document.createElement('button');
+    btnLeft.className = 'md-tabs-scroll-btn md-tabs-scroll-btn--left';
+    btnLeft.setAttribute('aria-label', 'Scroll tabs left');
+    btnLeft.innerHTML = '&#8592;';
+    tabs.appendChild(btnLeft);
+
+    var btnRight = document.createElement('button');
+    btnRight.className = 'md-tabs-scroll-btn md-tabs-scroll-btn--right';
+    btnRight.setAttribute('aria-label', 'Scroll tabs right');
+    btnRight.innerHTML = '&#8594;';
+    tabs.appendChild(btnRight);
+
+    var scrollAmount = 200;
+
+    function updateScrollState() {
+      var sl = list.scrollLeft;
+      var sw = list.scrollWidth;
+      var cw = list.clientWidth;
+      tabs.classList.toggle('is-scrollable-left', sl > 8);
+      tabs.classList.toggle('is-scrollable-right', sl + cw < sw - 8);
+    }
+
+    btnLeft.addEventListener('click', function() {
+      list.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+
+    btnRight.addEventListener('click', function() {
+      list.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+    list.addEventListener('scroll', updateScrollState);
+    window.addEventListener('resize', updateScrollState);
+    updateScrollState();
+
+    // Drag-to-scroll
+    var isDown = false, startX = 0, scrollLeftStart = 0;
+
+    list.addEventListener('mousedown', function(e) {
+      isDown = true;
+      list.classList.add('grabbing');
+      startX = e.pageX - list.offsetLeft;
+      scrollLeftStart = list.scrollLeft;
+      list.style.cursor = 'grabbing';
+    });
+
+    list.addEventListener('mouseleave', function() {
+      if (!isDown) return;
+      isDown = false;
+      list.classList.remove('grabbing');
+      list.style.cursor = '';
+    });
+
+    list.addEventListener('mouseup', function() {
+      isDown = false;
+      list.classList.remove('grabbing');
+      list.style.cursor = '';
+    });
+
+    list.addEventListener('mousemove', function(e) {
+      if (!isDown) return;
+      e.preventDefault();
+      var x = e.pageX - list.offsetLeft;
+      var walk = (x - startX) * 1.5;
+      list.scrollLeft = scrollLeftStart - walk;
+    });
+
+    // Touch drag support
+    var touchStartX = 0, touchScrollLeft = 0;
+
+    list.addEventListener('touchstart', function(e) {
+      touchStartX = e.changedTouches[0].pageX - list.offsetLeft;
+      touchScrollLeft = list.scrollLeft;
+    }, { passive: true });
+
+    list.addEventListener('touchmove', function(e) {
+      var x = e.changedTouches[0].pageX - list.offsetLeft;
+      var walk = (x - touchStartX) * 1.5;
+      list.scrollLeft = touchScrollLeft - walk;
+    }, { passive: true });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initScrollableTabs);
+  } else {
+    initScrollableTabs();
+  }
+})();

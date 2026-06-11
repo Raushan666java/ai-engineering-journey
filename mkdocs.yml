@@ -937,6 +937,32 @@ nav:
     - Testing Web: courses/web-development/16-testing-web.md
     - Performance: courses/web-development/17-performance.md
     - Fullstack Project: courses/web-development/18-fullstack-project.md
+  - "⚡ Laravel 13":
+    - Overview: courses/laravel/index.md
+    - 01 Introduction: courses/laravel/01-introduction.md
+    - 02 Architecture Routing Middleware: courses/laravel/02-architecture-routing.md
+    - 03 Blade Frontend: courses/laravel/03-blade-frontend.md
+    - 04 Eloquent Database: courses/laravel/04-eloquent-database.md
+    - 05 Auth Security: courses/laravel/05-auth-security.md
+    - 06 Queues Notifications: courses/laravel/06-queues-notifications.md
+    - 07 API Development: courses/laravel/07-api-development.md
+    - 08 Broadcasting Realtime: courses/laravel/08-broadcasting-realtime.md
+    - 09 Container Packages: courses/laravel/09-container-packages.md
+    - 10 Testing Observability: courses/laravel/10-testing-observability.md
+    - 11 Caching Performance: courses/laravel/11-caching-performance.md
+    - 12 AI SDK Agents: courses/laravel/12-ai-sdk-agents.md
+    - 13 AI SDK Tools: courses/laravel/13-ai-sdk-tools.md
+    - 14 AI SDK Media: courses/laravel/14-ai-sdk-media.md
+    - 15 MCP: courses/laravel/15-mcp.md
+    - 16 Search RAG: courses/laravel/16-search-rag.md
+    - 17 Boost: courses/laravel/17-boost.md
+    - 18 Automation Patterns: courses/laravel/18-automation-patterns.md
+    - 19 Architecture Patterns: courses/laravel/19-architecture-patterns.md
+    - 20 Scaling Laravel: courses/laravel/20-scaling-laravel.md
+    - 21 System Design Enterprise: courses/laravel/21-system-design-scale.md
+    - 22 Case Study Ecommerce: courses/laravel/22-case-study-ecommerce.md
+    - 23 Case Study AI Content: courses/laravel/23-case-study-ai-content.md
+    - 24 Capstone: courses/laravel/24-capstone.md
   - "🤖 Artificial Intelligence":
     - Overview: courses/artificial-intelligence/index.md
     - Introduction: courses/artificial-intelligence/01-introduction.md

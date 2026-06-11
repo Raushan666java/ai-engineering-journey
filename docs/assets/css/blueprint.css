@@ -2528,3 +2528,153 @@ ol.course-list > li a:hover {
 .md-typeset details {
   transition: all 0.2s ease;
 }
+
+/* === AI ENGINEERING OVERVIEW — ADDITIONAL REFINEMENTS === */
+
+/* Phase heading h3: match details summary style */
+.md-typeset h3 code {
+  font-size: 0.8rem;
+  background: var(--bg-surface-hover);
+  color: var(--ink-soft);
+}
+
+/* Stats sub (readers/page views) */
+.md-typeset p align center sub {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-mute);
+  letter-spacing: 0.02em;
+}
+
+/* Extremely long heading wrapping */
+.md-typeset h2[id^="from-the-creator"] {
+  word-break: break-word;
+  hyphens: auto;
+  font-size: 1rem !important;
+}
+
+.md-typeset h2[id^="from-the-creator"] a {
+  white-space: normal;
+}
+
+/* FIG_001 shipping artifacts table (<th> based) */
+.md-typeset table th[align="left"][width="25%"] {
+  text-align: center !important;
+  vertical-align: top;
+  padding: 12px 8px !important;
+}
+
+.md-typeset table th[align="left"][width="25%"] sub {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--ink-mute);
+  margin: 4px 0;
+}
+
+.md-typeset table th[align="left"][width="25%"] b {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+
+.md-typeset table td[valign="top"][width="25%"] {
+  font-size: 0.8rem;
+  padding: 8px 12px !important;
+  vertical-align: top;
+}
+
+/* Broken image fallback in FIG_001 table */
+.md-typeset table th img[width="96"] {
+  display: block;
+  margin: 0 auto 8px;
+  border: 1px solid var(--rule-soft);
+  border-radius: 8px;
+  padding: 8px;
+  background: var(--bg-surface);
+  transition: filter 0.2s;
+}
+
+.md-typeset table th img[width="96"]:hover {
+  filter: brightness(0.95);
+}
+
+/* Phase lesson tables inside details — full width, clean */
+.md-typeset details table {
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+.md-typeset details table th {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 6px 10px !important;
+  background: var(--bg-surface) !important;
+}
+
+.md-typeset details table td {
+  padding: 4px 10px !important;
+  vertical-align: middle;
+}
+
+.md-typeset details table td:first-child {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-mute);
+  width: 2.5em;
+}
+
+.md-typeset details table td:nth-child(3) {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  width: 4em;
+}
+
+.md-typeset details table td:last-child {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  width: 5em;
+}
+
+.md-typeset details table a {
+  font-weight: 500;
+}
+
+/* Phase 0 table (HTML table, not inside details) */
+.md-typeset h3:not(details ~ h3) + table {
+  font-size: 0.85rem;
+}
+
+.md-typeset h3:not(details ~ h3) + table th {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 6px 10px !important;
+}
+
+/* Mermaid diagram container fix */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ASCII art code block — tighter spacing for mermaid fallback */
+.md-typeset .language-text pre,
+.md-typeset .language-text code {
+  font-size: 0.65rem !important;
+  line-height: 1.25 !important;
+}
+
+/* Responsive: stack FIG_001 table on mobile */
+@media screen and (max-width: 50em) {
+  .md-typeset table th[align="left"][width="25%"] {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+}

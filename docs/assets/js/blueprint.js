@@ -509,4 +509,31 @@
   } else {
     initScrollableTabs();
   }
+
+  // === AI ENGINEERING PAGE: FIGURE PATH FIX ===
+  // Fix broken image paths in FIG_001 shipping artifacts table
+  // Raw HTML in README references site/assets/figures/ but the files are at assets/figures/
+  function fixFigPaths() {
+    var imgs = document.querySelectorAll('.md-typeset img[src*="site/assets/figures"]');
+    for (var i = 0; i < imgs.length; i++) {
+      var rel = imgs[i].getAttribute('src');
+      if (rel) {
+        imgs[i].setAttribute('src', rel.replace('site/assets/', '../../assets/'));
+      }
+    }
+    // Fix parent anchor glightbox href too
+    var links = document.querySelectorAll('a.glightbox[href*="site/assets/figures"]');
+    for (var j = 0; j < links.length; j++) {
+      var href = links[j].getAttribute('href');
+      if (href) {
+        links[j].setAttribute('href', href.replace('site/assets/', '../../assets/'));
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fixFigPaths);
+  } else {
+    fixFigPaths();
+  }
 })();

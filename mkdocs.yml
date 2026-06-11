@@ -50,7 +50,11 @@ plugins:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -986,7 +990,21 @@ nav:
     - Message Queues: courses/system-design/07-message-queues.md
     - Microservices Apis: courses/system-design/08-microservices-apis.md
     - Distributed Coordination: courses/system-design/09-distributed-coordination.md
-    - Case Studies: courses/system-design/10-case-studies.md
+    - LLD SOLID and OOP: courses/system-design/10-lld-solid-oop.md
+    - LLD Design Patterns: courses/system-design/11-lld-design-patterns.md
+    - LLD Component Design: courses/system-design/12-lld-component-design.md
+    - LLD Concurrency: courses/system-design/13-lld-concurrency.md
+    - Distributed Data Structures: courses/system-design/14-distributed-data-structures.md
+    - CDN DNS Edge: courses/system-design/15-cdn-dns-edge.md
+    - API Gateways and CQRS: courses/system-design/16-api-gateways-cqrs.md
+    - Observability Resiliency: courses/system-design/17-observability-resiliency.md
+    - Case Studies Classic: courses/system-design/18-case-studies-classic.md
+    - Case Study WhatsApp: courses/system-design/19-case-study-whatsapp.md
+    - Case Study Netflix: courses/system-design/20-case-study-netflix.md
+    - Case Study Uber: courses/system-design/21-case-study-uber.md
+    - Case Study Twitter: courses/system-design/22-case-study-twitter.md
+    - Case Study Dropbox: courses/system-design/23-case-study-dropbox.md
+    - Interview Preparation: courses/system-design/24-interview-preparation.md
   - "🔧 DevOps":
     - Overview: courses/devops/index.md
     - Introduction: courses/devops/01-introduction.md

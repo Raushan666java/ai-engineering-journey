@@ -104,6 +104,8 @@ nav:
     - Lesson Catalog: references/ai-engineering/catalog.md
     - Roadmap: references/ai-engineering/roadmap.md
     - Glossary: references/ai-engineering/glossary.md
+    - 📊 Big Data: courses/big-data/index.md
+    - 🧠 Applied AI: courses/applied-ai/index.md
 
     - 'Phase 0 - Setup And Tooling':
         - Overview: ai-engineering-from-scratch/phases/00-setup-and-tooling/README.md

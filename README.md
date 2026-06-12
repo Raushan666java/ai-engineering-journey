@@ -1,50 +1,97 @@
-# Complete Computer Science Curriculum
+# AI Engineering Journey
 
-[![GitHub Pages](https://img.shields.io/badge/site-live-blue)](https://raushan666java.github.io/study/)
+[![GitHub Pages](https://img.shields.io/badge/site-live-blue)](https://raushan666java.github.io/ai-engineering-journey/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Chapters](https://img.shields.io/badge/chapters-400%2B-orange)]()
+[![Courses](https://img.shields.io/badge/courses-24-blueviolet)]()
 
-> A comprehensive, university-level Computer Science curriculum.  
-> 21 courses, 360+ chapters, taught from first principles to advanced electives.
+> A comprehensive, university-grade Computer Science curriculum with modern applied tracks.  
+> **24 courses, 400+ chapters** — from first principles to AI/ML Automation & Backend Engineering.
 
 ## Site
 
-Published at: **https://raushan666java.github.io/study/**
+**https://raushan666java.github.io/ai-engineering-journey/**
 
-Built with MkDocs + Material theme. Every chapter follows a strict textbook structure:  
+Built with MkDocs + Material theme. Every chapter:  
 **Learning Objectives → Theory → Examples → Summary → Exercises**
 
-## Curriculum Overview
+---
 
-### 1. Foundation (Year 1-2)
-- **C Programming** — Core memory and systems
-- **Discrete Mathematics** — Logic, sets, and proofs
-- **Digital Logic** — Architecture and binary systems
-- **Data Structures** — Organizing and managing data
-- **OOP with C++** — Advanced object-oriented patterns
-- **Algorithms** — Complexity and problem-solving
+## Curriculum
 
-### 2. Core Systems (Year 2-3)
-- **Operating Systems** — Scheduling, memory, and kernels
-- **DBMS** — SQL, NoSQL, and data integrity
-- **Computer Networks** — TCP/IP and internet protocols
+### Foundation (Year 1–2)
 
-### 3. Theoretical CS (Year 3)
-- **Theory of Computation** — Automata and complexity
-- **Compiler Design** — Lexing and parsing engines
-- **Software Engineering** — SDLC and agile methodology
+| Course | Chapters | Covers |
+|--------|----------|--------|
+| **C Programming** | 15 | Memory, pointers, systems programming |
+| **Discrete Mathematics** | 15 | Logic, sets, proofs, combinatorics |
+| **Digital Logic** | 15 | Architecture, binary systems |
+| **Data Structures** | 18 | Arrays → graphs, all major ADTs |
+| **OOP with C++** | 15 | Classes, polymorphism, templates |
+| **Algorithms** | 22 | Complexity, sorting, DP, graph algorithms |
 
-### 4. Applied & Modern (Year 3-4)
-- **Python Programming** — Modern scripting and APIs
-- **Web Development** — Full-stack React and Node.js
-- **Artificial Intelligence** — Search and logic systems
-- **Machine Learning** — Data science and neural networks
+### Core Systems (Year 2–3)
 
-### 5. Advanced Electives (Year 4)
-- **System Design** — High-scale distributed systems
-- **DevOps** — CI/CD, Docker, and Kubernetes
-- **Cloud Computing** — AWS, Azure, and GCP
-- **Cyber Security** — Cryptography and network defense
-- **Blockchain** — Decentralized ledgers and DApps
+| Course | Chapters | Covers |
+|--------|----------|--------|
+| **Operating Systems** | 15 | Scheduling, memory, kernels |
+| **DBMS** | 19 | SQL, NoSQL, indexing, performance tuning |
+| **Computer Networks** | 18 | TCP/IP, HTTP/2, gRPC, SDN |
+
+### Theoretical CS (Year 3)
+
+| Course | Chapters | Covers |
+|--------|----------|--------|
+| **Theory of Computation** | 15 | Automata, decidability, complexity |
+| **Compiler Design** | 15 | Lexing, parsing, optimization |
+| **Software Engineering** | 16 | SDLC, agile, DevOps, security |
+
+### Applied & Modern (Year 3–4)
+
+| Course | Chapters | Covers |
+|--------|----------|--------|
+| **Python Programming** | 21 | Scripting → NumPy → concurrency |
+| **Web Development** | 18 | HTML/CSS → React → Next.js |
+| **Artificial Intelligence** | 15 | Search, logic, RL |
+| **Machine Learning** | 16 | scikit-learn, Keras, pipelines |
+
+### Advanced Electives (Year 4)
+
+| Course | Chapters | Covers |
+|--------|----------|--------|
+| **System Design** | 20 | Scalability, CAP, distributed patterns |
+| **DevOps** | 15 | CI/CD, Docker, K8s |
+| **Cloud Computing** | 15 | AWS, Azure, GCP |
+| **Cyber Security** | 14 | Cryptography, network defense |
+| **Blockchain** | 12 | Ledgers, smart contracts, DApps |
+
+### Professional Tracks
+
+| Course | Chapters | Covers |
+|--------|----------|--------|
+| **Java + Spring Boot** | 66 | Core Java → Microservices interview Q&A |
+| **Laravel 13** | 54 | PHP → MySQL → AI/ML fundamentals |
+| **React** | 40 | Components → advanced patterns |
+
+---
+
+## Specialization Tracks
+
+### AI/ML Automation & Backend Engineer
+
+Designed for the modern full-stack AI engineer. Covers 5 modules:
+
+1. **Python Programming** (ch1–21) — Fundamentals through concurrency & joblib
+2. **Web Development** (ch1–18) — Full-stack with React + Node.js
+3. **Database Management Systems** (ch1–19) — SQL through production performance tuning
+4. **Machine Learning** (ch1–16) — Classical ML through neural networks
+5. **Laravel 13** (ch1–54) — PHP backend through AI/ML integration
+
+### Java/Spring Boot Developer
+
+66 chapters covering OOP, Collections, Concurrency, JVM internals, Spring DI/IoC, MVC, Security, Data JPA, Microservices, Kafka, Kubernetes, and 5 interview Q&A chapters (1500+ lines each).
+
+---
 
 ## Local Development
 
@@ -66,4 +113,4 @@ python -m mkdocs build --clean
 
 ---
 
-> *The Complete CS Journey — Master the fundamentals.*
+> *From first principles to production — master the fundamentals, build the future.*

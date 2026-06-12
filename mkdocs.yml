@@ -999,6 +999,80 @@ nav:
     - 52 Interview CSS: courses/laravel/52-interview-css.md
     - 53 Interview JavaScript: courses/laravel/53-interview-javascript.md
     - 54 Interview AI ML: courses/laravel/54-interview-ai-ml.md
+  - "☕ Java & Spring Boot":
+    - Overview: courses/java/index.md
+    - P1 Java Syntax: courses/java/p1-java-syntax.md
+    - P2 Java OOP: courses/java/p2-java-oop.md
+    - P3 Java Collections: courses/java/p3-java-collections.md
+    - P4 Exceptions I/O: courses/java/p4-exceptions-io.md
+    - P5 Generics Reflection: courses/java/p5-generics-reflection.md
+    - P6 Lambdas Streams: courses/java/p6-lambdas-streams.md
+    - 01 JVM Memory: courses/java/01-jvm-memory.md
+    - 02 Concurrency: courses/java/02-concurrency.md
+    - 03 NIO Networking: courses/java/03-nio-networking.md
+    - 04 JPMS Packaging: courses/java/04-jpms-packaging.md
+    - 05 Functional Deep: courses/java/05-functional-deep.md
+    - 06 Performance: courses/java/06-performance.md
+    - 07 Maven: courses/java/07-maven.md
+    - 08 Gradle: courses/java/08-gradle.md
+    - 09 Spring Intro: courses/java/09-spring-intro.md
+    - 10 DI Container: courses/java/10-di-container.md
+    - 11 Auto Configuration: courses/java/11-auto-configuration.md
+    - 12 Configuration: courses/java/12-configuration.md
+    - 13 Actuator DevTools: courses/java/13-actuator-devtools.md
+    - 14 Logging Error I18N: courses/java/14-logging-error-i18n.md
+    - 15 REST API: courses/java/15-rest-api.md
+    - 16 Validation: courses/java/16-validation.md
+    - 17 OpenAPI: courses/java/17-openapi.md
+    - 18 File Handling: courses/java/18-file-handling.md
+    - 19 JDBC JOOQ: courses/java/19-jdbc-jooq.md
+    - 20 JPA Hibernate: courses/java/20-jpa-hibernate.md
+    - 21 Spring Data JPA: courses/java/21-spring-data-jpa.md
+    - 22 Migrations: courses/java/22-migrations.md
+    - 23 NoSQL: courses/java/23-nosql.md
+    - 24 Transactions: courses/java/24-transactions.md
+    - 25 Auth AuthZ: courses/java/25-auth-authz.md
+    - 26 JWT OAuth2: courses/java/26-jwt-oauth2.md
+    - 27 Method CORS CSRF: courses/java/27-method-cors-csrf.md
+    - 28 Keycloak: courses/java/28-keycloak.md
+    - 29 JUnit 5: courses/java/29-junit5.md
+    - 30 Mockito: courses/java/30-mockito.md
+    - 31 Spring Boot Test: courses/java/31-spring-boot-test.md
+    - 32 Testcontainers: courses/java/32-testcontainers.md
+    - 33 Security Perf Test: courses/java/33-security-perf-test.md
+    - 34 Async Events: courses/java/34-async-events.md
+    - 35 RabbitMQ: courses/java/35-rabbitmq.md
+    - 36 Kafka: courses/java/36-kafka.md
+    - 37 Event Driven Saga: courses/java/37-event-driven-saga.md
+    - 38 Microservices Principles: courses/java/38-microservices-principles.md
+    - 39 Service Discovery: courses/java/39-discovery.md
+    - 40 API Gateway: courses/java/40-gateway.md
+    - 41 Resilience: courses/java/41-resilience.md
+    - 42 Config: courses/java/42-config.md
+    - 43 Tracing: courses/java/43-tracing.md
+    - 44 Reactor: courses/java/44-reactor.md
+    - 45 WebFlux: courses/java/45-webflux.md
+    - 46 R2DBC: courses/java/46-r2dbc.md
+    - 47 Spring AI: courses/java/47-spring-ai.md
+    - 48 GraphQL: courses/java/48-graphql.md
+    - 49 Batch: courses/java/49-batch.md
+    - 50 Integration: courses/java/50-integration.md
+    - 51 Modulith: courses/java/51-modulith.md
+    - 52 Docker: courses/java/52-docker.md
+    - 53 Kubernetes: courses/java/53-kubernetes.md
+    - 54 CI CD: courses/java/54-cicd.md
+    - 55 Observability: courses/java/55-observability.md
+    - 56 Interview Java: courses/java/56-interview-java.md
+    - 57 Interview Spring: courses/java/57-interview-spring.md
+    - 58 Interview REST API: courses/java/58-interview-rest-api.md
+    - 59 Interview Databases: courses/java/59-interview-databases.md
+    - 60 Interview Microservices: courses/java/60-interview-microservices.md
+    - 61 Interview Security: courses/java/61-interview-security.md
+    - 62 Interview Testing: courses/java/62-interview-testing.md
+    - 63 Interview Tools: courses/java/63-interview-tools.md
+    - 64 Interview Design Patterns: courses/java/64-interview-design-patterns.md
+    - 65 Interview System Design: courses/java/65-interview-system-design.md
+    - 66 Interview Behavioral: courses/java/66-interview-behavioral.md
   - "🤖 Artificial Intelligence":
     - Overview: courses/artificial-intelligence/index.md
     - Introduction: courses/artificial-intelligence/01-introduction.md

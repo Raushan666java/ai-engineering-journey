@@ -41,6 +41,7 @@ This textbook provides a comprehensive introduction to Database Management Syste
 | 16 | [Redis Deep Dive](16-redis.md) | Data types, persistence, replication, clustering, caching | ★★☆ |
 | 17 | [Distributed Databases](17-distributed-db.md) | Fragmentation, replication, distributed query processing, homogeneity | ★★★ |
 | 18 | [Database Security](18-security.md) | Access control, SQL injection, encryption, auditing, GDPR | ★★☆ |
+| 19 | [Production Performance Tuning](19-performance-tuning.md) | BRIN/GiST/GIN indexes, bloat detection, partitioning, materialized views, slow query analysis | ★★★ |
 
 ---
 

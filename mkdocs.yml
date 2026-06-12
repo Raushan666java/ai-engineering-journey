@@ -821,6 +821,7 @@ nav:
     - Redis: courses/database-management-systems/16-redis.md
     - Distributed: courses/database-management-systems/17-distributed-db.md
     - Security: courses/database-management-systems/18-security.md
+    - Performance: courses/database-management-systems/19-performance-tuning.md
   - "🌐 Computer Networks":
     - Overview: courses/computer-networks/index.md
     - Introduction: courses/computer-networks/01-introduction.md
@@ -917,6 +918,7 @@ nav:
     - Stdlib: courses/python-programming/18-stdlib.md
     - Apis Testing: courses/python-programming/19-apis-testing.md
     - Numpy Pandas: courses/python-programming/20-numpy-pandas.md
+    - Concurrency: courses/python-programming/21-concurrency-multiprocessing.md
   - "🌍 Web Development":
     - Overview: courses/web-development/index.md
     - Html: courses/web-development/01-html.md

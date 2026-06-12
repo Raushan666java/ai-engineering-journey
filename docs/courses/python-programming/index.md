@@ -52,6 +52,7 @@ source .venv/bin/activate  # or .venv\Scripts\activate on Windows
 | 18 | Standard Library Tour | os, sys, shutil, datetime, re, collections, itertools, functools, math, random, typing, argparse, logging |
 | 19 | APIs & Testing | requests, httpx, FastAPI, Pydantic, unittest, pytest, fixtures, parametrize, mocking |
 | 20 | NumPy & pandas | Arrays, broadcasting, linear algebra, Series, DataFrame, groupby, merge, matplotlib, seaborn |
+| 21 | Concurrency & Multiprocessing | GIL, threading, multiprocessing, concurrent.futures, joblib, BLAS parallelism, ML pipelines |
 
 ## Recommended Weekly Schedule
 

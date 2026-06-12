@@ -1248,3 +1248,1605 @@ spec:
     matchLabels:
       app: order-service
 ```
+
+---
+
+### Q71: Docker Compose advanced features (depends_on conditions, healthchecks, profiles, extends)?
+
+**Answer:** Beyond basic container orchestration, Docker Compose provides several advanced features for robust multi-container setups.
+
+**depends_on with healthcheck conditions** — wait for a service to be healthy before starting:
+
+```yaml
+services:
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+  db:
+    image: postgres:16-alpine
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d mydb"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+  redis:
+    image: redis:7-alpine
+```
+
+**Profiles** — conditionally enable services:
+
+```yaml
+services:
+  app:
+    image: my-app
+  db:
+    image: postgres:16-alpine
+  mailhog:
+    image: mailhog/mailhog
+    profiles: ["dev", "staging"]
+  jaeger:
+    image: jaegertracing/all-in-one:1.57
+    profiles: ["tracing"]
+```
+
+Run with `docker compose --profile dev up` to include only app, db, and mailhog.
+
+**Extends** — share common configuration:
+
+```yaml
+# base.yml
+services:
+  base-app:
+    image: eclipse-temurin:17-jre-alpine
+    working_dir: /app
+    environment:
+      SPRING_PROFILES_ACTIVE: ${SPRING_PROFILES_ACTIVE:-dev}
+    networks:
+      - backend
+
+# docker-compose.yml
+services:
+  order-service:
+    extends:
+      file: base.yml
+      service: base-app
+    ports:
+      - "8081:8080"
+    environment:
+      SERVICE_NAME: order-service
+  payment-service:
+    extends:
+      file: base.yml
+      service: base-app
+    ports:
+      - "8082:8080"
+    environment:
+      SERVICE_NAME: payment-service
+
+networks:
+  backend:
+```
+
+**Named networks with custom IPAM:**
+
+```yaml
+networks:
+  frontend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+  backend:
+    internal: true
+```
+
+---
+
+### Q72: Dockerfile best practices (COPY vs ADD, .dockerignore, cache optimization)?
+
+**Answer:** A well-optimized Dockerfile builds faster, produces smaller images, and is more secure.
+
+**COPY vs ADD:** Prefer COPY — it's explicit about only copying local files. ADD has extra magic (tar auto-extraction, URL download) that can be surprising:
+
+```dockerfile
+# COPY — simple, predictable
+COPY --from=builder /app/target/*.jar app.jar
+
+# ADD — auto-extracts tar archives
+ADD build.tar.gz /app/
+
+# Use ADD only when you need tar extraction
+ADD jre.tar.gz /opt/java/
+```
+
+**.dockerignore — essential for build context size:**
+
+```
+.git
+.gitignore
+target/
+*.md
+node_modules/
+docker-compose*.yml
+.env
+.idea/
+*.iml
+```
+
+**Layer cache ordering — most stable first:**
+
+```dockerfile
+# 1. Base image (rarely changes)
+FROM eclipse-temurin:17-jre-alpine AS base
+
+# 2. Install system dependencies (stable)
+RUN apk add --no-cache curl ca-certificates
+
+# 3. Copy only build descriptor (changes with deps only)
+COPY pom.xml ./
+COPY src/main/resources/application.yml ./src/main/resources/
+
+# 4. Download dependencies (cached unless pom.xml changes)
+RUN mvn dependency:go-offline -q
+
+# 5. Copy source (changes most often — last)
+COPY src src/
+RUN mvn package -DskipTests
+```
+
+**Multi-stage build optimization — slim final image:**
+
+```dockerfile
+# Stage 1: full JDK for compilation
+FROM eclipse-temurin:17-jdk-alpine AS builder
+WORKDIR /build
+COPY pom.xml ./
+RUN mvn dependency:go-offline
+COPY src src/
+RUN mvn package -DskipTests
+
+# Stage 2: produce minimal JRE
+FROM eclipse-temurin:17-jre-alpine AS jre-builder
+RUN jlink --add-modules java.base,java.sql,java.naming,java.management,\
+  jdk.unsupported \
+  --output /jre \
+  --strip-debug --no-man-pages --no-header-files
+
+# Stage 3: final image
+FROM alpine:3.19
+COPY --from=jre-builder /jre /jre
+COPY --from=builder /build/target/*.jar app.jar
+RUN addgroup -S app && adduser -S app -G app
+USER app
+ENTRYPOINT ["/jre/bin/java", "-jar", "/app.jar"]
+```
+
+This reduces image size from ~200MB to ~50MB by using only the JVM modules needed.
+
+**Squash layers (advanced):** Use `docker build --squash` in CI to merge all layers into one, reducing final size but losing cache benefits for individual layers.
+
+---
+
+### Q73: Kubernetes Persistent Volumes, PVCs, and StorageClasses?
+
+**Answer:** Kubernetes stateful workloads need persistent storage that survives pod restarts.
+
+**PersistentVolume (PV)** — cluster storage resource provisioned by an admin:
+
+```yaml
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: postgres-pv
+spec:
+  capacity:
+    storage: 10Gi
+  volumeMode: Filesystem
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: standard
+  hostPath:
+    path: /mnt/data/postgres
+```
+
+**PersistentVolumeClaim (PVC)** — request for storage by a user/pod:
+
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: standard
+```
+
+**Using PVC in a pod:**
+
+```yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+spec:
+  serviceName: postgres
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:16-alpine
+        volumeMounts:
+        - name: data
+          mountPath: /var/lib/postgresql/data
+      volumes:
+      - name: data
+        persistentVolumeClaim:
+          claimName: postgres-pvc
+```
+
+**StorageClasses** — dynamic provisioning. Instead of pre-creating PVs, define a StorageClass and the cluster provisions PVs automatically:
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: fast-ssd
+provisioner: kubernetes.io/aws-ebs
+parameters:
+  type: gp3
+  fsType: ext4
+  iopsPerGB: "10"
+reclaimPolicy: Delete
+allowVolumeExpansion: true
+```
+
+Reference in PVC:
+
+```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: fast-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Gi
+  storageClassName: fast-ssd
+```
+
+**Access Modes:**
+- `ReadWriteOnce` (RWO) — single node read-write (databases)
+- `ReadOnlyMany` (ROX) — many nodes read-only
+- `ReadWriteMany` (RWX) — many nodes read-write (shared filesystems, requires NFS/Ceph)
+
+**Reclaim Policies:** Retain (manual cleanup), Delete (auto-delete on PVC removal), Recycle (deprecated).
+
+---
+
+### Q74: Helm (templating, values, hooks, dependencies)?
+
+**Answer:** Helm is the Kubernetes package manager. Charts package YAML templates with parameterized values.
+
+**Chart structure:**
+
+```
+order-service/
+├── Chart.yaml          # metadata, dependencies
+├── values.yaml         # default values
+├── templates/
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   ├── ingress.yaml
+│   ├── _helpers.tpl    # reusable template snippets
+│   └── configmap.yaml
+└── charts/             # dependencies (extracted)
+```
+
+**Templating with Go templates:**
+
+```yaml
+# templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "order-service.fullname" . }}
+  labels:
+    {{- include "order-service.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      {{- include "order-service.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "order-service.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+      - name: {{ .Chart.Name }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+        ports:
+        - containerPort: {{ .Values.service.port }}
+        env:
+        {{- range $key, $val := .Values.env }}
+        - name: {{ $key }}
+          value: {{ $val | quote }}
+        {{- end }}
+```
+
+```yaml
+# values.yaml
+replicaCount: 3
+image:
+  repository: registry.example.com/order-service
+  tag: "1.2.3"
+service:
+  port: 8080
+env:
+  SPRING_PROFILES_ACTIVE: prod
+  DB_URL: jdbc:postgresql://postgres:5432/orders
+```
+
+**Template helpers (`_helpers.tpl`):**
+
+```yaml
+{{- define "order-service.fullname" -}}
+{{- printf "%s-%s" .Release.Name .Chart.Name | trunc 63 | trimSuffix "-" }}
+{{- end }}
+
+{{- define "order-service.labels" -}}
+app.kubernetes.io/name: {{ .Chart.Name }}
+app.kubernetes.io/instance: {{ .Release.Name }}
+app.kubernetes.io/version: {{ .Chart.AppVersion }}
+{{- end }}
+```
+
+**Hooks** — run jobs at specific lifecycle points:
+
+```yaml
+# templates/migrate-job.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ .Release.Name }}-db-migrate
+  annotations:
+    "helm.sh/hook": pre-upgrade
+    "helm.sh/hook-weight": "-5"
+    "helm.sh/hook-delete-policy": hook-succeeded
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: migrate
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        command: ["java", "-jar", "app.jar", "--spring.flyway.enabled=true"]
+```
+
+Available hooks: `pre-install`, `post-install`, `pre-upgrade`, `post-upgrade`, `pre-delete`, `post-delete`, `pre-rollback`, `post-rollback`.
+
+**Dependencies in Chart.yaml:**
+
+```yaml
+apiVersion: v2
+name: order-service
+version: 1.0.0
+dependencies:
+  - name: postgresql
+    version: "12.1.0"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: postgresql.enabled
+  - name: redis
+    version: "18.1.0"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: redis.enabled
+```
+
+Run `helm dependency update` to download sub-charts. The `condition` field enables/disabling based on a top-level value.
+
+**Lifecycle management commands:**
+
+```bash
+# Install
+helm install order-service ./order-service -f prod-values.yaml
+
+# Upgrade with rollback safety
+helm upgrade order-service ./order-service -f prod-values.yaml --atomic --timeout 5m
+
+# Rollback
+helm rollback order-service 1
+
+# Template rendering (debug)
+helm template order-service ./order-service -f prod-values.yaml
+```
+
+---
+
+### Q75: Kubernetes RBAC (Roles, RoleBindings, ClusterRoles, ServiceAccounts)?
+
+**Answer:** RBAC controls who can access what Kubernetes resources. It's the primary authorization mechanism.
+
+**Role** — namespace-scoped permissions:
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: production
+  name: pod-reader
+rules:
+- apiGroups: [""]
+  resources: ["pods", "pods/log"]
+  verbs: ["get", "watch", "list"]
+- apiGroups: [""]
+  resources: ["pods/exec"]
+  verbs: ["create"]
+```
+
+**RoleBinding** — binds a Role to users, groups, or ServiceAccounts within the namespace:
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  namespace: production
+  name: read-pods
+subjects:
+- kind: User
+  name: "alice@company.com"
+  apiGroup: rbac.authorization.k8s.io
+- kind: ServiceAccount
+  name: monitoring-sa
+  namespace: production
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
+```
+
+**ClusterRole** — cluster-scoped (nodes, PVs, namespaces) or accessible across all namespaces:
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: cluster-admin-cr
+rules:
+- apiGroups: ["*"]
+  resources: ["*"]
+  verbs: ["*"]
+- nonResourceURLs: ["/healthz", "/metrics"]
+  verbs: ["get"]
+```
+
+**ClusterRoleBinding** — binds ClusterRole across the entire cluster:
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: monitoring-cluster
+subjects:
+- kind: ServiceAccount
+  name: monitoring-sa
+  namespace: monitoring
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin-cr
+  apiGroup: rbac.authorization.k8s.io
+```
+
+**ServiceAccount** — identity for pods to authenticate with the API:
+
+```yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: spring-boot-sa
+  namespace: production
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: spring-boot-sa-token
+  annotations:
+    kubernetes.io/service-account.name: spring-boot-sa
+type: kubernetes.io/service-account-token
+```
+
+Use in pod spec:
+
+```yaml
+spec:
+  serviceAccountName: spring-boot-sa
+  automountServiceAccountToken: true
+  containers:
+  - name: app
+    image: my-app
+```
+
+**Aggregated ClusterRoles** — compose permissions from multiple rules:
+
+```yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: aggregate-view
+aggregationRule:
+  clusterRoleSelectors:
+  - matchLabels:
+      rbac.authorization.k8s.io/aggregate-to-view: "true"
+rules: []
+```
+
+**Best practices:**
+- Use least privilege — never grant wildcards unless absolutely necessary
+- Prefer Roles over ClusterRoles where possible
+- Create unique ServiceAccounts per application (don't use `default`)
+- Rotate tokens regularly
+- Audit permissions with `kubectl auth can-i --list --as=system:serviceaccount:production:my-sa`
+
+---
+
+### Q76: Kubernetes Network Policies and Pod Security Admission?
+
+**Answer:** Network policies control pod-to-pod communication. Pod Security Admission (PSA) restricts pod security contexts.
+
+**NetworkPolicy** — firewall rules for pods, selecting by labels:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: order-service-policy
+  namespace: production
+spec:
+  podSelector:
+    matchLabels:
+      app: order-service
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: api-gateway
+    - namespaceSelector:
+        matchLabels:
+          name: monitoring
+    ports:
+    - port: 8080
+      protocol: TCP
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          app: payment-service
+    ports:
+    - port: 8080
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          name: kube-system
+      podSelector:
+        matchLabels:
+          k8s-app: kube-dns
+    ports:
+    - port: 53
+      protocol: UDP
+```
+
+This policy: allows traffic only from api-gateway pods and the monitoring namespace, allows egress only to payment-service and DNS.
+
+**Default deny-all policy:**
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-all
+  namespace: production
+spec:
+  podSelector: {}
+  policyTypes:
+  - Ingress
+  - Egress
+```
+
+**Pod Security Admission (PSA)** — built-in admission controller replacing PodSecurityPolicy (deprecated in 1.25, removed in 1.25):
+
+Three levels:
+- **Privileged** — unrestricted (system-critical pods)
+- **Baseline** — minimal restrictions (prevent known privilege escalations)
+- **Restricted** — hardened (current best practices)
+
+Enforce via namespace labels:
+
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: production
+  labels:
+    pod-security.kubernetes.io/enforce: restricted
+    pod-security.kubernetes.io/enforce-version: latest
+    pod-security.kubernetes.io/audit: baseline
+    pod-security.kubernetes.io/warn: baseline
+```
+
+A pod violating the `restricted` policy in this namespace will be rejected. Violations at `audit` level are logged but not blocked.
+
+**Example of a restricted-compliant pod:**
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: restricted-app
+spec:
+  securityContext:
+    runAsNonRoot: true
+    seccompProfile:
+      type: RuntimeDefault
+  containers:
+  - name: app
+    image: my-app
+    securityContext:
+      allowPrivilegeEscalation: false
+      capabilities:
+        drop: ["ALL"]
+      readOnlyRootFilesystem: true
+      runAsUser: 1000
+      runAsGroup: 3000
+```
+
+**Network policy requirements:** Network policies are enforced only by CNI plugins that support them (Calico, Cilium, Weave Net). Flannel does not support network policies.
+
+---
+
+### Q77: Kubernetes monitoring with metrics-server, Prometheus operator, kube-state-metrics?
+
+**Answer:** A production Kubernetes monitoring stack has three layers: resource metrics, cluster state metrics, and application metrics.
+
+**metrics-server** — lightweight cluster-wide resource usage aggregator:
+
+```bash
+# Install via kubectl
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+# View pod metrics
+kubectl top pods
+kubectl top nodes
+```
+
+Outputs CPU and memory per pod/node. Required for HorizontalPodAutoscaler (HPA).
+
+**Prometheus operator** — deploys and manages Prometheus instances declaratively:
+
+```yaml
+# ServiceMonitor telling Prometheus what to scrape
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: order-service-monitor
+  namespace: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: order-service
+  endpoints:
+  - port: http
+    path: /actuator/prometheus
+    interval: 15s
+  namespaceSelector:
+    matchNames:
+    - production
+```
+
+```yaml
+# Prometheus custom resource
+apiVersion: monitoring.coreos.com/v1
+kind: Prometheus
+metadata:
+  name: main
+  namespace: monitoring
+spec:
+  serviceAccountName: prometheus
+  serviceMonitorSelector:
+    matchLabels: {}
+  resources:
+    requests:
+      memory: 4Gi
+  retention: 30d
+```
+
+**kube-state-metrics** — exposes cluster state metrics (deployment replicas, pod status, PVC usage):
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-state-metrics
+  namespace: monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kube-state-metrics
+  template:
+    metadata:
+      labels:
+        app: kube-state-metrics
+    spec:
+      serviceAccountName: kube-state-metrics
+      containers:
+      - name: kube-state-metrics
+        image: registry.k8s.io/kube-state-metrics/kube-state-metrics:v2.13.0
+        ports:
+        - containerPort: 8080
+```
+
+Key metrics exposed:
+- `kube_deployment_status_replicas_unavailable`
+- `kube_pod_status_phase` (Pending, Running, Failed)
+- `kube_node_status_condition`
+- `kube_persistentvolumeclaim_resource_requests_storage_bytes`
+
+**node-exporter** — host-level metrics (CPU, memory, disk, network):
+
+```yaml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: node-exporter
+  namespace: monitoring
+spec:
+  selector:
+    matchLabels:
+      app: node-exporter
+  template:
+    metadata:
+      labels:
+        app: node-exporter
+    spec:
+      hostNetwork: true
+      hostPID: true
+      containers:
+      - name: node-exporter
+        image: prom/node-exporter:v1.8.0
+        ports:
+        - containerPort: 9100
+        args:
+        - --path.procfs=/host/proc
+        - --path.sysfs=/host/sys
+        volumeMounts:
+        - name: proc
+          mountPath: /host/proc
+          readOnly: true
+        - name: sys
+          mountPath: /host/sys
+          readOnly: true
+      volumes:
+      - name: proc
+        hostPath:
+          path: /proc
+      - name: sys
+        hostPath:
+          path: /sys
+```
+
+**Grafana dashboards:**
+- ID 315 — Kubernetes cluster monitoring (via Prometheus)
+- ID 10280 — Spring Boot / JVM (Micrometer)
+- ID 1860 — Node Exporter full
+
+**HorizontalPodAutoscaler using resource metrics:**
+
+```yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: order-service-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: order-service
+  minReplicas: 3
+  maxReplicas: 10
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+  - type: Resource
+    resource:
+      name: memory
+      target:
+        type: Utilization
+        averageUtilization: 80
+```
+
+---
+
+### Q78: GitHub Actions reusable workflows and composite actions?
+
+**Answer:** GitHub Actions provides two mechanisms for sharing workflow logic across repositories or jobs.
+
+**Reusable workflows** — call one workflow from another. Define with `on: workflow_call`:
+
+```yaml
+# .github/workflows/build-java.yml (called workflow)
+name: Build Java
+on:
+  workflow_call:
+    inputs:
+      java-version:
+        required: true
+        type: string
+      maven-goals:
+        required: false
+        type: string
+        default: verify
+    secrets:
+      REGISTRY_PASSWORD:
+        required: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v4
+      with:
+        java-version: ${{ inputs.java-version }}
+        distribution: temurin
+        cache: maven
+    - run: mvn ${{ inputs.maven-goals }} -B
+    - if: inputs.java-version == '17'
+      uses: docker/build-push-action@v5
+      with:
+        push: true
+        tags: registry.example.com/my-app:${{ github.sha }}
+        password: ${{ secrets.REGISTRY_PASSWORD }}
+```
+
+Calling it:
+
+```yaml
+# .github/workflows/ci.yml
+name: CI
+on: [push]
+jobs:
+  build-java-17:
+    uses: ./.github/workflows/build-java.yml
+    with:
+      java-version: "17"
+      maven-goals: verify
+    secrets:
+      REGISTRY_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
+  build-java-21:
+    uses: ./.github/workflows/build-java.yml
+    with:
+      java-version: "21"
+      maven-goals: compile
+```
+
+Reusable workflows can also be called from other repositories:
+
+```yaml
+jobs:
+  build:
+    uses: company/shared-workflows/.github/workflows/build-java.yml@main
+    with:
+      java-version: "17"
+```
+
+**Composite actions** — bundle multiple steps into a single action for reuse within a job:
+
+```yaml
+# .github/actions/setup-java-cache/action.yml
+name: "Setup Java with Maven Cache"
+description: "Configures JDK and restores Maven cache"
+inputs:
+  java-version:
+    description: "JDK version"
+    required: false
+    default: "17"
+outputs:
+  cache-hit:
+    description: "Whether Maven cache was restored"
+    value: ${{ steps.cache.outputs.cache-hit }}
+runs:
+  using: "composite"
+  steps:
+  - uses: actions/setup-java@v4
+    id: setup
+    with:
+      java-version: ${{ inputs.java-version }}
+      distribution: temurin
+  - uses: actions/cache@v4
+    id: cache
+    with:
+      path: ~/.m2/repository
+      key: maven-${{ hashFiles('**/pom.xml') }}
+      restore-keys: |
+        maven-
+  - run: echo "JAVA_HOME=${{ steps.setup.outputs.path }}"
+    shell: bash
+```
+
+Using in a workflow:
+
+```yaml
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ./.github/actions/setup-java-cache
+      with:
+        java-version: "21"
+    - run: mvn verify -B
+```
+
+**Environment protection rules** — restrict deployments to specific environments:
+
+```yaml
+name: Deploy
+on:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://app.example.com
+    steps:
+    - run: echo "Deploying to production"
+```
+
+Configure environment protection in repository Settings → Environments:
+- Required reviewers (one or more people must approve)
+- Wait timer (delay before deployment)
+- Deployment branches (limit to specific branch patterns)
+- Custom deployment protection rules (from GitHub Marketplace)
+
+---
+
+### Q79: ArgoCD GitOps (Application, ApplicationSet, sync policy, sync waves)?
+
+**Answer:** ArgoCD is a declarative GitOps tool that continuously synchronizes Kubernetes cluster state with manifests stored in Git.
+
+**Application** — the core resource linking a Git repo to a cluster:
+
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: order-service
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/company/order-service-config
+    targetRevision: main
+    path: overlays/production
+    helm:
+      valueFiles:
+      - values.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+      allowEmpty: false
+    syncOptions:
+    - Validate=true
+    - CreateNamespace=true
+    - PrunePropagationPolicy=foreground
+    - PruneLast=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m
+```
+
+**Sync waves** — control the order of resource application:
+
+```yaml
+# 1. Namespace and ConfigMaps first (wave -5)
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: production
+  annotations:
+    argocd.argoproj.io/sync-wave: "-5"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: production
+  annotations:
+    argocd.argoproj.io/sync-wave: "-5"
+---
+# 2. Database migration job (wave 0)
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: db-migrate
+  namespace: production
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/hook: PreSync
+spec:
+  template:
+    spec:
+      containers:
+      - name: migrate
+        image: registry.example.com/order-service:1.2.3
+        command: ["java", "-jar", "app.jar", "--spring.flyway.enabled=true"]
+      restartPolicy: Never
+---
+# 3. Deployment and Service (wave 1)
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-service
+  namespace: production
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+spec:
+  replicas: 3
+  ...
+---
+# 4. Ingress last (wave 5)
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: order-service
+  namespace: production
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"
+```
+
+**ApplicationSet** — generate Applications dynamically from templates:
+
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: microservices
+  namespace: argocd
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/company/microservices-config
+      revision: main
+      directories:
+      - path: services/*
+  template:
+    metadata:
+      name: '{{ path.basename }}'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/company/microservices-config
+        targetRevision: main
+        path: '{{ path }}'
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: '{{ path.basename }}'
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+```
+
+Other generators: `list`, `cluster`, `matrix`, `merge`, `pull-request` (ephemeral environments for PRs), `SCMProvider` (auto-discovery by repo label).
+
+**Sync phases and hooks:**
+
+```
+◀─── PreSync (db migration, schema validation) ───▶ Sync (apply manifests) ───▶ PostSync (smoke tests, notifications)
+```
+
+Hook types: PreSync, Sync, PostSync, Skip, SyncFail.
+
+**Sync options explained:**
+- `Prune=true` — delete resources removed from Git
+- `SelfHeal=true` — auto-correct manual changes to match Git
+- `CreateNamespace=true` — auto-create destination namespace
+- `PruneLast=true` — prune only after all sync waves succeed
+
+---
+
+### Q80: Terraform IaC (state, providers, modules, workspaces, remote state)?
+
+**Answer:** Terraform manages infrastructure as code — define resources, plan changes, apply to cloud providers.
+
+**Basic Terraform with AWS provider:**
+
+```hcl
+# main.tf
+terraform {
+  required_version = ">= 1.6"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = var.aws_region
+}
+
+resource "aws_db_instance" "postgres" {
+  identifier        = "orders-db"
+  engine            = "postgres"
+  engine_version    = "16.3"
+  instance_class    = "db.t3.medium"
+  allocated_storage = 100
+  db_name           = "orders"
+  username          = "admin"
+  password          = var.db_password
+  skip_final_snapshot = false
+  backup_retention_period = 7
+  storage_encrypted = true
+}
+```
+
+```hcl
+# variables.tf
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+  default     = "us-east-1"
+}
+
+variable "db_password" {
+  description = "Database password"
+  type        = string
+  sensitive   = true
+}
+```
+
+```hcl
+# outputs.tf
+output "db_endpoint" {
+  value = aws_db_instance.postgres.endpoint
+  sensitive = false
+}
+
+output "db_arn" {
+  value = aws_db_instance.postgres.arn
+}
+```
+
+**Terraform state** — maps resource declarations to real-world resources:
+
+```bash
+# State is stored locally in terraform.tfstate by default
+terraform apply
+```
+
+**Remote state** — store state in a shared backend for team collaboration:
+
+```hcl
+terraform {
+  backend "s3" {
+    bucket = "company-terraform-state"
+    key    = "environments/production/network/terraform.tfstate"
+    region = "us-east-1"
+    dynamodb_table = "terraform-locks"
+    encrypt = true
+  }
+}
+```
+
+The DynamoDB table enables state locking — prevents concurrent applies.
+
+**Modules** — reusable infrastructure components:
+
+```hcl
+# modules/rds-postgres/main.tf
+resource "aws_db_instance" "this" {
+  identifier        = var.identifier
+  engine            = "postgres"
+  engine_version    = var.engine_version
+  instance_class    = var.instance_class
+  allocated_storage = var.allocated_storage
+  db_name           = var.db_name
+  username          = var.username
+  password          = var.password
+  skip_final_snapshot = var.skip_final_snapshot
+  tags = var.tags
+}
+```
+
+```hcl
+# modules/rds-postgres/variables.tf
+variable "identifier" { type = string }
+variable "engine_version" { type = string; default = "16.3" }
+variable "instance_class" { type = string; default = "db.t3.medium" }
+variable "allocated_storage" { type = number; default = 100 }
+variable "db_name" { type = string }
+variable "username" { type = string }
+variable "password" { type = string; sensitive = true }
+variable "skip_final_snapshot" { type = bool; default = false }
+variable "tags" { type = map(string); default = {} }
+```
+
+```hcl
+# environments/production/main.tf
+module "orders_db" {
+  source = "../../modules/rds-postgres"
+  identifier = "orders-db-prod"
+  db_name    = "orders"
+  username   = "admin"
+  password   = var.db_password
+  instance_class = "db.r5.large"
+  allocated_storage = 200
+  tags = {
+    Environment = "production"
+    Project     = "order-service"
+  }
+}
+```
+
+**Workspaces** — manage multiple environments with the same configuration:
+
+```bash
+# Create workspaces
+terraform workspace new dev
+terraform workspace new staging
+terraform workspace new production
+
+# Switch and apply
+terraform workspace select dev
+terraform apply -var-file=dev.tfvars
+
+terraform workspace select production
+terraform apply -var-file=production.tfvars
+```
+
+In code:
+
+```hcl
+# Conditionally configure based on workspace
+resource "aws_db_instance" "postgres" {
+  instance_class = terraform.workspace == "production" ? "db.r5.large" : "db.t3.medium"
+  allocated_storage = terraform.workspace == "production" ? 200 : 50
+}
+```
+
+**Terraform workflow:**
+
+```bash
+# Initialize (download providers, modules)
+terraform init
+
+# Format and validate
+terraform fmt -recursive
+terraform validate
+
+# See proposed changes
+terraform plan -var-file=production.tfvars -out=tfplan
+
+# Apply
+terraform apply tfplan
+
+# Destroy (use carefully!)
+terraform destroy -var-file=production.tfvars
+```
+
+**Best practices:**
+- Use remote state with locking (S3 + DynamoDB or Terraform Cloud)
+- Structure with modules, environments, and a clear separation of concerns
+- Pin provider versions, use `required_providers`
+- Never commit state files to Git (add `*.tfstate` to `.gitignore`)
+- Use `prevent_destroy = true` on critical resources (databases, load balancers)
+- Run `terraform plan` in CI/CD pipelines, require manual approval for `apply`
+
+---
+
+### Q81: Sentry, DataDog, and NewRelic for Java APM?
+
+**Answer:** Application Performance Monitoring (APM) tools provide code-level observability: distributed tracing, error tracking, transaction breakdowns, and profiling.
+
+**Sentry** — focused on error tracking and performance:
+
+```xml
+<!-- pom.xml -->
+<dependency>
+    <groupId>io.sentry</groupId>
+    <artifactId>sentry-spring-boot-starter-jakarta</artifactId>
+    <version>7.6.0</version>
+</dependency>
+```
+
+```yaml
+# application.yml
+sentry:
+  dsn: https://key@sentry.io/project
+  traces-sample-rate: 0.2
+  environment: ${SPRING_PROFILES_ACTIVE}
+  attach-stacktrace: true
+  max-request-body-size: always
+```
+
+```java
+// Manual error capture
+try {
+    riskyOperation();
+} catch (Exception e) {
+    Sentry.captureException(e);
+}
+
+// Performance tracing
+ITransaction transaction = Sentry.startTransaction("process-order", "task");
+ISpan span = transaction.startChild("db-query");
+try {
+    orderRepository.findById(orderId);
+} finally {
+    span.finish();
+    transaction.finish();
+}
+```
+
+Sentry excels at attaching breadcrumbs (user events, HTTP requests, DB queries leading to an error) and grouping similar errors into issues. Performance monitoring includes distributed tracing and profiling.
+
+**DataDog** — full-stack observability platform:
+
+```xml
+<dependency>
+    <groupId>com.datadoghq</groupId>
+    <artifactId>dd-java-agent</artifactId>
+    <version>1.30.0</version>
+    <scope>runtime</scope>
+</dependency>
+```
+
+Attach to JVM:
+
+```bash
+java -javaagent:dd-java-agent.jar \
+     -Ddd.service=order-service \
+     -Ddd.env=production \
+     -Ddd.version=1.2.3 \
+     -Ddd.logs.injection=true \
+     -jar app.jar
+```
+
+DataDog automatically instruments Spring Boot (controllers, RestTemplate, JDBC, Kafka). Key features:
+- **Distributed tracing** with flame graphs and service maps
+- **Logs** with automatic correlation to traces (`dd.trace_id`, `dd.span_id` in MDC)
+- **Metrics** from Micrometer automatically submitted
+- **Profiling** — method-level CPU, memory allocation, and wall-clock profiling
+- **Synthetics** — synthetic browser and API tests
+- **Watchdog** — ML-based anomaly detection
+
+```yaml
+# logback-spring.xml with DataDog trace injection
+<configuration>
+    <appender name="JSON" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg
+                dd.trace_id=%X{dd.trace_id} dd.span_id=%X{dd.span_id} %n
+            </pattern>
+        </encoder>
+    </appender>
+</configuration>
+```
+
+**NewRelic** — agent-based APM with deep transaction insights:
+
+```bash
+java -javaagent:newrelic-agent.jar \
+     -Dnewrelic.config.app_name=order-service \
+     -Dnewrelic.config.license_key=KEY \
+     -Dnewrelic.config.log_level=info \
+     -jar app.jar
+```
+
+```yaml
+# newrelic.yml
+app_name: order-service
+log_level: info
+transaction_tracer:
+  enabled: true
+  transaction_threshold: apdex_f
+  record_sql: obfuscated
+slow_sql:
+  enabled: true
+```
+
+NewRelic highlights:
+- **Transaction traces** — detailed per-request breakdowns with SQL, external calls, and method timings
+- **Apdex** — user satisfaction score based on configurable response time thresholds
+- **Distributed tracing** with cross-service correlations
+- **Infrastructure monitoring** — server, container, and cloud integration
+- **AI monitoring** — LLM prompt/response tracking
+
+**Comparison:**
+
+| Feature | Sentry | DataDog | NewRelic |
+|---------|--------|---------|----------|
+| Error tracking | Excellent | Good | Good |
+| Distributed tracing | Good | Excellent | Excellent |
+| Real-user monitoring | Limited | Excellent | Good |
+| Infrastructure | No | Yes | Yes |
+| Log management | Limited | Yes | Yes |
+| Profiling | Yes (performance) | Yes (continuous) | Yes (transaction) |
+| Synthetic monitoring | No | Yes | Yes |
+| Pricing | Per event | Per host + ingested data | Per host + data |
+| Java agent | SDK-based | Java agent | Java agent |
+| Ease of setup | Very easy | Moderate | Easy |
+
+**Choosing:**
+- Use **Sentry** for error-focused teams, smaller budgets, or when you just need to track and fix exceptions
+- Use **DataDog** for full-stack visibility across infrastructure, applications, and logs
+- Use **NewRelic** for deep transaction-level insights and when team already uses NewRelic ecosystem
+
+---
+
+### Q82: Database tools (pgAdmin, DBeaver, DataGrip, MySQL Workbench)?
+
+**Answer:** Database administration and query tools are essential for Java developers working with databases.
+
+**pgAdmin** — open-source PostgreSQL admin:
+
+```bash
+# Docker Compose for local pgAdmin + Postgres
+version: '3.8'
+services:
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: myapp
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgadmin-data:
+  pgdata:
+```
+
+pgAdmin features: SQL query editor with syntax highlighting, ERD diagram viewer, server group organization, backup/restore wizard, auto-vacuum monitoring, query plan visualization, and role management.
+
+**DBeaver** — universal database tool (supports 80+ databases):
+
+```
+Key features for Java developers:
+├── Universal driver management (JDBC-based)
+├── Connection profiles (Spring Boot datasource auto-detect)
+├── ER diagrams (reverse engineer schema)
+├── SQL editor with autocomplete and formatting
+├── Data export (CSV, JSON, Excel, SQL insert)
+├── SSH tunneling for remote databases
+├── Compare (schema diff, data diff)
+├── Metadata browser (tables, views, procedures, indexes)
+├── Execution plan viewer
+└── Version control integration (Git, SVN)
+```
+
+DBeaver Community Edition is free. DBeaver Pro adds Redis, MongoDB, Cassandra, and NoSQL support.
+
+**DataGrip** — JetBrains IDE for databases:
+
+```sql
+-- Smart code completion
+SELECT u.id, u.email, o.total
+FROM users u
+JOIN orders o ON u.id = o.user_id  -- auto-completes columns
+WHERE o.created_at > '2024-01-01'
+ORDER BY o.total DESC;
+
+-- Built-in SQL formatter (Ctrl+Alt+L)
+-- Refactoring (rename column propagates through queries)
+-- Explain plan visualization
+-- Test data generator
+-- VCS integration (Git blame for queries)
+```
+
+DataGrip integrates with IntelliJ IDEA Ultimate, sharing credentials and connection settings. Features: context-aware completion, full-text search across all database objects, diagram visualization, SQL file versioning, SSH/SSL tunneling, and read-only mode for production.
+
+**MySQL Workbench** — official MySQL GUI:
+
+```sql
+-- Workbench provides visual schema designer
+-- Forward engineer: model → DDL script → database
+-- Reverse engineer: database → ER diagram → model
+
+-- Performance dashboard: real-time query monitoring
+SHOW FULL PROCESSLIST;
+EXPLAIN ANALYZE SELECT * FROM orders WHERE status = 'PENDING';
+
+-- Admin features:
+-- User management, privilege editor
+-- Server status, variables, logs
+-- Data export/import (mysqldump wrapper)
+-- Instance configuration editor
+```
+
+MySQL Workbench features: visual SQL editor, schema synchronization (compare and push changes), performance dashboards (query throughput, buffer pool stats, connection health), query profiling, backup/restore wizard, and migration wizard (from Oracle, MS SQL, PostgreSQL to MySQL).
+
+**Quick comparison:**
+
+| Tool | Best for | Databases | Platform | Cost |
+|------|----------|-----------|----------|------|
+| pgAdmin | PostgreSQL specialists | PostgreSQL only | Web, Desktop | Free |
+| DBeaver | Multi-DB teams | 80+ (JDBC) | Desktop | Free/Paid |
+| DataGrip | JetBrains ecosystem | 30+ | Desktop | Paid |
+| MySQL Workbench | MySQL/MariaDB | MySQL/MariaDB | Desktop | Free |
+
+**Spring Boot datasource configs for popular tools:**
+
+```yaml
+# application.yml
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/myapp
+    username: app
+    password: secret
+    hikari:
+      schema: public
+      connection-test-query: SELECT 1
+```
+
+For DataGrip/DBeaver, use the same JDBC URL and credentials. For Docker Compose scenarios, connect clients to `localhost:5432` with the same credentials defined in `docker-compose.yml`.
+
+**Best practices:**
+- Never use GUI tools for production schema changes — use Flyway/Liquibase migrations
+- Use read-only roles for production access
+- Use SSH tunnels for secure remote connections
+- Enable connection pooling (HikariCP in application, connection manager in GUI tool)
+- Document connection parameters in team wiki, not in code
+- Use multiple tabs/sessions for different environments
+- Save frequently-used queries as templates or snippets
+```

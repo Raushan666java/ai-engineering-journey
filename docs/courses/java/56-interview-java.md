@@ -1698,3 +1698,463 @@ public class NIO2Demo {
 ```
 
 Path.of() / Paths.get(). Files.readString/writeString (Java 11+). Files.walk for directory tree traversal. WatchService monitors directory changes. FileChannel.transferTo/transferFrom for zero-copy (OS-level, no user-space buffering). MappedByteBuffer for memory-mapped files.
+
+### Q46: Reflection API — use cases and performance implications.
+
+**Answer:** Reflection enables runtime inspection and invocation of classes, methods, fields, and constructors. Used by frameworks (Spring, Hibernate, Jackson), serialization, and dependency injection. Performance is slower due to JIT deoptimization, bounds checks, and boxing.
+
+```java
+import java.lang.reflect.*;
+import java.util.*;
+
+public class ReflectionDemo {
+    static class User {
+        private String name;
+        public User() {}
+        public User(String name) { this.name = name; }
+        public String getName() { return name; }
+        public void setName(String n) { this.name = n; }
+        private String secret() { return "classified"; }
+    }
+
+    public static void main(String[] args) throws Exception {
+        Class<?> clazz = Class.forName("ReflectionDemo$User");
+
+        // Constructor invocation
+        Constructor<?> ctor = clazz.getDeclaredConstructor();
+        Object user = ctor.newInstance();
+
+        // Field access
+        Field field = clazz.getDeclaredField("name");
+        field.setAccessible(true);
+        field.set(user, "Alice");
+        System.out.println("Field: " + field.get(user));
+
+        // Method invocation
+        Method getter = clazz.getMethod("getName");
+        System.out.println("Getter: " + getter.invoke(user));
+
+        // Private method
+        Method secret = clazz.getDeclaredMethod("secret");
+        secret.setAccessible(true);
+        System.out.println("Private: " + secret.invoke(user));
+
+        // Performance benchmark
+        User direct = new User("Bob");
+        long start = System.nanoTime();
+        for(int i=0;i<1_000_000;i++) direct.getName();
+        System.out.println("Direct: "+(System.nanoTime()-start)/1_000_000+"ms");
+
+        Method refGet = clazz.getMethod("getName");
+        start = System.nanoTime();
+        for(int i=0;i<1_000_000;i++) refGet.invoke(user);
+        System.out.println("Reflection: "+(System.nanoTime()-start)/1_000_000+"ms");
+
+        // MethodHandle: faster alternative
+        MethodHandles.Lookup lookup = MethodHandles.lookup();
+        MethodHandle mh = lookup.findVirtual(User.class, "getName", MethodType.methodType(String.class));
+        start = System.nanoTime();
+        for(int i=0;i<1_000_000;i++) mh.invoke(user);
+        System.out.println("MethodHandle: "+(System.nanoTime()-start)/1_000_000+"ms");
+    }
+}
+```
+
+Use reflection for framework code only. Cache Method/Field/Constructor lookups (reuse, don't reacquire each call). MethodHandle is faster than core reflection. setAccessible has module restrictions (Java 16+). --add-opens for deep reflection across module boundaries.
+
+### Q47: WeakReference, SoftReference, PhantomReference.
+
+**Answer:** Reference types allow interaction with GC. SoftReference: cleared only under memory pressure (cache). WeakReference: cleared at next GC (canonical mappings, WeakHashMap). PhantomReference: post-mortem cleanup before finalization, must be polled via ReferenceQueue.
+
+```java
+import java.lang.ref.*;
+import java.util.*;
+
+public class ReferenceTypes {
+    public static void main(String[] args) {
+        Object strong = new Object();
+        System.gc(); // strong not collected
+
+        // SoftReference: cleared before OOM
+        SoftReference<byte[]> soft = new SoftReference<>(new byte[1024*1024]);
+        System.out.println("Soft before GC: " + soft.get());
+        System.gc();
+        System.out.println("Soft after GC: " + soft.get()); // may survive
+
+        // WeakReference: cleared eagerly on GC
+        WeakReference<Object> weak = new WeakReference<>(new Object());
+        System.out.println("Weak before GC: " + weak.get());
+        System.gc();
+        System.out.println("Weak after GC: " + weak.get()); // null
+
+        // WeakHashMap: keys held weakly, auto-evicted on GC
+        WeakHashMap<Object,String> map = new WeakHashMap<>();
+        Object key = new Object();
+        map.put(key, "value");
+        System.out.println("Map before: " + map.size());
+        key = null;
+        System.gc();
+        System.out.println("Map after: " + map.size()); // 0
+
+        // PhantomReference: must use ReferenceQueue
+        ReferenceQueue<Object> queue = new ReferenceQueue<>();
+        PhantomReference<Object> phantom = new PhantomReference<>(new Object(), queue);
+        System.gc();
+        Reference<?> ref = queue.poll();
+        System.out.println("Phantom enqueued: " + (ref != null)); // true
+        System.out.println("Phantom get: " + phantom.get()); // always null
+    }
+
+    static class FinalizeGuardian {
+        private final Object finalizerGuardian = new Object() {
+            @Override protected void finalize() {
+                System.out.println("Cleanup: release native resource");
+            }
+        };
+    }
+}
+```
+
+SoftReference: memory-sensitive caches (e.g., image cache evicted before OOM). WeakReference: WeakHashMap, canonical mappings (class Metadata -> ClassLoader). PhantomReference: deterministic cleanup of native resources (vs unreliable finalize()). ReferenceQueue: allows polling or blocking wait for cleared references.
+
+### Q48: Garbage collection deep dive — G1, ZGC, Shenandoah.
+
+**Answer:** G1 (default): region-based, concurrent marking, compaction. ZGC: colored pointers, load barriers, multi-TB heaps, sub-1ms pauses. Shenandoah: forwarding pointers, concurrent compaction, no stop-the-world evacuation.
+
+```java
+import java.lang.management.*;
+import java.util.*;
+
+public class GCDeepDive {
+    static final List<byte[]> holder = new ArrayList<>();
+
+    // G1 flags:
+    // -XX:+UseG1GC (default), -XX:MaxGCPauseMillis=200
+    // -XX:G1HeapRegionSize=4m, -XX:G1NewSizePercent=5
+    // -XX:+G1HeapWastePercent=5, -XX:G1MixedGCLiveThresholdPercent=85
+    // -XX:G1ReservePercent=10
+
+    // ZGC flags:
+    // -XX:+UseZGC, -XX:ZAllocationSpikeTolerance=2.0
+    // -XX:SoftMaxHeapSize=4g, -XX:ZCollectionInterval=300
+
+    // Shenandoah flags:
+    // -XX:+UseShenandoahGC, -XX:ShenandoahGCMode=iu (aggressive)
+    // -XX:ShenandoahAllocationThreshold=50, -XX:ShenandoahUncommitDelay=300000
+
+    public static void main(String[] args) {
+        System.out.println("Available collectors:");
+        for(var bean : ManagementFactory.getGarbageCollectorMXBeans())
+            System.out.println("  " + bean.getName());
+
+        // Simulate allocation pressure
+        Random rnd = new Random();
+        for(int i=0;i<100;i++) {
+            holder.add(new byte[rnd.nextInt(1024*1024)]);
+            if(holder.size() > 80) holder.subList(0, 40).clear();
+        }
+
+        System.out.println("--- GC Comparison ---");
+        System.out.println("G1: region-based young/old, concurrent marking, 200ms pause target");
+        System.out.println("    RSet (Remembered Set) tracks cross-region refs");
+        System.out.println("    Mixed GC cleans old gen incrementally");
+        System.out.println("ZGC: colored pointers (42-bit heap, 22-bit offset)");
+        System.out.println("     Concurrent every phase (mark, reference processing, relocation)");
+        System.out.println("     Load barriers instead of write barriers");
+        System.out.println("     Multi-TB heap, sub-1ms pause, ~15% CPU overhead");
+        System.out.println("Shenandoah: Brooks forwarding pointers");
+        System.out.println("     Concurrent compaction (no STW evacuation)");
+        System.out.println("     Controllable GC cycle via allocation threshold");
+        System.out.println("     Lower CPU overhead than ZGC, similar pause profile");
+
+        System.out.println("--- Phase breakdown ---");
+        System.out.println("Young GC: Eden -> Survivor, promoted to Old after tenure");
+        System.out.println("Old GC: concurrent marking -> remark -> (G1: mixed) -> compact");
+        System.out.println("Full GC: Serial fallback (G1), none (ZGC/Shenandoah)");
+    }
+}
+```
+
+G1: default since Java 9, best balance. ZGC: max throughput with latency, requires 64-bit, large heaps (4TB+). Shenandoah: concurrent compaction with lower CPU cost than ZGC. Tuning: -Xlog:gc* for diagnostics, G1HeapRegionSize=4m (default 2048 regions). ZGC unsupported on 32-bit.
+
+### Q49: Java Module System (JPMS).
+
+**Answer:** JPMS (Java 9+) provides module descriptors (module-info.java) with requires, exports, opens, provides, uses. Encapsulates packages, enforces dependency contracts, eliminates classpath hell.
+
+```java
+// module-info.java (in module 'com.example.app')
+// module com.example.app {
+//     requires java.sql;
+//     requires transitive com.example.lib;
+//     exports com.example.api;
+//     exports com.example.dto to com.example.client;
+//     opens com.example.internal to com.fasterxml.jackson.databind;
+//     provides com.example.spi.Plugin with com.example.plugins.DefaultPlugin;
+//     uses com.example.spi.Plugin;
+// }
+
+// module-info for library
+// module com.example.lib {
+//     exports com.example.lib.api;
+// }
+
+import java.lang.module.*;
+import java.util.*;
+
+public class JPMSDemo {
+    public static void main(String[] args) {
+        // List available module layers
+        ModuleLayer boot = ModuleLayer.boot();
+        System.out.println("Boot layer modules: " + boot.modules().size());
+
+        Module ourModule = JPMSDemo.class.getModule();
+        System.out.println("Our module: " + ourModule.getName());
+        System.out.println("Is named: " + ourModule.isNamed());
+        System.out.println("Packages: " + ourModule.getPackages());
+
+        // Module descriptor info
+        ourModule.getDescriptor().ifPresentOrElse(
+            desc -> {
+                System.out.println("Requires: " + desc.requires());
+                System.out.println("Exports: " + desc.exports());
+                desc.opens().forEach(o -> System.out.println("Opens: " + o));
+            },
+            () -> System.out.println("Unnamed module")
+        );
+
+        // --add-exports: command line workaround for reflective access
+        // --add-opens: for deep reflection (setAccessible)
+        // --add-reads: add module dependency at runtime
+        System.out.println("--- JPMS properties ---");
+        System.out.println("Explicit dependencies: no transitive surprises");
+        System.out.println("Strong encapsulation: internal packages not accessible");
+        System.out.println("Service loading: provides/uses replaces META-INF/services");
+    }
+}
+
+/* Example module-info.java for a service provider:
+module com.example.db {
+    requires java.sql;
+    exports com.example.db.api;
+    provides java.sql.Driver with com.example.db.DriverImpl;
+}
+*/
+```
+
+Named modules (module-info.java) vs unnamed module (classpath). Automatic module: JAR on module path with name from MANIFEST.MF. --add-exports, --add-opens for migration. jlink creates custom runtime with only needed modules. Migration: unnamed -> automatic -> named.
+
+### Q50: java.time API (JSR-310).
+
+**Answer:** Modern date/time library replacing java.util.Date and Calendar. Core classes: LocalDate, LocalTime, LocalDateTime, ZonedDateTime, Instant, Duration, Period. All immutable and thread-safe.
+
+```java
+import java.time.*;
+import java.time.format.*;
+import java.time.temporal.*;
+import java.util.*;
+
+public class JavaTimeAPI {
+    public static void main(String[] args) {
+        // LocalDate, LocalTime, LocalDateTime
+        LocalDate today = LocalDate.now();
+        LocalDate independenceDay = LocalDate.of(2026, Month.JULY, 4);
+        System.out.println("Days until July 4: " + today.until(independenceDay, ChronoUnit.DAYS));
+
+        LocalTime now = LocalTime.now();
+        LocalTime lunch = LocalTime.of(12, 30);
+        System.out.println("Minutes to lunch: " + now.until(lunch, ChronoUnit.MINUTES));
+
+        LocalDateTime meeting = LocalDateTime.of(2026, 6, 15, 14, 30);
+        System.out.println("Meeting: " + meeting.format(DateTimeFormatter.ofPattern("EEEE, MMM d 'at' HH:mm")));
+
+        // ZonedDateTime and offsets
+        ZonedDateTime nyTime = ZonedDateTime.now(ZoneId.of("America/New_York"));
+        ZonedDateTime londonTime = nyTime.withZoneSameInstant(ZoneId.of("Europe/London"));
+        System.out.println("NY: " + nyTime + " London: " + londonTime);
+
+        // Instant: machine timestamp
+        Instant epoch = Instant.EPOCH;
+        Instant now2 = Instant.now();
+        System.out.println("Epoch ms: " + now2.toEpochMilli());
+        System.out.println("Seconds since epoch: " + now2.getEpochSecond());
+
+        // Duration: seconds/nanos based time amount
+        Duration taskTime = Duration.ofMinutes(90);
+        System.out.println("Task: " + taskTime.toHours() + "h " + taskTime.toMinutesPart() + "m");
+
+        // Period: date-based amount
+        Period tenure = Period.between(LocalDate.of(2020, 1, 1), today);
+        System.out.println("Tenure: " + tenure.getYears() + "y " + tenure.getMonths() + "m " + tenure.getDays() + "d");
+
+        // Parsing and formatting
+        LocalDate parsed = LocalDate.parse("2026-12-25");
+        System.out.println("Parsed: " + parsed);
+
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy/MM/dd");
+        System.out.println("Formatted: " + today.format(fmt));
+
+        // TemporalAdjusters
+        LocalDate nextMonday = today.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
+        LocalDate lastDay = today.with(TemporalAdjusters.lastDayOfMonth());
+        System.out.println("Next Mon: " + nextMonday + " Last day: " + lastDay);
+    }
+}
+```
+
+All java.time classes are immutable and thread-safe. Duration = seconds/nanos, Period = years/months/days. Parsing is strict by default (DateTimeFormatter.ofPattern for lenient). ZoneOffset for fixed offsets, ZoneId for full rules (DST aware). Instant for timestamps, ZonedDateTime for human display.
+
+### Q51: Local variable type inference (var).
+
+**Answer:** var (Java 10+) infers type from initializer on local variables, enhanced for loops, and lambda parameters. Improves readability by eliminating redundant type declarations. Not for fields, method params, or return types.
+
+```java
+import java.util.*;
+import java.util.stream.*;
+import java.net.*;
+
+public class VarDemo {
+    // NOT allowed: fields, method params, return types
+    // var field = "bad";
+
+    public static void main(String[] args) {
+        // Replaces explicit type
+        var list = new ArrayList<String>();
+        list.add("hello");
+
+        // Complex generic types are more readable
+        var stream = list.stream()
+            .filter(s -> s.length() > 2)
+            .map(String::toUpperCase);
+        System.out.println(stream.collect(Collectors.toList()));
+
+        // Diamond + var
+        var map = new HashMap<String, List<Integer>>();
+        map.put("a", List.of(1, 2, 3));
+
+        // For-each with var
+        for(var entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+
+        // With anonymous class (inferred type includes extra method)
+        var obj = new Object() { String greet() { return "hi"; } };
+        System.out.println(obj.greet());
+
+        // Lambda parameter type inference
+        Function<String, Integer> len = (var s) -> s.length();
+
+        // Pitfalls
+        var count = 0;           // int, not long
+        var items = new byte[0]; // byte[]
+        // var x;                // ERROR: must have initializer
+        // var n = null;         // ERROR: can't infer null
+        // var p = (String)null; // OK with cast
+    }
+
+    // OK in lambda expressions
+    interface Processor {
+        void process(var input); // Not allowed — lambda params only!
+    }
+
+    // OK with anonymous class
+    static void example() {
+        // var in try-with-resources
+        try(var scanner = new java.util.Scanner(System.in)) {
+        }
+    }
+}
+```
+
+var requires initializer on same line. Cannot infer to null, cannot use without assignment. Diamond operator with var: var list = new ArrayList<>() infers ArrayList<Object>. Use var when it improves readability, not for primitive-like types (int, long) where reader needs to see exact type. Good for complex generics, streams, anonymous classes.
+
+### Q52: Annotations — retention policies, processing, and runtime access.
+
+**Answer:** Annotations provide metadata for code. Retention: SOURCE (compile only, @Override), CLASS (in bytecode but not runtime, @NonNull), RUNTIME (accessible via reflection, @RequestMapping). Processed by annotation processors (compile-time) or reflection (runtime).
+
+```java
+import java.lang.annotation.*;
+import java.lang.reflect.*;
+import java.util.*;
+
+public class AnnotationDemo {
+    // Custom annotation definitions
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.FIELD, ElementType.METHOD})
+    @interface JsonField {
+        String name() default "";
+        boolean required() default false;
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @interface ApiVersion {
+        int major() default 1;
+        int minor() default 0;
+    }
+
+    @Retention(RetentionPolicy.SOURCE)
+    @interface Builder {} // compile-time only, not in bytecode
+
+    @Retention(RetentionPolicy.CLASS)
+    @interface NotNull {} // in bytecode, not reflectable
+
+    // Usage
+    @ApiVersion(major = 2)
+    static class UserDto {
+        @JsonField(required = true)
+        private String email;
+
+        @JsonField(name = "full_name")
+        private String name;
+
+        public UserDto(String email, String name) {
+            this.email = email;
+            this.name = name;
+        }
+
+        @JsonField
+        public String getEmail() { return email; }
+    }
+
+    // Runtime annotation reader
+    static Map<String, Object> serialize(Object obj) throws Exception {
+        Map<String, Object> result = new LinkedHashMap<>();
+        Class<?> clazz = obj.getClass();
+
+        // Class-level annotation
+        ApiVersion ver = clazz.getAnnotation(ApiVersion.class);
+        if(ver != null) {
+            result.put("@apiVersion", ver.major() + "." + ver.minor());
+        }
+
+        // Field-level annotations
+        for(Field field : clazz.getDeclaredFields()) {
+            JsonField jf = field.getAnnotation(JsonField.class);
+            if(jf != null) {
+                field.setAccessible(true);
+                String key = jf.name().isEmpty() ? field.getName() : jf.name();
+                result.put(key, field.get(obj));
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) throws Exception {
+        UserDto user = new UserDto("a@x.com", "Alice");
+        System.out.println("Serialized: " + serialize(user));
+
+        // Repeatable annotations (Java 8+)
+        @Repeatable(Schedules.class)
+        @interface Schedule { String day(); }
+        @interface Schedules { Schedule[] value(); }
+
+        @Schedule(day="MON") @Schedule(day="WED")
+        static class Task {}
+
+        Schedule[] scheds = Task.class.getAnnotationsByType(Schedule.class);
+        System.out.println("Schedules: " + Arrays.toString(scheds));
+    }
+}
+```
+
+RetentionPolicy.SOURCE: @Override, @SuppressWarnings — discarded after compile. CLASS: bytecode only, no reflection (lombok @Getter, @Setter). RUNTIME: retained for reflection (Spring, JPA, Jackson). @Target: TYPE, FIELD, METHOD, PARAMETER, CONSTRUCTOR, ANNOTATION_TYPE, PACKAGE. Annotation processor (AbstractProcessor) generates code at compile time — used by lombok, MapStruct, Dagger.

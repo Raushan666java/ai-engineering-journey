@@ -1208,3 +1208,16 @@ nav:
     - Defi: courses/blockchain/08-defi.md
     - Enterprise: courses/blockchain/09-enterprise.md
     - Security Scalability: courses/blockchain/10-security-scalability.md
+  - "📊 Big Data":
+    - Overview: courses/big-data/index.md
+    - Introduction: courses/big-data/01-introduction.md
+    - Hadoop: courses/big-data/02-hadoop.md
+    - Spark Basics: courses/big-data/03-spark-basics.md
+    - Spark Mllib: courses/big-data/04-spark-mllib.md
+    - Ecosystem: courses/big-data/05-ecosystem.md
+  - "🧠 Applied AI":
+    - Overview: courses/applied-ai/index.md
+    - Introduction: courses/applied-ai/01-introduction.md
+    - Langchain: courses/applied-ai/02-langchain.md
+    - Opencv: courses/applied-ai/03-opencv.md
+    - Generative Ai: courses/applied-ai/04-generative-ai.md

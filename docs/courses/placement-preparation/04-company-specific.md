@@ -1,6 +1,6 @@
 # Company-Specific Placement Preparation
 
-> A tiered breakdown of interview processes, question patterns, and preparation strategies across FAANG/MANGA, product-based Indian companies, service-based companies, and startups.
+> A tiered breakdown of interview processes, question patterns, and preparation strategies across FAANG/MANGA, product-based Indian companies, service-based companies, startups, and premium semiconductor/enterprise companies.
 
 ---
 
@@ -10,6 +10,7 @@
 2. [Product-Based Companies (India)](#2-product-based-companies-india)
 3. [Service-Based Companies](#3-service-based-companies)
 4. [Startups & Unicorns](#4-startups--unicorns)
+5. [Premium Semiconductor & Enterprise Companies](#5-premium-semiconductor--enterprise-companies)
 
 ---
 
@@ -1660,6 +1661,872 @@ Framework:
 - **High-Growth Engineer newsletter** — Content on startup engineering culture
 - **Lenny's Podcast** — Product and growth insights
 - **Startup interview guides** — Glassdoor company reviews, Blind app discussions
+
+---
+
+## 5. Premium Semiconductor & Enterprise Companies
+
+### Overview
+
+Beyond FAANG and product companies, premium semiconductor firms (NVIDIA, Qualcomm, Texas Instruments) and enterprise software giants (Adobe, Salesforce, Oracle, LinkedIn) offer exceptional careers with unique interview patterns. These companies test deep domain knowledge — hardware-software co-design for chip companies, enterprise-scale architecture for software giants.
+
+### Common Threads
+
+- **Domain depth** — Chip companies test OS, computer architecture, C/C++ proficiency; enterprise companies test system design at scale
+- **Low-level coding** — Semiconductors ask pointer manipulation, memory management, bit manipulation
+- **System design** — Enterprise companies focus on distributed systems handling millions of transactions
+- **Behavioral fit** — Cultural alignment with company values is heavily weighted
+- **Compensation** — ₹25-60 LPA for software roles; competitive with FAANG for senior positions
+
+---
+
+### Apple
+
+#### Interview Process
+
+| Round | Duration | Focus |
+|-------|----------|-------|
+| Recruiter screen | 30 min | Background, availability, team preference |
+| Technical phone screen | 45-60 min | 1-2 LeetCode Medium/Hard problems (Swift/Obj-C/Java) |
+| On-site loop (6-7 rounds) | 6-8 hours | 4-5 coding, 1 system design, 1 hiring manager, 1 behavioral |
+| Team match / Direct offer | — | Team-specific alignment after passing HC |
+
+#### What Apple Looks For
+
+- **Craftsmanship** — Apple values beautifully written, production-quality code. Variable naming, edge-case handling, and code structure are scrutinized.
+- **Cross-functional thinking** — How does your feature interact with hardware, design, privacy, and accessibility?
+- **Product passion** — Apple interviewers expect you to use and understand Apple products deeply.
+- **Attention to detail** — Pixel-perfect, bit-perfect thinking. Edge cases matter.
+- **Privacy & security mindset** — Apple prioritizes on-device processing, minimal data collection, and user privacy.
+
+#### Sample Technical Problems
+
+**Problem: "Implement a thread-safe in-memory cache with LRU eviction policy."**
+Apple twists: "Now make it persist to disk" and "How does the cache behave under memory pressure on iOS?"
+
+```java
+import java.util.concurrent.*;
+import java.util.*;
+
+public class LRUCache<K, V> {
+    private final int capacity;
+    private final Map<K, V> cache = new ConcurrentHashMap<>();
+    private final Deque<K> order = new ConcurrentLinkedDeque<>();
+
+    public LRUCache(int capacity) { this.capacity = capacity; }
+
+    public synchronized V get(K key) {
+        if (!cache.containsKey(key)) return null;
+        order.remove(key);
+        order.addFirst(key);
+        return cache.get(key);
+    }
+
+    public synchronized void put(K key, V value) {
+        if (cache.containsKey(key)) {
+            order.remove(key);
+        } else if (cache.size() >= capacity) {
+            K oldest = order.removeLast();
+            cache.remove(oldest);
+        }
+        order.addFirst(key);
+        cache.put(key, value);
+    }
+}
+```
+
+**Problem: "Reverse a linked list."**
+Apple twist: "Now implement it recursively and explain the memory implications on a resource-constrained device."
+
+```java
+public class ReverseLinkedList {
+    public ListNode reverseList(ListNode head) {
+        ListNode prev = null, curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+
+    public ListNode reverseListRecursive(ListNode head) {
+        if (head == null || head.next == null) return head;
+        ListNode newHead = reverseListRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
+}
+```
+
+#### Sample HR / Behavioral Questions
+
+| Question | What They Are Testing |
+|----------|----------------------|
+| Tell me about a time you had to balance quality with shipping speed. | Craftsmanship vs. pragmatism |
+| Describe a project where you had to learn a new technology rapidly. | Adaptability, learning velocity |
+| How do you handle feedback on code you have written? | Ego, growth mindset |
+| Tell me about a time you advocated for a user-facing change. | Product passion, user empathy |
+| What Apple product do you love and what would you improve? | Product knowledge, critical thinking |
+
+#### Apple-Specific Tips
+
+- Study Apple's Human Interface Guidelines — they test design sensibility
+- Practice Swift or Objective-C if targeting iOS/macOS roles; Java/C++ for server-side
+- Know Apple's privacy stance — differential privacy, on-device ML, App Tracking Transparency
+- Be prepared for "surprise" rounds — you may meet a manager from a completely different team
+- Apple values tenure — demonstrate long-term thinking in your answers
+- **Key resources:** Apple's HIG (Human Interface Guidelines), WWDC sessions, Swift.org
+
+---
+
+### LinkedIn
+
+#### Interview Process
+
+| Round | Duration | Focus |
+|-------|----------|-------|
+| Recruiter call | 30 min | Background, role alignment |
+| Technical phone screen | 45-60 min | 1 LeetCode Medium + system design basics |
+| On-site loop (4-5 rounds) | 5 hours | 2 coding, 1 system design, 1 behavioral (values), 1 hiring manager |
+| Team selection | — | Cross-functional team matching |
+
+#### What LinkedIn Looks For
+
+- **Transformation** — LinkedIn's motto is "Transforming the way the world works." Candidates should show career growth and learning agility.
+- **Data-driven thinking** — Many problems involve graph algorithms (professional network), recommendation systems, and personalization.
+- **Professional impact** — How have you changed your previous teams or organizations?
+- **Collaboration** — Cross-team collaboration is central to LinkedIn's culture.
+- **Members first** — LinkedIn emphasizes member trust and experience over monetization.
+
+#### Sample Technical Problems
+
+**Problem: "Design a professional social network feed."**
+LinkedIn twist: "How do you rank content based on relevance, recency, and relationship strength?"
+
+```java
+// Simplified feed ranking model
+public class FeedRanker {
+    static class Post {
+        int authorId; long timestamp; int engagementScore;
+        int connectionStrength; // 0 = stranger, 10 = close connection
+        Post(int authorId, long ts, int score, int strength) {
+            this.authorId = authorId; this.timestamp = ts;
+            this.engagementScore = score; this.connectionStrength = strength;
+        }
+    }
+
+    public double calculateRelevance(Post p, long currentTime) {
+        double recencyWeight = 1.0 / (1 + Math.log(currentTime - p.timestamp + 1));
+        double engagementWeight = Math.log(p.engagementScore + 1) * 0.3;
+        double connectionWeight = p.connectionStrength * 0.5;
+        return recencyWeight + engagementWeight + connectionWeight;
+    }
+}
+```
+
+**Problem: "Find if a path exists between two nodes in a graph."**
+LinkedIn twist: "This represents a professional network. Now find the shortest path in terms of mutual connections."
+
+```java
+import java.util.*;
+
+public class ShortestConnectionPath {
+    public static int shortestPath(Map<Integer, List<Integer>> graph, int start, int end) {
+        Queue<Integer> queue = new LinkedList<>();
+        Set<Integer> visited = new HashSet<>();
+        Map<Integer, Integer> distance = new HashMap<>();
+        queue.offer(start);
+        visited.add(start);
+        distance.put(start, 0);
+        while (!queue.isEmpty()) {
+            int node = queue.poll();
+            if (node == end) return distance.get(node);
+            for (int neighbor : graph.getOrDefault(node, new ArrayList<>())) {
+                if (!visited.contains(neighbor)) {
+                    visited.add(neighbor);
+                    distance.put(neighbor, distance.get(node) + 1);
+                    queue.offer(neighbor);
+                }
+            }
+        }
+        return -1; // No connection path
+    }
+}
+```
+
+#### Sample HR / Behavioral Questions
+
+| Question | What They Are Testing |
+|----------|----------------------|
+| Tell me about a time you transformed a process or team. | Transformation value |
+| Describe a situation where you had to build consensus across teams. | Collaboration |
+| How do you make data-driven decisions? | Data-first mindset |
+| Tell me about a time you invested in someone else's growth. | Mentorship, leadership |
+| What do you think LinkedIn does wrong and how would you fix it? | Critical thinking, product sense |
+
+#### LinkedIn-Specific Tips
+
+- Study graph algorithms deeply (BFS, DFS, Dijkstra, PageRank, community detection)
+- Know LinkedIn's products: Recruiter, Sales Navigator, Learning, Premium
+- Practice system design for news feed, notification systems, and recommendation engines
+- Demonstrate career transformation in your narrative
+- **Key resources:** LinkedIn Engineering Blog, The Workforce Report, Graph algorithms practice
+
+---
+
+### Adobe
+
+#### Interview Process
+
+| Round | Duration | Focus |
+|-------|----------|-------|
+| Online assessment | 90-120 min | Coding problems + aptitude/logical reasoning |
+| Technical phone screen | 45-60 min | 1-2 LeetCode Medium problems |
+| On-site loop (4-5 rounds) | 5-6 hours | DS/Algo, system design, problem solving, managerial, HR |
+| Director round | 30-45 min | Vision, leadership, product thinking |
+
+#### What Adobe Looks For
+
+- **Innovation & creativity** — Adobe values novel solutions and creative problem-solving approaches
+- **Product thinking** — Candidates who understand design tools, creative workflows, and user experience
+- **Technical breadth** — Full-stack knowledge, cloud architecture, AI/ML integration
+- **Customer empathy** — Understanding creative professionals' needs and workflows
+- **Code quality** — Clean, maintainable, well-tested code is expected
+
+#### Sample Technical Problems
+
+**Problem: "Design a version control system for design files (like Figma's 'History')."**
+
+```java
+import java.util.*;
+
+public class DesignVersionControl {
+    static class Version {
+        int id;
+        byte[] snapshot;
+        long timestamp;
+        String author;
+        Version(int id, byte[] snapshot, String author) {
+            this.id = id; this.snapshot = snapshot;
+            this.timestamp = System.currentTimeMillis(); this.author = author;
+        }
+    }
+
+    private final List<Version> versions = new ArrayList<>();
+    private final Map<String, Integer> branchHeads = new HashMap<>();
+
+    public int commit(byte[] snapshot, String author, String branch) {
+        int id = versions.size();
+        versions.add(new Version(id, snapshot, author));
+        branchHeads.put(branch, id);
+        return id;
+    }
+
+    public Version getVersion(int id) {
+        if (id < 0 || id >= versions.size()) return null;
+        return versions.get(id);
+    }
+
+    public byte[] diff(int fromId, int toId) {
+        // Byte-level diff between two snapshots
+        Version v1 = getVersion(fromId);
+        Version v2 = getVersion(toId);
+        if (v1 == null || v2 == null) return null;
+        byte[] diff = new byte[Math.max(v1.snapshot.length, v2.snapshot.length)];
+        for (int i = 0; i < diff.length; i++) {
+            byte b1 = i < v1.snapshot.length ? v1.snapshot[i] : 0;
+            byte b2 = i < v2.snapshot.length ? v2.snapshot[i] : 0;
+            diff[i] = (byte) (b1 ^ b2);
+        }
+        return diff;
+    }
+}
+```
+
+**Problem: "Given a list of intervals, merge all overlapping intervals."**
+
+```java
+import java.util.*;
+
+public class MergeIntervals {
+    public static int[][] merge(int[][] intervals) {
+        if (intervals.length <= 1) return intervals;
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        List<int[]> merged = new ArrayList<>();
+        int[] current = intervals[0];
+        for (int i = 1; i < intervals.length; i++) {
+            if (intervals[i][0] <= current[1]) {
+                current[1] = Math.max(current[1], intervals[i][1]);
+            } else {
+                merged.add(current);
+                current = intervals[i];
+            }
+        }
+        merged.add(current);
+        return merged.toArray(new int[0][]);
+    }
+}
+```
+
+#### Sample HR / Behavioral Questions
+
+| Question | What They Are Testing |
+|----------|----------------------|
+| Describe a creative solution you developed for a difficult problem. | Innovation, creativity |
+| How do you handle competing priorities from multiple stakeholders? | Prioritization, communication |
+| Tell me about a time you used data to influence a product decision. | Data-driven mindset |
+| What is your favorite Adobe product and what would you change? | Product passion |
+| Describe a situation where you had to learn a new technology quickly. | Learning agility |
+
+#### Adobe-Specific Tips
+
+- Know Adobe's product ecosystem: Photoshop, Illustrator, Premiere Pro, Acrobat, Experience Cloud
+- Adobe values design thinking — practice product improvement discussions
+- System design questions often involve creative workflows, real-time collaboration, asset management
+- Demonstrate understanding of creative professionals' needs
+- **Key resources:** Adobe Tech Blog, Adobe I/O, Behance (understand the creative ecosystem)
+
+---
+
+### Salesforce
+
+#### Interview Process
+
+| Round | Duration | Focus |
+|-------|----------|-------|
+| Recruiter call | 30 min | Background check, role overview |
+| HackerRank / CodeSignal OA | 90 min | 2-3 coding problems |
+| Technical phone screen | 45-60 min | Algorithms + OOP + Apex basics for CRM roles |
+| On-site loop (4-5 rounds) | 5 hours | DS/Algo, system design, architecture, manager, HR |
+| Leadership round | 45 min | Vision, cultural fit, Ohana values |
+
+#### What Salesforce Looks For
+
+- **Ohana culture** — Family values: trust, customer success, innovation, equality, sustainability
+- **Platform thinking** — Understanding of multi-tenant architecture and metadata-driven development
+- **Enterprise mindset** — Reliability, security, compliance, and SLAs for mission-critical business data
+- **Trailblazer attitude** — Continuous learning, certification, community contribution
+- **Giving back** — Salesforce's 1-1-1 model (1% equity, product, employee time to community)
+
+#### Sample Technical Problems
+
+**Problem: "Design a multi-tenant database schema for a CRM platform."**
+
+```java
+// Simplified multi-tenant schema representation
+public class MultiTenantSchema {
+    // Approach 1: Shared table with tenant_id discriminator
+    static class AccountRecord {
+        String tenantId; String recordId;
+        String name; String industry; String phone;
+        Map<String, String> customFields; // Dynamic fields per tenant
+    }
+
+    // Approach 2: Metadata-driven (Salesforce's actual approach)
+    static class MetadataField {
+        String tenantId;
+        String objectType; // "Account", "Contact", etc.
+        String fieldName; String fieldType;
+        boolean isRequired; String defaultValue;
+    }
+
+    static class DataRecord {
+        String tenantId; String objectType;
+        Map<String, Object> fieldValues; // Keyed by fieldName
+    }
+
+    // Query with tenant isolation
+    public static String buildIsolatedQuery(String tenantId, String objectType) {
+        return "SELECT * FROM DataRecords WHERE tenantId = '" + tenantId
+             + "' AND objectType = '" + objectType + "'";
+    }
+}
+```
+
+**Problem: "Check if a string of parentheses is valid."**
+Salesforce twist: "Now support multiple bracket types and handle malformed XML-like tags."
+
+```java
+import java.util.*;
+
+public class ValidParentheses {
+    public static boolean isValid(String s) {
+        Map<Character, Character> map = Map.of(')', '(', '}', '{', ']', '[', '>', '<');
+        Deque<Character> stack = new ArrayDeque<>();
+        for (char c : s.toCharArray()) {
+            if (map.containsValue(c)) {
+                stack.push(c);
+            } else if (map.containsKey(c)) {
+                if (stack.isEmpty() || stack.pop() != map.get(c)) return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
+    // Extended: XML-like tag validation
+    public static boolean isValidXml(String s) {
+        Deque<String> stack = new ArrayDeque<>();
+        Matcher m = Pattern.compile("<(/)?(\\w+)>").matcher(s);
+        while (m.find()) {
+            if (m.group(1) == null) stack.push(m.group(2));
+            else if (stack.isEmpty() || !stack.pop().equals(m.group(2))) return false;
+        }
+        return stack.isEmpty();
+    }
+}
+```
+
+#### Sample HR / Behavioral Questions
+
+| Question | What They Are Testing |
+|----------|----------------------|
+| What does "Ohana" mean to you? | Cultural alignment |
+| Tell me about a time you went above and beyond for a customer. | Customer success value |
+| How do you contribute to your community? | Giving back, 1-1-1 model |
+| Describe a time you advocated for equality or inclusion. | Equality value |
+| What certifications have you pursued and why? | Trailblazer attitude, learning |
+
+#### Salesforce-Specific Tips
+
+- Earn Salesforce certifications (Admin, Platform App Builder, Developer I) — they significantly boost your profile
+- Understand multi-tenant architecture, governor limits, and SOQL
+- Know the Customer 360 platform — Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud
+- Practice Trailhead modules — Salesforce's free learning platform
+- **Key resources:** Salesforce Developer Blog, Trailhead, Salesforce Architects
+
+---
+
+### Oracle
+
+#### Interview Process
+
+| Round | Duration | Focus |
+|-------|----------|-------|
+| Recruiter screen | 30 min | Background, availability |
+| Online coding test | 60-90 min | 2-3 problems (Java/C++) |
+| Technical phone screen | 45-60 min | LeetCode Medium, SQL queries, database concepts |
+| On-site loop (4-5 rounds) | 5 hours | DS/Algo, system design, database internals, manager, HR |
+| Team match | — | Specific team alignment (OCI, Database, Cloud) |
+
+#### What Oracle Looks For
+
+- **Deep systems knowledge** — Operating systems, memory management, file systems, networking stack
+- **Database expertise** — SQL, indexing, query optimization, ACID, distributed transactions
+- **Java mastery** — Oracle is the steward of Java; deep Java knowledge (JVM, concurrency, memory model) is highly valued
+- **Cloud transformation** — Oracle Cloud Infrastructure (OCI) hires heavily for its cloud-native platform
+- **Enterprise reliability** — Five-nines availability, backup/recovery, disaster recovery expertise
+
+#### Sample Technical Problems
+
+**Problem: "Implement a thread-safe singleton pattern."**
+Oracle twist: "Explain the JVM memory model implications and why double-checked locking works in modern Java."
+
+```java
+public class DatabaseConnectionPool {
+    private static volatile DatabaseConnectionPool instance;
+    private final int maxConnections;
+    private int activeConnections;
+
+    private DatabaseConnectionPool(int maxConnections) {
+        this.maxConnections = maxConnections;
+    }
+
+    public static DatabaseConnectionPool getInstance(int maxConnections) {
+        if (instance == null) {
+            synchronized (DatabaseConnectionPool.class) {
+                if (instance == null) {
+                    instance = new DatabaseConnectionPool(maxConnections);
+                }
+            }
+        }
+        return instance;
+    }
+
+    public synchronized boolean acquireConnection() {
+        if (activeConnections < maxConnections) {
+            activeConnections++;
+            return true;
+        }
+        return false;
+    }
+
+    public synchronized void releaseConnection() {
+        if (activeConnections > 0) activeConnections--;
+    }
+}
+```
+
+**Problem: "Design a key-value store with persistence."**
+Oracle twist: "How would you implement write-ahead logging for crash recovery?"
+
+```java
+import java.util.concurrent.*;
+import java.io.*;
+
+public class PersistentKVStore {
+    private final ConcurrentHashMap<String, String> store = new ConcurrentHashMap<>();
+    private final String walPath;
+    private BufferedWriter walWriter;
+
+    public PersistentKVStore(String walPath) throws IOException {
+        this.walPath = walPath;
+        this.walWriter = new BufferedWriter(new FileWriter(walPath, true));
+        recoverFromWAL();
+    }
+
+    public void put(String key, String value) throws IOException {
+        store.put(key, value);
+        walWriter.write("PUT:" + key + ":" + value + "\n");
+        walWriter.flush();
+    }
+
+    public String get(String key) {
+        return store.get(key);
+    }
+
+    private void recoverFromWAL() throws IOException {
+        File walFile = new File(walPath);
+        if (!walFile.exists()) return;
+        try (BufferedReader reader = new BufferedReader(new FileReader(walFile))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(":", 3);
+                if (parts[0].equals("PUT") && parts.length == 3) {
+                    store.put(parts[1], parts[2]);
+                }
+            }
+        }
+    }
+}
+```
+
+#### Sample HR / Behavioral Questions
+
+| Question | What They Are Testing |
+|----------|----------------------|
+| What excites you about working at Oracle? | Cloud transformation alignment |
+| Describe a complex technical problem you solved that had no clear solution. | Deep system thinking |
+| How do you ensure code reliability in production? | Enterprise mindset, testing |
+| Tell me about a time you worked with a difficult stakeholder. | Professional communication |
+| Oracle is transitioning from on-prem to cloud — how do you see that future? | Strategic thinking |
+
+#### Oracle-Specific Tips
+
+- Oracle values Java depth — master JVM internals, garbage collection, concurrency, and the Collections framework
+- Database knowledge is essential — practice SQL optimization, indexing strategies, and query plans
+- For OCI roles, study cloud architecture, IaaS, PaaS, and Oracle Cloud services
+- Be ready for discussions on distributed systems, fault tolerance, and data consistency models
+- **Key resources:** Oracle Java Documentation, Oracle Dev Blog, Oracle Cloud Architecture
+
+---
+
+### NVIDIA
+
+#### Interview Process
+
+| Round | Duration | Focus |
+|-------|----------|-------|
+| Recruiter screen | 30 min | Background and technical alignment |
+| Technical phone screen | 45-60 min | C/C++ coding, algorithms, computer architecture |
+| On-site loop (5-6 rounds) | 6 hours | Low-level programming, CUDA/parallel computing, OS, system design, hiring manager, HR |
+| Presentation round | 45 min | Present past work / research (for GPU-computing roles) |
+
+#### What NVIDIA Looks For
+
+- **Low-level systems expertise** — Pointers, memory management, cache coherence, assembly-level understanding
+- **Parallel thinking** — Naturally write parallel code; understand warp scheduling, thread divergence, shared memory
+- **Computer architecture depth** — GPU architecture, memory hierarchy, pipeline, SIMT execution model
+- **Mathematical fluency** — Linear algebra, matrix operations, numerical methods for graphics/AI
+- **Optimization mindset** — Benchmarking, profiling, cycle-counting, memory bandwidth optimization
+- **Research background** — Publications in graphics, ML, robotics, or HPC are highly valued
+
+#### Sample Technical Problems
+
+**Problem: "Implement matrix multiplication."**
+NVIDIA twist: "Optimize for cache locality. Now describe how you would implement this on CUDA using shared memory."
+
+```java
+public class MatrixMultiplication {
+    // Cache-friendly: loop order i-k-j for row-major access
+    public static double[][] multiplyOptimized(double[][] A, double[][] B) {
+        int n = A.length, m = B[0].length, p = B.length;
+        double[][] C = new double[n][m];
+        for (int i = 0; i < n; i++) {
+            for (int k = 0; k < p; k++) {
+                double aik = A[i][k];
+                for (int j = 0; j < m; j++) {
+                    C[i][j] += aik * B[k][j];
+                }
+            }
+        }
+        return C;
+    }
+}
+```
+
+**Problem: "Find the maximum sum subarray (Kadane's Algorithm)."**
+NVIDIA twist: "Now implement it for a stream of data where you cannot store all elements."
+
+```java
+public class MaxSubarraySum {
+    public static int maxSubArray(int[] nums) {
+        int maxSoFar = nums[0], maxEndingHere = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            maxEndingHere = Math.max(nums[i], maxEndingHere + nums[i]);
+            maxSoFar = Math.max(maxSoFar, maxEndingHere);
+        }
+        return maxSoFar;
+    }
+
+    // Streaming version: O(1) space
+    public static int maxSubArrayStreaming(int[] nums) {
+        int maxSoFar = Integer.MIN_VALUE, maxEndingHere = 0;
+        for (int num : nums) {
+            maxEndingHere += num;
+            if (maxSoFar < maxEndingHere) maxSoFar = maxEndingHere;
+            if (maxEndingHere < 0) maxEndingHere = 0;
+        }
+        return maxSoFar;
+    }
+}
+```
+
+#### Sample HR / Behavioral Questions
+
+| Question | What They Are Testing |
+|----------|----------------------|
+| Describe a project where you had to optimize for performance. | Optimization mindset |
+| How do you debug a race condition in a multithreaded program? | Concurrency expertise |
+| Tell me about a time you worked at the intersection of hardware and software. | HW-SW co-design thinking |
+| How do you stay current with advances in AI/ML hardware? | Intellectual curiosity |
+| Describe the most performance-critical code you have ever written. | Low-level expertise |
+
+#### NVIDIA-Specific Tips
+
+- Master C/C++ (pointer arithmetic, memory layout, cache-friendly patterns)
+- Learn CUDA basics — threads, blocks, shared memory, warp divergence, memory coalescing
+- Study GPU architecture — understand the difference between CPU and GPU programming models
+- Practice bit manipulation and numerical computing problems
+- Read NVIDIA technical blogs and GTC conference talks
+- For AI roles: know TensorRT, cuDNN, CUDA programming model
+- **Key resources:** NVIDIA Developer Blog, CUDA Programming Guide, GTC talks
+
+---
+
+### Qualcomm
+
+#### Interview Process
+
+| Round | Duration | Focus |
+|-------|----------|-------|
+| Online coding test | 60-90 min | C/C++ coding, algorithms, basic electronics |
+| Technical phone screen | 45-60 min | Embedded C, memory management, OS concepts |
+| On-site loop (4-5 rounds) | 5 hours | Coding, embedded systems, RTOS, wireless protocols, manager, HR |
+| Technical deep-dive | 45 min | Past projects, system-level design decisions |
+
+#### What Qualcomm Looks For
+
+- **Embedded systems expertise** — Writing code for resource-constrained devices, memory management, interrupt handling
+- **Wireless communications** — Understanding of cellular protocols (4G/5G), WiFi, Bluetooth, GPS
+- **C/C++ mastery** — Almost all coding is in C/C++; no modern language features, no STL in embedded
+- **Hardware-software interface** — Reading datasheets, register-level programming, driver development
+- **Real-time constraints** — RTOS concepts, scheduling, priority inversion, deadlock prevention
+- **Power optimization** — Battery life, thermal management, low-power coding techniques
+
+#### Sample Technical Problems
+
+**Problem: "Implement a circular buffer for a real-time data stream."**
+Qualcomm twist: "Make it thread-safe with minimum locking and ensure no data loss on overflow (overwrite oldest)."
+
+```java
+public class CircularBuffer<T> {
+    private final T[] buffer;
+    private int head = 0, tail = 0, count = 0;
+    private final int capacity;
+
+    @SuppressWarnings("unchecked")
+    public CircularBuffer(int capacity) {
+        this.capacity = capacity;
+        buffer = (T[]) new Object[capacity];
+    }
+
+    public synchronized boolean write(T value) {
+        buffer[head] = value;
+        head = (head + 1) % capacity;
+        if (count < capacity) {
+            count++;
+        } else {
+            tail = (tail + 1) % capacity; // Overwrite oldest
+        }
+        return true;
+    }
+
+    public synchronized T read() {
+        if (count == 0) return null;
+        T value = buffer[tail];
+        tail = (tail + 1) % capacity;
+        count--;
+        return value;
+    }
+
+    public synchronized boolean isEmpty() { return count == 0; }
+    public synchronized boolean isFull() { return count == capacity; }
+}
+```
+
+**Problem: "Find the first non-repeating character in a string."**
+Qualcomm twist: "Now optimize for a streaming input from a low-bandwidth sensor."
+
+```java
+import java.util.*;
+
+public class FirstNonRepeating {
+    public static char firstNonRepeating(String s) {        Map<Character, Integer> count = new LinkedHashMap<>();
+        for (char c : s.toCharArray()) {
+            count.put(c, count.getOrDefault(c, 0) + 1);
+        }
+        for (Map.Entry<Character, Integer> entry : count.entrySet()) {
+            if (entry.getValue() == 1) return entry.getKey();
+        }
+        return '_'; // No non-repeating character
+    }
+
+    // Streaming version — processes characters one at a time
+    public static char firstNonRepeatingStreaming(Iterator<Character> stream) {
+        Map<Character, Integer> freq = new HashMap<>();
+        Queue<Character> queue = new LinkedList<>();
+        while (stream.hasNext()) {
+            char c = stream.next();
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+            queue.offer(c);
+            while (!queue.isEmpty() && freq.get(queue.peek()) > 1) {
+                queue.poll();
+            }
+        }
+        return queue.isEmpty() ? '_' : queue.peek();
+    }
+}
+```
+
+#### Sample HR / Behavioral Questions
+
+| Question | What They Are Testing |
+|----------|----------------------|
+| Describe a project where you worked under tight memory constraints. | Embedded experience |
+| How do you debug an intermittent crash in an embedded system? | Systematic debugging |
+| Tell me about a time you had to optimize for power consumption. | Power awareness |
+| How do you ensure code reliability when hardware is unavailable during testing? | Simulation, testing strategy |
+| What experience do you have with wireless protocols? | Domain relevance |
+
+#### Qualcomm-Specific Tips
+
+- C is the primary language — practice pointer arithmetic, memory management, bit manipulation
+- Study OS fundamentals deeply — scheduling, interrupts, memory management, semaphores
+- Learn about ARM architecture and compiler optimizations
+- Know the wireless protocol stack: Physical → MAC → Network → Transport
+- Power optimization is a recurring theme — study low-power design patterns
+- **Key resources:** Qualcomm Developer Network, Embedded C guides, ARM Architecture Reference
+
+---
+
+### Texas Instruments
+
+#### Interview Process
+
+| Round | Duration | Focus |
+|-------|----------|-------|
+| Online coding test | 60 min | C coding, basic electronics, aptitude |
+| Technical phone/online interview | 45-60 min | Embedded C, microcontrollers, analog/digital concepts |
+| On-site loop (3-4 rounds) | 4 hours | Coding, embedded systems, analog/digital circuits, HR |
+| Manager round | 30-45 min | Project discussion, domain alignment |
+
+#### What Texas Instruments Looks For
+
+- **Analog + digital knowledge** — Understanding of both hardware (circuits, signals) and software (firmware, drivers)
+- **Microcontroller expertise** — MSP430, Tiva C, C2000, or ARM Cortex-M series familiarity
+- **Firmware development** — Bare-metal programming, register-level control, interrupt service routines
+- **Real-time control** — Motor control, power management, sensor data acquisition
+- **Low-power design** — Battery-powered device optimization, sleep modes, energy harvesting
+- **Signal processing fundamentals** — ADC/DAC, filters, PWM, timers, comparators
+
+#### Sample Technical Problems
+
+**Problem: "Implement a function to toggle an LED using a timer interrupt."**
+TI twist: "This is real — you will do this on actual TI hardware during the interview."
+
+```java
+// Conceptual representation of timer-based LED toggle on a microcontroller
+public class TimerLED {
+    private boolean ledState = false;
+    private int timerCounter = 0;
+    private final int TIMER_PERIOD = 1000; // 1 second at 1kHz
+
+    // Called by timer ISR at 1kHz
+    public void timerInterruptHandler() {
+        timerCounter++;
+        if (timerCounter >= TIMER_PERIOD) {
+            timerCounter = 0;
+            ledState = !ledState;
+            writeGPIO(ledState); // Set GPIO pin high/low
+        }
+    }
+
+    private void writeGPIO(boolean state) {
+        System.out.println("LED " + (state ? "ON" : "OFF"));
+    }
+}
+```
+
+**Problem: "Reverse a string in place without using any library functions."**
+TI twist: "Now do it in constant memory — you only have 256 bytes of SRAM."
+
+```java
+public class ReverseString {
+    public static void reverse(char[] s) {
+        int left = 0, right = s.length - 1;
+        while (left < right) {
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+            left++;
+            right--;
+        }
+    }
+}
+```
+
+#### Sample HR / Behavioral Questions
+
+| Question | What They Are Testing |
+|----------|----------------------|
+| Describe a project where you interfaced software with hardware. | HW-SW integration |
+| How do you approach debugging when you don't have an oscilloscope? | Problem-solving with limited tools |
+| Tell me about a time you had to meet a hard real-time deadline. | Real-time constraints |
+| What experience do you have with analog circuits? | Hardware background |
+| How do you document firmware so others can maintain it? | Code quality, documentation |
+
+#### Texas Instruments-Specific Tips
+
+- Learn about TI's microcontroller families: MSP430 (ultra-low power), Tiva C (ARM Cortex-M), C2000 (real-time control)
+- Practice reading datasheets and application notes — this is a daily skill at TI
+- Understand ADC/DAC concepts, PWM generation, timer configurations, and serial protocols (I2C, SPI, UART)
+- Low-power design is central — study sleep modes, wake-up sources, and energy efficiency
+- TI values hands-on hardware experience — mention any PCB design, soldering, or lab work
+- **Key resources:** TI E2E Community, TI Application Notes, MSP430 and Tiva C LaunchPad tutorials
+
+---
+
+## Resources for Semiconductor & Enterprise
+
+- **Semiconductor interviews:** "Cracking the Embedded Software Engineering Interview" — specific to embedded roles
+- **CUDA resources:** NVIDIA's CUDA Programming Guide, Udacity's CUDA course
+- **Enterprise system design:** "Designing Data-Intensive Applications" by Martin Kleppmann
+- **Wireless/Telecom:** Qualcomm's Wireless Academy, 3GPP specifications
+- **Hardware tinkering:** TI LaunchPad kits, Arduino, Raspberry Pi for hands-on experience
+- **Mock interviews:** Pramp (general), InterviewBit (system design), LeetCode (DS/Algo)
 
 ---
 

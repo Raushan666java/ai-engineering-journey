@@ -1193,7 +1193,7 @@ Answer: 12 (a)
 
 ---
 
-> **Next chapter:** `02-group-discussions.md` — Group Discussions, Case Studies, and Personal Interview preparation.
+> **Next chapter:** [`06-hr-gd-soft-skills.md`](06-hr-gd-soft-skills.md) — Group Discussions, Case Studies, and HR Interview preparation.
 
 ---
 
@@ -2560,3 +2560,170 @@ Object-Oriented Programming, User Interface Design, Cloud Computing
 - Competitive programming (CF 1400+ rating)
 - Playing acoustic guitar and photography
 ```
+
+---
+
+## 6. Cover Letter Writing
+
+A well-written cover letter can differentiate you when 200+ candidates have identical GPAs and similar project lists. Service-based companies rarely read them, but product companies and startups often do — especially for off-campus applications.
+
+### 6.1 The 4-Paragraph Formula
+
+| Paragraph | Purpose | Length |
+|-----------|---------|--------|
+| 1 — Hook | Express interest in the specific role/company. Name the product or team. | 2-3 sentences |
+| 2 — Relevance | Connect your strongest project/internship to the role's requirements. | 3-4 sentences |
+| 3 — Differentiation | Highlight one unique skill or experience that sets you apart. | 2-3 sentences |
+| 4 — Close | Restate enthusiasm, mention attached resume, thank them. | 2 sentences |
+
+### 6.2 Cover Letter Templates
+
+**Generic Campus Placement:**
+> Dear Hiring Manager,
+>
+> I am a final-year Computer Science student at [College Name] with a strong foundation in data structures, algorithms, and full-stack development. I am writing to express my interest in the Software Development Engineer role at [Company].
+>
+> During my internship at [Company], I built a [project description] that reduced [metric] by [X]%. This experience taught me to write production-grade code, collaborate across teams, and ship under deadlines — skills I am eager to bring to [Company].
+>
+> I am particularly drawn to [Company]'s work on [specific product/tech]. As someone who [relevant side project / open source contribution], I would love the opportunity to contribute to [Team/Product].
+>
+> I have attached my resume for your reference. Thank you for your time and consideration.
+>
+> Best regards,
+> [Your Name]
+
+**Off-Campus / Cold Application:**
+> Dear [Name],
+>
+> I have been following [Company]'s engineering blog and was impressed by your recent work on [specific article/feature]. As a final-year CS student who has built [relevant project], I believe I could contribute meaningfully to your team.
+>
+> In my recent project, [Project Name], I [describe achievement with metrics]. This required [relevant skills] — the same technologies your team uses based on the job description.
+>
+> I understand you are hiring for [Role]. I have attached my resume detailing my experience. I would welcome the opportunity to discuss how my skills align with [Company]'s needs.
+>
+> Thank you for your consideration.
+>
+> Best,
+> [Your Name]
+
+### 6.3 Cover Letter Do's and Don'ts
+
+| Do | Don't |
+|----|-------|
+| Address a specific person if possible | Use "To Whom It May Concern" |
+| Mention the company's product/tech | Copy-paste generic paragraphs |
+| Quantify achievements | List responsibilities like a resume |
+| Keep to 1 page max | Exceed 300 words |
+| Proofread twice | Have typos or grammatical errors |
+| Use the same header as your resume | Use a different name/email format |
+
+---
+
+## 7. GitHub Profile Optimization
+
+Your GitHub profile is often the second thing a recruiter looks at after your resume. A well-maintained profile can significantly boost your shortlisting chances at product-based companies and startups.
+
+### 7.1 Profile Essentials
+
+- **Profile README**: Create a `[username]/[username]` repository with a README that summarizes your skills, pinned projects, and GitHub stats. Use GitHub Actions to auto-update with recent activity.
+- **Professional Photo**: Use the same photo as LinkedIn/resume for consistency.
+- **Bio**: 1-2 lines summarizing your focus area (e.g., "Full-stack engineer building developer tools. GATE 2025 aspirant. Open-source contributor.")
+- **Pinned Repositories**: Pin your best 6 repos — at least 3 should be non-trivial projects (not tutorial clones).
+
+**Example Profile README snippet:**
+```markdown
+### Hi there 👋
+
+I'm a Computer Science student passionate about distributed systems and developer tooling.
+
+🔭 Currently working on: [Project Name] — a real-time collaborative code editor
+🌱 Learning: System Design, Kubernetes, Apache Kafka
+👯 Looking to collaborate on: Open-source developer tools
+📫 Reach me: [email] | [LinkedIn] | [Portfolio]
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&layout=compact)
+```
+
+### 7.2 Project README Standards
+
+Every pinned project should have:
+- Clear one-line description
+- Tech stack badges (shields.io)
+- Screenshots or demo GIF
+- Installation instructions
+- Live demo link (if deployed)
+- Clear `CONTRIBUTING.md` and `LICENSE`
+
+### 7.3 Contribution Graph
+
+A green contribution graph signals consistency. Aim for:
+- At least 1 commit per day (even documentation fixes count)
+- Contribute to open-source projects (first-timers-only labeled issues are great starting points)
+- Keep your own projects active with regular updates
+
+### 7.4 Common Mistakes
+
+| Mistake | Fix |
+|---------|-----|
+| All repos are forks | Fork only to contribute; delete unused forks |
+| No pinned projects | Pin your best 6 repos immediately |
+| Empty README files | Every repo needs at least a README |
+| Tutorial projects as main repos | Build 2-3 original projects minimum |
+| No commit history for months | Regular activity matters more than volume |
+| Using default profile pic | Add a professional photo or consistent avatar |
+
+---
+
+## 8. ATS Optimization Strategy
+
+Applicant Tracking Systems (ATS) filter resumes before they reach human recruiters. Understanding how ATS works is critical — especially for service-based and large product companies.
+
+### 8.1 How ATS Parses Resumes
+
+ATS software extracts the following fields from your resume:
+- **Contact Info**: Name, email, phone, LinkedIn, GitHub
+- **Work Experience**: Company, title, dates, description
+- **Education**: Institution, degree, GPA, dates
+- **Skills**: Keyword matching against job description
+- **Certifications**: Extracted from dedicated section
+
+### 8.2 ATS-Friendly Formatting Rules
+
+| Rule | Why |
+|------|-----|
+| Use standard section headers (EXPERIENCE, EDUCATION, SKILLS) | ATS looks for these exact labels |
+| Save as .docx or plain PDF (text-based, not scanned) | Scanned PDFs and images cannot be parsed |
+| No tables, columns, or text boxes | ATS reads left-to-right, top-to-bottom |
+| No headers/footers with critical info | Many ATS skip header/footer content |
+| Standard fonts only (Arial, Calibri, Times New Roman) | Unusual fonts may not render in ATS preview |
+| Bullet points using standard characters ( - * • ) | Custom bullet symbols may be skipped |
+| Spell out acronyms at least once (e.g., "AWS (Amazon Web Services)") | ATS may match "AWS" or "Amazon Web Services" |
+| Include a Keywords section or skill tags | Direct keyword matching is how ATS scores resumes |
+
+### 8.3 Keyword Optimization Process
+
+1. **Extract keywords** from the job description: Required skills, tools, methodologies, domain terms
+2. **Map to your resume**: Ensure each keyword appears naturally in your experience or skills section
+3. **Prioritize**: Required skills > nice-to-have > domain buzzwords
+4. **Verify**: The job description contains 80%+ of the skills you list
+
+**Example**: If the JD asks for "Java, Spring Boot, REST APIs, Microservices, Docker, Kubernetes, CI/CD, MySQL, Redis, Kafka":
+- Your SKILLS section must list these exact terms
+- Your EXPERIENCE bullets should use these terms contextually (e.g., "Built REST APIs using Spring Boot and deployed on Kubernetes")
+
+### 8.4 ATS Score Improvement Checklist
+
+- [ ] Resume is a single column layout
+- [ ] No images, icons, or graphics
+- [ ] All section headers are standard
+- [ ] Keywords from target job description are included
+- [ ] File name is `FirstName_LastName_Resume.pdf` or `FirstName_LastName_CompanyName.pdf`
+- [ ] No special characters in file name
+- [ ] PDF is text-selectable (not scanned)
+- [ ] Contact info is in the top header area
+- [ ] Education includes CGPA in standard format (e.g., 8.5/10 or 85%)
+- [ ] Dates use consistent format (e.g., "Jun 2024 - Aug 2024")
+- [ ] No password protection on the PDF
+- [ ] Resume passes through an ATS simulator (try jobscan.co or resumeworded.com)
+

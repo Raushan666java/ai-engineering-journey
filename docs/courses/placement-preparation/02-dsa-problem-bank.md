@@ -1,6 +1,6 @@
 ﻿# DSA Coding Problem Bank for Placement Interviews
 
-> **75 curated problems** â€” Arrays, Strings, Linked Lists, Trees, Dynamic Programming, Graphs, Stack/Queue/Heap, Searching & Sorting, and Miscellaneous. Every solution includes a complete, compilable Java class with `main` method, complexity analysis, and company tags.
+> **125 curated problems** — Arrays, Strings, Linked Lists, Trees, Dynamic Programming, Graphs, Stack/Queue/Heap, Searching & Sorting, Miscellaneous, Low-Level Design & OOP (Q101-Q115), and Concurrency & Multithreading (Q116-Q125). Every solution includes a complete, compilable Java class with main method, complexity analysis, and company tags.
 
 ---
 
@@ -4982,3 +4982,2733 @@ class Trie {
 ---
 
 > **How to use this sheet:** Read a problem â†’ identify the pattern â†’ apply the template â†’ adapt. With practice, the mapping from problem to pattern becomes automatic. Most hard problems combine two patterns (e.g., BFS + Topological Sort, Sliding Window + HashMap, Two Pointers + Greedy).
+
+
+---
+
+## Low-Level Design & OOP Problems
+
+### Q101: Design a Parking Lot
+
+**Problem:** Design a parking lot with multiple floors and spots for different vehicle types (Car, Bike, Truck). Support parking/unparking, tracking available spots, and calculating fees. Use strategy pattern for pricing (hourly vs. per-minute).
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Google · Uber
+
+**Design Patterns:** Strategy (pricing), Singleton (parking lot instance), Factory (vehicle creation), Enum for spot types
+
+```java
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicLong;
+
+enum VehicleType { CAR, BIKE, TRUCK }
+
+enum SpotStatus { AVAILABLE, OCCUPIED }
+
+abstract class Vehicle {
+    String licensePlate; VehicleType type;
+    Vehicle(String licensePlate, VehicleType type) { this.licensePlate = licensePlate; this.type = type; }
+}
+
+class Car extends Vehicle { Car(String plate) { super(plate, VehicleType.CAR); } }
+class Bike extends Vehicle { Bike(String plate) { super(plate, VehicleType.BIKE); } }
+class Truck extends Vehicle { Truck(String plate) { super(plate, VehicleType.TRUCK); } }
+
+class ParkingSpot {
+    int id, floor; VehicleType spotType; SpotStatus status; Vehicle vehicle; long parkedTime;
+    ParkingSpot(int id, int floor, VehicleType spotType) {
+        this.id = id; this.floor = floor; this.spotType = spotType; this.status = SpotStatus.AVAILABLE;
+    }
+    synchronized boolean park(Vehicle v) {
+        if (status != SpotStatus.AVAILABLE || v.type != spotType) return false;
+        this.vehicle = v; this.status = SpotStatus.OCCUPIED; this.parkedTime = System.currentTimeMillis();
+        return true;
+    }
+    synchronized Vehicle unpark() {
+        if (status != SpotStatus.OCCUPIED) return null;
+        Vehicle v = this.vehicle; this.vehicle = null; this.status = SpotStatus.AVAILABLE;
+        return v;
+    }
+    long getParkedDuration() { return System.currentTimeMillis() - parkedTime; }
+}
+
+interface PricingStrategy { double calculateFee(long durationMs); }
+
+class HourlyPricing implements PricingStrategy {
+    public double calculateFee(long durationMs) {
+        long hours = (long) Math.ceil(durationMs / (1000.0 * 3600));
+        return Math.max(1, hours) * 10.0;
+    }
+}
+
+class PerMinutePricing implements PricingStrategy {
+    public double calculateFee(long durationMs) {
+        long minutes = durationMs / (1000 * 60);
+        return Math.max(1, minutes) * 0.5;
+    }
+}
+
+class ParkingLot {
+    private static ParkingLot instance;
+    private List<ParkingSpot> spots;
+    private Map<String, ParkingSpot> activeVehicles = new ConcurrentHashMap<>();
+    private PricingStrategy pricingStrategy;
+
+    private ParkingLot() {
+        spots = new ArrayList<>();
+        pricingStrategy = new HourlyPricing();
+        int id = 0;
+        for (int f = 0; f < 3; f++)
+            for (int i = 0; i < 10; i++) spots.add(new ParkingSpot(id++, f, VehicleType.CAR));
+        for (int f = 0; f < 3; f++)
+            for (int i = 0; i < 5; i++) spots.add(new ParkingSpot(id++, f, VehicleType.BIKE));
+        for (int f = 0; f < 2; f++)
+            for (int i = 0; i < 3; i++) spots.add(new ParkingSpot(id++, f, VehicleType.TRUCK));
+    }
+
+    public static synchronized ParkingLot getInstance() {
+        if (instance == null) instance = new ParkingLot();
+        return instance;
+    }
+
+    void setPricingStrategy(PricingStrategy ps) { this.pricingStrategy = ps; }
+
+    ParkingSpot park(Vehicle v) {
+        for (ParkingSpot spot : spots) {
+            if (spot.spotType == v.type && spot.status == SpotStatus.AVAILABLE) {
+                if (spot.park(v)) { activeVehicles.put(v.licensePlate, spot); return spot; }
+            }
+        }
+        return null;
+    }
+
+    double unpark(String licensePlate) {
+        ParkingSpot spot = activeVehicles.get(licensePlate);
+        if (spot == null) throw new IllegalArgumentException("Vehicle not found");
+        long duration = spot.getParkedDuration();
+        spot.unpark();
+        activeVehicles.remove(licensePlate);
+        return pricingStrategy.calculateFee(duration);
+    }
+
+    int availableSpots(VehicleType type) {
+        return (int) spots.stream().filter(s -> s.spotType == type && s.status == SpotStatus.AVAILABLE).count();
+    }
+
+    public static void main(String[] args) throws Exception {
+        ParkingLot lot = ParkingLot.getInstance();
+        Car car1 = new Car("KA-01-1234");
+        Car car2 = new Car("KA-01-5678");
+        Bike bike = new Bike("KA-02-9999");
+
+        ParkingSpot s1 = lot.park(car1);
+        System.out.println("Parked car1 at spot " + s1.id + " floor " + s1.floor);
+        ParkingSpot s2 = lot.park(car2);
+        System.out.println("Parked car2 at spot " + s2.id);
+        ParkingSpot s3 = lot.park(bike);
+        System.out.println("Parked bike at spot " + s3.id + " floor " + s3.floor);
+        System.out.println("Available car spots: " + lot.availableSpots(VehicleType.CAR));
+
+        Thread.sleep(100);
+        double fee = lot.unpark("KA-01-1234");
+        System.out.println("Car1 unparked, fee: $" + String.format("%.2f", fee));
+
+        lot.setPricingStrategy(new PerMinutePricing());
+        double fee2 = lot.unpark("KA-01-5678");
+        System.out.println("Car2 unparked (per-min), fee: $" + String.format("%.2f", fee2));
+    }
+}
+```
+
+**Design Patterns:** Singleton for ParkingLot, Strategy for pricing, composition over inheritance with Vehicle base class, Enum for type safety.
+
+---
+
+### Q102: Design a Library Management System
+
+**Problem:** Design a library system with books, members, librarians. Support borrowing/returning books with due dates, fines for overdue books, searching by title/author, and managing book inventory.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Flipkart
+
+**Design Patterns:** Repository pattern for data access, Factory for book creation, Singleton for catalog
+
+```java
+import java.time.*;
+import java.time.temporal.ChronoUnit;
+import java.util.*;
+import java.util.stream.*;
+
+enum BookStatus { AVAILABLE, BORROWED, RESERVED, LOST }
+enum AccountStatus { ACTIVE, CLOSED, SUSPENDED }
+
+class Book {
+    String isbn, title, author, publisher; int publicationYear;
+    BookStatus status; Member borrowedBy; LocalDate dueDate;
+    Book(String isbn, String title, String author, String publisher, int year) {
+        this.isbn = isbn; this.title = title; this.author = author;
+        this.publisher = publisher; this.publicationYear = year; this.status = BookStatus.AVAILABLE;
+    }
+}
+
+class Member {
+    String id, name, email; AccountStatus status; List<Book> borrowedBooks = new ArrayList<>();
+    Member(String id, String name, String email) { this.id = id; this.name = name; this.status = AccountStatus.ACTIVE; }
+    boolean canBorrow() { return status == AccountStatus.ACTIVE && borrowedBooks.size() < 5; }
+}
+
+class LibraryCatalog {
+    Map<String, Book> booksByIsbn = new HashMap<>();
+    List<Book> allBooks = new ArrayList<>();
+
+    void addBook(Book b) { booksByIsbn.put(b.isbn, b); allBooks.add(b); }
+    Book findByIsbn(String isbn) { return booksByIsbn.get(isbn); }
+    List<Book> searchByTitle(String title) {
+        return allBooks.stream().filter(b -> b.title.toLowerCase().contains(title.toLowerCase())).collect(Collectors.toList());
+    }
+    List<Book> searchByAuthor(String author) {
+        return allBooks.stream().filter(b -> b.author.toLowerCase().contains(author.toLowerCase())).collect(Collectors.toList());
+    }
+}
+
+class FineCalculator {
+    static final double FINE_PER_DAY = 5.0;
+    static double calculateFine(Book book) {
+        if (book.dueDate == null || book.status != BookStatus.BORROWED) return 0;
+        long overdueDays = ChronoUnit.DAYS.between(book.dueDate, LocalDate.now());
+        return Math.max(0, overdueDays) * FINE_PER_DAY;
+    }
+}
+
+class Library {
+    LibraryCatalog catalog = new LibraryCatalog();
+    Map<String, Member> members = new HashMap<>();
+
+    void addMember(Member m) { members.put(m.id, m); }
+
+    boolean borrowBook(String memberId, String isbn) {
+        Member member = members.get(memberId);
+        Book book = catalog.findByIsbn(isbn);
+        if (member == null || book == null || !member.canBorrow() || book.status != BookStatus.AVAILABLE) return false;
+        book.status = BookStatus.BORROWED;
+        book.borrowedBy = member;
+        book.dueDate = LocalDate.now().plusDays(14);
+        member.borrowedBooks.add(book);
+        return true;
+    }
+
+    double returnBook(String memberId, String isbn) {
+        Member member = members.get(memberId);
+        Book book = catalog.findByIsbn(isbn);
+        if (member == null || book == null || book.status != BookStatus.BORROWED) return -1;
+        double fine = FineCalculator.calculateFine(book);
+        book.status = BookStatus.AVAILABLE;
+        book.borrowedBy = null;
+        book.dueDate = null;
+        member.borrowedBooks.remove(book);
+        return fine;
+    }
+
+    public static void main(String[] args) {
+        Library lib = new Library();
+        lib.catalog.addBook(new Book("978-0", "Clean Code", "Robert Martin", "Prentice Hall", 2008));
+        lib.catalog.addBook(new Book("978-1", "Design Patterns", "Gang of Four", "Addison-Wesley", 1994));
+        lib.addMember(new Member("M1", "Alice", "alice@x.com"));
+        lib.addMember(new Member("M2", "Bob", "bob@x.com"));
+
+        boolean borrowed = lib.borrowBook("M1", "978-0");
+        System.out.println("Alice borrowed Clean Code: " + borrowed);
+
+        List<Book> results = lib.catalog.searchByTitle("design");
+        System.out.println("Search 'design': " + results.stream().map(b -> b.title).collect(Collectors.toList()));
+
+        double fine = lib.returnBook("M1", "978-0");
+        System.out.println("Returned Clean Code, fine: $" + String.format("%.2f", fine));
+    }
+}
+```
+
+**Design Patterns:** Repository (catalog abstraction), single responsibility (FineCalculator separate), immutable Book state management.
+
+---
+
+### Q103: Design a Vending Machine
+
+**Problem:** Design a vending machine that accepts coins, dispenses products, tracks inventory, handles change, and supports multiple states (idle, selecting, dispensing, refund).
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Flipkart
+
+**Design Patterns:** State pattern for machine states, Singleton, Factory for product creation
+
+```java
+import java.util.*;
+import java.util.stream.*;
+
+enum Coin { PENNY(1), NICKEL(5), DIME(10), QUARTER(25);
+    final int value; Coin(int v) { this.value = v; }
+}
+
+enum Product { COKE(25), PEPSI(35), SODA(45), WATER(20);
+    final int price; Product(int p) { this.price = p; }
+}
+
+class Inventory<T> {
+    Map<T, Integer> stock = new HashMap<>();
+    void add(T item, int count) { stock.put(item, stock.getOrDefault(item, 0) + count); }
+    boolean hasItem(T item) { return stock.getOrDefault(item, 0) > 0; }
+    void deduct(T item) { if (hasItem(item)) stock.put(item, stock.get(item) - 1); }
+    int getCount(T item) { return stock.getOrDefault(item, 0); }
+}
+
+interface VendingState { void selectProduct(Product p); void insertCoin(Coin c); Product dispense(); List<Coin> refund(); }
+
+class IdleState implements VendingState {
+    VendingMachine vm;
+    IdleState(VendingMachine vm) { this.vm = vm; }
+    public void selectProduct(Product p) {
+        if (!vm.inventory.hasItem(p)) { System.out.println("Out of stock"); return; }
+        vm.selectedProduct = p; vm.setState(vm.selectingState);
+        System.out.println("Selected " + p + ", price: " + p.price + "¢");
+    }
+    public void insertCoin(Coin c) { System.out.println("Select product first"); }
+    public Product dispense() { System.out.println("Select product first"); return null; }
+    public List<Coin> refund() { System.out.println("No money to refund"); return List.of(); }
+}
+
+class SelectingState implements VendingState {
+    VendingMachine vm;
+    SelectingState(VendingMachine vm) { this.vm = vm; }
+    public void selectProduct(Product p) { System.out.println("Already selected " + vm.selectedProduct); }
+    public void insertCoin(Coin c) {
+        vm.balance += c.value;
+        System.out.println("Inserted " + c + " (" + c.value + "¢), balance: " + vm.balance + "¢");
+        if (vm.balance >= vm.selectedProduct.price) vm.setState(vm.dispensingState);
+    }
+    public Product dispense() {
+        if (vm.balance < vm.selectedProduct.price) { System.out.println("Insufficient balance"); return null; }
+        return vm.dispensingState.dispense();
+    }
+    public List<Coin> refund() { vm.setState(vm.refundState); return vm.refundState.refund(); }
+}
+
+class DispensingState implements VendingState {
+    VendingMachine vm;
+    DispensingState(VendingMachine vm) { this.vm = vm; }
+    public void selectProduct(Product p) { System.out.println("Dispensing, wait"); }
+    public void insertCoin(Coin c) { System.out.println("Dispensing, wait"); }
+    public Product dispense() {
+        vm.inventory.deduct(vm.selectedProduct);
+        int change = vm.balance - vm.selectedProduct.price;
+        vm.balance = 0;
+        Product p = vm.selectedProduct;
+        vm.selectedProduct = null;
+        vm.setState(vm.idleState);
+        System.out.println("Dispensed " + p + ", change: " + change + "¢");
+        return p;
+    }
+    public List<Coin> refund() { System.out.println("Already dispensing"); return List.of(); }
+}
+
+class RefundState implements VendingState {
+    VendingMachine vm;
+    RefundState(VendingMachine vm) { this.vm = vm; }
+    public void selectProduct(Product p) { System.out.println("Refunding, wait"); }
+    public void insertCoin(Coin c) { System.out.println("Refunding, wait"); }
+    public Product dispense() { System.out.println("Refunding, wait"); return null; }
+    public List<Coin> refund() {
+        int amount = vm.balance;
+        vm.balance = 0;
+        vm.selectedProduct = null;
+        vm.setState(vm.idleState);
+        List<Coin> coins = new ArrayList<>();
+        while (amount >= 25) { coins.add(Coin.QUARTER); amount -= 25; }
+        while (amount >= 10) { coins.add(Coin.DIME); amount -= 10; }
+        while (amount >= 5) { coins.add(Coin.NICKEL); amount -= 5; }
+        while (amount >= 1) { coins.add(Coin.PENNY); amount -= 1; }
+        System.out.println("Refunded " + coins.size() + " coins");
+        return coins;
+    }
+}
+
+class VendingMachine {
+    Inventory<Product> inventory = new Inventory<>();
+    int balance;
+    Product selectedProduct;
+    VendingState idleState, selectingState, dispensingState, refundState;
+    VendingState currentState;
+
+    VendingMachine() {
+        idleState = new IdleState(this);
+        selectingState = new SelectingState(this);
+        dispensingState = new DispensingState(this);
+        refundState = new RefundState(this);
+        currentState = idleState;
+        inventory.add(Product.COKE, 5);
+        inventory.add(Product.PEPSI, 3);
+        inventory.add(Product.SODA, 2);
+    }
+
+    void setState(VendingState s) { this.currentState = s; }
+    void selectProduct(Product p) { currentState.selectProduct(p); }
+    void insertCoin(Coin c) { currentState.insertCoin(c); }
+    Product dispense() { return currentState.dispense(); }
+    List<Coin> refund() { return currentState.refund(); }
+
+    public static void main(String[] args) {
+        VendingMachine vm = new VendingMachine();
+        vm.selectProduct(Product.COKE);
+        vm.insertCoin(Coin.QUARTER);
+        vm.dispense();
+        System.out.println("---");
+        vm.selectProduct(Product.PEPSI);
+        vm.insertCoin(Coin.DIME);
+        vm.insertCoin(Coin.DIME);
+        vm.insertCoin(Coin.DIME);
+        vm.insertCoin(Coin.NICKEL);
+        vm.dispense();
+        System.out.println("---");
+        vm.selectProduct(Product.SODA);
+        System.out.println("Refunding...");
+        List<Coin> refund = vm.refund();
+        System.out.println("Got back " + refund.size() + " coins");
+    }
+}
+```
+
+**Design Patterns:** State (machine states as objects), Strategy (implicit in state transitions), Singleton (single VM instance).
+
+---
+
+### Q104: Design a Snake & Ladder Game
+
+**Problem:** Design Snake & Ladder with N players, configurable board size, snakes and ladders placed randomly, dice rolls, and turn-based play. Track winner and game state.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Uber
+
+**Design Patterns:** Command (dice roll), Observer (notify players), Singleton (game)
+
+```java
+import java.util.*;
+
+class Dice {
+    private Random rand = new Random();
+    int roll() { return rand.nextInt(6) + 1; }
+}
+
+class Player {
+    String name; int position;
+    Player(String name) { this.name = name; this.position = 0; }
+}
+
+class Snake {
+    int head, tail;
+    Snake(int head, int tail) { this.head = head; this.tail = tail; }
+}
+
+class Ladder {
+    int bottom, top;
+    Ladder(int bottom, int top) { this.bottom = bottom; this.top = top; }
+}
+
+class Board {
+    int size;
+    Map<Integer, Integer> snakes = new HashMap<>();
+    Map<Integer, Integer> ladders = new HashMap<>();
+
+    Board(int size) {
+        this.size = size;
+        initializeSnakesAndLadders();
+    }
+
+    private void initializeSnakesAndLadders() {
+        int[][] snakePos = {{99, 54}, {95, 75}, {80, 59}, {49, 11}, {32, 10}, {28, 4}};
+        for (int[] s : snakePos) snakes.put(s[0], s[1]);
+        int[][] ladderPos = {{2, 38}, {7, 14}, {8, 31}, {15, 26}, {21, 42}, {36, 44}, {51, 67}, {71, 91}, {78, 98}, {87, 94}};
+        for (int[] l : ladderPos) ladders.put(l[0], l[1]);
+    }
+
+    int getFinalPosition(int pos) {
+        if (snakes.containsKey(pos)) { System.out.println("Snake! " + pos + " -> " + snakes.get(pos)); return snakes.get(pos); }
+        if (ladders.containsKey(pos)) { System.out.println("Ladder! " + pos + " -> " + ladders.get(pos)); return ladders.get(pos); }
+        return pos;
+    }
+}
+
+class Game {
+    Board board; Dice dice; List<Player> players; int currentPlayerIdx; boolean gameOver;
+    static final int WINNING_POSITION = 100;
+
+    Game(int boardSize, List<String> playerNames) {
+        board = new Board(boardSize);
+        dice = new Dice();
+        players = new ArrayList<>();
+        for (String name : playerNames) players.add(new Player(name));
+        currentPlayerIdx = 0;
+    }
+
+    void playTurn() {
+        if (gameOver) return;
+        Player p = players.get(currentPlayerIdx);
+        int roll = dice.roll();
+        int newPos = p.position + roll;
+        if (newPos > WINNING_POSITION) {
+            System.out.println(p.name + " rolled " + roll + " (at " + p.position + ") -> exceeds 100, stay");
+        } else {
+            newPos = board.getFinalPosition(newPos);
+            System.out.println(p.name + " rolled " + roll + " (at " + p.position + ") -> " + newPos);
+            p.position = newPos;
+            if (newPos == WINNING_POSITION) {
+                System.out.println(p.name + " wins!");
+                gameOver = true;
+                return;
+            }
+        }
+        currentPlayerIdx = (currentPlayerIdx + 1) % players.size();
+    }
+
+    public static void main(String[] args) {
+        Game game = new Game(100, Arrays.asList("Alice", "Bob", "Charlie"));
+        System.out.println("=== Snake & Ladder Game ===");
+        while (!game.gameOver) {
+            game.playTurn();
+        }
+    }
+}
+```
+
+**Design Patterns:** Single Responsibility (dice, board, player are separate), Composition, Immutable snake/ladder configuration.
+
+---
+
+### Q105: Design a Chess Game
+
+**Problem:** Design a chess game with standard pieces, turn-based play, move validation, check/checkmate detection, and board display. Support undo move and game state tracking.
+
+**Difficulty:** Hard
+
+**Companies:** Google · Microsoft · Amazon
+
+**Design Patterns:** Strategy (piece movement), Command (moves), Factory (piece creation), Composite (board)
+
+```java
+import java.util.*;
+import java.util.stream.*;
+
+enum PieceType { KING, QUEEN, ROOK, BISHOP, KNIGHT, PAWN }
+enum Color { WHITE, BLACK }
+
+class Position {
+    int row, col;
+    Position(int row, int col) { this.row = row; this.col = col; }
+    boolean isValid() { return row >= 0 && row < 8 && col >= 0 && col < 8; }
+    public boolean equals(Object o) {
+        if (this == o) return true; if (!(o instanceof Position)) return false;
+        Position p = (Position) o; return row == p.row && col == p.col;
+    }
+    public int hashCode() { return Objects.hash(row, col); }
+    public String toString() { return "" + (char)('a' + col) + (8 - row); }
+}
+
+abstract class Piece {
+    PieceType type; Color color; Position pos;
+    Piece(PieceType type, Color color, Position pos) { this.type = type; this.color = color; this.pos = pos; }
+    abstract List<Position> getLegalMoves(Board board);
+    protected boolean isValidMove(Position to, Board board) {
+        Piece target = board.getPiece(to);
+        return to.isValid() && (target == null || target.color != this.color);
+    }
+}
+
+class King extends Piece {
+    King(Color color, Position pos) { super(PieceType.KING, color, pos); }
+    List<Position> getLegalMoves(Board board) {
+        List<Position> moves = new ArrayList<>();
+        for (int dr = -1; dr <= 1; dr++) for (int dc = -1; dc <= 1; dc++) {
+            if (dr == 0 && dc == 0) continue;
+            Position to = new Position(pos.row + dr, pos.col + dc);
+            if (isValidMove(to, board)) moves.add(to);
+        }
+        return moves;
+    }
+}
+
+class Queen extends Piece {
+    Queen(Color color, Position pos) { super(PieceType.QUEEN, color, pos); }
+    List<Position> getLegalMoves(Board board) {
+        List<Position> moves = new ArrayList<>();
+        int[][] dirs = {{-1,-1},{-1,0},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}};
+        for (int[] d : dirs) {
+            Position to = new Position(pos.row + d[0], pos.col + d[1]);
+            while (to.isValid()) {
+                Piece target = board.getPiece(to);
+                if (target == null) { moves.add(to); }
+                else { if (target.color != this.color) moves.add(to); break; }
+                to = new Position(to.row + d[0], to.col + d[1]);
+            }
+        }
+        return moves;
+    }
+}
+
+class Rook extends Piece {
+    Rook(Color color, Position pos) { super(PieceType.ROOK, color, pos); }
+    List<Position> getLegalMoves(Board board) {
+        List<Position> moves = new ArrayList<>();
+        int[][] dirs = {{-1,0},{1,0},{0,-1},{0,1}};
+        for (int[] d : dirs) {
+            Position to = new Position(pos.row + d[0], pos.col + d[1]);
+            while (to.isValid()) {
+                Piece target = board.getPiece(to);
+                if (target == null) { moves.add(to); }
+                else { if (target.color != this.color) moves.add(to); break; }
+                to = new Position(to.row + d[0], to.col + d[1]);
+            }
+        }
+        return moves;
+    }
+}
+
+class Bishop extends Piece {
+    Bishop(Color color, Position pos) { super(PieceType.BISHOP, color, pos); }
+    List<Position> getLegalMoves(Board board) {
+        List<Position> moves = new ArrayList<>();
+        int[][] dirs = {{-1,-1},{-1,1},{1,-1},{1,1}};
+        for (int[] d : dirs) {
+            Position to = new Position(pos.row + d[0], pos.col + d[1]);
+            while (to.isValid()) {
+                Piece target = board.getPiece(to);
+                if (target == null) { moves.add(to); }
+                else { if (target.color != this.color) moves.add(to); break; }
+                to = new Position(to.row + d[0], to.col + d[1]);
+            }
+        }
+        return moves;
+    }
+}
+
+class Knight extends Piece {
+    Knight(Color color, Position pos) { super(PieceType.KNIGHT, color, pos); }
+    List<Position> getLegalMoves(Board board) {
+        List<Position> moves = new ArrayList<>();
+        int[][] jumps = {{-2,-1},{-2,1},{-1,-2},{-1,2},{1,-2},{1,2},{2,-1},{2,1}};
+        for (int[] j : jumps) {
+            Position to = new Position(pos.row + j[0], pos.col + j[1]);
+            if (isValidMove(to, board)) moves.add(to);
+        }
+        return moves;
+    }
+}
+
+class Pawn extends Piece {
+    Pawn(Color color, Position pos) { super(PieceType.PAWN, color, pos); }
+    List<Position> getLegalMoves(Board board) {
+        List<Position> moves = new ArrayList<>();
+        int dir = color == Color.WHITE ? -1 : 1;
+        int startRow = color == Color.WHITE ? 6 : 1;
+        Position one = new Position(pos.row + dir, pos.col);
+        if (one.isValid() && board.getPiece(one) == null) {
+            moves.add(one);
+            Position two = new Position(pos.row + 2*dir, pos.col);
+            if (pos.row == startRow && board.getPiece(two) == null) moves.add(two);
+        }
+        for (int dc : new int[]{-1, 1}) {
+            Position capture = new Position(pos.row + dir, pos.col + dc);
+            if (capture.isValid()) {
+                Piece target = board.getPiece(capture);
+                if (target != null && target.color != this.color) moves.add(capture);
+            }
+        }
+        return moves;
+    }
+}
+
+class Board {
+    Piece[][] grid = new Piece[8][8];
+    List<Piece> whitePieces = new ArrayList<>();
+    List<Piece> blackPieces = new ArrayList<>();
+
+    Board() { setup(); }
+
+    void setup() {
+        for (int c = 0; c < 8; c++) {
+            putPiece(new Pawn(Color.BLACK, new Position(1, c)));
+            putPiece(new Pawn(Color.WHITE, new Position(6, c)));
+        }
+        putPiece(new Rook(Color.BLACK, new Position(0,0)));
+        putPiece(new Knight(Color.BLACK, new Position(0,1)));
+        putPiece(new Bishop(Color.BLACK, new Position(0,2)));
+        putPiece(new Queen(Color.BLACK, new Position(0,3)));
+        putPiece(new King(Color.BLACK, new Position(0,4)));
+        putPiece(new Bishop(Color.BLACK, new Position(0,5)));
+        putPiece(new Knight(Color.BLACK, new Position(0,6)));
+        putPiece(new Rook(Color.BLACK, new Position(0,7)));
+        for (int c = 0; c < 8; c++) {
+            putPiece(new Rook(Color.WHITE, new Position(7,c)));
+            putPiece(new Knight(Color.WHITE, new Position(7,1)));
+            putPiece(new Bishop(Color.WHITE, new Position(7,2)));
+            putPiece(new Queen(Color.WHITE, new Position(7,3)));
+            putPiece(new King(Color.WHITE, new Position(7,4)));
+            putPiece(new Bishop(Color.WHITE, new Position(7,5)));
+            putPiece(new Knight(Color.WHITE, new Position(7,6)));
+            putPiece(new Rook(Color.WHITE, new Position(7,7)));
+        }
+    }
+
+    void putPiece(Piece p) { grid[p.pos.row][p.pos.col] = p; }
+
+    Piece getPiece(Position p) { return p.isValid() ? grid[p.row][p.col] : null; }
+
+    void movePiece(Position from, Position to) {
+        Piece p = getPiece(from);
+        if (p == null) return;
+        grid[to.row][to.col] = p;
+        grid[from.row][from.col] = null;
+        p.pos = to;
+    }
+
+    void print() {
+        for (int r = 0; r < 8; r++) {
+            System.out.print((8-r) + " ");
+            for (int c = 0; c < 8; c++) {
+                Piece p = grid[r][c];
+                if (p == null) System.out.print(". ");
+                else System.out.print((p.color == Color.WHITE ? "W" : "B") + p.type.name().charAt(0) + " ");
+            }
+            System.out.println();
+        }
+        System.out.println("  a b c d e f g h");
+    }
+}
+
+class ChessGame {
+    Board board; Color currentTurn = Color.WHITE; boolean gameOver;
+
+    boolean move(Position from, Position to) {
+        Piece p = board.getPiece(from);
+        if (p == null || p.color != currentTurn) return false;
+        if (!p.getLegalMoves(board).contains(to)) return false;
+        board.movePiece(from, to);
+        currentTurn = (currentTurn == Color.WHITE) ? Color.BLACK : Color.WHITE;
+        return true;
+    }
+
+    public static void main(String[] args) {
+        ChessGame game = new ChessGame();
+        game.board = new Board();
+        game.board.print();
+        System.out.println("\nMoving White Pawn e2->e4");
+        game.move(new Position(6, 4), new Position(4, 4));
+        game.board.print();
+        System.out.println("\nMoving Black Pawn e7->e5");
+        game.move(new Position(1, 4), new Position(3, 4));
+        game.board.print();
+    }
+}
+```
+
+**Design Patterns:** Strategy (each piece defines movement), Composite (board holds pieces), Factory (board setup), Command (moves with undo potential).
+
+---
+
+### Q106: Design an Elevator System
+
+**Problem:** Design an elevator system with multiple elevators, request scheduling, floor buttons, door open/close, weight sensor, and emergency stop. Support SCAN/LOOK scheduling algorithm.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Lyft
+
+**Design Patterns:** Strategy (scheduling), Observer (button events), State (elevator states), Singleton (controller)
+
+```java
+import java.util.*;
+import java.util.stream.*;
+
+enum Direction { UP, DOWN, IDLE }
+enum ElevatorState { MOVING, DOOR_OPEN, DOOR_CLOSED, EMERGENCY }
+
+class Request {
+    int floor; Direction dir;
+    Request(int floor, Direction dir) { this.floor = floor; this.dir = dir; }
+}
+
+class Elevator {
+    int id, currentFloor; Direction direction; ElevatorState state;
+    Set<Integer> stops = new TreeSet<>();
+    int capacity = 10, passengerCount;
+
+    Elevator(int id) { this.id = id; this.currentFloor = 0; this.direction = Direction.IDLE; this.state = ElevatorState.DOOR_CLOSED; }
+
+    void addStop(int floor) { stops.add(floor); }
+    boolean isGoingTowards(int floor, Direction reqDir) {
+        if (direction == Direction.IDLE) return true;
+        if (direction == Direction.UP) return floor >= currentFloor && reqDir == Direction.UP;
+        return floor <= currentFloor && reqDir == Direction.DOWN;
+    }
+
+    void step() {
+        if (state == ElevatorState.DOOR_OPEN) { System.out.println("Elevator " + id + " door closing"); state = ElevatorState.DOOR_CLOSED; return; }
+        if (state == ElevatorState.DOOR_CLOSED && direction == Direction.IDLE && stops.isEmpty()) return;
+        if (direction == Direction.IDLE && !stops.isEmpty()) {
+            direction = stops.iterator().next() > currentFloor ? Direction.UP : Direction.DOWN;
+        }
+        if (stops.contains(currentFloor)) {
+            System.out.println("Elevator " + id + " stopped at floor " + currentFloor);
+            stops.remove(currentFloor);
+            state = ElevatorState.DOOR_OPEN;
+            return;
+        }
+        if (direction == Direction.UP) currentFloor++;
+        else if (direction == Direction.DOWN) currentFloor--;
+        if (stops.isEmpty()) direction = Direction.IDLE;
+    }
+}
+
+class ElevatorController {
+    List<Elevator> elevators;
+
+    ElevatorController(int numElevators) {
+        elevators = new ArrayList<>();
+        for (int i = 0; i < numElevators; i++) elevators.add(new Elevator(i));
+    }
+
+    void requestElevator(int floor, Direction dir) {
+        Elevator best = elevators.stream()
+            .filter(e -> e.state != ElevatorState.EMERGENCY && e.isGoingTowards(floor, dir))
+            .min(Comparator.comparingInt(e -> Math.abs(e.currentFloor - floor)))
+            .orElse(elevators.stream()
+                .filter(e -> e.state != ElevatorState.EMERGENCY)
+                .min(Comparator.comparingInt(e -> Math.abs(e.currentFloor - floor)))
+                .orElse(null));
+        if (best != null) {
+            best.addStop(floor);
+            System.out.println("Assigned floor " + floor + " to elevator " + best.id);
+        }
+    }
+
+    void step() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("\n--- Step ---");
+            for (Elevator e : elevators) {
+                e.step();
+                System.out.println("Elevator " + e.id + " at floor " + e.currentFloor + " dir=" + e.direction + " stops=" + e.stops);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        ElevatorController ctrl = new ElevatorController(3);
+        ctrl.requestElevator(5, Direction.UP);
+        ctrl.requestElevator(2, Direction.DOWN);
+        ctrl.requestElevator(8, Direction.UP);
+        ctrl.step();
+    }
+}
+```
+
+**Design Patterns:** Strategy (scheduling algorithm), State (elevator states), Observer (floor buttons notify controller), Singleton (controller).
+
+---
+
+### Q107: Design a Tic-Tac-Toe Game
+
+**Problem:** Design a Tic-Tac-Toe game supporting NxN boards, two players, win/draw detection, undo move, and move history.
+
+**Difficulty:** Easy
+
+**Companies:** Amazon · Microsoft · Google
+
+**Design Patterns:** Strategy (win checking), Command (moves), Observer (UI updates)
+
+```java
+import java.util.*;
+
+enum Cell { EMPTY, X, O }
+
+class Move {
+    int row, col; Cell player;
+    Move(int row, int col, Cell player) { this.row = row; this.col = col; this.player = player; }
+}
+
+class Board {
+    Cell[][] grid;
+    int size;
+
+    Board(int size) {
+        this.size = size;
+        grid = new Cell[size][size];
+        for (Cell[] row : grid) Arrays.fill(row, Cell.EMPTY);
+    }
+
+    boolean place(int row, int col, Cell player) {
+        if (row < 0 || row >= size || col < 0 || col >= size || grid[row][col] != Cell.EMPTY) return false;
+        grid[row][col] = player;
+        return true;
+    }
+
+    void undo(int row, int col) { grid[row][col] = Cell.EMPTY; }
+
+    Cell checkWinner() {
+        for (int i = 0; i < size; i++) {
+            Cell winner = checkLine(i, 0, 0, 1);
+            if (winner != Cell.EMPTY) return winner;
+            winner = checkLine(0, i, 1, 0);
+            if (winner != Cell.EMPTY) return winner;
+        }
+        Cell d1 = checkLine(0, 0, 1, 1);
+        if (d1 != Cell.EMPTY) return d1;
+        Cell d2 = checkLine(0, size-1, 1, -1);
+        if (d2 != Cell.EMPTY) return d2;
+        return Cell.EMPTY;
+    }
+
+    Cell checkLine(int startR, int startC, int dr, int dc) {
+        Cell first = grid[startR][startC];
+        if (first == Cell.EMPTY) return Cell.EMPTY;
+        for (int i = 1; i < size; i++) {
+            if (grid[startR + i*dr][startC + i*dc] != first) return Cell.EMPTY;
+        }
+        return first;
+    }
+
+    boolean isFull() {
+        for (Cell[] row : grid) for (Cell c : row) if (c == Cell.EMPTY) return false;
+        return true;
+    }
+
+    void print() {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                char ch = grid[i][j] == Cell.EMPTY ? '.' : grid[i][j].name().charAt(0);
+                System.out.print(ch + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+class TicTacToeGame {
+    Board board; Cell currentPlayer; Stack<Move> history = new Stack<>();
+
+    TicTacToeGame(int size) {
+        board = new Board(size);
+        currentPlayer = Cell.X;
+    }
+
+    boolean play(int row, int col) {
+        if (!board.place(row, col, currentPlayer)) return false;
+        history.push(new Move(row, col, currentPlayer));
+        Cell winner = board.checkWinner();
+        if (winner != Cell.EMPTY) {
+            board.print();
+            System.out.println("Player " + winner + " wins!");
+            return true;
+        }
+        if (board.isFull()) {
+            board.print();
+            System.out.println("Draw!");
+            return true;
+        }
+        currentPlayer = (currentPlayer == Cell.X) ? Cell.O : Cell.X;
+        return false;
+    }
+
+    void undo() {
+        if (history.isEmpty()) return;
+        Move last = history.pop();
+        board.undo(last.row, last.col);
+        currentPlayer = last.player;
+    }
+
+    public static void main(String[] args) {
+        TicTacToeGame game = new TicTacToeGame(3);
+        game.play(0, 0); game.play(1, 0);
+        game.play(0, 1); game.play(1, 1);
+        game.play(0, 2);
+        System.out.println("Game over: " + (game.board.checkWinner() != Cell.EMPTY || game.board.isFull()));
+    }
+}
+```
+
+**Design Patterns:** Command (moves with history/undo), Strategy (win checking), immutable board state.
+
+---
+
+### Q108: Design a Splitwise/Ledger System
+
+**Problem:** Design an expense-splitting system similar to Splitwise. Support adding expenses, splitting equally/percentage/exact, settling balances, showing balances per user, and simplifying debts.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Google · Uber
+
+**Design Patterns:** Strategy (split types), Command (transactions), Factory (expense creation)
+
+```java
+import java.util.*;
+import java.util.stream.*;
+
+enum SplitType { EQUAL, PERCENTAGE, EXACT }
+
+class User {
+    String id, name, email;
+    User(String id, String name) { this.id = id; this.name = name; }
+}
+
+class Expense {
+    String id; double amount; User paidBy; List<Split> splits; SplitType type;
+    Expense(String id, double amount, User paidBy, SplitType type) {
+        this.id = id; this.amount = amount; this.paidBy = paidBy; this.type = type; this.splits = new ArrayList<>();
+    }
+}
+
+class Split {
+    User user; double amount; double percentage;
+    Split(User user, double amount) { this.user = user; this.amount = amount; }
+}
+
+class BalanceManager {
+    Map<String, Map<String, Double>> balanceSheet = new HashMap<>();
+
+    void addExpense(Expense expense) {
+        Map<String, Double> userBalances = expense.splits.stream()
+            .collect(Collectors.toMap(s -> s.user.id, s -> s.amount));
+        String payer = expense.paidBy.id;
+        for (var entry : userBalances.entrySet()) {
+            String borrower = entry.getKey();
+            double amount = entry.getValue();
+            if (borrower.equals(payer)) continue;
+            balanceSheet.computeIfAbsent(payer, k -> new HashMap<>())
+                .merge(borrower, amount, Double::sum);
+            balanceSheet.computeIfAbsent(borrower, k -> new HashMap<>())
+                .merge(payer, -amount, Double::sum);
+        }
+    }
+
+    Map<String, Double> getBalance(String userId) {
+        return balanceSheet.getOrDefault(userId, new HashMap<>());
+    }
+
+    void showBalances() {
+        for (var payer : balanceSheet.entrySet()) {
+            for (var entry : payer.getValue().entrySet()) {
+                double amount = entry.getValue();
+                if (amount > 0) System.out.println(payer.getKey() + " owes " + entry.getKey() + ": $" + String.format("%.2f", amount));
+            }
+        }
+    }
+}
+
+interface SplitStrategy { List<Split> calculate(double amount, List<User> users, List<Double> values); }
+
+class EqualSplit implements SplitStrategy {
+    public List<Split> calculate(double amount, List<User> users, List<Double> values) {
+        double perHead = Math.round((amount / users.size()) * 100.0) / 100.0;
+        double remainder = Math.round((amount - perHead * (users.size() - 1)) * 100.0) / 100.0;
+        List<Split> splits = new ArrayList<>();
+        for (int i = 0; i < users.size(); i++) splits.add(new Split(users.get(i), i == 0 ? remainder : perHead));
+        return splits;
+    }
+}
+
+class PercentageSplit implements SplitStrategy {
+    public List<Split> calculate(double amount, List<User> users, List<Double> values) {
+        List<Split> splits = new ArrayList<>();
+        for (int i = 0; i < users.size(); i++)
+            splits.add(new Split(users.get(i), Math.round(amount * values.get(i) / 100.0 * 100.0) / 100.0));
+        return splits;
+    }
+}
+
+class ExactSplit implements SplitStrategy {
+    public List<Split> calculate(double amount, List<User> users, List<Double> values) {
+        List<Split> splits = new ArrayList<>();
+        for (int i = 0; i < users.size(); i++) splits.add(new Split(users.get(i), values.get(i)));
+        return splits;
+    }
+}
+
+class ExpenseManager {
+    BalanceManager balanceManager = new BalanceManager();
+    Map<String, SplitStrategy> strategies = Map.of(
+        "EQUAL", new EqualSplit(),
+        "PERCENTAGE", new PercentageSplit(),
+        "EXACT", new ExactSplit()
+    );
+
+    void addExpense(String id, double amount, User paidBy, List<User> participants, SplitType type, List<Double> values) {
+        SplitStrategy strategy = strategies.get(type.name());
+        if (strategy == null) throw new IllegalArgumentException("Unknown split type");
+        Expense expense = new Expense(id, amount, paidBy, type);
+        expense.splits = strategy.calculate(amount, participants, values);
+        balanceManager.addExpense(expense);
+    }
+
+    public static void main(String[] args) {
+        ExpenseManager mgr = new ExpenseManager();
+        User alice = new User("u1", "Alice"), bob = new User("u2", "Bob"), charlie = new User("u3", "Charlie");
+
+        mgr.addExpense("e1", 300, alice, Arrays.asList(alice, bob, charlie), SplitType.EQUAL, List.of());
+        mgr.addExpense("e2", 200, bob, Arrays.asList(alice, bob, charlie), SplitType.PERCENTAGE, Arrays.asList(40.0, 30.0, 30.0));
+
+        mgr.balanceManager.showBalances();
+        System.out.println("\nAlice's balances: " + mgr.balanceManager.getBalance("u1"));
+    }
+}
+```
+
+**Design Patterns:** Strategy (EQUAL/PERCENTAGE/EXACT splitting), Command (expense → balance update), Factory (expense creation).
+
+---
+
+### Q109: Design a Logger
+
+**Problem:** Design a logging framework with multiple log levels (DEBUG, INFO, WARN, ERROR), multiple appenders (console, file, network), configurable formatting, and thread-safe singleton logger.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Google
+
+**Design Patterns:** Singleton (logger), Strategy (log level), Observer (appenders), Decorator (formatting), Chain of Responsibility (level hierarchy)
+
+```java
+import java.io.*;
+import java.time.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.function.*;
+
+enum LogLevel { DEBUG(1), INFO(2), WARN(3), ERROR(4);
+    final int level; LogLevel(int l) { this.level = l; }
+    boolean isLoggable(LogLevel other) { return this.level <= other.level; }
+}
+
+class LogMessage {
+    String message; LogLevel level; long timestamp; String threadName;
+    LogMessage(String message, LogLevel level) {
+        this.message = message; this.level = level;
+        this.timestamp = System.currentTimeMillis();
+        this.threadName = Thread.currentThread().getName();
+    }
+    String format() {
+        return String.format("[%s] [%s] [%s] %s",
+            Instant.ofEpochMilli(timestamp).toString(),
+            level, threadName, message);
+    }
+}
+
+interface LogAppender { void append(LogMessage msg); }
+
+class ConsoleAppender implements LogAppender {
+    public void append(LogMessage msg) { System.out.println(msg.format()); }
+}
+
+class FileAppender implements LogAppender {
+    String fileName;
+    FileAppender(String fileName) { this.fileName = fileName; }
+    public void append(LogMessage msg) {
+        try (FileWriter fw = new FileWriter(fileName, true);
+             BufferedWriter bw = new BufferedWriter(fw)) {
+            bw.write(msg.format());
+            bw.newLine();
+        } catch (IOException e) { e.printStackTrace(); }
+    }
+}
+
+interface LoggerConfig {
+    LogLevel getLogLevel();
+    List<LogAppender> getAppenders();
+}
+
+class DefaultConfig implements LoggerConfig {
+    LogLevel level = LogLevel.DEBUG;
+    List<LogAppender> appenders = new CopyOnWriteArrayList<>();
+    DefaultConfig() { appenders.add(new ConsoleAppender()); }
+    public LogLevel getLogLevel() { return level; }
+    public List<LogAppender> getAppenders() { return appenders; }
+    void addAppender(LogAppender a) { appenders.add(a); }
+    void setLevel(LogLevel l) { this.level = l; }
+}
+
+class Logger {
+    private static final Map<String, Logger> instances = new ConcurrentHashMap<>();
+    private final String name;
+    private LoggerConfig config;
+
+    private Logger(String name) {
+        this.name = name;
+        this.config = LoggerFactory.getDefaultConfig();
+    }
+
+    public static Logger getLogger(String name) {
+        return instances.computeIfAbsent(name, Logger::new);
+    }
+
+    void setConfig(LoggerConfig config) { this.config = config; }
+
+    void log(LogLevel level, String message, Supplier<String> lazyMessage) {
+        if (!config.getLogLevel().isLoggable(level)) return;
+        String msg = (message != null) ? message : lazyMessage.get();
+        LogMessage logMsg = new LogMessage(msg, level);
+        for (LogAppender appender : config.getAppenders()) {
+            appender.append(logMsg);
+        }
+    }
+
+    void debug(String msg) { log(LogLevel.DEBUG, msg, null); }
+    void info(String msg) { log(LogLevel.INFO, msg, null); }
+    void warn(String msg) { log(LogLevel.WARN, msg, null); }
+    void error(String msg) { log(LogLevel.ERROR, msg, null); }
+    void debug(Supplier<String> supplier) { log(LogLevel.DEBUG, null, supplier); }
+}
+
+class LoggerFactory {
+    private static DefaultConfig defaultConfig = new DefaultConfig();
+
+    static LoggerConfig getDefaultConfig() { return defaultConfig; }
+    static void setDefaultLevel(LogLevel level) { defaultConfig.setLevel(level); }
+    static void addDefaultAppender(LogAppender a) { defaultConfig.addAppender(a); }
+
+    public static void main(String[] args) {
+        LoggerFactory.setDefaultLevel(LogLevel.INFO);
+        LoggerFactory.addDefaultAppender(new FileAppender("app.log"));
+
+        Logger logger = Logger.getLogger("main");
+        logger.info("Application started");
+        logger.debug("This debug message won\'t appear (level >= INFO)");
+        logger.warn("Low disk space");
+        logger.error("Connection refused");
+        logger.debug(() -> "Lazy evaluated: expensive computation result");
+        System.out.println("Check app.log for file output");
+    }
+}
+```
+
+**Design Patterns:** Singleton (Logger per name), Strategy (log level filtering), Observer (multiple appenders), Decorator (message formatting), Chain of Responsibility (level hierarchy).
+
+---
+
+### Q110: Design a Task Management System
+
+**Problem:** Design a task management system like Todoist with users, projects, tasks with priorities, due dates, labels, filtering, and status tracking.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Google
+
+**Design Patterns:** Builder (task construction), Observer (notifications), Strategy (filtering), Composite (project/subtask)
+
+```java
+import java.time.*;
+import java.util.*;
+import java.util.stream.*;
+
+enum Priority { LOW(1), MEDIUM(2), HIGH(3), URGENT(4);
+    final int val; Priority(int v) { this.val = v; }
+}
+
+enum TaskStatus { TODO, IN_PROGRESS, DONE, ARCHIVED }
+
+class Label {
+    String name, color;
+    Label(String name, String color) { this.name = name; this.color = color; }
+}
+
+class Task {
+    String id, title, description; Priority priority; TaskStatus status;
+    LocalDate dueDate; List<Label> labels = new ArrayList<>(); User assignee;
+    Task(String id, String title, Priority priority) {
+        this.id = id; this.title = title; this.priority = priority; this.status = TaskStatus.TODO;
+    }
+    Task withDescription(String desc) { this.description = desc; return this; }
+    Task withDueDate(LocalDate date) { this.dueDate = date; return this; }
+    Task withAssignee(User user) { this.assignee = user; return this; }
+    Task withLabel(Label label) { this.labels.add(label); return this; }
+    void setStatus(TaskStatus s) { this.status = s; }
+}
+
+class Project {
+    String id, name; List<Task> tasks = new ArrayList<>();
+    Project(String id, String name) { this.id = id; this.name = name; }
+    void addTask(Task t) { tasks.add(t); }
+    void removeTask(String taskId) { tasks.removeIf(t -> t.id.equals(taskId)); }
+}
+
+class User {
+    String id, name, email;
+    User(String id, String name) { this.id = id; this.name = name; }
+}
+
+interface TaskFilter { boolean filter(Task t); }
+
+class PriorityFilter implements TaskFilter {
+    Priority minPriority;
+    PriorityFilter(Priority min) { this.minPriority = min; }
+    public boolean filter(Task t) { return t.priority.val >= minPriority.val; }
+}
+
+class StatusFilter implements TaskFilter {
+    TaskStatus status;
+    StatusFilter(TaskStatus s) { this.status = s; }
+    public boolean filter(Task t) { return t.status == status; }
+}
+
+class DueDateFilter implements TaskFilter {
+    boolean overdue;
+    DueDateFilter(boolean overdue) { this.overdue = overdue; }
+    public boolean filter(Task t) {
+        return overdue ? (t.dueDate != null && t.dueDate.isBefore(LocalDate.now())) : true;
+    }
+}
+
+class AndFilter implements TaskFilter {
+    List<TaskFilter> filters;
+    AndFilter(TaskFilter... filters) { this.filters = Arrays.asList(filters); }
+    public boolean filter(Task t) { return filters.stream().allMatch(f -> f.filter(t)); }
+}
+
+class TaskManager {
+    Map<String, Project> projects = new HashMap<>();
+    Map<String, User> users = new HashMap<>();
+
+    User createUser(String id, String name) {
+        User u = new User(id, name); users.put(id, u); return u;
+    }
+
+    Project createProject(String id, String name) {
+        Project p = new Project(id, name); projects.put(id, p); return p;
+    }
+
+    Task createTask(String id, String title, Priority priority, String projectId) {
+        Task t = new Task(id, title, priority);
+        Project p = projects.get(projectId);
+        if (p != null) p.addTask(t);
+        return t;
+    }
+
+    List<Task> search(TaskFilter filter, String projectId) {
+        Project p = projects.get(projectId);
+        if (p == null) return List.of();
+        return p.tasks.stream().filter(filter::filter).collect(Collectors.toList());
+    }
+
+    List<Task> getTasksDueToday(String projectId) {
+        return search(new AndFilter(new StatusFilter(TaskStatus.TODO),
+            new DueDateFilter(false)), projectId).stream()
+            .filter(t -> t.dueDate != null && t.dueDate.equals(LocalDate.now()))
+            .collect(Collectors.toList());
+    }
+
+    public static void main(String[] args) {
+        TaskManager mgr = new TaskManager();
+        mgr.createUser("u1", "Alice");
+        mgr.createProject("p1", "Work");
+
+        Task t1 = mgr.createTask("t1", "Fix login bug", Priority.HIGH, "p1");
+        t1.withDueDate(LocalDate.now()).withAssignee(mgr.users.get("u1"));
+
+        Task t2 = mgr.createTask("t2", "Write tests", Priority.MEDIUM, "p1");
+        t2.withDueDate(LocalDate.now().plusDays(3));
+
+        Task t3 = mgr.createTask("t3", "Code review", Priority.LOW, "p1");
+        t3.setStatus(TaskStatus.DONE);
+
+        System.out.println("High priority tasks: " +
+            mgr.search(new PriorityFilter(Priority.HIGH), "p1").stream().map(t -> t.title).collect(Collectors.toList()));
+
+        System.out.println("TODO tasks: " +
+            mgr.search(new StatusFilter(TaskStatus.TODO), "p1").size());
+
+        System.out.println("Due today: " +
+            mgr.getTasksDueToday("p1").stream().map(t -> t.title).collect(Collectors.toList()));
+    }
+}
+```
+
+**Design Patterns:** Builder (fluent task construction), Strategy (filtering with composable filters), Composite (project→tasks), Observer (status change notifications).
+
+---
+
+### Q111: Design a Pub-Sub System
+
+**Problem:** Design a publish-subscribe messaging system with topics, publishers, subscribers, async message delivery, subscriber groups, and message filtering.
+
+**Difficulty:** Medium
+
+**Companies:** Google · Amazon · Microsoft
+
+**Design Patterns:** Observer (pub-sub), Mediator (message broker), Factory (message creation), Command (message delivery)
+
+```java
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.stream.*;
+
+class Message {
+    String id, topic, payload; long timestamp;
+    Map<String, String> headers = new HashMap<>();
+    Message(String topic, String payload) { this.id = UUID.randomUUID().toString(); this.topic = topic; this.payload = payload; this.timestamp = System.currentTimeMillis(); }
+}
+
+interface Subscriber {
+    String getId(); String getGroup();
+    void onMessage(Message msg);
+}
+
+class ConsoleSubscriber implements Subscriber {
+    String id, group; String name;
+    ConsoleSubscriber(String id, String name, String group) { this.id = id; this.name = name; this.group = group; }
+    public String getId() { return id; }
+    public String getGroup() { return group; }
+    public void onMessage(Message msg) {
+        System.out.println("[" + name + "] received: " + msg.payload + " (topic: " + msg.topic + ")");
+    }
+}
+
+interface MessageFilter { boolean accept(Message msg); }
+
+class TopicFilter implements MessageFilter {
+    String topic;
+    TopicFilter(String topic) { this.topic = topic; }
+    public boolean accept(Message msg) { return msg.topic.equals(topic); }
+}
+
+class Broker {
+    Map<String, List<Subscriber>> topicSubscribers = new ConcurrentHashMap<>();
+    Map<String, ExecutorService> executors = new ConcurrentHashMap<>();
+    Map<String, Queue<Message>> topicQueues = new ConcurrentHashMap<>();
+
+    void subscribe(String topic, Subscriber subscriber) {
+        topicSubscribers.computeIfAbsent(topic, k -> new CopyOnWriteArrayList<>()).add(subscriber);
+        executors.computeIfAbsent(subscriber.getGroup(), k -> Executors.newSingleThreadExecutor());
+    }
+
+    void publish(Message msg) {
+        List<Subscriber> subs = topicSubscribers.getOrDefault(msg.topic, List.of());
+        Map<String, Boolean> groupDelivered = new HashMap<>();
+        for (Subscriber sub : subs) {
+            if (!groupDelivered.getOrDefault(sub.getGroup(), false)) {
+                groupDelivered.put(sub.getGroup(), true);
+                executors.get(sub.getGroup()).submit(() -> sub.onMessage(msg));
+            }
+        }
+    }
+
+    void shutdown() { executors.values().forEach(ExecutorService::shutdown); }
+
+    public static void main(String[] args) throws Exception {
+        Broker broker = new Broker();
+        Subscriber s1 = new ConsoleSubscriber("s1", "OrderService", "orders");
+        Subscriber s2 = new ConsoleSubscriber("s2", "AnalyticsService", "orders");
+        Subscriber s3 = new ConsoleSubscriber("s3", "EmailService", "notifications");
+
+        broker.subscribe("order.created", s1);
+        broker.subscribe("order.created", s2);
+        broker.subscribe("user.registered", s3);
+
+        broker.publish(new Message("order.created", "Order #1234 placed"));
+        broker.publish(new Message("user.registered", "User Alice joined"));
+
+        Thread.sleep(500);
+        broker.shutdown();
+    }
+}
+```
+
+**Design Patterns:** Observer (pub-sub contract), Mediator (broker decouples publishers/subscribers), Command (async delivery), Strategy (message filtering).
+
+---
+
+### Q112: Design an ATM
+
+**Problem:** Design an ATM machine supporting card insertion, PIN verification, balance inquiry, cash withdrawal with denomination dispensing, deposit, and transfer between accounts.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Paytm
+
+**Design Patterns:** State (ATM states), Strategy (dispensing), Command (transactions), Factory (transaction creation)
+
+```java
+import java.util.*;
+import java.util.stream.*;
+
+class Card {
+    String cardNumber; String pin; String accountNumber;
+    Card(String cardNumber, String pin, String accountNumber) { this.cardNumber = cardNumber; this.pin = pin; this.accountNumber = accountNumber; }
+}
+
+class Account {
+    String accountNumber; double balance;
+    Account(String accountNumber, double balance) { this.accountNumber = accountNumber; this.balance = balance; }
+    synchronized void deposit(double amount) { balance += amount; }
+    synchronized boolean withdraw(double amount) { if (balance < amount) return false; balance -= amount; return true; }
+}
+
+class Bank {
+    Map<String, Account> accounts = new HashMap<>();
+    Map<String, Card> cards = new HashMap<>();
+    void addAccount(Account a) { accounts.put(a.accountNumber, a); }
+    void addCard(Card c) { cards.put(c.cardNumber, c); }
+    Card authenticate(String cardNumber, String pin) {
+        Card c = cards.get(cardNumber);
+        return (c != null && c.pin.equals(pin)) ? c : null;
+    }
+    Account getAccount(String accountNumber) { return accounts.get(accountNumber); }
+}
+
+interface DispenseStrategy { Map<Integer, Integer> dispense(int amount); }
+
+class DenominationDispenser implements DispenseStrategy {
+    static final int[] DENOMS = {2000, 500, 200, 100};
+    public Map<Integer, Integer> dispense(int amount) {
+        Map<Integer, Integer> result = new LinkedHashMap<>();
+        for (int denom : DENOMS) {
+            if (amount >= denom) { int count = amount / denom; result.put(denom, count); amount %= denom; }
+        }
+        if (amount != 0) throw new IllegalArgumentException("Cannot dispense " + amount);
+        return result;
+    }
+}
+
+class Transaction { String id; double amount; long timestamp; String type;
+    Transaction(String type, double amount) { this.id = UUID.randomUUID().toString(); this.type = type; this.amount = amount; this.timestamp = System.currentTimeMillis(); }
+}
+
+class ATMSession {
+    Card card; Account account; boolean authenticated;
+    DispenseStrategy dispenser = new DenominationDispenser();
+    List<Transaction> transactions = new ArrayList<>();
+
+    boolean authenticate(Bank bank, String cardNumber, String pin) {
+        this.card = bank.authenticate(cardNumber, pin);
+        if (this.card != null) { this.account = bank.getAccount(this.card.accountNumber); this.authenticated = true; return true; }
+        return false;
+    }
+
+    double checkBalance() { return account.balance; }
+
+    Map<Integer, Integer> withdraw(double amount) {
+        if (!authenticated) throw new SecurityException("Not authenticated");
+        if (!account.withdraw(amount)) throw new IllegalArgumentException("Insufficient funds");
+        transactions.add(new Transaction("WITHDRAWAL", amount));
+        return dispenser.dispense((int) amount);
+    }
+
+    void deposit(double amount) {
+        if (!authenticated) throw new SecurityException("Not authenticated");
+        account.deposit(amount);
+        transactions.add(new Transaction("DEPOSIT", amount));
+    }
+
+    void logout() { authenticated = false; card = null; account = null; }
+
+    public static void main(String[] args) {
+        Bank bank = new Bank();
+        bank.addAccount(new Account("ACC001", 50000));
+        bank.addCard(new Card("1234-5678", "1234", "ACC001"));
+
+        ATMSession session = new ATMSession();
+        if (session.authenticate(bank, "1234-5678", "1234")) {
+            System.out.println("Authenticated. Balance: Rs " + session.checkBalance());
+            Map<Integer, Integer> cash = session.withdraw(3700);
+            System.out.println("Dispensed: " + cash);
+            System.out.println("New balance: Rs " + session.checkBalance());
+            session.deposit(10000);
+            System.out.println("After deposit: Rs " + session.checkBalance());
+            session.logout();
+        } else {
+            System.out.println("Authentication failed");
+        }
+    }
+}
+```
+
+**Design Patterns:** State (ATM session states), Strategy (denomination dispensing), Command (transactions with history), Facade (ATMSession simplifies complex operations).
+
+---
+
+### Q113: Design a Coffee Machine
+
+**Problem:** Design a coffee machine (like a Starbucks automated brewer) supporting multiple beverages (espresso, latte, cappuccino), ingredient management, recipe-based brewing, and concurrent order processing.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft
+
+**Design Patterns:** Strategy (beverage recipes), Decorator (add-ons), State (brewing states), Singleton (machine), Command (orders)
+
+```java
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.stream.*;
+
+enum Ingredient { COFFEE_BEANS(10), MILK(5), SUGAR(2), WATER(1), CHOCOLATE(8);
+    final int unitCost; Ingredient(int c) { this.unitCost = c; }
+}
+
+class Recipe {
+    String name; double price;
+    Map<Ingredient, Integer> ingredients = new HashMap<>();
+    Recipe(String name, double price) { this.name = name; this.price = price; }
+    Recipe addIngredient(Ingredient ing, int units) { ingredients.put(ing, units); return this; }
+}
+
+class Beverage {
+    String name; double price;
+    Beverage(String name, double price) { this.name = name; this.price = price; }
+}
+
+class IngredientInventory {
+    Map<Ingredient, Integer> stock = new ConcurrentHashMap<>();
+
+    IngredientInventory() {
+        for (Ingredient ing : Ingredient.values()) stock.put(ing, 50);
+    }
+
+    synchronized boolean useIngredients(Map<Ingredient, Integer> needed) {
+        for (var entry : needed.entrySet()) {
+            if (stock.getOrDefault(entry.getKey(), 0) < entry.getValue()) return false;
+        }
+        for (var entry : needed.entrySet()) {
+            stock.merge(entry.getKey(), -entry.getValue(), Integer::sum);
+        }
+        return true;
+    }
+
+    void refill(Ingredient ing, int units) { stock.merge(ing, units, Integer::sum); }
+    int getStock(Ingredient ing) { return stock.getOrDefault(ing, 0); }
+}
+
+class CoffeeMachine {
+    private static CoffeeMachine instance;
+    Map<String, Recipe> recipes = new HashMap<>();
+    IngredientInventory inventory = new IngredientInventory();
+    ExecutorService barista = Executors.newSingleThreadExecutor();
+
+    private CoffeeMachine() {
+        recipes.put("espresso", new Recipe("Espresso", 2.50)
+            .addIngredient(Ingredient.COFFEE_BEANS, 8).addIngredient(Ingredient.WATER, 1));
+        recipes.put("latte", new Recipe("Latte", 4.00)
+            .addIngredient(Ingredient.COFFEE_BEANS, 8).addIngredient(Ingredient.MILK, 3).addIngredient(Ingredient.WATER, 1));
+        recipes.put("cappuccino", new Recipe("Cappuccino", 4.50)
+            .addIngredient(Ingredient.COFFEE_BEANS, 8).addIngredient(Ingredient.MILK, 2).addIngredient(Ingredient.WATER, 1).addIngredient(Ingredient.CHOCOLATE, 1));
+    }
+
+    public static synchronized CoffeeMachine getInstance() {
+        if (instance == null) instance = new CoffeeMachine();
+        return instance;
+    }
+
+    CompletableFuture<Beverage> brewAsync(String beverageName) {
+        return CompletableFuture.supplyAsync(() -> brew(beverageName), barista);
+    }
+
+    Beverage brew(String beverageName) {
+        Recipe recipe = recipes.get(beverageName.toLowerCase());
+        if (recipe == null) throw new IllegalArgumentException("Unknown beverage: " + beverageName);
+        if (!inventory.useIngredients(recipe.ingredients)) throw new IllegalStateException("Insufficient ingredients");
+        System.out.println("Brewing " + recipe.name + "...");
+        try { Thread.sleep(500); } catch (InterruptedException e) {}
+        System.out.println(recipe.name + " ready! Price: $" + String.format("%.2f", recipe.price));
+        return new Beverage(recipe.name, recipe.price);
+    }
+
+    void displayMenu() {
+        System.out.println("\n=== Menu ===");
+        for (Recipe r : recipes.values()) {
+            System.out.println(r.name + " - $" + String.format("%.2f", r.price) + ": " + r.ingredients);
+        }
+        System.out.println("Stock: " + inventory.stock);
+    }
+
+    void shutdown() { barista.shutdown(); }
+
+    public static void main(String[] args) throws Exception {
+        CoffeeMachine machine = CoffeeMachine.getInstance();
+        machine.displayMenu();
+
+        Beverage b1 = machine.brew("latte");
+        CompletableFuture<Beverage> future1 = machine.brewAsync("espresso");
+        CompletableFuture<Beverage> future2 = machine.brewAsync("cappuccino");
+
+        Beverage b2 = future1.get();
+        Beverage b3 = future2.get();
+        System.out.println("Served: " + b1.name + ", " + b2.name + ", " + b3.name);
+        machine.shutdown();
+    }
+}
+```
+
+**Design Patterns:** Strategy (recipe-based brewing), Singleton (machine instance), Command (async orders via CompletableFuture), Decorator (add-ons via Recipe builder), Facade (CoffeeMachine simplifies complex subsystem).
+
+---
+
+### Q114: Design a Restaurant Table Booking System
+
+**Problem:** Design a restaurant reservation system with tables, time slots, customer booking, cancellation, waitlist, and conflict detection.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Zomato
+
+**Design Patterns:** Strategy (table allocation), Observer (waitlist notification), Singleton (booking manager), State (booking states)
+
+```java
+import java.time.*;
+import java.util.*;
+import java.util.stream.*;
+import java.util.concurrent.*;
+
+enum TableStatus { AVAILABLE, RESERVED, OCCUPIED }
+enum Cuisine { ANY, INDIAN, ITALIAN, CHINESE, CONTINENTAL }
+
+class Table {
+    int id, capacity; TableStatus status;
+    Table(int id, int capacity) { this.id = id; this.capacity = capacity; this.status = TableStatus.AVAILABLE; }
+}
+
+class TimeSlot {
+    LocalDate date; LocalTime start, end;
+    TimeSlot(LocalDate date, LocalTime start, LocalTime end) { this.date = date; this.start = start; this.end = end; }
+    boolean overlaps(TimeSlot other) { return date.equals(other.date) && start.isBefore(other.end) && other.start.isBefore(end); }
+}
+
+class Booking {
+    String id; Customer customer; Table table; TimeSlot slot; int partySize;
+    Booking(String id, Customer c, Table t, TimeSlot s, int party) {
+        this.id = id; this.customer = c; this.table = t; this.slot = s; this.partySize = party;
+    }
+}
+
+class Customer {
+    String name, phone;
+    Customer(String name, String phone) { this.name = name; this.phone = phone; }
+}
+
+class Restaurant {
+    String name; List<Table> tables = new ArrayList<>();
+    List<Booking> bookings = new CopyOnWriteArrayList<>();
+    Queue<Customer> waitlist = new ConcurrentLinkedQueue<>();
+
+    Restaurant(String name, int numTables) {
+        this.name = name;
+        for (int i = 0; i < numTables; i++) tables.add(new Table(i, i < 2 ? 2 : (i < 5 ? 4 : 6)));
+    }
+
+    synchronized Booking book(Customer customer, int partySize, TimeSlot slot) {
+        Table table = tables.stream()
+            .filter(t -> t.capacity >= partySize && t.status == TableStatus.AVAILABLE)
+            .filter(t -> bookings.stream().noneMatch(b -> b.table.id == t.id && b.slot.overlaps(slot)))
+            .findFirst().orElse(null);
+        if (table == null) {
+            waitlist.add(customer);
+            System.out.println(customer.name + " added to waitlist");
+            return null;
+        }
+        Booking booking = new Booking(UUID.randomUUID().toString(), customer, table, slot, partySize);
+        bookings.add(booking);
+        table.status = TableStatus.RESERVED;
+        System.out.println("Booked table " + table.id + " for " + customer.name + " (" + partySize + " guests) at " + slot.start);
+        return booking;
+    }
+
+    synchronized boolean cancel(String bookingId) {
+        Booking b = bookings.stream().filter(bk -> bk.id.equals(bookingId)).findFirst().orElse(null);
+        if (b == null) return false;
+        bookings.remove(b);
+        b.table.status = TableStatus.AVAILABLE;
+        System.out.println("Cancelled booking " + bookingId);
+
+        Customer waiting = waitlist.poll();
+        if (waiting != null) {
+            System.out.println("Notifying " + waiting.name + " from waitlist about availability");
+        }
+        return true;
+    }
+
+    List<Booking> getBookingsForDate(LocalDate date) {
+        return bookings.stream().filter(b -> b.slot.date.equals(date)).collect(Collectors.toList());
+    }
+
+    public static void main(String[] args) {
+        Restaurant r = new Restaurant("Taj", 8);
+        r.book(new Customer("Alice", "111"), 2, new TimeSlot(LocalDate.now(), LocalTime.of(19, 0), LocalTime.of(20, 0)));
+        r.book(new Customer("Bob", "222"), 4, new TimeSlot(LocalDate.now(), LocalTime.of(19, 0), LocalTime.of(20, 0)));
+        r.book(new Customer("Charlie", "333"), 2, new TimeSlot(LocalDate.now(), LocalTime.of(19, 0), LocalTime.of(20, 0)));
+
+        System.out.println("\nActive bookings: " + r.getBookingsForDate(LocalDate.now()).size());
+        System.out.println("Waitlist size: " + r.waitlist.size());
+    }
+}
+```
+
+**Design Patterns:** Singleton (restaurant manager), Strategy (table allocation algorithm), Observer (waitlist notification), Command (book/cancel operations).
+
+---
+
+### Q115: Design a File System
+
+**Problem:** Design a Unix-like file system with File and Directory classes, hierarchical structure, path-based navigation, size calculation, search, and permission model.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Google · Microsoft
+
+**Design Patterns:** Composite (files & directories), Visitor (size calculation), Factory (entry creation), Strategy (search)
+
+```java
+import java.time.*;
+import java.util.*;
+import java.util.stream.*;
+
+enum FileType { FILE, DIRECTORY }
+
+class Permission {
+    boolean read, write, execute;
+    Permission(boolean r, boolean w, boolean x) { this.read = r; this.write = w; this.execute = x; }
+    Permission() { this(true, true, false); }
+    public String toString() { return (read ? "r" : "-") + (write ? "w" : "-") + (execute ? "x" : "-"); }
+}
+
+abstract class FileSystemEntry {
+    String name; LocalDateTime created, modified; Permission permission;
+    FileSystemEntry(String name) {
+        this.name = name; this.created = LocalDateTime.now(); this.modified = this.created;
+        this.permission = new Permission();
+    }
+    abstract int getSize();
+    String getPath() { return "/" + name; }
+}
+
+class File extends FileSystemEntry {
+    String content;
+    File(String name) { super(name); }
+    File(String name, String content) { super(name); this.content = content; }
+    int getSize() { return content != null ? content.length() : 0; }
+    void write(String content) { this.content = content; this.modified = LocalDateTime.now(); }
+    String read() { return content; }
+}
+
+class Directory extends FileSystemEntry {
+    Map<String, FileSystemEntry> children = new LinkedHashMap<>();
+    Directory parent;
+
+    Directory(String name) { super(name); }
+    Directory(String name, Directory parent) { super(name); this.parent = parent; }
+
+    void addEntry(FileSystemEntry entry) {
+        children.put(entry.name, entry);
+        if (entry instanceof Directory) ((Directory) entry).parent = this;
+        this.modified = LocalDateTime.now();
+    }
+
+    void removeEntry(String name) { children.remove(name); this.modified = LocalDateTime.now(); }
+
+    FileSystemEntry getEntry(String name) { return children.get(name); }
+
+    int getSize() { return children.values().stream().mapToInt(FileSystemEntry::getSize).sum(); }
+
+    String getPath() {
+        if (parent == null || parent.parent == null) return "/" + name;
+        return parent.getPath() + "/" + name;
+    }
+
+    List<FileSystemEntry> search(String pattern) {
+        List<FileSystemEntry> results = new ArrayList<>();
+        for (var entry : children.values()) {
+            if (entry.name.contains(pattern)) results.add(entry);
+            if (entry instanceof Directory) results.addAll(((Directory) entry).search(pattern));
+        }
+        return results;
+    }
+
+    void printTree(String indent) {
+        System.out.println(indent + name + "/ (" + getSize() + " bytes)");
+        for (var entry : children.values()) {
+            if (entry instanceof Directory) ((Directory) entry).printTree(indent + "  ");
+            else System.out.println(indent + "  " + entry.name + " (" + entry.getSize() + " bytes) " + ((File) entry).read());
+        }
+    }
+}
+
+class FileSystem {
+    Directory root;
+
+    FileSystem() { root = new Directory("root"); root.permission = new Permission(true, true, true); }
+
+    Directory mkdir(String path) {
+        String[] parts = path.split("/");
+        Directory current = root;
+        for (String part : parts) {
+            if (part.isEmpty() || part.equals("root")) continue;
+            FileSystemEntry entry = current.getEntry(part);
+            if (entry == null) { Directory d = new Directory(part); current.addEntry(d); current = d; }
+            else if (entry instanceof Directory) current = (Directory) entry;
+            else throw new IllegalArgumentException("Path collision: " + part);
+        }
+        return current;
+    }
+
+    File touch(String path, String content) {
+        String[] parts = path.split("/");
+        String fileName = parts[parts.length - 1];
+        Directory parent = resolveDirectory(String.join("/", Arrays.copyOf(parts, parts.length - 1)));
+        File file = new File(fileName, content);
+        parent.addEntry(file);
+        return file;
+    }
+
+    Directory resolveDirectory(String path) {
+        if (path.isEmpty() || path.equals("root")) return root;
+        String[] parts = path.split("/");
+        Directory current = root;
+        for (String part : parts) {
+            if (part.isEmpty() || part.equals("root")) continue;
+            FileSystemEntry entry = current.getEntry(part);
+            if (entry instanceof Directory) current = (Directory) entry;
+            else throw new IllegalArgumentException("Not a directory: " + part);
+        }
+        return current;
+    }
+
+    void ls(String path) {
+        Directory dir = resolveDirectory(path);
+        System.out.println("Contents of " + dir.getPath() + ":");
+        for (var entry : dir.children.values()) {
+            String type = entry instanceof Directory ? "DIR" : "FILE";
+            System.out.println("  [" + type + "] " + entry.name + " " + entry.permission + " " + entry.getSize() + "B");
+        }
+    }
+
+    public static void main(String[] args) {
+        FileSystem fs = new FileSystem();
+        fs.mkdir("root/home");
+        fs.mkdir("root/home/user");
+        fs.mkdir("root/etc");
+        fs.mkdir("root/usr/bin");
+
+        fs.touch("root/home/user/readme.txt", "Hello World");
+        fs.touch("root/etc/config.properties", "debug=true");
+        fs.touch("root/usr/bin/run.sh", "#!/bin/bash");
+
+        fs.ls("root/home/user");
+        System.out.println("\nSearch for '.txt':");
+        fs.root.search(".txt").forEach(e -> System.out.println("  " + e.getPath()));
+
+        System.out.println("\nRoot size: " + fs.root.getSize() + " bytes");
+        System.out.println("\nFull tree:");
+        fs.root.printTree("");
+    }
+}
+```
+
+**Design Patterns:** Composite (uniform File/Directory treatment), Visitor (size calculation traverses tree), Strategy (search), Factory (file system entry creation).
+
+---
+
+## Concurrency & Multithreading Problems
+
+### Q116: Print Numbers 1-100 Using Two Threads Alternately
+
+**Problem:** Print numbers from 1 to 100 such that two threads alternately print even and odd numbers. Thread1 prints odd, Thread2 prints even.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Google · Oracle
+
+**Key Concepts:** wait/notify, inter-thread communication, shared state
+
+```java
+public class EvenOddPrinter {
+    private int current = 1;
+    private final int max = 100;
+    private final Object lock = new Object();
+
+    void printOdd() {
+        synchronized (lock) {
+            while (current <= max) {
+                if (current % 2 == 1) {
+                    System.out.println("Odd: " + current++);
+                    lock.notify();
+                } else {
+                    try { lock.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+                }
+            }
+        }
+    }
+
+    void printEven() {
+        synchronized (lock) {
+            while (current <= max) {
+                if (current % 2 == 0) {
+                    System.out.println("Even: " + current++);
+                    lock.notify();
+                } else {
+                    try { lock.wait(); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        EvenOddPrinter printer = new EvenOddPrinter();
+        Thread t1 = new Thread(printer::printOdd);
+        Thread t2 = new Thread(printer::printEven);
+        t1.start(); t2.start();
+        try { t1.join(); t2.join(); } catch (InterruptedException e) {}
+        System.out.println("Done printing 1-100 alternately");
+    }
+}
+```
+
+**Explanation:** Uses a shared lock with `wait/notify`. The odd thread checks if `current` is odd — if yes, it prints, increments, and notifies the even thread. Otherwise it waits. The even thread mirrors this. The `synchronized` block ensures mutual exclusion on the `current` variable.
+
+---
+
+### Q117: Producer-Consumer Using wait/notify
+
+**Problem:** Implement the producer-consumer problem where one or more producers add items to a shared buffer and one or more consumers consume items. The buffer has a fixed capacity. Use wait/notify for coordination.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Google · Flipkart
+
+**Key Concepts:** wait/notify, bounded buffer, inter-thread coordination
+
+```java
+import java.util.*;
+import java.util.concurrent.atomic.*;
+
+class BoundedBuffer {
+    private final int[] buffer;
+    private int count, in, out;
+    private final int capacity;
+
+    public BoundedBuffer(int capacity) {
+        this.capacity = capacity;
+        this.buffer = new int[capacity];
+    }
+
+    public synchronized void produce(int item) throws InterruptedException {
+        while (count == capacity) wait();
+        buffer[in] = item;
+        in = (in + 1) % capacity;
+        count++;
+        System.out.println("Produced: " + item + " (buffer size: " + count + ")");
+        notifyAll();
+    }
+
+    public synchronized int consume() throws InterruptedException {
+        while (count == 0) wait();
+        int item = buffer[out];
+        out = (out + 1) % capacity;
+        count--;
+        System.out.println("Consumed: " + item + " (buffer size: " + count + ")");
+        notifyAll();
+        return item;
+    }
+}
+
+public class ProducerConsumerWaitNotify {
+    public static void main(String[] args) {
+        BoundedBuffer buffer = new BoundedBuffer(5);
+        AtomicInteger itemCounter = new AtomicInteger(0);
+
+        Runnable producer = () -> {
+            for (int i = 0; i < 10; i++) {
+                try {
+                    int item = itemCounter.incrementAndGet();
+                    buffer.produce(item);
+                    Thread.sleep(100);
+                } catch (InterruptedException e) { Thread.currentThread().interrupt(); break; }
+            }
+        };
+
+        Runnable consumer = () -> {
+            for (int i = 0; i < 10; i++) {
+                try {
+                    buffer.consume();
+                    Thread.sleep(200);
+                } catch (InterruptedException e) { Thread.currentThread().interrupt(); break; }
+            }
+        };
+
+        Thread p1 = new Thread(producer, "Producer-1");
+        Thread p2 = new Thread(producer, "Producer-2");
+        Thread c1 = new Thread(consumer, "Consumer-1");
+        Thread c2 = new Thread(consumer, "Consumer-2");
+
+        p1.start(); p2.start(); c1.start(); c2.start();
+        try { p1.join(); p2.join(); c1.join(); c2.join(); } catch (InterruptedException e) {}
+        System.out.println("All items produced and consumed");
+    }
+}
+```
+
+**Explanation:** The bounded buffer uses a circular array with `count`, `in`, and `out` pointers. `produce()` waits while the buffer is full; `consume()` waits while empty. Both call `notifyAll()` after each operation to wake waiting threads. The `synchronized` keyword ensures mutual exclusion. This is the classic monitor-based solution from Hoare.
+
+---
+
+### Q118: Producer-Consumer Using BlockingQueue
+
+**Problem:** Implement the producer-consumer problem using Java's `BlockingQueue` instead of low-level wait/notify. Demonstrate how `ArrayBlockingQueue` handles synchronization internally.
+
+**Difficulty:** Easy
+
+**Companies:** Amazon · Microsoft · Google
+
+**Key Concepts:** BlockingQueue, thread pools, high-level concurrency
+
+```java
+import java.util.concurrent.*;
+
+public class ProducerConsumerBlockingQueue {
+    public static void main(String[] args) {
+        BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(5);
+
+        Runnable producer = () -> {
+            try {
+                for (int i = 1; i <= 10; i++) {
+                    queue.put(i);
+                    System.out.println(Thread.currentThread().getName() + " produced: " + i);
+                    Thread.sleep(100);
+                }
+            } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+        };
+
+        Runnable consumer = () -> {
+            try {
+                for (int i = 1; i <= 10; i++) {
+                    Integer item = queue.take();
+                    System.out.println(Thread.currentThread().getName() + " consumed: " + item);
+                    Thread.sleep(200);
+                }
+            } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+        };
+
+        ExecutorService executor = Executors.newFixedThreadPool(4);
+        executor.submit(producer);
+        executor.submit(producer);
+        executor.submit(consumer);
+        executor.submit(consumer);
+        executor.shutdown();
+        try { executor.awaitTermination(10, TimeUnit.SECONDS); } catch (InterruptedException e) {}
+        System.out.println("BlockingQueue producer-consumer completed");
+    }
+}
+```
+
+**Explanation:** `ArrayBlockingQueue` handles all synchronization internally. `put()` blocks if the queue is full; `take()` blocks if empty. This is the preferred approach over low-level wait/notify in production code. Using `Executors.newFixedThreadPool(4)` simplifies thread lifecycle management.
+
+---
+
+### Q119: Reader-Writers Problem
+
+**Problem:** Implement the readers-writers problem where multiple readers can read simultaneously, but writers need exclusive access. Use ReadWriteLock to prioritize either readers or writers.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Google · Oracle
+
+**Key Concepts:** ReadWriteLock, reader preference vs writer preference, concurrent access control
+
+```java
+import java.util.concurrent.*;
+import java.util.concurrent.locks.*;
+import java.util.concurrent.atomic.*;
+
+class SharedDataStore {
+    private final ReentrantReadWriteLock rwLock = new ReentrantReadWriteLock();
+    private final Lock readLock = rwLock.readLock();
+    private final Lock writeLock = rwLock.writeLock();
+    private int value = 0;
+    private final AtomicInteger activeReaders = new AtomicInteger(0);
+
+    int read() {
+        readLock.lock();
+        try {
+            activeReaders.incrementAndGet();
+            System.out.println(Thread.currentThread().getName() + " reading: " + value + " (active readers: " + activeReaders.get() + ")");
+            Thread.sleep(100);
+            return value;
+        } catch (InterruptedException e) { Thread.currentThread().interrupt(); return -1;
+        } finally {
+            activeReaders.decrementAndGet();
+            readLock.unlock();
+        }
+    }
+
+    void write(int newValue) {
+        writeLock.lock();
+        try {
+            System.out.println(Thread.currentThread().getName() + " writing: " + newValue);
+            Thread.sleep(200);
+            this.value = newValue;
+            System.out.println(Thread.currentThread().getName() + " wrote: " + newValue);
+        } catch (InterruptedException e) { Thread.currentThread().interrupt();
+        } finally { writeLock.unlock(); }
+    }
+}
+
+public class ReaderWritersProblem {
+    public static void main(String[] args) {
+        SharedDataStore store = new SharedDataStore();
+        ExecutorService executor = Executors.newFixedThreadPool(6);
+
+        for (int i = 0; i < 4; i++) {
+            executor.submit(() -> {
+                for (int j = 0; j < 3; j++) store.read();
+            });
+        }
+        for (int i = 0; i < 2; i++) {
+            executor.submit(() -> {
+                for (int j = 0; j < 2; j++) store.write(ThreadLocalRandom.current().nextInt(100));
+            });
+        }
+
+        executor.shutdown();
+        try { executor.awaitTermination(10, TimeUnit.SECONDS); } catch (InterruptedException e) {}
+        System.out.println("Reader-Writers demo completed");
+    }
+}
+```
+
+**Explanation:** `ReentrantReadWriteLock` allows multiple readers to acquire the read lock simultaneously, but the write lock is exclusive. When a writer holds the lock, all readers and other writers block. This is reader-preference by default — writers can starve under heavy read load. Use `ReentrantReadWriteLock(true)` for fair mode.
+
+---
+
+### Q120: Dining Philosophers
+
+**Problem:** Implement the classic Dining Philosophers problem where N philosophers sit at a table with N forks. Each philosopher alternates between thinking and eating. Eating requires two forks. Avoid deadlock.
+
+**Difficulty:** Hard
+
+**Companies:** Google · Amazon · Microsoft · Oracle
+
+**Key Concepts:** Deadlock prevention, resource ordering, tryLock
+
+```java
+import java.util.concurrent.*;
+import java.util.concurrent.locks.*;
+import java.util.concurrent.atomic.*;
+
+class Philosopher implements Runnable {
+    private final int id;
+    private final Lock leftFork, rightFork;
+    private final AtomicInteger eatCount = new AtomicInteger(0);
+
+    Philosopher(int id, Lock leftFork, Lock rightFork) {
+        this.id = id;
+        if (id % 2 == 0) { this.leftFork = leftFork; this.rightFork = rightFork; }
+        else { this.leftFork = rightFork; this.rightFork = leftFork; }
+    }
+
+    public void run() {
+        try {
+            for (int i = 0; i < 3; i++) {
+                think();
+                eat();
+            }
+            System.out.println("Philosopher " + id + " finished eating " + eatCount.get() + " times");
+        } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+    }
+
+    void think() throws InterruptedException {
+        System.out.println("Philosopher " + id + " thinking...");
+        Thread.sleep(ThreadLocalRandom.current().nextInt(200, 500));
+    }
+
+    void eat() throws InterruptedException {
+        leftFork.lock();
+        try {
+            rightFork.lock();
+            try {
+                System.out.println("Philosopher " + id + " eating...");
+                eatCount.incrementAndGet();
+                Thread.sleep(ThreadLocalRandom.current().nextInt(200, 500));
+            } finally { rightFork.unlock(); }
+        } finally { leftFork.unlock(); }
+    }
+}
+
+public class DiningPhilosophers {
+    public static void main(String[] args) {
+        int n = 5;
+        Philosopher[] philosophers = new Philosopher[n];
+        ReentrantLock[] forks = new ReentrantLock[n];
+        for (int i = 0; i < n; i++) forks[i] = new ReentrantLock();
+
+        ExecutorService executor = Executors.newFixedThreadPool(n);
+        for (int i = 0; i < n; i++) {
+            philosophers[i] = new Philosopher(i, forks[i], forks[(i + 1) % n]);
+            executor.submit(philosophers[i]);
+        }
+
+        executor.shutdown();
+        try { executor.awaitTermination(10, TimeUnit.SECONDS); } catch (InterruptedException e) {}
+        System.out.println("Dining philosophers completed (deadlock-free)");
+    }
+}
+```
+
+**Explanation:** Deadlock is prevented by having odd-numbered philosophers pick up forks in reverse order (right first, then left). This breaks the circular wait condition. An alternative approach is using `tryLock()` with a timeout — if a philosopher cannot acquire the second fork within a time limit, they release the first and retry.
+
+---
+
+### Q121: Print FooBar Alternately
+
+**Problem:** Write a program that prints "FooBar" alternately n times using two threads. Thread A prints "Foo", Thread B prints "Bar". The output should be "FooBarFooBarFooBar..." for n repetitions.
+
+**Difficulty:** Medium
+
+**Companies:** Google · Microsoft · Amazon
+
+**Key Concepts:** Semaphore, thread ordering, signaling
+
+```java
+import java.util.concurrent.*;
+
+public class FooBarAlternate {
+    private final int n;
+    private final Semaphore fooSem = new Semaphore(1);
+    private final Semaphore barSem = new Semaphore(0);
+
+    public FooBarAlternate(int n) { this.n = n; }
+
+    void foo() throws InterruptedException {
+        for (int i = 0; i < n; i++) {
+            fooSem.acquire();
+            System.out.print("Foo");
+            barSem.release();
+        }
+    }
+
+    void bar() throws InterruptedException {
+        for (int i = 0; i < n; i++) {
+            barSem.acquire();
+            System.out.print("Bar");
+            fooSem.release();
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        FooBarAlternate fb = new FooBarAlternate(5);
+        Thread t1 = new Thread(() -> { try { fb.foo(); } catch (InterruptedException e) {} });
+        Thread t2 = new Thread(() -> { try { fb.bar(); } catch (InterruptedException e) {} });
+        t1.start(); t2.start();
+        t1.join(); t2.join();
+        System.out.println();
+    }
+}
+```
+
+**Explanation:** Two semaphores enforce ordering. `fooSem` starts with 1 permit so `foo()` runs first. After printing "Foo", it releases `barSem`, allowing `bar()` to print "Bar". `bar()` then releases `fooSem`, allowing the next "Foo". This guarantees "FooBar" sequence.
+
+---
+
+### Q122: Zero-Even-Odd Sequence Printing
+
+**Problem:** Print the sequence 0102030405... where Thread A prints "0", Thread B prints even numbers, Thread C prints odd numbers. For n=5, output should be "0102030405".
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Google · Microsoft
+
+**Key Concepts:** Semaphore-based three-thread coordination, state machine
+
+```java
+import java.util.concurrent.*;
+import java.util.function.IntConsumer;
+
+public class ZeroEvenOdd {
+    private final int n;
+    private final Semaphore zeroSem = new Semaphore(1);
+    private final Semaphore evenSem = new Semaphore(0);
+    private final Semaphore oddSem = new Semaphore(0);
+
+    public ZeroEvenOdd(int n) { this.n = n; }
+
+    void zero(IntConsumer print) throws InterruptedException {
+        for (int i = 1; i <= n; i++) {
+            zeroSem.acquire();
+            print.accept(0);
+            if (i % 2 == 1) oddSem.release();
+            else evenSem.release();
+        }
+    }
+
+    void even(IntConsumer print) throws InterruptedException {
+        for (int i = 2; i <= n; i += 2) {
+            evenSem.acquire();
+            print.accept(i);
+            zeroSem.release();
+        }
+    }
+
+    void odd(IntConsumer print) throws InterruptedException {
+        for (int i = 1; i <= n; i += 2) {
+            oddSem.acquire();
+            print.accept(i);
+            zeroSem.release();
+        }
+    }
+
+    public static void main(String[] args) throws Exception {
+        ZeroEvenOdd zeo = new ZeroEvenOdd(5);
+        StringBuilder sb = new StringBuilder();
+        IntConsumer print = ch -> { synchronized (sb) { sb.append(ch); } };
+
+        Thread t1 = new Thread(() -> { try { zeo.zero(print); } catch (InterruptedException e) {} });
+        Thread t2 = new Thread(() -> { try { zeo.even(print); } catch (InterruptedException e) {} });
+        Thread t3 = new Thread(() -> { try { zeo.odd(print); } catch (InterruptedException e) {} });
+
+        t1.start(); t2.start(); t3.start();
+        t1.join(); t2.join(); t3.join();
+        System.out.println("Output: " + sb.toString());
+    }
+}
+```
+
+**Explanation:** Three semaphores coordinate three threads. `zeroSem` starts with 1 permit, allowing "0" to print first. After each zero, it signals either `oddSem` (for the next odd number) or `evenSem` (for the next even). After printing the number, the number thread releases `zeroSem` to print the next zero. This ensures the sequence 0,1,0,2,0,3,...
+
+---
+
+### Q123: Thread-Safe Singleton
+
+**Problem:** Implement a thread-safe Singleton pattern using three approaches: double-checked locking, Bill Pugh initialization holder, and enum singleton. Discuss pros and cons.
+
+**Difficulty:** Easy
+
+**Companies:** Amazon · Microsoft · Google · All major companies
+
+**Key Concepts:** volatile, class loading, enum, concurrency patterns
+
+```java
+import java.util.concurrent.*;
+
+final class SingletonDCL {
+    private static volatile SingletonDCL instance;
+
+    private SingletonDCL() { System.out.println("DCL Singleton created by " + Thread.currentThread().getName()); }
+
+    public static SingletonDCL getInstance() {
+        if (instance == null) {
+            synchronized (SingletonDCL.class) {
+                if (instance == null) instance = new SingletonDCL();
+            }
+        }
+        return instance;
+    }
+}
+
+final class SingletonBillPugh {
+    private SingletonBillPugh() { System.out.println("Bill Pugh Singleton created by " + Thread.currentThread().getName()); }
+
+    private static class Holder { static final SingletonBillPugh INSTANCE = new SingletonBillPugh(); }
+
+    public static SingletonBillPugh getInstance() { return Holder.INSTANCE; }
+}
+
+enum SingletonEnum {
+    INSTANCE;
+
+    SingletonEnum() { System.out.println("Enum Singleton created by " + Thread.currentThread().getName()); }
+
+    public void doWork() { System.out.println("Enum singleton working on " + Thread.currentThread().getName()); }
+}
+
+public class ThreadSafeSingleton {
+    public static void main(String[] args) throws Exception {
+        ExecutorService executor = Executors.newFixedThreadPool(5);
+
+        System.out.println("=== Testing DCL Singleton ===");
+        for (int i = 0; i < 5; i++) {
+            executor.submit(() -> {
+                SingletonDCL s = SingletonDCL.getInstance();
+                System.out.println("DCL hash: " + System.identityHashCode(s));
+            });
+        }
+        Thread.sleep(500);
+
+        System.out.println("\n=== Testing Bill Pugh Singleton ===");
+        for (int i = 0; i < 5; i++) {
+            executor.submit(() -> {
+                SingletonBillPugh s = SingletonBillPugh.getInstance();
+                System.out.println("BillPugh hash: " + System.identityHashCode(s));
+            });
+        }
+        Thread.sleep(500);
+
+        System.out.println("\n=== Testing Enum Singleton ===");
+        for (int i = 0; i < 5; i++) {
+            executor.submit(() -> {
+                SingletonEnum s = SingletonEnum.INSTANCE;
+                System.out.println("Enum hash: " + System.identityHashCode(s));
+                s.doWork();
+            });
+        }
+
+        executor.shutdown();
+        executor.awaitTermination(5, TimeUnit.SECONDS);
+    }
+}
+```
+
+**Explanation:** 
+- **Double-Checked Locking (DCL):** `volatile` keyword prevents the JIT compiler from reordering the constructor call and field assignment. Without `volatile`, another thread could see a non-null reference to an incompletely constructed object.
+- **Bill Pugh:** The JVM defers loading the Holder class until `getInstance()` is called. Class loading is inherently synchronized by the JVM, making this both lazy and thread-safe without explicit synchronization.
+- **Enum Singleton:** Guaranteed single instance by the JVM. Serialization-safe and reflection-safe. Joshua Bloch's recommended approach in Effective Java.
+
+---
+
+### Q124: Custom Thread Pool Implementation
+
+**Problem:** Implement a custom thread pool from scratch with configurable core size, max size, and a blocking queue for pending tasks. Demonstrate with sample tasks.
+
+**Difficulty:** Hard
+
+**Companies:** Amazon · Google · Microsoft · Flipkart
+
+**Key Concepts:** Thread lifecycle management, blocking queue, worker threads, graceful shutdown
+
+```java
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.concurrent.atomic.*;
+import java.util.concurrent.locks.*;
+
+class CustomThreadPool {
+    private final BlockingQueue<Runnable> taskQueue;
+    private final List<Worker> workers = new ArrayList<>();
+    private final AtomicBoolean isShutdown = new AtomicBoolean(false);
+    private final int coreSize, maxSize;
+    private final AtomicInteger activeCount = new AtomicInteger(0);
+
+    static class Worker extends Thread {
+        final BlockingQueue<Runnable> queue;
+        final CustomThreadPool pool;
+
+        Worker(String name, BlockingQueue<Runnable> queue, CustomThreadPool pool) {
+            super(name); this.queue = queue; this.pool = pool;
+        }
+
+        public void run() {
+            while (!pool.isShutdown.get() || !queue.isEmpty()) {
+                try {
+                    Runnable task = queue.poll(500, TimeUnit.MILLISECONDS);
+                    if (task != null) {
+                        pool.activeCount.incrementAndGet();
+                        task.run();
+                        pool.activeCount.decrementAndGet();
+                    }
+                } catch (InterruptedException e) { Thread.currentThread().interrupt(); break; }
+            }
+            pool.workers.remove(this);
+        }
+    }
+
+    public CustomThreadPool(int coreSize, int maxSize, int queueCapacity) {
+        this.coreSize = coreSize;
+        this.maxSize = maxSize;
+        this.taskQueue = new LinkedBlockingQueue<>(queueCapacity);
+        for (int i = 0; i < coreSize; i++) {
+            Worker w = new Worker("Pool-Worker-" + i, taskQueue, this);
+            workers.add(w);
+            w.start();
+        }
+    }
+
+    public void submit(Runnable task) {
+        if (isShutdown.get()) throw new RejectedExecutionException("Pool is shut down");
+        if (!taskQueue.offer(task) && workers.size() < maxSize) {
+            Worker w = new Worker("Pool-Worker-Extra-" + workers.size(), taskQueue, this);
+            workers.add(w);
+            w.start();
+            taskQueue.offer(task);
+        } else if (!taskQueue.offer(task)) {
+            throw new RejectedExecutionException("Queue full and max workers reached");
+        }
+    }
+
+    public void shutdown() {
+        isShutdown.set(true);
+        for (Worker w : workers) w.interrupt();
+    }
+
+    public int getActiveCount() { return activeCount.get(); }
+    public int getQueueSize() { return taskQueue.size(); }
+
+    public static void main(String[] args) {
+        CustomThreadPool pool = new CustomThreadPool(2, 4, 10);
+
+        for (int i = 1; i <= 10; i++) {
+            final int taskId = i;
+            pool.submit(() -> {
+                System.out.println(Thread.currentThread().getName() + " executing task " + taskId);
+                try { Thread.sleep(500); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+                System.out.println(Thread.currentThread().getName() + " completed task " + taskId);
+            });
+        }
+
+        try { Thread.sleep(3000); } catch (InterruptedException e) {}
+        System.out.println("Active workers: " + pool.getActiveCount());
+        System.out.println("Queue size: " + pool.getQueueSize());
+        pool.shutdown();
+    }
+}
+```
+
+**Explanation:** The thread pool maintains a set of `Worker` threads that poll from a shared `BlockingQueue`. Workers run in an infinite loop until shutdown, pulling tasks from the queue. If the queue is full and worker count is below max, a new worker is created. On `shutdown()`, the flag prevents new task acceptance and interrupts idle workers.
+
+---
+
+### Q125: Deadlock Detection Example
+
+**Problem:** Demonstrate a classic deadlock scenario with two threads holding locks in opposite order. Show how to detect deadlock using `ThreadMXBean` and how to prevent it using ordered lock acquisition.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon · Microsoft · Google · Oracle
+
+**Key Concepts:** Deadlock, circular wait, `ThreadMXBean`, lock ordering
+
+```java
+import java.lang.management.*;
+import java.util.concurrent.*;
+import java.util.concurrent.locks.*;
+
+class DeadlockDemo {
+    private final Object lock1 = new Object();
+    private final Object lock2 = new Object();
+    private volatile boolean deadlockDetected = false;
+
+    void methodA() {
+        synchronized (lock1) {
+            System.out.println("Thread-A acquired lock1");
+            try { Thread.sleep(100); } catch (InterruptedException e) {}
+            synchronized (lock2) {
+                System.out.println("Thread-A acquired lock2 (never reached if deadlocked)");
+            }
+        }
+    }
+
+    void methodB() {
+        synchronized (lock2) {
+            System.out.println("Thread-B acquired lock2");
+            try { Thread.sleep(100); } catch (InterruptedException e) {}
+            synchronized (lock1) {
+                System.out.println("Thread-B acquired lock1 (never reached if deadlocked)");
+            }
+        }
+    }
+
+    void demonstrateDeadlock() throws InterruptedException {
+        Thread t1 = new Thread(this::methodA, "Deadlock-Thread-A");
+        Thread t2 = new Thread(this::methodB, "Deadlock-Thread-B");
+        t1.start(); t2.start();
+
+        Thread detector = new Thread(() -> {
+            while (!deadlockDetected) {
+                try { Thread.sleep(200); } catch (InterruptedException e) {}
+                ThreadMXBean bean = ManagementFactory.getThreadMXBean();
+                long[] deadlockedThreads = bean.findDeadlockedThreads();
+                if (deadlockedThreads != null && deadlockedThreads.length > 0) {
+                    deadlockDetected = true;
+                    System.out.println("\n=== DEADLOCK DETECTED ===");
+                    for (long id : deadlockedThreads) {
+                        ThreadInfo info = bean.getThreadInfo(id, 20);
+                        System.out.println("Thread: " + info.getThreadName() + " (state: " + info.getThreadState() + ")");
+                        for (MonitorInfo mi : info.getLockedMonitors()) {
+                            System.out.println("  Holding lock on: " + mi.getClassName());
+                        }
+                        for (LockInfo li : info.getLockedSynchronizers()) {
+                            System.out.println("  Holding synchronizer: " + li);
+                        }
+                    }
+                    System.out.println("Interrupting deadlocked threads...");
+                    t1.interrupt();
+                    t2.interrupt();
+                }
+            }
+        }, "Deadlock-Detector");
+        detector.start();
+
+        t1.join(3000);
+        t2.join(3000);
+        System.out.println("Deadlock demonstration completed. Detected: " + deadlockDetected);
+    }
+}
+
+class DeadlockPreventionDemo {
+    private final Object lock1 = new Object();
+    private final Object lock2 = new Object();
+
+    void safeMethodA() {
+        int hash1 = System.identityHashCode(lock1);
+        int hash2 = System.identityHashCode(lock2);
+        Object first = hash1 < hash2 ? lock1 : lock2;
+        Object second = hash1 < hash2 ? lock2 : lock1;
+
+        synchronized (first) {
+            System.out.println("Safe-A acquired " + (first == lock1 ? "lock1" : "lock2") + " first");
+            try { Thread.sleep(50); } catch (InterruptedException e) {}
+            synchronized (second) {
+                System.out.println("Safe-A acquired both locks");
+            }
+        }
+    }
+
+    void safeMethodB() {
+        int hash1 = System.identityHashCode(lock1);
+        int hash2 = System.identityHashCode(lock2);
+        Object first = hash1 < hash2 ? lock1 : lock2;
+        Object second = hash1 < hash2 ? lock2 : lock1;
+
+        synchronized (first) {
+            System.out.println("Safe-B acquired " + (first == lock1 ? "lock1" : "lock2") + " first");
+            try { Thread.sleep(50); } catch (InterruptedException e) {}
+            synchronized (second) {
+                System.out.println("Safe-B acquired both locks");
+            }
+        }
+    }
+
+    void demonstratePrevention() throws InterruptedException {
+        Thread t1 = new Thread(this::safeMethodA, "Safe-Thread-A");
+        Thread t2 = new Thread(this::safeMethodB, "Safe-Thread-B");
+        t1.start(); t2.start();
+        t1.join(); t2.join();
+        System.out.println("No deadlock! Lock ordering prevention works.");
+    }
+}
+
+public class DeadlockExample {
+    public static void main(String[] args) throws Exception {
+        System.out.println("=== Demonstrating Deadlock ===");
+        DeadlockDemo demo = new DeadlockDemo();
+        demo.demonstrateDeadlock();
+
+        Thread.sleep(1000);
+
+        System.out.println("\n=== Demonstrating Deadlock Prevention (Lock Ordering) ===");
+        DeadlockPreventionDemo safe = new DeadlockPreventionDemo();
+        safe.demonstratePrevention();
+    }
+}
+```
+
+**Explanation:** Deadlock occurs when two threads hold locks that the other needs (circular wait). The `ThreadMXBean.findDeadlockedThreads()` method detects deadlock at runtime by analyzing the JVM's thread monitor state.
+
+**Prevention strategies demonstrated:**
+1. **Lock Ordering (coffman condition):** Always acquire locks in the same global order. Using `System.identityHashCode()` ensures consistency. Both threads acquire `lock1` first and `lock2` second, eliminating the cycle.
+2. **Other strategies (not shown):** Use `tryLock()` with timeouts, reduce lock scope, use lock-free data structures, or use `ReentrantLock` with timeout.
+
+---

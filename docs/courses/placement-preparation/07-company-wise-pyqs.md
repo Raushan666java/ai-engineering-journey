@@ -5027,4 +5027,791 @@ public class MinPathSum {
 
 ---
 
+## Apple
+
+### Interview Process Overview
+Apple's interview process is rigorous and values craftsmanship. It typically includes: Recruiter Screen → Technical Phone Screen (1-2 LeetCode Medium/Hard problems) → On-site (6-7 rounds: coding, system design, hiring manager, behavioral). Apple engineers code in Swift, Objective-C, Java, and C++. They value product passion, attention to detail, and cross-functional thinking. Privacy and user experience are central themes.
+
+---
+
+### Problem 1: LRU Cache (Apple, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Design and implement a data structure for Least Recently Used (LRU) cache. It should support `get` and `put` operations in O(1) average time complexity.
+
+```java
+import java.util.*;
+
+public class LRUCache {
+    private final int capacity;
+    private final Map<Integer, Node> map;
+    private final Node head, tail;
+
+    static class Node {
+        int key, value;
+        Node prev, next;
+        Node(int key, int value) {
+            this.key = key; this.value = value;
+        }
+    }
+
+    public LRUCache(int capacity) {
+        this.capacity = capacity;
+        this.map = new HashMap<>();
+        head = new Node(0, 0);
+        tail = new Node(0, 0);
+        head.next = tail;
+        tail.prev = head;
+    }
+
+    public int get(int key) {
+        if (!map.containsKey(key)) return -1;
+        Node node = map.get(key);
+        remove(node);
+        addToFront(node);
+        return node.value;
+    }
+
+    public void put(int key, int value) {
+        if (map.containsKey(key)) {
+            remove(map.get(key));
+        } else if (map.size() >= capacity) {
+            Node lru = tail.prev;
+            remove(lru);
+            map.remove(lru.key);
+        }
+        Node node = new Node(key, value);
+        addToFront(node);
+        map.put(key, node);
+    }
+
+    private void addToFront(Node node) {
+        node.next = head.next;
+        node.prev = head;
+        head.next.prev = node;
+        head.next = node;
+    }
+
+    private void remove(Node node) {
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+    }
+}
+```
+**Time:** O(1) per operation | **Space:** O(capacity)
+
+---
+
+### Problem 2: Merge Intervals (Apple, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an array of intervals where intervals[i] = [start, end], merge all overlapping intervals and return an array of non-overlapping intervals.
+
+```java
+import java.util.*;
+
+public class MergeIntervals {
+    public static int[][] merge(int[][] intervals) {
+        if (intervals.length <= 1) return intervals;
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        List<int[]> merged = new ArrayList<>();
+        int[] current = intervals[0];
+        for (int i = 1; i < intervals.length; i++) {
+            if (intervals[i][0] <= current[1]) {
+                current[1] = Math.max(current[1], intervals[i][1]);
+            } else {
+                merged.add(current);
+                current = intervals[i];
+            }
+        }
+        merged.add(current);
+        return merged.toArray(new int[merged.size()][]);
+    }
+
+    public static void main(String[] args) {
+        int[][] intervals = {{1,3},{2,6},{8,10},{15,18}};
+        int[][] result = merge(intervals);
+        System.out.println(Arrays.deepToString(result)); // [[1,6],[8,10],[15,18]]
+    }
+}
+```
+**Time:** O(n log n) | **Space:** O(n)
+
+---
+
+### Problem 3: String Compression (Apple, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Implement a method to perform basic string compression using counts of repeated characters. For example, "aabcccccaaa" becomes "a2b1c5a3". If the compressed string is not smaller than the original, return the original.
+
+```java
+public class StringCompression {
+    public static String compress(String str) {
+        StringBuilder compressed = new StringBuilder();
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            count++;
+            if (i + 1 >= str.length() || str.charAt(i) != str.charAt(i + 1)) {
+                compressed.append(str.charAt(i)).append(count);
+                count = 0;
+            }
+        }
+        return compressed.length() < str.length() ? compressed.toString() : str;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(compress("aabcccccaaa")); // a2b1c5a3
+        System.out.println(compress("ab"));           // ab (not smaller)
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
+
+---
+
+### Problem 4: Best Time to Buy and Sell Stock (Apple, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** You are given an array prices where prices[i] is the stock price on day i. You want to maximize profit by choosing a single day to buy and a different day to sell. Return the maximum profit or 0 if no profit can be made.
+
+```java
+public class BestTimeToBuySellStock {
+    public static int maxProfit(int[] prices) {
+        int minPrice = Integer.MAX_VALUE;
+        int maxProfit = 0;
+        for (int price : prices) {
+            if (price < minPrice) {
+                minPrice = price;
+            } else if (price - minPrice > maxProfit) {
+                maxProfit = price - minPrice;
+            }
+        }
+        return maxProfit;
+    }
+
+    public static void main(String[] args) {
+        int[] prices = {7, 1, 5, 3, 6, 4};
+        System.out.println(maxProfit(prices)); // 5
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+### Problem 5: Word Break (Apple, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of dictionary words.
+
+```java
+import java.util.*;
+
+public class WordBreak {
+    public static boolean wordBreak(String s, List<String> wordDict) {
+        Set<String> dict = new HashSet<>(wordDict);
+        boolean[] dp = new boolean[s.length() + 1];
+        dp[0] = true;
+        for (int i = 1; i <= s.length(); i++) {
+            for (int j = 0; j < i; j++) {
+                if (dp[j] && dict.contains(s.substring(j, i))) {
+                    dp[i] = true;
+                    break;
+                }
+            }
+        }
+        return dp[s.length()];
+    }
+
+    public static void main(String[] args) {
+        String s = "leetcode";
+        List<String> dict = Arrays.asList("leet", "code");
+        System.out.println(wordBreak(s, dict)); // true
+    }
+}
+```
+**Time:** O(n²) | **Space:** O(n)
+
+---
+
+## LinkedIn
+
+### Interview Process Overview
+LinkedIn's interview process: Recruiter Call → Technical Phone Screen (coding + system design basics) → On-site (4-5 rounds: 2 coding, 1 system design, 1 behavioral/values, 1 hiring manager). LinkedIn values transformation, data-driven thinking, and graph algorithm expertise. Their engineering blog is an excellent preparation resource.
+
+---
+
+### Problem 1: Max Stack (LinkedIn, 2023)
+**Difficulty:** Easy
+
+**Problem Statement:** Design a max stack that supports push, pop, top, peekMax, and popMax operations.
+
+```java
+import java.util.*;
+
+public class MaxStack {
+    private final Stack<Integer> stack;
+    private final Stack<Integer> maxStack;
+
+    public MaxStack() {
+        stack = new Stack<>();
+        maxStack = new Stack<>();
+    }
+
+    public void push(int x) {
+        stack.push(x);
+        if (maxStack.isEmpty() || x >= maxStack.peek()) {
+            maxStack.push(x);
+        }
+    }
+
+    public int pop() {
+        int val = stack.pop();
+        if (val == maxStack.peek()) {
+            maxStack.pop();
+        }
+        return val;
+    }
+
+    public int top() { return stack.peek(); }
+    public int peekMax() { return maxStack.peek(); }
+
+    public int popMax() {
+        int max = maxStack.peek();
+        Stack<Integer> buffer = new Stack<>();
+        while (top() != max) buffer.push(pop());
+        pop();
+        while (!buffer.isEmpty()) push(buffer.pop());
+        return max;
+    }
+}
+```
+**Time:** O(n) for popMax, O(1) for others | **Space:** O(n)
+
+---
+
+### Problem 2: Nested List Weight Sum (LinkedIn, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a nested list of integers, return the sum of all integers weighted by their depth. Each element is either an integer or a list whose elements may also be integers or lists.
+
+```java
+import java.util.*;
+
+interface NestedInteger {
+    boolean isInteger();
+    Integer getInteger();
+    List<NestedInteger> getList();
+}
+
+public class NestedListWeightSum {
+    public static int depthSum(List<NestedInteger> nestedList) {
+        return dfs(nestedList, 1);
+    }
+
+    private static int dfs(List<NestedInteger> list, int depth) {
+        int sum = 0;
+        for (NestedInteger ni : list) {
+            if (ni.isInteger()) {
+                sum += ni.getInteger() * depth;
+            } else {
+                sum += dfs(ni.getList(), depth + 1);
+            }
+        }
+        return sum;
+    }
+}
+```
+**Time:** O(n) | **Space:** O(d) where d is max depth
+
+---
+
+### Problem 3: Can Place Flowers (LinkedIn, 2023)
+**Difficulty:** Easy
+
+**Problem Statement:** You have a flowerbed represented as an integer array where 0 means empty and 1 means planted. Flowers cannot be planted in adjacent plots. Given n new flowers, can you plant them without violating the rule?
+
+```java
+public class CanPlaceFlowers {
+    public static boolean canPlaceFlowers(int[] flowerbed, int n) {
+        int count = 0;
+        for (int i = 0; i < flowerbed.length && count < n; i++) {
+            if (flowerbed[i] == 0) {
+                boolean leftEmpty = (i == 0) || (flowerbed[i - 1] == 0);
+                boolean rightEmpty = (i == flowerbed.length - 1) || (flowerbed[i + 1] == 0);
+                if (leftEmpty && rightEmpty) {
+                    flowerbed[i] = 1;
+                    count++;
+                }
+            }
+        }
+        return count >= n;
+    }
+
+    public static void main(String[] args) {
+        int[] bed = {1, 0, 0, 0, 1};
+        System.out.println(canPlaceFlowers(bed, 1)); // true
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+### Problem 4: Shortest Word Distance (LinkedIn, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given an array of strings wordsDict and two strings word1 and word2, return the shortest distance between the positions where these words occur.
+
+```java
+public class ShortestWordDistance {
+    public static int shortestDistance(String[] wordsDict, String word1, String word2) {
+        int pos1 = -1, pos2 = -1;
+        int minDist = Integer.MAX_VALUE;
+        for (int i = 0; i < wordsDict.length; i++) {
+            if (wordsDict[i].equals(word1)) pos1 = i;
+            if (wordsDict[i].equals(word2)) pos2 = i;
+            if (pos1 != -1 && pos2 != -1) {
+                minDist = Math.min(minDist, Math.abs(pos1 - pos2));
+            }
+        }
+        return minDist;
+    }
+
+    public static void main(String[] args) {
+        String[] words = {"practice", "makes", "perfect", "coding", "makes"};
+        System.out.println(shortestDistance(words, "coding", "practice")); // 3
+        System.out.println(shortestDistance(words, "makes", "coding"));    // 1
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+## Salesforce
+
+### Interview Process Overview
+Salesforce's process: Recruiter Call → HackerRank/CodeSignal OA → Technical Phone Screen → On-site (4-5 rounds: DS/Algo, system design, architecture, manager, HR) → Leadership round. Salesforce values Ohana culture, multi-tenant architecture knowledge, and platform thinking. Trailhead certifications are a significant advantage.
+
+---
+
+### Problem 1: Valid Parentheses (Salesforce, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given a string s containing parentheses, brackets, and braces, determine if the input string is valid. A string is valid if brackets close in the correct order.
+
+```java
+import java.util.*;
+
+public class ValidParentheses {
+    public static boolean isValid(String s) {
+        Map<Character, Character> map = Map.of(')', '(', '}', '{', ']', '[');
+        Deque<Character> stack = new ArrayDeque<>();
+        for (char c : s.toCharArray()) {
+            if (map.containsValue(c)) {
+                stack.push(c);
+            } else if (map.containsKey(c)) {
+                if (stack.isEmpty() || stack.pop() != map.get(c)) return false;
+            }
+        }
+        return stack.isEmpty();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isValid("()[]{}")); // true
+        System.out.println(isValid("([)]"));    // false
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
+
+---
+
+### Problem 2: Merge k Sorted Lists (Salesforce, 2023)
+**Difficulty:** Hard
+
+**Problem Statement:** Merge k sorted linked lists and return them as one sorted list.
+
+```java
+import java.util.*;
+
+public class MergeKSortedLists {
+    static class ListNode {
+        int val; ListNode next;
+        ListNode(int val) { this.val = val; }
+    }
+
+    public static ListNode mergeKLists(ListNode[] lists) {
+        PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+        for (ListNode head : lists) {
+            if (head != null) pq.offer(head);
+        }
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        while (!pq.isEmpty()) {
+            ListNode node = pq.poll();
+            curr.next = node;
+            curr = curr.next;
+            if (node.next != null) pq.offer(node.next);
+        }
+        return dummy.next;
+    }
+
+    public static void main(String[] args) {
+        ListNode l1 = new ListNode(1); l1.next = new ListNode(4); l1.next.next = new ListNode(5);
+        ListNode l2 = new ListNode(1); l2.next = new ListNode(3); l2.next.next = new ListNode(4);
+        ListNode l3 = new ListNode(2); l3.next = new ListNode(6);
+        ListNode merged = mergeKLists(new ListNode[]{l1, l2, l3});
+        // Output: 1→1→2→3→4→4→5→6
+    }
+}
+```
+**Time:** O(n log k) | **Space:** O(k)
+
+---
+
+### Problem 3: Top K Frequent Elements (Salesforce, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an integer array nums and an integer k, return the k most frequent elements. Return the answer in any order.
+
+```java
+import java.util.*;
+
+public class TopKFrequent {
+    public static int[] topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> freq = new HashMap<>();
+        for (int num : nums) freq.put(num, freq.getOrDefault(num, 0) + 1);
+
+        PriorityQueue<Integer> pq = new PriorityQueue<>(
+            (a, b) -> freq.get(a) - freq.get(b)
+        );
+        for (int key : freq.keySet()) {
+            pq.offer(key);
+            if (pq.size() > k) pq.poll();
+        }
+        int[] result = new int[k];
+        for (int i = k - 1; i >= 0; i--) result[i] = pq.poll();
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1,1,1,2,2,3};
+        System.out.println(Arrays.toString(topKFrequent(nums, 2))); // [1, 2]
+    }
+}
+```
+**Time:** O(n log k) | **Space:** O(n)
+
+---
+
+### Problem 4: Clone Graph (Salesforce, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a reference to a node in a connected undirected graph, return a deep copy (clone) of the graph.
+
+```java
+import java.util.*;
+
+public class CloneGraph {
+    static class Node {
+        int val;
+        List<Node> neighbors;
+        Node(int val) {
+            this.val = val;
+            neighbors = new ArrayList<>();
+        }
+    }
+
+    private final Map<Node, Node> visited = new HashMap<>();
+
+    public Node cloneGraph(Node node) {
+        if (node == null) return null;
+        if (visited.containsKey(node)) return visited.get(node);
+        Node clone = new Node(node.val);
+        visited.put(node, clone);
+        for (Node neighbor : node.neighbors) {
+            clone.neighbors.add(cloneGraph(neighbor));
+        }
+        return clone;
+    }
+}
+```
+**Time:** O(V + E) | **Space:** O(V)
+
+---
+
+## Oracle
+
+### Interview Process Overview
+Oracle's process: Recruiter Screen → Online Coding Test → Technical Phone Screen → On-site (4-5 rounds: DS/Algo, system design, database internals, manager, HR) → Team match. Oracle values deep systems knowledge (OS, JVM, memory management), database expertise, and Java mastery. For OCI roles, cloud architecture is central.
+
+---
+
+### Problem 1: Longest Substring Without Repeating Characters (Oracle, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a string s, find the length of the longest substring without repeating characters.
+
+```java
+import java.util.*;
+
+public class LongestSubstringNoRepeat {
+    public static int lengthOfLongestSubstring(String s) {
+        Map<Character, Integer> map = new HashMap<>();
+        int maxLen = 0, left = 0;
+        for (int right = 0; right < s.length(); right++) {
+            char c = s.charAt(right);
+            if (map.containsKey(c) && map.get(c) >= left) {
+                left = map.get(c) + 1;
+            }
+            map.put(c, right);
+            maxLen = Math.max(maxLen, right - left + 1);
+        }
+        return maxLen;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(lengthOfLongestSubstring("abcabcbb")); // 3 ("abc")
+        System.out.println(lengthOfLongestSubstring("bbbbb"));    // 1 ("b")
+    }
+}
+```
+**Time:** O(n) | **Space:** O(min(n, alphabet size))
+
+---
+
+### Problem 2: Find Minimum in Rotated Sorted Array (Oracle, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Suppose an array of length n sorted in ascending order is rotated between 1 and n times. Find the minimum element in O(log n) time.
+
+```java
+public class FindMinRotated {
+    public static int findMin(int[] nums) {
+        int left = 0, right = nums.length - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] > nums[right]) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return nums[left];
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {3, 4, 5, 1, 2};
+        System.out.println(findMin(nums)); // 1
+    }
+}
+```
+**Time:** O(log n) | **Space:** O(1)
+
+---
+
+### Problem 3: Zigzag Conversion (Oracle, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows. Read it row by row and return the converted string.
+
+```java
+public class ZigzagConversion {
+    public static String convert(String s, int numRows) {
+        if (numRows == 1 || numRows >= s.length()) return s;
+        StringBuilder[] rows = new StringBuilder[numRows];
+        for (int i = 0; i < numRows; i++) rows[i] = new StringBuilder();
+        int index = 0, step = 1;
+        for (char c : s.toCharArray()) {
+            rows[index].append(c);
+            if (index == 0) step = 1;
+            else if (index == numRows - 1) step = -1;
+            index += step;
+        }
+        StringBuilder result = new StringBuilder();
+        for (StringBuilder row : rows) result.append(row);
+        return result.toString();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(convert("PAYPALISHIRING", 3));
+        // Output: "PAHNAPLSIIGYIR"
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
+
+---
+
+## Atlassian
+
+### Interview Process Overview
+Atlassian's process: Recruiter Screen → Codility/CodeSignal OA → Technical Phone Screen → On-site (4-5 rounds: coding, system design, values interview, manager round). Atlassian values "Open Company, No Bullshit" culture, teamwork, and product thinking. System design questions often involve collaboration tools and workflow engines.
+
+---
+
+### Problem 1: Design a File System (Atlassian, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Design an in-memory file system that supports creating paths, adding files, and reading files. Implement ls, mkdir, addContentToFile, and readContentFromFile operations.
+
+```java
+import java.util.*;
+
+public class FileSystem {
+    static class Node {
+        String name;
+        boolean isFile;
+        StringBuilder content;
+        Map<String, Node> children;
+        Node(String name, boolean isFile) {
+            this.name = name;
+            this.isFile = isFile;
+            this.content = isFile ? new StringBuilder() : null;
+            this.children = isFile ? null : new TreeMap<>();
+        }
+    }
+
+    private final Node root;
+
+    public FileSystem() { root = new Node("/", false); }
+
+    private Node traverse(String path) {
+        Node curr = root;
+        if (path.equals("/")) return curr;
+        for (String part : path.split("/")) {
+            if (part.isEmpty()) continue;
+            if (!curr.children.containsKey(part))
+                curr.children.put(part, new Node(part, false));
+            curr = curr.children.get(part);
+        }
+        return curr;
+    }
+
+    public List<String> ls(String path) {
+        Node curr = traverse(path);
+        if (curr.isFile) return List.of(curr.name);
+        return new ArrayList<>(curr.children.keySet());
+    }
+
+    public void mkdir(String path) { traverse(path); }
+
+    public void addContentToFile(String filePath, String content) {
+        String[] parts = filePath.split("/");
+        String fileName = parts[parts.length - 1];
+        Node dir = traverse(filePath.substring(0, filePath.length() - fileName.length()));
+        if (!dir.children.containsKey(fileName))
+            dir.children.put(fileName, new Node(fileName, true));
+        dir.children.get(fileName).content.append(content);
+    }
+
+    public String readContentFromFile(String filePath) {
+        String[] parts = filePath.split("/");
+        Node dir = traverse(filePath.substring(0, filePath.length() - parts[parts.length - 1].length()));
+        return dir.children.get(parts[parts.length - 1]).content.toString();
+    }
+}
+```
+**Time:** O(n) per operation (where n = path depth) | **Space:** O(total paths)
+
+---
+
+### Problem 2: Most Popular Video Creator (Atlassian, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given two arrays creators and ids (parallel) and an array views where views[i] is the view count of video ids[i] by creator creators[i], find the most popular creator(s) — the one(s) with the highest total views. For each most popular creator, return their name and the video with the most views (smallest lexicographical id in case of tie).
+
+```java
+import java.util.*;
+
+public class MostPopularCreator {
+    public static List<List<String>> mostPopularCreator(
+            String[] creators, String[] ids, int[] views) {
+        Map<String, Long> totalViews = new HashMap<>();
+        Map<String, String> topVideo = new HashMap<>();
+        Map<String, Integer> topViews = new HashMap<>();
+
+        for (int i = 0; i < creators.length; i++) {
+            String c = creators[i], id = ids[i];
+            int v = views[i];
+            totalViews.put(c, totalViews.getOrDefault(c, 0L) + v);
+            if (!topViews.containsKey(c) || v > topViews.get(c) ||
+                (v == topViews.get(c) && id.compareTo(topVideo.get(c)) < 0)) {
+                topViews.put(c, v);
+                topVideo.put(c, id);
+            }
+        }
+
+        long maxViews = totalViews.values().stream()
+                          .mapToLong(Long::longValue).max().orElse(0);
+        List<List<String>> result = new ArrayList<>();
+        for (Map.Entry<String, Long> entry : totalViews.entrySet()) {
+            if (entry.getValue() == maxViews) {
+                result.add(Arrays.asList(entry.getKey(), topVideo.get(entry.getKey())));
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        String[] creators = {"alice", "bob", "alice", "chris"};
+        String[] ids = {"one", "two", "three", "four"};
+        int[] views = {5, 2, 3, 1};
+        System.out.println(mostPopularCreator(creators, ids, views));
+        // [[alice, one]] — alice has 8 total, top video "one" with 5 views
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
+
+---
+
+### Problem 3: Number of Islands (Atlassian, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an m x n 2D binary grid where '1' represents land and '0' represents water, count the number of islands. An island is surrounded by water and formed by connecting adjacent land cells horizontally or vertically.
+
+```java
+public class NumberOfIslands {
+    public static int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0) return 0;
+        int count = 0, m = grid.length, n = grid[0].length;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == '1') {
+                    count++;
+                    dfs(grid, i, j);
+                }
+            }
+        }
+        return count;
+    }
+
+    private static void dfs(char[][] grid, int i, int j) {
+        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length
+            || grid[i][j] == '0') return;
+        grid[i][j] = '0'; // Mark visited
+        dfs(grid, i + 1, j);
+        dfs(grid, i - 1, j);
+        dfs(grid, i, j + 1);
+        dfs(grid, i, j - 1);
+    }
+
+    public static void main(String[] args) {
+        char[][] grid = {
+            {'1','1','1','1','0'},
+            {'1','1','0','1','0'},
+            {'1','1','0','0','0'},
+            {'0','0','0','0','0'}
+        };
+        System.out.println(numIslands(grid)); // 1
+    }
+}
+```
+**Time:** O(m * n) | **Space:** O(m * n) worst case for recursion stack
+
+---
+
 *This compilation is based on actual campus placement experiences reported between 2023–2025. Problems and solution approaches may vary across interview rounds and locations.*

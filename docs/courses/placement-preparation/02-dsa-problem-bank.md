@@ -3337,14 +3337,14 @@ public class FizzBuzz {
 
 | Company | Problem Numbers |
 |---------|----------------|
-| Amazon | 1–75 |
-| Google | 1–75 |
-| Microsoft | 1–75 |
-| Meta | 1–75 |
-| Apple | 1–75 |
-| Bloomberg | 1, 2, 4, 5, 6, 7, 8, 9, 11, 13, 14, 15, 16, 18, 19, 20, 21, 22, 24, 26, 28, 29, 31, 32, 34, 36, 37, 39, 41, 49, 52, 57, 59, 63, 66, 69, 71, 73, 74, 75 |
+| Amazon | 1–100 |
+| Google | 1–100 |
+| Microsoft | 1–100 |
+| Meta | 1–100 |
+| Apple | 1–100 |
+| Bloomberg | 1–100 |
+| Adobe | 1–100 |
 | Uber | 1, 2, 3, 5, 8, 12, 24, 26, 28, 30, 33, 40, 41, 43, 44, 47, 51, 55, 56, 57, 58, 62, 65, 67 |
-| Adobe | 3, 6, 10, 12, 23, 25, 27, 35, 36, 37, 38, 42, 45, 48, 50, 53, 59, 60, 61, 63, 64, 68, 70, 71, 72, 74, 75 |
 | LinkedIn | 4, 17, 46, 54 |
 | Netflix | 7, 11, 28, 42, 51 |
 | Goldman Sachs | 2, 9, 18, 33, 44, 62 |
@@ -3352,10 +3352,1633 @@ public class FizzBuzz {
 | IBM | 20, 29, 38, 55, 65 |
 | Salesforce | 17, 19, 30, 40, 50, 61 |
 | Intel | 13, 24, 32, 41, 52, 64, 66 |
-| Cisco | 8, 16, 25, 34, 43, 53, 60, 63 |
+| Cisco | 8, 16, 25, 34, 43, 53, 60, 63, 83, 85 |
 | Nvidia | 14, 21, 31, 39, 49, 57, 69, 73 |
 | Walmart | 10, 27, 36, 46, 56, 70 |
 | PayPal | 15, 23, 28, 37, 47, 54, 68 |
 | JP Morgan | 2, 18, 33, 44, 62 |
 
-> **End of DSA Problem Bank.** All 75 solutions include complete, compilable Java code with `main` methods. Practice each problem by first attempting without looking at the solution, then reviewing the approach and complexity analysis.
+> **End of DSA Problem Bank.** All 100 solutions include complete, compilable Java code with `main` methods. Practice each problem by first attempting without looking at the solution, then reviewing the approach and complexity analysis.
+---
+
+## Problems 76â€“100
+
+### Q76: Find All Duplicates in Array
+
+**Problem:** Given an integer array `nums` of length `n` where all integers are in the range `[1, n]` and each appears once or twice, return an array of all integers that appear twice. You must achieve O(n) time and O(1) extra space without modifying the input (marking is acceptable).
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Apple Â· Meta Â· Bloomberg
+
+```java
+import java.util.*;
+
+public class FindAllDuplicates {
+    public List<Integer> findDuplicates(int[] nums) {
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            int idx = Math.abs(nums[i]) - 1;
+            if (nums[idx] < 0) {
+                result.add(Math.abs(nums[i]));
+            } else {
+                nums[idx] = -nums[idx];
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        FindAllDuplicates solver = new FindAllDuplicates();
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+        System.out.println("Duplicates: " + solver.findDuplicates(nums));
+    }
+}
+```
+
+- **Time:** O(n) â€” single pass with index marking
+- **Space:** O(1) excluding output
+
+---
+
+### Q77: Longest Consecutive Sequence
+
+**Problem:** Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence. Write an O(n) algorithm.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+import java.util.*;
+
+public class LongestConsecutiveSequence {
+    public int longestConsecutive(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+        for (int n : nums) set.add(n);
+        int maxLen = 0;
+        for (int n : set) {
+            if (!set.contains(n - 1)) {
+                int curr = n, len = 1;
+                while (set.contains(curr + 1)) {
+                    curr++;
+                    len++;
+                }
+                maxLen = Math.max(maxLen, len);
+            }
+        }
+        return maxLen;
+    }
+
+    public static void main(String[] args) {
+        LongestConsecutiveSequence solver = new LongestConsecutiveSequence();
+        int[] nums = {100, 4, 200, 1, 3, 2};
+        System.out.println("Longest consecutive length: " + solver.longestConsecutive(nums));
+    }
+}
+```
+
+- **Time:** O(n) â€” each element visited at most twice
+- **Space:** O(n) â€” set storage
+
+---
+
+### Q78: Max Area of Island
+
+**Problem:** You are given an `m x n` binary matrix `grid` where `1` represents land and `0` represents water. An island is a group of `1`s connected 4-directionally. Find the maximum area of any island. Return 0 if no island exists.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+public class MaxAreaOfIsland {
+    private int rows, cols;
+
+    public int maxAreaOfIsland(int[][] grid) {
+        rows = grid.length;
+        cols = grid[0].length;
+        int maxArea = 0;
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (grid[r][c] == 1) {
+                    maxArea = Math.max(maxArea, dfs(grid, r, c));
+                }
+            }
+        }
+        return maxArea;
+    }
+
+    private int dfs(int[][] grid, int r, int c) {
+        if (r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] == 0) return 0;
+        grid[r][c] = 0; // mark visited
+        int area = 1;
+        area += dfs(grid, r + 1, c);
+        area += dfs(grid, r - 1, c);
+        area += dfs(grid, r, c + 1);
+        area += dfs(grid, r, c - 1);
+        return area;
+    }
+
+    public static void main(String[] args) {
+        MaxAreaOfIsland solver = new MaxAreaOfIsland();
+        int[][] grid = {
+            {0,0,1,0,0,0,0,1,0,0,0,0,0},
+            {0,0,0,0,0,0,0,1,1,1,0,0,0},
+            {0,1,1,0,1,0,0,0,0,0,0,0,0},
+            {0,1,0,0,1,1,0,0,1,0,1,0,0},
+            {0,1,0,0,1,1,0,0,1,1,1,0,0},
+            {0,0,0,0,0,0,0,0,0,0,1,0,0},
+            {0,0,0,0,0,0,0,1,1,1,0,0,0},
+            {0,0,0,0,0,0,0,1,1,0,0,0,0}
+        };
+        System.out.println("Max area: " + solver.maxAreaOfIsland(grid));
+    }
+}
+```
+
+- **Time:** O(m Ã— n) â€” each cell visited once
+- **Space:** O(m Ã— n) worst-case recursion stack
+
+---
+
+### Q79: Jump Game II
+
+**Problem:** You are given a 0-indexed array `nums` of length `n`. You start at index 0. `nums[i]` represents the maximum jump length from index `i`. Return the minimum number of jumps to reach `nums[n-1]`. The test cases guarantee reachability.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Apple Â· Meta Â· Bloomberg
+
+```java
+public class JumpGameII {
+    public int jump(int[] nums) {
+        int jumps = 0, curEnd = 0, farthest = 0;
+        for (int i = 0; i < nums.length - 1; i++) {
+            farthest = Math.max(farthest, i + nums[i]);
+            if (i == curEnd) {
+                jumps++;
+                curEnd = farthest;
+            }
+        }
+        return jumps;
+    }
+
+    public static void main(String[] args) {
+        JumpGameII solver = new JumpGameII();
+        int[] nums = {2, 3, 1, 1, 4};
+        System.out.println("Min jumps: " + solver.jump(nums));
+    }
+}
+```
+
+- **Time:** O(n) â€” greedy BFS
+- **Space:** O(1)
+
+---
+
+### Q80: Combination Sum
+
+**Problem:** Given an array of distinct integers `candidates` and a target integer `target`, return all unique combinations where the candidate numbers sum to `target`. The same number may be used unlimited times. All combinations are unique.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+import java.util.*;
+
+public class CombinationSum {
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> result = new ArrayList<>();
+        backtrack(candidates, target, 0, new ArrayList<>(), result);
+        return result;
+    }
+
+    private void backtrack(int[] candidates, int remaining, int start,
+                           List<Integer> path, List<List<Integer>> result) {
+        if (remaining == 0) {
+            result.add(new ArrayList<>(path));
+            return;
+        }
+        for (int i = start; i < candidates.length; i++) {
+            if (candidates[i] > remaining) continue;
+            path.add(candidates[i]);
+            backtrack(candidates, remaining - candidates[i], i, path, result);
+            path.remove(path.size() - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        CombinationSum solver = new CombinationSum();
+        int[] candidates = {2, 3, 6, 7};
+        List<List<Integer>> result = solver.combinationSum(candidates, 7);
+        System.out.println("Combinations: " + result);
+    }
+}
+```
+
+- **Time:** O(2^{target/min}) â€” branching factor
+- **Space:** O(target/min) â€” recursion depth
+
+---
+
+### Q81: Permutations
+
+**Problem:** Given an array `nums` of distinct integers, return all possible permutations.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+import java.util.*;
+
+public class Permutations {
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        boolean[] used = new boolean[nums.length];
+        backtrack(nums, used, new ArrayList<>(), result);
+        return result;
+    }
+
+    private void backtrack(int[] nums, boolean[] used,
+                           List<Integer> path, List<List<Integer>> result) {
+        if (path.size() == nums.length) {
+            result.add(new ArrayList<>(path));
+            return;
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (used[i]) continue;
+            used[i] = true;
+            path.add(nums[i]);
+            backtrack(nums, used, path, result);
+            path.remove(path.size() - 1);
+            used[i] = false;
+        }
+    }
+
+    public static void main(String[] args) {
+        Permutations solver = new Permutations();
+        int[] nums = {1, 2, 3};
+        List<List<Integer>> result = solver.permute(nums);
+        System.out.println("Permutations: " + result);
+    }
+}
+```
+
+- **Time:** O(n Ã— n!) â€” n! permutations, O(n) to copy each
+- **Space:** O(n) â€” recursion stack and used array
+
+---
+
+### Q82: Rotate Image
+
+**Problem:** You are given an `n x n` 2D matrix representing an image. Rotate the image by 90 degrees clockwise **in-place**.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+import java.util.Arrays;
+
+public class RotateImage {
+    public void rotate(int[][] matrix) {
+        int n = matrix.length;
+        // Transpose
+        for (int i = 0; i < n; i++) {
+            for (int j = i + 1; j < n; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
+            }
+        }
+        // Reverse each row
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n / 2; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[i][n - 1 - j];
+                matrix[i][n - 1 - j] = temp;
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        RotateImage solver = new RotateImage();
+        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
+        solver.rotate(matrix);
+        System.out.println("Rotated: " + Arrays.deepToString(matrix));
+    }
+}
+```
+
+- **Time:** O(nÂ²)
+- **Space:** O(1)
+
+---
+
+### Q83: Spiral Matrix
+
+**Problem:** Given an `m x n` matrix, return all elements of the matrix in spiral order.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe Â· Cisco
+
+```java
+import java.util.*;
+
+public class SpiralMatrix {
+    public List<Integer> spiralOrder(int[][] matrix) {
+        List<Integer> result = new ArrayList<>();
+        int top = 0, bottom = matrix.length - 1;
+        int left = 0, right = matrix[0].length - 1;
+        while (top <= bottom && left <= right) {
+            for (int j = left; j <= right; j++) result.add(matrix[top][j]);
+            top++;
+            for (int i = top; i <= bottom; i++) result.add(matrix[i][right]);
+            right--;
+            if (top <= bottom) {
+                for (int j = right; j >= left; j--) result.add(matrix[bottom][j]);
+                bottom--;
+            }
+            if (left <= right) {
+                for (int i = bottom; i >= top; i--) result.add(matrix[i][left]);
+                left++;
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        SpiralMatrix solver = new SpiralMatrix();
+        int[][] matrix = {{1,2,3},{4,5,6},{7,8,9}};
+        System.out.println("Spiral order: " + solver.spiralOrder(matrix));
+    }
+}
+```
+
+- **Time:** O(m Ã— n)
+- **Space:** O(1) excluding output
+
+---
+
+### Q84: Set Matrix Zeroes
+
+**Problem:** Given an `m x n` integer matrix, if an element is 0, set its entire row and column to 0. Do it **in-place** using constant extra space.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+import java.util.Arrays;
+
+public class SetMatrixZeroes {
+    public void setZeroes(int[][] matrix) {
+        int m = matrix.length, n = matrix[0].length;
+        boolean firstRowZero = false, firstColZero = false;
+        for (int j = 0; j < n; j++) if (matrix[0][j] == 0) firstRowZero = true;
+        for (int i = 0; i < m; i++) if (matrix[i][0] == 0) firstColZero = true;
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                if (matrix[i][j] == 0) {
+                    matrix[i][0] = 0;
+                    matrix[0][j] = 0;
+                }
+            }
+        }
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                if (matrix[i][0] == 0 || matrix[0][j] == 0) matrix[i][j] = 0;
+            }
+        }
+        if (firstRowZero) for (int j = 0; j < n; j++) matrix[0][j] = 0;
+        if (firstColZero) for (int i = 0; i < m; i++) matrix[i][0] = 0;
+    }
+
+    public static void main(String[] args) {
+        SetMatrixZeroes solver = new SetMatrixZeroes();
+        int[][] matrix = {{1,1,1},{1,0,1},{1,1,1}};
+        solver.setZeroes(matrix);
+        System.out.println("Result: " + Arrays.deepToString(matrix));
+    }
+}
+```
+
+- **Time:** O(m Ã— n)
+- **Space:** O(1)
+
+---
+
+### Q85: Word Search
+
+**Problem:** Given an `m x n` board of characters and a string `word`, return `true` if `word` exists in the grid. The word can be constructed from sequentially adjacent cells (4-directionally). The same cell may not be used more than once.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Cisco
+
+```java
+public class WordSearch {
+    private int rows, cols;
+
+    public boolean exist(char[][] board, String word) {
+        rows = board.length;
+        cols = board[0].length;
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                if (board[r][c] == word.charAt(0) && dfs(board, r, c, word, 0)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    private boolean dfs(char[][] board, int r, int c, String word, int idx) {
+        if (idx == word.length()) return true;
+        if (r < 0 || r >= rows || c < 0 || c >= cols || board[r][c] != word.charAt(idx)) return false;
+        char temp = board[r][c];
+        board[r][c] = '#';
+        boolean found = dfs(board, r + 1, c, word, idx + 1)
+                     || dfs(board, r - 1, c, word, idx + 1)
+                     || dfs(board, r, c + 1, word, idx + 1)
+                     || dfs(board, r, c - 1, word, idx + 1);
+        board[r][c] = temp;
+        return found;
+    }
+
+    public static void main(String[] args) {
+        WordSearch solver = new WordSearch();
+        char[][] board = {
+            {'A','B','C','E'},
+            {'S','F','C','S'},
+            {'A','D','E','E'}
+        };
+        System.out.println("ABCCED exists: " + solver.exist(board, "ABCCED"));
+        System.out.println("SEE exists: " + solver.exist(board, "SEE"));
+        System.out.println("ABCB exists: " + solver.exist(board, "ABCB"));
+    }
+}
+```
+
+- **Time:** O(m Ã— n Ã— 4^L) â€” L = word length
+- **Space:** O(L) â€” recursion stack
+---
+
+### Q86: Construct Binary Tree from Preorder and Inorder Traversal
+
+**Problem:** Given two integer arrays `preorder` and `inorder` representing the preorder and inorder traversals of a binary tree, construct and return the binary tree.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+import java.util.*;
+
+class TreeNode {
+    int val;
+    TreeNode left, right;
+    TreeNode(int val) { this.val = val; }
+}
+
+public class ConstructBinaryTree {
+    private int preIdx;
+    private Map<Integer, Integer> inorderMap;
+
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        preIdx = 0;
+        inorderMap = new HashMap<>();
+        for (int i = 0; i < inorder.length; i++) inorderMap.put(inorder[i], i);
+        return build(preorder, 0, inorder.length - 1);
+    }
+
+    private TreeNode build(int[] preorder, int inLeft, int inRight) {
+        if (inLeft > inRight) return null;
+        int val = preorder[preIdx++];
+        TreeNode node = new TreeNode(val);
+        int mid = inorderMap.get(val);
+        node.left = build(preorder, inLeft, mid - 1);
+        node.right = build(preorder, mid + 1, inRight);
+        return node;
+    }
+
+    private static void inorderPrint(TreeNode node) {
+        if (node == null) return;
+        inorderPrint(node.left);
+        System.out.print(node.val + " ");
+        inorderPrint(node.right);
+    }
+
+    public static void main(String[] args) {
+        ConstructBinaryTree solver = new ConstructBinaryTree();
+        int[] preorder = {3, 9, 20, 15, 7};
+        int[] inorder = {9, 3, 15, 20, 7};
+        TreeNode root = solver.buildTree(preorder, inorder);
+        System.out.print("Inorder of constructed tree: ");
+        inorderPrint(root);
+        System.out.println();
+    }
+}
+```
+
+- **Time:** O(n)
+- **Space:** O(n) â€” map and recursion stack
+
+---
+
+### Q87: Kth Smallest Element in a BST
+
+**Problem:** Given the `root` of a binary search tree and an integer `k`, return the `k`th smallest value (1-indexed). Optimize for frequent queries.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+import java.util.*;
+
+public class KthSmallestBST {
+    public int kthSmallest(TreeNode root, int k) {
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode curr = root;
+        int count = 0;
+        while (curr != null || !stack.isEmpty()) {
+            while (curr != null) {
+                stack.push(curr);
+                curr = curr.left;
+            }
+            curr = stack.pop();
+            count++;
+            if (count == k) return curr.val;
+            curr = curr.right;
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(5);
+        root.left = new TreeNode(3);
+        root.right = new TreeNode(6);
+        root.left.left = new TreeNode(2);
+        root.left.right = new TreeNode(4);
+        root.left.left.left = new TreeNode(1);
+        KthSmallestBST solver = new KthSmallestBST();
+        System.out.println("3rd smallest: " + solver.kthSmallest(root, 3));
+    }
+}
+```
+
+- **Time:** O(n) worst-case, O(h + k) average
+- **Space:** O(h) â€” stack height
+
+---
+
+### Q88: Binary Tree Zigzag Level Order Traversal
+
+**Problem:** Given the `root` of a binary tree, return the zigzag level order traversal (left-to-right, then right-to-left for next level, alternating).
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+import java.util.*;
+
+public class ZigzagLevelOrder {
+    public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (root == null) return result;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        boolean leftToRight = true;
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            LinkedList<Integer> level = new LinkedList<>();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = queue.poll();
+                if (leftToRight) level.addLast(node.val);
+                else level.addFirst(node.val);
+                if (node.left != null) queue.offer(node.left);
+                if (node.right != null) queue.offer(node.right);
+            }
+            result.add(level);
+            leftToRight = !leftToRight;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        ZigzagLevelOrder solver = new ZigzagLevelOrder();
+        System.out.println("Zigzag: " + solver.zigzagLevelOrder(root));
+    }
+}
+```
+
+- **Time:** O(n)
+- **Space:** O(n) â€” queue holds up to n nodes
+
+---
+
+### Q89: Populating Next Right Pointers in Each Node
+
+**Problem:** You are given a perfect binary tree where all leaves are on the same level. Populate each `next` pointer to point to its next right node. If none exists, set it to `null`. O(1) space.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+class NodeWithNext {
+    int val;
+    NodeWithNext left, right, next;
+    NodeWithNext(int val) { this.val = val; }
+}
+
+public class PopulatingNextRight {
+    public NodeWithNext connect(NodeWithNext root) {
+        if (root == null) return null;
+        NodeWithNext leftmost = root;
+        while (leftmost.left != null) {
+            NodeWithNext head = leftmost;
+            while (head != null) {
+                head.left.next = head.right;
+                if (head.next != null) {
+                    head.right.next = head.next.left;
+                }
+                head = head.next;
+            }
+            leftmost = leftmost.left;
+        }
+        return root;
+    }
+
+    public static void main(String[] args) {
+        NodeWithNext root = new NodeWithNext(1);
+        root.left = new NodeWithNext(2);
+        root.right = new NodeWithNext(3);
+        root.left.left = new NodeWithNext(4);
+        root.left.right = new NodeWithNext(5);
+        root.right.left = new NodeWithNext(6);
+        root.right.right = new NodeWithNext(7);
+        PopulatingNextRight solver = new PopulatingNextRight();
+        solver.connect(root);
+        System.out.println("Root next: " + root.next);
+        System.out.println("Left child next val: " + root.left.next.val);
+    }
+}
+```
+
+- **Time:** O(n)
+- **Space:** O(1)
+
+---
+
+### Q90: Flatten Binary Tree to Linked List
+
+**Problem:** Given the `root` of a binary tree, flatten it into a linked list in-place using the same `TreeNode` class where `right` points to next and `left` is always null. The order should follow a preorder traversal.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+public class FlattenBinaryTree {
+    public void flatten(TreeNode root) {
+        TreeNode curr = root;
+        while (curr != null) {
+            if (curr.left != null) {
+                TreeNode prev = curr.left;
+                while (prev.right != null) prev = prev.right;
+                prev.right = curr.right;
+                curr.right = curr.left;
+                curr.left = null;
+            }
+            curr = curr.right;
+        }
+    }
+
+    private static void printFlattened(TreeNode root) {
+        while (root != null) {
+            System.out.print(root.val + " ");
+            root = root.right;
+        }
+    }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(5);
+        root.left.left = new TreeNode(3);
+        root.left.right = new TreeNode(4);
+        root.right.right = new TreeNode(6);
+        FlattenBinaryTree solver = new FlattenBinaryTree();
+        solver.flatten(root);
+        System.out.print("Flattened: ");
+        printFlattened(root);
+        System.out.println();
+    }
+}
+```
+
+- **Time:** O(n)
+- **Space:** O(1)
+
+---
+
+### Q91: Palindrome Partitioning
+
+**Problem:** Given a string `s`, partition it such that every substring is a palindrome. Return all possible palindrome partitions.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+import java.util.*;
+
+public class PalindromePartitioning {
+    public List<List<String>> partition(String s) {
+        List<List<String>> result = new ArrayList<>();
+        backtrack(s, 0, new ArrayList<>(), result);
+        return result;
+    }
+
+    private void backtrack(String s, int start,
+                           List<String> path, List<List<String>> result) {
+        if (start == s.length()) {
+            result.add(new ArrayList<>(path));
+            return;
+        }
+        for (int end = start + 1; end <= s.length(); end++) {
+            if (isPalindrome(s, start, end - 1)) {
+                path.add(s.substring(start, end));
+                backtrack(s, end, path, result);
+                path.remove(path.size() - 1);
+            }
+        }
+    }
+
+    private boolean isPalindrome(String s, int left, int right) {
+        while (left < right) {
+            if (s.charAt(left++) != s.charAt(right--)) return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        PalindromePartitioning solver = new PalindromePartitioning();
+        System.out.println("Partitions of 'aab': " + solver.partition("aab"));
+    }
+}
+```
+
+- **Time:** O(n Ã— 2^n) â€” worst-case exponential
+- **Space:** O(n) â€” recursion depth
+
+---
+
+### Q92: Decode Ways
+
+**Problem:** A message containing letters A-Z is encoded as '1'â†’'A', '2'â†’'B', ..., '26'â†’'Z'. Given a string `s` containing only digits, return the number of ways to decode it.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+public class DecodeWays {
+    public int numDecodings(String s) {
+        if (s == null || s.length() == 0 || s.charAt(0) == '0') return 0;
+        int n = s.length();
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        dp[1] = 1;
+        for (int i = 2; i <= n; i++) {
+            int one = Integer.parseInt(s.substring(i - 1, i));
+            int two = Integer.parseInt(s.substring(i - 2, i));
+            if (one >= 1) dp[i] += dp[i - 1];
+            if (two >= 10 && two <= 26) dp[i] += dp[i - 2];
+        }
+        return dp[n];
+    }
+
+    public static void main(String[] args) {
+        DecodeWays solver = new DecodeWays();
+        System.out.println("Ways for '226': " + solver.numDecodings("226"));
+        System.out.println("Ways for '12': " + solver.numDecodings("12"));
+        System.out.println("Ways for '06': " + solver.numDecodings("06"));
+    }
+}
+```
+
+- **Time:** O(n)
+- **Space:** O(n) â€” can be optimized to O(1)
+
+---
+
+### Q93: Gas Station
+
+**Problem:** There are `n` gas stations along a circular route. You have two integer arrays `gas[i]` (gas available) and `cost[i]` (gas to travel to i+1). Return the starting station index if you can complete the circuit once, or -1. The solution is guaranteed to be unique.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+public class GasStation {
+    public int canCompleteCircuit(int[] gas, int[] cost) {
+        int total = 0, curr = 0, start = 0;
+        for (int i = 0; i < gas.length; i++) {
+            int diff = gas[i] - cost[i];
+            total += diff;
+            curr += diff;
+            if (curr < 0) {
+                start = i + 1;
+                curr = 0;
+            }
+        }
+        return total >= 0 ? start : -1;
+    }
+
+    public static void main(String[] args) {
+        GasStation solver = new GasStation();
+        int[] gas = {1, 2, 3, 4, 5};
+        int[] cost = {3, 4, 5, 1, 2};
+        System.out.println("Start station: " + solver.canCompleteCircuit(gas, cost));
+    }
+}
+```
+
+- **Time:** O(n)
+- **Space:** O(1)
+
+---
+
+### Q94: Candy
+
+**Problem:** There are `n` children standing in a line. Each child is assigned a rating value. You must give at least 1 candy per child and children with a higher rating get more than their neighbors. Return the minimum candies needed.
+
+**Difficulty:** Hard
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+import java.util.Arrays;
+
+public class Candy {
+    public int candy(int[] ratings) {
+        int n = ratings.length;
+        int[] candies = new int[n];
+        Arrays.fill(candies, 1);
+        for (int i = 1; i < n; i++) {
+            if (ratings[i] > ratings[i - 1]) {
+                candies[i] = candies[i - 1] + 1;
+            }
+        }
+        for (int i = n - 2; i >= 0; i--) {
+            if (ratings[i] > ratings[i + 1]) {
+                candies[i] = Math.max(candies[i], candies[i + 1] + 1);
+            }
+        }
+        int sum = 0;
+        for (int c : candies) sum += c;
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        Candy solver = new Candy();
+        int[] ratings = {1, 0, 2};
+        System.out.println("Min candies: " + solver.candy(ratings));
+    }
+}
+```
+
+- **Time:** O(n) â€” two passes
+- **Space:** O(n)
+
+---
+
+### Q95: Majority Element II
+
+**Problem:** Given an integer array of size `n`, find all elements that appear more than `âŒŠn/3âŒ‹` times. Use O(1) space and O(n) time.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+import java.util.*;
+
+public class MajorityElementII {
+    public List<Integer> majorityElement(int[] nums) {
+        int cand1 = 0, cand2 = 0, count1 = 0, count2 = 0;
+        for (int n : nums) {
+            if (n == cand1) count1++;
+            else if (n == cand2) count2++;
+            else if (count1 == 0) { cand1 = n; count1 = 1; }
+            else if (count2 == 0) { cand2 = n; count2 = 1; }
+            else { count1--; count2--; }
+        }
+        count1 = count2 = 0;
+        for (int n : nums) {
+            if (n == cand1) count1++;
+            else if (n == cand2) count2++;
+        }
+        List<Integer> result = new ArrayList<>();
+        if (count1 > nums.length / 3) result.add(cand1);
+        if (count2 > nums.length / 3) result.add(cand2);
+        return result;
+    }
+
+    public static void main(String[] args) {
+        MajorityElementII solver = new MajorityElementII();
+        int[] nums = {3, 2, 3};
+        System.out.println("Majority > n/3: " + solver.majorityElement(nums));
+    }
+}
+```
+
+- **Time:** O(n)
+- **Space:** O(1)
+---
+
+### Q96: Find the Duplicate Number
+
+**Problem:** Given an array of integers `nums` containing `n + 1` integers where each integer is in `[1, n]`, there is exactly one duplicate number. Find it without modifying the array and using O(1) extra space.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+public class FindDuplicateNumber {
+    public int findDuplicate(int[] nums) {
+        int slow = nums[0], fast = nums[0];
+        do {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+        } while (slow != fast);
+        slow = nums[0];
+        while (slow != fast) {
+            slow = nums[slow];
+            fast = nums[fast];
+        }
+        return slow;
+    }
+
+    public static void main(String[] args) {
+        FindDuplicateNumber solver = new FindDuplicateNumber();
+        int[] nums = {1, 3, 4, 2, 2};
+        System.out.println("Duplicate: " + solver.findDuplicate(nums));
+    }
+}
+```
+
+- **Time:** O(n) â€” Floyd's cycle detection
+- **Space:** O(1)
+
+---
+
+### Q97: Longest Substring with At Most K Distinct Characters
+
+**Problem:** Given a string `s` and an integer `k`, return the length of the longest substring that contains at most `k` distinct characters.
+
+**Difficulty:** Medium
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+import java.util.*;
+
+public class LongestSubstringKDistinct {
+    public int lengthOfLongestSubstringKDistinct(String s, int k) {
+        if (k == 0) return 0;
+        Map<Character, Integer> map = new HashMap<>();
+        int left = 0, maxLen = 0;
+        for (int right = 0; right < s.length(); right++) {
+            map.put(s.charAt(right), map.getOrDefault(s.charAt(right), 0) + 1);
+            while (map.size() > k) {
+                char leftChar = s.charAt(left);
+                map.put(leftChar, map.get(leftChar) - 1);
+                if (map.get(leftChar) == 0) map.remove(leftChar);
+                left++;
+            }
+            maxLen = Math.max(maxLen, right - left + 1);
+        }
+        return maxLen;
+    }
+
+    public static void main(String[] args) {
+        LongestSubstringKDistinct solver = new LongestSubstringKDistinct();
+        System.out.println("Longest with at most 2 distinct: " + solver.lengthOfLongestSubstringKDistinct("eceba", 2));
+    }
+}
+```
+
+- **Time:** O(n)
+- **Space:** O(k) â€” map size
+
+---
+
+### Q98: Minimum Window Substring
+
+**Problem:** Given two strings `s` and `t`, return the minimum window substring of `s` that contains all characters of `t` (including duplicates). If no such window exists, return empty string.
+
+**Difficulty:** Hard
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg Â· Adobe
+
+```java
+import java.util.*;
+
+public class MinimumWindowSubstring {
+    public String minWindow(String s, String t) {
+        int[] need = new int[128];
+        for (char c : t.toCharArray()) need[c]++;
+        int have = 0, required = t.length();
+        int left = 0, minLeft = 0, minLen = Integer.MAX_VALUE;
+        for (int right = 0; right < s.length(); right++) {
+            char rc = s.charAt(right);
+            if (need[rc] > 0) have++;
+            need[rc]--;
+            while (have == required) {
+                if (right - left + 1 < minLen) {
+                    minLen = right - left + 1;
+                    minLeft = left;
+                }
+                char lc = s.charAt(left);
+                need[lc]++;
+                if (need[lc] > 0) have--;
+                left++;
+            }
+        }
+        return minLen == Integer.MAX_VALUE ? "" : s.substring(minLeft, minLeft + minLen);
+    }
+
+    public static void main(String[] args) {
+        MinimumWindowSubstring solver = new MinimumWindowSubstring();
+        System.out.println("Min window: '" + solver.minWindow("ADOBECODEBANC", "ABC") + "'");
+    }
+}
+```
+
+- **Time:** O(m + n) â€” m = s length, n = t length
+- **Space:** O(1) â€” fixed array of 128
+
+---
+
+### Q99: Alien Dictionary
+
+**Problem:** There is a new alien language that uses the English lowercase letters. You are given a list of `words` from the alien language sorted lexicographically. Determine the order of letters in the alien language. Return empty string if invalid.
+
+**Difficulty:** Hard
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+import java.util.*;
+
+public class AlienDictionary {
+    public String alienOrder(String[] words) {
+        Map<Character, Set<Character>> graph = new HashMap<>();
+        int[] inDegree = new int[26];
+        for (String w : words) for (char c : w.toCharArray()) graph.putIfAbsent(c, new HashSet<>());
+        for (int i = 0; i < words.length - 1; i++) {
+            String w1 = words[i], w2 = words[i + 1];
+            if (w1.length() > w2.length() && w1.startsWith(w2)) return "";
+            int minLen = Math.min(w1.length(), w2.length());
+            for (int j = 0; j < minLen; j++) {
+                char c1 = w1.charAt(j), c2 = w2.charAt(j);
+                if (c1 != c2) {
+                    if (!graph.get(c1).contains(c2)) {
+                        graph.get(c1).add(c2);
+                        inDegree[c2 - 'a']++;
+                    }
+                    break;
+                }
+            }
+        }
+        Queue<Character> queue = new LinkedList<>();
+        for (char c : graph.keySet()) if (inDegree[c - 'a'] == 0) queue.offer(c);
+        StringBuilder sb = new StringBuilder();
+        while (!queue.isEmpty()) {
+            char c = queue.poll();
+            sb.append(c);
+            for (char neighbor : graph.get(c)) {
+                inDegree[neighbor - 'a']--;
+                if (inDegree[neighbor - 'a'] == 0) queue.offer(neighbor);
+            }
+        }
+        return sb.length() == graph.size() ? sb.toString() : "";
+    }
+
+    public static void main(String[] args) {
+        AlienDictionary solver = new AlienDictionary();
+        String[] words = {"wrt", "wrf", "er", "ett", "rftt"};
+        System.out.println("Alien order: " + solver.alienOrder(words));
+    }
+}
+```
+
+- **Time:** O(C) â€” C is total characters across all words
+- **Space:** O(1) â€” at most 26 nodes
+
+---
+
+### Q100: Word Ladder II
+
+**Problem:** Given two words `beginWord` and `endWord`, and a dictionary `wordList`, return all shortest transformation sequences from `beginWord` to `endWord` where each adjacent pair differs by one letter. Each transformed word must exist in `wordList`.
+
+**Difficulty:** Hard
+
+**Companies:** Amazon Â· Microsoft Â· Google Â· Meta Â· Apple Â· Bloomberg
+
+```java
+import java.util.*;
+
+public class WordLadderII {
+    public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
+        Set<String> dict = new HashSet<>(wordList);
+        List<List<String>> result = new ArrayList<>();
+        if (!dict.contains(endWord)) return result;
+        Map<String, List<String>> neighbors = new HashMap<>();
+        Map<String, Integer> distance = new HashMap<>();
+        for (String w : dict) neighbors.put(w, new ArrayList<>());
+        neighbors.put(beginWord, new ArrayList<>());
+        bfs(beginWord, endWord, dict, neighbors, distance);
+        dfs(beginWord, endWord, neighbors, distance, new ArrayList<>(Arrays.asList(beginWord)), result);
+        return result;
+    }
+
+    private void bfs(String beginWord, String endWord, Set<String> dict,
+                     Map<String, List<String>> neighbors, Map<String, Integer> distance) {
+        Queue<String> queue = new LinkedList<>();
+        queue.offer(beginWord);
+        distance.put(beginWord, 0);
+        while (!queue.isEmpty()) {
+            boolean found = false;
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                String curr = queue.poll();
+                int curDist = distance.get(curr);
+                List<String> adj = getNeighbors(curr, dict);
+                for (String next : adj) {
+                    neighbors.get(curr).add(next);
+                    if (!distance.containsKey(next)) {
+                        distance.put(next, curDist + 1);
+                        if (next.equals(endWord)) found = true;
+                        else queue.offer(next);
+                    }
+                }
+            }
+            if (found) break;
+        }
+    }
+
+    private List<String> getNeighbors(String word, Set<String> dict) {
+        List<String> result = new ArrayList<>();
+        char[] arr = word.toCharArray();
+        for (int i = 0; i < arr.length; i++) {
+            char original = arr[i];
+            for (char c = 'a'; c <= 'z'; c++) {
+                if (c == original) continue;
+                arr[i] = c;
+                String next = new String(arr);
+                if (dict.contains(next)) result.add(next);
+            }
+            arr[i] = original;
+        }
+        return result;
+    }
+
+    private void dfs(String curr, String endWord, Map<String, List<String>> neighbors,
+                     Map<String, Integer> distance, List<String> path,
+                     List<List<String>> result) {
+        if (curr.equals(endWord)) {
+            result.add(new ArrayList<>(path));
+            return;
+        }
+        for (String next : neighbors.get(curr)) {
+            if (distance.get(next) == distance.get(curr) + 1) {
+                path.add(next);
+                dfs(next, endWord, neighbors, distance, path, result);
+                path.remove(path.size() - 1);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        WordLadderII solver = new WordLadderII();
+        List<String> wordList = Arrays.asList("hot", "dot", "dog", "lot", "log", "cog");
+        List<List<String>> result = solver.findLadders("hit", "cog", wordList);
+        System.out.println("Shortest ladders: " + result);
+    }
+}
+```
+
+- **Time:** O(N Ã— LÂ²) â€” N = wordList size, L = word length
+- **Space:** O(N Ã— L)
+
+---
+## Coding Patterns & Techniques Cheat Sheet
+
+Master these 15 patterns to solve ~85% of DSA interview problems. Each includes the intuition, a generic Java template, and problem references.
+
+---
+
+### 1. Sliding Window
+
+**When to use:** Problems involving contiguous subarrays/substrings with a constraint (max, min, longest, shortest, contains, sum = k). Often paired with "at most K", "at least K", or "maximum/minimum length".
+
+**Template:**
+```java
+int slidingWindow(int[] arr, int k) {
+    int left = 0, window = 0, result = 0;
+    for (int right = 0; right < arr.length; right++) {
+        window += arr[right];                          // expand
+        while (window > k) {                           // shrink condition
+            window -= arr[left];
+            left++;
+        }
+        result = Math.max(result, right - left + 1);   // update answer
+    }
+    return result;
+}
+```
+
+**Problems:** Q97 (K Distinct), Q98 (Min Window), Q49 (Longest Substring Without Repeating Characters)
+
+---
+
+### 2. Two Pointers
+
+**When to use:** Sorted arrays, pair/triplet sum problems, palindrome checking, or partitioning arrays. The pointers move toward each other or in the same direction.
+
+**Template:**
+```java
+boolean twoPointers(int[] arr, int target) {
+    int left = 0, right = arr.length - 1;
+    while (left < right) {
+        int sum = arr[left] + arr[right];
+        if (sum == target) return true;
+        else if (sum < target) left++;
+        else right--;
+    }
+    return false;
+}
+```
+
+**Problems:** Q1 (Two Sum sorted), Q6 (Container With Most Water), Q7 (3Sum), Q10 (Sort Colors)
+
+---
+
+### 3. Fast & Slow Pointers (Floyd's Algorithm)
+
+**When to use:** Cycle detection in linked lists, finding middle of linked list, finding duplicate in immutable array.
+
+**Template:**
+```java
+boolean hasCycle(ListNode head) {
+    ListNode slow = head, fast = head;
+    while (fast != null && fast.next != null) {
+        slow = slow.next;
+        fast = fast.next.next;
+        if (slow == fast) return true;
+    }
+    return false;
+}
+```
+
+**Problems:** Q13 (Linked List Cycle), Q24 (Palindrome Linked List), Q96 (Find Duplicate Number)
+
+---
+
+### 4. Merge Intervals
+
+**When to use:** Problems about overlapping intervals, meeting rooms, calendar conflicts, or interval intersection.
+
+**Template:**
+```java
+int[][] mergeIntervals(int[][] intervals) {
+    Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+    List<int[]> merged = new ArrayList<>();
+    int[] cur = intervals[0];
+    merged.add(cur);
+    for (int[] next : intervals) {
+        if (next[0] <= cur[1]) cur[1] = Math.max(cur[1], next[1]);
+        else { cur = next; merged.add(cur); }
+    }
+    return merged.toArray(new int[merged.size()][]);
+}
+```
+
+**Problems:** Q8 (Merge Intervals), Q27 (Non-overlapping Intervals), Q57 (Insert Interval)
+
+---
+
+### 5. Cyclic Sort
+
+**When to use:** Arrays of numbers in range [1, n] where we need to find missing/duplicate/smallest missing positive numbers.
+
+**Template:**
+```java
+void cyclicSort(int[] nums) {
+    int i = 0;
+    while (i < nums.length) {
+        int correct = nums[i] - 1;
+        if (nums[i] != nums[correct]) {
+            int temp = nums[i];
+            nums[i] = nums[correct];
+            nums[correct] = temp;
+        } else i++;
+    }
+}
+```
+
+**Problems:** Q11 (Missing Number), Q76 (Find All Duplicates), Q96 (Find Duplicate Number)
+
+---
+
+### 6. In-place Reversal of Linked List
+
+**When to use:** Reversing a linked list or a segment of it without extra space.
+
+**Template:**
+```java
+ListNode reverse(ListNode head) {
+    ListNode prev = null, curr = head;
+    while (curr != null) {
+        ListNode next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
+    }
+    return prev;
+}
+```
+
+**Problems:** Q15 (Reverse Linked List), Q22 (Reverse Nodes in k-Group), Q24 (Palindrome Linked List)
+
+---
+
+### 7. Tree BFS (Level Order)
+
+**When to use:** Tree/Graph level-by-level traversal, shortest path in unweighted graph, zigzag, right-side view.
+
+**Template:**
+```java
+void bfs(TreeNode root) {
+    Queue<TreeNode> queue = new LinkedList<>();
+    queue.offer(root);
+    while (!queue.isEmpty()) {
+        int size = queue.size();
+        for (int i = 0; i < size; i++) {
+            TreeNode node = queue.poll();
+            // process node
+            if (node.left != null) queue.offer(node.left);
+            if (node.right != null) queue.offer(node.right);
+        }
+    }
+}
+```
+
+**Problems:** Q88 (Zigzag Level Order), Q89 (Next Right Pointers), Q30 (Binary Tree Right Side View)
+
+---
+
+### 8. Tree DFS (Pre/In/Post-order)
+
+**When to use:** Tree path sum, maximum depth, diameter, symmetric tree, validating BST, constructing tree.
+
+**Template:**
+```java
+void dfs(TreeNode node) {
+    if (node == null) return;
+    // pre-order: process node first
+    dfs(node.left);
+    // in-order: process node between children
+    dfs(node.right);
+    // post-order: process node after children
+}
+```
+
+**Problems:** Q86 (Construct Tree), Q87 (Kth Smallest), Q90 (Flatten), Q36 (Maximum Depth), Q39 (Same Tree)
+
+---
+
+### 9. Subsets (Backtracking)
+
+**When to use:** Generating all combinations, permutations, subsets, or partitions. Use when the problem space requires exploring all possibilities.
+
+**Template:**
+```java
+void backtrack(int[] nums, int start, List<Integer> path, List<List<Integer>> result) {
+    result.add(new ArrayList<>(path));
+    for (int i = start; i < nums.length; i++) {
+        path.add(nums[i]);
+        backtrack(nums, i + 1, path, result);
+        path.remove(path.size() - 1);
+    }
+}
+```
+
+**Problems:** Q80 (Combination Sum), Q81 (Permutations), Q91 (Palindrome Partitioning), Q18 (Subsets), Q50 (Letter Combinations)
+
+---
+
+### 10. Modified Binary Search
+
+**When to use:** Sorted or rotated arrays, search space reduction, "find peak", "find boundary", sqrt, etc.
+
+**Template:**
+```java
+int binarySearch(int[] arr, int target) {
+    int left = 0, right = arr.length - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) return mid;
+        else if (arr[mid] < target) left = mid + 1;
+        else right = mid - 1;
+    }
+    return -1;
+}
+```
+
+**Problems:** Q5 (Min in Rotated Array), Q41 (Search in Rotated Array), Q43 (First/Last Position), Q44 (Find Peak)
+
+---
+
+### 11. Top K Elements (Heap)
+
+**When to use:** Finding top K largest/smallest, K most frequent, K closest points. Use a min-heap for top K largest, max-heap for top K smallest.
+
+**Template:**
+```java
+List<Integer> topK(int[] nums, int k) {
+    PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+    for (int n : nums) {
+        minHeap.offer(n);
+        if (minHeap.size() > k) minHeap.poll();
+    }
+    return new ArrayList<>(minHeap);
+}
+```
+
+**Problems:** Q59 (Kth Largest), Q63 (Top K Frequent), Q66 (K Closest Points)
+
+---
+
+### 12. K-way Merge
+
+**When to use:** Merging K sorted arrays/lists efficiently. Common in external sorting and merge K sorted lists problems.
+
+**Template:**
+```java
+ListNode mergeKLists(ListNode[] lists) {
+    PriorityQueue<ListNode> heap = new PriorityQueue<>((a, b) -> a.val - b.val);
+    for (ListNode node : lists) if (node != null) heap.offer(node);
+    ListNode dummy = new ListNode(0), tail = dummy;
+    while (!heap.isEmpty()) {
+        ListNode node = heap.poll();
+        tail.next = node;
+        tail = tail.next;
+        if (node.next != null) heap.offer(node.next);
+    }
+    return dummy.next;
+}
+```
+
+**Problems:** Q23 (Merge K Sorted Lists), Q17 (Merge Two Sorted Lists)
+
+---
+
+### 13. 0/1 Knapsack (DP)
+
+**When to use:** Optimization problems where each item can be taken or left (binary choice), with capacity constraints.
+
+**Template:**
+```java
+int knapsack(int[] weights, int[] values, int capacity) {
+    int n = weights.length;
+    int[][] dp = new int[n + 1][capacity + 1];
+    for (int i = 1; i <= n; i++) {
+        for (int w = 0; w <= capacity; w++) {
+            if (weights[i - 1] <= w) {
+                dp[i][w] = Math.max(dp[i - 1][w],
+                    dp[i - 1][w - weights[i - 1]] + values[i - 1]);
+            } else dp[i][w] = dp[i - 1][w];
+        }
+    }
+    return dp[n][capacity];
+}
+```
+
+**Problems:** Q20 (Coin Change), Q34 (Partition Equal Subset Sum), Q92 (Decode Ways)
+
+---
+
+### 14. Topological Sort (Graph)
+
+**When to use:** Problems with dependency ordering (course prerequisites, build order, alien dictionary). Requires a DAG.
+
+**Template:**
+```java
+List<Integer> topologicalSort(int n, int[][] edges) {
+    List<List<Integer>> graph = new ArrayList<>();
+    int[] inDegree = new int[n];
+    for (int i = 0; i < n; i++) graph.add(new ArrayList<>());
+    for (int[] e : edges) { graph.get(e[1]).add(e[0]); inDegree[e[0]]++; }
+    Queue<Integer> q = new LinkedList<>();
+    for (int i = 0; i < n; i++) if (inDegree[i] == 0) q.offer(i);
+    List<Integer> result = new ArrayList<>();
+    while (!q.isEmpty()) {
+        int node = q.poll();
+        result.add(node);
+        for (int next : graph.get(node)) {
+            inDegree[next]--;
+            if (inDegree[next] == 0) q.offer(next);
+        }
+    }
+    return result.size() == n ? result : new ArrayList<>();
+}
+```
+
+**Problems:** Q51 (Course Schedule), Q53 (Course Schedule II), Q99 (Alien Dictionary)
+
+---
+
+### 15. Union Find (Disjoint Set)
+
+**When to use:** Dynamic connectivity, finding connected components, detecting cycles in undirected graphs, number of islands, accounts merge.
+
+**Template:**
+```java
+class UnionFind {
+    int[] parent, rank;
+    UnionFind(int n) { parent = new int[n]; rank = new int[n];
+        for (int i = 0; i < n; i++) parent[i] = i; }
+    int find(int x) {
+        if (parent[x] != x) parent[x] = find(parent[x]);
+        return parent[x];
+    }
+    void union(int x, int y) {
+        int px = find(x), py = find(y);
+        if (px == py) return;
+        if (rank[px] < rank[py]) parent[px] = py;
+        else if (rank[px] > rank[py]) parent[py] = px;
+        else { parent[py] = px; rank[px]++; }
+    }
+}
+```
+
+**Problems:** Q78 (Max Area of Island), Q31 (Number of Islands), Q54 (Number of Connected Components)
+
+---
+
+### 16. Trie (Prefix Tree)
+
+**When to use:** Prefix matching, autocomplete, spell checker, word search in dictionary, longest prefix.
+
+**Template:**
+```java
+class TrieNode {
+    TrieNode[] children = new TrieNode[26];
+    boolean isEnd;
+}
+class Trie {
+    TrieNode root = new TrieNode();
+    void insert(String word) {
+        TrieNode node = root;
+        for (char c : word.toCharArray()) {
+            int idx = c - 'a';
+            if (node.children[idx] == null) node.children[idx] = new TrieNode();
+            node = node.children[idx];
+        }
+        node.isEnd = true;
+    }
+    boolean search(String word) {
+        TrieNode node = root;
+        for (char c : word.toCharArray()) {
+            int idx = c - 'a';
+            if (node.children[idx] == null) return false;
+            node = node.children[idx];
+        }
+        return node.isEnd;
+    }
+}
+```
+
+**Problems:** Q64 (Implement Trie), Q72 (Word Search II)
+
+---
+
+> **How to use this sheet:** Read a problem â†’ identify the pattern â†’ apply the template â†’ adapt. With practice, the mapping from problem to pattern becomes automatic. Most hard problems combine two patterns (e.g., BFS + Topological Sort, Sliding Window + HashMap, Two Pointers + Greedy).

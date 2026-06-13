@@ -72,8 +72,8 @@ Built with MkDocs + Material theme. Every chapter:
 | **Java + Spring Boot** | 66 | Core Java → Microservices interview Q&A |
 | **Laravel 13** | 54 | PHP → MySQL → AI/ML fundamentals |
 | **React** | 40 | Components → advanced patterns |
-| **GATE CS Prep** | 6 | Aptitude, TOC, Compilers, Digital Logic, Strategy |
-| **Placement Prep** | 6 | Resume, DSA bank, SQL bank, Company prep, HR/GD |
+| **GATE CS Prep** | 14 | Aptitude, TOC, Compilers, Digital Logic, Strategy, 8 Mock Tests |
+| **Placement Prep** | 7 | Resume, DSA 100 problems, SQL bank, Company PYQs, HR/GD |
 
 ---
 

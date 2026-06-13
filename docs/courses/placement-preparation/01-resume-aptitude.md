@@ -1905,3 +1905,658 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 | 41 | 36 | 42 | Circle (no straight lines) | 43 | A (vertical symmetry) | 44 | 6, 12, 8 |
 | 45 | 2 | 46 | 3 | 47 | Square inside Rectangle inside Rhombus? No — all are subtypes of parallelogram | 48 | 4 |
 | 49 | 24 | 50 | 90° |
+
+## Complete Resume Templates (Markdown)
+
+Below are five fully filled-out resume templates for different placement scenarios. **Use Template 1** if you're targeting FAANG or top-tier product companies with a strong CS background. **Template 2** works for mid-to-large product companies that value open-source and hackathon experience. **Template 3** is ideal for service-based companies (TCS, Infosys, Wipro, Accenture) where certifications and project breadth matter more than internships. **Template 4** targets data science/ML roles. **Template 5** is for full-stack developer roles at startups or product companies. Each resume uses anonymized company names and realistic quantifiable metrics.
+
+---
+
+### Template 1: FAANG/SDE Resume
+
+```markdown
+# RAHUL SHARMA
+Bengaluru, Karnataka | +91 98765 43210 | rahul.sharma@email.com | linkedin.com/in/rahulsharma | github.com/rahulsharma
+
+---
+
+## EDUCATION
+
+**National Institute of Technology, Surathkal** | B.Tech in Computer Science and Engineering
+*CGPA: 8.72 / 10.0* | *Nov 2022 – May 2026*
+
+**Relevant Coursework:** Data Structures and Algorithms, Operating Systems, Database Management Systems,
+Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Systems, Compiler Design
+
+**Senior Secondary (XII), Delhi Public School, Bengaluru** | *95.6%* | *2022*
+**Secondary (X), Delhi Public School, Bengaluru** | *96.4%* | *2020*
+
+---
+
+## INTERNSHIPS
+
+**TechCorp India Pvt. Ltd.** | Software Engineering Intern | *Bengaluru (Remote)* | *May 2025 – Jul 2025*
+- Designed and implemented a real-time chat microservice handling **10,000+ concurrent WebSocket connections** using Spring Boot, Redis Pub/Sub, and WebSocket STOMP protocol, reducing message delivery latency to under **50ms**
+- Built a distributed rate-limiting layer using Redis Sliding Window algorithm, preventing API abuse and reducing 429 errors by **85%** across 12 internal services
+- Wrote comprehensive unit and integration tests using JUnit 5 and Mockito, achieving **92% code coverage** on the messaging module
+- Containerized the chat service using Docker and deployed on AWS ECS with auto-scaling policies, handling 3x traffic spikes during production load tests
+
+**AlphaStart (Fintech Startup)** | Software Development Intern | *Remote* | *Dec 2024 – Jan 2025*
+- Developed RESTful APIs for a loan origination system using Node.js, Express, and PostgreSQL, reducing document processing time by **60%** through automated validation pipelines
+- Integrated Redis caching for frequently accessed customer data, reducing database query load by **70%** and improving API response times from 400ms to 120ms
+
+---
+
+## PROJECTS
+
+**Distributed Key-Value Store (Mini Redis)** | *Go, TCP, Consistent Hashing, Raft Consensus*
+- Built a fault-tolerant distributed key-value store from scratch supporting GET/SET/DEL operations with **99.99% availability** using the Raft consensus protocol across 5-node clusters
+- Implemented consistent hashing with virtual nodes for even data distribution, achieving **95% cache-hit ratio** under uniform access patterns
+- Designed a custom wire protocol over TCP with length-prefixed framing, handling **15,000+ requests/second** on a single node
+- *GitHub: github.com/rahulsharma/mini-redis*
+
+**Real-Time Collaborative Code Editor** | *React, Socket.IO, Monaco Editor, Node.js, MongoDB*
+- Built a collaborative coding platform where multiple users can edit code simultaneously with Operational Transformation for conflict resolution
+- Integrated Monaco Editor (VS Code engine) with syntax highlighting for 20+ programming languages
+- Added real-time cursor presence, chat, and code compilation via Docker sandboxed containers, supporting **50+ concurrent users per session**
+- Deployed on AWS EC2 with Nginx reverse proxy, achieving sub-100ms sync latency across users
+- *GitHub: github.com/rahulsharma/collab-code*
+
+**URL Shortener with Analytics** | *Python, Flask, Redis, PostgreSQL, Docker*
+- Designed a URL shortening service generating unique 7-character short codes via base62 encoding, supporting **1,000+ URLs/minute**
+- Implemented click analytics dashboard tracking geolocation, referrer, browser, and device type using MaxMind GeoIP and user-agent parsing
+- Cached frequently accessed URLs in Redis with LRU eviction, achieving **99% cache hit rate** and average redirect latency under **5ms**
+- *GitHub: github.com/rahulsharma/url-shortener*
+
+---
+
+## SKILLS
+
+**Languages:** Java (Proficient), C++ (Proficient), Python, Go, JavaScript/TypeScript, SQL
+**Frameworks & Libraries:** Spring Boot, React.js, Node.js/Express, Flask, Hibernate, JPA
+**Databases:** PostgreSQL, MySQL, MongoDB, Redis
+**Tools & Platforms:** Docker, Kubernetes, AWS (EC2, ECS, S3, Lambda), Git, Linux, Nginx, Apache Kafka
+**Concepts:** Data Structures & Algorithms, System Design, Distributed Systems, OOP, REST APIs, Microservices
+
+---
+
+## ACHIEVEMENTS
+
+- **CodeChef Rating 2100+ (6★)** — Global rank #47 in CodeChef Starters 124, highest rating among college batch
+- **LeetCode Guardian (2400+ rating)** — Solved **850+ problems** including 250+ hard; weekly contest global rank #132
+- **ACM ICPC 2024 Regionalist** — Secured rank #128 among 3,500+ teams in ICPC Asia-Kanpur regionals
+- **Google Kick Start** — Global rank #256 in Round F 2024
+- **Dean's List Award** — Awarded for academic excellence in all 6 semesters (top 5% of cohort)
+
+---
+
+## POSITIONS OF RESPONSIBILITY
+
+**Competitive Programming Lead, Coding Club — NIT Surathkal** | *Aug 2024 – Present*
+- Mentor 60+ juniors in DSA and competitive programming; conduct weekly training sessions covering advanced graph algorithms, dynamic programming, and segment trees
+- Organized **CodeSprint 2025**, a 24-hour inter-college hackathon with 500+ participants and 120 teams
+
+**Teaching Assistant — Data Structures & Algorithms** | *Jan 2025 – Apr 2025*
+- Conducted weekly tutorial sessions for 80+ second-year students; designed lab assignments on trees, graphs, and sorting algorithms; average student feedback score: 4.6/5.0
+
+---
+
+## CERTIFICATIONS
+
+- **AWS Certified Cloud Practitioner** — Amazon Web Services (May 2025)
+- **Meta Backend Developer Professional Certificate** — Coursera (Jan 2025)
+- **Google Cybersecurity Professional Certificate** — Coursera (Mar 2025)
+
+---
+
+## LANGUAGES
+
+- **English** (Fluent — IELTS 8.0)
+- **Hindi** (Native)
+- **Kannada** (Conversational)
+
+---
+
+### Template 2: Product-Based Company Resume
+
+```markdown
+# PRIYA VERMA
+Mumbai, Maharashtra | +91 87654 32109 | priya.verma@email.com | linkedin.com/in/priyaverma | github.com/priyaverma
+| priyaverma.dev
+
+---
+
+## EDUCATION
+
+**Veermata Jijabai Technological Institute (VJTI), Mumbai** | B.Tech in Computer Engineering
+*CGPA: 8.45 / 10.0* | *Aug 2022 – Jun 2026*
+
+**Relevant Coursework:** Data Structures, Algorithms, Web Development, Software Engineering, DBMS, Computer Networks,
+Operating Systems, Cloud Computing, UI/UX Design
+
+**HSC (XII), Ryan International School, Mumbai** | *92.3%* | *2022*
+**SSC (X), Ryan International School, Mumbai** | *94.8%* | *2020*
+
+---
+
+## PROJECTS
+
+**Distributed Task Scheduler** | *TypeScript, Node.js, PostgreSQL, Redis, Docker, Kubernetes*
+- Architected a distributed cron-job scheduler supporting **10,000+ scheduled tasks/hour** with fault-tolerant execution across a 5-node cluster
+- Implemented leader election using Redis SETNX with heartbeat-based failure detection, achieving **sub-2-second failover** on node crashes
+- Built a monitoring dashboard with real-time metrics — task success/failure rates, execution latency, queue depth — using WebSocket push updates
+- Containerized the entire stack with Docker Compose and deployed on a 3-node Kubernetes cluster with horizontal pod autoscaling
+- *GitHub: github.com/priyaverma/dist-scheduler* | *Stars: 340+*\*
+- *Blog post: "Building a Distributed Scheduler from Scratch" on dev.to/priyaverma (12K+ views)*
+
+**Open Source: Apache ECharts Contributor** | *JavaScript, TypeScript, SVG Rendering*
+- Contributed 14 merged pull requests to the Apache ECharts visualization library — added sankey diagram node sorting, improved heatmap rendering performance by **35%** , and fixed 6 accessibility-related issues
+- Authored a community documentation chapter on "Custom Series Development" accepted into the official wiki
+- Reviewed 28 PRs from other contributors as a project maintainer
+- *GitHub: github.com/apache/echarts — Commits: 42*
+
+**Event Management Platform (Ticketing System)** | *Next.js, TypeScript, Prisma, PostgreSQL, Stripe, TailwindCSS*
+- Built a full-stack event ticketing platform supporting event creation, ticket tiering, payment processing, and QR-code check-in
+- Designed PostgreSQL schema with optimized indexes supporting **5,000+ concurrent ticket bookings** during flash sales
+- Integrated Stripe Connect for payment processing with webhook-based confirmation, achieving **99.8% payment success rate**
+- Implemented Redis-backed session cart to handle **high concurrency during peak sales** at 1,200 requests/second
+- *GitHub: github.com/priyaverma/event-pro*
+
+**DevOps Dashboard (Prometheus + Grafana)** | *Go, Prometheus, Grafana, Docker, Linux*
+- Built a custom Prometheus exporter in Go that exposes application-level metrics (request rate, error rate, p99 latency) for any HTTP service
+- Created a Grafana dashboard template with 15+ panels including heatmaps, latency histograms, and uptime alerts
+- Configured alerting rules with Slack and email integrations, used by 3 teams in college
+- *GitHub: github.com/priyaverma/prom-exporter* | *Stars: 180+*\*
+
+---
+
+## HACKATHONS
+
+**HackMIT 2025 — Finalist (Top 20)** | *Cambridge, MA (Virtual)* | *Sep 2025*
+- Built "DocuSignAI" — an AI-powered document review tool using GPT-4 for clause extraction and risk scoring
+- Tech: React, Python FastAPI, OpenAI API, PostgreSQL. Presented working demo to judges after 36 hours
+- Won the **"Best Use of AI"** category track prize
+
+**HackDTU 2025 — Winner (1st Place)** | *Delhi* | *Mar 2025*
+- Developed "MediTrack" — a blockchain-based vaccine supply chain tracker ensuring cold-chain compliance
+- Implemented smart contracts on Ethereum testnet for immutable audit logs with QR-based verification
+- Prize: ₹50,000 and incubation opportunity
+
+**Flipkart Grid 4.0 — National Semi-Finalist** | *Online* | *Jun 2025*
+- Designed a real-time product recommendation engine using collaborative filtering and approximate nearest neighbor search
+- Achieved **87% precision@10** on a subset of the Amazon Reviews dataset
+
+---
+
+## OPEN SOURCE CONTRIBUTIONS
+
+| Repository | Contributions | Impact |
+|---|---|---|
+| Apache ECharts | 14 PRs merged, 1 docs chapter | Sankey sorting algorithm, 35% perf improvement |
+| Node.js | 2 PRs merged (docs + test fix) | Improved EventEmitter documentation |
+| React Admin | 3 PRs merged | Fixed DataProvider pagination edge case |
+| Open Sauced | 8 contributions | Dashboard feature for tracking PR velocity |
+
+---
+
+## TECHNICAL SKILLS
+
+**Languages:** TypeScript, JavaScript, Go, Python, Java, SQL, HTML/CSS
+**Frontend:** React, Next.js, TailwindCSS, Redux Toolkit, Framer Motion, ECharts (D3 visualization)
+**Backend:** Node.js, Express, FastAPI, Spring Boot (beginner), GraphQL, WebSockets
+**Databases:** PostgreSQL, MongoDB, Redis, SQLite
+**DevOps & Cloud:** Docker, Kubernetes, AWS (EC2, S3, Lambda, Amplify), GitHub Actions, Prometheus, Grafana
+**Tools:** Git, Linux, Postman, Figma (intermediate), Jest, Playwright, Datadog (APM)
+
+---
+
+## ACHIEVEMENTS
+
+- **GitHub Arctic Code Vault Contributor** — Code included in the GitHub Arctic Code Vault (ECharts commits)
+- **Postman Student Leader** — Conducted 8 API workshops reaching 400+ students across 5 colleges
+- **LeetCode 1950+ rating** — Solved 600+ problems; Knight badge holder
+- **Google Cloud Skill Boost** — Completed 25+ hands-on labs in cloud architecture and data engineering
+- **Published 12 technical blog posts** on dev.to and Medium (total 45K+ reads, 800+ reactions)
+
+---
+
+## POSITIONS OF RESPONSIBILITY
+
+**Technical Lead, Open Source Club — VJTI** | *Jul 2024 – Present*
+- Lead team of 25 students contributing to open-source projects; organized monthly "Hacktoberfest Prep" workshops
+- Spearheaded the college's first GitHub Campus Program application, securing free GitHub Team access for 200+ students
+
+**Student Coordinator, TechFest 2025** | *VJTI* | *Jan 2025 – Mar 2025*
+- Coordinated the "Code Wars" track with 300+ registrants; managed a team of 15 volunteers for event execution
+- Raised ₹2.5L in sponsorships from GitHub, Postman, and DigitalOcean
+
+---
+
+## CERTIFICATIONS
+
+- **Docker Certified Associate** — Docker Inc. (Aug 2025)
+- **Google Cloud Digital Leader** — Google Cloud (Jun 2025)
+- **Meta Front-End Developer Professional Certificate** — Coursera (Feb 2025)
+- **HashiCorp Terraform Associate** — HashiCorp (Apr 2025)
+
+---
+
+## LANGUAGES
+
+- **English** (Fluent)
+- **Hindi** (Native)
+- **Marathi** (Native)
+- **German** (Basic, A2)
+
+---
+
+### Template 3: Service-Based Company Resume
+
+```markdown
+# AMAN GUPTA
+Lucknow, Uttar Pradesh | +91 76543 21098 | aman.gupta@email.com | linkedin.com/in/amangupta
+
+---
+
+## EDUCATION
+
+**Ajay Kumar Garg Engineering College, Ghaziabad** | B.Tech in Information Technology
+*CGPA: 7.65 / 10.0* | *Oct 2022 – Jun 2026* | *No active backlogs*
+
+**Relevant Coursework:** Programming in C, Object-Oriented Programming, Database Management Systems, Computer Networks,
+Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
+
+**Intermediate (XII), Lucknow Public School, Lucknow** | *82.4%* | *2022*
+**High School (X), Lucknow Public School, Lucknow** | *86.2%* | *2020*
+
+---
+
+## PROJECTS
+
+**E-Commerce Web Application (ShopHub)** | *Spring Boot, Hibernate, MySQL, JWT, Bootstrap, Thymeleaf*
+- Developed a full-stack e-commerce platform with user authentication, product catalog, shopping cart, and order management
+- Implemented JWT-based authentication with role-based access (Admin / Customer), including session management and token refresh
+- Designed normalized MySQL database schema with 12 tables (User, Product, Category, Order, OrderItem, Cart, Address, Payment, Review, Wishlist, Coupon, Inventory) and optimized JOIN queries reducing page load time by **40%**
+- Added product search with category filters, price sorting, and pagination — supporting **500+ products** across 15 categories
+- Integrated Razorpay payment gateway for order processing with webhook-based order status updates
+- Deployed on AWS EC2 with MySQL hosted on RDS; configured Nginx as reverse proxy with SSL termination
+- *GitHub: github.com/amangupta/shophub*
+
+**Employee Leave Management System** | *Java, JSP, Servlets, JDBC, MySQL, HTML/CSS, JavaScript*
+- Built a web-based leave management system for college department handling **200+ employees** across 5 roles
+- Implemented leave request workflows with manager approval/rejection, leave balance tracking, and calendar view
+- Designed MySQL database with triggers for automatic leave balance deduction on approval
+- Added email notifications using JavaMail API for leave status updates
+- *GitHub: github.com/amangupta/leave-mgmt*
+
+**Online Quiz Portal** | *React.js, Node.js, Express, MongoDB, JWT*
+- Developed a real-time quiz platform supporting multiple quiz types (MCQ, coding, timed tests) with instant scoring
+- Built React-based timer component that auto-submits quizzes on timeout and prevents tab switching during tests
+- Implemented admin dashboard for quiz creation with bulk question upload via CSV parsing
+- MongoDB aggregation pipeline for leaderboard generation across **1,000+ users**
+- Deployed frontend on Vercel and backend on Railway (free tier)
+- *GitHub: github.com/amangupta/quiz-portal*
+
+**Personal Portfolio Website** | *HTML5, CSS3, JavaScript, Bootstrap, GitHub Pages*
+- Designed a responsive portfolio showcasing projects, skills, and certifications with dark/light theme toggle
+- Implemented contact form with EmailJS integration; receives form submissions directly to inbox
+- Achieved **92 Lighthouse performance score** through image optimization and lazy loading
+- *Live: amangupta.dev* | *GitHub: github.com/amangupta/portfolio*
+
+---
+
+## TECHNICAL SKILLS
+
+**Programming Languages:** Java (Core & Advanced), C, JavaScript, SQL, HTML5, CSS3, Python (Basic)
+**Frameworks & Libraries:** Spring Boot, Hibernate, JPA, React.js (basic), Node.js/Express, Bootstrap, jQuery
+**Databases:** MySQL, PostgreSQL, MongoDB (basic)
+**Developer Tools:** Git & GitHub, VS Code, Eclipse IDE, IntelliJ IDEA, Postman, MySQL Workbench
+**Concepts:** OOPs, DBMS, SDLC, REST APIs, Basic Data Structures, Agile Methodologies
+**Soft Skills:** Problem-solving, Team collaboration, Communication, Time management, Adaptability
+
+---
+
+## CERTIFICATIONS
+
+| Certification | Issuing Organization | Date |
+|---|---|---|
+| **Java SE 8 Programmer (OCAJP)** | Oracle | May 2025 |
+| **AWS Cloud Practitioner Essentials** | Amazon Web Services (Coursera) | Mar 2025 |
+| **Certification on Java Full Stack** | Infosys Springboard | Feb 2025 |
+| **SQL (Intermediate) Certificate** | HackerRank | Jan 2025 |
+| **Python for Data Science** | NPTEL (Elite) | Oct 2024 |
+| **Web Development Bootcamp (45hrs)** | Udemy (Dr. Angela Yu) | Aug 2024 |
+
+---
+
+## TRAINING & WORKSHOPS
+
+**Java Full Stack Development — Internshala Training** | *Jun 2024 – Aug 2024*
+- Completed 8-week online training covering Java, Spring Boot, Hibernate, REST APIs, HTML/CSS, and JavaScript
+- Built a library management system as capstone project — awarded **"Outstanding Project"** among 500+ trainees
+
+**TCS iON Career Edge — Young Professional** | *May 2024*
+- Completed 15-day course on communication skills, professional etiquette, resume writing, and interview preparation
+
+---
+
+## ACHIEVEMENTS
+
+- **NPTEL Elite Certificate** in Python for Data Science — scored **71%** (top 5% of course)
+- **HackerRank 5★** in Java, **4★** in SQL, **3★** in Problem Solving
+- **College Tech Fest Winner** — 2nd place in Web Development competition (2024)
+- **National Service Scheme (NSS)** — Completed 120+ hours of community service; organized blood donation camp with 80+ donors
+- **Class Representative** for IT Department (2024-25) — Liaised between faculty and 65 students
+
+---
+
+## POSITIONS OF RESPONSIBILITY
+
+**Event Coordinator — TechVibes 2025** | *AKGEC Ghaziabad* | *Feb 2025 – Apr 2025*
+- Coordinated the "Web Weavers" web development competition with 120+ participants from 15 colleges
+- Managed event logistics, created problem statements, and led a team of 8 volunteers
+
+**Student Mentor — First-Year Induction Program** | *Aug 2024*
+- Mentored 30 freshmen students during the 2-week induction program on academic expectations and campus resources
+- Conducted basic programming workshops in C language for new students
+
+---
+
+## LANGUAGES
+
+- **English** (Professional Working Proficiency)
+- **Hindi** (Native)
+- **Awadhi** (Conversational)
+
+---
+
+## ADDITIONAL INFORMATION
+
+- **Willing to relocate** — Open to working across any location in India
+- **Passport:** Valid (expires 2034)
+- **Hobbies:** Chess (1500+ rating on Chess.com), Badminton, Reading technology blogs, Cooking
+- **Driving License:** Valid LMV license
+
+---
+
+### Template 4: Data Science/ML Resume
+
+```markdown
+# NEHA PATEL
+Pune, Maharashtra | +91 65432 10987 | neha.patel@email.com | linkedin.com/in/nehapatel | github.com/nehapatel
+
+---
+
+## EDUCATION
+
+**College of Engineering, Pune (COEP)** | B.Tech in Computer Science and Engineering (AI/ML Specialization)
+*CGPA: 9.12 / 10.0* | *Aug 2022 – Jun 2026*
+
+**Relevant Coursework:** Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Probability &
+Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, Database Systems
+
+**Higher Secondary (XII), St. Mary's School, Pune** | *93.8%* | *2022*
+**Secondary (X), St. Mary's School, Pune** | *95.2%* | *2020*
+
+---
+
+## ML PROJECTS
+
+**BERT-Based Financial Sentiment Classifier** | *Python, PyTorch, Hugging Face Transformers, FastAPI, Docker*
+- Fine-tuned `BERT-base-uncased` on the Financial PhraseBank (4,845 sentences) achieving **92.3% accuracy** and **0.91 F1-score** for positive/negative/neutral sentiment classification
+- Implemented data augmentation using back-translation (English → French → English) improving minority-class recall by **12%**
+- Deployed as a REST API using FastAPI with ONNX Runtime quantization for **3x inference speedup** (from 180ms to 60ms per prediction)
+- Created an interactive Streamlit demo for stakeholder presentations; containerized with Docker
+- *GitHub: github.com/nehapatel/finbert-sentiment*
+
+**Real-Time Traffic Sign Recognition System** | *Python, TensorFlow, OpenCV, YOLOv8, Flask*
+- Built a computer vision pipeline processing **30 FPS video** from a webcam to detect and classify 43 traffic sign types (German Traffic Sign Recognition Benchmark)
+- Implemented a YOLOv8 model achieving **97.8% mAP@0.5** after transfer learning and hyperparameter tuning (Optuna, 50 trials)
+- Deployed on Raspberry Pi 4 with TensorFlow Lite achieving **15 FPS real-time inference** with quantized model (4.2MB vs 92MB full model)
+- Published a write-up explaining the YOLO architecture on Medium (15K+ views, 400+ claps)
+
+**Customer Churn Prediction Pipeline** | *Python, scikit-learn, Pandas, XGBoost, MLflow, DVC*
+- Developed an end-to-end ML pipeline for a telecom dataset (7,043 customers, 21 features) to predict 30-day churn probability
+- Engineered 8 new features including usage-to-bill ratio, support ticket frequency, and payment method tenure; improved AUC-ROC from **0.81 to 0.91**
+- Trained and compared 6 models (Logistic Regression, Random Forest, XGBoost, LightGBM, SVM, Neural Network) with 5-fold cross-validation
+- Used MLflow for experiment tracking and DVC for data versioning; deployed best XGBoost model to AWS SageMaker endpoint
+- *GitHub: github.com/nehapatel/churn-pipeline*
+
+**News Article Summarization with T5** | *Python, PyTorch, Hugging Face, Streamlit, AWS Lambda*
+- Fine-tuned T5-small on the CNN/DailyMail dataset (300K articles) for abstractive text summarization, achieving **ROUGE-1: 41.2, ROUGE-L: 38.7**
+- Implemented beam search decoding with length penalties and n-gram blocking to reduce repetitive outputs
+- Created a serverless inference pipeline using AWS Lambda with container image support — responds within **800ms** for articles under 1,000 tokens
+- *GitHub: github.com/nehapatel/news-summarizer*
+
+---
+
+## KAGGLE COMPETITIONS
+
+| Competition | Rank | Problem Type | Approach |
+|---|---|---|---|
+| **House Prices: Advanced Regression** | Top 5% (321 / 8,000+) | Regression | Ensemble: XGBoost + LightGBM + CatBoost; feature engineering (combined 79 → 146 features) |
+| **Titanic: Machine Learning from Disaster** | Top 3% (286 / 12,000+) | Classification | Feature engineering on Name/Title, Cabin, FamilySize; Stacking classifier |
+| **Digit Recognizer (MNIST)** | Top 4% (412 / 10,500+) | Image Classification | CNN with 3 conv layers + dropout + batch norm; 99.67% accuracy |
+| **TMDB Box Office Prediction** | Top 8% (750 / 9,000+) | Regression | NLP on movie overviews (TF-IDF + SVD); XGBoost with Bayesian optimization |
+
+---
+
+## RESEARCH PAPERS
+
+**"Efficient Transfer Learning for Low-Resource Indic Language Sentiment Analysis"**
+- Under review at **ICON 2025** (International Conference on Natural Language Processing)
+- Proposed a multi-task learning framework combining Hindi, Marathi, and Gujarati sentiment tasks with a shared BERT encoder
+- Achieved **88.4% average F1** across 3 languages, outperforming monolingual baselines by 6.2%
+- *Code and preprocessed datasets released on GitHub*
+
+**"Real-Time Object Detection on Edge Devices: A Survey"**
+- Published in **International Journal of Computer Applications (IJCA)**, Vol 186, No 45, Oct 2024
+- Surveyed 28 papers on YOLO, SSD, and MobileNet architectures optimized for Raspberry Pi and mobile deployment
+- Proposed a decision framework for model selection based on accuracy-latency trade-offs
+
+---
+
+## TECHNICAL SKILLS
+
+**Languages:** Python, SQL, R (basic), C++, Java (basic)
+**ML/DL Frameworks:** PyTorch, TensorFlow/Keras, scikit-learn, XGBoost, LightGBM, Hugging Face Transformers, OpenCV
+**MLOps:** MLflow, DVC, Weights & Biases, Docker, AWS SageMaker, FastAPI, ONNX Runtime
+**Data Analysis:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, Tableau (basic)
+**Databases:** PostgreSQL, MongoDB, BigQuery (basic)
+**Tools:** Jupyter, VS Code, Git, Linux, LaTeX, Google Colab, Kaggle
+
+---
+
+## ACHIEVEMENTS
+
+- **Kaggle Notebooks Master** — 6 gold medals (4 solo), 14 silver; 2 notebooks featured on Kaggle homepage
+- **Published 2 research papers** (1 journal, 1 conference under review)
+- **LeetCode SQL 5★** — Top 2% in database problems
+- **Harvard CS50x Puzzle Day Winner** — Completed all puzzles in under 4 hours (2024)
+- **Best Project Award** — COEP TechFest 2024 for the Traffic Sign Recognition project
+
+---
+
+## POSITIONS OF RESPONSIBILITY
+
+**Co-Lead, Data Science Club — COEP** | *Jul 2024 – Present*
+- Organize weekly paper-reading sessions covering recent NeurIPS, ICML, and ICLR publications; average attendance: 40+ students
+- Mentored 5 teams for Kaggle competitions; 2 teams achieved top 10% finishes
+
+**Teaching Assistant — Machine Learning (UG Course)** | *Jan 2025 – May 2025*
+- Graded assignments and projects for 120+ students; conducted Python and scikit-learn lab sessions
+- Created 3 hands-on assignments on regression, classification, and clustering used across semester
+
+---
+
+## CERTIFICATIONS
+
+- **Deep Learning Specialization** — deeplearning.ai / Coursera (Andrew Ng, May 2025)
+- **TensorFlow Developer Certificate** — Google (Mar 2025)
+- **AWS Certified Machine Learning — Specialty** — Amazon (Aug 2025)
+- **Data Scientist with Python Track** — DataCamp (Dec 2024)
+
+---
+
+## LANGUAGES
+
+- **English** (Fluent — TOEFL 112)
+- **Hindi** (Native)
+- **Marathi** (Native)
+- **Gujarati** (Conversational)
+
+---
+
+## ADDITIONAL INFO
+
+- **Personal Blog:** nehapatel.github.io/blog (22 articles on ML tutorials and Kaggle learnings)
+- **Open Source:** 5 PRs merged into scikit-learn documentation; maintain a curated list of ML-paper-implementations (500+ stars)
+- **Passion:** Participating in ML hackathons; avid reader of "The Elements of Statistical Learning"
+
+---
+
+### Template 5: Full-Stack Developer Resume
+
+```markdown
+# ARJUN SINGH
+Jaipur, Rajasthan | +91 54321 09876 | arjun.singh@email.com | linkedin.com/in/arjunsingh | github.com/arjunsingh
+| arjunsingh.dev
+
+---
+
+## EDUCATION
+
+**Manipal Institute of Technology, Manipal** | B.Tech in Computer Science and Engineering
+*CGPA: 8.21 / 10.0* | *Aug 2022 – Jun 2026*
+
+**Relevant Coursework:** Web Technologies, Database Systems, Computer Networks, Software Engineering, Operating Systems,
+Object-Oriented Programming, User Interface Design, Cloud Computing
+
+**CBSE Class XII, St. Xavier's School, Jaipur** | *89.6%* | *2022*
+**CBSE Class X, St. Xavier's School, Jaipur** | *91.4%* | *2020*
+
+---
+
+## WORK EXPERIENCE
+
+**Freelance Full-Stack Developer | Self-Employed** | *Remote* | *Jun 2024 – Present*
+*Clients include: 2 funded startups, 3 small businesses, 1 NGO*
+- Architected and built a MERN-stack SaaS application (TaskFlow) serving **5,000+ daily active users** with team collaboration features including real-time boards, file sharing, and activity feeds
+- Designed RESTful + GraphQL hybrid API architecture handling **200+ requests/second** with rate limiting and caching layers
+- Migrated a client's monolithic Ruby on Rails e-commerce platform to a microservices architecture using Node.js and Docker, reducing deployment time by **80%** and enabling independent service scaling
+- Delivered projects end-to-end: requirements gathering, UI/UX design (Figma → React), backend development, cloud deployment, and post-launch maintenance
+- Earned **₹4.2L+** in freelance revenue over 18 months across 7 completed projects
+
+**Upwork — Top Rated Plus Freelancer** | *Remote* | *Jan 2024 – Present*
+- Completed 35+ projects with **100% job success score**; earned "Top Rated Plus" status within 12 months
+- Built custom CRM dashboards, booking systems, inventory management portals, and real-time analytics platforms
+- Average client rating: 4.97 / 5.00 across 42 reviews
+
+---
+
+## FULL-STACK PROJECTS
+
+**TaskFlow — Team Collaboration Platform** | *MongoDB, Express.js, React, Node.js, Socket.IO, Redis, AWS*
+- Built a Trello/Asana-inspired project management platform supporting **5,000 DAU** with drag-and-drop boards, real-time collaboration, and file attachments
+- Implemented WebSocket-based real-time updates using Socket.IO with Redis adapter for horizontal scaling across 3 Node.js instances
+- Added file upload system with AWS S3 pre-signed URLs and Sharp-based image compression (reduce upload size by **70%** )
+- Optimized MongoDB queries with proper indexing and aggregation pipelines, reducing dashboard load time from 3.2s to **400ms**
+- Deployed on AWS (EC2 + S3 + CloudFront) with Nginx reverse proxy, PM2 clustering, and automated CI/CD via GitHub Actions
+- *GitHub: github.com/arjunsingh/taskflow* | *Live: taskflow.arjunsingh.dev*
+
+**Food Delivery App (Foodie)** | *React Native, Node.js, PostgreSQL, Redis, Google Maps API, Firebase*
+- Developed a cross-platform food ordering app with real-time order tracking, push notifications, and in-app chat
+- Integrated Google Maps API for live delivery tracking with ETA calculation and route optimization; reduced delivery time estimation error by **25%**
+- Built admin dashboard showing real-time order flow, revenue analytics, and delivery performance metrics
+- Implemented Firebase Cloud Messaging for push notifications — 3,500+ daily push notifications with **88% delivery rate**
+- PostgreSQL schema optimized with materialized views for daily sales reports, aggregating **2,000+ orders/day**
+- *GitHub: github.com/arjunsingh/foodie-app* | *Product Hunt launch: 180+ upvotes*
+
+**DevBlog — Markdown Blogging Platform** | *Next.js, TypeScript, Prisma, PlanetScale, Cloudinary, Vercel*
+- Built a developer-focused blogging platform with MDX support, syntax highlighting (Shiki), and auto-generated table of contents
+- Implemented server-side rendering with Incremental Static Regeneration — **300ms average TTFB** and **98 Lighthouse score**
+- Added Ghost CMS-like publishing experience with draft/preview/published workflows, scheduling, and analytics dashboard
+- Integrated Cloudinary for image optimization with automatic WebP conversion and CDN delivery
+- Handles **12,000+ monthly active visitors** with PlanetScale serverless database and auto-scaling
+
+**URL Shortener + QR Code Generator** | *Go, PostgreSQL, React, Docker, Nginx*
+- Rebuilt a URL shortener in Go for high throughput — handles **5,000+ requests/second** with Redis caching layer
+- Added QR code generation API using go-qrcode library with customizable colors, sizes, and embedded logos
+- Implemented analytics tracking (clicks, geolocation, device type, referrer) using PostgreSQL event store with batch inserts
+- Reduced 95th percentile latency to **12ms** with connection pooling and prepared statement caching
+- *GitHub: github.com/arjunsingh/qri-url*
+
+---
+
+## DEPLOYMENT & DEVOPS EXPERIENCE
+
+| Platform | Services Used | Projects Deployed |
+|---|---|---|
+| **AWS** | EC2, S3, CloudFront, RDS, ElastiCache, Lambda, Route53 | TaskFlow, Foodie Backend |
+| **Vercel** | Serverless Functions, Edge Functions, ISR | DevBlog, Client Landing Pages |
+| **Railway / Render** | PostgreSQL, Redis, Web Services | Freelance Projects |
+| **Docker** | Multi-stage builds, docker-compose, Docker Hub | All projects |
+| **GitHub Actions** | CI/CD pipelines, auto-deploy on push, linting | 12+ repositories |
+
+---
+
+## TECHNICAL SKILLS
+
+**Languages:** JavaScript/TypeScript, Go, Java, Python, HTML5/CSS3, SQL
+**Frontend:** React, Next.js, React Native, Redux Toolkit, TailwindCSS, Framer Motion, Shadcn UI, Material UI
+**Backend:** Node.js, Express, NestJS, Go (Gin Framework), Python (FastAPI), REST, GraphQL, WebSocket
+**Databases:** PostgreSQL, MongoDB, Redis, MySQL, PlanetScale, Supabase
+**Cloud & DevOps:** AWS (EC2, S3, Lambda, CloudFront, RDS), Vercel, Docker, Nginx, GitHub Actions, PM2
+**Tools:** Git, Figma (advanced), Postman, Sentry, Datadog, VS Code, Linear (project management)
+**Other:** Stripe API, Razorpay API, Google Maps API, SendGrid, Cloudinary, Clerk Auth
+
+---
+
+## ACHIEVEMENTS
+
+- **Upwork Top Rated Plus** — Top 3% of freelancers on the platform; maintained for 12+ consecutive months
+- **Product Hunt #3 Product of the Day** — For DevBlog launch with 180+ upvotes
+- **GitHub 1,200+ total stars** across 8 open-source repositories
+- **SIH 2024 Finalist** — Smart India Hackathon 2024; built a waste management tracking system for municipal corporation
+- **Polyglot Programmer** — Active on 5 technology stacks (MERN, Go+React, Next.js+Prisma, Python+FastAPI, React Native)
+
+---
+
+## POSITIONS OF RESPONSIBILITY
+
+**Founder & Lead, Web Development Wing — MIT Manipal Coding Club** | *Aug 2024 – Present*
+- Established the Web Development wing with 30+ active members; conduct weekly hands-on workshops on React, Node.js, and deployment
+- Led the development of the club's official website (next.clubweb.mitm) serving as portfolio for 100+ members
+- Organized "ShipIt 2025" — a 2-week build sprint where 12 teams launched production-ready web apps
+
+**Technical Mentor — Google Developer Student Clubs (GDSC)** | *Sep 2024 – Present*
+- Mentored 50+ students in web development; conducted 6 workshops on React, Firebase, and Cloud deployment
+- Guided 3 student teams to build and deploy full-stack projects for GDSC Solution Challenge
+
+---
+
+## CERTIFICATIONS
+
+- **AWS Certified Solutions Architect — Associate** — Amazon Web Services (Jul 2025)
+- **Meta Front-End Developer Professional Certificate** — Coursera (Mar 2025)
+- **Kubernetes for Developers (CKAD Prep)** — Udemy (Dec 2024)
+- **MongoDB Associate Developer** — MongoDB University (Oct 2024)
+
+---
+
+## LANGUAGES
+
+- **English** (Fluent — IELTS 7.5)
+- **Hindi** (Native)
+- **Rajasthani** (Native)
+
+---
+
+## INTERESTS
+
+- Building side projects (shipped 8+ products in 2 years)
+- Writing technical blog posts on system design and full-stack architecture (30+ articles, 55K+ total reads)
+- Open-source contributions (maintain 3 projects for developer tooling)
+- Competitive programming (CF 1400+ rating)
+- Playing acoustic guitar and photography
+```

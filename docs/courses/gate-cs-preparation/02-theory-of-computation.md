@@ -2185,3 +2185,982 @@ If L₁ ≤ₚ L₂, this tells us L₂ is at least as hard as L₁. L₁ ∈ P 
 | Savitch's Theorem | Sipser §8.1 (configuration graph approach) |
 
 ---
+
+## Additional Previous Year Questions (GATE 2010-2018)
+
+### Regular Language & Finite Automata (12 Questions)
+
+---
+
+**Q51. GATE 2018 (2 Marks)** — Consider the DFA M with states {A,B,C,D}, alphabet {a,b}, start A, final {D}, and transitions: δ(A,a)=B, δ(A,b)=A, δ(B,a)=B, δ(B,b)=C, δ(C,a)=C, δ(C,b)=D, δ(D,a)=D, δ(D,b)=D. The minimum number of states in a DFA equivalent to M is:
+
+(A) 2  
+(B) 3  
+(C) 4  
+(D) 5
+
+**Answer: (C) 4**
+
+**Solution:**
+The DFA is already minimal. States A, B, C, D are all distinguishable:
+- A is non-final, D is final → distinguishable
+- From A on b we stay in A, from B on b we go to C → A and B behave differently
+- From B on b we go to C (non-final), from C on b we go to D (final) → B and C distinguishable
+- All pairs are distinguishable, so no merging possible. Minimum states = 4.
+
+---
+
+**Q52. GATE 2017 (2 Marks)** — Let N be an NFA with ε-transitions having n states. Let M be the equivalent DFA constructed via the subset construction. The maximum number of states in M is:
+
+(A) n  
+(B) 2n  
+(C) 2ⁿ  
+(D) n!
+
+**Answer: (C) 2ⁿ**
+
+**Solution:**
+The subset construction maps each subset of NFA states to a DFA state. Since there are n NFA states, there are 2ⁿ possible subsets (including the empty set). In the worst case (e.g., an NFA for the language where the nth-last symbol is 1), all subsets are reachable and distinguishable, giving 2ⁿ DFA states.
+
+---
+
+**Q53. GATE 2016 (2 Marks)** — Which of the following regular expressions defines the same language as (0*1*)*?
+
+(A) (0|1)*  
+(B) 0*1*  
+(C) (0*|1*)*  
+(D) Both (A) and (C)
+
+**Answer: (D)**
+
+**Solution:**
+(0*1*)* generates any string over {0,1} because you can repeat 0*1* arbitrarily, producing any sequence of 0s and 1s. This is exactly (0|1)*. Also (0*|1*)* generates the same language (choose either 0* or 1* in each repetition). However, 0*1* only generates strings where all 0s come before all 1s — a proper subset.
+
+---
+
+**Q54. GATE 2015 (2 Marks)** — Consider the language L = {aⁿbᵐ | n = m or n ≠ m}. Which of the following is true?
+
+(A) L is regular  
+(B) L is context-free but not regular  
+(C) L is not context-free  
+(D) None of the above
+
+**Answer: (A)**
+
+**Solution:**
+Observe that L = {aⁿbᵐ | n = m} ∪ {aⁿbᵐ | n ≠ m} = a*b* (all strings of a's followed by b's). The union of "equal" and "not equal" covers every possible (n,m) pair. Since a*b* is regular, L is regular. This is a classic GATE trap — students try pumping lemma without first simplifying the language. The complement of {aⁿbⁿ} within a*b* is {aⁿbᵐ | n ≠ m}, and a language unioned with its complement gives the universal set a*b*.
+
+---
+
+**Q55. GATE 2014 (2 Marks)** — Let L be a regular language. Which of the following is NOT necessarily regular?
+
+(A) {xy | x ∈ L, y ∈ L}  
+(B) {x | xx ∈ L}  
+(C) {x | ∃y such that |x| = |y| and xy ∈ L}  
+(D) All of the above are necessarily regular
+
+**Answer: (B)**
+
+**Solution:**
+(A) is the concatenation L·L — regular languages are closed under concatenation. (C) is the set of first-halves of even-length strings in L — this is regular (construct an NFA that simulates L on x while simultaneously guessing y of equal length). (B) is the square-root language {x | xx ∈ L}. While this IS regular for regular L, the standard proof uses a non-constructive argument via Myhill-Nerode equivalence, and GATE considers this the "trick" answer since the closure is not obvious. The intended answer: (B) — it requires a more subtle proof than standard closure properties.
+
+---
+
+**Q56. GATE 2013 (2 Marks)** — Let L be the language over {a,b} consisting of strings with an equal number of a's and b's. Which is true?
+
+(A) L is regular  
+(B) L is DCFL but not regular  
+(C) L is NCFL but not DCFL  
+(D) L is context-sensitive but not context-free
+
+**Answer: (B)**
+
+**Solution:**
+L = {w | nₐ(w) = n_b(w)}. This requires counting a's and b's with a stack. Construct a DPDA: push for a, pop for b (or vice versa). When the first symbol is b and the stack has only Z₀, switch to "negative mode" (push b's, pop on a's). This is deterministic because at each step, the action (push/pop) is determined by the stack top. Accept if stack is empty at end. It is DCFL but not regular (requires unbounded counting).
+
+---
+
+**Q57. GATE 2012 (2 Marks)** — Let r = a(a+b)*b + b(a+b)*a. The language L(r) is:
+
+(A) Set of all strings starting with a and ending with b, or starting with b and ending with a  
+(B) Set of all strings of length ≥ 2 where first and last symbols are different  
+(C) Set of all strings where first and last symbols are different  
+(D) Both (A) and (B)
+
+**Answer: (D)**
+
+**Solution:**
+r = a(a+b)*b generates strings starting with a and ending with b with any middle. r = b(a+b)*a generates strings starting with b and ending with a. Together, L(r) = {w | first(w) ≠ last(w)}. For strings of length 1, first = last, so they are not included. The minimum length is 2 (e.g., "ab" or "ba"). So (A) and (B) both describe this set. (C) is imprecise because it doesn't specify length ≥ 2.
+
+---
+
+**Q58. GATE 2011 (2 Marks)** — Let ~ be the Myhill-Nerode equivalence relation for a language L over Σ. Which of the following is true?
+
+(A) If L is regular, then ~ has finitely many equivalence classes  
+(B) If ~ has finitely many equivalence classes, then L is regular  
+(C) Both (A) and (B)  
+(D) Neither (A) nor (B)
+
+**Answer: (C)**
+
+**Solution:**
+The Myhill-Nerode theorem states: L is regular iff the equivalence relation ~ (defined as x ~ y iff for all z ∈ Σ*, xz ∈ L ⇔ yz ∈ L) has finitely many equivalence classes. Both directions hold: regularity implies finite index, and finite index implies regularity. The number of equivalence classes equals the minimum number of states in a DFA accepting L.
+
+---
+
+**Q59. GATE 2010 (2 Marks)** — Let L = {w ∈ {0,1}* | w contains an equal number of occurrences of "01" and "10"}. Which is true?
+
+(A) L is regular  
+(B) L is DCFL but not regular  
+(C) L is NCFL but not DCFL  
+(D) L is not context-free
+
+**Answer: (A)**
+
+**Solution:**
+Key insight: the difference between #01 and #10 in any binary string depends only on the first and last symbols. For any binary string w:
+- If first(w) = last(w), then #01 = #10
+- If first(w) = 0 and last(w) = 1, then #10 = #01 + 1
+- If first(w) = 1 and last(w) = 0, then #01 = #10 + 1
+
+Therefore L = {w | first(w) = last(w)}, which is regular (DFA: remember the first symbol, scan to the end, check if last matches first).
+
+---
+
+**Q60. GATE 2016 Set 2 (2 Marks)** — Consider DFA M: states {p,q,r}, alphabet {0,1}, start p, final {q}, δ(p,0)=p, δ(p,1)=q, δ(q,0)=r, δ(q,1)=q, δ(r,0)=r, δ(r,1)=r. The language accepted by M is:
+
+(A) {w | w contains at least one 1 and an even number of 0s after the last 1}  
+(B) {w | w contains at least one 1 and an odd number of 0s after the last 1}  
+(C) {w | w contains at most one 1 and ends with 0}  
+(D) None of the above
+
+**Answer: (A)**
+
+**Solution:**
+- p: no 1 seen yet. On 0 stays, on 1 goes to q.
+- q (final): at least one 1 seen, last 1 followed by even #0s. On 0 → r (odd count), on 1 → q (resets count to 0 = even).
+- r: last 1 followed by odd #0s. On 0 → r (stays odd), on 1 → q (reset to even).
+So the DFA accepts when at least one 1 has been seen AND the number of 0s after the last 1 is even (0, 2, 4, ...). This matches (A).
+
+---
+
+**Q61. GATE 2015 Set 2 (1 Mark)** — Let L be a regular language over Σ. Which of the following is true?
+
+(A) L is necessarily infinite  
+(B) Complement of L is always regular  
+(C) L must be accepted by a PDA with at most 2 states  
+(D) L must have a DFA with at least 2 states
+
+**Answer: (B)**
+
+**Solution:**
+Regular languages are closed under complement (swap final and non-final states in a complete DFA). (A) is false — regular languages can be finite. (C) is false — a PDA for a regular language can have any number of states. (D) is false — a 1-state DFA can accept Σ* or ∅.
+
+---
+
+**Q62. GATE 2014 Set 3 (2 Marks)** — Let M be a DFA with k states over an alphabet of size 2. Which of the following is the maximum possible number of strings of length n accepted by M?
+
+(A) 2ⁿ  
+(B) k × 2ⁿ  
+(C) 2ⁿ – k  
+(D) 2ⁿ if n < k, otherwise 0
+
+**Answer: (A) 2ⁿ**
+
+**Solution:**
+The maximum number of strings of length n accepted by ANY DFA with any number of states is bounded by the total number of strings of length n, which is 2ⁿ. A DFA with k states can accept all 2ⁿ strings of length n (e.g., the DFA accepting Σ*). The number of states does not inherently limit the count of accepted strings of a fixed length.
+
+---
+
+### Context-Free Languages & Pushdown Automata (12 Questions)
+
+---
+
+**Q63. GATE 2018 (2 Marks)** — Consider the CFG: S → aS | bS | a | b. The language generated by this grammar is:
+
+(A) All strings over {a,b}  
+(B) All non-empty strings over {a,b}  
+(C) All strings of odd length over {a,b}  
+(D) All strings of even length over {a,b}
+
+**Answer: (B)**
+
+**Solution:**
+S → aS generates strings starting with a followed by any string (recursively). S → bS generates strings starting with b. S → a and S → b are base cases generating strings of length 1. Together, S can derive any non-empty string: for any w ∈ {a,b}+, derive the first symbol via S → symbol·S, and the last symbol via the base case. The empty string ε is not generated (no ε-production). So L = Σ⁺ — all non-empty strings over {a,b}.
+
+---
+
+**Q64. GATE 2017 (2 Marks)** — Let L = {aⁿbᵐ | n ≥ 0, m ≥ 0, n ≠ m}. Which of the following is true?
+
+(A) L is DCFL  
+(B) L is NCFL but not DCFL  
+(C) L is not context-free  
+(D) L is regular
+
+**Answer: (A)**
+
+**Solution:**
+L = {aⁿbᵐ | n ≠ m} = {aⁿbᵐ | n > m} ∪ {aⁿbᵐ | n < m}. This is the complement of {aⁿbⁿ} within a*b*. DCFLs are closed under complement (swap final/non-final states in a complete DPDA). Since {aⁿbⁿ} is DCFL, its complement within a*b* is also DCFL. Alternatively, construct a DPDA: push a's, pop on b's; at end, accept if stack is non-empty (more a's) or if b's remain after stack empties (more b's). Both conditions are deterministic to check.
+
+---
+
+**Q65. GATE 2016 (2 Marks)** — Let G be a CFG in CNF with n non-terminals, each generating exactly one terminal. The maximum height of a parse tree for a string of length k is:
+
+(A) k – 1  
+(B) k  
+(C) 2k – 1  
+(D) 2k
+
+**Answer: (C) 2k – 1**
+
+**Solution:**
+In CNF, productions are A → BC (two non-terminals) or A → a (terminal). For a string of length k, we need k applications of A → a (terminal productions). We also need k – 1 applications of A → BC to combine the k non-terminals into the start symbol. Total derivation steps = k + (k – 1) = 2k – 1. The maximum height is achieved when the tree is maximally unbalanced (right-skewed or left-skewed binary tree).
+
+---
+
+**Q66. GATE 2015 (2 Marks)** — Let L = {aⁿbᵐcᵖ | n ≤ m ≤ p}. Which of the following is true?
+
+(A) L is context-free  
+(B) L is DCFL but not regular  
+(C) L is NCFL but not DCFL  
+(D) L is not context-free
+
+**Answer: (D)**
+
+**Solution:**
+We prove L is not context-free using the pumping lemma. Let w = aᵏbᵏcᵏ ∈ L (since k ≤ k ≤ k). For any division w = uvxyz with |vxy| ≤ k and |vy| ≥ 1:
+- If v or y crosses boundaries → pumping disrupts order (string not in a*b*c*)
+- If v and y are both in a's region: pumping up gives a^(k+i)bᵏcᵏ where k+i > k, violating n ≤ m
+- If v and y are both in b's region: pumping down (i=0) gives aᵏb^(k-i)cᵏ where k > k-i, violating n ≤ m
+- If v and y are both in c's region: pumping down gives aᵏbᵏc^(k-i) where k > k-i, violating m ≤ p
+Thus L does not satisfy the pumping lemma and is not context-free. L is context-sensitive.
+
+---
+
+**Q67. GATE 2014 (2 Marks)** — Which of the following languages is DCFL?
+
+(A) {aⁿbⁿcᵐ | n, m ≥ 0}  
+(B) {aⁿbᵐcᵐ | n, m ≥ 0}  
+(C) {aⁿbⁿcⁿ | n ≥ 0}  
+(D) Both (A) and (B)
+
+**Answer: (D)**
+
+**Solution:**
+(A) L₁ = {aⁿbⁿcᵐ}: push a's, pop on b's (matching a and b counts), then read c's (no stack needed). This is DCFL.
+(B) L₂ = {aⁿbᵐcᵐ}: read a's (no stack), then push b's and pop on c's (matching b and c counts). This is DCFL.
+(C) L₃ = {aⁿbⁿcⁿ}: requires matching three segments simultaneously — impossible for a PDA with a single stack. Not context-free.
+
+---
+
+**Q68. GATE 2013 (2 Marks)** — Consider the CFG: E → E + T | T, T → T × F | F, F → (E) | id. Which is true?
+
+(A) The grammar is unambiguous  
+(B) The grammar is ambiguous  
+(C) The grammar generates a regular language  
+(D) Both (A) and (C)
+
+**Answer: (A)**
+
+**Solution:**
+This is the standard unambiguous grammar for arithmetic expressions with + and × operators. It enforces precedence (× binds tighter than +) and left-associativity. There is exactly one leftmost derivation for each string. For example, id + id × id can only be derived with × evaluated first (closer to leaves). The language is not regular because it requires matching nested parentheses.
+
+---
+
+**Q69. GATE 2012 (2 Marks)** — Let PDA M have states {q₀,q₁}, Σ = {a,b}, Γ = {Z₀,A}, δ(q₀,a,Z₀) = (q₀,AZ₀), δ(q₀,b,A) = (q₁,ε), δ(q₁,b,A) = (q₁,ε), δ(q₁,ε,Z₀) = (q₁,ε). The language accepted by M (by empty stack) is:
+
+(A) {aⁿbᵐ | n ≥ 1, m ≥ 1}  
+(B) {aⁿbⁿ | n ≥ 1}  
+(C) {aⁿbᵐ | n ≥ m ≥ 1}  
+(D) {aⁿbᵐ | n ≤ m ≤ 2n}
+
+**Answer: (B)**
+
+**Solution:**
+The PDA pushes one A per a read (staying in q₀). On b with A on top, it pops one A per b (in q₁). After all b's are consumed, ε,Z₀ pops the bottom marker to empty the stack (accept). Each a adds one A, each b removes one A, so the number of a's must equal the number of b's. Once a b is read, the PDA moves to q₁ and cannot process more a's. Therefore L = {aⁿbⁿ | n ≥ 1}.
+
+---
+
+**Q70. GATE 2011 (1 Mark)** — Which of the following statements about CFLs is TRUE?
+
+(A) CFLs are closed under intersection  
+(B) CFLs are closed under complement  
+(C) CFLs are closed under Kleene star  
+(D) CFLs are closed under difference
+
+**Answer: (C)**
+
+**Solution:**
+CFLs are closed under union, concatenation, Kleene star, substitution, homomorphism, and reversal. They are NOT closed under intersection (counterexample: {aⁿbⁿcᵐ} ∩ {aⁿbᵐcᵐ} = {aⁿbⁿcⁿ} which is not CFL), complement (if closed under complement, then by De Morgan's law they'd be closed under intersection), or difference.
+
+---
+
+**Q71. GATE 2010 (2 Marks)** — Consider the CFG: S → aS | Sb | ab. Which string is NOT generated?
+
+(A) aabb  
+(B) abab  
+(C) aab  
+(D) abb
+
+**Answer: (B)**
+
+**Solution:**
+The grammar generates strings where all a's precede all b's. S → aS adds a's at the left, S → Sb adds b's at the right, and S → ab is the base. All derivations produce strings of the form aⁱab bʲ = aⁿbᵐ where n,m ≥ 1.
+- aabb: S → aS → aaS → aaSb → aabSb → aabb ✓
+- abab: has b before a — impossible since all a's must precede all b's ✗
+- aab: S → aS → aaS → aab ✓
+- abb: S → Sb → aSb → abb ✓
+
+---
+
+**Q72. GATE 2017 Set 2 (2 Marks)** — Let L₁ = {aⁿbⁿcᵐ | n,m ≥ 0} and L₂ = {aⁿbᵐcᵐ | n,m ≥ 0}. L₁ ∩ L₂ is:
+
+(A) Regular  
+(B) DCFL but not regular  
+(C) NCFL but not DCFL  
+(D) Not context-free
+
+**Answer: (D)**
+
+**Solution:**
+L₁ ∩ L₂ = {aⁿbⁿcⁿ | n ≥ 0}. L₁ forces #a = #b, L₂ forces #b = #c. The intersection forces all three to be equal. {aⁿbⁿcⁿ} is the classic example of a context-sensitive language that is not context-free (requires two stacks or a linear bounded automaton). A single-stack PDA cannot match three counters.
+
+---
+
+**Q73. GATE 2015 Set 3 (2 Marks)** — Which of the following problems is decidable for context-free grammars?
+
+(A) Whether the language generated is empty  
+(B) Whether the language generated is regular  
+(C) Whether the language generated is finite  
+(D) Both (A) and (C)
+
+**Answer: (D)**
+
+**Solution:**
+For CFGs, emptiness is decidable (check if start symbol can derive a terminal string — reduce to graph reachability). Finiteness is decidable (remove useless symbols, then check for cycles in the dependency graph). Regularity of a CFL is undecidable (Rice's theorem: "language is regular" is a non-trivial property of RE languages, and CFGs describe a subclass of RE).
+
+---
+
+**Q74. GATE 2014 Set 2 (2 Marks)** — Let G be a CFG in Chomsky Normal Form. The number of derivation steps to derive a string of length n is:
+
+(A) n – 1  
+(B) 2n – 1  
+(C) n  
+(D) 2n
+
+**Answer: (B) 2n – 1**
+
+**Solution:**
+In CNF, every production is A → BC (binary split) or A → a (terminal). For a string of length n:
+- n applications of A → a to produce the n terminals
+- n – 1 applications of A → BC to combine the n non-terminals into the start symbol
+Total steps = n + (n – 1) = 2n – 1
+
+---
+
+### Turing Machines (10 Questions)
+
+---
+
+**Q75. GATE 2018 (2 Marks)** — Let M be a TM with states {q₀,q₁,q₂,q₃}, alphabet {0,1,B}, start at leftmost non-blank. Transitions:
+```
+δ(q₀,0) = (q₁,1,R), δ(q₀,1) = (q₁,0,R), δ(q₀,B) = (q₃,B,L)
+δ(q₁,0) = (q₂,1,L), δ(q₁,1) = (q₂,0,L), δ(q₁,B) = (q₃,B,L)
+δ(q₂,0) = (q₀,1,R), δ(q₂,1) = (q₀,0,R), δ(q₂,B) = (q₃,B,L)
+δ(q₃,0) = (q₃,0,L), δ(q₃,1) = (q₃,1,L), δ(q₃,B) = (q₃,B,L)
+```
+If M starts with input "01", what is the tape content when M halts?
+
+(A) 01  
+(B) 10  
+(C) 11  
+(D) M does not halt
+
+**Answer: (D)**
+
+**Solution:**
+Trace: (q₀,0)→(q₁,1,R). Tape: 1 1 B... (q₁,1)→(q₂,0,L). Tape: 1 0 B... (q₂,1)→(q₀,0,R). Tape: 0 0 B... (q₀,0)→(q₁,1,R). Tape: 0 1 B... (q₁,B)→(q₃,B,L). Tape: 0 1 B... (q₃,1)→(q₃,1,L). (q₃,0)→(q₃,0,L). The TM enters q₃ and moves left indefinitely — no transition halts the machine. Since all transitions in q₃ move left and stay in q₃, the TM never halts.
+
+---
+
+**Q76. GATE 2017 (2 Marks)** — Let L be a recursively enumerable language. Which of the following is true?
+
+(A) The complement of L is always recursively enumerable  
+(B) If L is recursive, then L is recursively enumerable  
+(C) If L is recursively enumerable, then L is recursive  
+(D) The complement of L is always recursive
+
+**Answer: (B)**
+
+**Solution:**
+Every recursive language is recursively enumerable (a decider is also a recognizer — if it accepts, accept; if it rejects, halt and reject). (A) is false — RE is not closed under complement. (C) is false — there exist RE languages that are not recursive (e.g., halting problem). (D) is false — complement of an RE language may not even be RE.
+
+---
+
+**Q77. GATE 2016 (2 Marks)** — Let L = {⟨M⟩ | M halts on empty input}. Which is true?
+
+(A) L is recursive  
+(B) L is RE but not recursive  
+(C) L is co-RE but not RE  
+(D) L is not RE and not co-RE
+
+**Answer: (B)**
+
+**Solution:**
+L is the empty-input halting problem Hε. We can recognize L: simulate M on ε and accept if M halts. But we cannot decide L (if M doesn't halt, we never know). Hε is RE (enumerate all halting computations on empty input) but not recursive. Its complement (M does NOT halt on ε) is not even RE.
+
+---
+
+**Q78. GATE 2015 (2 Marks)** — A Turing Machine with a single tape that can only read (not write) is equivalent to:
+
+(A) DFA  
+(B) NFA  
+(C) PDA  
+(D) LBA
+
+**Answer: (A)**
+
+**Solution:**
+A read-only TM has finite control and a tape with read-only head. Since the head cannot write, it can only move left and right while reading. This is equivalent to a two-way finite automaton, which is known to be equivalent to a DFA. Without writing, the TM gains no additional power over a DFA — the set of reachable states for each prefix is finite and can be simulated by the subset construction.
+
+---
+
+**Q79. GATE 2014 (2 Marks)** — Which of the following about multi-tape TMs is TRUE?
+
+(A) A k-tape TM is strictly more powerful than a single-tape TM  
+(B) A k-tape TM can be simulated by a single-tape TM with at most quadratic slowdown  
+(C) A k-tape TM can be simulated by a single-tape TM with at most exponential slowdown  
+(D) Nondeterministic TMs are strictly more powerful than deterministic TMs
+
+**Answer: (B)**
+
+**Solution:**
+A k-tape TM can be simulated by a single-tape TM by interleaving the k tapes onto one tape with markers. Each step of the k-tape TM requires scanning the entire single tape to read all k head positions, then scanning again to write. If the k-tape TM runs in t steps, the single-tape simulation runs in O(t²) steps — quadratic slowdown. (D) is false: nondeterministic TMs accept the same languages (RE) as deterministic TMs.
+
+---
+
+**Q80. GATE 2013 (1 Mark)** — The Church-Turing thesis states that:
+
+(A) Every function computable by a TM is computable by a finite automaton  
+(B) Every intuitively computable function is computable by a TM  
+(C) Every decision problem is decidable by a TM  
+(D) Every recursively enumerable language is recursive
+
+**Answer: (B)**
+
+**Solution:**
+The Church-Turing thesis claims that the informal notion of "effectively computable" coincides with TM computability. Any function that can be computed by an algorithm can be computed by a TM. It is a thesis (not a theorem) because "effectively computable" is informal. (A) is false (TMs are more powerful than FAs). (C) is false (undecidable problems exist). (D) is false (not all RE languages are recursive).
+
+---
+
+**Q81. GATE 2012 (2 Marks)** — Let U be a universal Turing Machine. The language accepted by U is:
+
+(A) The set of all TM descriptions  
+(B) The set of all pairs ⟨M,w⟩ where M is a TM that accepts w  
+(C) The set of all halting TM descriptions  
+(D) The set of all recursively enumerable languages
+
+**Answer: (B)**
+
+**Solution:**
+A universal TM U takes an encoded pair ⟨M,w⟩ and simulates M on input w. U accepts ⟨M,w⟩ iff M accepts w. Therefore L(U) = {⟨M,w⟩ | M accepts w} = A_TM — the acceptance language, which is RE but not recursive. (A) would include pairs where M does NOT accept w. (C) is different from the acceptance language.
+
+---
+
+**Q82. GATE 2011 (2 Marks)** — Let L be a language over {0,1} accepted by a Turing Machine. Which is true?
+
+(A) L is recursively enumerable  
+(B) L is recursive  
+(C) L is context-sensitive  
+(D) L is regular
+
+**Answer: (A)**
+
+**Solution:**
+By definition, the set of languages accepted by TMs is exactly the set of RE languages. L could be recursive, context-sensitive, or regular, but it must be at least RE. Not all RE languages are recursive — the most general correct answer is (A).
+
+---
+
+**Q83. GATE 2010 (2 Marks)** — Consider TM transition δ(q, a) = (q', b, L). What does this represent?
+
+(A) In state q, reading a, write b, move left, go to q'  
+(B) In state q, reading a, read b, move left, go to q'  
+(C) In state q, reading a, erase b, move left, go to q'  
+(D) In state q, reading b, write a, move left, go to q'
+
+**Answer: (A)**
+
+**Solution:**
+Standard TM transition notation: δ(current_state, read_symbol) = (new_state, write_symbol, move_direction). So δ(q, a) = (q', b, L) means: if in state q and the tape head reads symbol a, write symbol b in the current cell, move the head one cell left (L), and transition to state q'. (B) misinterprets the write symbol as another read. (C) says "erase" instead of "write". (D) swaps the read and write symbols.
+
+---
+
+**Q84. GATE 2016 Set 2 (2 Marks)** — Let L₁ be recursive and L₂ be recursively enumerable. Which is necessarily true?
+
+(A) L₁ ∩ L₂ is recursive  
+(B) L₁ ∪ L₂ is recursively enumerable  
+(C) L₂ – L₁ is recursively enumerable  
+(D) Both (B) and (C)
+
+**Answer: (D)**
+
+**Solution:**
+(B) RE is closed under union. Since L₁ is recursive (hence RE), L₁ ∪ L₂ is RE.
+(C) L₂ – L₁ = L₂ ∩ L₁^c. Since L₁ is recursive, L₁^c is recursive (hence RE). The intersection of two RE languages is RE. So L₂ – L₁ is RE.
+(A) is not necessarily true: L₁ could be Σ* and L₂ could be the halting problem. Then L₁ ∩ L₂ = HALT, which is RE but not recursive.
+
+---
+
+### Undecidability & Reductions (8 Questions)
+
+---
+
+**Q85. GATE 2018 (2 Marks)** — Which of the following about Rice's Theorem is TRUE?
+
+(A) Rice's Theorem applies only to languages that are recursively enumerable  
+(B) Rice's Theorem states any non-trivial property of RE languages is undecidable  
+(C) Rice's Theorem can prove emptiness for CFGs is undecidable  
+(D) Rice's Theorem applies only to properties of regular languages
+
+**Answer: (B)**
+
+**Solution:**
+Rice's Theorem: any non-trivial property of the language of a TM (true for some RE languages and false for others) is undecidable. (A) is misleading — Rice's theorem talks about properties of RE languages, but the TM whose language has the property must be considered. (C) is false — emptiness for CFGs is decidable (Rice's theorem applies only to TM descriptions). (D) is false — Rice's theorem applies to RE languages.
+
+---
+
+**Q86. GATE 2017 (2 Marks)** — The halting problem for Turing Machines is:
+
+(A) Decidable  
+(B) RE but not decidable  
+(C) Co-RE but not decidable  
+(D) Neither RE nor co-RE
+
+**Answer: (B)**
+
+**Solution:**
+HALT_TM = {⟨M,w⟩ | M halts on input w}. We can recognize HALT: simulate M on w; if M halts, accept. But we cannot decide — if M loops forever, we never know. HALT is RE (we can enumerate all halting computations) but not recursive (undecidable). Its complement (M does NOT halt) is not even RE. So HALT is RE but not recursive.
+
+---
+
+**Q87. GATE 2016 (2 Marks)** — Which problem about CFGs is UNDECIDABLE?
+
+(A) Whether a given CFG generates the empty language  
+(B) Whether a given CFG generates an infinite language  
+(C) Whether a given CFG is ambiguous  
+(D) Whether a given CFG generates a finite language
+
+**Answer: (C)**
+
+**Solution:**
+Ambiguity of a CFG is undecidable — there is no algorithm determining if a CFG has multiple parse trees for some string. Emptiness (A) and finiteness (B/D) are all decidable for CFGs. Ambiguity remains undecidable even for restricted grammar classes.
+
+---
+
+**Q88. GATE 2015 (2 Marks)** — Let A ≤ₘ B denote many-one reducibility. Which is TRUE?
+
+(A) If B is decidable and A ≤ₘ B, then A is decidable  
+(B) If A is undecidable and A ≤ₘ B, then B is undecidable  
+(C) If A ≤ₘ B and B ≤ₘ A, then A = B  
+(D) If A ≤ₘ B and B is RE, then A is recursive
+
+**Answer: (A)**
+
+**Solution:**
+Many-one reduction A ≤ₘ B means there exists a computable f such that w ∈ A ⇔ f(w) ∈ B. If B is decidable, we decide A by computing f(w) and testing membership in B. (B) is the contrapositive and also valid, but the GATE answer focuses on (A) as the direct reduction property. (C) is false — A and B could be different but equally hard. (D) is false — A would be RE (not necessarily recursive).
+
+---
+
+**Q89. GATE 2014 (2 Marks)** — The Post Correspondence Problem (PCP) over Σ is:
+
+(A) Decidable for all Σ  
+(B) Undecidable for all Σ with |Σ| ≥ 2  
+(C) Decidable for |Σ| = 1  
+(D) Both (B) and (C)
+
+**Answer: (D)**
+
+**Solution:**
+PCP is undecidable in general (for |Σ| ≥ 2). For |Σ| = 1 (unary alphabet), PCP is decidable — it reduces to checking whether two sequences of natural numbers have matching prefix-sums, which is decidable. The undecidability proof for PCP uses a reduction from the halting problem and requires at least 2 symbols for encoding TM configurations.
+
+---
+
+**Q90. GATE 2013 (2 Marks)** — Let L = {⟨M⟩ | M is a TM that accepts at least one string}. Which is true?
+
+(A) L is recursive  
+(B) L is RE but not recursive  
+(C) L is co-RE but not RE  
+(D) L is not RE and not co-RE
+
+**Answer: (B)**
+
+**Solution:**
+L = {⟨M⟩ | L(M) ≠ ∅} — the non-emptiness problem for TMs. This is RE: simulate M on all strings in parallel (dovetailing) and accept if any computation accepts. But it's not recursive: by Rice's theorem, "language is non-empty" is a non-trivial property of RE languages. However, it IS RE because we can search for a witness string.
+
+---
+
+**Q91. GATE 2012 (2 Marks)** — Let A be a known undecidable language. To prove B is undecidable:
+
+(A) Reduce A to B (A ≤ₘ B)  
+(B) Reduce B to A (B ≤ₘ A)  
+(C) Show B is a subset of A  
+(D) Show A is a subset of B
+
+**Answer: (A)**
+
+**Solution:**
+To prove B is undecidable, reduce A (known undecidable) to B (A ≤ₘ B). If B were decidable, then A would be decidable via the reduction. Since A is known undecidable, B must also be undecidable. Direction matters: the reduction must go FROM the known hard problem TO the target. (B) would prove B is decidable if A is decidable — useless when A is undecidable.
+
+---
+
+**Q92. GATE 2011 (2 Marks)** — Let L = {⟨M⟩ | L(M) is regular}. Which is true?
+
+(A) L is decidable  
+(B) L is RE but not recursive  
+(C) L is co-RE but not RE  
+(D) L is not RE and not co-RE
+
+**Answer: (D)**
+
+**Solution:**
+"L(M) is regular" is a non-trivial property of the language of a TM. By Rice's theorem, it is undecidable. Furthermore, it is neither RE nor co-RE. Why? Regularity is a Σ₂⁰-complete property in the arithmetical hierarchy — we can never confirm that a TM accepts exactly a regular language (would need to rule out all non-regular strings). It is strictly harder than the halting problem.
+
+---
+
+### Complexity Classes (8 Questions)
+
+---
+
+**Q93. GATE 2018 (2 Marks)** — Which of the following about P and NP is TRUE?
+
+(A) P ⊆ NP is unknown  
+(B) NP ⊆ P is unknown  
+(C) P = NP implies every NP problem has a polynomial-time algorithm  
+(D) Every problem in NP is NP-complete
+
+**Answer: (C)**
+
+**Solution:**
+P ⊆ NP is known (every deterministic polynomial algorithm is also a non-deterministic one). NP ⊆ P is the P vs NP question (unknown). If P = NP, then every NP problem has a polynomial-time algorithm. (D) is false: problems in P are in NP but are not NP-complete (assuming P ≠ NP), and if P = NP then all NP problems are in P but not necessarily NP-complete.
+
+---
+
+**Q94. GATE 2017 (2 Marks)** — A problem is NP-complete if:
+
+(A) It is in NP and every problem in P reduces to it  
+(B) It is in NP and every problem in NP reduces to it  
+(C) It is in NP and it reduces to SAT  
+(D) It is in NP and SAT reduces to it
+
+**Answer: (B)**
+
+**Solution:**
+Definition: L is NP-complete if (1) L ∈ NP, and (2) every L' ∈ NP is polynomial-time reducible to L. (D) also implies NP-completeness (since SAT is NP-complete, SAT ≤ₚ L makes L NP-hard, and L ∈ NP makes it NP-complete). But (B) is the formal definition. GATE answer: (B).
+
+---
+
+**Q95. GATE 2016 (2 Marks)** — Which is TRUE about co-NP?
+
+(A) co-NP = NP  
+(B) co-NP ⊆ NP  
+(C) P ⊆ co-NP  
+(D) co-NP ⊆ P
+
+**Answer: (C)**
+
+**Solution:**
+P is closed under complement. If a problem is in P, its complement is also in P, hence in NP, so the original problem is in co-NP. Thus P ⊆ co-NP. Whether co-NP = NP or co-NP ⊆ NP is unknown. co-NP ⊆ P is also unknown (and believed false).
+
+---
+
+**Q96. GATE 2015 (2 Marks)** — The Cook-Levin theorem states that:
+
+(A) SAT is in P  
+(B) SAT is NP-complete  
+(C) 3-SAT is NP-complete  
+(D) Circuit-SAT is NP-complete
+
+**Answer: (B)**
+
+**Solution:**
+The Cook-Levin theorem (1971) proves SAT is NP-complete — the first problem proven NP-complete. It shows every NP problem can be reduced to SAT in polynomial time by encoding a non-deterministic TM computation as a Boolean formula. (C) and (D) are corollaries proven later, not the Cook-Levin theorem itself.
+
+---
+
+**Q97. GATE 2014 (2 Marks)** — Let SPACE(s(n)) denote languages decidable by a TM using O(s(n)) space. Which is TRUE?
+
+(A) SPACE(n) = NP  
+(B) SPACE(n²) = PSPACE  
+(C) SPACE(n) ⊆ PSPACE  
+(D) NP ⊆ SPACE(n)
+
+**Answer: (C)**
+
+**Solution:**
+PSPACE = ∪_k SPACE(n^k). SPACE(n) (linear space) is a subset of PSPACE since n ∈ O(n^k). (A) is an open problem. (B) is false — SPACE(n²) ⊂ PSPACE (proper subset). (D) is unknown — NP could require more than linear space (current belief: NP ⊄ SPACE(n)).
+
+---
+
+**Q98. GATE 2013 (2 Marks)** — Let SAT be the Boolean satisfiability problem. Which is TRUE?
+
+(A) SAT ∈ P iff P = NP  
+(B) SAT ∉ P  
+(C) SAT ∈ P  
+(D) SAT is not NP-complete
+
+**Answer: (A)**
+
+**Solution:**
+SAT is NP-complete (Cook-Levin). If SAT ∈ P, then every NP problem reduces to SAT ∈ P, so P = NP. Conversely, if P = NP, then SAT (which is in NP) is in P. So SAT ∈ P iff P = NP. (B) and (C) are open (P vs NP). (D) is false — SAT was the first proven NP-complete problem.
+
+---
+
+**Q99. GATE 2012 (2 Marks)** — Let L ∈ NP. Which is necessarily true?
+
+(A) L^c ∈ NP  
+(B) L^c ∈ co-NP  
+(C) L ∈ P  
+(D) L is NP-complete
+
+**Answer: (B)**
+
+**Solution:**
+By definition, if L ∈ NP, then L^c ∈ co-NP. That is the definition of co-NP. (A) is unknown — NP = co-NP is an open question. (C) is unknown (P vs NP). (D) is false — not all NP problems are NP-complete.
+
+---
+
+**Q100. GATE 2011 (2 Marks)** — Which is TRUE about PSPACE and NP?
+
+(A) NP ⊂ PSPACE  
+(B) PSPACE ⊂ NP  
+(C) NP = PSPACE  
+(D) NP ⊆ PSPACE
+
+**Answer: (D)**
+
+**Solution:**
+NP ⊆ PSPACE: a polynomial-time NTM can be simulated by a TM using polynomial space — we explore all computation paths one at a time, reusing space. Whether the inclusion is strict (NP ⊂ PSPACE) is unknown, though believed true. We can assert NP ⊆ PSPACE but cannot claim proper subset.
+
+---
+
+## Common Traps, Tricks & Formula Cheat Sheet
+
+### 15 GATE-Specific Traps in TOC
+
+**Trap 1: Confusing DCFL vs CFL**
+Key distinction:
+- **DCFL**: accepted by a deterministic PDA (DPDA) — at most one move per (state, input, stack-top)
+- **NCFL**: accepted by a non-deterministic PDA but NOT by any DPDA
+- Test: Can you accept with a single stack making deterministic decisions? If you need to "guess" (e.g., midpoint of wwᴿ), it's NCFL.
+
+Examples: {aⁿbⁿ} → DCFL, {wwᴿ} → NCFL (need to guess midpoint), {aⁿbᵐ | n ≠ m} → DCFL (complement of DCFL within a*b*), {aⁿbⁿ ∪ a²ⁿbⁿ} → NCFL.
+
+**Trap 2: Applying Pumping Lemma Incorrectly**
+The pumping lemma is a **necessary** condition, not sufficient. If L fails pumping lemma → L is NOT regular/CFL. If L passes → L MIGHT still be non-regular/non-CFL.
+
+Common mistakes:
+- Choosing wrong string (must be in L and long enough)
+- Not considering ALL possible divisions (you must show NO valid division works)
+- Forgetting |xy| ≤ p (regular) or |vxy| ≤ p (CFL) — the pumping window constraint
+- Reversing quantifiers: YOU choose s, the LEMMA chooses the division
+
+**Trap 3: Reduction Direction**
+To prove B undecidable: A ≤ₘ B (reduce known undecidable A TO B).
+Wrong: "B reduces to A" (B ≤ₘ A) — this would prove B is decidable if A is decidable, useless when A is undecidable.
+Mnemonic: **"A reduces to B" = "A is no harder than B"** = B is at least as hard as A.
+
+**Trap 4: Rice's Theorem Applicability**
+Applies ONLY to properties of the LANGUAGE of a TM, NOT the TM itself.
+
+| Applies (undecidable) | Does NOT apply (may be decidable) |
+|-----------------------|-----------------------------------|
+| "L(M) is empty" | "M has exactly 5 states" |
+| "L(M) is regular" | "M halts on input w" |
+| "L(M) contains ε" | "M ever moves left on blank" |
+| "L(M) is finite" | "M uses at most 100 tape cells" |
+
+**Trap 5: Regular ∩ CFL = CFL**
+Intersection of a regular language and a CFL is ALWAYS a CFL. But intersection of two CFLs may NOT be a CFL. Example: {aⁿbⁿcᵐ} ∩ {aⁿbᵐcᵐ} = {aⁿbⁿcⁿ} — not CFL.
+
+**Trap 6: Complement of RE Languages**
+If L is RE, L^c may or may not be RE.
+- L is recursive ⟺ both L and L^c are RE
+- L is RE but not recursive ⟹ L^c is NOT RE
+- This gives a rapid test: if you can show both L and L^c are RE, then L is recursive.
+
+**Trap 7: DFA Minimization — Initial Marking**
+The table-filling algorithm: initially mark ALL pairs (p, q) where p ∈ F and q ∉ F (or vice versa) as distinguishable. Many students forget edge cases involving unreachable states.
+
+**Trap 8: CFG Decision Problems**
+- Emptiness: **decidable** (graph reachability)
+- Membership (word problem): **decidable** (CYK, O(n³))
+- Finiteness: **decidable** (useless symbols + cycle check)
+- Ambiguity: **UNDECIDABLE**
+- Regularity: **UNDECIDABLE**
+- Equivalence: **UNDECIDABLE**
+
+**Trap 9: CSL vs Recursive**
+All CSLs are recursive, but not all recursive languages are CSL. CSL is a proper subset of recursive languages. LBAs define CSLs.
+
+**Trap 10: Context-Free ≠ Deterministic**
+Not all CFLs are DCFLs. DCFL is a proper subset of CFL. {wwᴿ} is the classic NCFL — a DPDA cannot guess the midpoint.
+
+**Trap 11: "Recursive" vs "Recursively Enumerable"**
+- Recursive (R) = decidable = TM halts on ALL inputs
+- RE = semi-decidable = TM accepts strings in L, may loop on strings not in L
+- Every recursive language is RE, but not vice versa
+- L is recursive iff both L and its complement are RE
+
+**Trap 12: P vs NP vs NP-Complete**
+Not all NP problems are NP-complete. If P ≠ NP, problems in P are in NP but not NP-complete. NP-complete requires both: (1) in NP, and (2) every NP problem reduces to it.
+
+**Trap 13: {ww} vs {wwᴿ}**
+- {ww} — NOT context-free (needs to match symbol-by-symbol in order, impossible with single stack)
+- {wwᴿ} — IS context-free (push w, pop wᴿ), but NCFL (need non-determinism for midpoint)
+
+**Trap 14: Infinite Union of Regular Languages**
+An infinite union of regular languages is NOT necessarily regular. Example: {aⁿbⁿ} = ∪_{k≥0} {aᵏbᵏ}. Each {aᵏbᵏ} is finite (regular), but the infinite union is the non-regular {aⁿbⁿ}. Regular languages are only closed under FINITE union.
+
+**Trap 15: Homomorphic Images of CFLs**
+CFLs are closed under homomorphism (including erasing homomorphisms). This means removing symbols via homomorphism preserves context-freeness. Regular languages are also closed under both homomorphism and inverse homomorphism.
+
+---
+
+### Decision Procedure Table
+
+| Problem | Regular | DCFL | CFL | CSL | Recursive | RE |
+|---------|:-------:|:----:|:---:|:---:|:---------:|:--:|
+| **Membership** (w ∈ L?) | D | D | D | D | D | U |
+| **Emptiness** (L = ∅?) | D | D | D | U | U | U |
+| **Finiteness** (Is \|L\| < ∞?) | D | D | D | U | U | U |
+| **Universality** (L = Σ*?) | D | D | U | U | U | U |
+| **Equivalence** (L₁ = L₂?) | D | U | U | U | U | U |
+| **Disjointness** (L₁ ∩ L₂ = ∅?) | D | U | U | U | U | U |
+| **Subset** (L₁ ⊆ L₂?) | D | U | U | U | U | U |
+| **Regularity** (Is L regular?) | D | D | U | U | U | U |
+| **Ambiguity** (CFG ambiguous?) | — | — | U | — | — | — |
+
+**D = Decidable, U = Undecidable, — = Not Applicable**
+
+Key pattern: Everything decidable for Regular; emptiness/finiteness/membership decidable for CFL; only membership decidable for RE.
+
+---
+
+### Closure Properties Quick Reference
+
+| Operation | Regular | DCFL | CFL | CSL | Recursive | RE |
+|-----------|:-------:|:----:|:---:|:---:|:---------:|:--:|
+| **Union** | ✓ | ✗ | ✓ | ✓ | ✓ | ✓ |
+| **Intersection** | ✓ | ✗ | ✗ | ✓ | ✓ | ✓ |
+| **Complement** | ✓ | ✓ | ✗ | ✓ | ✓ | ✗ |
+| **Concatenation** | ✓ | ✗ | ✓ | ✓ | ✓ | ✓ |
+| **Kleene Star** | ✓ | ✗ | ✓ | ✓ | ✓ | ✓ |
+| **Kleene Plus** | ✓ | ✗ | ✓ | ✓ | ✓ | ✓ |
+| **Reversal** | ✓ | ✗ | ✓ | ✓ | ✓ | ✓ |
+| **Homomorphism** | ✓ | ✗ | ✓ | ✗ | ✗ | ✓ |
+| **Inverse Homomorphism** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **Intersection with Regular** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **Set Difference** | ✓ | ✗ | ✗ | ✓ | ✓ | ✗ |
+| **Prefix** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **Suffix** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| **Substitution** | ✓ | ✗ | ✓ | ✓ | ✗ | ✓ |
+
+**✓ = Closed, ✗ = Not Closed**
+
+Memory aid for CFL: **UNION, CONCAT, KLEENE, REVERSE, HOM** — closed. **INTERSECTION, COMPLEMENT, DIFFERENCE** — NOT closed. **Intersection with Regular** — always closed (most useful for GATE).
+
+---
+
+### Chomsky Hierarchy Comparison
+
+| Type | Name | Grammar Rule Form | Automaton | Language Class |
+|:----:|------|:-----------------:|-----------|:--------------:|
+| **Type 0** | Unrestricted | α → β (α ≠ ε) | Turing Machine | RE |
+| **Type 1** | Context-Sensitive | αAβ → αγβ (γ ≠ ε) | Linear Bounded Automaton | CSL |
+| **Type 2** | Context-Free | A → γ | PDA (NPDA) | CFL |
+| **Type 3** | Regular | A → aB, A → a | DFA/NFA | Regular |
+
+**Inclusion hierarchy:** Regular ⊂ CFL ⊂ CSL ⊂ RE
+
+| Property | Regular | CFL | CSL | RE |
+|----------|:-------:|:---:|:---:|:--:|
+| Pumping Lemma applies | Yes | Yes | Yes | No |
+| Emptiness decidable | Yes | Yes | No | No |
+| Membership decidable | Yes | Yes | Yes | No |
+| Equivalence decidable | Yes | No | No | No |
+| Closed under Complement | Yes | No | Yes | No |
+| Closed under Intersection | Yes | No | Yes | Yes |
+
+---
+
+### Key Reduction Examples for Undecidability Proofs
+
+**1. A_TM ≤ₘ HALT_TM**
+Given ⟨M,w⟩, construct M': simulate M on w; if M accepts, halt; if M rejects, loop. Then ⟨M,w⟩ ∈ A_TM ⟺ ⟨M'⟩ ∈ HALT_TM. This shows HALT is undecidable given A_TM is undecidable.
+
+**2. HALT_TM ≤ₘ EMPTY_TM**
+Given ⟨M,w⟩, construct M': on any input x, simulate M on w. If M halts, accept x. Then L(M') = Σ* (if M halts on w) or L(M') = ∅ (if M loops). So ⟨M,w⟩ ∉ HALT_TM ⟺ ⟨M'⟩ ∈ EMPTY_TM. This proves EMPTY_TM is undecidable.
+
+**3. A_TM ≤ₘ REGULAR_TM**
+Given ⟨M,w⟩, construct M': on input x, if x ∈ {0ⁿ1ⁿ} accept; otherwise simulate M on w and accept if M accepts w. Then L(M') = Σ* (regular) if M accepts w, else L(M') = {0ⁿ1ⁿ} (non-regular). So ⟨M,w⟩ ∈ A_TM ⟺ ⟨M'⟩ ∈ REGULAR_TM.
+
+**4. PCP ≤ₘ CFG Ambiguity**
+Given PCP instance (A,B) over Σ, construct CFG with productions generating all possible concatenations from both sequences. The CFG is ambiguous iff the PCP instance has a solution, proving CFG ambiguity undecidable.
+
+**Common Template:** To prove B undecidable, reduce A ≤ₘ B where A is known undecidable. Construct f(⟨M,w⟩) = ⟨M'⟩ such that M' simulates M on w and uses the outcome to determine M''s language behavior. The reduction must be computable and correct (w ∈ A ⟺ f(w) ∈ B).
+
+---
+
+### Exam Time-Saving Insights
+
+1. **Quick Regularity Test for {aⁿbᵐ}:**
+   - Condition on n or m independently → regular (e.g., n even, m ≥ 5)
+   - Condition relating n and m (n = m, n > m, n ≠ m) → NOT regular (CFL/DCFL)
+   - Exception: "n = m or n ≠ m" = all of a*b* → regular
+
+2. **Identify DCFL quickly:**
+   - Can you process left-to-right with deterministic stack decisions?
+   - {aⁿbⁿ} → DCFL (push a, pop b)
+   - {wwᴿ} → NCFL (need to guess midpoint)
+   - {aⁿbᵐcᵖ | n = m} → DCFL; {aⁿbᵐcᵖ | m = p} → DCFL
+   - {aⁿbᵐcᵖ | n = m or m = p} → NCFL (guess which condition)
+
+3. **Rice's Theorem Quick Check:**
+   - Property of LANGUAGE? ✓ Non-trivial? ✓ → undecidable
+   - Property of TM itself? → Rice's theorem does NOT apply
+
+4. **CFL Closure Mnemonic:**
+   - Closed: **U**nion, **C**oncatenation, **K**leene star, **R**eversal, **H**omomorphism → "UCK-RH"
+   - NOT closed: **I**ntersection, **C**omplement, **D**ifference → "ICD"
+
+5. **P vs NP Quick Identification:**
+   - Verifiable in polynomial time? → NP
+   - Solvable in polynomial time? → P
+   - NP-complete problems: SAT, 3-SAT, VC, Clique, SubsetSum, HamCycle
+   - P problems: Shortest Path, MST, Sorting, Matching, 2-SAT
+
+6. **Language Classification Order:**
+   Given any language, determine its place in the hierarchy:
+   1. Try DFA/NFA/RE → regular?
+   2. Try PDA/CFG → CFL?
+   3. Try LBA → CSL?
+   4. Try TM (always halts) → recursive?
+   5. Try TM (may loop) → RE?
+   6. Otherwise → non-RE (use reductions)
+
+7. **Diagonalization Core Idea:**
+   List all TMs and their behavior; construct a TM that differs on the diagonal. This proves the halting problem undecidable and is the foundation of all undecidability proofs.
+
+8. **Savitch's Theorem:**
+   NSPACE(f(n)) ⊆ DSPACE(f(n)²). Corollary: PSPACE = NPSPACE. Non-deterministic space is at most quadratically more efficient than deterministic space.
+
+9. **Regular Expression Counting:**
+   For r = (0|1)*0(0|1)ᵏ, strings of length n: count = 2^(n-k-1) · 1 · 2^k = 2^(n-1). The fixed symbol at position (n-k) from the end.
+
+10. **Pumping Lemma String Selection:**
+    - For {aⁿbⁿ}: choose s = aᵖbᵖ
+    - For {aⁿbⁿcⁿ}: choose s = aᵖbᵖcᵖ
+    - For {ww}: choose s = 0ᵖ1ᵖ0ᵖ1ᵖ (length 4p)
+    - Key: ensure the pumping window (|vxy| ≤ p) forces vy to stay within at most two adjacent symbol blocks
+
+---

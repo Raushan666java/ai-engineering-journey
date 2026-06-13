@@ -3776,3 +3776,1176 @@ Main deterioration area:
 ---
 
 *End of Additional PYQs, Book References, and Mock Test Blueprints section.*
+
+## Additional Previous Year Questions (GATE 2015-2019)
+
+### Data Structures & Algorithms (Q51-Q57)
+
+#### Q51 (GATE 2015) — Recursion with Static Variable
+
+Consider the following C function:
+
+int f(int n) {
+    static int i = 1;
+    if (n >= 5) return n;
+    n = n + i;
+    i++;
+    return f(n);
+}
+
+What value is returned by f(1)?
+
+Step-by-step:
+- Call f(1): n=1, i=1. n<5 → n=1+1=2, i=2, call f(2)
+- Call f(2): n=2, i=2. n<5 → n=2+2=4, i=3, call f(4)
+- Call f(4): n=4, i=3. n<5 → n=4+3=7, i=4, call f(7)
+- Call f(7): n=7, i=4. n≥5 → return 7
+
+Answer: 7
+
+---
+
+#### Q52 (GATE 2016) — Quick Sort Worst-Case Recurrence
+
+Which recurrence represents the worst-case time complexity of Quicksort?
+
+(A) T(n) = T(n/2) + O(n)
+(B) T(n) = 2T(n/2) + O(n)
+(C) T(n) = T(n-1) + O(n)
+(D) T(n) = T(n/3) + T(2n/3) + O(n)
+
+Step-by-step:
+- Quicksort worst case: pivot is min or max each time -> partition yields 0 and n-1 sizes.
+- Recurrence: T(n) = T(0) + T(n-1) + O(n) = T(n-1) + O(n).
+- Expands: T(n-1) + O(n) = T(n-2) + O(n-1) + O(n) = ... = O(n^2).
+
+Answer: C
+
+---
+
+#### Q53 (GATE 2017) — Binary Tree Leaves & Internal Nodes
+
+A binary tree T has 20 leaves. The number of nodes in T with exactly two children is _____.
+
+Step-by-step:
+- Let n0 = leaves, n1 = nodes with 1 child, n2 = nodes with 2 children.
+- Total nodes n = n0 + n1 + n2. Total edges = n - 1 = n0 + n1 + n2 - 1.
+- Also edges = n1 + 2n2. Equate: n0 + n1 + n2 - 1 = n1 + 2n2 -> n0 = n2 + 1.
+- Given n0 = 20 -> 20 = n2 + 1 -> n2 = 19.
+
+Answer: 19
+
+---
+
+#### Q54 (GATE 2018) — Nested Loop Complexity
+
+int fun(int n) {
+    int x = 0;
+    for (int i = n; i > 0; i = i / 2)
+        for (int j = 0; j < i; j++)
+            x++;
+    return x;
+}
+
+Time complexity of fun(n):
+(A) O(n)  (B) O(n log n)  (C) O(n^2)  (D) O(log n)
+
+Step-by-step:
+- Outer loop values: i = n, n/2, n/4, ..., 1 (log2 n iterations)
+- Inner loop runs i times for each outer value
+- Total iterations = n + n/2 + n/4 + ... + 1 = n(1 + 1/2 + 1/4 + ...) = 2n
+- Complexity = O(n)
+
+Answer: A
+
+---
+
+#### Q55 (GATE 2019) — Counting Min-Heaps
+
+The number of possible min-heaps containing values {1, 2, 3, 4, 5, 6, 7} is _____.
+
+Step-by-step:
+- Root must be 1 (the minimum). Remaining: {2,3,4,5,6,7}.
+- Heap structure: 3 nodes in left subtree, 3 in right subtree.
+- Choose any 3 for left: C(6,3) = 20 ways.
+- A 3-element min-heap (3 nodes) has 2 possible arrangements.
+- Total = C(6,3) * 2 * 2 = 20 * 4 = 80.
+
+Answer: 80
+
+---
+
+#### Q56 (GATE 2015) — Cayley's Formula
+
+In a complete graph Kn, number of spanning trees is:
+(A) n^(n-2)  (B) n^(n-1)  (C) n!  (D) (n-1)!
+
+Step-by-step:
+Cayley's formula: Kn has exactly n^(n-2) spanning trees. For K5: 5^3 = 125 spanning trees.
+
+Answer: A
+
+---
+
+#### Q57 (GATE 2016) — Non-Comparison Sort
+
+Which is NOT a comparison-based sorting algorithm?
+(A) Merge Sort  (B) Counting Sort  (C) Quick Sort  (D) Heap Sort
+
+Step-by-step:
+Counting Sort counts occurrences by key value and uses prefix sums to place elements -- it never compares two elements pairwise. Merge, Quick, and Heap all use pairwise comparisons.
+
+Answer: B
+
+---
+
+### Operating Systems (Q58-Q64)
+
+#### Q58 (GATE 2015) — Banker's Algorithm
+
+Three processes P0, P1, P2 share two resource types R0(10 instances), R1(5 instances):
+
+        Allocation    Max          Need
+        R0  R1       R0  R1       R0  R1
+P0:      0   1        7   5        7   4
+P1:      2   0        3   2        1   2
+P2:      3   0        9   0        6   0
+
+Is the system in a safe state?
+
+Step-by-step:
+- Total allocated = (5,1). Available = (10,5) - (5,1) = (5,4).
+- P1: Need(1,2) <= Available(5,4) -> P1 runs, releases (2,0) -> Available = (7,4).
+- P0: Need(7,4) <= Available(7,4) -> P0 runs, releases (0,1) -> Available = (7,5).
+- P2: Need(6,0) <= Available(7,5) -> P2 runs.
+- Safe sequence exists: P1 -> P0 -> P2.
+
+Answer: Yes. Safe sequence: P1 -> P0 -> P2.
+
+---
+
+#### Q59 (GATE 2016) — Page Table Size
+
+Computer with 40-bit virtual address, 32-bit physical address, 4 KB page size. How many entries in a single-level page table?
+
+Step-by-step:
+- Page offset = log2(4096) = 12 bits
+- Virtual page number bits = 40 - 12 = 28 bits
+- Each virtual page needs one PTE -> 2^28 entries
+
+Answer: 2^28 (~ 268 million entries)
+
+---
+
+#### Q60 (GATE 2017) — Race Condition on Shared Variable
+
+Two processes P1 and P2 increment a shared variable count = 0:
+count = count + 1;
+The machine instruction is: LOAD count, ADD 1, STORE count. LOAD and STORE are atomic. How many distinct final values of count are possible?
+
+(A) 1  (B) 2  (C) 3  (D) 4
+
+Step-by-step:
+- Sequential: P1 runs then P2 -> count = 2.
+- Interleaved (lost update): P1 loads 0, P2 loads 0, P1 stores 1, P2 stores 1 -> count = 1.
+- No other result is possible. Only {1, 2}.
+
+Answer: B
+
+---
+
+#### Q61 (GATE 2018) — Page Faults with LRU
+
+Demand paging, 3 frames, LRU replacement. Reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. How many page faults?
+
+Step-by-step:
+Ref | Frames (MRU to LRU)        | Fault?
+1   | [1]                     | Miss
+2   | [2, 1]                  | Miss
+3   | [3, 2, 1]               | Miss
+4   | [4, 3, 2]  (1 evicted)  | Miss
+1   | [1, 4, 3]  (2 evicted)  | Miss
+2   | [2, 1, 4]  (3 evicted)  | Miss
+5   | [5, 2, 1]  (4 evicted)  | Miss
+1   | [1, 5, 2]               | Hit
+2   | [2, 1, 5]               | Hit
+3   | [3, 2, 1]  (5 evicted)  | Miss
+4   | [4, 3, 2]  (1 evicted)  | Miss
+5   | [5, 4, 3]  (2 evicted)  | Miss
+
+Total page faults = 9.
+
+Answer: 9
+
+---
+
+#### Q62 (GATE 2015) — SJF Scheduling
+
+Which scheduling algorithm minimizes average waiting time?
+(A) FCFS  (B) SJF (non-preemptive)  (C) Round Robin  (D) Priority
+
+Step-by-step:
+SJF is provably optimal for minimizing average waiting time (shortest next CPU burst first minimizes the total waiting time across all processes).
+
+Answer: B
+
+---
+
+#### Q63 (GATE 2019) — Maximum File Size
+
+Block size = 4 KB, block pointer = 4 bytes. Inode: 12 direct, 1 single indirect, 1 double indirect. Approximate max file size?
+
+(A) 4 GB  (B) 8 GB  (C) 12 GB  (D) 64 GB
+
+Step-by-step:
+- Pointers per block = 4096/4 = 1024
+- Direct: 12 * 4 KB = 48 KB
+- Single indirect: 1024 * 4 KB = 4 MB
+- Double indirect: 1024 * 1024 * 4 KB = 4 GB
+- Total ~ 4 GB
+
+Answer: A
+
+---
+
+#### Q64 (GATE 2016) — Fork() Count
+
+for (i = 0; i < 2; i++)
+    fork();
+
+Total child processes created (excluding parent)?
+
+(A) 2  (B) 3  (C) 4  (D) 5
+
+Step-by-step:
+- i=0: 1 fork, 1 child created. Now 2 processes.
+- i=1: Both processes fork -> 2 new children. Total processes = 4 (1 parent + 3 children).
+- Formula: 2^n - 1 = 2^2 - 1 = 3.
+
+Answer: B
+
+---
+
+### Database Management Systems (Q65-Q70)
+
+#### Q65 (GATE 2015) — Candidate Keys
+
+R(A, B, C, D, E) with FDs: AB -> C, C -> D, D -> E. How many candidate keys does R have?
+
+(A) 1  (B) 2  (C) 3  (D) 4
+
+Step-by-step:
+- AB+ = {A,B,C,D,E} -> AB is a candidate key.
+- A+ = {A}, B+ = {B}, C+ = {C,D,E}, D+ = {D,E}.
+- No other attribute set determines all attributes. Only AB.
+- Number of candidate keys = 1.
+
+Answer: A
+
+---
+
+#### Q66 (GATE 2016) — B+ Tree Properties
+
+Which is true about B+ trees?
+(A) All leaf nodes are at the same depth
+(B) Internal nodes store data pointers
+(C) Keys are stored only in leaf nodes
+(D) B+ trees are not height-balanced
+
+Step-by-step:
+- (A) True: all leaf nodes at the same level.
+- (B) False: internal nodes store only keys (routers); data pointers are only in leaf nodes.
+- (C) False: keys appear in both internal and leaf nodes.
+- (D) False: B+ trees are height-balanced.
+
+Answer: A
+
+---
+
+#### Q67 (GATE 2017) — Conflict Serializability
+
+Schedule S: r1(A), w2(A), r3(A), w1(A), w3(A). Is S conflict serializable?
+
+Step-by-step:
+- Conflict edges in precedence graph:
+- r1(A) and w2(A): T1 -> T2
+- w2(A) and r3(A): T2 -> T3
+- w2(A) and w1(A): T2 -> T1
+- r3(A) and w1(A): T3 -> T1
+- w1(A) and w3(A): T1 -> T3
+- Precedence graph: T1->T2, T2->T3, T3->T1 -> CYCLE! Not conflict serializable.
+
+Answer: No (precedence graph has a cycle).
+
+---
+
+#### Q68 (GATE 2018) — 3NF Condition
+
+A relation R is in 3NF if for every non-trivial FD X -> Y:
+(A) X is a superkey AND Y is prime
+(B) X is a superkey OR Y is prime
+(C) X is a candidate key AND Y is non-prime
+(D) X is a superkey OR Y is non-prime
+
+Step-by-step:
+3NF definition: For every non-trivial FD X -> Y, either X is a superkey OR each attribute in Y is prime (part of some candidate key). Option (B) states this correctly.
+
+Answer: B
+
+---
+
+#### Q69 (GATE 2019) — Normal Form Identification
+
+R(A, B, C, D) with FDs: A->B, B->C, C->A, D->B. In which normal form?
+
+(A) 1NF  (B) 2NF  (C) 3NF  (D) BCNF
+
+Step-by-step:
+- A+ = {A,B,C}, B+ = {B,C,A}, C+ = {C,A,B}, D+ = {D,A,B,C} = all attributes.
+- Candidate keys: {D} (only D determines all attributes).
+- Prime attributes: {D}. Non-prime: {A,B,C}.
+- D->B: D is superkey -> OK. A->B: A not superkey, B not prime -> violates 3NF.
+- No partial dependency since D is single-attribute key -> satisfies 2NF.
+- Relation is in 2NF but not 3NF.
+
+Answer: B
+
+---
+
+#### Q70 (GATE 2015) — SQL to Relational Algebra
+
+SELECT DISTINCT A, B FROM R WHERE C > 10
+
+Which RA expression is equivalent?
+(A) pi_{A,B}(sigma_{C>10}(R))
+(B) sigma_{C>10}(pi_{A,B}(R))
+(C) pi_{A,B,C}(sigma_{C>10}(R))
+(D) sigma_{C>10}(pi_{A,B,C}(R))
+
+Step-by-step:
+SELECT DISTINCT A, B -> projection pi on A,B. WHERE C > 10 -> selection sigma. Selection first, then projection: pi_{A,B}(sigma_{C>10}(R)). Option (B) is wrong because it projects before selecting, losing column C.
+
+Answer: A
+
+---
+
+### Computer Networks (Q71-Q76)
+
+#### Q71 (GATE 2015) — Classful IP: Class C
+
+In classful IP, how many usable host addresses per Class C network?
+(A) 254  (B) 256  (C) 128  (D) 192
+
+Step-by-step:
+Class C: /24 prefix (24 network bits, 8 host bits). 2^8 = 256 addresses minus 2 (network address + broadcast address) = 254 usable.
+
+Answer: A
+
+---
+
+#### Q72 (GATE 2016) — DNS Transport Protocol
+
+DNS queries use which transport protocol?
+(A) TCP only  (B) UDP only  (C) Both TCP and UDP  (D) Neither
+
+Step-by-step:
+DNS uses UDP port 53 for standard queries (fast, low overhead). TCP port 53 is used for zone transfers and when response exceeds 512 bytes (EDNS0). So both TCP and UDP are used.
+
+Answer: C
+
+---
+
+#### Q73 (GATE 2017) — CSMA/CD Minimum Frame Size
+
+CSMA/CD network: 10 Mbps bandwidth, slot time = 51.2 us. Minimum frame size?
+(A) 64 bytes  (B) 128 bytes  (C) 256 bytes  (D) 512 bytes
+
+Step-by-step:
+Minimum frame = slot time * bandwidth = 51.2 * 10^-6 * 10 * 10^6 = 512 bits = 64 bytes. This ensures the sender detects collision before finishing transmission.
+
+Answer: A
+
+---
+
+#### Q74 (GATE 2018) — HTTP Status Codes
+
+Which HTTP status code indicates "Not Found"?
+(A) 300  (B) 400  (C) 404  (D) 500
+
+Step-by-step:
+- 300: Multiple Choices
+- 400: Bad Request
+- 404: Not Found
+- 500: Internal Server Error
+
+Answer: C
+
+---
+
+#### Q75 (GATE 2019) — Subnetting
+
+Subnet 192.168.1.0/24. How many subnets can be created if each needs at least 30 usable hosts?
+(A) 2  (B) 4  (C) 6  (D) 8
+
+Step-by-step:
+- 30 usable hosts -> need 2^5 - 2 = 30 -> 5 host bits minimum.
+- Prefix length = 32 - 5 = 27 bits. Borrowed from /24: 27 - 24 = 3 bits.
+- Number of subnets = 2^3 = 8.
+
+Answer: D
+
+---
+
+#### Q76 (GATE 2016) — TCP Congestion Control
+
+Which is/are true about TCP congestion control?
+(i) Slow Start doubles congestion window every RTT
+(ii) Congestion Avoidance increases window by 1 MSS per RTT
+(iii) On triple duplicate ACK, threshold = window/2
+
+(A) (i) only  (B) (i) and (ii)  (C) (ii) and (iii)  (D) All three
+
+Step-by-step:
+- (i) True: Slow Start doubles cwnd each RTT (exponential growth).
+- (ii) True: Congestion Avoidance adds 1 MSS per RTT (linear growth).
+- (iii) True: TCP Reno sets ssthresh = cwnd/2 on triple duplicate ACK.
+
+Answer: D
+
+---
+
+### Theory of Computation (Q77-Q81)
+
+#### Q77 (GATE 2015) — Regular Language Identification
+
+Which language is regular?
+(A) {a^n b^n | n >= 0}
+(B) {a^n b^m | n, m >= 0}
+(C) {a^n b^n | n >= 1}
+(D) {a^n b^m c^n | n, m >= 0}
+
+Step-by-step:
+- (A) {a^n b^n}: needs counting -> not regular (CFL).
+- (B) {a^n b^m} = a*b* -> can be represented as regular expression -> regular.
+- (C) Same as A (needs counting).
+- (D) {a^n b^m c^n}: needs two counters -> CSL.
+
+Answer: B
+
+---
+
+#### Q78 (GATE 2016) — Grammar Language
+
+Grammar: S -> aSa | bSb | a | b | epsilon. Language generated?
+(A) All palindromes  (B) All odd-length strings  (C) All strings where w = w^R  (D) Both A and C
+
+Step-by-step:
+- S -> aSa generates matching outer characters. Similarly bSb.
+- Base cases: S -> a | b | epsilon generate odd-length and even-length palindromes.
+- The language is exactly the set of all palindromes over {a,b}, which is {w | w = w^R}.
+- Both (A) and (C) describe this set.
+
+Answer: D
+
+---
+
+#### Q79 (GATE 2017) — Language Classification
+
+L = {a^n b^n | n >= 0}. Which is true?
+(A) Regular  (B) Context-free, not regular  (C) Context-sensitive, not context-free  (D) RE, not context-sensitive
+
+Step-by-step:
+- L requires counting (equal number of a's and b's).
+- A PDA can push a's and pop b's -> L is context-free.
+- Cannot be recognized by a DFA/NFA -> not regular.
+
+Answer: B
+
+---
+
+#### Q80 (GATE 2018) — Minimal DFA States
+
+Minimal DFA states for L = {w in {0,1}* | w contains "00" as substring}:
+
+Step-by-step:
+- q0: start, no 00 seen, last char not 0 (or start).
+- q1: no 00 seen, last char was 0.
+- q2: 00 seen (accepting).
+- Transitions: q0->0->q1, q0->1->q0, q1->0->q2, q1->1->q0, q2->0->q2, q2->1->q2.
+- 3 states are necessary and sufficient.
+
+Answer: 3
+
+---
+
+#### Q81 (GATE 2019) — Decidable Problems
+
+Which problem is decidable?
+(A) Whether a given CFG is ambiguous
+(B) Whether a given CFG generates a regular language
+(C) Whether a given CFL is inherently ambiguous
+(D) Whether a given PDA accepts empty language
+
+Step-by-step:
+- (A) Undecidable: CFG ambiguity is undecidable.
+- (B) Undecidable: checking if a CFG generates a regular language is undecidable.
+- (C) Undecidable: inherent ambiguity of CFL is undecidable.
+- (D) Decidable: emptiness of a PDA (equivalently CFG) is decidable (check if start symbol derives any terminal string).
+
+Answer: D
+
+---
+
+### Compiler Design (Q82-Q86)
+
+#### Q82 (GATE 2015) — Lexical Analysis
+
+Which compiler phase recognizes comments and whitespace?
+(A) Lexical Analysis  (B) Syntax Analysis  (C) Semantic Analysis  (D) Code Generation
+
+Step-by-step:
+The lexical analyzer (scanner) reads source code character by character and groups them into tokens. Comments and whitespace are identified and discarded during lexical analysis.
+
+Answer: A
+
+---
+
+#### Q83 (GATE 2016) — Shift-Reduce Parsing
+
+Number of shift-reduce conflicts in SLR(1) parser for grammar: E -> E + T | T, T -> id
+(A) 0  (B) 1  (C) 2  (D) 3
+
+Step-by-step:
+- The grammar is LR(0) -- no shift-reduce or reduce-reduce conflicts in LR(0) items.
+- SLR(1) uses FOLLOW sets to resolve -- still no conflicts.
+- 0 conflicts.
+
+Answer: A
+
+---
+
+#### Q84 (GATE 2017) — Three-Address Code
+
+Which is NOT a three-address code form?
+(A) x = y op z  (B) x = y  (C) if x goto L  (D) while x do y
+
+Step-by-step:
+Three-address code has at most one operator on the right side. Common forms: assignment (x = y op z), copy (x = y), unconditional goto (goto L), conditional goto (if x goto L). "while x do y" is a structured statement, not a three-address code instruction.
+
+Answer: D
+
+---
+
+#### Q85 (GATE 2018) — Postfix Notation
+
+Expression: a + b * c - d. Postfix notation?
+(A) a b c * + d -  (B) a b c * d - +  (C) a b + c * d -  (D) a b c d * + -
+
+Step-by-step:
+Precedence: * > +, -. Associativity: left to right.
+- b * c -> b c *
+- a + (b c *) -> a b c * +
+- (a b c * +) - d -> a b c * + d -
+
+Answer: A
+
+---
+
+#### Q86 (GATE 2019) — Register Allocation
+
+Which technique is used for register allocation in compilers?
+(A) Graph Coloring  (B) DAG  (C) Symbol Table  (D) Lexical Analyzer
+
+Step-by-step:
+Register allocation uses graph coloring: variables are nodes, edges connect simultaneously live variables. The minimum number of colors needed equals the minimum registers required. Chaitin's algorithm is the classic approach.
+
+Answer: A
+
+---
+
+
+### Digital Logic (Q87-Q90)
+
+#### Q87 (GATE 2015) â€” XOR Using NAND
+
+Minimum number of NAND gates to implement XOR?
+(A) 2  (B) 3  (C) 4  (D) 5
+
+Step-by-step:
+XOR = AB' + A'B. Implementation using NAND: (A NAND (A NAND B)) NAND (B NAND (A NAND B)). This requires 4 NAND gates. Proof: XOR requires at least 4 NAND gates due to fan-out constraints.
+
+Answer: C
+
+---
+
+#### Q88 (GATE 2016) â€” MUX Tree
+
+How many 2:1 multiplexers are needed to implement a 4:1 multiplexer?
+(A) 2  (B) 3  (C) 4  (D) 5
+
+Step-by-step:
+A 4:1 MUX has 4 data inputs and 2 select lines. Build as a tree:
+- Stage 1: two 2:1 MUXes (each takes 2 inputs, uses S0 as select).
+- Stage 2: one 2:1 MUX (takes outputs of stage 1, uses S1 as select).
+- Total: 2 + 1 = 3.
+
+Answer: B
+
+---
+
+#### Q89 (GATE 2017) â€” Ring Counter States
+
+Number of distinguishable states in a 3-bit ring counter:
+(A) 3  (B) 4  (C) 6  (D) 8
+
+Step-by-step:
+A ring counter shifts a single '1' around the register:
+- State 1: 100
+- State 2: 010
+- State 3: 001
+- Returns to 100. Number of states = number of flip-flops = 3.
+
+Answer: A
+
+---
+
+#### Q90 (GATE 2018) â€” Boolean Simplification
+
+(A + B)(A' + C) simplifies to:
+(A) A + BC  (B) AC + AB  (C) A + B'C  (D) AC + A'B
+
+Step-by-step:
+(A + B)(A' + C) = A.A' + A.C + B.A' + B.C
+= 0 + AC + A'B + BC
+= AC + A'B + BC
+Using consensus theorem: XY + X'Z + YZ = XY + X'Z -> AC + A'B + BC = AC + A'B.
+
+Answer: D
+
+---
+
+### Discrete Mathematics (Q91-Q95)
+
+#### Q91 (GATE 2015) â€” Counting: Balls into Boxes
+
+5 distinct balls into 3 distinct boxes. Number of ways?
+(A) 3^5  (B) 5^3  (C) C(5,3)  (D) P(5,3)
+
+Step-by-step:
+Each of the 5 distinct balls has 3 independent choices for which box to go to. By multiplication principle: 3 * 3 * 3 * 3 * 3 = 3^5.
+
+Answer: A
+
+---
+
+#### Q92 (GATE 2016) â€” Equivalence Relation
+
+R = {(x, y) | x - y is divisible by 3} on integers. Which is true?
+(A) Reflexive but not transitive  (B) Symmetric but not reflexive  (C) Equivalence relation  (D) Transitive but not symmetric
+
+Step-by-step:
+- Reflexive? x - x = 0, divisible by 3 -> Yes.
+- Symmetric? If x - y divisible by 3, then y - x = -(x-y) also divisible by 3 -> Yes.
+- Transitive? If x - y = 3a and y - z = 3b, then x - z = 3(a+b) -> Yes.
+- All three properties hold -> equivalence relation. Partitions Z into 3 equivalence classes.
+
+Answer: C
+
+---
+
+#### Q93 (GATE 2017) â€” Complete Graph Edges
+
+Number of edges in a complete graph K7:
+(A) 21  (B) 28  (C) 42  (D) 49
+
+Step-by-step:
+In Kn, each of n vertices connects to all other n-1 vertices. Edges = n(n-1)/2 = 7 * 6 / 2 = 21.
+
+Answer: A
+
+---
+
+#### Q94 (GATE 2018) â€” Planar Graph Check
+
+Simple graph with 10 vertices, 36 edges. Which is true?
+(A) Planar  (B) Non-planar  (C) Eulerian  (D) Hamiltonian
+
+Step-by-step:
+For planar graphs: e <= 3v - 6. With v = 10: e <= 30 - 6 = 24. But we have 36 > 24 edges, so graph is non-planar.
+
+Answer: B
+
+---
+
+#### Q95 (GATE 2019) â€” Probability: Divisibility
+
+Random integer from {1, 2, ..., 100}. Probability divisible by 2 or 3?
+(A) 2/3  (B) 1/2  (C) 67/100  (D) 83/100
+
+Step-by-step:
+- Divisible by 2: floor(100/2) = 50 numbers.
+- Divisible by 3: floor(100/3) = 33 numbers.
+- Divisible by 6 (both): floor(100/6) = 16 numbers.
+- By inclusion-exclusion: 50 + 33 - 16 = 67 numbers.
+- Probability = 67/100.
+
+Answer: C
+
+---
+
+### Linear Algebra (Q96-Q98)
+
+#### Q96 (GATE 2015) â€” Matrix Rank
+
+Rank of [[1, 2], [2, 4]]:
+(A) 0  (B) 1  (C) 2  (D) 3
+
+Step-by-step:
+Row2 = 2 * Row1. The two rows are linearly dependent. Only one linearly independent row (or column). Rank = 1.
+
+Answer: B
+
+---
+
+#### Q97 (GATE 2017) â€” Determinant of Scalar Multiple
+
+A is 3x3 with |A| = 2. What is |2A|?
+(A) 4  (B) 8  (C) 16  (D) 32
+
+Step-by-step:
+For nxn matrix: |kA| = k^n * |A|. Here n = 3, k = 2. |2A| = 2^3 * 2 = 8 * 2 = 16.
+
+Answer: C
+
+---
+
+#### Q98 (GATE 2018) â€” Determinant Product
+
+A and B are 3x3 matrices with |A| = 2 and |B| = 3. What is |AB|?
+(A) 5  (B) 6  (C) 9  (D) 12
+
+Step-by-step:
+|AB| = |A| * |B| = 2 * 3 = 6. Determinant of product = product of determinants.
+
+Answer: B
+
+---
+
+### General Aptitude (Q99-Q100)
+
+#### Q99 (GATE 2015) â€” Speed Conversion
+
+A 150 m long train passes a pole in 15 seconds. Speed in km/h?
+(A) 36  (B) 45  (C) 54  (D) 60
+
+Step-by-step:
+- Speed = distance / time = 150 m / 15 s = 10 m/s.
+- Convert m/s to km/h: multiply by 18/5.
+- 10 * 18/5 = 36 km/h.
+
+Answer: A
+
+---
+
+#### Q100 (GATE 2017) â€” Number Series
+
+Next number in series: 2, 6, 12, 20, 30, ___?
+(A) 36  (B) 40  (C) 42  (D) 48
+
+Step-by-step:
+- Differences: 6-2=4, 12-6=6, 20-12=8, 30-20=10.
+- Pattern: differences increase by 2 each time.
+- Next difference = 12. Next term = 30 + 12 = 42.
+- Also the sequence is n(n+1): 1*2, 2*3, 3*4, 4*5, 5*6, 6*7 = 42.
+
+Answer: C
+
+---
+
+## Subject-Wise Trap Analysis & Final Revision
+
+### Subject-Specific Traps (30 Traps)
+
+#### DS & Algorithms (4 Traps)
+
+**Trap 1: Height vs Depth of a Tree**
+- Wrong: "Height of root is 0" -- depends on convention.
+- Right: Height = number of edges on the longest path from node to leaf. Depth = edges from root to node. GATE typically uses edge-based height. Root height = tree height.
+- Tip: If a question says "levels," clarify whether root is level 0 or level 1.
+
+**Trap 2: Sorting Algorithm Stability**
+- Wrong: Assuming Quick Sort is stable (common mistake).
+- Right: Stable sorts: Merge Sort, Insertion Sort, Bubble Sort. Unstable: Quick Sort, Heap Sort, Selection Sort. Counting Sort is stable (non-comparison).
+- Tip: Stability = equal keys retain original relative order.
+
+**Trap 3: Graph Representation Space**
+- Wrong: Confusing adjacency matrix vs list space complexity.
+- Right: Adjacency Matrix: O(V^2) space. Adjacency List: O(V + E) space. For dense graphs (E ~ V^2), matrix is competitive; for sparse graphs, list is better.
+- Tip: For an undirected graph with V vertices and E edges, adjacency list needs O(V + 2E) = O(V + E) space.
+
+**Trap 4: Recursion -- Neglecting Base Case Cost**
+- Wrong: Analyzing T(n) = 2T(n/2) + O(1) without base case.
+- Right: Master Theorem assumes base case T(1) = O(1). For T(n) = 2T(n/2) + O(1), a=2, b=2, case 1: O(n). Always verify which Master Theorem case applies.
+- Tip: When n <= 1, cost is constant. Don't forget base case when counting total operations.
+
+#### Operating Systems (4 Traps)
+
+**Trap 5: Internal vs External Fragmentation**
+- Wrong: Using terms interchangeably.
+- Right: Internal fragmentation = allocated block larger than requested (waste inside block). Occurs with fixed-size partitions. External fragmentation = free space broken into small non-contiguous chunks (waste between blocks). Occurs with variable-size partitions.
+- Tip: Paging causes internal fragmentation (last page). Segmentation causes external fragmentation.
+
+**Trap 6: Deadlock Avoidance vs Prevention vs Detection**
+- Wrong: Confusing Banker's Algorithm (avoidance) with breaking conditions (prevention).
+- Right: Prevention = break one of 4 conditions (Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait). Avoidance = Banker's Algorithm (safe state check). Detection = wait-for graph cycle detection.
+- Tip: "Which condition is broken by spooling?" -> Mutual Exclusion.
+
+**Trap 7: Page Size vs Page Table Size Trade-off**
+- Wrong: Thinking small pages are always better.
+- Right: Small pages -> less internal fragmentation, more page table entries. Large pages -> more internal fragmentation, fewer PTEs. Large pages -> fewer page faults (spatial locality), but more transfer time per fault.
+- Tip: If asked "optimal page size considering overhead," expect a GATE numerical.
+
+**Trap 8: Disk Scheduling: SCAN vs C-SCAN**
+- Wrong: Thinking C-SCAN is always better.
+- Right: SCAN (elevator): goes in one direction, reverses at end. C-SCAN: goes in one direction, jumps back to start. C-SCAN provides more uniform waiting time; SCAN favors middle tracks. FCFS is worst for seek time.
+- Tip: Track head position step by step for numerical questions.
+
+#### DBMS (4 Traps)
+
+**Trap 9: BCNF vs 3NF Condition**
+- Wrong: Using 3NF condition for BCNF.
+- Right: BCNF: For every non-trivial FD X->Y, X must be a superkey (NO exceptions). 3NF: X is a superkey OR Y is prime. Every BCNF is 3NF, but not vice versa.
+- Tip: "If a relation is in BCNF, it has no redundancy" -- FALSE. MVDs can still cause redundancy (need 4NF).
+
+**Trap 10: Conflict vs View Serializability**
+- Wrong: Assuming conflict serializable = view serializable.
+- Right: Conflict serializable is a subset of View serializable. A schedule can be view serializable without being conflict serializable (e.g., with blind writes).
+- Tip: Check precedence graph for cycles (conflict). Check if blind writes exist (view).
+
+**Trap 11: COUNT(*) vs COUNT(column)**
+- Wrong: Assuming they give the same result.
+- Right: COUNT(*) counts all rows including NULLs. COUNT(column) counts non-NULL values only. COUNT(DISTINCT column) counts unique non-NULL values.
+- Tip: GATE SQL questions often test this distinction.
+
+**Trap 12: Natural Join vs Theta Join**
+- Wrong: Forgetting natural join automatically matches all common columns.
+- Right: Natural join: equi-join on ALL common attributes, removes duplicate columns. Theta join: join on arbitrary condition theta, keeps all columns.
+- Tip: If no common columns, natural join = Cartesian product.
+
+#### Computer Networks (4 Traps)
+
+**Trap 13: CSMA/CD Minimum Frame Size**
+- Wrong: Using propagation delay (tau) instead of 2*tau.
+- Right: Minimum frame size = 2 * tau * B (tau = one-way propagation delay). Transmitter must detect collision before finishing transmission, requiring transmission time >= 2*tau.
+- Tip: If tau = 25 us and B = 10 Mbps: min frame = 2 * 25us * 10Mbps = 500 bits.
+
+**Trap 14: Classful IP Ranges**
+- Wrong: Including 127.0.0.0/8 as usable Class A.
+- Right: Class A: 0.0.0.0 - 127.255.255.255, but 127 is loopback (not usable). Class B: 128.0.0.0 - 191.255.255.255. Class C: 192.0.0.0 - 223.255.255.255. Class D: 224-239 (multicast).
+- Tip: Usable Class A networks = 126 (0 and 127 reserved).
+
+**Trap 15: TCP Sequence Numbers are Byte-Level**
+- Wrong: Thinking sequence numbers count packets.
+- Right: TCP sequence numbers count bytes. If segment carries 1000 bytes at seq 1000, next seq = 2000. Initial Sequence Number (ISN) is random.
+- Tip: SYN consumes one sequence number. Data seq = byte stream offset.
+
+**Trap 16: Stop-and-Wait vs Go-Back-N vs Selective Repeat**
+- Wrong: Forgetting sender window size differences.
+- Right: Stop-and-Wait: window=1. Go-Back-N: sender window=N, receiver window=1. Selective Repeat: both windows=N.
+- Tip: Go-Back-N receiver only accepts in-order packets. Selective Repeat buffers out-of-order packets.
+
+
+#### Theory of Computation (3 Traps)
+
+**Trap 17: Closure Properties of Regular Languages**
+- Wrong: Assuming regular languages are closed under everything.
+- Right: Regular languages are closed under: union, intersection, complement, difference, concatenation, Kleene star, reversal, homomorphism. NOT closed under: subset, superset, infinite union/intersection.
+- Tip: If L is regular and L2 is not, L intersection L2 is NOT necessarily regular.
+
+**Trap 18: {a^n b^n} vs {a^n b^n c^n}**
+- Wrong: Thinking both are context-free.
+- Right: {a^n b^n} requires one stack (PDA) -> CFL. {a^n b^n c^n} requires two stacks -> CSL (not CFL).
+- Tip: Use Pumping Lemma for CFL to prove {a^n b^n c^n} is not context-free.
+
+**Trap 19: Decidability of CFG Problems**
+- Wrong: Assuming CFG ambiguity is decidable.
+- Right: Undecidable: CFG ambiguity, CFG equivalence, CFG generating a regular language, CFL inherent ambiguity. Decidable: emptiness, finiteness, membership (CYK algorithm), PDA emptiness.
+- Tip: GATE 2019 Q81 tested exactly this.
+
+#### Compiler Design (3 Traps)
+
+**Trap 20: FIRST/FOLLOW vs LR Items**
+- Wrong: Using FIRST/FOLLOW for LR parsing.
+- Right: FIRST and FOLLOW are for top-down parsing (LL(1) table construction). LR parsing uses LR(0) items, goto tables, and action tables (shift/reduce). SLR(1) = LR(0) items + FOLLOW sets.
+- Tip: "SLR(1) = LR(0) items + FOLLOW" is a common GATE question.
+
+**Trap 21: Lexical vs Syntax Analysis Output**
+- Wrong: Thinking lexical analysis produces parse trees.
+- Right: Lexical analysis -> tokens (token type + lexeme). Syntax analysis -> parse tree / AST. Semantic analysis -> type-checked AST.
+- Tip: Comments and whitespace are discarded by lexical analyzer, not parser.
+
+**Trap 22: Left Recursion in LL vs LR Parsers**
+- Wrong: Assuming left recursion must always be eliminated.
+- Right: Left recursion must be eliminated for LL parsers (they cannot handle it). LR parsers handle left recursion naturally using bottom-up reduce operations.
+- Tip: "Which parser requires left recursion removal?" -> LL(1).
+
+#### Digital Logic (3 Traps)
+
+**Trap 23: Functional Completeness**
+- Wrong: Thinking only NAND is functionally complete.
+- Right: Both NAND and NOR are functionally complete (any Boolean function using only NAND or only NOR). {AND, OR, NOT} together are functionally complete, but individually they are NOT.
+- Tip: {AND, NOT} and {OR, NOT} are also functionally complete sets.
+
+**Trap 24: Multiplexer Select Line Order**
+- Wrong: Ignoring MSB/LSB of select lines.
+- Right: For 4:1 MUX with inputs I0-I3 and selects S1,S0: I0 when S1S0=00, I1 when 01, I2 when 10, I3 when 11. S1 is MSB.
+- Tip: Implement Boolean functions by connecting variables to select lines.
+
+**Trap 25: Ring vs Johnson Counter States**
+- Wrong: Confusing state counts.
+- Right: Ring counter: n states for n flip-flops (one '1' circulates). Johnson counter (twisted ring): 2n states for n flip-flops (complement of last FF feeds back to first).
+- Tip: If unused states exist, ensure self-starting capability.
+
+#### Discrete Mathematics (3 Traps)
+
+**Trap 26: Pigeonhole Principle Application**
+- Wrong: Using wrong formula.
+- Right: If n items go into m boxes, at least one box has ceiling(n/m) items. If n = m+1, at least one box has 2 items.
+- Tip: "Among any 6 people, either 3 mutual friends or 3 mutual strangers" -> Ramsey number R(3,3) = 6.
+
+**Trap 27: Eulerian vs Hamiltonian Circuits**
+- Wrong: Confusing the two concepts.
+- Right: Eulerian circuit: visits EVERY EDGE exactly once (all vertices must have even degree). Hamiltonian circuit: visits EVERY VERTEX exactly once (no simple necessary/sufficient condition).
+- Tip: For Eulerian: check vertex degrees. For Hamiltonian: no easy check (NP-complete).
+
+**Trap 28: Permutations vs Combinations**
+- Wrong: Using the wrong formula when order matters.
+- Right: Permutations (order matters): P(n,r) = n!/(n-r)!. Combinations (order doesn't matter): C(n,r) = n!/(r!(n-r)!).
+- Tip: "How many ways to arrange 3 books on a shelf from 5" -> P(5,3). "How many ways to choose 3 books from 5" -> C(5,3).
+
+#### Linear Algebra (2 Traps)
+
+**Trap 29: Rank of a Matrix**
+- Wrong: Thinking row rank != column rank.
+- Right: Row rank = Column rank = Rank of matrix. Rank = number of linearly independent rows/columns. Zero matrix has rank 0. Full rank matrix is invertible (square).
+- Tip: Rank-nullity theorem: rank(A) + nullity(A) = number of columns.
+
+**Trap 30: Matrix Multiplication is NOT Commutative**
+- Wrong: Assuming AB = BA.
+- Right: In general, AB != BA. Matrix multiplication is associative (A(BC) = (AB)C) and distributive (A(B+C) = AB + AC), but NOT commutative.
+- Tip: GATE: "If AB = BA, then A and B are said to commute" -- this is a special case, not a general property.
+
+---
+
+### Last 30-Day Revision Calendar
+
+| Day | Focus Area | Activities |
+|:---:|------------|-----------|
+| 1 | DS & Algo 1 | Arrays, Linked Lists, Stacks, Queues, Recursion |
+| 2 | DS & Algo 2 | Trees, Graphs, Sorting, Hashing, Heaps |
+| 3 | OS 1 | Process management, CPU Scheduling, Synchronization |
+| 4 | OS 2 | Memory management, File systems, Deadlocks, Disk |
+| 5 | DBMS | ER diagrams, Normalization, SQL, Transactions, Concurrency |
+| 6 | CN | Layers, Protocols, IP addressing, Routing, TCP/UDP |
+| 7 | TOC + Compiler | Automata, Grammars, Parsing, Compiler phases |
+| 8 | Digital Logic + Discrete Math | Boolean algebra, K-maps, Combinational/Sequential, Graph theory, Combinatorics, Probability |
+| 9 | Linear Algebra + Aptitude | Matrices, Determinants, Eigenvalues, Number series, Speed, Percentages |
+| 10 | Full Mock #1 + Analysis | 3-hour mock, identify weak topics |
+| 11 | DS + OS (hard PYQs) | Solve 10 toughest PYQs from each subject |
+| 12 | DBMS + CN (hard PYQs) | Solve 10 toughest PYQs from each subject |
+| 13 | TOC + Compiler (hard PYQs) | Solve 8 toughest PYQs from each subject |
+| 14 | DL + DM + LA (hard PYQs) | Solve 5 toughest PYQs from each subject |
+| 15 | Full Mock #2 + Analysis | 3-hour mock, track improvement |
+| 16 | Revise DS + OS | Revisit weak areas identified in mocks |
+| 17 | Revise DBMS + CN | Revisit weak areas identified in mocks |
+| 18 | Full Mock #3 + Analysis | 3-hour mock |
+| 19 | Revise TOC + Compiler + DL | Revisit weak areas |
+| 20 | Revise DM + LA + Aptitude | Revisit weak areas, formula memory |
+| 21 | Full Mock #4 + Analysis | 3-hour mock |
+| 22 | Formula revision: DS + OS | Quick-scan all formulas and key results |
+| 23 | Formula revision: DBMS + CN | Quick-scan all formulas and key results |
+| 24 | Full Mock #5 | 3-hour mock |
+| 25 | Formula revision: TOC + Compiler + DL | Quick-scan all formulas and key results |
+| 26 | Formula revision: DM + LA + Aptitude | Quick-scan all formulas |
+| 27 | Trap Notes Review | Read all 30 traps again, note personal weak spots |
+| 28 | Full Mock #6 | 3-hour mock (last full mock) |
+| 29 | Final Revision | Review all mock mistakes, formula sheet, trap notes |
+| 30 | Light Day | Sleep early. No new problems. Positive visualization. |
+
+
+### Exam Hall Strategy
+
+#### Order of Attempting Sections
+
+1. **General Aptitude (15 minutes)** -- Start here. Warm up with easy verbal/numerical questions. These are guaranteed marks if you are careful. Attempt all 10 questions (5 + 5).
+
+2. **Technical Core Subjects (60 minutes)** -- Order by strength:
+   - Start with your STRONGEST subject (get quick confident marks)
+   - End with your WEAKEST subject (skip hard questions here)
+   - Within each subject: attempt MCQs first, then MSQs, then numeric answers
+   - Use the "3-pass" approach (see below)
+
+3. **Final Review (10 minutes)** -- Revisit marked/skipped questions. Make educated guesses on remaining unattempted MCQs. Verify numeric answer entry format.
+
+#### Three-Pass Approach for Technical Section
+
+- **Pass 1 (25 min):** Answer all questions you can solve in under 1 minute. Flag uncertain ones. Mark confidence for each.
+- **Pass 2 (25 min):** Solve flagged medium-difficulty questions. Spend 2-3 min each. If stuck beyond 3 min, skip and move.
+- **Pass 3 (10 min):** Attempt remaining hard questions. Spend up to 4 min each. Use elimination for MCQs.
+
+#### Time Allocation Per Question Type
+
+| Question Type | Marks | Max Time | Strategy |
+|---------------|:-----:|:--------:|----------|
+| Easy MCQ (1-mark) | 1 | 1 min | Answer immediately or skip |
+| Medium MCQ (1-mark) | 1 | 2 min | Attempt in Pass 2 |
+| Hard MCQ (2-mark) | 2 | 3 min | Use elimination, then decide |
+| MSQ (1 or 2-mark) | 1-2 | 2-3 min | Select only CERTAIN options |
+| Numeric Answer | 1-2 | 3-4 min | Always attempt (no negative marking) |
+
+#### Important Exam Day Tips
+
+- Read the question fully before looking at options (avoid anchoring bias)
+- For MSQs: "select all that apply" -- partial marking available, so only mark what you are sure of
+- For numeric answers: double-check unit and decimal precision before submitting
+- Mark only ONE answer for single-correct MCQs (more than one = zero marks)
+- Keep track of time with a mental checkpoint every 30 minutes
+- If feeling stuck, close eyes for 10 seconds and breathe
+
+---
+
+### Negative Marking Optimization
+
+#### When to GUESS
+
+- **MCQ (1-mark):** If you can eliminate 2 of 4 options -> GUESS (expected value positive)
+  - Random guess: 1/4 * 1 - 3/4 * 1/3 = 0.25 - 0.25 = 0 (neutral)
+  - Eliminate 1: 1/3 * 1 - 2/3 * 1/3 = 0.333 - 0.222 = +0.111 (positive)
+  - Eliminate 2: 1/2 * 1 - 1/2 * 1/3 = 0.5 - 0.167 = +0.333 (strongly positive)
+
+- **MCQ (2-mark):** Same logic, scaled. If 2 options eliminated -> GUESS.
+  - Random: 1/4 * 2 - 3/4 * 2/3 = 0.5 - 0.5 = 0 (neutral)
+  - Eliminate 1: 1/3 * 2 - 2/3 * 2/3 = 0.667 - 0.444 = +0.223 (positive)
+  - Eliminate 2: 1/2 * 2 - 1/2 * 2/3 = 1.0 - 0.333 = +0.667 (strongly positive)
+
+- **MSQ:** Select only options you are certain about. Partial marking rewards certainty.
+- **Numeric Answer:** ALWAYS attempt. No negative marking. Even a wild guess costs nothing.
+
+#### When to SKIP
+
+| Condition | Action |
+|-----------|--------|
+| Cannot eliminate any MCQ option | SKIP |
+| Taking more than 3 minutes | SKIP (mark for review) |
+| Cannot understand what the question asks | SKIP |
+| Question has 3+ conditions to track | SKIP, attempt only if time permits |
+| MSQ: you are unsure about ALL options | SKIP |
+| Feeling mentally fatigued | Breathe, then SKIP hard questions |
+
+#### Expected Value Calculation Reference
+
+Let p = probability of correct, V = marks for correct, P = penalty for wrong.
+
+- 1-mark MCQ: V = 1, P = 1/3. Expected value = p*1 - (1-p)*(1/3) = (4p-1)/3
+  - Break-even p = 0.25 (random). Above 0.25 -> positive expectation.
+- 2-mark MCQ: V = 2, P = 2/3. Expected value = p*2 - (1-p)*(2/3) = 2(4p-1)/3
+  - Break-even p = 0.25 (same ratio).
+
+#### Guessing Strategy Summary
+
+| Options Eliminated | 1-mark MCQ | 2-mark MCQ | Action |
+|:------------------:|:----------:|:----------:|--------|
+| 0 | 0.00 | 0.00 | SKIP |
+| 1 | +0.11 | +0.22 | GUESS |
+| 2 | +0.33 | +0.67 | GUESS (strong) |
+| 3 (only 1 left) | +1.00 | +2.00 | ANSWER |
+
+---
+
+### Quick Formula Reference Sheet
+
+#### Data Structures & Algorithms
+
+- Stack: LIFO. Queue: FIFO. Priority Queue: based on priority value.
+- BST search/insert/delete: O(h) average, O(n) worst.
+- Heapify: O(n). Build heap: O(n). Extract min: O(log n).
+- Sorting complexities: Merge O(n log n) stable, Quick O(n^2) worst / O(n log n) avg unstable, Heap O(n log n) unstable, Insertion O(n^2) stable, Counting O(n+k) stable.
+- Graph traversals: BFS O(V+E), DFS O(V+E).
+- MST: Prim O(E log V), Kruskal O(E log E).
+- Shortest paths: Dijkstra O(V log V + E) no negative edges, Bellman-Ford O(VE) handles negative.
+- Hashing: Load factor = n/m. Chaining vs open addressing.
+
+#### Operating Systems
+
+- Banker's: Need = Max - Allocation. Safe if some sequence finishes.
+- Deadlock: 4 conditions (Mutual Exclusion, Hold & Wait, No Preemption, Circular Wait).
+- Page fault rate: Effective Access Time = (1-p)*MA + p*PFT.
+- Page size: Internal fragmentation = (page_size/2) average per process.
+- TLB: EAT = (TLB_hit * TLB_access + TLB_miss * (TLB_access + MA)) + MA.
+- Disk: Avg seek = total head movement / (#requests - 1), calculated stepwise.
+- Scheduling: SJF minimizes avg wait time. Round Robin: time quantum matters. Response time = time from arrival to first CPU.
+
+#### DBMS
+
+- ACID: Atomicity, Consistency, Isolation, Durability.
+- Normal forms: 1NF (atomic), 2NF (no partial dependency), 3NF (no transitive dep on non-key), BCNF (every determinant is superkey).
+- Candidate key: minimal attribute set determining all attributes.
+- Conflict serializable: no cycle in precedence graph.
+- View serializable: superset of conflict serializable (allows blind writes).
+- B+ tree order p: max p pointers in internal node, max p leaf keys.
+- Join cost: nested loop O(n*m), hash join O(n+m) if hash fits in memory.
+
+#### Computer Networks
+
+- IP addressing: CIDR notation /n means n network bits.
+- Subnet mask: AND with IP to get network address.
+- CSMA/CD min frame = 2 * tau * B.
+- CRC: remainder after polynomial division.
+- TCP: Slow Start (exponential), Congestion Avoidance (linear). On loss: Reno halves, Tahoe resets to 1.
+- Stop-and-Wait utilization = 1/(1+2a) where a = tau / (transmission time).
+- Hamming distance: minimum bit flips between valid codewords. d errors detected: code distance >= d+1.
+
+#### TOC & Compiler
+
+- DFA/NFA: regular languages. PDA: CFL. LBA: CSL. TM: RE.
+- RL closure: closed under union, intersection, complement, concat, Kleene star, reversal.
+- Pumping Lemma for RL: if w = xyz, then xy^i z in L for all i >= 0.
+- Pumping Lemma for CFL: if w = uvxyz, then uv^i xy^i z in L for all i >= 0.
+- LL(1): FIRST and FOLLOW sets. No left recursion. No ambiguity.
+- LR(0) < SLR(1) < CLR(1) = LR(1) < LALR(1).
+- Three-address code: x = y op z. No nested expressions.
+- Symbol table: stores identifiers, types, scope info.
+
+#### Digital Logic
+
+- Boolean laws: A + A' = 1, A.A' = 0, A + AB = A, A(A+B) = A.
+- De Morgan: (A+B)' = A'B', (AB)' = A' + B'.
+- K-map: group 1s in powers of 2 (1,2,4,8...). Larger group = simpler expression.
+- MUX: n select lines -> 2^n inputs. Demux: n select -> 2^n outputs.
+- Flip-flops: SR, JK, D, T. JK = 11 toggles.
+- Counter: ripple (asynchronous) vs synchronous.
+- Ring: n states. Johnson: 2n states.
+
+#### Discrete Mathematics
+
+- n(A union B) = n(A) + n(B) - n(A intersect B)
+- P(n,r) = n!/(n-r)!. C(n,r) = n!/(r!(n-r)!)
+- Graph degree sum = 2*edges. Planar: e <= 3v-6.
+- Eulerian circuit: all even degrees. Eulerian trail: exactly 2 odd degree vertices.
+- n^(th) term of AP: a + (n-1)d. GP: ar^(n-1).
+- Probability: P(A|B) = P(A intersect B)/P(B). Conditional probability.
+- Bayes' Theorem: P(A|B) = P(B|A)P(A)/P(B).
+
+#### Linear Algebra
+
+- Matrix multiplication: (m x n) * (n x p) = (m x p). NOT commutative.
+- Determinant: |A| for nxn. |AB| = |A||B|. |A^T| = |A|. |kA| = k^n|A|.
+- Rank: number of linearly independent rows/columns. For invertible nxn: rank=n.
+- Eigenvalues: |A - lambda I| = 0. Trace = sum of eigenvalues. det = product.
+- Cayley-Hamilton: every matrix satisfies its own characteristic equation.
+
+---
+
+*End of Additional PYQs (Q51-Q100) and Subject-Wise Trap Analysis sections.*
+
+

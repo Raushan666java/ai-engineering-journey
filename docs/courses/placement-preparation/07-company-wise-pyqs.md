@@ -21,6 +21,10 @@
    - [Infosys InfyTQ](#infosys-infytq)
    - [Wipro NLTH / Turbo](#wipro-nlth--turbo)
    - [Accenture](#accenture)
+4. [New-Age Tech / Fintech / Product Companies](#4-new-age-tech--fintech--product-companies)
+   - [Netflix](#netflix)
+   - [Adobe](#adobe)
+   - [Goldman Sachs](#goldman-sachs)
 
 ---
 
@@ -475,6 +479,258 @@ public class WordLadder {
 ```
 **Time:** O(M^2 * N) where M is word length, N is wordList size | **Space:** O(M * N)
 
+### Problem 11: Two Sum II — Input Array is Sorted (Amazon, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a 1-indexed array of integers sorted in non-decreasing order, find two numbers that add up to a specific target. Return the indices as a 1-indexed array.
+
+```java
+public class TwoSumSorted {
+    public static int[] twoSum(int[] numbers, int target) {
+        int left = 0, right = numbers.length - 1;
+        while (left < right) {
+            int sum = numbers[left] + numbers[right];
+            if (sum == target) {
+                return new int[]{left + 1, right + 1};
+            } else if (sum < target) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+        return new int[]{-1, -1};
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {2, 7, 11, 15};
+        int target = 9;
+        int[] result = twoSum(numbers, target);
+        System.out.println("Indices: [" + result[0] + ", " + result[1] + "]");
+        // Output: [1, 2]
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+### Problem 12: Sliding Window Maximum — Variation (Amazon, 2024)
+**Difficulty:** Hard
+
+**Problem Statement:** Given an array of integers and a sliding window of size k, return an array of the maximum element for each window position. Additionally, return the minimum of these maximum values across all windows.
+
+```java
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.Arrays;
+
+public class SlidingWindowMaxVariation {
+    public static int[] maxSlidingWindow(int[] nums, int k) {
+        if (nums == null || nums.length == 0) return new int[0];
+        int n = nums.length;
+        int[] result = new int[n - k + 1];
+        Deque<Integer> deque = new ArrayDeque<>();
+        int ri = 0;
+        for (int i = 0; i < n; i++) {
+            while (!deque.isEmpty() && deque.peekFirst() < i - k + 1) {
+                deque.pollFirst();
+            }
+            while (!deque.isEmpty() && nums[deque.peekLast()] < nums[i]) {
+                deque.pollLast();
+            }
+            deque.offerLast(i);
+            if (i >= k - 1) {
+                result[ri++] = nums[deque.peekFirst()];
+            }
+        }
+        return result;
+    }
+
+    public static int minOfMaxSlidingWindow(int[] nums, int k) {
+        int[] maxes = maxSlidingWindow(nums, k);
+        int min = Integer.MAX_VALUE;
+        for (int m : maxes) min = Math.min(min, m);
+        return min;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 3, -1, -3, 5, 3, 6, 7};
+        int k = 3;
+        int[] maxes = maxSlidingWindow(nums, k);
+        System.out.println("Max per window: " + Arrays.toString(maxes));
+        // Output: [3, 3, 5, 5, 6, 7]
+        System.out.println("Min of maxes: " + minOfMaxSlidingWindow(nums, k));
+        // Output: 3
+    }
+}
+```
+**Time:** O(n) | **Space:** O(k)
+
+---
+
+### Problem 13: Merge K Sorted Lists (Amazon, 2024)
+**Difficulty:** Hard
+
+**Problem Statement:** Given an array of k sorted linked lists, merge them into one sorted list and return it.
+
+```java
+import java.util.PriorityQueue;
+
+public class MergeKSortedLists {
+    public static ListNode mergeKLists(ListNode[] lists) {
+        if (lists == null || lists.length == 0) return null;
+        PriorityQueue<ListNode> pq = new PriorityQueue<>((a, b) -> a.val - b.val);
+        for (ListNode list : lists) {
+            if (list != null) pq.offer(list);
+        }
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        while (!pq.isEmpty()) {
+            ListNode node = pq.poll();
+            curr.next = node;
+            curr = curr.next;
+            if (node.next != null) pq.offer(node.next);
+        }
+        return dummy.next;
+    }
+
+    public static void main(String[] args) {
+        ListNode l1 = new ListNode(1, new ListNode(4, new ListNode(5)));
+        ListNode l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+        ListNode l3 = new ListNode(2, new ListNode(6));
+        ListNode[] lists = {l1, l2, l3};
+        ListNode result = mergeKLists(lists);
+        System.out.print("Merged: ");
+        while (result != null) {
+            System.out.print(result.val + " ");
+            result = result.next;
+        }
+        // Output: 1 1 2 3 4 4 5 6
+    }
+}
+```
+**Time:** O(N log k) where N is total nodes | **Space:** O(k)
+
+---
+
+### Problem 14: Word Break II (Amazon, 2023)
+**Difficulty:** Hard
+
+**Problem Statement:** Given a string s and a dictionary of words wordDict, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all possible sentences.
+
+```java
+import java.util.*;
+
+public class WordBreakII {
+    public static List<String> wordBreak(String s, List<String> wordDict) {
+        Set<String> dict = new HashSet<>(wordDict);
+        Map<Integer, List<String>> memo = new HashMap<>();
+        return backtrack(s, 0, dict, memo);
+    }
+
+    private static List<String> backtrack(String s, int start, Set<String> dict,
+                                           Map<Integer, List<String>> memo) {
+        if (memo.containsKey(start)) return memo.get(start);
+        List<String> result = new ArrayList<>();
+        if (start == s.length()) {
+            result.add("");
+            return result;
+        }
+        for (int end = start + 1; end <= s.length(); end++) {
+            String word = s.substring(start, end);
+            if (dict.contains(word)) {
+                List<String> subSentences = backtrack(s, end, dict, memo);
+                for (String sub : subSentences) {
+                    result.add(word + (sub.isEmpty() ? "" : " " + sub));
+                }
+            }
+        }
+        memo.put(start, result);
+        return result;
+    }
+
+    public static void main(String[] args) {
+        String s = "catsanddog";
+        List<String> dict = Arrays.asList("cat", "cats", "and", "sand", "dog");
+        System.out.println("Sentences: " + wordBreak(s, dict));
+        // Output: [cat sand dog, cats and dog]
+    }
+}
+```
+**Time:** O(2^n) worst-case | **Space:** O(n * 2^n)
+
+---
+
+### Problem 15: Serialize and Deserialize N-ary Tree (Amazon, 2023)
+**Difficulty:** Hard
+
+**Problem Statement:** Design an algorithm to serialize an N-ary tree into a string and deserialize the string back into the original tree structure.
+
+```java
+import java.util.*;
+
+class NaryNode {
+    int val;
+    List<NaryNode> children;
+    NaryNode(int val) { this.val = val; children = new ArrayList<>(); }
+}
+
+class NaryCodec {
+    private static final String SEP = ",";
+    private static final String NULL = "null";
+
+    public String serialize(NaryNode root) {
+        if (root == null) return NULL;
+        StringBuilder sb = new StringBuilder();
+        serializeHelper(root, sb);
+        return sb.toString();
+    }
+
+    private void serializeHelper(NaryNode node, StringBuilder sb) {
+        sb.append(node.val).append(SEP);
+        sb.append(node.children.size()).append(SEP);
+        for (NaryNode child : node.children) {
+            serializeHelper(child, sb);
+        }
+    }
+
+    public NaryNode deserialize(String data) {
+        if (data.equals(NULL)) return null;
+        Queue<String> queue = new LinkedList<>(Arrays.asList(data.split(SEP)));
+        return deserializeHelper(queue);
+    }
+
+    private NaryNode deserializeHelper(Queue<String> queue) {
+        int val = Integer.parseInt(queue.poll());
+        int childrenCount = Integer.parseInt(queue.poll());
+        NaryNode node = new NaryNode(val);
+        for (int i = 0; i < childrenCount; i++) {
+            node.children.add(deserializeHelper(queue));
+        }
+        return node;
+    }
+}
+
+public class NaryCodecDemo {
+    public static void main(String[] args) {
+        NaryNode root = new NaryNode(1);
+        root.children.add(new NaryNode(3));
+        root.children.add(new NaryNode(2));
+        root.children.add(new NaryNode(4));
+        root.children.get(0).children.add(new NaryNode(5));
+        root.children.get(0).children.add(new NaryNode(6));
+
+        NaryCodec codec = new NaryCodec();
+        String serialized = codec.serialize(root);
+        System.out.println("Serialized: " + serialized);
+        NaryNode deserialized = codec.deserialize(serialized);
+        System.out.println("Deserialized root val: " + deserialized.val);
+        // Output: 1
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
+
 ---
 
 ### Amazon Leadership Principles — Behavioral Questions
@@ -861,6 +1117,210 @@ public class MedianFinderDemo {
 
 ---
 
+### Problem 9: Text Justification (Google, 2024)
+**Difficulty:** Hard
+
+**Problem Statement:** Given an array of words and a width maxWidth, format the text such that each line has exactly maxWidth characters, fully justified (left and right). Pack as many words as possible per line, distribute extra spaces evenly.
+
+```java
+import java.util.*;
+
+public class TextJustification {
+    public static List<String> fullJustify(String[] words, int maxWidth) {
+        List<String> result = new ArrayList<>();
+        int index = 0;
+        while (index < words.length) {
+            int count = words[index].length();
+            int last = index + 1;
+            while (last < words.length && count + 1 + words[last].length() <= maxWidth) {
+                count += 1 + words[last].length();
+                last++;
+            }
+            StringBuilder sb = new StringBuilder();
+            int gaps = last - index - 1;
+            if (last == words.length || gaps == 0) {
+                for (int i = index; i < last; i++) {
+                    sb.append(words[i]);
+                    if (i < last - 1) sb.append(" ");
+                }
+                while (sb.length() < maxWidth) sb.append(" ");
+            } else {
+                int spaces = (maxWidth - count) / gaps;
+                int extra = (maxWidth - count) % gaps;
+                for (int i = index; i < last; i++) {
+                    sb.append(words[i]);
+                    if (i < last - 1) {
+                        for (int s = 0; s <= spaces + (i - index < extra ? 1 : 0); s++) {
+                            sb.append(" ");
+                        }
+                    }
+                }
+            }
+            result.add(sb.toString());
+            index = last;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        String[] words = {"This", "is", "an", "example", "of", "text", "justification."};
+        int maxWidth = 16;
+        List<String> justified = fullJustify(words, maxWidth);
+        for (String line : justified) {
+            System.out.println("\"" + line + "\"");
+        }
+        // Output:
+        // "This    is    an"
+        // "example  of text"
+        // "justification.  "
+    }
+}
+```
+**Time:** O(n * L) where L is max line length | **Space:** O(n)
+
+---
+
+### Problem 10: Count of Smaller Numbers After Self (Google, 2024)
+**Difficulty:** Hard
+
+**Problem Statement:** Given an integer array nums, return an integer array counts where counts[i] is the number of smaller elements to the right of nums[i].
+
+```java
+import java.util.*;
+
+public class CountSmallerAfterSelf {
+    public static List<Integer> countSmaller(int[] nums) {
+        int n = nums.length;
+        Integer[] result = new Integer[n];
+        List<Integer> sorted = new ArrayList<>();
+        for (int i = n - 1; i >= 0; i--) {
+            int pos = findInsertPos(sorted, nums[i]);
+            result[i] = pos;
+            sorted.add(pos, nums[i]);
+        }
+        return Arrays.asList(result);
+    }
+
+    private static int findInsertPos(List<Integer> sorted, int target) {
+        int left = 0, right = sorted.size();
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (sorted.get(mid) < target) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {5, 2, 6, 1};
+        System.out.println("Counts: " + countSmaller(nums));
+        // Output: [2, 1, 1, 0]
+    }
+}
+```
+**Time:** O(n^2) worst-case with list insertion | **Space:** O(n)
+
+---
+
+### Problem 11: My Calendar I (Google, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Implement a MyCalendar class to store events as [start, end). If adding an event causes double booking, reject it. A double booking occurs when two events overlap.
+
+```java
+import java.util.TreeMap;
+
+class MyCalendar {
+    private final TreeMap<Integer, Integer> calendar;
+
+    public MyCalendar() {
+        calendar = new TreeMap<>();
+    }
+
+    public boolean book(int start, int end) {
+        Integer prev = calendar.floorKey(start);
+        Integer next = calendar.ceilingKey(start);
+        if ((prev == null || calendar.get(prev) <= start) &&
+            (next == null || next >= end)) {
+            calendar.put(start, end);
+            return true;
+        }
+        return false;
+    }
+}
+
+public class MyCalendarDemo {
+    public static void main(String[] args) {
+        MyCalendar cal = new MyCalendar();
+        System.out.println("Book 10-20: " + cal.book(10, 20)); // true
+        System.out.println("Book 15-25: " + cal.book(15, 25)); // false
+        System.out.println("Book 20-30: " + cal.book(20, 30)); // true
+    }
+}
+```
+**Time:** O(log n) per booking | **Space:** O(n)
+
+---
+
+### Problem 12: Random Pick with Weight (Google, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an array of positive integers w where w[i] describes the weight of index i, implement a function that randomly picks an index proportional to its weight. Return the index.
+
+```java
+import java.util.Random;
+
+class RandomPickWeight {
+    private final int[] prefixSums;
+    private final int total;
+    private final Random rand;
+
+    public RandomPickWeight(int[] w) {
+        prefixSums = new int[w.length];
+        int sum = 0;
+        for (int i = 0; i < w.length; i++) {
+            sum += w[i];
+            prefixSums[i] = sum;
+        }
+        total = sum;
+        rand = new Random();
+    }
+
+    public int pickIndex() {
+        int target = rand.nextInt(total) + 1;
+        int left = 0, right = prefixSums.length - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (prefixSums[mid] < target) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
+    }
+}
+
+public class GoogleRandomPickDemo {
+    public static void main(String[] args) {
+        int[] w = {1, 3, 2};
+        RandomPickWeight rpw = new RandomPickWeight(w);
+        int[] counts = new int[3];
+        for (int i = 0; i < 10000; i++) {
+            counts[rpw.pickIndex()]++;
+        }
+        System.out.println("Counts (should be ~1667, 5000, 3333): " +
+            counts[0] + ", " + counts[1] + ", " + counts[2]);
+    }
+}
+```
+**Time:** O(n) init, O(log n) pick | **Space:** O(n)
+
+---
+
 ### Googleyness — Behavioral Questions
 
 #### Q1: Tell me about a time you had to lead a team without formal authority.
@@ -1150,6 +1610,146 @@ public class AlienDictionary {
 }
 ```
 **Time:** O(C) where C is total characters | **Space:** O(1) since alphabet fixed at 26
+
+---
+
+### Problem 7: Reverse Words in a String (Microsoft, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an input string s, reverse the order of words. A word is defined as a sequence of non-space characters. Return a string of the words in reverse order.
+
+```java
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class ReverseWords {
+    public static String reverseWords(String s) {
+        s = s.trim();
+        List<String> words = Arrays.asList(s.split("\\s+"));
+        Collections.reverse(words);
+        return String.join(" ", words);
+    }
+
+    public static void main(String[] args) {
+        String s = "  the sky is   blue  ";
+        System.out.println("Reversed: '" + reverseWords(s) + "'");
+        // Output: "blue is sky the"
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
+
+---
+
+### Problem 8: Remove Duplicates from Sorted Array II (Microsoft, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a sorted array nums, remove duplicates in-place such that each element appears at most twice. Return the new length.
+
+```java
+import java.util.Arrays;
+
+public class RemoveDuplicatesII {
+    public static int removeDuplicates(int[] nums) {
+        if (nums.length <= 2) return nums.length;
+        int k = 2;
+        for (int i = 2; i < nums.length; i++) {
+            if (nums[i] != nums[k - 2]) {
+                nums[k++] = nums[i];
+            }
+        }
+        return k;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 1, 1, 2, 2, 3};
+        int len = removeDuplicates(nums);
+        System.out.println("Length: " + len);
+        System.out.println("Array: " + Arrays.toString(Arrays.copyOf(nums, len)));
+        // Output: Length: 5, Array: [1, 1, 2, 2, 3]
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+### Problem 9: Find All Duplicates in an Array (Microsoft, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an integer array where 1 <= nums[i] <= n (n is array size), some elements appear twice and others once. Find all elements that appear twice without using extra space.
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class FindAllDuplicates {
+    public static List<Integer> findDuplicates(int[] nums) {
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            int index = Math.abs(nums[i]) - 1;
+            if (nums[index] < 0) {
+                result.add(Math.abs(nums[i]));
+            } else {
+                nums[index] = -nums[index];
+            }
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
+        System.out.println("Duplicates: " + findDuplicates(nums));
+        // Output: [2, 3]
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1) excluding output
+
+---
+
+### Problem 10: Basic Calculator II (Microsoft, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a string expression representing a mathematical expression containing non-negative integers and +, -, *, / operators, evaluate it and return the result. Integer division truncates toward zero.
+
+```java
+import java.util.Stack;
+
+public class BasicCalculatorII {
+    public static int calculate(String s) {
+        if (s == null || s.isEmpty()) return 0;
+        Stack<Integer> stack = new Stack<>();
+        int num = 0;
+        char sign = '+';
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (Character.isDigit(c)) {
+                num = num * 10 + (c - '0');
+            }
+            if ((!Character.isDigit(c) && c != ' ') || i == s.length() - 1) {
+                if (sign == '+') stack.push(num);
+                else if (sign == '-') stack.push(-num);
+                else if (sign == '*') stack.push(stack.pop() * num);
+                else if (sign == '/') stack.push(stack.pop() / num);
+                sign = c;
+                num = 0;
+            }
+        }
+        int result = 0;
+        for (int val : stack) result += val;
+        return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("3+2*2 = " + calculate("3+2*2"));   // 7
+        System.out.println(" 3/2  = " + calculate(" 3/2 "));   // 1
+        System.out.println("3+5/2 = " + calculate("3+5/2"));   // 5
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
 
 ---
 
@@ -1473,6 +2073,179 @@ public class RandomPickDemo {
 
 ---
 
+### Problem 7: Range Sum Query — Immutable (Meta, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given an integer array nums, implement a class that supports sumRange(left, right) which returns the sum of elements from index left to right inclusive. Optimize for frequent sum queries.
+
+```java
+import java.util.Arrays;
+
+class NumArray {
+    private final int[] prefix;
+
+    public NumArray(int[] nums) {
+        prefix = new int[nums.length + 1];
+        for (int i = 0; i < nums.length; i++) {
+            prefix[i + 1] = prefix[i] + nums[i];
+        }
+    }
+
+    public int sumRange(int left, int right) {
+        return prefix[right + 1] - prefix[left];
+    }
+}
+
+public class RangeSumDemo {
+    public static void main(String[] args) {
+        NumArray na = new NumArray(new int[]{-2, 0, 3, -5, 2, -1});
+        System.out.println("Sum [0,2]: " + na.sumRange(0, 2)); // 1
+        System.out.println("Sum [2,5]: " + na.sumRange(2, 5)); // -1
+        System.out.println("Sum [0,5]: " + na.sumRange(0, 5)); // -3
+    }
+}
+```
+**Time:** O(n) init, O(1) query | **Space:** O(n)
+
+---
+
+### Problem 8: Continuous Subarray Sum (Meta, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an integer array nums and an integer k, return true if nums has a good subarray (size at least 2) whose sum is a multiple of k.
+
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+public class ContinuousSubarraySum {
+    public static boolean checkSubarraySum(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+            int rem = sum % k;
+            if (rem < 0) rem += k;
+            if (map.containsKey(rem)) {
+                if (i - map.get(rem) >= 2) return true;
+            } else {
+                map.put(rem, i);
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int[] nums1 = {23, 2, 4, 6, 7};
+        int[] nums2 = {23, 2, 6, 4, 7};
+        System.out.println("Has subarray (k=6): " + checkSubarraySum(nums1, 6)); // true
+        System.out.println("Has subarray (k=13): " + checkSubarraySum(nums2, 13)); // false
+    }
+}
+```
+**Time:** O(n) | **Space:** O(min(n, k))
+
+---
+
+### Problem 9: Random Pick Index (Meta, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an integer array nums with possible duplicates, implement a function that randomly returns an index of a given target value. Each index should have equal probability.
+
+```java
+import java.util.Random;
+
+class RandomPickIndex {
+    private final int[] nums;
+    private final Random rand;
+
+    public RandomPickIndex(int[] nums) {
+        this.nums = nums;
+        this.rand = new Random();
+    }
+
+    public int pick(int target) {
+        int count = 0;
+        int result = -1;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == target) {
+                count++;
+                if (rand.nextInt(count) == 0) {
+                    result = i;
+                }
+            }
+        }
+        return result;
+    }
+}
+
+public class RandomPickIndexDemo {
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 3, 3};
+        RandomPickIndex rpi = new RandomPickIndex(nums);
+        int[] counts = new int[nums.length];
+        for (int i = 0; i < 10000; i++) {
+            counts[rpi.pick(3)]++;
+        }
+        System.out.println("Counts for index 2,3,4 (should be ~3333 each): " +
+            counts[2] + ", " + counts[3] + ", " + counts[4]);
+    }
+}
+```
+**Time:** O(n) per pick | **Space:** O(1)
+
+---
+
+### Problem 10: Binary Tree Vertical Order Traversal (Meta, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given the root of a binary tree, return the vertical order traversal of its nodes' values. For each column index, collect nodes from top to bottom, left to right.
+
+```java
+import java.util.*;
+
+public class VerticalOrderTraversal {
+    public static List<List<Integer>> verticalOrder(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        if (root == null) return result;
+        Map<Integer, List<Integer>> map = new TreeMap<>();
+        Queue<TreeNode> nodeQueue = new LinkedList<>();
+        Queue<Integer> colQueue = new LinkedList<>();
+        nodeQueue.offer(root);
+        colQueue.offer(0);
+        while (!nodeQueue.isEmpty()) {
+            TreeNode node = nodeQueue.poll();
+            int col = colQueue.poll();
+            map.computeIfAbsent(col, k -> new ArrayList<>()).add(node.val);
+            if (node.left != null) {
+                nodeQueue.offer(node.left);
+                colQueue.offer(col - 1);
+            }
+            if (node.right != null) {
+                nodeQueue.offer(node.right);
+                colQueue.offer(col + 1);
+            }
+        }
+        result.addAll(map.values());
+        return result;
+    }
+
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        System.out.println("Vertical order: " + verticalOrder(root));
+        // Output: [[9], [3, 15], [20], [7]]
+    }
+}
+```
+**Time:** O(n log n) due to TreeMap | **Space:** O(n)
+
+---
+
 ### Meta Behavioral Questions
 
 #### Q1: Tell me about a time you moved fast and broke things. How did you handle it?
@@ -1644,6 +2417,111 @@ public class RatInMaze {
 }
 ```
 **Time:** O(2^(n)) | **Space:** O(n) for recursion
+
+---
+
+### Problem 5: Longest Common Subsequence (Flipkart, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given two strings text1 and text2, return the length of their longest common subsequence. A subsequence is a sequence that appears in the same relative order but not necessarily contiguous.
+
+```java
+public class LongestCommonSubsequence {
+    public static int lcs(String text1, String text2) {
+        int m = text1.length(), n = text2.length();
+        int[][] dp = new int[m + 1][n + 1];
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                if (text1.charAt(i - 1) == text2.charAt(j - 1)) {
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+        return dp[m][n];
+    }
+
+    public static void main(String[] args) {
+        System.out.println("LCS of abcde and ace: " + lcs("abcde", "ace")); // 3
+        System.out.println("LCS of abc and abc: " + lcs("abc", "abc"));     // 3
+        System.out.println("LCS of abc and def: " + lcs("abc", "def"));     // 0
+    }
+}
+```
+**Time:** O(m * n) | **Space:** O(m * n)
+
+---
+
+### Problem 6: Find the Celebrity (Flipkart, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** In a party of n people, a celebrity is someone known by everyone but knows no one. Given a matrix knows[a][b] = true if a knows b, find the celebrity. Return -1 if none exists.
+
+```java
+public class FindCelebrity {
+    public static int findCelebrity(int[][] knows) {
+        int n = knows.length;
+        int candidate = 0;
+        for (int i = 1; i < n; i++) {
+            if (knows[candidate][i]) candidate = i;
+        }
+        for (int i = 0; i < n; i++) {
+            if (i != candidate && (knows[candidate][i] || !knows[i][candidate])) {
+                return -1;
+            }
+        }
+        return candidate;
+    }
+
+    public static void main(String[] args) {
+        int[][] knows = {
+            {0, 1, 1, 0},
+            {0, 0, 1, 0},
+            {1, 1, 0, 0},
+            {0, 1, 1, 0}
+        };
+        System.out.println("Celebrity: " + findCelebrity(knows));
+        // Output: 1 (person 1 knows no one, everyone knows person 1)
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+### Problem 7: Stock Span Problem (Flipkart, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an array of stock prices, calculate the span for each day. Span is the maximum number of consecutive days (ending today) where price was <= current price.
+
+```java
+import java.util.Arrays;
+import java.util.Stack;
+
+public class StockSpan {
+    public static int[] calculateSpan(int[] prices) {
+        int n = prices.length;
+        int[] span = new int[n];
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < n; i++) {
+            while (!stack.isEmpty() && prices[stack.peek()] <= prices[i]) {
+                stack.pop();
+            }
+            span[i] = stack.isEmpty() ? i + 1 : i - stack.peek();
+            stack.push(i);
+        }
+        return span;
+    }
+
+    public static void main(String[] args) {
+        int[] prices = {100, 80, 60, 70, 60, 75, 85};
+        System.out.println("Spans: " + Arrays.toString(calculateSpan(prices)));
+        // Output: [1, 1, 1, 2, 1, 4, 6]
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
 
 ---
 
@@ -1863,6 +2741,130 @@ public class BusRoutes {
 
 ---
 
+### Problem 5: Letter Combinations of a Phone Number (Uber, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+
+```java
+import java.util.*;
+
+public class LetterCombinations {
+    private static final String[] KEYPAD = {
+        "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
+    };
+
+    public static List<String> letterCombinations(String digits) {
+        List<String> result = new ArrayList<>();
+        if (digits == null || digits.isEmpty()) return result;
+        backtrack(result, new StringBuilder(), digits, 0);
+        return result;
+    }
+
+    private static void backtrack(List<String> result, StringBuilder sb, String digits, int index) {
+        if (index == digits.length()) {
+            result.add(sb.toString());
+            return;
+        }
+        String letters = KEYPAD[digits.charAt(index) - '0'];
+        for (char c : letters.toCharArray()) {
+            sb.append(c);
+            backtrack(result, sb, digits, index + 1);
+            sb.deleteCharAt(sb.length() - 1);
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Combinations for '23': " + letterCombinations("23"));
+        // Output: [ad, ae, af, bd, be, bf, cd, ce, cf]
+        System.out.println("Combinations for '': " + letterCombinations(""));
+        // Output: []
+    }
+}
+```
+**Time:** O(4^n) where n is digit count | **Space:** O(n)
+
+---
+
+### Problem 6: Design Hit Counter (Uber, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Design a hit counter that counts hits in the last 5 minutes. Support hit(timestamp) and getHits(timestamp). Timestamps are in increasing order.
+
+```java
+import java.util.LinkedList;
+import java.util.Queue;
+
+class HitCounter {
+    private final Queue<Integer> hits;
+
+    public HitCounter() {
+        hits = new LinkedList<>();
+    }
+
+    public void hit(int timestamp) {
+        hits.offer(timestamp);
+    }
+
+    public int getHits(int timestamp) {
+        while (!hits.isEmpty() && hits.peek() <= timestamp - 300) {
+            hits.poll();
+        }
+        return hits.size();
+    }
+}
+
+public class HitCounterDemo {
+    public static void main(String[] args) {
+        HitCounter hc = new HitCounter();
+        hc.hit(1);
+        hc.hit(2);
+        hc.hit(3);
+        System.out.println("Hits at 4: " + hc.getHits(4));   // 3
+        hc.hit(300);
+        System.out.println("Hits at 300: " + hc.getHits(300)); // 4
+        System.out.println("Hits at 301: " + hc.getHits(301)); // 3
+    }
+}
+```
+**Time:** O(1) hit, O(n) getHits amortized | **Space:** O(n)
+
+---
+
+### Problem 7: Maximum Product Subarray (Uber, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an integer array nums, find the contiguous subarray that has the largest product and return the product.
+
+```java
+public class MaximumProductSubarray {
+    public static int maxProduct(int[] nums) {
+        int max = nums[0], min = nums[0], result = nums[0];
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] < 0) {
+                int temp = max;
+                max = min;
+                min = temp;
+            }
+            max = Math.max(nums[i], max * nums[i]);
+            min = Math.min(nums[i], min * nums[i]);
+            result = Math.max(result, max);
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int[] nums1 = {2, 3, -2, 4};
+        int[] nums2 = {-2, 0, -1};
+        System.out.println("Max product [2,3,-2,4]: " + maxProduct(nums1)); // 6
+        System.out.println("Max product [-2,0,-1]: " + maxProduct(nums2)); // 0
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
 ## Swiggy / Zomato
 
 ### Problem 1: Design a Food Delivery Recommendation System (Swiggy System Design, 2024)
@@ -2063,6 +3065,142 @@ public class CouponSystem {
 }
 ```
 **Time:** O(N) per order | **Space:** O(1)
+
+---
+
+### Problem 5: Order Status Notification System (Swiggy LLD, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Design an order status notification system where users can subscribe to order status updates. Support subscribe(userId, orderId), unsubscribe(userId, orderId), and notify(orderId, status).
+
+```java
+import java.util.*;
+
+class OrderNotifier {
+    private final Map<String, Set<String>> orderSubscribers;
+
+    public OrderNotifier() {
+        orderSubscribers = new HashMap<>();
+    }
+
+    public void subscribe(String userId, String orderId) {
+        orderSubscribers.computeIfAbsent(orderId, k -> new HashSet<>()).add(userId);
+    }
+
+    public void unsubscribe(String userId, String orderId) {
+        if (orderSubscribers.containsKey(orderId)) {
+            orderSubscribers.get(orderId).remove(userId);
+        }
+    }
+
+    public void notify(String orderId, String status) {
+        Set<String> users = orderSubscribers.getOrDefault(orderId, Collections.emptySet());
+        for (String userId : users) {
+            System.out.println("Notification sent to " + userId +
+                ": Order " + orderId + " is now " + status);
+        }
+    }
+}
+
+public class OrderNotifierDemo {
+    public static void main(String[] args) {
+        OrderNotifier notifier = new OrderNotifier();
+        notifier.subscribe("user1", "order123");
+        notifier.subscribe("user2", "order123");
+        notifier.notify("order123", "DELIVERED");
+        // Notification sent to user1: Order order123 is now DELIVERED
+        // Notification sent to user2: Order order123 is now DELIVERED
+    }
+}
+```
+**Time:** O(1) subscribe/notify | **Space:** O(U * O)
+
+---
+
+### Problem 6: Find K Closest Elements (Swiggy, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a sorted integer array arr and two integers k and x, return the k closest integers to x in the array. The result should be sorted in ascending order.
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+public class KClosestElements {
+    public static List<Integer> findClosestElements(int[] arr, int k, int x) {
+        int left = 0, right = arr.length - k;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (x - arr[mid] > arr[mid + k] - x) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        List<Integer> result = new ArrayList<>();
+        for (int i = left; i < left + k; i++) {
+            result.add(arr[i]);
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5};
+        System.out.println("K=4, x=3: " + findClosestElements(arr, 4, 3));
+        // Output: [1, 2, 3, 4]
+        System.out.println("K=2, x=-1: " + findClosestElements(arr, 2, -1));
+        // Output: [1, 2]
+    }
+}
+```
+**Time:** O(log(n - k) + k) | **Space:** O(k)
+
+---
+
+### Problem 7: Max Area of Island (Swiggy, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an m x n binary grid where 1 represents land and 0 represents water, find the maximum area of an island. An island is a group of connected 1s (horizontally or vertically).
+
+```java
+public class MaxAreaIsland {
+    private static final int[][] DIRS = {{0,1},{0,-1},{1,0},{-1,0}};
+
+    public static int maxAreaOfIsland(int[][] grid) {
+        int m = grid.length, n = grid[0].length;
+        int maxArea = 0;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 1) {
+                    maxArea = Math.max(maxArea, dfs(grid, i, j, m, n));
+                }
+            }
+        }
+        return maxArea;
+    }
+
+    private static int dfs(int[][] grid, int i, int j, int m, int n) {
+        if (i < 0 || i >= m || j < 0 || j >= n || grid[i][j] == 0) return 0;
+        grid[i][j] = 0;
+        int area = 1;
+        for (int[] dir : DIRS) {
+            area += dfs(grid, i + dir[0], j + dir[1], m, n);
+        }
+        return area;
+    }
+
+    public static void main(String[] args) {
+        int[][] grid = {
+            {0,0,1,0,0,0,0,1,0,0},
+            {0,0,0,0,0,0,0,1,1,1},
+            {0,1,1,0,1,0,0,0,0,0}
+        };
+        System.out.println("Max area: " + maxAreaOfIsland(grid));
+        // Output: 4
+    }
+}
+```
+**Time:** O(m * n) | **Space:** O(m * n)
 
 ---
 
@@ -2401,6 +3539,113 @@ public class SecondLargest {
 
 ---
 
+#### Q6: Simple Interest (TCS NQT, 2024)
+**Question:** Find the simple interest on a principal of 5000 at 8% per annum for 3 years.
+
+**Answer:** SI = P * R * T / 100 = 5000 * 8 * 3 / 100 = 1200.
+
+#### Q7: Allegation and Mixture
+**Question:** In what ratio must water be mixed with milk costing 24 per liter to obtain a mixture worth 18 per liter?
+
+**Answer:** Using allegation rule: (24 - 18) : (18 - 0) = 6 : 18 = 1 : 3. Water : Milk = 1 : 3.
+
+---
+
+### TCS Coding Problems (continued)
+
+#### Problem 4: Array Rotation (TCS NQT, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given an array and a rotation count k, rotate the array to the right by k positions.
+
+```java
+import java.util.Arrays;
+
+public class ArrayRotation {
+    public static void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;
+        reverse(nums, 0, n - 1);
+        reverse(nums, 0, k - 1);
+        reverse(nums, k, n - 1);
+    }
+
+    private static void reverse(int[] nums, int left, int right) {
+        while (left < right) {
+            int temp = nums[left];
+            nums[left++] = nums[right];
+            nums[right--] = temp;
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 4, 5, 6, 7};
+        rotate(nums, 3);
+        System.out.println("Rotated: " + Arrays.toString(nums));
+        // Output: [5, 6, 7, 1, 2, 3, 4]
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+#### Problem 5: Prime Number Check (TCS NQT, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given a number, determine if it is prime. A prime number is divisible only by 1 and itself.
+
+```java
+public class PrimeCheck {
+    public static boolean isPrime(int n) {
+        if (n <= 1) return false;
+        if (n <= 3) return true;
+        if (n % 2 == 0 || n % 3 == 0) return false;
+        for (int i = 5; i * i <= n; i += 6) {
+            if (n % i == 0 || n % (i + 2) == 0) return false;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("17 is prime: " + isPrime(17));   // true
+        System.out.println("15 is prime: " + isPrime(15));   // false
+        System.out.println("2 is prime: " + isPrime(2));     // true
+    }
+}
+```
+**Time:** O(√n) | **Space:** O(1)
+
+---
+
+#### Problem 6: Count Digits in a Number (TCS NQT, 2023)
+**Difficulty:** Easy
+
+**Problem Statement:** Given an integer, count the number of digits in it without using string conversion.
+
+```java
+public class CountDigits {
+    public static int countDigits(int n) {
+        if (n == 0) return 1;
+        int count = 0;
+        while (n != 0) {
+            n /= 10;
+            count++;
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Digits in 12345: " + countDigits(12345)); // 5
+        System.out.println("Digits in 0: " + countDigits(0));        // 1
+        System.out.println("Digits in -789: " + countDigits(-789));  // 3
+    }
+}
+```
+**Time:** O(log n) | **Space:** O(1)
+
+---
+
 ## Infosys InfyTQ
 
 ### Aptitude & Reasoning
@@ -2526,6 +3771,104 @@ public class AnagramCheck {
 
 ---
 
+### Infosys Aptitude (continued)
+
+#### Q6: Profit and Loss
+**Question:** A shopkeeper sells an item for 240, making a 20% profit. What was the cost price?
+
+**Answer:** SP = CP * (1 + P/100). CP = SP / (1 + 20/100) = 240 / 1.2 = 200.
+
+#### Q7: Time, Speed and Distance
+**Question:** A train 150m long passes a pole in 15 seconds. How long will it take to pass a 450m platform?
+
+**Answer:** Speed = 150/15 = 10 m/s. Total distance to cross platform = 150 + 450 = 600m. Time = 600/10 = 60 seconds.
+
+---
+
+### Infosys Coding Problems (continued)
+
+#### Problem 4: Sum of Digits Until Single Digit (Infosys InfyTQ, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given a number, repeatedly sum its digits until the result is a single digit. Return that digit.
+
+```java
+public class DigitalRoot {
+    public static int digitalRoot(int n) {
+        if (n == 0) return 0;
+        return 1 + (n - 1) % 9;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Digital root of 9875: " + digitalRoot(9875)); // 2 (9+8+7+5=29, 2+9=11, 1+1=2)
+        System.out.println("Digital root of 100: " + digitalRoot(100));   // 1
+    }
+}
+```
+**Time:** O(1) | **Space:** O(1)
+
+---
+
+#### Problem 5: Binary to Decimal Conversion (Infosys InfyTQ, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given a binary string, convert it to its decimal equivalent.
+
+```java
+public class BinaryToDecimal {
+    public static int binaryToDecimal(String binary) {
+        int decimal = 0;
+        int power = 0;
+        for (int i = binary.length() - 1; i >= 0; i--) {
+            if (binary.charAt(i) == '1') {
+                decimal += Math.pow(2, power);
+            }
+            power++;
+        }
+        return decimal;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("1010 -> " + binaryToDecimal("1010")); // 10
+        System.out.println("1111 -> " + binaryToDecimal("1111")); // 15
+        System.out.println("1001 -> " + binaryToDecimal("1001")); // 9
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+#### Problem 6: Remove Vowels from String (Infosys InfyTQ, 2023)
+**Difficulty:** Easy
+
+**Problem Statement:** Given a string, remove all vowels from it and return the modified string.
+
+```java
+public class RemoveVowels {
+    public static String removeVowels(String s) {
+        StringBuilder sb = new StringBuilder();
+        String vowels = "aeiouAEIOU";
+        for (char c : s.toCharArray()) {
+            if (vowels.indexOf(c) == -1) {
+                sb.append(c);
+            }
+        }
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        System.out.println("'Hello World' without vowels: '" + removeVowels("Hello World") + "'");
+        // Output: "Hll Wrld"
+        System.out.println("'AEIOU' without vowels: '" + removeVowels("AEIOU") + "'");
+        // Output: ""
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
+
+---
+
 ## Wipro NLTH / Turbo
 
 ### Aptitude & Reasoning
@@ -2630,6 +3973,106 @@ public class VowelConsonantCount {
     public static void main(String[] args) {
         count("Hello World");
         // Vowels: 3, Consonants: 7
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+### Wipro Aptitude (continued)
+
+#### Q6: Percentage
+**Question:** If 30% of a number is 45, what is 60% of the number?
+
+**Answer:** Let number = x. 0.3x = 45 → x = 150. 60% of 150 = 0.6 * 150 = 90.
+
+#### Q7: Probability
+**Question:** A dice is rolled twice. What is the probability of getting a sum of 7?
+
+**Answer:** Total outcomes = 36. Favorable: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6. Probability = 6/36 = 1/6.
+
+---
+
+### Wipro Coding Problems (continued)
+
+#### Problem 4: Check Armstrong Number (Wipro NLTH, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given a number, check if it is an Armstrong number. An Armstrong number is one where the sum of its digits each raised to the power of the number of digits equals the number.
+
+```java
+public class ArmstrongCheck {
+    public static boolean isArmstrong(int n) {
+        int original = n, sum = 0;
+        int digits = String.valueOf(n).length();
+        while (n > 0) {
+            int d = n % 10;
+            sum += Math.pow(d, digits);
+            n /= 10;
+        }
+        return sum == original;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("153 is Armstrong: " + isArmstrong(153));   // true
+        System.out.println("123 is Armstrong: " + isArmstrong(123));   // false
+        System.out.println("9474 is Armstrong: " + isArmstrong(9474)); // true
+    }
+}
+```
+**Time:** O(log n) | **Space:** O(1)
+
+---
+
+#### Problem 5: Sum of Array Elements (Wipro Turbo, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given an array of integers, compute the sum of all elements.
+
+```java
+public class SumOfArray {
+    public static int arraySum(int[] arr) {
+        int sum = 0;
+        for (int num : arr) sum += num;
+        return sum;
+    }
+
+    public static void main(String[] args) {
+        int[] arr1 = {1, 2, 3, 4, 5};
+        int[] arr2 = {10, -5, 20};
+        System.out.println("Sum [1,2,3,4,5]: " + arraySum(arr1)); // 15
+        System.out.println("Sum [10,-5,20]: " + arraySum(arr2));   // 25
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+#### Problem 6: Find Maximum and Minimum (Wipro NLTH, 2023)
+**Difficulty:** Easy
+
+**Problem Statement:** Given an array, find the maximum and minimum elements.
+
+```java
+import java.util.Arrays;
+
+public class MaxMinArray {
+    public static int[] findMaxMin(int[] arr) {
+        int max = arr[0], min = arr[0];
+        for (int num : arr) {
+            if (num > max) max = num;
+            if (num < min) min = num;
+        }
+        return new int[]{max, min};
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {3, 5, 1, 8, 2, 9, 4};
+        int[] result = findMaxMin(arr);
+        System.out.println("Max: " + result[0] + ", Min: " + result[1]);
+        // Output: Max: 9, Min: 1
     }
 }
 ```
@@ -2768,6 +4211,111 @@ public class RemoveDuplicates {
 
 ---
 
+### Accenture Aptitude (continued)
+
+#### Q6: Compound Interest
+**Question:** Find the compound interest on 10,000 at 10% per annum compounded annually for 2 years.
+
+**Answer:** A = P(1 + R/100)^T = 10000(1.1)^2 = 12100. CI = 12100 - 10000 = 2100.
+
+#### Q7: Time and Distance
+**Question:** A car travels at 40 km/h for the first 2 hours and 60 km/h for the next 3 hours. What is the average speed?
+
+**Answer:** Total distance = 40*2 + 60*3 = 80 + 180 = 260 km. Total time = 5h. Average = 260/5 = 52 km/h.
+
+---
+
+### Accenture Coding Problems (continued)
+
+#### Problem 4: Linear Search (Accenture, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** Given an array and a key, find the index of the key in the array. Return -1 if not found.
+
+```java
+public class LinearSearch {
+    public static int search(int[] arr, int key) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) return i;
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 80, 30, 60, 50, 110, 100, 130, 170};
+        System.out.println("Index of 110: " + search(arr, 110)); // 6
+        System.out.println("Index of 175: " + search(arr, 175)); // -1
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+#### Problem 5: Check Perfect Number (Accenture, 2024)
+**Difficulty:** Easy
+
+**Problem Statement:** A perfect number is a positive integer that equals the sum of its proper divisors (excluding itself). Check if a given number is perfect.
+
+```java
+public class PerfectNumber {
+    public static boolean isPerfect(int n) {
+        if (n <= 1) return false;
+        int sum = 1;
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                sum += i;
+                if (i != n / i) sum += n / i;
+            }
+        }
+        return sum == n;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("6 is perfect: " + isPerfect(6));   // true (1+2+3)
+        System.out.println("28 is perfect: " + isPerfect(28)); // true
+        System.out.println("12 is perfect: " + isPerfect(12)); // false
+    }
+}
+```
+**Time:** O(√n) | **Space:** O(1)
+
+---
+
+#### Problem 6: Count Character Frequency (Accenture, 2023)
+**Difficulty:** Easy
+
+**Problem Statement:** Given a string, count the frequency of each character and print the character followed by its count.
+
+```java
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class CharFrequency {
+    public static void countFrequency(String s) {
+        Map<Character, Integer> freq = new LinkedHashMap<>();
+        for (char c : s.toCharArray()) {
+            freq.put(c, freq.getOrDefault(c, 0) + 1);
+        }
+        for (Map.Entry<Character, Integer> entry : freq.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
+
+    public static void main(String[] args) {
+        countFrequency("hello");
+        // Output:
+        // h: 1
+        // e: 1
+        // l: 2
+        // o: 1
+    }
+}
+```
+**Time:** O(n) | **Space:** O(k) where k is unique characters
+
+---
+
 ## Quick Reference — Common Patterns by Company
 
 | Company | Common Patterns | Focus Area |
@@ -2784,6 +4332,698 @@ public class RemoveDuplicates {
 | Infosys | Numbers, Strings, Series | Logical Thinking |
 | Wipro | Recursion, GCD, Loops | Basic Programming |
 | Accenture | Sorting, Arrays, Math | Fundamentals |
+
+---
+
+# 4. New-Age Tech / Fintech / Product Companies
+
+---
+
+## Netflix
+
+### Interview Process Overview
+Netflix interviews focus on system design, problem solving, and cultural fit. The process typically includes: Recruiter Screen → Technical Phone Screen (coding + system design) → Onsite (3-4 rounds: coding, system design, behavioral/culture) → Final debrief. Netflix emphasizes its unique culture of "Freedom and Responsibility."
+
+---
+
+### Problem 1: Movie Recommendation System Design (Netflix System Design, 2024)
+**Difficulty:** Hard
+
+**Problem Statement:** Design a simplified movie recommendation system that suggests movies to users based on their ratings history. Implement collaborative filtering using user similarity.
+
+```java
+import java.util.*;
+
+class MovieRecommender {
+    private final Map<String, Map<String, Double>> userRatings;
+
+    public MovieRecommender() {
+        userRatings = new HashMap<>();
+    }
+
+    public void addRating(String user, String movie, double rating) {
+        userRatings.computeIfAbsent(user, k -> new HashMap<>()).put(movie, rating);
+    }
+
+    public double pearsonSimilarity(String user1, String user2) {
+        Map<String, Double> r1 = userRatings.get(user1);
+        Map<String, Double> r2 = userRatings.get(user2);
+        if (r1 == null || r2 == null) return 0;
+
+        Set<String> common = new HashSet<>(r1.keySet());
+        common.retainAll(r2.keySet());
+        if (common.size() < 2) return 0;
+
+        double sum1 = 0, sum2 = 0, sum1Sq = 0, sum2Sq = 0, pSum = 0;
+        int n = common.size();
+        for (String movie : common) {
+            double v1 = r1.get(movie), v2 = r2.get(movie);
+            sum1 += v1; sum2 += v2;
+            sum1Sq += v1 * v1; sum2Sq += v2 * v2;
+            pSum += v1 * v2;
+        }
+        double num = pSum - (sum1 * sum2 / n);
+        double den = Math.sqrt((sum1Sq - sum1 * sum1 / n) * (sum2Sq - sum2 * sum2 / n));
+        return den == 0 ? 0 : num / den;
+    }
+
+    public List<String> recommend(String user, int topN) {
+        Map<String, Double> ratings = userRatings.get(user);
+        if (ratings == null) return Collections.emptyList();
+
+        Map<String, Double> scores = new HashMap<>();
+        Map<String, Double> simSums = new HashMap<>();
+
+        for (String other : userRatings.keySet()) {
+            if (other.equals(user)) continue;
+            double sim = pearsonSimilarity(user, other);
+            if (sim <= 0) continue;
+
+            for (Map.Entry<String, Double> entry : userRatings.get(other).entrySet()) {
+                String movie = entry.getKey();
+                if (ratings.containsKey(movie)) continue;
+                scores.put(movie, scores.getOrDefault(movie, 0.0) + sim * entry.getValue());
+                simSums.put(movie, simSums.getOrDefault(movie, 0.0) + sim);
+            }
+        }
+
+        List<String> recommendations = new ArrayList<>(scores.keySet());
+        recommendations.sort((a, b) -> Double.compare(
+            scores.get(b) / simSums.get(b), scores.get(a) / simSums.get(a)));
+        return recommendations.subList(0, Math.min(topN, recommendations.size()));
+    }
+}
+
+public class MovieRecommenderDemo {
+    public static void main(String[] args) {
+        MovieRecommender mr = new MovieRecommender();
+        mr.addRating("Alice", "Inception", 5.0);
+        mr.addRating("Alice", "Matrix", 4.0);
+        mr.addRating("Alice", "Interstellar", 4.5);
+        mr.addRating("Bob", "Inception", 4.0);
+        mr.addRating("Bob", "Matrix", 5.0);
+        mr.addRating("Bob", "Tenet", 4.0);
+        mr.addRating("Charlie", "Inception", 3.0);
+        mr.addRating("Charlie", "Tenet", 5.0);
+
+        System.out.println("Alice's recommendations: " + mr.recommend("Alice", 2));
+        // Should recommend movies Alice hasn't rated (e.g., Tenet)
+    }
+}
+```
+**Time:** O(U * M) where U = users, M = movies | **Space:** O(U * M)
+
+---
+
+### Problem 2: Content-Based Filtering (Netflix, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Tag movies with genre keywords and recommend movies to users based on the genres of movies they have rated highly.
+
+```java
+import java.util.*;
+
+class ContentFilter {
+    private final Map<String, Set<String>> movieGenres;
+    private final Map<String, Map<String, Double>> userRatings;
+
+    public ContentFilter() {
+        movieGenres = new HashMap<>();
+        userRatings = new HashMap<>();
+    }
+
+    public void addMovie(String movie, Set<String> genres) {
+        movieGenres.put(movie, genres);
+    }
+
+    public void rateMovie(String user, String movie, double rating) {
+        userRatings.computeIfAbsent(user, k -> new HashMap<>()).put(movie, rating);
+    }
+
+    public Map<String, Double> getUserGenreProfile(String user) {
+        Map<String, Double> profile = new HashMap<>();
+        Map<String, Double> ratings = userRatings.get(user);
+        if (ratings == null) return profile;
+
+        Map<String, Double> genreScores = new HashMap<>();
+        Map<String, Integer> genreCounts = new HashMap<>();
+        for (Map.Entry<String, Double> entry : ratings.entrySet()) {
+            Set<String> genres = movieGenres.get(entry.getKey());
+            if (genres == null) continue;
+            for (String genre : genres) {
+                genreScores.put(genre, genreScores.getOrDefault(genre, 0.0) + entry.getValue());
+                genreCounts.put(genre, genreCounts.getOrDefault(genre, 0) + 1);
+            }
+        }
+        for (String genre : genreScores.keySet()) {
+            profile.put(genre, genreScores.get(genre) / genreCounts.get(genre));
+        }
+        return profile;
+    }
+
+    public List<String> recommend(String user, int topN) {
+        Map<String, Double> profile = getUserGenreProfile(user);
+        Set<String> rated = userRatings.getOrDefault(user, Collections.emptyMap()).keySet();
+        Map<String, Double> scores = new HashMap<>();
+
+        for (String movie : movieGenres.keySet()) {
+            if (rated.contains(movie)) continue;
+            double score = 0;
+            for (String genre : movieGenres.get(movie)) {
+                score += profile.getOrDefault(genre, 0.0);
+            }
+            scores.put(movie, score / movieGenres.get(movie).size());
+        }
+
+        List<String> recommendations = new ArrayList<>(scores.keySet());
+        recommendations.sort((a, b) -> Double.compare(scores.get(b), scores.get(a)));
+        return recommendations.subList(0, Math.min(topN, recommendations.size()));
+    }
+}
+
+public class ContentFilterDemo {
+    public static void main(String[] args) {
+        ContentFilter cf = new ContentFilter();
+        cf.addMovie("Inception", new HashSet<>(Arrays.asList("Sci-Fi", "Thriller")));
+        cf.addMovie("The Dark Knight", new HashSet<>(Arrays.asList("Action", "Crime")));
+        cf.addMovie("Interstellar", new HashSet<>(Arrays.asList("Sci-Fi", "Drama")));
+        cf.addMovie("Tenet", new HashSet<>(Arrays.asList("Sci-Fi", "Action")));
+
+        cf.rateMovie("Alice", "Inception", 5.0);
+        cf.rateMovie("Alice", "Interstellar", 4.5);
+        System.out.println("Alice's genre profile: " + cf.getUserGenreProfile("Alice"));
+        System.out.println("Recommendations: " + cf.recommend("Alice", 3));
+    }
+}
+```
+**Time:** O(M * G) | **Space:** O(U * G + M * G)
+
+---
+
+### Problem 3: Watch History Patterns — Most Watched Genre (Netflix, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given a user's watch history as a list of (timestamp, movie) pairs and a mapping of movies to genres, find the most-watched genre in the last N days.
+
+```java
+import java.util.*;
+
+class WatchHistoryAnalyzer {
+    static class WatchEvent {
+        long timestamp;
+        String movie;
+        WatchEvent(long timestamp, String movie) {
+            this.timestamp = timestamp;
+            this.movie = movie;
+        }
+    }
+
+    private final Map<String, String> movieGenre;
+    private final List<WatchEvent> history;
+
+    public WatchHistoryAnalyzer() {
+        movieGenre = new HashMap<>();
+        history = new ArrayList<>();
+    }
+
+    public void addMovieGenre(String movie, String genre) {
+        movieGenre.put(movie, genre);
+    }
+
+    public void recordWatch(long timestamp, String movie) {
+        history.add(new WatchEvent(timestamp, movie));
+    }
+
+    public String mostWatchedGenre(long currentTime, int days) {
+        long cutoff = currentTime - days * 86400000L;
+        Map<String, Integer> genreCount = new HashMap<>();
+        int maxCount = 0;
+        String topGenre = null;
+
+        for (WatchEvent event : history) {
+            if (event.timestamp < cutoff) continue;
+            String genre = movieGenre.get(event.movie);
+            if (genre == null) continue;
+            int count = genreCount.getOrDefault(genre, 0) + 1;
+            genreCount.put(genre, count);
+            if (count > maxCount) {
+                maxCount = count;
+                topGenre = genre;
+            }
+        }
+        return topGenre;
+    }
+}
+
+public class WatchHistoryDemo {
+    public static void main(String[] args) {
+        WatchHistoryAnalyzer wha = new WatchHistoryAnalyzer();
+        wha.addMovieGenre("Inception", "Sci-Fi");
+        wha.addMovieGenre("The Dark Knight", "Action");
+        wha.addMovieGenre("Tenet", "Sci-Fi");
+
+        long now = System.currentTimeMillis();
+        wha.recordWatch(now - 86400000L, "Inception");
+        wha.recordWatch(now - 172800000L, "The Dark Knight");
+        wha.recordWatch(now - 259200000L, "Tenet");
+        wha.recordWatch(now - 432000000L, "Inception");
+
+        System.out.println("Most watched genre (7 days): " +
+            wha.mostWatchedGenre(now, 7)); // Sci-Fi
+    }
+}
+```
+**Time:** O(H) where H = history size | **Space:** O(G) where G = genres
+
+---
+
+### Problem 4: Streaming Quality Optimization (Netflix System Design, 2024)
+**Difficulty:** Hard
+
+**Problem Statement:** Given network bandwidth samples, determine the optimal streaming quality level. Quality levels: 0 (SD: 1 Mbps), 1 (HD: 5 Mbps), 2 (4K: 25 Mbps). Select the highest quality sustainable given recent bandwidth.
+
+```java
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+class StreamingOptimizer {
+    private final Deque<Double> bandwidthWindow;
+    private final int windowSize;
+
+    public StreamingOptimizer(int windowSizeSeconds) {
+        this.windowSize = windowSizeSeconds;
+        this.bandwidthWindow = new ArrayDeque<>();
+    }
+
+    public void addBandwidthSample(double mbps) {
+        bandwidthWindow.addLast(mbps);
+        if (bandwidthWindow.size() > windowSize) {
+            bandwidthWindow.removeFirst();
+        }
+    }
+
+    public int selectQuality() {
+        if (bandwidthWindow.isEmpty()) return 0;
+        double avgBandwidth = 0;
+        for (double b : bandwidthWindow) avgBandwidth += b;
+        avgBandwidth /= bandwidthWindow.size();
+
+        // Apply 80% safety margin to avoid buffering
+        double safeBandwidth = avgBandwidth * 0.8;
+
+        if (safeBandwidth >= 25) return 2; // 4K
+        if (safeBandwidth >= 5) return 1;  // HD
+        return 0;                           // SD
+    }
+
+    public String getQualityLabel(int quality) {
+        switch (quality) {
+            case 2: return "4K (25 Mbps)";
+            case 1: return "HD (5 Mbps)";
+            default: return "SD (1 Mbps)";
+        }
+    }
+}
+
+public class StreamingOptimizerDemo {
+    public static void main(String[] args) {
+        StreamingOptimizer so = new StreamingOptimizer(5);
+        double[] samples = {30, 28, 10, 8, 6, 3, 2, 20, 22, 25};
+        for (double sample : samples) {
+            so.addBandwidthSample(sample);
+            int quality = so.selectQuality();
+            System.out.println("Bandwidth: " + sample + " Mbps -> Quality: " +
+                so.getQualityLabel(quality));
+        }
+    }
+}
+```
+**Time:** O(1) per operation | **Space:** O(windowSize)
+
+---
+
+### Netflix Culture Deck — Behavioral Questions
+
+#### Q1: What does "Freedom and Responsibility" mean to you in a work context? (Netflix Culture)
+**Answer:** Freedom and Responsibility means having full ownership of your work without micromanagement, but being held accountable for outcomes. In practice, I would take initiative on projects I believe add value, communicate transparently about progress and challenges, and accept full responsibility for both successes and failures. For example, during a group project, I identified a critical performance bottleneck and took ownership of fixing it without waiting for a manager to assign the task. I communicated my approach to the team, delivered the fix, and the application's response time improved by 60%.
+
+#### Q2: Tell me about a time you delivered a high-impact result with minimal resources. (Netflix — Impact)
+**Answer:** As a college placement coordinator, I was tasked with building a portal to manage 500+ student registrations for campus recruitment drives with zero budget and a two-week deadline. I used open-source technologies (React + Firebase), implemented an automated email notification system, and built the entire platform myself. The portal handled all 500+ registrations without issues on day one, reduced manual data entry by 90%, and was subsequently adopted by three other departments. This taught me that high impact comes from focus and resourcefulness, not large teams or budgets.
+
+---
+
+## Adobe
+
+### Interview Process Overview
+Adobe's interview process includes: Online Assessment (coding + aptitude) → Technical Phone Screen → Onsite (4-5 rounds): Data Structures & Algorithms, System Design, Problem Solving, Managerial Round, and HR. Adobe values innovation, creativity, and technical depth. Expect questions on OOP design patterns, multithreading, and product-specific technologies.
+
+---
+
+### Problem 1: Design a Photo Editor Filter — Brightness Adjustment (Adobe, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an image represented as a 2D array of pixels (each pixel has RGB values 0-255), implement a brightness adjustment filter. The adjustment value can be positive (brighten) or negative (darken), clamped to [0, 255].
+
+```java
+import java.util.Arrays;
+
+class Pixel {
+    int r, g, b;
+    Pixel(int r, int g, int b) {
+        this.r = clamp(r); this.g = clamp(g); this.b = clamp(b);
+    }
+    private int clamp(int val) { return Math.max(0, Math.min(255, val)); }
+}
+
+class ImageFilter {
+    public static Pixel[][] adjustBrightness(Pixel[][] image, int delta) {
+        int h = image.length, w = image[0].length;
+        Pixel[][] result = new Pixel[h][w];
+        for (int i = 0; i < h; i++) {
+            for (int j = 0; j < w; j++) {
+                Pixel p = image[i][j];
+                result[i][j] = new Pixel(p.r + delta, p.g + delta, p.b + delta);
+            }
+        }
+        return result;
+    }
+}
+
+public class ImageFilterDemo {
+    public static void main(String[] args) {
+        Pixel[][] image = {
+            {new Pixel(100, 150, 200), new Pixel(50, 100, 150)},
+            {new Pixel(200, 50, 100), new Pixel(30, 60, 90)}
+        };
+        Pixel[][] brightened = ImageFilter.adjustBrightness(image, 30);
+        System.out.println("Brightened pixel [0][0]: (" +
+            brightened[0][0].r + ", " + brightened[0][0].g + ", " + brightened[0][0].b + ")");
+        // Output: (130, 180, 230)
+    }
+}
+```
+**Time:** O(h * w) | **Space:** O(h * w)
+
+---
+
+### Problem 2: Longest Increasing Subsequence (Adobe, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an integer array nums, return the length of the longest strictly increasing subsequence.
+
+```java
+import java.util.Arrays;
+
+public class LongestIncreasingSubsequence {
+    public static int lengthOfLIS(int[] nums) {
+        int[] tails = new int[nums.length];
+        int size = 0;
+        for (int num : nums) {
+            int left = 0, right = size;
+            while (left < right) {
+                int mid = left + (right - left) / 2;
+                if (tails[mid] < num) {
+                    left = mid + 1;
+                } else {
+                    right = mid;
+                }
+            }
+            tails[left] = num;
+            if (left == size) size++;
+        }
+        return size;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {10, 9, 2, 5, 3, 7, 101, 18};
+        System.out.println("LIS length: " + lengthOfLIS(nums)); // 4 (2, 3, 7, 101)
+        int[] nums2 = {0, 1, 0, 3, 2, 3};
+        System.out.println("LIS length: " + lengthOfLIS(nums2)); // 4
+    }
+}
+```
+**Time:** O(n log n) | **Space:** O(n)
+
+---
+
+### Problem 3: Design a Version Comparison System (Adobe, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Compare two version strings (e.g., "1.2.3" and "1.10.1"). Return 1 if version1 > version2, -1 if version1 < version2, and 0 if equal.
+
+```java
+public class VersionCompare {
+    public static int compareVersion(String version1, String version2) {
+        String[] v1 = version1.split("\\.");
+        String[] v2 = version2.split("\\.");
+        int n = Math.max(v1.length, v2.length);
+        for (int i = 0; i < n; i++) {
+            int num1 = i < v1.length ? Integer.parseInt(v1[i]) : 0;
+            int num2 = i < v2.length ? Integer.parseInt(v2[i]) : 0;
+            if (num1 != num2) return num1 > num2 ? 1 : -1;
+        }
+        return 0;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("1.2.3 vs 1.10.1: " + compareVersion("1.2.3", "1.10.1")); // -1
+        System.out.println("2.0 vs 2.0.0: " + compareVersion("2.0", "2.0.0"));       // 0
+        System.out.println("3.0 vs 2.9.9: " + compareVersion("3.0", "2.9.9"));       // 1
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
+
+---
+
+### Problem 4: Find Peak Element (Adobe, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** A peak element is an element strictly greater than its neighbors. Given an array, find any peak element using O(log n) time.
+
+```java
+public class FindPeakElement {
+    public static int findPeak(int[] nums) {
+        int left = 0, right = nums.length - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] > nums[mid + 1]) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return left;
+    }
+
+    public static void main(String[] args) {
+        int[] nums1 = {1, 2, 3, 1};
+        int[] nums2 = {1, 2, 1, 3, 5, 6, 4};
+        System.out.println("Peak index in [1,2,3,1]: " + findPeak(nums1)); // 2
+        System.out.println("Peak index in [1,2,1,3,5,6,4]: " + findPeak(nums2)); // 5
+    }
+}
+```
+**Time:** O(log n) | **Space:** O(1)
+
+---
+
+### Adobe Behavioral Questions
+
+#### Q1: Describe a time you used creativity to solve a complex technical problem.
+**Answer:** During a hackathon, I needed to implement real-time collaborative editing without access to WebSockets (the university firewall blocked non-standard ports). I creatively used HTTP long-polling with a message queue backend (RabbitMQ) to simulate real-time updates. While not as efficient as WebSockets, it worked reliably and our team won "Most Innovative Solution." This taught me that constraints often force creative solutions.
+
+---
+
+## Goldman Sachs
+
+### Interview Process Overview
+Goldman Sachs follows a structured recruitment process: Online Assessment (HackerRank — 2 coding problems + 1 SQL + aptitude) → Superday (4-5 back-to-back interviews): Technical rounds covering data structures, algorithms, probability/puzzles, system design, and behavioral. GS values technical excellence, risk awareness, and collaboration. Expect questions on arrays, hash maps, trees, and dynamic programming with a focus on clean, production-quality code.
+
+---
+
+### Problem 1: Maximum Size Subarray Sum Equals K (Goldman Sachs, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an integer array nums and an integer k, return the maximum length of a subarray that sums to k. Return 0 if no such subarray exists.
+
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+public class MaxSubarraySumK {
+    public static int maxSubArrayLen(int[] nums, int k) {
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(0, -1);
+        int sum = 0, maxLen = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+            if (map.containsKey(sum - k)) {
+                maxLen = Math.max(maxLen, i - map.get(sum - k));
+            }
+            map.putIfAbsent(sum, i);
+        }
+        return maxLen;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, -1, 5, -2, 3};
+        System.out.println("Max subarray length sum=3: " + maxSubArrayLen(nums, 3)); // 4 ([1,-1,5,-2])
+        int[] nums2 = {-2, -1, 2, 1};
+        System.out.println("Max subarray length sum=1: " + maxSubArrayLen(nums2, 1)); // 2 ([-1,2])
+    }
+}
+```
+**Time:** O(n) | **Space:** O(n)
+
+---
+
+### Problem 2: Gas Station (Goldman Sachs, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Given two arrays gas[i] and cost[i], find the starting station index from which you can complete a circuit around the gas stations. Return -1 if impossible.
+
+```java
+public class GasStation {
+    public static int canCompleteCircuit(int[] gas, int[] cost) {
+        int total = 0, current = 0, start = 0;
+        for (int i = 0; i < gas.length; i++) {
+            int diff = gas[i] - cost[i];
+            total += diff;
+            current += diff;
+            if (current < 0) {
+                start = i + 1;
+                current = 0;
+            }
+        }
+        return total >= 0 ? start : -1;
+    }
+
+    public static void main(String[] args) {
+        int[] gas = {1, 2, 3, 4, 5};
+        int[] cost = {3, 4, 5, 1, 2};
+        System.out.println("Start station: " + canCompleteCircuit(gas, cost)); // 3
+        int[] gas2 = {2, 3, 4};
+        int[] cost2 = {3, 4, 3};
+        System.out.println("Start station: " + canCompleteCircuit(gas2, cost2)); // -1
+    }
+}
+```
+**Time:** O(n) | **Space:** O(1)
+
+---
+
+### Problem 3: Design a Leaderboard (Goldman Sachs, 2024)
+**Difficulty:** Medium
+
+**Problem Statement:** Design a leaderboard that supports addScore(playerId, score), top(K) returning top K players by total score, and reset(playerId).
+
+```java
+import java.util.*;
+
+class Leaderboard {
+    private final Map<Integer, Integer> scores;
+    private final TreeMap<Integer, Set<Integer>> sortedScores;
+
+    public Leaderboard() {
+        scores = new HashMap<>();
+        sortedScores = new TreeMap<>(Collections.reverseOrder());
+    }
+
+    public void addScore(int playerId, int score) {
+        int oldScore = scores.getOrDefault(playerId, 0);
+        if (oldScore > 0) {
+            sortedScores.get(oldScore).remove(playerId);
+            if (sortedScores.get(oldScore).isEmpty()) {
+                sortedScores.remove(oldScore);
+            }
+        }
+        int newScore = oldScore + score;
+        scores.put(playerId, newScore);
+        sortedScores.computeIfAbsent(newScore, k -> new HashSet<>()).add(playerId);
+    }
+
+    public int top(int k) {
+        int sum = 0, count = 0;
+        for (Map.Entry<Integer, Set<Integer>> entry : sortedScores.entrySet()) {
+            for (int id : entry.getValue()) {
+                if (count >= k) break;
+                sum += entry.getKey();
+                count++;
+            }
+            if (count >= k) break;
+        }
+        return sum;
+    }
+
+    public void reset(int playerId) {
+        int oldScore = scores.getOrDefault(playerId, 0);
+        if (oldScore > 0) {
+            sortedScores.get(oldScore).remove(playerId);
+            if (sortedScores.get(oldScore).isEmpty()) {
+                sortedScores.remove(oldScore);
+            }
+        }
+        scores.put(playerId, 0);
+        sortedScores.computeIfAbsent(0, k -> new HashSet<>()).add(playerId);
+    }
+}
+
+public class LeaderboardDemo {
+    public static void main(String[] args) {
+        Leaderboard lb = new Leaderboard();
+        lb.addScore(1, 50);
+        lb.addScore(2, 80);
+        lb.addScore(3, 70);
+        lb.addScore(1, 30);  // player 1 now has 80
+        System.out.println("Top 2 sum: " + lb.top(2)); // 160 (80+80)
+        lb.reset(2);
+        System.out.println("Top 2 sum after reset: " + lb.top(2)); // 80 (80+0)
+    }
+}
+```
+**Time:** O(log n) per operation | **Space:** O(n)
+
+---
+
+### Problem 4: Minimum Path Sum (Goldman Sachs, 2023)
+**Difficulty:** Medium
+
+**Problem Statement:** Given an m x n grid filled with non-negative numbers, find a path from top-left to bottom-right that minimizes the sum of numbers along the path. You can only move down or right.
+
+```java
+public class MinPathSum {
+    public static int minPathSum(int[][] grid) {
+        int m = grid.length, n = grid[0].length;
+        int[][] dp = new int[m][n];
+        dp[0][0] = grid[0][0];
+        for (int i = 1; i < m; i++) dp[i][0] = dp[i-1][0] + grid[i][0];
+        for (int j = 1; j < n; j++) dp[0][j] = dp[0][j-1] + grid[0][j];
+        for (int i = 1; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp[i][j] = grid[i][j] + Math.min(dp[i-1][j], dp[i][j-1]);
+            }
+        }
+        return dp[m-1][n-1];
+    }
+
+    public static void main(String[] args) {
+        int[][] grid = {{1,3,1},{1,5,1},{4,2,1}};
+        System.out.println("Min path sum: " + minPathSum(grid)); // 7 (1→3→1→1→1)
+    }
+}
+```
+**Time:** O(m * n) | **Space:** O(m * n)
+
+---
+
+### Goldman Sachs Behavioral Questions
+
+#### Q1: Describe a time you worked under pressure to meet a tight deadline.
+**Answer:** During my internship, our team had a critical client demo in 48 hours, but a core API service was crashing under load. I volunteered to debug the issue, identified a connection pool leak in the database layer, implemented a fix with proper connection management, and wrote integration tests. The demo was successful, and the fix was deployed to production. I learned that staying calm, systematically isolating the problem, and communicating progress transparently is key under pressure.
+
+#### Q2: Tell me about a time you had to explain a complex technical concept to a non-technical stakeholder.
+**Answer:** As a project lead, I needed to explain to the college dean why our system required a cloud migration costing 50K. Instead of using technical jargon, I used an analogy: "Our library currently keeps all books in a single room; if everyone comes at once, it's chaos. Cloud migration is like having a warehouse that automatically expands when more students arrive." I created a simple chart showing current outages vs. projected stability, and the dean approved the budget. The migration reduced downtime by 99%.
 
 ---
 

@@ -21,6 +21,11 @@ This course covers the complete GATE Computer Science syllabus — from General 
 | 07 | [Mock Test 1](07-mock-test-1.md) | Full-length GATE CS mock test with solutions |
 | 08 | [Mock Test 2](08-mock-test-2.md) | Second full-length GATE CS mock test |
 | 09 | [Mock Test 3](09-mock-test-3.md) | Third full-length GATE CS mock test |
+| 10 | [Mock Test 4](10-mock-test-4.md) | Fourth full-length GATE CS mock test |
+| 11 | [Mock Test 5](11-mock-test-5.md) | Fifth full-length GATE CS mock test |
+| 12 | [Mock Test 6](12-mock-test-6.md) | Sixth full-length GATE CS mock test |
+| 13 | [Mock Test 7](13-mock-test-7.md) | Seventh full-length GATE CS mock test |
+| 14 | [Mock Test 8](14-mock-test-8.md) | Eighth full-length GATE CS mock test |
 
 ## Version
 

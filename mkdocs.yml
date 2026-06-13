@@ -1236,6 +1236,11 @@ nav:
     - Mock Test 1: courses/gate-cs-preparation/07-mock-test-1.md
     - Mock Test 2: courses/gate-cs-preparation/08-mock-test-2.md
     - Mock Test 3: courses/gate-cs-preparation/09-mock-test-3.md
+    - Mock Test 4: courses/gate-cs-preparation/10-mock-test-4.md
+    - Mock Test 5: courses/gate-cs-preparation/11-mock-test-5.md
+    - Mock Test 6: courses/gate-cs-preparation/12-mock-test-6.md
+    - Mock Test 7: courses/gate-cs-preparation/13-mock-test-7.md
+    - Mock Test 8: courses/gate-cs-preparation/14-mock-test-8.md
   - "💼 Placement":
     - Overview: courses/placement-preparation/index.md
     - Resume & Aptitude: courses/placement-preparation/01-resume-aptitude.md

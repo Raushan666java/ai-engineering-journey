@@ -25,7 +25,7 @@ The course is organized into thirteen parts, each building on the last:
 | X | 44–46 | Reactive Spring — Project Reactor, WebFlux, R2DBC |
 | XI | 47–51 | Modern Spring Ecosystem — AI, GraphQL, Batch, Integration, Modulith |
 | XII | 52–55 | Production & DevOps — Docker, Kubernetes, CI/CD, observability |
-| XIII | 56–66 | Interview Preparation — Java, Spring Boot, 10 industry-specific Q&A |
+| XIII | 56–66 | Interview Preparation — Java, Spring Boot, REST, databases, microservices, security, testing, design patterns, system design, behavioral |
 
 ## Chapter Listing
 
@@ -161,15 +161,15 @@ The course is organized into thirteen parts, each building on the last:
 |---|---------|-------|
 | 56 | [Core Java Interview Q&A](56-interview-java.md) | 100+ interview questions on Java fundamentals, OOP, collections, streams, concurrency, JVM, memory management, Java 21+ features |
 | 57 | [Spring Boot & Microservices Interview Q&A](57-interview-spring.md) | 100+ interview questions on Spring Boot, DI, JPA, security, testing, microservices, Spring Cloud, reactive |
-| 58 | [Healthcare Interview Q&A](58-interview-healthcare.md) | Interview questions for Java/Spring Boot roles in healthcare and health-tech |
-| 59 | [Finance Interview Q&A](59-interview-finance.md) | Interview questions for Java/Spring Boot roles in fintech and financial services |
-| 60 | [Education Interview Q&A](60-interview-education.md) | Interview questions for Java/Spring Boot roles in edtech and education |
-| 61 | [Logistics Interview Q&A](61-interview-logistics.md) | Interview questions for Java/Spring Boot roles in logistics and supply chain |
-| 62 | [HR Interview Q&A](62-interview-hr.md) | Interview questions for Java/Spring Boot roles in HR technology |
-| 63 | [Marketing Interview Q&A](63-interview-marketing.md) | Interview questions for Java/Spring Boot roles in marketing and adtech |
-| 64 | [Customer Service Interview Q&A](64-interview-customer-service.md) | Interview questions for Java/Spring Boot roles in customer support platforms |
-| 65 | [Real Estate Interview Q&A](65-interview-real-estate.md) | Interview questions for Java/Spring Boot roles in real estate and property technology |
-| 66 | [Manufacturing Interview Q&A](66-interview-manufacturing.md) | Interview questions for Java/Spring Boot roles in manufacturing and industrial |
+| 58 | [REST API Interview Q&A](58-interview-rest-api.md) | 25 interview questions on REST constraints, HTTP, JWT, HATEOAS, CORS, caching, versioning, testing |
+| 59 | [Databases Interview Q&A](59-interview-databases.md) | 50 interview questions on JDBC, JPA, Hibernate, transactions, indexing, NoSQL, migration |
+| 60 | [Microservices Interview Q&A](60-interview-microservices.md) | 25 interview questions on service decomposition, Kafka, saga, CQRS, circuit breakers, containers |
+| 61 | [Security Interview Q&A](61-interview-security.md) | Interview questions on OAuth2, JWT, Keycloak, method security, CORS, CSRF, OWASP |
+| 62 | [Testing Interview Q&A](62-interview-testing.md) | Interview questions on JUnit 5, Mockito, Testcontainers, integration testing, security testing |
+| 63 | [Tools Interview Q&A](63-interview-tools.md) | Interview questions on Maven, Gradle, Docker, Kubernetes, CI/CD, monitoring |
+| 64 | [Design Patterns Interview Q&A](64-interview-design-patterns.md) | Interview questions on GoF patterns, enterprise patterns, microservices patterns |
+| 65 | [System Design Interview Q&A](65-interview-system-design.md) | Interview questions on scalability, caching, sharding, consistency, case studies |
+| 66 | [Behavioral Interview Q&A](66-interview-behavioral.md) | Interview questions on STAR, leadership, conflict resolution, career growth |
 
 ## Supplementary Resources
 

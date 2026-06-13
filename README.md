@@ -3,7 +3,10 @@
 [![GitHub Pages](https://img.shields.io/badge/site-live-blue)](https://raushan666java.github.io/ai-engineering-journey/)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Chapters](https://img.shields.io/badge/chapters-400%2B-orange)]()
+[![Courses](https://img.shields.io/badge/courses-26-blueviolet)]()
 
+> A comprehensive, university-grade Computer Science curriculum with modern applied tracks.  
+> **26 courses, 400+ chapters** — from first principles to AI/ML Automation & Backend Engineering.
 
 ## Site
 
@@ -69,7 +72,8 @@ Built with MkDocs + Material theme. Every chapter:
 | **Java + Spring Boot** | 66 | Core Java → Microservices interview Q&A |
 | **Laravel 13** | 54 | PHP → MySQL → AI/ML fundamentals |
 | **React** | 40 | Components → advanced patterns |
-
+| **GATE CS Prep** | 14 | Aptitude, TOC, Compilers, Digital Logic, Strategy, 8 Mock Tests |
+| **Placement Prep** | 7 | Resume, DSA 100 problems, SQL bank, Company PYQs, HR/GD |
 
 ---
 

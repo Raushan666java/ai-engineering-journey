@@ -106,6 +106,8 @@ nav:
     - Glossary: references/ai-engineering/glossary.md
     - 📊 Big Data: courses/big-data/index.md
     - 🧠 Applied AI: courses/applied-ai/index.md
+    - 🎯 GATE CS: courses/gate-cs-preparation/index.md
+    - 💼 Placement: courses/placement-preparation/index.md
 
 
     - 'Phase 0 - Setup And Tooling':
@@ -1224,4 +1226,32 @@ nav:
     - Langchain: courses/applied-ai/02-langchain.md
     - Opencv: courses/applied-ai/03-opencv.md
     - Generative Ai: courses/applied-ai/04-generative-ai.md
+
+  - "🎯 GATE CS":
+    - Overview: courses/gate-cs-preparation/index.md
+    - Aptitude: courses/gate-cs-preparation/01-general-aptitude.md
+    - ToC: courses/gate-cs-preparation/02-theory-of-computation.md
+    - Compiler Design: courses/gate-cs-preparation/03-compiler-design.md
+    - Digital Logic: courses/gate-cs-preparation/04-digital-logic.md
+    - Strategy: courses/gate-cs-preparation/05-gate-strategy.md
+    - Engineering Math: courses/gate-cs-preparation/06-engineering-mathematics.md
+    - Mock Test 1: courses/gate-cs-preparation/07-mock-test-1.md
+    - Mock Test 2: courses/gate-cs-preparation/08-mock-test-2.md
+    - Mock Test 3: courses/gate-cs-preparation/09-mock-test-3.md
+    - Mock Test 4: courses/gate-cs-preparation/10-mock-test-4.md
+    - Mock Test 5: courses/gate-cs-preparation/11-mock-test-5.md
+    - Mock Test 6: courses/gate-cs-preparation/12-mock-test-6.md
+    - Mock Test 7: courses/gate-cs-preparation/13-mock-test-7.md
+    - Mock Test 8: courses/gate-cs-preparation/14-mock-test-8.md
+  - "💼 Placement":
+    - Overview: courses/placement-preparation/index.md
+    - Resume & Aptitude: courses/placement-preparation/01-resume-aptitude.md
+    - DSA Problems: courses/placement-preparation/02-dsa-problem-bank.md
+    - SQL Problems: courses/placement-preparation/03-sql-problem-bank.md
+    - Company Specific: courses/placement-preparation/04-company-specific.md
+    - Strategy: courses/placement-preparation/05-placement-strategy.md
+    - HR/GD/Soft Skills: courses/placement-preparation/06-hr-gd-soft-skills.md
+    - Company PYQs: courses/placement-preparation/07-company-wise-pyqs.md
+=======
+
 

@@ -5,9 +5,10 @@
 [![Chapters](https://img.shields.io/badge/chapters-400%2B-orange)]()
 [![Courses](https://img.shields.io/badge/courses-26-blueviolet)]()
 
-> A comprehensive, university-grade Computer Science curriculum with modern applied tracks.  
+> A comprehensive, university-grade Computer Science curriculum with modern applied tracks.
 > **26 courses, 400+ chapters** — from first principles to AI/ML Automation & Backend Engineering.
 
+## Site
 ## Site
 
 **https://raushan666java.github.io/ai-engineering-journey/**
@@ -74,6 +75,7 @@ Built with MkDocs + Material theme. Every chapter:
 | **React** | 40 | Components → advanced patterns |
 | **GATE CS Prep** | 14 | Aptitude, TOC, Compilers, Digital Logic, Strategy, 8 Mock Tests |
 | **Placement Prep** | 7 | Resume, DSA 100 problems, SQL bank, Company PYQs, HR/GD |
+
 
 ---
 

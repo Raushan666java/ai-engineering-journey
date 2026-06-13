@@ -109,6 +109,7 @@ nav:
     - 🎯 GATE CS: courses/gate-cs-preparation/index.md
     - 💼 Placement: courses/placement-preparation/index.md
 
+
     - 'Phase 0 - Setup And Tooling':
         - Overview: ai-engineering-from-scratch/phases/00-setup-and-tooling/README.md
         - '01 - Dev Environment': ai-engineering-from-scratch/phases/00-setup-and-tooling/01-dev-environment/docs/en.md
@@ -1225,6 +1226,7 @@ nav:
     - Langchain: courses/applied-ai/02-langchain.md
     - Opencv: courses/applied-ai/03-opencv.md
     - Generative Ai: courses/applied-ai/04-generative-ai.md
+
   - "🎯 GATE CS":
     - Overview: courses/gate-cs-preparation/index.md
     - Aptitude: courses/gate-cs-preparation/01-general-aptitude.md
@@ -1250,3 +1252,6 @@ nav:
     - Strategy: courses/placement-preparation/05-placement-strategy.md
     - HR/GD/Soft Skills: courses/placement-preparation/06-hr-gd-soft-skills.md
     - Company PYQs: courses/placement-preparation/07-company-wise-pyqs.md
+=======
+
+

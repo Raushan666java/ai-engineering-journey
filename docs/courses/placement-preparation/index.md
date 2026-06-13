@@ -18,6 +18,7 @@ This course bridges the gap between theoretical knowledge and placement success.
 | 04 | [Company-Specific Preparation](04-company-specific.md) | FAANG vs product vs service, interview process |
 | 05 | [Placement Strategy](05-placement-strategy.md) | Season timeline, company targeting, rounds breakdown |
 | 06 | [HR, GD & Soft Skills](06-hr-gd-soft-skills.md) | HR questions, group discussion, communication skills |
+| 07 | [Company-Wise PYQs](07-company-wise-pyqs.md) | FAANG, product, service company interview problems |
 
 ## Version
 

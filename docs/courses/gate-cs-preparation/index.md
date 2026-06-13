@@ -18,6 +18,9 @@ This course covers the complete GATE Computer Science syllabus — from General 
 | 04 | [Digital Logic](04-digital-logic.md) | Boolean algebra, logic gates, combinational/sequential circuits |
 | 05 | [GATE Strategy](05-gate-strategy.md) | PYQs, topic weighting, time management, mock-test approach |
 | 06 | [Engineering Mathematics](06-engineering-mathematics.md) | Linear algebra, calculus, probability, discrete math refresher |
+| 07 | [Mock Test 1](07-mock-test-1.md) | Full-length GATE CS mock test with solutions |
+| 08 | [Mock Test 2](08-mock-test-2.md) | Second full-length GATE CS mock test |
+| 09 | [Mock Test 3](09-mock-test-3.md) | Third full-length GATE CS mock test |
 
 ## Version
 

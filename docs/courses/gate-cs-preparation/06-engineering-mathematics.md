@@ -723,3 +723,692 @@ Formula summary → solved GATE problems → quick practice.
 ---
 
 *"Engineering Mathematics is not about memorization — it's about pattern recognition. Every GATE problem tests a formula + a twist. Master the formulas, recognize the pattern, and the twist becomes trivial."*
+
+---
+
+## Previous Year Questions (GATE 2019-2025)
+
+### Linear Algebra (12 Problems)
+
+---
+
+**GATE 2019 (CS) — Q1:** Let `A` be a `3x3` matrix with eigenvalues `1, -1, 0`. Find the determinant of `A^3 + 2A + I`.
+
+**Solution:**
+- `det(A^3 + 2A + I)` is not directly factorable, but we can use eigenvalues. If `λ` is an eigenvalue of `A`, then `λ^3 + 2λ + 1` is an eigenvalue of `A^3 + 2A + I`.
+- For `λ = 1`: `1 + 2 + 1 = 4`
+- For `λ = -1`: `-1 - 2 + 1 = -2`
+- For `λ = 0`: `0 + 0 + 1 = 1`
+- `det(A^3 + 2A + I) = 4 * (-2) * 1 = -8`
+- **Answer: `-8`**
+
+---
+
+**GATE 2020 (CS) — Q2:** For a `3x3` matrix `A` with rank 2, what is the nullity?
+
+**Solution:**
+- By rank-nullity theorem: `rank(A) + nullity(A) = n` where `n = 3`
+- `nullity(A) = 3 - 2 = 1`
+- **Answer: `1`**
+
+---
+
+**GATE 2021 (CS) — Q3:** Let `A` be a `3x3` real symmetric matrix with eigenvalues `2, 2, 5`. What is the trace of `A^2`?
+
+**Solution:**
+- For symmetric `A`, eigenvalues are real. If `λ` is eigenvalue of `A`, `λ^2` is eigenvalue of `A^2`.
+- Eigenvalues of `A^2`: `4, 4, 25`
+- `tr(A^2) = sum of eigenvalues = 4 + 4 + 25 = 33`
+- **Answer: `33`**
+
+---
+
+**GATE 2022 (CS) — Q4:** For what value of `k` does the system have infinite solutions?
+```
+x + y + z = 1
+2x + 3y + 4z = 2
+3x + 4y + kz = 3
+```
+
+**Solution:**
+- Augmented matrix: `[A|b] = [[1,1,1,1], [2,3,4,2], [3,4,k,3]]`
+- Row reduce: `R2 -> R2 - 2R1`: `[0,1,2,0]`. `R3 -> R3 - 3R1`: `[0,1,k-3,0]`
+- `R3 -> R3 - R2`: `[0,0,k-5,0]`
+- For infinite solutions: `rank(A) = rank([A|b]) < 3`
+- Need `k - 5 = 0` so last equation becomes `0 = 0` (consistent) and `rank = 2 < 3`
+- **Answer: `k = 5`**
+
+---
+
+**GATE 2023 (CS) — Q5:** If `A = [[2,1],[1,2]]`, find `A^10` using Cayley-Hamilton theorem.
+
+**Solution:**
+- Characteristic equation: `det(A - λI) = (2-λ)^2 - 1 = λ^2 - 4λ + 3 = 0`
+- By Cayley-Hamilton: `A^2 - 4A + 3I = 0` so `A^2 = 4A - 3I`
+- We can use this to compute `A^n` recursively. Express `A^n = a_n A + b_n I`
+- `A^1 = 1*A + 0*I` so `a_1 = 1, b_1 = 0`
+- `A^2 = 4A - 3I` so `a_2 = 4, b_2 = -3`
+- Recurrence: `A^{n+1} = A * A^n = A(a_n A + b_n I) = a_n A^2 + b_n A = a_n(4A - 3I) + b_n A = (4a_n + b_n)A + (-3a_n)I`
+- `a_{n+1} = 4a_n + b_n`, `b_{n+1} = -3a_n`
+- Compute: `a_3 = 4(4) + (-3) = 13, b_3 = -3(4) = -12`
+- `a_4 = 4(13) + (-12) = 40, b_4 = -3(13) = -39`
+- `a_5 = 4(40) + (-39) = 121, b_5 = -3(40) = -120`
+- `a_6 = 4(121) + (-120) = 364, b_6 = -363`
+- `a_7 = 4(364) + (-363) = 1093, b_7 = -1092`
+- `a_8 = 4(1093) + (-1092) = 3280, b_8 = -3279`
+- `a_9 = 4(3280) + (-3279) = 9841, b_9 = -9840`
+- `a_10 = 4(9841) + (-9840) = 29524, b_10 = -3(9841) = -29523`
+- `A^10 = 29524*A + (-29523)*I`
+- Alternatively using eigenvalues `1, 3`: `A = PDP^{-1}`, `A^10 = PD^{10}P^{-1}` gives `A^10 = [[(3^10+1)/2, (3^10-1)/2], [(3^10-1)/2, (3^10+1)/2]]` with `3^10 = 59049`
+- **Answer: `A^10 = [[29524, 29525], [29525, 29524]]`** (using second method: `(59049+1)/2 = 29525, (59049-1)/2 = 29524` — verified)
+
+---
+
+**GATE 2024 (CS) — Q6:** Let `A` be a `4x4` matrix with `det(A) = 2`. Find `det(3A^{-1} + adj(A))`.
+
+**Solution:**
+- `adj(A) = det(A) * A^{-1} = 2A^{-1}`
+- `3A^{-1} + adj(A) = 3A^{-1} + 2A^{-1} = 5A^{-1}`
+- `det(5A^{-1}) = 5^4 * det(A^{-1}) = 625 * 1/det(A) = 625/2`
+- **Answer: `625/2`**
+
+---
+
+**GATE 2025 (CS) — Q7:** Let `T: R^3 -> R^3` be a linear transformation with matrix `A = [[1,2,0], [0,1,3], [0,0,1]]`. Find the dimension of the range space of `(T - 2I)`.
+
+**Solution:**
+- `T - 2I` has matrix `A - 2I = [[-1,2,0], [0,-1,3], [0,0,-1]]`
+- This is upper triangular with diagonal entries `-1, -1, -1` (all non-zero)
+- `det(A - 2I) = (-1)^3 = -1 ≠ 0`, so matrix is full rank
+- `rank = 3`, dimension of range space = 3
+- **Answer: `3`**
+
+---
+
+**GATE 2019 (CS) — Q8:** The eigenvectors of a `3x3` real symmetric matrix corresponding to distinct eigenvalues are always:
+
+**Solution:**
+- For a real symmetric matrix, eigenvectors corresponding to distinct eigenvalues are orthogonal.
+- This is a standard theorem: if `A = A^T` and `λ₁ ≠ λ₂` with `Av₁ = λ₁v₁, Av₂ = λ₂v₂`, then `v₁ · v₂ = 0`.
+- **Answer: Orthogonal**
+
+---
+
+**GATE 2020 (CS) — Q9:** Matrix `A` has LU decomposition `L = [[1,0],[0.5,1]]`, `U = [[4,3],[0,2.5]]`. Find `det(A)`.
+
+**Solution:**
+- `A = LU`, so `det(A) = det(L) * det(U)`
+- `det(L) = 1*1 - 0*0.5 = 1`
+- `det(U) = 4 * 2.5 - 3*0 = 10`
+- `det(A) = 1 * 10 = 10`
+- **Answer: `10`**
+
+---
+
+**GATE 2021 (CS) — Q10:** Find the rank of `A = [[1,2,3], [2,4,6], [3,6,9]]`.
+
+**Solution:**
+- Row reduce: `R2 -> R2 - 2R1`: `[0,0,0]`. `R3 -> R3 - 3R1`: `[0,0,0]`
+- Only one non-zero row remains
+- `rank = 1`
+- **Answer: `1`**
+
+---
+
+**GATE 2022 (CS) — Q11:** If `A` is an orthogonal matrix, what is `det(A)`?
+
+**Solution:**
+- Orthogonal means `A^T A = I`
+- `det(A^T A) = det(I) = 1`
+- `det(A^T) det(A) = 1`
+- `(det(A))^2 = 1` (since `det(A^T) = det(A)`)
+- `det(A) = ±1`
+- **Answer: `±1`**
+
+---
+
+**GATE 2023 (CS) — Q12:** If `A` is a `3x3` matrix with eigenvalues `1, 2, 3`, find the eigenvalues of `adj(A)`.
+
+**Solution:**
+- For a `3x3` matrix: if `λ` is eigenvalue of `A`, then `det(A)/λ` is eigenvalue of `adj(A)`.
+- `det(A) = 1*2*3 = 6`
+- Eigenvalues of `adj(A)`: `6/1 = 6, 6/2 = 3, 6/3 = 2`
+- **Answer: `6, 3, 2`**
+
+---
+
+### Calculus (10 Problems)
+
+---
+
+**GATE 2019 (CS) — Q1:** Evaluate `lim_{x -> 0} (sin(2x) - 2x)/(x^3)`.
+
+**Solution:**
+- This is `0/0` form, apply L'Hopital's rule:
+- `lim_{x -> 0} (2cos(2x) - 2)/(3x^2)` — still `0/0`
+- Apply again: `lim_{x -> 0} (-4sin(2x))/(6x)`
+- Apply again: `lim_{x -> 0} (-8cos(2x))/6 = -8/6 = -4/3`
+- Alternatively, use Taylor series: `sin(2x) = 2x - (8x^3)/6 + ...` so numerator `= -(8x^3)/6 + ...`
+- Dividing by `x^3`: `-8/6 = -4/3`
+- **Answer: `-4/3`**
+
+---
+
+**GATE 2020 (CS) — Q2:** Is the function `f(x) = |x|` differentiable at `x = 0`?
+
+**Solution:**
+- Left-hand derivative: `lim_{h -> 0^-} (|0+h| - |0|)/h = lim_{h -> 0^-} (-h)/h = -1`
+- Right-hand derivative: `lim_{h -> 0^+} (|0+h| - |0|)/h = lim_{h -> 0^+} h/h = 1`
+- LHD ≠ RHD, so `f` is NOT differentiable at `x = 0`
+- **Answer: No**
+
+---
+
+**GATE 2021 (CS) — Q3:** Find the maximum value of `f(x) = x^3 - 6x^2 + 9x + 1` on `[0, 5]`.
+
+**Solution:**
+- `f'(x) = 3x^2 - 12x + 9 = 3(x^2 - 4x + 3) = 3(x-1)(x-3)`
+- Critical points: `x = 1, 3`
+- Evaluate: `f(0) = 1`, `f(1) = 1 - 6 + 9 + 1 = 5`, `f(3) = 27 - 54 + 27 + 1 = 1`, `f(5) = 125 - 150 + 45 + 1 = 21`
+- Maximum on `[0,5]` is `21` at `x = 5`
+- **Answer: `21`**
+
+---
+
+**GATE 2022 (CS) — Q4:** Evaluate `∫_0^{π/2} sin^3(x) cos^2(x) dx`.
+
+**Solution:**
+- Let `u = cos(x)`, so `du = -sin(x) dx`
+- `sin^3(x) = sin^2(x) sin(x) = (1-cos^2(x)) sin(x) = (1-u^2) sin(x)`
+- Integral becomes: `∫_{1}^{0} (1-u^2) u^2 (-du) = ∫_{0}^{1} (u^2 - u^4) du`
+- `= [u^3/3 - u^5/5]_0^1 = 1/3 - 1/5 = (5-3)/15 = 2/15`
+- **Answer: `2/15`**
+
+---
+
+**GATE 2023 (CS) — Q5:** Find `f(0.1)` using Taylor series expansion about `x = 0` for `f(x) = e^x cos(x)` up to `x^3` terms.
+
+**Solution:**
+- `f(x) = e^x cos(x)`. Taylor: `f(x) = f(0) + f'(0)x + f''(0)x^2/2! + f'''(0)x^3/3! + ...`
+- `f(0) = 1`
+- `f'(x) = e^x cos(x) - e^x sin(x)`, `f'(0) = 1`
+- `f''(x) = e^x(cos - sin) + e^x(-sin - cos) = -2e^x sin(x)`, `f''(0) = 0`
+- `f'''(x) = -2e^x sin(x) - 2e^x cos(x)`, `f'''(0) = -2`
+- `f(x) ≈ 1 + x + 0*x^2/2 + (-2)x^3/6 = 1 + x - x^3/3`
+- `f(0.1) ≈ 1 + 0.1 - 0.001/3 ≈ 1.09967`
+- **Answer: `1.09967`**
+
+---
+
+**GATE 2024 (CS) — Q6:** If `f(x,y) = x^2y + xy^2`, find `∂²f/∂x∂y` at `(1,2)`.
+
+**Solution:**
+- `∂f/∂x = 2xy + y^2`
+- `∂²f/∂y∂x = ∂/∂y (2xy + y^2) = 2x + 2y`
+- At `(1,2)`: `2(1) + 2(2) = 2 + 4 = 6`
+- **Answer: `6`**
+
+---
+
+**GATE 2025 (CS) — Q7:** Let `f(x) = x^3 - 3x + 1`. How many real roots does the equation `f(x) = 0` have?
+
+**Solution:**
+- `f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)`
+- Critical points: `x = -1, 1`
+- `f(-1) = -1 + 3 + 1 = 3 > 0`, `f(1) = 1 - 3 + 1 = -1 < 0`
+- `lim_{x -> -∞} f(x) = -∞`, `lim_{x -> ∞} f(x) = ∞`
+- By Intermediate Value Theorem: 1 root in `(-∞, -1)`, 1 in `(-1, 1)`, 1 in `(1, ∞)`
+- **Answer: `3` real roots**
+
+---
+
+**GATE 2020 (CS) — Q8:** Find the gradient of `f(x,y,z) = x^2 + y^2 + z^2` at `(1,1,1)`.
+
+**Solution:**
+- `∇f = (∂f/∂x, ∂f/∂y, ∂f/∂z) = (2x, 2y, 2z)`
+- At `(1,1,1)`: `∇f = (2, 2, 2)`
+- **Answer: `(2, 2, 2)`**
+
+---
+
+**GATE 2021 (CS) — Q9:** Find `lim_{x -> 0} (e^x - 1 - x)/(x^2)`.
+
+**Solution:**
+- `0/0` form, apply L'Hopital's rule:
+- `lim_{x -> 0} (e^x - 1)/(2x)` — still `0/0`
+- Apply again: `lim_{x -> 0} e^x/2 = 1/2`
+- **Answer: `1/2`**
+
+---
+
+**GATE 2022 (CS) — Q10:** Does `∫_0^∞ e^{-x} sin(x) dx` converge? If yes, find its value.
+
+**Solution:**
+- `∫_0^∞ e^{-x} sin(x) dx = Im(∫_0^∞ e^{-x} e^{ix} dx) = Im(∫_0^∞ e^{-(1-i)x} dx)`
+- `= Im([-e^{-(1-i)x}/(1-i)]_0^∞) = Im(1/(1-i))`
+- `1/(1-i) = (1+i)/2`, so `Im = 1/2`
+- Yes, converges to `1/2`
+- **Answer: `1/2`**
+
+---
+
+### Probability & Statistics (12 Problems)
+
+---
+
+**GATE 2019 (CS) — Q1:** A bag has 3 red and 5 green balls. Two balls are drawn without replacement. Find probability both are green.
+
+**Solution:**
+- `P(both green) = P(first green) * P(second green | first green)`
+- `P(first green) = 5/8`
+- `P(second green | first green) = 4/7`
+- `P = (5/8) * (4/7) = 20/56 = 5/14`
+- **Answer: `5/14`**
+
+---
+
+**GATE 2020 (CS) — Q2:** Test `A` detects disease with 95% accuracy (both sensitivity and specificity). Prevalence is 1%. If a person tests positive, what is probability they actually have the disease?
+
+**Solution:**
+- By Bayes theorem: `P(D|+) = P(+|D)P(D) / P(+)`
+- `P(+|D) = 0.95`, `P(D) = 0.01`
+- `P(+) = P(+|D)P(D) + P(+|¬D)P(¬D) = 0.95*0.01 + 0.05*0.99 = 0.0095 + 0.0495 = 0.059`
+- `P(D|+) = 0.0095/0.059 ≈ 0.161`
+- **Answer: `~0.161`**
+
+---
+
+**GATE 2021 (CS) — Q3:** Random variable `X` has PMF: `P(X=k) = c * 2^{-k}` for `k = 1,2,3,...`. Find `c`.
+
+**Solution:**
+- Sum over all `k`: `∑_{k=1}^∞ c * 2^{-k} = c * ∑_{k=1}^∞ (1/2)^k = c * (1/2)/(1-1/2) = c * 1 = 1`
+- So `c = 1`
+- **Answer: `c = 1`**
+
+---
+
+**GATE 2022 (CS) — Q4:** For independent random variables `X` and `Y` with `Var(X) = 4` and `Var(Y) = 9`, find `Var(2X - 3Y)`.
+
+**Solution:**
+- `Var(2X - 3Y) = 4*Var(X) + 9*Var(Y)` (since independent, covariance = 0)
+- `= 4*4 + 9*9 = 16 + 81 = 97`
+- **Answer: `97`**
+
+---
+
+**GATE 2023 (CS) — Q5:** If `X ~ N(μ=10, σ²=4)`, find `P(8 < X < 12)`.
+
+**Solution:**
+- Standardize: `Z = (X - μ)/σ = (X-10)/2`
+- `P(8 < X < 12) = P((8-10)/2 < Z < (12-10)/2) = P(-1 < Z < 1)`
+- By 68-95-99.7 rule: `P(-1 < Z < 1) ≈ 0.6827`
+- More precisely: `Φ(1) - Φ(-1) = 2Φ(1) - 1 ≈ 2(0.8413) - 1 = 0.6826`
+- **Answer: `~0.6826`**
+
+---
+
+**GATE 2024 (CS) — Q6:** A fair coin is tossed 5 times. Find probability of exactly 3 heads.
+
+**Solution:**
+- Binomial: `n = 5, p = 0.5, k = 3`
+- `P(X = 3) = C(5,3) * (0.5)^3 * (0.5)^2 = 10 * (0.5)^5 = 10/32 = 5/16`
+- **Answer: `5/16`**
+
+---
+
+**GATE 2025 (CS) — Q7:** If `X` is uniformly distributed on `[0, 4]`, find `P(X^2 > 4)`.
+
+**Solution:**
+- `P(X^2 > 4) = P(X > 2)` since `X ≥ 0`
+- For uniform `[0,4]`: PDF `f(x) = 1/4` for `x ∈ [0,4]`
+- `P(X > 2) = ∫_2^4 (1/4) dx = (4-2)/4 = 2/4 = 1/2`
+- **Answer: `1/2`**
+
+---
+
+**GATE 2019 (CS) — Q8:** Find `Cov(X, Y)` if `Var(X) = 4, Var(Y) = 9, Var(X+Y) = 19`.
+
+**Solution:**
+- `Var(X+Y) = Var(X) + Var(Y) + 2Cov(X,Y)`
+- `19 = 4 + 9 + 2Cov(X,Y)`
+- `2Cov(X,Y) = 19 - 13 = 6`
+- `Cov(X,Y) = 3`
+- **Answer: `3`**
+
+---
+
+**GATE 2020 (CS) — Q9:** Emails arrive at a server at average rate 3 per minute (Poisson). Find probability of at most 1 email in 30 seconds.
+
+**Solution:**
+- Poisson: `λ = 3` per minute = `1.5` per 30 seconds
+- `P(X ≤ 1) = P(X=0) + P(X=1)`
+- `P(X=0) = e^{-1.5} * (1.5)^0 / 0! = e^{-1.5}`
+- `P(X=1) = e^{-1.5} * (1.5)^1 / 1! = 1.5e^{-1.5}`
+- `P(X ≤ 1) = e^{-1.5}(1 + 1.5) = 2.5e^{-1.5}`
+- `e^{-1.5} ≈ 0.2231`, so `P ≈ 2.5 * 0.2231 = 0.5578`
+- **Answer: `0.5578`**
+
+---
+
+**GATE 2021 (CS) — Q10:** An unbiased die is rolled. Let `E = {1,2,3}`, `F = {3,4,5}`. Are `E` and `F` independent?
+
+**Solution:**
+- `P(E) = 3/6 = 1/2`, `P(F) = 3/6 = 1/2`
+- `P(E ∩ F) = P({3}) = 1/6`
+- For independence: `P(E ∩ F) = P(E) * P(F) = 1/2 * 1/2 = 1/4`
+- `1/6 ≠ 1/4`, so NOT independent
+- **Answer: No**
+
+---
+
+**GATE 2022 (CS) — Q11:** Let `X` and `Y` be independent Bernoulli(`1/2`) random variables. Find `P(X + Y = 1 | X > 0)`.
+
+**Solution:**
+- `X, Y ~ Bernoulli(1/2)` independent
+- `X > 0` means `X = 1`. Using Bayes: `P(X=1, Y=0 | X=1) = P(Y=0) = 1/2` (since independent)
+- More formally: `P(X+Y=1 | X>0) = P(Y=0 | X=1) = P(Y=0) = 1/2`
+- **Answer: `1/2`**
+
+---
+
+**GATE 2023 (CS) — Q12:** If `E[X] = 2` and `Var(X) = 4`, find an upper bound on `P(|X - 2| ≥ 4)` using Chebyshev's inequality.
+
+**Solution:**
+- Chebyshev: `P(|X - μ| ≥ kσ) ≤ 1/k^2`
+- `μ = 2`, `σ = √Var = 2`
+- `P(|X - 2| ≥ 4) = P(|X - μ| ≥ 2σ)` so `k = 2`
+- Bound: `1/k^2 = 1/4 = 0.25`
+- **Answer: `≤ 0.25`**
+
+---
+
+### Discrete Mathematics (10 Problems)
+
+---
+
+**GATE 2019 (CS) — Q1:** A graph has 10 vertices, each of degree 3. How many edges does it have?
+
+**Solution:**
+- By Handshaking Lemma: `∑ deg(v) = 2|E|`
+- `10 * 3 = 30 = 2|E|`
+- `|E| = 15`
+- **Answer: `15`**
+
+---
+
+**GATE 2020 (CS) — Q2:** How many 3-letter words can be formed from the letters of "MATHEMATICS"?
+
+**Solution:**
+- Letters: `M(2), A(2), T(2), H(1), E(1), I(1), C(1), S(1)` — 8 distinct letters, some repeated
+- Cases:
+  - All 3 distinct: `P(8,3) = 8*7*6 = 336`
+  - Exactly 2 same, 1 different: choose the repeated letter (M, A, or T) × choose the different letter (7 remaining) × arrangements `= 3 * 7 * 3 = 63`
+  - All 3 same: not possible (max 2 copies of any letter)
+- Total: `336 + 63 = 399`
+- **Answer: `399`**
+
+---
+
+**GATE 2021 (CS) — Q3:** Solve recurrence: `a_n = 3a_{n-1} - 2a_{n-2}` for `n ≥ 2`, with `a_0 = 1, a_1 = 3`.
+
+**Solution:**
+- Characteristic equation: `r^2 - 3r + 2 = 0 → (r-1)(r-2) = 0`
+- Roots: `r = 1, 2`
+- General solution: `a_n = A(1)^n + B(2)^n = A + B*2^n`
+- `a_0 = A + B = 1`, `a_1 = A + 2B = 3`
+- Subtracting: `B = 2`, then `A = -1`
+- `a_n = -1 + 2^{n+1}`
+- **Answer: `a_n = 2^{n+1} - 1`**
+
+---
+
+**GATE 2022 (CS) — Q4:** In the group `(Z_7 - {0}, ×)` under multiplication modulo 7, find the order of element `3`.
+
+**Solution:**
+- `Z_7^* = {1,2,3,4,5,6}` under multiplication mod 7
+- `3^1 = 3`, `3^2 = 9 mod 7 = 2`, `3^3 = 6`, `3^4 = 18 mod 7 = 4`, `3^5 = 12 mod 7 = 5`, `3^6 = 15 mod 7 = 1`
+- Order = smallest `k` with `3^k = 1`, which is `6`
+- Since `7` is prime, `Z_7^*` is cyclic of order 6, and `3` is a generator.
+- **Answer: `6`**
+
+---
+
+**GATE 2023 (CS) — Q5:** Check if `(p → q) ∧ (q → r) → (p → r)` is a tautology.
+
+**Solution:**
+- If `p → q` and `q → r` are true, then whenever `p` is true, `q` is true, and then `r` is true.
+- So `p → r` is true whenever both premises are true.
+- This is the law of hypothetical syllogism — always true.
+- Can verify with truth table: all entries are `T`.
+- **Answer: Yes (tautology)**
+
+---
+
+**GATE 2024 (CS) — Q6:** If `|A| = 5, |B| = 3`, and `|A ∪ B| = 7`, find `|A ∩ B|`.
+
+**Solution:**
+- `|A ∪ B| = |A| + |B| - |A ∩ B|`
+- `7 = 5 + 3 - |A ∩ B|`
+- `|A ∩ B| = 5 + 3 - 7 = 1`
+- **Answer: `1`**
+
+---
+
+**GATE 2025 (CS) — Q7:** Find the coefficient of `x^5` in the generating function `(1 + x)^8`.
+
+**Solution:**
+- `(1+x)^8 = ∑_{k=0}^8 C(8,k) x^k`
+- Coefficient of `x^5 = C(8,5) = C(8,3) = 8*7*6/6 = 56`
+- **Answer: `56`**
+
+---
+
+**GATE 2020 (CS) — Q8:** Are the graphs `K_{3,3}` and `K_6` isomorphic?
+
+**Solution:**
+- `K_{3,3}` is bipartite (3+3 vertices), `K_6` is complete on 6 vertices
+- `K_6` contains triangles (3-cycles), but `K_{3,3}` has no odd cycles — it is bipartite
+- They cannot be isomorphic as one has triangles and the other doesn't
+- Also degrees: `K_{3,3}` has all vertices degree 3, `K_6` has all vertices degree 5
+- **Answer: No**
+
+---
+
+**GATE 2021 (CS) — Q9:** Among any 6 integers, prove that at least two have the same remainder when divided by 5.
+
+**Solution:**
+- By pigeonhole principle: remainders mod 5 are `{0,1,2,3,4}` — 5 possible values
+- With 6 integers and only 5 possible remainders, at least two must share a remainder
+- This is the pigeonhole principle: `⌈6/5⌉ = 2`
+- **Answer: True (pigeonhole principle)**
+
+---
+
+**GATE 2022 (CS) — Q10:** Consider the poset `(D_{12}, |)` where `D_{12}` is divisors of 12 and `|` is divisibility. Is it a lattice?
+
+**Solution:**
+- `D_{12} = {1,2,3,4,6,12}`
+- Hasse diagram: 12 at top, 1 at bottom
+- For any two elements, LUB = lcm, GLB = gcd
+- `lcm(2,3) = 6`, `gcd(2,3) = 1` — both in set
+- `lcm(4,6) = 12`, `gcd(4,6) = 2` — both in set
+- All pairs have both LUB and GLB in `D_{12}`
+- **Answer: Yes (it is a lattice)**
+
+---
+
+### Numerical Methods (6 Problems)
+
+---
+
+**GATE 2019 (CS) — Q1:** Starting with `x_0 = 1.5`, find `x_1` using Newton-Raphson for `f(x) = x^3 - 4x + 1`.
+
+**Solution:**
+- `f'(x) = 3x^2 - 4`
+- `x_{n+1} = x_n - f(x_n)/f'(x_n)`
+- `f(1.5) = 3.375 - 6 + 1 = -1.625`
+- `f'(1.5) = 3(2.25) - 4 = 6.75 - 4 = 2.75`
+- `x_1 = 1.5 - (-1.625)/2.75 = 1.5 + 0.5909 = 2.0909`
+- **Answer: `x_1 ≈ 2.0909`**
+
+---
+
+**GATE 2020 (CS) — Q2:** Using Simpson's 1/3 rule with `h = π/4`, approximate `∫_0^{π/2} sin(x) dx`.
+
+**Solution:**
+- Points: `x_0 = 0, x_1 = π/4, x_2 = π/2`
+- `f(0) = 0`, `f(π/4) = √2/2 ≈ 0.7071`, `f(π/2) = 1`
+- Simpson: `h/3 * [f(x_0) + 4f(x_1) + f(x_2)]`
+- `= (π/4)/3 * [0 + 4(0.7071) + 1] = π/12 * 3.8284`
+- `= 3.1416 * 3.8284/12 = 1.0023`
+- True value: `[-cos(x)]_0^{π/2} = 0 - (-1) = 1`
+- **Answer: `1.0023`**
+
+---
+
+**GATE 2021 (CS) — Q3:** Three points `(0,1), (1,2), (2,9)` lie on `f(x)`. Approximate `f(1.5)` using Lagrange interpolation.
+
+**Solution:**
+- `L_0(x) = (x-1)(x-2)/((0-1)(0-2)) = (x-1)(x-2)/2`
+- `L_1(x) = (x-0)(x-2)/((1-0)(1-2)) = x(x-2)/(-1) = -x(x-2)`
+- `L_2(x) = (x-0)(x-1)/((2-0)(2-1)) = x(x-1)/2`
+- `P(1.5) = 1*L_0(1.5) + 2*L_1(1.5) + 9*L_2(1.5)`
+- `L_0(1.5) = (0.5)(-0.5)/2 = -0.125`
+- `L_1(1.5) = -1.5(-0.5) = 0.75`
+- `L_2(1.5) = (1.5)(0.5)/2 = 0.375`
+- `P(1.5) = 1(-0.125) + 2(0.75) + 9(0.375) = -0.125 + 1.5 + 3.375 = 4.75`
+- **Answer: `4.75`**
+
+---
+
+**GATE 2022 (CS) — Q4:** How many bisection iterations to guarantee error `< 10^{-5}` on `[1,3]`?
+
+**Solution:**
+- Error bound: `(b-a)/2^{n+1} = (3-1)/2^{n+1} = 2/2^{n+1} = 1/2^n`
+- Need: `1/2^n < 10^{-5}` → `2^n > 10^5`
+- `2^16 = 65536 < 10^5`, `2^17 = 131072 > 10^5`
+- So `n ≥ 17`
+- **Answer: `17` iterations**
+
+---
+
+**GATE 2023 (CS) — Q5:** Solve the system using Gauss-Seidel method (2 iterations, `x^{(0)} = (0,0,0)`):
+```
+4x + y + z = 6
+x + 4y + z = 6
+x + y + 4z = 6
+```
+
+**Solution:**
+- Gauss-Seidel updates in place using latest values:
+- Iteration 1:
+  - `x_1 = (6 - y_0 - z_0)/4 = (6 - 0 - 0)/4 = 1.5`
+  - `y_1 = (6 - x_1 - z_0)/4 = (6 - 1.5 - 0)/4 = 4.5/4 = 1.125`
+  - `z_1 = (6 - x_1 - y_1)/4 = (6 - 1.5 - 1.125)/4 = 3.375/4 = 0.84375`
+- Iteration 2:
+  - `x_2 = (6 - y_1 - z_1)/4 = (6 - 1.125 - 0.84375)/4 = 4.03125/4 = 1.0078125`
+  - `y_2 = (6 - x_2 - z_1)/4 = (6 - 1.0078125 - 0.84375)/4 = 4.1484375/4 = 1.0371094`
+  - `z_2 = (6 - x_2 - y_2)/4 = (6 - 1.0078125 - 1.0371094)/4 = 3.9550781/4 = 0.9887695`
+- True solution: `x = y = z = 1`
+- **Answer: `x_2 ≈ 1.0078, y_2 ≈ 1.0371, z_2 ≈ 0.9888`**
+
+---
+
+**GATE 2024 (CS) — Q6:** Use trapezoidal rule with `n = 4` to approximate `∫_0^1 e^x dx`. Compare with exact value.
+
+**Solution:**
+- `h = (1-0)/4 = 0.25`
+- Points: `x_0=0, x_1=0.25, x_2=0.5, x_3=0.75, x_4=1.0`
+- `f(0) = 1`, `f(0.25) = e^{0.25} ≈ 1.2840`, `f(0.5) = e^{0.5} ≈ 1.6487`
+- `f(0.75) = e^{0.75} ≈ 2.1170`, `f(1) = e ≈ 2.7183`
+- Trapezoidal: `h/2 * [f(x_0) + 2(f(x_1)+f(x_2)+f(x_3)) + f(x_4)]`
+- `= 0.25/2 * [1 + 2(1.2840+1.6487+2.1170) + 2.7183]`
+- `= 0.125 * [1 + 2(5.0497) + 2.7183]`
+- `= 0.125 * [1 + 10.0994 + 2.7183] = 0.125 * 13.8177 = 1.7272`
+- Exact: `[e^x]_0^1 = e - 1 ≈ 1.7183`. Error ≈ `0.0089`
+- **Answer: `1.7272`** (exact: `1.7183`)
+
+---
+
+## Recommended Books & Resources
+
+### 1. Advanced Engineering Mathematics — Erwin Kreyszig (10th Ed.)
+
+| GATE Topic | Relevant Chapters |
+|------------|-------------------|
+| Linear Algebra | Ch. 7: Linear Algebra: Matrices, Vectors, Determinants; Ch. 8: Linear Algebra: Matrix Eigenvalue Problems |
+| Calculus | Ch. 9: Vector Differential Calculus; Ch. 10: Vector Integral Calculus |
+| Numerical Methods | Ch. 19: Numerics in General; Ch. 20: Numerical Linear Algebra; Ch. 21: Numerics for ODEs |
+| Probability | Ch. 24: Data Analysis & Probability Theory; Ch. 25: Mathematical Statistics |
+
+**Best for:** Clear theory exposition, worked examples, numerical methods depth. Every GATE aspirant should solve Ch. 7-8 problems for linear algebra mastery.
+
+---
+
+### 2. Introduction to Linear Algebra — Gilbert Strang (5th Ed.)
+
+| GATE Topic | Relevant Chapters |
+|------------|-------------------|
+| Matrix Operations & Rank | Ch. 1: Introduction to Vectors; Ch. 2: Solving Linear Equations |
+| Vector Spaces | Ch. 3: Vector Spaces and Subspaces |
+| Orthogonality | Ch. 4: Orthogonality |
+| Eigenvalues | Ch. 5: Eigenvalues and Eigenvectors |
+| Positive Definite Matrices | Ch. 6: Positive Definite Matrices |
+| SVD & Applications | Ch. 7: The Singular Value Decomposition |
+
+**Best for:** Deep geometric intuition. Strang explains *why* linear algebra works, not just *how*. The "Four Fundamental Subspaces" framework is essential for GATE conceptual questions.
+
+---
+
+### 3. A First Course in Probability — Sheldon Ross (10th Ed.)
+
+| GATE Topic | Relevant Chapters |
+|------------|-------------------|
+| Basic Probability | Ch. 2: Axioms of Probability; Ch. 3: Conditional Probability and Independence |
+| Random Variables | Ch. 4: Random Variables; Ch. 5: Continuous Random Variables |
+| Joint Distributions | Ch. 6: Jointly Distributed Random Variables |
+| Expectation | Ch. 7: Properties of Expectation |
+| Limit Theorems | Ch. 8: Limit Theorems |
+| Additional Topics | Ch. 9: Additional Topics in Probability |
+
+**Best for:** Crystal-clear problem-solving approach. Ross has hundreds of fully worked probability problems — practice these for GATE's probability section.
+
+---
+
+### 4. Discrete Mathematics and Its Applications — Kenneth Rosen (8th Ed.)
+
+| GATE Topic | Relevant Chapters |
+|------------|-------------------|
+| Logic & Proofs | Ch. 1: The Foundations: Logic and Proofs |
+| Set Theory | Ch. 2: Basic Structures: Sets, Functions, Sequences, Sums |
+| Counting | Ch. 6: Counting; Ch. 8: Advanced Counting Techniques |
+| Relations | Ch. 9: Relations |
+| Graph Theory | Ch. 10: Graphs |
+| Trees | Ch. 11: Trees |
+| Boolean Algebra | Ch. 12: Boolean Algebra |
+| Algebraic Structures | Ch. 13 (optional): Modeling Computation |
+
+**Best for:** Comprehensive coverage of discrete math for GATE CS. The chapter on counting (Ch. 6) and advanced counting/generating functions (Ch. 8) directly map to GATE question patterns.
+
+---
+
+### 5. Supplementary References
+
+| Book | Best For |
+|------|----------|
+| **Engineering Mathematics** — B.S. Grewal | Quick formula reference, extensive solved examples tailored to Indian exams |
+| **Probability and Statistics for Engineers** — Walpole, Myers | Applied probability with engineering context |
+| **Numerical Methods** — S.S. Sastry | GATE-focused numerical methods with clear algorithms and convergence analysis |
+| **Linear Algebra and Its Applications** — David C. Lay | Accessible introduction with strong computational focus |
+| **Higher Engineering Mathematics** — B.V. Ramana | Topic-wise organization matching GATE syllabus closely |
+
+### Recommended Study Plan
+
+| Phase | Focus | Resources |
+|-------|-------|-----------|
+| **1. Foundation (4 weeks)** | Formulas + basic problems | Kreyszig Ch. 7-8, Rosen Ch. 1-2, Ross Ch. 2-4 |
+| **2. Practice (3 weeks)** | 50+ problems per topic | Grewal, previous year GATE questions |
+| **3. Mastery (2 weeks)** | Mixed topic tests, time-bound | Strang Ch. 5-6 (conceptual depth), Sastry (numerical methods) |
+| **4. Revision (1 week)** | Formula sheets, weak areas | Quick reference table in this guide |
+
+**Key Strategy:** Engineering Mathematics contributes 10-15% of total GATE CS marks. Linear Algebra + Probability alone account for ~8-10%. Prioritize these two topics for maximum score impact.

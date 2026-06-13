@@ -1233,6 +1233,9 @@ nav:
     - Digital Logic: courses/gate-cs-preparation/04-digital-logic.md
     - Strategy: courses/gate-cs-preparation/05-gate-strategy.md
     - Engineering Math: courses/gate-cs-preparation/06-engineering-mathematics.md
+    - Mock Test 1: courses/gate-cs-preparation/07-mock-test-1.md
+    - Mock Test 2: courses/gate-cs-preparation/08-mock-test-2.md
+    - Mock Test 3: courses/gate-cs-preparation/09-mock-test-3.md
   - "💼 Placement":
     - Overview: courses/placement-preparation/index.md
     - Resume & Aptitude: courses/placement-preparation/01-resume-aptitude.md
@@ -1241,3 +1244,4 @@ nav:
     - Company Specific: courses/placement-preparation/04-company-specific.md
     - Strategy: courses/placement-preparation/05-placement-strategy.md
     - HR/GD/Soft Skills: courses/placement-preparation/06-hr-gd-soft-skills.md
+    - Company PYQs: courses/placement-preparation/07-company-wise-pyqs.md

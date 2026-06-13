@@ -1194,3 +1194,714 @@ Answer: 12 (a)
 ---
 
 > **Next chapter:** `02-group-discussions.md` — Group Discussions, Case Studies, and Personal Interview preparation.
+
+---
+
+## Placement Aptitude Practice Bank
+
+### Quantitative Aptitude Practice
+
+**Number System / LCM HCF / Percentages (Q1-Q50)**
+
+1. Find the HCF of 144, 180, and 192.
+2. Find the LCM of 24, 36, and 54.
+3. Three bells ring at intervals of 6, 12, and 18 seconds. After how many seconds will they ring together again?
+4. The sum of two numbers is 48 and their HCF is 6. How many such pairs exist?
+5. What is the smallest number divisible by 6, 8, and 15?
+6. Find the greatest number that divides 147, 210, and 294 leaving remainder 3 each time.
+7. The product of two numbers is 216 and LCM is 36. Find their HCF.
+8. What is the least number which when divided by 15, 20, and 25 leaves remainder 5?
+9. Two numbers are in ratio 3:5 and their LCM is 225. Find the numbers.
+10. Find the smallest 4-digit number divisible by 12, 18, and 30.
+11. What is 15% of 240?
+12. If 35% of a number is 175, find the number.
+13. A number increased by 20% becomes 720. Find the original number.
+14. What percent of 80 is 12?
+15. If A's salary is 25% more than B's, by what percent is B's salary less than A's?
+16. In an exam, 65% passed. If 280 failed, how many appeared?
+17. A's income is 20% less than B's. B's income is what percent more than A's?
+18. If x% of 400 = 64, find x.
+19. The population of a town increased from 50,000 to 60,500. Find the percentage increase.
+20. If the price of sugar rises by 10%, find the percentage reduction in consumption to keep expenditure constant.
+21. 0.125 expressed as a fraction is?
+22. Find 12.5% of 640.
+23. If 60% of students are boys and there are 240 girls, find total students.
+24. 30% of 30% of 500 = ?
+25. If the side of a square increases by 10%, find the percentage increase in area.
+26. A number when multiplied by 5/3 gives 45. Find the number.
+27. Find the value of 1 + 1/2 + 1/4 + 1/8.
+28. Simplify: 25 - 5 × 3 + 8 ÷ 4.
+29. Convert 7/12 to decimal.
+30. What is the unit digit of 7^105?
+31. The sum of digits of a two-digit number is 9. When digits are reversed, the number decreases by 45. Find the number.
+32. Find the smallest prime number greater than 50.
+33. Classify 0.123123123... as rational or irrational.
+34. Find the value of √(256) + √(169).
+35. What is the remainder when 2^50 is divided by 5?
+36. Simplify: (27)^(2/3).
+37. If a+b = 12 and ab = 35, find a² + b².
+38. Find the decimal expansion of 53/99.
+39. Arrange in ascending order: 3/5, 5/8, 7/12, 11/15.
+40. If x = 3 + 2√2, find 1/x.
+41. 2 hours 15 minutes is what percentage of 1 day?
+42. In a mixture of 60 litres, milk and water are in ratio 7:5. How much water must be added to reverse the ratio?
+43. If the marked price is Rs. 800 and discount is 15%, find selling price.
+44. A man spends 75% of his income. If his income increases by 20% and expenses increase by 10%, find percentage increase in savings.
+45. The price of an item increased by 25% and then decreased by 20%. Find net percentage change.
+46. In an election between two candidates, one got 55% of valid votes. If 10% of total votes were invalid and total votes were 8000, find votes the winner got.
+47. If 8% of x = 4% of y, find x:y.
+48. A's salary is 150% of B's and B's is 80% of C's. Find A:C ratio.
+49. If x is 125% of y, then y is what percent of x?
+50. A shopkeeper gives two successive discounts of 10% and 20%. Find the equivalent discount.
+
+**Profit-Loss / SI-CI / Ratio (Q51-Q100)**
+
+51. A man buys an article for Rs. 400 and sells it for Rs. 500. Find profit percent.
+52. An article costing Rs. 600 is sold at a loss of 15%. Find selling price.
+53. By selling an article for Rs. 480, a man loses 20%. Find cost price.
+54. A trader marks goods 30% above cost and gives 10% discount. Find profit percent.
+55. A shopkeeper sells at cost price but uses 900g weight instead of 1kg. Find profit percent.
+56. Find selling price if CP = Rs. 200, gain = 12(1/2)%.
+57. If an article is sold at Rs. 540, profit is 8%. Find CP.
+58. A dishonest dealer uses 800g weight and sells at cost price. Find gain%.
+59. If SP of 10 articles equals CP of 12 articles, find gain%.
+60. A man sold two items at Rs. 990 each. On one he gains 10%, on the other he loses 10%. Find net gain/loss.
+61. Find simple interest on Rs. 2000 at 8% per annum for 3 years.
+62. At what rate per annum will Rs. 1500 amount to Rs. 1860 in 3 years?
+63. In how many years will Rs. 800 become Rs. 1040 at 6% p.a. simple interest?
+64. Find CI on Rs. 5000 at 10% p.a. for 2 years.
+65. Find the difference between CI and SI on Rs. 4000 at 8% p.a. for 2 years.
+66. At what rate does Rs. 1200 amount to Rs. 1452 in 2 years compounded annually?
+67. The CI on Rs. 8000 at a certain rate for 2 years is Rs. 1682. Find the rate.
+68. In how many years will Rs. 2000 double at 5% p.a. simple interest?
+69. Find the SI on Rs. 3600 at 7.5% p.a. for 4 years.
+70. A sum becomes Rs. 2200 in 2 years and Rs. 2800 in 5 years at SI. Find the sum.
+71. Divide Rs. 300 between A and B in ratio 2:3.
+72. If a:b = 3:4 and b:c = 5:6, find a:b:c.
+73. Three numbers in ratio 2:3:5 have sum 200. Find the largest number.
+74. In a mixture of 40 litres, milk and water are in ratio 3:1. How much milk should be added to make ratio 4:1?
+75. If a:b = 2:3, b:c = 4:5, c:d = 6:7, find a:d.
+76. A bag has Rs. 1, 50 paise, and 25 paise coins in ratio 5:6:8 amounting to Rs. 210. Find the number of 25 paise coins.
+77. Income ratio of A:B = 3:2. Expenditure ratio = 5:3. Each saves Rs. 1000. Find A's income.
+78. A sum of money is divided among A,B,C in ratio 2:3:5. If C gets Rs. 120 more than A, find total.
+79. Two numbers are in ratio 5:7. If 9 is added to each, ratio becomes 8:11. Find the numbers.
+80. The ages of father and son are in ratio 7:2. In 5 years, ratio becomes 8:3. Find father's present age.
+81. 15% of a number exceeds 12% of the same by 6. Find the number.
+82. A man sold a watch at a profit of 12%. If he had sold it for Rs. 72 less, he would have lost 6%. Find CP.
+83. Marked price of an article is Rs. 1000. Two successive discounts of 15% and 10% are offered. Find SP.
+84. A shopkeeper mixes two types of rice costing Rs. 40/kg and Rs. 60/kg. In what ratio should they be mixed to get Rs. 48/kg?
+85. A man bought 20 items for Rs. 800 and sold 15 items for Rs. 750. Find profit/loss percent.
+86. By selling 36 oranges, a vendor loses SP of 4 oranges. Find loss percent.
+87. If CP of 12 articles equals SP of 10 articles, find gain percent.
+88. The profit on selling an item is Rs. 250, which is 20% of CP. Find CP.
+89. A man lends Rs. 10,000 in two parts at 5% and 8% p.a. Total interest in 1 year is Rs. 650. Find the amounts.
+90. A sum doubles in 10 years at SI. Find the rate percent.
+91. In what time will Rs. 3000 become Rs. 3993 at 10% p.a. compounded annually?
+92. The ratio of investments of A and B is 4:5. If both invest for same period and A's share of profit is Rs. 800, find B's share.
+93. In a partnership, A invests Rs. 6000 for 8 months, B invests Rs. 8000 for 6 months. Profit is Rs. 3000. Find B's share.
+94. Find the compound interest on Rs. 2000 at 5% per annum for 3 years.
+95. The difference between CI and SI on a sum for 2 years at 10% is Rs. 50. Find the sum.
+96. A certain sum at SI amounts to Rs. 1200 in 3 years and Rs. 1440 in 7 years. Find the rate.
+97. If a:b = 2:3 and b:c = 9:5, find a:b:c.
+98. If x:y = 2:3 and y:z = 6:5, find x:y:z.
+99. Four numbers in ratio 1:2:3:4 have sum 150. Find the smallest.
+100. A:B = 2:3, B:C = 4:5, C:D = 6:7. Find A:D.
+
+**Time-Speed-Distance / Time-Work (Q101-Q150)**
+
+101. A car travels 360 km in 6 hours. Find speed.
+102. A train 150 m long crosses a pole in 10 seconds. Find speed in km/h.
+103. A man walks at 5 km/h and reaches his destination in 4 hours. Find distance.
+104. Two trains of lengths 200 m and 300 m run at 60 km/h and 40 km/h towards each other. Find crossing time.
+105. A boat travels downstream 48 km in 4 hours. Speed of stream is 2 km/h. Find boat speed in still water.
+106. A man cycles 12 km in 30 minutes. Find speed in km/h.
+107. A train 250 m long crosses a platform 150 m long in 20 seconds. Find speed.
+108. Two persons A and B start from points 60 km apart and walk towards each other at 4 km/h and 6 km/h. When do they meet?
+109. A thief runs at 10 m/s. A policeman runs at 12 m/s. Distance between them is 100 m. When is the thief caught?
+110. A man takes 6 hours to row upstream and 4 hours to row downstream. River speed is 2 km/h. Find boat speed.
+111. A car travels at 30 km/h for first hour, 40 km/h for next 2 hours. Find average speed.
+112. A train passes a man standing on platform in 8 seconds and the platform 300 m long in 20 seconds. Find train length.
+113. A bus covers a distance at 50 km/h in 4 hours. At what speed must it return to cover the same distance in 3 hours 20 minutes?
+114. A person covers half distance at 30 km/h and other half at 50 km/h. Find average speed.
+115. A 240 m train running at 54 km/h crosses a bridge in 30 seconds. Find bridge length.
+116. In a 500 m race, A beats B by 50 m or 10 seconds. Find A's speed.
+117. A man can do a work in 10 days. Find work done in 3 days.
+118. A and B together can do a work in 12 days. A alone can do it in 20 days. In how many days can B alone do it?
+119. A can do a work in 15 days, B in 20 days. They work together for 5 days, then A leaves. How many more days for B?
+120. A, B, C can complete work in 10, 12, 15 days respectively. They work together for 3 days. How much work is left?
+121. 10 men can complete work in 16 days. How many men needed to complete in 8 days?
+122. A tap fills tank in 8 hours, another empties it in 12 hours. If both open, how long to fill?
+123. A pump fills tank in 6 hours. Due to leak, it takes 8 hours. Find time leak would empty the tank.
+124. A cistern has two pipes filling in 10 and 15 hours, and one emptying pipe. All three open together fill in 30 hours. Find emptying pipe's time.
+125. A does 1/3 work in 5 days, B does 2/5 work in 4 days. Together they can finish in how many days?
+126. If 6 workers earn Rs. 5400 in 5 days, what will 9 workers earn in 8 days?
+127. A can do work in 24 days. B is 60% more efficient than A. Find B's time.
+128. A and B together complete work in 6 days. A is twice as efficient as B. Find A's time alone.
+129. A contractor employs 30 men to complete work in 20 days. After 10 days, 10 men leave. How many extra days needed?
+130. Two pipes fill a tank in 20 and 30 minutes. A third pipe empties it in 15 minutes. All open together, find time to fill.
+131. A train travels at 72 km/h. How far does it travel in 45 minutes?
+132. A 200 m train passes a 300 m platform in 25 seconds. Find speed.
+133. A runs around 400 m track in 45 seconds, B in 50 seconds. When will they meet again at starting point?
+134. A walks at 3 km/h, rests 10 minutes each hour. How far in 4 hours?
+135. A car covers 240 km at 60 km/h and returns at 40 km/h. Find average speed.
+136. From a point, two persons start in opposite directions at 8 km/h and 6 km/h. Distance after 3 hours?
+137. A boat takes 9 hours to travel 36 km downstream and 24 km upstream. Speed of stream = 2 km/h. Find boat speed.
+138. A person rows 12 km upstream in 4 hours and 20 km downstream in 4 hours. Find stream speed.
+139. A 150 m train crosses a 250 m bridge at 20 m/s. Find time taken.
+140. A man reaches office 10 minutes late at 20 km/h. At 30 km/h, he reaches 10 minutes early. Find distance.
+141. Pipe A fills in 6 hours, pipe B in 8 hours. Both open for 2 hours, then B closed. How long A takes to fill remaining?
+142. Two taps A and B fill in 12 and 15 hours. Both opened but A closed after 4 hours. Find total time to fill.
+143. 15 workers complete work in 24 days. After 8 days, 5 more join. Find total days.
+144. A can do work in 10 days, B in 15 days. They alternate starting with A. When is work done?
+145. A takes twice as long as B and three times as long as C. Together they complete in 6 days. Find B's time.
+146. A man rows 20 km downstream in 2 hours and 12 km upstream in 3 hours. Find boat speed and stream speed.
+147. A car travels up a hill at 30 km/h and down at 50 km/h. Total time 4 hours. Find one-way distance.
+148. Two cyclists start at same time from opposite ends of 35 km road and meet in 42 minutes. If one is 5 km/h faster, find speeds.
+149. A metro train runs at 80 km/h between stations 2 km apart. Acceleration and deceleration are 1 m/s². Find shortest travel time.
+150. A man runs around a circular track of 600 m at 10 m/s and another at 15 m/s in opposite direction. Find meeting time.
+
+**Permutation-Combination / Probability / Data Interpretation (Q151-Q200)**
+
+151. How many ways can 4 books be arranged on a shelf?
+152. In how many ways can 3 persons be selected from 8?
+153. How many 3-digit numbers can be formed using digits 1,2,3,4,5 without repetition?
+154. In how many ways can the letters of "APPLE" be arranged?
+155. How many diagonals does a hexagon have?
+156. How many 4-letter words can be made from "EQUATION" with no repetition?
+157. A committee of 3 men and 2 women from 5 men and 4 women. How many ways?
+158. How many ways to arrange 6 books if 3 specific must be together?
+159. How many 5-digit numbers are divisible by 5 formed from digits 0-5 without repetition?
+160. In how many ways can 5 people sit around a circular table?
+161. A coin is tossed 3 times. Find probability of exactly 2 heads.
+162. A die is rolled once. Find probability of getting a prime number.
+163. Two dice are rolled. Find probability of sum 7.
+164. From a pack of 52 cards, one card is drawn. Find probability of a king.
+165. A bag has 3 red, 5 blue, 2 green balls. One drawn randomly. Find probability of blue.
+166. Two coins tossed. Find probability of at least one head.
+167. A box has 4 defective and 6 good items. Two drawn without replacement. Find both defective probability.
+168. A die rolled twice. Find probability sum > 9.
+169. P(A) = 0.4, P(B) = 0.3, P(A∩B) = 0.1. Find P(A∪B).
+170. A card is drawn from 52 cards. Find probability of red king or queen.
+171. Find the median of: 12, 15, 18, 22, 25, 30.
+172. Find the mode of: 2, 3, 5, 3, 7, 8, 3, 9.
+173. Mean of 5 numbers is 20. If one number 28 is removed, find new mean.
+174. Find the range of: 10, 25, 45, 60, 75, 90, 100.
+175. Standard deviation of a data set is 5. What is variance?
+176. A data set: 5, 10, 15, 20, 25. Find the mean deviation about mean.
+177. A shop has daily sales for 6 days: 100, 150, 200, 120, 180, 250. Find average.
+178. If each number in data is increased by 5, how does mean change?
+179. The mean of 10 numbers is 12. Each number is multiplied by 3. Find new mean.
+180. In a class of 30, the average age is 15 years. If teacher's age is included, average becomes 16. Find teacher's age.
+181. A table shows marks: 0-10 (5 students), 10-20 (8), 20-30 (12), 30-40 (7), 40-50 (3). Find total students.
+182. In the above distribution, which class has highest frequency?
+183. Find the sum of first 20 natural numbers.
+184. A bar graph shows sales: Jan 50, Feb 60, Mar 45, Apr 70. Which month had highest sales?
+185. A pie chart shows 40% food, 25% rent, 20% transport, 15% savings. If monthly income is Rs. 30,000, find food expense.
+186. How many 5-digit numbers can be formed from 0-6 without repetition?
+187. How many ways to choose a cricket team of 11 from 15 players?
+188. In how many ways can 4 men and 3 women line up if no two women are adjacent?
+189. Find the number of ways to distribute 7 identical balls into 3 distinct boxes.
+190. How many 4-digit numbers have all even digits?
+191. Probability of a leap year having 53 Sundays.
+192. A speaks truth in 75% cases, B in 80% cases. Find probability they contradict.
+193. A problem is solved by A with probability 1/2, by B with 1/3. Find probability it is solved.
+194. From a deck, 2 cards drawn. Find probability both are aces.
+195. A family has 2 children. Find probability both are boys given at least one is boy.
+196. The odds in favor of an event are 3:5. Find probability of event.
+197. Two dice thrown. Find probability of doublet (same number on both).
+198. A bag has 5 white, 4 red, 3 blue balls. Three drawn at random. Find probability all different colors.
+199. Probability of hitting a target is 1/4. 5 shots fired. Find probability hitting at least 3 times.
+200. A letter is chosen from "PROBABILITY". Find probability it is a vowel.
+
+**Answer Key — Quantitative Aptitude**
+
+| Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
+|----|--------|----|--------|----|--------|----|--------|
+| 1 | 12 | 2 | 216 | 3 | 36 sec | 4 | 3 |
+| 5 | 120 | 6 | 27 | 7 | 6 | 8 | 305 |
+| 9 | 45, 75 | 10 | 1080 | 11 | 36 | 12 | 500 |
+| 13 | 600 | 14 | 15% | 15 | 20% | 16 | 800 |
+| 17 | 25% | 18 | 16 | 19 | 21% | 20 | 9.09% |
+| 21 | 1/8 | 22 | 80 | 23 | 600 | 24 | 45 |
+| 25 | 21% | 26 | 27 | 27 | 15/8 | 28 | 13 |
+| 29 | 0.5833 | 30 | 7 | 31 | 72 | 32 | 53 |
+| 33 | Rational | 34 | 29 | 35 | 4 | 36 | 9 |
+| 37 | 74 | 38 | 0.5353 | 39 | 7/12,3/5,5/8,11/15 | 40 | 3-2√2 |
+| 41 | 9.375% | 42 | 24 L | 43 | Rs. 680 | 44 | 50% |
+| 45 | 0% | 46 | 3960 | 47 | 1:2 | 48 | 6:5 |
+| 49 | 80% | 50 | 28% | 51 | 25% | 52 | Rs. 510 |
+| 53 | Rs. 600 | 54 | 17% | 55 | 11.11% | 56 | Rs. 225 |
+| 57 | Rs. 500 | 58 | 25% | 59 | 20% | 60 | Rs. 20 loss |
+| 61 | Rs. 480 | 62 | 8% | 63 | 5 years | 64 | Rs. 1050 |
+| 65 | Rs. 25.60 | 66 | 10% | 67 | 10% | 68 | 20 years |
+| 69 | Rs. 1080 | 70 | Rs. 1600 | 71 | Rs. 120, Rs. 180 | 72 | 15:20:24 |
+| 73 | 100 | 74 | 5 L | 75 | 16:35 | 76 | 160 |
+| 77 | Rs. 6000 | 78 | Rs. 480 | 79 | 15, 21 | 80 | 35 years |
+| 81 | 200 | 82 | Rs. 400 | 83 | Rs. 765 | 84 | 3:2 |
+| 85 | 25% loss | 86 | 10% | 87 | 20% | 88 | Rs. 1250 |
+| 89 | Rs. 5000, Rs. 5000 | 90 | 10% | 91 | 3 years | 92 | Rs. 1000 |
+| 93 | Rs. 1500 | 94 | Rs. 315.25 | 95 | Rs. 5000 | 96 | 6% |
+| 97 | 6:9:5 | 98 | 4:6:5 | 99 | 15 | 100 | 48:105 |
+| 101 | 60 km/h | 102 | 54 km/h | 103 | 20 km | 104 | 18 sec |
+| 105 | 10 km/h | 106 | 24 km/h | 107 | 72 km/h | 108 | 6 hours |
+| 109 | 50 sec | 110 | 10 km/h | 111 | 110/3 km/h | 112 | 200 m |
+| 113 | 60 km/h | 114 | 37.5 km/h | 115 | 210 m | 116 | 10 m/s |
+| 117 | 3/10 | 118 | 30 days | 119 | 20/3 days | 120 | 1/4 work left |
+| 121 | 20 men | 122 | 24 hours | 123 | 24 hours | 124 | 30 hours |
+| 125 | 150/17 days | 126 | Rs. 12,960 | 127 | 15 days | 128 | 9 days |
+| 129 | 5 extra | 130 | 60 min | 131 | 54 km | 132 | 72 km/h |
+| 133 | 450 sec | 134 | 11 km | 135 | 48 km/h | 136 | 42 km |
+| 137 | 6 km/h | 138 | 1 km/h | 139 | 20 sec | 140 | 20 km |
+| 141 | 2.5 hours | 142 | 10 hours | 143 | 20 days | 144 | 12 days |
+| 145 | 10 days | 146 | 7, 3 km/h | 147 | 75 km | 148 | 22.5, 27.5 km/h |
+| 149 | 100 sec | 150 | 24 sec | 151 | 24 | 152 | 56 |
+| 153 | 60 | 154 | 60 | 155 | 9 | 156 | 1680 |
+| 157 | 60 | 158 | 144 | 159 | 216 | 160 | 24 |
+| 161 | 3/8 | 162 | 1/2 | 163 | 1/6 | 164 | 1/13 |
+| 165 | 1/2 | 166 | 3/4 | 167 | 2/15 | 168 | 1/6 |
+| 169 | 0.6 | 170 | 1/13 | 171 | 20 | 172 | 3 |
+| 173 | 18 | 174 | 90 | 175 | 25 | 176 | 6 |
+| 177 | 166.67 | 178 | Increases by 5 | 179 | 36 | 180 | 46 years |
+| 181 | 35 | 182 | 20-30 | 183 | 210 | 184 | Apr |
+| 185 | Rs. 12,000 | 186 | 2160 | 187 | 1365 | 188 | 1440 |
+| 189 | 36 | 190 | 500 | 191 | 2/7 | 192 | 0.35 |
+| 193 | 2/3 | 194 | 1/221 | 195 | 1/3 | 196 | 3/8 |
+| 197 | 1/6 | 198 | 30/91 | 199 | 53/512 | 200 | 4/11 |
+
+### Logical Reasoning Practice
+
+**Syllogisms / Blood Relations (Q1-Q40)**
+
+1. All cats are mammals. Some mammals are dogs. Conclusion: Some cats are dogs.
+2. No book is pencil. All pencils are pens. Conclusion: No book is pen.
+3. Some apples are fruits. All fruits are sweet. Conclusion: Some apples are sweet.
+4. All flowers are plants. No plant is stone. Conclusion: No flower is stone.
+5. Some birds are crows. All crows are black. Conclusion: Some birds are black.
+6. All engineers are graduates. Some graduates are employed. Conclusion: Some engineers are employed.
+7. No car is bus. All buses are vehicles. Conclusion: Some vehicles are not cars.
+8. Some pens are markers. All markers are highlighters. Conclusion: Some pens are highlighters.
+9. All rivers are water bodies. No water body is desert. Conclusion: No desert is river.
+10. Some tables are chairs. No chair is stool. Conclusion: Some stools are not tables.
+11. Pointing to a man, Priya said, "He is the son of my mother's only daughter." How is the man related to Priya?
+12. A man introduces a woman as "She is the daughter of my father's only sister." How is the man related to the woman?
+13. Rahul is the son of Ravi. Ravi's wife is Seema. Seema is the daughter of Ramesh. How is Ramesh related to Rahul?
+14. A is the brother of B. C is the father of A. D is the sister of C. How is D related to B?
+15. P is the mother of Q. R is the son of Q. S is the daughter of R. How is P related to S?
+16. A's father is B. B's sister is C. C's mother is D. D's husband is E. How is A related to E?
+17. Introducing a boy, Raj said, "His mother is the only daughter of my father." How is Raj related to the boy?
+18. X is the father of Y. Y is the mother of Z. Z is the brother of W. How is X related to W?
+19. A is the mother of B and C. D is the brother of E. E is the wife of B. How is D related to A?
+20. M is the sister of N. N is the brother of O. O is the father of P. How is M related to P?
+21. All doctors are intelligent. No intelligent person is rude. Conclusion: No doctor is rude.
+22. Some stones are diamonds. All diamonds are precious. Conclusion: Some precious items are stones.
+23. No animal is bird. All birds are flyers. Conclusion: Some flyers are not animals.
+24. All squares are rectangles. All rectangles are polygons. Conclusion: All squares are polygons.
+25. Some poets are writers. All writers are thinkers. Conclusion: Some thinkers are not poets.
+26. No laptop is desktop. Some desktops are monitors. Conclusion: Some monitors are not laptops.
+27. All fruits are edible. Some edible things are bitter. Conclusion: Some bitter things are fruits.
+28. Some planets are stars. No star is moon. Conclusion: Some moons are not planets.
+29. All teachers are educated. Some educated people are rich. Conclusion: Some rich people are teachers.
+30. No fish is mammal. All whales are mammals. Conclusion: No whale is fish.
+31. A says, "B is my father's only son." How is A related to B?
+32. A is the daughter of B. C is the brother of A. D is the father of C. How is B related to D?
+33. P is the sister of Q. R is the mother of P. S is the father of R. How is Q related to S?
+34. M and N are brothers. M's daughter is O. O's brother is P. How is N related to P?
+35. A is the grandfather of B. C is the mother of B. D is the wife of A. How is D related to C?
+36. X is the brother of Y. Y is the wife of Z. Z is the son of W. How is X related to W?
+37. If "MOTHER" is coded as "OUGHTR", how is "FATHER" coded?
+38. If "LIGHT" is related to "DARK", then "HOT" is related to?
+39. If "TREE" is to "FOREST" as "DROP" is to?
+40. If "January" is to "February", then "Monday" is to?
+
+**Seating Arrangements / Puzzles (Q41-Q80)**
+
+41. A, B, C, D, E sit in a row. A is at one end. B is second to the right of A. C is between B and D. E is to the right of D. Who is at the right end?
+42. Five friends P, Q, R, S, T sit in a circle. P is between Q and R. S is opposite P. T is to the immediate right of S. Who is opposite Q?
+43. Six persons sit in two opposite rows of three each. Row 1: A, B, C facing North. Row 2: D, E, F facing South. B is opposite E. C is at an end. A is to the left of B. Who is opposite C?
+44. Seven people live in a seven-story building. A lives on 5th floor. B lives two floors above A. C lives between B and D. E lives on the top floor. F lives below C. Who lives on ground floor?
+45. Eight persons in a square: A, B, C, D on sides, E, F, G, H at corners. A and C are opposite. B is between D and E. F is opposite G. Who is at the corner between B and C?
+46. Six books: Math, Physics, Chemistry, Biology, History, Geography on a shelf. Math is left of Physics. Chemistry is between Biology and History. Geography is at the extreme right. Biology is left of Math. Which book is at extreme left?
+47. Four couples sit around a table. Men: M1, M2, M3, M4. Women: W1, W2, W3, W4. No two men sit together. W1 is between M1 and M2. W2 is opposite W1. Who sits between M3 and M4?
+48. A, B, C, D, E, F are sitting in a circle. A is between E and F. C is to the immediate left of B. D is second to the right of A. E is not adjacent to D. Who is to the right of B?
+49. 10 people stand in a queue. P is 4th from front. Q is 6th from back. R is exactly between P and Q. What is R's position from front?
+50. In a row of 40, A is 15th from left. If 5 people move between them, B is 20th from right. How many between A and B?
+51. There are five houses in five different colors. The red house is left of green but right of blue. White is left of yellow. Yellow is right of red. Which house is in the middle?
+52. Seven different T-shirts: Red, Blue, Green, Yellow, Black, White, Pink. Blue is costlier than Green. Pink is cheaper than White. Yellow is costlier than Black but cheaper than Red. Green is costlier than Yellow. Which is the cheapest?
+53. A, B, C, D each have different professions: Doctor, Engineer, Teacher, Lawyer. A is not the Doctor. B is the Engineer. C is not the Teacher. D is the Lawyer. Who is the Doctor?
+54. Five colleagues: E, F, G, H, I. E earns more than F. G earns less than H. I earns more than E but less than H. F earns more than G. Who earns the least?
+55. Four people: P, Q, R, S. P is taller than Q but shorter than R. S is shorter than Q. Who is the tallest?
+56. In a batch of 60, 35 like coffee, 30 like tea, and 10 like neither. How many like both?
+57. 100 people surveyed: 60 read Times, 50 read Hindu, 20 read both. How many read neither?
+58. 40 students: 25 play cricket, 20 play football, 8 play both. How many play only cricket?
+59. In a class of 50, 30 passed math, 25 passed science, 15 passed both. How many passed at least one?
+60. A, B, C, D are four numbers. A + B = C + D. A + C = B + D. A > B. Which is the largest?
+61. If March 1, 2024 is Friday, what day is March 31, 2024?
+62. A clock shows 3:15. What is the angle between hour and minute hand?
+63. How many times do the hands of a clock coincide in 12 hours?
+64. In a month, the 3rd day is Tuesday. What day is the 25th?
+65. If 16th June 2025 is Monday, what day is 16th August 2025?
+66. A man is 24 years older than his son. In 4 years, he will be 3 times son's age. Find son's present age.
+67. 5 years ago, father was 5 times son's age. After 5 years, father will be 3 times son's age. Find son's present age.
+68. Sum of ages of A and B is 50. In 5 years, A will be twice B's age. Find A's age.
+69. A dog chases a cat. The dog takes 4 leaps for every 5 leaps of the cat. The dog's 3 leaps = cat's 5 leaps. Find speed ratio.
+70. A milkman mixes water in milk. He mixes 1 L water for every 4 L milk. If he mixes 5 L water, find total mixture.
+71. If 42 workers can build a wall in 24 days, how many days for 28 workers?
+72. 12 men or 18 women can complete work in 14 days. How long for 6 men and 9 women?
+73. A car consumes 5 L of petrol per 100 km. Distance to office is 30 km. Find weekly consumption (5 days) for to-and-fro.
+74. A man divides Rs. 5000 among son, daughter, and wife in ratio 2:3:5. Find daughter's share.
+75. In a class of 40, the ratio of boys to girls is 3:2. 10 new boys join. Find new ratio.
+76. Find the missing number: 2, 6, 12, 20, ?, 42.
+77. Find the next number: 3, 9, 27, 81, ?
+78. Find the odd one out: 2, 5, 10, 17, 26, 38.
+79. Find the next letter: A, D, G, J, ?
+80. Complete the series: 1, 4, 27, 256, ?
+
+**Coding-Decoding / Analogies (Q81-Q110)**
+
+81. If "APPLE" is coded as "BQQMF", how is "MANGO" coded?
+82. If "DELHI" is coded as "EDLIH", how is "MUMBAI" coded?
+83. In a code language, "SUN" is written as "RVM". How is "MOON" coded?
+84. If "TABLE" is written as "UBCMF", what is "CHAIR"?
+85. If 2=5, 3=10, 4=17, 5=26, find 6=?
+86. In a code, "ABCD" is 1234. Find code for "BAD".
+87. If "BLUE" is coded as "ALVF", how is "GREEN" coded?
+88. If "TIGER" = 20, "LION" = 12, "BEAR" = ?
+89. If (3,6), (5,10), (7,14), then (9,?)
+90. If "PENCIL" is coded as "QFOEJM", what is "ERASER"?
+91. If Monday = 4, Tuesday = 5, Wednesday = 6, then Friday = ?
+92. In a code, "CROW" is 69, "BIRD" is 40, then "FISH" is?
+93. If "MILK" = 49, "BREAD" = 36, then "WATER" = ?
+94. If "JAN" is coded as "25", "FEB" as "11", then "MAR" as?
+95. If "ROSE" → "SPTF", what is "LILY"?
+96. If "2" is "5", "3" is "10", "4" is "17", what is "7"?
+97. If "ABCD" = 10, "EFGH" = 26, "IJKL" = ?
+98. In code, "TRAIN" is "UQZHM". What is "PLANE"?
+99. "FOUR" = 60, "TWO" = 60, "SIX" = ?
+100. If "HELLO" = 37, "WORLD" = 72, then "PEACE" = ?
+101. Hand is to Glove as Foot is to ___?
+102. Book is to Author as Painting is to ___?
+103. Tree is to Forest as Star is to ___?
+104. Pen is to Write as Knife is to ___?
+105. Doctor is to Hospital as Teacher is to ___?
+106. Bird is to Nest as Bee is to ___?
+107. Clock is to Time as Thermometer is to ___?
+108. Lion is to Den as King is to ___?
+109. Cube is to Square as Cone is to ___?
+110. Flower is to Garden as Book is to ___?
+
+**Statement-Conclusion / Assumptions (Q111-Q150)**
+
+111. Statement: "This brand of toothpaste is recommended by 9 out of 10 dentists." Which is an assumption?
+112. Statement: "Should girls be allowed in boys' schools?" Arguments: I. Yes, promotes equality. II. No, creates distractions.
+113. Statement: "The government should ban smoking in public places." Which is a strong argument?
+114. Statement: "If you study hard, you will pass." From this, we can conclude that passing requires?
+115. Statement: "All birds have wings. Penguins are birds." Conclusion: Penguins have wings.
+116. Statement: "Only intelligent students can solve this puzzle. Rahul solved it." Conclusion: Rahul is intelligent.
+117. Statement: "Every year thousands die in road accidents. Speed limits should be strictly enforced." What is the assumption?
+118. Statement: "Private companies pay better salaries than government sector." Which would weaken this?
+119. Statement: "The city has built a new flyover to reduce traffic congestion." What proves the motive?
+120. Statement: "All medicines have side effects. Ayurvedic products are medicines." Conclusion: Ayurvedic products have side effects.
+121. Statement: "Politicians become rich after entering politics." Assumption: Politics is lucrative.
+122. Statement: "Advertisement: Our AC cools faster than any other brand." Assumption: Cooling speed matters to consumers.
+123. Statement: "Rama is taller than Shyama. Shyama is taller than Geeta." Conclusion: Rama is taller than Geeta.
+124. Statement: "None but the brave deserve the fair." Conclusion: Some brave people do not deserve the fair.
+125. Statement: "Some people are rich. Some rich people are honest." Can we conclude "Some honest people are rich"?
+126. Statement: "If it rains, the match will be cancelled. The match was not cancelled." Conclusion: It did not rain.
+127. Statement: "Cigarette packets must display graphic warnings." Assumption: Graphic warnings deter smokers.
+128. Statement: "Obesity is increasing due to junk food consumption." Which would strengthen?
+129. Statement: "The company has laid off 500 employees." What cannot be inferred?
+130. Statement: "Most accidents occur due to drunk driving." Conclusion: Drunk driving is a major cause.
+131. Statement: "A is B's brother. B is C's sister." Conclusion: A is C's brother.
+132. Statement: "All poets are dreamers. Some dreamers are artists." Conclusion: Some artists are poets.
+133. Statement: "No honest person is a politician. Raman is a politician." Conclusion: Raman is not honest.
+134. Statement: "Passengers are requested not to talk to the driver." Assumption: Distraction affects driving.
+135. Statement: "The TDS deduction rate has been increased." Conclusion: Government wants to collect more taxes.
+136. Statement: "Increase in GST has made goods more expensive." Which course of action should the government take?
+137. Statement: "Students should be given homework." Which is a counter-argument?
+138. Statement: "Sachin is a better batsman than Kohli." What would weaken this?
+139. Statement: "Adults above 18 should have the right to vote." What is the underlying assumption?
+140. Statement: "Water is precious. Conserve water." What is the implied instruction?
+141. Statement: "Old age pension should be increased." Assumption: Elderly need more financial support.
+142. Statement: "The exam was very difficult. Only 10% passed." Conclusion: The passing percentage is low.
+143. Statement: "Life insurance gives financial security." Which most strengthens?
+144. Statement: "Exercise is essential for good health." Assumption: Lack of exercise harms health.
+145. Statement: "You cannot have your cake and eat it too." Meaning: You must choose between alternatives.
+146. Statement: "The best way to predict the future is to create it." Implies: Proactive action shapes outcomes.
+147. Statement: "Demand for electric vehicles is rising." Which would not be a reason?
+148. Statement: "Higher education leads to better job opportunities." Counter-example: Skills matter more.
+149. Statement: "The company's profits have fallen for three consecutive quarters." Inference: The company may be in trouble.
+150. Statement: "Time and tide wait for no man." Meaning: Opportunities once lost may not return.
+
+**Answer Key — Logical Reasoning**
+
+| Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
+|----|--------|----|--------|----|--------|----|--------|
+| 1 | Invalid | 2 | Invalid | 3 | Valid | 4 | Valid |
+| 5 | Valid | 6 | Invalid | 7 | Valid | 8 | Valid |
+| 9 | Valid | 10 | Invalid | 11 | Son | 12 | Nephew |
+| 13 | Grandfather | 14 | Aunt | 15 | Great-grandmother | 16 | Grandson |
+| 17 | Father | 18 | Grandfather | 19 | No relation | 20 | Aunt |
+| 21 | Valid | 22 | Valid | 23 | Valid | 24 | Valid |
+| 25 | Invalid | 26 | Valid | 27 | Invalid | 28 | Invalid |
+| 29 | Invalid | 30 | Valid | 31 | Brother | 32 | Wife |
+| 33 | Grandson | 34 | Uncle | 35 | Mother-in-law | 36 | Brother-in-law |
+| 37 | "FAHTRE" | 38 | Cold | 39 | Ocean | 40 | Tuesday |
+| 41 | E | 42 | T | 43 | D | 44 | G |
+| 45 | H | 46 | Biology | 47 | W3 | 48 | C |
+| 49 | 6th | 50 | 9 | 51 | Green | 52 | Black |
+| 53 | A | 54 | G | 55 | R | 56 | 15 |
+| 57 | 10 | 58 | 17 | 59 | 40 | 60 | A or D |
+| 61 | Sunday | 62 | 7.5° | 63 | 11 | 64 | Wednesday |
+| 65 | Thursday | 66 | 8 years | 67 | 10 years | 68 | 35 years |
+| 69 | 25:12 | 70 | 25 L | 71 | 36 days | 72 | 14 days |
+| 73 | 15 L | 74 | Rs. 1500 | 75 | 5:2 | 76 | 30 |
+| 77 | 243 | 78 | 38 | 79 | M | 80 | 3125 |
+| 81 | "NBOHP" | 82 | "NUMABM" | 83 | "LPPO" | 84 | "DIcFJ" |
+| 85 | 37 | 86 | 213 | 87 | "FQFDO" | 88 | 14 |
+| 89 | 18 | 90 | "FSBZFQ" | 91 | 8 | 92 | 42 |
+| 93 | 67 | 94 | 36 | 95 | "MJMZ" | 96 | 50 |
+| 97 | 42 | 98 | "OMZMD" | 99 | 90 | 100 | 30 |
+| 101 | Sock | 102 | Painter | 103 | Galaxy | 104 | Cut |
+| 105 | School | 106 | Hive | 107 | Temperature | 108 | Palace |
+| 109 | Triangle | 110 | Library | 111 | Dentist endorsement matters | 112 | Both weak |
+| 113 | Health concerns over personal choice | 114 | Hard work | 115 | Valid | 116 | Valid |
+| 117 | Speed enforcement reduces accidents | 118 | Govt jobs have better security | 119 | Traffic congestion was a problem | 120 | Valid |
+| 121 | Valid assumption | 122 | Valid assumption | 123 | Valid | 124 | Invalid |
+| 125 | Valid | 126 | Valid | 127 | Valid assumption | 128 | Studies link junk food to obesity |
+| 129 | The company is bankrupt | 130 | Valid | 131 | Invalid (could be brother) | 132 | Invalid |
+| 133 | Valid | 134 | Valid | 135 | Valid inference | 136 | Review GST impact |
+| 137 | Homework stresses students | 138 | Kohli has better average | 139 | Adults can make informed decisions | 140 | Use water wisely |
+| 141 | Valid | 142 | Valid | 143 | Families get compensation | 144 | Valid |
+| 145 | Valid | 146 | Valid | 147 | Petrol prices fell | 148 | Valid counter |
+| 149 | Valid inference | 150 | Valid |
+
+### Verbal Ability Practice
+
+**Vocabulary — Synonyms & Antonyms (Q1-Q30)**
+
+1. Synonym of ABANDON
+2. Synonym of BRIEF
+3. Synonym of CACOPHONY
+4. Synonym of DILIGENT
+5. Synonym of ELUSIVE
+6. Synonym of FRUGAL
+7. Synonym of GULLIBLE
+8. Synonym of HUBRIS
+9. Synonym of IMPERATIVE
+10. Synonym of JUBILANT
+11. Antonym of ARROGANT
+12. Antonym of BENEVOLENT
+13. Antonym of CANDID
+14. Antonym of DIVERGE
+15. Antonym of EPHEMERAL
+16. Antonym of FLUCTUATE
+17. Antonym of GRATIFY
+18. Antonym of HYPOTHETICAL
+19. Antonym of IMMUTABLE
+20. Antonym of JUVENILE
+21. Choose the correctly spelled word: ACCOMODATE / ACCOMMODATE
+22. Choose the correctly spelled word: EMBAARRASS / EMBARRASS
+23. Choose the correctly spelled word: OCCURENCE / OCCURRENCE
+24. Choose the correctly spelled word: PRIVILEGE / PRIVELEGE
+25. Choose the correctly spelled word: SEIZE / SEIEZE
+26. Fill blank: The view was absolutely ___. (breathtaking / breath taking)
+27. Fill blank: He has a ___ for music. (flair / flare)
+28. Fill blank: The ___ of the building was impressive. (cite / site / sight)
+29. Fill blank: The new ___ will improve traffic. (bridal / bridle / bridge)
+30. Choose correct: The ___ (principal / principle) of the school.
+
+**Grammar — Error Spotting & Sentence Correction (Q31-Q60)**
+
+31. Spot the error: He / have gone / to the market / yesterday.
+32. Spot the error: She / don't like / coffee / in the morning.
+33. Spot the error: The team / are playing / well / today.
+34. Spot the error: I have / been working / since / two hours.
+35. Spot the error: Neither the teacher / nor the students / was present / in the class.
+36. Spot the error: One of the boys / are / playing / in the field.
+37. Spot the error: He is / taller / then / his brother.
+38. Spot the error: She told / me that / she will come / tomorrow.
+39. Spot the error: I prefer / tea / than / coffee.
+40. Spot the error: The sceneries / of Kashmir / are / beautiful.
+41. Correct: Each of the students ___ (has/have) submitted the assignment.
+42. Correct: If I ___ (was/were) you, I would accept the offer.
+43. Correct: She ___ (go/went/has gone) to the store already.
+44. Correct: Neither the manager nor his assistants ___ (is/are) available.
+45. Correct: The committee ___ (has/have) made its decision.
+46. Correct: He is one of those who ___ (believe/believes) in hard work.
+47. Correct: I wish I ___ (know/knew/had known) the answer yesterday.
+48. Correct: Not only he ___ (but/but also/then) his friends were invited.
+49. Correct: The building ___ (was built/has built/is built) in 1920.
+50. Correct: Despite ___ (being ill/illness/be ill), he attended the meeting.
+51. Rewrite correctly: I have seen him yesterday.
+52. Rewrite correctly: He asked that what is your name.
+53. Rewrite correctly: The reason is because he was late.
+54. Rewrite correctly: She is more smarter than me.
+55. Rewrite correctly: The book who I read was interesting.
+56. Rewrite correctly: He is working here since 2015.
+57. Rewrite correctly: If he would have come, he would have seen it.
+58. Rewrite correctly: I am used to work hard.
+59. Rewrite correctly: He advised me to not go.
+60. Rewrite correctly: This is the same watch which I lost.
+
+**Reading Comprehension Passages (Q61-Q80)**
+
+Passage 1: "Climate change poses an existential threat to humanity. Rising temperatures have led to melting polar ice caps, rising sea levels, and extreme weather events. Scientists warn that without immediate action, the consequences will be catastrophic. However, critics argue that the economic cost of transitioning to renewable energy is too high for developing nations. The debate between environmental protection and economic growth continues to divide policymakers."
+
+61. What is the main idea of the passage?
+62. What do critics argue about climate action?
+63. What is causing rising sea levels according to the passage?
+64. The word "catastrophic" in this context means?
+65. What divides policymakers according to the passage?
+
+Passage 2: "Artificial intelligence has revolutionized the healthcare industry. Machine learning algorithms now assist in diagnosing diseases, predicting patient outcomes, and personalizing treatment plans. While these advances improve accuracy and efficiency, concerns about data privacy and algorithmic bias persist. The challenge lies in balancing innovation with ethical considerations."
+
+66. How has AI impacted healthcare?
+67. What concern is raised about AI in healthcare?
+68. The word "revolutionized" means?
+69. What is the challenge mentioned in healthcare AI?
+70. What does "algorithmic bias" refer to in this context?
+
+Passage 3: "The internet has transformed the way we communicate, work, and learn. Social media platforms connect billions of people worldwide, enabling instant sharing of information. Yet, this connectivity comes with downsides: misinformation spreads rapidly, privacy concerns have grown, and screen addiction affects mental health. The digital age presents both unprecedented opportunities and serious challenges."
+
+71. What positive aspect of the internet is mentioned?
+72. What negative impact of social media is highlighted?
+73. The word "unprecedented" means?
+74. According to the passage, what affects mental health?
+75. What does "instant sharing of information" suggest?
+
+Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering innovation, and increasing competition. Successful entrepreneurs identify market gaps and take calculated risks to fill them. However, the path is fraught with challenges: funding constraints, market uncertainty, and regulatory hurdles. Despite these obstacles, entrepreneurship remains a powerful engine for economic development."
+
+76. How does entrepreneurship drive economic growth?
+77. What do successful entrepreneurs do?
+78. The word "fraught" means?
+79. Which is NOT mentioned as a challenge?
+80. What is the author's overall view of entrepreneurship?
+
+**Para-jumbles / Sentence Completion (Q81-Q100)**
+
+81. Arrange: P: He went to the store. Q: After buying groceries, he returned home. R: He needed to buy groceries. S: The store was closed.
+82. Arrange: P: The sun set behind the hills. Q: The sky turned orange and pink. R: Birds returned to their nests. S: A gentle breeze blew through the trees.
+83. Arrange: P: She studied hard for the exam. Q: She scored the highest marks. R: Her parents were proud. S: She was admitted to the university.
+84. Arrange: P: The fire alarm rang suddenly. Q: People rushed out of the building. R: The firefighters arrived within minutes. S: The fire was contained quickly.
+85. Arrange: P: He applied for the job. Q: He was called for an interview. R: He prepared thoroughly. S: He got the job.
+86. Complete: Hard work is the ___ to success.
+87. Complete: The ___ of the evidence led to his conviction.
+88. Complete: She was ___ to hear the news of his arrival.
+89. Complete: The project was ___ due to lack of funds.
+90. Complete: He ___ his promise to help the poor.
+91. Choose the best fit: He is ___ honest man. (a/an/the)
+92. Choose the best fit: She ___ to the party last night. (go/went/has gone)
+93. Choose the best fit: I am looking forward ___ your response. (to/for/at)
+94. Choose the best fit: He is capable ___ doing this job. (of/for/to)
+95. Choose the best fit: She insisted ___ going alone. (on/for/to)
+96. Choose the best fit: We should abide ___ the rules. (by/with/to)
+97. Choose the best fit: He is concerned ___ her health. (about/for/with)
+98. Choose the best fit: She prefers coffee ___ tea. (over/to/than)
+99. Choose the best fit: He was accused ___ theft. (of/for/with)
+100. Choose the best fit: She succeeded ___ hard work. (by/through/with)
+
+**Answer Key — Verbal Ability**
+
+| Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
+|----|--------|----|--------|----|--------|----|--------|
+| 1 | Leave / Forsake | 2 | Short / Concise | 3 | Noise / Dissonance | 4 | Hardworking |
+| 5 | Difficult to catch | 6 | Economical / Thrifty | 7 | Easily fooled | 8 | Excessive pride |
+| 9 | Essential / Necessary | 10 | Joyful / Elated | 11 | Humble | 12 | Cruel / Malicious |
+| 13 | Dishonest | 14 | Converge | 15 | Permanent | 16 | Stabilize |
+| 17 | Displease | 18 | Real | 19 | Changeable | 20 | Mature |
+| 21 | ACCOMMODATE | 22 | EMBARRASS | 23 | OCCURRENCE | 24 | PRIVILEGE |
+| 25 | SEIZE | 26 | breathtaking | 27 | flair | 28 | site |
+| 29 | bridge | 30 | principal | 31 | have → has | 32 | don't → doesn't |
+| 33 | are → is | 34 | since → for | 35 | was → were | 36 | are → is |
+| 37 | then → than | 38 | will → would | 39 | than → to | 40 | scenery |
+| 41 | has | 42 | were | 43 | has gone | 44 | are |
+| 45 | has | 46 | believe | 47 | had known | 48 | but also |
+| 49 | was built | 50 | being ill | 51 | I saw him yesterday | 52 | He asked what your name is |
+| 53 | The reason is that he was late | 54 | She is smarter than me | 55 | The book that I read was interesting | 56 | He has been working here since 2015 |
+| 57 | If he had come, he would have seen it | 58 | I am used to working hard | 59 | He advised me not to go | 60 | This is the same watch that I lost |
+| 61 | Climate change poses an existential threat | 62 | Economic cost of transition is too high | 63 | Melting polar ice caps | 64 | Disastrous |
+| 65 | Environment vs economic growth | 66 | Helps diagnose and treat diseases | 67 | Data privacy and algorithmic bias | 68 | Completely changed |
+| 69 | Balance innovation with ethics | 70 | Algorithms may have unfair bias | 71 | Connects billions worldwide | 72 | Misinformation and privacy concerns |
+| 73 | Never seen before | 74 | Screen addiction | 75 | Information travels fast | 76 | Creates jobs, fosters innovation |
+| 77 | Identify gaps and take risks | 78 | Filled with (problems) | 79 | Employee retention | 80 | Positive — powerful engine |
+| 81 | R-P-S-Q | 82 | P-Q-R-S | 83 | P-Q-R-S | 84 | P-Q-R-S |
+| 85 | P-Q-R-S | 86 | key | 87 | weight | 88 | thrilled |
+| 89 | halted | 90 | fulfilled | 91 | an | 92 | went |
+| 93 | to | 94 | of | 95 | on | 96 | by |
+| 97 | about | 98 | to | 99 | of | 100 | through |
+
+### Spatial Ability Practice
+
+**Pattern Recognition / Series Completion (Q1-Q25)**
+
+1. Find the next figure in series: Circle, Square, Triangle, Circle, Square, ?
+2. Identify the odd one: ○, △, □, ☆, ◇
+3. Complete pattern: (↑↓), (←→), (↕↔), (↑↓), (←→), ?
+4. In a sequence of shapes, each shape rotates 90° clockwise. If current shape is ▲, what is next?
+5. Pattern: ■, □, ■■, □□, ■■■, ?
+6. Find next: 0, 1, 1, 2, 3, 5, 8, ?
+7. Find missing term: 1, 4, 9, 16, ?, 36
+8. Shape pattern: Triangle has 3 lines, Square has 4, Pentagon has 5, Hexagon has ?
+9. Pattern: Z, Y, X, W, V, ?
+10. Find next: 1A, 2B, 3C, 4D, ?
+11. Series: ★, ★★, ★★★, ?, ★★★★★
+12. Which figure completes the matrix? [◐, ◑, ◒] [◓, ?, ◐]
+13. Pattern: (↗), (↘), (↙), (↖), (↗), ?
+14. Find the odd image out: Red circle, Blue square, Green triangle, Red square — all same size. Which is different?
+15. Complete: 2, 6, 18, 54, ?
+16. Pattern: █, ▓, ▒, ░, █, ?
+17. Identify the missing shape in a 3×3 grid where first row has circles, second row has squares, third row has ?
+18. Series: ● ○ ○ ● ● ○ ○ ○ ● ● ●. What comes next?
+19. Pattern: All figures have 4 sides except one. Which is the exception?
+20. Next pattern: □ ▣ ▣ □ □ ▣ ▣ ▣ ▣ □ □ □ ?
+21. Find the missing domino: [3|4], [2|5], [6|1], [4|?]
+22. Complete the sequence: ∎, ∎∎, ∎∎∎, ∎∎∎∎, ?
+23. Pattern: 1, 2, 2, 4, 8, 32, ?
+24. A cube has how many faces?
+25. A square rotated in 3D around one edge forms a?
+
+**Mirror Images / Figure Classification (Q26-Q50)**
+
+26. What is the mirror image of the letter "P" on vertical axis?
+27. What is the mirror image of "b" on horizontal axis?
+28. Mirror image of "AMBULANCE" on a horizontal mirror?
+29. If the time in a clock is 3:00, what will be its mirror image time?
+30. Which of the following is a mirror image: (A) → (A), (B) → (Ɔ), (C) → (O)? Identify correct mapping.
+31. Mirror image of number 2 0 2 4 on vertical axis?
+32. Figure X is folded to form a cube. Which of A, B, C, D matches?
+33. A sheet of paper with a hole is folded. Where does the hole appear on the unfolded sheet?
+34. Count the number of triangles in a given figure with 3 horizontal lines and 4 vertical lines.
+35. How many squares in a 4×4 grid?
+36. A cube with 1 cm sides has each face painted. It is cut into 1 cm³ cubes. How many have paint on exactly 2 faces?
+37. How many cubes in a 3×3×3 structure (all visible)?
+38. The figure below has how many lines of symmetry? (square with both diagonals)
+39. Which shape has more lines of symmetry: square or rectangle?
+40. A net of a cube has how many squares?
+41. Count the number of rectangles in a 3×3 grid.
+42. Figure classification: Circle, Ellipse, Square, Rectangle. Which does not belong?
+43. Which of these letters is symmetrical: A, B, F, G?
+44. How many faces, edges, and vertices does a rectangular prism have?
+45. A paper is folded in half and a heart is cut out. When unfolded, how many hearts appear?
+46. A die has numbers 1-6 with opposite faces summing to 7. If 1 is on top and 2 is in front, what number is on the right?
+47. Which Venn diagram correctly shows the relationship between Squares, Rectangles, and Rhombuses?
+48. Count the number of straight lines used to form the letter "E" in block capitals.
+49. How many cubes in a 4×3×2 cuboid?
+50. A figure has rotational symmetry of order 4. How many degrees must it rotate to match its original?
+
+**Answer Key — Spatial Ability**
+
+| Q# | Answer | Q# | Answer | Q# | Answer | Q# | Answer |
+|----|--------|----|--------|----|--------|----|--------|
+| 1 | Triangle | 2 | ☆ (non-geometric shape) | 3 | (↕↔) | 4 | ▼ (rotated) |
+| 5 | □□□ | 6 | 13 | 7 | 25 | 8 | 6 |
+| 9 | U | 10 | 5E | 11 | ★★★★ | 12 | ◒ |
+| 13 | (↘) | 14 | Red square (color-shape mismatch) | 15 | 162 | 16 | ▓ |
+| 17 | Triangles | 18 | ○ (count of circles increasing) | 19 | Triangle (3 sides) | 20 | ▣ (pattern follows Fibonacci) |
+| 21 | 3 (sum = 7) | 22 | ∎∎∎∎∎ | 23 | 256 | 24 | 6 |
+| 25 | Cylinder | 26 | d (reverse) | 27 | q | 28 | 3ƆИA⅃UᗺMA |
+| 29 | 9:00 | 30 | (B) → (Ɔ) | 31 | hOShO | 32 | Depends on configuration |
+| 33 | All holes appear symmetrically | 34 | 18 | 35 | 30 | 36 | 12 |
+| 37 | 27 | 38 | 4 | 39 | Square (4 vs 2) | 40 | 6 |
+| 41 | 36 | 42 | Circle (no straight lines) | 43 | A (vertical symmetry) | 44 | 6, 12, 8 |
+| 45 | 2 | 46 | 3 | 47 | Square inside Rectangle inside Rhombus? No — all are subtypes of parallelogram | 48 | 4 |
+| 49 | 24 | 50 | 90° |

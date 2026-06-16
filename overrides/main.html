@@ -12,27 +12,25 @@
 
 {% block extrahead %}
 <meta property="og:type" content="website">
-<meta property="og:url" content="{{ page.canonical_url }}">
-<meta property="og:title" content="{% block og_title %}{{ config.site_name }}{% endblock %}">
-<meta property="og:description" content="{% block og_description %}{{ config.site_description }}{% endblock %}">
-<meta property="og:image" content="{{ config.site_url }}assets/images/og-image.svg">
+<meta property="og:url" content="https://raushan666java.github.io/ai-engineering-journey/">
+<meta property="og:title" content="Raushan Kumar — AI Engineering">
+<meta property="og:description" content="Full-stack Laravel developer transitioning to AI Engineering. 500+ lessons across ML/AI, GATE CS, placement prep, Java, and system design.">
+<meta property="og:image" content="https://raushan666java.github.io/ai-engineering-journey/assets/images/og-image.svg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_IN">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% block tw_title %}{{ config.site_name }}{% endblock %}">
-<meta name="twitter:description" content="{% block tw_description %}{{ config.site_description }}{% endblock %}">
-<meta name="twitter:image" content="{{ config.site_url }}assets/images/og-image.svg">
-
-<meta name="author" content="{{ config.site_author }}">
+<meta name="twitter:title" content="Raushan Kumar — AI Engineering">
+<meta name="twitter:description" content="Full-stack Laravel developer transitioning to AI Engineering. 500+ lessons across ML/AI, GATE CS, placement prep, Java, and system design.">
+<meta name="twitter:image" content="https://raushan666java.github.io/ai-engineering-journey/assets/images/og-image.svg">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Raushan Kumar",
-  "url": "{{ config.site_url }}",
+  "url": "https://raushan666java.github.io/ai-engineering-journey/",
   "jobTitle": "AI Automation Engineer",
   "sameAs": [
     "https://github.com/Raushan666java",
@@ -45,7 +43,5 @@
 
 {% if page and page.meta and page.meta.description %}
 <meta name="description" content="{{ page.meta.description }}">
-{% else %}
-<meta name="description" content="{{ config.site_description }}">
 {% endif %}
 {% endblock %}

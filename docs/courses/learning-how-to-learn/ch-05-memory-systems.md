@@ -147,22 +147,7 @@ Walking the palace:
 
 > **Try This:** Build a memory palace with 10 loci from your own home. Encode your grocery list. Walk it 3 times mentally, then test yourself an hour later without looking at the list.
 
-```mermaid
-flowchart LR
-    subgraph "Building a Memory Palace"
-        A[Choose familiar location<br/>Your home, college, route] --> B[Define path<br/>Enter → Hall → Kitchen →<br/>Bedroom → Balcony]
-        B --> C[Identify loci stations<br/>Door, sofa, table,<br/>window, bookshelf]
-        C --> D[Place each concept<br/>at one station]
-        D --> E[Associate with vivid image<br/>Exaggerated, emotional,<br/>multi-sensory]
-        E --> F[Walk the path<br/>in your mind daily]
-        F --> G[Recall by mentally<br/>walking the palace]
-    end
-    subgraph "Java Example"
-        H["Locus 1 - Door: JVM (loading bytecode into memory)"]
-        I["Locus 2 - Sofa: Heap (objects resting)"]
-        J["Locus 3 - Table: Stack (LIFO plates)"]
-    end
-```
+![Diagram](../assets/images/diagrams/ch-05-memory-systems_d018.png)
 
 ---
 
@@ -594,17 +579,7 @@ Position 10: null (not encoded yet)
 
 > **Try This:** Memorize the 1-10 peg list today (bun, shoe, tree, door, hive, sticks, heaven, gate, wine, hen). Use it to encode the first 10 elements of the periodic table. Tomorrow, test yourself by calling out random numbers — can you recall the element without walking from 1?
 
-```mermaid
-graph TB
-    subgraph "Peg System: Number → Rhyme → Concept"
-        A["1 = Bun<br/>Picture a hot dog bun"] --> B["Associate with first concept"]
-        C["2 = Shoe<br/>Picture a giant shoe"] --> D["Associate with second concept"]
-        E["3 = Tree<br/>Picture a tree growing indoors"] --> F["Associate with third concept"]
-        G["4 = Door<br/>Picture a talking door"] --> H["Associate with fourth concept"]
-        I["5 = Hive<br/>Picture a buzzing beehive"] --> J["Associate with fifth concept"]
-    end
-    K["Recall by going through: Bun → Shoe → Tree → Door → Hive<br/>Each triggers associated concept"]
-```
+![Diagram](../assets/images/diagrams/ch-05-memory-systems_d019.png)
 
 ---
 
@@ -2631,20 +2606,7 @@ over the course of a semester.
 
 ---
 
-```mermaid
-flowchart TD
-    subgraph "Encoding Specificity Principle"
-        A[Study in environment X] --> B[Memory encoded with<br/>context X as retrieval cue]
-        B --> C[Recall best when<br/>tested in environment X]
-        D[Study while listening to music] --> E[Recall best with<br/>same music playing]
-        F[Study in exam-like conditions] --> G[Recall best<br/>during actual exam]
-    end
-    subgraph "Practical Applications"
-        H[For GATE: Study in exam-like<br/>quiet environment]
-        I[For interviews: Practice in<br/>simulated interview setting]
-        J[For frameworks: Code in<br/>your actual dev environment]
-    end
-```
+![Diagram](../assets/images/diagrams/ch-05-memory-systems_d020.png)
 
 ### Self-Assessment Quiz
 

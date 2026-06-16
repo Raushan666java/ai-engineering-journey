@@ -79,18 +79,7 @@ public class DeliberatePractice {
 
 The first example adds nothing to your ability. The second — done under time pressure, with test feedback, after identifying sliding window as a weak area — is deliberate practice.
 
-```mermaid
-flowchart TD
-    A[Identify Weak Area] --> B[Set Specific Measurable Goal]
-    B --> C[Practice at Edge of Ability]
-    C --> D[Get Immediate Feedback]
-    D --> E{Correct?}
-    E -->|Yes| F[Increase Difficulty]
-    E -->|No| G[Analyze Error Pattern]
-    G --> H[Adjust Approach]
-    H --> C
-    F --> A
-```
+![Diagram](../assets/images/diagrams/ch-02-practice-mindset_d007.png)
 
 **Try This:** Pick one skill you're learning. Write down: (1) one specific, measurable goal for today's session, (2) how you'll get immediate feedback, (3) what makes this session harder than what you can already do. Do not start practicing until you've written all three.
 
@@ -108,17 +97,7 @@ Re-reading and highlighting create the **illusion of competence** — you mistak
 2. **No retrieval.** You never force your brain to reconstruct the idea from scratch. Retrieval is what strengthens neural pathways — re-reading is just passive input.
 3. **False confidence.** Studies (Rohrer & Pashler, 2007) show that students who re-read predict higher test scores than those who do active recall — but actually score lower.
 
-```mermaid
-flowchart LR
-    subgraph Illusion["Illusion of Competence"]
-        A1[Read Text] --> A2[Feel Familiar] --> A3[Think You Know It]
-    end
-    subgraph Actual["Actual Competence"]
-        B1[Read Text] --> B2[Close Book] --> B3[Recall from Memory] --> B4{Complete?}
-        B4 -->|Yes| B5[Verify Accuracy]
-        B4 -->|No| B6[Identify Gap → Learn]
-    end
-```
+![Diagram](../assets/images/diagrams/ch-02-practice-mindset_d008.png)
 
 **The Java analogy:**
 
@@ -234,22 +213,7 @@ public class EinstellungEffect {
     // When simpler: A - C = 23 - 3 = 20 (obvious, once you see it)
 ```
 
-```mermaid
-flowchart TD
-    A[Encounter Problem] --> B[Recognize Familiar Pattern?]
-    B -->|Yes| C[Apply Known Solution]
-    C --> D{Works?}
-    D -->|Yes| E[Solution Found]
-    D -->|No| F[Try Known Variation]
-    F --> G{Frustrated?}
-    G -->|No| F
-    G -->|Yes| H[Step Back: Reset Mental Set]
-    H --> I[Restate Problem Fresh]
-    I --> J[Consider Alternative Approaches]
-    J --> K[Arrive at Novel Solution]
-    
-    B -->|No| I
-```
+![Diagram](../assets/images/diagrams/ch-02-practice-mindset_d009.png)
 
 **Why it matters for programming:**
 
@@ -522,13 +486,7 @@ Performance
 | Physical/endurance | High | Running a race, delivering a presentation, coding interview (after preparation) |
 | Creative/insight | Low | Brainstorming, design thinking, exploring solution space |
 
-```mermaid
-xychart-beta
-    title "Yerkes-Dodson Law"
-    x-axis ["Low Arousal", "Optimal", "High Arousal"]
-    y-axis "Performance" 0 --> 100
-    line [10, 30, 60, 85, 95, 90, 70, 40, 15]
-```
+![Diagram](../assets/images/diagrams/ch-02-practice-mindset_d010.png)
 
 **Java code example: The arousal-performance relationship:**
 

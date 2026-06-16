@@ -227,20 +227,7 @@ public class NeuralJITAnalogy {
 
 ---
 
-```mermaid
-graph TB
-    subgraph "Long-Term Potentiation (LTP)"
-        A[Neuron A fires] --> B[Glutamate released]
-        B --> C[AMPA receptors activated]
-        C --> D[Na+ influx - depolarization]
-        D --> E[Magnesium block removed from NMDA receptors]
-        E --> F[Ca2+ influx through NMDA receptors]
-        F --> G[Ca2+ activates CaMKII]
-        G --> H[More AMPA receptors inserted]
-        H --> I[Stronger synaptic connection]
-        I --> J[Hebbian plasticity: "Fire together, wire together"]
-    end
-```
+![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d041.png)
 
 ### Q9: What is the Default Mode Network and how does it support diffuse thinking?
 
@@ -248,19 +235,7 @@ graph TB
 
 When you daydream, shower, walk, or stare out a window, your DMN lights up. It connects disparate pieces of knowledge stored across your cortex, forming associations your focused mode would never make. This is why your best ideas arrive when you are not trying.
 
-```mermaid
-graph TD
-    A[External Task] -->|Active| B[Task-Positive Network]
-    A -->|Inactive| C[Default Mode Network]
-    B --> D{Focused Mode}
-    C --> E{Diffuse Mode}
-    D --> F[Precise, analytical, narrow]
-    E --> G[Broad associations, insight, creativity]
-    F --> H[Solving known problems]
-    E --> I[Making novel connections]
-    G --> J["Aha! moment"]
-    I --> J
-```
+![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d002.png)
 
 The DMN has been confirmed through fMRI studies showing that during mind-wandering, the same regions activated during creative problem-solving show elevated activity. When you are stuck on a hard DSA problem from `02-dsa-problem-bank.md` and decide to take a shower, the DMN is actively cross-referencing your recent study material with older, related knowledge stored in long-term memory.
 
@@ -347,18 +322,7 @@ From `docs/courses/placement-preparation/02-dsa-problem-bank.md`, a hard problem
 
 ---
 
-```mermaid
-graph LR
-    subgraph "Cognitive Load Types"
-        A[Intrinsic Load<br/>Task complexity] --> D[Total<br/>Cognitive<br/>Load]
-        B[Extraneous Load<br/>Distractions/formatting] --> D
-        C[Germane Load<br/>Active processing] --> D
-    end
-    E[Working Memory<br/>~4 chunks limit] --> F{Overload?}
-    D --> E
-    F -->|Yes| G[Learning impaired]
-    F -->|No| H[Effective learning]
-```
+![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d003.png)
 
 ### Q11: What are the different types of attention and how do they affect learning?
 
@@ -648,31 +612,7 @@ public class CircadianStudyPlanner {
 | N3 | Deep sleep (slow-wave) | 20-40 min | Delta waves, hardest to wake from | Declarative memory consolidation (facts, concepts) |
 | REM | Dream sleep | 10-20 min (increases later in night) | Rapid eye movement, brain nearly as active as waking | Procedural memory, creative insight, emotional regulation |
 
-```mermaid
-graph TD
-    subgraph "90-Minute Sleep Cycle"
-        W[Wake] --> N1[N1: Light Sleep]
-        N1 --> N2[N2: Sleep Spindles]
-        N2 --> N3[N3: Deep Sleep / Slow-Wave]
-        N3 -.-> N2
-        N2 --> REM[REM: Dream Sleep]
-        REM -.-> N1
-        N1 --> W2[Wake / Near-Wake]
-    end
-
-    subgraph "Across the Night"
-        Cycle1["Cycle 1: More N3 (deep sleep)"]
-        Cycle2["Cycle 2: Balanced N3 + REM"]
-        Cycle3["Cycle 3: More REM, less N3"]
-        Cycle4["Cycle 4: Mostly REM"]
-        Cycle5["Cycle 5: Mostly REM"]
-    end
-
-    W2 --> Cycle1
-    Cycle1 --> Cycle2
-    Cycle2 --> Cycle3
-    Cycle3 --> Cycle4
-```
+![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d004.png)
 
 **The 90-minute cycle pattern:** In a 7-8 hour night, you go through 4-5 complete cycles. The composition changes across the night:
 
@@ -735,35 +675,11 @@ public class SleepArchitecture {
 
 ---
 
-```mermaid
-graph LR
-    subgraph "One Sleep Cycle (~90 min)"
-        A[Wake] --> B[NREM Stage 1<br/>Light sleep<br/>5-10 min]
-        B --> C[NREM Stage 2<br/>Memory replay<br/>20 min]
-        C --> D[NREM Stage 3<br/>Deep sleep<br/>Declarative memory<br/>20-40 min]
-        D --> E[REM sleep<br/>Procedural memory<br/>Creative insight<br/>10-20 min]
-        E --> F[Partial awakening<br/>or next cycle]
-    end
-```
+![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d005.png)
 
 ---
 
-```mermaid
-flowchart TD
-    A[Start studying new topic] --> B[Engage FOCUSED mode<br/>Concentrate for 15-20 min]
-    B --> C{Stuck or frustrated?}
-    C -->|No| D[Continue focused mode<br/>Deep understanding]
-    D --> B
-    C -->|Yes| E[Switch to DIFFUSE mode<br/>Walk, shower, nap, exercise]
-    E --> F{Nighttime?}
-    F -->|No| G[Return to problem<br/>after 5-15 min break]
-    F -->|Yes| H[Sleep on it<br/>Consolidation during sleep]
-    G --> I{Problem solved?}
-    H --> I
-    I -->|Yes| J[Understanding achieved]
-    I -->|No| K[Re-study fundamentals<br/>Try different approach]
-    K --> B
-```
+![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d006.png)
 
 ### Self-Assessment Quiz
 

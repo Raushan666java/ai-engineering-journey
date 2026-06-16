@@ -45,19 +45,7 @@ Why it works, backed by cognitive science:
 
 4. **Time constraint forces prioritization** — you cannot do everything in 25 minutes, so you naturally prioritize the most important task.
 
-```mermaid
-flowchart TD
-    A[Choose Task] --> B[Set Timer: 25 min]
-    B --> C[Work Without Interruption]
-    C --> D[Timer Rings?]
-    D -->|No| C
-    D -->|Yes| E[Mark 1 Pomodoro ✅]
-    E --> F[Short Break: 5 min]
-    F --> G{4 Pomodoros Done?}
-    G -->|No| B
-    G -->|Yes| H[Long Break: 15-30 min]
-    H --> B
-```
+![Diagram](../assets/images/diagrams/ch-04-pomodoro-interleaving-feynman_d014.png)
 
 ```java
 // A simple Pomodoro timer in Java
@@ -433,15 +421,7 @@ Rohrer & Taylor (2007) gave two groups of students the same number of practice p
 
 Blocked practice creates an **illusion of competence** — during practice you get every problem right because you already know which strategy applies. Interleaving feels harder (that's good) because you have to **choose the strategy** every time, which is what real tests demand.
 
-```mermaid
-flowchart LR
-    subgraph Blocked["Blocked Practice"]
-        B1[Solve 10 DP Problems] --> B2[Solve 10 Graph Problems]
-    end
-    subgraph Interleaved["Interleaved Practice"]
-        I1[DP] --> I2[Graph] --> I3[DP] --> I4[Sorting]
-    end
-```
+![Diagram](../assets/images/diagrams/ch-04-pomodoro-interleaving-feynman_d015.png)
 
 ```java
 // Demonstrating blocked vs interleaved practice
@@ -909,18 +889,7 @@ Step 4: Go back and study hashing functions, separate chaining vs
   bigger array and rehash everything."
 ```
 
-```mermaid
-flowchart TD
-    A[Choose Concept] --> B[Explain in Plain Language]
-    B --> C{Any Jargon or Gaps?}
-    C -->|Yes| D[Review Source Material]
-    D --> B
-    C -->|No| E[Simplify Further & Use Analogies]
-    E --> F[Teach to a Child]
-    F --> G{Can a Beginner Understand?}
-    G -->|No| D
-    G -->|Yes| H[Mastery ✅]
-```
+![Diagram](../assets/images/diagrams/ch-04-pomodoro-interleaving-feynman_d016.png)
 
 ```java
 // Feynman Technique implementation — simulate the process
@@ -1242,18 +1211,7 @@ public class RubberDuckDebugger {
 | **Core mechanism** | Articulation forces logical scrutiny | Simplification forces gap detection |
 | **Can combine?** | Yes — explain your approach to the duck before coding | Yes — Feynman your understanding of a bug's root cause |
 
-```mermaid
-flowchart TD
-    A[Encounter Bug] --> B[Explain Code Line-by-Line to Duck]
-    B --> C{Found Inconsistency?}
-    C -->|Yes| D[Fix the Bug]
-    C -->|No| E[Explain Assumptions & Expected Behavior]
-    E --> F{Realized Mistake?}
-    F -->|Yes| D
-    F -->|No| G[Research or Ask for Help]
-    G --> H[Apply New Understanding]
-    H --> B
-```
+![Diagram](../assets/images/diagrams/ch-04-pomodoro-interleaving-feynman_d017.png)
 
 > **Try This:** Next time you're stuck on a bug, open a text file and explain the code line by line as if you're teaching someone who has never seen it. Write it down. You will find the bug within 5 minutes — usually before you finish explaining.
 

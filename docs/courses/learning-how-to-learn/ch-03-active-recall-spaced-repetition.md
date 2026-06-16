@@ -408,14 +408,7 @@ public class EbbinghausSimulation {
 
 ---
 
-```mermaid
-xychart-beta
-    title "Ebbinghaus Forgetting Curve with Spaced Repetition"
-    x-axis ["Day 0", "Day 1", "Day 3", "Day 7", "Day 14", "Day 30"]
-    y-axis "Retention %" 0 --> 100
-    line [100, 58, 44, 35, 28, 21]
-    line [100, 80, 70, 65, 60, 55]
-```
+![Diagram](../assets/images/diagrams/ch-03-active-recall-spaced-repetition_d011.png)
 
 ### Q26: How do I set up Anki for effective learning?
 
@@ -722,26 +715,7 @@ public class CardQualityAnalyzer {
 
 ---
 
-```mermaid
-flowchart TD
-    A[Create Anki card] --> B[Review at Day 1]
-    B --> C{Recall correctly?}
-    C -->|Yes - Easy| D[Schedule next: 4 days]
-    C -->|Yes - Good| E[Schedule next: 3 days]
-    C -->|Hard| F[Schedule next: 1 day]
-    C -->|Again - Failed| G[Schedule: 10 min]
-    G --> B
-    D --> H[Review at Day 4]
-    E --> H
-    F --> H
-    H --> C
-    D --> I[Review at Day 10+]
-    H --> I
-    I --> C
-    I --> J[Review at Day 21+]
-    J --> K[Review at 1-3 months]
-    K --> L[Mature card<br/>Retention >90%]
-```
+![Diagram](../assets/images/diagrams/ch-03-active-recall-spaced-repetition_d012.png)
 
 ### Q29: How do I integrate Anki into my daily workflow?
 
@@ -972,17 +946,7 @@ public class ComplexTopicHandler {
 
 ---
 
-```mermaid
-graph TB
-    subgraph "Retrieval Strength"
-        A[Recognition<br/>Multiple choice<br/>"I've seen this before"] --> B[Low retrieval strength<br/>False sense of familiarity]
-        C[Recall<br/>Blank page<br/>"Write from memory"] --> D[High retrieval strength<br/>Exposes real gaps]
-    end
-    subgraph "Why Recall Wins"
-        E[Forces neural pathway reconstruction] --> F[Strengthens synaptic connections]
-        G[Identifies unknown unknowns] --> H[Guides focused study]
-    end
-```
+![Diagram](../assets/images/diagrams/ch-03-active-recall-spaced-repetition_d042.png)
 
 ### Self-Assessment Quiz
 

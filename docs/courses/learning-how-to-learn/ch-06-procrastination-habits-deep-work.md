@@ -107,20 +107,7 @@ class ProcrastinationLoop {
 
 ---
 
-```mermaid
-flowchart TD
-    subgraph "The Procrastination Loop"
-        A[Cue<br/>Study time, hard problem,<br/>boredom signal] --> B[Routine<br/>Open phone, check social,<br/>watch YouTube]
-        B --> C[Reward<br/>Dopamine hit,<br/>temporary relief]
-        C --> D[Neural pathway strengthened]
-        D --> A
-    end
-    subgraph "How to Break It"
-        E[Identify the cue] --> F[Change routine<br/>2-minute rule]
-        F --> G[Same reward<br/>But productive]
-        G --> H[New habit formed]
-    end
-```
+![Diagram](../assets/images/diagrams/ch-06-procrastination-habits-deep-work_d021.png)
 
 ## Q62: How does the 2-minute rule kill procrastination before it starts?
 
@@ -847,20 +834,7 @@ class DeepWork {
 
 ---
 
-```mermaid
-graph LR
-    subgraph "Deep Work Philosophies"
-        A[Grand<br/>Monastic<br/>No distractions at all<br/>Novelists, academics] 
-        B[Bimodal<br/>Days/weeks deep<br/>Rest shallow<br/>Freud, Jung]
-        C[Rhythmic<br/>Daily deep blocks<br/>Same time each day<br/>Most sustainable]
-        D[Journalistic<br/>Fit deep work<br/>into any gap<br/>Newspaper reporters]
-    end
-    E[Your choice depends on:<br/>- Schedule flexibility<br/>- Energy patterns<br/>- Family commitments<br/>- Task nature]
-    A --> E
-    B --> E
-    C --> E
-    D --> E
-```
+![Diagram](../assets/images/diagrams/ch-06-procrastination-habits-deep-work_d022.png)
 
 ## Q71: When should you learn a new skill vs. clarify what you already know?
 
@@ -1907,22 +1881,7 @@ They quit during the seed phase. They compare their Day 30 to someone else's Yea
 
 ---
 
-```mermaid
-flowchart TD
-    subgraph "Habit Stacking Formula"
-        A["After/Before [CURRENT HABIT]"] --> B["I will [NEW HABIT]"]
-    end
-    subgraph "Examples"
-        C["After I pour my morning coffee"] --> D["I will study Anki for 5 min"]
-        E["After I finish dinner"] --> F["I will solve one DSA problem"]
-        G["Before I go to sleep"] --> H["I will review today's notes"]
-    end
-    subgraph "Why It Works"
-        I[Existing habit is the cue] --> J[No decision fatigue]
-        J --> K[Automatic execution]
-        K --> L[Compound effect over time]
-    end
-```
+![Diagram](../assets/images/diagrams/ch-06-procrastination-habits-deep-work_d023.png)
 
 ### Self-Assessment Quiz
 

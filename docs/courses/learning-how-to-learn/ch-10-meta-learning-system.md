@@ -320,25 +320,7 @@ Examples:
 - "After I close my lunch break, I will solve one DSA problem for 15 minutes."
 - "After I brush my teeth at night, I will read one section of a chapter for 10 minutes."
 
-```mermaid
-flowchart TD
-    A[Atomic Habits 4 Laws for Learning] --> B[Law 1: Make It Obvious]
-    B --> B1[Stack: After coffee → Study]
-    B1 --> B2[Environment: Desk ready]
-    
-    A --> C[Law 2: Make It Attractive]
-    C --> C1[Temptation Bundle: Study + Podcast]
-    C1 --> C2[Community Accountability]
-    
-    A --> D[Law 3: Make It Easy]
-    D --> D1[2-Minute Rule: Open IDE]
-    D1 --> D2[Reduce Friction: Remove distractions]
-    
-    A --> E[Law 4: Make It Satisfying]
-    E --> E1[Track Streaks ✓]
-    E1 --> E2[Reward After Session]
-    E2 --> E3[Visual Progress]
-```
+![Diagram](../assets/images/diagrams/ch-10-meta-learning-system_d035.png)
 
 **Java streak tracker:**
 
@@ -579,23 +561,7 @@ Interval₂ = 6 days
 Intervalₙ = Intervalₙ₋₁ × EF
 ```
 
-```mermaid
-flowchart TD
-    A[Review Card] --> B[Rate Quality q: 0-5]
-    B --> C{q < 3?}
-    C -->|Yes| D[Reset: n=0, interval=1 day]
-    C -->|No| E{n=0?}
-    E -->|Yes| F[interval=1 day]
-    E -->|No| G{n=1?}
-    G -->|Yes| H[interval=6 days]
-    G -->|No| I[interval = interval * EF]
-    D --> J[Update EF]
-    F --> J
-    H --> J
-    I --> J
-    J --> K[n = n+1]
-    K --> L[Schedule Next Review]
-```
+![Diagram](../assets/images/diagrams/ch-10-meta-learning-system_d036.png)
 
 **Java implementation of SM-2:**
 
@@ -1306,13 +1272,7 @@ Over 5 years: 5 months of full-time learning
 Over 10 years: 10 months of full-time learning
 ```
 
-```mermaid
-xychart-beta
-    title "Compound Effect of 1 Hour Daily Learning"
-    x-axis ["Day 1", "Day 30", "Day 60", "Day 90", "Day 180", "Day 365"]
-    y-axis "Knowledge Units" 0 --> 400
-    line [1, 4, 10, 20, 60, 200]
-```
+![Diagram](../assets/images/diagrams/ch-10-meta-learning-system_d037.png)
 
 **Java compound interest calculator for learning:**
 
@@ -1352,15 +1312,7 @@ public class CompoundLearningCalculator {
 
 **Mermaid visualization of compound growth:**
 
-```mermaid
----
-title: Compound Learning Growth (1% daily)
----
-xyChart
-    x-axis "Day" [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330, 365]
-    y-axis "Growth Factor" 0 --> 40
-    line "1.01^days" [1, 1.35, 1.82, 2.45, 3.30, 4.45, 6.00, 8.08, 10.89, 14.68, 19.79, 26.66, 37.78]
-```
+![Diagram](../assets/images/diagrams/ch-10-meta-learning-system_d044.png)
 
 **Real-world constraints:**
 
@@ -1417,19 +1369,7 @@ LOOP 4: Metrics Dashboard (weeks)
 └── Action: Up → increase difficulty; Flat → change approach; Down → diagnose plateau
 ```
 
-```mermaid
-flowchart TD
-    A[Learn Concept] --> B[Apply in Project]
-    B --> C[Get Feedback]
-    C --> D{Effective?}
-    D -->|Yes| E[Reinforce & Deepen]
-    D -->|No| F[Identify Gap]
-    F --> G[Adjust Approach]
-    G --> A
-    E --> H[Teach Others]
-    H --> I[Identify Gaps Through Teaching]
-    I --> F
-```
+![Diagram](../assets/images/diagrams/ch-10-meta-learning-system_d039.png)
 
 **Closing the loop — Java feedback system:**
 
@@ -1516,14 +1456,7 @@ public class FeedbackLoopSystem {
 
 **Year-in-review structure:**
 
-```mermaid
-timeline
-    title Annual Learning Review Cycle
-    Q1 : Set Learning Goals : Choose 3 Focus Areas : Set Success Metrics
-    Q2 : Execute & Track : Monthly Check-ins : Adjust Course
-    Q3 : Deep Dive : Identify Plateaus : Push Through
-    Q4 : Review & Reflect : Annual Portfolio : Plan Next Year
-```
+![Diagram](../assets/images/diagrams/ch-10-meta-learning-system_d040.png)
 
 ```markdown
 # Annual Learning Review — [YEAR]

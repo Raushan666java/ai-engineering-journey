@@ -38,23 +38,7 @@ Use the **70/30 rule in early phases** (70% theory, 30% coding) and gradually sh
 | Months 3–4 | 60% | 40% | Solve subject-wise PYQs + implement algorithms |
 | Months 5–6 | 50% | 50% | Full-length mocks + coding practice in parallel |
 
-```mermaid
-quadrantChart
-    title Theory vs Coding Preparation Strategy
-    x-axis "Low Theory Focus" --> "High Theory Focus"
-    y-axis "Low Coding Focus" --> "High Coding Focus"
-    quadrant-1 "Intensive Coding"
-    quadrant-2 "Balanced Prep"
-    quadrant-3 "Low Priority"
-    quadrant-4 "Theory Focus"
-    "Algorithm Design": [0.7, 0.8]
-    "Data Structures": [0.6, 0.9]
-    "Math Foundation": [0.8, 0.3]
-    "System Design": [0.4, 0.7]
-    "OS & Networks": [0.9, 0.2]
-    "DBMS": [0.75, 0.25]
-    "Coding Practice": [0.3, 0.85]
-```
+![Diagram](../assets/images/diagrams/ch-08-gate-theory-prep_d027.png)
 
 The key insight is that **coding reinforces theory**. When you study Operating Systems (page replacement algorithms), implement them in code. When you study Databases (B+ tree operations), write a simulator. This dual encoding strengthens both memory pathways.
 
@@ -297,25 +281,7 @@ The **3-pass method** prevents the common trap of reading a chapter, forgetting 
 - Connect each concept to other subjects (Q98)
 - Teach the chapter to someone (or your recording device)
 
-```mermaid
-flowchart LR
-    subgraph Pass1["Pass 1: Overview"]
-        P1A[Scan Headings] --> P1B[Read Summary]
-        P1B --> P1C[Identify Key Terms]
-        P1C --> P1D[Build Mental Map]
-    end
-    subgraph Pass2["Pass 2: Deep Dive"]
-        P2A[Read Thoroughly] --> P2B[Take Structured Notes]
-        P2B --> P2C[Draw Diagrams]
-        P2C --> P2D[Link to Known Concepts]
-    end
-    subgraph Pass3["Pass 3: Recall & Test"]
-        P3A[Close Book] --> P3B[Recall from Memory]
-        P3B --> P3C[Solve PYQs]
-        P3C --> P3D[Identify Weak Areas]
-    end
-    Pass1 --> Pass2 --> Pass3
-```
+![Diagram](../assets/images/diagrams/ch-08-gate-theory-prep_d028.png)
 
 **Worked example: Studying TOC (Theory of Computation)**
 
@@ -1002,21 +968,7 @@ This is your 30-day blueprint if you're starting GATE preparation from scratch w
 4. **Sunday rest is scheduled** — Burnout is your enemy.
 5. **Cheat sheet gets finalized by Day 21** — Last week is recall, not learning.
 
-```mermaid
-gantt
-    title 30-Day GATE Exam Strategy
-    dateFormat  YYYY-MM-DD
-    axisFormat  %d
-    section Phase 1 Foundation
-    Review Core Subjects        :a1, 2025-01-01, 10d
-    Build Formula Sheets        :a2, after a1, 3d
-    section Phase 2 Practice
-    Solve PYQs (Topic-wise)     :b1, after a2, 7d
-    Mock Tests (Unsectional)    :b2, after b1, 5d
-    section Phase 3 Revision
-    Revision & Weak Areas       :c1, after b2, 3d
-    Final Full-Length Mocks     :c2, after c1, 2d
-```
+![Diagram](../assets/images/diagrams/ch-08-gate-theory-prep_d029.png)
 
 **Try This:** Take the template above and customize it for your actual GATE date. Replace "Day 1" with the actual date. Print it and put it on your wall. Follow it like a prescription.
 

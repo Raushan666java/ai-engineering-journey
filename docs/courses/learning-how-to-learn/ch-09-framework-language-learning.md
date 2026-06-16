@@ -38,18 +38,7 @@ Learning a new programming language or framework is a recurring challenge throug
 
 The 27 courses in this repo follow this blueprint: each starts with learning objectives (Docs), progresses through examples (Tutorial), and ends with exercises (Build).
 
-```mermaid
-flowchart TD
-    A[Pick a Framework] --> B[Day 1-2: Hello World]
-    B --> C[Day 3-4: Build CRUD App]
-    C --> D[Day 5-7: Mini Project]
-    D --> E[Day 8-14: Add Features]
-    E --> F[Day 15+: Real Project]
-    F --> G{Stuck?}
-    G -->|Yes| H[Read Official Docs]
-    H --> G
-    G -->|No| I[Contribute / Teach]
-```
+![Diagram](../assets/images/diagrams/ch-09-framework-language-learning_d030.png)
 
 ---
 
@@ -211,18 +200,7 @@ Features: Create, Read (list + detail), Update, Delete
 Extras:   Validation, Pagination, Auth (login/logout)
 ```
 
-```mermaid
-flowchart LR
-    A[Feature Idea] --> B[Cut to 20% Effort]
-    B --> C[Identify Core Function]
-    C --> D[Build Simplest Version]
-    D --> E[Test & Get Feedback]
-    E --> F{Works?}
-    F -->|Yes| G[Ship & Iterate]
-    F -->|No| H[Pivot or Simplify Further]
-    H --> C
-    G --> I[Add Polish Later]
-```
+![Diagram](../assets/images/diagrams/ch-09-framework-language-learning_d031.png)
 
 Spring Boot version (from chapters 9-14 of the Java course):
 
@@ -1113,21 +1091,7 @@ The primary track produces a production-ready Spring application. The secondary 
 
 **Cure:** Drop everything except the 70% track for one week. The secondary and exploratory tracks will still be there when you return.
 
-```mermaid
-flowchart TD
-    subgraph TBar["T-Bar: Broad Knowledge"]
-        T1[React] --- T2[Python] --- T3[Docker]
-        T3 --- T4[SQL] --- T5[Git]
-    end
-    subgraph TStem["T-Stem: Deep Specialization"]
-        S1[Java Deep Dive]
-        S1 --> S2[Concurrency]
-        S1 --> S3[JVM Internals]
-        S1 --> S4[Spring Ecosystem]
-        S1 --> S5[Performance Tuning]
-    end
-    TBar --> S1
-```
+![Diagram](../assets/images/diagrams/ch-09-framework-language-learning_d032.png)
 
 **Try This:** Right now, list every technology you're trying to learn. Pick ONE as your 70% (the one that matters most for your next career milestone). For each remaining technology, declare it either "20% (need it to deploy)" or "10% (curiosity)". Then create a weekly schedule allocatig 70% of your study time to the primary, 20% to the secondary, and 10% to the exploratory. Follow it for two weeks and audit your progress. The constraint (only 20% for secondary) forces ruthless prioritization.
 
@@ -1251,34 +1215,11 @@ It's not "tutorials are bad." Good tutorials are essential. The trap is *passive
 3. **Comfort of structure:** Tutorials tell you exactly what to do next. Real projects don't — and that ambiguity is where real learning happens.
 4. **Stacking without absorbing:** "I'll finish this 40-hour course, then I'll build something." You won't. You'll start another course because you still don't feel ready.
 
-```mermaid
-flowchart TD
-    A[Start Tutorial] --> B[Follow Along]
-    B --> C{Can You Build Without Help?}
-    C -->|No| D[Start New Tutorial]
-    D --> B
-    C -->|Yes| E[Build Personal Project]
-    E --> F{Hit Unknown?}
-    F -->|Yes| G[Read Specific Docs]
-    G --> E
-    F -->|No| H[Ship Project]
-    H --> I[Teach What You Built]
-```
+![Diagram](../assets/images/diagrams/ch-09-framework-language-learning_d033.png)
 
 **The Cure — Code-Along, Close, Rebuild, Extend:**
 
-```mermaid
-flowchart LR
-    A[Watch 20 min] --> B[Close tutorial]
-    B --> C[Rebuild from memory]
-    C --> D{Stuck?}
-    D -->|Yes, < 5 min| E[Peek at solution]
-    D -->|Yes, > 5 min| F[Take notes on what you forgot]
-    D -->|No| G[Extend with own feature]
-    E --> C
-    F --> C
-    G --> A
-```
+![Diagram](../assets/images/diagrams/ch-09-framework-language-learning_d034.png)
 
 **Step 1 — Code-Along (But Don't Just Copy):**
 When watching a tutorial, pause after each logical block (5-10 minutes). Don't just type what the instructor types — ask yourself: "Why this? Why not the other way?" Type the code, but break it deliberately to see the error, then fix it.

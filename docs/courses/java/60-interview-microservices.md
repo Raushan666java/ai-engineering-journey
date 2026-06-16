@@ -1,409 +1,306 @@
-﻿# Microservices Interview Q&A
+﻿# Chapter 60: Microservices Interview Q&A (Part A â€” Q1â€“Q8)
 
-This chapter covers 30 essential microservices interview questions from service decomposition and inter-service communication through resilience patterns, distributed tracing, saga orchestration, and observability. Each answer includes complete, compilable Java and Spring Boot code examples targeting senior-level backend interviews.
+### Q1: What is microservice architecture and how does it differ from monolithic architecture?
 
-### Q1: How do you decompose a monolith into microservices using Domain-Driven Design?
+**Answer:**
 
-**Answer:** Decomposition starts by identifying bounded contexts â€” explicit boundaries within which a domain model applies. Each bounded context gets its own ubiquitous language, and ideally becomes one microservice. The decomposition follows subdomains: core (competitive advantage), supporting (needed but not core), and generic (off-the-shelf). Conway's Law tells us organizations design systems that mirror their communication structure, so service boundaries should align with team boundaries.
+Microservice architecture decomposes an application into small, independently deployable services that each own a specific business capability. A monolithic architecture packages all functionality into a single deployable unit.
 
 ```java
-import java.math.BigDecimal;
-import java.time.Instant;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+// â”€â”€ Monolithic: everything in one service â”€â”€
+@RestController
+@RequestMapping("/api")
+public class MonolithController {
+    @Autowired private UserService userService;
+    @Autowired private OrderService orderService;
+    @Autowired private PaymentService paymentService;
+    @Autowired private NotificationService notificationService;
+}
 
-record Money(BigDecimal amount, String currency) {
-    Money {
-        if (amount.compareTo(BigDecimal.ZERO) < 0) {
-            throw new IllegalArgumentException("Amount cannot be negative");
+// â”€â”€ Microservice: separate services, each with its own API â”€â”€
+// Service 1: user-service
+@SpringBootApplication
+@EnableEurekaClient
+public class UserServiceApplication {
+    @RestController
+    @RequestMapping("/users")
+    class UserController {
+        @GetMapping("/{id}") public User getUser(@PathVariable Long id) { /* ... */ }
+    }
+}
+
+// Service 2: order-service
+@SpringBootApplication
+@EnableEurekaClient
+public class OrderServiceApplication {
+    @RestController
+    @RequestMapping("/orders")
+    class OrderController {
+        @PostMapping
+        public Order createOrder(@RequestBody OrderRequest req) {
+            // Calls payment-service and notification-service via HTTP/async
         }
     }
-    public Money add(Money other) {
-        if (!this.currency.equals(other.currency))
-            throw new IllegalArgumentException("Currency mismatch");
-        return new Money(this.amount.add(other.amount), this.currency);
-    }
-    public Money multiply(int quantity) {
-        return new Money(this.amount.multiply(BigDecimal.valueOf(quantity)), this.currency);
-    }
 }
 
-record Address(String street, String city, String zipCode, String country) {}
-
-class Order {
-    private final UUID orderId;
-    private UUID customerId;
-    private List<OrderLine> orderLines;
-    private OrderStatus status;
-    private Money total;
-    private Instant createdAt;
-
-    public Order(UUID customerId) {
-        this.orderId = UUID.randomUUID();
-        this.customerId = customerId;
-        this.orderLines = new ArrayList<>();
-        this.status = OrderStatus.DRAFT;
-        this.total = new Money(BigDecimal.ZERO, "USD");
-        this.createdAt = Instant.now();
-    }
-
-    public void addLine(String productId, String productName, int quantity, Money price) {
-        if (status != OrderStatus.DRAFT)
-            throw new IllegalStateException("Can only modify DRAFT orders");
-        this.orderLines.add(new OrderLine(productId, productName, quantity, price));
-        this.total = this.total.add(price.multiply(quantity));
-    }
-
-    public OrderConfirmed confirm() {
-        if (status != OrderStatus.DRAFT)
-            throw new IllegalStateException("Order already confirmed");
-        if (orderLines.isEmpty())
-            throw new IllegalStateException("Cannot confirm empty order");
-        this.status = OrderStatus.CONFIRMED;
-        return new OrderConfirmed(this.orderId, this.customerId, this.total, Instant.now());
-    }
-
-    public UUID getOrderId() { return orderId; }
-    public OrderStatus getStatus() { return status; }
-    public Money getTotal() { return total; }
-}
-
-enum OrderStatus { DRAFT, CONFIRMED, SHIPPED, DELIVERED, CANCELLED }
-
-class OrderLine {
-    private final String productId;
-    private final String productName;
-    private final int quantity;
-    private final Money price;
-
-    OrderLine(String productId, String productName, int quantity, Money price) {
-        this.productId = productId;
-        this.productName = productName;
-        this.quantity = quantity;
-        this.price = price;
-    }
-    public Money subtotal() { return price.multiply(quantity); }
-    public String getProductId() { return productId; }
-    public int getQuantity() { return quantity; }
-}
-
-record OrderConfirmed(UUID orderId, UUID customerId, Money total, Instant occurredOn) {}
-
-interface OrderRepository {
-    Order save(Order order);
-    java.util.Optional<Order> findById(UUID orderId);
-    List<Order> findByCustomerId(UUID customerId);
-}
-
-class OrderService {
-    private final OrderRepository orderRepository;
-    private final EventBus eventBus;
-
-    public OrderService(OrderRepository orderRepository, EventBus eventBus) {
-        this.orderRepository = orderRepository;
-        this.eventBus = eventBus;
-    }
-
-    public Order createOrder(UUID customerId) {
-        Order order = new Order(customerId);
-        return orderRepository.save(order);
-    }
-
-    public void confirmOrder(UUID orderId) {
-        Order order = orderRepository.findById(orderId)
-            .orElseThrow(() -> new IllegalArgumentException("Order not found: " + orderId));
-        OrderConfirmed event = order.confirm();
-        orderRepository.save(order);
-        eventBus.publish(event);
-    }
-}
-
-interface EventBus { void publish(Object event); }
+// Service 3: payment-service
+@SpringBootApplication
+@EnableEurekaClient
+public class PaymentServiceApplication { /* ... */ }
 ```
 
-### Q2: Should you use database-per-service or a shared database in microservices?
+Key differences:
+- **Deployment**: Monolith deploys as one WAR/JAR. Microservices deploy independently.
+- **Scaling**: Monolith scales the entire application. Microservices scale only the services under load.
+- **Database**: Monolith typically uses one shared database. Microservices own their data (database-per-service).
+- **Team structure**: Monolith works for small teams. Microservices align with cross-functional teams owning one service each.
+- **Communication**: Monolith uses in-process method calls. Microservices use network calls (HTTP/gRPC/messaging).
+- **Failure isolation**: Monolith failure takes down everything. Microservices fail independently (with circuit breakers).
 
-**Answer:** Database-per-service is the microservices default. Each service owns its data and exposes it only through its API. This provides loose coupling, independent deployability, and the right data store per service. A shared database creates tight coupling â€” schema changes require coordinated deploys, and any service can bypass another's data rules.
+Start monolithic. Split into microservices only when you need independent scaling, deployment velocity, or team independence. Premature microservices add complexity without benefit.
+
+---
+
+### Q2: How do you decompose a monolith into microservices?
+
+**Answer:**
+
+Decomposition follows Domain-Driven Design â€” identify bounded contexts and aggregate boundaries. Use the Strangler Fig pattern to migrate incrementally.
 
 ```java
-import org.springframework.data.jpa.repository.JpaRepository;
-import jakarta.persistence.*;
-import java.math.BigDecimal;
-import java.time.Instant;
-import java.util.UUID;
-
+// â”€â”€ Phase 1: Identify bounded contexts through domain analysis â”€â”€
+// Original monolith entities often blur domain boundaries:
 @Entity
-@Table(name = "orders")
-class OrderEntity {
-    @Id
-    private UUID id;
-    private UUID customerId;
-    private String status;
-    private BigDecimal totalAmount;
-    private String currency;
-    private Instant createdAt;
-
-    public OrderEntity() {}
-    public OrderEntity(UUID customerId) {
-        this.id = UUID.randomUUID();
-        this.customerId = customerId;
-        this.status = "DRAFT";
-        this.totalAmount = BigDecimal.ZERO;
-        this.currency = "USD";
-        this.createdAt = Instant.now();
-    }
-    public UUID getId() { return id; }
-    public UUID getCustomerId() { return customerId; }
-    public String getStatus() { return status; }
-}
-
-interface OrderJpaRepository extends JpaRepository<OrderEntity, UUID> {}
-
-@Entity
-@Table(name = "customers")
-class CustomerEntity {
-    @Id
-    private UUID id;
+public class User {
+    private Long id;
     private String name;
     private String email;
-
-    public CustomerEntity() {}
-    public CustomerEntity(String name, String email) {
-        this.id = UUID.randomUUID();
-        this.name = name;
-        this.email = email;
-    }
+    private String shippingAddress;     // belongs to shipping context
+    private String preferredPayment;    // belongs to payment context
+    private List<Order> orders;         // belongs to order context
 }
 
-interface CustomerJpaRepository extends JpaRepository<CustomerEntity, UUID> {}
-
-import org.springframework.web.client.RestClient;
-
-class CustomerOrderService {
-    private final RestClient restClient;
-
-    public CustomerOrderService(RestClient.Builder builder) {
-        this.restClient = RestClient.builder()
-            .baseUrl("http://order-service/api/orders").build();
-    }
-
-    public List<?> getOrdersForCustomer(UUID customerId) {
-        return restClient.get()
-            .uri("/?customerId={customerId}", customerId)
-            .retrieve()
-            .body(List.class);
-    }
-}
-```
-
-### Q3: What is the difference between synchronous and asynchronous communication in microservices?
-
-**Answer:** Synchronous via REST/gRPC is request/response â€” the caller blocks until it gets an answer. It works well for queries that need immediate data. Asynchronous via messaging decouples the sender from the receiver â€” the sender publishes an event and continues immediately. Async provides better resilience, scalability, and loose coupling. Use synchronous for queries and commands needing immediate confirmation. Use async for event notifications and commands where response is not time-critical.
-
-```java
-import org.springframework.web.client.RestClient;
-import java.time.Duration;
-
-class SyncOrderClient {
-    private final RestClient restClient;
-
-    public SyncOrderClient(RestClient.Builder builder) {
-        this.restClient = builder.baseUrl("http://order-service").build();
-    }
-
-    public OrderResponse getOrder(String orderId) {
-        return restClient.get()
-            .uri("/api/orders/{id}", orderId)
-            .retrieve()
-            .body(OrderResponse.class);
-    }
+// â”€â”€ Phase 2: Extract the first bounded context â”€â”€
+// New user-service keeps only user data
+@Entity
+@Table(name = "users")
+public class User {
+    @Id @GeneratedValue private Long id;
+    private String name;
+    private String email;
 }
 
-record OrderResponse(String id, String status, String customerId) {}
-
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
-
-class AsyncOrderNotifier {
-    private final RabbitTemplate rabbitTemplate;
-
-    public AsyncOrderNotifier(RabbitTemplate rabbitTemplate) {
-        this.rabbitTemplate = rabbitTemplate;
-    }
-
-    public void onOrderShipped(String orderId, String customerEmail) {
-        OrderShippedEvent event = new OrderShippedEvent(orderId, customerEmail,
-            "Your order has shipped!");
-        rabbitTemplate.convertAndSend("order.exchange", "order.shipped", event);
-    }
+// â”€â”€ Phase 3: Create API contract between services â”€â”€
+// user-service exposes what order-service needs via a client
+@FeignClient(name = "user-service")
+public interface UserServiceClient {
+    @GetMapping("/users/{id}")
+    UserDto getUser(@PathVariable Long id);
 }
 
-record OrderShippedEvent(String orderId, String customerEmail, String message) {}
-
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
-
-class NotificationService {
-    @RabbitListener(queues = "order.shipped.queue")
-    public void handleOrderShipped(OrderShippedEvent event) {
-        sendEmail(event.customerEmail(), event.message());
-    }
-    private void sendEmail(String to, String body) {
-        System.out.println("Sending email to " + to + ": " + body);
-    }
-}
-```
-
-### Q4: Explain choreography vs orchestration sagas. When should you use each?
-
-**Answer:** Choreography is decentralized: each service produces events and listens to events from others. Each service executes its local transaction and publishes a domain event that triggers the next service. Orchestration uses a central coordinator that tells each service what to do via commands and listens for replies. Choreography works well for simple sagas with 2-4 services. Orchestration is better for complex sagas with many participants, branching logic, or when centralized monitoring is needed.
-
-```java
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import java.util.UUID;
-
-record OrderCreatedEvent(String orderId, String customerId, BigDecimal amount) {}
-
-@Service
-class OrderChoreographyService {
-    private final RabbitTemplate rabbitTemplate;
-    private final OrderRepository orderRepository;
-
-    public OrderChoreographyService(RabbitTemplate rabbitTemplate,
-                                     OrderRepository orderRepository) {
-        this.rabbitTemplate = rabbitTemplate;
-        this.orderRepository = orderRepository;
-    }
-
-    @Transactional
-    public String createOrder(String customerId, BigDecimal amount) {
-        String orderId = UUID.randomUUID().toString();
-        orderRepository.save(new OrderEntity(UUID.fromString(orderId),
-            UUID.fromString(customerId)));
-        rabbitTemplate.convertAndSend("saga.exchange", "order.created",
-            new OrderCreatedEvent(orderId, customerId, amount));
-        return orderId;
-    }
-}
-
-record PaymentProcessedEvent(String orderId, String paymentId, boolean success) {}
-
-@Service
-class PaymentChoreographyHandler {
-    @RabbitListener(queues = "saga.order.created")
-    @Transactional
-    public void handleOrderCreated(OrderCreatedEvent event) {
-        try {
-            String paymentId = UUID.randomUUID().toString();
-            rabbitTemplate.convertAndSend("saga.exchange", "payment.processed",
-                new PaymentProcessedEvent(event.orderId(), paymentId, true));
-        } catch (Exception e) {
-            rabbitTemplate.convertAndSend("saga.exchange", "payment.failed",
-                new PaymentFailedEvent(event.orderId(), e.getMessage()));
-        }
-    }
-}
-
-record PaymentFailedEvent(String orderId, String reason) {}
-record RefundPaymentEvent(String orderId, String paymentId) {}
-
-import org.springframework.statemachine.StateMachine;
-
-@Service
-class SagaOrchestrator {
-    private final CommandBus commandBus;
-    private final SagaStateRepository sagaStateRepository;
-
-    public SagaOrchestrator(CommandBus commandBus,
-                             SagaStateRepository sagaStateRepository) {
-        this.commandBus = commandBus;
-        this.sagaStateRepository = sagaStateRepository;
-    }
-
-    public void startSaga(String orderId, String customerId, BigDecimal amount) {
-        SagaState state = new SagaState(orderId, customerId, amount);
-        commandBus.send(new ReserveInventoryCommand(orderId));
-        state.setCurrentStep("INVENTORY_RESERVING");
-        sagaStateRepository.save(state);
-    }
-
-    public void onInventoryReserved(String orderId) {
-        SagaState state = sagaStateRepository.findById(orderId);
-        commandBus.send(new ProcessPaymentCommand(orderId,
-            state.getCustomerId(), state.getAmount()));
-        state.setCurrentStep("PAYMENT_PROCESSING");
-        sagaStateRepository.save(state);
-    }
-
-    public void onPaymentProcessed(String orderId) {
-        SagaState state = sagaStateRepository.findById(orderId);
-        commandBus.send(new ConfirmOrderCommand(orderId));
-        state.setCurrentStep("ORDER_CONFIRMING");
-        sagaStateRepository.save(state);
-    }
-
-    public void onPaymentFailed(String orderId) {
-        commandBus.send(new ReleaseInventoryCommand(orderId));
-        failSaga(orderId, "Payment failed");
-    }
-
-    private void failSaga(String orderId, String reason) {
-        SagaState state = sagaStateRepository.findById(orderId);
-        state.setStatus("FAILED");
-        state.setFailureReason(reason);
-        sagaStateRepository.save(state);
-    }
-}
-
-record ReserveInventoryCommand(String orderId) {}
-record ProcessPaymentCommand(String orderId, String customerId, BigDecimal amount) {}
-record ConfirmOrderCommand(String orderId) {}
-record ReleaseInventoryCommand(String orderId) {}
-
-class SagaState {
-    private String orderId;
-    private String customerId;
-    private BigDecimal amount;
-    private String currentStep;
+// order-service stores only the reference (user_id), not embedded user data
+@Entity
+@Table(name = "orders")
+public class Order {
+    @Id @GeneratedValue private Long id;
+    private Long userId;                // FK reference â€” no User entity
+    private BigDecimal total;
     private String status;
-    private String failureReason;
-
-    public SagaState(String orderId, String customerId, BigDecimal amount) {
-        this.orderId = orderId;
-        this.customerId = customerId;
-        this.amount = amount;
-        this.status = "STARTED";
-    }
-    public String getOrderId() { return orderId; }
-    public String getCustomerId() { return customerId; }
-    public BigDecimal getAmount() { return amount; }
-    public String getCurrentStep() { return currentStep; }
-    public void setCurrentStep(String step) { this.currentStep = step; }
-    public String getStatus() { return status; }
-    public void setStatus(String s) { this.status = s; }
-    public String getFailureReason() { return failureReason; }
-    public void setFailureReason(String r) { this.failureReason = r; }
 }
 
-interface SagaStateRepository {
-    SagaState findById(String orderId);
-    void save(SagaState state);
-}
-
-interface CommandBus {
-    void send(Object command);
+// â”€â”€ Phase 4: Strangler Fig â€” route traffic gradually â”€â”€
+// API gateway routes /users/* to user-service, /orders/* to order-service
+// Both services can still share the old database during migration
+@Bean
+public RouteLocator gatewayRoutes(RouteLocatorBuilder builder) {
+    return builder.routes()
+        .route("users", r -> r.path("/api/users/**")
+            .uri("lb://user-service"))
+        .route("orders", r -> r.path("/api/orders/**")
+            .uri("lb://order-service"))
+        .build();
 }
 ```
 
-### Q5: How does Spring Cloud Netflix Eureka work for service discovery?
+Extraction order: start with the bounded context that changes most frequently, has the simplest data, or requires independent scaling. Never extract services that share a database transaction â€” they belong in the same service.
 
-**Answer:** Eureka follows client-side service discovery. Services register with the Eureka server at startup and send heartbeats. Consumers query the server for available instances and cache the registry locally. `@EnableEurekaServer` turns a Spring Boot app into the registry. `@EnableEurekaClient` makes a service register itself. Eureka uses self-preservation â€” if heartbeats are lost, it keeps the last known instance list instead of immediately evicting, preventing cascade failures in network partitions.
+---
+
+### Q3: Compare synchronous and asynchronous communication between microservices
+
+**Answer:**
+
+Synchronous (HTTP/gRPC) gives immediate responses but couples services in time. Asynchronous (messaging) decouples services but adds eventual consistency and complexity.
 
 ```java
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+// â”€â”€ Synchronous: HTTP via Feign Client â”€â”€
+@Service
+public class OrderService {
+    @Autowired private UserServiceClient userClient;
+    @Autowired private InventoryServiceClient inventoryClient;
 
+    @Transactional
+    public Order createOrderSync(OrderRequest request) {
+        // Blocks until user-service responds
+        UserDto user = userClient.getUser(request.userId());
+        // Blocks until inventory-service responds
+        InventoryStatus stock = inventoryClient.checkStock(request.productId());
+
+        if (!stock.available()) throw new InsufficientStockException();
+        Order order = orderRepo.save(new Order(request));
+        inventoryClient.reserveStock(request.productId(), request.quantity());
+        return order;
+    }
+}
+
+// â”€â”€ Asynchronous: Event-driven via Kafka â”€â”€
+@Service
+public class OrderEventProducer {
+    @Autowired private KafkaTemplate<String, OrderEvent> kafka;
+
+    public void createOrderAsync(OrderRequest request) {
+        Order order = orderRepo.save(new Order(request));
+        // Fire-and-forget event â€” inventory-service consumes asynchronously
+        kafka.send("order.created", new OrderCreatedEvent(order.getId(), request));
+    }
+}
+
+// inventory-service consumes the event independently
+@Component
+public class InventoryEventConsumer {
+    @KafkaListener(topics = "order.created")
+    public void handleOrderCreated(OrderCreatedEvent event) {
+        // Deduct stock in its own transaction
+        inventoryService.deductStock(event.productId(), event.quantity());
+        // Emits inventory.reserved or inventory.failed event
+        kafkaTemplate.send("inventory.reserved", new InventoryReservedEvent(event.orderId()));
+    }
+}
+
+// order-service handles the callback event
+@Component
+public class OrderEventConsumer {
+    @KafkaListener(topics = "inventory.reserved")
+    public void handleInventoryReserved(InventoryReservedEvent event) {
+        orderService.updateStatus(event.orderId(), "CONFIRMED");
+    }
+}
+```
+
+| Aspect | Synchronous | Asynchronous |
+|--------|-----------|-------------|
+| Latency | Higher (blocking) | Lower from caller's perspective |
+| Coupling | Tight (service must be up) | Loose (offline consumer tolerated) |
+| Consistency | Strong (within transaction) | Eventual |
+| Complexity | Lower | Higher (dead letter queues, retries) |
+| Debugging | Easier (single flow) | Harder (scattered across consumers) |
+| Backpressure | Tricky | Natural (queues buffer) |
+
+Use synchronous for reads and commands where immediate response is required. Use asynchronous for cross-service workflows where the caller doesn't need an immediate answer.
+
+---
+
+### Q4: How do you implement an API Gateway with Spring Cloud Gateway?
+
+**Answer:**
+
+Spring Cloud Gateway provides routing, filtering, rate limiting, and cross-cutting concerns at a single entry point.
+
+```java
+// â”€â”€ Main application â”€â”€
+@SpringBootApplication
+public class ApiGatewayApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ApiGatewayApplication.class, args);
+    }
+}
+
+// â”€â”€ Route configuration with filters â”€â”€
+@Configuration
+public class GatewayConfig {
+
+    @Bean
+    public RouteLocator customRoutes(RouteLocatorBuilder builder) {
+        return builder.routes()
+            // Route 1: user-service with header stripping
+            .route("user-service", r -> r.path("/api/users/**")
+                .filters(f -> f
+                    .stripPrefix(1)
+                    .addRequestHeader("X-Gateway", "spring-cloud-gateway")
+                    .retry(3)
+                    .circuitBreaker(config -> config
+                        .setName("userServiceCB")
+                        .setFallbackUri("forward:/fallback/users")))
+                .uri("lb://user-service"))
+
+            // Route 2: order-service with rate limiting
+            .route("order-service", r -> r.path("/api/orders/**")
+                .filters(f -> f
+                    .stripPrefix(1)
+                    .requestRateLimiter(config -> config
+                        .setRateLimiter(redisRateLimiter())))
+                .uri("lb://order-service"))
+
+            .build();
+    }
+
+    // â”€â”€ Redis-based rate limiter â”€â”€
+    @Bean
+    public RedisRateLimiter redisRateLimiter() {
+        return new RedisRateLimiter(10, 20, 1);  // 10 requests/sec, burst 20
+    }
+}
+
+// â”€â”€ Global filters (applied to every route) â”€â”€
+@Component
+public class GlobalLoggingFilter implements GlobalFilter, Ordered {
+    @Override
+    public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
+        long start = System.currentTimeMillis();
+        return chain.filter(exchange).then(Mono.fromRunnable(() -> {
+            log.info("{} {} -> {} ({}ms)",
+                exchange.getRequest().getMethod(),
+                exchange.getRequest().getPath(),
+                exchange.getResponse().getStatusCode(),
+                System.currentTimeMillis() - start);
+        }));
+    }
+}
+
+// â”€â”€ Security: validate JWT at the gateway â”€â”€
+@Component
+public class JwtAuthFilter implements GatewayFilterFactory<Object> {
+    @Override
+    public GatewayFilter apply(Object config) {
+        return (exchange, chain) -> {
+            String auth = exchange.getRequest().getHeaders()
+                .getFirst(HttpHeaders.AUTHORIZATION);
+            if (auth == null || !auth.startsWith("Bearer ")) {
+                exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
+                return exchange.getResponse().setComplete();
+            }
+            Jwt jwt = jwtDecoder.decode(auth.substring(7));
+            // Add user info to downstream headers
+            exchange.getRequest().mutate()
+                .header("X-User-Id", jwt.getSubject());
+            return chain.filter(exchange);
+        };
+    }
+}
+```
+
+API Gateway responsibilities: routing, authentication, rate limiting, request/response transformation, circuit breaking, logging, and aggregation. Do NOT put business logic in the gateway â€” it's a routing layer, not an orchestration layer.
+
+---
+
+### Q5: How does service discovery work with Eureka?
+
+**Answer:**
+
+Service discovery lets services find each other without hardcoded URLs. Each service registers itself with Eureka on startup and sends heartbeats to maintain its lease.
+
+```java
+// â”€â”€ Eureka Server (the registry) â”€â”€
 @SpringBootApplication
 @EnableEurekaServer
 public class EurekaServerApplication {
@@ -412,407 +309,90 @@ public class EurekaServerApplication {
     }
 }
 
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+// application.yml for Eureka server:
+// server.port: 8761
+// eureka.client.register-with-eureka: false
+// eureka.client.fetch-registry: false
 
+// â”€â”€ Eureka Client (every microservice) â”€â”€
 @SpringBootApplication
-@EnableDiscoveryClient
+@EnableEurekaClient
 public class OrderServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(OrderServiceApplication.class, args);
     }
 }
 
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-import org.springframework.cloud.client.ServiceInstance;
-import java.util.List;
+// application.yml for clients:
+// spring.application.name: order-service
+// eureka.client.service-url.defaultZone: http://localhost:8761/eureka/
+// eureka.instance.prefer-ip-address: true
+// eureka.instance.lease-renewal-interval-in-seconds: 10
+// eureka.instance.lease-expiration-duration-in-seconds: 30
 
+// â”€â”€ Using discovery to call another service â”€â”€
 @Service
-class OrderDiscoveryService {
-    private final DiscoveryClient discoveryClient;
+public class OrderService {
 
-    public OrderDiscoveryService(DiscoveryClient discoveryClient) {
-        this.discoveryClient = discoveryClient;
-    }
+    @Autowired
+    private DiscoveryClient discoveryClient;
 
-    public String getPaymentServiceUrl() {
-        List<ServiceInstance> instances = discoveryClient.getInstances("payment-service");
-        if (instances.isEmpty())
-            throw new RuntimeException("No payment-service instances available");
+    public String getUserEmail(Long userId) {
+        // Look up user-service instances dynamically
+        List<ServiceInstance> instances = discoveryClient
+            .getInstances("user-service");
+
+        if (instances.isEmpty()) {
+            throw new ServiceUnavailableException("user-service not found");
+        }
+
         ServiceInstance instance = instances.get(0);
-        return "http://" + instance.getHost() + ":" + instance.getPort();
-    }
+        URI uri = instance.getUri();
+        String url = uri + "/users/" + userId + "/email";
 
-    public void listAllServices() {
-        discoveryClient.getServices().forEach(serviceName -> {
-            System.out.println("Service: " + serviceName);
-            discoveryClient.getInstances(serviceName).forEach(instance ->
-                System.out.println("  Instance: " + instance.getUri()));
-        });
+        // Use RestTemplate or WebClient to call the discovered URL
+        return restTemplate.getForObject(url, String.class);
     }
 }
 
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.client.RestClient;
-import org.springframework.web.client.RestTemplate;
-
+// â”€â”€ Load-balanced with @LoadBalanced â”€â”€
 @Configuration
-class LoadBalancerConfig {
+public class ClientConfig {
     @Bean
     @LoadBalanced
-    public RestTemplate loadBalancedRestTemplate() {
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
-
-    @Bean
-    @LoadBalanced
-    public RestClient.Builder loadBalancedRestClientBuilder() {
-        return RestClient.builder();
-    }
 }
 
 @Service
-class OrderClient {
-    private final RestTemplate restTemplate;
+public class OrderService {
+    @Autowired
+    private RestTemplate restTemplate;  // automatically load-balanced via Eureka
 
-    public OrderClient(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
-    }
-
-    public PaymentStatus checkPayment(String paymentId) {
+    public String getUserEmail(Long userId) {
+        // Just use the service name â€” Ribbon/Ribbon resolves via Eureka
         return restTemplate.getForObject(
-            "http://payment-service/api/payments/{id}",
-            PaymentStatus.class, paymentId);
-    }
-}
-
-record PaymentStatus(String id, String status) {}
-```
-
-### Q6: How does Spring Cloud Gateway work? How do you configure routes, predicates, and filters?
-
-**Answer:** Spring Cloud Gateway is a non-blocking API gateway built on Spring WebFlux. Routes map incoming requests to downstream services. Predicates match request attributes (path, header, query param). Filters modify requests and responses (auth, rate limiting, header transform, circuit breaker). The gateway acts as the single entry point for all microservices.
-
-```java
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.gateway.route.RouteLocator;
-import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
-import org.springframework.context.annotation.Bean;
-import org.springframework.cloud.gateway.filter.ratelimit.KeyResolver;
-import org.springframework.cloud.gateway.filter.ratelimit.RedisRateLimiter;
-import reactor.core.publisher.Mono;
-
-@SpringBootApplication
-public class GatewayApplication {
-    public static void main(String[] args) {
-        SpringApplication.run(GatewayApplication.class, args);
-    }
-
-    @Bean
-    public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
-        return builder.routes()
-            .route("order-service", r -> r
-                .path("/api/orders/**")
-                .filters(f -> f
-                    .stripPrefix(1)
-                    .circuitBreaker(config -> config
-                        .setName("orderServiceCB")
-                        .setFallbackUri("forward:/fallback/orders"))
-                    .retry(config -> config
-                        .setRetries(3)
-                        .setStatuses(java.util.Set.of(500, 503)))
-                    .requestRateLimiter(config -> config
-                        .setRateLimiter(redisRateLimiter())
-                        .setKeyResolver(userKeyResolver())))
-                .uri("lb://order-service"))
-            .route("payment-service", r -> r
-                .path("/api/payments/**")
-                .and().header("X-Request-Source", "gateway")
-                .filters(f -> f
-                    .stripPrefix(1)
-                    .addRequestHeader("X-Gateway-Request", "true")
-                    .addResponseHeader("X-Gateway-Version", "1.0")
-                    .dedupeResponseHeader("Access-Control-Allow-Origin", "RETAIN_UNIQUE"))
-                .uri("lb://payment-service"))
-            .route("product-service", r -> r
-                .path("/api/products/**")
-                .and().method("GET")
-                .filters(f -> f
-                    .stripPrefix(1)
-                    .setResponseHeader("Cache-Control", "max-age=300"))
-                .uri("lb://product-service"))
-            .build();
-    }
-
-    @Bean
-    public RedisRateLimiter redisRateLimiter() {
-        return new RedisRateLimiter(10, 20, 1);
-    }
-
-    @Bean
-    public KeyResolver userKeyResolver() {
-        return exchange -> {
-            String userId = exchange.getRequest().getHeaders()
-                .getFirst("X-User-Id");
-            return Mono.justOrEmpty(userId).defaultIfEmpty("anonymous");
-        };
-    }
-}
-
-import org.springframework.web.bind.annotation.*;
-
-@RestController
-@RequestMapping("/fallback")
-class FallbackController {
-    @GetMapping("/orders")
-    public String orderFallback() {
-        return "{\"error\": \"Order service is temporarily unavailable. Please try again later.\"}";
-    }
-}
-
-import org.springframework.cloud.gateway.filter.GatewayFilterChain;
-import org.springframework.cloud.gateway.filter.GlobalFilter;
-import org.springframework.core.Ordered;
-import org.springframework.http.HttpStatus;
-import org.springframework.stereotype.Component;
-import org.springframework.web.server.ServerWebExchange;
-import reactor.core.publisher.Mono;
-
-@Component
-class JwtAuthGlobalFilter implements GlobalFilter, Ordered {
-
-    @Override
-    public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        String path = exchange.getRequest().getURI().getPath();
-        if (path.startsWith("/auth/") || path.startsWith("/public/"))
-            return chain.filter(exchange);
-
-        String authHeader = exchange.getRequest().getHeaders()
-            .getFirst("Authorization");
-        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
-            return exchange.getResponse().setComplete();
-        }
-
-        String token = authHeader.substring(7);
-        try {
-            Claims claims = validateToken(token);
-            exchange.getRequest().mutate()
-                .header("X-User-Id", claims.subject())
-                .header("X-User-Roles", String.join(",", claims.roles()));
-            return chain.filter(exchange);
-        } catch (Exception e) {
-            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
-            return exchange.getResponse().setComplete();
-        }
-    }
-
-    private Claims validateToken(String token) {
-        return new Claims("user-123", java.util.List.of("USER"));
-    }
-
-    @Override
-    public int getOrder() { return -100; }
-}
-
-record Claims(String subject, java.util.List<String> roles) {}
-```
-
-### Q7: How do you implement resilience patterns with Resilience4j in Spring Boot?
-
-**Answer:** Resilience4j provides decorators for circuit breaker, retry, rate limiter, bulkhead, and time limiter. The circuit breaker wraps remote calls and monitors failures. When failures exceed a threshold within a sliding window, the circuit opens and subsequent calls fail fast with a fallback. After a wait duration, it becomes half-open for probe calls. Retry with exponential backoff handles transient failures. Rate limiter controls frequency. Bulkhead limits concurrent calls. Time limiter sets max execution duration.
-
-```java
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import io.github.resilience4j.retry.annotation.Retry;
-import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
-import io.github.resilience4j.bulkhead.annotation.Bulkhead;
-import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
-import org.springframework.web.client.RestTemplate;
-import java.util.concurrent.CompletableFuture;
-import java.util.function.Supplier;
-
-@Service
-class PaymentClient {
-    private final RestTemplate restTemplate;
-
-    public PaymentClient(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
-    }
-
-    @CircuitBreaker(name = "paymentService", fallbackMethod = "paymentFallback")
-    @Retry(name = "paymentRetry", fallbackMethod = "paymentFallback")
-    public PaymentResponse processPayment(PaymentRequest request) {
-        return restTemplate.postForObject(
-            "http://payment-service/api/payments",
-            request, PaymentResponse.class);
-    }
-
-    public PaymentResponse paymentFallback(PaymentRequest request, Exception ex) {
-        System.err.println("Payment service call failed: " + ex.getMessage());
-        return new PaymentResponse("fallback-" + UUID.randomUUID(),
-            "PENDING", "Service unavailable");
-    }
-
-    @RateLimiter(name = "paymentRateLimiter", fallbackMethod = "rateLimitFallback")
-    public PaymentResponse processPaymentWithRateLimit(PaymentRequest request) {
-        return processPayment(request);
-    }
-
-    public PaymentResponse rateLimitFallback(PaymentRequest request, Exception ex) {
-        return new PaymentResponse(null, "RATE_LIMITED", "Too many requests");
-    }
-
-    @Bulkhead(name = "paymentBulkhead", type = Bulkhead.Type.THREADPOOL)
-    @TimeLimiter(name = "paymentTimeLimiter")
-    public CompletableFuture<PaymentResponse> processPaymentAsync(PaymentRequest request) {
-        return CompletableFuture.supplyAsync(() -> processPayment(request));
-    }
-}
-
-record PaymentRequest(String orderId, BigDecimal amount, String currency) {}
-record PaymentResponse(String paymentId, String status, String message) {}
-
-import io.github.resilience4j.circuitbreaker.CircuitBreaker;
-import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
-import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;
-import io.github.resilience4j.decorators.Decorators;
-import java.time.Duration;
-
-@Service
-class ProgrammaticResilienceService {
-    private final CircuitBreaker circuitBreaker;
-    private final PaymentClient paymentClient;
-
-    public ProgrammaticResilienceService(CircuitBreakerRegistry registry,
-                                          PaymentClient paymentClient) {
-        this.circuitBreaker = registry.circuitBreaker("paymentService",
-            CircuitBreakerConfig.custom()
-                .slidingWindowType(CircuitBreakerConfig.SlidingWindowType.COUNT_BASED)
-                .slidingWindowSize(20)
-                .failureRateThreshold(40)
-                .waitDurationInOpenState(Duration.ofSeconds(15))
-                .permittedNumberOfCallsInHalfOpenState(5)
-                .build());
-        this.paymentClient = paymentClient;
-    }
-
-    public PaymentResponse callWithCircuitBreaker(PaymentRequest request) {
-        Supplier<PaymentResponse> decorated = Decorators.ofSupplier(
-                () -> paymentClient.processPayment(request))
-            .withCircuitBreaker(circuitBreaker)
-            .withFallback(ex -> new PaymentResponse(null, "FALLBACK",
-                "Service degraded: " + ex.getMessage()))
-            .decorate();
-        return decorated.get();
-    }
-}
-
-import io.micrometer.core.instrument.MeterRegistry;
-import jakarta.annotation.PostConstruct;
-
-@Component
-class CircuitBreakerMetricsExporter {
-    private final CircuitBreakerRegistry registry;
-    private final MeterRegistry meterRegistry;
-
-    public CircuitBreakerMetricsExporter(CircuitBreakerRegistry registry,
-                                          MeterRegistry meterRegistry) {
-        this.registry = registry;
-        this.meterRegistry = meterRegistry;
-    }
-
-    @PostConstruct
-    public void registerMetrics() {
-        registry.getAllCircuitBreakers().forEach(cb -> {
-            meterRegistry.gauge("resilience4j.circuitbreaker.state",
-                java.util.List.of(
-                    io.micrometer.core.instrument.Tag.of("name", cb.getName())),
-                cb, c -> c.getState().ordinal());
-        });
+            "http://user-service/users/" + userId + "/email",
+            String.class);
     }
 }
 ```
 
-### Q8: How do you implement distributed tracing with Micrometer Tracing and OpenTelemetry?
+Eureka provides client-side load balancing. Each client maintains a local registry of available instances and rotates through them (round-robin by default). If a service instance fails to send a heartbeat within 3 lease periods, Eureka evicts it.
 
-**Answer:** Micrometer Tracing provides a vendor-neutral facade for distributed tracing. It automatically propagates trace IDs and span IDs across HTTP headers. OpenTelemetry is the underlying instrumentation library. Configure a sampler (always, probability, or rate-limiting) and an exporter (Zipkin, Jaeger, Tempo via OTLP). Each service gets a unique `service.name`. The trace ID flows through all services for full request path reconstruction.
+For production, run at least 2 Eureka servers in a multi-DC setup. Eureka is AP (availability + partition tolerance) â€” sacrifices consistency, which is fine for service discovery.
 
-```java
-import io.micrometer.observation.Observation;
-import io.micrometer.observation.ObservationRegistry;
-import io.micrometer.tracing.BaggageInScope;
-import io.micrometer.tracing.Tracer;
+---
 
-@Service
-class OrderTracingService {
-    private final ObservationRegistry observationRegistry;
-    private final Tracer tracer;
+### Q6: How do you externalize configuration with Spring Cloud Config?
 
-    public OrderTracingService(ObservationRegistry observationRegistry, Tracer tracer) {
-        this.observationRegistry = observationRegistry;
-        this.tracer = tracer;
-    }
+**Answer:**
 
-    public OrderResponse createOrderWithTracing(OrderRequest request) {
-        return Observation.createNotStarted("order.create", observationRegistry)
-            .lowCardinalityKeyValue("customerId", request.customerId())
-            .highCardinalityKeyValue("orderAmount", request.amount().toString())
-            .observe(() -> {
-                try (BaggageInScope baggage =
-                        tracer.createBaggage("customerId", request.customerId())) {
-                    OrderResponse response = doCreateOrder(request);
-                    tracer.currentSpan().ifPresent(span ->
-                        span.tag("orderId", response.orderId()));
-                    return response;
-                }
-            });
-    }
-
-    private OrderResponse doCreateOrder(OrderRequest request) {
-        return new OrderResponse(UUID.randomUUID().toString(), "CREATED");
-    }
-}
-
-record OrderRequest(String customerId, BigDecimal amount) {}
-record OrderResponse(String orderId, String status) {}
-
-import io.micrometer.tracing.TraceContext;
-import io.micrometer.tracing.Tracer;
-import org.springframework.scheduling.annotation.Async;
-import java.util.concurrent.CompletableFuture;
-
-@Service
-class AsyncOrderProcessor {
-    private final Tracer tracer;
-
-    public AsyncOrderProcessor(Tracer tracer) {
-        this.tracer = tracer;
-    }
-
-    @Async
-    public CompletableFuture<Void> processOrderAsync(String orderId) {
-        TraceContext context = tracer.currentTraceContext().context();
-        if (context != null) {
-            System.out.println("Processing order " + orderId +
-                " in trace: " + context.traceId());
-        }
-        return CompletableFuture.completedFuture(null);
-    }
-}
-```
-
-### Q9: How does Spring Cloud Config work for distributed configuration?
-
-**Answer:** Spring Cloud Config Server serves configuration from a git repository. Services pull config on startup by sending their application name and active profile. The server responds with merged configuration. Sensitive values are encrypted using symmetric or asymmetric keys. `@RefreshScope` allows beans to reload without restarting â€” a POST to `/actuator/refresh` triggers bean re-creation. Spring Cloud Bus propagates refresh events across all instances via a message broker.
+Spring Cloud Config Server serves configuration from a Git backend. Config clients fetch their configuration on startup and can refresh it at runtime.
 
 ```java
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.config.server.EnableConfigServer;
-
+// â”€â”€ Config Server â”€â”€
 @SpringBootApplication
 @EnableConfigServer
 public class ConfigServerApplication {
@@ -821,2351 +401,2228 @@ public class ConfigServerApplication {
     }
 }
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+// application.yml:
+// server.port: 8888
+// spring.cloud.config.server.git.uri: https://github.com/raushan666/config-repo
+// spring.cloud.config.server.git.searchPaths: '{application}'
+// spring.cloud.config.server.git.default-label: main
 
-@RefreshScope
+// â”€â”€ Git-backed config repository structure â”€â”€
+// config-repo/
+//   order-service.yml          (shared for all profiles)
+//   order-service-dev.yml      (dev profile)
+//   order-service-prod.yml     (prod profile)
+//   application.yml            (shared across all services)
+
+// order-service.yml in Git:
+// server:
+//   port: 8081
+// spring:
+//   datasource:
+//     url: ${DB_URL}
+//     username: ${DB_USER}
+//     password: ${DB_PASS}
+// order-service:
+//   order-timeout: 30s
+//   max-batch-size: 100
+
+// â”€â”€ Config Client â”€â”€
+@SpringBootApplication
+public class OrderServiceApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(OrderServiceApplication.class, args);
+    }
+}
+
+// bootstrap.yml (loaded before application.yml):
+// spring.application.name: order-service
+// spring.cloud.config.uri: http://localhost:8888
+// spring.cloud.config.fail-fast: true
+// spring.cloud.config.retry.initial-interval: 1000
+// spring.cloud.config.retry.max-attempts: 5
+
+// â”€â”€ Using config values â”€â”€
 @RestController
-class OrderConfigController {
+@RequestMapping("/orders")
+public class OrderController {
 
-    @Value("${app.max-order-limit:50}")
-    private int maxOrderLimit;
+    @Value("${order-service.order-timeout:30s}")
+    private Duration orderTimeout;
 
-    @Value("${app.features.discount-service:false}")
-    private boolean discountServiceEnabled;
+    @Value("${order-service.max-batch-size:100}")
+    private int maxBatchSize;
 
-    @Value("${app.payment-timeout-ms:3000}")
-    private int paymentTimeoutMs;
-
-    @GetMapping("/api/config")
-    public ConfigResponse getConfig() {
-        return new ConfigResponse(maxOrderLimit, discountServiceEnabled, paymentTimeoutMs);
+    @RefreshScope  // Enables runtime refresh without restart
+    @Component
+    public class OrderConfig {
+        @Value("${order-service.discount-rate:0}")
+        private double discountRate;
     }
 }
 
-record ConfigResponse(int maxOrderLimit, boolean discountServiceEnabled, int paymentTimeoutMs) {}
+// â”€â”€ Trigger refresh â”€â”€
+@RestController
+public class ConfigRefreshController {
+    @Autowired
+    private RefreshEndpoint refreshEndpoint;
 
-import org.springframework.cloud.bus.event.RefreshRemoteApplicationEvent;
-import org.springframework.context.event.EventListener;
-import org.springframework.stereotype.Component;
-
-@Component
-class ConfigRefreshListener {
-    @EventListener
-    public void onRefresh(RefreshRemoteApplicationEvent event) {
-        System.out.println("Config refresh received from: " +
-            event.getOriginService() + " for destination: " +
-            event.getDestinationService());
+    @PostMapping("/actuator/refresh")
+    public Set<String> refresh() {
+        return refreshEndpoint.refresh();  // Returns changed property keys
     }
 }
+// POST http://order-service/actuator/refresh
+// Response: ["order-service.discount-rate"]
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.vault.authentication.ClientAuthentication;
-import org.springframework.vault.authentication.TokenAuthentication;
-import org.springframework.vault.client.VaultEndpoint;
-import org.springframework.vault.config.AbstractVaultConfiguration;
-import java.net.URI;
-
-@Configuration
-class VaultConfig extends AbstractVaultConfiguration {
-    @Override
-    public VaultEndpoint vaultEndpoint() {
-        return VaultEndpoint.from(URI.create("http://vault:8200"));
-    }
-
-    @Override
-    public ClientAuthentication clientAuthentication() {
-        return new TokenAuthentication(System.getenv("VAULT_TOKEN"));
-    }
-}
+// â”€â”€ For automatic broadcast, use Spring Cloud Bus â”€â”€
+// POST http://config-server/actuator/busrefresh/order-service:**
+// Broadcasts refresh to all instances of order-service via RabbitMQ
 ```
 
-### Q10: Explain the 12-factor app principles and how they apply to microservices.
+Config server enables centralized management, version history (through Git), and environment-specific overrides. Never store secrets in plain text â€” use `{cipher}` encrypted values with a symmetric key or Vault backend.
 
-**Answer:** The 12-factor app methodology defines principles for building cloud-native applications: codebase (one repo, many deploys), dependencies (explicit declaration), config (environment variables), backing services (attached resources), build/release/run (strict separation), processes (stateless), port binding (self-contained HTTP), concurrency (scale via processes), disposability (fast startup/graceful shutdown), dev/prod parity, logs (event streams), and admin processes (one-off tasks). These principles are the foundation of cloud-native microservices.
+---
+
+### Q7: How do you implement distributed tracing with Micrometer and Zipkin?
+
+**Answer:**
+
+Distributed tracing traces a request across multiple microservices using trace IDs and span IDs. Spring Cloud Sleuth (now Micrometer Tracing) integrates with Zipkin for visualization.
 
 ```java
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
+// â”€â”€ Dependencies (Spring Boot 3.x) â”€â”€
+// implementation 'io.micrometer:micrometer-tracing-bridge-brave'
+// implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
+// implementation 'io.micrometer:micrometer-tracing'
 
-@Configuration
-class AppConfiguration {
-    @Value("${DB_URL}") private String dbUrl;
-    @Value("${DB_USERNAME}") private String dbUsername;
-    @Value("${DB_PASSWORD}") private String dbPassword;
-    @Value("${MAX_CONNECTIONS:10}") private int maxConnections;
-}
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import javax.sql.DataSource;
-import com.zaxxer.hikari.HikariConfig;
-import com.zaxxer.hikari.HikariDataSource;
-
-@Configuration
-class DatabaseConfig {
-    @Bean
-    public DataSource dataSource() {
-        HikariConfig config = new HikariConfig();
-        config.setJdbcUrl(System.getenv("DB_URL"));
-        config.setUsername(System.getenv("DB_USERNAME"));
-        config.setPassword(System.getenv("DB_PASSWORD"));
-        config.setMaximumPoolSize(Integer.parseInt(
-            System.getenv().getOrDefault("MAX_CONNECTIONS", "10")));
-        config.setConnectionTimeout(5000);
-        return new HikariDataSource(config);
+// â”€â”€ Application configuration â”€â”€
+@SpringBootApplication
+public class OrderServiceApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(OrderServiceApplication.class, args);
     }
 }
 
-import jakarta.annotation.PreDestroy;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
+// application.yml:
+// management.tracing.sampling.probability: 1.0   (1.0 = trace all requests)
+// spring.sleuth.reporter.zipkin.enabled: true    (for Sleuth 2.x, pre-micrometer)
+// Actually with Micrometer Tracing:
+// management.zipkin.tracing.endpoint: http://localhost:9411/api/v2/spans
 
-@Component
-class GracefulShutdownHandler {
-    private static final Logger log = LoggerFactory.getLogger(GracefulShutdownHandler.class);
-
-    @PreDestroy
-    public void onShutdown() {
-        log.info("Shutting down gracefully...");
-        log.info("Shutdown complete");
-    }
-}
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.slf4j.MDC;
-import java.util.UUID;
-
+// â”€â”€ Manual tracing in code â”€â”€
 @Service
-class StructuredLoggingService {
-    private static final Logger log = LoggerFactory.getLogger(StructuredLoggingService.class);
+public class OrderService {
 
-    public void processOrder(String orderId) {
-        MDC.put("orderId", orderId);
-        MDC.put("traceId", UUID.randomUUID().toString());
-        log.info("Processing order started");
-        try {
-            log.info("Order validated successfully");
-        } catch (Exception e) {
-            log.error("Order processing failed", e);
+    @Autowired
+    private Tracer tracer;  // Micrometer Tracing Tracer
+
+    @Autowired
+    private UserServiceClient userClient;
+
+    public Order createOrder(OrderRequest request) {
+        // Create a custom span for business logic
+        Span span = tracer.nextSpan().name("create-order").start();
+        try (Tracer.SpanInScope ws = tracer.withSpan(span)) {
+            span.tag("user.id", String.valueOf(request.userId()));
+            span.tag("order.total", request.total().toString());
+
+            // This HTTP call automatically propagates the trace ID
+            UserDto user = userClient.getUser(request.userId());
+
+            Order order = orderRepo.save(new Order(request));
+
+            span.tag("order.id", String.valueOf(order.getId()));
+            return order;
         } finally {
-            MDC.clear();
+            span.end();
         }
     }
 }
 
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
-
-@Component
-class DatabaseMigrationRunner implements CommandLineRunner {
-    @Override
-    public void run(String... args) {
-        if (args.length > 0 && "migrate".equals(args[0])) {
-            System.out.println("Running database migrations...");
-            System.exit(0);
-        }
-    }
-}
-```
-
-### Q11: How do you implement health checks with readiness and liveness probes in Spring Boot?
-
-**Answer:** Spring Boot Actuator exposes `/actuator/health` with status aggregating all health indicators. Kubernetes distinguishes liveness (is the app alive? restart if not) and readiness (is the app ready to serve traffic? remove from service if not). Spring Boot groups health indicators into probe groups. Liveness should be cheap (JVM health). Readiness should check downstream dependencies.
-
-```java
-import org.springframework.boot.actuate.health.Health;
-import org.springframework.boot.actuate.health.HealthIndicator;
-import org.springframework.stereotype.Component;
-
-@Component
-class PaymentServiceHealthIndicator implements HealthIndicator {
-    private final PaymentServiceClient paymentClient;
-
-    public PaymentServiceHealthIndicator(PaymentServiceClient paymentClient) {
-        this.paymentClient = paymentClient;
-    }
-
-    @Override
-    public Health health() {
-        try {
-            boolean reachable = paymentClient.healthCheck();
-            if (reachable)
-                return Health.up()
-                    .withDetail("service", "payment-service")
-                    .withDetail("latencyMs", 42)
-                    .build();
-            return Health.down()
-                .withDetail("service", "payment-service")
-                .withDetail("error", "Health check returned false")
-                .build();
-        } catch (Exception e) {
-            return Health.down(e)
-                .withDetail("service", "payment-service")
-                .build();
-        }
-    }
-}
-
-interface PaymentServiceClient {
-    boolean healthCheck();
-}
-
-import org.springframework.boot.actuate.availability.ReadinessStateHealthIndicator;
-import org.springframework.boot.availability.ApplicationAvailability;
-import org.springframework.boot.availability.ReadinessState;
-import org.springframework.stereotype.Component;
-
-@Component
-class DatabaseReadinessIndicator extends ReadinessStateHealthIndicator {
-    public DatabaseReadinessIndicator(ApplicationAvailability availability) {
-        super(availability);
-    }
-
-    @Override
-    protected void doHealthCheck(Health.Builder builder) {
-        builder.up()
-            .withDetail("database", "connected")
-            .withDetail("migration", "up-to-date");
-    }
-}
-
-import org.springframework.boot.actuate.health.CompositeHealthContributor;
-import org.springframework.boot.actuate.health.HealthContributor;
-import org.springframework.boot.actuate.health.NamedContributor;
-import org.springframework.stereotype.Component;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Iterator;
-
-@Component
-class DownstreamServiceHealthContributor implements CompositeHealthContributor {
-    private final Map<String, HealthContributor> contributors = new LinkedHashMap<>();
-
-    public DownstreamServiceHealthContributor(
-            PaymentServiceHealthIndicator payment,
-            InventoryServiceHealthIndicator inventory) {
-        contributors.put("payment", payment);
-        contributors.put("inventory", inventory);
-    }
-
-    @Override
-    public HealthContributor getContributor(String name) {
-        return contributors.get(name);
-    }
-
-    @Override
-    public Iterator<NamedContributor<HealthContributor>> iterator() {
-        return contributors.entrySet().stream()
-            .map(entry -> NamedContributor.of(entry.getKey(), entry.getValue()))
-            .iterator();
-    }
-}
-
-@Component
-class InventoryServiceHealthIndicator implements HealthIndicator {
-    @Override
-    public Health health() {
-        return Health.up().withDetail("inventory", "available").build();
-    }
-}
-```
-
-### Q12: What are the three pillars of observability? How do you implement them in Spring Boot?
-
-**Answer:** The three pillars are logging (structured event records), metrics (numeric measurements), and tracing (end-to-end request flow). Logging uses structured JSON via Logstash encoder with MDC context. Metrics use Micrometer to expose JVM, application, and custom metrics via Prometheus. Tracing uses OpenTelemetry to propagate trace context. Grafana combines all three.
-
-```java
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.slf4j.MDC;
-import org.springframework.web.filter.OncePerRequestFilter;
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import java.util.UUID;
-
-@Component
-class StructuredLoggingFilter extends OncePerRequestFilter {
-    private static final Logger log = LoggerFactory.getLogger(StructuredLoggingFilter.class);
-
-    @Override
-    protected void doFilterInternal(HttpServletRequest request,
-                                     HttpServletResponse response,
-                                     FilterChain filterChain) {
-        String correlationId = request.getHeader("X-Correlation-Id");
-        if (correlationId == null || correlationId.isBlank())
-            correlationId = UUID.randomUUID().toString();
-
-        MDC.put("correlationId", correlationId);
-        MDC.put("service", "order-service");
-        long startTime = System.currentTimeMillis();
-        log.info("Incoming request: {} {}", request.getMethod(), request.getRequestURI());
-
-        try {
-            filterChain.doFilter(request, response);
-        } catch (Exception e) {
-            log.error("Request failed", e);
-        } finally {
-            long duration = System.currentTimeMillis() - startTime;
-            MDC.put("durationMs", String.valueOf(duration));
-            log.info("Request completed");
-            MDC.clear();
-        }
-    }
-}
-
-import io.micrometer.core.instrument.Counter;
-import io.micrometer.core.instrument.MeterRegistry;
-import io.micrometer.core.instrument.Timer;
-import io.micrometer.core.instrument.DistributionSummary;
-import org.springframework.stereotype.Service;
-import java.util.concurrent.Callable;
-
-@Service
-class MetricsService {
-    private final Counter orderCreatedCounter;
-    private final Counter orderFailedCounter;
-    private final Timer orderProcessingTimer;
-    private final DistributionSummary orderValueSummary;
-
-    public MetricsService(MeterRegistry meterRegistry) {
-        this.orderCreatedCounter = Counter.builder("orders.created")
-            .description("Total number of created orders")
-            .tag("service", "order-service")
-            .register(meterRegistry);
-
-        this.orderFailedCounter = Counter.builder("orders.failed")
-            .description("Total number of failed orders")
-            .tag("service", "order-service")
-            .register(meterRegistry);
-
-        this.orderProcessingTimer = Timer.builder("orders.processing.time")
-            .description("Time taken to process an order")
-            .tag("service", "order-service")
-            .publishPercentiles(0.5, 0.95, 0.99)
-            .register(meterRegistry);
-
-        this.orderValueSummary = DistributionSummary.builder("orders.value")
-            .description("Distribution of order values")
-            .tag("service", "order-service")
-            .publishPercentiles(0.5, 0.95, 0.99)
-            .register(meterRegistry);
-    }
-
-    public void recordOrderCreated() { orderCreatedCounter.increment(); }
-
-    public void recordOrderFailed(String reason) {
-        orderFailedCounter.increment();
-    }
-
-    public <T> T measureProcessingTime(Callable<T> callable) throws Exception {
-        return orderProcessingTimer.recordCallable(callable);
-    }
-
-    public void recordOrderValue(double amount) {
-        orderValueSummary.record(amount);
-    }
-}
-
-import io.micrometer.core.annotation.Timed;
-import java.util.UUID;
-
-@Service
-@Timed("orders.service")
-class TimedOrderService {
-    @Timed(value = "orders.create", longTask = true)
-    public OrderResponse createOrder(OrderRequest request) {
-        return new OrderResponse(UUID.randomUUID().toString(), "CREATED");
-    }
-}
-```
-
-### Q13: Explain the difference between client-side and server-side service discovery.
-
-**Answer:** In client-side discovery, the client queries a registry (Eureka) and uses a load balancer (Spring Cloud LoadBalancer) to pick an instance. In server-side discovery, the client sends requests to a load balancer (Kubernetes Service or AWS ALB) that routes to healthy instances without the client knowing the registry. Client-side reduces hops and works well in Spring Cloud. Server-side offloads discovery from applications and is standard in Kubernetes.
-
-```java
-import org.springframework.cloud.client.ServiceInstance;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
-import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
-import org.springframework.cloud.loadbalancer.core.ServiceInstanceListSupplier;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.client.WebClient;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
-
+// â”€â”€ Trace propagation via RestTemplate â”€â”€
 @Configuration
-@LoadBalancerClient(name = "payment-service")
-class ClientSideDiscoveryConfig {
+public class TracingConfig {
     @Bean
     @LoadBalanced
-    public RestTemplate loadBalancedRestTemplate() {
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
-    @Bean
-    @LoadBalanced
-    public WebClient.Builder loadBalancedWebClientBuilder() {
-        return WebClient.builder();
-    }
+    // Micrometer automatically instruments RestTemplate, WebClient, Kafka, etc.
+    // No manual header propagation needed with brave instrumentation
 }
 
-@Service
-class ClientSideOrderService {
-    private final RestTemplate restTemplate;
+// â”€â”€ View traces in Zipkin â”€â”€
+// docker run -d -p 9411:9411 openzipkin/zipkin
+// Then visit http://localhost:9411 â€” search by trace ID or service
 
-    public ClientSideOrderService(RestTemplate restTemplate) {
-        this.restTemplate = restTemplate;
-    }
-
-    public PaymentResponse getPayment(String paymentId) {
-        return restTemplate.getForObject(
-            "http://payment-service/api/payments/{id}",
-            PaymentResponse.class, paymentId);
-    }
-}
-
-@Service
-class ServerSideOrderService {
-    private final RestTemplate restTemplate;
-
-    public ServerSideOrderService() {
-        this.restTemplate = new RestTemplate();
-    }
-
-    public PaymentResponse getPayment(String paymentId) {
-        return restTemplate.getForObject(
-            "http://payment-service.default.svc.cluster.local:8080/api/payments/{id}",
-            PaymentResponse.class, paymentId);
+// â”€â”€ Tag annotation with @SpanTag â”€â”€
+@Component
+public class PaymentProcessor {
+    @NewSpan(name = "process-payment")
+    public PaymentResult process(
+            @SpanTag("payment.amount") BigDecimal amount,
+            @SpanTag("payment.method") String method) {
+        // Method arguments are automatically captured as span tags
     }
 }
-
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-@EnableDiscoveryClient
-class KubernetesDiscoveryConfig {}
 ```
 
-### Q14: Compare RabbitMQ, Kafka, and Amazon SQS for microservices messaging.
+Each trace has a unique trace ID (propagated across services via HTTP headers). Each service creates spans within that trace. Zipkin collects spans and shows them in a waterfall view, revealing which service caused the latency.
 
-**Answer:** RabbitMQ is a general-purpose broker with complex routing (exchanges, bindings); ideal for task distribution and RPC. Kafka is a distributed event streaming platform for high-throughput, persistent, replayable logs; ideal for event sourcing and stream processing. SQS is a fully managed queue with at-least-once delivery, pull-based consumption, and zero operational overhead.
+With 100% sampling in dev (1.0) and 1-10% in prod, tracing adds negligible overhead. Pair traces with logs by including the trace ID in log output (`%X{traceId}`).
+
+---
+
+### Q8: Explain the Saga pattern with a code example
+
+**Answer:**
+
+The Saga pattern manages distributed transactions across microservices by breaking them into a sequence of local transactions with compensating actions for rollback. Two implementations: choreography (each service emits/reacts to events) and orchestration (a coordinator drives the flow).
 
 ```java
-import org.springframework.amqp.core.*;
-import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
-import org.springframework.amqp.rabbit.connection.ConnectionFactory;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// CHOREOGRAPHY SAGA â€” services react to each other's events
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
 
-@Configuration
-class RabbitMQConfig {
-    static final String EXCHANGE = "order.exchange";
-    static final String QUEUE = "order.queue";
-    static final String ROUTING_KEY = "order.created";
+// Step 1: Order Service creates order and emits event
+@Service
+public class OrderSagaService {
+    @Autowired private OrderRepository orderRepo;
+    @Autowired private KafkaTemplate<String, Object> kafka;
 
-    @Bean
-    public TopicExchange orderExchange() { return new TopicExchange(EXCHANGE); }
+    @Transactional
+    public Order createOrder(OrderRequest req) {
+        Order order = new Order(req.userId(), req.productId(), req.quantity(), req.total());
+        order.setStatus("PENDING");
+        order = orderRepo.save(order);
 
-    @Bean
-    public Queue orderQueue() {
-        return QueueBuilder.durable(QUEUE)
-            .withArgument("x-dead-letter-exchange", "order.dlx")
-            .withArgument("x-dead-letter-routing-key", "order.dead")
-            .build();
+        // Emit event â€” inventory service consumes this
+        kafka.send("saga.order-created", new OrderCreatedEvent(order.getId(), req));
+        return order;
     }
 
-    @Bean
-    public Binding binding(Queue queue, TopicExchange exchange) {
-        return BindingBuilder.bind(queue).to(exchange).with(ROUTING_KEY);
+    // Compensating handler: if inventory fails, cancel the order
+    @KafkaListener(topics = "saga.inventory-failed")
+    public void handleInventoryFailed(InventoryFailedEvent event) {
+        Order order = orderRepo.findById(event.orderId()).orElseThrow();
+        order.setStatus("CANCELLED");
+        order.setFailureReason(event.reason());
+        orderRepo.save(order);
+    }
+}
+
+// Step 2: Inventory Service reserves stock
+@Service
+public class InventorySagaService {
+    @Autowired private InventoryRepository invRepo;
+    @Autowired private KafkaTemplate<String, Object> kafka;
+
+    @KafkaListener(topics = "saga.order-created")
+    public void handleOrderCreated(OrderCreatedEvent event) {
+        try {
+            ProductInventory inv = invRepo.findByProductId(event.productId());
+            inv.reserve(event.quantity());
+            invRepo.save(inv);
+            kafka.send("saga.inventory-reserved",
+                new InventoryReservedEvent(event.orderId()));
+        } catch (Exception e) {
+            kafka.send("saga.inventory-failed",
+                new InventoryFailedEvent(event.orderId(), e.getMessage()));
+        }
+    }
+}
+
+// Step 3: Payment Service processes payment
+@Service
+public class PaymentSagaService {
+    @KafkaListener(topics = "saga.inventory-reserved")
+    public void handleInventoryReserved(InventoryReservedEvent event) {
+        try {
+            paymentService.charge(event.orderId(), event.total());
+            kafka.send("saga.payment-completed",
+                new PaymentCompletedEvent(event.orderId()));
+        } catch (Exception e) {
+            // Compensating: release inventory
+            kafka.send("saga.payment-failed",
+                new PaymentFailedEvent(event.orderId()));
+        }
     }
 
-    @Bean
-    public Jackson2JsonMessageConverter messageConverter() {
-        return new Jackson2JsonMessageConverter();
+    // Compensating: refund if downstream fails
+    @KafkaListener(topics = "saga.refund-requested")
+    public void handleRefundRequested(RefundRequestedEvent event) {
+        paymentService.refund(event.orderId());
+    }
+}
+
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+// ORCHESTRATION SAGA â€” a coordinator manages the flow
+// â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+
+// Saga Orchestrator
+@Component
+public class OrderSagaOrchestrator {
+    @Autowired private KafkaTemplate<String, Object> kafka;
+    @Autowired private SagaStateRepository sagaStateRepo;
+
+    @Transactional
+    public void startSaga(CreateOrderCommand cmd) {
+        SagaState state = new SagaState(cmd.orderId(), "ORDER_CREATED");
+        sagaStateRepo.save(state);
+        kafka.send("saga.commands", new ReserveInventoryCmd(cmd.orderId(), cmd.productId(), cmd.quantity()));
     }
 
-    @Bean
-    public RabbitTemplate rabbitTemplate(ConnectionFactory connectionFactory) {
-        RabbitTemplate template = new RabbitTemplate(connectionFactory);
-        template.setMessageConverter(messageConverter());
-        template.setConfirmCallback((correlationData, ack, cause) -> {
-            if (!ack) System.err.println("Message not confirmed: " + cause);
-        });
-        template.setReturnsCallback(returned ->
-            System.err.println("Message returned: " + returned.getMessage()));
-        return template;
+    @KafkaListener(topics = "saga.events")
+    public void handleEvent(SagaEvent event) {
+        SagaState state = sagaStateRepo.findById(event.sagaId()).orElseThrow();
+
+        switch (state.currentStep()) {
+            case "ORDER_CREATED" -> {
+                if (event instanceof InventoryReservedEvent) {
+                    state.advanceTo("INVENTORY_RESERVED");
+                    kafka.send("saga.commands", new ProcessPaymentCmd(event.orderId()));
+                } else if (event instanceof InventoryFailedEvent) {
+                    state.fail(event.reason());
+                    // Saga complete â€” order already marked PENDING, no action needed
+                }
+            }
+            case "INVENTORY_RESERVED" -> {
+                if (event instanceof PaymentCompletedEvent) {
+                    state.advanceTo("PAYMENT_COMPLETED");
+                    kafka.send("saga.commands", new ConfirmOrderCmd(event.orderId()));
+                } else if (event instanceof PaymentFailedEvent) {
+                    // Compensate: release inventory
+                    kafka.send("saga.commands", new ReleaseInventoryCmd(event.orderId()));
+                    state.compensate();
+                }
+            }
+            default -> state.fail("Unknown step: " + state.currentStep());
+        }
+        sagaStateRepo.save(state);
+    }
+}
+```
+
+Saga handles long-running transactions without locking resources. Choreography works when the flow is simple (3-4 services). Orchestration is better for complex workflows with branching and compensations. Never use XA/2PC transactions across services â€” that defeats the purpose of microservices.
+
+
+### Q9: What is CQRS and how do you implement it?
+
+**Answer:**
+
+CQRS (Command Query Responsibility Segregation) separates write models (commands) from read models (queries). Each model has its own database schema, optimized for its operation.
+
+```java
+// â”€â”€ Command side: focused on writes â”€â”€
+@RestController
+@RequestMapping("/orders/commands")
+public class OrderCommandController {
+    @Autowired private OrderCommandService commandService;
+
+    @PostMapping
+    public CompletableFuture<UUID> createOrder(@RequestBody CreateOrderCommand cmd) {
+        return commandService.handle(cmd);  // Returns order ID immediately
+    }
+
+    @PostMapping("/{id}/cancel")
+    public void cancelOrder(@PathVariable UUID id) {
+        commandService.handle(new CancelOrderCommand(id));
     }
 }
 
 @Service
-class RabbitMQProducer {
-    private final RabbitTemplate rabbitTemplate;
+public class OrderCommandService {
+    @Autowired private OrderCommandRepository cmdRepo;
+    @Autowired private EventPublisher eventPublisher;
 
-    public RabbitMQProducer(RabbitTemplate rabbitTemplate) {
-        this.rabbitTemplate = rabbitTemplate;
-    }
+    @Transactional
+    public CompletableFuture<UUID> handle(CreateOrderCommand cmd) {
+        OrderWriteModel order = new OrderWriteModel(
+            cmd.userId(), cmd.productId(), cmd.quantity(), cmd.total()
+        );
+        order = cmdRepo.save(order);
 
-    public void publishOrderCreated(OrderCreatedEvent event) {
-        rabbitTemplate.convertAndSend(
-            RabbitMQConfig.EXCHANGE, RabbitMQConfig.ROUTING_KEY, event);
+        // Publish event for the query side to consume
+        eventPublisher.publish(new OrderCreatedEvent(
+            order.getId(), cmd.userId(), cmd.productId(),
+            cmd.quantity(), cmd.total()
+        ));
+        return CompletableFuture.completedFuture(order.getId());
     }
 }
 
-import org.apache.kafka.clients.admin.NewTopic;
-import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.clients.producer.ProducerConfig;
-import org.apache.kafka.common.serialization.StringDeserializer;
-import org.apache.kafka.common.serialization.StringSerializer;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
-import org.springframework.kafka.core.*;
-import org.springframework.kafka.listener.CommonLoggingErrorHandler;
-import org.springframework.kafka.support.serializer.JsonDeserializer;
-import org.springframework.kafka.support.serializer.JsonSerializer;
-import java.util.Map;
+// Write-side repository (simple, no complex joins needed)
+@Repository
+public interface OrderCommandRepository extends JpaRepository<OrderWriteModel, UUID> {}
+
+// â”€â”€ Query side: optimized for reads â”€â”€
+@RestController
+@RequestMapping("/orders/queries")
+public class OrderQueryController {
+    @Autowired private OrderQueryService queryService;
+
+    @GetMapping("/{id}")
+    public OrderReadModel getOrder(@PathVariable UUID id) {
+        return queryService.findById(id);
+    }
+
+    @GetMapping
+    public Page<OrderReadModel> listOrders(
+            @RequestParam UUID userId,
+            @PageableDefault(size = 20) Pageable pageable) {
+        return queryService.findByUserId(userId, pageable);
+    }
+}
+
+// Query-side uses a denormalized read model
+@Entity
+@Table(name = "order_read_model")
+public class OrderReadModel {
+    @Id private UUID id;
+    private Long userId;
+    private String userName;        // denormalized from user-service
+    private String productName;     // denormalized from product-service
+    private int quantity;
+    private BigDecimal total;
+    private String status;
+    private Instant createdAt;
+    private Instant updatedAt;
+}
+
+// Query-side event consumer keeps the read model in sync
+@Component
+public class OrderEventConsumer {
+    @Autowired private OrderQueryRepository queryRepo;
+
+    @Transactional
+    @KafkaListener(topics = "order.events")
+    public void handleOrderEvent(OrderEvent event) {
+        if (event instanceof OrderCreatedEvent e) {
+            OrderReadModel model = new OrderReadModel();
+            model.setId(e.orderId());
+            model.setUserId(e.userId());
+            model.setProductName(productService.getName(e.productId()));  // denormalize
+            model.setQuantity(e.quantity());
+            model.setTotal(e.total());
+            model.setStatus("PENDING");
+            model.setCreatedAt(Instant.now());
+            queryRepo.save(model);
+        } else if (event instanceof OrderStatusChangedEvent e) {
+            queryRepo.findById(e.orderId()).ifPresent(model -> {
+                model.setStatus(e.newStatus());
+                model.setUpdatedAt(Instant.now());
+            });
+        }
+    }
+}
+```
+
+CQRS adds significant complexity (eventual consistency, duplicate data, two models to maintain). Use it only when reads and writes have fundamentally different shapes â€” for example, writes are simple INSERT/UPDATE but reads need complex aggregations, joins, or full-text search.
+
+Apply CQRS to individual bounded contexts, not the entire system. Most services do not need CQRS â€” a well-designed JPA model with DTO projections is sufficient.
+
+---
+
+### Q10: How do you implement a circuit breaker with Resilience4j?
+
+**Answer:**
+
+Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and time limiters. The circuit breaker prevents cascading failures by failing fast when a downstream service is unhealthy.
+
+```java
+// â”€â”€ Configuration â”€â”€
+// application.yml:
+// resilience4j.circuitbreaker:
+//   instances:
+//     userService:
+//       sliding-window-size: 10
+//       sliding-window-type: COUNT_BASED
+//       minimum-number-of-calls: 5
+//       failure-rate-threshold: 50
+//       wait-duration-in-open-state: 30s
+//       permitted-number-of-calls-in-half-open-state: 3
+//       record-exceptions:
+//         - java.io.IOException
+//         - org.springframework.web.client.HttpServerErrorException
+//       ignore-exceptions:
+//         - org.springframework.web.client.HttpClientErrorException  (4xx â€” not a circuit failure)
+
+// â”€â”€ Registration â”€â”€
+@Configuration
+public class Resilience4jConfig {
+    @Bean
+    public Customizer<Resilience4JCircuitBreakerFactory> defaultConfig() {
+        return factory -> factory.configureDefault(id -> new Resilience4JConfigBuilder(id)
+            .circuitBreakerConfig(CircuitBreakerConfig.custom()
+                .slidingWindowSize(10)
+                .failureRateThreshold(50)
+                .waitDurationInOpenState(Duration.ofSeconds(30))
+                .permittedNumberOfCallsInHalfOpenState(3)
+                .build())
+            .timeLimiterConfig(TimeLimiterConfig.custom()
+                .timeoutDuration(Duration.ofSeconds(4))
+                .build())
+            .build());
+    }
+}
+
+// â”€â”€ Usage with @CircuitBreaker annotation â”€â”€
+@Service
+public class OrderService {
+    @Autowired private UserServiceClient userClient;
+
+    @CircuitBreaker(name = "userService", fallbackMethod = "getUserFallback")
+    @TimeLimiter(name = "userService")
+    public CompletableFuture<UserDto> getUser(Long userId) {
+        return CompletableFuture.supplyAsync(() ->
+            userClient.getUser(userId));
+    }
+
+    // Fallback must match the return type and parameters
+    public CompletableFuture<UserDto> getUserFallback(Long userId, Throwable t) {
+        log.warn("user-service unavailable, returning cached user: {}", t.getMessage());
+        return CompletableFuture.completedFuture(
+            new UserDto(userId, "Cached User", "cached@example.com"));
+    }
+}
+
+// â”€â”€ Manual circuit breaker usage â”€â”€
+@Service
+public class PaymentService {
+    private final CircuitBreaker circuitBreaker;
+
+    public PaymentService(CircuitBreakerRegistry registry) {
+        this.circuitBreaker = registry.circuitBreaker("paymentService");
+    }
+
+    public PaymentResult processPayment(PaymentRequest req) {
+        // Decorate supplier with circuit breaker
+        Supplier<PaymentResult> decorated = CircuitBreaker
+            .decorateSupplier(circuitBreaker, () -> callPaymentProvider(req));
+
+        // Also add retry
+        Retry retry = Retry.ofDefaults("paymentRetry");
+        Supplier<PaymentResult> retryAndCircuit = Retry
+            .decorateSupplier(retry, decorated);
+
+        // Try with fallback
+        Try<PaymentResult> result = Try.ofSupplier(retryAndCircuit)
+            .recover(throwable -> PaymentResult.failed("Payment unavailable"));
+
+        return result.get();
+    }
+}
+
+// â”€â”€ Monitoring circuit breaker state â”€â”€
+@Component
+public class CircuitBreakerMonitor {
+    public CircuitBreakerMonitor(CircuitBreakerRegistry registry) {
+        // Log every state transition
+        registry.getAllCircuitBreakers().forEach(cb -> {
+            cb.getEventPublisher()
+                .onStateTransition(event ->
+                    log.info("CircuitBreaker {}: {} -> {}",
+                        event.getCircuitBreakerName(),
+                        event.getOldState(),
+                        event.getNewState()));
+        });
+    }
+}
+```
+
+Circuit breaker states: CLOSED (normal, pass through) â†’ OPEN (fail fast, no calls) â†’ HALF_OPEN (allow limited probe calls) â†’ back to CLOSED or OPEN. Use it on every cross-service call. Without circuit breakers, a cascading failure in one service can take down the entire system.
+
+---
+
+### Q11: How do you handle service-to-service authentication with OAuth2 and JWT?
+
+**Answer:**
+
+OAuth2 with JWT provides token-based authentication. The client credentials grant is the standard pattern for service-to-service communication.
+
+```java
+// â”€â”€ Authorization Server config (Spring Authorization Server) â”€â”€
+@Configuration
+@EnableAuthorizationServer
+public class AuthServerConfig {
+    @Bean
+    public RegisteredClientRepository registeredClientRepository() {
+        RegisteredClient orderService = RegisteredClient.withId(UUID.randomUUID().toString())
+            .clientId("order-service")
+            .clientSecret("{noop}order-secret")  // noop = plain text â€” use BCrypt in prod
+            .authorizationGrantType(ClientCredentialsGrant.INSTANCE)
+            .scope("order:read")
+            .scope("order:write")
+            .build();
+        return new InMemoryRegisteredClientRepository(orderService);
+    }
+}
+
+// â”€â”€ Resource Server config (each microservice validates tokens) â”€â”€
+// application.yml:
+// spring.security.oauth2.resourceserver.jwt:
+//   issuer-uri: http://localhost:9000
+//   jwk-set-uri: http://localhost:9000/.well-known/jwks.json
 
 @Configuration
-class KafkaConfig {
+@EnableWebSecurity
+public class ResourceServerConfig {
     @Bean
-    public NewTopic orderEventsTopic() {
-        return TopicBuilder.name("order.events")
-            .partitions(6).replicas(3)
-            .config("cleanup.policy", "compact")
-            .build();
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        http
+            .authorizeHttpRequests(auth -> auth
+                .requestMatchers("/public/**").permitAll()
+                .requestMatchers(HttpMethod.GET, "/orders/**").hasAuthority("SCOPE_order:read")
+                .requestMatchers(HttpMethod.POST, "/orders/**").hasAuthority("SCOPE_order:write")
+                .anyRequest().authenticated()
+            )
+            .oauth2ResourceServer(OAuth2ResourceServerConfigurer::jwt);
+        return http.build();
+    }
+}
+
+// â”€â”€ Client credentials flow (service calls another service) â”€â”€
+@Service
+public class ServiceClient {
+    @Autowired
+    private WebClient webClient;
+
+    @Autowired
+    private ClientRegistrationRepository registrations;
+
+    public String callService(String targetClientId, String path) {
+        // Get the client credentials grant for the calling service
+        OAuth2AuthorizedClient client = authorizeClient(targetClientId);
+
+        return webClient.get()
+            .uri("http://target-service" + path)
+            .headers(h -> h.setBearerAuth(client.getAccessToken().getTokenValue()))
+            .retrieve()
+            .bodyToMono(String.class)
+            .block();
     }
 
-    @Bean
-    public NewTopic orderDeadLetterTopic() {
-        return TopicBuilder.name("order.events.DLT")
-            .partitions(3).replicas(1)
-            .build();
+    private OAuth2AuthorizedClient authorizeClient(String targetClientId) {
+        // Use OAuth2AuthorizedClientManager to get/refresh tokens
+        ClientRegistration reg = registrations.findByRegistrationId(targetClientId);
+        OAuth2ClientCredentialsGrantRequest request =
+            new OAuth2ClientCredentialsGrantRequest(reg);
+        OAuth2AccessTokenResponse response = restTemplate.postForObject(
+            reg.getProviderDetails().getTokenUri(),
+            request, OAuth2AccessTokenResponse.class);
+        return new OAuth2AuthorizedClient(reg, reg.getClientId(),
+            response.getAccessToken());
     }
+}
 
+// â”€â”€ Extract user context from JWT â”€â”€
+@RestController
+@RequestMapping("/orders")
+public class OrderController {
+    @GetMapping("/current")
+    public String getCurrentUser(@AuthenticationPrincipal Jwt jwt) {
+        // JWT contains: sub (user ID), claims (roles, scopes)
+        String userId = jwt.getSubject();
+        String email = jwt.getClaimAsString("email");
+        List<String> roles = jwt.getClaimAsStringList("roles");
+        return "User: " + userId + ", Email: " + email + ", Roles: " + roles;
+    }
+}
+```
+
+JWT is stateless â€” the resource server only needs the public key (JWKS) to verify tokens, no database call. Token expiry is short (15-30 minutes for access tokens). Use refresh tokens for user-facing flows; client credentials flow generates new tokens directly.
+
+Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted). For fine-grained authorization, use OAuth2 scopes combined with custom claims or a dedicated authorization service.
+
+---
+
+### Q12: How do you implement event-driven microservices with Kafka?
+
+**Answer:**
+
+Apache Kafka provides a distributed commit log for asynchronous event streaming between services. Each service publishes events to topics; other services consume from those topics independently.
+
+```java
+// â”€â”€ Producer configuration â”€â”€
+@Configuration
+public class KafkaProducerConfig {
     @Bean
     public ProducerFactory<String, Object> producerFactory() {
-        Map<String, Object> config = Map.of(
-            ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092",
-            ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class,
-            ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class,
-            ProducerConfig.ACKS_CONFIG, "all",
-            ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, true,
-            ProducerConfig.RETRIES_CONFIG, 10,
-            ProducerConfig.COMPRESSION_TYPE_CONFIG, "snappy");
-        return new DefaultKafkaProducerFactory<>(config);
+        Map<String, Object> props = new HashMap<>();
+        props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
+            StringSerializer.class);
+        props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
+            JsonSerializer.class);
+        props.put(ProducerConfig.ACKS_CONFIG, "all");          // wait for all replicas
+        props.put(ProducerConfig.RETRIES_CONFIG, 3);
+        props.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, true);  // exactly-once semantics
+        return new DefaultKafkaProducerFactory<>(props);
     }
 
     @Bean
     public KafkaTemplate<String, Object> kafkaTemplate() {
         return new KafkaTemplate<>(producerFactory());
     }
+}
 
+// â”€â”€ Event publisher â”€â”€
+@Service
+public class OrderEventPublisher {
+    @Autowired
+    private KafkaTemplate<String, Object> kafka;
+
+    @Transactional
+    public void orderCreated(Order order) {
+        // Send event and wait for acknowledgment
+        ListenableFuture<SendResult<String, Object>> future =
+            kafka.send("order.created", order.getId().toString(),
+                new OrderCreatedEvent(order.getId(), order.getUserId(),
+                    order.getTotal()));
+
+        future.addCallback(
+            result -> log.info("Event sent: {}", result.getRecordMetadata().offset()),
+            ex -> log.error("Failed to send event", ex)
+        );
+    }
+
+    // â”€â”€ Transactional outbox pattern â”€â”€
+    @Transactional
+    public void createOrderAndPublishEvent(OrderRequest request) {
+        // 1. Save order in the database
+        Order order = orderRepository.save(new Order(request));
+
+        // 2. Also save the event in an outbox table (same transaction!)
+        OutboxEvent outbox = new OutboxEvent(
+            null, "order.created", order.getId().toString(),
+            new ObjectMapper().writeValueAsString(
+                new OrderCreatedEvent(order.getId(), order.getUserId(), order.getTotal()))
+        );
+        outboxRepository.save(outbox);
+        // A separate poller reads OutboxEvent and publishes to Kafka
+        // This ensures at-least-once delivery without distributed transactions
+    }
+}
+
+// â”€â”€ Consumer configuration â”€â”€
+@Configuration
+public class KafkaConsumerConfig {
     @Bean
     public ConsumerFactory<String, Object> consumerFactory() {
-        JsonDeserializer<Object> deserializer = new JsonDeserializer<>();
-        deserializer.addTrustedPackages("com.company.*");
-        Map<String, Object> config = Map.of(
-            ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092",
-            ConsumerConfig.GROUP_ID_CONFIG, "order-service-group",
-            ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class,
-            ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class,
-            ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest",
-            ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false,
-            ConsumerConfig.MAX_POLL_RECORDS_CONFIG, 100);
-        return new DefaultKafkaConsumerFactory<>(config,
-            new StringDeserializer(), deserializer);
-    }
-
-    @Bean
-    public ConcurrentKafkaListenerContainerFactory<String, Object>
-            kafkaListenerContainerFactory() {
-        var factory = new ConcurrentKafkaListenerContainerFactory<String, Object>();
-        factory.setConsumerFactory(consumerFactory());
-        factory.setConcurrency(3);
-        factory.setCommonErrorHandler(new CommonLoggingErrorHandler());
-        return factory;
+        Map<String, Object> props = new HashMap<>();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "inventory-service-group");
+        props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
+            StringDeserializer.class);
+        props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
+            JsonDeserializer.class);
+        props.put(JsonDeserializer.TRUSTED_PACKAGES,
+            "com.company.*");  // security: whitelist packages
+        props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
+        props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, false);  // manual commit
+        return new DefaultKafkaConsumerFactory<>(props);
     }
 }
 
-@Service
-class KafkaEventPublisher {
-    private final KafkaTemplate<String, Object> kafkaTemplate;
-
-    public KafkaEventPublisher(KafkaTemplate<String, Object> kafkaTemplate) {
-        this.kafkaTemplate = kafkaTemplate;
-    }
-
-    public void publish(String topic, String key, Object event) {
-        kafkaTemplate.send(topic, key, event)
-            .whenComplete((result, ex) -> {
-                if (ex != null)
-                    System.err.println("Failed to publish event: " + ex.getMessage());
-                else
-                    System.out.println("Published to " +
-                        result.getRecordMetadata().topic());
-            });
-    }
-}
-
-@Service
-class KafkaEventConsumer {
-    @KafkaListener(topics = "order.events", groupId = "payment-service-group")
-    public void onOrderCreated(OrderCreatedEvent event) {
-        System.out.println("Processing order " + event.orderId());
-    }
-}
-
-import io.awspring.cloud.sqs.annotation.SqsListener;
-import io.awspring.cloud.sqs.operations.SqsTemplate;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import software.amazon.awssdk.regions.Region;
-import software.amazon.awssdk.services.sqs.SqsAsyncClient;
-
-@Configuration
-class SQSConfig {
-    @Bean
-    public SqsAsyncClient sqsAsyncClient() {
-        return SqsAsyncClient.builder().region(Region.US_EAST_1).build();
-    }
-
-    @Bean
-    public SqsTemplate sqsTemplate(SqsAsyncClient client) {
-        return SqsTemplate.builder().sqsAsyncClient(client).build();
-    }
-}
-
-@Service
-class SQSEventPublisher {
-    private final SqsTemplate sqsTemplate;
-    public SQSEventPublisher(SqsTemplate sqsTemplate) { this.sqsTemplate = sqsTemplate; }
-    public void publishOrderEvent(OrderCreatedEvent event) {
-        sqsTemplate.send("order-events-queue", event);
-    }
-}
-
-@Service
-class SQSEventConsumer {
-    @SqsListener("order-events-queue")
-    public void onOrderCreated(OrderCreatedEvent event) {
-        System.out.println("SQS consumer received order: " + event.orderId());
-    }
-}
-```
-
-### Q15: How do you implement event-driven architecture with domain events in Spring Boot?
-
-**Answer:** Event-driven architecture uses domain events to communicate state changes. The publishing service publishes events to a broker. Consuming services react asynchronously. Events represent facts (past tense: `OrderPlaced`, `PaymentReceived`). Each event carries the aggregate ID, event type, payload, timestamp, and correlation ID. Eventual consistency means consumers see events after a delay.
-
-```java
-import java.time.Instant;
-import java.util.UUID;
-
-abstract class DomainEvent {
-    private final UUID eventId;
-    private final Instant occurredOn;
-    private final UUID correlationId;
-
-    protected DomainEvent(UUID correlationId) {
-        this.eventId = UUID.randomUUID();
-        this.occurredOn = Instant.now();
-        this.correlationId = correlationId;
-    }
-
-    public UUID getEventId() { return eventId; }
-    public Instant getOccurredOn() { return occurredOn; }
-    public UUID getCorrelationId() { return correlationId; }
-    public abstract String getEventType();
-}
-
-class OrderPlaced extends DomainEvent {
-    private final String orderId;
-    private final String customerId;
-    private final BigDecimal total;
-
-    public OrderPlaced(UUID correlationId, String orderId,
-                       String customerId, BigDecimal total) {
-        super(correlationId);
-        this.orderId = orderId;
-        this.customerId = customerId;
-        this.total = total;
-    }
-    @Override public String getEventType() { return "order.placed"; }
-    public String getOrderId() { return orderId; }
-    public BigDecimal getTotal() { return total; }
-}
-
-class PaymentProcessed extends DomainEvent {
-    private final String paymentId;
-    private final String orderId;
-    private final boolean success;
-
-    public PaymentProcessed(UUID correlationId, String paymentId,
-                            String orderId, boolean success) {
-        super(correlationId);
-        this.paymentId = paymentId;
-        this.orderId = orderId;
-        this.success = success;
-    }
-    @Override public String getEventType() { return "payment.processed"; }
-    public boolean isSuccess() { return success; }
-}
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.springframework.context.ApplicationEventPublisher;
-import org.springframework.stereotype.Component;
-
+// â”€â”€ Event consumer â”€â”€
 @Component
-class DomainEventPublisher {
-    private final ApplicationEventPublisher springEventPublisher;
-    private final KafkaTemplate<String, Object> kafkaTemplate;
+public class InventoryEventConsumer {
+    @Autowired
+    private InventoryService inventoryService;
 
-    public DomainEventPublisher(ApplicationEventPublisher springEventPublisher,
-                                 KafkaTemplate<String, Object> kafkaTemplate) {
-        this.springEventPublisher = springEventPublisher;
-        this.kafkaTemplate = kafkaTemplate;
-    }
+    @KafkaListener(topics = "order.created",
+        groupId = "inventory-service-group",
+        containerFactory = "kafkaListenerContainerFactory")
+    @Transactional
+    public void handleOrderCreated(
+            @Payload OrderCreatedEvent event,
+            @Header(KafkaHeaders.OFFSET) long offset,
+            Acknowledgment acknowledgment) {
 
-    public void publish(String topic, DomainEvent event) {
-        springEventPublisher.publishEvent(event);
-        kafkaTemplate.send(topic, event.getEventId().toString(), event);
-        System.out.println("Published event: " + event.getEventType());
-    }
-}
-
-record EventEnvelope(
-    UUID eventId,
-    String eventType,
-    String aggregateId,
-    String aggregateType,
-    Object payload,
-    UUID correlationId,
-    Instant occurredOn,
-    int version
-) {
-    public static EventEnvelope from(String aggregateId, String aggregateType,
-                                      DomainEvent event) {
-        return new EventEnvelope(
-            event.getEventId(), event.getEventType(),
-            aggregateId, aggregateType, event,
-            event.getCorrelationId(), event.getOccurredOn(), 1);
-    }
-}
-
-import org.springframework.kafka.annotation.KafkaListener;
-
-@Service
-class EventConsumer {
-    @KafkaListener(topics = "order.events", groupId = "notification-service")
-    public void handleOrderPlaced(EventEnvelope envelope) {
-        if (!"order.placed".equals(envelope.eventType())) return;
-        OrderPlaced event = (OrderPlaced) envelope.payload();
-        System.out.println("Sending confirmation for order: " + event.getOrderId());
-    }
-
-    @KafkaListener(topics = "order.events", groupId = "analytics-service")
-    public void handleOrderPlacedAnalytics(EventEnvelope envelope) {
-        if (!"order.placed".equals(envelope.eventType())) return;
-        OrderPlaced event = (OrderPlaced) envelope.payload();
-        System.out.println("Recording analytics for order: " + event.getOrderId());
-    }
-}
-
-import org.springframework.data.redis.core.StringRedisTemplate;
-import java.util.concurrent.TimeUnit;
-
-@Service
-class IdempotentEventConsumer {
-    private final StringRedisTemplate redisTemplate;
-
-    public IdempotentEventConsumer(StringRedisTemplate redisTemplate) {
-        this.redisTemplate = redisTemplate;
-    }
-
-    public boolean alreadyProcessed(UUID eventId) {
-        return Boolean.TRUE.equals(
-            redisTemplate.hasKey("processed-events:" + eventId));
-    }
-
-    public void markProcessed(UUID eventId) {
-        redisTemplate.opsForValue().set(
-            "processed-events:" + eventId, "true", 24, TimeUnit.HOURS);
-    }
-
-    @KafkaListener(topics = "order.events", groupId = "payment-service")
-    public void handleEvent(EventEnvelope envelope) {
-        if (alreadyProcessed(envelope.eventId())) {
-            System.out.println("Skipping duplicate event: " + envelope.eventId());
-            return;
-        }
         try {
-            processEvent(envelope);
-            markProcessed(envelope.eventId());
+            inventoryService.reserveStock(event.productId(), event.quantity());
+            // Manual commit after processing
+            acknowledgment.acknowledge();
+        } catch (InsufficientStockException e) {
+            // Publish a failure event and commit the offset (skip this message)
+            kafkaTemplate.send("inventory.failed",
+                new InventoryFailedEvent(event.orderId(), e.getMessage()));
+            acknowledgment.acknowledge();
         } catch (Exception e) {
-            System.err.println("Failed to process: " + e.getMessage());
+            // Do not commit â€” message will be re-delivered
+            log.error("Failed to process order {}, will retry", event.orderId(), e);
+            throw new RetryableException("Retry later");
         }
     }
-
-    private void processEvent(EventEnvelope envelope) {}
-}
-```
-
-### Q16: Explain the Saga pattern and how you handle compensating transactions.
-
-**Answer:** A saga manages distributed transactions across multiple services by breaking them into local transactions with compensating actions. If a step fails, compensating transactions undo previously completed steps. Compensating transactions must be idempotent. The saga log records every step for recovery.
-
-```java
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import java.time.Instant;
-import java.util.UUID;
-
-class SagaState {
-    private final String sagaId;
-    private final String orderId;
-    private String status;
-    private String failureReason;
-    private final Instant createdAt;
-
-    public SagaState(String orderId) {
-        this.sagaId = UUID.randomUUID().toString();
-        this.orderId = orderId;
-        this.status = "STARTED";
-        this.createdAt = Instant.now();
-    }
-    public String getSagaId() { return sagaId; }
-    public String getOrderId() { return orderId; }
-    public String getStatus() { return status; }
-    public void setStatus(String s) { this.status = s; }
-    public void setFailureReason(String r) { this.failureReason = r; }
 }
 
-interface SagaLog {
-    void save(SagaState state);
-    void updateStatus(String sagaId, String status);
-    SagaState findBySagaId(String sagaId);
-    List<SagaState> findStuckSagas(Instant threshold);
-}
-
+// â”€â”€ Idempotent consumer (same event may be delivered twice) â”€â”€
 @Service
-class OrderSagaOrchestrator {
-    private static final Logger log = LoggerFactory.getLogger(OrderSagaOrchestrator.class);
-    private final KafkaTemplate<String, Object> kafkaTemplate;
-    private final SagaLog sagaLog;
-
-    public OrderSagaOrchestrator(KafkaTemplate<String, Object> kafkaTemplate,
-                                  SagaLog sagaLog) {
-        this.kafkaTemplate = kafkaTemplate;
-        this.sagaLog = sagaLog;
-    }
-
-    public void startSaga(String orderId, BigDecimal amount) {
-        SagaState state = new SagaState(orderId);
-        sagaLog.save(state);
-        log.info("Saga {} started for order {}", state.getSagaId(), orderId);
-        kafkaTemplate.send("saga.commands", "inventory.reserve",
-            new ReserveInventoryCommand(state.getSagaId(), orderId));
-    }
-
-    public void onInventoryReserved(String sagaId, String orderId, BigDecimal amount) {
-        sagaLog.updateStatus(sagaId, "INVENTORY_RESERVED");
-        kafkaTemplate.send("saga.commands", "payment.capture",
-            new CapturePaymentCommand(sagaId, orderId, amount));
-    }
-
-    public void onPaymentCaptured(String sagaId, String orderId) {
-        sagaLog.updateStatus(sagaId, "PAYMENT_CAPTURED");
-        kafkaTemplate.send("saga.commands", "order.confirm",
-            new ConfirmOrderCommand(sagaId, orderId));
-    }
-
-    public void onOrderConfirmed(String sagaId) {
-        sagaLog.updateStatus(sagaId, "COMPLETED");
-        log.info("Saga {} completed", sagaId);
-    }
-
-    public void onPaymentFailed(String sagaId, String orderId, String reason) {
-        sagaLog.updateStatus(sagaId, "FAILED");
-        kafkaTemplate.send("saga.commands", "inventory.release",
-            new ReleaseInventoryCommand(sagaId, orderId));
-        log.warn("Compensating: releasing inventory for order {}", orderId);
-    }
-
-    public void onOrderConfirmationFailed(String sagaId, String orderId) {
-        sagaLog.updateStatus(sagaId, "FAILED");
-        kafkaTemplate.send("saga.commands", "payment.refund",
-            new RefundPaymentCommand(sagaId, orderId));
-        kafkaTemplate.send("saga.commands", "inventory.release",
-            new ReleaseInventoryCommand(sagaId, orderId));
-        log.warn("Compensating: refund + release inventory for {}", orderId);
-    }
-}
-
-record ReserveInventoryCommand(String sagaId, String orderId) {}
-record CapturePaymentCommand(String sagaId, String orderId, BigDecimal amount) {}
-record ConfirmOrderCommand(String sagaId, String orderId) {}
-record ReleaseInventoryCommand(String sagaId, String orderId) {}
-record RefundPaymentCommand(String sagaId, String orderId) {}
-
-@Service
-class InventorySagaHandler {
-    private static final Logger log = LoggerFactory.getLogger(InventorySagaHandler.class);
+public class IdempotentConsumerService {
+    @Autowired
+    private ProcessedEventRepository processedEventRepo;
 
     @Transactional
-    public void reserveInventory(ReserveInventoryCommand cmd) {
-        log.info("Reserving inventory for order {}", cmd.orderId());
-    }
-
-    @Transactional
-    public void releaseInventory(ReleaseInventoryCommand cmd) {
-        log.info("Compensating: releasing inventory for order {}", cmd.orderId());
-    }
-}
-
-import org.springframework.scheduling.annotation.Scheduled;
-
-@Component
-class SagaRecoveryJob {
-    private static final Logger log = LoggerFactory.getLogger(SagaRecoveryJob.class);
-    private final SagaLog sagaLog;
-
-    public SagaRecoveryJob(SagaLog sagaLog) { this.sagaLog = sagaLog; }
-
-    @Scheduled(fixedRate = 60000)
-    public void recoverStuckSagas() {
-        Instant threshold = Instant.now().minusSeconds(300);
-        List<SagaState> stuck = sagaLog.findStuckSagas(threshold);
-        for (SagaState saga : stuck) {
-            log.warn("Stuck saga {} for order {}", saga.getSagaId(), saga.getOrderId());
-        }
-    }
-}
-
-import java.util.concurrent.ConcurrentSkipListSet;
-
-@Service
-class IdempotentCompensationService {
-    private final Set<String> completed = new ConcurrentSkipListSet<>();
-
-    public boolean isAlreadyCompensated(String sagaId, String step) {
-        return completed.contains(sagaId + ":" + step);
-    }
-
-    public void markCompensated(String sagaId, String step) {
-        completed.add(sagaId + ":" + step);
-    }
-
-    public void releaseInventory(String sagaId, String orderId) {
-        if (isAlreadyCompensated(sagaId, "release-inventory")) return;
-        markCompensated(sagaId, "release-inventory");
-        System.out.println("Inventory released for order " + orderId);
-    }
-}
-```
-
-### Q17: How do you handle distributed configuration in Kubernetes?
-
-**Answer:** Kubernetes provides ConfigMaps for non-sensitive config and Secrets for sensitive data. Spring Boot reads these via environment variables or mounted volumes. External tools like External Secrets Operator, Sealed Secrets, or Vault manage encrypted secrets. `spring-cloud-starter-kubernetes-client` allows watching ConfigMaps for live reload.
-
-```java
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RefreshScope
-@RestController
-class ConfigMapController {
-    @Value("${app.max-order-limit:50}")
-    private int maxOrderLimit;
-
-    @Value("${app.features.new-checkout:false}")
-    private boolean newCheckoutEnabled;
-
-    @GetMapping("/api/config/status")
-    public ConfigStatus getStatus() {
-        return new ConfigStatus(maxOrderLimit, newCheckoutEnabled);
-    }
-
-    record ConfigStatus(int maxOrderLimit, boolean newCheckoutEnabled) {}
-}
-```
-
-### Q18: How do you implement rate limiting in a microservices architecture?
-
-**Answer:** Rate limiting can be implemented at the API gateway (user/IP-based), the service (Resilience4j RateLimiter), or the database (connection pool limits). The gateway is best for external limiting before requests reach services. Common algorithms include token bucket (burst-aware), sliding window (smooth), and fixed window (simple but allows boundary bursts).
-
-```java
-import org.springframework.cloud.gateway.filter.ratelimit.KeyResolver;
-import org.springframework.cloud.gateway.filter.ratelimit.RedisRateLimiter;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import reactor.core.publisher.Mono;
-
-@Configuration
-class GatewayRateLimitConfig {
-    @Bean
-    public RedisRateLimiter orderServiceRateLimiter() {
-        return new RedisRateLimiter(100, 200, 1);
-    }
-
-    @Bean
-    public KeyResolver userKeyResolver() {
-        return exchange -> {
-            String userId = exchange.getRequest().getHeaders()
-                .getFirst("X-User-Id");
-            return Mono.justOrEmpty(userId).defaultIfEmpty("unknown");
-        };
-    }
-
-    @Bean
-    public KeyResolver ipKeyResolver() {
-        return exchange -> Mono.justOrEmpty(
-            exchange.getRequest().getRemoteAddress()
-                .map(addr -> addr.getAddress().getHostAddress())
-        ).defaultIfEmpty("unknown");
-    }
-}
-
-import io.github.resilience4j.ratelimiter.RequestNotPermitted;
-import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-@RestController
-@RequestMapping("/api/orders")
-class RateLimitedOrderController {
-    private final OrderService orderService;
-
-    public RateLimitedOrderController(OrderService orderService) {
-        this.orderService = orderService;
-    }
-
-    @PostMapping
-    @RateLimiter(name = "orderCreation")
-    public ResponseEntity<OrderResponse> createOrder(@RequestBody OrderRequest request) {
-        return ResponseEntity.ok(orderService.createOrder(request));
-    }
-
-    @ExceptionHandler(RequestNotPermitted.class)
-    public ResponseEntity<ErrorResponse> handleRateLimit(RequestNotPermitted ex) {
-        return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS)
-            .header("Retry-After", "1")
-            .body(new ErrorResponse("rate_limit_exceeded",
-                "Too many requests. Please try again later."));
-    }
-}
-
-record ErrorResponse(String code, String message) {}
-
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.atomic.AtomicLong;
-
-@Component
-class TokenBucketRateLimiter {
-    private final ConcurrentMap<String, TokenBucket> buckets = new ConcurrentHashMap<>();
-
-    public boolean tryAcquire(String key, int tokens) {
-        TokenBucket bucket = buckets.computeIfAbsent(key,
-            k -> new TokenBucket(100, 10));
-        return bucket.tryAcquire(tokens);
-    }
-
-    static class TokenBucket {
-        private final long capacity;
-        private final double refillRate;
-        private final AtomicLong tokens;
-        private volatile long lastRefillTimestamp;
-
-        TokenBucket(long capacity, double refillRatePerSecond) {
-            this.capacity = capacity;
-            this.refillRate = refillRatePerSecond;
-            this.tokens = new AtomicLong(capacity);
-            this.lastRefillTimestamp = System.nanoTime();
-        }
-
-        boolean tryAcquire(int requiredTokens) {
-            refill();
-            while (true) {
-                long current = tokens.get();
-                if (current < requiredTokens) return false;
-                if (tokens.compareAndSet(current, current - requiredTokens)) return true;
-            }
-        }
-
-        private void refill() {
-            long now = System.nanoTime();
-            long elapsed = now - lastRefillTimestamp;
-            if (elapsed > 0) {
-                long newTokens = Math.min(
-                    (long) (refillRate * elapsed / 1_000_000_000), capacity);
-                if (newTokens > 0) {
-                    lastRefillTimestamp = now;
-                    tokens.updateAndGet(curr -> Math.min(curr + newTokens, capacity));
-                }
-            }
-        }
-    }
-}
-```
-
-### Q19: Explain the difference between REST, gRPC, and messaging for inter-service communication.
-
-**Answer:** REST is synchronous, HTTP-based, uses JSON, universally understood. gRPC is synchronous, HTTP/2-based, uses Protocol Buffers, offers strong typing and streaming. Messaging is asynchronous, broker-based, offers best decoupling. Use REST for public APIs and CRUD. Use gRPC for high-performance internal calls with streaming. Use messaging for event-driven communication where decoupling matters.
-
-```java
-import org.springframework.web.client.RestClient;
-
-@Service
-class RestCommunication {
-    private final RestClient restClient;
-
-    public RestCommunication(RestClient.Builder builder) {
-        this.restClient = RestClient.builder()
-            .baseUrl("http://payment-service").build();
-    }
-
-    public PaymentStatus getPaymentStatus(String paymentId) {
-        return restClient.get()
-            .uri("/api/payments/{id}", paymentId)
-            .retrieve()
-            .body(PaymentStatus.class);
-    }
-}
-
-// gRPC proto definition:
-// service PaymentService {
-//     rpc ProcessPayment(ProcessPaymentRequest) returns (ProcessPaymentResponse);
-//     rpc StreamPaymentStatus(StreamRequest) returns (stream PaymentUpdate);
-// }
-
-// gRPC Server (conceptual - requires protobuf codegen):
-// @GrpcService
-// class PaymentGrpcService extends PaymentServiceGrpc.PaymentServiceImplBase {
-//     @Override
-//     public void processPayment(ProcessPaymentRequest request,
-//                                 StreamObserver<ProcessPaymentResponse> responseObserver) {
-//         ProcessPaymentResponse response = ProcessPaymentResponse.newBuilder()
-//             .setPaymentId(UUID.randomUUID().toString())
-//             .setStatus("COMPLETED")
-//             .build();
-//         responseObserver.onNext(response);
-//         responseObserver.onCompleted();
-//     }
-// }
-
-record PaymentStatus(String id, String status) {}
-```
-
-### Q20: What is the strangler fig pattern for incremental migration to microservices?
-
-**Answer:** The strangler fig pattern incrementally replaces monolith functionality with microservices. New features are built as microservices. A routing layer gradually routes requests to new services. Once fully migrated, the old monolith code is removed. This allows safe, incremental migration without big-bang rewrites.
-
-```java
-import jakarta.servlet.*;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.time.Duration;
-
-@Component
-class StranglerFigFilter implements Filter {
-    private final HttpClient httpClient;
-    private static final String MONOLITH_BASE = "http://monolith:8080";
-    private static final String ORDER_SERVICE_BASE = "http://order-service:8081";
-    private static final String PAYMENT_SERVICE_BASE = "http://payment-service:8082";
-    private final FeatureFlagService featureFlags;
-
-    public StranglerFigFilter(FeatureFlagService featureFlags) {
-        this.featureFlags = featureFlags;
-        this.httpClient = HttpClient.newBuilder()
-            .connectTimeout(Duration.ofSeconds(5)).build();
-    }
-
-    @Override
-    public void doFilter(ServletRequest request, ServletResponse response,
-                         FilterChain chain) throws IOException, ServletException {
-        HttpServletRequest httpRequest = (HttpServletRequest) request;
-        HttpServletResponse httpResponse = (HttpServletResponse) response;
-        String path = httpRequest.getRequestURI();
-
-        String targetUrl = getTargetUrl(path);
-        if (targetUrl != null) {
-            proxyTo(targetUrl, httpRequest, httpResponse);
-            return;
-        }
-        chain.doFilter(request, response);
-    }
-
-    private String getTargetUrl(String path) {
-        if (path.startsWith("/api/orders/checkout") && featureFlags.isEnabled("new-checkout"))
-            return ORDER_SERVICE_BASE + path;
-        if (path.startsWith("/api/payments") && featureFlags.isEnabled("new-payments"))
-            return PAYMENT_SERVICE_BASE + path;
-        if (path.startsWith("/api/products"))
-            return ORDER_SERVICE_BASE + path;
-        return null;
-    }
-
-    private void proxyTo(String targetUrl, HttpServletRequest request,
-                          HttpServletResponse response) throws IOException {
-        try {
-            HttpRequest.Builder proxyRequest = HttpRequest.newBuilder()
-                .uri(URI.create(targetUrl + "?" + request.getQueryString()))
-                .timeout(Duration.ofSeconds(10));
-
-            String method = request.getMethod();
-            switch (method) {
-                case "GET" -> proxyRequest.GET();
-                case "POST" -> proxyRequest.POST(
-                    HttpRequest.BodyPublishers.ofInputStream(request::getInputStream));
-                case "PUT" -> proxyRequest.PUT(
-                    HttpRequest.BodyPublishers.ofInputStream(request::getInputStream));
-                case "DELETE" -> proxyRequest.DELETE();
-            }
-
-            java.util.Collections.list(request.getHeaderNames())
-                .forEach(name -> {
-                    if (!"Host".equalsIgnoreCase(name))
-                        java.util.Collections.list(request.getHeaders(name))
-                            .forEach(value -> proxyRequest.header(name, value));
-                });
-
-            HttpResponse<byte[]> proxyResponse = httpClient.send(
-                proxyRequest.build(), HttpResponse.BodyHandlers.ofByteArray());
-
-            response.setStatus(proxyResponse.statusCode());
-            response.getOutputStream().write(proxyResponse.body());
-        } catch (Exception e) {
-            response.setStatus(502);
-            response.getWriter().write("{\"error\":\"Bad gateway\"}");
-        }
-    }
-}
-
-@Service
-class FeatureFlagService {
-    private final Map<String, Boolean> flags = new ConcurrentHashMap<>();
-
-    public FeatureFlagService() {
-        flags.put("new-products", true);
-        flags.put("new-orders", false);
-        flags.put("new-checkout", true);
-        flags.put("new-payments", false);
-    }
-
-    public boolean isEnabled(String feature) {
-        return flags.getOrDefault(feature, false);
-    }
-}
-```
-
-### Q21: How do you handle distributed transactions without two-phase commit?
-
-**Answer:** Distributed transactions via 2PC are avoided because they introduce coupling and blocking. Instead, use the Saga pattern with compensating transactions, event-driven eventual consistency, or the Outbox pattern. In the Outbox pattern, the service writes both data changes and events in the same local transaction. A separate process reads the outbox table and publishes events to the broker.
-
-```java
-import jakarta.persistence.*;
-import java.time.Instant;
-import java.util.UUID;
-
-@Entity
-@Table(name = "outbox_events")
-class OutboxEvent {
-    @Id
-    private UUID id;
-    private String aggregateType;
-    private String aggregateId;
-    private String eventType;
-    @Column(columnDefinition = "TEXT")
-    private String payload;
-    private Instant createdAt;
-    @Enumerated(EnumType.STRING)
-    private OutboxStatus status;
-
-    enum OutboxStatus { PENDING, PUBLISHED, FAILED }
-
-    public OutboxEvent() {}
-    public OutboxEvent(String aggregateType, String aggregateId,
-                        String eventType, String payload) {
-        this.id = UUID.randomUUID();
-        this.aggregateType = aggregateType;
-        this.aggregateId = aggregateId;
-        this.eventType = eventType;
-        this.payload = payload;
-        this.createdAt = Instant.now();
-        this.status = OutboxStatus.PENDING;
-    }
-
-    public UUID getId() { return id; }
-    public String getEventType() { return eventType; }
-    public String getPayload() { return payload; }
-    public OutboxStatus getStatus() { return status; }
-    public void setStatus(OutboxStatus s) { this.status = s; }
-}
-
-interface OutboxEventRepository extends JpaRepository<OutboxEvent, UUID> {
-    List<OutboxEvent> findTop100ByStatusOrderByCreatedAtAsc(
-        OutboxEvent.OutboxStatus status);
-}
-
-@Service
-class OrderServiceWithOutbox {
-    private final OrderJpaRepository orderRepository;
-    private final OutboxEventRepository outboxRepository;
-
-    @Transactional
-    public String createOrder(CreateOrderRequest request) {
-        OrderEntity order = new OrderEntity(UUID.randomUUID(), request.customerId());
-        order = orderRepository.save(order);
-
-        OrderCreatedEvent event = new OrderCreatedEvent(
-            order.getId().toString(), request.customerId(), request.amount());
-        OutboxEvent outbox = new OutboxEvent(
-            "Order", order.getId().toString(),
-            "OrderCreated", toJson(event));
-        outboxRepository.save(outbox);
-
-        return order.getId().toString();
-    }
-
-    private String toJson(Object obj) {
-        try {
-            return new com.fasterxml.jackson.databind.ObjectMapper()
-                .writeValueAsString(obj);
-        } catch (Exception e) {
-            throw new RuntimeException("JSON serialization failed", e);
-        }
-    }
-}
-
-record CreateOrderRequest(UUID customerId, BigDecimal amount) {}
-
-@Component
-class OutboxPublisher {
-    private final OutboxEventRepository outboxRepository;
-    private final KafkaTemplate<String, String> kafkaTemplate;
-    private static final Logger log = LoggerFactory.getLogger(OutboxPublisher.class);
-
-    @Scheduled(fixedDelay = 1000)
-    @Transactional
-    public void publishPendingEvents() {
-        List<OutboxEvent> pending = outboxRepository
-            .findTop100ByStatusOrderByCreatedAtAsc(OutboxEvent.OutboxStatus.PENDING);
-
-        for (OutboxEvent event : pending) {
-            try {
-                String topic = event.getEventType().toLowerCase();
-                kafkaTemplate.send(topic, event.getId().toString(), event.getPayload());
-                event.setStatus(OutboxEvent.OutboxStatus.PUBLISHED);
-                outboxRepository.save(event);
-            } catch (Exception e) {
-                log.error("Failed to publish outbox event {}: {}",
-                    event.getId(), e.getMessage());
-                event.setStatus(OutboxEvent.OutboxStatus.FAILED);
-                outboxRepository.save(event);
-            }
-        }
-    }
-}
-```
-
-### Q22: How does CQRS work in microservices?
-
-**Answer:** CQRS separates read and write operations into different models. Commands change state (write model, normalized). Queries return data (read model, denormalized for fast reads). This allows different data stores â€” relational for writes, Elasticsearch/Redis for reads. Use CQRS when read and write workloads have very different characteristics and the complexity is justified.
-
-```java
-import org.springframework.data.jpa.repository.JpaRepository;
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "orders_command")
-class OrderCommandModel {
-    @Id
-    private UUID id;
-    private UUID customerId;
-    private String status;
-    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JoinColumn(name = "order_id")
-    private List<OrderLineCommandModel> lines;
-    private BigDecimal total;
-    private Instant createdAt;
-
-    public OrderCommandModel() {}
-    public OrderCommandModel(UUID customerId) {
-        this.id = UUID.randomUUID();
-        this.customerId = customerId;
-        this.status = "DRAFT";
-        this.lines = new ArrayList<>();
-        this.createdAt = Instant.now();
-    }
-
-    public void addLine(String productId, String productName,
-                         int quantity, BigDecimal price) {
-        this.lines.add(new OrderLineCommandModel(productId, productName,
-            quantity, price));
-        recalculateTotal();
-    }
-
-    private void recalculateTotal() {
-        this.total = lines.stream()
-            .map(l -> l.getPrice().multiply(BigDecimal.valueOf(l.getQuantity())))
-            .reduce(BigDecimal.ZERO, BigDecimal::add);
-    }
-
-    public UUID getId() { return id; }
-    public String getStatus() { return status; }
-}
-
-@Entity
-@Table(name = "order_lines_command")
-class OrderLineCommandModel {
-    @Id @GeneratedValue
-    private Long id;
-    private String productId;
-    private String productName;
-    private int quantity;
-    private BigDecimal price;
-
-    public OrderLineCommandModel() {}
-    public OrderLineCommandModel(String productId, String productName,
-                                  int quantity, BigDecimal price) {
-        this.productId = productId;
-        this.productName = productName;
-        this.quantity = quantity;
-        this.price = price;
-    }
-    public BigDecimal getPrice() { return price; }
-    public int getQuantity() { return quantity; }
-}
-
-interface OrderCommandRepository extends JpaRepository<OrderCommandModel, UUID> {}
-
-@Service
-class OrderCommandHandler {
-    private final OrderCommandRepository commandRepository;
-
-    @Transactional
-    public UUID handleCreateOrder(CreateOrderCommand cmd) {
-        OrderCommandModel order = new OrderCommandModel(cmd.customerId());
-        cmd.items().forEach(item ->
-            order.addLine(item.productId(), item.productName(),
-                item.quantity(), item.price()));
-        order = commandRepository.save(order);
-        return order.getId();
-    }
-}
-
-record CreateOrderCommand(UUID customerId, List<CreateOrderCommand.Item> items) {
-    record Item(String productId, String productName, int quantity, BigDecimal price) {}
-}
-
-class OrderReadModel {
-    private String id;
-    private String customerId;
-    private String status;
-    private BigDecimal total;
-    private int itemCount;
-    private List<OrderItemReadModel> items;
-
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-    public String getCustomerId() { return customerId; }
-    public void setCustomerId(String c) { this.customerId = c; }
-    public String getStatus() { return status; }
-    public void setStatus(String s) { this.status = s; }
-    public BigDecimal getTotal() { return total; }
-    public void setTotal(BigDecimal t) { this.total = t; }
-    public int getItemCount() { return itemCount; }
-    public void setItemCount(int c) { this.itemCount = c; }
-}
-
-class OrderItemReadModel {
-    private String productId;
-    private String productName;
-    private int quantity;
-    private BigDecimal price;
-}
-
-@Service
-class OrderProjection {
-    private final OrderReadRepository readRepository;
-
-    public void onOrderCreated(OrderCreatedEvent event) {
-        OrderReadModel model = new OrderReadModel();
-        model.setId(event.orderId());
-        model.setCustomerId(event.customerId());
-        model.setStatus("DRAFT");
-        model.setTotal(BigDecimal.ZERO);
-        model.setItemCount(0);
-        readRepository.save(model);
-    }
-
-    public void onOrderConfirmed(OrderConfirmedEvent event) {
-        OrderReadModel order = readRepository.findById(event.orderId());
-        order.setStatus("CONFIRMED");
-        readRepository.save(order);
-    }
-}
-
-record OrderConfirmedEvent(String orderId, Instant occurredOn) {}
-
-interface OrderReadRepository {
-    OrderReadModel findById(String id);
-    List<OrderReadModel> findByCustomerId(String customerId, int page, int size);
-    void save(OrderReadModel model);
-}
-
-@RestController
-@RequestMapping("/api/orders/query")
-class OrderQueryController {
-    private final OrderReadRepository readRepository;
-
-    public OrderQueryController(OrderReadRepository readRepository) {
-        this.readRepository = readRepository;
-    }
-
-    @GetMapping("/{id}")
-    public OrderReadModel getOrder(@PathVariable String id) {
-        return readRepository.findById(id);
-    }
-
-    @GetMapping
-    public List<OrderReadModel> listOrders(
-            @RequestParam String customerId,
-            @RequestParam(defaultValue = "0") int page,
-            @RequestParam(defaultValue = "20") int size) {
-        return readRepository.findByCustomerId(customerId, page, size);
-    }
-}
-```
-
-### Q23: How do you handle service-to-service authentication and authorization?
-
-**Answer:** Two main approaches: JWT bearer tokens (user authenticates once, passes JWT through all services, each validates independently) and OAuth 2.0 client credentials (services authenticate to an authorization server to get tokens for calling other services). Mutual TLS provides transport-level authentication. In Kubernetes, service accounts provide identity.
-
-```java
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.security.Keys;
-import jakarta.servlet.*;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
-import javax.crypto.SecretKey;
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.util.Base64;
-import java.util.List;
-
-@Component
-@Order(1)
-class ServiceAuthFilter implements Filter {
-    private final SecretKey signingKey;
-    private static final List<String> PUBLIC_PATHS = List.of(
-        "/actuator/health", "/actuator/info", "/auth/login");
-
-    public ServiceAuthFilter(@Value("${app.jwt.secret}") String secret) {
-        byte[] keyBytes = Base64.getDecoder().decode(secret);
-        this.signingKey = Keys.hmacShaKeyFor(keyBytes);
-    }
-
-    @Override
-    public void doFilter(ServletRequest request, ServletResponse response,
-                         FilterChain chain) throws IOException, ServletException {
-        HttpServletRequest httpRequest = (HttpServletRequest) request;
-        HttpServletResponse httpResponse = (HttpServletResponse) response;
-        String path = httpRequest.getRequestURI();
-
-        if (PUBLIC_PATHS.stream().anyMatch(path::startsWith)) {
-            chain.doFilter(request, response);
+    public void handleEvent(OrderCreatedEvent event) {
+        // Check if we already processed this event
+        if (processedEventRepo.existsByEventId(event.getEventId())) {
+            log.info("Duplicate event: {}, skipping", event.getEventId());
             return;
         }
 
-        String authHeader = httpRequest.getHeader("Authorization");
-        if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-            httpResponse.setStatus(401);
-            httpResponse.getWriter().write("{\"error\":\"Missing or invalid token\"}");
-            return;
-        }
+        // Process the event
+        inventoryService.reserveStock(event.productId(), event.quantity());
 
-        String token = authHeader.substring(7);
-        try {
-            Claims claims = Jwts.parser()
-                .verifyWith(signingKey)
-                .build()
-                .parseSignedClaims(token)
-                .getPayload();
-            ServiceContext.set(claims.getSubject(),
-                claims.get("roles", List.class));
-            chain.doFilter(request, response);
-        } catch (Exception e) {
-            httpResponse.setStatus(401);
-            httpResponse.getWriter().write("{\"error\":\"Invalid token\"}");
-        } finally {
-            ServiceContext.clear();
-        }
-    }
-}
-
-class ServiceContext {
-    private static final ThreadLocal<String> currentUser = new ThreadLocal<>();
-    private static final ThreadLocal<List<String>> currentRoles = new ThreadLocal<>();
-
-    public static void set(String userId, List<String> roles) {
-        currentUser.set(userId);
-        currentRoles.set(roles);
-    }
-    public static String getCurrentUser() { return currentUser.get(); }
-    public static List<String> getCurrentRoles() { return currentRoles.get(); }
-    public static boolean hasRole(String role) {
-        return currentRoles.get() != null && currentRoles.get().contains(role);
-    }
-    public static void clear() {
-        currentUser.remove();
-        currentRoles.remove();
-    }
-}
-
-import org.springframework.web.client.RestClient;
-import org.springframework.http.HttpHeaders;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
-
-@Service
-class ServiceToServiceAuthClient {
-    private final RestClient restClient;
-    private final ConcurrentMap<String, Token> tokenCache = new ConcurrentHashMap<>();
-
-    public ServiceToServiceAuthClient() {
-        this.restClient = RestClient.builder()
-            .baseUrl("http://auth-server:8080").build();
-    }
-
-    public String getAccessToken(String clientId, String clientSecret) {
-        Token cached = tokenCache.get(clientId);
-        if (cached != null && !cached.isExpired())
-            return cached.value();
-
-        TokenResponse response = restClient.post()
-            .uri("/oauth2/token")
-            .header(HttpHeaders.CONTENT_TYPE, "application/x-www-form-urlencoded")
-            .body("grant_type=client_credentials&client_id=" + clientId
-                + "&client_secret=" + clientSecret)
-            .retrieve()
-            .body(TokenResponse.class);
-
-        Token token = new Token(response.accessToken(),
-            System.currentTimeMillis() + (response.expiresIn() * 1000L));
-        tokenCache.put(clientId, token);
-        return token.value();
-    }
-
-    record TokenResponse(String accessToken, long expiresIn) {}
-    record Token(String value, long expiresAt) {
-        boolean isExpired() { return System.currentTimeMillis() >= expiresAt; }
-    }
-}
-
-import jakarta.servlet.http.HttpServletRequest;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
-
-class TokenPropagationInterceptor {
-    public static void propagateToken(HttpRequest.Builder request) {
-        ServletRequestAttributes attrs = (ServletRequestAttributes)
-            RequestContextHolder.getRequestAttributes();
-        if (attrs != null) {
-            HttpServletRequest currentRequest = attrs.getRequest();
-            String auth = currentRequest.getHeader("Authorization");
-            if (auth != null)
-                request.header("Authorization", auth);
-        }
+        // Record the event ID to prevent duplicate processing
+        processedEventRepo.save(new ProcessedEvent(event.getEventId()));
     }
 }
 ```
 
-### Q24: Compare Spring Cloud (Eureka/Config/Gateway) vs Kubernetes-native microservices.
+Kafka provides at-least-once delivery by default. Consumers must be idempotent. The transactional outbox pattern prevents dual-write problems (saving to DB and sending Kafka event atomically).
 
-**Answer:** Spring Cloud provides mature Java-ecosystem solutions for service discovery (Eureka), configuration (Config Server), and gateways (Gateway). Kubernetes provides equivalent primitives natively: DNS-based service discovery, ConfigMaps/Secrets for config, and Ingress controllers for API gateway. Spring Cloud is more feature-rich but adds JVM overhead. Kubernetes is platform-agnostic but requires more infrastructure knowledge. Many projects use both â€” Spring Boot for application logic, Kubernetes for infrastructure.
+Use one topic per event type or per bounded context. Partition count should be equal to the maximum expected consumer parallelism. Replication factor 3 in production.
 
-```java
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.client.RestTemplate;
+---
 
-// Spring Cloud Discovery approach
-@Configuration
-@EnableDiscoveryClient
-class SpringCloudApproach {
-    // Uses Eureka for discovery, Config Server for config
-    // RestTemplate with @LoadBalanced for client-side load balancing
-}
+### Q13: How do you handle containerization for microservices with Docker?
 
-// Kubernetes-native approach
-@Service
-class KubernetesNativeApproach {
-    private final RestTemplate restTemplate = new RestTemplate();
+**Answer:**
 
-    public Object callPaymentService(String path) {
-        // Uses Kubernetes DNS: service-name.namespace.svc.cluster.local
-        String url = "http://payment-service.default.svc.cluster.local:8080" + path;
-        return restTemplate.getForObject(url, Object.class);
-    }
-}
+Each microservice gets a Docker image with multi-stage builds for minimal size. Spring Boot 3.x provides layered JARs for efficient Docker builds.
 
-// Kubernetes Ingress (alternative to Spring Cloud Gateway)
-// apiVersion: networking.k8s.io/v1
-// kind: Ingress
-// metadata:
-//   name: api-gateway
-// spec:
-//   rules:
-//   - host: api.example.com
-//     http:
-//       paths:
-//       - path: /orders
-//         pathType: Prefix
-//         backend:
-//           service:
-//             name: order-service
-//             port:
-//               number: 8080
-//       - path: /payments
-//         pathType: Prefix
-//         backend:
-//           service:
-//             name: payment-service
-//             port:
-//               number: 8080
+```dockerfile
+# â”€â”€ Multi-stage Dockerfile for a Spring Boot microservice â”€â”€
+
+# Stage 1: Build the application
+FROM eclipse-temurin:21-jdk AS builder
+WORKDIR /build
+
+# Copy Maven wrapper and pom.xml first (cache layer)
+COPY mvnw pom.xml ./
+COPY .mvn .mvn
+RUN ./mvnw dependency:go-offline -B
+
+# Copy source and build
+COPY src src
+RUN ./mvnw package -DskipTests -B
+
+# Stage 2: Extract Spring Boot layered JAR
+FROM builder AS layers
+WORKDIR /layers
+RUN java -Djarmode=layertools -jar /build/target/*.jar extract
+
+# Stage 3: Runtime image (minimal)
+FROM eclipse-temurin:21-jre-alpine
+WORKDIR /app
+
+# Copy each layer separately (Docker caches layers independently)
+COPY --from=layers layers/dependencies/ ./
+COPY --from=layers layers/spring-boot-loader/ ./
+COPY --from=layers layers/snapshot-dependencies/ ./
+COPY --from=layers layers/application/ ./
+
+# Non-root user
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+USER appuser
+
+EXPOSE 8080
+
+HEALTHCHECK --interval=30s --timeout=3s --retries=3 \
+  CMD wget -qO- http://localhost:8080/actuator/health || exit 1
+
+ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher"]
 ```
 
-### Q25: How do you test microservices? What testing strategies do you use?
+```yaml
+# â”€â”€ docker-compose.yml for local development â”€â”€
+version: '3.8'
+services:
+  eureka-server:
+    build: ./eureka-server
+    ports:
+      - "8761:8761"
 
-**Answer:** Testing microservices requires multiple levels: unit tests for domain logic, integration tests for database/repository layers, contract tests (Spring Cloud Contract or Pact) for service-to-service API compatibility, component tests with TestContainers for full service slices, and end-to-end tests for critical user journeys. Consumer-driven contract tests are especially important â€” they verify that API changes don't break downstream consumers.
+  config-server:
+    build: ./config-server
+    ports:
+      - "8888:8888"
+    depends_on:
+      - eureka-server
+
+  user-service:
+    build: ./user-service
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    depends_on:
+      - eureka-server
+      - config-server
+
+  order-service:
+    build: ./order-service
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    depends_on:
+      - eureka-server
+      - config-server
+      - user-service
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka/
+    depends_on:
+      - eureka-server
+      - user-service
+      - order-service
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.0
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+```
+
+Key Docker best practices:
+- Multi-stage builds keep images under 200 MB (vs 800+ MB with full JDK)
+- `jre-alpine` as base reduces attack surface and size
+- Layer ordering: dependencies change rarely, application code changes frequently
+- HEALTHCHECK enables orchestration to detect dead instances
+- Non-root user prevents container breakout from gaining root access
+- docker-compose for local dev, Kubernetes for production
+
+
+### Q14: How do you deploy microservices on Kubernetes?
+
+**Answer:**
+
+Kubernetes orchestrates containerized microservices with deployments, services, config maps, and ingress controllers.
+
+```yaml
+# â”€â”€ Deployment for a microservice â”€â”€
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-service
+  labels:
+    app: order-service
+spec:
+  replicas: 3  # Run 3 instances for high availability
+  selector:
+    matchLabels:
+      app: order-service
+  template:
+    metadata:
+      labels:
+        app: order-service
+    spec:
+      containers:
+        - name: order-service
+          image: raushan666/order-service:1.0.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: "k8s"
+            - name: DB_URL
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials
+                  key: url
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials
+                  key: username
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-credentials
+                  key: password
+          livenessProbe:
+            httpGet:
+              path: /actuator/health/liveness
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /actuator/health/readiness
+              port: 8080
+            initialDelaySeconds: 20
+            periodSeconds: 5
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+---
+# â”€â”€ Service (stable network endpoint) â”€â”€
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-service
+spec:
+  selector:
+    app: order-service
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: ClusterIP  # Internal â€” only accessible within the cluster
+---
+# â”€â”€ ConfigMap for non-sensitive config â”€â”€
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: order-service-config
+data:
+  application.yml: |
+    order-service:
+      order-timeout: 30s
+      max-batch-size: 100
+---
+# â”€â”€ HPA (auto-scaling) â”€â”€
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: order-service-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: order-service
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
+---
+# â”€â”€ Ingress (external traffic routing) â”€â”€
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api-ingress
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+spec:
+  rules:
+    - host: api.example.com
+      http:
+        paths:
+          - path: /users(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: user-service
+                port:
+                  number: 80
+          - path: /orders(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: order-service
+                port:
+                  number: 80
+```
+
+Spring Boot Kubernetes-friendly configuration:
+```yaml
+# application-k8s.yml
+spring:
+  cloud:
+    kubernetes:
+      discovery:
+        enabled: true   # Use Kubernetes DNS instead of Eureka
+      config:
+        enabled: true   # Read ConfigMap as configuration source
+      secrets:
+        enabled: true   # Read Secrets as configuration source
+  config:
+    import: configmap:order-service-config
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+```
+
+Deploy a new version:
+```bash
+kubectl set image deployment/order-service order-service=raushan666/order-service:1.1.0
+kubectl rollout status deployment/order-service
+```
+
+Kubernetes replaces Eureka for service discovery (DNS resolution), replaces Config Server (ConfigMaps + Secrets), and provides health checks (liveness/readiness probes) instead of Eureka heartbeats. Use Spring Cloud Kubernetes for seamless integration.
+
+---
+
+### Q15: Compare deployment strategies: rolling, blue/green, and canary
+
+**Answer:**
 
 ```java
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.cloud.contract.stubrunner.spring.AutoConfigureStubRunner;
-import org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.when;
+// â”€â”€ Rolling update (Kubernetes default) â”€â”€
+// Updates pods gradually â€” old pods keep serving until new ones are healthy
+apiVersion: apps/v1
+kind: Deployment
+spec:
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1        // One extra pod during update
+      maxUnavailable: 0  // Zero downtime: only create new pods before removing old ones
 
-// Unit Test
-class OrderTest {
-    @Test
-    void shouldCalculateTotal() {
-        Order order = new Order(UUID.randomUUID());
-        order.addLine("PROD-1", "Product 1", 2, new Money(BigDecimal.TEN, "USD"));
-        order.addLine("PROD-2", "Product 2", 1, new Money(BigDecimal.valueOf(5), "USD"));
+// â”€â”€ Blue/Green deployment â”€â”€
+// Two identical environments: Blue (current), Green (new)
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: order-service
+spec:
+  selector:
+    app: order-service
+    version: green   # â† Flip this from "blue" to "green" to switch traffic
+---
+# Deploy green:
+# kubectl apply -f deployment-green.yml
+# Wait for all green pods to pass readiness probes
+# Then switch traffic:
+# kubectl patch service order-service -p '{"spec":{"selector":{"version":"green"}}}'
+# When confirmed, delete blue:
+# kubectl delete -f deployment-blue.yml
 
-        order.confirm();
-        assertThat(order.getStatus()).isEqualTo(OrderStatus.CONFIRMED);
-        assertThat(order.getTotal()).isEqualTo(
-            new Money(BigDecimal.valueOf(25), "USD"));
+// â”€â”€ Canary deployment (traffic splitting) â”€â”€
+// Route 5% of traffic to the new version, monitor, then gradually increase
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: order-service
+spec:
+  hosts:
+    - order-service
+  http:
+    - match:
+        - headers:
+            canary:
+              exact: "true"      # Route internal testers to canary
+      route:
+        - destination:
+            host: order-service
+            subset: canary
+          weight: 100
+    - route:
+        - destination:
+            host: order-service
+            subset: stable
+          weight: 95            # 95% traffic to stable
+        - destination:
+            host: order-service
+            subset: canary
+          weight: 5             # 5% to canary
+---
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: order-service
+spec:
+  host: order-service
+  subsets:
+    - name: stable
+      labels:
+        version: v1
+    - name: canary
+      labels:
+        version: v2
+```
+
+| Strategy | Downtime | Risk | Rollback Speed | Traffic Control | Complexity |
+|----------|----------|------|---------------|-----------------|-----------|
+| Rolling | None | Moderate (gradual exposure) | Slow | Limited (per-pod) | Low |
+| Blue/Green | Switch moment (seconds) | Low (all traffic at once) | Instant (flip back) | None | Medium |
+| Canary | None | Lowest (small % first) | Instant (cut traffic) | Fine-grained (1-99%) | High (Service Mesh) |
+
+Start with rolling (built into Kubernetes, zero configuration). Move to blue/green when you need instant rollback. Use canary only when you have a service mesh (Istio, Linkerd) and need to test new versions on real traffic.
+
+---
+
+### Q16: How do you monitor microservices with Prometheus and Grafana?
+
+**Answer:**
+
+Spring Boot Actuator exposes metrics in Prometheus format. Prometheus scrapes them. Grafana visualizes dashboards.
+
+```java
+// â”€â”€ Dependencies â”€â”€
+// implementation 'org.springframework.boot:spring-boot-starter-actuator'
+// implementation 'io.micrometer:micrometer-registry-prometheus'
+
+// â”€â”€ Configuration â”€â”€
+// application.yml:
+// management:
+//   endpoints:
+//     web:
+//       exposure:
+//         include: health,info,metrics,prometheus
+//   metrics:
+//     tags:
+//       application: ${spring.application.name}
+//     export:
+//       prometheus:
+//         enabled: true
+
+// â”€â”€ Custom metrics â”€â”€
+@Service
+public class OrderMetricsService {
+    private final Counter orderCounter;
+    private final Timer orderTimer;
+    private final DistributionSummary orderValueSummary;
+
+    public OrderMetricsService(MeterRegistry registry) {
+        orderCounter = Counter.builder("orders.created.total")
+            .description("Total orders created")
+            .tag("service", "order-service")
+            .register(registry);
+
+        orderTimer = Timer.builder("orders.processing.time")
+            .description("Time taken to process an order")
+            .publishPercentiles(0.5, 0.95, 0.99)
+            .register(registry);
+
+        orderValueSummary = DistributionSummary.builder("orders.value")
+            .description("Order value distribution")
+            .baseUnit("USD")
+            .publishPercentiles(0.5, 0.95, 0.99)
+            .register(registry);
     }
+
+    public void recordOrder(BigDecimal value) {
+        orderCounter.increment();
+        orderValueSummary.record(value.doubleValue());
+    }
+
+    public <T> T measureOrderProcessing(Supplier<T> op) {
+        return orderTimer.record(op);
+    }
+}
+
+// â”€â”€ Micrometer annotations â”€â”€
+@Component
+public class PaymentProcessor {
+    @Timed(value = "payment.processing", percentiles = {0.5, 0.95, 0.99})
+    public PaymentResult processPayment(PaymentRequest req) {
+        // Method execution time is automatically recorded
+    }
+
+    @Counted(value = "payment.retries", description = "Payment retry count")
+    public void retryPayment(Long orderId) { }
+}
+```
+
+```yaml
+# â”€â”€ Prometheus config (prometheus.yml) â”€â”€
+scrape_configs:
+  - job_name: 'spring-boot-apps'
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets:
+        - 'user-service:8080'
+        - 'order-service:8080'
+        - 'payment-service:8080'
+
+  - job_name: 'kubernetes-pods'
+    kubernetes_sd_configs:
+      - role: pod
+    relabel_configs:
+      - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
+        action: keep
+        regex: true
+```
+
+```yaml
+# â”€â”€ Kubernetes PodMonitor (operator-based scraping) â”€â”€
+apiVersion: monitoring.coreos.com/v1
+kind: PodMonitor
+metadata:
+  name: spring-boot-monitor
+spec:
+  selector:
+    matchLabels:
+      app: order-service
+  podMetricsEndpoints:
+    - port: http
+      path: /actuator/prometheus
+```
+
+Grafana dashboard panels to create:
+- Request rate (requests/sec by endpoint)
+- Error rate (5xx / total requests)
+- Latency (p50, p95, p99 in ms)
+- JVM metrics (heap usage, GC pause time, thread count)
+- Database connection pool (active/idle/waiting)
+- Circuit breaker state (CLOSED/OPEN/HALF_OPEN)
+- System metrics (CPU, memory, disk)
+
+Alert on: p99 latency > 1s, error rate > 1%, circuit breaker OPEN, heap usage > 80%, connection pool exhaustion.
+
+---
+
+### Q17: How do you implement contract testing with Spring Cloud Contract?
+
+**Answer:**
+
+Contract testing verifies that a producer's API matches what the consumer expects, without end-to-end integration tests. Spring Cloud Contract generates tests and stubs from Groovy or YAML contracts.
+
+```groovy
+// â”€â”€ Producer contract (user-service) â”€â”€
+// File: contracts/shouldReturnUser.groovy
+Contract.make {
+    description "should return user by ID"
+    request {
+        method GET()
+        url "/users/1"
+        headers {
+            accept(applicationJson())
+        }
+    }
+    response {
+        status OK()
+        headers {
+            contentType(applicationJson())
+        }
+        body([
+            id: 1,
+            name: "Raushan",
+            email: "raushan@example.com"
+        ])
+    }
+}
+```
+
+```java
+// â”€â”€ Producer-side base test (Spring Cloud Contract generates tests) â”€â”€
+// File: src/test/java/.../BaseContractTest.java
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
+@AutoConfigureMockMvc
+public abstract class BaseContractTest {
+    @Autowired
+    private MockMvc mockMvc;
+
+    // Spring Cloud Contract auto-creates a test class that extends this
+    // and verifies the controller matches the contract
+}
+```
+
+```bash
+# Generate contract tests + publish stubs:
+./mvnw verifystubs:8080
+```
+
+```java
+// â”€â”€ Consumer-side (order-service uses stubs to test its client) â”€â”€
+@SpringBootTest
+@AutoConfigureStubRunner(
+    stubsMode = StubRunnerProperties.StubsMode.LOCAL,
+    ids = "com.company:user-service:+:stubs:8080"
+)
+class UserServiceClientTest {
+    @Autowired
+    private UserServiceClient userClient;
 
     @Test
-    void shouldNotConfirmEmptyOrder() {
-        Order order = new Order(UUID.randomUUID());
-        assertThatThrownBy(order::confirm)
-            .isInstanceOf(IllegalStateException.class)
-            .hasMessageContaining("empty");
+    void shouldReturnUser() {
+        UserDto user = userClient.getUser(1L);
+        assertThat(user.id()).isEqualTo(1L);
+        assertThat(user.name()).isEqualTo("Raushan");
+        assertThat(user.email()).isEqualTo("raushan@example.com");
+    }
+}
+```
+
+Spring Cloud Contract automatically verifies that the consumer's client code works against the producer's contract. If the producer changes a response field, the consumer build breaks before deployment â€” not in production.
+
+Contract testing replaces brittle end-to-end tests for cross-service integration. Combined with consumer-driven contracts, it prevents breaking changes from reaching production.
+
+---
+
+### Q18: How do you handle database-per-service with shared data concerns?
+
+**Answer:**
+
+Each microservice owns its database â€” no other service accesses it directly. Data that spans services is shared through events or API calls.
+
+```java
+// â”€â”€ Anti-pattern: direct database access â”€â”€
+// order-service calls user-service's database directly â€” WRONG
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    // order-service should NOT have this â€” it violates service boundaries
+}
+
+// â”€â”€ Correct: API-based data sharing â”€â”€
+// order-service calls user-service's REST API
+@FeignClient(name = "user-service")
+public interface UserServiceClient {
+    @GetMapping("/users/{id}/shipping-address")
+    AddressDto getShippingAddress(@PathVariable Long id);
+}
+
+// â”€â”€ Correct: Event-based data sharing â”€â”€
+// When user changes their shipping address, user-service publishes an event
+@Service
+public class UserService {
+    @Transactional
+    public void updateShippingAddress(Long userId, Address newAddress) {
+        userRepo.updateAddress(userId, newAddress);
+        // Publish event â€” order-service consumes and updates its local cache
+        eventPublisher.publish(new AddressChangedEvent(userId, newAddress));
     }
 }
 
-// Integration Test with TestContainers
-import org.springframework.boot.test.context.SpringBootTest;
-import org.testcontainers.containers.PostgreSQLContainer;
-import org.testcontainers.junit.jupiter.Container;
-import org.testcontainers.junit.jupiter.Testcontainers;
+// order-service caches only the shipping address it needs
+@Service
+public class OrderAddressService {
+    @Autowired private OrderAddressCacheRepository addressCache;
 
+    @Transactional
+    @KafkaListener(topics = "user.address-changed")
+    public void handleAddressChanged(AddressChangedEvent event) {
+        orderAddressCache.save(
+            new OrderAddressCache(event.userId(), event.newAddress()));
+    }
+}
+
+@Entity
+public class OrderAddressCache {
+    @Id private Long userId;            // Same ID as user-service
+    private String street;
+    private String city;
+    private String zipCode;
+    // Only the fields order-service needs
+}
+```
+
+Strategies for cross-service data:
+1. **API calls**: Best for real-time data (get user details when creating an order)
+2. **Event replication**: Best for reference data (cache user address locally, update via events)
+3. **API composition**: Best for complex read models (API gateway aggregates responses)
+4. **Shared kernel**: Rare â€” share only extremely stable data (country codes, tax rates) as a library
+
+Never share databases between services. If two services need the same table, they are not independent â€” merge them into one service.
+
+---
+
+### Q19: What are common microservices anti-patterns and how do you avoid them?
+
+**Answer:**
+
+```java
+// â”€â”€ Anti-pattern 1: Distributed Monolith â”€â”€
+// Services are split but share a database and cannot deploy independently
+@Entity
+@Table(name = "orders")
+public class Order {
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;  // â† Order-service needs User entity from user-service's DB
+}
+// Fix: Each service owns its data. Order-service stores only user_id as a value.
+
+// â”€â”€ Anti-pattern 2: Chatty Communication â”€â”€
+// Multiple API calls to complete one operation
+@Service
+public class OrderService {
+    public Order createOrder(OrderRequest req) {
+        UserDto user = userClient.getUser(req.userId());          // call 1
+        AddressDto address = userClient.getAddress(req.userId()); // call 2
+        PaymentMethodDto pm = userClient.getPaymentMethod(req.userId()); // call 3
+        // Prefer bulk API: userClient.getUserWithDetails(req.userId())
+    }
+}
+
+// â”€â”€ Anti-pattern 3: Shared Libraries for Domain Logic â”€â”€
+// A shared JAR that contains business logic used by multiple services
+public class OrderValidationUtils {
+    // Any change to this requires rebuilding ALL services
+    // Fix: duplicate validation logic per service or make it a separate microservice
+}
+
+// â”€â”€ Anti-pattern 4: Golden Hammer (everything must be a microservice) â”€â”€
+@SpringBootApplication
+public class EmailSendingService { }  // Could be a simple function + queue
+// Fix: Use serverless functions for simple tasks. Not everything needs a full service.
+
+// â”€â”€ Anti-pattern 5: No Monitoring or Observability â”€â”€
+// Services communicate without tracing, logging correlation, or metrics
+// Fix: Always include distributed tracing (Micrometer + Zipkin),
+// structured logging (trace ID in every log), and Prometheus metrics.
+
+// â”€â”€ Anti-pattern 6: Leaky Abstractions â”€â”€
+// Internal implementation details leak through service boundaries
+@FeignClient(name = "user-service")
+public interface UserServiceClient {
+    @GetMapping("/users/{id}/raw")
+    String getRawUserData();  // Returns internal DB representation
+}
+// Fix: Each service has its own API contract with DTOs, not exposed entities.
+
+// â”€â”€ Anti-pattern 7: Orchestration in the API Gateway â”€â”€
+@RestController
+public class ApiGatewayController {
+    @GetMapping("/order-details/{orderId}")
+    public OrderDetailsDto getOrderDetails(@PathVariable Long orderId) {
+        OrderDto order = orderClient.getOrder(orderId);
+        UserDto user = userClient.getUser(order.userId());
+        ProductDto product = productClient.getProduct(order.productId());
+        // Gateway is now doing orchestration â€” it should just route
+    }
+}
+// Fix: Create a dedicated order-aggregation-service for API composition.
+```
+
+Golden rule: If splitting a service doesn't give you independent deployability, independent scalability, or independent team ownership, don't split it.
+
+---
+
+### Q20: How do you test microservices end-to-end?
+
+**Answer:**
+
+Testing microservices uses a pyramid: unit tests (many) â†’ integration tests (fewer) â†’ contract tests (per pair) â†’ end-to-end tests (few).
+
+```java
+// â”€â”€ Layer 1: Unit tests (fast, isolated, mock external calls) â”€â”€
+@ExtendWith(MockitoExtension.class)
+class OrderServiceUnitTest {
+    @Mock private OrderRepository orderRepo;
+    @Mock private UserServiceClient userClient;
+    @InjectMocks private OrderService orderService;
+
+    @Test
+    void shouldCreateOrder() {
+        when(userClient.getUser(1L)).thenReturn(new UserDto(1L, "Raushan"));
+        OrderRequest req = new OrderRequest(1L, 100L, 2, new BigDecimal("50.00"));
+
+        Order result = orderService.createOrder(req);
+
+        assertThat(result.getStatus()).isEqualTo("PENDING");
+        verify(orderRepo).save(any(Order.class));
+    }
+}
+
+// â”€â”€ Layer 2: Integration tests with TestContainers â”€â”€
 @SpringBootTest
 @Testcontainers
-class OrderRepositoryIntegrationTest {
+class OrderServiceIntegrationTest {
     @Container
-    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16")
-        .withDatabaseName("testdb")
-        .withUsername("test")
-        .withPassword("test");
+    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16");
 
-    @Autowired
-    private OrderCommandRepository repository;
+    @Container
+    static KafkaContainer kafka = new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:7.6.0"));
+
+    @DynamicPropertySource
+    static void configureProperties(DynamicPropertyRegistry reg) {
+        reg.add("spring.datasource.url", postgres::getJdbcUrl);
+        reg.add("spring.kafka.bootstrap-servers", kafka::getBootstrapServers);
+    }
+
+    @Autowired private OrderService orderService;
+    @Autowired private OrderRepository orderRepo;
 
     @Test
     void shouldPersistOrder() {
-        OrderCommandModel order = new OrderCommandModel(UUID.randomUUID());
-        order.addLine("PROD-1", "Product 1", 2, BigDecimal.TEN);
+        OrderRequest req = new OrderRequest(1L, 100L, 2, new BigDecimal("50.00"));
 
-        OrderCommandModel saved = repository.save(order);
+        Order result = orderService.createOrder(req);
 
-        assertThat(saved.getId()).isNotNull();
-        OrderCommandModel found = repository.findById(saved.getId()).orElseThrow();
-        assertThat(found.getStatus()).isEqualTo("DRAFT");
+        assertThat(orderRepo.findById(result.getId())).isPresent();
+        assertThat(result.getTotal()).isEqualByComparingTo(new BigDecimal("100.00"));
     }
 }
 
-// Contract Test with Spring Cloud Contract (consumer side)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
+// â”€â”€ Layer 3: Contract tests (Spring Cloud Contract or Pact) â”€â”€
+@SpringBootTest
 @AutoConfigureStubRunner(
-    ids = "com.example:payment-service:+:stubs:8090",
-    stubsMode = StubRunnerProperties.StubsMode.LOCAL)
-class PaymentClientContractTest {
+    stubsMode = StubRunnerProperties.StubsMode.LOCAL,
+    ids = "com.company:user-service:+:stubs:8080")
+class OrderServiceContractTest {
     @Autowired
-    private RestTemplate restTemplate;
+    private UserServiceClient userClient;
 
     @Test
-    void shouldProcessPayment() {
-        PaymentResponse response = restTemplate.postForObject(
-            "http://localhost:8090/api/payments",
-            new PaymentRequest("order-123", BigDecimal.valueOf(100), "USD"),
-            PaymentResponse.class);
-        assertThat(response).isNotNull();
-        assertThat(response.status()).isIn("COMPLETED", "PENDING");
+    void shouldGetUser() {
+        UserDto user = userClient.getUser(1L);
+        assertThat(user.name()).isEqualTo("Raushan");
     }
 }
 
-// Contract Test (producer side)
-import org.springframework.cloud.contract.verifier.junit.MockVerifierRule;
+// â”€â”€ Layer 4: End-to-end tests (few, smoke-test critical paths) â”€â”€
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@Testcontainers
+class OrderE2ETest {
+    @Container
+    static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16");
 
-// In the payment service, Spring Cloud Contract Verifier generates and runs
-// tests from contracts defined in Groovy or YAML files:
-// Contract:
-// org.springframework.cloud.contract.spec.Contract.make {
-//     description "should process payment"
-//     request {
-//         method POST()
-//         url "/api/payments"
-//         body([orderId: "order-123", amount: 100.00, currency: "USD"])
-//     }
-//     response {
-//         status 200
-//         body([paymentId: $(anyUuid()), status: "COMPLETED"])
-//     }
-// }
-```
+    @Container
+    static KafkaContainer kafka = new KafkaContainer(
+        DockerImageName.parse("confluentinc/cp-kafka:7.6.0"));
 
-### Q26: How do you handle circuit breakers in a microservices environment beyond simple configuration?
+    @LocalServerPort
+    private int port;
 
-**Answer:** Beyond basic configuration, circuit breakers need proper fallback design, half-open probe thresholds, metrics export, and integration with the API gateway. Fallbacks should return degraded responses (not errors). Metrics and events should feed into monitoring. Cascading failures â€” where one service's circuit breaker triggers another's â€” must be designed for. The gateway circuit breaker protects upstream services from downstream failures.
+    private WebTestClient client;
 
-```java
-import io.github.resilience4j.circuitbreaker.CircuitBreaker;
-import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;
-import io.github.resilience4j.core.EventPublisher;
-import jakarta.annotation.PostConstruct;
-
-@Component
-class CircuitBreakerEventHandler {
-    private final CircuitBreakerRegistry registry;
-
-    public CircuitBreakerEventHandler(CircuitBreakerRegistry registry) {
-        this.registry = registry;
+    @BeforeEach
+    void setUp() {
+        client = WebTestClient.bindToServer()
+            .baseUrl("http://localhost:" + port)
+            .build();
     }
 
-    @PostConstruct
-    public void registerEventListeners() {
-        registry.getAllCircuitBreakers().forEach(cb -> {
-            cb.getEventPublisher()
-                .onStateTransition(event ->
-                    System.out.println("Circuit breaker " + event.getCircuitBreakerName()
-                        + ": " + event.getStateTransition()))
-                .onFailureRateExceeded(event ->
-                    System.err.println("Failure rate exceeded for "
-                        + event.getCircuitBreakerName()))
-                .onCallNotPermitted(event ->
-                    System.out.println("Call not permitted for "
-                        + event.getCircuitBreakerName()));
+    @Test
+    void fullOrderFlow() {
+        // Create order via REST
+        client.post().uri("/orders")
+            .bodyValue(new OrderRequest(1L, 100L, 2, new BigDecimal("50.00")))
+            .exchange()
+            .expectStatus().isOk()
+            .expectBody()
+            .jsonPath("$.status").isEqualTo("PENDING")
+            .jsonPath("$.total").isEqualTo(100.00);
+
+        // Verify Kafka event was published
+        // (consume the event from the test container and assert)
+    }
+}
+
+// â”€â”€ WireMock for external service simulation â”€â”€
+@SpringBootTest
+@WireMockTest(httpPort = 9090)
+class OrderServiceWireMockTest {
+    @Test
+    void shouldHandleUserServiceTimeout() {
+        // Simulate slow user-service response
+        stubFor(get(urlEqualTo("/users/1"))
+            .willReturn(aResponse()
+                .withFixedDelay(5000)
+                .withStatus(200)));
+
+        // Circuit breaker should trigger fallback
+        OrderRequest req = new OrderRequest(1L, 100L, 2, new BigDecimal("50.00"));
+        assertThrows(CircuitBreakerOpenException.class,
+            () -> orderService.createOrder(req));
+    }
+}
+```
+
+End-to-end tests are slow and flaky. Keep them to 3-5 critical paths per service. Rely on contract tests for cross-service integration and unit tests for business logic.
+
+
+### Q21: What is a service mesh and when would you use Istio?
+
+**Answer:**
+
+A service mesh manages service-to-service communication at the infrastructure layer using sidecar proxies. Istio injects an Envoy proxy alongside each pod, handling traffic management, security, and observability without changing application code.
+
+```java
+// â”€â”€ Without service mesh: circuit breaker in application code â”€â”€
+@Service
+public class OrderService {
+    @Autowired private UserServiceClient userClient;
+
+    @CircuitBreaker(name = "userService", fallbackMethod = "fallback")
+    public UserDto getUser(Long id) {
+        return userClient.getUser(id);
+    }
+}
+
+// â”€â”€ With Istio: circuit breaker moves to infrastructure â”€â”€
+// application code is clean â€” no Resilience4j annotations needed
+@Service
+public class OrderService {
+    @Autowired private UserServiceClient userClient;
+
+    public UserDto getUser(Long id) {
+        return userClient.getUser(id);  // No circuit breaker â€” Istio handles it
+    }
+}
+```
+
+```yaml
+# â”€â”€ Istio DestinationRule (circuit breaker at mesh level) â”€â”€
+apiVersion: networking.istio.io/v1beta1
+kind: DestinationRule
+metadata:
+  name: user-service
+spec:
+  host: user-service
+  trafficPolicy:
+    connectionPool:
+      tcp:
+        maxConnections: 100
+      http:
+        http1MaxPendingRequests: 10
+        http2MaxRequests: 100
+    outlierDetection:
+      consecutive5xxErrors: 5
+      interval: 30s
+      baseEjectionTime: 30s
+      maxEjectionPercent: 50
+---
+# â”€â”€ Istio VirtualService (traffic splitting for canary) â”€â”€
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: user-service
+spec:
+  hosts:
+    - user-service
+  http:
+    - route:
+        - destination:
+            host: user-service
+            subset: v1
+          weight: 90
+        - destination:
+            host: user-service
+            subset: v2
+          weight: 10
+    - timeout: 3s
+      retries:
+        attempts: 3
+        perTryTimeout: 1s
+---
+# â”€â”€ Istio PeerAuthentication (mTLS between services) â”€â”€
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: default
+  namespace: default
+spec:
+  mtls:
+    mode: STRICT  # All inter-service traffic must use mTLS
+---
+# â”€â”€ Istio AuthorizationPolicy â”€â”€
+apiVersion: security.istio.io/v1beta1
+kind: AuthorizationPolicy
+metadata:
+  name: order-service-policy
+spec:
+  selector:
+    matchLabels:
+      app: order-service
+  rules:
+    - from:
+        - source:
+            principals: ["cluster.local/ns/default/sa/api-gateway"]
+      to:
+        - operation:
+            methods: ["GET"]
+```
+
+Service mesh provides:
+- Traffic management (canary, circuit breaker, retries, timeouts â€” no code changes)
+- Security (mTLS, authorization, authentication at the proxy level)
+- Observability (automatic metrics, traces, access logs per request)
+- Resilience (timeouts, retries, circuit breaking, outlier detection)
+
+Use a service mesh when you have 10+ services and can't add cross-cutting code to each one. Do not use a service mesh for small deployments (3-5 services) â€” the complexity of managing sidecars and control plane is not worth it.
+
+---
+
+### Q22: How do you implement structured logging and log aggregation?
+
+**Answer:**
+
+Structured logging outputs JSON with consistent fields (service name, trace ID, level, message, timestamp). ELK or Loki aggregates logs from all services into a searchable store.
+
+```java
+// â”€â”€ Logback configuration for structured JSON logging â”€â”€
+// resources/logback-spring.xml
+<configuration>
+    <appender name="JSON" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <includeMdc>true</includeMdc>          <!-- Include MDC context -->
+            <customFields>{"service":"order-service","environment":"${ENV:-dev}"}</customFields>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="JSON"/>
+    </root>
+</configuration>
+
+// â”€â”€ Dependencies â”€â”€
+// implementation 'net.logstash.logback:logstash-logback-encoder:7.4'
+
+// â”€â”€ Structured logging in application code â”€â”€
+@Service
+public class OrderService {
+    private static final Logger log = LoggerFactory.getLogger(OrderService.class);
+
+    @Autowired
+    private Tracer tracer;  // Micrometer Tracing
+
+    @Transactional
+    public Order createOrder(OrderRequest req) {
+        // MDC is automatically populated by Micrometer with traceId and spanId
+        MDC.put("user.id", String.valueOf(req.userId()));
+        MDC.put("order.total", req.total().toPlainString());
+
+        log.info("Creating order");
+        try {
+            Order order = orderRepo.save(new Order(req));
+            MDC.put("order.id", String.valueOf(order.getId()));
+            log.info("Order created successfully");
+            return order;
+        } catch (Exception e) {
+            log.error("Failed to create order", e);
+            throw e;
+        } finally {
+            MDC.remove("user.id");
+            MDC.remove("order.total");
+            MDC.remove("order.id");
+        }
+    }
+}
+
+// â”€â”€ JSON output (single log entry) â”€â”€
+// {
+//   "@timestamp": "2026-06-16T12:30:00.000+00:00",
+//   "level": "INFO",
+//   "service": "order-service",
+//   "environment": "prod",
+//   "traceId": "abc123def456",
+//   "spanId": "span789",
+//   "message": "Order created successfully",
+//   "mdc": {
+//     "user.id": "42",
+//     "order.total": "100.00",
+//     "order.id": "87"
+//   },
+//   "logger_name": "com.company.orderservice.OrderService",
+//   "thread_name": "http-nio-8080-exec-3"
+// }
+
+// â”€â”€ Loki log query â”€â”€
+// {service="order-service", level="ERROR"} |= "traceId=abc123def456"
+// {service=~"user-service|order-service", level="ERROR"} | json | line_format "{{.message}}"
+
+// â”€â”€ Logback MDC with auto-cleanup via Filter â”€â”€
+@Component
+public class MdcFilter implements WebFilter {
+    @Override
+    public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {
+        return chain.filter(exchange)
+            .contextWrite(ctx -> {
+                MDC.put("request.path", exchange.getRequest().getPath().value());
+                MDC.put("request.method", exchange.getRequest().getMethod().name());
+                return ctx;
+            })
+            .doFinally(signalType -> MDC.clear());
+    }
+}
+```
+
+Best practices:
+- Every log entry includes `traceId`, `service`, `level`, and `timestamp`
+- Structured JSON means no regex parsing â€” just query fields
+- Never log sensitive data (PII, passwords, tokens) â€” even in structured logs
+- Correlation ID (traceId) connects logs across services during a single request flow
+- Use Loki + Grafana for Kubernetes-native log aggregation (no Elasticsearch cluster needed)
+
+---
+
+### Q23: How do you handle database migrations across multiple microservices?
+
+**Answer:**
+
+Each microservice manages its own database migrations independently. Migrations are versioned, sequential, and tested in CI.
+
+```java
+// â”€â”€ Each service has its own Flyway configuration â”€â”€
+// order-service/src/main/resources/application.yml:
+// spring:
+//   flyway:
+//     enabled: true
+//     locations: classpath:db/migration/order
+//     baseline-on-migrate: true
+//     out-of-order: false
+//     validate-on-migrate: true
+
+// user-service/src/main/resources/application.yml:
+// spring:
+//   flyway:
+//     locations: classpath:db/migration/user
+
+// â”€â”€ Migration files are prefixed by version: V{version}__{description}.sql â”€â”€
+// order-service:
+//   db/migration/order/V1__create_orders_table.sql
+//   db/migration/order/V2__add_status_column.sql
+//   db/migration/order/V3__add_indexes.sql
+//
+// user-service:
+//   db/migration/user/V1__create_users_table.sql
+//   db/migration/user/V2__add_email_verification.sql
+
+// â”€â”€ V3__add_indexes.sql for order-service â”€â”€
+-- Create indexes for common queries
+CREATE INDEX idx_orders_user_id ON orders(user_id);
+CREATE INDEX idx_orders_status ON orders(status) WHERE status IN ('PENDING', 'PROCESSING');
+CREATE INDEX idx_orders_created_at ON orders(created_at DESC);
+
+-- Backfill existing data if needed
+-- UPDATE orders SET status = 'PENDING' WHERE status IS NULL;
+
+// â”€â”€ Advanced: multi-service migration coordination â”€â”€
+@Service
+public class CoordinatedMigrationService {
+    @Autowired private Map<String, DataSource> dataSources;
+
+    @EventListener(ApplicationReadyEvent.class)
+    public void runCoordinatedMigrations() {
+        dataSources.forEach((serviceName, ds) -> {
+            Flyway flyway = Flyway.configure()
+                .dataSource(ds)
+                .locations("classpath:db/migration/" + serviceName)
+                .load();
+            flyway.migrate();
+            log.info("{} migration complete", serviceName);
         });
     }
 }
 
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import io.github.resilience4j.core.IntervalFunction;
+// â”€â”€ Backward compatibility: expand-contract for cross-service migrations â”€â”€
+// Phase 1: Add new column (expand)
+-- V1__add_phone_column.sql
+ALTER TABLE users ADD COLUMN phone VARCHAR(20);
+
+// Phase 2: Deploy services to write to both old and new fields
+// Phase 3: Backfill data
+// Phase 4: Migrate readers to new column
+// Phase 5: Drop old column (contract)
+-- V2__drop_legacy_phone.sql
+ALTER TABLE users DROP COLUMN legacy_phone;
+```
+
+CI validation:
+```bash
+# Validate that migrations are reversible (check for down scripts)
+for f in db/migration/*/V*.sql; do
+  down="${f/V/__down/V}"
+  if [ ! -f "${down}" ]; then
+    echo "WARNING: No undo migration for $f"
+  fi
+done
+
+# Check for SQL syntax errors via dry-run
+flyway migrate -dryRunOutput=dry-run.sql
+```
+
+Each service's migration is independent. Never share migration files across services. Backward-compatible migrations (expand phase) allow zero-downtime deployment.
+
+---
+
+### Q24: How do you implement idempotency in microservices?
+
+**Answer:**
+
+Idempotency ensures that processing the same request multiple times produces the same result. For asynchronous processing, this means deduplication at the consumer.
+
+```java
+// â”€â”€ Idempotency key pattern (for REST endpoints) â”€â”€
+@RestController
+@RequestMapping("/orders")
+public class OrderController {
+
+    @PostMapping
+    public ResponseEntity<Order> createOrder(
+            @RequestBody OrderRequest request,
+            @RequestHeader("Idempotency-Key") String idempotencyKey) {
+
+        Order order = orderService.createIdempotent(request, idempotencyKey);
+        return ResponseEntity.ok(order);
+    }
+}
 
 @Service
-class AdvancedCircuitBreakerService {
-    @CircuitBreaker(name = "externalApi", fallbackMethod = "fallback")
-    public ExternalResponse callExternalApi(String request) {
-        return restTemplate.getForObject(
-            "http://external-api/v1/data/{request}",
-            ExternalResponse.class, request);
-    }
+public class OrderService {
+    @Autowired private OrderRepository orderRepo;
+    @Autowired private IdempotencyRegistry idempotencyRegistry;
 
-    public ExternalResponse fallback(String request, Exception ex) {
-        // Return stale cached data instead of error
-        ExternalResponse cached = cacheService.get(request);
+    @Transactional
+    public Order createIdempotent(OrderRequest request, String idempotencyKey) {
+        // Check if this key was already processed
+        return idempotencyRegistry.getProcessedResult(idempotencyKey)
+            .orElseGet(() -> {
+                Order order = orderRepo.save(new Order(request));
+                idempotencyRegistry.record(idempotencyKey, order.getId());
+                return order;
+            });
+    }
+}
+
+// â”€â”€ Idempotency registry (using database for persistence) â”€â”€
+@Entity
+@Table(name = "idempotency_keys")
+public class IdempotencyRecord {
+    @Id
+    private String idempotencyKey;
+
+    private Long resultId;  // The ID of the created resource
+    private Instant createdAt;
+
+    // TTL: purge old entries after 24 hours
+    public boolean isExpired() {
+        return createdAt.isBefore(Instant.now().minus(24, ChronoUnit.HOURS));
+    }
+}
+
+@Repository
+public interface IdempotencyRegistry extends JpaRepository<IdempotencyRecord, String> {
+    Optional<IdempotencyRecord> findByIdempotencyKey(String key);
+
+    @Modifying
+    @Query("DELETE FROM IdempotencyRecord r WHERE r.createdAt < :cutoff")
+    void purgeOlderThan(@Param("cutoff") Instant cutoff);
+}
+
+// â”€â”€ Idempotent Kafka consumer â”€â”€
+@Service
+public class IdempotentConsumer {
+    @Autowired private ProcessedEventRepository processedRepo;
+    @Autowired private OrderRepository orderRepo;
+
+    @Transactional
+    @KafkaListener(topics = "payment.completed")
+    public void handlePaymentCompleted(PaymentCompletedEvent event) {
+        // Deduplicate by event ID
+        if (processedRepo.existsByEventId(event.getEventId())) {
+            log.info("Duplicate event: {}, skipping", event.getEventId());
+            return;
+        }
+
+        Order order = orderRepo.findById(event.getOrderId())
+            .orElseThrow(() -> new IllegalArgumentException("Order not found"));
+
+        order.setStatus("PAID");
+        orderRepo.save(order);
+
+        processedRepo.save(new ProcessedEvent(event.getEventId()));
+    }
+}
+
+// â”€â”€ Guarantee: atomic check-then-process with database constraint â”€â”€
+// PostgreSQL:
+// CREATE UNIQUE INDEX idx_idempotency ON idempotency_keys(idempotency_key);
+//
+// INSERT INTO idempotency_keys(idempotency_key, result_id, created_at)
+// VALUES ('key-123', NULL, NOW())
+// ON CONFLICT (idempotency_key) DO NOTHING
+// RETURNING idempotency_key;
+//
+// If the INSERT returns the key, this is the first call â€” process normally.
+// If it returns nothing, another request already started processing â€” return cached result.
+
+```
+
+Idempotency is not optional in microservices â€” network retries guarantee duplicate requests. Every write endpoint should accept an idempotency key. Every async consumer should deduplicate by event ID.
+
+---
+
+### Q25: What distributed caching strategies work for microservices?
+
+**Answer:**
+
+Distributed caching (Redis) reduces latency and database load. Two primary patterns: cache-aside (read-through) and write-through.
+
+```java
+// â”€â”€ Cache-aside: read from cache, miss -> load from DB -> populate cache â”€â”€
+@Service
+public class ProductService {
+    @Autowired private RedisTemplate<String, ProductDto> redis;
+    @Autowired private ProductRepository productRepo;
+
+    private static final Duration CACHE_TTL = Duration.ofMinutes(10);
+
+    public ProductDto getProduct(Long id) {
+        String key = "product:" + id;
+
+        // Try cache
+        ProductDto cached = redis.opsForValue().get(key);
         if (cached != null) {
-            cached.setStale(true);
-            cached.setWarning("Using cached data - service unavailable");
             return cached;
         }
-        return new ExternalResponse("default", "Service unavailable", true);
+
+        // Cache miss â€” load from database
+        Product product = productRepo.findById(id)
+            .orElseThrow(() -> new ProductNotFoundException(id));
+        ProductDto dto = ProductDto.from(product);
+
+        // Populate cache with TTL
+        redis.opsForValue().set(key, dto, CACHE_TTL);
+        return dto;
+    }
+
+    // â”€â”€ Invalidate cache on write â”€â”€
+    @Transactional
+    public ProductDto updateProduct(Long id, UpdateProductRequest req) {
+        Product product = productRepo.findById(id).orElseThrow();
+        product.setName(req.name());
+        product.setPrice(req.price());
+        product = productRepo.save(product);
+
+        // Invalidate cache (or update it with write-through)
+        redis.delete("product:" + id);
+
+        return ProductDto.from(product);
     }
 }
 
-record ExternalResponse(String data, String message, boolean stale) {
-    public void setStale(boolean s) {}
-    public void setWarning(String w) {}
-}
-```
-
-### Q27: What is the role of an API service mesh (Istio, Linkerd) in microservices?
-
-**Answer:** A service mesh provides infrastructure layer for service-to-service communication: traffic management (routing, shifting, fault injection), security (mTLS, authorization policies), and observability (metrics, tracing, access logs). It runs as sidecar proxies alongside each service, transparently intercepting traffic. The service mesh handles cross-cutting concerns without changes to application code.
-
-```java
-// Without service mesh â€” application must handle resilience:
+// â”€â”€ Spring Cache abstraction â”€â”€
 @Service
-class ManualResilienceService {
-    @CircuitBreaker(name = "service")
-    public Data fetchData() {
-        return restTemplate.getForObject("http://other-service/data", Data.class);
+public class ProductService {
+    @Cacheable(value = "products", key = "#id", unless = "#result == null")
+    public ProductDto getProduct(Long id) {
+        Product product = productRepo.findById(id)
+            .orElseThrow(() -> new ProductNotFoundException(id));
+        return ProductDto.from(product);
+    }
+
+    @CachePut(value = "products", key = "#id")
+    @Transactional
+    public ProductDto updateProduct(Long id, UpdateProductRequest req) {
+        Product product = productRepo.findById(id).orElseThrow();
+        product.setName(req.name());
+        product.setPrice(req.price());
+        product = productRepo.save(product);
+        return ProductDto.from(product);
+    }
+
+    @CacheEvict(value = "products", key = "#id")
+    public void evictProduct(Long id) {
+        // Cache eviction triggered externally (e.g., admin action)
     }
 }
 
-// With service mesh â€” application code is simple:
-@Service
-class ServiceMeshAwareService {
-    public Data fetchData() {
-        // Service mesh handles retries, circuit breaking, mTLS, tracing
-        // All configured via Istio VirtualService and DestinationRule YAML
-        return restTemplate.getForObject("http://other-service/data", Data.class);
-    }
-}
-
-// Istio VirtualService configuration (not Java, but referenced):
-// apiVersion: networking.istio.io/v1beta1
-// kind: VirtualService
-// metadata:
-//   name: order-service-routing
-// spec:
-//   hosts:
-//   - order-service
-//   http:
-//   - route:
-//     - destination:
-//         host: order-service
-//         subset: v2
-//       weight: 10
-//     - destination:
-//         host: order-service
-//         subset: v1
-//       weight: 90
-//   - fault:
-//       delay:
-//         percentage:
-//           value: 5
-//         fixedDelay: 5s
-
-// Istio DestinationRule with circuit breaker:
-// apiVersion: networking.istio.io/v1beta1
-// kind: DestinationRule
-// metadata:
-//   name: order-service-cb
-// spec:
-//   host: order-service
-//   trafficPolicy:
-//     connectionPool:
-//       tcp:
-//         maxConnections: 100
-//       http:
-//         http1MaxPendingRequests: 10
-//         maxRequestsPerConnection: 10
-//     outlierDetection:
-//       consecutive5xxErrors: 5
-//       interval: 10s
-//       baseEjectionTime: 30s
-```
-
-### Q28: How do you handle blue-green deployments and canary releases in microservices?
-
-**Answer:** Blue-green deployments run two identical environments (blue = current, green = new). Traffic is switched from blue to green after validation. Canary releases route a small percentage of traffic to the new version, gradually increasing if no issues. Both require the API gateway or service mesh to support traffic splitting. Feature flags provide an additional safety layer.
-
-```java
-// Application code should be deployment-strategy aware:
-// No special code needed if stateless and health probes are correct
-
-// Health check ensures readiness before traffic routing:
-@Component
-class VersionHealthIndicator implements HealthIndicator {
-    @Value("${app.version:unknown}")
-    private String version;
-
-    @Override
-    public Health health() {
-        return Health.up()
-            .withDetail("version", version)
-            .build();
-    }
-}
-
-// Kubernetes blue-green deployment:
-// apiVersion: apps/v1
-// kind: Deployment
-// metadata:
-//   name: order-service-green
-// spec:
-//   replicas: 5
-//   selector:
-//     matchLabels:
-//       app: order-service
-//       version: green
-//   template:
-//     metadata:
-//       labels:
-//         app: order-service
-//         version: green
-//     spec:
-//       containers:
-//       - name: order-service
-//         image: registry.example.com/order-service:2.0.0
-// ---
-// apiVersion: v1
-// kind: Service
-// metadata:
-//   name: order-service
-// spec:
-//   selector:
-//     app: order-service
-//     version: blue  # Switch to 'green' when ready
-
-// Canary with Istio (traffic splitting):
-// apiVersion: networking.istio.io/v1beta1
-// kind: VirtualService
-// spec:
-//   hosts:
-//   - order-service
-//   http:
-//   - match:
-//     - headers:
-//         x-canary:
-//           exact: "true"
-//     route:
-//     - destination:
-//         host: order-service
-//         subset: v2
-//   - route:
-//     - destination:
-//         host: order-service
-//         subset: v1
-//       weight: 95
-//     - destination:
-//         host: order-service
-//         subset: v2
-//       weight: 5
-
-// Feature flag for gradual rollout within a version:
-@Service
-class FeatureFlaggedService {
-    private final FeatureFlagService featureFlags;
-
-    public String processOrder(String orderId) {
-        if (featureFlags.isEnabled("new-pricing-engine")) {
-            return useNewPricingEngine(orderId);
-        }
-        return useLegacyPricingEngine(orderId);
-    }
-}
-```
-
-### Q29: How do you implement distributed caching in microservices?
-
-**Answer:** Distributed caching in microservices uses a shared cache layer (Redis) that multiple services access. Cache-aside, read-through, write-through, and write-behind are common patterns. Spring Boot uses `@Cacheable`, `@CachePut`, `@CacheEvict` with Redis, Hazelcast, or Caffeine. The cache should be used for read-heavy, slowly-changing data. Cache invalidation is the hardest problem â€” use TTLs, event-driven invalidation, or write-through.
-
-```java
-import org.springframework.cache.annotation.Cacheable;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
-import org.springframework.cache.annotation.Caching;
-import org.springframework.stereotype.Service;
-
-@Service
-class ProductCachingService {
-
-    @Cacheable(value = "products", key = "#productId", unless = "#result == null")
-    public Product getProduct(String productId) {
-        // Expensive database or external API call
-        return productRepository.findById(productId)
-            .orElse(null);
-    }
-
-    @CachePut(value = "products", key = "#product.id")
-    public Product updateProduct(Product product) {
-        return productRepository.save(product);
-    }
-
-    @CacheEvict(value = "products", key = "#productId")
-    public void deleteProduct(String productId) {
-        productRepository.deleteById(productId);
-    }
-
-    @Caching(evict = {
-        @CacheEvict(value = "products", key = "#productId"),
-        @CacheEvict(value = "productSummaries", key = "#category")
-    })
-    public void deleteProductWithCacheEviction(String productId, String category) {
-        productRepository.deleteById(productId);
-    }
-
-    @Cacheable(value = "productSummaries", key = "#category")
-    public List<ProductSummary> getProductSummaries(String category) {
-        return productRepository.findSummariesByCategory(category);
-    }
-}
-
-import org.springframework.cache.annotation.EnableCaching;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.data.redis.cache.RedisCacheConfiguration;
-import org.springframework.data.redis.cache.RedisCacheManager;
-import org.springframework.data.redis.connection.RedisConnectionFactory;
-import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
-import org.springframework.data.redis.serializer.RedisSerializationContext;
-import java.time.Duration;
-
+// â”€â”€ Redis configuration for distributed caching â”€â”€
 @Configuration
 @EnableCaching
-class CacheConfig {
-
+public class CacheConfig {
     @Bean
-    public RedisCacheManager cacheManager(RedisConnectionFactory connectionFactory) {
-        RedisCacheConfiguration config = RedisCacheConfiguration.defaultCacheConfig()
-            .entryTtl(Duration.ofMinutes(30))
+    public RedisCacheConfiguration cacheConfiguration() {
+        return RedisCacheConfiguration.defaultCacheConfig()
+            .entryTtl(Duration.ofMinutes(10))
             .disableCachingNullValues()
+            .serializeKeysWith(
+                RedisSerializationContext.SerializationPair
+                    .fromSerializer(new StringRedisSerializer()))
             .serializeValuesWith(
                 RedisSerializationContext.SerializationPair
                     .fromSerializer(new GenericJackson2JsonRedisSerializer()));
+    }
 
-        return RedisCacheManager.builder(connectionFactory)
-            .cacheDefaults(config)
-            .withCacheConfiguration("products", RedisCacheConfiguration
-                .defaultCacheConfig().entryTtl(Duration.ofMinutes(60)))
-            .withCacheConfiguration("productSummaries", RedisCacheConfiguration
-                .defaultCacheConfig().entryTtl(Duration.ofMinutes(10)))
-            .withCacheConfiguration("userSessions", RedisCacheConfiguration
-                .defaultCacheConfig().entryTtl(Duration.ofHours(24)))
-            .build();
+    @Bean
+    public RedisTemplate<String, Object> redisTemplate(
+            RedisConnectionFactory factory) {
+        RedisTemplate<String, Object> template = new RedisTemplate<>();
+        template.setConnectionFactory(factory);
+        template.setKeySerializer(new StringRedisSerializer());
+        template.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+        template.setHashKeySerializer(new StringRedisSerializer());
+        template.setHashValueSerializer(new GenericJackson2JsonRedisSerializer());
+        return template;
     }
 }
 
-import org.springframework.data.redis.core.StringRedisTemplate;
-import java.util.concurrent.TimeUnit;
-
+// â”€â”€ Cache stampede prevention â”€â”€
 @Service
-class CacheAsideService {
-    private final StringRedisTemplate redisTemplate;
+public class ProductService {
+    // Without protection: 100 concurrent cache misses all hit the database
+    // With Redis lock: only one request hits the DB, others wait
 
-    public CacheAsideService(StringRedisTemplate redisTemplate) {
-        this.redisTemplate = redisTemplate;
-    }
+    public ProductDto getProductWithLock(Long id) {
+        String key = "product:" + id;
+        String lockKey = "lock:" + key;
 
-    public String getData(String key) {
-        // Cache-aside pattern
-        String cached = redisTemplate.opsForValue().get(key);
-        if (cached != null) return cached;
+        // Fast path: try cache
+        ProductDto cached = redis.opsForValue().get(key);
+        if (cached != null) {
+            return cached;
+        }
 
-        String data = loadFromDatabase(key);
-        redisTemplate.opsForValue().set(key, data, 5, TimeUnit.MINUTES);
-        return data;
-    }
+        // Acquire distributed lock
+        Boolean locked = redis.opsForValue()
+            .setIfAbsent(lockKey, "locked", Duration.ofSeconds(5));
+        if (Boolean.TRUE.equals(locked)) {
+            try {
+                // Double-check cache (another thread may have populated it)
+                ProductDto again = redis.opsForValue().get(key);
+                if (again != null) {
+                    return again;
+                }
 
-    public void invalidate(String key) {
-        redisTemplate.delete(key);
-    }
+                // Load from database
+                Product product = productRepo.findById(id).orElseThrow();
+                ProductDto dto = ProductDto.from(product);
+                redis.opsForValue().set(key, dto, CACHE_TTL);
+                return dto;
+            } finally {
+                redis.delete(lockKey);
+            }
+        }
 
-    private String loadFromDatabase(String key) {
-        return "data-for-" + key;
+        // Lock not acquired â€” wait briefly and retry
+        Thread.sleep(100);
+        return redis.opsForValue().get(key);  // Should be populated by now
     }
 }
 
-// Event-driven cache invalidation
-@Service
-class CacheInvalidationConsumer {
-    private final ProductCachingService cacheService;
+// â”€â”€ Cache strategy comparison â”€â”€
+// 1. Cache-aside (lazy): Most common. Cache miss = DB hit + cache populate.
+//    Pros: Simple, resilient (cache loss just means slower reads).
+//    Cons: Cache stampede on first request.
 
-    @KafkaListener(topics = "product.updated", groupId = "cache-service")
-    public void onProductUpdated(ProductUpdatedEvent event) {
-        cacheService.deleteProduct(event.productId());
-    }
-}
+// 2. Write-through: Every write updates both DB and cache.
+//    Pros: Cache always consistent with DB. Never stale reads.
+//    Cons: Slower writes. Wasted cache writes for infrequently read data.
 
-record Product(String id, String name, BigDecimal price) {}
-record ProductSummary(String id, String name) {}
-interface ProductRepository {
-    java.util.Optional<Product> findById(String id);
-    Product save(Product product);
-    void deleteById(String id);
-    List<ProductSummary> findSummariesByCategory(String category);
-}
-record ProductUpdatedEvent(String productId) {}
+// 3. Write-behind (write-back): Write to cache, async flush to DB.
+//    Pros: Fastest writes. Can batch DB updates.
+//    Cons: Data loss if cache goes down before flush. Complex.
+
+// 4. Cache-aside + TTL + invalidation: The sweet spot.
+//    Populate on read. Invalidate on write. TTL ensures eventual consistency.
 ```
 
-### Q30: What are the most common pitfalls when adopting microservices and how do you avoid them?
-
-**Answer:** Common pitfalls include: wrong service boundaries (splitting by technical layers instead of business domains), shared databases (tight coupling), synchronous communication chains (cascading failures), ignoring data consistency, distributed monolith (services deployed together despite being separate), premature splitting, under-investing in observability, and not automating CI/CD. Avoid these by using DDD for boundaries, database-per-service, async communication where possible, sagas for consistency, and investing in CI/CD and observability from day one.
-
-```java
-// Pitfall 1: Wrong boundaries â€” splitting by layers instead of domains
-
-// BAD: Technical layer services
-// http://user-service/api/users/1  (frontend calls this)
-// http://user-service/api/users/1/orders  (also in user service â€” why?)
-
-// GOOD: Domain-oriented services
-// http://customer-service/api/customers/1
-// http://order-service/api/orders?customerId=1
-
-// Pitfall 2: Synchronous communication chains
-
-// BAD: Service A calls B which calls C which calls D (chain increases latency)
-@Service
-class BadOrderService {
-    public OrderResponse getOrderDetails(String orderId) {
-        // This service calls payment which calls fraud which calls notification
-        // If notification is slow, ALL are blocked
-        return null;
-    }
-}
-
-// GOOD: Use async for non-critical paths
-@Service
-class GoodOrderService {
-    public OrderResponse getOrderDetails(String orderId) {
-        Order order = orderRepository.findById(orderId);
-        // Return response immediately â€” send notification async
-        eventPublisher.publish(new OrderViewedEvent(orderId));
-        return mapToResponse(order);
-    }
-
-    private OrderResponse mapToResponse(Order order) {
-        return new OrderResponse(order.getId().toString(), order.getStatus().name());
-    }
-}
-
-// Pitfall 3: Not isolating failures
-
-// BAD: No circuit breaker â€” one failure cascades
-@Service
-class FragileService {
-    public Data callMultipleServices() {
-        Data data1 = restTemplate.getForObject("http://service-a/data", Data.class);
-        Data data2 = restTemplate.getForObject("http://service-b/data", Data.class);
-        return combine(data1, data2);
-    }
-}
-
-// GOOD: Independent calls with timeouts and fallbacks
-@Service
-class ResilientService {
-    public Data callMultipleServices() {
-        CompletableFuture<Data> futureA = CompletableFuture
-            .supplyAsync(() -> {
-                try { return restTemplate.getForObject(
-                    "http://service-a/data", Data.class); }
-                catch (Exception e) { return new Data("default-a"); }
-            })
-            .orTimeout(2, TimeUnit.SECONDS)
-            .exceptionally(e -> new Data("default-a"));
-
-        CompletableFuture<Data> futureB = CompletableFuture
-            .supplyAsync(() -> {
-                try { return restTemplate.getForObject(
-                    "http://service-b/data", Data.class); }
-                catch (Exception e) { return new Data("default-b"); }
-            })
-            .orTimeout(2, TimeUnit.SECONDS)
-            .exceptionally(e -> new Data("default-b"));
-
-        return combine(futureA.join(), futureB.join());
-    }
-
-    private Data combine(Data a, Data b) {
-        return new Data(a.value() + " & " + b.value());
-    }
-}
-
-record Data(String value) {}
-
-// Pitfall 4: Skipping contract testing
-
-// BAD: No contract tests â€” breaking changes go unnoticed until deployment
-// GOOD: Consumer-driven contract tests catch API breaks early
-// (See Q25 for contract test examples)
-
-// Pitfall 5: Manual deployments â€” leads to errors and slow releases
-//
-// GOOD: Fully automated CI/CD pipeline:
-// 1. Run unit + integration + contract tests
-// 2. Build container image
-// 3. Push to registry
-// 4. Deploy to staging and run smoke tests
-// 5. Gradual rollout to production (canary)
-// 6. Monitor metrics and rollback if needed
-
-// Pitfall 6: No observability from the start
-//
-// BAD: "We'll add monitoring later"
-// GOOD: Structured logging, metrics, and distributed tracing from day one
-//
-// Each service must contribute:
-// - JSON-structured logs with trace IDs
-// - Request rate, error rate, and latency metrics
-// - Span exports to distributed tracing backend
-// - Health check endpoints for liveness and readiness
-
-// === Quick Reference: Microservices Checklist ===
-
-class MicroservicesChecklist {
-    /*
-    [x] Service boundaries follow bounded contexts (DDD)
-    [x] Database-per-service (no shared databases)
-    [x] Async communication for events, sync for queries
-    [x] Saga pattern for multi-service transactions
-    [x] Circuit breakers and bulkheads for resilience
-    [x] API gateway for cross-cutting concerns
-    [x] Service discovery (Eureka or Kubernetes DNS)
-    [x] Centralized configuration (Config Server or ConfigMaps)
-    [x] Distributed tracing (Micrometer Tracing + OpenTelemetry)
-    [x] Structured logging (JSON with trace IDs)
-    [x] Health probes (liveness + readiness)
-    [x] Consumer-driven contract tests
-    [x] Fully automated CI/CD pipeline
-    [x] Blue-green or canary deployment strategy
-    [x] Rate limiting at API gateway
-    [x] Service-to-service authentication (mTLS or JWT)
-    [x] Graceful shutdown and disposability
-    [x] Stateless processes (scale horizontally)
-    [x] Feature flags for gradual rollout
-    [x] Chaos engineering for resilience validation
-    */
-}
-```
-
-That covers 30 essential microservices interview questions with complete Java and Spring Boot code examples. The chapter spans service decomposition bounded contexts, database-per-service, sync vs async communication, choreography and orchestration sagas, Eureka service discovery, Spring Cloud Gateway, Resilience4j circuit breakers with retry and rate limiting, Micrometer Tracing with OpenTelemetry, Spring Cloud Config with encryption and Vault integration, the 12-factor app methodology, health probes with readiness/liveness, observability with metrics and structured logging, client-side vs server-side discovery, RabbitMQ/Kafka/SQS messaging, event-driven architecture with the outbox pattern, CQRS with separate read/write models, service-to-service authentication, strangler fig pattern, API gateway vs Kubernetes Ingress, CI/CD with contract testing and canary deployments, API gateway patterns, service mesh concepts, caching strategies, blue-green and canary releases, and common microservices pitfalls.
-
+Use cache-aside with TTL for most services. Never cache sensitive data (PII, financial details) without explicit TTL and encryption. Always consider the cache-to-DB consistency window and whether stale data is acceptable for the use case.

@@ -1,4 +1,4 @@
-/* MONOCHROME THEME v6 — Warm Paper + Black Ink (raushan666java.github.io) */
+/* MONOCHROME THEME v7 — Pure Black & White (raushan666java.github.io) */
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
@@ -8,24 +8,24 @@
   --font-body: 'Source Serif 4', 'Source Serif Pro', 'Iowan Old Style', Georgia, serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'Consolas', monospace;
 
-  --bg: #fafaf5;
-  --bg-surface: #f3f1e8;
-  --bg-surface-hover: #ece9dc;
-  --ink: #1a1a1a;
-  --ink-soft: #4a4a4a;
-  --ink-mute: #7a7a78;
-  --rule: #1a1a1a;
-  --rule-soft: rgba(26, 26, 26, 0.16);
-  --paper-rule: rgba(26, 26, 26, 0.08);
-  --code-bg: #ece9dc;
+  --bg: #ffffff;
+  --bg-surface: #f5f5f5;
+  --bg-surface-hover: #e8e8e8;
+  --ink: #000000;
+  --ink-soft: #444444;
+  --ink-mute: #777777;
+  --rule: #000000;
+  --rule-soft: rgba(0, 0, 0, 0.12);
+  --paper-rule: rgba(0, 0, 0, 0.06);
+  --code-bg: #e8e8e8;
   --shadow-hard: 3px 3px 0 var(--ink);
   --shadow-hard-lg: 5px 5px 0 var(--ink);
   --shadow-soft: 0 1px 3px rgba(0,0,0,0.06);
-  --md-primary-fg-color: #1a1a1a;
-  --md-default-fg-color--light: #4a4a4a;
-  --status-complete: #1a1a1a;
-  --status-in-progress: #1a1a1a;
-  --status-planned: #bbb9ae;
+  --md-primary-fg-color: #000000;
+  --md-default-fg-color--light: #444444;
+  --status-complete: #000000;
+  --status-in-progress: #000000;
+  --status-planned: #bbbbbb;
 }
 
 /* === DARK === */
@@ -34,22 +34,22 @@
   --font-body: 'Source Serif 4', 'Source Serif Pro', 'Iowan Old Style', Georgia, serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'Consolas', monospace;
 
-  --bg: #121212;
-  --bg-surface: #1e1e1e;
-  --bg-surface-hover: #2a2a2a;
-  --ink: #e8e6e0;
-  --ink-soft: #a8a69e;
-  --ink-mute: #6e6c66;
-  --rule: #e8e6e0;
-  --rule-soft: rgba(232, 230, 224, 0.12);
-  --paper-rule: rgba(232, 230, 224, 0.04);
+  --bg: #000000;
+  --bg-surface: #111111;
+  --bg-surface-hover: #1a1a1a;
+  --ink: #ffffff;
+  --ink-soft: #aaaaaa;
+  --ink-mute: #666666;
+  --rule: #ffffff;
+  --rule-soft: rgba(255, 255, 255, 0.10);
+  --paper-rule: rgba(255, 255, 255, 0.04);
   --code-bg: #1a1a1a;
   --shadow-hard: 3px 3px 0 var(--rule);
   --shadow-hard-lg: 5px 5px 0 var(--rule);
   --shadow-soft: 0 1px 3px rgba(0,0,0,0.3);
-  --status-complete: #e8e6e0;
-  --status-in-progress: #e8e6e0;
-  --status-planned: #3a3a3a;
+  --status-complete: #ffffff;
+  --status-in-progress: #ffffff;
+  --status-planned: #333333;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -79,10 +79,48 @@ body {
 }
 
 [data-md-color-scheme="slate"] .md-header {
-  background: var(--bg-surface) !important;
-  color: var(--ink) !important;
+  background: #000000 !important;
+  color: #ffffff !important;
   box-shadow: none !important;
-  border-bottom: 1px solid var(--rule-soft) !important;
+  border-bottom: 1px solid #333333 !important;
+}
+
+/* === HIRE BANNER === */
+.md-header__contact-banner {
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: 6px 16px;
+  border-bottom: 2px solid #000000;
+}
+
+[data-md-color-scheme="slate"] .md-header__contact-banner {
+  background: #000000;
+  color: #ffffff;
+  border-bottom: 1px solid #333333;
+}
+
+.md-header__contact-banner a {
+  color: inherit !important;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+.md-header__contact-banner a:hover {
+  text-decoration: none;
+}
+
+.md-header__contact-sep {
+  margin: 0 6px;
+  opacity: 0.5;
+}
+
+.md-header__contact-location {
+  opacity: 0.6;
 }
 
 .md-header__inner {

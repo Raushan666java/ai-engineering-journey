@@ -2,6 +2,7 @@
 hide:
   - navigation
   - toc
+description: "Raushan Kumar — AI Engineering Journey. Laravel developer transitioning to AI Engineering. 500+ lessons: LLMs, RAG, Agents, MCP, Transformer, GATE CS, placement prep, Java, system design."
 ---
 
 <div class="homepage-hero">

@@ -1,6 +1,7 @@
 ---
 hide:
   - toc
+description: "Raushan Kumar — Resume. AI Automation Engineer transitioning from Laravel full-stack development. Python, FastAPI, RAG, LangGraph, MCP, Agent Systems. Open to Dubai / Remote from July 2026."
 ---
 
 <div class="resume-header">

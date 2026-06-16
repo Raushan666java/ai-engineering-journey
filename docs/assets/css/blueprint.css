@@ -85,44 +85,6 @@ body {
   border-bottom: 1px solid #333333 !important;
 }
 
-/* === HIRE BANNER === */
-.md-header__contact-banner {
-  background: #ffffff;
-  color: #000000;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.04em;
-  text-align: center;
-  padding: 6px 16px;
-  border-bottom: 2px solid #000000;
-}
-
-[data-md-color-scheme="slate"] .md-header__contact-banner {
-  background: #000000;
-  color: #ffffff;
-  border-bottom: 1px solid #333333;
-}
-
-.md-header__contact-banner a {
-  color: inherit !important;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 1px;
-}
-
-.md-header__contact-banner a:hover {
-  text-decoration: none;
-}
-
-.md-header__contact-sep {
-  margin: 0 6px;
-  opacity: 0.5;
-}
-
-.md-header__contact-location {
-  opacity: 0.6;
-}
-
 .md-header__inner {
   max-width: 1200px;
   margin: 0 auto;

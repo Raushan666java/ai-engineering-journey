@@ -5,16 +5,6 @@
   {% set class = class ~ " md-header--shadow" %}
 {% endif %}
 <header class="{{ class }}" data-md-component="header">
-  <div class="md-header__contact-banner">
-    <span>Available for hire —</span> Raushan Kumar, AI Automation Engineer
-    <a href="https://www.linkedin.com/in/raushan666java/" target="_blank" rel="noopener">LinkedIn</a>
-    <span class="md-header__contact-sep">·</span>
-    <a href="mailto:er.raushan.kr@outlook.com">Email</a>
-    <span class="md-header__contact-sep">·</span>
-    <a href="https://github.com/Raushan666java" target="_blank" rel="noopener">GitHub</a>
-    <span class="md-header__contact-sep">·</span>
-    <span class="md-header__contact-location">Dubai / Remote</span>
-  </div>
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
     <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
       {% include "partials/logo.html" %}

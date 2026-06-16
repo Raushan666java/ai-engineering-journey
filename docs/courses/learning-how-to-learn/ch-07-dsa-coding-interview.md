@@ -52,6 +52,24 @@ The 3-pass method is a structured approach to solving any unfamiliar DSA problem
 - Test edge cases explicitly: send empty, null, single element
 - If there's a bug, explain what went wrong, fix it, and move on — do not spiral
 
+```mermaid
+flowchart LR
+    A[Pass 1: Understand] --> B[Restate Problem]
+    B --> C[Identify I/O]
+    C --> D[Ask Clarifying Questions]
+    D --> E[Pass 2: Plan & Solve]
+    E --> F[Brute Force First]
+    F --> G[Optimize]
+    G --> H[Pseudocode]
+    H --> I[Pass 3: Implement & Test]
+    I --> J[Write Clean Code]
+    J --> K[Walk Through Test Cases]
+    K --> L{Edge Cases?}
+    L -->|Yes| M[Fix & Retest]
+    M --> K
+    L -->|No| N[Done ✅]
+```
+
 Why it works:
 
 ```java
@@ -279,6 +297,24 @@ Ask: "What is the answer for the smallest input?"
 Ask: "Do I solve bottom-up (table) or top-down (memoization)?"
 - Bottom-up: iterate from small to large
 - Top-down: recursive with memoization cache
+
+```mermaid
+flowchart TD
+    A[Identify DP Problem] --> B{Optimal Substructure?}
+    B -->|No| C[Not DP - Use Another Approach]
+    B -->|Yes| D[Define State: dp[i], dp[i][j], etc.]
+    D --> E[Find Recurrence Relation]
+    E --> F[Identify Base Cases]
+    F --> G{How Many States?}
+    G -->|1D| H[Use Array / Two Variables]
+    G -->|2D| I[Use 2D Matrix]
+    H --> J{Optimization Possible?}
+    I --> J
+    J -->|Yes| K[Apply Space Optimization]
+    J -->|No| L[Implement Memoization or Tabulation]
+    K --> L
+    L --> M[Test on Examples & Edge Cases]
+```
 
 ```java
 // Step 1: Identify DP
@@ -1331,6 +1367,23 @@ Before you hit "submit" or "I'm done":
 | Formatting | Is the code consistently indented and readable? |
 
 **Try This:** Do a full mock interview with a friend or by recording yourself. Use a LeetCode Medium you haven't seen. Set a 45-minute timer. Follow all five phases. Afterward, review the recording and identify one thing to improve for next time.
+
+```mermaid
+flowchart TD
+    A[Receive Problem] --> B[Repeat Problem Back]
+    B --> C[Clarify Constraints]
+    C --> D[Give Example I/O]
+    D --> E[Brainstorm Approaches]
+    E --> F[Discuss Trade-offs]
+    F --> G[Get Buy-in to Code]
+    G --> H[Write Clean Code with Comments]
+    H --> I[Walk Through Test Cases Manually]
+    I --> J[Discuss Edge Cases & Fix]
+    J --> K[Optimize Further?]
+    K -->|Yes| H
+    K -->|No| L[Answer Follow-up Questions]
+    L --> M[Ask Your Questions]
+```
 
 ---
 

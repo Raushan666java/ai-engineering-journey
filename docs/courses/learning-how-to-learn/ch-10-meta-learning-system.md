@@ -320,6 +320,26 @@ Examples:
 - "After I close my lunch break, I will solve one DSA problem for 15 minutes."
 - "After I brush my teeth at night, I will read one section of a chapter for 10 minutes."
 
+```mermaid
+flowchart TD
+    A[Atomic Habits 4 Laws for Learning] --> B[Law 1: Make It Obvious]
+    B --> B1[Stack: After coffee → Study]
+    B1 --> B2[Environment: Desk ready]
+    
+    A --> C[Law 2: Make It Attractive]
+    C --> C1[Temptation Bundle: Study + Podcast]
+    C1 --> C2[Community Accountability]
+    
+    A --> D[Law 3: Make It Easy]
+    D --> D1[2-Minute Rule: Open IDE]
+    D1 --> D2[Reduce Friction: Remove distractions]
+    
+    A --> E[Law 4: Make It Satisfying]
+    E --> E1[Track Streaks ✓]
+    E1 --> E2[Reward After Session]
+    E2 --> E3[Visual Progress]
+```
+
 **Java streak tracker:**
 
 ```java
@@ -557,6 +577,24 @@ EF is never allowed below 1.3.
 Interval₁ = 1 day
 Interval₂ = 6 days
 Intervalₙ = Intervalₙ₋₁ × EF
+```
+
+```mermaid
+flowchart TD
+    A[Review Card] --> B[Rate Quality q: 0-5]
+    B --> C{q < 3?}
+    C -->|Yes| D[Reset: n=0, interval=1 day]
+    C -->|No| E{n=0?}
+    E -->|Yes| F[interval=1 day]
+    E -->|No| G{n=1?}
+    G -->|Yes| H[interval=6 days]
+    G -->|No| I[interval = interval * EF]
+    D --> J[Update EF]
+    F --> J
+    H --> J
+    I --> J
+    J --> K[n = n+1]
+    K --> L[Schedule Next Review]
 ```
 
 **Java implementation of SM-2:**
@@ -1268,6 +1306,14 @@ Over 5 years: 5 months of full-time learning
 Over 10 years: 10 months of full-time learning
 ```
 
+```mermaid
+xychart-beta
+    title "Compound Effect of 1 Hour Daily Learning"
+    x-axis ["Day 1", "Day 30", "Day 60", "Day 90", "Day 180", "Day 365"]
+    y-axis "Knowledge Units" 0 --> 400
+    line [1, 4, 10, 20, 60, 200]
+```
+
 **Java compound interest calculator for learning:**
 
 ```java
@@ -1371,6 +1417,20 @@ LOOP 4: Metrics Dashboard (weeks)
 └── Action: Up → increase difficulty; Flat → change approach; Down → diagnose plateau
 ```
 
+```mermaid
+flowchart TD
+    A[Learn Concept] --> B[Apply in Project]
+    B --> C[Get Feedback]
+    C --> D{Effective?}
+    D -->|Yes| E[Reinforce & Deepen]
+    D -->|No| F[Identify Gap]
+    F --> G[Adjust Approach]
+    G --> A
+    E --> H[Teach Others]
+    H --> I[Identify Gaps Through Teaching]
+    I --> F
+```
+
 **Closing the loop — Java feedback system:**
 
 ```java
@@ -1455,6 +1515,15 @@ public class FeedbackLoopSystem {
 **Answer:** An annual learning review is your learning system's system — it reviews the reviews, measures the measurements, and plans the plans. It's the meta-meta-learning layer: learning about how you learned this year.
 
 **Year-in-review structure:**
+
+```mermaid
+timeline
+    title Annual Learning Review Cycle
+    Q1 : Set Learning Goals : Choose 3 Focus Areas : Set Success Metrics
+    Q2 : Execute & Track : Monthly Check-ins : Adjust Course
+    Q3 : Deep Dive : Identify Plateaus : Push Through
+    Q4 : Review & Reflect : Annual Portfolio : Plan Next Year
+```
 
 ```markdown
 # Annual Learning Review — [YEAR]

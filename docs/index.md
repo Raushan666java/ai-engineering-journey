@@ -28,6 +28,160 @@ I run <a href="https://apexpillar.tech">ApexPillar Technologies</a>, a Patna-bas
 
 ---
 
+<div class="start-here-banner">
+<div class="start-here-content">
+<h2>🎯 New to AI Engineering?</h2>
+<p>Start with Phase 0 — it's designed for beginners. No math, no theory, just getting your tools ready.</p>
+<a href="ai-engineering-from-scratch/phases/00-setup-and-tooling/" class="start-here-btn">Start Here → Phase 0: Setup &amp; Tooling</a>
+</div>
+</div>
+
+---
+
+## 🗺️ 20-Phase Curriculum Roadmap
+
+<div class="roadmap-tiers">
+
+<div class="roadmap-tier">
+<div class="tier-header tier-foundation">
+<span class="tier-badge">Foundation</span>
+<span class="tier-count">Phases 0–3 · 65 lessons</span>
+</div>
+<div class="roadmap-row">
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/00-setup-and-tooling/'">
+<div class="phase-num" style="--phase-clr: #3553ff;">00</div>
+<div class="phase-info"><strong>Setup &amp; Tooling</strong><span>Dev env, Git, Docker, Jupyter, Linux</span></div>
+<div class="phase-lessons">12</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/01-math-foundations/'">
+<div class="phase-num" style="--phase-clr: #3553ff;">01</div>
+<div class="phase-info"><strong>Math Foundations</strong><span>Linear algebra, calculus, probability, optimization</span></div>
+<div class="phase-lessons">22</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/02-ml-fundamentals/'">
+<div class="phase-num" style="--phase-clr: #3553ff;">02</div>
+<div class="phase-info"><strong>ML Fundamentals</strong><span>Regression, trees, SVMs, ensembles, pipelines</span></div>
+<div class="phase-lessons">18</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/03-deep-learning-core/'">
+<div class="phase-num" style="--phase-clr: #3553ff;">03</div>
+<div class="phase-info"><strong>Deep Learning Core</strong><span>Backprop, optimizers, PyTorch, JAX</span></div>
+<div class="phase-lessons">13</div>
+</div>
+</div>
+</div>
+
+<div class="roadmap-tier">
+<div class="tier-header tier-core">
+<span class="tier-badge">Core AI</span>
+<span class="tier-count">Phases 4–7 · 90 lessons</span>
+</div>
+<div class="roadmap-row">
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/04-computer-vision/'">
+<div class="phase-num" style="--phase-clr: #00d4aa;">04</div>
+<div class="phase-info"><strong>Computer Vision</strong><span>CNNs, YOLO, Stable Diffusion, ViTs</span></div>
+<div class="phase-lessons">28</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/05-nlp-foundations-to-advanced/'">
+<div class="phase-num" style="--phase-clr: #00d4aa;">05</div>
+<div class="phase-info"><strong>NLP Foundations</strong><span>Embeddings, seq2seq, attention, chunking, RAG</span></div>
+<div class="phase-lessons">29</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/06-speech-and-audio/'">
+<div class="phase-num" style="--phase-clr: #00d4aa;">06</div>
+<div class="phase-info"><strong>Speech &amp; Audio</strong><span>ASR, Whisper, TTS, voice cloning, streaming</span></div>
+<div class="phase-lessons">17</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/07-transformers-deep-dive/'">
+<div class="phase-num" style="--phase-clr: #00d4aa;">07</div>
+<div class="phase-info"><strong>Transformers Deep Dive</strong><span>Self-attention, BERT, GPT, MoE, KV cache</span></div>
+<div class="phase-lessons">16</div>
+</div>
+</div>
+</div>
+
+<div class="roadmap-tier">
+<div class="tier-header tier-advanced">
+<span class="tier-badge">Advanced</span>
+<span class="tier-count">Phases 8–12 · 90+ lessons</span>
+</div>
+<div class="roadmap-row">
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/08-generative-ai/'">
+<div class="phase-num" style="--phase-clr: #ff8a00;">08</div>
+<div class="phase-info"><strong>Generative AI</strong><span>GANs, diffusion, ControlNet, video generation</span></div>
+<div class="phase-lessons">14</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/09-reinforcement-learning/'">
+<div class="phase-num" style="--phase-clr: #ff8a00;">09</div>
+<div class="phase-info"><strong>Reinforcement Learning</strong><span>DQN, PPO, RLHF, multi-agent RL</span></div>
+<div class="phase-lessons">12</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/10-llms-from-scratch/'">
+<div class="phase-num" style="--phase-clr: #ff8a00;">10</div>
+<div class="phase-info"><strong>LLMs From Scratch</strong><span>Tokenizers, pretraining, SFT, DPO, quantization</span></div>
+<div class="phase-lessons">22</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/11-llm-engineering/'">
+<div class="phase-num" style="--phase-clr: #ff8a00;">11</div>
+<div class="phase-info"><strong>LLM Engineering</strong><span>RAG, function calling, guardrails, MCP</span></div>
+<div class="phase-lessons">17</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/12-multimodal-ai/'">
+<div class="phase-num" style="--phase-clr: #ff8a00;">12</div>
+<div class="phase-info"><strong>Multimodal AI</strong><span>CLIP, LLaVA, VLM, omni models, agents</span></div>
+<div class="phase-lessons">25</div>
+</div>
+</div>
+</div>
+
+<div class="roadmap-tier">
+<div class="tier-header tier-expert">
+<span class="tier-badge">Expert</span>
+<span class="tier-count">Phases 13–19 · 260+ lessons</span>
+</div>
+<div class="roadmap-row">
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/13-tools-and-protocols/'">
+<div class="phase-num" style="--phase-clr: #a855f7;">13</div>
+<div class="phase-info"><strong>Tools &amp; Protocols</strong><span>MCP, A2A, OpenTelemetry, routing</span></div>
+<div class="phase-lessons">23</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/14-agent-engineering/'">
+<div class="phase-num" style="--phase-clr: #a855f7;">14</div>
+<div class="phase-info"><strong>Agent Engineering</strong><span>Agent loop, memory, LangGraph, CrewAI, eval</span></div>
+<div class="phase-lessons">42</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/15-autonomous-systems/'">
+<div class="phase-num" style="--phase-clr: #a855f7;">15</div>
+<div class="phase-info"><strong>Autonomous Systems</strong><span>Self-improvement, coding agents, browser agents</span></div>
+<div class="phase-lessons">22</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/16-multi-agent-and-swarms/'">
+<div class="phase-num" style="--phase-clr: #a855f7;">16</div>
+<div class="phase-info"><strong>Multi-Agent &amp; Swarms</strong><span>Orchestrator, debate, A2A, MARL</span></div>
+<div class="phase-lessons">25</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/17-infrastructure-and-production/'">
+<div class="phase-num" style="--phase-clr: #a855f7;">17</div>
+<div class="phase-info"><strong>Infrastructure &amp; Production</strong><span>vLLM, SGLang, K8s, observability, FinOps</span></div>
+<div class="phase-lessons">28</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/18-ethics-safety-alignment/'">
+<div class="phase-num" style="--phase-clr: #a855f7;">18</div>
+<div class="phase-info"><strong>Ethics, Safety &amp; Alignment</strong><span>DPO, red-teaming, jailbreaks, watermarking</span></div>
+<div class="phase-lessons">30</div>
+</div>
+<div class="phase-card" onclick="location.href='ai-engineering-from-scratch/phases/19-capstone-projects/'">
+<div class="phase-num" style="--phase-clr: #a855f7;">19</div>
+<div class="phase-info"><strong>Capstone Projects</strong><span>RAG chatbot, voice assistant, coding agent, VLM</span></div>
+<div class="phase-lessons">87</div>
+</div>
+</div>
+</div>
+
+</div>
+
+---
+
 ## What I'm Building
 
 <div class="project-grid">
@@ -132,31 +286,3 @@ This site has **500+ lessons across 20 phases**, plus **fully written bonus cour
 - **GitHub:** [github.com/Raushan666java](https://github.com/Raushan666java)
 - **ApexPillar:** [apexpillar.tech](https://apexpillar.tech)
 
-<style>
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
-  margin: 24px 0;
-}
-.project-card {
-  background: var(--md-default-fg-color--lightest);
-  border: 1px solid var(--md-default-fg-color--lightest);
-  border-radius: 8px;
-  padding: 20px 24px;
-}
-.project-card h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-}
-.project-card p {
-  font-size: 0.9rem;
-  line-height: 1.5;
-  margin-bottom: 12px;
-  color: var(--md-default-fg-color--light);
-}
-.project-card a {
-  font-size: 0.85rem;
-}
-</style>

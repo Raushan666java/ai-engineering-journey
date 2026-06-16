@@ -2,7 +2,7 @@
 
 > Create images, video, audio, 3D, and more.
 
-14 lessons, ~14 hours total. Each lesson ships: a 180-230 line doc, a runnable stdlib Python demo, a diagram, and a named skill for your agent.
+19 lessons, ~19 hours total. Each lesson ships: a 180-230 line doc, a runnable stdlib Python demo, a diagram, and a named skill for your agent.
 
 | # | Lesson | Time |
 |---|--------|------|
@@ -20,5 +20,10 @@
 | 12 | [3D Generation](12-3d-generation/) | ~45 min |
 | 13 | [Flow Matching & Rectified Flows](13-flow-matching-rectified-flows/) | ~45 min |
 | 14 | [Evaluation — FID, CLIP Score, Human Preference](14-evaluation-fid-clip-score/) | ~45 min |
+| 15 | [Consistency Models — LCM, SDXL Turbo, Rectified Flow](15-consistency-models-lcm-turbo/) | ~60 min |
+| 16 | [Personalization — DreamBooth, Textual Inversion, LoRA](16-personalization-dreambooth-lora/) | ~75 min |
+| 17 | [Video Generation Deep Dive — Sora, Genie, Streaming](17-video-generation-deep-dive/) | ~60 min |
+| 18 | [Generative AI Deployment — ONNX, TensorRT, CoreML, WebGPU](18-generative-ai-deployment/) | ~60 min |
+| 19 | [Visual Autoregressive Modeling (VAR)](19-visual-autoregressive-var/) | ~90 min |
 
 See [ROADMAP.md](../../ROADMAP.md) for the full cross-phase plan.

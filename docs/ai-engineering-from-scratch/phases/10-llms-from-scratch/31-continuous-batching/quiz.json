@@ -1,0 +1,74 @@
+[
+  {
+    "stage": "pre",
+    "question": "What is the fundamental waste in static batching for LLM inference?",
+    "options": [
+      "The GPU memory is exhausted by storing model weights",
+      "Every sequence in the batch waits for the longest sequence to finish, leaving the GPU underutilized",
+      "Attention computation is O(n^2) in sequence length",
+      "The KV cache is recomputed on every decode step"
+    ],
+    "correct": 1,
+    "explanation": "Static batching waits for every sequence in the batch to finish before returning results. Short sequences sit idle while the longest sequence continues generating, wasting GPU cycles on padding."
+  },
+  {
+    "stage": "check",
+    "question": "What data structure does vLLM's PagedAttention use to manage the KV cache?",
+    "options": [
+      "A linked list of token-wise KV entries",
+      "A fixed-size contiguous array per sequence",
+      "A logical-to-physical block table mapping fixed-size KV blocks",
+      "A hash table keyed by token ID"
+    ],
+    "correct": 2,
+    "explanation": "PagedAttention splits the KV cache into fixed-size blocks (typically 16 tokens each). Each sequence has a block table that maps logical block indices to non-contiguous physical block IDs, analogous to a virtual memory page table."
+  },
+  {
+    "stage": "check",
+    "question": "How does Sarathi's chunked prefill differ from vLLM's full prefill approach?",
+    "options": [
+      "Sarathi processes the entire prompt in one forward pass, while vLLM splits it into chunks",
+      "Sarathi divides a long prompt into decode-sized chunks that batch alongside decode sequences",
+      "Sarathi skips prefill entirely and only runs decode steps",
+      "Sarathi uses a separate GPU for prefill and another for decode"
+    ],
+    "correct": 1,
+    "explanation": "Sarathi splits each prompt into chunks (e.g., 512 tokens) sized so each chunk fits alongside decode sequences in the same batch. This prevents long prefill steps from blocking decode sequences, achieving stall-free batching."
+  },
+  {
+    "stage": "check",
+    "question": "When does vLLM preempt a running sequence?",
+    "options": [
+      "When the sequence reaches its maximum token limit",
+      "When the sequence emits an EOS token",
+      "When there is insufficient free KV cache memory to admit a new request",
+      "When the sequence's prompt is shorter than the batch average"
+    ],
+    "correct": 2,
+    "explanation": "vLLM preempts running sequences when a new request requests KV cache blocks but none are free. The preempted sequence's blocks are freed and it must be restarted from scratch. vLLM preempts the longest-running sequence first."
+  },
+  {
+    "stage": "post",
+    "question": "A batch of 8 sequences has decode lengths [128, 16, 256, 8, 512, 32, 64, 1024]. What is the idle fraction for static batching?",
+    "options": [
+      "0.50",
+      "0.75",
+      "0.85",
+      "0.62"
+    ],
+    "correct": 2,
+    "explanation": "Mean decode length = (128+16+256+8+512+32+64+1024)/8 = 2040/8 = 255. Max = 1024. Idle = 1 - (255/1024) = 1 - 0.249 = 0.751. So approximately 0.75."
+  },
+  {
+    "stage": "post",
+    "question": "A production inference server with continuous batching is already at 85% GPU utilization. What optimization should be applied next to further increase throughput?",
+    "options": [
+      "Increase the max batch size parameter further",
+      "Switch from vLLM to static batching",
+      "Apply speculative decoding or Flash Attention to reduce the work per token",
+      "Disable preemption to avoid restarted sequences"
+    ],
+    "correct": 2,
+    "explanation": "Once the GPU is fully utilized (all SMs busy), continuous batching cannot extract more throughput. The ceiling is raised by techniques that reduce work per token: speculative decoding generates multiple tokens per forward pass, and Flash Attention reduces memory bandwidth for attention."
+  }
+]

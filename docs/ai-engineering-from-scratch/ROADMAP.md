@@ -221,6 +221,10 @@ Total estimated time: ~314 hours, at your own pace.
 | 12 | 3D Generation | ✅ | ~45 min |
 | 13 | Flow Matching & Rectified Flows | ✅ | ~45 min |
 | 14 | Evaluation — FID, CLIP Score, Human Preference | ✅ | ~45 min |
+| 15 | Consistency Models — LCM, SDXL Turbo, Rectified Flow | ✅ | ~60 min |
+| 16 | Personalization — DreamBooth, Textual Inversion, LoRA | ✅ | ~75 min |
+| 17 | Video Generation Deep Dive — Sora, Genie, Streaming | ✅ | ~60 min |
+| 18 | Generative AI Deployment — ONNX, TensorRT, CoreML, WebGPU | ✅ | ~60 min |
 | 19 | Visual Autoregressive Modeling (VAR): Next-Scale Prediction | ✅ | ~90 min |
 
 ## Phase 9: Reinforcement Learning — ✅ (~13 hours)
@@ -266,7 +270,17 @@ Total estimated time: ~314 hours, at your own pace.
 | 20 | DeepSeek-V3 Architecture Walkthrough | ✅ | ~75 min |
 | 21 | Jamba — Hybrid SSM-Transformer | ✅ | ~60 min |
 | 22 | Async and Hogwild! Inference | ✅ | ~60 min |
+| 23 | Prefix Caching & RadixAttention | ✅ | ~60 min |
+| 24 | Structured Outputs & Constrained Decoding | ✅ | ~60 min |
 | 25 | Speculative Decoding and EAGLE | ✅ | ~75 min |
+| 26 | KV Cache Quantization — KIVI, W4A8, FP8 | ✅ | ~60 min |
+| 27 | Tensor Parallelism — Megatron-LM Column/Row Split | ✅ | ~60 min |
+| 28 | Pipeline Parallelism — GPipe, PipeDream, 1F1B | ✅ | ~60 min |
+| 29 | Expert Parallelism for Mixture-of-Experts | ✅ | ~60 min |
+| 30 | FlashAttention Deep Dive — FA1, FA2, FA3 | ✅ | ~75 min |
+| 31 | Continuous Batching — vLLM, Sarathi | ✅ | ~60 min |
+| 32 | Quantization-Aware Training for LLMs | ✅ | ~60 min |
+| 33 | Inference Serving — TensorRT-LLM, Triton | ✅ | ~60 min |
 | 34 | Gradient Checkpointing and Activation Recomputation | ✅ | ~70 min |
 
 ## Phase 11: LLM Engineering — ✅ (~17 hours)
@@ -540,6 +554,8 @@ Total estimated time: ~314 hours, at your own pace.
 | 15 | Constitutional Safety Harness + Red-Team Range | ✅ | ~25 hr |
 | 16 | GitHub Issue-to-PR Autonomous Agent | ✅ | ~30 hr |
 | 17 | Personal AI Tutor (Adaptive, Multimodal) | ✅ | ~30 hr |
+| 18 | Voice-Controlled Automation Agent | ✅ | ~6 hr |
+| 19 | End-to-End RAG Evaluation & Monitoring Platform | ✅ | ~6 hr |
 | 20 | Agent Harness Loop Contract | ✅ | ~90 min |
 | 21 | Tool Registry with Schema Validation | ✅ | ~90 min |
 | 22 | JSON-RPC 2.0 Over Newline-Delimited Stdio | ✅ | ~90 min |

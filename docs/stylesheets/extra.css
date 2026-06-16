@@ -1,0 +1,271 @@
+/* ── Visual identity: Raushan Kumar — AI Engineering ── */
+
+:root {
+  --ai-primary: #3553ff;
+  --ai-primary-dim: #2540cc;
+  --ai-accent: #00d4aa;
+  --ai-bg-subtle: #f0f2ff;
+  --ai-card-border: #dde1f0;
+}
+
+/* Announcement bar prominence */
+.md-banner {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%) !important;
+  border-bottom: 1px solid var(--ai-accent) !important;
+}
+
+.md-banner a:hover {
+  text-decoration: underline !important;
+}
+
+/* Hero section on homepage */
+.homepage-hero {
+  padding: 3rem 0 1.5rem;
+}
+
+.homepage-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+
+.homepage-hero .tagline {
+  font-size: 1.15rem;
+  color: var(--md-default-fg-color--light);
+  max-width: 640px;
+  margin-bottom: 1.5rem;
+}
+
+.homepage-hero .cta-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.homepage-hero .cta-row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.homepage-hero .cta-primary {
+  background: var(--ai-primary);
+  color: #fff !important;
+}
+
+.homepage-hero .cta-primary:hover {
+  background: var(--ai-primary-dim);
+  transform: translateY(-1px);
+}
+
+.homepage-hero .cta-secondary {
+  background: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color) !important;
+  border: 1px solid var(--ai-card-border);
+}
+
+.homepage-hero .cta-secondary:hover {
+  border-color: var(--ai-accent);
+  transform: translateY(-1px);
+}
+
+/* Project cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.project-card {
+  background: var(--md-default-fg-color--lightest);
+  border: 1px solid var(--ai-card-border);
+  border-radius: 10px;
+  padding: 22px 24px;
+  transition: all 0.15s ease;
+}
+
+.project-card:hover {
+  border-color: var(--ai-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 212, 170, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.project-card p {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  color: var(--md-default-fg-color--light);
+}
+
+.project-card a {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--ai-primary) !important;
+}
+
+/* Resume page */
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--ai-accent);
+}
+
+.resume-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.resume-header .resume-contact {
+  text-align: right;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 2px 3px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  background: var(--ai-bg-subtle);
+  border: 1px solid var(--ai-card-border);
+  color: var(--ai-primary);
+}
+
+.skill-badge.highlight {
+  background: var(--ai-primary);
+  color: #fff;
+  border-color: var(--ai-primary);
+}
+
+/* Two-column resume layout */
+.resume-two-col {
+  display: grid;
+  grid-template-columns: 1fr 2.2fr;
+  gap: 32px;
+}
+
+.resume-left-col h3,
+.resume-right-col h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ai-primary);
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--ai-accent);
+}
+
+.resume-entry {
+  margin-bottom: 18px;
+}
+
+.resume-entry .title {
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.resume-entry .subtitle {
+  font-size: 0.82rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.resume-entry .date {
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.resume-entry ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+.resume-entry li {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 3px;
+}
+
+/* Phase priority badge in nav */
+nav .md-nav__link .priority-badge {
+  display: inline-block;
+  font-size: 0.6rem;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: var(--ai-accent);
+  color: #000;
+  font-weight: 700;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+/* Tab styling for What's Ready section */
+.md-content .tabbed-set {
+  margin: 16px 0;
+}
+
+/* Print-friendly resume */
+@media print {
+  .md-header, .md-footer, .md-banner, .md-sidebar {
+    display: none !important;
+  }
+  .md-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+  .resume-two-col {
+    gap: 20px;
+  }
+  .resume-header {
+    border-bottom-color: #000;
+  }
+}
+
+/* Timeline */
+.timeline-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 16px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--ai-card-border);
+}
+
+.timeline-item:last-child {
+  border-bottom: none;
+}
+
+.timeline-year {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--ai-primary);
+  text-align: right;
+}
+
+.timeline-desc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+}

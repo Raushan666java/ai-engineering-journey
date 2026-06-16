@@ -4,11 +4,26 @@ hide:
   - toc
 ---
 
+<div class="homepage-hero">
+
 # Hi, I'm Raushan Kumar
 
-> **Laravel developer → AI Engineer.** Based in Patna, Bihar. Building my path into AI Automation Engineering — one documented lesson at a time.
+<p class="tagline">
+<strong>Laravel developer → AI Engineer.</strong> Based in Patna, Bihar. Building my path into AI Automation Engineering — one documented lesson at a time.
+</p>
 
-I run [ApexPillar Technologies](https://apexpillar.tech), a Patna-based dev agency. I've shipped production ERPs, WhatsApp AI bots, and automated media pipelines. Now I'm going deep on **LLM Engineering, Agent Systems, and MCP** — and publishing everything I learn here.
+<p>
+I run <a href="https://apexpillar.tech">ApexPillar Technologies</a>, a Patna-based dev agency. I've shipped production ERPs, WhatsApp AI bots, and automated media pipelines. Now I'm going deep on <strong>LLM Engineering, Agent Systems, and MCP</strong> — and publishing everything I learn here.
+</p>
+
+<div class="cta-row">
+<a href="resume/" class="cta-primary">📄 View Resume</a>
+<a href="https://linkedin.com/in/raushan-kumar-477465250" class="cta-secondary">💼 LinkedIn</a>
+<a href="https://github.com/Raushan666java" class="cta-secondary">💻 GitHub</a>
+<a href="mailto:hello@apexpillar.tech" class="cta-secondary">✉️ Email</a>
+</div>
+
+</div>
 
 ---
 
@@ -99,6 +114,13 @@ This site has **500+ lessons across 20 phases**, plus **fully written bonus cour
     - Agent Loop, Function Calling, Anthropic Workflow Patterns
     - LangGraph Stateful Graphs, Mem0 Hybrid Memory
     - → [Phase 13](ai-engineering-from-scratch/phases/13-tools-and-protocols/) · [Phase 14](ai-engineering-from-scratch/phases/14-agent-engineering/)
+
+=== "📄 Resume & Skills"
+
+    - Full AI Engineering resume with experience timeline
+    - Skills inventory: Python, Laravel, FastAPI, RAG, LangGraph, MCP
+    - Project details with GitHub links
+    - → [View Resume](resume/)
 
 ---
 

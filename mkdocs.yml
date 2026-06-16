@@ -103,6 +103,7 @@ extra:
 
 nav:
   - "🏠 Home": index.md
+  - "👤 About": about.md
   - "📄 Resume": resume.md
   - "📚 AI/ML Study Portal": ai-ml-study.html
   - "🗺️ Roadmap": roadmap.md

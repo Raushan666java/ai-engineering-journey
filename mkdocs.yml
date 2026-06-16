@@ -1285,4 +1285,15 @@ nav:
     - Company PYQs: courses/placement-preparation/07-company-wise-pyqs.md
   - "🧠 Learning How to Learn":
     - Overview: courses/learning-how-to-learn/index.md
+    - "Ch 1: How Your Brain Learns": courses/learning-how-to-learn/ch-01-how-your-brain-learns.md
+    - "Ch 2: Practice, Mindset & Performance": courses/learning-how-to-learn/ch-02-practice-mindset.md
+    - "Ch 3: Active Recall & Spaced Repetition": courses/learning-how-to-learn/ch-03-active-recall-spaced-repetition.md
+    - "Ch 4: Pomodoro, Interleaving & Feynman": courses/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman.md
+    - "Ch 5: Memory Systems & Mnemonics": courses/learning-how-to-learn/ch-05-memory-systems.md
+    - "Ch 6: Procrastination, Habits & Deep Work": courses/learning-how-to-learn/ch-06-procrastination-habits-deep-work.md
+    - "Ch 7: DSA & Coding Interview Prep": courses/learning-how-to-learn/ch-07-dsa-coding-interview.md
+    - "Ch 8: GATE & Theory Exam Prep": courses/learning-how-to-learn/ch-08-gate-theory-prep.md
+    - "Ch 9: Framework & Language Learning": courses/learning-how-to-learn/ch-09-framework-language-learning.md
+    - "Ch 10: Meta-Learning & Lifelong System": courses/learning-how-to-learn/ch-10-meta-learning-system.md
+    - Archive (Full Reference): courses/learning-how-to-learn/archive-complete-reference.md
 

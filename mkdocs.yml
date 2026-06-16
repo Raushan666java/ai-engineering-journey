@@ -1,7 +1,7 @@
 site_name: "Raushan Kumar — AI Engineering"
 site_url: https://raushan666java.github.io/ai-engineering-journey/
 site_author: Raushan Kumar
-site_description: "Full-stack Laravel developer transitioning to AI Engineering. 500+ lessons across ML/AI, GATE CS, placement prep, Java, and system design."
+site_description: "AI Engineering Journey — Laravel developer transitioning to AI Automation. 500+ public lessons: LLMs, RAG, Agents, MCP, Transformers, GATE CS, Java Spring Boot, system design."
 
 repo_name: Raushan666java/ai-engineering-journey
 repo_url: https://github.com/Raushan666java/ai-engineering-journey
@@ -104,6 +104,7 @@ extra:
 nav:
   - "🏠 Home": index.md
   - "👤 About": about.md
+  - "🚀 Projects": projects.md
   - "📄 Resume": resume.md
   - "📚 AI/ML Study Portal": ai-ml-study.html
   - "🗺️ Roadmap": roadmap.md

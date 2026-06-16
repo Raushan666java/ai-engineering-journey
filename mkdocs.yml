@@ -313,6 +313,10 @@ nav:
         - '12 - 3D Generation': ai-engineering-from-scratch/phases/08-generative-ai/12-3d-generation/docs/en.md
         - '13 - Flow Matching Rectified Flows': ai-engineering-from-scratch/phases/08-generative-ai/13-flow-matching-rectified-flows/docs/en.md
         - '14 - Evaluation Fid Clip Score': ai-engineering-from-scratch/phases/08-generative-ai/14-evaluation-fid-clip-score/docs/en.md
+        - '15 - Consistency Models Lcm Turbo': ai-engineering-from-scratch/phases/08-generative-ai/15-consistency-models-lcm-turbo/docs/en.md
+        - '16 - Personalization Dreambooth Lora': ai-engineering-from-scratch/phases/08-generative-ai/16-personalization-dreambooth-lora/docs/en.md
+        - '17 - Video Generation Deep Dive': ai-engineering-from-scratch/phases/08-generative-ai/17-video-generation-deep-dive/docs/en.md
+        - '18 - Generative Ai Deployment': ai-engineering-from-scratch/phases/08-generative-ai/18-generative-ai-deployment/docs/en.md
         - '19 - Visual Autoregressive Var': ai-engineering-from-scratch/phases/08-generative-ai/19-visual-autoregressive-var/docs/en.md
 
     - 'Phase 9 - Reinforcement Learning':
@@ -354,7 +358,17 @@ nav:
         - '20 - Deepseek V3 Walkthrough': ai-engineering-from-scratch/phases/10-llms-from-scratch/20-deepseek-v3-walkthrough/docs/en.md
         - '21 - Jamba Hybrid Ssm Transformer': ai-engineering-from-scratch/phases/10-llms-from-scratch/21-jamba-hybrid-ssm-transformer/docs/en.md
         - '22 - Async Hogwild Inference': ai-engineering-from-scratch/phases/10-llms-from-scratch/22-async-hogwild-inference/docs/en.md
+        - '23 - Prefix Caching Radix Attention': ai-engineering-from-scratch/phases/10-llms-from-scratch/23-prefix-caching-radix-attention/docs/en.md
+        - '24 - Structured Outputs Constrained Decoding': ai-engineering-from-scratch/phases/10-llms-from-scratch/24-structured-outputs-constrained-decoding/docs/en.md
         - '25 - Speculative Decoding': ai-engineering-from-scratch/phases/10-llms-from-scratch/25-speculative-decoding/docs/en.md
+        - '26 - Kv Cache Quantization': ai-engineering-from-scratch/phases/10-llms-from-scratch/26-kv-cache-quantization/docs/en.md
+        - '27 - Tensor Parallelism': ai-engineering-from-scratch/phases/10-llms-from-scratch/27-tensor-parallelism/docs/en.md
+        - '28 - Pipeline Parallelism': ai-engineering-from-scratch/phases/10-llms-from-scratch/28-pipeline-parallelism/docs/en.md
+        - '29 - Expert Parallelism Moe': ai-engineering-from-scratch/phases/10-llms-from-scratch/29-expert-parallelism-moe/docs/en.md
+        - '30 - Flash Attention Deep Dive': ai-engineering-from-scratch/phases/10-llms-from-scratch/30-flash-attention-deep-dive/docs/en.md
+        - '31 - Continuous Batching': ai-engineering-from-scratch/phases/10-llms-from-scratch/31-continuous-batching/docs/en.md
+        - '32 - Quantization Aware Training': ai-engineering-from-scratch/phases/10-llms-from-scratch/32-quantization-aware-training/docs/en.md
+        - '33 - Inference Serving': ai-engineering-from-scratch/phases/10-llms-from-scratch/33-inference-serving/docs/en.md
         - '34 - Gradient Checkpointing': ai-engineering-from-scratch/phases/10-llms-from-scratch/34-gradient-checkpointing/docs/en.md
 
     - 'Phase 11 - Llm Engineering':
@@ -612,6 +626,8 @@ nav:
         - '15 - Constitutional Safety Harness': ai-engineering-from-scratch/phases/19-capstone-projects/15-constitutional-safety-harness/docs/en.md
         - '16 - Github Issue To Pr Agent': ai-engineering-from-scratch/phases/19-capstone-projects/16-github-issue-to-pr-agent/docs/en.md
         - '17 - Personal Ai Tutor': ai-engineering-from-scratch/phases/19-capstone-projects/17-personal-ai-tutor/docs/en.md
+        - '18 - Voice Controlled Automation Agent': ai-engineering-from-scratch/phases/19-capstone-projects/18-voice-controlled-automation-agent/docs/en.md
+        - '19 - End To End Rag Evaluation Platform': ai-engineering-from-scratch/phases/19-capstone-projects/19-end-to-end-rag-evaluation-platform/docs/en.md
         - '20 - Agent Harness Loop Contract': ai-engineering-from-scratch/phases/19-capstone-projects/20-agent-harness-loop-contract/docs/en.md
         - '21 - Tool Registry Schema Validation': ai-engineering-from-scratch/phases/19-capstone-projects/21-tool-registry-schema-validation/docs/en.md
         - '22 - Jsonrpc Stdio Transport': ai-engineering-from-scratch/phases/19-capstone-projects/22-jsonrpc-stdio-transport/docs/en.md

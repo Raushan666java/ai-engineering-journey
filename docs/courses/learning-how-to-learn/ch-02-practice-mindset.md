@@ -1124,6 +1124,58 @@ public class PracticeMindsetPerformanceTriangle {
 
 ---
 
+### Self-Assessment Quiz
+
+**1. Which of the following is NOT one of the four pillars of deliberate practice?**
+a) Specific goal  b) Immediate feedback  c) Passive repetition  d) Working at the edge of your ability
+**Answer:** C. Passive repetition is the hallmark of naive practice, not deliberate practice. The four pillars are specific goal, full focus, immediate feedback, and comfort-zone edge.
+
+**2. Why does re-reading create an illusion of competence?**
+a) It forces your brain to reconstruct information from scratch  b) The second read feels fluent, so your brain mistakes familiarity for understanding  c) It activates the same neural pathways as teaching  d) It produces measurable gains in long-term retention
+**Answer:** B. The fluency heuristic makes your brain interpret "easy to process" as "well understood." Re-reading never forces retrieval — the actual mechanism that strengthens neural pathways.
+
+**3. What is the key difference between a recall test and a recognition test?**
+a) Recall tests are always multiple-choice  b) Recognition tests require reconstruction from memory  c) Recall tests require retrieval with minimal cues, while recognition tests only require identifying whether you've seen something before  d) Recognition tests produce better long-term retention
+**Answer:** C. Recall tests (e.g., free recall, cued recall) force the brain to reconstruct information, which strengthens neural pathways. Recognition tests (e.g., multiple-choice, true/false) are easier but can overestimate what you actually know.
+
+**4. A developer keeps applying the Strategy pattern to every problem even when a simple function would suffice. What cognitive bias are they experiencing?**
+a) Confirmation bias  b) Dunning-Kruger effect  c) Einstellung effect (mental set)  d) Availability heuristic
+**Answer:** C. The Einstellung effect is the brain's tendency to reach for a familiar solution even when a better one exists — "when you have a hammer, everything looks like a nail."
+
+**5. Which technique best improves far transfer of knowledge?**
+a) Re-reading the same examples multiple times  b) Abstracting the general principle and generating your own examples in different domains  c) Using only multiple-choice practice tests  d) Focusing on a single domain until you achieve perfect recall
+**Answer:** B. Far transfer improves when you extract the abstract principle from a specific context and deliberately apply it to very different domains. Generation of your own examples builds flexible mental models.
+
+**6. What is attention residue, and what is an effective strategy to minimize it?**
+a) The ability to multitask effectively; use shorter work blocks  b) The lingering cognitive focus on a previous task after switching; use transition rituals like writing a progress note  c) The mental fatigue after a long study session; take longer breaks  d) The emotional attachment to completed work; avoid task-switching entirely
+**Answer:** B. Attention residue is the cognitive phenomenon where your brain remains partially focused on Task A after switching to Task B. Transition rituals (writing progress notes, stretching) provide a clean break that reduces residue.
+
+**7. According to the Yerkes-Dodson law, what arousal level is optimal for learning a complex new framework?**
+a) High arousal (excited, slightly anxious)  b) Very high arousal (intense pressure)  c) Low to moderate arousal (calm, focused)  d) Arousal level doesn't affect complex learning
+**Answer:** C. Complex and novel tasks require lower arousal for optimal performance. High arousal impairs learning complex material, while it helps with simple or well-practiced tasks.
+
+**8. Which statement describes a genuine growth mindset?**
+a) "I tried my best and that's what matters"  b) "I failed because I'm not smart enough for this"  c) "My strategy didn't work here — let me try a different approach and reflect on what went wrong"  d) "I can do anything I set my mind to, no matter the constraints"
+**Answer:** C. Real growth mindset focuses on changing strategies, not just increasing effort. Option A is false growth mindset (effort-only praise), B is fixed mindset, and D ignores real constraints.
+
+**9. What biological process makes deliberate practice physically change the brain over time?**
+a) Neurogenesis in the prefrontal cortex only  b) Myelination — repeated practice wraps axons in myelin, speeding signal transmission by up to 100x  c) Expansion of the skull to accommodate new neurons  d) Increased blood flow that temporarily improves recall
+**Answer:** B. Myelination insulates neural axons, dramatically speeding up signal transmission. This is the physical basis for why repeated deliberate practice makes skills automatic, freeing working memory for higher-level thinking.
+
+**10. What is the most important correction to the 10,000-hour rule?**
+a) You actually need 20,000 hours for true mastery  b) Only deliberate practice counts — 10,000 hours of casual practice doesn't produce expertise  c) The rule only applies to music and sports  d) 10,000 hours guarantees elite performance regardless of practice quality
+**Answer:** B. The 10,000-hour finding was based on deliberate practice, not any practice. The quality of deliberate practice matters far more than the raw quantity, and you can become professionally competent in most skills with 500-1,000 hours of deliberate practice.
+
+**11. How does aerobic exercise directly enhance learning?**
+a) It builds muscle that protects the brain during impact  b) It increases BDNF (brain-derived neurotrophic factor), which acts as fertilizer for neurons and promotes neuroplasticity  c) It reduces the need for sleep, freeing more study time  d) It increases blood glucose, providing more energy for concentration
+**Answer:** B. Aerobic exercise boosts BDNF, which supports neuronal health, neurogenesis in the hippocampus, and synaptic plasticity. A 20-minute walk before studying can increase BDNF by 30-50%.
+
+**12. A student is stuck on a recursion problem and feels frustrated. Which reframe best applies the growth mindset?**
+a) "I'm just not a recursion person"  b) "Recursion is useless anyway, I'll use iteration"  c) "I haven't mastered recursion yet — I need to try a different strategy, like tracing the call stack on paper"  d) "I should take a break and come back when I feel smarter"
+**Answer:** C. The word "yet" opens the possibility of change, and pivoting to a specific strategy (tracing the call stack) is the hallmark of growth-mindset behavior — treating difficulty as a signal to change strategies, not as an identity verdict.
+
+---
+
 ## Chapter Summary
 
 - **Deliberate practice** is the only practice that reliably produces expertise: specific goal + full focus + immediate feedback + edge of ability. Naive practice (repetition without intent) is a waste of time.

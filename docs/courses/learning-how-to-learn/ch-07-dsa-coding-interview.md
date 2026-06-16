@@ -1435,6 +1435,140 @@ Everything else is just the domain wrapping. You now know how to learn DSA. Go p
 
 ---
 
+### Self-Assessment Quiz
+
+**1. Which of the following is the correct order of passes in the 3-pass method for solving DSA problems?**
+
+a) Code & Test → Understand & Explore → Plan & Verify  
+b) Plan & Verify → Understand & Explore → Code & Test  
+c) Understand & Explore → Plan & Verify → Code & Test  
+d) Understand & Explore → Code & Test → Plan & Verify
+
+**Answer:** c. Pass 1 is Understand & Explore (brainstorm out loud, no code). Pass 2 is Plan & Verify (pseudocode, complexity, verify on examples). Pass 3 is Code & Test (write clean code, walk through with edge cases).
+
+---
+
+**2. A problem reads: "Find the maximum sum of any contiguous subarray." Which pattern applies?**
+
+a) Two Pointers  
+b) Sliding Window / Kadane's Algorithm  
+c) Topological Sort  
+d) Binary Search
+
+**Answer:** b. Contiguous subarray with a maximum-sum question signals Kadane's Algorithm (a DP-1D / sliding window variant). Two pointers would be used for sorted arrays or pair searches; topological sort applies to dependency ordering.
+
+---
+
+**3. When practicing DP, what is the correct order of the 5-step workflow?**
+
+a) State → Recurrence → Base → Identify DP → Iteration  
+b) Identify DP → State → Recurrence → Base → Iteration  
+c) Iteration → State → Recurrence → Base → Identify DP  
+d) Identify DP → Base → State → Recurrence → Iteration
+
+**Answer:** b. Step 1: Identify DP (optimal substructure + overlapping subproblems). Step 2: Define state (parameters that uniquely describe a subproblem). Step 3: Recurrence relation (how dp[i] relates to smaller subproblems). Step 4: Base case (smallest input). Step 5: Iteration / memoization (bottom-up table or top-down with cache).
+
+---
+
+**4. Which database type would you choose for a ride-sharing app's payment transactions and trip history?**
+
+a) NoSQL Document DB (MongoDB) — because schema evolves rapidly  
+b) NoSQL Key-Value (Redis) — because reads need to be fast  
+c) SQL (PostgreSQL) — because trip data has a fixed schema and needs ACID for payments  
+d) NoSQL Graph (Neo4j) — because riders and drivers have relationships
+
+**Answer:** c. Trip history and payment transactions have a fixed schema with foreign-key relationships and require ACID guarantees (no double-charges, consistent trip records). A SQL database handles joins (user → trip → payment) reliably. Redis is better for ephemeral driver-location data; MongoDB suits flexible profile fields.
+
+---
+
+**5. In the system design 5-step framework, which step includes discussing tradeoffs like sharding strategy and consistency models?**
+
+a) Step 1: Scope & Requirements  
+b) Step 2: High-Level Design  
+c) Step 3: Deep Dive  
+d) Step 4: Scale & Optimize
+
+**Answer:** c. Step 3 (Deep Dive) is where you go into detail on 1–2 components the interviewer cares about — database schema, caching strategy, sharding, consistency model — and explicitly discuss tradeoffs. Step 4 (Scale & Optimize) adds CDNs, read replicas, queues for 10x scale.
+
+---
+
+**6. Which design pattern is most appropriate when you have multiple if-else branches for different payment methods?**
+
+a) Singleton  
+b) Observer  
+c) Strategy  
+d) Decorator
+
+**Answer:** c. The Strategy pattern lets you define a family of algorithms (credit card, PayPal, UPI), encapsulate each one, and make them interchangeable at runtime. This eliminates the if-else chain and follows the Open/Closed principle. Singleton would handle logging; Observer handles pub-sub events; Decorator wraps behavior dynamically.
+
+---
+
+**7. In the stair-step solution protocol, what should you do after fighting a problem for 30 minutes with zero progress?**
+
+a) Read the full solution code immediately  
+b) Read only the pattern name (first sentence of the solution) and try to derive the rest  
+c) Skip the problem and move to the next one  
+d) Copy the solution and re-submit it
+
+**Answer:** b. Step 1 is to read only the first sentence (the pattern name), then try to derive the full solution yourself. If that fails, proceed to Step 2 (skeleton/bullet points). Never read full code first — it trains pattern-matching to existing code, not problem-solving.
+
+---
+
+**8. What is the time and space complexity of recursive Fibonacci without memoization?**
+
+a) O(n) time, O(1) space  
+b) O(n log n) time, O(n) space  
+c) O(2^n) time, O(n) stack space  
+d) O(n^2) time, O(log n) space
+
+**Answer:** c. Each call spawns two more, creating a binary call tree of depth n. The number of nodes is O(2^n). Space is O(n) because the call stack depth reaches n (the longest path from root to leaf). With memoization this drops to O(n) time, O(n) space.
+
+---
+
+**9. Which of the following is NOT a correct way to discuss a space-time tradeoff in an interview?**
+
+a) "The brute force is O(n^2) time with O(1) space. Using a hashmap gives O(n) time but costs O(n) memory."  
+b) "We should always optimize for time regardless of space constraints."  
+c) "If the input fits in memory, the hashmap approach is preferred for its speed advantage."  
+d) "For a streaming input where we cannot store everything, the in-place approach is necessary."
+
+**Answer:** b. You should never declare a one-size-fits-all optimization priority. The correct approach is to ask which dimension matters or discuss the tradeoff explicitly. Interviewers specifically test whether you can identify and articulate tradeoffs, not pick a default winner.
+
+---
+
+**10. What is the correct LLD workflow order?**
+
+a) Requirements → Class Design → Interface Design → Implementation → Test  
+b) Implementation → Class Design → Requirements → Interface Design → Test  
+c) Interface Design → Requirements → Class Design → Implementation → Test  
+d) Requirements → Interface Design → Class Design → Implementation → Test
+
+**Answer:** a. Step 1: Requirements (list entities/actions/states). Step 2: Class Design (fields, methods, relationships). Step 3: Interface Design (core abstractions). Step 4: Implementation (write main classes). Step 5: Test (exercise core flow + edge cases).
+
+---
+
+**11. In the complete interview workflow, what is the recommended action 48 hours before the interview?**
+
+a) Solve 10 new LeetCode problems to warm up  
+b) Review your Anki deck and do a 30-minute mock interview  
+c) Study new patterns you haven't learned yet  
+d) Skip sleep to maximize study time
+
+**Answer:** b. Forty-eight hours before is review and consolidation time — run your Anki deck, do a 30-minute mock, get a full night's sleep. Learning new material at this point causes interference. Sleep is the single biggest performance predictor (it consolidates pattern memory, per Chapters 1 and 5).
+
+---
+
+**12. When you encounter an unfamiliar problem during an interview and feel stuck, which approach is best?**
+
+a) Remain silent and keep thinking until the solution comes  
+b) Say "I don't know" and ask for the next problem  
+c) Narrate your thought process: "Let me consider a brute force first and then optimize," or trace a small example  
+d) Start coding the first thing that comes to mind
+
+**Answer:** c. Silent thinking makes interviewers nervous. Verbalizing your reasoning — even when stuck — shows your problem-solving process. The recommended fallback is to try brute force or walk through a smaller example. Never stay silent, never jump to code without a plan.
+
+---
+
 ## Chapter Summary
 
 - **The 3-pass method** (Understand → Plan → Code) replaces panic with process and maps directly to how your brain solves problems in diffuse → focused → execution modes.

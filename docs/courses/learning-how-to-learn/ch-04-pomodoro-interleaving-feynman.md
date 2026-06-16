@@ -1779,6 +1779,58 @@ public class ExplanationTracker {
 
 ---
 
+### Self-Assessment Quiz
+
+**1. What cognitive phenomenon does the Pomodoro Technique leverage to lower the activation barrier for starting a task?**
+a) The Serial Position Effect  b) The Zeigarnik Effect  c) The Dunning-Kruger Effect  d) The Testing Effect
+**Answer:** b. The Zeigarnik Effect — your brain hates unfinished tasks, and knowing a break is coming in 25 minutes makes starting feel easier because you're not committing to an endless slog.
+
+**2. What is the recommended Pomodoro interval adaptation for deep coding sessions?**
+a) 15-minute intervals with 2-minute breaks  b) 25-minute intervals (keep the original)  c) 40-50 minute intervals  d) 60-minute intervals with no breaks
+**Answer:** c. Coding requires longer uninterrupted blocks to reach flow. Extending to 40-50 minutes with a commit-before-break protocol gives better results than the original 25-minute desk-work interval.
+
+**3. In the Capture-and-Delegate protocol for interruptions, what should you do when a non-urgent interruption arrives mid-pomodoro?**
+a) Handle it immediately to clear your mind  b) Write it on a parking lot list and return to work  c) Extend the pomodoro to deal with it  d) End the pomodoro early
+**Answer:** b. Writing the interruption on a parking lot list reduces cognitive load (your brain trusts it's captured) without breaking focus. Process the list during breaks or after the session.
+
+**4. In Rohrer & Taylor's 2007 study on interleaving vs blocked practice, which group scored higher on the final test one week later, and why?**
+a) Blocked practice — higher accuracy during practice led to better retention  b) Interleaved practice — the desirable difficulty of mixing problem types built stronger discrimination skills  c) Both scored equally — practice volume was the same  d) Blocked practice — students felt more confident and performed better under pressure
+**Answer:** b. Blocked practice created an illusion of competence (89% during practice but only 20% on the final test), while interleaved practice felt harder (60% during practice) but produced more than double the retention (43%).
+
+**5. According to the 80/20 rule for practice types, what proportion of your study time should be spent on mixed (interleaved) practice after achieving basic understanding?**
+a) 20%  b) 50%  c) 80%  d) 100%
+**Answer:** c. Use 20% of time for blocked practice (3-5 problems of the same type to build basic fluency), then 80% for mixed/interleaved practice to build the discrimination skills that exams require.
+
+**6. In the three-level DSA interleaving system, what is the goal of Level 2 (Cross-Pattern Interleaving)?**
+a) Same pattern, different difficulties  b) Related patterns that are easy to confuse (e.g., BFS vs DFS)  c) Any pattern at any difficulty  d) Only easy problems across all patterns
+**Answer:** b. Level 2 targets related patterns that are easy to confuse — like Sliding Window vs Two Pointer (both use left/right indices) or BFS vs DFS (both traverse graphs). This builds the ability to distinguish between similar techniques.
+
+**7. What is the second step of the Feynman Technique?**
+a) Choose a concept and write it at the top of a page  b) Explain the concept in plain language as if teaching a child  c) Identify gaps by marking jargon and vague terms  d) Review source material and rewrite the explanation more simply
+**Answer:** b. Step 1 is choosing the concept, Step 2 is explaining it in plain language (no jargon, as if teaching a child), Step 3 is identifying gaps, and Step 4 is reviewing and simplifying.
+
+**8. What type of Feynman gap is indicated when you can describe a concept but cannot implement it from scratch?**
+a) Jargon Masking  b) Analogy Dependency  c) Code Blindness  d) Boundary Ignorance
+**Answer:** c. Code Blindness means you can talk about a concept fluently but cannot write working code for it. The fix is to implement from scratch without any references.
+
+**9. What is the core mechanism that both rubber duck debugging and the Feynman Technique share?**
+a) Both require a partner to listen  b) Both force you to articulate assumptions aloud, which recruits additional brain regions for logical scrutiny  c) Both involve writing code  d) Both require a physical rubber duck
+**Answer:** b. Articulation forces you to slow down, engage Broca's and Wernicke's areas (speech and language comprehension), and state every assumption explicitly — revealing gaps that silent thinking misses.
+
+**10. According to the Generation Effect (Slamecka & Graf, 1978), how much better is recall for self-generated material compared to read material?**
+a) 10-20%  b) 30-40%  c) 50-60%  d) 70-80%
+**Answer:** b. Information you generate yourself (by writing) is remembered 30-40% better than information you read. Writing also forces coherence — you cannot jump between unrelated points the way you can in casual thought.
+
+**11. According to the Learning Pyramid, what retention rate does teaching others achieve?**
+a) 50%  b) 75%  c) 90%  d) 95%
+**Answer:** c. Teaching others achieves approximately 90% retention — the highest of any study method listed. Teaching exposes you to unexpected questions, forces retrieval under pressure, and trains dual-track thinking (holding the learner's model and the expert model simultaneously).
+
+**12. What does the 3-Explanation Rule say about your first attempt to explain a concept?**
+a) It will be perfect if you studied enough  b) It will be terrible — and that is expected because the first pass is for gap detection, not mastery  c) You should record it and never repeat it  d) You should only explain if you can do it fluently the first time
+**Answer:** b. The 3-Explanation Rule says the first pass is messy and full of jargon — it's for gap detection. The second pass builds structure. The third pass achieves fluency. Awkwardness is the signal that learning is happening.
+
+---
+
 ## Chapter Summary
 
 - **The Pomodoro Technique** provides structured focus containers (25-50 minutes) that leverage the Zeigarnik effect and reduce attention residue. Adapt the interval to your task — coding benefits from longer blocks, revision from shorter ones.

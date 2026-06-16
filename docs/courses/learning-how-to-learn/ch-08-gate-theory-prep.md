@@ -968,6 +968,58 @@ This is your 30-day blueprint if you're starting GATE preparation from scratch w
 
 ---
 
+### Self-Assessment Quiz
+
+**1. What is the recommended theory-to-coding split during the early phase (Months 1-2) of GATE preparation?**
+a) 50% theory, 50% coding  b) 70% theory, 30% coding  c) 90% theory, 10% coding  d) 30% theory, 70% coding
+**Answer:** b. The 70/30 rule in early phases builds conceptual foundation, gradually shifting to 50/50 as the exam approaches.
+
+**2. What is the primary purpose of building a formula cheat sheet — beyond having a reference to review?**
+a) Sharing it with friends for group study  b) The compression process forces you to distill and connect concepts  c) Memorizing every formula by rote  d) Replacing textbook reading entirely
+**Answer:** b. The act of creating the cheat sheet — categorizing, compressing, and mapping dependencies — builds a mental model far more valuable than the final product.
+
+**3. According to the cross-subject interlinking strategy, what should you do if you cannot find at least two connections from a concept you just studied to other subjects?**
+a) Skip the concept and move to the next topic  b) You haven't understood it deeply enough — you're learning it in isolation  c) It means the concept is unimportant for GATE  d) Focus only on coding questions for that topic
+**Answer:** b. The ability to link concepts across subjects creates redundant retrieval paths and confirms depth of understanding.
+
+**4. In the 3-phase PYQ strategy, what is the primary goal of Phase 3 (Full-Length Mixed)?**
+a) Solving questions faster than anyone else  b) Training question-switching skill — moving between subjects under exam conditions  c) Memorizing answer patterns from previous years  d) Building subject-wise accuracy above 90%
+**Answer:** b. Phase 3 trains the skill of switching between subjects under timed conditions, which full-length mixed papers uniquely provide.
+
+**5. According to the 3-pass method for theory subjects, what % of total study time should be allocated to Pass 1 (Survey)?**
+a) 50–60%  b) 5–10%  c) 15–20%  d) 30–40%
+**Answer:** c. Pass 1 (Survey) should take 15–20% of study time, Pass 2 (Detailed) takes 50–60%, and Pass 3 (Integration) takes 20–30%.
+
+**6. What is the key principle behind using diagrams to understand tough theoretical concepts?**
+a) Diagrams are only useful for network protocols  b) If you can draw it, you understand it  c) Diagrams replace the need for reading textbooks  d) Only complex systems need diagrams
+**Answer:** b. Diagrams act as compression tools that let you see the entire system at once; being able to draw a concept confirms you grasp its structure and relationships.
+
+**7. Which math topic has the HIGHEST weightage in GATE CS and the strongest relevance to other subjects?**
+a) Calculus  b) Group Theory  c) Propositional & Predicate Logic  d) Linear Algebra
+**Answer:** c. Propositional & Predicate Logic has high weightage and directly connects to TOC, Compiler Design, and DBMS (relational calculus).
+
+**8. What defines a Tier 1 topic in the ROI prioritization framework?**
+a) Low weightage and high difficulty  b) Low weightage and low difficulty  c) High weightage and high difficulty  d) High weightage and low difficulty
+**Answer:** d. Tier 1 topics have high weightage and low difficulty — they are "must win" topics with an 80% accuracy target.
+
+**9. In the spiral schedule, what is the maximum number of days a subject should go without being touched?**
+a) 5 days  b) 1 day  c) 2 days  d) 7 days
+**Answer:** c. No subject should exceed 2 days between touches to ensure continuous exposure and prevent forgetting.
+
+**10. In the 4-category mistake taxonomy (C/M/E/R), what does category "M" stand for and what is its recommended fix?**
+a) Memory lapse — revise the topic from scratch  b) Misapplication — you knew the concept but used it wrong; practice 5 more problems on that subtopic  c) Mistake in reading — read the question twice  d) Methodology error — change your approach entirely
+**Answer:** b. Misapplication means you knew the concept but applied it incorrectly; the fix is targeted practice on that specific subtopic.
+
+**11. What is the purpose of Track 1 in the dual-track preparation plan?**
+a) Deep mastery of 2-3 selected subjects  b) Foundation/breadth — covering all subjects at a survey level daily  c) Solving full-length mock tests  d) Building advanced coding projects
+**Answer:** b. Track 1 (Foundation, 45–60 min daily) surfs through all subjects to maintain breadth, identify weak areas, and prevent any subject from being neglected.
+
+**12. In the 30-day GATE strategy, by which day should the master cheat sheet be finalized?**
+a) Day 7  b) Day 14  c) Day 21  d) Day 28
+**Answer:** c. The cheat sheet should be finalized by Day 21 (end of Week 3), so the final week is dedicated to recall and consolidation — not learning new material.
+
+---
+
 ## Chapter Summary
 
 - **Balance theory and coding** using the 70/30 → 50/50 ratio across your preparation phases, and reinforce theory by implementing algorithms in code

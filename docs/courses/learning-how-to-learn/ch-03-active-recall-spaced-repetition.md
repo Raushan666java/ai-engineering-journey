@@ -408,6 +408,15 @@ public class EbbinghausSimulation {
 
 ---
 
+```mermaid
+xychart-beta
+    title "Ebbinghaus Forgetting Curve with Spaced Repetition"
+    x-axis ["Day 0", "Day 1", "Day 3", "Day 7", "Day 14", "Day 30"]
+    y-axis "Retention %" 0 --> 100
+    line [100, 58, 44, 35, 28, 21]
+    line [100, 80, 70, 65, 60, 55]
+```
+
 ### Q26: How do I set up Anki for effective learning?
 
 **Answer:**
@@ -713,6 +722,27 @@ public class CardQualityAnalyzer {
 
 ---
 
+```mermaid
+flowchart TD
+    A[Create Anki card] --> B[Review at Day 1]
+    B --> C{Recall correctly?}
+    C -->|Yes - Easy| D[Schedule next: 4 days]
+    C -->|Yes - Good| E[Schedule next: 3 days]
+    C -->|Hard| F[Schedule next: 1 day]
+    C -->|Again - Failed| G[Schedule: 10 min]
+    G --> B
+    D --> H[Review at Day 4]
+    E --> H
+    F --> H
+    H --> C
+    D --> I[Review at Day 10+]
+    H --> I
+    I --> C
+    I --> J[Review at Day 21+]
+    J --> K[Review at 1-3 months]
+    K --> L[Mature card<br/>Retention >90%]
+```
+
 ### Q29: How do I integrate Anki into my daily workflow?
 
 **Answer:**
@@ -939,6 +969,70 @@ public class ComplexTopicHandler {
 | **Creative work** | Idea generation exercises, portfolio projects |
 
 > **Try This:** Take one complex topic you're studying (e.g., "System design for an e-commerce app"). Decompose it using the funnel approach above. Create 8 cards minimum: 2 component, 2 explain, 2 tradeoff, 2 design. Study the deck for one week and evaluate whether the decomposition improved your understanding.
+
+---
+
+```mermaid
+graph TB
+    subgraph "Retrieval Strength"
+        A[Recognition<br/>Multiple choice<br/>"I've seen this before"] --> B[Low retrieval strength<br/>False sense of familiarity]
+        C[Recall<br/>Blank page<br/>"Write from memory"] --> D[High retrieval strength<br/>Exposes real gaps]
+    end
+    subgraph "Why Recall Wins"
+        E[Forces neural pathway reconstruction] --> F[Strengthens synaptic connections]
+        G[Identifies unknown unknowns] --> H[Guides focused study]
+    end
+```
+
+### Self-Assessment Quiz
+
+**1. What cognitive mechanism explains why active recall strengthens memory?**
+a) Encoding specificity b) Reconsolidation c) State-dependent learning d) Elaborative encoding
+**Answer:** b) Reconsolidation. Each retrieval triggers reconsolidation — the neural trace is strengthened and linked to more contextual cues, making future retrieval easier.
+
+**2. Why does the blank page method expose illusions of competence?**
+a) It forces you to write quickly b) It requires an internet connection c) It provides no cues — you either know it or you don't d) It uses multiple-choice formatting
+**Answer:** c) It provides no cues — you either know it or you don't. Rereading feels like knowing because recognition is easy, but a blank page gives no hints, so gaps become immediately visible.
+
+**3. What brain region is primarily associated with recall (as opposed to recognition)?**
+a) Perirhinal cortex b) Amygdala c) Hippocampus d) Cerebellum
+**Answer:** c) Hippocampus. Recognition relies on the perirhinal cortex (familiarity signal), while recall requires hippocampal recollection — a more effortful and durable process.
+
+**4. A student who can answer multiple-choice questions but fails an open-ended interview is experiencing:**
+a) The testing effect b) The spacing effect c) The recognition trap d) Proactive interference
+**Answer:** c) The recognition trap. Multiple-choice tests recognition, not recall. The student feels competent because they recognize answers, but cannot produce knowledge from scratch under open-ended conditions.
+
+**5. Why does the Feynman technique (teaching a concept to a child) count as active recall?**
+a) It uses visual aids b) It forces unscripted retrieval from memory and gap detection c) It requires a classroom setting d) It uses repetition without effort
+**Answer:** b) It forces unscripted retrieval from memory and gap detection. Teaching requires you to retrieve, organize, and articulate knowledge without notes — the purest form of active recall.
+
+**6. According to Ebbinghaus's forgetting curve, approximately what percentage of new information is lost within 24 hours without review?**
+a) 20% b) 40% c) 60% d) 80%
+**Answer:** d) ~80%. Ebbinghaus found that forgetting follows exponential decay: ~50% lost within one hour and ~80% within 24 hours unless information is actively retrieved.
+
+**7. In the SM-2 algorithm, what happens to the interval when a card is rated below quality 3 (hard)?**
+a) The interval doubles b) The interval stays the same c) Repetitions reset to 0 and interval returns to 1 day d) The card is suspended
+**Answer:** c) Repetitions reset to 0 and interval returns to 1 day. When quality < 3, the SM-2 algorithm treats the card as if it were new, resetting the repetition count and shortening the interval to 1 day.
+
+**8. What is the recommended "new cards per day" setting for a single Anki deck to prevent overload?**
+a) 5-10 b) 10-20 c) 25-50 d) Unlimited
+**Answer:** b) 10-20. Limiting new cards per day to 10-20 prevents review backlog and keeps the daily workload sustainable for long-term habit maintenance.
+
+**9. Which card type is considered most effective for testing atomic fact recall with surrounding context?**
+a) Basic (question → answer) b) Image Occlusion c) Cloze deletion d) Type-in
+**Answer:** c) Cloze deletion. Cloze deletions provide surrounding context while forcing retrieval of a specific fact — simulating real-world recall better than basic question-answer cards.
+
+**10. According to the chapter, what is the "golden rule" of card design?**
+a) Every card must include an image b) Every card must be a cloze deletion c) One card = one atomic fact or concept d) Cards must be at least 50 words long
+**Answer:** c) One card = one atomic fact or concept. If a card contains "and" in the answer, it should be split into multiple cards. Each card should test exactly one piece of information.
+
+**11. What is the recommended maximum daily Anki session length to avoid diminishing returns?**
+a) 5 minutes b) 15-25 minutes c) 45-60 minutes d) 90 minutes
+**Answer:** b) 15-25 minutes. Beyond 25 minutes, retention gains per minute drop significantly. The sustainable total for most learners is 30-45 minutes spread across the day.
+
+**12. How should you handle a complex topic like system design that doesn't fit on a single flashcard?**
+a) Skip Anki entirely for that topic b) Write one large card with all the details c) Decompose into a funnel: components → explain → tradeoffs → design decisions d) Use only image occlusion cards
+**Answer:** c) Decompose into a funnel: components → explain → tradeoffs → design decisions. Complex topics are handled by creating hierarchical cards at different levels of analysis, from atomic recall to synthesis-level design decisions.
 
 ---
 

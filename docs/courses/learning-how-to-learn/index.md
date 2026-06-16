@@ -1,7 +1,9 @@
 ﻿# Learning How to Learn
 
 > **Master the universal meta-skill: accelerate learning across every course in this repository.**
-> 10 chapters · 130 Q&As · Practical techniques grounded in cognitive science.
+> 10 chapters · 162 Q&As · 10 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.
+>
+> *Deployed: commit `23502cfa3`*
 
 ---
 
@@ -44,8 +46,8 @@ You'll learn:
 
 | # | Chapter | Topics | Q&As |
 |---|---------|--------|------|
-| 1 | How Your Brain Learns | Focused & diffuse modes, chunking, knowledge types, sleep | Q1–Q7 |
-| 2 | Practice, Mindset & Performance | Deliberate practice, illusions of competence, recall test, Einstellung effect, knowledge transfer, attention residue, arousal, stress, growth mindset, neuroplasticity, 10k-hour rule, brain health | Q8–Q20 |
+| 1 | How Your Brain Learns | Focused & diffuse modes, chunking, knowledge types, sleep, neuroplasticity, DMN, cognitive load, attention types, multitasking myth, stress, exercise, circadian rhythms, sleep architecture | Q1–Q16 |
+| 2 | Practice, Mindset & Performance | Deliberate practice, illusions of competence, recall test, Einstellung effect, knowledge transfer, attention residue, arousal, stress, growth mindset, neuroplasticity, 10k-hour rule, brain health | Q17–Q20 |
 
 ### Module 2: Core Learning Techniques (Chapters 3–4)
 
@@ -67,13 +69,40 @@ You'll learn:
 |---|---------|--------|------|
 | 7 | DSA & Coding Interview Prep | 3-pass method, pattern recognition, DP workflow, SQL/NoSQL, system design, design patterns, LLD, concurrency, interview workflow | Q81–Q95 |
 | 8 | GATE & Theory Exam Prep | Theory vs coding, formula cheat sheets, subject interlinks, PYQ strategy, diagrams, math foundation, ROI prioritization, time management, mistake analysis, mock tests, 30-day strategy | Q96–Q110 |
-| 9 | Framework & Language Learning | Universal blueprint, learning Java/Python/DevOps/Laravel, MVP pattern, documentation reading, debugging | Q111–Q120 |
+| 9 | Framework & Language Learning | Universal blueprint, Java/Python/DevOps/Laravel/React/Go/Rust/TS/Docker/K8s/SQL/NoSQL, MVP pattern, docs reading, debugging, AI assistants, open-source, cloud platforms, tutorial trap | Q111–Q132 |
 
 ### Module 5: Lifelong System (Chapter 10)
 
 | # | Chapter | Topics | Q&As |
 |---|---------|--------|------|
-| 10 | Meta-Learning & Lifelong System | Building in public, meta-learning, Waitzkin's three stages, 80/20 rule, skill tree, Dunning-Kruger, imposter syndrome, knowledge compounding, second brain, post-interview roadmap, teaching others | Q121–Q130 |
+| 10 | Meta-Learning & Lifelong System | Building in public, meta-learning, Waitzkin stages, 80/20 rule, skill tree, Dunning-Kruger, imposter syndrome, knowledge compounding, second brain, Atomic Habits, PARA method, learning dashboard, SM-2/FSRS algorithms, Obsidian, learning communities, plateaus, daily routine, anti-patterns, compound effect, feedback loops, annual review | Q121–Q145 |
+
+---
+
+## Diagnostic Pre-Test
+
+Before you begin, rate yourself on these six statements (1 = strongly disagree, 5 = strongly agree). Your answers will help you focus on the chapters most relevant to you.
+
+| # | Statement | 1 | 2 | 3 | 4 | 5 |
+|---|-----------|---|---|---|---|---|
+| 1 | I understand the difference between focused and diffuse thinking and use both deliberately | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 2 | I use active recall and spaced repetition daily (Anki, manual review) | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 3 | I can build a memory palace and use mnemonic systems for abstract concepts | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 4 | I have a reliable system for beating procrastination and doing deep work | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 5 | I have a structured approach to learning new frameworks or languages | ☐ | ☐ | ☐ | ☐ | ☐ |
+| 6 | I track my learning with measurable metrics and conduct regular reviews | ☐ | ☐ | ☐ | ☐ | ☐ |
+
+**Interpreting your scores:**
+- **4–5 on every question:** You may be ready to skip straight to Module 5 (Chapter 10) for meta-learning system design
+- **1–2 on any question:** Read the corresponding chapter(s) first
+- **Mixed scores:** Focus on your weakest areas — each chapter works independently
+
+**Chapter mapping:**
+- Q1–Q2 → Chapters 1–2 (Brain Fundamentals)
+- Q3 → Chapter 5 (Memory Systems)
+- Q4 → Chapters 3 & 6 (Spaced Repetition & Deep Work)
+- Q5 → Chapter 7 & 9 (DSA & Framework Learning)
+- Q6 → Chapter 10 (Meta-Learning System)
 
 ---
 
@@ -91,11 +120,12 @@ You'll learn:
 Every chapter follows this structure:
 
 ```
-Learning Objectives → Q&A Content → Chapter Summary → Exercises → Further Reading
+Learning Objectives → Q&A Content → Self-Assessment Quiz → Chapter Summary → Exercises → Further Reading
 ```
 
 - **Learning Objectives:** What you'll know after completing the chapter
-- **Q&A Content:** Questions and answers with compilable code examples
+- **Q&A Content:** Questions and answers with compilable code examples + Mermaid diagrams for key concepts
+- **Self-Assessment Quiz:** 12 multiple-choice questions to test your understanding before moving on
 - **Chapter Summary:** Key takeaways in 3–5 bullet points
 - **Exercises:** Hands-on practice (use these — they're the most important part)
 - **Further Reading:** Links to related chapters and courses

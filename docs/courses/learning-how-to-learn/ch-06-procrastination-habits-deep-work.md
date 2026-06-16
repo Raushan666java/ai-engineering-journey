@@ -107,6 +107,21 @@ class ProcrastinationLoop {
 
 ---
 
+```mermaid
+flowchart TD
+    subgraph "The Procrastination Loop"
+        A[Cue<br/>Study time, hard problem,<br/>boredom signal] --> B[Routine<br/>Open phone, check social,<br/>watch YouTube]
+        B --> C[Reward<br/>Dopamine hit,<br/>temporary relief]
+        C --> D[Neural pathway strengthened]
+        D --> A
+    end
+    subgraph "How to Break It"
+        E[Identify the cue] --> F[Change routine<br/>2-minute rule]
+        F --> G[Same reward<br/>But productive]
+        G --> H[New habit formed]
+    end
+```
+
 ## Q62: How does the 2-minute rule kill procrastination before it starts?
 
 **Answer:**
@@ -831,6 +846,21 @@ class DeepWork {
 **The 4-hour rule:** Most people can produce a maximum of 4 hours of genuine deep work per day. Schedule learning accordingly — one 90-minute block and one 60-minute block is more realistic than trying to "study all day."
 
 ---
+
+```mermaid
+graph LR
+    subgraph "Deep Work Philosophies"
+        A[Grand<br/>Monastic<br/>No distractions at all<br/>Novelists, academics] 
+        B[Bimodal<br/>Days/weeks deep<br/>Rest shallow<br/>Freud, Jung]
+        C[Rhythmic<br/>Daily deep blocks<br/>Same time each day<br/>Most sustainable]
+        D[Journalistic<br/>Fit deep work<br/>into any gap<br/>Newspaper reporters]
+    end
+    E[Your choice depends on:<br/>- Schedule flexibility<br/>- Energy patterns<br/>- Family commitments<br/>- Task nature]
+    A --> E
+    B --> E
+    C --> E
+    D --> E
+```
 
 ## Q71: When should you learn a new skill vs. clarify what you already know?
 
@@ -1874,6 +1904,111 @@ They quit during the seed phase. They compare their Day 30 to someone else's Yea
 **The antidote:** Trust the math. The compound effect doesn't care about your feelings. 30 minutes daily for 3 years will make you an expert in almost any area of software engineering. The only way to fail is to stop showing up.
 
 **Your daily minimum:** 5 minutes. Do 5 minutes on your worst day. That's 30 hours over a year — enough to become dangerous in any new topic. Compound works even at 5 minutes.
+
+---
+
+```mermaid
+flowchart TD
+    subgraph "Habit Stacking Formula"
+        A["After/Before [CURRENT HABIT]"] --> B["I will [NEW HABIT]"]
+    end
+    subgraph "Examples"
+        C["After I pour my morning coffee"] --> D["I will study Anki for 5 min"]
+        E["After I finish dinner"] --> F["I will solve one DSA problem"]
+        G["Before I go to sleep"] --> H["I will review today's notes"]
+    end
+    subgraph "Why It Works"
+        I[Existing habit is the cue] --> J[No decision fatigue]
+        J --> K[Automatic execution]
+        K --> L[Compound effect over time]
+    end
+```
+
+### Self-Assessment Quiz
+
+**1. What are the four components of the procrastination loop, in order?**
+a) Trigger → coping behavior → negative feeling → relief + guilt
+b) Trigger → negative feeling → coping behavior → relief + guilt
+c) Negative feeling → trigger → coping behavior → relief + guilt
+d) Coping behavior → trigger → negative feeling → guilt + relief
+**Answer:** B. Trigger (cue) → negative feeling (boredom/anxiety) → coping behavior (avoidance) → temporary relief followed by guilt, which strengthens the loop for next time.
+
+**2. Why does the 2-minute rule effectively overcome procrastination?**
+a) Two minutes of work burns more calories than sitting idle
+b) It lowers activation energy below the brain's threat threshold, and the Zeigarnik effect then carries momentum forward
+c) It tricks the brain into producing extra dopamine for exactly two minutes
+d) It works only for physical tasks, not cognitive learning
+**Answer:** B. The barrier to starting for two minutes is so low that the brain does not perceive threat. Once started, the Zeigarnik effect (desire to finish what was started) usually keeps you going well beyond the initial two minutes.
+
+**3. What is an implementation intention?**
+a) A detailed plan for implementing a new software feature
+b) A vague goal like "I will study harder this semester"
+c) An if-then plan specifying when, where, and how you will perform a behavior
+d) A legal contract you sign with yourself to enforce study habits
+**Answer:** C. Implementation intentions use the format "If [situation], then I will [specific action]." Research by Gollwitzer shows they double or triple follow-through rates because the situation automatically triggers the behavior without willpower.
+
+**4. What is the key rule that makes temptation bundling effective?**
+a) The temptation must be something you dislike
+b) The temptation must be reserved exclusively for the learning task and not available at other times
+c) You must study for at least two hours before allowing the temptation
+d) The temptation must be food-based
+**Answer:** B. The guilty pleasure (podcast, coffee, special pen) must be reserved only for study time. If you allow it at other times, the bundling loses its power to create anticipation and motivation.
+
+**5. The Zeigarnik effect states that:**
+a) Completed tasks are remembered better than interrupted ones
+b) Interrupted or incomplete tasks are remembered better than completed ones
+c) Tasks completed in the morning are recalled more accurately
+d) Multitasking improves overall task completion rates
+**Answer:** B. Named after Bluma Zeigarnik, this effect explains why your brain maintains subconscious tension around unfinished tasks — and why stopping a study session mid-stream pulls you back to continue later.
+
+**6. According to the 20-second rule (Shawn Achor), how does environmental design influence habit formation?**
+a) Every 20 seconds of willpower replenishes one unit of self-control
+b) Decreasing activation energy for good habits by 20 seconds (or increasing it for bad habits) can determine whether a behavior happens or not
+c) You should spend exactly 20 seconds deciding whether to study
+d) Twenty-second study bursts are the optimal learning interval
+**Answer:** B. Human behavior follows the path of least resistance. Making good habits easier by 20 seconds (e.g., leaving your IDE open) and bad habits harder by 20 seconds (e.g., logging out of social media) shifts which behavior wins.
+
+**7. What is habit stacking and what formula does it follow?**
+a) Performing all habits simultaneously to save time
+b) After/Before [current habit], I will [new habit] — attaching a new behavior to an existing automatic one
+c) Stacking multiple new habits at once for faster results
+d) Replacing one bad habit with one good habit each week
+**Answer:** B. Habit stacking (James Clear, *Atomic Habits*) leverages an existing automatic behavior as a reliable trigger. The new habit inherits the reliability of the old one, making it far more likely to stick than if started in isolation.
+
+**8. Which of the following is NOT a keystone habit for learners?**
+a) Regular sleep schedule
+b) Morning deep work block before checking notifications
+c) Checking email every 15 minutes to stay responsive
+d) Weekly review and reflection
+**Answer:** C. Keystone habits trigger positive cascades across many areas. Checking email frequently fragments attention and undermines deep work — it is an anti-pattern, not a keystone. The real keystones are sleep, morning deep work, weekly review, exercise, and consistent Pomodoro practice.
+
+**9. What does willpower depletion (ego depletion) imply for scheduling learning?**
+a) Willpower is unlimited, so schedule doesn't matter
+b) Willpower replenishes fastest during exercise
+c) Self-control is a finite resource that declines through the day, so the hardest learning should be scheduled in the morning
+d) Learning in the evening is more effective because the brain has warmed up
+**Answer:** C. Research shows that decision fatigue and self-control depletion accumulate throughout the day. Morning hours — when willpower is at its peak — are optimal for difficult new concepts and deep problem-solving.
+
+**10. Which of the following best describes Cal Newport's four philosophies of deep work?**
+a) Pomodoro, Eisenhower, GTD, and Getting Things Done
+b) Monastic, Bimodal, Rhythmic, and Journalistic
+c) Linear, Circular, Chaotic, and Structured
+d) Individual, Pair, Mob, and Solo
+**Answer:** B. The four deep-work philosophies are: Monastic (complete isolation for long periods), Bimodal (alternating long deep-work days with shallow days), Rhythmic (daily scheduled deep blocks, e.g., 90 minutes every morning), and Journalistic (fitting deep work into any available gap, requiring rapid switching into focus).
+
+**11. What is attention residue and how does it affect learning?**
+a) The ability to pay attention to multiple things at once
+b) The phenomenon where after switching tasks, part of your attention remains stuck on the previous task, impairing performance for 10-20 minutes
+c) The mental energy left over after a deep work session
+d) A meditation technique for clearing the mind before studying
+**Answer:** B. Coined by Sophie Leroy, attention residue means every task switch costs more than the interruption time — a 30-second glance at a notification can cause 10-15 minutes of degraded focus. Batching switches and ritualizing transitions protect against this.
+
+**12. What is the purpose of a weekly review and which practice does it complement?**
+a) To plan every hour of the upcoming week in detail; complements deep work
+b) To step back and evaluate what worked, what didn't, and what to adjust; complements the 4DX framework's "cadence of accountability"
+c) To re-read all notes from the week; complements spaced repetition
+d) To set annual goals; complements the compound effect
+**Answer:** B. The weekly review (adapted from David Allen's GTD) is the fourth discipline of 4DX — it creates a cadence of accountability. By reviewing lead measures, wins, struggles, and commitments every Sunday, you prevent drift and maintain strategic alignment.
 
 ---
 

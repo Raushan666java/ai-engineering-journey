@@ -147,6 +147,23 @@ Walking the palace:
 
 > **Try This:** Build a memory palace with 10 loci from your own home. Encode your grocery list. Walk it 3 times mentally, then test yourself an hour later without looking at the list.
 
+```mermaid
+flowchart LR
+    subgraph "Building a Memory Palace"
+        A[Choose familiar location<br/>Your home, college, route] --> B[Define path<br/>Enter → Hall → Kitchen →<br/>Bedroom → Balcony]
+        B --> C[Identify loci stations<br/>Door, sofa, table,<br/>window, bookshelf]
+        C --> D[Place each concept<br/>at one station]
+        D --> E[Associate with vivid image<br/>Exaggerated, emotional,<br/>multi-sensory]
+        E --> F[Walk the path<br/>in your mind daily]
+        F --> G[Recall by mentally<br/>walking the palace]
+    end
+    subgraph "Java Example"
+        H["Locus 1 - Door: JVM (loading bytecode into memory)"]
+        I["Locus 2 - Sofa: Heap (objects resting)"]
+        J["Locus 3 - Table: Stack (LIFO plates)"]
+    end
+```
+
 ---
 
 ### Q47: How do visual mnemonics work for encoding abstract concepts?
@@ -576,6 +593,18 @@ Position 10: null (not encoded yet)
 ```
 
 > **Try This:** Memorize the 1-10 peg list today (bun, shoe, tree, door, hive, sticks, heaven, gate, wine, hen). Use it to encode the first 10 elements of the periodic table. Tomorrow, test yourself by calling out random numbers — can you recall the element without walking from 1?
+
+```mermaid
+graph TB
+    subgraph "Peg System: Number → Rhyme → Concept"
+        A["1 = Bun<br/>Picture a hot dog bun"] --> B["Associate with first concept"]
+        C["2 = Shoe<br/>Picture a giant shoe"] --> D["Associate with second concept"]
+        E["3 = Tree<br/>Picture a tree growing indoors"] --> F["Associate with third concept"]
+        G["4 = Door<br/>Picture a talking door"] --> H["Associate with fourth concept"]
+        I["5 = Hive<br/>Picture a buzzing beehive"] --> J["Associate with fifth concept"]
+    end
+    K["Recall by going through: Bun → Shoe → Tree → Door → Hive<br/>Each triggers associated concept"]
+```
 
 ---
 
@@ -2599,6 +2628,109 @@ over the course of a semester.
 ```
 
 > **Try This:** Build a complete memory system for your current course using the 5-phase workflow. Use the diagnostic metrics to track your progress. After one week, measure whether your recall has improved compared to your previous study method.
+
+---
+
+```mermaid
+flowchart TD
+    subgraph "Encoding Specificity Principle"
+        A[Study in environment X] --> B[Memory encoded with<br/>context X as retrieval cue]
+        B --> C[Recall best when<br/>tested in environment X]
+        D[Study while listening to music] --> E[Recall best with<br/>same music playing]
+        F[Study in exam-like conditions] --> G[Recall best<br/>during actual exam]
+    end
+    subgraph "Practical Applications"
+        H[For GATE: Study in exam-like<br/>quiet environment]
+        I[For interviews: Practice in<br/>simulated interview setting]
+        J[For frameworks: Code in<br/>your actual dev environment]
+    end
+```
+
+### Self-Assessment Quiz
+
+**1. What is the core cognitive principle that makes the method of loci (memory palace) effective?**
+a) The prefrontal cortex processes spatial information faster than language
+b) The hippocampus evolved for spatial navigation, so anchoring abstract data to locations piggybacks on an ancient neural system
+c) Visual images consume less working memory than words
+d) Walking a familiar route releases dopamine that enhances encoding
+**Answer:** b. The hippocampus, which encodes spatial navigation, evolved long before abstract reasoning. Memory palaces exploit this ancient system by anchoring abstract information to concrete spatial locations.
+
+**2. A student transforms the abstract concept of a "semaphore" into a mental image of a bouncer with a clicker counting people entering a club. This is an example of which technique?**
+a) Chaining
+b) Memory compression
+c) Visual mnemonics
+d) Peg system
+**Answer:** c. Visual mnemonics translate abstract concepts into concrete, vivid, multisensory mental images. The bouncer-clicker image encodes the semaphore's up/down counting behavior.
+
+**3. What is the primary limitation of the chaining system compared to the peg system?**
+a) Chaining requires memorizing pegs first, which takes longer to set up
+b) Chaining only works for sequences of 5 items or fewer
+c) Chaining only allows sequential recall from the beginning; you cannot jump to the middle
+d) Chaining cannot encode abstract concepts, only concrete objects
+**Answer:** c. Chaining requires walking through the entire story from the start to reach any item. The peg system provides random access by position because each peg is independent.
+
+**4. Using the standard rhyming peg system, what peg word corresponds to position 6, and how would you encode "Carbon" at that position?**
+a) Peg word "sticks" — imagine sticks of charcoal arranged in a diamond lattice
+b) Peg word "sicks" — imagine carbon sick from too much diamond pressure
+c) Peg word "six" — imagine the number 6 made of carbon
+d) Peg word "mix" — imagine mixing carbon with iron to make steel
+**Answer:** a. The standard 1-10 peg list uses rhyming: 1=bun, 2=shoe, 3=tree, 4=door, 5=hive, 6=sticks, 7=heaven, 8=gate, 9=wine, 10=hen. Position 6 = sticks, so carbon (C) would be sticks of charcoal.
+
+**5. A student creates the acronym "ACID" to remember Atomicity, Consistency, Isolation, Durability. When reviewing, they try to recall the full meaning from just "ACID." This is an example of what technique?**
+a) The peg system
+b) State-dependent memory
+c) The compression-expansion cycle
+d) The testing effect
+**Answer:** c. Memory compression uses the compression-expansion cycle: compress information into a small trigger (acronym), then practice expanding it back into full meaning until the expansion becomes automatic.
+
+**6. According to the encoding specificity principle, which study habit is most likely to cause a memory failure during an exam?**
+a) Studying the same material in multiple locations
+b) Practicing retrieval without your notes
+c) Re-reading notes repeatedly with the notes in front of you
+d) Creating exam-style questions and answering them during study
+**Answer:** c. When you re-read with notes present, the notes themselves become the retrieval cue. When the notes are gone during the exam, the cue disappears. Practicing retrieval without notes forces you to build self-sufficient memory traces.
+
+**7. A student studies for an exam while drinking coffee late at night. They perform poorly on the morning exam despite knowing the material. Which memory phenomenon best explains this?**
+a) Encoding specificity — the retrieval cue "reading a textbook section" mismatched the exam format
+b) State-dependent memory — their internal state (caffeinated, late-night) differed from the exam state (uncaffeinated, morning)
+c) Context-dependent memory — the physical room was different
+d) The generation effect — they should have generated answers instead of reading
+**Answer:** b. State-dependent memory means information encoded in a particular physiological state (caffeinated, late-night) is better recalled in that same state. The internal state mismatch between studying and the exam reduced recall.
+
+**8. Godden & Baddeley (1975) had deep-sea divers learn word lists on land or underwater. What did they find?**
+a) Divers who learned underwater performed better in both test conditions
+b) All divers performed equally well regardless of encoding or retrieval context
+c) Recall dropped 30-50% when the encoding and retrieval contexts mismatched
+d) Learning underwater produced stronger memories regardless of test context
+**Answer:** c. Divers who learned on land recalled best on land; those who learned underwater recalled best underwater. Recall dropped 30-50% when context mismatched — the canonical demonstration of context-dependent memory.
+
+**9. Slamecka and Graf (1978) showed that students who generated the second word of a pair ("rapid — f???") remembered better than those who read the complete pair ("rapid — fast"). What is this called?**
+a) The testing effect
+b) The generation effect
+c) The desirable difficulty effect
+d) The encoding specificity effect
+**Answer:** b. The generation effect: actively generating information (even with errors) leads to 20-40% better recall than passively reading it, because the cognitive effort strengthens the memory trace.
+
+**10. According to the testing effect, which study strategy produces the best long-term retention?**
+a) Re-reading the material three times
+b) Creating a detailed summary while the book is open
+c) Testing yourself on the material and checking your answers for feedback
+d) Listening to a lecture recording twice
+**Answer:** c. Testing with feedback produces the strongest retention (70-80% after one week) compared to restudying (~40%). The act of retrieval strengthens the neural pathway, and feedback corrects errors.
+
+**11. Robert Bjork's concept of "desirable difficulties" suggests that the optimal difficulty level for a study session produces what success rate?**
+a) 90-100% (feels easy and fluent)
+b) 60-80% (challenging but achievable)
+c) 40-50% (struggling on most problems)
+d) Below 30% (extremely challenging)
+**Answer:** b. The sweet spot is ~60-80% success. Below 40% causes frustration with minimal learning; above 90% feels productive but produces minimal durable retention because the brain is not forced to do the difficult work of retrieval and reconsolidation.
+
+**12. A student studying Operating Systems builds a memory palace with rooms for each topic, chains stories inside each room, creates acronyms for key concepts, and tests themselves daily. This approach is known as:**
+a) The peg system with random access
+b) Layering multiple memory systems to reinforce each other
+c) Overlearning to automaticity
+d) State-dependent encoding
+**Answer:** b. The most powerful approach integrates multiple memory systems — palace (spatial), chaining (sequential), visual mnemonics (concrete), compression (acronyms), and retrieval practice — so that each layer reinforces the others.
 
 ---
 

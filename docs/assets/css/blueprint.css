@@ -73,16 +73,16 @@ body {
 
 /* === OVERRIDE MKDOCOLS MATERIAL THEME === */
 .md-header {
-  background: rgba(250, 250, 245, 0.94) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  color: var(--ink) !important;
-  box-shadow: none !important;
-  border-bottom: 1px solid var(--rule-soft) !important;
+  background: var(--ink) !important;
+  color: var(--bg) !important;
+  box-shadow: var(--shadow-hard) !important;
 }
 
 [data-md-color-scheme="slate"] .md-header {
-  background: rgba(18, 18, 18, 0.94) !important;
+  background: var(--bg-surface) !important;
+  color: var(--ink) !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid var(--rule-soft) !important;
 }
 
 .md-header__inner {
@@ -94,6 +94,10 @@ body {
 .md-header__title {
   font-family: var(--font-display) !important;
   font-size: 1.4rem !important;
+  color: var(--bg) !important;
+}
+
+[data-md-color-scheme="slate"] .md-header__title {
   color: var(--ink) !important;
 }
 
@@ -103,10 +107,19 @@ body {
 }
 
 .md-header__button {
+  color: var(--bg) !important;
+}
+
+[data-md-color-scheme="slate"] .md-header__button {
   color: var(--ink-soft) !important;
 }
 
 .md-header__button:hover {
+  color: var(--bg) !important;
+  opacity: 0.8;
+}
+
+[data-md-color-scheme="slate"] .md-header__button:hover {
   color: var(--ink) !important;
 }
 
@@ -114,6 +127,10 @@ body {
   background: var(--bg) !important;
   border-bottom: 1px solid var(--rule-soft) !important;
   color: var(--ink) !important;
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background: var(--bg) !important;
 }
 
 .md-tabs__list {
@@ -126,11 +143,15 @@ body {
   font-size: 0.72rem !important;
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
-  color: var(--ink-mute) !important;
+  color: var(--ink-soft) !important;
+  border-bottom: 2px solid transparent !important;
+  padding-bottom: 4px !important;
+  transition: border-color 0.15s ease, color 0.15s ease !important;
 }
 
 .md-tabs__link--active {
   color: var(--ink) !important;
+  border-bottom-color: var(--ink) !important;
 }
 
 .md-tabs__link:hover {
@@ -1890,32 +1911,6 @@ tr.today-highlight td {
 }
 
 /* === TAB BAR (navigation.tabs) === */
-.md-tabs {
-  background: var(--bg) !important;
-  border-bottom: 2px solid var(--ink) !important;
-}
-
-.md-tabs__list {
-  margin: 0 auto !important;
-  max-width: 1100px !important;
-}
-
-.md-tabs__link {
-  font-family: var(--font-display) !important;
-  font-size: 0.7rem !important;
-  letter-spacing: 0.06em !important;
-  text-transform: uppercase !important;
-  color: var(--ink-mute) !important;
-  margin-top: 0 !important;
-  opacity: 1 !important;
-}
-
-.md-tabs__link--active,
-.md-tabs__link:hover {
-  color: var(--ink) !important;
-  opacity: 1 !important;
-}
-
 .md-tabs__item {
   padding: 10px 0 8px 0 !important;
 }

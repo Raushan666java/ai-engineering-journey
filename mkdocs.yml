@@ -1,7 +1,7 @@
-site_name: "Raushan's CS Journey"
+site_name: "Raushan Kumar — AI Engineering"
 site_url: https://raushan666java.github.io/ai-engineering-journey/
 site_author: Raushan Kumar
-site_description: "A complete, university-level Computer Science curriculum. Every subject from foundations to advanced electives, taught in textbook style."
+site_description: "Full-stack Laravel developer transitioning to AI Engineering. 500+ lessons across ML/AI, GATE CS, placement prep, Java, and system design."
 
 repo_name: Raushan666java/ai-engineering-journey
 repo_url: https://github.com/Raushan666java/ai-engineering-journey
@@ -34,6 +34,8 @@ theme:
     - navigation.path
     - navigation.top
     - navigation.footer
+    - navigation.sections
+    - navigation.collapse
     - search.highlight
     - search.suggest
     - content.code.copy
@@ -90,6 +92,10 @@ extra:
       link: https://github.com/Raushan666java
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/raushan-kumar-477465250
+    - icon: fontawesome/solid/globe
+      link: https://apexpillar.tech
+    - icon: fontawesome/solid/envelope
+      link: mailto:hello@apexpillar.tech
   analytics:
     provider: google
     property: G-XXXXXXXXXX

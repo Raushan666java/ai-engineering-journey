@@ -4,87 +4,136 @@ hide:
   - toc
 ---
 
-# Complete Computer Science Curriculum
+# Hi, I'm Raushan Kumar
 
-Welcome to a **complete, self-contained Computer Science curriculum** — every subject taught like a university textbook. Designed for self-learners, students, and professionals who want to master CS from first principles to advanced topics.
+> **Laravel developer → AI Engineer.** Based in Patna, Bihar. Building my path into AI Automation Engineering — one documented lesson at a time.
+
+I run [ApexPillar Technologies](https://apexpillar.tech), a Patna-based dev agency. I've shipped production ERPs, WhatsApp AI bots, and automated media pipelines. Now I'm going deep on **LLM Engineering, Agent Systems, and MCP** — and publishing everything I learn here.
 
 ---
 
-<div class="curriculum-wrapper">
+## What I'm Building
 
-## The Curriculum
+<div class="project-grid">
 
-<div class="course-group">
-<h3 class="course-group__title">Foundation</h3>
-<ol class="course-list" start="1">
-<li><a href="courses/c-programming/">C Programming</a></li>
-<li><a href="courses/discrete-mathematics/">Discrete Mathematics</a></li>
-<li><a href="courses/digital-logic/">Digital Logic</a></li>
-</ol>
+<div class="project-card">
+<h3>📱 ApexERP</h3>
+<p>WhatsApp-first AI ERP for Bihar/UP SMBs — Laravel + n8n + OpenAI. In production with RP Fitness Gym (membership, UPI payments, AI trainer).</p>
+<a href="https://github.com/Raushan666java">GitHub →</a>
 </div>
 
-<div class="course-group">
-<h3 class="course-group__title">Core</h3>
-<ol class="course-list" start="4">
-<li><a href="courses/data-structures/">Data Structures</a></li>
-<li><a href="courses/oop-cpp/">OOP with C++</a></li>
-<li><a href="courses/algorithms/">Algorithms</a></li>
-</ol>
+<div class="project-card">
+<h3>🎵 Purvanchal Flow Studio</h3>
+<p>Automated Bhojpuri music/video pipeline — ACE-Step + YuE + MoneyPrinterTurbo + n8n. Generate, caption, and publish content programmatically.</p>
+<a href="https://github.com/Raushan666java">GitHub →</a>
 </div>
 
-<div class="course-group">
-<h3 class="course-group__title">Core Systems</h3>
-<ol class="course-list" start="7">
-<li><a href="courses/operating-systems/">Operating Systems</a></li>
-<li><a href="courses/database-management-systems/">Database Management Systems</a></li>
-<li><a href="courses/computer-networks/">Computer Networks</a></li>
-</ol>
+<div class="project-card">
+<h3>🧠 ChromaDB Memory Server</h3>
+<p>Self-hosted persistent AI memory on Hetzner VPS — FastAPI + ChromaDB + Cloudflare Tunnel. Powers long-term memory for my agent systems.</p>
+<a href="https://github.com/Raushan666java">GitHub →</a>
 </div>
 
-<div class="course-group">
-<h3 class="course-group__title">Theoretical CS</h3>
-<ol class="course-list" start="10">
-<li><a href="courses/theory-of-computation/">Theory of Computation</a></li>
-<li><a href="courses/compiler-design/">Compiler Design</a></li>
-<li><a href="courses/software-engineering/">Software Engineering</a></li>
-</ol>
+<div class="project-card">
+<h3>📄 Biodata AI Generator</h3>
+<p>Laravel + DomPDF + AI-enhanced profiles — generate matrimonial biodata PDFs with smart formatting and AI-written profiles.</p>
+<a href="https://github.com/Raushan666java">GitHub →</a>
 </div>
 
-<div class="course-group">
-<h3 class="course-group__title">Applied</h3>
-<ol class="course-list" start="13">
-<li><a href="courses/python-programming/">Python Programming</a></li>
-<li><a href="courses/web-development/">Web Development</a></li>
-<li><a href="courses/artificial-intelligence/">Artificial Intelligence</a></li>
-<li><a href="courses/machine-learning/">Machine Learning</a></li>
-</ol>
-</div>
-
-<div class="course-group">
-<h3 class="course-group__title">Advanced</h3>
-<ol class="course-list" start="17">
-<li><a href="courses/system-design/">System Design</a></li>
-<li><a href="courses/devops/">DevOps</a></li>
-<li><a href="courses/cloud-computing/">Cloud Computing</a></li>
-<li><a href="courses/cyber-security/">Cyber Security</a></li>
-<li><a href="courses/blockchain/">Blockchain</a></li>
-</ol>
+<div class="project-card">
+<h3>💪 RP Fitness Gym ERP</h3>
+<p>Full gym management — WhatsApp AI automation, UPI payments, membership tracking, trainer scheduling. Real production deployment.</p>
+<a href="https://github.com/Raushan666java">GitHub →</a>
 </div>
 
 </div>
 
 ---
 
-## How to Use This Curriculum
+## My Tech Journey
 
-Each course follows the same **textbook chapter structure**:
+| Year | Milestone |
+|------|-----------|
+| 2022 | Started ApexPillar Technologies as freelance agency |
+| 2023 | Completed B.Tech CS, built first production ERP (Pragati Construction) |
+| 2023–2024 | Internship at Digital Innovations, Gurugram |
+| 2024 | Joined Givni Private Limited, built Gym ERP with AI features |
+| 2025–present | Deep AI Engineering transition — RAG, LangGraph, Agents, MCP |
 
-> **Learning Objectives → Theory → Examples → Summary → Exercises**
+---
 
-1. **Start with Foundation** courses — C, Discrete Math, Digital Logic
-2. **Progress to Core Systems** — OS, DBMS, Networks
-3. **Study Theoretical CS** — TOC, Compiler Design, Software Engineering
-4. **Explore Applied topics** — AI, ML, Python, Web Dev
-5. **Finish with Advanced electives** — System Design, DevOps, Cloud, Security, Blockchain
+## Target Role
 
-Each chapter includes **review questions, application problems, and challenge problems** to test understanding.
+> **AI Automation Engineer · AI Agent Developer · LLM Integration Engineer**
+> *Dubai / Remote / Patna — Open from July 2026*
+
+I bridge Laravel's pragmatic production mindset with Python's AI ecosystem. If you need someone who can ship both a FastAPI agent endpoint and a Laravel dashboard, I'm your person.
+
+---
+
+## What's Ready to Read Now
+
+This site has **500+ lessons across 20 phases**, plus **fully written bonus courses**. Here's what's ready today:
+
+=== "🎯 Phase 11 — LLM Engineering"
+
+    - 01 Prompt Engineering (836 lines, full)
+    - 06 RAG (323 lines)
+    - 07 Advanced RAG (396 lines)
+    - 08 Fine-tuning LoRA (397 lines)
+    - 09 Function Calling (566 lines)
+    - 13 Production App (947 lines)
+    - → [Browse all 17 lessons](ai-engineering-from-scratch/phases/11-llm-engineering/)
+
+=== "📚 Completed Courses"
+
+    - 💼 **Placement Prep** — 8 files, 6K+ line DSA bank, SQL bank, company PYQs
+    - 🎯 **GATE CS** — 15+ files covering all subjects with PYQs
+    - ☕ **Java/Spring Boot** — Chapters 56–66, full interview preparation
+    - 🧠 **Learning How to Learn** — 130 Q&As, 8 parts, applied meta-skill
+    - ⚡ **Laravel 13** — 54 chapters covering core to AI SDKs and MCP
+
+=== "🔧 Phase 13-14 — Tools & Agents"
+
+    - MCP Fundamentals, Building an MCP Server, MCP Client
+    - Agent Loop, Function Calling, Anthropic Workflow Patterns
+    - LangGraph Stateful Graphs, Mem0 Hybrid Memory
+    - → [Phase 13](ai-engineering-from-scratch/phases/13-tools-and-protocols/) · [Phase 14](ai-engineering-from-scratch/phases/14-agent-engineering/)
+
+---
+
+## Contact
+
+- **Email:** [hello@apexpillar.tech](mailto:hello@apexpillar.tech)
+- **LinkedIn:** [linkedin.com/in/raushan-kumar-477465250](https://linkedin.com/in/raushan-kumar-477465250)
+- **GitHub:** [github.com/Raushan666java](https://github.com/Raushan666java)
+- **ApexPillar:** [apexpillar.tech](https://apexpillar.tech)
+
+<style>
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+.project-card {
+  background: var(--md-default-fg-color--lightest);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 8px;
+  padding: 20px 24px;
+}
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+.project-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  color: var(--md-default-fg-color--light);
+}
+.project-card a {
+  font-size: 0.85rem;
+}
+</style>

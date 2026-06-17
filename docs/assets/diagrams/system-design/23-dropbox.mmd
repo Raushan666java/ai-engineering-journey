@@ -1,0 +1,43 @@
+graph TB
+    subgraph Client Device
+        FW[File Watcher inotify/FSEvents/RDCW]
+        IE[Indexing Engine SQLite DB]
+        SE[Sync Engine State Machine]
+        CD[Conflict Detector]
+        CDC[Content-Defined Chunking Rabin Fingerprint]
+    end
+    subgraph Network
+        LS[LAN Sync P2P Transfer]
+        TLS2[TLS/HTTPS]
+    end
+    subgraph Server
+        API2[Sync API]
+        MS[(Metadata Store Sharded MySQL)]
+        SS[(Block Storage S3 / Magic Pocket)]
+    end
+    subgraph Magic Pocket
+        EC[Erasure Coding Reed-Solomon 12,8]
+        GR[Geo Replication]
+        HAMR[Failure Domain Aware Placement]
+    end
+    subgraph Collaboration
+        DP[Dropbox Paper CRDT-based]
+        SH[Sharing Service]
+        VH[Version History]
+    end
+    subgraph Security
+        ENC[AES-256 Encryption]
+        ZKE[Zero-Knowledge Key Enterprise]
+        TFA[Two-Factor Auth]
+        AL[Audit Logging]
+    end
+    FW --> IE
+    IE --> CDC
+    CDC --> SE
+    SE --> CD
+    SE --> LS
+    SE --> TLS2
+    TLS2 --> API2
+    API2 --> MS
+    API2 --> SS
+    SS --> EC

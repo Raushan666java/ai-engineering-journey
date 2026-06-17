@@ -8,6 +8,8 @@
 - Analyze the time complexity of stack and queue operations
 - Apply stacks and queues to practical problems
 
+![C Stacks and Queues: LIFO and FIFO ADTs, Array and Linked-List Implementations](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-16-stacks-queues.png)
+
 ## 16.1 The Stack Abstract Data Type
 
 A stack is a last-in, first-out (LIFO) data structure. The primary operations are:

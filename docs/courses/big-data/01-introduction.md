@@ -36,7 +36,7 @@ print(f"{events_per_second} events/sec, {events_per_day:,} events/day")
 
 **Variety** — Data arrives in multiple formats: structured (CSV, Parquet), semi-structured (JSON, XML), and unstructured (images, text, video).
 
-![The 3 V's of Big Data](../assets/images/diagrams/big-data/ch01-three-vs.png)
+![The 3 V's of Big Data](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch01-three-vs.png)
 
 ## 1.2 The Scale Problem
 

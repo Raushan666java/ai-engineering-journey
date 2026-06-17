@@ -12,6 +12,8 @@ By the end of this chapter, you will be able to:
 
 ## 9.1 Principles of REST
 
+![REST APIs Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/09-rest-apis.png)
+
 REST (Representational State Transfer) is an architectural style for designing networked applications. RESTful APIs are built around resources, which are identified by URIs and manipulated through standard HTTP methods.
 
 ### Core Constraints

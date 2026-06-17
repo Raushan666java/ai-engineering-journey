@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Turing Machine Extensions Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/09-turing-extensions.png)
+
 ### 9.1 Recursively Enumerable vs Recursive Languages
 
 A language L is **recursively enumerable (RE)** if there exists a Turing machine M such that L(M) = L. This means M halts in the accept state for every w ∈ L, and for w ∉ L, M either halts in reject or **loops forever**.

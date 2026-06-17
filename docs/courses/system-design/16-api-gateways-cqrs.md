@@ -14,6 +14,8 @@
 
 ## Theory
 
+![API Gateways and CQRS Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/16-api-gateway-cqrs.png)
+
 ### 1. API Gateway vs Load Balancer
 
 A **load balancer** (e.g., Nginx, HAProxy, AWS ELB) distributes traffic across backend servers at L4 (TCP) or L7 (HTTP). It handles connection pooling, SSL termination, and health checks. It operates at the transport or application layer but does not understand application semantics.

@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Trie Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch16-trie.png)
+
 ### Definition
 
 A **trie** (from "retrieval") is a tree data structure for storing strings. Each node represents a character. A path from root to a node spells a prefix. Nodes may be marked as terminal (end of a word).

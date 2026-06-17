@@ -13,6 +13,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![DOM Manipulation Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/04-dom.png)
+
 ### 4.1 Selecting Elements
 
 Modern DOM selection uses CSS-selector-based methods:

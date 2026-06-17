@@ -10,6 +10,8 @@ After completing this chapter, you will be able to:
 - Parallelize ML workflows: hyperparameter tuning, batch inference, ensemble evaluation
 - Avoid shared-state pitfalls and serialization bottlenecks
 
+![Concurrency and Multiprocessing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/21-concurrency-multiprocessing.png)
+
 ## 21.1 The GIL Problem
 
 The Global Interpreter Lock (GIL) is a mutex in CPython that prevents multiple threads from executing Python bytecode simultaneously. It exists because CPython's memory management (reference counting) is not thread-safe.

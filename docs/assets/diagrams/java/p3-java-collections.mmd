@@ -1,0 +1,34 @@
+flowchart TB
+  JCF[Java Collections Framework]
+  JCF --> ITER[Iterable]
+  ITER --> COL[Collection]
+  COL --> LIST[List]
+  COL --> SET[Set]
+  COL --> QUEUE[Queue]
+
+  LIST --> AL[ArrayList]
+  LIST --> LL[LinkedList]
+  LIST --> VEC[Vector]
+
+  SET --> HS[HashSet]
+  SET --> TS[TreeSet]
+  SET --> LHS[LinkedHashSet]
+
+  QUEUE --> PQ[PriorityQueue]
+  QUEUE --> DEQ[Deque]
+
+  JCF --> MAP[Map]
+  MAP --> HM[HashMap]
+  MAP --> TM[TreeMap]
+  MAP --> LHM[LinkedHashMap]
+
+  JCF --> CONC[Concurrent]
+  CONC --> CHM[ConcurrentHashMap]
+  CONC --> CQ[ConcurrentLinkedQueue]
+  CONC --> CBQ[CopyOnWriteArrayList]
+
+  JCF --> COMP[Comparable vs Comparator]
+  JCF --> STREAMS[Stream API]
+  STREAMS --> INTER[Intermediate Operations]
+  STREAMS --> TERM[Terminal Operations]
+  STREAMS --> PARAL[Parallel Streams]

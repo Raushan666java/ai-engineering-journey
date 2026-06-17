@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Monitoring and Logging Stack Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch12-monitoring-logging.png)
+
 By the end of this chapter, students will be able to:
 
 1. Deploy and configure Prometheus for metrics collection and alerting

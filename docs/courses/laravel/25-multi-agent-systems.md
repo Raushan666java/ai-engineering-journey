@@ -1,4 +1,4 @@
-# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
+﻿# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
 
 ---
 
@@ -16,23 +16,26 @@
 
 ## Theory
 
+![Multi-Agent Systems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/25-multi-agent-systems.png)
+
+
 ### 25.1 The Supervisor/Worker Pattern
 
-Single-agent systems handle one task per invocation. A multi-agent system introduces a **supervisor** that accepts a high-level goal, decomposes it into sub-tasks, and dispatches each sub-task to a specialized **worker** agent. The supervisor does not perform the work itself — it plans, delegates, and synthesises results.
+Single-agent systems handle one task per invocation. A multi-agent system introduces a **supervisor** that accepts a high-level goal, decomposes it into sub-tasks, and dispatches each sub-task to a specialized **worker** agent. The supervisor does not perform the work itself â€” it plans, delegates, and synthesises results.
 
 #### Architecture
 
 ```
 User Request
-      │
-      ▼
-SupervisorAgent ──analyzes task──► decides worker
-      │
-      ├──► ResearchAgent   (gathers information)
-      ├──► SummarizerAgent (condenses content)
-      └──► WriterAgent     (produces final output)
-      │
-      └──► merges results ──► returns response
+      â”‚
+      â–¼
+SupervisorAgent â”€â”€analyzes taskâ”€â”€â–º decides worker
+      â”‚
+      â”œâ”€â”€â–º ResearchAgent   (gathers information)
+      â”œâ”€â”€â–º SummarizerAgent (condenses content)
+      â””â”€â”€â–º WriterAgent     (produces final output)
+      â”‚
+      â””â”€â”€â–º merges results â”€â”€â–º returns response
 ```
 
 #### The SupervisorAgent Class
@@ -62,7 +65,7 @@ Analyze the user's request and classify it into one of these categories:
 - write: needs original content produced
 
 Call the appropriate worker tool with the user's input.
-Do NOT answer the question yourself — delegate it.
+Do NOT answer the question yourself â€” delegate it.
 PROMPT;
     }
 }
@@ -233,7 +236,7 @@ class SummarizerAgent implements Agent
         return <<<PROMPT
 You are a summarization specialist. Condense content while preserving key
 facts, arguments, and conclusions. Adapt your summary length to the
-request — one paragraph for quick overviews, structured sections for
+request â€” one paragraph for quick overviews, structured sections for
 detailed summaries. Never add information not in the original.
 PROMPT;
     }
@@ -266,7 +269,7 @@ PROMPT;
 
 #### The Supervisor Resolver
 
-The supervisor's tool execution layer resolves which worker to call. This is handled by the AI SDK — when the model calls the `research`, `summarize`, or `write` tool, the SDK routes the call to the tool handler registered in the application:
+The supervisor's tool execution layer resolves which worker to call. This is handled by the AI SDK â€” when the model calls the `research`, `summarize`, or `write` tool, the SDK routes the call to the tool handler registered in the application:
 
 ```php
 <?php
@@ -348,7 +351,7 @@ class AiServiceProvider extends ServiceProvider
 
 ### 25.2 Agent Teams & Handoff Protocols
 
-A single supervisor dispatching to isolated workers works for straightforward delegation. Complex goals require **agent teams** — multiple agents that collaborate, pass context, and hand off control to one another mid-conversation.
+A single supervisor dispatching to isolated workers works for straightforward delegation. Complex goals require **agent teams** â€” multiple agents that collaborate, pass context, and hand off control to one another mid-conversation.
 
 #### The Handoff Pattern
 
@@ -616,7 +619,7 @@ class HandoffServiceProvider extends ServiceProvider
 
 ### 25.3 Parallel Agent Execution
 
-Multi-agent systems often need to run several agents at the same time — analyzing the same data from different perspectives, researching multiple topics, or generating alternative outputs. Laravel queues enable true parallel execution.
+Multi-agent systems often need to run several agents at the same time â€” analyzing the same data from different perspectives, researching multiple topics, or generating alternative outputs. Laravel queues enable true parallel execution.
 
 #### The Fan-Out/Fan-In Pattern
 
@@ -2693,7 +2696,7 @@ test('parallel analysis dispatches batch of agent jobs', function () {
 
 1. Build a `QualityReviewAgent` that works alongside an existing `WriterAgent`. The writer produces content, then the quality reviewer checks grammar, tone, and factual accuracy. Use the AgentMemory system so the writer's output is automatically available to the reviewer. Implement the handoff as a job chain.
 
-2. Create a `SentimentAnalysisTeam` with three parallel agents — each analyzing the same customer review text using a different model provider (Anthropic, OpenAI, Gemini). Use the parallel execution pattern to run them simultaneously, then use `ConflictResolver` to synthesize a final sentiment score when the agents disagree.
+2. Create a `SentimentAnalysisTeam` with three parallel agents â€” each analyzing the same customer review text using a different model provider (Anthropic, OpenAI, Gemini). Use the parallel execution pattern to run them simultaneously, then use `ConflictResolver` to synthesize a final sentiment score when the agents disagree.
 
 3. Implement a `RetryPolicy`-protected agent that calls an unreliable external API through an AI agent. Configure the retry with 3 attempts, 2-second base delay, and 1.5x backoff multiplier. Write a PEST test that verifies the retry logic by making the agent throw on the first two calls and succeed on the third.
 

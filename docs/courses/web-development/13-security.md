@@ -12,6 +12,8 @@ By the end of this chapter, you will be able to:
 
 ## 13.1 OWASP Top 10 Overview
 
+![Web Security Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/13-web-security.png)
+
 The Open Web Application Security Project (OWASP) publishes the Top 10 most critical web application security risks:
 
 1. Broken Access Control

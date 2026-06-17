@@ -1,0 +1,28 @@
+flowchart TB
+  DCFG[Distributed Configuration]
+  DCFG --> CS[Config Server]
+  CS --> BACKEND[Backends]
+  BACKEND --> NATIVE[Native / Filesystem]
+  BACKEND --> GIT[Git Backend]
+  BACKEND --> VAULT[HashiCorp Vault]
+  CS --> ENCRYPT[Encryption]
+  ENCRYPT --> SYM[Symmetric]
+  ENCRYPT --> ASYM[Asymmetric]
+
+  DCFG --> CLIENT[Config Client]
+  CLIENT --> BS[bootstrap.yml]
+  CLIENT --> FF[Fail-Fast]
+  CLIENT --> RETRY[Retry Configuration]
+
+  DCFG --> REFRESH[Runtime Refresh]
+  REFRESH --> RFS[RefreshScope]
+  REFRESH --> BUS[Spring Cloud Bus]
+  BUS --> RMQ[RabbitMQ Binding]
+  BUS --> KFK[Kafka Binding]
+  REFRESH --> MON[Spring Cloud Config Monitor]
+  MON --> WH[Webhook Triggers]
+
+  DCFG --> VAULT2[HashiCorp Vault]
+  VAULT2 --> SECRETS[Secrets Engine]
+  VAULT2 --> TOKEN[Token Auth]
+  VAULT2 --> K8S[Kubernetes Auth]

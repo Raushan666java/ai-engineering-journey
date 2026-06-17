@@ -1,0 +1,36 @@
+flowchart TB
+    A["Magic Methods (Dunder Methods)"] --> B["Representation"]
+    A --> C["Comparison and Hashing"]
+    A --> D["Container Emulation"]
+    A --> E["Callable and Context"]
+    A --> F["Iteration"]
+    A --> G["Arithmetic"]
+
+    B --> B1["__repr__ developer representation"]
+    B --> B2["__str__ user-friendly string"]
+    B --> B3["__format__ for f-string formatting"]
+
+    C --> C1["__eq__ equality"]
+    C --> C2["__hash__ hashable objects"]
+    C --> C3["__lt__, __le__, __gt__, __ge__ ordering"]
+    C --> C4["@total_ordering decorator"]
+
+    D --> D1["__getitem__ index access"]
+    D --> D2["__setitem__ index assignment"]
+    D --> D3["__delitem__ delete by index"]
+    D --> D4["__len__ length"]
+    D --> D5["__contains__ membership test"]
+
+    E --> E1["__call__ make object callable"]
+    E --> E2["__enter__ context manager setup"]
+    E --> E3["__exit__ context manager cleanup"]
+
+    F --> F1["__iter__ return iterator"]
+    F --> F2["__next__ next value"]
+    F --> F3["__reversed__ reverse iteration"]
+
+    G --> G1["__add__ +"]
+    G --> G2["__sub__ -"]
+    G --> G3["__mul__ *"]
+    G --> G4["__truediv__ /"]
+    G --> G5["__floordiv__ //"]

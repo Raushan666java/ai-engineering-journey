@@ -1,0 +1,37 @@
+flowchart TD
+    A["Queue ADT"] --> B["FIFO: Front ← Rear"]
+    A --> C["Operations"]
+    A --> D["Implementations"]
+    A --> E["Variants"]
+
+    C --> C1["enqueue(x): O(1)"]
+    C --> C2["dequeue(): O(1)"]
+    C --> C3["front(): O(1)"]
+    C --> C4["isEmpty(): O(1)"]
+
+    D --> D1["Circular Array Queue"]
+    D --> D2["Linked List Queue"]
+
+    D1 --> D1a["Modular arithmetic"]
+    D1 --> D1b["front = (front+1) % cap"]
+    D1 --> D1c["rear = (rear+1) % cap"]
+    D1 --> D1d["Resize on full"]
+
+    D2 --> D2a["head = front"]
+    D2 --> D2b["tail = rear"]
+    D2 --> D2c["Dynamic size"]
+
+    E --> E1["Priority Queue"]
+    E1 --> E1a["Heap-based"]
+    E1 --> E1b["O(log n)"]
+    E --> E2["Deque (Double-Ended)"]
+    E2 --> E2a["Insert/delete both ends"]
+    E2 --> E2b["O(1)"]
+    E --> E3["Monotonic Queue"]
+    E3 --> E3a["Sliding window max"]
+    E3 --> E3b["Amortized O(1)"]
+
+    B --> B1["Applications"]
+    B1 --> B1a["BFS"]
+    B1 --> B1b["Scheduling"]
+    B1 --> B1c["Buffering"]

@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 11.1 File Stream Classes
 
+![File I/O Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/11-file-io.png)
+
 The `<fstream>` header provides three file stream classes derived from `iostream`:
 
 | Class | Base | Direction |

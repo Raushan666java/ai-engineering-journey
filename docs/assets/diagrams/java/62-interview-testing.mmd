@@ -1,0 +1,29 @@
+flowchart TB
+  TEST[Testing Interview Topics]
+  TEST --> PYRAMID[Testing Pyramid]
+
+  PYRAMID --> UNIT[Unit Tests]
+  UNIT --> JUNIT[JUnit 5]
+  UNIT --> MOCK[Mockito]
+  UNIT --> ASSERT[AssertJ]
+
+  PYRAMID --> INTEG[Integration Tests]
+  INTEG --> SLICE[Slice Tests WebMvc DataJpa]
+  INTEG --> TC[Testcontainers]
+  INTEG --> DB[Database Testing]
+
+  PYRAMID --> E2E[End-to-End Tests]
+  E2E --> REST[REST Assured]
+  E2E --> SEL[WebDriver]
+
+  TEST --> PERF[Performance Testing]
+  PERF --> JMH[JMH Microbenchmarks]
+  PERF --> GAT[Gatling Load Tests]
+
+  TEST --> COV[Code Coverage]
+  COV --> JACO[JaCoCo]
+  COV --> PIT[Pitest Mutation]
+
+  TEST --> CONTRACT[Contract Tests]
+  CONTRACT --> CDC[Consumer-Driven]
+  CONTRACT --> SPR[Spring Cloud Contract]

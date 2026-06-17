@@ -1,0 +1,47 @@
+graph TB
+    subgraph Client Layer
+        RD[Rider App]
+        DR[Driver App]
+    end
+    subgraph Gateway Layer
+        API[API Gateway]
+        WS[WebSocket Gateway]
+    end
+    subgraph Dispatch
+        MT[Matching Service]
+        SP[Surge Pricing]
+        ETA[ETA Service]
+        GEO[Geospatial Index S2]
+    end
+    subgraph Streaming
+        KF[Kafka Event Bus]
+        FL[Flink Stream Processing]
+    end
+    subgraph Data Layer
+        RD1[(Redis Driver State)]
+        SQL[(MySQL Trip Store)]
+        HDFS[(HDFS Historical)]
+    end
+    subgraph Analytics
+        HV[Hive]
+        SPK[Spark]
+        MW[Michelangelo ML]
+    end
+    RD --> API
+    DR --> WS
+    WS --> KF
+    KF --> FL
+    FL --> RD1
+    FL --> HDFS
+    API --> MT
+    API --> SP
+    API --> ETA
+    MT --> GEO
+    MT --> KF
+    SP --> KF
+    ETA --> KF
+    HDFS --> HV
+    HDFS --> SPK
+    HDFS --> MW
+    SQL --> MT
+    SQL --> SP

@@ -18,6 +18,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Repository Interfaces
 
+![Spring Data JPA Repository Hierarchy](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/21-spring-data-jpa.png)
+
 Spring Data JPA provides a hierarchy of repository interfaces. Each adds functionality on top of the previous one.
 
 ### 1.1 Interface Hierarchy

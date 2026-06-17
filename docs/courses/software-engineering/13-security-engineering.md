@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the principl
 
 ## Theory
 
+![Security Engineering Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-13-security-engineering.png)
+
 ### Security as an Engineering Discipline
 
 Security engineering is the discipline of building systems that remain dependable in the face of malice, error, or mischance. Unlike safety engineering, which addresses accidental failures, security engineering addresses intentional attacks. Security must be engineered into software from the beginning; retrofitting security is significantly more expensive and less effective.

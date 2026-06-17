@@ -1,4 +1,4 @@
-# Chapter 2: Virtualization
+﻿# Chapter 2: Virtualization
 
 ## Learning Objectives
 
@@ -37,7 +37,7 @@ Oracle VirtualBox is a popular open-source Type 2 hypervisor supporting Windows,
 
 VMware Workstation and VMware Fusion are Type 2 hypervisors for Windows/Linux and macOS respectively. They offer advanced features such as Unity mode, which integrates guest applications into the host desktop, and support for complex networking configurations.
 
-![Hypervisor Types](../assets/images/diagrams/cloud-computing/ch02-hypervisors.png)
+![Hypervisor Types](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch02-hypervisors.png)
 
 ### 2.3 Server Virtualization
 

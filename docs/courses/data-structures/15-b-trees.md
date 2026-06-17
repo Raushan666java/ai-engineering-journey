@@ -9,6 +9,8 @@
 
 ## Theory
 
+![B-Trees & B+ Trees Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch15-b-trees.png)
+
 ### B-Tree Definition
 
 A B-tree of **order m** is a balanced search tree satisfying:

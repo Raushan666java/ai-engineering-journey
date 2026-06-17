@@ -1,0 +1,41 @@
+flowchart TB
+    subgraph Hypervisor_Types["Hypervisor Types"]
+        Type1["Type 1: Bare-Metal<br/>Xen, VMware ESXi, KVM"]
+        Type2["Type 2: Hosted<br/>VirtualBox, VMware Workstation"]
+    end
+
+    subgraph CPU_Virt["CPU Virtualization"]
+        TrapEmulate["Trap-and-Emulate<br/>Guest runs in Ring 1"]
+        VTx["Intel VT-x / AMD-V<br/>VMX Root + Non-Root modes"]
+        VMExit["VM-exit / VM-enter<br/>Hardware-assisted transitions"]
+    end
+
+    subgraph Memory_Virt["Memory Virtualization"]
+        Shadow["Shadow Page Tables<br/>GVA -> HPA<br/>Frequent VM-exits"]
+        EPT["Nested Page Tables EPT/NPT<br/>GVA -> GPA -> HPA<br/>10-15x fewer exits"]
+    end
+
+    subgraph IO_Virt["I/O Virtualization"]
+        Emulated["Emulated I/O<br/>Poor performance"]
+        Paravirt["Paravirtualized I/O<br/>virtio ring buffers"]
+        SRIOV["SR-IOV Passthrough<br/>Near-native"]
+    end
+
+    subgraph Containers["Containers vs VMs"]
+        VM["Virtual Machine<br/>Separate kernel per VM<br/>Strong isolation<br/>GB overhead"]
+        Container["Container<br/>Shared host kernel<br/>Namespaces + cgroups<br/>MB overhead"]
+    end
+
+    subgraph KVM["KVM Architecture"]
+        QEMU["QEMU user-space<br/>Device emulation"]
+        KVM_Mod["KVM kernel module<br/>/dev/kvm ioctl"]
+        HW["Intel VT-x / AMD-V"]
+        QEMU --> KVM_Mod --> HW
+    end
+
+    Hypervisor_Types --> CPU_Virt
+    CPU_Virt --> Memory_Virt
+    CPU_Virt --> IO_Virt
+    Hypervisor_Types --> KVM
+    KVM -.- VM
+    Containers -.- Container

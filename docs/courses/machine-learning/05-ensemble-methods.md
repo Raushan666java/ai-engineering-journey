@@ -1,4 +1,4 @@
-# Chapter 5: Ensemble Methods
+﻿# Chapter 5: Ensemble Methods
 
 ---
 
@@ -17,12 +17,12 @@
 Ensemble methods combine multiple machine learning models (base learners) to produce a single, stronger model. The goal is to reduce either the bias (as in Boosting) or the variance (as in Bagging) of the overall prediction. Ensembles are among the most powerful techniques in machine learning and frequently win competitions on platforms like Kaggle.
 
 ### Bagging: Bootstrap Aggregating
-Bagging involves training multiple versions of a model on different subsets of the training data. Each subset is created using **Bootstrapping**—sampling with replacement.
+Bagging involves training multiple versions of a model on different subsets of the training data. Each subset is created using **Bootstrapping**â€”sampling with replacement.
 1. **Parallel Training**: Multiple models are trained independently in parallel.
 2. **Aggregation**: Predictions are combined via voting (for classification) or averaging (for regression).
 Bagging primarily reduces **variance** by smoothing out the eccentricities of individual models.
 
-![Bagging vs Boosting](../assets/images/diagrams/machine-learning/ch05-ensemble.png)
+![Bagging vs Boosting](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/machine-learning/ch05-ensemble.png)
 
 ### Random Forest
 Random Forest is a specialized version of Bagging that uses Decision Trees as base learners. It adds an extra layer of randomness: at each split, only a random subset of features is considered. This ensures that the trees are decorrelated, making the ensemble even more robust.

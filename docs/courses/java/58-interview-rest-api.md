@@ -2,6 +2,8 @@
 
 This chapter covers 25 essential REST API interview questions from REST constraints and HTTP semantics through versioning, error handling, security, caching, testing, and HATEOAS. Each answer includes complete, compilable code examples targeting senior-level backend interviews.
 
+![REST API Interview Topics - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/58-interview-rest-api.png)
+
 ### Q1: What are the six constraints of REST? How do they affect API design?
 
 **Answer:** REST (Representational State Transfer) has six architectural constraints defined by Roy Fielding: Uniform Interface, Stateless, Cacheable, Client-Server, Layered System, and Code on Demand (optional). These constraints create scalable, loosely coupled, and independently deployable services.

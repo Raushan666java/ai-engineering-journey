@@ -1,0 +1,28 @@
+flowchart TB
+  GAR[Generics Annotations Reflection]
+  GAR --> GEN[Generics]
+  GEN --> TPARAM[Type Parameters T E K V]
+  GEN --> BOUND[Bounded Types extends super]
+  GEN --> WILD[Wildcards ? extends ? super]
+  GEN --> PECS[PECS Principle]
+  GEN --> ERASE[Type Erasure]
+  GEN --> BRIDGE[Bridge Methods]
+
+  GAR --> ANN[Annotations]
+  ANN --> DEFIN[Annotation Definition]
+  ANN --> META[Meta-Annotations Retention Target]
+  ANN --> PROC[Compile-Time Processing APT]
+  ANN --> RUNT[Runtime Processing]
+
+  GAR --> REF[Reflection]
+  REF --> CLASS[Class Object]
+  REF --> CONSTR[Constructor Introspection]
+  REF --> METH[Method Invocation]
+  REF --> FIELD[Field Access]
+  REF --> PROXY[Dynamic Proxy]
+  REF --> ANNO2[Annotation Discovery]
+
+  GAR --> SPRING[Spring Boot Integration]
+  SPRING --> DI[Dependency Injection]
+  SPRING --> CFG[Configuration Properties]
+  SPRING --> AC[Auto-Configuration]

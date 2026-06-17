@@ -15,6 +15,8 @@ By the end of this chapter, you will be able to:
 
 ## Table of Contents
 
+![Java Syntax Fundamentals - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/p1-java-syntax.png)
+
 1. [A Brief History of Java](#1-a-brief-history-of-java)
 2. [Primitive Types & Type Conversion](#2-primitive-types--type-conversion)
 3. [Operators](#3-operators)

@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Binary Search Tree Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch09-bst.png)
+
 ### BST Invariant
 
 For any node with key \( k \):

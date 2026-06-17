@@ -1,0 +1,40 @@
+flowchart TB
+    subgraph Working["Working Directory"]
+        A[Source Files]
+    end
+    subgraph Staging["Staging Area Index"]
+        B[Staged Files]
+    end
+    subgraph Repo["Local Repository .git"]
+        C[Committed History]
+    end
+    subgraph Remote["Remote Repository"]
+        D[Origin Remote]
+    end
+
+    A -- git add --> B
+    B -- git commit --> C
+    C -- git push --> D
+    D -- git pull --> C
+    D -- git fetch --> C
+    C -- git checkout --> A
+
+    subgraph Branching["Branching Strategies"]
+        E[GitFlow]
+        F[Trunk Based Dev]
+    end
+
+    E --> G[main]
+    E --> H[develop]
+    E --> I[feature branches]
+    E --> J[release branches]
+    E --> K[hotfix branches]
+
+    F --> L[single main branch]
+    F --> M[short lived feature branches]
+
+    subgraph Merging["Merge Operations"]
+        N[git merge]
+        O[git rebase]
+        P[merge conflict resolution]
+    end

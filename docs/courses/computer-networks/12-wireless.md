@@ -10,6 +10,8 @@
 
 ## 12.1 Wireless LANs
 
+![Wireless Networks and Mobility Management](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-15-wireless-mobile-networks.png)
+
 ### 12.1.1 IEEE 802.11 Standards
 
 The IEEE 802.11 family defines wireless local-area network (WLAN) standards. Key physical-layer variants:

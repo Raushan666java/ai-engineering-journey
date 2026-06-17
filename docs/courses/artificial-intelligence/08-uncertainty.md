@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Uncertainty and Probabilistic Reasoning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch08-uncertainty.png)
+
 ### The Problem of Uncertainty
 In real-world environments, agents rarely have access to the complete state of the world. Uncertainty arises from:
 - **Partial Observability**: Missing information.

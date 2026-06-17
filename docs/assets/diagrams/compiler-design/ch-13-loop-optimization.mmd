@@ -1,0 +1,48 @@
+flowchart TD
+    subgraph CodeMotion["Loop-Invariant Code Motion"]
+        A["Identify loop-invariant<br/>expressions"] --> B["Check safety:"]
+        B --> C["Dominates all<br/>loop exits"]
+        B --> D["Only definition<br/>reaching uses"]
+        B --> E["No new exceptions"]
+        C --> F["Hoist to<br/>pre-header"]
+    end
+
+    subgraph IndVar["Induction Variable Elimination"]
+        G["Basic Induction Variable<br/>(i += 1)"] --> H["Derived Induction Variable<br/>(t = 4*i)"]
+        H --> I["Replace derived with<br/>simpler expression"]
+        I --> J["Eliminate if only<br/>used as array index"]
+    end
+
+    subgraph StrengthRed["Strength Reduction"]
+        K["Expensive op in loop"] --> L["Replace with cheaper op"]
+        L --> M["Base + offset → pointer"]
+        L --> N["Multiplication → addition"]
+        L --> O["c1*i + c2 → running<br/>pointer increment"]
+    end
+
+    subgraph Unrolling["Loop Unrolling"]
+        P["N iterations,<br/>unroll factor K"] --> Q["N/K iterations,<br/>K copies each"]
+        Q --> R["Reduces branch<br/>overhead"]
+        Q --> S["Increases basic-block<br/>size for scheduling"]
+        Q --> T["Exposes ILP /<br/>software pipelining"]
+    end
+
+    subgraph FusionFission["Loop Fusion &amp; Fission"]
+        U["Loop Fusion"] --> V["Merge adjacent loops<br/>over same range"]
+        U --> W["Improves cache locality"]
+        X["Loop Fission"] --> Y["Split one loop<br/>into multiple"]
+        X --> Z["Enables vectorization,<br/>reduces register pressure"]
+    end
+
+    subgraph Interchange["Loop Interchange"]
+        AA["Nested loops"] --> AB["Swap nesting order"]
+        AB --> AC["Row-major access: N×M → M×N<br/>→ stride-1 inner loop"]
+        AB --> AD["Improves cache<br/>performance"]
+    end
+
+    subgraph Vec["Vectorization"]
+        AE["SIMD transformation"] --> AF["Check loop-carried<br/>dependencies"]
+        AF --> AG["Loop Distribution<br/>(separate dependent stmts)"]
+        AF --> AH["Scalar Expansion<br/>(vector temporaries)"]
+        AF --> AI["Recurrence Handling<br/>(summation, dot product)"]
+    end

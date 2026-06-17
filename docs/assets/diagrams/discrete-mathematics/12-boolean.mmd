@@ -1,0 +1,43 @@
+flowchart TD
+    BA[Boolean Algebra] --> AXI[Axioms]
+    BA --> DUAL[Duality]
+    BA --> ID[Boolean Identities]
+    BA --> FUNC[Boolean Functions]
+    BA --> GATE[Logic Gates]
+    BA --> MIN[Circuit Minimization]
+    BA --> DESIGN[Digital Circuit Design]
+
+    AXI --> A1[Identity: x+0=x, x-1=x]
+    AXI --> A2[Complement: x+x=1, x-x=0]
+    AXI --> A3[Commutative: x+y=y+x]
+    AXI --> A4[Associative: x+y+z = x+y+z]
+    AXI --> A5[Distributive: xy+z = xy+xz]
+
+    DUAL --> D1["Swap + and dot"]
+    DUAL --> D2["Swap 0 and 1"]
+
+    ID --> I1[Idempotent: x+x = x]
+    ID --> I2[Domination: x+1 = 1]
+    ID --> I3[Absorption: x+xy = x]
+    ID --> I4["De Morgan: x+y = x-y"]
+    ID --> I5[Double complement]
+
+    FUNC --> F1[SOP sum of products]
+    FUNC --> F2[POS product of sums]
+    FUNC --> F3[Canonical forms]
+    FUNC --> F4[Truth table representation]
+
+    GATE --> G1[AND OR NOT]
+    GATE --> G2[NAND NOR XOR]
+    GATE --> G3[Functional completeness]
+
+    MIN --> M1[Karnaugh Maps]
+    MIN --> M2[Quine McCluskey]
+    MIN --> M3[Don t Care Conditions]
+    M1 --> M1A[Group adjacent 1s]
+    M1 --> M1B[Prime implicants]
+    M1 --> M1C[Minimal cover]
+
+    DESIGN --> P1[Truth table to expression]
+    P1 --> P2[Minimize expression]
+    P2 --> P3[Draw logic circuit]

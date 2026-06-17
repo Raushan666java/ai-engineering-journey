@@ -2,6 +2,8 @@
 
 This chapter covers 40+ essential Java Core interview questions ranging from OOP fundamentals to advanced concurrency, JVM internals, and Java 8+ features. Each answer includes complete, compilable code examples. These questions target senior and staff-level Java backend roles.
 
+![Java Core Interview Topics - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/56-interview-java.png)
+
 ### Q1: How does Java implement polymorphism?
 
 **Answer:** Polymorphism means "many forms." Java supports compile-time (method overloading) and runtime (method overriding via dynamic method dispatch).

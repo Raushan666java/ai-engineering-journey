@@ -19,6 +19,8 @@ After completing this chapter, you will be able to:
 
 ## 1. Theory
 
+![Logging Error Handling & i18n](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/14-logging-error-i18n.png)
+
 ### 1.1 The Java Logging Landscape
 
 Spring Boot applications have access to a rich ecosystem of logging frameworks:

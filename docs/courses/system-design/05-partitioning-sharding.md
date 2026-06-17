@@ -13,6 +13,8 @@
 ---
 ## Theory
 
+![Partitioning and Sharding Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/05-partitioning-sharding.png)
+
 ### Partitioning Fundamentals
 
 Partitioning is the process of splitting a large dataset into smaller, independent subsets that can be stored and queried separately. The two primary forms are vertical partitioning and horizontal partitioning (sharding).

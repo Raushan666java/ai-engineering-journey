@@ -12,6 +12,8 @@
 
 ![Network Security, Cryptography and Wireless Networking](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch08-security-wireless.png)
 
+![Network Security Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-14-network-security.png)
+
 Network security encompasses the policies and mechanisms that protect the confidentiality, integrity, and availability of data in transit.
 
 **Eavesdropping (sniffing).** An adversary captures packets traversing a network segment. On shared media (wireless, Ethernet hubs), any station on the segment can capture all traffic. On switched networks, ARP spoofing or port mirroring enables packet capture.

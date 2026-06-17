@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Logic Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/02-logic.png)
+
 After completing this chapter, you will be able to:
 
 - Identify propositions and their truth values

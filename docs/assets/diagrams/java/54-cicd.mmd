@@ -1,0 +1,38 @@
+flowchart TB
+  CICD[CI/CD for Spring Boot]
+  CICD --> GHA[GitHub Actions]
+  GHA --> WF[Workflow YAML]
+  GHA --> MATRIX[Matrix Builds]
+  GHA --> CACHE[Gradle / Maven Cache]
+  GHA --> DLC[Docker Layer Caching]
+
+  CICD --> GL[GitLab CI]
+  GL --> STAGES[Pipeline Stages]
+  GL --> ART[Artifacts]
+  GL --> DIND[Docker-in-Docker]
+  GL --> SECAN[Security Scanning]
+  GL --> ENV[Environment Deployments]
+
+  CICD --> PIPE[Pipeline Phases]
+  PIPE --> COMPILE[Compile]
+  PIPE --> TEST[Test]
+  PIPE --> PACKAGE[Package / Build]
+  PIPE --> PUBLISH[Publish Artifacts]
+  PIPE --> DEPLOY[Deploy]
+
+  CICD --> PUB2[Artifact Publishing]
+  PUB2 --> MC[Maven Central]
+  PUB2 --> GP[GitHub Packages]
+  PUB2 --> NEX[Nexus / Artifactory]
+  PUB2 --> CR[Container Registry]
+
+  CICD --> DEPLOY2[Deployment Strategies]
+  DEPLOY2 --> ROLL[Rolling]
+  DEPLOY2 --> BG[Blue-Green]
+  DEPLOY2 --> CANARY[Canary]
+
+  CICD --> INTEG[Integrations]
+  INTEG --> FLYWAY[Flyway Migrations]
+  INTEG --> QA[Quality Gates]
+  INTEG --> COV[Coverage Thresholds]
+  INTEG --> SCA[Security Scanning]

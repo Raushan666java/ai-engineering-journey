@@ -1,4 +1,4 @@
-# Chapter 35: Legal & Compliance Agents
+﻿# Chapter 35: Legal & Compliance Agents
 
 ---
 
@@ -16,6 +16,9 @@
 ---
 
 ## Theory
+
+![Legal Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/35-legal.png)
+
 
 ### 35.1 Legal Data Models
 
@@ -760,7 +763,7 @@ PROMPT;
 
 ### 35.4 Compliance Monitoring Agents
 
-Organizations must comply with a growing web of regulations — GDPR, HIPAA, SOX, FINRA, SEC rules. A `ComplianceMonitoringAgent` checks regulatory requirements against records, flags violations, and dispatches alerts. The agent runs on a schedule, checking rules across data sources.
+Organizations must comply with a growing web of regulations â€” GDPR, HIPAA, SOX, FINRA, SEC rules. A `ComplianceMonitoringAgent` checks regulatory requirements against records, flags violations, and dispatches alerts. The agent runs on a schedule, checking rules across data sources.
 
 ```php
 <?php
@@ -1491,7 +1494,7 @@ PROMPT;
 
 ### 35.7 E-Discovery Pipelines
 
-E-discovery follows a strict lifecycle: Identification → Preservation → Collection → Processing → Review → Analysis → Production. An `EDiscoveryPipeline` orchestrates these stages, deduplicates documents, logs privilege determinations, and generates production sets for opposing counsel.
+E-discovery follows a strict lifecycle: Identification â†’ Preservation â†’ Collection â†’ Processing â†’ Review â†’ Analysis â†’ Production. An `EDiscoveryPipeline` orchestrates these stages, deduplicates documents, logs privilege determinations, and generates production sets for opposing counsel.
 
 ```php
 <?php

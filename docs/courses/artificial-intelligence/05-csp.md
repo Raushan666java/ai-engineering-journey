@@ -14,6 +14,8 @@
 
 ## Theory
 
+![CSP Advanced Topics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch05-csp.png)
+
 ### Formal Definition of CSP
 A Constraint Satisfaction Problem (CSP) consists of:
 - **X**: A set of variables $\{X_1, X_2, ..., X_n\}$.

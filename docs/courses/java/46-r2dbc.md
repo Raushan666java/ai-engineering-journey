@@ -17,6 +17,8 @@ After completing this chapter, you will be able to:
 
 ## 1. What Is R2DBC?
 
+![R2DBC - Reactive Data Access Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/46-r2dbc.png)
+
 ### 1.1 The Problem with JDBC
 
 JDBC (Java Database Connectivity) is inherently blocking. Every `ResultSet.next()`, `PreparedStatement.executeQuery()`, and `Connection.commit()` blocks the calling thread until the database responds. In a reactive application, blocking an event-loop thread defeats the purpose of non-blocking I/O.

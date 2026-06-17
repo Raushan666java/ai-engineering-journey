@@ -1,0 +1,45 @@
+flowchart TD
+    subgraph "AI SDK Architecture"
+        A1["laravel/ai Package<br/>Provider-agnostic interface"]
+        A2["config/ai.php<br/>Provider mapping per feature"]
+        A3["14+ Providers<br/>Anthropic OpenAI Gemini<br/>Bedrock Azure Groq xAI"]
+    end
+
+    subgraph "Agent System"
+        AG1["Agent Contract<br/>instructions() prompt()"]
+        AG2["Promptable Trait<br/>Default implementation"]
+        AG3["RemembersConversations<br/>Database-backed memory"]
+        AG4["Structured Output<br/>JsonSchema builder"]
+    end
+
+    subgraph "Conversation Management"
+        CM1["agent_conversations table"]
+        CM2["agent_conversation_messages"]
+        CM3["Multi-turn persistence"]
+    end
+
+    subgraph "Execution Modes"
+        EM1["Synchronous<br/>blocking response"]
+        EM2["Streaming<br/>partial chunks"]
+        EM3["Broadcast<br/>via Reverb"]
+        EM4["Queued<br/>background agent"]
+    end
+
+    A1 --> A2
+    A2 --> A3
+    A1 --> AG1
+    AG1 --> AG2
+    AG1 --> AG3
+    AG1 --> AG4
+    AG3 --> CM1
+    CM1 --> CM2
+    CM2 --> CM3
+    A1 --> EM1
+    A1 --> EM2
+    A1 --> EM3
+    A1 --> EM4
+
+    style A1 fill:#4a90d9,color:#fff
+    style AG1 fill:#27ae60,color:#fff
+    style CM1 fill:#9b59b6,color:#fff
+    style EM1 fill:#e67e22,color:#fff

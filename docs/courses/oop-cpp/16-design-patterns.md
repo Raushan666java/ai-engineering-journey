@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 16.1 Patterns in Context
 
+![Design Patterns Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/16-design-patterns.png)
+
 Design patterns are reusable solutions to recurring problems in software design. Catalogued by the "Gang of Four" (GoF) in 1994, they describe relationships and interactions between classes and objects. Patterns are not templates to be copied but rather conceptual guides to be adapted.
 
 Three categories:

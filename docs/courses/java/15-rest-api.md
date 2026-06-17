@@ -20,6 +20,8 @@ After completing this chapter, you will be able to:
 
 ## 1. REST Architectural Style
 
+![REST API Development Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/15-rest-api.png)
+
 ### 1.1 What is REST?
 
 REST (Representational State Transfer) is an architectural style defined by Roy Fielding in his 2000 doctoral dissertation. RESTful systems adhere to six constraints:

@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Singly Linked List Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch03-singly-linked-list.png)
+
 ### Structure
 
 A singly linked list is a sequence of nodes where each node contains data and a pointer to the next node. The list is identified by a `head` pointer; the last node points to `nullptr`.

@@ -1,0 +1,92 @@
+flowchart TD
+    S["SDN Paradigm<br/>Control Plane ↔ Data Plane Separation"]
+
+    subgraph CP["Control Plane (Software)"]
+        SDNCtrl["SDN Controller"]
+        ONOS["ONOS (carrier-grade)"]
+        ODL["OpenDaylight (Java, MD-SAL)"]
+        RYU["Ryu (Python, research)"]
+        FLOOD["Floodlight (OpenFlow-only)"]
+        SDNCtrl --> ONOS & ODL & RYU & FLOOD
+
+        NORTH["Northbound API"]
+        REST["REST / RESTCONF"]
+        GRPC["gRPC"]
+        PYTHON["Python scripting"]
+        NORTH --> REST & GRPC & PYTHON
+
+        SOUTH["Southbound API"]
+        OF["OpenFlow (v1.0, v1.3, v1.5)"]
+        NETCONF["NETCONF / YANG"]
+        OVSDB["OVSDB"]
+        SOUTH --> OF & NETCONF & OVSDB
+    end
+
+    subgraph DP["Data Plane (Hardware)"]
+        OFSW["OpenFlow Switch"]
+        FLOWTBL["Flow Table"]
+        MATCH["Match Fields"]
+        METH["Ethernet src/dst, VLAN ID<br/>IP src/dst, TCP/UDP ports<br/>MPLS labels, ingress port"]
+        PRIO["Priority (highest match wins)"]
+        CNT["Counters (packets, bytes, duration)"]
+        INST["Instructions / Actions"]
+        ACT["OUTPUT to port<br/>DROP packet<br/>SET-FIELD rewrite<br/>PUSH/POP VLAN/MPLS<br/>SEND TO CONTROLLER"]
+        TIMEOUT["Idle / Hard Timeout"]
+        FLOWTBL --> MATCH & PRIO & CNT & INST & TIMEOUT
+        MATCH --> METH
+        INST --> ACT
+        OFSW --> FLOWTBL
+    end
+
+    subgraph OFMsg["OpenFlow Messages"]
+        PACKETIN["PACKET_IN (switch → controller)<br/>unmatched packet forwarded to controller"]
+        PACKETOUT["PACKET_OUT (controller → switch)<br/>send packet out a switch port"]
+        FLOWMOD["FLOW_MOD (controller → switch)<br/>add / modify / delete flow rule"]
+        FLOWREM["FLOW_REMOVED (switch → controller)<br/>flow entry eviction notification"]
+        MULTIPART["MULTIPART_REQUEST/REPLY<br/>statistics & capabilities"]
+        PACKETIN --- FLOWMOD
+        FLOWMOD --- PACKETOUT
+    end
+
+    subgraph NFV["Network Functions Virtualization"]
+        VNF["Virtual Network Functions"]
+        VFW["Virtual Firewall"]
+        VLB["Virtual Load Balancer"]
+        VNAT["Virtual NAT"]
+        VIDS["Virtual IDS/IPS"]
+        VWOC["Virtual WAN Optimizer"]
+        NFVI["NFV Infrastructure"]
+        COMPUTE["Compute (x86 servers)"]
+        STORAGE["Storage"]
+        NETWORK["Network"]
+        MANO["MANO (Management & Orchestration)<br/>VNF lifecycle, scaling, healing"]
+        SFC["Service Function Chaining"]
+        SFCSEQ["Traffic: FW → DPI → LB → WOC"]
+        VNF --> VFW & VLB & VNAT & VIDS & VWOC
+        NFVI --> COMPUTE & STORAGE & NETWORK
+        MANO --> VNF & NFVI
+        SFC --> SFCSEQ
+    end
+
+    subgraph OV["Overlay Networks"]
+        VXLAN["VXLAN (RFC 7348)<br/>24-bit VNI = 16M segments<br/>L2 over UDP (port 4789)"]
+        GENEVE["Geneve (RFC 8926)<br/>flexible variable-length options"]
+        NVGRE["NVGRE<br/>GRE tunneling for L2 overlay"]
+        VTEP["VTEP (VXLAN Tunnel Endpoint)<br/>encapsulation / decapsulation<br/>mapping VM ↔ VNI"]
+        VXLAN --> VTEP
+    end
+
+    subgraph Apps["SDN Applications"]
+        TE["Traffic Engineering<br/>global optimization, load balancing<br/>fast reroute on failure"]
+        IBN["Intent-Based Networking<br/>declarative policy → config translation<br/>formal verification (Batfish)"]
+        INT["In-band Network Telemetry<br/>per-packet metadata (queue depth, latency)<br/>real-time visibility"]
+        MULTI["Multi-tenancy<br/>isolated virtual networks per tenant<br/>cloud provider SDN"]
+    end
+
+    S --> CP
+    S --> DP
+    S --> NFV
+    S --> OV
+    S --> Apps
+    CP --> SOUTH --> OFSW
+    OFMsg --> OFSW

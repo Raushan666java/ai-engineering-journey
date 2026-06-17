@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Properties of Regular Languages Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/04-regular-languages.png)
+
 ### 4.1 The Pumping Lemma for Regular Languages
 
 The pumping lemma is a powerful tool for proving that certain languages are **not regular**. It captures a fundamental property: any sufficiently long string in a regular language can be "pumped" — a middle section can be repeated any number of times — and the resulting string remains in the language.

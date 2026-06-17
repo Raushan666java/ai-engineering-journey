@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Observability and Resiliency Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/17-observability-resiliency.png)
+
 ### 1. The Three Pillars of Observability
 
 Observability is the ability to understand a system's internal state from its external outputs. Three data types form the foundation:

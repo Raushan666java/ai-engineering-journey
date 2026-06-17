@@ -11,6 +11,8 @@
 
 ## Theory
 
+![I/O Systems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/13-io-systems.png)
+
 ### I/O Hardware
 
 I/O devices vary enormously in function, but they share common hardware interfaces.

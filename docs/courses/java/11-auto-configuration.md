@@ -30,6 +30,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. @EnableAutoConfiguration — The Entry Point
 
+![Spring Boot Auto-Configuration Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/11-auto-configuration.png)
+
 Every Spring Boot application class is annotated with `@SpringBootApplication`, which is a composed annotation that bundles three others:
 
 ```java

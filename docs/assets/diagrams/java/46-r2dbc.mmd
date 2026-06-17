@@ -1,0 +1,40 @@
+flowchart TB
+  R2DBC[R2DBC Reactive Data]
+  R2DBC --> SPEC[R2DBC Spec]
+  SPEC --> CONN[ConnectionFactory]
+  SPEC --> ROW[Row / RowMetadata]
+  SPEC --> REACT[Reactive Streams]
+
+  R2DBC --> CFG[Configuration]
+  CFG --> DRV[Drivers]
+  DRV --> PG[PostgreSQL]
+  DRV --> MYSQL[MySQL]
+  DRV --> H2[H2]
+  CFG --> CP[Connection Pooling]
+  CP --> R2P[R2DBC Pool]
+
+  R2DBC --> REPO[Reactive Repositories]
+  REPO --> RCR[ReactiveCrudRepository]
+  REPO --> R2R[R2dbcRepository]
+  REPO --> QRY[Query Methods]
+  REPO --> QANN[Query Annotations]
+  REPO --> QDSL[Querydsl / Criteria]
+
+  R2DBC --> TX[Reactive Transactions]
+  TX --> RTR[ReactiveTransactionManager]
+  TX --> TXN[R2dbcTransactionManager]
+  TX --> TXNL[Transactional Annotation]
+
+  R2DBC --> MAP[Mappings]
+  MAP --> ENT[Entities]
+  MAP --> EMB[Embedded Objects]
+  MAP --> CONV[Converters / ReadWrite]
+
+  R2DBC --> TEST[Testing]
+  TEST --> DRT[DataR2dbcTest]
+  TEST --> TC[Testcontainers]
+  TEST --> SV[StepVerifier]
+
+  R2DBC --> PERF[Performance]
+  PERF --> INDEX[Indexing]
+  PERF --> BATCH[Batching]

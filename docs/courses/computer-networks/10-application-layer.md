@@ -12,6 +12,8 @@
 
 ![Application Layer Protocols and Web Technologies](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch07-application.png)
 
+![Application Layer Protocols: DNS, SMTP and FTP](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-11-application-layer-dns-smtp-ftp.png)
+
 DNS translates human-readable domain names (e.g., www.example.com) to IP addresses. It is a distributed, hierarchical database with client-server architecture.
 
 ### 10.1.1 Name Space Hierarchy
@@ -58,6 +60,8 @@ DNS uses UDP on port 53 for queries (limit 512 bytes without EDNS0) and TCP for 
 | PTR | Reverse lookup (IP → name) | 34.216.184.93 → www.example.com |
 
 ## 10.2 HTTP
+
+![HTTP and Web Technologies Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-12-http-web-technologies.png)
 
 ### 10.2.1 HTTP/1.1
 
@@ -166,6 +170,8 @@ SNMPv3 adds encryption and authentication, addressing the plaintext security wea
 **Telnet** (RFC 854) provides remote terminal access using TCP port 23. All data including passwords is transmitted in plaintext, making Telnet insecure on any untrusted network. Telnet is deprecated for remote administration.
 
 **SSH** (Secure Shell, RFC 4251) provides encrypted remote access. SSH uses TCP port 22, supports public-key authentication, port forwarding (tunneling), and SCP/SFTP file transfer. SSH is the standard protocol for remote system administration.
+
+![Multimedia Networking and QoS Mechanisms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-16-multimedia-networking-qos.png)
 
 ## Summary
 

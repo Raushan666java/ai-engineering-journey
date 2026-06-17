@@ -1,0 +1,45 @@
+flowchart TD
+    subgraph "Core Models"
+        CM1["Shipment<br/>Tracking waypoints"]
+        CM2["Inventory<br/>Stock levels SKU"]
+        CM3["Supplier<br/>Performance history"]
+        CM4["Warehouse<br/>Bin locations"]
+        CM5["Fleet<br/>Vehicle health"]
+        CM6["Order<br/>Fulfillment"]
+    end
+
+    subgraph "AI Agents"
+        AG1["DemandForecastAgent<br/>Predict reorder points"]
+        AG2["RouteOptimizerAgent<br/>Minimize distance time"]
+        AG3["ShipmentTrackerAgent<br/>Status exceptions"]
+        AG4["SupplierEvalAgent<br/>Scorecards procurement"]
+        AG5["WarehouseAgent<br/>Pick pack workflows"]
+        AG6["FleetManagerAgent<br/>Maintenance scheduling"]
+        AG7["SupplyChainAgent<br/>Real-time analytics"]
+    end
+
+    subgraph "Supply Chain Flow"
+        SC1["Supplier --> Warehouse"]
+        SC2["Inventory --> Production"]
+        SC3["Warehouse --> Carrier"]
+        SC4["Carrier --> Customer"]
+    end
+
+    CM2 --> AG1
+    CM4 --> AG5
+    CM5 --> AG6
+    CM3 --> AG4
+    CM1 --> AG3
+    CM6 --> AG2
+    CM1 --> AG7
+
+    AG1 --> SC2
+    AG4 --> SC1
+    AG5 --> SC3
+    AG2 --> SC3
+    AG3 --> SC4
+    AG6 --> CM5
+
+    style CM1 fill:#4a90d9,color:#fff
+    style AG1 fill:#27ae60,color:#fff
+    style SC1 fill:#e67e22,color:#fff

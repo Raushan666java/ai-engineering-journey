@@ -1,0 +1,33 @@
+flowchart TB
+  OBS2[Observability Stack]
+  OBS2 --> METRICS[Micrometer Metrics]
+  METRICS --> C[Counters]
+  METRICS --> G[Gauges]
+  METRICS --> T[Timers]
+  METRICS --> DS[Distribution Summaries]
+  METRICS --> TAG[Tags]
+  METRICS --> ANNO2[Counted / Timed]
+  METRICS --> BIND[Micrometer Binders]
+  METRICS --> OBSAPI[Observation API]
+
+  OBS2 --> PROM[Prometheus]
+  PROM --> SCRAPE[Scrape Config]
+  PROM --> EP[Actuator Endpoint]
+  PROM --> ALERT[Alerting Rules]
+
+  OBS2 --> GRAF[Grafana]
+  GRAF --> DASH[Dashboards]
+  DASH --> JVM[JVM Dashboard]
+  DASH --> SB[Spring Boot Dashboard]
+  DASH --> BIZ[Business Metrics]
+  GRAF --> SLI[SLI / SLO / SLA]
+
+  OBS2 --> LOGGING[Log Aggregation]
+  LOGGING --> JSON[JSON Logging]
+  LOGGING --> MDC[MDC / Correlation ID]
+  LOGGING --> ELK[ELK Stack]
+  LOGGING --> LOKI[Grafana Loki]
+
+  OBS2 --> ALERTING[Alerting]
+  ALERTING --> PROMALERT[Prometheus Alerts]
+  ALERTING --> GRAFALERT[Grafana Alerts]

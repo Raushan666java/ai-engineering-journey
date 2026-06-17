@@ -1,0 +1,50 @@
+graph TD
+    subgraph Build Process
+        DEV[Development]
+        BUILD[Build Step]
+        LINT[Lint Check]
+        TEST[Test Suite]
+        TYPE[Type Check]
+    end
+    subgraph Hosting Platforms
+        VERC[Vercel]
+        NTL[Netlify]
+        RLY[Railway]
+        AWS[AWS EC2/Lambda]
+        DKR[Docker Container]
+    end
+    subgraph CI/CD Pipeline
+        GIT[Git Push]
+        CI[GitHub Actions]
+        SAST[Security Scan]
+        DEPLOY[Auto Deploy]
+        SMOKE[Smoke Test]
+    end
+    subgraph Infrastructure
+        ENV[Environment Variables]
+        DOM[Custom Domain]
+        SSL[SSL/TLS Cert]
+        CDN[CDN Distribution]
+        MON[Monitoring]
+    end
+    subgraph Docker
+        DOCK[Dockerfile]
+        COMP[Compose Multi-Service]
+        REG[Container Registry]
+        ORCH[Orchestration]
+    end
+    DEV --> BUILD
+    BUILD --> LINT
+    LINT --> TEST
+    TEST --> TYPE
+    TYPE --> CI
+    CI --> SAST
+    SAST --> DEPLOY
+    DEPLOY --> SMOKE
+    DEPLOY --> VERC
+    DEPLOY --> AWS
+    DKR --> COMP
+    COMP --> REG
+    ENV --> DOM
+    DOM --> SSL
+    SSL --> CDN

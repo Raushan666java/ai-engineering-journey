@@ -1,0 +1,46 @@
+flowchart TB
+    subgraph Evolution["Ethernet Evolution"]
+        direction LR
+        E10["10 Mbps: 10Base5, 10Base2, 10BaseT"]
+        E100["100 Mbps: Fast Ethernet 802.3u"]
+        E1000["1 Gbps: Gigabit Ethernet 802.3z"]
+        E10G["10 Gbps: 10GbE 802.3ae full-duplex"]
+        E400["40/100/200/400 Gbps: 802.3ba/bs"]
+    end
+
+    subgraph Switching["Switching Methods"]
+        SF["Store-and-Forward: check FCS, then forward"]
+        CT["Cut-Through: forward after dest MAC"]
+        FF["Fragment-Free: read 64 bytes first"]
+    end
+
+    subgraph Learning["Learning Bridge Algorithm"]
+        L1["Receive frame, record (source, port)"]
+        L2["Lookup dest MAC in forwarding table"]
+        L3{"Entry exists?"}
+        L3 -->|Yes| Fwd["Forward only on that port"]
+        L3 -->|No| Flood["Flood on all ports except source"]
+        L4["Age out stale entries after 300s"]
+    end
+
+    subgraph STP["Spanning Tree Protocol"]
+        Root["Root Bridge Election: lowest bridge ID"]
+        RP["Root Port: best path to root"]
+        DP["Designated Port: best on each segment"]
+        Block["Blocking state prevents loops"]
+        States["States: Blocking - Listening - Learning - Forwarding"]
+        RSTP["RSTP 802.1w: 1-3s convergence"]
+    end
+
+    subgraph VLAN["Virtual LANs 802.1Q"]
+        Tag["4-byte VLAN Tag: TPID + Priority + DEI + VID"]
+        Trunk["Trunk: multi-VLAN per link"]
+        Access["Access: single VLAN, untagged"]
+    end
+
+    Evolution --> Switching
+    Switching --> Learning
+    Learning --> STP
+    STP --> VLAN
+    VLAN --> LACP["Link Aggregation LACP"]
+    LACP --> MPLS["MPLS Label Switching"]

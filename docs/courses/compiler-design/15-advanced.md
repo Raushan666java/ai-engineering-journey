@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: explain the architectur
 
 ## Theory
 
+![Advanced Compilation Topics — JIT, IPA, PGO, SSA, Auto-Parallelization](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch-15-advanced.png)
+
 ### Just-In-Time Compilation
 
 Just-in-time (JIT) compilation translates intermediate code into native machine code at runtime, combining the portability of an interpreted IR with execution speeds approaching those of ahead-of-time compiled code. The JIT compiler operates during program execution, compiling only those methods or code regions that are frequently executed.

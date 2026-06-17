@@ -11,6 +11,8 @@
 - Write inline functions
 - Use POSIX system calls basics
 
+![C Advanced Topics: Variadic Functions, Signals, errno, VLAs, POSIX and More](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-18-advanced-c.png)
+
 ## 18.1 Variadic Functions
 
 A variadic function accepts a variable number of arguments. The most familiar example is `printf`. The machinery is defined in `<stdarg.h>`.

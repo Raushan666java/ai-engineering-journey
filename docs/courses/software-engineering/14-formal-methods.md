@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the purpose 
 
 ## Theory
 
+![Formal Methods Landscape](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-14-formal-methods.png)
+
 ### The Role of Formal Methods
 
 Formal methods are mathematically based techniques for the specification, development, and verification of software systems. They provide a rigorous framework for establishing that a system satisfies its specification with a degree of certainty that cannot be achieved through testing alone.

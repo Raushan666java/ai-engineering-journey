@@ -1,0 +1,35 @@
+flowchart TD
+    A[JOINs] --> B[INNER JOIN]
+    A --> C[OUTER JOIN]
+    A --> D[CROSS JOIN]
+    A --> E[NATURAL JOIN]
+    A --> F[SELF JOIN]
+
+    B --> G[Only matching rows]
+    C --> H[LEFT JOIN]
+    C --> I[RIGHT JOIN]
+    C --> J[FULL OUTER JOIN]
+
+    H --> K[All left rows + matches]
+    I --> L[All right rows + matches]
+    J --> M[All rows from both]
+
+    N[Subqueries] --> O[Scalar subquery]
+    N --> P[Row subquery]
+    N --> Q[Table subquery]
+    N --> R[Correlated subquery]
+
+    O --> S[Returns single value]
+    P --> T[Returns one row]
+    Q --> U[FROM clause derived table]
+    R --> V[References outer query]
+
+    W[Set Operators] --> X[UNION / UNION ALL]
+    W --> Y[INTERSECT]
+    W --> Z[EXCEPT / MINUS]
+
+    AA[EXISTS] --> AB[Check rows returned]
+    AA --> AC[More efficient than IN]
+
+    AD[ANY / ALL] --> AE[X greater than ANY values]
+    AD --> AF[X greater than ALL values]

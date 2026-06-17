@@ -16,6 +16,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. CI/CD Pipeline Overview
 
+![CI/CD - GitHub Actions, GitLab CI, Deployment Strategies](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/54-cicd.png)
+
 ```
 ┌─────────┐    ┌──────┐    ┌─────────┐    ┌─────────┐    ┌──────────┐
 │ COMPILE │ →  │ TEST │ →  │ PACKAGE │ →  │ PUBLISH │ →  │  DEPLOY  │

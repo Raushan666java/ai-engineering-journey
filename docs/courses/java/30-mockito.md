@@ -58,6 +58,8 @@ By the end of this chapter you will be able to:
 
 ## 1. Mock Creation
 
+![Mockito Mocking Framework Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/30-mockito.png)
+
 ### 1.1 Static mock() Method
 
 ```java

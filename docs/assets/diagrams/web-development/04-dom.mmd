@@ -1,0 +1,57 @@
+graph TD
+    subgraph DOM Tree
+        DOC[Document]
+        HTML[html]
+        HEAD[head]
+        BODY[body]
+        DIV[div]
+        P[p]
+        SPAN[span]
+        A[a]
+    end
+    subgraph DOM Manipulation
+        SEL[Selectors]
+        MOD[Modify Content]
+        ATTR[Attributes]
+        STYLE[CSS Styles]
+        CLS[ClassList]
+    end
+    subgraph Event Handling
+        ADDEv[addEventListener]
+        EVProp[Event Propagation]
+        BUBB[Bubbling]
+        CAPT[Capturing]
+        DELEG[Event Delegation]
+        PREV[preventDefault]
+        STOP[stopPropagation]
+    end
+    subgraph Traversal
+        PAR[parentElement]
+        CHILD[children]
+        SIB[previousElementSibling]
+        NSIB[nextElementSibling]
+        CLOS[closest]
+    end
+    subgraph Dynamic Updates
+        AJAX[Fetch API]
+        TEMPL[Template Literals]
+        INNER[innerHTML vs textContent]
+        FRAG[DocumentFragment]
+    end
+    DOC --> HTML
+    HTML --> HEAD
+    HTML --> BODY
+    BODY --> DIV
+    DIV --> P
+    DIV --> SPAN
+    DIV --> A
+    SEL --> MOD
+    MOD --> STYLE
+    MOD --> ATTR
+    ADDEv --> EVProp
+    EVProp --> BUBB
+    EVProp --> CAPT
+    BUBB --> DELEG
+    PAR --> CHILD
+    CHILD --> SIB
+    AJAX --> TEMPL

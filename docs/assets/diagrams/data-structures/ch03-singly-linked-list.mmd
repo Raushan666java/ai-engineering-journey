@@ -1,0 +1,26 @@
+flowchart LR
+    subgraph Singly_Linked_List
+        HEAD["head"] --> N1["A | next"]
+        N1 --> N2["B | next"]
+        N2 --> N3["C | next"]
+        N3 --> NULL["nullptr"]
+    end
+
+    subgraph Operations
+        PF["pushFront: O(1)"]
+        PB["pushBack: O(1) w/ tail"]
+        INS["insertAt: O(n)"]
+        DEL["delete: O(n)"]
+        SRCH["search: O(n)"]
+        REV["reverse: O(n)"]
+    end
+
+    subgraph Pointer_Rewiring
+        P1["prev ← current"]
+        P2["current ← next"]
+        P3["next ← current.next"]
+    end
+
+    Singly_Linked_List --> Operations
+    Operations --> REV
+    REV --> Pointer_Rewiring

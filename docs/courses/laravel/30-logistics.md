@@ -1,4 +1,4 @@
-# Chapter 30: Logistics & Supply Chain Agents
+﻿# Chapter 30: Logistics & Supply Chain Agents
 
 ---
 
@@ -17,6 +17,9 @@
 ---
 
 ## Theory
+
+![Logistics Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/30-logistics.png)
+
 
 ### 30.1 Logistics Data Models
 
@@ -1344,7 +1347,7 @@ class RouteOptimizationAgent
     ): array {
         $legsSummary = collect($legs)->map(
             fn ($l) => sprintf(
-                '%s → %s (%.1f km, %d min)',
+                '%s â†’ %s (%.1f km, %d min)',
                 $l['from'], $l['to'], $l['distance_km'], $l['duration_minutes']
             )
         )->implode("\n");
@@ -1712,7 +1715,7 @@ class TrackingUpdate
 
 ### 30.5 Supplier Management Agents
 
-Supplier management agents evaluate vendor performance across multiple dimensions — on-time delivery, product quality, pricing competitiveness, and communication responsiveness. The agent generates scorecards, identifies underperforming suppliers, and automates procurement decisions.
+Supplier management agents evaluate vendor performance across multiple dimensions â€” on-time delivery, product quality, pricing competitiveness, and communication responsiveness. The agent generates scorecards, identifies underperforming suppliers, and automates procurement decisions.
 
 ```php
 <?php
@@ -3169,7 +3172,7 @@ class SupplyChainReport
 
 In this chapter, we built a complete logistics and supply chain intelligence system using Laravel and AI agents:
 
-- **Data models** for shipments, inventory, suppliers, warehouses, purchase orders, and fleet vehicles — each with migrations, Eloquent relationships, casts, and query scopes that enforce domain invariants at the database level.
+- **Data models** for shipments, inventory, suppliers, warehouses, purchase orders, and fleet vehicles â€” each with migrations, Eloquent relationships, casts, and query scopes that enforce domain invariants at the database level.
 - **Inventory prediction agents** that calculate daily demand, standard deviation, safety stock, reorder points, and economic order quantities, then consult an AI model for natural-language recommendations.
 - **Route optimization agents** that solve nearest-neighbor traveling-salesperson problems with priority weighting, integrate with Google Maps APIs for real distance matrices, and surface AI-generated fuel and time savings tips.
 - **Shipment tracking automation** that polls carrier APIs, detects status changes and delivery exceptions, records tracking events, and dispatches notifications with AI-generated customer messages and escalation logic.

@@ -1,0 +1,42 @@
+flowchart TD
+    A["Trie (Prefix Tree)"] --> B["Structure"]
+    A --> C["Operations"]
+    A --> D["Complexity"]
+    A --> E["Applications"]
+    A --> F["Variants"]
+
+    B --> B1["Root: empty string"]
+    B --> B2["Edges: characters"]
+    B --> B3["Nodes: mark end-of-word"]
+    B["Example:
+        root
+       / | \
+      a  b  c
+     /   |   \
+    p    a    a
+   / \   |    |
+  p   t  t    t
+  |   |  |    |
+ [!] [!] [!]  s
+              |
+             [!]"] --> A
+
+    C --> C1["insert(word): O(L)"]
+    C --> C2["search(word): O(L)"]
+    C --> C3["startsWith(prefix): O(L)"]
+    C --> C4["autocomplete: O(L + k)"]
+    C --> C5["remove(word): O(L)"]
+
+    D --> D1["Time O(L) per operation"]
+    D --> D2["Space O(N × L)"]
+    D --> D2a["Independent of # strings"]
+    D2 --> D2a
+
+    E --> E1["Autocomplete / spell check"]
+    E --> E2["IP routing (longest prefix)"]
+    E --> E3["DNA subsequence matching"]
+    E --> E4["Word break problem"]
+
+    F --> F1["Compressed Trie (Radix)"]
+    F --> F2["Ternary Search Tree"]
+    F --> F3["Bitwise Trie"]

@@ -1,0 +1,33 @@
+flowchart TB
+    A["Concurrency and Multiprocessing"] --> B["GIL"]
+    A --> C["Threading"]
+    A --> D["Multiprocessing"]
+    A --> E["Async IO"]
+    A --> F["ML Parallelism"]
+
+    B --> B1["Global Interpreter Lock"]
+    B --> B2["Only one thread runs bytecode"]
+    B --> B3["GIL released for I/O and C extensions"]
+    B --> B4["CPU-bound: threading hurts"]
+    B --> B5["I/O-bound: threading helps"]
+
+    C --> C1["ThreadPoolExecutor"]
+    C --> C2["threading.Thread"]
+    C --> C3["Locks for thread safety"]
+    C --> C4["Queue-based worker pattern"]
+
+    D --> D1["ProcessPoolExecutor"]
+    D --> D2["multiprocessing.Pool"]
+    D --> D3["Separate memory space"]
+    D --> D4["Bypasses GIL entirely"]
+    D --> D5["Shared memory with Value, Array"]
+
+    E --> E1["asyncio event loop"]
+    E --> E2["async / await syntax"]
+    E --> E3["Cooperative multitasking"]
+    E --> E4["Best for I/O-bound work"]
+
+    F --> F1["joblib for parallel for loops"]
+    F --> F2["Hyperparameter tuning"]
+    F --> F3["Batch inference"]
+    F --> F4["Ensemble evaluation"]

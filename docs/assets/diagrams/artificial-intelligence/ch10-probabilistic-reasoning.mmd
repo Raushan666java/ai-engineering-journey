@@ -1,0 +1,42 @@
+flowchart TB
+    subgraph Temporal_Models["Temporal Probability Models"]
+        Stationary["Stationary Process<br/>Transition model fixed"]
+        Markov["Markov Assumption<br/>X_t depends on X_(t-k)"]
+        Sensor["Sensor Model<br/>P(E_t | X_t)"]
+        Transition["Transition Model<br/>P(X_t | X_(t-1))"]
+    end
+
+    subgraph Inference_Tasks["Inference Tasks"]
+        Filtering["Filtering<br/>P(X_t | e_1..e_t)<br/>Online belief state"]
+        Prediction["Prediction<br/>P(X_(t+k) | e_1..e_t)"]
+        Smoothing["Smoothing<br/>P(X_k | e_1..e_t)<br/>k < t"]
+        MostLikely["Most Likely Sequence<br/>Viterbi algorithm"]
+    end
+
+    subgraph HMM["Hidden Markov Models"]
+        HMM_Def["X_t hidden, E_t observed<br/>A transition, B emission, pi init"]
+        Forward["Forward Algorithm<br/>alpha_t = P(X_t, e_1..e_t)"]
+        Backward["Backward Algorithm<br/>beta_t = P(e_(t+1)..e_T | X_t)"]
+        Viterbi["Viterbi Decoding<br/>Dynamic programming"]
+    end
+
+    subgraph Kalman["Kalman Filters"]
+        Kalman_Def["Continuous linear-Gaussian<br/>State space + observations"]
+        Predict["Predict: x_t = A*x_(t-1) + Bu + noise"]
+        Update["Update: K = P*H*S^(-1)"]
+        EKF["Extended KF<br/>Non-linear approximation"]
+    end
+
+    subgraph MDP["Markov Decision Processes"]
+        MDP_Def["MDP = States(S) + Actions(A) + Transition T(s,a,s') + Reward R"]
+        Policy["Policy pi: S -> A"]
+        Utility["Utility: Discounted cumulative reward"]
+        Value_Iter["Value Iteration<br/>Bellman update"]
+        Policy_Iter["Policy Iteration<br/>Evaluate -> Improve"]
+    end
+
+    Temporal_Models --> HMM
+    Temporal_Models --> Kalman
+    Inference_Tasks --> HMM
+    Inference_Tasks --> Kalman
+    MDP -.- RL["Reinforcement Learning<br/>Q-Learning, DQN"]

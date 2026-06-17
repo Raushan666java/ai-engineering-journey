@@ -1,0 +1,54 @@
+flowchart TD
+    subgraph "User Input"
+        UI["User Request<br/>High-level goal"]
+    end
+
+    subgraph "Supervisor Agent"
+        SA["Analyzes task<br/>Decides worker type<br/>Delegates not answers"]
+    end
+
+    subgraph "Worker Agents"
+        WA1["ResearchAgent<br/>Gathers information"]
+        WA2["SummarizerAgent<br/>Condenses content"]
+        WA3["WriterAgent<br/>Produces final output"]
+        WA4["CodeReviewAgent<br/>Analyzes code"]
+    end
+
+    subgraph "Orchestration Patterns"
+        OP1["Fan-Out Fan-In<br/>Parallel execution"]
+        OP2["Handoff Protocol<br/>Agent-to-agent transfer"]
+        OP3["Job Batching<br/>Horizon batch jobs"]
+        OP4["Shared Memory<br/>Redis DB state"]
+    end
+
+    subgraph "Failure Management"
+        FM1["Circuit Breaker<br/>Stop on failure rate"]
+        FM2["Timeout Guards<br/>Max execution window"]
+        FM3["Retry Policies<br/>Exponential backoff"]
+        FM4["Conflict Resolution<br/>Output merging"]
+    end
+
+    UI --> SA
+    SA --> WA1
+    SA --> WA2
+    SA --> WA3
+    SA --> WA4
+
+    WA1 --> OP1
+    WA2 --> OP1
+    WA3 --> OP1
+    WA4 --> OP1
+
+    OP1 --> OP2
+    OP2 --> OP3
+    OP3 --> OP4
+
+    SA --> FM1
+    WA1 --> FM2
+    WA1 --> FM3
+    OP1 --> FM4
+
+    style SA fill:#4a90d9,color:#fff
+    style WA1 fill:#27ae60,color:#fff
+    style OP1 fill:#e67e22,color:#fff
+    style FM1 fill:#c0392b,color:#fff

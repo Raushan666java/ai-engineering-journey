@@ -1,4 +1,4 @@
-# Chapter 28: Finance & FinTech Agents
+﻿# Chapter 28: Finance & FinTech Agents
 
 ---
 
@@ -17,6 +17,9 @@
 ---
 
 ## Theory
+
+![Finance Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/28-finance.png)
+
 
 ### 28.1 Financial Data Models & Compliance
 
@@ -1393,7 +1396,7 @@ PROMPT;
 
 ### 28.6 Trading Signal Automation
 
-Trading signal agents ingest market data — prices, volumes, economic indicators — and generate buy, sell, or hold signals with assigned conviction levels and risk parameters.
+Trading signal agents ingest market data â€” prices, volumes, economic indicators â€” and generate buy, sell, or hold signals with assigned conviction levels and risk parameters.
 
 #### The TradingSignalAgent
 
@@ -2825,7 +2828,7 @@ class ReconciliationRecord extends Model
 Finance and FinTech agents bring AI-powered automation to the most regulated sector in software. This chapter covered:
 
 - **Financial data models**: PCI-DSS-aware `Account` and `Transaction` models with field-level encryption, soft deletes, and immutable `AuditTrail` logging for every mutation
-- **Fraud detection**: A `FraudDetectionAgent` combining rule-based velocity, amount, and age checks with AI risk scoring — plus a `TransactionMonitor` service for real-time screening and alert dispatch
+- **Fraud detection**: A `FraudDetectionAgent` combining rule-based velocity, amount, and age checks with AI risk scoring â€” plus a `TransactionMonitor` service for real-time screening and alert dispatch
 - **Transaction monitoring**: A `TransactionMonitoringAgent` that runs threshold analysis, statistical outlier detection, and AI anomaly assessment on transaction batches with severity-based multi-channel alerts
 - **KYC/AML verification**: A `KycVerificationAgent` that analyzes identity documents, screens global watchlists with fuzzy name matching, and produces risk profiles backed by `KycVerification` and `WatchlistEntry` models
 - **Credit scoring**: A `CreditScoringAgent` that gathers debt-to-income, utilization, delinquency, and history data, applies a weighted scoring formula, and produces approved amounts with AI-adjusted interest rates

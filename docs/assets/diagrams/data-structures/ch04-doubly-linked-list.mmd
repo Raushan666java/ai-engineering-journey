@@ -1,0 +1,30 @@
+flowchart TD
+    subgraph Doubly_Linked_List
+        direction LR
+        N1["nullptr ⇄ prev|A|next"] <--> N2["⇄ prev|B|next"]
+        N2 <--> N3["⇄ prev|C|next → nullptr"]
+    end
+
+    subgraph Circular_Linked_List
+        direction LR
+        C1["A"] --> C2["B"] --> C3["C"] --> C1
+    end
+
+    subgraph Operations
+        PF["pushFront: O(1)"]
+        PB["pushBack: O(1)"]
+        PF2["popFront: O(1)"]
+        PB2["popBack: O(1) ← advantage over singly"]
+        INS["insertAt: O(n)"]
+        RV["Reverse traversal: yes"]
+    end
+
+    subgraph Comparison
+        S["Singly: 1 ptr/node"]
+        D["Doubly: 2 ptrs/node"]
+        C["Circular: cyclic"]
+    end
+
+    Doubly_Linked_List --> Operations
+    Doubly_Linked_List --> Comparison
+    Circular_Linked_List --> Comparison

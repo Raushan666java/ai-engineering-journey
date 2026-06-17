@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 
 ## 16.1 Expert System Architecture
 
+![Expert Systems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch16-expert-systems.png)
+
 An **expert system** is a computer program that emulates the decision-making ability of a human expert in a specific domain. The classical architecture comprises three principal components:
 
 **Knowledge Base (KB):** A repository of domain-specific facts, rules, and heuristics. In rule-based systems, knowledge is encoded as IF-THEN production rules:

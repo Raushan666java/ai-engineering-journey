@@ -1,0 +1,45 @@
+flowchart TB
+  GQL[Spring GraphQL]
+  GQL --> SCHEMA[Schema Definition]
+  SCHEMA --> TYPES[Types]
+  SCHEMA --> QUERY[Query Operations]
+  SCHEMA --> MUT[Mutation Operations]
+  SCHEMA --> SUB[Subscription Operations]
+
+  GQL --> ANNO[Annotations]
+  ANNO --> QM[QueryMapping]
+  ANNO --> MM[MutationMapping]
+  ANNO --> SM[SubscriptionMapping]
+  ANNO --> SCHM[SchemaMapping]
+
+  GQL --> FETCH[Data Fetching]
+  FETCH --> DF[DataFetcher]
+  FETCH --> DL[DataLoader / BatchMapping]
+  FETCH --> EAG[Eager Loading]
+
+  GQL --> SUB2[Subscriptions]
+  SUB2 --> WS[WebSocket Transport]
+  SUB2 --> EVT[Event-Driven]
+
+  GQL --> UI[Exploration Tools]
+  UI --> GQLI[GraphiQL]
+  UI --> VOY[GraphQL Voyager]
+
+  GQL --> SEC[Security]
+  SEC --> SPM[Spring Security]
+  SEC --> AUTH[Field-Level Auth]
+
+  GQL --> PAGIN[Pagination]
+  PAGIN --> CUR[Cursor-Based]
+  PAGIN --> OFF[Offset-Based]
+
+  GQL --> ERR[Exception Handling]
+  ERR --> GER[GraphQlExceptionResolver]
+  ERR --> CUSERR[Custom Error Response]
+
+  GQL --> TEST[Testing]
+  TEST --> GQT[GraphQlTest]
+  TEST --> GT[GraphQlTester]
+
+  GQL --> FILE[File Uploads]
+  FILE --> MP[Multipart Request]

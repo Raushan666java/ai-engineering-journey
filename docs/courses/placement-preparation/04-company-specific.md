@@ -1,4 +1,4 @@
-# Company-Specific Placement Preparation
+﻿# Company-Specific Placement Preparation
 
 > A tiered breakdown of interview processes, question patterns, and preparation strategies across FAANG/MANGA, product-based Indian companies, service-based companies, startups, and premium semiconductor/enterprise companies.
 
@@ -20,30 +20,30 @@
 
 FAANG (Facebook/Meta, Apple, Amazon, Netflix, Google) and the extended MANGA (Meta, Amazon, Netflix, Google, Apple) represent the pinnacle of software engineering compensation and prestige. These companies have hiring bars that rank among the highest in the industry.
 
-![Company Tiers Overview](../assets/images/diagrams/placement-preparation/ch04-company-tiers.png)
+![Company Tiers Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch04-company-tiers.png)
 
 ### Common Threads Across All FAANG Interviews
 
-- **Resume screening** — top schools, prior FAANG, strong open-source contributions, or referral required for initial call
-- **Phone screen (45-60 min)** — one or two LeetCode Medium/Hard problems over shared editor (CoderPad, HackerRank)
-- **On-site loop (4-6 rounds)** — 45 min each, mix of coding, system design, behavioral, and sometimes specialized rounds
-- **Compensation** — TC ranges from $180K (junior) to $500K+ (senior) in the US; 30-60 LPA in India equivalent
-- **Hiring committee** — debrief where all interviewers calibrate before extending offer
+- **Resume screening** â€” top schools, prior FAANG, strong open-source contributions, or referral required for initial call
+- **Phone screen (45-60 min)** â€” one or two LeetCode Medium/Hard problems over shared editor (CoderPad, HackerRank)
+- **On-site loop (4-6 rounds)** â€” 45 min each, mix of coding, system design, behavioral, and sometimes specialized rounds
+- **Compensation** â€” TC ranges from $180K (junior) to $500K+ (senior) in the US; 30-60 LPA in India equivalent
+- **Hiring committee** â€” debrief where all interviewers calibrate before extending offer
 
 ### Google
 
 #### Interview Process
 
-![Google Interview Process](../assets/images/diagrams/placement-preparation/ch04-google-interview.png)
+![Google Interview Process](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch04-google-interview.png)
 
 #### Googleyness & Leadership
 
 Google evaluates four core attributes beyond technical ability:
 
-1. **Googleyness** — Do they embody Google's values? Comfort with ambiguity, bias to action, intellectual humility.
-2. **Cognitive ability** — How do they think through unfamiliar problems? Verbalize reasoning before coding.
-3. **Leadership** — Have they led projects, mentored others, or driven impact without authority?
-4. **Role-related knowledge** — Domain expertise for the specific role.
+1. **Googleyness** â€” Do they embody Google's values? Comfort with ambiguity, bias to action, intellectual humility.
+2. **Cognitive ability** â€” How do they think through unfamiliar problems? Verbalize reasoning before coding.
+3. **Leadership** â€” Have they led projects, mentored others, or driven impact without authority?
+4. **Role-related knowledge** â€” Domain expertise for the specific role.
 
 Typical googleyness questions:
 - Tell me about a time you disagreed with your manager.
@@ -56,11 +56,11 @@ Typical googleyness questions:
 
 Google interviewers expect you to follow a structured approach:
 
-1. **Clarify** — Repeat the problem. Ask about input size, constraints, edge cases.
-2. **Restate** — Summarize in your own words. Confirm understanding.
-3. **Approach** — Propose 2-3 solutions. Discuss trade-offs (time, space, scalability).
-4. **Code** — Write clean, idiomatic code. Use meaningful variable names.
-5. **K-test** — Walk through with an example. Check edge cases (empty, single element, overflow).
+1. **Clarify** â€” Repeat the problem. Ask about input size, constraints, edge cases.
+2. **Restate** â€” Summarize in your own words. Confirm understanding.
+3. **Approach** â€” Propose 2-3 solutions. Discuss trade-offs (time, space, scalability).
+4. **Code** â€” Write clean, idiomatic code. Use meaningful variable names.
+5. **K-test** â€” Walk through with an example. Check edge cases (empty, single element, overflow).
 
 #### System Design Focus
 
@@ -154,9 +154,9 @@ The Bar Raiser is a dedicated interviewer who:
 - Asks deeper LP questions and stress-tests your answers
 
 The Bar Raiser looks for:
-- **Ownership** — Did you go above and beyond?
-- **Bias for Action** — Did you move fast despite ambiguity?
-- **Insist on Highest Standards** — Did you find and fix root causes?
+- **Ownership** â€” Did you go above and beyond?
+- **Bias for Action** â€” Did you move fast despite ambiguity?
+- **Insist on Highest Standards** â€” Did you find and fix root causes?
 
 #### LP-Based Behavioral Questions (5+ Sample STAR Answers)
 
@@ -165,7 +165,7 @@ The Bar Raiser looks for:
 
 **STAR Answer:**
 - **Situation:** Our team managed a payment processing service. A critical bug caused transactions to silently fail for 2% of users, losing ~$50K/day.
-- **Task:** I needed to identify affected users, restore transactions, and prevent recurrence — all within 24 hours before month-end closing.
+- **Task:** I needed to identify affected users, restore transactions, and prevent recurrence â€” all within 24 hours before month-end closing.
 - **Action:** I built a reconciliation script that cross-referenced payment logs with order data, identified all 12,000 affected transactions, wrote a batch retry pipeline that reprocessed them with idempotency guarantees, and added monitoring alerts for silent failures. I also called each of our top 20 merchants personally to explain the remediation plan.
 - **Result:** All 12,000 transactions were recovered within 12 hours. Merchants reported zero churn. The monitoring alert detected two similar issues the following week before they affected customers. I received a team-level recognition award.
 
@@ -178,7 +178,7 @@ The Bar Raiser looks for:
 - **Situation:** My team was migrating from a monolith to microservices. The manager wanted a full rewrite over 6 months. I felt an incremental strangler-fig pattern was safer and faster.
 - **Task:** I needed to convince the team that incremental migration reduced risk without extending timeline.
 - **Action:** I built a prototype of the strangler pattern routing 5% of traffic to a new service, measured latency and error rates against the monolith, and presented data at the architecture review. I acknowledged the full-rewrite approach was cleaner in theory but showed that incremental delivered value faster. When the team still disagreed after two discussions, I committed to their decision but asked to start with a single bounded context as a proof of concept.
-- **Result:** The single-context PoC succeeded in 3 weeks. The team adopted the strangler pattern for the remaining services. We completed the migration in 5 months — one month ahead of the original full-rewrite timeline — with zero production incidents.
+- **Result:** The single-context PoC succeeded in 3 weeks. The team adopted the strangler pattern for the remaining services. We completed the migration in 5 months â€” one month ahead of the original full-rewrite timeline â€” with zero production incidents.
 
 ---
 
@@ -198,7 +198,7 @@ The Bar Raiser looks for:
 
 **STAR Answer:**
 - **Situation:** A production database was growing at 200 GB/month. The existing server had 2 TB remaining. At the current rate, we would hit capacity in 10 months, but the procurement cycle was 4 months.
-- **Task:** I needed to decide between vertical scaling (provision larger server — expensive, slow) vs. sharding (months of engineering work) with incomplete data on future growth rates.
+- **Task:** I needed to decide between vertical scaling (provision larger server â€” expensive, slow) vs. sharding (months of engineering work) with incomplete data on future growth rates.
 - **Action:** I analyzed query patterns to estimate whether sharding was viable, interviewed 3 teams about their growth projections, and made a call to start sharding using customer_id modulo 16. I set a 2-month deadline to ship a minimal sharding layer and ordered a mid-range server as insurance. I communicated the decision and rationale in a doc shared with 4 stakeholder teams.
 - **Result:** Sharding shipped in 6 weeks. The insurance server was never needed. The sharding design scaled to handle 10x the current volume.
 
@@ -222,7 +222,7 @@ The Bar Raiser looks for:
 - **Situation:** Our team's test suite took 4 hours to run and had a 15% flaky test rate. Engineers routinely ignored test failures.
 - **Task:** I needed to restore confidence in the test suite so that failures were taken seriously.
 - **Action:** I quarantined all flaky tests (342 tests) into a separate pipeline, added a mandatory 3-strike rule (test flaky 3 times = auto-filed bug), and rewrote the 50 most impactful tests with deterministic assertions. I set up a weekly test-health dashboard showing pass rate, run time, and flakiness trend.
-- **Result:** Flaky rate dropped from 15% to 0.3%. Test suite run time reduced to 45 minutes. Developer trust restored — no ignored failures in 6 months.
+- **Result:** Flaky rate dropped from 15% to 0.3%. Test suite run time reduced to 45 minutes. Developer trust restored â€” no ignored failures in 6 months.
 
 #### Sample Amazon Problem
 
@@ -293,24 +293,24 @@ class TreeNode {
 | Recruiter screen | 30 min | Background, leveling |
 | Phone screen (1-2 rounds) | 45 min | Coding + design |
 | On-site (4-5 rounds) | 4-5 hours | 2-3 coding, 1 system design, 1 ASK / behavioral |
-| ASK review | — | Final calibration |
+| ASK review | â€” | Final calibration |
 
 #### ASK Philosophy
 
 Microsoft's ASK framework evaluates three dimensions:
 
-1. **Algorithm** — Data structures, algorithms, problem-solving (LeetCode Medium/Hard)
-2. **Silicon** — Low-level understanding: memory management, concurrency, OS concepts, performance
-3. **Knowledge** — Domain expertise for the specific role (Azure, .NET, TypeScript, etc.)
+1. **Algorithm** â€” Data structures, algorithms, problem-solving (LeetCode Medium/Hard)
+2. **Silicon** â€” Low-level understanding: memory management, concurrency, OS concepts, performance
+3. **Knowledge** â€” Domain expertise for the specific role (Azure, .NET, TypeScript, etc.)
 
 Interviewers are trained to evaluate all three. A strong coder who cannot discuss cache locality or thread safety will not pass.
 
 #### Design Discussions
 
 Microsoft system design interviews focus on:
-- **Azure-scale problems** — Design a blob storage system, design a VM provisioning pipeline
-- **Enterprise concerns** — Multi-tenancy, data isolation, compliance, SLA guarantees
-- **Trade-off analysis** — Why did you choose this consistency model? What happens when a datacenter fails?
+- **Azure-scale problems** â€” Design a blob storage system, design a VM provisioning pipeline
+- **Enterprise concerns** â€” Multi-tenancy, data isolation, compliance, SLA guarantees
+- **Trade-off analysis** â€” Why did you choose this consistency model? What happens when a datacenter fails?
 
 #### Sample Microsoft Problem
 
@@ -417,33 +417,33 @@ public class LRUCache<K, V> {
 #### Speed and Accuracy
 
 Meta interviews are known for:
-- **Fast pace** — You need to solve 2 problems per coding round (45 min each)
-- **No warm-up** — First problem starts immediately after introduction
-- **Bug-free code** — Interviewers pay close attention to off-by-one errors, null pointer checks
-- **Verbalize constantly** — Think out loud; silence is interpreted as being stuck
+- **Fast pace** â€” You need to solve 2 problems per coding round (45 min each)
+- **No warm-up** â€” First problem starts immediately after introduction
+- **Bug-free code** â€” Interviewers pay close attention to off-by-one errors, null pointer checks
+- **Verbalize constantly** â€” Think out loud; silence is interpreted as being stuck
 
 Key preparation tip: Practice solving LeetCode problems in under 20 minutes. Use a timer. Do 3-problem streaks without breaks.
 
 #### Product Sense
 
 Meta emphasizes product sense rounds heavily:
-- **Design Instagram feed** — How do you rank posts? How do you personalize?
-- **Design Facebook Messenger** — How do you handle real-time messaging at scale?
-- **Design WhatsApp group chat** — How do you handle delivery receipts across 256 participants?
+- **Design Instagram feed** â€” How do you rank posts? How do you personalize?
+- **Design Facebook Messenger** â€” How do you handle real-time messaging at scale?
+- **Design WhatsApp group chat** â€” How do you handle delivery receipts across 256 participants?
 
 Product design questions are evaluated on:
-1. **User focus** — Who uses this? What problem does it solve?
-2. **Metrics** — How do you measure success? (DAU, retention, time spent)
-3. **Iteration** — What would you ship in v1 vs v2 vs v3?
-4. **Edge cases** — What happens when network is slow? Someone posts spam?
+1. **User focus** â€” Who uses this? What problem does it solve?
+2. **Metrics** â€” How do you measure success? (DAU, retention, time spent)
+3. **Iteration** â€” What would you ship in v1 vs v2 vs v3?
+4. **Edge cases** â€” What happens when network is slow? Someone posts spam?
 
 #### Behavioral Focus
 
 Meta's behavioral round evaluates:
-- **Impact** — What measurable outcomes did you drive?
-- **Initiative** — Did you identify problems and fix them without being asked?
-- **Conflict** — How do you handle disagreements? (Similar to Amazon LPs but less formalized)
-- **Ambition** — Why Meta? Why now? Do you understand the mission?
+- **Impact** â€” What measurable outcomes did you drive?
+- **Initiative** â€” Did you identify problems and fix them without being asked?
+- **Conflict** â€” How do you handle disagreements? (Similar to Amazon LPs but less formalized)
+- **Ambition** â€” Why Meta? Why now? Do you understand the mission?
 
 #### Sample Meta Problem
 
@@ -493,17 +493,17 @@ public class LowestCommonAncestor {
 | Recruiter call | 30 min | Culture discussion, expectations |
 | Technical phone screen | 45 min | 1 coding problem |
 | On-site (4-5 rounds) | 4-5 hours | Deep dives, system design, culture |
-| Executive round | 45 min | VP or Director — strategic thinking |
+| Executive round | 45 min | VP or Director â€” strategic thinking |
 
 #### Culture Deck
 
 Netflix's culture deck (128 slides, publicly available) is the foundation of all interviews:
 
-1. **Freedom and Responsibility** — We hire great people and give them freedom. With freedom comes accountability.
-2. **Context, Not Control** — Leaders provide context; employees make decisions.
-3. **Highly Aligned, Loosely Coupled** — Teams align on goals but operate independently.
-4. **The Keeper Test** — Would you fight to keep this person? If not, let them go with a generous severance.
-5. **No Rules Rules** — No vacation policy (take what you need). No expense policy (act in Netflix's best interest).
+1. **Freedom and Responsibility** â€” We hire great people and give them freedom. With freedom comes accountability.
+2. **Context, Not Control** â€” Leaders provide context; employees make decisions.
+3. **Highly Aligned, Loosely Coupled** â€” Teams align on goals but operate independently.
+4. **The Keeper Test** â€” Would you fight to keep this person? If not, let them go with a generous severance.
+5. **No Rules Rules** â€” No vacation policy (take what you need). No expense policy (act in Netflix's best interest).
 
 Interviewers ask questions specifically designed to assess whether you fit this culture:
 - Tell me about a time you made a decision without asking permission.
@@ -518,7 +518,7 @@ Problem: "Design a personalized recommendation system."
 Company twist: "How would you handle the cold-start problem for a new user who has watched nothing?"
 ```
 
-**Solution approach:** Use hybrid filtering — collaborative for users with history, content-based (genre, actors, directors) for cold start, and popularity + editorial picks for brand-new users.
+**Solution approach:** Use hybrid filtering â€” collaborative for users with history, content-based (genre, actors, directors) for cold start, and popularity + editorial picks for brand-new users.
 
 ```java
 import java.util.*;
@@ -579,9 +579,9 @@ public class RecommendationEngine {
 
 ### 5 Sample Technical Problems with Company-Specific Twists
 
-**Problem 1: Google — Median of Two Sorted Arrays**
+**Problem 1: Google â€” Median of Two Sorted Arrays**
 
-Base: LeetCode Hard — find median of two sorted arrays in O(log(m+n)).
+Base: LeetCode Hard â€” find median of two sorted arrays in O(log(m+n)).
 
 Google twist: "Now you have K sorted arrays of different sizes. Find the median in O(K log N) or better."
 
@@ -624,7 +624,7 @@ public class MedianOfKSortedArrays {
 }
 ```
 
-**Problem 2: Amazon — Item Recommendations**
+**Problem 2: Amazon â€” Item Recommendations**
 
 Base: Given a list of products purchased together, recommend items for a shopping cart.
 
@@ -655,7 +655,7 @@ public class RealTimeRecommender {
 }
 ```
 
-**Problem 3: Meta — Friend Recommendations**
+**Problem 3: Meta â€” Friend Recommendations**
 
 Base: Given a social graph, recommend friends-of-friends.
 
@@ -688,7 +688,7 @@ public class FriendRecommender {
 }
 ```
 
-**Problem 4: Microsoft — Distributed Rate Limiter**
+**Problem 4: Microsoft â€” Distributed Rate Limiter**
 
 Base: Implement a token bucket rate limiter.
 
@@ -733,7 +733,7 @@ public class DistributedRateLimiter {
 }
 ```
 
-**Problem 5: Netflix — Video Streaming Optimization**
+**Problem 5: Netflix â€” Video Streaming Optimization**
 
 Base: Design a video streaming pipeline.
 
@@ -762,7 +762,7 @@ public class AdaptiveBitrateStreamer {
 
     public QualityTier selectTier(double downloadSpeedKbps, int currentBufferMs) {
         if (currentBufferMs < MIN_BUFFER_MS) {
-            // Buffer running low — drop to lowest
+            // Buffer running low â€” drop to lowest
             return TIERS.get(TIERS.size() - 1);
         }
 
@@ -790,7 +790,7 @@ public class AdaptiveBitrateStreamer {
 | Format | PDF, clean format, no columns, no graphics |
 | Action verbs | "Architected", "Delivered", "Designed", "Led", "Optimized", "Reduced" |
 | Quantify everything | "Reduced latency by 40%", "Served 1M+ requests/day" |
-| Keywords | Match job description — AWS, Kubernetes, microservices, distributed systems |
+| Keywords | Match job description â€” AWS, Kubernetes, microservices, distributed systems |
 | Projects | 2-3 impactful projects with tech stack and measurable outcomes |
 | Experience | Reverse chronological, bullet points under each role |
 | Education | Top of page for new grads, bottom for experienced |
@@ -802,7 +802,7 @@ public class AdaptiveBitrateStreamer {
 - DO: Have a "Technical Skills" section with categories (Languages, Frameworks, Tools, Cloud)
 - DON'T: Include a photo, age, gender, marital status
 - DON'T: Use tables or multi-column layouts (resume parsers will garble them)
-- DON'T: List every project you've ever done — pick the best 2-3
+- DON'T: List every project you've ever done â€” pick the best 2-3
 
 ---
 
@@ -814,7 +814,7 @@ India's product ecosystem includes homegrown giants like Flipkart, Uber (enginee
 
 ### Common Patterns
 
-- **Round structure:** Online assessment → 2-3 technical rounds → Hiring manager round → HR
+- **Round structure:** Online assessment â†’ 2-3 technical rounds â†’ Hiring manager round â†’ HR
 - **Focus areas:** DSA (Medium/Hard), system design (especially high-traffic scenarios), product sense, past experience deep-dive
 - **Language freedom:** Most allow any language (Python preferred for speed, Java/C++ for performance)
 - **Compensation:** 15-30 LPA fresher, 30-60 LPA SDE-2, 50-90 LPA Senior
@@ -827,16 +827,16 @@ India's product ecosystem includes homegrown giants like Flipkart, Uber (enginee
 |-------|----------|-------|
 | Online assessment | 90 min | DSA (2-3 problems), MCQs on CS fundamentals |
 | Machine coding round | 90 min | Design and implement a working application (e.g., splitwise, parking lot) |
-| DSA round 1 | 45 min | Medium/Hard DSA — graphs, DP, trees |
-| DSA round 2 | 45 min | Hard DSA — advanced problem solving |
+| DSA round 1 | 45 min | Medium/Hard DSA â€” graphs, DP, trees |
+| DSA round 2 | 45 min | Hard DSA â€” advanced problem solving |
 | System design / Design round | 60 min | Product design, scale, database schema |
 | Hiring manager + HR | 30 min | Cultural fit, expectations |
 
 #### Key Preparation Areas
 
-- **Machine coding** — This is unique to Flipkart among Indian product companies. You must build a functioning application with clean code, OOP principles, and test coverage in 90 minutes.
-- **Product design** — Flipkart asks product-level design (Design Amazon cart, design Flipkart search) rather than pure system design.
-- **DSA depth** — Two dedicated DSA rounds means you need breadth across topics.
+- **Machine coding** â€” This is unique to Flipkart among Indian product companies. You must build a functioning application with clean code, OOP principles, and test coverage in 90 minutes.
+- **Product design** â€” Flipkart asks product-level design (Design Amazon cart, design Flipkart search) rather than pure system design.
+- **DSA depth** â€” Two dedicated DSA rounds means you need breadth across topics.
 
 #### Sample Flipkart Problem
 
@@ -916,16 +916,16 @@ public class ExpenseManager {
 | Coding screen | 60 min | 2 LeetCode Medium problems |
 | Technical round 1 | 60 min | DSA + problem solving |
 | Technical round 2 | 60 min | System design (heavy) |
-| Technical round 3 | 60 min | Engineering rigor — code review, debugging, testing |
+| Technical round 3 | 60 min | Engineering rigor â€” code review, debugging, testing |
 | Manager round | 45 min | Leadership, ownership, past experience |
 
 #### Engineering Rigor
 
 Uber is known for its engineering rigor. Key expectations:
-- **Production-ready code** — Handle edge cases, logging, error handling, input validation
-- **Testing mindset** — How would you test this? What unit/integration tests would you write?
-- **Debugging** — Given a production issue, how do you root-cause it?
-- **Monitoring** — What metrics would you track? How do you set up alerts?
+- **Production-ready code** â€” Handle edge cases, logging, error handling, input validation
+- **Testing mindset** â€” How would you test this? What unit/integration tests would you write?
+- **Debugging** â€” Given a production issue, how do you root-cause it?
+- **Monitoring** â€” What metrics would you track? How do you set up alerts?
 
 #### Sample Uber Problem
 
@@ -1001,18 +1001,18 @@ public class RideMatchingService {
 | Round | Duration | Focus |
 |-------|----------|-------|
 | Online assessment | 90 min | DSA + SQL + system design MCQs |
-| Technical round 1 | 60 min | DSA — arrays, strings, hashing, trees |
-| Technical round 2 | 60 min | System design — scale, data pipelines |
+| Technical round 1 | 60 min | DSA â€” arrays, strings, hashing, trees |
+| Technical round 2 | 60 min | System design â€” scale, data pipelines |
 | Data analytics round (some) | 45 min | SQL, data modeling, experimentation |
 | Manager / HR | 30 min | Culture, expectations |
 
 #### Data-Driven Problems
 
 Swiggy and Zomato emphasize data-driven problem solving:
-- **SQL** — Complex joins, window functions, aggregations on order data
-- **Metrics** — How would you measure delivery time quality? What's a good cancellation rate?
-- **A/B testing** — How do you test a new ranking algorithm? What metrics would you track?
-- **Experimentation** — How do you validate that a new feature improves retention?
+- **SQL** â€” Complex joins, window functions, aggregations on order data
+- **Metrics** â€” How would you measure delivery time quality? What's a good cancellation rate?
+- **A/B testing** â€” How do you test a new ranking algorithm? What metrics would you track?
+- **Experimentation** â€” How do you validate that a new feature improves retention?
 
 #### Sample Swiggy/Zomato Problem
 
@@ -1047,29 +1047,29 @@ LIMIT 10;
 |-------|----------|-------|
 | Online assessment | 60-90 min | DSA + CS fundamentals MCQs |
 | DSA round 1 | 45 min | Arrays, strings, basic DSA |
-| DSA round 2 | 45 min | Advanced DSA — DP, graphs |
+| DSA round 2 | 45 min | Advanced DSA â€” DP, graphs |
 | Design round | 45-60 min | System design or product design |
 | Manager / HR | 30 min | Culture, behavioral |
 
 #### Ola-Specific Focus
 
-- **System design at scale** — Design a fleet management system, cab allocation
-- **Hardware + software** — IoT integration with driver devices
-- **Geospatial problems** — Route optimization, ETA prediction, geofencing
+- **System design at scale** â€” Design a fleet management system, cab allocation
+- **Hardware + software** â€” IoT integration with driver devices
+- **Geospatial problems** â€” Route optimization, ETA prediction, geofencing
 
 #### Paytm-Specific Focus
 
-- **Fintech domain** — Understanding of payment systems, wallets, UPI
-- **Concurrency** — How do you handle double-spending? Race conditions in wallet transactions?
-- **Security** — Secure payment flows, encryption, tokenization
-- **Compliance** — RBI guidelines, KYC, transaction limits
+- **Fintech domain** â€” Understanding of payment systems, wallets, UPI
+- **Concurrency** â€” How do you handle double-spending? Race conditions in wallet transactions?
+- **Security** â€” Secure payment flows, encryption, tokenization
+- **Compliance** â€” RBI guidelines, KYC, transaction limits
 
 #### MakeMyTrip-Specific Focus
 
-- **Search optimization** — Price comparison across thousands of flights/hotels
-- **Cache invalidation** — Real-time pricing changes, seat availability
-- **Recommendation engine** — Personalized travel suggestions
-- **Distributed transactions** — Booking flights across multiple airlines (saga pattern)
+- **Search optimization** â€” Price comparison across thousands of flights/hotels
+- **Cache invalidation** â€” Real-time pricing changes, seat availability
+- **Recommendation engine** â€” Personalized travel suggestions
+- **Distributed transactions** â€” Booking flights across multiple airlines (saga pattern)
 
 #### Sample Question Patterns
 
@@ -1107,10 +1107,10 @@ Service-based companies (TCS, Infosys, Wipro, Accenture, Cognizant, Capgemini, T
 |--------|---------|
 | Selection rounds | Aptitude test + coding assessment + technical interview + HR |
 | Aptitude focus | Quantitative aptitude, logical reasoning, verbal ability |
-| Coding focus | Basics — arrays, strings, simple algorithms |
+| Coding focus | Basics â€” arrays, strings, simple algorithms |
 | Technical interview | CS fundamentals (OS, DBMS, Networks, OOP) |
 | Compensation | 3.5 LPA - 11.5 LPA (varies by role and company) |
-| Bond | 1-2 years (common — read terms carefully) |
+| Bond | 1-2 years (common â€” read terms carefully) |
 
 ### TCS (Tata Consultancy Services)
 
@@ -1121,14 +1121,14 @@ TCS has multiple hiring tracks:
 **TCS Ninja:**
 - Target: Entry-level engineers
 - CTC: ~3.5 LPA
-- Process: NQT (National Qualifier Test) → Technical interview → HR
+- Process: NQT (National Qualifier Test) â†’ Technical interview â†’ HR
 - NQT sections: Quantitative aptitude (20 Q), verbal ability (15 Q), logical reasoning (20 Q), coding (2 problems)
-- Coding difficulty: Easy — pattern printing, array manipulation, string basics
+- Coding difficulty: Easy â€” pattern printing, array manipulation, string basics
 
 **TCS Digital:**
 - Target: Higher-performers on NQT
 - CTC: ~7-8 LPA
-- Process: NQT → Advanced coding round → Technical + Managerial interview
+- Process: NQT â†’ Advanced coding round â†’ Technical + Managerial interview
 - Advanced coding: 2-3 Medium-level problems (graphs, DP, trees)
 - Additional: System design or case study discussion
 
@@ -1192,14 +1192,14 @@ public class SecondLargest {
 
 **InfyTQ (Infosys Talent Quotient):**
 - Platform-based assessment open to all 2024/2025 graduates
-- Process: InfyTQ certification test (2 hours) → Interview shortlisting
+- Process: InfyTQ certification test (2 hours) â†’ Interview shortlisting
 - Sections: Programming aptitude, DSA, object-oriented programming, DBMS, operating systems
 - Benefits: Get Infosys certification + interview opportunity
 
 **Infosys System Engineer (SE):**
 - Entry-level engineering role
 - CTC: ~5-6 LPA (SE), ~8-9 LPA (SE with PPA)
-- Process: InfyTQ score → Technical + HR interview
+- Process: InfyTQ score â†’ Technical + HR interview
 
 **Infosys Specialist Programmer (SP):**
 - Higher grade with better pay
@@ -1276,10 +1276,10 @@ Neither = 60 - 50 = 10
 | Stage | Details |
 |-------|---------|
 | Registration | Through campus placement cell or Accenture careers portal |
-| Cognitive assessment | 90 min — verbal ability, logical reasoning, quantitative aptitude |
-| Coding assessment | 45 min — 2 coding problems |
-| Communication assessment | 30 min — spoken and written English evaluation |
-| Technical + HR interview | 30-45 min — CS fundamentals, projects, communication |
+| Cognitive assessment | 90 min â€” verbal ability, logical reasoning, quantitative aptitude |
+| Coding assessment | 45 min â€” 2 coding problems |
+| Communication assessment | 30 min â€” spoken and written English evaluation |
+| Technical + HR interview | 30-45 min â€” CS fundamentals, projects, communication |
 | Offer | Dependent on performance across all stages |
 
 #### New Associate vs Associate Engineer
@@ -1318,9 +1318,9 @@ public class AnagramCheck {
 
 | Stage | Details |
 |-------|---------|
-| Online test | 90 min — quantitative aptitude, logical reasoning, verbal ability, automata coding |
-| Technical interview | 30-45 min — programming, core subjects, projects |
-| HR interview | 15-20 min — communication, availability, location flexibility |
+| Online test | 90 min â€” quantitative aptitude, logical reasoning, verbal ability, automata coding |
+| Technical interview | 30-45 min â€” programming, core subjects, projects |
+| HR interview | 15-20 min â€” communication, availability, location flexibility |
 
 #### Compensation (Fresher)
 
@@ -1333,7 +1333,7 @@ public class AnagramCheck {
 Question: Find the missing number in the sequence: 2, 6, 12, 20, ?, 42
 
 Answer: 30
-Pattern: 1×2, 2×3, 3×4, 4×5, 5×6, 6×7
+Pattern: 1Ã—2, 2Ã—3, 3Ã—4, 4Ã—5, 5Ã—6, 6Ã—7
 Or: +4, +6, +8, +10, +12
 ```
 
@@ -1344,8 +1344,8 @@ Or: +4, +6, +8, +10, +12
 | Stage | Details |
 |-------|---------|
 | Pre-placement talk | Company overview (usually in campus) |
-| Online assessment | 80 min — aptitude, reasoning, English, pseudo-code, essay writing |
-| Technical interview | 30 min — CS fundamentals, programming, project discussion |
+| Online assessment | 80 min â€” aptitude, reasoning, English, pseudo-code, essay writing |
+| Technical interview | 30 min â€” CS fundamentals, programming, project discussion |
 | HR interview | 15-20 min |
 
 #### Compensation
@@ -1355,9 +1355,9 @@ Or: +4, +6, +8, +10, +12
 
 #### Preparation Focus
 
-- **Pseudo-code** — Capgemini often asks to trace code written in pseudocode. Understand loops, conditionals, recursion.
-- **Essay writing** — Write a short essay on a topic (e.g., "Impact of AI on society"). Practice writing 200-300 words in 15 minutes.
-- **English fluency** — Interviews emphasize communication skills heavily.
+- **Pseudo-code** â€” Capgemini often asks to trace code written in pseudocode. Understand loops, conditionals, recursion.
+- **Essay writing** â€” Write a short essay on a topic (e.g., "Impact of AI on society"). Practice writing 200-300 words in 15 minutes.
+- **English fluency** â€” Interviews emphasize communication skills heavily.
 
 ### Tech Mahindra
 
@@ -1365,7 +1365,7 @@ Or: +4, +6, +8, +10, +12
 
 | Stage | Details |
 |-------|---------|
-| Online test | 60 min — aptitude, logical, verbal, coding |
+| Online test | 60 min â€” aptitude, logical, verbal, coding |
 | Technical + HR interview | Combined round, 25-30 min |
 
 #### Compensation
@@ -1385,7 +1385,7 @@ A:C = 10:21
 **Q2: Work and Time**
 ```
 A can complete a work in 12 days. B is 50% more efficient than A. How many days will B take?
-Solution: B's efficiency = 1.5 × A's efficiency
+Solution: B's efficiency = 1.5 Ã— A's efficiency
 B's time = 12 / 1.5 = 8 days
 ```
 
@@ -1424,7 +1424,7 @@ Solution: 5 letters with P repeated twice
 
 | Red Flag | Why It Matters |
 |----------|----------------|
-| Bond agreement | Read the fine print — some have 2-year bonds with 1-2L penalty |
+| Bond agreement | Read the fine print â€” some have 2-year bonds with 1-2L penalty |
 | Bench period | Some companies keep you on bench without pay after training |
 | Service agreement fees | Training fees deducted if you leave early |
 | Location flexibility denial | Be prepared to relocate anywhere in India |
@@ -1457,7 +1457,7 @@ Unlike FAANG where SDEs often specialize in a narrow domain for years, startups 
 - Pick up new languages and frameworks quickly
 - Make architectural decisions without a dedicated architect team
 
-**Interview implications:** Your interview will cover a wider range of topics — you may get a frontend question, a backend system design, and a SQL optimization problem in the same loop.
+**Interview implications:** Your interview will cover a wider range of topics â€” you may get a frontend question, a backend system design, and a SQL optimization problem in the same loop.
 
 #### Ownership Mindset
 
@@ -1477,10 +1477,10 @@ In a startup, every engineer influences the product. You will be asked:
 #### Culture Fit
 
 Startup culture fit evaluation focuses on:
-- **Communication** — Can you explain technical concepts to non-technical team members?
-- **Collaboration** — Startups have flat hierarchies; can you work without a manager directing every step?
-- **Resilience** — Things break, priorities change, features get canceled. How do you handle it?
-- **Passion** — Do you care about the problem the startup is solving?
+- **Communication** â€” Can you explain technical concepts to non-technical team members?
+- **Collaboration** â€” Startups have flat hierarchies; can you work without a manager directing every step?
+- **Resilience** â€” Things break, priorities change, features get canceled. How do you handle it?
+- **Passion** â€” Do you care about the problem the startup is solving?
 
 ### How Startup Interviews Differ
 
@@ -1519,13 +1519,13 @@ ESOPs are the most complicated part of startup compensation. Understand these te
 | Strike price | Price per share you pay to exercise options |
 | FMV (Fair Market Value) | Current value per share (usually = strike price at grant) |
 | Vesting schedule | Typically 4 years with 1-year cliff |
-| Exercise window | Time after leaving to exercise (90 days typical — short!) |
+| Exercise window | Time after leaving to exercise (90 days typical â€” short!) |
 | Liquidation preference | Who gets paid first when company is acquired |
 | Dilution | Your percentage ownership decreases as more shares are issued |
 
 **Negotiation tips:**
 - Negotiate base salary first; equity is secondary
-- Ask about the pool — is the equity from a fresh pool or existing?
+- Ask about the pool â€” is the equity from a fresh pool or existing?
 - Understand the difference between options and RSUs
 - Check if early exercise is available (tax advantage in the US)
 - Never trade base salary for equity at an early-stage company
@@ -1534,11 +1534,11 @@ ESOPs are the most complicated part of startup compensation. Understand these te
 
 Even at startups, base salary is negotiable:
 
-1. **Know your BATNA** — What is your next-best option? Use competing offers.
-2. **Delay salary conversations** — Let them want you first.
-3. **Total comp frame** — Talk about total package, not just base salary.
-4. **Be specific** — "I would like to see $X base" is better than "more."
-5. **Don't lie** — About existing offers or current compensation.
+1. **Know your BATNA** â€” What is your next-best option? Use competing offers.
+2. **Delay salary conversations** â€” Let them want you first.
+3. **Total comp frame** â€” Talk about total package, not just base salary.
+4. **Be specific** â€” "I would like to see $X base" is better than "more."
+5. **Don't lie** â€” About existing offers or current compensation.
 
 #### Sample Negotiation Script
 
@@ -1546,7 +1546,7 @@ Even at startups, base salary is negotiable:
 "Thank you for the offer. I am very excited about [Company] and the
 problem you are solving. Based on my research and comparing with other
 opportunities, I was hoping for a base salary closer to [number].
-I understand budget constraints — would it be possible to bridge the gap
+I understand budget constraints â€” would it be possible to bridge the gap
 with a signing bonus or additional equity?"
 ```
 
@@ -1599,9 +1599,9 @@ Startup twist: "You have 2 weeks and a team of 1 (you). What do you build?"
 ```
 
 The startup expects:
-- **Pragmatism** — What can you build quickly? SQLite vs PostgreSQL? Single server vs cluster?
-- **Trade-offs** — Why not use an existing service? When do you need to scale?
-- **Incremental delivery** — V1 is a working link shortener. V2 adds analytics. V3 scales.
+- **Pragmatism** â€” What can you build quickly? SQLite vs PostgreSQL? Single server vs cluster?
+- **Trade-offs** â€” Why not use an existing service? When do you need to scale?
+- **Incremental delivery** â€” V1 is a working link shortener. V2 adds analytics. V3 scales.
 
 **Product Discussion:**
 ```
@@ -1610,10 +1610,10 @@ How would you diagnose the problem and what would you do about it?"
 ```
 
 Framework:
-1. **Hypothesize** — Is it onboarding? Time-to-value? Missing features?
-2. **Validate** — What data would you look at? What experiments would you run?
-3. **Prioritize** — What is the highest-leverage fix?
-4. **Measure** — How do you know if your fix worked?
+1. **Hypothesize** â€” Is it onboarding? Time-to-value? Missing features?
+2. **Validate** â€” What data would you look at? What experiments would you run?
+3. **Prioritize** â€” What is the highest-leverage fix?
+4. **Measure** â€” How do you know if your fix worked?
 
 ### Startup Compensation Ranges (India)
 
@@ -1643,7 +1643,7 @@ Framework:
 |------|----------------|
 | Full-stack skills | Build and deploy a complete web app (React + Node.js + PostgreSQL) |
 | Pragmatic system design | Focus on build-vs-buy decisions, MVP architecture, scaling incrementally |
-| Product sense | Use every product you use critically — what would you improve? |
+| Product sense | Use every product you use critically â€” what would you improve? |
 | Speed | Many startups value shipping fast over perfect architecture |
 | Communication | Practice explaining technical decisions to non-technical stakeholders |
 | Portfolio | GitHub with real projects, not just cloned tutorials |
@@ -1651,12 +1651,12 @@ Framework:
 
 ### Resources for Startup Preparation
 
-- **YC Startup School** — Free course on building startups (understanding context matters)
-- **Hacker News (news.ycombinator.com)** — Follow startup culture and discussions
-- **ProductHunt** — See what new products are being built
-- **High-Growth Engineer newsletter** — Content on startup engineering culture
-- **Lenny's Podcast** — Product and growth insights
-- **Startup interview guides** — Glassdoor company reviews, Blind app discussions
+- **YC Startup School** â€” Free course on building startups (understanding context matters)
+- **Hacker News (news.ycombinator.com)** â€” Follow startup culture and discussions
+- **ProductHunt** â€” See what new products are being built
+- **High-Growth Engineer newsletter** â€” Content on startup engineering culture
+- **Lenny's Podcast** â€” Product and growth insights
+- **Startup interview guides** â€” Glassdoor company reviews, Blind app discussions
 
 ---
 
@@ -1664,15 +1664,15 @@ Framework:
 
 ### Overview
 
-Beyond FAANG and product companies, premium semiconductor firms (NVIDIA, Qualcomm, Texas Instruments) and enterprise software giants (Adobe, Salesforce, Oracle, LinkedIn) offer exceptional careers with unique interview patterns. These companies test deep domain knowledge — hardware-software co-design for chip companies, enterprise-scale architecture for software giants.
+Beyond FAANG and product companies, premium semiconductor firms (NVIDIA, Qualcomm, Texas Instruments) and enterprise software giants (Adobe, Salesforce, Oracle, LinkedIn) offer exceptional careers with unique interview patterns. These companies test deep domain knowledge â€” hardware-software co-design for chip companies, enterprise-scale architecture for software giants.
 
 ### Common Threads
 
-- **Domain depth** — Chip companies test OS, computer architecture, C/C++ proficiency; enterprise companies test system design at scale
-- **Low-level coding** — Semiconductors ask pointer manipulation, memory management, bit manipulation
-- **System design** — Enterprise companies focus on distributed systems handling millions of transactions
-- **Behavioral fit** — Cultural alignment with company values is heavily weighted
-- **Compensation** — ₹25-60 LPA for software roles; competitive with FAANG for senior positions
+- **Domain depth** â€” Chip companies test OS, computer architecture, C/C++ proficiency; enterprise companies test system design at scale
+- **Low-level coding** â€” Semiconductors ask pointer manipulation, memory management, bit manipulation
+- **System design** â€” Enterprise companies focus on distributed systems handling millions of transactions
+- **Behavioral fit** â€” Cultural alignment with company values is heavily weighted
+- **Compensation** â€” â‚¹25-60 LPA for software roles; competitive with FAANG for senior positions
 
 ---
 
@@ -1685,15 +1685,15 @@ Beyond FAANG and product companies, premium semiconductor firms (NVIDIA, Qualcom
 | Recruiter screen | 30 min | Background, availability, team preference |
 | Technical phone screen | 45-60 min | 1-2 LeetCode Medium/Hard problems (Swift/Obj-C/Java) |
 | On-site loop (6-7 rounds) | 6-8 hours | 4-5 coding, 1 system design, 1 hiring manager, 1 behavioral |
-| Team match / Direct offer | — | Team-specific alignment after passing HC |
+| Team match / Direct offer | â€” | Team-specific alignment after passing HC |
 
 #### What Apple Looks For
 
-- **Craftsmanship** — Apple values beautifully written, production-quality code. Variable naming, edge-case handling, and code structure are scrutinized.
-- **Cross-functional thinking** — How does your feature interact with hardware, design, privacy, and accessibility?
-- **Product passion** — Apple interviewers expect you to use and understand Apple products deeply.
-- **Attention to detail** — Pixel-perfect, bit-perfect thinking. Edge cases matter.
-- **Privacy & security mindset** — Apple prioritizes on-device processing, minimal data collection, and user privacy.
+- **Craftsmanship** â€” Apple values beautifully written, production-quality code. Variable naming, edge-case handling, and code structure are scrutinized.
+- **Cross-functional thinking** â€” How does your feature interact with hardware, design, privacy, and accessibility?
+- **Product passion** â€” Apple interviewers expect you to use and understand Apple products deeply.
+- **Attention to detail** â€” Pixel-perfect, bit-perfect thinking. Edge cases matter.
+- **Privacy & security mindset** â€” Apple prioritizes on-device processing, minimal data collection, and user privacy.
 
 #### Sample Technical Problems
 
@@ -1769,11 +1769,11 @@ public class ReverseLinkedList {
 
 #### Apple-Specific Tips
 
-- Study Apple's Human Interface Guidelines — they test design sensibility
+- Study Apple's Human Interface Guidelines â€” they test design sensibility
 - Practice Swift or Objective-C if targeting iOS/macOS roles; Java/C++ for server-side
-- Know Apple's privacy stance — differential privacy, on-device ML, App Tracking Transparency
-- Be prepared for "surprise" rounds — you may meet a manager from a completely different team
-- Apple values tenure — demonstrate long-term thinking in your answers
+- Know Apple's privacy stance â€” differential privacy, on-device ML, App Tracking Transparency
+- Be prepared for "surprise" rounds â€” you may meet a manager from a completely different team
+- Apple values tenure â€” demonstrate long-term thinking in your answers
 - **Key resources:** Apple's HIG (Human Interface Guidelines), WWDC sessions, Swift.org
 
 ---
@@ -1787,15 +1787,15 @@ public class ReverseLinkedList {
 | Recruiter call | 30 min | Background, role alignment |
 | Technical phone screen | 45-60 min | 1 LeetCode Medium + system design basics |
 | On-site loop (4-5 rounds) | 5 hours | 2 coding, 1 system design, 1 behavioral (values), 1 hiring manager |
-| Team selection | — | Cross-functional team matching |
+| Team selection | â€” | Cross-functional team matching |
 
 #### What LinkedIn Looks For
 
-- **Transformation** — LinkedIn's motto is "Transforming the way the world works." Candidates should show career growth and learning agility.
-- **Data-driven thinking** — Many problems involve graph algorithms (professional network), recommendation systems, and personalization.
-- **Professional impact** — How have you changed your previous teams or organizations?
-- **Collaboration** — Cross-team collaboration is central to LinkedIn's culture.
-- **Members first** — LinkedIn emphasizes member trust and experience over monetization.
+- **Transformation** â€” LinkedIn's motto is "Transforming the way the world works." Candidates should show career growth and learning agility.
+- **Data-driven thinking** â€” Many problems involve graph algorithms (professional network), recommendation systems, and personalization.
+- **Professional impact** â€” How have you changed your previous teams or organizations?
+- **Collaboration** â€” Cross-team collaboration is central to LinkedIn's culture.
+- **Members first** â€” LinkedIn emphasizes member trust and experience over monetization.
 
 #### Sample Technical Problems
 
@@ -1886,11 +1886,11 @@ public class ShortestConnectionPath {
 
 #### What Adobe Looks For
 
-- **Innovation & creativity** — Adobe values novel solutions and creative problem-solving approaches
-- **Product thinking** — Candidates who understand design tools, creative workflows, and user experience
-- **Technical breadth** — Full-stack knowledge, cloud architecture, AI/ML integration
-- **Customer empathy** — Understanding creative professionals' needs and workflows
-- **Code quality** — Clean, maintainable, well-tested code is expected
+- **Innovation & creativity** â€” Adobe values novel solutions and creative problem-solving approaches
+- **Product thinking** â€” Candidates who understand design tools, creative workflows, and user experience
+- **Technical breadth** â€” Full-stack knowledge, cloud architecture, AI/ML integration
+- **Customer empathy** â€” Understanding creative professionals' needs and workflows
+- **Code quality** â€” Clean, maintainable, well-tested code is expected
 
 #### Sample Technical Problems
 
@@ -1980,7 +1980,7 @@ public class MergeIntervals {
 #### Adobe-Specific Tips
 
 - Know Adobe's product ecosystem: Photoshop, Illustrator, Premiere Pro, Acrobat, Experience Cloud
-- Adobe values design thinking — practice product improvement discussions
+- Adobe values design thinking â€” practice product improvement discussions
 - System design questions often involve creative workflows, real-time collaboration, asset management
 - Demonstrate understanding of creative professionals' needs
 - **Key resources:** Adobe Tech Blog, Adobe I/O, Behance (understand the creative ecosystem)
@@ -2001,11 +2001,11 @@ public class MergeIntervals {
 
 #### What Salesforce Looks For
 
-- **Ohana culture** — Family values: trust, customer success, innovation, equality, sustainability
-- **Platform thinking** — Understanding of multi-tenant architecture and metadata-driven development
-- **Enterprise mindset** — Reliability, security, compliance, and SLAs for mission-critical business data
-- **Trailblazer attitude** — Continuous learning, certification, community contribution
-- **Giving back** — Salesforce's 1-1-1 model (1% equity, product, employee time to community)
+- **Ohana culture** â€” Family values: trust, customer success, innovation, equality, sustainability
+- **Platform thinking** â€” Understanding of multi-tenant architecture and metadata-driven development
+- **Enterprise mindset** â€” Reliability, security, compliance, and SLAs for mission-critical business data
+- **Trailblazer attitude** â€” Continuous learning, certification, community contribution
+- **Giving back** â€” Salesforce's 1-1-1 model (1% equity, product, employee time to community)
 
 #### Sample Technical Problems
 
@@ -2087,10 +2087,10 @@ public class ValidParentheses {
 
 #### Salesforce-Specific Tips
 
-- Earn Salesforce certifications (Admin, Platform App Builder, Developer I) — they significantly boost your profile
+- Earn Salesforce certifications (Admin, Platform App Builder, Developer I) â€” they significantly boost your profile
 - Understand multi-tenant architecture, governor limits, and SOQL
-- Know the Customer 360 platform — Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud
-- Practice Trailhead modules — Salesforce's free learning platform
+- Know the Customer 360 platform â€” Sales Cloud, Service Cloud, Marketing Cloud, Commerce Cloud
+- Practice Trailhead modules â€” Salesforce's free learning platform
 - **Key resources:** Salesforce Developer Blog, Trailhead, Salesforce Architects
 
 ---
@@ -2105,15 +2105,15 @@ public class ValidParentheses {
 | Online coding test | 60-90 min | 2-3 problems (Java/C++) |
 | Technical phone screen | 45-60 min | LeetCode Medium, SQL queries, database concepts |
 | On-site loop (4-5 rounds) | 5 hours | DS/Algo, system design, database internals, manager, HR |
-| Team match | — | Specific team alignment (OCI, Database, Cloud) |
+| Team match | â€” | Specific team alignment (OCI, Database, Cloud) |
 
 #### What Oracle Looks For
 
-- **Deep systems knowledge** — Operating systems, memory management, file systems, networking stack
-- **Database expertise** — SQL, indexing, query optimization, ACID, distributed transactions
-- **Java mastery** — Oracle is the steward of Java; deep Java knowledge (JVM, concurrency, memory model) is highly valued
-- **Cloud transformation** — Oracle Cloud Infrastructure (OCI) hires heavily for its cloud-native platform
-- **Enterprise reliability** — Five-nines availability, backup/recovery, disaster recovery expertise
+- **Deep systems knowledge** â€” Operating systems, memory management, file systems, networking stack
+- **Database expertise** â€” SQL, indexing, query optimization, ACID, distributed transactions
+- **Java mastery** â€” Oracle is the steward of Java; deep Java knowledge (JVM, concurrency, memory model) is highly valued
+- **Cloud transformation** â€” Oracle Cloud Infrastructure (OCI) hires heavily for its cloud-native platform
+- **Enterprise reliability** â€” Five-nines availability, backup/recovery, disaster recovery expertise
 
 #### Sample Technical Problems
 
@@ -2207,12 +2207,12 @@ public class PersistentKVStore {
 | Describe a complex technical problem you solved that had no clear solution. | Deep system thinking |
 | How do you ensure code reliability in production? | Enterprise mindset, testing |
 | Tell me about a time you worked with a difficult stakeholder. | Professional communication |
-| Oracle is transitioning from on-prem to cloud — how do you see that future? | Strategic thinking |
+| Oracle is transitioning from on-prem to cloud â€” how do you see that future? | Strategic thinking |
 
 #### Oracle-Specific Tips
 
-- Oracle values Java depth — master JVM internals, garbage collection, concurrency, and the Collections framework
-- Database knowledge is essential — practice SQL optimization, indexing strategies, and query plans
+- Oracle values Java depth â€” master JVM internals, garbage collection, concurrency, and the Collections framework
+- Database knowledge is essential â€” practice SQL optimization, indexing strategies, and query plans
 - For OCI roles, study cloud architecture, IaaS, PaaS, and Oracle Cloud services
 - Be ready for discussions on distributed systems, fault tolerance, and data consistency models
 - **Key resources:** Oracle Java Documentation, Oracle Dev Blog, Oracle Cloud Architecture
@@ -2232,12 +2232,12 @@ public class PersistentKVStore {
 
 #### What NVIDIA Looks For
 
-- **Low-level systems expertise** — Pointers, memory management, cache coherence, assembly-level understanding
-- **Parallel thinking** — Naturally write parallel code; understand warp scheduling, thread divergence, shared memory
-- **Computer architecture depth** — GPU architecture, memory hierarchy, pipeline, SIMT execution model
-- **Mathematical fluency** — Linear algebra, matrix operations, numerical methods for graphics/AI
-- **Optimization mindset** — Benchmarking, profiling, cycle-counting, memory bandwidth optimization
-- **Research background** — Publications in graphics, ML, robotics, or HPC are highly valued
+- **Low-level systems expertise** â€” Pointers, memory management, cache coherence, assembly-level understanding
+- **Parallel thinking** â€” Naturally write parallel code; understand warp scheduling, thread divergence, shared memory
+- **Computer architecture depth** â€” GPU architecture, memory hierarchy, pipeline, SIMT execution model
+- **Mathematical fluency** â€” Linear algebra, matrix operations, numerical methods for graphics/AI
+- **Optimization mindset** â€” Benchmarking, profiling, cycle-counting, memory bandwidth optimization
+- **Research background** â€” Publications in graphics, ML, robotics, or HPC are highly valued
 
 #### Sample Technical Problems
 
@@ -2303,8 +2303,8 @@ public class MaxSubarraySum {
 #### NVIDIA-Specific Tips
 
 - Master C/C++ (pointer arithmetic, memory layout, cache-friendly patterns)
-- Learn CUDA basics — threads, blocks, shared memory, warp divergence, memory coalescing
-- Study GPU architecture — understand the difference between CPU and GPU programming models
+- Learn CUDA basics â€” threads, blocks, shared memory, warp divergence, memory coalescing
+- Study GPU architecture â€” understand the difference between CPU and GPU programming models
 - Practice bit manipulation and numerical computing problems
 - Read NVIDIA technical blogs and GTC conference talks
 - For AI roles: know TensorRT, cuDNN, CUDA programming model
@@ -2325,12 +2325,12 @@ public class MaxSubarraySum {
 
 #### What Qualcomm Looks For
 
-- **Embedded systems expertise** — Writing code for resource-constrained devices, memory management, interrupt handling
-- **Wireless communications** — Understanding of cellular protocols (4G/5G), WiFi, Bluetooth, GPS
-- **C/C++ mastery** — Almost all coding is in C/C++; no modern language features, no STL in embedded
-- **Hardware-software interface** — Reading datasheets, register-level programming, driver development
-- **Real-time constraints** — RTOS concepts, scheduling, priority inversion, deadlock prevention
-- **Power optimization** — Battery life, thermal management, low-power coding techniques
+- **Embedded systems expertise** â€” Writing code for resource-constrained devices, memory management, interrupt handling
+- **Wireless communications** â€” Understanding of cellular protocols (4G/5G), WiFi, Bluetooth, GPS
+- **C/C++ mastery** â€” Almost all coding is in C/C++; no modern language features, no STL in embedded
+- **Hardware-software interface** â€” Reading datasheets, register-level programming, driver development
+- **Real-time constraints** â€” RTOS concepts, scheduling, priority inversion, deadlock prevention
+- **Power optimization** â€” Battery life, thermal management, low-power coding techniques
 
 #### Sample Technical Problems
 
@@ -2390,7 +2390,7 @@ public class FirstNonRepeating {
         return '_'; // No non-repeating character
     }
 
-    // Streaming version — processes characters one at a time
+    // Streaming version â€” processes characters one at a time
     public static char firstNonRepeatingStreaming(Iterator<Character> stream) {
         Map<Character, Integer> freq = new HashMap<>();
         Queue<Character> queue = new LinkedList<>();
@@ -2419,11 +2419,11 @@ public class FirstNonRepeating {
 
 #### Qualcomm-Specific Tips
 
-- C is the primary language — practice pointer arithmetic, memory management, bit manipulation
-- Study OS fundamentals deeply — scheduling, interrupts, memory management, semaphores
+- C is the primary language â€” practice pointer arithmetic, memory management, bit manipulation
+- Study OS fundamentals deeply â€” scheduling, interrupts, memory management, semaphores
 - Learn about ARM architecture and compiler optimizations
-- Know the wireless protocol stack: Physical → MAC → Network → Transport
-- Power optimization is a recurring theme — study low-power design patterns
+- Know the wireless protocol stack: Physical â†’ MAC â†’ Network â†’ Transport
+- Power optimization is a recurring theme â€” study low-power design patterns
 - **Key resources:** Qualcomm Developer Network, Embedded C guides, ARM Architecture Reference
 
 ---
@@ -2441,17 +2441,17 @@ public class FirstNonRepeating {
 
 #### What Texas Instruments Looks For
 
-- **Analog + digital knowledge** — Understanding of both hardware (circuits, signals) and software (firmware, drivers)
-- **Microcontroller expertise** — MSP430, Tiva C, C2000, or ARM Cortex-M series familiarity
-- **Firmware development** — Bare-metal programming, register-level control, interrupt service routines
-- **Real-time control** — Motor control, power management, sensor data acquisition
-- **Low-power design** — Battery-powered device optimization, sleep modes, energy harvesting
-- **Signal processing fundamentals** — ADC/DAC, filters, PWM, timers, comparators
+- **Analog + digital knowledge** â€” Understanding of both hardware (circuits, signals) and software (firmware, drivers)
+- **Microcontroller expertise** â€” MSP430, Tiva C, C2000, or ARM Cortex-M series familiarity
+- **Firmware development** â€” Bare-metal programming, register-level control, interrupt service routines
+- **Real-time control** â€” Motor control, power management, sensor data acquisition
+- **Low-power design** â€” Battery-powered device optimization, sleep modes, energy harvesting
+- **Signal processing fundamentals** â€” ADC/DAC, filters, PWM, timers, comparators
 
 #### Sample Technical Problems
 
 **Problem: "Implement a function to toggle an LED using a timer interrupt."**
-TI twist: "This is real — you will do this on actual TI hardware during the interview."
+TI twist: "This is real â€” you will do this on actual TI hardware during the interview."
 
 ```java
 // Conceptual representation of timer-based LED toggle on a microcontroller
@@ -2477,7 +2477,7 @@ public class TimerLED {
 ```
 
 **Problem: "Reverse a string in place without using any library functions."**
-TI twist: "Now do it in constant memory — you only have 256 bytes of SRAM."
+TI twist: "Now do it in constant memory â€” you only have 256 bytes of SRAM."
 
 ```java
 public class ReverseString {
@@ -2507,17 +2507,17 @@ public class ReverseString {
 #### Texas Instruments-Specific Tips
 
 - Learn about TI's microcontroller families: MSP430 (ultra-low power), Tiva C (ARM Cortex-M), C2000 (real-time control)
-- Practice reading datasheets and application notes — this is a daily skill at TI
+- Practice reading datasheets and application notes â€” this is a daily skill at TI
 - Understand ADC/DAC concepts, PWM generation, timer configurations, and serial protocols (I2C, SPI, UART)
-- Low-power design is central — study sleep modes, wake-up sources, and energy efficiency
-- TI values hands-on hardware experience — mention any PCB design, soldering, or lab work
+- Low-power design is central â€” study sleep modes, wake-up sources, and energy efficiency
+- TI values hands-on hardware experience â€” mention any PCB design, soldering, or lab work
 - **Key resources:** TI E2E Community, TI Application Notes, MSP430 and Tiva C LaunchPad tutorials
 
 ---
 
 ## Resources for Semiconductor & Enterprise
 
-- **Semiconductor interviews:** "Cracking the Embedded Software Engineering Interview" — specific to embedded roles
+- **Semiconductor interviews:** "Cracking the Embedded Software Engineering Interview" â€” specific to embedded roles
 - **CUDA resources:** NVIDIA's CUDA Programming Guide, Udacity's CUDA course
 - **Enterprise system design:** "Designing Data-Intensive Applications" by Martin Kleppmann
 - **Wireless/Telecom:** Qualcomm's Wireless Academy, 3GPP specifications
@@ -2552,9 +2552,9 @@ public class ReverseString {
 
 - [ ] Send thank-you email within 24 hours
 - [ ] Note down questions you struggled with (study them immediately)
-- [ ] Do not obsess over outcome — the next one is waiting
+- [ ] Do not obsess over outcome â€” the next one is waiting
 - [ ] If rejected, ask for feedback (some companies provide it)
-- [ ] Keep applying — placement is a numbers game
+- [ ] Keep applying â€” placement is a numbers game
 
 ---
 

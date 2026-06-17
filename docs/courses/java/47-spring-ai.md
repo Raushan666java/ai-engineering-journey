@@ -18,6 +18,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Spring AI Overview
 
+![Spring AI - LLM Integration, RAG, Vector Stores](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/47-spring-ai.png)
+
 Spring AI is a framework that brings AI capabilities to Spring Boot applications. It provides a consistent abstraction over LLM providers, vector databases, document processing, and RAG pipelines.
 
 ### 1.1 Maven Dependencies

@@ -1,4 +1,4 @@
-# Chapter 1: Introduction to Blockchain
+﻿# Chapter 1: Introduction to Blockchain
 
 ---
 
@@ -26,7 +26,7 @@ Each block typically consists of:
 2. **Body:** A list of validated transactions.
 The "chain" is formed by each block header including the cryptographic hash of the previous block's header.
 
-![Blockchain Structure](../assets/images/diagrams/blockchain/ch01-blockchain-structure.png)
+![Blockchain Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch01-blockchain-structure.png)
 
 ### Types of Blockchains
 1. **Public:** Permissionless (e.g., Bitcoin, Ethereum). Anyone can join and participate in consensus.

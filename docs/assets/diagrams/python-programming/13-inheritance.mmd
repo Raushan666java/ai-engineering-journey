@@ -1,0 +1,34 @@
+mindmap
+  root((Inheritance and Protocols))
+    Basic Inheritance
+      class Child(Parent)
+      Inherits all attributes and methods
+      Override parent methods
+      Extend with new methods
+    super builtin
+      Call parent constructor
+      Delegate to parent methods
+      Works with MRO
+    MRO C3 Linearization
+      Child before parent
+      Base class order preserved
+      D.__mro__ inspection
+      Diamond problem resolution
+    Multiple Inheritance
+      class D(B, C)
+      MRO determines dispatch
+      Explicit is better than implicit
+    Mixins
+      Small reusable behavior classes
+      Add cross-cutting functionality
+      JSONMixin, LogMixin examples
+    Abstract Base Classes
+      from abc import ABC, abstractmethod
+      Define interface contracts
+      Cannot be instantiated
+      Force subclass implementation
+    Protocols
+      Structural subtyping
+      from typing import Protocol
+      Duck typing with static checks
+      No explicit inheritance needed

@@ -15,6 +15,8 @@
 
 ## Theory
 
+![Netflix Architecture Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/20-netflix.png)
+
 ### Requirements Phase
 
 Netflix streams over 100 million hours of content daily across 190+ countries. The system must handle extreme scale while maintaining a seamless viewing experience.

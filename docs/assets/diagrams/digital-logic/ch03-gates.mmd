@@ -1,0 +1,37 @@
+mindmap
+  root((Logic Gates))
+    Fundamental Gates
+      AND: output 1 only if all inputs 1
+      OR: output 1 if any input 1
+      NOT: Inverter complement
+      NAND: complement of AND - universal
+      NOR: complement of OR - universal
+      XOR: output 1 if inputs differ
+      XNOR: output 1 if inputs equal
+    Universal Gates
+      NAND alone implements any Boolean function
+      NOR alone implements any Boolean function
+    Three-State Gates
+      Output states: 0 1 High-Impedance Z
+      Enable input controls bus connection
+      Essential for shared bus architectures
+    Positive and Negative Logic
+      Positive: HIGH = 1 LOW = 0
+      Negative: HIGH = 0 LOW = 1
+      Duality Principle: AND-OR swap
+    Logic Families
+      TTL
+        Bipolar Junction Transistors
+        5V Supply
+        Propagation Delay 10ns
+        Subfamilies: 74xx 74LSxx 74Sxx
+      CMOS
+        Complementary MOSFET Pairs
+        3-15V Supply
+        Near-Zero Static Power
+        Subfamilies: 4000 74HC 74AC 74LVC
+    Electrical Characteristics
+      Propagation Delay tPLH tPHL
+      Fan-Out: max driven inputs
+      Noise Margin: immunity to voltage noise
+      Power Dissipation: static plus dynamic

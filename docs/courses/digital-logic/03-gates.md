@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Logic Gates](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch03-gates.png)
+
 By the conclusion of this chapter, the student shall be able to:
 
 1. Describe the operation and truth table of each fundamental logic gate

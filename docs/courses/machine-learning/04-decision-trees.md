@@ -1,4 +1,4 @@
-# Chapter 4: Decision Trees
+﻿# Chapter 4: Decision Trees
 
 ---
 
@@ -16,7 +16,7 @@
 ### What is a Decision Tree?
 A Decision Tree is a flowchart-like structure used for both classification and regression. Each internal node represents a "test" on an attribute (e.g., "Is Age > 30?"), each branch represents the outcome of the test, and each leaf node represents a class label or a continuous value. Decision trees are highly interpretable because they mimic human decision-making.
 
-![Decision Tree Structure](../assets/images/diagrams/machine-learning/ch04-decision-tree.png)
+![Decision Tree Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/machine-learning/ch04-decision-tree.png)
 
 ### Splitting Criteria: Entropy and Information Gain
 To build an effective tree, we need a way to choose the best feature to split on at each node. We want splits that result in "pure" subsets (where all examples belong to the same class).

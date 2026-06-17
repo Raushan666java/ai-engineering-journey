@@ -15,6 +15,8 @@
 
 ## Theory
 
+![WhatsApp Architecture Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/19-whatsapp.png)
+
 ### Requirements Phase
 
 WhatsApp processes over 100 billion messages daily across 2 billion+ users. Understanding these requirements is essential before any design work begins.

@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Hardwired vs Microprogrammed Control Unit](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch10-control-unit.png)
+
 ### 10.1 Control Unit Function
 
 The control unit generates the sequence of control signals that direct datapath operation. It receives the instruction opcode and the clock as inputs and produces register enables, MUX selects, ALU control signals, and memory control signals as outputs.

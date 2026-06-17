@@ -14,6 +14,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![Distributed Configuration - Spring Cloud Config Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/42-config.png)
+
 ### Distributed Configuration Problem
 
 In a microservices architecture, configuration becomes distributed across many services. A centralized configuration server solves this by providing a single source of truth for all service configurations.

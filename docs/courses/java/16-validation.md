@@ -21,6 +21,8 @@ After completing this chapter, you will be able to:
 
 ## 1. Theory
 
+![Request Validation Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/16-validation.png)
+
 ### 1.1 Why Validate?
 
 Invalid data is the root cause of most application defects. Without validation, you risk:

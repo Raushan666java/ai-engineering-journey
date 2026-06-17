@@ -1,0 +1,49 @@
+flowchart TD
+    subgraph "Core Entities"
+        CE1["Client<br/>Individual Corporate"]
+        CE2["Matter<br/>Practice area status"]
+        CE3["Case<br/>Court proceedings"]
+        CE4["Document<br/>Pleadings evidence"]
+        CE5["Contract<br/>Agreements"]
+        CE6["ComplianceRecord<br/>Regulatory checks"]
+    end
+
+    subgraph "Compliance"
+        CP1["Attorney-client privilege<br/>Encrypted privileged"]
+        CP2["Work-product doctrine"]
+        CP3["EDRM Stages<br/>Identify preserve collect"]
+        CP4["Access control audit trail"]
+    end
+
+    subgraph "AI Agents"
+        AG1["ContractReviewAgent<br/>Risky clauses scoring"]
+        AG2["DiscoveryAgent<br/>Search classify privilege"]
+        AG3["ComplianceMonitorAgent<br/>Regulatory violations"]
+        AG4["CaseManagerAgent<br/>Deadlines tasks"]
+        AG5["LegalResearchAgent<br/>Case law search"]
+        AG6["EDiscoveryPipeline<br/>Collect process produce"]
+        AG7["ReportGeneratorAgent<br/>Template filling"]
+    end
+
+    subgraph "Document Pipeline"
+        DP1["Collection<br/>ESI sources"]
+        DP2["Processing<br/>Dedupe OCR"]
+        DP3["Review<br/>Relevance coding"]
+        DP4["Production<br/>Responsive formats"]
+    end
+
+    CE5 --> AG1
+    CE4 --> AG2
+    CE6 --> AG3
+    CE3 --> AG4
+    CE2 --> AG5
+    CE4 --> AG6
+    CE2 --> AG7
+
+    AG2 --> CP3
+    AG6 --> DP1 --> DP2 --> DP3 --> DP4
+
+    style CE1 fill:#4a90d9,color:#fff
+    style CP1 fill:#c0392b,color:#fff
+    style AG1 fill:#27ae60,color:#fff
+    style DP1 fill:#e67e22,color:#fff

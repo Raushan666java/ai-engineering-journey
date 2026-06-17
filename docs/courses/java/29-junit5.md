@@ -50,6 +50,8 @@ By the end of this chapter you will be able to:
 
 ## 1. Architecture Overview
 
+![JUnit 5 Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/29-junit5.png)
+
 JUnit 5 is divided into three modules:
 
 ```

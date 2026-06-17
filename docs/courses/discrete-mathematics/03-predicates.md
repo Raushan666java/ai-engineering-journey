@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Predicates and Quantifiers Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/03-predicates.png)
+
 After completing this chapter, you will be able to:
 
 - Define predicates and their truth sets

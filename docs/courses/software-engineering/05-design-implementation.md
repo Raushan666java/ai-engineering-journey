@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: apply the SOLID prin
 
 ## Theory
 
+![Design and Implementation Principles](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-05-design-implementation.png)
+
 ### Design Principles
 
 Design principles are established guidelines that, when followed, produce designs that are maintainable, understandable, and adaptable. They represent distilled experience about what characterises good software design.

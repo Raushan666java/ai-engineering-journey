@@ -15,6 +15,8 @@
 
 ## Theory / Case Study
 
+![Twitter Architecture Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/22-twitter.png)
+
 ### Phase 1: Problem Scope and Requirements
 
 Twitter serves 330+ million monthly active users who generate 500+ million tweets per day. Every user expects to see their timeline load in under 5 seconds, no matter how many accounts they follow. When a breaking news event occurs — an earthquake, a political announcement, a celebrity death — Twitter must surface relevant tweets within seconds, not minutes. The character limit started at 140 and expanded to 280 in 2017, which fundamentally changed the distribution of tweet lengths and engagement patterns.

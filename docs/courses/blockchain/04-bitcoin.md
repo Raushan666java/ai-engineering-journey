@@ -1,4 +1,4 @@
-# Chapter 4: The Bitcoin Network
+﻿# Chapter 4: The Bitcoin Network
 
 ---
 
@@ -26,7 +26,7 @@ A Bitcoin transaction consists of:
 2. **Inputs:** References to previous UTXOs and a `scriptSig` (unlocking script).
 3. **Outputs:** Value (in Satoshis) and a `scriptPubKey` (locking script).
 
-![Bitcoin UTXO Model](../assets/images/diagrams/blockchain/ch04-bitcoin.png)
+![Bitcoin UTXO Model](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch04-bitcoin.png)
 
 ### Bitcoin Script
 Bitcoin uses a stack-based, non-Turing complete language called **Script**. It is intentionally limited to prevent infinite loops (denial of service). Most transactions use **P2PKH (Pay-to-Public-Key-Hash)** scripts.

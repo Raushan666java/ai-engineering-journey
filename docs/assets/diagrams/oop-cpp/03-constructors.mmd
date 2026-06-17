@@ -1,0 +1,34 @@
+flowchart TD
+    A[Object Creation] --> B{Constructor Type}
+    B --> C[Default Constructor]
+    B --> D[Parameterized Constructor]
+    B --> E[Copy Constructor]
+    B --> F[Delegating Constructor]
+    B --> G[Move Constructor C++11]
+
+    C --> H[Compiler-generated if none defined]
+    D --> I[Overloaded constructors]
+    D --> J[Initializer list preferred]
+
+    E --> K[Deep vs Shallow Copy]
+    K --> L[Shallow: default memberwise]
+    K --> M[Deep: explicit resource copy]
+
+    F --> N[Constructor chaining]
+
+    G --> O[Transfer resources]
+    G --> P[Steals from temporary]
+
+    Q[Destructor] --> R[Single ~ClassName]
+    R --> S[Virtual for base classes]
+    R --> T[Stack unwinding order]
+
+    U[Rule of Three C++98] --> V[Destructor]
+    U --> W[Copy Constructor]
+    U --> X[Copy Assignment]
+
+    Y[Rule of Five C++11] --> V
+    Y --> W
+    Y --> X
+    Y --> Z[Move Constructor]
+    Y --> AA[Move Assignment]

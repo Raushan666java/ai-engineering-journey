@@ -1,4 +1,4 @@
-# Chapter 3: Cloud Compute Services
+﻿# Chapter 3: Cloud Compute Services
 
 ## Learning Objectives
 
@@ -16,7 +16,7 @@ After completing this chapter, students will be able to:
 
 ### 3.1 The Virtual Machine Model in the Cloud
 
-Cloud compute services provide resizable, on-demand virtual machine (VM) instances. These services form the fundamental "Infrastructure as a Service" (IaaS) layer. While the underlying hypervisors vary—AWS uses Nitro (KVM-based), Azure uses Hyper-V, and GCP uses KVM—the abstraction provided to the consumer is a consistent set of virtual CPU (vCPU), memory, storage, and networking resources.
+Cloud compute services provide resizable, on-demand virtual machine (VM) instances. These services form the fundamental "Infrastructure as a Service" (IaaS) layer. While the underlying hypervisors varyâ€”AWS uses Nitro (KVM-based), Azure uses Hyper-V, and GCP uses KVMâ€”the abstraction provided to the consumer is a consistent set of virtual CPU (vCPU), memory, storage, and networking resources.
 
 The primary advantage of cloud compute is the shift from physical hardware procurement to software-defined provisioning. This enables "just-in-time" infrastructure where resources are created in seconds and terminated when no longer needed, supporting the cloud's core promise of agility and elasticity.
 
@@ -41,7 +41,7 @@ Providers organize instances into families optimized for different workloads. Na
 - **Storage Optimized:** Focused on high-throughput, low-latency local NVMe storage. Suited for NoSQL databases and data warehousing.
 - **Accelerated Computing:** Equipped with GPUs (NVIDIA) or TPUs (GCP) for machine learning, 3D rendering, and financial modeling.
 
-![Cloud Compute Instances](../assets/images/diagrams/cloud-computing/ch03-compute-instances.png)
+![Cloud Compute Instances](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch03-compute-instances.png)
 
 ### 3.4 Lifecycle and Pricing Models
 

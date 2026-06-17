@@ -1,0 +1,45 @@
+mindmap
+  root((Kubernetes Basics))
+    Architecture
+      Control Plane
+        kube-apiserver
+        etcd
+        kube-scheduler
+        controller-manager
+        cloud-controller-manager
+      Worker Nodes
+        kubelet
+        kube-proxy
+        Container Runtime CRI
+    Pods
+      Smallest Deployable Unit
+      Shared Network Namespace
+      Ephemeral Nature
+      Resource Requests and Limits
+    Deployments
+      Declarative Updates
+      RollingUpdate Strategy
+      Recreate Strategy
+      Self Healing
+      Rollback Capability
+    Services
+      ClusterIP Internal
+      NodePort External Port
+      LoadBalancer Cloud LB
+      ExternalName DNS CNAME
+    ConfigMap and Secret
+      ConfigMap Non Sensitive
+      Secret Base64 Encoded
+      Environment Variables
+      Volume Mounts
+    Namespaces
+      Resource Isolation
+      DNS Scoping
+      Quota Boundaries
+    Labels and Selectors
+      Key Value Metadata
+      Selector Filtering
+      Equality and Set Based
+    Annotations
+      Tooling Metadata
+      Non Queryable

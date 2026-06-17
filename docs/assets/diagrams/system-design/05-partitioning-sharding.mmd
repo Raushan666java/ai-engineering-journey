@@ -1,0 +1,11 @@
+graph TD
+    A[Client Request] --> B[API Gateway]
+    B --> C{Shard Router}
+    C -->|guild_id % N| D[Shard 0: Guilds A-F]
+    C -->|guild_id % N| E[Shard 1: Guilds G-L]
+    C -->|guild_id % N| F[Shard 2: Guilds M-R]
+    C -->|guild_id % N| G[Shard 3: Guilds S-Z]
+    D --> H[ScyllaDB Node 1]
+    E --> I[ScyllaDB Node 2]
+    F --> J[ScyllaDB Node 3]
+    G --> K[ScyllaDB Node 4]

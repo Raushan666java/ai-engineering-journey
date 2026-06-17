@@ -1,0 +1,64 @@
+flowchart TD
+    subgraph "Content Platform UI"
+        UI1["Livewire Inertia Vue 3"]
+        UI2["Reverb WebSockets"]
+    end
+
+    subgraph "Laravel Octane Backend"
+        LB1["API Controllers"]
+        LB2["AI Agent Orchestrator"]
+        LB3["MCP Server Handlers"]
+        LB4["Document Service"]
+        LB5["Content Moderation"]
+    end
+
+    subgraph "AI SDK Agent Layer"
+        AG1["Content Generation Agent<br/>Article from brief"]
+        AG2["Editor Agent<br/>Grammar style review"]
+        AG3["Research Agent<br/>Web fact-checking"]
+        AG4["Moderation Agent<br/>Toxic NSFW flagging"]
+    end
+
+    subgraph "Vector Database"
+        VD1["PostgreSQL + pgvector"]
+        VD2["Document embeddings"]
+        VD3["1536 dimensions"]
+        VD4["Semantic search"]
+    end
+
+    subgraph "Cache and Queues"
+        CQ1["Redis Embeddings Cache"]
+        CQ2["Search TTL Cache"]
+        CQ3["AI Response Cache"]
+        CQ4["Horizon Workers"]
+        CQ5["Moderation Pipeline"]
+    end
+
+    UI1 --> LB1
+    UI2 --> LB2
+
+    LB1 --> LB2
+    LB2 --> AG1
+    LB2 --> AG2
+    LB2 --> AG3
+    LB2 --> AG4
+
+    AG1 --> VD1
+    AG2 --> VD1
+    AG3 --> VD1
+    AG4 --> LB5
+
+    VD1 --> VD2
+    VD2 --> VD3
+    VD3 --> VD4
+
+    AG1 --> CQ1
+    AG2 --> CQ2
+    AG3 --> CQ3
+    LB2 --> CQ4
+    AG4 --> CQ5
+
+    style LB1 fill:#4a90d9,color:#fff
+    style AG1 fill:#27ae60,color:#fff
+    style VD1 fill:#9b59b6,color:#fff
+    style CQ4 fill:#e67e22,color:#fff

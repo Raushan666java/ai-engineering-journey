@@ -1,0 +1,69 @@
+mindmap
+  root(("Modern Computer<br/>Architectures"))
+    Superscalar
+      Multiple_Instructions_per_Cycle
+      Instruction_Level_Parallelism_ILP
+      Extended_Pipeline_Stages
+        Fetch_Multiple
+        Decode_with_Renaming
+        Issue_to_Reservation_Stations
+        Execute_on_Parallel_FUs
+        Commit_via_Reorder_Buffer
+      Out_of_Order_Execution
+      Register_Renaming
+        Architectural_to_Physical
+        Eliminates_WAR_WAW
+    VLIW
+      Very_Wide_Instruction_Word
+      Static_Compiler_Scheduling
+      Lower_Hardware_Complexity
+      Binary_Compatibility_Issue
+      Examples: Itanium_TI_DSP
+    Multi_Core
+      Thread_Level_Parallelism
+      Cache_Coherence
+        MSI: Modified_Shared_Invalid
+        MESI: +Exclusive_state
+        Snooping_Protocol
+        Directory_Protocol
+      Memory_Consistency
+        Sequential_Consistency
+        Total_Store_Order_TSO
+        Relaxed_Models
+      Simultaneous_Multithreading
+        Fine_Grained: switch_each_cycle
+        Coarse_Grained: switch_on_stall
+        SMT: issue_from_multiple_threads
+    GPU_Architecture
+      SIMT_Execution
+      Streaming_Multiprocessors
+      Warps_of_32_Threads
+      Memory_Hierarchy
+        Global_Memory_DRAM
+        Shared_Memory_SRAM
+        Registers_Per_Thread
+        Constant_Texture_Cache
+      Heterogeneous_Computing
+    Speculative_Execution
+      Execute_Before_Certain
+      Reorder_Buffer_Holds_Results
+      Spectre: branch_prediction_poisoning
+      Meltdown: kernel_memory_read
+      Mitigations
+        LFENCE_MFENCE
+        KPTI
+        Retpoline
+        Microcode_Updates
+    Vector_Processing
+      Vector_Registers
+      Vector_Chaining
+      High_Data_Parallel_Throughput
+    Power_and_Thermal
+      Dynamic_Power: P=αCV²f
+      Dark_Silicon
+      DVFS_Scaling
+    Future_Directions
+      Chiplet_Architectures
+      Near_Memory_Computing
+      Domain_Specific_Accelerators
+      Quantum_Computing

@@ -11,6 +11,8 @@
 ## Theory
 ### Thread Safety Fundamentals
 
+![Concurrency and Threading Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/13-concurrency.png)
+
 A **race condition** occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a non-atomic increment: `counter += 1` compiles into three machine instructions—load, add, store. Two threads executing simultaneously can both load the same value, both increment it, and both store it, losing one increment.
 
 A **critical section** is a region of code that accesses shared resources and must not be executed by more than one thread at a time. The goal of synchronization is to enforce mutual exclusion over critical sections.

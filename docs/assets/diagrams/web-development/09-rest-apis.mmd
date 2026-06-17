@@ -1,0 +1,44 @@
+graph TD
+    subgraph HTTP Methods
+        GET[GET Read]
+        POST[POST Create]
+        PUT[PUT Update/Replace]
+        PATCH[PATCH Partial Update]
+        DELETE[DELETE Remove]
+    end
+    subgraph Status Codes
+        S2[2xx Success]
+        S3[3xx Redirection]
+        S4[4xx Client Error]
+        S5[5xx Server Error]
+    end
+    subgraph REST Principles
+        STAT[Stateless]
+        RES[Resource-Based]
+        UNI[Uniform Interface]
+        CACH[Cacheable]
+        LAYER[Layered System]
+    end
+    subgraph API Design
+        URLM[URL Modeling]
+        VER[Versioning]
+        PAG[Pagination]
+        FILT[Filtering Sorting]
+        ERR[Error Format]
+        DOC[Documentation OpenAPI]
+    end
+    subgraph Middleware
+        AUTH2[Authentication]
+        VAL[Validation]
+        LOG[Logging]
+        RATEL[Rate Limiting]
+        CORS[CORS Headers]
+    end
+    GET --> S2
+    POST --> S2
+    PUT --> S2
+    DELETE --> S2
+    RES --> URLM
+    UNI --> VER
+    CACH --> PAG
+    AUTH2 --> RATEL

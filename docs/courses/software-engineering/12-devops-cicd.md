@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the DevOps c
 
 ## Theory
 
+![DevOps and CI/CD Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-12-devops-cicd.png)
+
 ### The DevOps Culture
 
 DevOps represents the convergence of software development (Dev) and information technology operations (Ops). The movement emerged from the recognition that the traditional separation between development teams, who create software, and operations teams, who run it, creates organisational friction that slows delivery and reduces reliability.

@@ -1,0 +1,7 @@
+graph TD
+    subgraph "Service Registry Pattern"
+        S1["Service A 10.0.0.1:8080"] --> R["Service Registry (ZooKeeper/Etcd/Consul)"]
+        S2["Service B 10.0.0.2:8080"] --> R
+        C["Client"] -->|"Discover"| R
+        C -->|"Route"| S1
+    end

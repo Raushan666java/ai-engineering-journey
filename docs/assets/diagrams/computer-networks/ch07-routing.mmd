@@ -1,0 +1,49 @@
+flowchart TB
+    subgraph Algorithms["Routing Algorithms"]
+        DV["Distance-Vector: Bellman-Ford"]
+        LS["Link-State: Dijkstra"]
+        PV["Path-Vector: BGP"]
+    end
+
+    subgraph DVdetails["Distance-Vector"]
+        RIP["RIP: hop count metric, max 15"]
+        CTI["Count-to-Infinity problem"]
+        Mitigations["Mitigations"]
+        Mitigations --> SplitH["Split Horizon"]
+        Mitigations --> PoisonR["Poison Reverse"]
+        Mitigations --> HoldDown["Hold-Down Timers"]
+        RIP --> CTI
+        CTI --> Mitigations
+    end
+
+    subgraph LSdetails["Link-State OSPF"]
+        Hello["Hello: neighbor discovery"]
+        LSP["LSP: link-state packets flooded"]
+        DB["LSDB: synchronized database"]
+        SPF["Dijkstra: shortest-path tree"]
+        Areas["Hierarchical Areas: backbone Area 0"]
+        DR["DR/BDR: reduce adjacencies O(n)"]
+    end
+
+    subgraph BGPdetails["BGP Inter-Domain"]
+        eBGP["eBGP: between ASes"]
+        iBGP["iBGP: within AS (full mesh)"]
+        Attributes["Path Attributes"]
+        Attributes --> ASPATH["AS_PATH: loop detection"]
+        Attributes --> LOCALPREF["LOCAL_PREF: highest wins"]
+        Attributes --> MED["MED: entry point hint"]
+        Attributes --> NEXT_HOP["NEXT_HOP: next router IP"]
+        Attributes --> COMMUNITY["COMMUNITY: policy tags"]
+        Decision["BGP Decision Process: 8 steps"]
+    end
+
+    subgraph Special["Special Routing"]
+        Multicast["Multicast: PIM-SM / PIM-DM"]
+        Anycast["Anycast: nearest member"]
+    end
+
+    Algorithms --> DVdetails
+    Algorithms --> LSdetails
+    Algorithms --> BGPdetails
+    BGPdetails --> Decision
+    Algorithms --> Special

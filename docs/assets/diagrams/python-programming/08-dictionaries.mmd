@@ -1,0 +1,34 @@
+flowchart TB
+    A["Python Dictionaries"] --> B["Construction"]
+    A --> C["Basic Operations"]
+    A --> D["Iteration"]
+    A --> E["Specialized Dicts"]
+    A --> F["Advanced Topics"]
+
+    B --> B1["{} literal"]
+    B --> B2["dict() constructor"]
+    B --> B3["dict comprehension"]
+    B --> B4["fromkeys()"]
+
+    C --> C1["Access: d[key], .get(), .setdefault()"]
+    C --> C2["Modify: d[k]=v, .update()"]
+    C --> C3["Delete: del, .pop(), .popitem(), .clear()"]
+    C --> C4["Membership: key in d"]
+
+    D --> D1["for key in d"]
+    D --> D2["for k, v in .items()"]
+    D --> D3["for v in .values()"]
+
+    E --> E1["defaultdict"]
+    E --> E2["Counter"]
+    E --> E3["OrderedDict"]
+
+    E1 --> E1a["list factory for grouping"]
+    E1 --> E1b["int factory for counting"]
+
+    E2 --> E2a["most_common(n)"]
+    E2 --> E2b["Counter operations"]
+
+    F --> F1["Merge with | operator"]
+    F --> F2["Dictionary views"]
+    F --> F3["JSON conversion"]

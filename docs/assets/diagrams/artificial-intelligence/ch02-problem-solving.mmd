@@ -1,0 +1,37 @@
+flowchart TB
+    subgraph Problem_Solving["Problem-Solving Agent"]
+        Goal["Goal Formulation"]
+        Problem["Problem Formulation"]
+        Search["Search"]
+        Execution["Execution"]
+        Goal --> Problem --> Search --> Execution
+    end
+
+    subgraph Problem_Types["Problem Types"]
+        Deterministic["Deterministic / Accessible<br/>Fully observable"]
+        NonDeterministic["Non-Deterministic<br/>Partially observable"]
+        Unobservable["Unobservable<br/>Sensorless"]
+    end
+
+    subgraph Uninformed["Uninformed Search Strategies"]
+        BFS["BFS<br/>Complete, optimal<br/>O(b^d) memory"]
+        DFS["DFS<br/>Not optimal<br/>O(b*m) memory"]
+        DLS["Depth-Limited<br/>Cutoff depth l"]
+        IDS["Iterative Deepening<br/>Complete, optimal<br/>O(b*d) memory"]
+        UCS["Uniform Cost<br/>Optimal for any step cost<br/>Dijkstra like"]
+        Bidirectional["Bidirectional<br/>o(b^(d/2))"]
+    end
+
+    subgraph State_Space["State Space Representation"]
+        Initial["Initial State"]
+        Actions["Actions<br/>successor function"]
+        Goal_Test["Goal Test"]
+        Path_Cost["Path Cost"]
+        Initial --> Actions
+        Actions --> Goal_Test --> Path_Cost
+    end
+
+    Problem_Solving --> Problem_Types
+    Problem_Solving --> State_Space
+    Problem_Types --> Uninformed
+    State_Space --> Uninformed

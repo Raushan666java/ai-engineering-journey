@@ -1,0 +1,57 @@
+flowchart TD
+    subgraph Multimedia["Multimedia Networking"]
+        direction TB
+        TYPES["Multimedia Types"]
+        STREAM["Streaming Video/Audio<br/>YouTube, Netflix, Spotify<br/>buffered playback"]
+        VOIP["VoIP / Telephony<br/>Skype, Zoom, SIP calls<br/>real-time interactive"]
+        CONF["Video Conferencing<br/>WebRTC, Teams, Meet<br/>real-time bidirectional"]
+        LIVE["Live Broadcast<br/>Twitch, live sports<br/>low-latency streaming"]
+        TYPES --> STREAM & VOIP & CONF & LIVE
+    end
+
+    subgraph MediaTransport["Media Transport Protocols"]
+        RTP["RTP (Real-time Transport Protocol)<br/>carries audio/video payloads<br/>sequence numbers + timestamps<br/>payload type identification"]
+        RTCP["RTCP (RTP Control Protocol)<br/>sender/receiver reports<br/>QoS feedback, jitter, loss<br/>out-of-band control"]
+        SIP["SIP (Session Initiation Protocol)<br/>INVITE, ACK, BYE, REGISTER<br/>session establishment and teardown<br/>user location and availability"]
+        SDP["SDP (Session Description Protocol)<br/>media type, codec, IP/port<br/>carried inside SIP body"]
+        SRTP["SRTP (Secure RTP)<br/>AES encryption of media<br/>integrity protection"]
+        SIP --> SDP
+    end
+
+    subgraph QoSarch["QoS Architecture Models"]
+        INTSERV["Integrated Services (IntServ)<br/>per-flow resource reservation<br/>RSVP signaling protocol<br/>hard guarantees, not scalable"]
+        DIFFSERV["Differentiated Services (DiffServ)<br/>per-hop behavior (PHB)<br/>DSCP marking in IP header<br/>AF, EF, BE service classes"]
+        RSVP["RSVP (Resource Reservation Protocol)<br/>PATH message sender → receiver<br/>RESV message receiver → sender<br/>reserves bandwidth per flow"]
+        INTSERV --> RSVP
+    end
+
+    subgraph TrafficMech["Traffic & Congestion Management"]
+        LB["Leaky Bucket<br/>constant rate output<br/>smooths bursty traffic<br/>drops excess packets"]
+        TB["Token Bucket<br/>bursts allowed up to bucket size<br/>sustained rate = token rate<br/>no packet drop, queuing"]
+        WFQ["Weighted Fair Queuing<br/>per-flow queues<br/>weighted service share<br/>bounded delay per flow"]
+        RED["RED / WRED<br/>random early detection/drop<br/>drops before queue full<br/>TCP-friendly congestion signal"]
+        POLIC["Traffic Policing<br/>mark or drop excess traffic<br/>at network edge"]
+        SHAPE["Traffic Shaping<br/>delay excess traffic in buffer<br/>smooths output rate"]
+    end
+
+    subgraph Codec["Audio/Video Codecs"]
+        AUDIO["Audio Codecs"]
+        G711["G.711 (PCM, 64 kbps)"]
+        G726["G.726 (ADPCM, 32 kbps)"]
+        OPUS["Opus (6-510 kbps)<br/>WebRTC standard"]
+        AAC["AAC (streaming music)"]
+        AUDIO --> G711 & G726 & OPUS & AAC
+
+        VIDEO["Video Codecs"]
+        H264["H.264/AVC<br/>broadcast, web"]
+        H265["H.265/HEVC<br/>4K, 50% better compression"]
+        AV1["AV1 (open, royalty-free)<br/>next-gen streaming"]
+        VIDEO --> H264 & H265 & AV1
+    end
+
+    subgraph QoSchallenges["QoS Challenges"]
+        BW["Bandwidth<br/>insufficient capacity"]
+        DELAY["Delay (latency)<br/>propagation, serialization, queuing"]
+        JITTER["Jitter<br/>variation in delay<br/>critical for real-time"]
+        LOSS["Packet Loss<br/>congestion drops<br/>codec conceals less than 5% loss"]
+    end

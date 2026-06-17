@@ -1,4 +1,4 @@
-# 05 — Placement Season Strategy
+﻿# 05 â€” Placement Season Strategy
 
 ## Placement Season Overview
 
@@ -6,16 +6,16 @@
 
 Placement season in Indian engineering colleges follows a predictable cycle tied to the academic calendar. For most colleges (IITs, NITs, IIITs, top private universities), the schedule is:
 
-![Placement Preparation Timeline](../assets/images/diagrams/placement-preparation/ch05-placement-timeline.png)
+![Placement Preparation Timeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch05-placement-timeline.png)
 
 The **primary placement window** runs from **July to December of your 3rd year (6th/7th sem merge)** for most colleges. However, the exact schedule depends on:
 
-- **IITs / NITs / Top NIRF colleges**: Phase 1 starts July–August. Phase 2 (slower) runs September–December. By January most students are placed.
-- **Autonomous private colleges (VIT, SRM, Manipal, etc.)**: September–March window. Multiple phases across the year.
-- **State universities**: Usually January–April, with fewer companies visiting.
+- **IITs / NITs / Top NIRF colleges**: Phase 1 starts Julyâ€“August. Phase 2 (slower) runs Septemberâ€“December. By January most students are placed.
+- **Autonomous private colleges (VIT, SRM, Manipal, etc.)**: Septemberâ€“March window. Multiple phases across the year.
+- **State universities**: Usually Januaryâ€“April, with fewer companies visiting.
 
-**Key distinction — internship vs placement season:**
-- **Internship season (3rd year)**: Companies hire for 2–6 month summer internships. Many convert to full-time offers (PPO/PPI).
+**Key distinction â€” internship vs placement season:**
+- **Internship season (3rd year)**: Companies hire for 2â€“6 month summer internships. Many convert to full-time offers (PPO/PPI).
 - **Placement season (final year)**: Full-time job hiring. The focus of this guide.
 
 ### On-Campus vs Off-Campus
@@ -30,10 +30,10 @@ The **primary placement window** runs from **July to December of your 3rd year (
 
 **Off-campus placements:**
 - You apply directly through company portals (Google careers, Amazon jobs, LinkedIn)
-- Competition is national — you compete with thousands
+- Competition is national â€” you compete with thousands
 - More rounds, longer hiring cycles
 - You must track deadlines yourself
-- No "college tier" advantage — your resume and skills speak
+- No "college tier" advantage â€” your resume and skills speak
 - **Advantage**: You can target any company regardless of your college's reputation
 
 **Strategy**: Do not rely solely on on-campus. Start off-campus applications at least 3 months before the season. Many top hires come from off-campus.
@@ -51,7 +51,7 @@ The **primary placement window** runs from **July to December of your 3rd year (
 - The company visits only your college
 - Competition limited to your batch
 - Higher chance of shortlisting per seat
-- Usually better company preparation — pre-placement talks are tailored
+- Usually better company preparation â€” pre-placement talks are tailored
 
 **Which is better?** Individual drives are easier to crack because competition is smaller. Pool campus drives give access to companies that would not otherwise visit your college. Attend both.
 
@@ -60,23 +60,23 @@ The **primary placement window** runs from **July to December of your 3rd year (
 Colleges typically classify recruiters into three tiers:
 
 **Mass Recruiters (also called "Mass"):**
-- Hire in bulk — 50 to 300+ students per company
+- Hire in bulk â€” 50 to 300+ students per company
 - Examples: TCS, Infosys, Wipro, Accenture, Cognizant, Tech Mahindra, LTI
-- CTC range: 3–7 LPA
+- CTC range: 3â€“7 LPA
 - Focus: Basic coding, aptitude, communication
 - **Strategy**: Do not settle here if you have potential. Use these as backup.
 
 **Dream Companies:**
-- Moderate hiring (10–50 per college)
+- Moderate hiring (10â€“50 per college)
 - Examples: Deloitte, Capgemini (A4), Walmart, Samsung, Cisco, Bosch, Adobe (sometimes), Oracle, American Express
-- CTC range: 10–20 LPA
+- CTC range: 10â€“20 LPA
 - Focus: DSA, moderate system design, HR fit
 - **Strategy**: Target these seriously. This is where most good students land.
 
 **Super Dream Companies:**
-- Low hiring volume (1–10 per college)
+- Low hiring volume (1â€“10 per college)
 - Examples: Google, Microsoft, Amazon, Atlassian, Uber, Stripe, Rubrik, Tower Research, D.E. Shaw, Goldman Sachs
-- CTC range: 25 LPA – 1.5 Cr+ (including stocks)
+- CTC range: 25 LPA â€“ 1.5 Cr+ (including stocks)
 - Focus: Advanced DSA, system design, LLD, deep CS fundamentals
 - **Strategy**: Prepare 6+ months in advance. These require dedicated, focused preparation.
 
@@ -91,26 +91,26 @@ CTC (Cost to Company) is **NOT your take-home salary**. It is the total cost the
 | Fixed base salary | Monthly salary credited to your bank | 12 LPA = ~80K/month after PF |
 | Variable pay | Performance-linked bonus (10-20% typical) | 15 LPA with 15% variable = 12.75L fixed + 2.25L variable |
 | Stock / RSU | Restricted Stock Units, vest over 4 years | Amazon SDE-1: ~14L annual stock vest (over 4 years) |
-| Joining bonus | One-time amount paid at joining | 1L – 5L (common in super dream) |
-| Relocation bonus | One-time for moving to the office city | 50K – 2L |
-| Perks | Meal cards, cab, phone, insurance, etc. | ~50K–1L annually |
+| Joining bonus | One-time amount paid at joining | 1L â€“ 5L (common in super dream) |
+| Relocation bonus | One-time for moving to the office city | 50K â€“ 2L |
+| Perks | Meal cards, cab, phone, insurance, etc. | ~50Kâ€“1L annually |
 
 **Real take-home estimates:**
 
 | Offered CTC | Approximate Monthly Take-home (In-hand) |
 |-------------|--------------------------------------|
-| 3.5 LPA (TCS) | ~25K–28K |
-| 7 LPA (Mass) | ~50K–55K |
-| 12 LPA (Dream) | ~85K–95K |
-| 20 LPA (Dream) | ~1.3L–1.5L |
-| 30 LPA (Super Dream) | ~1.8L–2.2L |
-| 50 LPA+ (Super Dream) | ~2.5L–3.5L + stock |
+| 3.5 LPA (TCS) | ~25Kâ€“28K |
+| 7 LPA (Mass) | ~50Kâ€“55K |
+| 12 LPA (Dream) | ~85Kâ€“95K |
+| 20 LPA (Dream) | ~1.3Lâ€“1.5L |
+| 30 LPA (Super Dream) | ~1.8Lâ€“2.2L |
+| 50 LPA+ (Super Dream) | ~2.5Lâ€“3.5L + stock |
 
 **Critical advice**: Never evaluate an offer solely by CTC. Evaluate:
-1. **Base vs variable ratio** — high variable (30%+) means you may not get full CTC
-2. **Stock vesting schedule** — 4-year cliff means you see nothing for year 1
-3. **Growth potential** — a lower CTC at a high-growth company often beats a higher CTC at a stagnant one
-4. **Role and learning** — an SDE role at 12 LPA builds more long-term value than an IT support role at 15 LPA
+1. **Base vs variable ratio** â€” high variable (30%+) means you may not get full CTC
+2. **Stock vesting schedule** â€” 4-year cliff means you see nothing for year 1
+3. **Growth potential** â€” a lower CTC at a high-growth company often beats a higher CTC at a stagnant one
+4. **Role and learning** â€” an SDE role at 12 LPA builds more long-term value than an IT support role at 15 LPA
 
 ---
 
@@ -120,9 +120,9 @@ CTC (Cost to Company) is **NOT your take-home salary**. It is the total cost the
 
 This is the most critical period. Students who start 6 months before the season consistently outperform those who start 1 month before.
 
-**Weeks 1–8: Data Structures & Algorithms (DSA)**
+**Weeks 1â€“8: Data Structures & Algorithms (DSA)**
 
-Pick one language (preferably Java or C++ for placement — Python is acceptable but fewer companies use it for interviews) and master:
+Pick one language (preferably Java or C++ for placement â€” Python is acceptable but fewer companies use it for interviews) and master:
 
 - **Arrays & Strings**: Two-pointer, sliding window, prefix sum, Kadane's algorithm
 - **Linked Lists**: Reversal, merge, detect cycle, fast-slow pointer
@@ -137,13 +137,13 @@ Pick one language (preferably Java or C++ for placement — Python is acceptable
 
 Target: Solve **200+ quality problems** on LeetCode (top 150 + company-specific tagged questions).
 
-**Weeks 9–12: Resume Building**
+**Weeks 9â€“12: Resume Building**
 
 - Create a **one-page resume** (NO two-page resumes for campus placements)
-- Sections: Education → Projects → Skills → Achievements → (optional) Work Experience
+- Sections: Education â†’ Projects â†’ Skills â†’ Achievements â†’ (optional) Work Experience
 - Each project must follow the format: *"Built [X] using [tech stack] to achieve [measurable outcome]"*
 - Add GitHub and LinkedIn links
-- Get it reviewed by 2–3 seniors who were placed in dream/super dream companies
+- Get it reviewed by 2â€“3 seniors who were placed in dream/super dream companies
 - Use the **STAR format** for work experience entries
 - Quantify everything (e.g., "Reduced API latency by 40%" not "Improved performance")
 
@@ -154,8 +154,8 @@ Target: Solve **200+ quality problems** on LeetCode (top 150 + company-specific 
 [Phone] | [Email] | [LinkedIn] | [GitHub]
 
 EDUCATION
-[B.Tech] in [Branch], [College Name] — [CGPA] (till [Semester])
-[Year of Passing — 2026]
+[B.Tech] in [Branch], [College Name] â€” [CGPA] (till [Semester])
+[Year of Passing â€” 2026]
 
 SKILLS
 Languages: C++, Java, Python, JavaScript
@@ -163,32 +163,32 @@ Frameworks: React, Node.js, Spring Boot
 Tools: Git, Docker, PostgreSQL, MongoDB, AWS (EC2, S3)
 
 PROJECTS
-[Project Name] | [Month Year]–[Month Year]
+[Project Name] | [Month Year]â€“[Month Year]
 - Built [X] using [tech stack]
 - Implemented [specific feature] which [impact]
-- [Quantified result] — e.g., served 500+ daily users
+- [Quantified result] â€” e.g., served 500+ daily users
 
-[Second Project Name] | [Month Year]–[Month Year]
+[Second Project Name] | [Month Year]â€“[Month Year]
 - Similar format as above
 
 ACHIEVEMENTS
 - Solved 400+ DSA problems on LeetCode (contest rating 1800+)
 - Ranked X in [Competition Name] among Y participants
-- Won [Hackathon Name] — built [project] in 36 hours
+- Won [Hackathon Name] â€” built [project] in 36 hours
 
 RELEVANT COURSEWORK
 Data Structures & Algorithms, Operating Systems, DBMS, Computer Networks, OOP
 ```
 
-**Weeks 13–16: CS Fundamentals + Side Projects**
+**Weeks 13â€“16: CS Fundamentals + Side Projects**
 
 - Cover: OS (processes, threads, synchronization, deadlock, memory management, page replacement)
 - Cover: DBMS (normalization, indexing, transactions, ACID, joins, query optimization)
 - Cover: Computer Networks (OSI/TCP layers, HTTP/HTTPS, TCP vs UDP, DNS, CDN, load balancers)
-- Cover: OOP (SOLID, design patterns — singleton, factory, observer, strategy)
+- Cover: OOP (SOLID, design patterns â€” singleton, factory, observer, strategy)
 - Cover: System Design basics (for dream companies: scalability, caching, db sharding, CAP theorem, consistent hashing)
 
-**Weeks 17–20: Company-Specific Preparation**
+**Weeks 17â€“20: Company-Specific Preparation**
 
 - Research the companies that visited your college last year
 - Collect the previous year's placement papers and questions from seniors
@@ -196,24 +196,24 @@ Data Structures & Algorithms, Operating Systems, DBMS, Computer Networks, OOP
 - Solve company-tagged LeetCode questions
 - Watch company-specific interview experience videos
 
-**Weeks 21–24: Mock Interviews + Final Polish**
+**Weeks 21â€“24: Mock Interviews + Final Polish**
 
-- Give at least **10 mock interviews** — 5 DSA-focused, 3 CS fundamentals, 2 full-length
+- Give at least **10 mock interviews** â€” 5 DSA-focused, 3 CS fundamentals, 2 full-length
 - Mock platforms: Pramp, interviewbit, or pair with a friend
 - Record yourself to catch verbal fillers: "umm", "actually", "you know"
-- Practice **whiteboard coding** — write on paper/whiteboard, not just in IDE
-- Time your solutions: you should solve Medium in 15–20 minutes
+- Practice **whiteboard coding** â€” write on paper/whiteboard, not just in IDE
+- Time your solutions: you should solve Medium in 15â€“20 minutes
 
 ### 3 Months Before: Intensified Preparation
 
-**Week 1–4: Full-length Mock Assessments**
+**Week 1â€“4: Full-length Mock Assessments**
 
 Take timed assessments exactly mimicking placement tests:
 - 60 minutes: 20 aptitude + 2 coding questions
 - 90 minutes: 15 subject MCQs + 3 coding questions
 - Use platforms: HackerRank, CodeSignal, HackerEarth (most companies use these)
 
-**Week 5–8: Company Deep Research**
+**Week 5â€“8: Company Deep Research**
 
 For each target company, create a one-page profile:
 
@@ -236,15 +236,15 @@ Build a spreadsheet like this:
 
 | Company | Priority | Role | CTC Range | Applied | Round Status | Notes |
 |---------|----------|------|-----------|---------|-------------|-------|
-| Google | Super Dream | SDE | 30L+ | No | — | Strong system design prep needed |
-| Microsoft | Super Dream | SDE | 25L+ | No | — | Focus on CS fundamentals |
-| Amazon | Super Dream | SDE | 20L+ | No | — | LP preparation critical |
-| Deloitte | Dream | Consultant | 12L | No | — | Aptitude heavy |
-| TCS | Safety | Digital | 7L | No | — | Just keep as backup |
+| Google | Super Dream | SDE | 30L+ | No | â€” | Strong system design prep needed |
+| Microsoft | Super Dream | SDE | 25L+ | No | â€” | Focus on CS fundamentals |
+| Amazon | Super Dream | SDE | 20L+ | No | â€” | LP preparation critical |
+| Deloitte | Dream | Consultant | 12L | No | â€” | Aptitude heavy |
+| TCS | Safety | Digital | 7L | No | â€” | Just keep as backup |
 
-**Week 9–12: Group Study + Discussion**
+**Week 9â€“12: Group Study + Discussion**
 
-- Form a study group of 4–5 serious peers
+- Form a study group of 4â€“5 serious peers
 - Daily 1-hour group discussion on DSA problems (each person solves and explains)
 - Weekly mock interviews within the group
 - Share company updates and new openings
@@ -261,12 +261,12 @@ Build a spreadsheet like this:
 
 **Cheat Sheet Creation:**
 Make one-page cheat sheets for:
-1. **DSA patterns** — 10 common problem patterns with template code
-2. **SQL queries** — joins, aggregation, subqueries, window functions
-3. **OS concepts** — difference tables for processes/threads, deadlock conditions, page replacement algorithms
-4. **DBMS** — Normalization forms, ACID vs BASE, index types
-5. **Networking** — HTTP methods, status codes, TCP handshake, DNS resolution
-6. **System Design** — blueprints for URL shortener, chat app, rate limiter, design Twitter
+1. **DSA patterns** â€” 10 common problem patterns with template code
+2. **SQL queries** â€” joins, aggregation, subqueries, window functions
+3. **OS concepts** â€” difference tables for processes/threads, deadlock conditions, page replacement algorithms
+4. **DBMS** â€” Normalization forms, ACID vs BASE, index types
+5. **Networking** â€” HTTP methods, status codes, TCP handshake, DNS resolution
+6. **System Design** â€” blueprints for URL shortener, chat app, rate limiter, design Twitter
 
 **Communication Practice:**
 - Record yourself explaining a Medium DP problem in under 5 minutes
@@ -289,8 +289,8 @@ Make one-page cheat sheets for:
 | Day 1 | Rest + Light revision | Read cheat sheets, prepare documents, sleep 8 hours |
 
 **Day before the interview:**
-- Do NOT solve new hard problems — panic kills confidence
-- Review your resume — know every line, every number, every technology
+- Do NOT solve new hard problems â€” panic kills confidence
+- Review your resume â€” know every line, every number, every technology
 - Read the company's mission, values, recent product news
 - Prepare 3 thoughtful questions to ask the interviewer
 - Check your internet, webcam, microphone, and background (if remote)
@@ -302,13 +302,13 @@ Make one-page cheat sheets for:
 
 **Documents folder (digital copies + 3 printed sets):**
 
-- Resume (PDF) — 5+ copies
+- Resume (PDF) â€” 5+ copies
 - ID card (college + government: Aadhar, PAN)
 - Passport-size photos (8-10)
 - Mark sheets: 10th, 12th, all semester transcripts
 - CGPA certificate
 - Category certificate (if applicable)
-- Gap certificate (if applicable) — signed explanation for any year gap
+- Gap certificate (if applicable) â€” signed explanation for any year gap
 - Portfolio/GitHub link printed
 - Offer letter from previous internship (if any)
 - LOR (if applying off-campus)
@@ -336,24 +336,24 @@ Keep a daily log of problems solved, concepts learned, and mocks attempted. On d
 
 **Step 1: Self-assessment**
 
-Rate yourself honestly on a scale of 1–5 in each category:
+Rate yourself honestly on a scale of 1â€“5 in each category:
 
-| Category | Rating (1–5) | Notes |
+| Category | Rating (1â€“5) | Notes |
 |----------|-------------|-------|
-| DSA (LeetCode Rating) | — | <1600 = weak, 1600–1900 = decent, 1900+ = strong |
-| CS Fundamentals | — | Can I explain OS/DBMS/Networking to a peer? |
-| System Design | — | Have I built a distributed system before? |
-| Projects | — | Do I have 2+ solid projects? |
-| Communication | — | Can I explain technical ideas clearly? |
-| Aptitude | — | Can I solve basic quant/logical reasoning fast? |
-| CGPA | — | Is it above 8? Above 7? |
+| DSA (LeetCode Rating) | â€” | <1600 = weak, 1600â€“1900 = decent, 1900+ = strong |
+| CS Fundamentals | â€” | Can I explain OS/DBMS/Networking to a peer? |
+| System Design | â€” | Have I built a distributed system before? |
+| Projects | â€” | Do I have 2+ solid projects? |
+| Communication | â€” | Can I explain technical ideas clearly? |
+| Aptitude | â€” | Can I solve basic quant/logical reasoning fast? |
+| CGPA | â€” | Is it above 8? Above 7? |
 
 **Step 2: Categorize companies by your readiness**
 
 | Your DSA Level | Target Companies |
 |---------------|-----------------|
 | LeetCode < 1500 | Mass recruiters + lower dream (Deloitte, Capgemini, Cognizant) |
-| LeetCode 1500–1800 | Dream companies (Samsung, Walmart, Cisco, Oracle) |
+| LeetCode 1500â€“1800 | Dream companies (Samsung, Walmart, Cisco, Oracle) |
 | LeetCode 1800+ | Super Dream + Dream (Google, Microsoft, Amazon, Atlassian) |
 | LeetCode 2000+ + System Design | Super Dream (Uber, Stripe, Rubrik, Tower Research) |
 
@@ -380,7 +380,7 @@ DREAM (target 3-4):
 - Atlassian, Adobe, Salesforce, Walmart
 
 SAFETY (keep 1-2):
-- Infosys, TCS Digital — apply but do not spend prep time
+- Infosys, TCS Digital â€” apply but do not spend prep time
 ```
 
 **Profile B: Average DSA (1550), CGPA 7.5, Decent Projects**
@@ -399,9 +399,9 @@ OFF-CAMPUS:
 
 **The portfolio approach:** Treat your placement attempts like an investment portfolio.
 
-- **70% effort** — Dream and Super Dream companies (high risk, high reward)
-- **20% effort** — Safety companies (medium reward, high probability)
-- **10% effort** — Mass recruiters (low reward, almost guaranteed)
+- **70% effort** â€” Dream and Super Dream companies (high risk, high reward)
+- **20% effort** â€” Safety companies (medium reward, high probability)
+- **10% effort** â€” Mass recruiters (low reward, almost guaranteed)
 
 **Critical rule: Accept the first safe offer.**
 
@@ -411,7 +411,7 @@ Here is why: If you get a mass recruiter offer in August, accept it. Do NOT thin
 - **Strategic option**: You can always decline later if you get a better offer
 
 **What most top performers do:**
-1. Get placed in a mass recruiter / safety in the first 2–3 months
+1. Get placed in a mass recruiter / safety in the first 2â€“3 months
 2. Continue preparing for dream companies
 3. If a dream company offer comes, upgrade
 4. If no dream company offer comes, they still have a job
@@ -429,7 +429,7 @@ Here is why: If you get a mass recruiter offer in August, accept it. Do NOT thin
 - Interview focus: DSA (easier than SDE), testing concepts, automation frameworks, scripting
 - Preparation priority: DSA (30%), OOP + Testing (40%), Automation skills (20%), CS basics (10%)
 - Best for: People who enjoy breaking things, designing robust systems, automation
-- Note: Often underrated. Many SDETs transition to SDE internally after 1–2 years.
+- Note: Often underrated. Many SDETs transition to SDE internally after 1â€“2 years.
 
 **Data Engineer:**
 - What you do: Build ETL pipelines, data warehouses, streaming systems, data lakes
@@ -470,7 +470,7 @@ You need the **deepest DSA preparation**. Spend:
 1. Two-pointer technique
 2. Sliding window variants
 3. BFS / DFS on trees and graphs
-4. DP — knap, LCS, LIS, matrix DP
+4. DP â€” knap, LCS, LIS, matrix DP
 5. Binary search on answer
 6. Heap / Priority Queue for top-K
 7. Union-Find for connectivity
@@ -517,47 +517,47 @@ And **distributed systems basics**:
 
 ### Resume Shortlisting: What Gets Through
 
-**The brutal truth:** Recruiters spend **6–10 seconds** scanning your resume before deciding to shortlist. Here is what they look for, in order:
+**The brutal truth:** Recruiters spend **6â€“10 seconds** scanning your resume before deciding to shortlist. Here is what they look for, in order:
 
-1. **CGPA** — Many companies have hard cutoffs: 7.0 / 7.5 / 8.0 / 8.5
-2. **Branch** — CS/IT gets priority. But ECE, EE, Mechanical get shortlisted too if projects fit.
-3. **DSA preparation signal** — LeetCode count, CodeChef rating, coding contest rankings
-4. **Projects** — Is there at least one impressive project relevant to the role?
-5. **Internship** (if any) — Brand name matters. Even a small company internship shows industry exposure.
-6. **Achievements** — Hackathon wins, open source contributions, patent, research paper
-7. **Skills listed** — Are they relevant to the role? Java + Spring Boot for backend role? React for frontend role?
+1. **CGPA** â€” Many companies have hard cutoffs: 7.0 / 7.5 / 8.0 / 8.5
+2. **Branch** â€” CS/IT gets priority. But ECE, EE, Mechanical get shortlisted too if projects fit.
+3. **DSA preparation signal** â€” LeetCode count, CodeChef rating, coding contest rankings
+4. **Projects** â€” Is there at least one impressive project relevant to the role?
+5. **Internship** (if any) â€” Brand name matters. Even a small company internship shows industry exposure.
+6. **Achievements** â€” Hackathon wins, open source contributions, patent, research paper
+7. **Skills listed** â€” Are they relevant to the role? Java + Spring Boot for backend role? React for frontend role?
 
 **What gets your resume rejected immediately:**
 
 - **Typos** in the first 3 lines (yes, recruiters check)
-- **CGPA below cutoff** (hard filter — do not waste effort if you know your CGPA is below 7)
-- **No tech stack alignment** — applying for an SDE role with no coding project
-- **Generic language** — "Worked on a project" without measurable outcomes
-- **Poor formatting** — inconsistent fonts, misaligned bullets, wrong section order
-- **Exaggeration** — claiming "expert" in 15 technologies (you appear as a beginner in all)
+- **CGPA below cutoff** (hard filter â€” do not waste effort if you know your CGPA is below 7)
+- **No tech stack alignment** â€” applying for an SDE role with no coding project
+- **Generic language** â€” "Worked on a project" without measurable outcomes
+- **Poor formatting** â€” inconsistent fonts, misaligned bullets, wrong section order
+- **Exaggeration** â€” claiming "expert" in 15 technologies (you appear as a beginner in all)
 - **No GitHub/LinkedIn link** or dead links
 
 **How to maximize shortlisting chances:**
 
 - Tailor the resume for each company (yes, it is worth it for dream companies)
 - Use action verbs: built, designed, implemented, optimized, shipped, automated
-- Keep the one-page limit — NO exceptions
+- Keep the one-page limit â€” NO exceptions
 - Get 2 batches of reviews: 1 from a placement cell senior, 1 from an industry professional
-- Upload to ATS (Applicant Tracking System) checkers — most companies use ATS to parse resumes before a human sees them
-- Use **standard fonts** (Calibri, Arial, Times New Roman, 10–12pt) — fancy fonts break ATS parsing
+- Upload to ATS (Applicant Tracking System) checkers â€” most companies use ATS to parse resumes before a human sees them
+- Use **standard fonts** (Calibri, Arial, Times New Roman, 10â€“12pt) â€” fancy fonts break ATS parsing
 
 ### Online Assessment: Aptitude + Coding
 
-**Format — expected structure:**
+**Format â€” expected structure:**
 
 ```
-Total time: 60–120 minutes
+Total time: 60â€“120 minutes
 Sections:
-1. Quantitative Aptitude (10–15 MCQs)   — 15–20 minutes
-2. Logical Reasoning (10–15 MCQs)       — 10–15 minutes
-3. Verbal Ability (5–10 MCQs)           — 5–10 minutes
-4. Coding (2–3 problems)                — 30–60 minutes
-5. CS Subject MCQs (optional)           — 10–15 minutes
+1. Quantitative Aptitude (10â€“15 MCQs)   â€” 15â€“20 minutes
+2. Logical Reasoning (10â€“15 MCQs)       â€” 10â€“15 minutes
+3. Verbal Ability (5â€“10 MCQs)           â€” 5â€“10 minutes
+4. Coding (2â€“3 problems)                â€” 30â€“60 minutes
+5. CS Subject MCQs (optional)           â€” 10â€“15 minutes
 ```
 
 **Aptitude preparation strategy (do not ignore):**
@@ -581,24 +581,24 @@ Mass recruiters and many dream companies **fail candidates on aptitude** before 
 
 **Coding assessment strategy:**
 
-Most coding assessments have 2–3 questions with increasing difficulty:
-- **Q1 (Easy)**: Arrays, strings, hashmap — 15 minutes
-- **Q2 (Medium)**: Greedy, trees, binary search — 25 minutes
-- **Q3 (Medium-Hard)**: DP, graphs, advanced — 30 minutes
+Most coding assessments have 2â€“3 questions with increasing difficulty:
+- **Q1 (Easy)**: Arrays, strings, hashmap â€” 15 minutes
+- **Q2 (Medium)**: Greedy, trees, binary search â€” 25 minutes
+- **Q3 (Medium-Hard)**: DP, graphs, advanced â€” 30 minutes
 
 **Golden rules for coding assessments:**
 
-1. **Skip Q3 if stuck** — A wrong submission on Q3 with negative marking can lose more marks than leaving it blank (on some platforms).
-2. **Pass partial test cases** — On HackerRank/HackerEarth, even 50% pass on all 3 questions beats 100% on 1 question.
-3. **Read all questions first** — Spend 2 minutes scanning all questions. Solve the easiest first.
-4. **Handle edge cases** — Empty input, single element, max constraints, negative numbers, overflow.
-5. **Optimize only if needed** — For coding assessments, brute force with optimizations scores more than incomplete optimal solution.
-6. **Test with sample** — Always run against the given sample. Many students fail because their output format is wrong.
-7. **Language choice** — Use the language you are fastest in. In assessments, speed matters.
+1. **Skip Q3 if stuck** â€” A wrong submission on Q3 with negative marking can lose more marks than leaving it blank (on some platforms).
+2. **Pass partial test cases** â€” On HackerRank/HackerEarth, even 50% pass on all 3 questions beats 100% on 1 question.
+3. **Read all questions first** â€” Spend 2 minutes scanning all questions. Solve the easiest first.
+4. **Handle edge cases** â€” Empty input, single element, max constraints, negative numbers, overflow.
+5. **Optimize only if needed** â€” For coding assessments, brute force with optimizations scores more than incomplete optimal solution.
+6. **Test with sample** â€” Always run against the given sample. Many students fail because their output format is wrong.
+7. **Language choice** â€” Use the language you are fastest in. In assessments, speed matters.
 
 ### Technical Round 1: DSA + Problem-Solving
 
-**Format:** 45–60 minutes. 1–2 coding problems on a shared editor or whiteboard.
+**Format:** 45â€“60 minutes. 1â€“2 coding problems on a shared editor or whiteboard.
 
 **What interviewers assess (in order):**
 1. **Communication**: Do you think out loud? Or do you go silent?
@@ -625,7 +625,7 @@ Most coding assessments have 2–3 questions with increasing difficulty:
 
 **Approach:** Sliding window with HashSet/HashMap. Expand the right pointer. When a duplicate is found, shrink from the left until the duplicate is removed.
 - **Time:** O(n), **Space:** O(min(m,n)) where m is character set size
-- **Key insight:** The HashMap version stores char → index, allowing the left pointer to jump directly.
+- **Key insight:** The HashMap version stores char â†’ index, allowing the left pointer to jump directly.
 
 ---
 
@@ -650,9 +650,9 @@ Most coding assessments have 2–3 questions with increasing difficulty:
 **Q5: Word Ladder (LeetCode 127)**
 *Given beginWord, endWord, and a word list, find the length of the shortest transformation sequence.*
 
-**Approach:** BFS on implicit graph. Each word is a node. Two words are connected if they differ by one character. Use BFS from beginWord. For each word, try changing each character to 'a'–'z' and check if the resulting word is in the dictionary.
-- **Time:** O(M² * N) where M = word length, N = word list size
-- **Optimization:** Bidirectional BFS — search from both beginWord and endWord simultaneously. Reduces search space significantly.
+**Approach:** BFS on implicit graph. Each word is a node. Two words are connected if they differ by one character. Use BFS from beginWord. For each word, try changing each character to 'a'â€“'z' and check if the resulting word is in the dictionary.
+- **Time:** O(MÂ² * N) where M = word length, N = word list size
+- **Optimization:** Bidirectional BFS â€” search from both beginWord and endWord simultaneously. Reduces search space significantly.
 
 ---
 
@@ -672,8 +672,8 @@ maxSum = max(maxSum, currentSum)
 **Q7: Top K Frequent Elements (LeetCode 347)**
 *Given an array, return the K most frequent elements.*
 
-**Approach 1:** HashMap for frequency + sorting by value → O(n log n)
-**Approach 2 (optimal):** HashMap + Bucket sort (array of lists indexed by frequency) → O(n)
+**Approach 1:** HashMap for frequency + sorting by value â†’ O(n log n)
+**Approach 2 (optimal):** HashMap + Bucket sort (array of lists indexed by frequency) â†’ O(n)
 
 Or use a Min-Heap of size K: add elements; if heap size exceeds K, pop the smallest frequency.
 - **Time:** O(n log K), **Space:** O(n)
@@ -697,25 +697,25 @@ while (!queue.isEmpty())
     result.add(level)
 ```
 - **Time:** O(n), **Space:** O(n)
-- **Variant:** Zigzag level order — alternate direction using a flag.
+- **Variant:** Zigzag level order â€” alternate direction using a flag.
 
 ---
 
 **Q9: Longest Palindromic Substring (LeetCode 5)**
 *Given a string, find the longest palindromic substring.*
 
-**Approach:** Expand around center. Each character (and each gap between characters) is a potential palindrome center. There are 2n−1 centers. Expand outward while the characters match.
+**Approach:** Expand around center. Each character (and each gap between characters) is a potential palindrome center. There are 2nâˆ’1 centers. Expand outward while the characters match.
 ```
 for (i = 0 to n-1)
     expand(i, i)      // odd length
     expand(i, i+1)    // even length
 ```
-- **Time:** O(n²), **Space:** O(1)
-- **Alternative:** Manacher's algorithm (O(n)) — mention it for bonus points but code the expand approach.
+- **Time:** O(nÂ²), **Space:** O(1)
+- **Alternative:** Manacher's algorithm (O(n)) â€” mention it for bonus points but code the expand approach.
 
 ---
 
-**Q10: Course Schedule (LeetCode 207 — Topological Sort)**
+**Q10: Course Schedule (LeetCode 207 â€” Topological Sort)**
 *Given numCourses and prerequisites, can you finish all courses? (Detect cycle in a directed graph)*
 
 **Approach 1 (DFS):** Build adjacency list. Use `visited` states: 0 = unvisited, 1 = visiting, 2 = visited. If you encounter a node in state 1, there is a cycle. Return false.
@@ -728,9 +728,9 @@ for (i = 0 to n-1)
 
 ### Technical Round 2: System Design / LLD
 
-**Format:** 45–60 minutes. Usually a design question for dream/super dream companies.
+**Format:** 45â€“60 minutes. Usually a design question for dream/super dream companies.
 
-**Low-Level Design (LLD) — Object-Oriented Design:**
+**Low-Level Design (LLD) â€” Object-Oriented Design:**
 - Design a parking lot
 - Design a chess game
 - Design a library management system
@@ -739,14 +739,14 @@ for (i = 0 to n-1)
 
 **How to approach LLD questions:**
 
-1. **Clarify requirements** — "What are the core features? Is there a UI or just API?"
-2. **Identify core objects** — Classes, interfaces, inheritance
-3. **Define relationships** — Association, aggregation, composition
-4. **Apply design patterns** — Singleton, Factory, Strategy, Observer where appropriate
-5. **Show code** — Write clean class definitions with methods and fields
-6. **Discuss edge cases** — Concurrent access, error handling, persistence
+1. **Clarify requirements** â€” "What are the core features? Is there a UI or just API?"
+2. **Identify core objects** â€” Classes, interfaces, inheritance
+3. **Define relationships** â€” Association, aggregation, composition
+4. **Apply design patterns** â€” Singleton, Factory, Strategy, Observer where appropriate
+5. **Show code** â€” Write clean class definitions with methods and fields
+6. **Discuss edge cases** â€” Concurrent access, error handling, persistence
 
-**Example LLD skeleton — Parking Lot:**
+**Example LLD skeleton â€” Parking Lot:**
 
 ```
 enum VehicleType { BIKE, CAR, TRUCK }
@@ -782,7 +782,7 @@ class ExitGate {
 }
 ```
 
-**High-Level Design (HLD) — System Design:**
+**High-Level Design (HLD) â€” System Design:**
 - Design URL shortener (TinyURL)
 - Design a chat system (WhatsApp)
 - Design a social media feed (Instagram / Twitter)
@@ -791,18 +791,18 @@ class ExitGate {
 
 **How to approach HLD:**
 
-1. **Requirements** — Functional + Non-functional + Scale estimates
-2. **High-level architecture** — Draw boxes: client → LB → API servers → DB → cache
-3. **Database schema** — Tables, indexes, partitioning strategy
-4. **Key algorithms** — Consistent hashing, bloom filters, etc.
-5. **Trade-offs** — Why one choice over another (CAP theorem implications)
-6. **Deep dives** — 2–3 components in detail (the interesting parts)
+1. **Requirements** â€” Functional + Non-functional + Scale estimates
+2. **High-level architecture** â€” Draw boxes: client â†’ LB â†’ API servers â†’ DB â†’ cache
+3. **Database schema** â€” Tables, indexes, partitioning strategy
+4. **Key algorithms** â€” Consistent hashing, bloom filters, etc.
+5. **Trade-offs** â€” Why one choice over another (CAP theorem implications)
+6. **Deep dives** â€” 2â€“3 components in detail (the interesting parts)
 
-**Example HLD skeleton — URL Shortener:**
+**Example HLD skeleton â€” URL Shortener:**
 
 ```
 Key ideas:
-- Hash function: Base62 encode a unique ID (7 chars = 62^7 ≈ 3.5 trillion URLs)
+- Hash function: Base62 encode a unique ID (7 chars = 62^7 â‰ˆ 3.5 trillion URLs)
 - Distributed ID generation: Snowflake ID (Twitter) or Redis INCR
 - Cache: LRU cache for read-heavy traffic (reads >> writes, 99:1 ratio)
 - DB: Cassandra (write-optimized) or PostgreSQL with strong indexing
@@ -811,13 +811,13 @@ Key ideas:
 
 API Design:
 POST /shorten { originalUrl, customAlias?, ttl? }
-GET /{shortCode} → 301 Redirect
-GET /{shortCode}/stats → Click analytics
+GET /{shortCode} â†’ 301 Redirect
+GET /{shortCode}/stats â†’ Click analytics
 ```
 
 ### HR Round: Common Questions with Answers
 
-**Format:** 15–20 minutes. Mostly behavioral and cultural fit assessment.
+**Format:** 15â€“20 minutes. Mostly behavioral and cultural fit assessment.
 
 **Purpose:** The HR round is NOT to reject (if you reach here, the tech team has approved you). HR checks:
 - Are you a genuine person or making up stories?
@@ -830,7 +830,7 @@ GET /{shortCode}/stats → Click analytics
 ---
 
 **Q1: Tell me about yourself.**
-*Structure: Present → Past → Future*
+*Structure: Present â†’ Past â†’ Future*
 - Present: "I am a final-year CS student at [College], specializing in full-stack development."
 - Past: "I have built [project 1] and [project 2], which gave me hands-on experience with [tech stack]."
 - Future: "I am looking to apply my skills in a challenging SDE role, which is why I am excited about [Company]."
@@ -858,7 +858,7 @@ GET /{shortCode}/stats → Click analytics
 
 **Q4: Where do you see yourself in 5 years?**
 *Bad answer:* "In your position." (Sounds arrogant)
-*Good answer:* "I see myself as a senior engineer — someone who is technically deep in [area], mentors junior developers, and contributes to architectural decisions. I want to grow with the company for the long term."
+*Good answer:* "I see myself as a senior engineer â€” someone who is technically deep in [area], mentors junior developers, and contributes to architectural decisions. I want to grow with the company for the long term."
 
 ---
 
@@ -893,16 +893,16 @@ Bad questions:
 
 **The reality of rejection:** Every successful person has been rejected multiple times. Here are some statistics from placements:
 
-- Average student: faces 5–15 rejections before first offer
-- Top performer (IIT/NIT): faces 3–8 rejections before dream offer
-- Off-campus applicant: faces 20–50+ rejections before first offer
+- Average student: faces 5â€“15 rejections before first offer
+- Top performer (IIT/NIT): faces 3â€“8 rejections before dream offer
+- Off-campus applicant: faces 20â€“50+ rejections before first offer
 
 **Rejection is a numbers game**, not a reflection of your ability.
 
 **The 24-hour rule:**
 - You have 24 hours to feel disappointed, angry, and frustrated
 - After 24 hours, analyze what went wrong and make a concrete plan to fix it
-- Do NOT join placement WhatsApp groups during this time — the noise will damage your morale
+- Do NOT join placement WhatsApp groups during this time â€” the noise will damage your morale
 
 **Post-rejection analysis template:**
 
@@ -933,7 +933,7 @@ VERDICT: Was this a skill gap or a bad day?
 - Do NOT blame the company, the interviewer, or the placement cell
 - Do NOT compare yourself with already-placed friends
 - Do NOT give up and stop preparing
-- Do NOT burn bridges — you may interview at the same company in the next drive
+- Do NOT burn bridges â€” you may interview at the same company in the next drive
 - Do NOT spread negativity in your peer group
 
 **Growth mindset reframe:**
@@ -972,17 +972,17 @@ to [target number]? I am very keen to join your team."
 ```
 
 **What NOT to say:**
-- "This offer is too low." — Aggressive, creates bad feeling
-- "My friend got more." — Irrelevant, weak argument
-- "I will join only if you give me X." — Ultimatums kill offers
-- "This is my only offer so give me more." — Reveals you have no leverage
+- "This offer is too low." â€” Aggressive, creates bad feeling
+- "My friend got more." â€” Irrelevant, weak argument
+- "I will join only if you give me X." â€” Ultimatums kill offers
+- "This is my only offer so give me more." â€” Reveals you have no leverage
 
 **Know when to stop negotiating:**
 
-- If the recruiter says "this is our final offer" — take it or leave it
-- If you have negotiated twice — third time looks greedy
-- If the amount you are negotiating over is small relative to the total — let it go
-- If the company is your top choice and the offer is fair — accept with gratitude
+- If the recruiter says "this is our final offer" â€” take it or leave it
+- If you have negotiated twice â€” third time looks greedy
+- If the amount you are negotiating over is small relative to the total â€” let it go
+- If the company is your top choice and the offer is fair â€” accept with gratitude
 
 ### Accepting vs Declining Offers
 
@@ -990,7 +990,7 @@ to [target number]? I am very keen to join your team."
 
 - The company is in your "acceptable" list (not necessarily top choice)
 - The deadline is approaching and you have no other offers
-- It is a mass recruiter or safety option — accept and continue preparing for better ones
+- It is a mass recruiter or safety option â€” accept and continue preparing for better ones
 - The role aligns with your long-term career goals
 
 **When to decline:**
@@ -1003,7 +1003,7 @@ to [target number]? I am very keen to join your team."
 **Acceptance template (email/portal):**
 
 ```
-Subject: Offer Acceptance — [Name] — [College]
+Subject: Offer Acceptance â€” [Name] â€” [College]
 
 Dear [Recruiter Name],
 
@@ -1023,10 +1023,10 @@ Best regards,
 [College Name]
 ```
 
-**Declination template (polite — important for maintaining relationships):**
+**Declination template (polite â€” important for maintaining relationships):**
 
 ```
-Subject: Offer Decision — [Name]
+Subject: Offer Decision â€” [Name]
 
 Dear [Recruiter Name],
 
@@ -1048,8 +1048,8 @@ Best regards,
 ### Explaining Gaps and Backlogs
 
 **Backlogs (active):**
-- Some companies have **no backlog** policies — you cannot sit for the drive if you have any active backlog
-- Some allow 1–2 backlogs — check eligibility criteria carefully
+- Some companies have **no backlog** policies â€” you cannot sit for the drive if you have any active backlog
+- Some allow 1â€“2 backlogs â€” check eligibility criteria carefully
 - Actively clear backlogs before the placement season starts
 - If you have a backlog during the drive, be honest when asked
 
@@ -1066,7 +1066,7 @@ Best regards,
   - Health reasons: Medical certificate required
   - Family reasons: Documented proof helps
   - Competitive exam preparation: Acceptable if you did something productive (GATE, CAT, etc.)
-  - "Did nothing" — the worst answer. Even if you were preparing for exams, frame it as "Focused on skill development in programming"
+  - "Did nothing" â€” the worst answer. Even if you were preparing for exams, frame it as "Focused on skill development in programming"
 
 **For the interview:**
 - Keep the answer to 30 seconds. Do not dwell on it.
@@ -1095,35 +1095,35 @@ Placement season is a mental health minefield. Students experience:
 **Mental health strategies that work:**
 
 1. **Create a "no-placement" safe zone:**
-   - 30 minutes a day of zero placement talk — watch a show, read a novel, play a game
-   - Keep 1 day per week completely placement-free — no preparation, no discussions
+   - 30 minutes a day of zero placement talk â€” watch a show, read a novel, play a game
+   - Keep 1 day per week completely placement-free â€” no preparation, no discussions
 
 2. **Separate identity from outcomes:**
-   - You are not "an unplaced student" — you are a person who happens to be in a placement process
+   - You are not "an unplaced student" â€” you are a person who happens to be in a placement process
    - Your friends who love you do not care about your offer status
    - One offer or 50 rejections, your fundamental worth does not change
 
 3. **Physical health is mental health:**
-   - 20 minutes of walking every day — non-negotiable
-   - Do not skip meals — blood sugar crashes affect interview performance
-   - Limit caffeine — 2 cups max. More caffeine = more anxiety.
-   - Sleep 7+ hours — sleep deprivation reduces problem-solving ability by 30%+
+   - 20 minutes of walking every day â€” non-negotiable
+   - Do not skip meals â€” blood sugar crashes affect interview performance
+   - Limit caffeine â€” 2 cups max. More caffeine = more anxiety.
+   - Sleep 7+ hours â€” sleep deprivation reduces problem-solving ability by 30%+
 
 4. **Use your support system:**
-   - Talk to parents (even if they do not understand the tech part — they understand stress)
+   - Talk to parents (even if they do not understand the tech part â€” they understand stress)
    - Talk to seniors who went through placements last year
-   - Use college counseling if available — free and confidential
+   - Use college counseling if available â€” free and confidential
    - Do NOT compare with batchmates who have been placed
 
 5. **Process rejection healthily:**
    - Cry if you need to. Seriously. Let it out.
-   - Write down why you are disappointed — naming the emotion reduces its power
+   - Write down why you are disappointed â€” naming the emotion reduces its power
    - Call a friend who is NOT in the placement hunt
    - Eat a good meal, sleep, and wake up to a fresh start
 
 6. **Know when to take a break:**
-   - If you have failed 5+ companies in a row, stop and reassess for 2–3 days
-   - A short break is not "wasting time" — a burned-out you fails more interviews
+   - If you have failed 5+ companies in a row, stop and reassess for 2â€“3 days
+   - A short break is not "wasting time" â€” a burned-out you fails more interviews
    - Use the break to change strategy, not to doom-scroll LinkedIn
 
 **A note for friends and family:**
@@ -1142,98 +1142,98 @@ Placement season is a mental health minefield. Students experience:
 ### Month-by-Month Planner (Starting 6 Months Before Season)
 
 ```
-MONTH 1 (February) — Foundation Phase
-├── Week 1: Arrays + Strings — solve 30 problems
-├── Week 2: Linked Lists + Stacks/Queues — solve 20 problems
-├── Week 3: Trees — solve 25 problems
-├── Week 4: Graphs — solve 20 problems
-└── Goal: 100 problems solved
+MONTH 1 (February) â€” Foundation Phase
+â”œâ”€â”€ Week 1: Arrays + Strings â€” solve 30 problems
+â”œâ”€â”€ Week 2: Linked Lists + Stacks/Queues â€” solve 20 problems
+â”œâ”€â”€ Week 3: Trees â€” solve 25 problems
+â”œâ”€â”€ Week 4: Graphs â€” solve 20 problems
+â””â”€â”€ Goal: 100 problems solved
 
-MONTH 2 (March) — Deep DSA Phase
-├── Week 1: Dynamic Programming — solve 25 problems
-├── Week 2: Greedy + Backtracking — solve 15 problems
-├── Week 3: Recursion + Hashing — solve 15 problems
-├── Week 4: Revision of topics covered — solve 25 mixed problems
-└── Goal: 180 problems solved
+MONTH 2 (March) â€” Deep DSA Phase
+â”œâ”€â”€ Week 1: Dynamic Programming â€” solve 25 problems
+â”œâ”€â”€ Week 2: Greedy + Backtracking â€” solve 15 problems
+â”œâ”€â”€ Week 3: Recursion + Hashing â€” solve 15 problems
+â”œâ”€â”€ Week 4: Revision of topics covered â€” solve 25 mixed problems
+â””â”€â”€ Goal: 180 problems solved
 
-MONTH 3 (April) — CS Fundamentals + Resume
-├── Week 1: Operating Systems — read Galvin chapters, solve 50 MCQs
-├── Week 2: DBMS — normalization, indexing, queries — solve 30 SQL queries
-├── Week 3: Computer Networks — OSI, TCP/IP, HTTP — solve 50 MCQs
-├── Week 4: OOP Concepts + Design Patterns — implement 5 patterns
-└── Goal: Resume finalized, reviewed by 3 people
+MONTH 3 (April) â€” CS Fundamentals + Resume
+â”œâ”€â”€ Week 1: Operating Systems â€” read Galvin chapters, solve 50 MCQs
+â”œâ”€â”€ Week 2: DBMS â€” normalization, indexing, queries â€” solve 30 SQL queries
+â”œâ”€â”€ Week 3: Computer Networks â€” OSI, TCP/IP, HTTP â€” solve 50 MCQs
+â”œâ”€â”€ Week 4: OOP Concepts + Design Patterns â€” implement 5 patterns
+â””â”€â”€ Goal: Resume finalized, reviewed by 3 people
 
-MONTH 4 (May) — Company-Specific Prep
-├── Week 1: Target sheet of 20 companies created
-├── Week 2: Amazon-specific — solve 20 company-tagged questions
-├── Week 3: Google/Microsoft-specific — solve 20 company-tagged questions
-├── Week 4: Dream company mix — solve topic-specific problems
-└── Goal: Company shortlist ready, solving tagged questions
+MONTH 4 (May) â€” Company-Specific Prep
+â”œâ”€â”€ Week 1: Target sheet of 20 companies created
+â”œâ”€â”€ Week 2: Amazon-specific â€” solve 20 company-tagged questions
+â”œâ”€â”€ Week 3: Google/Microsoft-specific â€” solve 20 company-tagged questions
+â”œâ”€â”€ Week 4: Dream company mix â€” solve topic-specific problems
+â””â”€â”€ Goal: Company shortlist ready, solving tagged questions
 
-MONTH 5 (June) — Mock Interview + Aptitude
-├── Week 1: 5 full-length aptitude tests (timed)
-├── Week 2: 3 DSA mock interviews with seniors
-├── Week 3: 2 CS fundamentals mock interviews
-├── Week 4: 2 system design mocks (for dream/super dream)
-└── Goal: 10 mocks done, confidence improving
+MONTH 5 (June) â€” Mock Interview + Aptitude
+â”œâ”€â”€ Week 1: 5 full-length aptitude tests (timed)
+â”œâ”€â”€ Week 2: 3 DSA mock interviews with seniors
+â”œâ”€â”€ Week 3: 2 CS fundamentals mock interviews
+â”œâ”€â”€ Week 4: 2 system design mocks (for dream/super dream)
+â””â”€â”€ Goal: 10 mocks done, confidence improving
 
-MONTH 6 (July) — PLACEMENT SEASON BEGINS
-├── Week 1: Final revision + document preparation
-├── Week 2: Attend first company assessments
-├── Week 3: Interview calls start — give your best
-├── Week 4: Multiple interviews — stay calm, sleep well
-└── Goal: At least 1 offer in hand
+MONTH 6 (July) â€” PLACEMENT SEASON BEGINS
+â”œâ”€â”€ Week 1: Final revision + document preparation
+â”œâ”€â”€ Week 2: Attend first company assessments
+â”œâ”€â”€ Week 3: Interview calls start â€” give your best
+â”œâ”€â”€ Week 4: Multiple interviews â€” stay calm, sleep well
+â””â”€â”€ Goal: At least 1 offer in hand
 ```
 
 ### Sample Week During Peak Season
 
 ```
 Monday
-├── 7:00 AM — Wake up, exercise, breakfast
-├── 9:00 AM – 12:00 PM — Company assessment (if scheduled)
-├── 12:00 PM – 1:00 PM — Lunch + break
-├── 1:00 PM – 4:00 PM — Interview preparation (DSA + revise CS fundamentals)
-├── 4:00 PM – 5:00 PM — Rest, listen to music
-├── 5:00 PM – 7:00 PM — Mock interview with peer group
-├── 7:00 PM – 8:00 PM — Dinner, family time
-├── 8:00 PM – 10:00 PM — Light revision + plan for tomorrow
-├── 10:00 PM — Phone away, read or meditate
-├── 11:00 PM — Sleep
+â”œâ”€â”€ 7:00 AM â€” Wake up, exercise, breakfast
+â”œâ”€â”€ 9:00 AM â€“ 12:00 PM â€” Company assessment (if scheduled)
+â”œâ”€â”€ 12:00 PM â€“ 1:00 PM â€” Lunch + break
+â”œâ”€â”€ 1:00 PM â€“ 4:00 PM â€” Interview preparation (DSA + revise CS fundamentals)
+â”œâ”€â”€ 4:00 PM â€“ 5:00 PM â€” Rest, listen to music
+â”œâ”€â”€ 5:00 PM â€“ 7:00 PM â€” Mock interview with peer group
+â”œâ”€â”€ 7:00 PM â€“ 8:00 PM â€” Dinner, family time
+â”œâ”€â”€ 8:00 PM â€“ 10:00 PM â€” Light revision + plan for tomorrow
+â”œâ”€â”€ 10:00 PM â€” Phone away, read or meditate
+â”œâ”€â”€ 11:00 PM â€” Sleep
 ```
 
 ### Documents Checklist (Printable)
 
 ```
-ALL DOCUMENTS — PRINT 3 SETS
-□ Resume (latest, 1 page, 5 copies)
-□ 10th marksheet
-□ 12th marksheet
-□ All semester mark sheets (print both sides if possible)
-□ CGPA certificate (signed by college)
-□ College ID card (original + photocopy)
-□ Government ID (Aadhar / PAN / Passport)
-□ Passport-size photos (8-10 recent)
-□ Category certificate (SC/ST/OBC — if applicable)
-□ Gap certificate (if applicable)
-□ Internship offer letter (if any)
-□ Previous work experience letter (if any)
-□ LOR (if applying off-campus)
+ALL DOCUMENTS â€” PRINT 3 SETS
+â–¡ Resume (latest, 1 page, 5 copies)
+â–¡ 10th marksheet
+â–¡ 12th marksheet
+â–¡ All semester mark sheets (print both sides if possible)
+â–¡ CGPA certificate (signed by college)
+â–¡ College ID card (original + photocopy)
+â–¡ Government ID (Aadhar / PAN / Passport)
+â–¡ Passport-size photos (8-10 recent)
+â–¡ Category certificate (SC/ST/OBC â€” if applicable)
+â–¡ Gap certificate (if applicable)
+â–¡ Internship offer letter (if any)
+â–¡ Previous work experience letter (if any)
+â–¡ LOR (if applying off-campus)
 
 DIGITAL FOLDER
-□ All documents scanned as PDF (named clearly)
-□ Resume PDF (named: YourName_Resume.pdf)
-□ Resume DOCX (for editing if needed)
-□ Portfolio website link (if applicable)
-□ GitHub profile link
-□ LeetCode / HackerRank profile links
+â–¡ All documents scanned as PDF (named clearly)
+â–¡ Resume PDF (named: YourName_Resume.pdf)
+â–¡ Resume DOCX (for editing if needed)
+â–¡ Portfolio website link (if applicable)
+â–¡ GitHub profile link
+â–¡ LeetCode / HackerRank profile links
 
-ONLINE PROFILES — UPDATED
-□ LinkedIn (headline, about, experience, skills, recommendations)
-□ GitHub (README for all projects, pinned repos)
-□ LeetCode (public profile with recent activity)
-□ HackerRank (skill certifications)
-□ CodeChef / Codeforces (if applicable)
-□ Portfolio (if applicable)
+ONLINE PROFILES â€” UPDATED
+â–¡ LinkedIn (headline, about, experience, skills, recommendations)
+â–¡ GitHub (README for all projects, pinned repos)
+â–¡ LeetCode (public profile with recent activity)
+â–¡ HackerRank (skill certifications)
+â–¡ CodeChef / Codeforces (if applicable)
+â–¡ Portfolio (if applicable)
 ```
 
 ---
@@ -1242,38 +1242,38 @@ ONLINE PROFILES — UPDATED
 
 ```
 NIGHT BEFORE:
-□ Clothes ironed and ready (formals, clean shoes)
-□ ID card and documents in bag
-□ Water bottle filled
-□ Phone charged
-□ Alarm set (main + backup)
-□ Interview time confirmed
-□ Link / room number noted
+â–¡ Clothes ironed and ready (formals, clean shoes)
+â–¡ ID card and documents in bag
+â–¡ Water bottle filled
+â–¡ Phone charged
+â–¡ Alarm set (main + backup)
+â–¡ Interview time confirmed
+â–¡ Link / room number noted
 
 MORNING OF:
-□ Shower, fresh, dressed in formals
-□ Breakfast eaten (not heavy, not skipped)
-□ 10 minutes deep breathing / meditation
-□ 1 quick glance at cheat sheet
-□ Documents bag checked
-□ Reach venue / log in 10 minutes early
+â–¡ Shower, fresh, dressed in formals
+â–¡ Breakfast eaten (not heavy, not skipped)
+â–¡ 10 minutes deep breathing / meditation
+â–¡ 1 quick glance at cheat sheet
+â–¡ Documents bag checked
+â–¡ Reach venue / log in 10 minutes early
 
 DURING THE INTERVIEW:
-□ Greet interviewer with a smile
-□ "May I take notes?" — always ask
-□ Think out loud — never go silent
-□ Ask clarifying questions before coding
-□ Write clean code with proper variable names
-□ Discuss test cases and edge cases
-□ At the end: ask 2 thoughtful questions
-□ Thank the interviewer for their time
+â–¡ Greet interviewer with a smile
+â–¡ "May I take notes?" â€” always ask
+â–¡ Think out loud â€” never go silent
+â–¡ Ask clarifying questions before coding
+â–¡ Write clean code with proper variable names
+â–¡ Discuss test cases and edge cases
+â–¡ At the end: ask 2 thoughtful questions
+â–¡ Thank the interviewer for their time
 
 AFTER THE INTERVIEW:
-□ Note down questions you were asked
-□ Note what went well, what did not
-□ Rest for 30 minutes
-□ Prepare for the next interview if scheduled
-□ Result does not matter now — it is out of your hands
+â–¡ Note down questions you were asked
+â–¡ Note what went well, what did not
+â–¡ Rest for 30 minutes
+â–¡ Prepare for the next interview if scheduled
+â–¡ Result does not matter now â€” it is out of your hands
 ```
 
 ---
@@ -1284,7 +1284,7 @@ Placement season is a test of preparation, not intelligence. The student who sol
 
 - **Start early.** The best time to start was 6 months ago. The second best time is today.
 - **Be systematic.** A preparation plan followed imperfectly beats no plan at all.
-- **Build relationships.** Your peers are not your competition — they are your network for life.
+- **Build relationships.** Your peers are not your competition â€” they are your network for life.
 - **Handle setbacks.** The placement season is 6 months long. You will face rejections. How you respond determines your outcome.
 - **Keep perspective.** A job is a job. It is not who you are. It is what you do. Your health, relationships, and growth matter more.
 

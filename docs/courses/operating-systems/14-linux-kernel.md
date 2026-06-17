@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Linux Kernel Internals](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/14-linux-kernel.png)
+
 ### Linux Process Model
 
 Linux processes are represented by the **task_struct** structure (defined in `include/linux/sched.h`). This is one of the largest structures in the kernel, containing hundreds of fields.

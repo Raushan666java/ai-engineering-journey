@@ -12,7 +12,7 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
-![Instruction Set Architecture, Addressing Modes and Pipelining](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch07-isa-pipeline.png)
+![Instruction Set Architecture Concepts and MIPS Formats](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch11-isa.png)
 
 ### 11.1 Instruction Set Architecture (ISA) Overview
 

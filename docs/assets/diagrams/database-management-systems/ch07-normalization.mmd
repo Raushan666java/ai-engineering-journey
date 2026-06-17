@@ -1,0 +1,31 @@
+flowchart TD
+    A[Unnormalized Form] --> B[1NF]
+    B --> C[2NF]
+    C --> D[3NF]
+    D --> E[BCNF]
+
+    B --> F[Atomic attributes]
+    B --> G[No repeating groups]
+    B --> H[Primary key defined]
+
+    C --> I[In 1NF]
+    C --> J[Full FD on PK]
+    C --> K[Remove partial dependencies]
+
+    D --> L[In 2NF]
+    D --> M[No transitive FD]
+    D --> N[Non-key -> non-key prohibited]
+
+    E --> O[In 3NF]
+    E --> P[Every determinant is candidate key]
+
+    Q[Functional Dependencies] --> R[Closure F+]
+    Q --> S[Armstrong Axioms]
+    S --> T[Reflexivity]
+    S --> U[Augmentation]
+    S --> V[Transitivity]
+
+    W[Lossless Join] --> X[Decomposition preserves info]
+    W --> Y[Join returns original]
+
+    Z[Dependency Preservation] --> AA[All FDs enforceable locally]

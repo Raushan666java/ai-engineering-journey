@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Shell Scripting](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/15-shell-scripting.png)
+
 ### The Shell
 
 A **shell** is a program that acts as an intermediary between the user and the operating system kernel. It has two modes:

@@ -1,0 +1,52 @@
+flowchart TD
+    subgraph Input["Input"]
+        A["Instruction Sequence<br/>(3-address code)"] --> B["Identify Leaders"]
+    end
+
+    subgraph BasicBlocks["Basic Block Construction"]
+        B --> C["Leader 1: First instruction<br/>Leader 2: Jump targets<br/>Leader 3: After jumps"]
+        C --> D["Basic Blocks<br/>(single entry, single exit)"]
+    end
+
+    subgraph FlowGraph["Flow Graph"]
+        D --> E["Flow Graph G=(N,E,entry)"]
+        E --> F["Edge B→C if control<br/>can pass from B to C"]
+    end
+
+    subgraph Dominators["Dominator Analysis"]
+        E --> G["Compute Dominators"]
+        G --> H["d dominates n if every<br/>path from entry to n<br/>passes through d"]
+        G --> I["Immediate Dominator<br/>idom(n) — unique d ≠ n"]
+        G --> J["Lengauer-Tarjan Algorithm<br/>(near-linear time)"]
+        H --> K["Dominator Tree<br/>(root = entry)"]
+    end
+
+    subgraph DFST["Depth-First Spanning Tree"]
+        E --> L["DFS of Flow Graph"]
+        L --> M["Tree Edges<br/>(to unvisited node)"]
+        L --> N["Back Edges<br/>(to ancestor, dfn≤dfn)"]
+        L --> O["Forward Edges<br/>(to descendant)"]
+        L --> P["Cross Edges<br/>(between branches)"]
+    end
+
+    subgraph Loops["Natural Loop Detection"]
+        N --> Q["Natural Loop from<br/>back edge m→n"]
+        Q --> R["Header n dominates<br/>all loop nodes"]
+        Q --> S["Single entry point"]
+        Q --> T["Pre-header insertion<br/>(simplifies optimizations)"]
+        R --> U["Nested Loops<br/>(loop-nesting tree)"]
+    end
+
+    subgraph Reducibility["Reducibility"]
+        E --> V["Reducible Flow Graph"]
+        V --> W["T1: Remove self-loop"]
+        V --> X["T2: Merge unique-<br/>predecessor node"]
+        V --> Y["Structured programs<br/>(no goto cycles)"]
+        V --> Z["Node Splitting<br/>(irreducible→reducible)"]
+    end
+
+    subgraph Applications["Applications"]
+        K --> AA["Safe Code Motion<br/>(dominator-based)"]
+        U --> AB["Loop Optimizations<br/>(unrolling, fusion, etc.)"]
+        Y --> AC["Fast convergence of<br/>iterative data-flow"]
+    end

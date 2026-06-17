@@ -1,0 +1,44 @@
+flowchart TB
+  K8S[Kubernetes Deployment]
+  K8S --> POD[Pods]
+  POD --> CT[Containers]
+  POD --> IC[Init Containers]
+  POD --> RS[Resource Requests / Limits]
+  POD --> LC[Lifecycle]
+
+  K8S --> EXPOSE[Networking]
+  EXPOSE --> CIP[ClusterIP]
+  EXPOSE --> NP[NodePort]
+  EXPOSE --> LB[LoadBalancer]
+  EXPOSE --> ING[Ingress]
+
+  K8S --> CFG[Configuration]
+  CFG --> CM[ConfigMaps]
+  CFG --> SEC[Secrets]
+  CFG --> EV[Environment Variables]
+  CFG --> VOL[Volume Mounts]
+
+  K8S --> DEPLOY[Deployments]
+  DEPLOY --> ROLL[Rolling Update]
+  DEPLOY --> REV[Revision Limits]
+  DEPLOY --> SURGE[Surge Config]
+
+  K8S --> PROB[Probes]
+  PROB --> LIV[Liveness]
+  PROB --> READ[Readiness]
+  PROB --> START[Startup]
+
+  K8S --> HELM[Helm Charts]
+  HELM --> VAL[Values]
+  HELM --> TEMPLATE[Templates]
+  HELM --> HOOK[Hooks]
+  HELM --> COND[Conditions]
+
+  K8S --> SCALE[Auto-Scaling]
+  SCALE --> HPA[HorizontalPodAutoscaler]
+  SCALE --> VPA[VerticalPodAutoscaler]
+
+  K8S --> SPRING[Spring Boot on K8s]
+  SPRING --> ACT[Actuator Probes]
+  SPRING --> SDIS[K8s Native Discovery]
+  SPRING --> CFG2[ConfigMap Watch]

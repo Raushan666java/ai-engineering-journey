@@ -1,0 +1,34 @@
+flowchart TD
+    A["Graph Traversals"] --> B["BFS"]
+    A --> C["DFS"]
+    A --> D["Applications"]
+
+    B --> B1["Queue-based"]
+    B --> B2["Level by level"]
+    B --> B3["O(V + E)"]
+    B1 --> B1a["enqueue source"]
+    B1 --> B1b["mark visited"]
+    B1 --> B1c["process neighbors"]
+    B --> B4["Shortest path in unweighted"]
+
+    C --> C1["Stack/Recursion based"]
+    C --> C2["Go deep first"]
+    C --> C3["O(V + E)"]
+    C1 --> C1a["Recursive DFS"]
+    C1 --> C1b["Iterative with stack"]
+    C --> C4["Discovery + finish times"]
+
+    D --> D1["Connected Components"]
+    D --> D2["Cycle Detection"]
+    D --> D3["Topological Sort"]
+    D --> D4["Bipartite Check"]
+    D --> D5["Strongly Connected Components"]
+
+    D3 --> D3a["Kahn's Algorithm"]
+    D3a --> D3a1["In-degree counting"]
+    D3a --> D3a2["Queue of zero in-degree"]
+    D3 --> D3b["DFS-based"]
+    D3b --> D3b1["Stack after finish time"]
+
+    D2 --> D2a["Directed: back edges"]
+    D2 --> D2b["Undirected: visited + parent"]

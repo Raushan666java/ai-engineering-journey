@@ -10,6 +10,8 @@ By the end of this chapter, students will be able to:
 - Merge dictionaries using the `|` operator
 - Convert between dictionaries and JSON
 
+![Dictionaries](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/08-dictionaries.png)
+
 ## 8.1 Dictionary Basics
 
 A dictionary maps keys to values. Keys must be hashable (immutable types). Dictionaries maintain insertion order (Python 3.7+):

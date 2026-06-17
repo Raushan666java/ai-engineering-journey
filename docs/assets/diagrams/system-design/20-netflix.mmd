@@ -1,0 +1,48 @@
+graph TB
+    subgraph Client Devices
+        TV[Smart TV]
+        MO[Mobile]
+        WEB[Browser]
+        ST[Streaming Stick]
+    end
+    subgraph Netflix CDN
+        OCA[Open Connect Appliance ISP Peering]
+        OCA2[Open Connect Appliance Colo]
+    end
+    subgraph AWS Cloud
+        subgraph API Layer
+            ZUUL[Zuul API Gateway]
+            ELB[Elastic Load Balancer]
+        end
+        subgraph Service Layer
+            MS1[User Service]
+            MS2[Catalog Service]
+            MS3[Playback Service]
+            MS4[Search Service]
+            MS5[Recommendation Service]
+            MS6[Encoding Pipeline]
+        end
+        subgraph Data Layer
+            CASS[(Cassandra User Data)]
+            EV[(EVCache Redis/Memcached)]
+            S3[(S3 Source Content)]
+            ES[(Elasticsearch Search Index)]
+        end
+        subgraph Infrastructure
+            HYSTRIX[Hystrix Circuit Breakers]
+            CRONOS[Cronos Job Scheduler]
+            ATLAS[Atlas Monitoring]
+        end
+    end
+    TV --> OCA
+    MO --> OCA
+    WEB --> OCA
+    OCA --> ZUUL
+    OCA --> S3
+    ZUUL --> ELB
+    ELB --> MS3
+    ELB --> MS5
+    MS3 --> CASS
+    MS3 --> EV
+    MS5 --> EV
+    MS5 --> ES

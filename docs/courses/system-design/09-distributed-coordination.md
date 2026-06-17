@@ -14,6 +14,8 @@
 ---
 ## Theory
 
+![Distributed Coordination Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/09-distributed-coordination.png)
+
 ### Service Registry Pattern
 
 A service registry is a database of available service instances and their network locations. Services register themselves on startup and deregister on shutdown. Clients or routers query the registry to find service endpoints.

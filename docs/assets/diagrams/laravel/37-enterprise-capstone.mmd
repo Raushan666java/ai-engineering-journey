@@ -1,0 +1,68 @@
+flowchart TD
+    subgraph "API Gateway"
+        GW["Rate Limit Auth Route"]
+    end
+
+    subgraph "Enterprise Orchestrator"
+        EO["Supervisor Workflow Engine"]
+    end
+
+    subgraph "Platform Infrastructure"
+        PI1["Agent Registry<br/>Discover call"]
+        PI2["Agent Message Bus<br/>Pub sub events"]
+        PI3["Shared Memory<br/>Knowledge Base pgvector"]
+    end
+
+    subgraph "Agent Pool by Sector"
+        AP1["Healthcare<br/>3-5 agents"]
+        AP2["Finance<br/>3-5 agents"]
+        AP3["Education<br/>3-5 agents"]
+        AP4["Logistics<br/>3-5 agents"]
+        AP5["HR<br/>3-5 agents"]
+        AP6["Customer Service<br/>3-5 agents"]
+        AP7["Legal<br/>3-5 agents"]
+        AP8["Real Estate<br/>3-5 agents"]
+        AP9["Manufacturing<br/>3-5 agents"]
+        AP10["Marketing<br/>3-5 agents"]
+    end
+
+    subgraph "Multi-Tenant Isolation"
+        MTI["Per tenant agent instances<br/>Data scoped config"]
+    end
+
+    subgraph "Deployment"
+        DEP["Laravel Vapor<br/>Auto-scaling workers<br/>Multi-region failover"]
+    end
+
+    subgraph "Observability"
+        OBS["Telescope Pulse<br/>Custom AgentMetrics"]
+    end
+
+    GW --> EO
+    EO --> PI1
+    EO --> PI2
+    EO --> PI3
+
+    PI1 --> AP1
+    PI1 --> AP2
+    PI1 --> AP3
+    PI1 --> AP4
+    PI1 --> AP5
+    PI1 --> AP6
+    PI1 --> AP7
+    PI1 --> AP8
+    PI1 --> AP9
+    PI1 --> AP10
+
+    PI2 --> AP1
+    PI2 --> AP2
+    PI2 --> AP3
+
+    EO --> MTI
+    EO --> DEP
+    EO --> OBS
+
+    style GW fill:#4a90d9,color:#fff
+    style EO fill:#27ae60,color:#fff
+    style AP1 fill:#e67e22,color:#fff
+    style DEP fill:#9b59b6,color:#fff

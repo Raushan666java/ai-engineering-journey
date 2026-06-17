@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Kubernetes Core Objects and Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch07-k8s-basics.png)
+
 By the end of this chapter, students will be able to:
 
 1. Describe Kubernetes architecture including control plane components and node components

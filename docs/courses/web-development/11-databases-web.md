@@ -12,6 +12,8 @@ By the end of this chapter, you will be able to:
 
 ## 11.1 SQL vs NoSQL
 
+![Databases for Web Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/11-databases-web.png)
+
 ```typescript
 // SQL: Structured data with relationships
 const query = `

@@ -1,0 +1,40 @@
+flowchart TB
+    subgraph Perceptron["Perceptron"]
+        Input["Input x1..xn"]
+        Weights["Weights w1..wn"]
+        Bias["Bias b"]
+        Sum["Sum = Sum(wi*xi) + b"]
+        Activation["Step function output<br/>1 if sum > 0 else -1"]
+        Learning["Delta rule wi += eta*(y - yhat)*xi"]
+        Limitations["Limitation: XOR not linearly separable"]
+    end
+
+    subgraph MLP["Multi-Layer Perceptron"]
+        Input_Layer["Input Layer"]
+        Hidden["Hidden Layers<br/>1 or more"]
+        Output_Layer["Output Layer"]
+        NonLin["Non-linear Activation<br/>Sigmoid / Tanh / ReLU"]
+        Backprop["Backpropagation<br/>Chain rule of calculus"]
+        Gradient["Gradient Descent<br/>w = w - eta * dE/dw"]
+        Vanishing["Vanishing Gradient Problem"]
+    end
+
+    subgraph Deep_Arch["Deep Learning Architectures"]
+        CNN["CNN: Convolution<br/>Pooling / Stride / Padding<br/>Spatial feature hierarchy"]
+        RNN["RNN: Sequential<br/>LSTM / GRU gates<br/>Long-range dependencies"]
+        AE["Autoencoders<br/>Encoder-decoder compression"]
+        VAE["VAE Variational AE<br/>Probabilistic latent space"]
+        GAN["GAN Generator + Discriminator<br/>Adversarial training"]
+        Transformer["Transformer<br/>Self-attention, Multi-head<br/>Positional encoding"]
+    end
+
+    subgraph Training["Training Deep Nets"]
+        SGD["SGD + Momentum<br/>Adam / RMSprop"]
+        BatchNorm["Batch Normalization<br/>Stabilize training"]
+        Dropout["Dropout Regularization<br/>Prevents co-adaptation"]
+        ResNet["Residual Connections<br/>Skip connections"]
+    end
+
+    Perceptron --> MLP
+    MLP --> Deep_Arch
+    MLP --> Training

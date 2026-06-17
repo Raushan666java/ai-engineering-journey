@@ -1,0 +1,32 @@
+flowchart TD
+    A["B-Trees & B+ Trees"] --> B["B-Tree Properties"]
+    A --> C["Operations"]
+    A --> D["B+ Tree"]
+    A --> E["Applications"]
+
+    B --> B1["Order m: max m children"]
+    B --> B2["Internal: ⌈m/2⌉ to m children"]
+    B --> B3["Root: at least 2 children"]
+    B --> B4["All leaves at same level"]
+    B --> B5["k children → k-1 keys"]
+    B1 --> B1a["Height ≤ log_{⌈m/2⌉} (n+1)/2"]
+    B1 --> B1b["For m=1000: very shallow"]
+
+    C --> C1["Search: O(log_m n)"]
+    C --> C2["Insert: split on full"]
+    C2 --> C2a["Promote middle key to parent"]
+    C2 --> C2b["Split may propagate to root"]
+    C --> C3["Delete: borrow/merge on underflow"]
+
+    D --> D1["Data only in leaves"]
+    D --> D2["Internal: routing keys only"]
+    D --> D3["Leaves linked list for range scan"]
+    D --> D4["Efficient range queries"]
+
+    E --> E1["Database indexes"]
+    E --> E2["File systems"]
+    E --> E3["Block-oriented storage"]
+
+    BTree_Example["Example Order-5 Node:
+    [10 | 20 | 30 | 40]
+   /    |    |    |    \\"] --> B

@@ -10,6 +10,8 @@ By the end of this chapter, students will be able to:
 - Choose between sets, frozensets, and other collections based on requirements
 - Write set comprehensions
 
+![Tuples and Sets](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/07-tuples-sets.png)
+
 ## 7.1 Tuples
 
 A tuple is an ordered, immutable sequence of objects. Tuples are created with parentheses or just commas:

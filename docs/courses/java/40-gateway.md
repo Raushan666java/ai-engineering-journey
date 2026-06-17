@@ -15,6 +15,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![API Gateway - Spring Cloud Gateway Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/40-gateway.png)
+
 ### API Gateway Pattern
 
 An API Gateway is a single entry point that routes requests to appropriate backend services. It handles cross-cutting concerns including authentication, rate limiting, routing, aggregation, and protocol translation.

@@ -10,6 +10,8 @@ By the end of this chapter, students will be able to:
 - Define abstract base classes and enforce interfaces
 - Use structural subtyping (protocols) for duck typing
 
+![Inheritance and Protocols](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/13-inheritance.png)
+
 ## 13.1 Basic Inheritance
 
 A subclass inherits all attributes and methods from its parent:

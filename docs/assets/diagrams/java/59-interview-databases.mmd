@@ -1,0 +1,38 @@
+flowchart TB
+  DB[Database Interview Topics]
+  DB --> JDBC[JDBC]
+  JDBC --> CON[Connection]
+  JDBC --> STMT[Statement / PreparedStatement]
+  JDBC --> RS[ResultSet]
+  JDBC --> BATCH[Batch Operations]
+
+  DB --> JPA[JPA / Hibernate]
+  JPA --> ENT[Entities]
+  JPA --> REL[Relationships]
+  JPA --> CACHE[JPQL / Criteria]
+  JPA --> LAZY[Lazy / Eager Loading]
+  JPA --> DIRTY[Dirty Checking]
+  JPA --> N1[N+1 Problem]
+
+  DB --> TX[Transactions]
+  TX --> ACID[ACID Properties]
+  TX --> ISO[Isolation Levels]
+  TX --> PROP[Propagation]
+  TX --> LOCK[Locking Optimistic / Pessimistic]
+
+  DB --> INDEX[Indexing]
+  INDEX --> BTREE[B-Tree]
+  INDEX --> HASH[Hash]
+  INDEX --> COMP[Composite]
+  INDEX --> COVER[Covering Index]
+
+  DB --> NOSQL[NoSQL]
+  NOSQL --> MONGO[MongoDB]
+  NOSQL --> REDIS[Redis]
+  NOSQL --> CASS[Cassandra]
+
+  DB --> PERF[Performance]
+  PERF --> SHARD[Sharding]
+  PERF --> PART[Partitioning]
+  PERF --> POOL[Connection Pooling]
+  PERF --> READ[Read Replicas]

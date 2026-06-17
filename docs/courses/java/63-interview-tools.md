@@ -4,6 +4,8 @@ This chapter covers the essential tools and DevOps practices every Java backend 
 
 ---
 
+![DevOps Tools Interview Topics - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/63-interview-tools.png)
+
 ### Q1: What is Maven and what problem does it solve?
 
 **Answer:** Maven is a build automation and dependency management tool for Java projects. Before Maven, Java projects had no standardized build process — developers used Ant with hand-written XML build files that required manually specifying every compile, test, and packaging step. Dependencies were downloaded and stored in `lib/` folders checked into version control, leading to bloated repositories and version conflicts.

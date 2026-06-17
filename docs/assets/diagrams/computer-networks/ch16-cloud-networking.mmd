@@ -1,0 +1,52 @@
+flowchart TB
+    subgraph VPC["Virtual Private Cloud"]
+        Subnets["Subnets: public and private"]
+        RT["Route Tables: destination to target"]
+        IGW["Internet Gateway: public NAT"]
+        NAT["NAT Gateway: outbound from private"]
+        SG["Security Groups: stateful instance firewall"]
+        NACL["Network ACLs: stateless subnet firewall"]
+        Peering["VPC Peering: non-transitive"]
+        TGW["Transit Gateway: hub routing"]
+    end
+
+    subgraph LB["Load Balancers"]
+        ALB["Application LB: Layer 7, path/host routing"]
+        NLB["Network LB: Layer 4, ultra-low latency"]
+        CLB["Classic LB: legacy, L4 + basic L7"]
+        HC["Health Checks: periodic endpoint monitoring"]
+    end
+
+    subgraph CDN["Content Delivery Network"]
+        Edge["Edge Nodes: Points of Presence"]
+        Cache["Caching: tiered origin to edge"]
+        Invalidation["Purge: API, versioned URLs"]
+        Dynamic["Dynamic Acceleration: TCP optimizations"]
+        EdgeCompute["Edge Computing: Lambda@Edge, Workers"]
+    end
+
+    subgraph DNS["DNS Management"]
+        Simple["Simple: single record"]
+        Weighted["Weighted: traffic distribution"]
+        Latency["Latency-Based: lowest latency region"]
+        Geo["Geolocation: route by client location"]
+        Failover["Failover: active-passive with health checks"]
+    end
+
+    subgraph Hybrid["Hybrid Connectivity"]
+        VPN["Site-to-Site VPN: IPSec tunnels"]
+        DX["Direct Connect: dedicated fiber"]
+        InterRegion["Inter-Region: VPC peering across regions"]
+    end
+
+    subgraph Seg["Network Segmentation"]
+        ThreeTier["Three-Tier: web, app, database"]
+        MicroSeg["Microsegmentation: per-workload policies"]
+        Mesh["Service Mesh: Istio, Linkerd sidecar"]
+    end
+
+    VPC --> LB
+    LB --> CDN
+    CDN --> DNS
+    DNS --> Hybrid
+    Hybrid --> Seg

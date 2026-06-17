@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Routing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch07-routing.png)
+
 1. Distinguish between distance-vector and link-state routing algorithms.
 2. Analyze the RIP protocol and its limitations due to count-to-infinity.
 3. Describe OSPF operation including area hierarchy and link-state database synchronization.

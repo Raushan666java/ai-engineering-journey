@@ -1,0 +1,36 @@
+flowchart TB
+    subgraph Types["Learning Types"]
+        Supervised["Supervised<br/>Labeled data<br/>Classification, Regression"]
+        Unsupervised["Unsupervised<br/>No labels<br/>Clustering, Density estimation"]
+        Semi["Semi-supervised<br/>Few labels + unlabeled"]
+        RL["Reinforcement Learning<br/>Rewards and penalties"]
+    end
+
+    subgraph DecisionTrees["Decision Trees"]
+        ID3["ID3 / C4.5 / CART"]
+        Entropy["Entropy H = -Sum p*log(p)"]
+        Gain["Information Gain = Entropy - weighted child entropy"]
+        Pruning["Pruning: pre/post to reduce overfitting"]
+    end
+
+    subgraph BiasVariance["Bias-Variance Tradeoff"]
+        HighBias["High bias = Underfitting<br/>Model too simple"]
+        HighVar["High variance = Overfitting<br/>Model too complex"]
+    end
+
+    subgraph Eval["Evaluation Metrics"]
+        Metrics["Accuracy / Precision / Recall<br/>F1-Score / Confusion Matrix"]
+        CV["K-Fold Cross-Validation"]
+        ROC["ROC / AUC"]
+    end
+
+    subgraph Reg["Regularization"]
+        L1["L1 Lasso<br/>Sparsity"]
+        L2["L2 Ridge<br/>Weight decay"]
+    end
+
+    Types --> DecisionTrees
+    Types --> BiasVariance
+    DecisionTrees --> Eval
+    BiasVariance --> Reg
+    Eval --> Reg

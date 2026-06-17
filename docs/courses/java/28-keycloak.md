@@ -24,6 +24,8 @@ By the end of this chapter you should be able to:
 
 ## 1. Keycloak Setup
 
+![Keycloak Identity Federation Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/28-keycloak.png)
+
 ### 1.1 Docker Compose
 
 The fastest way to get Keycloak running is with Docker Compose:

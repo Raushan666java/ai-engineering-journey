@@ -1,0 +1,37 @@
+flowchart TD
+    A["Turing Machine Extensions"] --> B["Language Classification"]
+    A --> C["Universal TM"]
+    A --> D["Church-Turing Thesis"]
+    A --> E["Oracle TMs"]
+    A --> F["Arithmetic Hierarchy"]
+
+    B --> B1["Recursive (Decidable)"]
+    B --> B2["RE (Recognizable)"]
+    B --> B3["co-RE"]
+    B1 --> B1a["TM halts on all inputs"]
+    B2 --> B2a["TM accepts w ∈ L"]
+    B2 --> B2b["May loop for w ∉ L"]
+    B1 --> B1b["L is recursive iff L∈RE ∩ co-RE"]
+
+    C --> C1["UTM = stored-program concept"]
+    C --> C2["Takes ⟨M, w⟩ as input"]
+    C --> C3["Simulates M on w"]
+    C --> C4["3-tape architecture"]
+
+    D --> D1["CT Thesis"]
+    D1 --> D1a["Everything computable ≈ TM"]
+    D1 --> D1b["All models equivalent"]
+    D --> D2["Physical CT thesis"]
+    D --> D3["Extended CT thesis"]
+
+    E --> E1["Oracle tape + query state"]
+    E --> E2["Mᴬ with oracle for A"]
+    E --> E3["Relativization"]
+    E3 --> E3a["∃ A: Pᴬ = NPᴬ"]
+    E3 --> E3b["∃ B: Pᴮ ≠ NPᴮ"]
+
+    F --> F1["Σ₁ = RE (∃ quantifier)"]
+    F --> F2["Π₁ = co-RE (∀ quantifier)"]
+    F --> F3["Σ₂ = ∃∀ pattern"]
+    F --> F4["Π₂ = ∀∃ pattern"]
+    F --> F5["Strict hierarchy"]

@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) formulate te
 
 ## 10.1 Temporal Models
 
+![Probabilistic Reasoning Over Time](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch10-probabilistic-reasoning.png)
+
 Temporal probabilistic models treat the state as evolving over discrete time steps $t = 1, 2, \ldots, T$. The **state random variable** $X_t$ represents the true (hidden) state at time $t$; the **evidence variable** $E_t$ represents the observation.
 
 The temporal model is defined by:

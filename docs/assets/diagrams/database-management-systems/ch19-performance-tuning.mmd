@@ -1,0 +1,44 @@
+mindmap
+  root((Performance Tuning))
+    Indexing Strategies
+      Composite index column order
+      Covering index avoid lookups
+      Filtered / partial index
+      Clustered vs Non-clustered
+      Index maintenance rebuild reorganize
+      Avoid over-indexing
+    Partitioning
+      Range partitioning by date
+      List partitioning by region
+      Hash partitioning by key
+      Partition pruning
+      Improve query and maintenance
+    Materialized Views
+      Precomputed result storage
+      Refresh on demand or scheduled
+      Faster aggregation queries
+      Storage overhead trade-off
+    Query Rewriting
+      Use EXISTS instead of IN
+      Avoid SELECT unnecessary columns
+      Use UNION ALL instead of UNION
+      Avoid functions on indexed columns
+      Proper join order
+      Use CTEs vs subqueries wisely
+    Execution Plan Analysis
+      Seek vs Scan operations
+      Spool / Sort / Hash operators
+      Estimated vs actual rows
+      Missing index suggestions
+      Parameter sniffing
+    Statistics
+      Histograms for distribution
+      Auto-update vs manual update
+      Fullscan vs sampled
+      Correlation across columns
+    Hardware and Config
+      Memory allocation
+      Disk I/O optimization
+      Connection pooling
+      Parallel query execution
+      Buffer pool sizing

@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Security](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/16-security.png)
+
 ### Security Goals
 
 | Goal | Definition | Example Violation |

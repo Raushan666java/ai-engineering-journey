@@ -1,4 +1,4 @@
-# Chapter 12: Laravel AI SDK — Agents, Prompting & Structured Output
+﻿# Chapter 12: Laravel AI SDK â€” Agents, Prompting & Structured Output
 
 ---
 ## Learning Objectives
@@ -11,6 +11,9 @@
 - Implement streaming responses, broadcasting, and queued agent execution
 ---
 ## Theory
+
+![AI SDK Agents](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/12-ai-sdk-agents.png)
+
 
 ### 12.1 The AI SDK Architecture
 
@@ -194,7 +197,7 @@ class CoachingController extends Controller
 }
 ```
 
-The `PendingAgentRequest` is configurable — override the provider, model, max tokens, and timeout:
+The `PendingAgentRequest` is configurable â€” override the provider, model, max tokens, and timeout:
 
 ```php
 <?php
@@ -765,7 +768,7 @@ class QuickController extends Controller
 
 ### Application Problems
 
-1. Create a `CodeReviewer` agent class that analyzes submitted PHP code and returns structured output containing an array of `issues` — each with a `severity` enum (error, warning, suggestion), a `line` number, and a `message`. Use `HasStructuredOutput` with a nested object inside an array.
+1. Create a `CodeReviewer` agent class that analyzes submitted PHP code and returns structured output containing an array of `issues` â€” each with a `severity` enum (error, warning, suggestion), a `line` number, and a `message`. Use `HasStructuredOutput` with a nested object inside an array.
 
 2. Implement a controller endpoint that accepts a conversation ID and a message, continues an existing conversation with a support agent, streams the response using the Vercel AI SDK protocol, and broadcasts each chunk to a Pusher channel named `chat.{conversation_id}`.
 

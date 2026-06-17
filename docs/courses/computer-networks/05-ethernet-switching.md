@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Ethernet Switching](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch05-ethernet-switching.png)
+
 1. Trace the evolution of Ethernet from 10 Mbps shared media to 100 Gbps switched networks.
 2. Explain the operation of learning bridges and transparent switching.
 3. Describe the Spanning Tree Protocol and its role in loop prevention.

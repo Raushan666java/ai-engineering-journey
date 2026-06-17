@@ -1,4 +1,4 @@
-# Chapter 3: Consensus Mechanisms
+﻿# Chapter 3: Consensus Mechanisms
 
 ---
 
@@ -23,7 +23,7 @@ Nodes (miners) compete to solve a computationally intensive puzzle.
 - **Security:** Requires enormous energy/hardware investment. An attacker must control 51% of the network's hash rate.
 - **Incentive:** Block rewards and transaction fees.
 
-![Consensus Mechanisms](../assets/images/diagrams/blockchain/ch03-consensus.png)
+![Consensus Mechanisms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch03-consensus.png)
 
 ### Proof of Stake (PoS)
 Validators are chosen based on the amount of cryptocurrency they "stake" (lock up).

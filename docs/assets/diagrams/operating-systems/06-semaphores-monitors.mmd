@@ -1,0 +1,44 @@
+flowchart TB
+    subgraph Classic_Synchronization_Problems
+        Bounded_Buffer["Bounded Buffer<br/>(Producer-Consumer)"]
+        Readers_Writers["Readers-Writers"]
+        Dining_Philosophers["Dining Philosophers"]
+    end
+
+    subgraph Semaphores
+        Counting["Counting Semaphore<br/>(empty/full slots)"]
+        Binary["Binary Semaphore<br/>(mutex)"]
+        wait_signal["wait() / signal()<br/>operations"]
+    end
+
+    subgraph Monitors
+        Monitor["Monitor<br/>Automatic mutual exclusion"]
+        CV["Condition Variables<br/>wait() / signal() / broadcast()"]
+        POSIX_CV["POSIX: pthread_cond_wait<br/>pthread_cond_signal"]
+    end
+
+    subgraph Solutions
+        BB_Sem["empty + full + mutex semaphores"]
+        RW_Sem["read_count mutex + rw_mutex"]
+        DP_Waiter["Waiter mutex around pickup"]
+        DP_Symmetry["Odd/even pickup order"]
+        DP_Limit["Limit 4 philosophers"]
+    end
+
+    subgraph Barrier
+        Bar["Reusable barrier<br/>pthread_cond_broadcast"]
+    end
+
+    Bounded_Buffer --> BB_Sem
+    Readers_Writers --> RW_Sem
+    Dining_Philosophers --> DP_Waiter
+    Dining_Philosophers --> DP_Symmetry
+    Dining_Philosophers --> DP_Limit
+
+    BB_Sem --> Semaphores
+    RW_Sem --> Semaphores
+    DP_Waiter --> Semaphores
+
+    Monitor --> CV
+    CV --> POSIX_CV
+    Semaphores -.- Monitor

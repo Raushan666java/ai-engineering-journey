@@ -1,0 +1,34 @@
+flowchart TD
+    A[File I/O Streams] --> B[ofstream - write]
+    A --> C[ifstream - read]
+    A --> D[fstream - read/write]
+
+    B --> E[open / close]
+    B --> F[insertion operator <<]
+    C --> E
+    C --> G[extraction operator >>]
+
+    H[File Open Modes] --> I[ios::in]
+    H --> J[ios::out]
+    H --> K[ios::app]
+    H --> L[ios::ate]
+    H --> M[ios::trunc]
+    H --> N[ios::binary]
+
+    O[Text Mode] --> P[Read/write formatted data]
+    O --> Q[Automatic newline translation]
+
+    R[Binary Mode] --> S[Read/write raw bytes]
+    R --> T[use read / write member functions]
+    R --> U[No formatting applied]
+
+    V[File Positioning] --> W[tellg / tellp]
+    V --> X[seekg / seekp]
+    X --> Y[beg / cur / end offset]
+
+    Z[Serialization] --> AA[Write object data byte-by-byte]
+    Z --> AB[Handle endianness]
+    Z --> AC[Version compatibility]
+
+    AD[Error Handling] --> AE[good / fail / bad / eof]
+    AD --> AF[Check after every operation]

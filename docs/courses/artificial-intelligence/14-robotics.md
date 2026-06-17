@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 
 ## 14.1 Robot Definition and Architecture
 
+![Robotics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch14-robotics.png)
+
 A **robot** is a physically embodied agent that perceives its environment through sensors and acts upon it through actuators. The robotic system integrates perception, planning, and control within a physical platform.
 
 The architectural components include:

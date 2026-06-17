@@ -15,6 +15,8 @@ Design patterns are reusable, battle-tested solutions to recurring design proble
 
 A pattern has four essential elements: a **name** (shared vocabulary), a **problem** (when to apply it), a **solution** (the abstraction and relationships), and **consequences** (trade-offs and results).
 
+![Design Patterns Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/11-design-patterns.png)
+
 ### Creational Patterns
 
 Creational patterns abstract the instantiation process, making a system independent of how its objects are created, composed, and represented.

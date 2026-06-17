@@ -11,6 +11,8 @@
 
 ## Theory
 
+![File System Implementation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/11-file-system-impl.png)
+
 ### File System Layout
 
 A file system is stored on a disk (or partition) in a structured layout. The exact organization varies, but most share common elements:

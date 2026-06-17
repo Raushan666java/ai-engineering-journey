@@ -1,0 +1,56 @@
+flowchart TD
+    subgraph "Event-Driven Automation"
+        ED1["Event Class<br/>OrderShipped"]
+        ED2["Listener<br/>SendNotification"]
+        ED3["Queued Listener<br/>ShouldQueue trait"]
+        ED4["Broadcast Event<br/>Reverb WebSocket"]
+    end
+
+    subgraph "Queue Pipelines"
+        QP1["Job Chaining<br/>then() chain"]
+        QP2["Job Batching<br/>batch() then()"]
+        QP3["Job Middleware<br/>Rate limiting"]
+        QP4["Unique Jobs<br/>Prevent duplicates"]
+    end
+
+    subgraph "Scheduled Tasks"
+        ST1["Kernel schedule()"]
+        ST2["Cron expressions"]
+        ST3["Overlap prevention<br/>withoutOverlapping"]
+        ST4["Multi-server<br/>onOneServer"]
+        ST5["Maintenance mode"]
+    end
+
+    subgraph "Webhook Automation"
+        WH1["Webhook controller"]
+        WH2["Signature verification"]
+        WH3["Payload processing"]
+        WH4["Async job dispatch"]
+    end
+
+    subgraph "AI Agent Automation"
+        AA1["Background agent processing"]
+        AA2["Real-time agent updates"]
+        AA3["Agent broadcast events"]
+    end
+
+    ED1 --> ED2
+    ED2 --> ED3
+    ED1 --> ED4
+
+    QP1 --> QP2 --> QP3 --> QP4
+
+    ST1 --> ST2 --> ST3 --> ST4
+
+    WH1 --> WH2 --> WH3 --> WH4
+
+    AA1 --> AA2 --> AA3
+
+    ED3 --> QP1
+    WH4 --> QP1
+
+    style ED1 fill:#4a90d9,color:#fff
+    style QP1 fill:#27ae60,color:#fff
+    style ST1 fill:#e67e22,color:#fff
+    style WH1 fill:#9b59b6,color:#fff
+    style AA1 fill:#c0392b,color:#fff

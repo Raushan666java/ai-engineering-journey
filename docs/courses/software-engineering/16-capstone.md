@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: produce a comprehens
 
 ## Capstone Overview
 
+![Capstone Project Lifecycle](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-16-capstone.png)
+
 The capstone project requires the student to produce a complete software engineering package for a specified system. The deliverables span the entire software lifecycle from planning through deployment. The recommended system for the capstone is a "Smart Campus Management System" — a platform that integrates course management, room booking, event scheduling, student services, and administrative functions for a university.
 
 Alternative systems may be proposed by the student with instructor approval. The project is intended to be completed over a period of eight to twelve weeks and should be undertaken in teams of three to five students. The deliverables are organised into seven phases corresponding to the major areas of software engineering covered in this textbook.

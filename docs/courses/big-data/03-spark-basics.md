@@ -13,10 +13,10 @@ After completing this chapter, you will be able to:
 
 Spark has a master/worker architecture. The **driver** runs the user's main program and schedules tasks on **executors** running on worker nodes.
 
-![Spark Architecture](../assets/images/diagrams/big-data/ch03-spark-architecture.png)
+![Spark Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch03-spark-architecture.png)
 
 [//]: # "Spark Execution Flow"
-![Spark Execution Flow](../assets/images/diagrams/big-data/ch03-spark-execution.png)
+![Spark Execution Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch03-spark-execution.png)
 
 ```python
 from pyspark.sql import SparkSession

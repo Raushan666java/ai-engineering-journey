@@ -1,0 +1,50 @@
+flowchart TD
+    subgraph TypeSystem["Type System Fundamentals"]
+        A["Type System<br/>(proves absence of errors)"] --> B["Basic Types<br/>(int, float, char, bool, void)"]
+        A --> C["Type Constructors"]
+        C --> C1["Array: array(I, T)"]
+        C --> C2["Function: (S₁×...×Sₙ)→T"]
+        C --> C3["Record: (name₁:T₁, ...)"]
+        C --> C4["Pointer: pointer(T)"]
+        C --> C5["Type Variable: α, β, γ"]
+    end
+
+    subgraph Equivalence["Type Equivalence"]
+        D["Type Equivalence"] --> E["Name Equivalence<br/>(same type name)"]
+        D --> F["Structural Equivalence<br/>(same tree structure)"]
+        E --> G["Hybrid Approach<br/>(name for user types,<br/>structural for built-ins)"]
+        F --> G
+    end
+
+    subgraph Checking["Type Checking Approaches"]
+        H["Type Checking"] --> I["Synthesized Checking<br/>(bottom-up, S-attributed)"]
+        H --> J["Type Inference<br/>(Hindley-Milner system)"]
+        J --> K["Pass 1: Generate<br/>equality constraints"]
+        J --> L["Pass 2: Solve via<br/>Unification"]
+    end
+
+    subgraph Unification["Unification Algorithm"]
+        M["Unification"] --> N["Match recursive<br/>structure"]
+        M --> O["Bind type variable<br/>to expression"]
+        M --> P["Occurs Check<br/>(prevent infinite regress)"]
+        M --> Q["Conflict → Type Error"]
+    end
+
+    subgraph Poly["Polymorphism"]
+        R["Polymorphism"] --> S["Parametric<br/>(generics, templates)"]
+        R --> T["Subtype<br/>(inheritance, LSP)"]
+        T --> U["Covariant: C(S) ≤ C(T)"]
+        T --> V["Contravariant: C(T) ≤ C(S)"]
+        T --> W["Function: contravariant<br/>in args, covariant<br/>in result"]
+    end
+
+    subgraph Overload["Overloading"]
+        X["Overloaded Operator/Fn"] --> Y["Phase 1: No boxing<br/>or var-arity"]
+        X --> Z["Phase 2: Add boxing"]
+        X --> AA["Phase 3: Add var-arity"]
+        Y --> AB["Select exactly one<br/>matching candidate"]
+    end
+
+    TypeSystem --> Equivalence --> Checking --> Unification
+    Checking --> Poly
+    Checking --> Overload

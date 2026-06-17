@@ -1,0 +1,36 @@
+flowchart TB
+    A["Exceptions and File I/O"] --> B["Exception Handling"]
+    A --> C["Raising Exceptions"]
+    A --> D["Custom Exceptions"]
+    A --> E["File Operations"]
+    A --> F["File Formats"]
+    A --> G["pathlib"]
+
+    B --> B1["try / except"]
+    B --> B2["Multiple except blocks"]
+    B --> B3["else clause: runs on success"]
+    B --> B4["finally: always runs"]
+    B --> B5["Bare except discouraged"]
+
+    C --> C1["raise ExceptionType"]
+    C --> C2["Re-raise with bare raise"]
+    C --> C3["Chain with raise X from Y"]
+    C --> C4["Suppress chain with from None"]
+
+    D --> D1["class MyError(Exception)"]
+    D --> D2["Add custom attributes"]
+    D --> D3["Hierarchical exceptions"]
+
+    E --> E1["open() with mode"]
+    E --> E2["with statement for auto-close"]
+    E --> E3["Read: read, readline, readlines"]
+    E --> E4["Write: write, writelines"]
+
+    F --> F1["CSV module"]
+    F --> F2["JSON module"]
+    F --> F3["pickle for serialization"]
+
+    G --> G1["Path() object-oriented paths"]
+    G --> G2["read_text / write_text"]
+    G --> G3["iterdir / glob / rglob"]
+    G --> G4["mkdir / rename / unlink"]

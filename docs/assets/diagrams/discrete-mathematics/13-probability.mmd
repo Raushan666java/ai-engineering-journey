@@ -1,0 +1,41 @@
+flowchart TD
+    DP[Discrete Probability] --> SP[Probability Spaces]
+    DP --> AXI[Axioms]
+    DP --> CP[Conditional Probability]
+    DP --> IND[Independence]
+    DP --> BAY[Bayes Theorem]
+    DP --> RV[Random Variables]
+    DP --> DIST[Discrete Distributions]
+    DP --> PM[Probabilistic Method]
+
+    SP --> S1[Sample Space S]
+    SP --> S2[Probability Function P]
+    SP --> S3[Event E subset of S]
+    SP --> S4[Uniform distribution]
+
+    AXI --> A1["P E >= 0"]
+    AXI --> A2["P S = 1"]
+    AXI --> A3["Additivity for disjoint events"]
+    AXI --> A4["P E union F = P E + P F - P E cap F"]
+
+    CP --> C1["P E given F = P E cap F / P F"]
+    CP --> C2[Multiplication rule]
+
+    IND --> N1["P E cap F = P E P F"]
+
+    BAY --> B1[Law of Total Probability]
+    B1 --> B2[Bayes Theorem reverses conditionals]
+
+    RV --> R1[Random Variable X: S to R]
+    RV --> R2[PMF: P X = a]
+    RV --> R3[Expected Value EX]
+    RV --> R4[Variance and Std Dev]
+    R3 --> R3A[Linearity of Expectation]
+
+    DIST --> D1[Bernoulli p]
+    DIST --> D2[Binomial n p]
+    DIST --> D3[Geometric p]
+    DIST --> D4[Poisson lambda]
+
+    PM --> M1[Prove existence by random construction]
+    PM --> M2[Positive probability argument]

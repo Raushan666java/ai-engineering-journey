@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Machine Learning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch09-machine-learning.png)
+
 ### What is Machine Learning?
 Machine Learning (ML) is the study of algorithms that improve their performance $P$ at some task $T$ with experience $E$.
 - **Supervised Learning**: The agent learns a function from input-output pairs (labels provided).

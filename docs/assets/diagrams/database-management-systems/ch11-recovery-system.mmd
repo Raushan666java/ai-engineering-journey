@@ -1,0 +1,42 @@
+flowchart TD
+    A[Failure Types] --> B[Transaction failure]
+    A --> C[System crash]
+    A --> D[Disk failure]
+
+    B --> E[Logical error]
+    B --> F[System error deadlock]
+
+    C --> G[Power loss / OS crash]
+    G --> H[Buffer contents lost]
+
+    D --> I[Head crash / data corruption]
+    I --> J[Requires backup restore]
+
+    K[Storage Hierarchy] --> L[Volatile memory]
+    K --> M[Stable storage]
+    K --> N[Physical database disk]
+
+    O[WAL Write-Ahead Logging] --> P[Log before data]
+    O --> Q[Undo and Redo records]
+    O --> R[Log sequence number LSN]
+
+    S[Checkpointing] --> T[Force dirty pages to disk]
+    S --> U[Truncate log]
+    S --> V[Fuzzy checkpoint]
+
+    W[ARIES Algorithm] --> X[Analysis phase]
+    W --> Y[Redo phase]
+    W --> Z[Undo phase]
+
+    X --> AA[Identify dirty pages]
+    X --> AB[Find winner / loser transactions]
+
+    Y --> AC[Reapply all changes from log]
+    Y --> AD[Idempotent replay]
+
+    Z --> AE[Undo loser transactions]
+    Z --> AF[Generate compensation log records]
+
+    AG[Remote Backup] --> AH[Log shipping]
+    AG --> AI[Replication]
+    AG --> AJ[Two-Phase Commit 2PC]

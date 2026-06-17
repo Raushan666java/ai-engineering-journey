@@ -1,3 +1,5 @@
+![Service Mesh - Istio and Envoy](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/60-interview-microservices-c.png)
+
 ### Q14: How do you deploy microservices on Kubernetes?
 
 **Answer:**

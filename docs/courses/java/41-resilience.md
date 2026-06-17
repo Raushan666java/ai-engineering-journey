@@ -16,6 +16,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![Resilience4j - Circuit Breaker, Retry, Rate Limiter, Bulkhead](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/41-resilience.png)
+
 ### Resilience4j Overview
 
 Resilience4j is a lightweight, easy-to-use fault tolerance library inspired by Netflix Hystrix. It provides modules for circuit breaking, retry, rate limiting, time limiting, and bulkheading.

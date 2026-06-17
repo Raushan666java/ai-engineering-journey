@@ -26,6 +26,8 @@ By the end of this chapter, you will be able to:
 
 ## Generics
 
+![Generics, Annotations and Reflection - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/p5-generics-reflection.png)
+
 Generics were introduced in Java 5 (JSR 14) to enable **type parameterization**. Before generics, collections held `Object` references, requiring explicit casts on every retrieval and providing zero compile-time safety. Generics shift type-checking from runtime to compile time.
 
 ### Generic Classes

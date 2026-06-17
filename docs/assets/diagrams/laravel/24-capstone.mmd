@@ -1,0 +1,64 @@
+flowchart TD
+    subgraph "Edge"
+        E1["Cloudflare CDN DNS DDoS"]
+    end
+
+    subgraph "Compute"
+        C1["Load Balancer"]
+        C2["Octane Nodes<br/>RoadRunner N instances"]
+    end
+
+    subgraph "Data Layer"
+        D1["Redis Cluster<br/>Cache Session Queue Horizon"]
+        D2["PostgreSQL + pgvector<br/>Users Teams Docs Embeddings"]
+    end
+
+    subgraph "Queue Workers"
+        Q1["Horizon Workers<br/>Docs Meetings Reviews"]
+        Q2["AI Worker Queues<br/>30-60s generation"]
+    end
+
+    subgraph "Real-Time"
+        R1["Reverb Server<br/>Presence channels"]
+    end
+
+    subgraph "AI Agent Layer"
+        A1["DocumentAnalysis Agent"]
+        A2["MeetingSummarizer Agent"]
+        A3["CodeReview Agent"]
+        A4["SearchAgent"]
+    end
+
+    subgraph "MCP Exposure"
+        M1["MCP Servers<br/>External AI tools"]
+    end
+
+    E1 --> C1
+    C1 --> C2
+
+    C2 --> D1
+    C2 --> D2
+    C2 --> R1
+    C2 --> M1
+
+    D2 --> Q1
+    D2 --> Q2
+
+    C2 --> A1
+    C2 --> A2
+    C2 --> A3
+    C2 --> A4
+
+    A1 --> M1
+    A2 --> M1
+    A3 --> M1
+    A4 --> M1
+
+    Q1 --> A1
+    Q2 --> A2
+
+    style E1 fill:#4a90d9,color:#fff
+    style C2 fill:#27ae60,color:#fff
+    style D2 fill:#9b59b6,color:#fff
+    style A1 fill:#e67e22,color:#fff
+    style M1 fill:#c0392b,color:#fff

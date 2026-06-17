@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Space Complexity Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/13-space-complexity.png)
+
 ### 13.1 Space Complexity
 
 The **space complexity** of a Turing machine is the maximum number of tape cells used on any input of length n. For a multitape TM, the space used is the sum of cells used on all work tapes (the input tape is often excluded if it's read-only).

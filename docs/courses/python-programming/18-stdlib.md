@@ -14,6 +14,8 @@ By the end of this chapter, students will be able to:
 - Write command-line interfaces with argparse
 - Implement logging in applications
 
+![Python Standard Library](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/18-stdlib.png)
+
 ## 18.1 os — Operating System Interface
 
 ```python

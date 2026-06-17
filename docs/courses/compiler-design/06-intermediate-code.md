@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Intermediate Code Generation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch06-intermediate-code.png)
+
 After completing this chapter, students will be able to: distinguish among abstract syntax trees, postfix notation, and three-address code as intermediate representations; construct quadruples, triples, and indirect triples; build directed acyclic graphs for expression sharing; and generate three-address code for common programming-language constructs including conditional statements, loops, and procedure calls.
 
 ## Theory

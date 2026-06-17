@@ -27,6 +27,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Motivation: Why Modules?
 
+![JPMS Module System Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/04-jpms-packaging.png)
+
 Java's package system, while useful for namespacing, had fundamental flaws that grew worse as the ecosystem scaled.
 
 ### 1.1 JAR Hell

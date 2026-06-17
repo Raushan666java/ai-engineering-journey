@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Red-Black Tree Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch14-red-black.png)
+
 ### Red-Black Properties
 
 A **Red-Black tree** is a self-balancing BST with one extra attribute per node: color (red or black). It satisfies:

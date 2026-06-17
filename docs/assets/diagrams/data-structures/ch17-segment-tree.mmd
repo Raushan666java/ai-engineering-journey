@@ -1,0 +1,36 @@
+flowchart TD
+    A["Segment Tree & Fenwick Tree"] --> B["Segment Tree"]
+    A --> C["Lazy Propagation"]
+    A --> D["Fenwick Tree / BIT"]
+
+    B --> B1["Binary tree over array segments"]
+    B --> B2["Root: [0, n-1]"]
+    B --> B3["Leaf: single element"]
+    B --> B4["Internal: aggregate from children"]
+    B5["Operations"]
+    B5 --> B5a["Build: O(n)"]
+    B5 --> B5b["Query: O(log n)"]
+    B5 --> B5c["Point update: O(log n)"]
+    B --> B6["Array storage: 4n space"]
+
+    C --> C1["Defers updates to children"]
+    C --> C2["Pending flag per node"]
+    C --> C3["Push on traversal"]
+    C --> C4["Range update: O(log n)"]
+
+    D --> D1["1-indexed array of size n"]
+    D --> D2["bit[i] stores range of length LSB(i)"]
+    D --> D3["LSB: i & (-i)"]
+    D4["Operations"]
+    D4 --> D4a["add(idx, delta): O(log n)"]
+    D4 --> D4b["prefixSum(idx): O(log n)"]
+    D4 --> D4c["rangeSum(l,r): O(log n)"]
+    D --> D5["Space: n (vs 4n for segtree)"]
+    D --> D6["Cannot: range min/max directly"]
+
+    Example["Segment Tree for [1,3,5,7,9,11]:
+        [0-5]=36
+       /        \
+    [0-2]=9    [3-5]=27
+    /    \      /   \
+ [0]=1 [1]=3 [2]=5 ..."] --> B

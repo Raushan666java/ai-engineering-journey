@@ -1,0 +1,45 @@
+flowchart TB
+  BATCH[Spring Batch]
+  BATCH --> JOB[Job]
+  JOB --> STEPS[Steps]
+  STEPS --> TK[Tasklet Step]
+  STEPS --> CHUNK[Chunk-Oriented Step]
+  CHUNK --> IR[ItemReader]
+  CHUNK --> IP[ItemProcessor]
+  CHUNK --> IW[ItemWriter]
+
+  BATCH --> READERS[Item Readers]
+  READERS --> FF[FlatFileItemReader]
+  READERS --> DB[JDBC / JPA Readers]
+  READERS --> MONGO[MongoDB Reader]
+  READERS --> XML[XML Reader]
+
+  BATCH --> PROC[Item Processors]
+  PROC --> VAL[Validation]
+  PROC --> CLASS[Classification]
+  PROC --> CHAIN[Chaining]
+  PROC --> COMP[Composite Processor]
+
+  BATCH --> WRITERS[Item Writers]
+  WRITERS --> FFW[FlatFileItemWriter]
+  WRITERS --> DBW[JDBC / JPA Writers]
+  WRITERS --> COMPW[Composite Writer]
+
+  BATCH --> PART[Partitioning]
+  PART --> PS[Partition Step]
+  PART --> GRID[Grid-Size]
+  PART --> PARAL[Parallel Execution]
+
+  BATCH --> RELI[Reliability]
+  RELI --> REST[Job Restart]
+  RELI --> SKIP[Skip Logic]
+  RELI --> RETRY[Retry Logic]
+
+  BATCH --> LIST[Listeners]
+  LIST --> JL[JobListener]
+  LIST --> SL[StepListener]
+  LIST --> IL[ItemListener]
+
+  BATCH --> SCHED[Scheduling]
+  SCHED --> SS[Scheduled]
+  SCHED --> OZ[Quartz]

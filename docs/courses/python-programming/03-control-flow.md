@@ -9,6 +9,8 @@ By the end of this chapter, students will be able to:
 - Understand short-circuit evaluation
 - Apply the ternary conditional expression
 
+![Control Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/03-control-flow.png)
+
 ## 3.1 The if Statement
 
 The `if` statement executes a block when a condition is truthy:

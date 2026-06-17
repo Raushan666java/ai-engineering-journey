@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the activiti
 
 ## Theory
 
+![Project Management Process](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-08-project-management.png)
+
 ### The Nature of Software Project Management
 
 Software project management is the discipline of planning, organising, monitoring, and controlling software projects. Unlike many engineering disciplines, software projects are characterised by high uncertainty, rapid technological change, and the difficulty of measuring progress. Software project management must balance the competing constraints of scope, time, cost, and quality.

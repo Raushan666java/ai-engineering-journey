@@ -13,6 +13,8 @@ After studying this chapter, students will be able to:
 
 ## 8.1 Traditional Error Handling
 
+![Exception Handling Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/08-exceptions.png)
+
 C-style error handling uses return codes, sentinel values, and `errno`:
 
 ```cpp

@@ -27,6 +27,8 @@ By the end of this chapter you should be able to:
 
 ## 1. Method Security — @EnableMethodSecurity
 
+![Method Security CORS CSRF Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/27-method-cors-csrf.png)
+
 Spring Security 6.0 introduced `@EnableMethodSecurity` as a unified replacement for the older `@EnableGlobalMethodSecurity`. It enables annotation-based authorization at the method level using Spring Expression Language (SpEL).
 
 ### 1.1 Basic Setup

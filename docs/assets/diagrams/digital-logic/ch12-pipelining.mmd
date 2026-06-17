@@ -1,0 +1,47 @@
+flowchart TD
+    subgraph Stages["Five-Stage RISC Pipeline"]
+        IF["IF: Instruction Fetch<br/>PC → instruction memory<br/>PC = PC + 4"]
+        ID["ID: Instruction Decode<br/>read register file<br/>sign-extend immediate"]
+        EX["EX: Execute<br/>ALU operation<br/>effective address calc"]
+        MEM["MEM: Memory Access<br/>load: read data memory<br/>store: write data memory"]
+        WB["WB: Write Back<br/>write ALU result or<br/>memory data to reg"]
+
+        IF -->|"IF/ID pipe reg"| ID -->|"ID/EX pipe reg"| EX -->|"EX/MEM pipe reg"| MEM -->|"MEM/WB pipe reg"| WB
+    end
+
+    subgraph Hazards["Pipeline Hazards"]
+        Structural["Structural Hazard<br/>resource contention<br/>e.g., unified I-cache + D-cache<br/>resolution: separate caches"]
+        Data["Data Hazard<br/>RAW: instruction needs<br/>result not yet computed<br/>WAR: not in in-order RISC<br/>WAW: not in in-order RISC"]
+        Control["Control Hazard<br/>branch uncertainty<br/>next PC unknown<br/>until EX stage"]
+    end
+
+    subgraph DataHaz["Data Hazard Resolutions"]
+        Stall["Stalling<br/>insert bubbles (NOPs)<br/>decreases throughput"]
+        Forward["Forwarding / Bypassing<br/>route ALU result from<br/>EX/MEM or MEM/WB<br/>directly to ALU input"]
+        CodeReorder["Code Reordering<br/>compiler separates<br/>dependent pairs"]
+    end
+
+    subgraph CtrlHaz["Control Hazard Resolutions"]
+        AssumeNT["Assume Not Taken<br/>continue sequential<br/>flush if branch taken<br/>penalty: 1 cycle"]
+        AssumeT["Assume Taken<br/>redirect fetch to target<br/>penalty: 1 cycle if not"]
+        Predict["Branch Prediction<br/>static: compiler hints<br/>dynamic: history-based<br/>BTB caches targets"]
+        Delay["Delayed Branch<br/>delay slot instruction<br/>executes regardless"]
+    end
+
+    subgraph ForwardLogic["Forwarding Unit Logic"]
+        Fwd1["ForwardA = 01: EX/MEM result<br/>when EX/MEM.RegWrite=1 AND<br/>EX/MEM.rd = ID/EX.rs"]
+        Fwd2["ForwardA = 10: MEM/WB result<br/>when MEM/WB.RegWrite=1 AND<br/>MEM/WB.rd = ID/EX.rs"]
+        Fwd3["Priority: EX/MEM over MEM/WB<br/>(closer stage = newer value)"]
+    end
+
+    subgraph Perf["Pipeline Performance"]
+        IdealSpeedup["Ideal Speedup → k stages<br/>CPI = 1 + 2p + d×c<br/>p = branch fraction<br/>d = load fraction<br/>c = RAW dependency rate"]
+        Depth["Depth Trends<br/>14-31 stages modern<br/>higher clock frequency<br/>higher misprediction penalty"]
+    end
+
+    Hazards --> Data
+    Hazards --> Control
+    Data --> DataHaz
+    Control --> CtrlHaz
+    DataHaz --> Forward
+    Forward --> ForwardLogic

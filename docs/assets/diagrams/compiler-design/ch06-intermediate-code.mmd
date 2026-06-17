@@ -1,0 +1,41 @@
+flowchart TB
+    subgraph Input["Source Program"]
+        A["Parse Tree / AST"]
+    end
+
+    subgraph IR["Intermediate Representations"]
+        direction TB
+        IR1["Graphical IRs"]
+        IR2["Linear IRs"]
+        IR1 --> AST["Abstract Syntax Tree"]
+        IR1 --> DAG["Directed Acyclic Graph"]
+        IR2 --> Postfix["Postfix Notation"]
+        IR2 --> TAC["Three-Address Code"]
+    end
+
+    subgraph TACForms["TAC Representations"]
+        direction LR
+        Quad["Quadruple: (op, arg1, arg2, result)"]
+        Trip["Triple: (op, arg1, arg2) positional"]
+        Indirect["Indirect Triple: pointer list"]
+    end
+
+    subgraph Instr["TAC Instruction Types"]
+        Asgn["Assignment: x = y op z"]
+        UncondJ["Unconditional: goto L"]
+        CondJ["Conditional: if x relop y goto L"]
+        Proc["Procedure: param x / call p,n / return y"]
+        Index["Indexed: x = y[i] / x[i] = y"]
+        Ptr["Pointer: x = &y / x = *y / *x = y"]
+    end
+
+    subgraph Control["Control Flow Patterns"]
+        While["While Loop: test at top, branch to body"]
+        IfElse["If-Then-Else: conditional jump split"]
+    end
+
+    A --> IR
+    TAC --> TACForms
+    TAC --> Instr
+    TAC --> Control
+    DAG --> CSE["Common Subexpression Elimination"]

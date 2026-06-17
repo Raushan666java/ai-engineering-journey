@@ -19,6 +19,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Kubernetes Architecture
 
+![Kubernetes Deployment - Pods, Services, Helm, HPA](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/53-kubernetes.png)
+
 ```
 ┌─────────────────────────────────────────────────────┐
 │                    Control Plane                      │

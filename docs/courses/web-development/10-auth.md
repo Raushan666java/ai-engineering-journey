@@ -12,6 +12,8 @@ By the end of this chapter, you will be able to:
 
 ## 10.1 Authentication vs Authorization
 
+![Authentication and Authorization Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/10-authentication.png)
+
 **Authentication** verifies who a user is (identity). **Authorization** determines what they can access (permissions).
 
 ```typescript

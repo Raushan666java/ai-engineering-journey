@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Segment Tree & Fenwick Tree Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch17-segment-tree.png)
+
 ### Segment Tree
 
 A **segment tree** is a binary tree that stores interval information. Each node represents a segment \([l, r]\) of the array. The root covers \([0, n-1]\). Each leaf covers a single element. Internal nodes store aggregate information (sum, min, max, etc.) computed from their children.

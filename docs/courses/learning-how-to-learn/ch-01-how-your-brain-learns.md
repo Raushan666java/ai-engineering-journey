@@ -1,6 +1,6 @@
-# Chapter 1: How Your Brain Learns
+﻿# Chapter 1: How Your Brain Learns
 
-This chapter covers the brain's two learning modes — focused and diffuse — and how switching between them accelerates understanding. You'll learn about chunking (how working memory's 4-slot limit shapes studying), the difference between procedural and declarative knowledge, and why sleep is essential for memory consolidation. By the end, you'll have a practical framework for learning any technical subject more effectively.
+This chapter covers the brain's two learning modes â€” focused and diffuse â€” and how switching between them accelerates understanding. You'll learn about chunking (how working memory's 4-slot limit shapes studying), the difference between procedural and declarative knowledge, and why sleep is essential for memory consolidation. By the end, you'll have a practical framework for learning any technical subject more effectively.
 
 ## Learning Objectives
 
@@ -20,7 +20,7 @@ This chapter covers the brain's two learning modes — focused and diffuse — a
 
 **Answer:** Focused mode is concentrated, attentive thinking on a specific problem using well-worn neural pathways. Diffuse mode is a relaxed, big-picture state where your brain makes remote associations. You need both.
 
-When you sit down to solve a subnetting problem from `docs/courses/gate-cs-preparation/09-computer-networks.md` — say, finding the network address for `192.168.15.42/27` — you engage focused mode. You apply the formula: `/27` means 255.255.255.224, block size = 32, network address = `192.168.15.32`. Your brain fires precise, practiced circuits.
+When you sit down to solve a subnetting problem from `docs/courses/gate-cs-preparation/09-computer-networks.md` â€” say, finding the network address for `192.168.15.42/27` â€” you engage focused mode. You apply the formula: `/27` means 255.255.255.224, block size = 32, network address = `192.168.15.32`. Your brain fires precise, practiced circuits.
 
 But if you stare at the problem for 20 minutes and still can't figure out why the broadcast address is `192.168.15.63`, you need diffuse mode. Get up. Walk. Shower. Your brain's default mode network continues working subconsciously, making remote connections. Many students report the answer arrives while brushing their teeth.
 
@@ -48,7 +48,7 @@ public class SubnetCalculator {
 
 ### Q2: How do you know when to switch between focused and diffuse modes?
 
-**Answer:** The signal is **frustration**. If you've been working on a problem for 15-20 minutes and feel stuck, confused, or annoyed — that's your cue to switch to diffuse mode.
+**Answer:** The signal is **frustration**. If you've been working on a problem for 15-20 minutes and feel stuck, confused, or annoyed â€” that's your cue to switch to diffuse mode.
 
 In `docs/courses/placement-preparation/02-dsa-problem-bank.md`, Q37 asks you to find the median of two sorted arrays in O(log(min(n,m))). This is a hard problem. If you've sketched three approaches (merge-and-find, two-pointer, binary search on the smaller array) and all have flaws, continuing to stare at the screen yields diminishing returns. Your mental "chalkboard" is full.
 
@@ -62,13 +62,13 @@ Stop. Take a walk. Let your brain's diffuse networks re-organize what you've lea
 
 **Answer:** Working memory can hold roughly 4 discrete chunks of information simultaneously (the "magic number 4"). Each chunk is a package of related concepts. To learn complex material, you must compress information into larger chunks.
 
-Look at the Java course structure in `docs/courses/java/index.md`. The course has 13 parts with 66+ chapters. If you tried to hold "Part III: Spring Boot Fundamentals" as 6 separate chapters (DI, auto-configuration, properties, Actuator, logging, testing), that's 6 items — over the limit. Instead, chunk it:
+Look at the Java course structure in `docs/courses/java/index.md`. The course has 13 parts with 66+ chapters. If you tried to hold "Part III: Spring Boot Fundamentals" as 6 separate chapters (DI, auto-configuration, properties, Actuator, logging, testing), that's 6 items â€” over the limit. Instead, chunk it:
 
 1. **Spring Boot Core** (DI, auto-config, properties, profiles)
 2. **Actuator & Observability** (Actuator, logging, metrics)
 3. **Testing** (unit, integration, security tests)
 
-Now it's 3 chunks. Each chunk is a rich neural pattern containing sub-knowledge, but your conscious mind sees just 3 items — well within limits.
+Now it's 3 chunks. Each chunk is a rich neural pattern containing sub-knowledge, but your conscious mind sees just 3 items â€” well within limits.
 
 ```java
 public class ChunkExample {
@@ -77,7 +77,7 @@ public class ChunkExample {
     @ComponentScan
     public class FragmentedApp { }
 
-    // After: 1 chunk — "@SpringBootApplication does it all"
+    // After: 1 chunk â€” "@SpringBootApplication does it all"
     @SpringBootApplication  // = @Config + @EnableAutoConfig + @ComponentScan
     public class ChunkedApp { }
 }
@@ -93,9 +93,9 @@ public class ChunkExample {
 
 Take "Binary Search Tree" from `docs/courses/data-structures/09-bst.md`. Here's how to chunk it:
 
-**Step 1 — Focus:** Read the BST property: left subtree < node < right subtree. Write it down.
-**Step 2 — Understand:** Trace through insert(50), insert(30), insert(80), insert(20), insert(40). Draw each step. Why does 20 go left of 30? Why does 40 go right of 30? Understand the recursive structure.
-**Step 3 — Context:** When do you use a BST vs a hash table? BST gives ordered traversal (sorted order), floor/ceiling, range queries. Hash table gives O(1) lookup but no order.
+**Step 1 â€” Focus:** Read the BST property: left subtree < node < right subtree. Write it down.
+**Step 2 â€” Understand:** Trace through insert(50), insert(30), insert(80), insert(20), insert(40). Draw each step. Why does 20 go left of 30? Why does 40 go right of 30? Understand the recursive structure.
+**Step 3 â€” Context:** When do you use a BST vs a hash table? BST gives ordered traversal (sorted order), floor/ceiling, range queries. Hash table gives O(1) lookup but no order.
 
 ```java
 class BST {
@@ -121,10 +121,10 @@ class BST {
 
 The OSI 7-layer model from `docs/courses/gate-cs-preparation/09-computer-networks.md` (section 1) is a classic example. Instead of memorizing 7 separate layers, compress them into 4 functional groups:
 
-1. **Media layers** (Physical + Data Link) — getting bits from A to B on the same wire
-2. **Network layer** — routing across different networks (IP)
-3. **Transport layer** — reliable end-to-end delivery (TCP)
-4. **Application layers** (Session + Presentation + Application) — what the user sees
+1. **Media layers** (Physical + Data Link) â€” getting bits from A to B on the same wire
+2. **Network layer** â€” routing across different networks (IP)
+3. **Transport layer** â€” reliable end-to-end delivery (TCP)
+4. **Application layers** (Session + Presentation + Application) â€” what the user sees
 
 Now your brain holds 4 chunks instead of 7. Each chunk can expand when needed. If a GATE question asks about "which layer handles encryption," you zoom into the Application chunk and recall: Presentation layer (Layer 6).
 
@@ -136,7 +136,7 @@ public enum OsiLayer {
     APPLICATION(7, "Data");
 
     // Chunk: "Please Do Not Throw Sausage Pizza Away"
-    // Better chunk: Media(1-2) → Net(3) → Transport(4) → App(5-7)
+    // Better chunk: Media(1-2) â†’ Net(3) â†’ Transport(4) â†’ App(5-7)
 }
 ```
 
@@ -146,7 +146,7 @@ public enum OsiLayer {
 
 ### Q6: What's the difference between procedural and declarative knowledge, and why does it matter?
 
-**Answer:** Declarative knowledge is "knowing *that*" — facts, concepts, theories. Procedural knowledge is "knowing *how*" — the ability to execute a process. Learning requires both, but they live in different memory systems.
+**Answer:** Declarative knowledge is "knowing *that*" â€” facts, concepts, theories. Procedural knowledge is "knowing *how*" â€” the ability to execute a process. Learning requires both, but they live in different memory systems.
 
 From `docs/courses/placement-preparation/02-dsa-problem-bank.md`: you can **declare** that recursion has a base case and a recursive case (declarative). But **procedurally** writing a recursive DFS on a tree requires practice:
 
@@ -161,7 +161,7 @@ void dfs(TreeNode node) {
 }
 ```
 
-Many students read the code and think "I understand" — that's declarative. But ask them to write it from memory and they freeze. The illusion of competence (Q9) comes from confusing declarative and procedural knowledge. You only truly know something when you can *do* it.
+Many students read the code and think "I understand" â€” that's declarative. But ask them to write it from memory and they freeze. The illusion of competence (Q9) comes from confusing declarative and procedural knowledge. You only truly know something when you can *do* it.
 
 **Try This:** Read the explanation of BFS in `docs/courses/data-structures/12-graph-traversals.md` (declarative). Then close the file and implement BFS from memory (procedural). Open it again and compare. Repeat until you can write it perfectly.
 
@@ -169,14 +169,14 @@ Many students read the code and think "I understand" — that's declarative. But
 
 ### Q7: How does sleep affect memory consolidation?
 
-**Answer:** Sleep is when your brain moves information from short-term (hippocampus) to long-term (neocortex) memory. Without adequate sleep, learning that happened during the day is not consolidated — it's like saving a file without clicking "Save."
+**Answer:** Sleep is when your brain moves information from short-term (hippocampus) to long-term (neocortex) memory. Without adequate sleep, learning that happened during the day is not consolidated â€” it's like saving a file without clicking "Save."
 
 Before a GATE exam, many students pull all-nighters studying `docs/courses/gate-cs-preparation/07-operating-systems.md`. This is counterproductive. The formulas for CPU scheduling (TAT, WT, RT from the Cheat Sheet) need sleep to consolidate. If you study them at 10 PM and sleep 8 hours, you'll recall them better at 9 AM than if you studied until 4 AM.
 
 **Sleep stages matter:** Stage 3 (deep sleep) strengthens factual knowledge. REM sleep integrates procedural skills and creative problem-solving. Both are essential. A 7-8 hour sleep cycle contains 4-5 full cycles.
 
 ```java
-// Your brain during sleep ≈ background database backup
+// Your brain during sleep â‰ˆ background database backup
 public class MemoryConsolidation {
     // During wake: buffer writes (hippocampus)
     Map<Concept, String> shortTerm = new HashMap<>();
@@ -202,9 +202,9 @@ public class MemoryConsolidation {
 
 The core mechanism is **Hebbian plasticity**, summarized as "neurons that fire together wire together." When you repeatedly practice a skill, the synapses between the involved neurons strengthen through a process called **long-term potentiation (LTP)**. Think of it like a footpath in a forest: the first time you walk through, there's barely a trace. After 100 walks, a clear trail exists. After 1,000, it's a road.
 
-At the molecular level, LTP involves glutamate receptors (AMPA and NMDA) on the post-synaptic neuron increasing in density and sensitivity. More receptors means a stronger signal passes more easily. This is synapse strengthening — your brain literally grows more hardware for frequently used circuits.
+At the molecular level, LTP involves glutamate receptors (AMPA and NMDA) on the post-synaptic neuron increasing in density and sensitivity. More receptors means a stronger signal passes more easily. This is synapse strengthening â€” your brain literally grows more hardware for frequently used circuits.
 
-This is why **practice is not just mental** — it's structural. Every time you solve a recursion problem, you are physically changing the dendrites and spines in your prefrontal cortex. The myelin sheaths around frequently fired axons thicken, increasing signal speed by up to 100x. This is why experts can spot patterns novices miss: their neural infrastructure is physically different.
+This is why **practice is not just mental** â€” it's structural. Every time you solve a recursion problem, you are physically changing the dendrites and spines in your prefrontal cortex. The myelin sheaths around frequently fired axons thicken, increasing signal speed by up to 100x. This is why experts can spot patterns novices miss: their neural infrastructure is physically different.
 
 ```java
 // Neural pathways behave like JIT-compiled methods
@@ -218,30 +218,28 @@ public class NeuralJITAnalogy {
 
     // After 10,000 invocations: JIT-compiled (expert)
     // The JIT replaces the method call with inlined, optimized
-    // native code — same as neural pathways becoming myelinated
+    // native code â€” same as neural pathways becoming myelinated
     // fast-track routes after repeated practice.
 }
 ```
 
 **Key implication for students:** Your intelligence is not fixed. Every hour of deliberate practice literally grows your neural capacity. The growth is slow (measurable over days and weeks, not minutes), but it compounds. The student who practices consistently for 30 days will have structurally different brains from the one who crammed for 2 days.
 
-**Try This:** Pick one skill you want to improve — writing recursive functions, using Git, or debugging. Practice it for 15 minutes every day for the next 3 days. At the end of day 3, compare your fluency to day 1. Note the specific improvements in speed, accuracy, and confidence. That's your brain rewiring itself.
+**Try This:** Pick one skill you want to improve â€” writing recursive functions, using Git, or debugging. Practice it for 15 minutes every day for the next 3 days. At the end of day 3, compare your fluency to day 1. Note the specific improvements in speed, accuracy, and confidence. That's your brain rewiring itself.
 
 ---
 
-![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d041.png)
 
 ### Q9: What is the Default Mode Network and how does it support diffuse thinking?
 
-**Answer:** The Default Mode Network (DMN) is a network of brain regions — including the medial prefrontal cortex, posterior cingulate cortex, and angular gyrus — that is most active when you are not focused on any external task. It is the neural basis of diffuse mode.
+**Answer:** The Default Mode Network (DMN) is a network of brain regions â€” including the medial prefrontal cortex, posterior cingulate cortex, and angular gyrus â€” that is most active when you are not focused on any external task. It is the neural basis of diffuse mode.
 
 When you daydream, shower, walk, or stare out a window, your DMN lights up. It connects disparate pieces of knowledge stored across your cortex, forming associations your focused mode would never make. This is why your best ideas arrive when you are not trying.
 
-![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d002.png)
 
 The DMN has been confirmed through fMRI studies showing that during mind-wandering, the same regions activated during creative problem-solving show elevated activity. When you are stuck on a hard DSA problem from `02-dsa-problem-bank.md` and decide to take a shower, the DMN is actively cross-referencing your recent study material with older, related knowledge stored in long-term memory.
 
-**The insight paradox:** The harder you try to have a creative insight, the less likely it is to arrive. Insight requires DMN activation, but the DMN is suppressed when you deliberately focus. This is why walk-away time is not wasted time — it's neurobiologically essential.
+**The insight paradox:** The harder you try to have a creative insight, the less likely it is to arrive. Insight requires DMN activation, but the DMN is suppressed when you deliberately focus. This is why walk-away time is not wasted time â€” it's neurobiologically essential.
 
 ```java
 // DMN as a background indexer
@@ -249,7 +247,7 @@ public class DefaultModeNetwork {
     private Set<Chunk> longTermMemory = new HashSet<>();
     private List<Association> insights = new ArrayList<>();
 
-    // Runs when you're NOT focusing — like Lucene's near-realtime search
+    // Runs when you're NOT focusing â€” like Lucene's near-realtime search
     void idleCycle(List<RecentStudy> today) {
         for (var study : today) {
             for (var memory : longTermMemory) {
@@ -268,7 +266,7 @@ public class DefaultModeNetwork {
 }
 ```
 
-**Try This:** Pick a problem you've been stuck on for more than an hour. Stop working on it entirely. Go for a 15-minute walk with no music, no phone, no podcasts — just your thoughts. Bring a small notebook. When an idea surfaces (and it will), write it down immediately. Notice that the insight emerged only when you stopped trying.
+**Try This:** Pick a problem you've been stuck on for more than an hour. Stop working on it entirely. Go for a 15-minute walk with no music, no phone, no podcasts â€” just your thoughts. Bring a small notebook. When an idea surfaces (and it will), write it down immediately. Notice that the insight emerged only when you stopped trying.
 
 ---
 
@@ -278,11 +276,11 @@ public class DefaultModeNetwork {
 
 There are three types of cognitive load:
 
-**1. Intrinsic Load** — the inherent complexity of the material itself. A problem with 5 interacting variables has higher intrinsic load than a problem with 2 independent variables. Intrinsic load cannot be eliminated, but it can be managed by sequencing prerequisites (learn arrays before hash tables, hash tables before tries).
+**1. Intrinsic Load** â€” the inherent complexity of the material itself. A problem with 5 interacting variables has higher intrinsic load than a problem with 2 independent variables. Intrinsic load cannot be eliminated, but it can be managed by sequencing prerequisites (learn arrays before hash tables, hash tables before tries).
 
-**2. Extraneous Load** — unnecessary cognitive demands caused by poor presentation. Cluttered slides, irrelevant diagrams, noisy study environments, and ambiguous instructions all add extraneous load. This load is pure waste and should be minimized to zero.
+**2. Extraneous Load** â€” unnecessary cognitive demands caused by poor presentation. Cluttered slides, irrelevant diagrams, noisy study environments, and ambiguous instructions all add extraneous load. This load is pure waste and should be minimized to zero.
 
-**3. Germane Load** — the productive mental effort devoted to building schemas (chunks). Active recall, elaboration, and self-explanation increase germane load. This is the "good" cognitive load that leads to learning.
+**3. Germane Load** â€” the productive mental effort devoted to building schemas (chunks). Active recall, elaboration, and self-explanation increase germane load. This is the "good" cognitive load that leads to learning.
 
 ```java
 // Working memory as a 4-slot register file
@@ -296,7 +294,7 @@ public class WorkingMemory {
         int totalLoad = intrinsicLoad + extraneousLoad;
 
         if (totalLoad > MAX_CHUNKS) {
-            // Cognitive overload — no learning happens
+            // Cognitive overload â€” no learning happens
             return LearningOutcome.OVERLOAD;
         }
 
@@ -312,31 +310,30 @@ public class WorkingMemory {
 | Load Type | Strategy | Example |
 |-----------|----------|---------|
 | Intrinsic | Prerequisites first | Study arrays before ArrayLists, then priority queues |
-| Intrinsic | Progressive learning | Solve easy → medium → hard, not hard first |
+| Intrinsic | Progressive learning | Solve easy â†’ medium â†’ hard, not hard first |
 | Extraneous | Clean notes | Use consistent formatting, one idea per line |
 | Extraneous | No distractions | Phone in another room, notifications off |
 | Germane | Active recall | Close the book and write what you remember |
 | Germane | Elaboration | Explain the concept in your own words |
 
-From `docs/courses/placement-preparation/02-dsa-problem-bank.md`, a hard problem like Q37 (median of two sorted arrays) has high intrinsic load because it involves two arrays, log complexity constraint, and partition logic. If you study it in a noisy café (high extraneous load), you will hit cognitive overload. Study it in a quiet room after reviewing binary search fundamentals (low intrinsic + low extraneous = room for germane processing).
+From `docs/courses/placement-preparation/02-dsa-problem-bank.md`, a hard problem like Q37 (median of two sorted arrays) has high intrinsic load because it involves two arrays, log complexity constraint, and partition logic. If you study it in a noisy cafÃ© (high extraneous load), you will hit cognitive overload. Study it in a quiet room after reviewing binary search fundamentals (low intrinsic + low extraneous = room for germane processing).
 
 **Try This:** Take a topic you find difficult from `02-dsa-problem-bank.md`. Identify the intrinsic load (what prerequisites are you missing?), the extraneous load (what clutter can you remove from your notes?), and the germane load (what active recall strategy will you use?). Write all three down before your next study session.
 
 ---
 
-![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d003.png)
 
 ### Q11: What are the different types of attention and how do they affect learning?
 
-**Answer:** Attention is not a single ability — it has multiple subtypes, each with different implications for learning.
+**Answer:** Attention is not a single ability â€” it has multiple subtypes, each with different implications for learning.
 
-**Selective attention** — the ability to focus on one input while ignoring others. This is what you use when studying a single chapter. Selective attention operates like a **spotlight**: you can direct it voluntarily (top-down, goal-driven) or it can be captured by salient stimuli (bottom-up, like a phone notification).
+**Selective attention** â€” the ability to focus on one input while ignoring others. This is what you use when studying a single chapter. Selective attention operates like a **spotlight**: you can direct it voluntarily (top-down, goal-driven) or it can be captured by salient stimuli (bottom-up, like a phone notification).
 
-**Sustained attention (vigilance)** — the ability to maintain focus over time. The attention spotlight naturally decays after 15-20 minutes of continuous focus. After this point, errors increase and comprehension drops. This is why the **Pomodoro technique** (25-minute focused intervals) aligns with your brain's natural attention cycle.
+**Sustained attention (vigilance)** â€” the ability to maintain focus over time. The attention spotlight naturally decays after 15-20 minutes of continuous focus. After this point, errors increase and comprehension drops. This is why the **Pomodoro technique** (25-minute focused intervals) aligns with your brain's natural attention cycle.
 
-**Divided attention** — trying to focus on multiple inputs simultaneously. Contrary to popular belief, divided attention does not exist as true multitasking. What you are actually doing is rapid task-switching, with significant switching costs.
+**Divided attention** â€” trying to focus on multiple inputs simultaneously. Contrary to popular belief, divided attention does not exist as true multitasking. What you are actually doing is rapid task-switching, with significant switching costs.
 
-**Executive attention** — managing competing responses and monitoring for errors. This is your brain's "air traffic control," mediated by the anterior cingulate cortex and prefrontal cortex. When you decide to study instead of scrolling social media, executive attention is doing the work.
+**Executive attention** â€” managing competing responses and monitoring for errors. This is your brain's "air traffic control," mediated by the anterior cingulate cortex and prefrontal cortex. When you decide to study instead of scrolling social media, executive attention is doing the work.
 
 ```java
 // The attention spotlight model
@@ -376,18 +373,18 @@ public class AttentionSystem {
 
 The **task-switching cost** has been measured at up to 40% loss in productive time. When you switch from solving a DSA problem to answering a text message, several things happen:
 
-1. **Goal shifting** — your brain must consciously disengage from the current goal ("find the partition point in binary search")
-2. **Rule activation** — your brain must load the rules for the new task ("reply to this message about dinner plans")
-3. **Attention residue** — after switching back, your brain still has active neural representations of the previous task, competing for working memory
+1. **Goal shifting** â€” your brain must consciously disengage from the current goal ("find the partition point in binary search")
+2. **Rule activation** â€” your brain must load the rules for the new task ("reply to this message about dinner plans")
+3. **Attention residue** â€” after switching back, your brain still has active neural representations of the previous task, competing for working memory
 
 The **Yerkes-Dodson law** describes the relationship between arousal and performance as an inverted-U curve. Moderate arousal (mild stress, focused attention) produces peak performance. Low arousal (boredom) and high arousal (anxiety) both degrade performance. Multitasking artificially increases arousal beyond the optimal zone, pushing you down the far side of the curve.
 
 ```java
-// Context-switch overhead in OS scheduling ≈ task-switching in the brain
+// Context-switch overhead in OS scheduling â‰ˆ task-switching in the brain
 public class TaskScheduler {
     private PCB currentProcess;
 
-    // Context switch: save state, load state — pure overhead
+    // Context switch: save state, load state â€” pure overhead
     void contextSwitch(PCB nextProcess) {
         // Save current registers (what you were thinking)
         saveRegisters(currentProcess);
@@ -423,13 +420,13 @@ public class TaskScheduler {
 
 ### Q13: How does stress (cortisol) affect learning and memory?
 
-**Answer:** Stress affects learning through the hormone cortisol, which binds to receptors throughout the brain — especially the hippocampus, amygdala, and prefrontal cortex. The relationship follows the **Yerkes-Dodson inverted-U curve**.
+**Answer:** Stress affects learning through the hormone cortisol, which binds to receptors throughout the brain â€” especially the hippocampus, amygdala, and prefrontal cortex. The relationship follows the **Yerkes-Dodson inverted-U curve**.
 
-**Acute stress (optimal zone):** Mild to moderate stress before an exam improves performance. Cortisol enhances memory consolidation: events encoded under moderate emotional arousal are remembered more vividly. This is why a little nervousness before an interview or exam is actually helpful — it sharpens focus and boosts memory encoding.
+**Acute stress (optimal zone):** Mild to moderate stress before an exam improves performance. Cortisol enhances memory consolidation: events encoded under moderate emotional arousal are remembered more vividly. This is why a little nervousness before an interview or exam is actually helpful â€” it sharpens focus and boosts memory encoding.
 
 **Acute stress (high zone):** High stress impairs the prefrontal cortex, which handles executive functions like planning, reasoning, and impulse control. This is why you "blank out" during high-pressure exams. The working memory slots (normally 4) can drop to 1-2.
 
-**Chronic stress (toxic zone):** Prolonged stress damages the hippocampus — the brain's primary memory-encoding structure. High cortisol levels over weeks and months actually shrink hippocampal neurons and reduce neurogenesis (growth of new neurons). This is measurable as reduced volume on MRI scans. Chronic stress also enlarges the amygdala, making you more reactive to future stressors — a feedback loop that makes studying increasingly difficult.
+**Chronic stress (toxic zone):** Prolonged stress damages the hippocampus â€” the brain's primary memory-encoding structure. High cortisol levels over weeks and months actually shrink hippocampal neurons and reduce neurogenesis (growth of new neurons). This is measurable as reduced volume on MRI scans. Chronic stress also enlarges the amygdala, making you more reactive to future stressors â€” a feedback loop that makes studying increasingly difficult.
 
 ```java
 public class StressResponse {
@@ -437,7 +434,7 @@ public class StressResponse {
 
     public CortisolLevel respondToExam(Preparation prep) {
         if (!prep.isAdequate()) {
-            // No preparation → high cortisol → impaired recall
+            // No preparation â†’ high cortisol â†’ impaired recall
             return new CortisolLevel(HIGH, Effect.IMPAIRS_PFC);
         }
 
@@ -473,9 +470,9 @@ public class StressResponse {
 
 ### Q14: How does exercise boost neurogenesis and learning?
 
-**Answer:** Exercise is one of the most powerful tools for enhancing learning — not indirectly through stress reduction, but through direct biological effects on the brain.
+**Answer:** Exercise is one of the most powerful tools for enhancing learning â€” not indirectly through stress reduction, but through direct biological effects on the brain.
 
-**BDNF (Brain-Derived Neurotrophic Factor):** Exercise triggers the release of BDNF, a protein that acts like "fertilizer" for brain cells. BDNF supports the survival of existing neurons and encourages the growth and differentiation of new neurons (neurogenesis) — especially in the hippocampus, the brain's memory center.
+**BDNF (Brain-Derived Neurotrophic Factor):** Exercise triggers the release of BDNF, a protein that acts like "fertilizer" for brain cells. BDNF supports the survival of existing neurons and encourages the growth and differentiation of new neurons (neurogenesis) â€” especially in the hippocampus, the brain's memory center.
 
 **Aerobic exercise and hippocampal volume:** Studies using MRI have shown that 6 months of aerobic exercise (3x per week, 30-40 minutes) increases hippocampal volume by 2-5%. This is significant because the hippocampus typically shrinks with age and chronic stress. Exercise literally reverses this decline.
 
@@ -521,7 +518,7 @@ public class ExerciseAndLearning {
 
 2. **Afternoon slump:** When you feel drowsy after lunch, instead of coffee, do a 10-minute brisk walk. The walk increases blood flow to the brain more effectively than caffeine for overcoming the post-prandial dip.
 
-3. **Post-study consolidation:** After finishing a study session, do light activity (walking, stretching) for 15-20 minutes. During this period, your hippocampus replays and consolidates what you just studied — and the low-intensity movement does not interfere with this process the way phone checking would.
+3. **Post-study consolidation:** After finishing a study session, do light activity (walking, stretching) for 15-20 minutes. During this period, your hippocampus replays and consolidates what you just studied â€” and the low-intensity movement does not interfere with this process the way phone checking would.
 
 **Try This:** Tomorrow, before your study session, do 15-20 minutes of cardio (jogging, jumping jacks, cycling, or a brisk walk that gets your heart rate up). Immediately after, study the hardest topic on your list for 25 minutes. Compare your focus and retention to a day when you studied without pre-exercise. Most students report noticeably sharper concentration.
 
@@ -603,7 +600,7 @@ public class CircadianStudyPlanner {
 
 ### Q16: How does sleep architecture work and how can you optimize it for learning?
 
-**Answer:** Sleep is not a single state — it is a structured cycle of stages that repeat approximately every 90 minutes throughout the night. Understanding this architecture lets you optimize both the quantity and quality of your sleep for learning.
+**Answer:** Sleep is not a single state â€” it is a structured cycle of stages that repeat approximately every 90 minutes throughout the night. Understanding this architecture lets you optimize both the quantity and quality of your sleep for learning.
 
 **The four sleep stages:**
 
@@ -614,14 +611,13 @@ public class CircadianStudyPlanner {
 | N3 | Deep sleep (slow-wave) | 20-40 min | Delta waves, hardest to wake from | Declarative memory consolidation (facts, concepts) |
 | REM | Dream sleep | 10-20 min (increases later in night) | Rapid eye movement, brain nearly as active as waking | Procedural memory, creative insight, emotional regulation |
 
-![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d004.png)
 
 **The 90-minute cycle pattern:** In a 7-8 hour night, you go through 4-5 complete cycles. The composition changes across the night:
 
-- **Early cycles (hours 1-3):** More N3 deep sleep (declarative memory consolidation — facts, formulas, concepts). This is critical for studying material from `docs/courses/gate-cs-preparation/07-operating-systems.md`.
+- **Early cycles (hours 1-3):** More N3 deep sleep (declarative memory consolidation â€” facts, formulas, concepts). This is critical for studying material from `docs/courses/gate-cs-preparation/07-operating-systems.md`.
 - **Late cycles (hours 5-8):** More REM sleep (procedural memory, creative insight). This is critical for problem-solving skills and integrating knowledge.
 
-**The consequence of short sleep (5-6 hours):** You lose the late cycles, which are predominantly REM. You lose the creative integration and procedural learning. You can still recall facts (those consolidated in early cycles), but you struggle to apply them creatively to novel problems — exactly the skill tested in competitive exams and interviews.
+**The consequence of short sleep (5-6 hours):** You lose the late cycles, which are predominantly REM. You lose the creative integration and procedural learning. You can still recall facts (those consolidated in early cycles), but you struggle to apply them creatively to novel problems â€” exactly the skill tested in competitive exams and interviews.
 
 ```java
 // Sleep cycles as database checkpointing + log replay
@@ -663,25 +659,23 @@ public class SleepArchitecture {
 
 | Strategy | Why It Works | Implementation |
 |----------|-------------|----------------|
-| Consistent sleep/wake time | Entrains circadian rhythm, improves sleep quality | Same bedtime ± 30 min, even weekends |
+| Consistent sleep/wake time | Entrains circadian rhythm, improves sleep quality | Same bedtime Â± 30 min, even weekends |
 | 7-9 hours for adults | Ensures 4-5 full cycles with sufficient REM | Count backward from wake time |
 | No screens 60 min before bed | Blue light suppresses melatonin by 50%+ | Read physical book, review paper notes |
-| Cool room (65-68°F / 18-20°C) | Core body temperature drop triggers sleep | Adjust thermostat or use lighter blankets |
+| Cool room (65-68Â°F / 18-20Â°C) | Core body temperature drop triggers sleep | Adjust thermostat or use lighter blankets |
 | No caffeine after 2 PM | Caffeine half-life is 5-6 hours | Switch to decaf or herbal tea |
 | Study before bed, then sleep | Memory consolidation strongest for pre-sleep study | Review key concepts, no new heavy material |
 | Wake without alarm (if possible) | Alarm during deep sleep causes sleep inertia | Use sunrise alarm or consistent schedule |
 
 **The pre-sleep study protocol:** Spend 15-20 minutes reviewing material right before bed. Do not check your phone afterward (the blue light and dopamine stimulation interfere with sleep onset). Go directly to sleep. Your first sleep cycle (rich in N3 deep sleep) will prioritize consolidating the material you reviewed last. This is more effective than morning review for declarative memory.
 
-**Try This:** Tonight, implement the pre-sleep study protocol. Review a topic from `docs/courses/gate-cs-preparation/07-operating-systems.md` (the CPU scheduling formulas section) for 20 minutes before bed. Turn off all screens. Sleep 7-8 hours. In the morning, without re-reading, write down everything you remember about CPU scheduling. Then check your notes. Most students recall 60-80% of the material with zero morning review — significantly better than studying in the morning and testing the same day.
+**Try This:** Tonight, implement the pre-sleep study protocol. Review a topic from `docs/courses/gate-cs-preparation/07-operating-systems.md` (the CPU scheduling formulas section) for 20 minutes before bed. Turn off all screens. Sleep 7-8 hours. In the morning, without re-reading, write down everything you remember about CPU scheduling. Then check your notes. Most students recall 60-80% of the material with zero morning review â€” significantly better than studying in the morning and testing the same day.
 
 ---
 
-![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d005.png)
 
 ---
 
-![Diagram](../assets/images/diagrams/ch-01-how-your-brain-learns_d006.png)
 
 ### Self-Assessment Quiz
 
@@ -703,7 +697,7 @@ a) Dopamine release b) Long-term potentiation (LTP) c) Serotonin reuptake d) Cor
 
 **5. Which type of cognitive load should be minimized to zero?**
 a) Intrinsic load b) Extraneous load c) Germane load d) Working load
-**Answer:** b) Extraneous load. Extraneous load is caused by poor presentation or environmental distractions and contributes nothing to learning — pure waste.
+**Answer:** b) Extraneous load. Extraneous load is caused by poor presentation or environmental distractions and contributes nothing to learning â€” pure waste.
 
 **6. How long does it take on average to fully return focus to a primary task after an interruption?**
 a) 30 seconds b) 5 minutes c) 23 minutes d) 2 hours
@@ -731,7 +725,7 @@ a) Sleep deprivation reduces working memory capacity b) Memory consolidation req
 
 - Focused mode uses concentrated attention on well-worn neural pathways; diffuse mode uses relaxed big-picture thinking for remote associations
 - Frustration after 15-20 minutes signals it's time to switch from focused to diffuse mode
-- Working memory holds roughly 4 chunks — build chunks through focus, understanding, and practice for context
+- Working memory holds roughly 4 chunks â€” build chunks through focus, understanding, and practice for context
 - Declarative knowledge ("knowing that") differs from procedural knowledge ("knowing how"); the illusion of competence comes from confusing them
 - Sleep consolidates short-term memories to long-term storage; both deep sleep and REM are essential for learning
 - Neuroplasticity means your brain physically rewires itself with practice; the Default Mode Network is the neural basis of diffuse mode

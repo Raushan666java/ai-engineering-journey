@@ -4,6 +4,8 @@ This chapter covers system design concepts essential for senior Java backend int
 
 ---
 
+![System Design Interview - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/65-interview-system-design.png)
+
 ### Q1: How would you design a URL shortener like TinyURL?
 
 **Answer:**

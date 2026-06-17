@@ -15,6 +15,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![Async Processing & Events Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/34-async-events.png)
+
 ### 1. The Synchronous Problem
 
 Most Spring beans execute synchronously by default. When a method does I/O, calls a remote API, or performs a CPU-intensive computation, the caller's thread blocks. In a web application, this means one of the container's request-handling threads is stuck waiting. Under load, the thread pool saturates, requests queue up, and latency spikes.

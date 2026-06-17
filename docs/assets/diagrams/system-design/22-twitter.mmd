@@ -1,0 +1,41 @@
+graph TB
+    subgraph Client Layer
+        CLI[Twitter Client]
+    end
+    subgraph Timeline Generation
+        TS[Timeline Service]
+        FL[Flocks Social Graph]
+        TL[(Timeline Lists Manhattan)]
+        TB[(Tweet Store Manhattan)]
+        EB[Earlybird Search]
+    end
+    subgraph Ingestion Pipeline
+        TW[Tweet Ingestion]
+        KF[Kafka]
+        FO[Fanout Worker]
+    end
+    subgraph Ranking
+        ML[ML Ranker]
+        FS[Feature Store]
+    end
+    subgraph Trending and Search
+        TR[Trending Service]
+        SR[Search Service]
+        BL[Bloom Filter / CM Sketch]
+    end
+    CLI --> TS
+    TS --> FL
+    TS --> TL
+    TS --> TB
+    TS --> EB
+    TS --> ML
+    ML --> FS
+    TW --> KF
+    KF --> FO
+    FO --> TL
+    FO --> TB
+    FO --> EB
+    KF --> TR
+    TR --> BL
+    KF --> SR
+    SR --> EB

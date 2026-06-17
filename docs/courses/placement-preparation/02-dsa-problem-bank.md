@@ -4,7 +4,7 @@
 
 ---
 
-![DSA Problem-Solving Approach](../assets/images/diagrams/placement-preparation/ch02-dsa-approach.png)
+![DSA Problem-Solving Approach](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch02-dsa-approach.png)
 
 ## Arrays
 

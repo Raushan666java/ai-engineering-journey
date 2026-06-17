@@ -1,0 +1,29 @@
+flowchart TD
+    A[Exception Occurs] --> B{throw expression}
+    B --> C[Stack Unwinding Begins]
+    C --> D{Catch handler found?}
+
+    D -->|Yes| E[Execute catch block]
+    E --> F[Continue after try-catch]
+
+    D -->|No| G[terminate called]
+    G --> H[Abnormal program exit]
+
+    I[Try Block] --> J[Code that may throw]
+    J --> K[Catch by value]
+    J --> L[Catch by reference]
+    J --> M[Catch by pointer]
+    J --> N[Catch ... ellipsis]
+
+    O[RAII] --> P[Resources tied to object lifetime]
+    P --> Q[Destructor releases resource]
+    Q --> R[Safe during stack unwinding]
+
+    S[noexcept] --> T[Function guarantees no throw]
+    T --> U[Violation calls terminate]
+
+    V[Exception Hierarchy] --> W[std::exception]
+    W --> X[std::runtime_error]
+    W --> Y[std::logic_error]
+    W --> Z[std::bad_alloc]
+    W --> AA[std::bad_cast]

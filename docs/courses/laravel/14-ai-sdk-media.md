@@ -1,4 +1,4 @@
-# Chapter 14: Laravel AI SDK — Images, Audio, Transcriptions & Embeddings
+﻿# Chapter 14: Laravel AI SDK â€” Images, Audio, Transcriptions & Embeddings
 
 ---
 ## Learning Objectives
@@ -11,6 +11,9 @@
 - Test and mock AI SDK operations using the built-in fake implementations
 ---
 ## Theory
+
+![AI SDK Media](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/14-ai-sdk-media.png)
+
 
 ### 14.1 Image Generation
 
@@ -238,7 +241,7 @@ class IndexDocuments extends Command
 
 #### 14.4.2 The `Embeddings` Class
 
-For batch operations, use `Embeddings` — it sends all texts in a single API request:
+For batch operations, use `Embeddings` â€” it sends all texts in a single API request:
 
 ```php
 <?php

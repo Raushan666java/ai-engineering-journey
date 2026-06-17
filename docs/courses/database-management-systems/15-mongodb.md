@@ -11,6 +11,8 @@
 
 ## Theory
 
+![MongoDB Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch15-mongodb.png)
+
 ### 15.1 MongoDB Overview
 
 MongoDB is a **document-oriented NoSQL database** released in 2009. It stores data as BSON (Binary JSON) documents in collections.

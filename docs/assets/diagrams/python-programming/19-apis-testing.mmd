@@ -1,0 +1,33 @@
+flowchart TB
+    A["APIs and Testing"] --> B["HTTP Requests"]
+    A --> C["Building APIs"]
+    A --> D["Data Validation"]
+    A --> E["Unit Testing"]
+    A --> F["Testing Patterns"]
+
+    B --> B1["requests library"]
+    B --> B2["httpx async client"]
+    B --> B3["GET, POST, PUT, DELETE"]
+    B --> B4["Headers, params, JSON body"]
+    B --> B5["Sessions for connection reuse"]
+
+    C --> C1["FastAPI framework"]
+    C --> C2["Route decorators @app.get"]
+    C --> C3["Path and query parameters"]
+    C --> C4["Request body with Pydantic"]
+    C --> C5["Automatic OpenAPI docs"]
+
+    D --> D1["Pydantic BaseModel"]
+    D --> D2["Field validation"]
+    D --> D3["@field_validator"]
+    D --> D4["model_dump serialization"]
+
+    E --> E1["unittest framework"]
+    E --> E2["pytest framework"]
+    E --> E3["Fixtures for setup"]
+    E --> E4["Parametrize multiple cases"]
+    E --> E5["Mocking external calls"]
+
+    F --> F1["Doctests in docstrings"]
+    F --> F2["Test coverage measurement"]
+    F --> F3["Test-driven development"]

@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Code Optimization](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch10-optimization.png)
+
 After completing this chapter, students will be able to: distinguish machine-independent from machine-dependent optimizations; apply peephole optimization techniques including redundant load/store elimination, constant folding, strength reduction, null-sequence elimination, and algebraic simplification; and identify opportunities for optimization in intermediate code.
 
 ## Theory

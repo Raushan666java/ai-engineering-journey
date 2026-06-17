@@ -1,0 +1,53 @@
+flowchart TD
+    subgraph Foundation["Data-Flow Analysis Foundation"]
+        A["Flow Graph G=(N,E,entry)"] --> B["Data-Flow Equations"]
+        B --> C["IN[B] = combine{P in pred(B)} OUT[P]"]
+        B --> D["OUT[B] = f_B(IN[B])"]
+        C --> E["combine = ∪ (any-path / may)"]
+        C --> F["combine = ∩ (all-paths / must)"]
+    end
+
+    subgraph ReachingDefs["Reaching Definitions"]
+        G["Forward, Any-Path (may)"] --> H["IN[B] = ∪ OUT[P]"]
+        G --> I["OUT[B] = GEN[B] ∪ (IN[B] − KILL[B])"]
+        I --> J["Purpose: reaching-definition<br/>chains for constant propagation,<br/>dead-code elimination"]
+    end
+
+    subgraph LiveVars["Live-Variable Analysis"]
+        K["Backward, Any-Path (may)"] --> L["OUT[B] = ∪ IN[S]"]
+        K --> M["IN[B] = USE[B] ∪ (OUT[B] − DEF[B])"]
+        M --> N["Purpose: register allocation,<br/>dead-code elimination"]
+    end
+
+    subgraph AvailExprs["Available Expressions"]
+        O["Forward, All-Paths (must)"] --> P["IN[B] = ∩ OUT[P]"]
+        O --> Q["OUT[B] = GEN[B] ∪ (IN[B] − KILL[B])"]
+        Q --> R["Purpose: global common-<br/>subexpression elimination"]
+    end
+
+    subgraph IterAlgo["Iterative Algorithm"]
+        S["Initialize IN/OUT = ∅"] --> T["For each block B:"]
+        T --> U["IN[B] = combine OUT[P]"]
+        U --> V["OUT[B] = f_B(IN[B])"]
+        V --> W["Fixed point reached?<br/>(no values change)"]
+        W -- "Yes" --> X["Done"]
+        W -- "No" --> T
+    end
+
+    subgraph ConstProp["Constant Propagation"]
+        Y["Lattice: ⊤→c→⊥"] --> Z["x = e: set x to c if e<br/>is constant, else ⊥"]
+        Y --> AA["Meet: ⊤∧c=c, ⊤∧⊥=⊥,<br/>c₁∧c₂=⊥ if c₁≠c₂"]
+    end
+
+    subgraph PRE["Partial Redundancy Elimination"]
+        AB["Identifies expressions<br/>computed on some paths<br/>but not others"] --> AC["Insert on missing paths"]
+        AB --> AD["Remove redundant<br/>computations"]
+        AC --> AE["Code Hoisting<br/>(move earlier safely)"]
+    end
+
+    Foundation --> ReachingDefs
+    Foundation --> LiveVars
+    Foundation --> AvailExprs
+    Foundation --> IterAlgo
+    Foundation --> ConstProp
+    Foundation --> PRE

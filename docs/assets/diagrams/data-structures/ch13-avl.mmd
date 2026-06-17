@@ -1,0 +1,41 @@
+flowchart TD
+    A["AVL Tree"] --> B["Balance Factor"]
+    A --> C["Rotations"]
+    A --> D["Operations"]
+    A --> E["Properties"]
+
+    B --> B1["bf = height(L) - height(R)"]
+    B --> B2["Allowed: -1, 0, 1"]
+    B --> B3["Violation triggers rotation"]
+
+    C --> C1["LL Case"]
+    C --> C2["RR Case"]
+    C --> C3["LR Case"]
+    C --> C4["RL Case"]
+
+    C1 --> C1a["Right rotate at grandparent"]
+    C2 --> C2a["Left rotate at grandparent"]
+    C3 --> C3a["Left rotate at child"]
+    C3 --> C3b["Then right rotate at grandparent"]
+    C4 --> C4a["Right rotate at child"]
+    C4 --> C4b["Then left rotate at grandparent"]
+
+    D --> D1["Insert: O(log n)"]
+    D --> D2["Delete: O(log n)"]
+    D --> D3["Search: O(log n)"]
+    D1 --> D1a["BST insert"]
+    D1 --> D1b["Update heights"]
+    D1 --> D1c["Rebalance"]
+    D2 --> D2a["May need multiple rotations"]
+
+    E --> E1["h < 2 log₂(n+1)"]
+    E --> E2["Strictly balanced"]
+    E --> E3["Faster search vs Red-Black"]
+    E --> E4["Slower insert/delete vs Red-Black"]
+
+    LL_Example["LL Right Rotation:
+    z(2)      y
+   / \      / \
+  y  T3 => x   z
+ / \          / \
+x  T2        T2 T3"] --> C1

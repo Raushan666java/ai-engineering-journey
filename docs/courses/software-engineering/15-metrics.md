@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the purpose 
 
 ## Theory
 
+![Software Metrics Categories](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-15-metrics.png)
+
 ### The Purpose of Software Measurement
 
 Software measurement is the process of assigning numbers to attributes of software products, processes, and projects. Measurement provides the quantitative basis for understanding, controlling, and improving software development.

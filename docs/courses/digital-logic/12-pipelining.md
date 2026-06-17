@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Five-Stage RISC Pipeline and Hazards](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch12-pipelining.png)
+
 ### 12.1 Pipeline Concept
 
 Pipelining is an implementation technique that overlaps the execution of multiple instructions. Each instruction is broken into sequential stages, and a new instruction begins execution at each clock cycle. The throughput increases proportionally to the number of pipeline stages, though latency per instruction remains similar.

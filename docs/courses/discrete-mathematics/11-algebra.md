@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Algebraic Structures Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/11-algebra.png)
+
 After completing this chapter, you will be able to:
 
 - Define binary operations and their properties

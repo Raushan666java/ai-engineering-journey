@@ -1,0 +1,41 @@
+flowchart LR
+    subgraph OSI[OSI Model 7 Layers]
+        L7[Application]
+        L6[Presentation]
+        L5[Session]
+        L4[Transport]
+        L3[Network]
+        L2[Data Link]
+        L1[Physical]
+    end
+
+    subgraph TCP[TCP IP Model 4 Layers]
+        TA[Application Layer<br/>HTTP FTP SMTP DNS DHCP]
+        TT[Transport Layer<br/>TCP UDP]
+        TN[Internet Layer<br/>IP ICMP ARP]
+        TL[Network Access<br/>Ethernet WiFi]
+    end
+
+    subgraph GATE[GATE Key Topics]
+        CRC[CRC Hamming Code]
+        FLOW[Flow Control<br/>Stop and Wait Sliding Window]
+        MAC[MAC Layer<br/>ALOHA CSMA CD Ethernet]
+        IP[IP Subnetting CIDR]
+        ROUT[Routing<br/>Dijkstra Bellman-Ford]
+        TCPC[TCP Congestion Control]
+    end
+
+    L7 --> TA
+    L6 --> TA
+    L5 --> TA
+    L4 --> TT
+    L3 --> TN
+    L2 --> TL
+    L1 --> TL
+
+    L2 --> CRC
+    L2 --> FLOW
+    L2 --> MAC
+    L3 --> IP
+    L3 --> ROUT
+    L4 --> TCPC

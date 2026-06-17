@@ -15,6 +15,8 @@
 
 ## Theory / Case Study
 
+![System Design Interview Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/24-interview-preparation.png)
+
 ### Phase 1: The Interview Format
 
 A system design interview typically lasts 45-60 minutes. The format varies by company but generally follows one of four archetypes:

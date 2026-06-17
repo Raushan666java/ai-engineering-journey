@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Applications of Automata Theory Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/15-applications.png)
+
 ### 15.1 Lexical Analysis and Regular Expressions
 
 The most widespread application of finite automata is **lexical analysis** (lexing) in compilers. A lexer converts a stream of characters into a stream of tokens (identifiers, keywords, operators, literals).

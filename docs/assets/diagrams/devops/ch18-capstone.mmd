@@ -1,0 +1,56 @@
+flowchart TB
+    subgraph Source["Version Control"]
+        A[GitHub Repository]
+        B[Trunk Based Dev]
+        C[Feature Branches]
+    end
+
+    subgraph CI["CI Pipeline GitHub Actions"]
+        D[Lint and Test]
+        E[SAST Semgrep]
+        F[Secret Scan GitLeaks]
+        G[Build Docker Images]
+        H[Trivy Container Scan]
+        I[SBOM Generation Syft]
+    end
+
+    subgraph CD["CD Pipeline"]
+        J[Deploy to Staging]
+        K[Integration Tests]
+        L[DAST OWASP ZAP]
+        M[Blue Green Deploy]
+        N[Smoke Tests]
+        O[Traffic Switch]
+        P[Monitor Error Rates]
+        Q[Rollback on Failure]
+    end
+
+    subgraph Infrastructure["Infrastructure Terraform"]
+        R[VPC Subnets]
+        S[Kubernetes Cluster EKS]
+        T[Managed PostgreSQL]
+        U[Container Registry ECR]
+        V[State Backend S3 DynamoDB]
+    end
+
+    subgraph K8s["Kubernetes Deployment"]
+        W[Frontend Deployment]
+        X[API Deployment]
+        Y[Database StatefulSet]
+        Z[Ingress NGINX]
+        AA[Network Policies]
+        AB[HPA Autoscaling]
+    end
+
+    subgraph Observability["Monitoring"]
+        AC[Prometheus and Grafana]
+        AD[Loki Logs]
+        AE[RED Metrics Dashboard]
+        AF[Alerts PagerDuty Slack]
+    end
+
+    A --> CI
+    CI --> CD
+    Infrastructure --> K8s
+    CD --> K8s
+    K8s --> Observability

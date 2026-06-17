@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Modern Networking](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch18-modern-networking.png)
+
 1. Describe the QUIC transport protocol and its advantages over TCP.
 2. Explain HTTP/3 architecture and its relationship to QUIC.
 3. Analyze the 5G core network architecture using service-based interfaces.

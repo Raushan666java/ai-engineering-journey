@@ -1,0 +1,41 @@
+flowchart TD
+    subgraph "AI Agent"
+        A1["Cursor / Claude Code / OpenCode / Copilot"]
+    end
+
+    subgraph "Laravel Boost Bridge"
+        B1["15+ Specialized Tools<br/>Code generation diagnostics"]
+        B2["Vectorized Docs<br/>17000 embedded docs"]
+        B3["AI Guidelines<br/>.ai/guidelines/*"]
+    end
+
+    subgraph "Laravel Application"
+        L1["Live introspection<br/>Models Routes Config"]
+        L2["Version-matched docs<br/>Laravel 10-13"]
+        L3["Team conventions<br/>Custom guidelines"]
+    end
+
+    subgraph "Boost Tools"
+        BT1["boost:check Verify setup"]
+        BT2["boost:install Interactive setup"]
+        BT3["Code generation<br/>Correct API usage"]
+        BT4["Testing patterns"]
+    end
+
+    A1 -->|Reads guidelines| B3
+    A1 -->|Calls tools| B1
+    A1 -->|Queries vectors| B2
+
+    B1 --> L1
+    B2 --> L2
+    B3 --> L3
+
+    B1 --> BT1
+    B1 --> BT2
+    B1 --> BT3
+    B1 --> BT4
+
+    style A1 fill:#4a90d9,color:#fff
+    style B1 fill:#27ae60,color:#fff
+    style L1 fill:#e67e22,color:#fff
+    style BT1 fill:#9b59b6,color:#fff

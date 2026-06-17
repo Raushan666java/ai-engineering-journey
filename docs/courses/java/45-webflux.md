@@ -17,6 +17,8 @@ After completing this chapter, you will be able to:
 
 ## 1. WebFlux Architecture Overview
 
+![Spring WebFlux - Reactive Architecture Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/45-webflux.png)
+
 ### 1.1 Reactive Stack vs Servlet Stack
 
 Spring WebFlux is the reactive-stack web framework introduced in Spring 5, built on Project Reactor. It runs on **Netty** (default), Undertow, or Servlet 3.1+ containers (Tomcat, Jetty) but uses **non-blocking I/O** throughout.

@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Reducibility Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/11-reducibility.png)
+
 ### 11.1 Mapping Reductions (Many-One Reductions)
 
 A **mapping reduction** from language A to language B (written A ≤_m B) is a computable function f: Σ* → Σ* such that w ∈ A iff f(w) ∈ B.

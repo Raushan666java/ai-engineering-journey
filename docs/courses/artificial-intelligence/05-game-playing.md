@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) formulate ga
 
 ## 5.1 Game Theory and Game Trees
 
+![Game Playing and Adversarial Search](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch05-game-playing.png)
+
 Games provide a formal model of multi-agent decision-making where agents have conflicting objectives. In **deterministic, turn-taking, zero-sum games**, two players alternate moves, the payoff to one player is the negative of the payoff to the other, and no randomness intervenes.
 
 A **game** is formally defined by:

@@ -1,8 +1,11 @@
-# Laravel 13 with AI & Automation — Complete University Textbook
+﻿# Laravel 13 with AI & Automation â€” Complete University Textbook
 
 ## Course Description
 
-This comprehensive textbook covers **Laravel 13**, PHP's premier full-stack web framework, through the lens of modern AI-powered development. Students will master the entire Laravel ecosystem—from foundational concepts like routing, Eloquent ORM, and Blade templating through advanced topics including the **Laravel AI SDK**, **Model Context Protocol (MCP)**, **semantic vector search**, **Laravel Boost**, and **enterprise-scale system design**.
+![Laravel Course Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/index.png)
+
+
+This comprehensive textbook covers **Laravel 13**, PHP's premier full-stack web framework, through the lens of modern AI-powered development. Students will master the entire Laravel ecosystemâ€”from foundational concepts like routing, Eloquent ORM, and Blade templating through advanced topics including the **Laravel AI SDK**, **Model Context Protocol (MCP)**, **semantic vector search**, **Laravel Boost**, and **enterprise-scale system design**.
 
 The curriculum is designed for a single purpose: to prepare you to build, deploy, and scale **production-grade Laravel applications with AI capabilities woven in at every layer**. Each chapter builds on the previous, following the university textbook template: Learning Objectives, Theory with code examples, Summary, and Exercises (Review Questions, Application Problems, Challenge Problems). The course culminates in a capstone project that integrates everything into a complete AI-powered SaaS platform.
 
@@ -14,17 +17,17 @@ The course is organized into ten parts, each building on the last.
 
 | Part | Chapters | Focus |
 |------|----------|-------|
-| 0 | P1–P6 | Foundations — PHP, MySQL, HTML, CSS, JavaScript, AI/ML fundamentals |
-| I | 1–6 | Laravel Fundamentals — from zero to working application |
-| II | 7–11 | Advanced Laravel — APIs, real-time, packages, testing, performance |
-| III | 12–18 | AI & Automation — AI SDK, MCP, vector search, Boost, automation patterns |
-| IV | 19–21 | System Design — architecture patterns, scaling, enterprise design |
-| V | 22–24 | Case Studies & Capstone — real-world applications end-to-end |
-| VI | 25–26 | Multi-Agent Systems & Business Automation — agent orchestration, workflows |
-| VII | 27–36 | Industry Verticals — AI/automation per sector (healthcare, finance, education, logistics, HR, marketing, customer service, real estate, legal, manufacturing) |
-| VIII | 37 | Enterprise Capstone — multi-agent platform integrating all patterns |
-| IX | 38–48 | Interview Preparation — general Laravel + 10 industry-specific interview Q&A chapters |
-| X | 49–54 | Foundations Interview Preparation — PHP, MySQL, HTML, CSS, JS, AI/ML interview Q&A |
+| 0 | P1â€“P6 | Foundations â€” PHP, MySQL, HTML, CSS, JavaScript, AI/ML fundamentals |
+| I | 1â€“6 | Laravel Fundamentals â€” from zero to working application |
+| II | 7â€“11 | Advanced Laravel â€” APIs, real-time, packages, testing, performance |
+| III | 12â€“18 | AI & Automation â€” AI SDK, MCP, vector search, Boost, automation patterns |
+| IV | 19â€“21 | System Design â€” architecture patterns, scaling, enterprise design |
+| V | 22â€“24 | Case Studies & Capstone â€” real-world applications end-to-end |
+| VI | 25â€“26 | Multi-Agent Systems & Business Automation â€” agent orchestration, workflows |
+| VII | 27â€“36 | Industry Verticals â€” AI/automation per sector (healthcare, finance, education, logistics, HR, marketing, customer service, real estate, legal, manufacturing) |
+| VIII | 37 | Enterprise Capstone â€” multi-agent platform integrating all patterns |
+| IX | 38â€“48 | Interview Preparation â€” general Laravel + 10 industry-specific interview Q&A chapters |
+| X | 49â€“54 | Foundations Interview Preparation â€” PHP, MySQL, HTML, CSS, JS, AI/ML interview Q&A |
 
 ## Chapter Listing
 
@@ -67,9 +70,9 @@ The course is organized into ten parts, each building on the last.
 | 12 | [AI SDK: Agents, Prompting & Structured Output](12-ai-sdk-agents.md) | AI SDK installation, provider configuration (Anthropic, OpenAI, Gemini, 14+ providers), creating agents with make:agent, system prompts & instructions, prompting agents, conversation context & RemembersConversations trait, structured output with JSON Schema, nested objects & arrays, streaming (SSE, Vercel AI SDK protocol), broadcasting agent responses, queueing agents |
 | 13 | [AI SDK: Tools, MCP Tools & Provider Tools](13-ai-sdk-tools.md) | Creating custom tools (make:tool), tool schemas, tool descriptions, Similarity Search tool for RAG, fetching MCP tools from AI SDK, provider tools (WebSearch, WebFetch, FileSearch), anonymous agents, agent middleware, agent configuration & provider options |
 | 14 | [AI SDK: Images, Audio, Transcriptions & Embeddings](14-ai-sdk-media.md) | Image generation (Image::of()->generate()), audio/text-to-speech (Audio::of()->generate()), transcription/STT (Transcript::of()->fromFile()), embeddings generation (Str::toEmbeddings(), Embeddings::for()), querying embeddings, caching embeddings, reranking results, file uploads, vector stores, failover strategies, testing AI features, events |
-| 15 | [Laravel MCP — Model Context Protocol](15-mcp.md) | MCP protocol overview & specification, installing Laravel MCP, creating servers (make:mcp-server), web servers & local servers, creating tools (make:mcp-tool), tool input & output schemas, tool annotations, conditional tool registration, streaming & structured responses, prompts & resources, apps & Boost integration, authentication (OAuth, Sanctum), MCP client connections, testing servers |
+| 15 | [Laravel MCP â€” Model Context Protocol](15-mcp.md) | MCP protocol overview & specification, installing Laravel MCP, creating servers (make:mcp-server), web servers & local servers, creating tools (make:mcp-tool), tool input & output schemas, tool annotations, conditional tool registration, streaming & structured responses, prompts & resources, apps & Boost integration, authentication (OAuth, Sanctum), MCP client connections, testing servers |
 | 16 | [Semantic Search, Vector Search & RAG with pgvector](16-search-rag.md) | Full-text search (whereFullText, MariaDB/MySQL/PostgreSQL), vector embeddings with pgvector, generating & storing embeddings (ensureVectorExtensionExists), HNSW indexing, similarity queries (whereVectorSimilarTo), reranking (Reranking::of, Collection::rerank), Laravel Scout database engine, Scout third-party engines (Algolia, Meilisearch, Typesense), combining full-text + reranking for RAG |
-| 17 | [Laravel Boost — AI-Assisted Development](17-boost.md) | Installing Laravel Boost, 15+ specialized tools, over 17,000 vectorized documentation pieces, custom AI guidelines (.ai/guidelines), IDE integration (Cursor, Claude Code, OpenCode), agentic development practices, AI guidelines for Laravel conventions |
+| 17 | [Laravel Boost â€” AI-Assisted Development](17-boost.md) | Installing Laravel Boost, 15+ specialized tools, over 17,000 vectorized documentation pieces, custom AI guidelines (.ai/guidelines), IDE integration (Cursor, Claude Code, OpenCode), agentic development practices, AI guidelines for Laravel conventions |
 | 18 | [Automation Patterns & Workflows](18-automation-patterns.md) | Event-driven automation, queue-based pipeline patterns, AI agent automation with tools, scheduled task automation, webhook-driven automation, CI/CD integration, deployment automation (Forge, Vapor, Envoyer), monitoring alerts automation, business process automation with Laravel Workflow |
 
 ### Part IV: System Design for Laravel
@@ -78,14 +81,14 @@ The course is organized into ten parts, each building on the last.
 |---|---------|--------|
 | 19 | [Laravel Application Architecture Patterns](19-architecture-patterns.md) | Service layer pattern, repository pattern, action classes & single-responsibility commands, DTOs & data transfer objects, domain-driven design in Laravel, hexagonal architecture, event sourcing & CQRS with event store, multi-tenancy patterns, modular monolith vs microservices |
 | 20 | [Scaling Laravel](20-scaling-laravel.md) | Horizontal scaling strategies, Laravel Vapor (serverless), Laravel Cloud (LAN-connected services), Octane performance tuning, Redis cluster scaling, database read replicas, queue scaling, CDN integration, session management at scale, stateless application design |
-| 21 | [System Design: Laravel at Enterprise Scale](21-system-design-scale.md) | Design for 10M+ users, multi-region deployment, global database sharding, read-heavy optimization (cascade caching: in-memory → Redis → DB), write-heavy optimization (queue-backed writes, CQRS), API rate limiting at scale, SLA/SLO/SLI definitions, disaster recovery, capacity planning, cost optimization, migration from monolith to services |
+| 21 | [System Design: Laravel at Enterprise Scale](21-system-design-scale.md) | Design for 10M+ users, multi-region deployment, global database sharding, read-heavy optimization (cascade caching: in-memory â†’ Redis â†’ DB), write-heavy optimization (queue-backed writes, CQRS), API rate limiting at scale, SLA/SLO/SLI definitions, disaster recovery, capacity planning, cost optimization, migration from monolith to services |
 
 ### Part V: Case Studies & Capstone
 
 | # | Chapter | Topics |
 |---|---------|--------|
-| 22 | [Case Study: SaaS E-Commerce Platform](22-case-study-ecommerce.md) | Requirements (multi-tenant, 100K products, 1M users), data model (tenant→store→product→order), checkout pipeline (cart service, payment processing with Cashier, inventory management, order confirmation queue), search architecture (Scout + Meilisearch), multi-tenant caching strategy, full system design with capacity estimation |
-| 23 | [Case Study: AI-Powered Content Platform](23-case-study-ai-content.md) | Requirements (1M documents, semantic search, AI-generated content), architecture (Laravel backend + AI SDK agents), RAG pipeline (document ingestion → embedding → pgvector → similarity search → LLM augmentation), agent design (content writer, editor, researcher agents), vector store strategy, MCP tool exposure, content moderation with AI |
+| 22 | [Case Study: SaaS E-Commerce Platform](22-case-study-ecommerce.md) | Requirements (multi-tenant, 100K products, 1M users), data model (tenantâ†’storeâ†’productâ†’order), checkout pipeline (cart service, payment processing with Cashier, inventory management, order confirmation queue), search architecture (Scout + Meilisearch), multi-tenant caching strategy, full system design with capacity estimation |
+| 23 | [Case Study: AI-Powered Content Platform](23-case-study-ai-content.md) | Requirements (1M documents, semantic search, AI-generated content), architecture (Laravel backend + AI SDK agents), RAG pipeline (document ingestion â†’ embedding â†’ pgvector â†’ similarity search â†’ LLM augmentation), agent design (content writer, editor, researcher agents), vector store strategy, MCP tool exposure, content moderation with AI |
 | 24 | [Capstone Project: AI-Powered SaaS Platform](24-capstone.md) | Full specification: team collaboration SaaS with AI features, system architecture diagram, data model, AI agent layer (document analysis agent, meeting summarizer, code reviewer), MCP server for external tool access, search & RAG pipeline, deployment architecture (Vapor/Cloud), testing strategy, performance budget, monitoring setup |
 
 ### Part VI: Multi-Agent Systems & Business Automation
@@ -95,7 +98,7 @@ The course is organized into ten parts, each building on the last.
 | 25 | [Multi-Agent Systems & Orchestration](25-multi-agent-systems.md) | Supervisor/worker pattern, agent teams & handoffs, router agents, parallel agent execution, state management across agents, memory sharing, queue-backed orchestration, agent observability, multi-agent failure modes, testing multi-agent systems |
 | 26 | [Business Automation Agents](26-business-automation-agents.md) | Scheduled agents for recurring tasks, event-triggered agents, webhook-driven automation, approval workflows with agents, human-in-the-loop patterns, agent-based data pipelines, notification & escalation agents, audit logging for automated decisions |
 
-### Part VII: Industry Verticals — AI & Automation per Sector
+### Part VII: Industry Verticals â€” AI & Automation per Sector
 
 | # | Chapter | Topics |
 |---|---------|--------|
@@ -146,10 +149,10 @@ The course is organized into ten parts, each building on the last.
 ## Supplementary Resources
 
 - [Laravel 13.x Official Documentation](https://laravel.com/docs/13.x)
-- [Laracasts](https://laracasts.com) — Video tutorials
-- [Laravel News](https://laravel-news.com) — Community news and tutorials
+- [Laracasts](https://laracasts.com) â€” Video tutorials
+- [Laravel News](https://laravel-news.com) â€” Community news and tutorials
 - *Laravel: Up & Running* by Matt Stauffer (O'Reilly)
-- *Laravel Design Patterns and Best Practices* by Arda Kılıçdağı and H. İbrahim Yılmaz
+- *Laravel Design Patterns and Best Practices* by Arda KÄ±lÄ±Ã§daÄŸÄ± and H. Ä°brahim YÄ±lmaz
 - [Laravel AI SDK GitHub](https://github.com/laravel/ai)
 - [Laravel MCP GitHub](https://github.com/laravel/mcp)
 - [Laravel Boost GitHub](https://github.com/laravel/boost)

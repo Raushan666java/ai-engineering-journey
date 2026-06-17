@@ -1,0 +1,44 @@
+graph TD
+    subgraph URL Shortener
+        US[URL Shortener]
+        Base62[Base62 Encoding]
+        Hash[Hash Function]
+        Cache[(Redis Cache)]
+        DB[(Relational DB)]
+        Analytics[Click Analytics]
+    end
+    subgraph Rate Limiter
+        Token[Token Bucket]
+        Leaky[Leaky Bucket]
+        Sliding[Sliding Window Log]
+        Fixed[Fixed Window Counter]
+        Cluster[Distributed Rate Limiter Redis]
+    end
+    subgraph Pastebin
+        PB[Pastebin Service]
+        Store[(Object Store)]
+        Expire[TTL Expiration]
+        Syntax[Syntax Highlighting]
+        Encrypt[Client Encryption]
+    end
+    subgraph Distribute
+        LB[Load Balancer]
+        Replica[(DB Read Replicas)]
+        CDN[CDN for Static Content]
+    end
+    User --> US
+    US --> Base62
+    US --> Hash
+    US --> Cache
+    US --> DB
+    US --> Analytics
+    API --> Token
+    Token --> Sliding
+    Sliding --> Cluster
+    User --> PB
+    PB --> Store
+    PB --> Expire
+    PB --> Syntax
+    DB --> Replica
+    US --> LB
+    PB --> LB

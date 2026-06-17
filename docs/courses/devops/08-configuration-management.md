@@ -4,6 +4,8 @@
 
 ## Learning Objectives
 
+![Ansible Configuration Management Workflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch08-ansible-workflow.png)
+
 - Explain the role of Configuration Management in the DevOps toolchain.
 - Understand the Agentless architecture of Ansible.
 - Master the core components of Ansible: Inventory, Playbooks, Modules, and Roles.

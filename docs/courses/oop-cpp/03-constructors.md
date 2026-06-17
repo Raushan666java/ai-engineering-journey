@@ -13,6 +13,8 @@ After studying this chapter, students will be able to:
 
 ## 3.1 The Role of Constructors
 
+![Constructors and Destructors Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/03-constructors.png)
+
 A constructor is a special member function that initialises an object when it is created. It has the same name as the class, no return type, and is invoked automatically. If a class declares no constructors, the compiler generates a default constructor that default-initialises all members.
 
 ```cpp

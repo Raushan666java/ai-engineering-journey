@@ -1,0 +1,50 @@
+flowchart TB
+    subgraph ComposeFile["compose.yaml"]
+        A[Services]
+        B[Networks]
+        C[Volumes]
+    end
+
+    subgraph Services["Service Configuration"]
+        D[Image or Build]
+        E[Ports Mapping]
+        F[Environment Variables]
+        G[Volumes Mounts]
+        H[Health Checks]
+        I[Resource Limits]
+        J[Restart Policies]
+        K[Depends On]
+    end
+
+    subgraph NetworksSection["Network Types"]
+        L[Default Bridge]
+        M[Custom Bridge]
+        N[Internal Network]
+    end
+
+    subgraph Profiles["Profiles"]
+        O[dev profile]
+        P[test profile]
+        Q[monitoring profile]
+    end
+
+    subgraph Production["Production Deploy"]
+        R[restart unless stopped]
+        S[Logging Driver json-file]
+        T[Secrets Management]
+        U[stop grace period]
+    end
+
+    subgraph Swarm["Docker Swarm Mode"]
+        V[Replicated Services]
+        W[Rolling Updates]
+        X[Overlay Networking]
+        Y[Secret Management]
+    end
+
+    A --> Services
+    B --> NetworksSection
+    A --> Profiles
+    A --> Production
+    A --> Swarm
+    C --> G

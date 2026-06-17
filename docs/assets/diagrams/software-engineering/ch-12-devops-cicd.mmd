@@ -1,0 +1,37 @@
+flowchart LR
+    A[DevOps & CI/CD] --> B[Continuous Integration]
+    A --> C[Continuous Delivery]
+    A --> D[Continuous Deployment]
+    A --> E[Infrastructure as Code]
+    A --> F[Monitoring & Observability]
+
+    B --> B1[Code Commit]
+    B --> B2[Automated Build]
+    B --> B3[Automated Tests]
+    B --> B4[Code Quality Checks]
+    B --> B5[Artifact Packaging]
+
+    C --> C1[Staging Deployment]
+    C --> C2[Integration Tests]
+    C --> C3[Acceptance Tests]
+    C --> C4[Manual Approval Gate]
+    C --> C5[Ready for Production]
+
+    D --> D1[Automated Deploy]
+    D --> D2[Canary Release]
+    D --> D3[Blue-Green Deploy]
+    D --> D4[Rolling Update]
+    D --> D5[Rollback Strategy]
+
+    E --> E1[Terraform]
+    E --> E2[Ansible / Puppet]
+    E --> E3[Docker Containers]
+    E --> E4[Kubernetes Orchestration]
+
+    F --> F1[Application Monitoring]
+    F --> F2[Infrastructure Metrics]
+    F --> F3[Log Aggregation]
+    F --> F4[Alerting & Incident Response]
+
+    B5 --> C
+    C5 --> D

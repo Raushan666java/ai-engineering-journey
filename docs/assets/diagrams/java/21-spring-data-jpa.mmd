@@ -1,0 +1,45 @@
+flowchart TB
+  SDJ[Spring Data JPA]
+  SDJ --> REPO[Repository Hierarchy]
+  REPO --> CR[CrudRepository]
+  REPO --> PR[PagingAndSortingRepository]
+  REPO --> JR[JpaRepository]
+  REPO --> QDM[QueryDerivation]
+
+  SDJ --> QUERY[Query Methods]
+  QUERY --> DQ[Derived Queries]
+  DQ --> FIND[findBy]
+  DQ --> COUNT[countBy]
+  DQ --> EXISTS[existsBy]
+  DQ --> DELETE[deleteBy]
+  QUERY --> JPQL[JPQL with Query]
+  QUERY --> NATIVE[Native Queries]
+  QUERY --> MODIFY[Modifying]
+
+  SDJ --> SPEC[Specifications]
+  SPEC --> CRIT[Criteria API]
+  CRIT --> CB[CriteriaBuilder]
+  CRIT --> CQ[CriteriaQuery]
+  CRIT --> PRED[Predicate]
+
+  SDJ --> QDSL[QueryDSL]
+  QDSL --> QGEN[Q-Type Generation]
+  QDSL --> FQ[Fluent Queries]
+
+  SDJ --> PAGIN[Pagination Sorting]
+  PAGIN --> PAGE[Pageable / Page]
+  PAGIN --> SORT[Sort]
+  PAGIN --> KSP[Keyset Pagination]
+
+  SDJ --> PROJ[Projections]
+  PROJ --> CI[Closed Interface]
+  PROJ --> OI[Open Interface]
+  PROJ --> DTO[DTO Projections]
+
+  SDJ --> AUDIT[Auditing]
+  AUDIT --> CD[CreatedDate / ModifiedDate]
+  AUDIT --> CBY[CreatedBy / ModifiedBy]
+
+  SDJ --> CUST[Custom Repositories]
+  CUST --> IMPL[Impl Pattern]
+  CUST --> MIX[Mixin Fragments]

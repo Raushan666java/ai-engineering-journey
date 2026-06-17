@@ -1,0 +1,51 @@
+graph TD
+    subgraph Testing Pyramid
+        E2E[End-to-End Tests Few]
+        INT[Integration Tests Some]
+        UNIT[Unit Tests Many]
+    end
+    subgraph Unit Testing
+        VIT[Vitest]
+        DESC[describe]
+        IT[it/test]
+        EXPECT[expect matchers]
+        MOCK[vi.mock]
+        SPY[vi.spyOn]
+    end
+    subgraph Component Testing
+        RTL[React Testing Library]
+        RENDER[render]
+        SCREEN[screen.getBy]
+        FIRE[fireEvent]
+        WAIT[waitFor]
+        USER[userEvent]
+    end
+    subgraph API Testing
+        SUPR[Supertest]
+        MSW[MSW Mock Service Worker]
+        HANDLERS[Request Handlers]
+        SERVER[Test Server]
+    end
+    subgraph E2E Testing
+        PLAY[Playwright]
+        NAV[page.goto]
+        LOC[page.locator]
+        ASSERT[expect assertions]
+        TRACE[Trace Viewer]
+    end
+    subgraph Coverage
+        LINE[Line Coverage]
+        BRANCH[Branch Coverage]
+        FUNC[Function Coverage]
+        LCOV[lcov Reports]
+    end
+    E2E --> PLAY
+    INT --> RTL
+    INT --> MSW
+    UNIT --> VIT
+    VIT --> DESC
+    RTL --> RENDER
+    MSW --> HANDLERS
+    PLAY --> NAV
+    PLAY --> TRACE
+    VIT --> LINE

@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 14.1 Lambda Syntax
 
+![Lambdas Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/14-lambdas.png)
+
 A lambda expression defines an anonymous function object (a *closure*). The syntax:
 
 ```

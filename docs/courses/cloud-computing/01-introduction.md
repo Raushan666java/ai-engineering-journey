@@ -1,4 +1,4 @@
-# Chapter 1: Introduction to Cloud Computing
+﻿# Chapter 1: Introduction to Cloud Computing
 
 ## Learning Objectives
 
@@ -40,7 +40,7 @@ The NIST definition is significant because it establishes a clear boundary betwe
 
 **Software as a Service (SaaS).** The consumer uses the provider's applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a programmatic interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings. Examples include Salesforce, Google Workspace, Microsoft 365, and Slack.
 
-![Cloud Service Models](../assets/images/diagrams/cloud-computing/ch01-service-models.png)
+![Cloud Service Models](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch01-service-models.png)
 
 ### 1.4 Deployment Models
 

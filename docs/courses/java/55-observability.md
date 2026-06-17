@@ -17,6 +17,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. The Observability Stack
 
+![Observability - Micrometer, Prometheus, Grafana](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/55-observability.png)
+
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                    Grafana (Dashboards)                   │

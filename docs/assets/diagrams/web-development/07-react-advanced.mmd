@@ -1,0 +1,49 @@
+graph TD
+    subgraph Hooks
+        US[useState]
+        UE[useEffect]
+        UC[useContext]
+        UR[useRef]
+        UM[useMemo]
+        UC2[useCallback]
+        URD[useReducer]
+        UTL[useTransition]
+        UD[useDeferredValue]
+    end
+    subgraph State Management
+        LOCAL[Local State]
+        CONTEXT[Context API]
+        REDUX[Redux Toolkit]
+        ZUST[Zustand]
+        TKT[React Query TanStack]
+    end
+    subgraph Performance
+        MEMO[React.memo]
+        LAZY[lazy Loading]
+        SUSP[Suspense]
+        VIRT[Virtual List]
+        CODE[Code Splitting]
+    end
+    subgraph Patterns
+        COMP[Compound Components]
+        REN[Render Props]
+        HOC[Higher Order Components]
+        CUSTOM[Custom Hooks]
+        PORT[Portal]
+        ERR[Error Boundary]
+    end
+    subgraph Testing
+        RTL[React Testing Library]
+        VIT[Vitest]
+        MSW[MSW Mocking]
+        CMP[Component Tests]
+        INT[Integration Tests]
+    end
+    US --> LOCAL
+    UE --> UE
+    UC --> CONTEXT
+    CONTEXT --> REDUX
+    MEMO --> UM
+    LAZY --> SUSP
+    CUSTOM --> COMP
+    RTL --> CMP

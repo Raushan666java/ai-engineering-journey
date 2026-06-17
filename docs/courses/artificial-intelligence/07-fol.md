@@ -14,6 +14,8 @@
 
 ## Theory
 
+![First-Order Logic](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch07-fol.png)
+
 ### Why First-Order Logic?
 While Propositional Logic assumes the world contains facts, **First-Order Logic (FOL)** assumes the world contains:
 - **Objects**: People, houses, numbers, colors.

@@ -1,4 +1,4 @@
-# Chapter 11: Caching, Performance & Octane
+﻿# Chapter 11: Caching, Performance & Octane
 
 ---
 
@@ -15,6 +15,9 @@
 
 ## Theory
 
+![Caching and Performance](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/11-caching-performance.png)
+
+
 ### 11.1 Cache Drivers
 
 Laravel provides a unified API for multiple cache backends. The active driver is configured in `.env` via `CACHE_STORE` (Laravel 11+) or `CACHE_DRIVER` (Laravel 10 and earlier).
@@ -27,9 +30,9 @@ Stores serialized cache entries as individual files in `storage/framework/cache/
 CACHE_STORE=file
 ```
 
-- **No external dependencies** — zero setup, works everywhere
-- **Slow for large caches** — filesystem seeks degrade with thousands of entries
-- **No tag support** — you cannot tag and flush groups of entries
+- **No external dependencies** â€” zero setup, works everywhere
+- **Slow for large caches** â€” filesystem seeks degrade with thousands of entries
+- **No tag support** â€” you cannot tag and flush groups of entries
 - Best for **single-server development** and minimal deployments
 
 #### Database
@@ -46,7 +49,7 @@ CACHE_STORE=database
 ```
 
 - Useful when no Redis or Memcached is available
-- Each cache hit requires a database query — slower than in-memory backends
+- Each cache hit requires a database query â€” slower than in-memory backends
 - Supports **tags** only if you implement custom tag logic
 
 #### Redis
@@ -113,7 +116,7 @@ Stores cache in a PHP array for the current request only.
 CACHE_STORE=array
 ```
 
-- **Default for testing** — entries are lost after each request
+- **Default for testing** â€” entries are lost after each request
 - No serialization overhead
 - Never use in production
 
@@ -190,7 +193,7 @@ Cache::put('key', 'value', Carbon::tomorrow());
 Cache::put('key', 'value', 3600); // 60 minutes in seconds
 ```
 
-#### Cache::touch() — TTL Extension (Laravel 13)
+#### Cache::touch() â€” TTL Extension (Laravel 13)
 
 Laravel 13 introduces `Cache::touch()`, which extends the TTL of an existing cache entry without retrieving and re-storing the value.
 
@@ -207,7 +210,7 @@ if (Cache::has('user_123_profile')) {
 Before `touch()`, extending TTL required a full read-write cycle:
 
 ```php
-// Old approach — still works but less efficient
+// Old approach â€” still works but less efficient
 $profile = Cache::get('user_123_profile');
 if ($profile !== null) {
     Cache::put('user_123_profile', $profile, 1800);
@@ -304,7 +307,7 @@ if ($lock->get()) {
 $lock = Cache::lock('report_generation', 30);
 
 $lock->block(5, function () {
-    // Generate the report — only one server at a time
+    // Generate the report â€” only one server at a time
     ReportGenerator::generate();
 });
 // Lock is automatically released after the callback
@@ -395,7 +398,7 @@ Redis::sadd('online_users', $userId);
 $isOnline = Redis::sismember('online_users', $userId);
 $count = Redis::scard('online_users');
 
-// Sorted sets — leaderboards
+// Sorted sets â€” leaderboards
 Redis::zadd('leaderboard', $score, $userId);
 $top10 = Redis::zrevrange('leaderboard', 0, 9, 'WITHSCORES');
 $rank = Redis::zrevrank('leaderboard', $userId);
@@ -517,7 +520,7 @@ Schema::table('users', function (Blueprint $table) {
     $table->index('email');
 });
 
-// Composite index — order matters!
+// Composite index â€” order matters!
 Schema::table('posts', function (Blueprint $table) {
     // queries: WHERE status=? AND published_at BETWEEN ? AND ?
     //         WHERE status=?
@@ -570,14 +573,14 @@ Model::handleLazyLoadingViolationUsing(function ($model, $relation) {
 #### Chunking Results
 
 ```php
-// chunk — loads batches of records
+// chunk â€” loads batches of records
 Post::chunk(200, function (Collection $posts) {
     foreach ($posts as $post) {
         $post->indexInSearchEngine();
     }
 });
 
-// chunkById — stable ordering for tables that change during chunking
+// chunkById â€” stable ordering for tables that change during chunking
 Post::where('published', true)
     ->chunkById(200, function (Collection $posts) {
         foreach ($posts as $post) {
@@ -586,12 +589,12 @@ Post::where('published', true)
         }
     });
 
-// lazy — returns LazyCollection, one record at a time
+// lazy â€” returns LazyCollection, one record at a time
 foreach (Post::lazy(100) as $post) {
     $post->process(); // memory-efficient
 }
 
-// cursor — uses yield, single query with cursor-based iteration
+// cursor â€” uses yield, single query with cursor-based iteration
 foreach (Post::where('published', true)->cursor() as $post) {
     $post->export();
 }
@@ -1033,7 +1036,7 @@ public function expensiveReport(): array
 }
 ```
 
-Laravel 13's `Cache::remember()` also provides built-in stampede protection when using Redis or Memcached via the **cache stampede prevention** mechanism — only one process recomputes while others wait.
+Laravel 13's `Cache::remember()` also provides built-in stampede protection when using Redis or Memcached via the **cache stampede prevention** mechanism â€” only one process recomputes while others wait.
 
 #### Cache Invalidation Patterns
 
@@ -1043,7 +1046,7 @@ Cache::tags('posts')->flush();
 
 // 2. Key-pattern invalidation
 $pattern = 'post.*';
-// Requires custom iteration — not natively supported
+// Requires custom iteration â€” not natively supported
 
 // 3. Version-based invalidation
 Cache::increment('cache_version');
@@ -1052,7 +1055,7 @@ $posts = Cache::remember("posts.v{$version}", 3600, fn () => Post::all());
 
 // 4. Time-based (TTL expiry)
 // Simplest: cache expires after fixed time
-// Not immediate — stale data served until TTL expires
+// Not immediate â€” stale data served until TTL expires
 
 // 5. Event-driven invalidation
 class PostObserver
@@ -1188,7 +1191,7 @@ composer require spatie/laravel-google-fonts
 // config/google-fonts.php
 return [
     'inter' => 'https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&subset=latin',
-    // Subset to latin only — saves ~60% font file size
+    // Subset to latin only â€” saves ~60% font file size
 ];
 ```
 
@@ -1349,11 +1352,11 @@ class PostController extends Controller
 
 ## Summary
 
-- Laravel supports seven cache drivers — file, database, redis, dynamodb, array, null — each suited to different environments and requirements.
+- Laravel supports seven cache drivers â€” file, database, redis, dynamodb, array, null â€” each suited to different environments and requirements.
 - The Cache API provides `get`, `put`, `remember`, `rememberForever`, `pull`, `add`, `many`, `forget`, `flush`, `increment`, `decrement`, and the new `touch()` method for TTL extension without a read cycle.
 - Cache tags enable grouped invalidation but require Redis or Memcached.
 - Atomic locks provide distributed mutex semantics with blocking, auto-release, and cross-request locking capabilities.
-- Redis serves multiple roles — cache, queue, session, pub/sub — with Sentinel for HA and Cluster for horizontal scaling.
+- Redis serves multiple roles â€” cache, queue, session, pub/sub â€” with Sentinel for HA and Cluster for horizontal scaling.
 - Database performance optimization centers on query analysis, composite indexing, N+1 prevention, chunking large datasets, and read/write connection separation.
 - Laravel Octane eliminates framework boot overhead by keeping the application in memory, with configuration for workers, service warmup, and request lifecycle events.
 - Eager loading strategies (nested, lazy, default, constrained) prevent the N+1 problem across relationship depths.
@@ -1382,7 +1385,7 @@ class PostController extends Controller
 1. **Design and implement a multi-tier caching system for a news aggregation API.** The API serves articles from multiple sources, ordered by publish date. Requirements:
    - Article list pages must render under 50ms (P95) with 100,000+ articles
    - New articles must appear within 30 seconds of publishing
-   - Articles can be updated (title correction) — stale data accepted up to 5 minutes
+   - Articles can be updated (title correction) â€” stale data accepted up to 5 minutes
    - Each source can be tagged and flushed independently
    - Popular articles (top 100 by views) should be cached with longer TTL
    - Implement using `Cache::tags()` with a fallback strategy for drivers that do not support tags
@@ -1440,7 +1443,7 @@ Your platform has: products (50K), categories (200), users (100K), orders (1M), 
    - Implement a **three-tier cache**: L1 (array/request-scoped), L2 (Redis, 5-minute TTL), L3 (database, 30-minute TTL with stampede protection)
    - Use `Cache::tags()` with hierarchy: `products`, `products:{id}`, `categories`, `categories:{id}`, `inventory`
    - Implement **cache warming** via an Artisan command that loads the top 1,000 products by sales velocity, all categories, and the homepage hero section
-   - Build a **stampede firewall** using atomic locks — when cache expires, only one process recomputes while others wait up to 2 seconds
+   - Build a **stampede firewall** using atomic locks â€” when cache expires, only one process recomputes while others wait up to 2 seconds
 
 2. **Database Performance:**
    - Create composite indexes for the 5 slowest queries identified by Telescope
@@ -1460,8 +1463,8 @@ Your platform has: products (50K), categories (200), users (100K), orders (1M), 
 
 4. **Caching Strategy:**
    - **Product listing:** Cache-aside with tag-based invalidation on price change or stock update
-   - **Search results:** Write-through — index updates trigger cache update; use Redisearch for full-text
-   - **Cart:** Write-behind — cart updates hit Redis immediately; persist to MySQL every 60 seconds or 10 changes
+   - **Search results:** Write-through â€” index updates trigger cache update; use Redisearch for full-text
+   - **Cart:** Write-behind â€” cart updates hit Redis immediately; persist to MySQL every 60 seconds or 10 changes
    - **Inventory counts:** Cache-aside with atomic decrement on order placement; reconcile with database every 5 minutes
    - **Recommendations:** Pre-computed nightly, stored in Redis sorted sets (user-specific), refreshed lazily on page load if older than 1 hour
    - **Category tree:** Cached forever with event-driven invalidation when a category is created, updated, or deleted
@@ -1479,7 +1482,7 @@ Your platform has: products (50K), categories (200), users (100K), orders (1M), 
    - Configure Redis Sentinel for automatic failover when the primary Redis node goes down
    - Implement a **cache degradation** strategy: if Redis is unreachable, fall back to database reads with a 1-second TTL array cache (per-request dedup only)
    - Test: kill the Redis primary node and verify the application continues serving degraded responses
-   - Implement cache warmup on Redis failover recovery — when Redis comes back, pre-load the top 100 hottest keys within 5 seconds
+   - Implement cache warmup on Redis failover recovery â€” when Redis comes back, pre-load the top 100 hottest keys within 5 seconds
    - Log every cache degradation event to a dedicated Pulse entry type
 
 7. **Documentation:**

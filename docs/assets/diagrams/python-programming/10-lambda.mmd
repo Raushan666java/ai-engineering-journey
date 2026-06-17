@@ -1,0 +1,36 @@
+flowchart TB
+    A["Lambda and Functional Programming"] --> B["Lambda Functions"]
+    A --> C["Functional Tools"]
+    A --> D["functools Module"]
+    A --> E["operator Module"]
+    A --> F["Functional Pipelines"]
+
+    B --> B1["lambda args: expression"]
+    B --> B2["Single expression only"]
+    B --> B3["Use for simple callbacks"]
+    B --> B4["Use as sort key"]
+
+    C --> C1["map()"]
+    C --> C2["filter()"]
+    C --> C3["reduce()"]
+
+    C1 --> C1a["Apply function to every element"]
+    C1 --> C1b["Returns lazy iterator"]
+
+    C2 --> C2a["Keep truthy elements"]
+    C2 --> C2b["filter(None, iterable)"]
+
+    C3 --> C3a["Cumulative binary reduction"]
+    C3 --> C3b["From functools import reduce"]
+
+    D --> D1["partial()"]
+    D --> D2["total_ordering"]
+    D --> D3["lru_cache"]
+
+    E --> E1["itemgetter"]
+    E --> E2["attrgetter"]
+    E --> E3["add, mul, etc."]
+
+    F --> F1["Compose functions"]
+    F --> F2["Chain operations"]
+    F --> F3["Prefer comprehensions when readable"]

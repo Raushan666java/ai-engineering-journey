@@ -1,0 +1,21 @@
+flowchart TB
+  SM[Service Mesh / Istio]
+  SM --> SIDE[Sidecar Proxy]
+  SIDE --> EP[Envoy Proxy]
+
+  SM --> FEAT[Features]
+  FEAT --> TM[Traffic Management]
+  FEAT --> SECURE[Security mTLS]
+  FEAT --> OBS[Observability]
+  FEAT --> RELI[Resilience]
+  FEAT --> CA[Canary Deployments]
+
+  SM --> COMP[Comparison]
+  COMP --> APP[App-Level Resilience4j]
+  COMP --> MESH[Mesh-Level Istio]
+  COMP --> BEST[Best of Both]
+
+  SM --> BEN[Benefits]
+  BEN --> NCODE[No Code Changes]
+  BEN --> UNI[Unified Control]
+  BEN --> LANG[Language Agnostic]

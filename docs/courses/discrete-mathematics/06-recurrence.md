@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Recurrence Relations Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/06-recurrence.png)
+
 After completing this chapter, you will be able to:
 
 - Model sequences using recurrence relations and initial conditions

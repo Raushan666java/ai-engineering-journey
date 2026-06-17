@@ -23,6 +23,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![File Upload Download & Streaming Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/18-file-handling.png)
+
 ### 1. The MultipartFile Interface
 
 Spring's `org.springframework.web.multipart.MultipartFile` represents an uploaded file received in a multipart request. It wraps the raw HTTP multipart data and provides convenience methods.

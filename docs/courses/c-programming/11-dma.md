@@ -8,6 +8,8 @@
 - Detect and avoid memory leaks, dangling pointers, and double-free errors
 - Use Valgrind to verify memory correctness
 
+![C Dynamic Memory Allocation: malloc, calloc, realloc, free and Common Errors](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-11-dma.png)
+
 ## 11.1 Motivation for Dynamic Allocation
 
 Static and automatic allocation have limitations:

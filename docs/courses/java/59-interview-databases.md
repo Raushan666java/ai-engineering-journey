@@ -4,6 +4,8 @@
 
 ---
 
+![Database Interview Topics - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/59-interview-databases.png)
+
 ### Q1: What is the difference between JDBC and JPA, and when would you use each?
 
 **Answer:**

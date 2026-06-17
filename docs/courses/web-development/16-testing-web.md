@@ -12,6 +12,8 @@ By the end of this chapter, you will be able to:
 
 ## 16.1 Testing Pyramid
 
+![Testing Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/16-testing.png)
+
 ```
        /\
       /E2E\         Few: Critical user flows

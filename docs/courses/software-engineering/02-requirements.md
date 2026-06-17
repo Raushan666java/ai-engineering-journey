@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: classify requirement
 
 ## Theory
 
+![Requirements Engineering Process](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-02-requirements.png)
+
 ### The Requirements Engineering Process
 
 Requirements engineering is the branch of software engineering concerned with the real-world goals for, functions of, and constraints on a software system. It encompasses the set of activities from problem understanding through to the production of a validated specification. The requirements engineering process typically comprises four high-level activities: feasibility study, elicitation and analysis, specification, and validation. These activities are interleaved, iterative, and must be revisited as understanding evolves.

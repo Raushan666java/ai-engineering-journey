@@ -1,0 +1,31 @@
+flowchart TD
+    A["Lambda Expression"] --> B["Capture Clause [ ]"]
+    A --> C["Parameter List ( )"]
+    A --> D["Return Type -> ... optional"]
+    A --> E["Body { }"]
+
+    B --> F["= capture by value"]
+    B --> G["& capture by reference"]
+    B --> H["this capture member"]
+    B --> I["var captures by name"]
+    B --> J["*this capture copy C++ 17"]
+
+    F --> K["Implicit by-value"]
+    K --> L["Mutable to modify copies"]
+
+    G --> M["Implicit by-reference"]
+    M --> N["No mutable needed"]
+
+    O["mutable keyword"] --> P["Modify by-value captures"]
+    O --> Q["Operator() non-const"]
+
+    R["Generic Lambdas C++ 14"] --> S["auto parameters"]
+    S --> T["Template operator() generated"]
+
+    U["IIFE"] --> V["Define and call immediately"]
+    V --> W["constexpr initialization"]
+
+    X["STL Usage"] --> Y["Sort with custom comparator"]
+    X --> Z["find_if with predicate"]
+    X --> AA["transform with mapping"]
+    X --> AB["Custom accumulate"]

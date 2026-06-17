@@ -1,0 +1,36 @@
+flowchart TD
+    subgraph Chomsky_Hierarchy[Chomsky Hierarchy]
+        direction TB
+        T0[Type 0<br/>Recursively Enumerable<br/>Turing Machine]
+        T1[Type 1<br/>Context-Sensitive<br/>Linear Bounded Automaton]
+        T2[Type 2<br/>Context-Free<br/>Pushdown Automaton]
+        T3[Type 3<br/>Regular<br/>Finite Automaton]
+    end
+
+    T0 --> T1
+    T1 --> T2
+    T2 --> T3
+
+    subgraph Key_Topics[Key GATE Topics]
+        DFA[DFA Design & Minimization]
+        NFA[NFA to DFA Conversion]
+        RE[Regular Expressions]
+        CL[Closure Properties]
+        PL[Pumping Lemma]
+        CFG[Context-Free Grammar]
+        PDA[Pushdown Automata]
+        TM[Turing Machines]
+        UD[Undecidability]
+        CP[Complexity Classes P NP]
+    end
+
+    T3 --> DFA
+    T3 --> NFA
+    T3 --> RE
+    T3 --> CL
+    T3 --> PL
+    T2 --> CFG
+    T2 --> PDA
+    T0 --> TM
+    T0 --> UD
+    T0 --> CP

@@ -1,0 +1,35 @@
+mindmap
+  root((Regular Expressions))
+    Basis
+      ε (empty string)
+      ∅ (empty language)
+      a ∈ Σ (single symbol)
+    Operators
+      Union (r + s)
+      Concatenation (r · s)
+      Kleene Star (r*)
+      Derived
+        r⁺ (one or more)
+        r? (optional)
+    Precedence
+      Kleene star (highest)
+      Concatenation
+      Union (lowest)
+    Algebraic Laws
+      Associativity
+      Commutativity of union
+      Identity (∅, ε)
+      Distributive
+      Idempotence
+      Star laws
+    FA Equivalence
+      RE → NFA-ε
+        Thompson construction
+        Modular NFA building
+      DFA → RE
+        State elimination
+        Arden's lemma
+    Applications
+      Lexical analysis
+      Pattern matching
+      Text processing

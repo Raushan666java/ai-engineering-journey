@@ -9,6 +9,8 @@ By the end of this chapter, students will be able to:
 - Use `enumerate`, `zip`, `reversed`, and `sorted` for idiomatic iteration
 - Choose the appropriate loop construct for a given problem
 
+![Loops and Iteration](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/04-loops.png)
+
 ## 4.1 The for Loop
 
 The `for` loop iterates over any iterable (sequences, iterators, generators):

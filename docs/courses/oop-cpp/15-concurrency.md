@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 15.1 The Concurrency Landscape
 
+![Concurrency Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/15-concurrency.png)
+
 Modern hardware provides multiple cores that execute threads in parallel. C++11 introduced a portable threading library. Two fundamental issues arise:
 
 1. **Data races**: multiple threads access the same memory location without synchronisation

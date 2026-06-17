@@ -1,0 +1,35 @@
+flowchart TB
+  EXC[Java Exception Handling]
+  EXC --> HIER[Exception Hierarchy]
+  HIER --> TROW[Throwable]
+  TROW --> ERR[Error]
+  TROW --> EXC2[Exception]
+  EXC2 --> RTE[RuntimeException]
+  EXC2 --> CKE[Checked Exceptions]
+
+  EXC --> MECH[Mechanisms]
+  MECH --> TCF[try / catch / finally]
+  MECH --> TWR[try-with-resources]
+  MECH --> THROW[throw]
+  MECH --> THROWS[throws]
+
+  EXC --> BEST[Best Practices]
+  BEST --> FAIL[Fail Fast]
+  BEST --> WRAP[Wrapping]
+  BEST --> LOG[Logging]
+  BEST --> CUST[Custom Exceptions]
+
+  EXC --> IO[I/O Streams]
+  IO --> BYTE[Byte Streams]
+  IO --> CHAR[Character Streams]
+  IO --> BUF[Buffered Streams]
+
+  EXC --> NIO[NIO and NIO.2]
+  NIO --> CHAN[Channels Buffers]
+  NIO --> PATH[Path Files]
+  NIO --> MMF[Memory-Mapped Files]
+
+  EXC --> SER[Java Serialization]
+  SER --> OBJ[ObjectOutputStream]
+  SER --> SERID[serialVersionUID]
+  SER --> TRANSIENT[transient]

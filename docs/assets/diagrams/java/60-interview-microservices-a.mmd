@@ -1,0 +1,20 @@
+flowchart LR
+  CMD[Command Model] --> WRITE[Write DB]
+  QRY[Query Model] --> READ[Read DB]
+
+  WRITE --> EVENT[Domain Events]
+  EVENT --> EVTBUS[Event Bus]
+  EVTBUS --> PROJ[Projector]
+  PROJ --> READ
+
+  subgraph Benefits[Benefits]
+    B1[Separate Read / Write Optimizations]
+    B2[Independent Scaling]
+    B3[Different Data Stores]
+  end
+
+  subgraph Challenges[Challenges]
+    C1[Eventual Consistency]
+    C2[Complexity]
+    C3[Event Versioning]
+  end

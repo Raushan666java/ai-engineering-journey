@@ -6,7 +6,7 @@ After completing this chapter, students will be able to: identify basic blocks f
 
 ## Theory
 
-![Control Flow Graphs, Data-Flow Analysis and Loop Optimizations](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch08-cfa-dfa-loop.png)
+![Control Flow Analysis — Basic Blocks, Dominators, Loops](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch-11-cfa.png)
 
 ### Basic Blocks Revisited
 

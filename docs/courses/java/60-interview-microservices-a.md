@@ -1,5 +1,7 @@
 # Chapter 60: Microservices Interview Q&A (Part A — Q1–Q8)
 
+![CQRS - Command Query Responsibility Segregation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/60-interview-microservices-a.png)
+
 ### Q1: What is microservice architecture and how does it differ from monolithic architecture?
 
 **Answer:**

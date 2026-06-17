@@ -1,0 +1,43 @@
+stateDiagram-v2
+    [*] --> Build
+    Build --> Simplify: Construct interference graph<br/>from live ranges
+    Simplify --> Select: Remove low-degree nodes<br/>(degree < K) to stack
+    Simplify --> SpillMark: All remaining nodes<br/>have degree ≥ K
+    SpillMark --> Simplify: Mark spill candidate,<br/>remove and continue
+    SpillMark --> Select: No more nodes
+
+    Select --> Coalesce: Pop nodes from stack,<br/>assign colors (optimistic)
+    Select --> ConfirmSpill: No color available<br/>for optimistic node
+    ConfirmSpill --> InsertSpills: Spill confirmed
+    InsertSpills --> Build: Insert loads/stores,<br/>restart allocation
+
+    Coalesce --> Weighting: Conservative coalescing<br/>(Briggs/George criterion)
+    Weighting --> LoopWeight: Weighted spill costs<br/>(10^depth for loops)
+    Weighting --> Remat: Rematerialization<br/>(recompute cheap values)
+    Weighting --> Split: Live-range splitting<br/>(inner vs outer loop)
+    LoopWeight --> [*]
+    Remat --> [*]
+    Split --> [*]
+
+    state Build {
+        [*] --> LiveRange: Live-variable analysis<br/>for each definition
+        LiveRange --> InterGraph: Add edges between<br/>overlapping live ranges
+        InterGraph --> SpillCost: Compute spill cost<br/>per node
+    }
+
+    state Chaitin["Chaitin's Algorithm"]
+        Build --> Simplify
+        Simplify --> Select
+    end
+
+    state Briggs["Briggs Improvement"]
+        Simplify --> SpillMark: Push degree≥K nodes<br/>to stack optimistically
+        SpillMark --> Select: Hope neighbors free<br/>a color later
+    end
+
+    state Coalesce {
+        Aggressive: Merge all copy-related pairs
+        Conservative: Merge only if safe
+        Conservative --> BriggsCriterion: Merged node has<br/><K neighbors with deg≥K
+        Conservative --> GeorgeCriterion: All high-degree<br/>neighbors already interfere
+    }

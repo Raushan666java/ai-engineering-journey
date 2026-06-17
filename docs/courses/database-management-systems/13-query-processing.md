@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Query Processing Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch13-query-processing.png)
+
 ### 13.1 Query Processing Overview
 
 When a user submits a SQL query, the DBMS transforms it through several stages:

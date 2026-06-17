@@ -25,6 +25,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Profiling Tools
 
+![Performance Tuning Workflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/06-performance.png)
+
 A profiler observes a running application and reports where it spends CPU time, allocates memory, or blocks on locks. Different profilers trade off precision, overhead, and ease of use.
 
 ### 1.1 Java Mission Control & Flight Recorder

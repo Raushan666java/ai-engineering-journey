@@ -9,6 +9,8 @@
 - Refactor monolithic classes into single-responsibility components without breaking existing contracts
 ---
 ## Theory
+![SOLID and OOP Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/10-solid-oop.png)
+
 ### Object-Oriented Programming Foundations
 
 Object-Oriented Programming (OOP) rests on four pillars: Encapsulation, Abstraction, Inheritance, and Polymorphism. Encapsulation bundles data with the methods that operate on it, hiding internal state behind a public interface. Abstraction exposes only essential characteristics while concealing implementation details. Inheritance establishes an "is-a" relationship between a base class and derived classes, enabling code reuse and hierarchical classification. Polymorphism allows objects of different types to respond to the same interface contract, dispatching the correct method at runtime.

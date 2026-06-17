@@ -1,0 +1,32 @@
+flowchart TB
+    subgraph Local_Search["Local Search for CSPs"]
+        Init["Random complete assignment"]
+        MinConflict["Min-Conflicts Heuristic<br/>Min-conflict value for chosen var"]
+        Iterate["Repeat until solution<br/>or restart limit"]
+    end
+
+    subgraph Problem_Mappings["CSP Problem Mappings"]
+        NQueens["N-Queens<br/>Row var, Column domain"]
+        MapColoring["Map Coloring<br/>Region var, Color domain"]
+        Timetabling["Timetabling<br/>Course var, Slot domain"]
+        Sudoku["Sudoku<br/>Cell var, {1-9} domain<br/>alldiff global constraints"]
+        Cryptarithmetic["Cryptarithmetic<br/>SEND + MORE = MONEY"]
+    end
+
+    subgraph Extended_CSPs["Extended CSP Variants"]
+        DCOP["Distributed CSP (DCSP)<br/>Multi-agent coordination"]
+        WeightedCSP["Weighted CSP<br/>Soft constraints with cost"]
+        DynamicCSP["Dynamic CSP<br/>Constraints change over time"]
+        TemporalCSP["Temporal CSP<br/>Time window constraints"]
+    end
+
+    subgraph Complexity["CSP Complexity"]
+        NPComplete["General CSP: NP-Complete"]
+        Tree["Tree-structured: O(n*d^2) P-time"]
+        Horn["Horn Clauses: P-time"]
+        SAT["2-SAT: P-time<br/>3-SAT: NP-Complete"]
+    end
+
+    Local_Search --> Problem_Mappings
+    Problem_Mappings --> Extended_CSPs
+    Local_Search --> Complexity

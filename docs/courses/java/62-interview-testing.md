@@ -2,6 +2,8 @@
 
 This chapter covers everything you need to know about testing Java and Spring Boot applications for technical interviews. From the testing pyramid and JUnit 5 features to Mockito mocking, Spring Boot testing slices, Testcontainers for integration testing, performance testing with JMH and Gatling, and code coverage with JaCoCo and Pitest — each question provides detailed explanations with complete, working code examples. A strong testing strategy is the hallmark of a professional software engineer. Understanding these patterns will help you build reliable, maintainable, and well-tested applications.
 
+![Testing Interview Topics - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/62-interview-testing.png)
+
 ### Q1: Explain the testing pyramid. What should you test at each level?
 
 **Answer:**

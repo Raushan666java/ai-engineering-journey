@@ -1,0 +1,37 @@
+flowchart TB
+    subgraph CSP_Basics["Constraint Satisfaction Problems"]
+        Variables["Variables {X1, X2, ...}"]
+        Domains["Domains {D1, D2, ...}<br/>Finite / Infinite / Continuous"]
+        Constraints["Constraints<br/>Unary / Binary / Global"]
+    end
+
+    subgraph CSP_Types["Types of CSPs"]
+        Discrete["Discrete<br/>Map coloring, Sudoku<br/>Boolean SAT"]
+        Continuous["Continuous<br/>Scheduling<br/>Linear constraints"]
+        Preferences["Preferences<br/>Soft constraints<br/>Weight optimization"]
+    end
+
+    subgraph Inference_Prop["Inference / Propagation"]
+        AC3["AC-3<br/>Arc Consistency<br/>O(n^2 * d^3)"]
+        FC["Forward Checking<br/>After each assignment"]
+        PC["Path Consistency"]
+        KCC["K-Consistency<br/>Higher-order consistency"]
+    end
+
+    subgraph Backtracking["Backtracking Search"]
+        DVO["MRV<br/>Minimum Remaining Values"]
+        LCV["LCV<br/>Least Constraining Value"]
+        Forward_Check["Forward Checking"]
+        FC_CBJ["Conflict-Directed Backjumping<br/>(BJ + CBJ)"]
+    end
+
+    subgraph Structure["Structure Exploitation"]
+        Tree["Tree-structured CSP<br/>O(n*d^2)"]
+        Cutset["Cutset Conditioning<br/>Cutset size c -> O(d^c * (n-c)d^2)"]
+        Decomposition["Tree Decomposition<br/>Cluster constraints"]
+    end
+
+    CSP_Basics --> CSP_Types
+    CSP_Basics --> Inference_Prop
+    CSP_Basics --> Backtracking
+    CSP_Basics --> Structure

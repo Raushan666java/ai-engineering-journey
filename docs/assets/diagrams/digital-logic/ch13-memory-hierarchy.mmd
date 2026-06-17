@@ -1,0 +1,42 @@
+flowchart TD
+    subgraph Locality["Principle of Locality"]
+        Temporal["Temporal Locality<br/>accessed again soon<br/>→ loop variables, counters"]
+        Spatial["Spatial Locality<br/>nearby locations accessed<br/>→ arrays, sequential code"]
+    end
+
+    subgraph CacheOrg["Cache Organisation"]
+        Direct["Direct-Mapped<br/>block → 1 fixed line<br/>Tag | Index | Offset<br/>simple, conflict-prone"]
+        SetAssoc["Set-Associative (n-way)<br/>block → 1 set, n ways<br/>Tag compares n ways<br/>good balance"]
+        FullAssoc["Fully Associative<br/>block → any line<br/>comparator per line<br/>no conflict misses"]
+    end
+
+    subgraph Replace["Replacement Policies"]
+        LRU["LRU: replace least<br/>recently used line"]
+        FIFO["FIFO: replace oldest<br/>first loaded line"]
+        Random["Random: simple<br/>counter to implement"]
+    end
+
+    subgraph WritePolicies["Write Policies"]
+        WT["Write-Through<br/>write cache + memory<br/>consistent but slow<br/>write buffer helps"]
+        WBacc["Write-Back<br/>write cache only<br/>dirty bit marks modified<br/>write-back on eviction"]
+        WA["Write-Allocate<br/>fetch block on miss<br/>then write (used w/ WB)"]
+        WNA["Write-No-Allocate<br/>write directly to memory<br/>skip cache (used w/ WT)"]
+    end
+
+    subgraph CachePerf["Cache Performance"]
+        AMAT["AMAT = Hit Time +<br/>Miss Rate × Miss Penalty"]
+        Optimizations["Optimizations:<br/>larger blocks, higher<br/>associativity, multi-level<br/>L1 → L2 → L3 caches"]
+    end
+
+    subgraph VirtMem["Virtual Memory"]
+        Page["Page: 4 KB unit<br/>VPN → PFN translation"]
+        PageTable["Page Table<br/>per-process mapping<br/>flat or hierarchical"]
+        PageFault["Page Fault<br/>OS loads from disk<br/>when page not in RAM"]
+        TLB["TLB: Translation<br/>Lookaside Buffer<br/>fully-associative cache<br/>of VPN→PFN mappings"]
+    end
+
+    Locality --> CacheOrg
+    CacheOrg --> Replace
+    CacheOrg --> WritePolicies
+    CacheOrg --> CachePerf
+    VirtMem --> TLB

@@ -1,0 +1,45 @@
+flowchart TB
+  AI[Spring AI]
+  AI --> PROV[Providers]
+  PROV --> OPENAI[OpenAI]
+  PROV --> ANTH[Anthropic / Claude]
+  PROV --> OLLA[Ollama Local]
+
+  AI --> CHAT[Chat Client]
+  CHAT --> SYNC[Synchronous]
+  CHAT --> STREAM[Streaming]
+  CHAT --> MULTI[Multi-Turn]
+
+  AI --> OUT[Structured Output]
+  OUT --> BOC[BeanOutputConverter]
+  OUT --> MAP[Output Mapping]
+
+  AI --> TOOLS[Tool Calling]
+  TOOLS --> TANN[Tool Annotation]
+  TOOLS --> REG[Tool Registration]
+
+  AI --> VECTOR[Vector Stores]
+  VECTOR --> PGV[PGVector]
+  VECTOR --> REDIS[Redis]
+  VECTOR --> CHROMA[Chroma]
+  VECTOR --> EMB[Embeddings]
+
+  AI --> RAG[RAG Pipeline]
+  RAG --> INGEST[Document Ingestion]
+  RAG --> SPLIT[Splitting / Chunking]
+  RAG --> STORE[Store Embeddings]
+  RAG --> RETR[Retrieval]
+  RAG --> AUGM[Augment Prompt]
+
+  AI --> PROMPT[Prompt Templates]
+  PROMPT --> SYSTEM[System Prompt]
+  PROMPT --> USER[User Message]
+  PROMPT --> REUSE[Reusable Templates]
+
+  AI --> AGENTS[Multi-Agent]
+  AGENTS --> SUP[Supervisor Pattern]
+  AGENTS --> ROUTE[Routing Pattern]
+
+  AI --> ADVISORS[Advisors]
+  ADVISORS --> MEM[Chat Memory]
+  ADVISORS --> CONTEXT[Context QA]

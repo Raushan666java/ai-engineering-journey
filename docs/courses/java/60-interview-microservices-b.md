@@ -1,3 +1,5 @@
+![Kubernetes Microservices Deployment - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/60-interview-microservices-b.png)
+
 ### Q9: What is CQRS and how do you implement it?
 
 **Answer:**

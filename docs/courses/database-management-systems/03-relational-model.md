@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Relational Model Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch03-relational-model.png)
+
 ### 3.1 Introduction to the Relational Model
 
 The relational model was proposed by E.F. Codd in 1970 in his seminal paper "A Relational Model of Data for Large Shared Data Banks." It revolutionized database management by providing a mathematically rigorous framework for data organization and manipulation.

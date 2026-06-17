@@ -11,6 +11,8 @@ By the end of this chapter, students will be able to:
 - Write doctests embedded in documentation
 - Measure and improve test coverage
 
+![APIs and Testing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/19-apis-testing.png)
+
 ## 19.1 HTTP Requests
 
 ### 19.1.1 The requests Library

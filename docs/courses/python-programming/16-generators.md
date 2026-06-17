@@ -9,6 +9,8 @@ By the end of this chapter, students will be able to:
 - Delegate to subgenerators with `yield from`
 - Apply the `itertools` module for efficient iteration patterns
 
+![Generators and itertools](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/16-generators.png)
+
 ## 16.1 Generator Functions
 
 A generator function contains `yield` and returns a generator iterator:

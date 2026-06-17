@@ -1,3 +1,4 @@
+![Database Advanced Topics - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/59-interview-databases-d.png)
 
 ### Q26: What is database sharding, and how do you implement it?
 

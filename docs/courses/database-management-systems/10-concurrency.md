@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Concurrency Control Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch10-concurrency.png)
+
 ### 10.1 The Concurrency Problem
 
 When multiple transactions execute simultaneously without coordination, several problems arise:

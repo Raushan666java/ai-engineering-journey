@@ -1,0 +1,47 @@
+flowchart TD
+    subgraph "Tool Interface"
+        TI1["description()<br/>Purpose for the model"]
+        TI2["schema(JsonSchema)<br/>Parameter definitions"]
+        TI3["handle(Request)<br/>Execution logic"]
+    end
+
+    subgraph "Tool Lifecycle"
+        TL1["Agent invoked with tools"]
+        TL2["SDK sends tool defs to LLM"]
+        TL3["LLM decides to call tool(s)"]
+        TL4["SDK intercepts and executes handle()"]
+        TL5["Results returned to LLM"]
+        TL6["Multi-step reasoning loop"]
+    end
+
+    subgraph "Tool Types"
+        TT1["Custom Tools<br/>make:tool RandomNumber"]
+        TT2["SimilaritySearch<br/>Vector knowledge retrieval"]
+        TT3["MCP Tools<br/>Remote server tools"]
+        TT4["Provider Tools<br/>Web search fetch file"]
+    end
+
+    subgraph "Registration"
+        RT1["tools() method on Agent"]
+        RT2["withTools() chaining"]
+        RT3["Route registration MCP"]
+    end
+
+    TI1 --> TL1
+    TL1 --> TL2
+    TL2 --> TL3
+    TL3 --> TL4
+    TL4 --> TL5
+    TL5 --> TL6
+    TL6 --> TL3
+
+    TT1 --> RT1
+    TT2 --> RT1
+    TT3 --> RT3
+    TT4 --> RT1
+    RT1 --> TI1
+
+    style TI1 fill:#4a90d9,color:#fff
+    style TL1 fill:#27ae60,color:#fff
+    style TT1 fill:#e67e22,color:#fff
+    style RT1 fill:#9b59b6,color:#fff

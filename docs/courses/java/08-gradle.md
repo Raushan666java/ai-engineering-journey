@@ -28,6 +28,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Build Scripts
 
+![Gradle Build System & Lifecycle](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/08-gradle.png)
+
 A Gradle build is defined by three key files in the project root:
 
 | File | Purpose |

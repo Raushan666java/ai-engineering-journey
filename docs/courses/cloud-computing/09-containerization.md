@@ -1,4 +1,4 @@
-# Chapter 09: Containerization and Orchestration
+﻿# Chapter 09: Containerization and Orchestration
 
 ## Learning Objectives
 
@@ -25,7 +25,7 @@ Docker is the most popular platform for building, shipping, and running containe
 - **Container:** A runnable instance of an image.
 - **Registry:** A storage and distribution system for Docker images (e.g., Docker Hub, Amazon ECR).
 
-![Containerization Architecture](../assets/images/diagrams/cloud-computing/ch09-containerization.png)
+![Containerization Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch09-containerization.png)
 
 ### Container Orchestration with Kubernetes
 As the number of containers grows, managing them manually becomes impossible. Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications.

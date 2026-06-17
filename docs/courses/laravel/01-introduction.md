@@ -1,4 +1,4 @@
-# Chapter 1: Introduction to Laravel 13
+﻿# Chapter 1: Introduction to Laravel 13
 
 ---
 
@@ -16,17 +16,20 @@
 
 ## Theory
 
+![Introduction to Laravel](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/01-introduction.png)
+
+
 ### 1.1 What is Laravel?
 
-Laravel is an open-source PHP web framework created by Taylor Otwell in June 2011. Otwell, a web developer from Arkansas, had been building applications with CodeIgniter and saw an opportunity to create something better — a framework that combined the best ideas from Ruby on Rails, ASP.NET MVC, and existing PHP frameworks into a cohesive, elegant package. The first beta of Laravel 1.0 was released on GitHub on June 9, 2011, and immediately resonated with developers who were frustrated with PHP's fragmented ecosystem.
+Laravel is an open-source PHP web framework created by Taylor Otwell in June 2011. Otwell, a web developer from Arkansas, had been building applications with CodeIgniter and saw an opportunity to create something better â€” a framework that combined the best ideas from Ruby on Rails, ASP.NET MVC, and existing PHP frameworks into a cohesive, elegant package. The first beta of Laravel 1.0 was released on GitHub on June 9, 2011, and immediately resonated with developers who were frustrated with PHP's fragmented ecosystem.
 
-At the time, PHP frameworks fell into two camps: lightweight but underpowered (CodeIgniter, CakePHP) or powerful but overly complex (Symfony). Laravel struck a balance. It offered modern features like routing, ORM, authentication, and templating, but wrapped them in what Otwell called "developer ergonomics" — clean syntax, intuitive method names, and sensible defaults.
+At the time, PHP frameworks fell into two camps: lightweight but underpowered (CodeIgniter, CakePHP) or powerful but overly complex (Symfony). Laravel struck a balance. It offered modern features like routing, ORM, authentication, and templating, but wrapped them in what Otwell called "developer ergonomics" â€” clean syntax, intuitive method names, and sensible defaults.
 
 The core philosophy rests on three pillars:
 
 - **Elegant Syntax**: Laravel code reads like well-written prose. Database queries are expressed fluently. Relationships read naturally. Method chains are predictable. The goal is to minimize the distance between what you think and what you type.
-- **Expressive**: Common web development tasks — database queries, email delivery, authentication, caching, file storage — are expressed in as few lines as possible without sacrificing clarity. A simple contact form submission might be five lines of controller code.
-- **Convention over Configuration**: Laravel ships with sensible defaults. You do not need to write a configuration file to render a view, connect to a database, or send email. When you need to override conventions, the escape hatch is always there — but you rarely need it.
+- **Expressive**: Common web development tasks â€” database queries, email delivery, authentication, caching, file storage â€” are expressed in as few lines as possible without sacrificing clarity. A simple contact form submission might be five lines of controller code.
+- **Convention over Configuration**: Laravel ships with sensible defaults. You do not need to write a configuration file to render a view, connect to a database, or send email. When you need to override conventions, the escape hatch is always there â€” but you rarely need it.
 
 Laravel also brands itself as a *progressive framework*. You can adopt only the parts you need for your task. Want Eloquent for database queries but not Blade for templating? That is fine. Want the router but not the service container? Also fine. You can start with a single route file and gradually adopt more pieces as your application grows. This makes Laravel equally suitable for a five-route microservice and a multi-tenant SaaS platform.
 
@@ -36,7 +39,7 @@ Laravel follows an annual major release cadence, shipping each August. Laravel 1
 
 **PHP 8.3 Minimum**: Laravel 13 requires PHP 8.3 or higher. This gives the framework access to language features like typed class constants, the `json_validate()` function, `mb_str_pad()`, and the `#[Override]` attribute. The framework's core uses these features for better type safety, performance, and self-documentation.
 
-**Annual Release Cadence**: The predictable August release schedule allows teams to plan upgrades. Each major version receives 18 months of bug fixes and two years of security fixes. The upgrade path between consecutive versions is designed to be minimal — Laravel's core team treats breaking changes as a last resort.
+**Annual Release Cadence**: The predictable August release schedule allows teams to plan upgrades. Each major version receives 18 months of bug fixes and two years of security fixes. The upgrade path between consecutive versions is designed to be minimal â€” Laravel's core team treats breaking changes as a last resort.
 
 **Minimal Breaking Changes Philosophy**: When a breaking change is unavoidable, Laravel provides comprehensive upgrade guides, automation via Laravel Shift (a paid service that rewrites your code for the new version), and deprecation warnings that span multiple versions. Most applications upgrade from N-1 to N in under an hour.
 
@@ -67,7 +70,7 @@ Herd is Laravel's native PHP development environment for macOS and Windows. It b
 herd create my-app
 ```
 
-Herd automatically serves projects from `~/Herd/` at `{folder}.test` with HTTPS. It provides a GUI for managing PHP versions (you can set different PHP versions per project), controlling services like MySQL and Redis, and accessing logs. No configuration files, no Docker overhead — it just works.
+Herd automatically serves projects from `~/Herd/` at `{folder}.test` with HTTPS. It provides a GUI for managing PHP versions (you can set different PHP versions per project), controlling services like MySQL and Redis, and accessing logs. No configuration files, no Docker overhead â€” it just works.
 
 #### Laravel Sail
 
@@ -109,7 +112,7 @@ A fresh Laravel application follows a consistent, well-documented layout.
 
 | Directory / File | Purpose |
 |---|---|
-| `app/` | Core application code — models, controllers, middleware, providers |
+| `app/` | Core application code â€” models, controllers, middleware, providers |
 | `bootstrap/` | Framework bootstrapping files |
 | `config/` | Configuration files, one per system concern |
 | `database/` | Migrations, factories, seeders |
@@ -130,7 +133,7 @@ A fresh Laravel application follows a consistent, well-documented layout.
 | `Http/Middleware/` | HTTP middleware for request filtering |
 | `Http/Requests/` | Form request validation classes |
 | `Models/` | Eloquent model classes |
-| `Providers/` | Service providers — the bootstrapping logic |
+| `Providers/` | Service providers â€” the bootstrapping logic |
 
 The `app/Models` directory is notable. Models live under `app/Models/` by convention rather than directly in `app/`. This keeps the namespace clean and predictable.
 
@@ -274,7 +277,7 @@ Laravel 13 is explicitly designed to work well with AI coding assistants. This i
 
 **Laravel for Agents**: The ecosystem publishes guidelines for AI coding tools. These guidelines recommend using `artisan make` commands over manual file creation, defining routes explicitly rather than relying on magic, and writing tests first. They also document file path conventions, namespace rules, and naming patterns that AI agents should follow.
 
-### 1.8 Hello World — Complete Walkthrough
+### 1.8 Hello World â€” Complete Walkthrough
 
 We will build "Hello World" three ways, each demonstrating a deeper layer.
 
@@ -408,7 +411,7 @@ Laravel's first-party ecosystem is one of its greatest strengths. These packages
 | **Telescope** | Debugging | Request/query/exception inspector |
 | **Pulse** | Monitoring | Production health (slow queries, users, queues) |
 | **Sanctum** | Auth | API token auth for SPAs and mobile apps |
-| **Socialite** | Auth | OAuth — GitHub, Google, Facebook, Twitter |
+| **Socialite** | Auth | OAuth â€” GitHub, Google, Facebook, Twitter |
 | **Cashier** | Billing | Subscription management (Stripe, Paddle) |
 | **Scout** | Search | Full-text search (Meilisearch, Algolia) |
 | **Sail** | Dev | Docker development environment |
@@ -433,7 +436,7 @@ Laravel's first-party ecosystem is one of its greatest strengths. These packages
 - Artisan CLI provides scaffolding commands for models, controllers, migrations, and middleware
 - Environment configuration uses `.env` files and a `config/` directory with `env()` and `config()` helpers
 - The framework is designed for AI-assisted development with predictable, agent-friendly conventions
-- Hello World can be built at three depth levels — closure, controller, or full MVC with Blade
+- Hello World can be built at three depth levels â€” closure, controller, or full MVC with Blade
 - The first-party ecosystem spans deployment, monitoring, admin, search, billing, real-time, and AI
 
 ### 1.10 Development Workflow
@@ -450,7 +453,7 @@ A typical Laravel development session follows this rhythm:
 8. **Test**: Write tests with Pest or PHPUnit in the `tests/` directory
 9. **Iterate**: Artisan commands, Tinker REPL, and Telescope debugging support rapid iteration
 
-This workflow is intentionally linear and predictable — another reason AI agents excel at Laravel development. Each step has a clear entry point and a known output location.
+This workflow is intentionally linear and predictable â€” another reason AI agents excel at Laravel development. Each step has a clear entry point and a known output location.
 
 ---
 

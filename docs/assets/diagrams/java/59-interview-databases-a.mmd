@@ -1,0 +1,12 @@
+flowchart LR
+  subgraph ManyToMany[ManyToMany]
+    S1[Student] --- JC[Join Table]
+    JC --- C1[Course]
+  end
+  subgraph JoinEntity[Join Entity Pattern]
+    S2[Student] --- ENR[Enrollment]
+    ENR --- C2[Course]
+    ENR --- ATTR[Extra Attributes]
+  end
+  ManyToMany -->|No extra cols| Simple
+  JoinEntity -->|Add cols| Flexible

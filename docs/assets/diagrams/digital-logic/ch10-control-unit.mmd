@@ -1,0 +1,54 @@
+flowchart TD
+    subgraph CtrlUnit["Control Unit Overview"]
+        Inputs["Inputs<br/>Instruction Opcode (6 bits)<br/>Clock<br/>Zero Flag"]
+        Outputs["Outputs<br/>RegWrite, MemRead, MemWrite<br/>ALUSrc, MemtoReg, Branch<br/>ALUOp (2 bits)"]
+        CU["Control Unit<br/>generates datapath control signals<br/>from instruction opcode"]
+        Inputs --> CU --> Outputs
+    end
+
+    subgraph Hardwired["Hardwired Control"]
+        HwDesc["Control implemented as<br/>combinational logic + FSM<br/>gates, flip-flops, decoders"]
+        Decoder["Instruction Decoder<br/>n-bit opcode → one-hot<br/>sum of product terms"]
+        PLA["PLA Implementation<br/>AND array: product terms<br/>OR array: output sums<br/>area-efficient for large logic"]
+        FSM["Control FSM<br/>multi-cycle: fetch → decode →<br/>execute → write-back states"]
+        FSMState["State Transition<br/>based on opcode & clock<br/>Moore or Mealy machine"]
+        Decoder --> PLA
+        FSM --> FSMState
+        HwDesc --> Decoder
+        HwDesc --> FSM
+    end
+
+    subgraph Microprog["Microprogrammed Control"]
+        MicDesc["Control signals stored in<br/>control store ROM<br/>sequenced by micro-PC"]
+        ControlStore["Control Store<br/>ROM array of micro-instructions<br/>each word = control bits"]
+        uPC["Micro-PC<br/>address of current<br/>micro-instruction"]
+        uInst["Micro-Instruction<br/>Control field bits<br/>Next-address field<br/>Sequencing control bits"]
+        MappingROM["Mapping ROM<br/>translates opcode →<br/>starting micro-address"]
+        SeqCtrl["Sequencing Modes<br/>Increment: uPC + 1<br/>Branch: if condition true<br/>Jump: unconditional<br/>Return: from stack"]
+        MappingROM --> ControlStore
+        ControlStore --> uInst
+        uPC --> ControlStore
+        uInst --> SeqCtrl
+        SeqCtrl --> uPC
+        MicDesc --> ControlStore
+        MicDesc --> MappingROM
+        MicDesc --> uPC
+    end
+
+    subgraph Horizontal["Horizontal Microprog"]
+        HDesc["Each bit = one signal<br/>100-200 bits wide<br/>minimal decoding<br/>high parallelism<br/>fast execution"]
+    end
+
+    subgraph Vertical["Vertical Microprog"]
+        VDesc["Encoded control fields<br/>16-40 bits wide<br/>extensive decoding<br/>limited parallelism<br/>slower execution"]
+    end
+
+    subgraph Compare["Comparison"]
+        C1["Hardwired: fast, complex design,<br/>hard to modify, used in RISC"]
+        C2["Microprogrammed: slower,<br/>moderate design, easy to modify,<br/>used in CISC"]
+    end
+
+    Hardwired --> Compare
+    Microprog --> Compare
+    Microprog --> Horizontal
+    Microprog --> Vertical

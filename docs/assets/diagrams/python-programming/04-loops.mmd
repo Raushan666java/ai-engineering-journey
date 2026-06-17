@@ -1,0 +1,30 @@
+flowchart TB
+    A["Python Loops"] --> B["for Loop"]
+    A --> C["while Loop"]
+    A --> D["Loop Control"]
+    A --> E["Iteration Helpers"]
+
+    B --> F["range(start, stop, step)"]
+    B --> G["Iterate over iterable"]
+    B --> H["Iterate over copy to modify"]
+
+    C --> I["while condition:"]
+    C --> J["while True: break pattern"]
+
+    D --> K["break"]
+    D --> L["continue"]
+    D --> M["else clause"]
+
+    K --> K1["Exit loop immediately"]
+    L --> L1["Skip to next iteration"]
+    M --> M1["Runs if no break occurred"]
+
+    E --> N["enumerate()"]
+    E --> O["zip()"]
+    E --> P["reversed()"]
+    E --> Q["sorted()"]
+
+    N --> N1["index, value pairs"]
+    O --> O1["Parallel iteration"]
+    P --> P1["Reverse iteration"]
+    Q --> Q1["Sorted iteration"]

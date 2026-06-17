@@ -1,0 +1,68 @@
+flowchart TD
+    subgraph "Client Layer"
+        CL1["Store Front<br/>Livewire Inertia"]
+        CL2["Customer Browser"]
+        CL3["Admin Dashboard"]
+    end
+
+    subgraph "API Gateway"
+        GW1["Load Balancer"]
+        GW2["Rate Limiting"]
+        GW3["Auth Sanctum"]
+    end
+
+    subgraph "Laravel Backend"
+        LB1["Octane Workers"]
+        LB2["Multi-tenant Scopes"]
+        LB3["Product Catalog<br/>100K SKUs per store"]
+        LB4["Order Management<br/>10M orders year"]
+        LB5["Cart Checkout<br/>Redis-backed cart"]
+    end
+
+    subgraph "Search Layer"
+        SE1["Laravel Scout"]
+        SE2["Meilisearch"]
+        SE3["Faceted filters"]
+        SE4["Typo tolerance"]
+    end
+
+    subgraph "Payment and Queue"
+        PQ1["Stripe Cashier"]
+        PQ2["Horizon Workers"]
+        PQ3["Email Notifications"]
+        PQ4["Inventory Updates"]
+    end
+
+    subgraph "Data Layer"
+        DL1["PostgreSQL<br/>Tenant-isolated"]
+        DL2["Redis Cache<br/>Per-tenant namespaces"]
+        DL3["S3 Media Storage"]
+    end
+
+    CL1 --> GW1
+    CL2 --> GW1
+    CL3 --> GW1
+    GW1 --> LB1
+    LB1 --> LB2
+    LB1 --> LB3
+    LB1 --> LB4
+    LB1 --> LB5
+
+    LB3 --> SE1
+    SE1 --> SE2
+    SE2 --> SE3
+    SE2 --> SE4
+
+    LB4 --> PQ1
+    LB4 --> PQ2
+    PQ2 --> PQ3
+    PQ2 --> PQ4
+
+    LB1 --> DL1
+    LB1 --> DL2
+    LB1 --> DL3
+
+    style GW1 fill:#4a90d9,color:#fff
+    style LB1 fill:#27ae60,color:#fff
+    style SE1 fill:#e67e22,color:#fff
+    style DL1 fill:#9b59b6,color:#fff

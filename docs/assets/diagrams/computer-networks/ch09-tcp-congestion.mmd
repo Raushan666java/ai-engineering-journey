@@ -1,0 +1,47 @@
+flowchart TB
+    subgraph Basics["Fundamentals"]
+        FC["Flow Control: prevent receiver overflow via rwnd"]
+        CC["Congestion Control: prevent network overload via cwnd"]
+        Effective["Effective Window = min(cwnd, rwnd)"]
+    end
+
+    subgraph Phases["TCP Congestion Control Phases"]
+        SS["Slow Start: exponential growth"]
+        CA["Congestion Avoidance: linear AIMD growth"]
+        FR["Fast Retransmit: 3 dup ACKs trigger retransmit"]
+        FR2["Fast Recovery: avoid returning to slow start"]
+    end
+
+    subgraph SSdetails["Slow Start Details"]
+        Init["Initial cwnd = 10 MSS (RFC 6928)"]
+        Double["cwnd doubles every RTT"]
+        Ssthresh["Transition at ssthresh or on loss"]
+    end
+
+    subgraph CAdetails["Congestion Avoidance"]
+        AIMD["Additive Increase: +1 MSS per RTT"]
+        MD["Multiplicative Decrease: halve cwnd on loss"]
+        Sawtooth["Characteristic sawtooth pattern"]
+    end
+
+    subgraph Variants["TCP Variants"]
+        Tahoe["Tahoe: cwnd=1 on triple ACK"]
+        Reno["Reno: fast recovery, halve cwnd"]
+        NewReno["NewReno: handle multiple losses per window"]
+        Cubic["Cubic: RTT-independent cubic function"]
+        BBR["BBR: model-based rate, not loss-based"]
+    end
+
+    subgraph RTO["Retransmission Timeout"]
+        SRTT["Smoothed RTT"]
+        RTTVAR["RTT Variation"]
+        RTOcalc["RTO = SRTT + 4 x RTTVAR"]
+    end
+
+    Basics --> Phases
+    SS --> SSdetails
+    CA --> CAdetails
+    Phases --> Variants
+    Basics --> RTO
+    Phases --> FR
+    Phases --> FR2

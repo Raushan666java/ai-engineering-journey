@@ -1,0 +1,43 @@
+graph TD
+    subgraph API Gateway
+        AG[API Gateway]
+        Auth[Authentication]
+        Rate[Rate Limiting]
+        Route[Routing]
+        Cache[Caching]
+        Log[Logging/Monitoring]
+    end
+    subgraph CQRS Pattern
+        CMD[Command Side]
+        QRY[Query Side]
+        WriteDB[(Write DB)]
+        ReadDB[(Read DB)]
+        EventBus[Event Bus]
+        Sync[Sync Mechanism]
+    end
+    subgraph GraphQL
+        GQL[GraphQL Gateway]
+        Resolver[Resolvers]
+        Schema[Schema Definition]
+    end
+    subgraph Backend for Frontend
+        BFF[BFF Layer]
+        MobileBFF[Mobile BFF]
+        WebBFF[Web BFF]
+    end
+    Client --> AG
+    AG --> Auth
+    AG --> Rate
+    AG --> Route
+    Route --> CMD
+    Route --> QRY
+    CMD --> WriteDB
+    CMD --> EventBus
+    EventBus --> Sync
+    Sync --> ReadDB
+    QRY --> ReadDB
+    AG --> GQL
+    GQL --> Resolver
+    AG --> BFF
+    BFF --> MobileBFF
+    BFF --> WebBFF

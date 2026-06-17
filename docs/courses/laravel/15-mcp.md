@@ -1,4 +1,4 @@
-# Chapter 15: Laravel MCP — Model Context Protocol
+﻿# Chapter 15: Laravel MCP â€” Model Context Protocol
 
 ---
 ## Learning Objectives
@@ -12,6 +12,9 @@
 
 ## Theory
 
+![MCP Integration](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/15-mcp.png)
+
+
 ### 15.1 MCP Overview
 
 The Model Context Protocol (MCP) is an open standard published by Anthropic that defines how AI clients communicate with servers that provide context, tools, and resources. It follows a client-server architecture where the AI model (the client) discovers and invokes capabilities exposed by MCP servers.
@@ -22,22 +25,22 @@ The protocol defines three core primitives:
 - **Resources**: Data the AI can read (files, database records, API responses)
 - **Prompts**: Pre-written templates the AI can use (structured interactions)
 
-Laravel MCP (`laravel/mcp`) brings this protocol directly into the Laravel ecosystem. Every MCP server you build is a full Laravel class with access to the entire framework — Eloquent, Queues, Events, Caching, and all your application services. This means an AI agent can, through your MCP server, query your database, trigger business logic, read files, and generate reports using the same code paths your human-driven controllers use.
+Laravel MCP (`laravel/mcp`) brings this protocol directly into the Laravel ecosystem. Every MCP server you build is a full Laravel class with access to the entire framework â€” Eloquent, Queues, Events, Caching, and all your application services. This means an AI agent can, through your MCP server, query your database, trigger business logic, read files, and generate reports using the same code paths your human-driven controllers use.
 
 The architecture follows this flow:
 
 ```
 AI Agent (Claude, Cursor, etc.)
-    │
-    ▼
+    â”‚
+    â–¼
 MCP Client (dispatches requests)
-    │
-    ▼
+    â”‚
+    â–¼
 MCP Server (Laravel class)
-    │
-    ├─ Tools ──────────► Command-like actions with JSON schemas
-    ├─ Resources ──────► Readable data at URIs
-    └─ Prompts ────────► Structured interaction templates
+    â”‚
+    â”œâ”€ Tools â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º Command-like actions with JSON schemas
+    â”œâ”€ Resources â”€â”€â”€â”€â”€â”€â–º Readable data at URIs
+    â””â”€ Prompts â”€â”€â”€â”€â”€â”€â”€â”€â–º Structured interaction templates
 ```
 
 A single server class declares its capabilities declaratively via PHP attributes and arrays, then Laravel MCP handles all the JSON-RPC wire protocol automatically.
@@ -122,7 +125,7 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Mcp\Facades\Mcp;
 use App\Mcp\Servers\WeatherServer;
 
-// HTTP server — accessible at /mcp/weather via POST
+// HTTP server â€” accessible at /mcp/weather via POST
 Mcp::web('/mcp/weather', WeatherServer::class)
     ->middleware('throttle:30,1')
     ->middleware('auth:sanctum');
@@ -132,7 +135,7 @@ Mcp::web('/mcp/analytics', AnalyticsServer::class);
 Mcp::web('/mcp/crm', CrmServer::class);
 ```
 
-The `web` method returns a route builder, so you can chain middleware just like a normal Laravel route. This is critical for production — you can throttle, authenticate, and authorize access to each server independently.
+The `web` method returns a route builder, so you can chain middleware just like a normal Laravel route. This is critical for production â€” you can throttle, authenticate, and authorize access to each server independently.
 
 **Local servers** are registered for CLI usage. They work with Laravel Boost and Artisan commands, never exposing an HTTP endpoint:
 
@@ -145,7 +148,7 @@ Local servers are invoked via `php artisan mcp:call {server} {tool}` and are ide
 
 ### 15.5 Creating Tools
 
-Tools are the core of MCP — they are the actions an AI agent can invoke. Generate one with:
+Tools are the core of MCP â€” they are the actions an AI agent can invoke. Generate one with:
 
 ```php
 php artisan make:mcp-tool CurrentWeatherTool
@@ -312,10 +315,10 @@ class ArchiveInvoiceTool extends Tool
 
 The four annotations are:
 
-- `#[IsReadOnly]` — The tool does not modify any state. Safe to preview or call speculatively
-- `#[IsDestructive]` — The tool deletes or permanently modifies data. The AI will exercise extra caution
-- `#[IsIdempotent]` — Calling the tool multiple times with the same arguments produces the same result. Safe to retry after a failure
-- `#[IsOpenWorld]` — The tool interacts with external systems (APIs, third-party services). Results may change between calls
+- `#[IsReadOnly]` â€” The tool does not modify any state. Safe to preview or call speculatively
+- `#[IsDestructive]` â€” The tool deletes or permanently modifies data. The AI will exercise extra caution
+- `#[IsIdempotent]` â€” Calling the tool multiple times with the same arguments produces the same result. Safe to retry after a failure
+- `#[IsOpenWorld]` â€” The tool interacts with external systems (APIs, third-party services). Results may change between calls
 
 ### 15.7 Tool Responses
 
@@ -394,7 +397,7 @@ Response::audio(
     mimeType: 'audio/mpeg'
 );
 
-// Multi-content array — multiple pieces of content in one response
+// Multi-content array â€” multiple pieces of content in one response
 Response::multi(
     Response::text(json_encode(['summary' => '...'])),
     Response::fromStorage('files/report.pdf', disk: 'local'),

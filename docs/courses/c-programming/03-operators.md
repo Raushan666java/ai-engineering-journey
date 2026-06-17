@@ -8,6 +8,8 @@
 - Use the ternary conditional operator
 - Avoid common pitfalls with assignment and equality
 
+![C Operators: Categories, Precedence, and Common Pitfalls](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-03-operators.png)
+
 ## 3.1 Classification of Operators
 
 C provides operators grouped by function:

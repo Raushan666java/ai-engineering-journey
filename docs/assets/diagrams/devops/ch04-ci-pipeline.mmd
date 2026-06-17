@@ -1,0 +1,35 @@
+flowchart LR
+    A[Code Commit] --> B[Trigger CI Pipeline]
+    B --> C[Checkout Source]
+    C --> D[Install Dependencies]
+    D --> E[Lint Static Analysis]
+    E --> F[Unit Tests]
+    F --> G[Integration Tests]
+    G --> H[Code Coverage]
+    H --> I[Build Artifacts]
+    I --> J[Package Artifacts]
+    J --> K[Store Artifacts]
+
+    L[Pull Request] --> B
+    M[Push to main] --> B
+
+    subgraph Testing["Testing Stages"]
+        E
+        F
+        G
+        H
+    end
+
+    subgraph Tools["CI Tools"]
+        N[GitHub Actions]
+        O[Jenkins]
+        P[GitLab CI]
+        Q[CircleCI]
+    end
+
+    Tools -.-> B
+    K --> R[Ready for CD]
+
+    style A fill:#c8e6c9
+    style R fill:#c8e6c9
+    style K fill:#bbdefb

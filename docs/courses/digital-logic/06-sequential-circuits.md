@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Sequential Circuits](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch06-sequential-circuits.png)
+
 By the conclusion of this chapter, the student shall be able to:
 
 1. Distinguish between Mealy and Moore state machine models

@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Advanced Complexity Topics Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/14-advanced-complexity.png)
+
 ### 14.1 Log-Space Reductions and Completeness
 
 A **log-space reduction** (A ≤_L B) is a reduction computable in O(log n) space (on a TM with read-only input and write-only output).

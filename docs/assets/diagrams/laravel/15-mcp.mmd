@@ -1,0 +1,53 @@
+flowchart TD
+    subgraph "MCP Architecture"
+        M1["AI Agent<br/>Claude Cursor Codex"]
+        M2["MCP Client<br/>Dispatches requests"]
+        M3["MCP Server<br/>Laravel class"]
+        M4["JSON-RPC Wire Protocol"]
+    end
+
+    subgraph "Server Capabilities"
+        S1["Tools<br/>Actions with typed schemas"]
+        S2["Resources<br/>Readable data at URIs"]
+        S3["Prompts<br/>Structured templates"]
+    end
+
+    subgraph "Laravel MCP Features"
+        L1["make:mcp-server generator"]
+        L2["PHP Attributes for metadata<br/>Name Version Instructions"]
+        L3["Full framework access<br/>Eloquent Queue Events Cache"]
+        L4["Config publish mcp.php"]
+        L5["routes/ai.php registration"]
+    end
+
+    subgraph "Client Integration"
+        C1["MCP Client class"]
+        C2["Server discovery"]
+        C3["Tool invocation"]
+        C4["Resource reading"]
+        C5["Authentication"]
+    end
+
+    M1 --> M2
+    M2 --> M4
+    M4 --> M3
+    M3 --> S1
+    M3 --> S2
+    M3 --> S3
+
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
+    L4 --> L5
+    L5 --> M3
+
+    M2 --> C1
+    C1 --> C2
+    C2 --> C3
+    C2 --> C4
+    C3 --> C5
+
+    style M1 fill:#4a90d9,color:#fff
+    style M3 fill:#27ae60,color:#fff
+    style S1 fill:#e67e22,color:#fff
+    style L1 fill:#9b59b6,color:#fff

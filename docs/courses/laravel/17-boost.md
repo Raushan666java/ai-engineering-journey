@@ -1,4 +1,4 @@
-# Chapter 17: Laravel Boost — AI-Assisted Development
+﻿# Chapter 17: Laravel Boost â€” AI-Assisted Development
 
 ---
 ## Learning Objectives
@@ -12,24 +12,27 @@
 
 ## Theory
 
+![Laravel Boost](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/17-boost.png)
+
+
 ### 17.1 What Is Laravel Boost?
 
-Laravel Boost is a package that acts as a bridge between AI coding agents and your Laravel application. When an AI agent writes Laravel code without Boost, it relies on its training data — which may reference an older version of Laravel, use deprecated patterns, or miss framework-specific conventions. Boost solves this by providing three things:
+Laravel Boost is a package that acts as a bridge between AI coding agents and your Laravel application. When an AI agent writes Laravel code without Boost, it relies on its training data â€” which may reference an older version of Laravel, use deprecated patterns, or miss framework-specific conventions. Boost solves this by providing three things:
 
-1. **Laravel-specific tools** — 15+ executable tools that let the agent inspect your actual application
-2. **Vectorized documentation** — 17,000+ pieces of Laravel ecosystem documentation embedded for semantic search
-3. **AI guidelines** — Laravel-maintained guidance for framework conventions, testing patterns, and pitfalls
+1. **Laravel-specific tools** â€” 15+ executable tools that let the agent inspect your actual application
+2. **Vectorized documentation** â€” 17,000+ pieces of Laravel ecosystem documentation embedded for semantic search
+3. **AI guidelines** â€” Laravel-maintained guidance for framework conventions, testing patterns, and pitfalls
 
 The architecture works like this:
 
 ```
 AI Agent (Cursor, Claude Code, OpenCode, Copilot)
-    │
-    ├── Reads .ai/guidelines/* ────► Convention rules
-    ├── Calls Boost tools ─────────► Live app introspection
-    └── Queries docs vectors ──────► Version-matched documentation
-    │
-    ▼
+    â”‚
+    â”œâ”€â”€ Reads .ai/guidelines/* â”€â”€â”€â”€â–º Convention rules
+    â”œâ”€â”€ Calls Boost tools â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º Live app introspection
+    â””â”€â”€ Queries docs vectors â”€â”€â”€â”€â”€â”€â–º Version-matched documentation
+    â”‚
+    â–¼
 Generates code that matches:
     - Correct Laravel version APIs
     - Your app's existing patterns
@@ -54,25 +57,25 @@ The installer is interactive. It detects your environment and asks targeted ques
 ```php
 $ php artisan boost:install
 
-┌ Laravel Boost Installer ──────────────────────────┐
-│                                                    │
-│   Detected: Laravel 13.x, PHP 8.4                  │
-│   Detected IDE: Visual Studio Code                 │
-│   Detected OS: Windows                             │
-│                                                    │
-│   ◇ Which AI coding agents do you use?             │
-│     ■ Cursor                                       │
-│     ■ Claude Code                                  │
-│     □ OpenCode                                     │
-│     □ GitHub Copilot                               │
-│                                                    │
-│   ◇ Install example custom guidelines?  [Yes/No]   │
-│                                                    │
-│   ◇ Generate Boost configuration?       [Yes/No]   │
-│                                                    │
-└────────────────────────────────────────────────────┘
+â”Œ Laravel Boost Installer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                                                    â”‚
+â”‚   Detected: Laravel 13.x, PHP 8.4                  â”‚
+â”‚   Detected IDE: Visual Studio Code                 â”‚
+â”‚   Detected OS: Windows                             â”‚
+â”‚                                                    â”‚
+â”‚   â—‡ Which AI coding agents do you use?             â”‚
+â”‚     â–  Cursor                                       â”‚
+â”‚     â–  Claude Code                                  â”‚
+â”‚     â–¡ OpenCode                                     â”‚
+â”‚     â–¡ GitHub Copilot                               â”‚
+â”‚                                                    â”‚
+â”‚   â—‡ Install example custom guidelines?  [Yes/No]   â”‚
+â”‚                                                    â”‚
+â”‚   â—‡ Generate Boost configuration?       [Yes/No]   â”‚
+â”‚                                                    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
-✔ Boost installed successfully!
+âœ” Boost installed successfully!
 
   Next steps:
   1. Review .ai/guidelines/ for Laravel best practices
@@ -84,14 +87,14 @@ The installer creates the `.ai/` directory structure in your project root:
 
 ```
 .ai/
-├── guidelines/
-│   ├── laravel-conventions.md
-│   ├── testing-standards.md
-│   ├── security-best-practices.md
-│   └── elqouent-patterns.md
-├── boost.json
-└── tools/
-    └── ...
+â”œâ”€â”€ guidelines/
+â”‚   â”œâ”€â”€ laravel-conventions.md
+â”‚   â”œâ”€â”€ testing-standards.md
+â”‚   â”œâ”€â”€ security-best-practices.md
+â”‚   â””â”€â”€ elqouent-patterns.md
+â”œâ”€â”€ boost.json
+â””â”€â”€ tools/
+    â””â”€â”€ ...
 ```
 
 The `boost.json` configuration file stores your preferences:
@@ -328,9 +331,9 @@ Custom guidelines go in the `.ai/guidelines/` directory and can be written as `.
 
 ## Branch Strategy
 
-- `main` — production-ready code only
-- `develop` — integration branch for feature work
-- `feature/{ticket-number}-{kebab-name}` — individual features
+- `main` â€” production-ready code only
+- `develop` â€” integration branch for feature work
+- `feature/{ticket-number}-{kebab-name}` â€” individual features
 
 ## CI Requirements
 
@@ -357,7 +360,7 @@ Cursor reads the `.ai/guidelines/` directory automatically. Boost detects Cursor
 
 ```bash
 # Boost detects Cursor during install and generates:
-# .cursorrules → references .ai/guidelines/*.md
+# .cursorrules â†’ references .ai/guidelines/*.md
 ```
 
 **Claude Code**
@@ -505,17 +508,17 @@ php artisan boost:install
 php artisan boost:check
 
 # Output:
-# ┌ Laravel Boost Status ────────────────────┐
-# │                                          │
-# │  Laravel Version:  13.x                  │
-# │  PHP Version:      8.4                   │
-# │  Guidelines:       4 files loaded        │
-# │  Tools:            15 available           │
-# │  Docs Vectors:     17,234 pieces          │
-# │  Agent:            Cursor (detected)     │
-# │  Status:           ✅ All systems go    │
-# │                                          │
-# └──────────────────────────────────────────┘
+# â”Œ Laravel Boost Status â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+# â”‚                                          â”‚
+# â”‚  Laravel Version:  13.x                  â”‚
+# â”‚  PHP Version:      8.4                   â”‚
+# â”‚  Guidelines:       4 files loaded        â”‚
+# â”‚  Tools:            15 available           â”‚
+# â”‚  Docs Vectors:     17,234 pieces          â”‚
+# â”‚  Agent:            Cursor (detected)     â”‚
+# â”‚  Status:           âœ… All systems go    â”‚
+# â”‚                                          â”‚
+# â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 The AI agent now receives Boost's context. When the developer requests a feature, the agent follows this pipeline:
@@ -523,25 +526,25 @@ The AI agent now receives Boost's context. When the developer requests a feature
 ```php
 // Developer: "Create a product review system with ratings"
 
-// Phase 1 — Agent reads guidelines
+// Phase 1 â€” Agent reads guidelines
 // Reads: .ai/guidelines/laravel-conventions.md
 // Reads: .ai/guidelines/testing-standards.md
 // Reads: .ai/guidelines/eloquent-patterns.md
 
-// Phase 2 — Agent inspects existing codebase
+// Phase 2 â€” Agent inspects existing codebase
 $packages = Boost::tools()->detectPackages();
 // Laravel 13.x, spatie/laravel-permission, laravel/cashier
 
 $schema = Boost::tools()->getTableSchema('products');
 // Already has: id, name, description, price, user_id
 
-// Phase 3 — Agent queries version-matched docs
+// Phase 3 â€” Agent queries version-matched docs
 $docs = Boost::tools()->searchDocs(
     query: 'one-to-many relationship validation',
     version: '13.x'
 );
 
-// Phase 4 — Agent generates the feature
+// Phase 4 â€” Agent generates the feature
 
 // Migration
 Schema::create('reviews', function (Blueprint $table) {
@@ -611,7 +614,7 @@ class ProductReviewController extends Controller
     }
 }
 
-// Phase 5 — Agent generates tests (PEST style)
+// Phase 5 â€” Agent generates tests (PEST style)
 it('authenticated user can review a product', function () {
     $user = User::factory()->create();
     $product = Product::factory()->create();

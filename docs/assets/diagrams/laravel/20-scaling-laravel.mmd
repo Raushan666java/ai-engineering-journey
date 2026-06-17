@@ -1,0 +1,59 @@
+flowchart TD
+    subgraph "Stateless App Nodes"
+        N1["App Node 1<br/>Ephemeral"]
+        N2["App Node 2<br/>Ephemeral"]
+        N3["App Node N<br/>Ephemeral"]
+    end
+
+    subgraph "Redis State Layer"
+        RS1["Sessions"]
+        RS2["Cache"]
+        RS3["Queues"]
+        RS4["Rate Limiter"]
+    end
+
+    subgraph "Database Layer"
+        DB1["Primary DB<br/>Read Write"]
+        DB2["Read Replica 1"]
+        DB3["Read Replica 2"]
+    end
+
+    subgraph "Scaling Strategies"
+        S1["Laravel Vapor<br/>Serverless Lambda"]
+        S2["Laravel Octane<br/>Swoole RoadRunner"]
+        S3["Redis Cluster<br/>Horizontal sharding"]
+        S4["CDN<br/>Asset distribution"]
+        S5["Horizon Balancing"]
+    end
+
+    subgraph "Storage"
+        ST1["S3 Cloud Storage"]
+        ST2["CloudWatch Logs"]
+    end
+
+    N1 --> RS1
+    N1 --> RS2
+    N2 --> RS1
+    N2 --> RS2
+    N3 --> RS1
+    N3 --> RS2
+
+    N1 --> DB1
+    N2 --> DB1
+    N3 --> DB1
+    DB1 --> DB2
+    DB1 --> DB3
+
+    N1 --> ST1
+    N1 --> ST2
+
+    S1 --> N1
+    S2 --> N1
+    S3 --> RS1
+    S4 --> ST1
+    S5 --> N1
+
+    style N1 fill:#4a90d9,color:#fff
+    style RS1 fill:#e67e22,color:#fff
+    style DB1 fill:#27ae60,color:#fff
+    style S1 fill:#9b59b6,color:#fff

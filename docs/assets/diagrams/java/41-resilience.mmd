@@ -1,0 +1,38 @@
+flowchart TB
+  RES[Resilience4j]
+  RES --> CB[Circuit Breaker]
+  CB --> STATES[States]
+  STATES --> CLOSED[CLOSED]
+  STATES --> OPEN[OPEN]
+  STATES --> HO[HALF_OPEN]
+  CB --> SW[Sliding Window]
+  CB --> FR[Failure Rate Threshold]
+  CB --> WD[Wait Duration]
+  CB --> FALLBACK[Fallback Method]
+
+  RES --> RETRY[Retry]
+  RETRY --> MA[Max Attempts]
+  RETRY --> WD2[Wait Duration]
+  RETRY --> EBE[Exponential Backoff]
+  RETRY --> ROE[retryOnException]
+
+  RES --> RL[Rate Limiter]
+  RL --> LFP[limitForPeriod]
+  RL --> LRP[limitRefreshPeriod]
+  RL --> TD[timeoutDuration]
+
+  RES --> TL[Time Limiter]
+  TL --> TMD[timeoutDuration]
+  TL --> CRF[cancelRunningFuture]
+
+  RES --> BH[Bulkhead]
+  BH --> SEM[Semaphore Bulkhead]
+  BH --> TP[Thread Pool Bulkhead]
+
+  RES --> MON[Metrics]
+  MON --> MIC[Micrometer Integration]
+  MON --> ACT[Actuator Endpoints]
+
+  RES --> INTEG[Integration]
+  INTEG --> FEIGN[Feign Clients]
+  INTEG --> SCC[Spring Cloud CircuitBreaker]

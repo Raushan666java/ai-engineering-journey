@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Doubly Linked List Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch04-doubly-linked-list.png)
+
 ### Doubly Linked List
 
 Each node stores pointers to both the next node and the previous node, enabling \( O(1) \) deletion at the tail and bidirectional traversal.

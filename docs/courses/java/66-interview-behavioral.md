@@ -4,6 +4,8 @@ This chapter covers behavioral interview preparation for Java backend engineers.
 
 ---
 
+![Behavioral Interview - STAR Method Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/66-interview-behavioral.png)
+
 ### Q1: Tell me about a time you had a conflict with a teammate. How did you resolve it?
 
 **Answer:**

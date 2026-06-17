@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Redis Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch16-redis.png)
+
 ### 16.1 Redis Overview
 
 Redis (Remote Dictionary Server) is an **in-memory data structure store** often used as a cache, message broker, and database. Created by Salvatore Sanfilippo in 2009.

@@ -12,6 +12,8 @@
 
 ## Theory
 
+![ER Model Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch02-er-model.png)
+
 ### 2.1 The Entity-Relationship Model
 
 The Entity-Relationship (ER) model, introduced by Peter Chen in 1976, is a conceptual data model that provides a high-level description of a database. It is used primarily in the database design phase to capture user requirements and represent them in a visual, intuitive form before implementation.

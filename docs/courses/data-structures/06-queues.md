@@ -10,6 +10,8 @@
 
 ## Theory
 
+![Queues Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch06-queues.png)
+
 ### Queue ADT
 
 A queue follows the First-In-First-Out (FIFO) discipline: elements are inserted at the **rear** and removed from the **front**.

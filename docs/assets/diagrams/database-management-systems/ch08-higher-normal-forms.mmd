@@ -1,0 +1,29 @@
+mindmap
+  root((Higher Normal Forms))
+    4NF Fourth Normal Form
+      Based on Multivalued Dependencies
+      MVD X multi-determines Y
+      Independent attribute sets
+      In BCNF + no non-trivial MVDs
+      Eliminate multi-valued facts
+    5NF Fifth Normal Form
+      Based on Join Dependencies
+      JD lossless decomposition
+      Project-join normal form
+      In 4NF + every JD implied by candidate keys
+      Practical limit for normalization
+    DKNF Domain-Key Normal Form
+      Every constraint = domain + key constraint
+      Eliminates all modification anomalies
+      Theoretical ideal rarely achieved
+    Denormalization
+      Trade normalization for performance
+      Reduce join operations
+      Increase redundancy
+      Manage with application logic
+      Common in data warehouses
+    Multivalued Dependency
+      MVD definition
+      Trivial MVD
+      Inference rules
+      MVD vs FD

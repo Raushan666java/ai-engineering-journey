@@ -13,6 +13,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![JavaScript Basics Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/03-javascript-basics.png)
+
 ### 3.1 Variables
 
 JavaScript provides three variable declaration keywords, each with distinct scoping rules.

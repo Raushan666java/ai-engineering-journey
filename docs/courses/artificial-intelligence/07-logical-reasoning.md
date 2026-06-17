@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) apply unific
 
 ## 7.1 Unification
 
+![Logical Reasoning and Inference](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch07-logical-reasoning.png)
+
 **Unification** is the process of finding a substitution $\theta$ that makes two logical expressions identical. A substitution $\theta = \{v_1/t_1, v_2/t_2, \ldots, v_n/t_n\}$ maps variables to terms. The application of $\theta$ to expression $E$, written $E\theta$, replaces each variable $v_i$ with term $t_i$, with all occurrences replaced simultaneously.
 
 **Standardization apart** renames variables to avoid conflict. The **most general unifier (MGU)** is the substitution that imposes the fewest constraints while achieving unification.

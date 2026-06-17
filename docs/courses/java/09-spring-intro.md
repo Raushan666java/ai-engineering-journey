@@ -36,6 +36,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. The Spring Ecosystem
 
+![Spring Ecosystem Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/09-spring-intro.png)
+
 Spring began in 2004 as a response to the complexity of Enterprise JavaBeans (EJB) 2.x. Rod Johnson's book **"Expert One-on-One J2EE Design and Development"** (2002) included 30,000+ lines of example code that became the foundation of the Spring Framework. The first production release, Spring Framework 1.0, shipped in March 2004.
 
 ### 1.1 The Problem Spring Solved

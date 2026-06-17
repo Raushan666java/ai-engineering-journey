@@ -1,0 +1,52 @@
+flowchart TB
+    subgraph Ingress["Ingress and Routing"]
+        A[Ingress Controller NGINX]
+        B[Host Based Routing]
+        C[Path Based Routing]
+        D[TLS Termination]
+    end
+
+    subgraph Storage["Storage"]
+        E[PersistentVolume PV]
+        F[PersistentVolumeClaim PVC]
+        G[StorageClass]
+        H[CSI Drivers]
+    end
+
+    subgraph Workloads["Workload Types"]
+        I[StatefulSet]
+        J[DaemonSet]
+        K[Job]
+        L[CronJob]
+    end
+
+    subgraph Scaling["Autoscaling"]
+        M[HPA Horizontal Pod Autoscaler]
+        N[CPU Based Metrics]
+        O[Custom Metrics]
+        P[VPA Vertical Pod Autoscaler]
+    end
+
+    subgraph Security["Security"]
+        Q[RBAC Role ClusterRole]
+        R[ServiceAccount]
+        S[NetworkPolicy]
+        T[PodDisruptionBudget]
+    end
+
+    subgraph Packaging["Packaging"]
+        U[Helm Charts]
+        V[Kustomize Overlays]
+        W[Operators CRDs]
+    end
+
+    A --> B
+    A --> C
+    A --> D
+    E --> F
+    G --> E
+    H --> G
+    I --> Q
+    J --> S
+    M --> N
+    M --> O

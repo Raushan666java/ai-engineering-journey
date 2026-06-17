@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: compute reaching defini
 
 ## Theory
 
+![Data Flow Analysis — Reaching Definitions, Live Variables, Available Expressions](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch-12-dfa.png)
+
 ### Reaching Definitions
 
 A definition of a variable x is a statement that assigns a value to x. A definition d **reaches** a point p in the program if there exists a path from d to p such that x is not redefined along that path. Reaching-definitions analysis computes, for each program point, the set of definitions that may reach that point.

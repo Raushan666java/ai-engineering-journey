@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Relations Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/07-relations.png)
+
 After completing this chapter, you will be able to:
 
 - Represent relations as sets of ordered pairs and as matrices or digraphs

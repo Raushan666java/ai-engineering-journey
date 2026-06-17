@@ -1,0 +1,33 @@
+flowchart TD
+    A["Union-Find (DSU)"] --> B["Operations"]
+    A --> C["Optimizations"]
+    A --> D["Complexity"]
+    A --> E["Applications"]
+
+    B --> B1["find(x): O(α(n))"]
+    B --> B2["union(x,y): O(α(n))"]
+    B --> B3["connected(x,y): O(α(n))"]
+    B1 --> B1a["Returns set representative"]
+    B2 --> B2a["Merges two sets"]
+
+    C --> C1["Path Compression"]
+    C --> C2["Union by Rank/Size"]
+    C1 --> C1a["During find, point all to root"]
+    C1 --> C1b["Flattens tree structure"]
+    C2 --> C2a["Attach shorter under taller"]
+    C2 --> C2b["Rank = height upper bound"]
+
+    D --> D1["α(n): inverse Ackermann"]
+    D --> D2["Effectively constant"]
+    D --> D3["Both optimizations required"]
+
+    E --> E1["Kruskal's MST"]
+    E --> E2["Cycle detection (undirected)"]
+    E --> E3["Connected components"]
+    E --> E4["Maze generation"]
+    E --> E5["Image segmentation"]
+    E --> E6["Social network groups"]
+
+    Example["Example: unionSets(1,2), unionSets(2,3)
+    parent: [0,1,2,3,4,5,6,7]
+    After: {0} {1,2,3} {4,5} {6,7}"] --> A

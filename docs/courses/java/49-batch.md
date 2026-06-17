@@ -19,6 +19,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Spring Batch Overview
 
+![Spring Batch - Job/Step/Chunk Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/49-batch.png)
+
 Spring Batch provides a comprehensive framework for batch processing with reusable processing components, transaction management, and chunk-oriented processing.
 
 ### 1.1 Maven Dependencies

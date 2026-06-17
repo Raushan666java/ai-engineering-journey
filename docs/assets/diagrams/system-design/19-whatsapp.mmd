@@ -1,0 +1,43 @@
+graph TB
+    subgraph Client Layer
+        D1[Device 1]
+        D2[Device 2]
+        D3[Device N]
+    end
+    subgraph Edge Layer
+        LB[Load Balancer]
+        WS[WebSocket Gateway]
+        TCP[TCP Connection Manager]
+    end
+    subgraph Service Layer
+        R[Message Router]
+        SM[Session Manager]
+        P[Presence Service]
+        G[Group Service]
+        M[Media Service]
+    end
+    subgraph Storage Layer
+        MS[(Message Store MyRocks)]
+        MD[(Metadata DB Cassandra)]
+        OS[(Object Store Blob/CDN)]
+    end
+    subgraph Sync Layer
+        DS[Device Sync]
+        OQ[Offline Queue]
+    end
+    D1 --> LB
+    D2 --> LB
+    D3 --> LB
+    LB --> TCP
+    LB --> WS
+    TCP --> R
+    WS --> R
+    R --> SM
+    R --> P
+    R --> G
+    R --> M
+    R --> MS
+    R --> MD
+    R --> DS
+    R --> OQ
+    M --> OS

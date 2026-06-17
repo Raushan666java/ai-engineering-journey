@@ -1,0 +1,44 @@
+flowchart TB
+    subgraph CP["Control Plane"]
+        A[API Server kube-apiserver]
+        B[etcd Distributed Store]
+        C[Scheduler]
+        D[Controller Manager]
+    end
+
+    subgraph Nodes["Worker Nodes"]
+        E[kubelet Agent]
+        F[kube-proxy]
+        G[Container Runtime containerd]
+    end
+
+    subgraph Objects["Core K8s Objects"]
+        H[Pod]
+        I[Deployment]
+        J[Service]
+        K[ConfigMap]
+        L[Secret]
+    end
+
+    subgraph Features["Key Features"]
+        M[Self Healing]
+        N[Horizontal Scaling]
+        O[Service Discovery]
+        P[Rolling Updates]
+        Q[Load Balancing]
+    end
+
+    A <--> E
+    B <--> A
+    C --> E
+    D --> E
+    H --> I
+    I --> M
+    I --> N
+    I --> P
+    J --> O
+    J --> Q
+    E --> G
+
+    style CP fill:#e1d5e7
+    style Nodes fill:#d5e8d4

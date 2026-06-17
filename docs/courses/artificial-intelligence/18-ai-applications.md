@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) describe maj
 
 ## 18.1 Healthcare
 
+![AI Applications](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch18-ai-applications.png)
+
 ### 18.1.1 Medical Diagnosis
 
 AI systems for medical diagnosis process clinical data (imaging, laboratory results, electronic health records) to identify diseases. Deep learning models achieve expert-level performance in specific diagnostic tasks:

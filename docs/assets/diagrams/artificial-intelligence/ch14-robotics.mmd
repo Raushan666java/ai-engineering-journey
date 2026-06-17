@@ -1,0 +1,40 @@
+flowchart TB
+    subgraph Robot_Hardware["Robot Hardware"]
+        Sensors["Sensors<br/>Camera, LiDAR, Sonar, IMU"]
+        Actuators["Actuators<br/>Motors, Servos, Arms"]
+        Controller["Controller<br/>CPU + real-time OS"]
+        Effectors["End Effectors<br/>Grippers, Tools"]
+    end
+
+    subgraph Localization["Localization"]
+        Odometry["Odometry / Wheel Encoders<br/>Drift over time"]
+        GPS["GPS<br/>Outdoor coarse localization"]
+        Landmarks["Landmark-based<br/>Detect known features"]
+        Particle["Particle Filters<br/>Monte Carlo Localization<br/>Weighted hypothesis set"]
+        EKF_Loc["EKF Localization<br/>Gaussian belief"]
+    end
+
+    subgraph SLAM["SLAM"]
+        Full_SLAM["Full SLAM<br/>P(x_1:t, m | z_1:t, u_1:t)"]
+        Online_SLAM["Online SLAM<br/>P(x_t, m | z_1:t, u_1:t)"]
+        GraphSLAM["GraphSLAM<br/>Pose graph optimization"]
+    end
+
+    subgraph Motion_Planning["Motion Planning"]
+        Configuration["Configuration Space C-space"]
+        C_Obstacle["C-obstacle = obstacles in config space"]
+        PRM["Probabilistic Roadmap PRM<br/>Sample + Connect"]
+        RRT["Rapidly-exploring Random Trees<br/>RRT / RRT*"]
+        Potential["Potential Fields<br/>Attractive + Repulsive -> Gradient"]
+    end
+
+    subgraph Control["Control"]
+        PID["PID Control<br/>Proportional + Integral + Derivative"]
+        Model_Predictive["Model Predictive Control<br/>Receding horizon"]
+        ROS["Robot Operating System<br/>Topics / Nodes / Services"]
+    end
+
+    Robot_Hardware --> Localization
+    Localization --> SLAM
+    Robot_Hardware --> Motion_Planning
+    Robot_Hardware --> Control

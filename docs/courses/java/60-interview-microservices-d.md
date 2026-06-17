@@ -1,3 +1,5 @@
+![Microservices Advanced Topics - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/60-interview-microservices-d.png)
+
 ### Q21: What is a service mesh and when would you use Istio?
 
 **Answer:**

@@ -1,4 +1,4 @@
-# Chapter 9: Enterprise Blockchain
+﻿# Chapter 9: Enterprise Blockchain
 
 ---
 
@@ -20,7 +20,7 @@ Public blockchains like Bitcoin are designed for total transparency and anonymit
 2. **Performance:** Higher throughput and lower latency than public chains.
 3. **Governance:** A known set of participants with clear legal responsibilities.
 
-![Enterprise Blockchain](../assets/images/diagrams/blockchain/ch09-enterprise.png)
+![Enterprise Blockchain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch09-enterprise.png)
 
 ### Hyperledger Fabric
 Hyperledger Fabric is a modular, permissioned blockchain framework.

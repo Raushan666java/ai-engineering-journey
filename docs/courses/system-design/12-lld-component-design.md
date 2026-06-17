@@ -11,6 +11,8 @@
 ## Theory
 ### UML Class Diagram Syntax
 
+![Component and Class Design Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/12-component-design.png)
+
 The Unified Modeling Language (UML) provides a standardized notation for visualizing the structure of object-oriented systems.
 
 **Class Notation**: A class is drawn as a rectangle divided into three compartments: the top holds the class name (bold, centered), the middle lists attributes, and the bottom lists methods. Visibility is indicated by prefixes: `+` (public), `-` (private), `#` (protected), `~` (package-private). Static members are underlined; abstract classes and methods are italicized.

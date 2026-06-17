@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Distributed Data Structures Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/14-distributed-data-structures.png)
+
 ### 1. Consistent Hashing
 
 Consistent hashing maps keys to nodes in a hash ring (range [0, 2^m - 1]). Both nodes and keys hash into this ring; each key is assigned to the nearest clockwise node. When a node joins or leaves, only keys in its immediate vicinity redistribute — O(K/N) keys rather than O(K) reshuffling, where K is total keys and N is node count.

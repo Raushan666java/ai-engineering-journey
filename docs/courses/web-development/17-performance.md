@@ -12,6 +12,8 @@ By the end of this chapter, you will be able to:
 
 ## 17.1 Core Web Vitals
 
+![Performance Optimization Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/17-performance.png)
+
 ```typescript
 // Web Vitals measurement
 // app/reportWebVitals.ts

@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Normalization Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch07-normalization.png)
+
 ### 7.1 The Problem: Anomalies in Unnormalized Data
 
 Consider a poorly designed table for a university database:

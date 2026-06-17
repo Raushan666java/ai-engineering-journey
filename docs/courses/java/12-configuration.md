@@ -22,6 +22,8 @@ After completing this chapter, you will be able to:
 
 ## 1. Theory
 
+![Externalized Configuration Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/12-configuration.png)
+
 ### 1.1 The Philosophy of Externalized Configuration
 
 One of the twelve-factor app principles states that configuration should be **strictly separated from code**. A twelve-factor app stores config in **environment variables**, not in the codebase. Spring Boot embraces this by allowing configuration from many sources with a well-defined precedence order.

@@ -1,0 +1,56 @@
+flowchart TB
+    subgraph ShiftLeft["Shift Left Security"]
+        A[Design] --> B[Code]
+        B --> C[Build]
+        C --> D[Test]
+        D --> E[Deploy]
+        E --> F[Operate]
+    end
+
+    subgraph SAST["SAST Static Analysis"]
+        G[SonarQube]
+        H[Semgrep]
+        I[CodeQL]
+    end
+
+    subgraph DAST["DAST Dynamic Testing"]
+        J[OWASP ZAP]
+        K[Burp Suite]
+    end
+
+    subgraph SCA["SCA Composition Analysis"]
+        L[Snyk]
+        M[Dependabot]
+        N[Trivy]
+        O[Grype]
+    end
+
+    subgraph ContainerScan["Container Scanning"]
+        P[Trivy Image Scan]
+        Q[Clair]
+        R[Docker Scout]
+    end
+
+    subgraph SecretScan["Secret Scanning"]
+        S[GitLeaks]
+        T[TruffleHog]
+    end
+
+    subgraph PolicyAsCode["Policy as Code"]
+        U[OPA Rego Policies]
+        V[Kyverno K8s Native]
+    end
+
+    subgraph SBOM["SBOM Management"]
+        W[Sylt Generation]
+        X[Cosign Attestation]
+        Y[Grype Verification]
+    end
+
+    B --> SAST
+    B --> SecretScan
+    C --> ContainerScan
+    D --> DAST
+    D --> SCA
+    D --> SBOM
+    E --> PolicyAsCode

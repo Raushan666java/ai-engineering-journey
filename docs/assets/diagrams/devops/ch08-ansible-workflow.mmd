@@ -1,0 +1,45 @@
+flowchart TB
+    subgraph ControlNode["Ansible Control Node"]
+        A[Ansible Engine]
+        B[Inventory]
+        C[Playbooks YAML]
+        D[Modules]
+        E[Roles]
+        F[Templates Jinja2]
+    end
+
+    subgraph Connection["Connection Methods"]
+        G[SSH Linux]
+        H[WinRM Windows]
+    end
+
+    subgraph ManagedNodes["Managed Nodes"]
+        I[Web Servers]
+        J[Database Servers]
+        K[Application Servers]
+    end
+
+    subgraph Concepts["Core Concepts"]
+        L[Idempotence]
+        M[Desired State]
+        N[Agentless Architecture]
+        O[Push Based]
+        P[Check Mode Dry Run]
+    end
+
+    A --> G
+    A --> H
+    G --> ManagedNodes
+    H --> ManagedNodes
+    B --> A
+    C --> A
+    D --> A
+    E --> A
+    F --> A
+
+    subgraph Galaxy["Ansible Galaxy"]
+        Q[Community Roles]
+        R[Collections]
+    end
+
+    Q --> E

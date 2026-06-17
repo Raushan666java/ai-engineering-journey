@@ -1,3 +1,5 @@
+![JPA Auditing - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/59-interview-databases-b.png)
+
 ### Q9: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?
 
 **Answer:**

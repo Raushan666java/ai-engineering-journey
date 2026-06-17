@@ -1,4 +1,4 @@
-# Chapter 6: Support Vector Machines
+﻿# Chapter 6: Support Vector Machines
 
 ---
 
@@ -37,7 +37,7 @@ Common kernels include:
 - **Polynomial**: $K(x_i, x_j) = (x_i \cdot x_j + r)^d$
 - **Radial Basis Function (RBF)**: $K(x_i, x_j) = \exp(-\gamma \|x_i - x_j\|^2)$
 
-![SVM and Kernel Trick](../assets/images/diagrams/machine-learning/ch06-svm.png)
+![SVM and Kernel Trick](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/machine-learning/ch06-svm.png)
 
 ---
 

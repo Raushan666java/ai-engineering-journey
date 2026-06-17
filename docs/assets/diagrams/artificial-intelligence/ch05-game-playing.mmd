@@ -1,0 +1,42 @@
+flowchart TB
+    subgraph Game_Search["Game Playing as Search"]
+        S0["S0 Initial State"]
+        Player["PLAYER(s) whose turn"]
+        Actions["ACTIONS(s) legal moves"]
+        Result["RESULT(s,a) next state"]
+        Terminal["TERMINAL(s) Terminal test"]
+        Utility["UTILITY(s,p) Payoff for p"]
+    end
+
+    subgraph Minimax["Minimax Algorithm"]
+        MAX["MAX nodes<br/>Choose maximizing move"]
+        MIN["MIN nodes<br/>Choose minimizing move"]
+        Terminal_U["Terminal Utility"]
+        Minimax_Decision["minimax(s) = max/min of successors"]
+        MINIMAX["Complete if finite<br/>Optimal against optimal opponent<br/>O(b^m) time"]
+    end
+
+    subgraph Alpha_Beta["Alpha-Beta Pruning"]
+        Alpha["alpha = best MAX so far<br/>Prune when <= alpha"]
+        Beta["beta = best MIN so far<br/>Prune when >= beta"]
+        Ordering["Move Ordering Critical<br/>Best-first doubles pruning"]
+        Pruning_Effect["Effectiveness: O(b^(m/2))"]
+    end
+
+    subgraph Advanced["Advanced Topics"]
+        MCTS["Monte Carlo Tree Search<br/>Selection -> Expansion<br/>Simulation -> Backprop"]
+        UCB1["UCB1 Formula<br/>W_i/N_i + c*sqrt(ln N/N_i)"]
+        Heuristic_Eval["Heuristic Evaluation Functions<br/>Material, mobility, positional"]
+        Horizon["Horizon Effect<br/>Delayed bad consequences"]
+
+        subgraph Typed_Games["Game Types"]
+            Deterministic["Deterministic / Turn-based"]
+            Chance["Chance Games: Expectiminimax"]
+            Partial["Partially Observable<br/>Inference + action"]
+        end
+    end
+
+    Game_Search --> Minimax
+    Minimax --> Alpha_Beta
+    Alpha_Beta --> Advanced
+    Advanced --> Typed_Games

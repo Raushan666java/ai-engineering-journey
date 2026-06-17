@@ -32,6 +32,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. POM Structure — The Project Object Model
 
+![Maven Build Lifecycle & POM Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/07-maven.png)
+
 The `pom.xml` file is the heart of every Maven project. It is an XML file that describes the project: its identity, dependencies, build configuration, plugins, profiles, and module structure.
 
 ### 1.1 Minimal POM

@@ -1,0 +1,36 @@
+flowchart TD
+    A["Binary Search Tree"] --> B["BST Invariant"]
+    A --> C["Operations"]
+    A --> D["Traversals"]
+    A --> E["Deletion Cases"]
+
+    B --> B1["Left < Root < Right"]
+    B --> B2["Inorder → sorted order"]
+
+    C --> C1["Search: O(h)"]
+    C --> C2["Insert: O(h)"]
+    C --> C3["Delete: O(h)"]
+    C --> C4["Min/Max: O(h)"]
+    C --> C5["Successor/Predecessor: O(h)"]
+    C1 --> C1a["Average: O(log n)"]
+    C1 --> C1b["Worst: O(n) chain"]
+
+    D --> D1["Inorder: LNR"]
+    D --> D2["Preorder: NLR"]
+    D --> D3["Postorder: LRN"]
+
+    E --> E1["Case 1: Leaf"]
+    E1 --> E1a["Remove directly"]
+    E --> E2["Case 2: One child"]
+    E2 --> E2a["Replace with child"]
+    E --> E3["Case 3: Two children"]
+    E3 --> E3a["Find inorder successor"]
+    E3 --> E3b["Copy data"]
+    E3 --> E3c["Delete successor"]
+
+    BST_Example["Example Tree:
+          50
+         /  \
+        30   70
+       / \   / \
+      20 40 60 80"] --> A

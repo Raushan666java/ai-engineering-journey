@@ -16,6 +16,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![ES6+ JavaScript Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/05-es6-plus.png)
+
 ### 5.1 Block-Scoped Declarations
 
 ES6 introduced `let` and `const` to address the function-scoping pitfalls of `var`.

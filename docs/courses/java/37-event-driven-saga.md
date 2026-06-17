@@ -14,6 +14,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![Event-Driven Architecture & SAGA](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/37-event-driven-saga.png)
+
 ### 1. Domain Events
 
 A domain event is an immutable record of something that happened in the domain that domain experts care about. It represents a fact — not a command. Domain events are named in the past tense.

@@ -1,0 +1,38 @@
+flowchart TD
+    F[Functions] --> DEF[Definition]
+    F --> INJ[Injective Surjective Bijective]
+    F --> COM[Composition]
+    F --> INV[Inverse Functions]
+    F --> SPEC[Special Functions]
+    F --> GROW[Growth of Functions]
+
+    DEF --> D1[Domain A Codomain B]
+    DEF --> D2[Image Range subset of B]
+    DEF --> D3[Preimage]
+
+    INJ --> J1[Injective: one-to-one]
+    INJ --> J2[Surjective: onto]
+    INJ --> J3[Bijective: both]
+    J1 --> J1A["f a1 = f a2 implies a1 = a2"]
+    J2 --> J2A["For every b in B exists a with f a = b"]
+    J3 --> J3A[Has an inverse]
+
+    COM --> C1["g circ f a = g f a"]
+    COM --> C2[Associative]
+    COM --> C3[Not commutative]
+
+    INV --> V1[Exists iff bijective]
+    INV --> V2["f-1 circ f = id_A"]
+    INV --> V3["f circ f-1 = id_B"]
+    INV --> V4["g circ f-1 = f-1 circ g-1"]
+
+    SPEC --> S1[Floor: greatest integer less or equal]
+    SPEC --> S2[Ceiling: least integer greater or equal]
+    SPEC --> S3[Factorial n]
+    SPEC --> S4[Mod function]
+
+    GROW --> G1["Big-O: upper bound"]
+    GROW --> G2["Big-Omega: lower bound"]
+    GROW --> G3["Big-Theta: tight bound"]
+    GROW --> G4["Little-o: dominates"]
+    G1 --> G1A["1 log n sqrt n n n log n n-squared"]

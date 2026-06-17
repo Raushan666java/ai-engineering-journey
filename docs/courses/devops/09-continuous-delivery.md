@@ -4,6 +4,8 @@
 
 ## Learning Objectives
 
+![Continuous Delivery Deployment Strategies](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch09-cd-strategies.png)
+
 - Distinguish between Continuous Delivery (CD) and Continuous Deployment.
 - Understand the importance of the Deployment Pipeline in the software lifecycle.
 - Explain advanced deployment strategies: Blue-Green, Canary, and Rolling Updates.

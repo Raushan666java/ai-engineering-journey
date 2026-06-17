@@ -1,0 +1,33 @@
+flowchart TB
+    A["Generators and itertools"] --> B["Generator Functions"]
+    A --> C["Generator Expressions"]
+    A --> D["Generator Communication"]
+    A --> E["Lazy Evaluation"]
+    A --> F["itertools Module"]
+
+    B --> B1["def func(): yield value"]
+    B --> B2["Returns generator object"]
+    B --> B3["State saved between yields"]
+    B --> B4["Raises StopIteration when done"]
+
+    C --> C1["(x for x in iterable)"]
+    C --> C2["Memory efficient"]
+    C --> C3["Single-use iterator"]
+
+    D --> D1["gen.send(value)"]
+    D --> D2["gen.throw(exception)"]
+    D --> D3["gen.close()"]
+    D --> D4["yield from subgenerator"]
+
+    E --> E1["Process streams larger than memory"]
+    E --> E2["Read large files line by line"]
+    E --> E3["Infinite sequences"]
+
+    F --> F1["count start step"]
+    F --> F2["cycle through iterable"]
+    F --> F3["repeat value"]
+    F --> F4["chain multiple iterables"]
+    F --> F5["groupby consecutive keys"]
+    F --> F6["islice lazy slicing"]
+    F --> F7["product Cartesian product"]
+    F --> F8["permutations and combinations"]

@@ -4,6 +4,8 @@
 
 ## Topic Weightage Table (GATE 2010–2025)
 
+![Data Structures and Algorithms Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms.png)
+
 | Topic | Avg Marks | 2025 | 2024 | 2023 | 2022 | 2021 | 2020 | 2019 | 2018 | 2017 | 2016 | 2015 |
 |-------|-----------|------|------|------|------|------|------|------|------|------|------|------|
 | Complexity Analysis | 3–5 | 4 | 3 | 5 | 4 | 3 | 5 | 3 | 4 | 5 | 3 | 4 |

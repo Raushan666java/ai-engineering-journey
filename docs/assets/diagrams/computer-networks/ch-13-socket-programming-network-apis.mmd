@@ -1,0 +1,59 @@
+flowchart TD
+    subgraph SocketTypes["Socket Types"]
+        STREAM["SOCK_STREAM<br/>TCP - reliable, ordered<br/>connection-oriented byte stream"]
+        DGRAM["SOCK_DGRAM<br/>UDP - unreliable<br/>connectionless datagrams"]
+        RAW["SOCK_RAW<br/>Direct IP access<br/>custom protocol headers"]
+    end
+
+    subgraph TCPFlow["TCP Client-Server Flow"]
+        direction TB
+        S1["SERVER: socket() → AF_INET, SOCK_STREAM"]
+        S2["SERVER: bind() → (IP, port)"]
+        S3["SERVER: listen() → passive open, backlog=3"]
+        S4["SERVER: accept() → blocks until client connects"]
+        C1["CLIENT: socket() → AF_INET, SOCK_STREAM"]
+        C2["CLIENT: connect() → 3-way handshake to server"]
+        C3["CLIENT: send() → data request"]
+        S5["SERVER: recv() → receives request"]
+        S6["SERVER: send() → response data"]
+        C4["CLIENT: recv() → receives response"]
+        C5["CLIENT: close() → FIN"]
+        S7["SERVER: close() → FIN"]
+        C1 --> C2 --> C3
+        S1 --> S2 --> S3 --> S4
+        C2 -. 3-way handshake .-> S4
+        C3 --> S5 --> S6 --> C4
+        C5 -. FIN .-> S7
+    end
+
+    subgraph UDPFlow["UDP Client-Server Flow"]
+        direction TB
+        US1["SERVER: socket() → AF_INET, SOCK_DGRAM"]
+        US2["SERVER: bind() → (IP, port)"]
+        US3["SERVER: recvfrom() → blocks for datagram"]
+        UC1["CLIENT: socket() → AF_INET, SOCK_DGRAM"]
+        UC2["CLIENT: sendto() → datagram to server"]
+        US4["SERVER: recvfrom() → datagram received"]
+        US5["SERVER: sendto() → response to client"]
+        UC3["CLIENT: recvfrom() → response received"]
+        US1 --> US2 --> US3
+        UC1 --> UC2
+        UC2 -.-> US4 --> US5
+        US5 -.-> UC3
+    end
+
+    subgraph IOmodels["I/O Multiplexing Models"]
+        BLOCK["Blocking I/O<br/>recv() blocks until data<br/>simple but thread-per-client"]
+        NONBLOCK["Non-blocking I/O<br/>O_NONBLOCK flag<br/>returns EAGAIN if no data<br/>busy-loop polling"]
+        SELECT["select()<br/>FD_SET bitmask<br/>limit: FD_SETSIZE=1024<br/>O(n) scan"]
+        POLL["poll()<br/>struct pollfd array<br/>no size limit<br/>O(n) scan"]
+        EPOLL["epoll()<br/>event-driven, O(1)<br/>edge or level triggered<br/>10K+ connections"]
+    end
+
+    subgraph Options["Key Socket Options"]
+        REUSE["SO_REUSEADDR<br/>reuse address in TIME_WAIT"]
+        KEEP["SO_KEEPALIVE<br/>probe dead connections"]
+        LING["SO_LINGER<br/>close behavior with pending data"]
+        NODELAY["TCP_NODELAY<br/>disable Nagle's algorithm"]
+        QUICK["TCP_QUICKACK<br/>disable delayed ACK"]
+    end

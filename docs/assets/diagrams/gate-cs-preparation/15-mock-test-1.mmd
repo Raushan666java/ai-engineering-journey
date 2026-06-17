@@ -1,0 +1,26 @@
+flowchart TB
+    subgraph Exam[GATE CS Mock Test 1]
+        direction TB
+        Total[Total: 100 Marks<br/>Duration: 3 Hours]
+    end
+
+    Total --> SecA
+
+    subgraph SecA[Section A: General Aptitude<br/>Questions 1 to 15]
+        GA1[Q1 to Q10<br/>1 Mark Each<br/>No Negative]
+        GA2[Q11 to Q15<br/>2 Marks Each<br/>-0.66 Negative]
+    end
+
+    Total --> SecB
+
+    subgraph SecB[Section B: Engineering Mathematics<br/>Questions 16 to 25]
+        EM1[Q16 to Q20<br/>1 Mark Each<br/>No Negative]
+        EM2[Q21 to Q25<br/>2 Marks Each<br/>-0.66 Negative]
+    end
+
+    Total --> SecC
+
+    subgraph SecC[Section C: Technical Subjects<br/>Questions 26 to 55]
+        T1[Q26 to Q40<br/>1 Mark Each<br/>-0.33 Negative]
+        T2[Q41 to Q55<br/>2 Marks Each<br/>-0.66 Negative]
+    end

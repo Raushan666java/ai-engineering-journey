@@ -1,0 +1,52 @@
+flowchart TB
+    subgraph DbAsCode["Database as Code"]
+        A[Schema in Git]
+        B[Version Controlled Migrations]
+        C[Automated Testing]
+        D[Pipeline Based Deployment]
+    end
+
+    subgraph MigrationTools["Migration Tools"]
+        E[Flyway]
+        F[Liquibase]
+        G[Alembic Python]
+    end
+
+    E --> H[Versioned SQL Files]
+    E --> I[Schema History Table]
+    F --> J[XML JSON YAML Changelog]
+    F --> K[Rollback Support]
+    G --> L[Auto Generate from Models]
+    G --> M[Upgrade and Downgrade]
+
+    subgraph CICD["Database CI/CD"]
+        N[Validate Syntax]
+        O[Test on Test DB]
+        P[Stage to Staging]
+        Q[Apply to Production]
+        R[Monitor and Rollback]
+    end
+
+    subgraph Strategies["Zero Downtime Strategies"]
+        S[Add Column Safe]
+        T[Remove Column Two Phase]
+        U[Rename Column Three Phase]
+        V[Blue Green Schema]
+    end
+
+    subgraph Backup["Backup and Restore"]
+        W[Full Backup Nightly]
+        X[Incremental Backup]
+        Y[WAL Shipping Continuous]
+        Z[Point in Time Recovery]
+        AA[Restore Testing]
+    end
+
+    subgraph Testing["Database Testing"]
+        AB[Unit Tests]
+        AC[Integration Tests]
+        AD[Performance Tests]
+        AE[Migration Validation]
+    end
+
+    A --> N --> O --> P --> Q --> R

@@ -1,0 +1,26 @@
+flowchart TB
+    subgraph Exam[GATE CS Mock Test 7<br/>Hard Difficulty]
+        direction TB
+        Total[Total: 100 Marks<br/>Duration: 3 Hours<br/>Time: GA 30 min Math 30 min Tech 120 min]
+    end
+
+    Total --> GA
+
+    subgraph GA[General Aptitude<br/>Q1 to Q15]
+        GA1[Q1 to Q10<br/>1 Mark<br/>-0.33 Negative]
+        GA2[Q11 to Q15<br/>2 Marks<br/>-0.66 Negative]
+    end
+
+    Total --> EM
+
+    subgraph EM[Engineering Mathematics<br/>Q16 to Q25]
+        EM1[Q16 to Q20<br/>1 Mark<br/>-0.33 Negative]
+        EM2[Q21 to Q25<br/>2 Marks<br/>-0.66 Negative]
+    end
+
+    Total --> Tech
+
+    subgraph Tech[Technical Subjects<br/>Q26 to Q55]
+        T1[Q26 to Q45<br/>1 Mark<br/>-0.33 Negative]
+        T2[Q46 to Q55<br/>2 Marks<br/>-0.66 Negative]
+    end

@@ -1,0 +1,31 @@
+flowchart TD
+    A["Red-Black Tree"] --> B["Five Properties"]
+    A --> C["Insertion"]
+    A --> D["Comparison with AVL"]
+
+    B --> B1["1. Every node red or black"]
+    B --> B2["2. Root is black"]
+    B --> B3["3. Every leaf (NIL) is black"]
+    B --> B4["4. Red node → black children"]
+    B --> B5["5. All paths same #black nodes"]
+
+    C --> C1["Insert as red leaf"]
+    C --> C2["Fix-up Cases"]
+    C2 --> C2a["Case 1: parent + uncle red"]
+    C2a --> C2a1["Recolor parent, uncle, grandparent"]
+    C2a --> C2a2["Move up to grandparent"]
+    C2 --> C2b["Case 2: parent red, uncle black"]
+    C2b --> C2b1["Rotate + recolor"]
+    C2 --> C2c["Case 3: parent red, uncle black (zigzag)"]
+    C2c --> C2c1["Double rotation + recolor"]
+
+    D --> D1["AVL: strict balance (bf ≤ 1)"]
+    D --> D2["RB: relaxed (bh property)"]
+    D --> D3["Height: RB ≤ 2 log n, AVL < 1.44 log n"]
+    D --> D4["Insert rotations: RB ≤ 2, AVL 1-2"]
+    D --> D5["Delete rotations: RB ≤ 3, AVL O(log n)"]
+    D --> D6["RB: faster insert/delete"]
+    D --> D7["AVL: faster search"]
+    D --> D8["std::map, Java TreeMap → RB"]
+
+    E["Black-Height: # black nodes from node to leaf"] --> A

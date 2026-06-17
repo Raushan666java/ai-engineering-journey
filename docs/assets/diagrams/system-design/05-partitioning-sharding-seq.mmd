@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant C as Client
+    participant G as API Gateway
+    participant R as Shard Router
+    participant S as ScyllaDB Node
+    C->>G: Send message (guild_id=123)
+    G->>R: Resolve shard for guild 123
+    R-->>G: shard_id = 2 (node 3)
+    G->>S: Write message to Node 3
+    S-->>G: Acknowledged
+    G-->>C: 201 Created

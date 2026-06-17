@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Docker Compose Multi-Service Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch06-docker-compose.png)
+
 By the end of this chapter, students will be able to:
 
 1. Define multi-service applications using Docker Compose with services, networks, and volumes

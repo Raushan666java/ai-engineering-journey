@@ -1,4 +1,4 @@
-# Chapter 18: Automation Patterns & Workflows
+﻿# Chapter 18: Automation Patterns & Workflows
 
 ---
 ## Learning Objectives
@@ -11,6 +11,9 @@
 ---
 
 ## Theory
+
+![Automation Patterns](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/18-automation-patterns.png)
+
 
 ### 18.1 Event-Driven Automation
 
@@ -111,7 +114,7 @@ class EventServiceProvider extends ServiceProvider
 }
 ```
 
-For complex event handling, use **event subscribers** — classes that subscribe to multiple events:
+For complex event handling, use **event subscribers** â€” classes that subscribe to multiple events:
 
 ```php
 <?php
@@ -167,7 +170,7 @@ OrderShipped::dispatch($order)->delay(now()->addHours(24));
 
 Queues are essential for non-blocking automation. Laravel provides several patterns for composing work:
 
-**Job Chaining** — Run jobs sequentially, stopping if any fails:
+**Job Chaining** â€” Run jobs sequentially, stopping if any fails:
 
 ```php
 <?php
@@ -202,7 +205,7 @@ class CheckoutController extends Controller
 
 Each job in the chain receives the same `$order` instance. If `ProcessPayment` throws an exception, none of the subsequent jobs run.
 
-**Job Batching** — Run jobs in parallel and react when the batch completes:
+**Job Batching** â€” Run jobs in parallel and react when the batch completes:
 
 ```php
 <?php
@@ -290,7 +293,7 @@ class BatchProgressController extends Controller
 }
 ```
 
-**Unique Jobs** — Prevent duplicate instances of the same job in the queue:
+**Unique Jobs** â€” Prevent duplicate instances of the same job in the queue:
 
 ```php
 <?php
@@ -332,7 +335,7 @@ class SyncUserToCrm implements ShouldQueue, ShouldBeUnique
 }
 ```
 
-**Job Middleware** — Add rate limiting or throttling to jobs:
+**Job Middleware** â€” Add rate limiting or throttling to jobs:
 
 ```php
 <?php
@@ -387,7 +390,7 @@ RateLimiter::for('email-campaign', function () {
 });
 ```
 
-**Job Events for Monitoring** — Hook into the job lifecycle:
+**Job Events for Monitoring** â€” Hook into the job lifecycle:
 
 ```php
 <?php
@@ -1560,7 +1563,7 @@ class DocumentViewController extends Controller
 - CI/CD integration runs tests and deployments with zero-downtime and rollback strategies
 - Monitoring alerts track queue health, cache hit ratios, and job failures through custom notification channels
 - Business process automation handles approval workflows, document pipelines, and scheduled report generation
-- The complete document processing example demonstrates event → job chain → AI analysis → notification → broadcast
+- The complete document processing example demonstrates event â†’ job chain â†’ AI analysis â†’ notification â†’ broadcast
 
 ## Exercises
 
@@ -1578,7 +1581,7 @@ class DocumentViewController extends Controller
 
 ### Challenge Problem
 Build a complete order fulfillment automation system:
-- An `OrderCreated` event triggers a job chain: authorize payment → check inventory → allocate stock → generate packing slip → update shipping provider
+- An `OrderCreated` event triggers a job chain: authorize payment â†’ check inventory â†’ allocate stock â†’ generate packing slip â†’ update shipping provider
 - If inventory is insufficient, the chain catches the failure, notifies the warehouse team, and marks the order as `backordered`
 - A scheduled task runs hourly to check backordered orders against restocked inventory and dispatches fulfillment when stock is available
 - A webhook endpoint receives shipping carrier updates (delivered, delayed, returned) and updates the order status accordingly

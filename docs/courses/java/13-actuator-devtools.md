@@ -19,6 +19,8 @@ After completing this chapter, you will be able to:
 
 ## 1. Theory
 
+![Actuator & DevTools Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/13-actuator-devtools.png)
+
 ### 1.1 Introduction to Spring Boot Actuator
 
 Spring Boot Actuator is a production-grade tool for monitoring and managing Spring Boot applications. It exposes operational information such as health, metrics, environment properties, thread dumps, and more via HTTP endpoints or JMX MBeans.

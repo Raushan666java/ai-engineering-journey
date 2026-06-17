@@ -1,0 +1,30 @@
+graph TD
+    subgraph Thread Safety
+        TS1[Mutex Lock]
+        TS2[Semaphore]
+        TS3[Read-Write Lock]
+        TS4[Atomic Operations]
+    end
+    subgraph Concurrency Patterns
+        CP1[Producer-Consumer]
+        CP2[Thread Pool]
+        CP3[Future/Promise]
+        CP4[Barrier/CyclicBarrier]
+        CP5[Fork-Join]
+    end
+    subgraph Problems
+        PP1[Dining Philosophers]
+        PP2[Readers-Writers]
+        PP3[Dining Savages]
+        PP4[Sleeping Barber]
+    end
+    subgraph Synchronization
+        SY1[Condition Variable]
+        SY2[Monitor]
+        SY3[Barrier]
+        SY4[CountDownLatch]
+    end
+    PP1 --> TS1
+    PP2 --> TS3
+    CP1 --> TS2
+    CP5 --> CP2

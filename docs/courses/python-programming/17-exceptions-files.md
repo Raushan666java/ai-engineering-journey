@@ -11,6 +11,8 @@ By the end of this chapter, students will be able to:
 - Read and write CSV, JSON, and pickle files
 - Navigate the filesystem with pathlib
 
+![Exceptions and File I/O](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/17-exceptions-files.png)
+
 ## 17.1 Exception Handling
 
 ### 17.1.1 Basic try/except

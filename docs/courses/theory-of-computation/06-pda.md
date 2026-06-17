@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Pushdown Automata Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/06-pda.png)
+
 ### 6.1 What is a Pushdown Automaton?
 
 A pushdown automaton (PDA) extends an NFA with a **stack** — an unbounded memory that can store and retrieve information in last-in-first-out (LIFO) order. This additional memory enables PDAs to recognize **context-free languages** — languages that NFAs/DFAs cannot recognize (like {aⁿbⁿ | n ≥ 0}).

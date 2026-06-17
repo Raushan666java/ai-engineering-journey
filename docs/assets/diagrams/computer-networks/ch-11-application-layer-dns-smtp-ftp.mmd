@@ -1,0 +1,48 @@
+sequenceDiagram
+    participant Client as Client Application
+    participant Resolver as Local DNS Resolver
+    participant Root as Root DNS Server
+    participant TLD as .com TLD Server
+    participant Auth as Authoritative DNS Server
+    participant MailSrv as Sender MTA (SMTP)
+    participant MailRelay as Receiver MTA (SMTP)
+    participant Mailbox as Recipient Mailbox (POP3/IMAP)
+
+    Note over Client,Mailbox: Phase 1: DNS Resolution
+    Client->>Resolver: Query www.example.com
+    Resolver->>Root: Query .com nameservers
+    Root-->>Resolver: List of .com TLD servers
+    Resolver->>TLD: Query example.com nameservers
+    TLD-->>Resolver: List of auth servers for example.com
+    Resolver->>Auth: Query www.example.com A record
+    Auth-->>Resolver: 93.184.216.34 (with TTL)
+    Resolver-->>Client: 93.184.216.34 (cached)
+
+    Note over Client,Mailbox: Phase 2: SMTP Mail Delivery
+    Client->>MailSrv: HELO (port 587)
+    MailSrv-->>Client: 250 Hello
+    Client->>MailSrv: MAIL FROM: alice@example.com
+    MailSrv-->>Client: 250 OK
+    Client->>MailSrv: RCPT TO: bob@other.org
+    MailSrv-->>Client: 250 OK
+    Client->>MailSrv: DATA (message body)
+    MailSrv-->>Client: 250 OK (queued)
+    Note over MailSrv,MailRelay: MX lookup → relay to other.org
+    MailSrv->>MailRelay: SMTP transfer over port 25
+    MailRelay-->>MailSrv: 250 OK (delivered)
+    MailRelay->>Mailbox: Message stored on server
+    Client->>Mailbox: Retrieve via POP3/IMAP (port 110/143)
+    Mailbox-->>Client: Message delivered
+
+    Note over Client,Mailbox: Phase 3: File Transfer (FTP)
+    Client->>+FTPCtrl: FTP Control (port 21)
+    FTPCtrl-->>-Client: 220 Ready
+    Client->>+FTPCtrl: USER / PASS (authentication)
+    FTPCtrl-->>-Client: 230 Login successful
+    Client->>+FTPCtrl: PASV (passive mode)
+    FTPCtrl-->>-Client: 227 Entering Passive Mode (IP,port)
+    Note over Client,FTPData: Data connection (port 20 or PASV port)
+    Client->>+FTPData: RETR file.txt
+    FTPData-->>-Client: File data transfer
+    Client->>+FTPCtrl: QUIT
+    FTPCtrl-->>-Client: 221 Goodbye

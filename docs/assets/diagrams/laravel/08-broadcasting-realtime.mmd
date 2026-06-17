@@ -1,0 +1,50 @@
+flowchart TD
+    subgraph "Event System"
+        E1["Event Class<br/>OrderShipped"]
+        E2["Listener<br/>SendShipmentNotification"]
+        E3["ShouldBroadcast Contract"]
+        E4["ShouldQueue Contract"]
+    end
+
+    subgraph "Reverb WebSocket Server"
+        R1["Laravel Reverb<br/>First-party WS Server"]
+        R2["Public Channels<br/>No auth required"]
+        R3["Private Channels<br/>Authorization callback"]
+        R4["Presence Channels<br/>User list tracking"]
+    end
+
+    subgraph "Echo Client Library"
+        EC1["Subscribe to channel"]
+        EC2["Listen for events<br/>.listen OrderShipped"]
+        EC3["Notification Channel<br/>broadcast notification"]
+    end
+
+    subgraph "Broadcast Events"
+        BE1["broadcastOn channel"]
+        BE2["broadcastAs custom name"]
+        BE3["broadcastWith custom data"]
+    end
+
+    E1 --> E2
+    E1 --> E3
+    E2 --> E4
+
+    E3 --> R1
+    R1 --> R2
+    R1 --> R3
+    R1 --> R4
+
+    R2 --> EC1
+    R3 --> EC1
+    R4 --> EC1
+    EC1 --> EC2
+    EC2 --> EC3
+
+    BE1 --> E3
+    BE2 --> BE1
+    BE3 --> BE2
+
+    style E1 fill:#4a90d9,color:#fff
+    style R1 fill:#e67e22,color:#fff
+    style EC1 fill:#27ae60,color:#fff
+    style BE1 fill:#9b59b6,color:#fff

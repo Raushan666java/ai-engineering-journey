@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the purpose 
 
 ## Theory
 
+![Configuration Management System](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-10-configuration-management.png)
+
 ### The Purpose of Configuration Management
 
 Software configuration management (SCM) is the discipline of identifying, organising, and controlling changes to software artefacts throughout the software lifecycle. SCM ensures that the correct versions of all artefacts are used at each stage of development and that changes are managed in a controlled manner.

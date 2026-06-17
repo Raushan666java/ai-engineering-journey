@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph IOMethods["I/O Methods Comparison"]
+        ProgIO["Programmed I/O<br/>CPU polls device status<br/>loop: check READY → read/write<br/>CPU fully occupied<br/>simple but wasteful"]
+        IntIO["Interrupt-Driven I/O<br/>device asserts IRQ<br/>CPU saves context → ISR<br/>computing + I/O overlap<br/>context-switch overhead"]
+        DMA["Direct Memory Access<br/>DMA controller manages xfer<br/>CPU initialises: src + dst + count<br/>burst or cycle-stealing mode<br/>CPU free for computation"]
+    end
+
+    subgraph IntDetails["Interrupt Mechanism"]
+        IntSeq["Interrupt Sequence<br/>1. Device asserts IRQ<br/>2. CPU completes instruction<br/>3. Save PC + status reg<br/>4. Identify source (vectored)<br/>5. Load ISR address<br/>6. ISR saves regs, services device<br/>7. Return from interrupt"]
+        IntTypes["Interrupt Types<br/>Maskable: can be disabled<br/>NMI: critical, cannot disable<br/>SW trap: SYSCALL instruction"]
+        IntPriority["Priority Schemes<br/>Fixed: priority encoder<br/>Daisy chain: propagate ACK<br/>Programmable: configurable"]
+        Vectored["Vectored Interrupts<br/>device provides vector #<br/>indexes interrupt vector table<br/>reduces ISR latency"]
+    end
+
+    subgraph BusArch["Bus Architecture"]
+        BusLines["Bus Lines<br/>Data lines: carry data<br/>Address lines: select device<br/>Control lines: timing, direction"]
+        Arbitration["Bus Arbitration<br/>Centralised: single arbiter<br/>Distributed: collective decision"]
+        BusStandards["Common Standards<br/>PCI: 133-532 MB/s<br/>PCIe: 250 MB/s-32 GB/s<br/>USB 3.2: 625-2500 MB/s<br/>SATA 3: 600 MB/s<br/>NVMe: ~7 GB/s"]
+    end
+
+    subgraph MemMap["Memory-Mapped I/O"]
+        MMIO["Device registers mapped<br/>to memory address space<br/>load/store instructions used<br/>no special I/O instructions<br/>caches must be disabled"]
+    end
+
+    ProgIO --> IntIO
+    IntIO --> DMA
+    IntIO --> IntDetails
+    DMA --> BusArch
+    BusArch --> MemMap

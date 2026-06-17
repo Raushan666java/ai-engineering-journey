@@ -1,0 +1,35 @@
+flowchart TB
+    subgraph Process_Model["Process Model"]
+        task_struct["task_struct<br/>pid, tgid, state, mm, files, fs"]
+        States["Process States<br/>TASK_RUNNING, INTERRUPTIBLE<br/>UNINTERRUPTIBLE, STOPPED, TRACED"]
+        Clone["clone() System Call<br/>fork uses CLONE_CHILD flags<br/>pthread uses CLONE_VM|FILES|SIGHAND"]
+    end
+
+    subgraph Scheduler["Scheduler"]
+        O1["O(1) Scheduler (2.6)<br/>Active/Expired arrays<br/>Per-priority runqueues"]
+        CFS["CFS (2.6.23+)<br/>Virtual runtime vruntime<br/>Red-black tree by vruntime<br/>Leftmost = next to run<br/>Target latency ~20ms<br/>Nice values for priority"]
+    end
+
+    subgraph Memory["Memory Management"]
+        Buddy["Buddy Allocator<br/>Power-of-2 page blocks<br/>Split/merge on alloc/free"]
+        Slab["SLAB Allocator<br/>Caches kernel objects<br/>task_struct, inode caches"]
+        Other["kmalloc / vmalloc / KSM"]
+    end
+
+    subgraph VFS["Virtual File System"]
+        super_block["super_block"]
+        inode["inode"]
+        dentry["dentry"]
+        file["file / file_operations"]
+        Path_Walk["Path walk resolution"]
+    end
+
+    subgraph Modules["Modules & procfs"]
+        Modules_LL["Loadable Modules<br/>insmod / rmmod<br/>init/exit functions"]
+        Proc["/proc filesystem<br/>cpuinfo, meminfo, maps"]
+    end
+
+    Process_Model --> Scheduler
+    Process_Model --> Memory
+    Process_Model --> VFS
+    Process_Model --> Modules

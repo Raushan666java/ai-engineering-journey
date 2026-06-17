@@ -1,4 +1,4 @@
-# Chapter 8: Broadcasting, Events & Real-Time Features
+﻿# Chapter 8: Broadcasting, Events & Real-Time Features
 
 ---
 
@@ -14,6 +14,9 @@
 ---
 
 ## Theory
+
+![Broadcasting and Realtime](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/08-broadcasting-realtime.png)
+
 
 ### Event System Deep Dive
 

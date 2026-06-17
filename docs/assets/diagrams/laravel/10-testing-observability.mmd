@@ -1,0 +1,58 @@
+flowchart TD
+    subgraph "Testing Frameworks"
+        T1["PHPUnit<br/>phpunit.xml"]
+        T2["PEST<br/>pest.php"]
+    end
+
+    subgraph "Test Types"
+        TT1["Unit Tests<br/>Single class, isolated"]
+        TT2["Feature Tests<br/>Full request cycle"]
+        TT3["HTTP Tests<br/>get post json"]
+        TT4["Database Tests<br/>refreshDatabase"]
+        TT5["Browser Tests<br/>Laravel Dusk"]
+    end
+
+    subgraph "Testing Tools"
+        TX1["Mocks and Fakes<br/>Mail Queue Storage"]
+        TX2["Factories and Seeders"]
+        TX3["Artisan test runner"]
+    end
+
+    subgraph "Observability"
+        O1["Laravel Telescope<br/>Request debug dashboard"]
+        O2["Laravel Pulse<br/>Production monitoring"]
+        O3["Logging<br/>single daily stack"]
+        O4["Debug toolchain<br/>dd ray clockwork"]
+    end
+
+    subgraph "CI Integration"
+        CI1["GitHub Actions"]
+        CI2["Parallel test runs"]
+        CI3["Code coverage reports"]
+    end
+
+    T1 --> TT1
+    T1 --> TT2
+    T2 --> TT1
+    T2 --> TT2
+    TT2 --> TT3
+    TT2 --> TT4
+    TT2 --> TT5
+    TT1 --> TX1
+    TT2 --> TX2
+    TX1 --> TX3
+    TX2 --> TX3
+
+    O1 --> O2
+    O2 --> O3
+    O3 --> O4
+
+    TT1 --> CI1
+    TT2 --> CI1
+    CI1 --> CI2
+    CI1 --> CI3
+
+    style T1 fill:#4a90d9,color:#fff
+    style T2 fill:#4a90d9,color:#fff
+    style O1 fill:#27ae60,color:#fff
+    style CI1 fill:#e67e22,color:#fff

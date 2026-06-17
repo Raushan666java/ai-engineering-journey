@@ -1,0 +1,51 @@
+flowchart TD
+    subgraph "Core Models"
+        CM1["Patient<br/>Encrypted PHI"]
+        CM2["Provider<br/>NPI Specialty"]
+        CM3["Appointment<br/>Scheduling"]
+        CM4["MedicalRecord<br/>pgvector embeddings"]
+        CM5["Claim<br/>Insurance lifecycle"]
+    end
+
+    subgraph "HIPAA Safeguards"
+        HS1["Administrative<br/>Roles audit logs"]
+        HS2["Physical<br/>Server encryption"]
+        HS3["Technical<br/>Encrypt decrypt accessors"]
+    end
+
+    subgraph "AI Agents"
+        AG1["PatientIntakeAgent<br/>Extract from referrals"]
+        AG2["ClinicalDecisionAgent<br/>RAG over literature"]
+        AG3["MedicalRecordRAG<br/>Natural language queries"]
+        AG4["AppointmentScheduler<br/>Slot booking"]
+        AG5["ClaimsProcessor<br/>Validation fraud"]
+        AG6["LabReviewAgent<br/>Critical values"]
+        AG7["MedicationManager<br/>Drug interactions"]
+    end
+
+    subgraph "Integration"
+        IG1["FHIR REST API"]
+        IG2["HL7 v2 Messages"]
+        IG3["EHR Systems"]
+    end
+
+    CM1 --> HS1
+    CM1 --> HS2
+    CM1 --> HS3
+
+    CM1 --> AG1
+    CM2 --> AG2
+    CM3 --> AG4
+    CM4 --> AG3
+    CM5 --> AG5
+    CM4 --> AG6
+    CM1 --> AG7
+
+    AG2 --> IG1
+    AG3 --> IG2
+    AG5 --> IG3
+
+    style CM1 fill:#4a90d9,color:#fff
+    style HS1 fill:#c0392b,color:#fff
+    style AG1 fill:#27ae60,color:#fff
+    style IG1 fill:#e67e22,color:#fff

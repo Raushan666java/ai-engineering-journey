@@ -1,0 +1,48 @@
+flowchart TB
+    subgraph Deps["Spring Boot Test Dependencies"]
+        JUnit5["JUnit 5"]
+        Mockito["Mockito"]
+        AssertJ["AssertJ"]
+        Hamcrest["Hamcrest"]
+        SpringTest["Spring Test Framework"]
+    end
+
+    subgraph FullContext["@SpringBootTest Full Context"]
+        AllBeans["Load all beans and auto-configuration"]
+        WebEnv["Web Environment: MOCK / RANDOM_PORT / DEFINED_PORT / NONE"]
+        ContextCache["Context Caching: reuse between tests"]
+        Dirties["@DirtiesContext: force fresh context"]
+    end
+
+    subgraph TestSlices["Test Slices"]
+        WebMvc["@WebMvcTest: controllers only"]
+        DataJpa["@DataJpaTest: JPA repositories"]
+        JsonTest["@JsonTest: JSON serialization"]
+        RestClient["@RestClientTest: REST clients"]
+        WebFlux["@WebFluxTest: reactive controllers"]
+        DataMongo["@DataMongoTest: MongoDB"]
+        DataRedis["@DataRedisTest: Redis"]
+    end
+
+    subgraph Mocking["Mocking and Spying"]
+        MockBean["@MockBean: replace with mock"]
+        SpyBean["@SpyBean: partial mock"]
+    end
+
+    subgraph Clients["HTTP Clients for Testing"]
+        TestRestTemplate["TestRestTemplate: REST template"]
+        WebTestClient["WebTestClient: reactive client"]
+        MockMvc["MockMvc: mock servlet environment"]
+    end
+
+    subgraph Config["Test Configuration"]
+        TestProp["@TestPropertySource: properties file"]
+        DynProp["@DynamicPropertySource: runtime properties"]
+        ActiveProfiles["@ActiveProfiles: profile selection"]
+    end
+
+    Deps --> FullContext
+    FullContext --> TestSlices
+    FullContext --> Clients
+    TestSlices --> Mocking
+    FullContext --> Config

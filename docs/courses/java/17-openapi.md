@@ -24,6 +24,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![OpenAPI / Swagger Documentation Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/17-openapi.png)
+
 ### 1. OpenAPI and Swagger — The Big Picture
 
 OpenAPI is a specification (formerly Swagger 2.0, now OpenAPI 3.x) for describing HTTP APIs in a machine-readable format (JSON or YAML). Swagger UI renders that spec as interactive documentation. SpringDoc bridges Spring Boot and OpenAPI 3.0 without requiring the legacy SpringFox library.

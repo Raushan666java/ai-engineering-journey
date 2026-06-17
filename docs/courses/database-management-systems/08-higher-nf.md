@@ -10,6 +10,8 @@
 
 ## Theory
 
+![Higher Normal Forms Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch08-higher-nf.png)
+
 ### 8.1 Beyond BCNF
 
 BCNF eliminates redundancy from functional dependencies, but other types of dependencies can still cause redundancy:

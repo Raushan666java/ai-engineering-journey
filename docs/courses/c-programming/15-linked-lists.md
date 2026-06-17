@@ -8,6 +8,8 @@
 - Implement circular linked lists
 - Understand the trade-offs between linked lists and arrays
 
+![C Linked Lists: Singly, Doubly, Circular, Operations and Complexity](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-15-linked-lists.png)
+
 ## 15.1 Node Structure
 
 A linked list is a sequence of nodes where each node contains data and a pointer to the next node.

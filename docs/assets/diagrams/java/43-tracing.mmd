@@ -1,0 +1,31 @@
+flowchart TB
+  OBS[Distributed Tracing Observability]
+  OBS --> TRACE[Distributed Tracing]
+  TRACE --> TID[traceId]
+  TRACE --> SID[spanId]
+  TRACE --> PID[parentId]
+  TRACE --> PROP[Propagation]
+  TRACE --> MT[Micrometer Tracing]
+  MT --> OTel[OpenTelemetry Bridge]
+  MT --> SC[Span Customizers]
+
+  OBS --> ZIPKIN[Zipkin]
+  ZIPKIN --> COLLECT[Span Collection]
+  ZIPKIN --> UI[Visualization]
+  ZIPKIN --> DEP[Span Dependency Graph]
+
+  OBS --> TEMPO[Grafana Tempo]
+  TEMPO --> INGEST[Trace Ingestion]
+  TEMPO --> QUERY[TraceQL Querying]
+
+  OBS --> LOG[Distributed Logging]
+  LOG --> MDC[MDC Correlation IDs]
+  LOG --> JSON[JSON Structured Logging]
+  LOG --> LOGSTASH[Logstash Encoder]
+  LOG --> ELK[ELK Stack]
+  LOG --> LOKI[Grafana Loki]
+
+  OBS --> OTEL[OpenTelemetry SDK]
+  OTEL --> AUTO[Automatic Instrumentation]
+  OTEL --> MANUAL[Manual Instrumentation]
+  OTEL --> EXPORT[Exporters]

@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Virtualization](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/17-virtualization.png)
+
 ### Virtualization Concepts
 
 **Virtualization** is the creation of a virtual version of a resource (CPU, memory, storage, network). A **virtual machine (VM)** is an isolated environment that runs its own operating system and appears as a physical machine to that OS.

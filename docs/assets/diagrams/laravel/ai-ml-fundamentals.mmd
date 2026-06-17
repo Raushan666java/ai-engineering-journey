@@ -1,0 +1,68 @@
+flowchart TD
+    subgraph "Machine Learning Paradigms"
+        ML1["Supervised Learning<br/>Labeled data X to y"]
+        ML2["Unsupervised Learning<br/>Hidden patterns no labels"]
+        ML3["Reinforcement Learning<br/>Reward trial-and-error"]
+    end
+
+    subgraph "Supervised Types"
+        ST1["Regression<br/>Continuous value prediction"]
+        ST2["Classification<br/>Discrete category label"]
+    end
+
+    subgraph "Unsupervised Types"
+        UT1["Clustering<br/>Group similar items"]
+        UT2["Dimensionality Reduction<br/>PCA t-SNE"]
+        UT3["Association<br/>Market basket analysis"]
+    end
+
+    subgraph "Key Concepts"
+        KC1["Overfitting vs Underfitting"]
+        KC2["Bias-Variance Tradeoff"]
+        KC3["Train Test Validation Split"]
+        KC4["Cross-Validation k-fold"]
+        KC5["Regularization L1 L2"]
+    end
+
+    subgraph "PHP ML Tools"
+        PT1["PHP-ML Library<br/>Regression Classification"]
+        PT2["Rubix ML<br/>Neural Networks Pipelines"]
+        PT3["Laravel AI SDK<br/>LLM Integration"]
+    end
+
+    subgraph "ML Pipeline"
+        MP1["Feature Engineering<br/>Cleaning transforming"]
+        MP2["Model Training<br/>Artisan commands"]
+        MP3["Model Persistence<br/>Version registry"]
+        MP4["Inference Endpoint<br/>Hybrid ML plus LLM"]
+        MP5["Monitoring<br/>Drift detection retrain"]
+    end
+
+    ML1 --> ST1
+    ML1 --> ST2
+    ML2 --> UT1
+    ML2 --> UT2
+    ML2 --> UT3
+
+    ML1 --> KC1
+    ML2 --> KC1
+    ML3 --> KC1
+    KC1 --> KC2
+    KC1 --> KC3
+    KC3 --> KC4
+    KC1 --> KC5
+
+    ST1 --> PT1
+    ST2 --> PT1
+    UT1 --> PT2
+    PT1 --> MP1
+    PT2 --> MP1
+
+    MP1 --> MP2 --> MP3 --> MP4 --> MP5
+
+    style ML1 fill:#4a90d9,color:#fff
+    style ML2 fill:#4a90d9,color:#fff
+    style ML3 fill:#4a90d9,color:#fff
+    style KC1 fill:#27ae60,color:#fff
+    style PT1 fill:#e67e22,color:#fff
+    style MP1 fill:#9b59b6,color:#fff

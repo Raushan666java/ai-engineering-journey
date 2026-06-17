@@ -4,6 +4,8 @@
 
 ## Learning Objectives
 
+![Kubernetes Orchestration Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch06-k8s-orchestration.png)
+
 - Define container orchestration and explain why it is necessary for large-scale applications.
 - Understand the high-level architecture of Kubernetes (Control Plane vs. Worker Nodes).
 - Identity core Kubernetes objects: Pods, Services, Deployments, and Namespaces.

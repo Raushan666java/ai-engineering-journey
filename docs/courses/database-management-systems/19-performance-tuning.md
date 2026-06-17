@@ -13,6 +13,8 @@ After completing this chapter, you will be able to:
 
 ## 19.1 Specialized Index Types
 
+![Performance Tuning Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch19-performance-tuning.png)
+
 Chapter 12 covered B+ trees and hash indexes. Production databases demand more.
 
 ### 19.1.1 BRIN (Block Range INdex)

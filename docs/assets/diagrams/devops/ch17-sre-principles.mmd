@@ -1,0 +1,61 @@
+flowchart TB
+    subgraph SREvsDevOps["SRE vs DevOps"]
+        A[DevOps Culture Automation]
+        B[SRE Engineering Reliability]
+        C[Error Budget Gating]
+        D[50 Percent Toil Limit]
+    end
+
+    subgraph SLO["SLO SLI SLA"]
+        E[SLI Measurement]
+        F[SLO Target]
+        G[SLA Contract]
+        H[Error Budget Calculation]
+        I[Burn Rate Alerts]
+    end
+
+    subgraph Toil["Toil Elimination"]
+        J[Manual Work]
+        K[Repetitive Tasks]
+        L[Automatable Processes]
+        M[50 Percent Rule]
+        N[Engineering Investment]
+    end
+
+    subgraph IncidentMgmt["Incident Management"]
+        O[Detection]
+        P[Triage Severity]
+        Q[Mitigation]
+        R[Resolution]
+        S[Follow Up Postmortem]
+    end
+
+    subgraph OnCall["On Call Practices"]
+        T[Rotations Weekly]
+        U[Follow the Sun]
+        V[Escalation Tiers]
+        W[Runbooks]
+        X[Time Off After On Call]
+    end
+
+    subgraph Postmortem["Blameless Postmortems"]
+        Y[Timeline]
+        Z[Root Cause Analysis]
+        AA[Action Items]
+        AB[Systemic Fixes]
+    end
+
+    subgraph Reliability["Reliability Patterns"]
+        AC[Retries with Backoff]
+        AD[Circuit Breaker]
+        AE[Bulkhead Isolation]
+        AF[Timeouts]
+        AG[Graceful Degradation]
+    end
+
+    subgraph Capacity["Capacity Planning"]
+        AH[Demand Forecasting]
+        AI[Resource Modeling]
+        AJ[Autoscaling]
+        AK[Utilization Monitoring]
+    end

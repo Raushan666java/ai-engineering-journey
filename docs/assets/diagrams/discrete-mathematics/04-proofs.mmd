@@ -1,0 +1,38 @@
+flowchart TD
+    PT[Proof Techniques] --> D[Direct Proof]
+    PT --> CON[Contrapositive]
+    PT --> CTR[Contradiction]
+    PT --> IN[Mathematical Induction]
+    PT --> SI[Strong Induction]
+    PT --> CE[Counterexample]
+    PT --> EX[Existence Proofs]
+    PT --> PC[Proof by Cases]
+
+    D --> D1["Assume P is true"]
+    D --> D2["Derive Q using logic"]
+    D --> D3[Example: even n implies even n-squared]
+
+    CON --> C1["Prove NOT Q implies NOT P"]
+    CON --> C2[Equivalent to original statement]
+    CON --> C3[Example: odd n-squared implies odd n]
+
+    CTR --> CR1["Assume statement is false"]
+    CTR --> CR2["Derive contradiction"]
+    CTR --> CR3[Example: sqrt 2 is irrational]
+
+    IN --> I1[Base case Pn0]
+    IN --> I2["Inductive step Pk implies Pk+1"]
+    IN --> I3[Example: sum 1 to n = nn+1/2]
+
+    SI --> S1[Multiple base cases]
+    SI --> S2["Assume all smaller cases Pn0 ... Pk"]
+    SI --> S3[Example: prime factorization]
+
+    CE --> E1[Find one counterexample]
+    CE --> E2[Disproves universal claim]
+
+    EX --> X1[Constructive provide example]
+    EX --> X2[Non-constructive prove existence]
+
+    PC --> P1[Divide domain into cases]
+    PC --> P2[Prove each case separately]

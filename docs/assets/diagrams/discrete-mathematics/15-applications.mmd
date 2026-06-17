@@ -1,0 +1,42 @@
+flowchart TD
+    APP[Applications of Discrete Math] --> CODE[Coding Theory]
+    APP --> CRYPTO[Cryptography]
+    APP --> FLOW[Network Flows]
+    APP --> MATCH[Matching]
+    APP --> SCHED[Scheduling]
+    APP --> COLOR[Graph Coloring]
+    APP --> TSP[Traveling Salesman Problem]
+
+    CODE --> C1[Hamming Distance]
+    C1 --> C2[Error detection]
+    C1 --> C3[Error correction]
+    C2 --> C2A["Min distance >= k+1"]
+    C3 --> C3A["Min distance >= 2k+1"]
+    C1 --> C4[Hamming Codes]
+    C1 --> C5[Linear Codes]
+
+    CRYPTO --> R1[Symmetric AES DES]
+    CRYPTO --> R2[Asymmetric RSA ECC]
+    CRYPTO --> R3[Diffie Hellman Key Exchange]
+    CRYPTO --> R4[Digital Signatures]
+
+    FLOW --> F1[Flow Network]
+    FLOW --> F2[Max Flow Min Cut Theorem]
+    FLOW --> F3[Ford Fulkerson Algorithm]
+    FLOW --> F4[Edmonds Karp BFS]
+
+    MATCH --> M1[Matching Definition]
+    MATCH --> M2[Halls Marriage Theorem]
+    MATCH --> M3[Hungarian Algorithm]
+
+    SCHED --> S1[Critical Path Method]
+    SCHED --> S2[Interval Scheduling]
+    SCHED --> S3[Job Scheduling m Machines]
+
+    COLOR --> G1[Register Allocation]
+    COLOR --> G2[Map Coloring]
+    COLOR --> G3[Exam Scheduling]
+
+    TSP --> T1[NP Complete]
+    T1 --> T2[MST 2-approximation]
+    T1 --> T3[Christofides 1.5-approximation]

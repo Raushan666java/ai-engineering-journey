@@ -21,6 +21,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Classes and Objects
 
+![Java OOP - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/p2-java-oop.png)
+
 Java is an object-oriented language: every piece of data except primitive types belongs to a **class**, and every class can produce **objects** (instances). A class is a blueprint; an object is the concrete thing you create from that blueprint.
 
 ### 1.1 Defining a Class

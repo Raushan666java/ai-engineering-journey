@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![TCP Congestion Control](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch09-tcp-congestion.png)
+
 1. Distinguish between flow control and congestion control.
 2. Explain the TCP sliding window mechanism and the role of the advertised window.
 3. Describe the AIMD principle and its implementation through slow start and congestion avoidance.

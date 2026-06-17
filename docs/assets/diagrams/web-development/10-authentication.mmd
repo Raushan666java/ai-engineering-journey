@@ -1,0 +1,50 @@
+graph TD
+    subgraph Auth Methods
+        SESS[Session-Based]
+        JWT[JWT Token]
+        OATH[OAuth 2.0]
+        SSO[Single Sign-On]
+        MFA[Multi-Factor Auth]
+        PASS[Passwordless Auth]
+    end
+    subgraph JWT Structure
+        HEAD[Header]
+        PAY[Payload]
+        SIG[Signature]
+        ACCESS[Access Token]
+        REFRESH[Refresh Token]
+    end
+    subgraph OAuth 2.0 Flows
+        ACODE[Authorization Code]
+        PKCE[PKCE Extension]
+        CCP[Client Credentials]
+        IMPL[Implicit deprecated]
+        DEVICE[Device Code]
+    end
+    subgraph Security
+        BCRYPT[bcrypt Hashing]
+        SALT[Salting]
+        PEP[Pepper]
+        ROT[Token Rotation]
+        EXP[Expiration]
+        HTTP[HttpOnly Cookies]
+        CSRF[CSRF Tokens]
+    end
+    subgraph Providers
+        GOOG[Google]
+        GITH[GitHub]
+        APPL[Apple]
+        AZUR[Azure AD]
+        AUTH0[Auth0]
+    end
+    JWT --> HEAD
+    JWT --> PAY
+    JWT --> SIG
+    OATH --> ACODE
+    ACODE --> PKCE
+    OATH --> GOOG
+    OATH --> GITH
+    JWT --> BCRYPT
+    JWT --> EXP
+    SESS --> HTTP
+    MFA --> OATH

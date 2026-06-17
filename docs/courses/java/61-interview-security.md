@@ -2,6 +2,8 @@
 
 This chapter covers essential security concepts every Java and Spring Boot developer should master for technical interviews. From foundational distinctions like authentication versus authorization to advanced topics such as OAuth2 authorization flows, JWT token management, Spring Security configuration, CSRF protection, secrets management with Vault, and password hashing with Argon2 — each question provides detailed explanations with complete, production-quality code examples. Security is not a feature; it is a cross-cutting concern that must be designed into every layer of an application. Understanding these patterns, protocols, and their implementations will prepare you to design, build, and defend secure systems at any scale.
 
+![Security Interview Topics - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/61-interview-security.png)
+
 ### Q1: What is the difference between authentication and authorization? How does Spring Security model these two concepts?
 
 **Answer:**

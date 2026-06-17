@@ -1,0 +1,78 @@
+mindmap
+  root(("Network Security"))
+    Security Threats
+      Passive Attacks
+        Eavesdropping / Sniffing
+        Traffic analysis
+        Port scanning
+      Active Attacks
+        Masquerade / IP Spoofing
+        Replay attack
+        Message modification
+        Denial of Service (DoS/DDoS)
+        Man-in-the-Middle (MITM)
+      Application Threats
+        SQL injection
+        Cross-site scripting (XSS)
+        Phishing
+        Malware / Ransomware
+    Cryptography
+      Symmetric Key
+        AES (128/192/256-bit)
+        ChaCha20 stream cipher
+        Modes: ECB, CBC, CTR, GCM
+        Fast, shared secret key
+      Asymmetric Key
+        RSA (2048/4096-bit)
+        Elliptic Curve (ECC/ECDH)
+        Diffie-Hellman key exchange
+        Key pairs: public + private
+      Hash Functions
+        SHA-256 / SHA-3
+        Preimage & collision resistance
+        HMAC for message authentication
+      Digital Signatures
+        Sign with private key
+        Verify with public key
+        ECDSA, RSA-PSS
+    Security Protocols
+      TLS / SSL
+        Handshake: ClientHello → ServerHello
+        Certificate verification
+        Key exchange (ECDHE)
+        Record protocol encryption
+        TLS 1.3: 1-RTT, 0-RTT resumption
+      IPSec
+        Transport mode (payload only)
+        Tunnel mode (entire packet)
+        AH (authentication)
+        ESP (encryption + auth)
+        IKE key establishment
+      VPN
+        Site-to-site IPSec VPN
+        Remote-access SSL VPN
+        WireGuard (modern, fast)
+    Firewalls
+      Packet Filter
+        Stateless: IP, port, protocol
+        Simple, fast, low security
+      Stateful
+        Tracks connection state table
+        Allows return traffic automatically
+      Application / NGFW
+        Deep packet inspection
+        Application identification
+        TLS decryption proxy
+        IDS/IPS integration
+    PKI & Identity
+      X.509 Certificates
+        Subject, issuer, validity
+        Public key binding
+      Certificate Authority
+        Root CA (self-signed, trusted)
+        Intermediate CA
+        End-entity certificates
+      Certificate Validation
+        Chain of trust up to root
+        CRL / OCSP revocation
+        Certificate Transparency logs

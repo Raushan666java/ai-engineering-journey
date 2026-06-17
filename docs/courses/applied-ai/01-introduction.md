@@ -27,11 +27,11 @@ The difference is the same as designing a jet engine vs flying a commercial airl
 
 ## 1.2 The Production AI Stack
 
-![Production AI Stack](../assets/images/diagrams/applied-ai/ch01-production-ai-stack.png)
+![Production AI Stack](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch01-production-ai-stack.png)
 
 ## 1.3 When to Use Which Tool
 
-![Tool Selection Flowchart](../assets/images/diagrams/applied-ai/ch01-tool-selection.png)
+![Tool Selection Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch01-tool-selection.png)
 
 ```python
 def recommend_tool(problem_description: str) -> str:

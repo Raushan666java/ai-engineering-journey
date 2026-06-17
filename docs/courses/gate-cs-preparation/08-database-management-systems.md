@@ -4,6 +4,8 @@
 
 ## GATE Marks Distribution (Last 15 Years)
 
+![Database Management Systems Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/08-database-management-systems.png)
+
 | Year | Marks | Topics Tested |
 |------|-------|---------------|
 | 2025 | 10 | B+ tree, SQL queries, conflict serializability, 3NF decomposition, ER model |

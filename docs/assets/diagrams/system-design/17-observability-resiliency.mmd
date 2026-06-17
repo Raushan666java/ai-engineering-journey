@@ -1,0 +1,42 @@
+graph TD
+    subgraph Observability
+        LOG[Logging]
+        MET[Metrics]
+        TRC[Tracing]
+        ALR[Alerting]
+    end
+    subgraph Monitoring Methods
+        RED[RED Method Rate Errors Duration]
+        USE[USE Method Utilization Saturation Errors]
+        FGS[Four Golden Signals]
+    end
+    subgraph Resiliency Patterns
+        CB[Circuit Breaker]
+        BK[Bulkhead]
+        RT[Retry with Backoff]
+        RL[Rate Limiting]
+        DF[Graceful Degradation]
+        LS[Load Shedding]
+        TO[Timeouts]
+    end
+    subgraph Tools
+        PM[Prometheus]
+        GR[Grafana]
+        OT[OpenTelemetry]
+        LK[Loki]
+        JM[Jaeger]
+    end
+    subgraph Chaos Engineering
+        CM[Chaos Monkey]
+        LM[Latency Monkey]
+        CG[Chaos Gorilla]
+        CK[Chaos Kong]
+    end
+    MET --> PM
+    TRC --> OT
+    OT --> JM
+    LOG --> LK
+    PM --> GR
+    LK --> GR
+    CB --> RT
+    BK --> TO

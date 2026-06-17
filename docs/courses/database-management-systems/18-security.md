@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Database Security Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch18-security.png)
+
 ### 18.1 The Database Security Landscape
 
 Databases store an organization's most valuable asset — data. Security breaches can lead to:

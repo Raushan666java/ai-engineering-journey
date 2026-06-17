@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 9.1 Container Taxonomy
 
+![STL Containers Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/09-stl-containers.png)
+
 The Standard Template Library (STL) defines three broad categories of containers:
 
 | Category | Containers | Characteristics |

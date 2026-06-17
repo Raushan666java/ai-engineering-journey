@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: distinguish between 
 
 ## Theory
 
+![Software Evolution Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-07-software-evolution.png)
+
 ### The Nature of Software Evolution
 
 Software evolution is the continuous process of adapting a software system after its initial deployment. Unlike hardware, software does not wear out, but it must evolve to remain useful. Changes in the operational environment, the emergence of new user needs, and the correction of latent defects all drive software evolution.

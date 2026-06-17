@@ -1,0 +1,53 @@
+flowchart TD
+    subgraph "Ticket Lifecycle"
+        TL1["New<br/>Ticket created"]
+        TL2["Open<br/>Acknowledged"]
+        TL3["Assigned<br/>Agent claimed"]
+        TL4["In Progress<br/>Working"]
+        TL5["Pending<br/>Waiting customer"]
+        TL6["Resolved<br/>Solution provided"]
+        TL7["Closed<br/>Survey sent"]
+        TL8["Escalated<br/>Senior team"]
+    end
+
+    subgraph "Core Models"
+        CM1["Ticket<br/>Subject priority status"]
+        CM2["TicketMessage<br/>Threaded replies"]
+        CM3["Customer<br/>Contact history"]
+        CM4["Agent<br/>Skills workload"]
+        CM5["KnowledgeBase<br/>Articles vector search"]
+        CM6["SLAPolicy<br/>Response resolution"]
+        CM7["SatisfactionSurvey<br/>CSAT NPS"]
+    end
+
+    subgraph "AI Agents"
+        AG1["TicketTriageAgent<br/>Classify route priority"]
+        AG2["SentimentAnalysisAgent<br/>Emotional tone score"]
+        AG3["KnowledgeBaseAgent<br/>Vector search answers"]
+        AG4["EscalationAgent<br/>SLA breach escalate"]
+        AG5["MultiChannelAgent<br/>Email chat social"]
+        AG6["SatisfactionAgent<br/>Survey dispatch analyze"]
+        AG7["SelfServiceAgent<br/>FAQ troubleshooting"]
+        AG8["SLAMonitoringAgent<br/>Compliance reporting"]
+    end
+
+    TL1 --> TL2 --> TL3 --> TL4
+    TL4 --> TL5 --> TL6 --> TL7
+    TL4 --> TL8
+
+    CM1 --> AG1
+    CM1 --> AG2
+    CM5 --> AG3
+    CM6 --> AG4
+    CM6 --> AG8
+    CM1 --> AG5
+    CM7 --> AG6
+    CM5 --> AG7
+
+    AG1 --> TL3
+    AG2 --> TL8
+    AG4 --> TL8
+
+    style TL1 fill:#4a90d9,color:#fff
+    style CM1 fill:#9b59b6,color:#fff
+    style AG1 fill:#27ae60,color:#fff

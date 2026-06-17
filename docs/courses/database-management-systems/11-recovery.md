@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Recovery System Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch11-recovery.png)
+
 ### 11.1 Types of Failures
 
 Database systems face various failure scenarios, each requiring different recovery strategies:

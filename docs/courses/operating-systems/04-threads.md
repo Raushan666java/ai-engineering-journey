@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Threads Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/04-threads.png)
+
 ### Thread Concept
 
 A **thread** is the basic unit of CPU utilization. It consists of a thread ID, a program counter, a register set, and a stack. Threads share with their sibling threads:

@@ -17,6 +17,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Spring Modulith Overview
 
+![Spring Modulith - Modular Monolith Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/51-modulith.png)
+
 Spring Modulith helps architects and developers structure Spring Boot applications as modular monoliths — a middle ground between traditional monoliths and microservices. It enforces module boundaries, enables event-driven integration, and provides a clear path to eventual microservice extraction.
 
 ### 1.1 Maven Dependencies

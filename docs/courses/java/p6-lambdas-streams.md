@@ -23,6 +23,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Functional Interfaces
 
+![Lambda Expressions and Streams - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/p6-lambdas-streams.png)
+
 A functional interface is an interface that contains exactly one abstract method. Java 8 introduced the `@FunctionalInterface` annotation to mark such interfaces; the compiler enforces the single-abstract-method constraint. Functional interfaces are the target type for lambda expressions and method references.
 
 ### 1.1 Core Functional Interfaces in `java.util.function`

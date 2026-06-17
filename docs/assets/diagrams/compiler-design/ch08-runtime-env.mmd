@@ -1,0 +1,49 @@
+flowchart LR
+    subgraph Runtime["Runtime Organization"]
+        direction TB
+        Stack["Stack: Activation Records"]
+        Heap["Heap: Dynamic Objects"]
+        Static["Static: Global Data"]
+    end
+
+    subgraph AR["Activation Record Fields"]
+        Params["Parameters"]
+        RetVal["Return Value"]
+        CtrlLink["Control Link"]
+        AccLink["Access Link"]
+        SavedReg["Saved Registers"]
+        Locals["Local Variables"]
+        Temps["Temporaries"]
+    end
+
+    subgraph Calling["Calling Sequence"]
+        EvalArgs["Evaluate Arguments"]
+        Call["Execute call - push return addr"]
+        PushFP["Push old FP, set FP = SP"]
+        Alloc["Decrement SP for locals"]
+        SaveReg["Save callee-saved registers"]
+    end
+
+    subgraph GC["Garbage Collection Strategies"]
+        RefCount["Reference Counting: cyclic problem"]
+        MarkSweep["Mark-Sweep: trace + sweep all"]
+        Copying["Copying: two semi-spaces, compact"]
+        Generational["Generational: nursery + tenured"]
+    end
+
+    subgraph Param["Parameter Passing"]
+        ByVal["Call by Value: copy"]
+        ByRef["Call by Reference: address"]
+        ByName["Call by Name: lazy eval"]
+    end
+
+    subgraph Scoping["Scoping"]
+        Static["Static: lexical, access links"]
+        Dynamic["Dynamic: runtime call chain"]
+    end
+
+    Runtime --> AR
+    Stack --> Calling
+    Heap --> GC
+    Runtime --> Scoping
+    Runtime --> Param

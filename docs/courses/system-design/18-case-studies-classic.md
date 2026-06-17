@@ -15,6 +15,8 @@
 
 ## Theory
 
+![URL Shortener Rate Limiter Pastebin Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/18-url-shortener-rate-limiter.png)
+
 ### Requirements Phase
 
 Every system design begins with precise functional and non-functional requirements. Ambiguity is the enemy of good architecture.

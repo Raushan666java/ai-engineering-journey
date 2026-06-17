@@ -1,0 +1,57 @@
+mindmap
+  root(("C Strings"))
+    String_Fundamentals
+      Null-terminated char arrays
+      Last char is always backslash-zero
+      String_literals
+        Stored in read-only dot-rodata
+        char-star s points to literal
+      Char_arrays
+        char s array mutable local copy
+        sizeof includes null terminator
+      strlen returns length excluding null
+    string_h_Library
+      strlen function
+        Counts chars before null
+        O-n linear scan
+      strcpy and strncpy
+        strcpy dangerous no bounds check
+        strncpy safer with size limit
+      strcat and strncat
+        Concatenates strings together
+        strncat checks remaining space
+      strcmp and strncmp
+        Returns 0 if strings equal
+        Lexicographic ASCII comparison
+      strstr function
+        Substring search
+        Returns pointer to first match
+      strchr and strrchr
+        Find first or last char
+        Returns pointer or NULL
+      strtok function
+        Tokenizes string by delimiters
+        Modifies input not reentrant
+        Use strtok_r for reentrant
+    String_IO
+      printf and puts
+        Percent-s format specifier
+        puts adds newline automatically
+      scanf percent-s
+        Reads until whitespace
+        Always specify field width
+      fgets safe line input
+        Includes newline in buffer
+        Remove with strchr or strcspn
+    Character_Processing
+      ctype_h functions
+        isupper islower isdigit
+        isalpha isspace ispunct
+      Loop over chars until null
+    Array_of_Strings
+      2D char array fixed width
+      Pointer array variable length
+    Common_Mistakes
+      Buffer overflow with strcpy
+      Missing null terminator
+      Confusing char vs string literal

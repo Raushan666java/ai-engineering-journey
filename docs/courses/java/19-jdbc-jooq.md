@@ -32,6 +32,8 @@ After completing this chapter, you will be able to:
 
 ## 1. JDBC Core
 
+![JDBC Connection Pooling & jOOQ Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/19-jdbc-jooq.png)
+
 ### 1.1 What is JDBC?
 
 JDBC (Java Database Connectivity) is the standard Java API for interacting with relational databases. It provides a vendor-independent interface that lets applications execute SQL statements, retrieve results, and manage transactions without coupling to a specific database product.

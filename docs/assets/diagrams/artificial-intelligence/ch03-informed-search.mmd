@@ -1,0 +1,32 @@
+flowchart TB
+    subgraph Heuristics["Heuristics"]
+        Def["h(n) = estimated cost to goal"]
+        Admissible["Admissible<br/>h(n) <= true cost<br/>h(n) never overestimates"]
+        Consistent["Consistent<br/>h(n) <= c(n,a,n') + h(n')<br/>Monotonic"]
+        Dominance["Dominance<br/>h2 dominates h1 if h2 >= h1"]
+    end
+
+    subgraph Heuristic_Methods["Deriving Heuristics"]
+        Relaxed["Relaxed Problem<br/>Fewer constraints"]
+        Subproblem["Subproblem Pattern DBs"]
+        Landmark["Landmarks<br/>Must-pass nodes"]
+    end
+
+    subgraph Informed_Search["Informed Search"]
+        Greedy["Greedy Best-First<br/>f(n) = h(n)<br/>Fast, not optimal"]
+        Astar["A* Search<br/>f(n) = g(n) + h(n)<br/>Complete + optimal if admissible"]
+        IDAstar["IDA*<br/>Iterative deepening A*<br/>Fixed f-cost bound at each depth"]
+        SMAstar["SMA*<br/>Simplified Memory-bound<br/>Drops worst nodes when full"]
+    end
+
+    subgraph Performance["Performance"]
+        A_Optimal["A* optimal with<br/>admissible heuristic"]
+        Expansion["Goal nodes expanded<br/>when f <= C*"]
+        TieBreaking["Tie-breaking<br/>Last-in, larger g, random"]
+    end
+
+    Heuristics --> Informed_Search
+    Heuristic_Methods --> Heuristics
+    Informed_Search --> Performance
+    Astar --> A_Optimal
+    Greedy -.not optimal.-> Performance

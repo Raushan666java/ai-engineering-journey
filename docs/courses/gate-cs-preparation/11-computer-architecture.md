@@ -2,6 +2,8 @@
 
 ## Topic Weightage in GATE (2010–2025)
 
+![Computer Architecture Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/11-computer-architecture.png)
+
 | Topic | Weightage | Avg Marks/Yr | GATE Favorite Areas |
 |-------|-----------|-------------|---------------------|
 | Data Representation & Number Systems | 12–15% | 3–5 | IEEE 754 floating point, 2's complement, range calculations |

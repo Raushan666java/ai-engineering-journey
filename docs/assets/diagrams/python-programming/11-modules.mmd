@@ -1,0 +1,34 @@
+flowchart TB
+    A["Python Modules and Packages"] --> B["Module Basics"]
+    A --> C["Import Mechanisms"]
+    A --> D["name Guard"]
+    A --> E["Packages"]
+    A --> F["Module Search"]
+    A --> G["Distribution"]
+
+    B --> B1["Any .py file"]
+    B --> B2["Name is filename without .py"]
+    B --> B3["Code executes once on import"]
+    B --> B4["sys.modules caches"]
+
+    C --> C1["import module"]
+    C --> C2["import module as alias"]
+    C --> C3["from module import name"]
+    C --> C4["from module import * (discouraged)"]
+    C --> C5["from module import name as alias"]
+
+    D --> D1["if __name__ == __main__:"]
+    D --> D2["Runs only when executed directly"]
+    D --> D3["Allows dual use: module + script"]
+
+    E --> E1["Directory with __init__.py"]
+    E --> E2["Absolute imports"]
+    E --> E3["Relative imports with . and .."]
+
+    F --> F1["sys.path list"]
+    F --> F2["PYTHONPATH environment variable"]
+    F --> F3["Site-packages for third-party"]
+
+    G --> G1["pip install"]
+    G --> G2["setuptools / pyproject.toml"]
+    G --> G3["Virtual environments"]

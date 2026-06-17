@@ -1,0 +1,50 @@
+flowchart TB
+    subgraph IaCPrinciples["IaC Principles"]
+        A[Declarative vs Imperative]
+        B[Idempotency]
+        C[Version Control]
+        D[Immutable Infrastructure]
+    end
+
+    subgraph TerraformCore["Terraform Core Concepts"]
+        E[Providers AWS Azure GCP]
+        F[Resources]
+        G[Data Sources]
+        H[Variables]
+        I[Outputs]
+    end
+
+    subgraph Workflow["Terraform Workflow"]
+        J[terraform init]
+        K[terraform plan]
+        L[terraform apply]
+        M[terraform destroy]
+    end
+
+    subgraph StateMgmt["State Management"]
+        N[Remote State S3]
+        O[State Locking DynamoDB]
+        P[Sensitive Data Protection]
+    end
+
+    subgraph Modules["Modules"]
+        Q[Root Module]
+        R[Child Module]
+        S[Terraform Registry]
+    end
+
+    subgraph Alternatives["Alternatives"]
+        T[Pulumi]
+        U[CloudFormation]
+        V[ARM Bicep]
+        W[Terragrunt]
+    end
+
+    E --> F
+    F --> J
+    J --> K
+    K --> L
+    L --> M
+    Q --> R
+    R --> S
+    N --> O

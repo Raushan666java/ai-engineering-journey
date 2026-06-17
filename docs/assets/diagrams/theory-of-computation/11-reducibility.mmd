@@ -1,0 +1,38 @@
+flowchart TD
+    A["Reducibility"] --> B["Mapping Reduction"]
+    A --> C["Rice's Theorem"]
+    A --> D["Turing Reduction"]
+    A --> E["Post Correspondence Problem"]
+    A --> F["RE-Complete Problems"]
+    A --> G["Busy Beaver"]
+
+    B --> B1["Computable f: w∈A ⇔ f(w)∈B"]
+    B --> B2["A ≤ₘ B"]
+    B --> B3["Properties"]
+    B3 --> B3a["B decidable ⇒ A decidable"]
+    B3 --> B3b["A undecidable ⇒ B undecidable"]
+    B3 --> B3c["B ∈ RE ⇒ A ∈ RE"]
+
+    C --> C1["Any non-trivial semantic property"]
+    C --> C2["L_P = {⟨M⟩ | L(M) ∈ P}"]
+    C --> C3["Examples"]
+    C3 --> C3a["L(M) infinite: undecidable"]
+    C3 --> C3b["L(M) regular: undecidable"]
+    C3 --> C3c["L(M) = ∅: undecidable"]
+
+    D --> D1["Oracle TM: A ≤ₜ B"]
+    D --> D2["Multiple oracle queries"]
+    D --> D3["Generalizes mapping reduction"]
+
+    E --> E1["Dominoes: top / bottom strings"]
+    E --> E2["Match iff concatenations equal"]
+    E --> E3["Undecidable via A_TM reduction"]
+    E --> E4["CFG ambiguity → PCP"]
+
+    F --> F1["A_TM: canonical RE-complete"]
+    F --> F2["HALT_TM: RE-complete"]
+    F --> F3["PCP: RE-complete"]
+
+    G --> G1["BB(n) max steps for n-state TM"]
+    G --> G2["Not computable"]
+    G --> G3["BB(5) ≥ 47 million"]

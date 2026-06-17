@@ -1,4 +1,4 @@
-# Chapter 6: Smart Contract Development
+﻿# Chapter 6: Smart Contract Development
 
 ---
 
@@ -24,7 +24,7 @@ Solidity is a high-level, object-oriented language for writing smart contracts. 
 - **Memory:** Temporary data used during execution (Cheaper).
 - **Stack:** Local variables (Cheapest).
 
-![Solidity Contract Structure](../assets/images/diagrams/blockchain/ch06-solidity.png)
+![Solidity Contract Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch06-solidity.png)
 
 ### Functions and Control
 - **Visibility:** Defines who can call the function.

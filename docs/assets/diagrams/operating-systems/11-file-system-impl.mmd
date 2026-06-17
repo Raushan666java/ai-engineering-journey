@@ -1,0 +1,45 @@
+flowchart TB
+    subgraph OnDisk_Layout["On-Disk Layout"]
+        Boot_Block["Boot Block"]
+        Superblock["Superblock<br/>FS type, size, status"]
+        Free_Space["Free Space Mgmt<br/>Bitmap or Free List"]
+        Inode_Table["Inode Table<br/>Array of file metadata"]
+        Root_Dir["Root Directory"]
+        Data_Blocks["Data Blocks"]
+    end
+
+    subgraph Inode["Inode Structure"]
+        Permissions["Mode/Permissions"]
+        Owner["Owner/Group ID"]
+        Size["Size"]
+        Timestamps["atime/mtime/ctime"]
+        Direct["12 x Direct Block Pointers<br/>(48 KB)"]
+        Single_Indirect["Single Indirect<br/>(4 MB)"]
+        Double_Indirect["Double Indirect<br/>(4 GB)"]
+        Triple_Indirect["Triple Indirect<br/>(4 TB)"]
+    end
+
+    subgraph Allocation["Allocation Methods"]
+        Contiguous["Contiguous<br/>Fast, external fragmentation"]
+        Linked["Linked<br/>No frag, sequential only"]
+        Indexed["Indexed<br/>Direct access, overhead"]
+        FAT["FAT - table-based linked"]
+    end
+
+    subgraph Journaling["Journaling"]
+        Journal["Journal<br/>Metadata + data"]
+        Ordered["Ordered<br/>Metadata journaled, data first"]
+        Writeback["Writeback<br/>Metadata only"]
+    end
+
+    subgraph Caching["Caching"]
+        Page_Cache["Page Cache<br/>Unified with VM"]
+        Read_Ahead["Read-Ahead<br/>Anticipatory reads"]
+    end
+
+    Boot_Block --> Superblock --> Free_Space
+    Superblock --> Inode_Table --> Inode
+    Inode_Table --> Root_Dir --> Data_Blocks
+    Data_Blocks --> Allocation
+    Data_Blocks --> Journaling
+    Data_Blocks --> Caching

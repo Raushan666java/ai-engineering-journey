@@ -12,7 +12,7 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
-![Memory Hierarchy, Cache Architecture and I/O Systems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch08-memory-io.png)
+![Cache Organisation and Virtual Memory Hierarchy](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch13-memory-hierarchy.png)
 
 ### 13.1 Principle of Locality
 

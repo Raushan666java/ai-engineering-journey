@@ -1,0 +1,35 @@
+flowchart TD
+    A["Regular Languages"] --> B["Pumping Lemma"]
+    A --> C["Closure Properties"]
+    A --> D["Myhill-Nerode Theorem"]
+    A --> E["DFA Minimization"]
+    A --> F["Decision Properties"]
+
+    B --> B1["∀ s ∈ L, |s| ≥ p → s = xyz"]
+    B --> B2["xyⁱz ∈ L for all i ≥ 0"]
+    B --> B3["|y| ≥ 1, |xy| ≤ p"]
+    B --> B4["Proof by contradiction"]
+
+    C --> C1["Closed Under"]
+    C1 --> C1a["Union"]
+    C1 --> C1b["Intersection"]
+    C1 --> C1c["Complement"]
+    C1 --> C1d["Concatenation"]
+    C1 --> C1e["Kleene Star"]
+    C1 --> C1f["Reversal"]
+    C1 --> C1g["Homomorphism"]
+
+    D --> D1["Equivalence Relation ≡ₗ"]
+    D1 --> D1a["x ≡ₗ y iff ∀z: xz∈L⇔yz∈L"]
+    D1 --> D1b["Finite index → L is regular"]
+    D1 --> D1c["#classes = min DFA states"]
+
+    E --> E1["Table-Filling Algorithm"]
+    E1 --> E1a["Mark distinguishable pairs"]
+    E1 --> E1b["Iterate until stable"]
+    E1 --> E1c["Merge unmarked pairs"]
+
+    F --> F1["Membership: simulate DFA"]
+    F --> F2["Emptiness: reachability"]
+    F --> F3["Finiteness: cycle detection"]
+    F --> F4["Equivalence: minimize + compare"]

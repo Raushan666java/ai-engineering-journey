@@ -2,6 +2,8 @@
 
 ## GATE Marks Distribution (Last 10 Years)
 
+![Theory of Computation Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/02-theory-of-computation.png)
+
 | Year | Marks | Weight % |
 |------|-------|----------|
 | 2025 | 11 | 7.3% |

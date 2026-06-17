@@ -1,0 +1,35 @@
+flowchart TB
+    subgraph Probability["Probability Basics"]
+        P_A["P(A) probability of A"]
+        Joint["P(A & B) Joint distribution"]
+        Cond["P(A|B) = P(A&B) / P(B)<br/>Conditional probability"]
+        Product["P(A&B) = P(A|B) * P(B)<br/>Product rule"]
+        Sum["Sum over y P(x,y) = P(x)<br/>Marginalization"]
+    end
+
+    subgraph Bayes["Bayes' Rule"]
+        Bayes_Rule["P(Y|X) = P(X|Y)*P(Y) / P(X)"]
+        Prior["P(Y) Prior belief"]
+        Likelihood["P(X|Y) Likelihood"]
+        Posterior["P(Y|X) Posterior belief"]
+        Normalization["P(X) = Sum of P(X|Y)*P(Y)"]
+        Bayes_Rule --> Prior --> Likelihood --> Posterior
+        Posterior --> Normalization
+    end
+
+    subgraph Bayesian_Networks["Bayesian Networks"]
+        DAG["Directed Acyclic Graph<br/>Nodes = variables<br/>Edges = dependencies"]
+        CPT["CPT per node<br/>P(X | Parents(X))"]
+        Chain_Rule["Chain Rule:<br/>P(X1..Xn) = Product P(Xi | Parents)"]
+    end
+
+    subgraph Inference_BN["Inference Methods"]
+        Enumeration["Enumeration<br/>Sum over hidden variables"]
+        VE["Variable Elimination<br/>Factor out irrelevant variables"]
+        Likelihood_Wt["Likelihood Weighting<br/>Sampling-based approximate"]
+        Gibbs["Gibbs Sampling<br/>MCMC Markov Chain Monte Carlo"]
+    end
+
+    Probability --> Bayes
+    Probability --> Bayesian_Networks
+    Bayesian_Networks --> Inference_BN

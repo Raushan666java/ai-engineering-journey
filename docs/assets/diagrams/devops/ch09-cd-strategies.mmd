@@ -1,0 +1,49 @@
+flowchart TB
+    subgraph CDTypes["CD Types"]
+        A[Continuous Delivery]
+        B[Continuous Deployment]
+    end
+
+    subgraph Pipeline["Deployment Pipeline"]
+        C[Version Control]
+        D[Build Stage]
+        E[Test Stage]
+        F[Staging Environment]
+        G[UAT Approval]
+        H[Production Environment]
+    end
+
+    subgraph Strategies["Deployment Strategies"]
+        I[Rolling Update]
+        J[Blue Green]
+        K[Canary]
+    end
+
+    C --> D --> E --> F --> G --> H
+    A --> G
+    B --> H
+
+    subgraph Rolling["Rolling Update"]
+        L[Old Version V1]
+        M[Gradual Replacement]
+        N[New Version V2]
+    end
+
+    subgraph BlueGreen["Blue Green"]
+        O[Blue Live Env]
+        P[Green New Env]
+        Q[Traffic Switch]
+        R[Rollback if Needed]
+    end
+
+    subgraph Canary["Canary Release"]
+        S[5 Percent Users]
+        T[Metrics Monitor]
+        U[Gradual Ramp Up]
+        V[Full Rollout]
+    end
+
+    L --> M --> N
+    O -.-> P
+    P --> Q --> O
+    S --> T --> U --> V

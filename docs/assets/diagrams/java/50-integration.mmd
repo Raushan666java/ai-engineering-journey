@@ -1,0 +1,45 @@
+flowchart TB
+  SI[Spring Integration]
+  SI --> EIP[Enterprise Integration Patterns]
+
+  SI --> CH[Message Channels]
+  CH --> DC[DirectChannel]
+  CH --> QC[QueueChannel]
+  CH --> PSC[PublishSubscribeChannel]
+  CH --> RSC[ExecutorChannel]
+
+  SI --> GATE[Messaging Gateways]
+  GATE --> MG[MessagingGateway]
+  GATE --> GWY[Gateway Interface]
+
+  SI --> TRANS[Transformers]
+  TRANS --> JSON[JSON Transform]
+  TRANS --> XML[XML Transform]
+  TRANS --> FILE[File Transform]
+  TRANS --> OBJ[Object Transform]
+
+  SI --> ROUT[Routers]
+  ROUT --> PR[PayloadTypeRouter]
+  ROUT --> HR[HeaderRouter]
+  ROUT --> RECIP[RecipientListRouter]
+
+  SI --> DFLOW[IntegrationFlow DSL]
+  DFLOW --> FDF[Functional Declarative]
+  DFLOW --> FILT[Filter]
+  DFLOW --> SPLIT[Splitter]
+  DFLOW --> AGG[Aggregator]
+  DFLOW --> BRIDGE[Bridge]
+
+  SI --> ADAPT[Adapters]
+  ADAPT --> JMS[JMS Adapter]
+  ADAPT --> FTP[FTP / SFTP]
+  ADAPT --> MAIL[Mail Adapter]
+  ADAPT --> FILE[File Adapter]
+
+  SI --> RELI2[Reliability]
+  RELI2 --> ERR[Error Handling]
+  RELI2 --> TX[Transactions]
+  RELI2 --> IDEM[Idempotent Receiver]
+
+  SI --> TEST2[Testing]
+  TEST2 --> MOCK[MockIntegration]

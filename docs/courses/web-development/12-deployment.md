@@ -12,6 +12,8 @@ By the end of this chapter, you will be able to:
 
 ## 12.1 Build Process
 
+![Deployment and DevOps Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/12-deployment.png)
+
 ```json
 {
   "scripts": {

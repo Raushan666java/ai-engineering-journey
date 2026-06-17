@@ -10,6 +10,8 @@ By the end of this chapter, students will be able to:
 - Build iterable objects with `__iter__` and `__next__`
 - Use `__len__` and other container methods
 
+![Magic Methods](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/14-magic-methods.png)
+
 ## 14.1 Introduction
 
 Magic methods (dunder methods) are special methods with double underscores that allow objects to define Python language behaviours. They are not meant to be called directly — Python calls them implicitly.

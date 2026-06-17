@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) formulate pr
 
 ## 4.1 Definition of Constraint Satisfaction Problems
 
+![Constraint Satisfaction Problems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch04-csp.png)
+
 A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}, \mathcal{D}, \mathcal{C})$ where:
 
 - $\mathcal{X} = \{X_1, X_2, \ldots, X_n\}$ is a finite set of **variables**.

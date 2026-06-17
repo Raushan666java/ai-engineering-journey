@@ -1,0 +1,33 @@
+flowchart TB
+    A["Python Control Flow"] --> B["Conditional Statements"]
+    A --> C["Pattern Matching"]
+    A --> D["Boolean Logic"]
+    A --> E["Ternary Expression"]
+
+    B --> F["if / elif / else"]
+    B --> G["Truthiness"]
+    B --> H["Chained Comparisons"]
+
+    F --> F1["if condition:"]
+    F --> F2["elif condition:"]
+    F --> F3["else:"]
+
+    G --> G1["Falsy: 0, None, False, '', [], {}, set(), ()"]
+    G --> G2["Truthy: everything else"]
+
+    H --> H1["1 < x < 10"]
+    H --> H2["Short-circuit evaluation"]
+
+    D --> I["and"]
+    D --> J["or"]
+    D --> K["not"]
+
+    I --> I1["Stops at first False"]
+    J --> J1["Stops at first True"]
+
+    C --> L["match subject:"]
+    L --> M["case literal:"]
+    L --> N["case pattern with guard"]
+    L --> O["case _ (default)"]
+
+    E --> P["value_if_true if condition else value_if_false"]

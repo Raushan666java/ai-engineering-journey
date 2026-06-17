@@ -1,4 +1,4 @@
-# Chapter 08: Serverless Computing
+﻿# Chapter 08: Serverless Computing
 
 ## Learning Objectives
 
@@ -22,7 +22,7 @@ FaaS is the core component of serverless computing. It allows developers to depl
 - **Auto-scaling:** The provider automatically scales the number of function instances based on the incoming request volume.
 - **Micro-billing:** Users are charged based on the number of executions and the duration of execution (usually in milliseconds), rather than for idle server time.
 
-![Serverless Architecture](../assets/images/diagrams/cloud-computing/ch08-serverless.png)
+![Serverless Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch08-serverless.png)
 
 ### Event-Driven Architectures
 Serverless functions are typically part of an event-driven architecture. An event is a change in state or an update that happens in the cloud environment. Common event sources include:

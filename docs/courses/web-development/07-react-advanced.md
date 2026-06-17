@@ -14,6 +14,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![React Advanced Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/07-react-advanced.png)
+
 ### 7.1 useRef
 
 `useRef` creates a mutable object that persists across renders without causing re-renders when mutated.

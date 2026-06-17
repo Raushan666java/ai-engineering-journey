@@ -1,0 +1,48 @@
+flowchart TD
+    subgraph "Core Models"
+        CM1["Candidate<br/>Resume AI score"]
+        CM2["Employee<br/>Performance history"]
+        CM3["JobPosting<br/>Requirements skills"]
+        CM4["Review<br/>Sentiment analysis"]
+        CM5["Training<br/>Skill gaps"]
+    end
+
+    subgraph "Employee Lifecycle"
+        EL1["Attraction<br/>Job board postings"]
+        EL2["Recruitment<br/>Screen interview offer"]
+        EL3["Onboarding<br/>Docs equipment access"]
+        EL4["Performance<br/>OKRs reviews"]
+        EL5["Development<br/>Training career path"]
+        EL6["Offboarding<br/>Exit access revoke"]
+    end
+
+    subgraph "AI Agents"
+        AG1["ResumeScreeningAgent<br/>Parse rank candidates"]
+        AG2["InterviewSchedulerAgent<br/>Calendar coordination"]
+        AG3["CandidateMatchingAgent<br/>Vector cosine similarity"]
+        AG4["OnboardingAgent<br/>Task checklist verify"]
+        AG5["PerformanceReviewAgent<br/>Sentiment trends"]
+        AG6["SentimentAgent<br/>Survey analysis escalate"]
+        AG7["TrainingRecommenderAgent<br/>Skill gap analysis"]
+        AG8["HRComplianceAgent<br/>Certifications deadlines"]
+    end
+
+    CM1 --> AG1
+    CM1 --> AG3
+    CM3 --> AG1
+    CM3 --> AG3
+    CM4 --> AG5
+    CM5 --> AG7
+
+    EL2 --> AG1
+    EL2 --> AG2
+    EL2 --> AG3
+    EL3 --> AG4
+    EL4 --> AG5
+    EL4 --> AG6
+    EL5 --> AG7
+    EL6 --> AG8
+
+    style CM1 fill:#4a90d9,color:#fff
+    style EL1 fill:#9b59b6,color:#fff
+    style AG1 fill:#27ae60,color:#fff

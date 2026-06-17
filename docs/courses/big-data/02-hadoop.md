@@ -60,7 +60,7 @@ max_missed = timeout // heartbeat_interval
 print(f"Namenode waits {timeout}s ({max_missed} heartbeats) before declaring DN dead")
 ```
 
-![HDFS Architecture](../assets/images/diagrams/big-data/ch02-hdfs-architecture.png)
+![HDFS Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch02-hdfs-architecture.png)
 
 ### 2.1.4 HDFS CLI
 
@@ -84,7 +84,7 @@ MapReduce is a programming model for distributed data processing. It consists of
 
 ### 2.2.1 How MapReduce Works
 
-![MapReduce Data Flow](../assets/images/diagrams/big-data/ch02-mapreduce-flow.png)
+![MapReduce Data Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch02-mapreduce-flow.png)
 
 ### 2.2.2 Word Count in MapReduce (Python)
 

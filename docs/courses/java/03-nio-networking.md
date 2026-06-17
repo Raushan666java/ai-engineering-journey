@@ -19,6 +19,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. NIO Overview
 
+![Java NIO Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/03-nio-networking.png)
+
 Java NIO (New I/O, introduced in Java 1.4 and enhanced in Java 7 as NIO.2) provides a different approach to I/O compared to the traditional `java.io` stream-based model. NIO is buffer-oriented, channel-based, and supports non-blocking operations.
 
 ### 1.1 NIO vs. Traditional I/O

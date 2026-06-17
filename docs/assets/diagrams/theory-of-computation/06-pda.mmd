@@ -1,0 +1,38 @@
+flowchart TD
+    A["Pushdown Automaton (PDA)"] --> B["Components"]
+    A --> C["Computation"]
+    A --> D["Types"]
+    A --> E["Equivalence with CFG"]
+    A --> F["Design Patterns"]
+
+    B --> B1["Q: Finite states"]
+    B --> B2["Σ: Input alphabet"]
+    B --> B3["Γ: Stack alphabet"]
+    B --> B4["δ: Transition function"]
+    B --> B5["q₀: Start state"]
+    B --> B6["F: Accept states"]
+
+    C --> C1["Configuration (q, w, γ)"]
+    C1 --> C1a["q = current state"]
+    C1 --> C1b["w = remaining input"]
+    C1 --> C1c["γ = stack content"]
+    C --> C2["Accept by final state"]
+    C --> C3["Accept by empty stack"]
+
+    D --> D1["DPDA (Deterministic)"]
+    D --> D2["NPDA (Nondeterministic)"]
+    D1 --> D1a["At most one choice per config"]
+    D1 --> D1b["Recognizes DCFLs"]
+    D2 --> D2a["Multiple choices"]
+    D2 --> D2b["Recognizes all CFLs"]
+
+    E --> E1["CFG → PDA (top-down)"]
+    E --> E2["PDA → CFG"]
+    E1 --> E1a["Push S, expand variables"]
+    E1 --> E1b["Pop matching terminals"]
+    E1 --> E1c["One-state NPDA"]
+    E2 --> E2a["Variables [pXq]"]
+
+    F --> F1["Stack as counter"]
+    F --> F2["Stack as accumulator"]
+    F --> F3["Nested structures"]

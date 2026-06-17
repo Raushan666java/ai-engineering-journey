@@ -1,10 +1,13 @@
-# MySQL & Database Interview Q&A
+﻿# MySQL & Database Interview Q&A
 
 Ace your database interviews with this deep collection of MySQL and Laravel database-layer questions. Each answer includes runnable SQL or code examples. Covers raw SQL queries through database design, indexing, transactions, Laravel's ORM, and advanced MySQL internals.
 
 ---
 
 ## SQL Queries
+
+![MySQL Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/50-interview-mysql.png)
+
 
 ### Q1: Write a query to find the second-highest salary from an `employees` table.
 
@@ -130,13 +133,13 @@ WHERE NOT EXISTS (
 **Answer:** `EXISTS` returns true as soon as the subquery finds a single match. It is faster than `IN` when the subquery table is large or the list is unbounded. `IN` materialises the entire subquery result first.
 
 ```sql
--- EXISTS — short-circuits on first match
+-- EXISTS â€” short-circuits on first match
 SELECT * FROM departments d
 WHERE EXISTS (
     SELECT 1 FROM employees e WHERE e.dept_id = d.id
 );
 
--- IN — fetches all matching dept_id values first
+-- IN â€” fetches all matching dept_id values first
 SELECT * FROM departments
 WHERE id IN (SELECT dept_id FROM employees);
 ```
@@ -192,7 +195,7 @@ WHERE e1.id < e2.id;
 
 ### Q15: What is the difference between `CHAR` and `VARCHAR`?
 
-**Answer:** `CHAR(n)` is fixed-length — always stores `n` characters, padded with spaces. `VARCHAR(n)` is variable-length — stores only the actual characters plus a length prefix (1-2 bytes). Use `CHAR` for fixed-length codes (ISO country codes, yes/no flags). Use `VARCHAR` for variable text (names, emails).
+**Answer:** `CHAR(n)` is fixed-length â€” always stores `n` characters, padded with spaces. `VARCHAR(n)` is variable-length â€” stores only the actual characters plus a length prefix (1-2 bytes). Use `CHAR` for fixed-length codes (ISO country codes, yes/no flags). Use `VARCHAR` for variable text (names, emails).
 
 ### Q16: Write a query using `LATERAL JOIN` (MySQL 8.0.14+).
 
@@ -238,9 +241,9 @@ WHERE rn = 1;
 ### Q19: What is the difference between `COUNT(*)`, `COUNT(column)`, and `COUNT(DISTINCT column)`?
 
 **Answer:**
-- `COUNT(*)` — counts all rows including those with `NULL` in every column.
-- `COUNT(column)` — counts non-`NULL` values in that column.
-- `COUNT(DISTINCT column)` — counts unique non-`NULL` values.
+- `COUNT(*)` â€” counts all rows including those with `NULL` in every column.
+- `COUNT(column)` â€” counts non-`NULL` values in that column.
+- `COUNT(DISTINCT column)` â€” counts unique non-`NULL` values.
 
 ```sql
 SELECT
@@ -289,9 +292,9 @@ FROM customers;
 ### Q23: What are the normal forms? Explain 1NF, 2NF, and 3NF.
 
 **Answer:**
-- **1NF** — Each column holds atomic (indivisible) values; no repeating groups.
-- **2NF** — Satisfies 1NF and every non-key column depends on the **whole** primary key (relevant for composite keys).
-- **3NF** — Satisfies 2NF and no transitive dependency exists (non-key columns depend only on the primary key, not on other non-key columns).
+- **1NF** â€” Each column holds atomic (indivisible) values; no repeating groups.
+- **2NF** â€” Satisfies 1NF and every non-key column depends on the **whole** primary key (relevant for composite keys).
+- **3NF** â€” Satisfies 2NF and no transitive dependency exists (non-key columns depend only on the primary key, not on other non-key columns).
 
 ```sql
 -- Violates 1NF: comma-separated values in a single cell
@@ -409,7 +412,7 @@ CREATE TABLE phones (
 
 ### Q32: What is the difference between `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, and `BIGINT`?
 
-**Answer:** They differ in storage size and range: `TINYINT` (1 byte, -128-127), `SMALLINT` (2 bytes, ±32K), `MEDIUMINT` (3 bytes, ±8M), `INT` (4 bytes, ±2B), `BIGINT` (8 bytes, ±9.2E18). Choose the smallest type that safely fits your data.
+**Answer:** They differ in storage size and range: `TINYINT` (1 byte, -128-127), `SMALLINT` (2 bytes, Â±32K), `MEDIUMINT` (3 bytes, Â±8M), `INT` (4 bytes, Â±2B), `BIGINT` (8 bytes, Â±9.2E18). Choose the smallest type that safely fits your data.
 
 ### Q33: How do you model hierarchical data (e.g., categories with subcategories) in MySQL?
 
@@ -430,7 +433,7 @@ SELECT * FROM categories WHERE parent_id = 5;
 
 ### Q34: What is the difference between `DECIMAL` and `FLOAT`?
 
-**Answer:** `DECIMAL` is exact — stored as a string of digits; used for money and precise calculations. `FLOAT`/`DOUBLE` are approximate — stored as binary floating-point; faster but subject to rounding errors.
+**Answer:** `DECIMAL` is exact â€” stored as a string of digits; used for money and precise calculations. `FLOAT`/`DOUBLE` are approximate â€” stored as binary floating-point; faster but subject to rounding errors.
 
 ```sql
 CREATE TABLE transactions (
@@ -441,7 +444,7 @@ CREATE TABLE transactions (
 
 ### Q35: Should you store images or files in the database? Why or why not?
 
-**Answer:** Generally no — store files on disk or object storage (S3) and keep only the file path in the database. Reasons: database backups stay lean, streaming is faster from a CDN, and bloating the database hurts cache performance. Exceptions: very small files (avatars < 64KB) where transactional consistency with metadata matters.
+**Answer:** Generally no â€” store files on disk or object storage (S3) and keep only the file path in the database. Reasons: database backups stay lean, streaming is faster from a CDN, and bloating the database hurts cache performance. Exceptions: very small files (avatars < 64KB) where transactional consistency with metadata matters.
 
 ### Q36: What is an enum column and what are its drawbacks?
 
@@ -455,7 +458,7 @@ CREATE TABLE orders (
 
 ### Q37: Explain the `ON DELETE CASCADE` behavior in foreign keys.
 
-**Answer:** When a parent row is deleted, all child rows referencing it are automatically deleted. Useful for dependent data (order → order_items) but dangerous when cascading through multiple levels — a single delete can wipe large portions of the database silently.
+**Answer:** When a parent row is deleted, all child rows referencing it are automatically deleted. Useful for dependent data (order â†’ order_items) but dangerous when cascading through multiple levels â€” a single delete can wipe large portions of the database silently.
 
 ---
 
@@ -467,7 +470,7 @@ CREATE TABLE orders (
 
 ### Q39: What is a composite index and what is the leftmost prefix rule?
 
-**Answer:** A composite index is an index on multiple columns. MySQL can use the index for queries that filter on a leftmost prefix of those columns — the **leftmost prefix rule**.
+**Answer:** A composite index is an index on multiple columns. MySQL can use the index for queries that filter on a leftmost prefix of those columns â€” the **leftmost prefix rule**.
 
 ```sql
 CREATE INDEX idx_name_dept_salary ON employees (name, dept_id, salary);
@@ -484,7 +487,7 @@ SELECT * FROM employees WHERE dept_id = 5;
 
 ### Q40: How do you use `EXPLAIN` to diagnose a slow query?
 
-**Answer:** Prefix any query with `EXPLAIN` to see the execution plan: `type` (how joins are performed — `ALL` is a full table scan, `ref`/`range`/`const` are good), `key` (index used), `rows` (estimated rows examined), and `Extra` (e.g., `Using filesort`, `Using temporary` are red flags).
+**Answer:** Prefix any query with `EXPLAIN` to see the execution plan: `type` (how joins are performed â€” `ALL` is a full table scan, `ref`/`range`/`const` are good), `key` (index used), `rows` (estimated rows examined), and `Extra` (e.g., `Using filesort`, `Using temporary` are red flags).
 
 ```sql
 EXPLAIN SELECT * FROM orders WHERE customer_id = 42\G
@@ -509,7 +512,7 @@ CREATE INDEX idx_orders_created_at ON orders (created_at);
 ```sql
 CREATE INDEX idx_cover ON employees (dept_id, name, salary);
 
--- This query reads only from the index — no table lookup
+-- This query reads only from the index â€” no table lookup
 SELECT dept_id, name, salary FROM employees WHERE dept_id = 5;
 ```
 
@@ -530,7 +533,7 @@ SELECT dept_id, name, salary FROM employees WHERE dept_id = 5;
 **Answer:** A leading wildcard (`'%term'`) prevents B-tree index usage. Use a **full-text index** for text search instead.
 
 ```sql
--- Full table scan — cannot use B-tree index
+-- Full table scan â€” cannot use B-tree index
 SELECT * FROM articles WHERE body LIKE '%database%';
 
 -- Solution: full-text index
@@ -599,18 +602,18 @@ ORDER BY count_write DESC;
 ### Q53: Explain ACID properties.
 
 **Answer:**
-- **Atomicity** — A transaction either commits fully or rolls back entirely. Partial success is impossible.
-- **Consistency** — A transaction brings the database from one valid state to another; all constraints, triggers, and cascades are respected.
-- **Isolation** — Concurrent transactions do not interfere with each other (controlled by isolation level).
-- **Durability** — Once committed, changes survive system crashes (via redo logs).
+- **Atomicity** â€” A transaction either commits fully or rolls back entirely. Partial success is impossible.
+- **Consistency** â€” A transaction brings the database from one valid state to another; all constraints, triggers, and cascades are respected.
+- **Isolation** â€” Concurrent transactions do not interfere with each other (controlled by isolation level).
+- **Durability** â€” Once committed, changes survive system crashes (via redo logs).
 
 ### Q54: What are the four transaction isolation levels in MySQL?
 
 **Answer:**
-1. **READ UNCOMMITTED** — Dirty reads, non-repeatable reads, phantom reads all possible.
-2. **READ COMMITTED** — Dirty reads prevented; non-repeatable reads and phantom reads possible.
-3. **REPEATABLE READ** (InnoDB default) — Dirty reads and non-repeatable reads prevented; phantom reads prevented via gap locks.
-4. **SERIALIZABLE** — All anomalies prevented; essentially every read acquires a shared lock.
+1. **READ UNCOMMITTED** â€” Dirty reads, non-repeatable reads, phantom reads all possible.
+2. **READ COMMITTED** â€” Dirty reads prevented; non-repeatable reads and phantom reads possible.
+3. **REPEATABLE READ** (InnoDB default) â€” Dirty reads and non-repeatable reads prevented; phantom reads prevented via gap locks.
+4. **SERIALIZABLE** â€” All anomalies prevented; essentially every read acquires a shared lock.
 
 ```sql
 SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED;
@@ -635,7 +638,7 @@ Transaction A: ROLLBACK;                                         -- balance is b
 START TRANSACTION;
 UPDATE products SET stock = stock - 1 WHERE id = 1;  -- locks product 1
 UPDATE products SET stock = stock - 1 WHERE id = 2;  -- waits for B's lock
--- DEADLOCK → A or B is rolled back
+-- DEADLOCK â†’ A or B is rolled back
 ```
 
 ### Q57: Explain pessimistic vs. optimistic locking.
@@ -681,7 +684,7 @@ COMMIT;
 
 ### Q60: What is `NOWAIT` and `SKIP LOCKED`?
 
-**Answer:** MySQL 8.0+ supports these lock-wait modifiers. `NOWAIT` fails immediately if the row is locked. `SKIP LOCKED` skips locked rows entirely — useful for queue/job tables.
+**Answer:** MySQL 8.0+ supports these lock-wait modifiers. `NOWAIT` fails immediately if the row is locked. `SKIP LOCKED` skips locked rows entirely â€” useful for queue/job tables.
 
 ```sql
 -- Skip rows being processed by other workers
@@ -694,7 +697,7 @@ FOR UPDATE SKIP LOCKED;
 
 ### Q61: How do transaction logs (redo log, undo log) work?
 
-**Answer:** The **redo log** records every change for recovery — on crash, InnoDB replays the redo log to restore committed changes. The **undo log** stores old versions of changed rows for rollback and MVCC (Multi-Version Concurrency Control). The undo log enables consistent reads even while a row is being updated by another transaction.
+**Answer:** The **redo log** records every change for recovery â€” on crash, InnoDB replays the redo log to restore committed changes. The **undo log** stores old versions of changed rows for rollback and MVCC (Multi-Version Concurrency Control). The undo log enables consistent reads even while a row is being updated by another transaction.
 
 ### Q62: What is the difference between `LOCK TABLES` and row-level locking?
 
@@ -725,10 +728,10 @@ $users = User::where('active', true)->get();
 **Answer:** Laravel's Query Builder and Eloquent use **PDO parameter binding** for all `where` clauses and `insert`/`update` values. Always use bindings rather than string concatenation.
 
 ```php
-// Safe — parameter binding
+// Safe â€” parameter binding
 DB::table('users')->where('email', $userInput)->get();
 
-// DANGEROUS — raw concatenation (avoid at all costs)
+// DANGEROUS â€” raw concatenation (avoid at all costs)
 DB::statement("SELECT * FROM users WHERE email = '$userInput'");
 ```
 
@@ -737,13 +740,13 @@ DB::statement("SELECT * FROM users WHERE email = '$userInput'");
 **Answer:** The N+1 problem occurs when you fetch a parent model and then lazy-load a relationship inside a loop, generating 1 query for the parent + N queries for each child. Fix it with **eager loading** using `with()`.
 
 ```php
-// N+1 — bad (1 query for posts + N queries for comments)
+// N+1 â€” bad (1 query for posts + N queries for comments)
 $posts = Post::all();
 foreach ($posts as $post) {
     echo $post->comments->count(); // N extra queries
 }
 
-// Fixed — 2 total queries (1 for posts, 1 for comments)
+// Fixed â€” 2 total queries (1 for posts, 1 for comments)
 $posts = Post::with('comments')->get();
 foreach ($posts as $post) {
     echo $post->comments->count();
@@ -773,7 +776,7 @@ $users = DB::table('users')
     ->get();
 ```
 
-### Q69: Explain Laravel migrations — what are `up()` and `down()`?
+### Q69: Explain Laravel migrations â€” what are `up()` and `down()`?
 
 **Answer:** Migrations are version control for the database schema. `up()` applies the changes; `down()` reverses them.
 
@@ -818,11 +821,11 @@ class DatabaseSeeder extends Seeder
 **Answer:** `withCount()` adds the relationship count to the initial query results as an attribute. `loadCount()` loads the count after the model is already retrieved.
 
 ```php
-// withCount — single query
+// withCount â€” single query
 $posts = Post::withCount('comments')->get();
 echo $posts[0]->comments_count;
 
-// loadCount — loads after retrieval
+// loadCount â€” loads after retrieval
 $post = Post::find(1);
 $post->loadCount('comments');
 echo $post->comments_count;
@@ -842,7 +845,7 @@ DB::transaction(function () {
 
 ### Q73: What is the difference between `chunk()` and `cursor()` for processing large datasets?
 
-**Answer:** `chunk()` fetches records in batches (e.g., 100 at a time) using `LIMIT`/`OFFSET`, keeping memory bounded by batch size. `cursor()` uses a streaming cursor that yields one model at a time without loading all into memory — more memory-efficient but keeps the connection open longer.
+**Answer:** `chunk()` fetches records in batches (e.g., 100 at a time) using `LIMIT`/`OFFSET`, keeping memory bounded by batch size. `cursor()` uses a streaming cursor that yields one model at a time without loading all into memory â€” more memory-efficient but keeps the connection open longer.
 
 ```php
 // chunk: 100 records per query
@@ -1015,11 +1018,11 @@ PARTITION BY RANGE (YEAR(order_date)) (
 
 ### Q82: What is the difference between vertical and horizontal sharding?
 
-**Answer:** **Vertical sharding** splits tables across different databases — user data on one server, orders on another. **Horizontal sharding** splits rows of the same table across multiple servers (e.g., users 1-1M on server A, 1M-2M on server B). Horizontal sharding is the common meaning of "sharding" and requires a shard key to route queries.
+**Answer:** **Vertical sharding** splits tables across different databases â€” user data on one server, orders on another. **Horizontal sharding** splits rows of the same table across multiple servers (e.g., users 1-1M on server A, 1M-2M on server B). Horizontal sharding is the common meaning of "sharding" and requires a shard key to route queries.
 
 ### Q83: How does MySQL replication work (source-replica)?
 
-**Answer:** The **source** writes changes to its binary log (`binlog`). **Replicas** connect as a client, read the binlog, and apply the same changes. Three formats: `STATEMENT` (replicate SQL), `ROW` (replicate row changes — default, safest), `MIXED`. Replication can be **asynchronous** (source doesn't wait), **semi-synchronous** (source waits for one replica), or **synchronous** (Group Replication/InnoDB Cluster).
+**Answer:** The **source** writes changes to its binary log (`binlog`). **Replicas** connect as a client, read the binlog, and apply the same changes. Three formats: `STATEMENT` (replicate SQL), `ROW` (replicate row changes â€” default, safest), `MIXED`. Replication can be **asynchronous** (source doesn't wait), **semi-synchronous** (source waits for one replica), or **synchronous** (Group Replication/InnoDB Cluster).
 
 ### Q84: What are JSON columns in MySQL and how do you query them?
 
@@ -1065,11 +1068,11 @@ WHERE MATCH(title, body) AGAINST('+database -nosql' IN BOOLEAN MODE);
 
 ### Q86: What is the query cache in MySQL and why was it removed in 8.0?
 
-**Answer:** The query cache stored the exact text of `SELECT` results and returned cached results for identical subsequent queries. It was removed in MySQL 8.0 because it became a scalability bottleneck — every write to a table invalidated all cached queries referencing that table, requiring a global lock. Application-level caching (Redis, Memcached) is superior.
+**Answer:** The query cache stored the exact text of `SELECT` results and returned cached results for identical subsequent queries. It was removed in MySQL 8.0 because it became a scalability bottleneck â€” every write to a table invalidated all cached queries referencing that table, requiring a global lock. Application-level caching (Redis, Memcached) is superior.
 
 ### Q87: What is the doublewrite buffer in InnoDB?
 
-**Answer:** InnoDB writes pages twice: first to the **doublewrite buffer** (sequential, 2MB on disk), then to the actual data file location. This prevents **partial page writes** — if MySQL crashes while writing a 16KB page, the doublewrite buffer provides a clean copy for recovery. The alternative would be data corruption from incomplete page writes.
+**Answer:** InnoDB writes pages twice: first to the **doublewrite buffer** (sequential, 2MB on disk), then to the actual data file location. This prevents **partial page writes** â€” if MySQL crashes while writing a 16KB page, the doublewrite buffer provides a clean copy for recovery. The alternative would be data corruption from incomplete page writes.
 
 ### Q88: What are generated columns (virtual and stored) in MySQL?
 
@@ -1139,7 +1142,7 @@ SELECT * FROM users WHERE deleted_at IS NULL;
 
 ### Q93: What is the adaptive hash index in InnoDB?
 
-**Answer:** The adaptive hash index is an in-memory hash index that InnoDB builds automatically on frequently accessed index pages. It speeds up lookups by reducing B-tree traversal. It's transparent — the DBA cannot control it directly (`innodb_adaptive_hash_index` toggle) — and uses part of the buffer pool.
+**Answer:** The adaptive hash index is an in-memory hash index that InnoDB builds automatically on frequently accessed index pages. It speeds up lookups by reducing B-tree traversal. It's transparent â€” the DBA cannot control it directly (`innodb_adaptive_hash_index` toggle) â€” and uses part of the buffer pool.
 
 ### Q94: What is a CTE and how is it different from a subquery?
 

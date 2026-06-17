@@ -1,0 +1,45 @@
+flowchart TD
+    subgraph "Core Models"
+        CM1["Student<br/>Learning preferences"]
+        CM2["Course<br/>Prerequisites"]
+        CM3["Enrollment<br/>Semester status"]
+        CM4["Assessment<br/>Questions rubric"]
+        CM5["Grade<br/>Score feedback"]
+    end
+
+    subgraph "AI Agents"
+        AG1["LearningPathAgent<br/>Optimal course sequence"]
+        AG2["EssayGraderAgent<br/>Rubric-based scoring"]
+        AG3["ContentGenAgent<br/>Lesson plans quizzes"]
+        AG4["AdaptiveQuizEngine<br/>Dynamic difficulty"]
+        AG5["ProgressTrackerAgent<br/>Early warning at-risk"]
+        AG6["EnrollmentAgent<br/>Prerequisite validation"]
+        AG7["CurriculumRecommender<br/>Vector similarity search"]
+    end
+
+    subgraph "Workflows"
+        WF1["Enrollment with prerequisites"]
+        WF2["Assessment lifecycle"]
+        WF3["Progress monitoring"]
+        WF4["Career goal mapping"]
+    end
+
+    CM1 --> AG1
+    CM2 --> AG3
+    CM3 --> AG6
+    CM4 --> AG2
+    CM4 --> AG4
+    CM5 --> AG5
+    CM2 --> AG7
+
+    AG1 --> WF3
+    AG2 --> WF2
+    AG3 --> WF1
+    AG4 --> WF2
+    AG5 --> WF3
+    AG6 --> WF1
+    AG7 --> WF4
+
+    style CM1 fill:#4a90d9,color:#fff
+    style AG1 fill:#27ae60,color:#fff
+    style WF1 fill:#e67e22,color:#fff

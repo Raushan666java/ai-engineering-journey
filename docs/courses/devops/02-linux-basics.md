@@ -4,6 +4,8 @@
 
 ## Learning Objectives
 
+![Linux Architecture and CLI Fundamentals](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch02-linux-architecture.png)
+
 - Navigate the Linux file system using standard CLI tools.
 - Manage users, permissions, and groups to ensure system security.
 - Understand and manipulate Linux processes and signals.

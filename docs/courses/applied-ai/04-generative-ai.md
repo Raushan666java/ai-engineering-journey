@@ -25,7 +25,7 @@ Generative models learn the probability distribution of training data and sample
 
 A GAN consists of two networks competing: a Generator creates fake images, a Discriminator tries to distinguish real from fake.
 
-![GAN Architecture](../assets/images/diagrams/applied-ai/ch04-gan-architecture.png)
+![GAN Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch04-gan-architecture.png)
 
 ### 4.2.1 GAN Architecture
 
@@ -229,7 +229,7 @@ print("Generated 10 interpolated images between two digits")
 
 Diffusion models work by gradually adding noise to data (forward process) and learning to reverse it (reverse process).
 
-![Diffusion Model Process](../assets/images/diagrams/applied-ai/ch04-diffusion-process.png)
+![Diffusion Model Process](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch04-diffusion-process.png)
 
 ### 4.4.1 Stable Diffusion with Diffusers
 

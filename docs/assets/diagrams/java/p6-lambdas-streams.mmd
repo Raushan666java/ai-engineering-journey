@@ -1,0 +1,36 @@
+flowchart TB
+  LAM[Lambda and Functional Programming]
+  LAM --> FI[Functional Interfaces]
+  FI --> PRED[Predicate]
+  FI --> FUNC[Function]
+  FI --> CONS[Consumer]
+  FI --> SUP[Supplier]
+  FI --> UF[UnaryOperator BinaryOperator]
+
+  LAM --> LAMBDA[Lambda Expressions]
+  LAMBDA --> SYNTAX[Expression and Block Forms]
+  LAMBDA --> CAPTURE[Variable Capture Effectively Final]
+  LAMBDA --> REF2[Method References]
+
+  LAM --> STREAM[Stream API]
+  STREAM --> SOURCE[Sources Collections Arrays]
+  STREAM --> INTER[Intermediate map filter flatMap distinct sorted peek]
+  STREAM --> TERM[Terminal collect reduce forEach count anyMatch findFirst]
+
+  LAM --> COL2[Collectors]
+  COL2 --> GROUP[groupingBy]
+  COL2 --> PART[partitioningBy]
+  COL2 --> TEE[teeing]
+  COL2 --> DOWN[Downstream Collectors]
+
+  LAM --> OPT[Optional]
+  OPT --> MAP[map flatMap]
+  OPT --> FILTER[filter]
+  OPT --> OR_ELSE[orElse orElseGet orElseThrow]
+  OPT --> STREAM_OPT[stream of Optionals]
+
+  LAM --> ASYNC[CompletableFuture]
+  ASYNC --> SUPPLY[supplyAsync]
+  ASYNC --> THEN[thenApply thenCompose thenAccept]
+  ASYNC --> COMB[thenCombine allOf anyOf]
+  ASYNC --> ERR2[exceptionally handle]

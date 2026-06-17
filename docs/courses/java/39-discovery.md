@@ -15,6 +15,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![Service Discovery & Load Balancing - Eureka Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/39-discovery.png)
+
 ### Service Discovery Patterns
 
 In a microservices architecture, services need to find each other at runtime. Service discovery solves the problem of locating service instances whose network addresses change dynamically due to auto-scaling, failures, or deployments.

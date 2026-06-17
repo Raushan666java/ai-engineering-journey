@@ -15,6 +15,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![Apache Kafka Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/36-kafka.png)
+
 ### 1. Kafka Core Concepts
 
 Apache Kafka is a distributed event streaming platform. Unlike RabbitMQ (a message broker), Kafka is an append-only log that stores events durably and allows replay.

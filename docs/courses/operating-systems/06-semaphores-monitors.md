@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Semaphores & Monitors](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/06-semaphores-monitors.png)
+
 ### Classic Synchronization Problems
 
 When Dijkstra introduced semaphores in 1965, he also posed three classic problems that have become the standard tests for any synchronization mechanism. Each illustrates a different class of concurrency challenge.

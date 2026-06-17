@@ -1,4 +1,4 @@
-# Chapter 10: Security and Scalability
+﻿# Chapter 10: Security and Scalability
 
 ---
 
@@ -17,7 +17,7 @@
 ### The Scalability Bottleneck
 Public blockchains face the "Trilemma": they can only optimize two out of three: **Decentralization, Security, Scalability**. Most chains struggle with throughput (Transactions Per Second - TPS) because every node must process every transaction.
 
-![Scaling and Security](../assets/images/diagrams/blockchain/ch10-scaling.png)
+![Scaling and Security](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch10-scaling.png)
 
 ### Scaling Solutions
 1. **On-Chain (Layer 1):**

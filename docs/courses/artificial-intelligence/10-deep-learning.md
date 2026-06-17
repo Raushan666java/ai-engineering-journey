@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Neural Networks and Deep Learning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch10-deep-learning.png)
+
 ### The Perceptron
 The basic unit of a neural network is the **neuron** (or perceptron). It takes multiple inputs $x_i$, multiplies them by weights $w_i$, adds a bias $b$, and passes the result through an **activation function** $g$:
 $Output = g(\sum w_i x_i + b)$

@@ -1,4 +1,4 @@
-# Chapter 5: Ethereum and Smart Contracts
+﻿# Chapter 5: Ethereum and Smart Contracts
 
 ---
 
@@ -26,7 +26,7 @@ The EVM is a sandboxed runtime environment for executing smart contract code. It
 ### Smart Contracts
 A smart contract is a self-executing program stored on the blockchain. Once deployed, it is immutable and acts exactly as programmed without the need for an intermediary.
 
-![Ethereum and EVM](../assets/images/diagrams/blockchain/ch05-ethereum.png)
+![Ethereum and EVM](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch05-ethereum.png)
 
 ### Gas and Economic Security
 To prevent infinite loops and resource abuse (The Halting Problem), Ethereum introduces **Gas**.

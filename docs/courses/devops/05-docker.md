@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Docker Architecture and Best Practices](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch05-docker.png)
+
 By the end of this chapter, students will be able to:
 
 1. Differentiate between Docker images and containers and explain the layered filesystem

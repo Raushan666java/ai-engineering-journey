@@ -1,0 +1,39 @@
+flowchart TB
+  WF[Spring WebFlux]
+  WF --> ARCH[Reactive Architecture]
+  ARCH --> NETTY[Netty Server]
+  ARCH --> REACTOR[Project Reactor]
+  REACTOR --> FLUX[Flux]
+  REACTOR --> MONO[Mono]
+  ARCH --> ES[Event Loop Model]
+
+  WF --> CTRL[Annotated Controllers]
+  CTRL --> RC[RestController]
+  CTRL --> RM[RequestMapping]
+  CTRL --> MONO2[Return Mono / Flux]
+
+  WF --> FUNC[Functional Endpoints]
+  FUNC --> RF[RouterFunction]
+  FUNC --> HF[HandlerFunction]
+  FUNC --> REQ[ServerRequest]
+  FUNC --> RESP[ServerResponse]
+
+  WF --> CLIENT[WebClient]
+  CLIENT --> GET[GET]
+  CLIENT --> POST[POST]
+  CLIENT --> STREAM[Streaming]
+  CLIENT --> SS[Server-Sent Events]
+
+  WF --> SEC[Reactive Security]
+  SEC --> RSEC[SecurityWebFilterChain]
+  SEC --> RUM[ReactiveUserDetailsService]
+  SEC --> OAUTH[Reactive OAuth2]
+
+  WF --> RSOCK[RSocket]
+  RSOCK --> REQRESP[Request-Response]
+  RSOCK --> FIRE[Fire-and-Forget]
+  RSOCK --> STREAM2[Request-Stream]
+  RSOCK --> CHANNEL[Channel]
+
+  WF --> TEST[Testing]
+  TEST --> WTC[WebTestClient]

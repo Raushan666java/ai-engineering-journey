@@ -12,6 +12,8 @@
 
 ## Theory
 
+![OS Case Studies](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/18-case-studies.png)
+
 ### Windows NT Architecture
 
 The Windows NT kernel (used in Windows 10/11, Server) is a **hybrid kernel** — combining microkernel-inspired design with monolithic kernel performance.

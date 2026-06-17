@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 
 ## 17.1 Foundation Models
 
+![Modern Artificial Intelligence](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch17-modern-ai.png)
+
 A **foundation model** (Bommasani et al., 2021) is a large-scale neural network trained on broad data that can be adapted to a wide range of downstream tasks. Key characteristics:
 
 - **Scale:** Models with billions to trillions of parameters trained on terabytes of text, images, and other modalities.

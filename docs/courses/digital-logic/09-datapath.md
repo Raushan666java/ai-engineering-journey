@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Single-Cycle Datapath Design](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch09-datapath.png)
+
 ### 9.1 Datapath Overview
 
 The datapath is the collection of functional units, registers, and buses that perform data processing operations. It includes the ALU, register file, multiplexers, and interconnecting buses. The control unit supplies select signals that direct data flow through the datapath.

@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Graph Traversals Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch12-graph-traversals.png)
+
 ### Breadth-First Search (BFS)
 
 BFS explores graph vertices in order of increasing distance from the source. It uses a queue and processes each vertex once.

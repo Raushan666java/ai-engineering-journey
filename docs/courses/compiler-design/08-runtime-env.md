@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Runtime Environment](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch08-runtime-env.png)
+
 After completing this chapter, students will be able to: design activation records for procedure invocations; allocate storage on the stack and heap; distinguish static scoping from dynamic scoping; implement call-by-value, call-by-reference, and call-by-name parameter passing; manage variable-length data on the stack and heap; and compare garbage collection strategies including reference counting, mark-sweep, copying, and generational collection.
 
 ## Theory

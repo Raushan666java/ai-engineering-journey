@@ -1,0 +1,48 @@
+flowchart TB
+    subgraph Prometheus["Prometheus Stack"]
+        A[Prometheus Server]
+        B[Exporters]
+        C[Pushgateway]
+        D[Alertmanager]
+        E[PromQL Queries]
+    end
+
+    subgraph Grafana["Grafana"]
+        F[Dashboards]
+        G[Alerting Rules]
+        H[Data Source Integration]
+    end
+
+    subgraph Loki["Loki Log System"]
+        I[Loki Server]
+        J[Promtail Agent]
+        K[LogQL Queries]
+        L[Label Based Indexing]
+    end
+
+    subgraph ELK["ELK Stack"]
+        M[Elasticsearch]
+        N[Logstash]
+        O[Kibana]
+        P[Beats Filebeat]
+    end
+
+    subgraph LoggingBest["Best Practices"]
+        Q[Structured Logging JSON]
+        R[Log Levels TRACE to FATAL]
+        S[Correlation IDs]
+        T[Log Rotation]
+        U[Sampling for Volume]
+    end
+
+    B --> A
+    C --> A
+    A --> D
+    A --> F
+    A --> E
+    J --> I
+    I --> K
+    I --> F
+    P --> N --> M
+    M --> O
+    M --> F

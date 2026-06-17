@@ -1,4 +1,4 @@
-# Chapter 10: Cloud Architecture and Management
+﻿# Chapter 10: Cloud Architecture and Management
 
 ## Learning Objectives
 
@@ -21,7 +21,7 @@ All major cloud providers (AWS, Azure, GCP) provide a "Well-Architected Framewor
 5. **Cost Optimization:** Avoiding unnecessary costs.
 6. **Sustainability:** Minimizing the environmental impact of running cloud workloads.
 
-![Well-Architected Framework](../assets/images/diagrams/cloud-computing/ch10-well-architected.png)
+![Well-Architected Framework](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch10-well-architected.png)
 
 ### High Availability and Disaster Recovery (DR)
 - **High Availability (HA):** Designing systems to be operational for a long period (e.g., "four nines" or 99.99%). This is achieved through redundancy across Availability Zones (AZs) and load balancing.

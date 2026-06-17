@@ -1,0 +1,58 @@
+flowchart TD
+    A["Linked Lists"] --> B["Node Structure"]
+    A --> C["Singly Linked List"]
+    A --> D["Doubly Linked List"]
+    A --> E["Circular Linked List"]
+    A --> F["Operations Complexity"]
+    A --> G["Linked List vs Array"]
+
+    B --> B1["typedef struct node {"]
+    B1 --> B1a["int data;"]
+    B1 --> B1b["struct node *next;"]
+    B1 --> B1c["} Node;"]
+    B --> B2["Self-referential structure"]
+    B --> B3["Each node holds data + pointer to next"]
+
+    C --> C1["Forward traversal only"]
+    C --> C2["Operations"]
+    C2 --> C2a["create_node(value)"]
+    C2 --> C2b["insert_beginning(head, value)  O(1)"]
+    C2 --> C2c["insert_end(head, value)  O(n)"]
+    C2 --> C2d["insert_at(head, value, pos)  O(n)"]
+    C2 --> C2e["delete_value(head, value)  O(n)"]
+    C2 --> C2f["print_list(head)  O(n)"]
+    C2 --> C2g["free_list(head)  O(n)"]
+    C3["Always update head pointer on front insert"]
+
+    D --> D1["struct dnode { data, *prev, *next }"]
+    D --> D2["Bidirectional traversal: forward and backward"]
+    D --> D3["Operations"]
+    D3 --> D3a["insert_end with tail O(1) with tail ptr"]
+    D3 --> D3b["delete_node updates prev and next"]
+    D3 --> D3c["print_forward and print_backward"]
+    D --> D4["More memory: 2 pointers per node"]
+
+    E --> E1["Last node points back to head"]
+    E --> E2["do-while loop for traversal"]
+    E --> E3["Useful for round-robin scheduling"]
+    E --> E4["Operations similar to singly linked"]
+
+    F --> F1["Insert at front: O(1) all types"]
+    F --> F2["Insert at end: O(n) singly, O(1)* doubly"]
+    F --> F3["Delete by value: O(n) all types"]
+    F --> F4["Search: O(n) all types"]
+    F --> F5["Access by index: O(n)"]
+
+    G --> G1["Array Advantages"]
+    G1 --> G1a["O(1) random access"]
+    G1 --> G1b["Better cache locality"]
+    G1 --> G1c["Less memory overhead"]
+    G --> G2["Linked List Advantages"]
+    G2 --> G2a["O(1) insert/delete at front"]
+    G2 --> G2b["Dynamic size, no realloc"]
+    G2 --> G2c["No memory waste from pre-allocation"]
+
+    style A fill:#4a90d9,color:#fff
+    style C fill:#e8a838,color:#fff
+    style D fill:#5ba85a,color:#fff
+    style E fill:#a85a9a,color:#fff

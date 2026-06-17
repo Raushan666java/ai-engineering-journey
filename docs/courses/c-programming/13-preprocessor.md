@@ -9,6 +9,8 @@
 - Use predefined standard macros
 - Apply `#pragma` and `#error` directives
 
+![C Preprocessor: Macros, Conditional Compilation, Directives and Pitfalls](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-13-preprocessor.png)
+
 ## 13.1 The Preprocessor's Role
 
 The preprocessor runs as the first stage of compilation. It processes directives — lines beginning with `#` — before the compiler sees the code.

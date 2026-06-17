@@ -1,0 +1,27 @@
+flowchart TB
+  K8S[Kubernetes Deployment]
+  K8S --> DEPLOY[Deployment]
+  DEPLOY --> REP[Replicas 3]
+  DEPLOY --> ROLLUP[RollingUpdate]
+  DEPLOY --> SEL[Selector Labels]
+
+  K8S --> SVC[Service]
+  SVC --> CLIP[ClusterIP]
+  SVC --> NP[NodePort]
+  SVC --> LB[LoadBalancer]
+  SVC --> ING[Ingress]
+
+  K8S --> CFG[Configuration]
+  CFG --> CM[ConfigMap]
+  CFG --> SEC[Secret]
+  CFG --> ENV[Environment]
+
+  K8S --> PROBE[Probes]
+  PROBE --> LIV[Liveness]
+  PROBE --> READY[Readiness]
+  PROBE --> START[Startup]
+
+  K8S --> HPA[Auto-Scaling]
+  HPA --> CPU[CPU Threshold]
+  HPA --> MEM[Memory Threshold]
+  HPA --> CUST[Custom Metrics]

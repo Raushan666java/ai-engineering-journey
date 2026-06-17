@@ -1,0 +1,77 @@
+mindmap
+  root(("HTTP & Web Technologies"))
+    HTTP Protocol Evolution
+      HTTP/0.9 (1991)
+        Single-line request
+        HTML response only
+      HTTP/1.0 (1996)
+        Request/response headers
+        Status codes
+        New connection per request
+      HTTP/1.1 (1999)
+        Persistent connections (keep-alive)
+        Pipelining
+        Host header (virtual hosting)
+        Chunked transfer encoding
+        Cache-Control, ETag
+      HTTP/2 (2015)
+        Binary framing layer
+        Multiplexed streams
+        Server push
+        HPACK header compression
+        Stream prioritization
+      HTTP/3 (2022)
+        QUIC transport (UDP-based)
+        No TCP head-of-line blocking
+        0-RTT connection establishment
+        QPACK header compression
+        Connection migration
+    Request-Response Model
+      HTTP Methods
+        GET (idempotent, safe)
+        POST (create resource)
+        PUT (replace resource)
+        PATCH (partial update)
+        DELETE (remove resource)
+        HEAD, OPTIONS, CONNECT, TRACE
+      Status Code Classes
+        1xx Informational (Continue, Switching)
+        2xx Success (OK, Created, No Content)
+        3xx Redirection (Moved, Found, Not Modified)
+        4xx Client Error (Bad Request, Not Found, Forbidden)
+        5xx Server Error (Internal, Gateway Timeout)
+      Headers
+        General (Date, Connection, Cache-Control)
+        Request (Host, User-Agent, Accept, Cookie)
+        Response (Content-Type, Set-Cookie, Location)
+        Entity (Content-Length, Content-Encoding, ETag)
+    Web Infrastructure
+      TLS/SSL
+        Certificate validation
+        Handshake (1-RTT / 0-RTT)
+        HTTPS (port 443)
+      Content Delivery Networks
+        Edge caching (PoPs)
+        Cache hit / miss
+        CDN providers (CloudFront, Cloudflare, Akamai)
+      WebSockets
+        Full-duplex over TCP
+        Upgrade handshake
+        Real-time applications (chat, gaming)
+      API Technologies
+        REST (resources, methods, HATEOAS)
+        GraphQL (client-driven queries, single endpoint)
+        gRPC (Protocol Buffers, HTTP/2, streaming)
+        SSE (server push, text/event-stream)
+    Web Performance
+      Caching Strategies
+        Browser cache (private)
+        CDN cache (shared)
+        Cache-Control directives (max-age, s-maxage)
+        ETag / Last-Modified validation
+      Optimization Techniques
+        Minification (HTML, CSS, JS)
+        Image optimization (WebP, AVIF)
+        Lazy loading
+        Preconnect / Preload / Prefetch
+        Critical CSS inlining

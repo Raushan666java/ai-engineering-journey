@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Modern Computer Architectures Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch15-modern-arch.png)
+
 ### 15.1 Superscalar Architecture
 
 A superscalar processor issues multiple instructions per clock cycle to multiple execution units. Unlike pipelining (which exploits temporal parallelism), superscalar execution exploits spatial parallelism through multiple functional units.

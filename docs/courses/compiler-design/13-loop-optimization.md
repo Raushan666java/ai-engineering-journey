@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: perform loop-invariant 
 
 ## Theory
 
+![Loop Optimization Techniques — Code Motion, Induction Variables, Unrolling, Vectorization](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch-13-loop-optimization.png)
+
 ### The Importance of Loop Optimization
 
 Loops are the primary source of runtime execution in most programs. A small fraction of the code (often less than 10%) accounts for more than 90% of execution time, and that fraction is typically composed of loops. Consequently, loop optimizations yield disproportionate performance improvements compared to optimizations applied to the rest of the program.

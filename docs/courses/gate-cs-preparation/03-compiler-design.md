@@ -2,6 +2,8 @@
 
 ## Overview
 
+![Compiler Design Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/03-compiler-design.png)
+
 A compiler translates a high-level source program into an equivalent target (machine-level) program. GATE CS questions span all six phases: Lexical Analysis, Syntax Analysis, Semantic Analysis, Intermediate Code Generation, Code Optimization, and Code Generation. This chapter covers definitions, algorithms, worked examples, and GATE-style problems for every phase.
 
 ---

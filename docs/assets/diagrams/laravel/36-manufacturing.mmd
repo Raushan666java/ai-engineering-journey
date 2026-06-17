@@ -1,0 +1,45 @@
+flowchart TD
+    subgraph "Core Models"
+        CM1["Equipment<br/>Model serial status"]
+        CM2["ProductionOrder<br/>Qty schedule"]
+        CM3["QualityCheck<br/>Pass fail metrics"]
+        CM4["MaintenanceLog<br/>Corrective preventative"]
+        CM5["InventoryItem<br/>Raw materials stock"]
+        CM6["IoTReading<br/>Sensor telemetry"]
+    end
+
+    subgraph "Maintenance Types"
+        MT1["Corrective<br/>After failure"]
+        MT2["Preventative<br/>Calendar schedule"]
+        MT3["Predictive<br/>AI sensor trends"]
+        MT4["Condition-based<br/>Real-time threshold"]
+    end
+
+    subgraph "AI Agents"
+        AG1["PredictiveMaintenanceAgent<br/>Failure probability"]
+        AG2["QualityControlAgent<br/>Defect detection"]
+        AG3["IoTDataIngestionAgent<br/>Anomaly alerts"]
+        AG4["ProductionSchedulerAgent<br/>Capacity optimization"]
+        AG5["SafetyComplianceAgent<br/>Incident analysis"]
+        AG6["InventoryAutomationAgent<br/>Reorder calculations"]
+        AG7["EquipmentLifecycleAgent<br/>Depreciation warranty"]
+    end
+
+    CM6 --> AG3
+    CM1 --> AG1
+    CM3 --> AG2
+    CM2 --> AG4
+    CM1 --> AG5
+    CM5 --> AG6
+    CM1 --> AG7
+
+    AG3 --> MT3
+    AG3 --> MT4
+    AG1 --> MT3
+    AG2 --> CM3
+    AG4 --> CM2
+    AG6 --> CM5
+
+    style CM1 fill:#4a90d9,color:#fff
+    style MT1 fill:#9b59b6,color:#fff
+    style AG1 fill:#27ae60,color:#fff

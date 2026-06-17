@@ -1,6 +1,6 @@
-# Chapter 4: Pomodoro, Interleaving & the Feynman Technique
+﻿# Chapter 4: Pomodoro, Interleaving & the Feynman Technique
 
-In Chapter 3 you learned active recall and spaced repetition — how to pull information out of your brain and when to do it. This chapter gives you three more weapons: **Pomodoro** (focus discipline), **Interleaving** (mixed practice that builds flexible knowledge), and the **Feynman Technique** (the ultimate comprehension check). These three techniques work together like a tripod — Pomodoro gives you the time, interleaving gives you the structure, and Feynman gives you the truth about what you actually know.
+In Chapter 3 you learned active recall and spaced repetition â€” how to pull information out of your brain and when to do it. This chapter gives you three more weapons: **Pomodoro** (focus discipline), **Interleaving** (mixed practice that builds flexible knowledge), and the **Feynman Technique** (the ultimate comprehension check). These three techniques work together like a tripod â€” Pomodoro gives you the time, interleaving gives you the structure, and Feynman gives you the truth about what you actually know.
 
 ## Learning Objectives
 
@@ -12,6 +12,8 @@ By the end of this chapter, you will be able to:
 - Use rubber duck debugging to uncover gaps in your own understanding
 - Teach peers to deepen and cement your own knowledge
 
+![Active Learning Techniques](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman.png)
+
 ---
 
 ## Q&A Content
@@ -20,32 +22,31 @@ By the end of this chapter, you will be able to:
 
 **Answer:**
 
-The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The core idea is brutally simple: work in focused 25-minute intervals (called "pomodoros") separated by 5-minute breaks. After four pomodoros, take a longer break of 15–30 minutes.
+The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The core idea is brutally simple: work in focused 25-minute intervals (called "pomodoros") separated by 5-minute breaks. After four pomodoros, take a longer break of 15â€“30 minutes.
 
 ```
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌──────────────┐
-│  Pomodoro 1 │    │  Pomodoro 2 │    │  Pomodoro 3 │    │  Pomodoro 4 │    │   Long       │
-│  25 min     │ →  │  25 min     │ →  │  25 min     │ →  │  25 min     │ →  │   Break      │
-│  Focus      │    │  Focus      │    │  Focus      │    │  Focus      │    │   15-30 min  │
-└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘    └──────────────┘
-       ↓                  ↓                  ↓                  ↓
-  ┌─────────┐       ┌─────────┐       ┌─────────┐       ┌─────────┐
-  │ 5 min   │       │ 5 min   │       │ 5 min   │       │ 5 min   │
-  │ break   │       │ break   │       │ break   │       │ break   │
-  └─────────┘       └─────────┘       └─────────┘       └─────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  Pomodoro 1 â”‚    â”‚  Pomodoro 2 â”‚    â”‚  Pomodoro 3 â”‚    â”‚  Pomodoro 4 â”‚    â”‚   Long       â”‚
+â”‚  25 min     â”‚ â†’  â”‚  25 min     â”‚ â†’  â”‚  25 min     â”‚ â†’  â”‚  25 min     â”‚ â†’  â”‚   Break      â”‚
+â”‚  Focus      â”‚    â”‚  Focus      â”‚    â”‚  Focus      â”‚    â”‚  Focus      â”‚    â”‚   15-30 min  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+       â†“                  â†“                  â†“                  â†“
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ 5 min   â”‚       â”‚ 5 min   â”‚       â”‚ 5 min   â”‚       â”‚ 5 min   â”‚
+  â”‚ break   â”‚       â”‚ break   â”‚       â”‚ break   â”‚       â”‚ break   â”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Why it works, backed by cognitive science:
 
-1. **The Zeigarnik Effect** — your brain hates unfinished tasks. Knowing a break is coming in 25 minutes lowers the activation barrier to start.
+1. **The Zeigarnik Effect** â€” your brain hates unfinished tasks. Knowing a break is coming in 25 minutes lowers the activation barrier to start.
 
-2. **Attention residue reduction** — a structured break clears your mental workspace. Without structure, you check Slack for "just a second" and lose 23 minutes recovering focus (attention residue research by Sophie Leroy).
+2. **Attention residue reduction** â€” a structured break clears your mental workspace. Without structure, you check Slack for "just a second" and lose 23 minutes recovering focus (attention residue research by Sophie Leroy).
 
-3. **Dopamine cycles** — completing a pomodoro gives a small completion hit. Four pomodoros = four hits. This builds momentum that keeps you going.
+3. **Dopamine cycles** â€” completing a pomodoro gives a small completion hit. Four pomodoros = four hits. This builds momentum that keeps you going.
 
-4. **Time constraint forces prioritization** — you cannot do everything in 25 minutes, so you naturally prioritize the most important task.
+4. **Time constraint forces prioritization** â€” you cannot do everything in 25 minutes, so you naturally prioritize the most important task.
 
-![Diagram](../assets/images/diagrams/ch-04-pomodoro-interleaving-feynman_d014.png)
 
 ```java
 // A simple Pomodoro timer in Java
@@ -68,7 +69,7 @@ public class PomodoroTimer {
     }
 
     private void startPomodoro() {
-        System.out.printf("Pomodoro #%d — Focus for 25 minutes!%n",
+        System.out.printf("Pomodoro #%d â€” Focus for 25 minutes!%n",
                 pomodorosCompleted.get() + 1);
         timer.schedule(new TimerTask() {
             @Override
@@ -76,9 +77,9 @@ public class PomodoroTimer {
                 int completed = pomodorosCompleted.incrementAndGet();
                 System.out.println("Pomodoro complete!");
                 if (completed % POMODOROS_BEFORE_LONG_BREAK == 0) {
-                    startBreak(LONG_BREAK, "Long break — 20 minutes");
+                    startBreak(LONG_BREAK, "Long break â€” 20 minutes");
                 } else {
-                    startBreak(SHORT_BREAK, "Short break — 5 minutes");
+                    startBreak(SHORT_BREAK, "Short break â€” 5 minutes");
                 }
             }
         }, WORK_DURATION);
@@ -109,40 +110,40 @@ public class PomodoroTimer {
 
 **Answer:**
 
-Coding has a different rhythm than reading or writing — you enter flow states that are deeper and harder to interrupt. The standard 25-minute pomodoro can actually harm productivity if you're in the zone. Adapt it:
+Coding has a different rhythm than reading or writing â€” you enter flow states that are deeper and harder to interrupt. The standard 25-minute pomodoro can actually harm productivity if you're in the zone. Adapt it:
 
 **The Flow-Sensitive Adaptation:**
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                 Coding Pomodoro Flow                 │
-├─────────────────────────────────────────────────────┤
-│                                                      │
-│  Phase 1: Setup (2 min)                              │
-│  ├── State what you're about to work on              │
-│  └── Open the specific file / test                   │
-│                                                      │
-│  Phase 2: Deep Coding Block (40-50 min)              │
-│  ├── No interruptions, no context switching          │
-│  └── Ignore the timer if you're in flow              │
-│                                                      │
-│  Phase 3: Commit & Diff Review (5 min)               │
-│  ├── Review what you wrote                           │
-│  ├── `git diff` — does it make sense?                │
-│  └── Write a commit message                          │
-│                                                      │
-│  Phase 4: Active Break (5-10 min)                    │
-│  ├── Step away from the keyboard                     │
-│  └── Walk, stretch, or stare out a window            │
-│                                                      │
-└─────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                 Coding Pomodoro Flow                 â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚                                                      â”‚
+â”‚  Phase 1: Setup (2 min)                              â”‚
+â”‚  â”œâ”€â”€ State what you're about to work on              â”‚
+â”‚  â””â”€â”€ Open the specific file / test                   â”‚
+â”‚                                                      â”‚
+â”‚  Phase 2: Deep Coding Block (40-50 min)              â”‚
+â”‚  â”œâ”€â”€ No interruptions, no context switching          â”‚
+â”‚  â””â”€â”€ Ignore the timer if you're in flow              â”‚
+â”‚                                                      â”‚
+â”‚  Phase 3: Commit & Diff Review (5 min)               â”‚
+â”‚  â”œâ”€â”€ Review what you wrote                           â”‚
+â”‚  â”œâ”€â”€ `git diff` â€” does it make sense?                â”‚
+â”‚  â””â”€â”€ Write a commit message                          â”‚
+â”‚                                                      â”‚
+â”‚  Phase 4: Active Break (5-10 min)                    â”‚
+â”‚  â”œâ”€â”€ Step away from the keyboard                     â”‚
+â”‚  â””â”€â”€ Walk, stretch, or stare out a window            â”‚
+â”‚                                                      â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Key adjustments:**
 
 1. **Extend to 40-50 minutes** for deep coding sessions. The original 25 minutes was designed for desk work in the 1980s. Modern coding requires longer uninterrupted blocks.
 
-2. **Always commit before the break.** This gives you a clean stopping point and makes the break truly restful — your brain knows exactly where you are.
+2. **Always commit before the break.** This gives you a clean stopping point and makes the break truly restful â€” your brain knows exactly where you are.
 
 3. **Use breaks for diffuse-mode processing.** When you step away from a bug, your diffuse mode keeps working on it. Many solutions arrive during the break.
 
@@ -180,14 +181,14 @@ public class CodingSessionTracker {
     public void recordInterruption(String source, String description) {
         interruptions.add(new Interruption(source, description));
         long elapsed = Duration.between(codingStart, Instant.now()).toMinutes();
-        System.out.printf("[INTERRUPTION] %s — %s (elapsed: %d min)%n",
+        System.out.printf("[INTERRUPTION] %s â€” %s (elapsed: %d min)%n",
                 source, description, elapsed);
     }
 
     public void completePomodoro() {
         pomodorosCompleted++;
         long elapsed = Duration.between(codingStart, Instant.now()).toMinutes();
-        System.out.printf("[COMPLETE] Pomodoro #%d — %d minutes, %d interruptions%n",
+        System.out.printf("[COMPLETE] Pomodoro #%d â€” %d minutes, %d interruptions%n",
                 pomodorosCompleted, elapsed, interruptions.size());
     }
 
@@ -215,30 +216,30 @@ Interruptions are the #1 killer of Pomodoro productivity. The technique itself g
 **The Capture-and-Delegate Protocol:**
 
 ```
-                    ┌─────────────────────┐
-                    │  INTERRUPTION       │
-                    │  DETECTED           │
-                    └────────┬────────────┘
-                             ↓
-                    ┌─────────────────────┐
-                    │ Is it urgent &       │
-                    │ will take < 2 min?   │
-                    └──────┬──────────────┘
-                       │          │
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚  INTERRUPTION       â”‚
+                    â”‚  DETECTED           â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                             â†“
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚ Is it urgent &       â”‚
+                    â”‚ will take < 2 min?   â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                       â”‚          â”‚
                       YES        NO
-                       │          │
-                       ↓          ↓
-              ┌──────────────┐  ┌────────────────────────────┐
-              │ Handle it    │  │ Write it down on the       │
-              │ immediately  │  │ "parking lot" list         │
-              │ (under 2 min)│  │ (do NOT act on it now)     │
-              └──────┬───────┘  └────────────┬───────────────┘
-                     │                       │
-                     ↓                       ↓
-              ┌──────────────┐  ┌────────────────────────────┐
-              │ Resume       │  │ Process during next        │
-              │ pomodoro     │  │ break or after session     │
-              └──────────────┘  └────────────────────────────┘
+                       â”‚          â”‚
+                       â†“          â†“
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚ Handle it    â”‚  â”‚ Write it down on the       â”‚
+              â”‚ immediately  â”‚  â”‚ "parking lot" list         â”‚
+              â”‚ (under 2 min)â”‚  â”‚ (do NOT act on it now)     â”‚
+              â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                     â”‚                       â”‚
+                     â†“                       â†“
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚ Resume       â”‚  â”‚ Process during next        â”‚
+              â”‚ pomodoro     â”‚  â”‚ break or after session     â”‚
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **The "Parking Lot" technique:**
@@ -280,10 +281,10 @@ public class ParkingLot {
         System.out.println("=== Processing Parking Lot ===");
         for (ParkingItem item : items) {
             if (item.urgent()) {
-                System.out.printf("  [URGENT] %s — handle immediately%n",
+                System.out.printf("  [URGENT] %s â€” handle immediately%n",
                         item.description());
             } else {
-                System.out.printf("  [NORMAL] %s — schedule for later%n",
+                System.out.printf("  [NORMAL] %s â€” schedule for later%n",
                         item.description());
             }
         }
@@ -311,19 +312,19 @@ Chunking is the process of grouping related information into meaningful units. T
 
 ```
 Level 1: Micro-Chunk (One Pomodoro)
-├── A single concept or technique
-├── Example: One sorting algorithm, one SQL JOIN type
-└── ~25-45 minutes
+â”œâ”€â”€ A single concept or technique
+â”œâ”€â”€ Example: One sorting algorithm, one SQL JOIN type
+â””â”€â”€ ~25-45 minutes
 
 Level 2: Meso-Chunk (2-4 Pomodoros)
-├── A related group of concepts
-├── Example: All sorting algorithms, all JOIN types
-└── One study session (2-3 hours)
+â”œâ”€â”€ A related group of concepts
+â”œâ”€â”€ Example: All sorting algorithms, all JOIN types
+â””â”€â”€ One study session (2-3 hours)
 
 Level 3: Macro-Chunk (Multiple Sessions)
-├── A complete skill or subject area
-├── Example: DSA mastery, GATE CS preparation
-└── Weeks or months
+â”œâ”€â”€ A complete skill or subject area
+â”œâ”€â”€ Example: DSA mastery, GATE CS preparation
+â””â”€â”€ Weeks or months
 ```
 
 **How to plan chunked sessions:**
@@ -339,7 +340,7 @@ public class StudyChunkPlanner {
 
     public void addChunk(String name, String topic, int pomodoros) {
         chunks.add(new Chunk(name, topic, pomodoros));
-        System.out.printf("[CHUNK] %s (%s) — %d pomodoros%n",
+        System.out.printf("[CHUNK] %s (%s) â€” %d pomodoros%n",
                 name, topic, pomodoros);
     }
 
@@ -361,7 +362,7 @@ public class StudyChunkPlanner {
 
         for (int i = 0; i < chunks.size(); i++) {
             Chunk c = chunks.get(i);
-            System.out.printf("  Chunk %d: %s — %d pomodoros%n",
+            System.out.printf("  Chunk %d: %s â€” %d pomodoros%n",
                     i + 1, c.name(), c.estimatedPomodoros());
         }
     }
@@ -388,26 +389,26 @@ Pomodoro 6: Solve 2 similar problems (interleaving prep)
 
 **Answer:**
 
-Interleaving means mixing different types of problems or topics within a single study session — instead of practicing one thing to mastery before moving to the next (blocked practice), you alternate between related but distinct skills.
+Interleaving means mixing different types of problems or topics within a single study session â€” instead of practicing one thing to mastery before moving to the next (blocked practice), you alternate between related but distinct skills.
 
 **Blocked Practice (what most people do):**
 
 ```
 Session 1           Session 2           Session 3
-┌──────────────┐   ┌──────────────┐   ┌──────────────┐
-│ Bubble Sort  │   │ Merge Sort   │   │ Quick Sort   │
-│ 20 problems  │   │ 20 problems  │   │ 20 problems  │
-└──────────────┘   └──────────────┘   └──────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Bubble Sort  â”‚   â”‚ Merge Sort   â”‚   â”‚ Quick Sort   â”‚
+â”‚ 20 problems  â”‚   â”‚ 20 problems  â”‚   â”‚ 20 problems  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Interleaved Practice (what research says works):**
 
 ```
 Session 1
-┌──────────────────────────────────────────────┐
-│ Bubble 1 → Merge 1 → Quick 1 → Bubble 2      │
-│ → Merge 2 → Quick 2 → Bubble 3 → Merge 3     │
-└──────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Bubble 1 â†’ Merge 1 â†’ Quick 1 â†’ Bubble 2      â”‚
+â”‚ â†’ Merge 2 â†’ Quick 2 â†’ Bubble 3 â†’ Merge 3     â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Why interleaving wins (the research):**
@@ -419,9 +420,8 @@ Rohrer & Taylor (2007) gave two groups of students the same number of practice p
 | Accuracy during practice | 89% | 60% |
 | Accuracy on final test (1 week later) | 20% | 43% |
 
-Blocked practice creates an **illusion of competence** — during practice you get every problem right because you already know which strategy applies. Interleaving feels harder (that's good) because you have to **choose the strategy** every time, which is what real tests demand.
+Blocked practice creates an **illusion of competence** â€” during practice you get every problem right because you already know which strategy applies. Interleaving feels harder (that's good) because you have to **choose the strategy** every time, which is what real tests demand.
 
-![Diagram](../assets/images/diagrams/ch-04-pomodoro-interleaving-feynman_d015.png)
 
 ```java
 // Demonstrating blocked vs interleaved practice
@@ -465,15 +465,15 @@ public class InterleavingDemo {
         }
 
         boolean solve(Problem p) {
-            // Simulated — student answers based on topic recognition
+            // Simulated â€” student answers based on topic recognition
             return Math.random() > 0.3; // interleaved feels harder
         }
     }
 
     public static void main(String[] args) {
         var bubbleSortProblems = List.of(
-            new Problem("Bubble Sort", "Sort [3,1,4,1,5]", "O(n²)"),
-            new Problem("Bubble Sort", "Sort [9,2,7,4,6]", "O(n²)")
+            new Problem("Bubble Sort", "Sort [3,1,4,1,5]", "O(nÂ²)"),
+            new Problem("Bubble Sort", "Sort [9,2,7,4,6]", "O(nÂ²)")
         );
         var mergeSortProblems = List.of(
             new Problem("Merge Sort", "Sort [3,1,4,1,5]", "O(n log n)"),
@@ -502,7 +502,7 @@ public class InterleavingDemo {
 }
 ```
 
-> **Try This:** Pick two related topics you're studying (e.g., two sorting algorithms, two SQL JOIN types). Solve alternate problems: A1, B1, A2, B2, A3, B3. Notice how much harder it feels — that's the learning happening.
+> **Try This:** Pick two related topics you're studying (e.g., two sorting algorithms, two SQL JOIN types). Solve alternate problems: A1, B1, A2, B2, A3, B3. Notice how much harder it feels â€” that's the learning happening.
 
 ---
 
@@ -525,14 +525,14 @@ Blocked practice and mixed (interleaved) practice serve different purposes. Use 
 
 ```
 Phase 1: Blocked Practice (20% of time)
-├── Goal: Understand the concept
-├── Activity: 3-5 problems of the SAME type
-└── Outcome: Basic procedural fluency
+â”œâ”€â”€ Goal: Understand the concept
+â”œâ”€â”€ Activity: 3-5 problems of the SAME type
+â””â”€â”€ Outcome: Basic procedural fluency
 
 Phase 2: Mixed Practice (80% of time)
-├── Goal: Build discrimination skills
-├── Activity: Random mix of ALL problem types
-└── Outcome: Transferable knowledge that works on tests
+â”œâ”€â”€ Goal: Build discrimination skills
+â”œâ”€â”€ Activity: Random mix of ALL problem types
+â””â”€â”€ Outcome: Transferable knowledge that works on tests
 ```
 
 ```java
@@ -596,9 +596,9 @@ GATE CS is the perfect candidate for interleaving because it tests 10+ subjects,
 
 ```
 Week                   Subjects Interleaved
-────────────────────────────────────────────────────────
-Week 1-2:  CO → OS → CO → CN → OS → CO → CN → OS
-Week 3-4:  DS → Algo → TOC → DS → Algo → TOC → DS
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+Week 1-2:  CO â†’ OS â†’ CO â†’ CN â†’ OS â†’ CO â†’ CN â†’ OS
+Week 3-4:  DS â†’ Algo â†’ TOC â†’ DS â†’ Algo â†’ TOC â†’ DS
 Week 5-6:  All 6 subjects mixed randomly
 Week 7-8:  Full-length mock tests (natural interleaving)
 ```
@@ -607,7 +607,7 @@ Week 7-8:  Full-length mock tests (natural interleaving)
 
 1. **Start each session with a warm-up.** Solve 2-3 problems from yesterday's subjects before tackling today's.
 
-2. **Within each subject, interleave problem types.** For Operating Systems, mix CPU scheduling, memory management, and synchronization problems in one session — don't do 20 scheduling problems in a row.
+2. **Within each subject, interleave problem types.** For Operating Systems, mix CPU scheduling, memory management, and synchronization problems in one session â€” don't do 20 scheduling problems in a row.
 
 3. **Create an interleaving schedule:**
 
@@ -630,7 +630,7 @@ public class GATEInterleavingScheduler {
 
         @Override
         public String toString() {
-            return String.format("%s → %s (%d problems)",
+            return String.format("%s â†’ %s (%d problems)",
                     subject, topic, problems);
         }
     }
@@ -695,7 +695,7 @@ public class GATEInterleavingScheduler {
             LocalDate day = startDate.plusDays(i);
             System.out.printf("%s:%n", day.getDayOfWeek());
             for (StudyBlock block : generateDayPlan(day)) {
-                System.out.printf("  • %s%n", block);
+                System.out.printf("  â€¢ %s%n", block);
             }
             System.out.println();
         }
@@ -708,9 +708,9 @@ public class GATEInterleavingScheduler {
 }
 ```
 
-4. **Use PYQs as your interleaving fuel.** Previous Year Questions are already interleaved — every GATE paper is a random mix. Do PYQs from 3 different years in one session instead of 3 years of the same subject.
+4. **Use PYQs as your interleaving fuel.** Previous Year Questions are already interleaved â€” every GATE paper is a random mix. Do PYQs from 3 different years in one session instead of 3 years of the same subject.
 
-> **Try This:** Instead of studying "OS for 2 hours," study "OS → CN → OS → TOC" for 2 hours, 30 minutes per block. Do this for one week and compare your PYQ score to the previous week.
+> **Try This:** Instead of studying "OS for 2 hours," study "OS â†’ CN â†’ OS â†’ TOC" for 2 hours, 30 minutes per block. Do this for one week and compare your PYQ score to the previous week.
 
 ---
 
@@ -724,7 +724,7 @@ DSA interleaving is about mixing problem patterns, not data structures. The goal
 
 ```
 Session         Problem 1           Problem 2           Problem 3           Problem 4
-────────────────────────────────────────────────────────────────────────────────────────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Day 1        Two Pointers       Sliding Window      Binary Search        Two Pointers
 Day 2        BFS                DFS                  Topo Sort           BFS
 Day 3        DP (Knapsack)      Greedy              DP (LCS)            Greedy
@@ -735,16 +735,16 @@ Day 4        Union Find         Graph BFS           Union Find          Graph DF
 
 ```
 Level 1: Within-Pattern Interleaving (Early Practice)
-└── Same pattern, different problems
+â””â”€â”€ Same pattern, different problems
     Example: 3 Two Pointer problems, but different difficulty
 
 Level 2: Cross-Pattern Interleaving (Mid Practice)
-└── Related patterns that are easy to confuse
+â””â”€â”€ Related patterns that are easy to confuse
     Example: Sliding Window vs Two Pointer (both use left/right indices)
     Example: BFS vs DFS (both traverse graphs)
 
 Level 3: Random Interleaving (Exam Preparation)
-└── Any pattern, any difficulty
+â””â”€â”€ Any pattern, any difficulty
     Example: Open LeetCode and solve problems in order of appearance
 ```
 
@@ -818,9 +818,9 @@ public class DSAInterleaving {
 **The "3+1" DSA Session Template:**
 
 ```
-Part 1: Warm-up (1 problem, any pattern) — 10 min
-Part 2: Interleaved Core (3 problems, different patterns) — 60 min
-Part 3: Review & Feynman (explain your solutions aloud) — 15 min
+Part 1: Warm-up (1 problem, any pattern) â€” 10 min
+Part 2: Interleaved Core (3 problems, different patterns) â€” 60 min
+Part 3: Review & Feynman (explain your solutions aloud) â€” 15 min
 ```
 
 > **Try This:** Pick 3 patterns you've studied (e.g., Two Pointers, Sliding Window, Binary Search). Solve 2 problems from each. Do them in interleaved order: A1, B1, C1, A2, B2, C2. Not A1, A2, B1, B2, C1, C2.
@@ -836,30 +836,30 @@ The Feynman Technique is a four-step method for learning anything deeply, named 
 **The Four Steps:**
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                 FEYNMAN TECHNIQUE                        │
-├─────────────────────────────────────────────────────────┤
-│                                                          │
-│  Step 1: Choose a concept                                │
-│  ├── Write the name at the top of a blank page           │
-│  └── Add any notes or references you have                │
-│                                                          │
-│  Step 2: Explain it in plain language                    │
-│  ├── Pretend you're teaching a child                    │
-│  ├── No jargon, no technical terms without definition    │
-│  └── Use simple analogies and concrete examples          │
-│                                                          │
-│  Step 3: Identify gaps                                   │
-│  ├── Where did you get stuck?                            │
-│  ├── Where did you use a word without understanding it?  │
-│  └── These ARE your study targets — mark them            │
-│                                                          │
-│  Step 4: Review and simplify                             │
-│  ├── Go back to your source material                     │
-│  ├── Fill the gaps                                       │
-│  └── Rewrite the explanation more simply                 │
-│                                                          │
-└─────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                 FEYNMAN TECHNIQUE                        â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚                                                          â”‚
+â”‚  Step 1: Choose a concept                                â”‚
+â”‚  â”œâ”€â”€ Write the name at the top of a blank page           â”‚
+â”‚  â””â”€â”€ Add any notes or references you have                â”‚
+â”‚                                                          â”‚
+â”‚  Step 2: Explain it in plain language                    â”‚
+â”‚  â”œâ”€â”€ Pretend you're teaching a child                    â”‚
+â”‚  â”œâ”€â”€ No jargon, no technical terms without definition    â”‚
+â”‚  â””â”€â”€ Use simple analogies and concrete examples          â”‚
+â”‚                                                          â”‚
+â”‚  Step 3: Identify gaps                                   â”‚
+â”‚  â”œâ”€â”€ Where did you get stuck?                            â”‚
+â”‚  â”œâ”€â”€ Where did you use a word without understanding it?  â”‚
+â”‚  â””â”€â”€ These ARE your study targets â€” mark them            â”‚
+â”‚                                                          â”‚
+â”‚  Step 4: Review and simplify                             â”‚
+â”‚  â”œâ”€â”€ Go back to your source material                     â”‚
+â”‚  â”œâ”€â”€ Fill the gaps                                       â”‚
+â”‚  â””â”€â”€ Rewrite the explanation more simply                 â”‚
+â”‚                                                          â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Example: Feynman-ing HashMap**
@@ -872,27 +872,26 @@ Step 2: Explain to a 12-year-old:
   the attendant your coat (the value), and they give you a
   ticket (the key). When you want your coat back, you hand
   them the ticket. You don't need to search through all the
-  coats — you just use the ticket to get it instantly."
+  coats â€” you just use the ticket to get it instantly."
 
 Step 3: Identify gaps:
-  - "How does the ticket map to the coat?" → hashing function
-  - "What if two coats get the same ticket?" → collision handling
-  - "What if the coat check runs out of space?" → rehashing/load factor
+  - "How does the ticket map to the coat?" â†’ hashing function
+  - "What if two coats get the same ticket?" â†’ collision handling
+  - "What if the coat check runs out of space?" â†’ rehashing/load factor
 
 Step 4: Go back and study hashing functions, separate chaining vs
   open addressing, load factors, and rehashing. Then rewrite:
   "A HashMap uses a math formula (hash function) to convert the
-  key into an index. Multiple keys can map to the same index —
+  key into an index. Multiple keys can map to the same index â€”
   we handle this by storing them in a linked list at that index
   (separate chaining) or finding the next empty slot (open
   addressing). When the map gets too full (>75%), we create a
   bigger array and rehash everything."
 ```
 
-![Diagram](../assets/images/diagrams/ch-04-pomodoro-interleaving-feynman_d016.png)
 
 ```java
-// Feynman Technique implementation — simulate the process
+// Feynman Technique implementation â€” simulate the process
 import java.util.*;
 
 public class FeynmanLearner {
@@ -943,11 +942,11 @@ public class FeynmanLearner {
 
             identifyJargon();
             System.out.println("Jargon identified (potential gaps):");
-            jargonTerms.forEach(t -> System.out.printf("  • %s%n", t));
+            jargonTerms.forEach(t -> System.out.printf("  â€¢ %s%n", t));
 
             findGaps();
             System.out.println("\nGap questions to answer:");
-            gapQuestions.forEach(q -> System.out.printf("  • %s%n", q));
+            gapQuestions.forEach(q -> System.out.printf("  â€¢ %s%n", q));
 
             System.out.println("\nNow close your book and write the explanation");
             System.out.println("in plain language on a blank page.");
@@ -983,7 +982,7 @@ Step 1: Choose a topic
 Step 2: Explain it aloud (record yourself or write it down)
 Step 3: Mark every hesitation, vague word, or jargon you used
 Step 4: For each mark, ask: "Can I give a concrete example of this?"
-Step 5: If not → it's a gap. Add to your study queue.
+Step 5: If not â†’ it's a gap. Add to your study queue.
 Step 6: Study the gaps. Repeat from Step 2.
 ```
 
@@ -1053,19 +1052,19 @@ public class GapAnalyzer {
             analyze();
             System.out.printf("=== Gap Analysis: %s ===%n", topic);
             System.out.printf("Hesitations found: %d%n", hesitations.size());
-            hesitations.forEach(h -> System.out.printf("  • %s%n", h));
+            hesitations.forEach(h -> System.out.printf("  â€¢ %s%n", h));
 
             System.out.printf("Jargon without definition: %d%n", jargonUsed.size());
-            jargonUsed.forEach(j -> System.out.printf("  • Define: %s%n", j));
+            jargonUsed.forEach(j -> System.out.printf("  â€¢ Define: %s%n", j));
 
             System.out.printf("Vague language: %d%n", vagueTerms.size());
-            vagueTerms.forEach(v -> System.out.printf("  • Clarify: %s%n", v));
+            vagueTerms.forEach(v -> System.out.printf("  â€¢ Clarify: %s%n", v));
 
             if (hesitations.isEmpty() && jargonUsed.isEmpty() && vagueTerms.isEmpty()) {
-                System.out.println("No gaps detected — you may understand this topic deeply.");
+                System.out.println("No gaps detected â€” you may understand this topic deeply.");
             } else {
                 System.out.printf("%nPriority study targets:%n");
-                jargonUsed.forEach(j -> System.out.printf("  1. Study %s — implement an example%n", j));
+                jargonUsed.forEach(j -> System.out.printf("  1. Study %s â€” implement an example%n", j));
                 vagueTerms.forEach(v -> System.out.printf("  2. Rewrite: %s%n", v.substring(0, Math.min(60, v.length()))));
             }
         }
@@ -1107,28 +1106,28 @@ The term was popularized by Andrew Hunt and David Thomas in *The Pragmatic Progr
 
 Both rubber duck debugging and the Feynman Technique work because they force you to:
 
-1. **Shift from pattern-matching to understanding** — silent debugging often becomes "try random changes until it works." Speaking forces you to reason step by step.
+1. **Shift from pattern-matching to understanding** â€” silent debugging often becomes "try random changes until it works." Speaking forces you to reason step by step.
 
-2. **Engage different neural pathways** — speaking aloud recruits Broca's area (speech production) and Wernicke's area (language comprehension), which are not active during silent reading. This gives you a second channel for detecting inconsistencies.
+2. **Engage different neural pathways** â€” speaking aloud recruits Broca's area (speech production) and Wernicke's area (language comprehension), which are not active during silent reading. This gives you a second channel for detecting inconsistencies.
 
-3. **Slow down** — you cannot talk as fast as you think. The forced slowness prevents skipping over assumptions.
+3. **Slow down** â€” you cannot talk as fast as you think. The forced slowness prevents skipping over assumptions.
 
 ```
-┌──────────────────────────────────────────────────────────┐
-│                                                          │
-│    Silent Debugging          Rubber Duck Debugging       │
-│    ────────────────          ─────────────────────       │
-│                                                          │
-│    Reads code quickly        Reads code aloud slowly     │
-│    "I know this works"       "This if-condition checks   │
-│                               whether the list is null"  │
-│    Fills in gaps by          States every assumption     │
-│    assumption explicitly                                  │
-│                                                          │
-│    Result: often misses      Result: finds the bug       │
-│    the obvious bug           within 3-5 lines            │
-│                                                          │
-└──────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                                                          â”‚
+â”‚    Silent Debugging          Rubber Duck Debugging       â”‚
+â”‚    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€       â”‚
+â”‚                                                          â”‚
+â”‚    Reads code quickly        Reads code aloud slowly     â”‚
+â”‚    "I know this works"       "This if-condition checks   â”‚
+â”‚                               whether the list is null"  â”‚
+â”‚    Fills in gaps by          States every assumption     â”‚
+â”‚    assumption explicitly                                  â”‚
+â”‚                                                          â”‚
+â”‚    Result: often misses      Result: finds the bug       â”‚
+â”‚    the obvious bug           within 3-5 lines            â”‚
+â”‚                                                          â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ```java
@@ -1149,13 +1148,13 @@ public class RubberDuckDebugger {
 
         @Override
         public void listen(String explanation) {
-            // The duck just listens — the magic is in the speaking
-            System.out.printf("🦆 %s listens...%n", name);
+            // The duck just listens â€” the magic is in the speaking
+            System.out.printf("ðŸ¦† %s listens...%n", name);
         }
 
         void saveTheDay(String bug) {
             timesSaved++;
-            System.out.printf("🦆 %s helped find: %s%n", name, bug);
+            System.out.printf("ðŸ¦† %s helped find: %s%n", name, bug);
         }
 
         int getTimesSaved() { return timesSaved; }
@@ -1187,7 +1186,7 @@ public class RubberDuckDebugger {
             duck.listen("Line 1: for loop from i=0 to i<=size...");
 
             // Step 3: The act of speaking reveals the bug
-            System.out.println("Wait — i <= size() means i goes up to " +
+            System.out.println("Wait â€” i <= size() means i goes up to " +
                     "and INCLUDING size. The last index is size()-1. " +
                     "This is an off-by-one error!");
 
@@ -1209,11 +1208,10 @@ public class RubberDuckDebugger {
 | **Output** | Finding the bug | Finding knowledge gaps |
 | **Method** | Read code aloud line by line | Explain in plain language |
 | **Core mechanism** | Articulation forces logical scrutiny | Simplification forces gap detection |
-| **Can combine?** | Yes — explain your approach to the duck before coding | Yes — Feynman your understanding of a bug's root cause |
+| **Can combine?** | Yes â€” explain your approach to the duck before coding | Yes â€” Feynman your understanding of a bug's root cause |
 
-![Diagram](../assets/images/diagrams/ch-04-pomodoro-interleaving-feynman_d017.png)
 
-> **Try This:** Next time you're stuck on a bug, open a text file and explain the code line by line as if you're teaching someone who has never seen it. Write it down. You will find the bug within 5 minutes — usually before you finish explaining.
+> **Try This:** Next time you're stuck on a bug, open a text file and explain the code line by line as if you're teaching someone who has never seen it. Write it down. You will find the bug within 5 minutes â€” usually before you finish explaining.
 
 ---
 
@@ -1221,27 +1219,27 @@ public class RubberDuckDebugger {
 
 **Answer:**
 
-Writing is not just a way to *show* what you know — it's a way to *discover* what you know. When you write about a topic, you engage in a form of self-teaching that reveals gaps, forces structure, and cements memory.
+Writing is not just a way to *show* what you know â€” it's a way to *discover* what you know. When you write about a topic, you engage in a form of self-teaching that reveals gaps, forces structure, and cements memory.
 
 **Why Writing Accelerates Learning:**
 
-1. **The Generation Effect** — information you generate yourself (by writing) is remembered better than information you read. Slamecka & Graf (1978) showed that self-generated material has 30-40% better recall.
+1. **The Generation Effect** â€” information you generate yourself (by writing) is remembered better than information you read. Slamecka & Graf (1978) showed that self-generated material has 30-40% better recall.
 
-2. **Coherence Forcing** — writing requires logical flow. You cannot jump between unrelated points in writing the way you can in casual thought. This forces you to build a coherent mental model.
+2. **Coherence Forcing** â€” writing requires logical flow. You cannot jump between unrelated points in writing the way you can in casual thought. This forces you to build a coherent mental model.
 
-3. **Permanent Record** — a written explanation is inspectable. You can come back to it, refine it, and compare it to new understanding. Verbal explanations disappear.
+3. **Permanent Record** â€” a written explanation is inspectable. You can come back to it, refine it, and compare it to new understanding. Verbal explanations disappear.
 
-4. **Dual Coding** — writing combines language generation (verbal coding) with visual-spatial processing (seeing the text on the page/ screen). This creates two memory traces instead of one.
+4. **Dual Coding** â€” writing combines language generation (verbal coding) with visual-spatial processing (seeing the text on the page/ screen). This creates two memory traces instead of one.
 
 **The Learning-by-Writing Workflow:**
 
 ```
-┌────────────┐   ┌────────────┐   ┌────────────┐   ┌────────────┐
-│ Read /     │   │ Close all  │   │ Write an   │   │ Compare &  │
-│ Study the  │ → │ references  │ → │ explanation │ → │ Fill Gaps   │
-│ Material   │   │             │   │ in your own │   │             │
-│            │   │             │   │ words       │   │             │
-└────────────┘   └────────────┘   └────────────┘   └────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Read /     â”‚   â”‚ Close all  â”‚   â”‚ Write an   â”‚   â”‚ Compare &  â”‚
+â”‚ Study the  â”‚ â†’ â”‚ references  â”‚ â†’ â”‚ explanation â”‚ â†’ â”‚ Fill Gaps   â”‚
+â”‚ Material   â”‚   â”‚             â”‚   â”‚ in your own â”‚   â”‚             â”‚
+â”‚            â”‚   â”‚             â”‚   â”‚ words       â”‚   â”‚             â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **The Five Writing Formats for Learning:**
@@ -1281,7 +1279,7 @@ public class LearningJournal {
             System.out.printf("  Gaps found: %d%n", gapsDiscovered.size());
             if (!gapsDiscovered.isEmpty()) {
                 System.out.println("  Gaps to study:");
-                gapsDiscovered.forEach(g -> System.out.printf("    • %s%n", g));
+                gapsDiscovered.forEach(g -> System.out.printf("    â€¢ %s%n", g));
             }
         }
     }
@@ -1302,7 +1300,7 @@ public class LearningJournal {
             System.out.printf("Entries: %d, Total gaps found: %d%n",
                     entries.size(), totalGaps);
             System.out.println("Writing deepens understanding by forcing ");
-            System.out.println("coherent explanations — gaps become obvious.");
+            System.out.println("coherent explanations â€” gaps become obvious.");
         }
     }
 
@@ -1333,7 +1331,7 @@ public class LearningJournal {
 }
 ```
 
-> **Try This:** Today, after studying something, close all your references and write a 300-word explanation of the topic in your own words. Don't check anything while writing. At the end, mark the parts you're unsure about — those are your gaps.
+> **Try This:** Today, after studying something, close all your references and write a 300-word explanation of the topic in your own words. Don't check anything while writing. At the end, mark the parts you're unsure about â€” those are your gaps.
 
 ---
 
@@ -1341,62 +1339,62 @@ public class LearningJournal {
 
 **Answer:**
 
-Peer teaching — explaining a concept to a fellow learner — is one of the highest-leverage learning activities you can do. It's not just altruistic; it's selfishly beneficial for your own understanding.
+Peer teaching â€” explaining a concept to a fellow learner â€” is one of the highest-leverage learning activities you can do. It's not just altruistic; it's selfishly beneficial for your own understanding.
 
 **The Learning Pyramid (National Training Laboratories):**
 
 ```
-                         ┌─────────────────────────┐
-                         │   Lecture (5%)          │
-                         └─────────────────────────┘
-                      ┌──────────────────────────────┐
-                      │     Reading (10%)              │
-                      └──────────────────────────────┘
-                   ┌───────────────────────────────────┐
-                   │    Audio/Visual (20%)              │
-                   └───────────────────────────────────┘
-                ┌────────────────────────────────────────┐
-                │     Demonstration (30%)                 │
-                └────────────────────────────────────────┘
-             ┌─────────────────────────────────────────────┐
-             │    Discussion Group (50%)                   │
-             └─────────────────────────────────────────────┘
-          ┌──────────────────────────────────────────────────┐
-          │     Practice by Doing (75%)                      │
-          └──────────────────────────────────────────────────┘
-       ┌───────────────────────────────────────────────────────┐
-       │     Teach Others / Immediate Use (90%)                │
-       └───────────────────────────────────────────────────────┘
+                         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                         â”‚   Lecture (5%)          â”‚
+                         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                      â”‚     Reading (10%)              â”‚
+                      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                   â”‚    Audio/Visual (20%)              â”‚
+                   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                â”‚     Demonstration (30%)                 â”‚
+                â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+             â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+             â”‚    Discussion Group (50%)                   â”‚
+             â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+          â”‚     Practice by Doing (75%)                      â”‚
+          â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+       â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+       â”‚     Teach Others / Immediate Use (90%)                â”‚
+       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Why teaching beats every other study method:**
 
-1. **Prediction Error** — When you teach, you must predict what a learner will find confusing. Making these predictions trains your brain to see the structure of knowledge, not just the content.
+1. **Prediction Error** â€” When you teach, you must predict what a learner will find confusing. Making these predictions trains your brain to see the structure of knowledge, not just the content.
 
-2. **Question Exposure** — Learners ask questions you never thought of. Every question reveals a gap or a new angle. A single 30-minute teaching session can surface more gaps than 3 hours of solo study.
+2. **Question Exposure** â€” Learners ask questions you never thought of. Every question reveals a gap or a new angle. A single 30-minute teaching session can surface more gaps than 3 hours of solo study.
 
-3. **Retrieval Pressure** — Teaching is a high-stakes retrieval practice. You cannot fake it in front of a live person (unlike flashcards where you can peek). This intensity strengthens memory.
+3. **Retrieval Pressure** â€” Teaching is a high-stakes retrieval practice. You cannot fake it in front of a live person (unlike flashcards where you can peek). This intensity strengthens memory.
 
-4. **Dual Perspective** — You must simultaneously hold the learner's mental model (what they currently understand) and the expert model (what you want them to understand). This dual-track thinking deepens your own grasp.
+4. **Dual Perspective** â€” You must simultaneously hold the learner's mental model (what they currently understand) and the expert model (what you want them to understand). This dual-track thinking deepens your own grasp.
 
 **The Peer Teaching Protocol:**
 
 ```
 Phase 1: Prepare (10 min)
-├── Identify the 3 most important points
-├── Prepare one concrete example per point
-└── Anticipate 2-3 confusing aspects
+â”œâ”€â”€ Identify the 3 most important points
+â”œâ”€â”€ Prepare one concrete example per point
+â””â”€â”€ Anticipate 2-3 confusing aspects
 
 Phase 2: Teach (20 min)
-├── Start with the big picture (why this matters)
-├── Walk through each point with examples
-├── Check for understanding every 5 minutes
-└── Ask: "Does that make sense? What's confusing?"
+â”œâ”€â”€ Start with the big picture (why this matters)
+â”œâ”€â”€ Walk through each point with examples
+â”œâ”€â”€ Check for understanding every 5 minutes
+â””â”€â”€ Ask: "Does that make sense? What's confusing?"
 
 Phase 3: Debrief (10 min)
-├── Note every question you couldn't answer well
-├── Identify gaps in your own explanation
-└── Study those gaps immediately
+â”œâ”€â”€ Note every question you couldn't answer well
+â”œâ”€â”€ Identify gaps in your own explanation
+â””â”€â”€ Study those gaps immediately
 ```
 
 ```java
@@ -1446,7 +1444,7 @@ public class PeerTeachingSession {
 
             if (!gapsFound.isEmpty()) {
                 System.out.println("Gaps to study before next session:");
-                gapsFound.forEach(g -> System.out.printf("  • %s%n", g));
+                gapsFound.forEach(g -> System.out.printf("  â€¢ %s%n", g));
             }
         }
     }
@@ -1475,7 +1473,7 @@ public class PeerTeachingSession {
 - Present a 10-minute lightning talk at a meetup
 - Pair program with a junior developer
 
-> **Try This:** Find someone who's learning the same topic as you. Offer to teach them one concept you're confident about. After 20 minutes, swap roles. Note the questions you couldn't answer — those are your real gaps.
+> **Try This:** Find someone who's learning the same topic as you. Offer to teach them one concept you're confident about. After 20 minutes, swap roles. Note the questions you couldn't answer â€” those are your real gaps.
 
 ---
 
@@ -1483,58 +1481,58 @@ public class PeerTeachingSession {
 
 **Answer:**
 
-The three techniques are synergistic — each one enhances the others. Here's how to combine them into a single powerful study session:
+The three techniques are synergistic â€” each one enhances the others. Here's how to combine them into a single powerful study session:
 
 **The Master Session Template (2 hours):**
 
 ```
-┌──────────────────────────────────────────────────────────────┐
-│                  MASTER STUDY SESSION (2 hours)               │
-├──────────────────────────────────────────────────────────────┤
-│                                                               │
-│  Pomodoro 1: Feynman Gap Analysis (25 min)                    │
-│  ├── Pick a topic you studied yesterday                      │
-│  ├── Explain it aloud / write it down                        │
-│  └── Mark gaps                                                 │
-│                                                               │
-│  Break: Park gaps into study queue (5 min)                    │
-│                                                               │
-│  Pomodoro 2: Interleaved Problem Solving (25 min)             │
-│  ├── Solve 2-3 problems from different patterns               │
-│  ├── Apply the technique you're learning today                │
-│  └── Mix with one problem from a related topic                │
-│                                                               │
-│  Break: Walk, stretch, hydrate (5 min)                        │
-│                                                               │
-│  Pomodoro 3: Deep Study of Gaps (25 min)                      │
-│  ├── Take the gaps from Pomodoro 1                            │
-│  ├── Study each gap with a focused resource                   │
-│  └── Write a one-paragraph explanation of each                │
-│                                                               │
-│  Break: Review parking lot (5 min)                             │
-│                                                               │
-│  Pomodoro 4: Teach What You Learned (25 min)                  │
-│  ├── Write a summary for your study partner / blog            │
-│  ├── Or record a 2-minute audio explanation                   │
-│  └── Check: can you explain without notes?                    │
-│                                                               │
-│  Long Break (15-20 min): Complete disconnection                │
-│                                                               │
-└──────────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                  MASTER STUDY SESSION (2 hours)               â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚                                                               â”‚
+â”‚  Pomodoro 1: Feynman Gap Analysis (25 min)                    â”‚
+â”‚  â”œâ”€â”€ Pick a topic you studied yesterday                      â”‚
+â”‚  â”œâ”€â”€ Explain it aloud / write it down                        â”‚
+â”‚  â””â”€â”€ Mark gaps                                                 â”‚
+â”‚                                                               â”‚
+â”‚  Break: Park gaps into study queue (5 min)                    â”‚
+â”‚                                                               â”‚
+â”‚  Pomodoro 2: Interleaved Problem Solving (25 min)             â”‚
+â”‚  â”œâ”€â”€ Solve 2-3 problems from different patterns               â”‚
+â”‚  â”œâ”€â”€ Apply the technique you're learning today                â”‚
+â”‚  â””â”€â”€ Mix with one problem from a related topic                â”‚
+â”‚                                                               â”‚
+â”‚  Break: Walk, stretch, hydrate (5 min)                        â”‚
+â”‚                                                               â”‚
+â”‚  Pomodoro 3: Deep Study of Gaps (25 min)                      â”‚
+â”‚  â”œâ”€â”€ Take the gaps from Pomodoro 1                            â”‚
+â”‚  â”œâ”€â”€ Study each gap with a focused resource                   â”‚
+â”‚  â””â”€â”€ Write a one-paragraph explanation of each                â”‚
+â”‚                                                               â”‚
+â”‚  Break: Review parking lot (5 min)                             â”‚
+â”‚                                                               â”‚
+â”‚  Pomodoro 4: Teach What You Learned (25 min)                  â”‚
+â”‚  â”œâ”€â”€ Write a summary for your study partner / blog            â”‚
+â”‚  â”œâ”€â”€ Or record a 2-minute audio explanation                   â”‚
+â”‚  â””â”€â”€ Check: can you explain without notes?                    â”‚
+â”‚                                                               â”‚
+â”‚  Long Break (15-20 min): Complete disconnection                â”‚
+â”‚                                                               â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Why this combination works:**
 
 ```
-Pomodoro          →  Provides the structure and focus containers
-Interleaving      →  Provides the content mixing strategy
-Feynman           →  Provides the quality check
+Pomodoro          â†’  Provides the structure and focus containers
+Interleaving      â†’  Provides the content mixing strategy
+Feynman           â†’  Provides the quality check
 
 Each technique covers a weakness of the others:
-  - Pomodoro without Feynman → busywork, no depth check
-  - Feynman without Pomodoro → endless rabbit holes, no progress
-  - Interleaving without Pomodoro → chaos, no sustained practice
-  - Pomodoro without Interleaving → blocked practice, poor transfer
+  - Pomodoro without Feynman â†’ busywork, no depth check
+  - Feynman without Pomodoro â†’ endless rabbit holes, no progress
+  - Interleaving without Pomodoro â†’ chaos, no sustained practice
+  - Pomodoro without Interleaving â†’ blocked practice, poor transfer
 ```
 
 ```java
@@ -1643,38 +1641,38 @@ public class MasterSession {
 
 **Answer:**
 
-You are absolutely doing it right. Feeling awkward is not a bug — it's a feature. Here's why:
+You are absolutely doing it right. Feeling awkward is not a bug â€” it's a feature. Here's why:
 
 **The "Awkward" Feeling is the Learning Signal:**
 
-When you explain something aloud and it sounds clumsy, that's not embarrassment — that's your brain detecting a gap in real-time. Smooth, effortless explanations are usually illusions of competence. Awkward, halting explanations mean you're actually thinking.
+When you explain something aloud and it sounds clumsy, that's not embarrassment â€” that's your brain detecting a gap in real-time. Smooth, effortless explanations are usually illusions of competence. Awkward, halting explanations mean you're actually thinking.
 
 **Common Awkwardness Patterns and What They Mean:**
 
 | How It Felt | What It Means | What To Do |
 |-------------|---------------|------------|
-| "I kept using jargon to cover my confusion" | Jargon masking — you don't understand the mechanism | Define every technical term you used |
-| "I couldn't finish sentences" | Fragile knowledge — you haven't connected the pieces | Draw a concept map before explaining |
-| "I forgot basic terms" | Retrieval weakness — you recognize but can't recall | Do more active recall (Chapter 3) |
-| "My analogies were terrible" | You're reaching for connections — that's great | Keep trying. Bad analogies lead to good ones |
+| "I kept using jargon to cover my confusion" | Jargon masking â€” you don't understand the mechanism | Define every technical term you used |
+| "I couldn't finish sentences" | Fragile knowledge â€” you haven't connected the pieces | Draw a concept map before explaining |
+| "I forgot basic terms" | Retrieval weakness â€” you recognize but can't recall | Do more active recall (Chapter 3) |
+| "My analogies were terrible" | You're reaching for connections â€” that's great | Keep trying. Bad analogies lead to good ones |
 | "I sounded like a robot reading a script" | You memorized words, not understanding | Close the book and re-explain without references |
 
 **The 3-Explanation Rule:**
 
-Your first explanation of any topic will be terrible. Your second will be acceptable. Your third will be good. You must do three passes — there are no shortcuts.
+Your first explanation of any topic will be terrible. Your second will be acceptable. Your third will be good. You must do three passes â€” there are no shortcuts.
 
 ```
 Pass 1: Messy, full of jargon, stops and starts
-  ├── This is the gap detection pass
-  └── Success metric: number of gaps found
+  â”œâ”€â”€ This is the gap detection pass
+  â””â”€â”€ Success metric: number of gaps found
 
 Pass 2: Cleaner, better structure, fewer jargon crutches
-  ├── This is the reorganization pass
-  └── Success metric: can you explain without stopping?
+  â”œâ”€â”€ This is the reorganization pass
+  â””â”€â”€ Success metric: can you explain without stopping?
 
 Pass 3: Simple, fluid, with good analogies
-  ├── This is the mastery pass
-  └── Success metric: can a non-expert understand?
+  â”œâ”€â”€ This is the mastery pass
+  â””â”€â”€ Success metric: can a non-expert understand?
 ```
 
 ```java
@@ -1702,13 +1700,13 @@ public class ExplanationTracker {
 
         String verdict() {
             if (attemptNumber == 1) {
-                return "EXPECTED — First attempts are always rough. " +
+                return "EXPECTED â€” First attempts are always rough. " +
                         "You found " + jargonCount + " jargon terms to simplify.";
             } else if (attemptNumber == 2) {
-                return "IMPROVING — Second attempt. Fewer hesitations (" +
+                return "IMPROVING â€” Second attempt. Fewer hesitations (" +
                         hesitations + " vs probably more in attempt 1).";
             } else {
-                return "MASTERY — Third attempt. You can explain this now. " +
+                return "MASTERY â€” Third attempt. You can explain this now. " +
                         (completedExplanation ? "Fluently." : "Almost there.");
             }
         }
@@ -1751,18 +1749,18 @@ public class ExplanationTracker {
         System.out.println();
 
         journal.recordAttempt("Database Indexes", 8, 5, false);
-        System.out.println("  → You used 'B-tree', 'clustered', 'cardinality'");
+        System.out.println("  â†’ You used 'B-tree', 'clustered', 'cardinality'");
         System.out.println("    without defining any of them.");
         System.out.println();
 
         journal.recordAttempt("Database Indexes", 4, 2, true);
-        System.out.println("  → Better. You defined B-tree as 'a balanced tree");
+        System.out.println("  â†’ Better. You defined B-tree as 'a balanced tree");
         System.out.println("    that keeps data sorted for efficient search.'");
         System.out.println();
 
         journal.recordAttempt("Database Indexes", 1, 0, true);
-        System.out.println("  → Great! 'An index is like a book's table of");
-        System.out.println("    contents — it tells the database where to");
+        System.out.println("  â†’ Great! 'An index is like a book's table of");
+        System.out.println("    contents â€” it tells the database where to");
         System.out.println("    find rows without reading every page.'");
         System.out.println();
 
@@ -1781,7 +1779,7 @@ public class ExplanationTracker {
 
 4. **Quantity over quality.** Aim for 10 mediocre explanations this week, not 1 perfect one. Volume builds the neural pathways.
 
-5. **Record yourself.** Listen back 24 hours later. You'll be surprised at how much you actually got right — and the gaps will be obvious.
+5. **Record yourself.** Listen back 24 hours later. You'll be surprised at how much you actually got right â€” and the gaps will be obvious.
 
 > **Try This:** Pick a topic you're struggling with. Explain it badly for 5 minutes into a voice recorder. Don't stop. Tomorrow, listen to the recording and write down 3 things you got wrong. Study those 3 things. Explain again. Compare the two recordings.
 
@@ -1791,7 +1789,7 @@ public class ExplanationTracker {
 
 **1. What cognitive phenomenon does the Pomodoro Technique leverage to lower the activation barrier for starting a task?**
 a) The Serial Position Effect  b) The Zeigarnik Effect  c) The Dunning-Kruger Effect  d) The Testing Effect
-**Answer:** b. The Zeigarnik Effect — your brain hates unfinished tasks, and knowing a break is coming in 25 minutes makes starting feel easier because you're not committing to an endless slog.
+**Answer:** b. The Zeigarnik Effect â€” your brain hates unfinished tasks, and knowing a break is coming in 25 minutes makes starting feel easier because you're not committing to an endless slog.
 
 **2. What is the recommended Pomodoro interval adaptation for deep coding sessions?**
 a) 15-minute intervals with 2-minute breaks  b) 25-minute intervals (keep the original)  c) 40-50 minute intervals  d) 60-minute intervals with no breaks
@@ -1802,7 +1800,7 @@ a) Handle it immediately to clear your mind  b) Write it on a parking lot list a
 **Answer:** b. Writing the interruption on a parking lot list reduces cognitive load (your brain trusts it's captured) without breaking focus. Process the list during breaks or after the session.
 
 **4. In Rohrer & Taylor's 2007 study on interleaving vs blocked practice, which group scored higher on the final test one week later, and why?**
-a) Blocked practice — higher accuracy during practice led to better retention  b) Interleaved practice — the desirable difficulty of mixing problem types built stronger discrimination skills  c) Both scored equally — practice volume was the same  d) Blocked practice — students felt more confident and performed better under pressure
+a) Blocked practice â€” higher accuracy during practice led to better retention  b) Interleaved practice â€” the desirable difficulty of mixing problem types built stronger discrimination skills  c) Both scored equally â€” practice volume was the same  d) Blocked practice â€” students felt more confident and performed better under pressure
 **Answer:** b. Blocked practice created an illusion of competence (89% during practice but only 20% on the final test), while interleaved practice felt harder (60% during practice) but produced more than double the retention (43%).
 
 **5. According to the 80/20 rule for practice types, what proportion of your study time should be spent on mixed (interleaved) practice after achieving basic understanding?**
@@ -1811,7 +1809,7 @@ a) 20%  b) 50%  c) 80%  d) 100%
 
 **6. In the three-level DSA interleaving system, what is the goal of Level 2 (Cross-Pattern Interleaving)?**
 a) Same pattern, different difficulties  b) Related patterns that are easy to confuse (e.g., BFS vs DFS)  c) Any pattern at any difficulty  d) Only easy problems across all patterns
-**Answer:** b. Level 2 targets related patterns that are easy to confuse — like Sliding Window vs Two Pointer (both use left/right indices) or BFS vs DFS (both traverse graphs). This builds the ability to distinguish between similar techniques.
+**Answer:** b. Level 2 targets related patterns that are easy to confuse â€” like Sliding Window vs Two Pointer (both use left/right indices) or BFS vs DFS (both traverse graphs). This builds the ability to distinguish between similar techniques.
 
 **7. What is the second step of the Feynman Technique?**
 a) Choose a concept and write it at the top of a page  b) Explain the concept in plain language as if teaching a child  c) Identify gaps by marking jargon and vague terms  d) Review source material and rewrite the explanation more simply
@@ -1823,27 +1821,27 @@ a) Jargon Masking  b) Analogy Dependency  c) Code Blindness  d) Boundary Ignoran
 
 **9. What is the core mechanism that both rubber duck debugging and the Feynman Technique share?**
 a) Both require a partner to listen  b) Both force you to articulate assumptions aloud, which recruits additional brain regions for logical scrutiny  c) Both involve writing code  d) Both require a physical rubber duck
-**Answer:** b. Articulation forces you to slow down, engage Broca's and Wernicke's areas (speech and language comprehension), and state every assumption explicitly — revealing gaps that silent thinking misses.
+**Answer:** b. Articulation forces you to slow down, engage Broca's and Wernicke's areas (speech and language comprehension), and state every assumption explicitly â€” revealing gaps that silent thinking misses.
 
 **10. According to the Generation Effect (Slamecka & Graf, 1978), how much better is recall for self-generated material compared to read material?**
 a) 10-20%  b) 30-40%  c) 50-60%  d) 70-80%
-**Answer:** b. Information you generate yourself (by writing) is remembered 30-40% better than information you read. Writing also forces coherence — you cannot jump between unrelated points the way you can in casual thought.
+**Answer:** b. Information you generate yourself (by writing) is remembered 30-40% better than information you read. Writing also forces coherence â€” you cannot jump between unrelated points the way you can in casual thought.
 
 **11. According to the Learning Pyramid, what retention rate does teaching others achieve?**
 a) 50%  b) 75%  c) 90%  d) 95%
-**Answer:** c. Teaching others achieves approximately 90% retention — the highest of any study method listed. Teaching exposes you to unexpected questions, forces retrieval under pressure, and trains dual-track thinking (holding the learner's model and the expert model simultaneously).
+**Answer:** c. Teaching others achieves approximately 90% retention â€” the highest of any study method listed. Teaching exposes you to unexpected questions, forces retrieval under pressure, and trains dual-track thinking (holding the learner's model and the expert model simultaneously).
 
 **12. What does the 3-Explanation Rule say about your first attempt to explain a concept?**
-a) It will be perfect if you studied enough  b) It will be terrible — and that is expected because the first pass is for gap detection, not mastery  c) You should record it and never repeat it  d) You should only explain if you can do it fluently the first time
-**Answer:** b. The 3-Explanation Rule says the first pass is messy and full of jargon — it's for gap detection. The second pass builds structure. The third pass achieves fluency. Awkwardness is the signal that learning is happening.
+a) It will be perfect if you studied enough  b) It will be terrible â€” and that is expected because the first pass is for gap detection, not mastery  c) You should record it and never repeat it  d) You should only explain if you can do it fluently the first time
+**Answer:** b. The 3-Explanation Rule says the first pass is messy and full of jargon â€” it's for gap detection. The second pass builds structure. The third pass achieves fluency. Awkwardness is the signal that learning is happening.
 
 ---
 
 ## Chapter Summary
 
-- **The Pomodoro Technique** provides structured focus containers (25-50 minutes) that leverage the Zeigarnik effect and reduce attention residue. Adapt the interval to your task — coding benefits from longer blocks, revision from shorter ones.
+- **The Pomodoro Technique** provides structured focus containers (25-50 minutes) that leverage the Zeigarnik effect and reduce attention residue. Adapt the interval to your task â€” coding benefits from longer blocks, revision from shorter ones.
 - **Interleaving** beats blocked practice for long-term retention and transfer. Despite feeling harder during practice (that's the desirable difficulty), it builds the discrimination skills that exams and real-world problem-solving demand.
-- **The Feynman Technique** is the ultimate comprehension check — if you can't explain it simply, you haven't understood it. Combine it with rubber duck debugging and learning by writing for the deepest engagement.
+- **The Feynman Technique** is the ultimate comprehension check â€” if you can't explain it simply, you haven't understood it. Combine it with rubber duck debugging and learning by writing for the deepest engagement.
 - **The three techniques are synergistic.** Pomodoro provides the container, interleaving provides the structure, and Feynman provides the quality control. Use the Master Session template to combine all three.
 - **Awkwardness is the signal that learning is happening.** Push through it with the 3-Explanation Rule: first pass finds gaps, second pass builds structure, third pass achieves fluency.
 
@@ -1855,7 +1853,7 @@ a) It will be perfect if you studied enough  b) It will be terrible — and that
 
 3. **Feynman Deep Dive:** Choose a concept from GATE CS that you find confusing (e.g., cache mapping, deadlock prevention, or pipeline hazards). Apply the four-step Feynman Technique. Write down every gap you discover. Study the gaps. Repeat until the explanation flows.
 
-4. **Rubber Duck Debugging:** Open a piece of code you wrote last week that you don't fully understand. Read it aloud line by line as if explaining to someone who has never seen it. Write down every moment you think "I'm not sure why this works" — those are gaps to study.
+4. **Rubber Duck Debugging:** Open a piece of code you wrote last week that you don't fully understand. Read it aloud line by line as if explaining to someone who has never seen it. Write down every moment you think "I'm not sure why this works" â€” those are gaps to study.
 
 5. **Peer Teaching:** Find a classmate or study partner. Spend 20 minutes teaching them a topic you're confident about. Ask them to prepare 3 questions in advance. Debrief afterward: what questions stumped you? Study those topics.
 
@@ -1865,9 +1863,9 @@ a) It will be perfect if you studied enough  b) It will be terrible — and that
 
 ## Further Reading
 
-- **Chapter 3: Active Recall & Spaced Repetition** — Prerequisites for this chapter. If you haven't already, learn why pulling information out of your brain is more important than putting it in: `ch-03-active-recall-spaced-repetition.md`
-- **Chapter 5: Memory Systems & Mnemonics** — Take your learning further with the Method of Loci, memory palaces, and visual mnemonics: `ch-05-memory-systems-mnemonics.md`
-- **Cirillo, F. (2006).** *The Pomodoro Technique.* — The original book that started it all.
-- **Rohrer, D. (2012).** Interleaving helps students distinguish among similar concepts. *Educational Psychology Review.* — The key research paper on interleaving.
-- **Feynman, R. P. (1999).** *The Pleasure of Finding Things Out.* — Feynman's own essays on understanding and explanation.
-- **Hunt, A. & Thomas, D. (1999).** *The Pragmatic Programmer.* — The original source of rubber duck debugging (still one of the best books on the craft).
+- **Chapter 3: Active Recall & Spaced Repetition** â€” Prerequisites for this chapter. If you haven't already, learn why pulling information out of your brain is more important than putting it in: `ch-03-active-recall-spaced-repetition.md`
+- **Chapter 5: Memory Systems & Mnemonics** â€” Take your learning further with the Method of Loci, memory palaces, and visual mnemonics: `ch-05-memory-systems-mnemonics.md`
+- **Cirillo, F. (2006).** *The Pomodoro Technique.* â€” The original book that started it all.
+- **Rohrer, D. (2012).** Interleaving helps students distinguish among similar concepts. *Educational Psychology Review.* â€” The key research paper on interleaving.
+- **Feynman, R. P. (1999).** *The Pleasure of Finding Things Out.* â€” Feynman's own essays on understanding and explanation.
+- **Hunt, A. & Thomas, D. (1999).** *The Pragmatic Programmer.* â€” The original source of rubber duck debugging (still one of the best books on the craft).

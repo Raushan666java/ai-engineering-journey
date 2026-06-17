@@ -9,6 +9,8 @@ By the end of this chapter, students will be able to:
 - Apply the `operator` module for common operations
 - Compose functions and build functional pipelines
 
+![Lambda and Functional Programming](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/10-lambda.png)
+
 ## 10.1 Lambda Functions
 
 A lambda is an anonymous function defined with the `lambda` keyword:

@@ -22,6 +22,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Testcontainers Architecture
 
+![Testcontainers Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/32-testcontainers.png)
+
 Testcontainers is a Java library that wraps Docker containers inside your test lifecycle. Instead of mocking a database or running a heavy local install, you spin up a disposable container per test suite — identical to production, every time.
 
 ### 1.1 How It Works

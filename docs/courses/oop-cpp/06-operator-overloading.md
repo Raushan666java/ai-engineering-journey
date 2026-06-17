@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 6.1 Philosophy and Constraints
 
+![Operator Overloading Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/06-operator-overloading.png)
+
 Operator overloading allows user-defined types to participate in C++'s expression syntax. The language imposes several invariants:
 
 - At least one operand must be of user-defined type (you cannot redefine `int + int`).

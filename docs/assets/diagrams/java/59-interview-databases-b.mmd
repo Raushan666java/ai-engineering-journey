@@ -1,0 +1,19 @@
+flowchart TB
+  AUDIT[JPA Auditing]
+  AUDIT --> ANNOT[Annotations]
+  ANNOT --> CD[CreatedDate]
+  ANNOT --> MD[LastModifiedDate]
+  ANNOT --> CB[CreatedBy]
+  ANNOT --> MB[LastModifiedBy]
+
+  AUDIT --> CFG[Configuration]
+  CFG --> EJA[EnableJpaAuditing]
+  CFG --> AA[AuditorAware Bean]
+
+  AUDIT --> PREP[Prepersist / Preupdate]
+  PREP --> CALLBACK[Entity Callbacks]
+
+  AUDIT --> USE[Use Cases]
+  USE --> AUDIT_LOG[Audit Logging]
+  USE --> COMP[Compliance]
+  USE --> HIST[History Tracking]

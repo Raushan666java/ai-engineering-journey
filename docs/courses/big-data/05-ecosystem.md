@@ -9,7 +9,7 @@ After completing this chapter, you will be able to:
 - Set up and use Kafka for streaming data ingestion
 - Compare legacy Hadoop tools with modern cloud-native alternatives
 
-![Hadoop Ecosystem](../assets/images/diagrams/big-data/ch05-ecosystem.png)
+![Hadoop Ecosystem](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch05-ecosystem.png)
 
 ## 5.1 Hive — SQL-on-Hadoop
 

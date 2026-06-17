@@ -1,0 +1,39 @@
+flowchart TB
+    subgraph Architecture["Expert System Architecture"]
+        KB["Knowledge Base<br/>Domain Facts + Rules"]
+        Inference_E["Inference Engine<br/>Forward or Backward chaining"]
+        User_I["User Interface"]
+        Explain["Explanation Facility<br/>HOW / WHY traces"]
+        WM["Working Memory<br/>Current case facts"]
+        KA["Knowledge Acquisition Facility<br/>Rule editor"]
+    end
+
+    subgraph Rule_Structures["Rule Structures"]
+        IF_THEN["IF condition THEN action<br/>Production rules"]
+        CERTAINTY["Certainty Factors<br/>CF[H,E] = MB - MD"]
+        Confidence_Combine["Combining Evidence<br/>CF_combined = CF1 + CF2 - CF1*CF2<br/>if both positive"]
+    end
+
+    subgraph MYCIN["MYCIN Case Study"]
+        Domain["Domain: Bacterial infections"]
+        Rules["~500 rules<br/>Approximate reasoning"]
+        CF["Certainty Factors -1 to +1"]
+        Result["Outperformed junior doctors"]
+    end
+
+    subgraph Generations["Generations"]
+        Gen1["Gen 1: DENDRAL, MYCIN<br/>Rule-based, static"]
+        Gen2["Gen 2: XCON, RI<br/>Larger KBs, commercial"]
+        Gen3["Gen 3: Modern decision support<br/>Hybrid with ML<br/>Interactive diagnosis"]
+    end
+
+    subgraph Limits["Limitations"]
+        Brittle["Brittle: Outside scope = wrong"]
+        Acquisition["Knowledge acquisition bottleneck"]
+        Maintenance["Maintenance: Rules conflict"]
+    end
+
+    Architecture --> Rule_Structures
+    Architecture --> MYCIN
+    Architecture --> Generations
+    Architecture --> Limits

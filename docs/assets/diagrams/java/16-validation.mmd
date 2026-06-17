@@ -1,0 +1,46 @@
+flowchart LR
+  REQ[HTTP Request] --> CTRL[Controller]
+  CTRL --> VALID[Valid Annotation]
+  VALID --> BV[Bean Validation]
+  BV --> CONST[Constraint Annotations]
+  CONST --> NN[NotNull]
+  CONST --> NEmpty[NotEmpty]
+  CONST --> NBlank[NotBlank]
+  CONST --> SIZE[Size]
+  CONST --> MIN[Min]
+  CONST --> MAX[Max]
+  CONST --> EMAIL[Email]
+  CONST --> PATTERN[Pattern]
+  CONST --> PAST[Past / Future]
+  CONST --> POS[Positive / Negative]
+  CONST --> DIGITS[Digits]
+  CONST --> ABOOL[AssertTrue / AssertFalse]
+
+  BV --> GROUPS[Validation Groups]
+  GROUPS --> CREATE[Create Group]
+  GROUPS --> UPDATE[Update Group]
+
+  BV --> CUSTOM[Custom Constraints]
+  CUSTOM --> CV[ConstraintValidator]
+  CUSTOM --> ANN[Custom Annotation]
+
+  VALID --> ERR[Validation Errors]
+  ERR --> FE[FieldError]
+  ERR --> GE[GlobalError]
+
+  CTRL --> EH[Error Handling]
+  EH --> CA[ControllerAdvice]
+  CA --> EXH[ExceptionHandler]
+  CA --> RCA[RestControllerAdvice]
+
+  EH --> RESP[Error Response]
+  RESP --> DTO[Error DTO]
+  RESP --> RFC[RFC 7807]
+
+  CTRL --> DTO[DTO Pattern]
+  DTO --> MS[MapStruct]
+  MS --> ENT[Entity Mapping]
+
+  CTRL --> IB[InitBinder]
+  IB --> PE[Property Editors]
+  IB --> AD[Allowed / Disallowed Fields]

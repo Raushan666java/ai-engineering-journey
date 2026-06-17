@@ -1,0 +1,26 @@
+graph LR
+    subgraph UML Class Relationships
+        A1[Class A] --|> B1[Class B]
+        A1 -.-> B1
+    end
+    subgraph Inheritance
+        I1[Vehicle] --> I2[Car]
+        I1[Vehicle] --> I3[Truck]
+    end
+    subgraph Composition
+        C1[House] --> C2[Room]
+        C2 --> C3[Wall]
+        C2 --> C4[Door]
+    end
+    subgraph Aggregation
+        AG1[Department] --> AG2[Employee]
+    end
+    subgraph Key Design Problems
+        VM[Vending Machine]
+        ES[Elevator System]
+        PL[Parking Lot]
+        CG[Chess Game]
+        LM[Library Mgmt]
+        LA[Log Aggregator]
+        RL[Rate Limiter]
+    end

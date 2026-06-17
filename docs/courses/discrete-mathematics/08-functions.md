@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Functions Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/08-functions.png)
+
 After completing this chapter, you will be able to:
 
 - Define functions and identify domains, codomains, and ranges

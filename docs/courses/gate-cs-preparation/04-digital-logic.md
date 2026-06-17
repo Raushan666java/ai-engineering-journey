@@ -4,6 +4,8 @@
 
 ## GATE Marks Distribution (Last 10 Years)
 
+![Digital Logic Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/04-digital-logic.png)
+
 | Year | Marks | Topics Tested |
 |------|-------|---------------|
 | 2025 | 7 | Boolean algebra, K-map minimization, counters, sequential circuit analysis |

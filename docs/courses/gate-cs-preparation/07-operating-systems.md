@@ -7,6 +7,8 @@
 
 ## Topic Weightage in GATE (2010–2025)
 
+![Operating Systems Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/07-operating-systems.png)
+
 | Topic | Avg Marks | Frequency | High-Yield Subtopics |
 |-------|-----------|-----------|----------------------|
 | CPU Scheduling | 2–3 | Every year | FCFS, SJF, Round Robin, MLFQ, Gantt charts |

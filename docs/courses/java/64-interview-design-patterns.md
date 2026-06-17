@@ -4,6 +4,8 @@ This chapter covers the most important design patterns for Java backend developm
 
 ---
 
+![Design Patterns Interview - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/64-interview-design-patterns.png)
+
 ### Q1: What are the three categories of design patterns in the GoF book?
 
 **Answer:** The Gang of Four (GoF) book categorizes 23 design patterns into three groups:

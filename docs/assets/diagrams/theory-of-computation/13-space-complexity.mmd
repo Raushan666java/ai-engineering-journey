@@ -1,0 +1,42 @@
+flowchart TD
+    A["Space Complexity"] --> B["Complexity Classes"]
+    A --> C["Savitch's Theorem"]
+    A --> D["PSPACE & PSPACE-Complete"]
+    A --> E["L & NL"]
+    A --> F["Reachability Method"]
+    A --> G["Space Hierarchy"]
+
+    B --> B1["L = SPACE(log n)"]
+    B --> B2["NL = NSPACE(log n)"]
+    B --> B3["PSPACE = ∪ SPACE(nᵏ)"]
+    B --> B4["EXPSPACE = ∪ SPACE(2ⁿᵏ)"]
+    B --> B5["L ⊆ NL ⊆ P ⊆ NP ⊆ PSPACE"]
+
+    C --> C1["NSPACE(s(n)) ⊆ SPACE(s(n)²)"]
+    C --> C2["NPSPACE = PSPACE"]
+    C --> C3["Divide-and-conquer reachability"]
+    C --> C4["Recursion depth O(s(n))"]
+
+    D --> D1["Problems in PSPACE"]
+    D1 --> D1a["QBF (True Quantified Boolean Formulas)"]
+    D1 --> D1b["GEOGRAPHY game"]
+    D1 --> D1c["Generalized CHECKERS, GO"]
+    D1 --> D1d["LBA acceptance"]
+    D --> D2["PSPACE-Complete"]
+    D2 --> D2a["QBF (canonical)"]
+    D2 --> D2b["SUCCINCT REACHABILITY"]
+
+    E --> E1["L Problems"]
+    E1 --> E1a["Balanced parentheses"]
+    E1 --> E1b["Linked list cycle"]
+    E1 --> E1c["Parity checking"]
+    E --> E2["NL Problems"]
+    E2 --> E2a["PATH: NL-complete"]
+    E2 --> E2b["NL = co-NL (Immerman-Sz.)"]
+
+    F --> F1["Configuration graph"]
+    F --> F2["Acceptance = reachability"]
+    F --> F3["Used for Savitch, NL ⊆ P"]
+
+    G --> G1["SPACE(f) ⊂ SPACE(g) if f=o(g)"]
+    G --> G2["L ⊂ PSPACE ⊂ EXPSPACE"]

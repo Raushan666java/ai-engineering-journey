@@ -1,4 +1,4 @@
-# Chapter 23: Case Study — AI-Powered Content Platform
+﻿# Chapter 23: Case Study â€” AI-Powered Content Platform
 
 ---
 
@@ -13,7 +13,10 @@
 
 ---
 
-## Theory — End-to-End Design
+## Theory â€” End-to-End Design
+
+![AI Content Case Study](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/23-case-study-ai-content.png)
+
 
 ### 7.1 Requirements Gathering
 
@@ -48,62 +51,62 @@ The platform enables content teams to author, edit, search, and publish articles
 The system consists of five layers: API gateway, Laravel backend, vector database, AI SDK agent layer, and external service integrations.
 
 ```
-┌──────────────────────────────────────────────────────────────────────────┐
-│                          Content Platform UI                             │
-│            (Livewire / Inertia + Vue 3, Reverb WebSockets)               │
-└──────────────────────────────────────────────────────────────────────────┘
-                                    │
-                            ┌───────┴───────┐
-                            │   Load Balancer│
-                            └───────┬───────┘
-                                    │
-                    ┌───────────────┴───────────────┐
-                    │       Laravel Octane           │
-                    │   ┌───────────────────────┐   │
-                    │   │  API Controllers       │   │
-                    │   │  AI Agent Orchestrator │   │
-                    │   │  MCP Server Handlers   │   │
-                    │   │  Document Service      │   │
-                    │   └───────────────────────┘   │
-                    └───────────────┬───────────────┘
-                                    │
-        ┌───────────────────────────┼───────────────────────────┐
-        │                           │                           │
-┌───────┴───────┐           ┌───────┴───────┐           ┌───────┴───────┐
-│  PostgreSQL    │           │    Redis       │           │  Queue Workers │
-│  + pgvector    │           │                │           │  (Horizon)     │
-│  (documents,   │           │ ┌────────────┐ │           │  ┌───────────┐ │
-│   embeddings,  │           │ │ Embeddings │ │           │  │Moderation │ │
-│   vectors)     │           │ │ Cache      │ │           │  │Pipeline   │ │
-│               │           │ │ Search TTL  │ │           │  │Embed Gen  │ │
-│               │           │ │ AI Responses│ │           │  │Content Gen│ │
-└───────┬───────┘           │ └────────────┘ │           │  └───────────┘ │
-        │                   └───────┬───────┘           └───────┬───────┘
-        │                           │                           │
-┌───────┴───────┐           ┌───────┴───────┐                   │
-│  AI SDK Layer  │           │   Reverb WS    │                   │
-│ ┌───────────┐  │           │ (collaboration  │                   │
-│ │ Researcher│  │           │  edit status,   │                   │
-│ │ Writer    │  │           │  agent progress │                   │
-│ │ Editor    │  │           │  broadcasts)   │                   │
-│ └───────────┘  │           └───────────────┘                   │
-└───────┬───────┘                                               │
-        │                                                       │
-┌───────┴───────┐                                               │
-│ External APIs  │                                               │
-│ (OpenAI,      │                                               │
-│  Perplexity,  │                                               │
-│  Claude)      │                                               │
-└───────────────┘                                               │
-        │                                                       │
-┌───────┴───────┐                                               │
-│   MCP Servers  │                                              │
-│ (search_docs, │                                               │
-│  generate,    │                                               │
-│  analyze)     │                                               │
-└───────────────┘                                               │
-        │                                                       │
-        └───────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                          Content Platform UI                             â”‚
+â”‚            (Livewire / Inertia + Vue 3, Reverb WebSockets)               â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                            â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”
+                            â”‚   Load Balancerâ”‚
+                            â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚       Laravel Octane           â”‚
+                    â”‚   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”‚
+                    â”‚   â”‚  API Controllers       â”‚   â”‚
+                    â”‚   â”‚  AI Agent Orchestrator â”‚   â”‚
+                    â”‚   â”‚  MCP Server Handlers   â”‚   â”‚
+                    â”‚   â”‚  Document Service      â”‚   â”‚
+                    â”‚   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+        â”‚                           â”‚                           â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”           â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”           â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  PostgreSQL    â”‚           â”‚    Redis       â”‚           â”‚  Queue Workers â”‚
+â”‚  + pgvector    â”‚           â”‚                â”‚           â”‚  (Horizon)     â”‚
+â”‚  (documents,   â”‚           â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚           â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚
+â”‚   embeddings,  â”‚           â”‚ â”‚ Embeddings â”‚ â”‚           â”‚  â”‚Moderation â”‚ â”‚
+â”‚   vectors)     â”‚           â”‚ â”‚ Cache      â”‚ â”‚           â”‚  â”‚Pipeline   â”‚ â”‚
+â”‚               â”‚           â”‚ â”‚ Search TTL  â”‚ â”‚           â”‚  â”‚Embed Gen  â”‚ â”‚
+â”‚               â”‚           â”‚ â”‚ AI Responsesâ”‚ â”‚           â”‚  â”‚Content Genâ”‚ â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜           â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚           â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚
+        â”‚                   â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜           â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+        â”‚                           â”‚                           â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”           â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”                   â”‚
+â”‚  AI SDK Layer  â”‚           â”‚   Reverb WS    â”‚                   â”‚
+â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚           â”‚ (collaboration  â”‚                   â”‚
+â”‚ â”‚ Researcherâ”‚  â”‚           â”‚  edit status,   â”‚                   â”‚
+â”‚ â”‚ Writer    â”‚  â”‚           â”‚  agent progress â”‚                   â”‚
+â”‚ â”‚ Editor    â”‚  â”‚           â”‚  broadcasts)   â”‚                   â”‚
+â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜                                               â”‚
+        â”‚                                                       â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”                                               â”‚
+â”‚ External APIs  â”‚                                               â”‚
+â”‚ (OpenAI,      â”‚                                               â”‚
+â”‚  Perplexity,  â”‚                                               â”‚
+â”‚  Claude)      â”‚                                               â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                                               â”‚
+        â”‚                                                       â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”                                               â”‚
+â”‚   MCP Servers  â”‚                                              â”‚
+â”‚ (search_docs, â”‚                                               â”‚
+â”‚  generate,    â”‚                                               â”‚
+â”‚  analyze)     â”‚                                               â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                                               â”‚
+        â”‚                                                       â”‚
+        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 7.3 Data Model
@@ -623,7 +626,7 @@ class RagService
 
         // 3. Build context from retrieved chunks
         $context = collect($results)
-            ->map(fn ($r) => "— {$r->chunk_text} (source: {$r->title}, similarity: " . round($r->similarity, 3) . ")")
+            ->map(fn ($r) => "â€” {$r->chunk_text} (source: {$r->title}, similarity: " . round($r->similarity, 3) . ")")
             ->implode("\n\n");
 
         $sources = collect($results)
@@ -649,7 +652,7 @@ class RagService
             'from_cache' => false,
         ];
 
-        // 5. Cache result (TTL based on query specificity — shorter for vague queries)
+        // 5. Cache result (TTL based on query specificity â€” shorter for vague queries)
         $ttl = strlen($query) > 50 ? 3600 : 300;
         Cache::put($cacheKey, $result, $ttl);
 
@@ -981,7 +984,7 @@ PROMPT;
 
 #### 7.5.5 Agent Chaining Workflow
 
-The full content generation pipeline chains the Researcher → Writer → Editor in sequence.
+The full content generation pipeline chains the Researcher â†’ Writer â†’ Editor in sequence.
 
 ```php
 // App\Services\ContentGenerationService.php
@@ -1135,7 +1138,7 @@ class ReindexEmbeddings extends Command
 
 ### 7.7 MCP Tool Exposure
 
-The platform exposes its AI capabilities through MCP (Model Context Protocol) servers. This allows external AI clients—like Claude Desktop, Cursor, or custom agents—to search the knowledge base, generate content, and analyze sentiment directly.
+The platform exposes its AI capabilities through MCP (Model Context Protocol) servers. This allows external AI clientsâ€”like Claude Desktop, Cursor, or custom agentsâ€”to search the knowledge base, generate content, and analyze sentiment directly.
 
 ```php
 // App/Mcp/Servers/ContentMcpServer.php
@@ -1587,11 +1590,11 @@ class AgentProgressUpdated implements ShouldBroadcast
 
 ## Summary
 
-- The RAG pipeline follows a five-step sequence: text ingestion → chunking → embedding generation (OpenAI text-embedding-3-small, 1536 dimensions) → pgvector storage with HNSW index → similarity search + LLM augmentation.
+- The RAG pipeline follows a five-step sequence: text ingestion â†’ chunking â†’ embedding generation (OpenAI text-embedding-3-small, 1536 dimensions) â†’ pgvector storage with HNSW index â†’ similarity search + LLM augmentation.
 - Three specialized AI agents handle content production: Writer (generates articles from briefs with structured JSON output), Editor (reviews for grammar, style, and factual consistency), and Researcher (performs web search and returns fact-checked citations).
-- Agent chaining creates a production pipeline: Researcher → Writer → Editor. Each step broadcasts progress via Reverb so the UI provides real-time feedback.
+- Agent chaining creates a production pipeline: Researcher â†’ Writer â†’ Editor. Each step broadcasts progress via Reverb so the UI provides real-time feedback.
 - The vector store is partitioned by `content_type` (article, comment, metadata) with separate HNSW indexes. A periodic `embeddings:reindex` artisan command handles stale embeddings.
-- Hybrid search combines pgvector cosine similarity (vector_score) with PostgreSQL full-text search (fts_score) using a weighted formula: `hybrid_score = vector_score × 0.7 + fts_score × 0.3`.
+- Hybrid search combines pgvector cosine similarity (vector_score) with PostgreSQL full-text search (fts_score) using a weighted formula: `hybrid_score = vector_score Ã— 0.7 + fts_score Ã— 0.3`.
 - MCP tools (search_documents, generate_content, analyze_sentiment) expose platform capabilities to external AI clients through a JSON-RPC interface.
 - Content moderation runs asynchronously: submitted documents and images pass through AI analysis queues. Text is scored for toxicity and NSFW content; images are analyzed via vision model.
 - A multi-layer caching strategy reduces API costs: embedding cache (24h, content-addressed), search result cache (5-60 min), AI response cache (1h), and moderation cache (24h).

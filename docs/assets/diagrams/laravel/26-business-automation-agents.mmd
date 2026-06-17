@@ -1,0 +1,63 @@
+flowchart TD
+    subgraph "Automation Pipeline"
+        AP1["Trigger<br/>Cron Event Webhook"]
+        AP2["Agent<br/>AI reasoning"]
+        AP3["Decision<br/>Structured output"]
+        AP4["Action<br/>Execute decision"]
+        AP5["Log<br/>Audit trail"]
+    end
+
+    subgraph "Trigger Types"
+        TT1["Scheduled<br/>Laravel Scheduler"]
+        TT2["Event-triggered<br/>ModelSaved Event"]
+        TT3["Webhook-driven<br/>HTTP POST"]
+        TT4["Human-in-the-loop<br/>Notification Approval"]
+    end
+
+    subgraph "Agent Framework"
+        AF1["AutomationWorkflow Model<br/>DB-driven config"]
+        AF2["AutomationAgent Base<br/>Extendable class"]
+        AF3["Agent Instructions<br/>Per-workflow prompt"]
+    end
+
+    subgraph "Action Types"
+        AT1["Create record"]
+        AT2["Send notification"]
+        AT3["Call external API"]
+        AT4["Trigger sub-workflow"]
+    end
+
+    subgraph "Monitoring"
+        MT1["Audit Log<br/>Full traceability"]
+        MT2["Escalation Chain<br/>Time-based"]
+        MT3["Multi-channel Alerting"]
+    end
+
+    TT1 --> AP1
+    TT2 --> AP1
+    TT3 --> AP1
+    TT4 --> AP1
+
+    AP1 --> AP2
+    AP2 --> AF1
+    AF1 --> AF2
+    AF2 --> AF3
+    AF3 --> AP3
+
+    AP3 --> AT1
+    AP3 --> AT2
+    AP3 --> AT3
+    AP3 --> AT4
+
+    AT1 --> AP5
+    AT2 --> AP5
+    AT3 --> AP5
+
+    AP5 --> MT1
+    MT1 --> MT2
+    MT2 --> MT3
+
+    style AP1 fill:#4a90d9,color:#fff
+    style AP2 fill:#27ae60,color:#fff
+    style AF1 fill:#9b59b6,color:#fff
+    style MT1 fill:#e67e22,color:#fff

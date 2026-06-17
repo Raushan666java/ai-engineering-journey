@@ -6,7 +6,7 @@ After completing this chapter, students will be able to: construct interference 
 
 ## Theory
 
-![Register Allocation and Advanced Compiler Topics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch09-alloc-advanced.png)
+![Register Allocation via Graph Coloring — Chaitin, Briggs, Coalescing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch-14-register-allocation.png)
 
 ### The Register Allocation Problem
 

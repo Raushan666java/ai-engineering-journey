@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) formulate a 
 
 ## 2.1 Problem-Solving Agents
 
+![Problem-Solving Search](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch02-problem-solving.png)
+
 A problem-solving agent is a goal-directed agent that decides what to do by finding sequences of actions that lead to desirable states. The agent operates in discrete, deterministic, fully observable environments. The problem-solving process comprises four steps:
 
 1. **Goal formulation:** The agent adopts a set of states representing acceptable outcomes.

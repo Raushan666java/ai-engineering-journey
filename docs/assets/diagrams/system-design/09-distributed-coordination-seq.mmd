@@ -1,0 +1,10 @@
+sequenceDiagram
+    participant C as Candidate
+    participant S2 as Server 2
+    participant S3 as Server 3
+    C->>C: Election timeout (term=3)
+    C->>C: Vote for self
+    C->>S2: RequestVote(term=3)
+    C->>S3: RequestVote(term=3)
+    S2-->>C: Vote granted
+    S3-->>C: Vote granted

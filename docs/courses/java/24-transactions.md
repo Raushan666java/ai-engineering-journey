@@ -27,6 +27,8 @@ By the end of this chapter you should be able to:
 
 ## @Transactional — Declarative Transactions
 
+![Transaction Management Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/24-transactions.png)
+
 `@Transactional` is the cornerstone of Spring's transaction management. When placed on a method or class, it wraps execution in a transactional boundary managed by a `PlatformTransactionManager`.
 
 ### Basic Usage

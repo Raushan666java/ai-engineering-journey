@@ -1,0 +1,40 @@
+flowchart TB
+    subgraph Models["Sequential Circuit Models"]
+        Mealy["Mealy: output = f(state, inputs)"]
+        Moore["Moore: output = f(state) only"]
+    end
+
+    subgraph Design["Design Flow"]
+        SD["State Diagram: nodes = states, edges = transitions"]
+        ST["State Table: present state, input, next state, output"]
+        SM["State Minimization: partitioning method"]
+        SA["State Assignment: binary encoding"]
+        ET["Excitation Tables: JK / D / T flip-flop inputs"]
+        Circuit["Circuit Implementation"]
+    end
+
+    subgraph Counters["Counters"]
+        Ripple["Ripple: asynchronous, cascaded clock"]
+        Sync["Synchronous: common clock, enable logic"]
+        ModN["Mod-N: count 0 to N-1 then reset"]
+        BCD["BCD: 0 to 9 decimal counter"]
+        Johnson["Johnson: twisted-ring, 2n states"]
+    end
+
+    subgraph SeqDet["Sequence Detector"]
+        Pattern["Detect specific bit pattern"]
+        Partial["State represents partial match"]
+        Output["Assert output on full match"]
+        Overlap["Overlapping sequences allowed"]
+    end
+
+    subgraph Registers["Registers"]
+        SISO["Serial-In Serial-Out: shift register"]
+        PIPO["Parallel-In Parallel-Out: storage"]
+        Universal["Universal: shift left, right, hold, load"]
+    end
+
+    Models --> Design
+    Design --> Counters
+    Design --> SeqDet
+    Design --> Registers

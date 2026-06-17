@@ -1,0 +1,31 @@
+flowchart TB
+    subgraph Resolution["Resolution"]
+        CNF["Convert to CNF<br/>Conjunctive Normal Form"]
+        Steps["Steps:<br/>1. Eliminate <=><br/>2. Eliminate =><br/>3. Move ~ inward<br/>4. Standardize variables<br/>5. Skolemize existential<br/>6. Drop ForAll 7. Distribute | over &"]
+        Resolution_Rule["Resolution Rule<br/>P | Q, ~P | R  ->  Q | R"]
+        Factoring["Factoring<br/>Remove redundant literals"]
+        Refutation["Proof by Refutation<br/>Add negation of goal<br/>Derive empty clause"]
+    end
+
+    subgraph Unification_Theory["Unification"]
+        MGU["Most General Unifier"]
+        Occur_Check["Occur Check<br/>x unifies with f(x) -> FAIL"]
+    end
+
+    subgraph Prolog["Prolog"]
+        Horn_Clauses["Horn Clauses<br/>At most one positive literal"]
+        SLD["SLD Resolution<br/>Linear Definite clauses"]
+        Cut["Cut operator !<br/>Prunes search tree"]
+        Negation["Negation as Failure<br/>NOT(G) if G fails"]
+    end
+
+    subgraph KB_Ops["Knowledge Base Operations"]
+        TELL["TELL / ASSERT facts"]
+        ASK["ASK / QUERY for truth"]
+        Retract["RETRACT / REMOVE"]
+    end
+
+    Resolution --> Unification_Theory
+    Resolution --> Prolog
+    KB_Ops --> Prolog
+    KB_Ops --> Resolution

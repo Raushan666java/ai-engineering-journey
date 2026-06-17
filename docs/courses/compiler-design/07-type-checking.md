@@ -6,7 +6,7 @@ After completing this chapter, students will be able to: define type systems and
 
 ## Theory
 
-![Type Checking and Runtime Environment](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch06-type-runtime.png)
+![Type Checking System](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch-07-type-checking.png)
 
 ### Type Systems
 

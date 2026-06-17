@@ -9,6 +9,8 @@
 
 ## Theory
 
+![AVL Tree Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch13-avl.png)
+
 ### AVL Invariant
 
 An **AVL tree** is a self-balancing BST named after Adelson-Velsky and Landis. The balance factor of any node is:

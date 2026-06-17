@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Regular Expressions Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/03-regex.png)
+
 ### 3.1 What is a Regular Expression?
 
 A **regular expression** is a algebraic notation for describing a pattern — a set of strings. Regular expressions are used extensively in text processing, lexical analysis, and input validation.

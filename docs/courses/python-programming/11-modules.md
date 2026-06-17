@@ -10,6 +10,8 @@ By the end of this chapter, students will be able to:
 - Manage `sys.path` and third-party dependencies with pip
 - Build and distribute packages using setuptools
 
+![Modules and Packages](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/11-modules.png)
+
 ## 11.1 Module Basics
 
 A module is a `.py` file containing Python definitions and statements. The filename (without `.py`) is the module name:

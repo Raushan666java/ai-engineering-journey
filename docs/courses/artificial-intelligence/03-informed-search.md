@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) design admis
 
 ## 3.1 Heuristics
 
+![Informed Search and Heuristics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch03-informed-search.png)
+
 A **heuristic function** $h(n)$ estimates the cost of the cheapest path from node $n$ to a goal state. Heuristics incorporate domain-specific knowledge to accelerate search by directing exploration toward promising regions of the state space.
 
 ### 3.1.1 Heuristic Function Design

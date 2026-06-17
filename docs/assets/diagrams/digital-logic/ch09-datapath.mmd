@@ -1,0 +1,63 @@
+flowchart TD
+    subgraph IF["Instruction Fetch"]
+        PC["Program Counter<br/>holds current address"]
+        InstMem["Instruction Memory<br/>read-only, addressed by PC"]
+        PCAdd["PC + 4 Adder<br/>increments PC"]
+    end
+
+    subgraph ID["Register Read"]
+        RegFile["Register File<br/>32 × 32-bit registers<br/>R0 hardwired to 0<br/>2 read ports, 1 write port"]
+        SE["Sign Extend<br/>16-bit → 32-bit<br/>for I-type immediates"]
+    end
+
+    subgraph MUXes["Multiplexers"]
+        ALUSrc["ALUSrc MUX<br/>0: register data<br/>1: sign-extended imm"]
+        MemtoReg["MemtoReg MUX<br/>0: ALU result<br/>1: memory data"]
+        PCSrc["PCSrc MUX<br/>0: PC + 4<br/>1: branch target"]
+    end
+
+    subgraph EXE["Execute"]
+        ALU["ALU<br/>AND / OR / ADD / SUB<br/>controlled by ALUOp<br/>outputs Zero flag"]
+        BrTarget["Branch Target Adder<br/>PC + 4 + offset << 2"]
+    end
+
+    subgraph MEM["Memory Access"]
+        DataMem["Data Memory<br/>read: MemRead=1<br/>write: MemWrite=1"]
+    end
+
+    subgraph WB["Write Back"]
+        RegWrite["Register Write<br/>RegWrite signal<br/>enables write"]
+    end
+
+    subgraph Ctrl["Control Unit"]
+        MainCtrl["Main Control<br/>decodes opcode<br/>generates: RegWrite,<br/>MemRead, MemWrite,<br/>ALUSrc, MemtoReg,<br/>Branch, ALUOp"]
+        ALUCtrl["ALU Control<br/>maps ALUOp + funct<br/>to 3-bit ALU select"]
+    end
+
+    PC --> InstMem
+    PC --> PCAdd
+    InstMem --> RegFile
+    InstMem --> SE
+    InstMem --> MainCtrl
+    RegFile --> ALUSrc
+    SE --> ALUSrc
+    ALUSrc --> ALU
+    RegFile --> ALU
+    ALU --> DataMem
+    ALU --> MemtoReg
+    DataMem --> MemtoReg
+    MemtoReg --> RegFile
+    ALU --> PCSrc
+    BrTarget --> PCSrc
+    PCAdd --> PCSrc
+    PCSrc --> PC
+    MainCtrl --> ALUCtrl
+    ALUCtrl --> ALU
+    MainCtrl --> ALUSrc
+    MainCtrl --> MemtoReg
+    MainCtrl --> DataMem
+    MainCtrl --> RegFile
+    ALU --> ZeroFlag["Zero Flag<br/>to PCSrc"]
+    ZeroFlag --> PCSrc
+
+    ALUData["ALU Data Flow<br/>R-type: rs op rt → rd<br/>LW: base + offset → addr<br/>SW: base + offset → addr<br/>BEQ: rs - rt → Zero"]

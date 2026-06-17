@@ -1,0 +1,21 @@
+flowchart TB
+  SHARD[Database Sharding]
+  SHARD --> CONCEPT[Concept]
+  CONCEPT --> HORIZ[Horizontal Partitioning]
+  CONCEPT --> KEY[Shard Key]
+  CONCEPT --> DIST[Distribution Across Instances]
+
+  SHARD --> STRAT[Strategies]
+  STRAT --> MOD[Modulus / Hash]
+  STRAT --> RANGE[Range-Based]
+  STRAT --> DIR[Directory-Based]
+
+  SHARD --> IMPL[Spring Implementation]
+  IMPL --> RDS[AbstractRoutingDataSource]
+  IMPL --> TENANT[Tenant per Shard]
+  IMPL --> HIB[Multi-Tenancy Hibernate]
+
+  SHARD --> CHALL[Challenges]
+  CHALL --> REBAL[Re-balancing]
+  CHALL --> DIST_JOIN[Distributed Joins]
+  CHALL --> TX_CROSS[Cross-Shard Transactions]

@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Properties of Context-Free Languages Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/07-cfl.png)
+
 ### 7.1 Pumping Lemma for Context-Free Languages
 
 Just as regular languages have a pumping lemma, context-free languages have one too — but it's more complex because derivation trees provide two pumpable subtrees.

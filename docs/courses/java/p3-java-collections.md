@@ -17,6 +17,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Collections Framework Overview
 
+![Java Collections Framework - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/p3-java-collections.png)
+
 The **Java Collections Framework** (JCF) is a unified architecture for storing, retrieving, and manipulating groups of objects. It was introduced in JDK 1.2 and has been enhanced in every major release since. The framework provides:
 
 - **Interfaces**: Abstract data types representing collections

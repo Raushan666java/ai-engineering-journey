@@ -16,6 +16,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![RabbitMQ / AMQP Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/35-rabbitmq.png)
+
 ### 1. AMQP Core Concepts
 
 AMQP (Advanced Message Queuing Protocol) is a wire-level protocol for message-oriented middleware. RabbitMQ is the most popular AMQP broker.

@@ -18,6 +18,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. The Java Exception Hierarchy
 
+![Exception Handling and I/O - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/p4-exceptions-io.png)
+
 Java exceptions are objects representing abnormal conditions. The root class is `java.lang.Throwable`, with two major branches: `Error` and `Exception`.
 
 ### 1.1 Hierarchy Overview

@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 10.1 The Algorithm-Container Separation
 
+![STL Algorithms Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/10-stl-algorithms.png)
+
 STL algorithms operate on iterator ranges rather than containers directly. This decoupling means a single algorithm works across `vector`, `list`, `deque`, `array`, and built-in arrays:
 
 ```cpp

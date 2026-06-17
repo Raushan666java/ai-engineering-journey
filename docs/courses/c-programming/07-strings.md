@@ -8,6 +8,8 @@
 - Process strings character by character
 - Understand null-termination and its pitfalls
 
+![C Strings: string.h Library, I/O, and Common Pitfalls](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-07-strings.png)
+
 ## 7.1 String Fundamentals
 
 In C, a string is a sequence of characters terminated by a null character (`'\0'`, ASCII value 0). There is no dedicated string type — strings are stored in `char` arrays.

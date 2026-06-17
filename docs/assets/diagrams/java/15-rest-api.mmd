@@ -1,0 +1,53 @@
+flowchart TB
+  REST[REST API Spring MVC]
+
+  REST --> CTRL[Controller Layer]
+  CTRL --> RC[RestController]
+  CTRL --> RM[RequestMapping]
+  RM --> GET[GetMapping]
+  RM --> POST[PostMapping]
+  RM --> PUT[PutMapping]
+  RM --> DEL[DeleteMapping]
+  RM --> PATCH[PatchMapping]
+
+  REST --> PARAMS[Parameter Extraction]
+  PARAMS --> PV[PathVariable]
+  PARAMS --> RP[RequestParam]
+  PARAMS --> RH[RequestHeader]
+  PARAMS --> RB[RequestBody]
+  PARAMS --> RA[RequestAttribute]
+  PARAMS --> MV[MatrixVariable]
+
+  REST --> RESP[Response Building]
+  RESP --> RS[ResponseStatus]
+  RESP --> RE[ResponseEntity]
+  RESP --> RSE[ResponseStatusException]
+  RESP --> HEADERS[HttpHeaders]
+
+  REST --> CONEG[Content Negotiation]
+  CONEG --> CN[ContentNegotiationConfigurer]
+  CONEG --> JSON[JSON]
+  CONEG --> XML[XML]
+
+  REST --> HATEOAS[Spring HATEOAS]
+  HATEOAS --> RMOD[RepresentationModel]
+  HATEOAS --> EM[EntityModel]
+  HATEOAS --> CM[CollectionModel]
+  HATEOAS --> LINK[Link / WebMvcLinkBuilder]
+
+  REST --> CORS[CORS Configuration]
+  CORS --> CROSS[CrossOrigin]
+  CORS --> GCC[GlobalCorsConfiguration]
+
+  REST --> VERSION[API Versioning]
+  VERSION --> URI[URI Path]
+  VERSION --> PARAM[Parameter]
+  VERSION --> HEADER[Header]
+  VERSION --> CT[Content Type]
+
+  REST --> BEST[REST Best Practices]
+  BEST --> PAGIN[Pagination / Pageable]
+  BEST --> SORT[Sorting]
+  BEST --> FILTER[Filtering]
+  BEST --> ETAG[ETags]
+  BEST --> IDEMP[Idempotency]

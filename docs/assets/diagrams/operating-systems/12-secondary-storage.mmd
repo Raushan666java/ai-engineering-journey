@@ -1,0 +1,46 @@
+flowchart TB
+    subgraph Disk_Structure["Disk Hardware"]
+        Platters["Platters<br/>Magnetic coating"]
+        Tracks["Tracks<br/>Concentric circles"]
+        Sectors["Sectors<br/>512B - 4KB"]
+        Cylinders["Cylinders<br/>Same radius all platters"]
+        Heads["Read/Write Heads<br/>on actuator arm"]
+    end
+
+    subgraph Access_Time["Access Time"]
+        Seek["Seek Time<br/>3-15 ms (dominant)"]
+        Rotation["Rotational Latency<br/>Avg half rotation"]
+        Transfer["Transfer Time<br/>Negligible"]
+    end
+
+    subgraph Scheduling["Disk Scheduling Algorithms"]
+        FCFS["FCFS<br/>Fair but wild arm movement"]
+        SCAN["SCAN<br/>Elevator algorithm"]
+        CSCAN["C-SCAN<br/>Uniform waiting time"]
+        LOOK["LOOK<br/>Only goes as far as requests"]
+        CLOOK["C-LOOK<br/>Uniform + efficient"]
+    end
+
+    subgraph RAID["RAID Levels"]
+        RAID0["RAID 0<br/>Striping, no redundancy"]
+        RAID1["RAID 1<br/>Mirroring, 50% capacity"]
+        RAID5["RAID 5<br/>Striping + parity<br/>One disk failure"]
+        RAID6["RAID 6<br/>Dual parity<br/>Two disk failures"]
+        RAID10["RAID 10<br/>Mirror + stripe<br/>Excellent"]
+    end
+
+    subgraph Management["Disk Management"]
+        LowFormat["Low-level formatting<br/>Factory"]
+        Partitioning["Partitioning<br/>MBR / GPT"]
+        LogicalFormat["Logical formatting<br/>File system creation"]
+        BadBlocks["Bad Block Mgmt<br/>Sector sparing/slipping"]
+    end
+
+    Seek --> Access_Time
+    Rotation --> Access_Time
+    Scheduling --> Access_Time
+    RAID0 --> RAID
+    RAID1 --> RAID
+    RAID5 --> RAID
+    RAID6 --> RAID
+    RAID10 --> RAID

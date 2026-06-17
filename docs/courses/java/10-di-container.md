@@ -27,6 +27,8 @@ By the end of this chapter you should be able to:
 
 ## ApplicationContext — The Container Itself
 
+![Dependency Injection & IoC Container](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/10-di-container.png)
+
 `ApplicationContext` is the central interface to the Spring IoC container. It extends `BeanFactory` (the actual bean factory) and adds enterprise features: internationalization (`MessageSource`), event publication (`ApplicationEventPublisher`), resource loading (`ResourceLoader`), and environment abstraction (`Environment`).
 
 ### ClassPathXmlApplicationContext (XML Metadata)

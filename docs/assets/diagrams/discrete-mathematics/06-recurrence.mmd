@@ -1,0 +1,36 @@
+flowchart TD
+    RR[Recurrence Relations] --> DEF[Definitions]
+    RR --> SOL[Solution Methods]
+    RR --> HOM[Linear Homogeneous]
+    RR --> NON[Nonhomogeneous]
+    RR --> GF[Generating Functions]
+    RR --> ALG[Algorithm Analysis]
+
+    DEF --> D1[Recurrence relation]
+    DEF --> D2[Initial conditions]
+    DEF --> D3[Solution sequence]
+    DEF --> D4[Example: Fibonacci]
+
+    SOL --> S1[Iteration forward substitution]
+    SOL --> S2[Backward substitution]
+    SOL --> S3[Prove pattern by induction]
+
+    HOM --> H1["Form: an = c1 an-1 + ... + ck an-k"]
+    HOM --> H2[Characteristic equation]
+    HOM --> H3[Distinct roots case]
+    HOM --> H4[Repeated roots case]
+
+    NON --> N1["Form: add fn term"]
+    N1 --> N2[Homogeneous part anh]
+    N1 --> N3[Particular part anp]
+    N3 --> N4[Polynomial fn]
+    N3 --> N5[Exponential fn]
+
+    GF --> G1["Gx = sum an x^n"]
+    G1 --> G2[Transform recurrence]
+    G1 --> G3[Solve for Gx]
+    G1 --> G4[Extract coefficients]
+
+    ALG --> A1["Linear search: Tn = Tn-1 + 1"]
+    ALG --> A2["Binary search: Tn = Tn/2 + 1"]
+    ALG --> A3["Merge sort: Tn = 2Tn/2 + n"]

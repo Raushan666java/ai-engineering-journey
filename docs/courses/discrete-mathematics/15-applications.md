@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Applications of Discrete Mathematics Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/15-applications.png)
+
 After completing this chapter, you will be able to:
 
 - Apply coding theory concepts (error detection and correction codes)

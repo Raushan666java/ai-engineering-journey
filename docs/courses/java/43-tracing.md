@@ -14,6 +14,8 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
+![Distributed Tracing - Micrometer, Zipkin, OpenTelemetry](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/43-tracing.png)
+
 ### Distributed Tracing
 
 Distributed tracing tracks requests as they flow through multiple microservices. Each request is assigned a **traceId** that propagates across service boundaries. Within each service, units of work are represented as **spans** with their own **spanId** and optional **parentId**.

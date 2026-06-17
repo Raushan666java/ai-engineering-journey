@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Union-Find Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch18-union-find.png)
+
 ### Disjoint Set Union (DSU)
 
 The DSU data structure maintains a collection of disjoint (non-overlapping) sets. Each set is identified by a representative element (the root). Two operations:

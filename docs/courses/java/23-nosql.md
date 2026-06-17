@@ -24,6 +24,8 @@ By the end of this chapter you should be able to:
 
 ## MongoDB with Spring Data
 
+![Spring Data NoSQL Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/23-nosql.png)
+
 MongoDB is a document-oriented NoSQL database that stores data in BSON (Binary JSON) documents. Spring Data MongoDB maps Java objects to MongoDB documents with annotations and provides both repository-level abstractions and a lower-level `MongoTemplate`.
 
 ### Setup

@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 1.1 C++ as an Evolutionary Superset of C
 
+![C++ Introduction Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/01-introduction.png)
+
 C++ was designed by Bjarne Stroustrup beginning in 1979 as "C with Classes." The language retains full backward compatibility with C while adding support for object-oriented programming, generic programming, and a rich standard library. The fundamental difference is philosophical: C gives the programmer enough rope to hang themselves; C++ adds guardrails without removing the rope entirely.
 
 In C, the programmer manually manages every aspect of program behaviour—memory allocation, string handling, I/O buffering. C++ introduces abstractions that encode these patterns into reusable, type-safe constructs. For example, where C uses `printf` with format specifiers that are checked only at runtime, C++ provides type-safe I/O streams resolved at compile time.

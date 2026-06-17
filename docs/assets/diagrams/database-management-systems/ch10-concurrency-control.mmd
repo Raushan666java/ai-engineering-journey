@@ -1,0 +1,35 @@
+flowchart TD
+    A[Concurrency Control] --> B[Lock-Based Protocols]
+    A --> C[Timestamp-Based Protocols]
+    A --> D[Optimistic Protocols]
+    A --> E[MVCC]
+
+    B --> F[Shared S lock]
+    B --> G[Exclusive X lock]
+    B --> H[Lock compatibility matrix]
+    B --> I[Two-Phase Locking 2PL]
+    I --> J[Growing phase acquire]
+    I --> K[Shrinking phase release]
+    I --> L[Strict 2PL]
+    I --> M[Rigorous 2PL]
+
+    N[Deadlock] --> O[Detection wait-for graph]
+    N --> P[Prevention timeout]
+    N --> Q[Victim selection]
+
+    C --> R[TS ordering]
+    R --> S[Wound-wait]
+    R --> T[Wait-die]
+
+    D --> U[Read phase]
+    D --> V[Validation phase]
+    D --> W[Write phase]
+
+    E --> X[Snapshot Isolation]
+    E --> Y[Write-write conflict detection]
+    E --> Z[No read-locks needed]
+    E --> AA[Used by PostgreSQL Oracle]
+
+    AB[Serializability] --> AC[Conflict serializable]
+    AB --> AD[View serializable]
+    AB --> AE[Precedence graph test]

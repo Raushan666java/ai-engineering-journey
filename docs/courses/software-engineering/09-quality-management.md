@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the principl
 
 ## Theory
 
+![Quality Management Framework](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-09-quality-management.png)
+
 ### The Concept of Software Quality
 
 Software quality has been defined in multiple ways. The transcendental view sees quality as something that can be recognised but not defined. The user view sees quality as fitness for purpose. The manufacturing view sees quality as conformance to specification. The product view sees quality as the presence of desirable attributes. The value-based view sees quality as the degree to which a product provides value for its cost.

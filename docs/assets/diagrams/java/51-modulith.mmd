@@ -1,0 +1,35 @@
+flowchart TB
+  MOD[Spring Modulith]
+  MOD --> CONCEPT[Key Concepts]
+  CONCEPT --> MM[Modular Monolith]
+  CONCEPT --> BOUND[Module Boundaries]
+  CONCEPT --> EVENT[Event-Driven]
+
+  MOD --> MODULE[Application Module]
+  MODULE --> AM[ApplicationModule Annotation]
+  MODULE --> VERIFY[Module Verification]
+  VERIFY --> STRICT[Strict Verification Test]
+  VERIFY --> DEP[Module Dependency Check]
+
+  MOD --> TEST[Testing]
+  TEST --> AMT[ApplicationModuleTest]
+  TEST --> SLICE[Module Slice Test]
+
+  MOD --> COMM[Module Communication]
+  COMM --> INT[Internal Events]
+  COMM --> PUB[Event Publication]
+  COMM --> LIST[Event Listeners]
+
+  MOD --> DOC[Documentation]
+  DOC --> STR[Structure Diagrams]
+  DOC --> MAP[Module Map]
+
+  MOD --> DDD[DDD Integration]
+  DDD --> AGG[Aggregate]
+  DDD --> REPO[Repository]
+  DDD --> SRV[Domain Service]
+
+  MOD --> MIG[Migration Path]
+  MIG --> EXTR[Module Extraction]
+  MIG --> API[Contract-First API]
+  MIG --> EVOL[Evolution Strategy]

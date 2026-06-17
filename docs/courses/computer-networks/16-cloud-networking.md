@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Cloud Networking](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch16-cloud-networking.png)
+
 1. Describe the architecture of Virtual Private Clouds and network isolation mechanisms.
 2. Compare load balancer types: Application Load Balancer, Network Load Balancer, and classic load balancer.
 3. Explain content delivery network operation and its impact on latency.

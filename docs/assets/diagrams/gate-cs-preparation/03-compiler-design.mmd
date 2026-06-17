@@ -1,0 +1,38 @@
+flowchart LR
+    subgraph Phase1[Lexical Analysis]
+        L1[Source Code] --> L2[Token Stream]
+        L2 --> L3[Lexical Errors]
+    end
+
+    subgraph Phase2[Syntax Analysis]
+        L3 --> P1[Parse Tree]
+        P1 --> P2[Syntax Errors]
+    end
+
+    subgraph Phase3[Semantic Analysis]
+        P2 --> S1[Type Checking]
+        S1 --> S2[Semantic Errors]
+    end
+
+    subgraph Phase4[Intermediate Code]
+        S2 --> I1[Three-Address Code]
+    end
+
+    subgraph Phase5[Code Optimization]
+        I1 --> O1[Optimized IR]
+        O1 --> O2[Dead Code Elimination]
+        O2 --> O3[Constant Folding]
+    end
+
+    subgraph Phase6[Code Generation]
+        O3 --> G1[Target Code]
+        G1 --> G2[Machine Code]
+    end
+
+    style L1 fill:#4a90d9
+    style L2 fill:#4a90d9
+    style P1 fill:#50b86c
+    style S1 fill:#e6a23c
+    style I1 fill:#f56c6c
+    style O1 fill:#909399
+    style G1 fill:#b37feb

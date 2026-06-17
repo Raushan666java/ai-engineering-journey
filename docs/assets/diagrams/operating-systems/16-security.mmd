@@ -1,0 +1,41 @@
+flowchart TB
+    subgraph Goals["Security Goals"]
+        Confidentiality["Confidentiality<br/>Data accessible to authorized only"]
+        Integrity["Integrity<br/>No unauthorized modification"]
+        Availability["Availability<br/>Accessible when needed"]
+        Authentication["Authentication<br/>Verify identity"]
+    end
+
+    subgraph Authentication_Methods["Authentication"]
+        Password["Password-based<br/>Hashed + salted"]
+        TwoFA["Two-Factor<br/>Know + Have + Are"]
+        Biometrics["Biometrics<br/>Fingerprint, face"]
+    end
+
+    subgraph Access_Control["Access Control"]
+        DAC["DAC<br/>Owner decides<br/>Unix rwx model"]
+        MAC["MAC<br/>System-wide policy<br/>SELinux"]
+        RBAC["RBAC<br/>Roles assigned permissions"]
+        ACL["ACL<br/>Extended permissions"]
+    end
+
+    subgraph Defenses["Defense Mechanisms"]
+        Stack_Canary["Stack Canaries<br/>Guard values on stack"]
+        ASLR["ASLR<br/>Randomize address layout"]
+        NX["NX Bit<br/>No-execute on data pages"]
+        LSM["LSM Framework<br/>SELinux / AppArmor"]
+        Capabilities["Linux Capabilities<br/>Fine-grained privileges"]
+        Namespaces["Namespaces<br/>Container isolation"]
+    end
+
+    subgraph Vulnerabilities["Common Vulnerabilities"]
+        BufferOverflow["Buffer Overflow"]
+        TOCTOU["Race Conditions TOCTOU"]
+        FormatString["Format String Attacks"]
+        PrivEsc["Privilege Escalation<br/>Vertical / Horizontal"]
+    end
+
+    Goals --> Authentication_Methods
+    Goals --> Access_Control
+    Access_Control --> Defenses
+    Vulnerabilities --> Defenses

@@ -1,3 +1,5 @@
+![Database Sharding - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/59-interview-databases-c.png)
+
 ### Q16: How do you implement auditing (created_at, updated_at) in JPA?
 
 **Answer:**

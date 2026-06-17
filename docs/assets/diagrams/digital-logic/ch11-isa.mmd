@@ -1,0 +1,59 @@
+mindmap
+  root(("Instruction Set<br/>Architecture"))
+    ISA_Definition
+      Programmer-Visible_State
+      Instruction_Formats
+      Addressing_Modes
+      Contract_between_Software_and_Hardware
+    MIPS_ISA
+      R-Type
+        opcode_000000
+        rs_rt_rd
+        shamt_funct
+        Example: ADD_rd_rs_rt
+      I-Type
+        opcode
+        rs_rt
+        immediate_16bit
+        Example: LW_LW_ADDI
+      J-Type
+        opcode
+        target_26bit
+        Example: J_JAL
+    Addressing_Modes
+      Register_Operand
+      Immediate_Operand
+      Base_Displacement
+      PC_Relative
+      Register_Indirect
+      Direct_Absolute
+    Instruction_Types
+      Arithmetic
+        ADD_SUB_ADDI_MUL_DIV
+      Logical
+        AND_OR_XOR_NOR_Shift
+      Data_Transfer
+        Load: LW_LH_LB
+        Store: SW_SH_SB
+      Control_Transfer
+        Branch: BEQ_BNE_BLEZ
+        Jump: J_JR_JAL
+      System
+        NOP_SYSCALL_BREAK
+    Calling_Convention
+      R0: Zero
+      R2_R3: Return_Values
+      R4_R7: Arguments_a0_a3
+      R8_R15: Temporaries_t0_t7
+      R16_R23: Saved_s0_s7
+      R29: Stack_Pointer
+      R31: Return_Address
+    Design_Tradeoffs
+      Opcode_Width_vs_Operands
+      Register_Count_vs_Encoding
+      Immediate_Width
+      Orthogonality
+    RISC-V
+      Open_Source_ISA
+      Compressed_Instructions_RVC
+      Modular_Extensions_M_A_F_D_C

@@ -2,6 +2,8 @@
 
 This chapter covers 35+ essential Spring and Spring Boot interview questions from DI/IoC and bean lifecycle through auto-configuration, MVC, data access, security, transactions, and testing. Each answer includes complete, compilable code examples targeting senior-level backend interviews.
 
+![Spring & Spring Boot Interview Topics - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/57-interview-spring.png)
+
 ### Q1: What types of dependency injection does Spring support?
 
 **Answer:** Spring supports three DI types: constructor injection (recommended), setter injection, and field injection. Constructor injection ensures required dependencies are present at creation and enables immutable fields. Setter injection for optional dependencies. Field injection is discouraged due to testability issues and hidden dependencies.

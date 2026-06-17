@@ -18,6 +18,8 @@ This single starter pulls in JUnit 5, Mockito, AssertJ, Hamcrest, JSON Assert, a
 
 ## Learning Objectives
 
+![Spring Boot Testing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/ch31-spring-boot-test.png)
+
 By the end of this chapter you will be able to:
 
 - Bootstrap a full Spring application context for integration testing using `@SpringBootTest`

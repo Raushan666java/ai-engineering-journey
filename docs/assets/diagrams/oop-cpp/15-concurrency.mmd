@@ -1,0 +1,35 @@
+flowchart TD
+    A[C++ Concurrency] --> B[std::thread]
+    A --> C[Synchronization]
+    A --> D[std::async / std::future]
+    A --> E[std::atomic]
+
+    B --> F[Create with callable]
+    B --> G[join / detach]
+    B --> H[Hardware concurrency]
+
+    C --> I[std::mutex]
+    C --> J[std::lock_guard]
+    C --> K[std::unique_lock]
+    C --> L[std::condition_variable]
+
+    I --> M[lock / unlock]
+    M --> N[Beware deadlock]
+
+    J --> O[RAII wrapper]
+    O --> P[Lock on construction]
+
+    K --> Q[Deferred locking]
+    K --> R[Movable lock]
+
+    L --> S[wait / notify_one / notify_all]
+    S --> T[Spurious wakeup handling]
+
+    D --> U[std::async launch policy]
+    U --> V[std::launch::async]
+    U --> W[std::launch::deferred]
+    D --> X[std::future get / wait]
+    D --> Y[std::promise set_value]
+
+    E --> Z[Lock-free operations]
+    Z --> AA[load / store / exchange / CAS]

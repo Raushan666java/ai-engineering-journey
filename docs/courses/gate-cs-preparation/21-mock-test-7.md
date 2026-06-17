@@ -2,6 +2,8 @@
 
 ## Exam Instructions
 
+![Mock Test 7 Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/21-mock-test-7.png)
+
 **Total Marks:** 100  
 **Duration:** 3 Hours  
 **Reading Time:** 10 minutes

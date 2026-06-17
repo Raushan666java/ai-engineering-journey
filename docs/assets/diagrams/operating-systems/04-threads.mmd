@@ -1,0 +1,26 @@
+flowchart TB
+    subgraph Thread_Basics["Thread Basics"]
+        Definition["Thread = basic CPU utilization unit<br/>TID + PC + registers + stack"]
+        vs_Process["vs Process: Shared address space<br/>10-100x faster creation<br/>Lightweight context switch"]
+    end
+
+    subgraph Types["Thread Types"]
+        ULT["User-Level Threads<br/>Thread library managed<br/>Microsecond switching<br/>Blocking blocks all threads"]
+        KLT["Kernel-Level Threads<br/>OS kernel managed<br/>True parallelism<br/>System call overhead"]
+    end
+
+    subgraph Models["Multithreading Models"]
+        ManyToOne["Many-to-One<br/>Many user -> 1 kernel<br/>No parallelism"]
+        OneToOne["One-to-One<br/>Each user -> 1 kernel<br/>True parallelism"]
+        ManyToMany["Many-to-Many<br/>Multiplexed mapping<br/>Best of both"]
+    end
+
+    subgraph Libraries["Libraries & Issues"]
+        Pthreads["POSIX Threads<br/>pthread_create/join/mutex"]
+        Issues["Threading Issues<br/>fork(), cancellation, signals"]
+        Pools["Thread Pools<br/>Fixed workers, reuse"]
+    end
+
+    Thread_Basics --> Types
+    Types --> Models
+    Models --> Libraries

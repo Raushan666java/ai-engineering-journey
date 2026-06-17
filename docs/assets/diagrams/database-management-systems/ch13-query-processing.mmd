@@ -1,0 +1,36 @@
+flowchart TD
+    A["SQL Query"] --> B["Parsing and Translation"]
+    B --> C["Parse tree"]
+    C --> D["Relational algebra expression"]
+
+    D --> E["Query Optimization"]
+    E --> F["Logical optimization"]
+    E --> G["Cost-based optimization"]
+    F --> H["Predicate pushdown"]
+    F --> I["Projection pushdown"]
+    F --> J["Join reordering"]
+    G --> K["Estimate cost using statistics"]
+    K --> L["Catalog stores table sizes indexes"]
+
+    M["Join Algorithms"] --> N["Nested Loop O(n x m)"]
+    M --> O["Block Nested Loop"]
+    M --> P["Indexed Nested Loop"]
+    M --> Q["Merge Join sorted input"]
+    M --> R["Hash Join"]
+
+    S["Evaluation Engine"] --> T["Iterator model"]
+    T --> U["Next pull based"]
+    T --> V["open forward slash next forward slash close"]
+
+    W["Pipelining"] --> X["Result producer"]
+    W --> Y["Consumer processes incrementally"]
+    W --> Z["Avoids materialization"]
+
+    AA["Materialization"] --> AB["Store intermediate results"]
+    AB --> AC["Expensive I/O"]
+    AB --> AD["Needed for certain operators"]
+
+    AE["EXPLAIN Plan"] --> AF["Read query plan"]
+    AF --> AG["Identify sequential scans"]
+    AF --> AH["Check join types"]
+    AF --> AI["Spot expensive nodes"]

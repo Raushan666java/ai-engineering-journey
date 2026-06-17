@@ -1,4 +1,4 @@
-# Chapter 22: Case Study — SaaS E-Commerce Platform
+﻿# Chapter 22: Case Study â€” SaaS E-Commerce Platform
 
 ---
 
@@ -13,7 +13,10 @@
 
 ---
 
-## Theory — End-to-End Design
+## Theory â€” End-to-End Design
+
+![E-Commerce Case Study](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/22-case-study-ecommerce.png)
+
 
 ### 6.1 Requirements Gathering
 
@@ -25,12 +28,12 @@ Before writing a single line of code, we must derive hard requirements from the 
 |---|---|
 | Multi-tenancy | Each store is a tenant. Tenants share the same codebase and database but see only their own data. |
 | Product catalog | Each store manages up to 100,000 SKUs with variants, images, categories, and SEO metadata. |
-| Order management | 10 million orders per year across all stores, with full lifecycle tracking (pending → confirmed → processing → shipped → delivered → returned). |
+| Order management | 10 million orders per year across all stores, with full lifecycle tracking (pending â†’ confirmed â†’ processing â†’ shipped â†’ delivered â†’ returned). |
 | Customer accounts | 1 million registered users who can maintain profiles, addresses, payment methods, and order history across multiple stores. |
 | Checkout pipeline | Cart persistence, payment processing (Stripe via Cashier), inventory reservation, order confirmation, and email notification. |
 | Product search | Full-text search across the entire catalog with faceted filtering, typo tolerance, and sorting by relevance, price, and recency. |
 | Real-time updates | Order status notifications broadcast to store dashboards and customer browsers via WebSockets. |
-| Uptime SLA | 99.9% availability (≈8.7 hours of downtime per year, ≈43 minutes per month). |
+| Uptime SLA | 99.9% availability (â‰ˆ8.7 hours of downtime per year, â‰ˆ43 minutes per month). |
 | Page load budget | 500ms server-side response time at p95 for all public-facing pages. |
 
 **Non-Functional Requirements**
@@ -49,52 +52,52 @@ Capacity estimation grounds architecture decisions in numbers rather than intuit
 
 **Traffic Estimation**
 
-10 million orders per year yields roughly 27,400 orders per day, or about 0.3 orders per second at the daily average. However, e-commerce traffic is bursty: Black Friday can produce 10–20× the daily average. We size for 10× peak.
+10 million orders per year yields roughly 27,400 orders per day, or about 0.3 orders per second at the daily average. However, e-commerce traffic is bursty: Black Friday can produce 10â€“20Ã— the daily average. We size for 10Ã— peak.
 
 ```
-Daily orders avg = 10,000,000 / 365 ≈ 27,397
-Orders per second avg = 27,397 / 86,400 ≈ 0.32
-Orders per second peak (10×) ≈ 3.2
+Daily orders avg = 10,000,000 / 365 â‰ˆ 27,397
+Orders per second avg = 27,397 / 86,400 â‰ˆ 0.32
+Orders per second peak (10Ã—) â‰ˆ 3.2
 
 Checkout involves ~10 database writes per order (order, items, payment, inventory, etc.)
-Write QPS peak ≈ 3.2 × 10 = 32 → round to 50 for headroom
+Write QPS peak â‰ˆ 3.2 Ã— 10 = 32 â†’ round to 50 for headroom
 
 Browsing-to-purchase ratio is typically 50:1 to 100:1
-Read QPS peak ≈ 32 × 6 = 192 → round to 200
+Read QPS peak â‰ˆ 32 Ã— 6 = 192 â†’ round to 200
 ```
 
 **Storage Estimation**
 
 ```
-Product records: 100,000 stores × 100 products avg = 10M products
-Each product record ≈ 2 KB → 20 GB
-Product images: 10M products × 3 images avg × 500 KB = 15 TB
-  → But we offload images to S3/CDN, database stores only URLs (~200 bytes) → 2 GB
+Product records: 100,000 stores Ã— 100 products avg = 10M products
+Each product record â‰ˆ 2 KB â†’ 20 GB
+Product images: 10M products Ã— 3 images avg Ã— 500 KB = 15 TB
+  â†’ But we offload images to S3/CDN, database stores only URLs (~200 bytes) â†’ 2 GB
 
-Order records: 10M orders/year × 2 KB + 3 items/order × 500 bytes = 20 GB/year + 15 GB/year
-Order growth at 10M/year → 35 GB/year
+Order records: 10M orders/year Ã— 2 KB + 3 items/order Ã— 500 bytes = 20 GB/year + 15 GB/year
+Order growth at 10M/year â†’ 35 GB/year
 
-Media (polymorphic): banners, logos, category images → estimate 500 GB/year stored on S3
-Database metadata for media → ~10 GB/year
+Media (polymorphic): banners, logos, category images â†’ estimate 500 GB/year stored on S3
+Database metadata for media â†’ ~10 GB/year
 
-Total database storage → ~60 GB/year (excluding images stored on S3)
-TOTAL external storage (S3 + CDN) → ~5 TB/year
+Total database storage â†’ ~60 GB/year (excluding images stored on S3)
+TOTAL external storage (S3 + CDN) â†’ ~5 TB/year
 ```
 
 **Memory Estimation**
 
 ```
-Hot products: Pareto principle — 20% of products get 80% of views.
-2M hot products × 2 KB each → 4 GB
+Hot products: Pareto principle â€” 20% of products get 80% of views.
+2M hot products Ã— 2 KB each â†’ 4 GB
 
 Active carts: Assume 5% of 1M users have active carts at any time
-50,000 carts × 5 KB each → 250 MB
+50,000 carts Ã— 5 KB each â†’ 250 MB
 
 Session data: 1M users, assume 10% active sessions
-100,000 sessions × 1 KB → 100 MB
+100,000 sessions Ã— 1 KB â†’ 100 MB
 
 Full-text search index: ~50 GB (Meilisearch stores inverted indexes in memory)
-Total cache + search memory ≈ 50 GB → justifies a dedicated Redis cluster + dedicated Meilisearch instance
+Total cache + search memory â‰ˆ 50 GB â†’ justifies a dedicated Redis cluster + dedicated Meilisearch instance
 ```
 
 ### 6.3 Data Model
@@ -297,9 +300,9 @@ Every business table carries a `tenant_id` column indexed for fast filtering. Th
 2. **Cross-tenant analytics**: the platform team can run aggregated queries.
 3. **Lower infrastructure cost**: no per-tenant database provisioning.
 
-The `media` table uses a polymorphic relationship (`mediable_type`, `mediable_id`) so that products, categories, brands, and CMS pages can all attach media without separate join tables. The `collection_name` column further groups media within a parent — e.g., a product might have an `images` collection and a `videos` collection.
+The `media` table uses a polymorphic relationship (`mediable_type`, `mediable_id`) so that products, categories, brands, and CMS pages can all attach media without separate join tables. The `collection_name` column further groups media within a parent â€” e.g., a product might have an `images` collection and a `videos` collection.
 
-The `inventory_movements` table is an append-only ledger. Every stock change—reservation, confirmation, release, restock, adjustment—is recorded with before/after quantities. This gives us a full audit trail and enables point-in-time inventory reconstruction.
+The `inventory_movements` table is an append-only ledger. Every stock changeâ€”reservation, confirmation, release, restock, adjustmentâ€”is recorded with before/after quantities. This gives us a full audit trail and enables point-in-time inventory reconstruction.
 
 ### 6.4 Multi-Tenant Middleware and Scoping
 
@@ -576,7 +579,7 @@ class OrderService
             throw $e;
         }
 
-        // 6. Process payment (outside transaction — payment gateway is idempotent)
+        // 6. Process payment (outside transaction â€” payment gateway is idempotent)
         $payment = $this->paymentService->charge($order, $checkoutData['payment_method_id']);
 
         // 7. Update order status on success
@@ -755,7 +758,7 @@ class InventoryService
             }
         }
 
-        // All checks passed — reserve atomically
+        // All checks passed â€” reserve atomically
         foreach ($cartItems as $item) {
             $redis->hincrby(
                 $this->reservationKey($tenantId),
@@ -1160,62 +1163,62 @@ Cache::tags(["tenant:{$tenantId}", 'products'])->flush();
 The full system follows a layered, horizontally scalable topology.
 
 ```
-┌──────────────────────────────────────────────────────────────────────────┐
-│                           Cloudflare CDN                                 │
-│                      (static assets, image resize)                       │
-└──────────────────────────────────────────────────────────────────────────┘
-                                    │
-                            ┌───────┴───────┐
-                            │   Load Balancer│  (AWS ALB / DigitalOcean LB)
-                            └───────┬───────┘
-                                    │
-                    ┌───────────────┼───────────────┐
-                    │               │               │
-            ┌───────┴───────┐ ┌───┴───────┐ ┌───────┴───────┐
-            │   Web Node 1  │ │ Web Node 2│ │   Web Node N  │
-            │  (Octane/Road) │ │(Octane/Rd)│ │  (Octane/Rd)  │
-            └───────┬───────┘ └───┬───────┘ └───────┬───────┘
-                    │               │               │
-                    └───────────────┼───────────────┘
-                                    │
-                    ┌───────────────┴───────────────┐
-                    │        Redis Cluster           │
-                    │  ┌─────────────────────────┐  │
-                    │  │ Session / Cache / Cart   │  │
-                    │  │ Inventory Reservation    │  │
-                    │  └─────────────────────────┘  │
-                    └───────────────┬───────────────┘
-                                    │
-                    ┌───────────────┴───────────────┐
-                    │       MySQL (Galera/RDS)       │
-                    │  ┌─────────────────────────┐  │
-                    │  │  Orders / Products /     │  │
-                    │  │  Users / Tenants         │  │
-                    │  └─────────────────────────┘  │
-                    └───────────────┬───────────────┘
-                                    │
-                    ┌───────────────┴───────────────┐
-                    │       Queue Workers            │
-                    │  (Horizon — order fulfillment, │
-                    │   email, search indexing,      │
-                    │   analytics)                    │
-                    └───────────────┬───────────────┘
-                                    │
-                    ┌───────────────┴───────────────┐
-                    │       Reverb (WebSocket)       │
-                    │  ┌─────────────────────────┐  │
-                    │  │ Real-time order status,  │  │
-                    │  │ dashboard updates        │  │
-                    │  └─────────────────────────┘  │
-                    └───────────────┬───────────────┘
-                                    │
-                    ┌───────────────┴───────────────┐
-                    │       Meilisearch              │
-                    │  ┌─────────────────────────┐  │
-                    │  │ Per-tenant product       │  │
-                    │  │ search indexes           │  │
-                    │  └─────────────────────────┘  │
-                    └───────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                           Cloudflare CDN                                 â”‚
+â”‚                      (static assets, image resize)                       â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                            â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”
+                            â”‚   Load Balancerâ”‚  (AWS ALB / DigitalOcean LB)
+                            â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚               â”‚               â”‚
+            â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”
+            â”‚   Web Node 1  â”‚ â”‚ Web Node 2â”‚ â”‚   Web Node N  â”‚
+            â”‚  (Octane/Road) â”‚ â”‚(Octane/Rd)â”‚ â”‚  (Octane/Rd)  â”‚
+            â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+                    â”‚               â”‚               â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚        Redis Cluster           â”‚
+                    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+                    â”‚  â”‚ Session / Cache / Cart   â”‚  â”‚
+                    â”‚  â”‚ Inventory Reservation    â”‚  â”‚
+                    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚       MySQL (Galera/RDS)       â”‚
+                    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+                    â”‚  â”‚  Orders / Products /     â”‚  â”‚
+                    â”‚  â”‚  Users / Tenants         â”‚  â”‚
+                    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚       Queue Workers            â”‚
+                    â”‚  (Horizon â€” order fulfillment, â”‚
+                    â”‚   email, search indexing,      â”‚
+                    â”‚   analytics)                    â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚       Reverb (WebSocket)       â”‚
+                    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+                    â”‚  â”‚ Real-time order status,  â”‚  â”‚
+                    â”‚  â”‚ dashboard updates        â”‚  â”‚
+                    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                                    â”‚
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚       Meilisearch              â”‚
+                    â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+                    â”‚  â”‚ Per-tenant product       â”‚  â”‚
+                    â”‚  â”‚ search indexes           â”‚  â”‚
+                    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Architecture Decisions**
@@ -1247,11 +1250,11 @@ The full system follows a layered, horizontally scalable topology.
 
 - Multi-tenant e-commerce requires careful schema design with a `tenant_id` discriminator column on every business table and a global Eloquent scope to enforce isolation.
 - Capacity estimation grounds architectural decisions in data: read QPS of ~200, write QPS of ~50, ~5TB storage per year, and ~50GB Redis cache working set.
-- The checkout pipeline is a multi-step distributed transaction: Redis cart → inventory reservation → DB transaction (order + items + inventory) → payment gateway → confirmation job. Failure at any step releases reservations.
+- The checkout pipeline is a multi-step distributed transaction: Redis cart â†’ inventory reservation â†’ DB transaction (order + items + inventory) â†’ payment gateway â†’ confirmation job. Failure at any step releases reservations.
 - Inventory management uses a two-layer approach: fast Redis reservations for concurrency safety during checkout, and a MySQL ledger (`inventory_movements`) for authoritative audit trail.
 - Product search uses Laravel Scout with Meilisearch. Per-tenant indexes provide data isolation. Faceted filters (category, price, color, size) and sort options are passed through Meilisearch's filter and sort parameters.
 - Multi-tenant caching uses prefixed keys (`tenant:{id}:{key}`), Redis namespaces, and tag-based flushing to prevent cross-tenant cache pollution.
-- The system architecture follows a layered topology: CDN → Load Balancer → Octane web nodes → Redis → MySQL → Queue Workers → Reverb → Meilisearch. Each layer scales independently.
+- The system architecture follows a layered topology: CDN â†’ Load Balancer â†’ Octane web nodes â†’ Redis â†’ MySQL â†’ Queue Workers â†’ Reverb â†’ Meilisearch. Each layer scales independently.
 - Real-time order status updates are broadcast via Reverb over tenant-scoped and user-scoped channels.
 
 ---

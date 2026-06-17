@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Secondary Storage](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/12-secondary-storage.png)
+
 ### Disk Structure
 
 Magnetic hard disk drives (HDDs) consist of:

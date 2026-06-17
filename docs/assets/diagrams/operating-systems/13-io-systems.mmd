@@ -1,0 +1,41 @@
+flowchart TB
+    subgraph IO_Hardware["I/O Hardware"]
+        PortMapped["Port-Mapped I/O<br/>IN/OUT instructions"]
+        MemMapped["Memory-Mapped I/O<br/>Load/store to device regs"]
+        Hybrid["Hybrid approach"]
+    end
+
+    subgraph Data_Transfer["Data Transfer Methods"]
+        Polling["Polling<br/>CPU busy-waits"]
+        Interrupts["Interrupt-Driven<br/>Device notifies CPU"]
+        DMA["Direct Memory Access<br/>DMA controller handles transfer"]
+    end
+
+    subgraph Kernel_IO["Kernel I/O Subsystem"]
+        IO_Sched["I/O Scheduling<br/>Request reordering"]
+        Buffering["Buffering<br/>Speed mismatch, copy semantics"]
+        Caching["Caching<br/>Page cache, buffer cache"]
+        Spooling["Spooling<br/>Serialize device access"]
+        Error_Handling["Error Handling<br/>Transient/Persistent/Fatal"]
+    end
+
+    subgraph Device_Driver["Device Driver Model"]
+        App["Application"]
+        Kernel_IF["Kernel I/O Subsystem"]
+        Driver["Device Driver<br/>Translation layer"]
+        Controller["Device Controller"]
+        Hardware["Hardware Device"]
+        App --> Kernel_IF --> Driver --> Controller --> Hardware
+    end
+
+    subgraph IO_Models["I/O Models"]
+        Blocking["Blocking I/O"]
+        NonBlocking["Non-Blocking I/O"]
+        Multiplexing["I/O Multiplexing<br/>select/poll/epoll"]
+        SignalDriven["Signal-Driven I/O"]
+        Async["Asynchronous I/O<br/>aio_read"]
+    end
+
+    Polling --> Data_Transfer
+    Interrupts --> Data_Transfer
+    DMA --> Data_Transfer

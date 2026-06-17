@@ -12,6 +12,8 @@
 
 ## Theory
 
+![SQL Joins and Subqueries Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch05-sql-joins.png)
+
 ### 5.1 Introduction to Joins
 
 Relational databases store data in normalized tables. To answer meaningful questions, we almost always need to combine data from multiple tables. A **join** combines rows from two or more tables based on a related column.

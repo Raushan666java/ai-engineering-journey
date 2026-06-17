@@ -2,6 +2,8 @@
 
 ## Learning Objectives
 
+![Proof Techniques Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/04-proofs.png)
+
 After completing this chapter, you will be able to:
 
 - Construct direct proofs of conditional statements

@@ -5,53 +5,177 @@ hide:
 description: "Raushan Kumar — AI Engineering Journey. Laravel developer transitioning to AI Engineering. 500+ lessons: LLMs, RAG, Agents, MCP, Transformer, GATE CS, placement prep, Java, system design."
 ---
 
+<div class="home-hero">
+
 # AI Engineering Journey
 
-> Laravel developer → AI Automation Engineer. 500+ lessons across 20 phases, one documented transition at a time.
+<p class="hero-tagline">Laravel developer → AI Automation Engineer. 500+ lessons across 20 phases, one documented transition at a time.</p>
 
----
+<div class="hero-stats">
+  <span class="hero-stat"><strong>28</strong> Courses</span>
+  <span class="hero-stat"><strong>500+</strong> Lessons</span>
+  <span class="hero-stat"><strong>20</strong> Phases</span>
+  <span class="hero-stat"><strong>570</strong> Diagrams</span>
+</div>
 
-## What You'll Find Here
+<div class="hero-ctas">
+  <a href="#course-catalog" class="hero-btn hero-btn-primary">Browse Courses</a>
+  <a href="ai-engineering-from-scratch/phases/00-setup-and-tooling/" class="hero-btn hero-btn-secondary">Start Learning</a>
+  <a href="about/" class="hero-btn hero-btn-ghost">About Me</a>
+</div>
 
-<div class="grid cards" markdown>
+</div>
 
--   :fontawesome-solid-brain:{ .lg .middle } __AI Engineering Phases__
+<div class="current-focus-banner">
 
-    ---
-
-    20 phases from math foundations to capstone projects. LLMs, RAG, agents, MCP, multi-modal, distributed inference, safety alignment — everything built from scratch.
-
-    [:octicons-arrow-right-24: Start with Phase 0](ai-engineering-from-scratch/phases/00-setup-and-tooling/)
-
--   :fontawesome-solid-book:{ .lg .middle } __CS Foundations__
-
-    ---
-
-    GATE CS preparation with PYQs, placement prep with DSA/SQL banks, system design case studies, and 16+ CS subjects taught at university level.
-
-    [:octicons-arrow-right-24: Browse Courses](courses/gate-cs-preparation/index.md)
-
--   :fontawesome-solid-code:{ .lg .middle } __Projects & Tools__
-
-    ---
-
-    Production AI systems I've built: ChromaDB Memory Server, WhatsApp AI agents, multi-tenant ERPs, and automated media pipelines.
-
-    [:octicons-arrow-right-24: View Projects](projects/)
+**Current Focus — Phase 10:** LLMs From Scratch (Tokenizers → Pretraining → SFT → DPO) · **Phase 14:** Agent Engineering (LangGraph, MCP, multi-agent)
 
 </div>
 
 ---
 
-## Currently Learning
+## AI Engineering Path
 
-!!! info ":fontawesome-solid-llm: Current Focus"
+<div class="grid cards" markdown>
 
-    **Phase 10 — LLMs From Scratch:** Tokenizers, pretraining, SFT, DPO, inference optimization, distributed parallelism.
+-   :fontawesome-solid-brain:{ .lg .middle } __Foundations (Phases 0–3)__
 
-    **Phase 14 — Agent Engineering:** LangGraph state machines, MCP protocol, tool use, verification gates, multi-agent orchestration.
+    ---
 
-    500+ lessons completed · 20 phases · Updated daily
+    Setup & tooling, math foundations, ML fundamentals, deep learning core. Building from first principles.
+
+    [:octicons-arrow-right-24: Start Here](ai-engineering-from-scratch/phases/00-setup-and-tooling/)
+
+-   :fontawesome-solid-eye:{ .lg .middle } __Vision & Language (Phases 4–5)__
+
+    ---
+
+    Computer vision from CNN to ViT, NLP from bag-of-words to Transformers. Full-stack AI foundations.
+
+    [:octicons-arrow-right-24: Explore](ai-engineering-from-scratch/phases/04-computer-vision/)
+
+-   :fontawesome-solid-microchip:{ .lg .middle } __Transformers & LLMs (Phases 6–10)__
+
+    ---
+
+    Speech/audio, Transformers deep-dive, generative AI, RL, LLMs from scratch. The core curriculum.
+
+    [:octicons-arrow-right-24: LLMs From Scratch](ai-engineering-from-scratch/phases/10-llms-from-scratch/)
+
+-   :fontawesome-solid-robot:{ .lg .middle } __Agents & Production (Phases 11–20)__
+
+    ---
+
+    LLM engineering, multimodal AI, MCP/A2A protocols, agent engineering, autonomous systems, safety alignment, capstone projects.
+
+    [:octicons-arrow-right-24: Agent Engineering](ai-engineering-from-scratch/phases/14-agent-engineering/)
+
+</div>
+
+---
+
+<h2 id="course-catalog">CS Foundations — Course Catalog</h2>
+
+<p class="section-subtitle">28 university-level courses across programming, CS theory, AI, infrastructure, and career preparation — each with Mermaid diagrams.</p>
+
+### Languages & Frameworks
+
+<div class="course-grid" markdown>
+
+-   <span class="course-icon">⚙️</span> __[C Programming](courses/c-programming/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">🧩</span> __[OOP C++](courses/oop-cpp/)__ <span class="course-chaps">16 ch</span>
+-   <span class="course-icon">🐍</span> __[Python Programming](courses/python-programming/)__ <span class="course-chaps">21 ch</span>
+-   <span class="course-icon">🌍</span> __[Web Development](courses/web-development/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">⚡</span> __[Laravel](courses/laravel/)__ <span class="course-chaps">61 ch</span>
+-   <span class="course-icon">☕</span> __[Java & Spring Boot](courses/java/)__ <span class="course-chaps">65 ch</span>
+
+</div>
+
+### Computer Science Core
+
+<div class="course-grid" markdown>
+
+-   <span class="course-icon">∑</span> __[Discrete Mathematics](courses/discrete-mathematics/)__ <span class="course-chaps">15 ch</span>
+-   <span class="course-icon">🔲</span> __[Digital Logic](courses/digital-logic/)__ <span class="course-chaps">15 ch</span>
+-   <span class="course-icon">🗃️</span> __[Data Structures](courses/data-structures/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">⚡</span> __[Algorithms](courses/algorithms/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">💻</span> __[Operating Systems](courses/operating-systems/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">🗄️</span> __[DBMS](courses/database-management-systems/)__ <span class="course-chaps">19 ch</span>
+-   <span class="course-icon">🌐</span> __[Computer Networks](courses/computer-networks/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">⚛️</span> __[Theory of Computation](courses/theory-of-computation/)__ <span class="course-chaps">15 ch</span>
+-   <span class="course-icon">🔄</span> __[Compiler Design](courses/compiler-design/)__ <span class="course-chaps">15 ch</span>
+-   <span class="course-icon">📋</span> __[Software Engineering](courses/software-engineering/)__ <span class="course-chaps">16 ch</span>
+
+</div>
+
+### AI & Machine Learning
+
+<div class="course-grid" markdown>
+
+-   <span class="course-icon">🤖</span> __[Artificial Intelligence](courses/artificial-intelligence/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">📊</span> __[Machine Learning](courses/machine-learning/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">🧠</span> __[Applied AI](courses/applied-ai/)__ <span class="course-chaps">4 ch</span>
+-   <span class="course-icon">🏗️</span> __[System Design](courses/system-design/)__ <span class="course-chaps">24 ch</span>
+
+</div>
+
+### Infrastructure & Security
+
+<div class="course-grid" markdown>
+
+-   <span class="course-icon">☁️</span> __[Cloud Computing](courses/cloud-computing/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">🔧</span> __[DevOps](courses/devops/)__ <span class="course-chaps">18 ch</span>
+-   <span class="course-icon">🔒</span> __[Cyber Security](courses/cyber-security/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">⛓️</span> __[Blockchain](courses/blockchain/)__ <span class="course-chaps">10 ch</span>
+-   <span class="course-icon">📊</span> __[Big Data](courses/big-data/)__ <span class="course-chaps">5 ch</span>
+
+</div>
+
+### Career & Exam Prep
+
+<div class="course-grid" markdown>
+
+-   <span class="course-icon">🎯</span> __[GATE CS Preparation](courses/gate-cs-preparation/)__ <span class="course-chaps">19 ch</span>
+-   <span class="course-icon">💼</span> __[Placement Preparation](courses/placement-preparation/)__ <span class="course-chaps">7 ch</span>
+-   <span class="course-icon">🧠</span> __[Learning How to Learn](courses/learning-how-to-learn/)__ <span class="course-chaps">10 ch</span>
+
+</div>
+
+---
+
+## Projects & Tools
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-solid-server:{ .lg .middle } __ChromaDB Memory Server__
+
+    ---
+
+    Persistent memory layer for AI agents using ChromaDB with semantic caching, hybrid search, and automatic embedding management.
+
+-   :fontawesome-solid-wifi:{ .lg .middle } __WhatsApp AI Agents__
+
+    ---
+
+    Multi-agent WhatsApp automation system for business workflows — lead capture, appointment booking, order tracking.
+
+-   :fontawesome-solid-building:{ .lg .middle } __Multi-Tenant ERP__
+
+    ---
+
+    Laravel-based ERP with tenant isolation, role-based access, dynamic form builder, reporting engine, and REST API.
+
+-   :fontawesome-solid-video:{ .lg .middle } __Automated Media Pipeline__
+
+    ---
+
+    AI-driven media processing: transcription, summarization, content moderation, and automated publishing workflows.
+
+</div>
+
+<div style="text-align:center;margin:1rem 0;">
+  <a href="projects/" class="hero-btn hero-btn-primary">View All Projects</a>
+</div>
 
 ---
 
@@ -69,35 +193,8 @@ Every algorithm here is written from scratch. Every project is deployed. Every m
 ---
 
 <div class="cta-row">
-<a href="about/" class="cta-primary">👤 About Me</a>
-<a href="resume/" class="cta-primary">📄 View Resume</a>
-<a href="https://github.com/Raushan666java" class="cta-secondary">💻 GitHub</a>
-<a href="https://linkedin.com/in/raushan-kumar-477465250" class="cta-secondary">💼 LinkedIn</a>
+  <a href="about/" class="cta-primary">👤 About Me</a>
+  <a href="resume/" class="cta-primary">📄 View Resume</a>
+  <a href="https://github.com/Raushan666java" class="cta-secondary">💻 GitHub</a>
+  <a href="https://linkedin.com/in/raushan-kumar-477465250" class="cta-secondary">💼 LinkedIn</a>
 </div>
-
-<style>
-.cta-row {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  margin: 1.5rem 0;
-}
-.cta-primary {
-  display: inline-block;
-  padding: 0.6rem 1.4rem;
-  background: var(--md-primary-fg-color);
-  color: #fff !important;
-  border-radius: 0.25rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-.cta-secondary {
-  display: inline-block;
-  padding: 0.6rem 1.4rem;
-  border: 1px solid var(--md-primary-fg-color);
-  color: var(--md-primary-fg-color) !important;
-  border-radius: 0.25rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-</style>

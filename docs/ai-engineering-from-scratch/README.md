@@ -6,15 +6,8 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-1a1a1a?style=flat-square&labelColor=fafaf5" alt="MIT License"></a>
   <a href="ROADMAP.md"><img src="https://img.shields.io/badge/lessons-503-3553ff?style=flat-square&labelColor=fafaf5" alt="503 lessons"></a>
   <a href="#contents"><img src="https://img.shields.io/badge/phases-20-3553ff?style=flat-square&labelColor=fafaf5" alt="20 phases"></a>
-  <a href="https://github.com/rohitg00/ai-engineering-from-scratch/stargazers"><img src="https://img.shields.io/github/stars/rohitg00/ai-engineering-from-scratch?style=flat-square&labelColor=fafaf5&color=3553ff" alt="GitHub stars"></a>
-  <a href="https://aiengineeringfromscratch.com"><img src="https://img.shields.io/badge/web-aiengineeringfromscratch.com-3553ff?style=flat-square&labelColor=fafaf5" alt="Website"></a>
+  <a href="https://github.com/Raushan666java/ai-engineering-journey/stargazers"><img src="https://img.shields.io/github/stars/Raushan666java/ai-engineering-journey?style=flat-square&labelColor=fafaf5&color=3553ff" alt="GitHub stars"></a>
 </p>
-
-## From the creator of [Agent Memory - #1 Persistent memory ⭐](https://github.com/rohitg00/agentmemory) <a href="https://github.com/rohitg00/agentmemory/stargazers"><img src="https://img.shields.io/github/stars/rohitg00/agentmemory?style=flat-square&labelColor=fafaf5&color=3553ff" alt="GitHub stars"></a> which naturally works with any agents or chat assistants.
-
-```
-░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
-```
 
 > **84% of students already use AI tools. Only 18% feel prepared to use them
 > professionally.** This curriculum closes that gap.
@@ -23,10 +16,6 @@
 > a reusable artifact: a prompt, a skill, an agent, an MCP server. Free, open source, MIT.
 >
 > You don't just learn AI. You build it. End-to-end. By hand.
-
-<!-- STATS:START (generated from site/stats.json by build.js — do not edit by hand) -->
-<p align="center"><sub><b>150,639</b> readers &nbsp;·&nbsp; <b>241,669</b> page views in the last 30 days &nbsp;·&nbsp; as of 2026-06-07</sub></p>
-<!-- STATS:END -->
 
 ## How this works
 
@@ -114,16 +103,16 @@ flowchart LR
 
 Three ways in. Pick one.
 
-**Option A — read.** Open any completed lesson on
-[aiengineeringfromscratch.com](https://aiengineeringfromscratch.com) or expand a phase under
+**Option A — read.** Open any completed lesson on the
+[AI Engineering Journey site](https://raushan666java.github.io/ai-engineering-journey/) or expand a phase under
 [Contents](#contents). No setup, no cloning.
 
 **Option B — clone and run.**
 
 ```bash
-git clone https://github.com/rohitg00/ai-engineering-from-scratch.git
-cd ai-engineering-from-scratch
-python phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
+git clone https://github.com/Raushan666java/ai-engineering-journey.git
+cd ai-engineering-journey
+python docs/ai-engineering-from-scratch/phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
 ```
 
 **Option C — find your level *(recommended)*.** Skip ahead intelligently. Inside Claude, Cursor, Codex, OpenClaw, Hermes, or any agent with the curriculum skills installed:
@@ -165,10 +154,10 @@ Other curricula end with *"congratulations, you learned X."* Each lesson here en
 
 <table>
 <tr>
-<th align="left" width="25%"><img src="site/assets/figures/001-a-prompts.svg" width="96" height="96" alt="FIG_001.A prompts"/><br/><sub>FIG_001 · A</sub><br/><b>PROMPTS</b></th>
-<th align="left" width="25%"><img src="site/assets/figures/001-b-skills.svg" width="96" height="96" alt="FIG_001.B skills"/><br/><sub>FIG_001 · B</sub><br/><b>SKILLS</b></th>
-<th align="left" width="25%"><img src="site/assets/figures/001-c-agents.svg" width="96" height="96" alt="FIG_001.C agents"/><br/><sub>FIG_001 · C</sub><br/><b>AGENTS</b></th>
-<th align="left" width="25%"><img src="site/assets/figures/001-d-mcp-servers.svg" width="96" height="96" alt="FIG_001.D MCP servers"/><br/><sub>FIG_001 · D</sub><br/><b>MCP SERVERS</b></th>
+<th align="left" width="25%"><br/><sub>FIG_001 · A</sub><br/><b>PROMPTS</b></th>
+<th align="left" width="25%"><br/><sub>FIG_001 · B</sub><br/><b>SKILLS</b></th>
+<th align="left" width="25%"><br/><sub>FIG_001 · C</sub><br/><b>AGENTS</b></th>
+<th align="left" width="25%"><br/><sub>FIG_001 · D</sub><br/><b>MCP SERVERS</b></th>
 </tr>
 <tr>
 <td valign="top">Paste into any AI assistant for expert-level help on a narrow task.</td>
@@ -958,9 +947,9 @@ The repo ships 388 skills and 99 prompts under `phases/**/outputs/`.
 detects your agent's skills directory automatically:
 
 ```bash
-npx skills add rohitg00/ai-engineering-from-scratch                       # every skill
-npx skills add rohitg00/ai-engineering-from-scratch --skill agent-loop    # one skill
-npx skills add rohitg00/ai-engineering-from-scratch --phase 14            # one phase
+npx skills add Raushan666java/ai-engineering-journey                       # every skill
+npx skills add Raushan666java/ai-engineering-journey --skill agent-loop    # one skill
+npx skills add Raushan666java/ai-engineering-journey --phase 14            # one phase
 ```
 
 `skills` writes to whichever directory your agent picks up: `.claude/skills/`,
@@ -1146,23 +1135,9 @@ relative links inside lesson docs.
 
 ## Sponsor the work
 
-Free, MIT-licensed, 503 lessons. The curriculum is maintained on sponsorship alone. Cash only.
-
-**Reach (verified 2026-05-14):** 55,593 monthly visitors · 90,709 page views · 7.5K stars ·
-Twitter/X is the #1 acquisition channel.
-
-**Current sponsors:** [CodeRabbit](https://coderabbit.link/rohit-ghumare) · [iii](https://iii.dev?utm_source=ai-engineering-from-scratch&utm_medium=readme&utm_campaign=sponsor)
-
-| Tier | $/mo | What you get |
-|------|------|---|
-| Backer | $25 | Name in BACKERS.md |
-| Bronze | $250 | Text-only row in README sponsor block + launch-day tweet |
-| Silver | $750 | Small logo in README + listed as one supported provider in API lessons |
-| Gold | $2,000 | Medium logo in README + sponsor page + quarterly X / LinkedIn co-feature |
-| Platinum | $5,000 | Hero logo above the fold + one dedicated integration lesson, max 1 partner |
-
-Full rate card, hard rules, pricing anchors, and reach data: [SPONSORS.md](SPONSORS.md).
-Sign up via [GitHub Sponsors](https://github.com/sponsors/rohitg00).
+Free, MIT-licensed curriculum maintained as a fork of the excellent
+[ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) by
+Rohit Ghumare. If this curriculum helps you, consider sponsoring the upstream project.
 
 ```
 ░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
@@ -1170,10 +1145,10 @@ Sign up via [GitHub Sponsors](https://github.com/sponsors/rohitg00).
 
 ## Star history
 
-<a href="https://star-history.com/#rohitg00/ai-engineering-from-scratch&Date">
+<a href="https://star-history.com/#Raushan666java/ai-engineering-journey&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=rohitg00/ai-engineering-from-scratch&type=Date&theme=dark">
-    <img alt="Star history" src="https://api.star-history.com/svg?repos=rohitg00/ai-engineering-from-scratch&type=Date" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Raushan666java/ai-engineering-journey&type=Date&theme=dark">
+    <img alt="Star history" src="https://api.star-history.com/svg?repos=Raushan666java/ai-engineering-journey&type=Date" width="100%">
   </picture>
 </a>
 
@@ -1181,13 +1156,12 @@ If this manual helped you, star the repo. It keeps the project alive.
 
 ## License
 
-MIT. Use it however you want — fork it, teach it, sell it, ship it. Attribution appreciated,
-not required.
-
-Maintained by [Rohit Ghumare](https://github.com/rohitg00) and the community.
+MIT. Upstream curriculum by [Rohit Ghumare](https://github.com/rohitg00).  
+Fork maintained by [Raushan Kumar](https://github.com/Raushan666java) as part of the
+[AI Engineering Journey](https://raushan666java.github.io/ai-engineering-journey/).
 
 <sub>
-  <a href="https://x.com/ghumare64">@ghumare64</a> &nbsp;·&nbsp;
-  <a href="https://aiengineeringfromscratch.com">aiengineeringfromscratch.com</a> &nbsp;·&nbsp;
-  <a href="https://github.com/rohitg00/ai-engineering-from-scratch/issues/new/choose">Report / Suggest</a>
+  <a href="https://github.com/Raushan666java">@Raushan666java</a> &nbsp;·&nbsp;
+  <a href="https://raushan666java.github.io/ai-engineering-journey/">AI Engineering Journey</a> &nbsp;·&nbsp;
+  <a href="https://github.com/Raushan666java/ai-engineering-journey/issues/new/choose">Report / Suggest</a>
 </sub>

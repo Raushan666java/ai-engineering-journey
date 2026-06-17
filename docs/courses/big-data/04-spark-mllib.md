@@ -26,15 +26,8 @@ spark = SparkSession.builder.appName("mllib-intro").getOrCreate()
 
 An ML Pipeline chains multiple Transformers and Estimators into a single workflow.
 
-```
-DataFrame → Transformer → DataFrame → Estimator → Model → DataFrame
-  (raw)      (feature    (transformed)  (fit)      (trained)   (predictions)
-              engineering)
+![ML Pipeline Architecture](../assets/images/diagrams/big-data/ch04-ml-pipeline.png)
 
-Pipeline = [Transformer, Estimator]
-PipelineModel = Pipeline.fit(trainingData)
-predictions = PipelineModel.transform(testData)
-```
 
 ## 4.3 Feature Engineering
 

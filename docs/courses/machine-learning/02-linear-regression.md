@@ -36,6 +36,8 @@ Gradient Descent is an iterative optimization algorithm used to find the minimum
 $$w_j := w_j - \alpha \frac{\partial}{\partial w_j} J(w_0, w_1)$$
 Where $\alpha$ is the learning rate. A large $\alpha$ may overshoot the minimum, while a small $\alpha$ will take too long to converge.
 
+![Gradient Descent Optimization](../assets/images/diagrams/machine-learning/ch02-gradient-descent.png)
+
 ### Multiple Linear Regression
 When we have more than one predictor variable, the model becomes:
 $$h_w(x) = w_0 + w_1x_1 + w_2x_2 + \dots + w_dx_d$$

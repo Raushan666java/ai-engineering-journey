@@ -1,0 +1,27 @@
+flowchart LR
+    subgraph Bagging["Bagging (Parallel)"]
+        D1["Training Data\nBootstrap Sample 1"] --> M1["Model 1\nDecision Tree"]
+        D2["Bootstrap Sample 2"] --> M2["Model 2\nDecision Tree"]
+        D3["Bootstrap Sample N"] --> M3["Model N\nDecision Tree"]
+        M1 --> Vote["Vote / Average"]
+        M2 --> Vote
+        M3 --> Vote
+        Vote --> Result1["Final Prediction"]
+    end
+
+    subgraph Boosting["Boosting (Sequential)"]
+        W1["Weighted Data 1"] --> B1["Model 1\nWeak Learner"]
+        B1 -->|"Errors weighted"| W2["Weighted Data 2"]
+        W2 --> B2["Model 2\nWeak Learner"]
+        B2 -->|"Errors weighted"| W3["Weighted Data 3"]
+        W3 --> B3["Model 3\nWeak Learner"]
+        B1 --> Combine["Weighted Sum"]
+        B2 --> Combine
+        B3 --> Combine
+        Combine --> Result2["Final Strong Model"]
+    end
+
+    style Bagging fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Boosting fill:#fff3e0,stroke:#f57c00,color:#000
+    style Vote fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Combine fill:#e8f5e9,stroke:#2e7d32,color:#000

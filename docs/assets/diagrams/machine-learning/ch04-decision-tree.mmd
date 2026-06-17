@@ -1,0 +1,23 @@
+flowchart TD
+    Root["Root Node\nIs Age > 30?"] -->|"Yes"| Branch1["Internal Node\nHas House?"]
+    Root -->|"No"| Branch2["Internal Node\nHas Job?"]
+
+    Branch1 -->|"Yes"| Leaf1["Leaf: Will Buy\n(Class: Yes)"]
+    Branch1 -->|"No"| Leaf2["Leaf: Won't Buy\n(Class: No)"]
+
+    Branch2 -->|"Yes"| Leaf3["Leaf: Will Buy\n(Class: Yes)"]
+    Branch2 -->|"No"| Leaf4["Leaf: Won't Buy\n(Class: No)"]
+
+    subgraph Legend["Splitting Criteria"]
+        E["Entropy H(S) = -Σ pᵢ log₂ pᵢ"]
+        G["Gini Impurity\nGini = 1 - Σ pᵢ²"]
+        IG["Info Gain\nIG = H(S) - Σ wᵢ H(Sᵢ)"]
+    end
+
+    style Root fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Branch1 fill:#fff3e0,stroke:#f57c00,color:#000
+    style Branch2 fill:#fff3e0,stroke:#f57c00,color:#000
+    style Leaf1 fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Leaf2 fill:#fce4ec,stroke:#c62828,color:#000
+    style Leaf3 fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Leaf4 fill:#fce4ec,stroke:#c62828,color:#000

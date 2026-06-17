@@ -37,6 +37,8 @@ Common kernels include:
 - **Polynomial**: $K(x_i, x_j) = (x_i \cdot x_j + r)^d$
 - **Radial Basis Function (RBF)**: $K(x_i, x_j) = \exp(-\gamma \|x_i - x_j\|^2)$
 
+![SVM and Kernel Trick](../assets/images/diagrams/machine-learning/ch06-svm.png)
+
 ---
 
 ## Examples

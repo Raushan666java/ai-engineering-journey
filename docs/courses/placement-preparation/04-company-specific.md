@@ -20,6 +20,8 @@
 
 FAANG (Facebook/Meta, Apple, Amazon, Netflix, Google) and the extended MANGA (Meta, Amazon, Netflix, Google, Apple) represent the pinnacle of software engineering compensation and prestige. These companies have hiring bars that rank among the highest in the industry.
 
+![Company Tiers Overview](../assets/images/diagrams/placement-preparation/ch04-company-tiers.png)
+
 ### Common Threads Across All FAANG Interviews
 
 - **Resume screening** — top schools, prior FAANG, strong open-source contributions, or referral required for initial call
@@ -32,13 +34,7 @@ FAANG (Facebook/Meta, Apple, Amazon, Netflix, Google) and the extended MANGA (Me
 
 #### Interview Process
 
-| Round | Duration | Focus |
-|-------|----------|-------|
-| Resume screen + recruiter call | 30 min | Background, levels, team matching |
-| Phone screen (coding) | 45 min | 1-2 LeetCode Medium/Hard problems |
-| On-site (4-6 rounds) | 4-6 hours | 2-3 coding, 1 system design, 1 googleyness, 1 extra |
-| Hiring committee | — | Packet review, cross-panel calibration |
-| Compensation + team matching | — | Find team + finalize offer |
+![Google Interview Process](../assets/images/diagrams/placement-preparation/ch04-google-interview.png)
 
 #### Googleyness & Leadership
 

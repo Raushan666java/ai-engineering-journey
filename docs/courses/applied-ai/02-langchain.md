@@ -147,6 +147,8 @@ print(f"Joke: {result['joke'].content}")
 
 RAG retrieves relevant documents from a vector store and adds them to the LLM context.
 
+![RAG Architecture](../assets/images/diagrams/applied-ai/ch02-rag-architecture.png)
+
 ### 2.4.1 Document Loading & Chunking
 
 ```python
@@ -226,6 +228,8 @@ print(answer.content)
 ## 2.5 Agents with Tools
 
 Agents let the LLM decide which tools to call and in what order.
+
+![Agent Tool Calling Flow](../assets/images/diagrams/applied-ai/ch02-agent-flow.png)
 
 ### 2.5.1 Custom Tools
 

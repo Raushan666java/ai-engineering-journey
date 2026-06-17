@@ -13,17 +13,10 @@ After completing this chapter, you will be able to:
 
 Spark has a master/worker architecture. The **driver** runs the user's main program and schedules tasks on **executors** running on worker nodes.
 
-```
-Driver (main program)
-  ├── SparkContext / SparkSession
-  ├── DAGScheduler (converts operations to stages)
-  ├── TaskScheduler (assigns tasks to executors)
-  └── SchedulerBackend (communicates with cluster manager)
+![Spark Architecture](../assets/images/diagrams/big-data/ch03-spark-architecture.png)
 
-Cluster Manager (YARN / Mesos / Kubernetes / Standalone)
-  └── Worker Nodes
-       └── Executor (JVM, runs tasks, stores cached data)
-```
+[//]: # "Spark Execution Flow"
+![Spark Execution Flow](../assets/images/diagrams/big-data/ch03-spark-execution.png)
 
 ```python
 from pyspark.sql import SparkSession

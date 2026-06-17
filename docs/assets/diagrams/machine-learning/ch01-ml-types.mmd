@@ -1,0 +1,19 @@
+flowchart TD
+    ML["Machine Learning"] --> SL["Supervised Learning\nLabeled data\nLearn x → y mapping"]
+    ML --> UL["Unsupervised Learning\nUnlabeled data\nFind hidden patterns"]
+    ML --> RL["Reinforcement Learning\nReward signal\nLearn by trial & error"]
+
+    SL --> Class["Classification\nPredict discrete label\nSpam/Not Spam"]
+    SL --> Reg["Regression\nPredict continuous value\nPrice Prediction"]
+
+    UL --> Cluster["Clustering\nGroup similar points\nCustomer Segments"]
+    UL --> DimRed["Dimensionality Reduction\nCompress features\nPCA, t-SNE"]
+
+    RL --> Value["Value-Based\nQ-Learning, DQN"]
+    RL --> Policy["Policy-Based\nPolicy Gradient"]
+    RL --> Model["Model-Based\nLearn environment dynamics"]
+
+    style ML fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style SL fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style UL fill:#fff3e0,stroke:#f57c00,color:#000
+    style RL fill:#f3e5f5,stroke:#7b1fa2,color:#000

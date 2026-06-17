@@ -34,6 +34,8 @@ Hierarchical clustering builds a tree of clusters. There are two main approaches
 
 The results are often visualized using a **Dendrogram**, a tree-like diagram that shows the sequence of merges or splits and the distance at which they occurred.
 
+![K-means Clustering Process](../assets/images/diagrams/machine-learning/ch08-kmeans.png)
+
 ---
 
 ## Examples

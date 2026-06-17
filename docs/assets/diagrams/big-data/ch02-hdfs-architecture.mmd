@@ -1,0 +1,26 @@
+flowchart TB
+    Client["Client Application"] --> NN["Namenode (Master)\nManages filesystem metadata\nBlock → Datanode mapping"]
+    Client --> DN1
+    Client --> DN2
+    Client --> DN3
+
+    NN --> DN1["Datanode 1\nBlocks A, B, C"]
+    NN --> DN2["Datanode 2\nBlocks A, B, D"]
+    NN --> DN3["Datanode 3\nBlocks B, C, D"]
+
+    subgraph Replication["Block Replication (factor=3)"]
+        BlockA["Block A\nDN1, DN2, DN4"]
+        BlockB["Block B\nDN1, DN2, DN3"]
+        BlockC["Block C\nDN1, DN3, DN4"]
+    end
+
+    DN1 --> Heartbeat["Heartbeat + BlockReport\n(every 3 seconds)"]
+    DN2 --> Heartbeat
+    DN3 --> Heartbeat
+    Heartbeat --> NN
+
+    style NN fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style DN1 fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style DN2 fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style DN3 fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Client fill:#fff3e0,stroke:#f57c00,color:#000

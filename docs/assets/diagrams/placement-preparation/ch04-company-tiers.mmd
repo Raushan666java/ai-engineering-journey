@@ -1,0 +1,16 @@
+flowchart TD
+    Companies["Company Tiers"] --> FAANG["FAANG / MANGA\nGoogle, Amazon, Meta,\nMicrosoft, Netflix\nCTC: 30-60 LPA"]
+    Companies --> Product["Product-Based India\nFlipkart, Uber, Swiggy\nOLA, Paytm, Zomato\nCTC: 15-30 LPA"]
+    Companies --> Service["Service-Based\nTCS, Infosys, Wipro\nAccenture, HCL\nCTC: 3.5-9 LPA"]
+    Companies --> Startup["Startups / Unicorns\nRazorpay, CRED\nGroww, Zepto\nCTC: 12-25 LPA"]
+
+    FAANG --> ProcessF["Resume Screen\nPhone Interview\nOn-site (4-5 rounds)\nHiring Committee"]
+    Product --> ProcessP["Coding Round\nSystem Design\nMachine Coding\nHM Round"]
+    Service --> ProcessS["Aptitude Test\nCoding Test\nTechnical Interview\nHR Round"]
+    Startup --> ProcessSt["Coding Challenge\nTech Interview\nFounder Round"]
+
+    style Companies fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style FAANG fill:#fce4ec,stroke:#c62828,color:#000
+    style Product fill:#fff3e0,stroke:#f57c00,color:#000
+    style Service fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Startup fill:#f3e5f5,stroke:#7b1fa2,color:#000

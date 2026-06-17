@@ -1,0 +1,19 @@
+flowchart TD
+    Start["Problem Description"] --> Q1{"Involves LLMs,\nchat, documents?"}
+    Q1 -->|Yes| LangChain["LangChain"]
+    Q1 -->|No| Q2{"Involves images,\nvideo, camera?"}
+    Q2 -->|Yes| OpenCV["OpenCV"]
+    Q2 -->|No| Q3{"Needs content\ncreation?"}
+    Q3 -->|Yes| GenAI["Generative AI\n(Diffusers/GANs)"]
+    Q3 -->|No| StandardML["Standard ML\n(sklearn/XGBoost)"]
+
+    LangChain --> Examples1["RAG Chatbot\nDocument QA\nAgent with Tools"]
+    OpenCV --> Examples2["Face Detection\nImage Filters\nVideo Processing"]
+    GenAI --> Examples3["Text-to-Image\nStyle Transfer\nInpainting"]
+    StandardML --> Examples4["Classification\nRegression\nClustering"]
+
+    style Start fill:#fff3e0,stroke:#f57c00,color:#000,stroke-width:2px
+    style LangChain fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style OpenCV fill:#e3f2fd,stroke:#1565c0,color:#000
+    style GenAI fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    style StandardML fill:#fce4ec,stroke:#c62828,color:#000

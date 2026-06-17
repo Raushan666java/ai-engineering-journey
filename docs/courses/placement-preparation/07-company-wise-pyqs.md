@@ -4,6 +4,8 @@
 
 ---
 
+![Preparation Roadmap](../assets/images/diagrams/placement-preparation/ch07-prep-roadmap.png)
+
 ## Table of Contents
 
 1. [FAANG Companies](#1-faang-companies)

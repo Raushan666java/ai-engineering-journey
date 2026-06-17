@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph BV["Bias-Variance Tradeoff"]
+        HighBias["High Bias\nUnderfitting\nSimple model"]
+        HighVar["High Variance\nOverfitting\nComplex model"]
+        Sweet["Sweet Spot\nOptimal Complexity\nBest Generalization"]
+    end
+
+    DataSplit["Dataset"] --> Split["Split Data"]
+    Split --> Train["Training Set\n60-80%"]
+    Split --> Val["Validation Set\n10-20%"]
+    Split --> Test["Test Set\n10-20%"]
+
+    Train --> CV["K-Fold\nCross-Validation"]
+    CV --> Tune["Hyperparameter\nTuning\nGrid/Random Search"]
+    Tune --> Best["Best Model"]
+    Best --> EvalFinal["Final Evaluation\non Test Set"]
+
+    EvalFinal --> Metrics["Metrics"]
+    Metrics --> Conf["Confusion Matrix\nTP, TN, FP, FN"]
+    Metrics --> Class["Precision, Recall\nF1-Score, ROC-AUC"]
+    Metrics --> RegM["MSE, MAE, R²"]
+
+    style BV fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Split fill:#fff3e0,stroke:#f57c00,color:#000
+    style CV fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Metrics fill:#f3e5f5,stroke:#7b1fa2,color:#000

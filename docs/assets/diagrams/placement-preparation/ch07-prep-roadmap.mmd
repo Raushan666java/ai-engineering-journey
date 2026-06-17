@@ -1,0 +1,43 @@
+flowchart LR
+    subgraph DSA["Data Structures & Algorithms"]
+        Arr["Arrays & Strings"]
+        LL["Linked Lists"]
+        Trees["Trees & Graphs"]
+        DP["Dynamic Programming"]
+    end
+
+    subgraph Languages["Programming Languages"]
+        Java["Java (Primary)"]
+        SQL["SQL"]
+    end
+
+    subgraph Topics["Core Topics"]
+        OOP["OOP & SOLID"]
+        OS["OS Concepts"]
+        CN["Computer Networks"]
+        DBMS["DBMS & SQL"]
+    end
+
+    subgraph Practice["Practice Sources"]
+        LC["LeetCode (200+)"]
+        GFG["GeeksforGeeks"]
+        CC["CodeChef / Codeforces"]
+    end
+
+    subgraph SoftPrep["Soft Preparation"]
+        Resume["Resume"]
+        HR["HR Questions"]
+        Mock["Mock Interviews"]
+        Comp["Company Research"]
+    end
+
+    DSA --> Practice
+    Languages --> Practice
+    Topics --> Practice
+    Practice --> SoftPrep
+
+    style DSA fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Languages fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Topics fill:#fff3e0,stroke:#f57c00,color:#000
+    style Practice fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    style SoftPrep fill:#fce4ec,stroke:#c62828,color:#000

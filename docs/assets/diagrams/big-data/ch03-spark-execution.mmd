@@ -1,0 +1,24 @@
+sequenceDiagram
+    participant App as User Program
+    participant DAG as DAGScheduler
+    participant Task as TaskScheduler
+    participant Exec as Executors
+    participant Storage as HDFS/S3
+
+    App->>App: Build transformation DAG
+    Note over App: val result = df.filter(...).groupBy(...).agg(...)
+    App->>DAG: Action triggered (count/collect/write)
+    DAG->>DAG: Build stages
+    Note over DAG: Narrow deps → same stage
+    Note over DAG: Wide deps (shuffle) → new stage
+    DAG->>Task: Submit TaskSet per stage
+    Task->>Exec: Launch tasks
+    Exec->>Storage: Read input partitions
+    Exec->>Exec: Compute transformations
+    Exec->>Exec: Cache/persist if needed
+    Exec->>Task: Report task completion
+    Task->>DAG: Stage complete
+    DAG->>DAG: Schedule next stage
+    Exec->>Exec: Shuffle intermediate data
+    Exec->>Storage: Write output
+    DAG->>App: Return result

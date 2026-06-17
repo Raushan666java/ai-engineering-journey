@@ -1,0 +1,18 @@
+flowchart LR
+    Raw["Raw DataFrame\n(features + label)"] --> SI["StringIndexer\nConvert category\nstrings to indices"]
+    SI --> OH["OneHotEncoder\nConvert indices\nto binary vectors"]
+    Raw --> VA["VectorAssembler\nCombine feature\ncolumns into vector"]
+    OH --> VA
+    VA --> SC["StandardScaler\nNormalize features\n(mean=0, std=1)"]
+    SC --> LR["LogisticRegression\n(Estimator)\nTrain on data"]
+    LR --> Model["LogisticRegressionModel\n(Transformer)\nPredict"]
+    Model --> Eval["Evaluator\nBinaryClassificationEvaluator\nAUC = 0.89"]
+
+    style Raw fill:#e3f2fd,stroke:#1565c0,color:#000
+    style SI fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style OH fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style VA fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style SC fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style LR fill:#fff3e0,stroke:#f57c00,color:#000
+    style Model fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    style Eval fill:#fce4ec,stroke:#c62828,color:#000

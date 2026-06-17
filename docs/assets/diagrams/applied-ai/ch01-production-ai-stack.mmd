@@ -1,0 +1,62 @@
+flowchart TB
+    subgraph DataLayer["Data Layer"]
+        D1["S3 / Blob Storage"]
+        D2["Kafka / Event Stream"]
+        D3["PostgreSQL"]
+        D4["Vector DB (Chroma/Pinecone)"]
+    end
+
+    subgraph InfraLayer["Infrastructure"]
+        I1["Docker / Containers"]
+        I2["Kubernetes"]
+        I3["GPU Orchestration"]
+        I4["CI/CD Pipeline"]
+    end
+
+    subgraph ModelLayer["Model Layer"]
+        M1["LangChain / LLMs"]
+        M2["Transformers / HF"]
+        M3["OpenCV / Vision"]
+        M4["Diffusers / GenAI"]
+    end
+
+    subgraph ServingLayer["Serving Layer"]
+        S1["FastAPI / Flask"]
+        S2["TorchServe / BentoML"]
+        S3["SageMaker Endpoint"]
+        S4["Streamlit Dashboard"]
+    end
+
+    subgraph AppLayer["Application Layer"]
+        A1["Web App (React)"]
+        A2["Mobile App"]
+        A3["Slack Bot / API"]
+        A4["Monitoring Dashboard"]
+    end
+
+    D1 --> I1
+    D2 --> I1
+    D3 --> I1
+    D4 --> I1
+
+    I1 --> M1
+    I1 --> M2
+    I1 --> M3
+    I1 --> M4
+
+    M1 --> S1
+    M2 --> S2
+    M3 --> S3
+    M4 --> S4
+
+    S1 --> A1
+    S1 --> A2
+    S2 --> A3
+    S3 --> A4
+    S4 --> A1
+
+    style DataLayer fill:#e1f5fe,stroke:#0288d1,color:#000
+    style InfraLayer fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    style ModelLayer fill:#e8f5e9,stroke:#388e3c,color:#000
+    style ServingLayer fill:#fff3e0,stroke:#f57c00,color:#000
+    style AppLayer fill:#fce4ec,stroke:#c62828,color:#000

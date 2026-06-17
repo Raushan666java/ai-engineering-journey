@@ -38,6 +38,8 @@ Activation functions introduce non-linearity into the network, which is essentia
 4. **Update**: Weights are updated using an optimization algorithm like Stochastic Gradient Descent (SGD):
 $$w := w - \alpha \frac{\partial \mathcal{L}}{\partial w}$$
 
+![Neural Network Architecture](../assets/images/diagrams/machine-learning/ch07-neural-network.png)
+
 ---
 
 ## Examples

@@ -87,6 +87,7 @@ extra_javascript:
   - assets/js/noise.js
   - assets/js/blueprint.js
   - assets/js/study-timer.js
+  - assets/js/glightbox-zoom.js
 
 extra:
   social:

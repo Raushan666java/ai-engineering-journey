@@ -33,6 +33,8 @@ The explained variance ratio tells us how much information (variance) each princ
 ### Other Techniques (t-SNE and UMAP)
 While PCA is linear, other techniques like t-Distributed Stochastic Neighbor Embedding (t-SNE) and Uniform Manifold Approximation and Projection (UMAP) are non-linear. They are primarily used for visualizing high-dimensional data in 2D or 3D by preserving local relationships between points.
 
+![PCA Process](../assets/images/diagrams/machine-learning/ch09-pca.png)
+
 ---
 
 ## Examples

@@ -320,7 +320,11 @@ cap.release()
 out.release()
 ```
 
-## 3.8 Image Processing Pipeline with FastAPI
+## 3.8 Image Processing Pipeline
+
+![Image Processing Pipeline](../assets/images/diagrams/applied-ai/ch03-image-processing.png)
+
+## 3.9 Image Processing Pipeline with FastAPI
 
 ```python
 from fastapi import FastAPI, UploadFile, File
@@ -367,7 +371,11 @@ async def apply_filter(file: UploadFile = File(...), filter_type: str = "edges")
     return Response(content=encoded.tobytes(), media_type="image/jpeg")
 ```
 
-## 3.9 Object Detection with YOLO (via OpenCV DNN)
+## 3.9 Face Detection Workflow
+
+![Face Detection Workflow](../assets/images/diagrams/applied-ai/ch03-face-detection.png)
+
+## 3.10 Object Detection with YOLO (via OpenCV DNN)
 
 ```python
 # Load YOLO (download yolov3.weights and yolov3.cfg first)

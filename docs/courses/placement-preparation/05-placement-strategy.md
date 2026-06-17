@@ -6,16 +6,7 @@
 
 Placement season in Indian engineering colleges follows a predictable cycle tied to the academic calendar. For most colleges (IITs, NITs, IIITs, top private universities), the schedule is:
 
-**Semester-wise breakdown:**
-
-| Semester | Timeline | What Happens |
-|----------|----------|-------------|
-| 3rd sem (2nd yr) | Jul–Dec | Summer internship season begins |
-| 4th sem (2nd yr) | Jan–Apr | Internship offers roll out |
-| 5th sem (3rd yr) | Jul–Dec | Pre-placement talks, company registrations |
-| **6th sem (3rd yr)** | **Jan–Apr** | **Main placement season — peak hiring** |
-| 7th sem (4th yr) | Jul–Dec | Late recruiters, dream companies, off-campus |
-| 8th sem (4th yr) | Jan–Jun | Residual hiring, gap year / backlog recovery |
+![Placement Preparation Timeline](../assets/images/diagrams/placement-preparation/ch05-placement-timeline.png)
 
 The **primary placement window** runs from **July to December of your 3rd year (6th/7th sem merge)** for most colleges. However, the exact schedule depends on:
 

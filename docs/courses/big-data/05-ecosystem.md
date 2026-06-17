@@ -9,6 +9,8 @@ After completing this chapter, you will be able to:
 - Set up and use Kafka for streaming data ingestion
 - Compare legacy Hadoop tools with modern cloud-native alternatives
 
+![Hadoop Ecosystem](../assets/images/diagrams/big-data/ch05-ecosystem.png)
+
 ## 5.1 Hive — SQL-on-Hadoop
 
 Apache Hive provides a SQL interface to data stored in HDFS. It translates HiveQL queries into MapReduce (or Tez/Spark) jobs.

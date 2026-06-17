@@ -28,6 +28,8 @@ A model makes a prediction by comparing the probability $h_w(x)$ to a threshold 
 - If $h_w(x) < 0.5$, predict $y=0$ (Negative).
 The set of points where $\mathbf{w}^T\mathbf{x} = 0$ is called the decision boundary.
 
+![Logistic Regression Flow](../assets/images/diagrams/machine-learning/ch03-logistic-regression.png)
+
 ### Logistic Loss (Cross-Entropy)
 We cannot use MSE for logistic regression because the resulting cost function would be non-convex, making Gradient Descent difficult. Instead, we use the Log Loss or Binary Cross-Entropy Loss:
 $$J(w) = -\frac{1}{n} \sum_{i=1}^{n} [y^{(i)} \log(h_w(x^{(i)})) + (1 - y^{(i)}) \log(1 - h_w(x^{(i)}))]$$

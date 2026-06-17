@@ -60,6 +60,8 @@ max_missed = timeout // heartbeat_interval
 print(f"Namenode waits {timeout}s ({max_missed} heartbeats) before declaring DN dead")
 ```
 
+![HDFS Architecture](../assets/images/diagrams/big-data/ch02-hdfs-architecture.png)
+
 ### 2.1.4 HDFS CLI
 
 ```bash
@@ -82,21 +84,7 @@ MapReduce is a programming model for distributed data processing. It consists of
 
 ### 2.2.1 How MapReduce Works
 
-```
-Input: [k1, v1] pairs
-  |
-  v  MAP phase (parallel, one per input split)
-  |
-Output: [k2, v2] pairs (intermediate)
-  |
-  v  SHUFFLE phase (sort and group by key, network transfer)
-  |
-Input: [k2, list(v2)] pairs
-  |
-  v  REDUCE phase (parallel, one per key or key group)
-  |
-Output: [k3, v3] pairs
-```
+![MapReduce Data Flow](../assets/images/diagrams/big-data/ch02-mapreduce-flow.png)
 
 ### 2.2.2 Word Count in MapReduce (Python)
 

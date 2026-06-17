@@ -4,6 +4,8 @@
 
 ---
 
+![DSA Problem-Solving Approach](../assets/images/diagrams/placement-preparation/ch02-dsa-approach.png)
+
 ## Arrays
 
 ### Q1: Two Sum

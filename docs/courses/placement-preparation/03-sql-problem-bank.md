@@ -4,6 +4,8 @@
 >
 > **Compatible with:** MySQL 8.0+, PostgreSQL 13+, SQL Server 2019+
 
+![SQL Query Execution Order](../assets/images/diagrams/placement-preparation/ch03-sql-execution.png)
+
 ---
 
 ## Prerequisites Setup

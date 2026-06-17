@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph SVM["Support Vector Machine"]
+        HP["Hyperplane\nw^T x + b = 0"]
+        MV["Maximum Margin\nDistance to nearest points"]
+        SV["Support Vectors\nPoints on margin boundary"]
+    end
+
+    subgraph Kernel["Kernel Trick"]
+        LK["Linear\nK(xᵢ, xⱼ) = xᵢ · xⱼ"]
+        PK["Polynomial\nK(xᵢ, xⱼ) = (xᵢ·xⱼ + r)ᵈ"]
+        RBF["RBF (Gaussian)\nK = exp(-γ||xᵢ - xⱼ||²)"]
+    end
+
+    Data["Input Data\nNot linearly separable"] --> Map["Map to higher\ndimension"]
+    Map --> LinearSep["Linearly separable\nin new space"]
+    LinearSep --> HP
+    HP --> MV
+    MV --> Classify["Classify new points\nbased on side of hyperplane"]
+
+    Data -.-> Kernel
+    Kernel -.-> Map
+
+    style SVM fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Kernel fill:#fff3e0,stroke:#f57c00,color:#000
+    style HP fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style SV fill:#fce4ec,stroke:#c62828,color:#000

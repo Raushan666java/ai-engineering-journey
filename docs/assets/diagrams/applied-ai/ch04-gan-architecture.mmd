@@ -1,0 +1,25 @@
+flowchart TD
+    Noise["Random Noise z\n(latent vector)"] --> Gen["Generator\n(decoder network)"]
+    Gen --> Fake["Fake Image"]
+
+    Real["Real Image\n(from dataset)"] --> DReal["Discriminator\n(binary classifier)"]
+    Fake --> DFake["Discriminator\n(binary classifier)"]
+
+    DReal --> LossD1["Loss: log(D(x))"]
+    DFake --> LossD2["Loss: log(1 - D(G(z)))"]
+
+    LossD1 --> DUpdate["Update Discriminator:\nMaximize log(D(x)) + log(1-D(G(z)))"]
+    LossD2 --> DUpdate
+
+    Gen --> GUpdate["Update Generator:\nMaximize log(D(G(z)))"]
+    DFake --> GUpdate
+
+    DUpdate --> Converge{"Converged?\nD(x)=0.5, D(G(z))=0.5"}
+    GUpdate --> Converge
+    Converge -->|No| Noise
+    Converge -->|Yes| Result["Generator produces\nrealistic samples"]
+
+    style Noise fill:#fff3e0,stroke:#f57c00,color:#000
+    style Gen fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Real fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Result fill:#fce4ec,stroke:#c62828,color:#000,stroke-width:2px

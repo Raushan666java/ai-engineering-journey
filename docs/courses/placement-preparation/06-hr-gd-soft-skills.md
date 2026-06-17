@@ -17,6 +17,8 @@
 
 ## 1. HR Interview Questions
 
+![STAR Framework for HR Interviews](../assets/images/diagrams/placement-preparation/ch06-star-framework.png)
+
 ### 1.1 "Tell Me About Yourself" — Three Templates
 
 **Why this question is asked:**

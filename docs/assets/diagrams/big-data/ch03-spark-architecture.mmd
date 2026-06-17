@@ -1,0 +1,41 @@
+flowchart TB
+    subgraph Driver["Spark Driver"]
+        SC["SparkSession / SparkContext"]
+        DAG["DAGScheduler\nBuilds stage DAG\nPipelining + Shuffle"]
+        TS["TaskScheduler\nAssigns tasks\nto executors"]
+    end
+
+    subgraph Cluster["Cluster Manager"]
+        CM["YARN / Mesos\nK8s / Standalone"]
+    end
+
+    subgraph Workers["Worker Nodes"]
+        E1["Executor 1\nTasks + Cache"]
+        E2["Executor 2\nTasks + Cache"]
+        E3["Executor N\nTasks + Cache"]
+    end
+
+    SC --> DAG
+    DAG --> TS
+    TS --> CM
+    CM --> E1
+    CM --> E2
+    CM --> E3
+    E1 <--> E2
+    E2 <--> E3
+
+    subgraph Storage["Storage"]
+        HDFS["HDFS / S3"]
+        Catalog["Hive Metastore"]
+    end
+
+    E1 --> HDFS
+    E2 --> HDFS
+    E3 --> HDFS
+    E1 --> Catalog
+    E2 --> Catalog
+
+    style Driver fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Cluster fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    style Workers fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Storage fill:#fff3e0,stroke:#f57c00,color:#000

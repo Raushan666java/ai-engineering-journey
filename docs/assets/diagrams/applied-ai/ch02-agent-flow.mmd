@@ -1,0 +1,19 @@
+sequenceDiagram
+    participant User
+    participant Agent as LLM Agent
+    participant Tool1 as Calculator Tool
+    participant Tool2 as Weather Tool
+    participant Tool3 as Wikipedia Tool
+
+    User->>Agent: "What is 2^10 and weather in Tokyo?"
+    Agent->>Agent: Parse intent, identify sub-tasks
+    Agent->>Tool1: calculate("2**10")
+    Tool1-->>Agent: Result: 1024
+    Agent->>Tool2: get_weather("Tokyo")
+    Tool2-->>Agent: Result: Sunny, 22°C
+    Agent->>Agent: Compose final response
+    Agent-->>User: "2^10 = 1024. The weather in Tokyo is sunny at 22°C."
+    User->>Agent: "Who discovered penicillin?"
+    Agent->>Tool3: wikipedia("penicillin discovery")
+    Tool3-->>Agent: Alexander Fleming, 1928
+    Agent-->>User: "Penicillin was discovered by Alexander Fleming in 1928."

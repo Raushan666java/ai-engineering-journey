@@ -1,0 +1,15 @@
+flowchart LR
+    PD["Problem\nDefinition"] --> DC["Data\nCollection"]
+    DC --> DP["Data Preparation\nCleaning, Feature Engineering\nTrain/Test Split"]
+    DP --> MS["Model Selection\nChoose Algorithm"]
+    MS --> Train["Training\nFit Model to Data"]
+    Train --> Eval["Evaluation\nMetrics on Test Set"]
+    Eval --> Deploy["Deployment\nProduction Inference"]
+    Deploy --> Monitor["Monitoring\nDrift Detection\nRetraining"]
+    Monitor -.->|"Feedback Loop"| DC
+
+    style PD fill:#e3f2fd,stroke:#1565c0,color:#000
+    style DP fill:#fff3e0,stroke:#f57c00,color:#000
+    style Train fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Deploy fill:#fce4ec,stroke:#c62828,color:#000
+    style Monitor fill:#f3e5f5,stroke:#7b1fa2,color:#000

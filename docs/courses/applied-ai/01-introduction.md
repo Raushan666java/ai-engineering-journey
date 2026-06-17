@@ -27,26 +27,11 @@ The difference is the same as designing a jet engine vs flying a commercial airl
 
 ## 1.2 The Production AI Stack
 
-```
-┌─────────────────────────────────────────┐
-│              Application Layer           │
-│  FastAPI / Flask / Streamlit / Mobile    │
-├─────────────────────────────────────────┤
-│              Serving Layer               │
-│  SageMaker / TorchServe / BentoML        │
-├─────────────────────────────────────────┤
-│              Model Layer                 │
-│  LangChain / Transformers / OpenCV       │
-├─────────────────────────────────────────┤
-│              Infrastructure              │
-│  Docker / Kubernetes / GPU Orchestration │
-├─────────────────────────────────────────┤
-│              Data Layer                  │
-│  S3 / Kafka / PostgreSQL / Vector DB     │
-└─────────────────────────────────────────┘
-```
+![Production AI Stack](../assets/images/diagrams/applied-ai/ch01-production-ai-stack.png)
 
 ## 1.3 When to Use Which Tool
+
+![Tool Selection Flowchart](../assets/images/diagrams/applied-ai/ch01-tool-selection.png)
 
 ```python
 def recommend_tool(problem_description: str) -> str:

@@ -35,6 +35,8 @@ Hyperparameters are parameters set before training (e.g., learning rate, max dep
 - **Grid Search**: Exhaustive search over a specified subset of the hyperparameter space.
 - **Random Search**: Randomly samples the hyperparameter space, often reaching a good solution much faster than Grid Search.
 
+![Model Evaluation Workflow](../assets/images/diagrams/machine-learning/ch10-evaluation.png)
+
 ---
 
 ## Examples

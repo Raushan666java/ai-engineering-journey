@@ -12,35 +12,7 @@ Your resume is your 6-second pitch. Recruiters at service-based companies, produ
 
 A strong campus placement resume follows a strict single-page (or max 2-page for experienced hires) format with these sections in order:
 
-```
-1. CONTACT INFORMATION
-   Name | Phone | Email | LinkedIn URL | GitHub/Portfolio URL
-
-2. PROFESSIONAL SUMMARY / OBJECTIVE
-   2-3 lines summarizing your profile, target role, and key differentiator
-
-3. EDUCATION
-   Degree | Institution | CGPA/Percentage | Year
-   (Reverse chronological — highest degree first)
-
-4. TECHNICAL SKILLS
-   Languages | Frameworks | Databases | Tools | Platforms
-   (Grouped by category, not just a comma-separated blob)
-
-5. PROJECTS (2-4 projects)
-   Project Name | Tech Stack | Timeline
-   Bullet points describing what you did, how you did it, and the impact
-
-6. EXPERIENCE / INTERNSHIPS (if any)
-   Company | Role | Duration
-   Bullet points with quantified achievements
-
-7. POSITIONS OF RESPONSIBILITY / LEADERSHIP
-   Club/Committee | Role | Impact
-
-8. ACHIEVEMENTS & CERTIFICATIONS
-   Competitive programming ranks, hackathon wins, scholarships, certifications
-```
+![Standard Resume Structure](../assets/images/diagrams/placement-preparation/ch01-resume-structure.png)
 
 ### 1.2 The 6-Second Recruiter Scan
 

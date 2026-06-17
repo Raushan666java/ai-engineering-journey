@@ -1,0 +1,30 @@
+flowchart LR
+    subgraph Forward["Forward Process (Add Noise)"]
+        direction LR
+        I0["Image\nt=0"] --> I1["t=1"]
+        I1 --> I2["t=2"]
+        I2 --> I3["..."]
+        I3 --> IT["Pure Noise\nt=T"]
+    end
+
+    subgraph Reverse["Reverse Process (Denoise)"]
+        direction RL
+        RT["Pure Noise\nt=T"] --> R3["t=T-1"]
+        R3 --> R2["..."]
+        R2 --> R1["t=1"]
+        R1 --> R0["Generated Image\nt=0"]
+    end
+
+    Forward -->|"Learn to reverse"| Reverse
+
+    subgraph Conditioning["Conditioning (Optional)"]
+        Text["Text Prompt\n'cat in space'"]
+        Image["Input Image\n(img2img)"]
+        Mask["Mask\n(inpainting)"]
+    end
+
+    Conditioning --> Reverse
+
+    style Forward fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Reverse fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Conditioning fill:#fff3e0,stroke:#f57c00,color:#000

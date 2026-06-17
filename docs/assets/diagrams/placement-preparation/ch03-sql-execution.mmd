@@ -1,0 +1,16 @@
+flowchart TB
+    Q["SQL Query"] --> FROM["FROM / JOIN\nLoad tables, apply joins"]
+    FROM --> WHERE["WHERE\nFilter rows"]
+    WHERE --> GROUP["GROUP BY\nGroup rows by columns"]
+    GROUP --> HAVING["HAVING\nFilter groups"]
+    HAVING --> SELECT["SELECT\nChoose columns,\ncompute aggregates"]
+    SELECT --> DISTINCT["DISTINCT\nRemove duplicates"]
+    DISTINCT --> ORDER["ORDER BY\nSort results"]
+    ORDER --> LIMIT["LIMIT / OFFSET\nPaginate results"]
+    LIMIT --> Result["Result Set"]
+
+    style Q fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style WHERE fill:#fff3e0,stroke:#f57c00,color:#000
+    style GROUP fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style SELECT fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    style Result fill:#fce4ec,stroke:#c62828,color:#000

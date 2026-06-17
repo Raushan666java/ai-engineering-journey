@@ -15,6 +15,8 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 Semantic Document Structure
 
+![HTML5 Elements Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/01-html.png)
+
 HTML5 introduced a set of landmark elements that replace the generic `<div>`-based document structure. These elements convey meaning about the content they contain, aiding accessibility, search-engine indexing, and code readability.
 
 The primary semantic landmarks are:

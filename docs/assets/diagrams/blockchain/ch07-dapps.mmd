@@ -1,0 +1,16 @@
+flowchart LR
+    subgraph Traditional["Traditional Web App"]
+        TF["React / Vue\nFrontend"] --> API["REST API\nBackend Server"]
+        API --> DB["Centralized\nDatabase"]
+    end
+
+    subgraph DApp["Decentralized App"]
+        DF["React / Vue\nFrontend"] --> Wallet["Wallet\nMetaMask / WalletConnect\nManages keys\nSigns transactions"]
+        Wallet --> Provider["Provider\nInfura / Alchemy\nRPC to blockchain"]
+        Provider --> BC["Smart Contract\nEthereum Blockchain\nImmutable logic + state"]
+        DF --> IPFS["IPFS\nDecentralized Storage\nImages, metadata"]
+    end
+
+    style Traditional fill:#e3f2fd,stroke:#1565c0,color:#000
+    style DApp fill:#fff3e0,stroke:#f57c00,color:#000,stroke-width:2px
+    style Wallet fill:#e8f5e9,stroke:#2e7d32,color:#000

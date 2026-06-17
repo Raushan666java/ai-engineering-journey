@@ -1,0 +1,23 @@
+flowchart TD
+    subgraph FileOps["File Operations in C"]
+        Open["fopen('file.txt', 'r')<br/>returns FILE*"]
+        Modes["r - read | w - write | a - append<br/>rb - binary read | w+ - read+write"]
+        Read["fgets(buffer, size, fp)<br/>fscanf(fp, '%d', &var)<br/>fread(data, size, n, fp)"]
+        Write["fputs(string, fp)<br/>fprintf(fp, '%d', var)<br/>fwrite(data, size, n, fp)"]
+        Position["ftell(fp) - current position<br/>fseek(fp, offset, whence)<br/>SEEK_SET | SEEK_CUR | SEEK_END"]
+        Close["fclose(fp)<br/>flushes buffer<br/>releases handle"]
+        Open --> Read
+        Open --> Write
+        Read --> Close
+        Write --> Close
+        Read --> Position
+        Write --> Position
+    end
+
+    subgraph Preprocessor["Preprocessor Directives"]
+        Include["#include &lt;stdio.h&gt;<br/>#include 'myheader.h'"]
+        Define["#define PI 3.14159<br/>#define SQUARE(x) ((x)*(x))"]
+        Cond["#ifdef DEBUG<br/>#ifndef HEADER_H<br/>#if defined(WIN32)<br/>#else / #endif"]
+        Pragma["#pragma once<br/>#pragma pack(1)<br/>#pragma warning(disable: ...)"]
+        Misc["#undef PI<br/>#line 100 'file.c'<br/>#error 'FATAL ERROR'"]
+    end

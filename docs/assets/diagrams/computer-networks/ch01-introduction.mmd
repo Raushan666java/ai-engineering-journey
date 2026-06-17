@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph OSI["OSI Model (7 layers)"]
+        L7["7 - Application Layer<br/>HTTP, SMTP, DNS, FTP"]
+        L6["6 - Presentation Layer<br/>encryption, compression"]
+        L5["5 - Session Layer<br/>session management"]
+        L4["4 - Transport Layer<br/>TCP, UDP"]
+        L3["3 - Network Layer<br/>IP, routing"]
+        L2["2 - Data Link Layer<br/>Ethernet, MAC, framing"]
+        L1["1 - Physical Layer<br/>bits, signals, cables"]
+        L7 --> L6 --> L5 --> L4 --> L3 --> L2 --> L1
+    end
+
+    subgraph TCPIP["TCP/IP Model (4 layers)"]
+        T4["4 - Application Layer<br/>(HTTP, DNS, SMTP)"]
+        T3["3 - Transport Layer<br/>(TCP, UDP)"]
+        T2["2 - Internet Layer<br/>(IP, ICMP, ARP)"]
+        T1["1 - Network Interface<br/>(Ethernet, WiFi)"]
+        T4 --> T3 --> T2 --> T1
+    end
+
+    subgraph Encap["Encapsulation"]
+        Data["Application Data"]
+        Seg["Segment / Datagram<br/>TCP/UDP Header + Data"]
+        Pkt["Packet<br/>IP Header + Segment"]
+        Frame["Frame<br/>MAC Header + Packet + Trailer"]
+        Bits["Bits on wire"]
+        Data --> Seg --> Pkt --> Frame --> Bits
+    end

@@ -11,6 +11,8 @@
 
 ## Theory
 
+![DBMS Architecture, ER Model and Relational Model](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch01-intro-er-relational.png)
+
 ### 1.1 Why Database Systems?
 
 Before database management systems, applications stored data in operating system files — plain text files, CSV files, or custom binary formats. This file-based approach has fundamental limitations:

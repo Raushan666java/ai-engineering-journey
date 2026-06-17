@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph Online["Online Algorithms\nIrrevocable decisions without future knowledge"]
+        Paging["Paging (Caching)\nLRU: k/(k+1)-competitive\nOptimal offline: Belady's"]
+        SkiR["Ski Rental\nBuy vs Rent tradeoff\n2-competitive\nDeterministic optimal"]
+    end
+
+    subgraph Streaming["Streaming Algorithms\nSingle pass, sublinear memory"]
+        RS["Reservoir Sampling\nRandom sample of size k\nFrom stream of unknown length\nO(k) memory"]
+        BF["Bloom Filter\nMembership test\nFalse positives possible\nNo false negatives"]
+        CM["Count-Min Sketch\nFrequency estimation\nSublinear space\nProbabilistic accuracy"]
+    end
+
+    subgraph Parallel["Parallel Algorithms"]
+        Work["Work (total operations)\nW(n)"]
+        Depth["Depth (critical path)\nD(n)"]
+        Speedup["Speedup = W(n) / D(n)"]
+    end
+
+    subgraph Comp["Competitive Ratio"]
+        CR["Online cost ≤ ρ · Optimal offline cost"]
+    end
+
+    style Online fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Streaming fill:#fff3e0,stroke:#f57c00,color:#000
+    style Parallel fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Comp fill:#fce4ec,stroke:#c62828,color:#000

@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph SDT["Syntax-Directed Translation"]
+        Attr["Attributes on grammar symbols<br/>synthesized (bottom-up)<br/>inherited (top-down)"]
+        Action["Semantic actions embedded<br/>in production rules"]
+        Eval["Evaluation order determined<br/>by dependency graph"]
+    end
+
+    subgraph ASTDef["Abstract Syntax Tree"]
+        Node["Internal nodes: operators<br/>Leaves: operands"]
+        Example["E → E + T<br/>E → T<br/>T → id"]
+    end
+
+    subgraph ThreeAC["3-Address Code (TAC)"]
+        T1["x = y op z<br/>binary operation"]
+        T2["x = op y<br/>unary operation"]
+        T3["x = y<br/>copy / move"]
+        T4["if x op y goto L<br/>conditional jump"]
+        T5["goto L<br/>unconditional jump"]
+        T6["param x / call f, n<br/>function call"]
+    end
+
+    subgraph Forms["Representations"]
+        Quad["Quadruples:<br/>(op, arg1, arg2, result)"]
+        Triple["Triples:<br/>(op, arg1, arg2)"]
+        SSA["Static Single Assignment<br/>each var assigned once"]
+    end

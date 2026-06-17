@@ -1,0 +1,32 @@
+flowchart TD
+    subgraph MemHier["Memory Hierarchy"]
+        Regs["Registers<br/>~1 cycle<br/>~1 KB"]
+        L1["L1 Cache<br/>~2-4 cycles<br/>~32-64 KB<br/>instruction + data"]
+        L2["L2 Cache<br/>~10-20 cycles<br/>~256-512 KB"]
+        L3["L3 Cache<br/>~30-50 cycles<br/>~2-8 MB<br/>(shared across cores)"]
+        RAM["Main Memory (DRAM)<br/>~100 cycles<br/>~8-64 GB"]
+        SSD["SSD<br/>~10-100 μs<br/>~256 GB - 2 TB"]
+        HDD["HDD<br/>~5-10 ms<br/>~1-10 TB"]
+
+        Regs --> L1 --> L2 --> L3 --> RAM --> SSD --> HDD
+    end
+
+    subgraph Cache["Cache Architecture"]
+        DirectMap["Direct-Mapped<br/>each block → 1 location<br/>simple but conflict-prone"]
+        SetAssoc["Set-Associative<br/>n-ways per set<br/>good balance"]
+        FullAssoc["Fully Associative<br/>any block anywhere<br/>complex, small caches"]
+    end
+
+    subgraph Replace["Replacement Policies"]
+        LRU["LRU<br/>least recently used"]
+        FIFO["FIFO<br/>first in, first out"]
+        Random["Random"]
+        LFU["LFU<br/>least frequently used"]
+    end
+
+    subgraph IO["I/O Systems"]
+        Prog["Programmed I/O<br/>CPU polls device<br/>wastes CPU cycles"]
+        Interrupt["Interrupt-Driven I/O<br/>device signals CPU<br/>ISR handles data"]
+        DMA["DMA<br/>direct memory access<br/>bypasses CPU for bulk<br/>transfer"]
+        Bus["Bus Architecture<br/>data + address + control<br/>PCIe, USB, SATA"]
+    end

@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Process States](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/02-processes.png)
+
 ### Process Concept
 
 A **process** is an instance of a program in execution. While a program is a passive entity (a file on disk), a process is active — it has a program counter, register values, a stack, and data sections.

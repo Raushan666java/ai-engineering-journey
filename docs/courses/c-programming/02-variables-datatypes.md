@@ -10,6 +10,8 @@
 
 ## 2.1 Variables in C
 
+![C Data Types and Operators Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch02-datatypes-operators.png)
+
 A variable is a named storage location in memory that holds a value of a specific type. Every variable must be declared before use.
 
 ```c

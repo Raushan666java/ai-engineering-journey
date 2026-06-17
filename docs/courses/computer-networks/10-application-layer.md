@@ -10,6 +10,8 @@
 
 ## 10.1 Domain Name System
 
+![Application Layer Protocols and Web Technologies](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch07-application.png)
+
 DNS translates human-readable domain names (e.g., www.example.com) to IP addresses. It is a distributed, hierarchical database with client-server architecture.
 
 ### 10.1.1 Name Space Hierarchy

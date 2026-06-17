@@ -1,0 +1,18 @@
+flowchart TD
+    subgraph Array["Array"]
+        Static["Static Array<br/>int arr[10];<br/>fixed size at compile time<br/>O(1) access, O(n) insert/delete"]
+        Dynamic["Dynamic Array<br/>ArrayList / vector<br/>grows when full (2x)<br/>amortized O(1) append"]
+        Mem["Memory Layout<br/>contiguous blocks<br/>arr[i] = base + i × sizeof(type)<br/>cache-friendly"]
+    end
+
+    subgraph LL["Linked Lists"]
+        Singly["Singly Linked List<br/>Node = [data | next→]<br/>O(1) insert at head<br/>O(n) search"]
+        Doubly["Doubly Linked List<br/>Node = [←prev | data | next→]<br/>bidirectional traversal<br/>O(1) delete with node ref"]
+        Circular["Circular Linked List<br/>tail.next = head<br/>round-robin scheduling"]
+    end
+
+    subgraph Compare["Comparison"]
+        COMP1["Array: O(1) access, O(n) insert/delete<br/>Linked List: O(n) access, O(1) insert/delete"]
+        COMP2["Array: contiguous memory<br/>Linked List: fragmented memory"]
+        COMP3["Array: better cache locality<br/>Linked List: no resizing needed"]
+    end

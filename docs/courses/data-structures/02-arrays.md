@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Arrays and Linked Lists Comparison](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch02-arrays-lists.png)
+
 ### Static Arrays
 
 A static array is a contiguous block of memory holding elements of the same type. The size is fixed at allocation time. Access is \( O(1) \) by index because the address can be computed as `base + index * sizeof(element)`.

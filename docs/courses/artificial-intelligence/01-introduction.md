@@ -15,6 +15,9 @@
 ## Theory
 
 ### Defining Artificial Intelligence
+
+![Introduction to AI](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch01-introduction.png)
+
 Artificial Intelligence (AI) is a multidisciplinary field aimed at creating systems capable of performing tasks that typically require human intelligence. Definitions often fall into four categories:
 1. **Acting Humanly**: The Turing Test approach, where a machine is intelligent if a human cannot distinguish it from another human during conversation.
 2. **Thinking Humanly**: The cognitive modeling approach, focusing on machines that mimic human thought processes and decision-making.

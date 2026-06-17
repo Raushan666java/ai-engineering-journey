@@ -1,0 +1,40 @@
+flowchart TD
+    subgraph PROBLEM["The Problem"]
+        RC["Race Condition\nMultiple threads access shared data\nResult depends on execution order"]
+        CS["Critical Section\nCode accessing shared resources\nMutual Exclusion / Progress / Bounded Waiting"]
+    end
+    
+    subgraph SOFTWARE["Software Solutions"]
+        PET["Peterson's Algorithm\n2-process software-only\nflag[] + turn variable"]
+    end
+    
+    subgraph HARDWARE["Hardware Support"]
+        TSL["Test-and-Set (TSL)\nAtomic read-modify-write"]
+        CAS["Compare-and-Swap (CAS)\nLock-free data structures\nx86 CMPXCHG"]
+    end
+    
+    subgraph MECHANISMS["OS Mechanisms"]
+        MUT["Mutex Lock\nBlocking, yields CPU\nPTHREAD_MUTEX"]
+        SPIN["Spinlock\nBusy wait, short CS only"]
+        SEM["Semaphore\nCounting / Binary\nwait(P) / signal(V)\nDijkstra 1965"]
+    end
+    
+    subgraph CLASSIC["Classic Problems"]
+        BUF["Bounded Buffer\nProducer-Consumer"]
+        RW["Readers-Writers\nMany readers / one writer"]
+        DPH["Dining Philosophers\nResource allocation\nDeadlock & starvation risk"]
+    end
+    
+    subgraph LINUX["Linux Mechanisms"]
+        L1["atomic_t - atomic integers"]
+        L2["spin_lock - short critical sections"]
+        L3["mutex_lock - long critical sections"]
+        L4["rwlock - reader-writer locks"]
+        L5["seqlock - writers never wait"]
+    end
+    
+    PROBLEM --> SOFTWARE
+    PROBLEM --> HARDWARE
+    PROBLEM --> MECHANISMS
+    MECHANISMS --> CLASSIC
+    MECHANISMS --> LINUX

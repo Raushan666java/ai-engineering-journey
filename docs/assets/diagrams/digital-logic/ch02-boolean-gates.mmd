@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph BoolAlg["Boolean Algebra Laws"]
+        Identity["A + 0 = A<br/>A · 1 = A"]
+        Null["A + 1 = 1<br/>A · 0 = 0"]
+        Idempotent["A + A = A<br/>A · A = A"]
+        Involution["(A')' = A"]
+        Complement["A + A' = 1<br/>A · A' = 0"]
+        Commutative["A + B = B + A<br/>A · B = B · A"]
+        Associative["(A+B)+C = A+(B+C)<br/>(A·B)·C = A·(B·C)"]
+        Distributive["A·(B+C) = A·B + A·C<br/>A + (B·C) = (A+B)·(A+C)"]
+        DeMorgans["(A·B)' = A' + B'<br/>(A+B)' = A' · B'"]
+        Absorp["A + A·B = A<br/>A·(A+B) = A"]
+    end
+
+    subgraph Gates["Logic Gates"]
+        AND["AND<br/>Y = A · B"]
+        OR["OR<br/>Y = A + B"]
+        NOT["NOT<br/>Y = A'"]
+        NAND["NAND<br/>Y = (A·B)'"]
+        NOR["NOR<br/>Y = (A+B)'"]
+        XOR["XOR<br/>Y = A ⊕ B"]
+        XNOR["XNOR<br/>Y = (A⊕B)'"]
+    end
+
+    subgraph Min["Minimization"]
+        KMap["Karnaugh Map<br/>2ⁿ cell grid<br/>group adjacent 1s<br/>power-of-2 rectangles"]
+        QM["Quine-McCluskey<br/>tabular method<br/>handles many variables"]
+    end

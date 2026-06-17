@@ -1,0 +1,30 @@
+stateDiagram-v2
+    [*] --> NEW : new Thread()
+    NEW --> RUNNABLE : start()
+    RUNNABLE --> BLOCKED : waiting for monitor lock
+    RUNNABLE --> WAITING : Object.wait()<br/>Thread.join()<br/>LockSupport.park()
+    RUNNABLE --> TIMED_WAITING : Thread.sleep()<br/>Object.wait(ms)<br/>Thread.join(ms)
+    BLOCKED --> RUNNABLE : lock acquired
+    WAITING --> RUNNABLE : notify() / notifyAll()
+    TIMED_WAITING --> RUNNABLE : timeout / interrupt
+    RUNNABLE --> TERMINATED : run() completes
+    RUNNABLE --> [*] : exception thrown
+
+    note right of RUNNABLE
+        Eligible for OS thread scheduler.
+        May be running or ready.
+    end note
+
+    note right of BLOCKED
+        Entering synchronized
+        block/method
+    end note
+
+    note right of WAITING
+        Waiting indefinitely for
+        another thread to act
+    end note
+
+    note right of TIMED_WAITING
+        Waiting with a timeout
+    end note

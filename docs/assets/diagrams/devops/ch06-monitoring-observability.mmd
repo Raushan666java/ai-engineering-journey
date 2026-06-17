@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph Monitor["Monitoring & Observability Pillars"]
+        Logs["Logs<br/>structured events<br/>application + system"]
+        Metrics["Metrics<br/>time-series numbers<br/>CPU, latency, requests"]
+        Traces["Traces<br/>request lifecycle<br/>distributed tracing"]
+    end
+
+    subgraph LogStack["Logging Stack"]
+        Filebeat["Filebeat / Fluentd<br/>log collection agent"]
+        Elastic["Elasticsearch<br/>storage + search"]
+        Kibana["Kibana<br/>visualization + dashboards"]
+        Loki["Grafana Loki<br/>log aggregation<br/>Prometheus-inspired"]
+    end
+
+    subgraph MetricStack["Metrics Stack"]
+        Prom["Prometheus<br/>pull-based metrics collection<br/>time-series DB<br/>PromQL query language"]
+        Grafana["Grafana<br/>dashboard + alerting<br/>multiple data sources"]
+    end
+
+    subgraph Tracing["Distributed Tracing"]
+        Jaeger["Jaeger<br/>OpenTelemetry collector<br/>trace visualization"]
+        Zipkin["Zipkin<br/>distributed tracing system"]
+    end
+
+    subgraph Alerts["Alerting"]
+        Alertman["Alertmanager<br/>deduplication + routing<br/>PagerDuty, Slack, email"]
+    end

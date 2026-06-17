@@ -1,0 +1,31 @@
+flowchart TD
+    subgraph FourApproaches["Four Approaches to AI"]
+        TH["Thinking Humanly\nCognitive modeling\nMimic human thought"]
+        TR["Thinking Rationally\nLaws of thought\nLogic-based reasoning"]
+        AH["Acting Humanly\nTuring Test\nHuman-like behavior"]
+        AR["Acting Rationally\nRational agent\nBest expected outcome"]
+    end
+
+    subgraph Timeline["AI History Timeline"]
+        T1["1943-1955\nGestation\nMcCulloch-Pitts\nNeural networks"]
+        T2["1956\nBirth of AI\nDartmouth workshop\n'AI' coined"]
+        T3["1952-1969\nEarly Success\nSymbolic AI\nProblem solvers"]
+        T4["1966-1973\nAI Winter\nComplexity barriers\nFunding cuts"]
+        T5["1969-1988\nExpert Systems\nKnowledge-based\nMYCIN, XCON"]
+        T6["1987-Present\nModern AI\nStatistical ML\nDeep learning, LLMs"]
+    end
+
+    T1 --> T2 --> T3 --> T4 --> T5 --> T6
+
+    subgraph Subfields["Core AI Subfields"]
+        S1["Search & Planning"]
+        S2["Knowledge & Reasoning"]
+        S3["Uncertainty & Probability"]
+        S4["Machine Learning"]
+        S5["NLP & Vision"]
+        S6["Robotics"]
+    end
+
+    style FourApproaches fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Timeline fill:#fff3e0,stroke:#f57c00,color:#000
+    style Subfields fill:#e8f5e9,stroke:#2e7d32,color:#000

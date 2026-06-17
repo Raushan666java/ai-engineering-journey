@@ -1,0 +1,46 @@
+flowchart TD
+    subgraph "Relationship Types"
+        O2O["One-to-One<br/>User → Profile<br/>hasOne / belongsTo"]
+        O2M["One-to-Many<br/>User → Posts<br/>hasMany / belongsTo"]
+        M2M["Many-to-Many<br/>User ←→ Roles<br/>belongsToMany<br/>pivot: role_user"]
+        HMT["Has-Many-Through<br/>Country → Posts<br/>via Users table"]
+        PM["Polymorphic<br/>Comment belongsTo<br/>Post OR Video<br/>morphMany / morphTo"]
+        M2MP["Many-to-Many Polymorphic<br/>Tag ←→ Posts & Videos<br/>morphedByMany / morphToMany<br/>pivot: taggables"]
+    end
+
+    subgraph "Eager Loading"
+        EL1["with('user') — 2 queries"]
+        EL2["with(['user','comments'])"]
+        EL3["Nested: with('user.profile')"]
+        EL4["Constrained: withWhereHas"]
+        EL5["Lazy: load('relation')"]
+        EL6["Counting: withCount('posts')"]
+    end
+
+    subgraph "N+1 Problem"
+        N1["BAD: foreach \$posts as \$p → \$p->user<br/>1 + N queries"]
+        N2["GOOD: Post::with('user')->get()<br/>Only 2 queries"]
+    end
+
+    subgraph "Scopes & Observers"
+        GS["Global Scopes<br/>Add to every query<br/>PublishedScope"]
+        LS["Local Scopes<br/>scopePopular()<br/>scopePublished()"]
+        OB["Observers<br/>creating/created<br/>updating/updated<br/>deleting/deleted"]
+    end
+
+    O2O --> EL1
+    O2M --> EL1
+    M2M --> EL2
+    HMT --> EL3
+    PM --> EL5
+    M2MP --> EL6
+    N1 --> EL1
+
+    style N1 fill:#e74c3c,color:#fff
+    style N2 fill:#27ae60,color:#fff
+    style O2O fill:#3498db,color:#fff
+    style O2M fill:#3498db,color:#fff
+    style M2M fill:#3498db,color:#fff
+    style HMT fill:#3498db,color:#fff
+    style PM fill:#3498db,color:#fff
+    style M2MP fill:#3498db,color:#fff

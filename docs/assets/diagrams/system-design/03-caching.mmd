@@ -1,0 +1,46 @@
+flowchart TD
+    A[Caching Strategies] --> B[Read Patterns]
+    A --> C[Write Patterns]
+    A --> D[Eviction Policies]
+    A --> E[Consistency Models]
+
+    B --> B1[Cache-Aside]
+    B --> B2[Read-Through]
+    B1 --> B1P["App checks cache -> miss -> DB -> populate cache"]
+    B2 --> B2P["Cache auto-loads from DB on miss"]
+
+    C --> C1[Write-Through]
+    C --> C2[Write-Behind]
+    C --> C3[Refresh-Ahead]
+
+    C1 --> C1P["Write to cache -> write to DB sync"]
+    C1 --> C1S["Strong consistency, higher latency"]
+
+    C2 --> C2P["Write to cache -> ack immediately -> flush async"]
+    C2 --> C2S["Low latency, risk of data loss"]
+
+    C3 --> C3P["Proactive refresh near TTL expiry"]
+    C3 --> C3S["Smooth DB load, complex tuning"]
+
+    D --> D1[LRU]
+    D --> D2[LFU]
+    D --> D3[FIFO]
+    D --> D4[ARC]
+    D --> D5[2Q]
+
+    D1 --> D1D["Doubly linked list + hash map O1"]
+    D2 --> D2D["Frequency counters, resists scans"]
+    D4 --> D4D["Adaptive LRU+LFU hybrid"]
+
+    E --> E1[TTL-Based]
+    E --> E2[Event-Driven CDC]
+    E --> E3[Write Invalidate]
+
+    F[Thundering Herd] --> F1[Mutex Locking]
+    F --> F2[XFetch Probabilistic]
+
+    G[Distributed Cache] --> H[Redis Cluster]
+    G --> I[Memcached]
+
+    H --> HD["Hash slots, persistence, data types"]
+    I --> ID["Simple get/set, no replication"]

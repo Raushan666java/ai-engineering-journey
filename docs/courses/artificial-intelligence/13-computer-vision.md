@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 
 ## 13.1 Image Formation
 
+![Vision and Robotics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch13-vision-robotics.png)
+
 Digital images are two-dimensional arrays of **pixels**, each representing light intensity at a spatial location. A grayscale image is a matrix $I \in \mathbb{R}^{H \times W}$. A color image has three channels (red, green, blue): $I \in \mathbb{R}^{H \times W \times 3}$.
 
 **Image formation** involves:

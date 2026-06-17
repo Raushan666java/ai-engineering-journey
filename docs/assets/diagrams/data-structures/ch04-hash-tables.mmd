@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph Hash["Hash Table Concepts"]
+        Key["Key → Hash Function → Index → Bucket"]
+        HF["Hash Function<br/>h(key) = key % table_size<br/>or cryptographic (MD5, SHA)"]
+        Load["Load Factor α = n / m<br/>(entries / buckets)<br/>α > 0.7 → resize"]
+    end
+
+    subgraph Collision["Collision Resolution"]
+        Chaining["Separate Chaining<br/>linked list per bucket<br/>O(α) average search"]
+        OpenAddr["Open Addressing"]
+        LP["Linear Probing<br/>h(k,i) = (h(k) + i) % m<br/>primary clustering"]
+        QP["Quadratic Probing<br/>h(k,i) = (h(k) + i²) % m<br/>secondary clustering"]
+        DH["Double Hashing<br/>h(k,i) = (h₁(k) + i×h₂(k)) % m<br/>best distribution"]
+    end
+
+    subgraph Variants["Variants"]
+        Ordered["Ordered Hash Table<br/>sorted keys"]
+        RobinHood["Robin Hood Hashing<br/>reduce variance"]
+        Cuckoo["Cuckoo Hashing<br/>two hash functions<br/>O(1) worst-case lookup"]
+    end
+
+    subgraph Complexity["Complexity"]
+        C1["Average: O(1) lookup/insert/delete"]
+        C2["Worst: O(n) (all keys collide)"]
+        C3["Good hash function is critical"]
+    end

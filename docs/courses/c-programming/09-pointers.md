@@ -9,6 +9,8 @@
 - Use `void` pointers for type-generic operations
 - Declare and use function pointers
 
+![C Pointers: Fundamentals, Arithmetic, Function Pointers and Pitfalls](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch09-pointers.png)
+
 ## 9.1 Pointer Fundamentals
 
 A pointer is a variable that holds the memory address of another variable.

@@ -1,0 +1,16 @@
+flowchart TD
+    subgraph Input["Source Files"]
+        A[("Source Code<br/>(file.c)")]
+        B[("Header Files<br/>(file.h)")]
+    end
+    A --> C[Preprocessor<br/>cpp]
+    B --> C
+    C --> D[("Preprocessed Source<br/>(file.i)")]
+    D --> E[Compiler<br/>cc1 / gcc -S]
+    E --> F[("Assembly Code<br/>(file.s)")]
+    F --> G[Assembler<br/>as]
+    G --> H[("Object Code<br/>(file.o)")]
+    H --> I[Linker<br/>ld]
+    I --> J[("Executable<br/>(a.out / program.exe)")]
+    I --> K[("Static Libraries<br/>(lib*.a)")]
+    I --> L[("Shared Libraries<br/>(lib*.so)")]

@@ -1,0 +1,18 @@
+flowchart TD
+    subgraph Seq["Sequence DP Problems"]
+        LCS["Longest Common Subsequence\nX[1..i], Y[1..j]\nMatch: +1, Mismatch: max(left, up)\nO(mn) time"]
+        LIS["Longest Increasing Subsequence\ndp[i] = 1 + max(dp[j]) for A[j]<A[i]\nO(n²) or O(n log n) via patience sorting"]
+        ED["Edit Distance\nInsert, Delete, Replace\ndp[i][j] = min(left, up, diag) + 1\nO(mn) time"]
+        MCM["Matrix Chain\nMinimize multiplications\nInterval DP\nO(n³) time"]
+        PP["Palindrome Partitioning\nMin cuts for all-palindrome parts\nPrecompute isPal → 1D DP\nO(n²) time"]
+    end
+
+    subgraph LISnlogn["Patience Sorting O(n log n)"]
+        P1["tails[k] = smallest tail of LIS length k+1"]
+        P2["For each x: lower_bound in tails"]
+        P3["If x > all tails → append"]
+        P4["Else → replace tails[i] = x"]
+    end
+
+    style Seq fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style LISnlogn fill:#fff3e0,stroke:#f57c00,color:#000

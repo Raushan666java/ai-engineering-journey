@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![NP-Completeness Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch15-np-completeness.png)
+
 ### 15.1 Complexity Classes
 
 **Definition 15.1 (P).** The class P consists of all decision problems that can be solved in polynomial time by a deterministic Turing machine.

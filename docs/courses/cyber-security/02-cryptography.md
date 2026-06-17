@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Cryptography & TLS Protocol](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch02-crypto-tls.png)
+
 ### Symmetric Encryption
 In symmetric-key cryptography, a single shared secret key is used for both encryption and decryption.
 - **Characteristics:** Fast and computationally efficient. Ideal for bulk data encryption.

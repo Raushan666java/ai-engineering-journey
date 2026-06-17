@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Semantic Search & RAG Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/16-search-rag.png)
+
 ### 16.1 Full-Text Search
 
 Full-text search searches within documents for exact or stemmed keyword matches. Laravel's query builder provides a cross-database `whereFullText()` method:

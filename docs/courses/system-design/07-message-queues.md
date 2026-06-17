@@ -13,6 +13,8 @@
 ---
 ## Theory
 
+![Message Queue Architectures Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/07-message-queues.png)
+
 ### Synchronous vs Asynchronous Communication
 
 In distributed systems, services communicate either synchronously or asynchronously.

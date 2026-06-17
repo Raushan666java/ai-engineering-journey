@@ -1,0 +1,33 @@
+flowchart TD
+    subgraph CIA["CIA Triad"]
+        Conf["Confidentiality\nData privacy\nEncryption, Access control"]
+        Integ["Integrity\nData unchanged\nHashing, Signatures"]
+        Avail["Availability\nSystem uptime\nRedundancy, Backups"]
+    end
+
+    subgraph AAA["AAA Framework"]
+        AuthN["Authentication\nWho are you?\nPassword, Biometric"]
+        AuthZ["Authorization\nWhat can you do?\nPermissions, Roles"]
+        Acc["Accounting\nWhat did you do?\nAudit logs"]
+    end
+
+    subgraph STRIDE["STRIDE Threat Model"]
+        S["Spoofing\nFake identity"]
+        T["Tampering\nModify data"]
+        R["Repudiation\nDeny action"]
+        I["Info Disclosure\nData leak"]
+        D["DoS\nDeny service"]
+        E["Elevation\nPrivilege escalation"]
+    end
+
+    subgraph DiD["Defense in Depth"]
+        L1["Perimeter\nFirewall, VPN"]
+        L2["Network\nIDS/IPS, Segmentation"]
+        L3["Host\nAV, HIDS, Hardening"]
+        L4["Application\nInput validation, WAF"]
+        L5["Data\nEncryption, DLP"]
+    end
+
+    style CIA fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style STRIDE fill:#fce4ec,stroke:#c62828,color:#000
+    style DiD fill:#e8f5e9,stroke:#2e7d32,color:#000

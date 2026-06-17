@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph SDN["Software-Defined Networking"]
+        App["Application Layer<br/>network apps, orchestration"]
+        Ctrl["Control Layer<br/>SDN Controller<br/>(ONOS, OpenDaylight)"]
+        Data["Data / Infrastructure Layer<br/>switches, routers, APs"]
+        South["Southbound API<br/>OpenFlow, NETCONF"]
+        North["Northbound API<br/>REST, gRPC"]
+
+        App --> North --> Ctrl
+        Ctrl --> South --> Data
+    end
+
+    subgraph NFV["Network Functions Virtualization"]
+        VNF["Virtual Network Functions<br/>virtual router, firewall,<br/>load balancer, VPN gateway"]
+        Standard["Standard servers<br/>instead of proprietary hardware"]
+    end
+
+    subgraph Cloud["Cloud Networking"]
+        VPC["Virtual Private Cloud<br/>isolated network in cloud"]
+        Overlay["Overlay Networks<br/>VXLAN, Geneve, NVGRE<br/>tunneled L2 over L3"]
+        SDWAN["SD-WAN<br/>software-defined WAN<br/>traffic steering, optimization"]
+        LB["Load Balancing<br/>L4 (TCP/UDP) and L7 (HTTP)<br/>round-robin, least connections"]
+    end
+
+    subgraph Modern["Modern Trends"]
+        QUIC["QUIC / HTTP/3<br/>UDP-based, 0-RTT<br/>built-in encryption"]
+        ICN["Information-Centric Networking<br/>content-named, not host-named"]
+        IoT["IoT Networking<br/>LoRaWAN, Zigbee, BLE<br/>constrained devices"]
+    end

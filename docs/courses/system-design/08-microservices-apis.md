@@ -14,6 +14,8 @@
 ---
 ## Theory
 
+![Microservices Patterns Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/08-microservices-apis.png)
+
 ### Monolith vs Microservices
 
 A **monolith** is a single deployable unit containing all application logic. A **microservice architecture** decomposes the application into independently deployable services, each owning a specific business capability.

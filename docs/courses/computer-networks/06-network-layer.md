@@ -11,6 +11,8 @@
 
 ## 6.1 IPv4
 
+![Network Layer: IP, Addressing, Supporting Protocols and Routing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch05-network-routing.png)
+
 ### 6.1.1 IPv4 Datagram Format
 
 An IPv4 datagram consists of a 20-byte fixed header plus optional fields:

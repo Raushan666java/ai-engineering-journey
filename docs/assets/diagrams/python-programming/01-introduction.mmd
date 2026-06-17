@@ -1,0 +1,25 @@
+flowchart TB
+    subgraph ECOSYSTEM["Python Ecosystem"]
+        direction TB
+        A["Python Language"] --> B["Interpreter"]
+        B --> C["Bytecode (.pyc)"]
+        C --> D["Python Virtual Machine"]
+        D --> E["OS / Hardware"]
+        
+        F["Tools"] --> G["pip (package manager)"]
+        F --> H["venv / conda (environments)"]
+        F --> I["REPL (interactive shell)"]
+        
+        J["Editors"] --> K["VS Code"]
+        J --> L["PyCharm"]
+        J --> M["Jupyter Lab"]
+        J --> N["IDLE"]
+        
+        O["Package Types"] --> P["Standard Library"]
+        O --> Q["PyPI Third-Party"]
+        O --> R["Local Modules"]
+    end
+    
+    S["User Code (.py)"] --> A
+    G --> T["PyPI Repository"]
+    H --> U["Isolated Dependencies"]

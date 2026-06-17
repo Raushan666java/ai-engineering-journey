@@ -1,0 +1,32 @@
+flowchart TD
+    subgraph ControlModels["Access Control Models"]
+        DAC["DAC\nOwner controls access\nFile systems"]
+        MAC["MAC\nSystem-wide labels\nMilitary/classified"]
+        RBAC["RBAC\nRole-based permissions\nEnterprise standard"]
+        ABAC["ABAC\nAttribute-based rules\nDynamic, context-aware"]
+    end
+
+    subgraph MFA["Multi-Factor Authentication"]
+        K["Knowledge\nPassword, PIN"]
+        P["Possession\nPhone, Token, App"]
+        I["Inherence\nFingerprint, Face"]
+        L["Location\nGPS, IP range"]
+    end
+
+    subgraph Protocols["Auth Protocols"]
+        SAML["SAML 2.0\nXML-based SSO\nEnterprise federation"]
+        OIDC["OIDC / OAuth 2.0\nJSON/JWT-based\nModern apps"]
+        LDAP["LDAP\nDirectory services\nCentralized users"]
+    end
+
+    subgraph Lifecycle["Identity Lifecycle"]
+        Prov["Provisioning\nCreate account"]
+        Auth["Authentication\nVerify identity"]
+        AuthZ["Authorization\nGrant access"]
+        Rev["Revocation\nRemove access"]
+    end
+
+    style ControlModels fill:#e3f2fd,stroke:#1565c0,color:#000
+    style MFA fill:#fff3e0,stroke:#f57c00,color:#000
+    style Protocols fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Lifecycle fill:#f3e5f5,stroke:#7b1fa2,color:#000

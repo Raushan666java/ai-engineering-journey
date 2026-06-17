@@ -1,0 +1,31 @@
+flowchart TD
+    WAF["Well-Architected Framework"] --> OE["Operational Excellence\nMonitor, improve\nAutomation, IaC"]
+    WAF --> Sec["Security\nIAM, encryption\nLeast privilege"]
+    WAF --> Rel["Reliability\nHA, DR, Backup\nAuto healing"]
+    WAF --> PE["Performance Efficiency\nRight-size resources\nServerless, caching"]
+    WAF --> CO["Cost Optimization\nPay-as-you-go\nSpot, reserved"]
+    WAF --> Sus["Sustainability\nReduce waste\nGreen regions"]
+
+    subgraph HA["High Availability"]
+        AZ["Availability Zones\nMulti-AZ deployment"]
+        LB["Load Balancing\nTraffic distribution"]
+        AS["Auto Scaling\nScale in/out"]
+    end
+
+    subgraph DR["Disaster Recovery"]
+        BR["Backup & Restore\nLow cost, high RTO"]
+        PL["Pilot Light\nCore data synced"]
+        WS["Warm Standby\nReduced environment"]
+        AA["Active-Active\nFull multi-region"]
+    end
+
+    Rel --> HA
+    Rel --> DR
+
+    style WAF fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style OE fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Sec fill:#fce4ec,stroke:#c62828,color:#000
+    style Rel fill:#fff3e0,stroke:#f57c00,color:#000
+    style PE fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    style CO fill:#e0f7fa,stroke:#00838f,color:#000
+    style Sus fill:#f1f8e9,stroke:#558b2f,color:#000

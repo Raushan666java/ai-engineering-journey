@@ -12,6 +12,8 @@
 - Use `assert.h` for runtime assertions
 - Understand `setjmp.h` for non-local jumps
 
+![C Standard Library and Advanced Topics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch17-lib-advanced.png)
+
 ## 17.1 `<stdlib.h>` — General Utilities
 
 ### Memory Allocation

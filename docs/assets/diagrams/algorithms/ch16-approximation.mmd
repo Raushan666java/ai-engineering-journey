@@ -1,0 +1,22 @@
+flowchart TD
+    subgraph Approx["Approximation Algorithms\nFor NP-hard optimization problems"]
+        VC["Vertex Cover\nPick uncovered edge\nAdd both endpoints\n2-approximation"]
+        TSP["Traveling Salesman\nMST → DFS tour → shortcut\n2-approximation\n(Metric TSP)"]
+        SC["Set Cover\nPick set covering\nmost uncovered elements\nln(n)-approximation"]
+        MS["MAX-SAT\nRandom assignment\nExpected 1/2-approximation\nDerandomizable"]
+    end
+
+    subgraph Ratios["Approximation Ratio ρ"]
+        R1["Minimization: C_alg / C_opt ≤ ρ"]
+        R2["Maximization: C_opt / C_alg ≤ ρ"]
+        R3["1 = optimal (P problems)"]
+    end
+
+    subgraph Schemes["Approximation Schemes"]
+        PTAS["PTAS\nPolynomial in n\nExponential in 1/ε"]
+        FPTAS["FPTAS\nPolynomial in n AND 1/ε\nKnapsack has FPTAS"]
+    end
+
+    style Approx fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Ratios fill:#fce4ec,stroke:#c62828,color:#000
+    style Schemes fill:#e8f5e9,stroke:#2e7d32,color:#000

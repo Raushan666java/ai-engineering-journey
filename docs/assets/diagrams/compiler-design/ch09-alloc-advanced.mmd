@@ -1,0 +1,41 @@
+mindmap
+  root(("Register Allocation & Advanced Topics"))
+    Register_Allocation
+      Goal
+        Maximize values in registers
+        Minimize memory spills
+      Graph_Coloring
+        Build interference graph
+        Chaitin's algorithm
+        Color with K colors (K = registers)
+        Spill if K colors insufficient
+      Allocation_Strategies
+        Local (basic block)
+        Global (whole function)
+        Linear scan (fast, JIT)
+      Challenges
+        Callee/Caller save conventions
+        Pre-colored registers
+        Rematerialization
+    Advanced_Topics
+      Just-In-Time_Compilation
+        Hotspot detection
+        Tiered compilation
+        Deoptimization
+      Garbage_Collection
+        Tracing (mark-sweep, copying)
+        Reference counting
+        Generational GC
+      Parallelism
+        Automatic parallelization
+        Vectorization (SIMD)
+        Thread-level speculation
+      Optimization_Techniques
+        Inlining
+        Tail-call optimization
+        Devirtualization
+        Profile-guided optimization
+      Language_Specific
+        Exception handling
+        Reflection / Dynamic features
+        Separate compilation

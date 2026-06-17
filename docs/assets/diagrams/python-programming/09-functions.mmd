@@ -1,0 +1,47 @@
+flowchart LR
+    subgraph PARAMETERS["Parameter Types"]
+        direction TB
+        P1["Positional"]
+        P2["Keyword"]
+        P3["Default"]
+        P4["*args (tuple)"]
+        P5["**kwargs (dict)"]
+        P6["Positional-Only / (slash)"]
+        P7["Keyword-Only * (star)"]
+    end
+    
+    subgraph SCOPE["LEGB Scope Rule"]
+        L["Local - function body"]
+        E["Enclosing - outer function"]
+        G["Global - module level"]
+        B["Built-in - Python names"]
+    end
+    
+    subgraph TYPES["Function Types"]
+        F1["Regular def"]
+        F2["Lambda (anonymous)"]
+        F3["Nested / Inner"]
+        F4["Closure - captures env"]
+        F5["First-Class - assignable"]
+        F6["Recursive"]
+    end
+    
+    subgraph ANNOTATIONS["Type Annotations"]
+        A1["def f(x: int) -> str:"]
+        A2["Union: int | str"]
+        A3["Optional: int | None"]
+        A4["Collections: list[int]"]
+    end
+    
+    subgraph PATTERNS["Key Patterns"]
+        R1["Mutable default arg pitfall"]
+        R2["global / nonlocal keywords"]
+        R3["Argument unpacking (* / **)"]
+        R4["Multiple return as tuple"]
+    end
+    
+    PARAMETERS --> CALL["Function Call"]
+    CALL --> SCOPE
+    TYPES --> CALL
+    ANNOTATIONS --> DEF["Function Definition"]
+    PATTERNS --> DEF

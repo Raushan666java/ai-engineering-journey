@@ -1,0 +1,29 @@
+flowchart LR
+    subgraph Inheritance_Types["Inheritance Types"]
+        direction TB
+        S["Single<br/>Base → Derived"] --- M1["Multilevel<br/>A → B → C"]
+        M1 --- H["Hierarchical<br/>One Base, Many Derived"]
+        H --- MU["Multiple<br/>Two+ Bases"]
+        MU --- HY["Hybrid / Diamond<br/>Virtual Inheritance"]
+    end
+
+    subgraph Access_Control["Access Control in Inheritance"]
+        AC1["public: is-a relationship"]
+        AC2["protected: limited visibility"]
+        AC3["private: implemented-in-terms-of"]
+    end
+
+    subgraph Virtual_Inheritance["Virtual Inheritance"]
+        VI1["Diamond Problem<br/>- two copies of A's members"]
+        VI2["Virtual Base<br/>- single shared subobject"]
+        VI3["Most-derived initializes<br/>virtual base directly"]
+    end
+
+    subgraph Order["Construction / Destruction Order"]
+        O1["Construction: base → derived"]
+        O2["Destruction: derived → base"]
+    end
+
+    Inheritance_Types --> Access_Control
+    Inheritance_Types --> Virtual_Inheritance
+    Inheritance_Types --> Order

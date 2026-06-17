@@ -1,0 +1,42 @@
+flowchart LR
+    subgraph CONCEPT["Virtual Memory Concept"]
+        VM1["Demand Paging\nPages loaded on reference"]
+        VM2["Page Fault\nValid=0 -> trap to OS"]
+        VM3["COW - Copy-on-Write\nfork() shares pages\nCopy only on write"]
+    end
+    
+    subgraph REPLACEMENT["Page Replacement"]
+        FIFO["FIFO\nOldest page replaced\nBelady's Anomaly possible"]
+        OPT["Optimal (MIN)\nReplace farthest future use\nTheoretical benchmark"]
+        LRU["LRU\nReplace least recently used\nApproximates OPT\nCounter / Stack / Ref bit"]
+        CLOCK["Second-Chance (Clock)\nCircular FIFO + ref bits\nGood approximation of LRU\nLow overhead"]
+    end
+    
+    subgraph ALLOCATION["Frame Allocation"]
+        EQ["Equal - frames/process"]
+        PROP["Proportional - by process size"]
+        PRIO["Priority - more frames for higher priority"]
+    end
+    
+    subgraph THRASHING["Thrashing"]
+        T1["Working set > physical memory"]
+        T2["Positive feedback loop\nmore paging -> less CPU -> more processes"]
+        T3["Working Set Model\nPages in last Delta window\nDenning 1968"]
+        T4["Locality\nSpatial - nearby addresses\nTemporal - same address soon"]
+    end
+    
+    subgraph TRADEOFFS["Page Size Trade-offs"]
+        PS1["Small: less frag, larger table"]
+        PS2["Large: smaller table, bigger TLB reach"]
+        PS3["Typical: 4KB, Huge: 2MB/1GB"]
+    end
+    
+    CONCEPT --> REPLACEMENT
+    REPLACEMENT --> ALLOCATION
+    ALLOCATION --> THRASHING
+    THRASHING --> TRADEOFFS
+    
+    style OPT fill:#ff9900,color:#000
+    style FIFO fill:#66ccff,color:#000
+    style LRU fill:#66ff99,color:#000
+    style CLOCK fill:#ffcc66,color:#000

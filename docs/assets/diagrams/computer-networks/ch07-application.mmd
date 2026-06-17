@@ -1,0 +1,14 @@
+flowchart TD
+    subgraph AppLayer["Application Layer Protocols"]
+        HTTP["HTTP/1.1 → HTTP/2 → HTTP/3<br/>GET, POST, PUT, DELETE<br/>status codes, headers, cookies"]
+        DNS["Domain Name System<br/>hierarchical: .com → example → www<br/>recursive & iterative queries<br/>A, AAAA, CNAME, MX, NS records"]
+        SMTP["SMTP / POP3 / IMAP<br/>SMTP: push mail between servers<br/>POP3: download & delete<br/>IMAP: server-side folders"]
+        FTP["FTP<br/>control (21) + data (20)<br/>active & passive modes"]
+    end
+
+    subgraph WebTech["Web Technologies"]
+        TLS["TLS / SSL<br/>handshake → key exchange<br/>encrypted HTTP (HTTPS)"]
+        CDN["Content Delivery Networks<br/>edge caching, DDoS protection"]
+        WebSocket["WebSocket<br/>full-duplex over TCP<br/>real-time communication"]
+        API["REST / gRPC<br/>JSON, Protocol Buffers<br/>QUIC-based transport"]
+    end

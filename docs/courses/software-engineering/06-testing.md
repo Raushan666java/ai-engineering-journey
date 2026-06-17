@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: distinguish between 
 
 ## Theory
 
+![Software Testing Levels Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/06-testing.png)
+
 ### Verification and Validation
 
 Verification and validation (V&V) are the two principal approaches to establishing that a software system meets its specification and satisfies stakeholder needs. Verification answers the question "Are we building the product right?" It checks that the software conforms to its specification. Validation answers the question "Are we building the right product?" It checks that the software meets the actual needs of the customer.

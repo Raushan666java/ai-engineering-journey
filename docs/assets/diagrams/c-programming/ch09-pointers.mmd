@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph PointerBasics["Pointer Fundamentals"]
+        Var["int x = 42;<br/>address: 0x1000"]
+        Ptr["int *ptr = &x;<br/>ptr stores 0x1000<br/>*ptr dereferences to 42"]
+        Null["int *p = NULL;<br/>points to nothing<br/>dereferencing = segfault"]
+        PPtr["int **p = &ptr;<br/>pointer to pointer<br/>**p reaches x"]
+    end
+
+    subgraph Arith["Pointer Arithmetic"]
+        Base["int arr[5];<br/>arr = &arr[0] at 0x1000"]
+        P0["arr + 0 → 0x1000"]
+        P1["arr + 1 → 0x1004"]
+        P2["arr + 2 → 0x1008"]
+        PN["arr + n → arr + n*sizeof(int)"]
+    end
+
+    subgraph FuncPtr["Function Pointers"]
+        FP["int (*cmp)(int, int);"]
+        FPAssign["cmp = &compare;"]
+        FPCall["result = cmp(a, b);"]
+        FPArray["arr[0] = &add;<br/>arr[1] = &sub;<br/>arr[2] = &mul;"]
+    end
+
+    subgraph Danger["Common Pitfalls"]
+        D1["⚠️ Uninitialized pointer<br/>(wild pointer)"]
+        D2["⚠️ Dangling pointer<br/>(after free())"]
+        D3["⚠️ Buffer overflow<br/>(array bounds violation)"]
+        D4["⚠️ Returning address<br/>of local variable"]
+    end

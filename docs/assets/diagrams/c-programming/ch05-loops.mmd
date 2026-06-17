@@ -1,0 +1,30 @@
+flowchart TD
+    subgraph While["while Loop"]
+        W["while (condition)"] --> WCheck{"condition<br/>true?"}
+        WCheck -- yes --> WBody["loop body"]
+        WBody --> WCheck
+        WCheck -- no --> WExit
+    end
+
+    subgraph DoWhile["do-while Loop"]
+        DWBody["do { loop body }"]
+        DWBody --> DWCheck{"condition<br/>true?"}
+        DWCheck -- yes --> DWBody
+        DWCheck -- no --> DWExit
+    end
+
+    subgraph For["for Loop"]
+        Init["initialization<br/>i = 0"]
+        Init --> FCheck{"condition<br/>i < n?"}
+        FCheck -- yes --> FBody["loop body"]
+        FBody --> Update["increment<br/>i++"]
+        Update --> FCheck
+        FCheck -- no --> FExit
+    end
+
+    subgraph Control["Jump Statements"]
+        Break["break<br/>exit loop immediately"]
+        Continue["continue<br/>skip to next iteration"]
+        Goto["goto<br/>jump to label"]
+        Return["return<br/>exit function"]
+    end

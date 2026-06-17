@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Monitoring, Logging and Observability Stack](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch06-monitoring-observability.png)
+
 ### What is Site Reliability Engineering (SRE)?
 SRE is a discipline that incorporates aspects of software engineering and applies them to infrastructure and operations problems. The main goals are to create scalable and highly reliable software systems. SRE is often described as "what happens when you ask a software engineer to design an operations function."
 

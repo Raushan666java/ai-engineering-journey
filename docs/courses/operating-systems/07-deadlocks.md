@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Deadlock Handling](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/07-deadlocks.png)
+
 ### Deadlock Definition
 
 A **deadlock** is a state in which every process in a set is waiting for an event that can only be caused by another process in the set. Since all are waiting, none can proceed — the system is permanently blocked.

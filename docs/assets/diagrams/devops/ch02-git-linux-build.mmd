@@ -1,0 +1,31 @@
+flowchart TD
+    subgraph Git["Git Workflow"]
+        WS["Workspace<br/>local files"]
+        Index["Index / Staging<br/>git add"]
+        LocalRepo["Local Repository<br/>git commit"]
+        RemoteRepo["Remote Repository<br/>git push"]
+        WS --> Index --> LocalRepo --> RemoteRepo
+        RemoteRepo -. "git fetch / git pull" .-> WS
+    end
+
+    subgraph Branching["Branching Strategies"]
+        GitFlow["GitFlow<br/>main + develop + feature<br/>release + hotfix branches"]
+        Trunk["Trunk-Based Dev<br/>short-lived feature branches<br/>frequent merge to main"]
+        GHFlow["GitHub Flow<br/>feature branch → PR → main"]
+    end
+
+    subgraph Linux["Linux Basics for DevOps"]
+        CLI["Command Line<br/>ls, cd, grep, awk, sed"]
+        FileSys["File System<br/>/, /etc, /var, /home<br/>permissions (chmod, chown)"]
+        Process["Processes<br/>ps, top, systemd, journalctl"]
+        Net["Networking<br/>ssh, scp, netstat, curl"]
+        Pkg["Package Mgmt<br/>apt, yum, brew"]
+        Script["Scripting<br/>bash, cron jobs"]
+    end
+
+    subgraph BuildTools["Build Tools"]
+        Maven["Maven<br/>pom.xml, dependencies<br/>compile, test, package"]
+        Gradle["Gradle<br/>build.gradle<br/>Groovy/Kotlin DSL"]
+        NPM["npm / yarn<br/>package.json<br/>Node.js ecosystem"]
+        Make["Make<br/>Makefile, targets"]
+    end

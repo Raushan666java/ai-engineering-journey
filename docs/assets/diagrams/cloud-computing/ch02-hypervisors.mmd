@@ -1,0 +1,40 @@
+flowchart TD
+    subgraph Type1["Type 1 Hypervisor (Bare-Metal)"]
+        HW1["Physical Hardware"]
+        H1["Hypervisor\nVMware ESXi / Hyper-V / KVM"]
+        VM1a["VM 1\nGuest OS + Apps"]
+        VM1b["VM 2\nGuest OS + Apps"]
+        VM1c["VM N\nGuest OS + Apps"]
+        HW1 --> H1
+        H1 --> VM1a
+        H1 --> VM1b
+        H1 --> VM1c
+    end
+
+    subgraph Type2["Type 2 Hypervisor (Hosted)"]
+        HW2["Physical Hardware"]
+        HOS["Host OS\nWindows / Linux / macOS"]
+        H2["Hypervisor\nVirtualBox / VMware Workstation"]
+        VM2a["VM 1\nGuest OS + Apps"]
+        VM2b["VM 2\nGuest OS + Apps"]
+        HW2 --> HOS --> H2
+        H2 --> VM2a
+        H2 --> VM2b
+    end
+
+    subgraph Cont["Containerization"]
+        HCW["Physical Hardware"]
+        COS["Host OS\nLinux Kernel"]
+        CE["Container Engine\nDocker"]
+        C1["Container 1\nApp A"]
+        C2["Container 2\nApp B"]
+        C3["Container 3\nApp C"]
+        HCW --> COS --> CE
+        CE --> C1
+        CE --> C2
+        CE --> C3
+    end
+
+    style Type1 fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Type2 fill:#fff3e0,stroke:#f57c00,color:#000
+    style Cont fill:#e8f5e9,stroke:#2e7d32,color:#000,stroke-width:2px

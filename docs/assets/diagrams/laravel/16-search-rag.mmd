@@ -1,0 +1,51 @@
+flowchart LR
+    subgraph "Input"
+        Q["User Query<br/>'How to install Laravel?'"]
+    end
+
+    subgraph "Full-Text Search"
+        FT["whereFullText()<br/>MATCH/AGAINST (MySQL)<br/>to_tsvector (PostgreSQL)"]
+        FTI["Full-Text Index<br/>articles_title_body_fulltext"]
+    end
+
+    subgraph "Vector Search"
+        VS1["Embed Query<br/>Str::toEmbeddings()"]
+        VS2["pgvector<br/>content_embedding column<br/>1536 dimensions"]
+        VS3["whereVectorSimilarTo()<br/><=> cosine distance<br/>HNSW index"]
+    end
+
+    subgraph "Reranking"
+        RR1["Retrieve Top 50<br/>Fast vector/FT step"]
+        RR2["Cross-encoder Rerank<br/>Reranking::of()<br/>rerank() method"]
+        RR3["Top 10 Results<br/>rerankScore 0-1"]
+    end
+
+    subgraph "LLM Generation (RAG)"
+        RG1["Build Context<br/>Pages → markdown"]
+        RG2["System Prompt + Context + Question"]
+        RG3["LLM Answer<br/>Str::ask()"]
+    end
+
+    subgraph "Scout"
+        SC1["Searchable trait"]
+        SC2["toSearchableArray()"]
+        SC3["SearchUsingFullText<br/>SearchUsingPrefix"]
+        SC4["Post::search('query')"]
+    end
+
+    Q --> FT
+    Q --> VS1 --> VS2 --> VS3
+
+    FT --> RR1
+    VS3 --> RR1
+    RR1 --> RR2 --> RR3
+
+    RR3 --> RG1 --> RG2 --> RG3
+
+    SC1 --> SC2 --> SC3 --> SC4
+
+    style Q fill:#3498db,color:#fff
+    style FT fill:#2c3e50,color:#fff
+    style VS3 fill:#9b59b6,color:#fff
+    style RR2 fill:#e67e22,color:#fff
+    style RG3 fill:#27ae60,color:#fff

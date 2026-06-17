@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 4.1 Base and Derived Classes
 
+![Inheritance Types Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/04-inheritance.png)
+
 Inheritance enables a class to acquire the members of another class, establishing an is-a relationship. The class being inherited from is the *base class* (or parent, superclass); the inheriting class is the *derived class* (or child, subclass).
 
 ```cpp

@@ -1,0 +1,36 @@
+flowchart TD
+    subgraph ACID["ACID Properties"]
+        Atom["Atomicity<br/>all or nothing<br/>committed or aborted"]
+        Consist["Consistency<br/>valid state → valid state<br/>constraints upheld"]
+        Isol["Isolation<br/>concurrent transactions<br/>appear serial"]
+        Durable["Durability<br/>committed = permanent<br/>survives crashes"]
+    end
+
+    subgraph TransLife["Transaction Lifecycle"]
+        Begin["BEGIN TRANSACTION"]
+        Read["READ / WRITE operations"]
+        Commit["COMMIT<br/>make changes permanent"]
+        Rollback["ROLLBACK<br/>undo all changes"]
+        Begin --> Read --> Commit
+        Read --> Rollback
+    end
+
+    subgraph Schedules["Schedule Types"]
+        Serial["Serial Schedule<br/>T1 then T2 (or vice versa)<br/>no interleaving"]
+        Serializable["Conflict Serializable<br/>conflict graph is acyclic<br/>PCSR: view serializable"]
+        NonSer["Non-Serializable<br/>may produce inconsistent state"]
+    end
+
+    subgraph Concurrency["Concurrency Control"]
+        Lock["Lock-Based<br/>shared (S) | exclusive (X)<br/>2PL | Strict 2PL"]
+        Timestamp["Timestamp Ordering<br/>each txn gets TS<br/>conflict → abort & restart"]
+        MVCC["MVCC<br/>snapshot isolation<br/>readers don't block writers<br/>writers don't block readers"]
+        Deadlock["Deadlock Handling<br/>detection (wait-for graph)<br/>prevention (wound-wait)"]
+    end
+
+    subgraph Recovery["Crash Recovery"]
+        Log["Write-Ahead Log (WAL)<br/>undo + redo records"]
+        Undo["Undo: revert uncommitted<br/>from log after crash"]
+        Redo["Redo: reapply committed<br/>from log after crash"]
+        Checkpoint["Checkpoint<br/>periodic sync to disk<br/>limits recovery scope"]
+    end

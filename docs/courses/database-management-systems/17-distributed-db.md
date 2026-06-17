@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Distributed Databases, Security and Performance Tuning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch07-distributed-security-performance.png)
+
 ### 17.1 Distributed Database Concepts
 
 A **distributed database** is a collection of logically related databases distributed across a computer network, appearing as a single system to the user.

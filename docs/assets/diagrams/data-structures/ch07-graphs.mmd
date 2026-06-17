@@ -1,0 +1,32 @@
+flowchart TD
+    subgraph Graph["Graph Concepts"]
+        V["Vertices / Nodes (V)"]
+        E["Edges (E)<br/>directed / undirected"]
+        Weight["Weighted / Unweighted edges"]
+        Cycle["Cyclic / Acyclic"]
+        Connect["Connected / Disconnected"]
+        Sparse["Sparse: E << V²<br/>Dense: E ≈ V²"]
+    end
+
+    subgraph Repr["Representations"]
+        AdjMatrix["Adjacency Matrix<br/>V×V matrix<br/>O(V²) memory<br/>O(1) edge check"]
+        AdjList["Adjacency List<br/>array of lists<br/>O(V+E) memory<br/>O(degree) edge check"]
+        EdgeList["Edge List<br/>list of tuples (u,v,w)"]
+    end
+
+    subgraph BFS["BFS (Breadth-First)"]
+        BFSUse["Shortest path (unweighted)<br/>Level-order traversal<br/>Connected components"]
+        BFSComp["O(V+E) time<br/>Queue-based<br/>Finds shortest path in unweighted"]
+    end
+
+    subgraph DFS["DFS (Depth-First)"]
+        DFSUse["Topological sort<br/>Cycle detection<br/>Connected components<br/>Path finding"]
+        DFSComp["O(V+E) time<br/>Stack-based or recursive<br/>Pre/Post order"]
+    end
+
+    subgraph Algos["Graph Algorithms"]
+        MST["Minimum Spanning Tree<br/>Kruskal (union-find)<br/>Prim (priority queue)"]
+        SP["Shortest Path<br/>Dijkstra (non-negative)<br/>Bellman-Ford (negative)<br/>Floyd-Warshall (all pairs)"]
+        SCC["Strongly Connected Components<br/>Kosaraju / Tarjan"]
+        Topo["Topological Sort<br/>DAG only<br/>Kahn's algorithm (BFS)"]
+    end

@@ -1,0 +1,31 @@
+flowchart TD
+    subgraph Transport["Transport Layer Services"]
+        Mux["Multiplexing / Demultiplexing<br/>port numbers → processes"]
+        Reliable["Reliable Data Transfer<br/>acknowledgments, retransmission"]
+        InOrder["In-Order Delivery<br/>sequencing"]
+        FlowCtrl["Flow Control<br/>receiver window size"]
+    end
+
+    subgraph UDP["UDP (User Datagram Protocol)"]
+        UDPFormat["Header: source port | dest port<br/>length | checksum<br/>8 bytes total"]
+        UDPUse["DNS, DHCP, SNMP<br/>streaming, VoIP<br/>low-latency apps"]
+        UDPProperties["Connectionless<br/>unreliable<br/>no handshake<br/>no congestion control"]
+    end
+
+    subgraph TCP["TCP (Transmission Control Protocol)"]
+        TCPFormat["Header: src/dst ports | seq/ack nums<br/>flags: SYN ACK FIN RST PSH URG<br/>window size | checksum | options"]
+        Conn["Connection Setup<br/>3-way handshake<br/>SYN → SYN-ACK → ACK"]
+        Flow["Flow Control<br/>advertised window (rwnd)"]
+    end
+
+    subgraph CongCtrl["Congestion Control"]
+        SlowStart["Slow Start<br/>exponential growth<br/>until ssthresh"]
+        CongAvoid["Congestion Avoidance<br/>additive increase<br/>linear growth"]
+        FastRetrans["Fast Retransmit<br/>3 duplicate ACKs →<br/>retransmit lost segment"]
+        FastRecov["Fast Recovery<br/>reduce window to half<br/>then AIMD"]
+    end
+
+    subgraph State["TCP States"]
+        Opening["CLOSED → SYN-SENT → ESTABLISHED"]
+        Closing["FIN-WAIT-1 → FIN-WAIT-2 → TIME-WAIT"]
+    end

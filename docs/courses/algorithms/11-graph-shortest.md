@@ -14,6 +14,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![Graph Shortest Paths Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch11-graph-shortest.png)
+
 ### 11.1 Dijkstra's Algorithm
 
 **Problem:** Find the shortest paths from a source vertex \( s \) to all other vertices in a weighted graph with non-negative edge weights.

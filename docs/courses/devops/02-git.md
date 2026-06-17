@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![Git, Linux Basics and Build Tools](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch02-git-linux-build.png)
+
 ### 2.1 Git Object Model
 
 Git stores data as a directed acyclic graph of objects. Four object types exist: blobs (file contents), trees (directory listings), commits (snapshots referencing root tree, parent commits, author, committer, and message), and annotated tags (references to commits with metadata). References (branches, tags, HEAD) are pointers to specific commits. Understanding this model is essential for mastering advanced Git operations.

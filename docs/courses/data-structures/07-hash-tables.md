@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Hash Tables: Collision Resolution and Variants](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch04-hash-tables.png)
+
 ### Hash Table Concept
 
 A hash table maps keys to values using a **hash function** \( h(k) \) that computes an index into an array (the bucket array). The goal is \( O(1) \) average-case lookup.

@@ -13,6 +13,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Number Systems, Conversions and Binary Representations](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch01-number-systems.png)
+
 ### 1.1 Positional Number Systems
 
 A positional number system represents quantities using an ordered set of digits, wherein each digit position carries a weight equal to a power of the base *r*. The general form of a number in base *r* is:

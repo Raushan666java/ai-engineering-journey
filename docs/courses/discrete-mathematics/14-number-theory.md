@@ -13,6 +13,8 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
+![Number Theory Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/14-number-theory.png)
+
 ### 14.1 Divisibility
 
 **Definition.** $a$ **divides** $b$ (written $a \mid b$) if there exists an integer $c$ such that $b = ac$. $a$ is a **divisor** (factor) of $b$.

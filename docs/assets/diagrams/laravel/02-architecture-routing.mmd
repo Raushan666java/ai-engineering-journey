@@ -1,0 +1,23 @@
+flowchart TD
+    A["public/index.php"] --> B["bootstrap/app.php<br/>Creates Application & Kernel"]
+    B --> C["Kernel<br/>App\\Http\\Kernel"]
+    C --> D["Global Middleware<br/>EncryptCookies, AddQueuedCookiesToResponse,
+    StartSession, ShareErrorsFromSession,
+    VerifyCsrfToken, SubstituteBindings"]
+    D --> E["RouteServiceProvider<br/>Loads route files"]
+    E --> F["Router<br/>URI + Method matching"]
+    F --> G{"Route found?"}
+    G -->|"No"| H["404 Response"]
+    G -->|"Yes"| I["Middleware Pipeline<br/>web / api / custom groups"]
+    I --> J["Controller<br/>Dependency Injection resolved"]
+    J --> K["Business Logic<br/>Service Layer / Action"]
+    K --> L["Response<br/>View / JSON / Redirect / Stream"]
+    L --> M["Middleware Response<br/>Reverse order"]
+    M --> N["Kernel terminate()<br/>Terminable Middleware"]
+
+    style A fill:#4a90d9,color:#fff
+    style B fill:#4a90d9,color:#fff
+    style C fill:#4a90d9,color:#fff
+    style J fill:#27ae60,color:#fff
+    style L fill:#27ae60,color:#fff
+    style N fill:#e67e22,color:#fff

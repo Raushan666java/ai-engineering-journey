@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Containerization with Docker and Kubernetes Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch04-containers-k8s.png)
+
 ### Containers vs. Virtual Machines
 Containers provide operating-system-level virtualization. Unlike Virtual Machines (VMs), which include a full guest OS, containers share the host's kernel and isolate only the application and its dependencies. This makes containers significantly lighter, faster to start, and more portable.
 

@@ -37,6 +37,8 @@ The JVM consists of three major subsystems:
 
 Let us examine each subsystem in depth with complete code examples.
 
+![JVM Architecture & Memory Model](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/01-jvm-memory.png)
+
 ---
 
 ## 2. Class Loading Mechanism

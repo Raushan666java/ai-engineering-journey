@@ -1,0 +1,58 @@
+mindmap
+  root((Database Types &amp; Concepts))
+    Storage Engines
+      B-Tree
+        Structure Pages Branching Factor ~1024
+        Operations Search Insert Split
+        Strengths Fast Reads Range Scans
+        Best For Read-Heavy Transactions
+        Examples InnoDB PostgreSQL
+      LSM-Tree
+        Components MemTable SSTable Bloom Filter
+        Compaction Size-Tiered vs Leveled
+        Strengths Fast Writes Sequential IO
+        Best For Write-Heavy Time-Series
+        Examples RocksDB Cassandra Bigtable
+    Replication Topologies
+      Single-Leader
+        One Leader Writes
+        Followers Replicate
+        Failover Promotion Risks Split-Brain
+      Multi-Leader
+        Write Conflicts
+        Resolution LWW Version Vectors CRDTs
+        Use Cases Multi-DC Offline-First
+      Leaderless Dynamo-Style
+        N W R Quorums
+        W+R > N Strong Consistency
+        Hinted Handoff Read Repair
+    Consistency Models
+      ACID
+        Atomicity Consistency
+        Isolation Durability
+        Isolation Levels RU RC RR Serializable
+        MVCC 2PL OCC
+      BASE
+        Basically Available
+        Soft State
+        Eventual Consistency
+    Conflict Resolution
+      Last-Write-Wins LWW
+        Clock Skew Risk
+      Version Vectors
+        Dominance Check
+      CRDTs
+        G-Counter PN-Counter
+        OR-Set
+    SQL vs NoSQL
+      SQL
+        Schema-on-Write
+        Joins ACID Transactions
+        Vertical Scaling
+      NoSQL
+        Schema-on-Read
+        Key-Value Document Wide-Column Graph
+        Horizontal Scaling
+      NewSQL
+        Spanner CockroachDB
+        SQL + Horizontal Scale

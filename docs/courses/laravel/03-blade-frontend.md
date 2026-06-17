@@ -20,6 +20,8 @@
 
 Blade compiles templates to cached PHP. It adds zero overhead in production.
 
+![Blade Templating Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/03-blade-frontend.png)
+
 #### Echo Syntax
 
 ```blade

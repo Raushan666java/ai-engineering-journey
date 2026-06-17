@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the role of 
 
 ## Theory
 
+![Architecture Styles Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/04-architectural-design.png)
+
 ### The Role of Architectural Design
 
 Architectural design is the process of defining the overall structure of a software system. It identifies the major components of the system, their responsibilities, and the relationships between them. Architectural design is the first stage of the design process and serves as the bridge between requirements and detailed design.

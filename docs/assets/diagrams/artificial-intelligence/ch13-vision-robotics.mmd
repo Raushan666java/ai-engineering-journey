@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph Vision["Computer Vision Pipeline"]
+        VI["Image Input"] --> Pre["Preprocessing\nNoise reduction\nNormalization"]
+        Pre --> Feat["Feature Extraction\nEdges, corners\nSIFT, HOG"]
+        Feat --> Seg["Segmentation\nObject boundaries\nSemantic / Instance"]
+        Seg --> Rec["Recognition\nObject detection\nClassification"]
+        Rec --> Out["Output\nLabels, bounding boxes\n3D reconstruction"]
+    end
+
+    subgraph Tasks["CV Tasks"]
+        CLS["Image Classification\nWhat object is this?"]
+        DET["Object Detection\nWhere are objects?"]
+        SEG["Segmentation\nPixel-level labels"]
+        KP["Keypoint Detection\nFacial landmarks\nPose estimation"]
+    end
+
+    subgraph RobotArch["Robotics Architecture"]
+        Sense["Sensing\nCameras, LiDAR\nIMU, Touch"]
+        Sense --> Model["State Estimation\nSLAM\nParticle filter"]
+        Model --> Plan["Motion Planning\nRRT, A*\nTrajectory"]
+        Plan --> Control["Control\nPID, MPC\nMotor commands"]
+        Control --> Actuators["Actuators\nMotors, Grippers"]
+    end
+
+    style Vision fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Tasks fill:#fff3e0,stroke:#f57c00,color:#000
+    style RobotArch fill:#e8f5e9,stroke:#2e7d32,color:#000

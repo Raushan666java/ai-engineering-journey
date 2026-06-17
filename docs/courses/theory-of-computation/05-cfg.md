@@ -12,6 +12,8 @@
 
 ## Theory
 
+![CFG Components Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/05-cfg.png)
+
 ### 5.1 What is a Context-Free Grammar?
 
 Context-free grammars provide a **generative** description of languages. They are the basis for describing the syntax of most programming languages and are used extensively in compilers.

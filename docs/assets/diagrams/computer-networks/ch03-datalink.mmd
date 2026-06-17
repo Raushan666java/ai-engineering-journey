@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph Framing["Framing"]
+        ByteCount["Byte Count<br/>header includes length"]
+        FlagBytes["Flag Bytes with<br/>Byte Stuffing"]
+        FlagBits["Flag Bits with<br/>Bit Stuffing"]
+    end
+
+    subgraph ErrorDetect["Error Detection"]
+        Parity["Parity Bit<br/>single-bit detection"]
+        Checksum["Internet Checksum<br/>1's complement sum"]
+        CRC["Cyclic Redundancy Check<br/>polynomial division<br/>32-bit CRC = Ethernet"]
+    end
+
+    subgraph ErrorCorr["Error Correction"]
+        Hamming["Hamming Code<br/>correct single-bit errors<br/>detect double-bit errors"]
+        FEC["Forward Error Correction<br/>Reed-Solomon,<br/>LDPC, Turbo Codes"]
+    end
+
+    subgraph FlowCtrl["Flow Control"]
+        StopWait["Stop-and-Wait<br/>send 1, ACK 1<br/>inefficient on long links"]
+        Sliding["Sliding Window<br/>send up to W frames<br/>pipelining"]
+    end
+
+    subgraph ARQ["Automatic Repeat Request"]
+        SW["Stop-and-Wait ARQ"]
+        GBN["Go-Back-N ARQ<br/>retransmit from lost frame"]
+        SR["Selective Repeat ARQ<br/>retransmit only lost frame"]
+    end

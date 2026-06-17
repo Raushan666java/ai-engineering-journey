@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: define tokens, lexemes,
 
 ## Theory
 
+![Lexical Analysis: Tokens, Regex and DFA](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch02-lexical.png)
+
 ### Tokens, Lexemes, and Patterns
 
 Lexical analysis is the first phase of compilation. The lexical analyzer, or scanner, reads the source program's character stream and groups characters into lexemes — sequences of characters that form a logical unit. For each lexeme, the scanner produces a token, a pair consisting of a token name and an optional attribute value.

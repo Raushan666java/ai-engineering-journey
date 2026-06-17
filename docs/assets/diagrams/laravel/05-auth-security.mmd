@@ -1,0 +1,46 @@
+flowchart TD
+    subgraph "Authentication Guards"
+        WEB["web guard<br/>session driver<br/>Provider: users"]
+        API["api guard<br/>sanctum driver<br/>Provider: users"]
+        ADMIN["admin guard<br/>session driver<br/>Provider: admins"]
+    end
+
+    subgraph "Auth Flow"
+        LOGIN["Auth::attempt()<br/>Email + Password"]
+        SESSION["Session Regenerate<br/>Prevents fixation"]
+        REMEMBER["Remember Token<br/>Persistent cookie"]
+        LOGOUT["Auth::logout()<br/>Invalidate + RegenerateToken"]
+    end
+
+    subgraph "Sanctum API Auth"
+        TOKEN["createToken('name', abilities)<br/>Returns plainTextToken"]
+        SPA["Sanctum SPA<br/>Cookie-based, CSRF cookie"]
+        ABILITIES["tokenCan('posts:write')<br/>Check ability"]
+        REVOKE["tokens()->delete()<br/>Revoke all"]
+    end
+
+    subgraph "Authorization"
+        GATES["Gates<br/>Gate::define('update-post', fn)"]
+        POLICIES["Policies<br/>PostPolicy: view/update/delete<br/>Auto-discovery by naming"]
+        ACTIONS["can() / authorize() / @can<br/>Model + Middleware"]
+    end
+
+    subgraph "Security Protections"
+        CSRF["CSRF<br/>@csrf + VerifyCsrfToken"]
+        XSS["XSS<br/>Blade {{ }} auto-escapes"]
+        SQLI["SQL Injection<br/>Eloquent param binding"]
+        MA["Mass Assignment<br/>fillable / guarded"]
+        RL["Rate Limiting<br/>RateLimiter::for()"]
+    end
+
+    LOGIN --> SESSION --> REMEMBER
+    REMEMBER --> WEB
+    TOKEN --> API
+    GATES --> POLICIES --> ACTIONS
+
+    style WEB fill:#2c3e50,color:#fff
+    style API fill:#2c3e50,color:#fff
+    style TOKEN fill:#e67e22,color:#fff
+    style CSRF fill:#16a085,color:#fff
+    style XSS fill:#16a085,color:#fff
+    style SQLI fill:#16a085,color:#fff

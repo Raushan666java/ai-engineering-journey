@@ -1,0 +1,48 @@
+flowchart TD
+    A[Message Queue Architectures] --> B[Apache Kafka]
+    A --> C[RabbitMQ]
+    A --> D[AWS SQS + SNS]
+
+    B --> B1[Topics & Partitions]
+    B --> B2[Consumer Groups]
+    B --> B3[ISR Replicas]
+    B --> B4[Delivery Guarantees]
+
+    B1 --> B1D["Ordered immutable log per partition"]
+    B2 --> B2D["Each partition assigned to one consumer"]
+    B3 --> B3D["acks=0 / acks=1 / acks=all"]
+    B4 --> B4D["At-Most / At-Least / Exactly-Once"]
+
+    C --> C1[Exchanges]
+    C --> C2[Queues & Bindings]
+    C --> C3[Message Lifecycle]
+
+    C1 --> C1D["Direct / Topic / Fanout / Headers"]
+    C2 --> C2D["Routing key pattern matching"]
+    C3 --> C3D["Publish -> Route -> Queue -> Consume -> Ack"]
+
+    D --> D1[SQS Standard]
+    D --> D2[SQS FIFO]
+    D --> D3[SNS + SQS Fan-Out]
+
+    D1 --> D1D["High throughput at-least-once"]
+    D2 --> D2D["Ordered exactly-once 3000 TPS"]
+    D3 --> D3D["Broadcast to multiple queues"]
+
+    E[Key Concepts] --> F[Dead-Letter Queues]
+    E --> G[Event Sourcing]
+    E --> H[Change Data Capture]
+    E --> I[Backpressure]
+    E --> J[Priority Queues]
+
+    F --> FD["Messages exceeding retry limit"]
+    G --> GD["State = replay of ordered event stream"]
+    G --> GS["Snapshots for efficient rebuild"]
+    H --> HD["Debezium reads DB binlog/WAL"]
+    I --> ID["Consumer pull model / Reactive streams"]
+    J --> JD["Separate queues per priority level"]
+
+    K[Patterns] --> L[Transactional Outbox]
+    K --> M[Saga]
+    L --> LD["Dual-write: DB + outbox table in same TX"]
+    M --> MD["Choreography events vs Orchestration"]

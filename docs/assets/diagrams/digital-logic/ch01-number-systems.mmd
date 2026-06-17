@@ -1,0 +1,25 @@
+flowchart TD
+    subgraph NumSys["Number Systems"]
+        Decimal["Decimal (Base 10)<br/>digits 0-9<br/>e.g. 234 = 2×10² + 3×10¹ + 4×10⁰"]
+        Binary["Binary (Base 2)<br/>digits 0,1<br/>e.g. 1011₂ = 1×2³ + 0×2² + 1×2¹ + 1×2⁰ = 11"]
+        Octal["Octal (Base 8)<br/>digits 0-7<br/>e.g. 17₈ = 1×8¹ + 7×8⁰ = 15"]
+        Hex["Hexadecimal (Base 16)<br/>digits 0-9, A-F<br/>e.g. 2F₁₆ = 2×16¹ + 15×16⁰ = 47"]
+    end
+
+    subgraph Convert["Conversions"]
+        D2B["Decimal → Binary<br/>repeated division by 2"]
+        B2H["Binary → Hex<br/>group 4 bits per digit"]
+        B2D["Binary → Decimal<br/>sum weighted powers of 2"]
+        H2B["Hex → Binary<br/>expand each digit to 4 bits"]
+    end
+
+    subgraph Repr["Binary Representations"]
+        Unsigned["Unsigned Integer<br/>0 to 2ⁿ - 1"]
+        SignMag["Sign-Magnitude<br/>MSB = sign bit"]
+        OnesComp["1's Complement<br/>negate all bits"]
+        TwosComp["2's Complement<br/>negate + add 1<br/>standard signed integer"]
+    end
+
+    subgraph Float["Floating Point (IEEE 754)"]
+        FP["Single: 1 sign + 8 exp + 23 mantissa<br/>Double: 1 sign + 11 exp + 52 mantissa"]
+    end

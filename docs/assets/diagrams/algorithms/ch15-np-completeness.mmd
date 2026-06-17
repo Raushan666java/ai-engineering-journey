@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph Classes["Complexity Classes"]
+        P["P: Polynomial time\nSolved in O(n^k)\nSorting, searching"]
+        NP["NP: Non-deterministic Poly\nVerified in O(n^k)\nSAT, TSP, Knapsack"]
+        NPC["NP-Complete\nIn NP and NP-hard\nSAT, 3-SAT, Vertex Cover\nClique, Hamiltonian"]
+        NPH["NP-Hard\nAt least as hard as NPC\nMay not be in NP\nHalting problem"]
+    end
+
+    subgraph Reduction["Polynomial-Time Reduction\nA → B"]
+        R1["Instance I_A of problem A"]
+        R2["Transform f in poly time"]
+        R3["Instance I_B = f(I_A) of B"]
+        R4["I_A YES iff I_B YES"]
+    end
+
+    P --> NP
+    NP --> NPC
+    NPC --> NPH
+
+    subgraph Classic["Classic NP-Complete Problems"]
+        SAT["SAT\nCook-Levin (1971)\nFirst NP-complete"]
+        VC["Vertex Cover\nSet of vertices\ncovering all edges"]
+        CLQ["Clique\nComplete subgraph\nof size k"]
+        HC["Hamiltonian Cycle\nVisit each vertex once\nReturn to start"]
+    end
+
+    style Classes fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Reduction fill:#fff3e0,stroke:#f57c00,color:#000
+    style Classic fill:#fce4ec,stroke:#c62828,color:#000

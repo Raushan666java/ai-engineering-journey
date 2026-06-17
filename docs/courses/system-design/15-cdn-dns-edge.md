@@ -14,6 +14,8 @@
 
 ## Theory
 
+![CDN DNS Edge Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/15-cdn-dns-edge.png)
+
 ### 1. DNS Hierarchy
 
 The Domain Name System (DNS) is a hierarchical, distributed naming system that resolves human-readable domain names (e.g., api.example.com) to IP addresses. The hierarchy has four tiers:

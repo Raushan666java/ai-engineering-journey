@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) formulate pl
 
 ## 8.1 Classical Planning
 
+![Planning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch08-planning.png)
+
 **Planning** is the process of selecting a sequence of actions to achieve a goal. Classical planning assumes a deterministic, fully observable, static environment with finite actions and states.
 
 ### 8.1.1 STRIPS Representation

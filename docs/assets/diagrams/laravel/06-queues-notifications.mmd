@@ -1,0 +1,60 @@
+flowchart TD
+    subgraph "Dispatch"
+        D1["dispatch(new Job)"]
+        D2["Job::dispatch()"]
+        D3["dispatchAfterResponse()"]
+        D4["delay(now()->addMin())"]
+        D5["onQueue('high')"]
+        D6["onConnection('redis')"]
+    end
+
+    subgraph "Queue Drivers"
+        Q1["sync<br/>Same request"]
+        Q2["database<br/>jobs table"]
+        Q3["redis<br/>Production + Horizon"]
+        Q4["sqs<br/>AWS managed"]
+    end
+
+    subgraph "Job Features"
+        JF1["Chaining<br/>Bus::chain([...])"]
+        JF2["Batching<br/>Bus::batch([...])<br/>then/catch/finally"]
+        JF3["Unique Jobs<br/>ShouldBeUnique"]
+        JF4["Middleware<br/>RateLimited, WithoutOverlapping"]
+        JF5["Attributes<br/>#[Tries], #[Backoff]"]
+        JF6["Queue Routing<br/>Queue::route() Laravel 13"]
+    end
+
+    subgraph "Worker"
+        W1["php artisan queue:work"]
+        W2["Horizon Dashboard<br/>Auto-balancing<br/>Tagging + Metrics"]
+        W3["Supervisor<br/>Process monitor"]
+    end
+
+    subgraph "Notifications & Mail"
+        NM1["via() — multi-channel"]
+        NM2["Mail / Database / Slack / SMS"]
+        NM3["Markdown Templates"]
+        NM4["Envelope + Content + Attachments"]
+    end
+
+    subgraph "Events"
+        EV1["Event::dispatch()"]
+        EV2["Queued Listeners<br/>ShouldQueue"]
+        EV3["Subscribers<br/>Group handlers"]
+    end
+
+    D1 --> Q2
+    D1 --> Q3
+    D1 --> Q4
+    D5 --> JF6
+    Q3 --> W1
+    Q3 --> W2
+    W1 --> W3
+    JF1 --> EV2
+    JF2 --> NM1
+    EV1 --> EV2
+    EV2 --> NM1
+
+    style Q3 fill:#e74c3c,color:#fff
+    style W2 fill:#3498db,color:#fff
+    style JF2 fill:#27ae60,color:#fff

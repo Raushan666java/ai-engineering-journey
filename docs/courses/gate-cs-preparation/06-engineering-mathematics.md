@@ -8,6 +8,8 @@
 
 ## 1. Linear Algebra
 
+![Engineering Mathematics Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics.png)
+
 Formula summary → solved GATE problems → quick practice.
 
 ### 1.1 Matrix Operations — Key Formulas

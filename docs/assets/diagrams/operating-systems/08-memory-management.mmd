@@ -1,0 +1,39 @@
+flowchart TD
+    subgraph ADDRESSING["Address Binding"]
+        COMP["Compile Time\nAbsolute code\nMS-DOS .COM"]
+        LOAD["Load Time\nRelocatable code\nLoader binds"]
+        EXEC["Execution Time\nDynamic relocation\nMMU hardware"]
+    end
+    
+    subgraph CONTIG["Contiguous Allocation"]
+        FF["First-Fit\nFirst hole >= size\nFast, generally best"]
+        BF["Best-Fit\nSmallest sufficient hole\nWorst fragmentation"]
+        WF["Worst-Fit\nLargest hole\nPoor utilization"]
+        FRAG["Fragmentation\nExternal - scattered holes\nInternal - allocated too large"]
+    end
+    
+    subgraph PAGING["Paging"]
+        PG1["Logical Pages -> Physical Frames\nFixed size (4KB typical)"]
+        PG2["Page Table\nValid/Ref/Dirty/Prot bits"]
+        PG3["TLB - Translation Lookaside Buffer\nFast cache for PTEs\nEAT = hit*TLB + miss*(TLB+mem)"]
+        PG4["Multilevel Page Tables\n32-bit: 2-level\n64-bit: 4-level"]
+        PG5["Hashed / Inverted Page Tables\nFor > 32-bit address spaces"]
+    end
+    
+    subgraph SEGMENT["Segmentation"]
+        SEG1["Logical: segment + offset"]
+        SEG2["Segment Table\nBase + Limit per segment"]
+        SEG3["Independent protection per segment\nCode r-x, Data rw-"]
+    end
+    
+    subgraph MODERN["Modern x86"]
+        M1["Segmentation + Paging combined"]
+        M2["Flat memory model in Linux\nBase=0, Limit=4GB"]
+        M3["Logical -> Linear -> Physical"]
+    end
+    
+    ADDRESSING --> CONTIG
+    CONTIG --> FRAG
+    FRAG --> PAGING
+    PAGING --> SEGMENT
+    SEGMENT --> MODERN

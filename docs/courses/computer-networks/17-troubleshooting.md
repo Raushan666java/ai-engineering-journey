@@ -10,6 +10,8 @@
 
 ## 17.1 Diagnostic Tools
 
+![Network Troubleshooting: Tools, Common Issues and Methodology](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch11-troubleshooting.png)
+
 ### 17.1.1 ping
 
 `ping` sends ICMP Echo Request packets and measures round-trip time (RTT). It tests basic IP connectivity and provides latency measurements.

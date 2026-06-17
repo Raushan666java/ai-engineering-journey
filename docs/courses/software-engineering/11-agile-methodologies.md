@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the Scrum fr
 
 ## Theory
 
+![Agile Lifecycle Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/11-agile-methodologies.png)
+
 ### Agile Fundamentals
 
 Agile methodologies are founded on the values and principles of the Agile Manifesto. While the manifesto provides the philosophical foundation, specific methodologies translate these values into concrete practices. The most widely adopted agile methodologies are Scrum and Kanban, each with its own emphasis and practices.

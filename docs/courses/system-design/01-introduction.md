@@ -15,6 +15,8 @@
 
 ## Theory
 
+![System Design Fundamentals Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/01-introduction.png)
+
 ### What Is System Design?
 
 System design is the discipline of defining the architecture, components, modules, interfaces, and data flow of a large-scale distributed system to satisfy specified functional and non-functional requirements. It sits at the intersection of three distinct but overlapping fields.

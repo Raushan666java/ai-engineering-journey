@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph NoSQL["NoSQL Categories"]
+        KV["Key-Value Stores<br/>Redis, DynamoDB<br/>simple get/set<br/>O(1) lookups"]
+        Doc["Document Stores<br/>MongoDB, CouchDB<br/>BSON/JSON documents<br/>schemaless, nested"]
+        Column["Wide-Column Stores<br/>Cassandra, HBase<br/>column families<br/>sparse data, time-series"]
+        Graph["Graph Databases<br/>Neo4j, ArangoDB<br/>nodes + edges<br/>graph traversals"]
+    end
+
+    subgraph CAP["CAP Theorem"]
+        C["Consistency<br/>all nodes see same data"]
+        A["Availability<br/>every request gets a response"]
+        P["Partition Tolerance<br/>system works despite network splits"]
+        CAPNote["Pick 2 of 3<br/>CP: HBase, MongoDB<br/>AP: Cassandra, DynamoDB<br/>CA: traditional RDBMS"]
+    end
+
+    subgraph MongoDB["MongoDB"]
+        DocM["Document: JSON-like BSON<br/>_id as primary key"]
+        Collection["Collection: group of documents"]
+        IndexM["Indexes: B-tree on fields"]
+        AggM["Aggregation Pipeline<br/>$match → $group → $sort<br/>map-reduce ops"]
+        Shard["Sharding: horizontal scaling<br/>range or hash-based"]
+    end
+
+    subgraph Redis["Redis"]
+        Types["Data Types: String, List,<br/>Set, Sorted Set, Hash"]
+        Persist["Persistence: RDB (snapshot)<br/>or AOF (append-only)"]
+        PubSub["Pub/Sub messaging"]
+        Cache["Primary use: caching,<br/>session store, rate limiter"]
+    end

@@ -1,0 +1,40 @@
+flowchart LR
+    subgraph RS["Reactive Streams Specification"]
+        Pub["Publisher&lt;T&gt;<br/>subscribe()"]
+        Sub["Subscriber&lt;T&gt;<br/>onSubscribe / onNext<br/>onError / onComplete"]
+        Subsc["Subscription<br/>request(n) / cancel()"]
+        Pub --> Subsc
+        Subsc --> Sub
+    end
+
+    subgraph Reactor["Project Reactor"]
+        Flux["Flux&lt;T&gt;<br/>(0..N items)"]
+        Mono["Mono&lt;T&gt;<br/>(0..1 items)"]
+    end
+
+    subgraph Ops["Core Operators"]
+        direction TB
+        Transform["Transformation<br/>map / flatMap / concatMap<br/>reduce / scan / transform"]
+        Filter["Filtering<br/>filter / distinct / take<br/>skip / elementAt / sample"]
+        Combine["Combination<br/>concat / merge / zip<br/>combineLatest / firstWithValue"]
+        Error["Error Handling<br/>onErrorReturn / onErrorResume<br/>retry / retryWhen / timeout"]
+    end
+
+    subgraph Backpressure["Backpressure"]
+        BUFFER["onBackpressureBuffer()"]
+        DROP["onBackpressureDrop()"]
+        LATEST["onBackpressureLatest()"]
+        ERROR["onBackpressureError()"]
+    end
+
+    subgraph Schedulers["Schedulers"]
+        P["parallel()<br/>(CPU-bound)"]
+        BE["boundedElastic()<br/>(blocking I/O)"]
+        SI["single()"]
+        IM["immediate()"]
+    end
+
+    RS --> Reactor
+    Reactor --> Ops
+    Ops --> Backpressure
+    Ops --> Schedulers

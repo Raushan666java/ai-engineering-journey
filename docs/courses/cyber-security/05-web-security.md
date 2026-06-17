@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Web Attack Surface](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch05-web-attacks.png)
+
 ### OWASP Top 10
 The Open Web Application Security Project (OWASP) maintains a consensus list of the most critical security risks to web applications. Current highlights include:
 1.  **Broken Access Control:** Users can access data or functions outside of their intended permissions.

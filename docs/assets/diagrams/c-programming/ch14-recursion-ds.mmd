@@ -1,0 +1,20 @@
+flowchart TD
+    subgraph Recursion["Recursion"]
+        Base["Base Case<br/>stops recursion"]
+        Recursive["Recursive Case<br/>function calls itself<br/>with smaller input"]
+        Fact["factorial(5)<br/>= 5 * factorial(4)<br/>= 5 * 4 * 3 * 2 * 1"]
+        Fib["fibonacci(5)<br/>tree of calls<br/>O(2ⁿ) naive<br/>O(n) with memoization"]
+        StackR["Each call = stack frame<br/>deep recursion → stack overflow"]
+    end
+
+    subgraph Lists["Linked Lists"]
+        Singly["Singly Linked List<br/>Node = [data | next→]<br/>O(1) insert at head<br/>O(n) search"]
+        Doubly["Doubly Linked List<br/>Node = [←prev | data | next→]<br/>bidirectional traversal"]
+        Circular["Circular Linked List<br/>last node → head<br/>circular traversal"]
+    end
+
+    subgraph StackQueue["Stacks & Queues"]
+        Stack["Stack (LIFO)<br/>push() / pop()<br/>top()<br/>undo, expression eval"]
+        Queue["Queue (FIFO)<br/>enqueue() / dequeue()<br/>front() / rear()<br/>BFS, scheduling"]
+        Deque["Deque<br/>double-ended<br/>insert/remove both ends"]
+    end

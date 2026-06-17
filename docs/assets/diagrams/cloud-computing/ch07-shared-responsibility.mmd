@@ -1,0 +1,29 @@
+flowchart TD
+    SRM["Shared Responsibility Model"] --> Prov["Provider: Security OF the Cloud\nPhysical security\nHardware, Network\nVirtualization layer\nManaged services"]
+    SRM --> Cust["Customer: Security IN the Cloud\nGuest OS patching\nApp configuration\nIAM & access control\nData encryption"]
+
+    subgraph OnPremM["On-Premises"]
+        OPAll["Customer: 100%"]
+    end
+
+    subgraph IaaSM["IaaS"]
+        CP1["Provider:\nCompute, Network\nStorage, Hypervisor"]
+        CX1["Customer:\nOS, Apps, Data\nNetwork config\nFirewalls"]
+    end
+
+    subgraph PaaSM["PaaS"]
+        CP2["Provider:\nRuntime, Middleware\nOS, Infrastructure"]
+        CX2["Customer:\nCode, Data\nAccess config"]
+    end
+
+    subgraph SaaSM["SaaS"]
+        CP3["Provider:\nEverything except\nData & Access"]
+        CX3["Customer:\nData, Users\nDevice security"]
+    end
+
+    OnPrem --> IaaS --> PaaS --> SaaS
+    IaaSM --> PaaSM --> SaaSM
+
+    style SRM fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Prov fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Cust fill:#fff3e0,stroke:#f57c00,color:#000

@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph Types["Type System Hierarchy"]
+        Prim["Primitive Types<br/>int, float, char, bool"]
+        Array["Array Type<br/>int[10], char[20][]"]
+        Pointer["Pointer Type<br/>int*, char*"]
+        Record["Record / Struct<br/>{ int id; char name[20]; }"]
+        Func["Function Type<br/>int → float"]
+    end
+
+    subgraph Check["Type Checking"]
+        Equiv["Type Equivalence<br/>structural vs. name"]
+        Infer["Type Inference<br/>determine type from context"]
+        Coerce["Implicit Conversion<br/>int → float, char → int"]
+        Overload["Overload Resolution<br/>which function to call?"]
+    end
+
+    subgraph Errors["Type Errors Detected"]
+        E1["Type mismatch in assignment"]
+        E2["Invalid operand types"]
+        E3["Function argument mismatch"]
+        E4["Undefined variable / function"]
+    end
+
+    subgraph Runtime["Runtime Environment"]
+        Stack["Stack Area<br/>activation records<br/>local variables<br/>return addresses"]
+        Heap["Heap Area<br/>dynamic allocation<br/>malloc / new"]
+        Static["Static Area<br/>global variables<br/>static locals<br/>constants"]
+        Framing["Activation Record<br/>= frame pointer<br/>= stack pointer<br/>return value | actual args<br/>local vars | control link"]
+    end

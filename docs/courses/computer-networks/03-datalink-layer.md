@@ -10,6 +10,8 @@
 
 ## 3.1 Data Link Layer Services
 
+![Data Link Layer: Framing, Error Detection/Correction, Flow Control and ARQ](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch03-datalink.png)
+
 The data link layer (Layer 2) provides reliable, efficient communication between two directly connected nodes. It accepts packets from the network layer and encapsulates them into frames for transmission across the physical link. The principal services are:
 
 **Framing.** The data link layer divides the bit stream into discrete frames. The receiver must detect frame boundaries to extract each frame correctly.

@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: define context-free gra
 
 ## Theory
 
+![Top-Down Parsing and LL(1)](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch03-parsing-topdown.png)
+
 ### Context-Free Grammars
 
 A context-free grammar (CFG) is a four-tuple G = (V, T, P, S), where V is a finite set of nonterminal symbols, T is a finite set of terminal symbols disjoint from V, P is a finite set of productions A → α where A ∈ V and α ∈ (V ∪ T)*, and S ∈ V is the start symbol. The language L(G) is the set of all strings of terminals derivable from the start symbol by repeatedly replacing nonterminals with the right-hand side of a production.

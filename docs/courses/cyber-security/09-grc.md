@@ -14,6 +14,8 @@
 
 ## Theory
 
+![GRC & Risk Management](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch09-grc-risk.png)
+
 ### What is GRC?
 GRC is an integrated approach to ensuring that an organization acts in accordance with its self-imposed rules and external regulations.
 - **Governance:** The set of responsibilities and practices exercised by the board and executive management to provide strategic direction and ensure that objectives are achieved.

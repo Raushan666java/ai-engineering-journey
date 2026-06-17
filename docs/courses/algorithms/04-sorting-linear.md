@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![Linear-Time Sort Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch04-sorting-linear.png)
+
 The \( \Omega(n \log n) \) lower bound for comparison sorting (Theorem 3.1) applies only to algorithms that use comparisons as their sole means of gaining information about element order. By exploiting the structure of keys, we can achieve sorting in \( O(n) \) time.
 
 ### 4.1 Counting Sort

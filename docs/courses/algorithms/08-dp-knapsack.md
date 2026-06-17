@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![DP Knapsack Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch08-dp-knapsack.png)
+
 ### 8.1 0/1 Knapsack
 
 **Problem:** Given \( n \) items, each with weight \( w_i \) and value \( v_i \), and a knapsack capacity \( W \), select a subset of items to maximize total value without exceeding capacity. Each item can be taken at most once (0/1 decision).

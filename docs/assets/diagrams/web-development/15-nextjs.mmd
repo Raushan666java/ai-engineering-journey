@@ -1,0 +1,29 @@
+flowchart TD
+    A["Next.js Rendering Strategies"] --> B["Build Time"]
+    A --> C["Request Time"]
+    A --> D["Client Side"]
+
+    B --> B1["SSG - Static Site Gen<br/>Pre-rendered HTML<br/>Fastest, no server needed"]
+    B --> B2["ISR - Incremental Static Regeneration<br/>Static + revalidate: 3600<br/>Stale-while-revalidate"]
+
+    C --> C1["SSR - Server-Side Rendering<br/>dynamic = force-dynamic<br/>Data fetched per request<br/>Full HTML on server"]
+    C --> C2["Server Components<br/>async component, direct fetch<br/>Zero client JS for data"]
+
+    D --> D1["Client Components<br/>'use client' directive<br/>CSR with hydration"]
+
+    subgraph App_Router["App Router Features"]
+        AR1["File-based routing<br/>app/page.tsx → /"]
+        AR2["Nested Layouts<br/>layout.tsx persist across pages"]
+        AR3["API Routes<br/>route.ts in app directory"]
+        AR4["Middleware<br/>intercept requests"]
+    end
+
+    subgraph Optimization["Optimization"]
+        O1["next/image - lazy + responsive"]
+        O2["generateMetadata - SEO"]
+        O3["Dynamic imports - code splitting"]
+        O4["Sitemap generation"]
+    end
+
+    A --> App_Router
+    A --> Optimization

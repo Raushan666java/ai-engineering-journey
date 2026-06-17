@@ -8,6 +8,8 @@
 - Understand when and why `goto` is used
 - Write decision-making code that is clear and maintainable
 
+![C Control Flow: if-else if-else and switch-case](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch04-control-flow.png)
+
 ## 4.1 The `if` Statement
 
 The `if` statement executes a block of code only when a condition evaluates to true (non-zero).

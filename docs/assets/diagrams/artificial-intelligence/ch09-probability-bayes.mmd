@@ -1,0 +1,32 @@
+flowchart TD
+    subgraph Bayes["Probability & Bayes' Rule"]
+        BR["Bayes' Rule\nP(H|E) = P(E|H)·P(H) / P(E)\nPosterior = Likelihood × Prior / Evidence"]
+        CP["Conditional Probability\nP(A|B) = P(A∧B) / P(B)"]
+    end
+
+    subgraph BN["Bayesian Network"]
+        BN1["Directed acyclic graph"]
+        BN2["Nodes = random variables"]
+        BN3["Edges = causal dependencies"]
+        BN4["CPT = Conditional Probability Table"]
+    end
+
+    subgraph Inf["Inference in Bayesian Nets"]
+        I1["Exact: Variable Elimination\nSum out irrelevant variables"]
+        I2["Approx: Rejection Sampling\nMonte Carlo simulation"]
+        I3["Approx: Gibbs Sampling\nMarkov Chain Monte Carlo"]
+    end
+
+    subgraph Temporal["Temporal Models"]
+        TM1["Markov Models\nState depends on previous only"]
+        TM2["Hidden Markov Model\nHidden state → Observation"]
+        TM3["Kalman Filter\nContinuous state, Gaussian noise"]
+    end
+
+    Bayes --> BN --> Inf
+    Bayes --> Temporal
+
+    style Bayes fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style BN fill:#fff3e0,stroke:#f57c00,color:#000
+    style Inf fill:#fce4ec,stroke:#c62828,color:#000
+    style Temporal fill:#e8f5e9,stroke:#2e7d32,color:#000

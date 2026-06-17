@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![MST Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch12-graph-mst.png)
+
 ### 12.1 Minimum Spanning Tree: Definition
 
 **Definition 12.1.** Given a connected, undirected, weighted graph \( G = (V, E) \), a **spanning tree** is a subgraph \( T = (V, E') \) that is a tree (connected and acyclic). A **minimum spanning tree** (MST) is a spanning tree that minimizes the total weight \( \sum_{e \in E'} w(e) \).

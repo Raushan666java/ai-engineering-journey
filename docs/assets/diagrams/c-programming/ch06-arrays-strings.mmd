@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph Memory["Array Memory Layout"]
+        A0["arr[0]<br/>base address<br/>0x1000"]
+        A1["arr[1]<br/>0x1004"]
+        A2["arr[2]<br/>0x1008"]
+        A3["..."]
+        AN["arr[n-1]<br/>0x1000 + (n-1)*4"]
+        A0 --- A1 --- A2 --- A3 --- AN
+    end
+
+    subgraph Declare["Declaration & Initialization"]
+        D1["int arr[5] = {1,2,3,4,5};"]
+        D2["int arr[] = {1,2,3,4,5};<br/>auto-sized"]
+        D3["int arr[5] = {0};<br/>all zero-initialized"]
+        D4["int arr[5];<br/>uninitialized<br/>(contains garbage)"]
+    end
+
+    subgraph Access["Access Patterns"]
+        ARead["value = arr[i];<br/>O(1) direct access"]
+        AWrite["arr[i] = new_value;"]
+        ALoop["for (i=0; i&lt;n; i++)<br/>arr[i] ..."]
+    end
+
+    subgraph String["Strings in C"]
+        S1["char s[] = 'hello';<br/>mutable, stack"]
+        S2["char *s = 'hello';<br/>immutable, string literal"]
+        S3["char s[20];<br/>strcpy(s, 'hello');<br/>manual copy"]
+        SFunc["strlen() | strcpy() | strcmp()<br/>strcat() | strtok() | sprintf()"]
+    end

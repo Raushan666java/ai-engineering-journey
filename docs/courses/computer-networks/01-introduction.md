@@ -69,6 +69,8 @@ The service provided by layer N to layer N+1 is expressed as a set of primitives
 
 ## 1.4 Reference Models
 
+![OSI Model, TCP/IP Model and Encapsulation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch01-introduction.png)
+
 ### 1.4.1 The OSI Reference Model
 
 The Open Systems Interconnection (OSI) model, developed by the International Organization for Standardization (ISO) in 1984, partitions network functionality into seven layers:

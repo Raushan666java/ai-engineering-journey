@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 
 ## 11.1 The Reinforcement Learning Framework
 
+![Reinforcement Learning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch11-rl.png)
+
 Reinforcement Learning (RL) studies how an **agent** learns to make sequential decisions by interacting with an **environment**. At each discrete time step $t$, the agent observes state $S_t \in \mathcal{S}$, selects action $A_t \in \mathcal{A}$, receives reward $R_{t+1} \in \mathcal{R}$, and transitions to state $S_{t+1}$.
 
 The agent's objective is to maximize the expected cumulative discounted reward:

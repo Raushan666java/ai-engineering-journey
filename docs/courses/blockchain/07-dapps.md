@@ -23,6 +23,8 @@ Key components:
 3. **Provider (e.g., Infura, Alchemy):** An interface to talk to the blockchain nodes.
 4. **Decentralized Storage:** Since storing files on a blockchain is too expensive, metadata and assets are stored on systems like **IPFS (InterPlanetary File System)**.
 
+![dApp Architecture](../assets/images/diagrams/blockchain/ch07-dapps.png)
+
 ### Web3 Libraries
 Libraries like `ethers.js` or `web3.js` allow the frontend to:
 - Connect to a wallet.

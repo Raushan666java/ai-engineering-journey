@@ -1,0 +1,52 @@
+flowchart TD
+    subgraph "HTTP Layer"
+        REQ["GET /api/v1/posts<br/>Headers: Accept, Authorization"]
+        ROUTE["apiResource<br/>Route::apiResource('posts', ...)"]
+        MIDDLE["Middleware Stack<br/>auth:sanctum + throttle:api"]
+    end
+
+    subgraph "Controller"
+        CTRL["PostController<br/>Dependency Injection"]
+        AUTH["authorize() / tokenCan()"]
+        VALID["Form Request / Validation"]
+    end
+
+    subgraph "Resource Transformation"
+        RES["PostResource extends JsonResource"]
+        RESATTR["Conditional Attributes<br/>whenLoaded / when / whenNotNull"]
+        PAGINATE["Pagination<br/>paginate() / cursorPaginate()"]
+        JSONAPI["JSON:API<br/>toAttributes / toRelationships<br/>Include + Sparse Fieldsets"]
+    end
+
+    subgraph "Sanctum Auth"
+        SAT["HasApiTokens trait"]
+        TOKEN["createToken('name', abilities)"]
+        CHECK["tokenCan('posts:write')"]
+        EXP["Expiry + Revocation"]
+    end
+
+    subgraph "Error Handling"
+        ERR1["Custom exceptions<br/>with render()"]
+        ERR2["Validation errors<br/>422"]
+        ERR3["404 / 403 / 401"]
+    end
+
+    subgraph "Rate Limiting"
+        RL1["RateLimiter::for('api')"]
+        RL2["Limit::perMinute(60)->by(user)"]
+        RL3["throttle:api middleware"]
+    end
+
+    REQ --> ROUTE --> MIDDLE --> CTRL
+    CTRL --> AUTH --> VALID --> RES
+    RES --> RESATTR
+    RES --> PAGINATE
+    RES --> JSONAPI
+    CTRL --> SAT --> TOKEN --> CHECK --> EXP
+    CTRL --> ERR1
+    MIDDLE --> RL1 --> RL2 --> RL3
+
+    style RES fill:#27ae60,color:#fff
+    style TOKEN fill:#e67e22,color:#fff
+    style JSONAPI fill:#3498db,color:#fff
+    style RL3 fill:#e74c3c,color:#fff

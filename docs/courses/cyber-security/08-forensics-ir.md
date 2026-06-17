@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Incident Response & Forensics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch08-ir-forensics.png)
+
 ### Incident Response Lifecycle
 Incident Response is a structured process used by organizations to handle a security breach or cyberattack. The NIST SP 800-61 framework defines four main phases:
 1.  **Preparation:** Establishing the team (CSIRT), tools, and policies *before* an incident occurs.

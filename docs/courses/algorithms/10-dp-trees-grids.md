@@ -12,6 +12,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![DP Trees and Grids Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch10-dp-trees-grids.png)
+
 ### 10.1 DP on Trees
 
 Trees are naturally recursive: each node can be processed after its children are processed (post-order traversal). Tree DP typically defines a state \( dp[u] \) representing the optimal value for the subtree rooted at \( u \).

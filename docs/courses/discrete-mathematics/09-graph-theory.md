@@ -13,6 +13,8 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
+![Graph Theory Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/09-graph-theory.png)
+
 ### 9.1 Definitions
 
 An **undirected graph** $G = (V, E)$ consists of a set of **vertices** $V$ and a set of **edges** $E \subseteq \{\{u, v\} \mid u, v \in V, u \neq v\}$ (simple graph). A **directed graph** (digraph) has edges as ordered pairs $(u, v)$.

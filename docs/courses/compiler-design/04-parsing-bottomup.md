@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: explain the shift-reduc
 
 ## Theory
 
+![Bottom-Up Parsing: Shift-Reduce and LR Family](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch04-parsing-bottomup.png)
+
 ### Bottom-Up Parsing and the Handle
 
 Bottom-up parsing constructs a parse tree starting from the leaves (the input terminals) and working upward toward the start symbol. The process corresponds to the reverse of a rightmost derivation: a rightmost derivation is reduced step by step to the start symbol. At each step, the parser identifies a substring of the current sentential form that can be reduced to a nonterminal.

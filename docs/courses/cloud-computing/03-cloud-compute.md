@@ -41,6 +41,8 @@ Providers organize instances into families optimized for different workloads. Na
 - **Storage Optimized:** Focused on high-throughput, low-latency local NVMe storage. Suited for NoSQL databases and data warehousing.
 - **Accelerated Computing:** Equipped with GPUs (NVIDIA) or TPUs (GCP) for machine learning, 3D rendering, and financial modeling.
 
+![Cloud Compute Instances](../assets/images/diagrams/cloud-computing/ch03-compute-instances.png)
+
 ### 3.4 Lifecycle and Pricing Models
 
 Cloud compute economics allow for significant cost optimization through tiered pricing:

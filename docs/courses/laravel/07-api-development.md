@@ -15,6 +15,8 @@
 
 ## Theory
 
+![API Development Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/07-api-development.png)
+
 ### RESTful API Design
 
 REST treats server data as resources accessed through a uniform interface. API endpoints represent **nouns** (resources), not **verbs** (actions):

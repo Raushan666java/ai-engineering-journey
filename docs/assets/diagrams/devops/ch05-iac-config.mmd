@@ -1,0 +1,22 @@
+flowchart TD
+    subgraph IaC["Infrastructure as Code"]
+        Terraform["Terraform<br/>HCL language<br/>declarative<br/>desired state → apply<br/>providers: AWS, Azure, GCP"]
+        CloudForm["CloudFormation<br/>AWS-native IaC<br/>YAML/JSON templates<br/>stacks & change sets"]
+        Pulumi["Pulumi<br/>real languages (TS, Python)<br/>same primitives"]
+    end
+
+    subgraph ConfigMgmt["Configuration Management"]
+        Ansible["Ansible<br/>agentless (SSH)<br/>YAML playbooks<br/>push model"]
+        Puppet["Puppet<br/>agent + server<br/>declarative DSL<br/>pull model"]
+        Chef["Chef<br/>Ruby DSL<br/>cookbooks + recipes"]
+        Salt["SaltStack<br/>fast remote execution<br/>state files"]
+    end
+
+    subgraph State["State Management"]
+        StateFile["terraform.tfstate<br/>tracks real-world resources"]
+        Remote["Remote State Backend<br/>S3, GCS, Azure Storage<br/>DynamoDB locking"]
+    end
+
+    subgraph Immutable["Immutable Infrastructure"]
+        IM["Replace rather than patch<br/>new AMI / image per deploy<br/>consistent environments"]
+    end

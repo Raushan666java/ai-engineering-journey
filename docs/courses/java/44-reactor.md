@@ -17,6 +17,8 @@ After completing this chapter, you will be able to:
 
 ## 1. The Reactive Manifesto and Why Reactive Matters
 
+![Reactive Streams Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/44-reactor.png)
+
 ### 1.1 The Problem with Blocking I/O
 
 Traditional servlet-based applications dedicate one thread per request. When that thread reads from a database, calls a remote API, or writes to a file, it blocks — waiting idle while the underlying I/O completes. Under moderate load, thread pools saturate, new requests queue, and latency spirals.

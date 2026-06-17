@@ -9,6 +9,8 @@
 - Differentiate between `struct` and `union`
 - Use bit fields for packed data storage
 
+![C Structures, Unions and Dynamic Memory Allocation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch10-structures-dma.png)
+
 ## 10.1 Structure Declaration
 
 A structure groups variables of possibly different types under a single name.

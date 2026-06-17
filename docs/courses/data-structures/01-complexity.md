@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Complexity Analysis: Big O, Recurrence Relations and Analysis Types](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch01-complexity.png)
+
 ### Why Complexity Matters
 
 Two programs that solve the same problem can differ in running time by orders of magnitude. Complexity analysis gives us a language to describe this difference without reference to a specific machine.

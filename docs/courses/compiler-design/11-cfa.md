@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: identify basic blocks f
 
 ## Theory
 
+![Control Flow Graphs, Data-Flow Analysis and Loop Optimizations](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch08-cfa-dfa-loop.png)
+
 ### Basic Blocks Revisited
 
 A basic block is a maximal sequence of consecutive instructions with a single entry point (its first instruction) and a single exit point (its last instruction). Control enters at the top and leaves only at the bottom. There is no branching or halting in between. Partitioning into basic blocks identifies leaders: (1) the first instruction of the program is a leader; (2) any instruction that is a jump target is a leader; (3) any instruction that immediately follows a jump or conditional jump is a leader. Each leader together with all instructions up to but not including the next leader constitutes a basic block.

@@ -1,0 +1,25 @@
+flowchart TD
+    subgraph Greedy["Greedy Algorithms\nLocal optimum → Global optimum"]
+        AS["Activity Selection\nEarliest finish first\nO(n log n)"]
+        HF["Huffman Coding\nMerge lowest frequency pair\nO(n log n)"]
+        FK["Fractional Knapsack\nHighest value/weight ratio\nO(n log n)"]
+        JS["Job Sequencing\nHighest profit first\nLatest slot possible\nO(n²) / O(n log n)"]
+        CC["Coin Change\nLargest denom first\nO(k), canonical only"]
+    end
+
+    subgraph Conditions["When Greedy Works"]
+        GP["Greedy-Choice Property\nLocal choice leads to global optimum"]
+        OS["Optimal Substructure\nOptimal solution contains\noptimal sub-solutions"]
+    end
+
+    subgraph Exchange["Exchange Argument Proof"]
+        E1["Let G = greedy solution"]
+        E2["Let O = any optimal solution"]
+        E3["Find first difference between G, O"]
+        E4["Swap O's choice for G's choice"]
+        E5["Show no quality loss → G is optimal"]
+    end
+
+    style Greedy fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Conditions fill:#fff3e0,stroke:#f57c00,color:#000
+    style Exchange fill:#e8f5e9,stroke:#2e7d32,color:#000

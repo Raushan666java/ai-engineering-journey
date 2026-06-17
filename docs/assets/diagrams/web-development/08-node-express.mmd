@@ -1,0 +1,42 @@
+flowchart LR
+    subgraph Client["Client"]
+        A["Browser / curl / Postman"]
+    end
+
+    subgraph Node_Event_Loop["Node.js Event Loop"]
+        direction TB
+        EL1["Timers<br/>setTimeout/setInterval"]
+        EL2["Pending Callbacks<br/>I/O deferred"]
+        EL3["Poll<br/>retrieve I/O events"]
+        EL4["Check<br/>setImmediate"]
+        EL5["Close Callbacks"]
+        MQ["Microtasks<br/>nextTick > Promise"]
+    end
+
+    subgraph Express_App["Express Application"]
+        direction TB
+        M1["Middleware 1<br/>logging (morgan)"]
+        M2["Middleware 2<br/>security (helmet)"]
+        M3["Middleware 3<br/>CORS"]
+        M4["Middleware 4<br/>JSON parser"]
+        R["Route Handler<br/>GET/POST/PUT/DELETE"]
+        E["Error Middleware<br/>4 params (err, req, res, next)"]
+    end
+
+    Client -->|HTTP Request| M1
+    M1 --> M2
+    M2 --> M3
+    M3 --> M4
+    M4 --> R
+    R -->|Response JSON| Client
+    R -->|Error| E
+    E --> Client
+
+    Node_Event_Loop -.->|drives async I/O| Express_App
+
+    subgraph Static_Server["Static Files & Templates"]
+        S1["express.static('public')"]
+        S2["Template Engine (EJS)"]
+    end
+
+    Express_App -.-> Static_Server

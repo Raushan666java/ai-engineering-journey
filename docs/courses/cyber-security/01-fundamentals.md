@@ -14,6 +14,8 @@
 
 ## Theory
 
+![CIA Triad & STRIDE Threat Model](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch01-cia-stride.png)
+
 ### The CIA Triad
 The core of cyber security is built upon the CIA triad: Confidentiality, Integrity, and Availability.
 - **Confidentiality:** Ensuring that sensitive information is only accessible to authorized individuals. This is achieved through encryption, access controls, and data masking.

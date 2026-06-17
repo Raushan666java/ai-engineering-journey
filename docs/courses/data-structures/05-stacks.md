@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Stacks, Queues and Deques](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch03-stacks-queues.png)
+
 ### Stack ADT
 
 A stack is a linear data structure that supports two primary operations: **push** (insert at the top) and **pop** (remove from the top). The Last-In-First-Out (LIFO) discipline governs access.

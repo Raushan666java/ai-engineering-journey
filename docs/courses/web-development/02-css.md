@@ -15,6 +15,8 @@ By the end of this chapter, you will be able to:
 
 ### 2.1 Selectors
 
+![CSS Layout and Selectors Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/02-css.png)
+
 CSS selectors determine which elements a rule set applies to. Modern CSS provides a rich selector syntax.
 
 | Selector Pattern | Matches | Example |

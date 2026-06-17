@@ -1,0 +1,34 @@
+flowchart TD
+    subgraph DevSecOps["DevSecOps Practices"]
+        ShiftLeft["Shift Left<br/>security earlier in pipeline"]
+        SAST["SAST<br/>Static Application Security Testing<br/>code scanning (Semgrep, SonarQube)"]
+        DAST["DAST<br/>Dynamic Application Security Testing<br/>OWASP ZAP, Burp Suite"]
+        SCA["SCA<br/>Software Composition Analysis<br/>dependency vulns (Snyk, Dependabot)"]
+        Secret["Secret Scanning<br/>truffleHog, git-secrets<br/>keys & tokens in code"]
+        ContainerSec["Container Security<br/>image scanning (Trivy, Clair)<br/>runtime (Falco, AppArmor)"]
+        Compliance["Compliance as Code<br/>InSpec, Checkov,<br/>OPA / Rego policies"]
+    end
+
+    subgraph Cloud["Cloud Platforms"]
+        AWS["AWS<br/>EC2, ECS, EKS, Lambda<br/>S3, RDS, VPC, IAM"]
+        Azure["Azure<br/>VMs, AKS, Functions<br/>Blob, SQL, VNet, AD"]
+        GCP["GCP<br/>GCE, GKE, Cloud Run<br/>Cloud Storage, Spanner, VPC"]
+    end
+
+    subgraph DB_DevOps["Database DevOps"]
+        Migrations["Database Migrations<br/>Flyway, Liquibase<br/>schema version control"]
+        Backup["Backup & Recovery<br/>automated backups<br/>point-in-time recovery"]
+    end
+
+    subgraph SRE["SRE Principles"]
+        SLOs["Service Level Objectives<br/>targets for reliability"]
+        SLIs["Service Level Indicators<br/>latency, errors, traffic, saturation"]
+        ErrorBudgets["Error Budgets<br/>(100% - SLO) × time<br/>balance reliability × velocity"]
+        Toil["Toil Elimination<br/>automate manual work"]
+    end
+
+    subgraph Net["Networking"]
+        DNS["DNS / Load Balancing<br/>name resolution & traffic distribution"]
+        Proxy["Proxies<br/>reverse proxy (Nginx)<br/>API Gateway (Kong)"]
+        CDN["CDN<br/>CloudFront, Cloudflare<br/>edge caching"]
+    end

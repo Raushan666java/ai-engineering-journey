@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Decidability Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/10-decidability.png)
+
 ### 10.1 Decidable vs Undecidable Problems
 
 A problem (language) is **decidable** if there exists an algorithm (Turing machine that always halts) that correctly answers yes/no for every instance. Otherwise, it is **undecidable**.

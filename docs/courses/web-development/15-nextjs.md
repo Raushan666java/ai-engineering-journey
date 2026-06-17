@@ -12,6 +12,8 @@ By the end of this chapter, you will be able to:
 
 ## 15.1 App Router vs Pages Router
 
+![Next.js Rendering Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/15-nextjs.png)
+
 ```typescript
 // App Router (Next.js 13+) - file-based routing with layouts
 // app/page.tsx       -> /

@@ -37,6 +37,8 @@ Networks are subdivided into **Subnets** for organization and security.
    - **Site-to-Site VPN:** Encrypted tunnel over the public internet (IPsec).
    - **Dedicated Circuits:** Physical, private connection (AWS Direct Connect, Azure ExpressRoute, GCP Cloud Interconnect). Offers consistent performance and higher security.
 
+![VPC Networking](../assets/images/diagrams/cloud-computing/ch06-vpc-networking.png)
+
 ### 6.4 DNS and Traffic Management
 
 Cloud DNS services translate domain names and route traffic based on intelligent policies.

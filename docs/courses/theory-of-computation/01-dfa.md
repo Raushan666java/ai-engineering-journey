@@ -11,6 +11,8 @@
 
 ## Theory
 
+![DFA State Diagram - Binary Numbers Divisible by 3](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/01-dfa.png)
+
 ### 1.1 What is a Finite Automaton?
 
 A finite automaton is a simplest computational model with **finite memory**. It reads an input string one symbol at a time, moves through a sequence of states, and decides whether to accept or reject the string. The memory is limited — the automaton cannot store arbitrary amounts of data; only its current state matters.

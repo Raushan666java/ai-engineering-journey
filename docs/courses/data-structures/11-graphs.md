@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Graphs: Representations, Traversals and Algorithms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch07-graphs.png)
+
 ### Definition
 
 A **graph** \( G = (V, E) \) consists of a set of vertices \( V \) and a set of edges \( E \subseteq V \times V \). An edge connects two vertices.

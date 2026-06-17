@@ -1,0 +1,20 @@
+flowchart TD
+    subgraph Stack["Call Stack (example)"]
+        Main["main()<br/>local vars: a, b"]
+        Main --> FuncA["funcA(a)<br/>local vars: x, y<br/>return address"]
+        FuncA --> FuncB["funcB(x)<br/>local vars: p, q<br/>return address"]
+        FuncB -- return --> FuncA
+        FuncA -- return --> Main
+    end
+
+    subgraph Params["Parameter Passing"]
+        PassByValue["void swap(int x, int y)<br/>copies values<br/>originals unchanged"]
+        PassByPtr["void swap(int *x, int *y)<br/>copies addresses<br/>originals modifiable"]
+    end
+
+    subgraph Scope["Storage Classes"]
+        Auto["auto (default)<br/>local, stack-allocated"]
+        Static["static<br/>persists across calls<br/>file-scope or local"]
+        Extern["extern<br/>global variable<br/>linkable across files"]
+        Register["register<br/>hint to CPU register<br/>no & operator"]
+    end

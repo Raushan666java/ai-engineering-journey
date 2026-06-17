@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![Network Flow Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch13-graph-flow.png)
+
 ### 13.1 Flow Networks
 
 **Definition 13.1.** A **flow network** is a directed graph \( G = (V, E) \) with:

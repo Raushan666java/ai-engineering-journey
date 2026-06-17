@@ -25,6 +25,8 @@ By the end of this chapter you should be able to:
 
 A thread in Java is an instance of `java.lang.Thread`. When it runs, it executes code on a **call stack** of its own — separate from all other threads. The JVM's `Thread.State` enum defines six states:
 
+![Java Thread States](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/02-concurrency.png)
+
 ```
                         ┌──────────────┐
                         │     NEW      │  start()

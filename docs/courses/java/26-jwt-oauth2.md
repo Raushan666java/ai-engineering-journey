@@ -23,6 +23,8 @@ By the end of this chapter you should be able to:
 
 ## JWT — JSON Web Token
 
+![OAuth2 Authorization Code Flow with JWT](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/26-jwt-oauth2.png)
+
 A JWT is a compact, URL-safe token format for representing claims between two parties. It is used heavily in OAuth2 and OpenID Connect as the format for access tokens and ID tokens.
 
 ### JWT Structure

@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 7.1 Motivation
 
+![Templates Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/07-templates.png)
+
 Strong typing is a cornerstone of C++, but it creates duplication when the same logic applies across multiple types. Consider a function that swaps two values: without templates, we write overloads for every type.
 
 Templates eliminate this duplication by parameterising types:

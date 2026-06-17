@@ -1,0 +1,31 @@
+stateDiagram-v2
+    direction LR
+    [*] --> q0
+    q0 --> q1: X / X, R
+    q0 --> qaccept: ␣ / ␣, R
+    q0 --> qreject: b / b, R
+    q0 --> qreject: c / c, R
+    q1 --> q2: Y / Y, R
+    q1 --> q1: a / a, R
+    q1 --> q1: X / X, R
+    q2 --> q3: Z / Z, R
+    q2 --> q2: b / b, R
+    q2 --> q2: Y / Y, R
+    q3 --> q0: X / X, L
+    q3 --> q3: a / a, L
+    q3 --> q3: b / b, L
+    q3 --> q3: c / c, L
+    q3 --> q3: Y / Y, L
+    q3 --> q3: Z / Z, L
+    q0 --> q4: X / X, R
+    q4 --> qaccept: ␣ / ␣, R
+    q4 --> q4: Y / Y, R
+    q4 --> q4: Z / Z, R
+    q4 --> qreject: a / a, R
+    q4 --> qreject: b / b, R
+    q4 --> qreject: c / c, R
+    note right of q0: Find first a, mark X
+    note right of q1: Find first b, mark Y
+    note right of q2: Find first c, mark Z
+    note right of q3: Return to leftmost
+    note right of q4: Verify all marked

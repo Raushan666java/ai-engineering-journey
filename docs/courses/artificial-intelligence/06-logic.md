@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Logic and FOL](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch06-logic-fol.png)
+
 ### Knowledge-Based Agents
 A **knowledge-based agent** maintains a **Knowledge Base (KB)**, which is a set of sentences in a formal language. The agent operates through two main operations:
 - **TELL**: Adding new information to the KB.

@@ -2,6 +2,8 @@
 
 ## GATE Marks Distribution
 
+![GATE General Aptitude Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/01-general-aptitude.png)
+
 General Aptitude is a compulsory section in GATE CS, carrying **15 marks** (15% of the total 100 marks). It consists of:
 
 - **5 questions × 1 mark each** = 5 marks

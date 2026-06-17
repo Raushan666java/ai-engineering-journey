@@ -4,6 +4,8 @@ This chapter covers the brain's two learning modes — focused and diffuse — a
 
 ## Learning Objectives
 
+![Focused vs Diffuse Modes](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-01.png)
+
 - Understand focused vs diffuse thinking and when to use each
 - Explain the 4-chunk limit and how to build chunks
 - Distinguish procedural knowledge from declarative knowledge

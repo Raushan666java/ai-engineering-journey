@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Scheduling Algorithms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/03-cpu-scheduling.png)
+
 ### Basic Concepts
 
 CPU scheduling is the foundation of multiprogramming. The **scheduler** selects among processes in the ready queue to allocate CPU time. Scheduling decisions happen when a process:

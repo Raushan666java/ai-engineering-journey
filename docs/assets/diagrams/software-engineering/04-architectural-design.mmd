@@ -1,0 +1,38 @@
+flowchart TD
+    subgraph PATTERNS["Architecture Patterns"]
+        L[Layered Architecture]
+        MVC[Model-View-Controller]
+        R[Repository Pattern]
+        CS[Client-Server]
+        PF[Pipe-and-Filter]
+        MS[Microservices]
+        ED[Event-Driven]
+        B[Broker Pattern]
+    end
+
+    subgraph DOMAINS["Application Domains"]
+        TP[Transaction Processing]
+        IS[Information Systems]
+        LPS[Language Processing]
+    end
+
+    L -->|three-tier| L1[Presentation]
+    L1 --> L2[Business Logic]
+    L2 --> L3[Data Access]
+
+    MVC --> M[Model]
+    MVC --> V[View]
+    MVC --> C[Controller]
+
+    MS -->|characteristics| M1[Independent deployability]
+    MS --> M2[Technology diversity]
+    MS --> M3[Resilience via isolation]
+    MS --> M4[Distributed complexity]
+
+    TP -->|ACID| T1[Atomicity]
+    TP --> T2[Consistency]
+    TP --> T3[Isolation]
+    TP --> T4[Durability]
+
+    IS -->|uses| R
+    LPS -->|uses| PF

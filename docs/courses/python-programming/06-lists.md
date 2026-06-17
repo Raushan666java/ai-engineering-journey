@@ -9,6 +9,8 @@ By the end of this chapter, students will be able to:
 - Work with nested lists and multidimensional structures
 - Distinguish shallow and deep copying and select the appropriate copy strategy
 
+![List Operations](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/06-lists.png)
+
 ## 6.1 List Basics
 
 A list is an ordered, mutable collection of objects. Lists can contain mixed types and are resizable:

@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph Growth["Asymptotic Growth Rates"]
+        O1["O(1) - Constant\nArray access"]
+        OL["O(log n) - Logarithmic\nBinary search"]
+        ON["O(n) - Linear\nLinear search"]
+        ONL["O(n log n) - Linearithmic\nMerge sort"]
+        ON2["O(n²) - Quadratic\nBubble sort"]
+        O2N["O(2ⁿ) - Exponential\nFibonacci naive"]
+        ONF["O(n!) - Factorial\nTraveling salesman"]
+    end
+
+    O1 --> OL --> ON --> ONL --> ON2 --> O2N --> ONF
+
+    subgraph Master["Master Theorem\nT(n) = aT(n/b) + f(n)"]
+        C1["Case 1: f(n) = O(n^logb(a-ε))\n→ T(n) = Θ(n^logb(a))"]
+        C2["Case 2: f(n) = Θ(n^logb(a))\n→ T(n) = Θ(n^logb(a) log n)"]
+        C3["Case 3: f(n) = Ω(n^logb(a+ε))\n→ T(n) = Θ(f(n))"]
+    end
+
+    subgraph Amortized["Amortized Analysis"]
+        Agg["Aggregate Method\nTotal cost / n operations"]
+        Acc["Accounting Method\nStore credit for future ops"]
+        Pot["Potential Method\nΦ(state) tracks prepaid work"]
+    end
+
+    style Growth fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Master fill:#fff3e0,stroke:#f57c00,color:#000
+    style Amortized fill:#e8f5e9,stroke:#2e7d32,color:#000

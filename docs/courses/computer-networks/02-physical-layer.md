@@ -10,6 +10,8 @@
 
 ## 2.1 Guided Transmission Media
 
+![Physical Layer: Transmission Media, Signal Encoding and Key Concepts](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch02-physical.png)
+
 Guided media provide a physical conduit for electromagnetic signals. The choice of medium depends on bandwidth requirements, distance, cost, and environmental factors.
 
 ### 2.1.1 Twisted Pair

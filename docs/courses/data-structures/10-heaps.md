@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Heaps, Balanced Trees and Advanced Data Structures](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch06-heap-trees-advanced.png)
+
 ### Binary Heap
 
 A **binary heap** is a complete binary tree satisfying the **heap property**:

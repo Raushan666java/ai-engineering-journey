@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph SP["Shortest Path Algorithms"]
+        DJ["Dijkstra\nNon-negative weights\nGreedy: min-priority queue\nO((V+E) log V)"]
+        BF["Bellman-Ford\nNegative weights OK\nDetects negative cycles\nO(V·E)"]
+        FW["Floyd-Warshall\nAll-pairs shortest paths\n3 nested loops\nO(V³)"]
+        DAG["DAG Shortest Path\nTopological order\nRelax all edges once\nO(V+E)"]
+        AS["A* Search\nHeuristic-guided\nAdmissible + consistent\nFaster in practice"]
+    end
+
+    subgraph Relaxation["Edge Relaxation"]
+        R1["if dist[u] + w(u,v) < dist[v]:"]
+        R2["    dist[v] = dist[u] + w(u,v)"]
+        R3["    predecessor[v] = u"]
+    end
+
+    subgraph Choice["Which to Use?"]
+        C1["Non-negative? → Dijkstra"]
+        C2["Negative edges? → Bellman-Ford"]
+        C3["All-pairs? → Floyd-Warshall"]
+        C4["DAG? → Topological DP"]
+        C5["Goal-directed? → A*"]
+    end
+
+    style SP fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Relaxation fill:#fce4ec,stroke:#c62828,color:#000
+    style Choice fill:#e8f5e9,stroke:#2e7d32,color:#000

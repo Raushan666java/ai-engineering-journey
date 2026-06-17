@@ -16,6 +16,8 @@
 
 ## Theory
 
+![Database Types Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/04-database-foundations.png)
+
 ### B-Tree Internals
 
 The B-Tree is the most widely used data structure for database indexes. It is the default storage engine for MySQL (InnoDB), PostgreSQL, Oracle, and SQL Server.

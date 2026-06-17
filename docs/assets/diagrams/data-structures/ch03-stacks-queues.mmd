@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph Stack["Stack (LIFO)"]
+        S1["Push: add to top<br/>O(1)"]
+        S2["Pop: remove from top<br/>O(1)"]
+        S3["Peek/Top: view top element<br/>O(1)"]
+        S4["Uses: <br/>function call stack<br/>undo/redo<br/>expression evaluation<br/>DFS / backtracking"]
+    end
+
+    subgraph Queue["Queue (FIFO)"]
+        Q1["Enqueue: add to rear<br/>O(1)"]
+        Q2["Dequeue: remove from front<br/>O(1)"]
+        Q3["Front: view first element<br/>O(1)"]
+        Q4["Uses: <br/>BFS / level-order<br/>task scheduling<br/>print spooling<br/>buffering"]
+    end
+
+    subgraph Deque["Deque (Double-Ended)"]
+        D1["Insert/Remove both ends<br/>O(1)"]
+        D2["Sliding window problems"]
+        D3["Palindrome checking"]
+    end
+
+    subgraph Impl["Implementations"]
+        ArrImpl["Array-based<br/>circular buffer for queue"]
+        LLImpl["Linked-list based<br/>dynamic size"]
+        Cont["Container adapters<br/>(C++: stack&lt;int&gt;, queue&lt;int&gt;)"]
+    end

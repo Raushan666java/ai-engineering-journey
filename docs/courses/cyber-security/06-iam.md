@@ -14,6 +14,8 @@
 
 ## Theory
 
+![IAM Access Control Models](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch06-iam-models.png)
+
 ### Core IAM Concepts
 IAM is the security discipline that enables the right individuals to access the right resources at the right times for the right reasons.
 - **Identity:** A unique representation of an entity (human, service, or device) within a system.

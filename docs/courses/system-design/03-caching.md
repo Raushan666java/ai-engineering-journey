@@ -17,6 +17,8 @@
 
 ## Theory
 
+![Caching Strategies Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/03-caching.png)
+
 ### Locality of Reference
 
 Caching works because of locality of reference — the observation that accessed data is not uniformly distributed.

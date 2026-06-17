@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph IP["Internet Protocol"]
+        IPv4["IPv4<br/>32-bit address<br/>dotted decimal<br/>~4.3B addresses"]
+        IPv6["IPv6<br/>128-bit address<br/>hex colon notation<br/>~340 undecillion"]
+        Frag["Fragmentation<br/>MTU path discovery<br/>reassembly at destination"]
+    end
+
+    subgraph Addressing["IP Addressing"]
+        Classful["Class A / B / C / D / E<br/>(historical)"]
+        Subnet["Subnetting<br/>network prefix + host bits<br/>subnet mask"]
+        CIDR["CIDR<br/>192.168.1.0/24<br/>variable-length prefix"]
+        NAT["NAT<br/>private ↔ public<br/>192.168.x.x / 10.x.x.x / 172.16-31.x.x"]
+    end
+
+    subgraph Support["Supporting Protocols"]
+        DHCP["DHCP<br/>dynamic IP assignment<br/>discover → offer → request → ack"]
+        ARP["ARP<br/>IP → MAC address<br/>broadcast request"]
+        ICMP["ICMP<br/>ping, traceroute<br/>error reporting"]
+    end
+
+    subgraph Routing["Routing Protocols"]
+        Intra["Intra-AS (IGP)"]
+        RIP["RIP<br/>distance vector<br/>hop count max 15"]
+        OSPF["OSPF<br/>link state<br/>Dijkstra's algorithm"]
+        Inter["Inter-AS (EGP)"]
+        BGP["BGP<br/>path vector<br/>Internet backbone routing"]
+    end

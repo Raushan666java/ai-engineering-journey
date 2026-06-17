@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph Rand["Randomized Algorithms"]
+        direction TB
+        LV["Las Vegas\nAlways correct\nRunning time varies\nRandomized Quicksort\nRandomized Quickselect"]
+        MC["Monte Carlo\nMay err with prob ε\nBounded error\nMiller-Rabin\nKarger's min cut"]
+    end
+
+    subgraph QuickSel["Randomized Quickselect\nk-th smallest element"]
+        Q1["Choose random pivot"]
+        Q2["Partition around pivot"]
+        Q3["Pivot at position p?"]
+        Q4{"p == k?"}
+        Q4 -->|"Yes"| Q5["Return pivot"]
+        Q4 -->|"p > k"| Q6["Recurse left"]
+        Q4 -->|"p < k"| Q7["Recurse right"]
+    end
+
+    subgraph MR["Miller-Rabin Primality"]
+        MR1["Write n-1 = 2^s · d"]
+        MR2["Pick random a in [2, n-2]"]
+        MR3["Compute a^d mod n"]
+        MR4["If ±1 → probable prime"]
+        MR5["Else square s times"]
+        MR6["If never -1 → composite"]
+    end
+
+    style Rand fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style QuickSel fill:#fff3e0,stroke:#f57c00,color:#000
+    style MR fill:#e8f5e9,stroke:#2e7d32,color:#000

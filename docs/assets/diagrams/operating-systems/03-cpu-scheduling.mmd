@@ -1,0 +1,34 @@
+flowchart TD
+    subgraph TYPES["Scheduling Types"]
+        NP["Non-Preemptive\nProcess keeps CPU until yield"]
+        P["Preemptive\nOS can forcibly remove process"]
+    end
+    
+    subgraph ALGOS["Algorithms"]
+        FCFS["FCFS - First-Come First-Served\nFIFO queue, simple, convoy effect"]
+        SJF["SJF - Shortest Job First\nMin avg wait, optimal, needs prediction"]
+        SRTF["SRTF - Shortest Remaining Time\nPreemptive SJF"]
+        PRIO["Priority Scheduling\nStarvation risk, aging solution"]
+        RR["Round Robin\nTime quantum, context switch overhead"]
+        MLQ["Multilevel Queue\nFixed queues per process type"]
+        MLFQ["Multilevel Feedback Queue\nProcesses move between queues\nAdaptive, used in modern OS"]
+    end
+    
+    subgraph CRITERIA["Scheduling Criteria"]
+        C1["CPU Utilization - maximize"]
+        C2["Throughput - processes/hour"]
+        C3["Turnaround Time - minimize"]
+        C4["Waiting Time - minimize"]
+        C5["Response Time - minimize"]
+    end
+    
+    subgraph ISSUES["Key Issues"]
+        I1["Convoy Effect - short behind long"]
+        I2["Starvation - low-priority never runs"]
+        I3["Priority Inversion - high blocked by low"]
+        I4["Quantum Trade-off - too large = FCFS\n too small = too many switches"]
+    end
+    
+    TYPES --> ALGOS
+    ALGOS --> CRITERIA
+    ALGOS --> ISSUES

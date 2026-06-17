@@ -8,6 +8,8 @@
 - Use storage class specifiers: `auto`, `static`, `extern`, `register`
 - Create recursive functions (preliminary)
 
+![C Functions: Call Stack, Parameter Passing, Storage Classes](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch08-functions.png)
+
 ## 8.1 Function Basics
 
 A function is a named, reusable block of code that performs a specific task.

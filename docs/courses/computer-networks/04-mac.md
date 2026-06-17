@@ -11,6 +11,8 @@
 
 ## 4.1 The MAC Sublayer
 
+![MAC Sublayer Protocols, Ethernet Evolution and Switching](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch04-mac-ethernet.png)
+
 The medium access control (MAC) sublayer, the lower sublayer of the data link layer in the IEEE 802 architecture, governs how multiple stations share a common broadcast channel. Without coordination, simultaneous transmissions collide — signals interfere and both are lost. MAC protocols are classified into three categories:
 
 **Channel partitioning.** Divide the channel into smaller pieces (time slots, frequencies, codes) and allocate one piece per station. Examples: TDMA, FDMA, CDMA.

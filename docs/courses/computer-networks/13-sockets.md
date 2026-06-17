@@ -10,6 +10,8 @@
 
 ## 13.1 The Socket API
 
+![Socket Programming and I/O Models](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch09-sockets.png)
+
 A socket is an abstraction for a communication endpoint. The socket API, derived from Berkeley UNIX, provides system calls for creating, connecting, sending, receiving, and closing network connections.
 
 **Socket types:**

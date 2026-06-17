@@ -17,6 +17,8 @@ By the end of this chapter, you will be able to:
 
 ### 6.1 JSX
 
+![React Component Lifecycle Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/06-react-basics.png)
+
 JSX is a syntax extension for JavaScript that resembles HTML. It compiles to `React.createElement` calls.
 
 ```jsx

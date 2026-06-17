@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Latches, Flip-Flops and Sequential Components](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch04-flipflops-sequential.png)
+
 ### 5.1 Latches
 
 A latch is a memory element that samples its inputs continuously and changes outputs accordingly. It is level-sensitive.

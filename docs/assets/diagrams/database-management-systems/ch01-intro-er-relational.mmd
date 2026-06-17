@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph DBMS["Database Management System"]
+        User["Users / Applications"] --> Query["Query Processor"]
+        Query --> Parser["Parser<br/>syntax check & parse tree"]
+        Parser --> Optimizer["Optimizer<br/>query plan selection"]
+        Optimizer --> Exec["Execution Engine"]
+        Exec --> SI["Storage & Indexing<br/>B+ Trees, Hash Indexes"]
+        SI --> Data["Data Files<br/>(tables, indexes, logs)"]
+    end
+
+    subgraph ER["ER Model"]
+        Ent["Entity<br/>rectangle<br/>e.g. Student"]
+        Attr["Attribute<br/>ellipse<br/>e.g. name, id"]
+        Rel["Relationship<br/>diamond<br/>e.g. Enrolls"]
+        Keys["Key Attributes<br/>(primary key, underlined)"]
+    end
+
+    subgraph RelModel["Relational Model"]
+        Table["Relation = Table<br/>rows = tuples<br/>columns = attributes"]
+        Schema["Schema: Student(id, name, gpa)<br/>Domain constraints per column"]
+        Integrity["Integrity Constraints<br/>primary key | foreign key<br/>NOT NULL | UNIQUE | CHECK"]
+    end
+
+    subgraph SQLtypes["SQL Categories"]
+        DDL["DDL<br/>CREATE, ALTER, DROP"]
+        DML["DML<br/>SELECT, INSERT, UPDATE, DELETE"]
+        DCL["DCL<br/>GRANT, REVOKE"]
+        TCL["TCL<br/>COMMIT, ROLLBACK, SAVEPOINT"]
+    end

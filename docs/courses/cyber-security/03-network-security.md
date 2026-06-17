@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Network Defense Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch03-network-defense.png)
+
 ### The OSI Model and Security
 Security must be addressed at multiple layers of the Open Systems Interconnection (OSI) model:
 - **Layer 2 (Data Link):** MAC flooding, ARP spoofing, VLAN hopping.

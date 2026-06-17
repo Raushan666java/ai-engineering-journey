@@ -1,0 +1,16 @@
+stateDiagram-v2
+    direction LR
+    [*] --> q0
+    q0 --> q0: 0
+    q0 --> q1: 1
+    q1 --> q2: 0
+    q1 --> q0: 1
+    q2 --> q1: 0
+    q2 --> q2: 1
+    q0 --> [*]: accept
+    state q0 {
+        [*] --> Remainder0
+    }
+    note right of q0: Start / Accept
+    note right of q1: Remainder 1
+    note right of q2: Remainder 2

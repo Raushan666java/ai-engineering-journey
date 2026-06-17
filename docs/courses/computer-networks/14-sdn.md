@@ -10,6 +10,8 @@
 
 ## 14.1 The SDN Paradigm
 
+![SDN, NFV, Cloud Networking and Modern Trends](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch10-sdn-cloud-modern.png)
+
 Traditional network devices integrate the control plane (routing, signaling) and data plane (packet forwarding) on the same hardware. The control plane runs distributed protocols (OSPF, BGP) that converge based on local information. This distributed architecture is robust but difficult to manage, slow to innovate, and tightly coupled to vendor hardware.
 
 Software-Defined Networking (SDN) separates the control plane from the data plane:

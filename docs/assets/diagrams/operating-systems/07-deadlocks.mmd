@@ -1,0 +1,38 @@
+flowchart TD
+    subgraph CONDITIONS["Four Necessary Conditions"]
+        M["Mutual Exclusion\nNon-sharable resource"]
+        H["Hold and Wait\nHolding resources while requesting more"]
+        N["No Preemption\nCannot force resource release"]
+        C["Circular Wait\nCycle of waiting processes"]
+    end
+    
+    subgraph STRATEGIES["Handling Strategies"]
+        PREV["Prevention\nBreak one condition"]
+        AVOID["Avoidance\nBanker's Algorithm\nSafe state check"]
+        DETECT["Detection\nWait-for graph\nCycle detection"]
+        IGNORE["Ignore (Ostrich)\nMost common in modern OS"]
+    end
+    
+    subgraph PREVENTION_METHODS["Prevention Methods"]
+        B1["Break Hold-Wait:\nRequest all resources at once"]
+        B2["Break No-Preemption:\nPreempt held resources"]
+        B3["Break Circular Wait:\nTotal resource ordering"]
+    end
+    
+    subgraph AVOIDANCE["Banker's Algorithm"]
+        BA1["Available - free resources vector"]
+        BA2["Max - maximum need per process"]
+        BA3["Allocation - currently held"]
+        BA4["Need = Max - Allocation"]
+        BA5["Safety check: O(m * n^2)"]
+    end
+    
+    subgraph RECOVERY["Recovery"]
+        R1["Process Termination\nAbort all or one at a time"]
+        R2["Resource Preemption\nVictim selection & rollback"]
+    end
+    
+    CONDITIONS --> STRATEGIES
+    PREV --> PREVENTION_METHODS
+    AVOID --> AVOIDANCE
+    DETECT --> RECOVERY

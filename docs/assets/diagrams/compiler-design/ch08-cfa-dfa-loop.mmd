@@ -1,0 +1,34 @@
+flowchart TD
+    subgraph CFG["Control Flow Graph"]
+        B1["Basic Block 1<br/>entry: x = a + b"]
+        B2["Basic Block 2<br/>y = x * c"]
+        B3["Basic Block 3<br/>z = x + y<br/>if z < 10 goto B5"]
+        B4["Basic Block 4<br/>w = y - z<br/>goto B6"]
+        B5["Basic Block 5<br/>w = z * 2"]
+        B6["Basic Block 6<br/>return w"]
+        B1 --> B2 --> B3
+        B3 -- true --> B5
+        B3 -- false --> B4
+        B4 --> B6
+        B5 --> B6
+    end
+
+    subgraph DFA["Data-Flow Analysis"]
+        Reaching["Reaching Definitions<br/>which defs reach a point?"]
+        Live["Live Variables<br/>which vars used later?"]
+        Available["Available Expressions<br/>already computed?"]
+        VeryBusy["Very Busy Expressions<br/>computed on all paths?"]
+    end
+
+    subgraph Liveness["Live Variable Analysis"]
+        Backward["Backward dataflow<br/>IN[b] = (OUT[b] - DEF[b]) ∪ USE[b]"]
+        Application["Register allocation<br/>: live ranges"]
+        Application2["Dead code elimination"]
+    end
+
+    subgraph LoopOpts["Loop Optimizations"]
+        Induction["Induction Variable Elimination"]
+        Strength["Strength Reduction<br/>replace multiply with add"]
+        Invariant["Loop-Invariant Code Motion<br/>move invariant out of loop"]
+        Unrolling["Loop Unrolling<br/>duplicate body for fewer iterations"]
+    end

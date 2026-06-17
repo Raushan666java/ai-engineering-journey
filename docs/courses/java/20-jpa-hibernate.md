@@ -17,6 +17,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Entity Mapping Fundamentals
 
+![JPA Entity Lifecycle & ORM Mapping](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/20-jpa-hibernate.png)
+
 JPA (Jakarta Persistence API) is the standard Java specification for object-relational mapping. Hibernate is the most popular implementation. Entities are plain Java classes annotated to describe how they map to database tables.
 
 ### 1.1 Field vs Property Access

@@ -12,6 +12,8 @@
 
 ## Theory
 
+![NFA vs DFA Comparison](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/02-nfa.png)
+
 ### 2.1 The Concept of Nondeterminism
 
 In a DFA, for each state and symbol there is exactly one next state. In an **NFA (nondeterministic finite automaton)**, from a given state and symbol, there may be **zero, one, or multiple** possible next states. When presented with choices, the NFA is said to "guess" the correct path — it accepts the input if *some* sequence of choices leads to an accepting state.

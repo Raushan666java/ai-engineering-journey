@@ -1,0 +1,24 @@
+flowchart TD
+    A["C++ Templates"] --> B["Function Templates"]
+    A --> C["Class Templates"]
+    A --> D["Template Specialization"]
+    A --> E["Variadic Templates"]
+    A --> F["SFINAE"]
+
+    B --> B1["Type-parameterized functions"]
+    B --> B2["Template argument deduction"]
+    B --> B3["Non-type parameters<br/>compile-time constants"]
+
+    C --> C1["Generic container types"]
+    C --> C2["Member functions outside body"]
+
+    D --> D1["Full Specialization<br/>specific type override"]
+    D --> D2["Primary template fallback"]
+
+    E --> E1["Parameter packs ...Args"]
+    E --> E2["Recursive instantiation"]
+    E --> E3["Fold expressions (C++17)"]
+
+    F --> F1["Substitution Failure<br/>Is Not An Error"]
+    F --> F2["enable_if for conditional overloads"]
+    F --> F3["if constexpr (C++17)<br/>cleaner alternative"]

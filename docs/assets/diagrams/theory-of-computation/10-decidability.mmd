@@ -1,0 +1,29 @@
+flowchart TD
+    D[Decidable Problem] -->|TM always halts| D1[Yes/No answer guaranteed]
+    U[Undecidable Problem] -->|No algorithm exists| U1[TM may loop forever]
+
+    subgraph DEC["Decidable Problems"]
+        A1[DFA membership]
+        A2[DFA emptiness]
+        A3[DFA equivalence]
+        A4[CFG membership - CYK]
+        A5[CFG emptiness]
+    end
+
+    subgraph UNDEC["Undecidable Problems"]
+        B1[Halting Problem HALT_TM]
+        B2[TM acceptance A_TM]
+        B3[TM emptiness EMPTY_TM]
+        B4[CFG equivalence]
+        B5[CFG ambiguity]
+        B6[Post Correspondence Problem]
+    end
+
+    subgraph PROOF["Proof Techniques"]
+        C1[Diagonalization]
+        C2[Reduction A ≤ B]
+        C3[Rices Theorem]
+    end
+
+    UNDEC --> PROOF
+    PROOF --> D

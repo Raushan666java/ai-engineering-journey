@@ -18,6 +18,8 @@ These aren't abstract theories. Every technique here is something you can apply 
 
 ## Learning Objectives
 
+![Procrastination, Habits & Deep Work](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-06.png)
+
 After completing this chapter, you will be able to:
 
 - **Identify your procrastination triggers** by recognizing the four components of the procrastination loop

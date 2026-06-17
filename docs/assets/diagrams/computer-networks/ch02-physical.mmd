@@ -1,0 +1,30 @@
+flowchart TD
+    subgraph Media["Transmission Media"]
+        Guided["Guided"]
+        Copper["Twisted Pair<br/>Cat5e, Cat6, Cat6a"]
+        Coax["Coaxial Cable<br/>Thicknet, Thinnet"]
+        Fiber["Fiber Optic<br/>Single-mode, Multi-mode"]
+        WirelessGuided["Wireless"]
+        Radio["Radio Waves<br/>WiFi, Cellular"]
+        Micro["Microwaves<br/>Satellite, Point-to-point"]
+        Infrared["Infrared<br/>Short-range LOS"]
+
+        Guided --> Copper
+        Guided --> Coax
+        Guided --> Fiber
+        WirelessGuided --> Radio
+        WirelessGuided --> Micro
+        WirelessGuided --> Infrared
+    end
+
+    subgraph Encoding["Signal Encoding"]
+        Digital["Digital-to-Digital<br/>NRZ, NRZI, Manchester"]
+        AnalogMod["Digital-to-Analog<br/>ASK, FSK, PSK, QAM"]
+    end
+
+    subgraph Concepts["Key Concepts"]
+        BW["Bandwidth<br/>max data rate (Hz)"]
+        Throughput["Throughput<br/>actual data rate (bps)"]
+        Latency["Latency<br/>propagation + transmission<br/>+ queuing + processing"]
+        DelayBW["Delay × Bandwidth<br/>= bytes in flight"]
+    end

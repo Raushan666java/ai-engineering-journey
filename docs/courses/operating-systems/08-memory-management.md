@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Memory Allocation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/08-memory-management.png)
+
 ### Address Binding
 
 A program uses **logical addresses** (also called virtual addresses). The OS translates these to **physical addresses** in main memory. The binding of instructions and data to memory addresses can happen at different stages:

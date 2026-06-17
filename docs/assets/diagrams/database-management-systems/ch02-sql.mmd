@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph DDL["DDL - Data Definition"]
+        Create["CREATE TABLE Students (<br/>    id INT PRIMARY KEY,<br/>    name VARCHAR(50) NOT NULL<br/>);"]
+        Alter["ALTER TABLE Students<br/>ADD email VARCHAR(100);"]
+        Drop["DROP TABLE Students;<br/>removes table + data"]
+        Truncate["TRUNCATE TABLE Students;<br/>removes all rows, keeps structure"]
+    end
+
+    subgraph DML["DML - Data Manipulation"]
+        Insert["INSERT INTO Students<br/>VALUES (1, 'Alice');"]
+        Select["SELECT name, gpa FROM Students<br/>WHERE gpa > 3.5<br/>ORDER BY gpa DESC;"]
+        Update["UPDATE Students<br/>SET gpa = 4.0<br/>WHERE id = 1;"]
+        Delete["DELETE FROM Students<br/>WHERE id = 1;"]
+    end
+
+    subgraph Joins["SQL Joins"]
+        InnerJoin["INNER JOIN<br/>only matching rows"]
+        LeftJoin["LEFT JOIN<br/>all left + matching right<br/>NULL for non-matches"]
+        RightJoin["RIGHT JOIN<br/>all right + matching left"]
+        FullJoin["FULL OUTER JOIN<br/>all rows from both sides"]
+        CrossJoin["CROSS JOIN<br/>Cartesian product"]
+    end
+
+    subgraph Agg["Aggregation & Grouping"]
+        Funcs["COUNT, SUM, AVG, MAX, MIN"]
+        GroupBy["GROUP BY dept_id"]
+        Having["HAVING AVG(salary) > 50000"]
+    end

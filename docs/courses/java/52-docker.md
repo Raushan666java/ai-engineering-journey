@@ -17,6 +17,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Why Containerize Spring Boot?
 
+![Docker & Containerization Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/52-docker.png)
+
 Containers provide consistent, isolated environments for running applications. For Spring Boot developers, containerization solves:
 
 - **Environment parity** — same image runs identically on a dev laptop, CI server, and production

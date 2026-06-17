@@ -10,6 +10,8 @@ By the end of this chapter, students will be able to:
 - Create and manage virtual environments with venv and conda
 - Install third-party packages using pip
 
+![Python Ecosystem](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/01-introduction.png)
+
 ## 1.1 A Brief History of Python
 
 Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica in the Netherlands as a successor to the ABC language. The first public release, Python 0.9.0, appeared in 1991 and already included exception handling, functions, and the core data types list, dict, and str.

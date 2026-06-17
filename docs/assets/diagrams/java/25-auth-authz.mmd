@@ -1,0 +1,45 @@
+flowchart TD
+    subgraph FilterChain["Security Filter Chain (Ordered)"]
+        direction TB
+        F1["DisableEncodeUrlFilter<br/>- prevents session ID in URL"]
+        F2["SecurityContextHolderFilter<br/>- loads SecurityContext"]
+        F3["LogoutFilter<br/>- handles logout"]
+        F4["UsernamePasswordAuthFilter<br/>- form login"]
+        F5["BasicAuthenticationFilter<br/>- HTTP Basic"]
+        F6["RequestCacheAwareFilter<br/>- post-auth redirect"]
+        F7["RememberMeAuthFilter<br/>- remember-me"]
+        F8["AnonymousAuthFilter<br/>- anonymous principal"]
+        F9["SessionManagementFilter<br/>- fixation, concurrency"]
+        F10["ExceptionTranslationFilter<br/>- exceptions → HTTP"]
+        F11["FilterSecurityInterceptor<br/>- authorization decision"]
+    end
+
+    subgraph AuthProviders["Authentication"]
+        AM["AuthenticationManager<br/>(ProviderManager)"]
+        AP1["DaoAuthenticationProvider<br/>- UserDetailsService + PasswordEncoder"]
+        AP2["CustomAuthenticationProvider<br/>- OTP / biometric / other"]
+        AM --> AP1
+        AM --> AP2
+    end
+
+    subgraph UserDetails["User Details"]
+        UDS["UserDetailsService<br/>- loadByUsername()"]
+        IM["InMemoryUserDetailsManager"]
+        JDBC["JdbcDaoImpl / JdbcUserDetailsManager"]
+        Custom["Custom Implementation<br/>(API / JPA / LDAP)"]
+        UDS --> IM
+        UDS --> JDBC
+        UDS --> Custom
+    end
+
+    subgraph Password["Password Encoding"]
+        BC["BCryptPasswordEncoder"]
+        SC["SCryptPasswordEncoder"]
+        AR["Argon2PasswordEncoder"]
+        DP["DelegatingPasswordEncoder<br/>(prefix-based migration)"]
+    end
+
+    Request["HTTP Request"] --> FilterChain
+    FilterChain --> AuthProviders
+    AuthProviders --> UserDetails
+    AuthProviders --> Password

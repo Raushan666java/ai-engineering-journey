@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Malware & Buffer Overflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch04-malware-buffer.png)
+
 ### Memory Corruption Vulnerabilities
 Low-level languages (like C and C++) allow direct memory manipulation, which can lead to critical flaws if not handled carefully.
 - **Buffer Overflow:** Occurs when a program writes more data to a fixed-length block of memory (a buffer) than it can hold. This can overwrite adjacent memory, including the return address on the stack.

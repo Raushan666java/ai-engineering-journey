@@ -24,6 +24,8 @@ By the end of this chapter you should be able to:
 
 ## Security Filter Chain
 
+![Spring Security Authentication Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/25-auth-authz.png)
+
 Spring Security is filter-based. A chain of `Filter` instances wraps every HTTP request, each responsible for one concern: authentication, authorization, CSRF protection, session management, and so on. The order of filters matters — authentication filters run before authorization filters, for example.
 
 ### SecurityFilterChain

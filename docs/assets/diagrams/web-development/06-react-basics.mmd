@@ -1,0 +1,34 @@
+flowchart TD
+    A["React Component Lifecycle"] --> B["Mount Phase"]
+    A --> C["Update Phase"]
+    A --> D["Unmount Phase"]
+
+    B --> B1["Component initializes"]
+    B --> B2["useState creates state"]
+    B --> B3["useEffect runs (deps [])"]
+    B --> B4["Render JSX to DOM"]
+
+    C --> C1["State change (setState)"]
+    C --> C2["Props change"]
+    C --> C3["useEffect re-runs<br/>if deps changed"]
+    C --> C4["Component re-renders"]
+    C --> C5["Virtual DOM diff<br/>(reconciliation)"]
+
+    D --> D1["Component removed from DOM"]
+    D --> D2["useEffect cleanup runs"]
+
+    subgraph Hooks["Key Hooks"]
+        H1["useState - mutable state"]
+        H2["useEffect - side effects<br/>API calls, subscriptions"]
+        H3["useCallback / useMemo<br/>performance optimization"]
+    end
+
+    subgraph Patterns["Rendering Patterns"]
+        P1["Conditional: ternary &&"]
+        P2["List: .map() + keys"]
+        P3["Forms: controlled inputs"]
+        P4["Lifting state up<br/>common ancestor"]
+    end
+
+    C --> Hooks
+    B --> Patterns

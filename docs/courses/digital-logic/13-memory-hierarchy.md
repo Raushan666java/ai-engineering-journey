@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Memory Hierarchy, Cache Architecture and I/O Systems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch08-memory-io.png)
+
 ### 13.1 Principle of Locality
 
 Memory hierarchy exploits two forms of locality exhibited by programs:

@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) identify sou
 
 ## 15.1 Fairness and Bias
 
+![Ethics and Modern AI](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch15-ethics-modern.png)
+
 **Algorithmic bias** occurs when an AI system systematically produces outcomes that disadvantage particular groups. Bias can enter the system at multiple points:
 
 - **Data bias:** Training data may undersample or misrepresent certain populations. Historical discrimination encoded in data (e.g., biased hiring decisions) is learned and perpetuated by models.

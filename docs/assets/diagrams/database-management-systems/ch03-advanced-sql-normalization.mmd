@@ -1,0 +1,22 @@
+flowchart TD
+    subgraph AdvancedSQL["Advanced SQL"]
+        SubQ["Subqueries<br/>SELECT * FROM Students<br/>WHERE id IN (SELECT id FROM ...)"]
+        Corr["Correlated Subquery<br/>references outer query<br/>executes per row"]
+        CTE["CTE (WITH clause)<br/>WITH HighGPA AS (<br/>  SELECT * FROM Students WHERE gpa > 3.5<br/>)<br/>SELECT * FROM HighGPA;"]
+        Window["Window Functions<br/>ROW_NUMBER(), RANK()<br/>OVER (PARTITION BY dept ORDER BY salary)"]
+        Indexes["CREATE INDEX idx_name<br/>ON Students(name);<br/>speeds up queries"]
+        View["CREATE VIEW ...<br/>virtual table<br/>security & abstraction"]
+    end
+
+    subgraph Normalization["Normalization (1NF → BCNF)"]
+        NF1["1NF<br/>atomic columns<br/>no repeating groups"]
+        NF2["2NF<br/>1NF + full FD on PK<br/>remove partial dependencies"]
+        NF3["3NF<br/>2NF + no transitive FD<br/>non-key → non-key"]
+        BCNF["BCNF<br/>3NF + every determinant<br/>must be a candidate key"]
+    end
+
+    subgraph HigherNF["Higher Normal Forms"]
+        NF4["4NF<br/>BCNF + no multi-valued dependencies"]
+        NF5["5NF<br/>4NF + join dependencies<br/>(lossless join preservation)"]
+        DKNF["DKNF (Domain-Key NF)<br/>all domain + key constraints<br/>theoretical ideal"]
+    end

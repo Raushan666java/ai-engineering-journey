@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: define type systems and
 
 ## Theory
 
+![Type Checking and Runtime Environment](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch06-type-runtime.png)
+
 ### Type Systems
 
 A type system is a tractable syntactic method for proving the absence of certain program behaviors by classifying program phrases according to the kinds of values they compute. A type system consists of a set of types, rules for assigning types to program phrases, and a proof system ensuring consistency. The classification is tractable in the sense that type checking is decidable for most practical languages.

@@ -1,0 +1,31 @@
+flowchart TD
+    subgraph RL["Reinforcement Learning Framework"]
+        Agent["Agent"] -->|"Action A_t"| Env["Environment"]
+        Env -->|"State S_t+1\nReward R_t+1"| Agent
+        Agent -->|"Policy π(a|s)"| Action
+    end
+
+    subgraph Components["Key Components"]
+        Policy["Policy π\nMaps states → actions"]
+        Value["Value Function V(s)\nExpected return from state s"]
+        Q["Action-Value Q(s,a)\nExpected return from s,a"]
+        Model["Model\nTransition + Reward"]
+    end
+
+    subgraph Algorithms["RL Algorithms"]
+        TD["Temporal Difference\nV(s) ← V(s) + α(r + γV(s') - V(s))"]
+        QL["Q-Learning\nOff-policy, model-free\nQ(s,a) ← Q + α(r + γ·max Q(s',a') - Q)"]
+        SARSA["SARSA\nOn-policy, model-free\nQ(s,a) ← Q + α(r + γ·Q(s',a') - Q)"]
+        DQN["Deep Q-Network\nNeural net as Q approximator\nExperience replay"]
+    end
+
+    subgraph Explore["Exploration vs Exploitation"]
+        E1["ε-greedy: Random action with prob ε"]
+        E2["Upper Confidence Bound (UCB)"]
+        E3["Thompson Sampling"]
+    end
+
+    style RL fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Components fill:#fff3e0,stroke:#f57c00,color:#000
+    style Algorithms fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Explore fill:#fce4ec,stroke:#c62828,color:#000

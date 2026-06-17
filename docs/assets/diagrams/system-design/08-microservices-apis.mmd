@@ -1,0 +1,48 @@
+flowchart TD
+    A[Microservices Patterns] --> B[Architecture Patterns]
+    A --> C[API Patterns]
+    A --> D[Communication Patterns]
+    A --> E[Data Patterns]
+
+    B --> B1[Monolith vs Microservices]
+    B --> B2[Bounded Contexts DDD]
+    B --> B3[Modular Monolith]
+
+    B1 --> B1D["Independent deployability scaling teams"]
+    B2 --> B2D["Ubiquitous language per context"]
+    B3 --> B3D["Start monolith extract later"]
+
+    C --> C1[RESTful API]
+    C --> C2[gRPC]
+    C --> C3[GraphQL]
+    C --> C4[API Gateway]
+
+    C1 --> C1D["Resource-oriented nouns plural"]
+    C2 --> C2D["Protobuf HTTP/2 4 streaming types"]
+    C3 --> C3D["Client-specified queries N+1 problem"]
+    C4 --> C4D["Routing Auth Rate Limiting Aggregation"]
+
+    D --> D1[Synchronous HTTP/gRPC]
+    D --> D2[Asynchronous Events]
+    D --> D3[Service Mesh]
+
+    D1 --> D1D["Request-response blocking"]
+    D2 --> D2D["Event-driven decoupled"]
+    D3 --> D3D["Istio Envoy sidecar mTLS"]
+
+    E --> E1[Database Per Service]
+    E --> E2[Saga Pattern]
+    E --> E3[Idempotency Keys]
+
+    E1 --> E1D["No shared DB loose coupling"]
+    E2 --> E2D["Choreography vs Orchestration"]
+    E2 --> E2C["Compensating transactions on failure"]
+    E3 --> E3D["Safe retries deduplication"]
+
+    F[Cross-Cutting] --> G[Contract Testing Pact]
+    F --> H[Versioning]
+    F --> I[Circuit Breaker Hystrix]
+
+    G --> GD["Consumer-driven contract verification"]
+    H --> HD["URI / Header / Semantic versioning"]
+    I --> ID["Fail fast on cascading failures"]

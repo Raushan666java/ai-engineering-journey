@@ -1,0 +1,25 @@
+flowchart TD
+    Source["Source Code<br/>(program.c)"] --> Lexical["Lexical Analyzer<br/>(Scanner)"]
+    Lexical --> Tokens[("Token Stream<br/>type, value, line")]
+    Tokens --> Syntax["Syntax Analyzer<br/>(Parser)"]
+    Syntax --> AST[("Parse Tree / AST")]
+    AST --> Semantic["Semantic Analyzer<br/>(Type Checker)"]
+    Semantic --> Annotated[("Annotated AST<br/>with types & checks")]
+    Annotated --> IR["Intermediate Code Gen"]
+    IR --> Rep[("3-Address Code / IR")]
+    Rep --> Opt["Optimizer"]
+    Opt --> OptCode[("Optimized IR")]
+    OptCode --> CodeGen["Code Generator"]
+    CodeGen --> Target[("Target Code<br/>(assembly / machine)")]
+
+    subgraph FrontEnd["Front End<br/>(language-dependent)"]
+        Lexical --> Syntax --> Semantic
+    end
+
+    subgraph Middle["Middle End"]
+        IR --> Opt
+    end
+
+    subgraph BackEnd["Back End<br/>(machine-dependent)"]
+        CodeGen
+    end

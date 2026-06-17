@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Combinational Circuits: Adders, Multiplexers and ALU](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch03-combinational.png)
+
 ### 4.1 Adders
 
 #### 4.1.1 Half-Adder

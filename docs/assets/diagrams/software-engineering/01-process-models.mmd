@@ -1,0 +1,43 @@
+flowchart TD
+    subgraph TRAD["Traditional Models"]
+        W[Waterfall]
+        V[V-Model]
+        W --> V
+    end
+
+    subgraph ITER["Iterative Models"]
+        INC[Incremental]
+        IT[Iterative]
+        SP[Spiral Model]
+        UP[Unified Process]
+    end
+
+    subgraph AGILE["Agile Methods"]
+        XP[Extreme Programming]
+        SC[Scrum]
+        KN[Kanban]
+    end
+
+    TRAD -->|evolves to| ITER
+    ITER -->|evolves to| AGILE
+
+    W -->|phases| W1[Requirements]
+    W1 --> W2[Design]
+    W2 --> W3[Implementation]
+    W3 --> W4[Testing]
+    W4 --> W5[Maintenance]
+
+    SP -->|quadrants| S1[Determine Objectives]
+    S1 --> S2[Risk Analysis]
+    S2 --> S3[Develop & Verify]
+    S3 --> S4[Plan Next Phase]
+
+    UP -->|phases| U1[Inception]
+    U1 --> U2[Elaboration]
+    U2 --> U3[Construction]
+    U3 --> U4[Transition]
+
+    SC -->|events| SE1[Sprint Planning]
+    SE1 --> SE2[Daily Scrum]
+    SE2 --> SE3[Sprint Review]
+    SE3 --> SE4[Sprint Retrospective]

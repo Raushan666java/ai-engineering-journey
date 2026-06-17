@@ -1,0 +1,28 @@
+flowchart LR
+    subgraph Families["Instance Families"]
+        GP["General Purpose\nBalanced CPU/Mem\nWeb servers, Dev"]
+        CO["Compute Optimized\nHigh CPU/Mem ratio\nBatch, Encoding"]
+        MO["Memory Optimized\nHigh Mem/CPU ratio\nIn-memory DB, Analytics"]
+        SO["Storage Optimized\nHigh NVMe I/O\nNoSQL, Data Warehouses"]
+        AC["Accelerated\nGPU/TPU\nML, Rendering"]
+    end
+
+    subgraph Pricing["Pricing Models"]
+        OD["On-Demand\nPay per sec/hour\nHighest cost"]
+        SP["Spot/Preemptible\n90% discount\nCan be reclaimed"]
+        RI["Reserved/Committed\n1 or 3 year term\nBest for steady state"]
+    end
+
+    subgraph Lifecycle["Instance Lifecycle"]
+        Start["Provision"] --> Running["Running"]
+        Running --> Stop["Stop/Terminate"]
+        Running --> Hibernate["Hibernate"]
+        Hibernate --> Running
+    end
+
+    Families --> Pricing
+    Pricing --> Lifecycle
+
+    style Families fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Pricing fill:#fff3e0,stroke:#f57c00,color:#000
+    style Lifecycle fill:#e8f5e9,stroke:#2e7d32,color:#000

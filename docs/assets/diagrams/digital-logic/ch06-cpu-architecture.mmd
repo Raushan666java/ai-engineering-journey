@@ -1,0 +1,22 @@
+flowchart TD
+    subgraph CPU["CPU Architecture"]
+        CU["Control Unit<br/>fetches & decodes instructions<br/>generates control signals"]
+        ALU["ALU<br/>performs arithmetic & logic<br/>operations on data"]
+        Regs["Register File<br/>general purpose + special<br/>PC, SP, IR, MAR, MDR"]
+        Datapath["Datapath<br/>ALU + registers + buses<br/>data flow between components"]
+    end
+
+    subgraph Cycles["Instruction Cycle"]
+        Fetch["Fetch<br/>PC → MAR → Memory → MDR → IR<br/>PC = PC + 4"]
+        Decode["Decode<br/>control unit decodes IR<br/>generates control signals"]
+        Execute["Execute<br/>R-type: ALU operation<br/>load/store: address calc<br/>branch: compare + target"]
+        Mem["Memory Access<br/>load from / store to memory"]
+        WB["Write Back<br/>write ALU result to register"]
+
+        Fetch --> Decode --> Execute --> Mem --> WB
+    end
+
+    subgraph Ctrl["Control Unit Types"]
+        Hardwired["Hardwired Control<br/>combinational logic<br/>fast, RISC"]
+        Micro["Microprogrammed Control<br/>control store (ROM)<br/>flexible, CISC"]
+    end

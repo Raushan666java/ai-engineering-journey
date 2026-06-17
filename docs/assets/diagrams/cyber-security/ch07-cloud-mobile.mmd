@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph SRM["Shared Responsibility"]
+        CP["Provider: Security OF Cloud\nPhysical security\nNetwork infra\nHypervisor"]
+        CX["Customer: Security IN Cloud\nData encryption\nOS patching\nIAM / Access"]
+    end
+
+    subgraph ContainerSec["Container Security"]
+        Img["Image Scanning\nVulnerability scan\nSecret detection"]
+        Run["Runtime Security\nseccomp, AppArmor\nRead-only root FS"]
+        Net["Network Policy\nK8s Network Policies\nZero-trust ingress"]
+    end
+
+    subgraph Mobile["Mobile Security"]
+        iOS["iOS Security\nCode signing\nWalled garden\nApp sandbox"]
+        Android["Android Security\nPermissions\nProcess isolation\nGoogle Play Protect"]
+        MDM["MDM / MAM\nDevice management\nApp management\nBYOD policies"]
+    end
+
+    subgraph Threats["Mobile Threats"]
+        Jail["Jailbreak / Root\nBypass OS controls"]
+        Side["Sideloading\nUntrusted apps"]
+        NetSec["Insecure Network\nFake Wi-Fi, MitM"]
+    end
+
+    style SRM fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style ContainerSec fill:#fff3e0,stroke:#f57c00,color:#000
+    style Mobile fill:#e8f5e9,stroke:#2e7d32,color:#000

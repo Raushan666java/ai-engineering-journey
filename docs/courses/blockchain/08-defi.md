@@ -17,6 +17,8 @@
 ### What is DeFi?
 DeFi is an ecosystem of financial applications built on top of blockchain networks. It aims to recreate traditional financial services (Lending, Borrowing, Trading, Insurance) in a decentralized, permissionless, and transparent manner.
 
+![DeFi Ecosystem](../assets/images/diagrams/blockchain/ch08-defi.png)
+
 ### Automated Market Makers (AMM)
 AMMs replace traditional order books. Instead of matching buyers and sellers, users trade against a **Liquidity Pool**.
 - **Constant Product Formula:** $x \times y = k$.

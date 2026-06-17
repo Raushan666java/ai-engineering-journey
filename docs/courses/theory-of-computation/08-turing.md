@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Turing Machine State Diagram - a^n b^n c^n](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/08-turing.png)
+
 ### 8.1 The Turing Machine Model
 
 Alan Turing introduced the Turing machine in 1936 as a model of "computation by a human clerk." It is the most powerful model of computation we have — anything computable by any mechanical process can be computed by a Turing machine (the Church-Turing thesis).

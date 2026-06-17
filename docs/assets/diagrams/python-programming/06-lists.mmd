@@ -1,0 +1,43 @@
+flowchart TD
+    L["List Object"] --> M["Methods"]
+    L --> O["Operations"]
+    L --> P["Comprehensions"]
+    
+    subgraph METHODS["List Methods"]
+        direction TB
+        M1["append(x) - O(1)"] --> M2["extend(iter) - O(k)"]
+        M2 --> M3["insert(i,x) - O(n)"]
+        M3 --> M4["remove(x) - O(n)"]
+        M4 --> M5["pop(i) - O(1) / O(n)"]
+        M5 --> M6["sort() - O(n log n)"]
+        M6 --> M7["reverse() - O(n)"]
+        M7 --> M8["copy() - O(n)"]
+    end
+    
+    subgraph OPERATIONS["Core Operations"]
+        O1["Indexing lst[i] - O(1)"]
+        O2["Slicing lst[i:j] - O(k)"]
+        O3["Search x in lst - O(n)"]
+        O4["Length len(lst) - O(1)"]
+    end
+    
+    subgraph COMPREHENSIONS["List Comprehensions"]
+        C1["Basic: [x**2 for x in range(n)]"]
+        C2["Conditional: [x for x in seq if p(x)]"]
+        C3["Nested: [(x,y) for x in a for y in b]"]
+        C4["Flatten: [e for row in m for e in row]"]
+    end
+    
+    subgraph COPYING["Copy Strategies"]
+        S1["Shallow Copy"]
+        S2["Deep Copy"]
+        S1 -.->|"copy.copy() / lst[:]"| S1A["Shares nested refs"]
+        S2 -.->|"copy.deepcopy()"| S2A["Fully independent"]
+    end
+    
+    subgraph PERF["Performance Notes"]
+        P1["Append/pop end: O(1)"]
+        P2["Insert/pop front: O(n)"]
+        P3["Use deque for frequent front ops"]
+        P4["[[0]*n]*m creates shared refs!"]
+    end

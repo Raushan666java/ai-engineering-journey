@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Sync Problems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/05-synchronization.png)
+
 ### Race Conditions
 
 A **race condition** occurs when multiple processes or threads access shared data concurrently, and the final result depends on the order of execution.

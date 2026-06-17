@@ -1,0 +1,31 @@
+flowchart TD
+    subgraph Sockets["Socket Programming"]
+        TCPFlow["TCP Socket Flow"]
+        TCPSS["socket() → server socket"]
+        TCPBind["bind() → assign address"]
+        TCPListen["listen() → passive open"]
+        TCPAccept["accept() → new client socket"]
+        TCPClient["client: socket() → connect()"]
+        TCPData["send() / recv() → data exchange"]
+        TCPClose["close() → clean up"]
+
+        TCPSS --> TCPBind --> TCPListen --> TCPAccept
+        TCPClient --> TCPConnect["connect()"]
+        TCPConnect --> TCPData
+        TCPAccept --> TCPData
+        TCPData --> TCPClose
+
+        UDPFlow["UDP Socket Flow"]
+        UDPServer["server: socket() → bind()"]
+        UDPClient["client: socket()"]
+        UDPComm["sendto() / recvfrom()<br/>connectionless"]
+        UDPServer --> UDPComm
+        UDPClient --> UDPComm
+    end
+
+    subgraph Models["I/O Models"]
+        Block["Blocking I/O<br/>waits until data ready"]
+        NonBlock["Non-blocking I/O<br/>returns EAGAIN / WOULDBLOCK"]
+        Multiplex["I/O Multiplexing<br/>select() / poll() / epoll()<br/>monitor many fds"]
+        Async["Async I/O<br/>signal / callback on completion"]
+    end

@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: construct interference 
 
 ## Theory
 
+![Register Allocation and Advanced Compiler Topics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch09-alloc-advanced.png)
+
 ### The Register Allocation Problem
 
 Register allocation determines which values in a program reside in registers during each portion of execution. Because registers are both scarce and significantly faster than memory, effective register allocation is one of the most critical optimizations in modern compilers. Poor allocation can increase memory traffic by an order of magnitude, negating gains from other optimizations. The problem is combinatorial: for K registers and N live ranges, there are K^N possible assignments, and finding the optimal one is NP-complete.

@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![DP Sequences Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch09-dp-sequences.png)
+
 ### 9.1 Longest Common Subsequence (LCS)
 
 **Problem:** Given two strings \( X \) and \( Y \), find the longest subsequence that appears in both. A subsequence is obtained by deleting characters (not necessarily contiguous).

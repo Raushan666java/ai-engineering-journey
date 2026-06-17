@@ -1,0 +1,33 @@
+flowchart TD
+    Trilemma["Blockchain Trilemma\nPick 2 of 3"]
+    Trilemma --> D["Decentralization"]
+    Trilemma --> S["Security"]
+    Trilemma --> SCB["Scalability"]
+
+    subgraph L1["Layer 1 (On-Chain)"]
+        Shard["Sharding\nSplit DB into shards\nNodes process subset\nEthereum 2.0 approach"]
+        ConsUp["Consensus Upgrade\nPoW → PoS\nBetter throughput"]
+    end
+
+    subgraph L2["Layer 2 (Off-Chain)"]
+        Channels["State Channels\nLightning Network\nOff-chain transactions\nFinal state on-chain"]
+        Rollups["Rollups\nBundle hundreds of txs\nSingle batch to L1"]
+        RO["Optimistic Rollup\nAssume valid\n7-day challenge"]
+        ZK["ZK Rollup\nZero-knowledge proof\nInstant finality"]
+    end
+
+    L1 --> Scale["Higher TPS\nLower costs"]
+
+    Rollups --> RO
+    Rollups --> ZK
+
+    subgraph Attacks["Security Threats"]
+        Pct51["51% Attack\nControl majority hash/stake\nDouble spend"]
+        Sybil["Sybil Attack\nFake identities\nNetwork manipulation"]
+        Reent["Reentrancy\nSmart contract bug\nThe DAO hack"]
+    end
+
+    style Trilemma fill:#fce4ec,stroke:#c62828,color:#000,stroke-width:2px
+    style L1 fill:#e3f2fd,stroke:#1565c0,color:#000
+    style L2 fill:#fff3e0,stroke:#f57c00,color:#000
+    style Attacks fill:#f3e5f5,stroke:#7b1fa2,color:#000

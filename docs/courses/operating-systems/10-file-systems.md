@@ -11,6 +11,8 @@
 
 ## Theory
 
+![File System Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/10-file-systems.png)
+
 ### File Concept
 
 A **file** is a named collection of related information recorded on secondary storage. Files are the primary abstraction the OS provides for persistent data storage.

@@ -9,6 +9,8 @@ By the end of this chapter, students will be able to:
 - Apply arithmetic, comparison, logical, assignment, bitwise, identity, and membership operators
 - Predict operator precedence and associativity
 
+![Python Data Types](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/02-variables.png)
+
 ## 2.1 Variables and Dynamic Typing
 
 A variable is a name that references an object in memory. Python variables are dynamically typed: the same name can refer to objects of different types over its lifetime.

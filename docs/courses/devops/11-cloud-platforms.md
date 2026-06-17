@@ -12,6 +12,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![DevSecOps, Cloud Platforms, SRE and Networking](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch07-security-cloud-sre-net.png)
+
 ### 11.1 Amazon Web Services (AWS)
 
 AWS is the largest and most mature public cloud provider, offering over 200 services.

@@ -1,0 +1,33 @@
+flowchart TD
+    subgraph Input["Source Character Stream"]
+        S1["int sum = a + 5;"]
+    end
+
+    subgraph Scan["Lexical Analysis Steps"]
+        Step1["Read characters<br/>group into lexemes"]
+        Step2["Match lexemes<br/>against patterns"]
+        Step3["Classify into token<br/>types + attributes"]
+    end
+
+    subgraph Tokens["Token Categories"]
+        KW["Keywords<br/>if, else, int, return"]
+        ID["Identifiers<br/>variable names, function names"]
+        OP["Operators<br/>+, -, *, /, ="]
+        NUM["Literals<br/>integers, floats, strings"]
+        SEP["Separators<br/>;, (), {}, [], ,"]
+    end
+
+    subgraph RegEx["Regular Expression for Token"]
+        RE1["letter = [a-zA-Z_]"]
+        RE2["digit = [0-9]"]
+        RE3["id = letter (letter | digit)*"]
+        RE4["num = digit+ (. digit+)? (E (+|-)? digit+)?"]
+        RE5["keyword = 'if' | 'else' | 'while' | ..."]
+    end
+
+    subgraph DFA["Finite Automaton"]
+        DFA1["NFA from RegEx<br/>(Thompson Construction)"]
+        DFA2["NFA → DFA<br/>(Subset Construction)"]
+        DFA3["Minimize DFA"]
+        DFA4["Simulate DFA<br/>to recognize tokens"]
+    end

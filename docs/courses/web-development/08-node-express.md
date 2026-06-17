@@ -15,6 +15,8 @@ By the end of this chapter, you will be able to:
 
 ### 8.1 Node.js Overview
 
+![Request-Response Cycle Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/08-node-express.png)
+
 Node.js is a JavaScript runtime built on Chrome's V8 engine. It provides an event-driven, non-blocking I/O model that makes it efficient for data-intensive real-time applications.
 
 **The Event Loop:**

@@ -1,0 +1,31 @@
+flowchart LR
+    subgraph Hashing["Cryptographic Hashing"]
+        Input["Data\n'Hello Blockchain'"] --> SHA["SHA-256\nHash Function"]
+        SHA --> Hash["64-char hex digest\n4b68d8...\nOne-way, collision-resistant"]
+    end
+
+    subgraph PKI["Public Key Cryptography"]
+        PrivKey["Private Key\n256-bit random number\nKeep secret!"]
+        PrivKey --> PubKey["Public Key\nDerived via ECDSA\nShare with others"]
+        PubKey --> Addr["Address\nHashed public key\n'Account number'"]
+    end
+
+    subgraph Sig["Digital Signatures"]
+        Msg["Transaction\nAlice → Bob: 5 BTC"]
+        Msg --> Signer["Sign with\nPrivate Key"]
+        Signer --> SigOut["Signature\nProof of ownership"]
+        SigOut --> Verifier["Verify with\nPublic Key ✓"]
+    end
+
+    subgraph Merkle["Merkle Tree"]
+        TX1["Tx A\nHash: Ha"] --> MR["Merkle Root\nHash: H(ab)(cd)"]
+        TX2["Tx B\nHash: Hb"] --> MR
+        TX3["Tx C\nHash: Hc"] --> MR
+        TX4["Tx D\nHash: Hd"] --> MR
+    end
+
+    style Hashing fill:#e3f2fd,stroke:#1565c0,color:#000
+    style PKI fill:#fff3e0,stroke:#f57c00,color:#000
+    style Sig fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style Merkle fill:#f3e5f5,stroke:#7b1fa2,color:#000
+    style MR fill:#fce4ec,stroke:#c62828,color:#000,stroke-width:2px

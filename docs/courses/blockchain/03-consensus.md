@@ -23,6 +23,8 @@ Nodes (miners) compete to solve a computationally intensive puzzle.
 - **Security:** Requires enormous energy/hardware investment. An attacker must control 51% of the network's hash rate.
 - **Incentive:** Block rewards and transaction fees.
 
+![Consensus Mechanisms](../assets/images/diagrams/blockchain/ch03-consensus.png)
+
 ### Proof of Stake (PoS)
 Validators are chosen based on the amount of cryptocurrency they "stake" (lock up).
 - **Mechanism:** Selection is often proportional to the stake size and age.

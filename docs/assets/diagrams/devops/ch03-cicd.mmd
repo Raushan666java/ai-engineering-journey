@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph CI["Continuous Integration Pipeline"]
+        Push["Developer pushes code<br/>to repository"]
+        Trigger["Webhook triggers<br/>CI server"]
+        Fetch["Fetch latest code<br/>git checkout"]
+        Compile["Compile / Build<br/>Maven / Gradle"]
+        Test["Run Tests<br/>unit + integration"]
+        Analyze["Static Analysis<br/>SonarQube, lint"]
+        Package["Package Artifact<br/>JAR, Docker image"]
+        Notify["Notify team<br/>pass / fail"]
+    end
+
+    subgraph CD["Continuous Delivery / Deployment"]
+        Staging["Deploy to Staging<br/>integration tests<br/>smoke tests"]
+        Approve["Manual approval gate<br/>(for CD: automatic)"]
+        Prod["Deploy to Production<br/>blue-green / canary"]
+        Verify["Post-deploy verification<br/>health checks"]
+    end
+
+    subgraph Pipeline["CI/CD Tools"]
+        Jenkins["Jenkins<br/>pipeline as code (Jenkinsfile)"]
+        GHA["GitHub Actions<br/>workflows in .github/"]
+        GitLab["GitLab CI<br/>.gitlab-ci.yml"]
+        Circle["CircleCI<br/>config.yml"]
+        ArgoCD["ArgoCD<br/>GitOps CD for Kubernetes"]
+    end
+
+    Push --> Trigger --> Fetch --> Compile --> Test --> Analyze --> Package
+    Package --> Staging --> Approve --> Prod --> Verify

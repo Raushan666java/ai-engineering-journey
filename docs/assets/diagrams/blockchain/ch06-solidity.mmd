@@ -1,0 +1,31 @@
+flowchart TD
+    subgraph Contract["Solidity Contract Structure"]
+        SPDX["SPDX License\nIdentifier"]
+        Pragma["Pragma Solidity\n^0.8.0"]
+        Import["Import Statements"]
+        Inherit["Contract Definition\nis ContractName"]
+        StateVars["State Variables\nStored on-chain\nuint balance"]
+        Events["Events\nemit Transfer()"]
+        Modifier["Modifiers\nonlyOwner()"]
+        Funcs["Functions\npublic / private\nview / payable"]
+    end
+
+    subgraph StorageLayout["EVM Storage"]
+        Slot0["Slot 0\nuint256 value"]
+        Slot1["Slot 1\naddress owner"]
+        SlotN["Slot N\nmapping..."]
+        Mapping["Mapping[\nsha3(k . slot)]"]
+    end
+
+    subgraph Security["Common Vulnerabilities"]
+        Reent["Reentrancy\nRe-entering before\nstate update"]
+        Overflow["Overflow\nInteger under/overflow\n<0.8.0 unchecked"]
+        Access["Access Control\nMissing onlyOwner"]
+    end
+
+    Contract --> StorageLayout
+    Contract -.-> Security
+
+    style Contract fill:#e3f2fd,stroke:#1565c0,color:#000
+    style StorageLayout fill:#fff3e0,stroke:#f57c00,color:#000
+    style Security fill:#fce4ec,stroke:#c62828,color:#000

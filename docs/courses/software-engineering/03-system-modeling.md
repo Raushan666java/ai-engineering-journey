@@ -6,6 +6,8 @@ After completing this chapter, the student will be able to: explain the purpose 
 
 ## Theory
 
+![UML Diagram Types Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/03-system-modeling.png)
+
 ### The Purpose of System Modelling
 
 System modelling is the process of developing abstract representations of a system from different perspectives. Each model emphasises certain aspects of the system while suppressing others, enabling stakeholders to understand, analyse, and communicate about the system. Models serve several purposes: they facilitate discussion between stakeholders and developers, they provide input to the design process, they document design decisions, and they can be used to generate implementation artefacts automatically.

@@ -1,0 +1,36 @@
+flowchart TD
+    subgraph SubContainer["Containerization"]
+        Img["Image<br/>read-only template<br/>OS + app + deps"]
+        Ctr["Container<br/>running instance<br/>isolated process"]
+        Registry["Registry<br/>Docker Hub, ECR,<br/>GCR, Harbor"]
+        Dockerfile["Dockerfile<br/>FROM, RUN, COPY,<br/>CMD, EXPOSE"]
+    end
+
+    subgraph Docker["Docker Architecture"]
+        Client["docker CLI<br/>docker build, run, push"]
+        Daemon["dockerd<br/>builds & manages containers"]
+        ImageLayer["Image Layers<br/>union filesystem<br/>layer caching"]
+        Volume["Volumes<br/>persistent data<br/>bind mounts"]
+        Compose["Docker Compose<br/>multi-container apps<br/>docker-compose.yml"]
+    end
+
+    subgraph K8sSub["Kubernetes Architecture"]
+        MasterNode["Control Plane"]
+        API["API Server<br/>kube-apiserver"]
+        Sched["Scheduler<br/>assigns pods to nodes"]
+        CM["Controller Manager<br/>reconciliation loops"]
+        ETCD["etcd<br/>cluster state store"]
+        Nodes["Worker Nodes"]
+        Kubelet["kubelet<br/>manages pods"]
+        KubeProxy["kube-proxy<br/>networking, iptables"]
+        Pod["Pod<br/>smallest deployable unit<br/>one or more containers"]
+        Svc["Service<br/>stable IP & DNS<br/>load balancing"]
+        Ingress["Ingress<br/>HTTP/S routing"]
+        MasterNode --> API
+        MasterNode --> Sched
+        MasterNode --> CM
+        MasterNode --> ETCD
+        Nodes --> Kubelet
+        Nodes --> KubeProxy
+        Kubelet --> Pod --> Svc --> Ingress
+    end

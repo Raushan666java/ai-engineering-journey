@@ -1,0 +1,21 @@
+flowchart TD
+    subgraph FSM["Finite State Machines"]
+        Moore["Moore Machine<br/>output = f(current state)<br/>synchronous output"]
+        Mealy["Mealy Machine<br/>output = f(state, input)<br/>output can change mid-cycle"]
+    end
+
+    subgraph SSD["State Machine Design"]
+        Steps["1. State Diagram<br/>2. State Table<br/>3. State Assignment<br/>4. Next-State Logic<br/>5. Output Logic"]
+    end
+
+    subgraph Mem["Memory Types"]
+        ROM["ROM (Read-Only)<br/>mask-programmed<br/>PROM, EPROM, EEPROM"]
+        SRAM["SRAM<br/>6 transistors per bit<br/>fast, volatile<br/>cache memory"]
+        DRAM["DRAM<br/>1 transistor + capacitor<br/>needs refresh<br/>main memory"]
+        Flash["Flash Memory<br/>floating gate transistor<br/>non-volatile<br/>SSDs, USB drives"]
+    end
+
+    subgraph MemArch["Memory Organization"]
+        RowCol["Row × Column matrix<br/>row access strobe (RAS)<br/>column access strobe (CAS)"]
+        Cell["Memory Cell Array<br/>address decoder<br/>sense amplifiers"]
+    end

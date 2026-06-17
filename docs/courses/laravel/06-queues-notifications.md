@@ -15,6 +15,8 @@
 
 ## Theory
 
+![Queues, Jobs & Notifications Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/06-queues-notifications.png)
+
 ### Queue Drivers
 
 Laravel's queue system provides a unified API across multiple backends. The `QUEUE_CONNECTION` environment variable selects the active driver.

@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) apply probab
 
 ## 9.1 Foundations of Probability
 
+![Probability and Bayes](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch09-probability-bayes.png)
+
 Probability theory provides the mathematical framework for reasoning under uncertainty. A **probability space** consists of a sample space $\Omega$, a set of events $\mathcal{E}$, and a probability measure $P: \mathcal{E} \to [0, 1]$ satisfying the Kolmogorov axioms:
 
 1. $P(\omega) \geq 0$ for all $\omega \in \Omega$.

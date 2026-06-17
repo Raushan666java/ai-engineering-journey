@@ -14,6 +14,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![Approximation Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch16-approximation.png)
+
 ### 16.1 Approximation Ratio
 
 **Definition 16.1.** An algorithm for a minimization problem has an **approximation ratio** \( \rho \) if for every input instance:

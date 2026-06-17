@@ -98,6 +98,8 @@ Hello, World!
 
 ## 1.4 The Compilation Process
 
+![C Compilation Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch01-compilation.png)
+
 A C source file passes through four distinct stages before becoming an executable:
 
 ```

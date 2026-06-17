@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph Accounts["Ethereum Accounts"]
+        EOA["Externally Owned Account (EOA)\nControlled by private key\nCan send transactions\nHas: Balance, Nonce"]
+        CA["Contract Account\nControlled by code (smart contract)\nHas: Balance, Storage, Code"]
+    end
+
+    subgraph EVM["Ethereum Virtual Machine"]
+        SC["Smart Contract\nSolidity code compiled → EVM bytecode"]
+        State["Global State\nMapping: Address → AccountState"]
+        Gas["Gas System\nGas Used × Gas Price = Fee\nPrevents infinite loops"]
+    end
+
+    subgraph TxFlow["Transaction Flow"]
+        User["User (EOA)\nsends tx"] --> SignedTx["Signed Transaction\nTo: Contract Address\nData: Function call\nValue: ETH amount"]
+        SignedTx --> Execute["EVM executes\nfunction code"]
+        Execute --> StateChange["State change\nreplicated on\nall nodes"]
+        Execute --> GasConsumed["Gas consumed\nPaid to validator"]
+    end
+
+    EOA -->|"Deploys/Calls"| CA
+    CA --> SC
+    SC -->|"Runs on"| EVM
+
+    style Accounts fill:#e3f2fd,stroke:#1565c0,color:#000
+    style EVM fill:#fff3e0,stroke:#f57c00,color:#000
+    style TxFlow fill:#e8f5e9,stroke:#2e7d32,color:#000

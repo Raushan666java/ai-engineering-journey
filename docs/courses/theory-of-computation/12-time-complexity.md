@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Complexity Classes Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/12-time-complexity.png)
+
 ### 12.1 Time Complexity
 
 The **time complexity** of a Turing machine M is the function t: ℕ → ℕ where t(n) is the maximum number of steps M takes on any input of length n.

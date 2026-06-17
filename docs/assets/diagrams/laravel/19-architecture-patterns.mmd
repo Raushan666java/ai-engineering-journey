@@ -1,0 +1,48 @@
+mindmap
+  root(("Laravel Architecture Patterns"))
+    Service Layer
+      Business logic extraction
+      Constructor injection
+      Single-responsibility services
+      No framework inheritance
+      Domain terminology
+    Repository Pattern
+      Interface plus Implementation
+      EloquentRepository
+      CachedRepository decorator
+      FakeRepository for testing
+      Dependency inversion via container
+    Action Classes
+      invoke single use case
+      Command Bus pattern
+      Organized by feature: Auth slash Orders slash Subscriptions
+    Data Transfer Objects
+      Immutable readonly classes
+      fromArray factory
+      Spatie Data package
+      Named arguments PHP 8
+    Domain-Driven Design
+      Bounded contexts as domains
+      Aggregates with event recording
+      Domain events dispatchable
+      Value Objects vs Eloquent attributes
+    Hexagonal Architecture
+      Ports as interfaces in Domain
+      Adapters in Infrastructure
+      Dependency inversion
+      Framework-independent core
+    Event Sourcing and CQRS
+      Event store append-only log
+      AggregateRoot trait
+      Projectors build read models
+      Separate Command slash Query buses
+      Separate read slash write databases
+    Multi-Tenancy
+      Single DB: tenant_id column + global scope
+      Separate DB per tenant
+      Stancl tenancy package
+    Modular Monolith
+      Self-contained modules
+      Modules dir with providers
+      Contracts for inter-module comm
+      Graduates to microservices

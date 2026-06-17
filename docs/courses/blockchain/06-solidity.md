@@ -24,6 +24,8 @@ Solidity is a high-level, object-oriented language for writing smart contracts. 
 - **Memory:** Temporary data used during execution (Cheaper).
 - **Stack:** Local variables (Cheapest).
 
+![Solidity Contract Structure](../assets/images/diagrams/blockchain/ch06-solidity.png)
+
 ### Functions and Control
 - **Visibility:** Defines who can call the function.
 - **View/Pure:** Functions that do not modify state (`view`) or do not even read state (`pure`).

@@ -13,6 +13,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Boolean Algebra Laws and Logic Gates](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch02-boolean-gates.png)
+
 ### 2.1 Boolean Postulates
 
 Boolean algebra, introduced by George Boole in 1854 and adapted by Claude Shannon in 1938 for switching circuit analysis, is a mathematical system defined on a set of two elements {0, 1} with operators + (OR) and &middot; (AND), and complement (NOT).

@@ -13,6 +13,8 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
+![Trees Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/10-trees.png)
+
 ### 10.1 Definitions
 
 A **tree** is a connected acyclic undirected graph. A **forest** is an acyclic undirected graph (each component is a tree).

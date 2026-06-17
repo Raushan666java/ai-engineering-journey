@@ -10,6 +10,8 @@ By the end of this chapter, students will be able to:
 - Create nested functions and closures
 - Predict the behaviour of mutable default arguments
 
+![Function Types](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/09-functions.png)
+
 ## 9.1 Function Definition and Calling
 
 Functions are defined with `def` and called with parentheses:

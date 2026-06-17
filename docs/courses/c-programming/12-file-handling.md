@@ -9,6 +9,8 @@
 - Navigate files with `fseek`, `ftell`, and `rewind`
 - Handle file I/O errors properly
 
+![C File Operations and Preprocessor Directives](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch12-file-preprocessor.png)
+
 ## 12.1 File Pointers
 
 In C, file operations use a `FILE*` pointer, defined in `<stdio.h>`.

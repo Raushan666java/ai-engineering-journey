@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph Flow["Network Flow Concepts"]
+        Def["Flow Network\nDirected graph with source s\nand sink t\nCapacity c(u,v) per edge"]
+        FlowDef["Flow f(u,v)\n0 ≤ f(u,v) ≤ c(u,v)\nConservation at all nodes\nexcept s, t"]
+    end
+
+    subgraph MFMC["Max-Flow Min-Cut Theorem"]
+        MC1["Maximum flow value =\nMinimum cut capacity"]
+        MC2["A cut separates s from t"]
+        MC3["Capacity = sum of\nedge capacities crossing cut"]
+    end
+
+    subgraph Algos["Flow Algorithms"]
+        FF["Ford-Fulkerson\nDFS for augmenting paths\nO(E · maxflow)"]
+        EK["Edmonds-Karp\nBFS for shortest path\nO(V·E²)"]
+        DN["Dinic\nLevel graph + blocking flow\nO(V²·E)"]
+    end
+
+    subgraph Reductions["Reductions"]
+        BM["Bipartite Matching\nSource→Left→Right→Sink\nAll capacities = 1"]
+        AP["Assignment Problem\nMin-cost max-flow\nAdd edge weights"]
+    end
+
+    Flow --> MFMC --> Algos --> Reductions
+
+    style Flow fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style MFMC fill:#fce4ec,stroke:#c62828,color:#000
+    style Algos fill:#fff3e0,stroke:#f57c00,color:#000
+    style Reductions fill:#e8f5e9,stroke:#2e7d32,color:#000

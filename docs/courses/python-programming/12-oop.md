@@ -10,6 +10,8 @@ By the end of this chapter, students will be able to:
 - Write data classes with `@dataclass`
 - Understand name mangling for attribute protection
 
+![Python OOP](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/12-oop.png)
+
 ## 12.1 Classes and Instances
 
 A class is a blueprint for creating objects:

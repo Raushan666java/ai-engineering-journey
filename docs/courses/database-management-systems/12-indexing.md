@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Indexing, Query Processing and Join Algorithms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch05-indexing-query.png)
+
 ### 12.1 Why Indexes?
 
 Without indexes, finding data requires a **full table scan** — reading every row in the table sequentially. For a table with 10 million rows, a full scan can take minutes. An index reduces this to milliseconds by providing a direct path to the data.

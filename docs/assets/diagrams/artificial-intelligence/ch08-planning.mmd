@@ -1,0 +1,24 @@
+flowchart TD
+    subgraph Planning["Classical Planning"]
+        STRIPS["STRIPS Representation\nPrecondition → Action → Effect\nAdd list + Delete list"]
+        SSPlan["State-Space Planning\nForward: initial → goal\nBackward: goal → initial"]
+        POP["Partial-Order Planning\nPlan as set of actions\nwith ordering constraints\nThreat resolution"]
+        GP["GraphPlan\nPlanning graph\nAlternating action/state layers\nMutual exclusion"]
+    end
+
+    subgraph BlocksWorld["Example: Blocks World"]
+        Init["Initial: On(A,Table)\nOn(B,Table)\nClear(A), Clear(B)"]
+        Act1["Action: Stack(A,B)\nPre: Clear(B), Holding(A)\nEff: On(A,B), ¬Clear(B)"]
+        Goal["Goal: On(A,B)\nOn(B,Table)"]
+        Init --> Act1 --> Goal
+    end
+
+    subgraph HTN["Hierarchical Task Network"]
+        HTN1["High-level task → decompose"]
+        HTN2["Primitive actions → execute"]
+        HTN3["Reduces search complexity"]
+    end
+
+    style Planning fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style BlocksWorld fill:#fff3e0,stroke:#f57c00,color:#000
+    style HTN fill:#e8f5e9,stroke:#2e7d32,color:#000

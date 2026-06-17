@@ -1,0 +1,24 @@
+sequenceDiagram
+    participant Client as Client Code
+    participant Source as Source Object
+    participant Dest as Destination
+    participant Memory as Memory Manager
+
+    Note over Client,Memory: Copy Semantics
+    Client->>Dest: Buffer dest = source
+    Dest->>Memory: allocate new buffer (deep copy)
+    Memory-->>Dest: new memory block
+    Dest->>Source: copy all elements
+    Note over Source,Dest: O(n) allocation + copy
+
+    Note over Client,Memory: Move Semantics
+    Client->>Dest: Buffer dest = std::move(source)
+    Dest->>Source: steal pointer and size
+    Source->>Source: set to null / zero
+    Note over Source,Dest: O(1) pointer swap
+
+    Note over Client,Memory: Perfect Forwarding
+    Client->>Dest: factory(args...)
+    Dest->>Dest: forward of args...
+    Note over Dest: preserves value category
+    Note over Dest: lvalue to copy, rvalue to move

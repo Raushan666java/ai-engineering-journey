@@ -1,0 +1,41 @@
+flowchart TD
+    A[Load Balancing Algorithms] --> B[Stateless Algorithms]
+    A --> C[Stateful Algorithms]
+    A --> D[Consistent Hashing]
+
+    B --> B1[Round Robin]
+    B --> B2[Weighted Round Robin]
+    B --> B3[Random]
+
+    B1 --> B1D["Sequential: A -> B -> C -> A..."]
+    B2 --> B2D["Weighted: A3 B1 C2"]
+    B3 --> B3D["Uniform random ~ RR for large N"]
+
+    C --> C1[Least Connections]
+    C --> C2[Least Response Time]
+    C --> C3[IP Hash]
+
+    C1 --> C1D["Send to lowest active connections"]
+    C2 --> C2D["Send to lowest avg response time"]
+    C3 --> C3D["hash(client_IP) mod N"]
+
+    D --> D1[Hash Ring 0..2^32-1]
+    D --> D2[Virtual Nodes]
+    D1 --> D1D["Minimal remap on add/remove"]
+    D2 --> D2D["Even load distribution"]
+
+    E[GSLB Patterns] --> F[Active-Active]
+    E --> G[Active-Passive]
+    E --> H[Anycast BGP]
+
+    F --> FD["All DCs serve traffic"]
+    G --> GD["Standby DC on failover"]
+    H --> HD["Same IP from all PoPs"]
+
+    I[Auto-Scaling] --> J[Reactive]
+    I --> K[Predictive]
+    J --> JD["CPU > 70% for 5 min"]
+    K --> KD["ML-based forecast"]
+
+    L[Anti-Pattern] --> M[Sticky Sessions]
+    M --> N["Use external session store Redis"]

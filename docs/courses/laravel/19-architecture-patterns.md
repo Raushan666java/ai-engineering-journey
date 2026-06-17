@@ -14,6 +14,8 @@
 ---
 ## Theory
 
+![Laravel Architecture Patterns](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/19-architecture-patterns.png)
+
 ### 1. The Service Layer Pattern
 
 As Laravel applications grow, controllers accumulate business logic that belongs elsewhere. The service layer extracts this logic into dedicated classes, leaving controllers to handle only HTTP concerns — request validation, response transformation, and status codes.

@@ -1,0 +1,24 @@
+flowchart TD
+    subgraph Minimax["Adversarial Search\nZero-sum, Perfect Information"]
+        MM["Minimax\nFull game tree\nMAX maximizes, MIN minimizes\nO(b^m) - exponential"]
+        AB["Alpha-Beta Pruning\nα = best MAX choice\nβ = best MIN choice\nPrunes branches\nO(b^(m/2)) ideal"]
+    end
+
+    subgraph GameTree["Minimax Decision Process"]
+        Root["MAX node"] --> C1["MIN: value = 3"]
+        Root --> C2["MIN: value = 2"]
+        Root --> C3["MIN: value = 14"]
+        C1 --> L1["3"] & L2["12"] & L3["8"]
+        C2 --> L4["2"] & L5["4"] & L6["6"]
+        C3 --> L7["14"] & L8["5"] & L9["2"]
+    end
+
+    subgraph CSP["Constraint Satisfaction"]
+        CSPDef["Variables X\nDomains D\nConstraints C\nSolution = consistent assignment"]
+        BT["Backtracking Search\nDFS with consistency checks\nVariable ordering (MRV)\nValue ordering (LCV)"]
+        AC["Arc Consistency\nAC-3 algorithm\nRemove inconsistent values\nO(n²d³) time"]
+    end
+
+    style Minimax fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style GameTree fill:#fce4ec,stroke:#c62828,color:#000
+    style CSP fill:#e8f5e9,stroke:#2e7d32,color:#000

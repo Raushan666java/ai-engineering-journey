@@ -1,0 +1,30 @@
+flowchart TD
+    subgraph DistDB["Distributed Database Concepts"]
+        Partitioning["Data Partitioning<br/>Horizontal (sharding)<br/>Vertical<br/>Directory-based"]
+        Replication["Replication<br/>Master-Slave (primary-secondary)<br/>Multi-Master<br/>Peer-to-Peer"]
+        Consistency["Consistency Models<br/>Strong (linearizability)<br/>Eventual<br/>Causal<br/>Read-your-writes"]
+    end
+
+    subgraph Challenges["Distributed DB Challenges"]
+        Network["Network latency & partitions"]
+        Sync["Clock synchronization<br/>(vector clocks, Lamport)"]
+        DistCommit["Distributed Commit<br/>Two-Phase Commit (2PC)<br/>prepare → commit/abort<br/>coordinator + participants"]
+        DistDead["Distributed Deadlock<br/>global wait-for graph"]
+    end
+
+    subgraph DBSecurity["Database Security"]
+        Auth["Authentication<br/>user identity verification"]
+        Authz["Authorization<br/>GRANT / REVOKE privileges<br/>RBAC (roles)"]
+        Encrypt["Encryption<br/>TLS for network<br/>AES for data at rest"]
+        InjPrevent["SQL Injection Prevention<br/>parameterized queries<br/>prepared statements<br/>input validation"]
+        Audit["Auditing<br/>log all access & changes"]
+    end
+
+    subgraph PerfTune["Performance Tuning"]
+        PT1["Index Tuning<br/>appropriate indexes<br/>covering indexes"]
+        PT2["Query Optimization<br/>rewrite inefficient queries<br/>avoid SELECT *, use EXISTS"]
+        PT3["Schema Design<br/>proper normalization<br/>denormalize for read-heavy"]
+        PT4["Caching<br/>query cache / Redis / CDN"]
+        PT5["Connection Pooling<br/>reuse DB connections"]
+        PT6["Hardware / Configuration<br/>buffer pool size, SSD, memory"]
+    end

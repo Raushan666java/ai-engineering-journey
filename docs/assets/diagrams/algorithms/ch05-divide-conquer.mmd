@@ -1,0 +1,19 @@
+flowchart TD
+    subgraph DnC["Divide & Conquer Problems"]
+        direction TB
+        MS["Max Subarray\nDivide at midpoint\nCrossing = combine\nO(n log n)"]
+        ST["Strassen's Matrix\n7 multiplications vs 8\nO(n^2.807)"]
+        CP["Closest Pair\nδ = min(δL, δR)\nStrip of width 2δ\nO(n log n)"]
+        KT["Karatsuba Multiply\n3 multiplications vs 4\nO(n^1.585)"]
+    end
+
+    subgraph Recurrence["Recurrence Comparison"]
+        R1["Standard MM: T(n)=8T(n/2)+O(n²) → O(n³)"]
+        R2["Strassen: T(n)=7T(n/2)+O(n²) → O(n^2.807)"]
+        R3["Karatsuba: T(n)=3T(n/2)+O(n) → O(n^1.585)"]
+        R4["MaxSubarray: T(n)=2T(n/2)+O(n) → O(n log n)"]
+        R5["ClosestPair: T(n)=2T(n/2)+O(n) → O(n log n)"]
+    end
+
+    style DnC fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Recurrence fill:#fce4ec,stroke:#c62828,color:#000

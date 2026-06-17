@@ -17,6 +17,8 @@
 ### The Scalability Bottleneck
 Public blockchains face the "Trilemma": they can only optimize two out of three: **Decentralization, Security, Scalability**. Most chains struggle with throughput (Transactions Per Second - TPS) because every node must process every transaction.
 
+![Scaling and Security](../assets/images/diagrams/blockchain/ch10-scaling.png)
+
 ### Scaling Solutions
 1. **On-Chain (Layer 1):**
    - **Sharding:** Splitting the database into multiple segments (shards) so nodes only process a subset of transactions.

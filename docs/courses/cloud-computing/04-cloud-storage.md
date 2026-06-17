@@ -22,6 +22,8 @@ Cloud providers offer three primary categories of storage, each optimized for di
 2. **Block Storage:** Provides raw storage volumes that can be formatted with a filesystem. Low latency, high throughput, attached to a single VM (mostly). Ideal for databases and OS boot volumes.
 3. **File Storage:** Provides managed file shares accessible via standard network protocols (NFS/SMB). Supports concurrent access by multiple VMs. Ideal for home directories and shared application data.
 
+![Cloud Storage Types](../assets/images/diagrams/cloud-computing/ch04-storage-types.png)
+
 ### 4.2 Object Storage: S3, Blob, and GCS
 
 Object storage is the "Swiss Army Knife" of cloud storage, offering virtually infinite scale.

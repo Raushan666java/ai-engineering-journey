@@ -1,0 +1,31 @@
+flowchart LR
+    subgraph EntityLifecycle["JPA Entity Lifecycle"]
+        direction TB
+        New["NEW / TRANSIENT<br/>(not persisted)"] --> Managed["MANAGED<br/>(in persistence context)"]
+        Managed --> Detached["DETACHED<br/>(session closed)"]
+        Detached --> Managed["MANAGED<br/>(merge / re-attach)"]
+        Managed --> Removed["REMOVED<br/>(scheduled for delete)"]
+    end
+
+    subgraph Relations["Relationship Mapping"]
+        O2O["@OneToOne<br/>Shared PK or FK"]
+        O2M["@OneToMany<br/>+ @ManyToOne<br/>(bidirectional)"]
+        M2M["@ManyToMany<br/>@JoinTable"]
+    end
+
+    subgraph Strategies["Key Strategies"]
+        ID["ID Generation<br/>(IDENTITY / SEQUENCE / UUID)"]
+        Fetch["Fetch Strategy<br/>(LAZY vs EAGER)"]
+        Cascade["Cascade Types<br/>(ALL / PERSIST / MERGE / REMOVE)"]
+        Inherit["Inheritance<br/>(SINGLE / JOINED / TABLE_PER)"]
+    end
+
+    subgraph Perf["Performance"]
+        N1["N+1 Problem<br/>(JOIN FETCH / @BatchSize / EntityGraph)"]
+        Cache["2nd-Level Cache<br/>(READ_ONLY / READ_WRITE)"]
+        Batch["Batch Insert<br/>(SEQUENCE + batch_size)"]
+    end
+
+    EntityLifecycle --> Relations
+    Relations --> Strategies
+    Strategies --> Perf

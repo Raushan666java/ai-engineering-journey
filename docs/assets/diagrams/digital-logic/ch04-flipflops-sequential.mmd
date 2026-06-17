@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph Latches["Latches (Level-Triggered)"]
+        SRL["SR Latch<br/>Set (S) / Reset (R)<br/>invalid: S=R=1"]
+        DL["D Latch<br/>D input + Enable<br/>transparent when E=1"]
+        JKL["JK Latch<br/>J=K=1 toggles<br/>no invalid state"]
+    end
+
+    subgraph FlipFlops["Flip-Flops (Edge-Triggered)"]
+        DFF["D Flip-Flop<br/>D → Q on clock edge<br/>most common FF"]
+        JKFF["JK Flip-Flop<br/>J: set, K: reset<br/>both: toggle"]
+        TFF["T Flip-Flop<br/>T=1 → toggle<br/>T=0 → hold<br/>divide by 2"]
+        SRFF["SR Flip-Flop<br/>edge-triggered SR"]
+    end
+
+    subgraph Timing["Timing Parameters"]
+        Tsetup["Setup Time tₛᵤ<br/>data before clock"]
+        Thold["Hold Time tₕ<br/>data after clock"]
+        TclkQ["Clock-to-Q tᶜˡᵏ⁻q<br/>clock edge → output"]
+        Tpd["Propagation Delay<br/>input → output"]
+    end
+
+    subgraph RegCount["Registers & Counters"]
+        Reg["Register<br/>multi-bit D flip-flops<br/>parallel load"]
+        ShiftReg["Shift Register<br/>serial in → parallel out<br/>SIPO / PISO / SISO"]
+        Ring["Ring Counter<br/>1-hot circulating pattern"]
+        Counter["Binary Counter<br/>ripple / synchronous<br/>up / down / up-down"]
+    end

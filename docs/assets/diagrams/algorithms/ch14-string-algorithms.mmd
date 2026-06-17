@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph String["String Algorithms"]
+        KMP["KMP\nPattern matching\nPrefix function π[i]\nO(m+n) time"]
+        RK["Rabin-Karp\nRolling hash\nCompare hash values\nO(m+n) avg, O(mn) worst"]
+        Z["Z-Algorithm\nZ-array: longest prefix\nmatch at each position\nO(n) time"]
+        MC["Manacher\nAll palindromic substrings\nExpand around centers\nO(n) time"]
+        SA["Suffix Array\nSorted suffixes\nLCP array via Kasai\nO(n log n) time"]
+    end
+
+    subgraph KMPFlow["KMP Matching Process"]
+        KM1["T: ABCABCABD"]
+        KM2["P: ABCABD"]
+        KM3["π: [0,0,0,1,2,0]"]
+        KM4["Mismatch at index 5\nπ[4]=2 → shift by 2"]
+    end
+
+    subgraph SuffixUses["Suffix Array Applications"]
+        SA1["Pattern matching in O(m log n)"]
+        SA2["Longest Common Prefix"]
+        SA3["Longest Repeated Substring"]
+        SA4["Burrows-Wheeler Transform"]
+    end
+
+    style String fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style KMPFlow fill:#fce4ec,stroke:#c62828,color:#000
+    style SuffixUses fill:#e8f5e9,stroke:#2e7d32,color:#000

@@ -1,0 +1,30 @@
+flowchart TD
+    subgraph NLP["Natural Language Processing Pipeline"]
+        Text["Raw Text"] --> Tokenize["Tokenization\nWord segmentation"]
+        Tokenize --> POS["POS Tagging\nNoun, Verb, Adj..."]
+        POS --> Parse["Parsing\nConstituency / Dependency"]
+        Parse --> NER["Named Entity Recognition\nPerson, Org, Location"]
+        NER --> Sem["Semantic Analysis\nMeaning extraction"]
+        Sem --> Gen["Generation\nProduce output text"]
+    end
+
+    subgraph Tasks["Key NLP Tasks"]
+        T1["Machine Translation\nEnglish → French, etc."]
+        T2["Sentiment Analysis\nPositive / Negative / Neutral"]
+        T3["Question Answering\nAnswer from context"]
+        T4["Summarization\nExtractive / Abstractive"]
+        T5["Text Classification\nSpam detection, topic labeling"]
+    end
+
+    subgraph Models["NLP Models"]
+        M1["N-gram / HMM\nStatistical"]
+        M2["RNN / LSTM / GRU\nSequence models"]
+        M3["Transformers (BERT, GPT)\nSelf-attention\nSOTA for most tasks"]
+        M4["LLMs (GPT-4, Claude)\nFew-shot, zero-shot\nGeneral purpose"]
+    end
+
+    M1 --> M2 --> M3 --> M4
+
+    style NLP fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Tasks fill:#fff3e0,stroke:#f57c00,color:#000
+    style Models fill:#e8f5e9,stroke:#2e7d32,color:#000

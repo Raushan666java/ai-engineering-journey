@@ -1,0 +1,33 @@
+flowchart TD
+    subgraph Ethics["AI Ethics Framework"]
+        Bi["Bias & Fairness\nData bias → model bias\nDemographic parity\nEqual opportunity"]
+        Priv["Privacy\nData collection conscent\nDifferential privacy\nAnonymization"]
+        Trans["Transparency\nExplainable AI (XAI)\nSHAP, LIME\nInterpretability"]
+        Safe["Safety & Control\nAlignment problem\nValue learning\nRobustness"]
+    end
+
+    subgraph ExpertSys["Expert Systems"]
+        ES1["Knowledge Base\nDomain facts & rules"]
+        ES2["Inference Engine\nForward / Backward chaining"]
+        ES3["User Interface\nQuestions & explanations"]
+        ES4["Examples:\nMYCIN (medical)\nXCON (config)\nDENDRAL (chemistry)"]
+    end
+
+    subgraph ModernAI["Modern AI Trends"]
+        M1["Generative AI\nLLMs, Diffusion models\nText, image, video"]
+        M2["Multi-Modal\nText + Image + Audio\nCombined understanding"]
+        M3["AI Agents\nTool use, planning\nAutonomous execution"]
+        M4["Edge AI\nOn-device inference\nPrivacy-preserving"]
+    end
+
+    subgraph Apps["Applications"]
+        A1["Healthcare\nDiagnosis, drug discovery"]
+        A2["Finance\nFraud detection, trading"]
+        A3["Transportation\nAutonomous vehicles"]
+        A4["Education\nPersonalized learning"]
+    end
+
+    style Ethics fill:#fce4ec,stroke:#c62828,color:#000,stroke-width:2px
+    style ExpertSys fill:#fff3e0,stroke:#f57c00,color:#000
+    style ModernAI fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Apps fill:#e8f5e9,stroke:#2e7d32,color:#000

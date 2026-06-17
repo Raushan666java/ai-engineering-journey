@@ -1,0 +1,32 @@
+mindmap
+  root((Smart Pointers))
+    unique_ptr
+      Exclusive ownership
+      Movable not copyable
+      Zero overhead abstraction
+      release, reset, get, swap
+      Custom deleters in type
+    shared_ptr
+      Shared ownership
+      Reference counting
+      Control block allocation
+      Atomic ref count ops
+      make_shared for efficiency
+    weak_ptr
+      Non-owning weak reference
+      Breaks circular references
+      lock returns shared_ptr
+      Detects object expiration
+    Factory Functions
+      make_unique - exception safe
+      make_shared - single allocation
+      Preferred over raw new
+    Custom Deleters
+      Non-memory resources
+      FILE star, sockets, etc.
+      "unique_ptr: type in signature"
+      "shared_ptr: type erasure"
+    Circular References
+      "shared_ptr cycles = leak"
+      "Fix: weak_ptr for back-refs"
+      Common in graph structures

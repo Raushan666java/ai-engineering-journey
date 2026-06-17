@@ -1,0 +1,31 @@
+flowchart TD
+    subgraph Tree["Tree Terminology"]
+        Root["Root: topmost node"]
+        Parent["Parent: node with children"]
+        Child["Child: descendant of parent"]
+        Leaf["Leaf: node with no children"]
+        Subtree["Subtree: node + its descendants"]
+        Height["Height: longest path to leaf"]
+        Depth["Depth: distance from root"]
+    end
+
+    subgraph Binary["Binary Tree Types"]
+        Full["Full Binary Tree<br/>every node 0 or 2 children"]
+        Complete["Complete Binary Tree<br/>all levels filled left to right"]
+        Perfect["Perfect Binary Tree<br/>all internal nodes have 2 children<br/>all leaves at same level"]
+        Balanced["Balanced Binary Tree<br/>height difference ≤ 1<br/>(AVL, Red-Black)"]
+        Degenerate["Degenerate/Skewed<br/>like linked list<br/>O(n) worst case"]
+    end
+
+    subgraph Traversal["Tree Traversals"]
+        Preorder["Preorder: root → left → right"]
+        Inorder["Inorder: left → root → right"]
+        Postorder["Postorder: left → right → root"]
+        LevelOrder["Level-Order: BFS using queue"]
+    end
+
+    subgraph BST["Binary Search Tree"]
+        BSTProp["Left < Root < Right<br/>for all subtrees"]
+        Ops["Search O(log n)<br/>Insert O(log n)<br/>Delete O(log n)<br/>(average case)"]
+        Successor["Inorder predecessor/successor"]
+    end

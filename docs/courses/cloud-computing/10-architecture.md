@@ -21,6 +21,8 @@ All major cloud providers (AWS, Azure, GCP) provide a "Well-Architected Framewor
 5. **Cost Optimization:** Avoiding unnecessary costs.
 6. **Sustainability:** Minimizing the environmental impact of running cloud workloads.
 
+![Well-Architected Framework](../assets/images/diagrams/cloud-computing/ch10-well-architected.png)
+
 ### High Availability and Disaster Recovery (DR)
 - **High Availability (HA):** Designing systems to be operational for a long period (e.g., "four nines" or 99.99%). This is achieved through redundancy across Availability Zones (AZs) and load balancing.
 - **Disaster Recovery (DR):** Planning for the recovery of applications and data in the event of a catastrophic failure (e.g., region-wide outage). DR strategies include:

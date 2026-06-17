@@ -1,0 +1,41 @@
+flowchart LR
+    subgraph BASICS["Decorator Basics"]
+        DIR["@decorator\ndef func(): ..."]
+        DIR --> EQ["func = decorator(func)"]
+    end
+    
+    subgraph COMMON["Common Patterns"]
+        T1["@timer - measure elapsed"]
+        T2["@debug - log args/result"]
+        T3["@cache / @lru_cache - memoize"]
+        T4["@retry - retry on failure"]
+    end
+    
+    subgraph FACTORIES["Decorator Factories"]
+        DF["@repeat(3)"] --> DF1["repeat(3) returns decorator"]
+        DF1 --> DF2["decorator(func) returns wrapper"]
+    end
+    
+    subgraph STACKING["Multiple Decorators"]
+        ST["@timer\n@debug\ndef f(): ..."]
+        ST --> ST1["f = timer(debug(f))"]
+        ST2["Bottom-up application"]
+        ST3["Closest to func applies first"]
+    end
+    
+    subgraph CLASS_DEC["Class Decorators"]
+        CD["@singleton - one instance"]
+        CD1["@add_repr - auto __repr__"]
+        CD2["@dataclass - auto boilerplate"]
+    end
+    
+    subgraph META["Metadata"]
+        M1["@functools.wraps preserves name/docs"]
+        M2["functools.wraps(func) -> wrapper"]
+    end
+    
+    BASICS --> META
+    BASICS --> COMMON
+    COMMON --> FACTORIES
+    FACTORIES --> STACKING
+    STACKING --> CLASS_DEC

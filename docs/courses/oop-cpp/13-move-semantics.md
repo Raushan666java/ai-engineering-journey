@@ -12,6 +12,8 @@ After studying this chapter, students will be able to:
 
 ## 13.1 Value Categories
 
+![Move vs Copy Sequence Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/13-move-semantics.png)
+
 C++11 introduced a refined taxonomy of value categories:
 
 ```

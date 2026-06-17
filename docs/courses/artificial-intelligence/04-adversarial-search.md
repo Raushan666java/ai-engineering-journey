@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Adversarial Search and CSP](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch04-adversarial-csp.png)
+
 ### Games in AI
 In AI, "games" usually refers to competitive environments where multiple agents have conflicting goals. The most common type is a **zero-sum game** with **perfect information**:
 - **Zero-sum**: One player's gain is the other's loss.

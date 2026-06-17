@@ -32,6 +32,8 @@ Relational databases provide ACID (Atomicity, Consistency, Isolation, Durability
 - **High Availability:** Achieved through synchronous replication to a standby instance in a different Availability Zone (Multi-AZ).
 - **Read Scalability:** Achieved through asynchronous Read Replicas.
 
+![Cloud Database Services](../assets/images/diagrams/cloud-computing/ch05-database-services.png)
+
 ### 5.3 Non-Relational Databases (NoSQL)
 
 NoSQL databases offer horizontal scalability and schema flexibility, ideal for unstructured or semi-structured data.

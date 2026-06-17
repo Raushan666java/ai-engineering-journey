@@ -12,6 +12,8 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
+![Combinatorics Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/05-combinatorics.png)
+
 ### 5.1 Fundamental Counting Principles
 
 **Sum Rule (Rule of Disjunction).** If task A can be done in $m$ ways and task B in $n$ ways, and the two tasks cannot be done simultaneously, then there are $m + n$ ways to do either A or B.

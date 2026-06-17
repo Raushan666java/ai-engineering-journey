@@ -12,6 +12,8 @@
 
 ## Theory
 
+![SQL: DDL, DML, Joins and Aggregation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch02-sql.png)
+
 ### 4.1 Overview of SQL
 
 SQL (Structured Query Language) is the standard language for relational database management. It was developed at IBM in the 1970s and standardized by ANSI and ISO. Every major relational DBMS (PostgreSQL, MySQL, Oracle, SQL Server, SQLite) supports SQL, though each has proprietary extensions.

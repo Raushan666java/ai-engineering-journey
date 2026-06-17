@@ -8,6 +8,8 @@
 - Pass arrays to functions
 - Understand the relationship between arrays and memory layout
 
+![C Arrays and Strings Memory Layout](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch06-arrays-strings.png)
+
 ## 6.1 One-Dimensional Arrays
 
 An array is a contiguous sequence of elements of the same type, stored in consecutive memory locations.

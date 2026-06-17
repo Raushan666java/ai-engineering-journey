@@ -11,6 +11,8 @@
 
 ## Theory
 
+![OS Components](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/01-introduction.png)
+
 ### What is an Operating System?
 
 An operating system is system software that manages computer hardware and software resources and provides common services for computer programs. Every general-purpose computer must have an OS to run other programs. The OS acts as an intermediary between users/applications and the hardware.

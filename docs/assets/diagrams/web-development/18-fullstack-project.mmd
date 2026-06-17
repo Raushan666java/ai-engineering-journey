@@ -1,0 +1,35 @@
+flowchart TD
+    A["Full-Stack Architecture: TaskFlow"] --> B["Monorepo Root"]
+    
+    B --> C["packages/shared<br/>TypeScript Types"]
+    B --> D["apps/api<br/>Express Backend"]
+    B --> E["apps/web<br/>Next.js Frontend"]
+
+    C --> C1["Shared interfaces<br/>Project, Task, User"]
+    C --> C2["Enums: TaskStatus, Priority"]
+    C --> C3["ApiResponse / PaginatedResponse"]
+
+    D --> D1["Middleware Chain<br/>helmet → cors → rate-limit → json"]
+    D --> D2["Auth Routes<br/>register / login / refresh"]
+    D --> D3["Protected Routes<br/>JWT verify middleware"]
+    D --> D4["CRUD Endpoints<br/>projects, tasks"]
+    D --> D5["Prisma ORM<br/>Type-safe DB access"]
+    D --> D6["Redis Cache<br/>GET endpoint caching"]
+
+    E --> F["AuthContext (useAuth)<br/>login, register, logout"]
+    E --> F1["useApi Hook<br/>auto token refresh"]
+    E --> F2["Pages<br/>dashboard, create task"]
+    E --> F3["Components<br/>TaskCard, CreateTaskModal"]
+    E --> F4["Tailwind CSS<br/>responsive styling"]
+
+    subgraph Infra["Infrastructure"]
+        I1["PostgreSQL 16<br/>primary database"]
+        I2["Redis 7<br/>caching layer"]
+        I3["Docker Compose<br/>local dev environment"]
+        I4["CI/CD GitHub Actions<br/>test → deploy"]
+    end
+
+    D -.->|reads / writes| I1
+    D -.-> I2
+    E -.->|HTTP API calls| D
+    B -.-> Infra

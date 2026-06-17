@@ -1,0 +1,24 @@
+sequenceDiagram
+    participant User as User / Browser
+    participant Client as SPA / Mobile App
+    participant Auth as Authorization Server
+    participant API as Resource Server
+
+    Note over User,API: OAuth2 Authorization Code Flow with PKCE
+
+    Client->>Client: Generate code_verifier<br/>& code_challenge (S256)
+    User->>Client: Click "Login"
+    Client->>Auth: GET /authorize<br/>?response_type=code<br/>&client_id=myapp<br/>&redirect_uri=callback<br/>&code_challenge=...<br/>&code_challenge_method=S256<br/>&state=xyz
+    Auth->>User: Show login form
+    User->>Auth: Enter credentials + consent
+    Auth->>Client: Redirect to callback?code=AUTH_CODE&state=xyz
+    Client->>Client: Verify state parameter
+    Client->>Auth: POST /token<br/>grant_type=authorization_code<br/>code=AUTH_CODE<br/>code_verifier=...<br/>redirect_uri=callback<br/>client_id=myapp
+    Auth->>Auth: Verify code_verifier<br/>matches code_challenge
+    Auth-->>Client: access_token + refresh_token + id_token
+    Client->>API: GET /api/data<br/>Authorization: Bearer access_token
+    API->>API: Validate JWT signature<br/>(fetch JWKS from Auth)
+    API-->>Client: 200 OK + data
+    Note over Client,API: When token expires...
+    Client->>Auth: POST /token<br/>grant_type=refresh_token<br/>refresh_token=...
+    Auth-->>Client: new access_token + new refresh_token

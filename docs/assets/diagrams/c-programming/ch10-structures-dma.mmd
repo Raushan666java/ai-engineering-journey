@@ -1,0 +1,20 @@
+flowchart TD
+    subgraph StackMem["Stack Memory"]
+        StackFrame["Function call frame<br/>local variables<br/>created & destroyed<br/>automatically"]
+        StackSize["Fixed size (~1-8 MB)<br/>stack overflow risk<br/>with deep recursion"]
+    end
+
+    subgraph HeapMem["Heap Memory"]
+        Malloc["malloc(n)<br/>allocates n bytes<br/>returns void*<br/>uninitialized"]
+        Calloc["calloc(n, size)<br/>allocates n * size bytes<br/>initialized to zero"]
+        Realloc["realloc(ptr, new_size)<br/>resizes allocation<br/>may copy to new location"]
+        Free["free(ptr)<br/>returns memory to OS<br/>dangling pointer risk"]
+    end
+
+    subgraph Struct["Structures & Unions"]
+        StructDef["struct Student {<br/>    char name[50];<br/>    int id;<br/>    float gpa;<br/>};"]
+        StructUse["struct Student s1;<br/>s1.id = 101;<br/>strcpy(s1.name, 'Alice');"]
+        PtrStruct["struct Student *p;<br/>p->id = 101;<br/>(arrow operator)"]
+        Typedef["typedef struct {...} Student;<br/>Student s2;"]
+        Union["union Data { int i; float f; char c; };<br/>shares same memory<br/>size = largest member"]
+    end

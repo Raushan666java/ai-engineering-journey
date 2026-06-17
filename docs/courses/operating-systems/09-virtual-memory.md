@@ -11,6 +11,8 @@
 
 ## Theory
 
+![Paging and Segmentation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/09-virtual-memory.png)
+
 ### Virtual Memory Concept
 
 Virtual memory separates the logical memory (address space) as seen by a process from physical memory. This allows:

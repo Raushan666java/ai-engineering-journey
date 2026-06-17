@@ -1,0 +1,25 @@
+flowchart TD
+    subgraph Knap["Knapsack Problems"]
+        K01["0/1 Knapsack\nEach item: take or leave\nCapacity loop: BACKWARD\ndp[c] = max(dp[c], v[i] + dp[c-w[i]])"]
+        UK["Unbounded Knapsack\nEach item: unlimited copies\nCapacity loop: FORWARD\ndp[c] = max(dp[c], v[i] + dp[c-w[i]])"]
+    end
+
+    subgraph Variants["Related Problems"]
+        SS["Subset Sum\nDoes a subset sum to S?\ndp[s] = dp[s] OR dp[s-A[i]]\nBackward loop"]
+        EP["Equal Partition\nTotal sum even?\nSubset sum → total/2"]
+        CC["Coin Change (Min)\nMin coins for amount\nForward loop\ndp[c] = min(1 + dp[c-coins[i]])"]
+        TS["Target Sum\n+/- signs to reach S\nReduce to subset sum\nsum(P) = (total+S)/2"]
+    end
+
+    K01 --> SS
+    K01 --> EP
+    UK --> CC
+    SS --> TS
+
+    subgraph Space["Space Optimization"]
+        SO["2D → 1D array\nO(nW) → O(W)\nBackward preserves 0/1"]
+    end
+
+    style Knap fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Variants fill:#fff3e0,stroke:#f57c00,color:#000
+    style Space fill:#e8f5e9,stroke:#2e7d32,color:#000

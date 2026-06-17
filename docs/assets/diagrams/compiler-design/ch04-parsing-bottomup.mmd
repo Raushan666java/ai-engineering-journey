@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph BottomUp["Bottom-Up Parsing (Shift-Reduce)"]
+        Input["Input tokens"] --> Stack["Parse Stack"]
+        Stack --> Action{"Action"}
+        Action -- shift --> Shift["Shift: push token<br/>onto stack"]
+        Action -- reduce --> Reduce["Reduce: pop RHS<br/>push LHS nonterminal"]
+        Action -- accept --> Accept["Accept: success"]
+        Shift --> Action
+        Reduce --> Action
+    end
+
+    subgraph LR["LR Parsing Family"]
+        SLR["SLR(1)<br/>Simple LR<br/>weakest, smallest table"]
+        LR1["LR(1)<br/>Canonical LR<br/>largest table"]
+        LALR["LALR(1)<br/>Lookahead LR<br/>sweet spot: size × power"]
+    end
+
+    subgraph Handle["Handle Pruning"]
+        H1["Handle = RHS of production<br/>that matches a reduction step"]
+        H2["Rightmost derivation<br/>in reverse"]
+        H3["Parser finds handles<br/>using LR items & sets"]
+    end
+
+    subgraph Conflicts["LR Conflicts"]
+        C1["Shift/Reduce Conflict<br/>parser can't decide"]
+        C2["Reduce/Reduce Conflict<br/>multiple possible reductions"]
+        C3["Resolved by:<br/>precedence, associativity,<br/>lookahead"]
+    end

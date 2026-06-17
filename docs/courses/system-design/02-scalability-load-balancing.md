@@ -16,6 +16,8 @@
 
 ## Theory
 
+![Load Balancing Algorithms Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/02-scalability-load-balancing.png)
+
 ### Vertical Scaling (Scale Up)
 
 Vertical scaling adds resources to a single machine: more CPU cores, more RAM, faster SSDs, higher-bandwidth NICs. It is the simplest scaling strategy because it requires zero application changes.

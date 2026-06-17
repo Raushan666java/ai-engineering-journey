@@ -20,6 +20,8 @@
 
 Every HTTP request follows a precise path through the framework.
 
+![Laravel Request Lifecycle](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/02-architecture-routing.png)
+
 **Step 1 — `public/index.php`**: This single entry point (configured in Nginx or Apache) records the start time, loads Composer's autoloader, bootstraps the application via `bootstrap/app.php`, and handles the request:
 
 ```php

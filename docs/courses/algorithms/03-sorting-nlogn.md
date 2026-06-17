@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![Comparison Sort Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch03-sorting-nlogn.png)
+
 ### 3.1 Lower Bound for Comparison Sorting
 
 **Theorem 3.1.** Any comparison-based sorting algorithm requires \( \Omega(n \log n) \) comparisons in the worst case.

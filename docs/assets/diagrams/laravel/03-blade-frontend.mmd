@@ -1,0 +1,34 @@
+mindmap
+  root(("Blade Templating"))
+    Echo Syntax
+      Escaped: Two curly braces dollar var two curly braces
+      Unescaped: Exclamation mark two curly braces dollar var two curly braces exclamation mark
+      Comments: Two curly braces dash dash space dash dash two curly braces
+    Control Structures
+      Conditionals: at if / at unless / at isset / at empty
+      Loops: at for / at foreach / at forelse
+      Loop Variables: dollar loop arrow index comma dollar loop arrow first
+      Auth: at auth / at guest
+    Template Inheritance
+      at extends Parent layout
+      at section slash at yield Named sections
+      at parent Include parent content
+      at stack slash at push Deferred injection
+    Components
+      Class-based: php artisan make:component
+      Anonymous: dash dash view flag comma at props
+      Slots: dollar slot slash Named slots
+      Attributes: dollar attributes arrow merge
+    Vite Integration
+      at vite HMR in dev
+      Production builds with hashes
+      vite.config.js with laravel plugin
+    Forms and CSRF
+      at csrf Token protection
+      at method PUT slash PATCH slash DELETE
+      old Helper retains input
+      at error Per-field errors
+    Partials
+      at include slash at includeIf
+      at each Collection rendering
+      at once Single render

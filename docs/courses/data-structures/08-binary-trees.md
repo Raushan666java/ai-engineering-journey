@@ -9,6 +9,8 @@
 
 ## Theory
 
+![Binary Trees, Traversals and BST](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch05-trees-bst.png)
+
 ### Definitions
 
 A **binary tree** is a hierarchical structure where each node has at most two children: left and right.

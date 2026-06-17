@@ -10,6 +10,8 @@ This chapter shows you how to use the **blank page method**, how **Anki** implem
 
 ## Learning Objectives
 
+![Active Recall & Spaced Repetition](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-03.png)
+
 After completing this chapter, you will be able to:
 
 - Implement **active recall** in any subject you study

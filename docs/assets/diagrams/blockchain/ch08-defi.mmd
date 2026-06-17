@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph DeFi["DeFi Ecosystem"]
+        DEX["Decentralized Exchange\nUniswap, SushiSwap\nAMM-based trading"]
+        Lend["Lending/Borrowing\nAave, Compound\nSupply → earn interest\nCollateralized loans"]
+        Stable["Stablecoins\nDAI, USDC, USDT\nFiat-backed / Crypto-collateralized"]
+        Yield["Yield Farming\nProvide liquidity\nEarn governance tokens"]
+    end
+
+    subgraph AMM["Automated Market Maker"]
+        Pool["Liquidity Pool\nToken A + Token B"]
+        Formula["Constant Product\nx × y = k"]
+        Trade["Trade: Buy Token A\nIncrease A price\nDecrease B price"]
+        LP["Liquidity Provider\nDeposit pair\nEarn fees"]
+    end
+
+    subgraph Risks["Risks"]
+        IL["Impermanent Loss\nPrice divergence\nvs. holding"]
+        FL["Flash Loan Attack\nUncollateralized\nborrow + manipulate"]
+        Rug["Rug Pull\nDev removes liquidity\nToken → zero"]
+    end
+
+    Pool --> Formula
+    Formula --> Trade
+    LP --> Pool
+
+    style DeFi fill:#e3f2fd,stroke:#1565c0,color:#000
+    style AMM fill:#fff3e0,stroke:#f57c00,color:#000
+    style Risks fill:#fce4ec,stroke:#c62828,color:#000

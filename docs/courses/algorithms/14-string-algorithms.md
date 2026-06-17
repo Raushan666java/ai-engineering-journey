@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![String Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch14-string-algorithms.png)
+
 ### 14.1 Knuth-Morris-Pratt (KMP) Algorithm
 
 **Problem:** Find all occurrences of a pattern \( P \) (length \( m \)) in a text \( T \) (length \( n \)).

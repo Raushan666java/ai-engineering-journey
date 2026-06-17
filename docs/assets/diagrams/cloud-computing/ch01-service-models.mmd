@@ -1,0 +1,20 @@
+flowchart TD
+    subgraph SM["Cloud Service Models"]
+        IaaS["IaaS\nInfrastructure as a Service\nVM, Storage, Network\nYou manage: OS, Apps, Data\nProvider: Servers, Hypervisor"]
+        PaaS["PaaS\nPlatform as a Service\nManaged Runtime, DB\nYou manage: Code, Data\nProvider: OS, Middleware, Runtime"]
+        SaaS["SaaS\nSoftware as a Service\nReady-to-use App\nYou manage: Data, Users\nProvider: Everything else"]
+    end
+
+    subgraph DM["Deployment Models"]
+        Pub["Public Cloud\nAWS, Azure, GCP\nShared infra, pay-go"]
+        Priv["Private Cloud\nOn-premises, Dedicated\nFull control, higher cost"]
+        Hybrid["Hybrid Cloud\nConnected public + private\nBest of both worlds"]
+    end
+
+    OnPrem["On-Premises\nYou manage everything"] --> IaaS --> PaaS --> SaaS
+
+    style SM fill:#e3f2fd,stroke:#1565c0,color:#000
+    style DM fill:#fff3e0,stroke:#f57c00,color:#000
+    style IaaS fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style PaaS fill:#fff3e0,stroke:#f57c00,color:#000
+    style SaaS fill:#fce4ec,stroke:#c62828,color:#000

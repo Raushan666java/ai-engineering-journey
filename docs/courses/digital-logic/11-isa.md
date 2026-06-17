@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Instruction Set Architecture, Addressing Modes and Pipelining](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch07-isa-pipeline.png)
+
 ### 11.1 Instruction Set Architecture (ISA) Overview
 
 The ISA defines the interface between software and hardware. It specifies the programmer-visible state, the instruction formats, the addressing modes, and the behaviour of each instruction. The ISA serves as the contract between compilers and processor implementers.

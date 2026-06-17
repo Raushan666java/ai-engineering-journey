@@ -11,6 +11,8 @@
 
 ## Theory
 
+![NoSQL: Categories, CAP Theorem, MongoDB and Redis](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch06-nosql.png)
+
 ### 14.1 The Rise of NoSQL
 
 Relational databases dominated data management for decades, but the 2000s brought new challenges:

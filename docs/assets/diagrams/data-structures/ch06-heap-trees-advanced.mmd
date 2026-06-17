@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph Heap["Heap (Priority Queue)"]
+        MaxHeap["Max-Heap<br/>parent ≥ children<br/>root = maximum"]
+        MinHeap["Min-Heap<br/>parent ≤ children<br/>root = minimum"]
+        Insert["Insert: add to end → bubble up<br/>O(log n)"]
+        Extract["Extract Max/Min: remove root → bubble down<br/>O(log n)"]
+        Build["Build Heap<br/>from array in O(n)<br/>sift-down from last parent"]
+    end
+
+    subgraph Impl2["Array Representation"]
+        H1["i ← left child: 2i+1"]
+        H2["i ← right child: 2i+2"]
+        H3["i ← parent: (i-1)/2"]
+        H4["Complete binary tree<br/>stored in array"]
+    end
+
+    subgraph BalTrees["Balanced Trees"]
+        AVL["AVL Tree<br/>balance factor = -1,0,1<br/>rotations to rebalance<br/>LL, RR, LR, RL rotations"]
+        RBT["Red-Black Tree<br/>root black, no red-red parent<br/>black height balanced<br/>max 2× height of AVL"]
+        BT["B-Tree<br/>generalizes BST<br/>multiple keys per node<br/>used in databases & filesystems"]
+    end
+
+    subgraph TriSegment["Advanced Structures"]
+        Trie["Trie (Prefix Tree)<br/>string keys, shared prefixes<br/>autocomplete, spell check"]
+        SegTree["Segment Tree<br/>range queries + updates<br/>O(log n) both"]
+        UF["Union-Find (Disjoint Set)<br/>find → O(α(n))<br/>union → O(α(n))<br/>path compression + union by rank"]
+    end

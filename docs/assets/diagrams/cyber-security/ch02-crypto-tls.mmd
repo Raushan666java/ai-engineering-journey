@@ -1,0 +1,30 @@
+flowchart LR
+    subgraph Sym["Symmetric Encryption"]
+        SK["Shared Key\nSame key for\nencrypt and decrypt"]
+        SymEnc["Encrypt\nAES, ChaCha20"]
+        SymDec["Decrypt\nSame key"]
+        SymPlain["Plaintext"] --> SymEnc --> SymCipher["Ciphertext"] --> SymDec --> SymOut["Plaintext"]
+        SK -.-> SymEnc
+        SK -.-> SymDec
+    end
+
+    subgraph Asym["Asymmetric Encryption"]
+        PK["Public Key\nShare freely"]
+        PrivK["Private Key\nKeep secret"]
+        AsymEnc["Encrypt"]
+        AsymDec["Decrypt"]
+        APlain["Plaintext"] --> AsymEnc --> ACipher["Ciphertext"] --> AsymDec --> AOut["Plaintext"]
+        PK -.-> AsymEnc
+        PrivK -.-> AsymDec
+    end
+
+    subgraph TLS["TLS Handshake"]
+        Client["Client\nHello + Ciphers"] --> Server["Server\nHello + Cert"]
+        Server --> KeyEx["Key Exchange\nDiffie-Hellman"]
+        KeyEx --> Session["Session Key\nSymmetric AES"]
+        Session --> Secure["Encrypted\nCommunication"]
+    end
+
+    style Sym fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Asym fill:#fff3e0,stroke:#f57c00,color:#000
+    style TLS fill:#e8f5e9,stroke:#2e7d32,color:#000

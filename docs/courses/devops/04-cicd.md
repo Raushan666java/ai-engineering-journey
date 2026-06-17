@@ -12,6 +12,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![CI/CD Pipeline: Continuous Integration and Delivery](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch03-cicd.png)
+
 ### 4.1 Continuous Integration Principles
 
 Continuous Integration (CI) is the practice of merging all developer working copies to a shared mainline several times a day. Each merge triggers an automated build and test suite. The core principles are:

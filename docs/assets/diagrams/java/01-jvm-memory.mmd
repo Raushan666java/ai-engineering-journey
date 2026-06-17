@@ -1,0 +1,36 @@
+flowchart TB
+    subgraph ClassLoader["Class Loader Subsystem"]
+        CL1["Bootstrap Class Loader<br/>(rt.jar / java.base)"]
+        CL2["Platform Class Loader<br/>(JDK 9+ modules)"]
+        CL3["System Class Loader<br/>(classpath)"]
+    end
+
+    subgraph RDA["Runtime Data Areas"]
+        subgraph TS["Thread Shared"]
+            direction TB
+            MA["Method Area / Metaspace<br/>(Class metadata, static vars,<br/>constant pool)"]
+            Heap["Heap<br/>(Objects, Arrays)"]
+        end
+        subgraph TP["Thread Private"]
+            direction TB
+            Stack["Stack<br/>(Frames, locals,<br/>operand stack)"]
+            PC["PC Register<br/>(current instruction)"]
+            NMS["Native Method Stack<br/>(JNI calls)"]
+        end
+    end
+
+    subgraph EE["Execution Engine"]
+        INT["Interpreter"]
+        JIT["JIT Compiler<br/>(C1 / C2 / Graal)"]
+        GC["Garbage Collector<br/>(Serial / Parallel / G1 / ZGC)"]
+    end
+
+    ClassLoader --> RDA
+    RDA --> EE
+    EE --> NativeCode["Native Machine Code"]
+
+    subgraph HG["Heap Generations"]
+        Young["Young Gen<br/>(Eden + S0 + S1)"]
+        Old["Old Gen<br/>(Tenured)"]
+    end
+    Heap --> HG

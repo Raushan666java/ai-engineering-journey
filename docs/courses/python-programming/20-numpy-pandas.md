@@ -11,6 +11,8 @@ By the end of this chapter, students will be able to:
 - Filter, group, aggregate, and merge datasets
 - Create basic visualisations with matplotlib and seaborn
 
+![Data Science Stack](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/20-numpy-pandas.png)
+
 ## 20.1 NumPy Arrays
 
 ### 20.1.1 Creating Arrays

@@ -1,0 +1,32 @@
+flowchart TD
+    subgraph DevOps["DevOps Lifecycle"]
+        Plan["Plan<br/>requirements, backlog"]
+        Code["Code<br/>develop, review, commit"]
+        Build["Build<br/>compile, analyze, package"]
+        Test["Test<br/>unit, integration, e2e"]
+        Release["Release<br/>version, approve, tag"]
+        Deploy["Deploy<br/>staging → production"]
+        Operate["Operate<br/>run, scale, monitor"]
+        Monitor["Monitor<br/>logs, metrics, alerts"]
+
+        Plan --> Code --> Build --> Test --> Release --> Deploy --> Operate --> Monitor
+        Monitor -.-> Plan
+    end
+
+    subgraph Culture["Core Principles"]
+        P1["Collaboration<br/>Dev + Ops + QA + Security"]
+        P2["Automation<br/>everything as code"]
+        P3["CI/CD<br/>frequent, small releases"]
+        P4["Measurement<br/>data-driven decisions"]
+        P5["Shared Responsibility<br/>you build it, you run it"]
+    end
+
+    subgraph Practices["Key Practices"]
+        VCS["Version Control (Git)"]
+        CI["Continuous Integration"]
+        CD["Continuous Delivery"]
+        IaC["Infrastructure as Code"]
+        ConfigMgmt["Configuration Management"]
+        Container["Containerization & Orchestration"]
+        Mon["Monitoring & Observability"]
+    end

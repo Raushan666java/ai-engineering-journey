@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![CPU Architecture: Datapath, Control Unit and Instruction Cycle](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch06-cpu-architecture.png)
+
 ### 8.1 Von Neumann Architecture
 
 John von Neumann's stored-program computer architecture, described in 1945, introduced the concept that both instructions and data reside in the same memory space and share a common bus. The four principal subsystems are:

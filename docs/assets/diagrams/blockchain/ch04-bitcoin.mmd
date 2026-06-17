@@ -1,0 +1,23 @@
+flowchart TD
+    subgraph UTXO["UTXO Model"]
+        TX0["Prev Tx\nAlice: 10 BTC"] -->|"UTXO consumed\nas Input"| TX1["Transaction\nInput: Prev Tx(0)\nOutput1: Bob 8 BTC\nOutput2: Alice 2 BTC (change)"]
+        TX1 -->|"New UTXO 1"| Bob["Bob's Wallet\n8 BTC"]
+        TX1 -->|"New UTXO 2"| AliceC["Alice's Change\n2 BTC"]
+    end
+
+    subgraph Lifecycle["Transaction Lifecycle"]
+        Create["User creates\ntransaction"] --> Sign["Sign with\nprivate key"]
+        Sign --> Broadcast["Broadcast to\nmemory pool (mempool)"]
+        Broadcast --> Validate["Miners validate\nCheck signatures\nNo double spend"]
+        Validate --> Block["Include in block"]
+        Block --> Confirm["Confirmation\n6 blocks for finality"]
+    end
+
+    subgraph Mining["Mining"]
+        Halving["Halving every 210k blocks\nReward: 50 → 25 → 12.5 → 6.25 BTC"]
+        Diff["Difficulty adjusts\nevery 2016 blocks\nKeep 10-min block time"]
+    end
+
+    style UTXO fill:#e3f2fd,stroke:#1565c0,color:#000
+    style Lifecycle fill:#fff3e0,stroke:#f57c00,color:#000
+    style Mining fill:#e8f5e9,stroke:#2e7d32,color:#000

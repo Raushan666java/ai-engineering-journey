@@ -23,6 +23,8 @@ A fundamental concept in cloud security is that security is a shared effort betw
 
 The boundary shifts based on the service model (IaaS vs. PaaS vs. SaaS). In SaaS, the provider handles almost everything except data and access control.
 
+![Shared Responsibility Model](../assets/images/diagrams/cloud-computing/ch07-shared-responsibility.png)
+
 ### 7.2 Identity and Access Management (IAM)
 
 IAM is the framework of policies and technologies for ensuring that the right users have the appropriate access to technology resources.

@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: define syntax-directed 
 
 ## Theory
 
+![Syntax-Directed Translation and Intermediate Code Generation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch05-sdt-icg.png)
+
 ### Syntax-Directed Definitions
 
 A syntax-directed definition (SDD) is a context-free grammar augmented with semantic rules associated with each production. For a production A → X₁X₂...Xₙ, each symbol on the right-hand side and the left-hand side nonterminal may have an associated set of attributes. A semantic rule computes the value of an attribute in terms of other attributes in the same production. Attributes capture the meaning of the program fragment represented by the grammar symbol.

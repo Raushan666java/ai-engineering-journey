@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: describe the analysis-s
 
 ## Theory
 
+![Compiler Phases Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch01-overview.png)
+
 ### The Analysis-Synthesis Model
 
 A compiler is a program that reads a program written in a source language and translates it into an equivalent program in a target language. This translation process is conventionally partitioned into two broad components: the analysis phase (front end) and the synthesis phase (back end). Analysis decomposes the source program into a structured intermediate representation, exposing its grammatical structure and semantic content. Synthesis constructs the desired target program from this intermediate representation, typically performing resource-conscious transformations such as register allocation and instruction selection.

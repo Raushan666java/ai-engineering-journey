@@ -12,6 +12,8 @@
 
 ## Theory
 
+![Advanced SQL, Normalization and Higher Normal Forms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch03-advanced-sql-normalization.png)
+
 ### 6.1 Aggregate Functions
 
 Aggregate functions compute a single result from a set of input rows. They ignore NULL values unless explicitly stated.

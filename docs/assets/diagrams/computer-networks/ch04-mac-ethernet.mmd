@@ -1,0 +1,21 @@
+flowchart TD
+    subgraph MAC["MAC Sublayer Protocols"]
+        CSMA_CD["CSMA/CD (Ethernet)<br/>Listen while transmitting<br/>detect collision → jam → backoff"]
+        CSMA_CA["CSMA/CA (WiFi)<br/>Listen before talk<br/>RTS/CTS virtual carrier sense"]
+        Token["Token Ring / FDDI<br/>token passed between stations<br/>no collisions"]
+        Aloha["Pure/Slotted Aloha<br/>random access, retry on collision<br/>wireless, satellite"]
+    end
+
+    subgraph Ethernet["Ethernet Evolution"]
+        E1["10BASE5 / 10BASE2<br/>coaxial, shared bus"]
+        E2["10BASE-T / 100BASE-TX<br/>twisted pair, star topology"]
+        E3["Gigabit Ethernet<br/>1000BASE-T, 1000BASE-SX"]
+        E4["10/40/100 Gigabit<br/>fiber & copper"]
+    end
+
+    subgraph Switch["Switching"]
+        Bridge["Bridge / Switch<br/>forward frames based on MAC"]
+        Learning["MAC Learning<br/>learns source MAC → port"]
+        VLAN["VLAN (802.1Q)<br/>logical LAN segmentation<br/>tagged frames"]
+        STP["Spanning Tree Protocol<br/>loop-free topology<br/>BPDU messages"]
+    end

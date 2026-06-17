@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph Algos["Search Algorithms Comparison"]
+        LS["Linear Search\nUnsorted data\nO(n) worst case\nSequential scan"]
+        BS["Binary Search\nSorted array\nO(log n)\nDivide in half"]
+        IS["Interpolation Search\nUniformly distributed\nO(log log n) avg\nO(n) worst"]
+        ES["Exponential Search\nUnbounded array\nO(log i)\nDouble then binary"]
+        TS["Ternary Search\nSorted array\nO(log₃ n)\nTwo midpoints"]
+    end
+
+    Data["Input Data"] --> Choice{"Data characteristics?"}
+
+    Choice -->|"Unsorted"| LS
+    Choice -->|"Sorted"| BS
+    Choice -->|"Uniform distribution"| IS
+    Choice -->|"Near start / infinite"| ES
+    Choice -->|"Sorted, ok with const overhead"| TS
+
+    subgraph Complexities["Worst-Case Comparisons\nn = 1,000,000"]
+        CLS["Linear: 1,000,000"]
+        CBS["Binary: 20"]
+        CIS["Interpolation: 1,000,000"]
+        CES["Exponential: ~40"]
+        CTS["Ternary: 38"]
+    end
+
+    style Algos fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style Complexities fill:#fce4ec,stroke:#c62828,color:#000

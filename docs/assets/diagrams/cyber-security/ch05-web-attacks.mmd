@@ -1,0 +1,32 @@
+flowchart TD
+    subgraph OWASP["OWASP Top 10 Highlights"]
+        AC["Broken Access Control\n#1 Risk"]
+        Crypto["Cryptographic Failures\nWeak encryption"]
+        Inj["Injection\nSQL, LDAP, OS cmd"]
+        ID["Insecure Design\nArchitecture flaws"]
+        Conf["Security Misconfiguration\nDefault passwords"]
+    end
+
+    subgraph SQLi["SQL Injection"]
+        User["User Input\n' OR 1=1 --"] --> App["Web App\nConcatenates query"]
+        App --> DB["SELECT * FROM users\nWHERE user = '' OR 1=1 --'\nReturns ALL rows"]
+    end
+
+    subgraph XSS["Cross-Site Scripting"]
+        Attacker["Attacker\n<script>alert('xss')</script>"]
+        Site["Vulnerable Site\nStores script"]
+        Victim["Victim Browser\nExecutes script\nSteals cookies"]
+        Attacker --> Site --> Victim
+    end
+
+    subgraph Defenses["Defenses"]
+        Param["Parameterized Queries\nSQLi prevention"]
+        CSP["Content Security Policy\nXSS prevention"]
+        CSRF["Anti-CSRF Token\nState-changing requests"]
+        Headers["Security Headers\nHSTS, X-Frame-Options"]
+    end
+
+    style OWASP fill:#fce4ec,stroke:#c62828,color:#000
+    style SQLi fill:#e3f2fd,stroke:#1565c0,color:#000
+    style XSS fill:#fff3e0,stroke:#f57c00,color:#000
+    style Defenses fill:#e8f5e9,stroke:#2e7d32,color:#000

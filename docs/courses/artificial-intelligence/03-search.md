@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Search Algorithms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch03-search.png)
+
 ### Problem Formulation
 Before a search algorithm can be applied, a problem must be formally defined:
 1. **Initial State**: The starting point of the agent.

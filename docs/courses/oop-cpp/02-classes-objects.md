@@ -13,6 +13,8 @@ After studying this chapter, students will be able to:
 
 ## 2.1 The Class Concept
 
+![OOP Concepts Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/02-classes-objects.png)
+
 A class is a user-defined type that encapsulates data and the operations that manipulate that data. An object is an instance of a class—a concrete allocation of memory that conforms to the class's layout.
 
 ```cpp

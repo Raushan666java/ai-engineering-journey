@@ -1,0 +1,32 @@
+flowchart TD
+    subgraph Core["Core Functional Patterns"]
+        Streams["Stream Operations<br/>map / flatMap / filter / reduce<br/>mapMulti / zip / iterate"]
+        Collectors["Custom Collectors<br/>Collector&lt;T,A,R&gt; interface<br/>supplier / accumulator / combiner / finisher"]
+        Monads["Monad Patterns<br/>Optional, CompletableFuture<br/>Validation, Box&lt;T&gt;"]
+    end
+
+    subgraph Composition["Function Composition"]
+        Compose["andThen / compose<br/>pipeline construction"]
+        Partial["Partial Application<br/>Currying"]
+        Arity["TriFunction / QuadFunction<br/>custom arity interfaces"]
+    end
+
+    subgraph Data["Data Patterns"]
+        Immutable["Immutable Data<br/>Records, Withers<br/>List.copyOf()"]
+        Lazy["Lazy Evaluation<br/>Supplier, Lazy&lt;T&gt;<br/>Memoization"]
+    end
+
+    subgraph ErrorH["Error Handling"]
+        TryP["Try / Either / Result<br/>functional error patterns"]
+        Validation["Validation&lt;E,T&gt;<br/>error accumulation"]
+    end
+
+    subgraph Advanced["Advanced Features"]
+        PM["Pattern Matching<br/>switch expressions<br/>sealed classes"]
+        FI["Functional Interfaces<br/>43 in java.util.function<br/>Primitive specializations"]
+    end
+
+    Core --> Composition
+    Core --> Data
+    Core --> ErrorH
+    Core --> Advanced

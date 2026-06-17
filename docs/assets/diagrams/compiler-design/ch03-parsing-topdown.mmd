@@ -1,0 +1,26 @@
+flowchart TD
+    subgraph TopDown["Top-Down Parsing"]
+        Start["Start Symbol<br/>E"] --> Expand["Expand leftmost<br/>nonterminal"]
+        Expand --> Match["Match terminals<br/>against input"]
+        Match --> Next["Advance input<br/>pointer"]
+        Next --> More{"More input?"}
+        More -- yes --> Expand
+        More -- no --> Accept["Accept"]
+    end
+
+    subgraph LL["LL(1) Parsing"]
+        LLTable["Predictive Parsing Table<br/>M[nonterminal, token] → production"]
+        LLStack["Parsing Stack<br/>[E]"]
+        LLPush["Push RHS in reverse<br/>when table entry found"]
+    end
+
+    subgraph Problems["Issues"]
+        LeftR["Left Recursion<br/>E → E + T<br/>→ eliminate"]
+        LeftF["Left Factoring<br/>if (expr) stmt<br/>| if (expr) stmt else stmt<br/>→ factor common prefix"]
+    end
+
+    subgraph FirstFollow["FIRST & FOLLOW"]
+        F1["FIRST(α) = set of terminals<br/>that begin strings from α"]
+        F2["FOLLOW(A) = set of terminals<br/>that can appear right of A"]
+        F3["Used to construct<br/>LL(1) parsing table"]
+    end

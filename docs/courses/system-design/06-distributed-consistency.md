@@ -14,6 +14,8 @@
 ---
 ## Theory
 
+![Distributed Consistency Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/06-distributed-consistency.png)
+
 ### The CAP Theorem
 
 The CAP theorem, formalized by Seth Gilbert and Nancy Lynch in 2002, states that a distributed data store can simultaneously provide at most two of three guarantees: Consistency, Availability, and Partition Tolerance.

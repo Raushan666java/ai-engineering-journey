@@ -1,0 +1,37 @@
+flowchart TD
+    subgraph SPRINT["Sprint Cycle (1-4 weeks)"]
+        SP[Sprint Planning] --> DEV[Development]
+        DEV --> DS[Daily Scrum ☀️]
+        DS --> DEV
+        DEV --> SR[Sprint Review]
+        SR --> SRETRO[Sprint Retrospective]
+    end
+
+    subgraph BACKLOG["Backlog Management"]
+        PB[Product Backlog]
+        SB[Sprint Backlog]
+        INC[Increment]
+    end
+
+    subgraph ROLES["Scrum Roles"]
+        PO[Product Owner]
+        DT[Development Team]
+        SM[Scrum Master]
+    end
+
+    subgraph KANBAN["Kanban Practices"]
+        KB[Visualize Workflow]
+        WIP[Limit Work in Progress]
+        MF[Manage Flow]
+        FP[Explicit Policies]
+        FL[Feedback Loops]
+    end
+
+    PB --> SP
+    SP --> SB
+    DEV --> INC
+    SR --> PB
+
+    PO --> PB
+    SM --> DT
+    DT --> DEV

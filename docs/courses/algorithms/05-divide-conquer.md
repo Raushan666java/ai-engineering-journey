@@ -13,6 +13,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![Divide and Conquer Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch05-divide-conquer.png)
+
 ### 5.1 Maximum Subarray Problem
 
 **Problem:** Given an array \( A \) of \( n \) integers (which may be negative), find the contiguous subarray with the largest sum.

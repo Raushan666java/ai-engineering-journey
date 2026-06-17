@@ -6,6 +6,8 @@ By the conclusion of this chapter, the student will be able to: (1) define langu
 
 ## 12.1 Language Models
 
+![Natural Language Processing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch12-nlp.png)
+
 A **language model** assigns a probability $P(w_1, w_2, \ldots, w_n)$ to a sequence of words. By the chain rule:
 
 $$P(w_{1:n}) = \prod_{i=1}^n P(w_i \mid w_{1:i-1})$$

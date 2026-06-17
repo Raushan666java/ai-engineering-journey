@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph ISA["Instruction Set Architecture"]
+        RISC["RISC<br/>fixed instruction size<br/>load-store architecture<br/>32 registers<br/>e.g. ARM, RISC-V, MIPS"]
+        CISC["CISC<br/>variable instruction size<br/>memory operands allowed<br/>fewer registers<br/>e.g. x86"]
+        Formats["Instruction Formats<br/>R-type: op | rs | rt | rd | shamt | func<br/>I-type: op | rs | rt | immediate<br/>J-type: op | address"]
+    end
+
+    subgraph Addressing["Addressing Modes"]
+        Imm["Immediate<br/>operand = constant in instruction"]
+        Direct["Direct<br/>operand = memory[address]"]
+        Register["Register<br/>operand = register content"]
+        Indirect["Indirect<br/>operand = memory[register]"]
+        Indexed["Indexed<br/>operand = memory[base + offset]"]
+        Relative["PC-Relative<br/>operand = PC + offset<br/>for branches"]
+    end
+
+    subgraph Pipeline["Pipelining"]
+        Stages["5-Stage Pipeline<br/>IF → ID → EX → MEM → WB"]
+        Hazard["Hazards"]
+        Struct["Structural Hazard<br/>resource conflict<br/>solution: separate memories"]
+        Data["Data Hazard<br/>RAW / WAR / WAW<br/>solution: forwarding + stalling"]
+        Control["Control Hazard<br/>branches<br/>solution: branch prediction"]
+        Speedup["Ideal: CPI = 1<br/>Speedup = pipeline depth"]
+    end
+
+    subgraph FH["Forwarding Unit"]
+        FW["Forward from EX/MEM & MEM/WB<br/>bypass ALU result to next op"]
+    end

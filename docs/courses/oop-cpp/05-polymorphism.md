@@ -13,6 +13,8 @@ After studying this chapter, students will be able to:
 
 ## 5.1 The Polymorphism Problem
 
+![Polymorphism Types Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/05-polymorphism.png)
+
 Consider a shape hierarchy where each derived type draws itself differently. Without polymorphism, we must resort to type tags and conditional logic:
 
 ```cpp

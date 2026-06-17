@@ -14,6 +14,8 @@
 
 ## Theory
 
+![Cloud & Mobile Security](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch07-cloud-mobile.png)
+
 ### Shared Responsibility Model
 In cloud security, responsibility is divided between the Cloud Service Provider (CSP) and the customer.
 - **Provider Responsibility (Security *of* the Cloud):** Protecting the underlying infrastructure (hardware, networking, physical facilities).

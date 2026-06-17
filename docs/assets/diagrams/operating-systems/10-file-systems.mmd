@@ -1,0 +1,51 @@
+mindmap
+  root(("File System"))
+    File Concept
+      Attributes
+        Name / ID / Type
+        Location / Size
+        Protection / Timestamps
+      Operations
+        Create / Open
+        Read / Write
+        Seek / Delete / Close
+      Access Methods
+        Sequential
+          Read next / Write next
+          Text editors / media
+        Direct
+          Read n / Write n
+          Databases by record
+        Indexed
+          Key -> Block index
+          DBMS multi-level
+    Directory Structure
+      Single-Level
+        Flat, naming conflicts
+      Two-Level
+        UFD per user
+        MFD index
+      Tree-Structured
+        Arbitrary depth
+        Unix / Windows
+      Acyclic-Graph
+        Shared subdirs via links
+        Hard links vs Symlinks
+    Disk Allocation
+      Contiguous
+        Fast sequential access
+        External fragmentation
+      Linked
+        Each block points to next
+        No fragmentation, slow random
+      Indexed
+        Index block per file
+        Supports direct access
+    VFS Layer
+      ext4 / btrfs / xfs / ntfs
+      Uniform system call API
+      Mount table
+    Protection
+      Unix rwx (owner/group/other)
+      ACLs (fine-grained)
+      Capabilities

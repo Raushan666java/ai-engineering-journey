@@ -1,0 +1,65 @@
+mindmap
+  root((System Design Fundamentals))
+    Non-Functional Requirements
+      Scalability
+        Horizontal Scale-Out
+        Vertical Scale-Up
+        Load / Data / Geographic
+      Reliability
+        Fault Tolerance
+        Redundancy N+1 2N 3x
+        Failover / Health Checks
+      Availability
+        Nines 90-99.999%
+        SLA / SLO / SLI
+      Maintainability
+        Operability
+        Simplicity
+        Evolvability
+      Performance
+        Latency p50 p95 p99
+        Throughput QPS TPS
+        Tail Latency
+      Security
+        AuthN AuthZ
+        Encryption TLS
+        Rate Limiting
+      Cost Efficiency
+        Cost Per Request
+        Cost Per GB
+    Design Process
+      Phase 1 Requirements
+        Functional NFRs
+        Clarify Scope
+      Phase 2 Estimation
+        QPS Storage Bandwidth
+        Little Law L=LambdaW
+      Phase 3 High-Level
+        Client LB App Cache DB
+        CDN Message Queue
+      Phase 4 Deep Dive
+        Schema Indexes
+        Sharding Replication
+        Consistency Model
+    Key Trade-Offs
+      Latency vs Throughput
+      Cost vs Performance
+      Consistency vs Availability CAP
+      Read vs Write Optimization
+    Capacity Formulas
+      QPS = DAU x Actions / 86400
+      Storage = Items x Bytes x Retention x Replication
+      Bandwidth = Bits Per Request x QPS
+    Real-World Systems
+      Google Search
+        Inverted Index
+        MapReduce
+        Sub-200ms Latency
+      Facebook Meta
+        TAO Graph Cache
+        Eventual Consistency
+        Haystack Photos
+      WhatsApp
+        Erlang Stack
+        End-to-End Encryption
+        2B+ Users 50 Engineers

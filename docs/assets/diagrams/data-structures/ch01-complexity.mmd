@@ -1,0 +1,29 @@
+flowchart TD
+    subgraph Complexity["Complexity Analysis"]
+        TC["Time Complexity<br/>rate of growth wrt input size"]
+        SC["Space Complexity<br/>extra memory usage"]
+        Bounds["Asymptotic Notation"]
+        O["Big O (O)<br/>upper bound<br/>worst case"]
+        Omega["Omega (Ω)<br/>lower bound<br/>best case"]
+        Theta["Theta (Θ)<br/>tight bound<br/>average case"]
+        O --> O1["O(1) - constant"]
+        O --> O2["O(log n) - logarithmic"]
+        O --> O3["O(n) - linear"]
+        O --> O4["O(n log n) - linearithmic"]
+        O --> O5["O(n²) - quadratic"]
+        O --> O6["O(2ⁿ) - exponential"]
+        O --> O7["O(n!) - factorial"]
+    end
+
+    subgraph Recurrence["Recurrence Relations"]
+        Master["Master Theorem<br/>T(n) = aT(n/b) + f(n)"]
+        Substitution["Substitution Method<br/>guess + induction"]
+        Tree["Recursion Tree<br/>visualize cost per level"]
+    end
+
+    subgraph Analysis["Analysis Types"]
+        Worst["Worst-Case<br/>maximum steps"]
+        Best["Best-Case<br/>minimum steps"]
+        Average["Average-Case<br/>expected steps<br/>over all inputs"]
+        Amortized["Amortized<br/>average over sequence of ops"]
+    end

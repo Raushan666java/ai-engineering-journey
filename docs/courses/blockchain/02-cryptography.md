@@ -27,6 +27,8 @@ Blockchain uses asymmetric cryptography for identity and ownership.
 - **Public Key:** Derived from the private key; used by the network to verify the signature.
 - **Address:** A hashed version of the public key, acting as the user's "account number."
 
+![Cryptography in Blockchain](../assets/images/diagrams/blockchain/ch02-cryptography.png)
+
 ### Digital Signatures
 A digital signature (e.g., ECDSA) provides:
 1. **Authentication:** Proves the transaction came from the owner of the private key.

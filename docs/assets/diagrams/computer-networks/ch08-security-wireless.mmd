@@ -1,0 +1,27 @@
+flowchart TD
+    subgraph Security["Network Security"]
+        Threats["Common Threats"]
+        Sniff["Packet Sniffing<br/>passive eavesdropping"]
+        Spoof["IP / ARP / DNS Spoofing<br/>identity forgery"]
+        DOS["DoS / DDoS<br/>resource exhaustion"]
+        MitM["Man-in-the-Middle<br/>interception & modification"]
+    end
+
+    subgraph Defenses["Defense Mechanisms"]
+        Firewall["Firewall<br/>packet filter, stateful,<br/>application-layer (WAF)"]
+        IDS_IPS["IDS / IPS<br/>signature-based<br/>anomaly-based detection"]
+        VPN["VPN / IPsec<br/>tunnel mode vs transport<br/>encrypted site-to-site"]
+        NAC["Network Access Control<br/>802.1X<br/>port-based authentication"]
+    end
+
+    subgraph Crypto["Cryptography in Networking"]
+        Sym["Symmetric<br/>AES, ChaCha20<br/>fast bulk encryption"]
+        Asym["Asymmetric<br/>RSA, ECDH<br/>key exchange & signatures"]
+        Certs["PKI / Certificates<br/>X.509, CA hierarchy<br/>TLS uses all three"]
+    end
+
+    subgraph Wireless["Wireless & Mobile"]
+        WiFi["WiFi (802.11)<br/>a/b/g/n/ac/ax (WiFi 6)<br/>OFDM, MIMO, channels"]
+        Cellular["Cellular Networks<br/>4G LTE → 5G NR<br/>OFDMA, mmWave"]
+        Mobility["Mobile IP<br/>home agent ↔ foreign agent<br/>tunneling to care-of address"]
+    end

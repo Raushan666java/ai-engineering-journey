@@ -1,0 +1,24 @@
+flowchart TD
+    subgraph IndexTypes["Index Data Structures"]
+        BTree["B⁺-Tree<br/>balanced, kept sorted<br/>internal nodes → keys<br/>leaf nodes → data + next ptr<br/>O(log n) search/insert/delete<br/>database standard"]
+        HashIdx["Hash Index<br/>direct key → bucket lookup<br/>O(1) exact match<br/>no range queries"]
+        Bitmap["Bitmap Index<br/>bit vectors per value<br/>fast for low-cardinality<br/>warehouse / OLAP"]
+        GiST["GiST / GIN<br/>generalized inverted index<br/>full-text search / geometry"]
+    end
+
+    subgraph QueryProc["Query Processing Pipeline"]
+        Q1["Parse SQL → Parse Tree"]
+        Q2["Logical Optimization<br/>relational algebra trees<br/>predicate pushdown"]
+        Q3["Physical Optimization<br/>cost-based enumeration<br/>access path selection"]
+        Q4["Execution<br/>iteration / join algorithms"]
+    end
+
+    subgraph JoinAlgos["Join Algorithms"]
+        NL["Nested Loop Join<br/>O(n×m) - small tables"]
+        HashJoin["Hash Join<br/>build hash table on smaller table<br/>O(n+m) - equi-joins"]
+        MergeJoin["Sort-Merge Join<br/>sort both + merge<br/>O(n log n + m log m)<br/>good for pre-sorted data"]
+    end
+
+    subgraph Explain["Cost Factors"]
+        Cost["I/O cost (disk pages)<br/>CPU cost (comparisons)<br/>Memory cost (buffers)"]
+    end

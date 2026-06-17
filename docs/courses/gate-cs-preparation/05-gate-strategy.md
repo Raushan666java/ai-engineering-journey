@@ -2,6 +2,8 @@
 
 ## GATE Exam Overview
 
+![GATE CS Exam Strategy](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/05-gate-strategy.png)
+
 ### What is GATE?
 
 Graduate Aptitude Test in Engineering (GATE) is a national-level examination conducted jointly by the Indian Institute of Science (IISc) and seven Indian Institutes of Technology (IITs). It tests the comprehensive understanding of undergraduate engineering subjects. GATE scores are used for:

@@ -8,6 +8,8 @@
 - Construct nested loops
 - Avoid common loop errors including off-by-one and infinite loops
 
+![C Loops: while, do-while, for and jump statements](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch05-loops.png)
+
 ## 5.1 The `while` Loop
 
 The `while` loop repeats a block of code as long as a condition remains true (non-zero). The condition is evaluated **before** each iteration.

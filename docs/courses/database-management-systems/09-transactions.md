@@ -11,6 +11,8 @@
 
 ## Theory
 
+![ACID, Transactions, Concurrency Control and Crash Recovery](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch04-transactions-concurrency-recovery.png)
+
 ### 9.1 What Is a Transaction?
 
 A **transaction** is a logical unit of work that accesses and possibly modifies the database. It is a sequence of operations (reads and writes) that forms a single logical unit.

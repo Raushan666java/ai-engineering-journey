@@ -14,6 +14,8 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
+![Sets Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/01-sets.png)
+
 ### 1.1 Definition of a Set
 
 A **set** is an unordered collection of distinct objects, called its **elements** or **members**. If $x$ is an element of the set $S$, we write $x \in S$. If $x$ is not an element of $S$, we write $x \notin S$.

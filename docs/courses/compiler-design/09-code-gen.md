@@ -6,6 +6,8 @@ After completing this chapter, students will be able to: model the target machin
 
 ## Theory
 
+![Code Generation and Optimization](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch07-codegen-optimization.png)
+
 ### Target Machine Model
 
 Code generation translates the intermediate representation into instructions for a specific target machine. A typical RISC model includes: a set of general-purpose registers (often 32 on MIPS, 16 on ARM), a byte-addressable memory, and an instruction set with arithmetic (add, sub, mul), load/store (ld, st), branch (beq, bne, j), and procedure call (jal) instructions. Key properties include register count, addressing modes, instruction costs, and the calling convention.

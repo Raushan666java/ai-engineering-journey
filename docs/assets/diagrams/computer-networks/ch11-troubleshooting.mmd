@@ -1,0 +1,52 @@
+mindmap
+  root(("Troubleshooting & Diagnostics"))
+    Tools
+      ping
+        ICMP echo request/reply
+        tests reachability & RTT
+      traceroute / tracert
+        TTL-based path discovery
+        shows hops & latency
+      nslookup / dig
+        DNS resolution queries
+        authoritative vs recursive
+      ipconfig / ifconfig
+        interface configuration
+        IP, MAC, gateway
+      netstat / ss
+        active connections & ports
+        listening services
+      nmap
+        port scanning
+        OS & service detection
+      tcpdump / Wireshark
+        packet capture & analysis
+        deep protocol inspection
+    Common Issues
+      Connectivity
+        No route to host
+        DNS resolution failure
+        Firewall blocking
+      Performance
+        High latency / jitter
+        Packet loss
+        TCP retransmissions
+        Bandwidth saturation
+      Configuration
+        Duplicate IP addresses
+        Wrong subnet mask
+        MTU mismatch
+      Security
+        Unauthorized access
+        ARP poisoning
+        Rogue DHCP server
+    Methodology
+      OSI Model Approach
+        start at Physical
+        work up the layers
+      Divide & Conquer
+        check each layer
+        isolate the faulty one
+      Follow the Path
+        trace end-to-end
+        verify each hop

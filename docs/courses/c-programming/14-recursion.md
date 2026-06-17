@@ -10,6 +10,8 @@
 
 ## 14.1 Fundamentals of Recursion
 
+![C Recursion, Linked Lists, Stacks and Queues](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch14-recursion-ds.png)
+
 A recursive function is one that calls itself. Every recursive function must satisfy two conditions:
 
 1. **Base case:** A condition that stops the recursion (no further calls).

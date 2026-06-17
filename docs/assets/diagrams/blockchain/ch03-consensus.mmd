@@ -1,0 +1,26 @@
+flowchart TD
+    BGP["Byzantine Generals Problem\nGenerals must agree on attack/retreat\nSome may be traitors"] --> PoW["Proof of Work\nMiners compete\nSolve hash puzzle"]
+    BGP --> PoS["Proof of Stake\nValidators selected\nBy amount staked"]
+
+    subgraph PoWFlow["Proof of Work"]
+        P1["Collect transactions"] --> P2["Find nonce\nHash < Target\nHigh energy cost"]
+        P2 --> P3["Broadcast block\nto network"]
+        P3 --> P4["Other nodes\nVerify and accept"]
+        P4 --> P5["Miner gets\nBlock reward + fees"]
+    end
+
+    subgraph PoSFlow["Proof of Stake"]
+        S1["Validators\nlock up stake"] --> S2["Selected\npseudo-randomly"]
+        S2 --> S3["Propose block\nSign with stake"]
+        S3 --> S4["Other validators\nattest/verify"]
+        S4 --> S5["Reward / Slashing\nfor misbehavior"]
+    end
+
+    PoW -.-> PoWFlow
+    PoS -.-> PoSFlow
+
+    style BGP fill:#fce4ec,stroke:#c62828,color:#000,stroke-width:2px
+    style PoW fill:#fff3e0,stroke:#f57c00,color:#000
+    style PoS fill:#e8f5e9,stroke:#2e7d32,color:#000
+    style PoWFlow fill:#fff3e0,stroke:#f57c00,color:#000
+    style PoSFlow fill:#e8f5e9,stroke:#2e7d32,color:#000

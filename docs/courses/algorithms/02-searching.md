@@ -12,6 +12,8 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
+![Searching Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch02-searching.png)
+
 ### 2.1 Linear Search
 
 The simplest searching algorithm: traverse the array sequentially until the target is found or the array ends.

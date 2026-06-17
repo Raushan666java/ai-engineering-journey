@@ -1,0 +1,27 @@
+mindmap
+  root((Polymorphism))
+    Compile-Time
+      Function Overloading
+      Template Instantiation
+      Zero runtime overhead
+      Types known at compile time
+    Runtime
+      Virtual Functions
+        vtable / vptr mechanism
+        Dynamic dispatch
+        Indirect call overhead
+      Virtual Destructors
+        Proper cleanup in hierarchies
+        Rule: virtual if any virtual function
+      Abstract Classes
+        Pure virtual functions = 0
+        Cannot instantiate
+        Define interfaces
+      RTTI
+        dynamic_cast
+        typeid
+        Use sparingly
+    Comparison
+      Compile-Time: Faster, rigid
+      Runtime: Flexible, slower
+      Choose based on problem

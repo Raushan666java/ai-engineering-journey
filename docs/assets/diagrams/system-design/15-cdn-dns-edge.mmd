@@ -1,0 +1,47 @@
+flowchart TD
+    A[CDN DNS and Edge] --> B[DNS Hierarchy]
+    A --> C[DNS Resolution Flow]
+    A --> D[DNS Load Balancing]
+    A --> E[CDN Architecture]
+    A --> F[Edge Computing]
+    A --> G[DDoS Mitigation]
+
+    B --> B1[Root Servers 13 Anycast]
+    B --> B2[TLD Servers .com .org]
+    B --> B3[Authoritative Servers]
+    B --> B4[Recursive Resolvers 8.8.8.8]
+
+    C --> C1["Stub Resolver -> Recursive Resolver"]
+    C --> C2["Root -> TLD -> Authoritative -> IP"]
+    C --> C3["TTL-Driven Caching"]
+    C --> C4["Caching: Browser -> OS -> Resolver -> App"]
+
+    D --> D1[Round-Robin DNS]
+    D --> D2[Weighted DNS]
+    D --> D3[GeoDNS]
+    D --> D4[Latency-Based Route53 LBR]
+
+    E --> E1[Edge PoPs 330+ Locations]
+    E --> E2[Origin Shield]
+    E --> E3[Pull Zone vs Push Zone]
+    E --> E4["Cache-Control ETag Last-Modified"]
+    E --> E5[Image Optimization WebP AVIF]
+    E --> E6[Anycast Routing]
+
+    E2 --> E2D["Single shield layer prevents thundering herd"]
+
+    F --> F1[LambdaEdge]
+    F --> F2[Cloudflare Workers]
+    F --> F3[EdgeKV]
+
+    F1 --> F1D["JWT validation URL rewrite A/B test"]
+    F2 --> F2D["V8 isolates sub-ms cold start"]
+    F3 --> F3D["Global KV eventual consistency"]
+
+    G --> G1[Rate Limiting]
+    G --> G2[WAF SQLi XSS OWASP]
+    G --> G3[Bot Detection JS Challenge]
+    G --> G4[Scrubbing Centers Anycast Absorption]
+
+    G1 --> G1D["Sliding window 429 on exceed"]
+    G4 --> G4D["Distribute Tbps across all PoPs"]

@@ -1,0 +1,21 @@
+flowchart TD
+    subgraph TreeDP["DP on Trees"]
+        TD["Tree Diameter\nLongest path between 2 nodes\nPost-order: max1+max2 per node\nO(n)"]
+        MPS["Max Path Sum\nBinary tree, values may be <0\nleftGain + rightGain + node.val\nO(n)"]
+        HR3["House Robber III\nNo adjacent nodes\nTwo states per node:\nselected / not selected\nO(n)"]
+    end
+
+    subgraph GridDP["DP on Grids"]
+        UP["Unique Paths\nTop-left → Bottom-right\nOnly right/down moves\ndp[i][j] = dp[i-1][j] + dp[i][j-1]\nO(mn)"]
+        MPSG["Min Path Sum\nNon-negative grid values\nMin cost to reach each cell\nO(mn)"]
+        OBS["With Obstacles\nBlocked cells → dp = 0"]
+    end
+
+    subgraph Bitmask["DP with Bitmasking"]
+        TSP["Traveling Salesman\ndp[mask][v] = min cost\nto visit cities in mask\nending at city v\nO(n²·2ⁿ)"]
+        HP["Hamiltonian Path\nVisit each vertex once\nSame as TSP without return"]
+    end
+
+    style TreeDP fill:#e3f2fd,stroke:#1565c0,color:#000,stroke-width:2px
+    style GridDP fill:#fff3e0,stroke:#f57c00,color:#000
+    style Bitmask fill:#e8f5e9,stroke:#2e7d32,color:#000

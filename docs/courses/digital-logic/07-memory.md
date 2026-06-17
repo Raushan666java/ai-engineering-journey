@@ -12,6 +12,8 @@ By the conclusion of this chapter, the student shall be able to:
 
 ## Theory
 
+![Finite State Machines and Memory Types](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch05-fsm-memory.png)
+
 ### 7.1 Memory Hierarchy Overview
 
 Memory systems are organised hierarchically to balance speed, capacity, and cost. The hierarchy from fastest and smallest to slowest and largest comprises registers, cache memory, main memory (RAM), and secondary storage (disk, Flash). This chapter focuses on main memory and read-only memory technologies.

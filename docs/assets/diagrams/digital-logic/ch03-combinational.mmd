@@ -1,0 +1,22 @@
+flowchart TD
+    subgraph Combinational["Combinational Circuits"]
+        HA["Half Adder<br/>S = A ⊕ B<br/>C = A · B"]
+        FA["Full Adder<br/>S = A ⊕ B ⊕ Cᵢₙ<br/>Cₒᵤₜ = A·B + Cᵢₙ·(A⊕B)"]
+        MUX["Multiplexer<br/>selects one of 2ⁿ inputs<br/>n select lines"]
+        DEMUX["Demultiplexer<br/>routes one input<br/>to one of 2ⁿ outputs"]
+        Enc["Encoder<br/>2ⁿ inputs → n-bit code"]
+        Dec["Decoder<br/>n-bit code → 2ⁿ outputs"]
+        ALU["ALU<br/>arithmetic + logic ops<br/>select lines control function"]
+    end
+
+    subgraph Arith["Arithmetic Circuits"]
+        Ripple["Ripple Carry Adder<br/>cascade full adders<br/>slow: O(n)"]
+        CLA["Carry Lookahead Adder<br/>generate Gᵢ = Aᵢ·Bᵢ<br/>propagate Pᵢ = Aᵢ⊕Bᵢ<br/>fast: O(1)"]
+        Mult["Multiplier<br/>shift-and-add<br/>Booth's algorithm"]
+    end
+
+    subgraph Code["Code Converters"]
+        BCD["BCD to 7-segment"]
+        BinG["Binary to Gray code"]
+        GBin["Gray to Binary"]
+    end

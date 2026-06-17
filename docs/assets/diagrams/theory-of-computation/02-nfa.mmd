@@ -1,0 +1,24 @@
+flowchart TD
+    subgraph DFA["DFA - Deterministic"]
+        D1[Exactly one next state per input]
+        D2[Single computation path]
+        D3["Transition: Q x Sigma -> Q"]
+        D4[Easier to implement]
+    end
+
+    subgraph NFA["NFA - Nondeterministic"]
+        N1[Zero one or many next states]
+        N2[Multiple computation paths]
+        N3["Transition: Q x Sigma -> P(Q)"]
+        N4[Easier to design]
+    end
+
+    subgraph EQUIV["Equivalence"]
+        E1[Same expressive power]
+        E2[Recognize regular languages]
+        E3[Subset construction NFA to DFA]
+        E4[DFA may need 2^n states]
+    end
+
+    DFA --> EQUIV
+    NFA --> EQUIV

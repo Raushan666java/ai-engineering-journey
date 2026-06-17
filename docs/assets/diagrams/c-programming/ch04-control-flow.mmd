@@ -1,0 +1,21 @@
+flowchart TD
+    Start["Condition / Expression"] --> If{"if (condition)"}
+    If -- true --> IfBody["if-block executes"]
+    IfBody --> End["Continue"]
+    If -- false --> ElseIf{"else if (condition)"}
+    ElseIf -- true --> ElseIfBody["else-if block executes"]
+    ElseIfBody --> End
+    ElseIf -- false --> ElseBody["else block executes"]
+    ElseBody --> End
+
+    subgraph Switch["switch Statement"]
+        SW["switch (expr)"] --> S1["Case 1<br/>match?"]
+        S1 -- yes --> S1B["Execute until break"]
+        S1 -- no --> S2["Case 2<br/>match?"]
+        S2 -- yes --> S2B["Execute until break"]
+        S2 -- no --> SN["... more cases"]
+        SN --> Default["default:<br/>optional fallback"]
+        S1B --> Out["exit switch"]
+        S2B --> Out
+        Default --> Out
+    end

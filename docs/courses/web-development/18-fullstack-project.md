@@ -13,6 +13,8 @@ By the end of this chapter, you will be able to:
 
 ## 18.1 Project Overview: TaskFlow
 
+![Full-Stack Architecture Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/18-fullstack-project.png)
+
 Throughout this chapter, we will build **TaskFlow**, a full-stack task management application. TaskFlow allows users to create projects, add tasks, assign team members, set priorities, and track progress in real time.
 
 ### Architecture

@@ -1,0 +1,43 @@
+flowchart TD
+    A[Consistency Models] --> B[Strong Consistency]
+    A --> C[Sequential Consistency]
+    A --> D[Causal Consistency]
+    A --> E[Eventual Consistency]
+
+    B --> B1["Linearizability: all nodes same order matching real time"]
+    B --> B2["Implementation: W+R > N quorum"]
+
+    C --> C1["Program order per process, global order need not match real time"]
+
+    D --> D1["Causally related writes seen in same order"]
+    D --> D2["Implementation: Vector Clocks"]
+
+    E --> E1["Converges given no new updates"]
+    E --> E2["Requires conflict resolution"]
+
+    F[CAP Theorem] --> G["Partition -> choose C or A"]
+    F --> H["PACELC: Partition A/C Else L/C"]
+
+    I[Quorum Systems] --> J["N=5 W=3 R=3 -> W+R=6 > N=5"]
+    I --> K[Read Repair]
+    I --> L[Hinted Handoff]
+
+    M[Logical Clocks] --> N[Lamport Clocks]
+    M --> O[Vector Clocks]
+    N --> N1["Integer counter, captures happens-before"]
+    O --> O1["Per-process vector, detects concurrency"]
+
+    P[CRDTs] --> Q[G-Counter]
+    P --> R[PN-Counter]
+    P --> S[OR-Set]
+    Q --> Q1["Grow-only, sum across nodes"]
+    R --> R1["Increment + decrement via 2 G-Counters"]
+    S --> S1["Add/remove with unique tags"]
+
+    T[Anti-Entropy] --> U[Merkle Trees]
+    T --> V[Gossip Protocol SWIM]
+    U --> U1["O(log N) hash exchange"]
+    V --> V1["O(log N) rounds to converge"]
+
+    W[Snapshots] --> X[Chandy-Lamport]
+    X --> X1["Consistent cut via marker messages"]

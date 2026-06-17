@@ -17,6 +17,8 @@ By the end of this chapter, you will be able to:
 
 Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the **bounded context** — a explicit boundary within which a particular domain model applies. Each bounded context has its own **ubiquitous language**, a shared vocabulary used by domain experts and developers alike.
 
+![Microservices Architecture Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/38-microservices-principles.png)
+
 **Core DDD Building Blocks:**
 
 - **Value Object**: An immutable object that describes attributes with no conceptual identity (e.g., `Money`, `Address`)

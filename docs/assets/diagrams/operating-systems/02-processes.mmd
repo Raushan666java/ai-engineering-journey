@@ -1,0 +1,34 @@
+stateDiagram-v2
+    [*] --> New
+    
+    New --> Ready : admitted
+    Ready --> Running : scheduler dispatch
+    Running --> Ready : interrupt / preempt
+    Running --> Waiting : I/O or event wait
+    Waiting --> Ready : I/O or event completion
+    Running --> Terminated : exit
+    
+    Terminated --> [*]
+    
+    state New {
+        [*] --> Creating
+    }
+    state Ready {
+        [*] --> InMemory
+    }
+    state Running {
+        [*] --> Executing
+    }
+    state Waiting {
+        [*] --> Blocked
+    }
+    state Terminated {
+        [*] --> Zombie
+        Zombime --> Cleaned : parent wait()
+    }
+    
+    note right of New : Process being created\nPCB allocated
+    note right of Ready : In memory\nwaiting for CPU
+    note right of Running : Instructions\nexecuting on CPU
+    note right of Waiting : Waiting for I/O\nor event
+    note right of Terminated : Process finished\nresources released

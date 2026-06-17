@@ -1,0 +1,28 @@
+flowchart TD
+    subgraph CodeGen["Code Generation"]
+        Selection["Instruction Selection<br/>IR pattern → machine instruction"]
+        Scheduling["Instruction Scheduling<br/>reorder for pipelining"]
+        Allocation["Register Allocation<br/>which values in registers?"]
+    end
+
+    subgraph Quality["Code Quality Criteria"]
+        Q1["Correctness<br/>preserves program semantics"]
+        Q2["Efficiency<br/>minimize instructions & cycles"]
+        Q3["Size<br/>minimize code footprint"]
+    end
+
+    subgraph OptLevels["Optimization Scope"]
+        Peephole["Peephole<br/>local window of instructions"]
+        Local["Local<br/>within a basic block"]
+        Global["Global<br/>across basic blocks (CFG)"]
+        Interproc["Interprocedural<br/>across function calls"]
+    end
+
+    subgraph LocalOpts["Common Local Optimizations"]
+        L1["Constant Folding<br/>2 + 3 → 5"]
+        L2["Constant Propagation<br/>x = 5; use x → use 5"]
+        L3["Copy Propagation<br/>x = y; use x → use y"]
+        L4["Dead Code Elimination<br/>remove unreachable code"]
+        L5["Algebraic Simplification<br/>x * 1 → x, x + 0 → x"]
+        L6["Strength Reduction<br/>x * 2 → x << 1"]
+    end

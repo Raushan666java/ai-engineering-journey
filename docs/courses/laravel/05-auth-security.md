@@ -736,6 +736,8 @@ public function messages(): array
 
 ### Security
 
+![Auth Guards, Gates & Security](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/05-auth-security.png)
+
 #### CSRF Protection
 
 Cross-Site Request Forgery (CSRF) attacks trick authenticated users into executing unwanted actions. Laravel automatically protects every `POST`, `PUT`, `PATCH`, and `DELETE` request with a CSRF token.

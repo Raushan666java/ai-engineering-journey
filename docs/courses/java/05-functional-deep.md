@@ -22,6 +22,8 @@ By the end of this chapter, you will be able to:
 
 ## 1. Advanced Stream Operations
 
+![Functional Programming Concepts](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/05-functional-deep.png)
+
 Chapter P6 covered the fundamentals: `stream()`, `filter`, `map`, `flatMap`, `reduce`, `collect`, `sorted`, `distinct`, `takeWhile`, `dropWhile`, `limit`, `skip`, and basic `flatMap` with `Optional::stream`. This section deepens those patterns and introduces operations not covered there.
 
 ### 1.1 `mapMulti` (Java 16+)

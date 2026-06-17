@@ -1,8 +1,8 @@
-﻿# Chapter 2: Practice, Mindset & Performance
+# Chapter 2: Practice, Mindset & Performance
 
-> **Learning isn't just about technique â€” it's about what you believe, how you practice, and how you take care of your brain. This chapter tears down the illusions that waste your time and replaces them with evidence-based strategies that compound.**
+> **Learning isn't just about technique — it's about what you believe, how you practice, and how you take care of your brain. This chapter tears down the illusions that waste your time and replaces them with evidence-based strategies that compound.**
 
-The difference between learners who plateau and learners who keep improving isn't IQ â€” it's how they practice, what they believe about their own ability, and whether they understand the brain's hidden quirks. You'll learn why re-reading feels productive but isn't, why stress can help or destroy your performance, and why your brain is literally rewiring itself as you read this sentence. By the end, you'll have a practice framework rooted in cognitive science, not folklore.
+The difference between learners who plateau and learners who keep improving isn't IQ — it's how they practice, what they believe about their own ability, and whether they understand the brain's hidden quirks. You'll learn why re-reading feels productive but isn't, why stress can help or destroy your performance, and why your brain is literally rewiring itself as you read this sentence. By the end, you'll have a practice framework rooted in cognitive science, not folklore.
 
 ---
 
@@ -23,7 +23,7 @@ After completing this chapter, you will be able to:
 - Describe the Pygmalion effect and leverage high expectations in mentorship, teaching, and self-talk
 - Optimize brain health through sleep, exercise, nutrition, and stress management for sustained learning
 
-![Practice, Mindset & Performance](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-02-practice-mindset.png)
+![Practice, Mindset & Performance](../../assets/images/diagrams/learning-how-to-learn/ch-02-practice-mindset.png)
 
 ---
 
@@ -33,13 +33,30 @@ After completing this chapter, you will be able to:
 
 **Answer:**
 
-Deliberate practice is **structured, goal-directed practice with immediate feedback** at the edge of your current ability. It was codified by psychologist Anders Ericsson after decades studying expert performers â€” musicians, chess grandmasters, athletes, memory champions. Regular practice (naive practice) is just doing the thing. Deliberate practice is doing the thing with **intent, feedback, and progressive overload**.
+Deliberate practice is **structured, goal-directed practice with immediate feedback** at the edge of your current ability. It was codified by psychologist Anders Ericsson after decades studying expert performers — musicians, chess grandmasters, athletes, memory champions. Regular practice (naive practice) is just doing the thing. Deliberate practice is doing the thing with **intent, feedback, and progressive overload**.
+
+```mermaid
+mindmap
+  root((Deliberate Practice))
+    Specific Goal
+      Measurable target
+      Not "get better" but "solve 3 medium DP in 30 min"
+    Full Focus
+      Complete concentration
+      Cannot do while watching TV
+    Immediate Feedback
+      Coach / test / grader
+      Know right or wrong instantly
+    Edge of Ability
+      Cannot yet do consistently
+      If it feels easy, it's not deliberate
+```
 
 **The four pillars of deliberate practice:**
 
 1. **Specific goal.** Not "get better at coding" but "solve 3 medium-level LeetCode problems on dynamic programming within 30 minutes each."
 2. **Focus.** Full concentration, not passive repetition. If you can do it while watching TV, it's not deliberate.
-3. **Immediate feedback.** A coach, a test, a judge, an automated grader â€” something that tells you right away whether you got it right.
+3. **Immediate feedback.** A coach, a test, a judge, an automated grader — something that tells you right away whether you got it right.
 4. **Comfort-zone edge.** You're working on something you cannot yet do consistently. If it feels easy, you're not doing deliberate practice.
 
 **Naive practice vs. deliberate practice:**
@@ -49,7 +66,7 @@ Deliberate practice is **structured, goal-directed practice with immediate feedb
 public class NaivePractice {
     // Solves easy problems daily but never progresses in difficulty
     public int add(int a, int b) {
-        return a + b;  // Already mastered â€” zero growth
+        return a + b;  // Already mastered — zero growth
     }
 }
 
@@ -79,7 +96,7 @@ public class DeliberatePractice {
 }
 ```
 
-The first example adds nothing to your ability. The second â€” done under time pressure, with test feedback, after identifying sliding window as a weak area â€” is deliberate practice.
+The first example adds nothing to your ability. The second — done under time pressure, with test feedback, after identifying sliding window as a weak area — is deliberate practice.
 
 
 **Try This:** Pick one skill you're learning. Write down: (1) one specific, measurable goal for today's session, (2) how you'll get immediate feedback, (3) what makes this session harder than what you can already do. Do not start practicing until you've written all three.
@@ -90,13 +107,28 @@ The first example adds nothing to your ability. The second â€” done under t
 
 **Answer:**
 
-Re-reading and highlighting create the **illusion of competence** â€” you mistake **familiarity** for **knowledge**. When you re-read a textbook passage, your brain processes it more fluently the second time. That fluency feels like understanding, but it's just perceptual priming. You're recognizing the words, not recalling the ideas.
+Re-reading and highlighting create the **illusion of competence** — you mistake **familiarity** for **knowledge**. When you re-read a textbook passage, your brain processes it more fluently the second time. That fluency feels like understanding, but it's just perceptual priming. You're recognizing the words, not recalling the ideas.
+
+```mermaid
+flowchart LR
+    subgraph Illusion[Illusion of Competence]
+        A[Reread / Highlight] --> B[Fluency heuristic]
+        B --> C[Familiarity feels like knowing]
+        C --> D[Fail test]
+    end
+    subgraph Real[Actual Competence]
+        E[Close book & recall] --> F[Expose real gaps]
+        F --> G[Target weak spots]
+        G --> H[Strengthen neural pathways]
+        H --> I[Pass test]
+    end
+```
 
 **Why re-reading tricks you:**
 
 1. **Fluency heuristic.** Your brain interprets "easy to process" as "well understood." The second read is smoother, so you feel smarter.
-2. **No retrieval.** You never force your brain to reconstruct the idea from scratch. Retrieval is what strengthens neural pathways â€” re-reading is just passive input.
-3. **False confidence.** Studies (Rohrer & Pashler, 2007) show that students who re-read predict higher test scores than those who do active recall â€” but actually score lower.
+2. **No retrieval.** You never force your brain to reconstruct the idea from scratch. Retrieval is what strengthens neural pathways — re-reading is just passive input.
+3. **False confidence.** Studies (Rohrer & Pashler, 2007) show that students who re-read predict higher test scores than those who do active recall — but actually score lower.
 
 
 **The Java analogy:**
@@ -105,7 +137,7 @@ Re-reading and highlighting create the **illusion of competence** â€” you m
 // RE-READING (illusion of competence)
 Reading a book about Streams API:
   "Stream.map transforms elements... Stream.filter selects elements..."
-  Read twice â†’ feels familiar â†’ "I know streams!" â†’ Fails coding test
+  Read twice → feels familiar → "I know streams!" → Fails coding test
 
 // ACTIVE RECALL (actual competence)
 Cover the book and write from memory:
@@ -115,12 +147,12 @@ Cover the book and write from memory:
                  .map(n -> n * 2)          // map: what's the method reference syntax?
                  .collect(Collectors.toList());
   }
-  // Now check. Wrong? Good â€” that gap is where learning happens.
+  // Now check. Wrong? Good — that gap is where learning happens.
 ```
 
 **Why highlighting is worse:**
 
-Highlighting is **passive selection**, not **active processing**. Your hand moves, but your brain doesn't build a model. Worse, it creates an illusion of ownership â€” "I marked the important parts, therefore I know them." Multiple studies show highlighting has **zero or negative** correlation with learning outcomes.
+Highlighting is **passive selection**, not **active processing**. Your hand moves, but your brain doesn't build a model. Worse, it creates an illusion of ownership — "I marked the important parts, therefore I know them." Multiple studies show highlighting has **zero or negative** correlation with learning outcomes.
 
 **The replacement:**
 
@@ -128,7 +160,7 @@ Highlighting is **passive selection**, not **active processing**. Your hand move
 - Use **recall-based note-taking**: read a section, look away, summarize in your own words.
 - Never re-read as a study activity. Only re-read to verify gaps exposed by recall.
 
-**Try This:** Take a page you read yesterday. Without looking, write down everything you remember from it. Now check. Rate your accuracy from 1â€“5. Do this for five different pages. If your average is below 4, your current study methods are giving you illusions.
+**Try This:** Take a page you read yesterday. Without looking, write down everything you remember from it. Now check. Rate your accuracy from 1–5. Do this for five different pages. If your average is below 4, your current study methods are giving you illusions.
 
 ---
 
@@ -145,20 +177,20 @@ A **recall test** requires you to retrieve information from memory with minimal 
 - Requires the brain to **reconstruct** the information. This reconstruction strengthens the neural pathways.
 
 **Recognition test (easier, good for initial exposure):**
-- Multiple choice: "Which of these is the binary search time complexity? A) O(n) B) O(log n) C) O(nÂ²) D) O(1)"
+- Multiple choice: "Which of these is the binary search time complexity? A) O(n) B) O(log n) C) O(n²) D) O(1)"
 - True/false: "Binary search requires the array to be sorted. True/False."
 - Matching: Match algorithms to their time complexities.
 
 **Java code to illustrate the cognitive difference:**
 
 ```java
-// RECOGNITION (easy â€” your brain just needs to feel "I've seen this")
+// RECOGNITION (easy — your brain just needs to feel "I've seen this")
 // Which of these is a correct binary search implementation?
 // A) The one with while(left <= right) and mid = (left + right) / 2
 // B) The one with for(int i = 0; i < n; i++)
 // You can recognize A even if you can't write it from scratch.
 
-// RECALL (hard â€” your brain must reconstruct from scratch)
+// RECALL (hard — your brain must reconstruct from scratch)
 public int binarySearch(int[] arr, int target) {
     int left = 0;
     int right = arr.length - 1;
@@ -186,7 +218,7 @@ Recognition tests are useful for **initial exposure** and for building confidenc
 | Mastery verification | Free recall | Prove you can reconstruct the entire concept from scratch |
 | Long-term maintenance | Spaced free recall | Schedule reviews that force full reconstruction |
 
-**Try This:** Take a concept you think you know. First, write down everything about it from memory (free recall). Then look at a multiple-choice question on the same topic. Compare how you felt during each â€” the recognition probably felt easier, but the recall showed you your true gaps.
+**Try This:** Take a concept you think you know. First, write down everything about it from memory (free recall). Then look at a multiple-choice question on the same topic. Compare how you felt during each — the recognition probably felt easier, but the recall showed you your true gaps.
 
 ---
 
@@ -201,7 +233,7 @@ The **Einstellung effect** (German for "attitude" or "mental set") is the brain'
 ```java
 public class EinstellungEffect {
     // Given jugs of capacities A, B, C, measure exactly D.
-    // Participants who solved problems like (21, 127, 3 â†’ 100)
+    // Participants who solved problems like (21, 127, 3 → 100)
     // using formula (B - A - 2C) kept using that formula even
     // when a simpler solution existed.
     
@@ -216,7 +248,7 @@ public class EinstellungEffect {
 
 **Why it matters for programming:**
 
-The Einstellung effect is why experienced developers sometimes write worse code than beginners on certain problems. You've internalized patterns (singleton, factory, observer, etc.) and reach for them automatically â€” even when a simple function would do.
+The Einstellung effect is why experienced developers sometimes write worse code than beginners on certain problems. You've internalized patterns (singleton, factory, observer, etc.) and reach for them automatically — even when a simple function would do.
 
 **Real-world Java example:**
 
@@ -264,7 +296,7 @@ public List<Integer> getEvens(List<Integer> input) {
 4. **Solve backward.** Start from the desired output and work backward. This breaks the forward-chaining mental set.
 5. **Seek disconfirming evidence.** Explicitly ask: "What if my favorite approach doesn't work here? What would fail first?"
 
-The Einstellung effect never disappears â€” even grandmasters fall into it. The skill is recognizing it faster.
+The Einstellung effect never disappears — even grandmasters fall into it. The skill is recognizing it faster.
 
 **Try This:** Solve a LeetCode problem you've seen before using your usual approach. Now delete everything and solve it again using a completely different data structure or algorithm (if you used DP, try a greedy approach; if you used HashMap, try sorting). Compare the solutions.
 
@@ -274,15 +306,15 @@ The Einstellung effect never disappears â€” even grandmasters fall into it.
 
 **Answer:**
 
-**Knowledge transfer** is the ability to apply knowledge learned in one context to a different context. It's the holy grail of learning â€” what separates flexible expertise from brittle knowledge. There are two types:
+**Knowledge transfer** is the ability to apply knowledge learned in one context to a different context. It's the holy grail of learning — what separates flexible expertise from brittle knowledge. There are two types:
 
 **Near transfer:** Applying knowledge to a similar context.
-- Learn binary search in an array â†’ apply it to find a value in a rotated sorted array
-- Learn Java Streams â†’ apply it to Kotlin sequences
+- Learn binary search in an array → apply it to find a value in a rotated sorted array
+- Learn Java Streams → apply it to Kotlin sequences
 
 **Far transfer:** Applying knowledge to a very different context.
-- Learn binary search â†’ apply the same divide-and-conquer logic to debugging (bisect the codebase to find the buggy commit)
-- Learn recursion â†’ apply it to understanding directory tree traversal in your file system
+- Learn binary search → apply the same divide-and-conquer logic to debugging (bisect the codebase to find the buggy commit)
+- Learn recursion → apply it to understanding directory tree traversal in your file system
 
 **Why transfer is hard:**
 
@@ -342,9 +374,9 @@ public class FarTransfer {
 
 **How to improve transfer:**
 
-1. **Abstract the principle.** After solving a problem, write down the general principle in 1â€“2 sentences. Don't mention the specific domain.
+1. **Abstract the principle.** After solving a problem, write down the general principle in 1–2 sentences. Don't mention the specific domain.
 2. **Generate your own examples.** Come up with 3 different contexts where the same principle applies. The act of generation builds flexible mental models.
-3. **Varied practice.** Solve the same type of problem in different domains â€” DSA, system design, debugging, project management.
+3. **Varied practice.** Solve the same type of problem in different domains — DSA, system design, debugging, project management.
 4. **Explanatory questioning.** Ask "why does this work?" and "when would this NOT work?" repeatedly.
 5. **Contrasting cases.** Compare two solutions to the same problem and identify the common deep structure beneath their surface differences.
 
@@ -360,7 +392,7 @@ public class FarTransfer {
 
 **Why it happens:**
 
-Your brain doesn't instantly reallocate cognitive resources. The previous task's goals, context, and emotional state persist in working memory. Each switch costs not just the time of the switch itself (which is small â€” a few seconds) but the **resumption cost** (minutes to fully re-engage).
+Your brain doesn't instantly reallocate cognitive resources. The previous task's goals, context, and emotional state persist in working memory. Each switch costs not just the time of the switch itself (which is small — a few seconds) but the **resumption cost** (minutes to fully re-engage).
 
 **Java analogy:**
 
@@ -370,7 +402,7 @@ public class AttentionResidueSimulation {
     // Scenario: Student checks Instagram while studying
     
     public static void studySession() {
-        // CODE REVIEW (Task A) â€” high complexity
+        // CODE REVIEW (Task A) — high complexity
         // Student is deep in understanding merge sort
         String[] code = {"int mid = left + (right - left) / 2;",
                          "mergeSort(arr, left, mid);",
@@ -382,9 +414,9 @@ public class AttentionResidueSimulation {
         // ATTENTION RESIDUE trigger: Switch to Instagram
         // New mental state: {photo, like count, comment, notification...}
         
-        // Return to studying â€” ATTENTION RESIDUE persists
+        // Return to studying — ATTENTION RESIDUE persists
         // Working memory state: {left, right, mid, recursion stack, 
-        //                       photo, like count, comment, notification} â† LOADED
+        //                       photo, like count, comment, notification} ← LOADED
         
         // Time to re-establish previous context: 15-20 minutes
         // Quality of work during that time: 50-70% of normal
@@ -429,7 +461,7 @@ public class PomodoroWithContextSwitchManagement {
             logProgress(taskName, result);
             
             // Transition ritual: stand up, stretch, deep breath
-            System.out.println("Transition ritual: stand, stretch, breathe â†’ clean slate");
+            System.out.println("Transition ritual: stand, stretch, breathe → clean slate");
             
             return result;
         }
@@ -450,7 +482,7 @@ public class PomodoroWithContextSwitchManagement {
 4. **Digital boundaries.** Close all tabs and apps related to Task A before starting Task B. Visual cues maintain residue.
 5. **The 2-minute capture.** Before switching, spend 2 minutes writing where you left off and what to do next. Clears closure-dependent residue.
 
-**Try This:** For one day, whenever you switch tasks, do a "clean break" â€” write one sentence about where you left off and one sentence about what comes next. Then wait 60 seconds before starting the new task. Compare your focus quality to a normal day.
+**Try This:** For one day, whenever you switch tasks, do a "clean break" — write one sentence about where you left off and one sentence about what comes next. Then wait 60 seconds before starting the new task. Compare your focus quality to a normal day.
 
 ---
 
@@ -458,13 +490,26 @@ public class PomodoroWithContextSwitchManagement {
 
 **Answer:**
 
-The relationship between arousal (stress, anxiety, excitement) and performance follows the **Yerkes-Dodson law** â€” an inverted-U curve. Moderate arousal produces peak performance; too little makes you bored and unfocused; too much makes you anxious and impaired.
+The relationship between arousal (stress, anxiety, excitement) and performance follows the **Yerkes-Dodson law** — an inverted-U curve. Moderate arousal produces peak performance; too little makes you bored and unfocused; too much makes you anxious and impaired.
+
+```mermaid
+flowchart TD
+    YD[Yerkes-Dodson Law] --> Low[Low Arousal: Bored]
+    YD --> Opt[Moderate Arousal: PEAK]
+    YD --> High[High Arousal: Anxious]
+    Low --> LP[Low Performance<br/>Unfocused, distracted]
+    Opt --> PP[Optimal Performance<br/>Focused, alert]
+    High --> HP[Low Performance<br/>Overwhelmed, impaired]
+    PP --> Match[Match task type]
+    Match --> S[Simple / well-practiced<br/>tolerates higher arousal]
+    Match --> C[Complex / novel<br/>needs lower arousal]
+```
 
 **The Yerkes-Dodson curve:**
 
 ```
 Performance
-    â†‘
+    ↑
     |              .
     |           .     .
     |         .         .
@@ -472,7 +517,7 @@ Performance
     |     .                 .
     |   .                     .
     | .                         .
-    +--------------------------------â†’ Arousal
+    +--------------------------------→ Arousal
     Bored    Optimal     Overwhelmed
 ```
 
@@ -509,18 +554,18 @@ public class YerkesDodsonLaw {
         // A coding interview (MODERATE complexity if prepared)
         double interviewArousal = 0.7;  // Nerves are helpful
         double interviewPerf = performance(interviewArousal, TaskComplexity.MODERATE);
-        // Result: ~0.98 â€” near peak
+        // Result: ~0.98 — near peak
         
         // Learning a new framework (COMPLEX)
         double learningArousal = 0.8;  // Too anxious to absorb
         double learningPerf = performance(learningArousal, TaskComplexity.COMPLEX);
-        // Result: ~0.68 â€” impaired
+        // Result: ~0.68 — impaired
         
         // Solution: Reduce arousal before complex learning
         // Deep breathing, walk, lower stakes framing
         double calmerArousal = 0.4;
         double calmerPerf = performance(calmerArousal, TaskComplexity.COMPLEX);
-        // Result: ~1.0 â€” peak
+        // Result: ~1.0 — peak
     }
 }
 ```
@@ -531,10 +576,10 @@ public class YerkesDodsonLaw {
 |-----------|---------|----------|
 | Before a coding interview | Too anxious (high arousal) | Power pose, slow breathing (4-4-8 pattern), reframe as "detective solving a puzzle" |
 | Before studying a hard topic | Too relaxed (low arousal) | Set a timer, stand up, create mild pressure with a commitment |
-| After a bad performance review | Shame â†’ high arousal â†’ can't learn | Walk first, let the amygdala settle, then review systematically |
+| After a bad performance review | Shame → high arousal → can't learn | Walk first, let the amygdala settle, then review systematically |
 | Before a creative session | Need low arousal | Open-ended time, no deadline, ambient music, comfortable space |
 
-**Try This:** Before your next study session, rate your arousal from 1 (asleep) to 10 (panicking). Identify the task complexity. If your arousal is far from optimal, spend 5 minutes adjusting it â€” either calming down (deep breathing) or ramping up (timer, stand up, caffeine). Note whether the session goes better than usual.
+**Try This:** Before your next study session, rate your arousal from 1 (asleep) to 10 (panicking). Identify the task complexity. If your arousal is far from optimal, spend 5 minutes adjusting it — either calming down (deep breathing) or ramping up (timer, stand up, caffeine). Note whether the session goes better than usual.
 
 ---
 
@@ -542,14 +587,33 @@ public class YerkesDodsonLaw {
 
 **Answer:**
 
-**Growth mindset**, coined by Carol Dweck, is the belief that intelligence and ability can be developed through effort, learning, and persistence. The opposite â€” **fixed mindset** â€” is the belief that intelligence is static and talent is innate.
+**Growth mindset**, coined by Carol Dweck, is the belief that intelligence and ability can be developed through effort, learning, and persistence. The opposite — **fixed mindset** — is the belief that intelligence is static and talent is innate.
+
+```mermaid
+mindmap
+  root((Mindset))
+    Fixed Mindset
+      Intelligence is static
+      Avoids challenges
+      Gives up easily
+      Effort is fruitless
+      Ignores feedback
+      Threatened by others' success
+    Growth Mindset
+      Intelligence can develop
+      Embraces challenges
+      Persists through obstacles
+      Effort is the path to mastery
+      Learns from criticism
+      Inspired by others' success
+```
 
 **Why it matters:**
 
 Mindset isn't just feel-good psychology. Dweck's research shows it affects:
-- **How you respond to failure:** Fixed mindset â†’ "I'm not good at this" (identity threat). Growth mindset â†’ "I need a better strategy" (process feedback).
-- **Whether you seek challenges:** Fixed mindset â†’ stick to what you're good at. Growth mindset â†’ explore the edge of competence.
-- **How you interpret effort:** Fixed mindset â†’ "If I have to try hard, I must not be talented." Growth mindset â†’ "Effort is how you grow."
+- **How you respond to failure:** Fixed mindset → "I'm not good at this" (identity threat). Growth mindset → "I need a better strategy" (process feedback).
+- **Whether you seek challenges:** Fixed mindset → stick to what you're good at. Growth mindset → explore the edge of competence.
+- **How you interpret effort:** Fixed mindset → "If I have to try hard, I must not be talented." Growth mindset → "Effort is how you grow."
 - **Brain activity:** Fixed mindset shows more activity in emotional centers after failure. Growth mindset shows more activity in learning and error-correction centers.
 
 **The false growth mindset trap:**
@@ -571,7 +635,7 @@ public class GrowthMindsetFramework {
         // FIXED MINDSET PRAISE (harmful)
         static Feedback fixedPraise(String task) {
             return new Feedback(false, "You're so smart at " + task + "!");
-            // Creates: "If I fail this, I'm not smart anymore" â†’ avoidance
+            // Creates: "If I fail this, I'm not smart anymore" → avoidance
         }
         
         // FALSE GROWTH MINDSET PRAISE (also harmful)
@@ -585,7 +649,7 @@ public class GrowthMindsetFramework {
             return new Feedback(true, 
                 "You used " + strategy + " on " + task + " and got " + result + 
                 ". Let's look at why it worked and where we can improve the strategy.");
-            // Creates: "Strategies produce outcomes â†’ I can change strategies" â†’ resilience
+            // Creates: "Strategies produce outcomes → I can change strategies" → resilience
         }
     }
     
@@ -595,8 +659,8 @@ public class GrowthMindsetFramework {
         String strategy = "State transition table + top-down memoization";
         boolean understood = false;
         
-        // Fixed reaction: "I'm just not a DP person" â†’ give up
-        // False growth: "I tried really hard on DP" â†’ no strategy change
+        // Fixed reaction: "I'm just not a DP person" → give up
+        // False growth: "I tried really hard on DP" → no strategy change
         // Real growth: "My strategy didn't work for this pattern. 
         //                Let me try the bottom-up approach and study 
         //                the knapsack sub-pattern specifically."
@@ -627,13 +691,13 @@ public class GrowthMindsetFramework {
 
 **Answer:**
 
-**Neuroplasticity** is your brain's ability to reorganize itself by forming new neural connections throughout life. It was once believed that the brain became fixed after childhood. We now know that every time you learn something, your brain physically changes â€” neurons grow new dendrites, strengthen synapses, and even generate new neurons (neurogenesis, in the hippocampus).
+**Neuroplasticity** is your brain's ability to reorganize itself by forming new neural connections throughout life. It was once believed that the brain became fixed after childhood. We now know that every time you learn something, your brain physically changes — neurons grow new dendrites, strengthen synapses, and even generate new neurons (neurogenesis, in the hippocampus).
 
 **Three key facts every learner must know:**
 
-1. **Your brain is a muscle, not a container.** Every time you struggle through a difficult concept, your brain builds structure. Learning isn't filling a bucket â€” it's building a tree.
+1. **Your brain is a muscle, not a container.** Every time you struggle through a difficult concept, your brain builds structure. Learning isn't filling a bucket — it's building a tree.
 2. **Myelin matters.** Repeated practice wraps axons in myelin, insulating them and speeding up signal transmission by up to 100x. This is why deliberate practice makes skills not just known, but automatic.
-3. **Use it or lose it.** Connections that aren't used are pruned (synaptic pruning). Your brain is constantly optimizing â€” strengthening what you use, eliminating what you don't.
+3. **Use it or lose it.** Connections that aren't used are pruned (synaptic pruning). Your brain is constantly optimizing — strengthening what you use, eliminating what you don't.
 
 **The Java analogy: Chunk formation**
 
@@ -675,7 +739,7 @@ public class NeuroplasticityDemo {
 
 **Neuroplasticity and recovery:**
 
-One of the most dramatic demonstrations of neuroplasticity comes from stroke recovery. Patients who lose function in one brain area can, through intensive practice, recruit neighboring areas to take over. The same principle applies to learning recovery â€” if you've struggled with math your whole life, your brain isn't "broken for math." It just hasn't developed the specific neural infrastructure yet.
+One of the most dramatic demonstrations of neuroplasticity comes from stroke recovery. Patients who lose function in one brain area can, through intensive practice, recruit neighboring areas to take over. The same principle applies to learning recovery — if you've struggled with math your whole life, your brain isn't "broken for math." It just hasn't developed the specific neural infrastructure yet.
 
 **Practical implications:**
 
@@ -684,17 +748,17 @@ One of the most dramatic demonstrations of neuroplasticity comes from stroke rec
 | "I'm not a math person" | Your math circuits are underdeveloped, not absent |
 | "I'm too old to learn programming" | Neuroplasticity continues into old age, though slower |
 | "I've always been bad at memorization" | Memory is a skill; your hippocampus can grow new neurons |
-| "I'll never understand recursion" | You haven't built the neural patterns yet â€” practice builds them |
+| "I'll never understand recursion" | You haven't built the neural patterns yet — practice builds them |
 
 **What optimizes neuroplasticity:**
 
-1. **Sleep** â€” synaptic pruning and consolidation happen during deep sleep. Without sleep, plasticity is severely impaired.
-2. **Attention** â€” neuroplastic change requires focused attention. Distracted practice doesn't rewire the brain.
-3. **Challenge** â€” mild difficulty signals "this is important, allocate resources." Too easy = no plasticity signal.
-4. **Repetition with variation** â€” repeating the same thing perfectly doesn't help. Repeating with slight variations builds robust patterns.
-5. **Emotional engagement** â€” curiosity, interest, and mild stress all promote BDNF (brain-derived neurotrophic factor), which is the fertilizer for neural growth.
+1. **Sleep** — synaptic pruning and consolidation happen during deep sleep. Without sleep, plasticity is severely impaired.
+2. **Attention** — neuroplastic change requires focused attention. Distracted practice doesn't rewire the brain.
+3. **Challenge** — mild difficulty signals "this is important, allocate resources." Too easy = no plasticity signal.
+4. **Repetition with variation** — repeating the same thing perfectly doesn't help. Repeating with slight variations builds robust patterns.
+5. **Emotional engagement** — curiosity, interest, and mild stress all promote BDNF (brain-derived neurotrophic factor), which is the fertilizer for neural growth.
 
-**Try This:** Pick one concept you've labeled yourself as "bad at." Commit to 20 minutes of deliberate practice on it every day for 2 weeks. Before starting, rate your understanding 1-10. After 2 weeks, rate it again. Track not just the rating but how the concept felt â€” did it change from "impossible" to "challenging but doable"? That's neuroplasticity in action.
+**Try This:** Pick one concept you've labeled yourself as "bad at." Commit to 20 minutes of deliberate practice on it every day for 2 weeks. Before starting, rate your understanding 1-10. After 2 weeks, rate it again. Track not just the rating but how the concept felt — did it change from "impossible" to "challenging but doable"? That's neuroplasticity in action.
 
 ---
 
@@ -702,11 +766,11 @@ One of the most dramatic demonstrations of neuroplasticity comes from stroke rec
 
 **Answer:**
 
-The **10,000-hour rule** (popularized by Malcolm Gladwell in *Outliers*) is a simplification of Ericsson's research â€” and it's mostly wrong as popularly understood. The truth is more nuanced and more empowering.
+The **10,000-hour rule** (popularized by Malcolm Gladwell in *Outliers*) is a simplification of Ericsson's research — and it's mostly wrong as popularly understood. The truth is more nuanced and more empowering.
 
 **What the research actually says:**
 
-Ericsson studied violinists at the Berlin Academy of Music. By age 20, the best performers had accumulated about 10,000 hours of **deliberate practice**. The average performers had about 8,000. Future music teachers had about 4,000. The correlation between deliberate practice hours and performance was strong â€” but it wasn't 1:1, and 10,000 wasn't a magic threshold.
+Ericsson studied violinists at the Berlin Academy of Music. By age 20, the best performers had accumulated about 10,000 hours of **deliberate practice**. The average performers had about 8,000. Future music teachers had about 4,000. The correlation between deliberate practice hours and performance was strong — but it wasn't 1:1, and 10,000 wasn't a magic threshold.
 
 **Key corrections to the rule:**
 
@@ -729,16 +793,16 @@ public class DeliberatePracticeROI {
         
         if (deliberateHours <= 100) {
             return deliberateHours * 0.3;  // Rapid initial gains
-            // 100 hours â†’ 30 competence (novice to basic competence)
+            // 100 hours → 30 competence (novice to basic competence)
         } else if (deliberateHours <= 500) {
             return 30 + (deliberateHours - 100) * 0.1;
-            // 500 hours â†’ 70 competence (professionally functional)
+            // 500 hours → 70 competence (professionally functional)
         } else if (deliberateHours <= 2000) {
             return 70 + (deliberateHours - 500) * 0.01;
-            // 2000 hours â†’ 85 competence (solid professional)
+            // 2000 hours → 85 competence (solid professional)
         } else if (deliberateHours <= 10000) {
             return 85 + (deliberateHours - 2000) * 0.001;
-            // 10000 hours â†’ 93 competence (elite)
+            // 10000 hours → 93 competence (elite)
         } else {
             return 93 + (deliberateHours - 10000) * 0.0003;
             // Diminishing returns even at the highest levels
@@ -749,11 +813,11 @@ public class DeliberatePracticeROI {
     
     public static void main(String[] args) {
         System.out.println("Deliberate Practice ROI:");
-        System.out.println("100  hours â†’ " + competenceLevel(100)  + "/100 (feels impossible)");
-        System.out.println("500  hours â†’ " + competenceLevel(500)  + "/100 (can build real things)");
-        System.out.println("1000 hours â†’ " + competenceLevel(1000) + "/100 (solid professional)");
-        System.out.println("5000 hours â†’ " + competenceLevel(5000) + "/100 (expert at niche)");
-        System.out.println("10000 hours â†’ " + competenceLevel(10000) + "/100 (world-class)");
+        System.out.println("100  hours → " + competenceLevel(100)  + "/100 (feels impossible)");
+        System.out.println("500  hours → " + competenceLevel(500)  + "/100 (can build real things)");
+        System.out.println("1000 hours → " + competenceLevel(1000) + "/100 (solid professional)");
+        System.out.println("5000 hours → " + competenceLevel(5000) + "/100 (expert at niche)");
+        System.out.println("10000 hours → " + competenceLevel(10000) + "/100 (world-class)");
     }
 }
 ```
@@ -763,9 +827,9 @@ public class DeliberatePracticeROI {
 1. **10,000 hours isn't a requirement.** You can become employable in most technical skills in 300-500 hours of deliberate practice. The bar for "good enough" is much lower than "mastery."
 2. **Deliberate practice quality matters more than quantity.** 500 hours with a good coach is worth more than 5,000 hours doing the same easy problems.
 3. **Different domains have different curves.** Public speaking, writing, and many software skills have faster initial curves than, say, concert violin.
-4. **The rule's real value:** It kills the "talent myth." If even elite violinists need 10,000 hours, then your struggle with a new skill isn't a lack of talent â€” it's a lack of hours. Keep going.
+4. **The rule's real value:** It kills the "talent myth." If even elite violinists need 10,000 hours, then your struggle with a new skill isn't a lack of talent — it's a lack of hours. Keep going.
 
-**Try This:** Estimate how many hours of deliberate practice you've invested in your weakest technical skill. If it's under 100, your struggle isn't a talent problem â€” it's a volume problem. Commit to 100 hours of deliberate practice (1 hour/day for ~3 months) before reassessing your potential in that skill.
+**Try This:** Estimate how many hours of deliberate practice you've invested in your weakest technical skill. If it's under 100, your struggle isn't a talent problem — it's a volume problem. Commit to 100 hours of deliberate practice (1 hour/day for ~3 months) before reassessing your potential in that skill.
 
 ---
 
@@ -773,21 +837,21 @@ public class DeliberatePracticeROI {
 
 **Answer:**
 
-The **Pygmalion effect** (or Rosenthal effect) is the phenomenon where **higher expectations lead to higher performance**. When teachers, mentors, or even you yourself believe in your potential, that belief becomes a self-fulfilling prophecy. The opposite â€” the **Golem effect** â€” is when low expectations lead to low performance.
+The **Pygmalion effect** (or Rosenthal effect) is the phenomenon where **higher expectations lead to higher performance**. When teachers, mentors, or even you yourself believe in your potential, that belief becomes a self-fulfilling prophecy. The opposite — the **Golem effect** — is when low expectations lead to low performance.
 
 **The classic experiment (Rosenthal & Jacobson, 1968):**
 
-Researchers told teachers that certain students (randomly selected) were "academic bloomers" who would show remarkable growth. By the end of the year, those randomly selected students actually performed better â€” because teachers unconsciously gave them more attention, more challenging work, more feedback, and warmer encouragement.
+Researchers told teachers that certain students (randomly selected) were "academic bloomers" who would show remarkable growth. By the end of the year, those randomly selected students actually performed better — because teachers unconsciously gave them more attention, more challenging work, more feedback, and warmer encouragement.
 
 **How it works in practice:**
 
 ```
 Higher expectations
-    â†’ More opportunities and challenges offered
-    â†’ More feedback and support provided
-    â†’ More effort invested by the learner
-    â†’ Higher performance
-    â†’ Expectations confirmed (self-fulfilling cycle)
+    → More opportunities and challenges offered
+    → More feedback and support provided
+    → More effort invested by the learner
+    → Higher performance
+    → Expectations confirmed (self-fulfilling cycle)
 ```
 
 **Java code: The mentor feedback loop**
@@ -803,18 +867,18 @@ public class PygmalionEffect {
         
         String giveFeedback(String submission) {
             if (expectsGrowth) {
-                // Pygmalion: "You're capable of more â€” here's how"
+                // Pygmalion: "You're capable of more — here's how"
                 return "Good structure. Now let's look at the edge cases " +
-                       "you missed. I know you can handle this â€” try " +
+                       "you missed. I know you can handle this — try " +
                        "refactoring with the Strategy pattern and see " +
                        "if it handles null inputs better.";
-                // Student hears: "I'm capable â†’ let me try harder"
+                // Student hears: "I'm capable → let me try harder"
             } else {
                 // Golem: "This is adequate given your level"
                 return "Good effort. The basic structure works. " +
                        "Null handling could be better but this is " +
                        "fine for now.";
-                // Student hears: "This is my ceiling â†’ why try harder?"
+                // Student hears: "This is my ceiling → why try harder?"
             }
         }
     }
@@ -822,10 +886,10 @@ public class PygmalionEffect {
     // Self-Pygmalion: Internalizing high expectations
     public static class SelfExpectation {
         // Fixed mindset narrative: "I always choke in coding interviews"
-        // â†’ underperform â†’ "See, I told you" â†’ reinforces belief
+        // → underperform → "See, I told you" → reinforces belief
         
         // Growth narrative: "I haven't mastered coding interviews yet"
-        // â†’ practice systematically â†’ improve â†’ "My strategy worked" â†’ reinforces belief
+        // → practice systematically → improve → "My strategy worked" → reinforces belief
         
         public void beforeInterview() {
             String narrative = "I've prepared 200 problems. " +
@@ -834,7 +898,7 @@ public class PygmalionEffect {
                 "Struggling through is still progress.";
             // This expectation shifts your behavior:
             // You pause, think, draw diagrams, try approaches
-            // â€” all because you expect to eventually get it.
+            // — all because you expect to eventually get it.
         }
     }
 }
@@ -842,15 +906,15 @@ public class PygmalionEffect {
 
 **How to apply the Pygmalion effect to your learning:**
 
-1. **Set high but specific expectations.** "I will understand this concept well enough to explain it to someone else" â€” not "I'll try my best."
+1. **Set high but specific expectations.** "I will understand this concept well enough to explain it to someone else" — not "I'll try my best."
 2. **Surround yourself with people who expect more.** Join study groups, find mentors, participate in communities where excellence is the norm.
 3. **Watch your self-talk about others.** When you think "they're just naturally talented," you rob them of the Pygmalion benefit. Assume effort + strategy is the cause of their success.
 4. **Be a Pygmalion mentor.** When teaching someone, communicate genuine belief in their ability to learn the hard stuff. Your belief becomes their permission to struggle without shame.
-5. **Avoid labeling.** "You're so smart" (fixed) â†’ "You figured that out by persisting through the hard part" (growth + high expectation).
+5. **Avoid labeling.** "You're so smart" (fixed) → "You figured that out by persisting through the hard part" (growth + high expectation).
 
 **The shadow side:**
 
-The Pygmalion effect can be negative. If you believe you're bad at something, you unconsciously reduce effort, avoid challenges, and interpret struggle as confirmation. This is why the first step in learning any subject is checking your expectations â€” not just of the material, but of yourself.
+The Pygmalion effect can be negative. If you believe you're bad at something, you unconsciously reduce effort, avoid challenges, and interpret struggle as confirmation. This is why the first step in learning any subject is checking your expectations — not just of the material, but of yourself.
 
 **Try This:** Think of a topic you believe you're bad at. Write down exactly what you believe about your ability. Now ask: "If I believed I could master this with the right strategy, how would I approach today's study session differently?" Try that approach for one week and note what changes.
 
@@ -860,22 +924,22 @@ The Pygmalion effect can be negative. If you believe you're bad at something, yo
 
 **Answer:**
 
-Brain health is not optional for learning â€” it's the **infrastructure**. You can have perfect study techniques and a growth mindset, but if you're sleep-deprived, sedentary, and eating poorly, your brain cannot perform the physical work of learning. Neuroplasticity requires energy, raw materials, and cleanup time.
+Brain health is not optional for learning — it's the **infrastructure**. You can have perfect study techniques and a growth mindset, but if you're sleep-deprived, sedentary, and eating poorly, your brain cannot perform the physical work of learning. Neuroplasticity requires energy, raw materials, and cleanup time.
 
-**Sleep â€” the non-negotiable:**
+**Sleep — the non-negotiable:**
 
-Sleep is when your brain **consolidates memories, prunes irrelevant connections, and clears metabolic waste**. It's not passive rest â€” it's active maintenance.
+Sleep is when your brain **consolidates memories, prunes irrelevant connections, and clears metabolic waste**. It's not passive rest — it's active maintenance.
 
 | Sleep Stage | Learning Function |
 |-------------|-------------------|
-| NREM (deep sleep) | Strengthens declarative memories (facts, concepts, vocabulary). Synaptic pruning â€” weak connections trimmed, strong ones reinforced. |
+| NREM (deep sleep) | Strengthens declarative memories (facts, concepts, vocabulary). Synaptic pruning — weak connections trimmed, strong ones reinforced. |
 | REM sleep | Integrates new information with existing knowledge. Helps with creative problem-solving and pattern recognition. |
 | NREM stage 2 | Motor skill consolidation (typing, playing an instrument, coding muscle memory). |
 
 **What happens without enough sleep:**
 - Hippocampus (memory encoding) activity drops by up to 40%
 - Prefrontal cortex (executive function, focus) impaired
-- Amygdala (emotional reactivity) becomes 60% more sensitive â€” you get frustrated faster
+- Amygdala (emotional reactivity) becomes 60% more sensitive — you get frustrated faster
 - Glymphatic system can't clear beta-amyloid and metabolic waste
 
 **Java code: The well-rested vs. sleep-deprived learner:**
@@ -898,7 +962,7 @@ public class BrainHealth {
             r.emotionalState = "Focused, calm, persistent";
             
             // During deep sleep, the brain replays the day's learning:
-            // "replay(hippocampus â†’ neocortex);" â†’ long-term storage
+            // "replay(hippocampus → neocortex);" → long-term storage
         } else if (hours >= 5) {
             r.retentionRate = 0.60;        // Reduced consolidation
             r.problemSolvingScore = 0.65;  // Impaired executive function
@@ -916,7 +980,7 @@ public class BrainHealth {
 }
 ```
 
-**Exercise â€” the brain booster:**
+**Exercise — the brain booster:**
 
 Aerobic exercise increases **BDNF** (brain-derived neurotrophic factor), which is essentially fertilizer for neurons. It also improves blood flow, reduces inflammation, and stimulates neurogenesis in the hippocampus.
 
@@ -927,25 +991,25 @@ Aerobic exercise increases **BDNF** (brain-derived neurotrophic factor), which i
 | High-intensity intervals 2-3x/week | Largest BDNF spikes, improved cognitive flexibility |
 | Sitting > 60 min without movement | Reduced cerebral blood flow, decreased concentration |
 
-**Nutrition â€” the fuel mix:**
+**Nutrition — the fuel mix:**
 
 Your brain consumes about 20% of your body's energy despite being only 2% of your body weight. What you fuel it with matters.
 
 | Nutrient | Function | Sources |
 |----------|----------|---------|
-| Glucose | Primary brain fuel | Complex carbs (oats, quinoa, legumes) â€” steady release |
+| Glucose | Primary brain fuel | Complex carbs (oats, quinoa, legumes) — steady release |
 | Omega-3s (DHA) | Neuronal membrane structure, neuroplasticity | Fatty fish, walnuts, flaxseeds |
 | B vitamins | Energy metabolism, neurotransmitter synthesis | Leafy greens, eggs, legumes |
 | Antioxidants | Protect neurons from oxidative stress | Berries, dark chocolate, green tea |
-| Water | Everything â€” brain is 75% water | Just water |
+| Water | Everything — brain is 75% water | Just water |
 
 **Hydration effects on learning:**
 
 ```
-2% dehydration â†’ 
-    â†’ 10-15% reduction in concentration
-    â†’ Increased perceived difficulty of tasks
-    â†’ More mental fatigue during problem-solving
+2% dehydration → 
+    → 10-15% reduction in concentration
+    → Increased perceived difficulty of tasks
+    → More mental fatigue during problem-solving
 ```
 
 **The practical protocol:**
@@ -955,10 +1019,10 @@ public class BrainOptimizationProtocol {
     
     // MORNING
     void morningRoutine() {
-        // 1. Hydrate (500ml water â€” brain has been dehydrating for 8 hours)
+        // 1. Hydrate (500ml water — brain has been dehydrating for 8 hours)
         drinkWater(500);
         
-        // 2. Light movement (walk, stretch, yoga â€” wakes up the PFC)
+        // 2. Light movement (walk, stretch, yoga — wakes up the PFC)
         exercise(20, Intensity.LIGHT);
         
         // 3. Complex breakfast (oats + berries + eggs)
@@ -979,7 +1043,7 @@ public class BrainOptimizationProtocol {
         // 3. Hydrate (another 500ml)
         drinkWater(500);
         
-        // 4. Short nap or meditation (10-20 min max â€” boosts consolidation)
+        // 4. Short nap or meditation (10-20 min max — boosts consolidation)
         nap(15);
     }
     
@@ -988,7 +1052,7 @@ public class BrainOptimizationProtocol {
         // 1. Last heavy learning before 8 PM
         focusBlock(60, Task.NEW_CONCEPT);
         
-        // 2. Wind down â€” reduce blue light, no hard problems 1h before bed
+        // 2. Wind down — reduce blue light, no hard problems 1h before bed
         prepareForSleep();
         
         // 3. 7-9 hours of sleep (this is when today's learning becomes permanent)
@@ -1005,52 +1069,52 @@ public class BrainOptimizationProtocol {
 
 **Answer:**
 
-If you take only one framework from this chapter, it's the **Practice-Mindset-Performance Triangle**. These three dimensions aren't separate â€” they reinforce each other. The best learners work all three simultaneously.
+If you take only one framework from this chapter, it's the **Practice-Mindset-Performance Triangle**. These three dimensions aren't separate — they reinforce each other. The best learners work all three simultaneously.
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚              PRACTICE-MINDSET-PERFORMANCE            â”‚
-â”‚                      TRIANGLE                        â”‚
-â”‚                                                      â”‚
-â”‚               â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                    â”‚
-â”‚               â”‚                 â”‚                    â”‚
-â”‚               â”‚   DELIBERATE    â”‚                    â”‚
-â”‚               â”‚    PRACTICE     â”‚                    â”‚
-â”‚               â”‚                 â”‚                    â”‚
-â”‚               â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤                    â”‚
-â”‚               â”‚ â€¢ Specific goal â”‚                    â”‚
-â”‚               â”‚ â€¢ Full focus    â”‚                    â”‚
-â”‚               â”‚ â€¢ Feedback      â”‚                    â”‚
-â”‚               â”‚ â€¢ Edge of       â”‚                    â”‚
-â”‚               â”‚   ability       â”‚                    â”‚
-â”‚               â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜                    â”‚
-â”‚                        â”‚                             â”‚
-â”‚         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”              â”‚
-â”‚         â”‚              â”‚              â”‚              â”‚
-â”‚         â–¼              â–¼              â–¼              â”‚
-â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”     â”‚
-â”‚  â”‚  GROWTH    â”‚  â”‚  BRAIN     â”‚  â”‚  ENERGY    â”‚     â”‚
-â”‚  â”‚  MINDSET   â”‚  â”‚  HEALTH    â”‚  â”‚  MGMT      â”‚     â”‚
-â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤  â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤     â”‚
-â”‚  â”‚ â€¢ Process  â”‚  â”‚ â€¢ Sleep   â”‚  â”‚ â€¢ Arousal  â”‚     â”‚
-â”‚  â”‚   praise   â”‚  â”‚ â€¢ Exerciseâ”‚  â”‚   calibr.  â”‚     â”‚
-â”‚  â”‚ â€¢ Failure  â”‚  â”‚ â€¢ Nutritionâ”‚  â”‚ â€¢ Pomodoro â”‚     â”‚
-â”‚  â”‚   reframe  â”‚  â”‚ â€¢ Hydrate â”‚  â”‚ â€¢ Context  â”‚     â”‚
-â”‚  â”‚ â€¢ High     â”‚  â”‚           â”‚  â”‚   switch   â”‚     â”‚
-â”‚  â”‚   expect.  â”‚  â”‚           â”‚  â”‚   mgmt     â”‚     â”‚
-â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜     â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+┌─────────────────────────────────────────────────────┐
+│              PRACTICE-MINDSET-PERFORMANCE            │
+│                      TRIANGLE                        │
+│                                                      │
+│               ┌─────────────────┐                    │
+│               │                 │                    │
+│               │   DELIBERATE    │                    │
+│               │    PRACTICE     │                    │
+│               │                 │                    │
+│               ├─────────────────┤                    │
+│               │ • Specific goal │                    │
+│               │ • Full focus    │                    │
+│               │ • Feedback      │                    │
+│               │ • Edge of       │                    │
+│               │   ability       │                    │
+│               └────────┬────────┘                    │
+│                        │                             │
+│         ┌──────────────┼──────────────┐              │
+│         │              │              │              │
+│         ▼              ▼              ▼              │
+│  ┌────────────┐  ┌────────────┐  ┌────────────┐     │
+│  │  GROWTH    │  │  BRAIN     │  │  ENERGY    │     │
+│  │  MINDSET   │  │  HEALTH    │  │  MGMT      │     │
+│  ├────────────┤  ├────────────┤  ├────────────┤     │
+│  │ • Process  │  │ • Sleep   │  │ • Arousal  │     │
+│  │   praise   │  │ • Exercise│  │   calibr.  │     │
+│  │ • Failure  │  │ • Nutrition│  │ • Pomodoro │     │
+│  │   reframe  │  │ • Hydrate │  │ • Context  │     │
+│  │ • High     │  │           │  │   switch   │     │
+│  │   expect.  │  │           │  │   mgmt     │     │
+│  └────────────┘  └────────────┘  └────────────┘     │
+└─────────────────────────────────────────────────────┘
 ```
 
 **How the dimensions interact:**
 
 | Dimension | Interaction |
 |-----------|-------------|
-| **Growth Mindset â†’ Deliberate Practice** | If you believe your ability can grow, you seek the discomfort of deliberate practice instead of avoiding it. |
-| **Deliberate Practice â†’ Growth Mindset** | Seeing yourself improve through effort strengthens your belief in growth. Evidence beats affirmations. |
-| **Brain Health â†’ Deliberate Practice** | Sleep and nutrition determine whether your brain can sustain the focus that deliberate practice requires. |
-| **Growth Mindset â†’ Brain Health** | If you believe your brain can grow, you treat it better â€” more sleep, less burnout, more recovery. |
-| **Energy Management â†’ Both** | You can't practice deliberately or maintain a growth mindset when exhausted. Energy is the meta-resource. |
+| **Growth Mindset → Deliberate Practice** | If you believe your ability can grow, you seek the discomfort of deliberate practice instead of avoiding it. |
+| **Deliberate Practice → Growth Mindset** | Seeing yourself improve through effort strengthens your belief in growth. Evidence beats affirmations. |
+| **Brain Health → Deliberate Practice** | Sleep and nutrition determine whether your brain can sustain the focus that deliberate practice requires. |
+| **Growth Mindset → Brain Health** | If you believe your brain can grow, you treat it better — more sleep, less burnout, more recovery. |
+| **Energy Management → Both** | You can't practice deliberately or maintain a growth mindset when exhausted. Energy is the meta-resource. |
 
 **Your personal audit:**
 
@@ -1088,14 +1152,14 @@ public class PracticeMindsetPerformanceTriangle {
                 dimension = "Brain Health";
                 score = 5;
                 weakestLink = "Average sleep is only 6 hours";
-                nextAction = "Fix bedtime to get 7.5 hours for 2 weeks â€” nothing changes if sleep doesn't";
+                nextAction = "Fix bedtime to get 7.5 hours for 2 weeks — nothing changes if sleep doesn't";
             }},
             
             // ENERGY MANAGEMENT
             new LearningAudit() {{
                 dimension = "Energy Management";
                 score = 7;
-                weakestLink = "No structured breaks â€” study until exhausted";
+                weakestLink = "No structured breaks — study until exhausted";
                 nextAction = "Pomodoro 25/5 for all sessions this week";
             }}
         };
@@ -1117,7 +1181,7 @@ public class PracticeMindsetPerformanceTriangle {
         }
         
         System.out.println("\n=== LOWEST SCORE: " + weakestDimension + " ===");
-        System.out.println("Fix this first â€” it's holding everything else back.");
+        System.out.println("Fix this first — it's holding everything else back.");
     }
 }
 ```
@@ -1126,7 +1190,7 @@ public class PracticeMindsetPerformanceTriangle {
 
 > **Learning is not a talent. It's a set of behaviors, beliefs, and biological conditions that you can optimize. The framework above is your control panel. Run the audit. Find your weakest dimension. Fix it. Repeat.**
 
-**Try This:** Copy the `runAudit()` method above mentally. Rate yourself 1-10 on each dimension. Identify your lowest score. For the next 2 weeks, take ONE action in only that dimension. Track whether your learning effectiveness improves â€” not just the dimension score, but how you feel across all four. The triangle is interconnected: fixing sleep (brain health) often improves mindset and practice quality without directly targeting them.
+**Try This:** Copy the `runAudit()` method above mentally. Rate yourself 1-10 on each dimension. Identify your lowest score. For the next 2 weeks, take ONE action in only that dimension. Track whether your learning effectiveness improves — not just the dimension score, but how you feel across all four. The triangle is interconnected: fixing sleep (brain health) often improves mindset and practice quality without directly targeting them.
 
 ---
 
@@ -1138,7 +1202,7 @@ a) Specific goal  b) Immediate feedback  c) Passive repetition  d) Working at th
 
 **2. Why does re-reading create an illusion of competence?**
 a) It forces your brain to reconstruct information from scratch  b) The second read feels fluent, so your brain mistakes familiarity for understanding  c) It activates the same neural pathways as teaching  d) It produces measurable gains in long-term retention
-**Answer:** B. The fluency heuristic makes your brain interpret "easy to process" as "well understood." Re-reading never forces retrieval â€” the actual mechanism that strengthens neural pathways.
+**Answer:** B. The fluency heuristic makes your brain interpret "easy to process" as "well understood." Re-reading never forces retrieval — the actual mechanism that strengthens neural pathways.
 
 **3. What is the key difference between a recall test and a recognition test?**
 a) Recall tests are always multiple-choice  b) Recognition tests require reconstruction from memory  c) Recall tests require retrieval with minimal cues, while recognition tests only require identifying whether you've seen something before  d) Recognition tests produce better long-term retention
@@ -1146,7 +1210,7 @@ a) Recall tests are always multiple-choice  b) Recognition tests require reconst
 
 **4. A developer keeps applying the Strategy pattern to every problem even when a simple function would suffice. What cognitive bias are they experiencing?**
 a) Confirmation bias  b) Dunning-Kruger effect  c) Einstellung effect (mental set)  d) Availability heuristic
-**Answer:** C. The Einstellung effect is the brain's tendency to reach for a familiar solution even when a better one exists â€” "when you have a hammer, everything looks like a nail."
+**Answer:** C. The Einstellung effect is the brain's tendency to reach for a familiar solution even when a better one exists — "when you have a hammer, everything looks like a nail."
 
 **5. Which technique best improves far transfer of knowledge?**
 a) Re-reading the same examples multiple times  b) Abstracting the general principle and generating your own examples in different domains  c) Using only multiple-choice practice tests  d) Focusing on a single domain until you achieve perfect recall
@@ -1161,15 +1225,15 @@ a) High arousal (excited, slightly anxious)  b) Very high arousal (intense press
 **Answer:** C. Complex and novel tasks require lower arousal for optimal performance. High arousal impairs learning complex material, while it helps with simple or well-practiced tasks.
 
 **8. Which statement describes a genuine growth mindset?**
-a) "I tried my best and that's what matters"  b) "I failed because I'm not smart enough for this"  c) "My strategy didn't work here â€” let me try a different approach and reflect on what went wrong"  d) "I can do anything I set my mind to, no matter the constraints"
+a) "I tried my best and that's what matters"  b) "I failed because I'm not smart enough for this"  c) "My strategy didn't work here — let me try a different approach and reflect on what went wrong"  d) "I can do anything I set my mind to, no matter the constraints"
 **Answer:** C. Real growth mindset focuses on changing strategies, not just increasing effort. Option A is false growth mindset (effort-only praise), B is fixed mindset, and D ignores real constraints.
 
 **9. What biological process makes deliberate practice physically change the brain over time?**
-a) Neurogenesis in the prefrontal cortex only  b) Myelination â€” repeated practice wraps axons in myelin, speeding signal transmission by up to 100x  c) Expansion of the skull to accommodate new neurons  d) Increased blood flow that temporarily improves recall
+a) Neurogenesis in the prefrontal cortex only  b) Myelination — repeated practice wraps axons in myelin, speeding signal transmission by up to 100x  c) Expansion of the skull to accommodate new neurons  d) Increased blood flow that temporarily improves recall
 **Answer:** B. Myelination insulates neural axons, dramatically speeding up signal transmission. This is the physical basis for why repeated deliberate practice makes skills automatic, freeing working memory for higher-level thinking.
 
 **10. What is the most important correction to the 10,000-hour rule?**
-a) You actually need 20,000 hours for true mastery  b) Only deliberate practice counts â€” 10,000 hours of casual practice doesn't produce expertise  c) The rule only applies to music and sports  d) 10,000 hours guarantees elite performance regardless of practice quality
+a) You actually need 20,000 hours for true mastery  b) Only deliberate practice counts — 10,000 hours of casual practice doesn't produce expertise  c) The rule only applies to music and sports  d) 10,000 hours guarantees elite performance regardless of practice quality
 **Answer:** B. The 10,000-hour finding was based on deliberate practice, not any practice. The quality of deliberate practice matters far more than the raw quantity, and you can become professionally competent in most skills with 500-1,000 hours of deliberate practice.
 
 **11. How does aerobic exercise directly enhance learning?**
@@ -1177,8 +1241,8 @@ a) It builds muscle that protects the brain during impact  b) It increases BDNF 
 **Answer:** B. Aerobic exercise boosts BDNF, which supports neuronal health, neurogenesis in the hippocampus, and synaptic plasticity. A 20-minute walk before studying can increase BDNF by 30-50%.
 
 **12. A student is stuck on a recursion problem and feels frustrated. Which reframe best applies the growth mindset?**
-a) "I'm just not a recursion person"  b) "Recursion is useless anyway, I'll use iteration"  c) "I haven't mastered recursion yet â€” I need to try a different strategy, like tracing the call stack on paper"  d) "I should take a break and come back when I feel smarter"
-**Answer:** C. The word "yet" opens the possibility of change, and pivoting to a specific strategy (tracing the call stack) is the hallmark of growth-mindset behavior â€” treating difficulty as a signal to change strategies, not as an identity verdict.
+a) "I'm just not a recursion person"  b) "Recursion is useless anyway, I'll use iteration"  c) "I haven't mastered recursion yet — I need to try a different strategy, like tracing the call stack on paper"  d) "I should take a break and come back when I feel smarter"
+**Answer:** C. The word "yet" opens the possibility of change, and pivoting to a specific strategy (tracing the call stack) is the hallmark of growth-mindset behavior — treating difficulty as a signal to change strategies, not as an identity verdict.
 
 ---
 
@@ -1187,7 +1251,7 @@ a) "I'm just not a recursion person"  b) "Recursion is useless anyway, I'll use 
 - **Deliberate practice** is the only practice that reliably produces expertise: specific goal + full focus + immediate feedback + edge of ability. Naive practice (repetition without intent) is a waste of time.
 - **Illusions of competence** (re-reading, highlighting, fluency) feel productive but produce no durable learning. Replace them with active recall and production-based testing.
 - **The Einstellung effect** (mental set) traps you in familiar patterns. Break it with interleaving, deliberate reset, and explaining to beginners.
-- **Growth mindset** isn't about praising effort â€” it's about believing strategies can improve and seeking evidence that challenges your current approach.
+- **Growth mindset** isn't about praising effort — it's about believing strategies can improve and seeking evidence that challenges your current approach.
 - **Brain health is the infrastructure** for learning. Sleep (7-9 hours), exercise (20-30 min daily), nutrition (stable glucose, omega-3s, hydration), and stress management directly determine your brain's ability to change.
 
 ---
@@ -1208,7 +1272,7 @@ Take a topic you've studied recently. Without looking at any notes, write down e
 
 ### Exercise 3: Einstellung Break
 
-Pick a LeetCode problem you've solved before. Solve it using your usual approach. Now solve it again using a **completely different** technique (HashMap â†’ sorting, DP â†’ greedy, BFS â†’ iterative). Reflect on which approach felt more natural and which was actually better.
+Pick a LeetCode problem you've solved before. Solve it using your usual approach. Now solve it again using a **completely different** technique (HashMap → sorting, DP → greedy, BFS → iterative). Reflect on which approach felt more natural and which was actually better.
 
 ### Exercise 4: Growth Mindset Journaling
 
@@ -1236,8 +1300,8 @@ Run the full Practice-Mindset-Performance Triangle audit from Q20. Score yoursel
 
 ## Further Reading
 
-- **Chapter 1: How Your Brain Learns** â€” Focused & diffuse modes, chunking, declarative vs. procedural knowledge, and why sleep is non-negotiable for memory consolidation
-- **Chapter 3: Active Recall & Spaced Repetition** â€” Turn the recall test concept from this chapter into a complete spaced-repetition system with Anki
+- **Chapter 1: How Your Brain Learns** — Focused & diffuse modes, chunking, declarative vs. procedural knowledge, and why sleep is non-negotiable for memory consolidation
+- **Chapter 3: Active Recall & Spaced Repetition** — Turn the recall test concept from this chapter into a complete spaced-repetition system with Anki
 
 Cited research:
 - Ericsson, K. A. et al. (1993). The role of deliberate practice in the acquisition of expert performance.

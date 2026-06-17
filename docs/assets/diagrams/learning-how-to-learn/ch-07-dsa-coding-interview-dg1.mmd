@@ -1,0 +1,7 @@
+﻿flowchart LR
+    P1[Pass 1: Understand & Explore<br/>3-5 min, no code] --> P2[Pass 2: Plan & Verify<br/>High-level pseudocode]
+    P2 --> P3[Pass 3: Code & Test<br/>Clean implementation]
+    P3 -->|Passes tests| Done[Done]
+    P3 -->|Edge case fails| P2
+    P1 -->|Unclear| Ask[Ask clarifying questions]
+    Ask --> P1

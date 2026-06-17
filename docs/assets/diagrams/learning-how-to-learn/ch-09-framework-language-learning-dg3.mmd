@@ -1,0 +1,13 @@
+﻿flowchart TD
+    subgraph Trap[Tutorial Trap Cycle]
+        T1[Watch 6-hour course] --> T2[Follow along in IDE]
+        T2 --> T3[Feel productive<br/>dopamine hit]
+        T3 --> T4[Cannot build from scratch]
+        T4 --> T1
+    end
+    subgraph Cure[The Cure]
+        C1[Code-Along: pause<br/>every 5-10 min] --> C2[Close tutorial<br/>after 20-30 min]
+        C2 --> C3[Rebuild from memory<br/>in blank file]
+        C3 --> C4[Extend with your<br/>own feature]
+    end
+    Trap -.-> Cure

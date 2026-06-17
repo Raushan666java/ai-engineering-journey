@@ -1,0 +1,10 @@
+﻿flowchart LR
+    subgraph Before[Without Habit Stacking]
+        A1[Morning Coffee] --> A2[Remember to study]
+        A2 --> A3[Need willpower to start]
+    end
+    subgraph After[With Habit Stacking]
+        B1[Morning Coffee] --> B2[After coffee, open Anki]
+        B2 --> B3[Automatic trigger]
+    end
+    Before -.->|Add explicit rule| After

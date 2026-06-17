@@ -1,0 +1,11 @@
+﻿flowchart LR
+    subgraph Passive[Passive Review]
+        A[Reread notes] --> B[Feels familiar]
+        B --> C[~20% retention after 1 week]
+    end
+    subgraph Active[Active Recall]
+        D[Retrieve from memory] --> E[Feels effortful]
+        E --> F[~70% retention after 1 week]
+    end
+    C --> G[Illusion of competence]
+    F --> H[Real learning]

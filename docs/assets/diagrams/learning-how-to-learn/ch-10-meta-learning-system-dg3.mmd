@@ -1,0 +1,18 @@
+﻿flowchart LR
+    subgraph Capture[1. Capture]
+        C1[Layer 1: One-line summary] --> C2[Layer 2: Bold formulas]
+        C2 --> C3[Layer 3: Highlight top takeaway]
+        C3 --> C4[Layer 4: Remix into cheat sheets]
+    end
+    subgraph Connect[2. Connect]
+        C5[Link concepts across chapters] --> C6[OS page replacement]
+        C6 --> C7[COA cache mapping]
+        C7 --> C8[DBMS effective access time]
+    end
+    subgraph Create[3. Create]
+        C9[Atomic notes per topic] --> C10[OS/CPU-Scheduling/Gantt-Charts]
+    end
+    subgraph Review[4. Review]
+        C11[Anki cards from notes] --> C12[SM-2: 1-3-7-21-90 days]
+    end
+    Capture --> Connect --> Create --> Review

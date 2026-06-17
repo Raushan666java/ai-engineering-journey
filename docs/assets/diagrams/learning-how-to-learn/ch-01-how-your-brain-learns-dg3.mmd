@@ -1,0 +1,18 @@
+﻿sequenceDiagram
+    participant Day as Day: Learning
+    participant Hip as Hippocampus
+    participant Neo as Neocortex
+    Day->>Hip: Encode new information
+    Note over Hip: Fragile short-term buffer
+    Day->>Sleep: Night: sleep begins
+    loop 4-5 cycles per night
+        Sleep->>Hip: Replay recent memories
+        Hip->>Neo: Transfer for consolidation
+        alt N3 Deep Sleep
+            Neo->>Neo: Facts, concepts, formulas
+        else REM Sleep
+            Neo->>Neo: Procedural skills, insights
+        end
+    end
+    Sleep->>Day: Morning: recall strengthened
+    Day->>Neo: Retrieve consolidated memories

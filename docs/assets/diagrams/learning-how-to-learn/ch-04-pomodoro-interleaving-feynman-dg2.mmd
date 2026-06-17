@@ -1,0 +1,11 @@
+﻿flowchart TD
+    subgraph Blocked[Blocked Practice]
+        S1[Session 1: Bubble Sort] -->|20 problems| B1[89% during practice]
+        S2[Session 2: Merge Sort] -->|20 problems| B2
+        S3[Session 3: Quick Sort] -->|20 problems| B3
+        B1 & B2 & B3 --> BTest[20% on final test]
+    end
+    subgraph Interleaved[Interleaved Practice]
+        I1[Session: Mix all sorts] -->|Mixed problems| I2[60% during practice]
+        I2 --> ITest[43% on final test]
+    end

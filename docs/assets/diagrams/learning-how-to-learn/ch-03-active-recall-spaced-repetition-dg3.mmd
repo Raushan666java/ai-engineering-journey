@@ -1,0 +1,12 @@
+﻿flowchart TD
+    Review[Review Card] --> Q{Self-rate Quality<br/>0 = blackout<br/>1 = wrong<br/>2 = wrong but recalled<br/>3 = hard<br/>4 = good<br/>5 = easy}
+    Q -->|0-2: Forgot| Reset[Reset to 0 reps<br/>Interval = 1 day]
+    Q -->|3-5: Remembered| Advance[Advance repetition]
+    Advance --> R{Repetition #}
+    R -->|1st| D1[Interval = 1 day]
+    R -->|2nd| D2[Interval = 6 days]
+    R -->|3+| D3[Interval = previous x EF]
+    Reset --> Schedule[Next review scheduled]
+    D1 --> Schedule
+    D2 --> Schedule
+    D3 --> Schedule

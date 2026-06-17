@@ -1,0 +1,15 @@
+﻿sequenceDiagram
+    participant P1 as Pomodoro 1: Feynman Gap
+    participant B1 as Break: Organize
+    participant P2 as Pomodoro 2: Interleaved Solve
+    participant B2 as Break: Walk
+    participant P3 as Pomodoro 3: Deep Gap Study
+    participant B3 as Break: Review
+    participant P4 as Pomodoro 4: Mixed Review
+    P1->>B1: Mark gaps in study queue
+    B1->>P2: Focus on gap topics
+    P2->>B2: Mental reset
+    B2->>P3: Return to gaps with fresh eyes
+    P3->>B3: Consolidate learnings
+    B3->>P4: Solve 2 problems from different patterns
+    Note over P1,P4: Pomodoro provides structure<br/>Interleaving mixes content<br/>Feynman checks depth

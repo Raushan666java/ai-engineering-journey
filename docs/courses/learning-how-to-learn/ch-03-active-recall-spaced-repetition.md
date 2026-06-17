@@ -1,8 +1,8 @@
-﻿# Chapter 3: Active Recall & Spaced Repetition
+# Chapter 3: Active Recall & Spaced Repetition
 
 > **Retrieval is learning. Every time you pull information from memory, you deepen the neural trace.**
 
-Passive review â€” rereading notes, highlighting, watching videos again â€” feels productive but produces almost no long-term retention. The science is unambiguous: **active recall** (forcing your brain to retrieve information) is the single most effective learning technique known to cognitive psychology. Combined with **spaced repetition** (revisiting information at increasing intervals), it forms the one-two punch of durable learning.
+Passive review — rereading notes, highlighting, watching videos again — feels productive but produces almost no long-term retention. The science is unambiguous: **active recall** (forcing your brain to retrieve information) is the single most effective learning technique known to cognitive psychology. Combined with **spaced repetition** (revisiting information at increasing intervals), it forms the one-two punch of durable learning.
 
 This chapter shows you how to use the **blank page method**, how **Anki** implements spaced repetition algorithmically, and how to design cards that make recall inevitable.
 
@@ -10,7 +10,7 @@ This chapter shows you how to use the **blank page method**, how **Anki** implem
 
 ## Learning Objectives
 
-![Active Recall & Spaced Repetition](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-03.png)
+![Active Recall & Spaced Repetition](../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition.png)
 
 After completing this chapter, you will be able to:
 
@@ -30,19 +30,33 @@ After completing this chapter, you will be able to:
 
 Active recall is the practice of **retrieving information from memory without looking at the source material**. Instead of rereading a textbook, you close the book and try to explain the concept from scratch. Instead of rewatching a lecture, you pause and write down everything you remember.
 
+```mermaid
+flowchart LR
+    subgraph Passive[Passive Review]
+        A[Reread notes] --> B[Feels familiar]
+        B --> C[~20% retention after 1 week]
+    end
+    subgraph Active[Active Recall]
+        D[Retrieve from memory] --> E[Feels effortful]
+        E --> F[~70% retention after 1 week]
+    end
+    C --> G[Illusion of competence]
+    F --> H[Real learning]
+```
+
 **Why it beats passive review:**
 
 | Factor | Passive Review (Rereading) | Active Recall (Retrieval) |
 |--------|---------------------------|--------------------------|
-| **Brain state** | Familiarity â€” feels easy, brain is idle | Effortful retrieval â€” brain works hard |
-| **Retention after 1 week** | ~10â€“20% | ~50â€“70% |
+| **Brain state** | Familiarity — feels easy, brain is idle | Effortful retrieval — brain works hard |
+| **Retention after 1 week** | ~10–20% | ~50–70% |
 | **Transfer to novel problems** | Low | High |
-| **Metacognitive accuracy** | Poor â€” you think you know | Good â€” you see gaps clearly |
+| **Metacognitive accuracy** | Poor — you think you know | Good — you see gaps clearly |
 | **Neuroplastic effect** | Minimal | Strengthens synaptic connections |
 
-**The mechanism:** Every time you retrieve a memory, your brain **reconsolidates** it â€” the neural trace is strengthened and linked to more contextual cues. This is why a single active recall session can be worth more than five rereads.
+**The mechanism:** Every time you retrieve a memory, your brain **reconsolidates** it — the neural trace is strengthened and linked to more contextual cues. This is why a single active recall session can be worth more than five rereads.
 
-**Java example â€” simulating retention curves:**
+**Java example — simulating retention curves:**
 
 ```java
 import java.util.Random;
@@ -81,19 +95,19 @@ public class ActiveRecallDemo {
 The blank page method is active recall distilled to its simplest form:
 
 1. **Open a blank document** (or a blank sheet of paper).
-2. **Write a topic at the top** â€” e.g., "How does HashMap work in Java?"
+2. **Write a topic at the top** — e.g., "How does HashMap work in Java?"
 3. **Write everything you know** about that topic from memory.
-4. **Stop when you hit a wall** â€” when you can't remember the next point.
+4. **Stop when you hit a wall** — when you can't remember the next point.
 5. **Check your source material** and identify exactly what you missed.
 6. **Repeat** until you can write a complete, accurate explanation without gaps.
 
 **Why it works:**
 
-- **Exposes illusions of competence.** Rereading feels like knowing. A blank page does not lie â€” you either know it or you don't.
+- **Exposes illusions of competence.** Rereading feels like knowing. A blank page does not lie — you either know it or you don't.
 - **Forces complete recall.** Partial understanding becomes visible immediately.
 - **Builds schema coherence.** Writing forces you to organize knowledge into logical structure, not just recognize fragments.
 
-**Java example â€” blank page diagnostic tool:**
+**Java example — blank page diagnostic tool:**
 
 ```java
 import java.util.*;
@@ -164,12 +178,12 @@ public class BlankPageDiagnostic {
 |--------|-------------|--------|
 | **Cues provided** | Yes (multiple choice, matching) | No (blank page, closed book) |
 | **Brain regions** | Perirhinal cortex (familiarity) | Hippocampus (recollection) |
-| **Difficulty** | Easy â€” feels fluent | Hard â€” feels effortful |
+| **Difficulty** | Easy — feels fluent | Hard — feels effortful |
 | **Retention benefit** | Low | High |
 | **Real-world example** | "Which of these is a HashMap method?" | "Write all HashMap methods from memory" |
 | **Misleading sensation** | "I knew that!" (you recognized it) | "I don't know this" (painful but productive) |
 
-**The recognition trap:** Multiple-choice questions and flashcards that show you the answer are **recognition tests**, not recall tests. They create an illusion of competence â€” you recognize the answer when you see it, so you think you know it, but you couldn't produce it from scratch in an interview or exam.
+**The recognition trap:** Multiple-choice questions and flashcards that show you the answer are **recognition tests**, not recall tests. They create an illusion of competence — you recognize the answer when you see it, so you think you know it, but you couldn't produce it from scratch in an interview or exam.
 
 **Converting recognition to recall:**
 
@@ -194,7 +208,7 @@ public class RecallVsRecognition {
                 System.out.println("  " + (char)('A' + i) + ") " + options.get(i));
             }
             System.out.println("Correct: " + options.get(correctIndex));
-            return true; // trivial â€” you see the answer
+            return true; // trivial — you see the answer
         }
     }
 
@@ -213,7 +227,7 @@ public class RecallVsRecognition {
             boolean correct = userAnswer.toLowerCase().contains(
                 answer.toLowerCase().substring(0, Math.min(10, answer.length())));
             System.out.println("Correct answer: " + answer);
-            System.out.println("Result: " + (correct ? "CORRECT" : "WRONG â€” learn this!"));
+            System.out.println("Result: " + (correct ? "CORRECT" : "WRONG — learn this!"));
             return correct;
         }
     }
@@ -227,15 +241,15 @@ public class RecallVsRecognition {
                           "Makes it global"),
             0
         );
-        rc.test();  // recognition â€” easy, low retention benefit
+        rc.test();  // recognition — easy, low retention benefit
 
         System.out.println();
 
         RecallCard recall = new RecallCard(
             "What does the `final` keyword do on a Java variable?",
-            "It makes the variable immutable â€” its reference cannot be reassigned."
+            "It makes the variable immutable — its reference cannot be reassigned."
         );
-        recall.test("stops it from changing");  // recall â€” harder, better retention
+        recall.test("stops it from changing");  // recall — harder, better retention
     }
 }
 ```
@@ -250,16 +264,16 @@ public class RecallVsRecognition {
 
 **Answer:**
 
-Teaching forces you to **retrieve, organize, and articulate** knowledge without notes â€” the purest form of active recall. When you explain a concept to someone else:
+Teaching forces you to **retrieve, organize, and articulate** knowledge without notes — the purest form of active recall. When you explain a concept to someone else:
 
 1. **You must retrieve** the information from memory (active recall).
 2. **You must structure it logically** (coherence building).
 3. **You must fill gaps** because the listener will ask questions (gap detection).
-4. **You must use simpler language** (compression â€” a sign of deep understanding).
+4. **You must use simpler language** (compression — a sign of deep understanding).
 
 This is why Richard Feynman said: *"If you can't explain it simply, you don't understand it well enough."*
 
-**Java example â€” teaching as a recall test:**
+**Java example — teaching as a recall test:**
 
 ```java
 import java.util.*;
@@ -287,10 +301,10 @@ public class TeachingAsRecall {
 
         String handleQuestion(String question) {
             questionsAsked.add(question);
-            // If you can answer from memory â†’ true understanding
-            // If you can't â†’ gap detected
+            // If you can answer from memory → true understanding
+            // If you can't → gap detected
             System.out.println("Q: " + question);
-            System.out.println("A: [retrieved from memory â€” no notes consulted]");
+            System.out.println("A: [retrieved from memory — no notes consulted]");
             return "Answer generated from active recall";
         }
 
@@ -341,21 +355,36 @@ public class TeachingAsRecall {
 
 Hermann Ebbinghaus (1885) discovered that **forgetting follows an exponential decay curve**: we lose ~50% of new information within one hour and ~80% within 24 hours unless we actively retrieve it.
 
+```mermaid
+flowchart TD
+    Study[Learn something new] --> F1[1 hour: ~50% forgotten]
+    F1 --> F2[24 hours: ~80% forgotten]
+    F2 --> F3[7 days: ~90% forgotten]
+    F3 --> F4[30 days: ~95% forgotten]
+    Study --> SR[With Spaced Repetition]
+    SR --> R1[Review at 1 day]
+    R1 --> R2[Review at 7 days]
+    R2 --> R3[Review at 30 days]
+    R3 --> R4[Review at 120 days]
+    R4 --> Keep[~90% retained long-term]
+    F4 --> Loss[Relearn from scratch]
+```
+
 **The Ebbinghaus forgetting curve:**
 
 ```
 Retention
-  100% |â€¢
-   90% | â€¢
-   80% |   â€¢
-   70% |     â€¢   Without review: exponential decay
-   60% |       â€¢   After 1 hour: ~50% lost
-   50% |         â€¢   After 24 hours: ~80% lost
-   40% |           â€¢
-   30% |             â€¢
-   20% |               â€¢â€”â€”â€”â€¢â€”â€”â€”â€¢â€”â€”â€”â€¢â€”â€”â€”â€¢ (near zero)
+  100% |•
+   90% | •
+   80% |   •
+   70% |     •   Without review: exponential decay
+   60% |       •   After 1 hour: ~50% lost
+   50% |         •   After 24 hours: ~80% lost
+   40% |           •
+   30% |             •
+   20% |               •———•———•———•———• (near zero)
    10% |                         
-    0% |â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+    0% |——————————————————————————————
         0h   1h   24h   2d   7d   30d
 ```
 
@@ -404,7 +433,7 @@ public class EbbinghausSimulation {
 }
 ```
 
-**Why it works biologically:** Spaced repetition aligns with **long-term potentiation** â€” synapses strengthen when stimulated repeatedly with appropriate gaps. Too-frequent review provides no new challenge (wasted effort). Too-infrequent review lets the trace decay too far (relearning cost).
+**Why it works biologically:** Spaced repetition aligns with **long-term potentiation** — synapses strengthen when stimulated repeatedly with appropriate gaps. Too-frequent review provides no new challenge (wasted effort). Too-infrequent review lets the trace decay too far (relearning cost).
 
 > **Try This:** Track one concept over the next month. Review it at: 1 hour, 1 day, 3 days, 7 days, 14 days, 30 days. At each interval, rate your recall from 1-10 before looking at your notes. Plot the curve. You'll see the forgetting curve flatten with each review.
 
@@ -415,13 +444,30 @@ public class EbbinghausSimulation {
 
 **Answer:**
 
-Anki is a free, open-source spaced repetition system (SRS) built on the SM-2 algorithm. Here's how to set it up for maximum learning efficiency.
+Anki is a free, open-source spaced repetition system (SRS) built on the SM-2 algorithm.
+
+```mermaid
+flowchart TD
+    Review[Review Card] --> Q{Self-rate Quality<br/>0 = blackout<br/>1 = wrong<br/>2 = wrong but recalled<br/>3 = hard<br/>4 = good<br/>5 = easy}
+    Q -->|0-2: Forgot| Reset[Reset to 0 reps<br/>Interval = 1 day]
+    Q -->|3-5: Remembered| Advance[Advance repetition]
+    Advance --> R{Repetition #}
+    R -->|1st| D1[Interval = 1 day]
+    R -->|2nd| D2[Interval = 6 days]
+    R -->|3+| D3[Interval = previous x EF]
+    Reset --> Schedule[Next review scheduled]
+    D1 --> Schedule
+    D2 --> Schedule
+    D3 --> Schedule
+```
+
+Here's how to set it up for maximum learning efficiency.
 
 **1. Install and configure:**
 
 | Step | Action |
 |------|--------|
-| Download | [apps.ankiweb.net](https://apps.ankiweb.net) â€” desktop, mobile, web |
+| Download | [apps.ankiweb.net](https://apps.ankiweb.net) — desktop, mobile, web |
 | Deck structure | One parent deck per subject, subdecks for sub-topics |
 | Default settings | Keep for now; tune after 2 weeks of use |
 | Sync | Create a free AnkiWeb account for cross-device sync |
@@ -438,7 +484,7 @@ Anki is a free, open-source spaced repetition system (SRS) built on the SM-2 alg
 | Leech threshold | 8 lapses | Flag cards you keep forgetting for redesign |
 | Bury related reviews | ON | Prevent interference between similar cards |
 
-**3. Java example â€” SM-2 algorithm implementation:**
+**3. Java example — SM-2 algorithm implementation:**
 
 ```java
 public class SM2Algorithm {
@@ -539,7 +585,7 @@ Evening (5 min):   Overflow reviews + card creation
 | **Card pace** | 5-8 seconds per card | Fast decisions = better spacing |
 | **Break between** | At least 2 hours | Precribes interference |
 
-**Java â€” schedule optimizer:**
+**Java — schedule optimizer:**
 
 ```java
 import java.time.LocalDate;
@@ -599,7 +645,7 @@ public class AnkiScheduleOptimizer {
 
 **The "90% retention" target:**
 
-Set your SM-2 algorithm to aim for **90% retention** â€” meaning you answer "Good" or "Easy" on ~90% of reviews. If you're scoring below 80%, you have too many cards or they're poorly designed. If above 95%, you're reviewing too frequently and wasting time.
+Set your SM-2 algorithm to aim for **90% retention** — meaning you answer "Good" or "Easy" on ~90% of reviews. If you're scoring below 80%, you have too many cards or they're poorly designed. If above 95%, you're reviewing too frequently and wasting time.
 
 > **Try This:** For one week, review Anki for exactly 20 minutes every morning. Track your "due cards remaining" count. If you consistently finish early, add more new cards. If you never finish, reduce new cards/day. Find your sustainable cadence.
 
@@ -619,7 +665,7 @@ Bad cards test recognition. Good cards test recall. Great cards test **understan
 |------|-------|------|----------|
 | **Basic** | Question | Answer | Definitions, facts |
 | **Cloze** | "The ___ algorithm is used for ___" | Deleted words | Fill-in-the-blank |
-| **Basic + Reverse** | Question â†’ Answer | Answer â†’ Question | Bidirectional knowledge |
+| **Basic + Reverse** | Question → Answer | Answer → Question | Bidirectional knowledge |
 | **Image Occlusion** | Diagram with hidden labels | Revealed labels | Anatomical, architecture diagrams |
 | **Type-in** | Question | Type the answer | Code syntax, formulas |
 
@@ -638,13 +684,13 @@ Front: "{{c1::Encapsulation}} bundles {{c2::data}} and {{c2::methods}},
 
 BAD: "List the 4 OOP principles"
 BETTER: (Split into 4 separate cards)
-  "What OOP principle involves bundling data and methods?" â†’ Encapsulation
-  "What OOP principle uses `extends`?" â†’ Inheritance
-  "What OOP principle allows methods with the same name but different behavior?" â†’ Polymorphism
-  "What OOP principle hides implementation details behind an interface?" â†’ Abstraction
+  "What OOP principle involves bundling data and methods?" → Encapsulation
+  "What OOP principle uses `extends`?" → Inheritance
+  "What OOP principle allows methods with the same name but different behavior?" → Polymorphism
+  "What OOP principle hides implementation details behind an interface?" → Abstraction
 ```
 
-**Java example â€” card quality analyzer:**
+**Java example — card quality analyzer:**
 
 ```java
 import java.util.*;
@@ -672,7 +718,7 @@ public class CardQualityAnalyzer {
             if (front.toLowerCase().contains("list the") || front.toLowerCase().contains("name the"))
                 issues.add("'List the' questions often test recognition, not recall");
             if (back.length() < 10)
-                issues.add("Answer too short â€” are you testing a real concept?");
+                issues.add("Answer too short — are you testing a real concept?");
             return issues;
         }
     }
@@ -689,9 +735,9 @@ public class CardQualityAnalyzer {
             System.out.println("Card: " + c.front);
             List<String> issues = c.issues();
             if (issues.isEmpty()) {
-                System.out.println("  âœ“ No issues found");
+                System.out.println("  ✓ No issues found");
             } else {
-                issues.forEach(i -> System.out.println("  âš  " + i));
+                issues.forEach(i -> System.out.println("  ⚠ " + i));
             }
             System.out.println();
         }
@@ -723,31 +769,47 @@ public class CardQualityAnalyzer {
 
 Integration is about **habit design**, not willpower. If you rely on motivation, you'll stop after 2 weeks. If you design a frictionless system, Anki becomes automatic.
 
+```mermaid
+sequenceDiagram
+    participant M as Morning (15 min)
+    participant D as Throughout Day
+    participant E as Evening (5 min)
+    M->>M: 1. Open Anki (same time, same place)
+    M->>M: 2. Clear overdue reviews first
+    M->>M: 3. Process 10-20 new cards
+    M->>D: Core review done
+    D->>D: 4. Create cards when learning new things
+    D->>D: 5. Quick review while waiting
+    E->>E: 6. Re-review today's new cards
+    E->>E: 7. Create cards from today's study
+    E->>E: 8. Check streak & stats
+```
+
 **The daily workflow:**
 
 ```
 MORNING (15 min)
-â”œâ”€â”€ 1. Open Anki (same time, same place)
-â”œâ”€â”€ 2. Clear overdue reviews first
-â”œâ”€â”€ 3. Process new cards (10-20)
-â””â”€â”€ 4. Done
+├── 1. Open Anki (same time, same place)
+├── 2. Clear overdue reviews first
+├── 3. Process new cards (10-20)
+└── 4. Done
 
 THROUGHOUT DAY (passive)
-â”œâ”€â”€ 5. Create cards when you learn something new
-â”‚    (keep a "card ideas" note in your phone)
-â””â”€â”€ 6. Quick review while waiting (bus, queue, coffee)
+├── 5. Create cards when you learn something new
+│    (keep a "card ideas" note in your phone)
+└── 6. Quick review while waiting (bus, queue, coffee)
 
 EVENING (5 min)
-â”œâ”€â”€ 7. Review today's new cards once more
-â”œâ”€â”€ 8. Create cards from today's study sessions
-â””â”€â”€ 9. Check stats (streak, cards due tomorrow)
+├── 7. Review today's new cards once more
+├── 8. Create cards from today's study sessions
+└── 9. Check stats (streak, cards due tomorrow)
 ```
 
 **Friction reduction strategies:**
 
 | Strategy | Implementation |
 |----------|---------------|
-| **Same time** | Set a recurring calendar event: "Anki â€” 8:00 AM" |
+| **Same time** | Set a recurring calendar event: "Anki — 8:00 AM" |
 | **Same place** | Always review at the same desk/spot |
 | **Low barrier** | Phone in hand, open Anki before you think about it |
 | **Streak tracking** | Anki's Review Heatmap add-on shows your streak |
@@ -763,7 +825,7 @@ EVENING (5 min)
  5 min: Review again in the evening (same day)
 ```
 
-**Java â€” daily habit tracker:**
+**Java — daily habit tracker:**
 
 ```java
 import java.time.LocalDate;
@@ -848,33 +910,33 @@ public class AnkiHabitTracker {
 
 **Answer:**
 
-Not everything should be a flashcard. Complex topics â€” system design, debugging workflows, architectural patterns â€” require **understanding of relationships**, not atomic fact recall. But you can still apply spaced repetition by decomposing complexity.
+Not everything should be a flashcard. Complex topics — system design, debugging workflows, architectural patterns — require **understanding of relationships**, not atomic fact recall. But you can still apply spaced repetition by decomposing complexity.
 
 **Strategies for complex topics:**
 
 | Strategy | How It Works | Example |
 |----------|-------------|---------|
-| **Component breakdown** | Decompose the topic into atomic sub-concepts | "Load balancer" â†’ algorithms, health checks, session affinity |
+| **Component breakdown** | Decompose the topic into atomic sub-concepts | "Load balancer" → algorithms, health checks, session affinity |
 | **Decision tree cards** | Card asks "When X happens, which approach?" | "When would you use Kafka vs RabbitMQ?" |
 | **Comparison cards** | Ask for pros/cons or differences | "What are the tradeoffs of REST vs gRPC?" |
 | **Flow cards** | Recall a process step by step | "Walk through what happens when you type a URL" |
 | **Code output cards** | Given code, predict the output | "What does this Java 8 stream return?" |
-| **Debugging cards** | Given a bug description, recall the root cause | "LazyInitializationException â†’ cause and fix" |
+| **Debugging cards** | Given a bug description, recall the root cause | "LazyInitializationException → cause and fix" |
 
 **The "funnel" approach for system design:**
 
 ```
 Level 1: List the components (recall)
-  â†’ "What are the main components of a scalable web application?"
+  → "What are the main components of a scalable web application?"
 Level 2: Explain each component (understanding)
-  â†’ "What does a CDN do and when should you use one?"
+  → "What does a CDN do and when should you use one?"
 Level 3: Tradeoffs between options (analysis)
-  â†’ "Compare SQL vs NoSQL for a social media feed"
+  → "Compare SQL vs NoSQL for a social media feed"
 Level 4: Design decisions (synthesis)
-  â†’ "Design Twitter's timeline service â€” walk through your decisions"
+  → "Design Twitter's timeline service — walk through your decisions"
 ```
 
-**Java â€” complex topic decomposition:**
+**Java — complex topic decomposition:**
 
 ```java
 import java.util.*;
@@ -911,7 +973,7 @@ public class ComplexTopicHandler {
         // Level 2: Explain each (understanding)
         deck.add(new HierarchicalCard("EXPLAIN",
             "How does the hash generation work in a URL shortener?",
-            "Base-62 encoding of a unique ID (e.g., DB auto-increment or Snowflake ID) â†’ short string like 'abc123'"));
+            "Base-62 encoding of a unique ID (e.g., DB auto-increment or Snowflake ID) → short string like 'abc123'"));
 
         // Level 3: Tradeoffs (analysis)
         deck.add(new HierarchicalCard("TRADEOFF",
@@ -951,15 +1013,15 @@ public class ComplexTopicHandler {
 
 **1. What cognitive mechanism explains why active recall strengthens memory?**
 a) Encoding specificity b) Reconsolidation c) State-dependent learning d) Elaborative encoding
-**Answer:** b) Reconsolidation. Each retrieval triggers reconsolidation â€” the neural trace is strengthened and linked to more contextual cues, making future retrieval easier.
+**Answer:** b) Reconsolidation. Each retrieval triggers reconsolidation — the neural trace is strengthened and linked to more contextual cues, making future retrieval easier.
 
 **2. Why does the blank page method expose illusions of competence?**
-a) It forces you to write quickly b) It requires an internet connection c) It provides no cues â€” you either know it or you don't d) It uses multiple-choice formatting
-**Answer:** c) It provides no cues â€” you either know it or you don't. Rereading feels like knowing because recognition is easy, but a blank page gives no hints, so gaps become immediately visible.
+a) It forces you to write quickly b) It requires an internet connection c) It provides no cues — you either know it or you don't d) It uses multiple-choice formatting
+**Answer:** c) It provides no cues — you either know it or you don't. Rereading feels like knowing because recognition is easy, but a blank page gives no hints, so gaps become immediately visible.
 
 **3. What brain region is primarily associated with recall (as opposed to recognition)?**
 a) Perirhinal cortex b) Amygdala c) Hippocampus d) Cerebellum
-**Answer:** c) Hippocampus. Recognition relies on the perirhinal cortex (familiarity signal), while recall requires hippocampal recollection â€” a more effortful and durable process.
+**Answer:** c) Hippocampus. Recognition relies on the perirhinal cortex (familiarity signal), while recall requires hippocampal recollection — a more effortful and durable process.
 
 **4. A student who can answer multiple-choice questions but fails an open-ended interview is experiencing:**
 a) The testing effect b) The spacing effect c) The recognition trap d) Proactive interference
@@ -967,7 +1029,7 @@ a) The testing effect b) The spacing effect c) The recognition trap d) Proactive
 
 **5. Why does the Feynman technique (teaching a concept to a child) count as active recall?**
 a) It uses visual aids b) It forces unscripted retrieval from memory and gap detection c) It requires a classroom setting d) It uses repetition without effort
-**Answer:** b) It forces unscripted retrieval from memory and gap detection. Teaching requires you to retrieve, organize, and articulate knowledge without notes â€” the purest form of active recall.
+**Answer:** b) It forces unscripted retrieval from memory and gap detection. Teaching requires you to retrieve, organize, and articulate knowledge without notes — the purest form of active recall.
 
 **6. According to Ebbinghaus's forgetting curve, approximately what percentage of new information is lost within 24 hours without review?**
 a) 20% b) 40% c) 60% d) 80%
@@ -982,8 +1044,8 @@ a) 5-10 b) 10-20 c) 25-50 d) Unlimited
 **Answer:** b) 10-20. Limiting new cards per day to 10-20 prevents review backlog and keeps the daily workload sustainable for long-term habit maintenance.
 
 **9. Which card type is considered most effective for testing atomic fact recall with surrounding context?**
-a) Basic (question â†’ answer) b) Image Occlusion c) Cloze deletion d) Type-in
-**Answer:** c) Cloze deletion. Cloze deletions provide surrounding context while forcing retrieval of a specific fact â€” simulating real-world recall better than basic question-answer cards.
+a) Basic (question → answer) b) Image Occlusion c) Cloze deletion d) Type-in
+**Answer:** c) Cloze deletion. Cloze deletions provide surrounding context while forcing retrieval of a specific fact — simulating real-world recall better than basic question-answer cards.
 
 **10. According to the chapter, what is the "golden rule" of card design?**
 a) Every card must include an image b) Every card must be a cloze deletion c) One card = one atomic fact or concept d) Cards must be at least 50 words long
@@ -994,27 +1056,27 @@ a) 5 minutes b) 15-25 minutes c) 45-60 minutes d) 90 minutes
 **Answer:** b) 15-25 minutes. Beyond 25 minutes, retention gains per minute drop significantly. The sustainable total for most learners is 30-45 minutes spread across the day.
 
 **12. How should you handle a complex topic like system design that doesn't fit on a single flashcard?**
-a) Skip Anki entirely for that topic b) Write one large card with all the details c) Decompose into a funnel: components â†’ explain â†’ tradeoffs â†’ design decisions d) Use only image occlusion cards
-**Answer:** c) Decompose into a funnel: components â†’ explain â†’ tradeoffs â†’ design decisions. Complex topics are handled by creating hierarchical cards at different levels of analysis, from atomic recall to synthesis-level design decisions.
+a) Skip Anki entirely for that topic b) Write one large card with all the details c) Decompose into a funnel: components → explain → tradeoffs → design decisions d) Use only image occlusion cards
+**Answer:** c) Decompose into a funnel: components → explain → tradeoffs → design decisions. Complex topics are handled by creating hierarchical cards at different levels of analysis, from atomic recall to synthesis-level design decisions.
 
 ---
 
 ## Chapter Summary
 
-- **Active recall** is the single most effective learning technique â€” retrieving information from memory without cues strengthens neural traces through reconsolidation.
+- **Active recall** is the single most effective learning technique — retrieving information from memory without cues strengthens neural traces through reconsolidation.
 - The **blank page method** is active recall in its purest form: write everything you know from memory, expose your gaps, and target them.
-- **Recognition (multiple choice) feels like learning but isn't** â€” real learning requires production from memory, not identification among options.
+- **Recognition (multiple choice) feels like learning but isn't** — real learning requires production from memory, not identification among options.
 - **Teaching is the ultimate recall test** because it forces unscripted retrieval, organization, and real-time gap detection.
 - **Spaced repetition with Anki** implements the SM-2 algorithm to schedule reviews at optimal intervals, flattening the Ebbinghaus forgetting curve from exponential decay to near-permanent retention.
-- **Effective cards are atomic** â€” one concept per card, cloze deletions preferred, split multi-concept cards, avoid list-format questions.
-- **Integration depends on habit, not motivation** â€” attach Anki to an existing daily trigger, start with 10-15 new cards/day, and never break the streak.
+- **Effective cards are atomic** — one concept per card, cloze deletions preferred, split multi-concept cards, avoid list-format questions.
+- **Integration depends on habit, not motivation** — attach Anki to an existing daily trigger, start with 10-15 new cards/day, and never break the streak.
 
 ---
 
 ## Exercises
 
 **Exercise 1: Active recall audit (20 min)**
-Take one chapter from any course you're studying. Read it once, then close the book. On a blank page, write everything you remember. Score yourself against the source. Calculate your coverage percentage. This is your baseline â€” repeat this weekly and track improvement.
+Take one chapter from any course you're studying. Read it once, then close the book. On a blank page, write everything you remember. Score yourself against the source. Calculate your coverage percentage. This is your baseline — repeat this weekly and track improvement.
 
 **Exercise 2: Convert recognition to recall (30 min)**
 Take 10 multiple-choice questions from practice tests. Cover the options. Try to answer from memory. For each question, write down what made you guess correctly or incorrectly. Convert each into an Anki cloze card.
@@ -1053,7 +1115,7 @@ Re-record until you pass all three checks.
 | [Chapter 4: Pomodoro, Interleaving & Feynman](ch-04-pomodoro-interleaving-feynman.md) | Three complementary techniques that pair directly with active recall and spaced repetition |
 
 **Key connections:**
-- **Chapter 1** explains why sleep consolidates the memories you strengthen with active recall â€” review in the evening for maximum retention.
+- **Chapter 1** explains why sleep consolidates the memories you strengthen with active recall — review in the evening for maximum retention.
 - **Chapter 4's Feynman technique** is the ultimate active recall exercise: teach from memory, expose gaps, review the gaps, repeat.
 - **Chapter 4's Pomodoro technique** provides the focused work blocks during which you do your recall practice.
 - **Chapter 4's interleaving** prevents the "blocked practice trap" where cards feel easy because you just studied similar ones.

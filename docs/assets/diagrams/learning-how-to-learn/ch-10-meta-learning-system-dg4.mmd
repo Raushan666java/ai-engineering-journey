@@ -1,0 +1,12 @@
+﻿flowchart LR
+    subgraph Ideal[Ideal Compound Effect]
+        D[1% daily improvement<br/>1.01^365] --> W["Week: 1.07x<br/>Same as before"]
+        W --> M["Month: 1.35x<br/>Starting to see gains"]
+        M --> Q["Quarter: 2.45x<br/>Knowledge accelerating"]
+        Q --> Y["Year: 37.78x<br/>Exponential growth"]
+    end
+    subgraph Real[Real-World Constraints]
+        R1[Plateaus: periods of<br/>zero visible growth] --> R2[Knowledge decay: needs<br/>spaced repetition ratchet]
+        R2 --> R3[Transfer acceleration:<br/>rate increases over time]
+    end
+    Ideal -.-> Real

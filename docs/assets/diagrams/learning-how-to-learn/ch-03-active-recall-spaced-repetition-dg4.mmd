@@ -1,0 +1,13 @@
+﻿sequenceDiagram
+    participant M as Morning (15 min)
+    participant D as Throughout Day
+    participant E as Evening (5 min)
+    M->>M: 1. Open Anki (same time, same place)
+    M->>M: 2. Clear overdue reviews first
+    M->>M: 3. Process 10-20 new cards
+    M->>D: Core review done
+    D->>D: 4. Create cards when learning new things
+    D->>D: 5. Quick review while waiting
+    E->>E: 6. Re-review today's new cards
+    E->>E: 7. Create cards from today's study
+    E->>E: 8. Check streak & stats

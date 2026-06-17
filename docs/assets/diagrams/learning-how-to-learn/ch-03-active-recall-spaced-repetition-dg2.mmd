@@ -1,0 +1,12 @@
+﻿flowchart TD
+    Study[Learn something new] --> F1[1 hour: ~50% forgotten]
+    F1 --> F2[24 hours: ~80% forgotten]
+    F2 --> F3[7 days: ~90% forgotten]
+    F3 --> F4[30 days: ~95% forgotten]
+    Study --> SR[With Spaced Repetition]
+    SR --> R1[Review at 1 day]
+    R1 --> R2[Review at 7 days]
+    R2 --> R3[Review at 30 days]
+    R3 --> R4[Review at 120 days]
+    R4 --> Keep[~90% retained long-term]
+    F4 --> Loss[Relearn from scratch]

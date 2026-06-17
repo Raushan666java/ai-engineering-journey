@@ -1,0 +1,17 @@
+﻿flowchart LR
+    subgraph Prep[Phase 1: Before Interview]
+        P1a[48h: Anki review + mock]
+        P1b[12h: Full sleep]
+        P1c[1h: Light cheat sheet review]
+        P1d[15min: Box breathing]
+    end
+    subgraph During[Phase 2-4: Interview]
+        P2[Opening: Clarify requirements] --> P3[Problem Solving: 3-Pass Method]
+        P3 --> P4[Closing: Questions for interviewer]
+    end
+    subgraph After[Phase 5: Follow-up]
+        P5a[Send thank-you note]
+        P5b[Write retro: what went well]
+        P5c[Schedule next target company]
+    end
+    Prep --> During --> After

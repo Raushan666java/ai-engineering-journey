@@ -1,5 +1,7 @@
 # Chapter 9: Dynamic Programming — Sequences
 
+> **Prerequisites:** [Chapter 8: Dynamic Programming — Knapsack Problems](./08-dp-knapsack.md) — 2D DP tables, recurrence design | **Next:** [Chapter 10: Dynamic Programming — Trees & Grids](./10-dp-trees-grids.md) — DP on non-linear structures
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -10,6 +12,32 @@ By the end of this chapter, students will be able to:
 4. Solve matrix chain multiplication and palindrome partitioning using DP.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| LCS | dp[i][j] based on character match | 2D DP for comparing two sequences |
+| LIS | Can reduce to patience sorting | O(n log n) via binary search on tails |
+| Edit Distance | Min of insert/delete/replace | Foundation of spell checking and bioinformatics |
+| Matrix Chain | Parenthesization order affects cost | dp[i][j] = min over all split points k |
+| Palindrome | Expand from center or DP intervals | Two approaches: O(n²) or O(n³) |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Sequence DP] --> B[Two-Sequence LCS]
+    A --> C[Single-Sequence LIS]
+    A --> D[Edit Distance]
+    A --> E[Matrix Chain]
+    A --> F[Palindrome Partitioning]
+    B --> G[dp[i][j] match/mismatch]
+    C --> H[O(n log n) patience sort]
+    D --> I[insert/delete/replace ops]
+    E --> J[dp[i][j] = min over k]
+    F --> K[interval DP]
+```
 
 ## Theory
 
@@ -45,6 +73,12 @@ LCS(X, Y, m, n):
 **Reconstruction:** Trace back from \( dp[m][n] \). If characters match, include the character and move diagonally. Otherwise, move in the direction of the larger value.
 
 **Complexity:** \( O(mn) \) time, \( O(mn) \) space (can be optimized to \( O(\min(m,n)) \) for length only).
+
+> **Pro Tip:** LCS reconstruction is done by tracing back through dp[i][j] — if characters match, include the character; otherwise, follow the larger neighbor. Always implement reconstruction if the problem asks for the actual subsequence.
+>
+> **Remember:** LCS is the foundation for diff tools (git diff) and bioinformatics sequence alignment. The recurrence pattern extends to three or more sequences with higher dimensions.
+
+**One-Sentence Takeaway:** LCS uses a 2D DP where dp[i][j] extends by 1 on character match or takes the max of adjacent cells on mismatch.
 
 ### 9.2 Longest Increasing Subsequence (LIS)
 
@@ -84,6 +118,12 @@ LIS_nlogn(A, n):
 
 **Proof of correctness:** By induction, \( tails \) is always sorted, and each element is the smallest possible tail for its length.
 
+> **Pro Tip:** The O(n log n) LIS using patience sorting is a classic interview optimization. The tails array is always sorted — use binary search to find the insertion position. The algorithm only finds length, not the actual subsequence.
+>
+> **Warning:** For non-decreasing (allow equals), use upper_bound instead of lower_bound in the binary search.
+
+**One-Sentence Takeaway:** LIS achieves O(n log n) via patience sorting — maintaining the smallest possible tail for each subsequence length using binary search.
+
 ### 9.3 Edit Distance (Levenshtein Distance)
 
 **Problem:** Given two strings \( X \) and \( Y \), find the minimum number of operations (insert, delete, replace) to transform \( X \) into \( Y \).
@@ -102,6 +142,12 @@ dp[i-1][j-1] & \text{if } X[i] = Y[j] \\
 The three cases correspond to: delete \( X[i] \), insert \( Y[j] \), or replace \( X[i] \) with \( Y[j] \).
 
 **Complexity:** \( O(mn) \) time, \( O(mn) \) space.
+
+> **Pro Tip:** Edit distance is the foundation for spell checkers, autocorrect, and DNA sequence alignment. For approximate string matching, allow insert/delete costs to be context-dependent.
+>
+> **Remember:** Insert and delete are symmetric operations — inserting Y[j] into X is equivalent to deleting X[i] from Y. The recurrence captures all three operations symmetrically.
+
+**One-Sentence Takeaway:** Edit distance computes the minimum insert/delete/replace operations between two strings using a symmetric 2D DP recurrence in O(mn) time.
 
 ### 9.4 Matrix Chain Multiplication
 
@@ -133,6 +179,12 @@ MatrixChain(p, n):
 
 **Complexity:** \( O(n^3) \) time, \( O(n^2) \) space.
 
+> **Pro Tip:** Matrix chain multiplication is the canonical interval DP problem. The key insight: iterate by chain length (L) from 2 to n, not by start index. The split point k divides the chain into independent subproblems.
+>
+> **Remember:** The cost formula includes p[i-1]*p[k]*p[j] — the dimensions of the first matrix's rows (p[i-1]), the split matrix's columns (p[k]), and the last matrix's columns (p[j]).
+
+**One-Sentence Takeaway:** Matrix chain multiplication uses interval DP over chain lengths, minimizing scalar multiplications by trying all split points cost = dp[i][k] + dp[k+1][j] + p[i-1]*p[k]*p[j].
+
 ### 9.5 Palindrome Partitioning
 
 **Problem:** Given a string \( S \), partition it into substrings such that every substring is a palindrome. Find the minimum number of cuts needed.
@@ -149,6 +201,12 @@ dp[i] = \begin{cases}
 Precompute palindrome information using DP: \( isPal[i][j] = (S[i] == S[j]) \land (j - i < 2 \lor isPal[i+1][j-1]) \).
 
 **Complexity:** \( O(n^2) \) time, \( O(n^2) \) space.
+
+> **Pro Tip:** Palindrome partitioning can be solved in O(n²) by precomputing isPal[i][j] using the expansion recurrence, then running a separate 1D DP for min cuts. Never recompute palindrome checks inside the cut DP loop.
+>
+> **Remember:** The palindrome expansion recurrence isPal[i][j] = (S[i] == S[j]) && (j - i < 2 || isPal[i+1][j-1]) — check outer chars and inner substring.
+
+**One-Sentence Takeaway:** Palindrome partitioning computes minimum cuts in O(n²) by precomputing palindrome substrings and then applying 1D DP over prefix positions.
 
 ---
 
@@ -237,6 +295,39 @@ int editDistance(const std::string& X, const std::string& Y) {
 
 ---
 
+### Concept Comparison Table
+
+| Problem | DP Dimension | State | Recurrence Pattern | Complexity | 
+|---------|-------------|-------|-------------------|------------|
+| LCS | 2D (i,j) | dp[i][j] = LCS length | match → +1 diagonal, mismatch → max neighbors | O(mn) |
+| LIS | 1D (i) | dp[i] = LIS ending at i | dp[i] = 1 + max dp[j] where A[j] < A[i] | O(n²) / O(n log n) |
+| Edit Distance | 2D (i,j) | dp[i][j] = min ops | min(insert, delete, replace) = base+1 | O(mn) |
+| Matrix Chain | 2D interval | dp[i][j] = min cost at split k | min over k of dp[i][k] + dp[k+1][j] + cost | O(n³) |
+| Palindrome Partition | 1D (i) | dp[i] = min cuts for prefix | dp[j] + 1 if S[j+1..i] is palindrome | O(n²) |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Two-Sequence DP** | LCS, Edit Distance — 2D table, O(mn) time |
+| **Single-Sequence DP** | LIS — 1D or patience sorting, O(n log n) |
+| **Interval DP** | Matrix Chain — loop by length L, then start i |
+| **Precomputation** | Palindrome Partition — compute isPal first, then 1D cut DP |
+| **Reconstruction** | LCS and Matrix Chain need separate traceback logic |
+| **Common Pitfall** | Forgetting to handle base cases (empty strings, single elements) |
+
+### Cross-Application Matrix
+
+| Problem | DSA Interviews | Competitive Programming | System Design | Real-World |
+|---------|---------------|----------------------|---------------|------------|
+| LCS | Common — diff algorithms | String DP variations | Version control diffs | Git diff, bioinformatics |
+| LIS | Very common — patience sort | Greedy + binary search | Priority queues | Stock trading, scheduling |
+| Edit Distance | Common — spell check | Edit distance variants | Autocorrect systems | Spell checkers, DNA alignment |
+| Matrix Chain | Occasionally asked | Interval DP problems | Query optimization | Compiler optimization |
+| Palindrome Partition | Common — string DP | Palindrome problems | Text processing | String analysis, NLP |
+
+---
+
 ## Summary
 
 - LCS uses a 2D DP on string prefixes; reconstruction requires traceback.
@@ -248,6 +339,44 @@ int editDistance(const std::string& X, const std::string& Y) {
 ---
 
 ## Exercises
+
+### Chapter Quiz
+
+**Q1.** What data structure does O(n log n) LIS use?
+
+- A) A hash set
+- B) A sorted tails array with binary search
+- C) A max-heap
+- D) A queue
+
+<details>
+<summary>Answer</summary>
+B) The tails array stores the smallest possible last element for each subsequence length; binary search finds insertion position.
+</details>
+
+**Q2.** What is the edit distance recurrence's three operations?
+
+- A) Insert, delete, replace
+- B) Add, remove, swap
+- C) Copy, paste, cut
+- D) Push, pop, shift
+
+<details>
+<summary>Answer</summary>
+A) Insert (add character), delete (remove character), replace (substitute one character for another).
+</details>
+
+**Q3.** In matrix chain multiplication, the cost of splitting at k is:
+
+- A) dp[i][k] + dp[k+1][j]
+- B) dp[i][k] + dp[k+1][j] + p[i-1]·p[k]·p[j]
+- C) dp[i][k] + p[i-1]·p[j]
+- D) dp[k][j] + dp[i][k-1]
+
+<details>
+<summary>Answer</summary>
+B) The total cost is the left subproblem (A_i..A_k) + right subproblem (A_{k+1}..A_j) + the cost of multiplying the two resulting matrices (p[i-1] × p[k] × p[j]).
+</details>
 
 ### Review Questions
 

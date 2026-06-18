@@ -1,5 +1,7 @@
 # Chapter 6: Greedy Algorithms
 
+> **Prerequisites:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) — Recursive problem decomposition | **Next:** [Chapter 7: Dynamic Programming — Foundations](./07-dp-intro.md) — When greedy fails, DP takes over
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -10,6 +12,34 @@ By the end of this chapter, students will be able to:
 4. Distinguish between problems solvable by greedy algorithms and those requiring dynamic programming.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Greedy Paradigm | Local optimal choices lead to global optimum | Requires optimal substructure + greedy-choice property |
+| Activity Selection | Pick earliest-finish activity first | Classic exchange argument proof of optimality |
+| Huffman Coding | Merge lowest-frequency characters | Optimal prefix code for data compression |
+| Fractional Knapsack | Take highest value/weight ratio | Greedy works because you can take fractions |
+| Job Sequencing | Schedule by profit, use latest slot | O(n log n) with union-find optimization |
+| Canonical Coin Change | Take largest denomination first | Fails for non-canonical systems like 1,3,4 |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Greedy Paradigm] --> B[Activity Selection]
+    A --> C[Huffman Coding]
+    A --> D[Fractional Knapsack]
+    A --> E[Job Sequencing]
+    A --> F[Canonical Coin Change]
+    B --> G[Earliest finish time]
+    C --> H[Frequency merging]
+    D --> I[Value/weight ratio]
+    E --> J[Profit sorting + slot]
+    F --> K[Largest denomination]
+    G --> L[Exchange argument proof]
+```
 
 ## Theory
 
@@ -24,6 +54,10 @@ A greedy algorithm makes the locally optimal choice at each step, hoping that lo
 **Optimal substructure:** An optimal solution to the problem contains optimal solutions to subproblems.
 
 **Exchange argument (proof technique):** Show that any optimal solution can be transformed into the greedy solution without worsening the objective.
+
+> **Pro Tip:** Before using a greedy algorithm, always verify the two properties: optimal substructure and greedy-choice property. If you can find a counterexample where a local choice leads to a suboptimal global solution, you need DP instead.
+
+**One-Sentence Takeaway:** Greedy algorithms work when making the best local choice at each step leads to a globally optimal solution, requiring both optimal substructure and the greedy-choice property.
 
 ### 6.2 Activity Selection
 
@@ -47,6 +81,12 @@ ActivitySelection(s, f, n):
 
 **Complexity:** \( O(n \log n) \) due to sorting.
 
+> **Pro Tip:** Activity selection is the canonical example for proving greedy correctness via exchange argument. Master this proof — the same technique applies to many other greedy problems.
+>
+> **Warning:** If activities have weights instead of just counts, greedy fails. Weighted interval scheduling requires DP.
+
+**One-Sentence Takeaway:** Activity selection picks the earliest-finishing compatible activity at each step, and the exchange argument proves this greedy strategy is optimal.
+
 ### 6.3 Huffman Coding
 
 **Problem:** Given a set of characters with frequencies, construct a binary prefix code that minimizes the total number of bits.
@@ -68,6 +108,12 @@ Huffman(C):
 **Correctness:** Huffman's algorithm produces an optimal prefix code. The proof uses the exchange argument: an optimal code tree has the two lowest-frequency characters as siblings at the deepest level.
 
 **Complexity:** \( O(n \log n) \).
+
+> **Pro Tip:** Huffman coding is optimal for symbol-by-symbol encoding with fixed codeword lengths. For correlated symbols, arithmetic coding or Lempel-Ziv (LZ77) usually performs better.
+>
+> **Remember:** Huffman codes are prefix-free — no codeword is a prefix of another, ensuring unambiguous decoding.
+
+**One-Sentence Takeaway:** Huffman coding builds an optimal prefix code by repeatedly merging the two lowest-frequency nodes, achieving maximum compression for symbol-by-symbol encoding.
 
 ### 6.4 Fractional Knapsack
 
@@ -93,6 +139,12 @@ FractionalKnapsack(items, W):
 
 **Contrast with 0/1 knapsack:** The fractional knapsack problem is solvable by a greedy algorithm, while the 0/1 knapsack problem requires dynamic programming. The difference lies in the ability to take fractions of items.
 
+> **Pro Tip:** The fractional knapsack problem is the perfect interview question to test whether a candidate understands why greedy works for fractional but not 0/1 — the key is fractional divisibility allows you to always fill the knapsack optimally.
+>
+> **Remember:** The value-to-weight ratio sort is the greedy choice; taking fractions is what makes it optimal.
+
+**One-Sentence Takeaway:** Fractional knapsack is greedy-solvable because items can be divided, so sorting by value-to-weight ratio and taking as much as possible yields the optimal solution.
+
 ### 6.5 Job Sequencing with Deadlines
 
 **Problem:** Given \( n \) jobs, each with a deadline \( d_i \) and profit \( p_i \), each job takes one unit of time. Schedule jobs to maximize total profit.
@@ -115,6 +167,10 @@ JobSequencing(jobs, n):
 
 **Complexity:** \( O(n^2) \) naive, \( O(n \log n) \) with union-find optimization.
 
+> **Pro Tip:** Use a disjoint-set (union-find) data structure to optimize the slot-finding step in job sequencing. Each set tracks the latest available slot, and path compression makes this nearly constant time.
+
+**One-Sentence Takeaway:** Job sequencing with deadlines schedules highest-profit jobs first, placing each in the latest available slot before its deadline — O(n log n) with union-find optimization.
+
 ### 6.6 Canonical Coin Change
 
 **Problem:** Given coin denominations \( d_1 > d_2 > \cdots > d_k = 1 \), make change for amount \( A \) using the minimum number of coins.
@@ -125,9 +181,11 @@ For **canonical coin systems** (including USD: 25, 10, 5, 1), the greedy algorit
 
 **Complexity:** \( O(k) \).
 
----
+> **Warning:** Never assume a coin system is canonical without verifying. Counterexample: coins 1, 3, 4 fail for amount 6 (greedy: 4+1+1=3 coins, optimal: 3+3=2 coins). Use DP for general coin systems.
 
-## Examples
+**One-Sentence Takeaway:** Greedy coin change works optimally only for canonical systems where larger denominations are multiples of smaller ones; otherwise DP is needed.
+
+---
 
 ### Example 6.1: Activity Selection in C++
 
@@ -182,6 +240,38 @@ The greedy algorithm fails because the coin system is non-canonical.
 
 ---
 
+### Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Greedy-Choice Property | Local optimum leads to global optimum | Different from optimal substructure alone | Verifying greedy applicability |
+| Exchange Argument | Transform any optimal to greedy solution | Proves optimality by contradiction switching | Greedy correctness proofs |
+| Activity Selection | Earliest finish time first | Exchange argument is clean and canonical | Scheduling, resource allocation |
+| Huffman Coding | Merge smallest frequencies | Optimal prefix code — prefix-free property | File compression (ZIP, JPEG) |
+| Fractional vs 0/1 Knapsack | Divisibility determines approach | Greedy works for fractional only | Resource allocation problems |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **When Greedy Works** | Optimal substructure + greedy-choice property |
+| **Proof Technique** | Exchange argument — transform any optimal to greedy |
+| **Always Greedy-Solvable** | Activity selection, fractional knapsack, Huffman coding, Dijkstra, Prim's |
+| **Greedy Fails** | 0/1 knapsack, weighted interval scheduling, coin change (non-canonical) |
+| **Common Pitfall** | Assuming greedy works because it seems intuitive — always verify or test a counterexample |
+
+### Cross-Application Matrix
+
+| Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
+|-----------|---------------|----------------------|---------------|-------------------|
+| Activity Selection | Common — interval scheduling variations | Scheduling problems | Resource allocation, meeting room mgmt | Matroid theory |
+| Huffman Coding | Occasionally — compression basics | Rare | Data compression systems | Information theory |
+| Fractional Knapsack | Common — greedy vs DP contrast | N/A | Resource allocation | Linear programming duality |
+| Job Sequencing | Occasionally asked | Deadline scheduling variations | Task scheduling | Scheduling theory |
+| Exchange Arguments | Critical skill — proofs | Required for many greedy proofs | N/A | Algorithm correctness |
+
+---
+
 ## Summary
 
 - The greedy paradigm works when the greedy-choice property and optimal substructure hold.
@@ -189,6 +279,46 @@ The greedy algorithm fails because the coin system is non-canonical.
 - Activity selection and Huffman coding are canonical examples of correct greedy algorithms.
 - Fractional knapsack is greedy-solvable; 0/1 knapsack is not.
 - Greedy coin change requires the coin system to be canonical.
+
+---
+
+### Chapter Quiz
+
+**Q1.** Which property must a problem satisfy for a greedy algorithm to produce an optimal solution?
+
+- A) Overlapping subproblems
+- B) Greedy-choice property and optimal substructure
+- C) Polynomial-time verifiability
+- D) Divide-and-conquer compatibility
+
+<details>
+<summary>Answer</summary>
+B) Greedy-choice property (local optimum leads to global optimum) and optimal substructure (optimal solution contains optimal sub-solutions).
+</details>
+
+**Q2.** Why does greedy work for fractional knapsack but not 0/1 knapsack?
+
+- A) Fractional knapsack has smaller input size
+- B) Items can be divided, allowing the greedy to always fill capacity optimally
+- C) 0/1 knapsack has negative weights
+- D) Fractional knapsack doesn't need sorting
+
+<details>
+<summary>Answer</summary>
+B) In fractional knapsack, you can always take a partial item to exactly fill remaining capacity, so the value/weight ratio sort yields an optimal fill.
+</details>
+
+**Q3.** What is the greedy choice in Huffman coding?
+
+- A) Merge the two highest-frequency characters
+- B) Merge the two lowest-frequency characters
+- C) Assign shortest codeword to rarest character
+- D) Build a balanced tree
+
+<details>
+<summary>Answer</summary>
+B) Merge the two characters/trees with the smallest frequencies. This ensures the least frequent characters get the deepest (longest) codewords.
+</details>
 
 ---
 

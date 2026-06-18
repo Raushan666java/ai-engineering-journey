@@ -1,5 +1,7 @@
 # Chapter 11: Graph Shortest Paths
 
+> **Prerequisites:** [Chapter 10: Dynamic Programming — Trees & Grids](./10-dp-trees-grids.md) — Recursive problem-solving on graph structures | **Next:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) — From shortest paths to minimum-cost spanning trees
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -11,6 +13,31 @@ By the end of this chapter, students will be able to:
 5. Understand the A* search algorithm and its admissible heuristic property.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Dijkstra | Priority queue + relaxation | O(E log V) with binary heap; non-negative weights only |
+| Bellman-Ford | Relax all edges V-1 times | O(VE); detects negative cycles via Vth iteration |
+| Floyd-Warshall | dp[k][i][j] via intermediate k | O(V³) for all-pairs; simple 3-loop implementation |
+| DAG Shortest Paths | Topological order + relaxation | O(V+E); linear time for DAGs |
+| A* Search | Heuristic-guided Dijkstra | Admissible heuristic guarantees optimality |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Shortest Paths] --> B[Single-Source]
+    A --> C[All-Pairs]
+    A --> D[DAG]
+    A --> E[Heuristic]
+    B --> F[Dijkstra non-negative]
+    B --> G[Bellman-Ford general]
+    C --> H[Floyd-Warshall]
+    D --> I[Topological + Relax]
+    E --> J[A* Search]
+```
 
 ## Theory
 
@@ -39,6 +66,12 @@ Dijkstra(G, s):
 
 **Complexity:** \( O((V+E) \log V) \) with a binary heap, \( O(V \log V + E) \) with a Fibonacci heap.
 
+> **Pro Tip:** Dijkstra's lazy deletion pattern (checking `d != dist[u]` before processing) is preferred over DecreaseKey — it's simpler and has the same asymptotic complexity with a binary heap.
+>
+> **Remember:** Dijkstra fails with negative weights because a later negative edge could create a shorter path to an already-"settled" vertex.
+
+**One-Sentence Takeaway:** Dijkstra's algorithm greedily extracts the minimum-distance unvisited vertex, achieving O(E log V) single-source shortest paths for non-negative weights.
+
 ### 11.2 Bellman-Ford Algorithm
 
 **Problem:** Find shortest paths when edge weights may be negative. Also detects negative cycles reachable from the source.
@@ -61,6 +94,12 @@ BellmanFord(G, s):
 **Correctness:** After \( k \) iterations, \( dist[v] \) is the shortest path from \( s \) to \( v \) using at most \( k \) edges. The shortest path has at most \( |V|-1 \) edges, so \( |V|-1 \) iterations suffice.
 
 **Complexity:** \( O(VE) \).
+
+> **Pro Tip:** After V-1 relaxations, one more pass detects negative cycles. But this only detects cycles *reachable* from the source. Set all dist[v] = 0 before running to detect ANY negative cycle in the graph.
+>
+> **Warning:** Bellman-Ford is O(VE). For large graphs, use SPFA (queue-based optimization) but beware of crafted adversarial cases that degrade it.
+
+**One-Sentence Takeaway:** Bellman-Ford handles negative weights and detects negative cycles by relaxing all edges V-1 times in O(VE) time.
 
 ### 11.3 Floyd-Warshall Algorithm
 
@@ -94,6 +133,12 @@ FloydWarshall(G):
 
 **Complexity:** \( \Theta(V^3) \) time, \( \Theta(V^2) \) space.
 
+> **Pro Tip:** Floyd-Warshall's key insight is the k-loop ordering — k must be the outermost loop because d^{(k)} depends on d^{(k-1)}. The in-place update works because values only improve.
+>
+> **Remember:** Floyd-Warshall works for negative edges but not negative cycles. Check diagonal dist[i][i] < 0 afterward to detect cycles.
+
+**One-Sentence Takeaway:** Floyd-Warshall computes all-pairs shortest paths in O(V³) using DP over intermediate vertices.
+
 ### 11.4 Shortest Path in DAG
 
 **Problem:** Find shortest paths in a directed acyclic graph (DAG). The absence of cycles allows a linear-time solution.
@@ -112,6 +157,12 @@ DAGShortestPath(G, s):
 ```
 
 **Complexity:** \( O(V + E) \).
+
+> **Pro Tip:** DAG shortest paths is the fastest possible — O(V+E) because topological ordering eliminates the need for iterative relaxation. Always check if your graph is a DAG before using a slower algorithm.
+>
+> **Remember:** The topological order ensures vertex u is processed before any of its descendants, so when you relax edges from u, dist[v] is final — no later pass can improve it.
+
+**One-Sentence Takeaway:** DAG shortest paths achieve O(V+E) time by combining topological sort with edge relaxation in a single pass.
 
 ### 11.5 A* Search
 
@@ -135,9 +186,13 @@ AStar(G, s, t, h):
 
 **Consistency (monotonicity):** \( h(u) \le w(u,v) + h(v) \). A consistent heuristic ensures A* never re-opens closed nodes.
 
----
+> **Pro Tip:** A* with an admissible heuristic (never overestimates) guarantees optimality. For grid pathfinding, Manhattan distance is admissible. Euclidean distance is also admissible. Never use greedy best-first search unless optimality is not required.
+>
+> **Remember:** A* = Dijkstra + heuristic guidance. If h(v) = 0 for all v, A* degenerates to Dijkstra. If h(v) dominates, it becomes greedy.
 
-## Examples
+**One-Sentence Takeaway:** A* search combines actual distance with an admissible heuristic to find optimal paths faster than Dijkstra when a good heuristic is available.
+
+---
 
 ### Example 11.1: Dijkstra in C++
 
@@ -218,6 +273,39 @@ std::vector<std::vector<int>> floydWarshall(
 
 ---
 
+### Concept Comparison Table
+
+| Algorithm | Problem | Weight Type | Complexity | Key Limitation |
+|-----------|---------|-------------|------------|----------------|
+| Dijkstra | Single-source | Non-negative only | O((V+E) log V) | Fails with negative weights |
+| Bellman-Ford | Single-source | Any (detects neg cycles) | O(VE) | Slow for large graphs |
+| Floyd-Warshall | All-pairs | Any (no neg cycles) | Θ(V³) | O(V²) memory |
+| DAG Shortest | Single-source (DAG) | Any | O(V+E) | Requires acyclic graph |
+| A* | s-t shortest | Non-negative | O(E) practical | Needs admissible heuristic |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Non-negative weights** | Dijkstra — always use this |
+| **Negative weights** | Bellman-Ford or SPFA |
+| **All-pairs** | Floyd-Warshall (dense) or V × Dijkstra (sparse) |
+| **DAG guaranteed** | Topological sort + relax — O(V+E) |
+| **Heuristic available** | A* with admissible heuristic |
+| **Detect negative cycle** | Bellman-Ford Vth iteration or Floyd diagonal |
+
+### Cross-Application Matrix
+
+| Algorithm | DSA Interviews | Competitive Programming | System Design | Real-World |
+|-----------|---------------|----------------------|---------------|------------|
+| Dijkstra | Very common | Standard shortest path | GPS routing | Google Maps, network routing |
+| Bellman-Ford | Occasionally | Negative cycle detection | Currency arbitrage | Financial systems |
+| Floyd-Warshall | Common | Small graph all-pairs | Traffic analysis | Social network analysis |
+| DAG Shortest | Occasionally | Critical path | Task scheduling | Build systems (Make) |
+| A* | Common in AI questions | Game pathfinding | Navigation systems | Video game AI, robotics |
+
+---
+
 ## Summary
 
 | Algorithm | Type | Weights | Time | Space |
@@ -231,6 +319,46 @@ std::vector<std::vector<int>> floydWarshall(
 ---
 
 ## Exercises
+
+### Review Questions
+
+### Chapter Quiz
+
+**Q1.** Which algorithm guarantees the shortest path in a graph with negative weights?
+
+- A) Dijkstra
+- B) Bellman-Ford
+- C) A* with a consistent heuristic
+- D) Prim's algorithm
+
+<details>
+<summary>Answer</summary>
+B) Bellman-Ford handles negative weights and detects negative cycles. Dijkstra fails with negative weights.
+</details>
+
+**Q2.** What is the time complexity of Floyd-Warshall?
+
+- A) O(V²)
+- B) O(VE)
+- C) Θ(V³)
+- D) O(E log V)
+
+<details>
+<summary>Answer</summary>
+C) Θ(V³) — triple nested loop over all vertices for the intermediate k and pairs (i,j).
+</details>
+
+**Q3.** What property must an A* heuristic have to guarantee optimality?
+
+- A) Monotonic
+- B) Admissible (never overestimates)
+- C) Consistent
+- D) Dominant
+
+<details>
+<summary>Answer</summary>
+B) An admissible heuristic never overestimates the true cost to the goal, guaranteeing A* finds the optimal path.
+</details>
 
 ### Review Questions
 

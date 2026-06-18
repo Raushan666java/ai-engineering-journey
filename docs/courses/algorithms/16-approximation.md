@@ -1,5 +1,7 @@
 # Chapter 16: Approximation Algorithms
 
+> **Prerequisites:** [Chapter 15: NP-Completeness](./15-np-completeness.md) — Understanding of NP-hard problems and reductions | **Next:** [Chapter 17: Randomized Algorithms](./17-randomized.md) — From deterministic approximation to probabilistic methods
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -11,6 +13,31 @@ By the end of this chapter, students will be able to:
 5. Apply the probabilistic method for MAX-SAT approximation.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Approximation Ratio | ALG / OPT ≤ c (for minimization) | Measures how close an approximation gets to optimal |
+| Vertex Cover | Pick both endpoints of uncovered edge | Simple 2-approximation; greedy fails worse |
+| TSP (Metric) | MST-based tour + shortcutting | 2-approximation; triangle inequality is essential |
+| Set Cover | Pick set with best cost-per-new-element | O(log n)-approximation via greedy |
+| MAX-SAT | Random assignment + conditional expectation | 1 - 1/2^k approximation; derandomizable |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Approximation] --> B[Ratio Definition]
+    A --> C[Vertex Cover 2-approx]
+    A --> D[ TSP 2-approx]
+    A --> E[Set Cover O(log n)]
+    A --> F[ MAX-SAT]
+    C --> G[Pick both endpoints]
+    D --> H[MST + DFS shortcut]
+    E --> I[Greedy per-element cost]
+    F --> J[Random + Derandomize]
+```
 
 ## Theory
 
@@ -48,6 +75,12 @@ ApproxVertexCover(G):
 **Theorem 16.1.** The maximal-matching algorithm is a 2-approximation for minimum vertex cover.
 
 **Proof.** Let \( M \) be the set of edges selected by the algorithm. These edges form a matching (no two share a vertex). Any vertex cover must include at least one endpoint of each edge in \( M \), so \( |C_{\text{opt}}| \ge |M| \). The algorithm chooses \( 2|M| \) vertices, so \( |C_{\text{alg}}| = 2|M| \le 2|C_{\text{opt}}| \).
+
+> **Pro Tip:** The elegant proof: the selected edges form a matching, so any vertex cover must include at least one endpoint per edge. The algorithm picks both -- hence at most 2x optimal. This is a canonical example of a pairing argument.
+>
+> **Remember:** The greedy algorithm that picks the highest-degree vertex has a worse approximation ratio. The matching-based approach is simpler and better.
+
+**One-Sentence Takeaway:** The maximal-matching algorithm achieves a 2-approximation for vertex cover by selecting both endpoints of each matched edge.
 
 ### 16.3 Traveling Salesman: 2-Approximation
 
@@ -213,6 +246,39 @@ double greedySetCover(const std::vector<std::unordered_set<int>>& subsets,
 
 ---
 
+### Concept Comparison Table
+
+| Algorithm | Problem Type | Ratio | Key Idea | Derandomizes? |
+|-----------|-------------|-------|----------|---------------|
+| Maximal Matching VC | Vertex Cover | 2 | Pick both endpoints of matching edge | N/A |
+| MST-based TSP | Metric TSP | 2 | MST + DFS + shortcutting | N/A |
+| Christofides | Metric TSP | 1.5 | MST + perfect matching on odd vertices | N/A |
+| Greedy Set Cover | Set Cover | O(log n) | Min cost-per-new-element ratio | N/A |
+| Random MAX-SAT | MAX-SAT | 2 | Random assignment | Conditional expectation |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Approximation Ratio** | ALG/OPT for minimization; OPT/ALG for maximization; always >= 1 |
+| **PTAS vs FPTAS** | PTAS poly in n (exp in 1/e); FPTAS poly in both |
+| **Vertex Cover** | Pick both endpoints of a maximal matching edge |
+| **Metric TSP** | MST cost <= OPT; double + DFS + shortcut gives 2x |
+| **Christofides** | MST + perfect matching on odd-degree vertices = 1.5x |
+| **Set Cover** | Greedy picks min cost-per-new-element; O(log n) ratio |
+| **MAX-SAT** | Random assignment = 2-approx; conditional expectations derandomizes |
+
+### Cross-Application Matrix
+
+| Algorithm | DSA Interviews | Competitive Programming | Real-World |
+|-----------|---------------|----------------------|------------|
+| Vertex Cover 2-approx | Common pairing argument | Useful in graph problems | Network monitoring |
+| TSP 2-approx | Occasionally | Held-Karp DP better | Logistics, routing |
+| Set Cover greedy | Common | Identifying hard instances | Resource allocation |
+| MAX-SAT | Occasionally | N/A | Circuit design |
+
+---
+
 ## Summary
 
 | Problem | Algorithm | Ratio | Lower Bound |
@@ -226,6 +292,46 @@ double greedySetCover(const std::vector<std::unordered_set<int>>& subsets,
 ---
 
 ## Exercises
+
+### Review Questions
+
+### Chapter Quiz
+
+**Q1.** What is the approximation ratio of the maximal-matching algorithm for vertex cover?
+
+- A) 1.5
+- B) 2
+- C) O(log n)
+- D) H_n
+
+<details>
+<summary>Answer</summary>
+B) 2. Each matched edge contributes two vertices to the cover, while optimal needs at least one per edge.
+</details>
+
+**Q2.** Why does the MST-based TSP algorithm require the triangle inequality?
+
+- A) To compute the MST
+- B) To ensure shortcutting does not increase the tour cost
+- C) To guarantee polynomial running time
+- D) To prove optimality
+
+<details>
+<summary>Answer</summary>
+B) The triangle inequality ensures that skipping repeated vertices (shortcutting) does not increase the tour cost.
+</details>
+
+**Q3.** What is the approximation ratio of greedy set cover?
+
+- A) 2
+- B) log_2 n
+- C) H_n ≈ ln n
+- D) 1.5
+
+<details>
+<summary>Answer</summary>
+C) The greedy set cover achieves H_n ≈ ln n + γ, which is optimal up to constant factors unless P = NP.
+</details>
 
 ### Review Questions
 

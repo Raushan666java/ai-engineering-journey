@@ -1,5 +1,7 @@
 # Chapter 14: String Algorithms
 
+> **Prerequisites:** [Chapter 13: Network Flow](./13-graph-flow.md) — Algorithm design techniques, complexity analysis | **Next:** [Chapter 15: NP-Completeness](./15-np-completeness.md) — From efficient algorithms to hardness theory
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -10,6 +12,32 @@ By the end of this chapter, students will be able to:
 4. Apply suffix arrays to solve substring queries, pattern matching, and string analysis.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| KMP | Prefix function avoids re-scanning | O(n+m) linear time pattern matching |
+| Rabin-Karp | Rolling hash comparison | O(n+m) average; hash collisions can break worst case |
+| Z-Algorithm | Z-array for pattern matching | Simpler than KMP for some variants |
+| Manacher's Algorithm | Mirror property of palindromes | O(n) to find all palindromes; trickier to implement |
+| Suffix Array | Sorted suffixes via doubling + radix | O(n log n) build; O(m log n) pattern search |
+| LCP Array | Longest common prefix between adjacent suffixes | Enables O(m + log n) pattern matching |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[String Algorithms] --> B[Pattern Matching]
+    A --> C[Palindrome]
+    A --> D[Suffix Structures]
+    B --> E[KMP]
+    B --> F[Rabin-Karp]
+    B --> G[Z-Algorithm]
+    C --> H[Manacher]
+    D --> I[Suffix Array]
+    D --> J[LCP Array]
+```
 
 ## Theory
 
@@ -52,6 +80,12 @@ KMP(T, P):
 
 **Complexity:** \( O(n + m) \) time, \( O(m) \) space.
 
+> **Pro Tip:** KMP's prefix function (pi array) encodes the "border" of each prefix — the longest proper prefix that is also a suffix. This is the key to O(n+m) performance because it never backtracks in the text.
+>
+> **Remember:** The prefix function is computed on the pattern alone before matching begins. The matching phase runs in O(n) time by always advancing the text pointer.
+
+**One-Sentence Takeaway:** KMP achieves O(n+m) pattern matching by computing a prefix function on the pattern that encodes how far to shift on mismatch without re-examining matched text.
+
 ### 14.2 Rabin-Karp Algorithm
 
 **Key insight:** Use hashing. Compute the hash of the pattern and hash of each sliding window of the text. Only compare character-by-character when hashes match (to handle collisions).
@@ -71,6 +105,12 @@ RabinKarp(T, P):
 **Rolling hash:** Compute \( h(s) = (s[0] \cdot d^{m-1} + s[1] \cdot d^{m-2} + \cdots + s[m-1]) \bmod q \). Update: \( h_{\text{new}} = (d(h_{\text{old}} - s[i] \cdot d^{m-1}) + s[i+m]) \bmod q \).
 
 **Complexity:** Expected \( O(n + m) \), worst-case \( O(nm) \) (many hash collisions).
+
+> **Pro Tip:** Use a large prime modulus (e.g., 10^9+7) and a random base to minimize hash collisions. Double hashing or a rolling checksum eliminates worst-case collisions entirely.
+>
+> **Warning:** The worst-case O(nm) occurs when all window hashes collide with the pattern hash. Always do a character-by-character verification when hashes match.
+
+**One-Sentence Takeaway:** Rabin-Karp uses rolling hash for O(n+m) expected-time pattern matching with worst-case O(nm) when hash collisions are frequent.
 
 ### 14.3 Z-Algorithm
 
@@ -95,6 +135,12 @@ ComputeZ(S):
 **Pattern matching with Z:** Concatenate \( P + \text{special char} + T \), compute Z-array. Whenever \( Z[i] = m \), a match is found at position \( i - m - 1 \) in the original text.
 
 **Complexity:** \( O(n) \).
+
+> **Pro Tip:** The Z-algorithm is simpler to implement than KMP for pattern matching — just concatenate P + "$" + T, compute the Z-array, and look for Z[i] = len(P). The separator character must not appear in either string.
+>
+> **Remember:** The Z-algorithm's linear time comes from maintaining the [l, r] interval of the rightmost matching prefix — it never recomputes matches inside this window.
+
+**One-Sentence Takeaway:** The Z-algorithm computes the longest prefix match at each position in O(n) by maintaining the rightmost matching window [l, r].
 
 ### 14.4 Manacher's Algorithm
 
@@ -239,6 +285,40 @@ std::vector<int> manacher(const std::string& S) {
 
 ---
 
+### Concept Comparison Table
+
+| Algorithm | Core Idea | Time | Space | Key Feature |
+|-----------|-----------|------|-------|-------------|
+| KMP | Prefix function (borders) | O(n+m) | O(m) | No backtracking in text |
+| Rabin-Karp | Rolling hash | O(n+m) exp | O(1) | Multiple pattern search |
+| Z-Algorithm | Z-array window [l,r] | O(n) | O(n) | Simpler than KMP |
+| Manacher | Palindrome symmetry | O(n) | O(n) | All palindromes |
+| Suffix Array | Doubling + sort ranks | O(n log n) | O(n) | Versatile string queries |
+| LCP Array | Kasai's linear algorithm | O(n) | O(n) | Enables substring queries |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **KMP** | Prefix function avoids rematching; O(n+m) |
+| **Rabin-Karp** | Rolling hash with modulo; hash collision degrades to O(nm) |
+| **Z-Algorithm** | Linear via [l,r] interval; concat P + $ + T for matching |
+| **Manacher** | Symmetry reduces redundant expansion; use # separators |
+| **Suffix Array** | Prefix-doubling O(n log n); use LCP for full power |
+| **Key Application** | LCP → longest repeated substring, distinct substrings |
+
+### Cross-Application Matrix
+
+| Algorithm | DSA Interviews | Competitive Programming | System Design | Real-World |
+|-----------|---------------|----------------------|---------------|------------|
+| KMP | Common | String matching | N/A | Word processors |
+| Rabin-Karp | Common | Multiple pattern search | Plagiarism detection | Search engines |
+| Z-Algorithm | Occasionally | Simpler KMP alternative | N/A | Bioinformatics |
+| Manacher | Occasionally | Palindrome problems | N/A | NLP |
+| Suffix Array | Advanced | Core technique | Genome indexing | Bioinformatics |
+
+---
+
 ## Summary
 
 | Algorithm | Problem | Time | Space |
@@ -253,6 +333,46 @@ std::vector<int> manacher(const std::string& S) {
 ---
 
 ## Exercises
+
+### Review Questions
+
+### Chapter Quiz
+
+**Q1.** What is the key idea behind KMP's linear time guarantee?
+
+- A) Rolling hash
+- B) The prefix function that avoids re-examining matched characters
+- C) Using binary search on the pattern
+- D) Preprocessing the text instead of the pattern
+
+<details>
+<summary>Answer</summary>
+B) The prefix function (pi) encodes borders — when a mismatch occurs, we shift by the border length without going back in the text.
+</details>
+
+**Q2.** What is the worst-case time complexity of naive Rabin-Karp?
+
+- A) O(n+m)
+- B) O(nm)
+- C) O(n²)
+- D) O(n log n)
+
+<details>
+<summary>Answer</summary>
+B) O(nm) when many hash collisions force full character-by-character comparison.
+</details>
+
+**Q3.** What application does the LCP array enable that the suffix array alone cannot?
+
+- A) Lexicographic sorting
+- B) Longest common prefix queries between any two suffixes
+- C) Pattern matching
+- D) Finding the longest suffix
+
+<details>
+<summary>Answer</summary>
+B) The LCP array enables O(1) longest common prefix queries between consecutive sorted suffixes, which unlocks distinct substrings counting and substring search.
+</details>
 
 ### Review Questions
 

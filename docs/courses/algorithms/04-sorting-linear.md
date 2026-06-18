@@ -1,5 +1,7 @@
 # Chapter 4: Linear-Time Sorting
 
+> **Prerequisites:** [Chapter 3: Comparison-Based Sorting](./03-sorting-nlogn.md) — The Ω(n log n) lower bound for comparison sorts | **Next:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) — Beyond sorting: applying divide-and-conquer broadly
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -10,6 +12,30 @@ By the end of this chapter, students will be able to:
 4. Compare all sorting algorithms across key dimensions: time, space, stability, and data assumptions.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Counting Sort | Count frequencies, compute prefix sums, place elements | O(n + k) time — blistering fast when key range k is small |
+| Radix Sort | Sort digit by digit using stable sort | O(d(n + r)) — ideal for fixed-width integers and strings |
+| Bucket Sort | Distribute into buckets, sort individually | Expected O(n) — excellent on uniformly distributed data |
+| Comparison Bypass | Key structure replaces comparisons | Non-comparison sorts beat Ω(n log n) by exploiting key properties |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Non-Comparison Sorting] --> B[Counting Sort]
+    A --> C[Radix Sort]
+    A --> D[Bucket Sort]
+    B --> E[O(n+k), stable]
+    C --> F[O(d(n+r)), stable]
+    D --> G[Expected O(n)]
+    E --> H[Choose by key properties]
+    F --> H
+    G --> H
+```
 
 ## Theory
 
@@ -40,6 +66,12 @@ CountingSort(A, n, k):
 
 **Stability:** Counting sort is stable when the output array is filled from right to left.
 
+> **Pro Tip:** Counting sort is your fastest option when keys are integers with a limited range (e.g., ages, grades, ASCII characters). For k ≤ n, it beats any comparison sort.
+>
+> **Remember:** The right-to-left pass is what makes counting sort stable — reversing the direction breaks stability.
+
+**One-Sentence Takeaway:** Counting sort achieves O(n + k) by using frequencies and prefix sums instead of comparisons, perfect for small-range integer keys.
+
 ### 4.2 Radix Sort
 
 Radix sort processes digits from least significant to most significant (LSD-first). At each digit position, it performs a stable sort (typically counting sort) on the digit values.
@@ -61,6 +93,12 @@ If the keys are integers in the range \([0, n^c - 1]\), then \( d = \log_{r} (n^
 **Theorem 4.1 (Radix sort correctness).** Given \( d \)-digit numbers where each digit is in the range \([0, r-1]\), LSD-first radix sort with a stable digit sort correctly sorts the input.
 
 **Proof by induction.** After processing the \( i \) least significant digits, the array is sorted by those digits. The stable sort on the \((i+1)\)-th digit preserves the relative order of elements with equal \((i+1)\)-th digit, maintaining the correctness of the previously sorted lower digits.
+
+> **Pro Tip:** Choose radix base wisely — base 256 (byte-by-byte) on 32-bit integers needs only 4 passes, each with r=256 counters. This usually beats base 10's 10 passes.
+>
+> **Warning:** Radix sort only works with LSD-first for general inputs. MSD-first requires recursion and can degrade.
+
+**One-Sentence Takeaway:** Radix sort achieves O(n) for fixed-width keys by processing digits one at a time with a stable auxiliary sort, bypassing the Ω(n log n) comparison bound.
 
 ### 4.3 Bucket Sort
 
@@ -87,9 +125,13 @@ BucketSort(A, n):
 E\left[\sum_{i=0}^{n-1} O(n_i^2)\right] = O\left(\sum_{i=0}^{n-1} E[n_i^2]\right) = O\left(\sum_{i=0}^{n-1} \text{Var}(n_i) + (E[n_i])^2\right) = O\left(\sum_{i=0}^{n-1} (1 - 1/n) + 1\right) = O(n).
 \]
 
----
+> **Pro Tip:** Bucket sort needs a good hash function that distributes elements uniformly. If your data is not uniform, use a different algorithm — bucket sort degrades to O(n²).
+>
+> **Remember:** Bucket sort is efficient only when the number of buckets is proportional to n and the distribution is uniform.
 
-## Examples
+**One-Sentence Takeaway:** Bucket sort achieves expected O(n) by distributing elements into sorted buckets, relying on uniform distribution for its probabilistic guarantee.
+
+---
 
 ### Example 4.1: Counting Sort in C++
 
@@ -151,6 +193,38 @@ void radixSort(std::vector<int>& A) {
 
 ---
 
+### Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Counting Sort | Frequency → prefix sum → placement | O(n + k) time, O(n + k) space | Small integer ranges |
+| Radix Sort | Digit-by-digit stable sorting | Multiple passes, each a stable sort | Fixed-width integers, strings |
+| Bucket Sort | Distribute → sort buckets → concatenate | Expected O(n), worst O(n²) | Uniformly distributed floats |
+| LSD vs MSD | Least vs Most Significant Digit first | LSD processes with stable sort | Radix sort choice matters |
+| Comparison Bypass | Use key structure, not comparisons | Beats Ω(n log n) bound | Large-scale data with structured keys |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Key Range Small** | Counting sort — O(n + k), stable |
+| **Fixed-Width Integers** | Radix sort with base 256 — best practical linear sort |
+| **Uniform Distribution** | Bucket sort — O(n) expected |
+| **Stable** | Counting sort, radix sort (per digit) |
+| **In-Place** | None of these — all require extra space |
+| **Common Pitfall** | Using counting sort with huge k; using bucket sort on non-uniform data |
+
+### Cross-Application Matrix
+
+| Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
+|-----------|---------------|----------------------|---------------|-------------------|
+| Counting Sort | Occasionally — sort by age/grade | Rare — only when k constraint exists | N/A | Key-indexed counting theory |
+| Radix Sort | Sometimes — sort strings, sort by multiple keys | Used in suffix array construction | Database sort optimization | Linear-time sorting theory |
+| Bucket Sort | Occasionally asked conceptually | Rare — needs uniform guarantee | Approximate sorting, histogramming | Average-case analysis |
+| Non-Comparison Insight | Frequently — "sort in O(n)" questions | Choosing correct algorithm | Large-scale data pipeline design | Lower bound understanding |
+
+---
+
 ## Summary
 
 - **Counting sort:** \( O(n + k) \), stable, excellent when the key range \( k \) is \( O(n) \).
@@ -158,6 +232,46 @@ void radixSort(std::vector<int>& A) {
 - **Bucket sort:** Expected \( O(n) \), requires a uniform distribution and a good hash function.
 - Non-comparison sorts exploit key structure and are not subject to the \( \Omega(n \log n) \) lower bound.
 - The choice of sorting algorithm depends on data characteristics, memory constraints, and stability requirements.
+
+---
+
+### Chapter Quiz
+
+**Q1.** Which non-comparison sort has O(n + k) time complexity?
+
+- A) Radix sort
+- B) Bucket sort
+- C) Counting sort
+- D) Quick sort
+
+<details>
+<summary>Answer</summary>
+C) Counting sort — O(n + k) where k is the key range.
+</details>
+
+**Q2.** What is the worst-case time complexity of bucket sort?
+
+- A) O(n)
+- B) O(n log n)
+- C) O(n²)
+- D) O(log n)
+
+<details>
+<summary>Answer</summary>
+C) O(n²) — when all elements land in a single bucket.
+</details>
+
+**Q3.** How many passes does radix sort need for 32-bit integers using base 256?
+
+- A) 1
+- B) 4
+- C) 8
+- D) 32
+
+<details>
+<summary>Answer</summary>
+B) 4 — each pass processes 8 bits (256 values), and 32/8 = 4.
+</details>
 
 ---
 

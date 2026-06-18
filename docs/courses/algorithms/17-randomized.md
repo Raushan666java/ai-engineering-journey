@@ -1,5 +1,7 @@
 # Chapter 17: Randomized Algorithms
 
+> **Prerequisites:** [Chapter 16: Approximation Algorithms](./16-approximation.md) — Algorithm design for hard problems | **Next:** [Chapter 18: Advanced Topics](./18-advanced.md) — From randomized methods to online and streaming algorithms
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -10,6 +12,60 @@ By the end of this chapter, students will be able to:
 4. Analyze the expected running time of randomized algorithms.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Monte Carlo | May give wrong answer with bounded probability | Probability of error can be made arbitrarily small |
+| Las Vegas | Always correct; running time is random | Expected time analysis, not worst case |
+| Randomized Quicksort | Random pivot avoids worst case | O(n log n) expected; O(n²) worst case with vanishing probability |
+| Randomized Quickselect | Random pivot for k-th smallest | O(n) expected time selection |
+| Miller-Rabin | Probabilistic primality test | O(log³ n); composite detected with probability ≥ 3/4 |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Randomized Algorithms] --> B[Monte Carlo]
+    A --> C[Las Vegas]
+    B --> D[May err with bounded probability]
+    C --> E[Always correct, random time]
+    A --> F[Randomized Quickselect]
+    A --> G[Miller-Rabin]
+    A --> H[Randomized Quicksort]
+```
+
+## Theory
+
+![Randomized Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch17-randomized.png)
+
+### 17.1 Classification
+
+Randomized algorithms are classified into two types:
+
+**Las Vegas algorithms:** Always produce a correct result; the running time is a random variable. Examples: randomized quicksort, randomized quickselect.
+
+**Monte Carlo algorithms:** May produce an incorrect result with bounded probability; the running time is deterministic. Examples: Miller-Rabin primality test, Karger's minimum cut algorithm.
+
+> **Pro Tip:** Las Vegas = always right, sometimes slow. Monte Carlo = always fast, sometimes wrong. Use Las Vegas when correctness is critical (sorting), Monte Carlo when speed matters and errors can be tolerated (primality).
+>
+> **Remember:** A Monte Carlo algorithm can be converted to a Las Vegas one if you can verify the answer efficiently and retry on failure.
+
+**One-Sentence Takeaway:** Las Vegas algorithms are always correct with random running time; Monte Carlo algorithms have bounded error with fixed running time.
+
+### 17.2 Randomized Quickselect
+
+```mermaid
+flowchart LR
+    A[Randomized Algorithms] --> B[Monte Carlo]
+    A --> C[Las Vegas]
+    B --> D[May err with bounded probability]
+    C --> E[Always correct, random time]
+    A --> F[Randomized Quickselect]
+    A --> G[Miller-Rabin]
+    A --> H[Randomized Quicksort]
+```
 
 ## Theory
 
@@ -190,6 +246,37 @@ bool millerRabin(int64_t n, int k) {
 
 ---
 
+### Concept Comparison Table
+
+| Algorithm | Type | Time | Correctness | Key Intuition |
+|-----------|------|------|-------------|---------------|
+| Randomized Quicksort | Las Vegas | O(n log n) expected | Always | Random pivot avoids worst case |
+| Randomized Quickselect | Las Vegas | O(n) expected | Always | Random pivot gives linear expected time |
+| Miller-Rabin | Monte Carlo | O(k log^3 n) | Error ≤ 4^-k | Strong pseudoprime check, k rounds |
+| Karger Min-Cut | Monte Carlo | O(n^4 log n) | High probability | Random edge contraction |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Las Vegas** | Always correct; expected time analysis; examples: quicksort, quickselect |
+| **Monte Carlo** | Bounded error; deterministic time; amplify via repetition; examples: Miller-Rabin, Karger |
+| **Quickselect** | Expected O(n); probability of worst case is 1/n! |
+| **Quicksort** | Expected O(n log n); ~1.39 n log_2 n comparisons |
+| **Miller-Rabin** | Error ≤ 4^-k; strong pseudoprime; deterministic for n < 2^64 |
+| **Other Techniques** | Karger min-cut, Freivalds matrix check, birthday paradox |
+
+### Cross-Application Matrix
+
+| Algorithm | DSA Interviews | Competitive Programming | Cryptography | Real-World |
+|-----------|---------------|----------------------|-------------|------------|
+| Randomized Quicksort | Common | Standard sorting | N/A | General sorting |
+| Randomized Quickselect | Common | Median/order stats | N/A | Order statistics |
+| Miller-Rabin | Occasionally | Rare (precomputed primes) | RSA key generation | SSL/TLS |
+| Karger Min-Cut | Rare | Advanced | N/A | Network reliability |
+
+---
+
 ## Summary
 
 - **Las Vegas algorithms** are always correct with random running time (quickselect, quicksort).
@@ -203,8 +290,48 @@ bool millerRabin(int64_t n, int k) {
 
 ### Review Questions
 
+### Chapter Quiz
+
+**Q1.** What is the difference between Las Vegas and Monte Carlo algorithms?
+
+- A) Las Vegas is faster; Monte Carlo is more accurate
+- B) Las Vegas always gives correct answers; Monte Carlo may err with bounded probability
+- C) Las Vegas uses randomness; Monte Carlo is deterministic
+- D) There is no difference
+
+<details>
+<summary>Answer</summary>
+B) Las Vegas algorithms are always correct (running time is random); Monte Carlo algorithms have bounded error probability (running time is fixed).
+</details>
+
+**Q2.** What is the expected time complexity of randomized quickselect?
+
+- A) O(log n)
+- B) O(n)
+- C) O(n log n)
+- D) O(n²)
+
+<details>
+<summary>Answer</summary>
+B) O(n) expected. The recurrence T(n) ≤ T(3n/4) + O(n) solves to O(n).
+</details>
+
+**Q3.** What is the source of error in the Miller-Rabin primality test?
+
+- A) Fermat's little theorem is false
+- B) Carmichael numbers pass strong pseudoprime tests with some probability
+- C) The algorithm uses a fixed number of random bases
+- D) Both B and C
+
+<details>
+<summary>Answer</summary>
+D) For a composite number, a random base has at most 25% chance of falsely declaring it prime. Running k independent rounds reduces error to 4^-k.
+</details>
+
+### Review Questions
+
 1. Distinguish between Monte Carlo and Las Vegas algorithms with examples.
-2. Why does randomized quicksort avoid the worst-case \( O(n^2) \) behavior?
+2. Why does randomized quicksort avoid the worst-case O(n²) behavior?
 3. What is the source of error in the Miller-Rabin test?
 
 ### Application Problems

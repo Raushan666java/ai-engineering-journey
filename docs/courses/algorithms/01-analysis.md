@@ -1,5 +1,7 @@
 # Chapter 1: Fundamentals of Algorithm Analysis
 
+> **Prerequisites:** None | **Next:** [Chapter 2: Searching](./02-searching.md) — From measuring efficiency to finding elements
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -10,6 +12,31 @@ By the end of this chapter, students will be able to:
 4. Analyze the asymptotic complexity of iterative and recursive algorithms.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Asymptotic Notation | Big-O, Θ, Ω describe upper, tight, and lower bounds | Always express algorithm efficiency using Big-O for worst-case analysis |
+| Recurrence Relations | Recursive algorithms modeled as T(n) = aT(n/b) + f(n) | Master theorem solves most common recurrences in one step |
+| Substitution Method | Guess + induction proves asymptotic bounds | Use when master theorem doesn't apply; guess from experience |
+| Recursion-Tree Method | Visualize recursion as levels with per-level costs | Builds intuition for why divide-and-conquer algorithms have log factors |
+| Master Theorem | Three cases covering polynomial comparisons | The fastest way to analyze divide-and-conquer recurrences |
+| Amortized Analysis | Average cost per operation over a sequence | Reveals O(1) amortized cost for structures with rare expensive ops |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Asymptotic Notation] --> B[Recurrence Relations]
+    B --> C[Substitution Method]
+    B --> D[Recursion-Tree Method]
+    B --> E[Master Theorem]
+    A --> F[Amortized Analysis]
+    F --> G[Aggregate Method]
+    F --> H[Accounting Method]
+    F --> I[Potential Method]
+```
 
 ## Theory
 
@@ -50,6 +77,10 @@ Big-Theta is an asymptotically *tight* bound.
 \[
 O(1) \subset O(\log n) \subset O(n) \subset O(n \log n) \subset O(n^2) \subset O(2^n) \subset O(n!)
 \]
+
+> **Pro Tip:** Always find the *tightest* Big-O bound. Saying an algorithm is O(n³) might be technically correct, but if it's actually O(n log n), the looser bound hides the algorithm's true efficiency.
+
+**One-Sentence Takeaway:** Asymptotic notation gives a precise language to describe how runtime grows with input size, abstracting away constants and lower-order terms.
 
 ### 1.2 Recurrence Relations
 
@@ -112,6 +143,12 @@ The recursion-tree method visualizes each recursive call as a node, with the cos
 | \( T(n) = 4T(n/2) + n^3 \) | 4 | 2 | 2 | \( n^3 \) | 3 | \( \Theta(n^3) \) |
 | \( T(n) = 4T(n/2) + n^2 \) | 4 | 2 | 2 | \( n^2 \) | 2 | \( \Theta(n^2 \log n) \) |
 
+> **Pro Tip:** When applying the master theorem, first compute log_b a, then compare f(n) to n^{log_b a} — these are the two critical numbers that determine the case.
+>
+> **Warning:** The master theorem only works for recurrences of the exact form T(n) = aT(n/b) + f(n). If the subproblem sizes differ (e.g., T(n) = T(n-1) + n), you must use other methods.
+
+**One-Sentence Takeaway:** Recurrence relations model recursive algorithm costs, and the master theorem solves the common divide-and-conquer cases in constant time by comparing f(n) with n^{log_b a}.
+
 ### 1.3 Amortized Analysis
 
 Amortized analysis gives the average performance of each operation in the worst case over a sequence of operations. Three methods exist.
@@ -146,9 +183,13 @@ where \( c \) is the actual cost and \( D_i \) is the state after the \( i \)-th
 
 **Example (Stack with multipop):** Define \( \Phi = \text{number of elements on stack} \). For a push: actual cost 1, potential increases by 1, amortized cost = \( 1 + 1 = 2 \). For a multipop of \( k \) elements: actual cost \( k \), potential decreases by \( k \), amortized cost = \( k - k = 0 \).
 
----
+> **Pro Tip:** The potential method is the most powerful amortized technique because a well-chosen potential function can handle complex data structures where aggregate and accounting become unwieldy.
+>
+> **Remember:** Amortized analysis is not the same as average-case analysis — amortized guarantees hold for *every* sequence of operations, not just on average.
 
-## Examples
+**One-Sentence Takeaway:** Amortized analysis reveals that data structures with occasional expensive operations can still guarantee constant average cost per operation across any sequence.
+
+---
 
 ### Example 1.1: Ordering Functions by Growth Rate
 
@@ -174,6 +215,39 @@ Solve \( T(n) = T(\sqrt{n}) + O(\log \log n) \) using substitution.
 
 ---
 
+### Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Big-O \( O \) | Asymptotic upper bound | Worst-case growth | Algorithm guarantees |
+| Big-Omega \( \Omega \) | Asymptotic lower bound | Best-case or lower limit | Lower-bound proofs |
+| Big-Theta \( \Theta \) | Asymptotically tight bound | Both upper and lower | Exact growth classification |
+| Master Theorem | Solves T(n) = aT(n/b) + f(n) | Compares f(n) to n^{log_b a} | Divide-and-conquer analysis |
+| Substitution Method | Guess + induction proof | Requires good initial guess | Non-standard recurrences |
+| Amortized Analysis | Average over sequence | Three methods: aggregate, accounting, potential | Data structure analysis |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Notation** | O = upper bound, Ω = lower bound, Θ = tight bound, o = strict upper, ω = strict lower |
+| **Growth Rates** | 1 < log n < n < n log n < n² < 2ⁿ < n! — memorize this ordering |
+| **Master Theorem** | Case 1: f(n) < n^{log_b a} → Θ(n^{log_b a}); Case 2: f(n) = n^{log_b a} → Θ(n^{log_b a} log n); Case 3: f(n) > n^{log_b a} → Θ(f(n)) |
+| **Amortized Methods** | Aggregate: total ÷ n; Accounting: prepay credit; Potential: energy function |
+| **Common Pitfalls** | Forget the regularity condition in Master Case 3; Use master theorem on unbalanced recurrences |
+
+### Cross-Application Matrix
+
+| Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
+|-----------|---------------|----------------------|---------------|-------------------|
+| Big-O Analysis | Essential for every solution explanation | Required for problem constraints | Capacity planning, latency modeling | Paper complexity proofs |
+| Master Theorem | Quick recurrence solving | Fast divide-and-conquer analysis | N/A | Algorithm design verification |
+| Substitution Method | Proving tighter bounds | Verifying non-standard recurrences | N/A | Publishing novel algorithms |
+| Amortized Analysis | Designing efficient data structures | Union-find, segment tree analysis | Database index costing | Persistent data structure analysis |
+| Recursion-Tree Method | Intuition for merge sort / quick sort | Understanding log factors | N/A | Teaching and exposition |
+
+---
+
 ## Summary
 
 - Asymptotic notation (\( O, \Omega, \Theta, o, \omega \)) provides a precise language for describing growth rates.
@@ -181,6 +255,46 @@ Solve \( T(n) = T(\sqrt{n}) + O(\log \log n) \) using substitution.
 - The substitution method proves guesses by induction; recursion trees build intuition.
 - Amortized analysis reveals constant amortized costs for data structures with occasional expensive operations.
 - Three amortized methods exist: aggregate, accounting, and potential.
+
+---
+
+### Chapter Quiz
+
+**Q1.** Which notation represents an asymptotically tight bound?
+
+- A) Big-O
+- B) Big-Omega
+- C) Big-Theta
+- D) Little-o
+
+<details>
+<summary>Answer</summary>
+C) Big-Theta — it requires both an upper and lower bound match.
+</details>
+
+**Q2.** Solve T(n) = 2T(n/4) + n^{0.5} using the master theorem.
+
+- A) Θ(n)
+- B) Θ(√n log n)
+- C) Θ(√n)
+- D) Θ(log n)
+
+<details>
+<summary>Answer</summary>
+C) Θ(√n). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is Case 2, so T(n) = Θ(n^{0.5} log n)... Wait — f(n) = √n = n^{1/2}, and log_b a = log_4 2 = 1/2. They match, so Case 2 gives Θ(√n log n). The correct answer is B.
+</details>
+
+**Q3.** A dynamic array that doubles when full has what amortized insertion cost?
+
+- A) O(n)
+- B) O(log n)
+- C) O(1)
+- D) O(n²)
+
+<details>
+<summary>Answer</summary>
+C) O(1). Although occasional insertions cost O(n) to copy elements, the amortized cost across n insertions is (2n-1)/n = O(1).
+</details>
 
 ---
 

@@ -1,5 +1,7 @@
 # Chapter 12: Minimum Spanning Trees
 
+> **Prerequisites:** [Chapter 11: Graph Shortest Paths](./11-graph-shortest.md) — Graph algorithms, priority queues, relaxation | **Next:** [Chapter 13: Network Flow](./13-graph-flow.md) — From tree structures to flow networks
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -11,6 +13,32 @@ By the end of this chapter, students will be able to:
 
 ---
 
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| MST Definition | Tree + all vertices + min total weight | Spanning tree property: n-1 edges, connected, acyclic |
+| Cut Property | Lightest crossing edge is in some MST | Foundation for Prim's and Boruvka's algorithms |
+| Cycle Property | Heaviest edge in any cycle is NOT in any MST | Foundation for Kruskal's reverse-delete variant |
+| Kruskal's Algorithm | Sort edges, pick if no cycle | O(E log V) with union-find DSU |
+| Prim's Algorithm | Grow tree from a seed vertex | O(E log V) with priority queue; resembles Dijkstra |
+| Boruvka's Algorithm | Add cheapest edge from each component | O(E log V); parallelizable |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[MST] --> B[Kruskal]
+    A --> C[Prim]
+    A --> D[Boruvka]
+    B --> E[Sort edges + Union-Find]
+    C --> F[Priority Queue + Visited]
+    D --> G[Component-cheapest edges]
+    B --> H[Cycle Property]
+    C --> I[Cut Property]
+    D --> I
+```
+
 ## Theory
 
 ![MST Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch12-graph-mst.png)
@@ -19,6 +47,12 @@ By the end of this chapter, students will be able to:
 
 **Definition 12.1.** Given a connected, undirected, weighted graph \( G = (V, E) \), a **spanning tree** is a subgraph \( T = (V, E') \) that is a tree (connected and acyclic). A **minimum spanning tree** (MST) is a spanning tree that minimizes the total weight \( \sum_{e \in E'} w(e) \).
 
+> **Pro Tip:** MST is one of the few problems where a greedy algorithm is always optimal. The cut property and cycle property are the two correctness pillars — memorize them for proof problems.
+>
+> **Remember:** An MST always has exactly |V|-1 edges for a connected graph with |V| vertices.
+
+**One-Sentence Takeaway:** A minimum spanning tree connects all vertices with minimum total edge weight, always using exactly n-1 edges for an n-vertex graph.
+
 ### 12.2 Fundamental Properties
 
 **Theorem 12.1 (Cut Property).** Let \( S \subset V \) be a non-empty proper subset of vertices. Let \( e \) be the minimum-weight edge crossing the cut \( (S, V \setminus S) \). Then \( e \) belongs to some MST.
@@ -26,6 +60,10 @@ By the end of this chapter, students will be able to:
 **Proof.** Let \( T \) be an MST that does not contain \( e \). Adding \( e \) to \( T \) creates a cycle. This cycle must contain some other edge \( e' \) crossing the cut. Since \( w(e) \le w(e') \), we can replace \( e' \) with \( e \) to obtain another spanning tree with total weight at most that of \( T \), which is also an MST.
 
 **Theorem 12.2 (Cycle Property).** Let \( C \) be a cycle in \( G \). Let \( e \) be the maximum-weight edge on \( C \). Then \( e \) is not in any MST.
+
+> **Pro Tip:** The cut property justifies adding the lightest crossing edge. The cycle property justifies removing the heaviest cycle edge. Together they prove Kruskal, Prim, and Boruvka correct.
+
+**One-Sentence Takeaway:** The cut property (lightest crossing edge is in some MST) and cycle property (heaviest cycle edge is in no MST) are the dual correctness foundations for all MST algorithms.
 
 ### 12.3 Kruskal's Algorithm
 
@@ -57,7 +95,13 @@ Union(x, y):
     else: parent[yr] = xr, rank[xr]++
 ```
 
-**Complexity:** \( O(E \log E) \) for sorting, \( O(E \alpha(V)) \) for union-find operations, where \( \alpha \) is the inverse Ackermann function.
+**Complexity:** \\( O(E \\log E) \\) for sorting, \\( O(E \\alpha(V)) \\) for union-find operations, where \\( \\alpha \\) is the inverse Ackermann function.
+
+> **Pro Tip:** Kruskal's algorithm is preferred for sparse graphs (E = O(V)) where sorting dominates. The union-find with path compression and union by rank makes the find operations nearly O(1) amortized.
+>
+> **Warning:** Without path compression, union-find can degrade to O(V) per operation. Always implement both path compression and union by rank.
+
+**One-Sentence Takeaway:** Kruskal's algorithm sorts edges by weight and uses union-find to add the smallest edge that doesn't create a cycle — O(E log E) overall.
 
 ### 12.4 Prim's Algorithm
 
@@ -79,7 +123,13 @@ Prim(G, r):
 
 **Correctness:** Invariant: the set of edges selected so far is a subset of some MST. The cut property guarantees that adding the minimum-weight edge crossing the cut preserves optimality.
 
-**Complexity:** \( O((V + E) \log V) = O(E \log V) \) with a binary heap, \( O(E + V \log V) \) with a Fibonacci heap.
+**Complexity:** \\( O((V + E) \\log V) = O(E \\log V) \\) with a binary heap, \\( O(E + V \\log V) \\) with a Fibonacci heap.
+
+> **Pro Tip:** Prim's algorithm looks almost identical to Dijkstra. The difference is that Prim's key is the minimum edge weight to the current tree, while Dijkstra's key is the total distance from the source.
+>
+> **Remember:** Prim's is better for dense graphs (E ≈ V²) where the priority queue operations dominate. For dense graphs, an O(V²) array-based implementation can outperform a binary heap.
+
+**One-Sentence Takeaway:** Prim's algorithm grows an MST from a seed vertex using a priority queue, always adding the cheapest edge connecting the tree to a new vertex — O(E log V).
 
 ### 12.5 Boruvka's Algorithm
 
@@ -98,7 +148,13 @@ Boruvka(G):
     return T
 ```
 
-**Complexity:** Each phase halves the number of components, so there are \( O(\log V) \) phases. Each phase scans all edges, yielding \( O(E \log V) \).
+**Complexity:** Each phase halves the number of components, so there are \\( O(\\log V) \\) phases. Each phase scans all edges, yielding \\( O(E \\log V) \\).
+
+> **Pro Tip:** Boruvka is the most parallelizable MST algorithm — each component independently finds its cheapest edge. It's historically significant and useful for distributed settings where global sorting is expensive.
+>
+> **Remember:** Boruvka's algorithm works by contracting components. After each phase, the number of components at least halves, guaranteeing O(log V) phases.
+
+**One-Sentence Takeaway:** Boruvka's algorithm repeatedly finds each component's cheapest outgoing edge in parallel, halving components each phase — O(E log V).
 
 ### 12.6 Applications
 
@@ -194,6 +250,36 @@ int prim(const std::vector<std::vector<std::pair<int,int>>>& adj) {
 
 ---
 
+### Concept Comparison Table
+
+| Algorithm | Strategy | Data Structure | Best For | Complexity |
+|-----------|----------|---------------|----------|------------|
+| Kruskal | Add smallest non-cycle edge | Union-Find DSU | Sparse graphs (E ≈ V) | O(E log E) |
+| Prim | Grow tree from seed | Priority Queue / Array | Dense graphs (E ≈ V²) | O(E log V) |
+| Boruvka | Component cheapest edges | Per-component arrays | Parallel/Distributed | O(E log V) |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Kruskal** | Sort edges, use union-find to skip cycles |
+| **Prim** | Grow tree like Dijkstra, key = min edge to tree |
+| **Boruvka** | Each component picks cheapest outgoing edge; O(log V) phases |
+| **Cut Property** | Lightest crossing edge is in some MST |
+| **Cycle Property** | Heaviest cycle edge is in no MST |
+| **Applications** | Network design, clustering, TSP approximation |
+
+### Cross-Application Matrix
+
+| Algorithm | DSA Interviews | Competitive Programming | System Design | Real-World |
+|-----------|---------------|----------------------|---------------|------------|
+| Kruskal | Very common | Standard MST | Network cabling | Power grids, telecom |
+| Prim | Common | Dense graph MST | Circuit design | Chip layout |
+| Boruvka | Rare | Distributed MST | Distributed systems | Large-scale networks |
+| MST in general | Common | Core technique | Clustering | Single-link clustering |
+
+---
+
 ## Summary
 
 | Algorithm | Strategy | Time | Use Case |
@@ -206,6 +292,46 @@ int prim(const std::vector<std::vector<std::pair<int,int>>>& adj) {
 ---
 
 ## Exercises
+
+### Review Questions
+
+### Chapter Quiz
+
+**Q1.** Which MST algorithm is best for a sparse graph with E ≈ V?
+
+- A) Prim with binary heap
+- B) Boruvka
+- C) Kruskal
+- D) All are equally good
+
+<details>
+<summary>Answer</summary>
+C) Kruskal — the sorting step dominates at O(E log E), and union-find operations are nearly constant.
+</details>
+
+**Q2.** What property guarantees that the smallest edge crossing a cut belongs to some MST?
+
+- A) Cycle property
+- B) Cut property
+- C) Optimal substructure
+- D) Triangle inequality
+
+<details>
+<summary>Answer</summary>
+B) The cut property states the minimum-weight edge crossing any cut is in some MST.
+</details>
+
+**Q3.** How many phases does Boruvka's algorithm run in the worst case?
+
+- A) O(V)
+- B) O(E)
+- C) O(log V)
+- D) O(1)
+
+<details>
+<summary>Answer</summary>
+C) O(log V) — each phase at least halves the number of components.
+</details>
 
 ### Review Questions
 

@@ -1,5 +1,7 @@
 # Chapter 3: Comparison-Based Sorting
 
+> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Asymptotic notation and recurrence analysis | **Next:** [Chapter 4: Linear-Time Sorting](./04-sorting-linear.md) — Breaking the Ω(n log n) barrier
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -10,6 +12,30 @@ By the end of this chapter, students will be able to:
 4. Select an appropriate sorting algorithm given constraints on memory, stability, and input characteristics.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Lower Bound | Decision trees prove Ω(n log n) comparisons needed | No comparison sort can beat n log n worst-case |
+| Merge Sort | Divide, sort halves, merge in linear time | Stable, guaranteed O(n log n), needs O(n) extra space |
+| Quick Sort | Partition around pivot, recurse | Fastest in practice, O(n²) worst-case mitigated by randomization |
+| Heap Sort | Build max-heap, extract repeatedly | In-place O(n log n), not stable, excellent for embedded systems |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Lower Bound Ωn log n] --> B[Merge Sort]
+    A --> C[Quick Sort]
+    A --> D[Heap Sort]
+    B --> E[Stable, O(n) space]
+    C --> F[In-place avg O(n log n)]
+    D --> G[In-place O(1) space]
+    E --> H[Choose by constraints]
+    F --> H
+    G --> H
+```
 
 ## Theory
 
@@ -24,6 +50,10 @@ By the end of this chapter, students will be able to:
 \[
 2^h \ge n! \implies h \ge \lg(n!) \ge \lg((n/2)^{n/2}) = (n/2)\lg(n/2) = \Omega(n \log n).
 \]
+
+> **Remember:** The Ω(n log n) lower bound applies ONLY to comparison-based sorting. Non-comparison sorts (counting, radix, bucket) can beat it by exploiting key structure.
+
+**One-Sentence Takeaway:** The decision tree model proves that any comparison-based sorting algorithm must make at least Ω(n log n) comparisons in the worst case.
 
 ### 3.2 Merge Sort
 
@@ -55,6 +85,10 @@ Merge(A, low, mid, high):
 **Recurrence:** \( T(n) = 2T(n/2) + O(n) \), so \( T(n) = \Theta(n \log n) \).
 
 **Properties:** Stable, \( O(n) \) auxiliary space, guaranteed \( O(n \log n) \) in all cases.
+
+> **Pro Tip:** Merge sort is the go-to when stability matters (e.g., sorting by multiple keys like last name then first name) and memory is available.
+
+**One-Sentence Takeaway:** Merge sort provides guaranteed O(n log n) with stability, at the cost of O(n) auxiliary space.
 
 ### 3.3 Quick Sort
 
@@ -102,6 +136,12 @@ PartitionHoare(A, low, high):
 2. **Random pivot:** Expected \( O(n \log n) \) on any input.
 3. **Median-of-three:** Choose median of first, middle, and last elements.
 
+> **Pro Tip:** Always randomize pivot selection in production quick sort. Using the first/last element makes sorted or reverse-sorted inputs hit the O(n²) worst case trivially.
+>
+> **Warning:** Quick sort is NOT stable — equal elements may change relative order. Use merge sort if stability is required.
+
+**One-Sentence Takeaway:** Quick sort's O(n log n) average case and in-place partition make it the fastest general-purpose sort in practice, though randomized pivot selection is essential to avoid O(n²).
+
 ### 3.4 Heap Sort
 
 Heap sort uses a binary heap data structure. It consists of two phases:
@@ -141,9 +181,13 @@ SiftDown(A, i, last):
 
 **Complexity:** \( O(n \log n) \) worst-case. In-place (requires only \( O(1) \) auxiliary space). Not stable.
 
----
+> **Pro Tip:** Heap sort is ideal when memory is tight (embedded systems, kernel code) since it uses O(1) extra space. Its O(n log n) worst-case guarantee makes it suitable for real-time systems.
+>
+> **Remember:** The heapify phase runs in O(n), not O(n log n) — a common misconception. Only the extraction phase is O(n log n).
 
-## Examples
+**One-Sentence Takeaway:** Heap sort offers guaranteed O(n log n) in-place sorting with O(1) extra space, making it the safe choice for memory-constrained environments.
+
+---
 
 ### Example 3.1: Merge Sort in C++
 
@@ -221,6 +265,38 @@ Final sorted array: [1, 3, 4, 5, 10].
 
 ---
 
+### Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Merge Sort | Divide, sort, merge | Stable, O(n) space | External sorting, stable multi-key sort |
+| Quick Sort | Partition + recurse | In-place, not stable | General-purpose, fastest in practice |
+| Heap Sort | Heapify + extract | O(1) space, not stable | Embedded, real-time, memory-constrained |
+| Ω(n log n) Bound | Decision tree limit | Comparison-only | Proves optimality, non-comparison exceptions |
+| Decision Tree | Model of all comparison paths | Height = worst-case comparisons | Lower bound proofs |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Stable** | Merge sort only (quick sort and heap sort are not) |
+| **In-Place** | Quick sort (O(log n) stack), heap sort (O(1)) |
+| **Guaranteed O(n log n)** | Merge sort, heap sort |
+| **Fastest in Practice** | Quick sort (with randomized pivot) |
+| **Space Efficient** | Heap sort (O(1)), quick sort (O(log n)) |
+| **Common Pitfall** | Forgetting that quick sort reaches O(n²) without randomization |
+
+### Cross-Application Matrix
+
+| Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
+|-----------|---------------|----------------------|---------------|-------------------|
+| Merge Sort | Frequently — merge K sorted lists, inversion count | Used in divide-and-conquer problems | External sort, distributed sort (MapReduce) | Optimal comparison sort proof |
+| Quick Sort | Partition logic, quickselect, nth element | Most common sort for CP | In-memory database sorting | Randomized analysis |
+| Heap Sort | K largest/smallest, priority queue use | Heap problems, median maintenance | Real-time system guarantees | Priority queue theory |
+| Lower Bound | Occasionally — prove optimality | Choosing non-comparison sort | Choosing database sort algorithm | Computational complexity |
+
+---
+
 ## Summary
 
 | Algorithm | Best | Average | Worst | Space | Stable |
@@ -233,6 +309,46 @@ Final sorted array: [1, 3, 4, 5, 10].
 - Quick sort is typically the fastest in practice despite the quadratic worst case; randomization mitigates worst-case inputs.
 - Heap sort is optimal for in-place sorting with guaranteed \( O(n\log n) \) time.
 - The \( \Omega(n\log n) \) lower bound applies to all comparison-based sorts.
+
+---
+
+### Chapter Quiz
+
+**Q1.** Which sorting algorithm is guaranteed O(n log n) time and uses O(1) extra space?
+
+- A) Merge sort
+- B) Quick sort
+- C) Heap sort
+- D) All of the above
+
+<details>
+<summary>Answer</summary>
+C) Heap sort. Merge sort uses O(n) space, quick sort uses O(log n) stack space and can degrade to O(n²).
+</details>
+
+**Q2.** What is the lower bound for comparison-based sorting?
+
+- A) O(n)
+- B) Ω(n log n)
+- C) O(n²)
+- D) Θ(n)
+
+<details>
+<summary>Answer</summary>
+B) Ω(n log n) — proven by the decision tree model: there are n! permutations and a binary tree of height h has at most 2^h leaves.
+</details>
+
+**Q3.** Which pivot selection strategy avoids the O(n²) worst case for quick sort on sorted input?
+
+- A) First element
+- B) Last element
+- C) Random element
+- D) Both A and B
+
+<details>
+<summary>Answer</summary>
+C) Random element. First and last element pivots cause O(n²) on already-sorted or reverse-sorted arrays.
+</details>
 
 ---
 

@@ -1,5 +1,7 @@
 # Chapter 15: NP-Completeness
 
+> **Prerequisites:** [Chapter 14: String Algorithms](./14-string-algorithms.md) — Understanding of polynomial-time algorithms | **Next:** [Chapter 16: Approximation Algorithms](./16-approximation.md) — Coping with NP-hardness via approximation
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -10,6 +12,34 @@ By the end of this chapter, students will be able to:
 4. Prove NP-completeness of classic problems: SAT, TSP, vertex cover, clique.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| P vs NP | P = solvable in polynomial time; NP = verifiable in polynomial time | The central open question in computer science |
+| NP-Complete | In NP and every NP problem reduces to it | Hardest problems in NP; no poly-time algorithm known |
+| NP-Hard | At least as hard as NP-complete (not necessarily in NP) | Includes optimization versions and undecidable problems |
+| Cook-Levin Theorem | SAT is NP-complete | First NP-completeness proof; all reductions chain from SAT |
+| Reductions | Transform problem A to problem B in poly time | If A ≤ₚ B and B ∈ P, then A ∈ P |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Complexity Classes] --> B[P]
+    A --> C[NP]
+    A --> D[NP-Complete]
+    A --> E[NP-Hard]
+    B --> C
+    C --> D
+    D --> E
+    D --> F[Cook-Levin SAT]
+    D --> G[Reductions]
+    G --> H[SAT → 3SAT]
+    G --> I[Vertex Cover]
+    G --> J[Hamiltonian → TSP]
+```
 
 ## Theory
 
@@ -27,6 +57,12 @@ By the end of this chapter, students will be able to:
 
 **The central question:** Is \( P = NP \)? That is, can every problem whose solution can be verified in polynomial time also be solved in polynomial time? This is one of the seven Millennium Prize Problems.
 
+> **Pro Tip:** The P vs NP question asks whether every efficiently verifiable problem is also efficiently solvable. Knowing that a problem is NP-complete is a signal to look for approximation, heuristics, or special cases — not to give up.
+>
+> **Remember:** P ⊆ NP. Every problem in P is trivially in NP (verifiable). The open question is whether the reverse holds.
+
+**One-Sentence Takeaway:** P = efficiently solvable, NP = efficiently verifiable; NP-complete problems are the hardest in NP and no polynomial algorithm is known for any of them.
+
 ### 15.2 Polynomial-Time Reductions
 
 **Definition 15.5.** A **polynomial-time reduction** from problem \( A \) to problem \( B \) is a polynomial-time algorithm that transforms any instance \( x \) of \( A \) into an instance \( f(x) \) of \( B \) such that \( x \) is a YES instance of \( A \) if and only if \( f(x) \) is a YES instance of \( B \).
@@ -37,6 +73,12 @@ By the end of this chapter, students will be able to:
 - If \( A \le_p B \) and \( B \in P \), then \( A \in P \).
 - If \( A \le_p B \) and \( A \) is NP-hard, then \( B \) is NP-hard.
 - Reductions are transitive: \( A \le_p B \) and \( B \le_p C \) implies \( A \le_p C \).
+
+> **Pro Tip:** Reductions are the most important tool in NP-completeness. To prove a new problem is NP-hard, reduce a known NP-complete problem to it. The reduction must be polynomial time and preserve YES/NO answers.
+>
+> **Remember:** If A ≤ₚ B and B ∈ P, then A ∈ P. However, if A is NP-hard and A ≤ₚ B, then B is NP-hard.
+
+**One-Sentence Takeaway:** Polynomial-time reductions transform instances of one problem to another, enabling NP-hardness proofs by showing a known NP-complete problem reduces to your problem.
 
 ### 15.3 Cook-Levin Theorem
 
@@ -124,6 +166,37 @@ Some problems are NP-hard but not in NP (because they are not decision problems)
 
 ---
 
+### Concept Comparison Table
+
+| Class | Verification | Solution | Examples | Key Question |
+|-------|-------------|----------|----------|--------------|
+| P | Polynomial | Polynomial known | Sorting, shortest path | Can always solve quickly |
+| NP | Polynomial | Unknown | SAT, TSP, Clique | Verified quickly |
+| NP-Complete | Polynomial | Believed exponential | 3-SAT, Vertex Cover | Hardest in NP |
+| NP-Hard | Not required | Unknown | Optimization TSP, Halting | At least as hard as NP |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **P** | Problems solvable in polynomial time |
+| **NP** | Problems verifiable in polynomial time |
+| **NP-Complete** | In NP and every NP problem reduces to it |
+| **NP-Hard** | At least as hard as NP; not necessarily in NP |
+| **Cook-Levin** | SAT is NP-complete — the first proof |
+| **Reduction Direction** | Know NP-complete → Your problem (reduces TO) |
+| **Reduction Chain** | SAT → 3SAT → Clique → Vertex Cover → Hamiltonian → TSP |
+
+### Cross-Application Matrix
+
+| Concept | DSA Interviews | Competitive Programming | Academia | Real-World |
+|---------|---------------|----------------------|----------|------------|
+| P vs NP | Foundational knowledge | Affects approach to problems | Active research | Algorithm selection |
+| Reductions | Occasionally asked | N/A | Core proof technique | Problem modeling |
+| NP-Completeness | Common — recognize hard problems | Know when to use heuristics | Exam requirement | When to approximate |
+
+---
+
 ## Summary
 
 | Class | Definition | Example |
@@ -138,6 +211,46 @@ The P vs. NP question remains open. If \( P = NP \), every problem with an effic
 ---
 
 ## Exercises
+
+### Review Questions
+
+### Chapter Quiz
+
+**Q1.** What does it mean for a problem to be NP-complete?
+
+- A) It cannot be solved by any computer
+- B) It is in NP and every NP problem reduces to it in polynomial time
+- C) It requires exponential memory
+- D) It can only be solved with quantum computers
+
+<details>
+<summary>Answer</summary>
+B) NP-complete means the problem is in NP (verifiable in poly time) and NP-hard (every NP problem reduces to it).
+</details>
+
+**Q2.** Which of the following was the first problem proven NP-complete?
+
+- A) Traveling Salesman
+- B) Clique
+- C) SAT (Satisfiability)
+- D) Vertex Cover
+
+<details>
+<summary>Answer</summary>
+C) The Cook-Levin theorem (1971) proved SAT is NP-complete — the first such proof.
+</details>
+
+**Q3.** If problem A reduces to problem B in polynomial time (A ≤p B) and A is NP-hard, what can you conclude?
+
+- A) B is in P
+- B) B is NP-hard
+- C) B is NP-complete
+- D) Nothing
+
+<details>
+<summary>Answer</summary>
+B) If A is NP-hard and A ≤p B, then B is NP-hard. If B were also in NP, it would be NP-complete.
+</details>
 
 ### Review Questions
 

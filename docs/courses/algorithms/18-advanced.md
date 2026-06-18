@@ -1,5 +1,7 @@
 # Chapter 18: Advanced Topics
 
+> **Prerequisites:** [Chapter 17: Randomized Algorithms](./17-randomized.md) — Probabilistic analysis and algorithm design | **Next:** Course Complete
+
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -10,6 +12,32 @@ By the end of this chapter, students will be able to:
 4. Understand parallel algorithm design principles and analyze work and depth.
 
 ---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Online Algorithms | Irrevocable decisions without future knowledge | Competitive ratio compares against optimal offline |
+| Paging | LRU is k-competitive | Belady's algorithm (OPT) is the optimal offline strategy |
+| Ski Rental | Buy vs rent decision under uncertainty | Classic competitive analysis example |
+| Streaming Algorithms | Single-pass processing with limited memory | Sublinear space at cost of approximate answers |
+| Reservoir Sampling | Uniform random sample from unknown-length stream | O(k) space for k samples from arbitrary-length stream |
+| Bloom Filters | Probabilistic set membership | False positives possible; false negatives impossible |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Advanced Topics] --> B[Online Algorithms]
+    A --> C[Streaming Algorithms]
+    A --> D[Parallel Algorithms]
+    B --> E[Paging LRU]
+    B --> F[Ski Rental]
+    C --> G[Reservoir Sampling]
+    C --> H[Bloom Filters]
+    D --> I[Work & Depth Model]
+    D --> J[PRAM]
+```
 
 ## Theory
 
@@ -26,6 +54,12 @@ C_A(\sigma) \le \rho \cdot C_{\text{OPT}}(\sigma) + b
 \]
 
 where \( C_A(\sigma) \) is the cost of the algorithm, \( C_{\text{OPT}}(\sigma) \) is the optimal offline cost, and \( b \) is a constant.
+
+> **Pro Tip:** The competitive ratio measures an online algorithm against an optimal offline algorithm that sees the entire input in advance. A ratio of k means the online algorithm costs at most k times the optimal.
+>
+> **Remember:** The additive constant b allows the ratio to hold for all input lengths. For paging, the competitive ratio is exactly k.
+
+**One-Sentence Takeaway:** Online algorithms make irrevocable decisions without future knowledge; the competitive ratio quantifies performance relative to optimal offline hindsight.
 
 #### 18.1.1 Paging (Caching)
 
@@ -96,6 +130,12 @@ p = \left(1 - \left(1 - \frac{1}{m}\right)^{kn}\right)^k \approx \left(1 - e^{-k
 
 **Properties:** No deletions (unless using counting Bloom filter), excellent space efficiency.
 
+> **Pro Tip:** Bloom filters have zero false negatives -- if a query says not present, it is guaranteed absent. Optimal hash count k = (m/n) * ln(2) minimizes the false positive rate.
+>
+> **Remember:** Choose m (bits) and k (hash functions) based on your target false positive rate p and expected element count n. m = -n ln(p) / (ln 2)^2 is the optimal bit count.
+
+**One-Sentence Takeaway:** Bloom filters provide space-efficient probabilistic set membership with false positives but no false negatives.
+
 #### 18.2.3 Count-Min Sketch
 
 **Problem:** Estimate the frequency of each element in a stream using sublinear space.
@@ -139,6 +179,45 @@ T_P \le \frac{W}{P} + D.
 **Parallel merge sort:** Divide the array in half (constant time), recursively sort (parallel), then merge. Merge of two sorted arrays can be done in \( O(\log n) \) depth using binary search to find element positions.
 
 ### 18.4 Online and Streaming Summary Table
+
+### Concept Comparison Table
+
+| Domain | Algorithm | Space | Performance | Key Property |
+|--------|-----------|-------|-------------|--------------|
+| Online | LRU (paging) | O(k) | k-competitive | Evict least recently used |
+| Online | Ski rental (det.) | O(1) | 2-competitive | Buy at break-even |
+| Online | Ski rental (rand.) | O(1) | 1.58-competitive | Random threshold |
+| Streaming | Reservoir sampling | O(k) | O(n) time | Uniform random sample |
+| Streaming | Bloom filter | O(m) | O(k) per op | No false negatives |
+| Streaming | Count-Min sketch | O((1/e) log(1/d)) | O(1) per op | Only overestimates |
+| Parallel | Prefix sum | O(n) work | O(log n) depth | Balanced tree |
+| Parallel | Bitonic sort | O(n log^2 n) work | O(log^2 n) depth | Sorting network |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Competitive Ratio** | Online cost / optimal offline cost |
+| **LRU Paging** | k-competitive; optimal deterministic; O(log k) randomized |
+| **Ski Rental** | 2-competitive det.; 1.58 randomized; rent vs buy |
+| **Reservoir** | Replace with prob k/i; O(k) space; exact uniform |
+| **Bloom Filter** | FP = (1 - e^{-kn/m})^k; optimal k = (m/n) ln 2 |
+| **Count-Min** | f(x) <= estimate <= f(x) + eN; min over d rows |
+| **Work-Depth** | W = total ops, D = critical path; T_P <= W/P + D |
+| **Parallel Scan** | O(log n) depth via up-sweep + down-sweep |
+
+### Cross-Application Matrix
+
+| Topic | DSA Interviews | Competitive Programming | Real-World |
+|-------|---------------|----------------------|------------|
+| Online/Paging | Occasionally | Uncommon | OS cache management |
+| Ski Rental | Occasionally | Uncommon | Cloud provisioning |
+| Reservoir Sampling | Common | Common | Data science sampling |
+| Bloom Filters | Common | Common | Databases, caches |
+| Count-Min Sketch | Occasionally | Occasionally | Network monitoring |
+| Parallel Algorithms | Rare | Uncommon | GPU, distributed computing |
+
+---
 
 | Algorithm | Problem | Space | Guarantee |
 |-----------|---------|-------|-----------|
@@ -234,8 +313,48 @@ ParallelPrefixSum(A):
 
 ### Review Questions
 
+### Chapter Quiz
+
+**Q1.** What is the competitive ratio of deterministic ski rental (buy cost = B)?
+
+- A) B
+- B) 2 - 1/B
+- C) e/(e-1)
+- D) k
+
+<details>
+<summary>Answer</summary>
+B) Rent for B-1 days then buy gives cost 2B-1 when N ≥ B, vs optimal of B, so ratio = 2 - 1/B.
+</details>
+
+**Q2.** What is the key property of a Bloom filter?
+
+- A) No false positives
+- B) No false negatives
+- C) Exact set membership
+- D) Supports deletions
+
+<details>
+<summary>Answer</summary>
+B) Bloom filters have no false negatives -- if a query returns false, the element is definitely absent. False positives are possible.
+</details>
+
+**Q3.** In the work-depth model, what does Brent's theorem state?
+
+- A) W(n) = O(D(n))
+- B) T_P ≤ W/P + D
+- C) T_P = W * D
+- D) D must equal W
+
+<details>
+<summary>Answer</summary>
+B) On P processors, the time is at most W/P + D, where W is total work and D is critical path depth.
+</details>
+
+### Review Questions
+
 1. Define the competitive ratio for an online algorithm.
-2. Explain why LRU achieves competitive ratio \( k \) for paging.
+2. Explain why LRU achieves competitive ratio k for paging.
 3. What is the difference between a Bloom filter's false positive rate and false negative rate?
 4. State Brent's theorem for parallel algorithm performance.
 

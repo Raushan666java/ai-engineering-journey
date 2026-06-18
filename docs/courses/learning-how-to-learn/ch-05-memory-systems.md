@@ -24,7 +24,24 @@ After completing this chapter, you will be able to:
 - Use overlearning strategically — and know when to stop
 - Design effective cheat sheets as conceptual compression tools
 
-![Memory Systems & Mnemonics](../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems-dg1.png)
+![Memory Systems & Mnemonics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems-dg1.png)
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Memory Palace | Leveraging spatial memory to store ordered information along familiar routes | Map 10 loci in your home; encode abstract concepts as vivid images at each stop |
+| Visual Mnemonics | Translating abstract information into concrete, bizarre, multisensory images | Apply the 6 rules: bizarreness, motion, sensory richness, exaggeration, interaction, personal relevance |
+| Chaining | Linking items into an unforgettable narrative sequence | Create a story where each item triggers the next in a cause-effect chain |
+| Peg System | Rhyming pegs (bun=1, shoe=2, tree=3) for numbered recall | Memorize the 1-10 peg list and use it for random-access retrieval of ordered items |
+| Encoding Specificity | Retrieval cues work best when they match encoding conditions | Study in conditions similar to the exam — match context, state, and modality |
+| Generation Effect | Self-generated information is remembered better than read information | Cover material and try to generate the answer before looking at it |
+| Testing Effect | One active recall test produces more retention than multiple re-readings | Replace one study session per week with a practice test |
+| Desirable Difficulties | Harder-in-the-moment strategies that produce superior long-term retention | Keep the success rate at 60-80% — if it's too easy, increase the difficulty |
+| Overlearning | Continuing to practice beyond mastery | Use strategically only for high-speed recall skills; stop once automatic |
+| Cheat Sheets | Condensing a topic into a single page forces conceptual compression | Use the 3-pass method: dump → select → compact |
 
 ---
 
@@ -2739,6 +2756,23 @@ b) Layering multiple memory systems to reinforce each other
 c) Overlearning to automaticity
 d) State-dependent encoding
 **Answer:** b. The most powerful approach integrates multiple memory systems — palace (spatial), chaining (sequential), visual mnemonics (concrete), compression (acronyms), and retrieval practice — so that each layer reinforces the others.
+
+---
+
+### Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| Memory Palace | Storing information along a familiar spatial route (method of loci) | When you need to recall ordered lists (speeches, timelines, hierarchies) | Using unfamiliar loci — the route must be completely automatic |
+| Visual Mnemonics | Encoding abstractions as vivid, bizarre, multisensory images | When standard memorization fails for abstract concepts | Making images too ordinary — bizarreness is the key to memorability |
+| Chaining | Linking items into a cause-effect narrative sequence | When remembering sequences of arbitrary items (steps, historical events) | Weak links between items — each transition must feel inevitable |
+| Peg System | Associating numbers with rhyming keywords for random-access recall | When you need numbered recall (bones, elements, chapters) | Using the same pegs for multiple lists without distinct contexts |
+| Encoding Specificity | Retrieval is strongest when encoding and retrieval contexts match | Before an exam — match the study environment to the test environment | Studying in perfect silence when the exam has distractions (or vice versa) |
+| Generation Effect | Producing answers yourself strengthens memory more than reading | When reviewing notes — cover and generate before checking | Reading and re-reading instead of actively generating |
+| Testing Effect | Taking a test improves long-term retention more than re-studying | Any time you need durable learning beyond 48 hours | Using tests only for assessment instead of as a learning tool |
+| Desirable Difficulties | Challenges that impede short-term performance but boost long-term retention | When learning feels too easy and retention is poor | Adding difficulty that becomes frustration — keep success at 60-80% |
+| Overlearning | Practicing beyond the point of initial mastery | For high-speed recall skills (math facts, typing, language vocabulary) | Overlearning everything — once automaticity is reached, further reps have diminishing returns |
+| Cheat Sheet Design | Compressing a topic onto one page forces structural understanding | When preparing for a closed-book exam or building a reference | Spending more time decorating the sheet than doing the 3-pass compression |
 
 ---
 

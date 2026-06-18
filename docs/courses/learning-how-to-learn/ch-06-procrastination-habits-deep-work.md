@@ -18,7 +18,7 @@ These aren't abstract theories. Every technique here is something you can apply 
 
 ## Learning Objectives
 
-![Procrastination, Habits & Deep Work](../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work-dg1.png)
+![Procrastination, Habits & Deep Work](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work-dg1.png)
 
 After completing this chapter, you will be able to:
 
@@ -28,6 +28,23 @@ After completing this chapter, you will be able to:
 - **Practice deep work** by scheduling distraction-free sessions and managing attention residue
 - **Implement weekly reviews and monthly retrospectives** to keep your learning on track
 - **Maintain streaks** and navigate slumps using motivation-resilience strategies
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Procrastination Loop | Trigger → negative feeling → coping → relief → guilt | Break the loop at the trigger stage with a 2-minute start |
+| 2-Minute Rule | Starting is the only hard part — lowering the barrier bypasses the threat response | Commit to 2 minutes of any task; allow yourself to stop after — you rarely will |
+| Habit Stacking | Attaching a new habit to an existing one makes it automatic | "After [existing habit], I will [2-minute learning action]" |
+| Implementation Intentions | If-then plans automate decision-making and reduce willpower dependence | "If it's 7 PM at my desk, then I will open my problem set" |
+| Deep Work | Distraction-free concentration that pushes cognitive limits | Schedule 90-minute deep work blocks; ritualize transitions |
+| Attention Residue | Partial attention left on a previous task after switching | Batch context switches; never start deep work mid-thought |
+| 4DX Framework | Four disciplines: WIG, lead measures, scoreboard, weekly cadence | Pick one learning goal, track daily actions, review every Sunday |
+| Weekly Review | Weekly pause that catches drift and maintains strategic alignment | Every Sunday: review wins, struggles, lead measures, and next week's commitment |
+| Compound Effect | Small daily improvements compound into massive gains over time | 1% daily improvement yields 38x growth in a year |
+| Keystone Habits | One habit that triggers positive chain reactions across multiple areas | Identify and establish one keystone habit first (e.g., morning study block) |
 
 ---
 
@@ -2019,6 +2036,23 @@ b) To step back and evaluate what worked, what didn't, and what to adjust; compl
 c) To re-read all notes from the week; complements spaced repetition
 d) To set annual goals; complements the compound effect
 **Answer:** B. The weekly review (adapted from David Allen's GTD) is the fourth discipline of 4DX — it creates a cadence of accountability. By reviewing lead measures, wins, struggles, and commitments every Sunday, you prevent drift and maintain strategic alignment.
+
+---
+
+### Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| Procrastination Loop | Cycle of trigger → negative feeling → coping relief → guilt | When you find yourself avoiding studying despite knowing you should | Treating the symptom (coping behavior) instead of the trigger |
+| 2-Minute Rule | Starting any task for just 2 minutes bypasses the brain's threat response | When you feel resistance to starting any task | Setting a timer and actually stopping at 2 minutes — you almost never will |
+| Habit Stacking | Linking a new habit to an existing automatic behavior | When you need a new habit to stick without relying on motivation | Choosing too many habits at once — stack just ONE new habit per week |
+| Implementation Intentions | Pre-decided if-then plans that remove in-the-moment decision fatigue | When willpower is low or you're prone to rationalization | Making the plan too vague — "If X at Y, then Z" must be concrete and specific |
+| Deep Work | Intense, distraction-free cognitive focus on a single task | When you need to learn something complex or solve a hard problem | Staying in shallow work because it feels productive — check email is not deep work |
+| Attention Residue | Lingering mental focus on a previous task that degrades current performance | After any context switch — before starting deep work | Multitasking between learning tasks — batch study topics in Pomodoro blocks |
+| 4DX Framework | Four Disciplines of Execution: WIG, lead measures, scoreboard, cadence | When you have vague goals that never materialize into daily action | Tracking lag measures (outcomes) instead of lead measures (daily behaviors) |
+| Weekly Review | Structured 30-minute weekly check-in to catch drift early | Every Sunday to maintain alignment with learning goals | Skipping it when you're "too busy" — the weeks you skip are when you need it most |
+| Compound Effect | Small consistent actions producing exponential results over time | When you feel like daily 5-minute learning sessions aren't enough | Stopping during the invisible seed phase before results compound |
+| Keystone Habits | One habit that naturally triggers positive downstream behaviors | When you want maximum behavioral leverage per unit of effort | Adding keystone habits from the wrong domain — pick one that directly triggers learning |
 
 ---
 

@@ -20,7 +20,22 @@ Learning a new programming language or framework is a recurring challenge throug
 - Apply the T-model for learning multiple technologies in parallel
 - Avoid the tutorial trap by learning through active construction, not passive consumption
 
-![Framework & Language Learning Blueprint](../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning-dg1.png)
+![Framework & Language Learning Blueprint](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning-dg1.png)
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Universal Blueprint | Five phases: Docs → Tutorial → Build → Refactor → Teach | Follow the sequence for every new framework — never skip straight to building |
+| MVP Pattern | Build a User/Post/Comment CRUD app to learn any framework | This standard project exposes real problems that tutorials hide |
+| T-Model | 70-20-10 split: primary depth, secondary support, exploratory breadth | Learn one technology deeply before branching — never two new frameworks at once |
+| Tutorial Trap | Passive consumption that feels productive but produces no durable skill | Close the tutorial and rebuild from memory — active construction beats watching |
+| Debugging Protocol | Reproduce → Isolate → Search → Understand root cause | Write the exact search query you used — the search IS the skill |
+| Building in Public | Contributing to open source compounds your learning permanently | Find one unsolved problem, fix it, and open a PR — teaching verifies mastery |
+| AI Tutor Usage | Use AI assistants as tutors (explanations + alternatives), not crutches | Ask "Why does this work?" and "What are the alternatives?" — never blind copy-paste |
+| Docs vs Tutorials | Read docs for the why (mental model), tutorials for the how (setup, errors) | Spend 10% of time on docs, 90% on tutorials — don't read docs cover-to-cover |
 
 ---
 
@@ -1406,6 +1421,21 @@ C) Start with NoSQL because it's easier
 D) Pick one category and ignore the others
 
 **Answer:** B. SQL fundamentals should come first — SELECT, JOIN, GROUP BY, normalization, indexing. Then explore NoSQL categories (document, key-value, wide-column, graph), each solving specific problems that relational databases handle poorly. The polyglot persistence rule: use the database matching your access pattern.
+
+---
+
+### Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| Universal Blueprint (DTBTT) | Docs → Tutorial → Build → Refactor → Teach — five-phase learning sequence | Every time you start learning a new language or framework | Following only the first two phases and never building — tutorials alone don't produce skill |
+| MVP Pattern | Building the same standard CRUD app (User/Post/Comment) for every framework | When starting a new framework and you need to learn its core fast | Building a trivial "Hello World" instead — it doesn't expose real framework mechanics |
+| T-Model | Allocating 70-20-10 of study time across primary, secondary, and exploratory technologies | When studying multiple technologies simultaneously | Learning two new frameworks at the same time — mental interference kills both |
+| Tutorial Trap | Passively following guides without active construction | When you've watched 5+ tutorials but can't build from scratch | Starting another tutorial instead of closing the window and rebuilding from memory |
+| Debugging Protocol | Reproduce → Isolate → Search → Understand | When you encounter any error or unexpected behavior | Searching before isolating — a precise search query requires knowing what to search for |
+| Building in Public | Solving real problems via open-source contributions | When you want to cement your understanding permanently | Submitting code you don't fully understand — review your own PR before submitting |
+| AI Tutor Usage | Treating AI as a teacher who explains, not an oracle who writes code | When stuck on a concept or debugging an issue | Blindly accepting AI-generated code without understanding every line |
+| Documentation vs Tutorials | Docs build mental models; tutorials teach execution patterns | At the start of learning any tool — use both | Reading docs cover-to-cover instead of using them as a reference while building |
 
 ---
 

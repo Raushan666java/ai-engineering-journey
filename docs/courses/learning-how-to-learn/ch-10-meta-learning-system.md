@@ -23,7 +23,24 @@ By the end of this chapter, you will be able to:
 - Diagnose and overcome learning plateaus with targeted strategies
 - Create a personal annual learning review process
 
-![Meta-Learning & Lifelong System](../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system-dg1.png)
+![Meta-Learning & Lifelong System](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system-dg1.png)
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Meta-Learning | Learning how to learn is the ultimate multiplier for every future skill | Study learning itself — every hour invested in meta-learning pays 10x across all courses |
+| Waitzkin's Three Stages | Investment → Integration → Innovation is the natural progression to mastery | On entering a new field, invest deeply before trying to innovate |
+| 80/20 Rule | 20% of inputs produce 80% of results — identify the vital few | For any target role, pick the 5 most important courses and allocate 80% of study time |
+| Dunning-Kruger Curve | Confidence vs. competence follows a predictable U-shaped curve | Diagnose where you are per skill — Mount Stupid means you don't know what you don't know |
+| Second Brain | A digital garden of atomic notes that compounds knowledge over time | Set up a folder structure mirroring all 27 courses; write one atomic note per section |
+| PARA Method | Projects, Areas, Resources, Archives — four-category organizational system | Organize each course into one PARA category; move completed courses to Archives |
+| SM-2 Algorithm | Spaced repetition engine that calculates optimal review intervals | Implement SM-2 manually for 10 cards to understand the math behind Anki |
+| FSRS | Modern spaced repetition algorithm with 90%+ retention from fewer reviews | Upgrade to FSRS in Anki for more efficient scheduling |
+| Learning Velocity | Problems solved, Anki retention, and chapters completed — measured weekly | Track 3 leading indicators daily for 2 weeks to build the measurement habit |
+| Annual Review | Yearly pause to document, analyze, and recalibrate your learning system | Every year: write a personal learning review with specifics on mistakes and lessons |
 
 ---
 
@@ -1726,6 +1743,23 @@ C. 25 questions per 1 answer given
 D. 1:1:1 consumption to contribution ratio
 
 **Answer:** B. The 1:5:25 ratio ensures net-positive contribution: ask 1 question per 5 answers given per 25 pieces of content consumed. It prevents extraction without giving back.
+
+---
+
+### Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| Meta-Learning | The discipline of studying how to learn to accelerate all future learning | At the start of any new learning endeavor | Diving into content without first choosing a learning strategy |
+| Waitzkin's Three Stages | Investment (deep fundamentals) → Integration (connecting ideas) → Innovation (creating new work) | When entering a completely new domain | Trying to innovate before investing in fundamentals |
+| 80/20 Rule | Identifying the 20% of inputs that produce 80% of results | When faced with a broad syllabus or multiple course options | Applying 80/20 lazily and missing foundational concepts that unlock everything else |
+| Dunning-Kruger Curve | The gap between perceived and actual competence over the learning journey | When assessing your own skill level honestly | Staying confident in Mount Stupid — the first sign of progress is realizing how much you don't know |
+| Second Brain | A personal knowledge management system of atomic, linked notes | When you have notes scattered across multiple tools with no retrieval system | Collecting without connecting — notes are only valuable when links exist between them |
+| PARA Method | Four-category system: Projects (active), Areas (ongoing), Resources (reference), Archives (completed) | When your course materials have become unmanageable | Treating everything as a project — most learning is an Area, not a Project |
+| SM-2 Algorithm | The original spaced repetition algorithm that calculates optimal intervals | Setting up a manual spaced repetition system | Manually overriding the algorithm's intervals based on how you feel |
+| FSRS (Free Spaced Repetition Scheduler) | Modern ML-based algorithm achieving 90%+ retention with fewer reviews | When you want optimal efficiency from Anki | Assuming FSRS works instantly — it requires ~200 reviews to calibrate |
+| Learning Velocity | Rate of measurable progress across leading indicators (problems, retention, chapters) | When you need to know if your learning system is actually working | Measuring only trailing indicators (exam scores) instead of leading indicators (daily actions) |
+| Annual Review | Yearly structured reflection documenting mistakes, lessons, and next-year priorities | Every year-end to ensure long-term learning trajectory stays on course | Keeping the review in your head — writing forces clarity and accountability |
 
 ---
 

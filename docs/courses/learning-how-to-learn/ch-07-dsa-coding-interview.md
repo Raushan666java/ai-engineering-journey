@@ -20,7 +20,23 @@ This chapter teaches you how to learn data structures and algorithms efficiently
 - Understand concurrency basics: threads, locks, and the Java Memory Model
 - Execute a complete interview workflow from warm-up to follow-up
 
-![DSA & Coding Interview Prep](../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview-dg1.png)
+![DSA & Coding Interview Prep](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview-dg1.png)
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| 3-Pass Method | Understand → Plan → Code replaces panic with process | Do not write code until the Plan phase is complete — trace examples first |
+| Pattern Classification | ~500 LeetCode problems reduce to ~20 recurring patterns | Train yourself to classify the pattern before solving — under 30 seconds per problem |
+| DSA Anki Decks | Four card types test pattern recognition, not solution memorization | Create cards for Problem→Approach, Approach→Complexity, Pattern→Problems, Buggy Code→Fix |
+| DP Workflow | State → Recurrence → Base → Iteration — the universal DP template | Write only steps 1-4 on paper for 5 DP problems before writing any code |
+| Big O Matcher | Pattern recognition for time/space complexity across common structures | Use the complexity tier table to estimate bounds before coding |
+| System Design Framework | 5-step process: requirements → estimation → data model → API → deep dive | Start with the simplest design that could work, then add scale |
+| LLD Workflow | 5-step design: clarify → identify objects → define contracts → implement → test | Write the full Java implementation without looking at references |
+| Interview Workflow | Warm-up → Clarify → Plan → Code → Test → Follow-up | Verbalize your reasoning even when stuck — silence makes interviewers nervous |
+| Meta-Learning Loop | Interview → Reflect → Adjust → Practice compounds every experience | After every mock interview, write down exactly one thing to practice tomorrow |
 
 ---
 
@@ -1610,6 +1626,22 @@ c) Narrate your thought process: "Let me consider a brute force first and then o
 d) Start coding the first thing that comes to mind
 
 **Answer:** c. Silent thinking makes interviewers nervous. Verbalizing your reasoning — even when stuck — shows your problem-solving process. The recommended fallback is to try brute force or walk through a smaller example. Never stay silent, never jump to code without a plan.
+
+---
+
+### Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| 3-Pass Method | Understand (examples) → Plan (approach + complexity) → Code (implement + test) | Every LeetCode problem you attempt | Jumping to code before the plan is clear — this is the #1 interview killer |
+| Pattern Classification | Mapping problems to ~20 recurring algorithmic patterns | When facing an unfamiliar problem — classify before you solve | Overfitting: treating a problem as pattern X when it's actually pattern Y |
+| DSA Anki Cards | Atomic flashcards that test pattern recognition and complexity tradeoffs | Daily review to maintain DSA pattern memory | Writing solution code on cards instead of high-level approach + tradeoffs |
+| DP Workflow | State definition → recurrence relation → base cases → iteration order | Any problem asking for optimal value with overlapping subproblems | Starting with code instead of defining the recurrence relation formally |
+| Big O Analysis | Estimating time and space complexity before implementation | During the Plan phase of the 3-pass method | Guessing complexity without tracing through the algorithm's loops and recursion |
+| System Design 5-Step | Requirements → Estimation → Data Model → API → Deep Dive | Whiteboard rounds or take-home design problems | Jumping to scale solutions (sharding, caching) before nailing the core design |
+| LLD 5-Step | Clarify → Identify Objects → Contracts → Implementation → Test | Low-level design rounds in interviews | Making classes too abstract or over-engineering the design upfront |
+| Interview Workflow | Structured 40-minute process: warm-up through follow-up | Every mock interview or real coding interview | Staying silent when stuck — always verbalize your thought process |
+| Meta-Learning Loop | Post-interview reflection that feeds the next practice session | After every interview or mock regardless of outcome | Ignoring the reflection step — the real growth comes from the loop, not the interview |
 
 ---
 

@@ -20,7 +20,22 @@ After completing this chapter, you will be able to:
 - Create a dual-track study plan that covers both theory and application
 - Analyze mock test mistakes and build correction loops
 
-![GATE & Theory Exam Prep](../../assets/images/diagrams/learning-how-to-learn/ch-08-gate-theory-prep-dg1.png)
+![GATE & Theory Exam Prep](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-08-gate-theory-prep-dg1.png)
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Dual-Track Schedule | Track 1 (breadth) covers all subjects; Track 2 (depth) focuses on weak areas | Spend 45 min/day on Track 1 and 120 min/day on Track 2 |
+| Cheat Sheet Method | Creating a one-page cheat sheet forces conceptual compression | Build from memory first, then fill gaps from your textbook |
+| Subject Interlinking | Cross-subject connections deepen understanding of each topic | Map dependency graphs between GATE subjects — find 15+ edges |
+| PYQ Analysis | Previous year questions reveal exam patterns and topic weightage | Categorize each question as formula-based, conceptual, or numerical |
+| Spiral Schedule | Touch every subject at least twice per week to maintain familiarity | Rotate through subjects systematically rather than blocking by week |
+| Mock Test Analysis | Systematic error classification reveals root causes of mistakes | Use the C/M/E/R taxonomy: Conceptual, Misread, Execution, Random |
+| C/M/E/R Taxonomy | Categorizing mistakes by type enables targeted remediation | After each mock, sort every wrong answer into one of four categories |
+| 30-Day Strategy | Three-phase preparation: breadth → depth → recall | Final week is for recall and consolidation, not learning new material |
 
 ---
 
@@ -1080,6 +1095,21 @@ a) Deep mastery of 2-3 selected subjects  b) Foundation/breadth — covering all
 **12. In the 30-day GATE strategy, by which day should the master cheat sheet be finalized?**
 a) Day 7  b) Day 14  c) Day 21  d) Day 28
 **Answer:** c. The cheat sheet should be finalized by Day 21 (end of Week 3), so the final week is dedicated to recall and consolidation — not learning new material.
+
+---
+
+### Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| Dual-Track Schedule | Two parallel tracks: breadth across all subjects + depth in selected topics | When preparing for a broad syllabus exam like GATE | Going too deep into one subject while others atrophy |
+| Cheat Sheet Method | Compressing a subject onto one page from memory, then gap-filling | After completing a subject — as a pre-exam consolidation tool | Copying from the textbook instead of creating from memory first |
+| Subject Interlinking | Mapping how concepts connect across different GATE CS subjects | When you understand individual subjects but can't see the big picture | Learning subjects in isolation without building cross-reference connections |
+| PYQ Analysis | Studying previous years' question patterns to guide preparation strategy | At the start of preparation and during revision | Solving PYQs without analyzing the pattern — the analysis IS the value |
+| Spiral Schedule | Touching every subject twice weekly on a rotating basis | When subjects you studied earlier start feeling unfamiliar | Uneven spiral — some subjects get skipped consistently |
+| Mock Test Analysis | Systematic review of test results to identify error patterns | After every mock test | Only checking the score and not analyzing individual mistakes |
+| C/M/E/R Taxonomy | Classifying errors as Conceptual, Misread, Execution, or Random | When analyzing any wrong answer on a mock test | Misclassifying errors — be honest about whether it was truly "random" |
+| 30-Day Strategy | Three-phase plan: breadth (week 1) → depth (weeks 2-3) → recall (week 4) | One month before the exam | Starting the recall phase without finishing depth phase |
 
 ---
 

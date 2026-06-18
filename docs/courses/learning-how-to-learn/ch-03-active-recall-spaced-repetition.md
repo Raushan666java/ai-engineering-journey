@@ -10,7 +10,7 @@ This chapter shows you how to use the **blank page method**, how **Anki** implem
 
 ## Learning Objectives
 
-![Active Recall & Spaced Repetition](../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition-dg1.png)
+![Active Recall & Spaced Repetition](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition-dg1.png)
 
 After completing this chapter, you will be able to:
 
@@ -21,6 +21,21 @@ After completing this chapter, you will be able to:
 - Schedule Anki reviews for **optimal spacing** using the SM-2 algorithm
 - Integrate Anki into a **daily learning workflow** without burnout
 - Handle **complex, non-flashcard topics** using multi-card strategies
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Active Recall | Retrieving information from memory without cues strengthens neural traces | Close the book and write what you remember — re-reading is not learning |
+| Blank Page Method | Pure-form active recall that exposes exactly what you don't know | After studying a section, write everything you recall on a blank page before checking |
+| Recognition vs Recall | Multiple choice feels easy but builds weak memory; recall builds durable traces | Convert every multiple-choice question into a recall question by covering options |
+| Teaching Effect | Teaching from memory forces unscripted retrieval and real-time gap detection | Record yourself explaining a topic without notes — review for gaps |
+| Spaced Repetition | Reviewing at increasing intervals flattens the Ebbinghaus forgetting curve | Use Anki to schedule reviews using the SM-2 algorithm |
+| SM-2 Algorithm | Spaced repetition engine that adjusts intervals based on your recall quality | Let the algorithm schedule reviews — trust the math, not your judgment |
+| Anki Card Design | Atomic cards test one concept each, using cloze deletions and minimal text | Split any card containing "and" into two separate cards |
+| Forgetting Curve | Memory decays exponentially without timely review | Review within 24 hours, then at increasing intervals to lock in learning |
 
 ---
 
@@ -1058,6 +1073,19 @@ a) 5 minutes b) 15-25 minutes c) 45-60 minutes d) 90 minutes
 **12. How should you handle a complex topic like system design that doesn't fit on a single flashcard?**
 a) Skip Anki entirely for that topic b) Write one large card with all the details c) Decompose into a funnel: components → explain → tradeoffs → design decisions d) Use only image occlusion cards
 **Answer:** c) Decompose into a funnel: components → explain → tradeoffs → design decisions. Complex topics are handled by creating hierarchical cards at different levels of analysis, from atomic recall to synthesis-level design decisions.
+
+### Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| Active Recall | Forcing the brain to retrieve information from memory without cues | When you need durable long-term retention | Mistaking the effort of recall for failure — the struggle IS the learning |
+| Blank Page Method | Writing everything you know about a topic from memory on a blank sheet | After studying any section; before starting a review session | Checking the source too early — sit with the gaps for at least 5 minutes |
+| Recognition | Identifying correct information among presented options | Quick review, low-stakes familiarity checks | Treating recognition as evidence of mastery — it only measures familiarity |
+| Recall | Generating information from memory with minimal or no cues | Deep learning, exam prep, interview practice | Avoiding it because it feels harder than re-reading — that difficulty is the point |
+| Spaced Repetition | Reviewing information at expanding intervals for permanent retention | When you need to remember something beyond a single exam | Intervals too short (wasted reviews) or too long (forgetting sets in) |
+| SM-2 Algorithm | Algorithm that calculates optimal review intervals based on self-rated recall quality | Setting up Anki or any SRS system | Overriding the algorithm with manual scheduling — trust the math |
+| Forgetting Curve | Exponential decay of memory strength without active retrieval | Planning a study timeline or review schedule | Expecting one review session to create permanent retention |
+| Teaching Effect | Deepening understanding by explaining material from memory to others | Before an exam, after studying a topic, or in study groups | Thinking you can teach without first testing your own recall |
 
 ---
 

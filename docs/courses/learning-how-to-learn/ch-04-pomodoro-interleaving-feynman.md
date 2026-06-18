@@ -12,7 +12,22 @@ By the end of this chapter, you will be able to:
 - Use rubber duck debugging to uncover gaps in your own understanding
 - Teach peers to deepen and cement your own knowledge
 
-![Active Learning Techniques](../../assets/images/diagrams/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman-dg1.png)
+![Active Learning Techniques](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman-dg1.png)
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Pomodoro Technique | Structured focus intervals (25-50 min) that leverage the Zeigarnik effect | Adapt the interval to your task — code for 50 min, revise for 25 min |
+| Zeigarnik Effect | Your brain remembers unfinished tasks better than completed ones | Use the Pomodoro break to let diffuse mode process the problem |
+| Interleaving | Mixing different topics or problem types in one study session | Alternate between two DSA patterns instead of drilling one at a time |
+| Blocked Practice | Studying one topic exhaustively before moving to the next | Avoid this for long-term retention — it creates false fluency |
+| Feynman Technique | If you can't explain it simply, you haven't understood it | Teach a concept to a child using plain language; identify gaps immediately |
+| Rubber Duck Debugging | Explaining code line-by-line to an inanimate object reveals hidden assumptions | Read code aloud when stuck — the gap in your explanation IS the bug |
+| Peer Teaching | Teaching a peer with prepared questions tests your knowledge under pressure | Ask your partner to prepare 3 hard questions in advance |
+| Master Session | Combining all three techniques in a single 2-hour workflow | Run the full cycle: Feynman → gap study → interleaved problems → teach |
 
 ---
 
@@ -1887,6 +1902,21 @@ a) 50%  b) 75%  c) 90%  d) 95%
 **12. What does the 3-Explanation Rule say about your first attempt to explain a concept?**
 a) It will be perfect if you studied enough  b) It will be terrible — and that is expected because the first pass is for gap detection, not mastery  c) You should record it and never repeat it  d) You should only explain if you can do it fluently the first time
 **Answer:** b. The 3-Explanation Rule says the first pass is messy and full of jargon — it's for gap detection. The second pass builds structure. The third pass achieves fluency. Awkwardness is the signal that learning is happening.
+
+---
+
+### Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| Pomodoro Technique | Work in focused intervals (25-50 min) separated by short breaks | When you struggle to start or maintain focus | Using rigid 25-min intervals for deep coding — extend to 40-50 min when in flow |
+| Zeigarnik Effect | Unfinished tasks are remembered better than completed ones | After a Pomodoro break when a solution arrives unexpectedly | Cutting a task mid-flow too often — use natural break points |
+| Interleaving | Mixing multiple topics or problem types in one session | When exam questions feel unfamiliar despite hours of blocked practice | Feeling uncomfortable during practice — interleaving always feels harder (that's the benefit) |
+| Blocked Practice | Studying one topic completely before moving to another | When you need initial understanding of a new concept | Using blocked practice as your only strategy — it fails for long-term retention |
+| Feynman Technique | Explaining a concept in plain language to reveal gaps | When you finish studying a topic and need to verify understanding | Skipping the actual explanation step and just reviewing the topic again |
+| Rubber Duck Debugging | Talking through code line-by-line to uncover hidden assumptions | When stuck on a bug or confusing piece of code | Staying silent while debugging — verbalizing forces your brain to slow down |
+| Peer Teaching | Teaching a classmate with prepared questions | Before an exam or when you need deep verification | Only teaching easy topics — challenge yourself with what you're least confident about |
+| Master Session | 2-hour cycle combining Feynman, gap study, interleaving, and teaching | Weekly deep study session for maximum retention | Attempting the Master Session without first mastering each individual technique |
 
 ---
 

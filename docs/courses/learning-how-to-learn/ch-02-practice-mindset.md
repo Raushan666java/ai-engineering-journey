@@ -23,7 +23,22 @@ After completing this chapter, you will be able to:
 - Describe the Pygmalion effect and leverage high expectations in mentorship, teaching, and self-talk
 - Optimize brain health through sleep, exercise, nutrition, and stress management for sustained learning
 
-![Practice, Mindset & Performance](../../assets/images/diagrams/learning-how-to-learn/ch-02-practice-mindset-dg1.png)
+![Practice, Mindset & Performance](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-02-practice-mindset-dg1.png)
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Deliberate Practice | Purposeful, feedback-driven practice at the edge of ability | Identify one specific skill gap and work on it with immediate feedback |
+| Illusions of Competence | Re-reading and highlighting feel productive but aren't | Replace passive review with recall-based testing to verify learning |
+| Einstellung Effect | Mental set traps you in familiar problem-solving patterns | Interleave topics and explain to novices to break out of ruts |
+| Growth Mindset | Belief that ability is developed through effort and strategy | Praise process and strategy, not talent; reframe failures as learning data |
+| Neuroplasticity | Brain rewires itself throughout life via new connections | Use deliberate practice to strengthen neural pathways at any age |
+| Yerkes-Dodson Law | Optimal performance requires moderate arousal levels | Calibrate stress before high-stakes situations — too little or too much undermines results |
+| Knowledge Transfer | Skills generalize when practiced across varied contexts | Design practice with explicit near and far transfer goals |
+| Pygmalion Effect | High expectations from others drive higher performance | Set high expectations in mentorship, teaching, and self-talk |
 
 ---
 
@@ -1243,6 +1258,19 @@ a) It builds muscle that protects the brain during impact  b) It increases BDNF 
 **12. A student is stuck on a recursion problem and feels frustrated. Which reframe best applies the growth mindset?**
 a) "I'm just not a recursion person"  b) "Recursion is useless anyway, I'll use iteration"  c) "I haven't mastered recursion yet — I need to try a different strategy, like tracing the call stack on paper"  d) "I should take a break and come back when I feel smarter"
 **Answer:** C. The word "yet" opens the possibility of change, and pivoting to a specific strategy (tracing the call stack) is the hallmark of growth-mindset behavior — treating difficulty as a signal to change strategies, not as an identity verdict.
+
+### Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| Deliberate Practice | Focused practice with clear goals, immediate feedback, and challenge at the edge of ability | When progress has stalled despite accumulated hours | Mistaking naive practice (repetition without feedback) for deliberate practice |
+| Illusions of Competence | False sense of mastery from familiarity rather than recall | When re-reading or highlighting feels productive | Trusting the feeling of fluency instead of verifying with production tests |
+| Einstellung Effect | Mental set that locks you into familiar but suboptimal approaches | When you solve problems the same way every time or feel stuck | Assuming your first approach is your best approach |
+| Growth Mindset | Belief that intelligence and ability grow through effort and strategy | When you catch yourself thinking "I can't do this" | Praising effort alone without also changing strategy (false growth mindset) |
+| Neuroplasticity | Brain's lifelong ability to reorganize via new neural connections | When learning something outside your current expertise | Assuming age or lack of talent permanently limits ability |
+| Yerkes-Dodson Law | Inverted-U curve relating arousal to performance | Before exams, presentations, or high-stakes performances | Believing more stress always leads to better performance |
+| Knowledge Transfer | Application of learned concepts to novel contexts | When learning a skill you need beyond training scenarios | Assuming near transfer happens automatically without varied practice |
+| Pygmalion Effect | Higher expectations from authority figures lead to higher performance | In mentoring, teaching, or coaching relationships | Setting unrealistically high expectations without providing scaffolding |
 
 ---
 

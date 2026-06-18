@@ -4,7 +4,7 @@ This chapter covers the brain's two learning modes — focused and diffuse — a
 
 ## Learning Objectives
 
-![Focused vs Diffuse Modes](../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns-dg1.png)
+![Focused vs Diffuse Modes](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns-dg1.png)
 
 - Understand focused vs diffuse thinking and when to use each
 - Explain the 4-chunk limit and how to build chunks
@@ -13,6 +13,19 @@ This chapter covers the brain's two learning modes — focused and diffuse — a
 - Explain neuroplasticity and how the brain physically changes with learning
 - Describe how sleep architecture, exercise, and stress affect memory and cognition
 - Apply cognitive load theory and circadian rhythm awareness to design effective study sessions
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Focused vs Diffuse Mode | Brain switches between concentrated & relaxed thinking | Switch every 15-20 min when stuck |
+| Chunking | Working memory holds ~4 chunks | Build chunks via focus → understand → practice |
+| Procedural vs Declarative | Knowing-that vs knowing-how | Test by doing, not re-reading |
+| Sleep & Memory | Sleep consolidates → long-term storage | Review before bed, sleep 7+ hours |
+| Neuroplasticity | Brain rewires with practice | Consistent practice > cramming |
+| Cognitive Load | Intrinsic + extraneous + germane load | Remove distractions, scaffold learning |
+| Multitasking | Attention residue costs 40% efficiency | Single-task, batch interruptions |
+| Exercise & BDNF | BDNF boosts hippocampal growth | 20 min cardio before study sessions |
 
 ---
 
@@ -784,6 +797,19 @@ a) Sleep deprivation reduces working memory capacity b) Memory consolidation req
 **Answer:** d) All of the above. Sleep deprivation impairs the prefrontal cortex (reducing working memory capacity), prevents the overnight consolidation of recently studied material, and elevates cortisol (which impairs recall during the exam).
 
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Signal to Use | Pitfall |
+|---------|-----------|---------------|---------|
+| Focused Mode | Concentrated attention on practiced neural paths | Starting a new problem, applying formulas | Staying past 20 min when frustrated |
+| Diffuse Mode | Relaxed big-picture thinking via DMN | Stuck after 15-20 min of focused work | Avoiding focused work by "giving up" too early |
+| Chunking | Compressing info into ~4 working-memory slots | Material feels overwhelming | Building shallow chunks without context |
+| Procedural Knowledge | Knowing how (riding a bike, coding) | Must build muscle memory | Mistaking reading for doing |
+| Declarative Knowledge | Knowing that (facts, formulas) | Must recall from memory | Mistaking recognition for recall |
+| Sleep Consolidation | Memory transfer from hippocampus → cortex | Before/after studying new material | Sacrificing sleep for extra study hours |
+| Cognitive Load | Mental effort used in working memory | Designing a study session | Ignoring extraneous load (phone, noise) |
+| Multitasking | Rapid task-switching with 40% efficiency loss | Any high-focus work | Convincing yourself you're multitasking well |
 
 ## Chapter Summary
 

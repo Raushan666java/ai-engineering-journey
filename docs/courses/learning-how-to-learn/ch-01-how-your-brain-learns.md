@@ -50,7 +50,7 @@ mindmap
       Activate by walk / shower / sleep
 ```
 
-When you sit down to solve a subnetting problem from `docs/courses/gate-cs-preparation/09-computer-networks.md` — say, finding the network address for `192.168.15.42/27` — you engage focused mode. You apply the formula: `/27` means 255.255.255.224, block size = 32, network address = `192.168.15.32`. Your brain fires precise, practiced circuits.
+When you sit down to solve a subnetting problem from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) — say, finding the network address for `192.168.15.42/27` — you engage focused mode. You apply the formula: `/27` means 255.255.255.224, block size = 32, network address = `192.168.15.32`. Your brain fires precise, practiced circuits.
 
 But if you stare at the problem for 20 minutes and still can't figure out why the broadcast address is `192.168.15.63`, you need diffuse mode. Get up. Walk. Shower. Your brain's default mode network continues working subconsciously, making remote connections. Many students report the answer arrives while brushing their teeth.
 
@@ -72,7 +72,7 @@ public class SubnetCalculator {
 }
 ```
 
-**Try This:** Open `docs/courses/computer-networks/index.md` and study the OSI model for 10 minutes in focused mode. Then close it and go for a 5-minute walk without thinking about it. When you return, try to recall all 7 layers from memory.
+**Try This:** Open [`docs/courses/computer-networks/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/computer-networks/index.md) and study the OSI model for 10 minutes in focused mode. Then close it and go for a 5-minute walk without thinking about it. When you return, try to recall all 7 layers from memory.
 
 ---
 
@@ -80,7 +80,7 @@ public class SubnetCalculator {
 
 **Answer:** The signal is **frustration**. If you've been working on a problem for 15-20 minutes and feel stuck, confused, or annoyed — that's your cue to switch to diffuse mode.
 
-In `docs/courses/placement-preparation/02-dsa-problem-bank.md`, Q37 asks you to find the median of two sorted arrays in O(log(min(n,m))). This is a hard problem. If you've sketched three approaches (merge-and-find, two-pointer, binary search on the smaller array) and all have flaws, continuing to stare at the screen yields diminishing returns. Your mental "chalkboard" is full.
+In [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), Q37 asks you to find the median of two sorted arrays in O(log(min(n,m))). This is a hard problem. If you've sketched three approaches (merge-and-find, two-pointer, binary search on the smaller array) and all have flaws, continuing to stare at the screen yields diminishing returns. Your mental "chalkboard" is full.
 
 Stop. Take a walk. Let your brain's diffuse networks re-organize what you've learned. When you return, the approach (binary search on partitions) often feels obvious. The neural replay during rest cements what you've been studying.
 
@@ -103,7 +103,7 @@ flowchart TD
     Chunk --> WM
 ```
 
-Look at the Java course structure in `docs/courses/java/index.md`. The course has 13 parts with 66+ chapters. If you tried to hold "Part III: Spring Boot Fundamentals" as 6 separate chapters (DI, auto-configuration, properties, Actuator, logging, testing), that's 6 items — over the limit. Instead, chunk it:
+Look at the Java course structure in [`docs/courses/java/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/java/index.md). The course has 13 parts with 66+ chapters. If you tried to hold "Part III: Spring Boot Fundamentals" as 6 separate chapters (DI, auto-configuration, properties, Actuator, logging, testing), that's 6 items — over the limit. Instead, chunk it:
 
 1. **Spring Boot Core** (DI, auto-config, properties, profiles)
 2. **Actuator & Observability** (Actuator, logging, metrics)
@@ -124,7 +124,7 @@ public class ChunkExample {
 }
 ```
 
-**Try This:** Open `docs/courses/java/index.md`. The entire Spring Boot part (Part III, chapters 9-14) has 6 chapters. Write down 2-3 chunks that cover all 6. Use those chunks to explain Spring Boot to a friend.
+**Try This:** Open [`docs/courses/java/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/java/index.md). The entire Spring Boot part (Part III, chapters 9-14) has 6 chapters. Write down 2-3 chunks that cover all 6. Use those chunks to explain Spring Boot to a friend.
 
 ---
 
@@ -132,27 +132,64 @@ public class ChunkExample {
 
 **Answer:** A chunk is built through three steps: (1) **focus** your attention on the concept, (2) **understand** the main idea, (3) **practice** to build context so you know when to use it.
 
-Take "Binary Search Tree" from `docs/courses/data-structures/09-bst.md`. Here's how to chunk it:
+Take "Binary Search Tree" from [`docs/courses/data-structures/09-bst.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/09-bst.md). Here's how to chunk it:
 
-**Step 1 — Focus:** Read the BST property: left subtree < node < right subtree. Write it down.
-**Step 2 — Understand:** Trace through insert(50), insert(30), insert(80), insert(20), insert(40). Draw each step. Why does 20 go left of 30? Why does 40 go right of 30? Understand the recursive structure.
-**Step 3 — Context:** When do you use a BST vs a hash table? BST gives ordered traversal (sorted order), floor/ceiling, range queries. Hash table gives O(1) lookup but no order.
+**Step 1 — Focus:** Read the BST property: left subtree < node < right subtree. Write it down. This single rule is the entire data structure — everything else derives from it.
+
+**Step 2 — Understand:** Trace through insert(50), insert(30), insert(80), insert(20), insert(40). Draw each step:
+```
+insert(50) → root is 50
+insert(30) → 30 < 50 → go left → null → attach as left child
+insert(80) → 80 > 50 → go right → null → attach as right child
+insert(20) → 20 < 50 → go left (30) → 20 < 30 → go left → null → attach
+insert(40) → 40 < 50 → go left (30) → 40 > 30 → go right → null → attach
+```
+Why does 20 go left of 30? Because `20 < 30`. Why does 40 go right of 30? Because `40 > 30`. Every insertion follows the same recursive comparison rule: **smaller goes left, larger goes right**.
+
+Once you see this pattern, you can write delete, search, and traversal:
 
 ```java
 class BST {
     Node root;
-    // Chunked understanding: "smaller goes left, larger goes right"
+    // Insert: compare, recurse left/right, attach at null
     Node insert(Node node, int key) {
         if (node == null) return new Node(key);
         if (key < node.key) node.left = insert(node.left, key);
         else if (key > node.key) node.right = insert(node.right, key);
         return node;
     }
-    // After chunking, you see this pattern everywhere
+    // Search: same comparison pattern, return on match or null
+    boolean search(Node node, int key) {
+        if (node == null) return false;
+        if (key == node.key) return true;
+        return key < node.key ? search(node.left, key)
+                              : search(node.right, key);
+    }
+    // In-order traversal: left → node → right = sorted order
+    void inorder(Node node) {
+        if (node == null) return;
+        inorder(node.left);
+        System.out.print(node.key + " ");
+        inorder(node.right);
+    }
+    // After chunking, the recursive comparison pattern is obvious everywhere
 }
 ```
 
-**Try This:** Open `docs/courses/data-structures/index.md`, pick any chapter (e.g., Heaps), and apply the 3-step chunking process. Write a one-sentence summary that captures the entire data structure.
+**Step 3 — Context:** When do you use a BST vs a hash table?
+
+| Operation | BST (balanced) | Hash Table |
+|-----------|---------------|------------|
+| Lookup | O(log n) | O(1) avg |
+| Insert | O(log n) | O(1) avg |
+| Sorted order | O(n) inorder | Not supported |
+| Range query (5-100) | O(k + log n) | O(n) scan |
+| Floor/Ceiling | O(log n) | Not supported |
+| Nearest neighbor | O(log n) | Not supported |
+
+Choose BST when you need **order** — sorted traversal, range queries, nearest values. Choose hash table when you need raw **speed** — check existence, unique counts.
+
+**Try This:** Open [`docs/courses/data-structures/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/index.md), pick any chapter (e.g., Heaps), and apply the 3-step chunking process. Write a one-sentence summary that captures the entire data structure.
 
 ---
 
@@ -160,7 +197,7 @@ class BST {
 
 **Answer:** Complex systems have natural chunk hierarchies. Understanding the hierarchy lets you "zoom in" on details or "zoom out" to the big picture without getting lost.
 
-The OSI 7-layer model from `docs/courses/gate-cs-preparation/09-computer-networks.md` (section 1) is a classic example. Instead of memorizing 7 separate layers, compress them into 4 functional groups:
+The OSI 7-layer model from [`docs/courses/gate-cs-preparation/09-computer-networks.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/09-computer-networks.md) (section 1) is a classic example. Instead of memorizing 7 separate layers, compress them into 4 functional groups:
 
 1. **Media layers** (Physical + Data Link) — getting bits from A to B on the same wire
 2. **Network layer** — routing across different networks (IP)
@@ -181,7 +218,7 @@ public enum OsiLayer {
 }
 ```
 
-**Try This:** Open `docs/courses/computer-networks/index.md` and create your own chunk hierarchy for the TCP/IP model (4 layers). Map each to its job in one sentence.
+**Try This:** Open [`docs/courses/computer-networks/index.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/computer-networks/index.md) and create your own chunk hierarchy for the TCP/IP model (4 layers). Map each to its job in one sentence.
 
 ---
 
@@ -189,7 +226,7 @@ public enum OsiLayer {
 
 **Answer:** Declarative knowledge is "knowing *that*" — facts, concepts, theories. Procedural knowledge is "knowing *how*" — the ability to execute a process. Learning requires both, but they live in different memory systems.
 
-From `docs/courses/placement-preparation/02-dsa-problem-bank.md`: you can **declare** that recursion has a base case and a recursive case (declarative). But **procedurally** writing a recursive DFS on a tree requires practice:
+From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md): you can **declare** that recursion has a base case and a recursive case (declarative). But **procedurally** writing a recursive DFS on a tree requires practice:
 
 ```java
 // Declarative knowledge: "DFS visits all nodes depth-first"
@@ -204,7 +241,7 @@ void dfs(TreeNode node) {
 
 Many students read the code and think "I understand" — that's declarative. But ask them to write it from memory and they freeze. The illusion of competence (Q9) comes from confusing declarative and procedural knowledge. You only truly know something when you can *do* it.
 
-**Try This:** Read the explanation of BFS in `docs/courses/data-structures/12-graph-traversals.md` (declarative). Then close the file and implement BFS from memory (procedural). Open it again and compare. Repeat until you can write it perfectly.
+**Try This:** Read the explanation of BFS in [`docs/courses/data-structures/12-graph-traversals.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/data-structures/12-graph-traversals.md) (declarative). Then close the file and implement BFS from memory (procedural). Open it again and compare. Repeat until you can write it perfectly.
 
 ---
 
@@ -233,7 +270,7 @@ sequenceDiagram
     Day->>Neo: Retrieve consolidated memories
 ```
 
-Before a GATE exam, many students pull all-nighters studying `docs/courses/gate-cs-preparation/07-operating-systems.md`. This is counterproductive. The formulas for CPU scheduling (TAT, WT, RT from the Cheat Sheet) need sleep to consolidate. If you study them at 10 PM and sleep 8 hours, you'll recall them better at 9 AM than if you studied until 4 AM.
+Before a GATE exam, many students pull all-nighters studying [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md). This is counterproductive. The formulas for CPU scheduling (TAT, WT, RT from the Cheat Sheet) need sleep to consolidate. If you study them at 10 PM and sleep 8 hours, you'll recall them better at 9 AM than if you studied until 4 AM.
 
 **Sleep stages matter:** Stage 3 (deep sleep) strengthens factual knowledge. REM sleep integrates procedural skills and creative problem-solving. Both are essential. A 7-8 hour sleep cycle contains 4-5 full cycles.
 
@@ -254,7 +291,7 @@ public class MemoryConsolidation {
 }
 ```
 
-**Try This:** Tonight, spend 20 minutes reviewing the formula sheet in `docs/courses/gate-cs-preparation/07-operating-systems.md` before bed. Do NOT look at your phone. Sleep 7+ hours. Test yourself in the morning. Compare recall with what you remember from last night.
+**Try This:** Tonight, spend 20 minutes reviewing the formula sheet in [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) before bed. Do NOT look at your phone. Sleep 7+ hours. Test yourself in the morning. Compare recall with what you remember from last night.
 
 ---
 
@@ -393,7 +430,7 @@ public class WorkingMemory {
 | Germane | Active recall | Close the book and write what you remember |
 | Germane | Elaboration | Explain the concept in your own words |
 
-From `docs/courses/placement-preparation/02-dsa-problem-bank.md`, a hard problem like Q37 (median of two sorted arrays) has high intrinsic load because it involves two arrays, log complexity constraint, and partition logic. If you study it in a noisy café (high extraneous load), you will hit cognitive overload. Study it in a quiet room after reviewing binary search fundamentals (low intrinsic + low extraneous = room for germane processing).
+From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/placement-preparation/02-dsa-problem-bank.md), a hard problem like Q37 (median of two sorted arrays) has high intrinsic load because it involves two arrays, log complexity constraint, and partition logic. If you study it in a noisy café (high extraneous load), you will hit cognitive overload. Study it in a quiet room after reviewing binary search fundamentals (low intrinsic + low extraneous = room for germane processing).
 
 **Try This:** Take a topic you find difficult from `02-dsa-problem-bank.md`. Identify the intrinsic load (what prerequisites are you missing?), the extraneous load (what clutter can you remove from your notes?), and the germane load (what active recall strategy will you use?). Write all three down before your next study session.
 
@@ -691,7 +728,7 @@ public class CircadianStudyPlanner {
 
 **The 90-minute cycle pattern:** In a 7-8 hour night, you go through 4-5 complete cycles. The composition changes across the night:
 
-- **Early cycles (hours 1-3):** More N3 deep sleep (declarative memory consolidation — facts, formulas, concepts). This is critical for studying material from `docs/courses/gate-cs-preparation/07-operating-systems.md`.
+- **Early cycles (hours 1-3):** More N3 deep sleep (declarative memory consolidation — facts, formulas, concepts). This is critical for studying material from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md).
 - **Late cycles (hours 5-8):** More REM sleep (procedural memory, creative insight). This is critical for problem-solving skills and integrating knowledge.
 
 **The consequence of short sleep (5-6 hours):** You lose the late cycles, which are predominantly REM. You lose the creative integration and procedural learning. You can still recall facts (those consolidated in early cycles), but you struggle to apply them creatively to novel problems — exactly the skill tested in competitive exams and interviews.
@@ -746,7 +783,7 @@ public class SleepArchitecture {
 
 **The pre-sleep study protocol:** Spend 15-20 minutes reviewing material right before bed. Do not check your phone afterward (the blue light and dopamine stimulation interfere with sleep onset). Go directly to sleep. Your first sleep cycle (rich in N3 deep sleep) will prioritize consolidating the material you reviewed last. This is more effective than morning review for declarative memory.
 
-**Try This:** Tonight, implement the pre-sleep study protocol. Review a topic from `docs/courses/gate-cs-preparation/07-operating-systems.md` (the CPU scheduling formulas section) for 20 minutes before bed. Turn off all screens. Sleep 7-8 hours. In the morning, without re-reading, write down everything you remember about CPU scheduling. Then check your notes. Most students recall 60-80% of the material with zero morning review — significantly better than studying in the morning and testing the same day.
+**Try This:** Tonight, implement the pre-sleep study protocol. Review a topic from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (the CPU scheduling formulas section) for 20 minutes before bed. Turn off all screens. Sleep 7-8 hours. In the morning, without re-reading, write down everything you remember about CPU scheduling. Then check your notes. Most students recall 60-80% of the material with zero morning review — significantly better than studying in the morning and testing the same day.
 
 ---
 

@@ -1,5 +1,7 @@
 # Chapter 12: Boolean Algebra
 
+> **Previous:** [Chapter 11: Algebraic Structures](../11-algebra.md) | **Next:** [Chapter 13: Discrete Probability](../13-probability.md)
+
 ## Learning Objectives
 
 ![Boolean Algebra Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/12-boolean.png)
@@ -13,7 +15,29 @@ After completing this chapter, you will be able to:
 - Design logic circuits from Boolean expressions
 - Recognize duality in Boolean algebra
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Boolean Axioms | AND, OR, NOT operations with identity and complement laws | Foundation of all digital logic and circuit design |
+| Boolean Identities | Idempotent, absorption, De Morgan's laws simplify expressions | Optimizing logical conditions in code |
+| Logic Gates | AND, OR, NOT, NAND, NOR, XOR implement Boolean functions | Building CPUs, ALUs, and all digital hardware |
+| Karnaugh Maps | Visual method for minimizing Boolean expressions | Reducing gate count in circuit design |
+| Functional Completeness | NAND alone can implement any Boolean function | Universal gate in semiconductor manufacturing |
+
 ## Theory
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Boolean Axioms] --> B[Duality & Identities]
+    B --> C[Boolean Functions]
+    C --> D[Logic Gates]
+    D --> E[Circuit Minimization & K-maps]
+    E --> F[Don't Care Conditions]
+    F --> G[Digital Circuit Design]
+```
 
 ### 12.1 Definition
 

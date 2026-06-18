@@ -1,5 +1,7 @@
 # Chapter 4: Decision Trees
 
+> **Previous:** [Logistic Regression](./03-logistic-regression.md) | **Next:** [Ensemble Methods](./05-ensemble-methods.md)
+
 ---
 
 ## Learning Objectives
@@ -8,6 +10,30 @@
 - Calculate and compare splitting criteria: Entropy, Information Gain, and Gini Impurity
 - Describe the recursive splitting process (ID3 and CART algorithms)
 - Identify and mitigate overfitting using pruning and hyperparameters
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Tree Structure | Internal nodes test attributes leaves assign labels | Extremely interpretable—useful for stakeholder explanations |
+| Entropy | Measures disorder in a dataset | Lower entropy means purer more homogeneous subsets |
+| Information Gain | Reduction in entropy after a split | Choose the feature with highest gain at each node |
+| Gini Impurity | Alternative to entropy computationally faster | CART uses Gini by default; similar results to entropy |
+| Recursive Splitting | Tree built top-down by repeated partitioning | Stop when depth max or node purity is reached |
+| Overfitting | Deep trees memorize training noise | Prune aggressively or set max_depth and min_samples_split |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Root Node: All Data] --> B{Best Feature Split}
+    B --> C[Child Node Pure?]
+    C -->|Yes| D[Leaf Node: Class Label]
+    C -->|No| B
+    B --> E[Max Depth or Min Samples?]
+    E -->|Yes| F[Stop Splitting]
+    E -->|No| B
+```
 
 ---
 
@@ -40,6 +66,10 @@ The tree is built recursively by choosing the best split and repeating the proce
 2. A maximum depth is reached.
 3. The number of samples in a node is below a threshold.
 
+> **One-Sentence Takeaway:** Decision trees partition the feature space with hierarchical tests, choosing splits that maximize purity through entropy reduction or Gini impurity minimization.
+
+> **Pro Tip:** Decision trees handle both numerical and categorical data natively with no need for feature scaling—but they are sensitive to small data variations, so always pair them with cross-validation.
+
 ---
 
 ## Examples
@@ -68,6 +98,74 @@ print(f"Predicted class: {iris.target_names[prediction]}")
 ```
 **Output**: Shows how the tree classifies a sample based on sepal/petal measurements.
 
+> **One-Sentence Takeaway:** Decision trees provide intuitive, interpretable models but require careful hyperparameter tuning to avoid overfitting the training data.
+
+> **Warning:** A single decision tree is highly sensitive to data changes—a different training split can produce a completely different tree, which is why ensemble methods are often preferred.
+
+---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|------------|-----------------|----------|
+| Entropy | $-\sum p_i \log_2 p_i$ | Measures disorder; uses log | ID3 algorithm |
+| Gini Impurity | $1 - \sum p_i^2$ | Faster computation; no log | CART algorithm |
+| Information Gain | $H(S) - \sum \frac{\|S_v\|}{\|S\|} H(S_v)$ | Quantifies split quality | Feature selection at nodes |
+| Pre-Pruning | Stop splitting early (max_depth) | Halts growth before overfitting | Prevents complex trees |
+| Post-Pruning | Grow full tree then remove branches | Reduces complexity after building | CCP (cost-complexity pruning) |
+| CART | Binary splits using Gini | Produces only binary trees | sklearn default implementation |
+
+## Quick Reference
+
+| Term | Formula / Definition |
+|------|---------------------|
+| Entropy | $H(S) = -\sum_{i=1}^{c} p_i \log_2 p_i$ |
+| Information Gain | $IG(S, A) = H(S) - \sum_{v} \frac{\|S_v\|}{\|S\|} H(S_v)$ |
+| Gini Impurity | $Gini(S) = 1 - \sum_{i=1}^{c} p_i^2$ |
+| ID3 Algorithm | Iterative Dichotomiser 3 (uses entropy) |
+| CART Algorithm | Classification and Regression Trees (uses Gini) |
+| max_depth | Hyperparameter limiting tree height |
+| min_samples_split | Minimum samples to justify a split |
+| min_samples_leaf | Minimum samples that must remain in a leaf |
+
+## Cross-Application Matrix
+
+| Domain | Application | Features Used | Split Criteria |
+|--------|------------|---------------|---------------|
+| Healthcare | Diagnose heart disease | Age cholesterol chest pain type | Gini impurity |
+| Finance | Loan approval decision | Income credit score employment length | Information gain |
+| Retail | Product recommendation | Purchase history browsing time category | Gini impurity |
+| Manufacturing | Quality control defect detection | Temperature pressure vibration | Entropy |
+
+## Chapter Quiz
+
+1. Which metric measures the disorder or impurity of a dataset in decision tree learning?
+   A) Accuracy
+   B) Entropy
+   C) Mean Squared Error
+   D) R-squared
+
+<details><summary>Answer</summary>**B)** Entropy quantifies the disorder in a dataset; lower entropy means purer subsets.
+</details>
+
+2. What is the main advantage of Gini Impurity over Entropy for decision tree splitting?
+   A) Gini produces more accurate trees
+   B) Gini is computationally faster (no logarithmic calculations)
+   C) Gini supports regression tasks
+   D) Gini requires less training data
+
+<details><summary>Answer</summary>**B)** Gini Impurity avoids logarithmic calculations, making it faster while producing similar results to entropy.
+</details>
+
+3. Which hyperparameter directly prevents a decision tree from growing too deep and overfitting?
+   A) n_estimators
+   B) learning_rate
+   C) max_depth
+   D) C (regularization strength)
+
+<details><summary>Answer</summary>**C)** max_depth limits how deep the tree can grow, directly controlling model complexity and reducing overfitting.
+</details>
+
 ---
 
 ## Summary
@@ -77,6 +175,8 @@ print(f"Predicted class: {iris.target_names[prediction]}")
 - Information Gain selects features that most reduce uncertainty.
 - Overfitting is a significant risk; a tree that is too deep will memorize the training data.
 - Hyperparameters like `max_depth` and `min_samples_split` are crucial for controlling tree complexity.
+
+> **One-Sentence Takeaway:** Decision trees are powerful yet intuitive, but their high variance makes pruning and hyperparameter tuning essential for reliable performance on new data.
 
 ---
 

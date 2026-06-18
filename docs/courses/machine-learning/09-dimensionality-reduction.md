@@ -1,5 +1,7 @@
 # Chapter 9: Dimensionality Reduction
 
+> **Previous:** [Unsupervised Learning](../08-unsupervised-learning.md) | **Next:** [Model Evaluation](../10-model-evaluation.md)
+
 ---
 
 ## Learning Objectives
@@ -8,6 +10,34 @@
 - Explain the geometric and algebraic intuition behind Principal Component Analysis (PCA)
 - Calculate and interpret the "Explained Variance Ratio"
 - Identify scenarios for using dimensionality reduction in preprocessing
+
+---
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Curse of Dimensionality | As dimensions increase, data becomes sparse and distances become less meaningful | Reduce dimensions before modeling to avoid overfitting and improve performance |
+| Principal Component Analysis | PCA finds directions of maximum variance in the data | Use PCA for feature extraction, noise reduction, and visualization |
+| Explained Variance Ratio | Measures how much information each principal component retains | Choose enough components to capture 90–95% of total variance |
+| Eigenvectors & Eigenvalues | Eigenvectors define the new axes; eigenvalues measure variance along each axis | Sort by eigenvalue magnitude to identify the most important components |
+| t-SNE | Non-linear technique preserving local neighborhood structure | Best for visualization (2D/3D) of high-dimensional data, not for preprocessing |
+| UMAP | Non-linear technique balancing local and global structure | Faster than t-SNE; scales better to large datasets |
+| Feature Selection vs. Extraction | Selection chooses existing features; extraction creates new ones | Use extraction (PCA) when features are correlated; use selection for interpretability |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[High-Dimensional Data] --> B[Center the Data]
+    B --> C[Compute Covariance Matrix]
+    C --> D[Eigendecomposition]
+    D --> E[Sort Eigenvectors by Eigenvalue]
+    E --> F[Select Top K Components]
+    F --> G[Project Data onto New Subspace]
+    G --> H[Reduced-Dimension Representation]
+    H --> I[Visualize or Train Model]
+```
 
 ---
 
@@ -34,6 +64,14 @@ The explained variance ratio tells us how much information (variance) each princ
 While PCA is linear, other techniques like t-Distributed Stochastic Neighbor Embedding (t-SNE) and Uniform Manifold Approximation and Projection (UMAP) are non-linear. They are primarily used for visualizing high-dimensional data in 2D or 3D by preserving local relationships between points.
 
 ![PCA Process](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/machine-learning/ch09-pca.png)
+
+> **One-Sentence Takeaway:** PCA reduces dimensionality by projecting data onto orthogonal axes of maximum variance, effectively compressing information while preserving the most meaningful structure.
+
+> **Pro Tip:** Always standardize your data (zero mean, unit variance) before applying PCA. If features are on different scales, the components will be dominated by the features with the largest absolute values rather than the most informative ones.
+
+> **Remember:** The explained variance ratio is your guide to choosing the number of components. Plot the cumulative explained variance and look for the point where the curve flattens — this is your "variance elbow."
+
+> **Warning:** PCA assumes linear relationships between features. If your data lies on a non-linear manifold (e.g., a curved surface), t-SNE or UMAP will produce more meaningful low-dimensional representations than PCA.
 
 ---
 
@@ -63,6 +101,47 @@ Using PCA to compress an image of a handwritten digit.
 - **Process**: Perform PCA on the pixels of the image, keep only the top 10% of components.
 - **Result**: The reconstructed image is slightly blurry but clearly recognizable, demonstrating that most information is contained in a small number of components.
 
+> **One-Sentence Takeaway:** PCA reduces 4D Iris data to 2D while retaining over 95% variance, and image reconstruction experiments show that most visual information concentrates in the top principal components.
+
+---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| PCA | Linear transformation maximizing variance in orthogonal directions | Global structure preservation; fast and deterministic | Preprocessing, noise reduction, feature extraction |
+| t-SNE | Non-linear embedding preserving local pairwise distances | Captures local neighborhood structure; stochastic | Visualization of high-dimensional data in 2D/3D |
+| UMAP | Non-linear embedding based on manifold theory | Faster than t-SNE; preserves more global structure | Large-scale visualization, exploratory analysis |
+| Feature Selection | Chooses a subset of original features | Maintains interpretability; features remain unchanged | When model interpretability is critical |
+| Feature Extraction | Creates new features from combinations of originals | Reduces dimensionality but loses original meaning | When features are highly correlated |
+| SVD | Matrix factorization method: $X = U\Sigma V^T$ | Computationally stable; works on the data matrix directly | Numerical implementation of PCA; handles sparse data |
+| Autoencoders | Neural network that learns compressed representation | Non-linear dimensionality reduction; requires training | Complex high-dimensional data (images, text embeddings) |
+
+## Quick Reference
+
+| Concept | Formula / Detail |
+|---------|-----------------|
+| Covariance Matrix | $\Sigma = \frac{1}{n-1} (X - \mu)^T (X - \mu)$ |
+| PCA Objective | Maximize $\mathbf{v}^T \Sigma \mathbf{v}$ subject to $\|\mathbf{v}\| = 1$ |
+| Eigenvalue Equation | $\Sigma \mathbf{v} = \lambda \mathbf{v}$ |
+| Explained Variance Ratio | $\frac{\lambda_i}{\sum_{j=1}^{d} \lambda_j}$ |
+| Projection | $X_{\text{reduced}} = X W_k$ where $W_k$ has top $k$ eigenvectors |
+| Reconstruction | $X_{\text{approx}} = X_{\text{reduced}} W_k^T$ |
+| t-SNE Perplexity | Typical range: 5–50; controls balance between local and global aspects |
+| UMAP n_neighbors | Typical range: 5–100; controls balance between local and global structure |
+
+## Cross-Application Matrix
+
+| Domain | Application | How Dimensionality Reduction Is Used |
+|--------|-------------|--------------------------------------|
+| Genomics | Gene expression analysis | PCA reduces thousands of gene dimensions to visualize patient clusters |
+| Finance | Portfolio risk modeling | PCA identifies principal risk factors from correlated asset returns |
+| Natural Language Processing | Topic modeling, document embedding | Truncated SVD on TF-IDF matrices (LSA) for semantic space discovery |
+| Computer Vision | Face recognition (Eigenfaces) | PCA on pixel space creates "face space" for efficient recognition |
+| Signal Processing | Noise reduction, compression | PCA separates signal from noise by discarding low-variance components |
+| Recommendation Systems | Collaborative filtering | SVD-based matrix factorization predicts user-item preferences |
+| Healthcare | Medical imaging analysis | PCA on MRI/CT scans reduces dimensionality for faster diagnosis models |
+
 ---
 
 ## Summary
@@ -90,3 +169,42 @@ Using PCA to compress an image of a handwritten digit.
 
 ### Challenge Problem
 1. Mathematically, PCA can be solved using Singular Value Decomposition (SVD). Explain the relationship between the singular values of the data matrix $\mathbf{X}$ and the eigenvalues of the covariance matrix $\mathbf{X}^T\mathbf{X}$.
+
+---
+
+## Chapter Quiz
+
+Test your understanding of Dimensionality Reduction.
+
+**1.** What is the correct order of steps in PCA?
+
+<details><summary>**Answer**</summary>
+**C)** The correct sequence is: center the data → compute covariance matrix → eigen-decomposition → sort eigenvectors by eigenvalue → select top K → project data.
+</details>
+
+- A) Project data → compute covariance → eigen-decomposition → center data
+- B) Compute covariance → center data → eigen-decomposition → select top K
+- C) Center data → compute covariance → eigen-decomposition → sort → select → project
+- D) Select top K → eigen-decomposition → project → compute covariance
+
+**2.** If the first principal component explains 70% of the variance and the second explains 20%, what is the cumulative explained variance of the first two components?
+
+<details><summary>**Answer**</summary>
+**A)** The cumulative explained variance is the sum: 70% + 20% = 90%. This means 90% of the total variance is captured by the first two components.
+</details>
+
+- A) 90%
+- B) 50%
+- C) 70%
+- D) 20%
+
+**3.** When would you choose t-SNE over PCA for dimensionality reduction?
+
+<details><summary>**Answer**</summary>
+**C)** t-SNE excels at preserving local neighborhood structure in data that lies on non-linear manifolds, making it superior for visualizing complex high-dimensional data like word embeddings or image features.
+</details>
+
+- A) When you need a deterministic, reproducible transformation
+- B) When you need to use the reduced features as input to a model
+- C) When visualizing non-linear structure in high-dimensional data
+- D) When working with small datasets only

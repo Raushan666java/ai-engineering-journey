@@ -1,5 +1,7 @@
 # Chapter 2: Logic
 
+> **Previous:** [Chapter 1: Sets](01-sets.md) | **Next:** [Chapter 3: Predicates and Quantifiers](03-predicates.md)
+
 ## Learning Objectives
 
 ![Logic Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/02-logic.png)
@@ -14,6 +16,29 @@ After completing this chapter, you will be able to:
 - Work with conditional and biconditional statements
 - Determine converse, inverse, and contrapositive
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Propositions | A proposition is a statement that is either true or false | Every precise factual claim is a proposition — questions and commands are not |
+| Logical Connectives | $\neg, \land, \lor, \rightarrow, \leftrightarrow$ combine propositions | Connectives mirror natural language "not," "and," "or," "if-then," "iff" |
+| Truth Tables | Exhaustive enumeration of all truth assignments | Truth tables are the ultimate arbiter of logical equivalence |
+| Logical Equivalence | $A \equiv B$ when they match on every row | De Morgan's and distributive laws simplify complex expressions |
+| Conditionals | $p \rightarrow q$ is false only when $p$ is true and $q$ is false | The contrapositive is equivalent; the converse is not |
+| Tautology & Satisfiability | A tautology is always true; a contradiction always false | Used to validate arguments and detect impossible conditions |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Propositions] --> B[Logical Connectives]
+    B --> C[Truth Tables]
+    C --> D[Logical Equivalence]
+    D --> E[Conditionals & Related Statements]
+    E --> F[Satisfiability & Tautology]
+    F --> G[Applications]
+```
+
 ## Theory
 
 ### 2.1 Propositions
@@ -23,6 +48,8 @@ A **proposition** is a declarative statement that is either true (T) or false (F
 Examples: "2 + 2 = 4" (true). "5 is an even number" (false). "If it rains, the ground gets wet" (a conditional proposition whose truth depends on the meaning; in logic we treat it as a compound proposition).
 
 Non-examples: "What time is it?" (question), "Close the door" (command), "This sentence is false" (paradox, not a proposition).
+
+> **One-Sentence Takeaway:** A proposition is the atomic unit of logic — it must have a definite truth value (true or false) with no ambiguity.
 
 ### 2.2 Logical Connectives
 
@@ -37,6 +64,8 @@ Let $p$ and $q$ be propositions.
 | Conditional | $p \rightarrow q$ | "if $p$ then $q$" | $p$ false or $q$ true |
 | Biconditional | $p \leftrightarrow q$ | "$p$ if and only if $q$" | both same truth value |
 
+> **One-Sentence Takeaway:** Logical connectives define the grammar of propositional logic — mastering their truth conditions is essential for reasoning.
+
 ### 2.3 Truth Tables
 
 A truth table enumerates all possible truth assignments to the variables and shows the resulting truth value of a compound proposition.
@@ -49,6 +78,8 @@ A truth table enumerates all possible truth assignments to the variables and sho
 | F | F | T | F | F | F | T | T |
 
 Note carefully: $p \rightarrow q$ is false only when $p$ is true and $q$ is false. This is called **material implication**.
+
+> **One-Sentence Takeaway:** A truth table enumerates all $2^n$ possible truth assignments — it is the definitive method for checking equivalence and validity.
 
 ### 2.4 Logical Equivalence
 
@@ -74,6 +105,8 @@ $$\neg(p \lor q) \equiv \neg p \land \neg q$$
 | Contrapositive | $p \rightarrow q \equiv \neg q \rightarrow \neg p$ |
 | Biconditional | $p \leftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p)$ |
 
+> **One-Sentence Takeaway:** Two propositions are logically equivalent when they have identical truth tables — De Morgan's laws are the most important equivalence pair.
+
 ### 2.5 Conditional and Related Statements
 
 For the conditional $p \rightarrow q$:
@@ -84,9 +117,80 @@ For the conditional $p \rightarrow q$:
 
 The conditional is equivalent to its contrapositive. The converse is equivalent to the inverse.
 
+> **One-Sentence Takeaway:** The conditional $p \rightarrow q$ is logically equivalent to its contrapositive $\neg q \rightarrow \neg p$, but NOT to its converse $q \rightarrow p$.
+
 ### 2.6 Satisfiability and Tautology
 
 A compound proposition is a **tautology** if it is always true (e.g., $p \lor \neg p$). It is a **contradiction** if always false (e.g., $p \land \neg p$). It is **satisfiable** if there exists at least one truth assignment making it true.
+
+> **One-Sentence Takeaway:** Tautologies are always-true statements (valid arguments), contradictions are always-false (impossible conditions), and satisfiable statements have at least one path to truth.
+
+> **Pro Tip:** When simplifying a compound proposition, work step-by-step naming each equivalence you use — this makes errors easy to spot and grades easy to award.
+>
+> **Pro Tip:** Use De Morgan's laws to push negations inward: $\neg(p \land q) \equiv \neg p \lor \neg q$. This is the single most useful equivalence for simplifying negated expressions.
+>
+> **Warning:** $p \rightarrow q$ is NOT equivalent to $q \rightarrow p$ (the converse). A common logical fallacy is assuming "if P then Q" means the same as "if Q then P."
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Proposition | Declarative T/F statement | Atomic unit, no connectives | Building blocks of arguments |
+| Tautology | Always true | No falsifying assignment | Valid argument forms |
+| Contradiction | Always false | No satisfying assignment | Detecting inconsistent premises |
+| Logical Equivalence | Same truth table | $A \equiv B$ iff identical columns | Simplifying expressions |
+| Conditional ($\rightarrow$) | False only when $p$ true, $q$ false | Material implication | "If-then" reasoning |
+| Biconditional ($\leftrightarrow$) | True when $p$ and $q$ match | Both directions must hold | Definitions and equivalences |
+
+## Quick Reference
+
+| Rule | Name |
+|------|------|
+| $\neg(\neg p) \equiv p$ | Double Negation |
+| $p \lor \neg p \equiv T$ | Law of Excluded Middle |
+| $p \land \neg p \equiv F$ | Law of Contradiction |
+| $\neg(p \land q) \equiv \neg p \lor \neg q$ | De Morgan's Law |
+| $\neg(p \lor q) \equiv \neg p \land \neg q$ | De Morgan's Law |
+| $p \rightarrow q \equiv \neg p \lor q$ | Implication Law |
+| $p \rightarrow q \equiv \neg q \rightarrow \neg p$ | Contrapositive |
+| $p \leftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p)$ | Biconditional Law |
+
+## Cross-Application Matrix
+
+| Area | How Logic Applies |
+|------|------------------|
+| Programming | Boolean expressions in `if`, `while`, and loop conditions |
+| Circuit Design | Logic gates (AND, OR, NOT) implement propositional logic |
+| Database Queries | SQL WHERE clauses use logical connectives |
+| Mathematics | Proofs rely on logical deduction and equivalence |
+| AI & Expert Systems | Inference engines apply logical deduction rules |
+| Law & Argumentation | Legal reasoning follows modus ponens and modus tollens |
+
+## Chapter Quiz
+
+1. Which of the following is a proposition?
+   - A) What time is it?
+   - B) $x + 2 = 5$
+   - C) 2 + 2 = 5
+   - D) Close the door
+
+   <details><summary>Answer</summary>**C)** "2 + 2 = 5" is a declarative statement with a definite truth value (false).</details>
+
+2. $p \rightarrow q$ is logically equivalent to:
+   - A) $q \rightarrow p$
+   - B) $\neg p \rightarrow \neg q$
+   - C) $\neg q \rightarrow \neg p$
+   - D) $p \land q$
+
+   <details><summary>Answer</summary>**C)** The contrapositive $\neg q \rightarrow \neg p$ is logically equivalent to $p \rightarrow q$.</details>
+
+3. A compound proposition that is always false is called a:
+   - A) Tautology
+   - B) Contingency
+   - C) Satisfiable
+   - D) Contradiction
+
+   <details><summary>Answer</summary>**D)** A contradiction (e.g., $p \land \neg p$) is always false regardless of truth assignments.</details>
 
 ## Examples
 

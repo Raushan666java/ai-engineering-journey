@@ -1,5 +1,7 @@
 # Chapter 15: Applications of Discrete Mathematics
 
+> **Previous:** [Chapter 14: Number Theory](../14-number-theory.md) | **Next:** None (Last Chapter)
+
 ## Learning Objectives
 
 ![Applications of Discrete Mathematics Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/15-applications.png)
@@ -12,7 +14,29 @@ After completing this chapter, you will be able to:
 - Solve matching problems on bipartite graphs
 - Apply scheduling and resource allocation algorithms
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Coding Theory | Hamming distance determines error detection/correction | Reliable data transmission, QR codes, ECC memory |
+| Cryptography | RSA and Diffie-Hellman secure public-key communication | HTTPS, email encryption, digital signatures |
+| Network Flows | Max-flow min-cut theorem optimizes network throughput | Traffic routing, supply chains, bipartite matching |
+| Matching Theory | Hall's theorem and Hungarian algorithm pair resources optimally | Job assignment, dating apps, resource allocation |
+| Scheduling | Greedy algorithms optimize task ordering | Project management, CPU scheduling, exam timetabling |
+
 ## Theory
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Coding Theory] --> B[Cryptography]
+    B --> C[Network Flows]
+    C --> D[Matching Theory]
+    D --> E[Scheduling]
+    E --> F[Graph Coloring Apps]
+    F --> G[TSP & Complexity]
+```
 
 ### 15.1 Coding Theory
 

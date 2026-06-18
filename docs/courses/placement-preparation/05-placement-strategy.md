@@ -1,4 +1,31 @@
-# 05 â€” Placement Season Strategy
+﻿# 05 â€” Placement Season Strategy
+
+> **Previous:** [04 — Company-Specific Preparation](04-company-specific.md)  
+> **Next:** [06 — HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)
+
+## Chapter at a Glance
+
+| Section | Content |
+|---------|---------|
+| Placement Season Overview | Timeline, on-campus vs off-campus dynamics |
+| Before the Season | Resume, profile optimization, company research |
+| Core Preparation | DSA, CS fundamentals, aptitude, communication |
+| Application Strategy | Company tiers, dream companies, backup plans |
+| During the Season | Interview scheduling, rejection handling, offer negotiation |
+| Quick Reference | Interview day checklist, final tips |
+
+```mermaid
+flowchart LR
+    A[6 Months Before] --> B[Resume & Profiles]
+    B --> C[DSA + CS Fundamentals]
+    C --> D[Company Research]
+    D --> E[Apply Strategically]
+    E --> F[Interview Season]
+    F --> G{Offer?}
+    G -->|Yes| H[Negotiate & Accept]
+    G -->|No| I[Learn & Improve]
+    I --> E
+```
 
 ## Placement Season Overview
 
@@ -13,6 +40,8 @@ The **primary placement window** runs from **July to December of your 3rd year (
 - **IITs / NITs / Top NIRF colleges**: Phase 1 starts Julyâ€“August. Phase 2 (slower) runs Septemberâ€“December. By January most students are placed.
 - **Autonomous private colleges (VIT, SRM, Manipal, etc.)**: Septemberâ€“March window. Multiple phases across the year.
 - **State universities**: Usually Januaryâ€“April, with fewer companies visiting.
+
+> **Pro Tip:** Internship PPOs are often easier to get than full-time offers because you compete within a smaller intern batch. Treat your internship as a 2-month extended interview.
 
 **Key distinction â€” internship vs placement season:**
 - **Internship season (3rd year)**: Companies hire for 2â€“6 month summer internships. Many convert to full-time offers (PPO/PPI).
@@ -585,6 +614,8 @@ Most coding assessments have 2â€“3 questions with increasing difficulty:
 - **Q1 (Easy)**: Arrays, strings, hashmap â€” 15 minutes
 - **Q2 (Medium)**: Greedy, trees, binary search â€” 25 minutes
 - **Q3 (Medium-Hard)**: DP, graphs, advanced â€” 30 minutes
+
+> **Remember:** Coding assessments are a marathon, not a sprint. The candidates who pass partial test cases on all questions often score higher than those who ace one and leave two blank.
 
 **Golden rules for coding assessments:**
 
@@ -1277,6 +1308,72 @@ AFTER THE INTERVIEW:
 ```
 
 ---
+
+## Concept Comparison: Placement Prep Approaches
+
+| Approach | Focus | Best For | Risk |
+|----------|-------|----------|------|
+| Depth-First | Master one topic at a time | Students with 6+ months | May miss breadth |
+| Breadth-First | Cover all topics shallowly | Students with 2-3 months | May lack depth for hard rounds |
+| Mixed (Recommended) | Rotate topics, deepen gradually | Everyone | Requires good planning |
+| Mock-Driven | Learn through mock interviews | Interview-nervous students | May skip fundamentals |
+| Project-Based | Build + learn simultaneously | Portfolio-focused roles | Slower placement prep |
+
+## Cross-Application Matrix
+
+| Strategy Element | Applies To FAANG | Applies To Product | Applies To Service | Notes |
+|----------------|-----------------|-------------------|-------------------|-------|
+| DSA Practice | Critical | Critical | Moderate | 300+ problems recommended |
+| CS Fundamentals | Important | Important | Moderate | OOP, DBMS, OS, Networks |
+| System Design | Important | Good-to-have | Rarely | Focus on LLD for service roles |
+| Resume Building | Essential | Essential | Essential | One-page, ATS-optimized |
+| Mock Interviews | Highly recommended | Recommended | Recommended | 5+ mocks minimum |
+| Aptitude Practice | Moderate | Moderate | Critical | Service companies emphasize this |
+| Communication | Essential | Essential | Essential | STAR format, clarity |
+
+## Chapter Quiz
+
+**Q1:** What is the recommended minimum number of DSA problems to solve before the placement season?
+
+- A) 50
+- B) 150
+- C) 300
+- D) 500
+
+<details><summary><b>Answer</b></summary>C) 300 problems — this covers most common patterns with sufficient depth for all company tiers.</details>
+
+**Q2:** Which placement phase do most IITs follow?
+
+- A) January–April
+- B) September–March
+- C) July–December
+- D) March–June
+
+<details><summary><b>Answer</b></summary>C) July–December (Phase 1 starts July–August, Phase 2 runs September–December).</details>
+
+**Q3:** Which resume format do most ATS systems prefer?
+
+- A) Two-column layout with graphics
+- B) Reverse-chronological plain text
+- C) Creative infographic style
+- D) Narrative paragraph format
+
+<details><summary><b>Answer</b></summary>B) Reverse-chronological plain text — ATS systems parse single-column, text-based resumes most reliably.</details>
+
+**Q4:** What should you do immediately after receiving a rejection from one interview?
+
+- A) Skip all remaining interviews
+- B) Note what went wrong and prepare for the next one
+- C) Email the recruiter asking why
+- D) Take a week off
+
+<details><summary><b>Answer</b></summary>B) Note what went wrong and prepare for the next one. Rejections are data points, not stop signs.</details>
+
+---
+
+## One-Sentence Takeaway
+
+Systematic, consistent preparation over 6 months beats sporadic intense study every time. Start with a plan, track your progress, and treat every rejection as a learning opportunity.
 
 ## Final Words
 

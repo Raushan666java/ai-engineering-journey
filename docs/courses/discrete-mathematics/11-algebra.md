@@ -1,5 +1,7 @@
 # Chapter 11: Algebraic Structures
 
+> **Previous:** [Chapter 10: Trees](../10-trees.md) | **Next:** [Chapter 12: Boolean Algebra](../12-boolean.md)
+
 ## Learning Objectives
 
 ![Algebraic Structures Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/11-algebra.png)
@@ -13,7 +15,29 @@ After completing this chapter, you will be able to:
 - Apply homomorphisms and isomorphisms
 - Connect algebraic structures to CS applications (coding theory, cryptography)
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Binary Operations | Operations combine two elements with closure property | All arithmetic and logical operations in programming |
+| Groups | Sets with associative operation, identity, and inverses | Symmetry analysis, cryptography, error-correcting codes |
+| Rings & Fields | Rings add multiplication; fields add inverses | Finite fields underpin AES, Reed-Solomon, and ECC |
+| Homomorphisms | Structure-preserving maps between algebraic objects | Data transformations, compiler optimizations |
+| Lagrange's Theorem | Subgroup size divides group size | Constraint on possible substructures in symmetry groups |
+
 ## Theory
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Binary Operations] --> B[Semigroups & Monoids]
+    B --> C[Groups]
+    C --> D[Subgroups & Cosets]
+    D --> E[Normal Subgroups & Quotients]
+    E --> F[Rings & Fields]
+    F --> G[Homomorphisms & Applications]
+```
 
 ### 11.1 Binary Operations
 

@@ -1,10 +1,48 @@
-# DSA Coding Problem Bank for Placement Interviews
+﻿# DSA Coding Problem Bank for Placement Interviews
+
+> **Previous:** [Chapter 1: Resume Building, LinkedIn & Aptitude](./01-resume-aptitude.md) | **Next:** [Chapter 3: SQL Problem Bank](./03-sql-problem-bank.md)
 
 > **125 curated problems** — Arrays, Strings, Linked Lists, Trees, Dynamic Programming, Graphs, Stack/Queue/Heap, Searching & Sorting, Miscellaneous, Low-Level Design & OOP (Q101-Q115), and Concurrency & Multithreading (Q116-Q125). Every solution includes a complete, compilable Java class with main method, complexity analysis, and company tags.
 
 ---
 
 ![DSA Problem-Solving Approach](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch02-dsa-approach.png)
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Arrays** | Hash maps optimize O(n²) to O(n) lookups | Master two-pointer, sliding window, prefix sum patterns |
+| **Strings** | Character frequency counting via arrays is faster than HashMap | Use 26/128-sized int arrays for ASCII problems |
+| **Linked Lists** | Fast & slow pointer detects cycles and finds middle | Dummy nodes simplify edge cases in insertion/deletion |
+| **Trees** | Recursion mirrors tree structure naturally | Practice iterative traversals (stack-based) for interviews |
+| **Dynamic Programming** | Optimal substructure + overlapping subproblems | Start with greedy, then brute force, then memoized DP |
+| **Graphs** | BFS gives shortest path in unweighted graphs | Topological sort and union-find are common blind spots |
+| **Stack / Queue / Heap** | Monotonic stack solves next-greater-element patterns | Heaps give O(log n) min/max retrieval under insertion |
+| **Searching & Sorting** | Sorting enables binary search and two-pointer patterns | Know quicksort, mergesort, and counting sort by heart |
+| **Low-Level Design** | OOP principles + design patterns for real-world modeling | Focus on Strategy, Observer, Singleton, Factory, Composite |
+| **Concurrency** | Thread coordination via wait/notify and semaphores | Practice producer-consumer, reader-writers, dining philosophers |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Start: Choose a Category] --> B{Which area?}
+    B --> C[Arrays & Strings<br/>2-pointer, sliding window]
+    B --> D[Linked Lists<br/>Fast & slow pointer]
+    B --> E[Trees & Graphs<br/>DFS, BFS, recursion]
+    B --> F[Dynamic Programming<br/>Memoization, tabulation]
+    B --> G[Stack / Queue / Heap<br/>Monotonic patterns]
+    B --> H[Searching & Sorting<br/>Binary search, sort algos]
+    C & D & E & F & G & H --> I[Q1-Q75: Core Categories]
+    I --> J[Q76-Q100: Mixed Revision]
+    J --> K[Q101-Q115: LLD & OOP]
+    K --> L[Q116-Q125: Concurrency]
+    L --> M[Company Index Review]
+    M --> N[Ready for Interviews]
+    style A fill:#4a90d9,color:#fff
+    style N fill:#27ae60,color:#fff
+```
 
 ## Arrays
 
@@ -47,6 +85,8 @@ public class TwoSum {
 - **Space:** O(n) â€” map stores up to n elements
 
 ---
+
+> **Pro Tip:** Always ask about input constraints (sorted? duplicates? negative?) before coding — interviewers evaluate your clarifying questions as much as your solution.
 
 ### Q2: Best Time to Buy and Sell Stock
 
@@ -6913,6 +6953,77 @@ class FileSystem {
 ```
 
 **Design Patterns:** Composite (uniform File/Directory treatment), Visitor (size calculation traverses tree), Strategy (search), Factory (file system entry creation).
+
+---
+
+> **One-Sentence Takeaway:** Low-level design questions test your ability to model real-world systems with OOP principles — focus on identifying the right design patterns (Strategy, Observer, Factory, Composite) and keeping your code SOLID.
+
+---
+
+## Concept Comparison: Key Data Structure Patterns
+
+| Pattern | Use Case | Time Complexity | Space Complexity | Key Technique |
+|---------|----------|-----------------|------------------|---------------|
+| **Two Pointer** | Sorted arrays, palindromes, linked list cycles | O(n) | O(1) | Move left/right based on condition |
+| **Sliding Window** | Subarray/substring problems | O(n) | O(1) / O(k) | Expand right, shrink left |
+| **Fast & Slow Pointer** | Cycle detection, middle of list | O(n) | O(1) | Tortoise-hare technique |
+| **Monotonic Stack** | Next greater/smaller element | O(n) | O(n) | Maintain increasing/decreasing order |
+| **Prefix Sum** | Range sum queries, subarray sum | O(n) preprocess, O(1) query | O(n) | Precompute cumulative sums |
+| **BFS** | Shortest path in unweighted graph | O(V+E) | O(V) | Level-order traversal with queue |
+| **DFS** | Connectivity, topological sort | O(V+E) | O(V) | Recursive or explicit stack |
+| **Memoization** | Overlapping subproblems | O(states) | O(states) | Cache recursive results |
+| **Binary Search** | Sorted data, monotonic functions | O(log n) | O(1) | Divide search space in half |
+| **Union-Find** | Dynamic connectivity, Kruskal's MST | O(α(n)) per op | O(n) | Path compression + union by rank |
+
+## Quick Reference: Complexity Cheat Sheet
+
+| Operation | Array | Linked List | Stack | Queue | BST (avg) | BST (worst) | HashMap | Heap |
+|-----------|-------|-------------|-------|-------|-----------|-------------|---------|------|
+| **Access** | O(1) | O(n) | O(n) | O(n) | O(log n) | O(n) | O(1) | O(n) |
+| **Search** | O(n) | O(n) | O(n) | O(n) | O(log n) | O(n) | O(1) | O(n) |
+| **Insert** | O(n) | O(1) | O(1) | O(1) | O(log n) | O(n) | O(1) | O(log n) |
+| **Delete** | O(n) | O(1) | O(1) | O(1) | O(log n) | O(n) | O(1) | O(log n) |
+| **Peek (top)** | — | — | O(1) | O(1) | — | — | — | O(1) |
+
+## Cross-Application Matrix
+
+| Pattern | Strings | Arrays | Trees | Graphs | DP | LLD | Concurrency |
+|---------|---------|--------|-------|--------|----|-----|-------------|
+| **Two Pointer** | ✓ | ✓ | | | | | |
+| **Sliding Window** | ✓ | ✓ | | | | | |
+| **Recursion** | | | ✓ | ✓ | ✓ | | |
+| **Hash Map** | ✓ | ✓ | | | ✓ | | |
+| **Stack / Queue** | | | ✓ | ✓ | | | ✓ |
+| **Binary Search** | | ✓ | ✓ | | | | |
+| **Greedy** | | ✓ | | ✓ | ✓ | | |
+
+## Chapter Quiz
+
+Test your understanding of the core DSA patterns covered in this chapter.
+
+<details>
+<summary>1. Which pattern solves the "container with most water" problem most efficiently?</summary>
+
+**Two Pointer.** Place one pointer at each end, move the shorter line inward, tracking the maximum area. Time: O(n), Space: O(1).
+</details>
+
+<details>
+<summary>2. What is the time complexity of finding the median of a stream of numbers using two heaps?</summary>
+
+**O(log n) per insertion.** The max-heap stores the lower half, min-heap stores the upper half, and we balance them on each insertion. Retrieving the median is O(1).
+</details>
+
+<details>
+<summary>3. When should you use BFS over DFS for graph traversal?</summary>
+
+**When finding the shortest path in an unweighted graph.** BFS guarantees the shortest path because it explores nodes level by level. DFS is better for exploring all paths or when memory is constrained.
+</details>
+
+<details>
+<summary>4. What is the key difference between memoization (top-down) and tabulation (bottom-up) DP?</summary>
+
+**Memoization is recursive with caching — it only solves subproblems that are actually needed. Tabulation builds a table iteratively and fills all entries. Tabulation avoids recursion overhead and stack overflow but may compute unnecessary states.**
+</details>
 
 ---
 

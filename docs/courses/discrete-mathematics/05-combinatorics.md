@@ -1,5 +1,7 @@
 # Chapter 5: Combinatorics
 
+> **Previous:** [Chapter 4: Proofs](./04-proofs.md) | **Next:** [Chapter 6: Recurrence Relations](./06-recurrence.md)
+
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -9,6 +11,31 @@ After completing this chapter, you will be able to:
 - Use the binomial theorem to expand $(x+y)^n$
 - Apply the pigeonhole principle with generalizations
 - Count arrangements with repetitions and constraints
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Sum & Product Rules | Counting disjoint or sequential choices | Break complex counting into independent steps |
+| Permutations | Ordered arrangements without repetition | Use $P(n,r)$ for sequences, $n^r$ for repetition allowed |
+| Combinations | Unordered selections (subsets) | Use $\binom{n}{r}$ for teams, committees, or groups |
+| Binomial Theorem | Expansion of $(x+y)^n$ via coefficients | Pascal's triangle gives coefficients directly |
+| Pigeonhole Principle | If $n > m$, a collision is guaranteed | Ceil$(N/k)$ gives the minimum guaranteed count |
+| Stars and Bars | Combinations with unlimited repetition | Distribute identical items into distinct categories |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Counting Principles] --> B[Permutations]
+    A --> C[Combinations]
+    B --> D[Binomial Theorem]
+    C --> D
+    D --> E[Pigeonhole Principle]
+    E --> F[Permutations with Repetition]
+    F --> G[Combinations with Repetition]
+    G --> H[General Inclusion-Exclusion]
+```
 
 ## Theory
 
@@ -22,12 +49,16 @@ After completing this chapter, you will be able to:
 
 **Principle of Inclusion-Exclusion (for two sets).** $|A \cup B| = |A| + |B| - |A \cap B|$.
 
+> **One-Sentence Takeaway:** Use the sum rule for mutually exclusive choices and the product rule for sequential independent steps.
+
 ### 5.2 Permutations
 
 A **permutation** of $n$ distinct elements is an ordered arrangement of them. The number of permutations of $n$ elements taken $r$ at a time (ordered, without repetition) is:
 $$P(n, r) = \frac{n!}{(n-r)!} = n(n-1)(n-2)\cdots(n-r+1)$$
 
 When repetition is allowed, the number is $n^r$.
+
+> **One-Sentence Takeaway:** Permutations count ordered arrangements; use $P(n,r) = n!/(n-r)!$ when order matters and repetition is disallowed.
 
 ### 5.3 Combinations
 
@@ -40,6 +71,10 @@ $$\binom{n}{r} = C(n, r) = \frac{n!}{r!(n-r)!}$$
 - $\binom{n}{1} = n$
 - **Pascal's identity:** $\binom{n}{r} + \binom{n}{r-1} = \binom{n+1}{r}$ for $1 \leq r \leq n$
 
+> **One-Sentence Takeaway:** Combinations count unordered subsets; use $\binom{n}{r} = n!/(r!(n-r)!)$ when selection order does not matter.
+>
+> **Pro Tip:** Use combinations whenever the problem says "choose," "select," or "committee" without caring about arrangement order. If order matters, it is a permutation.
+
 ### 5.4 The Binomial Theorem
 
 **Theorem 5.2 (Binomial Theorem).** For any integers $n \geq 0$ and real numbers $x, y$:
@@ -49,11 +84,17 @@ $$(x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k$$
 
 *Corollary.* $\sum_{k=0}^{n} (-1)^k \binom{n}{k} = 0$ (set $x = 1$, $y = -1$).
 
+> **One-Sentence Takeaway:** The binomial theorem provides a closed-form expansion of $(x+y)^n$ using binomial coefficients from Pascal's triangle.
+
 ### 5.5 Pigeonhole Principle
 
 **Theorem 5.3 (Pigeonhole Principle).** If $n$ items are placed into $m$ boxes and $n > m$, then at least one box contains at least two items.
 
 **Generalized Pigeonhole Principle.** If $N$ items are placed into $k$ boxes, then at least one box contains at least $\lceil N/k \rceil$ items.
+
+> **One-Sentence Takeaway:** If there are more items than containers, at least one container must hold multiple items — a simple but powerful existence proof.
+>
+> **Warning:** The pigeonhole principle only guarantees existence, not location. It tells you a collision must happen but not which box or how many items it contains.
 
 **Theorem 5.4 (ErdÅ‘sâ€“Szekeres).** Any sequence of $n^2 + 1$ distinct real numbers contains an increasing or decreasing subsequence of length $n + 1$.
 
@@ -62,15 +103,23 @@ $$(x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k$$
 The number of distinct permutations of $n$ objects where there are $n_1$ of type 1, $n_2$ of type 2, ..., $n_k$ of type $k$ (with $n_1 + \cdots + n_k = n$) is:
 $$\frac{n!}{n_1!\, n_2! \,\cdots\, n_k!}$$
 
+> **One-Sentence Takeaway:** When objects have repeated types, divide the total permutations by the factorial of each repetition count to avoid overcounting identical arrangements.
+
 ### 5.7 Combinations with Repetition
 
 The number of ways to choose $r$ items from $n$ types with unlimited repetition (stars and bars) is:
 $$\binom{n + r - 1}{r}$$
 
+> **One-Sentence Takeaway:** Stars and bars counts ways to distribute $r$ identical items into $n$ distinct categories using $\binom{n+r-1}{r}$.
+>
+> **Pro Tip:** For stars and bars, remember the formula $\binom{n+r-1}{r}$ where $n$ is item types and $r$ is items chosen — the most common mistake is swapping $n$ and $r$.
+
 ### 5.8 Inclusion-Exclusion Principle (General)
 
 For $n$ finite sets $A_1, A_2, \ldots, A_n$:
 $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
+
+> **One-Sentence Takeaway:** The generalized inclusion-exclusion formula alternates adding and subtracting intersections of increasing size to avoid overcounting in overlapping sets.
 
 ## Examples
 
@@ -101,6 +150,62 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
 **Example 5.7** (Binomial theorem). Expand $(2x - 3)^4$.
 
 *Solution.* $(2x-3)^4 = \sum_{k=0}^{4} \binom{4}{k} (2x)^{4-k} (-3)^k = 16x^4 - 96x^3 + 216x^2 - 216x + 81$.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|----------------|----------|
+| Permutation | Ordered arrangement of distinct elements | **Order matters** | Passwords, rankings, race results |
+| Combination | Unordered selection (subset) | **Order does not matter** | Committees, poker hands, lottery |
+| Permutation with Repetition | Ordered, reuse allowed | Each position gets $n$ independent choices | PIN codes, binary strings |
+| Combination with Repetition | Unordered, reuse allowed (stars and bars) | $\binom{n+r-1}{r}$ formula | Distributing identical items into groups |
+| Binomial Coefficient | $\binom{n}{r} = n!/(r!(n-r)!)$ | Symmetry: $\binom{n}{r}=\binom{n}{n-r}$ | Probability, polynomial expansion |
+| Pigeonhole Principle | $n$ items into $m$ boxes, $n>m \implies$ collision | Existence guarantee, not constructive | Birthday problem, hash collisions |
+
+## Quick Reference
+
+| Operation | Formula | Example |
+|-----------|---------|---------|
+| Permutations (no repetition) | $P(n,r) = n!/(n-r)!$ | $P(8,3) = 8\cdot7\cdot6 = 336$ |
+| Permutations (with repetition) | $n^r$ | $36^6$ possible passwords |
+| Combinations (no repetition) | $\binom{n}{r} = n!/(r!(n-r)!)$ | $\binom{52}{5} = 2,598,960$ poker hands |
+| Permutations with identical items | $n!/(n_1! n_2! \cdots n_k!)$ | "MISSISSIPPI": $34,650$ |
+| Combinations with repetition | $\binom{n+r-1}{r}$ | 10 candies, 3 children: $\binom{12}{2}=66$ |
+| Binomial expansion term $k$ | $\binom{n}{k} x^{n-k} y^k$ | $(2x-3)^4$: term 2 is $-96x^3$ |
+| Inclusion-Exclusion (2 sets) | $\|A \cup B\| = \|A\| + \|B\| - \|A \cap B\|$ | 1-100 divisible by 2 or 3: $67$ |
+
+## Cross-Application Matrix
+
+| Concept | Computer Science | Probability & Statistics | Cryptography | Algorithm Analysis |
+|---------|-----------------|------------------------|--------------|-------------------|
+| Permutations | Task scheduling, topological sorts | Arrangements in sample space | Brute-force password resistance | NP-complete search space size |
+| Combinations | Feature selection, subset problems | Lottery and card probabilities | Key-space size estimation | Subset-sum, knapsack problems |
+| Binomial Theorem | Bit pattern enumeration | Bernoulli trial formulas | Error-correcting code design | Divide-and-conquer recurrences |
+| Pigeonhole Principle | Hash collision guarantee | Birthday paradox | Collision resistance of hash functions | Lower-bound proofs |
+| Stars and Bars | Resource allocation, OS partitions | Multinomial distributions | Message partitioning | Integer partition complexity |
+
+## Chapter Quiz
+
+1. How many distinct ways can the letters of "BANANA" be arranged?
+   - A) 720
+   - B) 120
+   - C) 60
+   - D) 360
+   <details><summary>Answer</summary>**C)** 60 — $\frac{6!}{3!\,2!\,1!} = \frac{720}{6 \times 2} = 60$.</details>
+
+2. In a group of 23 people, what is the approximate probability that at least two share a birthday?
+   - A) Less than 25%
+   - B) About 50%
+   - C) About 75%
+   - D) Over 90%
+   <details><summary>Answer</summary>**B)** About 50% — the classic birthday paradox shows only 23 people are needed for a 50% collision probability.</details>
+
+3. How many nonnegative integer solutions does $x_1 + x_2 + x_3 + x_4 = 8$ have?
+   - A) $\binom{11}{3}$
+   - B) $\binom{8}{3}$
+   - C) $\binom{12}{4}$
+   - D) $\binom{11}{4}$
+   <details><summary>Answer</summary>**A)** $\binom{11}{3}$ — stars and bars with $n=4$ types and $r=8$ items gives $\binom{8+4-1}{4-1} = \binom{11}{3}$.</details>
 
 ## Summary
 

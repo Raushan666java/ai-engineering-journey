@@ -1,5 +1,7 @@
 # Chapter 14: Number Theory
 
+> **Previous:** [Chapter 13: Discrete Probability](../13-probability.md) | **Next:** [Chapter 15: Applications](../15-applications.md)
+
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -11,9 +13,32 @@ After completing this chapter, you will be able to:
 - Compute modular exponentiation efficiently
 - Understand the RSA cryptosystem
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Divisibility & GCD | Euclidean algorithm computes gcd efficiently | Simplifying fractions, cryptographic key generation |
+| Modular Arithmetic | Congruences preserve arithmetic under modulus | Hash functions, calendars, clock arithmetic |
+| Chinese Remainder Theorem | Systems of congruences have unique solutions | RSA acceleration, residue number systems |
+| Prime Numbers | Building blocks of integers with unique factorization | Cryptography, hashing, random number generation |
+| RSA Cryptosystem | Public-key encryption via modular exponentiation | Secure web communication, digital signatures |
+
 ## Theory
 
 ![Number Theory Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/14-number-theory.png)
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Divisibility] --> B[GCD & Euclidean Algorithm]
+    B --> C[Modular Arithmetic]
+    C --> D[Linear Congruences]
+    D --> E[Chinese Remainder Theorem]
+    E --> F[Primes & Factorization]
+    F --> G[Fermat & Euler]
+    G --> H[RSA Cryptosystem]
+```
 
 ### 14.1 Divisibility
 

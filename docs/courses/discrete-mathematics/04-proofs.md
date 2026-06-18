@@ -1,5 +1,7 @@
 # Chapter 4: Proof Techniques
 
+> **Previous:** [Chapter 3: Predicates and Quantifiers](03-predicates.md) | **Next:** [Chapter 5: Combinatorics](05-combinatorics.md)
+
 ## Learning Objectives
 
 ![Proof Techniques Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/04-proofs.png)
@@ -13,6 +15,32 @@ After completing this chapter, you will be able to:
 - Disprove statements with counterexamples
 - Select the appropriate proof technique for a given statement
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Direct Proof | Assume $P$, derive $Q$ using known truths | Best for statements where the hypothesis directly implies the conclusion |
+| Contrapositive | Prove $\neg Q \rightarrow \neg P$ instead of $P \rightarrow Q$ | Ideal when the contrapositive is easier to reason about |
+| Contradiction | Assume the negation and derive $F$ | Powerful for proving irrationality and nonexistence |
+| Induction | Base case + $P(k) \rightarrow P(k+1)$ | The standard tool for proving statements about all natural numbers |
+| Strong Induction | All smaller cases imply the next | Needed when $P(k)$ alone is insufficient to prove $P(k+1)$ |
+| Counterexample | One element disproves $\forall x\; P(x)$ | The simplest disproof method — find one exception |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Direct Proof] --> B[Proof by Contrapositive]
+    A --> C[Proof by Contradiction]
+    A --> D[Proof by Cases]
+    B --> E[Mathematical Induction]
+    C --> E
+    D --> F[Strong Induction]
+    E --> G[Existence Proofs]
+    F --> G
+    G --> H[Counterexamples]
+```
+
 ## Theory
 
 ### 4.1 Direct Proof
@@ -23,6 +51,8 @@ A **direct proof** of $P \implies Q$ assumes $P$ is true and uses logical reason
 
 *Proof.* Let $n$ be an even integer. Then $n = 2k$ for some integer $k$. Then $n^2 = (2k)^2 = 4k^2 = 2(2k^2)$, which is even. $\square$
 
+> **One-Sentence Takeaway:** A direct proof starts from the hypothesis and applies definitions and theorems step-by-step to reach the conclusion.
+
 ### 4.2 Proof by Contrapositive
 
 The **contrapositive** of $P \implies Q$ is $\neg Q \implies \neg P$. Since they are logically equivalent, proving the contrapositive proves the original statement.
@@ -30,6 +60,8 @@ The **contrapositive** of $P \implies Q$ is $\neg Q \implies \neg P$. Since they
 **Theorem 4.2.** If $n^2$ is odd, then $n$ is odd.
 
 *Proof.* We prove the contrapositive: if $n$ is even, then $n^2$ is even. This is Theorem 4.1 above. $\square$
+
+> **One-Sentence Takeaway:** Proving the contrapositive $\neg Q \rightarrow \neg P$ is logically equivalent to proving $P \rightarrow Q$, and is often more direct.
 
 ### 4.3 Proof by Contradiction
 

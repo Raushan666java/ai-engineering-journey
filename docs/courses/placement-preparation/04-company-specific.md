@@ -1,5 +1,7 @@
 # Company-Specific Placement Preparation
 
+> **Previous:** [Chapter 3: SQL Problem Bank](./03-sql-problem-bank.md) | **Next:** [Chapter 5: Placement Strategy](./05-placement-strategy.md)
+
 > A tiered breakdown of interview processes, question patterns, and preparation strategies across FAANG/MANGA, product-based Indian companies, service-based companies, startups, and premium semiconductor/enterprise companies.
 
 ---
@@ -13,6 +15,43 @@
 5. [Premium Semiconductor & Enterprise Companies](#5-premium-semiconductor--enterprise-companies)
 
 ---
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| FAANG / MANGA | Highest bar — LeetCode Hard, system design, behavioral STAR | Practice 150+ problems; prepare CRACK approach for Google, LPs for Amazon |
+| Product-Based (India) | Competitive 20-60 LPA, machine coding rounds | Master DSA Medium/Hard + system design + product thinking |
+| Service-Based | Bulk hiring via aptitude + coding basics + CS fundamentals | Focus on aptitude (RS Aggarwal), easy/medium coding, resume screening |
+| Startups & Unicorns | Value versatility, ownership, and product sense | Show full-stack skills, pragmatic architecture; negotiate ESOPs carefully |
+| Semiconductor & Enterprise | Deep domain — C/C++, OS architecture, embedded systems | Study low-level coding, CUDA (NVIDIA), wireless protocols (Qualcomm) |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Company-Specific Prep] --> B[FAANG / MANGA]
+    A --> C[Product-Based India]
+    A --> D[Service-Based]
+    A --> E[Startups & Unicorns]
+    A --> F[Semiconductor & Enterprise]
+    B --> B1[Google: CRACK + Googleyness]
+    B --> B2[Amazon: 16 LPs + Bar Raiser]
+    B --> B3[Microsoft: ASK Framework]
+    B --> B4[Meta: Speed + Product Sense]
+    B --> B5[Netflix: Culture Deck]
+    C --> C1[Flipkart: Machine Coding]
+    C --> C2[Uber: Engineering Rigor]
+    C --> C3[Swiggy/Zomato: Data-Driven]
+    D --> D1[TCS: NQT Ninja/Digital/Prime]
+    D --> D2[Infosys: InfyTQ]
+    D --> D3[Wipro: Turbo / WILP]
+    E --> E1[Versatility > Specialization]
+    E --> E2[ESOP Negotiation]
+    F --> F1[NVIDIA: CUDA + Architecture]
+    F --> F2[Qualcomm: Embedded + Wireless]
+    F --> F3[Apple: Craftsmanship]
+```
 
 ## 1. FAANG / MANGA Companies
 
@@ -804,6 +843,10 @@ public class AdaptiveBitrateStreamer {
 - DON'T: Use tables or multi-column layouts (resume parsers will garble them)
 - DON'T: List every project you've ever done â€” pick the best 2-3
 
+> **One-Sentence Takeaway:** FAANG/MANGA interviews test DSA depth, system design, and behavioral alignment (LPs at Amazon, Googleyness at Google, culture at Netflix) — tailor preparation to each company's specific framework.
+>
+> **Warning:** Do not memorize STAR answers — interviewers at Amazon and Google are trained to probe for rehearsed responses. Know your stories but deliver them conversationally.
+
 ---
 
 ## 2. Product-Based Companies (India)
@@ -1092,6 +1135,12 @@ LIMIT 10;
 | MakeMyTrip | 12-16 LPA | 22-32 LPA | 32-50 LPA |
 
 *Note: Numbers include base salary + RSUs/ESOPs + joining bonus. Actual offers vary by location, experience, and market conditions.*
+
+---
+
+> **One-Sentence Takeaway:** Product-based Indian companies (Flipkart, Uber, Swiggy, etc.) pay 15-60 LPA but require strong DSA, machine coding (especially Flipkart), and product-sense interviews — prepare for real-world system constraints not just textbook algorithms.
+
+> **Pro Tip:** Flipkart's machine coding round is unique — build a working mini-app in 90 minutes (Grin, BookMyShow, Parking Lot). Practice this separately from LeetCode; it tests production thinking, not algorithmic tricks.
 
 ---
 
@@ -1439,6 +1488,14 @@ Solution: 5 letters with P repeated twice
 - **Mock tests:** PrepInsta, FacePrep, IndiaBix
 - **Previous papers:** Ask seniors for company-specific test papers
 
+
+
+---
+
+> **One-Sentence Takeaway:** Service-based companies (TCS, Infosys, Wipro) offer lower pay (3.5-12 LPA) and hire in bulk via aptitude + basic coding + CS fundamentals — the critical gate is the initial resume screening and online assessment, not the technical interview depth.
+
+> **Warning:** Service-based onboarding often includes a training period, bond agreements, and unpredictable project allocation. Treat the offer as a stepping stone and continue upskilling for product-company lateral moves within 18-24 months.
+
 ---
 
 ## 4. Startups & Unicorns
@@ -1657,6 +1714,14 @@ Framework:
 - **High-Growth Engineer newsletter** â€” Content on startup engineering culture
 - **Lenny's Podcast** â€” Product and growth insights
 - **Startup interview guides** â€” Glassdoor company reviews, Blind app discussions
+
+---
+
+
+
+> **One-Sentence Takeaway:** Startups value versatility, ownership, and speed over algorithmic depth — build real full-stack projects, develop product sense, and prepare to wear many hats from day one.
+
+> **Pro Tip:** At startups, ownership is the single most valued trait. In interviews, emphasize times you took initiative beyond your job description — built something unasked, fixed a systemic issue, or mentored without being told.
 
 ---
 
@@ -2524,7 +2589,70 @@ public class ReverseString {
 - **Hardware tinkering:** TI LaunchPad kits, Arduino, Raspberry Pi for hands-on experience
 - **Mock interviews:** Pramp (general), InterviewBit (system design), LeetCode (DS/Algo)
 
+
+
 ---
+
+> **One-Sentence Takeaway:** Semiconductor & enterprise companies (NVIDIA, Qualcomm, Apple, Adobe) test deep domain knowledge — CUDA/architecture for chip firms, enterprise-scale architecture for software giants — and prioritize craft over LeetCode speed.
+
+---
+
+## Concept Comparison Table
+
+| Company Tier | Typical CTC Range | Interview Focus | Preparation Priority |
+|-------------|-------------------|-----------------|---------------------|
+| FAANG / MANGA | 25-60+ LPA (3-8 yr) | Hard DSA, System Design, BEH | LeetCode 150+ → System Design → Behavioral |
+| Product-Based India | 15-60 LPA | Med/Hard DSA, Machine Coding, Product | DSA 100+ → Machine Coding → Product Sense |
+| Service-Based | 3.5-12 LPA | Aptitude, Basic Coding, CS Fundas | Aptitude → CS Fundamentals → Easy LeetCode 40+ |
+| Startups & Unicorns | 10-30 LPA + ESOPs | Full-Stack, Ownership, Communication | Portfolio → Problem Solving → Domain Research |
+| Semiconductor & Enterprise | 20-45 LPA | C/C++, OS, Embedded, Domain Depth | Domain Knowledge → Low-Level Coding → Architecture |
+
+## Quick Reference: Interview Rounds by Tier
+
+| Round | FAANG | Product India | Service | Startup | Semicon/Enterprise |
+|-------|-------|-------------|---------|---------|-------------------|
+| Resume Screen | Hard (referral helps) | Moderate | Moderate | Portfolio-driven | Domain-match critical |
+| Online Assessment | 3-4 medium/hard + 1 hard | 2-3 medium + aptitude | Aptitude + 1-2 easy | Take-home project | DSA + domain quiz |
+| Technical Screen | 2-3 DSA + system design | 2 DSA + machine coding | Basic fundas + 1 easy | Architecture discussion | Low-level + OS |
+| Onsite Round 1 | LeetCode Hard (2-3) | DSA + DS/Algo deep dive | CS fundamentals | Live coding + design | System architecture |
+| Onsite Round 2 | System Design | System Design | HR + behavioral | Product sense | Domain deep-dive |
+| Behavioral | LPs / STAR / Culture | Manager round | Basic HR fit | Founder round | Technical leadership |
+| Bar Raiser | Yes (Amazon, Google) | No | No | Partner/VP round | Senior architect panel |
+
+## Cross-Application Matrix
+
+| Skill | FAANG | Product India | Service | Startup | Semicon/Enterprise |
+|-------|-------|-------------|---------|---------|-------------------|
+| LeetCode Hard | Required | Occasional | Never | Rare | Moderate |
+| System Design | Required (L5+) | Required (SDE-2+) | Rare | Required (early stage) | Architecture depth |
+| Machine Coding | Never | Yes (Flipkart, Uber) | Never | Yes | Never |
+| Aptitude | Never | Tier-2 companies | Required | Never | Never |
+| Domain Knowledge | Nice-to-have | Nice-to-have | Basic | Expected | Core requirement |
+| Behavioral STAR | Required | Moderate | Basic | High | High |
+| Portfolio / GitHub | Nice | Nice | Good to have | Required | Nice |
+
+## Chapter Quiz
+
+1. Which company is known for having a dedicated "Bar Raiser" interview round?
+   - A) Microsoft
+   - B) Amazon
+   - C) Flipkart
+   - D) TCS
+   <details><summary>Answer</summary>**B)** Amazon — the Bar Raiser is an independent interviewer who ensures the hiring bar stays consistent across the organization, with veto power over the hiring decision.</details>
+
+2. What is unique about Flipkart's interview process compared to other product-based Indian companies?
+   - A) It has a LeetCode Hard-only round
+   - B) It includes a 90-minute machine coding round to build a working mini-app
+   - C) It requires a published research paper
+   - D) It has no technical round
+   <details><summary>Answer</summary>**B)** Flipkart's machine coding round requires building a working mini-app (e.g., BookMyShow clone) in 90 minutes — testing production thinking, not just algorithms.</details>
+
+3. Service-based companies primarily test which area in their initial screening?
+   - A) System design
+   - B) Aptitude and basic programming
+   - C) Machine learning
+   - D) Product management
+   <details><summary>Answer</summary>**B)** Aptitude and basic programming — service companies hire in bulk and use quantitative aptitude (RS Aggarwal) and CS fundamentals as the primary filter.</details>
 
 ## Final Checklist
 

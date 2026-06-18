@@ -1,5 +1,7 @@
 # Chapter 13: Discrete Probability
 
+> **Previous:** [Chapter 12: Boolean Algebra](../12-boolean.md) | **Next:** [Chapter 14: Number Theory](../14-number-theory.md)
+
 ## Learning Objectives
 
 ![Discrete Probability Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/13-probability.png)
@@ -12,7 +14,29 @@ After completing this chapter, you will be able to:
 - Compute expected value and variance of discrete random variables
 - Solve problems using binomial, geometric, and other discrete distributions
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Probability Spaces | Sample space + probability function defines all events | Quantifying uncertainty in data and predictions |
+| Conditional Probability | P(E \| F) updates beliefs given observed evidence | Medical diagnosis, spam filtering, A/B testing |
+| Bayes' Theorem | Reverses conditional probabilities using prior knowledge | Naive Bayes classifiers, recommendation systems |
+| Random Variables | Functions mapping outcomes to real numbers | Statistical modeling, risk analysis, ML features |
+| Discrete Distributions | Binomial, geometric, Poisson model common scenarios | Quality control, queuing, rare event modeling |
+
 ## Theory
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Probability Spaces] --> B[Conditional Probability]
+    B --> C[Independence]
+    C --> D[Bayes' Theorem]
+    D --> E[Random Variables]
+    E --> F[Discrete Distributions]
+    F --> G[Probabilistic Method]
+```
 
 ### 13.1 Probability Spaces
 

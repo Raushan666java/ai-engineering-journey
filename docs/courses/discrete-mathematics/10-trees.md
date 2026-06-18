@@ -1,5 +1,7 @@
 # Chapter 10: Trees
 
+> **Previous:** [Chapter 9: Graph Theory](../09-graph-theory.md) | **Next:** [Chapter 11: Algebraic Structures](../11-algebra.md)
+
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -11,9 +13,31 @@ After completing this chapter, you will be able to:
 - Find minimum spanning trees using Prim's and Kruskal's algorithms
 - Model hierarchical data using trees
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Tree Definitions | Trees are minimal connected graphs with n-1 edges | File systems, organizational charts, family trees |
+| Rooted Trees | Designating a root enables parent-child relationships | DOM trees, parse trees, decision trees |
+| Tree Traversals | Preorder, inorder, postorder visit nodes systematically | Expression evaluation, serialization, BST operations |
+| Spanning Trees & MST | Minimum spanning trees connect all vertices with least weight | Network design, cable routing, cluster analysis |
+| Huffman Coding | Optimal prefix codes from frequency-based binary trees | Data compression (ZIP, JPEG) |
+
 ## Theory
 
 ![Trees Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/10-trees.png)
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Tree Definitions] --> B[Rooted Trees]
+    B --> C[Tree Traversals]
+    C --> D[Binary Search Trees]
+    D --> E[Spanning Trees & MST]
+    E --> F[Huffman Coding]
+    F --> G[Decision Trees]
+```
 
 ### 10.1 Definitions
 

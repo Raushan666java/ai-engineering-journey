@@ -1,5 +1,7 @@
 # Chapter 6: Support Vector Machines
 
+> **Previous:** [Ensemble Methods](../05-ensemble-methods.md) | **Next:** [Neural Networks](../07-neural-networks.md)
+
 ---
 
 ## Learning Objectives
@@ -8,6 +10,31 @@
 - Identify "Support Vectors" and their role in defining the model
 - Differentiate between Hard-margin and Soft-margin SVMs
 - Apply the "Kernel Trick" to handle non-linearly separable data
+
+---
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Maximum Margin Hyperplane | SVM finds the hyperplane that maximizes the distance between the two classes | Prioritize margin maximization for better generalization on unseen data |
+| Support Vectors | Only the closest points to the hyperplane define the decision boundary | SVM is memory-efficient because a minority of training points determine the model |
+| Hard vs. Soft Margin | Soft margin introduces slack variables and a penalty parameter C to handle noise | Tune C via cross-validation to balance margin width against misclassification cost |
+| Kernel Trick | Maps data implicitly to higher dimensions without computing the transformation explicitly | RBF kernel is a strong default for most non-linear problems |
+| C Parameter | Controls trade-off between wide margin and training error | Use small C for high-dimensional sparse data, large C when clean separation exists |
+| Gamma (γ) Parameter | Defines the radius of influence of a single training example | High gamma causes overfitting; low gamma causes underfitting |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Training Data] --> B[Choose Kernel & Parameters]
+    B --> C[Train SVM]
+    C --> D[Find Max Margin Hyperplane]
+    D --> E[Identify Support Vectors]
+    E --> F[Evaluate Model Performance]
+    F --> G[Predict New Data]
+```
 
 ---
 
@@ -39,6 +66,14 @@ Common kernels include:
 
 ![SVM and Kernel Trick](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/machine-learning/ch06-svm.png)
 
+> **One-Sentence Takeaway:** The max margin hyperplane balances generalization against classification error, and the kernel trick extends SVM to non-linear problems without explicit feature mapping.
+
+> **Pro Tip:** Always scale your features before applying SVM. Since SVM relies on distance calculations, features with larger numeric ranges will dominate the decision boundary unfairly. Use StandardScaler or MinMaxScaler before training.
+
+> **Remember:** Support Vectors are the only data points that determine the model — removing non-support vectors leaves the decision boundary completely unchanged. This sparsity is a key advantage over methods like Logistic Regression.
+
+> **Warning:** The RBF kernel's gamma (γ) parameter can cause dramatic overfitting if set too high. A practical starting point is `gamma = 1 / n_features`, then tune around that value.
+
 ---
 
 ## Examples
@@ -65,6 +100,47 @@ Classifying data that is arranged in concentric circles.
 - **Problem**: A straight line cannot separate the inner circle from the outer circle.
 - **Solution**: Use `kernel='rbf'`.
 - **Result**: The SVM creates a circular decision boundary in the 2D space by implicitly mapping the data into a higher dimension.
+
+> **One-Sentence Takeaway:** Scikit-learn's SVC provides a clean API for linear, polynomial, and RBF kernels, making SVM accessible for both simple and complex classification tasks.
+
+---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Hard Margin SVM | Perfect separation with zero tolerance for violations | Assumes linearly separable data; no slack variables | Clean synthetic data or theoretical analysis |
+| Soft Margin SVM | Allows misclassifications controlled by parameter C | Handles overlapping class distributions | Most real-world classification problems with noise |
+| Linear Kernel | $K(x_i, x_j) = x_i \cdot x_j$ | No feature mapping; works in original space | Text classification, high-dimensional sparse data |
+| RBF Kernel | $K(x_i, x_j) = \exp(-\gamma\|x_i - x_j\|^2)$ | Non-linear, infinite-dimensional mapping | Default choice; works across most problem types |
+| Polynomial Kernel | $K(x_i, x_j) = (x_i \cdot x_j + r)^d$ | Adds polynomial interaction terms up to degree d | Data with known polynomial relationships |
+| SVM | Maximum margin classifier using support vectors | Creates decision boundary from critical points only | Binary and multi-class classification |
+| Logistic Regression | Probabilistic linear classifier using MLE | Outputs well-calibrated class probabilities | When calibrated probabilities are essential |
+
+## Quick Reference
+
+| Concept | Formula / Detail |
+|---------|-----------------|
+| Hyperplane Equation | $\mathbf{w}^T\mathbf{x} + b = 0$ |
+| Margin Size | $\frac{2}{\|\mathbf{w}\|}$ |
+| Optimization Objective | $\min \|\mathbf{w}\| \quad \text{s.t.} \quad y_i(\mathbf{w}^T\mathbf{x}_i + b) \geq 1$ |
+| Soft Margin Objective | $\min \|\mathbf{w}\| + C\sum\xi_i$ |
+| Linear Kernel | $K(\mathbf{x}_i, \mathbf{x}_j) = \mathbf{x}_i \cdot \mathbf{x}_j$ |
+| RBF Kernel | $K(\mathbf{x}_i, \mathbf{x}_j) = \exp(-\gamma\|\mathbf{x}_i - \mathbf{x}_j\|^2)$ |
+| C Parameter Range | $10^{-3}$ to $10^{3}$ (typical search range) |
+| Gamma Default | $\gamma = \frac{1}{n_{\text{features}}}$ |
+| Decision Function | $f(\mathbf{x}) = \sum \alpha_i y_i K(\mathbf{x}_i, \mathbf{x}) + b$ |
+
+## Cross-Application Matrix
+
+| Domain | Application | How SVM Is Used |
+|--------|-------------|-----------------|
+| Bioinformatics | Protein fold classification, gene expression analysis | High-dimensional data with few samples; linear kernel on gene vectors |
+| Image Recognition | Handwritten digit recognition, face detection | RBF kernel on pixel intensity features |
+| Text Classification | Spam detection, sentiment analysis | Linear kernel on TF-IDF or bag-of-words vectors |
+| Finance | Credit scoring, stock market prediction | Soft margin with tuned C for noisy financial time series |
+| Healthcare | Disease diagnosis from medical records | RBF kernel captures non-linear symptom-disease relationships |
+| Cybersecurity | Malware classification, intrusion detection | One-class SVM for anomaly detection in network traffic |
 
 ---
 
@@ -93,3 +169,42 @@ Classifying data that is arranged in concentric circles.
 
 ### Challenge Problem
 1. Compare SVM and Logistic Regression. In what situations would you prefer one over the other? Consider factors like dataset size, number of features, and the presence of outliers.
+
+---
+
+## Chapter Quiz
+
+Test your understanding of Support Vector Machines.
+
+**1.** What happens to the SVM decision boundary as the regularization parameter C approaches infinity?
+
+<details><summary>**Answer**</summary>
+**B)** The margin becomes narrower. As C → ∞, the model severely penalizes misclassifications, forcing a narrower margin to correctly classify all training points — approaching the hard-margin solution.
+</details>
+
+- A) The margin becomes wider
+- B) The margin becomes narrower
+- C) The kernel type automatically changes
+- D) Support vectors are ignored
+
+**2.** Which of the following is NOT a standard SVM kernel?
+
+<details><summary>**Answer**</summary>
+**D)** Ensemble is not a kernel. SVM kernels include Linear, Polynomial, RBF, and Sigmoid — all of which compute dot products in some transformed feature space.
+</details>
+
+- A) Linear
+- B) RBF
+- C) Polynomial
+- D) Ensemble
+
+**3.** In SVM, support vectors are best described as:
+
+<details><summary>**Answer**</summary>
+**B)** Support vectors are the data points that lie exactly on the margin boundaries. Only these points influence the position and orientation of the separating hyperplane.
+</details>
+
+- A) All training points used during model fitting
+- B) Points that lie on the margin boundary
+- C) The centroid of each class
+- D) The first K points selected during training

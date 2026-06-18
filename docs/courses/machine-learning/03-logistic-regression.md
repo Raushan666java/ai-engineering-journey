@@ -1,5 +1,7 @@
 # Chapter 3: Logistic Regression
 
+> **Previous:** [Linear Regression](./02-linear-regression.md) | **Next:** [Decision Trees](./04-decision-trees.md)
+
 ---
 
 ## Learning Objectives
@@ -8,6 +10,29 @@
 - Define and apply the Sigmoid (Logistic) Function
 - Derive the Cross-Entropy Loss function
 - Interpret model outputs as probabilities and apply decision thresholds
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Classification vs. Regression | LR outputs discrete probabilities not continuous values | Use logistic (not linear) regression for yes/no problems |
+| Sigmoid Function | Maps any real number to a value between 0 and 1 | Output is interpretable as class probability |
+| Decision Boundary | Threshold at $h_w(x) = 0.5$ separates classes | Adjust threshold to trade off precision and recall |
+| Cross-Entropy Loss | Penalizes confident wrong predictions heavily | Convex loss ensures reliable gradient descent |
+| Multi-Class Extension | Softmax generalizes sigmoid to K classes | Use when predicting among three or more categories |
+| Regularization | Prevents overfitting by penalizing large weights | Add L1 or L2 regularization to improve generalization |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Binary Classification Problem] --> B[Sigmoid Function]
+    B --> C[Decision Boundary]
+    C --> D[Cross-Entropy Loss]
+    D --> E[Gradient Descent Optimization]
+    E --> F[Probability Output]
+    F --> G[Class Prediction]
+```
 
 ---
 
@@ -35,6 +60,10 @@ We cannot use MSE for logistic regression because the resulting cost function wo
 $$J(w) = -\frac{1}{n} \sum_{i=1}^{n} [y^{(i)} \log(h_w(x^{(i)})) + (1 - y^{(i)}) \log(1 - h_w(x^{(i)}))]$$
 This function penalizes incorrect predictions heavily. When $y=1$, the cost increases as $h_w(x)$ approaches 0. When $y=0$, the cost increases as $h_w(x)$ approaches 1.
 
+> **One-Sentence Takeaway:** Logistic regression uses the sigmoid function to convert linear outputs into probabilities and cross-entropy loss to optimize classification decisions.
+
+> **Remember:** The decision boundary is defined by $\mathbf{w}^T\mathbf{x} = 0$; changing the classification threshold (e.g., from 0.5 to 0.3) alters precision and recall without retraining the model.
+
 ---
 
 ## Examples
@@ -61,6 +90,72 @@ print(f"Probability at 3.5 hours: {clf.predict_proba([[3.5]])[0][1]}")
 ```
 **Output**: Provides the probability of class 1 for a student who studied 3.5 hours.
 
+> **One-Sentence Takeaway:** Logistic regression outputs interpretable probabilities, making it ideal for risk scoring and medical diagnosis where confidence matters as much as the class label.
+
+> **Warning:** Logistic Regression assumes a linear decision boundary—if classes are separated by a non-linear curve, consider kernel methods or non-linear classifiers.
+
+---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|------------|-----------------|----------|
+| Linear Regression | Predicts continuous values via linear equation | Unbounded output | Price prediction |
+| Logistic Regression | Predicts class probabilities via sigmoid | Output in [0,1] | Spam detection |
+| Sigmoid Function | $\sigma(z) = 1/(1 + e^{-z})$ | S-shaped squashing function | Probability mapping |
+| Softmax Function | Generalizes sigmoid to multi-class | Sum of outputs = 1 | Digit recognition |
+| Cross-Entropy Loss | $-\sum y\log(\hat{y})$ | Convex for classification | Binary classification |
+| Hinge Loss | $\max(0, 1 - y \cdot \hat{y})$ | Used by SVM | Max-margin classification |
+
+## Quick Reference
+
+| Term | Formula / Definition |
+|------|---------------------|
+| Sigmoid Function | $\sigma(z) = \frac{1}{1 + e^{-z}}$ |
+| Hypothesis | $h_w(x) = \sigma(\mathbf{w}^T\mathbf{x})$ |
+| Decision Boundary | $\mathbf{w}^T\mathbf{x} = 0$ |
+| Cross-Entropy Loss | $J(w) = -\frac{1}{n}\sum[y\log(\hat{y}) + (1-y)\log(1-\hat{y})]$ |
+| Gradient Update | $w_j := w_j - \alpha \frac{1}{n}\sum(h_w(x^{(i)}) - y^{(i)})x_j^{(i)}$ |
+| Softmax (Multi-class) | $P(y=k) = e^{z_k} / \sum_{j=1}^{K} e^{z_j}$ |
+
+## Cross-Application Matrix
+
+| Domain | Application | Positive Class | Key Challenge |
+|--------|------------|---------------|---------------|
+| Healthcare | Disease diagnosis | Disease present | Class imbalance (rare diseases) |
+| Finance | Fraud detection | Fraudulent transaction | Extreme class imbalance |
+| Marketing | Customer churn prediction | Will churn | Defining churn window |
+| Security | Intrusion detection | Malicious activity | High cost of false negatives |
+
+## Chapter Quiz
+
+1. Why can't we use Mean Squared Error as the loss function for logistic regression?
+   A) MSE is too computationally expensive
+   B) MSE would produce a non-convex cost function
+   C) MSE only works for regression problems
+   D) MSE requires normally distributed errors
+
+<details><summary>Answer</summary>**B)** Using MSE with sigmoid results in a non-convex cost function with many local minima, making gradient descent unreliable.
+</details>
+
+2. The sigmoid function $\sigma(z)$ outputs a value of 0.5 when:
+   A) $z = 0$
+   B) $z = 1$
+   C) $z = \infty$
+   D) $z = -\infty$
+
+<details><summary>Answer</summary>**A)** $\sigma(0) = 1/(1 + e^0) = 1/2 = 0.5$.
+</details>
+
+3. Which function extends logistic regression to multi-class classification?
+   A) Sigmoid
+   B) ReLU
+   C) Softmax
+   D) Tanh
+
+<details><summary>Answer</summary>**C)** Softmax generalizes the sigmoid to handle K > 2 classes by outputting a probability distribution.
+</details>
+
 ---
 
 ## Summary
@@ -70,6 +165,8 @@ print(f"Probability at 3.5 hours: {clf.predict_proba([[3.5]])[0][1]}")
 - The decision boundary separates the feature space into regions belonging to different classes.
 - Binary Cross-Entropy is the standard loss function for classification, ensuring a convex optimization surface.
 - The model can be extended to multi-class classification using the Softmax function (Multinomial Logistic Regression).
+
+> **One-Sentence Takeaway:** Logistic regression bridges linear models and classification by converting real-valued scores into well-calibrated probabilities.
 
 ---
 

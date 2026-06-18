@@ -1,4 +1,29 @@
-# 07 â€” Company-Wise Previous Year Questions
+﻿# 07 â€” Company-Wise Previous Year Questions
+
+> **Previous:** [06 â€” HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)  
+> **Next:** None (Last Chapter)
+
+## Chapter at a Glance
+
+| Section | Content |
+|---------|---------|
+| FAANG Companies | Amazon, Google, Microsoft, Meta coding problems |
+| Product-Based India | Flipkart, Uber, Swiggy/Zomato, Ola/Paytm |
+| Service-Based Companies | TCS, Infosys, Wipro, Accenture questions |
+| New-Age Tech / Fintech | Netflix, Adobe, Goldman Sachs problems |
+| Quick Reference | Common patterns by company |
+
+```mermaid
+flowchart LR
+    A[PYQs Compilation] --> B[FAANG]
+    A --> C[Product-Based India]
+    A --> D[Service-Based]
+    A --> E[New-Age Tech]
+    B --> F[DSA + System Design]
+    C --> G[DSA + LLD]
+    D --> H[Aptitude + Basics]
+    E --> I[DSA + Design + Fintech]
+```
 
 > Comprehensive compilation of actual coding problems, behavioral questions, and system design problems asked by top companies during campus placements (2023â€“2025). Each problem includes a complete, compilable Java solution.
 
@@ -5813,6 +5838,70 @@ public class NumberOfIslands {
 }
 ```
 **Time:** O(m * n) | **Space:** O(m * n) worst case for recursion stack
+
+## Concept Comparison: Company Interview Styles
+
+| Dimension | FAANG | Product-India | Service-Based | Fintech |
+|-----------|-------|--------------|--------------|---------|
+| Coding Difficulty | Hard | Medium-Hard | Easy-Medium | Medium-Hard |
+| System Design | Yes | LLD focus | No | Yes |
+| Behavioral Rounds | 1-2 rounds | 1 round | 1 HR round | 1-2 rounds |
+| Aptitude Test | Minimal | Moderate | Heavy | Minimal |
+| Typical Process | 4-5 rounds | 3-4 rounds | 2-3 rounds | 3-4 rounds |
+| Prep Priority | DSA + Design | DSA + LLD | Aptitude + Basics | DSA + Fintech domain |
+
+## Cross-Application Matrix
+
+| Problem Pattern | Amazon | Google | Microsoft | TCS | Infosys | Flipkart |
+|----------------|--------|--------|-----------|-----|---------|----------|
+| Arrays / Two Pointers | High | High | High | High | High | High |
+| Strings | High | High | High | Medium | High | Medium |
+| Trees / Graphs | High | High | Medium | Low | Low | Medium |
+| Dynamic Programming | High | Medium | High | Low | Low | High |
+| System Design | High | High | Medium | None | None | Medium |
+| Math / Puzzles | Low | Medium | Low | High | Medium | Low |
+
+## Chapter Quiz
+
+**Q1:** Which company is most likely to ask system design questions in an intern-level interview?
+
+- A) TCS
+- B) Infosys
+- C) Google
+- D) Wipro
+
+<details><summary><b>Answer</b></summary>C) Google â€“ FAANG companies frequently test system design even at intern level.</details>
+
+**Q2:** What is the most common data structure asked across all company types?
+
+- A) Trie
+- B) Arrays / Strings
+- C) Segment Tree
+- D) Red-Black Tree
+
+<details><summary><b>Answer</b></summary>B) Arrays and Strings â€“ they form the foundation of almost every coding interview across all company tiers.</details>
+
+**Q3:** Which service-based company has the most rigorous aptitude section?
+
+- A) Accenture
+- B) TCS (NQT)
+- C) Wipro
+- D) Infosys
+
+<details><summary><b>Answer</b></summary>B) TCS NQT â€“ the TCS National Qualifier Test has one of the most comprehensive aptitude sections among service-based companies.</details>
+
+**Q4:** What percentage of top product company interviews include at least one medium-difficulty DP problem?
+
+- A) Less than 10%
+- B) About 25%
+- C) About 50%
+- D) Over 75%
+
+<details><summary><b>Answer</b></summary>C) About 50% â€“ DP is one of the most frequently tested patterns in product company interviews.</details>
+
+## One-Sentence Takeaway
+
+Company-wise PYQs reveal patterns: FAANG tests depth, service companies test breadth, and product-India companies sit in between â€“ tailor your preparation accordingly and practice with actual past problems.
 
 ---
 

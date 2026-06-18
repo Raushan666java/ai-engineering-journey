@@ -1,5 +1,7 @@
 # Chapter 9: Graph Theory
 
+> **Previous:** [Chapter 8: Functions](../08-functions.md) | **Next:** [Chapter 10: Trees](../10-trees.md)
+
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -11,9 +13,30 @@ After completing this chapter, you will be able to:
 - Solve graph coloring problems
 - Model real-world problems using graphs
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Graph Definitions | Graphs consist of vertices and edges connecting them | Modeling networks, social connections, and relationships |
+| Eulerian & Hamiltonian Paths | Eulerian circuits use every edge; Hamiltonian cycles visit every vertex | Route planning, DNA sequencing, circuit design |
+| Planar Graphs | Graphs drawn without edge crossings follow Euler's formula | PCB layout, map design, graph visualization |
+| Graph Coloring | Assign colors to vertices so adjacent ones differ | Register allocation, scheduling, map coloring |
+| Connectivity | Paths, cycles, and components define graph structure | Network reliability, routing algorithms |
+
 ## Theory
 
 ![Graph Theory Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/09-graph-theory.png)
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Definitions & Degree] --> B[Special Graphs & Isomorphism]
+    B --> C[Paths, Cycles, Connectivity]
+    C --> D[Eulerian & Hamiltonian]
+    D --> E[Planar Graphs]
+    E --> F[Graph Coloring]
+```
 
 ### 9.1 Definitions
 

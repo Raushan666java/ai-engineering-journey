@@ -1,4 +1,5 @@
-# SQL Problem Bank â€” Placement Interview Preparation
+﻿# SQL Problem Bank
+`n> **Previous:** [Chapter 2: DSA Problem Bank](./02-dsa-problem-bank.md) | **Next:** [Chapter 4: Company-Specific Preparation](./04-company-specific.md) â€” Placement Interview Preparation
 
 > 50 curated SQL problems organized by category. Each problem includes the question, schema, sample data, tested SQL solution, expected output, and step-by-step explanation.
 >
@@ -180,6 +181,37 @@ INSERT INTO student (id, name, subject, marks) VALUES
 ```
 
 ---
+
+## Chapter at a Glance
+
+| Topic | Key SQL Concept | Practical Takeaway |
+|-------|-----------------|-------------------|
+| **Basic Queries** | SELECT, WHERE, ORDER BY, LIMIT | Master filtering and sorting before moving to joins |
+| **Joins** | INNER, LEFT, RIGHT, FULL OUTER, CROSS | Understand NULL behavior and join order optimization |
+| **Aggregation** | GROUP BY, HAVING, aggregate functions | HAVING filters after grouping; WHERE filters before |
+| **Subqueries and CTEs** | Correlated subqueries, WITH clause | CTEs improve readability; correlated subqueries can be slow |
+| **Window Functions** | ROW_NUMBER, RANK, DENSE_RANK, LAG/LEAD | Essential for top-N-per-group and running totals |
+| **Date and String Functions** | DATE_FORMAT, EXTRACT, CONCAT, SUBSTRING | Index-friendly date filtering avoids functions on columns |
+| **NoSQL - MongoDB** | Documents, aggregations, indexing | Schemas are flexible but trade off consistency |
+| **NoSQL - Redis** | Strings, lists, sets, sorted sets, hashes | In-memory ops are fast; persistence and TTL require planning |
+| **Query Optimization** | EXPLAIN ANALYZE, index types, partitioning | Sequential scan on large tables is the #1 performance killer |
+| **Transaction Isolation** | MVCC, anomalies, READ COMMITTED vs SERIALIZABLE | Weakest level that meets correctness maximizes throughput |
+
+## Chapter Roadmap
+
+  mermaid
+flowchart TD
+    A[Setup: Schema and Data] --> B[Basic Queries and Joins]
+    B --> C[Aggregation and Subqueries]
+    C --> D[Window Functions and Date/String]
+    D --> E[Advanced Problems]
+    E --> F[NoSQL: MongoDB and Redis]
+    F --> G[Query Optimization]
+    G --> H[Transaction Isolation]
+    H --> I[50 Problems Mastered]
+    style A fill:#4a90d9,color:#fff
+    style I fill:#27ae60,color:#fff
+```
 
 ## Basic Queries
 
@@ -922,6 +954,8 @@ INNER JOIN departments d ON e.dept_id = d.id;
 
 ---
 
+> **Pro Tip:** SQL execution order is: FROM -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY -> LIMIT. Knowing this helps debug unexpected filtering and grouping behavior.
+
 ## Aggregation & Group By
 
 ### Q17: Department-wise max/min/avg salary
@@ -1197,6 +1231,8 @@ ORDER BY month;
 3. For PostgreSQL use `TO_CHAR(order_date, 'YYYY-MM')`; for SQL Server use `FORMAT(order_date, 'yyyy-MM')`.
 
 ---
+
+> **One-Sentence Takeaway:** Know the difference between IN, EXISTS, and JOIN - EXISTS is often faster for large correlated subqueries because it short-circuits on the first match.
 
 ## Subqueries & CTEs
 
@@ -1528,6 +1564,8 @@ WHERE dept_avg.avg_salary = (
 4. Nested subqueries are harder to read than CTEs â€” this is a good candidate to refactor with `WITH`.
 
 ---
+
+> **One-Sentence Takeaway:** Window functions compute across rows without collapsing them - use ROW_NUMBER for deduplication, LAG/LEAD for comparing adjacent rows, and SUM() OVER for running totals.
 
 ## Window Functions
 
@@ -1937,6 +1975,8 @@ ORDER BY customer_id, order_date;
 
 ---
 
+> **Warning:** Window functions (ROW_NUMBER, RANK) look similar but handle ties differently. RANK gives the same rank to ties and skips the next; DENSE_RANK does not skip. Test with duplicate values before relying on the output.
+
 ## Date & String Functions
 
 ### Q39: Extract year/month from dates
@@ -2206,6 +2246,8 @@ WHERE name REGEXP 'corp';
 4. In PostgreSQL, use `ILIKE` for case-insensitive matching: `name ILIKE '%corp%'`.
 
 ---
+
+> **One-Sentence Takeaway:** Advanced SQL problems combine multiple concepts - practice writing CTE-based pipelines with window functions and aggregations in a single query.
 
 ## Advanced Problems
 
@@ -4183,6 +4225,77 @@ Serialization Anomaly = Outcome not equivalent to any serial execution order
 ```
 
 **Key Recommendation:** Use the weakest isolation level that meets your correctness requirements. `READ COMMITTED` is sufficient for 90% of applications. Upgrade only when specific anomalies cause real business logic bugs â€” higher isolation costs performance and increases deadlock probability.
+
+---
+
+## Concept Comparison: SQL Concepts
+
+| Concept | Purpose | Syntax Example | Key Behavior |
+|---------|---------|----------------|--------------|
+| **INNER JOIN** | Matching rows from both tables | `SELECT * FROM a JOIN b ON a.id = b.id` | Only returns rows with matches |
+| **LEFT JOIN** | All rows from left table | `SELECT * FROM a LEFT JOIN b ON a.id = b.id` | NULLs for non-matching right rows |
+| **GROUP BY** | Group rows for aggregation | `SELECT dept, COUNT(*) FROM emp GROUP BY dept` | Collapses groups; only group keys + aggs in SELECT |
+| **HAVING** | Filter after GROUP BY | `HAVING COUNT(*) > 5` | Unlike WHERE, can use aggregate results |
+| **WINDOW** | Aggregate without collapsing | `ROW_NUMBER() OVER (PARTITION BY dept ORDER BY sal)` | Preserves row granularity |
+| **CTE (WITH)** | Named subquery for readability | `WITH cte AS (SELECT ...) SELECT * FROM cte` | Not materialized by default (unlike temp table) |
+| **EXPLAIN ANALYZE** | Execute and show actual plan | `EXPLAIN ANALYZE SELECT ...` | Shows actual vs estimated rows and costs |
+
+## Quick Reference: SQL Command Cheat Sheet
+
+| Operation | MySQL | PostgreSQL |
+|-----------|-------|------------|
+| String concat | CONCAT(a, b) | a || b |
+| Limit rows | LIMIT n OFFSET m | LIMIT n OFFSET m |
+| Current date | CURDATE() | CURRENT_DATE |
+| Date difference | DATEDIFF(a, b) | a::date - b::date |
+| Extract year | YEAR(date) | EXTRACT(YEAR FROM date) |
+| Auto-increment | AUTO_INCREMENT | SERIAL |
+| Upsert | INSERT ... ON DUPLICATE KEY | INSERT ... ON CONFLICT DO UPDATE |
+| Regex | REGEXP | ~ |
+| Random | RAND() | RANDOM() |
+| IF/ELSE | IF(cond, val1, val2) | CASE WHEN ... END |
+
+## Cross-Application Matrix
+
+| Skill | Basic Queries | Joins | Aggregation | Window Fns | Optimization | NoSQL |
+|-------|--------------|-------|-------------|------------|--------------|-------|
+| **E-Commerce** | Product search | Order-customer | Sales by category | Rank products | Index join columns | Redis cart |
+| **Banking** | Transaction lookup | Account-customer | Daily totals | Running balance | Partition by date | MongoDB ledger |
+| **Social Media** | User search | Post-author | Likes per post | Top posts by week | Index on user_id | Redis feed |
+| **Analytics** | Date-range filter | Fact-dimension | Monthly KPI | Moving averages | Materialized views | MongoDB logs |
+| **Healthcare** | Patient lookup | Visit-diagnosis | Readmission rate | Patient rank by risk | Index on visit_date | Redis cache |
+
+## Chapter Quiz
+
+Test your SQL knowledge:
+
+<details>
+<summary>1. What is the execution order of SQL clauses?</summary>
+
+**FROM -> JOIN -> WHERE -> GROUP BY -> HAVING -> SELECT -> ORDER BY -> LIMIT.** SELECT is evaluated after GROUP BY, which is why aliases defined in SELECT cannot be used in WHERE.
+
+</details>
+
+<details>
+<summary>2. What is the difference between RANK() and DENSE_RANK()?</summary>
+
+**RANK() skips ranks after ties** (1,1,3,4), while **DENSE_RANK() does not skip** (1,1,2,3). Use RANK when you need gaps, use DENSE_RANK for contiguous numbering.
+
+</details>
+
+<details>
+<summary>3. How does a correlated subquery differ from a regular subquery?</summary>
+
+A **correlated subquery references columns from the outer query** and is re-evaluated for each outer row. A **regular subquery** is independent and executed once.
+
+</details>
+
+<details>
+<summary>4. What does EXPLAIN ANALYZE show that EXPLAIN alone does not?</summary>
+
+**EXPLAIN ANALYZE actually executes the query** and shows **actual** execution time and row counts per node, not just the optimizer **estimated** values.
+
+</details>
 
 ---
 

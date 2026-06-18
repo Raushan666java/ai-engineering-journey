@@ -1,4 +1,4 @@
-# Chapter 8: GATE & Theory Exam Prep
+﻿# Chapter 8: GATE & Theory Exam Prep
 
 > **Master theory-heavy subjects like GATE CS, university exams, and certification tests by combining memory techniques with strategic preparation.**
 > Covers Q96–Q110 · 15 Q&As
@@ -20,7 +20,7 @@ After completing this chapter, you will be able to:
 - Create a dual-track study plan that covers both theory and application
 - Analyze mock test mistakes and build correction loops
 
-![GATE & Theory Exam Prep](../../assets/images/diagrams/learning-how-to-learn/ch-08-gate-theory-prep.png)
+![GATE & Theory Exam Prep](../../assets/images/diagrams/learning-how-to-learn/ch-08-gate-theory-prep-dg1.png)
 
 ---
 

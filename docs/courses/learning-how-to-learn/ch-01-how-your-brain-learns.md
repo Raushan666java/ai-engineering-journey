@@ -1,10 +1,10 @@
-# Chapter 1: How Your Brain Learns
+﻿# Chapter 1: How Your Brain Learns
 
 This chapter covers the brain's two learning modes — focused and diffuse — and how switching between them accelerates understanding. You'll learn about chunking (how working memory's 4-slot limit shapes studying), the difference between procedural and declarative knowledge, and why sleep is essential for memory consolidation. By the end, you'll have a practical framework for learning any technical subject more effectively.
 
 ## Learning Objectives
 
-![Focused vs Diffuse Modes](../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns.png)
+![Focused vs Diffuse Modes](../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns-dg1.png)
 
 - Understand focused vs diffuse thinking and when to use each
 - Explain the 4-chunk limit and how to build chunks

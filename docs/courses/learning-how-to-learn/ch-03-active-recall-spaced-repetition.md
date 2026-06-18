@@ -1,4 +1,4 @@
-# Chapter 3: Active Recall & Spaced Repetition
+﻿# Chapter 3: Active Recall & Spaced Repetition
 
 > **Retrieval is learning. Every time you pull information from memory, you deepen the neural trace.**
 
@@ -10,7 +10,7 @@ This chapter shows you how to use the **blank page method**, how **Anki** implem
 
 ## Learning Objectives
 
-![Active Recall & Spaced Repetition](../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition.png)
+![Active Recall & Spaced Repetition](../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition-dg1.png)
 
 After completing this chapter, you will be able to:
 

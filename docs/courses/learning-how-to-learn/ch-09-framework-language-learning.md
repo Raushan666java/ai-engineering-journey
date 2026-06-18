@@ -1,4 +1,4 @@
-# Chapter 9: Framework & Language Learning
+﻿# Chapter 9: Framework & Language Learning
 
 Learning a new programming language or framework is a recurring challenge throughout your career. This chapter gives you a repeatable blueprint — five phases that apply to any technology, from Java to Laravel to DevOps tools. You'll learn the right priority order for each language in this repo, why you should never learn two frameworks at once, the Minimal Viable Project (MVP) pattern that accelerates any framework learning, how to read documentation like a pro, and how debugging and building in public cement your understanding forever.
 
@@ -20,7 +20,7 @@ Learning a new programming language or framework is a recurring challenge throug
 - Apply the T-model for learning multiple technologies in parallel
 - Avoid the tutorial trap by learning through active construction, not passive consumption
 
-![Framework & Language Learning Blueprint](../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning.png)
+![Framework & Language Learning Blueprint](../../assets/images/diagrams/learning-how-to-learn/ch-09-framework-language-learning-dg1.png)
 
 ---
 

@@ -1,4 +1,4 @@
-# Chapter 5: Memory Systems & Mnemonics
+﻿# Chapter 5: Memory Systems & Mnemonics
 
 > **Transform your memory from a sieve to a steel trap.** This chapter teaches you the ancient art of memory palaces, the science of encoding specificity, and why struggling to remember is actually the best way to learn.
 
@@ -24,7 +24,7 @@ After completing this chapter, you will be able to:
 - Use overlearning strategically — and know when to stop
 - Design effective cheat sheets as conceptual compression tools
 
-![Memory Systems & Mnemonics](../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems.png)
+![Memory Systems & Mnemonics](../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems-dg1.png)
 
 ---
 

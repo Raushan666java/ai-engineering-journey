@@ -1,4 +1,4 @@
-# Chapter 2: Practice, Mindset & Performance
+﻿# Chapter 2: Practice, Mindset & Performance
 
 > **Learning isn't just about technique — it's about what you believe, how you practice, and how you take care of your brain. This chapter tears down the illusions that waste your time and replaces them with evidence-based strategies that compound.**
 
@@ -23,7 +23,7 @@ After completing this chapter, you will be able to:
 - Describe the Pygmalion effect and leverage high expectations in mentorship, teaching, and self-talk
 - Optimize brain health through sleep, exercise, nutrition, and stress management for sustained learning
 
-![Practice, Mindset & Performance](../../assets/images/diagrams/learning-how-to-learn/ch-02-practice-mindset.png)
+![Practice, Mindset & Performance](../../assets/images/diagrams/learning-how-to-learn/ch-02-practice-mindset-dg1.png)
 
 ---
 

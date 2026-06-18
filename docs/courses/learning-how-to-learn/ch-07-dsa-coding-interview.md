@@ -1,4 +1,4 @@
-# Chapter 7: DSA & Coding Interview Prep
+﻿# Chapter 7: DSA & Coding Interview Prep
 
 > **Apply every learning technique from Chapters 1–6 specifically to DSA and coding interview preparation. Bridge the gap between knowing a concept and solving it under a whiteboard.**
 
@@ -20,7 +20,7 @@ This chapter teaches you how to learn data structures and algorithms efficiently
 - Understand concurrency basics: threads, locks, and the Java Memory Model
 - Execute a complete interview workflow from warm-up to follow-up
 
-![DSA & Coding Interview Prep](../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview.png)
+![DSA & Coding Interview Prep](../../assets/images/diagrams/learning-how-to-learn/ch-07-dsa-coding-interview-dg1.png)
 
 ---
 

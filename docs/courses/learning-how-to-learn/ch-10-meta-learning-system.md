@@ -1,4 +1,4 @@
-# Chapter 10: Meta-Learning & Your Lifelong System
+﻿# Chapter 10: Meta-Learning & Your Lifelong System
 
 > The final chapter closes the loop: how to build a learning system that compounds knowledge, survives interviews, and keeps you growing for decades.
 
@@ -23,7 +23,7 @@ By the end of this chapter, you will be able to:
 - Diagnose and overcome learning plateaus with targeted strategies
 - Create a personal annual learning review process
 
-![Meta-Learning & Lifelong System](../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system.png)
+![Meta-Learning & Lifelong System](../../assets/images/diagrams/learning-how-to-learn/ch-10-meta-learning-system-dg1.png)
 
 ---
 

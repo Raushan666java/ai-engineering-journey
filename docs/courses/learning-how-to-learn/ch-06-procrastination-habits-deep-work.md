@@ -1,4 +1,4 @@
-# Chapter 6: Procrastination, Habits & Deep Work
+﻿# Chapter 6: Procrastination, Habits & Deep Work
 
 > **Understanding why you procrastinate — and what to do about it — is the single highest-leverage skill in learning.**
 > 20 Q&As · Practical frameworks grounded in behavioral psychology and cognitive science.
@@ -18,7 +18,7 @@ These aren't abstract theories. Every technique here is something you can apply 
 
 ## Learning Objectives
 
-![Procrastination, Habits & Deep Work](../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work.png)
+![Procrastination, Habits & Deep Work](../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work-dg1.png)
 
 After completing this chapter, you will be able to:
 

@@ -1,4 +1,4 @@
-# Chapter 4: Pomodoro, Interleaving & the Feynman Technique
+﻿# Chapter 4: Pomodoro, Interleaving & the Feynman Technique
 
 In Chapter 3 you learned active recall and spaced repetition — how to pull information out of your brain and when to do it. This chapter gives you three more weapons: **Pomodoro** (focus discipline), **Interleaving** (mixed practice that builds flexible knowledge), and the **Feynman Technique** (the ultimate comprehension check). These three techniques work together like a tripod — Pomodoro gives you the time, interleaving gives you the structure, and Feynman gives you the truth about what you actually know.
 
@@ -12,7 +12,7 @@ By the end of this chapter, you will be able to:
 - Use rubber duck debugging to uncover gaps in your own understanding
 - Teach peers to deepen and cement your own knowledge
 
-![Active Learning Techniques](../../assets/images/diagrams/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman.png)
+![Active Learning Techniques](../../assets/images/diagrams/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman-dg1.png)
 
 ---
 

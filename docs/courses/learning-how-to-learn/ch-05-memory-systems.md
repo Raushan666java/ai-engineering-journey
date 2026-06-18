@@ -178,6 +178,7 @@ Walking the palace:
 
 > **Try This:** Build a memory palace with 10 loci from your own home. Encode your grocery list. Walk it 3 times mentally, then test yourself an hour later without looking at the list.
 
+> **Pro Tip:** Don't use rooms that all look the same, like hotel corridors or identical office cubicles. The brain distinguishes locations by their unique features. Your childhood home works better than a generic building because of emotional anchoring and distinctive details.
 
 ---
 
@@ -288,6 +289,8 @@ Visualize: A referee who just shrugs and walks away
 ```
 
 > **Try This:** Pick 3 abstract concepts from your current study material (e.g., OS scheduling algorithms, DBMS normal forms, DSA sorting algorithms). For each, create a vivid visual mnemonic following the 6 rules. Test yourself tomorrow.
+
+> **Warning:** The most common mistake is creating images that are "kind of" related instead of directly interactive. If your image for "deadlock" is just a lock sitting on a table, that's weak. The image needs ACTION — the lock is choking a process while laughing. Interaction trumps accuracy in mnemonics.
 
 ---
 
@@ -447,6 +450,8 @@ public class ChainingSystem {
 ```
 
 > **Try This:** Create a chained story for the 5 stages of the waterfall model (Requirements → Design → Implementation → Testing → Maintenance). Make each transition bizarre and memorable.
+
+> **Remember:** Chaining breaks if you lose one link. Always rehearse the chain forward AND backward — if you can only go forward, you don't truly know it. Backward recall exposes weak links instantly.
 
 ---
 
@@ -634,6 +639,8 @@ Position 10: null (not encoded yet)
 
 > **Try This:** Memorize the 1-10 peg list today (bun, shoe, tree, door, hive, sticks, heaven, gate, wine, hen). Use it to encode the first 10 elements of the periodic table. Tomorrow, test yourself by calling out random numbers — can you recall the element without walking from 1?
 
+> **Pro Tip:** The peg system is overkill for 5 items but becomes exponentially more useful at 20+. Spend 20 minutes memorizing a 20-peg list once, and you can reuse it for the rest of your life. The upfront investment pays off every time you need to memorize a numbered list.
+
 
 ---
 
@@ -780,6 +787,8 @@ public class MemoryCompression {
 ```
 
 > **Try This:** Take a topic you're studying (e.g., process states in OS, normal forms in DBMS, or any set of definitions). Create an acronym or acrostic that compresses 5+ facts into one trigger. Test yourself by writing the full expansion from memory.
+
+> **Warning:** Compression without expansion practice is worse than no compression. An acronym you can't expand is just a meaningless word. After creating an acronym, force yourself to write the full expansion from memory 3 times over 3 days. If you can't expand it, compress less aggressively.
 
 ---
 
@@ -930,6 +939,8 @@ Bad study (cue mismatches exam): forgets
 ```
 
 > **Try This:** For your next study session, explicitly write down 3 exam-style questions BEFORE you start reading. As you study, answer each question in your own words. This ensures your encoding cues match your retrieval cues.
+
+> **Pro Tip:** Encoding specificity also explains why studying the same material in 3 different locations improves recall. Each location creates a slightly different set of retrieval cues, giving your brain more paths to access the memory. Study at your desk, in a library, and in a café for the same topic.
 
 ---
 
@@ -1088,6 +1099,8 @@ Bad student always studies tired → performs poorly in alert exam conditions.
 
 > **Try This:** For one week, deliberately vary your study location and time of day. Study at a desk, a library, a coffee shop, and outside. Notice whether your recall during review sessions depends on being in the same physical place you studied.
 
+> **Pro Tip:** State-dependent memory cuts both ways. If you always study while drinking coffee, you'll need coffee to recall optimally. Better strategy: study once with coffee and once without, creating state-independent memories. The most resilient learner can recall in any state.
+
 ---
 
 ### Q53: What is context-dependent memory, and how can I use it?
@@ -1239,6 +1252,8 @@ public class ContextDependentMemory {
 ```
 
 > **Try This:** For your next exam, study one topic in a setting that mimics your exam environment (quiet, seated at a desk, no phone, minimal distractions). Study another topic in your usual setting. Compare your recall on both topics during the exam.
+
+> **Warning:** Don't rely on the "same scent" trick as a crutch. If your exam hall doesn't allow scents or you forget your peppermint oil, you'll lose the context cue. Always build context-independent memory by varying your study environments. Scent is a booster, not a replacement.
 
 ---
 
@@ -1412,6 +1427,8 @@ Q: What is a race condition? → FORGOT ✗
 
 > **Try This:** Take the next chapter you need to study. Instead of reading it twice, read it once, then write 5 questions about it from memory. Answer each question before looking back at the text. You will remember more from this one active session than from three passive re-readings.
 
+> **Pro Tip:** The generation effect works even when you generate WRONG answers. Attempting an answer and getting it wrong produces better long-term memory than passively reading the correct answer. The error creates a "surprise signal" that strengthens encoding when you see the right answer.
+
 ---
 
 ### Q55: What is the testing effect, and how do I use it properly?
@@ -1579,6 +1596,8 @@ compared to restudying for the same amount of time.
 
 > **Try This:** Take a topic you studied last week. Spend 5 minutes writing everything you remember on a blank page (retrieval practice). Then check your notes and fill in gaps. Next week, do the same again. Compare your recall to a topic you simply re-read twice last week.
 
+> **Remember:** The testing effect requires actual retrieval — not recognition. Multiple-choice questions give you recognition, which is weaker. Open-ended recall (blank page, verbal explanation) forces full retrieval. For maximum benefit, write without any cues and only check afterward.
+
 ---
 
 ### Q56: What are desirable difficulties, and how do I calibrate them?
@@ -1737,6 +1756,8 @@ public class DesirableDifficulties {
 ```
 
 > **Try This:** Pick one subject you are studying. For 30 minutes, deliberately interleave: switch between 3 different topics every 5-7 minutes instead of doing all of one topic then all of the next. Notice that it feels harder and slower in the moment. Trust the research — this is exactly the feeling of durable learning.
+
+> **Pro Tip:** The 60-80% sweet spot is not just about problem difficulty — it's about cognitive effort. If you can answer without thinking, it's too easy. If you're completely stuck after 5 minutes, it's too hard. The ideal is when you struggle but eventually succeed. Calibrate by adjusting task novelty, not difficulty.
 
 ---
 
@@ -1902,6 +1923,8 @@ for higher total learning return.
 ```
 
 > **Try This:** Identify one topic you have been "overlearning" — going over it repeatedly even though you can already recall it perfectly. Stop. Move on to a new topic. Schedule one brief review session for next week instead. Measure your retention then.
+
+> **Warning:** Overlearning creates a dangerous illusion of competence. The material feels easy because you just practiced it — but that fluency is temporary. The real test is recall after a delay. If you can recall it perfectly a week later without intermediate practice, you're done. If not, you need spaced retrieval, not more overlearning.
 
 ---
 
@@ -2087,6 +2110,8 @@ Total: 30 minutes of active learning disguised as 'cheating'.
 ```
 
 > **Try This:** Before your next exam, create a one-page cheat sheet using the 3-pass method. Do not use the cheat sheet during the exam. After the exam, compare what you remembered vs what you had on your sheet. Use the gap to improve your next cheat sheet.
+
+> **Pro Tip:** The constraint of ONE page is the mechanism, not the obstacle. Forcing yourself to fit everything on a single page drives the compression decisions that create deep learning. A multi-page cheat sheet defeats the purpose — you're just rewriting notes, not selecting the essential 20%.
 
 ---
 
@@ -2321,6 +2346,8 @@ Layer: Retrieval Practice
 ```
 
 > **Try This:** Choose a complex topic you are studying (OS scheduling, DBMS normalization, networking protocols). Build a layered memory system using all 5 layers. Spend 30 minutes encoding, then test yourself after 24 hours and 7 days. Compare retention to your usual study method.
+
+> **Pro Tip:** When layering systems, don't try to build all 5 layers at once for every topic. Start with Layer 1 (Memory Palace) for the full course structure, then add Layer 2 (Chaining) for one topic at a time. Layer incrementally. Trying to do all 5 layers for 10 topics in one sitting leads to cognitive overload and poor encoding.
 
 ---
 
@@ -2668,6 +2695,8 @@ over the course of a semester.
 
 > **Try This:** Build a complete memory system for your current course using the 5-phase workflow. Use the diagnostic metrics to track your progress. After one week, measure whether your recall has improved compared to your previous study method.
 
+> **Pro Tip:** The daily 15-minute maintenance ritual is non-negotiable. Walking your memory palace once per day keeps all rooms fresh. Skipping 3 days means rebuilding weak chains. This is the spaced repetition principle applied to memory systems themselves — maintain the system, and it maintains the knowledge.
+
 ---
 
 
@@ -2773,6 +2802,17 @@ d) State-dependent encoding
 | Desirable Difficulties | Challenges that impede short-term performance but boost long-term retention | When learning feels too easy and retention is poor | Adding difficulty that becomes frustration — keep success at 60-80% |
 | Overlearning | Practicing beyond the point of initial mastery | For high-speed recall skills (math facts, typing, language vocabulary) | Overlearning everything — once automaticity is reached, further reps have diminishing returns |
 | Cheat Sheet Design | Compressing a topic onto one page forces structural understanding | When preparing for a closed-book exam or building a reference | Spending more time decorating the sheet than doing the 3-pass compression |
+
+
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Memory Palace | - Store info along a familiar spatial route (method of loci) - Use 10+ distinct, automatic loci (rooms, landmarks) - Walk the route mentally 3 times to encode - Best for ordered lists: speeches, timelines, hierarchies |
+| Mnemonics & Pegs | - Visual mnemonics: vivid, bizarre, moving, multisensory images - Chaining: link items into cause-effect narratives - Peg system: associate numbers with rhyming keywords - Combine all three for layered reinforcement |
+| Encoding & Retrieval | - Match study context to test context (encoding specificity) - Vary study locations to strengthen retrieval paths - Generate answers from memory (generation effect) - One test is worth more than one re-study (testing effect) |
+| Desirable Difficulties | - Challenges that feel hard now but boost long-term retention - Calibrate difficulty to 60-80% success rate - Use spacing, interleaving, generation, varied practice - Avoid frustration: difficulty must be surmountable |
 
 ---
 

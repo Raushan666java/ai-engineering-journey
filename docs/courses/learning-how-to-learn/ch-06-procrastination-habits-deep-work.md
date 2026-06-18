@@ -136,6 +136,8 @@ class ProcrastinationLoop {
 
 **Key insight:** The guilt after procrastinating makes you *more* likely to procrastinate next time — it increases the emotional weight of the task. Self-compassion, paradoxically, is more effective than self-criticism.
 
+> **Remember:** The procrastination loop is not a character flaw — it's a neural pattern. Each time you catch yourself early and redirect, you weaken the loop and strengthen a new pathway. The goal isn't to eliminate the feeling; it's to change your response to it.
+
 ---
 
 
@@ -191,6 +193,8 @@ class TwoMinuteRule {
 4. Observe that you almost never actually stop
 
 **Why it works:** Behavioral activation — action precedes motivation, not the other way around. You don't wait until you feel like studying; you study for 2 minutes, and the feeling follows.
+
+> **Pro Tip:** The 2-minute rule works because of the Zeigarnik effect (Q65) — once you start, your brain wants to finish. But it only works if you genuinely allow yourself to stop after 2 minutes. If you secretly guilt-trip yourself into continuing, the starting barrier stays high. Mean what you say: 2 minutes is enough.
 
 ---
 
@@ -286,6 +290,8 @@ class RobustIntention {
 ```
 
 **Research result:** In a study by Milne et al. (2002), 91% of participants who formed implementation intentions exercised, compared to 39% who only had the goal. For learning, the effect is similar: specificity creates automaticity.
+
+> **Remember:** The most common failure with implementation intentions is a vague trigger. "After work" is not a trigger — it's a time window that can stretch 5 hours. "After I close my laptop at 6 PM and stand up from my desk" is a trigger. The more specific the trigger, the more automatic the response.
 
 ---
 
@@ -427,6 +433,8 @@ class ZeigarnikEffect {
 
 **The dark side:** Too many incomplete tasks creates overwhelm (open loops everywhere). Use Zeigarnik strategically — keep 2-3 at most. Track open loops in a notebook to get them off your mental stack.
 
+> **Pro Tip:** The Zeigarnik effect is strongest when you stop at a point of high interest, not at a natural stopping point. If you stop mid-problem (not after solving it), your brain keeps working on it subconsciously. This is how "sleep on it" actually works — diffuse mode processes incomplete problems during rest.
+
 ---
 
 ## Q66: What is the 20-second rule and how does it lower the barrier to starting?
@@ -508,6 +516,8 @@ class EnvironmentPrep {
     }
 }
 ```
+
+> **Remember:** The 20-second rule applies to digital friction too. Turn off notifications, close Slack, and put your phone in another room before starting a study session. The tiny effort to reach for your phone is often enough to break focus — increase it to 20 seconds by putting it in a drawer.
 
 ---
 
@@ -617,6 +627,8 @@ class HabitStack {
 
 Example: *After I pour my morning coffee → I open Anki and review 5 cards → I enjoy the coffee while the answers load.* The reward reinforces the chain.
 
+> **Warning:** The most common habit stacking failure is choosing an existing habit that's too variable. "After I finish work" fails because work ends at different times with different energy levels. Better stacks use fixed triggers like "After I brush my teeth" or "After I pour my morning coffee."
+
 ---
 
 ## Q68: What are keystone habits and which ones matter most for learning?
@@ -713,6 +725,8 @@ class KeystoneHabitAnalysis {
 
 **For developers specifically:** The single highest-leverage keystone habit is *the morning deep work block before checking email/slack/Twitter*. This one habit alone can double your learning output.
 
+> **Pro Tip:** Don't try to identify your keystone habits by intuition. Log your daily habits and learning output for one week, then look for correlations. You might discover that your learning doubles on days you exercise — or plummets on days you skip breakfast. Data beats guessing.
+
 ---
 
 ## Q69: What is willpower depletion and how should you schedule learning around it?
@@ -796,6 +810,8 @@ class WillpowerDepletion {
 - **Belief** (if you don't believe willpower is limited, depletion is less pronounced)
 
 **The practical takeaway:** Don't fight your biology. Schedule your hardest learning for the morning. Use evenings for review, organization, and low-cognitive-load tasks.
+
+> **Remember:** Willpower depletion research has been partially challenged (the "ego depletion" replication crisis), but the practical advice still holds: decision fatigue is real. The mechanism may be motivational rather than energetic, but the result is the same — you make worse choices about studying as the day goes on. Schedule learning early.
 
 ---
 
@@ -884,6 +900,8 @@ class DeepWork {
 
 **The 4-hour rule:** Most people can produce a maximum of 4 hours of genuine deep work per day. Schedule learning accordingly — one 90-minute block and one 60-minute block is more realistic than trying to "study all day."
 
+> **Pro Tip:** Deep work is a skill that needs training. If 25 minutes of focus feels hard now, that's normal. Start with 25-minute deep work blocks (your Pomodoro timer), then add 5 minutes each week. Within 2 months, you'll be doing 60-minute blocks comfortably. Your attention span is a muscle — train it progressively.
+
 ---
 
 
@@ -951,6 +969,8 @@ class LearningDecision {
 If you've NEVER seen the material, don't start with active recall (you have nothing to recall). Start with the Feynman technique (Q33-Q36): read, explain simply, identify gaps, repeat.
 
 **The trap:** Buying more courses, bookmarking more tutorials, or downloading more cheatsheets when what you really need is to practice recalling what you already have. Recognize this pattern and break it.
+
+> **Remember:** The "learning vs. clarifying" decision is critical. New material needs structured input (tutorials, analogies, examples). Familiar material that feels slippery needs active recall (blank page, flash cards, problem sets). Applying the wrong approach to either wastes hours. Ask yourself: "Have I seen this before and forgotten it, or am I seeing it for the first time?"
 
 ---
 
@@ -1053,6 +1073,8 @@ class FourDXForLearning {
 | **Lead Measures** | Instead of "learn DSA," track: *solve 10 LeetCode problems/week* and *explain 3 algorithms from memory* |
 | **Scoreboard** | A simple spreadsheet or habit tracker. Can you see at a glance whether you're winning? |
 | **Cadence** | Every Sunday: review the week, set next week's lead measure targets, solve obstacles |
+
+> **Pro Tip:** The 4DX framework's most powerful insight is "lead measures" — tracking inputs (hours studied, problems solved) rather than outcomes (exam scores). Lead measures are within your control; lag measures aren't. When you optimize for lead measures, the lag measures (scores, promotions) follow automatically.
 
 **The most common failure:** Choosing lag measures as your primary metric. "I want to learn Java" is a lag measure — it's the outcome, not the process. Lead measures are: *I will write 100 lines of Java code per day* and *I will pass 3 Java tests on Hyperskill per week.*
 
@@ -1239,6 +1261,8 @@ class TransitionRitual {
 
 **The rule:** Any interruption during a learning session costs more than the interruption time. A 30-second glance at a notification costs 10-15 minutes of attention residue. Batch. Protect. Focus.
 
+> **Warning:** Attention residue is why "just checking Slack quickly" during a study break is self-deception. Your brain spends the next 10-15 minutes processing that Slack message instead of focusing on the material. True breaks require complete context switching — walk, stretch, stare out a window. No screens.
+
 ---
 
 ## Q75: What is the G-C-S error and how does it cause motivation collapse?
@@ -1329,7 +1353,9 @@ class GCSError {
 | 2 | Assess current state honestly | "I've done 40% of the GATE syllabus, scored 60 on the last mock" |
 | 3 | Identify the gap | "I need +25 percentile across Theory of Computation, OS, and Networks" |
 | 4 | Build a strategy | "Weeks 1-2: TOC intensive. Weeks 3-4: OS deep dive. Weeks 5-6: Networks + mocks." |
-| 5 | Find the next physical action | "Open the TOC notes right now. Read the first subtopic." |
+
+> **Pro Tip:** The G-C-S error is most painful when you feel "stuck" despite working hard. If you're putting in hours but not progressing, you're likely in the gap without realizing it. Stop. Write down your exact goal, your exact current state, and the measurable gap. The gap defines the next action, not the goal.
+
 
 **The core insight:** The brain needs S (Strategy) as much as it needs G (Goal). Without a bridge between current state and the goal, motivation evaporates. If you feel stuck and unmotivated, you're probably in G-C-S error. Drop everything and write out your strategy.
 
@@ -1460,6 +1486,8 @@ Date: [Sunday, Date]
 
 **Tooling:** A simple text file, a Google Doc, a Notion database, or a dedicated journal. The format matters less than the consistency. Never skip two weeks in a row.
 
+> **Pro Tip:** The weekly review doesn't need to be long. Five minutes answering three questions is enough: (1) What did I learn this week? (2) What went well? (3) What will I change next week? The act of writing forces consolidation. Skip the format debates — use a text file.
+
 ---
 
 ## Q77: What is a monthly retrospective and how should you structure one?
@@ -1571,6 +1599,10 @@ Continue doing: _______  (one high-value behavior to maintain)
 **The innovation of Stop/Start/Continue:** Most people only think about what to ADD to their routine. But subtraction is often more powerful. If you identify ONE thing to stop each month, over a year you eliminate 12 time-wasting patterns.
 
 **When to do it:** Last Sunday of every month, after your weekly review. Block 45 minutes.
+
+> **Pro Tip:** The "Stop" column of the monthly retrospective is the most valuable one. Most people focus on adding new habits, but the fastest path to better learning is often removing things — unsubscribe from distracting newsletters, delete social media apps, stop attending meetings that don't need you. Subtraction compounds.
+
+---
 
 ---
 
@@ -1701,6 +1733,8 @@ class StreakTracker {
 
 Streaks aren't about intensity. They're about identity. Someone who studies every day starts to see themselves as "a learner." That identity shift is the real prize.
 
+> **Warning:** Streaks are a tool, not an identity. If you break a 50-day streak, the risk is catastrophic thinking: "I've lost my progress, I might as well stop." This is false — the 50 days of learning still happened. A broken streak is just a data point. Forgive, restart, and keep going.
+
 ---
 
 ## Q79: How do you handle slumps and plateaus in your learning journey?
@@ -1819,6 +1853,8 @@ Sometimes the slump isn't about learning — it's about the wrong goal. If you'v
 - Would a different approach (building a project vs. taking a course) re-engage me?
 
 Learning should involve struggle, but it shouldn't feel like punishment. If you're consistently miserable, reconsider the goal — not the effort.
+
+> **Pro Tip:** Slumps come in two flavors: motivational (you don't want to study) and strategic (your current approach isn't working). The fix is different for each. For motivational slumps, lower the bar to 5 minutes and trust momentum. For strategic slumps, change the method — switch from reading to building, or from solo to pair learning.
 
 ---
 
@@ -2053,6 +2089,17 @@ d) To set annual goals; complements the compound effect
 | Weekly Review | Structured 30-minute weekly check-in to catch drift early | Every Sunday to maintain alignment with learning goals | Skipping it when you're "too busy" — the weeks you skip are when you need it most |
 | Compound Effect | Small consistent actions producing exponential results over time | When you feel like daily 5-minute learning sessions aren't enough | Stopping during the invisible seed phase before results compound |
 | Keystone Habits | One habit that naturally triggers positive downstream behaviors | When you want maximum behavioral leverage per unit of effort | Adding keystone habits from the wrong domain — pick one that directly triggers learning |
+
+
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Procrastination | - Loop: trigger → negative feeling → coping → guilt - Break it at the trigger with the 2-minute rule - Use implementation intentions (If/Then plans) - Reduce activation energy with the 20-second rule |
+| Habits & Systems | - Habit stacking: attach new habit to existing one - Keystone habits (sleep, morning block, review) trigger cascades - Temptation bundling: reserve a guilty pleasure for study time - Stack one new habit per week, not many at once |
+| Deep Work | - Distraction-free, intense cognitive focus on one task - Use 90-min blocks with zero interruptions - Ritualize transitions to clear attention residue - Four philosophies: Monastic, Bimodal, Rhythmic, Journalistic |
+| Tracking & Review | - Weekly review (Sunday, 30 min): 7 questions to catch drift - Monthly retrospective: Stop/Start/Continue - Track streaks with minimum viable day (5 min) - Use 4DX: WIG + lead measures + scoreboard + cadence |
 
 ---
 

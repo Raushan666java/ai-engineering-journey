@@ -54,6 +54,8 @@ When you sit down to solve a subnetting problem from [`docs/courses/gate-cs-prep
 
 But if you stare at the problem for 20 minutes and still can't figure out why the broadcast address is `192.168.15.63`, you need diffuse mode. Get up. Walk. Shower. Your brain's default mode network continues working subconsciously, making remote connections. Many students report the answer arrives while brushing their teeth.
 
+> **Pro Tip:** When you feel stuck after 15 minutes, physically leave your study space. A change of environment (even walking to another room) triggers a stronger diffuse-mode response than just staring at the ceiling.
+
 ```java
 // Focused mode: deliberate calculation
 public class SubnetCalculator {
@@ -85,6 +87,8 @@ In [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://github.
 Stop. Take a walk. Let your brain's diffuse networks re-organize what you've learned. When you return, the approach (binary search on partitions) often feels obvious. The neural replay during rest cements what you've been studying.
 
 **Try This:** Pick a DSA problem from `02-dsa-problem-bank.md` you couldn't solve last week. Work on it for 15 minutes. If stuck, walk away for 10 minutes. Come back and solve it. Notice the difference.
+
+> **Remember:** Frustration isn't a signal that you're failing — it's a signal that your focused mode has exhausted its current path. Trust the process: disengage, let diffuse mode work, and return with fresh neural resources.
 
 ---
 
@@ -479,6 +483,8 @@ public class AttentionSystem {
 
 **Try This:** Time yourself studying for 25 minutes without any interruptions. Note your comprehension level. The next day, study the same material but check your phone every time a notification arrives. Compare how much you retained from each session. The difference is the cost of attention fragmentation.
 
+> **Pro Tip:** Use a free app like Cold Turkey or Forest to block distracting apps/sites during study sessions. The act of starting the blocker creates a psychological commitment boundary that makes it easier to resist checking your phone.
+
 ---
 
 ### Q12: Why is multitasking a myth for learning?
@@ -530,6 +536,8 @@ public class TaskScheduler {
 
 **Try This:** For one study session, track every interruption. Every time you check your phone, switch tabs, or respond to a notification, note the time. At the end of the session, calculate: how many minutes did you lose to context-switching? The next session, eliminate all interruptions and compare how much material you covered.
 
+> **Warning:** The 23-minute recovery time applies even to "quick" checks. A 30-second glance at a notification can fragment your attention for the next 20+ minutes. Batch all non-urgent tasks into a single 10-minute block at the end of your study session instead.
+
 ---
 
 ### Q13: How does stress (cortisol) affect learning and memory?
@@ -579,6 +587,8 @@ public class StressResponse {
 | Study groups | Reduces uncertainty (a major stressor) | Collaborative problem-solving |
 
 **Try This:** Before your next practice test from `02-dsa-problem-bank.md`, rate your stress level 1-10. Do the test. Afterward, rate again. Then try this: before the next test, do 2 minutes of box breathing (inhale 4s, hold 4s, exhale 4s, hold 4s). Notice whether the breathing session improved your recall. Most people see a 10-20% improvement just from regulating stress.
+
+> **Pro Tip:** When you feel exam anxiety rising, press your thumb and index finger together firmly. This activates the proprioceptive system and provides an immediate grounding anchor that shifts focus away from racing thoughts and back to the present moment.
 
 ---
 
@@ -635,6 +645,8 @@ public class ExerciseAndLearning {
 3. **Post-study consolidation:** After finishing a study session, do light activity (walking, stretching) for 15-20 minutes. During this period, your hippocampus replays and consolidates what you just studied — and the low-intensity movement does not interfere with this process the way phone checking would.
 
 **Try This:** Tomorrow, before your study session, do 15-20 minutes of cardio (jogging, jumping jacks, cycling, or a brisk walk that gets your heart rate up). Immediately after, study the hardest topic on your list for 25 minutes. Compare your focus and retention to a day when you studied without pre-exercise. Most students report noticeably sharper concentration.
+
+> **Remember:** You don't need a gym or equipment. A 15-minute session of jumping jacks, high knees, and burpees in your room produces the same BDNF boost as a treadmill run. The key is elevating your heart rate, not the specific activity.
 
 ---
 
@@ -709,6 +721,8 @@ public class CircadianStudyPlanner {
 4. **Align sleep and study:** Studying a hard topic close to bedtime leverages sleep consolidation (Q7). Schedule your hardest conceptual material in your peak window AND review it before bed.
 
 **Try This:** For the next 3 days, rate your mental alertness every 2 hours on a scale of 1-10 and note what you are doing. At the end of 3 days, find your peak window. Then for the next 3 days, schedule your hardest DSA problems from `02-dsa-problem-bank.md` exclusively in that window. Compare your problem-solving speed and accuracy with your previous sessions.
+
+> **Pro Tip:** If you're a night owl stuck with a morning exam schedule, shift your wake-up time by 15 minutes per day (not 60) over 2-3 weeks. A sudden 2-hour shift causes "social jetlag" that impairs cognitive performance for days. Gradual adjustment preserves your sleep architecture.
 
 ---
 
@@ -785,8 +799,7 @@ public class SleepArchitecture {
 
 **Try This:** Tonight, implement the pre-sleep study protocol. Review a topic from [`docs/courses/gate-cs-preparation/07-operating-systems.md`](https://github.com/Raushan666java/ai-engineering-journey/blob/main/docs/courses/gate-cs-preparation/07-operating-systems.md) (the CPU scheduling formulas section) for 20 minutes before bed. Turn off all screens. Sleep 7-8 hours. In the morning, without re-reading, write down everything you remember about CPU scheduling. Then check your notes. Most students recall 60-80% of the material with zero morning review — significantly better than studying in the morning and testing the same day.
 
----
-
+> **Warning:** If you must use an alarm, avoid hitting snooze. The fragmented sleep between alarms triggers sleep inertia (grogginess) that can last 2-4 hours. Set one alarm at your actual wake time and get up immediately — your cognition will be sharper than after 3 snooze cycles.
 
 ---
 
@@ -847,6 +860,15 @@ a) Sleep deprivation reduces working memory capacity b) Memory consolidation req
 | Sleep Consolidation | Memory transfer from hippocampus → cortex | Before/after studying new material | Sacrificing sleep for extra study hours |
 | Cognitive Load | Mental effort used in working memory | Designing a study session | Ignoring extraneous load (phone, noise) |
 | Multitasking | Rapid task-switching with 40% efficiency loss | Any high-focus work | Convincing yourself you're multitasking well |
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Brain Modes | - Use focused mode for new problems (15-20 min) - Switch to diffuse mode when stuck - Let diffuse mode process during breaks/walks - Alternate modes for deeper understanding |
+| Chunking | - Working memory holds ~4 chunks - Build chunks: focus + understand + practice - Compress related info into meaningful groups - Use chunking to reduce cognitive load |
+| Sleep & Memory | - Sleep consolidates hippocampus → cortex transfer - Both deep sleep and REM are essential - Review before bed for maximum retention - Never sacrifice sleep for extra study hours |
+| Cognitive Management | - Remove distractions to reduce extraneous load - Single-task — multitasking costs 40% efficiency - Use exercise (20 min cardio) to boost BDNF - Align study with your chronotype's peak hours |
 
 ## Chapter Summary
 

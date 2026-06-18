@@ -101,6 +101,8 @@ public class ActiveRecallDemo {
 
 > **Try This:** Pick a concept you studied last week. Close all notes and write everything you remember about it on a blank page. Compare with your notes. Notice what you retained and what you forgot. That gap is exactly what active recall will close.
 
+> **Pro Tip:** Active recall feels uncomfortable — that's the signal it's working. If a study session feels easy, you're probably not learning. The sweet spot is when you can answer after 5-15 seconds of genuine effort. Too fast means recognition, not recall.
+
 ---
 
 ### Q22: What is the blank page method and how do you use it?
@@ -180,6 +182,8 @@ public class BlankPageDiagnostic {
 ```
 
 > **Try This:** Choose a topic you're currently studying. Set a 10-minute timer. Write everything you know about it on a blank page. Then check your source. List the missing points. Those are your Anki cards for tomorrow.
+
+> **Warning:** Don't check your source as soon as you get stuck. Sit with the gap for 2-3 minutes. The neural effort of trying to retrieve during that window IS the learning. Checking too early turns the exercise into a passive reading session.
 
 ---
 
@@ -273,6 +277,8 @@ public class RecallVsRecognition {
 
 > **Try This:** Convert three of your existing flashcards from recognition format (multiple choice / reverse side visible) to pure recall format (question on front, answer generated before flipping). Study both versions for a week and compare retention.
 
+> **Pro Tip:** When you catch yourself saying "I know this, I just can't explain it," that's the recognition trap in action. Real knowing IS the ability to explain. If you can't explain it, you don't know it yet — you only recognize it. Make that your personal litmus test.
+
 ---
 
 ### Q24: Why does teaching others count as active recall?
@@ -361,6 +367,8 @@ public class TeachingAsRecall {
 | **Blind teaching** | Teach a topic you haven't reviewed yet | Pure, unscripted recall |
 
 > **Try This:** Pick a concept you studied last week. Record a 2-minute video explaining it (no notes). Watch the recording. Count how many times you paused, said "um," or got something wrong. Those are your knowledge gaps. Review those specifically, then re-record until smooth.
+
+> **Remember:** Teaching from memory works even without an audience. Just speaking aloud to an empty chair forces your brain to retrieve and structure information differently than thinking silently. The vocalization activates additional neural pathways that silent recall doesn't reach.
 
 ---
 
@@ -452,8 +460,9 @@ public class EbbinghausSimulation {
 
 > **Try This:** Track one concept over the next month. Review it at: 1 hour, 1 day, 3 days, 7 days, 14 days, 30 days. At each interval, rate your recall from 1-10 before looking at your notes. Plot the curve. You'll see the forgetting curve flatten with each review.
 
----
+> **Pro Tip:** The optimal review moment is NOT when you still remember it perfectly. Wait until you're at ~80-90% confidence — when you can almost recall it but not quite. That brief retrieval struggle produces the strongest memory strengthening. Reviewing too early wastes reps; reviewing too late means re-learning.
 
+---
 
 ### Q26: How do I set up Anki for effective learning?
 
@@ -565,6 +574,8 @@ public class SM2Algorithm {
 
 > **Try This:** Set up Anki if you haven't already. Create a deck called "Active Recall Practice." Add 5 cards from a topic you're currently studying. Use the **steps** `1m 10m 60m` and rate each card honestly. Do this for 3 days before adding more cards.
 
+> **Warning:** The biggest mistake new Anki users make is adding too many cards too fast. Adding 50+ cards on day one creates a review tsunami 1-3 days later that burns you out. Start with 5-10 new cards per day for the first 2 weeks. Scale up only when your daily reviews stay under 15 minutes.
+
 ---
 
 ### Q27: What's the optimal Anki review schedule?
@@ -663,6 +674,8 @@ public class AnkiScheduleOptimizer {
 Set your SM-2 algorithm to aim for **90% retention** — meaning you answer "Good" or "Easy" on ~90% of reviews. If you're scoring below 80%, you have too many cards or they're poorly designed. If above 95%, you're reviewing too frequently and wasting time.
 
 > **Try This:** For one week, review Anki for exactly 20 minutes every morning. Track your "due cards remaining" count. If you consistently finish early, add more new cards. If you never finish, reduce new cards/day. Find your sustainable cadence.
+
+> **Pro Tip:** Use the "learning steps" feature aggressively. Cards rated "Again" should come back in 1 minute, not 10. This rapid-fire correction during the learning phase (before the card graduates) is what builds initial strength. Only after a card survives its first 3 reviews should it start its real spacing journey.
 
 ---
 
@@ -774,6 +787,8 @@ public class CardQualityAnalyzer {
 | **Source your cards** | Note which textbook/lecture the information came from |
 
 > **Try This:** Take 5 of your existing Anki cards and audit them using the rules above. Rewrite any cards that violate the minimal information principle. Split multi-concept cards. Convert to cloze where appropriate. Test both versions for a week.
+
+> **Remember:** If you consistently rate a card "Easy," it's a bad card — you're testing recognition, not recall. Consider deleting or rewriting it with less context on the front. Cards should feel like a 3-5 second struggle, not instant recall. Effort is the signal of effective card design.
 
 ---
 
@@ -919,6 +934,8 @@ public class AnkiHabitTracker {
 
 > **Try This:** Create a daily trigger. Choose one of: "After I brush my teeth in the morning" or "After I sit down with my first coffee." Attach Anki to that trigger for 7 days. Use the Review Heatmap add-on to track your streak. Do not break the chain.
 
+> **Pro Tip:** If you miss a day, do NOT try to catch up by doing double reviews the next day. The SM-2 algorithm handles missed days naturally — just review whatever is due today. Catching up aggressively leads to burnout and quitting. Consistency over intensity wins with spaced repetition.
+
 ---
 
 ### Q30: How do I handle complex topics that don't fit on a flashcard?
@@ -1021,8 +1038,9 @@ public class ComplexTopicHandler {
 
 > **Try This:** Take one complex topic you're studying (e.g., "System design for an e-commerce app"). Decompose it using the funnel approach above. Create 8 cards minimum: 2 component, 2 explain, 2 tradeoff, 2 design. Study the deck for one week and evaluate whether the decomposition improved your understanding.
 
----
+> **Remember:** Complex topics need MORE cards, not fewer. A common mistake is trying to cram a system design concept onto one card. The funnel approach may produce 15-20 cards for a single topic — that's fine. Each card tests one narrow slice of understanding, and together they build complete mental models.
 
+---
 
 ### Self-Assessment Quiz
 
@@ -1086,6 +1104,17 @@ a) Skip Anki entirely for that topic b) Write one large card with all the detail
 | SM-2 Algorithm | Algorithm that calculates optimal review intervals based on self-rated recall quality | Setting up Anki or any SRS system | Overriding the algorithm with manual scheduling — trust the math |
 | Forgetting Curve | Exponential decay of memory strength without active retrieval | Planning a study timeline or review schedule | Expecting one review session to create permanent retention |
 | Teaching Effect | Deepening understanding by explaining material from memory to others | Before an exam, after studying a topic, or in study groups | Thinking you can teach without first testing your own recall |
+
+
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Active Recall | - Retrieving from memory without cues strengthens neural traces - Use the blank page method: write everything you know from memory - Teaching from memory is the ultimate recall test - Effort during recall is a signal of learning, not failure |
+| Spaced Repetition | - Review at expanding intervals to flatten the forgetting curve - SM-2 algorithm calculates optimal intervals from your ratings - FSRS gives 90%+ retention with fewer daily reviews - Never skip a review day — missed reviews cause steep forgetting |
+| Card Design | - One atomic concept per card - Prefer cloze deletions over question-answer format - Test understanding, not recognition - Split any card containing "and" into separate cards |
+| Anki Workflow | - Attach to an existing daily habit (after coffee, before bed) - Start with 10-15 new cards/day — avoid overload - Never break the streak — even 2 minutes counts - Use the Review Heatmap add-on to track consistency |
 
 ---
 

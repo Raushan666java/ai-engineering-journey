@@ -590,6 +590,8 @@ public class LearningDashboard {
 
 **Try This:** Create a markdown dashboard for this week. Track problems solved and Anki reviews for 7 days. At the end of the week, calculate your velocity score and identify one metric to improve next week.
 
+> **Pro Tip:** Velocity is a lagging indicator — it tells you what happened last week. Don't obsess over it daily. Instead, track lead indicators (hours studied, cards reviewed, problems attempted) as your daily metrics, and use velocity for your weekly review. Lead measures drive behavior; lag measures validate direction.
+
 ---
 
 ### Q134: How does the SM-2 spaced repetition algorithm work?
@@ -1420,6 +1422,8 @@ The real headline is not 38x in one year. It's that after 3 years of consistent 
 
 **Try This:** Choose one subject and commit to 30 minutes of deliberate practice daily for 30 days. Use Anki for spaced repetition. Track your velocity (Q133) at day 0, day 15, and day 30. The growth curve may not be 1% daily — but it will be visible and accelerating.
 
+> **Pro Tip:** The compound effect has a "seed phase" (days 1-14) where progress seems invisible. Most people quit here. The "exponential phase" starts around day 30 when knowledge accumulates enough to cross-reference itself. Don't judge the method by the first 2 weeks. Judge it after 30 days.
+
 ---
 
 ### Q144: How do I set up learning feedback loops?
@@ -1760,6 +1764,17 @@ D. 1:1:1 consumption to contribution ratio
 | FSRS (Free Spaced Repetition Scheduler) | Modern ML-based algorithm achieving 90%+ retention with fewer reviews | When you want optimal efficiency from Anki | Assuming FSRS works instantly — it requires ~200 reviews to calibrate |
 | Learning Velocity | Rate of measurable progress across leading indicators (problems, retention, chapters) | When you need to know if your learning system is actually working | Measuring only trailing indicators (exam scores) instead of leading indicators (daily actions) |
 | Annual Review | Yearly structured reflection documenting mistakes, lessons, and next-year priorities | Every year-end to ensure long-term learning trajectory stays on course | Keeping the review in your head — writing forces clarity and accountability |
+
+
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Meta-Learning | - Waitzkin's stages: Investment → Integration → Innovation - Apply 80/20: find the 20% that gives 80% of results - Map your Dunning-Kruger curve — know which phase you're in - Every course you complete makes the next 20-40% faster |
+| Knowledge System | - Build a Second Brain with atomic, linked notes - Use PARA: Projects, Areas, Resources, Archives - Progressive summarization: layer key insights over time - A note without links is a dead note |
+| Tools & Math | - SM-2: ease factor adjusts based on recall quality (q=5 → EF+0.1) - FSRS: 3-parameter model (Difficulty, Stability, Retrievability) - Learning velocity = leading indicators (problems, retention, hours) - 30 min/day = 182.5 hours/year = 23 work days |
+| System Health | - Diagnose plateaus: motivation, knowledge, skill, technique - Design 4 feedback loops: self-test, peer, real-world, metrics - Run annual review: Document → Analyze → Plan - Use 1:5:25 community ratio: ask 1 per 5 answers per 25 consumed |
 
 ---
 

@@ -131,6 +131,8 @@ public class PomodoroTimer {
 
 > **Try This:** Set a 25-minute timer right now. Work on ONE task until it rings. No phone, no tabs, no distractions. Then take exactly 5 minutes. Notice how much you got done.
 
+> **Pro Tip:** The hardest part of Pomodoro isn't the 25 minutes of work — it's the 5-minute break. Don't spend it checking email or social media. Those activities create attention residue that contaminates your next focus block. Stand up, stretch, look out a window. Let your brain truly disengage.
+
 ---
 
 ### Q32: How do I adapt the Pomodoro Technique for coding?
@@ -232,6 +234,8 @@ public class CodingSessionTracker {
 
 > **Try This:** For your next coding session, use a 45-minute timer. Track every interruption. At the end, count them. Aim to get below 3 interruptions per session.
 
+> **Warning:** Don't extend your coding Pomodoro beyond 90 minutes. After 90 minutes of intense focus, your prefrontal cortex shows measurable fatigue. Past this point, you're making errors you wouldn't normally make — and those errors take longer to fix than the extra time gained.
+
 ---
 
 ### Q33: How do I handle interruptions during a Pomodoro?
@@ -327,6 +331,8 @@ public class ParkingLot {
 
 > **Try This:** For one day, keep a parking lot file open in your editor. Every time you get interrupted, write it down. Process at the end of the day. Notice how many interruptions were actually not urgent.
 
+> **Remember:** The 2-minute rule — if an interruption can be handled in under 2 minutes, do it immediately and return to your Pomodoro. If it takes longer, it goes on the parking lot. This prevents the "just a quick check" trap that actually costs 20+ minutes of attention recovery.
+
 ---
 
 ### Q34: How do I chunk my study sessions using Pomodoro?
@@ -409,6 +415,8 @@ Pomodoro 6: Solve 2 similar problems (interleaving prep)
 ```
 
 > **Try This:** Take a topic you're studying right now and break it into chunks. Assign each chunk a number of pomodoros. Execute one chunk today.
+
+> **Pro Tip:** Keep your chunk sizes flexible. A 25-minute Pomodoro is ideal for reading or revision. A 45-minute block works better for coding or deep problem-solving. A 10-minute micro-block is great for Anki reviews or quick recall drills. Match the interval to the task type.
 
 ---
 
@@ -545,6 +553,8 @@ public class InterleavingDemo {
 
 > **Try This:** Pick two related topics you're studying (e.g., two sorting algorithms, two SQL JOIN types). Solve alternate problems: A1, B1, A2, B2, A3, B3. Notice how much harder it feels — that's the learning happening.
 
+> **Warning:** Interleaving will feel wrong. Your accuracy during practice will drop from ~89% to ~60%. This is NOT a sign that you're doing it wrong — it's the desirable difficulty that produces stronger long-term learning. Trust the process. The test results will prove it.
+
 ---
 
 ### Q36: What's the difference between blocked and mixed practice, and when do I use each?
@@ -624,6 +634,8 @@ public class PracticePlanner {
 ```
 
 > **Try This:** Pick a concept you learned recently. Spend 20% of your practice time on blocked problems (3-5 of the same type), then 80% on mixed problems with related concepts. Compare your test performance to your usual approach.
+
+> **Pro Tip:** The 80/20 rule applies here: use blocked practice for the initial understanding phase (20% of your time), then switch to mixed interleaved practice for the retention phase (80%). The blocked phase builds fluency; the interleaved phase builds discrimination. Both are necessary.
 
 ---
 
@@ -753,6 +765,8 @@ public class GATEInterleavingScheduler {
 
 > **Try This:** Instead of studying "OS for 2 hours," study "OS → CN → OS → TOC" for 2 hours, 30 minutes per block. Do this for one week and compare your PYQ score to the previous week.
 
+> **Pro Tip:** Previous Year Questions (PYQs) are already naturally interleaved — every GATE paper mixes subjects randomly. Instead of doing 3 years of OS questions in a row, do the OS questions from 3 different years shuffled together. This gives you the interleaving benefit while using authentic exam material.
+
 ---
 
 ### Q38: How do I apply interleaving to DSA problem-solving?
@@ -865,6 +879,8 @@ Part 3: Review & Feynman (explain your solutions aloud) — 15 min
 ```
 
 > **Try This:** Pick 3 patterns you've studied (e.g., Two Pointers, Sliding Window, Binary Search). Solve 2 problems from each. Do them in interleaved order: A1, B1, C1, A2, B2, C2. Not A1, A2, B1, B2, C1, C2.
+
+> **Remember:** The goal of interleaving is not to make every session maximally mixed. The goal is to build the skill of "pattern identification" — looking at a problem and deciding which tool to use. That skill only develops when you practice choosing, not just executing.
 
 ---
 
@@ -1017,6 +1033,8 @@ public class FeynmanLearner {
 
 > **Try This:** Take a concept you "know" (like recursion, TCP handshake, or normalization). Write down the simplest explanation you can without looking at any reference. Where did you get stuck? That's what you need to study.
 
+> **Pro Tip:** Start your Feynman explanation with "So basically..." as a trigger phrase. If you find yourself using technical terms right away, stop and define them first. The rule: every term you use must be understandable to a 12-year-old. If it's not, you've found a gap.
+
 ---
 
 ### Q40: How do I perform a gap analysis using the Feynman Technique?
@@ -1139,6 +1157,8 @@ public class GapAnalyzer {
 ```
 
 > **Try This:** Record yourself explaining a topic you're studying for 2 minutes. Transcribe it. Mark every "uh," "kind of," "basically," and jargon word. These are your gaps. Study them, then explain again without the crutch words.
+
+> **Warning:** Don't skip the "teach to a child" mindset. If you explain to an expert, you'll unconsciously use jargon as a crutch. If you explain to a child, you must break concepts down into fundamental pieces. The child is not optional — the simplification constraint IS the mechanism that finds gaps.
 
 ---
 
@@ -1263,6 +1283,8 @@ public class RubberDuckDebugger {
 
 > **Try This:** Next time you're stuck on a bug, open a text file and explain the code line by line as if you're teaching someone who has never seen it. Write it down. You will find the bug within 5 minutes — usually before you finish explaining.
 
+> **Pro Tip:** You don't need a physical rubber duck. Any inanimate object works — a mug, a plant, a stuffed animal. The key is speaking aloud, not the object itself. Speaking engages different neural pathways than silent thinking, which is why bugs become obvious when you verbalize them.
+
 ---
 
 ### Q42: How does learning by writing deepen understanding?
@@ -1382,6 +1404,8 @@ public class LearningJournal {
 ```
 
 > **Try This:** Today, after studying something, close all your references and write a 300-word explanation of the topic in your own words. Don't check anything while writing. At the end, mark the parts you're unsure about — those are your gaps.
+
+> **Remember:** Writing an explanation is NOT the same as taking notes. Notes are for reference. Writing from memory is a recall test. The difference is whether you're looking at the source material. If your eyes are on the screen, not the book, you're doing active recall through writing.
 
 ---
 
@@ -1524,6 +1548,8 @@ public class PeerTeachingSession {
 - Pair program with a junior developer
 
 > **Try This:** Find someone who's learning the same topic as you. Offer to teach them one concept you're confident about. After 20 minutes, swap roles. Note the questions you couldn't answer — those are your real gaps.
+
+> **Pro Tip:** If you can't find a real person to teach, use the "empty chair" method. Explain the concept to an imaginary classmate sitting across from you. The act of speaking aloud to a perceived audience creates enough social pressure to surface gaps that silent self-talk doesn't trigger.
 
 ---
 
@@ -1917,6 +1943,17 @@ a) It will be perfect if you studied enough  b) It will be terrible — and that
 | Rubber Duck Debugging | Talking through code line-by-line to uncover hidden assumptions | When stuck on a bug or confusing piece of code | Staying silent while debugging — verbalizing forces your brain to slow down |
 | Peer Teaching | Teaching a classmate with prepared questions | Before an exam or when you need deep verification | Only teaching easy topics — challenge yourself with what you're least confident about |
 | Master Session | 2-hour cycle combining Feynman, gap study, interleaving, and teaching | Weekly deep study session for maximum retention | Attempting the Master Session without first mastering each individual technique |
+
+
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Pomodoro Technique | - Work in focused intervals (25-50 min) with short breaks - Adapt interval to task: code 50 min, revise 25 min - Leverages the Zeigarnik effect (unfinished tasks stick) - Use breaks for diffuse mode, not screen time |
+| Interleaving | - Mix different topics/problem types in one session - Feels harder than blocked practice — that's the benefit - Builds discrimination skills for exams and real-world problems - Beat blocked practice for long-term retention |
+| Feynman Technique | - Explain a concept in plain language to reveal gaps - Four-step loop: pick → teach → identify gaps → simplify - Combine with rubber duck debugging for code - Use the 3-Explanation Rule: first pass = gap detection |
+| Master Session | - 2-hour cycle: Feynman (25) + gap study (25) + interleaving (25) + teaching (25) - Run weekly for maximum retention - Prerequisite: master each technique individually first - Awkwardness is the signal that learning is happening |
 
 ---
 

@@ -105,6 +105,8 @@ public class OptimalPageReplacement {
 
 **Try This:** Pick one theory topic per week (e.g., cache coherence protocols, deadlock avoidance, B+ trees) and implement it in code. Writing the algorithm forces you to resolve ambiguities in your understanding.
 
+> **Pro Tip:** For GATE theory, don't treat it like a memorization exam. Trace through examples by hand — draw process state diagrams, cache mapping examples, and page table walks. GATE questions test your ability to apply concepts to new scenarios, not recall textbook definitions.
+
 ---
 
 ### Q97: How do I build effective formula cheat sheets for GATE theory subjects?
@@ -156,6 +158,8 @@ IPv4
 ```
 
 **Try This:** For your weakest subject, spend 45 minutes building a one-page cheat sheet from memory first, then verify against your textbook. The gaps you discover are your study targets for the week.
+
+> **Remember:** The 45-minute cheat sheet from memory is a diagnostic tool, not a study technique. The gaps you discover are valuable — they tell you exactly what to study. Don't feel discouraged by how much you missed. Feeling the gap is the first step to closing it.
 
 ---
 
@@ -1110,6 +1114,17 @@ a) Day 7  b) Day 14  c) Day 21  d) Day 28
 | Mock Test Analysis | Systematic review of test results to identify error patterns | After every mock test | Only checking the score and not analyzing individual mistakes |
 | C/M/E/R Taxonomy | Classifying errors as Conceptual, Misread, Execution, or Random | When analyzing any wrong answer on a mock test | Misclassifying errors — be honest about whether it was truly "random" |
 | 30-Day Strategy | Three-phase plan: breadth (week 1) → depth (weeks 2-3) → recall (week 4) | One month before the exam | Starting the recall phase without finishing depth phase |
+
+
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Strategy & Planning | - 70/30 theory-to-coding split early, shift to 50/50 - Dual-track: Track 1 (breadth, 45 min) + Track 2 (depth, 120 min) - Spiral schedule: touch every subject every 2 days - Prioritize by ROI: weightage × frequency / effort |
+| Study Methods | - 3-pass method for theory: Survey (15-20%) → Detail (50-60%) → Integration (20-30%) - Cross-subject interlinking creates redundant retrieval paths - Cheat sheets: compress one subject per page from memory - Memory palaces for sequential topics (process states, disk scheduling) |
+| Testing & Analysis | - 5 full-length mocks in 30-day strategy - C/M/E/R taxonomy: Conceptual, Misread, Execution, Random - Analyze patterns, not just scores - Use errors to generate actionable study items |
+| Tools & Review | - Formula cheat sheet finalized by Day 21 - Color-code by priority: red (high), blue (medium), green (mastered) - Update cheat sheet weekly — erase internalized items - Last 3 days: consolidation only, no new material |
 
 ---
 

@@ -117,6 +117,8 @@ The 3-pass method works because it matches how your brain solves problems: diffu
 
 **Try This:** Pick any unsolved LeetCode problem. Set a 6-minute timer. Do Pass 1 only. Write nothing but sentences. When the timer rings, cover your notes and try to reconstruct the plan from memory.
 
+> **Pro Tip:** The 6-minute limit for Pass 1 is intentional. If you can't explain the approach in 6 minutes, you don't understand the problem well enough to code. If you can explain it in 6 minutes, the coding becomes mechanical. The bottleneck for most interview problems is understanding, not coding.
+
 ---
 
 ### Q82: How do you classify DSA problems into patterns?
@@ -183,6 +185,8 @@ public int maxSubArray(int[] nums) {
 ```
 
 **Try This:** Go through the last 10 LeetCode problems you solved. Write down which pattern each one belongs to. If you haven't solved any, go to LeetCode's "Top Interview Questions" and classify the first 10 by reading only the description — not the solution.
+
+> **Remember:** Pattern recognition is built through comparison, not repetition. Solving 100 problems without connecting them to patterns teaches you 100 individual solutions. Solving 10 problems while actively classifying each one into a pattern framework teaches you the framework. The classification step IS the learning.
 
 ---
 
@@ -271,6 +275,8 @@ but left <= right would be the standard binary search variant.
 - Day 30: classify 5 random problems into patterns
 
 **Try This:** Create 3 cards using the templates above for the last DSA problem you solved. Add them to a new Anki deck called "DSA Patterns". Set the daily new card limit to 10.
+
+> **Warning:** The most common DSA Anki mistake is testing recognition instead of recall. A card that shows "Two Pointers: [full explanation]" tests only reading comprehension. A good card shows a problem description on the front and asks "Which pattern? Why?" — forcing you to retrieve the classification from memory.
 
 ---
 
@@ -373,6 +379,8 @@ public int minPathSumOptimized(int[][] grid) {
 
 **Try This:** Take the "Coin Change" problem (minimum coins to make an amount). Write out the 5 DP workflow steps on paper. Do not code until step 5. Time yourself: target under 10 minutes for the full workflow.
 
+> **Pro Tip:** The 5-step DP workflow (define state → recurrence → base → order → code) is designed to prevent the most common DP failure: jumping to code before understanding the recurrence. If you can state the recurrence in plain English ("dp[i] = min coins to make amount i"), you're 80% done. If you can't, you're not ready to code.
+
 ---
 
 ### Q85: How do I use LeetCode solutions without abusing them?
@@ -446,6 +454,8 @@ public int subarraySum(int[] nums, int k) {
 After reading a solution, you must re-solve the same problem from scratch within 48 hours. If you can't, the solution didn't stick. Create an Anki card (Q83) to schedule the re-solve.
 
 **Try This:** Pick a LeetCode Medium you've never seen. Set a 30-minute timer. Do Step 0. If you don't solve it, move to Step 1. Record how many hints you needed. Target: after 20 problems using this protocol, you should need at most Step 1 for most Mediums.
+
+> **Pro Tip:** The stair-step protocol works because it prevents the "solution spoiler" problem. Most learners read the solution too early and fool themselves into thinking they understand. By forcing yourself through graduated hints, you maximize the time spent in productive struggle — which is where real learning happens.
 
 ---
 
@@ -531,6 +541,8 @@ public String joinStrings(List<String> words) {
 ```
 
 **Try This:** Create a flashcard deck with 20 code snippets on the front and their complexity on the back. Practice speed-running the deck: you should be able to identify O(n log n), O(n^2), O(2^n), and O(n!) patterns in under 5 seconds each.
+
+> **Remember:** Big-O analysis in interviews is less about exact calculation and more about recognizing common patterns. Nested loops over the same data → O(n²). Divide-and-conquer recursion → O(n log n). Single pass with constant work per element → O(n). Learn to spot the pattern, not compute the math.
 
 ---
 
@@ -655,6 +667,8 @@ public char[] reverseCopy(char[] s) {
 - Mention constraints: "If the input is a stream and we can't store everything, we need the in-place approach."
 
 **Try This:** For the problem "Find the intersection of two arrays", write three solutions: (1) nested loop O(n*m) time, O(1) space, (2) hashset O(n+m) time, O(min(n,m)) space, (3) sort + two pointers O(n log n + m log m) time, O(1) space. For each, articulate the tradeoff in one sentence.
+
+> **Pro Tip:** In an interview, don't just state the tradeoff — show you can make a decision. Say "For this specific case, the input arrays are small and I don't know the data distribution, so I'll start with the hashset approach for best average-case time. If memory becomes an issue, I can fall back to sort + two pointers." This demonstrates engineering judgment.
 
 ---
 
@@ -1642,6 +1656,17 @@ d) Start coding the first thing that comes to mind
 | LLD 5-Step | Clarify → Identify Objects → Contracts → Implementation → Test | Low-level design rounds in interviews | Making classes too abstract or over-engineering the design upfront |
 | Interview Workflow | Structured 40-minute process: warm-up through follow-up | Every mock interview or real coding interview | Staying silent when stuck — always verbalize your thought process |
 | Meta-Learning Loop | Post-interview reflection that feeds the next practice session | After every interview or mock regardless of outcome | Ignoring the reflection step — the real growth comes from the loop, not the interview |
+
+
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Problem Solving | - Use the 3-pass method: Understand → Plan → Code - Classify every problem into one of ~20 patterns - Never jump to code without a clear plan - Verbalize your thinking — silence makes interviewers nervous |
+| Pattern Classification | - 20 patterns cover 500+ LeetCode problems - Focus on Arrays, Trees, DP (48% of problem bank) - Train classification in under 30 seconds per problem - Use stair-step protocol: read pattern name → derive solution |
+| Domain Workflows | - DP 5-step: Identify DP → State → Recurrence → Base → Iteration - Big O: trace loops and recursion depth before coding - System Design 5-step: Requirements → Estimation → Data → API → Deep - LLD 5-step: Entities → Classes → Interfaces → Code → Test |
+| Interview Process | - 48h before: Anki review + mock interview - 12h before: full sleep (biggest performance predictor) - During: narrate everything, even when stuck - After: write retro within 2 hours, add Anki cards for gaps |
 
 ---
 

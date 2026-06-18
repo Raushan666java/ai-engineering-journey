@@ -456,6 +456,8 @@ function ThemeToggle() {
 
 **Try This:** Build a todo app with React using only `useState`. Requirements: add items, toggle completion, filter (all/active/completed), and persist to localStorage with a custom hook. If you can build this from scratch without following a tutorial, you've grasped the component mental model.
 
+> **Pro Tip:** The universal blueprint (tutorial → modified clone → scratch rebuild) is the same for every language. Spending 3 days struggling through the scratch rebuild is worth more than 3 weeks following tutorials. The struggle is where the mental model solidifies.
+
 ---
 
 ### Q122: How do I learn Go/Golang effectively?
@@ -531,6 +533,8 @@ This example teaches four essential Go patterns: goroutines (`go fetchURL`), Wai
 4. Study the standard library source — it's designed to be readable.
 
 **Try This:** Build a simple HTTP server that serves a `/healthz` endpoint returning `{"status": "ok"}`, and a `/greet?name=Alice` endpoint returning `{"message": "Hello, Alice!"}`. Use only the standard library. Then add a mutex-protected in-memory counter that tracks total requests. This exercise forces you to learn `net/http`, `encoding/json`, `sync.Mutex`, and the `http.Request` type — the four pillars of Go web development.
+
+> **Warning:** Don't skip the standard library phase of learning a new language. Beginners often reach for frameworks immediately (Gin for Go, Express for Node, Spring Boot for Java), bypassing the core language. Framework knowledge doesn't transfer between languages; standard library knowledge does. Build one project with only the stdlib first.
 
 ---
 
@@ -1436,6 +1440,17 @@ D) Pick one category and ignore the others
 | Building in Public | Solving real problems via open-source contributions | When you want to cement your understanding permanently | Submitting code you don't fully understand — review your own PR before submitting |
 | AI Tutor Usage | Treating AI as a teacher who explains, not an oracle who writes code | When stuck on a concept or debugging an issue | Blindly accepting AI-generated code without understanding every line |
 | Documentation vs Tutorials | Docs build mental models; tutorials teach execution patterns | At the start of learning any tool — use both | Reading docs cover-to-cover instead of using them as a reference while building |
+
+
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Learning Blueprint | - Five phases: Docs → Tutorial → Build → Refactor → Teach - Never learn two new frameworks simultaneously - MVP pattern: build User/Post/Comment CRUD for any framework - Docs give the "why", tutorials give the "how" (10/90 split) |
+| New Paradigms | - React: UI = f(state) — declarative rendering - Go: goroutines + channels for lightweight concurrency - Rust: ownership model — one owner per value, no GC - TypeScript: structural typing (shape-based, not name-based) |
+| Tools & Infrastructure | - SQL before NoSQL — master joins, normalization, indexing first - Docker before Kubernetes — containers are the prerequisite - Cloud: start with PaaS/FaaS, then IaaS - IaC always: Terraform, never click-ops |
+| Active Learning | - AI as tutor: ask for explanations and trade-offs, not code - Avoid the tutorial trap: code-along → close → rebuild from memory - Debug: Reproduce → Isolate → Search → Understand - Contribute to open source: fix docs first, then small PRs |
 
 ---
 

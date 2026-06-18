@@ -116,6 +116,8 @@ The first example adds nothing to your ability. The second — done under time p
 
 **Try This:** Pick one skill you're learning. Write down: (1) one specific, measurable goal for today's session, (2) how you'll get immediate feedback, (3) what makes this session harder than what you can already do. Do not start practicing until you've written all three.
 
+> **Pro Tip:** Set a timer for each deliberate practice session. A goal without a time constraint lacks urgency. "Solve 2 medium DP problems in 40 minutes" is dramatically more effective than "work on DP problems."
+
 ---
 
 ### Q9: Why do re-reading and highlighting feel productive but aren't?
@@ -177,6 +179,8 @@ Highlighting is **passive selection**, not **active processing**. Your hand move
 
 **Try This:** Take a page you read yesterday. Without looking, write down everything you remember from it. Now check. Rate your accuracy from 1–5. Do this for five different pages. If your average is below 4, your current study methods are giving you illusions.
 
+> **Warning:** Highlighting is not just ineffective — it can be actively harmful. It creates "warmth" toward marked text that tricks you into skipping it during review, meaning you actually spend less time on the most important content. Use highlighting only as a signal for what to turn into recall questions later.
+
 ---
 
 ### Q10: What is the difference between a recall test and a recognition test?
@@ -234,6 +238,8 @@ Recognition tests are useful for **initial exposure** and for building confidenc
 | Long-term maintenance | Spaced free recall | Schedule reviews that force full reconstruction |
 
 **Try This:** Take a concept you think you know. First, write down everything about it from memory (free recall). Then look at a multiple-choice question on the same topic. Compare how you felt during each — the recognition probably felt easier, but the recall showed you your true gaps.
+
+> **Pro Tip:** After any study session, spend 2 minutes writing a "recall summary" — close everything and write 3-5 bullet points of what you remember. This single habit separates students who retain knowledge from those who just feel like they do.
 
 ---
 
@@ -314,6 +320,8 @@ public List<Integer> getEvens(List<Integer> input) {
 The Einstellung effect never disappears — even grandmasters fall into it. The skill is recognizing it faster.
 
 **Try This:** Solve a LeetCode problem you've seen before using your usual approach. Now delete everything and solve it again using a completely different data structure or algorithm (if you used DP, try a greedy approach; if you used HashMap, try sorting). Compare the solutions.
+
+> **Remember:** The goal isn't to find the "best" solution the second time. The goal is to notice that your brain automatically reached for the first solution — and that awareness is the first step to breaking any mental set.
 
 ---
 
@@ -396,6 +404,8 @@ public class FarTransfer {
 5. **Contrasting cases.** Compare two solutions to the same problem and identify the common deep structure beneath their surface differences.
 
 **Try This:** Take the concept of "caching" from computer science. Write down 3 completely different domains where caching applies (e.g., web browser caching, memoization in DP, CPU cache hierarchy, database query caching, DNS caching). For each one, write the core caching principle in a single sentence. If the sentence is the same for all three, you've achieved transfer.
+
+> **Pro Tip:** When learning a new concept, actively ask "Where else have I seen this pattern?" before moving on. Forcing yourself to generate cross-domain examples in the moment strengthens the neural pathways that make far transfer possible later.
 
 ---
 
@@ -499,6 +509,8 @@ public class PomodoroWithContextSwitchManagement {
 
 **Try This:** For one day, whenever you switch tasks, do a "clean break" — write one sentence about where you left off and one sentence about what comes next. Then wait 60 seconds before starting the new task. Compare your focus quality to a normal day.
 
+> **Warning:** Social media apps are designed to maximize attention residue. The infinite scroll creates incomplete tasks (there's always another post), which means maximum residue when you return to studying. If you must take a break, stand up and walk — don't open an app.
+
 ---
 
 ### Q14: How do arousal and stress affect learning and performance?
@@ -595,6 +607,8 @@ public class YerkesDodsonLaw {
 | Before a creative session | Need low arousal | Open-ended time, no deadline, ambient music, comfortable space |
 
 **Try This:** Before your next study session, rate your arousal from 1 (asleep) to 10 (panicking). Identify the task complexity. If your arousal is far from optimal, spend 5 minutes adjusting it — either calming down (deep breathing) or ramping up (timer, stand up, caffeine). Note whether the session goes better than usual.
+
+> **Pro Tip:** Keep an "arousal log" for one week. Rate your arousal (1-10) before each study session and note the task type. You'll quickly identify a pattern: your best sessions happen within a specific arousal range. Use that range as your target zone before every future session.
 
 ---
 
@@ -700,6 +714,8 @@ public class GrowthMindsetFramework {
 
 **Try This:** Write down 3 things you believe you're "not good at." Next to each, add "yet" and write one specific strategy you could use to improve. Now go do the first practice session with that strategy. The change from identity to strategy is the growth mindset in action.
 
+> **Remember:** Watch for "false growth mindset" — saying "I can do anything!" while refusing to change strategies. Real growth mindset says "I need a better approach," not "I just need to try harder." Effort without strategy change is just stubbornness.
+
 ---
 
 ### Q16: What is neuroplasticity and why should I care about it as a learner?
@@ -775,6 +791,8 @@ One of the most dramatic demonstrations of neuroplasticity comes from stroke rec
 
 **Try This:** Pick one concept you've labeled yourself as "bad at." Commit to 20 minutes of deliberate practice on it every day for 2 weeks. Before starting, rate your understanding 1-10. After 2 weeks, rate it again. Track not just the rating but how the concept felt — did it change from "impossible" to "challenging but doable"? That's neuroplasticity in action.
 
+> **Pro Tip:** Take before-and-after "proof" of your skill. Record yourself explaining the concept on day 1, then again on day 14. The difference in fluency, depth, and confidence is tangible evidence of your brain rewiring itself — useful motivation when progress feels slow.
+
 ---
 
 ### Q17: Is the 10,000-hour rule real? Do I need to practice for 10,000 hours to master something?
@@ -845,6 +863,8 @@ public class DeliberatePracticeROI {
 4. **The rule's real value:** It kills the "talent myth." If even elite violinists need 10,000 hours, then your struggle with a new skill isn't a lack of talent — it's a lack of hours. Keep going.
 
 **Try This:** Estimate how many hours of deliberate practice you've invested in your weakest technical skill. If it's under 100, your struggle isn't a talent problem — it's a volume problem. Commit to 100 hours of deliberate practice (1 hour/day for ~3 months) before reassessing your potential in that skill.
+
+> **Remember:** The most dangerous part of the 10,000-hour myth is the discouragement it causes. If you believe you need 10,000 hours to be employable, you're less likely to start. The truth is that 300-500 deliberate hours makes you professionally functional. Start counting your deliberate hours — not your calendar time.
 
 ---
 
@@ -932,6 +952,8 @@ public class PygmalionEffect {
 The Pygmalion effect can be negative. If you believe you're bad at something, you unconsciously reduce effort, avoid challenges, and interpret struggle as confirmation. This is why the first step in learning any subject is checking your expectations — not just of the material, but of yourself.
 
 **Try This:** Think of a topic you believe you're bad at. Write down exactly what you believe about your ability. Now ask: "If I believed I could master this with the right strategy, how would I approach today's study session differently?" Try that approach for one week and note what changes.
+
+> **Pro Tip:** Be a Pygmalion mentor, not just a recipient. When you teach someone else and genuinely communicate "I believe you can get this," your own learning deepens — and you create the same self-fulfilling confidence cycle for them. Teaching is the fastest way to internalize high expectations.
 
 ---
 
@@ -1078,6 +1100,8 @@ public class BrainOptimizationProtocol {
 
 **Try This:** For one week, track: (1) hours of sleep per night, (2) minutes of exercise per day, (3) glasses of water per day, (4) your self-rated focus during study (1-10). At the end of the week, look for correlations. Most people find their focus tracks almost perfectly with sleep hours and water intake.
 
+> **Warning:** A single night of 5 hours of sleep reduces your learning capacity by 30-40%, regardless of how motivated you are. If you're sacrificing sleep to study, you're working against your own brain. One hour of study after 7.5 hours of sleep is worth more than three hours of study after 5 hours of sleep.
+
 ---
 
 ### Q20: What is the single most important framework from this chapter?
@@ -1207,6 +1231,8 @@ public class PracticeMindsetPerformanceTriangle {
 
 **Try This:** Copy the `runAudit()` method above mentally. Rate yourself 1-10 on each dimension. Identify your lowest score. For the next 2 weeks, take ONE action in only that dimension. Track whether your learning effectiveness improves — not just the dimension score, but how you feel across all four. The triangle is interconnected: fixing sleep (brain health) often improves mindset and practice quality without directly targeting them.
 
+> **Pro Tip:** Paste the triangle audit into a note and revisit it every month. The dimension that was your weakest last month may have improved — but a different one may have slipped. The best learners don't just run the audit once; they track it as a living metric over time.
+
 ---
 
 ### Self-Assessment Quiz
@@ -1271,6 +1297,17 @@ a) "I'm just not a recursion person"  b) "Recursion is useless anyway, I'll use 
 | Yerkes-Dodson Law | Inverted-U curve relating arousal to performance | Before exams, presentations, or high-stakes performances | Believing more stress always leads to better performance |
 | Knowledge Transfer | Application of learned concepts to novel contexts | When learning a skill you need beyond training scenarios | Assuming near transfer happens automatically without varied practice |
 | Pygmalion Effect | Higher expectations from authority figures lead to higher performance | In mentoring, teaching, or coaching relationships | Setting unrealistically high expectations without providing scaffolding |
+
+
+
+## Quick Reference
+
+| Category | Key Points |
+|----------|-----------|
+| Deliberate Practice | - Set specific, measurable goals per session - Work at the edge of your ability - Get immediate feedback (coach, test, code review) - Avoid naive practice (mindless repetition) |
+| Mindset | - Growth mindset: ability grows with effort + strategy - Use process praise not person praise - Reframe failures as learning data - Apply the Pygmalion effect in self-talk |
+| Illusions of Competence | - Re-reading and highlighting feel productive but aren't - Recognition ≠ recall — test yourself by producing - Beware the Einstellung effect (getting stuck in one approach) - Use interleaving and beginner's mind to break ruts |
+| Performance & Brain Health | - Yerkes-Dodson: calibrate arousal for optimal performance - Sleep 7+ hours for memory consolidation - Exercise boosts BDNF and cognitive function - Manage stress and nutrition for sustained learning |
 
 ---
 

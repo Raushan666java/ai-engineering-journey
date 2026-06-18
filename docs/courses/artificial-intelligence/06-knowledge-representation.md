@@ -1,8 +1,39 @@
 # Chapter 6: Knowledge Representation
 
+**Previous:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md) | **Next:** [Chapter 7: First-Order Logic and Inference](07-fol.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) explain the role of ontology in knowledge representation; (2) distinguish propositional and first-order logic as representation languages; (3) construct semantic networks and frame-based representations; (4) apply description logic to taxonomic reasoning; (5) model actions and change using situation and event calculi.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Ontological Commitment | Conceptualization, categories | Ontology, expressiveness vs tractability |
+| Logic-Based Rep. | PL syntax/semantics, FOL quantifiers | Terms, predicates, interpretation |
+| Semantic Networks | is-a, has-property, part-of | Inheritance, multiple inheritance |
+| Frames | Slots, defaults, procedural attachment | Demons, when-needed |
+| Conceptual Graphs | Bipartite concept-relation graphs | Projection, canonical formation |
+| Description Logic | TBox, ABox, OWL | Subsumption, satisfiability |
+| Categories & Actions | Situation calculus, event calculus | Fluents, frame problem, successor-state |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Ontological Commitment] --> B[Logic-Based Representation]
+    B --> C[Propositional Logic]
+    B --> D[First-Order Logic]
+    A --> E[Semantic Networks]
+    A --> F[Frames]
+    A --> G[Conceptual Graphs]
+    A --> H[Description Logic]
+    H --> I[TBox / ABox]
+    A --> J[Situation Calculus]
+    J --> K[Frame Problem]
+    A --> L[Event Calculus]
+```
 
 ## 6.1 The Ontological Commitment
 
@@ -13,6 +44,10 @@ An **ontology** is a formal, explicit specification of a conceptualization. It d
 Knowledge representation languages vary in their **expressiveness** (what can be said) and **tractability** (how efficiently reasoning can be performed). There exists a fundamental trade-off: more expressive languages typically require greater computational resources for inference.
 
 ## 6.2 Logic-Based Representation
+
+> **One-Sentence Takeaway:** Knowledge representation languages trade off expressiveness (how much you can say) against tractability (how fast you can reason) — choose the least expressive language that can express your problem.
+
+> **💡 Pro Tip:** Description Logic (DL) sits at the sweet spot of the expressiveness-tractability trade-off. That is why OWL (based on DL) is the W3C standard for the Semantic Web — it is decidable and has polynomial-time classification algorithms.
 
 ### 6.2.1 Propositional Logic
 
@@ -114,6 +149,63 @@ A knowledge-based system consists of:
 2. **Inference engine:** Applies reasoning procedures to derive new knowledge.
 3. **Explanation facility:** Justifies conclusions.
 4. **Knowledge acquisition module:** Supports KB construction and maintenance.
+
+## Concept Comparison
+
+| Language/Formalism | Expressiveness | Decidable? | Inference Complexity | Best For |
+|-------------------|:---:|:---:|:---:|---------|
+| Propositional Logic | Low | ✅ | O(2ⁿ) SAT | Simple facts |
+| First-Order Logic | High | ❌ (semi) | Undecidable | General domain axioms |
+| Description Logic | Medium | ✅ | PTIME/EXPTIME | Taxonomies, OWL |
+| Semantic Networks | Medium | Varies | Linear (inheritance) | Quick prototyping |
+| Frames | Medium-High | Varies | Linear (with defaults) | Structured objects |
+
+## Quick Reference — Ontology Concepts
+
+| Concept | Definition | Example |
+|---------|-----------|---------|
+| Ontology | Formal specification of a conceptualization | Domain model |
+| TBox | Terminology (concepts and roles) | Mother ≡ Woman ⊓ ∃hasChild.Person |
+| ABox | Assertions about individuals | Woman(Alice) |
+| Fluents | Situation-dependent predicates | On(x, y, s) |
+| Frame Problem | Need to specify what stays the same | Successor-state axioms |
+| Projection | Graph homomorphism check | Concept subsumption |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| Ontology Engineering | ✅ | ✅ | ✅ | ✅ |
+| Description Logic | ⬜ | ✅ | ✅ | ✅ |
+| Semantic Networks | ⬜ | ✅ | ✅ | ✅ |
+| Situation Calculus | ⬜ | ⬜ | ⬜ | ✅ |
+| Frames | ⬜ | ✅ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What is the frame problem?
+- A) The challenge of representing knowledge in frames
+- B) The need to explicitly specify what does not change after an action
+- C) The difficulty of combining multiple inheritance hierarchies
+- D) The trade-off between expressiveness and tractability
+
+<details><summary>Answer</summary>B) The frame problem requires us to specify what stays the same (frame axioms) when an action occurs.</details>
+
+**Q2:** Which component of a DL knowledge base stores facts about individuals?
+- A) TBox
+- B) ABox
+- C) RBox
+- D) RDF
+
+<details><summary>Answer</summary>B) The ABox (assertional box) contains assertions about specific individuals.</details>
+
+**Q3:** What makes Description Logic attractive for the Semantic Web?
+- A) It is as expressive as FOL
+- B) It is decidable with efficient classification algorithms
+- C) It supports procedural attachment
+- D) It eliminates the need for ontologies
+
+<details><summary>Answer</summary>B) DL is decidable (unlike FOL) while being expressive enough for domain modeling, making it suitable for OWL.</details>
 
 ## 6.9 Summary
 

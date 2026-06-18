@@ -1,14 +1,47 @@
 # Chapter 8: Planning
 
+**Previous:** [Chapter 8: Uncertainty and Probabilistic Reasoning](08-uncertainty.md) | **Next:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) formulate planning problems in STRIPS and ADL; (2) implement forward and backward state-space planning; (3) construct partial-order plans; (4) apply GraphPlan and SATPlan algorithms; (5) understand hierarchical task network planning.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Classical Planning | STRIPS, ADL, Blocks World | Precondition, add/delete list |
+| Forward/Backward Search | Progression, regression | Ignore-delete-lists heuristic |
+| Partial-Order Planning | Causal links, open preconditions | Threat, promotion, demotion |
+| GraphPlan | Planning graph, mutex relations | Level-off, plan extraction |
+| SATPlan | SAT encoding, CNF | Action at time i, frame axioms |
+| HTN Planning | Task decomposition methods | Primitive vs compound tasks |
+| Practical Planners | FF, FastDownward | Relaxed plan, causal graph |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Classical Planning] --> B[STRIPS / ADL]
+    A --> C[Forward Search]
+    A --> D[Backward Search]
+    C --> E[Ignore-Delete Heuristic]
+    A --> F[Partial-Order Planning]
+    A --> G[GraphPlan]
+    G --> H[Mutex Detection]
+    A --> I[SATPlan]
+    I --> J[SAT Solver]
+    A --> K[HTN Planning]
+    K --> L[Task Decomposition]
+```
 
 ## 8.1 Classical Planning
 
 ![Planning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch08-planning.png)
 
-**Planning** is the process of selecting a sequence of actions to achieve a goal. Classical planning assumes a deterministic, fully observable, static environment with finite actions and states.
+**Planning** is the process of selecting a sequence of actions to achieve a goal. > **One-Sentence Takeaway:** Classical planning selects a sequence of actions to reach a goal — the STRIPS representation decomposes each action into preconditions, add effects, and delete effects.
+
+Classical planning assumes a deterministic, fully observable, static environment with finite actions and states.
 
 ### 8.1.1 STRIPS Representation
 
@@ -137,6 +170,66 @@ HTN planners (SHOP2, PyHop) are used in real-world applications including logist
 **FF (Fast Forward):** Employs forward search with the relaxed plan heuristic (number of actions in the ignoring-delete-lists plan). Uses enforced hill climbing: if no local improvement exists, falls back to breadth-first search.
 
 **FastDownward:** Introduced the causal graph heuristic and multi-heuristic search. Uses a causal graph to decompose the planning problem into subproblems.
+
+> **💡 Pro Tip:** The ignore-delete-lists heuristic is simple but extremely effective for forward search planning. It solves the relaxed problem (no delete effects) which is always solvable and provides admissible estimates for the original problem.
+
+> **⚠️ Warning:** Partial-order planning introduces threats that require promotion/demotion resolution. Always check all causal links when adding a new action — overlooking a threat produces an invalid plan.
+
+## Concept Comparison
+
+| Planning Method | Search Space | Plan Type | Sound? | Complete? | Complexity |
+|----------------|:---:|:---:|:---:|:---:|:---:|
+| Forward Search | State | Total order | ✅ | ✅ | High branching |
+| Backward Search | Goal | Total order | ✅ | ✅ | Lower branching |
+| Partial-Order | Plan | Partial order | ✅ | ✅ | Exponential |
+| GraphPlan | Graph | Total order | ✅ | ✅ | Poly existence |
+| SATPlan | SAT formula | Total order | ✅ | ✅ | NP-complete |
+| HTN | Task network | Hierarchy | ✅ | Domain-dep | Domain-dep |
+
+## Quick Reference — STRIPS Action Model
+
+| Component | Description | Example |
+|-----------|-------------|---------|
+| Action name | Unique identifier | Stack(x, y) |
+| Precondition | Must hold before action | Clear(y) ∧ Holding(x) |
+| Add list | Becomes true after action | On(x, y) |
+| Delete list | Becomes false after action | Clear(y), Holding(x) |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| STRIPS Planning | ⬜ | ⬜ | ⬜ | ✅ |
+| Partial-Order | ⬜ | ⬜ | ⬜ | ✅ |
+| GraphPlan | ⬜ | ⬜ | ⬜ | ✅ |
+| SATPlan | ✅ | ⬜ | ⬜ | ✅ |
+| HTN Planning | ⬜ | ✅ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What does a causal link A→B represent in partial-order planning?
+- A) A happens before B
+- B) A achieves a precondition p for B
+- C) B depends on A's delete list
+- D) A and B are mutually exclusive
+
+<details><summary>Answer</summary>B) A causal link A→B means action A achieves proposition p that is a precondition for action B.</details>
+
+**Q2:** Why might GraphPlan be preferred over forward state-space search?
+- A) It always finds shorter plans
+- B) It constructs a compact graph encoding all possible plans, enabling polynomial-time plan existence checking
+- C) It does not need action definitions
+- D) It handles continuous state spaces
+
+<details><summary>Answer</summary>B) GraphPlan's planning graph compactly represents all possible action sequences up to a given length with polynomial-time construction.</details>
+
+**Q3:** What is the key advantage of HTN planning over classical STRIPS planning?
+- A) HTN is always faster
+- B) HTN handles complex real-world tasks through hierarchical decomposition matching human problem-solving
+- C) HTN does not require action preconditions
+- D) HTN guarantees optimal plans
+
+<details><summary>Answer</summary>B) HTN decomposes high-level tasks into subtasks via methods, mirroring how humans break complex problems into manageable steps.</details>
 
 ## 8.8 Summary
 

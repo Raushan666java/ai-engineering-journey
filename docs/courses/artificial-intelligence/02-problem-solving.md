@@ -1,10 +1,40 @@
 # Chapter 2: Problem-Solving by Search
 
+**Previous:** [Chapter 1: Introduction to AI](01-introduction.md) | **Next:** [Chapter 3: Informed Search and Heuristics](03-informed-search.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) formulate a problem as a state-space search; (2) implement and analyze uninformed search algorithms; (3) evaluate search algorithm performance using completeness, optimality, time complexity, and space complexity; (4) distinguish problem types by observability, determinism, and dynamics; (5) select appropriate search strategies for given problem classes.
 
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Problem-Solving Agents | Goal formulation, search, execution | Goal-directed agent, problem formulation |
+| State-Space Representation | States, actions, transition model | State space, branching factor, solution |
+| Problem Classification | Determinism, observability, dynamics | Toy vs. real-world problems |
+| Uninformed Search (BFS, DFS, IDDFS, UCS) | Tree/graph search, frontier, explored set | Completeness, optimality, complexity |
+| Measuring Performance | Four evaluation dimensions | Time/space complexity, completeness |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Problem Formulation] --> B[State-Space Graph]
+    B --> C[Uninformed Search]
+    C --> D1[BFS]
+    C --> D2[DFS]
+    C --> D3[IDDFS]
+    C --> D4[UCS]
+    D1 --> E[Performance Evaluation]
+    D2 --> E
+    D3 --> E
+    D4 --> E
+```
+
 ## 2.1 Problem-Solving Agents
+
+> **One-Sentence Takeaway:** A problem-solving agent systematically formulates goals, defines problems as state spaces, searches for action sequences, then executes them in the real world.
 
 ![Problem-Solving Search](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch02-problem-solving.png)
 
@@ -16,6 +46,8 @@ A problem-solving agent is a goal-directed agent that decides what to do by find
 4. **Execution:** The agent executes the actions in the solution path.
 
 ## 2.2 State-Space Representation
+
+> **One-Sentence Takeaway:** Every search problem is defined by six components: state space, initial state, actions, transition model, goal test, and path cost.
 
 A **search problem** is defined by the following components:
 
@@ -41,6 +73,8 @@ Problems are classified along three principal dimensions:
 **Static versus Dynamic:** Static problems do not change while the agent deliberates. Dynamic problems impose real-time constraints.
 
 Toy problems (e.g., the 8-puzzle, vacuum world) are simplified domains used for pedagogical purposes. Real-world problems (e.g., route planning, VLSI layout, robot navigation) involve larger state spaces and more complex constraints.
+
+> **💡 Pro Tip:** The choice between BFS and DFS often comes down to space constraints. BFS guarantees optimality but requires exponential memory; DFS uses linear space but may never find a solution in infinite state spaces.
 
 ## 2.4 Uninformed Search Algorithms
 
@@ -96,12 +130,73 @@ Bidirectional search simultaneously expands forward from the initial state and b
 
 ## 2.5 Measuring Search Performance
 
+> **One-Sentence Takeaway:** Search algorithms are evaluated on completeness, optimality, time complexity, and space complexity — and space is often the binding constraint.
+
 Search algorithms are evaluated along four dimensions:
 
 - **Completeness:** Does the algorithm guarantee finding a solution when one exists?
 - **Optimality:** Does the algorithm guarantee finding the lowest-cost solution?
 - **Time complexity:** How many nodes are generated?
 - **Space complexity:** How many nodes must be stored in memory simultaneously?
+
+> **⚠️ Warning:** Bidirectional search appears appealing (O(b^{d/2})), but it requires the goal state to be known in advance and actions to be reversible — conditions rarely met in practice.
+
+## Concept Comparison
+
+| Algorithm | Complete? | Optimal? | Time | Space | Strategy |
+|-----------|:---:|:---:|:---:|:---:|----------|
+| BFS | ✅ | ✅ (uniform cost) | O(b^{d+1}) | O(b^{d+1}) | FIFO queue |
+| DFS | ❌ (without cycle check) | ❌ | O(b^m) | O(bm) | LIFO stack |
+| IDDFS | ✅ | ✅ (uniform cost) | O(b^d) | O(bd) | Depth-limited iterations |
+| UCS | ✅ | ✅ (positive costs) | O(b^{1+⌊C*/ε⌋}) | O(b^{1+⌊C*/ε⌋}) | Priority queue by g(n) |
+| Bidirectional | ✅ | ✅ | O(b^{d/2}) | O(b^{d/2}) | Two simultaneous searches |
+
+## Quick Reference — State-Space Search Components
+
+| Component | Definition | Example (8-Puzzle) |
+|-----------|-----------|-------------------|
+| State space S | All configurations | All 9! / 2 = 181,440 tile arrangements |
+| Initial state s₀ | Starting config | Given scrambled puzzle |
+| Actions Actions(s) | Legal moves | {Up, Down, Left, Right} blank |
+| Transition Result(s,a) | Resulting state | Tile slides into blank position |
+| Goal test | Target check | Is state the goal configuration? |
+| Path cost c(s,a,s') | Step cost | 1 per move (uniform) |
+
+## Cross-Application Matrix
+
+| Search Method | ML Engineering | Computer Vision | NLP | Research |
+|--------------|:---:|:---:|:---:|:---:|
+| BFS | ⬜ | ⬜ | ⬜ | ✅ |
+| DFS | ⬜ | ⬜ | ✅ | ✅ |
+| IDDFS | ⬜ | ⬜ | ⬜ | ✅ |
+| UCS / Dijkstra | ✅ | ✅ | ⬜ | ✅ |
+| Bidirectional | ⬜ | ⬜ | ⬜ | ⬜ |
+
+## Chapter Quiz
+
+**Q1:** Which algorithm is guaranteed to find the optimal solution while using only O(bd) space?
+- A) BFS
+- B) DFS
+- C) IDDFS
+- D) UCS
+
+<details><summary>Answer</summary>C) IDDFS combines BFS's optimality with DFS's linear space requirements.</details>
+
+**Q2:** What makes DFS incomplete on infinite state spaces?
+- A) It uses too much memory
+- B) It may diverge down an infinite path
+- C) It cannot handle cycles
+- D) It only works on trees
+
+<details><summary>Answer</summary>B) DFS may follow an infinite path and never backtrack to find the goal. Cycle detection helps but doesn't solve the infinite-path problem.</details>
+
+**Q3:** Uniform-cost search reduces to BFS under what condition?
+- A) When the heuristic is admissible
+- B) When all step costs are equal
+- C) When the branching factor is 2
+- D) When using a FIFO queue
+
+<details><summary>Answer</summary>B) When all step costs are identical, UCS explores in breadth-first order since all nodes at the same depth have equal cost.</details>
 
 ## 2.6 Summary
 

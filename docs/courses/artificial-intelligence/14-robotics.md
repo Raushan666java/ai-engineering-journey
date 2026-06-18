@@ -1,8 +1,41 @@
 # Chapter 14: Robotics
 
+**Previous:** [Chapter 13: Computer Vision](13-computer-vision.md) | **Next:** [Chapter 15: Ethics of AI](15-ethics-ai.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) describe the hardware components of a robotic system; (2) implement Monte Carlo localization; (3) explain the SLAM problem and its solution approaches; (4) apply motion planning algorithms including RRT; (5) understand control theory fundamentals.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Robot Architecture | Sensing, estimation, planning, control | Embodied agent, actuators |
+| Sensors | Camera, LIDAR, IMU, GPS, encoders | Point cloud, odometry |
+| Localization | MCL (particle filter), Kalman filter | Belief, kidnapped robot, pose |
+| SLAM | EKF-SLAM, GraphSLAM | Landmarks, loop closure |
+| Motion Planning | C-space, RRT, RRT* | Collision-free, asymptotic optimality |
+| Control | PID, MPC | Feedback, proportional gain |
+| ROS | Nodes, topics, services, actions | Middleware, tf |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Robot Architecture] --> B[Sensors]
+    A --> C[Actuators]
+    A --> D[Localization]
+    D --> E[MCL / Particle Filter]
+    D --> F[Kalman Filter]
+    A --> G[SLAM]
+    G --> H[EKF-SLAM]
+    G --> I[GraphSLAM]
+    A --> J[Motion Planning]
+    J --> K[RRT / RRT*]
+    A --> L[Control]
+    L --> M[PID]
+    A --> N[ROS]
+```
 
 ## 14.1 Robot Definition and Architecture
 
@@ -131,6 +164,63 @@ ROS (Robot Operating System) is a middleware framework providing:
 ## 14.9 Applications
 
 Robotics applications span manufacturing (industrial arms, collaborative robots), logistics (autonomous warehouses, delivery), healthcare (surgical robots, rehabilitation), exploration (underwater, space, mining), and service (domestic cleaning, hospitality).
+
+> **💡 Pro Tip:** ROS 2 is the industry standard for robot development. Learn its node-based architecture and the `tf` transform system before writing any code — they make localization, planning, and visualization dramatically easier.
+
+## Concept Comparison
+
+| Task | Algorithm | State | Sensor | Online? |
+|------|-----------|:---:|:---:|:---:|
+| Localization | MCL (Particle Filter) | x, y, θ | Range finder | ✅ |
+| Localization | Extended Kalman Filter | x, y, θ | Various | ✅ |
+| SLAM | EKF-SLAM | Pose + landmarks | Camera/LIDAR | ✅ |
+| SLAM | GraphSLAM | Full trajectory | Camera/LIDAR | ❌ (batch) |
+| Planning | RRT | Configuration space | None | ✅ |
+| Planning | RRT* | Configuration space | None | ✅ (asymp. opt.) |
+
+## Quick Reference — PID Control
+
+| Term | Name | Effect | Formula |
+|:---:|------|--------|---------|
+| P | Proportional | Corrects current error | Kₚ e(t) |
+| I | Integral | Eliminates steady-state error | Kᵢ ∫e(t)dt |
+| D | Derivative | Dampens oscillations | K_d de/dt |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| MCL (Particle Filter) | ⬜ | ✅ | ⬜ | ✅ |
+| SLAM | ⬜ | ✅ | ⬜ | ✅ |
+| RRT Planning | ⬜ | ⬜ | ⬜ | ✅ |
+| PID Control | ⬜ | ⬜ | ⬜ | ✅ |
+| ROS | ⬜ | ⬜ | ⬜ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What problem does SLAM solve that localization alone does not?
+- A) SLAM determines the robot's absolute position; localization determines relative position
+- B) SLAM simultaneously builds a map and localizes within it, handling the mutual dependency
+- C) SLAM is faster than localization
+- D) SLAM requires GPS; localization does not
+
+<details><summary>Answer</summary>B) SLAM addresses the chicken-and-egg problem: to build a map you need to know where you are, and to know where you are you need a map. SLAM solves both simultaneously.</details>
+
+**Q2:** RRT* improves on RRT by providing what guarantee?
+- A) Faster convergence
+- B) Asymptotic optimality — the solution converges to the optimal path as samples → ∞
+- C) Deterministic paths
+- D) Guaranteed collision avoidance
+
+<details><summary>Answer</summary>B) RRT* reconnects the tree when better paths are found, providing asymptotic optimality. RRT only guarantees completeness, not optimality.</details>
+
+**Q3:** The PID term that eliminates steady-state error is:
+- A) Proportional
+- B) Integral
+- C) Derivative
+- D) Feedforward
+
+<details><summary>Answer</summary>B) The integral term accumulates past error over time, driving the system toward the setpoint even when proportional term alone leaves residual error.</details>
 
 ## 14.10 Summary
 

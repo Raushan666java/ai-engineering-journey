@@ -1,5 +1,7 @@
 # Chapter 8: Uncertainty and Probabilistic Reasoning
 
+**Previous:** [Chapter 7: Logical Reasoning and Inference](07-logical-reasoning.md) | **Next:** [Chapter 8: Planning](08-planning.md)
+
 ---
 
 ## Learning Objectives
@@ -9,6 +11,31 @@
 - Construct and interpret Bayesian Networks as a representation of probabilistic relationships.
 - Perform inference in Bayesian Networks using exact methods like Variable Elimination.
 - Understand the concept of independence and conditional independence.
+
+---
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Problem of Uncertainty | Partial observability, stochasticity | Random variable, joint distribution |
+| Probability Basics | Conditional probability, Bayes' Rule | Prior, posterior, likelihood |
+| Bayesian Networks | DAG, CPT, chain rule | Factorization, parent-child |
+| Inference | Variable elimination, sampling | Likelihood weighting, MCMC |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Uncertainty Sources] --> B[Probability Basics]
+    B --> C[Bayes' Rule]
+    A --> D[Bayesian Networks]
+    D --> E[CPT + Chain Rule]
+    D --> F[Inference]
+    F --> G[Variable Elimination]
+    F --> H[Likelihood Weighting]
+    F --> I[Gibbs Sampling / MCMC]
+```
 
 ---
 
@@ -27,6 +54,8 @@ In real-world environments, agents rarely have access to the complete state of t
 - **Joint Probability Distribution**: Specifies the probability of every possible combination of values for a set of random variables.
 - **Conditional Probability $P(A|B)$**: The probability of $A$ given that $B$ is known. $P(A|B) = \frac{P(A \wedge B)}{P(B)}$.
 - **Bayes' Rule**: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$. This is essential for diagnostic reasoning (finding the cause given the effect).
+
+> **One-Sentence Takeaway:** Bayesian Networks factorize the joint probability distribution into local conditional probabilities — representing complex probabilistic relationships with far fewer parameters than a full joint distribution table.
 
 ### Bayesian Networks
 A Bayesian Network is a directed acyclic graph (DAG) where:
@@ -63,6 +92,66 @@ def calculate_joint_prob(b, e, a, j, m, network):
     return p_b * p_e * p_a * p_j * p_m
 ```
 - **What it demonstrates**: How the network structure factorizes the joint distribution into smaller, manageable CPTs.
+
+---
+
+## Concept Comparison
+
+| Inference Method | Type | Exact? | Complexity | Best For |
+|-----------------|:---:|:---:|:---:|---------|
+| Variable Elimination | Exact | ✅ | O(exp treewidth) | Low treewidth BNs |
+| Likelihood Weighting | Approx | ❌ | O(N) | Rare evidence |
+| Rejection Sampling | Approx | ❌ | O(N / P(e)) | Easy-to-satisfy evidence |
+| Gibbs Sampling (MCMC) | Approx | ❌ | O(N × nodes) | High-dimensional posteriors |
+
+## Quick Reference — Probability Rules
+
+| Rule | Formula |
+|------|---------|
+| Joint Probability | P(A ∧ B) = P(A|B)P(B) |
+| Bayes' Rule | P(A|B) = P(B|A)P(A) / P(B) |
+| Chain Rule | P(X₁…Xₙ) = ∏ P(Xᵢ | X₁…Xᵢ₋₁) |
+| Law of Total Prob. | P(B) = Σ P(B|Aᵢ)P(Aᵢ) |
+| Conditional Independence | P(A,B|C) = P(A|C)P(B|C) |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| Bayes' Rule | ✅ | ✅ | ✅ | ✅ |
+| Bayesian Networks | ✅ | ✅ | ✅ | ✅ |
+| Variable Elimination | ⬜ | ⬜ | ⬜ | ✅ |
+| MCMC Sampling | ✅ | ✅ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** Bayes' Rule is most useful for what type of reasoning?
+- A) Forward (causal) reasoning
+- B) Backward (diagnostic) reasoning
+- C) Inductive reasoning
+- D) Abductive reasoning
+
+<details><summary>Answer</summary>B) Bayes' Rule computes P(cause|effect) from P(effect|cause) — diagnostic reasoning from evidence back to cause.</details>
+
+**Q2:** What does the chain rule for Bayesian Networks state?
+- A) P(X₁…Xₙ) = Π P(Xᵢ | Parents(Xᵢ))
+- B) P(X₁…Xₙ) = Π P(Xᵢ)
+- C) P(A|B) = P(B|A)P(A)
+- D) P(A ∧ B) = P(A)P(B)
+
+<details><summary>Answer</summary>A) The BN chain rule factorizes the joint as the product of each node's probability conditioned on its parents.</details>
+
+**Q3:** Variable elimination complexity depends on what?
+- A) Number of variables
+- B) Treewidth of the network
+- C) Number of evidence variables
+- D) Number of CPT entries
+
+<details><summary>Answer</summary>B) Complexity is exponential in the treewidth — the size of the largest intermediate factor during elimination.</details>
+
+---
+
+> **💡 Pro Tip:** When modeling real-world problems with Bayesian networks, focus on getting the qualitative structure (DAG) right — conditional independence assumptions matter far more than precise probability numbers. Use noisy-OR/MAX for efficient parameterization of causal relationships.
 
 ---
 

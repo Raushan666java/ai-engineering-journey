@@ -1,8 +1,35 @@
 # Chapter 18: Applications of Artificial Intelligence
 
+**Previous:** [Chapter 17: Modern Artificial Intelligence](17-modern-ai.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) describe major AI application domains; (2) explain how AI systems are deployed in healthcare, finance, and transportation; (3) analyze the limitations and risks of AI in high-stakes settings; (4) evaluate the societal impact of AI applications.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Healthcare | Medical diagnosis, drug discovery, AlphaFold | Clinical AI, FDA approval |
+| Finance | Fraud detection, algorithmic trading | High-frequency trading, risk model |
+| Transportation | Autonomous vehicles, traffic prediction | Perception stack, motion planning |
+| Education | Personalized learning, intelligent tutoring | Knowledge tracing |
+| Creative AI | Art, music, generative tools | Style transfer, co-creation |
+| Risks | Adversarial, bias, safety-critical | Failure modes, edge cases |
+| Societal Impact | Labor, inequality, regulation | Responsible AI |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[AI Applications] --> B[Healthcare]
+    A --> C[Finance]
+    A --> D[Transportation]
+    A --> E[Education]
+    A --> F[Creative AI]
+    A --> G[Risks / Limitations]
+    A --> H[Societal Impact]
+```
 
 ## 18.1 Healthcare
 
@@ -143,6 +170,64 @@ AI accelerates scientific discovery across disciplines:
 - **Climate science:** Climate modeling, weather prediction, emissions monitoring.
 
 **AI-driven research systems** like **AlphaFold**, **GNoME** (materials discovery), and **GraphCast** (weather prediction) demonstrate that AI can contribute to fundamental scientific advances.
+
+> **💡 Pro Tip:** When deploying AI in high-stakes domains (healthcare, autonomous driving), build in redundancy — use ensemble models, out-of-distribution detection, and human-in-the-loop approval for any decision above a confidence threshold.
+
+## Concept Comparison
+
+| Domain | Primary AI Task | Success Metrics | Key Challenge |
+|--------|----------------|:---:|---------------|
+| Healthcare | Diagnosis, drug discovery | Sensitivity, specificity, AUC | Regulatory approval, liability |
+| Finance | Fraud detection, trading | F1 score, Sharpe ratio | Adversarial dynamics |
+| Transportation | Perception, planning | Disengagement rate, MPdI | Safety certification |
+| Education | Personalization, assessment | Learning gain, retention | Generalization across curricula |
+| Creative | Generation, style transfer | Human evaluation, novelty | Copyright, authenticity |
+
+## Quick Reference — Deployment Considerations
+
+| Factor | Question | Mitigation |
+|--------|---------|------------|
+| Data Quality | Does training data match deployment distribution? | OOD detection, monitoring |
+| Latency | Can inference meet real-time requirements? | Quantization, distillation |
+| Interpretability | Can decisions be explained? | LIME, SHAP, attention maps |
+| Robustness | Does performance degrade gracefully? | Adversarial training |
+| Compliance | Does the system meet regulatory requirements? | Audit trails, fairness metrics |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| Medical Diagnosis AI | ⬜ | ✅ | ⬜ | ✅ |
+| Fraud Detection | ✅ | ⬜ | ✅ | ✅ |
+| Autonomous Vehicles | ✅ | ✅ | ⬜ | ✅ |
+| Personalized Learning | ✅ | ⬜ | ✅ | ✅ |
+| Generative AI | ✅ | ✅ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What is the primary challenge for AI in healthcare compared to other domains?
+- A) Healthcare has too much data
+- B) Regulatory approval (FDA), clinical validation, and liability for misdiagnosis create high deployment barriers
+- C) AI models are not accurate enough
+- D) Doctors refuse to use technology
+
+<details><summary>Answer</summary>B) Healthcare AI faces the highest regulatory bar (FDA approval), requires prospective clinical validation, and must address liability for diagnostic errors before deployment.</details>
+
+**Q2:** Why is fraud detection in finance an adversarial ML problem?
+- A) The data is too noisy
+- B) Fraudsters actively adapt their strategies to evade detection, requiring continuous retraining
+- C) Financial models are too complex
+- D) Regulators require it
+
+<details><summary>Answer</summary>B) Fraud is adversarial — as detection improves, fraudsters change tactics, creating a constant arms race that requires adaptive models and continuous monitoring.</details>
+
+**Q3:** A critical safety challenge for autonomous vehicles is:
+- A) Battery life
+- B) Handling long-tail edge cases (unusual road conditions, rare objects, extreme weather) that are underrepresented in training data
+- C) Passenger comfort
+- D) Internet connectivity
+
+<details><summary>Answer</summary>B) The long-tail problem — real driving involves rare but critical edge cases — is the primary safety challenge, addressed through extensive simulation and scenario-based testing.</details>
 
 ## 18.9 Summary
 

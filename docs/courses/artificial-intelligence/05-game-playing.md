@@ -1,14 +1,43 @@
 # Chapter 5: Game Playing and Adversarial Search
 
+**Previous:** [Chapter 5: Constraint Satisfaction Problems](05-csp.md) | **Next:** [Chapter 6: Logical Agents and Propositional Logic](06-logic.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) formulate game problems as game trees with utility functions; (2) implement the minimax algorithm; (3) apply alpha-beta pruning to improve search efficiency; (4) implement Monte Carlo tree search; (5) adapt search algorithms for stochastic and imperfect information games.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Game Theory & Trees | State space, utility, terminal test | Game tree, zero-sum, perfect info |
+| Minimax Algorithm | Optimal play, MAX/MIN, depth-limited | Evaluation function, backup |
+| Alpha-Beta Pruning | α/β bounds, move ordering | Killer heuristic, iterative deepening |
+| Games of Chance | Expectiminimax, chance nodes | Stochastic games, expected value |
+| MCTS | Selection, expansion, simulation, backprop | UCT, exploration constant |
+| Imperfect Information | Belief states, determinization | Nash equilibrium, CFR |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Game Tree] --> B[Minimax]
+    B --> C[Alpha-Beta Pruning]
+    B --> D[Expectiminimax]
+    B --> E[MCTS]
+    C --> F[Move Ordering]
+    E --> G[UCT Selection]
+    E --> H[Backpropagation]
+    A --> I[Imperfect Info Games]
+```
 
 ## 5.1 Game Theory and Game Trees
 
 ![Game Playing and Adversarial Search](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch05-game-playing.png)
 
 Games provide a formal model of multi-agent decision-making where agents have conflicting objectives. In **deterministic, turn-taking, zero-sum games**, two players alternate moves, the payoff to one player is the negative of the payoff to the other, and no randomness intervenes.
+
+> **One-Sentence Takeaway:** A game is formally defined by its state space, player function, actions, transition model, terminal test, and utility function — forming a game tree of all possible play sequences.
 
 A **game** is formally defined by:
 - **State space** $\mathcal{S}$; initial state $s_0$.
@@ -54,6 +83,8 @@ function MIN-VALUE(state) returns utility value
 
 Minimax explores the entire game tree. For games like chess ($b \approx 35$, $d \approx 100$), exhaustive search is infeasible. **Depth-limited search** replaces the utility function with an evaluation function $Eval(s)$ that estimates the state's value.
 
+> **💡 Pro Tip:** With optimal move ordering, alpha-beta doubles the searchable depth — the best moves examined first produces the most pruning. Always combine iterative deepening with a transposition table to reuse previous search results.
+
 ## 5.3 Alpha-Beta Pruning
 
 Alpha-beta pruning reduces the number of nodes evaluated by maintaining two bounds:
@@ -91,6 +122,8 @@ Pruning efficiency depends critically on the order in which moves are examined. 
 ## 5.4 Transposition Tables
 
 Transpositions are different move sequences leading to the same state. A **transposition table** (implemented as a hash table keyed by state) stores the evaluation of previously visited states, avoiding redundant computation. Zobrist hashing (1970) provides efficient incremental hashing for board games.
+
+> **⚠️ Warning:** Expectiminimax is computationally expensive — it evaluates all outcomes at chance nodes. The branching factor multiplies by the number of chance outcomes, making it significantly slower than minimax on deterministic games.
 
 ## 5.5 Games of Chance
 
@@ -131,6 +164,61 @@ In games with hidden information (e.g., poker, bridge), players must reason abou
 - **Belief states:** Represent the set of possible states consistent with observations.
 - **Determinization:** Replace the hidden information with a specific hypothesis (e.g., assume a particular card distribution) and solve the resulting perfect-information game.
 - **Game theory:** Compute Nash equilibrium strategies via linear programming or counterfactual regret minimization (CFR).
+
+## Concept Comparison
+
+| Algorithm | Type | State Space | Optimality | Key Metric |
+|-----------|:---:|:---:|:---:|:---:|
+| Minimax | Deterministic | Full tree | ✅ | Utility value |
+| Alpha-Beta | Deterministic | Pruned tree | ✅ | α/β bounds |
+| Expectiminimax | Stochastic | Full tree | ✅ (expected) | Expected value |
+| MCTS | Anytime | Sampled tree | Asymptotic | Visit count, win rate |
+| UCT | Anytime | Sampled tree | Asymptotic | Upper confidence bound |
+
+## Quick Reference — Game Complexity
+
+| Game | Branching Factor (b) | Game Depth (d) | Tree Size (b^d) | Feasible Method |
+|------|:---:|:---:|:---:|:---:|
+| Tic-Tac-Toe | ~4 | 9 | ~4×10⁵ | Minimax (full) |
+| Chess | ~35 | ~100 | ~10¹⁵⁴ | Alpha-Beta + Eval |
+| Go | ~250 | ~150 | ~10³⁶⁰ | MCTS + DNN |
+| Poker (no-limit) | ~10⁴ | Variable | N/A | CFR |
+
+## Cross-Application Matrix
+
+| Technique | ML Engineering | Computer Vision | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| Minimax | ⬜ | ⬜ | ⬜ | ✅ |
+| Alpha-Beta | ⬜ | ⬜ | ⬜ | ✅ |
+| MCTS | ✅ | ⬜ | ⬜ | ✅ |
+| Expectiminimax | ⬜ | ⬜ | ⬜ | ✅ |
+| CFR (Game Theory) | ⬜ | ⬜ | ⬜ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What is the primary advantage of MCTS over alpha-beta search?
+- A) MCTS is always faster
+- B) MCTS handles much larger branching factors through selective sampling
+- C) MCTS guarantees optimality
+- D) MCTS does not need evaluation functions
+
+<details><summary>Answer</summary>B) MCTS handles large branching factors through selective sampling guided by UCT, making it suitable for games like Go where alpha-beta is infeasible.</details>
+
+**Q2:** The UCT selection formula balances what two factors?
+- A) Game score and heuristic value
+- B) Exploration and exploitation
+- C) Tree depth and node count
+- D) Win rate and time remaining
+
+<details><summary>Answer</summary>B) UCT balances exploitation (win rate w_i/n_i) with exploration (c√(ln N/n_i)) through its two-term formula.</details>
+
+**Q3:** How does expectiminimax differ from minimax?
+- A) It adds chance nodes with expected values
+- B) It uses random sampling instead of evaluation
+- C) It only works for perfect information games
+- D) It prunes more aggressively
+
+<details><summary>Answer</summary>A) Expectiminimax adds chance nodes where the value is the weighted sum (expectation) over probabilistic outcomes.</details>
 
 ## 5.8 Summary
 

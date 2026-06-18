@@ -1,8 +1,40 @@
 # Chapter 16: Expert Systems
 
+**Previous:** [Chapter 15: Ethics of AI](15-ethics-ai.md) | **Next:** [Chapter 17: Modern Artificial Intelligence](17-modern-ai.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) describe the architecture of rule-based expert systems; (2) explain the reasoning mechanisms of MYCIN and DENDRAL; (3) implement a simple rule-based system in CLIPS; (4) manage uncertainty using certainty factors and Dempster-Shafer theory; (5) evaluate the limitations of expert system technology.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Expert System Architecture | KB, inference engine, user interface | Knowledge base, production rules |
+| Inference Strategies | Forward chaining, backward chaining | Modus ponens, goal-driven |
+| MYCIN | Medical diagnosis, certainty factors | CF, infectious disease |
+| DENDRAL | Mass spectrometry, hypothesis generation | Plan-generate-test |
+| CLIPS | Rule-based programming, fact lists | Rete algorithm |
+| Uncertainty | Certainty factors, Dempster-Shafer | Belief functions |
+| Limitations | Brittleness, knowledge acquisition bottleneck | Maintenance, narrow expertise |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Expert System Arch] --> B[Knowledge Base]
+    A --> C[Inference Engine]
+    C --> D[Forward Chaining]
+    C --> E[Backward Chaining]
+    A --> F[Classic Systems]
+    F --> G[MYCIN]
+    F --> H[DENDRAL]
+    A --> I[CLIPS / Rete]
+    A --> J[Uncertainty Management]
+    J --> K[Certainty Factors]
+    J --> L[Dempster-Shafer]
+    A --> M[Limitations]
+```
 
 ## 16.1 Expert System Architecture
 
@@ -130,6 +162,61 @@ Dempster-Shafer can represent ignorance explicitly (unlike Bayesian approaches) 
 6. **Scalability:** The number of rules required for broad coverage grows rapidly.
 
 Despite these limitations, expert systems remain in use for specific applications where explainability and maintainability are paramount.
+
+> **💡 Pro Tip:** Expert systems remain useful in domains with stable, well-documented knowledge and high explainability requirements (e.g., tax preparation, medical guidelines, configurators). For domains where knowledge changes rapidly, modern ML systems are a better fit.
+
+## Concept Comparison
+
+| System | Domain | Reasoning | Uncertainty? | Status |
+|--------|--------|:---:|:---:|:---:|
+| MYCIN | Infectious disease diagnosis | Backward chaining | Certainty factors | Historical |
+| DENDRAL | Organic chemistry (mass spec) | Plan-generate-test | ❌ | Historical |
+| XCON/R1 | Computer configuration | Forward chaining (Rete) | ❌ | Deployed (1980s) |
+| CLIPS | General purpose | Forward/backward with Rete | ✅ | Open source |
+| Prolog | Logic programming | Backward chaining (SLD) | ❌ | Research/edu |
+
+## Quick Reference — Inference Engine Strategies
+
+| Strategy | Direction | Mechanism | Start Point |
+|:---:|:---:|:---:|:---:|
+| Forward Chaining | Data → Goal | Match → Fire → Repeat | Known facts |
+| Backward Chaining | Goal → Data | Hypothesize → Verify → Repeat | Hypothesis/goal |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| Rule-Based Systems | ⬜ | ⬜ | ✅ | ✅ |
+| Forward Chaining | ⬜ | ⬜ | ⬜ | ✅ |
+| Backward Chaining | ⬜ | ⬜ | ⬜ | ✅ |
+| Certainty Factors | ⬜ | ⬜ | ⬜ | ✅ |
+| Dempster-Shafer | ✅ | ⬜ | ⬜ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What is the key difference between forward and backward chaining in expert systems?
+- A) Forward chaining is faster; backward chaining is more accurate
+- B) Forward chaining starts from known facts and applies rules to reach conclusions; backward chaining starts from a hypothesis and works backward to find supporting facts
+- C) Forward chaining uses rules; backward chaining uses frames
+- D) There is no difference
+
+<details><summary>Answer</summary>B) Forward chaining is data-driven (facts → conclusions), while backward chaining is goal-driven (hypothesis → supporting evidence).</details>
+
+**Q2:** MYCIN's certainty factors handle uncertainty by:
+- A) Using probability theory
+- B) Combining belief and disbelief measures into a single CF value ranging from -1 to +1
+- C) Applying fuzzy logic
+- D) Using Bayesian networks
+
+<details><summary>Answer</summary>B) MYCIN certainty factors represent the net belief in a hypothesis as CF = MB - MD, where MB is measure of belief (0 to 1) and MD is measure of disbelief (0 to 1).</details>
+
+**Q3:** A classic limitation of expert systems is:
+- A) They cannot handle numerical data
+- B) The knowledge acquisition bottleneck — gathering and encoding expert knowledge is expensive and time-consuming
+- C) They are too fast
+- D) They require GPUs
+
+<details><summary>Answer</summary>B) Expert systems suffer from the knowledge acquisition bottleneck: extracting, formalizing, and maintaining expert knowledge is labor-intensive and limits scalability.</details>
 
 ## 16.9 Summary
 

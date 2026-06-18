@@ -1,8 +1,40 @@
 # Chapter 12: Natural Language Processing
 
+**Previous:** [Chapter 11: Reinforcement Learning](11-reinforcement-learning.md) | **Next:** [Chapter 13: Computer Vision](13-computer-vision.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) define language models and evaluate them using perplexity; (2) implement n-gram models with smoothing; (3) apply HMMs and CRFs for sequence labeling; (4) implement the CKY algorithm for parsing; (5) use modern NLP toolkits for standard tasks.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Language Models | N-gram, smoothing, perplexity | Chain rule, Kneser-Ney |
+| Text Classification | Naive Bayes, logistic regression | Bag-of-words, features |
+| POS Tagging | HMM, Viterbi, CRF | BIO encoding, label bias |
+| NER | Named entities, sequence labeling | Person/Org/Location |
+| Parsing | CFG, CNF, CKY, PCFG | Parse tree, constituency |
+| Lexical Semantics | WordNet, WSD | Synset, hypernymy |
+| Discourse | Coherence, discourse relations | PDTB |
+| Toolkits | NLTK, spaCy, HuggingFace | Pre-trained models |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Language Models] --> B[N-Grams]
+    A --> C[Perplexity]
+    A --> D[Text Classification]
+    D --> E[Naive Bayes]
+    A --> F[Seq Labeling]
+    F --> G[HMM POS]
+    F --> H[CRF]
+    A --> I[Parsing]
+    I --> J[CKY Algorithm]
+    I --> K[PCFG]
+    A --> L[Toolkits]
+```
 
 ## 12.1 Language Models
 
@@ -121,6 +153,65 @@ Discourse analysis examines how sentences connect to form coherent text. **Disco
 **spaCy:** Industrial-strength NLP library with pre-trained models for tokenization, POS tagging, NER, dependency parsing, and word vectors. Optimized for performance.
 
 **Hugging Face Transformers:** Library providing pre-trained transformer models (BERT, GPT, RoBERTa, T5) with unified interfaces for transfer learning.
+
+> **💡 Pro Tip:** CRFs almost always outperform HMMs for sequence labeling because they model conditional probability P(t|w) directly and can use arbitrary overlapping features. However, CRF training is slower — use HMMs for quick prototypes and CRFs for production.
+
+## Concept Comparison
+
+| Method | Generative/Discriminative? | Features | Complexity | Best For |
+|--------|:---:|:---:|:---:|---------|
+| N-gram LM | Generative | Word counts | O(V^n) | Language modeling |
+| Naive Bayes | Generative | Word features | O(V × C) | Text classification |
+| HMM | Generative | Tag transitions+emissions | O(T n²) | POS tagging |
+| CRF | Discriminative | Arbitrary overlapping | O(T n²) training | NER, shallow parsing |
+| PCFG | Generative | Rule probabilities | O(n³ |G|) | Parsing |
+
+## Quick Reference — NLP Metrics
+
+| Metric | Formula | What It Measures |
+|--------|---------|-----------------|
+| Perplexity | P(w₁…wₙ)^{-1/n} | Language model quality (lower = better) |
+| Precision | TP / (TP + FP) | How many selected are relevant |
+| Recall | TP / (TP + FN) | How many relevant are selected |
+| F1 Score | 2 × P × R / (P + R) | Harmonic mean of P and R |
+| Tag Accuracy | Correct tags / Total tags | Sequence labeling quality |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| N-gram LMs | ⬜ | ⬜ | ✅ | ✅ |
+| Naive Bayes | ✅ | ✅ | ✅ | ✅ |
+| HMM/Viterbi | ⬜ | ⬜ | ✅ | ✅ |
+| CRF | ⬜ | ⬜ | ✅ | ✅ |
+| CKY Parsing | ⬜ | ⬜ | ✅ | ✅ |
+| Transformers | ✅ | ✅ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What problem does Kneser-Ney smoothing solve that Laplace (add-1) smoothing does not?
+- A) It is faster to compute
+- B) It better handles unseen n-grams by discounting and interpolating with lower-order models
+- C) It only works for bigrams
+- D) It guarantees integer counts
+
+<details><summary>Answer</summary>B) Kneser-Ney uses absolute discounting and interpolation with lower-order models, producing much better probability estimates for unseen n-grams than add-1 smoothing.</details>
+
+**Q2:** What is the key advantage of CRFs over HMMs for sequence labeling?
+- A) CRFs are faster to train
+- B) CRFs model P(t|w) directly and support arbitrary overlapping features without independence assumptions
+- C) CRFs require less training data
+- D) CRFs always produce higher accuracy
+
+<details><summary>Answer</summary>B) CRFs are discriminative and can use arbitrary overlapping features, while HMMs require independence assumptions between observations given the state.</details>
+
+**Q3:** The CKY algorithm requires the grammar to be in what normal form?
+- A) Greibach Normal Form
+- B) Chomsky Normal Form
+- C) Kuroda Normal Form
+- D) Backus-Naur Form
+
+<details><summary>Answer</summary>B) CKY parsing requires the CFG to be in Chomsky Normal Form (rules are A → BC or A → w).</details>
 
 ## 12.9 Summary
 

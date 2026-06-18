@@ -1,8 +1,40 @@
 # Chapter 9: Reasoning Under Uncertainty
 
+**Previous:** [Chapter 8: Planning](08-planning.md) | **Next:** [Chapter 9: Machine Learning](09-machine-learning.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) apply probability theory to represent uncertain knowledge; (2) construct and query Bayesian networks; (3) analyze conditional independence using d-separation; (4) implement exact and approximate inference in Bayesian networks; (5) model temporal processes using dynamic Bayesian networks and hidden Markov models.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Foundations | Probability space, Bayes' rule, independence | Prior, posterior, conditionally independent |
+| Bayesian Networks | DAG, CPT, chain rule | Parents, factorization |
+| Inference | Variable elimination, rejection/likelihood/Gibbs | Belief propagation, MCMC |
+| d-Separation | Chains, forks, colliders | Active path, Markov blanket |
+| Dynamic BN | Temporal processes, transition model | Markov assumption, state evolution |
+| HMM | Transition, emission, Viterbi | Forward-backward, decoding |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Probability Foundations] --> B[Bayes' Rule]
+    A --> C[Bayesian Networks]
+    C --> D[CPT + Chain Rule]
+    C --> E[Exact Inference]
+    C --> F[Approximate Inference]
+    E --> G[Variable Elimination]
+    F --> H[Rejection Sampling]
+    F --> I[Likelihood Weighting]
+    F --> J[Gibbs / MCMC]
+    C --> K[d-Separation]
+    A --> L[Dynamic BN]
+    L --> M[HMM]
+    M --> N[Forward-Backward / Viterbi]
+```
 
 ## 9.1 Foundations of Probability
 
@@ -119,6 +151,63 @@ A **Hidden Markov Model (HMM)** is a DBN with a single discrete state variable a
 - **Emission matrix:** $E_{ik} = P(E_t = k \mid X_t = i)$
 
 The HMM representation requires $O(n^2)$ parameters and supports $O(n^2)$ inference per time step, where $n$ is the number of states.
+
+> **💡 Pro Tip:** Always check the treewidth before committing to exact inference. If the network's moral graph has high treewidth, switch to approximate methods (likelihood weighting or Gibbs sampling) — they scale far better.
+
+> **⚠️ Warning:** d-separation distinguishes colliders from chains/forks. Conditioning on a collider opens the path (creates dependence), while conditioning on a chain or fork blocks it. This is counterintuitive but critical for understanding BN structure.
+
+## Concept Comparison
+
+| Inference Method | Exact? | Guarantee | Complexity | Handles Evidence |
+|-----------------|:---:|:---:|:---:|:---:|
+| Variable Elimination | ✅ | Exact | O(exp treewidth) | Yes |
+| Rejection Sampling | ❌ | Asymptotic | O(N / P(e)) | Rare evidence fails |
+| Likelihood Weighting | ❌ | Asymptotic | O(N) | Yes |
+| Gibbs Sampling (MCMC) | ❌ | Asymptotic | O(N × vars) | Yes |
+
+## Quick Reference — d-Separation Rules
+
+| Structure | Path Type | Condition to Block Path |
+|-----------|:---:|:---:|
+| Chain (X → Z → Y) | Serial | Evidence on Z |
+| Fork (X ← Z → Y) | Diverging | Evidence on Z |
+| Collider (X → Z ← Y) | Converging | No evidence on Z or descendants |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| Bayesian Networks | ✅ | ✅ | ✅ | ✅ |
+| Variable Elimination | ⬜ | ⬜ | ⬜ | ✅ |
+| Gibbs Sampling | ✅ | ✅ | ✅ | ✅ |
+| HMM | ⬜ | ⬜ | ✅ | ✅ |
+| Viterbi | ⬜ | ⬜ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** In d-separation, what happens when you condition on a collider?
+- A) The path becomes blocked
+- B) The path becomes unblocked (creates dependence)
+- C) The collider becomes independent of its parents
+- D) Nothing changes
+
+<details><summary>Answer</summary>B) Conditioning on a collider opens the path, creating dependence between its parents (explaining away).</details>
+
+**Q2:** The HMM forward algorithm computes what quantity?
+- A) The most likely state sequence
+- B) The belief state P(X_t | e_{1:t}) recursively
+- C) The posterior over all hidden states jointly
+- D) The entropy of the observation distribution
+
+<details><summary>Answer</summary>B) The forward algorithm recursively computes the belief state (filtering distribution) at each time step.</details>
+
+**Q3:** Likelihood weighting fixes evidence variables. What problem does it still face?
+- A) It cannot handle continuous variables
+- B) If evidence has low probability, most samples have low weight (inefficient)
+- C) It does not converge to the true posterior
+- D) It requires the network to be a tree
+
+<details><summary>Answer</summary>B) Likelihood weighting is inefficient when evidence has low prior probability because most samples receive negligible weight.</details>
 
 ## 9.7 Summary
 

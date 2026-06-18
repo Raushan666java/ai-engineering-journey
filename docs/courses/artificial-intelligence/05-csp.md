@@ -1,5 +1,7 @@
 # Chapter 5: Constraint Satisfaction Problems
 
+**Previous:** [Chapter 4: Constraint Satisfaction Problems](04-csp.md) | **Next:** [Chapter 5: Game Playing and Adversarial Search](05-game-playing.md)
+
 ---
 
 ## Learning Objectives
@@ -12,11 +14,36 @@
 
 ---
 
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Formal Definition | Variables X, domains D, constraints C | Consistent, complete assignment, solution |
+| Backtracking Search | DFS, constraint checking | Chronological backtracking |
+| Constraint Propagation | AC-3, node/arc/path consistency | Domain reduction, inference |
+| Search Heuristics | MRV, degree, LCV | Fail-first, branching factor |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[CSP Definition] --> B[Backtracking Search]
+    A --> C[Constraint Propagation]
+    B --> D[MRV Heuristic]
+    B --> E[LCV Heuristic]
+    C --> F[AC-3 Algorithm]
+    C --> G[Forward Checking]
+```
+
+---
+
 ## Theory
 
 ![CSP Advanced Topics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch05-csp.png)
 
 ### Formal Definition of CSP
+> **One-Sentence Takeaway:** A CSP is a triple (X, D, C) where the goal is a complete, consistent assignment of values to all variables subject to constraints.
+
 A Constraint Satisfaction Problem (CSP) consists of:
 - **X**: A set of variables $\{X_1, X_2, ..., X_n\}$.
 - **D**: A set of domains $\{D_1, D_2, ..., D_n\}$, one for each variable.
@@ -76,6 +103,68 @@ Applying arc consistency to a small problem.
   2. Check arc $(Y, X)$. For $Y=1$, no $X$ works (since $D_X$ is now $\{1\}$). Remove 1 from $D_Y$.
 - **Result**: $D_X = \{1\}, D_Y = \{2\}$. The solution is found by propagation alone.
 - **What it demonstrates**: How constraints prune domains before search even begins.
+
+---
+
+## Concept Comparison
+
+| Propagation Method | Pruning Power | Computation | When Applied |
+|-------------------|:---:|:---:|:---:|
+| Forward Checking | Moderate | Low | After each variable assignment |
+| AC-3 (Arc Consistency) | Strong | Moderate | Before/during search |
+| Path Consistency | Very Strong | High | Preprocessing |
+| MAC | Strongest | High | Interleaved with search |
+
+## Quick Reference — CSP Search & Propagation
+
+| Concept | Definition | Benefit |
+|---------|-----------|---------|
+| Node Consistency | All values satisfy unary constraints | Basic domain cleaning |
+| Arc Consistency (AC-3) | Every value has a consistent partner | Early failure detection |
+| Backtracking | DFS with constraint checking | Complete search |
+| MRV | Choose most constrained variable | Minimizes branching factor |
+| LCV | Choose least constraining value | Keeps options open |
+| Forward Checking | Propagate after each assignment | Prunes future assignments |
+
+## Cross-Application Matrix
+
+| Technique | ML Engineering | Computer Vision | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| CSP Formulation | ✅ | ✅ | ✅ | ✅ |
+| Backtracking Search | ⬜ | ⬜ | ⬜ | ✅ |
+| AC-3 Propagation | ⬜ | ⬜ | ⬜ | ✅ |
+| MRV/LCV Heuristics | ⬜ | ⬜ | ⬜ | ✅ |
+| Forward Checking | ⬜ | ⬜ | ⬜ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What makes a CSP assignment "complete"?
+- A) It satisfies all constraints
+- B) Every variable is assigned a value
+- C) The domain is non-empty
+- D) No backtracking is needed
+
+<details><summary>Answer</summary>B) A complete assignment assigns every variable in X. A solution requires both completeness and consistency.</details>
+
+**Q2:** The AC-3 algorithm maintains a queue of what?
+- A) Variables
+- B) Arcs (directed constraints between variable pairs)
+- C) Domains
+- D) Solutions
+
+<details><summary>Answer</summary>B) AC-3 maintains a queue of arcs (X_i, X_j) representing directed constraints to be revised.</details>
+
+**Q3:** What is the difference between MRV and LCV?
+- A) MRV selects the variable; LCV selects the value
+- B) Both select variables but with different criteria
+- C) MRV is for binary CSPs; LCV for n-ary
+- D) They are the same heuristic
+
+<details><summary>Answer</summary>A) MRV is a variable-ordering heuristic; LCV is a value-ordering heuristic applied after a variable is chosen.</details>
+
+---
+
+> **💡 Pro Tip:** For real-world CSPs, start with the most constrained variable (MRV) and use AC-3 or GAC for consistency enforcement — these heuristics alone solve most practical problems without needing full backtracking search.
 
 ---
 

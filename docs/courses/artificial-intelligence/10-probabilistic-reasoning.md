@@ -1,8 +1,39 @@
 # Chapter 10: Probabilistic Reasoning Over Time
 
+**Previous:** [Chapter 10: Neural Networks and Deep Learning](10-deep-learning.md) | **Next:** [Chapter 11: Reinforcement Learning](11-reinforcement-learning.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) formulate temporal models for filtering, prediction, and smoothing; (2) implement the forward-backward algorithm for HMMs; (3) apply the Viterbi algorithm for most likely state sequences; (4) implement particle filtering for approximate inference; (5) formulate and solve Markov decision processes.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Temporal Models | Transition/sensor model, stationarity | Filtering, prediction, smoothing |
+| HMM | Forward/backward algorithms, Viterbi | Belief state, decoding |
+| Particle Filtering | Weighted samples, resampling | Monte Carlo localization |
+| Kalman Filters | Linear Gaussian, EKF | Prediction-correction cycle |
+| Decision Theory | Utility, MEU principle | Expected utility |
+| Decision Networks | Decision/utility/chance nodes | Influence diagram |
+| MDP | States, actions, rewards, γ | Policy, value function |
+| Value/Policy Iteration | Bellman equation, convergence | Dynamic programming |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Temporal Models] --> B[Filtering/Prediction/Smoothing]
+    A --> C[HMM]
+    C --> D[Forward Algorithm]
+    C --> E[Backward Algorithm]
+    C --> F[Viterbi Decoding]
+    A --> G[Particle Filtering]
+    A --> H[Kalman Filter]
+    A --> I[MDP]
+    I --> J[Value Iteration]
+    I --> K[Policy Iteration]
+```
 
 ## 10.1 Temporal Models
 
@@ -146,6 +177,69 @@ Policy iteration alternates between policy evaluation and policy improvement:
 2. **Policy improvement:** $\pi'(s) = \arg\max_a \sum_{s'} P(s' \mid s, a) [R(s, a, s') + \gamma V^\pi(s')]$.
 
 Policy iteration typically converges in fewer iterations than value iteration.
+
+> **💡 Pro Tip:** Particle filtering is the go-to method for robot localization (MCL). Start with 1000 particles and tune the number based on the ratio of successful convergences vs wall-clock time.
+
+> **⚠️ Warning:** The Markov assumption (state depends only on immediate predecessor) is often violated in practice. Always verify that your temporal model captures the relevant time scale — multi-step dependencies may require higher-order models or recurrent architectures.
+
+## Concept Comparison
+
+| Algorithm | State Space | Exact? | Complexity | Use Case |
+|-----------|:---:|:---:|:---:|---------|
+| Forward Algorithm | Discrete | ✅ | O(T n²) | Filtering (HMM) |
+| Viterbi | Discrete | ✅ | O(T n²) | Most likely path |
+| Forward-Backward | Discrete | ✅ | O(T n²) | Smoothing |
+| Particle Filter | Continuous | ❌ | O(T N) | Localization |
+| Kalman Filter | Linear Gaussian | ✅ | O(d³) | Tracking |
+| Value Iteration | Discrete | ✅ | O( |S|² |A|) | MDP solving |
+| Policy Iteration | Discrete | ✅ | O( |S|³) | MDP solving |
+
+## Quick Reference — MDP Components
+
+| Component | Symbol | Description |
+|-----------|:---:|-------------|
+| State | s ∈ 𝒮 | Possible configurations |
+| Action | a ∈ 𝒜 | Agent choices |
+| Transition | P(s'|s,a) | Dynamics model |
+| Reward | R(s,a,s') | Immediate feedback |
+| Discount | γ ∈ [0,1) | Future reward weight |
+| Policy | π(s) → a | Action selection rule |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| HMM / Forward-Backward | ⬜ | ⬜ | ✅ | ✅ |
+| Viterbi Decoding | ⬜ | ⬜ | ✅ | ✅ |
+| Particle Filtering | ⬜ | ✅ | ⬜ | ✅ |
+| Kalman Filter | ✅ | ✅ | ⬜ | ✅ |
+| MDP / Value Iteration | ✅ | ✅ | ⬜ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What is the difference between filtering and smoothing?
+- A) Filtering uses the past; smoothing uses the future
+- B) Filtering estimates P(X_t|e_{1:t}); smoothing estimates P(X_k|e_{1:t}) for k < t
+- C) Filtering is approximate; smoothing is exact
+- D) There is no difference
+
+<details><summary>Answer</summary>B) Filtering estimates the current state given all evidence up to now; smoothing estimates a past state given all evidence.</details>
+
+**Q2:** The Viterbi algorithm computes:
+- A) P(X_t | e_{1:t})
+- B) The most likely state sequence argmax P(x_{1:t} | e_{1:t})
+- C) P(e_{1:t} | X_t)
+- D) The expected reward
+
+<details><summary>Answer</summary>B) Viterbi finds the single most probable state trajectory given observations via dynamic programming.</details>
+
+**Q3:** What does the Bellman equation in value iteration express?
+- A) The optimal action for each state
+- B) The current state's value as immediate reward plus discounted future value
+- C) The transition probabilities
+- D) The policy gradient
+
+<details><summary>Answer</summary>B) The Bellman equation V(s) = maxₐ Σ P(s'|s,a)[R(s,a,s') + γV(s')] expresses value recursively in terms of immediate reward and discounted future value.</details>
 
 ## 10.5 Summary
 

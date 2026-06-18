@@ -1,8 +1,42 @@
 # Chapter 13: Computer Vision
 
+**Previous:** [Chapter 12: Natural Language Processing](12-nlp.md) | **Next:** [Chapter 14: Robotics](14-robotics.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) describe the image formation process and basic filtering operations; (2) implement edge detection and feature extraction; (3) explain the architectures of CNNs and Vision Transformers; (4) describe object detection and segmentation paradigms; (5) understand generative image models.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Image Formation | Pinhole camera, projection | Pixels, intrinsic/extrinsic matrix |
+| Filtering | Convolution, Gaussian, Sobel | Kernel, blur, edge detection |
+| Edge Detection | Canny, non-max suppression | Gradient magnitude, hysteresis |
+| Feature Extraction | SIFT, HOG | Scale-invariant, gradient histogram |
+| Image Classification | CNN, AlexNet, ResNet | Convolution, pooling, skip connection |
+| Object Detection | R-CNN, Fast/Faster R-CNN, YOLO | Bounding box, region proposal |
+| Segmentation | Semantic, instance, U-Net | Pixel-level classification, mask |
+| Vision Transformers | ViT, patch embedding | Self-attention on image patches |
+| Generative Models | GAN, diffusion, Stable Diffusion | Text-to-image, latent diffusion |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Image Formation] --> B[Filtering]
+    B --> C[Edge Detection]
+    B --> D[Feature Extraction]
+    A --> E[CNN]
+    E --> F[Classification]
+    E --> G[Object Detection]
+    G --> H[YOLO / R-CNN]
+    E --> I[Segmentation]
+    A --> J[Vision Transformer]
+    A --> K[Generative Models]
+    K --> L[GAN]
+    K --> M[Diffusion]
+```
 
 ## 13.1 Image Formation
 
@@ -110,6 +144,65 @@ $$p_\theta(x_{t-1} \mid x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\
 **Latent diffusion models** (Rombach et al., 2022) operate in a compressed latent space, enabling efficient high-resolution generation. Stable Diffusion is a notable implementation.
 
 **Text-to-image diffusion** (DALL-E 2, Imagen) conditions generation on text embeddings from large language models.
+
+> **💡 Pro Tip:** YOLO is the go-to choice for real-time object detection (45+ FPS), while Faster R-CNN offers higher accuracy for offline analysis. For segmentation, U-Net is the standard architecture when data is limited.
+
+## Concept Comparison
+
+| Task | Output | Example Architecture | Key Metric |
+|------|--------|-------------------|:---:|
+| Classification | Class label | ResNet, ViT | Top-1/Top-5 accuracy |
+| Object Detection | Bounding boxes + classes | YOLO, Faster R-CNN | mAP (mean Average Precision) |
+| Semantic Seg. | Pixel class labels | U-Net, DeepLab | IoU (Intersection over Union) |
+| Instance Seg. | Per-instance masks | Mask R-CNN | mAP over masks |
+| Generation | Images | GAN, Diffusion Model | FID, IS |
+
+## Quick Reference — CNN Components
+
+| Layer | Operation | Effect |
+|-------|-----------|--------|
+| Convolution | Slide kernel over input | Detect local patterns |
+| ReLU | max(0, x) | Non-linearity |
+| Max Pooling | Downsample 2×2 blocks | Reduce spatial dims |
+| Flatten | 2D to 1D vector | Bridge to FC layers |
+| Fully Connected | Weighted sum + activation | Classify features |
+| Softmax | e^xᵢ/Σ e^xⱼ | Probability distribution |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| CNN | ✅ | ✅ | ✅ | ✅ |
+| Object Detection | ⬜ | ✅ | ⬜ | ✅ |
+| Segmentation | ⬜ | ✅ | ⬜ | ✅ |
+| Vision Transformer | ✅ | ✅ | ✅ | ✅ |
+| GAN/Diffusion | ✅ | ✅ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What key innovation enabled ResNet to train 152-layer networks?
+- A) Dropout regularization
+- B) Skip connections (residual connections) solving the vanishing gradient problem
+- C) Batch normalization
+- D) Data augmentation
+
+<details><summary>Answer</summary>B) ResNet's skip connections allow gradients to flow directly through the network, bypassing layers and preventing vanishing gradients in very deep networks.</details>
+
+**Q2:** What is the main advantage of YOLO over R-CNN-style detectors?
+- A) YOLO is more accurate
+- B) YOLO uses a single forward pass for the entire image, achieving real-time speed
+- C) YOLO requires less training data
+- D) YOLO handles small objects better
+
+<details><summary>Answer</summary>B) YOLO treats detection as a single regression problem, predicting bounding boxes and class probabilities in one pass without a separate region proposal stage.</details>
+
+**Q3:** Diffusion models generate images by:
+- A) Adversarial training between generator and discriminator
+- B) Learning to reverse a gradual noising process step by step
+- C) Autoencoding input images through a bottleneck
+- D) Matching nearest neighbors in a training set
+
+<details><summary>Answer</summary>B) Diffusion models learn the reverse of a Markov noising process, gradually converting random noise into structured images.</details>
 
 ## 13.10 Summary
 

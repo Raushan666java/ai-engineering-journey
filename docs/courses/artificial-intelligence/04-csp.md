@@ -1,12 +1,41 @@
 # Chapter 4: Constraint Satisfaction Problems
 
+**Previous:** [Chapter 4: Adversarial Search and Games](04-adversarial-search.md) | **Next:** [Chapter 5: Constraint Satisfaction Problems](05-csp.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) formulate problems as constraint satisfaction problems; (2) apply backtracking search with heuristic ordering; (3) implement constraint propagation via arc consistency; (4) exploit problem structure for efficient solving; (5) apply iterative algorithms for large CSPs.
 
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| CSP Definition | Variables X, domains D, constraints C | Assignment, consistent, complete, solution |
+| Backtracking Search | DFS variable assignment, MRV, LCV | Fail-first, forward checking |
+| Constraint Propagation | Arc consistency, AC-3 | Node/arc/path consistency, MAC |
+| CSP Structure | Tree-structured, cutset, treewidth | Topological order, tree decomposition |
+| Iterative Algorithms | Min-conflicts heuristic | Local search, random restart |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[CSP Definition] --> B[Backtracking Search]
+    A --> C[Constraint Propagation]
+    B --> D[MRV / LCV Heuristics]
+    C --> E[AC-3 Algorithm]
+    E --> F[MAC Maintaining Arc Consistency]
+    A --> G[CSP Structure]
+    G --> H[Tree-Structured]
+    G --> I[Cutset Conditioning]
+    A --> J[Min-Conflicts]
+```
+
 ## 4.1 Definition of Constraint Satisfaction Problems
 
 ![Constraint Satisfaction Problems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch04-csp.png)
+
+> **One-Sentence Takeaway:** A CSP is defined by variables X, domains D, and constraints C — the solution is a complete assignment satisfying all constraints.
 
 A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}, \mathcal{D}, \mathcal{C})$ where:
 
@@ -28,6 +57,8 @@ The **constraint graph** represents variables as nodes and constraints as edges 
 - **Unary constraints:** Restrict the value of a single variable ($X \neq red$).
 - **Binary constraints:** Relate two variables ($X \neq Y$).
 - **Global constraints:** Involve an arbitrary number of variables ($Alldifferent(X_1, \ldots, X_k)$).
+
+> **💡 Pro Tip:** The MRV (Minimum Remaining Values) heuristic is the single most impactful optimization for CSP backtracking. By choosing the most constrained variable first, you minimize the branching factor and detect dead ends earlier.
 
 ## 4.2 Backtracking Search
 
@@ -94,6 +125,8 @@ function REVISE(csp, X_i, X_j) returns boolean
 
 MAC interleaves backtracking search with arc consistency propagation. After each assignment, AC-3 is run on the remaining variables. MAC dramatically reduces the search space compared to forward checking.
 
+> **⚠️ Warning:** The AC-3 algorithm only enforces arc consistency, not full global consistency. A CSP can pass AC-3 and still have no solution. Always use AC-3 as a preprocessing step, not as a complete solver.
+
 ## 4.4 CSP Structure
 
 ### 4.4.1 Tree-Structured CSPs
@@ -128,6 +161,61 @@ function MIN-CONFLICTS(csp, max_steps) returns solution or failure
 ```
 
 The min-conflicts heuristic is remarkably effective for problems such as $N$-Queens and SAT.
+
+## Concept Comparison
+
+| Technique | Type | Preprocessing? | Guarantee | Complexity |
+|-----------|:---:|:---:|:---:|:---:|
+| Backtracking | Search | No | Complete | O(d^n) worst case |
+| Forward Checking | Propagation | On assignment | Domain filtering | O(n²d²) |
+| AC-3 | Propagation | Yes/Interleaved | Arc consistency | O(n²d³) |
+| MAC | Propagation+Search | Interleaved | More pruning than FC | O(n²d³) per step |
+| Min-Conflicts | Iterative | Random start | Incomplete | Polynomial typically |
+
+## Quick Reference — CSP Heuristics
+
+| Heuristic | Type | Rule |
+|-----------|:---:|------|
+| MRV (Minimum Remaining Values) | Variable ordering | Choose variable with fewest legal values |
+| Degree Heuristic | Variable ordering (tie-break) | Choose variable in most constraints |
+| LCV (Least Constraining Value) | Value ordering | Choose value leaving most options for neighbors |
+| Min-Conflicts | Value selection | Choose value minimizing constraint violations |
+
+## Cross-Application Matrix
+
+| Technique | ML Engineering | Computer Vision | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| CSP Formulation | ✅ | ✅ | ✅ | ✅ |
+| Backtracking Search | ✅ | ⬜ | ⬜ | ✅ |
+| AC-3 Propagation | ⬜ | ⬜ | ⬜ | ✅ |
+| Min-Conflicts | ⬜ | ⬜ | ⬜ | ✅ |
+| Tree Decomposition | ⬜ | ✅ | ⬜ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What does the MRV heuristic select?
+- A) The variable with the most constraints
+- B) The variable with the fewest legal values remaining
+- C) The value that rules out the fewest choices for neighbors
+- D) The variable with the largest domain
+
+<details><summary>Answer</summary>B) MRV selects the most constrained variable (fewest legal values) to minimize branching and detect dead ends early.</details>
+
+**Q2:** The AC-3 algorithm enforces what type of consistency?
+- A) Node consistency
+- B) Arc consistency
+- C) Path consistency
+- D) k-consistency
+
+<details><summary>Answer</summary>B) AC-3 enforces arc consistency between all variable pairs in a CSP.</details>
+
+**Q3:** A tree-structured CSP can be solved in what time complexity?
+- A) O(n²)
+- B) O(n d²)
+- C) O(d^n)
+- D) O(n log n)
+
+<details><summary>Answer</summary>B) Tree-structured CSPs are solvable in O(n d²) time — linear in the number of variables and quadratic in the domain size.</details>
 
 ## 4.6 Summary
 

@@ -1,8 +1,38 @@
 # Chapter 17: Modern Artificial Intelligence
 
+**Previous:** [Chapter 16: Expert Systems](16-expert-systems.md) | **Next:** [Chapter 18: Applications of AI](18-ai-applications.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) describe the transformer architecture and its significance; (2) explain foundation models and their emergent abilities; (3) implement in-context learning; (4) understand multimodal model architectures; (5) describe AI agent architectures.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Foundation Models | Scale, self-supervision, emergence | Pre-training, fine-tuning |
+| Transformer | Self-attention, multi-head, KV cache | Attention is All You Need |
+| LLMs | GPT, scaling laws, RLHF | Autoregressive, token |
+| In-Context Learning | Few-shot, zero-shot, prompting | Chain-of-thought |
+| Multimodal | CLIP, DALL-E, GPT-4V | Cross-modal alignment |
+| AI Agents | Tools, planning, reasoning loops | ReAct, function calling |
+| Safety | Alignment, red-teaming, guardrails | Constitutional AI |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Foundation Models] --> B[Scale / Emergence]
+    A --> C[Transformer]
+    C --> D[Self-Attention]
+    A --> E[LLMs]
+    E --> F[GPT / Scaling Laws]
+    E --> G[RLHF / Alignment]
+    A --> H[In-Context Learning]
+    A --> I[Multimodal]
+    A --> J[AI Agents]
+    A --> K[Safety / Guardrails]
+```
 
 ## 17.1 Foundation Models
 
@@ -129,6 +159,62 @@ Modern AI is deployed across industries:
 - **Code generation:** GitHub Copilot, Codex, Cursor.
 - **Content creation:** Text generation, image generation, video production.
 - **Scientific research:** Protein folding (AlphaFold), materials discovery, drug design.
+
+> **💡 Pro Tip:** Prompt engineering (few-shot, chain-of-thought) is the fastest way to improve LLM output on knowledge tasks. For reliability-critical applications, fine-tune a smaller model on curated data rather than relying on prompt hacks with a giant model.
+
+## Concept Comparison
+
+| Model | Architecture | Modality | Training Data | Key Capability |
+|-------|:---:|:---:|:---:|---------------|
+| GPT-4 | Transformer decoder | Text, image | Massive text + vision | Few-shot, reasoning |
+| CLIP | Dual encoder | Text + Image | 400M pairs | Zero-shot classification |
+| DALL-E 3 | Diffusion + LLM | Text → Image | Text-image pairs | Text-to-image generation |
+| GPT-4o | Multimodal | Text, image, audio | Multi-modal | Real-time cross-modal |
+| o1 / o3 | Reasoner | Text | RL + CoT | Step-by-step reasoning |
+
+## Quick Reference — Scaling Laws
+
+| Term | Formula | Insight |
+|------|---------|--------|
+| Power Law (Loss) | L ≈ c / N^α | Loss decreases predictably with more parameters |
+| Chinchilla Optimum | N_opt ≈ 6D | For optimal compute, tokens should be ~6× parameters |
+| Emergent Abilities | Threshold-dependent | Capabilities appear suddenly past a scale threshold |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| Transformer | ✅ | ✅ | ✅ | ✅ |
+| Foundation Models | ✅ | ✅ | ✅ | ✅ |
+| In-Context Learning | ✅ | ✅ | ✅ | ✅ |
+| Multimodal | ✅ | ✅ | ✅ | ✅ |
+| AI Agents | ✅ | ✅ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What makes the transformer architecture different from RNNs for sequence processing?
+- A) Transformers use recurrence; RNNs use attention
+- B) Transformers process all tokens in parallel via self-attention; RNNs process tokens sequentially
+- C) Transformers are smaller than RNNs
+- D) Transformers cannot handle long sequences
+
+<details><summary>Answer</summary>B) Self-attention enables parallel token processing, eliminating the sequential bottleneck of RNNs and allowing efficient training on much longer sequences.</details>
+
+**Q2:** In-context learning allows LLMs to:
+- A) Learn new concepts during training with no examples
+- B) Perform tasks from examples provided in the prompt without parameter updates
+- C) Only answer questions about the training data
+- D) Generate code without any input
+
+<details><summary>Answer</summary>B) In-context learning uses examples (few-shot) or instructions (zero-shot) in the prompt itself — no gradient updates or fine-tuning is needed.</details>
+
+**Q3:** The Chinchilla scaling law findings suggest that:
+- A) More parameters always improve performance
+- B) For optimal training, the number of training tokens should be roughly 6× the number of model parameters
+- C) Larger models are always more sample-efficient
+- D) Compute optimality is irrelevant
+
+<details><summary>Answer</summary>B) Chinchilla showed that many large models were undertrained — optimal performance for a given compute budget comes from balancing model size and training tokens (~6:1 tokens-to-parameters ratio).</details>
 
 ## 17.10 Summary
 

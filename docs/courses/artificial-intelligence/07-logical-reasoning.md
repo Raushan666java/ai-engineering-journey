@@ -1,12 +1,44 @@
 # Chapter 7: Logical Reasoning and Inference
 
+**Previous:** [Chapter 7: First-Order Logic and Inference](07-fol.md) | **Next:** [Chapter 8: Uncertainty in AI](08-uncertainty.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) apply unification to match logical expressions; (2) implement forward and backward chaining for Horn clause KBs; (3) reduce FOL formulas to CNF and apply resolution; (4) write basic Prolog programs; (5) apply knowledge engineering methodology to build a logic-based system.
 
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| Unification | Substitution θ, MGU, occur check | Standardization apart, UNIFY |
+| Forward Chaining | Data-driven, antecedent ⇒ consequent | Pattern matching, fixed point |
+| Backward Chaining | Goal-driven, depth-first search | SLD resolution, loop detection |
+| Resolution | CNF conversion, Skolemization | Empty clause, refutation |
+| Horn Clauses | Definite clauses, definite vs non-Horn | Efficient inference |
+| Prolog | Facts, rules, queries | SLD resolution, cut operator |
+| Knowledge Engineering | Task → vocabulary → KB → debug | Circuits domain |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Unification] --> B[Forward Chaining]
+    A --> C[Backward Chaining]
+    B --> D[Horn Clauses]
+    C --> D
+    D --> E[Prolog]
+    A --> F[Resolution]
+    F --> G[CNF Conversion]
+    G --> H[Skolemization]
+    F --> I[Refutation Proofs]
+    A --> J[Knowledge Engineering]
+```
+
 ## 7.1 Unification
 
 ![Logical Reasoning and Inference](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch07-logical-reasoning.png)
+
+> **One-Sentence Takeaway:** Unification finds a substitution θ that makes two logical expressions identical — the Most General Unifier (MGU) imposes the fewest constraints while achieving the match.
 
 **Unification** is the process of finding a substitution $\theta$ that makes two logical expressions identical. A substitution $\theta = \{v_1/t_1, v_2/t_2, \ldots, v_n/t_n\}$ maps variables to terms. The application of $\theta$ to expression $E$, written $E\theta$, replaces each variable $v_i$ with term $t_i$, with all occurrences replaced simultaneously.
 
@@ -35,6 +67,8 @@ The **occur check** prevents circular substitutions ($\text{UNIFY}(x, f(x))$ fai
 
 ## 7.2 Forward Chaining
 
+> **💡 Pro Tip:** Forward chaining is linear in the size of the KB for propositional Horn clauses — it makes an excellent choice for real-time monitoring systems where new facts arrive continuously and conclusions must be drawn immediately.
+
 Forward chaining applies inference rules to known facts, deriving new facts until the query is proved or no further inferences are possible. It is data-driven: reasoning proceeds from premises toward conclusions.
 
 ```
@@ -53,6 +87,8 @@ function FORWARD-CHAIN(KB, rules) returns new facts
 Forward chaining is sound and complete for Horn clause KBs. Time complexity is linear in the size of the KB for propositional case.
 
 ## 7.3 Backward Chaining
+
+> **⚠️ Warning:** Backward chaining with depth-first search can loop infinitely on recursive rules. Always implement loop detection (visited goals table) or use iterative deepening in production systems.
 
 Backward chaining starts from the query and works backward, attempting to find a chain of rules that supports the query. It is goal-driven.
 
@@ -139,6 +175,60 @@ Knowledge engineering methodology:
 6. **Test and debug:** Verify against expected inferences.
 
 The **electronic circuits domain** provides a canonical example: encode gate types, connections, and signal propagation rules; query the system for output values given inputs or diagnose faulty components given observed behavior.
+
+## Concept Comparison
+
+| Inference Method | Sound? | Complete? | KB Type | Use Case |
+|-----------------|:---:|:---:|:---:|---------|
+| Forward Chaining | ✅ | ✅ (Horn) | Horn clauses | Monitoring, alerting |
+| Backward Chaining | ✅ | ✅ (Horn) | Horn clauses | Diagnosis, Q&A |
+| Resolution | ✅ | ✅ (FOL) | CNF clauses | Theorem proving |
+| SLD Resolution | ✅ | ⬜ (DFS) | Horn clauses | Prolog execution |
+
+## Quick Reference — Unification Rules
+
+| Expression 1 | Expression 2 | MGU | Can Unify? |
+|-------------|-------------|:---:|:---:|
+| P(x, A) | P(B, y) | {x/B, y/A} | ✅ |
+| P(f(x), y) | P(z, g(z)) | {z/f(x), y/g(f(x))} | ✅ |
+| P(x, f(x)) | P(y, y) | — | ❌ (occur check fails) |
+| P(x, x) | P(A, B) | — | ❌ (A ≠ B) |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| Unification | ⬜ | ⬜ | ✅ | ✅ |
+| Forward Chaining | ⬜ | ⬜ | ✅ | ✅ |
+| Backward Chaining | ⬜ | ⬜ | ✅ | ✅ |
+| Resolution | ⬜ | ⬜ | ⬜ | ✅ |
+| Prolog | ⬜ | ⬜ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What does the occur check in unification prevent?
+- A) Duplicate variable bindings
+- B) Circular substitutions like {x/f(x)}
+- C) Infinite recursion in the resolution algorithm
+- D) Standardization apart conflicts
+
+<details><summary>Answer</summary>B) The occur check prevents a variable from being bound to a term that contains it, avoiding infinite terms.</details>
+
+**Q2:** What is the key difference between forward and backward chaining?
+- A) Forward chaining is sound; backward chaining is not
+- B) Forward chaining is data-driven; backward chaining is goal-driven
+- C) Forward chaining works only with FOL; backward chaining works with PL
+- D) Both are identical in behavior
+
+<details><summary>Answer</summary>B) Forward chaining starts from known facts and derives new ones; backward chaining starts from a query and works backward toward known facts.</details>
+
+**Q3:** In CNF conversion, Skolemization handles what?
+- A) Dropping universal quantifiers
+- B) Removing existential quantifiers by introducing Skolem functions
+- C) Distributing ∨ over ∧
+- D) Eliminating implications
+
+<details><summary>Answer</summary>B) Skolemization replaces existential quantifiers with Skolem functions or constants during CNF conversion.</details>
 
 ## 7.8 Summary
 

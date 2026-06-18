@@ -1,8 +1,38 @@
 # Chapter 11: Reinforcement Learning
 
+**Previous:** [Chapter 10: Probabilistic Reasoning Over Time](10-probabilistic-reasoning.md) | **Next:** [Chapter 12: Natural Language Processing](12-nlp.md)
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student will be able to: (1) describe the reinforcement learning framework and its components; (2) implement model-based and model-free RL algorithms; (3) apply temporal-difference learning methods; (4) implement Q-learning and SARSA; (5) understand deep reinforcement learning architectures including DQN and policy gradients.
+
+## Chapter at a Glance
+
+| Section | Key Topics | Key Terms |
+|---------|-----------|-----------|
+| RL Framework | Agent, environment, reward, γ | Policy, value, action-value |
+| Exploration vs Exploitation | ε-greedy, softmax, UCB | Exploration-exploitation dilemma |
+| Passive RL | TD learning, bootstrapping | TD error, Monte Carlo |
+| Active RL | Q-learning (off-policy), SARSA (on-policy) | Off/on-policy distinction |
+| Function Approximation | Linear approx, DQN | Experience replay, target network |
+| Policy Gradients | REINFORCE, policy gradient theorem | Direct policy optimization |
+| Actor-Critic | A2C, PPO | Advantage function, clipped objective |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[RL Framework] --> B[Agent-Environment Loop]
+    A --> C[Passive RL]
+    A --> D[Active RL]
+    C --> E[TD Learning]
+    D --> F[Q-Learning / Off-Policy]
+    D --> G[SARSA / On-Policy]
+    A --> H[Deep RL]
+    H --> I[DQN]
+    H --> J[Policy Gradients]
+    J --> K[Actor-Critic / PPO]
+```
 
 ## 11.1 The Reinforcement Learning Framework
 
@@ -145,6 +175,65 @@ Actor-critic methods combine value-based and policy-based approaches:
 $$L^{\text{CLIP}}(\theta) = \mathbb{E}_t \left[ \min(r_t(\theta) \hat{A}_t, \text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon) \hat{A}_t) \right]$$
 
 where $r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \mid s_t)$.
+
+> **💡 Pro Tip:** Q-learning's off-policy nature makes it more sample-efficient than SARSA in deterministic environments, but SARSA's on-policy updates make it safer in risky environments — SARSA learns to avoid dangerous states that exploration might encounter.
+
+## Concept Comparison
+
+| Algorithm | Type | On/Off Policy | Model? | Guarantee | Best For |
+|-----------|:---:|:---:|:---:|:---:|---------|
+| TD Learning | Value-based | Both | Free | Converges | Passive learning |
+| Q-Learning | Value-based | Off-policy | Free | Converges to Q* | Optimal exploration |
+| SARSA | Value-based | On-policy | Free | Converges | Cautious behavior |
+| DQN | Value-based | Off-policy | Free | Stable | High-dim states |
+| REINFORCE | Policy-based | On-policy | Free | Local optimum | Continuous actions |
+| PPO | Actor-Critic | On-policy | Free | Stable | Complex control |
+
+## Quick Reference — RL Algorithms
+
+| Algorithm | Update Rule | Key Feature |
+|-----------|-------------|-------------|
+| TD(0) | V(s) ← V(s) + α[r + γV(s') - V(s)] | Bootstrap from estimate |
+| Q-Learning | Q(s,a) ← Q(s,a) + α[r + γ max Q(s',a') - Q(s,a)] | Max over next actions |
+| SARSA | Q(s,a) ← Q(s,a) + α[r + γ Q(s',a') - Q(s,a)] | Uses actual next action |
+| DQN | Minimize (r + γ max Q(s',a';θ⁻) - Q(s,a;θ))² | Experience replay + target net |
+| PPO | Clipped surrogate objective | Constrained policy updates |
+
+## Cross-Application Matrix
+
+| Technique | ML | CV | NLP | Research |
+|-----------|:---:|:---:|:---:|:---:|
+| Q-Learning | ⬜ | ⬜ | ⬜ | ✅ |
+| DQN | ⬜ | ✅ | ⬜ | ✅ |
+| Policy Gradients | ⬜ | ⬜ | ✅ | ✅ |
+| PPO | ⬜ | ⬜ | ✅ | ✅ |
+| Exploration Strategies | ✅ | ✅ | ✅ | ✅ |
+
+## Chapter Quiz
+
+**Q1:** What distinguishes on-policy from off-policy RL?
+- A) On-policy learns from the current policy's actions; off-policy learns from any policy's data
+- B) On-policy is faster; off-policy is slower
+- C) On-policy uses neural networks; off-policy uses tables
+- D) There is no practical difference
+
+<details><summary>Answer</summary>A) On-policy (SARSA) learns the value of the policy being followed; off-policy (Q-learning) learns the optimal policy independent of the exploration policy.</details>
+
+**Q2:** DQN's experience replay helps because it:
+- A) Reduces memory usage
+- B) Breaks temporal correlations in training data by sampling random mini-batches
+- C) Speeds up computation through GPU batching
+- D) Eliminates the need for a target network
+
+<details><summary>Answer</summary>B) Experience replay randomizes over transitions, breaking the temporal correlations that would otherwise cause instability in DQN training.</details>
+
+**Q3:** The policy gradient theorem provides:
+- A) The optimal policy directly
+- B) The gradient of expected return with respect to policy parameters
+- C) The value function for any policy
+- D) The convergence rate of Q-learning
+
+<details><summary>Answer</summary>B) The policy gradient theorem gives ∇J(θ) = 𝔼[∇log π(a|s) Q^π(s,a)], enabling gradient-based optimization of policy parameters.</details>
 
 ## 11.9 Summary
 

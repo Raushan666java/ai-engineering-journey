@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: explain the DevOps c
 
 ## Theory
 
-![DevOps and CI/CD Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-12-devops-cicd.png)
+![DevOps and CI/CD Pipeline](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-12-devops-cicd.png)
 
 ### The DevOps Culture
 
@@ -30,7 +30,7 @@ A Jenkins declarative pipeline defines stages and steps in a structured format. 
 
 #### GitLab CI
 
-GitLab CI integrates with the GitLab repository. Pipelines are defined in a .gitlab-ci.yml file at the root of the repository. GitLab CI uses runners — agents that execute pipeline jobs. Runners can be shared, group-specific, or project-specific.
+GitLab CI integrates with the GitLab repository. Pipelines are defined in a .gitlab-ci.yml file at the root of the repository. GitLab CI uses runners â€” agents that execute pipeline jobs. Runners can be shared, group-specific, or project-specific.
 
 GitLab CI supports stages, jobs within stages, and job dependencies. Jobs can be configured to run only for specific branches or when specific files change. GitLab CI includes a built-in container registry and integrates with GitLab's code review process.
 
@@ -46,13 +46,13 @@ Infrastructure as code (IaC) applies software engineering practices to infrastru
 
 #### Terraform
 
-Terraform is an IaC tool for provisioning infrastructure across multiple cloud providers. It uses a declarative configuration language called HCL (HashiCorp Configuration Language). Terraform manages infrastructure through providers — plugins that interface with cloud APIs.
+Terraform is an IaC tool for provisioning infrastructure across multiple cloud providers. It uses a declarative configuration language called HCL (HashiCorp Configuration Language). Terraform manages infrastructure through providers â€” plugins that interface with cloud APIs.
 
 The Terraform workflow comprises: write, where configuration files describe the desired infrastructure; init, where the working directory is initialised and providers are downloaded; plan, where Terraform shows the changes that will be made; apply, where Terraform creates or modifies infrastructure; and destroy, where infrastructure is removed. Terraform maintains state files that map configuration to real-world resources.
 
 #### Ansible
 
-Ansible is a configuration management and automation tool. Unlike Terraform, which focuses on infrastructure provisioning, Ansible focuses on configuring software on existing servers. Ansible is agentless — it connects to managed nodes via SSH and executes modules.
+Ansible is a configuration management and automation tool. Unlike Terraform, which focuses on infrastructure provisioning, Ansible focuses on configuring software on existing servers. Ansible is agentless â€” it connects to managed nodes via SSH and executes modules.
 
 Ansible playbooks are written in YAML and describe the desired state of the system. Each playbook contains plays that map to hosts, and each play contains tasks that call Ansible modules. Ansible supports idempotency: running the same playbook multiple times produces the same result.
 

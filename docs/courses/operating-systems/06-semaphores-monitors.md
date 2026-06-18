@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Semaphores & Monitors](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/06-semaphores-monitors.png)
+![Semaphores & Monitors](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/06-semaphores-monitors.png)
 
 ### Classic Synchronization Problems
 
@@ -160,7 +160,7 @@ void *writer(void *arg) {
 - Once a writer requests access, no new readers can start
 - Solves writer starvation but readers can starve
 
-The ideal solution: **fairness** — processes are served in order of arrival.
+The ideal solution: **fairness** â€” processes are served in order of arrival.
 
 ### Problem 3: Dining Philosophers
 
@@ -322,7 +322,7 @@ void *signaler(void *arg) {
 }
 ```
 
-**Important**: Always use `while (condition)` not `if (condition)` to guard `pthread_cond_wait()`. This handles **spurious wakeups** — the thread can wake up even if nobody signaled.
+**Important**: Always use `while (condition)` not `if (condition)` to guard `pthread_cond_wait()`. This handles **spurious wakeups** â€” the thread can wake up even if nobody signaled.
 
 ### Monitor-based Solutions
 
@@ -396,7 +396,7 @@ void barrier_wait() {
     if (arrived < num_threads) {
         pthread_cond_wait(&cond, &mutex);
     } else {
-        // Last thread — wake everyone
+        // Last thread â€” wake everyone
         arrived = 0;  // Reset for next barrier use
         pthread_cond_broadcast(&cond);
     }
@@ -474,8 +474,8 @@ int main() {
 ### Intermediate
 
 4. Implement the readers-writers problem with writer priority. A writer that arrives should block all subsequent readers until it completes.
-5. Solve the dining philosophers problem without using a waiter mutex — instead, change the pickup order so that philosophers with odd IDs pick up left first, even IDs pick up right first. Prove this prevents deadlock.
-6. Implement a reusable barrier using condition variables. The barrier should support a variable number of threads and be reusable across multiple phases. (The barrier from Example 1 has a subtle bug — can you find it?)
+5. Solve the dining philosophers problem without using a waiter mutex â€” instead, change the pickup order so that philosophers with odd IDs pick up left first, even IDs pick up right first. Prove this prevents deadlock.
+6. Implement a reusable barrier using condition variables. The barrier should support a variable number of threads and be reusable across multiple phases. (The barrier from Example 1 has a subtle bug â€” can you find it?)
 
 ### Advanced
 

@@ -11,7 +11,7 @@
 - Write inline functions
 - Use POSIX system calls basics
 
-![C Advanced Topics: Variadic Functions, Signals, errno, VLAs, POSIX and More](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-18-advanced-c.png)
+![C Advanced Topics: Variadic Functions, Signals, errno, VLAs, POSIX and More](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-18-advanced-c.png)
 
 ## 18.1 Variadic Functions
 
@@ -26,7 +26,7 @@ double average(int count, ...)
     va_list args;
     double sum = 0.0;
 
-    va_start(args, count);   /* initialize — count is the last named parameter */
+    va_start(args, count);   /* initialize â€” count is the last named parameter */
 
     for (int i = 0; i < count; i++) {
         sum += va_arg(args, double);   /* retrieve next double */
@@ -123,9 +123,9 @@ Hello Alice, you scored 85/100 (85.0%)
 1. There must be at least one named parameter before `...`.
 2. The named parameter is used by `va_start` to locate the stack position.
 3. The compiler does **no type checking** on variadic arguments.
-4. Default argument promotions apply: `float` → `double`, `char`/`short` → `int`.
+4. Default argument promotions apply: `float` â†’ `double`, `char`/`short` â†’ `int`.
 5. Always pair `va_start` with `va_end`.
-6. Consider using a sentinel value or count parameter — the function has no other way to know how many arguments were passed.
+6. Consider using a sentinel value or count parameter â€” the function has no other way to know how many arguments were passed.
 
 ## 18.2 Signal Handling
 
@@ -140,7 +140,7 @@ Signals are asynchronous notifications delivered to a process. The standard libr
 void interrupt_handler(int sig)
 {
     printf("\nCaught signal %d (SIGINT). Cleaning up...\n", sig);
-    /* do minimal cleanup — many library functions are unsafe here */
+    /* do minimal cleanup â€” many library functions are unsafe here */
     printf("Exiting gracefully.\n");
     exit(0);
 }
@@ -201,7 +201,7 @@ int main(void)
 
 ### Caveats
 
-- Only async-signal-safe functions should be called from signal handlers — roughly: `write`, `_Exit`, `signal`, and a few others. `printf`, `malloc`, `free`, and most library functions are **not** safe.
+- Only async-signal-safe functions should be called from signal handlers â€” roughly: `write`, `_Exit`, `signal`, and a few others. `printf`, `malloc`, `free`, and most library functions are **not** safe.
 - Set a volatile flag in the handler and check it in the main loop instead.
 - Behavior is undefined if a signal handler calls a non-async-signal-safe function.
 
@@ -214,7 +214,7 @@ volatile sig_atomic_t interrupted = 0;
 
 void handler(int sig)
 {
-    interrupted = 1;   /* safe — sig_atomic_t is lock-free */
+    interrupted = 1;   /* safe â€” sig_atomic_t is lock-free */
 }
 
 int main(void)
@@ -258,7 +258,7 @@ int main(void)
         printf("  strerror: %s\n", strerror(errno));
     }
 
-    /* perror — convenience wrapper */
+    /* perror â€” convenience wrapper */
     FILE *f = fopen("nonexistent.txt", "r");
     if (!f) {
         perror("fopen failed");
@@ -281,7 +281,7 @@ fopen failed: No such file or directory
 
 - **Always reset** `errno` to 0 before calling a function that might set it.
 - Use `strerror(errno)` or `perror()` for human-readable messages.
-- Not every function sets `errno` — check the documentation.
+- Not every function sets `errno` â€” check the documentation.
 - Thread-local `errno` is required by C11 (each thread has its own copy).
 
 ## 18.4 Variable-Length Arrays (C99)
@@ -298,7 +298,7 @@ int main(void)
     printf("Enter array size: ");
     scanf("%d", &n);
 
-    int arr[n];           /* VLA — size determined at runtime */
+    int arr[n];           /* VLA â€” size determined at runtime */
     printf("Size of VLA: %zu bytes\n", sizeof(arr));
 
     for (int i = 0; i < n; i++) {
@@ -330,7 +330,7 @@ void matrix_multiply(int rows, int cols, int a[rows][cols],
 
 ### Caveats
 
-- VLAs are allocated on the stack — large VLAs can overflow the stack.
+- VLAs are allocated on the stack â€” large VLAs can overflow the stack.
 - No error is reported if allocation fails (typically a segfault).
 - VLAs cannot be declared at file scope or with `static` storage.
 - `sizeof` on a VLA is evaluated at runtime, not compile time.
@@ -430,7 +430,7 @@ The compiler must assume that `c` could overlap with `a` or `b`, so it must re-r
 
 ```c
 int arr[] = {1, 2, 3, 4, 5};
-vector_add(arr, arr, arr + 2, 3);   /* undefined — c and a overlap */
+vector_add(arr, arr, arr + 2, 3);   /* undefined â€” c and a overlap */
 ```
 
 ## 18.7 Inline Functions (C99)
@@ -457,7 +457,7 @@ int main(void)
 
 ### Inline Rules
 
-- `inline` is a **hint**, not a command — the compiler may ignore it.
+- `inline` is a **hint**, not a command â€” the compiler may ignore it.
 - An inline function must be defined in the same translation unit where it's called (typically in a header file).
 - The compiler may still emit an external definition for the inline function.
 - Use `static inline` to guarantee no external symbol is emitted:
@@ -600,7 +600,7 @@ Child exited with status 42
 
 1. Write a variadic function `double sum(int n, ...)` that returns the sum of `n` doubles. Then write a `double sum_product(int n, ...)` that takes pairs of (multiplier, value) and returns the sum of all products. Example: `sum_product(2, 2.0, 3.0, 3.0, 4.0)` should return `2*3 + 3*4 = 18`.
 
-2. Write a program that catches `SIGFPE` (floating-point exception). Intentionally cause a division by zero and handle it gracefully by resetting `errno` and continuing. (Hint: integer division by zero kills the process — use floating-point division.)
+2. Write a program that catches `SIGFPE` (floating-point exception). Intentionally cause a division by zero and handle it gracefully by resetting `errno` and continuing. (Hint: integer division by zero kills the process â€” use floating-point division.)
 
 3. Implement a safe string concatenation function using `errno`:
    ```c
@@ -608,7 +608,7 @@ Child exited with status 42
    ```
    Returns 0 on success, sets `errno` to `ERANGE` and returns -1 if the result would exceed `dest_size`.
 
-4. Use `fork()` to create a **parallel sum** of an array. Split the array in half, have each child sum its half (using `_exit` to return the partial sum via exit status — limit: 0–255), and the parent adds the two halves.
+4. Use `fork()` to create a **parallel sum** of an array. Split the array in half, have each child sum its half (using `_exit` to return the partial sum via exit status â€” limit: 0â€“255), and the parent adds the two halves.
 
 ### Challenge Problem
 

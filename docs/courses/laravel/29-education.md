@@ -1,4 +1,4 @@
-﻿# Chapter 29: Education & EdTech
+# Chapter 29: Education & EdTech
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## Theory
 
-![Education Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/29-education.png)
+![Education Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/29-education.png)
 
 
 ### 29.1 Education Data Models

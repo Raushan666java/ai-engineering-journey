@@ -1,6 +1,6 @@
 # Chapter 14: String Algorithms
 
-> **Prerequisites:** [Chapter 13: Network Flow](./13-graph-flow.md) — Algorithm design techniques, complexity analysis | **Next:** [Chapter 15: NP-Completeness](./15-np-completeness.md) — From efficient algorithms to hardness theory
+> **Prerequisites:** [Chapter 13: Network Flow](./13-graph-flow.md) â€” Algorithm design techniques, complexity analysis | **Next:** [Chapter 15: NP-Completeness](./15-np-completeness.md) â€” From efficient algorithms to hardness theory
 
 ## Learning Objectives
 
@@ -41,7 +41,7 @@ flowchart LR
 
 ## Theory
 
-![String Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch14-string-algorithms.png)
+![String Algorithms Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch14-string-algorithms.png)
 
 ### 14.1 Knuth-Morris-Pratt (KMP) Algorithm
 
@@ -80,7 +80,7 @@ KMP(T, P):
 
 **Complexity:** \( O(n + m) \) time, \( O(m) \) space.
 
-> **Pro Tip:** KMP's prefix function (pi array) encodes the "border" of each prefix — the longest proper prefix that is also a suffix. This is the key to O(n+m) performance because it never backtracks in the text.
+> **Pro Tip:** KMP's prefix function (pi array) encodes the "border" of each prefix â€” the longest proper prefix that is also a suffix. This is the key to O(n+m) performance because it never backtracks in the text.
 >
 > **Remember:** The prefix function is computed on the pattern alone before matching begins. The matching phase runs in O(n) time by always advancing the text pointer.
 
@@ -136,9 +136,9 @@ ComputeZ(S):
 
 **Complexity:** \( O(n) \).
 
-> **Pro Tip:** The Z-algorithm is simpler to implement than KMP for pattern matching — just concatenate P + "$" + T, compute the Z-array, and look for Z[i] = len(P). The separator character must not appear in either string.
+> **Pro Tip:** The Z-algorithm is simpler to implement than KMP for pattern matching â€” just concatenate P + "$" + T, compute the Z-array, and look for Z[i] = len(P). The separator character must not appear in either string.
 >
-> **Remember:** The Z-algorithm's linear time comes from maintaining the [l, r] interval of the rightmost matching prefix — it never recomputes matches inside this window.
+> **Remember:** The Z-algorithm's linear time comes from maintaining the [l, r] interval of the rightmost matching prefix â€” it never recomputes matches inside this window.
 
 **One-Sentence Takeaway:** The Z-algorithm computes the longest prefix match at each position in O(n) by maintaining the rightmost matching window [l, r].
 
@@ -305,7 +305,7 @@ std::vector<int> manacher(const std::string& S) {
 | **Z-Algorithm** | Linear via [l,r] interval; concat P + $ + T for matching |
 | **Manacher** | Symmetry reduces redundant expansion; use # separators |
 | **Suffix Array** | Prefix-doubling O(n log n); use LCP for full power |
-| **Key Application** | LCP → longest repeated substring, distinct substrings |
+| **Key Application** | LCP â†’ longest repeated substring, distinct substrings |
 
 ### Cross-Application Matrix
 
@@ -347,14 +347,14 @@ std::vector<int> manacher(const std::string& S) {
 
 <details>
 <summary>Answer</summary>
-B) The prefix function (pi) encodes borders — when a mismatch occurs, we shift by the border length without going back in the text.
+B) The prefix function (pi) encodes borders â€” when a mismatch occurs, we shift by the border length without going back in the text.
 </details>
 
 **Q2.** What is the worst-case time complexity of naive Rabin-Karp?
 
 - A) O(n+m)
 - B) O(nm)
-- C) O(n²)
+- C) O(nÂ²)
 - D) O(n log n)
 
 <details>

@@ -1,10 +1,10 @@
-﻿# Chapter 47: Legal & Compliance Interview Q&A
+# Chapter 47: Legal & Compliance Interview Q&A
 
 ---
 
 ## 1. Legal Domain Knowledge
 
-![Legal Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/47-interview-legal.png)
+![Legal Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/47-interview-legal.png)
 
 
 ### Q1: What are the core entities in a legal practice management system?

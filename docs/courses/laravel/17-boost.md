@@ -1,4 +1,4 @@
-﻿# Chapter 17: Laravel Boost â€” AI-Assisted Development
+# Chapter 17: Laravel Boost â€” AI-Assisted Development
 
 ---
 ## Learning Objectives
@@ -12,7 +12,7 @@
 
 ## Theory
 
-![Laravel Boost](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/17-boost.png)
+![Laravel Boost](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/17-boost.png)
 
 
 ### 17.1 What Is Laravel Boost?

@@ -1,4 +1,4 @@
-![Kubernetes Microservices Deployment - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/60-interview-microservices-b.png)
+![Kubernetes Microservices Deployment - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-b.png)
 
 ### Q9: What is CQRS and how do you implement it?
 
@@ -7,7 +7,7 @@
 CQRS (Command Query Responsibility Segregation) separates write models (commands) from read models (queries). Each model has its own database schema, optimized for its operation.
 
 ```java
-// ── Command side: focused on writes ──
+// â”€â”€ Command side: focused on writes â”€â”€
 @RestController
 @RequestMapping("/orders/commands")
 public class OrderCommandController {
@@ -49,7 +49,7 @@ public class OrderCommandService {
 @Repository
 public interface OrderCommandRepository extends JpaRepository<OrderWriteModel, UUID> {}
 
-// ── Query side: optimized for reads ──
+// â”€â”€ Query side: optimized for reads â”€â”€
 @RestController
 @RequestMapping("/orders/queries")
 public class OrderQueryController {
@@ -111,9 +111,9 @@ public class OrderEventConsumer {
 }
 ```
 
-CQRS adds significant complexity (eventual consistency, duplicate data, two models to maintain). Use it only when reads and writes have fundamentally different shapes — for example, writes are simple INSERT/UPDATE but reads need complex aggregations, joins, or full-text search.
+CQRS adds significant complexity (eventual consistency, duplicate data, two models to maintain). Use it only when reads and writes have fundamentally different shapes â€” for example, writes are simple INSERT/UPDATE but reads need complex aggregations, joins, or full-text search.
 
-Apply CQRS to individual bounded contexts, not the entire system. Most services do not need CQRS — a well-designed JPA model with DTO projections is sufficient.
+Apply CQRS to individual bounded contexts, not the entire system. Most services do not need CQRS â€” a well-designed JPA model with DTO projections is sufficient.
 
 ---
 
@@ -124,7 +124,7 @@ Apply CQRS to individual bounded contexts, not the entire system. Most services 
 Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and time limiters. The circuit breaker prevents cascading failures by failing fast when a downstream service is unhealthy.
 
 ```java
-// ── Configuration ──
+// â”€â”€ Configuration â”€â”€
 // application.yml:
 // resilience4j.circuitbreaker:
 //   instances:
@@ -139,9 +139,9 @@ Resilience4j provides circuit breakers, retries, rate limiters, bulkheads, and t
 //         - java.io.IOException
 //         - org.springframework.web.client.HttpServerErrorException
 //       ignore-exceptions:
-//         - org.springframework.web.client.HttpClientErrorException  (4xx — not a circuit failure)
+//         - org.springframework.web.client.HttpClientErrorException  (4xx â€” not a circuit failure)
 
-// ── Registration ──
+// â”€â”€ Registration â”€â”€
 @Configuration
 public class Resilience4jConfig {
     @Bean
@@ -160,7 +160,7 @@ public class Resilience4jConfig {
     }
 }
 
-// ── Usage with @CircuitBreaker annotation ──
+// â”€â”€ Usage with @CircuitBreaker annotation â”€â”€
 @Service
 public class OrderService {
     @Autowired private UserServiceClient userClient;
@@ -180,7 +180,7 @@ public class OrderService {
     }
 }
 
-// ── Manual circuit breaker usage ──
+// â”€â”€ Manual circuit breaker usage â”€â”€
 @Service
 public class PaymentService {
     private final CircuitBreaker circuitBreaker;
@@ -207,7 +207,7 @@ public class PaymentService {
     }
 }
 
-// ── Monitoring circuit breaker state ──
+// â”€â”€ Monitoring circuit breaker state â”€â”€
 @Component
 public class CircuitBreakerMonitor {
     public CircuitBreakerMonitor(CircuitBreakerRegistry registry) {
@@ -224,7 +224,7 @@ public class CircuitBreakerMonitor {
 }
 ```
 
-Circuit breaker states: CLOSED (normal, pass through) → OPEN (fail fast, no calls) → HALF_OPEN (allow limited probe calls) → back to CLOSED or OPEN. Use it on every cross-service call. Without circuit breakers, a cascading failure in one service can take down the entire system.
+Circuit breaker states: CLOSED (normal, pass through) â†’ OPEN (fail fast, no calls) â†’ HALF_OPEN (allow limited probe calls) â†’ back to CLOSED or OPEN. Use it on every cross-service call. Without circuit breakers, a cascading failure in one service can take down the entire system.
 
 ---
 
@@ -235,7 +235,7 @@ Circuit breaker states: CLOSED (normal, pass through) → OPEN (fail fast, no ca
 OAuth2 with JWT provides token-based authentication. The client credentials grant is the standard pattern for service-to-service communication.
 
 ```java
-// ── Authorization Server config (Spring Authorization Server) ──
+// â”€â”€ Authorization Server config (Spring Authorization Server) â”€â”€
 @Configuration
 @EnableAuthorizationServer
 public class AuthServerConfig {
@@ -243,7 +243,7 @@ public class AuthServerConfig {
     public RegisteredClientRepository registeredClientRepository() {
         RegisteredClient orderService = RegisteredClient.withId(UUID.randomUUID().toString())
             .clientId("order-service")
-            .clientSecret("{noop}order-secret")  // noop = plain text — use BCrypt in prod
+            .clientSecret("{noop}order-secret")  // noop = plain text â€” use BCrypt in prod
             .authorizationGrantType(ClientCredentialsGrant.INSTANCE)
             .scope("order:read")
             .scope("order:write")
@@ -252,7 +252,7 @@ public class AuthServerConfig {
     }
 }
 
-// ── Resource Server config (each microservice validates tokens) ──
+// â”€â”€ Resource Server config (each microservice validates tokens) â”€â”€
 // application.yml:
 // spring.security.oauth2.resourceserver.jwt:
 //   issuer-uri: http://localhost:9000
@@ -275,7 +275,7 @@ public class ResourceServerConfig {
     }
 }
 
-// ── Client credentials flow (service calls another service) ──
+// â”€â”€ Client credentials flow (service calls another service) â”€â”€
 @Service
 public class ServiceClient {
     @Autowired
@@ -309,7 +309,7 @@ public class ServiceClient {
     }
 }
 
-// ── Extract user context from JWT ──
+// â”€â”€ Extract user context from JWT â”€â”€
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -324,7 +324,7 @@ public class OrderController {
 }
 ```
 
-JWT is stateless — the resource server only needs the public key (JWKS) to verify tokens, no database call. Token expiry is short (15-30 minutes for access tokens). Use refresh tokens for user-facing flows; client credentials flow generates new tokens directly.
+JWT is stateless â€” the resource server only needs the public key (JWKS) to verify tokens, no database call. Token expiry is short (15-30 minutes for access tokens). Use refresh tokens for user-facing flows; client credentials flow generates new tokens directly.
 
 Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted). For fine-grained authorization, use OAuth2 scopes combined with custom claims or a dedicated authorization service.
 
@@ -337,7 +337,7 @@ Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted
 Apache Kafka provides a distributed commit log for asynchronous event streaming between services. Each service publishes events to topics; other services consume from those topics independently.
 
 ```java
-// ── Producer configuration ──
+// â”€â”€ Producer configuration â”€â”€
 @Configuration
 public class KafkaProducerConfig {
     @Bean
@@ -360,7 +360,7 @@ public class KafkaProducerConfig {
     }
 }
 
-// ── Event publisher ──
+// â”€â”€ Event publisher â”€â”€
 @Service
 public class OrderEventPublisher {
     @Autowired
@@ -380,7 +380,7 @@ public class OrderEventPublisher {
         );
     }
 
-    // ── Transactional outbox pattern ──
+    // â”€â”€ Transactional outbox pattern â”€â”€
     @Transactional
     public void createOrderAndPublishEvent(OrderRequest request) {
         // 1. Save order in the database
@@ -398,7 +398,7 @@ public class OrderEventPublisher {
     }
 }
 
-// ── Consumer configuration ──
+// â”€â”€ Consumer configuration â”€â”€
 @Configuration
 public class KafkaConsumerConfig {
     @Bean
@@ -418,7 +418,7 @@ public class KafkaConsumerConfig {
     }
 }
 
-// ── Event consumer ──
+// â”€â”€ Event consumer â”€â”€
 @Component
 public class InventoryEventConsumer {
     @Autowired
@@ -443,14 +443,14 @@ public class InventoryEventConsumer {
                 new InventoryFailedEvent(event.orderId(), e.getMessage()));
             acknowledgment.acknowledge();
         } catch (Exception e) {
-            // Do not commit — message will be re-delivered
+            // Do not commit â€” message will be re-delivered
             log.error("Failed to process order {}, will retry", event.orderId(), e);
             throw new RetryableException("Retry later");
         }
     }
 }
 
-// ── Idempotent consumer (same event may be delivered twice) ──
+// â”€â”€ Idempotent consumer (same event may be delivered twice) â”€â”€
 @Service
 public class IdempotentConsumerService {
     @Autowired
@@ -486,7 +486,7 @@ Use one topic per event type or per bounded context. Partition count should be e
 Each microservice gets a Docker image with multi-stage builds for minimal size. Spring Boot 3.x provides layered JARs for efficient Docker builds.
 
 ```dockerfile
-# ── Multi-stage Dockerfile for a Spring Boot microservice ──
+# â”€â”€ Multi-stage Dockerfile for a Spring Boot microservice â”€â”€
 
 # Stage 1: Build the application
 FROM eclipse-temurin:21-jdk AS builder
@@ -529,7 +529,7 @@ ENTRYPOINT ["java", "org.springframework.boot.loader.launch.JarLauncher"]
 ```
 
 ```yaml
-# ── docker-compose.yml for local development ──
+# â”€â”€ docker-compose.yml for local development â”€â”€
 version: '3.8'
 services:
   eureka-server:

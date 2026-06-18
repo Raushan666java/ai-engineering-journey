@@ -1,5 +1,8 @@
 # Chapter 5: Flip-Flops
 
+> **Prereq:** Chapter 4 (Combinational Circuits) â€” flip-flops add state (memory) to combinational logic.
+> **Next:** Chapter 6 (Sequential Circuits) â€” flip-flops are the building blocks of sequential circuits.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -8,11 +11,41 @@ By the conclusion of this chapter, the student shall be able to:
 2. Analyse the behaviour of SR, JK, D, and T flip-flops
 3. Derive characteristic and excitation tables for each flip-flop type
 4. Convert one flip-flop type to another
+
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| SR Latch | Cross-coupled NOR/NAND | Fundamental bistable element |
+| D Flip-Flop | Data storage on clock edge | Most common FF type â€” registers |
+| JK Flip-Flop | No invalid state | Universal FF replaces SR |
+| T Flip-Flop | Toggle on clock edge | Counters and frequency division |
+| Timing Parameters | Setup/hold/propagation | Determines max clock frequency |
+
+```mermaid
+flowchart LR
+    A[Latch] --> B[Level-Sensitive]
+    B --> C[SR Latch]
+    C --> D[Gated SR]
+    D --> E[D Latch]
+    E --> F[Edge-Triggered FF]
+    F --> G[D FF]
+    F --> H[JK FF]
+    F --> I[T FF]
+    G --> J[Registers]
+    H --> J
+    I --> K[Counters]
+    style A fill:#e1f5fe
+    style J fill:#c8e6c9
+    style K fill:#c8e6c9
+```
 5. Determine timing parameters including setup time, hold time, and propagation delay
 
 ## Theory
 
-![Latches, Flip-Flops and Sequential Components](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch04-flipflops-sequential.png)
+![Latches, Flip-Flops and Sequential Components](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch04-flipflops-sequential.png)
+
+> **One-Sentence Takeaway:** Flip-flops add a memory dimension to digital logic â€” an edge-triggered bistable element whose state persists until the next clock edge, enabling sequential circuits like registers and counters.
 
 ### 5.1 Latches
 
@@ -214,6 +247,33 @@ Show how a T flip-flop with T = 1 divides the input clock frequency by 2.
 
 **Solution**: With T = 1, the flip-flop toggles on every rising edge. The output Q transitions at half the clock frequency. Connecting *n* T flip-flops in cascade produces frequency division by 2^n.
 
+### Concept Comparison
+
+| FF Type | Inputs | Characteristic Q_next | Best For |
+|---------|--------|----------------------|----------|
+| SR | S, R | S + R'Â·Q | Simple storage (has invalid state) |
+| D | D | D | Data registers, pipelining |
+| JK | J, K | JÂ·Q' + K'Â·Q | Universal (no invalid state) |
+| T | T | TÂ·Q' + T'Â·Q (toggle/clk/2) | Counters, frequency division |
+
+### Quick Reference
+
+| Timing Parameter | Symbol | Definition |
+|-----------------|--------|------------|
+| Setup time | t_su | Data must be valid before clock edge |
+| Hold time | t_h | Data must remain valid after clock edge |
+| Clock-to-Q | t_cq | Output delay after clock edge |
+| Max freq | f_max | 1 / (t_cq + t_logic + t_su) |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | Register file, pipeline registers | D FF is the standard data-storage element |
+| Embedded Systems | Counter/timer peripherals | T FF for clock division |
+| Digital Circuits | Shift registers, synchronisers | Flip-flops solve metastability in cross-clock-domain |
+| Research | Low-power FF design | Sub-threshold D FF for energy harvesting |
+
 ## Summary
 
 - Latches are level-sensitive; flip-flops are edge-triggered.
@@ -248,4 +308,29 @@ Show how a T flip-flop with T = 1 divides the input clock frequency by 2.
 
 ### Challenge Problem
 
-Design a 4-bit shift register using D flip-flops. The register should support parallel load and shift-right operations under the control of a mode signal M (M = 0 for shift, M = 1 for parallel load). Derive the input equation for each D flip-flop and draw the complete circuit.
+Design a 4-bit shift register using D flip-flops. The register should support parallel load and shift-right operations under the control of a mode signal M (M = 0 for shift,     M = 1 for parallel load). Derive the input equation for each D flip-flop and draw the complete circuit.
+
+### Chapter Quiz
+
+1. Which flip-flop type has no invalid input state?
+   - A) SR latch
+   - B) D flip-flop
+   - C) JK flip-flop
+   - D) T flip-flop
+
+2. Setup time is defined as:
+   - A) The time the clock edge takes to propagate
+   - B) The minimum time data must be valid **before** the clock edge
+   - C) The minimum time data must be valid **after** the clock edge
+   - D) The time between two clock edges
+
+3. A T flip-flop with T=1 divides the input frequency by:
+   - A) 1
+   - B) 2
+   - C) 4
+   - D) n
+
+<details>
+<summary>Answers</summary>
+1. C, 2. B, 3. B
+</details>

@@ -1,4 +1,4 @@
-﻿# Chapter 0: PHP Foundations for Laravel
+# Chapter 0: PHP Foundations for Laravel
 
 ---
 
@@ -20,7 +20,7 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
-![PHP Basics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/php-basics.png)
+![PHP Basics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/php-basics.png)
 
 
 ### 1.1 PHP Syntax and Variables

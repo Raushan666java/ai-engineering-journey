@@ -1,10 +1,10 @@
-﻿# Chapter 48: Manufacturing Interview Q&A
+# Chapter 48: Manufacturing Interview Q&A
 
 ---
 
 ## 1. Manufacturing Domain Knowledge
 
-![Manufacturing Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/48-interview-manufacturing.png)
+![Manufacturing Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/48-interview-manufacturing.png)
 
 
 ### Q1: What are the six core manufacturing domain entities in a Laravel manufacturing platform? How do they relate?

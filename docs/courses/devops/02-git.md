@@ -13,7 +13,7 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
-![Git, Linux Basics and Build Tools](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch02-git-linux-build.png)
+![Git, Linux Basics and Build Tools](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch02-git-linux-build.png)
 
 ### 2.1 Git Object Model
 
@@ -23,19 +23,19 @@ Each commit is identified by a SHA-1 hash of its contents, including parent hash
 
 ### 2.2 Branching Strategies
 
-**Git Flow** — Proposed by Vincent Driessen in 2010. Uses two long-running branches: `main` (production-ready code) and `develop` (integration branch). Supporting branches include `feature/*` (new features, branch from develop, merge back to develop), `release/*` (release preparation, branch from develop, merge to main and develop), and `hotfix/*` (urgent production fixes, branch from main, merge to main and develop). Git Flow is well-suited for versioned software with scheduled releases but introduces complexity and overhead for continuous delivery.
+**Git Flow** â€” Proposed by Vincent Driessen in 2010. Uses two long-running branches: `main` (production-ready code) and `develop` (integration branch). Supporting branches include `feature/*` (new features, branch from develop, merge back to develop), `release/*` (release preparation, branch from develop, merge to main and develop), and `hotfix/*` (urgent production fixes, branch from main, merge to main and develop). Git Flow is well-suited for versioned software with scheduled releases but introduces complexity and overhead for continuous delivery.
 
-**GitHub Flow** — A simpler model proposed by GitHub. Maintains a single long-running `main` branch. Features are developed on short-lived branches, submitted as pull requests, reviewed, and merged. Branches are deleted after merge. GitHub Flow works well for continuous delivery where every merge to main can be deployed. It does not support release branches or hotfix branches explicitly.
+**GitHub Flow** â€” A simpler model proposed by GitHub. Maintains a single long-running `main` branch. Features are developed on short-lived branches, submitted as pull requests, reviewed, and merged. Branches are deleted after merge. GitHub Flow works well for continuous delivery where every merge to main can be deployed. It does not support release branches or hotfix branches explicitly.
 
-**GitLab Flow** — Combines elements of both. Adds environment branches (`staging`, `production`) that track deployments, and feature branches with merge requests. Introduces upstream-downstream relationships for forked contributions. Supports multiple environments through environment branches rather than release branches.
+**GitLab Flow** â€” Combines elements of both. Adds environment branches (`staging`, `production`) that track deployments, and feature branches with merge requests. Introduces upstream-downstream relationships for forked contributions. Supports multiple environments through environment branches rather than release branches.
 
-**Trunk-Based Development** — Developers commit directly to a shared trunk (main) or use very short-lived feature branches (fewer than 2 days). Frequent small commits avoid merge conflicts. Requires robust feature flags to manage incomplete features. Trunk-based development is associated with high-performing teams and is required for continuous deployment.
+**Trunk-Based Development** â€” Developers commit directly to a shared trunk (main) or use very short-lived feature branches (fewer than 2 days). Frequent small commits avoid merge conflicts. Requires robust feature flags to manage incomplete features. Trunk-based development is associated with high-performing teams and is required for continuous deployment.
 
 ### 2.3 Merge vs Rebase
 
-**Merging** — `git merge feature` creates a new commit that has two parents, preserving the complete history of both branches. This accurately represents what happened but can create non-linear history with many merge commits.
+**Merging** â€” `git merge feature` creates a new commit that has two parents, preserving the complete history of both branches. This accurately represents what happened but can create non-linear history with many merge commits.
 
-**Rebasing** — `git rebase main` replays commits from the current branch onto the tip of main, creating new commits with different hashes. This produces a linear history but rewrites history, which is dangerous for shared branches.
+**Rebasing** â€” `git rebase main` replays commits from the current branch onto the tip of main, creating new commits with different hashes. This produces a linear history but rewrites history, which is dangerous for shared branches.
 
 The golden rule of rebasing: never rebase commits that have been pushed to a shared repository. Rebase local work before pushing; merge after pushing. The choice between merge and rebase reflects a philosophical difference: merge preserves reality, rebase presents an idealized narrative.
 
@@ -61,15 +61,15 @@ Automation via `git bisect run` passes a script that returns exit code 0 (good) 
 Git hooks are scripts that execute at specific points in the Git workflow. Hooks reside in `.git/hooks/` and are not version-controlled by default. Team-wide hooks can be managed through a `.githooks/` directory configured via `git config core.hooksPath .githooks`.
 
 Client-side hooks:
-- `pre-commit` — Run linters, formatters, and secret scanners before commit is recorded
-- `prepare-commit-msg` — Edit the default commit message
-- `commit-msg` — Validate commit message format
-- `pre-push` — Run tests before pushing
+- `pre-commit` â€” Run linters, formatters, and secret scanners before commit is recorded
+- `prepare-commit-msg` â€” Edit the default commit message
+- `commit-msg` â€” Validate commit message format
+- `pre-push` â€” Run tests before pushing
 
 Server-side hooks:
-- `pre-receive` — Validate incoming pushes (e.g., enforce linear history)
-- `update` — Per-branch policy enforcement
-- `post-receive` — Trigger CI, notifications, deployments
+- `pre-receive` â€” Validate incoming pushes (e.g., enforce linear history)
+- `update` â€” Per-branch policy enforcement
+- `post-receive` â€” Trigger CI, notifications, deployments
 
 Tools like Husky and pre-commit manage hook installation and versioning across teams.
 

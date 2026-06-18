@@ -1,4 +1,6 @@
-﻿# Chapter 8: Decentralized Finance (DeFi)
+# Chapter 8: Decentralized Finance (DeFi)
+
+> **Previous:** [Chapter 7: Decentralized Applications (dApps)](./07-dapps.md) | **Next:** [Chapter 9: Enterprise Blockchain](./09-enterprise.md)
 
 ---
 
@@ -10,6 +12,27 @@
 - Analyze the concepts of Yield Farming and Liquidity Provision
 - Identify the risks associated with DeFi, including "Impermanent Loss" and "Flash Loan" attacks
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| DeFi Ecosystem | Financial services without intermediaries | Built entirely on smart contracts |
+| AMMs | x × y = k constant product formula | No order book needed, but price slippage |
+| Stablecoins | Fiat-backed, crypto-collateralized, algorithmic | Each type has different trust assumptions |
+| Yield Farming | Moving assets across protocols for returns | High risk, potential impermanent loss |
+| Flash Loans | Uncollateralized loans within one transaction | Powerful tool; also exploited in attacks |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[DeFi Overview] --> B[AMM & Uniswap]
+    B --> C[Stablecoins]
+    C --> D[Lending Protocols]
+    D --> E[Yield Farming]
+    E --> F[DeFi Risks]
+```
+
 ---
 
 ## Theory
@@ -17,7 +40,7 @@
 ### What is DeFi?
 DeFi is an ecosystem of financial applications built on top of blockchain networks. It aims to recreate traditional financial services (Lending, Borrowing, Trading, Insurance) in a decentralized, permissionless, and transparent manner.
 
-![DeFi Ecosystem](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch08-defi.png)
+![DeFi Ecosystem](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/blockchain/ch08-defi.png)
 
 ### Automated Market Makers (AMM)
 AMMs replace traditional order books. Instead of matching buyers and sellers, users trade against a **Liquidity Pool**.
@@ -53,7 +76,81 @@ The price of ETH "slipped" during the trade.
 3. Alice can borrow a maximum of $2,000 / 1.5 = 1,333$ DAI.
 4. If the price of ETH drops to $1,500, Alice's position is **Liquidated** to ensure the protocol remains solvent.
 
+> **One-Sentence Takeaway:** DeFi composability means any protocol can plug into any other like Lego bricks — but this also means a vulnerability in one contract can cascade across the entire ecosystem.
+
+> **Pro Tip:** When providing liquidity to an AMM, use a calculator to estimate impermanent loss before depositing. For a 2x price change, impermanent loss is ~5.7%; for 5x, it's ~25.5%.
+
+> **Warning:** Algorithmic stablecoins are experimental and have repeatedly proven unstable. The collapse of UST ($40B+ loss) demonstrated that algorithm-only pegs without sufficient collateral are fragile.
+
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| AMM (Uniswap) | x × y = k constant product | No order book, infinite liquidity | Token swaps |
+| Order Book (CEX) | Buy/sell limit orders | Better price discovery | Professional trading |
+| DAI | Crypto-collateralized stablecoin | Over-collateralized, decentralized | Lending, stable savings |
+| USDC | Fiat-backed stablecoin | Centralized, audited reserves | Payments, trading pairs |
+| Yield Farming | Moving liquidity for rewards | High APY but high risk | Liquidity incentives |
+| Flash Loan | Borrow/repay in same block | Uncollateralized, atomic | Arbitrage, liquidations |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **AMM Formula** | x × y = k | Larger pools = less slippage |
+| **Impermanent Loss** | Loss vs holding during price divergence | 2x change = 5.7% IL |
+| **Stablecoin Types** | Fiat-backed, crypto-collateralized, algorithmic | Different trust and risk profiles |
+| **Lending** | Over-collateralization, liquidation, health factor | Typically 120-150% collateral ratio |
+| **DeFi Risks** | Smart contract bugs, oracle manipulation, IL, liquidation | Composable risk = systemic risk |
+
+## Cross-Application Matrix
+
+| Technique | DeFi | Smart Contracts | Enterprise Blockchain | Research |
+|-----------|------|-----------------|----------------------|----------|
+| AMM | Token swaps | N/A | Settlement channels | AMM efficiency models |
+| Lending | Compound, Aave | Collateral contracts | B2B lending | Risk models |
+| Stablecoins | Trading pairs, yield | Payment contracts | Cross-border settlement | Peg stability research |
+| Flash Loans | Arbitrage, liquidations | Atomic execution | N/A | MEV analysis |
+| Yield Farming | LP incentives | Reward distribution | N/A | Tokenomics design |
+
+## Chapter Quiz
+
+1. What is the impermanent loss if a token pair price ratio changes by 4x from the time of deposit?
+   - A) 0%
+   - B) ~20%
+   - C) ~25.5%
+   - D) ~50%
+
+<details>
+<summary>Answer</summary>
+**B) ~20%.** The formula for impermanent loss is (2√r)/(1+r) - 1 where r is the price ratio. For r=4, IL ≈ 20%. For comparison, 2x → 5.7%, 3x → 13.4%, 5x → 25.5%.
+</details>
+
+2. Why must flash loans be repaid in the same transaction?
+   - A) Because interest is calculated per block
+   - B) Because Ethereum atomicity guarantees the entire tx succeeds or reverts
+   - C) Because flash lenders don't trust borrowers
+   - D) Because each block has a gas limit
+
+<details>
+<summary>Answer</summary>
+**B) Because Ethereum atomicity guarantees the entire tx succeeds or reverts.** If the flash loan isn't repaid by the end of the transaction, the entire transaction reverts — including the loan. This makes them trustless.
+</details>
+
+3. What is the primary risk of an algorithmic stablecoin?
+   - A) The company behind it can steal funds
+   - B) A death spiral where price depeg triggers further selling
+   - C) High transaction fees
+   - D) Regulatory compliance
+
+<details>
+<summary>Answer</summary>
+**B) A death spiral where price depeg triggers further selling.** Algorithmic stablecoins rely on arbitrage to maintain their peg. If confidence breaks, the arbitrage mechanism can reverse, causing a cascading devaluation (as seen with UST/LUNA).
+</details>
+
+## Summary
 
 ## Summary
 

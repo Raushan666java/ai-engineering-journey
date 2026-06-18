@@ -1,4 +1,4 @@
-﻿# Chapter 28: Finance & FinTech Agents
+# Chapter 28: Finance & FinTech Agents
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![Finance Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/28-finance.png)
+![Finance Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/28-finance.png)
 
 
 ### 28.1 Financial Data Models & Compliance

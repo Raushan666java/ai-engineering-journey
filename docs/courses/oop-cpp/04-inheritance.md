@@ -12,7 +12,7 @@ After studying this chapter, students will be able to:
 
 ## 4.1 Base and Derived Classes
 
-![Inheritance Types Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/04-inheritance.png)
+![Inheritance Types Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/04-inheritance.png)
 
 Inheritance enables a class to acquire the members of another class, establishing an is-a relationship. The class being inherited from is the *base class* (or parent, superclass); the inheriting class is the *derived class* (or child, subclass).
 
@@ -88,7 +88,7 @@ class Car : public Vehicle { /* ... */ };
 ```
 
 ### Multilevel Inheritance
-A chain of inheritance: A → B → C. Each level adds or specialises behaviour.
+A chain of inheritance: A â†’ B â†’ C. Each level adds or specialises behaviour.
 
 ```cpp
 class Animal { /* ... */ };
@@ -128,7 +128,7 @@ A combination of multiple and hierarchical inheritance creates a diamond shape, 
 
 ## 4.4 The Diamond Problem and Virtual Inheritance
 
-Without special handling, class D inherits two copies of A's members—one through B and one through C—causing ambiguity:
+Without special handling, class D inherits two copies of A's membersâ€”one through B and one through Câ€”causing ambiguity:
 
 ```cpp
 class A {

@@ -1,4 +1,4 @@
-﻿# Chapter 37: Enterprise Capstone â€” Multi-Agent Platform
+# Chapter 37: Enterprise Capstone â€” Multi-Agent Platform
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![Enterprise Capstone](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/37-enterprise-capstone.png)
+![Enterprise Capstone](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/37-enterprise-capstone.png)
 
 
 ### 37.1 Platform Overview & Architecture

@@ -1,4 +1,4 @@
-﻿# Chapter: JavaScript Fundamentals
+# Chapter: JavaScript Fundamentals
 
 ---
 
@@ -21,7 +21,7 @@
 
 ## Theory
 
-![JavaScript Basics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/javascript-basics.png)
+![JavaScript Basics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/javascript-basics.png)
 
 
 ### 1. JavaScript Syntax and Variables

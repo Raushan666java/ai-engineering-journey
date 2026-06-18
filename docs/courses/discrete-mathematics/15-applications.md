@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Applications of Discrete Mathematics Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/15-applications.png)
+![Applications of Discrete Mathematics Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/15-applications.png)
 
 After completing this chapter, you will be able to:
 
@@ -97,7 +97,7 @@ Given $n$ cities and distances, find the shortest tour visiting each city exactl
 
 **Example 15.2** (Network flow). A network has source $s$, nodes $a, b$, sink $t$. Edges and capacities: $s \rightarrow a: 10$, $s \rightarrow b: 5$, $a \rightarrow b: 3$, $a \rightarrow t: 8$, $b \rightarrow t: 7$. Compute max flow.
 
-*Solution.* Max flow = 12. One optimal flow: $s \rightarrow a$: 8, $s \rightarrow b$: 4, $a \rightarrow t$: 8, $b \rightarrow t$: 4, $a \rightarrow b$: 0. The min cut is $(\{s\}, \{a,b,t\})$ with capacity 15 — wait, verify. The actual min cut capacity equals 12.
+*Solution.* Max flow = 12. One optimal flow: $s \rightarrow a$: 8, $s \rightarrow b$: 4, $a \rightarrow t$: 8, $b \rightarrow t$: 4, $a \rightarrow b$: 0. The min cut is $(\{s\}, \{a,b,t\})$ with capacity 15 â€” wait, verify. The actual min cut capacity equals 12.
 
 **Example 15.3** (Matching). Students $\{A,B,C\}$ and projects $\{1,2,3,4\}$. Preferences: $A$ likes $\{1,2\}$, $B$ likes $\{2,3\}$, $C$ likes $\{3,4\}$. Can all students get a project?
 

@@ -4,7 +4,7 @@
 
 ---
 
-![JPA Relationships - ManyToMany vs Join Entity](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/59-interview-databases-a.png)
+![JPA Relationships - ManyToMany vs Join Entity](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-a.png)
 
 ### Q1: What is the difference between JDBC and JPA, and when would you use each?
 
@@ -15,7 +15,7 @@ JDBC (Java Database Connectivity) is a low-level API that lets you execute raw S
 Use JDBC when you need fine-grained control over SQL, are doing bulk operations where ORM overhead hurts, or are interacting with database-specific features. Use JPA when you want to reduce boilerplate, need automatic dirty checking, lazy loading, or a unit-of-work pattern, and your queries are reasonably standard.
 
 ```java
-// ── JDBC approach ──
+// â”€â”€ JDBC approach â”€â”€
 public User findUserByIdJdbc(long id) {
     String sql = "SELECT id, name, email FROM users WHERE id = ?";
     try (Connection conn = dataSource.getConnection();
@@ -36,7 +36,7 @@ public User findUserByIdJdbc(long id) {
     return null;
 }
 
-// ── JPA approach ──
+// â”€â”€ JPA approach â”€â”€
 @Repository
 public class UserRepository {
     @PersistenceContext
@@ -58,8 +58,8 @@ JPA wraps JDBC under the hood. Every JPA operation translates to JDBC calls even
 
 These control how Hibernate synchronizes your entity mappings with the database schema:
 
-- `validate`: Checks that the database schema matches your entities. Throws an exception on mismatch. Safe for production — it never modifies the schema.
-- `update`: Automatically alters the schema to match your entities (adds new tables/columns, but never drops anything). **Not safe for production** — it can make destructive guesses in edge cases.
+- `validate`: Checks that the database schema matches your entities. Throws an exception on mismatch. Safe for production â€” it never modifies the schema.
+- `update`: Automatically alters the schema to match your entities (adds new tables/columns, but never drops anything). **Not safe for production** â€” it can make destructive guesses in edge cases.
 - `create`: Drops all existing tables and recreates them from your entities. Data loss guaranteed. Useful for testing only.
 - `create-drop`: Same as `create`, but also drops the schema when the session factory closes. Ideal for embedded databases in unit tests.
 
@@ -93,7 +93,7 @@ public class Post {
     private List<Comment> comments;
 }
 
-// ❌ Triggers N+1 queries:
+// âŒ Triggers N+1 queries:
 // SELECT p FROM Post p                          -- 1 query
 // for each post: SELECT c FROM Comment c WHERE c.post_id = ?  -- N queries
 List<Post> posts = em.createQuery("SELECT p FROM Post p", Post.class)
@@ -105,15 +105,15 @@ for (Post p : posts) {
 
 Solutions, from best to worst:
 
-**1. JOIN FETCH — one query with a join:**
+**1. JOIN FETCH â€” one query with a join:**
 ```java
-// ✅ Single query with LEFT JOIN FETCH
+// âœ… Single query with LEFT JOIN FETCH
 TypedQuery<Post> q = em.createQuery(
     "SELECT p FROM Post p LEFT JOIN FETCH p.comments", Post.class);
 List<Post> posts = q.getResultList();
 ```
 
-**2. `@EntityGraph` — declarative fetch plan:**
+**2. `@EntityGraph` â€” declarative fetch plan:**
 ```java
 @Entity
 @NamedEntityGraph(name = "Post.comments", attributeNodes = @NamedAttributeNode("comments"))
@@ -124,21 +124,21 @@ public class Post { /* ... */ }
 List<Post> findAll();
 ```
 
-**3. Hibernate `@BatchSize` — loads lazy proxies in batches:**
+**3. Hibernate `@BatchSize` â€” loads lazy proxies in batches:**
 ```java
 @OneToMany(mappedBy = "post")
 @BatchSize(size = 20)
 private List<Comment> comments;
 ```
 
-**4. DTO projection — avoid entity loading entirely:**
+**4. DTO projection â€” avoid entity loading entirely:**
 ```java
 List<PostSummary> summaries = em.createQuery(
     "SELECT new com.example.PostSummary(p.id, p.title, SIZE(p.comments)) FROM Post p",
     PostSummary.class).getResultList();
 ```
 
-JOIN FETCH is the most common fix. Watch for `MultipleBagFetchException` when fetching multiple collections — use `Set` instead of `List` or fetch one collection per query.
+JOIN FETCH is the most common fix. Watch for `MultipleBagFetchException` when fetching multiple collections â€” use `Set` instead of `List` or fetch one collection per query.
 
 ---
 
@@ -164,8 +164,8 @@ public class Order {
 Rules of thumb:
 - Always prefer `LAZY` for `@OneToMany` and `@ManyToMany`. Eager loading a large collection can pull in the entire database.
 - `@ManyToOne` defaults to `EAGER`. Consider changing it to `LAZY` and using `JOIN FETCH` when you actually need the parent.
-- `@Basic` (scalar fields) is always `EAGER` — there is no lazy loading for simple columns unless you enable bytecode enhancement.
-- Eager loading via `@ManyToOne` can cascade into multiple joins: `Order → Customer → Address → Country`. One simple query becomes a 4-table Cartesian product.
+- `@Basic` (scalar fields) is always `EAGER` â€” there is no lazy loading for simple columns unless you enable bytecode enhancement.
+- Eager loading via `@ManyToOne` can cascade into multiple joins: `Order â†’ Customer â†’ Address â†’ Country`. One simple query becomes a 4-table Cartesian product.
 
 The `@NamedEntityGraph` approach gives you the best of both worlds: LAZY by default, eager via explicit fetch graph when needed.
 
@@ -187,7 +187,7 @@ public class Account {
     private long version;  // incremented on every update
 }
 
-// Usage — retry on conflict:
+// Usage â€” retry on conflict:
 @Transactional
 public void transfer(Long fromId, Long toId, BigDecimal amount) {
     try {
@@ -221,9 +221,9 @@ public void transfer(Long fromId, Long toId, BigDecimal amount) {
 ```
 
 Pessimistic lock modes:
-- `PESSIMISTIC_READ` — shared lock, others can read but not write
-- `PESSIMISTIC_WRITE` — exclusive lock, no one else can read or write
-- `PESSIMISTIC_FORCE_INCREMENT` — pessimistic lock + version increment on commit
+- `PESSIMISTIC_READ` â€” shared lock, others can read but not write
+- `PESSIMISTIC_WRITE` â€” exclusive lock, no one else can read or write
+- `PESSIMISTIC_FORCE_INCREMENT` â€” pessimistic lock + version increment on commit
 
 Use optimistic for read-heavy workloads with rare writes. Use pessimistic for financial transactions, inventory reservations, and any operation where retry is expensive or unacceptable.
 
@@ -236,7 +236,7 @@ Use optimistic for read-heavy workloads with rare writes. Use pessimistic for fi
 `@Transactional` is declarative transaction management. Spring wraps the method in a proxy that begins a transaction before the method and commits (or rolls back) after it. Manual management uses `TransactionTemplate` or `PlatformTransactionManager` directly.
 
 ```java
-// ── Declarative with @Transactional ──
+// â”€â”€ Declarative with @Transactional â”€â”€
 @Service
 public class OrderService {
     @Transactional
@@ -247,7 +247,7 @@ public class OrderService {
     }
 }
 
-// ── Manual with TransactionTemplate ──
+// â”€â”€ Manual with TransactionTemplate â”€â”€
 @Service
 public class OrderService {
     private final TransactionTemplate txTemplate;
@@ -288,16 +288,16 @@ Key `@Transactional` attributes:
 
 **Answer:**
 
-**First-level cache** (L1) is the `EntityManager`/`Session`-scoped cache. Every entity loaded or persisted within a session is stored in L1. Subsequent lookups by the same ID within the same session hit the cache instead of the database. L1 is always enabled and cannot be disabled — it is a core part of the unit-of-work pattern.
+**First-level cache** (L1) is the `EntityManager`/`Session`-scoped cache. Every entity loaded or persisted within a session is stored in L1. Subsequent lookups by the same ID within the same session hit the cache instead of the database. L1 is always enabled and cannot be disabled â€” it is a core part of the unit-of-work pattern.
 
 ```java
 // First-level cache in action:
 User u1 = em.find(User.class, 1L);  // SQL: SELECT ... WHERE id = 1
-User u2 = em.find(User.class, 1L);  // L1 cache hit — no SQL
+User u2 = em.find(User.class, 1L);  // L1 cache hit â€” no SQL
 
 em.clear();  // clears L1 cache
 
-User u3 = em.find(User.class, 1L);  // SQL again — L1 was empty
+User u3 = em.find(User.class, 1L);  // SQL again â€” L1 was empty
 ```
 
 **Second-level cache** (L2) is a `SessionFactory`-scoped cache shared across all sessions. You must explicitly enable it and configure a cache provider (Hazelcast, Redis, Ehcache, or the built-in `hibernate-jcache`).
@@ -333,7 +333,7 @@ Cache concurrency strategies:
 - `NONSTRICT_READ_WRITE`: for data that rarely conflicts. Weaker isolation.
 - `TRANSACTIONAL`: for JTA environments. Requires a transactional cache provider.
 
-L2 cache is not a replacement for a well-tuned database. Use it sparingly — cache only reference data (countries, status codes, configuration) and data that is expensive to compute but rarely changes.
+L2 cache is not a replacement for a well-tuned database. Use it sparingly â€” cache only reference data (countries, status codes, configuration) and data that is expensive to compute but rarely changes.
 
 ---
 

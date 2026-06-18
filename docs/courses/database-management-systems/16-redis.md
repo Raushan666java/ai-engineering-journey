@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Redis Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch16-redis.png)
+![Redis Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch16-redis.png)
 
 ### 16.1 Redis Overview
 
@@ -21,8 +21,8 @@ Redis (Remote Dictionary Server) is an **in-memory data structure store** often 
 - **In-memory:** All data resides in RAM (microsecond latency)
 - **Single-threaded event loop:** Operations are atomic and serialized
 - **Persistence optional:** Can persist to disk (RDB/AOF) or be purely ephemeral
-- **Rich data types:** Beyond simple key-value — strings, lists, sets, sorted sets, hashes, bitmaps, hyperloglogs, streams, geospatial
-- **Client-server protocol:** RESP (REdis Serialization Protocol) — simple, human-readable
+- **Rich data types:** Beyond simple key-value â€” strings, lists, sets, sorted sets, hashes, bitmaps, hyperloglogs, streams, geospatial
+- **Client-server protocol:** RESP (REdis Serialization Protocol) â€” simple, human-readable
 
 **When to use Redis:**
 - Caching (reducing database load)
@@ -83,7 +83,7 @@ SET user:1:email "new@example.com" XX  # Set only if key exists
 
 #### 16.2.2 Lists
 
-Ordered sequences of strings. Implemented as linked lists — fast head/tail operations, slow random access by index.
+Ordered sequences of strings. Implemented as linked lists â€” fast head/tail operations, slow random access by index.
 
 ```bash
 # Add elements (left/right)
@@ -152,7 +152,7 @@ SCARD user:1:interests  # 3
 
 #### 16.2.4 Sorted Sets
 
-Sets with a score for each member. Ordered by score — critical for leaderboards.
+Sets with a score for each member. Ordered by score â€” critical for leaderboards.
 
 ```bash
 # Add members with scores
@@ -309,7 +309,7 @@ def get_user(user_id):
     if user:
         return deserialize(user)
 
-    # Cache miss — load from database
+    # Cache miss â€” load from database
     user = db.query("SELECT * FROM users WHERE id = ?", user_id)
 
     # Store in cache with TTL
@@ -411,10 +411,10 @@ appendfsync everysec   # fsync every second (good balance)
 
 ```
 Master (read/write)
-  │
-  ├── Replica 1 (read-only)
-  │
-  └── Replica 2 (read-only)
+  â”‚
+  â”œâ”€â”€ Replica 1 (read-only)
+  â”‚
+  â””â”€â”€ Replica 2 (read-only)
 ```
 
 ```bash
@@ -425,16 +425,16 @@ REPLICAOF redis-master 6379
 **Sentinel (High Availability):**
 
 ```
-┌────────────┐      ┌────────────┐      ┌────────────┐
-│ Sentinel 1  │      │ Sentinel 2  │      │ Sentinel 3  │
-└──────┬──────┘      └──────┬──────┘      └──────┬──────┘
-       │                    │                    │
-       └────────────────────┼────────────────────┘
-                            │
-                      ┌─────┴──────┐
-                      │   Master    │  ← Failover if master dies
-                      │  (primary)  │      (promote replica)
-                      └────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Sentinel 1  â”‚      â”‚ Sentinel 2  â”‚      â”‚ Sentinel 3  â”‚
+â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
+       â”‚                    â”‚                    â”‚
+       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                            â”‚
+                      â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+                      â”‚   Master    â”‚  â† Failover if master dies
+                      â”‚  (primary)  â”‚      (promote replica)
+                      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 16.7 Redis Cluster
@@ -443,22 +443,22 @@ Automatic sharding across multiple Redis nodes.
 
 ```
                     Client
-                      │
-                      ▼
-              ┌───────────────┐
-              │  Redis Cluster │
-              │  (16384 slots) │
-              └───────┬───────┘
-                      │
-          ┌───────────┼───────────┐
-          │           │           │
-          ▼           ▼           ▼
-    ┌──────────┐ ┌──────────┐ ┌──────────┐
-    │ Node 1    │ │ Node 2    │ │ Node 3    │
-    │ slots     │ │ slots     │ │ slots     │
-    │ 0-5460   │ │ 5461-10921│ │ 10922-16383│
-    │ +replica  │ │ +replica  │ │ +replica  │
-    └──────────┘ └──────────┘ └──────────┘
+                      â”‚
+                      â–¼
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚  Redis Cluster â”‚
+              â”‚  (16384 slots) â”‚
+              â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+                      â”‚
+          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+          â”‚           â”‚           â”‚
+          â–¼           â–¼           â–¼
+    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚ Node 1    â”‚ â”‚ Node 2    â”‚ â”‚ Node 3    â”‚
+    â”‚ slots     â”‚ â”‚ slots     â”‚ â”‚ slots     â”‚
+    â”‚ 0-5460   â”‚ â”‚ 5461-10921â”‚ â”‚ 10922-16383â”‚
+    â”‚ +replica  â”‚ â”‚ +replica  â”‚ â”‚ +replica  â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 - **16384 hash slots** total; each key is hashed to a slot
@@ -587,6 +587,119 @@ for i in range(10):
     enqueue_task("email", {"to": f"user{i}@example.com", "template": "welcome"})
 ```
 
+## ðŸ’¡ Pro Tips
+
+1. **Use hashes instead of plain keys for objects** â€” `user:1001:name`, `user:1001:email` causes key explosion. Use `HSET user:1001 name "Alice" email "alice@example.com"` instead.
+2. **Always set TTL for cache data** â€” without expiration, unused keys waste memory forever. Redis eviction policies are a safety net, not a strategy.
+3. **SCAN is your production friend, not KEYS** â€” `KEYS *` blocks Redis for potentially seconds on large datasets. `SCAN` with cursor-based iteration is non-blocking.
+4. **Sorted sets are Redis's superpower** â€” leaderboards, rate limiters, priority queues, and time-series queries all benefit from the O(log n) insertion + O(log n+ m) range query.
+5. **Be careful with large keys/values** â€” a single key larger than 10MB can block replication and slow down the entire instance. Consider compression or splitting.
+
+## One-Sentence Takeaways
+
+- **16.1:** Redis is an in-memory data structure store offering sub-millisecond latency for strings, lists, sets, sorted sets, hashes, and streams.
+- **16.2:** Each data type has specialized commands optimized for its structure â€” LPUSH/RPOP for queues, ZADD/ZRANGE for leaderboards, HSET/HGET for objects.
+- **16.3:** Pipelining and transactions batch multiple commands to reduce round-trip latency.
+- **16.4:** Pub/Sub enables real-time messaging between publishers and subscribers.
+- **16.5:** Persistence options â€” RDB (point-in-time snapshots) and AOF (append-only log) â€” offer different durability vs. performance trade-offs.
+- **16.6:** Redis replication provides read scaling; Sentinel provides automatic failover.
+- **16.7:** Redis Cluster provides automatic sharding across multiple nodes for horizontal scaling.
+- **16.8:** Common patterns include caching, rate limiting, distributed locks, leaderboards, and message queues.
+
+## Concept Comparison Table
+
+| Data Type | Internal Structure | Use Case | Key Commands |
+|-----------|------------------|----------|-------------|
+| **String** | Byte array | Caching, counters, sessions | SET, GET, INCR, DECR, MSET |
+| **List** | Linked list | Queue, stack, timeline | LPUSH, RPUSH, LPOP, BRPOP, LRANGE |
+| **Set** | Hash table | Tags, uniqueness, intersections | SADD, SREM, SISMEMBER, SUNION, SINTER |
+| **Sorted Set** | Skip list + hash table | Leaderboards, rate limiters | ZADD, ZRANGE, ZRANK, ZINCBY, ZREM |
+| **Hash** | Hash table | Objects, field-level access | HSET, HGET, HGETALL, HINCRBY |
+| **Stream** | Radix tree | Event log, message queue | XADD, XREAD, XRANGE, XGROUP |
+
+| Persistence | Durability | Performance Impact | Restore Speed |
+|------------|-----------|-------------------|---------------|
+| **None** | None (cache only) | Best | Instant (empty) |
+| **RDB (snapshot)** | Point-in-time (lose last N min) | Moderate (fork on save) | Fast (load single file) |
+| **AOF (append log)** | Configurable (always/every sec) | Slower writes | Slower (replay all commands) |
+| **RDB + AOF** | Best (both) | Highest | Depends on size |
+
+## Quick Reference
+
+| Redis Pattern | Implementation | Use Case |
+|--------------|---------------|----------|
+| **Cache-aside** | Check cache â†’ miss â†’ query DB â†’ set cache | Read-heavy workloads |
+| **Rate Limiting** | INCR + EXPIRE per user/timestamp window | API rate limiting |
+| **Distributed Lock** | SET key uuid NX EX 10 â†’ DEL if matches | Mutual exclusion across nodes |
+| **Leaderboard** | ZINCBY scores â†’ ZRANGE | Gaming, contests |
+| **Message Queue** | LPUSH + BRPOP / XADD + XREADGROUP | Async job processing |
+| **Session Store** | SET with TTL | Web app sessions |
+| **Pub/Sub** | PUBLISH â†’ SUBSCRIBE | Real-time notifications |
+
+## Cross-Application Matrix
+
+| Redis Feature | Applied In | Why It Matters |
+|--------------|-----------|----------------|
+| **String + TTL** | HTTP caching, API response cache | Sub-millisecond cache hits reduce DB load |
+| **Sorted Sets** | Gaming leaderboards | O(log n) score updates, O(log n + m) range queries |
+| **Lists + BRPOP** | Job queues (Sidekiq, Celery) | Reliable task distribution with blocking pop |
+| **Streams** | Event sourcing, activity feeds | Persistent, consumer-group-aware message bus |
+| **Hashes** | User profiles, session data | Efficient field-level reads/writes with TTL |
+| **SETNX (Lock)** | Distributed rate limiting | Prevents race conditions in multi-server deployments |
+| **Pub/Sub** | Live dashboards, chat | Real-time push without polling |
+
+## Chapter Quiz
+
+1. Which Redis data type is best for implementing a leaderboard?
+   a) List
+   b) Set
+   c) Sorted Set
+   d) Hash
+
+2. The command SCAN should be preferred over KEYS because:
+   a) SCAN is non-blocking
+   b) SCAN returns more results
+   c) KEYS is deprecated
+   d) SCAN requires fewer arguments
+
+3. Which persistence option provides the best durability?
+   a) No persistence
+   b) RDB only
+   c) AOF with fsync every second
+   d) AOF with fsync always
+
+4. The cache-aside pattern works as follows:
+   a) Write to cache first, then DB
+   b) Check cache â†’ miss â†’ query DB â†’ store in cache
+   c) Always write to DB and cache simultaneously
+   d) Only use cache, never query the DB
+
+5. Redis is primarily designed for:
+   a) Long-term archival storage
+   b) In-memory workloads with sub-millisecond latency
+   c) Complex relational queries
+   d) Document storage with aggregation
+
+6. Which command atomically increments a counter?
+   a) SET counter 0 then counter = counter + 1
+   b) INCR counter
+   c) ADD counter 1
+   d) UPDATE counter
+
+7. Redis Cluster provides:
+   a) Automatic failover only
+   b) Automatic sharding across nodes
+   c) SQL compatibility
+   d) Cross-database joins
+
+8. A Redis distributed lock uses SET with which flags?
+   a) SET key value NX EX seconds
+   b) SET key value XX PX milliseconds
+   c) SET key value GET
+   d) SET key value KEEPTTL
+
+**Answers:** 1-c, 2-a, 3-d, 4-b, 5-b, 6-b, 7-b, 8-a
+
 ## Summary
 
 - Redis is an in-memory data structure store with sub-millisecond latency.
@@ -627,7 +740,7 @@ for i in range(10):
 9. Design a leaderboard system that supports:
    - Global rankings by score
    - Weekly and daily rankings (separate keys)
-   - Tie-breaking (earliest player wins ties — hint: use fractional scores)
+   - Tie-breaking (earliest player wins ties â€” hint: use fractional scores)
    - Efficient top-N retrieval
    - A player's rank and nearby competitors
    Show the exact Redis data structures and commands.

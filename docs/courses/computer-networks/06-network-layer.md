@@ -1,5 +1,7 @@
 # Chapter 6: The Network Layer
 
+> **Prerequisites:** [Chapter 5: Ethernet Switching](./05-ethernet-switching.md) â€” L2 forwarding and VLANs | **Next:** [Chapter 7: Routing](./07-routing.md) â€” IP forwarding to path selection
+
 ## Learning Objectives
 
 1. Describe the IPv4 datagram format and explain the function of each header field.
@@ -9,9 +11,38 @@
 5. Compare IPv4 and IPv6 header formats and describe IPv6 address types.
 6. Analyze the protocols that support IP: DHCP, ARP, and ICMP.
 
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| IPv4 Datagram | 20-byte header with frag, TTL, checksum | Fragmentation is best avoided â€” use path MTU discovery |
+| Addressing | 32-bit address, classfulâ†’CIDR evolution | CIDR enables route aggregation; VLSM minimizes wasted addresses |
+| NAT | Port multiplexing shares one public IP | Breaks end-to-end connectivity; IPv6 is the real fix |
+| IPv6 | 128-bit address, no checksum, no fragmentation | Flow label enables per-flow QoS; extension headers replace options |
+| DHCP | Automated address assignment (DORA) | Reduces manual configuration errors |
+| ARP/ICMP | MAC resolution and diagnostic messaging | ARP is local-link only; ICMP enables ping/traceroute |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Network Layer] --> B[IPv4]
+    A --> C[IPv6]
+    A --> D[Supporting Protocols]
+    B --> B1[Datagram Format]
+    B --> B2[Fragmentation]
+    B --> B3[Addressing / CIDR]
+    B --> B4[NAT]
+    C --> C1[Header / Address Types]
+    C --> C2[Transition Mechanisms]
+    D --> D1[DHCP / ARP / ICMP]
+```
+
 ## 6.1 IPv4
 
-![Network Layer: IP, Addressing, Supporting Protocols and Routing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch05-network-routing.png)
+![Network Layer: IP, Addressing, Supporting Protocols and Routing](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch05-network-routing.png)
 
 ### 6.1.1 IPv4 Datagram Format
 
@@ -41,9 +72,9 @@ The fragmentation algorithm: the router divides the payload into 8-byte-aligned 
 
 Example: a 4000-byte datagram (3980-byte payload) traverses a link with MTU 1500. The 20-byte header leaves 1480 bytes for payload per fragment:
 
-- Fragment 1: offset 0, MF=1, bytes 0–1479
-- Fragment 2: offset 185 (1480/8), MF=1, bytes 1480–2959
-- Fragment 3: offset 370, MF=0, bytes 2960–3979
+- Fragment 1: offset 0, MF=1, bytes 0â€“1479
+- Fragment 2: offset 185 (1480/8), MF=1, bytes 1480â€“2959
+- Fragment 3: offset 370, MF=0, bytes 2960â€“3979
 
 ### 6.1.3 IP Addressing
 
@@ -51,13 +82,13 @@ Every IPv4 interface has a 32-bit address, typically written in dotted-decimal n
 
 | Class | Prefix | Network Bits | Host Bits | Address Range |
 |-------|--------|-------------|-----------|---------------|
-| A | 0 | 8 | 24 | 1.0.0.0 – 127.255.255.255 |
-| B | 10 | 16 | 16 | 128.0.0.0 – 191.255.255.255 |
-| C | 110 | 24 | 8 | 192.0.0.0 – 223.255.255.255 |
-| D | 1110 | multicast | — | 224.0.0.0 – 239.255.255.255 |
-| E | 1111 | reserved | — | 240.0.0.0 – 255.255.255.255 |
+| A | 0 | 8 | 24 | 1.0.0.0 â€“ 127.255.255.255 |
+| B | 10 | 16 | 16 | 128.0.0.0 â€“ 191.255.255.255 |
+| C | 110 | 24 | 8 | 192.0.0.0 â€“ 223.255.255.255 |
+| D | 1110 | multicast | â€” | 224.0.0.0 â€“ 239.255.255.255 |
+| E | 1111 | reserved | â€” | 240.0.0.0 â€“ 255.255.255.255 |
 
-Classful addressing was inefficient — a Class B network provided 65,534 host addresses, far more than most organizations needed, while a Class C network provided only 254. Subnetting and CIDR solved this.
+Classful addressing was inefficient â€” a Class B network provided 65,534 host addresses, far more than most organizations needed, while a Class C network provided only 254. Subnetting and CIDR solved this.
 
 ### 6.1.4 Subnetting
 
@@ -142,6 +173,90 @@ The Internet Control Message Protocol (ICMP) conveys error messages and operatio
 
 The `ping` utility sends ICMP Echo Requests and measures round-trip time. `traceroute` sends datagrams with increasing TTL values and reads the ICMP TTL Exceeded messages from each router.
 
+---
+
+### Concept Comparison Table
+
+| Concept | Address Size | Header | Fragmentation | Checksum |
+|---------|-------------|--------|---------------|----------|
+| IPv4 | 32 bits | 20-60 bytes variable | Routers can fragment | Header only (16-bit) |
+| IPv6 | 128 bits | 40 bytes fixed | Source only (PMTUD) | None (L2/L4 handles) |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **IPv4 Classes** | A (0.0.0.0/8), B (128.0.0.0/16), C (192.0.0.0/24), D (multicast), E (reserved) |
+| **Private Ranges** | 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16 |
+| **CIDR Notation** | /n where n = prefix bits; supports variable lengths (VLSM) |
+| **IPv6 Shortening** | Omit leading zeros; replace one zero-run with :: (e.g., 2001:db8::1) |
+| **ICMP Key Types** | 0=Echo Reply, 3=Dest Unreachable, 8=Echo Request, 11=TTL Exceeded |
+| **DHCP DORA** | Discover â†’ Offer â†’ Request â†’ Acknowledge |
+
+### Cross-Application Matrix
+
+| Concept | Network Admin | Cloud Engineering | Security | DevOps |
+|---------|--------------|-------------------|----------|--------|
+| Subnetting/CIDR | IP allocation, route summarization | VPC design, subnet planning | Network segmentation | Container networking (CNI) |
+| NAT | Home/SOHO routing | NAT Gateway, Internet egress | Stops inbound attacks | Docker bridge networking |
+| IPv6 | Dual-stack deployment | AWS IPv6 VPC | IPSec (native support) | N/A |
+| DHCP | Scope configuration | VPC DHCP options set | Rogue DHCP detection | PXE boot automation |
+| ICMP | ping/traceroute debugging | Reachability checks | ICMP tunneling detection | Health checks |
+
+---
+
+### Chapter Quiz
+
+**Q1.** What does CIDR solve that classful addressing could not?
+
+- A) Faster forwarding
+- B) Address depletion by allowing variable prefix lengths
+- C) Encryption
+- D) Multicast routing
+
+<details>
+<summary>Answer</summary>
+B) CIDR eliminates fixed class boundaries, enabling subnetting of any size through variable prefix lengths and route aggregation.
+</details>
+
+**Q2.** Why was the IPv4 header checksum removed in IPv6?
+
+- A) It was too slow to compute
+- B) It was redundant with L2 and L4 checksums
+- C) It never detected any errors
+- D) IPv6 uses encryption instead
+
+<details>
+<summary>Answer</summary>
+B) L2 (CRC) and L4 (TCP/UDP checksum) already provide integrity; the IP header checksum was redundant overhead.
+</details>
+
+**Q3.** How many IP addresses are in a /28 subnet?
+
+- A) 14 usable
+- B) 16 usable
+- C) 30 usable
+- D) 62 usable
+
+<details>
+<summary>Answer</summary>
+A) 2^(32-28) = 16 total, minus network and broadcast = 14 usable.
+</details>
+
+**Q4.** The `traceroute` utility works by sending packets with increasing ______ values.
+
+- A) TTL
+- B) Sequence number
+- C) Port number
+- D) Checksum
+
+<details>
+<summary>Answer</summary>
+A) TTL (Hop Limit) â€” each router decrements TTL and sends ICMP TTL Exceeded when it hits 0.
+</details>
+
+---
+
 ## Summary
 
 The network layer provides host-to-host delivery through logical addressing and routing. IPv4 uses 32-bit addresses with fragmentation and checksum support; IPv6 uses 128-bit addresses with a streamlined header. Subnetting and CIDR enable efficient address allocation. NAT extends IPv4 address space at the cost of end-to-end transparency. DHCP automates configuration, ARP resolves addresses on local links, and ICMP provides diagnostic and error-reporting capabilities.
@@ -164,4 +279,4 @@ The network layer provides host-to-host delivery through logical addressing and 
 
 ### Challenge Problem
 
-9. **Design an addressing plan for a multinational corporation.** A company has offices in 50 countries, each containing 3–20 departments with 10–500 devices per department. Corporate headquarters requires 5000 addresses; each country office needs 1000 addresses with room for growth. Design a hierarchical addressing plan using CIDR and VLSM. Show the block allocation for 5 representative countries. Then explain how your plan supports route aggregation at each level of the routing hierarchy.
+9. **Design an addressing plan for a multinational corporation.** A company has offices in 50 countries, each containing 3â€“20 departments with 10â€“500 devices per department. Corporate headquarters requires 5000 addresses; each country office needs 1000 addresses with room for growth. Design a hierarchical addressing plan using CIDR and VLSM. Show the block allocation for 5 representative countries. Then explain how your plan supports route aggregation at each level of the routing hierarchy.

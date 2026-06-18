@@ -1,4 +1,6 @@
-﻿# Chapter 3: Apache Spark Basics
+# Chapter 3: Apache Spark Basics
+
+> **Previous:** [Chapter 2: Hadoop — HDFS, MapReduce & YARN](./02-hadoop.md) | **Next:** [Chapter 4: Spark MLlib](./04-spark-mllib.md)
 
 ## Learning Objectives
 
@@ -9,14 +11,41 @@ After completing this chapter, you will be able to:
 - Configure Spark applications for performance
 - Read and write data from S3, HDFS, and local files
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Spark Architecture | Driver schedules tasks on distributed executors | Configure executor count, cores, and memory for performance |
+| RDDs | Immutable, partitioned collections processed in parallel | Use DataFrames over RDDs for production code |
+| DataFrames | RDDs with schema, optimized via Catalyst | Higher-level API with automatic query optimization |
+| Spark SQL | SQL queries run through Catalyst optimizer | Write SQL for readability, DataFrame API for programmatic access |
+| Catalyst Optimizer | Transforms queries into efficient physical plans | Use `.explain()` to verify optimization |
+| Tungsten Engine | Off-heap memory, cache-aware, code generation | Enable whole-stage codegen for 2-5x speedup |
+| Joins | Broadcast for small tables, sort-merge for large | Know when each join strategy applies |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Spark Architecture] --> B[RDDs Transformations]
+    B --> C[RDDs Actions]
+    C --> D[DataFrames]
+    D --> E[Spark SQL]
+    E --> F[Catalyst Optimizer]
+    F --> G[Tungsten Engine]
+    G --> H[Joins]
+    H --> I[Configuration & Tuning]
+    I --> J[S3 & Kubernetes]
+```
+
 ## 3.1 Spark Architecture
 
 Spark has a master/worker architecture. The **driver** runs the user's main program and schedules tasks on **executors** running on worker nodes.
 
-![Spark Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch03-spark-architecture.png)
+![Spark Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/big-data/ch03-spark-architecture.png)
 
 [//]: # "Spark Execution Flow"
-![Spark Execution Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch03-spark-execution.png)
+![Spark Execution Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/big-data/ch03-spark-execution.png)
 
 ```python
 from pyspark.sql import SparkSession
@@ -35,6 +64,8 @@ spark = SparkSession.builder \
 print(f"Total cores: {spark.sparkContext.defaultParallelism}")
 spark.stop()
 ```
+
+> **One-Sentence Takeaway:** Spark's master/worker architecture runs a driver that schedules parallel tasks on distributed executors, with resource allocation configurable per application.
 
 ## 3.2 RDDs (Resilient Distributed Datasets)
 
@@ -115,6 +146,8 @@ rdd.foreach(lambda x: x * x)  # No return value
 # saveAsTextFile: write to disk
 rdd.filter(lambda x: x % 2 == 0).saveAsTextFile("output/evens")
 ```
+
+> **One-Sentence Takeaway:** RDDs are lazy-evaluated immutable collections — transformations build a DAG and actions trigger execution, enabling fault-tolerant distributed computation.
 
 ## 3.3 DataFrames
 
@@ -218,6 +251,10 @@ df.withColumn("level", age_category_pandas(df.age)).show()
 
 Pandas UDFs are 10-100x faster than row-based UDFs because they operate on batches (Arrow serialization) instead of individual rows.
 
+> **Pro Tip:** Always prefer Pandas UDFs over regular UDFs. The Arrow-based batch processing makes them 10-100x faster. For simple transformations, try to express the logic using built-in Spark SQL functions first — they're optimized by Catalyst.
+
+> **One-Sentence Takeaway:** DataFrames provide a schema-aware, optimizer-driven API — use them over RDDs for 95% of Spark workloads.
+
 ## 3.4 Spark SQL
 
 ```python
@@ -238,6 +275,8 @@ result.show()
 ```
 
 Spark SQL supports all standard SQL: JOINs, subqueries, window functions, CTEs, and set operations.
+
+> **One-Sentence Takeaway:** Spark SQL unifies programmatic DataFrame operations with ANSI SQL, allowing teams to choose the interface that suits their skills while sharing the same optimized execution engine.
 
 ## 3.5 Catalyst Optimizer
 
@@ -267,6 +306,8 @@ SELECT name FROM employees WHERE age > 25 AND dept = 'Engineering'
 -- ParquetScan [name, age, dept] - Only reads 3 columns (projection pruning)
 --   + Filter (age > 25 AND dept = 'Engineering') - Applied during scan
 ```
+
+> **One-Sentence Takeaway:** Catalyst optimizes Spark SQL through predicate pushdown, projection pruning, constant folding, and join reordering — always use `.explain("extended")` to verify your query plan.
 
 ## 3.6 Tungsten Execution Engine
 
@@ -314,6 +355,10 @@ spark.conf.set("spark.sql.adaptive.enabled", "true")
 | BroadcastHashJoin | One side < 10 MB (default threshold) | None |
 | SortMergeJoin | Both sides large, equi-join | Both sides |
 | ShuffledHashJoin | One side much smaller than the other | Both sides |
+
+> **Pro Tip:** Use `broadcast()` hint for dimension tables under 10 MB. This eliminates the shuffle entirely. For large fact-to-fact joins, Adaptive Query Execution (AQE) automatically selects the best join strategy — enable it with `spark.sql.adaptive.enabled=true`.
+
+> **One-Sentence Takeaway:** Spark join strategy selection is critical — broadcast joins avoid shuffles for small tables, while sort-merge joins handle large equi-joins with AQE automatically choosing the optimal strategy.
 
 ## 3.8 Spark Configuration & Tuning
 
@@ -404,6 +449,74 @@ df.write.mode("overwrite").parquet("s3a://my-bucket/output/")
 #   --conf spark.executor.instances=5 \
 #   local:///app/my-job.py
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| RDD | Immutable, partitioned collection | Low-level API, no schema optimization | Custom transformations, legacy code |
+| DataFrame | RDD with schema + Catalyst optimization | High-level API, query optimizer | 95% of Spark production code |
+| Catalyst Optimizer | Query plan optimizer | Rule-based + cost-based optimization | All Spark SQL and DataFrame queries |
+| Tungsten Engine | Physical execution engine | Off-heap memory, code generation | In-memory processing acceleration |
+| Broadcast Join | Small table sent to all executors | No shuffle, fast for small dimension tables | Star schema joins |
+| Sort-Merge Join | Both sides sorted and merged | Handles large tables, requires shuffle | Fact-to-fact equi-joins |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **RDD Operations** | map, filter, flatMap, reduceByKey (transformations); collect, take, count (actions) | Lazy evaluation — nothing runs until an action |
+| **DataFrame API** | select, filter, withColumn, groupBy, agg, join, orderBy | Use `F.col()` for column references |
+| **Spark Config** | shuffle.partitions, executor.memory, adaptive.enabled | Prefer AQE defaults, tune partition count |
+| **Join Types** | broadcast (hint), sort-merge (default), shuffled-hash | Check with `.explain()` |
+| **Persistence** | cache(), persist(MEMORY_AND_DISK), unpersist() | Cache datasets reused across multiple actions |
+| **Performance** | 100-200 MB/partition after shuffle, enable AQE | Too many partitions = scheduling overhead |
+
+## Cross-Application Matrix
+
+| Technique | Data Engineering | ML | Cloud | Business Analytics |
+|-----------|-----------------|----|-------|--------------------|
+| RDD Transformations | Custom ETL logic | Feature engineering pipelines | S3 file processing | Data cleansing |
+| DataFrames | Structured ETL | ML pipeline input preparation | Parquet/S3 analytics | BI data preparation |
+| Catalyst Optimizer | Automatic query tuning | Feature column pruning | Cost-based execution planning | Predicate pushdown for fast queries |
+| Broadcast Join | Dimension table lookups | Feature-key joins | Small config table joins | Lookup table enrichment |
+| Tungsten | Fast serialization | Efficient shuffle for training | Reduced GC overhead | Faster aggregation execution |
+| AQE (Adaptive) | Dynamic partition coalescing | Skew join handling | Auto-scaling query plans | Skewed data handling in reports |
+
+## Chapter Quiz
+
+1. What is the key difference between a Spark transformation and an action?
+   - A) Transformations return DataFrames; actions return RDDs
+   - B) Transformations are lazily evaluated; actions trigger computation
+   - C) Actions are faster than transformations
+   - D) There is no difference
+
+<details>
+<summary>Answer</summary>
+**B) Transformations are lazily evaluated; actions trigger computation.** Transformations build a DAG of operations, but nothing executes until an action (like `count()`, `collect()`, or `save()`) is called.
+</details>
+
+2. When should you use a broadcast join in Spark?
+   - A) When both tables are large and need shuffling
+   - B) When one table is small enough to fit in each executor's memory (< 10 MB default)
+   - C) When joining on non-key columns
+   - D) When the data is sorted
+
+<details>
+<summary>Answer</summary>
+**B) When one table is small enough to fit in each executor's memory.** Spark sends the small table to every executor, avoiding an expensive shuffle. The threshold is configurable via `spark.sql.autoBroadcastJoinThreshold`.
+</details>
+
+3. What does Catalyst's projection pruning optimize?
+   - A) It removes unused columns from the scan
+   - B) It prunes partitions from the filesystem
+   - C) It removes duplicate rows
+   - D) It compresses intermediate data
+
+<details>
+<summary>Answer</summary>
+**A) It removes unused columns from the scan.** If a query only needs 3 of 100 columns, Catalyst ensures only those 3 columns are read from the data source, dramatically reducing I/O.
+</details>
 
 ## Summary
 

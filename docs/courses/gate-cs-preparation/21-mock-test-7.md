@@ -1,8 +1,8 @@
-# GATE CS Mock Test 7 — Full-Length Practice Paper
+# GATE CS Mock Test 7 â€” Full-Length Practice Paper
 
 ## Exam Instructions
 
-![Mock Test 7 Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/21-mock-test-7.png)
+![Mock Test 7 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/21-mock-test-7.png)
 
 **Total Marks:** 100  
 **Duration:** 3 Hours  
@@ -12,19 +12,19 @@
 
 | Questions | Type | Marks | Negative Marking |
 |-----------|------|-------|-----------------|
-| Q1–Q10 (GA) | MCQ | 1 each | −1/3 |
-| Q11–Q15 (GA) | MCQ | 2 each | −2/3 |
-| Q16–Q20 (Math) | MCQ | 1 each | −1/3 |
-| Q21–Q25 (Math) | MCQ | 2 each | −2/3 |
-| Q26–Q45 (Technical) | MCQ | 1 each | −1/3 |
-| Q46–Q55 (Technical) | MCQ | 2 each | −2/3 |
+| Q1â€“Q10 (GA) | MCQ | 1 each | âˆ’1/3 |
+| Q11â€“Q15 (GA) | MCQ | 2 each | âˆ’2/3 |
+| Q16â€“Q20 (Math) | MCQ | 1 each | âˆ’1/3 |
+| Q21â€“Q25 (Math) | MCQ | 2 each | âˆ’2/3 |
+| Q26â€“Q45 (Technical) | MCQ | 1 each | âˆ’1/3 |
+| Q46â€“Q55 (Technical) | MCQ | 2 each | âˆ’2/3 |
 
 **Difficulty:** Hard  
 **Recommended Time per Section:** GA 30 min, Math 30 min, Technical 120 min
 
 ---
 
-## Section A: General Aptitude (Questions 1–15)
+## Section A: General Aptitude (Questions 1â€“15)
 
 **Q1 (1 Mark):** Choose the word that is most similar in meaning to "PERFUNCTORY":
 
@@ -73,10 +73,10 @@
 
 **Q6 (1 Mark):** A clock shows 4:30. What is the angle between the hour and minute hands?
 
-(A) 30°
-(B) 45°
-(C) 60°
-(D) 75°
+(A) 30Â°
+(B) 45Â°
+(C) 60Â°
+(D) 75Â°
 
 ---
 
@@ -125,12 +125,12 @@
 
 ---
 
-**Q12 (2 Marks):** A sum of money becomes ₹10,000 in 5 years and ₹12,000 in 7 years at simple interest. Principal?
+**Q12 (2 Marks):** A sum of money becomes â‚¹10,000 in 5 years and â‚¹12,000 in 7 years at simple interest. Principal?
 
-(A) ₹5,000
-(B) ₹6,000
-(C) ₹7,000
-(D) ₹8,000
+(A) â‚¹5,000
+(B) â‚¹6,000
+(C) â‚¹7,000
+(D) â‚¹8,000
 
 ---
 
@@ -143,7 +143,7 @@
 
 ---
 
-**Q14 (2 Marks):** x² − 5x + 6 = 0 and x² − 8x + 15 = 0 have a common root. The common root is:
+**Q14 (2 Marks):** xÂ² âˆ’ 5x + 6 = 0 and xÂ² âˆ’ 8x + 15 = 0 have a common root. The common root is:
 
 (A) 2
 (B) 3
@@ -161,14 +161,14 @@
 
 ---
 
-## Section B: Engineering Mathematics (Questions 16–25)
+## Section B: Engineering Mathematics (Questions 16â€“25)
 
 **Q16 (1 Mark):** det([[1,2],[3,4]]) is:
 
-(A) −2
+(A) âˆ’2
 (B) 2
 (C) 4
-(D) −4
+(D) âˆ’4
 
 ---
 
@@ -181,7 +181,7 @@
 
 ---
 
-**Q18 (1 Mark):** Evaluate ∫₀¹ x² dx.
+**Q18 (1 Mark):** Evaluate âˆ«â‚€Â¹ xÂ² dx.
 
 (A) 1/4
 (B) 1/3
@@ -190,7 +190,7 @@
 
 ---
 
-**Q19 (1 Mark):** If P(A) = 0.5, P(B) = 0.4, and P(A∩B) = 0.2, find P(A ∪ B).
+**Q19 (1 Mark):** If P(A) = 0.5, P(B) = 0.4, and P(Aâˆ©B) = 0.2, find P(A âˆª B).
 
 (A) 0.5
 (B) 0.6
@@ -226,7 +226,7 @@
 
 ---
 
-**Q23 (2 Marks):** For matrix A = [[2, −1, 0], [−1, 2, −1], [0, −1, 2]], the number of positive eigenvalues is:
+**Q23 (2 Marks):** For matrix A = [[2, âˆ’1, 0], [âˆ’1, 2, âˆ’1], [0, âˆ’1, 2]], the number of positive eigenvalues is:
 
 (A) 0
 (B) 2
@@ -244,7 +244,7 @@
 
 ---
 
-**Q25 (2 Marks):** The chromatic number of a 5-cycle graph C₅ is:
+**Q25 (2 Marks):** The chromatic number of a 5-cycle graph Câ‚… is:
 
 (A) 2
 (B) 3
@@ -253,7 +253,7 @@
 
 ---
 
-## Section C: Technical Subjects (Questions 26–55)
+## Section C: Technical Subjects (Questions 26â€“55)
 
 **Q26 (1 Mark) [DS&A]:** A priority queue can be implemented efficiently using:
 
@@ -291,12 +291,12 @@
 
 ---
 
-**Q30 (1 Mark) [TOC]:** The empty language ∅ and the language containing only the empty string {ε}:
+**Q30 (1 Mark) [TOC]:** The empty language âˆ… and the language containing only the empty string {Îµ}:
 
 (A) Both are regular.
 (B) Neither is regular.
-(C) Only ∅ is regular.
-(D) Only {ε} is regular.
+(C) Only âˆ… is regular.
+(D) Only {Îµ} is regular.
 
 ---
 
@@ -347,23 +347,23 @@
 
 **Q36 (1 Mark) [CN]:** What is the maximum window size in Go-Back-N ARQ?
 
-(A) 2ⁿ − 1
-(B) 2ⁿ
-(C) 2^{n−1}
-(D) 2^{n−1} − 1
+(A) 2â¿ âˆ’ 1
+(B) 2â¿
+(C) 2^{nâˆ’1}
+(D) 2^{nâˆ’1} âˆ’ 1
 
 ---
 
 **Q37 (1 Mark) [DBMS]:** Which of the following is a lossless and dependency-preserving decomposition?
 
-(A) R(ABCD) → R1(AB), R2(CD) with FDs AB→C, C→D
-(B) R(ABCD) → R1(ABC), R2(ACD) with FDs A→B, C→D
-(C) R(ABCDE) → R1(ABC), R2(ADE) with FDs A→BC, D→E
-(D) R(ABCD) → R1(ABD), R2(BCD) with FDs A→D, B→C
+(A) R(ABCD) â†’ R1(AB), R2(CD) with FDs ABâ†’C, Câ†’D
+(B) R(ABCD) â†’ R1(ABC), R2(ACD) with FDs Aâ†’B, Câ†’D
+(C) R(ABCDE) â†’ R1(ABC), R2(ADE) with FDs Aâ†’BC, Dâ†’E
+(D) R(ABCD) â†’ R1(ABD), R2(BCD) with FDs Aâ†’D, Bâ†’C
 
 ---
 
-**Q38 (1 Mark) [TOC]:** L = {0ⁿ1²ⁿ | n ≥ 0}. Which is true?
+**Q38 (1 Mark) [TOC]:** L = {0â¿1Â²â¿ | n â‰¥ 0}. Which is true?
 
 (A) L is regular.
 (B) L is context-free but not regular.
@@ -372,7 +372,7 @@
 
 ---
 
-**Q39 (1 Mark) [CD]:** The value 5 in the grammar rule expr → expr + term {$$ = $1 + $3;} represents:
+**Q39 (1 Mark) [CD]:** The value 5 in the grammar rule expr â†’ expr + term {$$ = $1 + $3;} represents:
 
 (A) Synthesized attribute
 (B) Inherited attribute
@@ -392,10 +392,10 @@
 
 **Q41 (1 Mark) [COA]:** An instruction uses 24-bit addresses, 32-bit data, and 8-bit opcode. Word-addressable memory. Max memory size?
 
-(A) 2²⁴ words
-(B) 2³² words
-(C) 2⁸ words
-(D) 2⁶⁴ words
+(A) 2Â²â´ words
+(B) 2Â³Â² words
+(C) 2â¸ words
+(D) 2â¶â´ words
 
 ---
 
@@ -404,7 +404,7 @@
 (A) O(log n)
 (B) O(n)
 (C) O(n log n)
-(D) O(√n)
+(D) O(âˆšn)
 
 ---
 
@@ -462,7 +462,7 @@
 
 ---
 
-**Q49 (2 Marks) [DBMS]:** Two transactions: T1: read(A); A = A+50; write(A); read(B); B = B−50; write(B). T2: read(B); B = B+100; write(B); read(A); A = A−100; write(A). Which interleaving preserves consistency?
+**Q49 (2 Marks) [DBMS]:** Two transactions: T1: read(A); A = A+50; write(A); read(B); B = Bâˆ’50; write(B). T2: read(B); B = B+100; write(B); read(A); A = Aâˆ’100; write(A). Which interleaving preserves consistency?
 
 (A) T1 then T2
 (B) T2 then T1
@@ -471,7 +471,7 @@
 
 ---
 
-**Q50 (2 Marks) [TOC]:** The language {aⁿbⁿcⁿ | n ≥ 0} is:
+**Q50 (2 Marks) [TOC]:** The language {aâ¿bâ¿câ¿ | n â‰¥ 0} is:
 
 (A) Regular
 (B) Context-free
@@ -480,20 +480,20 @@
 
 ---
 
-**Q51 (2 Marks) [CD]:** For grammar S → aS | bA, A → cA | ε, what is FIRST(S)?
+**Q51 (2 Marks) [CD]:** For grammar S â†’ aS | bA, A â†’ cA | Îµ, what is FIRST(S)?
 
 (A) {a, b}
 (B) {a, b, c}
-(C) {a, b, ε}
+(C) {a, b, Îµ}
 (D) {a}
 
 ---
 
-**Q52 (2 Marks) [DL]:** The Boolean expression AB̅ + A̅B + AB simplifies to:
+**Q52 (2 Marks) [DL]:** The Boolean expression ABÌ… + AÌ…B + AB simplifies to:
 
 (A) A + B
 (B) AB
-(C) A̅B̅
+(C) AÌ…BÌ…
 (D) 1
 
 ---
@@ -526,7 +526,7 @@ print(x, y)
 
 ---
 
-**Q55 (2 Marks) [OS]:** A system uses THT (Token Holding Time) of 10 ms in a token ring with 100 stations. Propagation delay = 5 μs between adjacent stations. Total ring latency is:
+**Q55 (2 Marks) [OS]:** A system uses THT (Token Holding Time) of 10 ms in a token ring with 100 stations. Propagation delay = 5 Î¼s between adjacent stations. Total ring latency is:
 
 (A) 0.5 ms
 (B) 5 ms
@@ -557,47 +557,47 @@ print(x, y)
 
 **Q1:** Perfunctory means carried out with minimal effort or reflection, i.e., superficial or half-hearted. The opposite would be thorough, but the question asks for the most similar meaning, so superficial is correct.
 
-**Q2:** Let numbers be x and y. x + y = 26, xy = 144. (x − y)² = (x+y)² − 4xy = 676 − 576 = 100. So x − y = 10.
+**Q2:** Let numbers be x and y. x + y = 26, xy = 144. (x âˆ’ y)Â² = (x+y)Â² âˆ’ 4xy = 676 âˆ’ 576 = 100. So x âˆ’ y = 10.
 
 **Q3:** When "neither...nor" connects two subjects, the verb agrees with the closer subject. "friends" is plural, so "are" is correct. Option C uses past tense "were" but the present tense context calls for "are coming."
 
-**Q4:** Each letter is shifted forward by 2 positions: H+2=J, A+2=C, R+2=T, D+2=F. Similarly S→U, O→Q, F→H, T→V. Applying to EASY: E+2=G, A+2=C, S+2=U, Y+2=A, giving GCUA.
+**Q4:** Each letter is shifted forward by 2 positions: H+2=J, A+2=C, R+2=T, D+2=F. Similarly Sâ†’U, Oâ†’Q, Fâ†’H, Tâ†’V. Applying to EASY: E+2=G, A+2=C, S+2=U, Y+2=A, giving GCUA.
 
 **Q5:** Since all squares are rectangles, and some rectangles are not polygons, it does not guarantee any square is in that subset. But we know no squares overlap circles, meaning no square is inside any circle. Therefore, some circles (any circle) are definitely not squares. Option C is guaranteed true.
 
-**Q6:** At 4:30, hour hand is at 4×30 + 30×0.5 = 120 + 15 = 135°. Minute hand is at 30×6 = 180°. Difference = 180 − 135 = 45°.
+**Q6:** At 4:30, hour hand is at 4Ã—30 + 30Ã—0.5 = 120 + 15 = 135Â°. Minute hand is at 30Ã—6 = 180Â°. Difference = 180 âˆ’ 135 = 45Â°.
 
-**Q7:** The pattern is n² − 1 for n = 2, 4, 6, 8, 10, 12: 2²−1=3, 4²−1=15, 6²−1=35, 8²−1=63, 10²−1=99, 12²−1=143. Missing term is 63.
+**Q7:** The pattern is nÂ² âˆ’ 1 for n = 2, 4, 6, 8, 10, 12: 2Â²âˆ’1=3, 4Â²âˆ’1=15, 6Â²âˆ’1=35, 8Â²âˆ’1=63, 10Â²âˆ’1=99, 12Â²âˆ’1=143. Missing term is 63.
 
-**Q8:** Downstream speed = 12/2 = 6 km/h. Upstream speed = 8/4 = 2 km/h. Stream speed = (downstream − upstream)/2 = (6−2)/2 = 2 km/h.
+**Q8:** Downstream speed = 12/2 = 6 km/h. Upstream speed = 8/4 = 2 km/h. Stream speed = (downstream âˆ’ upstream)/2 = (6âˆ’2)/2 = 2 km/h.
 
-**Q9:** Let CP = 100. MP = 130. Discounted price = 130 × 0.9 = 117. Effective weight: 950 g sold as 1000 g, so actual cost per 1000 g nominal = 100 × (1000/950) ≈ 105.26. Profit on 1000 g = 117 − 105.26 ≈ 11.74 on cost of 105.26, giving ≈ 26%.
+**Q9:** Let CP = 100. MP = 130. Discounted price = 130 Ã— 0.9 = 117. Effective weight: 950 g sold as 1000 g, so actual cost per 1000 g nominal = 100 Ã— (1000/950) â‰ˆ 105.26. Profit on 1000 g = 117 âˆ’ 105.26 â‰ˆ 11.74 on cost of 105.26, giving â‰ˆ 26%.
 
-**Q10:** |A ∪ B| = |A| + |B| − |A ∩ B| where A = divisible by 4, B = divisible by 6. |A| = ⌊1000/4⌋ = 250. |B| = ⌊1000/6⌋ = 166. |A∩B| = ⌊1000/12⌋ = 83. Total = 250 + 166 − 83 = 333.
+**Q10:** |A âˆª B| = |A| + |B| âˆ’ |A âˆ© B| where A = divisible by 4, B = divisible by 6. |A| = âŒŠ1000/4âŒ‹ = 250. |B| = âŒŠ1000/6âŒ‹ = 166. |Aâˆ©B| = âŒŠ1000/12âŒ‹ = 83. Total = 250 + 166 âˆ’ 83 = 333.
 
 **Q11:** Speed of first train = (200 + 100) / 30 = 300 / 30 = 10 m/s. The second train crosses a pole = its own length. Time = 150 / 10 = 15 s.
 
-**Q12:** Simple interest for 2 years (from year 5 to 7) = 12,000 − 10,000 = 2,000. Annual interest = 1,000. Amount in 5 years = P + 5×1000 = 10,000, so P = 5,000.
+**Q12:** Simple interest for 2 years (from year 5 to 7) = 12,000 âˆ’ 10,000 = 2,000. Annual interest = 1,000. Amount in 5 years = P + 5Ã—1000 = 10,000, so P = 5,000.
 
-**Q13:** After each operation, milk remaining = original × (1 − 6/60) = 60 × (0.9)³ = 60 × 0.729 = 43.74 L.
+**Q13:** After each operation, milk remaining = original Ã— (1 âˆ’ 6/60) = 60 Ã— (0.9)Â³ = 60 Ã— 0.729 = 43.74 L.
 
-**Q14:** Roots of x²−5x+6=0 are 2, 3. Roots of x²−8x+15=0 are 3, 5. The common root is 3.
+**Q14:** Roots of xÂ²âˆ’5x+6=0 are 2, 3. Roots of xÂ²âˆ’8x+15=0 are 3, 5. The common root is 3.
 
-**Q15:** P(A wins on first toss) = 1/2. P(A wins on third toss) = (1/2)³ = 1/8 (both miss first two). This is a geometric series: 1/2 + 1/8 + 1/32 + ... = (1/2)/(1−1/4) = (1/2)/(3/4) = 2/3.
+**Q15:** P(A wins on first toss) = 1/2. P(A wins on third toss) = (1/2)Â³ = 1/8 (both miss first two). This is a geometric series: 1/2 + 1/8 + 1/32 + ... = (1/2)/(1âˆ’1/4) = (1/2)/(3/4) = 2/3.
 
-**Q16:** det([[1,2],[3,4]]) = 1×4 − 2×3 = 4 − 6 = −2.
+**Q16:** det([[1,2],[3,4]]) = 1Ã—4 âˆ’ 2Ã—3 = 4 âˆ’ 6 = âˆ’2.
 
-**Q17:** In a regular graph, sum of degrees = 2E. 8 × 3 = 2E, so E = 12.
+**Q17:** In a regular graph, sum of degrees = 2E. 8 Ã— 3 = 2E, so E = 12.
 
-**Q18:** ∫₀¹ x² dx = [x³/3]₀¹ = 1/3.
+**Q18:** âˆ«â‚€Â¹ xÂ² dx = [xÂ³/3]â‚€Â¹ = 1/3.
 
-**Q19:** P(A ∪ B) = P(A) + P(B) − P(A∩B) = 0.5 + 0.4 − 0.2 = 0.7.
+**Q19:** P(A âˆª B) = P(A) + P(B) âˆ’ P(Aâˆ©B) = 0.5 + 0.4 âˆ’ 0.2 = 0.7.
 
 **Q20:** Number of 3-element subsets of a 7-element set = C(7,3) = 35.
 
-**Q21:** Number of onto functions from a 4-element set to a 3-element set = 3⁴ − C(3,1)×2⁴ + C(3,2)×1⁴ = 81 − 3×16 + 3×1 = 81 − 48 + 3 = 36. This uses the inclusion-exclusion principle to count surjections.
+**Q21:** Number of onto functions from a 4-element set to a 3-element set = 3â´ âˆ’ C(3,1)Ã—2â´ + C(3,2)Ã—1â´ = 81 âˆ’ 3Ã—16 + 3Ã—1 = 81 âˆ’ 48 + 3 = 36. This uses the inclusion-exclusion principle to count surjections.
 
-**Q22:** Number of one-to-one functions from 3-element to 5-element set = P(5,3) = 5×4×3 = 60.
+**Q22:** Number of one-to-one functions from 3-element to 5-element set = P(5,3) = 5Ã—4Ã—3 = 60.
 
 **Q23:** The matrix is symmetric and positive definite (all leading principal minors positive: 2>0, 3>0, 4>0). All 3 eigenvalues are positive.
 
@@ -605,10 +605,10 @@ print(x, y)
 
 Wait, Catalan(7) = 429. Catalan(6) = 132. So with 7 nodes, answer is 429. Let me fix.
 
-And Q25: Chromatic number of C₅ = 3 (odd cycle needs 3 colors, at least and at most 3 colors). Answer B ✓.
+And Q25: Chromatic number of Câ‚… = 3 (odd cycle needs 3 colors, at least and at most 3 colors). Answer B âœ“.
 
-Let me fix all the errors now.<｜end▁of▁thinking｜>
+Let me fix all the errors now.<ï½œendâ–ofâ–thinkingï½œ>
 
-<｜｜DSML｜｜tool_calls>
-<｜｜DSML｜｜invoke name="read">
-<｜｜DSML｜｜parameter name="filePath" string="true">C:\xampp\htdocs\ai-engineering-journey\docs\courses\gate-cs-preparation\13-mock-test-7.md
+<ï½œï½œDSMLï½œï½œtool_calls>
+<ï½œï½œDSMLï½œï½œinvoke name="read">
+<ï½œï½œDSMLï½œï½œparameter name="filePath" string="true">C:\xampp\htdocs\ai-engineering-journey\docs\courses\gate-cs-preparation\13-mock-test-7.md

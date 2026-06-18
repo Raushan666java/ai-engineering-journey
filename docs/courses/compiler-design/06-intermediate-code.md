@@ -1,10 +1,39 @@
 # Chapter 6: Intermediate Code Generation
 
+**â† Previous:** [Chapter 5: Syntax-Directed Translation](05-sdt.md) | **Next:** [Chapter 7: Type Checking](07-type-checking.md)
+
 ## Learning Objectives
 
-![Intermediate Code Generation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch06-intermediate-code.png)
+![Intermediate Code Generation](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/compiler-design/ch06-intermediate-code.png)
 
 After completing this chapter, students will be able to: distinguish among abstract syntax trees, postfix notation, and three-address code as intermediate representations; construct quadruples, triples, and indirect triples; build directed acyclic graphs for expression sharing; and generate three-address code for common programming-language constructs including conditional statements, loops, and procedure calls.
+
+### Chapter at a Glance
+
+| Section | Description |
+|---------|-------------|
+| Intermediate Representations | ASTs, postfix, TAC, and hybrid forms |
+| Abstract Syntax Trees | Compressed parse trees for analysis |
+| Postfix Notation | Stack-oriented operator-last representation |
+| Three-Address Code | Linear IR with one operator per instruction |
+| Types of TAC Instructions | Assignment, jumps, procedure calls, array ops |
+| Quadruples, Triples, Indirect Triples | Storage formats for TAC |
+| Directed Acyclic Graphs | Common-subexpression sharing in trees |
+| Generating TAC for Statements | Assignment, while, if-then-else, calls |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Annotated Parse Tree] --> B[AST Construction]
+    B --> C{IR Format Choice}
+    C -->|Graphical| D[AST / DAG]
+    C -->|Linear| E[Three-Address Code]
+    E --> F[Quadruples / Triples]
+    D --> G[Optimization]
+    F --> G
+    G --> H[Target Code Gen]
+```
 
 ## Theory
 
@@ -27,6 +56,8 @@ Postfix (Reverse Polish) notation represents expressions with the operator follo
 Three-address code (TAC) is a linear IR where each instruction has the general form `x = y op z`, performing one operation with at most one operator on the right-hand side. The name derives from the fact that each instruction typically references at most three addresses: two for operands and one for the result. Addresses may be names (identifiers), constants, or compiler-generated temporaries.
 
 TAC is the most popular IR for optimization because it closely resembles machine code while remaining machine-independent. Each instruction does bounded work, making it straightforward to reorder, remove, and insert instructions during optimization.
+
+> **One-Sentence Takeaway:** TAC is the universal IR â€” simple enough to optimize, expressive enough to represent all language constructs, and close enough to machine code to generate efficiently.
 
 ### Types of Three-Address Code Instructions
 
@@ -118,6 +149,38 @@ Expression: `a + b * c + a * d`
 
 The DAG shares the node for a, which appears twice. The multiplication `b * c` and `a * d` are distinct unless the values of a and d coincide with b and c.
 
+### Concept Comparison
+
+| IR Format | Structure | Optimization Suitability | Storage Cost |
+|-----------|-----------|------------------------|--------------|
+| AST | Tree | Moderate | Large |
+| DAG | Graph with sharing | High (CSE) | Moderate |
+| Postfix | Linear stack code | Low | Small |
+| TAC (Quadruples) | Linear with named temps | High | Moderate |
+| TAC (Triples) | Linear with positional refs | Low | Small |
+
+### Quick Reference
+
+| Instruction Type | Format | Example |
+|-----------------|--------|---------|
+| Assignment | x = y op z | t1 = a + b |
+| Unary | x = op y | t1 = - t2 |
+| Copy | x = y | t1 = t2 |
+| Unconditional Jump | goto L | goto L1 |
+| Conditional Jump | if x relop y goto L | if a < b goto L2 |
+| Procedure Call | call p, n | call sort, 1 |
+| Array Access | x = y[i] | t1 = a[i] |
+| Address | x = &y | t1 = &buffer |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Language Design | Defining IR for new compilers | IR choice shapes optimization capability |
+| Systems Programming | LLVM IR, GCC GIMPLE | Production compilers use multi-level IRs |
+| Web Development | WebAssembly as compile target | Wasm is a low-level IR for the web |
+| Tooling | Static analysis frameworks | IR enables cross-language analysis |
+
 ## Summary
 
 Intermediate code generation translates the annotated parse tree into an IR that is independent of the source language and target machine. ASTs and DAGs provide graphical representations suitable for analysis, while three-address code in quadruple, triple, or indirect-triple form provides a linear representation straightforward to translate into assembly. The choice of IR significantly influences the compiler's optimization capability and retargetability. TAC is the dominant IR in modern production compilers because of its simplicity, expressiveness, and suitability for optimization.
@@ -159,4 +222,29 @@ Intermediate code generation translates the annotated parse tree into an IR that
 
 ### Challenge Problem
 
-1. Implement a function in your chosen language that takes an abstract syntax tree for arithmetic expressions (represented as a recursive data structure) and produces a sequence of three-address code quadruples. Support addition, subtraction, multiplication, division, and parentheses. Your translator should generate temporaries as needed and avoid recomputing identical subexpressions by using a DAG during translation. Test on the expression `(x + y) * (x + y) - (x + y) / z` and verify the generated TAC. Extend your translator to handle boolean expressions and if-then-else control flow.
+1. Implement a function in your chosen language that takes an abstract syntax tree for arithmetic expressions (represented as a recursive data structure) and produces a sequence of three-address code quadruples. Support addition, subtraction, multiplication, division, and parentheses. Your translator should generate temporaries as needed and avoid recomputing identical subexpressions by using a DAG during translation. Test on the expression `(x + y) * (x + y) - (x + y) / z` and verify the generated TAC.     Extend your translator to handle boolean expressions and if-then-else control flow.
+
+### Chapter Quiz
+
+1. What is the key advantage of three-address code over ASTs for optimization?
+   - A) It is easier for humans to read
+   - B) Each instruction does bounded work, making reordering and analysis straightforward
+   - C) It requires less memory than any other representation
+   - D) It can only represent arithmetic expressions
+
+2. How does a DAG differ from an AST?
+   - A) DAGs use more memory than ASTs
+   - B) DAGs share common subexpressions as a single node
+   - C) DAGs cannot represent control flow
+   - D) ASTs cannot represent arithmetic
+
+3. What is the primary difference between a quadruple and a triple?
+   - A) Quadruples have 4 operands; triples have 3
+   - B) Quadruples name the result explicitly; triples refer to results by position
+   - C) Quadruples are used only for optimization
+   - D) There is no difference
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

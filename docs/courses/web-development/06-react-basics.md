@@ -1,4 +1,4 @@
-# Chapter 6 — React Basics
+# Chapter 6 â€” React Basics
 
 ## Learning Objectives
 
@@ -17,7 +17,7 @@ By the end of this chapter, you will be able to:
 
 ### 6.1 JSX
 
-![React Component Lifecycle Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/06-react-basics.png)
+![React Component Lifecycle Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/06-react-basics.png)
 
 JSX is a syntax extension for JavaScript that resembles HTML. It compiles to `React.createElement` calls.
 
@@ -63,7 +63,7 @@ function Welcome({ name, age }) {
 }
 ```
 
-**Class components** (legacy — maintained for historical context):
+**Class components** (legacy â€” maintained for historical context):
 
 ```jsx
 class Welcome extends React.Component {
@@ -125,7 +125,7 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    setCount((prev) => prev + 1); // Functional update — safe in concurrent mode
+    setCount((prev) => prev + 1); // Functional update â€” safe in concurrent mode
   };
 
   const reset = () => setCount(0);
@@ -141,8 +141,8 @@ function Counter() {
 ```
 
 **State rules:**
-- Do not mutate state directly — always use the setter function.
-- State updates are asynchronous — reading state immediately after `setState` yields the old value.
+- Do not mutate state directly â€” always use the setter function.
+- State updates are asynchronous â€” reading state immediately after `setState` yields the old value.
 - For objects and arrays, create new references:
 
 ```jsx
@@ -200,7 +200,7 @@ function UserList() {
     fetchUsers();
 
     return () => {
-      cancelled = true; // Cleanup — prevents state updates on unmounted component
+      cancelled = true; // Cleanup â€” prevents state updates on unmounted component
     };
   }, []); // Empty dependency array = run once on mount
 
@@ -279,7 +279,7 @@ function TodoList({ items }) {
 **Key rules:**
 - Use stable IDs from data (`item.id`), never array index unless the list is static and will not be reordered.
 - Keys must be unique among siblings, not globally.
-- Keys are not passed as props — use a separate prop if the child needs the original ID.
+- Keys are not passed as props â€” use a separate prop if the child needs the original ID.
 
 ### 6.8 Forms
 

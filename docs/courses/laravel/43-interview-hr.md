@@ -1,4 +1,4 @@
-﻿# Chapter 43: HR & Recruitment â€” Interview Q&A
+# Chapter 43: HR & Recruitment â€” Interview Q&A
 
 ---
 
@@ -10,7 +10,7 @@ This chapter covers common interview questions for Laravel developer roles at HR
 
 ## 1. HR Domain Knowledge
 
-![HR Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/43-interview-hr.png)
+![HR Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/43-interview-hr.png)
 
 
 ---

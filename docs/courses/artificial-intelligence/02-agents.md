@@ -42,7 +42,7 @@ flowchart LR
 
 ## Theory
 
-![Intelligent Agents](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch02-agents.png)
+![Intelligent Agents](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch02-agents.png)
 
 ### Agents and Environments
 > **One-Sentence Takeaway:** An agent perceives its environment through sensors and acts upon it through actuators, with the agent function mapping percept sequences to actions.
@@ -50,7 +50,7 @@ flowchart LR
 An **agent** is anything that can be viewed as perceiving its **environment** through **sensors** and acting upon that environment through **actuators**. The **agent function** maps any given percept sequence to an action. The **agent program** is the concrete implementation of this function running on an architecture.
 
 ### Rationality
-> **One-Sentence Takeaway:** Rationality is maximizing expected performance given available information — it is not perfection, but optimal decision-making under constraints.
+> **One-Sentence Takeaway:** Rationality is maximizing expected performance given available information â€” it is not perfection, but optimal decision-making under constraints.
 
 A **rational agent** is one that acts so as to achieve the best outcome or, when there is uncertainty, the best expected outcome. Rationality depends on:
 1. The performance measure that defines the criterion of success.
@@ -67,7 +67,7 @@ To design an agent, we must specify the **PEAS** for the task environment:
 - **Actuators**: The mechanisms for acting (e.g., wheels, steering, display).
 - **Sensors**: The mechanisms for perceiving (e.g., cameras, microphones, keyboard).
 
-> **💡 Pro Tip:** The most critical environment dimension is observability — whether the environment is fully or partially observable fundamentally determines which agent architecture you can use. Self-driving cars operate in partially observable environments and therefore require model-based agents with internal state.
+> **ðŸ’¡ Pro Tip:** The most critical environment dimension is observability â€” whether the environment is fully or partially observable fundamentally determines which agent architecture you can use. Self-driving cars operate in partially observable environments and therefore require model-based agents with internal state.
 
 ### Environment Properties
 Environments are characterized by several dimensions:
@@ -78,7 +78,7 @@ Environments are characterized by several dimensions:
 - **Discrete**: Discrete vs. Continuous. Are the states and actions finite and distinct?
 - **Agents**: Single-agent vs. Multi-agent. Are there other agents operating in the environment?
 
-> **⚠️ Warning:** A common mistake is confusing "rationality" with "omniscience." A rational agent makes the best decision based on what it knows — it may still fail because of incomplete information. Rationality does not guarantee success.
+> **âš ï¸ Warning:** A common mistake is confusing "rationality" with "omniscience." A rational agent makes the best decision based on what it knows â€” it may still fail because of incomplete information. Rationality does not guarantee success.
 
 ---
 
@@ -129,7 +129,7 @@ A highly complex agent requiring sophisticated sensors and actuators.
 | Goal-Based | Yes | Yes | No | Problems with clear success criteria |
 | Utility-Based | Yes | Yes | Yes | Trade-offs and conflicting objectives |
 
-## Quick Reference — Environment Properties
+## Quick Reference â€” Environment Properties
 
 | Property | Two Poles | Example (Fully Observable) | Example (Not) |
 |----------|-----------|---------------------------|---------------|
@@ -144,11 +144,11 @@ A highly complex agent requiring sophisticated sensors and actuators.
 
 | Agent Type | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Simple Reflex | ✅ | ⬜ | ⬜ | ⬜ |
-| Model-Based | ✅ | ✅ | ✅ | ✅ |
-| Goal-Based | ✅ | ✅ | ✅ | ✅ |
-| Utility-Based | ✅ | ⬜ | ⬜ | ✅ |
-| Learning Agent | ✅ | ✅ | ✅ | ✅ |
+| Simple Reflex | âœ… | â¬œ | â¬œ | â¬œ |
+| Model-Based | âœ… | âœ… | âœ… | âœ… |
+| Goal-Based | âœ… | âœ… | âœ… | âœ… |
+| Utility-Based | âœ… | â¬œ | â¬œ | âœ… |
+| Learning Agent | âœ… | âœ… | âœ… | âœ… |
 
 ---
 
@@ -179,7 +179,7 @@ A highly complex agent requiring sophisticated sensors and actuators.
 - C) Actuators
 - D) Applications
 
-<details><summary>Answer</summary>C) Actuators — the mechanisms through which an agent acts upon its environment.</details>
+<details><summary>Answer</summary>C) Actuators â€” the mechanisms through which an agent acts upon its environment.</details>
 
 **Q3:** Which environment property distinguishes chess from poker?
 - A) Deterministic vs. Stochastic

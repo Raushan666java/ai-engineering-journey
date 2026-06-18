@@ -1,10 +1,10 @@
-﻿# Chapter 39: Healthcare Interview Q&A
+# Chapter 39: Healthcare Interview Q&A
 
 ---
 
 ## 1. Healthcare Domain Knowledge
 
-![Healthcare Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/39-interview-healthcare.png)
+![Healthcare Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/39-interview-healthcare.png)
 
 
 ### Q1: What is HIPAA and what are its three core safeguards? How do they map to Laravel architecture?

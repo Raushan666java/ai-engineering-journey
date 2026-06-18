@@ -13,13 +13,13 @@
 ---
 ## Theory
 
-![Partitioning and Sharding Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/05-partitioning-sharding.png)
+![Partitioning and Sharding Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/05-partitioning-sharding.png)
 
 ### Partitioning Fundamentals
 
 Partitioning is the process of splitting a large dataset into smaller, independent subsets that can be stored and queried separately. The two primary forms are vertical partitioning and horizontal partitioning (sharding).
 
-**Vertical Partitioning** splits a table by columns. Frequently accessed columns are placed in one partition, while less frequently accessed or larger columns (BLOBs, text) reside in another. This is natural in normalized database design — each normalized table is effectively a vertical partition of the logical entity.
+**Vertical Partitioning** splits a table by columns. Frequently accessed columns are placed in one partition, while less frequently accessed or larger columns (BLOBs, text) reside in another. This is natural in normalized database design â€” each normalized table is effectively a vertical partition of the logical entity.
 
 ```
 Vertical Partition:
@@ -28,7 +28,7 @@ Vertical Partition:
   Users_Auth:    user_id | password_hash | last_login
 ```
 
-The advantage is reduced I/O for common queries (scanning fewer bytes per row) and improved cache hit rates. The disadvantage emerges when queries frequently need to join across partitions — every cross-partition access adds latency.
+The advantage is reduced I/O for common queries (scanning fewer bytes per row) and improved cache hit rates. The disadvantage emerges when queries frequently need to join across partitions â€” every cross-partition access adds latency.
 
 **Horizontal Partitioning (Sharding)** splits a table by rows. Each shard holds a subset of rows but retains the full schema. The goal is to distribute both storage and query load across multiple database nodes.
 
@@ -51,9 +51,9 @@ Shard Key: timestamp (month)
   Shard 2:  Mar 2024
 ```
 
-**Advantages:** Range queries are efficient — a query for `WHERE created_at BETWEEN date1 AND date2` can be routed to a single shard. Shard boundaries are human-readable and easy to reason about. Sequential keys maintain physical locality.
+**Advantages:** Range queries are efficient â€” a query for `WHERE created_at BETWEEN date1 AND date2` can be routed to a single shard. Shard boundaries are human-readable and easy to reason about. Sequential keys maintain physical locality.
 
-**Disadvantages:** Hotspots are predictable. If the shard key is monotonically increasing (auto-increment IDs, timestamps), all writes hit the last shard while earlier shards sit idle. Range-based sharding also suffers from data skew — one shard may hold 80% of the data if the key distribution is uneven.
+**Disadvantages:** Hotspots are predictable. If the shard key is monotonically increasing (auto-increment IDs, timestamps), all writes hit the last shard while earlier shards sit idle. Range-based sharding also suffers from data skew â€” one shard may hold 80% of the data if the key distribution is uneven.
 
 #### Hash-Based Sharding
 
@@ -61,15 +61,15 @@ A hash function `h(k)` maps each key to a shard: `shard_id = h(k) % N` where `N`
 
 ```
 h(user_id) = CRC32(user_id) % 4
-  user_id = 100  → CRC32(100) % 4 = 2 → Shard 2
-  user_id = 101  → CRC32(101) % 4 = 0 → Shard 0
-  user_id = 102  → CRC32(102) % 4 = 3 → Shard 3
-  user_id = 103  → CRC32(103) % 4 = 1 → Shard 1
+  user_id = 100  â†’ CRC32(100) % 4 = 2 â†’ Shard 2
+  user_id = 101  â†’ CRC32(101) % 4 = 0 â†’ Shard 0
+  user_id = 102  â†’ CRC32(102) % 4 = 3 â†’ Shard 3
+  user_id = 103  â†’ CRC32(103) % 4 = 1 â†’ Shard 1
 ```
 
-**Advantages:** Uniform distribution — a good hash function spreads keys evenly across shards regardless of the input distribution. Writes are spread evenly across all nodes, eliminating the monotonically-increasing-key problem.
+**Advantages:** Uniform distribution â€” a good hash function spreads keys evenly across shards regardless of the input distribution. Writes are spread evenly across all nodes, eliminating the monotonically-increasing-key problem.
 
-**Disadvantages:** Range queries become scatter-gather operations — the system must query every shard because adjacent keys hash to different shards. Adding or removing a shard changes `N`, which remaps almost every key, triggering massive data migration (this is the *resharding problem*).
+**Disadvantages:** Range queries become scatter-gather operations â€” the system must query every shard because adjacent keys hash to different shards. Adding or removing a shard changes `N`, which remaps almost every key, triggering massive data migration (this is the *resharding problem*).
 
 #### Directory-Based Sharding
 
@@ -77,15 +77,15 @@ A lookup service maintains a mapping from key range to shard. The directory (als
 
 ```
 Directory Entry:
-  key_range: [A-D] → shard_0
-  key_range: [E-H] → shard_1
-  key_range: [I-L] → shard_2
+  key_range: [A-D] â†’ shard_0
+  key_range: [E-H] â†’ shard_1
+  key_range: [I-L] â†’ shard_2
   ...
 ```
 
 To find a row, the system queries the directory first, then routes to the appropriate shard. The directory itself must be replicated and fault-tolerant.
 
-**Advantages:** Maximum flexibility — shard assignments can be changed without affecting the data layout. Fine-grained control over data placement (hot data can be moved to faster nodes).
+**Advantages:** Maximum flexibility â€” shard assignments can be changed without affecting the data layout. Fine-grained control over data placement (hot data can be moved to faster nodes).
 
 **Disadvantages:** The directory becomes a potential bottleneck and single point of failure. Every read requires an additional lookup (two round trips), increasing latency. The directory must be kept consistent with actual shard contents.
 
@@ -101,9 +101,9 @@ Ring: [0, 2^32 - 1]
   Node B at hash("node-b") % 2^32 = 5000
   Node C at hash("node-c") % 2^32 = 9000
 
-  key K1 at hash("k1") = 3000 → stored at Node B (clockwise from 3000)
-  key K2 at hash("k2") = 7000 → stored at Node C
-  key K3 at hash("k3") = 9500 → stored at Node A (wraps around)
+  key K1 at hash("k1") = 3000 â†’ stored at Node B (clockwise from 3000)
+  key K2 at hash("k2") = 7000 â†’ stored at Node C
+  key K3 at hash("k3") = 9500 â†’ stored at Node A (wraps around)
 ```
 
 **Effect of Node Removal:** When Node B leaves, only keys in the range `[A, B)` need to be reassigned (they move to C). The expected fraction of keys moved is `1/N`.
@@ -112,7 +112,7 @@ Ring: [0, 2^32 - 1]
 
 #### Virtual Nodes
 
-Without virtual nodes, consistent hashing produces uneven load — some nodes own larger ring segments than others, especially with few nodes. Virtual nodes (vnodes) solve this by hashing each physical node multiple times with different suffixes:
+Without virtual nodes, consistent hashing produces uneven load â€” some nodes own larger ring segments than others, especially with few nodes. Virtual nodes (vnodes) solve this by hashing each physical node multiple times with different suffixes:
 
 ```
 Physical Node A:
@@ -145,7 +145,7 @@ After split:
   Shard 0b: user_id 500001..1000000
 ```
 
-Hash-based systems implement splitting by changing the hash function granularity. Consistent hashing naturally supports splitting — the hot spot on the ring can be divided by introducing a new vnode boundary.
+Hash-based systems implement splitting by changing the hash function granularity. Consistent hashing naturally supports splitting â€” the hot spot on the ring can be divided by introducing a new vnode boundary.
 
 #### Adding and Removing Nodes
 
@@ -173,9 +173,9 @@ A social media platform with user-based sharding hosts a celebrity with millions
 
 ```
 Without Fan-out:
-  Celebrity posts → shard holds celebrity data → millions read from same shard
+  Celebrity posts â†’ shard holds celebrity data â†’ millions read from same shard
 With Fan-out:
-  Celebrity posts → fan-out service → writes to each follower's shard
+  Celebrity posts â†’ fan-out service â†’ writes to each follower's shard
   Each follower reads from their own shard (evenly distributed)
 ```
 
@@ -187,13 +187,13 @@ When a query's predicate does not include the shard key, the system must send th
 
 ```
 SELECT * FROM users WHERE email = 'alice@example.com';
-  → Query sent to Shard 0, Shard 1, Shard 2, Shard 3
-  → Each shard returns matching rows
-  → Coordinator merges results
-  → Returns to client
+  â†’ Query sent to Shard 0, Shard 1, Shard 2, Shard 3
+  â†’ Each shard returns matching rows
+  â†’ Coordinator merges results
+  â†’ Returns to client
 ```
 
-Scatter-gather is expensive — response time is limited by the slowest shard (tail latency). The coordinator must handle partial failures (a shard times out) and deduplication.
+Scatter-gather is expensive â€” response time is limited by the slowest shard (tail latency). The coordinator must handle partial failures (a shard times out) and deduplication.
 
 #### Distributed Joins
 
@@ -211,13 +211,13 @@ Joining data across shards requires one of several strategies:
 Shard-local join (efficient):
   orders(user_id) SHARDED_BY(user_id)
   users(user_id)  SHARDED_BY(user_id)
-  → SELECT * FROM orders JOIN users ON orders.user_id = users.user_id
-  → Each shard returns complete join results for its user_id range
+  â†’ SELECT * FROM orders JOIN users ON orders.user_id = users.user_id
+  â†’ Each shard returns complete join results for its user_id range
 
 Cross-shard join (expensive):
   orders(user_id) SHARDED_BY(user_id)
   payments(tx_id) SHARDED_BY(tx_id)
-  → Must scatter-gather payments, fetch corresponding orders, join at coordinator
+  â†’ Must scatter-gather payments, fetch corresponding orders, join at coordinator
 ```
 
 ### Secondary Indexes
@@ -232,8 +232,8 @@ Each shard maintains its own index covering only the data on that shard. Queries
 Shard 0: orders_0 table + local_idx on email
 Shard 1: orders_1 table + local_idx on email
 Query: SELECT * FROM orders WHERE email = 'x@y.com'
-  → Scatter to Shard 0 and Shard 1
-  → Each returns matching rows from its local index
+  â†’ Scatter to Shard 0 and Shard 1
+  â†’ Each returns matching rows from its local index
 ```
 
 **Pros:** Writes are fast (index update is local). No cross-shard coordination.
@@ -246,7 +246,7 @@ A separate index table is maintained across all shards, typically sharded on the
 
 ```
 Global index on email:
-  email 'x@y.com' → PK order_id=42 → Shard 2
+  email 'x@y.com' â†’ PK order_id=42 â†’ Shard 2
 
 Query:
   1. Look up email in index (targets one shard by email hash)
@@ -267,12 +267,12 @@ A compound shard key combines multiple columns to improve data locality for comm
 Shard Key: (workspace_id, channel_id, message_id)
 
 Query: Messages in channel #general of workspace "acme"
-  → WHERE workspace_id = 'acme' AND channel_id = 'general'
-  → Calculates hash of (acme, general) → targets single shard
+  â†’ WHERE workspace_id = 'acme' AND channel_id = 'general'
+  â†’ Calculates hash of (acme, general) â†’ targets single shard
 
 Query: All messages in workspace "acme"
-  → WHERE workspace_id = 'acme'
-  → Targets subset of shards (scatter within workspace range only)
+  â†’ WHERE workspace_id = 'acme'
+  â†’ Targets subset of shards (scatter within workspace range only)
 ```
 
 The order of columns in the compound key matters. The leftmost column is the primary distribution key. Columns to the right serve as clustering keys within the shard. Compound keys enable hierarchical sharding where the first column determines the shard and subsequent columns enable efficient range scans within that shard.
@@ -282,10 +282,10 @@ The order of columns in the compound key matters. The leftmost column is the pri
 In microservice architectures, each service owns its data exclusively. This is the *Database per Service* pattern.
 
 ```
-Order Service        → order-db (MySQL shard 0..N)
-User Service         → user-db (MySQL shard 0..M)
-Inventory Service    → inventory-db (PostgreSQL shard 0..K)
-Payment Service      → payment-db (Aurora, single instance)
+Order Service        â†’ order-db (MySQL shard 0..N)
+User Service         â†’ user-db (MySQL shard 0..M)
+Inventory Service    â†’ inventory-db (PostgreSQL shard 0..K)
+Payment Service      â†’ payment-db (Aurora, single instance)
 ```
 
 **Advantages:**
@@ -311,18 +311,18 @@ Instagram User ID (64-bit):
   | 41 bits timestamp | 13 bits shard ID | 10 bits sequence |
 ```
 
-When a user uploads a photo, the system computes `shard_id = user_id >> 10 % N` (extracting the shard bits from the ID). All data for that user — photos, comments, likes, profile — resides on the same shard. This ensures that the common query "load my feed" touches only one shard.
+When a user uploads a photo, the system computes `shard_id = user_id >> 10 % N` (extracting the shard bits from the ID). All data for that user â€” photos, comments, likes, profile â€” resides on the same shard. This ensures that the common query "load my feed" touches only one shard.
 
 **Hotspot handling:** When a celebrity posts, the fan-out-on-write approach distributes the post to followers' timelines. Each follower reads from their own shard, avoiding the celebrity shard read storm.
 
 ```
 User A (shard 5) posts a photo:
-  → Insert photo row into shard 5
-  → Fan-out service writes photo_id to each follower's shard: timeline table
+  â†’ Insert photo row into shard 5
+  â†’ Fan-out service writes photo_id to each follower's shard: timeline table
 
 User B (shard 12) opens app:
-  → SELECT * FROM timeline WHERE user_id = B ORDER BY created_at DESC LIMIT 50
-  → Single shard query, fast
+  â†’ SELECT * FROM timeline WHERE user_id = B ORDER BY created_at DESC LIMIT 50
+  â†’ Single shard query, fast
 ```
 
 ### Example 2: Pinterest Sharding by Board
@@ -330,21 +330,21 @@ User B (shard 12) opens app:
 Pinterest originally used a single MySQL instance, then migrated to sharded MySQL with board-level sharding. The shard key is `board_id`. Pins are stored with their board_id, ensuring that "view this board" queries are single-shard.
 
 ```
-Board "Travel" (board_id = 42) → Shard 7
-  Pin 1 (board_id = 42) → Shard 7
-  Pin 2 (board_id = 42) → Shard 7
-  Pin 3 (board_id = 42) → Shard 7
+Board "Travel" (board_id = 42) â†’ Shard 7
+  Pin 1 (board_id = 42) â†’ Shard 7
+  Pin 2 (board_id = 42) â†’ Shard 7
+  Pin 3 (board_id = 42) â†’ Shard 7
 ```
 
-Pinterest uses range-based sharding with dynamic shard splitting. When a shard grows too large or too hot, it is split at a board boundary — all pins for a given board always stay together.
+Pinterest uses range-based sharding with dynamic shard splitting. When a shard grows too large or too hot, it is split at a board boundary â€” all pins for a given board always stay together.
 
 **Reads per second per shard:**
 
 ```
-Shard 7 (Travel board): 15,000 reads/s → split
+Shard 7 (Travel board): 15,000 reads/s â†’ split
   After split:
-  Shard 7a: board_id 30-42 → 8,000 reads/s
-  Shard 7b: board_id 43-55 → 7,000 reads/s
+  Shard 7a: board_id 30-42 â†’ 8,000 reads/s
+  Shard 7b: board_id 43-55 â†’ 7,000 reads/s
 ```
 
 Pinterest also caches board data in Redis. Board pages are the most common access pattern, so the cache hit rate exceeds 90% for popular boards.
@@ -354,21 +354,21 @@ Pinterest also caches board data in Redis. Board pages are the most common acces
 Discord shards by `guild_id` (server ID). All messages, members, and channels for a server reside on a single shard.
 
 ```
-guild_id = 123456789 → shard_id = guild_id >> 22 % N
+guild_id = 123456789 â†’ shard_id = guild_id >> 22 % N
 
 Shard topology (early Discord):
-  1 MySQL primary + replicas → then Cassandra (hash-based) → now ScyllaDB
+  1 MySQL primary + replicas â†’ then Cassandra (hash-based) â†’ now ScyllaDB
 ```
 
 Discord's sharding faces the *server size skew* problem. Some servers (e.g., gaming communities with millions of members) are orders of magnitude larger than the median server. Their shard handles disproportionately more messages.
 
-**Mitigation:** Discord implemented *shard splitting* — the largest servers can be further partitioned by channel_id within the guild. Channel-level routing is configured in a routing table:
+**Mitigation:** Discord implemented *shard splitting* â€” the largest servers can be further partitioned by channel_id within the guild. Channel-level routing is configured in a routing table:
 
 ```
 Large Guild "FortniteOfficial":
-  General chat (channel_id = 111) → Sub-shard 0 (Scylla node 12)
-  LFG chat     (channel_id = 222) → Sub-shard 1 (Scylla node 15)
-  Memes        (channel_id = 333) → Sub-shard 2 (Scylla node 18)
+  General chat (channel_id = 111) â†’ Sub-shard 0 (Scylla node 12)
+  LFG chat     (channel_id = 222) â†’ Sub-shard 1 (Scylla node 15)
+  Memes        (channel_id = 333) â†’ Sub-shard 2 (Scylla node 18)
 ```
 
 Discord uses consistent hashing to distribute guilds across ScyllaDB nodes. When nodes are added, approximately `1/N` of guilds are moved.

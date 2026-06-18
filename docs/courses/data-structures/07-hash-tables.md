@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Hash Tables: Collision Resolution and Variants](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch04-hash-tables.png)
+![Hash Tables: Collision Resolution and Variants](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch04-hash-tables.png)
 
 ### Hash Table Concept
 
@@ -322,6 +322,87 @@ table -> bucket 3
 function -> bucket 10
 ```
 
+## ðŸ’¡ Pro Tips
+
+- **Load factor is your most important metric**: Keep \(\alpha < 0.75\) for open addressing, \(\alpha < 1.0\) for chaining. Rehash (resize and reinsert all keys) when the threshold is exceeded.
+- **Choose the right probing strategy**: Linear probing is cache-friendly but suffers from primary clustering. Quadratic probing reduces clustering but may not find an empty slot even if one exists. Double hashing is safest for open addressing.
+- **Hash functions for integers**: Use Knuth's multiplicative method: \(h(k) = \lfloor m \cdot (k \cdot \phi \mod 1) \rfloor\) where \(\phi = (\sqrt{5} - 1)/2\). This distributes sequential keys uniformly.
+- **Bloom filters save memory**: A Bloom filter uses a bit array and \(k\) hash functions. With 10 bits per element and 7 hash functions, false positive rate is ~1%. No false negatives.
+
+## One-Sentence Takeaways
+
+- Hash tables offer average \(O(1)\) operations; worst case is \(O(n)\) with poor hashing.
+- Chaining uses linked lists for collisions; open addressing probes for empty slots.
+- Load factor \(\alpha = n/m\) governs performance; rehash when \(\alpha\) exceeds the threshold.
+- A good hash function is fast, deterministic, and distributes keys uniformly.
+- Cuckoo hashing guarantees \(O(1)\) worst-case lookup with two hash tables.
+- Bloom filters test membership with possible false positives but no false negatives.
+
+## Concept Comparison Table
+
+| Feature | Chaining | Linear Probing | Quadratic Probing | Double Hashing |
+|---------|----------|---------------|-------------------|----------------|
+| Collision resolution | Linked list at slot | Next empty slot | \(i^2\) offset | \(i \cdot h_2(k)\) offset |
+| Worst-case lookup | \(O(n)\) | \(O(n)\) | \(O(n)\) | \(O(n)\) |
+| Cache performance | Poor (pointer chasing) | Excellent (sequential) | Good | Poor |
+| Clustering problem | None | Primary clustering | Secondary clustering | Minimal |
+| Deletion | Easy (remove from list) | Tombstone needed | Tombstone needed | Tombstone needed |
+
+## Quick Reference: Hash Table Operations
+
+| Operation | Average | Worst Case |
+|-----------|---------|------------|
+| Search | \(O(1)\) | \(O(n)\) |
+| Insert | \(O(1)\) | \(O(n)\) |
+| Delete | \(O(1)\) | \(O(n)\) |
+| Rehash (resize) | \(O(n)\) | \(O(n)\) |
+| Bloom filter lookup | \(O(k)\) | \(O(k)\) â€” always |
+
+## Cross-Application Matrix
+
+| Application | Why Hash Table |
+|-------------|---------------|
+| Database indexing | Fast key lookup (hash index) |
+| Symbol table (compiler) | \(O(1)\) variable lookup |
+| Cache (memcached, Redis) | Key-value storage |
+| Spell checker | Word existence check |
+| Duplicate detection | Track seen elements |
+| Password verification | Store password hashes |
+
+## Chapter Quiz
+
+1. **What is the average time complexity of hash table search?**
+   - a) \(O(1)\) âœ“
+   - b) \(O(\log n)\)
+   - c) \(O(n)\)
+   - d) \(O(n^2)\)
+
+2. **What is load factor \(\alpha\)?**
+   - a) \(m/n\)
+   - b) \(n/m\) âœ“
+   - c) \(n \cdot m\)
+   - d) \(\log n / m\)
+
+3. **Which collision resolution uses linked lists?**
+   - a) Linear probing
+   - b) Chaining âœ“
+   - c) Double hashing
+   - d) Quadratic probing
+
+4. **What guarantees \(O(1)\) worst-case lookup?**
+   - a) Chaining
+   - b) Cuckoo hashing âœ“
+   - c) Linear probing
+   - d) Double hashing
+
+5. **A Bloom filter can produce:**
+   - a) False negatives only
+   - b) False positives only âœ“
+   - c) Both false positives and negatives
+   - d) Neither
+
+**Answers:** 1-a, 2-b, 3-b, 4-b, 5-b
+
 ## Summary
 
 - Hash tables provide average \( O(1) \) search, insert, and delete.
@@ -345,4 +426,4 @@ function -> bucket 10
 
 ### Challenge Problem
 
-7. Implement a **Bloom filter** — a probabilistic data structure that tests set membership with possible false positives but no false negatives. Use multiple hash functions and a bit array.
+7. Implement a **Bloom filter** â€” a probabilistic data structure that tests set membership with possible false positives but no false negatives. Use multiple hash functions and a bit array.

@@ -1,4 +1,4 @@
-﻿# Chapter 26: Business Automation Agents
+# Chapter 26: Business Automation Agents
 
 ---
 
@@ -16,7 +16,7 @@
 
 ## Theory
 
-![Business Automation Agents](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/26-business-automation-agents.png)
+![Business Automation Agents](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/26-business-automation-agents.png)
 
 
 ### 26.1 Introduction to Business Automation with AI

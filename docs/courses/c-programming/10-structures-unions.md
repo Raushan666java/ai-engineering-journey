@@ -9,7 +9,7 @@
 - Differentiate between `struct` and `union`
 - Use bit fields for packed data storage
 
-![C Structures, Unions and Dynamic Memory Allocation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch10-structures-dma.png)
+![C Structures, Unions and Dynamic Memory Allocation](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch10-structures-dma.png)
 
 ## 10.1 Structure Declaration
 
@@ -23,7 +23,7 @@ struct student {
 };
 ```
 
-This declaration defines a new type `struct student` but does not allocate any memory — it is a blueprint.
+This declaration defines a new type `struct student` but does not allocate any memory â€” it is a blueprint.
 
 ### 10.1.1 Declaring Structure Variables
 
@@ -111,7 +111,7 @@ For dynamic allocation, use `memcpy` or assign through pointers:
 
 ```c
 Student s1, s2;
-s2 = s1;            /* OK — copies all members */
+s2 = s1;            /* OK â€” copies all members */
 ```
 
 **Arrays within structs are copied when the struct is copied.**
@@ -341,8 +341,8 @@ Bit fields allow packing multiple values into a single integer type, specifying 
 ```c
 typedef struct {
     unsigned int enabled : 1;    /* 1 bit */
-    unsigned int mode    : 3;    /* 3 bits (0–7) */
-    unsigned int id      : 4;    /* 4 bits (0–15) */
+    unsigned int mode    : 3;    /* 3 bits (0â€“7) */
+    unsigned int id      : 4;    /* 4 bits (0â€“15) */
 } Control;
 ```
 
@@ -350,9 +350,9 @@ typedef struct {
 #include <stdio.h>
 
 typedef struct {
-    unsigned int year  : 7;   /* 0–127 */
-    unsigned int month : 4;   /* 0–15 */
-    unsigned int day   : 5;   /* 0–31 */
+    unsigned int year  : 7;   /* 0â€“127 */
+    unsigned int month : 4;   /* 0â€“15 */
+    unsigned int day   : 5;   /* 0â€“31 */
 } DateCompact;
 
 int main(void)
@@ -381,7 +381,7 @@ typedef struct {
     union {
         int i;
         float f;
-    };                /* anonymous union — members accessed directly */
+    };                /* anonymous union â€” members accessed directly */
     char tag;
 } Value;
 
@@ -419,4 +419,4 @@ v.tag = 'i';
 
 ### Challenge Problem
 
-Implement a simple tagged variant type — a `struct Variant` that can hold an `int`, `double`, `char*`, or another `Variant` (recursive). Use a union with a type tag. Write functions `variant_print`, `variant_add` (add two variants if they are numeric), and `variant_to_string`. Demonstrate nesting by creating a Variant that holds an array of Variants (use a `Variant*` pointer and a count).
+Implement a simple tagged variant type â€” a `struct Variant` that can hold an `int`, `double`, `char*`, or another `Variant` (recursive). Use a union with a type tag. Write functions `variant_print`, `variant_add` (add two variants if they are numeric), and `variant_to_string`. Demonstrate nesting by creating a Variant that holds an array of Variants (use a `Variant*` pointer and a count).

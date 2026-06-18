@@ -11,7 +11,7 @@
 ## Theory
 ### UML Class Diagram Syntax
 
-![Component and Class Design Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/12-component-design.png)
+![Component and Class Design Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/12-component-design.png)
 
 The Unified Modeling Language (UML) provides a standardized notation for visualizing the structure of object-oriented systems.
 
@@ -239,7 +239,7 @@ class ParkingLot:
         return False
 ```
 
-**Flow**: `Client → ParkingLot.park_vehicle() → iterates floors → finds spot → parks → issues Ticket`. On exit: `Client → ParkingLot.remove_vehicle(ticket_id, payment) → calculates duration → processes payment → frees spot`.
+**Flow**: `Client â†’ ParkingLot.park_vehicle() â†’ iterates floors â†’ finds spot â†’ parks â†’ issues Ticket`. On exit: `Client â†’ ParkingLot.remove_vehicle(ticket_id, payment) â†’ calculates duration â†’ processes payment â†’ frees spot`.
 
 ### Example 2: Designing a Vending Machine
 
@@ -506,7 +506,7 @@ class ElevatorController:
             if (direction == Direction.UP and floor >= elevator.current_floor) or \
                (direction == Direction.DOWN and floor <= elevator.current_floor):
                 return floor - elevator.current_floor if direction == Direction.UP else elevator.current_floor - floor
-        # Going opposite direction — must wait for turnaround
+        # Going opposite direction â€” must wait for turnaround
         return abs(elevator.current_floor - floor) + self.num_floors
 
     def step(self):
@@ -648,7 +648,7 @@ class Board:
         self._setup()
 
     def _setup(self):
-        # Place pieces — abbreviated for clarity
+        # Place pieces â€” abbreviated for clarity
         for col in range(8):
             self.grid[1][col] = Pawn(Color.BLACK, Position(1, col))
             self.grid[6][col] = Pawn(Color.WHITE, Position(6, col))
@@ -959,7 +959,7 @@ class RateLimiterFactory:
 Design and implement a **Movie Ticket Booking System** covering:
 - **Theaters** with multiple screens, each with a seating layout and showtimes
 - **Seat types** (standard, premium, recliner) each with different pricing
-- **Booking flow**: select movie → showtime → seats → payment → confirmation
+- **Booking flow**: select movie â†’ showtime â†’ seats â†’ payment â†’ confirmation
 - **Concurrency handling**: two users must not book the same seat within 50ms
 - **State machine**: a booking starts as `PENDING`, moves to `CONFIRMED` on payment, or `CANCELLED` on timeout (15-minute hold expiry)
 - **Seat locking**: seats are temporarily locked during booking and released on timeout or cancellation

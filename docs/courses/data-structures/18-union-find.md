@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Union-Find Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch18-union-find.png)
+![Union-Find Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch18-union-find.png)
 
 ### Disjoint Set Union (DSU)
 
@@ -24,7 +24,7 @@ The DSU data structure maintains a collection of disjoint (non-overlapping) sets
 
 **Union by rank (or size)**: attach the shorter tree under the taller tree. Rank is an upper bound on tree height.
 
-**Complexity**: with both optimizations, the amortized time per operation is \( O(\alpha(n)) \), where \( \alpha \) is the inverse Ackermann function — effectively constant for any practical input size.
+**Complexity**: with both optimizations, the amortized time per operation is \( O(\alpha(n)) \), where \( \alpha \) is the inverse Ackermann function â€” effectively constant for any practical input size.
 
 ### Applications
 
@@ -314,6 +314,85 @@ int main() {
 Connected components: 3
 ```
 
+## ðŸ’¡ Pro Tips
+
+- **Implement union by rank OR by size**: Both give similar theoretical guarantees. Union by size is slightly more intuitive â€” attach the smaller tree under the larger tree.
+- **Path compression alone is almost enough**: Even without union by rank, path compression gives amortized \(O(\log n)\). Adding union by rank yields the inverse Ackermann bound \(O(\alpha(n))\).
+- **DSU for offline queries**: When you have a sequence of edge additions and connectivity queries, DSU can answer all queries in near-linear time. For deletions, use DSU with rollback.
+- **Kruskal's algorithm + DSU is the canonical MST algorithm**: Sort edges by weight (\(O(E \log V)\)), process edges in order, union endpoints if they belong to different components. DSU detects cycles in \(O(\alpha(V))\) per edge.
+
+## One-Sentence Takeaways
+
+- DSU (Union-Find) maintains disjoint sets with find and union operations.
+- Path compression flattens the tree during find for near-constant amortized time.
+- Union by rank attaches smaller trees under larger trees to limit depth.
+- Combined optimizations yield \(O(\alpha(n))\) per operation, where \(\alpha\) is the inverse Ackermann function.
+- Kruskal's algorithm uses DSU to find MSTs by processing edges in sorted order.
+- DSU can answer connectivity queries online (as edges arrive) in near-linear time.
+
+## Concept Comparison Table
+
+| Optimization | Without | Path Compression Only | Union by Rank Only | Both |
+|-------------|---------|---------------------|-------------------|------|
+| find() complexity | \(O(n)\) | \(O(\log n)\) amortized | \(O(\log n)\) | \(O(\alpha(n))\) amortized |
+| union() complexity | \(O(n)\) | \(O(\log n)\) amortized | \(O(\log n)\) | \(O(\alpha(n))\) amortized |
+| Implementation | Simple | Simple | Simple | Simple |
+| Memory overhead | None | None | Rank/size array | Both arrays |
+
+## Quick Reference: DSU Operations
+
+| Operation | Pseudocode | Complexity |
+|-----------|-------------|------------|
+| makeSet(x) | parent[x] = x; rank[x] = 0 | \(O(1)\) |
+| find(x) | if parent[x] != x: parent[x] = find(parent[x]); return parent[x] | \(O(\alpha(n))\) |
+| union(x, y) | rx = find(x); ry = find(y); if rx == ry: return; if rank[rx] < rank[ry]: swap; parent[ry] = rx; if rank[rx] == rank[ry]: rank[rx]++ | \(O(\alpha(n))\) |
+| connected(x, y) | return find(x) == find(y) | \(O(\alpha(n))\) |
+
+## Cross-Application Matrix
+
+| Problem | How DSU Is Used | Complexity |
+|---------|-----------------|------------|
+| Kruskal's MST | Union endpoints of each edge; connects \(V-1\) edges | \(O(E \log V + E \alpha(V))\) |
+| Connected components | Union adjacent cells in grid | \(O(n \alpha(n))\) |
+| Number of islands | DSU on grid cells (4-dir connectivity) | \(O(mn \alpha(mn))\) |
+| Cycle detection in undirected graph | Union endpoints; if find(u) == find(v), cycle exists | \(O(E \alpha(V))\) |
+| Friend circles (social network) | Union connected users | \(O(m \alpha(n))\) where m = relationships |
+| Dynamic connectivity | DSU with rollback | \(O(q \log q \log n)\) offline |
+
+## Chapter Quiz
+
+1. **What is the near-constant time complexity of optimized DSU?**
+   - a) \(O(1)\)
+   - b) \(O(\alpha(n))\) âœ“
+   - c) \(O(\log n)\)
+   - d) \(O(n)\)
+
+2. **What does path compression do?**
+   - a) Merges trees
+   - b) Flattens the tree during find âœ“
+   - c) Sorts edges
+   - d) Computes rank
+
+3. **Which algorithm uses DSU to find MSTs?**
+   - a) Dijkstra's
+   - b) Kruskal's âœ“
+   - c) Prim's
+   - d) Floyd's
+
+4. **What is the inverse Ackermann function \(\alpha(n)\) for practical n?**
+   - a) ~4 âœ“
+   - b) ~log n
+   - c) ~1
+   - d) ~n
+
+5. **Union by rank ensures:**
+   - a) Smaller tree under larger âœ“
+   - b) Trees are sorted
+   - c) Path is always 1
+   - d) All elements are connected
+
+**Answers:** 1-b, 2-b, 3-b, 4-a, 5-a
+
 ## Summary
 
 - DSU maintains disjoint sets with near-constant amortized operations.
@@ -333,7 +412,7 @@ Connected components: 3
 
 4. Implement union by size instead of union by rank. Compare the resulting tree heights.
 5. Use DSU to solve the **number of islands** problem in a binary grid.
-6. Implement **DSU with rollback** — support undoing the last union operation (useful for offline dynamic connectivity).
+6. Implement **DSU with rollback** â€” support undoing the last union operation (useful for offline dynamic connectivity).
 
 ### Challenge Problem
 

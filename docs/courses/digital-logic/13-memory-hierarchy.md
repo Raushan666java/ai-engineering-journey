@@ -1,5 +1,8 @@
 # Chapter 13: Memory Hierarchy
 
+> **Prereq:** Chapter 12 (Pipelining) â€” cache misses cause pipeline stalls; memory hierarchy performance directly affects CPI.
+> **Next:** Chapter 14 (I/O) â€” I/O systems interact with memory through DMA and memory-mapped interfaces.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -10,9 +13,34 @@ By the conclusion of this chapter, the student shall be able to:
 4. Describe virtual memory organisation and address translation
 5. Design the translation lookaside buffer (TLB) and analyse its performance
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Locality | Temporal + spatial | Why caches work |
+| Cache Mapping | Direct, associative, set-associative | Trade-off between speed and hit rate |
+| Write Policy | Write-through vs write-back | Bandwidth vs consistency |
+| Virtual Memory | Page tables, PTEs | Enables multi-tasking, protection |
+| TLB | Fast address translation | Reduces page-table walk penalty |
+
+```mermaid
+flowchart LR
+    A[CPU] --> B[L1 Cache]
+    B --> C[L2 Cache]
+    C --> D[L3 Cache]
+    D --> E[Main Memory DRAM]
+    E --> F[SSD / Disk]
+    style A fill:#e1f5fe
+    style B fill:#c8e6c9
+    style C fill:#fff3e0
+    style D fill:#fce4ec
+```
+
+> **One-Sentence Takeaway:** The memory hierarchy exploits locality â€” small, fast SRAM caches sit close to the CPU, making frequent accesses fast, while large, slow DRAM holds infrequently accessed data, balancing cost and performance.
+
 ## Theory
 
-![Cache Organisation and Virtual Memory Hierarchy](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch13-memory-hierarchy.png)
+![Cache Organisation and Virtual Memory Hierarchy](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch13-memory-hierarchy.png)
 
 ### 13.1 Principle of Locality
 
@@ -177,6 +205,31 @@ A TLB has 95% hit rate, 1 cycle hit time, and 20 cycle miss penalty. Average mem
 
 **Solution**: Effective translation time = 0.95 &times; 1 + 0.05 &times; 20 = 0.95 + 1.0 = 1.95 cycles.
 
+### Concept Comparison
+
+| Cache Type | Tag Comparison | Hardware | Miss Rate | Best For |
+|-----------|---------------|----------|-----------|----------|
+| Direct-Mapped | Single | Simple | Higher | Low-cost |
+| Fully Associative | All entries | Complex | Lowest | Small TLBs |
+| Set-Associative | Per set | Moderate | Moderate | General purpose |
+
+### Quick Reference
+
+| Parameter | Formula | Example |
+|-----------|---------|---------|
+| AMAT | HitTime + MissRate Ã— MissPenalty | 1 + 0.05 Ã— 10 = 1.5 cycles |
+| Cache size | Sets Ã— Associativity Ã— BlockSize | 512 Ã— 4 Ã— 64 = 128 KB |
+| Page offset bits | log2(PageSize) | log2(4096) = 12 bits |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | L1/L2/L3 caches | Memory hierarchy defines IPC ceiling |
+| Embedded Systems | Scratchpad vs cache | Real-time systems avoid cache unpredictability |
+| Digital Circuits | FPGA BRAM as cache | Configurable cache on programmable logic |
+| Research | TLB prefetching | Reducing TLB miss penalty in big-data workloads |
+
 ## Summary
 
 - Caches exploit temporal and spatial locality to reduce average memory access time.
@@ -216,4 +269,29 @@ a) The address division into tag, index, and offset
 b) The LRU state machine for each set (maintaining 4! = 24 possible orderings)
 c) The comparison and selection logic for reads
 d) The timing of tag comparison vs data array access
-e) Calculate the area trade-off compared to a direct-mapped cache of the same capacity
+    e) Calculate the area trade-off compared to a direct-mapped cache of the same capacity
+
+### Chapter Quiz
+
+1. A direct-mapped cache has how many possible locations for a given memory block?
+   - A) 1
+   - B) 2
+   - C) Associativity
+   - D) All locations
+
+2. Temporal locality means:
+   - A) Nearby memory addresses are likely to be accessed soon
+   - B) A recently accessed address is likely to be accessed again soon
+   - C) Data is stored temporarily in registers
+   - D) Instructions execute in temporal order
+
+3. The TLB caches:
+   - A) Recently used data blocks
+   - B) Recently used page table entries
+   - C) Recently used instructions
+   - D) Recently used file handles
+
+<details>
+<summary>Answers</summary>
+1. A, 2. B, 3. B
+</details>

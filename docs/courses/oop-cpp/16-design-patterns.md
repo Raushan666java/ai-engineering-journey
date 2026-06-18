@@ -12,14 +12,14 @@ After studying this chapter, students will be able to:
 
 ## 16.1 Patterns in Context
 
-![Design Patterns Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/16-design-patterns.png)
+![Design Patterns Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/16-design-patterns.png)
 
 Design patterns are reusable solutions to recurring problems in software design. Catalogued by the "Gang of Four" (GoF) in 1994, they describe relationships and interactions between classes and objects. Patterns are not templates to be copied but rather conceptual guides to be adapted.
 
 Three categories:
-- **Creational** — object creation mechanisms
-- **Structural** — object composition and relationships
-- **Behavioural** — object communication and responsibility
+- **Creational** â€” object creation mechanisms
+- **Structural** â€” object composition and relationships
+- **Behavioural** â€” object communication and responsibility
 
 ## 16.2 Creational Patterns
 
@@ -504,7 +504,7 @@ private:
 
 ## 16.5 Summary
 
-Design patterns capture proven solutions to recurring design problems. Creational patterns manage object creation, structural patterns compose objects, and behavioural patterns define communication. Modern C++ implements patterns with smart pointers, templates, and STL components. Patterns are guides, not prescriptions—adapt them to the specific problem rather than forcing a pattern into the code.
+Design patterns capture proven solutions to recurring design problems. Creational patterns manage object creation, structural patterns compose objects, and behavioural patterns define communication. Modern C++ implements patterns with smart pointers, templates, and STL components. Patterns are guides, not prescriptionsâ€”adapt them to the specific problem rather than forcing a pattern into the code.
 
 ## Exercises
 

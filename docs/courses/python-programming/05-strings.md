@@ -10,7 +10,7 @@ By the end of this chapter, students will be able to:
 - Distinguish raw strings, byte strings, and Unicode strings
 - Process text data efficiently
 
-![Python Strings](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/05-strings.png)
+![Python Strings](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/05-strings.png)
 
 ## 5.1 String Literals
 
@@ -73,7 +73,7 @@ print(s[::2])  # Pto  (step)
 print(s[::-1]) # nohtyP  (reverse)
 ```
 
-Slice semantics: `s[start:stop:step]`. All components are optional. Indices are clamped to the sequence bounds — no `IndexError` for out-of-range slices:
+Slice semantics: `s[start:stop:step]`. All components are optional. Indices are clamped to the sequence bounds â€” no `IndexError` for out-of-range slices:
 
 ```python
 print(s[0:100])  # Python
@@ -82,7 +82,7 @@ print(s[100:])   # "" (empty)
 
 ## 5.3 String Methods
 
-Strings are immutable — all methods return a new string.
+Strings are immutable â€” all methods return a new string.
 
 ### 5.3.1 Searching and Counting
 
@@ -112,8 +112,8 @@ print(s.casefold())       # hello world (aggressive lower for caseless matching)
 `casefold()` is more aggressive than `lower()` for Unicode caseless comparison:
 
 ```python
-print("ß".lower())    # ß
-print("ß".casefold()) # ss
+print("ÃŸ".lower())    # ÃŸ
+print("ÃŸ".casefold()) # ss
 ```
 
 ### 5.3.3 Stripping and Padding
@@ -171,7 +171,7 @@ print("abc123".isalnum())      # True
 print("   ".isspace())         # True
 print("Hello".istitle())       # True
 print("42".isdecimal())        # True
-print("42".isnumeric())        # True (also handles "Ⅶ")
+print("42".isnumeric())        # True (also handles "â…¦")
 print("hello".isidentifier())  # True
 print("True".isidentifier())   # True
 print("2fast".isidentifier())  # False (starts with digit)
@@ -236,8 +236,8 @@ print(f"{'right':>10}|")      # "     right|"
 The older `str.format()` method remains useful for dynamic format strings:
 
 ```python
-template = "{} × {} = {}"
-print(template.format(3, 4, 12))    # 3 × 4 = 12
+template = "{} Ã— {} = {}"
+print(template.format(3, 4, 12))    # 3 Ã— 4 = 12
 
 template = "{name} is {age}"
 print(template.format(name="Bob", age=25))  # Bob is 25
@@ -259,7 +259,7 @@ print("%s is %d years old" % ("Charlie", 35))  # Charlie is 35 years old
 print("PI = %.3f" % 3.14159)                   # PI = 3.142
 ```
 
-Avoid `%`-formatting in new code — use f-strings or `.format()`.
+Avoid `%`-formatting in new code â€” use f-strings or `.format()`.
 
 ## 5.5 Raw Strings
 
@@ -284,11 +284,11 @@ print(type(b))         # <class 'bytes'>
 print(b[0])            # 104  (int, not str)
 
 # Encoding/decoding
-s = "café"
+s = "cafÃ©"
 encoded = s.encode("utf-8")
 print(encoded)         # b'caf\xc3\xa9'
 decoded = encoded.decode("utf-8")
-print(decoded)         # café
+print(decoded)         # cafÃ©
 ```
 
 Common encodings: `utf-8`, `latin-1`, `ascii`, `utf-16`. Wrong encoding causes `UnicodeDecodeError`:
@@ -305,13 +305,13 @@ except UnicodeDecodeError as e:
 Python 3 strings are Unicode. Characters outside the Basic Multilingual Plane (BMP) use surrogate pairs encoded as two code units:
 
 ```python
-print("\u00e9")             # é
-print("\U0001F600")         # 😀
+print("\u00e9")             # Ã©
+print("\U0001F600")         # ðŸ˜€
 print(len("\U0001F600"))    # 1 (one code point)
 
 # Normalization
 from unicodedata import normalize
-s1 = "caf\u00e9"            # composed: café
+s1 = "caf\u00e9"            # composed: cafÃ©
 s2 = "cafe\u0301"           # decomposed: cafe + combining accent
 print(s1 == s2)             # False
 print(normalize("NFC", s1) == normalize("NFC", s2))  # True
@@ -319,7 +319,7 @@ print(normalize("NFC", s1) == normalize("NFC", s2))  # True
 
 ## 5.8 Performance Considerations
 
-String concatenation with `+` in a loop creates many intermediate strings — O(n²) time:
+String concatenation with `+` in a loop creates many intermediate strings â€” O(nÂ²) time:
 
 ```python
 # SLOW

@@ -15,7 +15,7 @@
 
 ## Theory
 
-![System Design Fundamentals Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/01-introduction.png)
+![System Design Fundamentals Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/01-introduction.png)
 
 ### What Is System Design?
 
@@ -111,10 +111,10 @@ Throughput = (1 - p_error) / L_avg  (where L_avg is average latency)
 Little's Law relates these for stable systems:
 
 ```
-L = λ * W
+L = Î» * W
 ```
 
-where L = average number of requests in system, λ = arrival rate, W = average time per request.
+where L = average number of requests in system, Î» = arrival rate, W = average time per request.
 
 #### Security
 
@@ -122,7 +122,7 @@ Security encompasses confidentiality (unauthorized access prevention), integrity
 
 #### Cost Efficiency
 
-Cost efficiency measures the operational expense per unit of useful work (e.g., cost per request, cost per GB stored, cost per user). This trades against all other NFRs: five-nines availability costs more than two-nines; higher throughput requires more servers; stronger consistency increases coordination overhead. A cost-unbounded design is not a design — it is a wishlist.
+Cost efficiency measures the operational expense per unit of useful work (e.g., cost per request, cost per GB stored, cost per user). This trades against all other NFRs: five-nines availability costs more than two-nines; higher throughput requires more servers; stronger consistency increases coordination overhead. A cost-unbounded design is not a design â€” it is a wishlist.
 
 ---
 
@@ -148,13 +148,13 @@ Collect and clarify functional and non-functional requirements. Ask clarifying q
 Rough capacity calculations to constrain the design before committing to architecture. Key formulas:
 
 ```
-QPS = Daily Active Users × Actions Per User / 86,400
+QPS = Daily Active Users Ã— Actions Per User / 86,400
 
-Storage = Data per item × Items per day × Retention days × Replication factor
+Storage = Data per item Ã— Items per day Ã— Retention days Ã— Replication factor
 
-Bandwidth = Bits per request × QPS
+Bandwidth = Bits per request Ã— QPS
 
-Memory needed = Hot data ratio × Total data size
+Memory needed = Hot data ratio Ã— Total data size
 ```
 
 **Prefix conventions:**
@@ -182,26 +182,26 @@ Produce a component diagram showing the major building blocks:
 - **CDN:** Static asset delivery
 
 ```
-┌─────────────┐
-│   Clients   │
-└──────┬──────┘
-       │
-┌──────▼──────┐
-│ Load        │
-│ Balancer    │
-└──────┬──────┘
-       │
-┌──────▼──────┐   ┌──────────┐   ┌───────────┐
-│ App Server  │──►│  Cache   │   │  CDN      │
-│ (stateless) │   │ (Redis)  │   │ (CloudFl) │
-└──────┬──────┘   └──────────┘   └───────────┘
-       │
-┌──────▼──────┐
-│  Database   │
-│ (Primary)   │
-│             │
-│  Replica(s) │
-└─────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   Clients   â”‚
+â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
+       â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”
+â”‚ Load        â”‚
+â”‚ Balancer    â”‚
+â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
+       â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ App Server  â”‚â”€â”€â–ºâ”‚  Cache   â”‚   â”‚  CDN      â”‚
+â”‚ (stateless) â”‚   â”‚ (Redis)  â”‚   â”‚ (CloudFl) â”‚
+â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+       â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”
+â”‚  Database   â”‚
+â”‚ (Primary)   â”‚
+â”‚             â”‚
+â”‚  Replica(s) â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 #### Phase 4: Detailed Deep Dive
@@ -237,10 +237,10 @@ Every design decision is a trade-off. Recognizing and articulating trade-offs is
 **Twitter-Scale QPS.** Assume 500M DAU, each user posts 0.5 tweets/day and reads 200 tweets/day.
 
 ```
-Write QPS = 500M × 0.5 / 86,400 ≈ 2,894 QPS
-Peak write QPS = 2,894 × 3 (peak factor) ≈ 8,682 QPS
-Read QPS = 500M × 200 / 86,400 ≈ 1,157,407 QPS
-Peak read QPS ≈ 3.5M QPS
+Write QPS = 500M Ã— 0.5 / 86,400 â‰ˆ 2,894 QPS
+Peak write QPS = 2,894 Ã— 3 (peak factor) â‰ˆ 8,682 QPS
+Read QPS = 500M Ã— 200 / 86,400 â‰ˆ 1,157,407 QPS
+Peak read QPS â‰ˆ 3.5M QPS
 ```
 
 A read:write ratio of ~400:1 justifies heavy caching and read replicas.
@@ -248,10 +248,10 @@ A read:write ratio of ~400:1 justifies heavy caching and read replicas.
 **YouTube Storage.** Assume 500 hours of video uploaded per minute, average bitrate 5 Mbps.
 
 ```
-Storage per hour = 5 × 10^6 bps × 3,600 s / 8 = 2.25 GB/hour
-Per minute: 500 hours × 2.25 GB = 1,125 GB/minute
-Per day: 1,125 GB × 60 × 24 ≈ 1.62 PB/day
-Per year: 1.62 PB × 365 ≈ 591 PB/year
+Storage per hour = 5 Ã— 10^6 bps Ã— 3,600 s / 8 = 2.25 GB/hour
+Per minute: 500 hours Ã— 2.25 GB = 1,125 GB/minute
+Per day: 1,125 GB Ã— 60 Ã— 24 â‰ˆ 1.62 PB/day
+Per year: 1.62 PB Ã— 365 â‰ˆ 591 PB/year
 ```
 
 With 3x replication: ~1.77 exabytes/year.
@@ -259,12 +259,12 @@ With 3x replication: ~1.77 exabytes/year.
 **URL Shortener Storage** (tinyurl.com style). Assume 100M new URLs/day, average length 500 bytes.
 
 ```
-Daily storage = 100M × 500 bytes = 50 GB/day
-Yearly storage = 50 GB × 365 ≈ 18.25 TB/year
+Daily storage = 100M Ã— 500 bytes = 50 GB/day
+Yearly storage = 50 GB Ã— 365 â‰ˆ 18.25 TB/year
 10-year storage = ~182.5 TB
 ```
 
-This fits on a handful of SSDs. The bottleneck is not storage — it is write QPS and availability.
+This fits on a handful of SSDs. The bottleneck is not storage â€” it is write QPS and availability.
 
 ---
 
@@ -272,7 +272,7 @@ This fits on a handful of SSDs. The bottleneck is not storage — it is write QP
 
 **Google Search.** The defining challenge is indexing the web (tens of billions of pages) and returning relevant results in under 200ms. Design constraints: extreme read throughput, sub-second latency, global distribution. Architecture: web crawling pipeline (distributed crawlers), inverted index (sharded across thousands of machines), query serving (MapReduce for indexing, distributed serving for queries). NFR priority: performance > reliability > maintainability > cost. Google accepts massive infrastructure cost to deliver sub-100ms search.
 
-**Facebook (Meta).** The defining challenge is the social graph: billions of users, each with complex relationships (friends, pages, groups, events). Design constraints: extremely high read QPS, globally distributed, writes triggered by user action. Architecture: TAO (graph cache layer over MySQL), Presto (interactive analytics), Cassandra (inbox search), Haystack (photo storage). NFR priority: availability > performance > scalability > maintainability. Facebook uses eventual consistency extensively — seeing a slightly stale Like count is acceptable.
+**Facebook (Meta).** The defining challenge is the social graph: billions of users, each with complex relationships (friends, pages, groups, events). Design constraints: extremely high read QPS, globally distributed, writes triggered by user action. Architecture: TAO (graph cache layer over MySQL), Presto (interactive analytics), Cassandra (inbox search), Haystack (photo storage). NFR priority: availability > performance > scalability > maintainability. Facebook uses eventual consistency extensively â€” seeing a slightly stale Like count is acceptable.
 
 **WhatsApp.** The defining challenge is reliable message delivery with end-to-end encryption for 2B+ users. Design constraints: must work with intermittent connectivity, low latency for delivery, zero message loss. Architecture: Custom Erlang-based server (ejabberd fork), persistence on a per-user basis (not per-message), highly optimized for mobile battery and bandwidth. NFR priority: reliability > availability > performance > efficiency. WhatsApp famously served 900M users with only ~50 engineers.
 
@@ -284,22 +284,22 @@ This fits on a handful of SSDs. The bottleneck is not storage — it is write QP
 
 **Requirements:** Shorten URLs, redirect to original URL, track click analytics, handle 100M URLs/day.
 
-**Phase 1 — Requirements:** 100M new URLs/day, read:write ratio ~100:1 (each URL clicked ~100 times), analytics per-URL, 5-year data retention.
+**Phase 1 â€” Requirements:** 100M new URLs/day, read:write ratio ~100:1 (each URL clicked ~100 times), analytics per-URL, 5-year data retention.
 
-**Phase 2 — Estimation:**
-- Write QPS: 100M / 86,400 ≈ 1,157 QPS (peak ~3,500)
-- Read QPS: 1,157 × 100 ≈ 115,700 QPS (peak ~350,000)
-- Storage: 100M × 500 bytes/day = 50 GB/day → ~91 TB in 5 years
+**Phase 2 â€” Estimation:**
+- Write QPS: 100M / 86,400 â‰ˆ 1,157 QPS (peak ~3,500)
+- Read QPS: 1,157 Ã— 100 â‰ˆ 115,700 QPS (peak ~350,000)
+- Storage: 100M Ã— 500 bytes/day = 50 GB/day â†’ ~91 TB in 5 years
 
-**Phase 3 — HLD:**
+**Phase 3 â€” HLD:**
 - Stateless API servers (auto-scaled)
 - Redis cache for hot URLs (LRU eviction, TTL 1 hour)
-- Base-62 encoding for short IDs (7 chars = 62^7 ≈ 3.5T combinations)
+- Base-62 encoding for short IDs (7 chars = 62^7 â‰ˆ 3.5T combinations)
 - Database: NoSQL (Cassandra or DynamoDB) for write scalability
 
-**Phase 4 — Deep Dive:**
+**Phase 4 â€” Deep Dive:**
 - Encoding choice: Base-62 (a-z, A-Z, 0-9) vs Base-64 (adds + and /, less user-friendly)
-- Key generation: Snowflake-style ID → encode to base-62. Avoids DB lookup for ID allocation
+- Key generation: Snowflake-style ID â†’ encode to base-62. Avoids DB lookup for ID allocation
 - Cache strategy: Cache-aside. On write miss: query DB, populate cache, return redirect
 - Redirection: 301 (permanent) for most clients to reduce load; 307 (temporary) for analytics tracking
 
@@ -308,11 +308,11 @@ This fits on a handful of SSDs. The bottleneck is not storage — it is write QP
 Instagram-scale: 500M DAU, each user uploads ~2 photos/day, average photo 2 MB, each photo viewed ~50 times.
 
 ```
-Write QPS = 500M × 2 / 86,400 ≈ 11,574 QPS
-Storage/day = 500M × 2 photos × 2 MB = 2 PB/day
-Storage/year ≈ 730 PB
-Read QPS = 11,574 × 50 ≈ 578,700 QPS
-CDN bandwidth = 578,700 × 2 MB = 1,157,400 MB/s ≈ 1.15 TB/s
+Write QPS = 500M Ã— 2 / 86,400 â‰ˆ 11,574 QPS
+Storage/day = 500M Ã— 2 photos Ã— 2 MB = 2 PB/day
+Storage/year â‰ˆ 730 PB
+Read QPS = 11,574 Ã— 50 â‰ˆ 578,700 QPS
+CDN bandwidth = 578,700 Ã— 2 MB = 1,157,400 MB/s â‰ˆ 1.15 TB/s
 ```
 
 Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions, cache the most-requested 80% on CDN, serve originals only on explicit demand.
@@ -328,7 +328,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - Every design decision is a trade-off; the correct choice depends on the system's primary NFRs, not on abstract "best practices."
 - SLA, SLO, and SLI form a three-tier commitment cascade: legal contract, internal target, actual measurement.
 - Real systems like Google Search, Facebook, and WhatsApp optimize for radically different NFR profiles despite serving similar scale.
-- Little's Law (L = λW) relates throughput, concurrency, and latency in stable-state systems.
+- Little's Law (L = Î»W) relates throughput, concurrency, and latency in stable-state systems.
 
 ---
 

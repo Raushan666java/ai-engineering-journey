@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Advanced Kubernetes Concepts](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch08-k8s-advanced.png)
+![Advanced Kubernetes Concepts](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch08-k8s-advanced.png)
 
 By the end of this chapter, students will be able to:
 
@@ -58,11 +58,11 @@ Ingress supports path-based routing, host-based routing, TLS termination, sticky
 
 Persistent storage in Kubernetes follows a three-layer model:
 
-**PersistentVolume (PV)** — Cluster resource provisioned by an administrator or dynamically provisioned via StorageClass. Represents a storage unit (NFS share, EBS volume, GCE PD).
+**PersistentVolume (PV)** â€” Cluster resource provisioned by an administrator or dynamically provisioned via StorageClass. Represents a storage unit (NFS share, EBS volume, GCE PD).
 
-**PersistentVolumeClaim (PVC)** — Request for storage by a user. PVCs specify size, access mode (ReadWriteOnce, ReadOnlyMany, ReadWriteMany), and StorageClass.
+**PersistentVolumeClaim (PVC)** â€” Request for storage by a user. PVCs specify size, access mode (ReadWriteOnce, ReadOnlyMany, ReadWriteMany), and StorageClass.
 
-**StorageClass** — Defines storage provisioner parameters. Enables dynamic provisioning.
+**StorageClass** â€” Defines storage provisioner parameters. Enables dynamic provisioning.
 
 ```yaml
 apiVersion: storage.k8s.io/v1

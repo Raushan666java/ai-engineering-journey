@@ -11,7 +11,7 @@
 
 ## Theory
 
-![MongoDB Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch15-mongodb.png)
+![MongoDB Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch15-mongodb.png)
 
 ### 15.1 MongoDB Overview
 
@@ -26,13 +26,13 @@ MongoDB is a **document-oriented NoSQL database** released in 2009. It stores da
 
 ```
 Database (ecommerce)
-  └── Collection (users)
-  │     ├── Document {_id: 1, name: "Alice", email: "alice@example.com"}
-  │     ├── Document {_id: 2, name: "Bob", email: "bob@example.com"}
-  │     └── ...
-  └── Collection (orders)
-        ├── Document {_id: 101, user_id: 1, total: 59.99, items: [...]}
-        └── ...
+  â””â”€â”€ Collection (users)
+  â”‚     â”œâ”€â”€ Document {_id: 1, name: "Alice", email: "alice@example.com"}
+  â”‚     â”œâ”€â”€ Document {_id: 2, name: "Bob", email: "bob@example.com"}
+  â”‚     â””â”€â”€ ...
+  â””â”€â”€ Collection (orders)
+        â”œâ”€â”€ Document {_id: 101, user_id: 1, total: 59.99, items: [...]}
+        â””â”€â”€ ...
 ```
 
 **BSON Format:**
@@ -339,17 +339,17 @@ db.orders.aggregate([
 **Replica Set:** A group of MongoDB servers that maintain the same data set.
 
 ```
-┌──────────────┐
-│  Primary      │  ← All writes go here
-│  (active)     │
-└──────┬───────┘
-       │ replication (oplog)
-       ├─────────────────┐
-       ▼                 ▼
-┌──────────────┐  ┌──────────────┐
-│  Secondary 1  │  │  Secondary 2  │  ← Read may go here (optional)
-│  (hot standby)│  │  (hot standby)│
-└──────────────┘  └──────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  Primary      â”‚  â† All writes go here
+â”‚  (active)     â”‚
+â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
+       â”‚ replication (oplog)
+       â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+       â–¼                 â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  Secondary 1  â”‚  â”‚  Secondary 2  â”‚  â† Read may go here (optional)
+â”‚  (hot standby)â”‚  â”‚  (hot standby)â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 - **Primary:** Accepts all write operations
@@ -375,18 +375,18 @@ mongodb://host1:27017,host2:27017,host3:27017/mydb?replicaSet=rs0&readPreference
 **Sharding:** Horizontal partitioning of data across multiple servers.
 
 ```
-┌──────────────────────────────────────────┐
-│              mongos (Router)              │
-│  Routes queries to appropriate shard     │
-└────┬──────────┬──────────────┬───────────┘
-     │          │              │
-     ▼          ▼              ▼
-┌──────────┐ ┌──────────┐ ┌──────────┐
-│ Shard A   │ │ Shard B  │ │ Shard C  │
-│ (chunks   │ │ (chunks  │ │ (chunks  │
-│  user_0.. │ │  user_1M │ │  user_2M │
-│  1M)      │ │  ..2M)   │ │  ..3M)   │
-└──────────┘ └──────────┘ └──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚              mongos (Router)              â”‚
+â”‚  Routes queries to appropriate shard     â”‚
+â””â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+     â”‚          â”‚              â”‚
+     â–¼          â–¼              â–¼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Shard A   â”‚ â”‚ Shard B  â”‚ â”‚ Shard C  â”‚
+â”‚ (chunks   â”‚ â”‚ (chunks  â”‚ â”‚ (chunks  â”‚
+â”‚  user_0.. â”‚ â”‚  user_1M â”‚ â”‚  user_2M â”‚
+â”‚  1M)      â”‚ â”‚  ..2M)   â”‚ â”‚  ..3M)   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Shard Key:** The field MongoDB uses to distribute documents across shards.
@@ -519,6 +519,125 @@ db.orders.aggregate([
     { $sort: { "_id.year": 1, "_id.month": 1 } }
 ])
 ```
+
+## ðŸ’¡ Pro Tips
+
+1. **Design your schema around your application's access patterns** â€” in MongoDB, how you query determines how you structure your data (unlike SQL where normalization rules come first).
+2. **Embedding is usually better than referencing** â€” MongoDB can read an entire embedded document in one I/O operation. Joins (`$lookup`) are expensive.
+3. **Only embed what is accessed together** â€” if you often need a user but not their orders, keep them in separate collections. Embedding unrelated data wastes memory and complicates updates.
+4. **Choose your shard key carefully** â€” a bad shard key (low cardinality, monotonically increasing) creates "hot spots" where all writes go to one shard. Hashed shard keys are often safer.
+5. **Use TTL indexes for expiring data** â€” they automatically delete documents after a configured time, perfect for session data, logs, and temporary caches.
+
+## One-Sentence Takeaways
+
+- **15.1:** MongoDB stores data as BSON documents in collections â€” schema-flexible, self-describing, and easy to map to application objects.
+- **15.2:** CRUD operations use a JSON-like query syntax with rich operators for filtering, projection, sorting, and aggregation.
+- **15.3:** Indexes in MongoDB include single, compound, multikey (arrays), text, geospatial, TTL, and partial types.
+- **15.4:** The aggregation pipeline processes documents through stages ($match, $group, $lookup, $unwind, $project) â€” MongoDB's equivalent of SQL's GROUP BY and JOIN.
+- **15.5:** Replica sets provide high availability with automatic failover; reads can be distributed to secondaries.
+- **15.6:** Sharding horizontally partitions data using a shard key across multiple servers for horizontal scaling.
+- **15.7:** Schema design choices â€” embedding vs. referencing â€” dramatically impact query performance and data consistency.
+
+## Concept Comparison Table
+
+| Concept | MongoDB | SQL Equivalent |
+|---------|---------|----------------|
+| **Database** | Database | Database |
+| **Collection** | Collection | Table |
+| **Document** | BSON document | Row |
+| **Field** | Field | Column |
+| **Index** | Index (various types) | Index |
+| **$match** | Filter stage | WHERE |
+| **$group** | Aggregation stage | GROUP BY |
+| **$lookup** | Aggregation stage | LEFT JOIN |
+| **$unwind** | Deconstructs array | UNNEST / LATERAL |
+| **$sort** | Aggregation stage | ORDER BY |
+| **$project** | Reshapes documents | SELECT columns |
+| **$bucket** | Histogram creation | WIDTH_BUCKET |
+
+| Embedding vs. Referencing | Embed | Reference |
+|--------------------------|-------|-----------|
+| **Data accessed together?** | Yes â€” embed | No â€” separate queries |
+| **Sub-document size** | Small (KB) | Large (MB) or growing |
+| **Update frequency** | Low (all at once) | High (independent updates) |
+| **Relationship** | One-to-one, one-to-few | One-to-many, many-to-many |
+| **Read performance** | Single query | Multiple queries or $lookup |
+
+## Quick Reference
+
+| MongoDB Index Type | Purpose | Example Use |
+|-------------------|---------|-------------|
+| **Single Field** | Basic index on one field | `{ email: 1 }` |
+| **Compound** | Index on multiple fields | `{ status: 1, created_at: -1 }` |
+| **Multikey** | Index on array fields | `{ tags: 1 }` |
+| **Text** | Full-text search | `{ description: "text" }` |
+| **Geospatial (2dsphere)** | Geo queries | `{ location: "2dsphere" }` |
+| **TTL** | Auto-expire documents | `{ createdAt: 1 }, { expireAfterSeconds: 3600 }` |
+| **Partial** | Index subset of documents | `{ status: 1 }, { partialFilterExpression: { status: "active" } }` |
+| **Hashed** | Hash-based sharding | `{ user_id: "hashed" }` |
+
+## Cross-Application Matrix
+
+| MongoDB Feature | Applied In | Why It Matters |
+|----------------|-----------|----------------|
+| **Document Model** | Product catalogs, CMS | Products have varying attributes â€” no need for EAV pattern |
+| **Aggregation Pipeline** | Analytics, reporting | Complex data processing without leaving the database |
+| **Replica Sets** | Production systems requiring HA | Automatic failover, read scaling to secondaries |
+| **Sharding** | Applications exceeding single-node capacity | Horizontal scaling with range/hashed shard keys |
+| **Geospatial Index** | Location-based services | Proximity search, geofencing, Near queries |
+| **TTL Index** | Session stores, temp data | Automatic cleanup without scheduled jobs |
+
+## Chapter Quiz
+
+1. MongoDB stores documents in which format?
+   a) XML
+   b) BSON
+   c) CSV
+   d) YAML
+
+2. The `$lookup` stage in the aggregation pipeline is equivalent to which SQL operation?
+   a) GROUP BY
+   b) LEFT JOIN
+   c) WHERE
+   d) UNION
+
+3. Which is NOT a valid reason to embed a sub-document?
+   a) Data is always accessed together with the parent
+   b) Sub-document is large and frequently grows
+   c) Relationship is one-to-few
+   d) Updates to the sub-document are infrequent
+
+4. A shard key should ideally have:
+   a) Low cardinality
+   b) High cardinality and even distribution
+   c) Monotonically increasing values
+   d) Boolean values
+
+5. A TTL index is used to:
+   a) Speed up queries on timestamp fields
+   b) Automatically delete documents after a specified time
+   c) Index time-series data
+   d) Improve write performance
+
+6. In a replica set, the primary node:
+   a) Only serves read queries
+   b) Accepts all write operations
+   c) Does not participate in elections
+   d) Must be manually specified
+
+7. The multikey index is specifically designed for:
+   a) Numeric fields
+   b) Array fields
+   c) Nested objects
+   d) String fields
+
+8. Which aggregation stage is used to deconstruct an array field into multiple documents?
+   a) $match
+   b) $group
+   c) $unwind
+   d) $project
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b, 6-b, 7-b, 8-c
 
 ## Summary
 

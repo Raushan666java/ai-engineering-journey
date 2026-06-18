@@ -1,6 +1,6 @@
 # Chapter 2: Searching
 
-> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Asymptotic notation and recurrence analysis | **Next:** [Chapter 3: Comparison-Based Sorting](./03-sorting-nlogn.md) — From finding elements to ordering them
+> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) â€” Asymptotic notation and recurrence analysis | **Next:** [Chapter 3: Comparison-Based Sorting](./03-sorting-nlogn.md) â€” From finding elements to ordering them
 
 ## Learning Objectives
 
@@ -17,10 +17,10 @@ By the end of this chapter, students will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Linear Search | Scan sequentially until found | Only option for unsorted data; optimal for small arrays |
-| Binary Search | Repeatedly halve the search range | The gold standard for sorted arrays — O(log n) |
+| Binary Search | Repeatedly halve the search range | The gold standard for sorted arrays â€” O(log n) |
 | Interpolation Search | Probe position using linear interpolation | O(log log n) on uniform data, O(n) worst-case |
 | Exponential Search | Doubling bound + binary search | Best for unbounded/infinite arrays |
-| Ternary Search | Two midpoints, three partitions | More comparisons than binary — slower in practice |
+| Ternary Search | Two midpoints, three partitions | More comparisons than binary â€” slower in practice |
 
 ### Chapter Roadmap
 
@@ -39,7 +39,7 @@ flowchart LR
 
 ## Theory
 
-![Searching Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch02-searching.png)
+![Searching Algorithms Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch02-searching.png)
 
 ### 2.1 Linear Search
 
@@ -56,7 +56,7 @@ LinearSearch(A, n, key):
 
 **Complexity:** Worst-case \( O(n) \), best-case \( O(1) \), average-case \( O(n) \).
 
-> **Pro Tip:** Linear search is optimal for unsorted arrays. Never sort just to use binary search unless you have multiple queries — sorting costs O(n log n) which dominates a single search.
+> **Pro Tip:** Linear search is optimal for unsorted arrays. Never sort just to use binary search unless you have multiple queries â€” sorting costs O(n log n) which dominates a single search.
 
 **One-Sentence Takeaway:** Linear search is the simplest and only option for unsorted data, operating in O(n) time.
 
@@ -82,7 +82,7 @@ BinarySearch(A, low, high, key):
 
 **Key implementation detail:** Use \( \text{mid} = \text{low} + (\text{high} - \text{low}) / 2 \) to avoid integer overflow.
 
-> **Pro Tip:** Watch for integer overflow when computing mid as (low + high) / 2. Use low + (high - low) / 2 instead — it's safe for all values.
+> **Pro Tip:** Watch for integer overflow when computing mid as (low + high) / 2. Use low + (high - low) / 2 instead â€” it's safe for all values.
 >
 > **Remember:** Binary search requires a sorted array. If you insert/delete frequently, consider balanced BSTs instead.
 
@@ -158,7 +158,7 @@ TernarySearch(A, low, high, key):
 
 **Recurrence:** \( T(n) = T(n/3) + O(1) \), so \( T(n) = O(\log_3 n) \). While the base of the logarithm differs from binary search, the constant-factor overhead makes ternary search slower in practice.
 
-> **Remember:** Ternary search does twice the comparisons per step as binary search (two midpoints vs one). Despite log₃ n < log₂ n, the constant factor makes it slower — always prefer binary search.
+> **Remember:** Ternary search does twice the comparisons per step as binary search (two midpoints vs one). Despite logâ‚ƒ n < logâ‚‚ n, the constant factor makes it slower â€” always prefer binary search.
 
 **One-Sentence Takeaway:** Ternary search splits into three parts with two midpoints but performs worse than binary search due to extra comparisons per iteration.
 
@@ -246,18 +246,18 @@ int exponentialSearch(const std::vector<int>& arr, int key) {
 |----------|------------|
 | **Sorted Required** | Binary, interpolation, exponential, ternary |
 | **Unsorted OK** | Linear |
-| **O(log n) Families** | Binary (log₂ n), ternary (log₃ n), exponential (log i) |
-| **Best Average** | Interpolation — O(log log n) on uniform data |
-| **Best Worst-Case** | Binary — guaranteed O(log n) |
+| **O(log n) Families** | Binary (logâ‚‚ n), ternary (logâ‚ƒ n), exponential (log i) |
+| **Best Average** | Interpolation â€” O(log log n) on uniform data |
+| **Best Worst-Case** | Binary â€” guaranteed O(log n) |
 | **Common Pitfall** | Using binary search on unsorted data; using interpolation on skewed data |
 
 ### Cross-Application Matrix
 
 | Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
 |-----------|---------------|----------------------|---------------|-------------------|
-| Linear Search | Trivial — rarely asked | Niche use in small constraints | N/A | Lower bound proofs |
-| Binary Search | Extremely common — rotated array, sorted matrix | Standard tool — parametric search | Log search indexing (LSM trees) | Divide-and-conquer foundations |
-| Interpolation Search | Occasionally asked | Rare — needs specific constraints | Database B-tree optimizations | Data-dependent algorithm analysis |
+| Linear Search | Trivial â€” rarely asked | Niche use in small constraints | N/A | Lower bound proofs |
+| Binary Search | Extremely common â€” rotated array, sorted matrix | Standard tool â€” parametric search | Log search indexing (LSM trees) | Divide-and-conquer foundations |
+| Interpolation Search | Occasionally asked | Rare â€” needs specific constraints | Database B-tree optimizations | Data-dependent algorithm analysis |
 | Exponential Search | Sometimes asked for unbounded arrays | Galloping search in Timsort merge | Pagination/cursor-based APIs | Search on unknown-length inputs |
 | Ternary Search | Uncommon | Unimodal function optimization | N/A | Numerical optimization theory |
 
@@ -284,7 +284,7 @@ int exponentialSearch(const std::vector<int>& arr, int key) {
 
 <details>
 <summary>Answer</summary>
-C) T(n) = T(n/2) + O(1) — each step halves the search space with constant work.
+C) T(n) = T(n/2) + O(1) â€” each step halves the search space with constant work.
 </details>
 
 **Q2.** Which search algorithm is best for an unbounded (infinite) sorted array?
@@ -296,7 +296,7 @@ C) T(n) = T(n/2) + O(1) — each step halves the search space with constant work
 
 <details>
 <summary>Answer</summary>
-C) Exponential search — it doesn't need to know the array length and probes outward in exponentially growing steps.
+C) Exponential search â€” it doesn't need to know the array length and probes outward in exponentially growing steps.
 </details>
 
 **Q3.** When does interpolation search degrade to O(n)?

@@ -34,9 +34,9 @@ flowchart LR
 
 ## 3.1 Heuristics
 
-![Informed Search and Heuristics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch03-informed-search.png)
+![Informed Search and Heuristics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch03-informed-search.png)
 
-> **One-Sentence Takeaway:** A heuristic function h(n) estimates remaining cost to the goal — good heuristics dramatically reduce search effort while preserving optimality.
+> **One-Sentence Takeaway:** A heuristic function h(n) estimates remaining cost to the goal â€” good heuristics dramatically reduce search effort while preserving optimality.
 
 A **heuristic function** $h(n)$ estimates the cost of the cheapest path from node $n$ to a goal state. Heuristics incorporate domain-specific knowledge to accelerate search by directing exploration toward promising regions of the state space.
 
@@ -51,30 +51,30 @@ In general, heuristics may be derived by **relaxation**: dropping constraints fr
 
 ## 3.2 Greedy Best-First Search
 
-> **One-Sentence Takeaway:** Greedy best-first search minimizes h(n) alone — it is fast when it works but may get stuck in loops and does not guarantee optimality.
+> **One-Sentence Takeaway:** Greedy best-first search minimizes h(n) alone â€” it is fast when it works but may get stuck in loops and does not guarantee optimality.
 
 Greedy best-first search expands the node with the lowest heuristic value $h(n)$. The frontier is a priority queue ordered by $h$.
 
 ```
 function GREEDY-BEST-FIRST-SEARCH(problem, h) returns solution or failure
-    node ← NODE(problem.INITIAL)
+    node â† NODE(problem.INITIAL)
     if problem.GOAL-TEST(node.STATE) then return SOLUTION(node)
-    frontier ← priority queue ordered by h, containing node
-    explored ← empty set
+    frontier â† priority queue ordered by h, containing node
+    explored â† empty set
     loop do
         if EMPTY?(frontier) then return failure
-        node ← POP(frontier)
+        node â† POP(frontier)
         add node.STATE to explored
         for each action in problem.ACTIONS(node.STATE) do
-            child ← CHILD-NODE(problem, node, action)
+            child â† CHILD-NODE(problem, node, action)
             if child.STATE not in explored and child.STATE not in frontier then
                 if problem.GOAL-TEST(child.STATE) then return SOLUTION(child)
-                frontier ← INSERT(child, frontier)
+                frontier â† INSERT(child, frontier)
 ```
 
 Greedy search is not complete (it may get stuck in loops) and is not optimal. Its time and space complexity are $O(b^m)$ in the worst case, but good heuristics dramatically improve performance.
 
-> **💡 Pro Tip:** The effectiveness of A* depends entirely on your heuristic. If two heuristics are both admissible, the one that is larger (closer to the true cost) will dominate — meaning fewer nodes expanded and faster search.
+> **ðŸ’¡ Pro Tip:** The effectiveness of A* depends entirely on your heuristic. If two heuristics are both admissible, the one that is larger (closer to the true cost) will dominate â€” meaning fewer nodes expanded and faster search.
 
 ## 3.3 A* Search
 
@@ -112,12 +112,12 @@ IDA* combines IDDFS with A*'s cost function. Each iteration performs a depth-fir
 
 ```
 function IDA*(problem, h) returns solution or failure
-    bound ← h(problem.INITIAL)
+    bound â† h(problem.INITIAL)
     loop do
-        result ← DFS-CONTOUR(problem, NODE(problem.INITIAL), 0, bound)
+        result â† DFS-CONTOUR(problem, NODE(problem.INITIAL), 0, bound)
         if result = failure then return result
         if result = cutoff then
-            bound ← new-bound
+            bound â† new-bound
 ```
 
 IDA* requires space proportional to the longest path explored ($O(bd)$) but may revisit nodes many times.
@@ -130,7 +130,7 @@ SMA* operates within a fixed memory limit. When memory is full, it drops the wor
 
 RBFS performs a recursive depth-first search while maintaining the best alternative path $f$-value. It uses less memory than A* but may re-explore nodes.
 
-> **⚠️ Warning:** A* has exponential space complexity — it stores all generated nodes in memory. For large state spaces, A* may exhaust memory long before exhausting time. Use IDA* or SMA* when memory is tight.
+> **âš ï¸ Warning:** A* has exponential space complexity â€” it stores all generated nodes in memory. For large state spaces, A* may exhaust memory long before exhausting time. Use IDA* or SMA* when memory is tight.
 
 ## 3.5 Relaxation and Pattern Databases
 
@@ -142,13 +142,13 @@ RBFS performs a recursive depth-first search while maintaining the best alternat
 
 | Algorithm | Evaluation | Complete? | Optimal? | Space | Use Case |
 |-----------|-----------|:---:|:---:|:---:|----------|
-| Greedy Best-First | h(n) only | ❌ | ❌ | O(b^m) | Fast approximate when heuristic is excellent |
-| A* | g(n) + h(n) | ✅ | ✅ | O(b^d) | Optimal search with good heuristic |
-| IDA* | f-cost bound | ✅ | ✅ | O(bd) | Large state spaces, limited memory |
-| SMA* | f-cost bound + memory | ✅ | ✅ | Memory-bound | Fixed-memory optimal search |
-| RBFS | Recursive DFS + f-limit | ✅ | ✅ | O(bd) | Deep search with good heuristic |
+| Greedy Best-First | h(n) only | âŒ | âŒ | O(b^m) | Fast approximate when heuristic is excellent |
+| A* | g(n) + h(n) | âœ… | âœ… | O(b^d) | Optimal search with good heuristic |
+| IDA* | f-cost bound | âœ… | âœ… | O(bd) | Large state spaces, limited memory |
+| SMA* | f-cost bound + memory | âœ… | âœ… | Memory-bound | Fixed-memory optimal search |
+| RBFS | Recursive DFS + f-limit | âœ… | âœ… | O(bd) | Deep search with good heuristic |
 
-## Quick Reference — Heuristic Design
+## Quick Reference â€” Heuristic Design
 
 | Technique | Method | Example |
 |-----------|--------|---------|
@@ -161,11 +161,11 @@ RBFS performs a recursive depth-first search while maintaining the best alternat
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Greedy Best-First | ✅ | ✅ | ✅ | ✅ |
-| A* Search | ✅ | ⬜ | ⬜ | ✅ |
-| IDA* | ⬜ | ⬜ | ⬜ | ✅ |
-| Pattern Databases | ⬜ | ⬜ | ⬜ | ✅ |
-| Relaxation Heuristics | ✅ | ⬜ | ⬜ | ✅ |
+| Greedy Best-First | âœ… | âœ… | âœ… | âœ… |
+| A* Search | âœ… | â¬œ | â¬œ | âœ… |
+| IDA* | â¬œ | â¬œ | â¬œ | âœ… |
+| Pattern Databases | â¬œ | â¬œ | â¬œ | âœ… |
+| Relaxation Heuristics | âœ… | â¬œ | â¬œ | âœ… |
 
 ## Chapter Quiz
 
@@ -185,13 +185,13 @@ RBFS performs a recursive depth-first search while maintaining the best alternat
 
 <details><summary>Answer</summary>B) IDA* (Iterative Deepening A*) performs depth-first search with increasing f-cost bounds.</details>
 
-**Q3:** If heuristic h₂ dominates h₁ (both admissible), what does this mean?
-- A) h₂ expands more nodes than h₁
-- B) h₂ is always closer to the true cost
-- C) h₂ is easier to compute
-- D) h₂ guarantees optimality but h₁ does not
+**Q3:** If heuristic hâ‚‚ dominates hâ‚ (both admissible), what does this mean?
+- A) hâ‚‚ expands more nodes than hâ‚
+- B) hâ‚‚ is always closer to the true cost
+- C) hâ‚‚ is easier to compute
+- D) hâ‚‚ guarantees optimality but hâ‚ does not
 
-<details><summary>Answer</summary>B) h₂(n) ≥ h₁(n) for all n means h₂ is closer to h*(n), so A* with h₂ expands fewer nodes.</details>
+<details><summary>Answer</summary>B) hâ‚‚(n) â‰¥ hâ‚(n) for all n means hâ‚‚ is closer to h*(n), so A* with hâ‚‚ expands fewer nodes.</details>
 
 ## 3.6 Summary
 

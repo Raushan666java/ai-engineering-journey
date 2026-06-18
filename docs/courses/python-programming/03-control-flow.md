@@ -9,7 +9,7 @@ By the end of this chapter, students will be able to:
 - Understand short-circuit evaluation
 - Apply the ternary conditional expression
 
-![Control Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/03-control-flow.png)
+![Control Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/03-control-flow.png)
 
 ## 3.1 The if Statement
 
@@ -49,7 +49,7 @@ else:
 
 Unlike some languages, Python has no `switch` statement (prior to 3.10). The `elif` chain serves the same purpose, and the `match-case` statement provides a more powerful alternative in Python 3.10+.
 
-Indentation is the only delimiter — there is no `endif` or closing brace. The colon after each condition is mandatory:
+Indentation is the only delimiter â€” there is no `endif` or closing brace. The colon after each condition is mandatory:
 
 ```python
 if x:     # colon required
@@ -79,7 +79,7 @@ Common truthiness pitfalls:
 ```python
 # Checking if a list is empty
 items = []
-if items:           # Pythonic — no len(items) > 0
+if items:           # Pythonic â€” no len(items) > 0
     print(items[0])
 else:
     print("Empty")
@@ -154,7 +154,7 @@ status = "Adult" if age >= 18 else "Minor"
 print(status)   # Adult
 ```
 
-Ternary expressions are expressions, not statements — they can be used inside other expressions:
+Ternary expressions are expressions, not statements â€” they can be used inside other expressions:
 
 ```python
 print("Even" if 5 % 2 == 0 else "Odd")   # Odd
@@ -253,7 +253,7 @@ greet(Person("Alice", 35))   # Hi Alice, you're 35
 greet(Person("Bob", 15))     # Hello Bob, young one
 ```
 
-Match-case is exhaustive — if no pattern matches and no wildcard `_` is provided, no exception is raised (the match simply does nothing). Use wildcards to avoid silent failures.
+Match-case is exhaustive â€” if no pattern matches and no wildcard `_` is provided, no exception is raised (the match simply does nothing). Use wildcards to avoid silent failures.
 
 ## 3.7 Conditional Expressions and Assignment
 
@@ -281,7 +281,7 @@ print(results)  # [25, 36, 49, 64, 81]
 Understanding precedence is critical for complex conditions:
 
 ```python
-# Equivalent to (a and b) or c  — and has higher precedence
+# Equivalent to (a and b) or c  â€” and has higher precedence
 if a and b or c:
     pass
 

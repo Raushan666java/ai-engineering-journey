@@ -1,4 +1,6 @@
-﻿# Chapter 4: Spark MLlib
+# Chapter 4: Spark MLlib
+
+> **Previous:** [Chapter 3: Apache Spark Basics](./03-spark-basics.md) | **Next:** [Chapter 5: Big Data Ecosystem Tools](./05-ecosystem.md)
 
 ## Learning Objectives
 
@@ -8,6 +10,31 @@ After completing this chapter, you will be able to:
 - Train classification and regression models on datasets larger than memory
 - Evaluate models using cross-validation on distributed data
 - Export trained models for production inference
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| MLlib Overview | DataFrame-based pipeline API for scalable ML | Composite Transformers and Estimators into reusable pipelines |
+| ML Pipeline Architecture | Chains Transformers and Estimators into one workflow | Pipeline.fit() trains all stages in sequence |
+| Feature Engineering | VectorAssembler, StringIndexer, StandardScaler at scale | 80% of ML work is feature engineering |
+| Training Models | LinearRegression, RandomForest, LogisticRegression | MLlib trains in parallel across the cluster automatically |
+| Cross-Validation | Distributed k-fold validation across executors | Use parallelism parameter for faster CV |
+| Distributed Training | Each executor trains on its data partition | More executors = faster training (up to a point) |
+| Model Export | Save/load models, export coefficients | For production, export coefficients to lightweight serving |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[MLlib Overview] --> B[ML Pipeline Architecture]
+    B --> C[Feature Engineering]
+    C --> D[Training Models]
+    D --> E[Cross-Validation]
+    E --> F[Distributed Training]
+    F --> G[Model Export & Inference]
+    G --> H[K-Means Clustering]
+```
 
 ## 4.1 MLlib Overview
 
@@ -26,7 +53,7 @@ spark = SparkSession.builder.appName("mllib-intro").getOrCreate()
 
 An ML Pipeline chains multiple Transformers and Estimators into a single workflow.
 
-![ML Pipeline Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch04-ml-pipeline.png)
+![ML Pipeline Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/big-data/ch04-ml-pipeline.png)
 
 
 ## 4.3 Feature Engineering
@@ -116,6 +143,10 @@ hasher = FeatureHasher(
 hashed = hasher.transform(df)
 hashed.select("hashed_features").show(truncate=False)
 ```
+
+> **Pro Tip:** For high-cardinality categorical features (millions of unique users), use FeatureHasher instead of OneHotEncoder. FeatureHasher doesn't need to fit a dictionary on all unique values and handles unseen categories gracefully.
+
+> **One-Sentence Takeaway:** Spark MLlib's feature transformers (VectorAssembler, StringIndexer, StandardScaler, FeatureHasher) handle all common preprocessing at scale without leaving the DataFrame paradigm.
 
 ## 4.4 Training Models
 
@@ -253,6 +284,10 @@ rmse = evaluator.evaluate(test_pred)
 print(f"Best model test RMSE: {rmse:.4f}")
 ```
 
+> **Warning:** Cross-validation with large param grids is expensive. A grid of 3×3 with 5 folds = 45 model training runs. Always start with a coarse grid (2×2) and narrow down, or use `parallelism` to run folds in parallel (but watch for resource contention).
+
+> **One-Sentence Takeaway:** CrossValidator enables distributed hyperparameter tuning across the cluster, but param grid size must be balanced against training time and cluster resources.
+
 ## 4.6 Distributed Training at Scale
 
 MLlib performs training in a distributed fashion. Each executor processes a partition of the data, and the driver coordinates gradient updates (or tree ensemble building).
@@ -365,6 +400,75 @@ centers = model.clusterCenters()
 for i, center in enumerate(centers):
     print(f"Cluster {i}: {center[:5]}...")
 ```
+
+> **Remember:** MLlib trains models in a distributed fashion, but it doesn't support GPU acceleration natively. For deep learning at scale, use Pandas UDFs to bridge to PyTorch/TensorFlow, or use Spark's integration with Horovod.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Transformer | Converts one DataFrame to another (.transform()) | No training phase required | Feature encoding, scaling |
+| Estimator | Trains on data to produce a Transformer (.fit()) | Has a training/fit phase | LinearRegression, RandomForest |
+| Pipeline | Chains multiple Transformers and Estimators | Single fit/transform call for complete workflow | End-to-end ML workflow |
+| ParamGrid | Hyperparameter grid for tuning | Defines combinations to search | Cross-validator configuration |
+| Pandas UDF | Vectorized UDF using Arrow serialization | 10-100x faster than row-based UDFs | Batch inference, PyTorch integration |
+| CrossValidator | Distributed k-fold cross-validation | numFolds × param combinations = total fits | Model selection at scale |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **Transformers** | VectorAssembler, StringIndexer, StandardScaler, MinMaxScaler, FeatureHasher, OneHotEncoder | All have .transform(), some need .fit() first |
+| **Estimators** | LinearRegression, RandomForest, LogisticRegression, KMeans | Always need .fit() on training data |
+| **Evaluators** | RegressionEvaluator, BinaryClassificationEvaluator, MulticlassClassificationEvaluator, ClusteringEvaluator | metricName param selects the metric |
+| **Tuning** | CrossValidator, ParamGridBuilder, TrainValidationSplit | Use parallelism for speed, but mind resource limits |
+| **Persistence** | model.save(), model.load(), PipelineModel.load() | Save to S3 for team access |
+
+## Cross-Application Matrix
+
+| Technique | Data Engineering | ML | Cloud | Business Analytics |
+|-----------|-----------------|----|-------|--------------------|
+| ML Pipelines | ETL pipeline orchestration | End-to-end model training | AutoML pipeline deployment | Automated feature engineering |
+| Feature Hashing | User ID hashing for logs | High-cardinality categorical encoding | Stream feature computation | Event property encoding |
+| Cross-Validation | Model quality gates in CI/CD | Hyperparameter optimization | Distributed tuning on EMR | Churn model selection |
+| Pandas UDFs | Complex row-wise transformations | PyTorch model inference | Batch scoring on serverless | Custom aggregation logic |
+| K-Means Clustering | Log pattern grouping | Customer segmentation | Segment analysis on BigQuery | Market basket analysis |
+| Model Export | Feature store population | ONNX/PMML deployment | SageMaker endpoint deployment | Looker model integration |
+
+## Chapter Quiz
+
+1. What is the primary advantage of using a Pipeline in MLlib?
+   - A) It runs faster than individual stages
+   - B) It chains multiple Transformers and Estimators into a single workflow with a single fit/transform call
+   - C) It automatically selects the best model
+   - D) It deploys models to production
+
+<details>
+<summary>Answer</summary>
+**B) It chains multiple Transformers and Estimators into a single workflow.** A Pipeline ensures that the same preprocessing steps are applied consistently during training and inference, preventing training/serving skew.
+</details>
+
+2. Why are Pandas UDFs faster than regular UDFs in Spark?
+   - A) They run on the driver instead of executors
+   - B) They operate on batches using Arrow serialization instead of row-by-row
+   - C) They skip Catalyst optimization
+   - D) They use GPU acceleration
+
+<details>
+<summary>Answer</summary>
+**B) They operate on batches using Arrow serialization.** Regular UDFs deserialize and serialize one row at a time (high overhead). Pandas UDFs pass batches of rows using Arrow's columnar format, achieving 10-100x speedups.
+</details>
+
+3. What is the main limitation of MLlib compared to deep learning frameworks?
+   - A) MLlib only supports regression models
+   - B) MLlib doesn't natively support GPU acceleration for deep learning
+   - C) MLlib cannot handle datasets larger than memory
+   - D) MLlib doesn't support Python
+
+<details>
+<summary>Answer</summary>
+**B) MLlib doesn't natively support GPU acceleration for deep learning.** MLlib is optimized for distributed training on CPU clusters. For deep learning, use Pandas UDFs to bridge to PyTorch/TensorFlow or use Spark + Horovod.
+</details>
 
 ## Summary
 

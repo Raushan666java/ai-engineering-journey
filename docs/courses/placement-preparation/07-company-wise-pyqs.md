@@ -1,10 +1,10 @@
-﻿# 07 â€” Company-Wise Previous Year Questions
+# 07 â€” Company-Wise Previous Year Questions
 
 > Comprehensive compilation of actual coding problems, behavioral questions, and system design problems asked by top companies during campus placements (2023â€“2025). Each problem includes a complete, compilable Java solution.
 
 ---
 
-![Preparation Roadmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch07-prep-roadmap.png)
+![Preparation Roadmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch07-prep-roadmap.png)
 
 ## Table of Contents
 

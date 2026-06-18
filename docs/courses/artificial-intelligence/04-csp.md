@@ -33,9 +33,9 @@ flowchart LR
 
 ## 4.1 Definition of Constraint Satisfaction Problems
 
-![Constraint Satisfaction Problems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch04-csp.png)
+![Constraint Satisfaction Problems](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch04-csp.png)
 
-> **One-Sentence Takeaway:** A CSP is defined by variables X, domains D, and constraints C — the solution is a complete assignment satisfying all constraints.
+> **One-Sentence Takeaway:** A CSP is defined by variables X, domains D, and constraints C â€” the solution is a complete assignment satisfying all constraints.
 
 A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}, \mathcal{D}, \mathcal{C})$ where:
 
@@ -58,7 +58,7 @@ The **constraint graph** represents variables as nodes and constraints as edges 
 - **Binary constraints:** Relate two variables ($X \neq Y$).
 - **Global constraints:** Involve an arbitrary number of variables ($Alldifferent(X_1, \ldots, X_k)$).
 
-> **💡 Pro Tip:** The MRV (Minimum Remaining Values) heuristic is the single most impactful optimization for CSP backtracking. By choosing the most constrained variable first, you minimize the branching factor and detect dead ends earlier.
+> **ðŸ’¡ Pro Tip:** The MRV (Minimum Remaining Values) heuristic is the single most impactful optimization for CSP backtracking. By choosing the most constrained variable first, you minimize the branching factor and detect dead ends earlier.
 
 ## 4.2 Backtracking Search
 
@@ -70,15 +70,15 @@ function BACKTRACKING-SEARCH(csp) returns solution or failure
 
 function BACKTRACK(assignment, csp) returns solution or failure
     if assignment is complete then return assignment
-    var ← SELECT-UNASSIGNED-VARIABLE(csp)
+    var â† SELECT-UNASSIGNED-VARIABLE(csp)
     for each value in ORDER-DOMAIN-VALUES(var, assignment, csp) do
         if value is consistent with assignment given CONSTRAINTS(csp) then
             add {var = value} to assignment
-            inferences ← INFERENCE(csp, var, value)
-            if inferences ≠ failure then
+            inferences â† INFERENCE(csp, var, value)
+            if inferences â‰  failure then
                 add inferences to assignment
-                result ← BACKTRACK(assignment, csp)
-                if result ≠ failure then return result
+                result â† BACKTRACK(assignment, csp)
+                if result â‰  failure then return result
             remove {var = value} and inferences from assignment
     return failure
 ```
@@ -103,9 +103,9 @@ A binary constraint is **arc-consistent** if for every value in the domain of th
 
 ```
 function AC-3(csp) returns CSP or failure
-    queue ← all arcs in csp
+    queue â† all arcs in csp
     while queue is not empty do
-        (X_i, X_j) ← POP(queue)
+        (X_i, X_j) â† POP(queue)
         if REVISE(csp, X_i, X_j) then
             if D_i is empty then return failure
             for each X_k in NEIGHBORS(X_i) - {X_j} do
@@ -113,11 +113,11 @@ function AC-3(csp) returns CSP or failure
     return csp
 
 function REVISE(csp, X_i, X_j) returns boolean
-    revised ← false
+    revised â† false
     for each x in D_i do
         if no value y in D_j satisfies constraint (X_i, X_j) then
             delete x from D_i
-            revised ← true
+            revised â† true
     return revised
 ```
 
@@ -125,7 +125,7 @@ function REVISE(csp, X_i, X_j) returns boolean
 
 MAC interleaves backtracking search with arc consistency propagation. After each assignment, AC-3 is run on the remaining variables. MAC dramatically reduces the search space compared to forward checking.
 
-> **⚠️ Warning:** The AC-3 algorithm only enforces arc consistency, not full global consistency. A CSP can pass AC-3 and still have no solution. Always use AC-3 as a preprocessing step, not as a complete solver.
+> **âš ï¸ Warning:** The AC-3 algorithm only enforces arc consistency, not full global consistency. A CSP can pass AC-3 and still have no solution. Always use AC-3 as a preprocessing step, not as a complete solver.
 
 ## 4.4 CSP Structure
 
@@ -151,11 +151,11 @@ Local search for CSPs: start with a random assignment, then repeatedly select a 
 
 ```
 function MIN-CONFLICTS(csp, max_steps) returns solution or failure
-    current ← random complete assignment of csp
+    current â† random complete assignment of csp
     for i = 1 to max_steps do
         if current satisfies all constraints then return current
-        var ← randomly chosen conflicted variable
-        value ← value minimizing CONFLICTS(var, current, csp)
+        var â† randomly chosen conflicted variable
+        value â† value minimizing CONFLICTS(var, current, csp)
         set var = value in current
     return failure
 ```
@@ -167,12 +167,12 @@ The min-conflicts heuristic is remarkably effective for problems such as $N$-Que
 | Technique | Type | Preprocessing? | Guarantee | Complexity |
 |-----------|:---:|:---:|:---:|:---:|
 | Backtracking | Search | No | Complete | O(d^n) worst case |
-| Forward Checking | Propagation | On assignment | Domain filtering | O(n²d²) |
-| AC-3 | Propagation | Yes/Interleaved | Arc consistency | O(n²d³) |
-| MAC | Propagation+Search | Interleaved | More pruning than FC | O(n²d³) per step |
+| Forward Checking | Propagation | On assignment | Domain filtering | O(nÂ²dÂ²) |
+| AC-3 | Propagation | Yes/Interleaved | Arc consistency | O(nÂ²dÂ³) |
+| MAC | Propagation+Search | Interleaved | More pruning than FC | O(nÂ²dÂ³) per step |
 | Min-Conflicts | Iterative | Random start | Incomplete | Polynomial typically |
 
-## Quick Reference — CSP Heuristics
+## Quick Reference â€” CSP Heuristics
 
 | Heuristic | Type | Rule |
 |-----------|:---:|------|
@@ -185,11 +185,11 @@ The min-conflicts heuristic is remarkably effective for problems such as $N$-Que
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| CSP Formulation | ✅ | ✅ | ✅ | ✅ |
-| Backtracking Search | ✅ | ⬜ | ⬜ | ✅ |
-| AC-3 Propagation | ⬜ | ⬜ | ⬜ | ✅ |
-| Min-Conflicts | ⬜ | ⬜ | ⬜ | ✅ |
-| Tree Decomposition | ⬜ | ✅ | ⬜ | ✅ |
+| CSP Formulation | âœ… | âœ… | âœ… | âœ… |
+| Backtracking Search | âœ… | â¬œ | â¬œ | âœ… |
+| AC-3 Propagation | â¬œ | â¬œ | â¬œ | âœ… |
+| Min-Conflicts | â¬œ | â¬œ | â¬œ | âœ… |
+| Tree Decomposition | â¬œ | âœ… | â¬œ | âœ… |
 
 ## Chapter Quiz
 
@@ -210,12 +210,12 @@ The min-conflicts heuristic is remarkably effective for problems such as $N$-Que
 <details><summary>Answer</summary>B) AC-3 enforces arc consistency between all variable pairs in a CSP.</details>
 
 **Q3:** A tree-structured CSP can be solved in what time complexity?
-- A) O(n²)
-- B) O(n d²)
+- A) O(nÂ²)
+- B) O(n dÂ²)
 - C) O(d^n)
 - D) O(n log n)
 
-<details><summary>Answer</summary>B) Tree-structured CSPs are solvable in O(n d²) time — linear in the number of variables and quadratic in the domain size.</details>
+<details><summary>Answer</summary>B) Tree-structured CSPs are solvable in O(n dÂ²) time â€” linear in the number of variables and quadratic in the domain size.</details>
 
 ## 4.6 Summary
 

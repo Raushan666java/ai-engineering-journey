@@ -1,4 +1,4 @@
-# Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin
+# Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Theory
 
-![URL Shortener Rate Limiter Pastebin Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/18-url-shortener-rate-limiter.png)
+![URL Shortener Rate Limiter Pastebin Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/18-url-shortener-rate-limiter.png)
 
 ### Requirements Phase
 
@@ -34,7 +34,7 @@ Every system design begins with precise functional and non-functional requiremen
 | Write QPS | ~40 writes per second (100M / ~2.6M sec/month) |
 | Read QPS | ~400 reads per second (10:1 read-to-write ratio) |
 | Latency | Redirects under 10ms end-to-end |
-| Availability | 99.99% (four nines) — redirects must always work |
+| Availability | 99.99% (four nines) â€” redirects must always work |
 
 **Rate Limiter Requirements**
 
@@ -67,26 +67,26 @@ Orders of magnitude matter. We compute storage, bandwidth, and QPS before choosi
 
 **URL Shortener Storage**
 
-- 100M URLs/month × 12 months = 1.2B URLs/year
+- 100M URLs/month Ã— 12 months = 1.2B URLs/year
 - Average entry: short key (8 bytes) + long URL (2048 bytes avg) + created_at (8 bytes) + user_id (8 bytes) + metadata (~200 bytes) = ~2.3KB
-- Total per year: 1.2B × 2.3KB ≈ 2.8TB
+- Total per year: 1.2B Ã— 2.3KB â‰ˆ 2.8TB
 - With replication factor 3 and Cassandra overhead: ~10TB/year
-- Cache: 80% of reads hit 20% of URLs (Pareto). Top 200M URLs in Redis: 200M × 2.3KB ≈ 460GB. Use Redis Cluster with sharding.
-- Bandwidth writes: 40 QPS × 2.3KB ≈ 92KB/sec (trivial)
-- Bandwidth reads: 400 QPS × 2.3KB ≈ 920KB/sec
+- Cache: 80% of reads hit 20% of URLs (Pareto). Top 200M URLs in Redis: 200M Ã— 2.3KB â‰ˆ 460GB. Use Redis Cluster with sharding.
+- Bandwidth writes: 40 QPS Ã— 2.3KB â‰ˆ 92KB/sec (trivial)
+- Bandwidth reads: 400 QPS Ã— 2.3KB â‰ˆ 920KB/sec
 
 **Rate Limiter Storage**
 
-- 100M users × ~200 bytes/user (counter state) = 20GB if stored per-user
+- 100M users Ã— ~200 bytes/user (counter state) = 20GB if stored per-user
 - Redis optimization: window data per key is small (<100 bytes)
 - Total Redis memory: ~2-4GB for 10M active daily users
 - Network: rate limiter check adds ~1 round trip per request (or zero with local cache)
 
 **Pastebin Storage**
 
-- 1M pastes/day × 10KB avg = 10GB/day raw content
-- 30 days × 10GB = 300GB hot storage
-- Metadata: 1M × 1KB = 1GB/day → 30GB/month
+- 1M pastes/day Ã— 10KB avg = 10GB/day raw content
+- 30 days Ã— 10GB = 300GB hot storage
+- Metadata: 1M Ã— 1KB = 1GB/day â†’ 30GB/month
 - Object store (S3) costs: ~$23/TB/month for standard tier
 - Transition infrequent-access pastes to S3 Glacier after 30 days
 - CDN: cache popular pastes (Pareto: 10% of pastes serve 90% of reads)
@@ -98,9 +98,9 @@ Logical architecture before physical implementation. We decompose the system int
 **URL Shortener HLD**
 
 ```
-Client → CDN (static assets) → Load Balancer (Round Robin) → App Server Pool
-  ├──→ Write Path: KGS (Key Generation Service) → Redis (cache) → Cassandra (persistence)
-  └──→ Read Path:  Redis (cache hit) → Cassandra (cache miss → populate cache)
+Client â†’ CDN (static assets) â†’ Load Balancer (Round Robin) â†’ App Server Pool
+  â”œâ”€â”€â†’ Write Path: KGS (Key Generation Service) â†’ Redis (cache) â†’ Cassandra (persistence)
+  â””â”€â”€â†’ Read Path:  Redis (cache hit) â†’ Cassandra (cache miss â†’ populate cache)
 ```
 
 The Key Generation Service is the central innovation. A naive approach generates a random key on each write, requiring a database uniqueness check per request. KGS pre-generates batches of unique keys and marks them as used in a separate database table. Each app server maintains a local pool of 10,000 pre-generated keys, eliminating the database write bottleneck for ID generation entirely.
@@ -108,9 +108,9 @@ The Key Generation Service is the central innovation. A naive approach generates
 **Rate Limiter HLD**
 
 ```
-Client → Load Balancer → App Server (local rate limiter cache)
-  → Redis Cluster (distributed counter, Lua scripting)
-  → API Gateway (global rate limit rules)
+Client â†’ Load Balancer â†’ App Server (local rate limiter cache)
+  â†’ Redis Cluster (distributed counter, Lua scripting)
+  â†’ API Gateway (global rate limit rules)
 ```
 
 The rate limiter sits in front of the API. A middleware layer intercepts each request, extracts the user or IP identifier, checks the current count, and either allows or rejects the request. The decision is cached locally on each app server to minimize Redis round trips for high-volume users.
@@ -118,12 +118,12 @@ The rate limiter sits in front of the API. A middleware layer intercepts each re
 **Pastebin HLD**
 
 ```
-Client → CDN (CloudFront) → Load Balancer (ELB) → App Server Pool (EC2 Auto Scaling)
-  ├── Write: S3 Object Store (paste content, keyed by SHA-256)
-  ├── Metadata: PostgreSQL RDS (Multi-AZ, with read replicas)
-  ├── Cache: ElastiCache Redis (popular metadata + rendered HTML)
-  ├── Search: Elasticsearch (full-text search over content and language)
-  └── Workers: SQS → Lambda (expiry, syntax highlighting, CDN pre-warm)
+Client â†’ CDN (CloudFront) â†’ Load Balancer (ELB) â†’ App Server Pool (EC2 Auto Scaling)
+  â”œâ”€â”€ Write: S3 Object Store (paste content, keyed by SHA-256)
+  â”œâ”€â”€ Metadata: PostgreSQL RDS (Multi-AZ, with read replicas)
+  â”œâ”€â”€ Cache: ElastiCache Redis (popular metadata + rendered HTML)
+  â”œâ”€â”€ Search: Elasticsearch (full-text search over content and language)
+  â””â”€â”€ Workers: SQS â†’ Lambda (expiry, syntax highlighting, CDN pre-warm)
 ```
 
 Pastes are content-addressed. The server computes SHA-256(content) to generate a unique hash. If the hash already exists in the metadata database, the system returns the existing URL (deduplication). This approach guarantees that identical content always maps to the same paste, saving storage and reducing redundancy.
@@ -143,7 +143,7 @@ The following table captures the rationale for each technology choice in the Pas
 
 ### Deep Dive Phase
 
-Now we examine the hard problems — the details that separate a toy from a production system.
+Now we examine the hard problems â€” the details that separate a toy from a production system.
 
 **Comparative Analysis: Three Approaches to Unique ID Generation**
 
@@ -170,11 +170,11 @@ def encode_base62(num):
     return ''.join(reversed(result))
 ```
 
-With 7 characters, Base62 gives us 62^7 ≈ 3.5 trillion unique keys. At 100M new URLs per month, this space lasts ~3,500 years.
+With 7 characters, Base62 gives us 62^7 â‰ˆ 3.5 trillion unique keys. At 100M new URLs per month, this space lasts ~3,500 years.
 
 **URL Shortener Deep Dive**
 
-Hashing strategy is the first architectural decision. Base62 encoding (a-z, A-Z, 0-9 = 62 characters) produces short, human-readable keys. With 7 characters, we have 62^7 ≈ 3.5 trillion unique keys. MD5 hash truncation produces a 128-bit hash, truncated to the first 7 bytes, then Base62 encoded. The risk is collision: with 3.5 trillion keys and a truncated hash, the birthday paradox gives a ~50% collision probability at ~2.4 billion keys. For a URL shortener, collisions are unacceptable because they would redirect one URL to another.
+Hashing strategy is the first architectural decision. Base62 encoding (a-z, A-Z, 0-9 = 62 characters) produces short, human-readable keys. With 7 characters, we have 62^7 â‰ˆ 3.5 trillion unique keys. MD5 hash truncation produces a 128-bit hash, truncated to the first 7 bytes, then Base62 encoded. The risk is collision: with 3.5 trillion keys and a truncated hash, the birthday paradox gives a ~50% collision probability at ~2.4 billion keys. For a URL shortener, collisions are unacceptable because they would redirect one URL to another.
 
 Collision resolution strategies include:
 - **Append a counter**: When a collision is detected, append a sequence number and re-hash.
@@ -213,7 +213,7 @@ With 64 shards and replication factor 3, each shard handles ~20M URLs/year. Each
 
 **Read Replica Lag and Consistency**
 
-The cache-aside pattern with write-through ensures that recent writes are always in Redis. Database read replicas may lag by up to 100ms. The consistency guarantee: after a successful write, the next read hits Redis (populated during write). If Redis is down and the read replica has not yet replicated the write, the user sees a stale redirect. For a URL shortener, this is acceptable — the user created the URL and the redirect works, just pointing to an old URL if they recently edited it.
+The cache-aside pattern with write-through ensures that recent writes are always in Redis. Database read replicas may lag by up to 100ms. The consistency guarantee: after a successful write, the next read hits Redis (populated during write). If Redis is down and the read replica has not yet replicated the write, the user sees a stale redirect. For a URL shortener, this is acceptable â€” the user created the URL and the redirect works, just pointing to an old URL if they recently edited it.
 
 **Rate Limiter Deep Dive**
 
@@ -230,10 +230,10 @@ Four algorithm choices with distinct trade-offs:
 **Sliding Window Counter**: The compromise. Track the current window's counter and the previous window's counter. Calculate:
 
 ```
-weighted_count = current_count + previous_count × (window_elapsed / window_size)
+weighted_count = current_count + previous_count Ã— (window_elapsed / window_size)
 ```
 
-This approximates the true sliding window rate with O(1) storage per user — just two counters per key. Redis Lua script:
+This approximates the true sliding window rate with O(1) storage per user â€” just two counters per key. Redis Lua script:
 
 ```lua
 local key = KEYS[1]
@@ -368,9 +368,9 @@ Alice runs a marketing platform that needs branded short URLs for client campaig
 ### High-Level Design
 
 ```
-Client → CloudFront (CDN for redirects?) → ELB → EC2 App Servers (auto-scaling)
-  → KGS (MySQL for key batches) → Redis Cluster (cache, 10 shards)
-  → Cassandra Cluster (6 nodes, RF=3) → Kafka → ClickHouse (analytics)
+Client â†’ CloudFront (CDN for redirects?) â†’ ELB â†’ EC2 App Servers (auto-scaling)
+  â†’ KGS (MySQL for key batches) â†’ Redis Cluster (cache, 10 shards)
+  â†’ Cassandra Cluster (6 nodes, RF=3) â†’ Kafka â†’ ClickHouse (analytics)
 ```
 
 ### Deep Dive
@@ -386,7 +386,7 @@ COMMIT;
 
 App servers cache 10,000 keys in memory, requesting replacement when the pool drops below 1,000. This eliminates write-path database contention entirely.
 
-Cache hierarchy: L1 (local app server LRU cache, 10MB, ~5,000 entries) → L2 (Redis Cluster, 200GB, ~100M entries) → Cassandra (full dataset). A Bloom filter in front of Cassandra eliminates unnecessary lookups for non-existent short URLs.
+Cache hierarchy: L1 (local app server LRU cache, 10MB, ~5,000 entries) â†’ L2 (Redis Cluster, 200GB, ~100M entries) â†’ Cassandra (full dataset). A Bloom filter in front of Cassandra eliminates unnecessary lookups for non-existent short URLs.
 
 **Cache Invalidation Strategy**
 
@@ -442,18 +442,18 @@ A public API platform serving 10,000 third-party developers. Each API key is rat
 ### High-Level Design
 
 ```
-Client → ELB → API Gateway (Zuul/Kong)
-  → Rate Limiter Middleware
-    → Local Token Cache (per-server)
-    → Redis Cluster (distributed counters, Lua scripting)
-  → Backend Services
+Client â†’ ELB â†’ API Gateway (Zuul/Kong)
+  â†’ Rate Limiter Middleware
+    â†’ Local Token Cache (per-server)
+    â†’ Redis Cluster (distributed counters, Lua scripting)
+  â†’ Backend Services
 ```
 
 ### Deep Dive
 
 The token bucket variant used here is "burst-aware." Each user is configured with `max_burst` (the bucket capacity) and `refill_rate` (tokens per second). Enterprise customers get a larger bucket and faster refill.
 
-Redis Lua scripting ensures atomicity. The script is only ~20 lines but eliminates race conditions between checking and incrementing the counter. Without Lua, two concurrent requests could both read count=99, both increment, and both pass — allowing 101 requests instead of 100.
+Redis Lua scripting ensures atomicity. The script is only ~20 lines but eliminates race conditions between checking and incrementing the counter. Without Lua, two concurrent requests could both read count=99, both increment, and both pass â€” allowing 101 requests instead of 100.
 
 Local caching is tiered by user plan. Free-tier users have no local cache (every request hits Redis). Enterprise users get a local batch of 100 tokens. This incentivizes upgrades while protecting the free-tier from abuse.
 
@@ -468,7 +468,7 @@ The fundamental challenge of distributed rate limiting is maintaining accurate s
 | Local batch + background sync | Eventually consistent | +0ms | Very low | Bounded by sync interval |
 | CRDT counters (Redis-free) | Eventual | +0ms | None | Bounded by merge interval |
 
-The production system uses a tiered approach: free-tier users check Redis on every request (strong consistency, every request counted accurately). Tier-2 users get a local cache of 10 tokens. Enterprise users get 100. The overshoot is bounded: at worst, a user exceeds their limit by (N × number_of_servers) tokens per window. With N=100 and 50 servers, the worst-case overshoot is 5,000 requests — acceptable for enterprise SLAs that specify "burst up to 10x".
+The production system uses a tiered approach: free-tier users check Redis on every request (strong consistency, every request counted accurately). Tier-2 users get a local cache of 10 tokens. Enterprise users get 100. The overshoot is bounded: at worst, a user exceeds their limit by (N Ã— number_of_servers) tokens per window. With N=100 and 50 servers, the worst-case overshoot is 5,000 requests â€” acceptable for enterprise SLAs that specify "burst up to 10x".
 
 **Rate Limit Header Design**
 
@@ -518,20 +518,20 @@ A developer tool for sharing code snippets and logs. Pastes are write-once, read
 ### High-Level Design
 
 ```
-Client → CloudFront CDN → ELB → EC2 App Servers
-  → S3 Object Store (paste content)
-  → PostgreSQL (metadata, dedup)
-  → Background Workers
-    ├── Expiry Worker (deletes expired pastes)
-    ├── Syntax Highlighting Worker
-    └── CDN Pre-warm Worker
+Client â†’ CloudFront CDN â†’ ELB â†’ EC2 App Servers
+  â†’ S3 Object Store (paste content)
+  â†’ PostgreSQL (metadata, dedup)
+  â†’ Background Workers
+    â”œâ”€â”€ Expiry Worker (deletes expired pastes)
+    â”œâ”€â”€ Syntax Highlighting Worker
+    â””â”€â”€ CDN Pre-warm Worker
 ```
 
 ### Deep Dive
 
-Content hashing for deduplication is the defining feature. SHA-256(content) produces a 64-character digest that serves as the S3 object key. The deduplication check is a simple primary key lookup in PostgreSQL. If the hash exists, the system returns the existing paste URL — but only if the visibility settings are compatible. A private paste that happens to match a public paste is treated as a new object (the hash is salted with a user-specific nonce).
+Content hashing for deduplication is the defining feature. SHA-256(content) produces a 64-character digest that serves as the S3 object key. The deduplication check is a simple primary key lookup in PostgreSQL. If the hash exists, the system returns the existing paste URL â€” but only if the visibility settings are compatible. A private paste that happens to match a public paste is treated as a new object (the hash is salted with a user-specific nonce).
 
-The short URL for public pastes is generated from a truncated portion of the hash (first 8 hex characters → 4 billion unique IDs) or from a sequential ID with the hash used only for storage deduplication.
+The short URL for public pastes is generated from a truncated portion of the hash (first 8 hex characters â†’ 4 billion unique IDs) or from a sequential ID with the hash used only for storage deduplication.
 
 Syntax highlighting runs via a Celery-like task queue. The worker detects the language using file extension, shebang, or content heuristics (Pygments' lexer guessing). The rendered HTML is stored in both S3 (as a separate `.html` object) and in a CDN cache for fast delivery.
 

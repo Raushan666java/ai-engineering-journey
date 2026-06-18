@@ -1,4 +1,4 @@
-﻿# Chapter 15: Laravel MCP â€” Model Context Protocol
+# Chapter 15: Laravel MCP â€” Model Context Protocol
 
 ---
 ## Learning Objectives
@@ -12,7 +12,7 @@
 
 ## Theory
 
-![MCP Integration](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/15-mcp.png)
+![MCP Integration](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/15-mcp.png)
 
 
 ### 15.1 MCP Overview

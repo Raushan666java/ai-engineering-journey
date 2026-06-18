@@ -12,7 +12,7 @@ After studying this chapter, students will be able to:
 
 ## 11.1 File Stream Classes
 
-![File I/O Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/11-file-io.png)
+![File I/O Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/11-file-io.png)
 
 The `<fstream>` header provides three file stream classes derived from `iostream`:
 
@@ -109,7 +109,7 @@ std::string content(
 In text mode, the runtime performs platform-specific transformations: on Windows, `\n` is written as `\r\n` and `\r\n` is read back as `\n`. Binary mode suppresses these transformations.
 
 ```cpp
-// Binary mode—no transformations
+// Binary modeâ€”no transformations
 std::ofstream out("data.bin", std::ios::binary);
 
 struct Record {
@@ -209,10 +209,10 @@ if (!file) {                         // or file.fail()
 }
 
 // State flags
-// file.good() — no error flags set
-// file.bad()  — irrecoverable error (e.g., hardware)
-// file.fail() — operation failed (recoverable)
-// file.eof()  — end of file reached
+// file.good() â€” no error flags set
+// file.bad()  â€” irrecoverable error (e.g., hardware)
+// file.fail() â€” operation failed (recoverable)
+// file.eof()  â€” end of file reached
 ```
 
 Checking every read operation is important:

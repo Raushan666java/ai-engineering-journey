@@ -1,6 +1,6 @@
 # Chapter 10: Dynamic Programming on Trees and Grids
 
-> **Prerequisites:** [Chapter 9: Dynamic Programming — Sequences](./09-dp-sequences.md) — DP recurrences for chain structures | **Next:** [Chapter 11: Shortest Paths & MST](./11-shortest-paths-mst.md) — Graph algorithms with DP foundations
+> **Prerequisites:** [Chapter 9: Dynamic Programming â€” Sequences](./09-dp-sequences.md) â€” DP recurrences for chain structures | **Next:** [Chapter 11: Shortest Paths & MST](./11-shortest-paths-mst.md) â€” Graph algorithms with DP foundations
 
 ## Learning Objectives
 
@@ -16,11 +16,11 @@ By the end of this chapter, students will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Tree DP | Post-order DFS combines child results | Parent depends on its subtrees — visit children first |
+| Tree DP | Post-order DFS combines child results | Parent depends on its subtrees â€” visit children first |
 | Tree Diameter | Farthest node from farthest node | Two-pass DFS or DP tracking top-2 heights |
 | Grid DP | dp[i][j] = f(dp[i-1][j], dp[i][j-1]) | Path problems: right+down simplifies to 2D recurrence |
 | DP with Obstacles | Skip blocked cells | Same recurrence but dp[i][j] = 0 when blocked |
-| DP with Bitmask | dp[mask][v] = min cost ending at v | State = visited set + current node — classic TSP |
+| DP with Bitmask | dp[mask][v] = min cost ending at v | State = visited set + current node â€” classic TSP |
 
 ### Chapter Roadmap
 
@@ -40,7 +40,7 @@ flowchart LR
 
 ## Theory
 
-![DP Trees and Grids Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch10-dp-trees-grids.png)
+![DP Trees and Grids Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch10-dp-trees-grids.png)
 
 ### 10.1 DP on Trees
 
@@ -106,7 +106,7 @@ dp[u][1] &= \text{val}(u) + \sum_{v \in \text{children}(u)} dp[v][0]
 \end{aligned}
 \]
 
-> **Pro Tip:** Tree DP always uses post-order DFS — compute children's DP values before the parent's. For the diameter, track the top 2 heights at each node. For state-based problems like House Robber, use dp[u][selected] / dp[u][not_selected] pairs.
+> **Pro Tip:** Tree DP always uses post-order DFS â€” compute children's DP values before the parent's. For the diameter, track the top 2 heights at each node. For state-based problems like House Robber, use dp[u][selected] / dp[u][not_selected] pairs.
 >
 > **Remember:** In tree DP, the global answer may merge values from different subtrees (as in diameter = max1 + max2). Track a global variable alongside the per-node return value.
 
@@ -147,9 +147,9 @@ dp[i-1][j] + dp[i][j-1] & \text{otherwise}
 \end{cases}
 \]
 
-> **Pro Tip:** Grid DP can often be space-optimized to 1D — since dp[i][j] only depends on dp[i-1][j] and dp[i][j-1], you only need the previous row and current row, or even a single array with careful iteration.
+> **Pro Tip:** Grid DP can often be space-optimized to 1D â€” since dp[i][j] only depends on dp[i-1][j] and dp[i][j-1], you only need the previous row and current row, or even a single array with careful iteration.
 >
-> **Warning:** Don't forget to handle the base row (i=0) and column (j=0) separately — they only have one way to be reached (all rights or all downs).
+> **Warning:** Don't forget to handle the base row (i=0) and column (j=0) separately â€” they only have one way to be reached (all rights or all downs).
 
 **One-Sentence Takeaway:** Grid DP uses the recurrence dp[i][j] = f(dp[i-1][j], dp[i][j-1]) for path counting and optimization problems on 2D grids.
 
@@ -175,11 +175,11 @@ Base case: \( dp[1 << 0][0] = 0 \).
 
 A Hamiltonian path visits every vertex exactly once. The DP formulation is identical to TSP without the return-to-start requirement.
 
-> **Pro Tip:** DP with bitmasking has O(n²·2ⁿ) complexity — feasible for n ≤ 20. For larger n, use branch-and-bound or approximation algorithms. The recurrence iterates over all masks (2ⁿ) and for each tries n cities.
+> **Pro Tip:** DP with bitmasking has O(nÂ²Â·2â¿) complexity â€” feasible for n â‰¤ 20. For larger n, use branch-and-bound or approximation algorithms. The recurrence iterates over all masks (2â¿) and for each tries n cities.
 >
 > **Remember:** Always initialize dp[1 << start][start] = 0. The mask represents which cities have been visited, not the tour order. Extract the visited bit by checking (mask >> v) & 1.
 
-**One-Sentence Takeaway:** Bitmask DP solves TSP in O(n²·2ⁿ) by tracking the visited set as a bitmask and the current endpoint city as the second state dimension.
+**One-Sentence Takeaway:** Bitmask DP solves TSP in O(nÂ²Â·2â¿) by tracking the visited set as a bitmask and the current endpoint city as the second state dimension.
 
 ---
 
@@ -279,9 +279,9 @@ int tsp(const std::vector<std::vector<int>>& dist) {
 
 | Domain | State Representation | Traversal | Transition | Time |
 |--------|---------------------|-----------|------------|------|
-| Tree DP | Subtree root | Post-order DFS | Combine children → parent | O(n) |
+| Tree DP | Subtree root | Post-order DFS | Combine children â†’ parent | O(n) |
 | Grid DP | Position (i,j) | Row-major iteration | Right/down from neighbors | O(mn) |
-| Bitmask DP | (mask, last vertex) | Mask enumeration | Add vertex to mask | O(n²·2ⁿ) |
+| Bitmask DP | (mask, last vertex) | Mask enumeration | Add vertex to mask | O(nÂ²Â·2â¿) |
 
 ### Quick Reference
 
@@ -292,15 +292,15 @@ int tsp(const std::vector<std::vector<int>>& dist) {
 | **Grid DP** | dp[i][j] depends only on top/left neighbors |
 | **Grid Optimization** | Can reduce to 1D array for space |
 | **Bitmask DP** | State = visited set (mask) + current endpoint |
-| **Bitmask Limits** | n ≤ 20 for feasible O(n²·2ⁿ) runtime |
+| **Bitmask Limits** | n â‰¤ 20 for feasible O(nÂ²Â·2â¿) runtime |
 
 ### Cross-Application Matrix
 
 | Technique | DSA Interviews | Competitive Programming | Real-World |
 |-----------|---------------|----------------------|------------|
-| Tree DP | Common — diameter, path sum | Tree DP contests | Network routing |
-| Grid DP | Very common — path counting | Grid traversal problems | Robotics path planning |
-| Bitmask DP | Occasionally — TSP variants | Subset DP problems | Logistics optimization |
+| Tree DP | Common â€” diameter, path sum | Tree DP contests | Network routing |
+| Grid DP | Very common â€” path counting | Grid traversal problems | Robotics path planning |
+| Bitmask DP | Occasionally â€” TSP variants | Subset DP problems | Logistics optimization |
 
 ---
 
@@ -330,31 +330,31 @@ int tsp(const std::vector<std::vector<int>>& dist) {
 
 <details>
 <summary>Answer</summary>
-C) Post-order — children must be processed before their parent since dp[parent] depends on dp[children].
+C) Post-order â€” children must be processed before their parent since dp[parent] depends on dp[children].
 </details>
 
 **Q2.** What is the time complexity of the DP solution for TSP?
 
-- A) O(n²)
-- B) O(n³)
-- C) O(n²·2ⁿ)
-- D) O(2ⁿ)
+- A) O(nÂ²)
+- B) O(nÂ³)
+- C) O(nÂ²Â·2â¿)
+- D) O(2â¿)
 
 <details>
 <summary>Answer</summary>
-C) O(n²·2ⁿ) — there are n·2ⁿ states (mask × endpoint) and O(n) transitions per state.
+C) O(nÂ²Â·2â¿) â€” there are nÂ·2â¿ states (mask Ã— endpoint) and O(n) transitions per state.
 </details>
 
 **Q3.** In the unique paths DP, how many ways reach cell (i,j)?
 
 - A) dp[i-1][j] + dp[i][j-1]
-- B) dp[i-1][j] · dp[i][j-1]
+- B) dp[i-1][j] Â· dp[i][j-1]
 - C) dp[i-1][j-1] + 1
 - D) max(dp[i-1][j], dp[i][j-1]) + 1
 
 <details>
 <summary>Answer</summary>
-A) dp[i][j] = dp[i-1][j] + dp[i][j-1] — you can arrive from above or from the left.
+A) dp[i][j] = dp[i-1][j] + dp[i][j-1] â€” you can arrive from above or from the left.
 </details>
 
 ### Review Questions

@@ -1,4 +1,4 @@
-﻿# MySQL & Database Design
+# MySQL & Database Design
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![MySQL Database](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/mysql-database.png)
+![MySQL Database](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/mysql-database.png)
 
 
 ### 1 Relational Database Fundamentals

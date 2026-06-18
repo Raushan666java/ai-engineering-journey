@@ -14,7 +14,7 @@
 ---
 ## Theory
 
-![Distributed Coordination Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/09-distributed-coordination.png)
+![Distributed Coordination Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/09-distributed-coordination.png)
 
 ### Service Registry Pattern
 

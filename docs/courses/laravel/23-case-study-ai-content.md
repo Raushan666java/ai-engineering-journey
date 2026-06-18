@@ -1,4 +1,4 @@
-﻿# Chapter 23: Case Study â€” AI-Powered Content Platform
+# Chapter 23: Case Study â€” AI-Powered Content Platform
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Theory â€” End-to-End Design
 
-![AI Content Case Study](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/23-case-study-ai-content.png)
+![AI Content Case Study](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/23-case-study-ai-content.png)
 
 
 ### 7.1 Requirements Gathering

@@ -1,4 +1,4 @@
-﻿# Chapter 22: Case Study â€” SaaS E-Commerce Platform
+# Chapter 22: Case Study â€” SaaS E-Commerce Platform
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Theory â€” End-to-End Design
 
-![E-Commerce Case Study](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/22-case-study-ecommerce.png)
+![E-Commerce Case Study](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/22-case-study-ecommerce.png)
 
 
 ### 6.1 Requirements Gathering

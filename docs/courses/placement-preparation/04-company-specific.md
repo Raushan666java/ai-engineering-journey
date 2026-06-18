@@ -1,4 +1,4 @@
-﻿# Company-Specific Placement Preparation
+# Company-Specific Placement Preparation
 
 > A tiered breakdown of interview processes, question patterns, and preparation strategies across FAANG/MANGA, product-based Indian companies, service-based companies, startups, and premium semiconductor/enterprise companies.
 
@@ -20,7 +20,7 @@
 
 FAANG (Facebook/Meta, Apple, Amazon, Netflix, Google) and the extended MANGA (Meta, Amazon, Netflix, Google, Apple) represent the pinnacle of software engineering compensation and prestige. These companies have hiring bars that rank among the highest in the industry.
 
-![Company Tiers Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch04-company-tiers.png)
+![Company Tiers Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch04-company-tiers.png)
 
 ### Common Threads Across All FAANG Interviews
 
@@ -34,7 +34,7 @@ FAANG (Facebook/Meta, Apple, Amazon, Netflix, Google) and the extended MANGA (Me
 
 #### Interview Process
 
-![Google Interview Process](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch04-google-interview.png)
+![Google Interview Process](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch04-google-interview.png)
 
 #### Googleyness & Leadership
 

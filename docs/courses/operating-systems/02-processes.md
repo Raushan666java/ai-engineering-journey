@@ -12,11 +12,11 @@
 
 ## Theory
 
-![Process States](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/02-processes.png)
+![Process States](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/02-processes.png)
 
 ### Process Concept
 
-A **process** is an instance of a program in execution. While a program is a passive entity (a file on disk), a process is active — it has a program counter, register values, a stack, and data sections.
+A **process** is an instance of a program in execution. While a program is a passive entity (a file on disk), a process is active â€” it has a program counter, register values, a stack, and data sections.
 
 The key insight: **one program can produce many processes**. Opening three terminal windows running `bash` creates three processes from the same binary.
 
@@ -27,8 +27,8 @@ A process occupies memory divided into four sections:
 ```
 +------------------+  high address
 |      Stack       |  Local variables, function parameters, return addresses
-|       ↓          |
-|       ↑          |
+|       â†“          |
+|       â†‘          |
 |      Heap        |  Dynamically allocated memory (malloc, new)
 +------------------+
 |      Data        |  Global and static variables
@@ -39,40 +39,40 @@ A process occupies memory divided into four sections:
 
 - **Text section**: Contains compiled binary code. Read-only to prevent accidental modification.
 - **Data section**: Global and static variables (BSS for uninitialized data, initialized data segment).
-- **Heap**: Dynamically allocated memory — grows upward toward higher addresses.
-- **Stack**: Function call frames, local variables — grows downward.
+- **Heap**: Dynamically allocated memory â€” grows upward toward higher addresses.
+- **Stack**: Function call frames, local variables â€” grows downward.
 
 ### Process States
 
 A process transitions through a series of states during its lifetime. The classic **five-state model**:
 
 ```
-         ┌──────────────────────────────┐
-         │          NEW                  │
-         └──────────────┬───────────────┘
-                        │ admitted
-                        ↓
-         ┌──────────────────────────────┐
-    ┌───│          READY                │◄──────────────┐
-    │   └──────────────┬───────────────┘                │
-    │                  │ scheduler dispatch             │
-    │                  ↓                                │
-    │   ┌──────────────────────────────┐                │
-    │   │         RUNNING              │                │
-    │   └──────┬───────────────┬───────┘                │
-    │          │               │                        │
-    │   I/O or event wait   interrupt                  │
-    │          │               │                        │
-    │          ↓               └────────────────────────┘
-    │   ┌──────────────────────────────┐
-    │   │         WAITING (BLOCKED)    │
-    │   └──────────────┬───────────────┘
-    │                  │ I/O or event completion
-    └──────────────────┘
+         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+         â”‚          NEW                  â”‚
+         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                        â”‚ admitted
+                        â†“
+         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”Œâ”€â”€â”€â”‚          READY                â”‚â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                â”‚
+    â”‚                  â”‚ scheduler dispatch             â”‚
+    â”‚                  â†“                                â”‚
+    â”‚   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                â”‚
+    â”‚   â”‚         RUNNING              â”‚                â”‚
+    â”‚   â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜                â”‚
+    â”‚          â”‚               â”‚                        â”‚
+    â”‚   I/O or event wait   interrupt                  â”‚
+    â”‚          â”‚               â”‚                        â”‚
+    â”‚          â†“               â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+    â”‚   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+    â”‚   â”‚         WAITING (BLOCKED)    â”‚
+    â”‚   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+    â”‚                  â”‚ I/O or event completion
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
     
-         ┌──────────────────────────────┐
-         │        TERMINATED            │
-         └──────────────────────────────┘
+         â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+         â”‚        TERMINATED            â”‚
+         â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 1. **New**: Process is being created
@@ -83,7 +83,7 @@ A process transitions through a series of states during its lifetime. The classi
 
 ### Process Control Block (PCB)
 
-The OS maintains a **Process Control Block** for every process — a data structure that holds all information needed to manage that process. Also known as a task control block.
+The OS maintains a **Process Control Block** for every process â€” a data structure that holds all information needed to manage that process. Also known as a task control block.
 
 **PCB contents**:
 
@@ -105,22 +105,22 @@ When the OS switches from one process to another, it must save the state of the 
 
 ```
 Process P0                    Scheduler                   Process P1
-   │                             │                            │
-   │         running             │                            │
-   │◄────────────────────────────►                            │
-   │                      interrupt or system call            │
-   │                             │                            │
-   │                    save state of P0                      │
-   │                    into PCB₀                             │
-   │                             │                            │
-   │                    reload state of P1                    │
-   │                    from PCB₁                             │
-   │                             │                            │
-   │                             │          running           │
-   │◄────────────────────────────►                            │
+   â”‚                             â”‚                            â”‚
+   â”‚         running             â”‚                            â”‚
+   â”‚â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º                            â”‚
+   â”‚                      interrupt or system call            â”‚
+   â”‚                             â”‚                            â”‚
+   â”‚                    save state of P0                      â”‚
+   â”‚                    into PCBâ‚€                             â”‚
+   â”‚                             â”‚                            â”‚
+   â”‚                    reload state of P1                    â”‚
+   â”‚                    from PCBâ‚                             â”‚
+   â”‚                             â”‚                            â”‚
+   â”‚                             â”‚          running           â”‚
+   â”‚â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º                            â”‚
 ```
 
-**Context switch time is pure overhead** — the CPU does no useful work during a switch. Typical switch time is 1–10 microseconds (thousands of cycles). Modern systems may do hundreds or thousands of context switches per second.
+**Context switch time is pure overhead** â€” the CPU does no useful work during a switch. Typical switch time is 1â€“10 microseconds (thousands of cycles). Modern systems may do hundreds or thousands of context switches per second.
 
 ### Process Creation
 
@@ -203,7 +203,7 @@ Processes can communicate via two primary mechanisms:
 A region of memory is shared between processes. Once mapped, data written by one process is immediately visible to others. This is the fastest IPC method (no kernel involvement after setup).
 
 ```c
-// Producer process — simplified shared memory example
+// Producer process â€” simplified shared memory example
 #include <stdio.h>
 #include <sys/shm.h>
 #include <sys/ipc.h>
@@ -249,7 +249,7 @@ int main() {
 
 #### Message Passing
 
-Processes communicate by exchanging messages through the kernel. Messages are sent and received via system calls. No shared address space is needed — making this suitable for distributed systems.
+Processes communicate by exchanging messages through the kernel. Messages are sent and received via system calls. No shared address space is needed â€” making this suitable for distributed systems.
 
 ```c
 #include <stdio.h>
@@ -333,9 +333,9 @@ int main() {
 ## Summary
 
 - A process is an active instance of a program, containing text, data, heap, and stack
-- The five-state model: NEW → READY → RUNNING → WAITING → TERMINATED
+- The five-state model: NEW â†’ READY â†’ RUNNING â†’ WAITING â†’ TERMINATED
 - The PCB (task_struct in Linux) holds every piece of state the kernel needs about a process
-- Context switching is pure overhead — saving and restoring process state
+- Context switching is pure overhead â€” saving and restoring process state
 - `fork()` creates a child; `exec()` replaces the current program; `exit()` terminates
 - IPC: shared memory (fast, needs synchronization) or message passing (slower, more structured)
 - Zombies are dead processes waiting for parent `wait()`; orphans are adopted by init
@@ -356,6 +356,6 @@ int main() {
 
 ### Advanced
 
-7. Implement a simple producer-consumer using shared memory and a circular buffer. The producer writes integers 0–999; the consumer reads and prints them. Use atomic operations or a flag for synchronization.
+7. Implement a simple producer-consumer using shared memory and a circular buffer. The producer writes integers 0â€“999; the consumer reads and prints them. Use atomic operations or a flag for synchronization.
 8. The `vfork()` system call creates a child that shares the parent's address space and blocks the parent until the child calls `exec()` or `exit()`. Research why `vfork()` exists, then write a benchmark comparing `fork()` and `vfork()` latency over 10,000 iterations.
 9. Design and implement a message-passing library in C that provides `send(pid, msg)` and `recv(pid, &msg)` using POSIX message queues. The library should handle messages up to 1024 bytes and support non-blocking receives.

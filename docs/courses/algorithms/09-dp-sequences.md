@@ -1,6 +1,6 @@
-# Chapter 9: Dynamic Programming — Sequences
+# Chapter 9: Dynamic Programming â€” Sequences
 
-> **Prerequisites:** [Chapter 8: Dynamic Programming — Knapsack Problems](./08-dp-knapsack.md) — 2D DP tables, recurrence design | **Next:** [Chapter 10: Dynamic Programming — Trees & Grids](./10-dp-trees-grids.md) — DP on non-linear structures
+> **Prerequisites:** [Chapter 8: Dynamic Programming â€” Knapsack Problems](./08-dp-knapsack.md) â€” 2D DP tables, recurrence design | **Next:** [Chapter 10: Dynamic Programming â€” Trees & Grids](./10-dp-trees-grids.md) â€” DP on non-linear structures
 
 ## Learning Objectives
 
@@ -21,7 +21,7 @@ By the end of this chapter, students will be able to:
 | LIS | Can reduce to patience sorting | O(n log n) via binary search on tails |
 | Edit Distance | Min of insert/delete/replace | Foundation of spell checking and bioinformatics |
 | Matrix Chain | Parenthesization order affects cost | dp[i][j] = min over all split points k |
-| Palindrome | Expand from center or DP intervals | Two approaches: O(n²) or O(n³) |
+| Palindrome | Expand from center or DP intervals | Two approaches: O(nÂ²) or O(nÂ³) |
 
 ### Chapter Roadmap
 
@@ -41,7 +41,7 @@ flowchart LR
 
 ## Theory
 
-![DP Sequences Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch09-dp-sequences.png)
+![DP Sequences Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch09-dp-sequences.png)
 
 ### 9.1 Longest Common Subsequence (LCS)
 
@@ -74,7 +74,7 @@ LCS(X, Y, m, n):
 
 **Complexity:** \( O(mn) \) time, \( O(mn) \) space (can be optimized to \( O(\min(m,n)) \) for length only).
 
-> **Pro Tip:** LCS reconstruction is done by tracing back through dp[i][j] — if characters match, include the character; otherwise, follow the larger neighbor. Always implement reconstruction if the problem asks for the actual subsequence.
+> **Pro Tip:** LCS reconstruction is done by tracing back through dp[i][j] â€” if characters match, include the character; otherwise, follow the larger neighbor. Always implement reconstruction if the problem asks for the actual subsequence.
 >
 > **Remember:** LCS is the foundation for diff tools (git diff) and bioinformatics sequence alignment. The recurrence pattern extends to three or more sequences with higher dimensions.
 
@@ -118,11 +118,11 @@ LIS_nlogn(A, n):
 
 **Proof of correctness:** By induction, \( tails \) is always sorted, and each element is the smallest possible tail for its length.
 
-> **Pro Tip:** The O(n log n) LIS using patience sorting is a classic interview optimization. The tails array is always sorted — use binary search to find the insertion position. The algorithm only finds length, not the actual subsequence.
+> **Pro Tip:** The O(n log n) LIS using patience sorting is a classic interview optimization. The tails array is always sorted â€” use binary search to find the insertion position. The algorithm only finds length, not the actual subsequence.
 >
 > **Warning:** For non-decreasing (allow equals), use upper_bound instead of lower_bound in the binary search.
 
-**One-Sentence Takeaway:** LIS achieves O(n log n) via patience sorting — maintaining the smallest possible tail for each subsequence length using binary search.
+**One-Sentence Takeaway:** LIS achieves O(n log n) via patience sorting â€” maintaining the smallest possible tail for each subsequence length using binary search.
 
 ### 9.3 Edit Distance (Levenshtein Distance)
 
@@ -145,7 +145,7 @@ The three cases correspond to: delete \( X[i] \), insert \( Y[j] \), or replace 
 
 > **Pro Tip:** Edit distance is the foundation for spell checkers, autocorrect, and DNA sequence alignment. For approximate string matching, allow insert/delete costs to be context-dependent.
 >
-> **Remember:** Insert and delete are symmetric operations — inserting Y[j] into X is equivalent to deleting X[i] from Y. The recurrence captures all three operations symmetrically.
+> **Remember:** Insert and delete are symmetric operations â€” inserting Y[j] into X is equivalent to deleting X[i] from Y. The recurrence captures all three operations symmetrically.
 
 **One-Sentence Takeaway:** Edit distance computes the minimum insert/delete/replace operations between two strings using a symmetric 2D DP recurrence in O(mn) time.
 
@@ -181,7 +181,7 @@ MatrixChain(p, n):
 
 > **Pro Tip:** Matrix chain multiplication is the canonical interval DP problem. The key insight: iterate by chain length (L) from 2 to n, not by start index. The split point k divides the chain into independent subproblems.
 >
-> **Remember:** The cost formula includes p[i-1]*p[k]*p[j] — the dimensions of the first matrix's rows (p[i-1]), the split matrix's columns (p[k]), and the last matrix's columns (p[j]).
+> **Remember:** The cost formula includes p[i-1]*p[k]*p[j] â€” the dimensions of the first matrix's rows (p[i-1]), the split matrix's columns (p[k]), and the last matrix's columns (p[j]).
 
 **One-Sentence Takeaway:** Matrix chain multiplication uses interval DP over chain lengths, minimizing scalar multiplications by trying all split points cost = dp[i][k] + dp[k+1][j] + p[i-1]*p[k]*p[j].
 
@@ -202,11 +202,11 @@ Precompute palindrome information using DP: \( isPal[i][j] = (S[i] == S[j]) \lan
 
 **Complexity:** \( O(n^2) \) time, \( O(n^2) \) space.
 
-> **Pro Tip:** Palindrome partitioning can be solved in O(n²) by precomputing isPal[i][j] using the expansion recurrence, then running a separate 1D DP for min cuts. Never recompute palindrome checks inside the cut DP loop.
+> **Pro Tip:** Palindrome partitioning can be solved in O(nÂ²) by precomputing isPal[i][j] using the expansion recurrence, then running a separate 1D DP for min cuts. Never recompute palindrome checks inside the cut DP loop.
 >
-> **Remember:** The palindrome expansion recurrence isPal[i][j] = (S[i] == S[j]) && (j - i < 2 || isPal[i+1][j-1]) — check outer chars and inner substring.
+> **Remember:** The palindrome expansion recurrence isPal[i][j] = (S[i] == S[j]) && (j - i < 2 || isPal[i+1][j-1]) â€” check outer chars and inner substring.
 
-**One-Sentence Takeaway:** Palindrome partitioning computes minimum cuts in O(n²) by precomputing palindrome substrings and then applying 1D DP over prefix positions.
+**One-Sentence Takeaway:** Palindrome partitioning computes minimum cuts in O(nÂ²) by precomputing palindrome substrings and then applying 1D DP over prefix positions.
 
 ---
 
@@ -299,20 +299,20 @@ int editDistance(const std::string& X, const std::string& Y) {
 
 | Problem | DP Dimension | State | Recurrence Pattern | Complexity | 
 |---------|-------------|-------|-------------------|------------|
-| LCS | 2D (i,j) | dp[i][j] = LCS length | match → +1 diagonal, mismatch → max neighbors | O(mn) |
-| LIS | 1D (i) | dp[i] = LIS ending at i | dp[i] = 1 + max dp[j] where A[j] < A[i] | O(n²) / O(n log n) |
+| LCS | 2D (i,j) | dp[i][j] = LCS length | match â†’ +1 diagonal, mismatch â†’ max neighbors | O(mn) |
+| LIS | 1D (i) | dp[i] = LIS ending at i | dp[i] = 1 + max dp[j] where A[j] < A[i] | O(nÂ²) / O(n log n) |
 | Edit Distance | 2D (i,j) | dp[i][j] = min ops | min(insert, delete, replace) = base+1 | O(mn) |
-| Matrix Chain | 2D interval | dp[i][j] = min cost at split k | min over k of dp[i][k] + dp[k+1][j] + cost | O(n³) |
-| Palindrome Partition | 1D (i) | dp[i] = min cuts for prefix | dp[j] + 1 if S[j+1..i] is palindrome | O(n²) |
+| Matrix Chain | 2D interval | dp[i][j] = min cost at split k | min over k of dp[i][k] + dp[k+1][j] + cost | O(nÂ³) |
+| Palindrome Partition | 1D (i) | dp[i] = min cuts for prefix | dp[j] + 1 if S[j+1..i] is palindrome | O(nÂ²) |
 
 ### Quick Reference
 
 | Category | Key Points |
 |----------|------------|
-| **Two-Sequence DP** | LCS, Edit Distance — 2D table, O(mn) time |
-| **Single-Sequence DP** | LIS — 1D or patience sorting, O(n log n) |
-| **Interval DP** | Matrix Chain — loop by length L, then start i |
-| **Precomputation** | Palindrome Partition — compute isPal first, then 1D cut DP |
+| **Two-Sequence DP** | LCS, Edit Distance â€” 2D table, O(mn) time |
+| **Single-Sequence DP** | LIS â€” 1D or patience sorting, O(n log n) |
+| **Interval DP** | Matrix Chain â€” loop by length L, then start i |
+| **Precomputation** | Palindrome Partition â€” compute isPal first, then 1D cut DP |
 | **Reconstruction** | LCS and Matrix Chain need separate traceback logic |
 | **Common Pitfall** | Forgetting to handle base cases (empty strings, single elements) |
 
@@ -320,11 +320,11 @@ int editDistance(const std::string& X, const std::string& Y) {
 
 | Problem | DSA Interviews | Competitive Programming | System Design | Real-World |
 |---------|---------------|----------------------|---------------|------------|
-| LCS | Common — diff algorithms | String DP variations | Version control diffs | Git diff, bioinformatics |
-| LIS | Very common — patience sort | Greedy + binary search | Priority queues | Stock trading, scheduling |
-| Edit Distance | Common — spell check | Edit distance variants | Autocorrect systems | Spell checkers, DNA alignment |
+| LCS | Common â€” diff algorithms | String DP variations | Version control diffs | Git diff, bioinformatics |
+| LIS | Very common â€” patience sort | Greedy + binary search | Priority queues | Stock trading, scheduling |
+| Edit Distance | Common â€” spell check | Edit distance variants | Autocorrect systems | Spell checkers, DNA alignment |
 | Matrix Chain | Occasionally asked | Interval DP problems | Query optimization | Compiler optimization |
-| Palindrome Partition | Common — string DP | Palindrome problems | Text processing | String analysis, NLP |
+| Palindrome Partition | Common â€” string DP | Palindrome problems | Text processing | String analysis, NLP |
 
 ---
 
@@ -369,13 +369,13 @@ A) Insert (add character), delete (remove character), replace (substitute one ch
 **Q3.** In matrix chain multiplication, the cost of splitting at k is:
 
 - A) dp[i][k] + dp[k+1][j]
-- B) dp[i][k] + dp[k+1][j] + p[i-1]·p[k]·p[j]
-- C) dp[i][k] + p[i-1]·p[j]
+- B) dp[i][k] + dp[k+1][j] + p[i-1]Â·p[k]Â·p[j]
+- C) dp[i][k] + p[i-1]Â·p[j]
 - D) dp[k][j] + dp[i][k-1]
 
 <details>
 <summary>Answer</summary>
-B) The total cost is the left subproblem (A_i..A_k) + right subproblem (A_{k+1}..A_j) + the cost of multiplying the two resulting matrices (p[i-1] × p[k] × p[j]).
+B) The total cost is the left subproblem (A_i..A_k) + right subproblem (A_{k+1}..A_j) + the cost of multiplying the two resulting matrices (p[i-1] Ã— p[k] Ã— p[j]).
 </details>
 
 ### Review Questions

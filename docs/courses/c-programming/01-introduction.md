@@ -22,9 +22,9 @@ C was developed between 1969 and 1973 by Dennis Ritchie at Bell Telephone Labora
 | 1990 | ISO adopts ANSI C as ISO/IEC 9899:1990 (C90) |
 | 1999 | C99 standard introduces inline functions, variable-length arrays, `//` comments |
 | 2011 | C11 standard adds multithreading support, anonymous structures, `_Static_assert` |
-| 2018 | C17 / C18 — bug-fix release with no new language features |
+| 2018 | C17 / C18 â€” bug-fix release with no new language features |
 
-C remains one of the most influential languages in computing. Its design philosophy — trust the programmer, provide low-level access, and keep the language small — has shaped C++, C#, Java, Go, Rust, and many others.
+C remains one of the most influential languages in computing. Its design philosophy â€” trust the programmer, provide low-level access, and keep the language small â€” has shaped C++, C#, Java, Go, Rust, and many others.
 
 ## 1.2 Setting Up a C Development Environment
 
@@ -54,7 +54,7 @@ scoop install gcc
 # Linux
 sudo apt install clang              # Debian/Ubuntu
 
-# macOS — already installed via Xcode Command Line Tools
+# macOS â€” already installed via Xcode Command Line Tools
 ```
 
 ### Verify Installation
@@ -91,19 +91,19 @@ Hello, World!
 
 **Explanation of each line:**
 
-- `#include <stdio.h>` — The preprocessor directive that includes the Standard Input/Output header, which declares `printf`.
-- `int main(void)` — Every C program must have exactly one `main` function. It is the entry point. The keyword `int` indicates it returns an integer to the operating system.
-- `printf("Hello, World!\n");` — Calls the formatted print function. The `\n` is an escape sequence representing a newline character.
-- `return 0;` — Returns zero to the OS, conventionally indicating success.
+- `#include <stdio.h>` â€” The preprocessor directive that includes the Standard Input/Output header, which declares `printf`.
+- `int main(void)` â€” Every C program must have exactly one `main` function. It is the entry point. The keyword `int` indicates it returns an integer to the operating system.
+- `printf("Hello, World!\n");` â€” Calls the formatted print function. The `\n` is an escape sequence representing a newline character.
+- `return 0;` â€” Returns zero to the OS, conventionally indicating success.
 
 ## 1.4 The Compilation Process
 
-![C Compilation Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch01-compilation.png)
+![C Compilation Pipeline](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch01-compilation.png)
 
 A C source file passes through four distinct stages before becoming an executable:
 
 ```
-Source (.c)  →  Preprocessor  →  Compiler  →  Assembler  →  Linker  →  Executable
+Source (.c)  â†’  Preprocessor  â†’  Compiler  â†’  Assembler  â†’  Linker  â†’  Executable
 ```
 
 ### Stage 1: Preprocessing
@@ -129,7 +129,7 @@ gcc -S hello.c -o hello.s      # produces hello.s (assembly)
 
 ### Stage 3: Assembly
 
-The assembler converts assembly code into machine code (object code) — binary instructions the CPU can execute directly.
+The assembler converts assembly code into machine code (object code) â€” binary instructions the CPU can execute directly.
 
 ```bash
 gcc -c hello.c -o hello.o      # produces hello.o (object file)
@@ -162,7 +162,7 @@ Every C program follows a consistent structural pattern:
 /* Function prototype (declaration) */
 double area_of_circle(double radius);
 
-/* Main function — program entry point */
+/* Main function â€” program entry point */
 int main(void)
 {
     double r = 5.0;
@@ -205,7 +205,7 @@ Comments are ignored by the compiler. They exist solely for human readers.
 
 While C is free-form (whitespace is ignored except for separating tokens), established conventions improve readability:
 
-- Use **4 spaces** per indentation level (tabs are also common — be consistent).
+- Use **4 spaces** per indentation level (tabs are also common â€” be consistent).
 - Place the opening brace `{` on the same line as the function header (K&R style) or on the next line (Allman style).
 - Insert a blank line between logical sections.
 - Use descriptive variable names.
@@ -227,7 +227,7 @@ int main(void)
 
 ## Summary
 
-- C was created by Dennis Ritchie at Bell Labs (1969–1973) and remains foundational to modern systems programming.
+- C was created by Dennis Ritchie at Bell Labs (1969â€“1973) and remains foundational to modern systems programming.
 - GCC and Clang are the two primary C compilers; use `-std=c11 -Wall -Wextra` for robust compilation.
 - The compilation pipeline consists of preprocessing, compilation, assembly, and linking.
 - Every C program must contain exactly one `main` function, which returns an integer.

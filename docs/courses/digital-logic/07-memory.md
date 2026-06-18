@@ -1,5 +1,8 @@
 # Chapter 7: Memory Systems
 
+> **Prereq:** Chapter 6 (Sequential Circuits) â€” address decoding and timing are built from sequential and combinational logic.
+> **Next:** Chapter 8 (Computer Architecture) â€” memory hierarchy and the CPU connect into the full computer.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -10,9 +13,39 @@ By the conclusion of this chapter, the student shall be able to:
 4. Calculate memory capacity from address and data bus widths
 5. Analyse timing parameters including access time and cycle time
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| SRAM vs DRAM | Static vs dynamic storage | Speed vs density trade-off |
+| ROM/EPROM/Flash | Non-volatile storage | Firmware, boot code |
+| Address Decoding | Map address space to chips | Core memory system design skill |
+| Timing | Access time, cycle time | Determines system clock speed |
+| Memory Organisation | Word width, chip selection | Matching memory to processor bus |
+
+```mermaid
+flowchart LR
+    A[Memory] --> B[Volatile]
+    A --> C[Non-Volatile]
+    B --> D[SRAM]
+    B --> E[DRAM]
+    C --> F[ROM]
+    C --> G[EPROM]
+    C --> H[Flash]
+    D --> I[Cache]
+    E --> J[Main Memory]
+    H --> K[SSD / Firmware]
+    style A fill:#e1f5fe
+    style I fill:#c8e6c9
+    style J fill:#c8e6c9
+    style K fill:#c8e6c9
+```
+
+> **One-Sentence Takeaway:** Memory systems are the second pillar of computer architecture â€” SRAM provides speed for cache, DRAM provides density for main memory, and Flash provides persistence for storage.
+
 ## Theory
 
-![Finite State Machines and Memory Types](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch05-fsm-memory.png)
+![Finite State Machines and Memory Types](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch05-fsm-memory.png)
 
 ### 7.1 Memory Hierarchy Overview
 
@@ -160,6 +193,33 @@ A DRAM with 4096 rows requires a refresh every 64 ms. Each row refresh requires 
 
 **Solution**: 4096 rows &times; 80 ns = 327,680 ns = 0.32768 ms per refresh cycle. Fraction = 0.32768 / 64 = 0.00512, or approximately 0.5% of the time.
 
+### Concept Comparison
+
+| Technology | Volatile | Density | Speed | Refresh? | Best For |
+|-----------|----------|---------|-------|----------|----------|
+| SRAM | Yes | Low | Fast | No | Cache |
+| DRAM | Yes | High | Medium | Yes | Main memory |
+| ROM | No | Medium | Medium | No | Boot firmware |
+| Flash | No | Highest | Slow-write | No | Storage, firmware |
+
+### Quick Reference
+
+| Metric | Formula | Example (64KÃ—16) |
+|--------|---------|-----------------|
+| Capacity (bits) | 2^A Ã— D | 2^16 Ã— 16 = 1,048,576 bits |
+| Capacity (bytes) | 2^A Ã— D/8 | 2^16 Ã— 2 = 128 KB |
+| Address pins | A = log2(locations) | 16 for 64K locations |
+| Chip count | Total bits / chip bits | (64KÃ—16) / (4KÃ—8) = 32 chips |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | Cache SRAM, DRAM main memory | Memory hierarchy determines CPU performance |
+| Embedded Systems | Flash for firmware, SRAM for scratch | Tight memory budgets require careful selection |
+| Digital Circuits | FPGA block RAM | Configurable memory inside programmable logic |
+| Research | Non-volatile RAM (NVRAM) | Emerging RRAM, MRAM for universal memory |
+
 ## Summary
 
 - SRAM is fast but less dense; DRAM is dense but requires periodic refreshing.
@@ -192,4 +252,29 @@ A DRAM with 4096 rows requires a refresh every 64 ms. Each row refresh requires 
 
 ### Challenge Problem
 
-Design a memory management unit (MMU) for a system with 16 MB of physical memory and an 8-bit processor that can address only 64 KB. The MMU divides the physical memory into 4 KB pages and maps any 16 pages into the processor's address space at a time. Describe the page table structure, the mapping hardware using a page table base register, and the address translation process for a 16-bit logical address.
+Design a memory management unit (MMU) for a system with 16 MB of physical memory and an 8-bit processor that can address only 64 KB. The MMU divides the physical memory into 4 KB pages and maps any 16 pages into the processor's address space at a time. Describe the page table structure, the mapping hardware using a page table base register,     and the address translation process for a 16-bit logical address.
+
+### Chapter Quiz
+
+1. Which memory technology requires periodic refresh?
+   - A) SRAM
+   - B) DRAM
+   - C) ROM
+   - D) Flash
+
+2. The capacity of a memory chip with 12 address lines and 8 data lines is:
+   - A) 4 KB
+   - B) 8 KB
+   - C) 16 KB
+   - D) 32 KB
+
+3. Flash memory is classified as:
+   - A) Volatile, random-access
+   - B) Non-volatile, read/write with erase cycles
+   - C) Volatile, read-only
+   - D) Non-volatile, write-once
+
+<details>
+<summary>Answers</summary>
+1. B, 2. A, 3. B
+</details>

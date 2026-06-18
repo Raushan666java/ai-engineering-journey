@@ -1,10 +1,10 @@
-﻿# DSA Coding Problem Bank for Placement Interviews
+# DSA Coding Problem Bank for Placement Interviews
 
 > **125 curated problems** — Arrays, Strings, Linked Lists, Trees, Dynamic Programming, Graphs, Stack/Queue/Heap, Searching & Sorting, Miscellaneous, Low-Level Design & OOP (Q101-Q115), and Concurrency & Multithreading (Q116-Q125). Every solution includes a complete, compilable Java class with main method, complexity analysis, and company tags.
 
 ---
 
-![DSA Problem-Solving Approach](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch02-dsa-approach.png)
+![DSA Problem-Solving Approach](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch02-dsa-approach.png)
 
 ## Arrays
 

@@ -10,7 +10,7 @@
 
 ## 17.1 Diagnostic Tools
 
-![Network Troubleshooting: Tools, Common Issues and Methodology](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch11-troubleshooting.png)
+![Network Troubleshooting: Tools, Common Issues and Methodology](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch11-troubleshooting.png)
 
 ### 17.1.1 ping
 
@@ -232,11 +232,98 @@ A systematic troubleshooting approach:
 1. **Define the problem**: what is the symptom? What is the expected behavior?
 2. **Check the obvious**: is the cable plugged in? Is there a firewall rule blocking traffic? Are services running?
 3. **Isolate the scope**: is one host affected? One subnet? All traffic, or only specific protocols?
-4. **Divide and conquer**: narrow the problem by testing at each layer — physical (link lights), data link (ARP), network (ping), transport (telnet port), application (application logs).
+4. **Divide and conquer**: narrow the problem by testing at each layer â€” physical (link lights), data link (ARP), network (ping), transport (telnet port), application (application logs).
 5. **Replicate**: create a minimal test case that reproduces the problem.
 6. **Form a hypothesis**: what is the likely cause based on the evidence?
 7. **Test the hypothesis**: use the appropriate diagnostic tool. If the hypothesis is wrong, return to step 3.
 8. **Document**: record the root cause, resolution, and any preventive measures.
+
+## ðŸ’¡ Pro Tips
+
+- **Use `ss` not `netstat`**: On modern Linux, `ss` is faster and shows more information (TCP states, process IDs, memory usage). `netstat` is deprecated in many distributions.
+- **Wireshark's "Follow TCP Stream" is your best friend**: Right-click a TCP packet â†’ Follow â†’ TCP Stream. Wireshark reassembles the entire application-layer conversation â€” perfect for debugging HTTP, SMTP, or any text-based protocol.
+- **Bluff ICMP blocking**: If ping fails but web browsing works, ICMP is probably blocked. Use `tcping` or `curl` to test TCP connectivity to specific ports instead.
+- **MTR for intermittent issues**: A single traceroute or ping snapshot might miss transient problems. Run MTR for 5â€“10 minutes to capture the full picture of packet loss and latency variation over time.
+
+## One-Sentence Takeaways
+
+- ping tests basic IP connectivity and measures RTT via ICMP Echo.
+- traceroute discovers the network path hop-by-hop using TTL-limited packets.
+- tcpdump and Wireshark capture and inspect packets at any protocol layer.
+- `ss` shows socket statistics: listening, established, and connection states.
+- iperf measures TCP/UDP throughput between two endpoints.
+- A systematic layer-by-layer approach isolates the root cause efficiently.
+
+## Concept Comparison Table
+
+| Tool | Protocol | Layer | Measures | Output |
+|------|----------|-------|----------|--------|
+| ping | ICMP | 3 | RTT, loss, hop count (TTL) | Latency stats per destination |
+| traceroute | ICMP/UDP/TCP | 3 | Path, per-hop latency | List of hops with RTTs |
+| MTR | ICMP | 3 | Continuous path + loss | Per-hop loss % + latency |
+| tcpdump | Raw | 2â€“7 | Packet capture | pcap (binary or hex) |
+| Wireshark | Raw | 2â€“7 | Visual packet analysis | Display filters, streams, stats |
+| ss | /proc | 4â€“7 | Socket state, queues | Connection table by state |
+| iperf3 | TCP/UDP | 4 | Throughput | Mbps, jitter, loss % |
+
+## Quick Reference: TCP Connection States
+
+| State | Meaning | What to check |
+|-------|---------|---------------|
+| LISTEN | Server waiting for connection | Service running? Port correct? |
+| SYN_SENT | Client sent SYN | Firewall blocking outbound? |
+| ESTABLISHED | Connection active | Send/Receive queues |
+| FIN_WAIT_1 | Initiating close | Application hanging? |
+| FIN_WAIT_2 | Waiting for remote close | Many = socket leak? |
+| CLOSE_WAIT | Remote closed; local hasn't closed | Application close() bug |
+| TIME_WAIT | Final cleanup (2 MSL) | High counts = too many short connections |
+| CLOSED | No connection state | Normal |
+
+## Cross-Application Matrix
+
+| Symptom | Most Likely Cause | Test Command | Tool |
+|---------|------------------|--------------|------|
+| No connectivity | Link down, firewall | `ping`, `curl` | ping, curl |
+| Slow web pages | High latency, loss | `ping -c 100`, `mtr` | MTR |
+| Intermittent drops | Congestion, errors | `mtr --report-wide` | MTR |
+| Low throughput | TCP window, congestion | `iperf3 -c server` | iperf3 |
+| DNS resolution fail | Wrong NS, TTL | `dig +trace` | dig |
+| Application timeout | Service not listening | `ss -tln`, `telnet` | ss |
+| File transfer slow | MTU mismatch | `ping -M do -s 1472` | ping |
+
+## Chapter Quiz
+
+1. **What does ping use to test connectivity?**
+   - a) TCP SYN
+   - b) ICMP Echo Request âœ“
+   - c) UDP packet
+   - d) ARP request
+
+2. **How does traceroute discover intermediate hops?**
+   - a) DNS lookups per hop
+   - b) Incrementing TTL âœ“
+   - c) ARP cache walking
+   - d) Routing table dumps
+
+3. **In `ss` output, what do large Send-Q values indicate?**
+   - a) Data being received
+   - b) Data queued but not acknowledged âœ“
+   - c) Socket error
+   - d) Normal operation
+
+4. **What is bufferbloat?**
+   - a) Memory leak in router
+   - b) Large buffers causing excessive latency âœ“
+   - c) Packet fragmentation
+   - d) TCP window overflow
+
+5. **Which command tests TCP throughput?**
+   - a) ping
+   - b) traceroute
+   - c) iperf3 âœ“
+   - d) dig
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

@@ -10,7 +10,7 @@
 
 ## 2.1 Variables in C
 
-![C Data Types and Operators Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch02-datatypes-operators.png)
+![C Data Types and Operators Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch02-datatypes-operators.png)
 
 A variable is a named storage location in memory that holds a value of a specific type. Every variable must be declared before use.
 
@@ -21,18 +21,18 @@ type variable_name = initial_value;
 
 **Rules for variable names (identifiers):**
 
-- May contain letters (a–z, A–Z), digits (0–9), and underscores (`_`).
+- May contain letters (aâ€“z, Aâ€“Z), digits (0â€“9), and underscores (`_`).
 - Must begin with a letter or underscore.
-- Are case-sensitive — `count`, `Count`, and `COUNT` are three distinct variables.
+- Are case-sensitive â€” `count`, `Count`, and `COUNT` are three distinct variables.
 - Must not be a C keyword (`int`, `return`, `if`, `while`, etc.).
 - Should be descriptive: `number_of_students` rather than `n`.
 
 ```c
 int counter;           /* valid */
 double _temperature;   /* valid, but leading underscore is conventionally reserved */
-int 2nd_place;         /* INVALID — begins with a digit */
-float my-var;          /* INVALID — hyphen is not allowed */
-int return;            /* INVALID — 'return' is a keyword */
+int 2nd_place;         /* INVALID â€” begins with a digit */
+float my-var;          /* INVALID â€” hyphen is not allowed */
+int return;            /* INVALID â€” 'return' is a keyword */
 ```
 
 ## 2.2 Fundamental Data Types
@@ -41,16 +41,16 @@ C provides a small set of fundamental types:
 
 | Type | Keyword | Size (typical) | Format Specifier | Range (typical) |
 |------|---------|----------------|------------------|-----------------|
-| Character | `char` | 1 byte | `%c` | −128 to 127 or 0 to 255 |
-| Short integer | `short` | 2 bytes | `%hd` | −32,768 to 32,767 |
-| Integer | `int` | 4 bytes | `%d` | −2³¹ to 2³¹−1 |
-| Long integer | `long` | 4 or 8 bytes | `%ld` | −2³¹ to 2³¹−1 or −2⁶³ to 2⁶³−1 |
-| Long long | `long long` | 8 bytes | `%lld` | −2⁶³ to 2⁶³−1 |
-| Float | `float` | 4 bytes | `%f` | ~±3.4×10⁻³⁸ to ±3.4×10³⁸ |
-| Double | `double` | 8 bytes | `%lf` | ~±1.7×10⁻³⁰⁸ to ±1.7×10³⁰⁸ |
+| Character | `char` | 1 byte | `%c` | âˆ’128 to 127 or 0 to 255 |
+| Short integer | `short` | 2 bytes | `%hd` | âˆ’32,768 to 32,767 |
+| Integer | `int` | 4 bytes | `%d` | âˆ’2Â³Â¹ to 2Â³Â¹âˆ’1 |
+| Long integer | `long` | 4 or 8 bytes | `%ld` | âˆ’2Â³Â¹ to 2Â³Â¹âˆ’1 or âˆ’2â¶Â³ to 2â¶Â³âˆ’1 |
+| Long long | `long long` | 8 bytes | `%lld` | âˆ’2â¶Â³ to 2â¶Â³âˆ’1 |
+| Float | `float` | 4 bytes | `%f` | ~Â±3.4Ã—10â»Â³â¸ to Â±3.4Ã—10Â³â¸ |
+| Double | `double` | 8 bytes | `%lf` | ~Â±1.7Ã—10â»Â³â°â¸ to Â±1.7Ã—10Â³â°â¸ |
 | Long double | `long double` | 10/16 bytes | `%Lf` | platform-dependent |
 
-**Example — declaring and printing variables:**
+**Example â€” declaring and printing variables:**
 
 ```c
 #include <stdio.h>
@@ -118,7 +118,7 @@ The keywords `signed` and `unsigned` modify integer types:
 |-------------|-------|
 | `unsigned int` | 0 to 4,294,967,295 |
 | `unsigned char` | 0 to 255 |
-| `unsigned long` | 0 to 2⁶⁴−1 (on 64-bit) |
+| `unsigned long` | 0 to 2â¶â´âˆ’1 (on 64-bit) |
 
 ```c
 unsigned int distance = 4000000000U;
@@ -169,7 +169,7 @@ A `const` variable cannot be modified after initialization:
 
 ```c
 const double SPEED_OF_LIGHT = 299792458.0;
-/* SPEED_OF_LIGHT = 300000000.0; — compiler error */
+/* SPEED_OF_LIGHT = 300000000.0; â€” compiler error */
 ```
 
 ### 2.4.2 `#define` Constants (Symbolic Constants)
@@ -245,7 +245,7 @@ printf("%.3f\n", 3.1415); /* three decimal places */
 ```c
 int value;
 printf("Enter an integer: ");
-scanf("%d", &value);    /* & is the address-of operator — needed for scanf */
+scanf("%d", &value);    /* & is the address-of operator â€” needed for scanf */
 ```
 
 **Important:** `scanf` requires the address of the variable (`&variable`) for all types except strings (arrays decay to pointers automatically).
@@ -287,8 +287,8 @@ double result = a + b;   /* a is promoted to 5.0, result = 7.5 */
 
 ```c
 double x = 10.8;
-int truncated = (int)x;           /* 10 — fractional part discarded */
-int rounded = (int)(x + 0.5);     /* 11 — manual rounding */
+int truncated = (int)x;           /* 10 â€” fractional part discarded */
+int rounded = (int)(x + 0.5);     /* 11 â€” manual rounding */
 
 int numerator = 7;
 int denominator = 3;
@@ -307,7 +307,7 @@ int p, q = 5;                 /* p is uninitialized, q is 5 */
 
 ```c
 int uninitialized;
-printf("%d\n", uninitialized);  /* UB — may print garbage, crash, or anything */
+printf("%d\n", uninitialized);  /* UB â€” may print garbage, crash, or anything */
 ```
 
 ## Summary
@@ -334,9 +334,9 @@ printf("%d\n", uninitialized);  /* UB — may print garbage, crash, or anything 
 
 1. Write a program that declares `short`, `int`, `long`, `long long`, `float`, `double`, and `long double` variables, initializes them with appropriate values, and prints each using the correct format specifier.
 2. Write a program that reads a temperature in Fahrenheit from the user and converts it to Celsius: `C = (F - 32) * 5 / 9`. Ensure the division uses floating-point arithmetic.
-3. Write a program that reads a five-digit integer from the user and prints each digit separated by three spaces (e.g., 12345 → `1   2   3   4   5`). *(Hint: use division and modulus.)*
+3. Write a program that reads a five-digit integer from the user and prints each digit separated by three spaces (e.g., 12345 â†’ `1   2   3   4   5`). *(Hint: use division and modulus.)*
 4. Write a program that demonstrates implicit integer overflow by adding 1 to the maximum value of an `unsigned int` and printing the result.
 
 ### Challenge Problem
 
-Write a program that reads an amount in cents (integer) and breaks it down into dollars, quarters, dimes, nickels, and pennies. Use only integer arithmetic. Example: 267 cents → 2 dollars, 2 quarters, 1 dime, 1 nickel, 2 pennies. Use `const` or `#define` for the coin values.
+Write a program that reads an amount in cents (integer) and breaks it down into dollars, quarters, dimes, nickels, and pennies. Use only integer arithmetic. Example: 267 cents â†’ 2 dollars, 2 quarters, 1 dime, 1 nickel, 2 pennies. Use `const` or `#define` for the coin values.

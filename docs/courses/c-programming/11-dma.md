@@ -8,21 +8,21 @@
 - Detect and avoid memory leaks, dangling pointers, and double-free errors
 - Use Valgrind to verify memory correctness
 
-![C Dynamic Memory Allocation: malloc, calloc, realloc, free and Common Errors](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-11-dma.png)
+![C Dynamic Memory Allocation: malloc, calloc, realloc, free and Common Errors](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-11-dma.png)
 
 ## 11.1 Motivation for Dynamic Allocation
 
 Static and automatic allocation have limitations:
 
-- **Static (global) memory** — size fixed at compile time, persists for program lifetime.
-- **Automatic (local) memory** — size fixed at compile time, exists only within the function scope.
+- **Static (global) memory** â€” size fixed at compile time, persists for program lifetime.
+- **Automatic (local) memory** â€” size fixed at compile time, exists only within the function scope.
 
 Dynamic allocation solves two problems:
 
 1. **Unknown size at compile time:** The user may need to enter how many elements to store.
 2. **Variable lifetime:** Allocated memory persists until explicitly freed, surviving function returns.
 
-## 11.2 `malloc` — Memory Allocation
+## 11.2 `malloc` â€” Memory Allocation
 
 ```c
 void *malloc(size_t size);
@@ -73,11 +73,11 @@ arr[4] = 16
 **Key points:**
 
 - Always check the return value for `NULL`.
-- Do not cast the return of `malloc` in C (it is unnecessary — `void*` implicitly converts to any pointer type). In C++, the cast is required.
-- The allocated memory is **not initialized** — it contains whatever was in that memory.
+- Do not cast the return of `malloc` in C (it is unnecessary â€” `void*` implicitly converts to any pointer type). In C++, the cast is required.
+- The allocated memory is **not initialized** â€” it contains whatever was in that memory.
 - Use `sizeof(type)` to compute the correct size; avoid hardcoding byte counts.
 
-## 11.3 `calloc` — Contiguous Allocation
+## 11.3 `calloc` â€” Contiguous Allocation
 
 ```c
 void *calloc(size_t count, size_t element_size);
@@ -117,7 +117,7 @@ arr[3] = 0
 arr[4] = 0
 ```
 
-## 11.4 `realloc` — Resizing Memory
+## 11.4 `realloc` â€” Resizing Memory
 
 ```c
 void *realloc(void *ptr, size_t new_size);
@@ -141,7 +141,7 @@ int main(void)
     /* Expand to hold 5 elements */
     int *temp = (int*)realloc(arr, 5 * sizeof(int));
     if (temp == NULL) {
-        free(arr);      /* realloc failed — original block is still valid */
+        free(arr);      /* realloc failed â€” original block is still valid */
         return 1;
     }
     arr = temp;
@@ -168,9 +168,9 @@ int main(void)
 
 - If `ptr` is `NULL`, `realloc` behaves like `malloc`.
 - If `new_size` is 0, behavior is implementation-defined (usually like `free`).
-- Always assign the result to a temporary pointer first — if `realloc` returns `NULL`, the original block is still valid. Assigning directly to `arr` would leak the original block.
+- Always assign the result to a temporary pointer first â€” if `realloc` returns `NULL`, the original block is still valid. Assigning directly to `arr` would leak the original block.
 
-## 11.5 `free` — Deallocating Memory
+## 11.5 `free` â€” Deallocating Memory
 
 ```c
 void free(void *ptr);
@@ -182,7 +182,7 @@ void free(void *ptr);
 int *arr = malloc(10 * sizeof(int));
 /* use arr */
 free(arr);      /* release memory */
-arr = NULL;     /* optional — prevents use-after-free */
+arr = NULL;     /* optional â€” prevents use-after-free */
 ```
 
 **After `free`**, the pointer is a **dangling pointer**. Dereferencing it is undefined behavior.
@@ -195,7 +195,7 @@ arr = NULL;     /* optional — prevents use-after-free */
 void leaky(void)
 {
     int *p = malloc(100);
-    /* forget to free(p) — memory leaked */
+    /* forget to free(p) â€” memory leaked */
 }
 ```
 
@@ -207,7 +207,7 @@ Each call to `leaky()` loses 100 bytes. Over time, the program consumes all avai
 int *p = malloc(sizeof(int));
 *p = 42;
 free(p);
-*p = 100;        /* UNDEFINED BEHAVIOR — writing to freed memory */
+*p = 100;        /* UNDEFINED BEHAVIOR â€” writing to freed memory */
 ```
 
 ### 11.6.3 Double Free
@@ -215,14 +215,14 @@ free(p);
 ```c
 int *p = malloc(sizeof(int));
 free(p);
-free(p);         /* UNDEFINED BEHAVIOR — double free */
+free(p);         /* UNDEFINED BEHAVIOR â€” double free */
 ```
 
 ### 11.6.4 Buffer Overflow
 
 ```c
 int *arr = malloc(5 * sizeof(int));
-arr[10] = 42;    /* UNDEFINED BEHAVIOR — writing past allocated region */
+arr[10] = 42;    /* UNDEFINED BEHAVIOR â€” writing past allocated region */
 ```
 
 ### 11.6.5 Freeing Non-Dynamic Memory
@@ -230,7 +230,7 @@ arr[10] = 42;    /* UNDEFINED BEHAVIOR — writing past allocated region */
 ```c
 int x = 42;
 int *p = &x;
-free(p);         /* UNDEFINED BEHAVIOR — p was not returned by malloc */
+free(p);         /* UNDEFINED BEHAVIOR â€” p was not returned by malloc */
 ```
 
 ## 11.7 Dynamic Arrays
@@ -330,7 +330,7 @@ valgrind --leak-check=full ./program
 2. **Free memory in the same scope** where it was allocated, when possible.
 3. **Set pointers to `NULL` after freeing** to prevent use-after-free.
 4. **Use a temporary pointer for `realloc`** to avoid leaking on failure.
-5. **Document ownership** — who is responsible for freeing dynamically allocated memory.
+5. **Document ownership** â€” who is responsible for freeing dynamically allocated memory.
 6. **Prefer `calloc` when zero-initialization is needed** over `malloc` + `memset`.
 
 ## Summary
@@ -363,9 +363,9 @@ valgrind --leak-check=full ./program
 
 Implement a simple **arena allocator**: a struct that holds a large `malloc`'d block and a current offset. Provide functions:
 
-- `Arena *arena_create(size_t capacity)` — allocate a new arena.
-- `void *arena_alloc(Arena *a, size_t size)` — return a pointer to `size` bytes within the arena (just advance the offset).
-- `void arena_reset(Arena *a)` — reset the offset to 0 (does not call `free`).
-- `void arena_destroy(Arena *a)` — free the entire arena block.
+- `Arena *arena_create(size_t capacity)` â€” allocate a new arena.
+- `void *arena_alloc(Arena *a, size_t size)` â€” return a pointer to `size` bytes within the arena (just advance the offset).
+- `void arena_reset(Arena *a)` â€” reset the offset to 0 (does not call `free`).
+- `void arena_destroy(Arena *a)` â€” free the entire arena block.
 
 Demonstrate that arena allocation is faster than many individual `malloc` calls by timing both approaches for allocating 100,000 small blocks.

@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Threads Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/04-threads.png)
+![Threads Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/04-threads.png)
 
 ### Thread Concept
 
@@ -23,26 +23,26 @@ A **thread** is the basic unit of CPU utilization. It consists of a thread ID, a
 - Signal handlers
 
 ```
-┌─────────────────────────┐
-│       Process            │
-│  ┌───────────────────┐   │
-│  │     Address Space  │   │
-│  │  ┌─────┐┌─────┐   │   │
-│  │  │ Code││ Data │   │   │
-│  │  └─────┘└─────┘   │   │
-│  │  ┌─────┐┌─────┐   │   │
-│  │  │Heap ││ ... │   │   │
-│  │  └─────┘└─────┘   │   │
-│  └───────────────────┘   │
-│  ┌───────┐┌───────┐      │
-│  │Thread1││Thread2│ ...  │
-│  │ PC,R  ││ PC,R  │      │
-│  │ Stack ││ Stack │      │
-│  └───────┘└───────┘      │
-└─────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚       Process            â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”‚
+â”‚  â”‚     Address Space  â”‚   â”‚
+â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”â”Œâ”€â”€â”€â”€â”€â”   â”‚   â”‚
+â”‚  â”‚  â”‚ Codeâ”‚â”‚ Data â”‚   â”‚   â”‚
+â”‚  â”‚  â””â”€â”€â”€â”€â”€â”˜â””â”€â”€â”€â”€â”€â”˜   â”‚   â”‚
+â”‚  â”‚  â”Œâ”€â”€â”€â”€â”€â”â”Œâ”€â”€â”€â”€â”€â”   â”‚   â”‚
+â”‚  â”‚  â”‚Heap â”‚â”‚ ... â”‚   â”‚   â”‚
+â”‚  â”‚  â””â”€â”€â”€â”€â”€â”˜â””â”€â”€â”€â”€â”€â”˜   â”‚   â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”â”Œâ”€â”€â”€â”€â”€â”€â”€â”      â”‚
+â”‚  â”‚Thread1â”‚â”‚Thread2â”‚ ...  â”‚
+â”‚  â”‚ PC,R  â”‚â”‚ PC,R  â”‚      â”‚
+â”‚  â”‚ Stack â”‚â”‚ Stack â”‚      â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”˜â””â”€â”€â”€â”€â”€â”€â”€â”˜      â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
-**Key insight**: Threads are lightweight compared to processes. Creating a thread is 10–100× faster than creating a process because less state needs to be duplicated.
+**Key insight**: Threads are lightweight compared to processes. Creating a thread is 10â€“100Ã— faster than creating a process because less state needs to be duplicated.
 
 ### Benefits of Multithreading
 
@@ -69,7 +69,7 @@ Thread management is done by a **thread library in user space**, without kernel 
 **How it works**: The kernel sees only a single process. The thread library manages thread creation, scheduling, and switching entirely in user space. Switching threads is as fast as saving/restoring a few registers.
 
 **Pros**:
-- No kernel involvement → very fast (microsecond-level switching)
+- No kernel involvement â†’ very fast (microsecond-level switching)
 - Works on any OS that supports processes
 - Customizable scheduling policy
 
@@ -108,7 +108,7 @@ Kernel space:     K1          (single kernel thread)
 
 **Used in**: Solaris Green Threads, GNU Portable Threads.
 
-**Problem**: No parallelism — can't use multiple cores. A single blocking call blocks everything.
+**Problem**: No parallelism â€” can't use multiple cores. A single blocking call blocks everything.
 
 #### One-to-One Model
 
@@ -120,7 +120,7 @@ User space:   T1    T2    T3
 Kernel space: K1    K2    K3
 ```
 
-**Used in**: Linux (via NPTL — Native POSIX Thread Library), Windows, Solaris 9+.
+**Used in**: Linux (via NPTL â€” Native POSIX Thread Library), Windows, Solaris 9+.
 
 **Pro**: True parallelism on multicore. Blocking one thread doesn't block others.
 **Con**: Creating a kernel thread is expensive; many threads can hurt performance.
@@ -232,7 +232,7 @@ If one thread calls `fork()`, the child process should duplicate only the callin
 A thread can be **cancelled** before it finishes:
 
 - **Deferred cancellation**: Target thread periodically checks if it should cancel (safe, default)
-- **Asynchronous cancellation**: Target thread is cancelled immediately (dangerous — could leave resources in inconsistent state)
+- **Asynchronous cancellation**: Target thread is cancelled immediately (dangerous â€” could leave resources in inconsistent state)
 
 ```c
 pthread_cancel(thread_id);  // Request cancellation (deferred by default)

@@ -1,5 +1,7 @@
 # Chapter 8: The Transport Layer
 
+> **Prerequisites:** [Chapter 7: Routing](./07-routing.md) â€” Path selection between hosts | **Next:** [Chapter 9: TCP Congestion Control](./09-tcp-congestion.md) â€” From basic TCP to congestion management
+
 ## Learning Objectives
 
 1. Explain the role of the transport layer in providing end-to-end communication between processes.
@@ -8,9 +10,38 @@
 4. Trace the TCP connection establishment and termination state diagram.
 5. Distinguish between port numbers, sockets, and protocol multiplexing.
 
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| UDP | 8-byte header, connectionless, no reliability | Use for DNS, VoIP, streaming â€” applications handle loss |
+| TCP | 20-byte header, connection-oriented, reliable | Three-way handshake establishes; four-way handshake tears down |
+| Ports | 16-bit (0-65535): well-known, registered, dynamic | Sockets = (IP, Port) uniquely identify a connection |
+| Flow Control | Sliding window prevents receiver overflow | rwnd advertised in every segment |
+| State Machine | 11 states from CLOSED to TIME_WAIT | TIME_WAIT (2Ã—MSL) prevents delayed segment confusion |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Transport Layer] --> B[UDP]
+    A --> C[TCP]
+    B --> B1[Segment Format]
+    B --> B2[Checksum]
+    B --> B3[Applications]
+    C --> C1[Segment Format]
+    C --> C2[3-Way Handshake]
+    C --> C3[4-Way Teardown]
+    C --> C4[State Diagram]
+    C --> C5[Options: MSS/Window/SACK]
+    A --> D[Ports & Sockets]
+```
+
 ## 8.1 Transport Layer Services
 
-![Transport Layer: UDP, TCP and Congestion Control](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch06-transport-tcp.png)
+![Transport Layer: UDP, TCP and Congestion Control](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch06-transport-tcp.png)
 
 The transport layer provides logical communication between application processes running on different hosts. The network layer provides host-to-host communication; the transport layer extends this to process-to-process communication through multiplexing and demultiplexing.
 
@@ -53,6 +84,8 @@ UDP is suitable for:
 - DHCP (broadcast-based, no prior connection)
 - SNMP (simple monitoring queries)
 - QUIC (built on UDP with reliability at the application layer)
+
+> **Pro Tip:** Choosing between UDP and TCP is a fundamental design decision. A common mistake is using TCP for latency-sensitive applications (video calls, gaming) when UDP + application-level reliability gives better control over timing. QUIC's rise reflects this insight.
 
 ## 8.3 TCP
 
@@ -101,7 +134,7 @@ Client                          Server
   |  --- ACK (ack=v+1) ---->   |
 ```
 
-Each direction is closed independently. After sending FIN, the endpoint enters FIN_WAIT_1, then receives ACK (FIN_WAIT_2), then receives the other FIN (TIME_WAIT), and finally CLOSED. TIME_WAIT lasts for 2 × Maximum Segment Lifetime (MSL, typically 60 seconds) to allow any delayed segments to expire.
+Each direction is closed independently. After sending FIN, the endpoint enters FIN_WAIT_1, then receives ACK (FIN_WAIT_2), then receives the other FIN (TIME_WAIT), and finally CLOSED. TIME_WAIT lasts for 2 Ã— Maximum Segment Lifetime (MSL, typically 60 seconds) to allow any delayed segments to expire.
 
 ### 8.3.3 TCP State Diagram
 
@@ -124,14 +157,14 @@ TCP state transitions:
 ### 8.3.4 TCP Options
 
 - **Maximum Segment Size (MSS):** the largest data chunk TCP will send, typically negotiated as MTU minus 40 (e.g., 1460 bytes for Ethernet).
-- **Window Scaling:** multiplies the 16-bit window field by a shift factor (0–14), enabling windows up to 1 GB.
+- **Window Scaling:** multiplies the 16-bit window field by a shift factor (0â€“14), enabling windows up to 1 GB.
 - **Selective Acknowledgment (SACK):** allows the receiver to acknowledge non-contiguous blocks of data, reducing retransmissions when multiple packets are lost.
 - **Timestamps:** measure RTT accurately and protect against wrapped sequence numbers (PAWS).
 - **NOP:** padding to align options on 32-bit boundaries.
 
 ## 8.4 Ports and Sockets
 
-TCP and UDP use 16-bit port numbers to identify application processes. Ports 0–1023 are well-known ports reserved for standard services:
+TCP and UDP use 16-bit port numbers to identify application processes. Ports 0â€“1023 are well-known ports reserved for standard services:
 
 | Port | Protocol | Application |
 |------|----------|-------------|
@@ -146,7 +179,7 @@ TCP and UDP use 16-bit port numbers to identify application processes. Ports 0�
 | 993 | TCP | IMAPS |
 | 3389 | TCP | RDP |
 
-Ports 1024–49151 are registered ports; ports 49152–65535 are dynamic/private ports used for client-side ephemeral port allocation.
+Ports 1024â€“49151 are registered ports; ports 49152â€“65535 are dynamic/private ports used for client-side ephemeral port allocation.
 
 A **socket** is the interface between the application and the transport layer. A TCP socket is uniquely identified by a 4-tuple: (source IP, source port, destination IP, destination port). This tuple allows a TCP stack to multiplex connections even when multiple clients connect to the same server port.
 
@@ -159,8 +192,97 @@ A **socket** is the interface between the application and the transport layer. A
 | Ordering | Unordered | In-order delivery |
 | Flow control | None | Sliding window |
 | Congestion control | None | AIMD/CC algorithms |
-| Header size | 8 bytes | 20–60 bytes |
+| Header size | 8 bytes | 20â€“60 bytes |
 | Broadcast support | Yes | No |
+
+---
+
+### Concept Comparison Table
+
+| Feature | UDP | TCP |
+|---------|-----|-----|
+| Connection | Connectionless | Connection-oriented (3-way handshake) |
+| Reliability | Unreliable (no ACK) | Reliable (ACK + retransmission) |
+| Ordering | Unordered | In-order (sequence number) |
+| Flow Control | None | Sliding window (rwnd) |
+| Congestion Control | None | AIMD, slow start, fast recovery |
+| Header | 8 bytes fixed | 20-60 bytes (options) |
+| Use Cases | DNS, VoIP, streaming, DHCP, QUIC | HTTP, SMTP, SSH, FTP |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **UDP Header** | SrcPort(16) + DstPort(16) + Length(16) + Checksum(16) = 64 bits |
+| **TCP Header** | SrcPort(16) + DstPort(16) + SeqNum(32) + AckNum(32) + Offset(4) + Flags(9) + Window(16) + Checksum(16) + Urgent(16) |
+| **TCP Flags** | SYN (establish), ACK (acknowledge), FIN (close), RST (reset), PSH (push), URG (urgent) |
+| **Connection** | Establish: SYN â†’ SYN+ACK â†’ ACK; Terminate: FIN â†’ ACK â†’ FIN â†’ ACK |
+| **Port Ranges** | Well-known (0-1023), Registered (1024-49151), Dynamic (49152-65535) |
+| **Socket** | 4-tuple: (src_ip, src_port, dst_ip, dst_port) â€” uniquely identifies a TCP connection |
+| **TIME_WAIT** | 2 Ã— MSL (typically 60-120s) â€” ensures delayed segments don't corrupt new connections |
+
+### Cross-Application Matrix
+
+| Concept | Backend Dev | Network Admin | Security | Protocols |
+|---------|-------------|--------------|----------|-----------|
+| UDP | DNS resolution, game networking | Monitoring (SNMP) | UDP flood mitigation | NTP, DHCP, DNS |
+| TCP | HTTP/REST APIs, database connections | Traffic engineering | SYN flood protection, session hijacking | HTTP, SMTP, SSH |
+| Ports | Service binding, container port mapping | ACL/firewall rules | Port scanning detection | Service discovery |
+| Sockets | Socket API programming (socket(), bind(), listen()) | netstat/ss diagnostics | Socket manipulation attacks | Protocol implementation |
+
+---
+
+### Chapter Quiz
+
+**Q1.** How many bytes is the fixed TCP header?
+
+- A) 8 bytes
+- B) 16 bytes
+- C) 20 bytes
+- D) 60 bytes
+
+<details>
+<summary>Answer</summary>
+C) 20 bytes â€” up to 60 with options (Data Offset field specifies in 32-bit words).
+</details>
+
+**Q2.** What is the purpose of the three-way handshake's third ACK?
+
+- A) Authenticate the client
+- B) Confirm the client received the server's SYN
+- C) Negotiate window size
+- D) Begin data transfer
+
+<details>
+<summary>Answer</summary>
+B) The third ACK confirms the client received the server's SYN+ACK, completing bidirectional agreement on sequence numbers.
+</details>
+
+**Q3.** Why does TIME_WAIT last 2Ã— MSL?
+
+- A) To allow retransmission of lost FIN
+- B) To ensure delayed segments expire before a new connection uses the same tuple
+- C) To wait for application cleanup
+- D) To synchronize with the server
+
+<details>
+<summary>Answer</summary>
+B) 2Ã— MSL guarantees any segments still in flight will expire before the socket tuple can be reused.
+</details>
+
+**Q4.** Which protocol is built on UDP but provides its own reliability?
+
+- A) TCP
+- B) QUIC
+- C) FTP
+- D) SMTP
+
+<details>
+<summary>Answer</summary>
+B) QUIC runs over UDP and implements reliability, encryption, and multiplexing in the application/transport layer.
+</details>
+
+---
 
 ## Summary
 
@@ -184,4 +306,4 @@ The transport layer provides process-to-process communication through multiplexi
 
 ### Challenge Problem
 
-9. **Design a transport protocol for deep-space communication.** Interplanetary links have a one-way propagation delay of 5–20 minutes and a bit error rate of $10^{-4}$. Traditional TCP performs poorly under these conditions. Design a transport protocol that: (a) achieves at least 50% utilization despite the delay, (b) handles high error rates efficiently, and (c) provides reliable, in-order delivery. Specify your protocol's header format, acknowledgment mechanism, error recovery, and flow control. Compute the window size needed to achieve 50% utilization on a 1 Mbps link with 10-minute RTT.
+9. **Design a transport protocol for deep-space communication.** Interplanetary links have a one-way propagation delay of 5â€“20 minutes and a bit error rate of $10^{-4}$. Traditional TCP performs poorly under these conditions. Design a transport protocol that: (a) achieves at least 50% utilization despite the delay, (b) handles high error rates efficiently, and (c) provides reliable, in-order delivery. Specify your protocol's header format, acknowledgment mechanism, error recovery, and flow control. Compute the window size needed to achieve 50% utilization on a 1 Mbps link with 10-minute RTT.

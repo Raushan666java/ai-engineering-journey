@@ -10,7 +10,7 @@
 
 ## 12.1 Wireless LANs
 
-![Wireless Networks and Mobility Management](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-15-wireless-mobile-networks.png)
+![Wireless Networks and Mobility Management](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch-15-wireless-mobile-networks.png)
 
 ### 12.1.1 IEEE 802.11 Standards
 
@@ -28,7 +28,7 @@ The IEEE 802.11 family defines wireless local-area network (WLAN) standards. Key
 
 ### 12.1.2 802.11 MAC
 
-The 802.11 MAC uses CSMA/CA (Chapter 4) with optional RTS/CTS. The Distributed Coordination Function (DCF) is the basic access method. The Point Coordination Function (PCF) provides contention-free service through polling, but is rarely implemented. The Hybrid Coordination Function (HCF) introduced in 802.11e provides QoS through contention-free bursts (EDCA — Enhanced Distributed Channel Access).
+The 802.11 MAC uses CSMA/CA (Chapter 4) with optional RTS/CTS. The Distributed Coordination Function (DCF) is the basic access method. The Point Coordination Function (PCF) provides contention-free service through polling, but is rarely implemented. The Hybrid Coordination Function (HCF) introduced in 802.11e provides QoS through contention-free bursts (EDCA â€” Enhanced Distributed Channel Access).
 
 **Fragmentation.** Large frames are fragmented to reduce the probability of corruption. Each fragment is acknowledged independently. The Fragment Threshold defaults to 2346 bytes.
 
@@ -38,7 +38,7 @@ The 802.11 MAC uses CSMA/CA (Chapter 4) with optional RTS/CTS. The Distributed C
 
 | Frame Control | Duration | Address 1 | Address 2 | Address 3 | Sequence | Address 4 | QoS | Payload | FCS |
 |---------------|----------|-----------|-----------|-----------|----------|-----------|-----|---------|-----|
-| 2 B           | 2 B      | 6 B       | 6 B       | 6 B       | 2 B      | 6 B       | 2 B | 0–2304 B | 4 B |
+| 2 B           | 2 B      | 6 B       | 6 B       | 6 B       | 2 B      | 6 B       | 2 B | 0â€“2304 B | 4 B |
 
 Address fields serve different roles depending on the To DS and From DS bits:
 - Address 1: receiver address
@@ -50,7 +50,7 @@ Frame types: Management (beacon, probe, association, authentication), Control (R
 
 ### 12.1.4 WiFi Security
 
-Wired Equivalent Privacy (WEP) used RC4 encryption with a 40-bit key and is completely broken — it can be cracked in minutes. WiFi Protected Access (WPA) introduced TKIP (Temporal Key Integrity Protocol) as a stopgap. WPA2 (802.11i) uses AES-CCMP with 128-bit keys and is the minimum standard for new deployments. WPA3 (2018) replaces the pre-shared key handshake with Simultaneous Authentication of Equals (SAE), providing forward secrecy and protection against dictionary attacks.
+Wired Equivalent Privacy (WEP) used RC4 encryption with a 40-bit key and is completely broken â€” it can be cracked in minutes. WiFi Protected Access (WPA) introduced TKIP (Temporal Key Integrity Protocol) as a stopgap. WPA2 (802.11i) uses AES-CCMP with 128-bit keys and is the minimum standard for new deployments. WPA3 (2018) replaces the pre-shared key handshake with Simultaneous Authentication of Equals (SAE), providing forward secrecy and protection against dictionary attacks.
 
 ## 12.2 Bluetooth
 
@@ -60,9 +60,9 @@ Bluetooth (IEEE 802.15.1) operates in the 2.4 GHz ISM band using frequency-hoppi
 
 **Bluetooth versions:**
 
-- BR/EDR (Basic Rate/Enhanced Data Rate): 1–3 Mbps, classic Bluetooth for audio and file transfer.
+- BR/EDR (Basic Rate/Enhanced Data Rate): 1â€“3 Mbps, classic Bluetooth for audio and file transfer.
 - BLE (Bluetooth Low Energy, 4.0): 1 Mbps, designed for IoT with very low power consumption. Devices advertise their presence; a master initiates connections.
-- Bluetooth 5: 2 Mbps (LE), extended range (4×), mesh networking, and broadcast audio.
+- Bluetooth 5: 2 Mbps (LE), extended range (4Ã—), mesh networking, and broadcast audio.
 - Bluetooth 5.2: LE Audio with LC3 codec, multi-stream audio, broadcast audio.
 
 ## 12.3 Cellular Networks
@@ -75,9 +75,9 @@ Long-Term Evolution (LTE) provides high-speed data for mobile devices. The LTE a
 - **eNodeB (eNB):** base station handling radio resource management.
 - **EPC (Evolved Packet Core):** MME (mobility management), SGW (serving gateway), PGW (packet data network gateway).
 
-LTE uses OFDMA in the downlink and SC-FDMA in the uplink. Subcarrier spacing is 15 kHz; resource blocks of 12 subcarriers × 7 symbols (normal cyclic prefix) carry data. MIMO with up to 8×8 in downlink and 4×4 in uplink.
+LTE uses OFDMA in the downlink and SC-FDMA in the uplink. Subcarrier spacing is 15 kHz; resource blocks of 12 subcarriers Ã— 7 symbols (normal cyclic prefix) carry data. MIMO with up to 8Ã—8 in downlink and 4Ã—4 in uplink.
 
-LTE-Advanced (3GPP Release 10) introduced carrier aggregation (up to 100 MHz, 5 × 20 MHz component carriers), enhanced MIMO, and relay nodes.
+LTE-Advanced (3GPP Release 10) introduced carrier aggregation (up to 100 MHz, 5 Ã— 20 MHz component carriers), enhanced MIMO, and relay nodes.
 
 ### 12.3.2 5G NR
 
@@ -115,6 +115,89 @@ Cellular networks track mobile devices through location areas and paging. The ne
 ### 12.4.3 Roaming
 
 Roaming allows a mobile device to connect to a visited network. The visited network uses the home network's authentication infrastructure. In LTE, the UE connects to a visited eNB and MME; the visited MME communicates with the home subscriber server (HSS) for authentication and with the home PGW for data.
+
+## ðŸ’¡ Pro Tips
+
+- **Avoid 2.4 GHz for dense deployments**: The 2.4 GHz band has only 3 non-overlapping channels. In apartment buildings or offices with many APs, use 5 GHz (more channels, less interference) or 6 GHz (WiFi 6E/7).
+- **WPA3 is not optional for new networks**: WPA2 is still common but vulnerable to KRACK attacks. Deploy WPA3 with SAE for forward secrecy and dictionary-attack resistance.
+- **5G network slicing requires RAN support**: Network slicing is not just a core feature â€” the RAN must also support slice-aware scheduling and QoS. Verify your gNB firmware supports 5G NR slicing before building slice-based services.
+- **Handover tuning for VoIP**: For real-time voice, use soft handover (make-before-break) if available. Hard handover can cause audible gaps. Tune handover thresholds based on the UE speed â€” faster mobiles need earlier trigger.
+
+## One-Sentence Takeaways
+
+- IEEE 802.11 has evolved from 11 Mbps (802.11b) to 46 Gbps (802.11be/WiFi 7).
+- CSMA/CA avoids wireless collisions via random backoff and optional RTS/CTS.
+- Bluetooth uses frequency-hopping spread spectrum in 2.4 GHz piconets.
+- 5G NR delivers 20 Gbps peak with 1 ms latency through massive MIMO and beamforming.
+- Hard handover is break-before-make; soft handover is make-before-break.
+- Roaming allows mobile devices to use visited network infrastructure via home authentication.
+
+## Concept Comparison Table
+
+| Technology | Range | Data Rate | Frequency | Power | Use Case |
+|------------|-------|-----------|-----------|-------|----------|
+| WiFi 6 (802.11ax) | ~50 m indoor | 9.6 Gbps | 2.4/5/6 GHz | ~10 W | LAN, web, streaming |
+| WiFi 7 (802.11be) | ~50 m indoor | 46 Gbps | 2.4/5/6 GHz | ~10 W | AR/VR, high-res video |
+| Bluetooth BLE | ~100 m | 2 Mbps | 2.4 GHz | <0.1 W | IoT, wearables |
+| 4G/LTE | ~10 km | 300 Mbps | 700â€“2600 MHz | ~3 W | Mobile broadband |
+| 5G NR (mmWave) | ~500 m | 20 Gbps | 24â€“47 GHz | ~3 W | Fixed wireless access |
+| LoRaWAN | ~15 km | 50 kbps | 868/915 MHz | <0.1 W | Sensor networks |
+
+## Quick Reference: 802.11 Standards Evolution
+
+| Standard | Year | Max Rate | MIMO | Channel | Modulation |
+|----------|------|----------|------|---------|------------|
+| 802.11b | 1999 | 11 Mbps | No | 20 MHz | DSSS |
+| 802.11g | 2003 | 54 Mbps | No | 20 MHz | OFDM |
+| 802.11n | 2009 | 600 Mbps | 4Ã—4 | 40 MHz | MIMO-OFDM |
+| 802.11ac | 2013 | 6.9 Gbps | 8Ã—8 | 160 MHz | MU-MIMO |
+| 802.11ax (WiFi 6) | 2019 | 9.6 Gbps | 8Ã—8 | 160 MHz | OFDMA + MU-MIMO |
+| 802.11be (WiFi 7) | 2024 | 46 Gbps | 16Ã—16 | 320 MHz | 4096-QAM, multi-link |
+
+## Cross-Application Matrix
+
+| Environment | Best Wireless Tech | Why |
+|-------------|-------------------|-----|
+| Home WiFi | WiFi 6 or 6E | Wide device support, good range |
+| Industrial IoT | LoRaWAN | Long range, low power, sub-GHz |
+| Warehouse tracking | BLE | Beacon-based asset tracking |
+| Mobile broadband | 5G NR | High mobility, consistent throughput |
+| Office floor | WiFi 6 (5 GHz) | High density, many APs |
+| Smart home sensors | Zigbee Thread | Mesh, low power, local control |
+
+## Chapter Quiz
+
+1. **Why does WiFi use CSMA/CA instead of CSMA/CD?**
+   - a) CA is more efficient
+   - b) CD requires full-duplex; WiFi is half-duplex âœ“
+   - c) CA prevents hidden terminal completely
+   - d) Wireless collisions are impossible to detect
+
+2. **Which WiFi generation supports 6 GHz?**
+   - a) WiFi 5
+   - b) WiFi 6 âœ“
+   - c) WiFi 4
+   - d) WiFi 3
+
+3. **What is the maximum number of active slaves in a Bluetooth piconet?**
+   - a) 3
+   - b) 7 âœ“
+   - c) 15
+   - d) 31
+
+4. **Which 5G service category targets 1 ms latency?**
+   - a) eMBB
+   - b) uRLLC âœ“
+   - c) mMTC
+   - d) MIMO
+
+5. **In cellular handover, what is make-before-break called?**
+   - a) Hard handover
+   - b) Soft handover âœ“
+   - c) Horizontal handover
+   - d) Vertical handover
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

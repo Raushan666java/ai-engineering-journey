@@ -1,5 +1,8 @@
 # Chapter 8: Computer Architecture
 
+> **Prereq:** Chapter 7 (Memory Systems) â€” the CPU reads instructions and data from memory.
+> **Next:** Chapter 9 (Datapath) â€” the datapath is the computational core inside the CPU.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -10,9 +13,36 @@ By the conclusion of this chapter, the student shall be able to:
 4. Distinguish RISC and CISC design philosophies
 5. Analyse the relationship between instruction set design and microarchitecture
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Von Neumann | Shared instruction/data memory | Simple design, but has bottleneck |
+| Harvard | Separate instruction/data buses | Higher throughput, used in DSPs |
+| CPU Components | ALU, control, registers | The core of every processor |
+| Instruction Cycle | Fetch â†’ Decode â†’ Execute â†’ Write | Basis of all CPU operation |
+| RISC vs CISC | Simple vs complex instructions | Trade-off between code density and speed |
+
+```mermaid
+flowchart LR
+    A[CPU] --> B[Datapath]
+    A --> C[Control Unit]
+    B --> D[ALU]
+    B --> E[Register File]
+    B --> F[Program Counter]
+    A --> G[Bus Interface]
+    G --> H[Memory]
+    G --> I[I/O]
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#fff3e0
+```
+
+> **One-Sentence Takeaway:** Computer architecture is the art of balancing the instruction set, datapath width, clock speed, and memory hierarchy to maximise performance within power and cost constraints.
+
 ## Theory
 
-![CPU Architecture: Datapath, Control Unit and Instruction Cycle](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch06-cpu-architecture.png)
+![CPU Architecture: Datapath, Control Unit and Instruction Cycle](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch06-cpu-architecture.png)
 
 ### 8.1 Von Neumann Architecture
 
@@ -161,6 +191,32 @@ Compare the assembly code for computing A = B + C in CISC and RISC architectures
 
 The CISC version uses fewer instructions and memory accesses, while the RISC version uses more instructions but simpler, fixed-length encoding.
 
+### Concept Comparison
+
+| Feature | Von Neumann | Harvard |
+|---------|-------------|---------|
+| Memory | Single for data + instructions | Separate for data + instructions |
+| Bottleneck | Shared bus limits throughput | No structural hazard on memory |
+| Complexity | Simpler, cheaper | More pins/connections |
+| Typical use | General-purpose CPUs | DSPs, microcontrollers |
+
+### Quick Reference
+
+| Performance Metric | Formula | Example |
+|-------------------|---------|---------|
+| Execution time | I Ã— CPI / f | 2.5e9 Ã— 1.2 / 3e9 = 1.0 s |
+| MIPS | f / (CPI Ã— 1e6) | 3e9 / (1.2 Ã— 1e6) = 2500 |
+| Speedup (Amdahl) | 1 / ((1-P) + P/S) | 90% parallel, 2Ã— speedup = 1.82 |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | Von Neumann in x86/ARM, Harvard in PIC/AVR | Architecture choice dictates design |
+| Embedded Systems | Harvard in DSPs for streaming data | Separate buses enable single-cycle fetch |
+| Digital Circuits | FPGA soft-core CPUs | Architecture exploration on programmable logic |
+| Research | Non-Von Neumann (neuromorphic) | Brain-inspired architectures beyond stored-program |
+
 ## Summary
 
 - The Von Neumann architecture stores instructions and data in a shared memory; the Harvard architecture separates them for higher throughput.
@@ -193,4 +249,29 @@ The CISC version uses fewer instructions and memory accesses, while the RISC ver
 
 ### Challenge Problem
 
-Design a simple accumulator-based computer with the following specifications: 8-bit data word, 16-bit address space, and an instruction set containing LDA (load accumulator), STA (store accumulator), ADD, SUB, JMP, and HLT instructions. Define the instruction formats, describe the fetch-execute cycle for each instruction, and draw the block diagram showing the data paths between the accumulator, ALU, memory, and control unit.
+Design a simple accumulator-based computer with the following specifications: 8-bit data word, 16-bit address space, and an instruction set containing LDA (load accumulator), STA (store accumulator), ADD, SUB, JMP, and HLT instructions. Define the instruction formats, describe the fetch-execute cycle for each instruction,     and draw the block diagram showing the data paths between the accumulator, ALU, memory, and control unit.
+
+### Chapter Quiz
+
+1. The Von Neumann bottleneck refers to:
+   - A) Slow ALU operations
+   - B) Shared bus for instructions and data
+   - C) Limited register count
+   - D) High power consumption
+
+2. The instruction cycle order is:
+   - A) Execute â†’ Decode â†’ Fetch â†’ Write
+   - B) Fetch â†’ Decode â†’ Execute â†’ Write-back
+   - C) Write â†’ Fetch â†’ Decode â†’ Execute
+   - D) Decode â†’ Execute â†’ Fetch â†’ Write
+
+3. RISC architectures typically:
+   - A) Use variable-length instructions
+   - B) Allow memory-to-memory operations
+   - C) Use fixed-length instructions with load-store model
+   - D) Have more addressing modes than CISC
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. C
+</details>

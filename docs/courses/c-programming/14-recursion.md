@@ -10,7 +10,7 @@
 
 ## 14.1 Fundamentals of Recursion
 
-![C Recursion, Linked Lists, Stacks and Queues](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch14-recursion-ds.png)
+![C Recursion, Linked Lists, Stacks and Queues](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch14-recursion-ds.png)
 
 A recursive function is one that calls itself. Every recursive function must satisfy two conditions:
 
@@ -32,14 +32,14 @@ void countdown(int n)
 
 **Trace for `countdown(3)`:**
 ```
-countdown(3) → prints "3..."
-    → countdown(2) → prints "2..."
-        → countdown(1) → prints "1..."
-            → countdown(0) → prints "Go!"
-            → returns
-        → returns
-    → returns
-→ returns
+countdown(3) â†’ prints "3..."
+    â†’ countdown(2) â†’ prints "2..."
+        â†’ countdown(1) â†’ prints "1..."
+            â†’ countdown(0) â†’ prints "Go!"
+            â†’ returns
+        â†’ returns
+    â†’ returns
+â†’ returns
 ```
 
 ## 14.2 The Call Stack and Recursion
@@ -125,7 +125,7 @@ int main(void)
 ```c
 #include <stdio.h>
 
-/* Inefficient recursive version — O(2^n) */
+/* Inefficient recursive version â€” O(2^n) */
 unsigned long long fib_recursive(int n)
 {
     if (n <= 1) {
@@ -134,7 +134,7 @@ unsigned long long fib_recursive(int n)
     return fib_recursive(n - 1) + fib_recursive(n - 2);
 }
 
-/* Efficient iterative version — O(n) */
+/* Efficient iterative version â€” O(n) */
 unsigned long long fib_iterative(int n)
 {
     if (n <= 1) return n;
@@ -215,7 +215,7 @@ void hanoi(int n, char from, char to, char aux)
 int main(void)
 {
     int n = 3;
-    printf("Tower of Hanoi — %d disks:\n", n);
+    printf("Tower of Hanoi â€” %d disks:\n", n);
     hanoi(n, 'A', 'C', 'B');
     return 0;
 }
@@ -223,7 +223,7 @@ int main(void)
 
 **Output:**
 ```
-Tower of Hanoi — 3 disks:
+Tower of Hanoi â€” 3 disks:
 Move disk 1 from A to C
 Move disk 2 from A to B
 Move disk 1 from C to B
@@ -311,7 +311,7 @@ Not all compilers perform TCO. GCC and Clang do with `-O2` optimization.
 return n * factorial(n - 1);      /* not tail-recursive */
 
 /* Tail: recursive call is the final operation */
-return fact_tail(n - 1, n * acc); /* tail-recursive — potential TCO */
+return fact_tail(n - 1, n * acc); /* tail-recursive â€” potential TCO */
 ```
 
 ## 14.5 Recursion vs. Iteration
@@ -319,7 +319,7 @@ return fact_tail(n - 1, n * acc); /* tail-recursive — potential TCO */
 | Aspect | Recursion | Iteration |
 |--------|-----------|-----------|
 | Clarity | Often clearer for naturally recursive problems (trees, divide-and-conquer) | Usually clearer for simple repetition |
-| Stack usage | Each call uses stack space — risk of stack overflow for deep recursion | Uses fixed stack space (one frame) |
+| Stack usage | Each call uses stack space â€” risk of stack overflow for deep recursion | Uses fixed stack space (one frame) |
 | Performance | Function call overhead; may be slower | Generally faster |
 | Optimization | Tail recursion can be optimized to iteration | No optimization needed |
 | Infinite | Can overflow the stack | Can run forever (no stack issue) |
@@ -330,7 +330,7 @@ return fact_tail(n - 1, n * acc); /* tail-recursive — potential TCO */
 ```c
 void infinite(int n) {
     printf("%d\n", n);
-    infinite(n + 1);   /* no base case — runs until stack overflow */
+    infinite(n + 1);   /* no base case â€” runs until stack overflow */
 }
 ```
 
@@ -338,7 +338,7 @@ void infinite(int n) {
 ```c
 int bad(int n) {
     if (n == 0) return 0;
-    return n + bad(n);   /* never changes n — infinite recursion */
+    return n + bad(n);   /* never changes n â€” infinite recursion */
 }
 ```
 
@@ -376,18 +376,18 @@ int bad(int n) {
 
 ### Application Problems
 
-1. Implement a recursive function `int sum_digits(int n)` that returns the sum of the digits of a non-negative integer. Example: `sum_digits(1234)` → 10.
+1. Implement a recursive function `int sum_digits(int n)` that returns the sum of the digits of a non-negative integer. Example: `sum_digits(1234)` â†’ 10.
 2. Implement a recursive function `int gcd(int a, int b)` using Euclid's algorithm. Compare with an iterative version.
 3. Implement a recursive function `void print_reverse(const char *s)` that prints a string in reverse without using loops or `strlen`. *(Hint: recurse until '\0', then print on the way back.)*
 4. Implement the recursive function `int power(int base, int exp)` that computes `base^exp` for non-negative exponents. Then optimize it using **exponentiation by squaring**.
 
 ### Challenge Problem
 
-Implement a program that solves the **N-Queens problem** using backtracking recursion. Place N queens on an N×N chessboard so that no two queens threaten each other. Print all distinct solutions for N = 8.
+Implement a program that solves the **N-Queens problem** using backtracking recursion. Place N queens on an NÃ—N chessboard so that no two queens threaten each other. Print all distinct solutions for N = 8.
 
 The function signature should be something like:
 ```c
 int solve(int board[], int row, int n);
 ```
 
-Where `board[row] = col` means a queen is placed at (row, col). Use recursion to try placing a queen in each column of the current row, checking diagonals and columns for conflicts. Count and print all 92 solutions for an 8×8 board.
+Where `board[row] = col` means a queen is placed at (row, col). Use recursion to try placing a queen in each column of the current row, checking diagonals and columns for conflicts. Count and print all 92 solutions for an 8Ã—8 board.

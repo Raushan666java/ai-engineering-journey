@@ -9,7 +9,7 @@ By the end of this chapter, students will be able to:
 - Delegate to subgenerators with `yield from`
 - Apply the `itertools` module for efficient iteration patterns
 
-![Generators and itertools](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/16-generators.png)
+![Generators and itertools](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/16-generators.png)
 
 ## 16.1 Generator Functions
 
@@ -32,11 +32,11 @@ for num in counter:
 print()
 
 # Generators are single-use
-print(list(counter))  # [] — exhausted
+print(list(counter))  # [] â€” exhausted
 ```
 
 Key differences from regular functions:
-- Calling a generator function returns a generator object — it does not execute the function.
+- Calling a generator function returns a generator object â€” it does not execute the function.
 - Execution starts when the generator's `__next__()` is called.
 - `yield` suspends execution and returns a value.
 - The generator raises `StopIteration` when it completes.
@@ -46,12 +46,12 @@ Key differences from regular functions:
 Generator expressions are like list comprehensions but lazy:
 
 ```python
-# List comprehension — eager, creates full list
+# List comprehension â€” eager, creates full list
 squares_list = [x ** 2 for x in range(10)]
 print(type(squares_list))   # <class 'list'>
 print(sum(squares_list))    # 285
 
-# Generator expression — lazy, produces values on demand
+# Generator expression â€” lazy, produces values on demand
 squares_gen = (x ** 2 for x in range(10))
 print(type(squares_gen))    # <class 'generator'>
 print(sum(squares_gen))     # 285
@@ -213,11 +213,11 @@ from itertools import permutations, combinations, combinations_with_replacement,
 
 items = ["A", "B", "C"]
 
-# Permutations — order matters, without replacement
+# Permutations â€” order matters, without replacement
 print(list(permutations(items, 2)))
 # [('A', 'B'), ('A', 'C'), ('B', 'A'), ('B', 'C'), ('C', 'A'), ('C', 'B')]
 
-# Combinations — order does not matter, without replacement
+# Combinations â€” order does not matter, without replacement
 print(list(combinations(items, 2)))
 # [('A', 'B'), ('A', 'C'), ('B', 'C')]
 
@@ -260,17 +260,17 @@ print(list(chain([1, 2], [3, 4], [5])))  # [1, 2, 3, 4, 5]
 a, b = [1, 2, 3], [10, 20]
 print(list(zip_longest(a, b, fillvalue=0)))  # [(1, 10), (2, 20), (3, 0)]
 
-# islice — lazy slicing
+# islice â€” lazy slicing
 print(list(islice(range(100), 10)))  # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 print(list(islice(range(100), 5, 15, 2)))  # [5, 7, 9, 11, 13]
 
-# takewhile — take while condition is true
+# takewhile â€” take while condition is true
 print(list(takewhile(lambda x: x < 5, [1, 3, 7, 2, 9])))  # [1, 3]
 
-# dropwhile — drop while condition is true, then yield all
+# dropwhile â€” drop while condition is true, then yield all
 print(list(dropwhile(lambda x: x < 5, [1, 3, 7, 2, 9])))  # [7, 2, 9]
 
-# accumulate — running total (or other binary function)
+# accumulate â€” running total (or other binary function)
 print(list(accumulate([1, 2, 3, 4, 5])))  # [1, 3, 6, 10, 15]
 import operator
 print(list(accumulate([1, 2, 3, 4, 5], operator.mul)))  # [1, 2, 6, 24, 120]

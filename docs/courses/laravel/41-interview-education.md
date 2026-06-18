@@ -1,10 +1,10 @@
-﻿# Chapter 41: Interview Q&A â€” Education & EdTech
+# Chapter 41: Interview Q&A â€” Education & EdTech
 
 ---
 
 ## 1. Education Domain Knowledge
 
-![Education Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/41-interview-education.png)
+![Education Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/41-interview-education.png)
 
 
 ### Q1: What are the core data models in an EdTech platform, and how do they relate?

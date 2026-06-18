@@ -12,20 +12,20 @@ After studying this chapter, students will be able to:
 
 ## 1.1 C++ as an Evolutionary Superset of C
 
-![C++ Introduction Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/01-introduction.png)
+![C++ Introduction Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/01-introduction.png)
 
 C++ was designed by Bjarne Stroustrup beginning in 1979 as "C with Classes." The language retains full backward compatibility with C while adding support for object-oriented programming, generic programming, and a rich standard library. The fundamental difference is philosophical: C gives the programmer enough rope to hang themselves; C++ adds guardrails without removing the rope entirely.
 
-In C, the programmer manually manages every aspect of program behaviour—memory allocation, string handling, I/O buffering. C++ introduces abstractions that encode these patterns into reusable, type-safe constructs. For example, where C uses `printf` with format specifiers that are checked only at runtime, C++ provides type-safe I/O streams resolved at compile time.
+In C, the programmer manually manages every aspect of program behaviourâ€”memory allocation, string handling, I/O buffering. C++ introduces abstractions that encode these patterns into reusable, type-safe constructs. For example, where C uses `printf` with format specifiers that are checked only at runtime, C++ provides type-safe I/O streams resolved at compile time.
 
 ## 1.2 Input and Output Streams
 
 The C++ Standard Library provides the `<iostream>` header, which declares global stream objects:
 
-- `std::cin` — standard input (connected to keyboard by default)
-- `std::cout` — standard output
-- `std::cerr` — unbuffered standard error
-- `std::clog` — buffered standard error
+- `std::cin` â€” standard input (connected to keyboard by default)
+- `std::cout` â€” standard output
+- `std::cerr` â€” unbuffered standard error
+- `std::clog` â€” buffered standard error
 
 The stream operators `<<` (insertion) and `>>` (extraction) perform formatted I/O. The type of the operand determines the formatting automatically, eliminating the format-string mismatches that plague C's `printf` family.
 
@@ -76,9 +76,9 @@ int main() {
 
 Three forms of `using` bring names into the current scope:
 
-- `using std::cout;` — brings a single name into scope (preferred in practice)
-- `using namespace std;` — brings the entire namespace into scope (common in textbooks, discouraged in production)
-- `using std::literals;` — brings user-defined literal operators into scope
+- `using std::cout;` â€” brings a single name into scope (preferred in practice)
+- `using namespace std;` â€” brings the entire namespace into scope (common in textbooks, discouraged in production)
+- `using std::literals;` â€” brings user-defined literal operators into scope
 
 Header files should never contain `using namespace std;` because they would force the directive on every translation unit that includes them.
 
@@ -128,7 +128,7 @@ int main() {
 }
 ```
 
-Overloading is resolved at compile time (static polymorphism). The return type alone is insufficient to distinguish overloads—the parameter types must differ. Ambiguous calls, where multiple overloads are equally good matches, cause a compilation error.
+Overloading is resolved at compile time (static polymorphism). The return type alone is insufficient to distinguish overloadsâ€”the parameter types must differ. Ambiguous calls, where multiple overloads are equally good matches, cause a compilation error.
 
 ## 1.6 References
 

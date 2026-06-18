@@ -1,4 +1,4 @@
-# Chapter 7 — React Advanced
+# Chapter 7 â€” React Advanced
 
 ## Learning Objectives
 
@@ -14,7 +14,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-![React Advanced Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/07-react-advanced.png)
+![React Advanced Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/07-react-advanced.png)
 
 ### 7.1 useRef
 
@@ -83,7 +83,7 @@ function RenderCounter() {
 ```jsx
 import { useMemo, useCallback } from 'react';
 
-// useMemo — cache computed values
+// useMemo â€” cache computed values
 function ExpensiveList({ items, filter }) {
   const filtered = useMemo(() => {
     console.log('Filtering...');
@@ -101,7 +101,7 @@ function ExpensiveList({ items, filter }) {
     <div>
       <ul>
         {filtered.map((item) => (
-          <li key={item.id}>{item.name} — ${item.price}</li>
+          <li key={item.id}>{item.name} â€” ${item.price}</li>
         ))}
       </ul>
       <p>Total: ${total.toFixed(2)}</p>
@@ -109,7 +109,7 @@ function ExpensiveList({ items, filter }) {
   );
 }
 
-// useCallback — cache function references
+// useCallback â€” cache function references
 function ProductPage({ productId, onAddToCart }) {
   const [product, setProduct] = useState(null);
 
@@ -119,7 +119,7 @@ function ProductPage({ productId, onAddToCart }) {
       .then(setProduct);
   }, [productId]);
 
-  // Stable reference — does not re-create unless productId changes
+  // Stable reference â€” does not re-create unless productId changes
   const handleAdd = useCallback(() => {
     onAddToCart(productId);
   }, [productId, onAddToCart]);
@@ -138,7 +138,7 @@ function ProductPage({ productId, onAddToCart }) {
 **Optimization rules:**
 - Only use `useMemo` for genuinely expensive computations (iterations, complex transforms).
 - Only use `useCallback` when passing callbacks to optimized child components (wrapped in `React.memo`).
-- Premature optimization adds complexity — measure first, then memoize.
+- Premature optimization adds complexity â€” measure first, then memoize.
 
 ### 7.3 useReducer
 
@@ -197,7 +197,7 @@ function ShoppingCart() {
     <div>
       {cart.items.map((item, i) => (
         <div key={i}>
-          {item.name} — ${item.price}
+          {item.name} â€” ${item.price}
           <button onClick={() => removeItem(i)}>Remove</button>
         </div>
       ))}
@@ -282,7 +282,7 @@ function App() {
 Custom hooks extract reusable stateful logic into functions that may use other hooks.
 
 ```jsx
-// useFetch — generic data fetching
+// useFetch â€” generic data fetching
 function useFetch(url, options = {}) {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -314,7 +314,7 @@ function useFetch(url, options = {}) {
   return { data, loading, error };
 }
 
-// useLocalStorage — synced with localStorage
+// useLocalStorage â€” synced with localStorage
 function useLocalStorage(key, initialValue) {
   const [storedValue, setStoredValue] = useState(() => {
     try {
@@ -334,7 +334,7 @@ function useLocalStorage(key, initialValue) {
   return [storedValue, setValue];
 }
 
-// useMediaQuery — responsive breakpoints
+// useMediaQuery â€” responsive breakpoints
 function useMediaQuery(query) {
   const [matches, setMatches] = useState(() => window.matchMedia(query).matches);
 
@@ -490,7 +490,7 @@ function Modal({ open, onClose, children }) {
 ```jsx
 import { memo } from 'react';
 
-// React.memo — prevent re-render when props haven't changed (shallow comparison)
+// React.memo â€” prevent re-render when props haven't changed (shallow comparison)
 const ExpensiveChart = memo(function ExpensiveChart({ data, config }) {
   return <svg>{/* Complex rendering */}</svg>;
 });
@@ -564,4 +564,4 @@ React DevTools (browser extension) provides:
    - **Custom hook** `useLocalStorage` for persisting the cart
    - **Error boundary** wrapping the product detail page
    - **Memoized** product list to prevent unnecessary re-renders
-   - No external state management library — only React built-ins
+   - No external state management library â€” only React built-ins

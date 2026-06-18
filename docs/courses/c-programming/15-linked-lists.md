@@ -8,7 +8,7 @@
 - Implement circular linked lists
 - Understand the trade-offs between linked lists and arrays
 
-![C Linked Lists: Singly, Doubly, Circular, Operations and Complexity](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-15-linked-lists.png)
+![C Linked Lists: Singly, Doubly, Circular, Operations and Complexity](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-15-linked-lists.png)
 
 ## 15.1 Node Structure
 
@@ -422,16 +422,16 @@ Circular list: 10 -> 40 -> 30 -> 20 -> (back to 10)
 
 | Operation | Array | Linked List |
 |-----------|-------|-------------|
-| Access by index | O(1) — direct | O(n) — must traverse |
-| Insert at beginning | O(n) — shift elements | O(1) |
+| Access by index | O(1) â€” direct | O(n) â€” must traverse |
+| Insert at beginning | O(n) â€” shift elements | O(1) |
 | Insert at end | O(1) amortized (if space) | O(n) (without tail ptr) |
-| Delete from beginning | O(n) — shift elements | O(1) |
-| Memory overhead | Minimal | 4–8 bytes per node (pointer) |
+| Delete from beginning | O(n) â€” shift elements | O(1) |
+| Memory overhead | Minimal | 4â€“8 bytes per node (pointer) |
 | Memory fragmentation | Contiguous | Scattered |
 | Cache performance | Excellent (locality) | Poor (indirection) |
 | Size change | Difficult (may need realloc) | Trivial |
 
-## 15.6 Common Operations — Complexity
+## 15.6 Common Operations â€” Complexity
 
 | Operation | Singly | Doubly | Circular |
 |-----------|--------|--------|----------|
@@ -474,11 +474,11 @@ Circular list: 10 -> 40 -> 30 -> 20 -> (back to 10)
 
 Implement a **polynomial** using a linked list where each node stores a coefficient and an exponent. Provide functions for:
 
-- `Poly *poly_create()` — create empty polynomial.
-- `void poly_add_term(Poly *p, double coeff, int exp)` — add a term (or combine if exponent exists).
-- `Poly *poly_add(const Poly *a, const Poly *b)` — add two polynomials.
-- `Poly *poly_multiply(const Poly *a, const Poly *b)` — multiply two polynomials.
-- `void poly_print(const Poly *p)` — print in standard form: `3.0x^2 + 2.0x - 5.0`.
-- `double poly_eval(const Poly *p, double x)` — evaluate using Horner's method.
+- `Poly *poly_create()` â€” create empty polynomial.
+- `void poly_add_term(Poly *p, double coeff, int exp)` â€” add a term (or combine if exponent exists).
+- `Poly *poly_add(const Poly *a, const Poly *b)` â€” add two polynomials.
+- `Poly *poly_multiply(const Poly *a, const Poly *b)` â€” multiply two polynomials.
+- `void poly_print(const Poly *p)` â€” print in standard form: `3.0x^2 + 2.0x - 5.0`.
+- `double poly_eval(const Poly *p, double x)` â€” evaluate using Horner's method.
 
 Test with `(3x^2 + 2x - 5) + (x^3 - 4x + 7)` and `(x + 1) * (x - 1)`.

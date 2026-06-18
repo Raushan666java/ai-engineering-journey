@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: apply the SOLID prin
 
 ## Theory
 
-![Design and Implementation Principles](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-05-design-implementation.png)
+![Design and Implementation Principles](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-05-design-implementation.png)
 
 ### Design Principles
 
@@ -28,11 +28,11 @@ The Dependency Inversion Principle (DIP) states that high-level modules should n
 
 ### DRY, KISS, and YAGNI
 
-The DRY principle — Don't Repeat Yourself — states that every piece of knowledge should have a single, unambiguous representation within the system. Duplication increases the risk that changes made in one place will not be made in another, leading to inconsistencies. DRY is achieved through abstraction, parameterisation, and code generation.
+The DRY principle â€” Don't Repeat Yourself â€” states that every piece of knowledge should have a single, unambiguous representation within the system. Duplication increases the risk that changes made in one place will not be made in another, leading to inconsistencies. DRY is achieved through abstraction, parameterisation, and code generation.
 
-The KISS principle — Keep It Simple, Stupid — advocates simplicity in design. Simple designs are easier to understand, test, and maintain. Unnecessary complexity should be avoided even if it adds generality or elegance that is not currently required.
+The KISS principle â€” Keep It Simple, Stupid â€” advocates simplicity in design. Simple designs are easier to understand, test, and maintain. Unnecessary complexity should be avoided even if it adds generality or elegance that is not currently required.
 
-The YAGNI principle — You Ain't Gonna Need It — states that functionality should not be added until it is actually required. Anticipating future requirements leads to bloat and complexity that may never be justified. YAGNI is particularly emphasised in agile development.
+The YAGNI principle â€” You Ain't Gonna Need It â€” states that functionality should not be added until it is actually required. Anticipating future requirements leads to bloat and complexity that may never be justified. YAGNI is particularly emphasised in agile development.
 
 ### Separation of Concerns
 

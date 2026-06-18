@@ -13,7 +13,7 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
-![Graph Theory Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/09-graph-theory.png)
+![Graph Theory Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/09-graph-theory.png)
 
 ### 9.1 Definitions
 
@@ -146,4 +146,4 @@ A **proper k-coloring** assigns one of $k$ colors to each vertex such that adjac
 
 ### Challenge Problem
 
-11. Prove that any graph with $n$ vertices and more than $\frac{n^2}{4}$ edges contains a triangle. (Hint: use Turán's theorem or induction and the pigeonhole principle.)
+11. Prove that any graph with $n$ vertices and more than $\frac{n^2}{4}$ edges contains a triangle. (Hint: use TurÃ¡n's theorem or induction and the pigeonhole principle.)

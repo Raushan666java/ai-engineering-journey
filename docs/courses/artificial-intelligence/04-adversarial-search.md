@@ -20,7 +20,7 @@
 |---------|-----------|-----------|
 | Games in AI | Zero-sum, perfect information | Competitive environment, game tree |
 | Minimax Algorithm | Optimal play, MAX/MIN | Utility function, backup values |
-| Alpha-Beta Pruning | α, β bounds, pruning rule | Pruning, move ordering |
+| Alpha-Beta Pruning | Î±, Î² bounds, pruning rule | Pruning, move ordering |
 | Evaluation Functions | Cutoff search, Eval(s) | Quiescence, horizon effect |
 
 ## Chapter Roadmap
@@ -40,16 +40,16 @@ flowchart LR
 
 ## Theory
 
-![Adversarial Search and CSP](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch04-adversarial-csp.png)
+![Adversarial Search and CSP](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch04-adversarial-csp.png)
 
 ### Games in AI
-> **One-Sentence Takeaway:** Adversarial search models competitive environments where multiple agents have opposing goals — the standard framework is zero-sum, perfect-information games.
+> **One-Sentence Takeaway:** Adversarial search models competitive environments where multiple agents have opposing goals â€” the standard framework is zero-sum, perfect-information games.
 
 In AI, "games" usually refers to competitive environments where multiple agents have conflicting goals. The most common type is a **zero-sum game** with **perfect information**:
 - **Zero-sum**: One player's gain is the other's loss.
 - **Perfect information**: All players know the complete state of the game at all times.
 
-> **💡 Pro Tip:** Minimax assumes your opponent plays optimally — always. In practice, this conservative assumption is correct for perfect-play games like Chess, but in games where opponents make mistakes, expectimax or risk-aware variants may perform better.
+> **ðŸ’¡ Pro Tip:** Minimax assumes your opponent plays optimally â€” always. In practice, this conservative assumption is correct for perfect-play games like Chess, but in games where opponents make mistakes, expectimax or risk-aware variants may perform better.
 
 ### The Minimax Algorithm
 The Minimax algorithm determines the optimal move for a player assuming the opponent also plays optimally.
@@ -130,28 +130,28 @@ Suppose MAX is evaluating two moves, A and B.
 
 | Algorithm | Complete? | Optimal? | Space | Key Feature |
 |-----------|:---:|:---:|:---:|-------------|
-| Minimax | ✅ (finite tree) | ✅ | O(bd) | Full tree, both players optimal |
-| Alpha-Beta | ✅ (same as Minimax) | ✅ | O(bd) | Prunes irrelevant branches |
-| Expectiminimax | ✅ | ✅ (max expected) | O(b^d) | Chance nodes with probabilities |
-| MCTS | ❌ (asymptotically complete) | ❌ (approximate) | Variable | Selective sampling via UCT |
+| Minimax | âœ… (finite tree) | âœ… | O(bd) | Full tree, both players optimal |
+| Alpha-Beta | âœ… (same as Minimax) | âœ… | O(bd) | Prunes irrelevant branches |
+| Expectiminimax | âœ… | âœ… (max expected) | O(b^d) | Chance nodes with probabilities |
+| MCTS | âŒ (asymptotically complete) | âŒ (approximate) | Variable | Selective sampling via UCT |
 
-## Quick Reference — Alpha-Beta Parameters
+## Quick Reference â€” Alpha-Beta Parameters
 
 | Parameter | Meaning | Initial Value | Update Rule |
 |-----------|---------|:---:|-------------|
-| α (Alpha) | Best value for MAX along path | -∞ | α ← max(α, v) |
-| β (Beta) | Best value for MIN along path | +∞ | β ← min(β, v) |
-| Pruning condition | α ≥ β | — | Skip remaining children |
+| Î± (Alpha) | Best value for MAX along path | -âˆž | Î± â† max(Î±, v) |
+| Î² (Beta) | Best value for MIN along path | +âˆž | Î² â† min(Î², v) |
+| Pruning condition | Î± â‰¥ Î² | â€” | Skip remaining children |
 
 ## Cross-Application Matrix
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Minimax | ⬜ | ⬜ | ⬜ | ✅ |
-| Alpha-Beta | ⬜ | ⬜ | ⬜ | ✅ |
-| MCTS | ✅ | ⬜ | ⬜ | ✅ |
-| Expectiminimax | ⬜ | ⬜ | ⬜ | ✅ |
-| Evaluation Functions | ✅ | ✅ | ⬜ | ⬜ |
+| Minimax | â¬œ | â¬œ | â¬œ | âœ… |
+| Alpha-Beta | â¬œ | â¬œ | â¬œ | âœ… |
+| MCTS | âœ… | â¬œ | â¬œ | âœ… |
+| Expectiminimax | â¬œ | â¬œ | â¬œ | âœ… |
+| Evaluation Functions | âœ… | âœ… | â¬œ | â¬œ |
 
 ## Chapter Quiz
 
@@ -164,12 +164,12 @@ Suppose MAX is evaluating two moves, A and B.
 <details><summary>Answer</summary>B) MAX nodes select the child with the highest backed-up value.</details>
 
 **Q2:** What condition triggers alpha-beta pruning?
-- A) When α ≤ β
-- B) When α ≥ β
+- A) When Î± â‰¤ Î²
+- B) When Î± â‰¥ Î²
 - C) When search depth exceeds limit
 - D) When all nodes are evaluated
 
-<details><summary>Answer</summary>B) Pruning occurs when α ≥ β, meaning the current branch cannot affect the final decision.</details>
+<details><summary>Answer</summary>B) Pruning occurs when Î± â‰¥ Î², meaning the current branch cannot affect the final decision.</details>
 
 **Q3:** What is the "horizon effect"?
 - A) The game tree is too deep to search completely

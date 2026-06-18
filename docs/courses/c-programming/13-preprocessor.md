@@ -9,11 +9,11 @@
 - Use predefined standard macros
 - Apply `#pragma` and `#error` directives
 
-![C Preprocessor: Macros, Conditional Compilation, Directives and Pitfalls](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-13-preprocessor.png)
+![C Preprocessor: Macros, Conditional Compilation, Directives and Pitfalls](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-13-preprocessor.png)
 
 ## 13.1 The Preprocessor's Role
 
-The preprocessor runs as the first stage of compilation. It processes directives — lines beginning with `#` — before the compiler sees the code.
+The preprocessor runs as the first stage of compilation. It processes directives â€” lines beginning with `#` â€” before the compiler sees the code.
 
 **Common tasks:**
 - File inclusion (`#include`)
@@ -22,11 +22,11 @@ The preprocessor runs as the first stage of compilation. It processes directives
 - Error generation (`#error`)
 - Compiler-specific instructions (`#pragma`)
 
-## 13.2 `#include` — File Inclusion
+## 13.2 `#include` â€” File Inclusion
 
 ```c
-#include <stdio.h>      /* system header — searches standard include paths */
-#include "myheader.h"    /* user header — searches current directory first */
+#include <stdio.h>      /* system header â€” searches standard include paths */
+#include "myheader.h"    /* user header â€” searches current directory first */
 ```
 
 **Angle brackets vs. quotes:**
@@ -36,7 +36,7 @@ The preprocessor runs as the first stage of compilation. It processes directives
 | `#include <...>` | System include directories |
 | `#include "..."` | Current directory first, then system include directories |
 
-## 13.3 `#define` — Macros
+## 13.3 `#define` â€” Macros
 
 ### 13.3.1 Object-like Macros
 
@@ -165,7 +165,7 @@ int main(void)
 #endif
 
 #ifndef RELEASE
-    printf("Release mode not defined — debug settings active\n");
+    printf("Release mode not defined â€” debug settings active\n");
 #endif
 
     return 0;
@@ -175,7 +175,7 @@ int main(void)
 **Output:**
 ```
 Debug mode enabled
-Release mode not defined — debug settings active
+Release mode not defined â€” debug settings active
 ```
 
 ### 13.4.2 `#if` and `#elif`
@@ -214,7 +214,7 @@ Version 2
 #endif
 ```
 
-### 13.4.4 Common Pattern — Header Guards
+### 13.4.4 Common Pattern â€” Header Guards
 
 ```c
 #ifndef MY_HEADER_H
@@ -253,7 +253,7 @@ int x = TEMP;   /* 100 */
 #endif
 
 #if _WIN32
-#warning "Compiling on Windows — some features may be unavailable"
+#warning "Compiling on Windows â€” some features may be unavailable"
 #endif
 ```
 
@@ -318,7 +318,7 @@ Function:   main
 
 ## 13.9 Macro Pitfalls
 
-1. **Side effects:** `MAX(++x, y)` expands to `((++x) > (y) ? (++x) : (y))` — increments `x` twice.
+1. **Side effects:** `MAX(++x, y)` expands to `((++x) > (y) ? (++x) : (y))` â€” increments `x` twice.
 2. **Missing parentheses:** Always wrap parameters and the entire body.
 3. **Semicolon swallowing:** Multi-statement macros need `do { ... } while (0)`.
 4. **No type safety:** Macros do not check types.
@@ -374,9 +374,9 @@ Resets the line number reported by `__LINE__`:
 
 Write a program that uses the preprocessor to implement a **unit test framework** with the following macros:
 
-- `TEST(name)` — begins a test case.
-- `ASSERT_EQ(actual, expected)` — checks equality; prints file, line, and failure message if not equal.
-- `ASSERT_TRUE(expr)` — checks that expression is true.
-- `TEST_REPORT()` — prints summary of passed/failed tests.
+- `TEST(name)` â€” begins a test case.
+- `ASSERT_EQ(actual, expected)` â€” checks equality; prints file, line, and failure message if not equal.
+- `ASSERT_TRUE(expr)` â€” checks that expression is true.
+- `TEST_REPORT()` â€” prints summary of passed/failed tests.
 
 Use counters (static variables or object-like macros) to track the number of passed and failed tests. Write test cases for a function `factorial` and report the results. *(Hint: use `__LINE__` and `__FILE__` in your assertion macros.)*

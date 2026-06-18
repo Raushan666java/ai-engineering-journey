@@ -1,6 +1,6 @@
 # Authentication & Authorization
 
-Security is not a feature — it is a property of the entire system. In any non-trivial application you must answer two questions about every request: *who is this?* (authentication) and *are they allowed to do that?* (authorization). Spring Security provides a comprehensive, extensible framework that addresses both concerns from the Servlet stack up through reactive applications.
+Security is not a feature â€” it is a property of the entire system. In any non-trivial application you must answer two questions about every request: *who is this?* (authentication) and *are they allowed to do that?* (authorization). Spring Security provides a comprehensive, extensible framework that addresses both concerns from the Servlet stack up through reactive applications.
 
 This chapter covers the full authentication and authorization architecture of Spring Security. You will learn how the filter chain works, how to authenticate users against databases, LDAP, or in-memory stores, how to encode and upgrade passwords safely, how to manage HTTP sessions, how to implement remember-me, and how Spring Security makes authorization decisions at the method and request level.
 
@@ -24,9 +24,9 @@ By the end of this chapter you should be able to:
 
 ## Security Filter Chain
 
-![Spring Security Authentication Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/25-auth-authz.png)
+![Spring Security Authentication Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/25-auth-authz.png)
 
-Spring Security is filter-based. A chain of `Filter` instances wraps every HTTP request, each responsible for one concern: authentication, authorization, CSRF protection, session management, and so on. The order of filters matters — authentication filters run before authorization filters, for example.
+Spring Security is filter-based. A chain of `Filter` instances wraps every HTTP request, each responsible for one concern: authentication, authorization, CSRF protection, session management, and so on. The order of filters matters â€” authentication filters run before authorization filters, for example.
 
 ### SecurityFilterChain
 
@@ -115,7 +115,7 @@ public class SecurityConfig {
 
 ### @EnableWebSecurity
 
-`@EnableWebSecurity` imports `WebSecurityConfiguration`, which registers the `FilterChainProxy` bean — the entry point that delegates to your `SecurityFilterChain` beans. Without it, Spring Security's default auto-configuration applies but custom chains are ignored.
+`@EnableWebSecurity` imports `WebSecurityConfiguration`, which registers the `FilterChainProxy` bean â€” the entry point that delegates to your `SecurityFilterChain` beans. Without it, Spring Security's default auto-configuration applies but custom chains are ignored.
 
 ```java
 package com.course.security.config;
@@ -425,11 +425,11 @@ public class DaoProviderConfig {
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
         provider.setUserDetailsService(userDetailsService);
 
-        // Always set the PasswordEncoder — without it, passwords
+        // Always set the PasswordEncoder â€” without it, passwords
         // are compared as plain text (deprecated)
         provider.setPasswordEncoder(passwordEncoder);
 
-        // Hide the "UserNotFound" exception — return BadCredentials
+        // Hide the "UserNotFound" exception â€” return BadCredentials
         // instead, preventing username enumeration
         provider.setHideUserNotFoundExceptions(true);
 
@@ -489,7 +489,7 @@ public class AuthManagerConfig {
 
 ### Custom AuthenticationProvider
 
-When authentication does not come from a username/password pair — such as OTP codes, hardware tokens, biometrics, or multi-factor challenges — you write a custom `AuthenticationProvider`.
+When authentication does not come from a username/password pair â€” such as OTP codes, hardware tokens, biometrics, or multi-factor challenges â€” you write a custom `AuthenticationProvider`.
 
 ```java
 package com.course.security.auth;
@@ -608,7 +608,7 @@ public class OtpService {
 }
 ```
 
-The `supports` method is critical — it tells `ProviderManager` whether this provider can handle a given `Authentication` type. Without it, the provider is never consulted.
+The `supports` method is critical â€” it tells `ProviderManager` whether this provider can handle a given `Authentication` type. Without it, the provider is never consulted.
 
 ```java
 // Register custom provider in security config
@@ -652,7 +652,7 @@ public class CustomProviderConfig {
 
 `UserDetailsService` is the core interface for loading user-specific data. Spring Security provides several implementations, and you can write your own.
 
-### UserDetails — The Contract
+### UserDetails â€” The Contract
 
 Every authenticated user is represented by a `UserDetails` instance. You can implement this interface directly or use the built-in `User` class.
 
@@ -1111,7 +1111,7 @@ public class BCryptDemo {
 
         String rawPassword = "myStrongP@ssw0rd!";
 
-        // Hash — each call produces a different result (random salt)
+        // Hash â€” each call produces a different result (random salt)
         String hash1 = encoder.encode(rawPassword);
         String hash2 = encoder.encode(rawPassword);
 
@@ -1131,7 +1131,7 @@ public class BCryptDemo {
 
 ### SCryptPasswordEncoder
 
-SCrypt is memory-hard — it requires a configurable amount of RAM, making GPU-based attacks much more expensive.
+SCrypt is memory-hard â€” it requires a configurable amount of RAM, making GPU-based attacks much more expensive.
 
 ```java
 package com.course.security.password;
@@ -1247,7 +1247,7 @@ public class PasswordStrengthEvaluator {
 
 ### DelegatingPasswordEncoder
 
-When you upgrade hashing algorithms — for example, migrating from plain text or MD5 to BCrypt — old hashes must continue to work while new passwords use the new algorithm. `DelegatingPasswordEncoder` makes this seamless.
+When you upgrade hashing algorithms â€” for example, migrating from plain text or MD5 to BCrypt â€” old hashes must continue to work while new passwords use the new algorithm. `DelegatingPasswordEncoder` makes this seamless.
 
 ```java
 package com.course.security.password;
@@ -1276,7 +1276,7 @@ public class DelegatingPasswordEncoderConfig {
         encoders.put("argon2", Argon2PasswordEncoder.defaultsForSpringSecurity_v5_8());
         encoders.put("pbkdf2", Pbkdf2PasswordEncoder.defaultsForSpringSecurity_v5_8());
 
-        // {noop} = no encoding (plain text) — for migration only
+        // {noop} = no encoding (plain text) â€” for migration only
         encoders.put("noop", org.springframework.security.crypto.password.NoOpPasswordEncoder.getInstance());
 
         DelegatingPasswordEncoder delegating =
@@ -1477,7 +1477,7 @@ The four policies:
 | `ALWAYS` | Always create a session, even for unauthenticated users |
 | `IF_REQUIRED` | Create a session only when needed (default) |
 | `NEVER` | Never create a session, but use one if it exists |
-| `STATELESS` | No session at all — every request must carry authentication |
+| `STATELESS` | No session at all â€” every request must carry authentication |
 
 ### Concurrent Session Control
 
@@ -1666,7 +1666,7 @@ public class RememberMeConfig {
 
 ### PersistentTokenBasedRememberMeServices
 
-A more secure approach — the token is stored in a database. If a token is stolen, the legitimate user's token is invalidated:
+A more secure approach â€” the token is stored in a database. If a token is stolen, the legitimate user's token is invalidated:
 
 ```java
 package com.course.security.config;
@@ -1809,7 +1809,7 @@ public class SecurityContextHolderDemo {
 
         // MODE_GLOBAL
         // A single SecurityContext is shared across all threads.
-        // DANGEROUS in multi-user applications — use with extreme care.
+        // DANGEROUS in multi-user applications â€” use with extreme care.
         SecurityContextHolder.setStrategyName(
             SecurityContextHolder.MODE_GLOBAL);
     }
@@ -2052,7 +2052,7 @@ import org.springframework.security.web.access.expression.WebExpressionVoter;
 @EnableMethodSecurity
 public class AuthorizationConfig {
 
-    // AffirmativeBased — grant if ANY voter votes ACCESS_GRANTED
+    // AffirmativeBased â€” grant if ANY voter votes ACCESS_GRANTED
     @Bean
     public AccessDecisionManager affirmativeBased() {
         List<AccessDecisionVoter<?>> voters = List.of(
@@ -2063,7 +2063,7 @@ public class AuthorizationConfig {
         return new AffirmativeBased(voters);
     }
 
-    // ConsensusBased — grant if more ACCESS_GRANTED than ACCESS_DENIED
+    // ConsensusBased â€” grant if more ACCESS_GRANTED than ACCESS_DENIED
     @Bean
     public AccessDecisionManager consensusBased() {
         List<AccessDecisionVoter<?>> voters = List.of(
@@ -2073,7 +2073,7 @@ public class AuthorizationConfig {
         return new ConsensusBased(voters);
     }
 
-    // UnanimousBased — grant ONLY if every voter votes ACCESS_GRANTED
+    // UnanimousBased â€” grant ONLY if every voter votes ACCESS_GRANTED
     @Bean
     public AccessDecisionManager unanimousBased() {
         List<AccessDecisionVoter<?>> voters = List.of(
@@ -2103,7 +2103,7 @@ A voter evaluates a single `ConfigAttribute` against the `Authentication` object
 
 - `ACCESS_GRANTED` (+1)
 - `ACCESS_DENIED` (-1)
-- `ACCESS_ABSTAIN` (0) — the voter has no opinion
+- `ACCESS_ABSTAIN` (0) â€” the voter has no opinion
 
 ```java
 package com.course.security.authorization;
@@ -2206,7 +2206,7 @@ public class RoleHierarchyConfig {
 
 ```java
 // FilterSecurityInterceptor is automatically registered when you use
-// .authorizeHttpRequests() — you rarely need to configure it directly.
+// .authorizeHttpRequests() â€” you rarely need to configure it directly.
 // However, you can customize its behavior:
 
 package com.course.security.config;
@@ -2261,7 +2261,7 @@ public class FilterSecurityInterceptorConfig {
 
 ### ConfigAttribute
 
-A `ConfigAttribute` is a string-based security configuration — typically a role name or a SpEL expression:
+A `ConfigAttribute` is a string-based security configuration â€” typically a role name or a SpEL expression:
 
 ```java
 package com.course.security.authorization;

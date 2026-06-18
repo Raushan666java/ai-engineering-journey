@@ -12,72 +12,72 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
-![DevSecOps, Cloud Platforms, SRE and Networking](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch07-security-cloud-sre-net.png)
+![DevSecOps, Cloud Platforms, SRE and Networking](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch07-security-cloud-sre-net.png)
 
 ### 11.1 Amazon Web Services (AWS)
 
 AWS is the largest and most mature public cloud provider, offering over 200 services.
 
 **Compute**:
-- **EC2 (Elastic Compute Cloud)** — Virtual machines in the cloud. Instance types optimized for general purpose (t3, m6i), compute (c6i), memory (r6i), storage (i3), and GPU (p4). Supports spot instances, reserved instances, and dedicated hosts.
-- **Lambda** — Serverless function execution. Supports Node.js, Python, Java, Go, Ruby, .NET, and custom runtimes. Scales automatically. Billed per invocation and execution duration.
-- **ECS (Elastic Container Service)** — Docker container orchestration. Supports Fargate (serverless) and EC2 launch types.
-- **EKS (Elastic Kubernetes Service)** — Managed Kubernetes control plane. Automates control plane upgrades, integrates with AWS IAM.
+- **EC2 (Elastic Compute Cloud)** â€” Virtual machines in the cloud. Instance types optimized for general purpose (t3, m6i), compute (c6i), memory (r6i), storage (i3), and GPU (p4). Supports spot instances, reserved instances, and dedicated hosts.
+- **Lambda** â€” Serverless function execution. Supports Node.js, Python, Java, Go, Ruby, .NET, and custom runtimes. Scales automatically. Billed per invocation and execution duration.
+- **ECS (Elastic Container Service)** â€” Docker container orchestration. Supports Fargate (serverless) and EC2 launch types.
+- **EKS (Elastic Kubernetes Service)** â€” Managed Kubernetes control plane. Automates control plane upgrades, integrates with AWS IAM.
 
 **Storage**:
-- **S3 (Simple Storage Service)** — Object storage with 99.999999999% durability. Storage classes: Standard, Infrequent Access, Glacier (archive), Deep Archive.
-- **EBS (Elastic Block Store)** — Block storage for EC2 instances. Types: gp3 (general purpose), io2 (provisioned IOPS), st1 (throughput), sc1 (cold).
-- **RDS (Relational Database Service)** — Managed databases: MySQL, PostgreSQL, Oracle, SQL Server, MariaDB, Aurora.
+- **S3 (Simple Storage Service)** â€” Object storage with 99.999999999% durability. Storage classes: Standard, Infrequent Access, Glacier (archive), Deep Archive.
+- **EBS (Elastic Block Store)** â€” Block storage for EC2 instances. Types: gp3 (general purpose), io2 (provisioned IOPS), st1 (throughput), sc1 (cold).
+- **RDS (Relational Database Service)** â€” Managed databases: MySQL, PostgreSQL, Oracle, SQL Server, MariaDB, Aurora.
 
 **Networking**:
-- **VPC (Virtual Private Cloud)** — Isolated network environment. Subnets, route tables, internet gateways, NAT gateways, security groups, network ACLs.
-- **CloudFront** — CDN with global edge locations.
-- **Route 53** — DNS service with routing policies.
+- **VPC (Virtual Private Cloud)** â€” Isolated network environment. Subnets, route tables, internet gateways, NAT gateways, security groups, network ACLs.
+- **CloudFront** â€” CDN with global edge locations.
+- **Route 53** â€” DNS service with routing policies.
 
-**IAM (Identity and Access Management)** — Fine-grained access control with users, groups, roles, policies, and identity federation.
+**IAM (Identity and Access Management)** â€” Fine-grained access control with users, groups, roles, policies, and identity federation.
 
 ### 11.2 Microsoft Azure
 
 Azure is the second-largest cloud provider with deep enterprise and Microsoft ecosystem integration.
 
 **Compute**:
-- **Virtual Machines** — Windows and Linux VMs with flexible sizing. Availability sets and availability zones for high availability.
-- **Azure Functions** — Serverless compute supporting C#, JavaScript, Python, Java, PowerShell.
-- **AKS (Azure Kubernetes Service)** — Managed Kubernetes with Azure Active Directory integration.
-- **App Service** — Managed platform for web applications and APIs.
+- **Virtual Machines** â€” Windows and Linux VMs with flexible sizing. Availability sets and availability zones for high availability.
+- **Azure Functions** â€” Serverless compute supporting C#, JavaScript, Python, Java, PowerShell.
+- **AKS (Azure Kubernetes Service)** â€” Managed Kubernetes with Azure Active Directory integration.
+- **App Service** â€” Managed platform for web applications and APIs.
 
 **Storage**:
-- **Blob Storage** — Object storage with hot, cool, and archive tiers.
-- **Azure SQL Database** — Managed SQL Server with built-in high availability and intelligent performance.
-- **Cosmos DB** — Globally distributed NoSQL database with multiple consistency models.
+- **Blob Storage** â€” Object storage with hot, cool, and archive tiers.
+- **Azure SQL Database** â€” Managed SQL Server with built-in high availability and intelligent performance.
+- **Cosmos DB** â€” Globally distributed NoSQL database with multiple consistency models.
 
 **Networking**:
-- **Virtual Network (VNet)** — Network isolation with subnets, peering, VPN gateways.
-- **Azure DNS** — Domain hosting and resolution.
-- **Azure Front Door** — Global load balancing and CDN.
+- **Virtual Network (VNet)** â€” Network isolation with subnets, peering, VPN gateways.
+- **Azure DNS** â€” Domain hosting and resolution.
+- **Azure Front Door** â€” Global load balancing and CDN.
 
 **Identity**:
-- **Microsoft Entra ID (formerly Azure AD)** — Identity and access management with SSO, MFA, conditional access.
+- **Microsoft Entra ID (formerly Azure AD)** â€” Identity and access management with SSO, MFA, conditional access.
 
 ### 11.3 Google Cloud Platform (GCP)
 
 GCP excels in data analytics, machine learning, and container-native services.
 
 **Compute**:
-- **Compute Engine** — Virtual machines with live migration, custom machine types, sustained-use discounts.
-- **Cloud Functions** — Serverless functions (Node.js, Python, Go, Java, .NET, Ruby, PHP).
-- **GKE (Google Kubernetes Engine)** — Managed Kubernetes with Autopilot mode, integrated Cloud NAT, and workload identity.
-- **Cloud Run** — Serverless container execution. Runs any containerized application.
+- **Compute Engine** â€” Virtual machines with live migration, custom machine types, sustained-use discounts.
+- **Cloud Functions** â€” Serverless functions (Node.js, Python, Go, Java, .NET, Ruby, PHP).
+- **GKE (Google Kubernetes Engine)** â€” Managed Kubernetes with Autopilot mode, integrated Cloud NAT, and workload identity.
+- **Cloud Run** â€” Serverless container execution. Runs any containerized application.
 
 **Storage**:
-- **Cloud Storage** — Object storage with standard, nearline, coldline, and archive classes.
-- **Cloud SQL** — Managed MySQL, PostgreSQL, SQL Server.
-- **Cloud Spanner** — Horizontally scalable relational database with strong consistency.
+- **Cloud Storage** â€” Object storage with standard, nearline, coldline, and archive classes.
+- **Cloud SQL** â€” Managed MySQL, PostgreSQL, SQL Server.
+- **Cloud Spanner** â€” Horizontally scalable relational database with strong consistency.
 
 **Networking**:
-- **VPC** — Global virtual network with subnets, firewall rules, Cloud NAT.
-- **Cloud CDN** — Content delivery with global edge caching.
-- **Cloud DNS** — Managed DNS service.
+- **VPC** â€” Global virtual network with subnets, firewall rules, Cloud NAT.
+- **Cloud CDN** â€” Content delivery with global edge caching.
+- **Cloud DNS** â€” Managed DNS service.
 
 ### 11.4 Cloud Provider Comparison
 
@@ -96,31 +96,31 @@ GCP excels in data analytics, machine learning, and container-native services.
 
 ### 11.5 Multi-Cloud and Hybrid Cloud
 
-**Multi-Cloud** — Using multiple cloud providers to avoid vendor lock-in, optimize costs, leverage best-of-breed services, or meet regulatory requirements. Challenges include: increased operational complexity, data transfer costs, inconsistent security models, and skill requirements across platforms.
+**Multi-Cloud** â€” Using multiple cloud providers to avoid vendor lock-in, optimize costs, leverage best-of-breed services, or meet regulatory requirements. Challenges include: increased operational complexity, data transfer costs, inconsistent security models, and skill requirements across platforms.
 
-**Hybrid Cloud** — Connecting on-premises infrastructure with cloud resources. Use cases include: legacy application migration, data residency compliance, burst capacity, and disaster recovery. AWS Outposts, Azure Arc, and Google Anthos provide hybrid management.
+**Hybrid Cloud** â€” Connecting on-premises infrastructure with cloud resources. Use cases include: legacy application migration, data residency compliance, burst capacity, and disaster recovery. AWS Outposts, Azure Arc, and Google Anthos provide hybrid management.
 
 ### 11.6 Cloud Cost Optimization (FinOps)
 
 FinOps is the practice of managing cloud costs through cultural change, financial accountability, and engineering excellence.
 
 **Key Practices**:
-- **Right-sizing** — Match instance types to workload requirements. Use tools like AWS Compute Optimizer, Azure Advisor, GCP Rightsizing Recommendations.
-- **Reserved Instances and Savings Plans** — Commit to 1-year or 3-year terms for 30-60% discount over on-demand pricing.
-- **Spot Instances** — Use spare compute capacity at 60-90% discount. Suitable for fault-tolerant, interruptible workloads (batch processing, CI/CD, stateless web servers).
-- **Auto-scaling** — Scale resources to match demand. Scale down during low-traffic periods.
-- **Storage Lifecycle Policies** — Move data to cheaper storage tiers as it ages.
-- **Tagging and Cost Allocation** — Tag resources by team, project, environment. Track spending with cost allocation reports.
-- **Budget Alerts** — Configure budgets with alert thresholds. Automate responses (e.g., shut down development instances overnight).
+- **Right-sizing** â€” Match instance types to workload requirements. Use tools like AWS Compute Optimizer, Azure Advisor, GCP Rightsizing Recommendations.
+- **Reserved Instances and Savings Plans** â€” Commit to 1-year or 3-year terms for 30-60% discount over on-demand pricing.
+- **Spot Instances** â€” Use spare compute capacity at 60-90% discount. Suitable for fault-tolerant, interruptible workloads (batch processing, CI/CD, stateless web servers).
+- **Auto-scaling** â€” Scale resources to match demand. Scale down during low-traffic periods.
+- **Storage Lifecycle Policies** â€” Move data to cheaper storage tiers as it ages.
+- **Tagging and Cost Allocation** â€” Tag resources by team, project, environment. Track spending with cost allocation reports.
+- **Budget Alerts** â€” Configure budgets with alert thresholds. Automate responses (e.g., shut down development instances overnight).
 
 ### 11.7 Auto-Scaling Strategies
 
 Auto-scaling adjusts compute resources dynamically based on demand:
 
-- **Horizontal Scaling** — Add/remove instances. Preferred for stateless applications.
-- **Vertical Scaling** — Increase/decrease instance size. Limited by maximum instance size.
-- **Predictive Scaling** — ML-based scaling based on historical patterns.
-- **Scheduled Scaling** — Scale based on known traffic patterns (e.g., scale up at 8 AM, scale down at 8 PM).
+- **Horizontal Scaling** â€” Add/remove instances. Preferred for stateless applications.
+- **Vertical Scaling** â€” Increase/decrease instance size. Limited by maximum instance size.
+- **Predictive Scaling** â€” ML-based scaling based on historical patterns.
+- **Scheduled Scaling** â€” Scale based on known traffic patterns (e.g., scale up at 8 AM, scale down at 8 PM).
 
 ## Summary
 

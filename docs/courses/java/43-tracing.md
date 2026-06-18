@@ -14,7 +14,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-![Distributed Tracing - Micrometer, Zipkin, OpenTelemetry](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/43-tracing.png)
+![Distributed Tracing - Micrometer, Zipkin, OpenTelemetry](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/43-tracing.png)
 
 ### Distributed Tracing
 

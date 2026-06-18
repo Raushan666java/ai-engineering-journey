@@ -18,7 +18,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. The Java Exception Hierarchy
 
-![Exception Handling and I/O - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/p4-exceptions-io.png)
+![Exception Handling and I/O - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/p4-exceptions-io.png)
 
 Java exceptions are objects representing abnormal conditions. The root class is `java.lang.Throwable`, with two major branches: `Error` and `Exception`.
 
@@ -26,29 +26,29 @@ Java exceptions are objects representing abnormal conditions. The root class is 
 
 ```
 Throwable
-├── Error         (unchecked — JVM-level failures)
-│   ├── OutOfMemoryError
-│   ├── StackOverflowError
-│   ├── NoClassDefFoundError
-│   └── ...
-└── Exception     (program-level conditions)
-    ├── RuntimeException   (unchecked — programming bugs)
-    │   ├── NullPointerException
-    │   ├── IllegalArgumentException
-    │   ├── IndexOutOfBoundsException
-    │   └── ...
-    └── (checked exceptions)
-        ├── IOException
-        ├── SQLException
-        ├── ClassNotFoundException
-        └── ...
+â”œâ”€â”€ Error         (unchecked â€” JVM-level failures)
+â”‚   â”œâ”€â”€ OutOfMemoryError
+â”‚   â”œâ”€â”€ StackOverflowError
+â”‚   â”œâ”€â”€ NoClassDefFoundError
+â”‚   â””â”€â”€ ...
+â””â”€â”€ Exception     (program-level conditions)
+    â”œâ”€â”€ RuntimeException   (unchecked â€” programming bugs)
+    â”‚   â”œâ”€â”€ NullPointerException
+    â”‚   â”œâ”€â”€ IllegalArgumentException
+    â”‚   â”œâ”€â”€ IndexOutOfBoundsException
+    â”‚   â””â”€â”€ ...
+    â””â”€â”€ (checked exceptions)
+        â”œâ”€â”€ IOException
+        â”œâ”€â”€ SQLException
+        â”œâ”€â”€ ClassNotFoundException
+        â””â”€â”€ ...
 ```
 
-**Error** — serious JVM-level problems that applications should not attempt to catch.
+**Error** â€” serious JVM-level problems that applications should not attempt to catch.
 
-**Exception** — conditions a reasonable application may want to catch.
+**Exception** â€” conditions a reasonable application may want to catch.
 
-**RuntimeException** — unchecked; indicates a programming mistake (null check, bounds check, etc.).
+**RuntimeException** â€” unchecked; indicates a programming mistake (null check, bounds check, etc.).
 
 ### 1.2 Checked vs. Unchecked Exceptions
 
@@ -78,16 +78,16 @@ public class CheckedVsUnchecked {
 
     // Unchecked: the compiler does not require handling.
     public static int divide(int a, int b) {
-        // ArithmeticException extends RuntimeException — unchecked.
+        // ArithmeticException extends RuntimeException â€” unchecked.
         return a / b;
     }
 
     public static void main(String[] args) {
-        // Unchecked — compiler does not force try/catch.
+        // Unchecked â€” compiler does not force try/catch.
         int result = divide(10, 2);
         System.out.println("Result: " + result);
 
-        // Checked — must handle or declare.
+        // Checked â€” must handle or declare.
         try {
             readFile("nonexistent.txt");
         } catch (IOException e) {
@@ -192,7 +192,7 @@ public class TryCatchFinallyBasics {
         } catch (IOException e) {
             System.err.println("Error reading file: " + e.getMessage());
         } finally {
-            // Always executes — used for cleanup.
+            // Always executes â€” used for cleanup.
             if (reader != null) {
                 try {
                     reader.close();
@@ -231,9 +231,9 @@ public class MultiCatchExample {
             int result = 100 / 0; // will throw ArithmeticException
             System.out.println(result);
         } catch (FileNotFoundException | ArithmeticException e) {
-            // Multi-catch — the variable is implicitly final.
+            // Multi-catch â€” the variable is implicitly final.
             System.err.println("Caught in multi-catch: " + e.getClass().getSimpleName()
-                + " — " + e.getMessage());
+                + " â€” " + e.getMessage());
         } catch (IOException e) {
             System.err.println("IO error: " + e.getMessage());
         }
@@ -270,7 +270,7 @@ public class TryWithResourcesExample {
             System.err.println("Error: " + e.getMessage());
         }
 
-        // Multiple resources — closed in reverse order.
+        // Multiple resources â€” closed in reverse order.
         try (BufferedReader reader = new BufferedReader(new FileReader("input.txt"));
              PrintWriter writer = new PrintWriter(new FileWriter("output.txt"))) {
             String line;
@@ -404,7 +404,7 @@ import java.io.IOException;
 public class TryWithResourcesJava9 {
 
     public static void main(String[] args) throws IOException {
-        // Effectively final — not reassigned after initialization.
+        // Effectively final â€” not reassigned after initialization.
         BufferedReader reader = new BufferedReader(new FileReader("input.txt"));
 
         // Java 9+: reference the variable directly.
@@ -550,7 +550,7 @@ public class CustomExceptionDemo {
     public static void main(String[] args) {
         UserRepository repo = new UserRepository();
 
-        // Unchecked — compiler does not force handling.
+        // Unchecked â€” compiler does not force handling.
         try {
             repo.save(new User("", "bad-email"));
         } catch (ValidationException e) {
@@ -558,7 +558,7 @@ public class CustomExceptionDemo {
                 + "' with value '" + e.getRejectedValue() + "': " + e.getMessage());
         }
 
-        // Checked — must handle.
+        // Checked â€” must handle.
         try {
             repo.findById("nonexistent");
         } catch (UserNotFoundException e) {
@@ -601,7 +601,7 @@ class FileDataStore {
 }
 
 /**
- * Demonstrates exception chaining — cause chain is preserved.
+ * Demonstrates exception chaining â€” cause chain is preserved.
  */
 public class ExceptionChainingDemo {
 
@@ -735,7 +735,7 @@ public class LoggingExceptions {
         try {
             Files.readString(Path.of("optional-cache.txt"));
         } catch (IOException e) {
-            // This is acceptable — the cache is optional.
+            // This is acceptable â€” the cache is optional.
             LOG.log(Level.FINE, "Cache file not found, proceeding without cache", e);
         }
     }
@@ -780,7 +780,7 @@ package chapter4;
  */
 public class ExceptionAntiPatterns {
 
-    // ANTI-PATTERN #1: Empty catch block — swallows the exception entirely.
+    // ANTI-PATTERN #1: Empty catch block â€” swallows the exception entirely.
     public void antiPattern1() {
         try {
             riskyOperation();
@@ -888,17 +888,17 @@ public class ApiDesignWithExceptions {
     public static void main(String[] args) {
         ApiDesignWithExceptions api = new ApiDesignWithExceptions();
 
-        // Optional approach — caller decides.
+        // Optional approach â€” caller decides.
         Optional<User> user = api.findByIdOptional("nonexistent");
         User resolved = user.orElseThrow(() -> new UserNotFoundException("nonexistent"));
 
-        // Result approach — caller pattern-matches.
+        // Result approach â€” caller pattern-matches.
         Result<User> result = api.findByIdResult("nonexistent");
         // result.isSuccess() / result.getError() ...
     }
 }
 
-// Simple Result type (simplified — real libraries use dedicated types).
+// Simple Result type (simplified â€” real libraries use dedicated types).
 class Result<T> {
     private final T value;
     private final Throwable error;
@@ -1121,7 +1121,7 @@ import java.io.IOException;
 public class CharacterStreamDemo {
 
     public static void main(String[] args) {
-        String text = "Hello, 世界! Java I/O handles Unicode.\nLine 2: ñoño.";
+        String text = "Hello, ä¸–ç•Œ! Java I/O handles Unicode.\nLine 2: Ã±oÃ±o.";
 
         // Write characters.
         try (FileWriter fw = new FileWriter("char-demo.txt")) {
@@ -1165,7 +1165,7 @@ import java.nio.charset.StandardCharsets;
 public class StreamBridgeDemo {
 
     public static void main(String[] args) {
-        String data = "UTF-8 encoded: 日本へようこそ";
+        String data = "UTF-8 encoded: æ—¥æœ¬ã¸ã‚ˆã†ã“ã";
 
         // Write with explicit charset.
         try (OutputStreamWriter osw = new OutputStreamWriter(
@@ -1214,8 +1214,8 @@ public class BufferedReadWriteDemo {
         String filename = "lines.txt";
         List<String> lines = List.of(
             "First line",
-            "Second line with 日本語",
-            "Third line: ñoño",
+            "Second line with æ—¥æœ¬èªž",
+            "Third line: Ã±oÃ±o",
             "Fourth line"
         );
 
@@ -1682,7 +1682,7 @@ public class DirectoryStreamDemo {
             System.err.println("Error: " + e.getMessage());
         }
 
-        // Files.find() — filtered recursive search.
+        // Files.find() â€” filtered recursive search.
         System.out.println("\n=== Files.find() (recursive .txt files) ===");
         try (var stream = Files.find(tmp, 3,
                 (path, attrs) -> path.toString().endsWith(".txt") && attrs.size() > 0)) {
@@ -1695,7 +1695,7 @@ public class DirectoryStreamDemo {
 }
 ```
 
-### 6.5 WatchService — File Change Monitoring
+### 6.5 WatchService â€” File Change Monitoring
 
 ```java
 package chapter4;
@@ -1737,7 +1737,7 @@ public class WatchServiceDemo {
                     Path filename = (Path) event.context();
                     long count = event.count();
 
-                    System.out.printf("Event: %s — %s (count=%d)%n",
+                    System.out.printf("Event: %s â€” %s (count=%d)%n",
                         kind.name(), filename, count);
                 }
                 key.reset();
@@ -1778,7 +1778,7 @@ public class FileChannelDemo {
             ByteBuffer buffer = ByteBuffer.allocate(1024);
             buffer.put("Hello from FileChannel!\n".getBytes());
             buffer.put("Second line.\n".getBytes());
-            buffer.put("UTF-8 works: 日本語\n".getBytes());
+            buffer.put("UTF-8 works: æ—¥æœ¬èªž\n".getBytes());
             buffer.flip();
             int written = channel.write(buffer);
             System.out.println("Written " + written + " bytes via FileChannel");
@@ -1958,7 +1958,7 @@ class Employee implements Serializable {
     private int id;
     private String department;
 
-    // transient — not serialized.
+    // transient â€” not serialized.
     private transient String loginToken;
 
     public Employee(String name, int id, String department, String loginToken) {
@@ -2130,7 +2130,7 @@ class SecuredDocument implements Serializable {
         // Read the checksum and validate.
         this.checksum = in.readInt();
         if (this.checksum != computeChecksum()) {
-            throw new IOException("Document checksum mismatch — possible corruption");
+            throw new IOException("Document checksum mismatch â€” possible corruption");
         }
     }
 
@@ -2299,7 +2299,7 @@ final class Period implements Serializable {
         throw new InvalidObjectException("Proxy required");
     }
 
-    // The proxy — private and static.
+    // The proxy â€” private and static.
     private static class SerializationProxy implements Serializable {
         private static final long serialVersionUID = 1L;
 
@@ -2318,7 +2318,7 @@ final class Period implements Serializable {
         private Object readResolve() throws ObjectStreamException {
             java.util.Date start = new java.util.Date(startMillis);
             java.util.Date end = new java.util.Date(endMillis);
-            // Validation runs here — same as constructor.
+            // Validation runs here â€” same as constructor.
             if (start.after(end)) {
                 throw new InvalidObjectException("Start must be before end");
             }
@@ -2361,7 +2361,7 @@ final class Period implements Serializable {
 
 ## 8. NIO Channels and Buffers
 
-### 8.1 ByteBuffer — Heap vs. Direct
+### 8.1 ByteBuffer â€” Heap vs. Direct
 
 ```java
 package chapter4;
@@ -2402,7 +2402,7 @@ public class ByteBufferDemo {
         System.out.println("\nAfter writing: position=" + heapBuf.position()
             + ", limit=" + heapBuf.limit() + ", capacity=" + heapBuf.capacity());
 
-        // Flip — prepare for reading.
+        // Flip â€” prepare for reading.
         heapBuf.flip();
         System.out.println("After flip: position=" + heapBuf.position()
             + ", limit=" + heapBuf.limit());
@@ -2412,7 +2412,7 @@ public class ByteBufferDemo {
         heapBuf.get(dest);
         System.out.println("Read: " + new String(dest, StandardCharsets.UTF_8));
 
-        // Compact — move remaining data to front.
+        // Compact â€” move remaining data to front.
         heapBuf.compact();
         System.out.println("After compact: position=" + heapBuf.position()
             + ", limit=" + heapBuf.limit());
@@ -2427,7 +2427,7 @@ public class ByteBufferDemo {
         CharBuffer charBuf = StandardCharsets.UTF_8.decode(wrapped);
         System.out.println("Decoded: " + charBuf);
 
-        // Slice — shares data with the original.
+        // Slice â€” shares data with the original.
         heapBuf.clear();
         heapBuf.put("0123456789".getBytes());
         heapBuf.flip();
@@ -2632,7 +2632,7 @@ public class LargeFileReadingDemo {
         }
         System.out.println("Created large file: " + Files.size(largeFile) + " bytes");
 
-        // Strategy 1: Files.lines() — lazy stream (preferred for large files).
+        // Strategy 1: Files.lines() â€” lazy stream (preferred for large files).
         long start = System.currentTimeMillis();
         try (Stream<String> lines = Files.lines(largeFile, StandardCharsets.UTF_8)) {
             long count = lines
@@ -2642,7 +2642,7 @@ public class LargeFileReadingDemo {
                 + (System.currentTimeMillis() - start) + "ms");
         }
 
-        // Strategy 2: BufferedReader — manual line-by-line.
+        // Strategy 2: BufferedReader â€” manual line-by-line.
         start = System.currentTimeMillis();
         try (BufferedReader br = Files.newBufferedReader(largeFile, StandardCharsets.UTF_8)) {
             String line;
@@ -3136,7 +3136,7 @@ import java.util.stream.Collectors;
 
 /**
  * Reading resources from the classpath (inside JAR files or classpath directories).
- * These resources are NOT regular files — use getResourceAsStream().
+ * These resources are NOT regular files â€” use getResourceAsStream().
  */
 public class ClasspathResourceDemo {
 
@@ -3368,7 +3368,7 @@ public class FallbackPatternDemo {
 
 ## Summary
 
-- **Exception hierarchy**: `Throwable` → `Error` (JVM failures) and `Exception` (program conditions); `RuntimeException` is unchecked; all others are checked.
+- **Exception hierarchy**: `Throwable` â†’ `Error` (JVM failures) and `Exception` (program conditions); `RuntimeException` is unchecked; all others are checked.
 - **try/catch/finally**: Basic exception handling; finally always runs (for cleanup).
 - **Multi-catch**: Catch multiple unrelated exception types in one block (Java 7+).
 - **try-with-resources**: Auto-closes `AutoCloseable` resources; resources closed in reverse order; suppressed exceptions for close-time failures.

@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Heaps, Balanced Trees and Advanced Data Structures](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch06-heap-trees-advanced.png)
+![Heaps, Balanced Trees and Advanced Data Structures](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch06-heap-trees-advanced.png)
 
 ### Binary Heap
 
@@ -264,6 +264,87 @@ Events (by timestamp):
   t=100 Start
   t=200 Process
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **Building a heap is \(O(n)\), not \(O(n \log n)\)**: The trick is percolate-down (heapify) starting from the last non-leaf node. Percolate-up from each element (Floyd's method) would be \(O(n \log n)\). Always use bottom-up construction.
+- **Heap sort is in-place but not stable**: The relative order of equal elements is not preserved. Use merge sort if stability is required.
+- **Median finder with two heaps**: Maintain a max-heap for the lower half and a min-heap for the upper half. Insert in \(O(\log n)\); the median is the max-heap's root in \(O(1)\).
+- **`decreaseKey` in Dijkstra**: To implement Dijkstra's algorithm efficiently, you need a priority queue that supports priority updates. A binary heap with an index array mapping vertex â†’ heap position enables \(O(\log n)\) decreaseKey.
+
+## One-Sentence Takeaways
+
+- Heaps are complete binary trees stored implicitly in arrays with \(O(\log n)\) insert and extract.
+- Max-heap: parent â‰¥ children; min-heap: parent â‰¤ children.
+- Building a heap from an array is \(O(n)\) using bottom-up heapify.
+- Heap sort sorts in place in \(O(n \log n)\) time.
+- Priority queues are typically implemented with binary heaps.
+- Two heaps can maintain running median in \(O(\log n)\) per insertion.
+
+## Concept Comparison Table
+
+| Feature | Binary Heap | BST | Sorted Array |
+|---------|-------------|-----|--------------|
+| Insert | \(O(\log n)\) | \(O(\log n)\) avg | \(O(n)\) |
+| Extract min | \(O(\log n)\) | \(O(\log n)\) avg | \(O(1)\) |
+| Find min | \(O(1)\) | \(O(\log n)\) (leftmost) | \(O(1)\) |
+| Search | \(O(n)\) | \(O(\log n)\) avg | \(O(\log n)\) |
+| Merge | \(O(n)\) | \(O(n)\) | \(O(n)\) |
+| In-place sort | \(O(n \log n)\) | \(O(n \log n)\) | Already sorted |
+
+## Quick Reference: Heap Array Indexing
+
+| Operation | Formula | Example (n=7) |
+|-----------|---------|---------------|
+| Parent of i | \((i-1)/2\) | i=5 â†’ parent=2 |
+| Left child of i | \(2i + 1\) | i=1 â†’ left=3 |
+| Right child of i | \(2i + 2\) | i=1 â†’ right=4 |
+| Leaf range | \(\lfloor n/2 \rfloor\) to \(n-1\) | 3 to 6 |
+| Last non-leaf | \(\lfloor n/2 \rfloor - 1\) | 2 |
+
+## Cross-Application Matrix
+
+| Algorithm | Heap Use | Complexity Impact |
+|-----------|----------|-------------------|
+| Dijkstra's shortest path | Extract min, decreaseKey | \(O((V+E)\log V)\) |
+| Prim's MST | Extract min, decreaseKey | \(O((V+E)\log V)\) |
+| Heap sort | Build â†’ extract all | \(O(n \log n)\) |
+| K-way merge | Build heap of k elements | \(O(k + n \log k)\) |
+| Median finder | Max-heap + min-heap | \(O(\log n)\) per insert |
+
+## Chapter Quiz
+
+1. **What is the time complexity of building a heap from an array?**
+   - a) \(O(n \log n)\)
+   - b) \(O(n)\) âœ“
+   - c) \(O(\log n)\)
+   - d) \(O(n^2)\)
+
+2. **In a max-heap, the root is:**
+   - a) The smallest element
+   - b) The largest element âœ“
+   - c) Random
+   - d) Middle element
+
+3. **What is heap sort's worst-case complexity?**
+   - a) \(O(n \log n)\) âœ“
+   - b) \(O(n^2)\)
+   - c) \(O(n)\)
+   - d) \(O(\log n)\)
+
+4. **The left child of index i is at:**
+   - a) \(2i\)
+   - b) \(2i + 1\) âœ“
+   - c) \(i/2\)
+   - d) \(i + 1\)
+
+5. **Which data structure is a heap usually used to implement?**
+   - a) Stack
+   - b) Priority queue âœ“
+   - c) Hash table
+   - d) Queue
+
+**Answers:** 1-b, 2-b, 3-a, 4-b, 5-b
 
 ## Summary
 

@@ -1,4 +1,4 @@
-# Chapter 1 — HTML5
+# Chapter 1 â€” HTML5
 
 ## Learning Objectives
 
@@ -15,19 +15,19 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 Semantic Document Structure
 
-![HTML5 Elements Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/01-html.png)
+![HTML5 Elements Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/01-html.png)
 
 HTML5 introduced a set of landmark elements that replace the generic `<div>`-based document structure. These elements convey meaning about the content they contain, aiding accessibility, search-engine indexing, and code readability.
 
 The primary semantic landmarks are:
 
-- `<header>` — Introductory content, navigation links, branding, or heading group for a page or section.
-- `<nav>` — A block of navigation links. Documents may contain multiple `<nav>` elements (e.g., primary nav, table of contents, breadcrumbs).
-- `<main>` — The dominant content of the `<body>`. A document must have exactly one `<main>` element, visible and not hidden via `display: none` or `aria-hidden`.
-- `<section>` — A thematic grouping of content, typically introduced with a heading. Not a generic container; use `<div>` when no semantic relationship exists.
-- `<article>` — A self-contained composition that is independently distributable or reusable (forum post, news story, blog entry, comment).
-- `<aside>` — Content tangentially related to the surrounding content, such as sidebars, pull quotes, or advertising.
-- `<footer>` — Footer for its nearest ancestor sectioning content; typically contains author info, copyright, or related links.
+- `<header>` â€” Introductory content, navigation links, branding, or heading group for a page or section.
+- `<nav>` â€” A block of navigation links. Documents may contain multiple `<nav>` elements (e.g., primary nav, table of contents, breadcrumbs).
+- `<main>` â€” The dominant content of the `<body>`. A document must have exactly one `<main>` element, visible and not hidden via `display: none` or `aria-hidden`.
+- `<section>` â€” A thematic grouping of content, typically introduced with a heading. Not a generic container; use `<div>` when no semantic relationship exists.
+- `<article>` â€” A self-contained composition that is independently distributable or reusable (forum post, news story, blog entry, comment).
+- `<aside>` â€” Content tangentially related to the surrounding content, such as sidebars, pull quotes, or advertising.
+- `<footer>` â€” Footer for its nearest ancestor sectioning content; typically contains author info, copyright, or related links.
 
 A typical document skeleton:
 
@@ -147,7 +147,7 @@ HTML5 provides native elements for embedding media without third-party plugins.
 </video>
 ```
 
-The `<track>` element supports `kind` values of `captions`, `subtitles`, `descriptions`, `chapters`, and `metadata` — essential for accessibility and internationalization.
+The `<track>` element supports `kind` values of `captions`, `subtitles`, `descriptions`, `chapters`, and `metadata` â€” essential for accessibility and internationalization.
 
 **Canvas:**
 
@@ -327,7 +327,7 @@ function onDrop(event) {
 
 ### Application Problems
 
-5. Write the HTML for a product review form with fields for name, rating (1–5), email, and review text. Include appropriate validation and accessibility attributes.
+5. Write the HTML for a product review form with fields for name, rating (1â€“5), email, and review text. Include appropriate validation and accessibility attributes.
 6. Build a page layout using `<header>`, `<nav>`, `<main>`, `<article>`, `<aside>`, and `<footer>` that represents a blog post with a sidebar containing related links.
 7. Implement an audio player with fallback text and both MP3 and OGG source formats.
 

@@ -6,9 +6,9 @@ After completing this chapter, the student will be able to: produce a comprehens
 
 ## Capstone Overview
 
-![Capstone Project Lifecycle](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-16-capstone.png)
+![Capstone Project Lifecycle](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-16-capstone.png)
 
-The capstone project requires the student to produce a complete software engineering package for a specified system. The deliverables span the entire software lifecycle from planning through deployment. The recommended system for the capstone is a "Smart Campus Management System" — a platform that integrates course management, room booking, event scheduling, student services, and administrative functions for a university.
+The capstone project requires the student to produce a complete software engineering package for a specified system. The deliverables span the entire software lifecycle from planning through deployment. The recommended system for the capstone is a "Smart Campus Management System" â€” a platform that integrates course management, room booking, event scheduling, student services, and administrative functions for a university.
 
 Alternative systems may be proposed by the student with instructor approval. The project is intended to be completed over a period of eight to twelve weeks and should be undertaken in teams of three to five students. The deliverables are organised into seven phases corresponding to the major areas of software engineering covered in this textbook.
 
@@ -30,7 +30,7 @@ Project Plan Document including: project charter, WBS, estimation report, schedu
 
 - Project name and purpose
 - Business case and justification
-- Scope — what is included and excluded
+- Scope â€” what is included and excluded
 - Key stakeholders
 - Major milestones and target dates
 - Budget summary
@@ -45,7 +45,7 @@ Produce a complete Software Requirements Specification (SRS) following IEEE 830 
 
 ### Activities
 
-Identify all stakeholders including students, faculty, administrators, IT staff, and external systems. Select and apply appropriate elicitation techniques — at least two techniques must be used, such as interviews with stakeholders and a survey of potential users. Classify requirements as functional, non-functional, and domain requirements. Write each functional requirement with a unique identifier, description, and rationale. Specify non-functional requirements for usability, reliability, performance, security, maintainability, and portability with quantifiable targets. Model the requirements using UML use case diagrams with at least six use cases. Specify three use cases in full detail using the standard use case template. Develop a requirements traceability matrix. Apply MoSCoW prioritisation to all requirements.
+Identify all stakeholders including students, faculty, administrators, IT staff, and external systems. Select and apply appropriate elicitation techniques â€” at least two techniques must be used, such as interviews with stakeholders and a survey of potential users. Classify requirements as functional, non-functional, and domain requirements. Write each functional requirement with a unique identifier, description, and rationale. Specify non-functional requirements for usability, reliability, performance, security, maintainability, and portability with quantifiable targets. Model the requirements using UML use case diagrams with at least six use cases. Specify three use cases in full detail using the standard use case template. Develop a requirements traceability matrix. Apply MoSCoW prioritisation to all requirements.
 
 ### Deliverable
 
@@ -53,10 +53,10 @@ Software Requirements Specification including: introduction and scope; general d
 
 ### Template: IEEE 830 SRS Section Structure
 
-1. Introduction — Purpose, product scope, definitions, references
-2. General Description — Product perspective, user characteristics, assumptions, dependencies
-3. Specific Requirements — Functional requirements, external interface requirements, performance requirements, design constraints, quality attributes
-4. Appendices — Use case specifications, glossary, models
+1. Introduction â€” Purpose, product scope, definitions, references
+2. General Description â€” Product perspective, user characteristics, assumptions, dependencies
+3. Specific Requirements â€” Functional requirements, external interface requirements, performance requirements, design constraints, quality attributes
+4. Appendices â€” Use case specifications, glossary, models
 
 ## Phase 3: Architectural Design
 
@@ -66,7 +66,7 @@ Produce an architectural design using the Attribute-Driven Design (ADD) method.
 
 ### Activities
 
-Identify the key architectural drivers — the most significant functional and quality attribute requirements that will shape the architecture. Select architectural patterns appropriate for the system. Justify each pattern selection with reference to the architectural drivers. Decompose the system into components, assigning responsibilities to each component. Specify the interfaces between components. Document the architecture using UML component and deployment diagrams. Identify the major architectural decisions and document each using an Architecture Decision Record (ADR) template. Evaluate the architecture against the key quality attribute requirements. Address data architecture including database design and data flow.
+Identify the key architectural drivers â€” the most significant functional and quality attribute requirements that will shape the architecture. Select architectural patterns appropriate for the system. Justify each pattern selection with reference to the architectural drivers. Decompose the system into components, assigning responsibilities to each component. Specify the interfaces between components. Document the architecture using UML component and deployment diagrams. Identify the major architectural decisions and document each using an Architecture Decision Record (ADR) template. Evaluate the architecture against the key quality attribute requirements. Address data architecture including database design and data flow.
 
 ### Deliverable
 
@@ -118,7 +118,7 @@ Design and document a comprehensive testing strategy for the system.
 
 ### Activities
 
-Define the test levels — unit, integration, system, and acceptance — and specify what each level will test. Specify the testing techniques to be applied at each level, including white-box and black-box techniques. Design test cases using equivalence partitioning and boundary value analysis for at least two modules. Design test cases using decision tables for a function with complex conditional logic. Specify the test automation approach and tools. Define the regression testing strategy. Specify the non-functional testing approach for performance, security, and usability. Define entry and exit criteria for each test level. Specify defect management procedures.
+Define the test levels â€” unit, integration, system, and acceptance â€” and specify what each level will test. Specify the testing techniques to be applied at each level, including white-box and black-box techniques. Design test cases using equivalence partitioning and boundary value analysis for at least two modules. Design test cases using decision tables for a function with complex conditional logic. Specify the test automation approach and tools. Define the regression testing strategy. Specify the non-functional testing approach for performance, security, and usability. Define entry and exit criteria for each test level. Specify defect management procedures.
 
 ### Deliverable
 
@@ -127,7 +127,7 @@ Test Plan Document including: test strategy for each level; test case specificat
 ### Template: Test Case Specification
 
 Test Case ID: TC-045
-Requirement: REQ-023 — Room Booking
+Requirement: REQ-023 â€” Room Booking
 Test Level: System
 Technique: Boundary Value Analysis
 Precondition: User is authenticated as faculty
@@ -143,7 +143,7 @@ Produce a quality assurance plan covering the processes and standards that will 
 
 ### Activities
 
-Define the quality standards to which the project will conform. Specify the quality assurance activities for each phase of development — requirements reviews, design inspections, code reviews, and testing. Define quality metrics including defect density, test coverage, and defect removal efficiency targets. Specify the review and inspection process including roles, checklists, and entry/exit criteria. Define the configuration management procedures. Define the change management process. Specify the acceptance criteria for the final delivery. Define the post-deployment quality monitoring approach.
+Define the quality standards to which the project will conform. Specify the quality assurance activities for each phase of development â€” requirements reviews, design inspections, code reviews, and testing. Define quality metrics including defect density, test coverage, and defect removal efficiency targets. Specify the review and inspection process including roles, checklists, and entry/exit criteria. Define the configuration management procedures. Define the change management process. Specify the acceptance criteria for the final delivery. Define the post-deployment quality monitoring approach.
 
 ### Deliverable
 
@@ -168,7 +168,7 @@ Produce a deployment plan that describes how the system will transition from dev
 
 ### Activities
 
-Define the deployment architecture including hardware, network, and software requirements. Specify the deployment strategy — rolling, blue-green, or canary — with justification. Define the deployment pipeline with stages, tools, and triggers. Specify the rollback procedure. Define the database migration plan. Specify the data migration plan if data must be transferred from existing systems. Define the user training approach and materials. Specify the go-live procedure and criteria. Define the post-deployment monitoring and support processes. Specify the contingency plan for deployment issues.
+Define the deployment architecture including hardware, network, and software requirements. Specify the deployment strategy â€” rolling, blue-green, or canary â€” with justification. Define the deployment pipeline with stages, tools, and triggers. Specify the rollback procedure. Define the database migration plan. Specify the data migration plan if data must be transferred from existing systems. Define the user training approach and materials. Specify the go-live procedure and criteria. Define the post-deployment monitoring and support processes. Specify the contingency plan for deployment issues.
 
 ### Deliverable
 
@@ -189,13 +189,13 @@ Deployment Plan including: deployment architecture; deployment strategy; CI/CD p
 
 ## Integration and Assessment
 
-The capstone project should demonstrate the student's ability to integrate all aspects of software engineering. The deliverables will be assessed on: completeness and correctness of each artefact; consistency across artefacts — for example, that the testing strategy verifies the requirements and that the architecture realises the quality attribute requirements; justification of decisions with reference to established principles; use of appropriate standards and templates; attention to quality throughout the lifecycle; and the quality of the final software artefact.
+The capstone project should demonstrate the student's ability to integrate all aspects of software engineering. The deliverables will be assessed on: completeness and correctness of each artefact; consistency across artefacts â€” for example, that the testing strategy verifies the requirements and that the architecture realises the quality attribute requirements; justification of decisions with reference to established principles; use of appropriate standards and templates; attention to quality throughout the lifecycle; and the quality of the final software artefact.
 
 Assessment rubrics should weight each phase appropriately, with emphasis on the requirements specification, architectural design, and implementation phases. The capstone is the integrative assessment for the course and should constitute a significant proportion of the final grade.
 
 ## Summary
 
-The capstone project integrates all knowledge areas covered in this textbook. Students plan the project, specify requirements, design the architecture, implement a subsystem, develop a testing strategy, create a quality assurance plan, and formulate a deployment plan. The consistent thread across all phases is the application of software engineering discipline — systematic processes, reasoned decisions, documented artefacts, and attention to quality. Successful completion of the capstone demonstrates competency in the core practices of professional software engineering.
+The capstone project integrates all knowledge areas covered in this textbook. Students plan the project, specify requirements, design the architecture, implement a subsystem, develop a testing strategy, create a quality assurance plan, and formulate a deployment plan. The consistent thread across all phases is the application of software engineering discipline â€” systematic processes, reasoned decisions, documented artefacts, and attention to quality. Successful completion of the capstone demonstrates competency in the core practices of professional software engineering.
 
 ---
 

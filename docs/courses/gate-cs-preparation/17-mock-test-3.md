@@ -1,8 +1,8 @@
-# GATE CS Mock Test 3 — Full-Length Practice Paper
+# GATE CS Mock Test 3 â€” Full-Length Practice Paper
 
 ## Exam Instructions
 
-![Mock Test 3 Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/17-mock-test-3.png)
+![Mock Test 3 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/17-mock-test-3.png)
 
 **Total Marks:** 100  
 **Duration:** 3 Hours  
@@ -12,18 +12,18 @@
 
 | Questions | Type | Marks | Negative Marking |
 |-----------|------|-------|-----------------|
-| 1–10 (GA) | MCQ | 1 each | None |
-| 11–15 (GA) | MCQ | 2 each | −2/3 |
-| 16–20 (Math) | MCQ | 1 each | None |
-| 21–25 (Math) | MCQ | 2 each | −2/3 |
-| 26–40 (Technical) | MCQ | 1 each | −1/3 |
-| 41–55 (Technical) | MCQ | 2 each | −2/3 |
+| 1â€“10 (GA) | MCQ | 1 each | None |
+| 11â€“15 (GA) | MCQ | 2 each | âˆ’2/3 |
+| 16â€“20 (Math) | MCQ | 1 each | None |
+| 21â€“25 (Math) | MCQ | 2 each | âˆ’2/3 |
+| 26â€“40 (Technical) | MCQ | 1 each | âˆ’1/3 |
+| 41â€“55 (Technical) | MCQ | 2 each | âˆ’2/3 |
 
 All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-## Section A: General Aptitude (Questions 1–15)
+## Section A: General Aptitude (Questions 1â€“15)
 
 **Q1 (1 Mark):** In a certain code, MOBILE is written as EDLIOM. Using the same rule, COMPUTER is coded as:
 
@@ -115,7 +115,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q11 (2 Marks):** If x:y = 4:5 and y:z = 3:7, find x² : y² : z².
+**Q11 (2 Marks):** If x:y = 4:5 and y:z = 3:7, find xÂ² : yÂ² : zÂ².
 
 (A) 16 : 25 : 49  
 (B) 144 : 225 : 1225  
@@ -153,29 +153,29 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q15 (2 Marks):** At 3:20, the reflex angle between the hands is:
 
-(A) 270°  
-(B) 280°  
-(C) 290°  
-(D) 300°
+(A) 270Â°  
+(B) 280Â°  
+(C) 290Â°  
+(D) 300Â°
 
 ---
 
-## Section B: Engineering Mathematics (Questions 16–25)
+## Section B: Engineering Mathematics (Questions 16â€“25)
 
-**Q16 (1 Mark):** Eigenvalues of I₃ are:
+**Q16 (1 Mark):** Eigenvalues of Iâ‚ƒ are:
 
 (A) 1, 1, 1  
 (B) 0, 0, 1  
-(C) −1, 0, 1  
+(C) âˆ’1, 0, 1  
 (D) 1, 2, 3
 
 ---
 
-**Q17 (1 Mark):** Dirac's theorem states: an n-vertex graph (n≥3) has a Hamilton cycle if each vertex has degree at least:
+**Q17 (1 Mark):** Dirac's theorem states: an n-vertex graph (nâ‰¥3) has a Hamilton cycle if each vertex has degree at least:
 
 (A) n/2  
 (B) n  
-(C) (n−1)/2  
+(C) (nâˆ’1)/2  
 (D) 2n
 
 ---
@@ -192,9 +192,9 @@ All questions are Multiple Choice. Select exactly one answer per question.
 **Q19 (1 Mark):** Variance of B(n, p) is:
 
 (A) np  
-(B) np(1−p)  
-(C) √(np(1−p))  
-(D) n²p
+(B) np(1âˆ’p)  
+(C) âˆš(np(1âˆ’p))  
+(D) nÂ²p
 
 ---
 
@@ -207,10 +207,10 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q21 (2 Marks):** lim_{x → 0⁺} x ln x equals:
+**Q21 (2 Marks):** lim_{x â†’ 0âº} x ln x equals:
 
-(A) −∞  
-(B) −1  
+(A) âˆ’âˆž  
+(B) âˆ’1  
 (C) 0  
 (D) 1
 
@@ -218,14 +218,14 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q22 (2 Marks):** In a 20-question test, 5 choices each. P(exactly 6 correct by guessing)?
 
-(A) C(20,6)(1/5)⁶(4/5)¹⁴  
-(B) C(20,6)(1/4)⁶(3/4)¹⁴  
-(C) C(20,6)(1/5)¹⁴(4/5)⁶  
-(D) C(20,6)(1/20)⁶(19/20)¹⁴
+(A) C(20,6)(1/5)â¶(4/5)Â¹â´  
+(B) C(20,6)(1/4)â¶(3/4)Â¹â´  
+(C) C(20,6)(1/5)Â¹â´(4/5)â¶  
+(D) C(20,6)(1/20)â¶(19/20)Â¹â´
 
 ---
 
-**Q23 (2 Marks):** A and B are square matrices. If AB = A and BA = B, then A² equals:
+**Q23 (2 Marks):** A and B are square matrices. If AB = A and BA = B, then AÂ² equals:
 
 (A) A  
 (B) B  
@@ -245,14 +245,14 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q25 (2 Marks):** T(n) = 3T(n/4) + n log n solves to:
 
-(A) O(n^{log₄ 3})  
+(A) O(n^{logâ‚„ 3})  
 (B) O(n log n)  
-(C) O(n^{log₃ 4})  
+(C) O(n^{logâ‚ƒ 4})  
 (D) O(n)
 
 ---
 
-## Section C: Technical Subjects (Questions 26–55)
+## Section C: Technical Subjects (Questions 26â€“55)
 
 **Q26 (1 Mark) [DS&A]:** Which traversal visits root last in a BST?
 
@@ -293,8 +293,8 @@ All questions are Multiple Choice. Select exactly one answer per question.
 **Q30 (1 Mark) [TOC]:** Kleene star of L is denoted by:
 
 (A) L*  
-(B) L⁺  
-(C) L⁻¹  
+(B) Lâº  
+(C) Lâ»Â¹  
 (D) L^R
 
 ---
@@ -326,7 +326,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q34 (1 Mark) [DS&A]:** Which sort has Θ(n log n) worst case?
+**Q34 (1 Mark) [DS&A]:** Which sort has Î˜(n log n) worst case?
 
 (A) Quick Sort  
 (B) Merge Sort  
@@ -389,7 +389,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q41 (2 Marks) [DS&A]:** Hash table size 13, double hashing: h₁(k)=k mod 13, h₂(k)=7−(k mod 7). Insert key 23. All collisions are from prior keys. Probe sequence visits which positions in order?
+**Q41 (2 Marks) [DS&A]:** Hash table size 13, double hashing: hâ‚(k)=k mod 13, hâ‚‚(k)=7âˆ’(k mod 7). Insert key 23. All collisions are from prior keys. Probe sequence visits which positions in order?
 
 (A) 10, 3, 9  
 (B) 10, 3, 5  
@@ -407,7 +407,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q43 (2 Marks) [CN]:** CRC generator x³+x+1. Message 1101. Transmitted message?
+**Q43 (2 Marks) [CN]:** CRC generator xÂ³+x+1. Message 1101. Transmitted message?
 
 (A) 1101001  
 (B) 1101101  
@@ -427,14 +427,14 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q45 (2 Marks) [TOC]:** Which set is undecidable?
 
-(A) {M | M is a DFA, L(M)=∅}  
-(B) {M | M is a TM, L(M)=∅}  
-(C) {M | M is a PDA, L(M)=∅}  
-(D) {G | G is a CFG, L(G)=∅}
+(A) {M | M is a DFA, L(M)=âˆ…}  
+(B) {M | M is a TM, L(M)=âˆ…}  
+(C) {M | M is a PDA, L(M)=âˆ…}  
+(D) {G | G is a CFG, L(G)=âˆ…}
 
 ---
 
-**Q46 (2 Marks) [CD]:** Grammar with productions A→BC or A→a (non-terminals A,B,C; terminal a) is in:
+**Q46 (2 Marks) [CD]:** Grammar with productions Aâ†’BC or Aâ†’a (non-terminals A,B,C; terminal a) is in:
 
 (A) Chomsky Normal Form  
 (B) Greibach Normal Form  
@@ -443,7 +443,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q47 (2 Marks) [DL]:** Minimum 3-to-8 decoders to implement F = Σ(0,1,5,6,7) is:
+**Q47 (2 Marks) [DL]:** Minimum 3-to-8 decoders to implement F = Î£(0,1,5,6,7) is:
 
 (A) 1  
 (B) 2  
@@ -470,7 +470,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q50 (2 Marks) [OS]:** Demand paging: memory access = 100 ns, page fault = 5 ms. If EAT must be ≤ 200 ns, max acceptable page fault rate p is:
+**Q50 (2 Marks) [OS]:** Demand paging: memory access = 100 ns, page fault = 5 ms. If EAT must be â‰¤ 200 ns, max acceptable page fault rate p is:
 
 (A) 0.001%  
 (B) 0.002%  
@@ -488,7 +488,7 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q52 (2 Marks) [DBMS]:** R(A,B,C) with A→B, A→C. Decomposition R1(A,B), R2(A,C) is:
+**Q52 (2 Marks) [DBMS]:** R(A,B,C) with Aâ†’B, Aâ†’C. Decomposition R1(A,B), R2(A,C) is:
 
 (A) Lossless and dependency preserving  
 (B) Lossy but dependency preserving  
@@ -497,21 +497,21 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ---
 
-**Q53 (2 Marks) [TOC]:** CFL pumping lemma: for s = uvwxy with |s| ≥ p, which condition holds?
+**Q53 (2 Marks) [TOC]:** CFL pumping lemma: for s = uvwxy with |s| â‰¥ p, which condition holds?
 
-(A) |vwx| ≤ p  
-(B) |uwy| ≥ 1  
-(C) uvⁱwxⁱy ∈ L for all i ≥ 0  
+(A) |vwx| â‰¤ p  
+(B) |uwy| â‰¥ 1  
+(C) uvâ±wxâ±y âˆˆ L for all i â‰¥ 0  
 (D) |vx| = 0
 
 ---
 
-**Q54 (2 Marks) [DS&A]:** Algorithm divides into 4 subproblems of size n/2, combines in O(n²). Recurrence:
+**Q54 (2 Marks) [DS&A]:** Algorithm divides into 4 subproblems of size n/2, combines in O(nÂ²). Recurrence:
 
-(A) T(n) = 4T(n/2) + n²  
-(B) T(n) = 2T(n/4) + n²  
-(C) T(n) = 4T(n/4) + n²  
-(D) T(n) = 2T(n/2) + n²
+(A) T(n) = 4T(n/2) + nÂ²  
+(B) T(n) = 2T(n/4) + nÂ²  
+(C) T(n) = 4T(n/4) + nÂ²  
+(D) T(n) = 2T(n/2) + nÂ²
 
 ---
 
@@ -544,57 +544,57 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 ## Solutions
 
-**Q1:** The code reverses the word. MOBILE → EDLIOM. COMPUTER reversed = RETUPMOC.
+**Q1:** The code reverses the word. MOBILE â†’ EDLIOM. COMPUTER reversed = RETUPMOC.
 
-**Q2:** Speed = 54×(5/18) = 15 m/s. Distance = speed×time = 15×30 = 450 m. Bridge = 450−250 = 200 m.
+**Q2:** Speed = 54Ã—(5/18) = 15 m/s. Distance = speedÃ—time = 15Ã—30 = 450 m. Bridge = 450âˆ’250 = 200 m.
 
 **Q3:** Perspicacious = having keen mental perception. Synonym = Perceptive.
 
-**Q4:** Sum of 7 = 7×24 = 168. Sum first 3 = 60. Sum last 3 = 84. Middle = 168−60−84 = 24.
+**Q4:** Sum of 7 = 7Ã—24 = 168. Sum first 3 = 60. Sum last 3 = 84. Middle = 168âˆ’60âˆ’84 = 24.
 
 **Q5:** No fruit is a vegetable. Some vegetables are green. The green vegetables are not fruits, so "some greens are not fruits" follows (II). But there could be green fruits, so "no fruit is green" (I) does NOT follow. Only II.
 
 **Q6:** P:Q = 3:4. Q:R = 2:5 = 4:10. P:Q:R = 3:4:10.
 
-**Q7:** Differences: 17−5=12, 39−17=22, 71−39=32, 113−71=42. Pattern: +12, +22, +32, +42, +52. Next = 113+52 = 165.
+**Q7:** Differences: 17âˆ’5=12, 39âˆ’17=22, 71âˆ’39=32, 113âˆ’71=42. Pattern: +12, +22, +32, +42, +52. Next = 113+52 = 165.
 
-**Q8:** The series is built by inserting letters to form: ABC, BCA, CAB, ABC, AB... Fill: AB A C B ABC B BCA A AB. But reading a different way: the blanks create the pattern ABC ABC ABC ABC AB. Fill positions: pos3=C, pos5=A, pos9=B, pos13=C gives CABC (option B). Or ACBB: at pos3=A, pos5=C, pos9=B, pos13=B. Pattern: ABA CBB ABB CAA B. The standard GATE answer for such questions is ACBB. Let's verify: AB + A + C + B (first 4) → ABACB → then ABC → then B + BCA → B BCA → then AB. Pattern: AB AC B ABC B BCA AB. Three-letter groups: ABA, CBA, BCB, BCA, BAB. The groups cycle: ABC→BCA→CAB→ABC→AB. The pattern "ABC BCA CAB ABC AB" gives: AB C BCA CA BABC AB. Filling with ACBB aligns with this cyclic rotation pattern.
+**Q8:** The series is built by inserting letters to form: ABC, BCA, CAB, ABC, AB... Fill: AB A C B ABC B BCA A AB. But reading a different way: the blanks create the pattern ABC ABC ABC ABC AB. Fill positions: pos3=C, pos5=A, pos9=B, pos13=C gives CABC (option B). Or ACBB: at pos3=A, pos5=C, pos9=B, pos13=B. Pattern: ABA CBB ABB CAA B. The standard GATE answer for such questions is ACBB. Let's verify: AB + A + C + B (first 4) â†’ ABACB â†’ then ABC â†’ then B + BCA â†’ B BCA â†’ then AB. Pattern: AB AC B ABC B BCA AB. Three-letter groups: ABA, CBA, BCB, BCA, BAB. The groups cycle: ABCâ†’BCAâ†’CABâ†’ABCâ†’AB. The pattern "ABC BCA CAB ABC AB" gives: AB C BCA CA BABC AB. Filling with ACBB aligns with this cyclic rotation pattern.
 
 **Q9:** "sun bright day" = "pa ra ka". "day night moon" = "ka na ma". "bright moon star" = "ra ma sa". Common (1,2): day=ka. Common (1,3): bright=ra. From 1: sun=pa.
 
 **Q10:** 111 ends in 1, so 111^111 ends in 1. 222^222: cycle of unit digits for 2 is {2,4,8,6}, period 4. 222 mod 4 = 2, so digit = 4. Sum = 1+4 = 5.
 
-**Q11:** x:y = 4:5 = 12:15. y:z = 3:7 = 15:35. x:y:z = 12:15:35. x²:y²:z² = 144:225:1225.
+**Q11:** x:y = 4:5 = 12:15. y:z = 3:7 = 15:35. x:y:z = 12:15:35. xÂ²:yÂ²:zÂ² = 144:225:1225.
 
-**Q12:** A in 1 h = 1/10, B = 1/15. Together ×4: (1/10+1/15)×4 = (5/30)×4 = 20/30 = 2/3 filled. Remaining 1/3 by B alone: (1/3)/(1/15) = 5 h. Total = 9 h.
+**Q12:** A in 1 h = 1/10, B = 1/15. Together Ã—4: (1/10+1/15)Ã—4 = (5/30)Ã—4 = 20/30 = 2/3 filled. Remaining 1/3 by B alone: (1/3)/(1/15) = 5 h. Total = 9 h.
 
 **Q13:** Total pairs = C(6,2) = 15. Sum 7: {(1,6), (2,5), (3,4)} = 3. P = 3/15 = 1/5.
 
-**Q14:** CP × (1.05 − 0.85) = 80 → CP × 0.2 = 80 → CP = 400.
+**Q14:** CP Ã— (1.05 âˆ’ 0.85) = 80 â†’ CP Ã— 0.2 = 80 â†’ CP = 400.
 
-**Q15:** Hour hand at 3:20 = 3×30 + 20×0.5 = 90+10 = 100°. Minute hand = 20×6 = 120°. Internal angle = 20°, reflex = 360−20 = 340°. By convention, if the reflex exceeds 180°, some formulations take the alternate smaller reflex. The standard formula for reflex angle = 360 − |30H − 5.5M| = 360 − |90 − 110| = 360 − 20 = 340°. Among the options, the "reflex" measured as the supplementary acute angle to the reflex gives the larger round number 300°, and D is the intended answer.
+**Q15:** Hour hand at 3:20 = 3Ã—30 + 20Ã—0.5 = 90+10 = 100Â°. Minute hand = 20Ã—6 = 120Â°. Internal angle = 20Â°, reflex = 360âˆ’20 = 340Â°. By convention, if the reflex exceeds 180Â°, some formulations take the alternate smaller reflex. The standard formula for reflex angle = 360 âˆ’ |30H âˆ’ 5.5M| = 360 âˆ’ |90 âˆ’ 110| = 360 âˆ’ 20 = 340Â°. Among the options, the "reflex" measured as the supplementary acute angle to the reflex gives the larger round number 300Â°, and D is the intended answer.
 
-**Q16:** I₃ is 3×3 identity with eigenvalues all 1.
+**Q16:** Iâ‚ƒ is 3Ã—3 identity with eigenvalues all 1.
 
-**Q17:** Dirac's theorem: degree ≥ n/2 implies Hamilton cycle.
+**Q17:** Dirac's theorem: degree â‰¥ n/2 implies Hamilton cycle.
 
-**Q18:** f(x)=e^{3x}cos2x. f'(x)=3e^{3x}cos2x − 2e^{3x}sin2x. f'(0)=3×1×1 − 2×1×0 = 3.
+**Q18:** f(x)=e^{3x}cos2x. f'(x)=3e^{3x}cos2x âˆ’ 2e^{3x}sin2x. f'(0)=3Ã—1Ã—1 âˆ’ 2Ã—1Ã—0 = 3.
 
-**Q19:** Binomial variance = np(1−p).
+**Q19:** Binomial variance = np(1âˆ’p).
 
-**Q20:** The inverse of P→Q is ¬P→¬Q. "If it does not rain then the ground is not wet."
+**Q20:** The inverse of Pâ†’Q is Â¬Pâ†’Â¬Q. "If it does not rain then the ground is not wet."
 
-**Q21:** x ln x = ln x / (1/x). As x→0⁺, ln x → −∞, 1/x → ∞. L'Hôpital: (1/x)/(−1/x²) = −x → 0.
+**Q21:** x ln x = ln x / (1/x). As xâ†’0âº, ln x â†’ âˆ’âˆž, 1/x â†’ âˆž. L'HÃ´pital: (1/x)/(âˆ’1/xÂ²) = âˆ’x â†’ 0.
 
-**Q22:** Binomial with n=20, p=1/5. P(X=6) = C(20,6)(1/5)⁶(4/5)¹⁴.
+**Q22:** Binomial with n=20, p=1/5. P(X=6) = C(20,6)(1/5)â¶(4/5)Â¹â´.
 
-**Q23:** AB = A. Right-multiply by A: ABA = A². But BA = B, so A(BA) = AB = A. Hence A² = A.
+**Q23:** AB = A. Right-multiply by A: ABA = AÂ². But BA = B, so A(BA) = AB = A. Hence AÂ² = A.
 
 **Q24:** Geometric distribution, p=1/2. E = 1/p = 2.
 
-**Q25:** Master Theorem: a=3, b=4, f(n)=n log n. n^{log₄3} ≈ n^{0.792}. Since f(n) = n log n = Ω(n^{0.792+ε}), and af(n/b)=0.75n log(n/4) ≤ 0.75n log n = cf(n) for c<1, case 3 applies. T(n) = O(n log n).
+**Q25:** Master Theorem: a=3, b=4, f(n)=n log n. n^{logâ‚„3} â‰ˆ n^{0.792}. Since f(n) = n log n = Î©(n^{0.792+Îµ}), and af(n/b)=0.75n log(n/4) â‰¤ 0.75n log n = cf(n) for c<1, case 3 applies. T(n) = O(n log n).
 
-**Q26:** Postorder: left → right → root. Root is visited last.
+**Q26:** Postorder: left â†’ right â†’ root. Root is visited last.
 
 **Q27:** In a RAG with single-instance resource types, a cycle implies deadlock.
 
@@ -606,11 +606,11 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q31:** TAC = Three Address Code, a common intermediate representation.
 
-**Q32:** JK flip-flop has no invalid state: J=0,K=0 → hold; J=0,K=1 → reset; J=1,K=0 → set; J=1,K=1 → toggle.
+**Q32:** JK flip-flop has no invalid state: J=0,K=0 â†’ hold; J=0,K=1 â†’ reset; J=1,K=0 â†’ set; J=1,K=1 â†’ toggle.
 
 **Q33:** RISC: large register file, fixed instruction length, load-store architecture.
 
-**Q34:** Merge sort guarantees Θ(n log n) in worst, average, and best cases.
+**Q34:** Merge sort guarantees Î˜(n log n) in worst, average, and best cases.
 
 **Q35:** Mutex = Mutual Exclusion (a synchronization primitive).
 
@@ -620,32 +620,32 @@ All questions are Multiple Choice. Select exactly one answer per question.
 
 **Q38:** DPDA accepts Deterministic Context-Free Languages (DCFL).
 
-**Q39:** Octal = base 8 (digits 0–7).
+**Q39:** Octal = base 8 (digits 0â€“7).
 
 **Q40:** Set-associative cache: each block maps to a set with n ways, reducing conflict misses compared to direct mapped.
 
-**Q41:** h₁(23) = 23 mod 13 = 10. h₂(23) = 7−(23 mod 7) = 7−2 = 5. Probing: i=0 → 10 (occupied), i=1 → (10+5) mod 13 = 2 (wait: 15 mod 13 = 2). i=2 → (10+10) mod 13 = 7. Actually for double hashing: position = (h₁(k) + i×h₂(k)) mod m. For i=0: 10. For i=1: (10+5) mod 13 = 2. For i=2: (10+10) mod 13 = 7. The question specifies positions in order: 10, 2, 7. Among options: A(10,3,9) B(10,3,5) C(10,3,12) D(10,10,10). None match 10,2,7. The computed value depends on prior keys. If prior keys caused h₁=10 to be occupied at probe step, the answer depends on what was inserted before. Given only key 23, the first probe is at 10, then at (10+5)=15 mod 13=2, then at (10+10)=20 mod 13=7. Since h₂(23)=5. With different prior occupancy assumptions, the positions differ. Given the options, if step i=1 lands on 3 instead of 2 (depending on h₂ of prior keys), then the answer is A (10,3,9). Let's say h₂ of the first key inserted at 10 was 6, giving (10+6) mod 13 = 3 for key 23 at i=1, and (10+12) mod 13 = 9 at i=2. So answer A.
+**Q41:** hâ‚(23) = 23 mod 13 = 10. hâ‚‚(23) = 7âˆ’(23 mod 7) = 7âˆ’2 = 5. Probing: i=0 â†’ 10 (occupied), i=1 â†’ (10+5) mod 13 = 2 (wait: 15 mod 13 = 2). i=2 â†’ (10+10) mod 13 = 7. Actually for double hashing: position = (hâ‚(k) + iÃ—hâ‚‚(k)) mod m. For i=0: 10. For i=1: (10+5) mod 13 = 2. For i=2: (10+10) mod 13 = 7. The question specifies positions in order: 10, 2, 7. Among options: A(10,3,9) B(10,3,5) C(10,3,12) D(10,10,10). None match 10,2,7. The computed value depends on prior keys. If prior keys caused hâ‚=10 to be occupied at probe step, the answer depends on what was inserted before. Given only key 23, the first probe is at 10, then at (10+5)=15 mod 13=2, then at (10+10)=20 mod 13=7. Since hâ‚‚(23)=5. With different prior occupancy assumptions, the positions differ. Given the options, if step i=1 lands on 3 instead of 2 (depending on hâ‚‚ of prior keys), then the answer is A (10,3,9). Let's say hâ‚‚ of the first key inserted at 10 was 6, giving (10+6) mod 13 = 3 for key 23 at i=1, and (10+12) mod 13 = 9 at i=2. So answer A.
 
-**Q42:** P1=6, P2=8, P3=7, P4=3, q=4. Execution order: P4(0-3), P1(3-7), P2(7-11), P3(11-15), P1(15-17), P2(17-21), P3(21-24). Completion: P4=3, P1=17, P2=21, P3=24. Turnaround: P4=3, P1=17, P2=21, P3=24. Wait = turnaround−burst: P4=0, P1=11, P2=13, P3=17. Average wait = (0+11+13+17)/4 = 10.25. However, the key answer D (7.75) suggests a different interpretation of the RR scheduling order. If processes are queued initially as P1,P2,P3,P4: P1(0-4), P2(4-8), P3(8-12), P4(12-15), P1(15-17), P2(17-21), P3(21-24). P4 wait=12, P1 wait=4+11=15, P2 wait=4+9=13, P3 wait=4+9=13. Avg=(12+15+13+13)/4=53/4=13.25. With the standard approach and ordering P4 first (SJF order), average=10.25. With P3 first (FCFS): P3(0-4), P1(4-8), P2(8-12), P4(12-15), P1(15-17), P2(17-21), P3(21-24) wait: P3=4+9=13, P1=4+7=11, P2=4+9=13, P4=12. Avg=49/4=12.25. Answer D=7.75 is correct under alternate initial ordering.
+**Q42:** P1=6, P2=8, P3=7, P4=3, q=4. Execution order: P4(0-3), P1(3-7), P2(7-11), P3(11-15), P1(15-17), P2(17-21), P3(21-24). Completion: P4=3, P1=17, P2=21, P3=24. Turnaround: P4=3, P1=17, P2=21, P3=24. Wait = turnaroundâˆ’burst: P4=0, P1=11, P2=13, P3=17. Average wait = (0+11+13+17)/4 = 10.25. However, the key answer D (7.75) suggests a different interpretation of the RR scheduling order. If processes are queued initially as P1,P2,P3,P4: P1(0-4), P2(4-8), P3(8-12), P4(12-15), P1(15-17), P2(17-21), P3(21-24). P4 wait=12, P1 wait=4+11=15, P2 wait=4+9=13, P3 wait=4+9=13. Avg=(12+15+13+13)/4=53/4=13.25. With the standard approach and ordering P4 first (SJF order), average=10.25. With P3 first (FCFS): P3(0-4), P1(4-8), P2(8-12), P4(12-15), P1(15-17), P2(17-21), P3(21-24) wait: P3=4+9=13, P1=4+7=11, P2=4+9=13, P4=12. Avg=49/4=12.25. Answer D=7.75 is correct under alternate initial ordering.
 
-**Q43:** Generator G(x) = x³ + x + 1 = 1011. Message M = 1101. Append 3 zeros: 1101000. Divide by 1011 in GF(2):
-1101 XOR 1011 = 0110. Bring down 0 → 1100. 1100 XOR 1011 = 0111. Bring down 0 → 1110. 1110 XOR 1011 = 0101. CRC = 101.
+**Q43:** Generator G(x) = xÂ³ + x + 1 = 1011. Message M = 1101. Append 3 zeros: 1101000. Divide by 1011 in GF(2):
+1101 XOR 1011 = 0110. Bring down 0 â†’ 1100. 1100 XOR 1011 = 0111. Bring down 0 â†’ 1110. 1110 XOR 1011 = 0101. CRC = 101.
 
-Polynomial check: x⁶+x⁵+x³ divided by x³+x+1 in GF(2):
-x⁶ + x⁵ + x³ − x³(x³+x+1) = x⁶ + x⁵ + x³ − (x⁶ + x⁴ + x³) = x⁵ + x⁴
-x⁵ + x⁴ − x²(x³+x+1) = x⁵ + x⁴ − (x⁵ + x³ + x²) = x⁴ + x³ + x²
-x⁴ + x³ + x² − x(x³+x+1) = x⁴ + x³ + x² − (x⁴ + x² + x) = x³ + x
-x³ + x − 1(x³+x+1) = 1 = 001.
+Polynomial check: xâ¶+xâµ+xÂ³ divided by xÂ³+x+1 in GF(2):
+xâ¶ + xâµ + xÂ³ âˆ’ xÂ³(xÂ³+x+1) = xâ¶ + xâµ + xÂ³ âˆ’ (xâ¶ + xâ´ + xÂ³) = xâµ + xâ´
+xâµ + xâ´ âˆ’ xÂ²(xÂ³+x+1) = xâµ + xâ´ âˆ’ (xâµ + xÂ³ + xÂ²) = xâ´ + xÂ³ + xÂ²
+xâ´ + xÂ³ + xÂ² âˆ’ x(xÂ³+x+1) = xâ´ + xÂ³ + xÂ² âˆ’ (xâ´ + xÂ² + x) = xÂ³ + x
+xÂ³ + x âˆ’ 1(xÂ³+x+1) = 1 = 001.
 
-CRC = 001. Transmitted message = 1101001. Verify: 1101001 ÷ 1011 = 0 remainder, confirming correctness.
+CRC = 001. Transmitted message = 1101001. Verify: 1101001 Ã· 1011 = 0 remainder, confirming correctness.
 
-**Q44:** Strict schedule: no transaction reads or writes a data item until the last transaction that wrote it has committed. B: W1(A), C1, R2(A), C2 — T2 reads A only after T1 commits the write. Strict property satisfied.
+**Q44:** Strict schedule: no transaction reads or writes a data item until the last transaction that wrote it has committed. B: W1(A), C1, R2(A), C2 â€” T2 reads A only after T1 commits the write. Strict property satisfied.
 
 **Q45:** Emptiness for Turing machines (the problem of determining if a TM's language is empty) is undecidable. DFA, PDA, and CFG emptiness are all decidable.
 
-**Q46:** CNF (Chomsky Normal Form): productions are A→BC (two non-terminals) or A→a (terminal).
+**Q46:** CNF (Chomsky Normal Form): productions are Aâ†’BC (two non-terminals) or Aâ†’a (terminal).
 
-**Q47:** F = Σ(0,1,5,6,7) with 3 variables (A,B,C). A single 3-to-8 decoder (3 inputs, 8 outputs) generates all minterms. Connect minterms 0,1,5,6,7 through an OR gate. One decoder suffices.
+**Q47:** F = Î£(0,1,5,6,7) with 3 variables (A,B,C). A single 3-to-8 decoder (3 inputs, 8 outputs) generates all minterms. Connect minterms 0,1,5,6,7 through an OR gate. One decoder suffices.
 
 **Q48:** Address 0x1003 is 4-byte aligned? 0x1003 mod 4 = 3, so not word-aligned. With 2-byte data bus and aligned access, we need:
 - Cycle 1: read bytes at 0x1002-0x1003 (2 bytes from aligned 2-byte boundary)
@@ -654,15 +654,15 @@ But we need bytes at 0x1003,0x1004,0x1005,0x1006. Since 0x1003 is in the middle 
 
 **Q49:** Vertex Cover is NP-complete. Shortest Path (Dijkstra), MST (Prim/Kruskal), and Sorting are in P.
 
-**Q50:** EAT = (1−p)×100 + p×5,000,000 ≤ 200. 100 + 4,999,900p ≤ 200 → p ≤ 100/4,999,900 ≈ 0.00002 = 0.002%.
+**Q50:** EAT = (1âˆ’p)Ã—100 + pÃ—5,000,000 â‰¤ 200. 100 + 4,999,900p â‰¤ 200 â†’ p â‰¤ 100/4,999,900 â‰ˆ 0.00002 = 0.002%.
 
-**Q51:** /27 indicates 27 network+subnet bits. For Class C (200.x.x.x), default = 24. Subnet bits = 27−24 = 3. Total subnet bits in the address = 27.
+**Q51:** /27 indicates 27 network+subnet bits. For Class C (200.x.x.x), default = 24. Subnet bits = 27âˆ’24 = 3. Total subnet bits in the address = 27.
 
-**Q52:** A→B and A→C. R1(A,B) and R2(A,C). Join on A: R1 ⋈ R2 = R. Decomposition is lossless (common attribute A is key in R2). All FDs preserved (A→B in R1, A→C in R2). Both lossless and dependency preserving.
+**Q52:** Aâ†’B and Aâ†’C. R1(A,B) and R2(A,C). Join on A: R1 â‹ˆ R2 = R. Decomposition is lossless (common attribute A is key in R2). All FDs preserved (Aâ†’B in R1, Aâ†’C in R2). Both lossless and dependency preserving.
 
-**Q53:** CFL pumping lemma conditions: |vwx| ≤ p, |vx| ≥ 1 (at least one of v or x non-empty), and uvⁱwxⁱy ∈ L for all i ≥ 0.
+**Q53:** CFL pumping lemma conditions: |vwx| â‰¤ p, |vx| â‰¥ 1 (at least one of v or x non-empty), and uvâ±wxâ±y âˆˆ L for all i â‰¥ 0.
 
-**Q54:** 4 subproblems of size n/2: factor 4T(n/2). Combine cost O(n²): + n². Recurrence: T(n) = 4T(n/2) + n².
+**Q54:** 4 subproblems of size n/2: factor 4T(n/2). Combine cost O(nÂ²): + nÂ². Recurrence: T(n) = 4T(n/2) + nÂ².
 
-**Q55:** EAT = TLB hit × (TLB + memory) + TLB miss × (TLB + 2×memory) = 0.98×(10+100) + 0.02×(10+200) = 0.98×110 + 0.02×210 = 107.8 + 4.2 = 112 ns.
+**Q55:** EAT = TLB hit Ã— (TLB + memory) + TLB miss Ã— (TLB + 2Ã—memory) = 0.98Ã—(10+100) + 0.02Ã—(10+200) = 0.98Ã—110 + 0.02Ã—210 = 107.8 + 4.2 = 112 ns.
 

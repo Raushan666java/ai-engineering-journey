@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Cloud Networking](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch16-cloud-networking.png)
+![Cloud Networking](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch16-cloud-networking.png)
 
 1. Describe the architecture of Virtual Private Clouds and network isolation mechanisms.
 2. Compare load balancer types: Application Load Balancer, Network Load Balancer, and classic load balancer.
@@ -46,8 +46,8 @@ Load balancers distribute incoming traffic across multiple targets (EC2 instance
 
 ALB operates at Layer 7 (HTTP/HTTPS). Features:
 
-- Path-based routing: `/api/*` → target group A, `/static/*` → target group B.
-- Host-based routing: `api.example.com` → target group A, `www.example.com` → target group B.
+- Path-based routing: `/api/*` â†’ target group A, `/static/*` â†’ target group B.
+- Host-based routing: `api.example.com` â†’ target group A, `www.example.com` â†’ target group B.
 - SNI support: multiple TLS certificates per listener.
 - WebSocket and HTTP/2 support.
 - Sticky sessions (cookie-based or duration-based).
@@ -83,7 +83,7 @@ Origin servers store the definitive content. Edge nodes (points of presence, PoP
 
 ### 16.3.2 Key CDN Features
 
-**Tiered caching.** Content flows from origin → regional cache → edge cache, reducing origin load on cache misses.
+**Tiered caching.** Content flows from origin â†’ regional cache â†’ edge cache, reducing origin load on cache misses.
 
 **Cache control.** HTTP headers (Cache-Control, Expires, ETag, Last-Modified) determine caching behavior. `Cache-Control: max-age=3600` caches for one hour; `s-maxage` applies to shared caches.
 
@@ -125,7 +125,7 @@ Hybrid connectivity extends cloud networks to on-premises data centers.
 
 **Site-to-Site VPN.** IPSec tunnels over the public Internet. Lower cost but variable latency and bandwidth. Options: static routes or BGP dynamic routing.
 
-**Direct Connect / ExpressRoute.** Dedicated physical connections from on-premises to the cloud provider. Consistent latency, high bandwidth (1–100 Gbps), no Internet transit. Requires colocation or partner network.
+**Direct Connect / ExpressRoute.** Dedicated physical connections from on-premises to the cloud provider. Consistent latency, high bandwidth (1â€“100 Gbps), no Internet transit. Requires colocation or partner network.
 
 **Transit Gateway / Cloud Router.** Central hub connecting VPCs, VPNs, and Direct Connect connections. Simplifies network topology and routing.
 
@@ -139,9 +139,92 @@ Hybrid connectivity extends cloud networks to on-premises data centers.
 
 **Service mesh.** Application-level networking for microservices. Sidecar proxies (Envoy) handle service discovery, load balancing, encryption (mTLS), and observability.
 
+## ðŸ’¡ Pro Tips
+
+- **Don't use classic load balancers**: AWS CLB is legacy â€” it lacks path-based routing, SNI, and advanced health checks. Always use ALB (Layer 7) or NLB (Layer 4) for new deployments.
+- **Security groups vs NACLs**: Security groups are stateful (return traffic auto-allowed) and use allow rules only. NACLs are stateless and process rules in order. Use NACLs for subnet-level stateless filtering (e.g., block specific ports) and security groups for instance-level stateful rules.
+- **CDN cache invalidation costs**: Some CDNs charge for purge requests. Use versioned URLs (`/static/main.v2.js`) to avoid purge costs â€” change the URL path when content changes.
+- **Direct Connect is not always faster**: For small data volumes or bursty traffic, a VPN over the public internet may be sufficient. Direct Connect shines for consistent, high-bandwidth (10+ Gbps) workloads or latency-sensitive applications.
+
+## One-Sentence Takeaways
+
+- VPCs provide logically isolated cloud networks with subnets, route tables, and security groups.
+- Application Load Balancers (Layer 7) support path/host-based routing; Network Load Balancers (Layer 4) offer ultra-low latency.
+- CDNs cache content at edge nodes, reducing latency and offloading origin servers.
+- Cloud DNS routing policies include weighted, latency-based, geolocation, and failover.
+- Site-to-Site VPN uses IPSec over public internet; Direct Connect uses dedicated physical links.
+- Service mesh (Sidecar proxies) provides application-level networking for microservices.
+
+## Concept Comparison Table
+
+| Feature | Security Group | Network ACL |
+|---------|---------------|-------------|
+| Scope | Instance level (ENI) | Subnet level |
+| Statefulness | Stateful (return auto-allowed) | Stateless (both directions evaluated) |
+| Rules | Allow only | Allow and Deny |
+| Rule evaluation | All rules evaluated | Ordered list (1â€“32766) |
+| Default behavior | Deny all inbound, allow all outbound | Allow all inbound and outbound |
+
+## Quick Reference: Load Balancer Selection
+
+| Requirement | ALB (Layer 7) | NLB (Layer 4) |
+|-------------|---------------|---------------|
+| HTTP/HTTPS routing | âœ“ | âœ— |
+| Path/host-based routing | âœ“ | âœ— |
+| WebSocket support | âœ“ | âœ— |
+| gRPC support | âœ“ | âœ“ (TCP) |
+| Ultra-low latency | ~ms | ~100 Î¼s |
+| Static IP per AZ | âœ— (uses DNS) | âœ“ |
+| Client IP preservation | âœ— (X-Forwarded-For) | âœ“ |
+
+## Cross-Application Matrix
+
+| Scenario | Best Service | Why |
+|----------|-------------|-----|
+| Web app with path routing | ALB | `/api/*` â†’ servers, `/static/*` â†’ S3 |
+| Game server, low latency | NLB | Preserves client IP, 100 Î¼s latency |
+| Global static content delivery | CDN (CloudFront) | Edge caching, DDoS protection |
+| Lambda-based APIs | ALB or API Gateway | Native Lambda integration |
+| Multi-region active-active | Route53 latency routing + ALBs | Failover across regions |
+| Hybrid on-prem to cloud | Direct Connect + Transit GW | Stable latency, high bandwidth |
+
+## Chapter Quiz
+
+1. **What makes security groups stateful?**
+   - a) Rules apply to both directions
+   - b) Return traffic is automatically allowed âœ“
+   - c) They process rules in order
+   - d) They support deny rules
+
+2. **Which load balancer type provides a static IP per AZ?**
+   - a) ALB
+   - b) NLB âœ“
+   - c) CLB
+   - d) ELB
+
+3. **What does VXLAN use to identify tenant segments?**
+   - a) VLAN ID
+   - b) VNI âœ“
+   - c) GRE key
+   - d) Subnet ID
+
+4. **Which CDN feature reduces origin load?**
+   - a) Edge computing
+   - b) Tiered caching âœ“
+   - c) Dynamic acceleration
+   - d) DNS routing
+
+5. **What AWS service acts as a hub for VPC and on-premises connectivity?**
+   - a) VPC Peering
+   - b) Transit Gateway âœ“
+   - c) Direct Connect
+   - d) VPN Gateway
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
+
 ## Summary
 
-Cloud networking delivers software-defined network constructs — VPCs, subnets, route tables, and security groups — that isolate and control traffic. Load balancers distribute traffic across targets at Layers 4 and 7. CDNs cache content at edge nodes for low-latency delivery. Cloud DNS offers policy-driven routing and health monitoring. Hybrid connectivity links cloud and on-premises networks via VPN or dedicated connections.
+Cloud networking delivers software-defined network constructs â€” VPCs, subnets, route tables, and security groups â€” that isolate and control traffic. Load balancers distribute traffic across targets at Layers 4 and 7. CDNs cache content at edge nodes for low-latency delivery. Cloud DNS offers policy-driven routing and health monitoring. Hybrid connectivity links cloud and on-premises networks via VPN or dedicated connections.
 
 ## Exercises
 

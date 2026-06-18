@@ -13,7 +13,7 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
-![Trees Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/10-trees.png)
+![Trees Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/10-trees.png)
 
 ### 10.1 Definitions
 
@@ -55,7 +55,7 @@ An $m$-**ary tree** has at most $m$ children per vertex (binary if $m = 2$). It 
 A **binary search tree** is a binary tree where for each node:
 - Left subtree values < node value < right subtree values.
 
-Operations: search, insert, delete — all $O(h)$ where $h$ is the height. For a balanced BST, $h = O(\log n)$.
+Operations: search, insert, delete â€” all $O(h)$ where $h$ is the height. For a balanced BST, $h = O(\log n)$.
 
 ### 10.5 Spanning Trees
 
@@ -65,9 +65,9 @@ A **spanning tree** of a connected graph $G$ is a subgraph that is a tree and co
 
 A **minimum spanning tree** (MST) minimizes the total edge weight among all spanning trees of a weighted graph.
 
-**Prim's algorithm:** Growing tree — repeatedly add the minimum-weight edge connecting a visited vertex to an unvisited vertex. $O(m \log n)$ with binary heap.
+**Prim's algorithm:** Growing tree â€” repeatedly add the minimum-weight edge connecting a visited vertex to an unvisited vertex. $O(m \log n)$ with binary heap.
 
-**Kruskal's algorithm:** Growing forest — repeatedly add the minimum-weight edge that does not create a cycle (use union-find). $O(m \log m)$.
+**Kruskal's algorithm:** Growing forest â€” repeatedly add the minimum-weight edge that does not create a cycle (use union-find). $O(m \log m)$.
 
 **Theorem 10.5 (Cut property).** For any cut, the minimum-weight edge crossing the cut belongs to every MST.
 
@@ -83,7 +83,7 @@ A **decision tree** models a sequence of decisions, each branching on a conditio
 
 ## Examples
 
-**Example 10.1** (Tree verification). A graph with 8 vertices and 7 edges that is acyclic — is it a tree? Yes, by Theorem 10.1 (acyclic + $n-1$ edges = tree). Also verify connectivity.
+**Example 10.1** (Tree verification). A graph with 8 vertices and 7 edges that is acyclic â€” is it a tree? Yes, by Theorem 10.1 (acyclic + $n-1$ edges = tree). Also verify connectivity.
 
 **Example 10.2** (Full binary tree). A full binary tree has 6 internal vertices. How many leaves? $l = (2-1)\cdot 6 + 1 = 7$ leaves. Total vertices $= 6 + 7 = 13 = 2\cdot 6 + 1$.
 
@@ -103,11 +103,11 @@ A **decision tree** models a sequence of decisions, each branching on a conditio
 
 *Solution.* Start at $a$. Add $ac$ (2). From $\{a,c\}$, cheapest edge to $\{b,d\}$ is $bc$ (1). From $\{a,b,c\}$, cheapest to $\{d\}$ is $bd$ (3). MST: $\{ac, bc, bd\}$, total weight = 6.
 
-**Example 10.5** (Kruskal's algorithm). Same graph. Sort edges: $bc:1, ac:2, bd:3, ab:4, cd:5$. Add $bc$ (no cycle). Add $ac$ (no cycle). Add $bd$ (no cycle). Done — same MST with total weight 6.
+**Example 10.5** (Kruskal's algorithm). Same graph. Sort edges: $bc:1, ac:2, bd:3, ab:4, cd:5$. Add $bc$ (no cycle). Add $ac$ (no cycle). Add $bd$ (no cycle). Done â€” same MST with total weight 6.
 
 **Example 10.6** (Huffman coding). Symbols: A(0.4), B(0.3), C(0.2), D(0.1).
 
-*Solution.* Merge D(0.1) and C(0.2) → node (0.3). Merge (0.3) and B(0.3) → node (0.6). Merge (0.6) and A(0.4) → root (1.0). Codes: A=1, B=01, C=001, D=000. Average bits per symbol: $1\cdot 0.4 + 2\cdot 0.3 + 3\cdot 0.2 + 3\cdot 0.1 = 1.9$.
+*Solution.* Merge D(0.1) and C(0.2) â†’ node (0.3). Merge (0.3) and B(0.3) â†’ node (0.6). Merge (0.6) and A(0.4) â†’ root (1.0). Codes: A=1, B=01, C=001, D=000. Average bits per symbol: $1\cdot 0.4 + 2\cdot 0.3 + 3\cdot 0.2 + 3\cdot 0.1 = 1.9$.
 
 ## Summary
 
@@ -141,4 +141,4 @@ A **decision tree** models a sequence of decisions, each branching on a conditio
 
 ### Challenge Problem
 
-11. Prove **Cayley's formula**: the number of distinct labeled trees on $n$ vertices is $n^{n-2}$. (Hint: use Prüfer sequences — show a bijection between trees of $n$ vertices and sequences of length $n-2$ over $\{1, \ldots, n\}$.)
+11. Prove **Cayley's formula**: the number of distinct labeled trees on $n$ vertices is $n^{n-2}$. (Hint: use PrÃ¼fer sequences â€” show a bijection between trees of $n$ vertices and sequences of length $n-2$ over $\{1, \ldots, n\}$.)

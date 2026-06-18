@@ -9,14 +9,14 @@
 
 ## Theory
 
-![Singly Linked List Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch03-singly-linked-list.png)
+![Singly Linked List Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch03-singly-linked-list.png)
 
 ### Structure
 
 A singly linked list is a sequence of nodes where each node contains data and a pointer to the next node. The list is identified by a `head` pointer; the last node points to `nullptr`.
 
 ```
-head → [data|next] → [data|next] → [data|next] → nullptr
+head â†’ [data|next] â†’ [data|next] â†’ [data|next] â†’ nullptr
 ```
 
 ### Complexity Compared to Arrays
@@ -231,6 +231,87 @@ Node<T>* reverseRecursive(Node<T>* node) {
 // Usage in main:
 // list.reverseRecursive(); assigns head = reverseRecursive(head);
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **Iterative reversal is cleaner than recursive**: Three pointers (prev, curr, next) in a while loop â€” no call stack overhead, no risk of stack overflow for long lists.
+- **Always consider the empty list edge case**: Every linked list function must handle `head == nullptr`. A surprising number of bugs come from forgetting this.
+- **Floyd's cycle detection is your debugger**: If your linked code hangs, implement Tortoise and Hare. If it never terminates, there's a cycle. This catches 90% of linked-list bugs.
+- **Sentinel/dummy nodes simplify edge cases**: A dummy head node eliminates special-case code for empty lists and single-element lists in insertion and deletion functions.
+
+## One-Sentence Takeaways
+
+- Singly linked lists chain nodes with single forward pointers; access is linear.
+- Head insertion and deletion are \(O(1)\); tail insertion is \(O(1)\) only with a tail pointer.
+- Iterative reversal uses three pointers in a single \(O(n)\) pass.
+- Cycle detection with Floyd's algorithm uses fast/slow pointers.
+- Merging two sorted linked lists is \(O(n+m)\) with no extra space.
+
+## Concept Comparison Table
+
+| Operation | Array | Singly Linked List | Doubly Linked List |
+|-----------|-------|-------------------|-------------------|
+| Access by index | \(O(1)\) | \(O(n)\) | \(O(n)\) |
+| Insert at head | \(O(n)\) | \(O(1)\) | \(O(1)\) |
+| Insert at tail | \(O(1)\)* | \(O(1)\) with tail ptr | \(O(1)\) |
+| Insert in middle | \(O(n)\) | \(O(1)\) (if node known) | \(O(1)\) (if node known) |
+| Search | \(O(n)\) | \(O(n)\) | \(O(n)\) |
+| Memory per element | 0 overhead | 1 pointer | 2 pointers |
+
+## Quick Reference: Linked List Patterns
+
+| Pattern | Approach | Complexity |
+|---------|----------|------------|
+| Reverse list | 3-pointer iteration | \(O(n)\), \(O(1)\) |
+| Detect cycle | Floyd's (slow + fast) | \(O(n)\), \(O(1)\) |
+| Find middle | Slow + fast (fast 2Ã—) | \(O(n)\), \(O(1)\) |
+| Remove nth from end | Two pointers, offset by n | \(O(n)\), \(O(1)\) |
+| Merge sorted lists | Dummy head + compare | \(O(n+m)\), \(O(1)\) |
+| Palindrome check | Find middle â†’ reverse second half â†’ compare | \(O(n)\), \(O(1)\) |
+
+## Cross-Application Matrix
+
+| Application | Why Linked List |
+|-------------|----------------|
+| Undo/redo editor | Insert/delete at cursor is \(O(1)\) |
+| Hash table chaining | Head insertion for collision buckets |
+| Polynomial arithmetic | Terms of varying degree, frequent insert |
+| Memory allocator free list | Fast allocate/deallocate from head |
+| Music playlist | Add/remove songs at any position |
+
+## Chapter Quiz
+
+1. **What is the time complexity of searching for a value in a linked list?**
+   - a) \(O(1)\)
+   - b) \(O(n)\) âœ“
+   - c) \(O(\log n)\)
+   - d) \(O(n^2)\)
+
+2. **What is needed for \(O(1)\) tail insertion?**
+   - a) Dummy node
+   - b) Tail pointer âœ“
+   - c) Circular list
+   - d) Doubly linked
+
+3. **Floyd's cycle detection uses:**
+   - a) Hash table
+   - b) Slow + fast pointer âœ“
+   - c) Recursion
+   - d) Binary search
+
+4. **What is the space complexity of iterative reversal?**
+   - a) \(O(n)\)
+   - b) \(O(1)\) âœ“
+   - c) \(O(\log n)\)
+   - d) \(O(n^2)\)
+
+5. **A sentinel (dummy) node helps with:**
+   - a) Faster search
+   - b) Edge case elimination âœ“
+   - c) Less memory
+   - d) Cycle detection
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

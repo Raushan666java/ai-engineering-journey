@@ -12,7 +12,7 @@ By the conclusion of this chapter, the student will be able to: (1) identify sou
 |---------|-----------|-----------|
 | Fairness and Bias | Data/algorithmic bias, fairness definitions | Demographic parity, equalized odds |
 | Interpretability | LIME, SHAP, saliency maps | Feature attribution |
-| Privacy | Differential privacy, federated learning | ε-DP, secure aggregation |
+| Privacy | Differential privacy, federated learning | Îµ-DP, secure aggregation |
 | Security | Adversarial examples, data poisoning | Evasion attacks |
 | AI Alignment | Value learning, reward hacking | Outer/inner alignment |
 | Governance | EU AI Act, NIST AI RMF | Risk categories, compliance |
@@ -36,7 +36,7 @@ flowchart LR
 
 ## 15.1 Fairness and Bias
 
-![Ethics and Modern AI](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch15-ethics-modern.png)
+![Ethics and Modern AI](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch15-ethics-modern.png)
 
 **Algorithmic bias** occurs when an AI system systematically produces outcomes that disadvantage particular groups. Bias can enter the system at multiple points:
 
@@ -127,7 +127,7 @@ Superintelligent AI could pose existential risks (Bostrom, 2014):
 
 **US Executive Order on AI (2023):** Requires safety testing of powerful AI models, sets standards for AI security, and addresses algorithmic discrimination.
 
-> **💡 Pro Tip:** When building AI systems in regulated domains, start with the EU AI Act's risk categories. If your system is classified as High-Risk, you'll need human oversight, transparency, accuracy, and cybersecurity from day one — build these in during architecture, not as an afterthought.
+> **ðŸ’¡ Pro Tip:** When building AI systems in regulated domains, start with the EU AI Act's risk categories. If your system is classified as High-Risk, you'll need human oversight, transparency, accuracy, and cybersecurity from day one â€” build these in during architecture, not as an afterthought.
 
 ## Concept Comparison
 
@@ -135,11 +135,11 @@ Superintelligent AI could pose existential risks (Bostrom, 2014):
 |-----------|------------|:---:|-----------|
 | Fairness | Absence of systematic discrimination | Demographic parity, equal opportunity | Incompatibility theorems |
 | Interpretability | Human-understandable decisions | LIME fidelity, SHAP consistency | Accuracy-interpretability trade-off |
-| Privacy | Control over personal data | ε in differential privacy | Utility-privacy trade-off |
+| Privacy | Control over personal data | Îµ in differential privacy | Utility-privacy trade-off |
 | Accountability | Responsibility for outcomes | Audit trails, lineage | Responsibility gap |
 | Robustness | Resistance to attacks | Adversarial accuracy | Cat-and-mouse with attackers |
 
-## Quick Reference — XAI Methods
+## Quick Reference â€” XAI Methods
 
 | Method | Type | Output | Scope |
 |--------|:---:|--------|:---:|
@@ -154,11 +154,11 @@ Superintelligent AI could pose existential risks (Bostrom, 2014):
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Fairness Auditing | ✅ | ✅ | ✅ | ✅ |
-| LIME / SHAP | ✅ | ✅ | ✅ | ✅ |
-| Differential Privacy | ✅ | ✅ | ✅ | ✅ |
-| Adversarial Robustness | ✅ | ✅ | ✅ | ✅ |
-| AI Governance | ✅ | ✅ | ✅ | ✅ |
+| Fairness Auditing | âœ… | âœ… | âœ… | âœ… |
+| LIME / SHAP | âœ… | âœ… | âœ… | âœ… |
+| Differential Privacy | âœ… | âœ… | âœ… | âœ… |
+| Adversarial Robustness | âœ… | âœ… | âœ… | âœ… |
+| AI Governance | âœ… | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 

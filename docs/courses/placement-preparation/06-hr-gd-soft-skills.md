@@ -1,4 +1,4 @@
-﻿# HR Interview, Group Discussion & Soft Skills â€” Complete Campus Placement Guide
+# HR Interview, Group Discussion & Soft Skills â€” Complete Campus Placement Guide
 
 > **Target:** Campus placements â€” IT/Engineering students  
 > **Covers:** HR interview questions & answers, Group Discussion strategies, communication skills, professional presence  
@@ -17,7 +17,7 @@
 
 ## 1. HR Interview Questions
 
-![STAR Framework for HR Interviews](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch06-star-framework.png)
+![STAR Framework for HR Interviews](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch06-star-framework.png)
 
 ### 1.1 "Tell Me About Yourself" â€” Three Templates
 

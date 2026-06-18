@@ -10,8 +10,8 @@ By the conclusion of this chapter, the student will be able to: (1) describe the
 
 | Section | Key Topics | Key Terms |
 |---------|-----------|-----------|
-| RL Framework | Agent, environment, reward, γ | Policy, value, action-value |
-| Exploration vs Exploitation | ε-greedy, softmax, UCB | Exploration-exploitation dilemma |
+| RL Framework | Agent, environment, reward, Î³ | Policy, value, action-value |
+| Exploration vs Exploitation | Îµ-greedy, softmax, UCB | Exploration-exploitation dilemma |
 | Passive RL | TD learning, bootstrapping | TD error, Monte Carlo |
 | Active RL | Q-learning (off-policy), SARSA (on-policy) | Off/on-policy distinction |
 | Function Approximation | Linear approx, DQN | Experience replay, target network |
@@ -36,7 +36,7 @@ flowchart LR
 
 ## 11.1 The Reinforcement Learning Framework
 
-![Reinforcement Learning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch11-rl.png)
+![Reinforcement Learning](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch11-rl.png)
 
 Reinforcement Learning (RL) studies how an **agent** learns to make sequential decisions by interacting with an **environment**. At each discrete time step $t$, the agent observes state $S_t \in \mathcal{S}$, selects action $A_t \in \mathcal{A}$, receives reward $R_{t+1} \in \mathcal{R}$, and transitions to state $S_{t+1}$.
 
@@ -89,15 +89,15 @@ $$Q(S_t, A_t) \leftarrow Q(S_t, A_t) + \alpha [R_{t+1} + \gamma \max_a Q(S_{t+1}
 Q-learning is **off-policy**: it learns the optimal policy while following an exploratory policy (e.g., $\epsilon$-greedy).
 
 ```
-function Q-LEARNING(env, γ, α, ε, episodes) returns Q
-    Q(s, a) ← 0 for all s, a
+function Q-LEARNING(env, Î³, Î±, Îµ, episodes) returns Q
+    Q(s, a) â† 0 for all s, a
     for each episode do
-        s ← env.RESET()
+        s â† env.RESET()
         while not TERMINAL(s) do
-            a ← ε-GREEDY(s, Q, ε)
-            s', r ← env.STEP(a)
-            Q(s, a) ← Q(s, a) + α[r + γ max_{a'} Q(s', a') - Q(s, a)]
-            s ← s'
+            a â† Îµ-GREEDY(s, Q, Îµ)
+            s', r â† env.STEP(a)
+            Q(s, a) â† Q(s, a) + Î±[r + Î³ max_{a'} Q(s', a') - Q(s, a)]
+            s â† s'
     return Q
 ```
 
@@ -130,22 +130,22 @@ DQN (Mnih et al., 2015) uses a deep neural network to approximate $Q(s, a; \thet
 2. **Target network:** Maintain a separate network $Q(s, a; \theta^-)$ for computing TD targets. Periodically copy $\theta$ to $\theta^-$ to reduce moving-target instability.
 
 ```
-function DQN-TRAIN(env, buffer_size, batch_size, γ)
-    initialize Q-network with random θ
-    initialize target network θ⁻ ← θ
+function DQN-TRAIN(env, buffer_size, batch_size, Î³)
+    initialize Q-network with random Î¸
+    initialize target network Î¸â» â† Î¸
     initialize replay buffer D with capacity buffer_size
     for episode = 1 to MAX_EPISODES do
-        s ← env.RESET()
+        s â† env.RESET()
         while not TERMINAL(s) do
-            a ← ε-GREEDY(s, Q, ε)
-            s', r ← env.STEP(a)
+            a â† Îµ-GREEDY(s, Q, Îµ)
+            s', r â† env.STEP(a)
             store (s, a, r, s') in D
-            if len(D) ≥ batch_size then
+            if len(D) â‰¥ batch_size then
                 sample batch B from D
-                y_i = r_i + γ max_{a'} Q(s'_i, a'; θ⁻)
-                minimize (y_i - Q(s_i, a_i; θ))² over batch B
-            s ← s'
-        every C episodes: θ⁻ ← θ
+                y_i = r_i + Î³ max_{a'} Q(s'_i, a'; Î¸â»)
+                minimize (y_i - Q(s_i, a_i; Î¸))Â² over batch B
+            s â† s'
+        every C episodes: Î¸â» â† Î¸
 ```
 
 DQN achieved human-level performance on 49 Atari games using only pixel input and game score.
@@ -176,7 +176,7 @@ $$L^{\text{CLIP}}(\theta) = \mathbb{E}_t \left[ \min(r_t(\theta) \hat{A}_t, \tex
 
 where $r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \mid s_t)$.
 
-> **💡 Pro Tip:** Q-learning's off-policy nature makes it more sample-efficient than SARSA in deterministic environments, but SARSA's on-policy updates make it safer in risky environments — SARSA learns to avoid dangerous states that exploration might encounter.
+> **ðŸ’¡ Pro Tip:** Q-learning's off-policy nature makes it more sample-efficient than SARSA in deterministic environments, but SARSA's on-policy updates make it safer in risky environments â€” SARSA learns to avoid dangerous states that exploration might encounter.
 
 ## Concept Comparison
 
@@ -189,25 +189,25 @@ where $r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \m
 | REINFORCE | Policy-based | On-policy | Free | Local optimum | Continuous actions |
 | PPO | Actor-Critic | On-policy | Free | Stable | Complex control |
 
-## Quick Reference — RL Algorithms
+## Quick Reference â€” RL Algorithms
 
 | Algorithm | Update Rule | Key Feature |
 |-----------|-------------|-------------|
-| TD(0) | V(s) ← V(s) + α[r + γV(s') - V(s)] | Bootstrap from estimate |
-| Q-Learning | Q(s,a) ← Q(s,a) + α[r + γ max Q(s',a') - Q(s,a)] | Max over next actions |
-| SARSA | Q(s,a) ← Q(s,a) + α[r + γ Q(s',a') - Q(s,a)] | Uses actual next action |
-| DQN | Minimize (r + γ max Q(s',a';θ⁻) - Q(s,a;θ))² | Experience replay + target net |
+| TD(0) | V(s) â† V(s) + Î±[r + Î³V(s') - V(s)] | Bootstrap from estimate |
+| Q-Learning | Q(s,a) â† Q(s,a) + Î±[r + Î³ max Q(s',a') - Q(s,a)] | Max over next actions |
+| SARSA | Q(s,a) â† Q(s,a) + Î±[r + Î³ Q(s',a') - Q(s,a)] | Uses actual next action |
+| DQN | Minimize (r + Î³ max Q(s',a';Î¸â») - Q(s,a;Î¸))Â² | Experience replay + target net |
 | PPO | Clipped surrogate objective | Constrained policy updates |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Q-Learning | ⬜ | ⬜ | ⬜ | ✅ |
-| DQN | ⬜ | ✅ | ⬜ | ✅ |
-| Policy Gradients | ⬜ | ⬜ | ✅ | ✅ |
-| PPO | ⬜ | ⬜ | ✅ | ✅ |
-| Exploration Strategies | ✅ | ✅ | ✅ | ✅ |
+| Q-Learning | â¬œ | â¬œ | â¬œ | âœ… |
+| DQN | â¬œ | âœ… | â¬œ | âœ… |
+| Policy Gradients | â¬œ | â¬œ | âœ… | âœ… |
+| PPO | â¬œ | â¬œ | âœ… | âœ… |
+| Exploration Strategies | âœ… | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
@@ -233,7 +233,7 @@ where $r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \m
 - C) The value function for any policy
 - D) The convergence rate of Q-learning
 
-<details><summary>Answer</summary>B) The policy gradient theorem gives ∇J(θ) = 𝔼[∇log π(a|s) Q^π(s,a)], enabling gradient-based optimization of policy parameters.</details>
+<details><summary>Answer</summary>B) The policy gradient theorem gives âˆ‡J(Î¸) = ð”¼[âˆ‡log Ï€(a|s) Q^Ï€(s,a)], enabling gradient-based optimization of policy parameters.</details>
 
 ## 11.9 Summary
 

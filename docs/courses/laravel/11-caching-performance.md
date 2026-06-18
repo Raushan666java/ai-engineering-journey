@@ -1,4 +1,4 @@
-﻿# Chapter 11: Caching, Performance & Octane
+# Chapter 11: Caching, Performance & Octane
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Theory
 
-![Caching and Performance](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/11-caching-performance.png)
+![Caching and Performance](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/11-caching-performance.png)
 
 
 ### 11.1 Cache Drivers

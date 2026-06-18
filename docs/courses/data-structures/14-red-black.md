@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Red-Black Tree Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch14-red-black.png)
+![Red-Black Tree Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch14-red-black.png)
 
 ### Red-Black Properties
 
@@ -38,7 +38,7 @@ Deletion is more complex. When a black node is removed, the black-height propert
 
 ## Examples
 
-### Example 1: Red-Black Tree — Node and Rotations
+### Example 1: Red-Black Tree â€” Node and Rotations
 
 ```cpp
 #include <iostream>
@@ -255,14 +255,94 @@ bool verifyRBProperties(RBNode<T>* root, RBNode<T>* nil) {
 
 | Property | AVL | Red-Black |
 |----------|-----|-----------|
-| Balance | Strict (bf ≤ 1) | Relaxed (bh property) |
-| Height bound | < 1.44 log n | ≤ 2 log n |
-| Insert rotations | 1 or 2 | ≤ 2 |
-| Delete rotations | up to O(log n) | ≤ 3 |
+| Balance | Strict (bf â‰¤ 1) | Relaxed (bh property) |
+| Height bound | < 1.44 log n | â‰¤ 2 log n |
+| Insert rotations | 1 or 2 | â‰¤ 2 |
+| Delete rotations | up to O(log n) | â‰¤ 3 |
 | Search speed | Faster | Slightly slower |
 | Insert/Delete speed | Slower | Faster |
 
 Red-Black trees are preferred in language libraries (C++ `std::map`, Java `TreeMap`) where insertion and deletion frequency is high.
+
+## ðŸ’¡ Pro Tips
+
+- **The five properties reduce to one invariant**: The longest path (alternating red-black) is at most twice the shortest path (all black). This guarantees \(O(\log n)\) height.
+- **Insertion fix-up has three cases**: Case 1 (uncle is red) â†’ recolor and move up. Case 2 (uncle is black, zigzag) â†’ rotate to align. Case 3 (uncle is black, straight) â†’ rotate and recolor.
+- **Red-Black deletion is harder than insertion**: There are four deletion fix-up cases instead of three. Implementing deletion correctly is the hardest part of any Red-Black tree.
+- **`std::map` uses Red-Black trees**: C++'s standard ordered map is typically implemented as a Red-Black tree. If you don't need ordering, `std::unordered_map` (hash table) is faster.
+
+## One-Sentence Takeaways
+
+- Red-Black trees add a color bit per node with five structural properties.
+- Black-height is the number of black nodes on any root-to-leaf path.
+- The tree height is at most \(2 \log(n+1)\), ensuring \(O(\log n)\) operations.
+- Insertion fix-up uses recoloring and at most two rotations.
+- Red-Black trees have faster insertions/deletions (fewer rotations) than AVL trees.
+- C++ std::map, Java TreeMap, and Linux CF scheduler use Red-Black trees.
+
+## Concept Comparison Table
+
+| Property | Red-Black Tree | AVL Tree |
+|----------|---------------|----------|
+| Balance criteria | Color-based (5 properties) | Height balance (-1, 0, 1) |
+| Height bound | \(2 \log(n+1)\) | \(1.44 \log n\) |
+| Search speed | \(O(\log n)\) | \(O(\log n)\) â€” 30% faster typically |
+| Insert rotations | â‰¤ 2 | â‰¤ 2 |
+| Delete rotations | â‰¤ 3 | \(O(\log n)\) |
+| Memory per node | 1 bit color | Balance factor (2 bits) |
+| Library use | std::map, TreeMap | No standard library use |
+
+## Quick Reference: Red-Black Insertion Cases
+
+| Case | Uncle Color | Node Position | Action |
+|------|-------------|---------------|--------|
+| 1 | Red | Any | Recolor parent, uncle, grandparent; move up |
+| 2 | Black | Child is inside (LR or RL) | Rotate to make it outside (RL â†’ LL, LR â†’ RR) |
+| 3 | Black | Child is outside (LL or RR) | Rotate grandparent, recolor |
+
+## Cross-Application Matrix
+
+| Application | Why Red-Black |
+|-------------|--------------|
+| std::map, std::set | Ordered iteration, good balance |
+| Java TreeMap | Guaranteed log time, deletion-friendly |
+| Linux kernel (CFS) | Process scheduler needs fast insert/delete |
+| Database index (in-memory) | Good balance of all operations |
+| Computational geometry | Interval trees, segment intersection |
+
+## Chapter Quiz
+
+1. **What color must the root of a Red-Black tree be?**
+   - a) Red
+   - b) Black âœ“
+   - c) Either
+   - d) None (null)
+
+2. **What is the height bound of a Red-Black tree?**
+   - a) \(1.44 \log n\)
+   - b) \(2 \log(n+1)\) âœ“
+   - c) \(n\)
+   - d) \(\log n\)
+
+3. **How many rotations are needed for Red-Black insertion?**
+   - a) At most 2 âœ“
+   - b) At most 1
+   - c) \(O(\log n)\)
+   - d) 0
+
+4. **Which C++ standard container uses a Red-Black tree?**
+   - a) std::vector
+   - b) std::map âœ“
+   - c) std::unordered_map
+   - d) std::queue
+
+5. **Red-Black trees have ___ insert/delete rotations than AVL**
+   - a) More
+   - b) Fewer âœ“
+   - c) Same
+   - d) Zero
+
+**Answers:** 1-b, 2-b, 3-a, 4-b, 5-b
 
 ## Summary
 

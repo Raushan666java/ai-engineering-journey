@@ -14,14 +14,14 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-![Event-Driven Architecture & SAGA](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/37-event-driven-saga.png)
+![Event-Driven Architecture & SAGA](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/37-event-driven-saga.png)
 
 ### 1. Domain Events
 
-A domain event is an immutable record of something that happened in the domain that domain experts care about. It represents a fact — not a command. Domain events are named in the past tense.
+A domain event is an immutable record of something that happened in the domain that domain experts care about. It represents a fact â€” not a command. Domain events are named in the past tense.
 
 **Characteristics of good domain events:**
-- Immutable — once created, never changed
+- Immutable â€” once created, never changed
 - Named in past tense (e.g., `OrderPlaced`, `PaymentReceived`)
 - Contains all relevant data for consumers to act
 - Includes a unique identifier, timestamp, and correlation ID
@@ -171,7 +171,7 @@ public class ShippedEvent extends BaseDomainEvent {
 
 ### 2. Event Sourcing
 
-Event sourcing persists every state change as an immutable event in an append-only store. The current state — the aggregate — is reconstructed by replaying the event stream from the beginning.
+Event sourcing persists every state change as an immutable event in an append-only store. The current state â€” the aggregate â€” is reconstructed by replaying the event stream from the beginning.
 
 ```java
 // Event store interface
@@ -799,7 +799,7 @@ public class OrderQueryService {
     }
 }
 
-// Event projector — updates the read model from events
+// Event projector â€” updates the read model from events
 @Component
 public class OrderEventProjector {
 
@@ -872,16 +872,16 @@ public class OrderEventProjector {
 
 ### 4. Choreography Saga
 
-In a choreography saga, each service publishes domain events that trigger the next step. There is no central coordinator — each service knows what to do when it receives an event.
+In a choreography saga, each service publishes domain events that trigger the next step. There is no central coordinator â€” each service knows what to do when it receives an event.
 
 ```
-Order Service → publishes OrderPlacedEvent
-    ↓
-Payment Service → consumes OrderPlacedEvent → processes payment → publishes PaymentAuthorizedEvent
-    ↓
-Inventory Service → consumes PaymentAuthorizedEvent → reserves inventory → publishes InventoryReservedEvent
-    ↓
-Shipping Service → consumes InventoryReservedEvent → ships order → publishes ShippedEvent
+Order Service â†’ publishes OrderPlacedEvent
+    â†“
+Payment Service â†’ consumes OrderPlacedEvent â†’ processes payment â†’ publishes PaymentAuthorizedEvent
+    â†“
+Inventory Service â†’ consumes PaymentAuthorizedEvent â†’ reserves inventory â†’ publishes InventoryReservedEvent
+    â†“
+Shipping Service â†’ consumes InventoryReservedEvent â†’ ships order â†’ publishes ShippedEvent
 ```
 
 #### 4.1 Order Service (Choreography)
@@ -918,7 +918,7 @@ public class OrderSagaService {
         return orderId;
     }
 
-    // Compensating action — cancels order if downstream fails
+    // Compensating action â€” cancels order if downstream fails
     @Transactional
     public void cancelOrder(String orderId, String reason, String correlationId) {
         OrderAggregate aggregate = OrderAggregate.reconstruct(eventStore, orderId);
@@ -1237,7 +1237,7 @@ public class OrderSagaOrchestrator {
             stateMachine.setState(SagaState.INVENTORY_PENDING);
             stateRepository.save(stateMachine);
         } else {
-            // Saga fails — no compensation needed, nothing happened yet
+            // Saga fails â€” no compensation needed, nothing happened yet
             stateMachine.setState(SagaState.FAILED);
             stateMachine.setFailureReason(event.getFailureReason());
             stateRepository.save(stateMachine);
@@ -1500,7 +1500,7 @@ public class OrderAggregateAxon {
     }
 }
 
-// Command Gateway — send commands to aggregates
+// Command Gateway â€” send commands to aggregates
 @Service
 public class OrderAxonService {
 
@@ -1927,7 +1927,7 @@ public class SagaCompensationRegistry {
 }
 ```
 
-### 8. Complete Saga Flow — End-to-End Example
+### 8. Complete Saga Flow â€” End-to-End Example
 
 ```java
 @Service
@@ -2169,11 +2169,11 @@ Event-Driven Architecture with SAGAs provides a robust foundation for distribute
 - **Domain events** are immutable facts recording what happened. Use past-tense naming, include correlation IDs, timestamps, and version numbers.
 - **Event sourcing** stores state changes as an immutable event stream. The event store (JDBC or MongoDB) appends events with optimistic concurrency control via version checking. Aggregates are reconstructed by replaying the event stream.
 - **CQRS** separates command (write) and query (read) models. Event projectors update materialized views (read models) from the event stream, providing eventual consistency.
-- **Choreography saga** distributes coordination across services — each service publishes and listens to events. Simpler for small numbers of services, but harder to trace and manage as complexity grows.
+- **Choreography saga** distributes coordination across services â€” each service publishes and listens to events. Simpler for small numbers of services, but harder to trace and manage as complexity grows.
 - **Orchestration saga** centralizes coordination in a state machine. The orchestrator sends commands and processes replies, maintaining explicit state transitions. Easier to monitor and manage.
 - **Axon Framework** provides first-class support for aggregates (`@Aggregate`, `@CommandHandler`, `@EventSourcingHandler`), sagas (`@Saga`, `@StartSaga`, `@EndSaga`, `@SagaEventHandler`), and repositories (`EventSourcingRepository`).
 - **Compensating transactions** undo the effects of completed steps when a saga fails. Forward recovery retries the failed step; backward recovery compensates already-completed steps. Compensations must be idempotent and handle partial failures gracefully.
-- **Retry strategies** with exponential backoff are critical for compensating actions — transient failures should not cause permanent inconsistency.
+- **Retry strategies** with exponential backoff are critical for compensating actions â€” transient failures should not cause permanent inconsistency.
 
 ## Exercises
 

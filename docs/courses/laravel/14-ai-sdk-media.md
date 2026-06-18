@@ -1,4 +1,4 @@
-﻿# Chapter 14: Laravel AI SDK â€” Images, Audio, Transcriptions & Embeddings
+# Chapter 14: Laravel AI SDK â€” Images, Audio, Transcriptions & Embeddings
 
 ---
 ## Learning Objectives
@@ -12,7 +12,7 @@
 ---
 ## Theory
 
-![AI SDK Media](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/14-ai-sdk-media.png)
+![AI SDK Media](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/14-ai-sdk-media.png)
 
 
 ### 14.1 Image Generation

@@ -1,4 +1,4 @@
-﻿# Chapter 27: Healthcare AI Agents
+# Chapter 27: Healthcare AI Agents
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![Healthcare Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/27-healthcare.png)
+![Healthcare Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/27-healthcare.png)
 
 
 ### 27.1 Healthcare Data Models & Compliance (HIPAA)

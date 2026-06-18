@@ -1,5 +1,8 @@
 # Chapter 12: Pipelining
 
+> **Prereq:** Chapter 11 (ISA) â€” the pipeline stages are designed around the instruction formats and datapath.
+> **Next:** Chapter 13 (Memory Hierarchy) â€” cache design directly affects pipeline stall frequency.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -10,9 +13,35 @@ By the conclusion of this chapter, the student shall be able to:
 4. Explain branch prediction and its impact on pipeline performance
 5. Calculate pipeline speedup and analyse the effect of stalls
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Five-Stage Pipeline | IF, ID, EX, MEM, WB | Classic RISC organisation |
+| Structural Hazard | Resource conflict | Solved by adding hardware |
+| Data Hazard | RAW/WAR/WAW | Solved by forwarding + stalling |
+| Control Hazard | Branch penalty | Solved by branch prediction |
+| Speedup | Pipeline depth Ã— clock | Amdahl's law limits returns |
+
+```mermaid
+flowchart LR
+    A[IF: Fetch] --> B[ID: Decode]
+    B --> C[EX: Execute]
+    C --> D[MEM: Memory]
+    D --> E[WB: Write-Back]
+    E --> A
+    style A fill:#e1f5fe
+    style B fill:#fff3e0
+    style C fill:#c8e6c9
+    style D fill:#fce4ec
+    style E fill:#e1f5fe
+```
+
+> **One-Sentence Takeaway:** Pipelining improves throughput by overlapping instruction execution â€” but hazards (structural, data, control) reduce the ideal speedup, making forwarding and branch prediction essential for performance.
+
 ## Theory
 
-![Five-Stage RISC Pipeline and Hazards](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch12-pipelining.png)
+![Five-Stage RISC Pipeline and Hazards](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch12-pipelining.png)
 
 ### 12.1 Pipeline Concept
 
@@ -144,7 +173,7 @@ Total: 8 cycles for 3 instructions.
 - ADD: IF ID EX MEM WB (forward R1 from MEM to EX)
 - SW: IF ID EX MEM WB (forward R3 from MEM to EX)
 
-Total: 7 cycles (no stalls needed — forwarding from LW MEM stage to ADD EX stage).
+Total: 7 cycles (no stalls needed â€” forwarding from LW MEM stage to ADD EX stage).
 
 ### Example 12.2: Speedup Calculation
 
@@ -164,6 +193,31 @@ A predictor has 90% accuracy. There are 100 branches in a program, each with a 2
 **Solution**:
 Perfect predictor penalty = 0 cycles (all taken branches incur 0 penalty if correctly predicted taken).
 Actual predictor: 10% of branches mispredicted = 10 branches, each incurring 2 cycles = 20 penalty cycles.
+
+### Concept Comparison
+
+| Hazard Type | Cause | Solution | Penalty |
+|-------------|-------|----------|---------|
+| Structural | Resource conflict | Add more hardware | 1 cycle per conflict |
+| Data (RAW) | Instruction needs prior result | Forwarding + stalls | 0-2 cycles |
+| Control | Branch uncertainty | Branch prediction | 1-3 cycles per mispredict |
+
+### Quick Reference
+
+| Metric | Formula | 5-stage ideal | With hazards |
+|--------|---------|---------------|-------------|
+| Ideal CPI | 1.0 | 1.0 | â€” |
+| Speedup | Pipeline depth | 5Ã— | < 5Ã— |
+| Effective CPI | 1 + stall_fraction | 1.0 | ~1.1-1.3 |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | ARM, x86, RISC-V deep pipelines | Pipeline design determines GHz targets |
+| Embedded Systems | Short pipelines for low power | Fewer stages = lower frequency, lower power |
+| Digital Circuits | FPGA pipeline registers | Pipeline stages mapped to flip-flop chains |
+| Research | Superscalar/out-of-order | Complexity beyond in-order pipelines |
 
 ## Summary
 
@@ -206,4 +260,29 @@ Actual predictor: 10% of branches mispredicted = 10 branches, each incurring 2 c
 
 ### Challenge Problem
 
-Design a pipeline interlock unit that handles all data hazards in a 5-stage RISC pipeline. The unit must detect RAW hazards, insert stalls when forwarding cannot resolve the hazard (load-use case), and manage write-after-write hazards if out-of-order completion were allowed. Show the control logic, stall insertion mechanism, and interaction with the forwarding unit.
+Design a pipeline interlock unit that handles all data hazards in a 5-stage RISC pipeline. The unit must detect RAW hazards, insert stalls when forwarding cannot resolve the hazard (load-use case), and manage write-after-write hazards if out-of-order completion were allowed. Show the control logic, stall insertion mechanism,     and interaction with the forwarding unit.
+
+### Chapter Quiz
+
+1. Which hazard can forwarding completely eliminate?
+   - A) All RAW hazards except load-use
+   - B) All structural hazards
+   - C) All control hazards
+   - D) All WAR hazards
+
+2. A load-use hazard occurs when:
+   - A) Two loads access the same memory address
+   - B) An instruction uses the result of a load in the next cycle
+   - C) A load instruction follows a branch
+   - D) Multiple loads execute out of order
+
+3. The ideal speedup from a 5-stage pipeline is:
+   - A) 1Ã—
+   - B) 2Ã—
+   - C) 5Ã—
+   - D) 10Ã—
+
+<details>
+<summary>Answers</summary>
+1. A, 2. B, 3. C
+</details>

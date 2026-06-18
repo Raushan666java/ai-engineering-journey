@@ -1,8 +1,10 @@
 # Chapter 5: Ethernet Switching
 
+> **Prerequisites:** [Chapter 4: Medium Access Control](./04-mac.md) â€” MAC protocols and CSMA/CD | **Next:** [Chapter 6: Network Layer](./06-network-layer.md) â€” From switching to IP routing
+
 ## Learning Objectives
 
-![Ethernet Switching](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch05-ethernet-switching.png)
+![Ethernet Switching](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch05-ethernet-switching.png)
 
 1. Trace the evolution of Ethernet from 10 Mbps shared media to 100 Gbps switched networks.
 2. Explain the operation of learning bridges and transparent switching.
@@ -10,11 +12,42 @@
 4. Contrast traditional VLANs with modern VLAN trunking protocols.
 5. Analyze the role of MPLS in carrier-grade Ethernet networks.
 
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Ethernet Evolution | 10 Mbps coaxial â†’ 400 Gbps full-duplex switched | Each generation preserved frame format for backward compatibility |
+| Learning Bridges | Automatically build MAC tables by observing source addresses | Transparent â€” stations never know bridges exist |
+| Spanning Tree | Prevents broadcast storms by blocking redundant links | Convergence: STP 30-50s, RSTP 1-3s |
+| VLANs (802.1Q) | Partition switches into logical broadcast domains | 12-bit VLAN ID supports 4094 VLANs per switch |
+| MPLS | Label-based forwarding between L2 and L3 | Enables traffic engineering and L3VPN without IP lookup |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Ethernet Switching] --> B[Evolution 10Mâ†’400G]
+    A --> C[Switching Methods]
+    A --> D[Learning Bridges]
+    A --> E[STP / RSTP]
+    A --> F[VLANs & 802.1Q]
+    A --> G[LACP]
+    A --> H[MPLS]
+    C --> C1[Store-and-Forward]
+    C --> C2[Cut-Through]
+    C --> C3[Fragment-Free]
+    E --> E1[Bridge Election]
+    E --> E2[Port States]
+    E --> E3[RSTP Convergence]
+```
+
 ## 5.1 Ethernet Evolution
 
 ### 5.1.1 10 Mbps Ethernet (10Base5, 10Base2, 10BaseT)
 
-The original Ethernet standard published in 1980 by DEC, Intel, and Xerox (DIX) operated at 10 Mbps over coaxial cable. 10Base5 (thicknet) used a vampire tap to connect stations to a long coaxial segment up to 500 meters. 10Base2 (thinnet) used BNC T-connectors on thinner, more flexible RG-58 cable with 185 m segments. Both were shared-media bus topologies — all stations on a segment belonged to the same collision domain.
+The original Ethernet standard published in 1980 by DEC, Intel, and Xerox (DIX) operated at 10 Mbps over coaxial cable. 10Base5 (thicknet) used a vampire tap to connect stations to a long coaxial segment up to 500 meters. 10Base2 (thinnet) used BNC T-connectors on thinner, more flexible RG-58 cable with 185 m segments. Both were shared-media bus topologies â€” all stations on a segment belonged to the same collision domain.
 
 10BaseT introduced twisted-pair cabling and a star topology centered on a hub. Hubs were repeaters: signals received on any port were regenerated and transmitted on all other ports. While easier to cable, hubs still created a single collision domain and limited aggregate throughput to 10 Mbps.
 
@@ -28,11 +61,13 @@ Gigabit Ethernet (IEEE 802.3z, 1998; 802.3ab, 1999) pushed the data rate to 1000
 
 ### 5.1.4 10 Gigabit Ethernet
 
-10GbE (IEEE 802.3ae, 2002) is full-duplex only — CSMA/CD is disabled because switched networks make collisions irrelevant. 10GBASE-SR (short-range, 300 m MMF), 10GBASE-LR (10 km SMF), 10GBASE-ER (40 km SMF), and 10GBASE-T (Cat 6a UTP, 100 m) serve data center and metropolitan applications.
+10GbE (IEEE 802.3ae, 2002) is full-duplex only â€” CSMA/CD is disabled because switched networks make collisions irrelevant. 10GBASE-SR (short-range, 300 m MMF), 10GBASE-LR (10 km SMF), 10GBASE-ER (40 km SMF), and 10GBASE-T (Cat 6a UTP, 100 m) serve data center and metropolitan applications.
 
 ### 5.1.5 40, 100, 200, 400 Gigabit Ethernet
 
 IEEE 802.3ba (2010) defined 40 Gbps and 100 Gbps Ethernet using parallel lanes of 10 Gbps or 25 Gbps physical channels. 400 Gbps (802.3bs, 2017) uses 16 lanes of 25 Gbps or 8 lanes of 50 Gbps. Modern switches support aggregation of multiple links via Link Aggregation Control Protocol (LACP, IEEE 802.1AX).
+
+> **Pro Tip:** The Ethernet frame format has remained fundamentally unchanged since 1980, which is remarkable for any networking technology. This backward compatibility means a 2024 switch can still process frames from a 1990s Ethernet card â€” the physical speed changes, but the frame language is the same.
 
 ## 5.2 Switches and Bridges
 
@@ -40,7 +75,7 @@ A bridge operates at the data link layer, connecting two or more LAN segments an
 
 **Store-and-forward switching.** The switch receives the entire frame, checks the FCS for errors, and then forwards. This ensures no corrupted frames propagate but adds latency proportional to frame size.
 
-**Cut-through switching.** The switch begins forwarding before the complete frame arrives — typically after reading only the destination MAC address (first 6 bytes). Latency is minimized but damaged frames are forwarded.
+**Cut-through switching.** The switch begins forwarding before the complete frame arrives â€” typically after reading only the destination MAC address (first 6 bytes). Latency is minimized but damaged frames are forwarded.
 
 **Fragment-free switching.** The switch reads the first 64 bytes before forwarding (the collision window). This rejects runt frames while keeping latency low.
 
@@ -55,7 +90,7 @@ A learning bridge automatically builds a forwarding table by observing traffic. 
    - If no entry exists for $D$, flood the frame on all ports except $P$.
 4. Entries are aged out (default 300 seconds) to handle station movement.
 
-Learning bridges are transparent — stations are unaware of their existence.
+Learning bridges are transparent â€” stations are unaware of their existence.
 
 ## 5.4 Spanning Tree Protocol
 
@@ -70,7 +105,7 @@ STP uses Bridge Protocol Data Units (BPDUs) exchanged every 2 seconds. The four 
 3. **Learning**: no forwarding; learning MAC addresses.
 4. **Forwarding**: normal operation.
 
-Transition from blocking to forwarding takes 30–50 seconds. Rapid Spanning Tree Protocol (RSTP, 802.1w) reduces convergence time to 1–3 seconds through active negotiation of edge and alternate ports. Multiple Spanning Tree Protocol (MSTP, 802.1s) allows multiple VLANs to be mapped to fewer spanning tree instances, reducing overhead in large VLAN deployments.
+Transition from blocking to forwarding takes 30â€“50 seconds. Rapid Spanning Tree Protocol (RSTP, 802.1w) reduces convergence time to 1â€“3 seconds through active negotiation of edge and alternate ports. Multiple Spanning Tree Protocol (MSTP, 802.1s) allows multiple VLANs to be mapped to fewer spanning tree instances, reducing overhead in large VLAN deployments.
 
 ### 5.4.1 STP Example: Triangle Topology
 
@@ -86,9 +121,9 @@ IEEE 802.1Q inserts a 4-byte VLAN tag into the Ethernet frame:
 |------------|----------------|-----------|-----------------|
 
 - TPID: Tag Protocol Identifier (0x8100), marks the frame as tagged.
-- Priority: 802.1p class of service (0–7).
+- Priority: 802.1p class of service (0â€“7).
 - DEI: Drop Eligible Indicator.
-- VLAN ID: uniquely identifies the VLAN (1–4094; 0 and 4095 reserved).
+- VLAN ID: uniquely identifies the VLAN (1â€“4094; 0 and 4095 reserved).
 
 VLAN trunking allows frames from multiple VLANs to traverse a single link between switches. The trunk port adds and removes 802.1Q tags; access ports strip the tag and deliver untagged frames to endpoints.
 
@@ -104,6 +139,93 @@ Multiprotocol Label Switching (MPLS) inserts a 32-bit label between the link-lay
 |--------------|-----------|---------|-----------|
 
 MPLS routers use label-switched paths (LSPs) determined by the Label Distribution Protocol (LDP) or RSVP-TE. The forwarding decision is a simple label lookup in the Label Information Base (LIB), faster than IP longest-prefix matching. MPLS supports traffic engineering, explicit path control, and VPNs (MPLS L3VPN and L2VPN). Modern carrier and data center networks extensively use MPLS for traffic steering and service chaining.
+
+---
+
+### Concept Comparison Table
+
+| Technology | Speed | Medium | Key Feature |
+|-----------|-------|--------|-------------|
+| 10Base5 | 10 Mbps | Coax (500m) | Vampire tap, bus topology |
+| 10BaseT | 10 Mbps | Cat 3 UTP (100m) | Star topology, hub-based |
+| 100BaseTX | 100 Mbps | Cat 5 UTP (100m) | Same frame, 10x speed |
+| 1000BaseT | 1 Gbps | Cat 5e UTP (100m) | 4-pair signaling |
+| 10GBaseT | 10 Gbps | Cat 6a (100m) | Full-duplex only |
+| 400GbE | 400 Gbps | SMF/MMF | 8 lanes Ã— 50 Gbps |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Ethernet Generations** | 10M â†’ 100M (1995) â†’ 1G (1998) â†’ 10G (2002) â†’ 40/100G (2010) â†’ 400G (2017) |
+| **Switching Modes** | Store-and-forward (check FCS, high latency), Cut-through (low latency, may forward errors), Fragment-free (check first 64 bytes) |
+| **STP Port States** | Blocking â†’ Listening â†’ Learning â†’ Forwarding (30-50s); RSTP: Discarding â†’ Learning â†’ Forwarding (1-3s) |
+| **VLAN Frame** | TPID(0x8100) + Priority(3b) + DEI(1b) + VLAN ID(12b) = 4 bytes |
+| **MPLS Label** | Label(20b) + Exp(3b) + S(1b) + TTL(8b) = 32 bits |
+| **LACP** | Up to 8 links per bundle, hash-based load balancing, LACPDU every 30s |
+
+### Cross-Application Matrix
+
+| Concept | Enterprise Networking | Data Center | Service Provider | Cloud |
+|---------|---------------------|-------------|-----------------|-------|
+| STP/RSTP | Office LAN design | Fabric topology | Carrier Ethernet | Overlay networks |
+| VLANs | Department segmentation | Multi-tenant isolation | MPLS L2VPN | VPC/subnets |
+| LACP | Server uplinks | ToR â†” leaf trunks | N/A | N/A |
+| MPLS | N/A | N/A | L3VPN, TE, FRR | AWS Direct Connect |
+
+---
+
+### Chapter Quiz
+
+**Q1.** What is the minimum Ethernet frame payload size and why?
+
+- A) 64 bytes â€” ensures CRC strength
+- B) 46 bytes â€” guarantees collision detection
+- C) 1500 bytes â€” maximizes throughput
+- D) 512 bytes â€” matches slot time
+
+<details>
+<summary>Answer</summary>
+B) 46 bytes â€” the total frame (excluding preamble) must be at least 64 bytes for CSMA/CD to detect collisions across max network diameter.
+</details>
+
+**Q2.** Which switching mode forwards a frame before checking the FCS?
+
+- A) Store-and-Forward
+- B) Cut-Through
+- C) Fragment-Free
+- D) All of the above
+
+<details>
+<summary>Answer</summary>
+B) Cut-through begins forwarding after reading only the destination MAC address, before error checking.
+</details>
+
+**Q3.** How long does STP typically take to converge after a topology change?
+
+- A) 1-3 seconds
+- B) 5-10 seconds
+- C) 30-50 seconds
+- D) 2 minutes
+
+<details>
+<summary>Answer</summary>
+C) 30-50 seconds â€” RSTP reduces this to 1-3 seconds.
+</details>
+
+**Q4.** What does the 12-bit VLAN ID field support?
+
+- A) 128 VLANs
+- B) 512 VLANs
+- C) 4094 VLANs
+- D) 65535 VLANs
+
+<details>
+<summary>Answer</summary>
+C) 4094 usable VLANs (1-4094; 0 and 4095 reserved).
+</details>
+
+---
 
 ## Summary
 

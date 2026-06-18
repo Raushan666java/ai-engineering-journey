@@ -1,4 +1,4 @@
-﻿# Chapter 13: Laravel AI SDK â€” Tools, MCP Tools & Provider Tools
+# Chapter 13: Laravel AI SDK â€” Tools, MCP Tools & Provider Tools
 
 ---
 ## Learning Objectives
@@ -12,7 +12,7 @@
 ---
 ## Theory
 
-![AI SDK Tools](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/13-ai-sdk-tools.png)
+![AI SDK Tools](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/13-ai-sdk-tools.png)
 
 
 ### 13.1 The Tools Concept

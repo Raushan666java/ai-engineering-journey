@@ -1,5 +1,8 @@
 # Chapter 8: Forensics & Incident Response
 
+> **Prereq:** Chapter 7 (Cloud & Mobile) â€” modern forensics must account for cloud and mobile evidence sources.
+> **Next:** Chapter 9 (GRC) â€” incident findings feed into governance, risk, and compliance processes.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,36 @@
 - Describe the steps involved in file system forensics and data recovery.
 - Identify the core components of an incident response plan and the role of the CSIRT.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| IR Lifecycle | Prep â†’ Detect â†’ Contain â†’ Recover | Structured approach to handling breaches |
+| Order of Volatility | Collect most volatile first | Preserve the most fragile evidence |
+| Memory Forensics | RAM analysis | Find rootkits, injected code |
+| Disk Forensics | File system, deleted files | Recover evidence from storage |
+| Chain of Custody | Evidence tracking | Ensures legal admissibility |
+
+```mermaid
+flowchart LR
+    A[Preparation] --> B[Detection]
+    B --> C[Containment]
+    C --> D[Eradication]
+    D --> E[Recovery]
+    E --> F[Lessons Learned]
+    F --> A
+    style A fill:#e1f5fe
+    style C fill:#fce4ec
+    style E fill:#c8e6c9
+```
+
 ---
 
 ## Theory
 
-![Incident Response & Forensics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch08-ir-forensics.png)
+![Incident Response & Forensics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cyber-security/ch08-ir-forensics.png)
+
+> **One-Sentence Takeaway:** Incident response is a structured lifecycle â€” preparation prevents panic, the order of volatility preserves the best evidence, and memory forensics catches threats that leave no disk trace.
 
 ### Incident Response Lifecycle
 Incident Response is a structured process used by organizations to handle a security breach or cyberattack. The NIST SP 800-61 framework defines four main phases:
@@ -95,3 +123,46 @@ vol.py -f suspicious_mem.raw windows.netscan
 
 ### Challenge Problem
 1. Design a basic "Incident Response Playbook" for a suspected SQL Injection attack on a company's web server. Include specific steps for detection, containment (to prevent further data theft), and post-incident review.
+
+### Concept Comparison
+
+| Evidence Type | Volatility | Collection Tool | Key Data |
+|--------------|------------|----------------|----------|
+| RAM / Memory | Highest | Volatility, FTK Imager | Running processes, network connections |
+| Network | High | tcpdump, Wireshark | Live connections, packets |
+| Disk | Low | dd, Guymager | Files, deleted files, slack space |
+| Registry | Medium | RegRipper | Configuration, MRU lists |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Network Security | PCAP analysis for IR | Network forensics identifies C2 traffic |
+| App Security | Web server log forensics | Detect SQLi, XSS after the fact |
+| Cloud Security | Cloud trail forensics | Cloud-native evidence collection |
+| Research | Malware memory analysis | Memory forensics for zero-day detection |
+
+### Chapter Quiz
+
+1. The first step in the NIST IR lifecycle is:
+   - A) Detection
+   - B) Preparation
+   - C) Containment
+   - D) Recovery
+
+2. The Order of Volatility dictates that:
+   - A) Disk images are collected before memory dumps
+   - B) The most volatile evidence is collected first
+   - C) Network traffic is collected last
+   - D) Volatile data can be ignored
+
+3. Chain of Custody documentation ensures:
+   - A) Evidence is stored on a chain drive
+   - B) Evidence integrity is provable from collection to court
+   - C) Only authorised personnel access the network
+   - D) Evidence is encrypted at rest
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

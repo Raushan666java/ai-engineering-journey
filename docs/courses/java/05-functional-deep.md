@@ -22,7 +22,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Advanced Stream Operations
 
-![Functional Programming Concepts](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/05-functional-deep.png)
+![Functional Programming Concepts](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/05-functional-deep.png)
 
 Chapter P6 covered the fundamentals: `stream()`, `filter`, `map`, `flatMap`, `reduce`, `collect`, `sorted`, `distinct`, `takeWhile`, `dropWhile`, `limit`, `skip`, and basic `flatMap` with `Optional::stream`. This section deepens those patterns and introduces operations not covered there.
 
@@ -795,7 +795,7 @@ public class ValidationMonadDemo {
 
 ---
 
-## 4. Functional Interfaces — Beyond Basics
+## 4. Functional Interfaces â€” Beyond Basics
 
 Chapter P6 covered the six core interfaces and their primitive variants. Here we focus on composition, chaining, and extending arity.
 
@@ -1248,7 +1248,7 @@ public class SupplierLazyInit {
         config.getDb();
         System.out.println("Accessing DB again (cached)...");
         config.getDb();
-        System.out.println("Cache never accessed — not created");
+        System.out.println("Cache never accessed â€” not created");
     }
 }
 ```
@@ -1745,9 +1745,9 @@ public class SealedExhaustiveMatching {
 
 ---
 
-## 9. Optionals — Beyond the Basics
+## 9. Optionals â€” Beyond the Basics
 
-### 9.1 `or`, `ifPresentOrElse`, `stream()` — Deep Patterns
+### 9.1 `or`, `ifPresentOrElse`, `stream()` â€” Deep Patterns
 
 ```java
 import java.util.*;
@@ -2570,27 +2570,27 @@ record Feature(String name, boolean active) {}
 
 This chapter deepens the functional programming foundation established in Chapter P6 with production-grade patterns:
 
-**Advanced Stream Operations** — `mapMulti` (Java 16+) avoids intermediate `Stream` objects for small expansions. Custom `distinctBy` using `Predicate` with `HashSet` or `ConcurrentHashMap` fills a gap in the JDK. `Stream.iterate` with a predicate creates bounded sequences elegantly. Custom `zip` implementations via iterators or index-based merging cover the missing `zip` operation.
+**Advanced Stream Operations** â€” `mapMulti` (Java 16+) avoids intermediate `Stream` objects for small expansions. Custom `distinctBy` using `Predicate` with `HashSet` or `ConcurrentHashMap` fills a gap in the JDK. `Stream.iterate` with a predicate creates bounded sequences elegantly. Custom `zip` implementations via iterators or index-based merging cover the missing `zip` operation.
 
-**Custom Collectors** — The `Collector<T,A,R>` interface's five components (supplier, accumulator, combiner, finisher, characteristics) enable arbitrary mutable reductions. Custom downstream collectors for `groupingBy` support top-N selection and sliding windows. `Collector.of` with complex finishers transforms intermediate state into immutable results.
+**Custom Collectors** â€” The `Collector<T,A,R>` interface's five components (supplier, accumulator, combiner, finisher, characteristics) enable arbitrary mutable reductions. Custom downstream collectors for `groupingBy` support top-N selection and sliding windows. `Collector.of` with complex finishers transforms intermediate state into immutable results.
 
-**Monad Patterns** — `Optional` and `CompletableFuture` exemplify monad-like types with unit, bind, and map operations satisfying the three monad laws. Custom monads (`Box`, `Validation`) extend the pattern. Validation distinguishes itself by accumulating errors rather than short-circuiting.
+**Monad Patterns** â€” `Optional` and `CompletableFuture` exemplify monad-like types with unit, bind, and map operations satisfying the three monad laws. Custom monads (`Box`, `Validation`) extend the pattern. Validation distinguishes itself by accumulating errors rather than short-circuiting.
 
-**Functional Interfaces Deep** — The 43 specialized interfaces in `java.util.function` eliminate boxing overhead. Consumer chaining, predicate composition factories, and custom higher-arity interfaces (`TriFunction`, `QuadFunction`) extend Java's functional vocabulary.
+**Functional Interfaces Deep** â€” The 43 specialized interfaces in `java.util.function` eliminate boxing overhead. Consumer chaining, predicate composition factories, and custom higher-arity interfaces (`TriFunction`, `QuadFunction`) extend Java's functional vocabulary.
 
-**Function Composition** — `andThen` and `compose` build pipelines of any length. Partial application and currying create reusable, specialized functions from general ones.
+**Function Composition** â€” `andThen` and `compose` build pipelines of any length. Partial application and currying create reusable, specialized functions from general ones.
 
-**Lazy Evaluation** — `Supplier` enables deferred computation and memoization. Custom `Lazy<T>` structures cache results while supporting `map`/`flatMap`. Infinite streams with `Stream.iterate` and `Stream.generate` provide unbounded data sources.
+**Lazy Evaluation** â€” `Supplier` enables deferred computation and memoization. Custom `Lazy<T>` structures cache results while supporting `map`/`flatMap`. Infinite streams with `Stream.iterate` and `Stream.generate` provide unbounded data sources.
 
-**Immutable Data** — Records transparently carry data with automatic `equals`/`hashCode`. Withers enable immutable updates. `List.copyOf` and `Collectors.toUnmodifiableList()` guard against mutation.
+**Immutable Data** â€” Records transparently carry data with automatic `equals`/`hashCode`. Withers enable immutable updates. `List.copyOf` and `Collectors.toUnmodifiableList()` guard against mutation.
 
-**Pattern Matching** — Switch expressions with type patterns, record patterns, guarded patterns (`when`), and sealed class exhaustive matching transform Java's conditional logic into concise, compiler-verified expressions.
+**Pattern Matching** â€” Switch expressions with type patterns, record patterns, guarded patterns (`when`), and sealed class exhaustive matching transform Java's conditional logic into concise, compiler-verified expressions.
 
-**Optionals in Depth** — `or()` chains fallback sources, `stream()` bridges Optional and Stream, primitive optionals avoid boxing, and `combine`/`lift` patterns handle multiple optionals. `Either` provides Left/Right error handling.
+**Optionals in Depth** â€” `or()` chains fallback sources, `stream()` bridges Optional and Stream, primitive optionals avoid boxing, and `combine`/`lift` patterns handle multiple optionals. `Either` provides Left/Right error handling.
 
-**Functional Error Handling** — `Try` captures exceptions in a monadic wrapper supporting `map`/`flatMap`/`recover`. `Result` provides application-level success/failure with codes. Validation aggregation accumulates all errors.
+**Functional Error Handling** â€” `Try` captures exceptions in a monadic wrapper supporting `map`/`flatMap`/`recover`. `Result` provides application-level success/failure with codes. Validation aggregation accumulates all errors.
 
-**Spring Boot Functional** — `RouterFunction` with filters, error handlers, and nested routes. `StreamResponseBody` writes large datasets incrementally. Lambda-based `@Bean` definitions compose functional beans. `@ConfigurationProperties` with records enables functional property binding.
+**Spring Boot Functional** â€” `RouterFunction` with filters, error handlers, and nested routes. `StreamResponseBody` writes large datasets incrementally. Lambda-based `@Bean` definitions compose functional beans. `@ConfigurationProperties` with records enables functional property binding.
 
 ---
 

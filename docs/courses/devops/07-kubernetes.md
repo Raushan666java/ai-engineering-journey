@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Kubernetes Core Objects and Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch07-k8s-basics.png)
+![Kubernetes Core Objects and Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch07-k8s-basics.png)
 
 By the end of this chapter, students will be able to:
 
@@ -20,16 +20,16 @@ By the end of this chapter, students will be able to:
 Kubernetes (K8s) is an open-source container orchestration platform that automates deployment, scaling, and management of containerized applications. A Kubernetes cluster consists of control plane nodes and worker nodes.
 
 **Control Plane Components**:
-- **kube-apiserver** — The front door to the cluster. All administrative requests and component communication pass through the API server. It validates and processes RESTful requests, updating the cluster state in etcd.
-- **etcd** — Distributed key-value store that holds the complete cluster state. Consistency is maintained through the Raft consensus algorithm. etcd is the source of truth for all Kubernetes objects.
-- **kube-scheduler** — Watches for newly created Pods with no assigned node and selects a suitable node to run them. Scheduling decisions consider resource requirements, constraints, affinity rules, data locality, and workload priorities.
-- **kube-controller-manager** — Runs controller processes that regulate cluster state. Each controller watches the API server for desired state and takes action to move current state toward desired state. Core controllers include the Node Controller, Replication Controller, Deployment Controller, and ServiceAccount Controller.
-- **cloud-controller-manager** — Interfaces with cloud provider APIs to manage load balancers, nodes, and routes.
+- **kube-apiserver** â€” The front door to the cluster. All administrative requests and component communication pass through the API server. It validates and processes RESTful requests, updating the cluster state in etcd.
+- **etcd** â€” Distributed key-value store that holds the complete cluster state. Consistency is maintained through the Raft consensus algorithm. etcd is the source of truth for all Kubernetes objects.
+- **kube-scheduler** â€” Watches for newly created Pods with no assigned node and selects a suitable node to run them. Scheduling decisions consider resource requirements, constraints, affinity rules, data locality, and workload priorities.
+- **kube-controller-manager** â€” Runs controller processes that regulate cluster state. Each controller watches the API server for desired state and takes action to move current state toward desired state. Core controllers include the Node Controller, Replication Controller, Deployment Controller, and ServiceAccount Controller.
+- **cloud-controller-manager** â€” Interfaces with cloud provider APIs to manage load balancers, nodes, and routes.
 
 **Worker Node Components**:
-- **kubelet** — The primary node agent. It ensures containers specified in PodSpecs are running and healthy. Kubelet registers nodes with the API server and reports node status.
-- **kube-proxy** — Network proxy that maintains network rules on nodes. It implements service abstraction by routing traffic to the appropriate Pods.
-- **Container Runtime** — The software that runs containers (containerd, CRI-O, Docker Engine via cri-dockerd). Kubernetes uses the Container Runtime Interface (CRI) for runtime abstraction.
+- **kubelet** â€” The primary node agent. It ensures containers specified in PodSpecs are running and healthy. Kubelet registers nodes with the API server and reports node status.
+- **kube-proxy** â€” Network proxy that maintains network rules on nodes. It implements service abstraction by routing traffic to the appropriate Pods.
+- **Container Runtime** â€” The software that runs containers (containerd, CRI-O, Docker Engine via cri-dockerd). Kubernetes uses the Container Runtime Interface (CRI) for runtime abstraction.
 
 ### 7.2 Pods
 
@@ -65,8 +65,8 @@ Pods are ephemeral. Direct Pod creation is rare; higher-level controllers (Deplo
 A Deployment provides declarative updates for Pods and ReplicaSets. It manages rollout, rollback, scaling, and self-healing.
 
 **Update Strategies**:
-- **RollingUpdate** (default) — Replaces Pods incrementally. Parameters: `maxSurge` (excess Pods during update, default 25%), `maxUnavailable` (maximum unavailable Pods, default 25%).
-- **Recreate** — Terminates all existing Pods before creating new ones. Used when application cannot tolerate multiple versions running simultaneously.
+- **RollingUpdate** (default) â€” Replaces Pods incrementally. Parameters: `maxSurge` (excess Pods during update, default 25%), `maxUnavailable` (maximum unavailable Pods, default 25%).
+- **Recreate** â€” Terminates all existing Pods before creating new ones. Used when application cannot tolerate multiple versions running simultaneously.
 
 ```yaml
 apiVersion: apps/v1
@@ -108,10 +108,10 @@ spec:
 A Service provides stable networking for a set of Pods with a consistent IP address and DNS name. It enables service discovery and load balancing.
 
 **Service Types**:
-- **ClusterIP** (default) — Exposes the Service on an internal cluster IP. Accessible only within the cluster.
-- **NodePort** — Opens a specific port on every node's IP. Traffic on NodePort:Port is forwarded to the Service.
-- **LoadBalancer** — Provisions an external load balancer (cloud provider) that routes traffic to the Service.
-- **ExternalName** — Returns a CNAME record for an external DNS name.
+- **ClusterIP** (default) â€” Exposes the Service on an internal cluster IP. Accessible only within the cluster.
+- **NodePort** â€” Opens a specific port on every node's IP. Traffic on NodePort:Port is forwarded to the Service.
+- **LoadBalancer** â€” Provisions an external load balancer (cloud provider) that routes traffic to the Service.
+- **ExternalName** â€” Returns a CNAME record for an external DNS name.
 
 ```yaml
 apiVersion: v1

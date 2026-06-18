@@ -8,7 +8,7 @@
 - Construct nested loops
 - Avoid common loop errors including off-by-one and infinite loops
 
-![C Loops: while, do-while, for and jump statements](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch05-loops.png)
+![C Loops: while, do-while, for and jump statements](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch05-loops.png)
 
 ## 5.1 The `while` Loop
 
@@ -45,7 +45,7 @@ Count: 4
 Count: 5
 ```
 
-**Common pattern — reading until end of file:**
+**Common pattern â€” reading until end of file:**
 ```c
 int ch;
 while ((ch = getchar()) != EOF) {
@@ -82,7 +82,7 @@ int main(void)
 }
 ```
 
-**When to use `do-while`:** When the loop body must run at least once regardless of the condition — input validation loops, menu-driven programs.
+**When to use `do-while`:** When the loop body must run at least once regardless of the condition â€” input validation loops, menu-driven programs.
 
 ## 5.3 The `for` Loop
 
@@ -117,10 +117,10 @@ i = 5
 
 **Execution order:**
 
-1. Initialization (`int i = 1`) — runs once before the loop begins.
-2. Condition check (`i <= 5`) — evaluated before each iteration. If false, loop exits.
-3. Loop body — executes if condition is true.
-4. Update (`i++`) — runs after each iteration.
+1. Initialization (`int i = 1`) â€” runs once before the loop begins.
+2. Condition check (`i <= 5`) â€” evaluated before each iteration. If false, loop exits.
+3. Loop body â€” executes if condition is true.
+4. Update (`i++`) â€” runs after each iteration.
 5. Go to step 2.
 
 **Variations:**
@@ -136,7 +136,7 @@ for (;;) {
     /* runs forever unless break or return */
 }
 
-/* Empty body — for advancing a pointer */
+/* Empty body â€” for advancing a pointer */
 char *p = str;
 while (*p++ != '\0')
     ;
@@ -197,7 +197,7 @@ int main(void)
 **Important for `while` loops:** With `continue` in a `while` loop, the update statement must appear before the `continue`, or you will create an infinite loop:
 
 ```c
-/* BAD — infinite loop */
+/* BAD â€” infinite loop */
 int i = 0;
 while (i < 10) {
     if (i % 2 == 0) {
@@ -243,7 +243,7 @@ int main(void)
 (3,1) (3,2) (3,3) (3,4)
 ```
 
-**Practical example — multiplication table:**
+**Practical example â€” multiplication table:**
 ```c
 #include <stdio.h>
 
@@ -285,7 +285,7 @@ for (;;) {
 }
 ```
 
-**Bug — off-by-one in condition:**
+**Bug â€” off-by-one in condition:**
 ```c
 int i = 0;
 while (i < 10);   /* <-- semicolon! infinite loop */
@@ -351,7 +351,7 @@ do {
 ## Summary
 
 - `while` loops check the condition before each iteration; `do-while` checks after.
-- `for` loops consolidate initialization, condition, and update in one line — ideal for counted iteration.
+- `for` loops consolidate initialization, condition, and update in one line â€” ideal for counted iteration.
 - `break` exits the innermost loop immediately; `continue` skips to the next iteration.
 - Nested loops execute the inner loop fully for each outer-loop iteration.
 - Infinite loops are written with `while (1)` or `for (;;)`; accidental infinite loops are common bugs.

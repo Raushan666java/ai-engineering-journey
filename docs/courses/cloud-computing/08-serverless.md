@@ -1,4 +1,6 @@
-﻿# Chapter 08: Serverless Computing
+# Chapter 08: Serverless Computing
+
+> **Previous:** [Chapter 7: Cloud Security and Identity](./07-cloud-security.md) | **Next:** [Chapter 9: Containerization and Orchestration](./09-containerization.md)
 
 ## Learning Objectives
 
@@ -7,6 +9,27 @@
 - Compare serverless architectures with traditional server-based models.
 - Design an event-driven workflow using managed cloud services.
 - Analyze the cost implications and scaling characteristics of serverless workloads.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Serverless Definition | No server management — provider handles infrastructure | Focus on code, not servers |
+| FaaS | Functions triggered by events | Pay per execution + duration |
+| Event-Driven | S3 uploads, DB changes, HTTP requests trigger functions | Decoupled, scalable architecture |
+| Cold Starts | First invocation after idle has latency overhead | Mitigate with provisioned concurrency |
+| Micro-billing | Charged per millisecond of execution | Cost-effective for variable, bursty workloads |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Serverless Concept] --> B[FaaS Model]
+    B --> C[Event Sources]
+    C --> D[Execution Model]
+    D --> E[Scaling & Pricing]
+    E --> F[Use Cases]
+```
 
 ---
 
@@ -22,7 +45,7 @@ FaaS is the core component of serverless computing. It allows developers to depl
 - **Auto-scaling:** The provider automatically scales the number of function instances based on the incoming request volume.
 - **Micro-billing:** Users are charged based on the number of executions and the duration of execution (usually in milliseconds), rather than for idle server time.
 
-![Serverless Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch08-serverless.png)
+![Serverless Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch08-serverless.png)
 
 ### Event-Driven Architectures
 Serverless functions are typically part of an event-driven architecture. An event is a change in state or an update that happens in the cloud environment. Common event sources include:
@@ -75,6 +98,12 @@ def handler(event, context):
 **Expected Output:**
 A new object appears in the `-resized` bucket shortly after an upload to the source bucket.
 
+> **One-Sentence Takeaway:** Serverless computing eliminates infrastructure management entirely — you provide code, the provider handles scaling, and you pay only for the milliseconds your code actually runs.
+
+> **Pro Tip:** Cold starts are the #1 performance concern in serverless. For latency-sensitive functions, use provisioned concurrency (AWS) or keep functions warm with scheduled pings. For most workloads, cold starts are negligible (<100ms for Node.js/Python).
+
+> **Warning:** Serverless functions have execution time limits (15 min for AWS Lambda, 5 min for Google Cloud Functions). If your workload takes hours, it's not a good fit — use batch processing services (AWS Batch, Google Batch, Azure Batch) instead.
+
 ### Example 2: Serverless Web API (Azure Functions)
 This example shows how to create a simple HTTP-triggered function that interacts with a database.
 
@@ -107,6 +136,71 @@ module.exports = async function (context, req) {
 ```
 
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Serverless (FaaS) | Event-triggered functions | No server management, micro-billing | Data processing, APIs |
+| Containers | OS-level virtualization | Always running, custom runtime | Microservices |
+| VMs | Hardware-level virtualization | Full OS control | Legacy apps, databases |
+| BaaS | Backend-as-a-Service (Auth, DB, Storage) | Managed backend components | Mobile apps, rapid prototyping |
+| Cold Start | Delay when invoking idle function | Latency penalty for infrequent functions | Mitigate with warm-up strategies |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **FaaS Providers** | AWS Lambda, Azure Functions, GCP Cloud Functions | All support Node, Python, Java, Go |
+| **Event Sources** | S3, DynamoDB, SQS, API Gateway, Pub/Sub, timer | Most cloud services can trigger functions |
+| **Limits** | 15 min max (Lambda), 512MB–10GB memory | Not suitable for long-running jobs |
+| **Pricing** | Per million requests + per GB-second | 1M requests/month are often free |
+| **Cold Start** | ~100ms–1s depending on runtime | Java/C# have longest cold starts |
+
+## Cross-Application Matrix
+
+| Technique | Cloud Architecture | DevOps | Security | Enterprise |
+|-----------|-------------------|--------|----------|------------|
+| Event-Driven | Decoupled architecture | CI/CD triggers | Event audit trail | Async processing |
+| FaaS | Backend APIs | Build automation | Least privilege roles | Data transformation |
+| Step Functions | Orchestration | Pipeline management | Error handling | Business workflows |
+| API Gateway | Serverless REST APIs | Canary deployments | WAF integration | Public APIs |
+| EventBridge/CloudEvents | Event bus | Event-driven CI/CD | Event filtering | Cross-account events |
+
+## Chapter Quiz
+
+1. What is the primary billing unit for serverless FaaS platforms?
+   - A) Per GB of storage
+   - B) Per million requests + per GB-second of execution time
+   - C) Per month subscription
+   - D) Per reserved instance
+
+<details>
+<summary>Answer</summary>
+**B) Per million requests + per GB-second of execution time.** Serverless billing combines the number of invocations (requests) with the duration of execution weighted by allocated memory. If a function uses 512MB and runs for 200ms, it costs 0.1 GB-seconds.
+</details>
+
+2. What causes a "cold start" in serverless functions?
+   - A) The data center temperature is low
+   - B) A function hasn't been invoked recently, so the provider needs to spin up a new execution environment
+   - C) The function code has an error
+   - D) The API key expired
+
+<details>
+<summary>Answer</summary>
+**B) A function hasn't been invoked recently, so the provider needs to spin up a new execution environment.** After a period of inactivity, the cloud provider reclaims the function's execution environment. The next invocation must initialize the runtime, load code, and execute the handler — this startup delay is the cold start.
+</details>
+
+3. Which workload is NOT well-suited for serverless functions?
+   - A) Image thumbnail generation triggered by file uploads
+   - B) A 45-minute batch machine learning training job
+   - C) A simple REST API endpoint
+   - D) Processing messages from a queue
+
+<details>
+<summary>Answer</summary>
+**B) A 45-minute batch machine learning training job.** Serverless functions have maximum execution time limits (15 minutes for AWS Lambda). ML training that takes 45 minutes requires a service designed for long-running compute, not FaaS.
+</details>
 
 ## Summary
 

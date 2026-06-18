@@ -11,11 +11,11 @@
 
 ## Theory
 
-![Indexing, Query Processing and Join Algorithms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch05-indexing-query.png)
+![Indexing, Query Processing and Join Algorithms](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch05-indexing-query.png)
 
 ### 12.1 Why Indexes?
 
-Without indexes, finding data requires a **full table scan** — reading every row in the table sequentially. For a table with 10 million rows, a full scan can take minutes. An index reduces this to milliseconds by providing a direct path to the data.
+Without indexes, finding data requires a **full table scan** â€” reading every row in the table sequentially. For a table with 10 million rows, a full scan can take minutes. An index reduces this to milliseconds by providing a direct path to the data.
 
 **Concept:** An index is a data structure organized for fast search. For each search key value, the index stores the physical location (row ID, page ID) where the corresponding data is stored.
 
@@ -42,17 +42,17 @@ The B+ tree is the most common index structure in relational databases. It is a 
 - Internal nodes contain **routing keys** (directory) to guide searches
 - Leaf nodes are linked together in a **linked list** for efficient range scans
 - Every leaf path has the same depth (the tree is perfectly balanced)
-- Each node typically holds hundreds of keys (node size ≈ disk page size, 4–16 KB)
+- Each node typically holds hundreds of keys (node size â‰ˆ disk page size, 4â€“16 KB)
 
 **Operations:**
 
-**Search (equality):** Start at root. At each internal node, find the smallest key ≥ search key. Follow the corresponding pointer. Repeat until reaching a leaf node, then linearly scan the leaf for the exact key.
+**Search (equality):** Start at root. At each internal node, find the smallest key â‰¥ search key. Follow the corresponding pointer. Repeat until reaching a leaf node, then linearly scan the leaf for the exact key.
 
 ```
 Search for 65 in the tree above:
-Root: 65 is between 50 and 90 → follow middle pointer
-Level 2: 65 is > 60 and < 75 → follow middle pointer
-Leaf: Scan [55, 65, 80] → found 65 at position 2
+Root: 65 is between 50 and 90 â†’ follow middle pointer
+Level 2: 65 is > 60 and < 75 â†’ follow middle pointer
+Leaf: Scan [55, 65, 80] â†’ found 65 at position 2
 ```
 
 **Range scan (e.g., WHERE key BETWEEN 60 AND 100):**
@@ -73,17 +73,17 @@ Leaf: Scan [55, 65, 80] → found 65 at position 2
 4. Merges may propagate upward; if the root has only one child, the tree shrinks by one level
 
 **Performance:**
-- Search: O(log n) I/O operations (typically 2–4 for real databases)
-- Insert: O(log n) — read path + write modified nodes
+- Search: O(log n) I/O operations (typically 2â€“4 for real databases)
+- Insert: O(log n) â€” read path + write modified nodes
 - Delete: O(log n)
 - Range scan: O(log n + k) where k is the number of results
 
 **Fan-out:** A B+ tree with a fan-out (node capacity) of 500 can store:
-- 500² = 250,000 keys at depth 2
-- 500³ = 125,000,000 keys at depth 3
-- 500⁴ = 62,500,000,000 keys at depth 4
+- 500Â² = 250,000 keys at depth 2
+- 500Â³ = 125,000,000 keys at depth 3
+- 500â´ = 62,500,000,000 keys at depth 4
 
-This is why large databases can be searched with 3–4 I/O operations.
+This is why large databases can be searched with 3â€“4 I/O operations.
 
 ### 12.3 Clustered vs. Unclustered Indexes
 
@@ -116,8 +116,8 @@ Hash indexes use a hash function to map keys to buckets. They excel at **equalit
 - Each bucket is a chain of records (or a fixed-size overflow area)
 
 **Operations:**
-- **Search (equality):** Hash the key → find the bucket → scan for the exact match → O(1) average
-- **Insert:** Hash the key → place in the bucket → O(1) average
+- **Search (equality):** Hash the key â†’ find the bucket â†’ scan for the exact match â†’ O(1) average
+- **Insert:** Hash the key â†’ place in the bucket â†’ O(1) average
 - **Range query:** Not supported (hash destroys ordering)
 
 **Types:**
@@ -162,7 +162,7 @@ SELECT * FROM orders WHERE order_date = '2026-01-15';
 ```
 
 **The "Best" Column Order Rule:**
-1. Put equality columns first: `WHERE col1 = 5 AND col2 > 10` → index on (col1, col2)
+1. Put equality columns first: `WHERE col1 = 5 AND col2 > 10` â†’ index on (col1, col2)
 2. Put high-selectivity columns first (columns that filter out more rows)
 3. Example: In a `gender` (2 values) and `salary` (many values) composite index, put `salary` first
 
@@ -186,14 +186,14 @@ Bitmap indexes use a bit array (bitmap) for each distinct value of a column. The
 Gender = M bitmap:  1011010010...  (1M bits = ~125KB)
 Gender = F bitmap:  0100101101...  (1M bits = ~125KB)
 
-Row 1: M → M bit = 1, F bit = 0
-Row 2: F → M bit = 0, F bit = 1
+Row 1: M â†’ M bit = 1, F bit = 0
+Row 2: F â†’ M bit = 0, F bit = 1
 ```
 
 **Bitmap Operations:**
 ```sql
 -- Find male employees in department 10
--- M_bitmap AND Dept10_bitmap → result bitmap
+-- M_bitmap AND Dept10_bitmap â†’ result bitmap
 -- Fast bitwise operations on compressed bitmaps
 ```
 
@@ -287,13 +287,13 @@ CREATE INDEX idx_order_total ON orders(((items->>'total')::DECIMAL));
 Insert keys 10, 20, 30, 40, 50 into a B+ tree with leaf capacity = 3 and internal capacity = 3.
 
 ```
-Step 1: Insert 10 → [10]
-Step 2: Insert 20 → [10, 20]
-Step 3: Insert 30 → [10, 20, 30]   (leaf full)
-Step 4: Insert 40 → split!          New leaves: [10, 20] and [30, 40]
+Step 1: Insert 10 â†’ [10]
+Step 2: Insert 20 â†’ [10, 20]
+Step 3: Insert 30 â†’ [10, 20, 30]   (leaf full)
+Step 4: Insert 40 â†’ split!          New leaves: [10, 20] and [30, 40]
                                      Parent root: [30]
-Step 5: Insert 50 → [30]           Search: 50 > 30, go to right leaf
-                  /     \           Right leaf: [30, 40, 50] → full → split
+Step 5: Insert 50 â†’ [30]           Search: 50 > 30, go to right leaf
+                  /     \           Right leaf: [30, 40, 50] â†’ full â†’ split
                 [10,20] [30,40,50]  New leaves: [30, 40] and [50]
                                      Promote 50 to root: [30, 50]
 ```
@@ -330,7 +330,7 @@ WHERE status IN ('pending', 'processing');
 -- Query pattern 3: Admin search by zip code
 CREATE INDEX idx_orders_zip ON orders(shipping_zip);
 
--- Query pattern 4: Reporting — daily totals
+-- Query pattern 4: Reporting â€” daily totals
 -- Consider a materialized view instead of indexes for aggregates
 ```
 
@@ -347,8 +347,121 @@ CREATE INDEX idx_orders_customer ON orders(customer_id);
 EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 42;
 -- Index Scan using idx_orders_customer on orders (cost=0.43..8.45 rows=5 width=120)
 -- Actual time: 0.035..0.058 rows=5 loops=1
--- Improvement: 85ms → 0.05ms (1700x faster)
+-- Improvement: 85ms â†’ 0.05ms (1700x faster)
 ```
+
+## ðŸ’¡ Pro Tips
+
+1. **Index the WHERE clause columns first** â€” columns in `WHERE`, `JOIN`, and `ORDER BY` are the highest priority for indexing.
+2. **Composite index column order matters enormously** â€” put high-selectivity columns first. An index on `(status, created_at)` helps `WHERE status = 'active'` but NOT `WHERE created_at > '2026-01-01'`.
+3. **Don't over-index write-heavy tables** â€” every index adds overhead to INSERT, UPDATE, and DELETE operations. Measure, then index.
+4. **Clustered indexes are not always better** â€” a table can have only one physical order. Consider heap tables with non-clustered indexes for write-heavy workloads.
+5. **Use partial indexes for active/passive data patterns** â€” if most queries touch only `WHERE is_active = TRUE`, indexing only active rows saves space and improves performance.
+
+## One-Sentence Takeaways
+
+- **12.1:** Indexes are auxiliary data structures that speed up data retrieval at the cost of slower writes and additional storage.
+- **12.2:** B+ trees are the dominant index structure, offering balanced O(log n) search, insert, and delete with excellent range-query performance.
+- **12.3:** Clustered indexes determine the physical order of data on disk (one per table); unclustered indexes store pointers to data locations.
+- **12.4:** Hash indexes provide O(1) equality lookups but cannot support range queries or ORDER BY.
+- **12.5:** Composite (multi-column) indexes require careful column ordering â€” high-selectivity columns first.
+- **12.6:** Bitmap indexes are ideal for low-cardinality columns in data warehouse environments.
+- **12.7:** Partial and functional indexes optimize specific query patterns such as filtered queries or function-based lookups.
+- **12.8:** Index selection should be driven by actual query patterns and performance measurements, not intuition.
+
+## Concept Comparison Table
+
+| Index Type | Lookup Complexity | Supports Range? | Best For |
+|-----------|------------------|-----------------|----------|
+| **B+ Tree** | O(log n) | Yes | General-purpose, range queries, ORDER BY |
+| **Hash** | O(1) average | No | Equality lookups only |
+| **Bitmap** | Variable | Yes | Low-cardinality columns, data warehouses |
+| **Partial** | Depends | Depends | Subset-of-rows queries |
+| **Functional (Expression)** | Depends | Depends | Queries with function wrapping (LOWER, etc.) |
+| **Composite** | O(log n) | Depends on column order | Multi-column WHERE conditions |
+
+| Index Feature | Clustered | Unclustered (Secondary) |
+|-------------|-----------|------------------------|
+| **Physical order** | Matches index order | Independent of data order |
+| **Count per table** | One | Many (up to hundreds) |
+| **Range scan** | Very fast (sequential I/O) | Slower (random I/O per row) |
+| **Inserts** | Can cause page splits (expensive) | Less overhead |
+| **Covering query** | Always (data is the leaf) | Only if index includes all needed columns |
+
+## Quick Reference
+
+| Property | B+ Tree | Hash Index | Bitmap Index |
+|---------|---------|-----------|-------------|
+| **Equality search** | O(log n) | O(1) | Fast for low-cardinality |
+| **Range search** | O(log n + k) | Not supported | Fast |
+| **ORDER BY** | Fast (index order) | Not supported | Not typically |
+| **Supports multiple columns** | Yes (composite) | No (single key) | Yes (bitwise operations) |
+| **Space** | Moderate | Small | Moderate (low cardinality) |
+| **Concurrent writes** | Excellent (B-link trees) | Moderate | Poor |
+
+## Cross-Application Matrix
+
+| Index Strategy | Applied In | Why It Matters |
+|--------------|-----------|----------------|
+| **B+ Tree on FK columns** | All multi-table queries | Accelerates JOIN operations |
+| **Composite Index (status, date)** | Reporting dashboards | Fast filtering by status then date range |
+| **Partial Index (WHERE active=TRUE)** | User management systems | Only index active users for login queries |
+| **Expression Index (LOWER(email))** | Authentication systems | Case-insensitive email login lookups |
+| **Hash Index** | Lookup tables, cache keys | Fastest option for simple key-value lookups |
+| **Bitmap Index** | Data warehouse fact tables | Efficient queries on dimension foreign keys |
+| **Covering Index** | High-read OLTP | Avoids accessing the table entirely |
+
+## Chapter Quiz
+
+1. The search complexity of a B+ tree is:
+   a) O(1)
+   b) O(log n)
+   c) O(n)
+   d) O(n log n)
+
+2. Which index type does NOT support range queries?
+   a) B+ Tree
+   b) Hash
+   c) Bitmap
+   d) Composite B+ Tree
+
+3. A clustered index means:
+   a) Multiple indexes are stored together
+   b) The table data is physically ordered by the index key
+   c) The index stores a pointer to the data
+   d) The index covers all columns
+
+4. How many clustered indexes can a table have?
+   a) Zero or one
+   b) Up to two
+   c) As many as needed
+   d) At least one
+
+5. The most important factor when designing a composite index is:
+   a) Index name
+   b) Column order (high-selectivity first)
+   c) Number of columns (at least 3)
+   d) Data type of the first column
+
+6. A partial index is useful when:
+   a) Queries frequently filter on a subset of rows
+   b) The table is very small
+   c) Every column needs an index
+   d) The database is read-only
+
+7. Which type of index is most space-efficient for low-cardinality columns?
+   a) B+ Tree
+   b) Hash
+   c) Bitmap
+   d) Functional
+
+8. A covering index is one that:
+   a) Covers all tables in the database
+   b) Contains all columns needed by a query, eliminating table access
+   c) Is clustered
+   d) Includes every column
+
+**Answers:** 1-b, 2-b, 3-b, 4-a, 5-b, 6-a, 7-c, 8-b
 
 ## Summary
 
@@ -404,7 +517,7 @@ EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 42;
    - Constraints: Minimal impact on write throughput
    - Consider: Partial indexes, time-based partitioning, B-tree vs. BRIN indexes
 
-10. For a product catalog with categories (∼100 distinct values), prices (continuously varying), and active status (boolean):
+10. For a product catalog with categories (âˆ¼100 distinct values), prices (continuously varying), and active status (boolean):
     - Write queries that filter by category, price range, and status
     - Design composite indexes for each query pattern
     - Explain why you might also use partial indexes

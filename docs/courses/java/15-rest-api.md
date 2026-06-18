@@ -1,4 +1,4 @@
-﻿# REST API Development with Spring MVC
+# REST API Development with Spring MVC
 
 ## Learning Objectives
 
@@ -20,7 +20,7 @@ After completing this chapter, you will be able to:
 
 ## 1. REST Architectural Style
 
-![REST API Development Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/15-rest-api.png)
+![REST API Development Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/15-rest-api.png)
 
 ### 1.1 What is REST?
 

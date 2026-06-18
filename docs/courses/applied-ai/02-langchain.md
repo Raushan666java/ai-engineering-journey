@@ -1,4 +1,4 @@
-﻿# Chapter 2: LangChain & LLM Orchestration
+# Chapter 2: LangChain & LLM Orchestration
 
 > **Prerequisite:** [01 - Introduction to Applied AI](./01-introduction.md)  
 > **Next Chapter:** [03 - OpenCV & Computer Vision](./03-opencv.md)
@@ -186,7 +186,7 @@ print(f"Joke: {result['joke'].content}")
 
 RAG retrieves relevant documents from a vector store and adds them to the LLM context.
 
-![RAG Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch02-rag-architecture.png)
+![RAG Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/applied-ai/ch02-rag-architecture.png)
 
 ### 2.4.1 Document Loading & Chunking
 
@@ -272,7 +272,7 @@ print(answer.content)
 
 Agents let the LLM decide which tools to call and in what order.
 
-![Agent Tool Calling Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch02-agent-flow.png)
+![Agent Tool Calling Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/applied-ai/ch02-agent-flow.png)
 
 ### 2.5.1 Custom Tools
 

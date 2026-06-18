@@ -1,4 +1,4 @@
-# Chapter 14: Distributed Data Structures — Consistent Hashing and Beyond
+# Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond
 
 ---
 ## Learning Objectives
@@ -14,15 +14,15 @@
 
 ## Theory
 
-![Distributed Data Structures Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/14-distributed-data-structures.png)
+![Distributed Data Structures Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/14-distributed-data-structures.png)
 
 ### 1. Consistent Hashing
 
-Consistent hashing maps keys to nodes in a hash ring (range [0, 2^m - 1]). Both nodes and keys hash into this ring; each key is assigned to the nearest clockwise node. When a node joins or leaves, only keys in its immediate vicinity redistribute — O(K/N) keys rather than O(K) reshuffling, where K is total keys and N is node count.
+Consistent hashing maps keys to nodes in a hash ring (range [0, 2^m - 1]). Both nodes and keys hash into this ring; each key is assigned to the nearest clockwise node. When a node joins or leaves, only keys in its immediate vicinity redistribute â€” O(K/N) keys rather than O(K) reshuffling, where K is total keys and N is node count.
 
 **Hash ring**: Construct a circle of size 2^m (typically m = 32 or 64). Hash each node identifier (e.g., IP:port) with a uniform hash function and place it on the ring. Hash each key and walk clockwise to find the first node.
 
-**Virtual nodes**: Each physical node occupies multiple positions on the ring. With R replica tokens, the expected coefficient of variation for load is 1/√R. Standard deployments use R = 100-200 virtual nodes per physical node. This smooths load imbalances that arise from non-uniform hash distributions and heterogeneous node capacities.
+**Virtual nodes**: Each physical node occupies multiple positions on the ring. With R replica tokens, the expected coefficient of variation for load is 1/âˆšR. Standard deployments use R = 100-200 virtual nodes per physical node. This smooths load imbalances that arise from non-uniform hash distributions and heterogeneous node capacities.
 
 **Implementation sketch** (hash ring with binary search):
 
@@ -83,7 +83,7 @@ For large node sets, HRW can be accelerated with a tree-based grouping (hierarch
 
 ### 3. Merkle Trees
 
-A Merkle tree is a complete binary tree where leaf nodes store hashes of data blocks and internal nodes store hashes of their children. The root hash commits the entire dataset. Two replicas compare root hashes; if they differ, they walk down divergent branches to find the specific blocks that differ — O(log B) comparisons for B blocks rather than O(B).
+A Merkle tree is a complete binary tree where leaf nodes store hashes of data blocks and internal nodes store hashes of their children. The root hash commits the entire dataset. Two replicas compare root hashes; if they differ, they walk down divergent branches to find the specific blocks that differ â€” O(log B) comparisons for B blocks rather than O(B).
 
 **Application in Dynamo**: Each node maintains a Merkle tree per key range. During anti-entropy (gossip-based reconciliation), nodes exchange root hashes. Mismatched ranges are recursively compared until individual conflicting key-value pairs are identified. This reduces reconciliation bandwidth from O(N) to O(log N) per range.
 
@@ -102,12 +102,12 @@ A Bloom filter is a space-efficient probabilistic data structure that tests set 
 **False positive rate** (after n insertions):
 
 ```
-p = (1 - (1 - 1/m)^(k*n))^k  ≈  (1 - e^(-k*n/m))^k
+p = (1 - (1 - 1/m)^(k*n))^k  â‰ˆ  (1 - e^(-k*n/m))^k
 ```
 
 **Optimal k**: k_opt = (m/n) * ln(2)
 
-At k_opt, p = (1/2)^k ≈ 0.6185^(m/n). For a 1% false positive rate, m/n ≈ 9.6 bits per element.
+At k_opt, p = (1/2)^k â‰ˆ 0.6185^(m/n). For a 1% false positive rate, m/n â‰ˆ 9.6 bits per element.
 
 ```python
 import hashlib, math
@@ -141,10 +141,10 @@ A dynamic Bloom filter that grows as elements are added. Consists of a series of
 
 ### 5. Count-Min Sketch
 
-A probabilistic frequency table using a 2D array of width w and depth d (typically d = 4-5, w = 2/ε for error bound ε). Each row uses an independent hash function. Increment entries at h_i(x) across all d rows. Point query returns the minimum of all d values: min(CMS[1][h_1(x)], ..., CMS[d][h_d(x)]).
+A probabilistic frequency table using a 2D array of width w and depth d (typically d = 4-5, w = 2/Îµ for error bound Îµ). Each row uses an independent hash function. Increment entries at h_i(x) across all d rows. Point query returns the minimum of all d values: min(CMS[1][h_1(x)], ..., CMS[d][h_d(x)]).
 
 ```
-Error bound: P(|estimate - true| > ε * total_count) ≤ δ, where δ = e^(-d)
+Error bound: P(|estimate - true| > Îµ * total_count) â‰¤ Î´, where Î´ = e^(-d)
 Space: O(d * w) counters
 ```
 
@@ -173,17 +173,17 @@ class CountMinSketch:
 
 ### 6. HyperLogLog
 
-Estimates the cardinality (number of distinct elements) of a multiset using O(log log N) space — 12 KB for 2% error on billions of elements. The algorithm observes the longest run of leading zeros in hashed values: if we see a hash starting with ρ zeros, we expect approximately 2^ρ distinct elements.
+Estimates the cardinality (number of distinct elements) of a multiset using O(log log N) space â€” 12 KB for 2% error on billions of elements. The algorithm observes the longest run of leading zeros in hashed values: if we see a hash starting with Ï zeros, we expect approximately 2^Ï distinct elements.
 
-**Loglog counting**: For n elements with hash values uniformly distributed in [0, 2^L), the probability of a hash beginning with ρ zeros is 2^(-ρ-1). The maximum observed ρ across n elements approximates log2(n).
+**Loglog counting**: For n elements with hash values uniformly distributed in [0, 2^L), the probability of a hash beginning with Ï zeros is 2^(-Ï-1). The maximum observed Ï across n elements approximates log2(n).
 
-**HyperLogLog** improves this with stochastic averaging: split the hash into a bucket index (first p bits, yielding m = 2^p registers) and a value (remaining bits). Track ρ_max per bucket. Combine estimates using harmonic mean:
+**HyperLogLog** improves this with stochastic averaging: split the hash into a bucket index (first p bits, yielding m = 2^p registers) and a value (remaining bits). Track Ï_max per bucket. Combine estimates using harmonic mean:
 
 ```
-E = α_m * m² / Σ(2^(-M[j]))
+E = Î±_m * mÂ² / Î£(2^(-M[j]))
 ```
 
-where α_m is a bias correction constant (~0.7213 for m = 2^12).
+where Î±_m is a bias correction constant (~0.7213 for m = 2^12).
 
 **Merge operation**: Two HLL sketches merge by taking element-wise max of registers, enabling distributed cardinality estimation across shards.
 
@@ -216,18 +216,18 @@ class HyperLogLog:
 
 A Cuckoo filter stores fingerprints (f-bit hash of each item) in a Cuckoo hash table. Each item maps to two candidate buckets (via primary hash and XOR of fingerprint). On insertion, if both buckets are full, existing entries are relocated (cuckoo kick). Supports deletion natively by removing the fingerprint.
 
-**Properties**: Supports deletion, O(1) lookup, 95% load factor, better lookup performance than Bloom for low false positive targets (< 3%). False positive rate ≈ 1/2^f for f-bit fingerprint.
+**Properties**: Supports deletion, O(1) lookup, 95% load factor, better lookup performance than Bloom for low false positive targets (< 3%). False positive rate â‰ˆ 1/2^f for f-bit fingerprint.
 
 ```
 f = log2(1/p) + 3  bits per fingerprint
-Space ≈ (log2(1/p) + 3) / load_factor  bits per item
+Space â‰ˆ (log2(1/p) + 3) / load_factor  bits per item
 ```
 
 ### 8. Quotient Filter and XOR Filter
 
 **Quotient filter**: Stores the quotient (upper bits of hash) and remainder (lower bits) in a compact hash table using linear probing. Supports deletion, merging, and better cache locality than Bloom filters. Uses 3 metadata bits per slot: is_occupied, is_continuation, is_shifted.
 
-**XOR filter**: A recent alternative to Bloom filters for static sets (no inserts after build). Uses a single hash function and 3 hash tables. Requires ~1.23 log2(1/p) + 3 bits per entry — approximately 20-30% smaller than Bloom filters for 1% false positive rate. Cannot support dynamic insertions.
+**XOR filter**: A recent alternative to Bloom filters for static sets (no inserts after build). Uses a single hash function and 3 hash tables. Requires ~1.23 log2(1/p) + 3 bits per entry â€” approximately 20-30% smaller than Bloom filters for 1% false positive rate. Cannot support dynamic insertions.
 
 ### 9. Comparison Table
 
@@ -236,7 +236,7 @@ Space ≈ (log2(1/p) + 3) / load_factor  bits per item
 | Bloom Filter     | No (standard)   | 9.6 bits   | 1% (tunable)   | Insert + Lookup     | Membership, cache filter  |
 | Counting Bloom   | Yes             | ~36 bits   | 1%             | Insert + Delete     | Deletable membership      |
 | Cuckoo Filter    | Yes             | ~13 bits   | 0.1-3%         | Insert + Delete     | Deletable, low FP         |
-| Count-Min Sketch | No              | ~5 bits    | ε=0.1% (bound) | Increment + Query   | Frequency estimation      |
+| Count-Min Sketch | No              | ~5 bits    | Îµ=0.1% (bound) | Increment + Query   | Frequency estimation      |
 | HyperLogLog      | N/A             | 12 KB      | 2% error       | Add + Merge + Count | Cardinality               |
 | Quotient Filter  | Yes             | ~10 bits   | 1%             | Insert + Delete    | Mergable, cache-friendly  |
 | XOR Filter       | No (static)     | ~7 bits    | 1%             | Build + Lookup     | Static set, minimal space |
@@ -280,11 +280,11 @@ Given 10 million elements and 1% false positive rate:
 ```python
 n = 10_000_000
 p = 0.01
-m = int(-n * math.log(p) / (math.log(2)**2))  # 95,904,678 bits ≈ 11.4 MB
+m = int(-n * math.log(p) / (math.log(2)**2))  # 95,904,678 bits â‰ˆ 11.4 MB
 k = int((m / n) * math.log(2))                # 7 hash functions
 ```
 
-At k = 7 and m/n = 9.6, the actual false positive rate is (1 - e^(-7/9.6))^7 ≈ 0.0081 (0.81%), slightly better than target. Reducing m/n to 6.2 doubles the FP rate to ~2%.
+At k = 7 and m/n = 9.6, the actual false positive rate is (1 - e^(-7/9.6))^7 â‰ˆ 0.0081 (0.81%), slightly better than target. Reducing m/n to 6.2 doubles the FP rate to ~2%.
 
 ### Example 3: HyperLogLog Merge in Distributed Counting
 
@@ -307,7 +307,7 @@ for hll in hll_shards:
 print(f"Estimated unique visitors: {merged.cardinality()}")
 ```
 
-At p = 12 (m = 4096), total memory = 4096 registers × 6 bits ≈ 3 KB per shard, merged result accurate within ~2%.
+At p = 12 (m = 4096), total memory = 4096 registers Ã— 6 bits â‰ˆ 3 KB per shard, merged result accurate within ~2%.
 
 ### Example 4: Cuckoo Filter Implementation
 
@@ -361,12 +361,12 @@ class CuckooFilter:
 
 ## Summary
 
-- Consistent hashing maps keys to nodes on a ring with O(log N) lookup; virtual nodes (R ≈ 150) smooth load imbalance to CV < 0.01
+- Consistent hashing maps keys to nodes on a ring with O(log N) lookup; virtual nodes (R â‰ˆ 150) smooth load imbalance to CV < 0.01
 - Rendezvous hashing needs O(N) lookups but is metadata-free and inherently balanced
 - Merkle trees enable log-time anti-entropy reconciliation in Dynamo/Cassandra by comparing block-level hash roots
 - Bloom filters (m/n = 9.6 for 1% FP rate) trade accuracy for space; optimal hash count k = (m/n) * ln(2)
-- Counting Bloom adds 4-bit counters per slot for deletion support but uses 4× the space
-- Count-Min Sketch estimates item frequency with εδ-bounds in sublinear space
+- Counting Bloom adds 4-bit counters per slot for deletion support but uses 4Ã— the space
+- Count-Min Sketch estimates item frequency with ÎµÎ´-bounds in sublinear space
 - HyperLogLog estimates cardinality at ~2% error using 12 KB, with trivial merge for distributed counts
 - Cuckoo filters support deletion and beat Bloom on lookup speed for FP rates below 3%
 - XOR filters are smaller than Bloom but require static datasets
@@ -389,7 +389,7 @@ class CuckooFilter:
 1. **Bloom filter sizing**: Design a Bloom filter for a web crawler that stores 500 million URLs with a 0.1% false positive rate. Calculate m, k, and the actual FP rate. If each 4-bit counter is required for deletions, what is the new total memory?
 2. **Count-Min Sketch frequency**: A CMS has d=4, w=10000. Item "X" has true frequency 500 out of 1,000,000 total increments. What is the worst-case overestimate bound? If all d rows report values [512, 487, 503, 498], what is the estimate and why is the min used?
 3. **Consistent hashing simulation**: Implement a simulation comparing standard consistent hashing (R=1) vs virtual nodes (R=150) on a 5-node cluster. Distribute 1M keys and compute the Gini coefficient for each configuration.
-4. **HyperLogLog bias correction**: For p=10 (m=1024), compute α_m and the estimated cardinality when half the registers are at value 0, a quarter at 1, and the rest at 2.
+4. **HyperLogLog bias correction**: For p=10 (m=1024), compute Î±_m and the estimated cardinality when half the registers are at value 0, a quarter at 1, and the rest at 2.
 
 ### Challenge Problem
 
@@ -400,4 +400,4 @@ class CuckooFilter:
 - A Count-Min Sketch per node for access frequency tracking
 - An HLL for distributed cardinality tracking per key prefix
 
-Calculate the total memory per node and across the cluster. Define the query path when a read request arrives: sketch the decision flow (node Bloom → Cuckoo → CMS frequency update → key lookup) with worst-case and P99 latency analysis. Address filter rebuild on compaction, false positive handling (the key isn't actually present), and dynamic capacity expansion.
+Calculate the total memory per node and across the cluster. Define the query path when a read request arrives: sketch the decision flow (node Bloom â†’ Cuckoo â†’ CMS frequency update â†’ key lookup) with worst-case and P99 latency analysis. Address filter rebuild on compaction, false positive handling (the key isn't actually present), and dynamic capacity expansion.

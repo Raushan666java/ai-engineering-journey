@@ -1,16 +1,52 @@
 # Chapter 13: Loop Optimization
 
+> **Prereq:** Chapter 12 (Data-Flow Analysis) â€” DFA provides the reaching-definitions and live-variable info loop opts need.
+> **Next:** Chapter 14 (Register Allocation) â€” loops put the most pressure on registers.
+
 ## Learning Objectives
 
 After completing this chapter, students will be able to: perform loop-invariant code motion; eliminate induction variables; apply strength reduction to loop computations; implement loop unrolling; transform programs with loop fusion and fission; reorder nested loops via loop interchange; and recognize opportunities for vectorization.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Code Motion | Move invariants to pre-header | Evaluates once instead of every iteration |
+| Induction Variables | Variables with constant per-iteration change | Enables simpler loop control |
+| Strength Reduction | Replace multiply with add | Cheaper operations inside hot loops |
+| Unrolling | Replicate body, reduce overhead | Improves scheduling and parallelism |
+| Fusion/Fission | Combine or split loops | Better cache behavior and vectorization |
+| Interchange | Swap loop nesting order | Improves memory access patterns |
+
+```mermaid
+flowchart LR
+    A[Natural Loop] --> B[Invariant Detection]
+    B --> C[Code Motion to Pre-header]
+    A --> D[Induction Variable Analysis]
+    D --> E[Strength Reduction]
+    A --> F{Further Transform}
+    F --> G[Unrolling]
+    F --> H[Fusion/Fission]
+    F --> I[Interchange]
+    F --> J[Vectorization]
+    E --> K[Optimized Loop]
+    G --> K
+    H --> K
+    I --> K
+    J --> K
+    style A fill:#e1f5fe
+    style K fill:#c8e6c9
+```
+
 ## Theory
 
-![Loop Optimization Techniques — Code Motion, Induction Variables, Unrolling, Vectorization](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch-13-loop-optimization.png)
+![Loop Optimization Techniques â€” Code Motion, Induction Variables, Unrolling, Vectorization](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/compiler-design/ch-13-loop-optimization.png)
 
 ### The Importance of Loop Optimization
 
 Loops are the primary source of runtime execution in most programs. A small fraction of the code (often less than 10%) accounts for more than 90% of execution time, and that fraction is typically composed of loops. Consequently, loop optimizations yield disproportionate performance improvements compared to optimizations applied to the rest of the program.
+
+> **One-Sentence Takeaway:** Loop optimization delivers the highest payoff in compilation because programs spend most of their time in loops â€” even small per-iteration savings multiply across millions of iterations.
 
 ### Loop-Invariant Code Motion
 
@@ -47,9 +83,11 @@ Unrolling improves performance by: (1) reducing branch instructions, (2) increas
 
 ### Loop Fusion and Fission
 
-**Loop fusion** (jamming) combines two adjacent loops that iterate over the same range into a single loop. Fusion improves cache locality by processing related computations at the same time and reduces loop overhead. Fusion is legal when no data dependencies are violated — that is, when statements in the first loop do not depend on results from the second loop and vice versa.
+**Loop fusion** (jamming) combines two adjacent loops that iterate over the same range into a single loop. Fusion improves cache locality by processing related computations at the same time and reduces loop overhead. Fusion is legal when no data dependencies are violated â€” that is, when statements in the first loop do not depend on results from the second loop and vice versa.
 
 **Loop fission** (distribution) splits a single loop into multiple loops, each handling a subset of the loop body. Fission may enable other optimizations such as vectorization when the individual loops have simpler memory-access patterns. It also reduces register pressure and can improve cache behavior when the split loops access disjoint data regions.
+
+> **Warning:** Loop unrolling increases code size â€” excessive unrolling can cause instruction-cache misses that negate the benefit. Modern compilers use profile-guided heuristics to select the unroll factor.
 
 ### Loop Interchange
 
@@ -64,6 +102,36 @@ Vectorization transforms a loop to use SIMD (Single Instruction, Multiple Data) 
 - **Recurrence handling**: recognize certain reducible recurrences (summation, dot product) that can be vectorized.
 
 ## Example
+
+### Concept Comparison
+
+| Optimization | Benefit | Cost | Risk |
+|-------------|--------|------|------|
+| Code Motion | Remove per-iteration eval | None (safe) | Must verify safety conditions |
+| Strength Reduction | Replace mul with add | Slightly more regs | None |
+| Unrolling | Reduce branch overhead | Code size increase | I-cache pollution |
+| Fusion | Better locality | None | May prevent vectorization |
+| Fission | Enables vectorization | Extra loop overhead | Increases total code |
+| Interchange | Better cache behavior | Loop-restructuring cost | May break vectorization |
+
+### Quick Reference
+
+| Optimization | Condition | Transformation |
+|-------------|-----------|---------------|
+| Code Motion | Invariant + safe | Move to pre-header |
+| Strength Reduction | i is induction var, expr = câ‚Ã—i + câ‚‚ | Replace mul with add |
+| Unrolling | Known trip count or remainder check | Replicate body K times |
+| Fusion | Same bounds, no cross-loop dependency | Merge into single loop |
+| Interchange | Perfect nest, stride-N access | Swap inner/outer loops |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Language Design | Loop semantics for new languages | Loop opt depends on well-defined semantics |
+| Systems Programming | HPC, numerical computing | Loop opts critical for sustained FLOPs |
+| Web Development | JS engine hot-loop optimization | JITs apply all these techniques |
+| Tooling | Auto-vectorizing compilers | Vectorization is the frontier of loop opt |
 
 ### Example 13.1: Strength Reduction for Array Indexing
 
@@ -124,4 +192,29 @@ Loop optimizations target the most-executed regions of a program. Loop-invariant
 
 ### Challenge Problem
 
-1. Implement a loop-optimization pass in your chosen language that reads three-address code containing a single loop, performs loop-invariant code motion and strength reduction, and outputs the optimized code. Your pass must include a natural-loop detector and an induction-variable analyzer. Test your optimizer on a loop that computes the dot product of two arrays: accumulate the sum of `a[i] * b[i]` over i from 0 to n-1. Show the before and after three-address code.
+1. Implement a loop-optimization pass in your chosen language that reads three-address code containing a single loop, performs loop-invariant code motion and strength reduction, and outputs the optimized code. Your pass must include a natural-loop detector and an induction-variable analyzer. Test your optimizer on a loop that computes the dot product of two arrays: accumulate the sum of `a[i] * b[i]` over i from 0 to n-1.     Show the before and after three-address code.
+
+### Chapter Quiz
+
+1. Loop-invariant code motion moves expressions to the:
+   - A) Loop header
+   - B) Loop pre-header
+   - C) Loop exit
+   - D) First iteration
+
+2. Strength reduction replaces which operation inside loops?
+   - A) Addition with subtraction
+   - B) Multiplication with addition
+   - C) Division with multiplication
+   - D) Memory access with register access
+
+3. What is the primary benefit of loop interchange?
+   - A) Reduces total loop iterations
+   - B) Improves cache performance by making inner-loop access sequential
+   - C) Eliminates loop-carried dependencies
+   - D) Reduces register pressure
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

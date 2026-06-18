@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: explain the principl
 
 ## Theory
 
-![Quality Management Framework](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-09-quality-management.png)
+![Quality Management Framework](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-09-quality-management.png)
 
 ### The Concept of Software Quality
 
@@ -26,27 +26,27 @@ ISO 9001 is an international standard that specifies requirements for a quality 
 
 ISO 9001 requires organisations to: establish a quality policy and quality objectives; document their quality management system; plan and control processes; manage resources; plan and implement product realisation; measure, analyse, and improve processes; and conduct internal audits and management reviews.
 
-Certification to ISO 9001 demonstrates that an organisation has implemented a compliant quality management system. However, certification does not guarantee the quality of any specific product — it indicates that the organisation follows defined processes.
+Certification to ISO 9001 demonstrates that an organisation has implemented a compliant quality management system. However, certification does not guarantee the quality of any specific product â€” it indicates that the organisation follows defined processes.
 
 ### Capability Maturity Model Integration
 
 CMMI is a process improvement framework developed by the Software Engineering Institute. It provides a structured approach for assessing and improving an organisation's software processes. CMMI defines five maturity levels.
 
-Level 1 — Initial: Processes are ad hoc, chaotic, and reactive. Success depends on individual heroics rather than organisational capability. There are no defined processes, and the organisation cannot reliably repeat successful projects.
+Level 1 â€” Initial: Processes are ad hoc, chaotic, and reactive. Success depends on individual heroics rather than organisational capability. There are no defined processes, and the organisation cannot reliably repeat successful projects.
 
-Level 2 — Managed: Basic project management processes are established. Projects are planned, performed, measured, and controlled. The organisation can repeat successful practices from similar projects. Requirements management, project planning, project monitoring and control, supplier agreement management, measurement and analysis, process and product quality assurance, and configuration management are practised.
+Level 2 â€” Managed: Basic project management processes are established. Projects are planned, performed, measured, and controlled. The organisation can repeat successful practices from similar projects. Requirements management, project planning, project monitoring and control, supplier agreement management, measurement and analysis, process and product quality assurance, and configuration management are practised.
 
-Level 3 — Defined: Processes are documented, standardised, and integrated across the organisation. All projects use approved customisations of the organisation's standard processes. The organisation has a defined process asset library, and processes are tailored per project.
+Level 3 â€” Defined: Processes are documented, standardised, and integrated across the organisation. All projects use approved customisations of the organisation's standard processes. The organisation has a defined process asset library, and processes are tailored per project.
 
-Level 4 — Quantitatively Managed: Quantitative objectives for quality and process performance are established and used to manage projects. Subprocesses are selected and controlled using statistical techniques. The organisation can predict process performance within established bounds.
+Level 4 â€” Quantitatively Managed: Quantitative objectives for quality and process performance are established and used to manage projects. Subprocesses are selected and controlled using statistical techniques. The organisation can predict process performance within established bounds.
 
-Level 5 — Optimising: The organisation continuously improves its processes based on quantitative understanding. Process improvement is institutionalised as a core organisational competency. The organisation can rapidly adapt to changes and exploit improvement opportunities.
+Level 5 â€” Optimising: The organisation continuously improves its processes based on quantitative understanding. Process improvement is institutionalised as a core organisational competency. The organisation can rapidly adapt to changes and exploit improvement opportunities.
 
 CMMI is available in two representations: staged, which uses the five maturity levels, and continuous, which uses capability levels for individual process areas. The staged representation provides a roadmap for process improvement, while the continuous representation allows organisations to target specific process areas.
 
 ### Six Sigma
 
-Six Sigma is a data-driven methodology for eliminating defects and reducing variation in processes. The term "Six Sigma" refers to a statistical target — 3.4 defects per million opportunities — which corresponds to six standard deviations between the process mean and the nearest specification limit.
+Six Sigma is a data-driven methodology for eliminating defects and reducing variation in processes. The term "Six Sigma" refers to a statistical target â€” 3.4 defects per million opportunities â€” which corresponds to six standard deviations between the process mean and the nearest specification limit.
 
 The DMAIC cycle is the core improvement methodology of Six Sigma: Define, where the problem, goals, and project scope are defined; Measure, where baseline data is collected and the current process performance is quantified; Analyse, where root causes of defects are identified through data analysis; Improve, where solutions are designed and implemented to address root causes; and Control, where the improved process is monitored to sustain the gains.
 
@@ -106,7 +106,7 @@ A defence software contractor achieved CMMI Level 5 certification. At Level 5, t
 
 ## Summary
 
-Software quality management encompasses quality assurance, planning, and control. ISO 9001 provides a framework for quality management systems. CMMI defines five maturity levels for process improvement, from Initial to Optimising. Six Sigma and DMAIC provide a data-driven approach to defect reduction. Quality metrics enable objective measurement of product and process quality. Reviews — walkthroughs, technical reviews, and inspections — are the most effective techniques for detecting defects in early work products. Continuous process improvement is essential for organisational growth.
+Software quality management encompasses quality assurance, planning, and control. ISO 9001 provides a framework for quality management systems. CMMI defines five maturity levels for process improvement, from Initial to Optimising. Six Sigma and DMAIC provide a data-driven approach to defect reduction. Quality metrics enable objective measurement of product and process quality. Reviews â€” walkthroughs, technical reviews, and inspections â€” are the most effective techniques for detecting defects in early work products. Continuous process improvement is essential for organisational growth.
 
 ## Exercises
 

@@ -6,13 +6,13 @@ After completing this chapter, the student will be able to: explain the purpose 
 
 ## Theory
 
-![Software Metrics Categories](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-15-metrics.png)
+![Software Metrics Categories](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-15-metrics.png)
 
 ### The Purpose of Software Measurement
 
 Software measurement is the process of assigning numbers to attributes of software products, processes, and projects. Measurement provides the quantitative basis for understanding, controlling, and improving software development.
 
-The fundamental axiom of software measurement is that what cannot be measured cannot be controlled or improved. However, measurement is not an end in itself — it is a means to support decision making. Metrics must be interpreted in context and used to guide action, not merely to generate numbers.
+The fundamental axiom of software measurement is that what cannot be measured cannot be controlled or improved. However, measurement is not an end in itself â€” it is a means to support decision making. Metrics must be interpreted in context and used to guide action, not merely to generate numbers.
 
 Software metrics are classified into three categories: product metrics, which measure attributes of the software artefact; process metrics, which measure attributes of the development process; and project metrics, which measure attributes of the project and its environment.
 

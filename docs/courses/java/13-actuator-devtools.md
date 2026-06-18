@@ -19,7 +19,7 @@ After completing this chapter, you will be able to:
 
 ## 1. Theory
 
-![Actuator & DevTools Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/13-actuator-devtools.png)
+![Actuator & DevTools Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/13-actuator-devtools.png)
 
 ### 1.1 Introduction to Spring Boot Actuator
 
@@ -171,7 +171,7 @@ The health endpoint aggregates health information from all registered `HealthInd
 Health status forms a hierarchy from worst to best:
 
 ```
-DOWN → OUT_OF_SERVICE → UNKNOWN → UP
+DOWN â†’ OUT_OF_SERVICE â†’ UNKNOWN â†’ UP
 ```
 
 If any component reports `DOWN`, the overall status becomes `DOWN`.
@@ -837,7 +837,7 @@ Output:
 
 ### 1.10 The /actuator/loggers Endpoint
 
-View and change log levels at runtime — one of the most useful features for debugging production issues.
+View and change log levels at runtime â€” one of the most useful features for debugging production issues.
 
 #### 1.10.1 Viewing Logger Configurations
 
@@ -875,7 +875,7 @@ curl -X POST http://localhost:8080/actuator/loggers/com.example \
   -d '{"configuredLevel": "DEBUG"}'
 ```
 
-This is **immediate** — no restart required. It persists until the application restarts or you change it back.
+This is **immediate** â€” no restart required. It persists until the application restarts or you change it back.
 
 Programmatic equivalent:
 
@@ -1396,7 +1396,7 @@ DevTools changes some defaults for development:
 
 | Property | Production Default | DevTools Default |
 |----------|-------------------|------------------|
-| `spring.thymeleaf.cache` | `false` (Spring Boot default), but commonly `true` in prod | `true` → `false` |
+| `spring.thymeleaf.cache` | `false` (Spring Boot default), but commonly `true` in prod | `true` â†’ `false` |
 | `spring.freemarker.cache` | `true` | `false` |
 | `spring.groovy.templates.cache` | `true` | `false` |
 | `spring.web.resources.cache.period` | 0 | 0 |
@@ -1494,8 +1494,8 @@ java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005 -jar a
 
 Configure in your IDE (IntelliJ IDEA):
 
-1. Run → Edit Configurations
-2. Add New Configuration → Remote JVM Debug
+1. Run â†’ Edit Configurations
+2. Add New Configuration â†’ Remote JVM Debug
 3. Set port: 5005
 4. Use module classpath for your application
 
@@ -1940,9 +1940,9 @@ Write a test that verifies the metrics increment correctly.
 
 Create three `InfoContributor` beans:
 
-1. `BuildInfoContributor` — returns build number, timestamp, artifact name
-2. `SystemInfoContributor` — returns OS name, arch, available processors, Java version
-3. `DatabaseInfoContributor` — returns database product name, version, connection count
+1. `BuildInfoContributor` â€” returns build number, timestamp, artifact name
+2. `SystemInfoContributor` â€” returns OS name, arch, available processors, Java version
+3. `DatabaseInfoContributor` â€” returns database product name, version, connection count
 
 Test by checking `/actuator/info` response.
 
@@ -1960,11 +1960,11 @@ Test by checking `/actuator/info` response.
 
 Secure actuator endpoints with Spring Security:
 
-1. `/actuator/health` — public (no auth required)
-2. `/actuator/info` — authenticated (any authenticated user)
-3. `/actuator/env` — ADMIN role only
-4. `/actuator/loggers` — ACTUATOR_ADMIN role only
-5. `/actuator/shutdown` — denied for all (return 403)
+1. `/actuator/health` â€” public (no auth required)
+2. `/actuator/info` â€” authenticated (any authenticated user)
+3. `/actuator/env` â€” ADMIN role only
+4. `/actuator/loggers` â€” ACTUATOR_ADMIN role only
+5. `/actuator/shutdown` â€” denied for all (return 403)
 
 Use different management port. Write tests for each scenario.
 

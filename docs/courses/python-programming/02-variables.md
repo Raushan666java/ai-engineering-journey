@@ -9,7 +9,7 @@ By the end of this chapter, students will be able to:
 - Apply arithmetic, comparison, logical, assignment, bitwise, identity, and membership operators
 - Predict operator precedence and associativity
 
-![Python Data Types](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/02-variables.png)
+![Python Data Types](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/02-variables.png)
 
 ## 2.1 Variables and Dynamic Typing
 
@@ -54,7 +54,7 @@ b = 1_000_000       # underscores improve readability
 c = 0xFF            # hexadecimal (255)
 d = 0b1010          # binary (10)
 e = 0o77            # octal (63)
-f = 10 ** 100       # googol — huge integer
+f = 10 ** 100       # googol â€” huge integer
 print(f)            # 100000000000000000000000000000000...
 ```
 
@@ -195,7 +195,7 @@ print(a or b)    # True
 print(not a)     # False
 ```
 
-`and` and `or` short-circuit — they stop evaluating as soon as the result is determined:
+`and` and `or` short-circuit â€” they stop evaluating as soon as the result is determined:
 
 ```python
 def expensive():

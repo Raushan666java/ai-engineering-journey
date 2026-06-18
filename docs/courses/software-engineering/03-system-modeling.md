@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: explain the purpose 
 
 ## Theory
 
-![UML Diagram Types Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/03-system-modeling.png)
+![UML Diagram Types Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/03-system-modeling.png)
 
 ### The Purpose of System Modelling
 
@@ -68,7 +68,7 @@ Deployment diagrams are used to reason about system performance, reliability, an
 
 ### UML versus SysML
 
-The Systems Modeling Language (SysML) is a profile of UML adapted for systems engineering. SysML extends UML with constructs for modelling requirements, parametrics, and the flow-based behaviour of physical systems. While UML is focused on software-intensive systems, SysML supports the modelling of hardware, software, data, personnel, and facilities. SysML retains a subset of UML diagrams — use case, sequence, activity, state machine, and block definition diagrams (replacing class diagrams) — and adds requirements diagrams and parametric diagrams.
+The Systems Modeling Language (SysML) is a profile of UML adapted for systems engineering. SysML extends UML with constructs for modelling requirements, parametrics, and the flow-based behaviour of physical systems. While UML is focused on software-intensive systems, SysML supports the modelling of hardware, software, data, personnel, and facilities. SysML retains a subset of UML diagrams â€” use case, sequence, activity, state machine, and block definition diagrams (replacing class diagrams) â€” and adds requirements diagrams and parametric diagrams.
 
 ### Data Flow Diagrams
 

@@ -1,5 +1,8 @@
 # Chapter 5: Web Security
 
+> **Prereq:** Chapter 4 (System & Software Security) â€” web apps build on OS foundations and inherit their vulnerabilities.
+> **Next:** Chapter 6 (IAM) â€” web authentication mechanisms rely on secure identity management.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,37 @@
 - Describe Cross-Site Request Forgery (CSRF) and the role of anti-CSRF tokens.
 - Implement security headers and understand the importance of secure cookie attributes.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| OWASP Top 10 | Prioritised web risks | Industry-standard threat framework |
+| SQL Injection | Query injection | Most critical web vulnerability |
+| XSS | Script injection | Affects every site with user input |
+| CSRF | Forged requests | Protects state-changing operations |
+| Security Headers | CSP, HSTS, X-Frame-Options | Browser-enforced defense layers |
+
+```mermaid
+flowchart LR
+    A[Web App] --> B[Client-Side]
+    A --> C[Server-Side]
+    A --> D[Database]
+    B --> E[XSS]
+    B --> F[CSRF]
+    C --> G[Broken Auth]
+    C --> H[Security Misconfig]
+    D --> I[SQL Injection]
+    style A fill:#e1f5fe
+    style D fill:#fce4ec
+```
+
 ---
 
 ## Theory
 
-![Web Attack Surface](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch05-web-attacks.png)
+![Web Attack Surface](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cyber-security/ch05-web-attacks.png)
+
+> **One-Sentence Takeaway:** Web security centres on the OWASP Top 10 â€” SQL injection, XSS, and CSRF are the most critical risks, each prevented by separating data from commands and enforcing strict browser policies.
 
 ### OWASP Top 10
 The Open Web Application Security Project (OWASP) maintains a consensus list of the most critical security risks to web applications. Current highlights include:
@@ -102,3 +131,45 @@ Content-Security-Policy: default-src 'self'; script-src 'self' https://trusted.c
 
 ### Challenge Problem
 1. Design a Content Security Policy (CSP) for a complex web application that uses Google Analytics, a third-party chat widget, and some inline CSS for performance. Explain the trade-offs between a strict policy and application functionality.
+
+### Concept Comparison
+
+| Attack | Target | Root Cause | Key Defense |
+|--------|--------|------------|-------------|
+| SQL Injection | Database | Unsanitised input concatenation | Parameterised queries |
+| XSS | Browser | Untrusted output rendered as HTML | Output encoding, CSP |
+| CSRF | Authenticated sessions | No origin verification | Anti-CSRF token, SameSite cookie |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Network Security | WAF rules for SQLi/XSS | Network-layer web attack prevention |
+| App Security | OWASP Top 10, secure coding | Direct application of all web security concepts |
+| Cloud Security | WAF in cloud (AWS WAF, Cloud Armor) | Cloud-managed web security |
+| Research | DOM clobbering, XS-Leaks | Emerging client-side attack classes |
+
+### Chapter Quiz
+
+1. SQL Injection is best prevented by:
+   - A) Escaping all user input with regex
+   - B) Using parameterised queries / prepared statements
+   - C) Disabling SQL on the server
+   - D) Using stored procedures only
+
+2. Stored XSS differs from Reflected XSS because:
+   - A) Stored XSS is more dangerous â€” the payload persists on the server
+   - B) Reflected XSS requires no user interaction
+   - C) Stored XSS only works on modern browsers
+   - D) Reflected XSS can steal cookies, stored XSS cannot
+
+3. The `HttpOnly` cookie flag prevents:
+   - A) The server from reading the cookie
+   - B) JavaScript from accessing the cookie
+   - C) The cookie from being sent over HTTP
+   - D) Cookie expiration
+
+<details>
+<summary>Answers</summary>
+1. B, 2. A, 3. B
+</details>

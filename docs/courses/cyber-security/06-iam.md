@@ -1,5 +1,8 @@
 # Chapter 6: Identity & Access Management
 
+> **Prereq:** Chapter 5 (Web Security) â€” OAuth 2.0 and SAML secure web authentication.
+> **Next:** Chapter 7 (Cloud & Mobile Security) â€” cloud IAM extends enterprise identity to cloud providers.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,37 @@
 - Understand the protocols used for modern identity services like OAuth 2.0 and SAML.
 - Describe the risks associated with poor credential management and the benefits of federated identity.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Access Control | DAC, MAC, RBAC, ABAC | Choosing the right model for each context |
+| MFA | Something you know/have/are | Single factor is never enough |
+| Federation | SAML, OIDC, OAuth | SSO across organisational boundaries |
+| Lifecycle | Provision, deprovision | Orphaned accounts are a top attack vector |
+
+```mermaid
+flowchart LR
+    A[IAM] --> B[Authentication]
+    A --> C[Authorization]
+    A --> D[Account Lifecycle]
+    B --> E[Password]
+    B --> F[MFA]
+    B --> G[SSO / Federation]
+    C --> H[RBAC]
+    C --> I[ABAC]
+    style A fill:#e1f5fe
+    style B fill:#c8e6c9
+    style C fill:#fff3e0
+```
+
 ---
 
 ## Theory
 
-![IAM Access Control Models](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch06-iam-models.png)
+![IAM Access Control Models](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cyber-security/ch06-iam-models.png)
+
+> **One-Sentence Takeaway:** IAM ensures the right people access the right resources â€” RBAC and ABAC provide structured authorisation, while MFA and federation solve authentication across organisational boundaries.
 
 ### Core IAM Concepts
 IAM is the security discipline that enables the right individuals to access the right resources at the right times for the right reasons.
@@ -100,3 +129,46 @@ Scenario: A user wants to use a "Photo Printing" app to print photos from their 
 
 ### Challenge Problem
 1. Research the "Zero Trust Architecture" (ZTA). Explain how it changes the traditional approach to IAM and why the concept of "never trust, always verify" is becoming the industry standard. How does ZTA rely on many of the concepts discussed in this chapter?
+
+### Concept Comparison
+
+| Model | Policy Based On | Granularity | Admin Overhead |
+|-------|----------------|-------------|----------------|
+| DAC | User identity | Per-object | Low |
+| MAC | Security labels | System-wide | High |
+| RBAC | Roles | Per-role | Medium |
+| ABAC | Attributes (user, resource, environment) | Per-attribute | High but flexible |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Network Security | VPN auth, NAC | IAM for network access control |
+| App Security | OAuth 2.0, session management | Web app authentication and authorisation |
+| Cloud Security | AWS IAM, Azure RBAC | Cloud IAM at massive scale |
+| Research | Verifiable credentials (DID/VC) | Decentralised identity beyond federation |
+
+### Chapter Quiz
+
+1. RBAC grants permissions based on:
+   - A) The user's identity
+   - B) The user's role in the organisation
+   - C) Security clearance labels
+   - D) Environmental attributes
+
+2. OAuth 2.0 is primarily:
+   - A) An authentication protocol
+   - B) An authorisation framework for delegated access
+   - C) A password hashing standard
+   - D) A single sign-on protocol
+
+3. The most secure MFA factor type is:
+   - A) SMS code (something you have)
+   - B) Hardware security key (something you have)
+   - C) Password (something you know)
+   - D) Fingerprint (something you are)
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

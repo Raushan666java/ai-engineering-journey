@@ -1,4 +1,4 @@
-﻿# Chapter 40: Finance & FinTech Interview Q&A
+# Chapter 40: Finance & FinTech Interview Q&A
 
 ---
 
@@ -8,7 +8,7 @@
 
 ## 1. Finance Domain Knowledge
 
-![Finance Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/40-interview-finance.png)
+![Finance Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/40-interview-finance.png)
 
 
 ### Q1: What is PCI-DSS compliance and how does it affect Laravel application design?

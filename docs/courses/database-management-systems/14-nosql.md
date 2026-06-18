@@ -11,7 +11,7 @@
 
 ## Theory
 
-![NoSQL: Categories, CAP Theorem, MongoDB and Redis](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch06-nosql.png)
+![NoSQL: Categories, CAP Theorem, MongoDB and Redis](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch06-nosql.png)
 
 ### 14.1 The Rise of NoSQL
 
@@ -261,7 +261,7 @@ Modern applications often use **multiple** database types, each optimized for sp
 
 ## Examples
 
-**Example 14.1: CAP in Practice — Network Partition**
+**Example 14.1: CAP in Practice â€” Network Partition**
 
 A distributed database with nodes in us-east-1 and us-west-1.
 
@@ -309,6 +309,113 @@ CREATE TABLE person_hobby (person_id FK, hobby_id FK);
 
 Each representation has different trade-offs for querying, updating, and scaling.
 
+## ðŸ’¡ Pro Tips
+
+1. **NoSQL does not mean "no SQL"** â€” many NoSQL databases support SQL-like query languages (MongoDB Aggregation, Cassandra CQL, Neo4j Cypher). The "NoSQL" label is historical.
+2. **Understand your access patterns first** â€” document DBs for complex objects, key-value for caching/sessions, column-family for time-series/analytics, graph for connected data.
+3. **The CAP theorem is not an excuse to ignore consistency** â€” most production systems use tunable consistency (quorum reads/writes) rather than extreme AP or CP.
+4. **Polyglot persistence is powerful but expensive** â€” each additional database type adds operational complexity. Use one primary store and augment only where the model mismatch is critical.
+5. **Schema-less does not mean without schema** â€” the schema moves to the application layer (ORM, validation). You must still design it carefully â€” it is just not enforced by the database.
+
+## One-Sentence Takeaways
+
+- **14.1:** NoSQL databases emerged to address scalability, schema flexibility, and data model diversity that relational databases struggle with.
+- **14.2:** The CAP theorem states that in a distributed system, you can only guarantee two of Consistency, Availability, and Partition Tolerance during a network partition.
+- **14.3:** BASE (Basically Available, Soft state, Eventual consistency) is the relaxed consistency model that powers most NoSQL systems.
+- **14.4:** Four major NoSQL types â€” Document (MongoDB), Key-Value (Redis), Column-Family (Cassandra), and Graph (Neo4j) â€” each optimized for different workloads.
+- **14.5:** Polyglot persistence uses multiple database types within a single application, choosing the best model for each component.
+
+## Concept Comparison Table
+
+| Feature | Relational (SQL) | Document (MongoDB) | Key-Value (Redis) | Column-Family (Cassandra) | Graph (Neo4j) |
+|---------|-----------------|---------------------|-------------------|--------------------------|--------------|
+| **Data Model** | Tables, rows | JSON/BSON documents | Key â†’ Value pairs | Rows with dynamic columns | Nodes and edges |
+| **Schema** | Rigid, enforced | Flexible (schema-less) | Key-based only | Flexible per row | Flexible |
+| **Query Language** | SQL | MQL, Aggregation | Redis commands | CQL | Cypher |
+| **ACID?** | Full ACID | Document-level | Transactional | Tunable | Full ACID |
+| **Best For** | Complex joins, consistency | Complex objects, varied structure | Caching, sessions, counters | Time-series, write-heavy | Social graphs, recommendations |
+| **Scaling** | Vertical (primary) | Horizontal (sharding) | Cluster (sharding) | Horizontal (no single point) | Horizontal (clustering) |
+| **Consistency** | Strong | Tunable (strong/eventual) | Strong per node | Tunable (quorum) | Strong |
+
+## Quick Reference
+
+| NoSQL Type | Examples | Key Strength |
+|-----------|---------|-------------|
+| **Document** | MongoDB, CouchDB, Firebase | Schema flexibility, complex objects |
+| **Key-Value** | Redis, DynamoDB, Memcached | Speed, simplicity, caching |
+| **Column-Family** | Cassandra, HBase, ScyllaDB | Write scalability, time-series |
+| **Graph** | Neo4j, Amazon Neptune, ArangoDB | Relationship traversal, connected data |
+
+| CAP Combination | Database Examples | Trade-off |
+|---------------|------------------|-----------|
+| **CP (Consistency + Partition Tolerance)** | HBase, MongoDB (with w=majority) | Slower writes during partitions |
+| **AP (Availability + Partition Tolerance)** | Cassandra, DynamoDB | Eventual consistency; may serve stale data |
+| **CA (Consistency + Availability)** | Single-node PostgreSQL, MySQL | No partition tolerance; not distributed |
+
+## Cross-Application Matrix
+
+| NoSQL Use Case | Best Type | Why |
+|--------------|-----------|-----|
+| **User session store** | Key-Value (Redis) | Fast lookups, TTL-based expiry |
+| **Product catalog** | Document (MongoDB) | Products have varying attributes |
+| **Social feed** | Column-Family (Cassandra) | High write throughput for posts/likes |
+| **Recommendation engine** | Graph (Neo4j) | User-item relationships, "people also bought" |
+| **Time-series metrics** | Column-Family / TSDB | Append-heavy, range-scan queries |
+| **Full-text search** | Elasticsearch (separate category) | Inverted index ranking, fuzzy matching |
+| **Event log / audit trail** | Column-Family / Append-only | Immutable writes, ordered by timestamp |
+
+## Chapter Quiz
+
+1. The CAP theorem states that a distributed system can only provide two of three properties:
+   a) Consistency, Availability, Performance
+   b) Consistency, Availability, Partition Tolerance
+   c) Consistency, Atomicity, Partition Tolerance
+   d) Concurrency, Availability, Partition Tolerance
+
+2. BASE stands for:
+   a) Basic Atomic, Soft state, Eventual consistency
+   b) Basically Available, Soft state, Eventual consistency
+   c) Batch Available, Strong state, Eventual consistency
+   d) Basically Atomic, Serializable, Eventual
+
+3. Which NoSQL type is best for representing highly connected data like social networks?
+   a) Document
+   b) Key-Value
+   c) Column-Family
+   d) Graph
+
+4. Polyglot persistence means:
+   a) Using multiple programming languages in one project
+   b) Using multiple database types within one application
+   c) Translating SQL to multiple languages
+   d) Persisting data in multiple formats
+
+5. Cassandra is an example of which NoSQL type?
+   a) Document
+   b) Key-Value
+   c) Column-Family
+   d) Graph
+
+6. Which CAP combination does Cassandra prioritize?
+   a) CP
+   b) AP
+   c) CA
+   d) None
+
+7. The main advantage of document databases over relational is:
+   a) Faster joins
+   b) Schema flexibility
+   c) Better consistency
+   d) Less storage
+
+8. The trade-off in choosing AP over CP during a partition is:
+   a) Data may be stale (eventual consistency)
+   b) The system may become unavailable
+   c) Data may be lost
+   d) Writes will be blocked
+
+**Answers:** 1-b, 2-b, 3-d, 4-b, 5-c, 6-b, 7-b, 8-a
+
 ## Summary
 
 - NoSQL emerged to handle scale, schema flexibility, and diverse data models.
@@ -350,6 +457,6 @@ Each representation has different trade-offs for querying, updating, and scaling
    
    Consider: users, tweets, follows, likes, retweets. What queries are easy/hard in each model?
 
-10. Consider the "PACELC" theorem (an extension of CAP). It states: "In a distributed system, if a partition occurs (P), you must trade between Availability (A) and Consistency (C); otherwise (E — Else), you trade between Latency (L) and Consistency (C)." Explain this extension and how it applies to DynamoDB's design choices.
+10. Consider the "PACELC" theorem (an extension of CAP). It states: "In a distributed system, if a partition occurs (P), you must trade between Availability (A) and Consistency (C); otherwise (E â€” Else), you trade between Latency (L) and Consistency (C)." Explain this extension and how it applies to DynamoDB's design choices.
 
 11. Eventual consistency can lead to "stale reads." Design a system that uses a version vector or vector clock to detect conflicting updates during an eventual consistency reconciliation process. How does Amazon Dynamo handle conflict resolution? How does Cassandra?

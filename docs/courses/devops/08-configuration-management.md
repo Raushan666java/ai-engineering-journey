@@ -4,7 +4,7 @@
 
 ## Learning Objectives
 
-![Ansible Configuration Management Workflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch08-ansible-workflow.png)
+![Ansible Configuration Management Workflow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch08-ansible-workflow.png)
 
 - Explain the role of Configuration Management in the DevOps toolchain.
 - Understand the Agentless architecture of Ansible.
@@ -19,7 +19,7 @@
 ### What is Configuration Management?
 Configuration Management (CM) is the process of maintaining computer systems, servers, and software in a desired, consistent state. While IaC (like Terraform) focuses on the "what" (the hardware/VMs), CM (like Ansible) focuses on the "how" (the software/configuration inside those VMs).
 
-### Ansible’s Architecture
+### Ansibleâ€™s Architecture
 Ansible is "Agentless." It does not require any special software to be installed on the managed nodes. Instead, it uses standard SSH (for Linux) or WinRM (for Windows) to push small programs called "Ansible Modules" to the nodes, execute them, and then remove them.
 
 ### Key Components

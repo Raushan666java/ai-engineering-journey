@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: explain the role of 
 
 ## Theory
 
-![Architecture Styles Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/04-architectural-design.png)
+![Architecture Styles Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/04-architectural-design.png)
 
 ### The Role of Architectural Design
 
@@ -40,7 +40,7 @@ The repository pattern simplifies component communication by providing a single 
 
 ### The Client-Server Pattern
 
-The client-server pattern distributes the system into two types of components: servers, which provide services, and clients, which request services. Multiple clients can connect to a single server. The server is typically passive — it waits for client requests and responds to them.
+The client-server pattern distributes the system into two types of components: servers, which provide services, and clients, which request services. Multiple clients can connect to a single server. The server is typically passive â€” it waits for client requests and responds to them.
 
 The client-server pattern is the foundation of most networked systems. It enables centralised management of data and services while distributing presentation and application processing to clients. Variations include three-tier client-server, where an application server mediates between the client and database server, and multi-tier architectures with additional intermediate layers.
 
@@ -64,7 +64,7 @@ Event-driven architectures are highly decoupled and scalable. They are well suit
 
 ### The Broker Pattern
 
-The broker pattern decouples clients from servers by introducing an intermediary — the broker — that routes requests between them. Clients make requests through the broker, which locates an appropriate server, forwards the request, and returns the response. The broker may also handle service registration, naming, and load balancing.
+The broker pattern decouples clients from servers by introducing an intermediary â€” the broker â€” that routes requests between them. Clients make requests through the broker, which locates an appropriate server, forwards the request, and returns the response. The broker may also handle service registration, naming, and load balancing.
 
 The broker pattern is the foundation of middleware systems including CORBA, Java RMI, and enterprise service buses (ESBs). It enables distribution transparency, where clients interact with remote services using the same programming model as local services. Modern variations include API gateways and service meshes.
 
@@ -98,7 +98,7 @@ A large insurance company developed its claims processing system using a five-la
 
 ### Template: Architecture Decision Record
 
-Title: ADR-001 — Database Selection
+Title: ADR-001 â€” Database Selection
 Context: The system requires strong consistency guarantees for financial transactions.
 Alternatives Considered: PostgreSQL (relational), MongoDB (document), Cassandra (wide-column)
 Decision: Adopt PostgreSQL for transaction consistency

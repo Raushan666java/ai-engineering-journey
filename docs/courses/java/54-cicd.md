@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ## 1. CI/CD Pipeline Overview
 
-![CI/CD - GitHub Actions, GitLab CI, Deployment Strategies](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/54-cicd.png)
+![CI/CD - GitHub Actions, GitLab CI, Deployment Strategies](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/54-cicd.png)
 
 ```
-┌─────────┐    ┌──────┐    ┌─────────┐    ┌─────────┐    ┌──────────┐
-│ COMPILE │ →  │ TEST │ →  │ PACKAGE │ →  │ PUBLISH │ →  │  DEPLOY  │
-└─────────┘    └──────┘    └─────────┘    └─────────┘    └──────────┘
-     │             │             │              │               │
-     ▼             ▼             ▼              ▼               ▼
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ COMPILE â”‚ â†’  â”‚ TEST â”‚ â†’  â”‚ PACKAGE â”‚ â†’  â”‚ PUBLISH â”‚ â†’  â”‚  DEPLOY  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+     â”‚             â”‚             â”‚              â”‚               â”‚
+     â–¼             â–¼             â–¼              â–¼               â–¼
   javac        unit tests    mvn package     docker push    kubectl apply
   mvn compile  int tests     bootBuildImage  mvn deploy    helm upgrade
   gradle build  security scan jar shadow      to registry   terraform apply
@@ -78,7 +78,7 @@ concurrency:
 
 jobs:
   ###########################################################################
-  # BUILD — Compile, test, and analyze
+  # BUILD â€” Compile, test, and analyze
   ###########################################################################
   build:
     name: Build and Test
@@ -185,7 +185,7 @@ jobs:
           retention-days: 7
 
   ###########################################################################
-  # PACKAGE — Build JAR and Docker image
+  # PACKAGE â€” Build JAR and Docker image
   ###########################################################################
   package:
     name: Package
@@ -252,7 +252,7 @@ jobs:
             COMMIT_SHA=${{ github.sha }}
 
   ###########################################################################
-  # DEPLOY STAGING — Deploy to staging on PR merge to develop
+  # DEPLOY STAGING â€” Deploy to staging on PR merge to develop
   ###########################################################################
   deploy-staging:
     name: Deploy to Staging
@@ -301,7 +301,7 @@ jobs:
             --from=cronjob/myapp-migration migration-manual-$(date +%s)
 
   ###########################################################################
-  # DEPLOY PRODUCTION — Manual approval gate
+  # DEPLOY PRODUCTION â€” Manual approval gate
   ###########################################################################
   deploy-production:
     name: Deploy to Production
@@ -1441,7 +1441,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `🚀 Preview deployed at https://pr-${context.issue.number}.preview.myapp.com`
+              body: `ðŸš€ Preview deployed at https://pr-${context.issue.number}.preview.myapp.com`
             })
 ```
 
@@ -1917,7 +1917,7 @@ deploy-production:
 ```
 
 Configure in GitHub:
-1. Settings → Environments → Production
+1. Settings â†’ Environments â†’ Production
 2. Required reviewers: DevOps Lead, Tech Lead
 3. Wait timer: 10 minutes
 
@@ -2228,7 +2228,7 @@ jobs:
 
 - **GitHub Actions** provides native CI/CD with matrix builds, caching, Docker layer caching, and environment-based deployments
 - **GitLab CI** offers built-in security scanning (SAST, dependency scanning, container scanning), docker-in-docker, and manual approvals
-- **Build pipelines** follow compile → test → package → publish → deploy, with integration tests using Testcontainers or service containers
+- **Build pipelines** follow compile â†’ test â†’ package â†’ publish â†’ deploy, with integration tests using Testcontainers or service containers
 - **Artifact publishing** supports Maven Central (via OSSRH), GitHub Packages, Nexus/Artifactory, Docker Hub, and Amazon ECR
 - **Automated deployments** range from simple rolling updates to blue-green and canary releases with feature flags
 - **Database migrations** in CI use Flyway with validation, migration integrity checks, and rollback testing
@@ -2256,4 +2256,4 @@ jobs:
 
 9. **Database migrations:** Integrate Flyway migrations into your CI pipeline. Include a migration verification step that runs against a fresh PostgreSQL container.
 
-10. **Approval gate:** Configure a production deployment that requires manual approval. Add quality gate checks (coverage ≥ 80%, SonarQube pass, no critical security findings).
+10. **Approval gate:** Configure a production deployment that requires manual approval. Add quality gate checks (coverage â‰¥ 80%, SonarQube pass, no critical security findings).

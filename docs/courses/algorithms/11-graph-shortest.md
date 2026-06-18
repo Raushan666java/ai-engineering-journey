@@ -1,6 +1,6 @@
 # Chapter 11: Graph Shortest Paths
 
-> **Prerequisites:** [Chapter 10: Dynamic Programming — Trees & Grids](./10-dp-trees-grids.md) — Recursive problem-solving on graph structures | **Next:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) — From shortest paths to minimum-cost spanning trees
+> **Prerequisites:** [Chapter 10: Dynamic Programming â€” Trees & Grids](./10-dp-trees-grids.md) â€” Recursive problem-solving on graph structures | **Next:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) â€” From shortest paths to minimum-cost spanning trees
 
 ## Learning Objectives
 
@@ -20,7 +20,7 @@ By the end of this chapter, students will be able to:
 |-------|-------------|-------------------|
 | Dijkstra | Priority queue + relaxation | O(E log V) with binary heap; non-negative weights only |
 | Bellman-Ford | Relax all edges V-1 times | O(VE); detects negative cycles via Vth iteration |
-| Floyd-Warshall | dp[k][i][j] via intermediate k | O(V³) for all-pairs; simple 3-loop implementation |
+| Floyd-Warshall | dp[k][i][j] via intermediate k | O(VÂ³) for all-pairs; simple 3-loop implementation |
 | DAG Shortest Paths | Topological order + relaxation | O(V+E); linear time for DAGs |
 | A* Search | Heuristic-guided Dijkstra | Admissible heuristic guarantees optimality |
 
@@ -41,7 +41,7 @@ flowchart LR
 
 ## Theory
 
-![Graph Shortest Paths Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch11-graph-shortest.png)
+![Graph Shortest Paths Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch11-graph-shortest.png)
 
 ### 11.1 Dijkstra's Algorithm
 
@@ -66,7 +66,7 @@ Dijkstra(G, s):
 
 **Complexity:** \( O((V+E) \log V) \) with a binary heap, \( O(V \log V + E) \) with a Fibonacci heap.
 
-> **Pro Tip:** Dijkstra's lazy deletion pattern (checking `d != dist[u]` before processing) is preferred over DecreaseKey — it's simpler and has the same asymptotic complexity with a binary heap.
+> **Pro Tip:** Dijkstra's lazy deletion pattern (checking `d != dist[u]` before processing) is preferred over DecreaseKey â€” it's simpler and has the same asymptotic complexity with a binary heap.
 >
 > **Remember:** Dijkstra fails with negative weights because a later negative edge could create a shorter path to an already-"settled" vertex.
 
@@ -133,11 +133,11 @@ FloydWarshall(G):
 
 **Complexity:** \( \Theta(V^3) \) time, \( \Theta(V^2) \) space.
 
-> **Pro Tip:** Floyd-Warshall's key insight is the k-loop ordering — k must be the outermost loop because d^{(k)} depends on d^{(k-1)}. The in-place update works because values only improve.
+> **Pro Tip:** Floyd-Warshall's key insight is the k-loop ordering â€” k must be the outermost loop because d^{(k)} depends on d^{(k-1)}. The in-place update works because values only improve.
 >
 > **Remember:** Floyd-Warshall works for negative edges but not negative cycles. Check diagonal dist[i][i] < 0 afterward to detect cycles.
 
-**One-Sentence Takeaway:** Floyd-Warshall computes all-pairs shortest paths in O(V³) using DP over intermediate vertices.
+**One-Sentence Takeaway:** Floyd-Warshall computes all-pairs shortest paths in O(VÂ³) using DP over intermediate vertices.
 
 ### 11.4 Shortest Path in DAG
 
@@ -158,9 +158,9 @@ DAGShortestPath(G, s):
 
 **Complexity:** \( O(V + E) \).
 
-> **Pro Tip:** DAG shortest paths is the fastest possible — O(V+E) because topological ordering eliminates the need for iterative relaxation. Always check if your graph is a DAG before using a slower algorithm.
+> **Pro Tip:** DAG shortest paths is the fastest possible â€” O(V+E) because topological ordering eliminates the need for iterative relaxation. Always check if your graph is a DAG before using a slower algorithm.
 >
-> **Remember:** The topological order ensures vertex u is processed before any of its descendants, so when you relax edges from u, dist[v] is final — no later pass can improve it.
+> **Remember:** The topological order ensures vertex u is processed before any of its descendants, so when you relax edges from u, dist[v] is final â€” no later pass can improve it.
 
 **One-Sentence Takeaway:** DAG shortest paths achieve O(V+E) time by combining topological sort with edge relaxation in a single pass.
 
@@ -279,7 +279,7 @@ std::vector<std::vector<int>> floydWarshall(
 |-----------|---------|-------------|------------|----------------|
 | Dijkstra | Single-source | Non-negative only | O((V+E) log V) | Fails with negative weights |
 | Bellman-Ford | Single-source | Any (detects neg cycles) | O(VE) | Slow for large graphs |
-| Floyd-Warshall | All-pairs | Any (no neg cycles) | Θ(V³) | O(V²) memory |
+| Floyd-Warshall | All-pairs | Any (no neg cycles) | Î˜(VÂ³) | O(VÂ²) memory |
 | DAG Shortest | Single-source (DAG) | Any | O(V+E) | Requires acyclic graph |
 | A* | s-t shortest | Non-negative | O(E) practical | Needs admissible heuristic |
 
@@ -287,10 +287,10 @@ std::vector<std::vector<int>> floydWarshall(
 
 | Category | Key Points |
 |----------|------------|
-| **Non-negative weights** | Dijkstra — always use this |
+| **Non-negative weights** | Dijkstra â€” always use this |
 | **Negative weights** | Bellman-Ford or SPFA |
-| **All-pairs** | Floyd-Warshall (dense) or V × Dijkstra (sparse) |
-| **DAG guaranteed** | Topological sort + relax — O(V+E) |
+| **All-pairs** | Floyd-Warshall (dense) or V Ã— Dijkstra (sparse) |
+| **DAG guaranteed** | Topological sort + relax â€” O(V+E) |
 | **Heuristic available** | A* with admissible heuristic |
 | **Detect negative cycle** | Bellman-Ford Vth iteration or Floyd diagonal |
 
@@ -338,14 +338,14 @@ B) Bellman-Ford handles negative weights and detects negative cycles. Dijkstra f
 
 **Q2.** What is the time complexity of Floyd-Warshall?
 
-- A) O(V²)
+- A) O(VÂ²)
 - B) O(VE)
-- C) Θ(V³)
+- C) Î˜(VÂ³)
 - D) O(E log V)
 
 <details>
 <summary>Answer</summary>
-C) Θ(V³) — triple nested loop over all vertices for the intermediate k and pairs (i,j).
+C) Î˜(VÂ³) â€” triple nested loop over all vertices for the intermediate k and pairs (i,j).
 </details>
 
 **Q3.** What property must an A* heuristic have to guarantee optimality?

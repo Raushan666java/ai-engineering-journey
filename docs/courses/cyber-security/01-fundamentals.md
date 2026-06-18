@@ -1,5 +1,8 @@
 # Chapter 1: Security Fundamentals
 
+> **Prereq:** None â€” this chapter introduces core security concepts.
+> **Next:** Chapter 2 (Cryptography & TLS) â€” encryption and PKI build on the CIA triad.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,40 @@
 - Perform basic threat modeling using the STRIDE methodology.
 - Differentiate between various types of security threats and vulnerabilities.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| CIA Triad | Confidentiality, Integrity, Availability | The three pillars of all security |
+| AAA | Authn, Authz, Accounting | Who, what, and when for access |
+| STRIDE | Spoofing, Tampering, etc. | Systematic threat identification |
+| Least Privilege | Minimal permissions | Reduces blast radius |
+| Defense in Depth | Multiple security layers | No single point of failure |
+
+```mermaid
+flowchart LR
+    A[Security] --> B[CIA Triad]
+    A --> C[AAA]
+    A --> D[STRIDE]
+    A --> E[Principles]
+    B --> F[Confidentiality]
+    B --> G[Integrity]
+    B --> H[Availability]
+    E --> I[Least Privilege]
+    E --> J[Defense in Depth]
+    style A fill:#e1f5fe
+    style B fill:#c8e6c9
+    style C fill:#fff3e0
+    style D fill:#fce4ec
+```
+
 ---
 
 ## Theory
 
-![CIA Triad & STRIDE Threat Model](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch01-cia-stride.png)
+![CIA Triad & STRIDE Threat Model](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cyber-security/ch01-cia-stride.png)
+
+> **One-Sentence Takeaway:** Security fundamentals rest on the CIA triad and AAA, with STRIDE providing a systematic lens to identify threats and Defense in Depth ensuring no single control bears the full burden.
 
 ### The CIA Triad
 The core of cyber security is built upon the CIA triad: Confidentiality, Integrity, and Availability.
@@ -85,3 +117,46 @@ A secure web application implementation:
 
 ### Challenge Problem
 1. Propose a multi-layered "Defense in Depth" strategy for a hospital's patient record system. Your strategy must address at least three different STRIDE threat categories and explain how the layers work together.
+
+### Concept Comparison
+
+| Principle | Focus | Example |
+|-----------|-------|---------|
+| Least Privilege | Minimise permissions | Read-only access for auditors |
+| Defense in Depth | Multiple layers | Firewall + IDS + EDR |
+| Fail-Safe Defaults | Secure by default | Deny-all firewall rules |
+| Separation of Duties | No single control | Two-person signing |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Network Security | Firewall rules, ACLs | CIA guides all network controls |
+| App Security | Input validation, auth | STRIDE for design-phase threat modelling |
+| Cloud Security | IAM policies, encryption | Least privilege in cloud IAM |
+| Research | Formal verification of security | Proving CIA properties mathematically |
+
+### Chapter Quiz
+
+1. Which STRIDE threat corresponds to an attacker impersonating a user?
+   - A) Tampering
+   - B) Spoofing
+   - C) Repudiation
+   - D) Information Disclosure
+
+2. "Defense in Depth" means:
+   - A) Using the strongest possible firewall
+   - B) Layering multiple independent security controls
+   - C) Burying cables underground
+   - D) Encrypting all data at rest
+
+3. The "Availability" pillar of CIA ensures:
+   - A) Data is only read by authorised users
+   - B) Data is correct and unmodified
+   - C) Systems are accessible when needed
+   - D) Users are authenticated before access
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. C
+</details>

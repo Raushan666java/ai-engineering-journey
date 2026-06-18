@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: explain the activiti
 
 ## Theory
 
-![Project Management Process](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-08-project-management.png)
+![Project Management Process](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-08-project-management.png)
 
 ### The Nature of Software Project Management
 
@@ -16,7 +16,7 @@ The Standish Group's CHAOS reports have historically reported that a significant
 
 ### Project Planning
 
-Project planning begins with defining the project scope — the boundary between what the project will deliver and what it will not deliver. The scope is documented in a project charter or statement of work.
+Project planning begins with defining the project scope â€” the boundary between what the project will deliver and what it will not deliver. The scope is documented in a project charter or statement of work.
 
 Planning activities include: defining the project objectives and success criteria; identifying the deliverables; decomposing the work into manageable units through a Work Breakdown Structure (WBS); estimating the effort required for each work unit; identifying dependencies between work units; allocating resources; producing a schedule; identifying risks; and developing a communication plan.
 
@@ -42,11 +42,11 @@ A Gantt chart displays activities as horizontal bars against a time axis. The le
 
 PERT (Program Evaluation and Review Technique) models the project as a network of activities and events. Each activity has three time estimates: optimistic, most likely, and pessimistic. The expected duration is calculated as (optimistic + 4 * most likely + pessimistic) / 6. The critical path is the longest path through the network; activities on the critical path determine the project duration.
 
-CPM (Critical Path Method) is similar to PERT but uses single-point duration estimates. CPM identifies the critical path and calculates float — the amount of schedule slack for non-critical activities. Activities with zero float are critical and must be managed carefully.
+CPM (Critical Path Method) is similar to PERT but uses single-point duration estimates. CPM identifies the critical path and calculates float â€” the amount of schedule slack for non-critical activities. Activities with zero float are critical and must be managed carefully.
 
 ### Risk Management
 
-Risk management is the systematic process of identifying, analysing, and responding to project risks. A risk is a potential event that could negatively affect the project. Risk management is proactive — it attempts to prevent problems before they occur.
+Risk management is the systematic process of identifying, analysing, and responding to project risks. A risk is a potential event that could negatively affect the project. Risk management is proactive â€” it attempts to prevent problems before they occur.
 
 The risk management process comprises: risk identification, where potential risks are identified through checklists, brainstorming, and analysis of similar projects; risk analysis, where risks are assessed for probability and impact; risk prioritisation, where risks are ranked by exposure (probability * impact); risk planning, where response strategies are developed for high-priority risks; and risk monitoring, where risks are tracked and responses are adjusted.
 
@@ -82,7 +82,7 @@ A team estimated a 50,000-line web application using COCOMO II. The post-archite
 
 | ID | Activity | Duration | Dependencies |
 |----|----------|----------|--------------|
-| 1 | Requirements | 4 weeks | — |
+| 1 | Requirements | 4 weeks | â€” |
 | 2 | Architecture | 3 weeks | 1 |
 | 3 | Sprint 1 | 3 weeks | 2 |
 | 4 | Sprint 2 | 3 weeks | 3 |
@@ -124,4 +124,4 @@ Software project management addresses the challenges of planning, estimating, sc
 
 ### Challenge Problem
 
-You are appointed project manager for a critical software system that must be delivered in nine months for regulatory compliance. The initial estimate using COCOMO II indicates the project requires twelve months with the current team. The stakeholders refuse to accept a later deadline and insist that the scope cannot be reduced. Develop a realistic project plan that addresses this situation. Analyse the options available to you — including staff addition, process improvement, scope negotiation, risk acceptance, and schedule compression techniques — and propose a specific course of action with justification. Include a risk analysis and a contingency plan.
+You are appointed project manager for a critical software system that must be delivered in nine months for regulatory compliance. The initial estimate using COCOMO II indicates the project requires twelve months with the current team. The stakeholders refuse to accept a later deadline and insist that the scope cannot be reduced. Develop a realistic project plan that addresses this situation. Analyse the options available to you â€” including staff addition, process improvement, scope negotiation, risk acceptance, and schedule compression techniques â€” and propose a specific course of action with justification. Include a risk analysis and a contingency plan.

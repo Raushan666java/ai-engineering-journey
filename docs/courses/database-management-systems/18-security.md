@@ -12,11 +12,11 @@
 
 ## Theory
 
-![Database Security Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch18-security.png)
+![Database Security Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch18-security.png)
 
 ### 18.1 The Database Security Landscape
 
-Databases store an organization's most valuable asset — data. Security breaches can lead to:
+Databases store an organization's most valuable asset â€” data. Security breaches can lead to:
 
 - **Financial loss:** Fines (GDPR: up to 4% of global revenue), fraud
 - **Reputation damage:** Loss of customer trust
@@ -151,7 +151,7 @@ SQL injection is the most critical database security vulnerability. It occurs wh
 **Vulnerable Code (NEVER do this):**
 
 ```python
-# BAD — vulnerable to SQL injection
+# BAD â€” vulnerable to SQL injection
 user_input = request.GET["username"]  # User enters: ' OR '1'='1
 query = f"SELECT * FROM users WHERE username = '{user_input}'"
 cursor.execute(query)
@@ -182,22 +182,22 @@ SELECT * FROM users WHERE username = '' UNION SELECT credit_card FROM payments -
 
 **Defensive Measures:**
 
-**1. Parameterized Queries (Prepared Statements) — BEST:**
+**1. Parameterized Queries (Prepared Statements) â€” BEST:**
 
 ```python
-# Python with psycopg2 — SAFE
+# Python with psycopg2 â€” SAFE
 cursor.execute(
     "SELECT * FROM users WHERE username = %s AND password = %s",
     (username, password)
 )
 
-# Python with SQLAlchemy — SAFE
+# Python with SQLAlchemy â€” SAFE
 result = session.query(User).filter(
     User.username == username,
     User.password == password
 ).all()
 
-# Java with JDBC — SAFE
+# Java with JDBC â€” SAFE
 PreparedStatement ps = conn.prepareStatement(
     "SELECT * FROM users WHERE username = ? AND password = ?"
 );
@@ -205,7 +205,7 @@ ps.setString(1, username);
 ps.setString(2, password);
 ResultSet rs = ps.executeQuery();
 
-# Node.js with pg — SAFE
+# Node.js with pg â€” SAFE
 const result = await client.query(
     'SELECT * FROM users WHERE username = $1 AND password = $2',
     [username, password]
@@ -350,7 +350,7 @@ log_connections = on        -- Log all connections
 log_disconnections = on     -- Log all disconnections
 log_line_prefix = '%t %u %d %r '  -- Timestamp, user, database, host
 
--- MySQL: General query log (caution — high volume)
+-- MySQL: General query log (caution â€” high volume)
 SET GLOBAL general_log = ON;
 
 -- Better: MySQL Audit Plugin (Enterprise)
@@ -678,10 +678,124 @@ CREATE TRIGGER audit_payments
     FOR EACH ROW EXECUTE FUNCTION audit_trigger();
 ```
 
+## ðŸ’¡ Pro Tips
+
+1. **Parameterized queries are non-negotiable** â€” no amount of input validation or escaping is safer than prepared statements with bound parameters. This is the #1 rule of database security.
+2. **Least privilege means column-level grants** â€” do not grant SELECT * to application users if they only need 3 columns. Every extra column is a potential data leak.
+3. **Encryption at rest is not a silver bullet** â€” it protects against physical theft but does not protect against SQL injection or authorized user misuse.
+4. **Audit logs are useless if not reviewed** â€” enable auditing and set up automated alerts for suspicious patterns (mass deletes, after-hours access, privilege escalation).
+5. **Row-Level Security (RLS) is underused** â€” instead of filtering in WHERE clauses in every query, define RLS policies that automatically restrict rows based on the user's role or tenant ID.
+
+## One-Sentence Takeaways
+
+- **18.1:** Database security requires defense in depth â€” layers of authentication, authorization, encryption, and auditing.
+- **18.2:** SQL injection is the most critical database vulnerability â€” it is entirely preventable with parameterized queries.
+- **18.3:** Authentication verifies identity (who you are); authorization determines access (what you can do).
+- **18.4:** Encryption at rest (TDE, column-level) and in transit (SSL/TLS) protects data from physical compromise.
+- **18.5:** Row-level security and dynamic data masking provide fine-grained access control beyond table-level GRANTs.
+- **18.6:** Auditing is essential for compliance (GDPR, HIPAA, PCI-DSS) and breach detection.
+- **18.7:** Backup security â€” encryption, access control, and regular restore testing â€” is the last line of defense.
+
+## Concept Comparison Table
+
+| Security Layer | Protection | Implementation |
+|---------------|-----------|----------------|
+| **Authentication** | Prevents unauthorized access | Passwords, certificates, OAuth, LDAP, MFA |
+| **Authorization** | Limits what authorized users can do | GRANT/REVOKE, roles, RLS policies |
+| **Encryption at Rest** | Protects data on disk | TDE, column-level encryption, filesystem encryption |
+| **Encryption in Transit** | Protects data on the wire | SSL/TLS, certificate verification |
+| **Auditing** | Detects and records activity | Database audit logs, triggers, SIEM integration |
+| **Network Security** | Restricts database access | Firewalls, VPCs, private subnets, IP whitelists |
+| **Backup Security** | Protects recovery data | Encrypted backups, access control, off-site storage |
+
+| Vulnerability | Impact | Prevention |
+|--------------|--------|------------|
+| **SQL Injection** | Data theft, deletion, modification | Parameterized queries, ORM, input validation |
+| **Weak Authentication** | Unauthorized access | Strong passwords, MFA, certificate auth |
+| **Unencrypted Data** | Data breach via physical theft | TDE, column encryption |
+| **Insider Threat** | Authorized user abuses access | Least privilege, RLS, auditing |
+| **Unsecured Backups** | Data breach via backup theft | Encrypted backups, access control |
+
+## Quick Reference
+
+| Security Best Practice | Why | How |
+|----------------------|-----|-----|
+| **Parameterized queries** | Prevents SQL injection 100% | Use placeholders (%s, $1, ?) with bound parameters |
+| **Least privilege** | Minimizes breach impact | GRANT only needed columns/rows; use roles |
+| **SSL/TLS enforcement** | Prevents network sniffing | `sslmode=require`, disable non-TLS connections |
+| **Regular patching** | Fixes known vulnerabilities | Stay current with DBMS security releases |
+| **Audit logging** | Detects breaches | Enable logging on sensitive tables + alerts |
+| **Encryption at rest** | Physically protects data | Enable TDE or column-level encryption |
+| **Backup encryption** | Protects recovery data | Encrypt backup files; test restore periodically |
+
+## Cross-Application Matrix
+
+| Security Technique | Applied In | Why It Matters |
+|-------------------|-----------|----------------|
+| **Parameterized Queries** | All web applications | Only reliable defense against SQL injection |
+| **Row-Level Security** | Multi-tenant SaaS | Each tenant sees only their own data automatically |
+| **Column Encryption** | Healthcare (HIPAA), Finance (PCI) | Protects sensitive fields (SSN, credit card numbers) |
+| **Transparent Data Encryption** | Enterprise databases | Protects backup files and disk theft |
+| **GRANT/REVOKE + Roles** | Multi-user systems | Manage permissions at scale without per-user grants |
+| **Audit Logs** | Compliance-required environments | Meet GDPR, HIPAA, PCI-DSS audit requirements |
+| **Connection Pooling + SSL** | All production deployments | Secure, efficient database connections |
+
+## Chapter Quiz
+
+1. The most effective defense against SQL injection is:
+   a) Input validation
+   b) Parameterized queries
+   c) Escaping special characters
+   d) WAF (Web Application Firewall)
+
+2. Least privilege means:
+   a) Granting all permissions and removing only dangerous ones
+   b) Granting the minimum permissions needed for a task
+   c) Using a single admin account for all operations
+   d) Only using SELECT statements
+
+3. Transparent Data Encryption (TDE) protects against:
+   a) SQL injection
+   b) Physical theft of storage media
+   c) Authorized user misuse
+   d) Network sniffing
+
+4. Row-Level Security (RLS) is used to:
+   a) Encrypt individual rows
+   b) Automatically filter rows based on user context
+   c) Create indexes on rows
+   d) Compress row data
+
+5. Which is NOT a recommended backup security practice?
+   a) Encrypt backup files
+   b) Test restore procedures
+   c) Store unencrypted backups for faster recovery
+   d) Control access to backup storage
+
+6. SSL/TLS in database connections protects against:
+   a) SQL injection
+   b) Network sniffing (man-in-the-middle)
+   c) Disk failure
+   d) Authentication bypass
+
+7. Database auditing is primarily used for:
+   a) Performance tuning
+   b) Detecting and recording security-relevant activities
+   c) Query optimization
+   d) Data compression
+
+8. Which of the following is an SQL injection attack?
+   a) `SELECT * FROM users WHERE id = 1 OR 1=1`
+   b) `GRANT ALL ON users TO attacker`
+   c) `DROP TABLE users`
+   d) `ALTER TABLE users ADD COLUMN backdoor`
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-c, 6-b, 7-b, 8-a
+
 ## Summary
 
 - Database security requires defense in depth: authentication, authorization, encryption, auditing.
-- SQL injection is the most critical risk — always use parameterized queries.
+- SQL injection is the most critical risk â€” always use parameterized queries.
 - Least privilege: grant minimum permissions needed, never use superuser for apps.
 - Encryption at rest (TDE, column-level) and in transit (SSL/TLS) protects data.
 - Row-level security and dynamic data masking provide fine-grained access control.

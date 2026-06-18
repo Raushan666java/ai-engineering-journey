@@ -10,7 +10,7 @@ By the end of this chapter, students will be able to:
 - Choose between sets, frozensets, and other collections based on requirements
 - Write set comprehensions
 
-![Tuples and Sets](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/07-tuples-sets.png)
+![Tuples and Sets](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/07-tuples-sets.png)
 
 ## 7.1 Tuples
 
@@ -40,7 +40,7 @@ print(3 in t)    # True
 print(len(t))    # 6
 ```
 
-Tuples are immutable — attempting to modify one raises `TypeError`:
+Tuples are immutable â€” attempting to modify one raises `TypeError`:
 
 ```python
 t[0] = 10  # TypeError: 'tuple' object does not support item assignment
@@ -112,10 +112,10 @@ print(p)           # Point(x=3, y=4)
 Named fields improve code readability compared to bare tuples:
 
 ```python
-# Without namedtuple — magic numbers
+# Without namedtuple â€” magic numbers
 employees[0][1]  # what is index 1?
 
-# With namedtuple — self-documenting
+# With namedtuple â€” self-documenting
 Employee = namedtuple("Employee", ["name", "age", "department", "salary"])
 emp = Employee("Alice", 30, "Engineering", 95000)
 print(emp.department)  # Engineering
@@ -152,8 +152,8 @@ mixed = {1, "hello", (1, 2)}  # tuples are hashable
 ### 7.4.1 Creating Sets
 
 ```python
-from_list = set([1, 2, 3, 2, 1])   # {1, 2, 3}  — duplicates removed
-from_string = set("hello")          # {'h', 'e', 'l', 'o'} — unordered
+from_list = set([1, 2, 3, 2, 1])   # {1, 2, 3}  â€” duplicates removed
+from_string = set("hello")          # {'h', 'e', 'l', 'o'} â€” unordered
 from_generator = set(x ** 2 for x in range(5))
 print(from_generator)  # {0, 1, 4, 9, 16}
 ```
@@ -163,8 +163,8 @@ print(from_generator)  # {0, 1, 4, 9, 16}
 ```python
 s = {1, 2, 3, 4, 5}
 s.add(6)             # {1, 2, 3, 4, 5, 6}
-s.discard(3)         # {1, 2, 4, 5, 6}  — no error if missing
-s.remove(2)          # {1, 4, 5, 6}     — KeyError if missing
+s.discard(3)         # {1, 2, 4, 5, 6}  â€” no error if missing
+s.remove(2)          # {1, 4, 5, 6}     â€” KeyError if missing
 popped = s.pop()     # removes and returns an arbitrary element
 s.clear()            # set()
 

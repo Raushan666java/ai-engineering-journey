@@ -38,7 +38,7 @@ flowchart LR
 
 ## 9.1 Foundations of Probability
 
-![Probability and Bayes](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch09-probability-bayes.png)
+![Probability and Bayes](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch09-probability-bayes.png)
 
 Probability theory provides the mathematical framework for reasoning under uncertainty. A **probability space** consists of a sample space $\Omega$, a set of events $\mathcal{E}$, and a probability measure $P: \mathcal{E} \to [0, 1]$ satisfying the Kolmogorov axioms:
 
@@ -95,8 +95,8 @@ A BN with $n \) nodes, each with at most $k$ parents and $d$ values, requires at
 
 ```
 function VARIABLE-ELIMINATION(BN, query, evidence) returns distribution
-    factors ← all CPTs from BN
-    for each variable not in query ∪ evidence do
+    factors â† all CPTs from BN
+    for each variable not in query âˆª evidence do
         eliminate variable by summing over its factors
     multiply remaining factors and normalize
     return resulting distribution
@@ -114,15 +114,15 @@ Complexity is exponential in the treewidth of the network (the size of the large
 
 ```
 function LIKELIHOOD-WEIGHTING(BN, query, evidence, N) returns estimate
-    weights ← array of size N
+    weights â† array of size N
     for j = 1 to N do
-        w ← 1.0
+        w â† 1.0
         for each variable X_i in topological order do
             if X_i is evidence variable then
-                w ← w × P(X_i = e_i | parents(X_i))
+                w â† w Ã— P(X_i = e_i | parents(X_i))
             else
-                x_i ← sample from P(X_i | parents(X_i))
-        weights[j] ← w
+                x_i â† sample from P(X_i | parents(X_i))
+        weights[j] â† w
     return NORMALIZED-WEIGHTED-ESTIMATE(query, weights)
 ```
 
@@ -152,36 +152,36 @@ A **Hidden Markov Model (HMM)** is a DBN with a single discrete state variable a
 
 The HMM representation requires $O(n^2)$ parameters and supports $O(n^2)$ inference per time step, where $n$ is the number of states.
 
-> **💡 Pro Tip:** Always check the treewidth before committing to exact inference. If the network's moral graph has high treewidth, switch to approximate methods (likelihood weighting or Gibbs sampling) — they scale far better.
+> **ðŸ’¡ Pro Tip:** Always check the treewidth before committing to exact inference. If the network's moral graph has high treewidth, switch to approximate methods (likelihood weighting or Gibbs sampling) â€” they scale far better.
 
-> **⚠️ Warning:** d-separation distinguishes colliders from chains/forks. Conditioning on a collider opens the path (creates dependence), while conditioning on a chain or fork blocks it. This is counterintuitive but critical for understanding BN structure.
+> **âš ï¸ Warning:** d-separation distinguishes colliders from chains/forks. Conditioning on a collider opens the path (creates dependence), while conditioning on a chain or fork blocks it. This is counterintuitive but critical for understanding BN structure.
 
 ## Concept Comparison
 
 | Inference Method | Exact? | Guarantee | Complexity | Handles Evidence |
 |-----------------|:---:|:---:|:---:|:---:|
-| Variable Elimination | ✅ | Exact | O(exp treewidth) | Yes |
-| Rejection Sampling | ❌ | Asymptotic | O(N / P(e)) | Rare evidence fails |
-| Likelihood Weighting | ❌ | Asymptotic | O(N) | Yes |
-| Gibbs Sampling (MCMC) | ❌ | Asymptotic | O(N × vars) | Yes |
+| Variable Elimination | âœ… | Exact | O(exp treewidth) | Yes |
+| Rejection Sampling | âŒ | Asymptotic | O(N / P(e)) | Rare evidence fails |
+| Likelihood Weighting | âŒ | Asymptotic | O(N) | Yes |
+| Gibbs Sampling (MCMC) | âŒ | Asymptotic | O(N Ã— vars) | Yes |
 
-## Quick Reference — d-Separation Rules
+## Quick Reference â€” d-Separation Rules
 
 | Structure | Path Type | Condition to Block Path |
 |-----------|:---:|:---:|
-| Chain (X → Z → Y) | Serial | Evidence on Z |
-| Fork (X ← Z → Y) | Diverging | Evidence on Z |
-| Collider (X → Z ← Y) | Converging | No evidence on Z or descendants |
+| Chain (X â†’ Z â†’ Y) | Serial | Evidence on Z |
+| Fork (X â† Z â†’ Y) | Diverging | Evidence on Z |
+| Collider (X â†’ Z â† Y) | Converging | No evidence on Z or descendants |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Bayesian Networks | ✅ | ✅ | ✅ | ✅ |
-| Variable Elimination | ⬜ | ⬜ | ⬜ | ✅ |
-| Gibbs Sampling | ✅ | ✅ | ✅ | ✅ |
-| HMM | ⬜ | ⬜ | ✅ | ✅ |
-| Viterbi | ⬜ | ⬜ | ✅ | ✅ |
+| Bayesian Networks | âœ… | âœ… | âœ… | âœ… |
+| Variable Elimination | â¬œ | â¬œ | â¬œ | âœ… |
+| Gibbs Sampling | âœ… | âœ… | âœ… | âœ… |
+| HMM | â¬œ | â¬œ | âœ… | âœ… |
+| Viterbi | â¬œ | â¬œ | âœ… | âœ… |
 
 ## Chapter Quiz
 

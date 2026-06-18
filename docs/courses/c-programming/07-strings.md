@@ -8,11 +8,11 @@
 - Process strings character by character
 - Understand null-termination and its pitfalls
 
-![C Strings: string.h Library, I/O, and Common Pitfalls](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-07-strings.png)
+![C Strings: string.h Library, I/O, and Common Pitfalls](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-07-strings.png)
 
 ## 7.1 String Fundamentals
 
-In C, a string is a sequence of characters terminated by a null character (`'\0'`, ASCII value 0). There is no dedicated string type — strings are stored in `char` arrays.
+In C, a string is a sequence of characters terminated by a null character (`'\0'`, ASCII value 0). There is no dedicated string type â€” strings are stored in `char` arrays.
 
 ```c
 char greeting[] = "Hello";    /* array of 6 chars: 'H','e','l','l','o','\0' */
@@ -26,7 +26,7 @@ Char:    H   e   l   l   o  \0
 
 **String literal vs. character array:**
 ```c
-char *str1 = "Hello";        /* string literal — read-only, stored in .rodata */
+char *str1 = "Hello";        /* string literal â€” read-only, stored in .rodata */
 char str2[] = "Hello";       /* mutable char array on stack */
 ```
 
@@ -34,19 +34,19 @@ String literals are stored in read-only memory. Attempting to modify them is und
 
 ```c
 char *s = "Fixed";   /* string literal */
-s[0] = 'M';          /* UNDEFINED BEHAVIOR — may crash */
+s[0] = 'M';          /* UNDEFINED BEHAVIOR â€” may crash */
 ```
 
 A char array initialized from a literal is mutable:
 
 ```c
 char s[] = "Fixed";
-s[0] = 'M';          /* OK — s now contains "Mixed" */
+s[0] = 'M';          /* OK â€” s now contains "Mixed" */
 ```
 
 ## 7.2 String Length
 
-The length of a string is the number of characters before the null terminator — not including the null terminator.
+The length of a string is the number of characters before the null terminator â€” not including the null terminator.
 
 ```c
 #include <stdio.h>
@@ -78,7 +78,7 @@ char s1[] = "Hello";                  /* size inferred: 6 */
 char s2[10] = "Hello";                /* s2 = {'H','e','l','l','o','\0',0,0,0,0} */
 char s3[5] = "Hello";                 /* INVALID: no room for null */
 char s4[] = {'H', 'e', 'l', 'l', 'o', '\0'};  /* explicit, same as s1 */
-char s5[] = {'H', 'e', 'l', 'l', 'o'};         /* NOT a string — no null terminator */
+char s5[] = {'H', 'e', 'l', 'l', 'o'};         /* NOT a string â€” no null terminator */
 ```
 
 ## 7.4 String Input and Output
@@ -102,7 +102,7 @@ printf("You entered: %s\n", word);
 
 **Problems with `scanf("%s")`:** No buffer overflow protection by default. Always specify field width: `scanf("%49s", word)` limits input to 49 characters (reserving one for the null terminator).
 
-### 7.4.3 `fgets` — Safe Line Input
+### 7.4.3 `fgets` â€” Safe Line Input
 
 ```c
 #include <stdio.h>
@@ -130,7 +130,7 @@ if (p) {
 
 ## 7.5 The `<string.h>` Library
 
-### 7.5.1 `strlen` — String Length
+### 7.5.1 `strlen` â€” String Length
 
 ```c
 size_t strlen(const char *s);
@@ -141,7 +141,7 @@ char *msg = "Hello, World!";
 size_t len = strlen(msg);   /* 13 */
 ```
 
-### 7.5.2 `strcpy` and `strncpy` — Copying
+### 7.5.2 `strcpy` and `strncpy` â€” Copying
 
 ```c
 #include <stdio.h>
@@ -169,9 +169,9 @@ dest: Hello
 dest: A longer string
 ```
 
-**Warning:** `strcpy` does not check destination size — can overflow. Prefer `strncpy` or `snprintf`.
+**Warning:** `strcpy` does not check destination size â€” can overflow. Prefer `strncpy` or `snprintf`.
 
-### 7.5.3 `strcat` and `strncat` — Concatenation
+### 7.5.3 `strcat` and `strncat` â€” Concatenation
 
 ```c
 #include <stdio.h>
@@ -194,7 +194,7 @@ int main(void)
 Path: /home/user/file.txt
 ```
 
-### 7.5.4 `strcmp` and `strncmp` — Comparison
+### 7.5.4 `strcmp` and `strncmp` â€” Comparison
 
 Returns 0 if strings are equal, negative if first < second, positive if first > second (lexicographic comparison using ASCII values).
 
@@ -221,7 +221,7 @@ int main(void)
 }
 ```
 
-### 7.5.5 `strstr` — Substring Search
+### 7.5.5 `strstr` â€” Substring Search
 
 ```c
 #include <stdio.h>
@@ -249,7 +249,7 @@ Found at index: 16
 Rest: fox jumps over the lazy dog
 ```
 
-### 7.5.6 `strchr` and `strrchr` — Character Search
+### 7.5.6 `strchr` and `strrchr` â€” Character Search
 
 ```c
 char *strchr(const char *s, int c);    /* find first occurrence of c */
@@ -278,7 +278,7 @@ int main(void)
 Filename: file.txt
 ```
 
-### 7.5.7 `strtok` — String Tokenization
+### 7.5.7 `strtok` â€” String Tokenization
 
 ```c
 #include <stdio.h>
@@ -307,7 +307,7 @@ Token: cherry
 Token: date
 ```
 
-**Important:** `strtok` modifies the input string (replaces delimiters with `'\0'`) and uses internal static state — it is not reentrant. Use `strtok_r` for reentrant tokenization.
+**Important:** `strtok` modifies the input string (replaces delimiters with `'\0'`) and uses internal static state â€” it is not reentrant. Use `strtok_r` for reentrant tokenization.
 
 ## 7.6 Character-by-Character Processing
 
@@ -370,7 +370,7 @@ int main(void)
 **Buffer overflow:**
 ```c
 char buf[5];
-strcpy(buf, "Too long!");  /* writes past buf — UB */
+strcpy(buf, "Too long!");  /* writes past buf â€” UB */
 ```
 
 **Missing null terminator:**
@@ -409,9 +409,9 @@ char c = 'A';     /* correct */
 
 1. Write a program that reads a line of text and counts the number of words in it (words are separated by spaces, tabs, or punctuation).
 2. Write a program that reads a string and checks whether it is a palindrome (ignoring spaces, punctuation, and case). Example: "A man, a plan, a canal: Panama" is a palindrome.
-3. Write a program that reads a line of text and replaces every occurrence of a given word with another word. Example: "the cat sat on the mat" with "cat" replaced by "dog" → "the dog sat on the mat".
+3. Write a program that reads a line of text and replaces every occurrence of a given word with another word. Example: "the cat sat on the mat" with "cat" replaced by "dog" â†’ "the dog sat on the mat".
 4. Write a program that reads a filename from the user and extracts the file extension (text after the last '.').
 
 ### Challenge Problem
 
-Write a program that implements a simple `str_compress` function: it compresses a string by replacing consecutive repeated characters with the character followed by the count. For example, `"aaabbcccc"` becomes `"a3b2c4"`. If the compressed string is not shorter than the original, return the original. Test with `"abc"` (no compression — should return `"abc"`) and `"aabcccccaaa"` (should return `"a2b1c5a3"`).
+Write a program that implements a simple `str_compress` function: it compresses a string by replacing consecutive repeated characters with the character followed by the count. For example, `"aaabbcccc"` becomes `"a3b2c4"`. If the compressed string is not shorter than the original, return the original. Test with `"abc"` (no compression â€” should return `"abc"`) and `"aabcccccaaa"` (should return `"a2b1c5a3"`).

@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Memory Allocation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/08-memory-management.png)
+![Memory Allocation](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/08-memory-management.png)
 
 ### Address Binding
 
@@ -19,7 +19,7 @@ A program uses **logical addresses** (also called virtual addresses). The OS tra
 
 1. **Compile time**: If memory location is known in advance, absolute code can be generated (e.g., MS-DOS .COM files)
 2. **Load time**: The compiler generates relocatable code; the loader performs the final binding
-3. **Execution time**: Binding is delayed until the process is running — requires hardware support for dynamic relocation
+3. **Execution time**: Binding is delayed until the process is running â€” requires hardware support for dynamic relocation
 
 Most modern OS use execution-time binding with the **MMU** (Memory Management Unit).
 
@@ -30,8 +30,8 @@ Most modern OS use execution-time binding with the **MMU** (Memory Management Un
 - **MMU**: Hardware device that maps logical to physical addresses at runtime
 
 ```
-CPU ──→ Logical Address ──→ MMU ──→ Physical Address ──→ Memory
-                                ↑
+CPU â”€â”€â†’ Logical Address â”€â”€â†’ MMU â”€â”€â†’ Physical Address â”€â”€â†’ Memory
+                                â†‘
                            Relocation Register
 ```
 
@@ -54,13 +54,13 @@ Memory: | free(20) | P1(10) | free(15) | P2(8) | free(30) |
          0          20       30         45      53         83
 
 First-fit:  Allocate first hole that is big enough
-            → P3(12) goes at 0 (size 20 → remaining 8)
+            â†’ P3(12) goes at 0 (size 20 â†’ remaining 8)
             
 Best-fit:   Allocate smallest hole that is big enough
-            → P3(12) goes at 53 (size 30 → remaining 18)
+            â†’ P3(12) goes at 53 (size 30 â†’ remaining 18)
             
 Worst-fit:  Allocate largest hole
-            → P3(12) goes at 53 (size 30 → remaining 18)
+            â†’ P3(12) goes at 53 (size 30 â†’ remaining 18)
 ```
 
 | Algorithm | Search cost | Fragment size | Performance |
@@ -81,24 +81,24 @@ Worst-fit:  Allocate largest hole
 Paging solves the fragmentation problem by dividing both physical memory and logical memory into fixed-size blocks.
 
 - **Frames**: Fixed-size blocks of physical memory (typically 4 KB)
-- **Pages**: Fixed-size blocks of logical memory — same size as frames
+- **Pages**: Fixed-size blocks of logical memory â€” same size as frames
 - **Page table**: Maps page numbers to frame numbers
 
 ```
 Logical address:  | Page Number (p) | Page Offset (d) |    n bits
-                             ↓
-                     ┌───────────┐
-                     │ Page      │  Page table (stored in PCB or hardware)
-                     │ Table     │
-                     └─────┬─────┘
-                           ↓
+                             â†“
+                     â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                     â”‚ Page      â”‚  Page table (stored in PCB or hardware)
+                     â”‚ Table     â”‚
+                     â””â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”˜
+                           â†“
 Physical address: | Frame Number (f) | Page Offset (d) |
 ```
 
-**Example**: 32-bit address space, 4 KB page size (2¹² bytes):
+**Example**: 32-bit address space, 4 KB page size (2Â¹Â² bytes):
 - Page offset: 12 bits
 - Page number: 20 bits
-- Maximum pages per process: 2²⁰ = 1,048,576 pages
+- Maximum pages per process: 2Â²â° = 1,048,576 pages
 
 #### Page Table Implementation
 
@@ -118,62 +118,62 @@ The **Page Table Base Register (PTBR)** points to the page table. The **Translat
 #### TLB Operation
 
 ```
-CPU → Logical Address (p, d)
-        │
-        ├──→ TLB lookup
-        │     ├── Hit:  get frame # from TLB → physical address
-        │     └── Miss: access page table in memory → load TLB entry → physical address
-        │
-        └──→ Physical Address → Memory
+CPU â†’ Logical Address (p, d)
+        â”‚
+        â”œâ”€â”€â†’ TLB lookup
+        â”‚     â”œâ”€â”€ Hit:  get frame # from TLB â†’ physical address
+        â”‚     â””â”€â”€ Miss: access page table in memory â†’ load TLB entry â†’ physical address
+        â”‚
+        â””â”€â”€â†’ Physical Address â†’ Memory
 ```
 
 **TLB miss handling**:
 - **Hardware TLB miss**: The MMU walks the page table and fills the TLB (most RISC architectures)
 - **Software TLB miss**: The OS handles the miss via a trap (less common, more flexible)
 
-**TLB reach**: The amount of memory accessible through the TLB = TLB entries × page size. With 64 TLB entries and 4 KB pages, TLB reach = 256 KB — very small for modern workloads. Strategies to increase reach:
+**TLB reach**: The amount of memory accessible through the TLB = TLB entries Ã— page size. With 64 TLB entries and 4 KB pages, TLB reach = 256 KB â€” very small for modern workloads. Strategies to increase reach:
 - Larger page sizes (2 MB, 1 GB huge pages)
 - Multi-level TLB (L1, L2 TLB caches)
 
 #### Effective Access Time (EAT)
 
 ```
-EAT = (hit ratio) × (TLB access time) + (miss ratio) × (TLB access + memory access)
+EAT = (hit ratio) Ã— (TLB access time) + (miss ratio) Ã— (TLB access + memory access)
 
 Example:
   TLB access = 1 ns
   Memory access = 100 ns
   Hit ratio = 99%
 
-  EAT = 0.99 × 1ns + 0.01 × (1ns + 100ns)
-      = 0.99 + 0.01 × 101
+  EAT = 0.99 Ã— 1ns + 0.01 Ã— (1ns + 100ns)
+      = 0.99 + 0.01 Ã— 101
       = 0.99 + 1.01
       = 2.0 ns
 
 Without TLB: EAT = 100 ns
-With TLB (99% hit): EAT = 2 ns ← 50× improvement
+With TLB (99% hit): EAT = 2 ns â† 50Ã— improvement
 ```
 
 #### Multilevel Page Tables
 
-A single-level page table for 32-bit address space with 4 KB pages requires 2²⁰ entries (4 MB per process). For 64-bit, it's impossibly large. Solution: **hierarchical paging**.
+A single-level page table for 32-bit address space with 4 KB pages requires 2Â²â° entries (4 MB per process). For 64-bit, it's impossibly large. Solution: **hierarchical paging**.
 
 ```
 Level 1 Table              Level 2 Tables
-┌──────────┐              ┌──────────┐
-│ p1 entry │──→ ┌────────┐│ pages   │
-│          │    │ p2 entry│└──────────┘
-│          │    └────────┘
-│ ...      │              ┌──────────┐
-│ p1 entry │──→ ┌────────┐│ pages   │
-└──────────┘    │ p2 entry│└──────────┘
-                 └────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ p1 entry â”‚â”€â”€â†’ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”â”‚ pages   â”‚
+â”‚          â”‚    â”‚ p2 entryâ”‚â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+â”‚          â”‚    â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+â”‚ ...      â”‚              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ p1 entry â”‚â”€â”€â†’ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”â”‚ pages   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚ p2 entryâ”‚â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                 â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Logical address (32-bit, 4 KB pages):
 | p1 (10 bits) | p2 (10 bits) | offset (12 bits) |
 
-The two-level table reduces the top-level table to just 2¹⁰ entries (4 KB), with secondary tables only allocated as needed.
+The two-level table reduces the top-level table to just 2Â¹â° entries (4 KB), with secondary tables only allocated as needed.
 
 #### Hashed Page Tables
 
@@ -181,7 +181,7 @@ For address spaces > 32 bits, hashed page tables provide a common solution. The 
 
 #### Inverted Page Tables
 
-Instead of one entry per page per process, have one entry per **frame** of physical memory. Entry contains: process ID + page number. The table has one entry per frame — much smaller.
+Instead of one entry per page per process, have one entry per **frame** of physical memory. Entry contains: process ID + page number. The table has one entry per frame â€” much smaller.
 
 **Problem**: Address translation requires searching the entire table. Solved with hashing.
 
@@ -199,14 +199,14 @@ The **segment table** maps segment numbers to base addresses and limits.
 
 ```
 Segment Table:
-┌──────────┬──────────┬──────────┐
-│ Segment  │ Base     │ Limit    │
-├──────────┼──────────┼──────────┤
-│ 0 (Code) │  0x400000│ 0x010000 │
-│ 1 (Data) │  0x500000│ 0x020000 │
-│ 2 (Heap) │  0x700000│ 0x100000 │
-│ 3 (Stack)│ 0xFFFF000│ 0x001000 │
-└──────────┴──────────┴──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Segment  â”‚ Base     â”‚ Limit    â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ 0 (Code) â”‚  0x400000â”‚ 0x010000 â”‚
+â”‚ 1 (Data) â”‚  0x500000â”‚ 0x020000 â”‚
+â”‚ 2 (Heap) â”‚  0x700000â”‚ 0x100000 â”‚
+â”‚ 3 (Stack)â”‚ 0xFFFF000â”‚ 0x001000 â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Advantages**:
@@ -221,17 +221,17 @@ Segment Table:
 Modern x86 systems use **segmentation + paging together**. The logical address goes through segmentation first, producing a linear address, which is then translated via paging.
 
 ```
-Logical → Segmentation → Linear → Paging → Physical Address
+Logical â†’ Segmentation â†’ Linear â†’ Paging â†’ Physical Address
 ```
 
-In Linux, segmentation is minimized — most segments have base = 0 and limit = 4 GB, effectively disabling segmentation. This is known as a **flat memory model**.
+In Linux, segmentation is minimized â€” most segments have base = 0 and limit = 4 GB, effectively disabling segmentation. This is known as a **flat memory model**.
 
 ### Swapping
 
 A process can be **swapped** temporarily out of memory to a **backing store** (swap partition or swap file). When swapped back in, it resumes execution.
 
 - **Standard swapping**: Swap entire processes (slow, rarely used)
-- **Swapping with paging**: Swap individual pages (demand paging — used by all modern systems)
+- **Swapping with paging**: Swap individual pages (demand paging â€” used by all modern systems)
 
 ## Examples
 
@@ -239,7 +239,7 @@ A process can be **swapped** temporarily out of memory to a **backing store** (s
 
 Given:
 - 32-bit logical address space
-- Page size = 4 KB (2¹² bytes)
+- Page size = 4 KB (2Â¹Â² bytes)
 - Page table entries:
 
 | Page | Frame |
@@ -256,7 +256,7 @@ Translate logical address 0x205C:
 Page number = 0x205C >> 12 = 0x2 = 2
 Offset = 0x205C & 0xFFF = 0x05C
 
-Page 2 → Frame 12 = 0xC
+Page 2 â†’ Frame 12 = 0xC
 
 Physical address = 0xC << 12 | 0x05C = 0xC05C
 ```
@@ -350,7 +350,7 @@ int main() {
 - First-fit is generally the best dynamic partitioning strategy
 - Pages are fixed-size (typically 4 KB); frames are the same size in physical memory
 - Page tables map virtual pages to physical frames; TLB caches recent translations
-- Effective access time with TLB: EAT = hit_ratio × TLB_time + miss_ratio × (TLB_time + memory_time)
+- Effective access time with TLB: EAT = hit_ratio Ã— TLB_time + miss_ratio Ã— (TLB_time + memory_time)
 - Multilevel page tables save memory for sparse address spaces
 - Segments match the programmer's view; paging manages physical memory efficiently
 - Modern CPUs combine segmentation with paging (though Linux uses a flat model)
@@ -366,11 +366,11 @@ int main() {
 ### Intermediate
 
 4. Implement a memory allocator that tracks free holes and supports first-fit, best-fit, and worst-fit allocation. Use a linked list of hole descriptors. Test it with a sequence of requests and releases.
-5. For a 64-bit address space with 4 KB pages, a single-level page table would need 2⁵² entries (quadrillions). Explain how a four-level page table works and calculate how much memory the top-level table consumes.
+5. For a 64-bit address space with 4 KB pages, a single-level page table would need 2âµÂ² entries (quadrillions). Explain how a four-level page table works and calculate how much memory the top-level table consumes.
 6. Design a **two-level page table** for a 32-bit system with 4 KB pages. Show how the logical address 0x12345678 is translated, given appropriate page table entries.
 
 ### Advanced
 
-7. Write a program that simulates a TLB with LRU replacement. Process a random sequence of page numbers (10,000 accesses, 10–100 distinct pages) and measure the hit rate for TLB sizes of 8, 16, 32, 64, and 128 entries.
+7. Write a program that simulates a TLB with LRU replacement. Process a random sequence of page numbers (10,000 accesses, 10â€“100 distinct pages) and measure the hit rate for TLB sizes of 8, 16, 32, 64, and 128 entries.
 8. The x86-64 architecture supports 4 KB, 2 MB, and 1 GB page sizes. Write a program that allocates a 1 GB memory region using `mmap()` and measures TLB miss rate with `perf stat -e dTLB-load-misses`. Test with 4 KB pages (default) vs 2 MB huge pages (use `mmap` with `MAP_HUGETLB`).
 9. Implement a simple **inverted page table** with hashing. Support insert and lookup operations indexed by (process_id, page_number). Compare its memory usage with a traditional page table for a system with 1 GB RAM and 4 KB pages.

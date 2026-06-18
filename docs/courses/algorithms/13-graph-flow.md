@@ -1,6 +1,6 @@
 # Chapter 13: Network Flow
 
-> **Prerequisites:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) — Graph theory, cuts, and greedy algorithms | **Next:** [Chapter 14: String Algorithms](./14-string-algorithms.md) — From flow optimization to pattern matching
+> **Prerequisites:** [Chapter 12: Minimum Spanning Trees](./12-graph-mst.md) â€” Graph theory, cuts, and greedy algorithms | **Next:** [Chapter 14: String Algorithms](./14-string-algorithms.md) â€” From flow optimization to pattern matching
 
 ## Learning Objectives
 
@@ -19,9 +19,9 @@ By the end of this chapter, students will be able to:
 |-------|-------------|-------------------|
 | Flow Networks | Directed graph with source, sink, capacities | Capacity constraint + flow conservation = valid flow |
 | Max-Flow Min-Cut | Max flow = min cut capacity | The fundamental theorem of network flow |
-| Ford-Fulkerson | Augment along any path | May be slow; O(E·|f*|) worst case |
-| Edmonds-Karp | BFS for shortest augmenting path | O(VE²); always polynomial |
-| Dinic's Algorithm | Level graph + blocking flow | O(√V·E) for unit capacities; best for bipartite |
+| Ford-Fulkerson | Augment along any path | May be slow; O(EÂ·|f*|) worst case |
+| Edmonds-Karp | BFS for shortest augmenting path | O(VEÂ²); always polynomial |
+| Dinic's Algorithm | Level graph + blocking flow | O(âˆšVÂ·E) for unit capacities; best for bipartite |
 | Bipartite Matching | Reduce to max flow | Classic application: job assignment, dating |
 
 ### Chapter Roadmap
@@ -42,7 +42,7 @@ flowchart LR
 
 ## Theory
 
-![Network Flow Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch13-graph-flow.png)
+![Network Flow Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch13-graph-flow.png)
 
 ### 13.1 Flow Networks
 
@@ -57,7 +57,7 @@ A **flow** \( f : E \to \mathbb{R} \) satisfies:
 
 The **value** of a flow is \( |f| = \sum_{v} f(s,v) - \sum_{v} f(v,s) \).
 
-> **Pro Tip:** The residual graph is the key concept for all flow algorithms. Forward edges carry remaining capacity, backward edges allow "undoing" flow — this is what makes the augmenting path approach correct.
+> **Pro Tip:** The residual graph is the key concept for all flow algorithms. Forward edges carry remaining capacity, backward edges allow "undoing" flow â€” this is what makes the augmenting path approach correct.
 >
 > **Remember:** Flow conservation: flow in = flow out for all non-source/sink vertices. Check this invariant when debugging flow implementations.
 
@@ -71,7 +71,7 @@ The **value** of a flow is \( |f| = \sum_{v} f(s,v) - \sum_{v} f(v,s) \).
 
 **Proof sketch.** Let \( f \) be a maximum flow. The residual network has no augmenting path. Define \( S \) as the set of vertices reachable from \( s \) in the residual network. Then \( (S, V \setminus S) \) is a cut with capacity equal to \( |f| \). No cut can have smaller capacity because any flow must cross any cut by the amount \( |f| \).
 
-> **Pro Tip:** The max-flow min-cut theorem is the most important result in network flow — it ties together optimization (max flow) and partitioning (min cut). Use it to prove that a given flow is optimal: if you find a cut with capacity equal to the flow, both are optimal.
+> **Pro Tip:** The max-flow min-cut theorem is the most important result in network flow â€” it ties together optimization (max flow) and partitioning (min cut). Use it to prove that a given flow is optimal: if you find a cut with capacity equal to the flow, both are optimal.
 >
 > **Remember:** The min cut can be directly recovered from the residual graph after max flow: S = vertices reachable from s, T = the rest.
 
@@ -96,11 +96,11 @@ FordFulkerson(G, s, t):
 
 **Complexity:** \( O(E \cdot |f^*|) \) where \( f^* \) is the max flow value. Pseudo-polynomial if capacities are large.
 
-> **Pro Tip:** Ford-Fulkerson's complexity depends on the max flow value — it's pseudo-polynomial. Never use plain Ford-Fulkerson with large integer capacities without a path-length guarantee.
+> **Pro Tip:** Ford-Fulkerson's complexity depends on the max flow value â€” it's pseudo-polynomial. Never use plain Ford-Fulkerson with large integer capacities without a path-length guarantee.
 >
 > **Warning:** Ford-Fulkerson may fail to terminate if capacities are irrational (it can infinite-loop). Always use integer or rational capacities.
 
-**One-Sentence Takeaway:** Ford-Fulkerson repeatedly finds any augmenting path in the residual graph, achieving O(E·|f*|) time — pseudo-polynomial for large capacities.
+**One-Sentence Takeaway:** Ford-Fulkerson repeatedly finds any augmenting path in the residual graph, achieving O(EÂ·|f*|) time â€” pseudo-polynomial for large capacities.
 
 ### 13.4 Edmonds-Karp Algorithm
 
@@ -121,9 +121,9 @@ EdmondsKarp(G, s, t):
 
 > **Pro Tip:** Edmonds-Karp guarantees polynomial time by always picking the shortest augmenting path via BFS. This simple change eliminates Ford-Fulkerson's pseudo-polynomial dependency on capacities.
 >
-> **Remember:** Using BFS ensures each edge gets blocked at most O(V) times, yielding the O(VE²) bound.
+> **Remember:** Using BFS ensures each edge gets blocked at most O(V) times, yielding the O(VEÂ²) bound.
 
-**One-Sentence Takeaway:** Edmonds-Karp improves Ford-Fulkerson by always choosing the shortest augmenting path via BFS, achieving guaranteed O(VE²) polynomial time.
+**One-Sentence Takeaway:** Edmonds-Karp improves Ford-Fulkerson by always choosing the shortest augmenting path via BFS, achieving guaranteed O(VEÂ²) polynomial time.
 
 ### 13.5 Dinic's Algorithm
 
@@ -149,7 +149,7 @@ DFS(s, t, flow) sends flow from \( s \) to \( t \) along the level graph, respec
 >
 > **Remember:** The key acceleration is the current-edge pointer (`ptr[i]` in the DFS), which prevents re-scanning dead edges in the level graph.
 
-**One-Sentence Takeaway:** Dinic's algorithm combines BFS for level graphs with DFS blocking flows, achieving O(V²E) — the practical go-to for max flow problems.
+**One-Sentence Takeaway:** Dinic's algorithm combines BFS for level graphs with DFS blocking flows, achieving O(VÂ²E) â€” the practical go-to for max flow problems.
 
 ### 13.6 Bipartite Matching
 
@@ -163,11 +163,11 @@ DFS(s, t, flow) sends flow from \( s \) to \( t \) along the level graph, respec
 
 **Complexity:** \\( O(E \\sqrt{V}) \\) using Dinic, which is significantly faster than \\( O(VE) \\) augmentations.
 
-> **Pro Tip:** Bipartite matching via max flow is one of the most elegant reductions — source → left → right → sink with unit capacities transforms a combinatorial problem into flow.
+> **Pro Tip:** Bipartite matching via max flow is one of the most elegant reductions â€” source â†’ left â†’ right â†’ sink with unit capacities transforms a combinatorial problem into flow.
 >
 > **Remember:** The Hungarian algorithm handles weighted matching; max flow is faster for unweighted cases.
 
-**One-Sentence Takeaway:** Maximum bipartite matching reduces to max flow by connecting source → left nodes → right nodes → sink with unit capacities.
+**One-Sentence Takeaway:** Maximum bipartite matching reduces to max flow by connecting source â†’ left nodes â†’ right nodes â†’ sink with unit capacities.
 
 ### 13.7 Assignment Problem
 
@@ -175,11 +175,11 @@ DFS(s, t, flow) sends flow from \( s \) to \( t \) along the level graph, respec
 
 **Reduction to min-cost max flow:** Add edge weights (costs) to the bipartite matching reduction and use min-cost flow.
 
-> **Pro Tip:** The assignment problem is a min-cost max flow with exactly n units of flow. The Hungarian algorithm solves it in O(n³) without general flow machinery.
+> **Pro Tip:** The assignment problem is a min-cost max flow with exactly n units of flow. The Hungarian algorithm solves it in O(nÂ³) without general flow machinery.
 >
-> **Remember:** Both bipartite matching and assignment use the same source → left → right → sink structure — costs differentiate them.
+> **Remember:** Both bipartite matching and assignment use the same source â†’ left â†’ right â†’ sink structure â€” costs differentiate them.
 
-**One-Sentence Takeaway:** The assignment problem finds minimum-cost perfect matching via min-cost max flow or the specialized Hungarian algorithm in O(n³).
+**One-Sentence Takeaway:** The assignment problem finds minimum-cost perfect matching via min-cost max flow or the specialized Hungarian algorithm in O(nÂ³).
 
 ---
 
@@ -283,10 +283,10 @@ int maxBipartiteMatching(int uSize, int vSize,
 
 | Algorithm | Path Selection | Time | Key Feature | Best For |
 |-----------|---------------|------|-------------|----------|
-| Ford-Fulkerson | Any augmenting path | O(E·\|f*\|) | Simple, first method | Educational, small capacities |
-| Edmonds-Karp | Shortest (BFS) | O(VE²) | Polynomial guarantee | Teaching, medium graphs |
-| Dinic | Level graph + blocking flow | O(V²E) | Current-edge pointer | Competitive programming |
-| Dinic (unit) | Same | O(E√V) | Capacity = 1 optimization | Bipartite matching |
+| Ford-Fulkerson | Any augmenting path | O(EÂ·\|f*\|) | Simple, first method | Educational, small capacities |
+| Edmonds-Karp | Shortest (BFS) | O(VEÂ²) | Polynomial guarantee | Teaching, medium graphs |
+| Dinic | Level graph + blocking flow | O(VÂ²E) | Current-edge pointer | Competitive programming |
+| Dinic (unit) | Same | O(EâˆšV) | Capacity = 1 optimization | Bipartite matching |
 
 ### Quick Reference
 
@@ -296,8 +296,8 @@ int maxBipartiteMatching(int uSize, int vSize,
 | **Residual Graph** | Forward = remaining cap, backward = flow to undo |
 | **Augmenting Path** | Path from s to t in residual with positive capacity |
 | **Max-Flow Min-Cut** | Max flow = min cut; cut S = reachable from s in residual |
-| **Bipartite Matching** | Reduce to max flow: s → U → V → t with unit caps |
-| **Assignment** | Bipartite matching + edge costs → min-cost max flow |
+| **Bipartite Matching** | Reduce to max flow: s â†’ U â†’ V â†’ t with unit caps |
+| **Assignment** | Bipartite matching + edge costs â†’ min-cost max flow |
 
 ### Cross-Application Matrix
 
@@ -348,7 +348,7 @@ B) The `ptr[i]` current-edge pointer prevents re-scanning dead edges during DFS 
 
 <details>
 <summary>Answer</summary>
-B) BFS ensures each edge is saturated at most O(V) times, giving O(VE²) bound.
+B) BFS ensures each edge is saturated at most O(V) times, giving O(VEÂ²) bound.
 </details>
 
 **Q3.** What is the key idea behind the max-flow min-cut theorem proof?

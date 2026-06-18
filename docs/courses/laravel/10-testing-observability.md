@@ -1,4 +1,4 @@
-﻿# Chapter 10: Testing, Debugging & Observability
+# Chapter 10: Testing, Debugging & Observability
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Theory
 
-![Testing and Observability](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/10-testing-observability.png)
+![Testing and Observability](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/10-testing-observability.png)
 
 
 ### 10.1 PHPUnit in Laravel

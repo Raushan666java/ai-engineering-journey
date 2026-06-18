@@ -665,7 +665,7 @@ protected static function booted(): void
 
 ### Relationships
 
-![Eloquent Relationships](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/04-eloquent-database.png)
+![Eloquent Relationships](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/04-eloquent-database.png)
 
 #### One-to-One
 

@@ -1,6 +1,6 @@
 # Chapter 6: Greedy Algorithms
 
-> **Prerequisites:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) — Recursive problem decomposition | **Next:** [Chapter 7: Dynamic Programming — Foundations](./07-dp-intro.md) — When greedy fails, DP takes over
+> **Prerequisites:** [Chapter 5: Divide and Conquer](./05-divide-conquer.md) â€” Recursive problem decomposition | **Next:** [Chapter 7: Dynamic Programming â€” Foundations](./07-dp-intro.md) â€” When greedy fails, DP takes over
 
 ## Learning Objectives
 
@@ -43,7 +43,7 @@ flowchart LR
 
 ## Theory
 
-![Greedy Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch06-greedy.png)
+![Greedy Algorithms Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch06-greedy.png)
 
 ### 6.1 The Greedy Paradigm
 
@@ -81,7 +81,7 @@ ActivitySelection(s, f, n):
 
 **Complexity:** \( O(n \log n) \) due to sorting.
 
-> **Pro Tip:** Activity selection is the canonical example for proving greedy correctness via exchange argument. Master this proof — the same technique applies to many other greedy problems.
+> **Pro Tip:** Activity selection is the canonical example for proving greedy correctness via exchange argument. Master this proof â€” the same technique applies to many other greedy problems.
 >
 > **Warning:** If activities have weights instead of just counts, greedy fails. Weighted interval scheduling requires DP.
 
@@ -111,7 +111,7 @@ Huffman(C):
 
 > **Pro Tip:** Huffman coding is optimal for symbol-by-symbol encoding with fixed codeword lengths. For correlated symbols, arithmetic coding or Lempel-Ziv (LZ77) usually performs better.
 >
-> **Remember:** Huffman codes are prefix-free — no codeword is a prefix of another, ensuring unambiguous decoding.
+> **Remember:** Huffman codes are prefix-free â€” no codeword is a prefix of another, ensuring unambiguous decoding.
 
 **One-Sentence Takeaway:** Huffman coding builds an optimal prefix code by repeatedly merging the two lowest-frequency nodes, achieving maximum compression for symbol-by-symbol encoding.
 
@@ -139,7 +139,7 @@ FractionalKnapsack(items, W):
 
 **Contrast with 0/1 knapsack:** The fractional knapsack problem is solvable by a greedy algorithm, while the 0/1 knapsack problem requires dynamic programming. The difference lies in the ability to take fractions of items.
 
-> **Pro Tip:** The fractional knapsack problem is the perfect interview question to test whether a candidate understands why greedy works for fractional but not 0/1 — the key is fractional divisibility allows you to always fill the knapsack optimally.
+> **Pro Tip:** The fractional knapsack problem is the perfect interview question to test whether a candidate understands why greedy works for fractional but not 0/1 â€” the key is fractional divisibility allows you to always fill the knapsack optimally.
 >
 > **Remember:** The value-to-weight ratio sort is the greedy choice; taking fractions is what makes it optimal.
 
@@ -169,7 +169,7 @@ JobSequencing(jobs, n):
 
 > **Pro Tip:** Use a disjoint-set (union-find) data structure to optimize the slot-finding step in job sequencing. Each set tracks the latest available slot, and path compression makes this nearly constant time.
 
-**One-Sentence Takeaway:** Job sequencing with deadlines schedules highest-profit jobs first, placing each in the latest available slot before its deadline — O(n log n) with union-find optimization.
+**One-Sentence Takeaway:** Job sequencing with deadlines schedules highest-profit jobs first, placing each in the latest available slot before its deadline â€” O(n log n) with union-find optimization.
 
 ### 6.6 Canonical Coin Change
 
@@ -247,7 +247,7 @@ The greedy algorithm fails because the coin system is non-canonical.
 | Greedy-Choice Property | Local optimum leads to global optimum | Different from optimal substructure alone | Verifying greedy applicability |
 | Exchange Argument | Transform any optimal to greedy solution | Proves optimality by contradiction switching | Greedy correctness proofs |
 | Activity Selection | Earliest finish time first | Exchange argument is clean and canonical | Scheduling, resource allocation |
-| Huffman Coding | Merge smallest frequencies | Optimal prefix code — prefix-free property | File compression (ZIP, JPEG) |
+| Huffman Coding | Merge smallest frequencies | Optimal prefix code â€” prefix-free property | File compression (ZIP, JPEG) |
 | Fractional vs 0/1 Knapsack | Divisibility determines approach | Greedy works for fractional only | Resource allocation problems |
 
 ### Quick Reference
@@ -255,20 +255,20 @@ The greedy algorithm fails because the coin system is non-canonical.
 | Category | Key Points |
 |----------|------------|
 | **When Greedy Works** | Optimal substructure + greedy-choice property |
-| **Proof Technique** | Exchange argument — transform any optimal to greedy |
+| **Proof Technique** | Exchange argument â€” transform any optimal to greedy |
 | **Always Greedy-Solvable** | Activity selection, fractional knapsack, Huffman coding, Dijkstra, Prim's |
 | **Greedy Fails** | 0/1 knapsack, weighted interval scheduling, coin change (non-canonical) |
-| **Common Pitfall** | Assuming greedy works because it seems intuitive — always verify or test a counterexample |
+| **Common Pitfall** | Assuming greedy works because it seems intuitive â€” always verify or test a counterexample |
 
 ### Cross-Application Matrix
 
 | Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
 |-----------|---------------|----------------------|---------------|-------------------|
-| Activity Selection | Common — interval scheduling variations | Scheduling problems | Resource allocation, meeting room mgmt | Matroid theory |
-| Huffman Coding | Occasionally — compression basics | Rare | Data compression systems | Information theory |
-| Fractional Knapsack | Common — greedy vs DP contrast | N/A | Resource allocation | Linear programming duality |
+| Activity Selection | Common â€” interval scheduling variations | Scheduling problems | Resource allocation, meeting room mgmt | Matroid theory |
+| Huffman Coding | Occasionally â€” compression basics | Rare | Data compression systems | Information theory |
+| Fractional Knapsack | Common â€” greedy vs DP contrast | N/A | Resource allocation | Linear programming duality |
 | Job Sequencing | Occasionally asked | Deadline scheduling variations | Task scheduling | Scheduling theory |
-| Exchange Arguments | Critical skill — proofs | Required for many greedy proofs | N/A | Algorithm correctness |
+| Exchange Arguments | Critical skill â€” proofs | Required for many greedy proofs | N/A | Algorithm correctness |
 
 ---
 

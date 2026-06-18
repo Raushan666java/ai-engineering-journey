@@ -1,10 +1,10 @@
-﻿# SQL Problem Bank â€” Placement Interview Preparation
+# SQL Problem Bank â€” Placement Interview Preparation
 
 > 50 curated SQL problems organized by category. Each problem includes the question, schema, sample data, tested SQL solution, expected output, and step-by-step explanation.
 >
 > **Compatible with:** MySQL 8.0+, PostgreSQL 13+, SQL Server 2019+
 
-![SQL Query Execution Order](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch03-sql-execution.png)
+![SQL Query Execution Order](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch03-sql-execution.png)
 
 ---
 

@@ -9,7 +9,7 @@
 
 ## Theory
 
-![B-Trees & B+ Trees Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch15-b-trees.png)
+![B-Trees & B+ Trees Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch15-b-trees.png)
 
 ### B-Tree Definition
 
@@ -212,7 +212,7 @@ Search 10: found
 Search 25: not found
 ```
 
-### Example 3: B+ Tree — Leaf-Linked Structure Sketch
+### Example 3: B+ Tree â€” Leaf-Linked Structure Sketch
 
 ```cpp
 #include <iostream>
@@ -304,6 +304,88 @@ Searching for key 65:
   Level 1: choose node with keys 50 75
   Level 0 (leaf): found at page #105
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **High order = very shallow trees**: A B-tree of order 1000 (nodes hold up to 999 keys) has height â‰¤ 3 for 1 billion keys. Compare to a BST which would be 30 levels deep.
+- **B+ trees are superior for range queries**: In B-trees, range queries bounce between internal nodes. B+ trees store all data in leaves linked by a next pointer â€” range scans are just a linked list traversal.
+- **Fill factor matters**: B-tree nodes should never drop below half full (minimum occupancy = \(\lceil m/2 \rceil - 1\) keys). Monitor your fill factor; many half-empty nodes waste disk space.
+- **Concurrent B-trees use latching**: Crabbing (lock-coupling) is the standard concurrent access pattern: lock parent, lock child, release parent. B-link trees add sibling pointers for reduced contention.
+
+## One-Sentence Takeaways
+
+- B-trees are multi-way balanced trees designed for disk block-oriented storage.
+- Order \(m\) means each node has at most \(m\) children and at least \(\lceil m/2 \rceil\) children.
+- Height is bounded by \(\log_{\lceil m/2 \rceil} n\), making very shallow trees possible.
+- Splits propagate upward when a node overflows; merges fix underflow.
+- B+ trees store all data in leaves with a linked list for fast range scans.
+- B-trees power most database indexes and file systems (NTFS, ext4, HFS+).
+
+## Concept Comparison Table
+
+| Feature | BST | AVL | B-Tree (order m) | B+ Tree |
+|---------|-----|-----|------------------|---------|
+| Branching factor | 2 | 2 | Up to m | Up to m |
+| Height | \(n\) | \(1.44 \log n\) | \(\log_{m/2} n\) | \(\log_{m/2} n\) |
+| Internal nodes | Store data | Store data | Store data | Only keys |
+| Leaf nodes | Store data | Store data | Store data | Store keys + data or data ptrs |
+| Leaf links | No | No | No | Yes (sorted linked list) |
+| Disk-friendly | No | No | Yes | Yes |
+| Range queries | \(O(n)\) | \(O(n)\) | \(O(n)\) | \(O(\log n + k)\) |
+
+## Quick Reference: B-Tree Order and Height
+
+| Order (m) | Min Keys/Node | Max Keys/Node | Height for \(10^9\) Keys |
+|-----------|---------------|---------------|-------------------------|
+| 5 | 2 | 4 | ~14 |
+| 50 | 24 | 49 | ~5 |
+| 100 | 49 | 99 | ~4 |
+| 1000 | 499 | 999 | ~3 |
+
+## Cross-Application Matrix
+
+| System | Tree Type | Why |
+|--------|-----------|-----|
+| MySQL InnoDB | B+ tree | Primary key index, range scans |
+| PostgreSQL | B+ tree | General-purpose index |
+| NTFS (MFT) | B-tree | File metadata lookup |
+| ext4 | H-tree (B-tree variant) | Directory indexing |
+| MongoDB | B-tree (WiredTiger) | Document index |
+| Oracle | B+ tree | Clustered and secondary indexes |
+
+## Chapter Quiz
+
+1. **What is the minimum number of keys in a B-tree node of order m?**
+   - a) \(m-1\)
+   - b) \(\lceil m/2 \rceil - 1\) âœ“
+   - c) \(m/2\)
+   - d) 1
+
+2. **What happens when a B-tree node overflows?**
+   - a) It is deleted
+   - b) It splits into two nodes âœ“
+   - c) Keys are discarded
+   - d) The tree rebalances
+
+3. **What key advantage does a B+ tree have over a B-tree?**
+   - a) Lower height
+   - b) Efficient range scans âœ“
+   - c) Less memory
+   - d) Simpler implementation
+
+4. **B-trees are designed for:**
+   - a) In-memory computation
+   - b) Disk-block storage âœ“
+   - c) Network communication
+   - d) Cache optimization
+
+5. **What is the height bound of a B-tree of order m with n keys?**
+   - a) \(\log m\)
+   - b) \(\log_{\lceil m/2 \rceil} n\) âœ“
+   - c) \(n/m\)
+   - d) \(\log n\)
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

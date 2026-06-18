@@ -1,8 +1,8 @@
-﻿# CSS Fundamentals
+# CSS Fundamentals
 
 ## Learning Objectives
 
-![CSS Basics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/css-basics.png)
+![CSS Basics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/css-basics.png)
 
 
 By the end of this chapter, you will be able to:

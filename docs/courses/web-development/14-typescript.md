@@ -11,7 +11,7 @@ By the end of this chapter, you will be able to:
 
 ## 14.1 Basic Types
 
-![TypeScript Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/14-typescript.png)
+![TypeScript Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/14-typescript.png)
 
 ```typescript
 // Primitive types

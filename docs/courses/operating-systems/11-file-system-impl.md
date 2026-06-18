@@ -11,35 +11,35 @@
 
 ## Theory
 
-![File System Implementation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/11-file-system-impl.png)
+![File System Implementation](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/11-file-system-impl.png)
 
 ### File System Layout
 
 A file system is stored on a disk (or partition) in a structured layout. The exact organization varies, but most share common elements:
 
 ```
-┌────────────────────────────────────────────┐
-│ Boot Block                                   │
-│   (first sector — boots the OS if this      │
-│    is the bootable partition)                │
-├────────────────────────────────────────────┤
-│ Superblock                                   │
-│   (file system metadata: type, size,         │
-│    free block count, mount status)          │
-├────────────────────────────────────────────┤
-│ Free Space Management                        │
-│   (bitmap or free list of available blocks) │
-├────────────────────────────────────────────┤
-│ Inode Table                                  │
-│   (array of inodes — file metadata)         │
-├────────────────────────────────────────────┤
-│ Root Directory                               │
-│   (directory entries for root directory)    │
-├────────────────────────────────────────────┤
-│ Data Blocks                                  │
-│   (file data, directory contents,           │
-│    indirect blocks, etc.)                   │
-└────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Boot Block                                   â”‚
+â”‚   (first sector â€” boots the OS if this      â”‚
+â”‚    is the bootable partition)                â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Superblock                                   â”‚
+â”‚   (file system metadata: type, size,         â”‚
+â”‚    free block count, mount status)          â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Free Space Management                        â”‚
+â”‚   (bitmap or free list of available blocks) â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Inode Table                                  â”‚
+â”‚   (array of inodes â€” file metadata)         â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Root Directory                               â”‚
+â”‚   (directory entries for root directory)    â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Data Blocks                                  â”‚
+â”‚   (file data, directory contents,           â”‚
+â”‚    indirect blocks, etc.)                   â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### In-Memory File System Structures
@@ -54,17 +54,17 @@ The OS maintains several in-memory data structures for efficient file system acc
 ```
 Process A                    System-Wide            In-Memory
 Open-File Table              Open-File Table        Inode Table
-┌──────────┐                 ┌──────────────────┐   ┌──────────────┐
-│ fd 0: →  │──stdin────────→│ File Entry        │──→│ /etc/passwd  │
-│ fd 1: →  │──stdout───────→│ (file offset,     │   └──────────────┘
-│ fd 2: →  │──stderr───────→│  vnode pointer,   │   ┌──────────────┐
-│ fd 3: →  │───┐            │  access mode,     │──→│ /home/a.txt  │
-└──────────┘    │            │  ref count)       │   └──────────────┘
-                │            └──────────────────┘
-                └───────────→│ File Entry for    │
-                             │ /home/a.txt       │
-                             │ offset = 42       │
-                             └──────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”                 â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ fd 0: â†’  â”‚â”€â”€stdinâ”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚ File Entry        â”‚â”€â”€â†’â”‚ /etc/passwd  â”‚
+â”‚ fd 1: â†’  â”‚â”€â”€stdoutâ”€â”€â”€â”€â”€â”€â”€â†’â”‚ (file offset,     â”‚   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+â”‚ fd 2: â†’  â”‚â”€â”€stderrâ”€â”€â”€â”€â”€â”€â”€â†’â”‚  vnode pointer,   â”‚   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ fd 3: â†’  â”‚â”€â”€â”€â”            â”‚  access mode,     â”‚â”€â”€â†’â”‚ /home/a.txt  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚            â”‚  ref count)       â”‚   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                â”‚            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â†’â”‚ File Entry for    â”‚
+                             â”‚ /home/a.txt       â”‚
+                             â”‚ offset = 42       â”‚
+                             â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Inodes (Index Nodes)
@@ -73,50 +73,50 @@ An **inode** is a data structure that stores all metadata about a file except it
 
 ```
 Typical Unix inode (ext4):
-┌────────────────────────────────────┐
-│ Mode / Permissions (16 bits)        │
-│ Owner ID (16 bits)                  │
-│ Group ID (16 bits)                  │
-│ Size (64 bits)                      │
-│ Access Time (atime)                 │
-│ Modification Time (mtime)           │
-│ Change Time (ctime)                 │
-│ Link Count                          │
-│ Pointers to Data Blocks:            │
-│   12 × Direct Block Pointers        │
-│   1 × Single Indirect Pointer       │
-│   1 × Double Indirect Pointer       │
-│   1 × Triple Indirect Pointer       │
-└────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Mode / Permissions (16 bits)        â”‚
+â”‚ Owner ID (16 bits)                  â”‚
+â”‚ Group ID (16 bits)                  â”‚
+â”‚ Size (64 bits)                      â”‚
+â”‚ Access Time (atime)                 â”‚
+â”‚ Modification Time (mtime)           â”‚
+â”‚ Change Time (ctime)                 â”‚
+â”‚ Link Count                          â”‚
+â”‚ Pointers to Data Blocks:            â”‚
+â”‚   12 Ã— Direct Block Pointers        â”‚
+â”‚   1 Ã— Single Indirect Pointer       â”‚
+â”‚   1 Ã— Double Indirect Pointer       â”‚
+â”‚   1 Ã— Triple Indirect Pointer       â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 The block pointers form a multi-level index:
 
 ```
-┌─────────────┐
-│ Direct 0    │────→ Data Block
-│ Direct 1    │────→ Data Block
-│ ...         │
-│ Direct 11   │────→ Data Block
-├─────────────┤
-│ Single      │────→ ┌────┬────┬────┐
-│ Indirect    │      │Ptrs to data blocks│
-├─────────────┤      └──────────────────┘
-│ Double      │────→ ┌────┬────┬────┐
-│ Indirect    │      │Ptrs to indirect  │
-│             │      │blocks            │
-├─────────────┤      └──────────────────┘
-│ Triple      │────→ ┌────┬────┬────┐
-│ Indirect    │      │Ptrs to double   │
-│             │      │indirect blocks  │
-└─────────────┘      └──────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Direct 0    â”‚â”€â”€â”€â”€â†’ Data Block
+â”‚ Direct 1    â”‚â”€â”€â”€â”€â†’ Data Block
+â”‚ ...         â”‚
+â”‚ Direct 11   â”‚â”€â”€â”€â”€â†’ Data Block
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Single      â”‚â”€â”€â”€â”€â†’ â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”
+â”‚ Indirect    â”‚      â”‚Ptrs to data blocksâ”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+â”‚ Double      â”‚â”€â”€â”€â”€â†’ â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”
+â”‚ Indirect    â”‚      â”‚Ptrs to indirect  â”‚
+â”‚             â”‚      â”‚blocks            â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+â”‚ Triple      â”‚â”€â”€â”€â”€â†’ â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”
+â”‚ Indirect    â”‚      â”‚Ptrs to double   â”‚
+â”‚             â”‚      â”‚indirect blocks  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 With 4 KB blocks and 4-byte block pointers (1K pointers per indirect block):
-- Direct: 12 × 4 KB = 48 KB
-- Single indirect: 1024 × 4 KB = 4 MB
-- Double indirect: 1024 × 1024 × 4 KB = 4 GB
-- Triple indirect: 1024 × 1024 × 1024 × 4 KB = 4 TB
+- Direct: 12 Ã— 4 KB = 48 KB
+- Single indirect: 1024 Ã— 4 KB = 4 MB
+- Double indirect: 1024 Ã— 1024 Ã— 4 KB = 4 GB
+- Triple indirect: 1024 Ã— 1024 Ã— 1024 Ã— 4 KB = 4 TB
 - Maximum file size: ~4 TB (with 4 KB blocks)
 
 ### Directory Implementation
@@ -129,13 +129,13 @@ A directory is a file whose data is a list of entries. Each entry maps a filenam
 
 ```
 Directory entry (ext4):
-┌──────────┬──────────────┬────────────────┐
-│ inode #  │ record len   │ name len │type│
-├──────────┼──────────────┼────────────────┤
-│ 12345    │ 16           │ 4        │ reg│ home
-│ 12346    │ 24           │ 11       │ reg│ documents
-│ 12347    │ 40           │ 4        │ dir│ docs
-└──────────┴──────────────┴────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ inode #  â”‚ record len   â”‚ name len â”‚typeâ”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ 12345    â”‚ 16           â”‚ 4        â”‚ regâ”‚ home
+â”‚ 12346    â”‚ 24           â”‚ 11       â”‚ regâ”‚ documents
+â”‚ 12347    â”‚ 40           â”‚ 4        â”‚ dirâ”‚ docs
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Allocation Methods
@@ -158,11 +158,11 @@ File C (blocks 7-10): [7][8][9][10]
 Each block contains a pointer to the next block. The directory entry points to the first and last blocks.
 
 ```
-Directory: file.txt → first=9, last=25
+Directory: file.txt â†’ first=9, last=25
 
-Block 9:  [data... | → 23]
-Block 23: [data... | → 17]
-Block 17: [data... | → 0]  (end)
+Block 9:  [data... | â†’ 23]
+Block 23: [data... | â†’ 17]
+Block 17: [data... | â†’ 0]  (end)
 ```
 
 **Pro**: No external fragmentation, file can grow easily.
@@ -175,7 +175,7 @@ FAT:
 Index: 0   1   2   3   4   5   6   7   8   9  ...
 Value: -1  -1  -1   7  -1  -1   9  11  -1   4  ...
 
-File at block 2: 2 → 3 → 7 → 11 → end
+File at block 2: 2 â†’ 3 â†’ 7 â†’ 11 â†’ end
 ```
 
 #### Indexed Allocation
@@ -185,7 +185,7 @@ All block pointers are collected into an **index block** (similar to inode direc
 ```
 File A:
 Index Block: [4, 7, 2, 9, 11, 0, ...]
-              ↓  ↓  ↓  ↓  ↓
+              â†“  â†“  â†“  â†“  â†“
 Data Blocks:  4  7  2  9  11
 ```
 
@@ -207,14 +207,14 @@ Finding a free block: search for a 1 in the bitmap
 Finding N contiguous blocks: search for N consecutive 1s
 ```
 
-**Memory requirement**: For a 1 TB disk with 4 KB blocks: 1 TB / 4 KB = 2⁸⁰ / 2¹² = 2⁶⁸ / 2²² = 2⁴⁶ bits = 2⁴³ bytes. That's about 32 MB of bitmap for 1 TB.
+**Memory requirement**: For a 1 TB disk with 4 KB blocks: 1 TB / 4 KB = 2â¸â° / 2Â¹Â² = 2â¶â¸ / 2Â²Â² = 2â´â¶ bits = 2â´Â³ bytes. That's about 32 MB of bitmap for 1 TB.
 
 #### Linked List
 
 A pointer to the first free block is stored in the superblock. Each free block points to the next.
 
 ```
-Superblock → Free Block 1 → Free Block 8 → Free Block 23 → ...
+Superblock â†’ Free Block 1 â†’ Free Block 8 â†’ Free Block 23 â†’ ...
 ```
 
 **Pro**: Little space overhead (the blocks themselves store the list).
@@ -228,10 +228,10 @@ The OS maintains a cache of recently accessed disk blocks in memory. The **page 
 
 ```
 Application:   read(fd, buf, 1024)
-                   ↓
+                   â†“
 Page Cache:   Check if block is cached
-              ├── Hit:  copy from cache → return
-              └── Miss: read from disk → add to cache → copy → return
+              â”œâ”€â”€ Hit:  copy from cache â†’ return
+              â””â”€â”€ Miss: read from disk â†’ add to cache â†’ copy â†’ return
 ```
 
 #### Read-Ahead
@@ -287,7 +287,7 @@ If the system crashes during step 3:
 // Simulated disk
 char disk[NUM_BLOCKS][BLOCK_SIZE];
 
-// Bitmap — one bit per block
+// Bitmap â€” one bit per block
 unsigned char free_blocks[NUM_BLOCKS / 8];
 
 typedef struct {

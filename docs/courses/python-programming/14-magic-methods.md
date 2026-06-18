@@ -10,11 +10,11 @@ By the end of this chapter, students will be able to:
 - Build iterable objects with `__iter__` and `__next__`
 - Use `__len__` and other container methods
 
-![Magic Methods](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/14-magic-methods.png)
+![Magic Methods](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/14-magic-methods.png)
 
 ## 14.1 Introduction
 
-Magic methods (dunder methods) are special methods with double underscores that allow objects to define Python language behaviours. They are not meant to be called directly — Python calls them implicitly.
+Magic methods (dunder methods) are special methods with double underscores that allow objects to define Python language behaviours. They are not meant to be called directly â€” Python calls them implicitly.
 
 ```python
 class Point:
@@ -29,9 +29,9 @@ class Point:
         return f"({self.x}, {self.y})"
 
 p = Point(3, 4)
-print(repr(p))   # Point(3, 4)  — calls __repr__
-print(str(p))    # (3, 4)       — calls __str__
-print(p)         # (3, 4)       — calls __str__
+print(repr(p))   # Point(3, 4)  â€” calls __repr__
+print(str(p))    # (3, 4)       â€” calls __str__
+print(p)         # (3, 4)       â€” calls __str__
 ```
 
 ## 14.2 __str__ and __repr__
@@ -129,7 +129,7 @@ print(products)
 # [Product(Lamp, $80.00), Product(Chair, $150.00), Product(Desk, $500.00)]
 ```
 
-Using `@total_ordering` from `functools` reduces boilerplate — define `__eq__` and one comparison method, and the rest are generated:
+Using `@total_ordering` from `functools` reduces boilerplate â€” define `__eq__` and one comparison method, and the rest are generated:
 
 ```python
 from functools import total_ordering
@@ -180,9 +180,9 @@ class SimpleDict:
 
 d = SimpleDict()
 d["name"] = "Alice"    # __setitem__
-print(d["name"])       # __getitem__  → Alice
-print("name" in d)     # __contains__ → True
-print(len(d))           # __len__     → 1
+print(d["name"])       # __getitem__  â†’ Alice
+print("name" in d)     # __contains__ â†’ True
+print(len(d))           # __len__     â†’ 1
 del d["name"]           # __delitem__
 ```
 

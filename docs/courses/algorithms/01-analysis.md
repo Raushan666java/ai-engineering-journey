@@ -1,6 +1,6 @@
 # Chapter 1: Fundamentals of Algorithm Analysis
 
-> **Prerequisites:** None | **Next:** [Chapter 2: Searching](./02-searching.md) — From measuring efficiency to finding elements
+> **Prerequisites:** None | **Next:** [Chapter 2: Searching](./02-searching.md) â€” From measuring efficiency to finding elements
 
 ## Learning Objectives
 
@@ -17,7 +17,7 @@ By the end of this chapter, students will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Asymptotic Notation | Big-O, Θ, Ω describe upper, tight, and lower bounds | Always express algorithm efficiency using Big-O for worst-case analysis |
+| Asymptotic Notation | Big-O, Î˜, Î© describe upper, tight, and lower bounds | Always express algorithm efficiency using Big-O for worst-case analysis |
 | Recurrence Relations | Recursive algorithms modeled as T(n) = aT(n/b) + f(n) | Master theorem solves most common recurrences in one step |
 | Substitution Method | Guess + induction proves asymptotic bounds | Use when master theorem doesn't apply; guess from experience |
 | Recursion-Tree Method | Visualize recursion as levels with per-level costs | Builds intuition for why divide-and-conquer algorithms have log factors |
@@ -40,7 +40,7 @@ flowchart LR
 
 ## Theory
 
-![Algorithm Analysis Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch01-analysis.png)
+![Algorithm Analysis Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch01-analysis.png)
 
 ### 1.1 Asymptotic Notation
 
@@ -78,7 +78,7 @@ Big-Theta is an asymptotically *tight* bound.
 O(1) \subset O(\log n) \subset O(n) \subset O(n \log n) \subset O(n^2) \subset O(2^n) \subset O(n!)
 \]
 
-> **Pro Tip:** Always find the *tightest* Big-O bound. Saying an algorithm is O(n³) might be technically correct, but if it's actually O(n log n), the looser bound hides the algorithm's true efficiency.
+> **Pro Tip:** Always find the *tightest* Big-O bound. Saying an algorithm is O(nÂ³) might be technically correct, but if it's actually O(n log n), the looser bound hides the algorithm's true efficiency.
 
 **One-Sentence Takeaway:** Asymptotic notation gives a precise language to describe how runtime grows with input size, abstracting away constants and lower-order terms.
 
@@ -143,7 +143,7 @@ The recursion-tree method visualizes each recursive call as a node, with the cos
 | \( T(n) = 4T(n/2) + n^3 \) | 4 | 2 | 2 | \( n^3 \) | 3 | \( \Theta(n^3) \) |
 | \( T(n) = 4T(n/2) + n^2 \) | 4 | 2 | 2 | \( n^2 \) | 2 | \( \Theta(n^2 \log n) \) |
 
-> **Pro Tip:** When applying the master theorem, first compute log_b a, then compare f(n) to n^{log_b a} — these are the two critical numbers that determine the case.
+> **Pro Tip:** When applying the master theorem, first compute log_b a, then compare f(n) to n^{log_b a} â€” these are the two critical numbers that determine the case.
 >
 > **Warning:** The master theorem only works for recurrences of the exact form T(n) = aT(n/b) + f(n). If the subproblem sizes differ (e.g., T(n) = T(n-1) + n), you must use other methods.
 
@@ -185,7 +185,7 @@ where \( c \) is the actual cost and \( D_i \) is the state after the \( i \)-th
 
 > **Pro Tip:** The potential method is the most powerful amortized technique because a well-chosen potential function can handle complex data structures where aggregate and accounting become unwieldy.
 >
-> **Remember:** Amortized analysis is not the same as average-case analysis — amortized guarantees hold for *every* sequence of operations, not just on average.
+> **Remember:** Amortized analysis is not the same as average-case analysis â€” amortized guarantees hold for *every* sequence of operations, not just on average.
 
 **One-Sentence Takeaway:** Amortized analysis reveals that data structures with occasional expensive operations can still guarantee constant average cost per operation across any sequence.
 
@@ -230,10 +230,10 @@ Solve \( T(n) = T(\sqrt{n}) + O(\log \log n) \) using substitution.
 
 | Category | Key Points |
 |----------|------------|
-| **Notation** | O = upper bound, Ω = lower bound, Θ = tight bound, o = strict upper, ω = strict lower |
-| **Growth Rates** | 1 < log n < n < n log n < n² < 2ⁿ < n! — memorize this ordering |
-| **Master Theorem** | Case 1: f(n) < n^{log_b a} → Θ(n^{log_b a}); Case 2: f(n) = n^{log_b a} → Θ(n^{log_b a} log n); Case 3: f(n) > n^{log_b a} → Θ(f(n)) |
-| **Amortized Methods** | Aggregate: total ÷ n; Accounting: prepay credit; Potential: energy function |
+| **Notation** | O = upper bound, Î© = lower bound, Î˜ = tight bound, o = strict upper, Ï‰ = strict lower |
+| **Growth Rates** | 1 < log n < n < n log n < nÂ² < 2â¿ < n! â€” memorize this ordering |
+| **Master Theorem** | Case 1: f(n) < n^{log_b a} â†’ Î˜(n^{log_b a}); Case 2: f(n) = n^{log_b a} â†’ Î˜(n^{log_b a} log n); Case 3: f(n) > n^{log_b a} â†’ Î˜(f(n)) |
+| **Amortized Methods** | Aggregate: total Ã· n; Accounting: prepay credit; Potential: energy function |
 | **Common Pitfalls** | Forget the regularity condition in Master Case 3; Use master theorem on unbalanced recurrences |
 
 ### Cross-Application Matrix
@@ -269,19 +269,19 @@ Solve \( T(n) = T(\sqrt{n}) + O(\log \log n) \) using substitution.
 
 <details>
 <summary>Answer</summary>
-C) Big-Theta — it requires both an upper and lower bound match.
+C) Big-Theta â€” it requires both an upper and lower bound match.
 </details>
 
 **Q2.** Solve T(n) = 2T(n/4) + n^{0.5} using the master theorem.
 
-- A) Θ(n)
-- B) Θ(√n log n)
-- C) Θ(√n)
-- D) Θ(log n)
+- A) Î˜(n)
+- B) Î˜(âˆšn log n)
+- C) Î˜(âˆšn)
+- D) Î˜(log n)
 
 <details>
 <summary>Answer</summary>
-C) Θ(√n). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is Case 2, so T(n) = Θ(n^{0.5} log n)... Wait — f(n) = √n = n^{1/2}, and log_b a = log_4 2 = 1/2. They match, so Case 2 gives Θ(√n log n). The correct answer is B.
+C) Î˜(âˆšn). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is Case 2, so T(n) = Î˜(n^{0.5} log n)... Wait â€” f(n) = âˆšn = n^{1/2}, and log_b a = log_4 2 = 1/2. They match, so Case 2 gives Î˜(âˆšn log n). The correct answer is B.
 </details>
 
 **Q3.** A dynamic array that doubles when full has what amortized insertion cost?
@@ -289,7 +289,7 @@ C) Θ(√n). Here a=2, b=4, log_b a = 0.5, f(n) = n^{0.5} = n^{log_b a}. This is
 - A) O(n)
 - B) O(log n)
 - C) O(1)
-- D) O(n²)
+- D) O(nÂ²)
 
 <details>
 <summary>Answer</summary>

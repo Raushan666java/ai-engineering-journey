@@ -12,7 +12,7 @@
 
 ## Theory
 
-![Advanced SQL, Normalization and Higher Normal Forms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch03-advanced-sql-normalization.png)
+![Advanced SQL, Normalization and Higher Normal Forms](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch03-advanced-sql-normalization.png)
 
 ### 6.1 Aggregate Functions
 
@@ -263,7 +263,7 @@ SELECT * FROM category_tree;
 
 ### 6.5 Views
 
-A view is a virtual table defined by a query. It does not store data itself — it is a stored query.
+A view is a virtual table defined by a query. It does not store data itself â€” it is a stored query.
 
 ```sql
 -- Create a view
@@ -454,6 +454,127 @@ FROM crosstab(
     sep NUMERIC, oct NUMERIC, nov NUMERIC, dec NUMERIC
 );
 ```
+
+## ðŸ’¡ Pro Tips
+
+1. **SQL execution order is not the same as writing order** â€” the mental model is FROM â†’ JOIN â†’ WHERE â†’ GROUP BY â†’ HAVING â†’ SELECT â†’ ORDER BY â†’ LIMIT. Write with this in mind.
+2. **Window functions replace 80% of what you'd use a self-join or subquery for** â€” they are faster, more readable, and can compute running totals, moving averages, and rankings in a single pass.
+3. **Recursive CTEs are the most underused SQL feature** â€” they elegantly solve tree traversal, date generation, and graph walking problems that are painful in procedural code.
+4. **Materialized views are not free** â€” they use disk space and require explicit refresh. Use them for expensive aggregations queried frequently; stick with regular views for simple abstractions.
+5. **Index column order matters** â€” put high-selectivity columns first in composite indexes. An index on (status, created_at) is useless for `WHERE created_at > '2026-01-01'` alone.
+
+## One-Sentence Takeaways
+
+- **6.1:** Aggregate functions (COUNT, SUM, AVG, MIN, MAX) compute single summary values from sets of rows, ignoring NULLs by default.
+- **6.2:** GROUP BY partitions rows into groups for aggregation; HAVING filters groups after aggregation, unlike WHERE which filters before.
+- **6.3:** Window functions perform row-wise calculations across partitions without collapsing rows, enabling running totals, rankings, and moving averages.
+- **6.4:** CTEs (WITH clauses) create temporary named result sets that improve readability and enable recursive querying.
+- **6.5:** Views are virtual tables defined by stored queries; materialized views physically store results for faster reads at the cost of staleness.
+- **6.6:** Indexes (B-tree, Hash, Partial, Expression, Composite) accelerate data retrieval but add write overhead.
+- **6.7:** The information schema provides metadata about database objects â€” tables, columns, indexes, and constraints.
+
+## Concept Comparison Table
+
+| Feature | GROUP BY | Window Functions | CTE | View |
+|---------|----------|-----------------|-----|------|
+| **Collapses rows?** | Yes â€” one row per group | No â€” preserves all rows | No â€” temporary named result | No â€” stored query definition |
+| **Use case** | Summary reports | Rankings, running totals | Complex/recursive queries | Query abstraction & security |
+| **Can be recursive?** | No | No | Yes (WITH RECURSIVE) | No |
+| **Stores data?** | No (execution-time only) | No (execution-time only) | No (session lifetime) | Regular: No. Materialized: Yes |
+| **Supports WHERE pushdown?** | Before GROUP BY | Yes | Yes | Depends |
+
+| Index Type | Best For | Characteristics |
+|-----------|---------|-----------------|
+| **B-tree (default)** | Equality + range queries | Balanced tree, O(log n) lookup |
+| **Hash** | Equality queries only | Smaller, faster for =, useless for > or ORDER BY |
+| **Partial** | Queries on a subset of rows | Smaller index, faster for filtered queries |
+| **Expression** | Queries using functions | `WHERE LOWER(email) = 'x'` |
+| **Composite** | Multi-column WHERE/JOIN | Column order matters (high-selectivity first) |
+
+## Quick Reference
+
+| Aggregate | What It Does | NULL Handling |
+|-----------|-------------|---------------|
+| COUNT(*) | Counts all rows | Counts NULLs |
+| COUNT(col) | Counts non-null values in column | Ignores NULLs |
+| SUM(col) | Sum of values | Ignores NULLs |
+| AVG(col) | Average of values | Ignores NULLs |
+| MIN(col) | Minimum value | Ignores NULLs |
+| MAX(col) | Maximum value | Ignores NULLs |
+
+| Window Function | Purpose |
+|----------------|---------|
+| ROW_NUMBER() | Unique sequential number per partition |
+| RANK() | Rank with ties, skips numbers |
+| DENSE_RANK() | Rank with ties, no skipping |
+| NTILE(n) | Divides into n equal buckets |
+| LAG(col, n) | Value from n rows before current |
+| LEAD(col, n) | Value from n rows after current |
+| FIRST_VALUE(col) | First value in window frame |
+| LAST_VALUE(col) | Last value in window frame |
+
+## Cross-Application Matrix
+
+| Feature | Applied In | Why It Matters |
+|---------|-----------|----------------|
+| **GROUP BY + HAVING** | Sales dashboards, analytics | Department averages, customer segments, trend reports |
+| **Window Functions** | Financial reporting, leaderboards | Running balances, rank employees by performance, YoY comparisons |
+| **Recursive CTEs** | Org charts, bill of materials | Employee hierarchies, product assembly structures, category trees |
+| **Materialized Views** | Data warehouses, BI tools | Pre-computed monthly summaries refreshed nightly |
+| **Partial Indexes** | Active records, soft-delete tables | Index only active users (WHERE is_active = TRUE) |
+| **Composite Indexes** | Multi-column filtering | Speed up queries filtering on (status, date) or (customer_id, order_date) |
+
+## Chapter Quiz
+
+1. What is the SQL execution order?
+   a) SELECT â†’ FROM â†’ WHERE â†’ GROUP BY â†’ HAVING â†’ ORDER BY
+   b) FROM â†’ WHERE â†’ GROUP BY â†’ HAVING â†’ SELECT â†’ ORDER BY
+   c) FROM â†’ SELECT â†’ WHERE â†’ GROUP BY â†’ ORDER BY
+   d) SELECT â†’ GROUP BY â†’ WHERE â†’ HAVING â†’ ORDER BY
+
+2. The difference between WHERE and HAVING is:
+   a) WHERE filters rows; HAVING filters groups
+   b) WHERE filters groups; HAVING filters rows
+   c) They are interchangeable
+   d) HAVING can only be used without GROUP BY
+
+3. Which window function skips numbers for ties?
+   a) ROW_NUMBER
+   b) RANK
+   c) DENSE_RANK
+   d) NTILE
+
+4. A recursive CTE must include:
+   a) An anchor member and a recursive member separated by UNION ALL
+   b) A materialized view
+   c) A window function
+   d) A HAVING clause
+
+5. What is the main advantage of a materialized view over a regular view?
+   a) It is always up to date
+   b) It stores results physically for faster reads
+   c) It supports INSERT/UPDATE/DELETE
+   d) It requires no storage space
+
+6. A partial index is most useful when:
+   a) All rows are queried equally
+   b) Only a subset of rows is frequently queried
+   c) The table has no WHERE clauses
+   d) You need to index all columns
+
+7. What does `LEAD(salary, 1) OVER (ORDER BY hire_date)` return?
+   a) The salary from the previous employee
+   b) The salary from the next employee
+   c) The average salary
+   d) The maximum salary
+
+8. HAVING is executed:
+   a) Before GROUP BY
+   b) After GROUP BY, before SELECT
+   c) After ORDER BY
+   d) Before WHERE
+
+**Answers:** 1-b, 2-a, 3-b, 4-a, 5-b, 6-b, 7-b, 8-b
 
 ## Summary
 

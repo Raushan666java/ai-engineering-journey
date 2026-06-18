@@ -1,4 +1,4 @@
-﻿# Chapter 3: OpenCV & Computer Vision
+# Chapter 3: OpenCV & Computer Vision
 
 > **Prerequisite:** [02 - LangChain & LLM Orchestration](./02-langchain.md)  
 > **Next Chapter:** [04 - Generative AI](./04-generative-ai.md)
@@ -380,7 +380,7 @@ out.release()
 
 ## 3.8 Image Processing Pipeline
 
-![Image Processing Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch03-image-processing.png)
+![Image Processing Pipeline](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/applied-ai/ch03-image-processing.png)
 
 ## 3.9 Image Processing Pipeline with FastAPI
 
@@ -431,7 +431,7 @@ async def apply_filter(file: UploadFile = File(...), filter_type: str = "edges")
 
 ## 3.9 Face Detection Workflow
 
-![Face Detection Workflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch03-face-detection.png)
+![Face Detection Workflow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/applied-ai/ch03-face-detection.png)
 
 > **💡 Pro Tip:** Use `cv2.imencode` to convert OpenCV images to bytes for HTTP responses — it avoids writing temporary files to disk and keeps your API stateless.
 

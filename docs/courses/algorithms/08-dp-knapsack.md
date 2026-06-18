@@ -1,6 +1,6 @@
-# Chapter 8: Dynamic Programming — Knapsack Problems
+# Chapter 8: Dynamic Programming â€” Knapsack Problems
 
-> **Prerequisites:** [Chapter 7: Dynamic Programming — Foundations](./07-dp-intro.md) — DP properties, recurrence design, tabulation | **Next:** [Chapter 9: Dynamic Programming — Sequences](./09-dp-sequences.md) — From resource allocation to string and sequence patterns
+> **Prerequisites:** [Chapter 7: Dynamic Programming â€” Foundations](./07-dp-intro.md) â€” DP properties, recurrence design, tabulation | **Next:** [Chapter 9: Dynamic Programming â€” Sequences](./09-dp-sequences.md) â€” From resource allocation to string and sequence patterns
 
 ## Learning Objectives
 
@@ -17,12 +17,12 @@ By the end of this chapter, students will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| 0/1 Knapsack | max(skip, take) — backward capacity loop | The classic DP for item selection with capacity constraint |
+| 0/1 Knapsack | max(skip, take) â€” backward capacity loop | The classic DP for item selection with capacity constraint |
 | Space Optimization | 1D array, iterate capacity backward | O(W) space, but loses reconstruction ability |
 | Unbounded Knapsack | Same but forward capacity loop | Direction difference = item can be reused |
 | Subset Sum | Boolean DP for reachable sums | Foundation for many NP-hard reductions |
 | Equal Partition | Reduce to subset sum with target = total/2 | Classic "can you split equally" problem |
-| Coin Change | min(1 + dp[c - coin]) — forward loop | Unbounded min-coin variation |
+| Coin Change | min(1 + dp[c - coin]) â€” forward loop | Unbounded min-coin variation |
 | Target Sum | Reduce to subset sum via math transform | Sign assignment counting problem |
 
 ### Chapter Roadmap
@@ -42,7 +42,7 @@ flowchart LR
 
 ## Theory
 
-![DP Knapsack Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch08-dp-knapsack.png)
+![DP Knapsack Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch08-dp-knapsack.png)
 
 ### 8.1 0/1 Knapsack
 
@@ -110,7 +110,7 @@ UnboundedKnapsack(n, W, w, v):
 
 > **Pro Tip:** The forward/backward loop direction is the universal tell for 0/1 vs unbounded. Backward = 0/1 (each item once). Forward = unbounded (item can be reused). This rule applies to ALL knapsack variants, not just basic value-maximization.
 >
-> **Warning:** Unbounded knapsack has the same O(nW) complexity as 0/1, but can feel slower in practice because the forward loop may process more states — especially with large W and many items.
+> **Warning:** Unbounded knapsack has the same O(nW) complexity as 0/1, but can feel slower in practice because the forward loop may process more states â€” especially with large W and many items.
 
 **One-Sentence Takeaway:** Unbounded knapsack allows unlimited reuse of each item simply by changing the capacity loop from backward to forward.
 
@@ -136,9 +136,9 @@ SubsetSum(A, n, S):
 
 > **Pro Tip:** Subset sum uses the same backward loop as 0/1 knapsack because each element can be used at most once. The boolean DP tracks which sums are reachable rather than maximizing value.
 >
-> **Warning:** When S is large (e.g., 10⁶), O(nS) becomes impractical. For small n but large S, consider meet-in-the-middle instead.
+> **Warning:** When S is large (e.g., 10â¶), O(nS) becomes impractical. For small n but large S, consider meet-in-the-middle instead.
 
-**One-Sentence Takeaway:** Subset sum is a boolean 0/1 knapsack variant that answers reachability — can we achieve exact sum S — using O(nS) time and O(S) space.
+**One-Sentence Takeaway:** Subset sum is a boolean 0/1 knapsack variant that answers reachability â€” can we achieve exact sum S â€” using O(nS) time and O(S) space.
 
 ### 8.4 Equal Partition Subset Sum
 
@@ -146,7 +146,7 @@ SubsetSum(A, n, S):
 
 **Reduction to subset sum:** If the total sum is odd, return false. Otherwise, target \( S = \text{total}/2 \). Check if a subset sums to \( S \).
 
-> **Pro Tip:** Equal partition is an immediate "if odd total → false" filter. No need to run DP if the total is odd. This simple check is a common interview gotcha.
+> **Pro Tip:** Equal partition is an immediate "if odd total â†’ false" filter. No need to run DP if the total is odd. This simple check is a common interview gotcha.
 
 **One-Sentence Takeaway:** Equal partition reduces to subset sum with target = total/2, and the odd-total early exit makes it trivial to reject impossible cases.
 
@@ -169,9 +169,9 @@ CoinChange(coins, n, amount):
     return dp[amount] == inf ? -1 : dp[amount]
 ```
 
-> **Pro Tip:** Coin change (min coins) uses a forward loop because it's an unbounded problem — each coin can be used any number of times. For "number of ways" instead of "min coins," replace min with sum and dp[0] = 1.
+> **Pro Tip:** Coin change (min coins) uses a forward loop because it's an unbounded problem â€” each coin can be used any number of times. For "number of ways" instead of "min coins," replace min with sum and dp[0] = 1.
 >
-> **Warning:** Coin change can overflow the dp array with large amounts — use a large sentinel (> amount) for "infinity" and check against it at the end.
+> **Warning:** Coin change can overflow the dp array with large amounts â€” use a large sentinel (> amount) for "infinity" and check against it at the end.
 
 **One-Sentence Takeaway:** Coin change finds the minimum coins to make change using forward loop unbounded DP, with inf sentinel for impossible amounts.
 
@@ -181,9 +181,9 @@ CoinChange(coins, n, amount):
 
 **Reduction to subset sum:** Let \( P \) be the set of elements with \( + \) sign and \( N \) those with \( - \). Then \( \text{sum}(P) - \text{sum}(N) = S \). Since \( \text{sum}(P) + \text{sum}(N) = \text{total} \), we have \( 2 \cdot \text{sum}(P) = \text{total} + S \), so \( \text{sum}(P) = (\text{total} + S) / 2 \). Count subsets with this sum.
 
-> **Pro Tip:** Target sum is a clever reduction problem. The key insight: assign all + elements to set P and all - to set N, then solve 2·sum(P) = total + S. If (total + S) is odd, return 0 immediately.
+> **Pro Tip:** Target sum is a clever reduction problem. The key insight: assign all + elements to set P and all - to set N, then solve 2Â·sum(P) = total + S. If (total + S) is odd, return 0 immediately.
 >
-> **Remember:** Target sum counts sign assignments — it's a counting problem, not a feasibility problem. Use sum DP (dp[c] += dp[c - v]) instead of boolean or max.
+> **Remember:** Target sum counts sign assignments â€” it's a counting problem, not a feasibility problem. Use sum DP (dp[c] += dp[c - v]) instead of boolean or max.
 
 **One-Sentence Takeaway:** Target sum reduces to counting subsets with sum (total + S)/2, transforming a sign-assignment problem into a knapsack counting variant.
 
@@ -269,10 +269,10 @@ bool canPartition(const std::vector<int>& nums) {
 
 | Problem | DSA Interviews | Competitive Programming | System Design | Real-World |
 |---------|---------------|----------------------|---------------|------------|
-| 0/1 Knapsack | Very common — resource allocation | Standard optimization | Budget allocation | Cargo loading, portfolio selection |
+| 0/1 Knapsack | Very common â€” resource allocation | Standard optimization | Budget allocation | Cargo loading, portfolio selection |
 | Unbounded Knapsack | Less common | Coin change variants | Resource scaling | Inventory management |
-| Subset Sum | Common — reduction problems | Meet-in-the-middle for large S | Capacity planning | Payment systems |
-| Coin Change | Very common — warm-up to hard | Core CP DP problem | Denomination systems | Vending machines, ATMs |
+| Subset Sum | Common â€” reduction problems | Meet-in-the-middle for large S | Capacity planning | Payment systems |
+| Coin Change | Very common â€” warm-up to hard | Core CP DP problem | Denomination systems | Vending machines, ATMs |
 | Target Sum | Occasionally asked | Counting DP problems | N/A | Sign assignment, opinion polling |
 
 ---
@@ -314,7 +314,7 @@ B) Backward iteration reads dp[c-w[i]] from the previous row (without the curren
 
 <details>
 <summary>Answer</summary>
-B) If total sum is odd, equal partition is impossible — return false immediately without running DP.
+B) If total sum is odd, equal partition is impossible â€” return false immediately without running DP.
 </details>
 
 **Q3.** Which recurrence correctly defines coin change (minimum coins)?
@@ -326,7 +326,7 @@ B) If total sum is odd, equal partition is impossible — return false immediate
 
 <details>
 <summary>Answer</summary>
-B) dp[c] = min(dp[c], 1 + dp[c - coin]) — add one coin to the optimal solution for the remaining amount.
+B) dp[c] = min(dp[c], 1 + dp[c - coin]) â€” add one coin to the optimal solution for the remaining amount.
 </details>
 
 ---

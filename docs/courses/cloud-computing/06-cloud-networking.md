@@ -1,4 +1,6 @@
-﻿# Chapter 6: Cloud Networking and Delivery
+# Chapter 6: Cloud Networking and Delivery
+
+> **Previous:** [Chapter 5: Cloud Database Services](./05-cloud-database.md) | **Next:** [Chapter 7: Cloud Security and Identity](./07-cloud-security.md)
 
 ## Learning Objectives
 
@@ -11,6 +13,28 @@ After completing this chapter, students will be able to:
 5. Utilize global DNS services with advanced routing policies (latency, geolocation, failover).
 6. Design global content delivery strategies using CDN and Anycast IP.
 7. Apply multi-layered network security using firewalls, ACLs, and DDoS protection.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Virtual Networks | VPC/VNet provide isolated network environments | Each VPC is your own private data center in the cloud |
+| Subnets & Routing | Public (IGW) vs Private (NAT) subnets | Route tables control all traffic flow |
+| Hybrid Connectivity | VPN over internet vs Direct Connect private circuits | Dedicated circuits: consistent performance, higher cost |
+| DNS & Traffic Mgmt | Route 53, Cloud DNS — latency/geolocation routing | DNS-level routing enables global load balancing |
+| PrivateLink | Access services via private IP | Keeps traffic off the public internet |
+| Network Security | SG (stateful), NACL (stateless), WAF, DDoS | Defense in depth — apply all layers |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Virtual Networks] --> B[Subnets & Routing]
+    B --> C[Hybrid Connectivity]
+    C --> D[DNS & Traffic Mgmt]
+    D --> E[Private Connectivity]
+    E --> F[Network Security]
+```
 
 ## Theory
 
@@ -37,7 +61,7 @@ Networks are subdivided into **Subnets** for organization and security.
    - **Site-to-Site VPN:** Encrypted tunnel over the public internet (IPsec).
    - **Dedicated Circuits:** Physical, private connection (AWS Direct Connect, Azure ExpressRoute, GCP Cloud Interconnect). Offers consistent performance and higher security.
 
-![VPC Networking](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch06-vpc-networking.png)
+![VPC Networking](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch06-vpc-networking.png)
 
 ### 6.4 DNS and Traffic Management
 
@@ -90,6 +114,78 @@ aws route53 change-resource-record-sets --hosted-zone-id Z123 --change-batch '{
   }]
 }'
 ```
+
+> **One-Sentence Takeaway:** Cloud networking gives you software-defined control over an entire global infrastructure — virtual networks, routing, firewalls, and connectivity — all managed through APIs instead of physical cables.
+
+> **Pro Tip:** Use AWS Transit Gateway or Azure Virtual WAN for hub-and-spoke architectures with more than 10 VPCs. Direct VPC peering doesn't scale — Transit Gateway handles transitive routing and centralizes inspection.
+
+> **Warning:** Security Groups are stateful (return traffic automatically allowed), but Network ACLs are stateless (you must explicitly allow return traffic). Mixing them up is a common source of "mysterious" connectivity failures.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| VPC / VNet | Isolated virtual network | Every resource lives in a VPC | Default for all cloud resources |
+| Security Group | Instance-level stateful firewall | Allows by default, deny by rule | Per-instance access control |
+| Network ACL | Subnet-level stateless firewall | Deny by default, allow by rule | Subnet-level guard rails |
+| IGW | Internet gateway for public subnets | Enables public internet access | Web servers, load balancers |
+| NAT Gateway | Outbound-only internet for private subnets | Private instances can update, not receive | Database patching |
+| Direct Connect | Dedicated physical circuit to cloud | Consistent latency, higher bandwidth | Hybrid cloud, large data transfer |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **VPC Features** | Subnets, Route Tables, IGW, NAT, Peering | Region-scoped (AWS/Azure), global (GCP) |
+| **Security Layers** | SG (instance), NACL (subnet), WAF (app), DDoS | Defense in depth: use all four |
+| **Hybrid Connectivity** | Site-to-Site VPN, Direct Connect/ExpressRoute | VPN = internet, DC = private circuit |
+| **DNS Policies** | Simple, Weighted, Latency, Geolocation, Failover | Failover routing enables active-passive DR |
+| **Private Access** | VPC Endpoints, PrivateLink, Private Service Connect | Keeps traffic on provider backbone |
+
+## Cross-Application Matrix
+
+| Technique | Cloud Architecture | DevOps | Security | Enterprise |
+|-----------|-------------------|--------|----------|------------|
+| VPC Design | Network topology | Environment isolation | Network segmentation | Compliance zones |
+| Transit Gateway | Hub-and-spoke architecture | Centralized inspection | East-west traffic filter | Multi-account connectivity |
+| Direct Connect | Hybrid cloud | Consistent CI/CD performance | Encrypted private circuit | Regulatory compliance |
+| Route 53 | Global traffic management | Blue-green DNS switch | DNS-based DDoS mitig. | Multi-region HA |
+| WAF | App-layer protection | Bot detection | OWASP protection | PCI compliance |
+
+## Chapter Quiz
+
+1. What is the key difference between a Security Group and a Network ACL?
+   - A) Security Groups are stateless; NACLs are stateful
+   - B) Security Groups are stateful (return traffic auto-allowed); NACLs are stateless
+   - C) There is no difference
+   - D) NACLs work at the instance level
+
+<details>
+<summary>Answer</summary>
+**B) Security Groups are stateful (return traffic auto-allowed); NACLs are stateless.** If you allow inbound HTTPS in a Security Group, the response is automatically allowed. With NACLs, you must explicitly allow both inbound and outbound traffic separately.
+</details>
+
+2. When should an organization choose Direct Connect/ExpressRoute over a Site-to-Site VPN?
+   - A) For lower cost
+   - B) For consistent latency, higher bandwidth, and private connection that doesn't traverse the internet
+   - C) When they want encryption
+   - D) VPN and Direct Connect are identical
+
+<details>
+<summary>Answer</summary>
+**B) For consistent latency, higher bandwidth, and private connection that doesn't traverse the internet.** Direct Connect provides a dedicated physical circuit from on-premises to the cloud provider, offering predictable performance and bypassing the public internet entirely.
+</details>
+
+3. How does VPC Peering differ from Transit Gateway for connecting multiple VPCs?
+   - A) Peering supports transitive routing; Transit Gateway does not
+   - B) Peering is point-to-point (no transitive routing); Transit Gateway enables hub-and-spoke with transitive routing
+   - C) They are identical
+   - D) Transit Gateway is cheaper than peering
+
+<details>
+<summary>Answer</summary>
+**B) Peering is point-to-point (no transitive routing); Transit Gateway enables hub-and-spoke with transitive routing.** With VPC Peering, you need to create N-1 peering connections. Transit Gateway acts as a central hub, allowing any connected VPC to route to any other.
+</details>
 
 ## Summary
 

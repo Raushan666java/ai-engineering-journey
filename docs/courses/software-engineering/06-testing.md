@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: distinguish between 
 
 ## Theory
 
-![Software Testing Levels Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/06-testing.png)
+![Software Testing Levels Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/06-testing.png)
 
 ### Verification and Validation
 

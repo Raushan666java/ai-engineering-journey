@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Relational Model Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch03-relational-model.png)
+![Relational Model Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch03-relational-model.png)
 
 ### 3.1 Introduction to the Relational Model
 
@@ -27,15 +27,15 @@ The model is built on set theory and first-order predicate logic. Its elegance c
 
 **Attribute:** An attribute is a column in a relation. Each attribute has a name and belongs to a domain.
 
-**Domain:** A domain is a set of permitted values for an attribute. Domains are data types with constraints. Example: The domain of `student_age` might be integers in the range 16–120.
+**Domain:** A domain is a set of permitted values for an attribute. Domains are data types with constraints. Example: The domain of `student_age` might be integers in the range 16â€“120.
 
 **Degree (Arity):** The number of attributes in a relation. A relation of degree 3 has three columns.
 
 **Cardinality:** The number of tuples in a relation. A relation with cardinality 100 has 100 rows.
 
 **Relation Schema vs. Relation Instance:**
-- **Schema:** The logical definition — name of the relation plus its attribute names and domains. Example: `STUDENT(student_id: INTEGER, name: VARCHAR(100), major: VARCHAR(50))`
-- **Instance:** The actual data at a given point in time — a set of tuples conforming to the schema
+- **Schema:** The logical definition â€” name of the relation plus its attribute names and domains. Example: `STUDENT(student_id: INTEGER, name: VARCHAR(100), major: VARCHAR(50))`
+- **Instance:** The actual data at a given point in time â€” a set of tuples conforming to the schema
 
 **Properties of Relations:**
 - Each relation has a unique name within the database schema
@@ -51,7 +51,7 @@ Keys are crucial for uniquely identifying tuples and establishing relationships 
 
 **Superkey:** A set of one or more attributes that uniquely identifies a tuple within a relation. Example: In STUDENT, both `{student_id}` and `{student_id, name}` are superkeys.
 
-**Candidate Key:** A minimal superkey — a superkey such that no proper subset is a superkey. Example: If both `{student_id}` and `{email}` uniquely identify students and are minimal, both are candidate keys.
+**Candidate Key:** A minimal superkey â€” a superkey such that no proper subset is a superkey. Example: If both `{student_id}` and `{email}` uniquely identify students and are minimal, both are candidate keys.
 
 **Primary Key:** One candidate key chosen by the database designer as the principal identifier. Other candidate keys become **alternate keys**.
 
@@ -82,7 +82,7 @@ Integrity constraints ensure the correctness and consistency of data.
 
 ### 3.5 Relational Algebra
 
-Relational algebra is a procedural query language — it describes *how* to compute a result by applying operations to relations. Every operation takes one or two relations as input and produces a new relation as output (the **closure property**).
+Relational algebra is a procedural query language â€” it describes *how* to compute a result by applying operations to relations. Every operation takes one or two relations as input and produces a new relation as output (the **closure property**).
 
 The operations are divided into:
 
@@ -92,76 +92,76 @@ The operations are divided into:
 
 ### 3.6 Basic Relational Algebra Operations
 
-**SELECT (σ):** Selects tuples that satisfy a given predicate.
+**SELECT (Ïƒ):** Selects tuples that satisfy a given predicate.
 
-Syntax: `σ<predicate>(R)`
+Syntax: `Ïƒ<predicate>(R)`
 
 Example: Find all students with GPA > 3.5:
-`σ<GPA > 3.5>(STUDENT)`
+`Ïƒ<GPA > 3.5>(STUDENT)`
 
-Selection is commutative: `σ<cond1>(σ<cond2>(R)) = σ<cond2>(σ<cond1>(R))`
+Selection is commutative: `Ïƒ<cond1>(Ïƒ<cond2>(R)) = Ïƒ<cond2>(Ïƒ<cond1>(R))`
 
-**PROJECT (π):** Selects specific attributes (columns) from a relation.
+**PROJECT (Ï€):** Selects specific attributes (columns) from a relation.
 
-Syntax: `π<attribute_list>(R)`
+Syntax: `Ï€<attribute_list>(R)`
 
 Example: Get names and majors of all students:
-`π<name, major>(STUDENT)`
+`Ï€<name, major>(STUDENT)`
 
 Projection removes duplicate tuples automatically.
 
-**UNION (∪):** Returns all tuples that appear in either relation. Both relations must be **union-compatible** (same number of attributes, corresponding attributes from the same domain).
+**UNION (âˆª):** Returns all tuples that appear in either relation. Both relations must be **union-compatible** (same number of attributes, corresponding attributes from the same domain).
 
-Syntax: `R ∪ S`
+Syntax: `R âˆª S`
 
 Example: Get all employees who are either managers or engineers:
-`π<emp_id>(MANAGER) ∪ π<emp_id>(ENGINEER)`
+`Ï€<emp_id>(MANAGER) âˆª Ï€<emp_id>(ENGINEER)`
 
-**SET DIFFERENCE (−):** Returns all tuples that appear in the first relation but not the second.
+**SET DIFFERENCE (âˆ’):** Returns all tuples that appear in the first relation but not the second.
 
-Syntax: `R − S`
+Syntax: `R âˆ’ S`
 
 Example: Get employees who are not managers:
-`π<emp_id>(EMPLOYEE) − π<emp_id>(MANAGER)`
+`Ï€<emp_id>(EMPLOYEE) âˆ’ Ï€<emp_id>(MANAGER)`
 
-**CARTESIAN PRODUCT (×):** Combines every tuple of R with every tuple of S.
+**CARTESIAN PRODUCT (Ã—):** Combines every tuple of R with every tuple of S.
 
-Syntax: `R × S`
+Syntax: `R Ã— S`
 
-If R has n tuples and S has m tuples, R × S has n × m tuples. Each output tuple combines all attributes of R with all attributes of S.
+If R has n tuples and S has m tuples, R Ã— S has n Ã— m tuples. Each output tuple combines all attributes of R with all attributes of S.
 
-**RENAME (ρ):** Renames a relation or its attributes.
+**RENAME (Ï):** Renames a relation or its attributes.
 
-Syntax: `ρ<new_name>(R)` or `ρ<new_name(attr1, ..., attrN)>(R)`
+Syntax: `Ï<new_name>(R)` or `Ï<new_name(attr1, ..., attrN)>(R)`
 
 ### 3.7 Derived Operations
 
-**INTERSECTION (∩):** Returns tuples appearing in both relations.
+**INTERSECTION (âˆ©):** Returns tuples appearing in both relations.
 
-Syntax: `R ∩ S = R − (R − S)`
+Syntax: `R âˆ© S = R âˆ’ (R âˆ’ S)`
 
 Example: Find employees who are both managers and engineers.
-`π<emp_id>(MANAGER) ∩ π<emp_id>(ENGINEER)`
+`Ï€<emp_id>(MANAGER) âˆ© Ï€<emp_id>(ENGINEER)`
 
-**THETA JOIN (⋈θ):** A Cartesian product followed by a selection.
+**THETA JOIN (â‹ˆÎ¸):** A Cartesian product followed by a selection.
 
-Syntax: `R ⋈<condition> S = σ<condition>(R × S)`
+Syntax: `R â‹ˆ<condition> S = Ïƒ<condition>(R Ã— S)`
 
 **EQUIJOIN:** A theta join where the condition is equality of specific attributes. The result includes both join attributes.
 
-**NATURAL JOIN (⋈):** An equijoin on all attributes with the same name, with duplicate join attributes removed.
+**NATURAL JOIN (â‹ˆ):** An equijoin on all attributes with the same name, with duplicate join attributes removed.
 
-Example: `STUDENT ⋈ DEPARTMENT` joins on `dept_id` (present in both). The result has `dept_id` only once.
+Example: `STUDENT â‹ˆ DEPARTMENT` joins on `dept_id` (present in both). The result has `dept_id` only once.
 
-**LEFT OUTER JOIN (⟕):** Like join, but preserves all tuples from the left relation. Missing right-side values become NULL.
+**LEFT OUTER JOIN (âŸ•):** Like join, but preserves all tuples from the left relation. Missing right-side values become NULL.
 
-**RIGHT OUTER JOIN (⟖):** Preserves all tuples from the right relation.
+**RIGHT OUTER JOIN (âŸ–):** Preserves all tuples from the right relation.
 
-**FULL OUTER JOIN (⟗):** Preserves tuples from both relations.
+**FULL OUTER JOIN (âŸ—):** Preserves tuples from both relations.
 
-**DIVISION (÷):** Returns tuples from R that are associated with *every* tuple of S. Used for "all queries" (e.g., "Find students who take all courses").
+**DIVISION (Ã·):** Returns tuples from R that are associated with *every* tuple of S. Used for "all queries" (e.g., "Find students who take all courses").
 
-Syntax: R ÷ S, where S's attribute set is a subset of R's attribute set.
+Syntax: R Ã· S, where S's attribute set is a subset of R's attribute set.
 
 ### 3.8 Relational Algebra Example: University Database
 
@@ -174,45 +174,45 @@ ENROLLED(sid, cid, semester, grade)
 
 **Query 1:** Find names of students with GPA > 3.0.
 ```
-π<name>(σ<gpa > 3.0>(STUDENT))
+Ï€<name>(Ïƒ<gpa > 3.0>(STUDENT))
 ```
 
 **Query 2:** Find student IDs of students enrolled in 'CS101'.
 ```
-π<sid>(σ<cid = 'CS101'>(ENROLLED))
+Ï€<sid>(Ïƒ<cid = 'CS101'>(ENROLLED))
 ```
 
 **Query 3:** Find names of students enrolled in 'CS101'.
 ```
-π<name>(σ<cid = 'CS101'>(ENROLLED) ⋈ STUDENT)
+Ï€<name>(Ïƒ<cid = 'CS101'>(ENROLLED) â‹ˆ STUDENT)
 ```
 
 **Query 4:** Find student IDs of students not enrolled in any course.
 ```
-π<sid>(STUDENT) − π<sid>(ENROLLED)
+Ï€<sid>(STUDENT) âˆ’ Ï€<sid>(ENROLLED)
 ```
 
 **Query 5:** Find student IDs of students enrolled in *all* courses.
 ```
-π<sid, cid>(ENROLLED) ÷ π<cid>(COURSE)
+Ï€<sid, cid>(ENROLLED) Ã· Ï€<cid>(COURSE)
 ```
 
 **Query 6:** Find courses taken by student with ID 123.
 ```
-π<cid>(σ<sid = 123>(ENROLLED))
+Ï€<cid>(Ïƒ<sid = 123>(ENROLLED))
 ```
 
 ### 3.9 Relational Calculus
 
 **Tuple Relational Calculus:** A non-procedural query language. Queries specify *what* to retrieve, not *how*.
 
-Syntax: `{ t | CONDITION(t) }` — the set of all tuples t satisfying the condition.
+Syntax: `{ t | CONDITION(t) }` â€” the set of all tuples t satisfying the condition.
 
 Example: Find students with GPA > 3.5:
-`{ t | t ∈ STUDENT ∧ t.gpa > 3.5 }`
+`{ t | t âˆˆ STUDENT âˆ§ t.gpa > 3.5 }`
 
 Example: Find names of students in courses taught by 'Dr. Smith':
-`{ s.name | s ∈ STUDENT ∧ ∃ e ∈ ENROLLED (e.sid = s.sid ∧ ∃ c ∈ COURSE (c.cid = e.cid ∧ c.instructor = 'Dr. Smith')) }`
+`{ s.name | s âˆˆ STUDENT âˆ§ âˆƒ e âˆˆ ENROLLED (e.sid = s.sid âˆ§ âˆƒ c âˆˆ COURSE (c.cid = e.cid âˆ§ c.instructor = 'Dr. Smith')) }`
 
 **Domain Relational Calculus:** Uses domain variables instead of tuple variables.
 
@@ -222,10 +222,10 @@ Syntax: `{ <a1, ..., an> | CONDITION(a1, ..., an) }`
 
 Understanding equivalences is crucial for query optimization:
 
-- **Cascading Selection:** `σ<cond1>(σ<cond2>(R)) = σ<cond1 ∧ cond2>(R)`
-- **Commuting Selection and Projection:** If condition only involves attributes in A: `π<A>(σ<cond>(R)) = σ<cond>(π<A>(R))`
-- **Pushing Selection through Join:** `σ<cond>(R ⋈ S) = σ<cond>(R) ⋈ S` if cond involves only R attributes
-- **Commuting Projection with Cartesian Product:** `π<A ∪ B>(R × S) = π<A>(R) × π<B>(S)` if A from R, B from S
+- **Cascading Selection:** `Ïƒ<cond1>(Ïƒ<cond2>(R)) = Ïƒ<cond1 âˆ§ cond2>(R)`
+- **Commuting Selection and Projection:** If condition only involves attributes in A: `Ï€<A>(Ïƒ<cond>(R)) = Ïƒ<cond>(Ï€<A>(R))`
+- **Pushing Selection through Join:** `Ïƒ<cond>(R â‹ˆ S) = Ïƒ<cond>(R) â‹ˆ S` if cond involves only R attributes
+- **Commuting Projection with Cartesian Product:** `Ï€<A âˆª B>(R Ã— S) = Ï€<A>(R) Ã— Ï€<B>(S)` if A from R, B from S
 
 ## Examples
 
@@ -236,10 +236,10 @@ Schema: `STUDENT(sid, sname, major)` and `ENROLLED(sid, course)`
 Find "names of students enrolled in 'DBMS' or 'OS'":
 
 Step 1: Get sids taking DBMS or OS
-`σ<course = 'DBMS' ∨ course = 'OS'>(ENROLLED)`
+`Ïƒ<course = 'DBMS' âˆ¨ course = 'OS'>(ENROLLED)`
 
 Step 2: Join with STUDENT to get names
-`π<sname>(STUDENT ⋈ σ<course = 'DBMS' ∨ course = 'OS'>(ENROLLED))`
+`Ï€<sname>(STUDENT â‹ˆ Ïƒ<course = 'DBMS' âˆ¨ course = 'OS'>(ENROLLED))`
 
 **Example 3.2: Division in Action**
 
@@ -247,16 +247,131 @@ Schema: `PRODUCT(pid, pname)`, `SALE(sid, pid)`, `STORE(sid, sname)`
 
 Query: "Find stores that sell ALL products."
 
-Step 1: Get all product IDs: `π<pid>(PRODUCT)`
-Step 2: Divide SALE by all products: `π<sid, pid>(SALE) ÷ π<pid>(PRODUCT)`
-Step 3: Join with STORE for names: `π<sname>(STORE ⋈ (π<sid, pid>(SALE) ÷ π<pid>(PRODUCT)))`
+Step 1: Get all product IDs: `Ï€<pid>(PRODUCT)`
+Step 2: Divide SALE by all products: `Ï€<sid, pid>(SALE) Ã· Ï€<pid>(PRODUCT)`
+Step 3: Join with STORE for names: `Ï€<sname>(STORE â‹ˆ (Ï€<sid, pid>(SALE) Ã· Ï€<pid>(PRODUCT)))`
+
+## ðŸ’¡ Pro Tips
+
+1. **Master relational algebra first** â€” it is the theoretical foundation of SQL query optimization. Every SQL query is a relational algebra expression under the hood.
+2. **Division is the trickiest operation** â€” it answers "all" queries ("students who take ALL courses"). Practice it with simple examples to build intuition.
+3. **Keys are not just constraints â€” they are query design tools** â€” understanding which columns are keys tells you where to join and what results to expect.
+4. **The closure property is why you can nest queries** â€” because every algebra operation produces a relation, you can compose them arbitrarily.
+5. **Learn the equivalence rules** â€” they are what the query optimizer uses to transform your slow query into a fast one.
+
+## One-Sentence Takeaways
+
+- **3.1:** The relational model, proposed by E.F. Codd in 1970, provides a mathematically rigorous framework for data organization using set theory and predicate logic.
+- **3.2:** A relation is a set of tuples (rows) with attributes (columns) drawn from domains (data types), with properties including atomic values, unique tuples, and unordered rows/columns.
+- **3.3:** Keys â€” superkey, candidate, primary, foreign â€” provide unique identification and establish relationships between relations.
+- **3.4:** Integrity constraints â€” domain, entity, referential, and semantic â€” ensure data correctness and consistency.
+- **3.5:** Relational algebra is a procedural language where every operation takes relations as input and produces a new relation (closure property).
+- **3.6:** Basic operations include selection (Ïƒ), projection (Ï€), union (âˆª), set difference (âˆ’), Cartesian product (Ã—), and rename (Ï).
+- **3.7:** Derived operations â€” join types, intersection, and division â€” provide powerful querying capabilities built from basic operations.
+- **3.8:** Algebraic equivalence rules (pushing selection through join, commuting projection with product) are the foundation of query optimization.
+- **3.9:** Relational calculus takes a declarative approach â€” specifying WHAT to retrieve, not HOW.
+
+## Concept Comparison Table
+
+| Operation | Symbol | What It Does | Example |
+|-----------|--------|-------------|---------|
+| **Selection** | Ïƒ | Filters rows by condition | Ïƒ<gpa > 3.5>(STUDENT) |
+| **Projection** | Ï€ | Selects columns | Ï€<name, major>(STUDENT) |
+| **Union** | âˆª | Combines rows from two relations | R âˆª S |
+| **Set Difference** | âˆ’ | Rows in first but not second | R âˆ’ S |
+| **Cartesian Product** | Ã— | Every row of R paired with every row of S | R Ã— S |
+| **Rename** | Ï | Changes relation or attribute name | Ï<new_name>(R) |
+| **Intersection** | âˆ© | Rows in both relations | R âˆ© S |
+| **Theta Join** | â‹ˆÎ¸ | Product + selection | Ïƒ<cond>(R Ã— S) |
+| **Natural Join** | â‹ˆ | Equijoin on common attributes, deduplicated | R â‹ˆ S |
+| **Division** | Ã· | Rows in R associated with ALL rows in S | R Ã· S |
+
+## Quick Reference
+
+| Key Type | Definition | SQL Equivalent |
+|---------|-----------|----------------|
+| **Superkey** | Set of attributes that uniquely identifies a tuple | Any set containing a UNIQUE column |
+| **Candidate Key** | Minimal superkey | Each UNIQUE or PRIMARY KEY candidate |
+| **Primary Key** | Chosen candidate key | PRIMARY KEY constraint |
+| **Foreign Key** | References primary key of another relation | FOREIGN KEY (col) REFERENCES other(col) |
+| **Alternate Key** | Candidate keys not chosen as primary | UNIQUE constraint |
+
+| Integrity Constraint | Rule | SQL Enforcement |
+|---------------------|------|-----------------|
+| Domain | Value must be from declared type | Data type + CHECK |
+| Entity | Primary key cannot be null | NOT NULL on PK |
+| Referential | Foreign key must match PK or be null | FOREIGN KEY + REFERENCES |
+| Semantic | Business rules | CHECK constraints |
+
+## Cross-Application Matrix
+
+| Relational Algebra Concept | Applied In | Why It Matters |
+|---------------------------|-----------|----------------|
+| **Selection + Projection** | Every SQL SELECT with WHERE | Filters rows and columns â€” the most common operations |
+| **Natural Join** | Multi-table queries | Combines related data from normalized tables |
+| **Division** | "All" queries in any domain | Students taking all courses, stores selling all products |
+| **Set Difference** | Anti-joins, missing records | Customers without orders, products never sold |
+| **Cartesian Product** | Cross joins, date range generation | Generating all combinations of independent sets |
+| **Closure Property** | Nested queries, CTEs, subqueries | Enables composable, modular query design |
+
+## Chapter Quiz
+
+1. Which of the following is NOT a property of a relation?
+   a) Each cell contains an atomic value
+   b) The order of tuples matters
+   c) Each attribute has a unique name
+   d) No duplicate tuples are allowed
+
+2. A candidate key is:
+   a) A set of attributes that uniquely identifies a tuple
+   b) A minimal superkey
+   c) The same as a primary key
+   d) A foreign key reference
+
+3. Which operation returns only tuples that appear in both relations?
+   a) Union
+   b) Set difference
+   c) Intersection
+   d) Cartesian product
+
+4. Relational algebra is:
+   a) A declarative query language
+   b) A procedural query language
+   c) A data definition language
+   d) A programming language
+
+5. The closure property of relational algebra means:
+   a) Every operation returns a single value
+   b) Every operation produces a relation as output
+   c) Operations cannot be combined
+   d) Results are always closed to modification
+
+6. Division (Ã·) is used for:
+   a) Finding rows in R that match all rows in S
+   b) Splitting a relation into two parts
+   c) Dividing attribute values
+   d) Removing duplicate tuples
+
+7. Which join preserves all tuples from the left relation?
+   a) INNER JOIN
+   b) LEFT OUTER JOIN
+   c) RIGHT OUTER JOIN
+   d) FULL OUTER JOIN
+
+8. The natural join differs from an equijoin because:
+   a) It only uses inequality conditions
+   b) It joins on all common attributes and removes duplicate columns
+   c) It includes non-matching rows
+   d) It produces a Cartesian product first
+
+**Answers:** 1-b, 2-b, 3-c, 4-b, 5-b, 6-a, 7-b, 8-b
 
 ## Summary
 
 - A relation is a set of tuples; every attribute has a domain; every tuple is unique.
 - Keys (superkey, candidate, primary, foreign) provide identity and relationships.
 - Integrity constraints (domain, entity, referential) maintain data correctness.
-- Relational algebra is a procedural query language with operations: selection (σ), projection (π), union (∪), difference (−), product (×), join (⋈), and division (÷).
+- Relational algebra is a procedural query language with operations: selection (Ïƒ), projection (Ï€), union (âˆª), difference (âˆ’), product (Ã—), join (â‹ˆ), and division (Ã·).
 - Each operation takes relations as input and produces a new relation (closure).
 - Relational calculus provides a declarative alternative.
 
@@ -283,9 +398,9 @@ Step 3: Join with STORE for names: `π<sname>(STORE ⋈ (π<sid, pid>(SALE) ÷ �
    `TAKES(sid, course)` with tuples (1, 'DBMS'), (1, 'OS'), (2, 'DBMS'), (3, 'OS')
    
    Compute the result of:
-   a) `π<sname>(σ<sid = 1>(STUDENT))`
-   b) `π<sid>(TAKES) − π<sid>(σ<course = 'OS'>(TAKES))`
-   c) `STUDENT ⋈ TAKES`
+   a) `Ï€<sname>(Ïƒ<sid = 1>(STUDENT))`
+   b) `Ï€<sid>(TAKES) âˆ’ Ï€<sid>(Ïƒ<course = 'OS'>(TAKES))`
+   c) `STUDENT â‹ˆ TAKES`
 
 6. Write relational algebra for: "Find employee IDs of employees who work on ALL projects." Schema: `WORKS_ON(emp_id, proj_id)`, `PROJECT(proj_id, name)`.
 
@@ -293,11 +408,11 @@ Step 3: Join with STORE for names: `π<sname>(STORE ⋈ (π<sid, pid>(SALE) ÷ �
 
 ### Advanced
 
-8. Prove the equivalence: `σ<cond>(R ⋈ S) = σ<cond>(R) ⋈ S` when cond involves only attributes of R.
+8. Prove the equivalence: `Ïƒ<cond>(R â‹ˆ S) = Ïƒ<cond>(R) â‹ˆ S` when cond involves only attributes of R.
 
-9. Given the relational algebra expression `π<course>(σ<grade = 'F'>(ENROLLED))`, explain what it returns. Write the equivalent SQL query and a real-world scenario where this query would be useful.
+9. Given the relational algebra expression `Ï€<course>(Ïƒ<grade = 'F'>(ENROLLED))`, explain what it returns. Write the equivalent SQL query and a real-world scenario where this query would be useful.
 
-10. For the division operation R ÷ S:
-    a) Explain the condition under which R ÷ S is defined (attribute compatibility)
-    b) Show that division can be expressed using basic operations: `R ÷ S = π<R_attrs - S_attrs>(R) − π<R_attrs - S_attrs>((π<R_attrs - S_attrs>(R) × S) − R)`
+10. For the division operation R Ã· S:
+    a) Explain the condition under which R Ã· S is defined (attribute compatibility)
+    b) Show that division can be expressed using basic operations: `R Ã· S = Ï€<R_attrs - S_attrs>(R) âˆ’ Ï€<R_attrs - S_attrs>((Ï€<R_attrs - S_attrs>(R) Ã— S) âˆ’ R)`
     c) Trace this expression with R = {(1,a), (1,b), (2,a), (2,b), (3,a)} and S = {(a), (b)}

@@ -1,4 +1,4 @@
-﻿# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
+# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
 
 ---
 
@@ -16,7 +16,7 @@
 
 ## Theory
 
-![Multi-Agent Systems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/25-multi-agent-systems.png)
+![Multi-Agent Systems](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/25-multi-agent-systems.png)
 
 
 ### 25.1 The Supervisor/Worker Pattern

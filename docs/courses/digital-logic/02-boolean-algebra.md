@@ -1,5 +1,8 @@
 # Chapter 2: Boolean Algebra
 
+> **Prereq:** Chapter 1 (Number Systems) â€” binary values 0/1 are the domain of Boolean algebra.
+> **Next:** Chapter 3 (Logic Gates) â€” Boolean algebra directly describes gate behavior.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -11,9 +14,33 @@ By the conclusion of this chapter, the student shall be able to:
 5. Minimise logic functions using Karnaugh maps of two, three, and four variables
 6. Apply the Quine-McCluskey algorithm for systematic function minimisation
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Boolean Postulates | OR, AND, NOT axioms | Foundation of all digital logic |
+| Fundamental Theorems | Idempotence, absorption, etc. | Enable algebraic simplification |
+| De Morgan's Theorems | Complement of sum/product | Convert gate types (AND-OR â†” NAND-NAND) |
+| Standard Forms | SOP and POS canonical forms | Uniquely represent any Boolean function |
+| Karnaugh Maps | Graphical minimisation | Quick simplification for â‰¤4 variables |
+| Quine-McCluskey | Tabular minimisation | Algorithmic for many variables |
+
+```mermaid
+flowchart LR
+    A[Boolean Postulates] --> B[Theorems & Laws]
+    B --> C[De Morgan's Theorems]
+    C --> D[SOP / POS Forms]
+    D --> E[Karnaugh Maps]
+    D --> F[Quine-McCluskey]
+    E --> G[Minimised Expression]
+    F --> G
+    style A fill:#e1f5fe
+    style G fill:#c8e6c9
+```
+
 ## Theory
 
-![Boolean Algebra Laws and Logic Gates](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch02-boolean-gates.png)
+![Boolean Algebra Laws and Logic Gates](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch02-boolean-gates.png)
 
 ### 2.1 Boolean Postulates
 
@@ -41,6 +68,8 @@ The fundamental postulates are as follows:
 | Consensus | *x* &middot; *y* + *x*' &middot; *z* + *y* &middot; *z* = *x* &middot; *y* + *x*' &middot; *z* | |
 
 ### 2.3 De Morgan's Theorems
+
+> **One-Sentence Takeaway:** Boolean algebra is the algebra of binary logic â€” every digital circuit, from a simple AND gate to a microprocessor, can be expressed and minimised using its postulates and theorems.
 
 Augustus De Morgan formulated two transformation rules of singular importance in digital logic:
 
@@ -125,13 +154,15 @@ The Karnaugh map (K-map) is a graphical tool for minimising Boolean functions. I
 
 The Quine-McCluskey algorithm is a tabular method for Boolean minimisation suitable for functions with many variables where K-maps become unwieldy.
 
-**Phase 1 — Generation of prime implicants**:
+**Phase 1 â€” Generation of prime implicants**:
 
 1. List all minterms grouped by the number of 1s in the binary representation.
 2. Compare each minterm in group *i* with each in group *i* + 1. If they differ in exactly one bit, combine them and mark the differing position with a dash.
 3. Repeat until no further combinations are possible. The unchecked terms are the prime implicants.
 
-**Phase 2 — Essential prime implicant selection**:
+> **Pro Tip:** De Morgan's theorems are the key to universal gate conversion â€” any AND-OR network can be converted to all-NAND or all-NOR gates, which is vital in IC design where a single gate type reduces manufacturing cost.
+
+**Phase 2 â€” Essential prime implicant selection**:
 
 1. Construct a prime implicant chart with prime implicants as rows and minterms as columns.
 2. Identify essential prime implicants (those covering a minterm that no other implicant covers).
@@ -149,7 +180,7 @@ Absorb *x* &middot; *y* &middot; *z* into *x* &middot; *y*: *F* = *x* &middot; *
 
 Factor *z*: *F* = *x* &middot; *y* + *z* &middot; (*x* + *x'* &middot; *y*) = *x* &middot; *y* + *z* &middot; (*x* + *y*) by the absorption theorem.
 
-Expanding: *F* = *x* &middot; *y* + *x* &middot; *z* + *y* &middot; *z*. This is the original expression — the function is a consensus form and cannot be simplified further.
+Expanding: *F* = *x* &middot; *y* + *x* &middot; *z* + *y* &middot; *z*. This is the original expression â€” the function is a consensus form and cannot be simplified further.
 
 ### Example 2.2: K-Map Minimisation
 
@@ -196,7 +227,7 @@ Group by number of 1s:
 - Group 2: 1001 (9), 1010 (10)
 - Group 4: 1111 (15)
 
-Combine: 0&minus;1 gives 000&minus; (0,1), 00&minus;0 (0,2), &minus;000 (0,8). 1&minus;2 gives 00&minus;1 (1,9) — wait, 0001 and 1001 differ in bit position 3: &minus;001 (1,9). 0010 and 1010: &minus;010 (2,10). 1000 and 1001: 100&minus; (8,9). 1000 and 1010: 10&minus;0 (8,10).
+Combine: 0&minus;1 gives 000&minus; (0,1), 00&minus;0 (0,2), &minus;000 (0,8). 1&minus;2 gives 00&minus;1 (1,9) â€” wait, 0001 and 1001 differ in bit position 3: &minus;001 (1,9). 0010 and 1010: &minus;010 (2,10). 1000 and 1001: 100&minus; (8,9). 1000 and 1010: 10&minus;0 (8,10).
 
 Combine again: No further combinations possible.
 
@@ -205,6 +236,33 @@ Prime implicants: 000&minus; (covering 0,1), 00&minus;0 (0,2), &minus;000 (0,8),
 Essential prime implicants: 1111 (15), 000&minus; (covers 1 uniquely), &minus;000 (covers 8 uniquely). After covering 0,1,8,15, remaining minterms: 2,9,10. Choose 100&minus; (covers 9) and &minus;010 (covers 2,10).
 
 Minimal expression: *w' x' y'* + *x' y'* + *w y' z'* + *w x y z*.
+
+### Concept Comparison
+
+| Minimisation Method | Best For | Strengths | Weaknesses |
+|-------------------|----------|-----------|------------|
+| Algebraic | Any | Insightful, no tool needed | Error-prone, no optimality guarantee |
+| K-Map | â‰¤4 variables | Visual, fast, optimal | Unwieldy for 5+ variables |
+| Quine-McCluskey | 5-16 variables | Algorithmic, computers can run it | Slow for many inputs, memory intensive |
+
+### Quick Reference
+
+| Theorem | Expression | Use |
+|---------|-----------|-----|
+| Absorption | x + xÂ·y = x | Eliminates redundant terms |
+| Adjacency | xÂ·y + xÂ·y' = x | Combines adjacent minterms |
+| De Morgan 1 | (xÂ·y)' = x' + y' | AND â†’ NOR conversion |
+| De Morgan 2 | (x+y)' = x'Â·y' | OR â†’ NAND conversion |
+| Consensus | xÂ·y + x'Â·z + yÂ·z = xÂ·y + x'Â·z | Eliminates redundant term |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | ALU control logic | Boolean minimisation reduces gate count |
+| Embedded Systems | Firmware state machines | K-maps optimise combinational next-state logic |
+| Digital Circuits | IC design and synthesis | EDA tools use QMC for gate minimisation |
+| Research | Formal verification | Boolean equivalence checking proves correctness |
 
 ## Summary
 
@@ -248,4 +306,29 @@ Minimal expression: *w' x' y'* + *x' y'* + *w y' z'* + *w x y z*.
 
 ### Challenge Problem
 
-Design a 4-bit prime number detector. The circuit accepts a 4-bit unsigned binary number (0&ndash;15) and outputs 1 when the input is prime. Prime numbers in this range are {2, 3, 5, 7, 11, 13}. Use a K-map to derive the minimal SOP and POS implementations. The numbers 0 and 1 are not prime. Compare the gate count of the two implementations.
+Design a 4-bit prime number detector. The circuit accepts a 4-bit unsigned binary number (0&ndash;15) and outputs 1 when the input is prime. Prime numbers in this range are {2, 3, 5, 7, 11, 13}. Use a K-map to derive the minimal SOP and POS implementations. The numbers 0 and 1 are not prime.     Compare the gate count of the two implementations.
+
+### Chapter Quiz
+
+1. The adjacency theorem states:
+   - A) x + xÂ·y = x
+   - B) xÂ·y + xÂ·y' = x
+   - C) (xÂ·y)' = x' + y'
+   - D) xÂ·x' = 0
+
+2. De Morgan's theorem converts an AND-OR expression to:
+   - A) SOP form
+   - B) An equivalent NAND-NAND expression
+   - C) POS form
+   - D) A minterm list
+
+3. A Karnaugh map cell grouping of size 8 in a 4-variable map eliminates how many variables?
+   - A) 0
+   - B) 1
+   - C) 2
+   - D) 3
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. D
+</details>

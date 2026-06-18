@@ -1,12 +1,40 @@
 # Chapter 12: Data Flow Analysis
 
+> **Prereq:** Chapter 11 (Control Flow Analysis) â€” DFA operates on the flow graph built by CFA.
+> **Next:** Chapter 13 (Loop Optimization) â€” DFA provides the analysis loop opts depend on.
+
 ## Learning Objectives
 
 After completing this chapter, students will be able to: compute reaching definitions using data-flow equations; perform live-variable analysis; evaluate available expressions; implement the iterative data-flow algorithm; apply constant propagation; and understand partial redundancy elimination.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Reaching Definitions | Which defs may reach a point | Enables constant propagation |
+| Live Variables | Which vars may be used later | Informs register allocation |
+| Available Expressions | Which exprs are already computed | Enables global CSE |
+| Constant Propagation | Lattice-based value tracking | Replaces runtime computations |
+| PRE | Partial redundancy elimination | Subsumes multiple optimizations |
+
+```mermaid
+flowchart LR
+    A[Flow Graph] --> B[Reaching Definitions]
+    A --> C[Live Variables]
+    A --> D[Available Expressions]
+    B --> E[Constant Propagation]
+    D --> F[Global CSE]
+    C --> G[Register Allocation]
+    E --> H[Optimized Code]
+    F --> H
+    G --> H
+    style A fill:#e1f5fe
+    style H fill:#c8e6c9
+```
+
 ## Theory
 
-![Data Flow Analysis — Reaching Definitions, Live Variables, Available Expressions](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch-12-dfa.png)
+![Data Flow Analysis â€” Reaching Definitions, Live Variables, Available Expressions](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/compiler-design/ch-12-dfa.png)
 
 ### Reaching Definitions
 
@@ -15,8 +43,8 @@ A definition of a variable x is a statement that assigns a value to x. A definit
 The data-flow equations for reaching definitions are:
 
 ```
-IN[B]  = ∪_{P in pred(B)} OUT[P]
-OUT[B] = GEN[B] ∪ (IN[B] − KILL[B])
+IN[B]  = âˆª_{P in pred(B)} OUT[P]
+OUT[B] = GEN[B] âˆª (IN[B] âˆ’ KILL[B])
 ```
 
 Here, GEN[B] is the set of definitions generated within B (definitions in B that survive to the end of B). KILL[B] is the set of definitions that are killed by B (definitions of variables that are redefined in B). IN[B] is the set of definitions reaching the entry of B. OUT[B] is the set of definitions reaching the exit of B.
@@ -28,8 +56,8 @@ A variable v is **live** at a point p if there exists a path from p to a use of 
 The data-flow equations for live variables (backward analysis) are:
 
 ```
-OUT[B] = ∪_{S in succ(B)} IN[S]
-IN[B]  = USE[B] ∪ (OUT[B] − DEF[B])
+OUT[B] = âˆª_{S in succ(B)} IN[S]
+IN[B]  = USE[B] âˆª (OUT[B] âˆ’ DEF[B])
 ```
 
 Here, USE[B] is the set of variables used in B before any definition in B. DEF[B] is the set of variables defined in B. Note that live-variable analysis is a **backward** problem: information flows from successors to predecessors.
@@ -41,13 +69,13 @@ An expression `x op y` is **available** at a point p if every path from the entr
 The data-flow equations for available expressions are:
 
 ```
-IN[B]  = ∩_{P in pred(B)} OUT[P]
-OUT[B] = GEN[B] ∪ (IN[B] − KILL[B])
+IN[B]  = âˆ©_{P in pred(B)} OUT[P]
+OUT[B] = GEN[B] âˆª (IN[B] âˆ’ KILL[B])
 ```
 
 Available expressions is a **forward** **must** problem: an expression must be available on all incoming paths for it to be considered available at the entry of a block.
 
-### Data-Flow Equations — General Form
+### Data-Flow Equations â€” General Form
 
 The general form of data-flow equations can be expressed as:
 
@@ -60,6 +88,8 @@ Where `combine` is either union (any-path) or intersection (all-paths), and `f_B
 
 ### Iterative Algorithm
 
+> **One-Sentence Takeaway:** All data-flow analyses follow the same pattern â€” define a domain, a transfer function, a meet operator, and iterate over the flow graph to a fixed point â€” only the direction and combine rule change.
+
 The iterative algorithm solves data-flow equations by repeatedly computing IN and OUT values until a fixed point is reached. For a forward problem:
 
 ```
@@ -67,23 +97,52 @@ initialize IN[B] = empty set for all B
 OUT[entry] = GEN[entry]
 while (any IN or OUT changes) {
     for (each block B except entry) {
-        IN[B]  = ∪_{P in pred(B)} OUT[P]
-        OUT[B] = GEN[B] ∪ (IN[B] − KILL[B])
+        IN[B]  = âˆª_{P in pred(B)} OUT[P]
+        OUT[B] = GEN[B] âˆª (IN[B] âˆ’ KILL[B])
     }
 }
 ```
 
-The algorithm terminates in at most O(N²) iterations for each data-flow problem, where N is the number of blocks. The number of iterations is bounded by the height of the lattice of data-flow values.
+The algorithm terminates in at most O(NÂ²) iterations for each data-flow problem, where N is the number of blocks. The number of iterations is bounded by the height of the lattice of data-flow values.
 
 ### Constant Propagation
 
-Constant propagation replaces uses of a variable that are known to have a constant value with that constant. The analysis maintains a lattice of per-variable values: ⊤ (not yet known), c (constant c), or ⊥ (not constant). The transfer function for an assignment `x = e` sets x to the constant value if e is constant, ⊥ otherwise. The meet operator at control-flow merges is: ⊤ ∧ c = c, ⊤ ∧ ⊥ = ⊥, c₁ ∧ c₂ = ⊥ if c₁ ≠ c₂, c otherwise.
+Constant propagation replaces uses of a variable that are known to have a constant value with that constant. The analysis maintains a lattice of per-variable values: âŠ¤ (not yet known), c (constant c), or âŠ¥ (not constant). The transfer function for an assignment `x = e` sets x to the constant value if e is constant, âŠ¥ otherwise. The meet operator at control-flow merges is: âŠ¤ âˆ§ c = c, âŠ¤ âˆ§ âŠ¥ = âŠ¥, câ‚ âˆ§ câ‚‚ = âŠ¥ if câ‚ â‰  câ‚‚, c otherwise.
 
 ### Partial Redundancy Elimination
 
-Partial redundancy elimination (PRE) subsumes several other optimizations by removing expressions that are partially redundant (computed on some paths but not others). PRE inserts computations on paths where the expression is not evaluated and eliminates the expression on paths where it is fully redundant, achieving a form of **code hoisting** that moves computations earlier without introducing unnecessary work.
+Partial redundancy elimination (PRE) subsumes several other optimizations by removing expressions that are partially redundant (computed on some paths but not others).
+
+> **Pro Tip:** PRE is one of the most powerful global optimizations because it simultaneously eliminates redundancies and hoists computations â€” it effectively performs code placement, not just removal. Many production compilers (LLVM -gvn, GCC -fpre) implement some form of PRE. PRE inserts computations on paths where the expression is not evaluated and eliminates the expression on paths where it is fully redundant, achieving a form of **code hoisting** that moves computations earlier without introducing unnecessary work.
 
 ## Example
+
+### Concept Comparison
+
+| Analysis | Direction | Combine | Type | Application |
+|----------|-----------|---------|------|-------------|
+| Reaching Definitions | Forward | Union (any) | May | Constant propagation |
+| Live Variables | Backward | Union (any) | May | Register allocation |
+| Available Expressions | Forward | Intersection (all) | Must | Global CSE |
+| Constant Propagation | Forward | Meet on lattice | Must | Constant folding |
+
+### Quick Reference
+
+| Equation Component | Reaching Defs | Live Vars | Available Exprs |
+|--------------------|---------------|-----------|-----------------|
+| Direction | Forward | Backward | Forward |
+| Combine | Union | Union | Intersection |
+| IN[B] | âˆª OUT[pred] | USE âˆª (OUT âˆ’ DEF) | âˆ© OUT[pred] |
+| OUT[B] | GEN âˆª (IN âˆ’ KILL) | âˆª IN[succ] | GEN âˆª (IN âˆ’ KILL) |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Language Design | Specifying language semantics | Data-flow formalizes optimization legality |
+| Systems Programming | Program analysis tools | DFA enables compiler diagnostics |
+| Web Development | JavaScript engine optimization | JITs use DFA for type specialization |
+| Tooling | Static analysis / linters | Data-flow finds bugs (e.g., uninitialized vars) |
 
 ### Example 12.1: Reaching Definitions
 
@@ -135,4 +194,29 @@ Data-flow analysis derives static properties of program variables by solving equ
 
 ### Challenge Problem
 
-1. Implement an iterative data-flow analyzer in your chosen language that computes reaching definitions for a given flow graph. Your implementation should accept basic blocks as input (with explicit GEN and KILL sets) and output the IN and OUT sets for each block. Design a lattice-based constant-propagation analyzer that interoperates with your data-flow engine. Demonstrate both analyses on a test program with at least five basic blocks, including a loop, and verify the fixed point manually.
+1. Implement an iterative data-flow analyzer in your chosen language that computes reaching definitions for a given flow graph. Your implementation should accept basic blocks as input (with explicit GEN and KILL sets) and output the IN and OUT sets for each block. Design a lattice-based constant-propagation analyzer that interoperates with your data-flow engine. Demonstrate both analyses on a test program with at least five basic blocks, including a loop,     and verify the fixed point manually.
+
+### Chapter Quiz
+
+1. What distinguishes a forward data-flow problem from a backward problem?
+   - A) Forward uses intersection; backward uses union
+   - B) Forward computes IN from predecessors; backward computes IN from successors
+   - C) Forward is for registers; backward is for memory
+   - D) There is no difference
+
+2. Available expressions is a must (all-paths) problem because:
+   - A) An expression is available if it reaches some successor
+   - B) An expression is available only if computed on every incoming path
+   - C) Available expressions use union as the meet operator
+   - D) It analyzes backward through the flow graph
+
+3. In constant propagation's lattice, what happens when two different constants merge at a join point?
+   - A) Both constants are kept
+   - B) The result is âŠ¤ (unknown)
+   - C) The result is âŠ¥ (not constant)
+   - D) The larger constant wins
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. C
+</details>

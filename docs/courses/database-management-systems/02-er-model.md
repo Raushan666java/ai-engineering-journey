@@ -12,7 +12,7 @@
 
 ## Theory
 
-![ER Model Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch02-er-model.png)
+![ER Model Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch02-er-model.png)
 
 ### 2.1 The Entity-Relationship Model
 
@@ -111,7 +111,7 @@ Double-bordered rectangle: Weak entity set
 Double-bordered diamond: Identifying relationship
 ```
 
-**Diagram Description — University Schema:**
+**Diagram Description â€” University Schema:**
 
 ```
 [STUDENT] ----< TAKES >---- [COURSE]
@@ -147,7 +147,7 @@ Key:
 
 **Generalization:** The process of defining a more general entity set from lower-level entity sets. Example: PERSON is a generalization of STUDENT and FACULTY. The common attributes (name, address, phone) are moved to PERSON, while specific attributes (GPA for STUDENT, salary for FACULTY) remain in the specialized sets.
 
-**Specialization:** The inverse — defining sub-groupings within an entity set. Example: From EMPLOYEE, we define subtypes SECRETARY, ENGINEER, and MANAGER, each with additional attributes.
+**Specialization:** The inverse â€” defining sub-groupings within an entity set. Example: From EMPLOYEE, we define subtypes SECRETARY, ENGINEER, and MANAGER, each with additional attributes.
 
 **Constraints on Specialization/Generalization:**
 - **Disjointness:** Can an entity belong to more than one subclass?
@@ -161,7 +161,7 @@ Key:
 
 ### 2.8 From ER to Relational Mapping
 
-ER diagrams are conceptual — they must be converted to relational schemas for implementation. The mapping rules:
+ER diagrams are conceptual â€” they must be converted to relational schemas for implementation. The mapping rules:
 
 1. **Strong Entity Sets:** Create a table with all simple attributes. Composite attributes are flattened (each component becomes a column). The primary key becomes the table's primary key.
 
@@ -231,7 +231,7 @@ CREATE TABLE employee (
 -- The dept_id FK in employee models the "many" side of 1:N
 ```
 
-**Example 2.2: Weak Entity — Dependents**
+**Example 2.2: Weak Entity â€” Dependents**
 
 ```sql
 -- Strong entity
@@ -251,7 +251,7 @@ CREATE TABLE dependent (
 );
 ```
 
-**Example 2.3: Generalization/Specialization — Strategy B**
+**Example 2.3: Generalization/Specialization â€” Strategy B**
 
 ```sql
 -- Superclass table
@@ -279,6 +279,119 @@ CREATE TABLE faculty (
 -- INSERT INTO student VALUES (1, 3.8, 'CS');
 -- INSERT INTO faculty VALUES (1, 85000, 'CS');
 ```
+
+## ðŸ’¡ Pro Tips
+
+1. **Always start with an ER diagram** before writing a single CREATE TABLE statement â€” it catches design flaws early and communicates structure to stakeholders.
+2. **Binary relationships cover 90% of real-world cases** â€” avoid ternary relationships unless all three entity types are genuinely independent; they often hide design problems.
+3. **Be precise with cardinality and participation** â€” confusing 1:N with M:N or total with partial participation leads to incorrect schemas that are expensive to fix later.
+4. **Weak entities are more common than you think** â€” line items on an invoice, dependents of an employee, and seat assignments on a flight are all weak entities.
+5. **Use Strategy B (separate tables) for generalization** â€” it preserves all constraints and handles overlapping subclasses cleanly, at the cost of more joins.
+
+## One-Sentence Takeaways
+
+- **2.1:** The ER model is a high-level conceptual tool for capturing user requirements before database implementation.
+- **2.2:** An entity is a distinguishable real-world object; an entity set is a collection of similar entities.
+- **2.3:** Attributes describe entity properties and can be simple/composite, single-valued/multi-valued, or stored/derived.
+- **2.4:** Relationships connect entities with specified degree (unary, binary, ternary) and cardinality constraints (1:1, 1:N, M:N).
+- **2.5:** Weak entities depend on owner entities for their identity and combine an owner's key with a discriminator.
+- **2.6:** ER diagrams use standard symbols â€” rectangles for entities, diamonds for relationships, ellipses for attributes.
+- **2.7:** Generalization creates a superclass from subclasses; specialization creates subclasses from a superclass.
+- **2.8:** ER-to-relational mapping converts conceptual designs into implementable SQL schemas using systematic rules.
+
+## Concept Comparison Table
+
+| Concept | Definition | Example |
+|---------|-----------|---------|
+| **Strong Entity** | Has its own primary key | STUDENT(student_id) |
+| **Weak Entity** | Depends on owner entity for identity | DEPENDENT(emp_id, dependent_name) |
+| **1:1 Relationship** | Each entity relates to at most one on each side | MANAGER manages DEPARTMENT |
+| **1:N Relationship** | One entity relates to many; inverse relates to one | DEPARTMENT has many EMPLOYEES |
+| **M:N Relationship** | Both sides can relate to many | STUDENT takes COURSE |
+| **Total Participation** | Every entity must participate | Every STUDENT must be enrolled (if required) |
+| **Partial Participation** | Some entities may not participate | Not every FACULTY advises a student |
+| **Simple Attribute** | Cannot be divided further | student_id, age |
+| **Composite Attribute** | Can be divided into subparts | name (first, last), address (street, city, zip) |
+| **Derived Attribute** | Computed from stored attributes | age from date_of_birth |
+
+## Quick Reference
+
+| ER Concept | Notation | SQL Mapping |
+|-----------|----------|-------------|
+| Strong Entity | Rectangle | Create table with PK |
+| Weak Entity | Double rectangle | Create table, FK to owner, composite PK |
+| Simple Attribute | Single ellipse | Column in table |
+| Composite Attribute | Ellipse with sub-ellipses | Flattened columns |
+| Multi-valued Attribute | Double-line ellipse | Separate table with FK + attribute |
+| Derived Attribute | Dashed ellipse | Not stored; computed in query |
+| 1:1 Relationship | Diamond with arrows both sides | FK + UNIQUE in one table |
+| 1:N Relationship | Diamond with arrow on "1" side | FK in "many" side table |
+| M:N Relationship | Diamond (no arrows) | New junction table with composite PK |
+| Total Participation | Double line | NOT NULL on FK column |
+| Identifying Relationship | Double diamond | FK that is part of PK in weak entity |
+
+## Cross-Application Matrix
+
+| ER Concept | Applies To | Why It Matters |
+|-----------|-----------|----------------|
+| **Weak Entities** | Invoicing, flight booking, payroll | Line items, seat assignments, and dependents cannot exist without their parent |
+| **1:N Relationships** | Almost every business domain | Customersâ†’Orders, Departmentsâ†’Employees, Authorsâ†’Books |
+| **M:N Relationships** | Studentsâ†’Courses, Productsâ†’Orders | Requires junction tables â€” a common source of design errors |
+| **Generalization** | Employee types, account types, media library | Models inheritance: savings/checking accounts, full-time/contract employees |
+| **Multi-valued Attributes** | Phone numbers, skills, tags | Never store as comma-separated strings â€” create a separate table |
+| **Total Participation** | Mandatory relationships | Ensures data completeness: every order must reference a customer |
+
+## Chapter Quiz
+
+1. A weak entity is identified by:
+   a) Its own primary key only
+   b) A combination of a discriminator and the owner's primary key
+   c) A composite attribute
+   d) A derived attribute
+
+2. In a 1:N relationship between DEPARTMENT and EMPLOYEE:
+   a) Each department has many employees, and each employee belongs to many departments
+   b) Each department has many employees, and each employee belongs to one department
+   c) Each department has one employee, and each employee belongs to one department
+   d) Each department has one employee, and each employee belongs to many departments
+
+3. Which symbol represents a total participation in an ER diagram?
+   a) Single line
+   b) Double line
+   c) Arrow
+   d) Dashed line
+
+4. A ternary relationship involves:
+   a) Two entity sets
+   b) Three entity sets
+   c) Three attributes
+   d) Three relationship sets
+
+5. Which attribute type requires a separate table during ER-to-relational mapping?
+   a) Simple attribute
+   b) Composite attribute
+   c) Multi-valued attribute
+   d) Derived attribute
+
+6. Generalization is the process of:
+   a) Creating subclasses from a superclass
+   b) Creating a superclass from multiple subclasses
+   c) Adding attributes to an entity
+   d) Removing redundant relationships
+
+7. The identifying relationship of a weak entity is always:
+   a) Many-to-many
+   b) Many-to-one from weak to owner
+   c) One-to-one
+   d) One-to-many from owner to weak
+
+8. Which mapping strategy creates nullable columns for subclass-specific attributes?
+   a) Strategy A: Single table
+   b) Strategy B: Separate tables
+   c) Strategy C: Subclass tables only
+   d) Strategy D: No mapping needed
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-c, 6-b, 7-b, 8-a
 
 ## Summary
 

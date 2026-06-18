@@ -1,5 +1,8 @@
 # Chapter 9: Governance, Risk & Compliance
 
+> **Prereq:** Chapter 8 (Forensics & IR) â€” incident findings feed into risk assessments and compliance reporting.
+> **Next:** Chapter 10 (Pentesting) â€” GRC frameworks inform penetration testing scope and methodology.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,38 @@
 - Describe the key requirements of major data protection regulations (e.g., GDPR, HIPAA).
 - Explain the role of security policies, standards, and guidelines in an organization.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Governance | Policies, org structure | Security starts at the board level |
+| Risk Management | Identify â†’ Assess â†’ Treat | Quantified decision-making |
+| Compliance | GDPR, HIPAA, PCI-DSS | Legal obligations and fines |
+| Frameworks | NIST CSF, ISO 27001 | Blueprints for security programs |
+
+```mermaid
+flowchart LR
+    A[GRC] --> B[Governance]
+    A --> C[Risk Management]
+    A --> D[Compliance]
+    B --> E[Policies]
+    B --> F[Standards]
+    C --> G[Risk Assessment]
+    C --> H[Risk Treatment]
+    D --> I[GDPR]
+    D --> J[ISO 27001]
+    style A fill:#e1f5fe
+    style C fill:#fce4ec
+    style D fill:#fff3e0
+```
+
 ---
 
 ## Theory
 
-![GRC & Risk Management](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch09-grc-risk.png)
+![GRC & Risk Management](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cyber-security/ch09-grc-risk.png)
+
+> **One-Sentence Takeaway:** GRC connects security to business outcomes â€” governance sets the rules, risk management quantifies threats, and compliance ensures legal and regulatory obligations are met.
 
 ### What is GRC?
 GRC is an integrated approach to ensuring that an organization acts in accordance with its self-imposed rules and external regulations.
@@ -104,3 +134,46 @@ A small company mapping its data to comply with GDPR:
 
 ### Challenge Problem
 1. Research the "Business Impact Analysis" (BIA). Explain its role in disaster recovery planning and how it relates to the concepts of "Maximum Tolerable Downtime" (MTD) and "Recovery Time Objective" (RTO). Provide a scenario showing how these values are determined.
+
+### Concept Comparison
+
+| Risk Response | Action | When to Use |
+|--------------|--------|-------------|
+| Mitigate | Implement controls | Risk exceeds appetite |
+| Accept | Acknowledge, monitor | Low-impact or cost > benefit |
+| Transfer | Insurance, third-party | Financial risk sharing |
+| Avoid | Discontinue activity | Risk too high, controls impossible |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Network Security | Compliance with PCI-DSS for network segmentation | Regulations dictate network architecture |
+| App Security | GDPR data protection by design | Compliance requirements shape app features |
+| Cloud Security | SOC 2, ISO 27001 certification | Cloud providers demonstrate compliance |
+| Research | Risk quantification models | FAIR model for cyber risk in dollars |
+
+### Chapter Quiz
+
+1. The NIST Cybersecurity Framework's five core functions are:
+   - A) Plan, Do, Check, Act, Review
+   - B) Identify, Protect, Detect, Respond, Recover
+   - C) Assess, Design, Implement, Monitor, Improve
+   - D) Prevent, Detect, Contain, Eradicate, Recover
+
+2. A risk with high likelihood and high impact is best handled by:
+   - A) Acceptance
+   - B) Avoidance
+   - C) Mitigation
+   - D) Transfer
+
+3. GDPR is a regulation that:
+   - A) Applies only to US companies
+   - B) Protects personal data of EU residents
+   - C) Mandates annual penetration testing
+   - D) Regulates cryptocurrency exchanges
+
+<details>
+<summary>Answers</summary>
+1. B, 2. C, 3. B
+</details>

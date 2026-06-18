@@ -11,7 +11,7 @@ By the end of this chapter, students will be able to:
 - Filter, group, aggregate, and merge datasets
 - Create basic visualisations with matplotlib and seaborn
 
-![Data Science Stack](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/20-numpy-pandas.png)
+![Data Science Stack](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/20-numpy-pandas.png)
 
 ## 20.1 NumPy Arrays
 
@@ -135,7 +135,7 @@ Broadcasting performs operations on arrays of different shapes:
 ```python
 # Scalar broadcasting
 arr = np.array([1, 2, 3])
-print(arr * 10)  # [10 20 30] — scalar stretched to match shape
+print(arr * 10)  # [10 20 30] â€” scalar stretched to match shape
 
 # Vector broadcasting
 matrix = np.array([[1, 2, 3], [4, 5, 6]])
@@ -224,7 +224,7 @@ eigvals, eigvecs = np.linalg.eig(a)
 A = np.array([[3, 1], [1, 2]])
 b = np.array([9, 8])
 x = np.linalg.solve(A, b)
-print(x)  # [2. 3.] — solution to 3x + y = 9, x + 2y = 8
+print(x)  # [2. 3.] â€” solution to 3x + y = 9, x + 2y = 8
 
 # Norms
 vector = np.array([3, 4])

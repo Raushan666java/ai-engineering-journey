@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Trie Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch16-trie.png)
+![Trie Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch16-trie.png)
 
 ### Definition
 
@@ -89,7 +89,7 @@ public:
 
     ~Trie() { delete root; }
 
-    // Insert a word into the trie — O(L)
+    // Insert a word into the trie â€” O(L)
     void insert(const std::string& word) {
         TrieNode* current = root;
         for (char c : word) {
@@ -101,7 +101,7 @@ public:
         current->isEndOfWord = true;
     }
 
-    // Search for an exact word — O(L)
+    // Search for an exact word â€” O(L)
     bool search(const std::string& word) const {
         TrieNode* current = root;
         for (char c : word) {
@@ -113,7 +113,7 @@ public:
         return current->isEndOfWord;
     }
 
-    // Check if any word starts with the given prefix — O(L)
+    // Check if any word starts with the given prefix â€” O(L)
     bool startsWith(const std::string& prefix) const {
         TrieNode* current = root;
         for (char c : prefix) {
@@ -125,7 +125,7 @@ public:
         return true;
     }
 
-    // Get all words with the given prefix — O(L + results)
+    // Get all words with the given prefix â€” O(L + results)
     std::vector<std::string> autocomplete(const std::string& prefix) const {
         TrieNode* current = root;
         for (char c : prefix) {
@@ -317,6 +317,89 @@ int countPrefix(TrieNodeCount* root, const std::string& prefix) {
     return current->prefixCount;
 }
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **Trie search is \(O(L)\) regardless of \(n\)**: Search time depends only on string length, not on the number of stored strings. This makes tries ideal for dictionaries with millions of entries.
+- **Tries excel where hash tables fail**: Hash tables cannot efficiently find all strings with a given prefix, support ordered iteration, or handle variable-length keys without hashing overhead. Tries do all three.
+- **Compressed trie (radix tree) saves memory**: Merge nodes with single children into one node. This reduces the number of nodes from \(O(\text{total characters})\) to \(O(\text{number of unique strings})\).
+- **Ternary search tree bridges trie and BST**: Each node has three children (less, equal, greater). It uses less memory than a trie but has \(O(L)\) search â€” a good middle ground.
+
+## One-Sentence Takeaways
+
+- A trie stores strings as paths in a tree with characters as edges.
+- Search, insert, and lookup are \(O(L)\) where \(L\) is the string length.
+- Prefix matching is natural and efficient â€” just traverse the prefix path.
+- Space can be large: each character may require a 26-element array per node.
+- Compressed tries (radix trees) merge single-child paths to reduce nodes.
+- Ternary search trees combine trie-like search with BST-like memory.
+
+## Concept Comparison Table
+
+| Feature | Trie | Hash Table | BST | Ternary Search Tree |
+|---------|------|------------|-----|-------------------|
+| Search time | \(O(L)\) | \(O(1)\) avg | \(O(L \log n)\) | \(O(L)\) |
+| Prefix matching | Yes | No | Slow | Yes |
+| Ordered iteration | Yes (DFS) | No | Yes | Yes |
+| Space (ASCII keys) | High | Moderate | Low | Low |
+| Variable-length keys | Natural | Hash needed | Natural | Natural |
+| Memory per character | Pointer array | None | 2 pointers + key | 3 pointers + char |
+
+## Quick Reference: Trie vs Alternatives
+
+| Operation | Trie | Hash Table | BST |
+|-----------|------|------------|-----|
+| Exact search | \(O(L)\) | \(O(1)\) | \(O(L \log n)\) |
+| Insert | \(O(L)\) | \(O(1)\) | \(O(L \log n)\) |
+| Delete | \(O(L)\) | \(O(1)\) | \(O(L \log n)\) |
+| Prefix search | \(O(L + \text{results})\) | \(O(n)\) | \(O(n)\) |
+| Longest prefix match | \(O(L)\) | Not supported | \(O(L)\) |
+| Space | \(O(\sum \text{characters})\) | \(O(n)\) | \(O(n)\) |
+
+## Cross-Application Matrix
+
+| Application | Why Trie |
+|-------------|----------|
+| Autocomplete | Prefix matching, fast suggestions |
+| Spell checker | Dictionary with prefix correction |
+| IP routing (longest prefix) | Radix tree = compressed trie |
+| DNA sequence search | Pattern matching in genomes |
+| Text prediction | Efficient prefix-based prediction |
+| URL router (web framework) | Path prefix matching |
+
+## Chapter Quiz
+
+1. **Trie search time depends on:**
+   - a) Number of stored strings âœ“ (actually it depends on L)
+   - b) String length âœ“
+   - c) Hash function
+   - d) Tree height
+
+2. **What operation is natural in tries but impossible in hash tables?**
+   - a) Exact lookup
+   - b) Prefix matching âœ“
+   - c) Insertion
+   - d) Deletion
+
+3. **What reduces memory in a compressed trie?**
+   - a) Fewer characters
+   - b) Merging single-child paths âœ“
+   - c) Using arrays
+   - d) Hashing keys
+
+4. **A ternary search tree node has how many children?**
+   - a) 2
+   - b) 3 âœ“
+   - c) 26
+   - d) Unlimited
+
+5. **Which data structure is a compressed trie used for IP routing?**
+   - a) B-tree
+   - b) Radix tree âœ“
+   - c) Hash table
+   - d) AVL tree
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

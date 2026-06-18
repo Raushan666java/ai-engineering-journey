@@ -1,8 +1,8 @@
-﻿# GATE CS Mock Test 8 — Full-Length Practice Paper (Hardest Edition)
+# GATE CS Mock Test 8 — Full-Length Practice Paper (Hardest Edition)
 
 ## Exam Instructions
 
-![Mock Test 8 Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/22-mock-test-8.png)
+![Mock Test 8 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/22-mock-test-8.png)
 
 **Total Marks:** 100
 **Duration:** 3 Hours

@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Discrete Probability Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/13-probability.png)
+![Discrete Probability Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/13-probability.png)
 
 After completing this chapter, you will be able to:
 
@@ -95,7 +95,7 @@ The **probabilistic method** proves existence of objects by showing that a rando
 
 **Example 13.1** (Simple probability). Roll two fair dice. Probability that sum is 7?
 
-*Solution.* $|S| = 36$. Favorable outcomes: $\{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\}$ — 6 outcomes. $P = 6/36 = 1/6$.
+*Solution.* $|S| = 36$. Favorable outcomes: $\{(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\}$ â€” 6 outcomes. $P = 6/36 = 1/6$.
 
 **Example 13.2** (Conditional probability). In a population, 1% have a disease. A test detects it with 99% accuracy (true positive), but has 2% false positive rate. If a person tests positive, what is the probability they have the disease?
 
@@ -103,7 +103,7 @@ The **probabilistic method** proves existence of objects by showing that a rando
 $P(D) = 0.01$, $P(T \mid D) = 0.99$, $P(T \mid \overline{D}) = 0.02$.
 $$P(D \mid T) = \frac{P(T \mid D) P(D)}{P(T \mid D) P(D) + P(T \mid \overline{D}) P(\overline{D})} = \frac{0.99 \cdot 0.01}{0.99 \cdot 0.01 + 0.02 \cdot 0.99} \approx 0.333$$
 
-Only about 33% — illustrating the base rate fallacy.
+Only about 33% â€” illustrating the base rate fallacy.
 
 **Example 13.3** (Expectation). A fair die is rolled. Expected value?
 
@@ -155,5 +155,5 @@ $E[X] = 1\cdot\frac{1}{6} + 2\cdot\frac{1}{6} + \cdots + 6\cdot\frac{1}{6} = 3.5
 
 11. The **birthday problem**: In a group of $n$ people, what is the probability that at least two share a birthday? (Assume 365 days, equally likely.)
     (a) Derive the formula $P(\text{collision}) = 1 - \frac{365!}{(365-n)! \cdot 365^n}$.
-    (b) Compute the minimum $n$ such that $P(\text{collision}) > 1/2$ (approximately 23 — verify).
+    (b) Compute the minimum $n$ such that $P(\text{collision}) > 1/2$ (approximately 23 â€” verify).
     (c) Generalize: how many people needed for a 99% probability?

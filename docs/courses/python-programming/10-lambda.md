@@ -9,7 +9,7 @@ By the end of this chapter, students will be able to:
 - Apply the `operator` module for common operations
 - Compose functions and build functional pipelines
 
-![Lambda and Functional Programming](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/10-lambda.png)
+![Lambda and Functional Programming](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/10-lambda.png)
 
 ## 10.1 Lambda Functions
 
@@ -67,7 +67,7 @@ summed = list(map(lambda x, y: x + y, a, b))
 print(summed)  # [11, 22, 33]
 ```
 
-`map()` is lazy — it returns an iterator. Wrap with `list()` to materialise:
+`map()` is lazy â€” it returns an iterator. Wrap with `list()` to materialise:
 
 ```python
 result = map(str, [1, 2, 3])
@@ -129,9 +129,9 @@ print(factorial)  # 120
 
 Tracing `reduce(lambda a, b: a + b, [1, 2, 3, 4])`:
 
-1. `a=1, b=2` → `3`
-2. `a=3, b=3` → `6`
-3. `a=6, b=4` → `10`
+1. `a=1, b=2` â†’ `3`
+2. `a=3, b=3` â†’ `6`
+3. `a=6, b=4` â†’ `10`
 
 With `functools.reduce`, the function must take two arguments. `reduce` is powerful but less readable than explicit loops for many cases:
 
@@ -167,7 +167,7 @@ print(cube(3))    # 27
 # Real-world: decimal with fixed precision
 from decimal import Decimal, ROUND_HALF_UP
 round_decimal = partial(Decimal.quantize, exp=Decimal("0.01"), rounding=ROUND_HALF_UP)
-# Not quite right — partial on bound method needs care. Better:
+# Not quite right â€” partial on bound method needs care. Better:
 def round_to_2dp(value):
     return Decimal(value).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
 
@@ -191,7 +191,7 @@ from operator import add, mul, itemgetter, attrgetter, methodcaller
 print(add(3, 4))    # 7
 print(mul(5, 6))    # 30
 
-# itemgetter — instead of lambda x: x[0]
+# itemgetter â€” instead of lambda x: x[0]
 people = [("Alice", 30), ("Bob", 25), ("Charlie", 35)]
 sorted_by_age = sorted(people, key=itemgetter(1))
 print(sorted_by_age)  # [('Bob', 25), ('Alice', 30), ('Charlie', 35)]
@@ -200,7 +200,7 @@ print(sorted_by_age)  # [('Bob', 25), ('Alice', 30), ('Charlie', 35)]
 points = [(3, 4, 5), (1, 2, 3), (6, 7, 8)]
 print(itemgetter(0, 2)(points[0]))  # (3, 5)
 
-# attrgetter — instead of lambda x: x.attribute
+# attrgetter â€” instead of lambda x: x.attribute
 from collections import namedtuple
 Person = namedtuple("Person", "name age")
 people2 = [Person("Alice", 30), Person("Bob", 25), Person("Charlie", 35)]

@@ -1,4 +1,4 @@
-﻿# CSS Interview Q&A
+# CSS Interview Q&A
 
 A curated collection of CSS interview questions covering fundamental concepts, layout systems, responsive design, animations, modern frameworks, and Laravel frontend integration. Each answer includes practical code examples to illustrate the concept in action.
 
@@ -6,7 +6,7 @@ A curated collection of CSS interview questions covering fundamental concepts, l
 
 ## Selectors & Specificity
 
-![CSS Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/52-interview-css.png)
+![CSS Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/52-interview-css.png)
 
 
 ### Q1: How does the CSS cascade determine which rule wins?

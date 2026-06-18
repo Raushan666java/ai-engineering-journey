@@ -1,4 +1,4 @@
-![Database Advanced Topics - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/59-interview-databases-d.png)
+![Database Advanced Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-d.png)
 
 ### Q26: What is database sharding, and how do you implement it?
 
@@ -7,7 +7,7 @@
 Sharding (horizontal partitioning) splits a table across multiple database instances. Each shard holds a subset of rows based on a shard key. The application routes queries to the correct shard.
 
 ```java
-// ── Shard key routing with AbstractRoutingDataSource ──
+// â”€â”€ Shard key routing with AbstractRoutingDataSource â”€â”€
 public class ShardRouter {
     private final Map<String, DataSource> shards = Map.of(
         "shard-0", createDataSource("jdbc:postgresql://shard0.example.com:5432/db"),
@@ -21,7 +21,7 @@ public class ShardRouter {
     }
 }
 
-// ── Spring AbstractRoutingDataSource ──
+// â”€â”€ Spring AbstractRoutingDataSource â”€â”€
 public class TenantAwareRoutingSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
@@ -32,7 +32,7 @@ public class TenantAwareRoutingSource extends AbstractRoutingDataSource {
 
 Key considerations:
 - Choose a shard key that evenly distributes data (user_id, tenant_id, region)
-- Cross-shard queries (JOINs across shards) are expensive or impossible — design aggregates per shard
+- Cross-shard queries (JOINs across shards) are expensive or impossible â€” design aggregates per shard
 - Adding shards requires rebalancing or consistent hashing
 - Transactions cannot span shards (no distributed ACID without coordinator)
 - PostgreSQL Citus, MySQL Cluster, and Vitess provide automated sharding at the database layer
@@ -48,7 +48,7 @@ Sharding is the most complex scaling strategy. Exhaust read replicas, vertical s
 Use `@Transactional(readOnly = true)` to route read operations to a replica datasource. Implement this with `AbstractRoutingDataSource` and a `@Transactional` interceptor.
 
 ```java
-// ── Multi-datasource configuration ──
+// â”€â”€ Multi-datasource configuration â”€â”€
 @Configuration
 public class DataSourceConfig {
 
@@ -76,7 +76,7 @@ public class DataSourceConfig {
     }
 }
 
-// ── Routing datasource ──
+// â”€â”€ Routing datasource â”€â”€
 public class RoutingDataSource extends AbstractRoutingDataSource {
     @Override
     protected Object determineCurrentLookupKey() {
@@ -85,7 +85,7 @@ public class RoutingDataSource extends AbstractRoutingDataSource {
     }
 }
 
-// ── Usage ──
+// â”€â”€ Usage â”€â”€
 @Service
 public class UserService {
     @Transactional(readOnly = true)  // routes to REPLICA
@@ -97,7 +97,7 @@ public class UserService {
 ```
 
 Caveats:
-- Replica lag means read-after-write consistency is not guaranteed — a user may not see their own saved data immediately
+- Replica lag means read-after-write consistency is not guaranteed â€” a user may not see their own saved data immediately
 - Use `@Transactional(readOnly = true)` only on queries where stale data is acceptable
 - For read-your-writes consistency, use the primary datasource within the same transaction
 - Connection pooling needs separate pools for primary and replica
@@ -116,27 +116,27 @@ public class Author {
     @Id @GeneratedValue private Long id;
     private String name;
 
-    // ── ALL: persist, merge, remove, refresh, detach ──
+    // â”€â”€ ALL: persist, merge, remove, refresh, detach â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
     private List<Book> books;
 
-    // ── PERSIST: saving Author saves Books ──
+    // â”€â”€ PERSIST: saving Author saves Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.PERSIST)
     private List<Article> articles;
 
-    // ── MERGE: updating Author updates Books ──
+    // â”€â”€ MERGE: updating Author updates Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.MERGE)
     private List<Book> editedBooks;
 
-    // ── REMOVE: deleting Author deletes Books ──
+    // â”€â”€ REMOVE: deleting Author deletes Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.REMOVE)
     private List<Book> coAuthoredBooks;
 
-    // ── DETACH: detaching Author detaches Books ──
+    // â”€â”€ DETACH: detaching Author detaches Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.DETACH)
     private List<Book> reviewedBooks;
 
-    // ── REFRESH: refreshing Author refreshes Books ──
+    // â”€â”€ REFRESH: refreshing Author refreshes Books â”€â”€
     @OneToMany(mappedBy = "author", cascade = CascadeType.REFRESH)
     private List<Book> proofreadBooks;
 }
@@ -163,7 +163,7 @@ INSERT INTO book (title, author_id) VALUES ('AI Engineering 101', 1);
 INSERT INTO book (title, author_id) VALUES ('Spring Boot in Practice', 1);
 ```
 
-Use `CascadeType.ALL` only when the child entity has no independent lifecycle. Never cascade `ALL` on `@ManyToMany` — it can delete entities that belong to other owners. Use `PERSIST` + `MERGE` for most `@OneToMany` relationships.
+Use `CascadeType.ALL` only when the child entity has no independent lifecycle. Never cascade `ALL` on `@ManyToMany` â€” it can delete entities that belong to other owners. Use `PERSIST` + `MERGE` for most `@OneToMany` relationships.
 
 ---
 
@@ -174,7 +174,7 @@ Use `CascadeType.ALL` only when the child entity has no independent lifecycle. N
 `@Embedded` maps the fields of an embeddable class directly into the parent table (flat schema). `@OneToOne` creates a separate table with a foreign key relationship.
 
 ```java
-// ── @Embedded — fields in the same table ──
+// â”€â”€ @Embedded â€” fields in the same table â”€â”€
 @Embeddable
 public class Address {
     private String street;
@@ -189,12 +189,12 @@ public class User {
     private String name;
 
     @Embedded
-    private Address address;  // columns: street, city, zip_code, country — in the users table
+    private Address address;  // columns: street, city, zip_code, country â€” in the users table
 }
 
 // Result: single table "users" with columns: id, name, street, city, zip_code, country
 
-// ── @OneToOne — separate table with FK ──
+// â”€â”€ @OneToOne â€” separate table with FK â”€â”€
 @Entity
 public class Profile {
     @Id private Long id;
@@ -238,7 +238,7 @@ private Address homeAddress;
 Batch processing inserts or updates thousands of rows efficiently by batching JDBC statements and flushing periodically.
 
 ```java
-// ── Configuration ──
+// â”€â”€ Configuration â”€â”€
 spring:
   jpa:
     properties:
@@ -249,7 +249,7 @@ spring:
         order_updates: true
         batch_versioned_data: true
 
-// ── Batch insert service ──
+// â”€â”€ Batch insert service â”€â”€
 @Service
 public class BatchImportService {
 
@@ -267,7 +267,7 @@ public class BatchImportService {
 
             if (i > 0 && i % batchSize == 0) {
                 em.flush();
-                em.clear();  // detaches all managed entities — frees memory
+                em.clear();  // detaches all managed entities â€” frees memory
             }
         }
         em.flush();
@@ -288,8 +288,8 @@ For updates, `order_updates=true` groups statements by entity type:
 ```java
 @Transactional
 public void bulkStatusUpdate(List<Long> ids, String newStatus) {
-    // ❌ Without batching: N separate UPDATEs (one per entity)
-    // ✅ With order_updates: batched UPDATE ... WHERE id IN (...)
+    // âŒ Without batching: N separate UPDATEs (one per entity)
+    // âœ… With order_updates: batched UPDATE ... WHERE id IN (...)
 
     for (Long id : ids) {
         User u = em.find(User.class, id);
@@ -306,7 +306,7 @@ For truly large datasets (100K+ rows), use JDBC batch updates directly or a bulk
 @Query("UPDATE User u SET u.status = :status WHERE u.id IN :ids")
 int bulkUpdateStatus(@Param("ids") List<Long> ids, @Param("status") String status);
 
-// Returns the number of updated rows — no entity loading needed
+// Returns the number of updated rows â€” no entity loading needed
 ```
 
 ---
@@ -329,32 +329,32 @@ CREATE INDEX idx_users_email ON users(email);
 CREATE INDEX idx_orders_user_status ON orders(user_id, status);
 -- Supports: WHERE user_id = ?  (uses first column)
 -- Supports: WHERE user_id = ? AND status = ?  (full index)
--- Does NOT support: WHERE status = ?  (cannot use index — status is second column)
+-- Does NOT support: WHERE status = ?  (cannot use index â€” status is second column)
 
 -- Column order matters: put equality filters first, range filters last
 CREATE INDEX idx_orders_date_status ON orders(order_date, status);
--- WHERE order_date > '2024-01-01' AND status = 'ACTIVE'  — partial index usage (date column only)
+-- WHERE order_date > '2024-01-01' AND status = 'ACTIVE'  â€” partial index usage (date column only)
 -- Better: put the equality column first
 CREATE INDEX idx_orders_status_date ON orders(status, order_date);
 ```
 
-**Partial index** (index only a subset of rows — smaller, faster):
+**Partial index** (index only a subset of rows â€” smaller, faster):
 ```sql
 CREATE INDEX idx_active_users ON users(email) WHERE active = true;
--- Only indexes active users — 70% smaller if 30% of users are active
+-- Only indexes active users â€” 70% smaller if 30% of users are active
 ```
 
-**Covering index** (includes all needed columns — no table lookup):
+**Covering index** (includes all needed columns â€” no table lookup):
 ```sql
 CREATE INDEX idx_orders_covering ON orders(user_id, status, total, created_at);
 -- SELECT status, total FROM orders WHERE user_id = 123 ORDER BY created_at DESC
--- Entire query satisfied from index — zero table page reads
+-- Entire query satisfied from index â€” zero table page reads
 ```
 
 **GIN index** (for JSONB, full-text search, arrays):
 ```sql
 CREATE INDEX idx_metadata ON products USING GIN (metadata jsonb_path_ops);
--- SELECT * FROM products WHERE metadata @> '{"color": "red"}'  — fast JSON containment search
+-- SELECT * FROM products WHERE metadata @> '{"color": "red"}'  â€” fast JSON containment search
 ```
 
 **Indexing checklist per query:**
@@ -384,8 +384,8 @@ public class UserService {
         User u1 = userRepo.findById(id).orElseThrow();
         u1.setName(newName);
 
-        User u2 = userRepo.findById(id).orElseThrow();  // L1 cache hit — no SQL
-        System.out.println(u1 == u2);  // true — same Java object
+        User u2 = userRepo.findById(id).orElseThrow();  // L1 cache hit â€” no SQL
+        System.out.println(u1 == u2);  // true â€” same Java object
 
         u2.setEmail(newEmail);
 
@@ -401,12 +401,12 @@ Implications:
 2. **Dirty checking**: On flush, Hibernate compares every managed entity's current state with its snapshot. Changed fields generate UPDATE statements.
 3. **Read-after-write consistency**: Within the same transaction, you always see your own writes because the L1 cache serves the entity.
 
-Common mistake — calling `save()` is unnecessary for managed entities:
+Common mistake â€” calling `save()` is unnecessary for managed entities:
 ```java
 @Transactional
 public void updateName(Long id, String name) {
     User u = userRepo.findById(id).orElseThrow();  // managed
-    u.setName(name);  // no save() needed — Hibernate auto-detects the change on flush
+    u.setName(name);  // no save() needed â€” Hibernate auto-detects the change on flush
     // Hibernate generates: UPDATE users SET name = ? WHERE id = ?
 }
 ```
@@ -423,7 +423,7 @@ Database rollbacks are more complex than code rollbacks because the schema chang
 Every migration must have a corresponding "down" migration that reverses the change.
 
 ```java
-// ── Flyway with callback for rollback support ──
+// â”€â”€ Flyway with callback for rollback support â”€â”€
 public class FlywayRollbackService {
     public void undoLastMigration() {
         Flyway flyway = Flyway.configure()
@@ -434,7 +434,7 @@ public class FlywayRollbackService {
         var applied = flyway.info().applied();
         MigrationInfo last = applied[applied.length - 1];
 
-        // Execute the undo script (V{version}__{description}.sql → V{version}__{description}__undo.sql)
+        // Execute the undo script (V{version}__{description}.sql â†’ V{version}__{description}__undo.sql)
         String undoScript = "db/undomigrations/" + last.getVersion() + "__undo.sql";
         Resource undo = new ClassPathResource(undoScript);
         if (undo.exists()) {
@@ -449,9 +449,9 @@ DELETE FROM flyway_schema_history WHERE version = '2';
 ```
 
 **2. Expand-contract pattern (zero-downtime):**
-Phase 1 — expand: Add the new column/table. Both old and new code can run simultaneously.
-Phase 2 — migrate: Backfill data. Deploy new code that uses the new schema.
-Phase 3 — contract: Remove the old column/table after confirming the new code works.
+Phase 1 â€” expand: Add the new column/table. Both old and new code can run simultaneously.
+Phase 2 â€” migrate: Backfill data. Deploy new code that uses the new schema.
+Phase 3 â€” contract: Remove the old column/table after confirming the new code works.
 
 ```sql
 -- Phase 1 (expand): Add nullable column

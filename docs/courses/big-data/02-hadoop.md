@@ -1,4 +1,6 @@
-﻿# Chapter 2: Hadoop — HDFS, MapReduce & YARN
+# Chapter 2: Hadoop — HDFS, MapReduce & YARN
+
+> **Previous:** [Chapter 1: Introduction to Big Data](./01-introduction.md) | **Next:** [Chapter 3: Apache Spark Basics](./03-spark-basics.md)
 
 ## Learning Objectives
 
@@ -8,6 +10,30 @@ After completing this chapter, you will be able to:
 - Describe YARN resource management and container scheduling
 - Configure a Hadoop cluster for development
 - Compare Hadoop with cloud-native alternatives
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| HDFS Architecture | Single namenode + multiple datanodes with block replication | The namenode is a single point of failure — monitor it closely |
+| Block Replication | 128 MB blocks, 3x replication with rack awareness | Rack-aware placement survives full rack failures |
+| MapReduce | Two-phase (map-reduce) model with automatic parallelization | Hadoop Streaming lets you write mappers/reducers in Python |
+| YARN | Separates resource management from processing framework | YARN enables Spark, MapReduce, Tez to share the same cluster |
+| Small Files Problem | HDFS is optimized for large files | Keep files close to 128 MB block size |
+| Cloud-Native Comparison | S3 + Spark is replacing on-premise Hadoop | Learn concepts, not tools — cloud services implement the same ideas |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[HDFS Architecture] --> B[Block Replication]
+    B --> C[MapReduce Paradigm]
+    C --> D[MapReduce Optimizations]
+    D --> E[YARN Resource Management]
+    E --> F[HDFS Operations]
+    F --> G[Small Files Problem]
+    G --> H[Cloud-Native Comparison]
+```
 
 ## 2.1 HDFS Architecture
 
@@ -48,6 +74,8 @@ print("Replica 3: Different node in same rack as replica 2")
 
 This rack-aware placement ensures that a full rack failure or a single node failure does not cause data loss.
 
+> **One-Sentence Takeaway:** HDFS achieves fault tolerance through block replication with rack-aware placement, ensuring data survives multiple concurrent node and rack failures.
+
 ### 2.1.3 Heartbeats & Block Reports
 
 Datanodes send heartbeats every 3 seconds to the namenode. If the namenode does not receive a heartbeat for 10 minutes (default), it marks the datanode as dead and re-replicates its blocks.
@@ -60,7 +88,7 @@ max_missed = timeout // heartbeat_interval
 print(f"Namenode waits {timeout}s ({max_missed} heartbeats) before declaring DN dead")
 ```
 
-![HDFS Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch02-hdfs-architecture.png)
+![HDFS Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/big-data/ch02-hdfs-architecture.png)
 
 ### 2.1.4 HDFS CLI
 
@@ -84,7 +112,7 @@ MapReduce is a programming model for distributed data processing. It consists of
 
 ### 2.2.1 How MapReduce Works
 
-![MapReduce Data Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/big-data/ch02-mapreduce-flow.png)
+![MapReduce Data Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/big-data/ch02-mapreduce-flow.png)
 
 ### 2.2.2 Word Count in MapReduce (Python)
 
@@ -136,6 +164,8 @@ hadoop jar /path/to/hadoop-streaming.jar \
 
 Hadoop Streaming allows any executable (Python, Perl, Ruby) to serve as mapper and reducer. The `-file` flag distributes the scripts to all nodes.
 
+> **One-Sentence Takeaway:** MapReduce automatically parallelizes data processing across a cluster by splitting work into map (transform) and reduce (aggregate) phases, with optional combiners for network optimization.
+
 ### 2.2.4 MapReduce Optimizations
 
 **Combiner:** A mini-reducer that runs on the mapper node, reducing data transferred over the network. For word count, the combiner is identical to the reducer.
@@ -149,6 +179,10 @@ Hadoop Streaming allows any executable (Python, Perl, Ruby) to serve as mapper a
 ```
 
 **Speculative execution:** If a node is slow (straggler), Hadoop launches a duplicate task on another node and uses whichever finishes first.
+
+> **Pro Tip:** Always use a Combiner when the reduce function is associative and commutative (e.g., sum, max, count). It can reduce network shuffle data by 3-10x at no extra code cost.
+
+> **One-Sentence Takeaway:** Combiners and speculative execution are key MapReduce optimizations — combiners reduce network traffic and speculative execution mitigates straggler nodes.
 
 ## 2.3 YARN (Yet Another Resource Negotiator)
 
@@ -201,6 +235,8 @@ def yarn_job_submission():
 | Capacity | Guaranteed capacity per queue, elastic sharing | Multi-tenant production |
 | Fair | Equal resource distribution over time | Ad-hoc queries, mixed workloads |
 
+> **One-Sentence Takeaway:** YARN decouples resource management from the processing framework, allowing multiple compute engines to share a single cluster through pluggable scheduling policies.
+
 ## 2.4 HDFS Operations in Python
 
 ```python
@@ -250,6 +286,10 @@ print(f"Storage waste for {avg_file_mb}MB files: {small_file_waste:.0f}%")
 
 **Solutions:** Combine small files into sequence files, use HBase, or switch to an object store (S3).
 
+> **Warning:** The small files problem is one of the most common real-world HDFS failures. A directory with millions of tiny (1 KB) files can crash the namenode by exhausting its heap. Always batch small files before ingesting into HDFS.
+
+> **One-Sentence Takeaway:** HDFS is designed for large files — small files waste namenode memory and storage efficiency, requiring batching strategies or object store alternatives.
+
 ## 2.6 Hadoop vs Cloud-Native
 
 | Capability | Hadoop (HDFS + YARN) | Cloud-Native (S3 + EMR/Spark) |
@@ -262,6 +302,75 @@ print(f"Storage waste for {avg_file_mb}MB files: {small_file_waste:.0f}%")
 | Performance | Better for shuffle-heavy workloads | Better for storage-compute separation |
 
 The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), but HDFS concepts are still tested in interviews and used in on-premise deployments.
+
+> **Remember:** Every cloud object store (S3, GCS, Azure Blob) borrows concepts from HDFS — block storage, replication, and metadata management. Understanding HDFS gives you a mental model for all distributed storage.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| HDFS | Distributed filesystem with single namenode | Strong consistency, write-once-read-many | Batch storage of large files |
+| MapReduce | Two-phase distributed processing | Disk-based intermediate writes | Legacy batch ETL |
+| YARN | Cluster resource manager | Separates resource mgmt from compute | Multi-engine cluster sharing |
+| HDFS Block | 128 MB data unit with 3x replication | Large block size reduces metadata overhead | Distributed file storage |
+| MapReduce Combiner | Mini-reducer on mapper node | Reduces network shuffle by local aggregation | Word count, sum, max |
+| Cloud Storage | S3/GCS with 11 9's durability | Storage-compute separation, pay-per-GB | Modern data lakes |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **HDFS Commands** | dfs -put, -get, -ls, -cat, -setrep | Always use `-setrep -w` to wait for replication |
+| **MapReduce Phases** | Map → Shuffle/Sort → Reduce | Combiner runs during shuffle output |
+| **YARN Components** | RM, NM, AM, Container | AM per job negotiates with RM |
+| **HDFS Tuning** | dfs.blocksize, replication.factor, heartbeat.interval | 128 MB default; 3x replication |
+| **Key Metrics** | namenode heap, block count, DN heartbeats | 150 bytes/inode in namenode memory |
+
+## Cross-Application Matrix
+
+| Technique | Data Engineering | ML | Cloud | Business Analytics |
+|-----------|-----------------|----|-------|--------------------|
+| HDFS Block Replication | Reliable data ingestion | Store training datasets | S3 replication config | Data lake durability |
+| MapReduce | Batch ETL pipelines | Feature extraction | EMR/DataProc jobs | Historical reporting |
+| YARN Resource Mgmt | Multi-tenant cluster sharing | GPU-enabled executors | K8s resource quotas | Query queue management |
+| Combiner Optimization | Reduce shuffle in aggregations | Local gradient accumulation | Cost reduction in data transfer | Faster aggregation queries |
+| Small Files Handling | Batch compaction jobs | Merge small feature files | S3 lifecycle policies | Compress small fact tables |
+| Rack-Aware Placement | Optimize data locality | Affinity for training nodes | AZ-aware deployment | Geographically distributed queries |
+
+## Chapter Quiz
+
+1. What happens in HDFS if a datanode fails?
+   - A) The namenode goes into safe mode
+   - B) The namenode re-replicates the blocks from the dead node to other datanodes
+   - C) The datanode's blocks are permanently lost
+   - D) The cluster stops accepting writes
+
+<details>
+<summary>Answer</summary>
+**B) The namenode re-replicates the blocks from the dead node to other datanodes.** After 10 minutes of missed heartbeats, the namenode marks the node dead and replicates its blocks (which still exist on other nodes due to 3x replication) to maintain the target replication factor.
+</details>
+
+2. What is the purpose of a Combiner in MapReduce?
+   - A) To combine multiple MapReduce jobs into one
+   - B) To perform local aggregation on the mapper node before shuffling
+   - C) To combine the outputs of multiple reducers
+   - D) To merge input files before mapping
+
+<details>
+<summary>Answer</summary>
+**B) To perform local aggregation on the mapper node before shuffling.** The combiner reduces the amount of data transferred over the network during the shuffle phase, significantly speeding up jobs with associative operations.
+</details>
+
+3. Why does HDFS have a 128 MB default block size?
+   - A) To match disk sector sizes
+   - B) To reduce the number of metadata entries in the namenode
+   - C) To improve network transfer speeds
+   - D) To make files compatible with HBase
+
+<details>
+<summary>Answer</summary>
+**B) To reduce the number of metadata entries in the namenode.** Large blocks mean fewer blocks per file, which reduces the memory pressure on the namenode (which stores all metadata in RAM).
+</details>
 
 ## Summary
 

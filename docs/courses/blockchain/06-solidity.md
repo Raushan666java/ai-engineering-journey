@@ -1,4 +1,6 @@
-﻿# Chapter 6: Smart Contract Development
+# Chapter 6: Smart Contract Development
+
+> **Previous:** [Chapter 5: Ethereum and Smart Contracts](./05-ethereum.md) | **Next:** [Chapter 7: Decentralized Applications (dApps)](./07-dapps.md)
 
 ---
 
@@ -9,6 +11,27 @@
 - Explain function visibility (public, private, external, internal) and modifiers
 - Describe common security pitfalls and best practices in contract design
 - Understand the compilation and deployment lifecycle
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Solidity Language | Object-oriented, EVM-targeted language | Influenced by C++, Python, JavaScript |
+| Storage vs Memory | Storage persists on-chain (expensive) | Minimize storage writes to save gas |
+| Function Visibility | public, private, external, internal | Controls who can call each function |
+| Modifiers | Reusable function guards | Declarative access control patterns |
+| Security Patterns | Check-Effects-Interactions | Always update state before external calls |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Solidity Basics] --> B[Data Types & Storage]
+    B --> C[Functions & Visibility]
+    C --> D[Modifiers & Control]
+    D --> E[Security Patterns]
+    E --> F[Deployment Lifecycle]
+```
 
 ---
 
@@ -24,7 +47,7 @@ Solidity is a high-level, object-oriented language for writing smart contracts. 
 - **Memory:** Temporary data used during execution (Cheaper).
 - **Stack:** Local variables (Cheapest).
 
-![Solidity Contract Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch06-solidity.png)
+![Solidity Contract Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/blockchain/ch06-solidity.png)
 
 ### Functions and Control
 - **Visibility:** Defines who can call the function.
@@ -81,7 +104,81 @@ contract Guarded {
 ```
 The `onlyOwner` modifier ensures that only the account that deployed the contract can call `restrictedAction`.
 
+> **One-Sentence Takeaway:** Every storage write costs 5,000–20,000 gas while memory operations cost ~3 gas — the biggest optimization in Solidity is minimizing what you store on the blockchain.
+
+> **Pro Tip:** Use `calldata` instead of `memory` for read-only function parameters. It's cheaper than `memory` and avoids unnecessary data copying.
+
+> **Warning:** The `tx.origin` global should never be used for authentication — it returns the original sender of the transaction, which can be a malicious contract. Always use `msg.sender` for access control.
+
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| storage | Persistent on-chain data | Expensive (20K gas write), permanent | State variables, balances |
+| memory | Temporary during execution | Cheap, forgotten after execution | Function-local arrays |
+| calldata | Read-only input data | Cheapest, non-modifiable | External function parameters |
+| stack | Local variables on EVM stack | Free but limited (16 variables) | Loop counters, temporaries |
+| mapping | Key-value store | No iteration possible | Token balances, allowance |
+| struct | Custom data type | Group related fields | User profiles, orders |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **Visibility** | public, private, internal, external | external is cheaper than public for functions |
+| **Modifiers** | onlyOwner, whenNotPaused, nonReentrant | Reusable security guards |
+| **Data Location** | storage, memory, calldata | calldata is read-only and cheapest |
+| **Globals** | msg.sender, msg.value, block.timestamp | block.timestamp can be manipulated by miners |
+| **Gas Ops** | ADD: 3, SSTORE: 20K/5K, SLOAD: 2100 | Storage is the dominant cost |
+
+## Cross-Application Matrix
+
+| Technique | DeFi | Smart Contracts | Enterprise Blockchain | Research |
+|-----------|------|-----------------|----------------------|----------|
+| Storage Layout | Token balance tracking | Contract state | Asset ledger | Storage optimization |
+| Function Visibility | Pool withdrawal (public) | Oracle callback (external) | Chaincode invoke (public) | Proxy patterns |
+| Modifiers | onlyOwner admin | Reentrancy guard | Access control lists | Composable modifiers |
+| Check-Effects | Flash loan safety | Withdrawal pattern | Escrow settlement | Formal verification |
+| Events | Swap logging | Transfer tracking | Audit trail | Event indexing |
+
+## Chapter Quiz
+
+1. Which data location is cheapest for read-only function parameters in Solidity?
+   - A) storage
+   - B) memory
+   - C) calldata
+   - D) stack
+
+<details>
+<summary>Answer</summary>
+**C) calldata.** Calldata is a read-only, non-modifiable location that avoids copying data. It's cheaper than memory for function parameters that don't need modification.
+</details>
+
+2. What does the `_;` symbol represent in a Solidity modifier?
+   - A) A semicolon
+   - B) The insertion point where the function body executes
+   - C) A loop continuation
+   - D) A require statement
+
+<details>
+<summary>Answer</summary>
+**B) The insertion point where the function body executes.** In a modifier, `_;` is replaced by the function body at runtime. Code before `_;` runs before the function, and code after runs after.
+</details>
+
+3. Why is `tx.origin` dangerous for authentication?
+   - A) It returns the wrong address
+   - B) It can be the address of an attacker's contract, not the intended user
+   - C) It costs more gas
+   - D) It only works on testnets
+
+<details>
+<summary>Answer</summary>
+**B) It can be the address of an attacker's contract, not the intended user.** `tx.origin` returns the original EOA that initiated the transaction chain, which an intermediate malicious contract can exploit to impersonate a user. Always use `msg.sender`.
+</details>
+
+## Summary
 
 ## Summary
 

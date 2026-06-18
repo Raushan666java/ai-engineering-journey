@@ -1,4 +1,4 @@
-﻿# Chapter 19: Production Performance Tuning & Index Strategy
+# Chapter 19: Production Performance Tuning & Index Strategy
 
 ## Learning Objectives
 
@@ -13,7 +13,7 @@ After completing this chapter, you will be able to:
 
 ## 19.1 Specialized Index Types
 
-![Performance Tuning Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch19-performance-tuning.png)
+![Performance Tuning Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch19-performance-tuning.png)
 
 Chapter 12 covered B+ trees and hash indexes. Production databases demand more.
 
@@ -580,6 +580,125 @@ COMMIT;
 ```
 
 **Result:** Writes scaled to 50K rows/second. BRIN index was 1/200th the size of the B-tree.
+
+## 💡 Pro Tips
+
+1. **EXPLAIN (ANALYZE, BUFFERS) is your primary diagnostic tool** — run it on slow queries first. It shows actual vs. estimated rows, revealing bad statistics, missing indexes, and wrong join strategies.
+2. **BRIN indexes are magic for append-only time-series data** — they are 100-1000× smaller than B-tree indexes on timestamp columns and just as fast for range queries on naturally ordered data.
+3. **Never wrap indexed columns in functions** — `WHERE DATE(created_at) = '2026-01-01'` makes the index useless. Write `WHERE created_at >= '2026-01-01' AND created_at < '2026-01-02'` instead.
+4. **Monitor index bloat** — over time, B-tree indexes accumulate empty pages from deletions and updates. Rebuild them with `REINDEX CONCURRENTLY` to reclaim space.
+5. **Use extended statistics for correlated columns** — if `WHERE city = 'NYC' AND status = 'active'` has correlated columns, the optimizer assumes independence and underestimates. Extended statistics fix this.
+
+## One-Sentence Takeaways
+
+- **19.1:** Index type selection matters — BRIN for time-series, GiST for geospatial, GIN for JSONB/full-text, SP-GiST for tree/prefix structures.
+- **19.2:** Index maintenance (rebuild, bloat monitoring, unused index removal) is essential for sustained performance.
+- **19.3:** Accurate cardinality estimation depends on up-to-date statistics — ANALYZE regularly and increase STATISTICS targets for skewed data.
+- **19.4:** Table partitioning transforms large-table problems into small-table solutions with partition pruning.
+- **19.5:** Materialized views pre-compute expensive aggregations for reporting queries.
+- **19.6:** Performance diagnosis tools — auto_explain, pg_stat_statements, pg_stat_user_indexes, and EXPLAIN (ANALYZE, BUFFERS) — pinpoint the root cause of slowdowns.
+
+## Concept Comparison Table
+
+| Index Type | Size vs. B-tree | Best For | Supported Operations |
+|-----------|----------------|----------|---------------------|
+| **B-tree** | Baseline | General purpose | <, <=, =, >=, >, BETWEEN, LIKE (prefix) |
+| **BRIN** | 100-1000× smaller | Time-series, naturally ordered data | Range queries on correlated physical order |
+| **GiST** | Larger | Geospatial, full-text search, ranges | Geometric operators, @>, <-> |
+| **GIN** | Larger | JSONB, full-text search, arrays | @>, ?, ?|, ?&, @@ |
+| **SP-GiST** | Moderate | Tree structures, prefix search, GIS | Quad-tree, k-d tree, radix tree operations |
+| **Hash** | Smaller | Equality lookups | = only |
+
+| Performance Issue | Symptom | Likely Cause | Fix |
+|------------------|---------|-------------|-----|
+| **Slow SELECT** | High seq scan, low rows returned | Missing index | Add appropriate index |
+| **Slow INSERT** | High write latency | Too many indexes | Reduce indexes, use batch inserts |
+| **Bad plan** | Estimated rows ≠ actual rows | Stale statistics | ANALYZE, increase STATISTICS target |
+| **Index bloat** | Large index, same row count | Deletes/updates without cleanup | REINDEX CONCURRENTLY |
+| **Slow reporting** | Full table scans on large tables | Missing materialized view | Create materialized view + refresh schedule |
+
+## Quick Reference
+
+| PostgreSQL Extension | Purpose |
+|---------------------|---------|
+| **auto_explain** | Logs query plans for slow queries automatically |
+| **pg_stat_statements** | Tracks query execution statistics (calls, total time, rows) |
+| **pg_buffercache** | Shows buffer cache contents |
+| **pg_stat_user_indexes** | Index usage statistics (scans, reads fetched) |
+| **pageinspect** | Low-level page content inspection |
+
+| Tuning Configuration | Effect |
+|---------------------|--------|
+| **`shared_buffers`** | Memory for data caching (25% of RAM) |
+| **`work_mem`** | Memory for sorts and hash tables per operation |
+| **`maintenance_work_mem`** | Memory for VACUUM, CREATE INDEX (higher is faster) |
+| **`effective_cache_size`** | OS-level cache estimate for cost calculations |
+| **`random_page_cost`** | Cost of random I/O (lower for SSDs — set to 1.1) |
+| **`default_statistics_target`** | Number of histogram buckets (default 100, raise to 1000) |
+
+## Cross-Application Matrix
+
+| Tuning Technique | Applied In | Why It Matters |
+|-----------------|-----------|----------------|
+| **BRIN Indexes** | IoT sensor data, log tables, audit trails | 1000× smaller indexes for append-only timestamp data |
+| **Partitioning** | Event tables, time-series, multi-tenant | Fast partition pruning, easy old-data removal (DETACH) |
+| **Materialized Views** | BI dashboards, monthly reports | Pre-computed aggregates eliminate expensive runtime queries |
+| **Extended Statistics** | Correlated column filters | Accurate cardinality for city+status, age+salary combinations |
+| **REINDEX CONCURRENTLY** | High-write production tables | Rebuild bloated indexes without locking the table |
+| **Connection Pooling (PgBouncer)** | High-concurrency web apps | Reduce connection overhead; essential for serverless |
+| **pg_stat_statements** | Performance monitoring | Identify top-N slow queries across the database |
+
+## Chapter Quiz
+
+1. Which index type is best for a time-series table with append-only inserts and timestamp-range queries?
+   a) B-tree
+   b) BRIN
+   c) Hash
+   d) GIN
+
+2. The query `WHERE DATE(order_date) = '2026-01-01'` is problematic because:
+   a) It returns incorrect results
+   b) The function wrapping prevents index usage on order_date
+   c) It only works in PostgreSQL
+   d) It requires a full table scan
+
+3. Index bloat is caused by:
+   a) Too many INSERTs
+   b) Deletions and updates creating empty B-tree pages
+   c) Running ANALYZE too frequently
+   d) Using too many indexes
+
+4. Extended statistics are needed when:
+   a) A table has more than 100 columns
+   b) WHERE conditions have correlated columns
+   c) A table has no indexes
+   d) Queries use ORDER BY
+
+5. The `work_mem` parameter controls:
+   a) The total memory for database connections
+   b) Memory per sort/hash operation
+   c) The buffer cache size
+   d) Write-ahead log buffer size
+
+6. Partition pruning means:
+   a) The optimizer only scans relevant partitions based on WHERE conditions
+   b) Old partitions are automatically deleted
+   c) Indexes are rebuilt per partition
+   d) Data is moved between partitions
+
+7. Which extension tracks query execution statistics?
+   a) auto_explain
+   b) pg_stat_statements
+   c) pg_buffercache
+   d) pageinspect
+
+8. A materialized view is most useful when:
+   a) The source data changes every second
+   b) An expensive query is executed frequently and can tolerate some staleness
+   c) The query is simple and fast
+   d) Real-time accuracy is required
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b, 6-a, 7-b, 8-b
 
 ## Summary
 

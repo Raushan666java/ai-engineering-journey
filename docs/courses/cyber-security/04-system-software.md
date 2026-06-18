@@ -1,5 +1,8 @@
 # Chapter 4: System & Software Security
 
+> **Prereq:** Chapter 3 (Network Security) â€” system security assumes network perimeter controls are in place.
+> **Next:** Chapter 5 (Web Security) â€” web applications run on the operating systems described here.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,36 @@
 - Describe the core concepts of the Secure Software Development Lifecycle (SSDLC).
 - Identify common software security flaws and apply the principle of complete mediation.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Buffer Overflow | Stack smashing | Classic memory corruption exploit |
+| OS Hardening | ASLR, DEP, patching | Reduce system attack surface |
+| Malware Types | Virus, worm, ransomware | Understand defense strategies per type |
+| SSDLC | Secure coding, testing | Build security in, not bolt on |
+
+```mermaid
+flowchart LR
+    A[System Security] --> B[Memory Safety]
+    A --> C[OS Hardening]
+    A --> D[Malware Defense]
+    A --> E[SSDLC]
+    B --> F[ASLR]
+    B --> G[DEP/NX]
+    B --> H[Stack Canaries]
+    style A fill:#e1f5fe
+    style B fill:#fce4ec
+    style C fill:#fff3e0
+```
+
 ---
 
 ## Theory
 
-![Malware & Buffer Overflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch04-malware-buffer.png)
+![Malware & Buffer Overflow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cyber-security/ch04-malware-buffer.png)
+
+> **One-Sentence Takeaway:** System security defends against low-level threats â€” buffer overflows exploit memory unsafety, OS hardening reduces the attack surface, and the SSDLC builds security into software from the start.
 
 ### Memory Corruption Vulnerabilities
 Low-level languages (like C and C++) allow direct memory manipulation, which can lead to critical flaws if not handled carefully.
@@ -110,3 +138,46 @@ gitleaks detect --source . --verbose
 
 ### Challenge Problem
 1. Research the "Return-Oriented Programming" (ROP) technique. Explain how it can be used to bypass Data Execution Prevention (DEP). Provide a conceptual explanation of how an attacker chains "gadgets" to achieve their goal.
+
+### Concept Comparison
+
+| Malware Type | Propagation | Payload | Key Defense |
+|-------------|-------------|---------|-------------|
+| Virus | Infects files | Varied | Antivirus, patch management |
+| Worm | Self-propagating (network) | DoS, dropper | Network segmentation |
+| Ransomware | Phishing, exploits | Encrypts files | Backups, EDR |
+| Rootkit | Subverts OS | Hide presence | Boot integrity, memory forensics |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Network Security | NIDS signatures for exploits | Buffer overflow detection via traffic patterns |
+| App Security | Secure coding standards | SSDLC prevents injection flaws |
+| Cloud Security | Immutable infrastructure | Hardened OS images for cloud workloads |
+| Research | CFI (Control Flow Integrity) | Next-gen defense against ROP attacks |
+
+### Chapter Quiz
+
+1. ASLR defeats buffer overflow exploitation by:
+   - A) Encrypting all memory
+   - B) Randomising memory address layouts
+   - C) Preventing buffer writes
+   - D) Logging all memory access
+
+2. A computer worm differs from a virus because:
+   - A) Worms only infect Windows systems
+   - B) Worms self-propagate without a host file
+   - C) Worms are always ransomware
+   - D) Worms cannot spread over networks
+
+3. DEP/NX prevents:
+   - A) Stack buffer overflows
+   - B) Execution of code in non-executable memory regions
+   - C) SQL injection
+   - D) Phishing attacks
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

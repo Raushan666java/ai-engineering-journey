@@ -1,4 +1,4 @@
-﻿# Chapter 53: JavaScript Interview Q&A
+# Chapter 53: JavaScript Interview Q&A
 
 ---
 
@@ -8,7 +8,7 @@ JavaScript is the language of the web browser and an essential skill for any ful
 
 ## Core JavaScript
 
-![JavaScript Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/53-interview-javascript.png)
+![JavaScript Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/53-interview-javascript.png)
 
 
 ### Q1: What are the primitive types in JavaScript?

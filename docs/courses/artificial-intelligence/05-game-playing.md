@@ -12,7 +12,7 @@ By the conclusion of this chapter, the student will be able to: (1) formulate ga
 |---------|-----------|-----------|
 | Game Theory & Trees | State space, utility, terminal test | Game tree, zero-sum, perfect info |
 | Minimax Algorithm | Optimal play, MAX/MIN, depth-limited | Evaluation function, backup |
-| Alpha-Beta Pruning | α/β bounds, move ordering | Killer heuristic, iterative deepening |
+| Alpha-Beta Pruning | Î±/Î² bounds, move ordering | Killer heuristic, iterative deepening |
 | Games of Chance | Expectiminimax, chance nodes | Stochastic games, expected value |
 | MCTS | Selection, expansion, simulation, backprop | UCT, exploration constant |
 | Imperfect Information | Belief states, determinization | Nash equilibrium, CFR |
@@ -33,11 +33,11 @@ flowchart LR
 
 ## 5.1 Game Theory and Game Trees
 
-![Game Playing and Adversarial Search](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch05-game-playing.png)
+![Game Playing and Adversarial Search](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch05-game-playing.png)
 
 Games provide a formal model of multi-agent decision-making where agents have conflicting objectives. In **deterministic, turn-taking, zero-sum games**, two players alternate moves, the payoff to one player is the negative of the payoff to the other, and no randomness intervenes.
 
-> **One-Sentence Takeaway:** A game is formally defined by its state space, player function, actions, transition model, terminal test, and utility function — forming a game tree of all possible play sequences.
+> **One-Sentence Takeaway:** A game is formally defined by its state space, player function, actions, transition model, terminal test, and utility function â€” forming a game tree of all possible play sequences.
 
 A **game** is formally defined by:
 - **State space** $\mathcal{S}$; initial state $s_0$.
@@ -63,27 +63,27 @@ $$
 
 ```
 function MINIMAX(state) returns action
-    v, best_action ← argmax over a of MIN-VALUE(RESULT(state, a))
+    v, best_action â† argmax over a of MIN-VALUE(RESULT(state, a))
     return best_action
 
 function MAX-VALUE(state) returns utility value
     if TERMINAL(state) then return UTILITY(state)
-    v ← -∞
+    v â† -âˆž
     for each a in ACTIONS(state) do
-        v ← MAX(v, MIN-VALUE(RESULT(state, a)))
+        v â† MAX(v, MIN-VALUE(RESULT(state, a)))
     return v
 
 function MIN-VALUE(state) returns utility value
     if TERMINAL(state) then return UTILITY(state)
-    v ← +∞
+    v â† +âˆž
     for each a in ACTIONS(state) do
-        v ← MIN(v, MAX-VALUE(RESULT(state, a)))
+        v â† MIN(v, MAX-VALUE(RESULT(state, a)))
     return v
 ```
 
 Minimax explores the entire game tree. For games like chess ($b \approx 35$, $d \approx 100$), exhaustive search is infeasible. **Depth-limited search** replaces the utility function with an evaluation function $Eval(s)$ that estimates the state's value.
 
-> **💡 Pro Tip:** With optimal move ordering, alpha-beta doubles the searchable depth — the best moves examined first produces the most pruning. Always combine iterative deepening with a transposition table to reuse previous search results.
+> **ðŸ’¡ Pro Tip:** With optimal move ordering, alpha-beta doubles the searchable depth â€” the best moves examined first produces the most pruning. Always combine iterative deepening with a transposition table to reuse previous search results.
 
 ## 5.3 Alpha-Beta Pruning
 
@@ -96,16 +96,16 @@ Pruning occurs when $\alpha \geq \beta$: further exploration of the subtree cann
 
 ```
 function ALPHA-BETA-SEARCH(state) returns action
-    v ← MAX-VALUE(state, -∞, +∞)
+    v â† MAX-VALUE(state, -âˆž, +âˆž)
     return action associated with v
 
-function MAX-VALUE(state, α, β) returns value
+function MAX-VALUE(state, Î±, Î²) returns value
     if TERMINAL(state) then return UTILITY(state)
-    v ← -∞
+    v â† -âˆž
     for each a in ACTIONS(state) do
-        v ← MAX(v, MIN-VALUE(RESULT(state, a), α, β))
-        if v ≥ β then return v
-        α ← MAX(α, v)
+        v â† MAX(v, MIN-VALUE(RESULT(state, a), Î±, Î²))
+        if v â‰¥ Î² then return v
+        Î± â† MAX(Î±, v)
     return v
 ```
 
@@ -123,7 +123,7 @@ Pruning efficiency depends critically on the order in which moves are examined. 
 
 Transpositions are different move sequences leading to the same state. A **transposition table** (implemented as a hash table keyed by state) stores the evaluation of previously visited states, avoiding redundant computation. Zobrist hashing (1970) provides efficient incremental hashing for board games.
 
-> **⚠️ Warning:** Expectiminimax is computationally expensive — it evaluates all outcomes at chance nodes. The branching factor multiplies by the number of chance outcomes, making it significantly slower than minimax on deterministic games.
+> **âš ï¸ Warning:** Expectiminimax is computationally expensive â€” it evaluates all outcomes at chance nodes. The branching factor multiplies by the number of chance outcomes, making it significantly slower than minimax on deterministic games.
 
 ## 5.5 Games of Chance
 
@@ -169,30 +169,30 @@ In games with hidden information (e.g., poker, bridge), players must reason abou
 
 | Algorithm | Type | State Space | Optimality | Key Metric |
 |-----------|:---:|:---:|:---:|:---:|
-| Minimax | Deterministic | Full tree | ✅ | Utility value |
-| Alpha-Beta | Deterministic | Pruned tree | ✅ | α/β bounds |
-| Expectiminimax | Stochastic | Full tree | ✅ (expected) | Expected value |
+| Minimax | Deterministic | Full tree | âœ… | Utility value |
+| Alpha-Beta | Deterministic | Pruned tree | âœ… | Î±/Î² bounds |
+| Expectiminimax | Stochastic | Full tree | âœ… (expected) | Expected value |
 | MCTS | Anytime | Sampled tree | Asymptotic | Visit count, win rate |
 | UCT | Anytime | Sampled tree | Asymptotic | Upper confidence bound |
 
-## Quick Reference — Game Complexity
+## Quick Reference â€” Game Complexity
 
 | Game | Branching Factor (b) | Game Depth (d) | Tree Size (b^d) | Feasible Method |
 |------|:---:|:---:|:---:|:---:|
-| Tic-Tac-Toe | ~4 | 9 | ~4×10⁵ | Minimax (full) |
-| Chess | ~35 | ~100 | ~10¹⁵⁴ | Alpha-Beta + Eval |
-| Go | ~250 | ~150 | ~10³⁶⁰ | MCTS + DNN |
-| Poker (no-limit) | ~10⁴ | Variable | N/A | CFR |
+| Tic-Tac-Toe | ~4 | 9 | ~4Ã—10âµ | Minimax (full) |
+| Chess | ~35 | ~100 | ~10Â¹âµâ´ | Alpha-Beta + Eval |
+| Go | ~250 | ~150 | ~10Â³â¶â° | MCTS + DNN |
+| Poker (no-limit) | ~10â´ | Variable | N/A | CFR |
 
 ## Cross-Application Matrix
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Minimax | ⬜ | ⬜ | ⬜ | ✅ |
-| Alpha-Beta | ⬜ | ⬜ | ⬜ | ✅ |
-| MCTS | ✅ | ⬜ | ⬜ | ✅ |
-| Expectiminimax | ⬜ | ⬜ | ⬜ | ✅ |
-| CFR (Game Theory) | ⬜ | ⬜ | ⬜ | ✅ |
+| Minimax | â¬œ | â¬œ | â¬œ | âœ… |
+| Alpha-Beta | â¬œ | â¬œ | â¬œ | âœ… |
+| MCTS | âœ… | â¬œ | â¬œ | âœ… |
+| Expectiminimax | â¬œ | â¬œ | â¬œ | âœ… |
+| CFR (Game Theory) | â¬œ | â¬œ | â¬œ | âœ… |
 
 ## Chapter Quiz
 
@@ -210,7 +210,7 @@ In games with hidden information (e.g., poker, bridge), players must reason abou
 - C) Tree depth and node count
 - D) Win rate and time remaining
 
-<details><summary>Answer</summary>B) UCT balances exploitation (win rate w_i/n_i) with exploration (c√(ln N/n_i)) through its two-term formula.</details>
+<details><summary>Answer</summary>B) UCT balances exploitation (win rate w_i/n_i) with exploration (câˆš(ln N/n_i)) through its two-term formula.</details>
 
 **Q3:** How does expectiminimax differ from minimax?
 - A) It adds chance nodes with expected values

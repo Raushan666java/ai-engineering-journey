@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Docker Architecture and Best Practices](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch05-docker.png)
+![Docker Architecture and Best Practices](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch05-docker.png)
 
 By the end of this chapter, students will be able to:
 
@@ -24,11 +24,11 @@ The layered filesystem is fundamental to Docker's efficiency. Each instruction i
 
 ### 5.2 Dockerfile Best Practices
 
-**Use Official Base Images** — Official images from Docker Hub are maintained by upstream teams and are regularly scanned for vulnerabilities. Pin specific versions rather than using `latest`.
+**Use Official Base Images** â€” Official images from Docker Hub are maintained by upstream teams and are regularly scanned for vulnerabilities. Pin specific versions rather than using `latest`.
 
-**Order Instructions by Cacheability** — Docker caches each layer. Instructions that change frequently (COPY of source code) should come after instructions that change rarely (installing system packages). This maximizes cache reuse.
+**Order Instructions by Cacheability** â€” Docker caches each layer. Instructions that change frequently (COPY of source code) should come after instructions that change rarely (installing system packages). This maximizes cache reuse.
 
-**Multi-Stage Builds** — Use multiple FROM statements in a single Dockerfile. Early stages contain build tooling (compilers, SDKs, package managers). The final stage copies only the runtime artifacts. This dramatically reduces image size.
+**Multi-Stage Builds** â€” Use multiple FROM statements in a single Dockerfile. Early stages contain build tooling (compilers, SDKs, package managers). The final stage copies only the runtime artifacts. This dramatically reduces image size.
 
 ```dockerfile
 # Build stage
@@ -49,9 +49,9 @@ USER node
 CMD ["node", "dist/index.js"]
 ```
 
-**Minimize Layers** — Combine related RUN commands with `&&` and clean up package manager caches in the same layer. Each RUN instruction adds a layer; fewer layers means smaller images and faster pulls.
+**Minimize Layers** â€” Combine related RUN commands with `&&` and clean up package manager caches in the same layer. Each RUN instruction adds a layer; fewer layers means smaller images and faster pulls.
 
-**Metadata** — Use LABEL instructions for maintainer, version, license, and other metadata. HEALTHCHECK defines the command Docker uses to determine if the container is healthy.
+**Metadata** â€” Use LABEL instructions for maintainer, version, license, and other metadata. HEALTHCHECK defines the command Docker uses to determine if the container is healthy.
 
 ### 5.3 Layer Caching
 
@@ -89,22 +89,22 @@ volumes:
 
 ### 5.5 Volumes and Bind Mounts
 
-**Volumes** — Managed by Docker, stored in `/var/lib/docker/volumes/`. Preferred for persistent data. Support volume drivers (NFS, cloud storage). Named volumes are easy to back up and share across containers.
+**Volumes** â€” Managed by Docker, stored in `/var/lib/docker/volumes/`. Preferred for persistent data. Support volume drivers (NFS, cloud storage). Named volumes are easy to back up and share across containers.
 
-**Bind Mounts** — Map a host directory into the container. Useful for development (hot-reloading) and sharing host configuration files. Less portable than volumes and depend on host filesystem structure.
+**Bind Mounts** â€” Map a host directory into the container. Useful for development (hot-reloading) and sharing host configuration files. Less portable than volumes and depend on host filesystem structure.
 
-**tmpfs Mounts** — Stored in memory only. Used for sensitive data that should not persist (secrets, temporary processing data).
+**tmpfs Mounts** â€” Stored in memory only. Used for sensitive data that should not persist (secrets, temporary processing data).
 
 ### 5.6 Docker Networking
 
 Docker provides several network drivers:
 
-- **bridge** — Default. Isolated network for containers on the same host. Containers communicate via IP addresses or service names (with embedded DNS).
-- **host** — Container uses the host's network stack directly. No network isolation. Higher performance but reduced isolation.
-- **overlay** — Multi-host networking for Docker Swarm. Enables containers on different hosts to communicate securely.
-- **macvlan** — Assigns MAC addresses to containers, making them appear as physical devices on the network.
-- **none** — No networking. For isolation-only containers.
-- **ipvlan** — Similar to macvlan but uses the same MAC address with multiple IP addresses.
+- **bridge** â€” Default. Isolated network for containers on the same host. Containers communicate via IP addresses or service names (with embedded DNS).
+- **host** â€” Container uses the host's network stack directly. No network isolation. Higher performance but reduced isolation.
+- **overlay** â€” Multi-host networking for Docker Swarm. Enables containers on different hosts to communicate securely.
+- **macvlan** â€” Assigns MAC addresses to containers, making them appear as physical devices on the network.
+- **none** â€” No networking. For isolation-only containers.
+- **ipvlan** â€” Similar to macvlan but uses the same MAC address with multiple IP addresses.
 
 ### 5.7 Resource Constraints
 
@@ -115,20 +115,20 @@ docker run --memory="512m" --cpus="1.5" --memory-reservation="256m" nginx
 ```
 
 Resource types:
-- **CPU** — `--cpus` (core count), `--cpuset-cpus` (specific cores)
-- **Memory** — `--memory` (hard limit), `--memory-reservation` (soft limit)
-- **Disk I/O** — `--device-read-bps`, `--device-write-bps`
-- **Restart Policies** — `--restart no|on-failure[:max-retries]|always|unless-stopped`
+- **CPU** â€” `--cpus` (core count), `--cpuset-cpus` (specific cores)
+- **Memory** â€” `--memory` (hard limit), `--memory-reservation` (soft limit)
+- **Disk I/O** â€” `--device-read-bps`, `--device-write-bps`
+- **Restart Policies** â€” `--restart no|on-failure[:max-retries]|always|unless-stopped`
 
 ### 5.8 Docker Security
 
 Security is critical for production container deployments.
 
-**Non-Root User** — Containers run as root by default. Create a user in the Dockerfile and switch with USER directive. This limits the impact of container escape vulnerabilities.
+**Non-Root User** â€” Containers run as root by default. Create a user in the Dockerfile and switch with USER directive. This limits the impact of container escape vulnerabilities.
 
-**Read-Only Root Filesystem** — Use `--read-only` flag. Write directories for temporary data are mounted as tmpfs volumes. Prevents attackers from modifying the container filesystem.
+**Read-Only Root Filesystem** â€” Use `--read-only` flag. Write directories for temporary data are mounted as tmpfs volumes. Prevents attackers from modifying the container filesystem.
 
-**Secrets Management** — Docker supports build secrets (BuildKit) and runtime secrets. Build secrets enable using credentials during build without embedding them in the image.
+**Secrets Management** â€” Docker supports build secrets (BuildKit) and runtime secrets. Build secrets enable using credentials during build without embedding them in the image.
 
 ```dockerfile
 # BuildKit syntax for secrets
@@ -136,9 +136,9 @@ RUN --mount=type=secret,id=npmrc \
     cp /run/secrets/npmrc ~/.npmrc
 ```
 
-**Capability Dropping** — Docker containers start with a reduced set of Linux capabilities. Further restrict with `--cap-drop=ALL` then add only necessary capabilities with `--cap-add=NET_BIND_SERVICE`.
+**Capability Dropping** â€” Docker containers start with a reduced set of Linux capabilities. Further restrict with `--cap-drop=ALL` then add only necessary capabilities with `--cap-add=NET_BIND_SERVICE`.
 
-**Image Scanning** — Scan images for vulnerabilities before deployment. Trivy, Docker Scout, and Snyk provide CVE scanning integrated with CI/CD.
+**Image Scanning** â€” Scan images for vulnerabilities before deployment. Trivy, Docker Scout, and Snyk provide CVE scanning integrated with CI/CD.
 
 ### 5.9 Dockerfile Linters
 

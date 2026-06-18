@@ -6,11 +6,11 @@ After completing this chapter, the student will be able to: differentiate betwee
 
 ## Theory
 
-![SDLC Process Models Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/01-process-models.png)
+![SDLC Process Models Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/01-process-models.png)
 
 ### The Software Process
 
-A software process is a structured set of activities required to develop a software system. These activities typically include specification — defining what the system should do; design and implementation — defining the system architecture and writing code; validation — checking that the system does what the customer requires; and evolution — modifying the system in response to changing needs. A software process model is an abstract representation of a process that describes how these activities are organised and enacted.
+A software process is a structured set of activities required to develop a software system. These activities typically include specification â€” defining what the system should do; design and implementation â€” defining the system architecture and writing code; validation â€” checking that the system does what the customer requires; and evolution â€” modifying the system in response to changing needs. A software process model is an abstract representation of a process that describes how these activities are organised and enacted.
 
 Process models range from highly structured, plan-driven approaches to flexible, iterative approaches. The choice of process model depends on project characteristics including size, complexity, requirements stability, team expertise, and organisational culture.
 

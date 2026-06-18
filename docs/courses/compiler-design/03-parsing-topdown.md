@@ -1,81 +1,114 @@
 # Chapter 3: Top-Down Parsing
 
+**â† Previous:** [Chapter 2: Lexical Analysis](02-lexical.md) | **Next:** [Chapter 4: Bottom-Up Parsing](04-parsing-bottomup.md)
+
 ## Learning Objectives
 
 After completing this chapter, students will be able to: define context-free grammars and use them to describe programming-language syntax; construct derivations and parse trees; eliminate ambiguity, left recursion, and common prefixes from grammars; compute FIRST and FOLLOW sets; implement recursive-descent parsers; and construct LL(1) parsing tables.
 
+### Chapter at a Glance
+
+| Section | Description |
+|---------|-------------|
+| Context-Free Grammars | Formal definition and role in syntax specification |
+| Derivations and Parse Trees | Leftmost and rightmost derivations, tree construction |
+| Ambiguity | Multiple parse trees and resolution strategies |
+| Left Recursion Elimination | Transforming grammars for predictive parsing |
+| Left Factoring | Removing common prefixes from productions |
+| FIRST and FOLLOW Sets | Computing lookahead information |
+| LL(1) Parsing | Table-driven predictive parsing |
+| Recursive-Descent Parsing | Procedure-based implementation |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Grammar G] --> B[Eliminate Left Recursion]
+    B --> C[Left Factor]
+    C --> D[Compute FIRST & FOLLOW]
+    D --> E{LL(1) Valid?}
+    E -->|Yes| F[Build Parsing Table]
+    E -->|No| B
+    F --> G[Recursive Descent / Table-Driven Parser]
+    G --> H[Parse Tree / Error]
+```
+
 ## Theory
 
-![Top-Down Parsing and LL(1)](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch03-parsing-topdown.png)
+![Top-Down Parsing and LL(1)](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/compiler-design/ch03-parsing-topdown.png)
 
 ### Context-Free Grammars
 
-A context-free grammar (CFG) is a four-tuple G = (V, T, P, S), where V is a finite set of nonterminal symbols, T is a finite set of terminal symbols disjoint from V, P is a finite set of productions A → α where A ∈ V and α ∈ (V ∪ T)*, and S ∈ V is the start symbol. The language L(G) is the set of all strings of terminals derivable from the start symbol by repeatedly replacing nonterminals with the right-hand side of a production.
+A context-free grammar (CFG) is a four-tuple G = (V, T, P, S), where V is a finite set of nonterminal symbols, T is a finite set of terminal symbols disjoint from V, P is a finite set of productions A â†’ Î± where A âˆˆ V and Î± âˆˆ (V âˆª T)*, and S âˆˆ V is the start symbol. The language L(G) is the set of all strings of terminals derivable from the start symbol by repeatedly replacing nonterminals with the right-hand side of a production.
+
+> **One-Sentence Takeaway:** A CFG is to syntax what regular expressions are to lexemes â€” the formal notation for describing structure.
 
 Context-free grammars are more powerful than regular expressions and are the canonical formalism for describing the syntactic structure of programming languages. A grammar for arithmetic expressions might include:
 
 ```
-expr   → expr + term | term
-term   → term * factor | factor
-factor → ( expr ) | id
+expr   â†’ expr + term | term
+term   â†’ term * factor | factor
+factor â†’ ( expr ) | id
 ```
 
 ### Derivations and Parse Trees
 
 A derivation is a sequence of replacement steps that transforms the start symbol into a terminal string. A **leftmost derivation** replaces the leftmost nonterminal at each step; a **rightmost derivation** replaces the rightmost nonterminal at each step.
 
-A parse tree is a graphical representation of a derivation in which each interior node is labeled with a nonterminal, each leaf with a terminal or ε, and the children of an interior node correspond to the right-hand side of a production. The yield of a parse tree is the concatenation of its leaf symbols, which forms the derived terminal string.
+A parse tree is a graphical representation of a derivation in which each interior node is labeled with a nonterminal, each leaf with a terminal or Îµ, and the children of an interior node correspond to the right-hand side of a production. The yield of a parse tree is the concatenation of its leaf symbols, which forms the derived terminal string.
 
 ### Ambiguity
 
 A grammar is **ambiguous** if there exists a terminal string that has more than one distinct parse tree (equivalently, more than one leftmost or rightmost derivation). Ambiguity is undesirable because it leads to multiple possible interpretations of a program. Consider the grammar:
 
 ```
-string → string + string | id
+string â†’ string + string | id
 ```
 
 The string `id + id + id` has two leftmost derivations, corresponding to left-associative and right-associative grouping. Ambiguity in programming-language constructs is typically resolved by imposing associativity and precedence rules either in the grammar or in the parser implementation.
 
 ### Left Recursion Elimination
 
-A grammar is **left-recursive** if a nonterminal A derives a string beginning with A. Immediate left recursion, where A → Aα | β, is eliminated by rewriting as:
+A grammar is **left-recursive** if a nonterminal A derives a string beginning with A. Immediate left recursion, where A â†’ AÎ± | Î², is eliminated by rewriting as:
 
 ```
-A  → βA'
-A' → αA' | ε
+A  â†’ Î²A'
+A' â†’ Î±A' | Îµ
 ```
 
-For indirect left recursion, where A ⇒* Aα through multiple steps, the grammar may be transformed by ordering nonterminals and substituting productions until all left recursion is immediate, then eliminating it.
+For indirect left recursion, where A â‡’* AÎ± through multiple steps, the grammar may be transformed by ordering nonterminals and substituting productions until all left recursion is immediate, then eliminating it.
 
 ### Left Factoring
 
 When two or more productions for the same nonterminal share a common prefix, predictive parsing cannot choose among them without lookahead. **Left factoring** delays the choice by extracting the common prefix:
 
 ```
-A → αβ₁ | αβ₂    becomes    A → αA'   A' → β₁ | β₂
+A â†’ Î±Î²â‚ | Î±Î²â‚‚    becomes    A â†’ Î±A'   A' â†’ Î²â‚ | Î²â‚‚
 ```
 
 ### FIRST and FOLLOW Sets
 
-The FIRST set of a string α, denoted FIRST(α), is the set of terminals that can begin strings derivable from α. If α ⇒* ε, then ε ∈ FIRST(α). Computation rules for FIRST:
+The FIRST set of a string Î±, denoted FIRST(Î±), is the set of terminals that can begin strings derivable from Î±. If Î± â‡’* Îµ, then Îµ âˆˆ FIRST(Î±). Computation rules for FIRST:
 
 1. If X is a terminal, FIRST(X) = {X}.
-2. If X → Y₁Y₂...Yₖ, add each a ∈ FIRST(Yᵢ) not including ε, then if all Y₁ through Yₖ can derive ε, add ε.
-3. If X → ε, add ε.
+2. If X â†’ Yâ‚Yâ‚‚...Yâ‚–, add each a âˆˆ FIRST(Yáµ¢) not including Îµ, then if all Yâ‚ through Yâ‚– can derive Îµ, add Îµ.
+3. If X â†’ Îµ, add Îµ.
 
 The FOLLOW set of a nonterminal A, denoted FOLLOW(A), is the set of terminals that can appear immediately to the right of A in some sentential form. Computation rules:
 
-1. $ ∈ FOLLOW(S) where S is the start symbol.
-2. If A → αBβ, add FIRST(β) \ {ε} to FOLLOW(B).
-3. If A → αB or A → αBβ where ε ∈ FIRST(β), add FOLLOW(A) to FOLLOW(B).
+1. $ âˆˆ FOLLOW(S) where S is the start symbol.
+2. If A â†’ Î±BÎ², add FIRST(Î²) \ {Îµ} to FOLLOW(B).
+3. If A â†’ Î±B or A â†’ Î±BÎ² where Îµ âˆˆ FIRST(Î²), add FOLLOW(A) to FOLLOW(B).
 
 ### LL(1) Parsing
 
-An LL(1) parser reads input left-to-right, produces a leftmost derivation, and uses one token of lookahead. A grammar is LL(1) if for every pair of productions A → α | β, the following conditions hold:
+An LL(1) parser reads input left-to-right, produces a leftmost derivation, and uses one token of lookahead. A grammar is LL(1) if for every pair of productions A â†’ Î± | Î², the following conditions hold:
 
-1. FIRST(α) ∩ FIRST(β) = ∅.
-2. At most one of α and β can derive ε.
-3. If β ⇒* ε, then FIRST(α) ∩ FOLLOW(A) = ∅ (and vice versa).
+> **One-Sentence Takeaway:** LL(1) parsing is deterministic â€” the next token alone decides which production to apply, with no backtracking needed.
+
+1. FIRST(Î±) âˆ© FIRST(Î²) = âˆ….
+2. At most one of Î± and Î² can derive Îµ.
+3. If Î² â‡’* Îµ, then FIRST(Î±) âˆ© FOLLOW(A) = âˆ… (and vice versa).
 
 The LL(1) parsing table is a two-dimensional array M[A, a] where A is a nonterminal and a is a terminal. Entry M[A, a] contains the production to use when the top of the stack is A and the current input symbol is a.
 
@@ -90,20 +123,46 @@ Recursive-descent parsing implements each nonterminal as a procedure that examin
 Consider the grammar:
 
 ```
-E  → TE'
-E' → +TE' | ε
-T  → FT'
-T' → *FT' | ε
-F  → (E) | id
+E  â†’ TE'
+E' â†’ +TE' | Îµ
+T  â†’ FT'
+T' â†’ *FT' | Îµ
+F  â†’ (E) | id
 ```
 
-Compute FIRST(E) = {(, id}, FIRST(E') = {+, ε}, FIRST(T) = {(, id}, FIRST(T') = {*, ε}, FIRST(F) = {(, id}.
+Compute FIRST(E) = {(, id}, FIRST(E') = {+, Îµ}, FIRST(T) = {(, id}, FIRST(T') = {*, Îµ}, FIRST(F) = {(, id}.
 
 Compute FOLLOW(E) = {$, )}, FOLLOW(E') = {$, )}, FOLLOW(T) = {+, $, )}, FOLLOW(T') = {+, $, )}, FOLLOW(F) = {*, +, $, )}.
 
-Construct table M. For production E → TE', fill M[E, (] and M[E, id]. For E' → +TE', fill M[E', +]. For E' → ε, fill M[E', $] and M[E', )].
+Construct table M. For production E â†’ TE', fill M[E, (] and M[E, id]. For E' â†’ +TE', fill M[E', +]. For E' â†’ Îµ, fill M[E', $] and M[E', )].
 
 The table has no conflicts, confirming the grammar is LL(1). Given input `id + id * id $`, the parser proceeds through a sequence of stack configurations until the stack is empty.
+
+### Concept Comparison
+
+| Grammar Type | Parsing Method | Lookahead | Table Size |
+|-------------|----------------|-----------|------------|
+| LL(1) | Predictive / table-driven | 1 token | Nonterminals Ã— terminals |
+| LL(k) | Predictive with k lookahead | k tokens | Nonterminals Ã— terminal^k |
+| Recursive Descent | Procedure per nonterminal | 1 token (if LL(1)) | No explicit table |
+
+### Quick Reference
+
+| Concept | Formula / Rule | Purpose |
+|---------|---------------|---------|
+| Left Recursion Elimination | A â†’ AÎ±\|Î² â‡’ A â†’ Î²A', A' â†’ Î±A'\|Îµ | Enables predictive parsing |
+| Left Factoring | A â†’ Î±Î²â‚\|Î±Î²â‚‚ â‡’ A â†’ Î±A', A' â†’ Î²â‚\|Î²â‚‚ | Delays choice to single lookahead |
+| FIRST(Î±) | Set of terminals beginning strings from Î± | Determines which production to apply |
+| FOLLOW(A) | Set of terminals after A in sentential forms | Handles Îµ-productions |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Language Design | Designing unambiguous syntax | Prevents parser conflicts |
+| Systems Programming | Config file parsers (JSON, YAML) | Recursive descent is widely used |
+| Web Development | Template engine parsing | Must handle nested constructs |
+| Tooling | Code formatters, AST-based refactoring tools | Parse trees enable structural transformations |
 
 ## Summary
 
@@ -120,19 +179,44 @@ Top-down parsing constructs a leftmost derivation guided by the current input to
 
 ### Application Problems
 
-1. Eliminate left recursion from the following grammar: `A → Aa | Ab | c | d`.
-2. Left factor the grammar: `S → iEtS | iEtSeS | a`. What is the purpose of left factoring?
+1. Eliminate left recursion from the following grammar: `A â†’ Aa | Ab | c | d`.
+2. Left factor the grammar: `S â†’ iEtS | iEtSeS | a`. What is the purpose of left factoring?
 3. Compute FIRST and FOLLOW for all nonterminals in the grammar:
-   `S → aBDh  B → cC  C → bC | ε  D → EF  E → g | ε  F → f | ε`
+   `S â†’ aBDh  B â†’ cC  C â†’ bC | Îµ  D â†’ EF  E â†’ g | Îµ  F â†’ f | Îµ`
 4. Construct the LL(1) parsing table for the expression grammar above and parse `id + id * id`.
 
 ### Challenge Problem
 
 1. Implement a recursive-descent parser in your chosen language for a grammar that recognizes simple assignment statements:
    ```
-   assign → id = expr
-   expr   → term { (+|-) term }
-   term   → factor { (*|/) factor }
-   factor → id | number | ( expr )
+   assign â†’ id = expr
+   expr   â†’ term { (+|-) term }
+   term   â†’ factor { (*|/) factor }
+   factor â†’ id | number | ( expr )
    ```
-   The parser should report syntax errors with meaningful messages and show the parse tree structure as a parenthesized expression. Test it on valid and invalid inputs.
+    The parser should report syntax errors with meaningful messages and show the parse tree structure as a parenthesized expression. Test it on valid and invalid inputs.
+
+### Chapter Quiz
+
+1. Which condition must hold for a grammar to be LL(1)?
+   - A) It must be left-recursive
+   - B) FIRST sets of alternative productions for the same nonterminal must be disjoint
+   - C) It must use at least 3 tokens of lookahead
+   - D) All nonterminals must derive Îµ
+
+2. What is the purpose of left factoring?
+   - A) To eliminate Îµ-productions from the grammar
+   - B) To delay the parsing decision until sufficient lookahead is available
+   - C) To convert the grammar to Chomsky normal form
+   - D) To reduce the number of nonterminals
+
+3. In recursive-descent parsing, what does each nonterminal correspond to?
+   - A) A parsing table entry
+   - B) A procedure or function in the implementation
+   - C) A regular expression
+   - D) A token category
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

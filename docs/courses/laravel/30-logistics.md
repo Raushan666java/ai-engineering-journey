@@ -1,4 +1,4 @@
-﻿# Chapter 30: Logistics & Supply Chain Agents
+# Chapter 30: Logistics & Supply Chain Agents
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![Logistics Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/30-logistics.png)
+![Logistics Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/30-logistics.png)
 
 
 ### 30.1 Logistics Data Models

@@ -14,7 +14,7 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
-![Sets Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/01-sets.png)
+![Sets Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/01-sets.png)
 
 ### 1.1 Definition of a Set
 
@@ -27,10 +27,10 @@ or by a set-builder (predicate) notation:
 $$B = \{x \mid x \in \mathbb{N},\; x \text{ is even},\; x \leq 20\}$$
 
 Standard number sets:
-- $\mathbb{N} = \{0, 1, 2, 3, \ldots\}$ — natural numbers
-- $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$ — integers
-- $\mathbb{Q} = \{a/b \mid a, b \in \mathbb{Z},\; b \neq 0\}$ — rational numbers
-- $\mathbb{R}$ — real numbers
+- $\mathbb{N} = \{0, 1, 2, 3, \ldots\}$ â€” natural numbers
+- $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$ â€” integers
+- $\mathbb{Q} = \{a/b \mid a, b \in \mathbb{Z},\; b \neq 0\}$ â€” rational numbers
+- $\mathbb{R}$ â€” real numbers
 
 The **empty set** $\emptyset$ (or $\{\}$) contains no elements. The **universal set** $U$ is the set of all elements under consideration in a given context.
 
@@ -56,7 +56,7 @@ $$\mathcal{P}(S) = \{T \mid T \subseteq S\}$$
 
 **Theorem 1.3.** If $|S| = n$, then $|\mathcal{P}(S)| = 2^n$.
 
-*Proof.* Each element of $S$ may either be in a given subset or not — two choices per element, independently, yielding $2^n$ subsets.
+*Proof.* Each element of $S$ may either be in a given subset or not â€” two choices per element, independently, yielding $2^n$ subsets.
 
 ### 1.5 Set Operations
 

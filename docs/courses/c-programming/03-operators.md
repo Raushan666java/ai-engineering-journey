@@ -8,7 +8,7 @@
 - Use the ternary conditional operator
 - Avoid common pitfalls with assignment and equality
 
-![C Operators: Categories, Precedence, and Common Pitfalls](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-03-operators.png)
+![C Operators: Categories, Precedence, and Common Pitfalls](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-03-operators.png)
 
 ## 3.1 Classification of Operators
 
@@ -32,7 +32,7 @@ printf("a + b = %d\n", a + b);   /* 19 */
 printf("a - b = %d\n", a - b);   /* 11 */
 printf("a * b = %d\n", a * b);   /* 60 */
 printf("a / b = %d\n", a / b);   /* 3  (integer division truncates) */
-printf("a %% b = %d\n", a % b);  /* 3  (modulus — remainder) */
+printf("a %% b = %d\n", a % b);  /* 3  (modulus â€” remainder) */
 ```
 
 **Important rules:**
@@ -44,8 +44,8 @@ printf("a %% b = %d\n", a % b);  /* 3  (modulus — remainder) */
 **Floating-point division:**
 ```c
 double x = 7.0 / 3.0;     /* 2.333333 */
-double y = 7 / 3;         /* 2.0 — integer division first, then conversion */
-double z = (double)7 / 3;  /* 2.333333 — explicit cast */
+double y = 7 / 3;         /* 2.0 â€” integer division first, then conversion */
+double z = (double)7 / 3;  /* 2.333333 â€” explicit cast */
 ```
 
 ### 3.2.1 Increment and Decrement
@@ -103,7 +103,7 @@ printf("%d\n", a != b);   /* 1 */
 
 **Common mistake:** Using `=` instead of `==`:
 ```c
-if (x = 5)   /* assigns 5 to x, then evaluates 5 (true) — ALWAYS true! */
+if (x = 5)   /* assigns 5 to x, then evaluates 5 (true) â€” ALWAYS true! */
 if (x == 5)  /* correct: compares x to 5 */
 ```
 
@@ -111,9 +111,9 @@ if (x == 5)  /* correct: compares x to 5 */
 
 | Operator | Meaning | Example |
 |----------|---------|---------|
-| `&&` | Logical AND — true if both operands are true | `(a > 0 && b > 0)` |
-| `||` | Logical OR — true if at least one operand is true | `(a > 0 || b > 0)` |
-| `!` | Logical NOT — inverts truth value | `!(a > 0)` |
+| `&&` | Logical AND â€” true if both operands are true | `(a > 0 && b > 0)` |
+| `||` | Logical OR â€” true if at least one operand is true | `(a > 0 || b > 0)` |
+| `!` | Logical NOT â€” inverts truth value | `!(a > 0)` |
 
 **Short-circuit evaluation:**
 
@@ -223,7 +223,7 @@ int main(void)
 }
 ```
 
-**Ternary operators can be nested (use sparingly — readability suffers):**
+**Ternary operators can be nested (use sparingly â€” readability suffers):**
 ```c
 int largest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
 ```
@@ -253,8 +253,8 @@ When multiple operators appear in an expression, precedence determines the order
 **When in doubt, use parentheses:**
 
 ```c
-int x = 5 + 3 * 4;        /* 17 — multiplication first */
-int y = (5 + 3) * 4;      /* 32 — parentheses override */
+int x = 5 + 3 * 4;        /* 17 â€” multiplication first */
+int y = (5 + 3) * 4;      /* 32 â€” parentheses override */
 ```
 
 ## 3.9 The Comma Operator
@@ -278,7 +278,7 @@ Commonly used in `for` loops to initialize or update multiple variables.
 size_t s1 = sizeof(int);         /* type */
 int x;
 size_t s2 = sizeof x;            /* variable */
-size_t s3 = sizeof(x + 1);       /* expression — not evaluated */
+size_t s3 = sizeof(x + 1);       /* expression â€” not evaluated */
 ```
 
 ## Summary
@@ -312,4 +312,4 @@ size_t s3 = sizeof(x + 1);       /* expression — not evaluated */
 
 ### Challenge Problem
 
-Write a program that reverses the bits of an 8-bit unsigned integer. For example, `0b11001010` (202) becomes `0b01010011` (83). Do not use arrays — use only bitwise operators and loops. Print both the original and reversed values in hexadecimal and binary.
+Write a program that reverses the bits of an 8-bit unsigned integer. For example, `0b11001010` (202) becomes `0b01010011` (83). Do not use arrays â€” use only bitwise operators and loops. Print both the original and reversed values in hexadecimal and binary.

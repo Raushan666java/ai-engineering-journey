@@ -1,4 +1,6 @@
-﻿# Chapter 3: Cloud Compute Services
+# Chapter 3: Cloud Compute Services
+
+> **Previous:** [Chapter 2: Virtualization](./02-virtualization.md) | **Next:** [Chapter 4: Cloud Storage Services](./04-cloud-storage.md)
 
 ## Learning Objectives
 
@@ -11,6 +13,28 @@ After completing this chapter, students will be able to:
 5. Configure persistent block storage and instance-store volumes.
 6. Design high-availability architectures using placement groups and availability zones.
 7. Deploy and configure multi-layer load balancing solutions.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| VM Models | EC2, Azure VMs, GCE — same concept, different implementations | Choose provider by integrated services, not VM features |
+| Instance Families | General purpose, Compute, Memory, Storage, GPU | Match instance type to workload profile |
+| Pricing Models | On-Demand, Spot, Reserved, Dedicated | Mix models to optimize cost: baseline → Reserved, spikes → On-Demand, batch → Spot |
+| Scaling | Auto Scaling Groups, Scale Sets, MIGs | Horizontal scaling is the cloud-native approach |
+| Storage Types | Ephemeral (instance store) vs Persistent (EBS/PD) | Never store critical data on ephemeral volumes |
+| Load Balancing | L4 (network) vs L7 (application) | Use L7 for HTTP apps, L4 for ultra-low latency |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[VM Model Overview] --> B[Instance Families]
+    B --> C[Pricing Models]
+    C --> D[Storage Options]
+    D --> E[Scaling & HA]
+    E --> F[Load Balancing]
+```
 
 ## Theory
 
@@ -41,7 +65,7 @@ Providers organize instances into families optimized for different workloads. Na
 - **Storage Optimized:** Focused on high-throughput, low-latency local NVMe storage. Suited for NoSQL databases and data warehousing.
 - **Accelerated Computing:** Equipped with GPUs (NVIDIA) or TPUs (GCP) for machine learning, 3D rendering, and financial modeling.
 
-![Cloud Compute Instances](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch03-compute-instances.png)
+![Cloud Compute Instances](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch03-compute-instances.png)
 
 ### 3.4 Lifecycle and Pricing Models
 
@@ -105,6 +129,78 @@ aws autoscaling put-scaling-policy \
   --policy-type TargetTrackingScaling \
   --target-tracking-configuration "{\"TargetValue\": 50.0, \"PredefinedMetricSpecification\": {\"PredefinedMetricType\": \"ASGAverageCPUUtilization\"}}"
 ```
+
+> **One-Sentence Takeaway:** Cloud compute is about matching the right instance family, pricing model, and scaling strategy to your workload — the cheapest instance is the one you don't leave running idle.
+
+> **Pro Tip:** For cost optimization, always start with Reserved Instances (or Savings Plans) for baseline capacity and use Spot Instances for fault-tolerant batch workloads. This combination can reduce compute costs by 50-70%.
+
+> **Warning:** Spot/Preemptible instances can be terminated with as little as 30 seconds notice. Never use them for stateful workloads, databases, or any application that cannot handle sudden interruptions.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| On-Demand | Pay per hour/second, no commitment | Maximum flexibility, highest cost | Unpredictable workloads |
+| Spot/Preemptible | Spare capacity at discount | Up to 90% off, can be terminated | Batch processing, stateless |
+| Reserved/CUD | 1-3 year commitment | 40-60% discount | Baseline, predictable capacity |
+| Dedicated Host | Physical server for single tenant | Compliance, BYOL licensing | Regulated industries |
+| Instance Store | Local physical storage | High IOPS, data lost on stop | Cache, temp data |
+| EBS/Persistent Disk | Network-attached block storage | Survives instance terminations | Databases, boot volumes |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **Instance Families** | General, Compute, Memory, Storage, GPU | Choose by workload profile |
+| **Pricing Tiers** | On-Demand, Spot, Reserved, Dedicated | Mix for optimal cost |
+| **Scaling** | Horizontal (more instances) vs Vertical (bigger instance) | Horizontal is more resilient |
+| **Load Balancer Types** | L4 (TCP/UDP), L7 (HTTP/HTTPS) | L7 supports path-based routing |
+| **HA Patterns** | Multi-AZ, Auto Scaling, Health Checks | Design for failure from day one |
+
+## Cross-Application Matrix
+
+| Technique | Cloud Architecture | DevOps | Security | Enterprise |
+|-----------|-------------------|--------|----------|------------|
+| Auto Scaling | Elastic workload management | Immutable deployments | DDoS absorption | Cost-efficient capacity |
+| Spot Instances | Cost optimization | CI/CD worker nodes | Disposable build agents | Batch processing |
+| Reserved Instances | Baseline capacity planning | N/A | N/A | Long-term cost mgmt |
+| Load Balancing | HA architecture | Blue-green deployment | TLS termination | Global traffic distribution |
+| Instance Families | Workload matching | Dev/test environments | Isolated GPU/Compute | Database provisioning |
+
+## Chapter Quiz
+
+1. Which pricing model offers the deepest discount but carries the highest risk of interruption?
+   - A) On-Demand
+   - B) Reserved Instances
+   - C) Spot/Preemptible Instances
+   - D) Dedicated Hosts
+
+<details>
+<summary>Answer</summary>
+**C) Spot/Preemptible Instances.** These use spare cloud capacity at up to 90% discount but can be reclaimed by the provider with minimal notice (30 seconds to 2 minutes). They're ideal for fault-tolerant, stateless workloads.
+</details>
+
+2. What is the primary difference between an Application Load Balancer (L7) and a Network Load Balancer (L4)?
+   - A) L7 is faster than L4
+   - B) L7 inspects HTTP headers for intelligent routing; L4 routes by IP and port only
+   - C) L4 is more expensive
+   - D) L7 only works with AWS
+
+<details>
+<summary>Answer</summary>
+**B) L7 inspects HTTP headers for intelligent routing; L4 routes by IP and port only.** L7 load balancers can route based on URL path, host header, cookies, and HTTP methods. L4 load balancers offer lower latency and are protocol-agnostic.
+</details>
+
+3. A company runs a critical database 24/7 on a cloud VM. Which storage type should they use?
+   - A) Instance Store (ephemeral)
+   - B) Persistent Block Storage (EBS/Azure Disk/Persistent Disk)
+   - C) Temporary Disk
+   - D) RAM disk
+
+<details>
+<summary>Answer</summary>
+**B) Persistent Block Storage.** Instance store data is lost when the VM stops or terminates. Persistent block storage survives VM lifecycle events and supports snapshots, replication, and independent resizing — essential for databases.
+</details>
 
 ## Summary
 

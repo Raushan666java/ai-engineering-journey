@@ -1,8 +1,8 @@
-# GATE CS Mock Test 6 — Full-Length Practice Paper
+# GATE CS Mock Test 6 â€” Full-Length Practice Paper
 
 ## Exam Instructions
 
-![Mock Test 6 Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/20-mock-test-6.png)
+![Mock Test 6 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/20-mock-test-6.png)
 
 **Total Marks:** 100  
 **Duration:** 3 Hours  
@@ -12,18 +12,18 @@
 
 | Questions | Type | Marks | Negative Marking |
 |-----------|------|-------|-----------------|
-| Q1–Q10 (GA) | MCQ | 1 each | −1/3 |
-| Q11–Q15 (GA) | MCQ | 2 each | −2/3 |
-| Q16–Q20 (Math) | MCQ | 1 each | −1/3 |
-| Q21–Q25 (Math) | MCQ | 2 each | −2/3 |
-| Q26–Q45 (Technical) | MCQ | 1 each | −1/3 |
-| Q46–Q55 (Technical) | MCQ | 2 each | −2/3 |
+| Q1â€“Q10 (GA) | MCQ | 1 each | âˆ’1/3 |
+| Q11â€“Q15 (GA) | MCQ | 2 each | âˆ’2/3 |
+| Q16â€“Q20 (Math) | MCQ | 1 each | âˆ’1/3 |
+| Q21â€“Q25 (Math) | MCQ | 2 each | âˆ’2/3 |
+| Q26â€“Q45 (Technical) | MCQ | 1 each | âˆ’1/3 |
+| Q46â€“Q55 (Technical) | MCQ | 2 each | âˆ’2/3 |
 
 **Difficulty:** Moderate
 
 ---
 
-## Section A: General Aptitude (Questions 1–15)
+## Section A: General Aptitude (Questions 1â€“15)
 
 **Q1 (1 Mark):** Select the word that is OPPOSITE in meaning to "SANGUINE":
 
@@ -34,12 +34,12 @@
 
 ---
 
-**Q2 (1 Mark):** A man saves 15% of his monthly income. If his monthly expenditure is ₹42,500, what is his total monthly income?
+**Q2 (1 Mark):** A man saves 15% of his monthly income. If his monthly expenditure is â‚¹42,500, what is his total monthly income?
 
-(A) ₹48,000
-(B) ₹50,000
-(C) ₹52,000
-(D) ₹55,000
+(A) â‚¹48,000
+(B) â‚¹50,000
+(C) â‚¹52,000
+(D) â‚¹55,000
 
 ---
 
@@ -109,7 +109,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q10 (1 Mark):** What is the unit digit of 239 × 347 × 456 × 578?
+**Q10 (1 Mark):** What is the unit digit of 239 Ã— 347 Ã— 456 Ã— 578?
 
 (A) 0
 (B) 2
@@ -154,7 +154,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q15 (2 Marks):** A shopkeeper bought 80 kg of rice at ₹40/kg and 40 kg at ₹55/kg. He mixed them and sold at ₹54/kg. Profit percentage?
+**Q15 (2 Marks):** A shopkeeper bought 80 kg of rice at â‚¹40/kg and 40 kg at â‚¹55/kg. He mixed them and sold at â‚¹54/kg. Profit percentage?
 
 (A) 12%
 (B) 15%
@@ -163,9 +163,9 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-## Section B: Engineering Mathematics (Questions 16–25)
+## Section B: Engineering Mathematics (Questions 16â€“25)
 
-**Q16 (1 Mark):** For matrix A = [[2, 1], [1, 2]], compute A².
+**Q16 (1 Mark):** For matrix A = [[2, 1], [1, 2]], compute AÂ².
 
 (A) [[5, 4], [4, 5]]
 (B) [[4, 2], [2, 4]]
@@ -183,7 +183,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q18 (1 Mark):** Evaluate lim_{x→0} (eˣ − 1 − x) / x².
+**Q18 (1 Mark):** Evaluate lim_{xâ†’0} (eË£ âˆ’ 1 âˆ’ x) / xÂ².
 
 (A) 0
 (B) 1/2
@@ -192,7 +192,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q19 (1 Mark):** If P(A) = 0.6, P(B) = 0.3, and A and B are independent, find P(A ∩ B).
+**Q19 (1 Mark):** If P(A) = 0.6, P(B) = 0.3, and A and B are independent, find P(A âˆ© B).
 
 (A) 0.12
 (B) 0.18
@@ -237,7 +237,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q24 (2 Marks):** The number of distinct Hamiltonian cycles in an undirected complete graph K₇ is:
+**Q24 (2 Marks):** The number of distinct Hamiltonian cycles in an undirected complete graph Kâ‚‡ is:
 
 (A) 360
 (B) 720
@@ -246,16 +246,16 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q25 (2 Marks):** Solve the recurrence T(n) = 3T(n/3) + n². The asymptotic complexity is:
+**Q25 (2 Marks):** Solve the recurrence T(n) = 3T(n/3) + nÂ². The asymptotic complexity is:
 
-(A) O(n²)
-(B) O(n² log n)
+(A) O(nÂ²)
+(B) O(nÂ² log n)
 (C) O(n log n)
-(D) O(n³)
+(D) O(nÂ³)
 
 ---
 
-## Section C: Technical Subjects (Questions 26–55)
+## Section C: Technical Subjects (Questions 26â€“55)
 
 **Q26 (1 Mark) [DS&A]:** Which data structure is optimal for implementing a deque (double-ended queue)?
 
@@ -293,7 +293,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q30 (1 Mark) [TOC]:** The language L = {aⁿbᵐ | n > m ≥ 0} is:
+**Q30 (1 Mark) [TOC]:** The language L = {aâ¿báµ | n > m â‰¥ 0} is:
 
 (A) Regular
 (B) Context-free but not regular
@@ -325,7 +325,7 @@ Which conclusion(s) logically follow(s)?
 (A) 1 ns
 (B) 10 ns
 (C) 100 ns
-(D) 1 μs
+(D) 1 Î¼s
 
 ---
 
@@ -401,7 +401,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q42 (1 Mark) [DS&A]:** Which divide-and-conquer sorting algorithm has O(n²) worst-case time complexity?
+**Q42 (1 Mark) [DS&A]:** Which divide-and-conquer sorting algorithm has O(nÂ²) worst-case time complexity?
 
 (A) Merge Sort
 (B) Quick Sort
@@ -455,7 +455,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q48 (2 Marks) [CN]:** If the generator polynomial is x³ + x + 1 and the dataword is 110101, what is the transmitted codeword in CRC?
+**Q48 (2 Marks) [CN]:** If the generator polynomial is xÂ³ + x + 1 and the dataword is 110101, what is the transmitted codeword in CRC?
 
 (A) 110101011
 (B) 110101100
@@ -464,7 +464,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q49 (2 Marks) [DBMS]:** R(A, B, C, D, E) with functional dependencies: AB → C, C → D, D → B, D → E. The candidate keys are:
+**Q49 (2 Marks) [DBMS]:** R(A, B, C, D, E) with functional dependencies: AB â†’ C, C â†’ D, D â†’ B, D â†’ E. The candidate keys are:
 
 (A) AB only
 (B) AB and AC only
@@ -473,7 +473,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q50 (2 Marks) [TOC]:** How many steps are needed in a leftmost derivation of the string "aabb" from grammar S → aSb | ε?
+**Q50 (2 Marks) [TOC]:** How many steps are needed in a leftmost derivation of the string "aabb" from grammar S â†’ aSb | Îµ?
 
 (A) 2
 (B) 3
@@ -491,7 +491,7 @@ Which conclusion(s) logically follow(s)?
 
 ---
 
-**Q52 (2 Marks) [DL]:** The 8-bit 2's complement representation of the decimal number −45 is:
+**Q52 (2 Marks) [DL]:** The 8-bit 2's complement representation of the decimal number âˆ’45 is:
 
 (A) 11010011
 (B) 10101101
@@ -549,53 +549,53 @@ Which conclusion(s) logically follow(s)?
 
 **Q1:** Sanguine means cheerfully optimistic. The word that means the opposite is pessimistic.
 
-**Q2:** Let income = x. Expenditure = 85% of x = 0.85x = ₹42,500. Therefore x = 42,500/0.85 = ₹50,000.
+**Q2:** Let income = x. Expenditure = 85% of x = 0.85x = â‚¹42,500. Therefore x = 42,500/0.85 = â‚¹50,000.
 
 **Q3:** "taller" is the correct comparative form of "tall". Using "more taller" is a double comparative, which is grammatically incorrect. The correct sentence is "He is taller than his brother."
 
-**Q4:** Using set theory: |C ∪ F| = |C| + |F| − |C ∩ F| = 80 + 70 − 30 = 120. Number liking neither = 150 − 120 = 30.
+**Q4:** Using set theory: |C âˆª F| = |C| + |F| âˆ’ |C âˆ© F| = 80 + 70 âˆ’ 30 = 120. Number liking neither = 150 âˆ’ 120 = 30.
 
 **Q5:** All roses are flowers means the set of roses is a subset of flowers. Some flowers fade quickly does not guarantee that any rose is among those fading flowers (Conclusion I fails). However, since roses exist and all roses are flowers, it follows that some flowers are roses (Conclusion II follows). Only II follows.
 
-**Q6:** The sequence consists of squares of consecutive odd numbers: 1² = 1, 3² = 9, 5² = 25, 7² = 49, 9² = 81, 11² = 121.
+**Q6:** The sequence consists of squares of consecutive odd numbers: 1Â² = 1, 3Â² = 9, 5Â² = 25, 7Â² = 49, 9Â² = 81, 11Â² = 121.
 
-**Q7:** Each letter is shifted backward by 3 positions in the alphabet: T→Q, I→F, G→D, E→B, R→O (Caesar cipher with shift −3). Applying the same to LION: L→I, I→F, O→L, N→K, giving IFLK.
+**Q7:** Each letter is shifted backward by 3 positions in the alphabet: Tâ†’Q, Iâ†’F, Gâ†’D, Eâ†’B, Râ†’O (Caesar cipher with shift âˆ’3). Applying the same to LION: Lâ†’I, Iâ†’F, Oâ†’L, Nâ†’K, giving IFLK.
 
-**Q8:** Net east-west displacement = 10 − 2 = 8 km east. North displacement = 6 km. Distance from start = √(8² + 6²) = √(64 + 36) = √100 = 10 km.
+**Q8:** Net east-west displacement = 10 âˆ’ 2 = 8 km east. North displacement = 6 km. Distance from start = âˆš(8Â² + 6Â²) = âˆš(64 + 36) = âˆš100 = 10 km.
 
 **Q9:** Comparing codes 1 and 2, "well" appears in both with code "ne". In code 2, "well done" = "ne ka", so "done" = "ka". Code 3 is a distractor.
 
-**Q10:** Unit digits: 239→9, 347→7, 456→6, 578→8. 9×7=63 (unit 3), 3×6=18 (unit 8), 8×8=64 (unit 4). The unit digit of the product is 4.
+**Q10:** Unit digits: 239â†’9, 347â†’7, 456â†’6, 578â†’8. 9Ã—7=63 (unit 3), 3Ã—6=18 (unit 8), 8Ã—8=64 (unit 4). The unit digit of the product is 4.
 
-**Q11:** Let ages be 7x and 2x. After 5 years: (7x+5)/(2x+5) = 8/3. Cross-multiply: 3(7x+5) = 8(2x+5) → 21x+15 = 16x+40 → 5x = 25 → x = 5. Father's age = 7×5 = 35 years.
+**Q11:** Let ages be 7x and 2x. After 5 years: (7x+5)/(2x+5) = 8/3. Cross-multiply: 3(7x+5) = 8(2x+5) â†’ 21x+15 = 16x+40 â†’ 5x = 25 â†’ x = 5. Father's age = 7Ã—5 = 35 years.
 
-**Q12:** Pipe fills at rate 1/12 per hour. Leak empties at rate 1/20 per hour. Net fill rate = 1/12 − 1/20 = (5−3)/60 = 2/60 = 1/30 per hour. Time to fill = 30 hours.
+**Q12:** Pipe fills at rate 1/12 per hour. Leak empties at rate 1/20 per hour. Net fill rate = 1/12 âˆ’ 1/20 = (5âˆ’3)/60 = 2/60 = 1/30 per hour. Time to fill = 30 hours.
 
-**Q13:** First 3-digit number divisible by 7: 105 = 15×7. Last: 994 = 142×7. Count = 142 − 15 + 1 = 128.
+**Q13:** First 3-digit number divisible by 7: 105 = 15Ã—7. Last: 994 = 142Ã—7. Count = 142 âˆ’ 15 + 1 = 128.
 
 **Q14:** A runs 200 m at 8 m/s, taking 200/8 = 25 seconds. B has a 20 m head start (runs 180 m) and finishes 5 seconds after A, so B's time = 30 seconds. B's speed = 180/30 = 6 m/s.
 
-**Q15:** Total cost = 80×40 + 40×55 = 3200 + 2200 = ₹5400. Total weight = 120 kg. Revenue = 120×54 = ₹6480. Profit = 6480 − 5400 = ₹1080. Profit percentage = 1080/5400 × 100 = 20%.
+**Q15:** Total cost = 80Ã—40 + 40Ã—55 = 3200 + 2200 = â‚¹5400. Total weight = 120 kg. Revenue = 120Ã—54 = â‚¹6480. Profit = 6480 âˆ’ 5400 = â‚¹1080. Profit percentage = 1080/5400 Ã— 100 = 20%.
 
-**Q16:** A² = [[2,1],[1,2]] × [[2,1],[1,2]] = [[2×2+1×1, 2×1+1×2], [1×2+2×1, 1×1+2×2]] = [[5,4],[4,5]].
+**Q16:** AÂ² = [[2,1],[1,2]] Ã— [[2,1],[1,2]] = [[2Ã—2+1Ã—1, 2Ã—1+1Ã—2], [1Ã—2+2Ã—1, 1Ã—1+2Ã—2]] = [[5,4],[4,5]].
 
-**Q17:** Complete graph Kₙ has C(n,2) = n(n−1)/2 edges. For n=10: 10×9/2 = 45.
+**Q17:** Complete graph Kâ‚™ has C(n,2) = n(nâˆ’1)/2 edges. For n=10: 10Ã—9/2 = 45.
 
-**Q18:** Apply L'Hôpital's rule twice. First derivative: lim (eˣ−1)/(2x). Still 0/0. Second derivative: lim eˣ/2 = 1/2.
+**Q18:** Apply L'HÃ´pital's rule twice. First derivative: lim (eË£âˆ’1)/(2x). Still 0/0. Second derivative: lim eË£/2 = 1/2.
 
-**Q19:** For independent events, P(A∩B) = P(A)×P(B) = 0.6 × 0.3 = 0.18.
+**Q19:** For independent events, P(Aâˆ©B) = P(A)Ã—P(B) = 0.6 Ã— 0.3 = 0.18.
 
-**Q20:** The converse of implication P→Q is Q→P. Given P = "it rains", Q = "ground is wet", the converse is "If the ground is wet, then it rains."
+**Q20:** The converse of implication Pâ†’Q is Qâ†’P. Given P = "it rains", Q = "ground is wet", the converse is "If the ground is wet, then it rains."
 
-**Q21:** For divisibility by 5, last digit must be 0 or 5. Case 1 (last digit 0): arrange first 4 digits from {1,2,3,4,5} → 5×4×3×2 = 120. Case 2 (last digit 5): first digit cannot be 0 → choices = 4×4×3×2 = 96. Total = 120+96 = 216.
+**Q21:** For divisibility by 5, last digit must be 0 or 5. Case 1 (last digit 0): arrange first 4 digits from {1,2,3,4,5} â†’ 5Ã—4Ã—3Ã—2 = 120. Case 2 (last digit 5): first digit cannot be 0 â†’ choices = 4Ã—4Ã—3Ã—2 = 96. Total = 120+96 = 216.
 
 **Q22:** Matrix is upper triangular. Sum of eigenvalues = trace = 1+4+6 = 11.
 
-**Q23:** Total marbles = 12. Total ways to choose 3 = C(12,3) = 220. Favorable ways = 1 red from 3 × 1 blue from 4 × 1 green from 5 = 3×4×5 = 60. Probability = 60/220 = 3/11.
+**Q23:** Total marbles = 12. Total ways to choose 3 = C(12,3) = 220. Favorable ways = 1 red from 3 Ã— 1 blue from 4 Ã— 1 green from 5 = 3Ã—4Ã—5 = 60. Probability = 60/220 = 3/11.
 
-**Q24:** Number of Hamiltonian cycles in Kₙ (undirected) = (n−1)!/2. For n = 7: 6!/2 = 720/2 = 360.
+**Q24:** Number of Hamiltonian cycles in Kâ‚™ (undirected) = (nâˆ’1)!/2. For n = 7: 6!/2 = 720/2 = 360.
 
-**Q25:** By the Master Theorem: a=3, b=3, f(n)=n². log_b a = 1. f(n) = n² = Ω(n^{1+ε}) for ε=1. Check regularity: af(n/b) = 3(n/3)² = n²/3 ≤ cn² for c=1/3 < 1. Case 3 applies, so T(n) = Θ(n²).
+**Q25:** By the Master Theorem: a=3, b=3, f(n)=nÂ². log_b a = 1. f(n) = nÂ² = Î©(n^{1+Îµ}) for Îµ=1. Check regularity: af(n/b) = 3(n/3)Â² = nÂ²/3 â‰¤ cnÂ² for c=1/3 < 1. Case 3 applies, so T(n) = Î˜(nÂ²).
 
 **Q26:** A doubly linked list allows O(1) insertion and deletion at both ends, making it ideal for deque implementation.
 
@@ -603,13 +603,13 @@ Which conclusion(s) logically follow(s)?
 
 **Q28:** STP is a Layer 2 protocol used by switches to prevent broadcast storms by creating a loop-free logical topology.
 
-**Q29:** SELECT (σ), UNION (∪), and CARTESIAN PRODUCT (×) are relational algebra operators. GROUP BY is an SQL clause.
+**Q29:** SELECT (Ïƒ), UNION (âˆª), and CARTESIAN PRODUCT (Ã—) are relational algebra operators. GROUP BY is an SQL clause.
 
 **Q30:** The language requires counting a's and comparing with b's. A PDA can push a's and pop for each b, accepting if stack has at least 1 a at end. This requires unbounded counting, so it is not regular but is context-free.
 
 **Q31:** Loop unrolling (also called loop unwinding) is an optimization that replicates the loop body multiple times to reduce loop control overhead. The others are general optimizations not specific to loops.
 
-**Q32:** (A+B)(A+C) = A·A + A·C + B·A + B·C = A + AC + AB + BC = A(1+C+B) + BC = A + BC.
+**Q32:** (A+B)(A+C) = AÂ·A + AÂ·C + BÂ·A + BÂ·C = A + AC + AB + BC = A(1+C+B) + BC = A + BC.
 
 **Q33:** SRAM typically has access time around 10 ns (much faster than DRAM at ~50-100 ns but slower than registers).
 
@@ -629,7 +629,7 @@ Which conclusion(s) logically follow(s)?
 
 **Q41:** The system bus consists of three sets of lines: data bus, address bus, and control bus, connecting CPU to memory and I/O.
 
-**Q42:** Quick Sort has O(n²) worst-case time when the pivot consistently divides the array into very unequal partitions (e.g., already sorted array with first/last element as pivot).
+**Q42:** Quick Sort has O(nÂ²) worst-case time when the pivot consistently divides the array into very unequal partitions (e.g., already sorted array with first/last element as pivot).
 
 **Q43:** Thrashing occurs when the degree of multiprogramming is so high that the system spends most of its time swapping pages between memory and disk rather than executing processes.
 
@@ -637,22 +637,22 @@ Which conclusion(s) logically follow(s)?
 
 **Q45:** A router operates at the Network layer (Layer 3) and forwards packets between different networks based on IP addresses.
 
-**Q46:** A full binary tree with height h has all levels filled: 2⁰+2¹+...+2ʰ = 2^{h+1}−1 = 2⁶−1 = 63 nodes.
+**Q46:** A full binary tree with height h has all levels filled: 2â°+2Â¹+...+2Ê° = 2^{h+1}âˆ’1 = 2â¶âˆ’1 = 63 nodes.
 
-**Q47:** Need = Max − Allocation: P0=(7,4,3), P1=(1,2,2), P2=(6,0,0), P3=(0,1,0). With Avail=(3,3,2): P1 fits → P1 releases (2,0,0), Avail=(5,3,2). P3 fits → releases (2,1,1), Avail=(7,4,3). P0 fits → releases (0,1,0), Avail=(7,5,3). P2 fits. Safe sequence: P1, P3, P0, P2.
+**Q47:** Need = Max âˆ’ Allocation: P0=(7,4,3), P1=(1,2,2), P2=(6,0,0), P3=(0,1,0). With Avail=(3,3,2): P1 fits â†’ P1 releases (2,0,0), Avail=(5,3,2). P3 fits â†’ releases (2,1,1), Avail=(7,4,3). P0 fits â†’ releases (0,1,0), Avail=(7,5,3). P2 fits. Safe sequence: P1, P3, P0, P2.
 
-**Q48:** Generator polynomial x³+x+1 = 1011. Append 3 zeros to dataword: 110101000. Binary polynomial division: XOR remainder = 001. Codeword = 110101001.
+**Q48:** Generator polynomial xÂ³+x+1 = 1011. Append 3 zeros to dataword: 110101000. Binary polynomial division: XOR remainder = 001. Codeword = 110101001.
 
-**Q49:** AB⁺ = ABCDE (AB→C, C→D, D→B already present, D→E). AC⁺ = ACDEB (C→D, D→B, D→E). AD⁺ = ADBCE (D→B gives AB, then AB→C, then D→E). Since A alone gives A, B alone gives B, D alone gives DEAB but not C, the minimal superkeys are AB, AC, and AD.
+**Q49:** ABâº = ABCDE (ABâ†’C, Câ†’D, Dâ†’B already present, Dâ†’E). ACâº = ACDEB (Câ†’D, Dâ†’B, Dâ†’E). ADâº = ADBCE (Dâ†’B gives AB, then ABâ†’C, then Dâ†’E). Since A alone gives A, B alone gives B, D alone gives DEAB but not C, the minimal superkeys are AB, AC, and AD.
 
-**Q50:** S → aSb → aaSbb → aaεbb = aabb. The leftmost derivation takes exactly 3 steps.
+**Q50:** S â†’ aSb â†’ aaSbb â†’ aaÎµbb = aabb. The leftmost derivation takes exactly 3 steps.
 
-**Q51:** The DFA has 4 states: q₀ (no match), q₁ (ends in "a"), q₂ (ends in "aa"), q₃ (accepting, ends in "abb"). Transitions: from q₃ on 'a' go to q₁, on 'b' go to q₂.
+**Q51:** The DFA has 4 states: qâ‚€ (no match), qâ‚ (ends in "a"), qâ‚‚ (ends in "aa"), qâ‚ƒ (accepting, ends in "abb"). Transitions: from qâ‚ƒ on 'a' go to qâ‚, on 'b' go to qâ‚‚.
 
 **Q52:** +45 = 00101101. 1's complement: 11010010. 2's complement (add 1): 11010011.
 
-**Q53:** L1 miss rate = 20%. L2 miss rate given L1 miss = 15%. AMAT = L1_time + L1_miss_rate × (L2_time + L2_miss_rate × miss_penalty) = 1 + 0.2 × (8 + 0.15 × 80) = 1 + 0.2 × (8 + 12) = 1 + 0.2 × 20 = 1 + 4 = 5.0 ns.
+**Q53:** L1 miss rate = 20%. L2 miss rate given L1 miss = 15%. AMAT = L1_time + L1_miss_rate Ã— (L2_time + L2_miss_rate Ã— miss_penalty) = 1 + 0.2 Ã— (8 + 0.15 Ã— 80) = 1 + 0.2 Ã— (8 + 12) = 1 + 0.2 Ã— 20 = 1 + 4 = 5.0 ns.
 
 **Q54:** From postorder (last element A is root), split inorder into left (D,B,E) and right (F,C,G). From postorder, left subtree root is B (DEB), right subtree root is C (FGC). Recursively: A's left child B with inorder D,B,E gives D left of B, E right of B. A's right child C with inorder F,C,G gives F left of C, G right of C. Preorder: A,B,D,E,C,F,G.
 
-**Q55:** LRU with 3 frames: 7(m→[7]),0(m→[7,0]),1(m→[7,0,1]),2(m→[0,1,2],evict7),0(hit),3(m→[1,2,3],evict1),0(hit→[2,3,0]),4(m→[3,0,4],evict2),2(m→[0,4,2],evict3),3(m→[4,2,3],evict0),0(m→[2,3,0],evict4),3(hit),2(hit),1(m→[3,2,1],evict0),2(hit),0(m→[2,1,0],evict3),1(hit),7(m→[1,0,7],evict2),0(hit),1(hit). Total = 12 faults.
+**Q55:** LRU with 3 frames: 7(mâ†’[7]),0(mâ†’[7,0]),1(mâ†’[7,0,1]),2(mâ†’[0,1,2],evict7),0(hit),3(mâ†’[1,2,3],evict1),0(hitâ†’[2,3,0]),4(mâ†’[3,0,4],evict2),2(mâ†’[0,4,2],evict3),3(mâ†’[4,2,3],evict0),0(mâ†’[2,3,0],evict4),3(hit),2(hit),1(mâ†’[3,2,1],evict0),2(hit),0(mâ†’[2,1,0],evict3),1(hit),7(mâ†’[1,0,7],evict2),0(hit),1(hit). Total = 12 faults.

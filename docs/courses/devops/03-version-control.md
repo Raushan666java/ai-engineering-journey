@@ -4,7 +4,7 @@
 
 ## Learning Objectives
 
-![Git Version Control Workflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch03-git-workflow.png)
+![Git Version Control Workflow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch03-git-workflow.png)
 
 - Explain the importance of version control in the DevOps lifecycle.
 - Master basic Git operations: init, add, commit, push, pull.

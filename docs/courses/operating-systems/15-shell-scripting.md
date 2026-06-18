@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Shell Scripting](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/15-shell-scripting.png)
+![Shell Scripting](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/15-shell-scripting.png)
 
 ### The Shell
 
@@ -25,7 +25,7 @@ Common Unix shells:
 | Shell | Path | Features |
 |-------|------|----------|
 | Bourne (sh) | `/bin/sh` | Original Unix shell, minimal |
-| Bash | `/bin/bash` | Bourne Again SHell — de facto standard, advanced features |
+| Bash | `/bin/bash` | Bourne Again SHell â€” de facto standard, advanced features |
 | Zsh | `/bin/zsh` | Extended Bash, powerful tab-completion, theming |
 | Fish | `/usr/bin/fish` | User-friendly, auto-suggestions, web-based config |
 
@@ -54,7 +54,7 @@ readonly pi=3.14159
 # Environment variables
 export PATH="$PATH:/custom/bin"
 
-# Command substitution — two syntaxes:
+# Command substitution â€” two syntaxes:
 today=$(date +%Y-%m-%d)
 also_today=`date +%Y-%m-%d`    # Legacy syntax
 
@@ -105,7 +105,7 @@ if [ -f "$file" ] && [ -r "$file" ]; then
     echo "File exists and is readable"
 fi
 
-# [[ ]] — extended test (Bash-only, more features)
+# [[ ]] â€” extended test (Bash-only, more features)
 if [[ "$name" == A* ]]; then
     echo "Name starts with A"
 fi
@@ -185,7 +185,7 @@ function error_exit {
 greet "World"
 error_exit "Something went wrong"
 
-# Return values (exit code, 0–255)
+# Return values (exit code, 0â€“255)
 is_even() {
     [ $(( $1 % 2 )) -eq 0 ]
     return $?              # return is optional
@@ -210,16 +210,16 @@ fi
 
 ```bash
 # Output redirection
-command > file      # stdout → file (overwrite)
-command >> file     # stdout → file (append)
-command 2> file     # stderr → file
-command 2>> file    # stderr → file (append)
-command &> file     # stdout + stderr → file (Bash)
+command > file      # stdout â†’ file (overwrite)
+command >> file     # stdout â†’ file (append)
+command 2> file     # stderr â†’ file
+command 2>> file    # stderr â†’ file (append)
+command &> file     # stdout + stderr â†’ file (Bash)
 
 # Input redirection
-command < file      # stdin ← file
+command < file      # stdin â† file
 
-# Here document — inline input
+# Here document â€” inline input
 cat << EOF
 This is a multi-line
 "here document" that
@@ -286,9 +286,9 @@ bg %1
 nohup long_running_command &
 
 # Process groups and sessions
-# Ctrl+C → SIGINT to foreground process group
-# Ctrl+Z → SIGTSTP to foreground process group
-# Ctrl+\ → SIGQUIT with core dump
+# Ctrl+C â†’ SIGINT to foreground process group
+# Ctrl+Z â†’ SIGTSTP to foreground process group
+# Ctrl+\ â†’ SIGQUIT with core dump
 ```
 
 ### Process Substitution (Bash)
@@ -303,7 +303,7 @@ grep "error" <(tail -100 logfile)
 
 ### Text Processing Utilities
 
-#### grep — Pattern Matching
+#### grep â€” Pattern Matching
 
 ```bash
 grep "pattern" file           # Basic search
@@ -319,7 +319,7 @@ grep -B 2 "error" file        # Show 2 lines Before match
 grep -C 1 "error" file        # Show 1 line Context around match
 ```
 
-#### sed — Stream Editor
+#### sed â€” Stream Editor
 
 ```bash
 # Substitution
@@ -331,7 +331,7 @@ sed -i 's/old/new/g' file     # In-place edit
 
 # Line addressing
 sed '3s/old/new/' file        # Only line 3
-sed '10,20s/old/new/' file    # Lines 10–20
+sed '10,20s/old/new/' file    # Lines 10â€“20
 sed '/pattern/s/old/new/' file # Lines matching pattern
 
 # Deletion
@@ -339,10 +339,10 @@ sed '/^#/d' file              # Delete comment lines
 sed '1d' file                 # Delete first line
 
 # Print
-sed -n '5,10p' file           # Print lines 5–10 (no -n = all lines printed)
+sed -n '5,10p' file           # Print lines 5â€“10 (no -n = all lines printed)
 ```
 
-#### awk — Pattern Scanning and Processing
+#### awk â€” Pattern Scanning and Processing
 
 ```bash
 # awk is a programming language for field-oriented text processing
@@ -379,7 +379,7 @@ uniq -d                               # Show only duplicates
 uniq -u                               # Show only unique lines
 
 cut -d: -f1,3 /etc/passwd             # Extract fields 1 and 3
-cut -c1-10 file                       # Extract characters 1–10
+cut -c1-10 file                       # Extract characters 1â€“10
 
 wc -l file                            # Count lines
 wc -w file                            # Count words
@@ -549,7 +549,7 @@ for file in *; do
 
         mkdir -p "$ext_dir"
         cp -n "$file" "$ext_dir/"  # -n = no overwrite
-        echo "Copied $file → $ext_dir/"
+        echo "Copied $file â†’ $ext_dir/"
     fi
 done
 

@@ -16,7 +16,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-![Resilience4j - Circuit Breaker, Retry, Rate Limiter, Bulkhead](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/41-resilience.png)
+![Resilience4j - Circuit Breaker, Retry, Rate Limiter, Bulkhead](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/41-resilience.png)
 
 ### Resilience4j Overview
 

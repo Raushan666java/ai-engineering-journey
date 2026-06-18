@@ -1,4 +1,4 @@
-﻿# Chapter 49: PHP Interview Q&A
+# Chapter 49: PHP Interview Q&A
 
 ---
 
@@ -8,7 +8,7 @@ This chapter covers the most frequently asked PHP interview questions across fun
 
 ## 1. PHP Fundamentals
 
-![PHP Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/49-interview-php.png)
+![PHP Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/49-interview-php.png)
 
 
 ### Q1: What is PHP and how does it differ from JavaScript on the backend?

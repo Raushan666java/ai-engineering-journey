@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Boolean Algebra Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/12-boolean.png)
+![Boolean Algebra Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/12-boolean.png)
 
 After completing this chapter, you will be able to:
 
@@ -109,7 +109,7 @@ x       00 01 11 10
 0        1  0  0  1
 1        1  1  0  1
 ```
-Groups: $z'$ covers $(0,2,4,6)$ — all cells where $z=0$. $xy'$ covers $(4,5)$. Minimal: $F = z' + xy'$.
+Groups: $z'$ covers $(0,2,4,6)$ â€” all cells where $z=0$. $xy'$ covers $(4,5)$. Minimal: $F = z' + xy'$.
 
 **Example 12.3** (K-map for 4 variables). Minimize $F(w,x,y,z) = \sum(0,1,2,4,5,6,8,9,12,13)$.
 

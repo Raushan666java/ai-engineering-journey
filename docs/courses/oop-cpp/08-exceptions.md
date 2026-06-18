@@ -13,7 +13,7 @@ After studying this chapter, students will be able to:
 
 ## 8.1 Traditional Error Handling
 
-![Exception Handling Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/08-exceptions.png)
+![Exception Handling Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/08-exceptions.png)
 
 C-style error handling uses return codes, sentinel values, and `errno`:
 
@@ -52,7 +52,7 @@ int main() {
 When an exception is thrown:
 1. A special exception object is constructed (usually by copy).
 2. Control transfers to the nearest matching `catch` handler.
-3. Stack unwinding begins—all automatic objects between the `throw` and the `catch` are destroyed.
+3. Stack unwinding beginsâ€”all automatic objects between the `throw` and the `catch` are destroyed.
 
 Multiple `catch` clauses are evaluated in order; the first matching type is selected:
 
@@ -150,7 +150,7 @@ void safe_function() noexcept {
 void may_throw() noexcept(false);   // explicit (default for most functions)
 ```
 
-If a `noexcept` function does throw, `std::terminate` is called immediately—no stack unwinding occurs. This makes it unsafe to call throwing code from `noexcept` functions unless you are prepared for program termination.
+If a `noexcept` function does throw, `std::terminate` is called immediatelyâ€”no stack unwinding occurs. This makes it unsafe to call throwing code from `noexcept` functions unless you are prepared for program termination.
 
 `noexcept` is also an operator that evaluates to `true` if an expression is noexcept:
 
@@ -169,17 +169,17 @@ The C++ standard library defines an exception hierarchy rooted at `std::exceptio
 
 ```
 std::exception
-├── std::logic_error
-│   ├── std::invalid_argument
-│   ├── std::domain_error
-│   ├── std::length_error
-│   └── std::out_of_range
-├── std::runtime_error
-│   ├── std::range_error
-│   ├── std::overflow_error
-│   └── std::underflow_error
-└── std::bad_alloc
-    └── std::bad_array_new_length
+â”œâ”€â”€ std::logic_error
+â”‚   â”œâ”€â”€ std::invalid_argument
+â”‚   â”œâ”€â”€ std::domain_error
+â”‚   â”œâ”€â”€ std::length_error
+â”‚   â””â”€â”€ std::out_of_range
+â”œâ”€â”€ std::runtime_error
+â”‚   â”œâ”€â”€ std::range_error
+â”‚   â”œâ”€â”€ std::overflow_error
+â”‚   â””â”€â”€ std::underflow_error
+â””â”€â”€ std::bad_alloc
+    â””â”€â”€ std::bad_array_new_length
 ```
 
 ## 8.7 Custom Exception Classes

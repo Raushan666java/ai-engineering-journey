@@ -1,6 +1,6 @@
 # Chapter 18: Advanced Topics
 
-> **Prerequisites:** [Chapter 17: Randomized Algorithms](./17-randomized.md) — Probabilistic analysis and algorithm design | **Next:** Course Complete
+> **Prerequisites:** [Chapter 17: Randomized Algorithms](./17-randomized.md) â€” Probabilistic analysis and algorithm design | **Next:** Course Complete
 
 ## Learning Objectives
 
@@ -41,7 +41,7 @@ flowchart LR
 
 ## Theory
 
-![Advanced Topics Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch18-advanced.png)
+![Advanced Topics Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch18-advanced.png)
 
 ### 18.1 Online Algorithms
 
@@ -324,7 +324,7 @@ ParallelPrefixSum(A):
 
 <details>
 <summary>Answer</summary>
-B) Rent for B-1 days then buy gives cost 2B-1 when N ≥ B, vs optimal of B, so ratio = 2 - 1/B.
+B) Rent for B-1 days then buy gives cost 2B-1 when N â‰¥ B, vs optimal of B, so ratio = 2 - 1/B.
 </details>
 
 **Q2.** What is the key property of a Bloom filter?
@@ -342,7 +342,7 @@ B) Bloom filters have no false negatives -- if a query returns false, the elemen
 **Q3.** In the work-depth model, what does Brent's theorem state?
 
 - A) W(n) = O(D(n))
-- B) T_P ≤ W/P + D
+- B) T_P â‰¤ W/P + D
 - C) T_P = W * D
 - D) D must equal W
 

@@ -9,7 +9,7 @@
 - Use `void` pointers for type-generic operations
 - Declare and use function pointers
 
-![C Pointers: Fundamentals, Arithmetic, Function Pointers and Pitfalls](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch09-pointers.png)
+![C Pointers: Fundamentals, Arithmetic, Function Pointers and Pitfalls](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch09-pointers.png)
 
 ## 9.1 Pointer Fundamentals
 
@@ -58,7 +58,7 @@ New value of x:      100
 
 ```c
 int *p;       /* p is a pointer to int */
-int* p;       /* same — spacing does not matter */
+int* p;       /* same â€” spacing does not matter */
 int *p, q;    /* p is a pointer to int, q is an int */
 int *p, *q;   /* both p and q are pointers to int */
 ```
@@ -79,7 +79,7 @@ if (p != NULL) {
 }
 ```
 
-Dereferencing a null pointer is undefined behavior — typically a segmentation fault.
+Dereferencing a null pointer is undefined behavior â€” typically a segmentation fault.
 
 ## 9.2 Pointer Arithmetic
 
@@ -294,28 +294,28 @@ x  = 42
 ### Uninitialized Pointer
 ```c
 int *p;
-*p = 42;    /* UNDEFINED — p points to random memory */
+*p = 42;    /* UNDEFINED â€” p points to random memory */
 ```
 
 ### Dangling Pointer
 ```c
 int *p = malloc(sizeof(int));
 free(p);
-*p = 42;    /* UNDEFINED — use-after-free */
+*p = 42;    /* UNDEFINED â€” use-after-free */
 ```
 
 ### Buffer Overflow via Pointer
 ```c
 int arr[5];
 int *p = arr;
-*(p + 10) = 100;    /* UNDEFINED — out of bounds */
+*(p + 10) = 100;    /* UNDEFINED â€” out of bounds */
 ```
 
 ### Leaking Address of Local
 ```c
 int *bad(void) {
     int x = 42;
-    return &x;       /* UNDEFINED — stack frame is gone */
+    return &x;       /* UNDEFINED â€” stack frame is gone */
 }
 ```
 
@@ -324,10 +324,10 @@ int *bad(void) {
 The placement of `const` changes what is immutable:
 
 ```c
-const int *p;       /* pointer to const int — cannot change *p, can change p */
+const int *p;       /* pointer to const int â€” cannot change *p, can change p */
 int const *p;       /* same as above */
-int * const p;      /* const pointer to int — cannot change p, can change *p */
-const int * const p; /* const pointer to const int — cannot change either */
+int * const p;      /* const pointer to int â€” cannot change p, can change *p */
+const int * const p; /* const pointer to const int â€” cannot change either */
 ```
 
 ```c
@@ -335,11 +335,11 @@ int x = 10, y = 20;
 
 const int *p1 = &x;
 p1 = &y;            /* OK */
-/* *p1 = 30; — ERROR: cannot modify through const pointer */
+/* *p1 = 30; â€” ERROR: cannot modify through const pointer */
 
 int * const p2 = &x;
 *p2 = 30;           /* OK */
-/* p2 = &y; — ERROR: cannot change pointer itself */
+/* p2 = &y; â€” ERROR: cannot change pointer itself */
 ```
 
 ## 9.9 Pointers and `const` in Function Parameters
@@ -359,7 +359,7 @@ void print_array(const int *arr, size_t n)
 ## Summary
 
 - A pointer stores a memory address; `&` gets an address, `*` dereferences it.
-- NULL pointers indicate invalidity — always check before dereferencing.
+- NULL pointers indicate invalidity â€” always check before dereferencing.
 - Pointer arithmetic advances by `sizeof(pointed_type)` bytes; only valid within the same array.
 - Arrays decay to pointers to their first element in most contexts.
 - Function pointers enable callbacks and dynamic dispatch.

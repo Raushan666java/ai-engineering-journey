@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Semantic Search & RAG Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/16-search-rag.png)
+![Semantic Search & RAG Pipeline](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/16-search-rag.png)
 
 ### 16.1 Full-Text Search
 
@@ -127,7 +127,7 @@ $articles = Article::select('*')
 
 ### 16.2 Semantic Search Concept
 
-Semantic search understands the *meaning* of a query, not just its keywords. Instead of matching character sequences, it compares numerical representations called **embeddings** — arrays of floating-point numbers produced by a machine learning model.
+Semantic search understands the *meaning* of a query, not just its keywords. Instead of matching character sequences, it compares numerical representations called **embeddings** â€” arrays of floating-point numbers produced by a machine learning model.
 
 Consider this contrast:
 
@@ -139,7 +139,7 @@ Embeddings are computed by models like OpenAI's `text-embedding-3-small` (1536 d
 The primary distance metric is **cosine similarity**:
 
 ```
-cosine_similarity(A, B) = (A · B) / (||A|| * ||B||)
+cosine_similarity(A, B) = (A Â· B) / (||A|| * ||B||)
 ```
 
 Values range from -1 (opposite meaning) to 1 (identical meaning). A threshold of 0.4 to 0.6 typically indicates semantically related content.
@@ -215,9 +215,9 @@ return new class extends Migration
 
 The second argument to `vector()` is the **dimensions**. This must match your embedding model:
 
-- `text-embedding-3-small` → 1536
-- `text-embedding-3-large` → 3072
-- `intfloat/e5-mistral-7b-instruct` → 4096
+- `text-embedding-3-small` â†’ 1536
+- `text-embedding-3-large` â†’ 3072
+- `intfloat/e5-mistral-7b-instruct` â†’ 4096
 
 For performance at scale, add an HNSW (Hierarchical Navigable Small World) index:
 
@@ -250,8 +250,8 @@ return new class extends Migration
 
 The HNSW index parameters balance build time against query accuracy:
 
-- `ef_construction=200` — Higher values improve index quality at build time
-- `m=16` — Maximum number of connections per element; higher = more accurate but larger index
+- `ef_construction=200` â€” Higher values improve index quality at build time
+- `m=16` â€” Maximum number of connections per element; higher = more accurate but larger index
 
 ### 16.4 Generating Embeddings
 
@@ -455,15 +455,15 @@ class SemanticSearchController extends Controller
 The `whereVectorSimilarTo` method accepts either a plain string (auto-embedded) or an explicit embedding array:
 
 ```php
-// Auto-embedding — pass a plain string
+// Auto-embedding â€” pass a plain string
 Document::whereVectorSimilarTo('content_embedding', 'How do I install Laravel?', minSimilarity: 0.4);
 
-// Explicit embedding — pre-compute and pass the array
+// Explicit embedding â€” pre-compute and pass the array
 $embedding = Str::of($query)->toEmbeddings();
 Document::whereVectorSimilarTo('content_embedding', $embedding, minSimilarity: 0.4);
 ```
 
-When you pass a string, the framework calls the configured embedding model under the hood. When you pass an array, it uses it directly — useful when you've already embedded the query for other purposes.
+When you pass a string, the framework calls the configured embedding model under the hood. When you pass an array, it uses it directly â€” useful when you've already embedded the query for other purposes.
 
 The generated SQL uses the `<=>` distance operator (cosine distance) with the HNSW index:
 
@@ -547,7 +547,7 @@ This pattern is computationally efficient: the vector search runs in O(log n) wi
 
 Laravel Scout provides a unified interface for full-text search across multiple engines including the database engine, Meilisearch, Typesense, and Algolia.
 
-**Database Engine** — No external service required. Uses your existing database's full-text capabilities:
+**Database Engine** â€” No external service required. Uses your existing database's full-text capabilities:
 
 ```php
 <?php
@@ -620,7 +620,7 @@ class Product extends Model
 
 Retrieval-Augmented Generation (RAG) combines retrieval (search) with generation (LLM). Here are three common patterns:
 
-**Pattern 1: Full-text + Reranking** — Fast keyword retrieval refined by semantic reranking. Best for documentation and knowledge bases:
+**Pattern 1: Full-text + Reranking** â€” Fast keyword retrieval refined by semantic reranking. Best for documentation and knowledge bases:
 
 ```php
 <?php
@@ -653,7 +653,7 @@ class RagFullTextController extends Controller
 }
 ```
 
-**Pattern 2: Vector Search + Traditional Filters** — Semantic search scoped by traditional database filters. Best for multi-tenant or categorized content:
+**Pattern 2: Vector Search + Traditional Filters** â€” Semantic search scoped by traditional database filters. Best for multi-tenant or categorized content:
 
 ```php
 <?php
@@ -687,7 +687,7 @@ class RagFilteredController extends Controller
 }
 ```
 
-**Pattern 3: Hybrid Search** — Combines full-text and vector results with score normalization. Best for general-purpose search:
+**Pattern 3: Hybrid Search** â€” Combines full-text and vector results with score normalization. Best for general-purpose search:
 
 ```php
 <?php

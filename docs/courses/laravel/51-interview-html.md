@@ -1,4 +1,4 @@
-﻿# HTML Interview Q&A
+# HTML Interview Q&A
 
 This chapter covers the most frequently asked HTML interview questions, organized by topic. Each question includes a detailed answer with valid HTML5 examples. Mastering these questions will prepare you for front-end, full-stack, and Laravel-focused interviews where deep HTML knowledge is expected.
 
@@ -6,7 +6,7 @@ This chapter covers the most frequently asked HTML interview questions, organize
 
 ## HTML5 Semantic Markup
 
-![HTML Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/51-interview-html.png)
+![HTML Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/51-interview-html.png)
 
 
 ### Q1: What is the difference between semantic and non-semantic HTML elements?

@@ -14,7 +14,7 @@
 
 ## Theory
 
-![CDN DNS Edge Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/15-cdn-dns-edge.png)
+![CDN DNS Edge Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/15-cdn-dns-edge.png)
 
 ### 1. DNS Hierarchy
 
@@ -32,15 +32,15 @@ The Domain Name System (DNS) is a hierarchical, distributed naming system that r
 
 ```
 Client (stub resolver)
-  → Recursive resolver (e.g., 8.8.8.8)
-    → Root server (gets .com TLD referral)
-    → TLD server (gets example.com authoritative referral)
-    → Authoritative server (returns A record: 93.184.216.34)
-  → Returns IP to client
+  â†’ Recursive resolver (e.g., 8.8.8.8)
+    â†’ Root server (gets .com TLD referral)
+    â†’ TLD server (gets example.com authoritative referral)
+    â†’ Authoritative server (returns A record: 93.184.216.34)
+  â†’ Returns IP to client
 ```
 
 **Step-by-step**:
-1. Application calls `getaddrinfo("api.example.com", ...)` — the stub resolver (OS library) sends a UDP query (port 53) to the configured recursive resolver
+1. Application calls `getaddrinfo("api.example.com", ...)` â€” the stub resolver (OS library) sends a UDP query (port 53) to the configured recursive resolver
 2. Recursive resolver checks its cache; on miss, sends query to a root server (built-in root hints file)
 3. Root server responds with NS records for .com TLD, plus glue A records for those NS IPs
 4. Resolver queries .com TLD server, which returns NS records for example.com
@@ -55,7 +55,7 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 
 **OS cache (stub resolver cache)**: Windows caches positive results for 86400s (1 day) by default, negative results for 300s (5 min). Linux glibc nscd or systemd-resolved provides nameserver caching. Accessible via `ipconfig /displaydns` on Windows.
 
-**Resolver cache**: Recursive resolvers cache aggressively (typically full TTL). Google Public DNS respects TTL but has a minimum of 10 seconds. ISPs may ignore TTL (a practice called "TTL overrides") to reduce upstream load — problematic for fast failover.
+**Resolver cache**: Recursive resolvers cache aggressively (typically full TTL). Google Public DNS respects TTL but has a minimum of 10 seconds. ISPs may ignore TTL (a practice called "TTL overrides") to reduce upstream load â€” problematic for fast failover.
 
 **Negative caching**: NXDOMAIN results (domain doesn't exist) and NODATA (domain exists but record type missing) are cached per RFC 2308. SOA minimum TTL field controls negative cache duration, typically 300-3600 seconds.
 
@@ -74,26 +74,26 @@ Each delegation step involves potential UDP (default, 512 bytes) or TCP fallback
 |-------|-----------------------------------|----------------------------------------|
 | A     | IPv4 address mapping              | 93.184.216.34                          |
 | AAAA  | IPv6 address mapping              | 2606:2800:220:1:248:1893:25c8:1946    |
-| CNAME | Canonical name (alias)            | www → example.com                      |
+| CNAME | Canonical name (alias)            | www â†’ example.com                      |
 | MX    | Mail exchange                     | priority 10 mail.example.com           |
 | NS    | Nameserver delegation             | ns1.example.com                        |
 | TXT   | Arbitrary text                    | SPF, DKIM, DMARC, verification tokens  |
 | SRV   | Service location                  | priority weight port target            |
 | SOA   | Start of authority                | Primary NS, admin email, serial, refresh, retry, expire, minimum |
 
-**CNAME caveat**: A CNAME record cannot coexist with any other record type at the same name. The apex domain (example.com) cannot be a CNAME — use ALIAS/ANAME records (provided by some DNS providers) that resolve at the authoritative server level.
+**CNAME caveat**: A CNAME record cannot coexist with any other record type at the same name. The apex domain (example.com) cannot be a CNAME â€” use ALIAS/ANAME records (provided by some DNS providers) that resolve at the authoritative server level.
 
 ### 5. DNS-Based Load Balancing
 
-**Round-robin DNS**: Multiple A records for one name returned in rotating order. Simple but stateless — does not consider server health or load. If one server fails, clients with cached results still connect to it.
+**Round-robin DNS**: Multiple A records for one name returned in rotating order. Simple but stateless â€” does not consider server health or load. If one server fails, clients with cached results still connect to it.
 
 ```
-api.example.com  →  10.0.0.1 (TTL=60)
+api.example.com  â†’  10.0.0.1 (TTL=60)
                    10.0.0.2 (TTL=60)
                    10.0.0.3 (TTL=60)
 ```
 
-**Weighted round-robin**: Associate weights with each IP. A weight-3 server gets 3× the traffic of a weight-1 server. Used for gradual traffic migration during deployments.
+**Weighted round-robin**: Associate weights with each IP. A weight-3 server gets 3Ã— the traffic of a weight-1 server. Used for gradual traffic migration during deployments.
 
 **Geo-based DNS**: Return different IPs based on the resolver's geographic location (GeoIP database). Direct US users to us-east servers, EU users to eu-west. Imprecise because resolver location may differ from client location (especially with public resolvers like 8.8.8.8).
 
@@ -120,8 +120,8 @@ A Content Delivery Network (CDN) caches content at edge Points of Presence (PoPs
 **Pull zone (origin pull)**: Edge fetches content on first user request, caches it, serves subsequent requests. Simplest setup. Cold-start latency on first request per object.
 
 ```
-User → PoP (miss) → Origin → PoP caches → User
-User → PoP (hit)  → User
+User â†’ PoP (miss) â†’ Origin â†’ PoP caches â†’ User
+User â†’ PoP (hit)  â†’ User
 ```
 
 **Push zone**: Content is proactively uploaded to edge nodes. Used for large files (videos, software downloads) where pull latency is unacceptable. Requires pre-provisioning storage on edge.
@@ -140,7 +140,7 @@ User → PoP (hit)  → User
 | no-store       | Do not cache at all                              |
 | must-revalidate| Origin must validate stale content               |
 
-**ETag**: An opaque entity tag (typically a content hash) sent by the origin. Conditional request: `If-None-Match: "abc123"` → origin returns 304 Not Modified if content unchanged, saving bandwidth.
+**ETag**: An opaque entity tag (typically a content hash) sent by the origin. Conditional request: `If-None-Match: "abc123"` â†’ origin returns 304 Not Modified if content unchanged, saving bandwidth.
 
 **Last-Modified**: Timestamp of last change. Conditional: `If-Modified-Since: Wed, 21 Oct 2023 07:28:00 GMT`.
 
@@ -172,13 +172,13 @@ Key parameters: `w` (width), `h` (height), `q` (quality), `f` (format), `fit` (c
 
 ### 11. Origin Shielding
 
-Without shielding, a cache miss for a popular object triggers N concurrent origin requests from N different edge PoPs — a thundering herd on the origin. Origin shielding designates a single intermediate shield layer:
+Without shielding, a cache miss for a popular object triggers N concurrent origin requests from N different edge PoPs â€” a thundering herd on the origin. Origin shielding designates a single intermediate shield layer:
 
 ```
-User → Edge PoP (miss) → Shield PoP (miss) → Origin
-                              ↓
+User â†’ Edge PoP (miss) â†’ Shield PoP (miss) â†’ Origin
+                              â†“
                         Shield caches
-User2 → Edge PoP (miss) → Shield PoP (hit) → User2
+User2 â†’ Edge PoP (miss) â†’ Shield PoP (hit) â†’ User2
 ```
 
 Only one edge node (the shield) ever contacts the origin per object. Subsequent misses from other PoPs fetch from the shield.
@@ -201,7 +201,7 @@ Only one edge node (the shield) ever contacts the origin per object. Subsequent 
 
 **Lambda@Edge**: AWS Lambda functions triggered by CloudFront events (viewer request, origin request, viewer response, origin response). Use cases: rewrite URLs, A/B testing, authentication (JWT validation at edge), header normalization, redirects. Execution limited to 5 seconds, 128 MB, Node.js/Python.
 
-**Cloudflare Workers**: V8 isolates (not containers) running JavaScript/WASM. Sub-millisecond cold starts, 50-100μs processing overhead per request. Globally distributed every request runs on the nearest of 330+ PoPs. KV storage (eventually consistent, global). Durable Objects (strongly consistent, single-location).
+**Cloudflare Workers**: V8 isolates (not containers) running JavaScript/WASM. Sub-millisecond cold starts, 50-100Î¼s processing overhead per request. Globally distributed every request runs on the nearest of 330+ PoPs. KV storage (eventually consistent, global). Durable Objects (strongly consistent, single-location).
 
 **EdgeKV**: Distributed key-value storage at edge. Cloudflare Workers KV (eventually consistent, 1s-60s propagation), AWS EdgeKV (via Lambda@Edge + DynamoDB global tables). Use cases: feature flags, configuration, A/B test assignments, redirect maps, JWT public keys.
 
@@ -209,13 +209,13 @@ Only one edge node (the shield) ever contacts the origin per object. Subsequent 
 
 | Use Case                 | Edge Compute | Traditional Origin |
 |--------------------------|-------------|-------------------|
-| URL rewriting/redirect   | ✓ Near-zero latency | Higher latency |
-| A/B split testing        | ✓ Cookie-based split | Session-based |
-| Authentication (JWT)     | ✓ Validate at edge   | Centralized |
-| Image optimization       | ✓ On-the-fly transform | Pre-processing pipeline |
-| Personalization          | ✓ Cookie/header based | Full-page rendering |
-| Heavy aggregation queries| ✗ Resource limits    | ✓ Full compute |
-| Database transactions    | ✗ No local DB        | ✓ Full ACID   |
+| URL rewriting/redirect   | âœ“ Near-zero latency | Higher latency |
+| A/B split testing        | âœ“ Cookie-based split | Session-based |
+| Authentication (JWT)     | âœ“ Validate at edge   | Centralized |
+| Image optimization       | âœ“ On-the-fly transform | Pre-processing pipeline |
+| Personalization          | âœ“ Cookie/header based | Full-page rendering |
+| Heavy aggregation queries| âœ— Resource limits    | âœ“ Full compute |
+| Database transactions    | âœ— No local DB        | âœ“ Full ACID   |
 
 ---
 
@@ -235,7 +235,7 @@ dig +trace www.github.com
 #         github.com.  A 140.82.121.3
 ```
 
-The resolver walked 4 hops (root → .com TLD → github.com authoritative → answer) in approximately 120ms. With warm cache, subsequent lookups complete in <1ms.
+The resolver walked 4 hops (root â†’ .com TLD â†’ github.com authoritative â†’ answer) in approximately 120ms. With warm cache, subsequent lookups complete in <1ms.
 
 ### Example 2: Anycast DDoS Absorption
 
@@ -243,10 +243,10 @@ Cloudflare's architecture uses anycast to distribute a 2 Tbps DDoS attack across
 
 ```
 Attack: 2 Tbps UDP amplification targeting 1.2.3.4
-→ BGP distributes to 330+ PoPs worldwide
-→ Each PoP absorbs ~6 Gbps of attack traffic
-→ Rate limiting and packet filtering at each PoP
-→ Clean traffic (legitimate user requests) forwarded to origin
+â†’ BGP distributes to 330+ PoPs worldwide
+â†’ Each PoP absorbs ~6 Gbps of attack traffic
+â†’ Rate limiting and packet filtering at each PoP
+â†’ Clean traffic (legitimate user requests) forwarded to origin
 ```
 
 Without anycast, the single origin data center would need 2 Tbps of scrubbing capacity.
@@ -296,13 +296,13 @@ async function handleRequest(request) {
 }
 ```
 
-This worker runs in 330+ locations globally. JWT verification completes in ~200μs per request, adding no perceptible latency.
+This worker runs in 330+ locations globally. JWT verification completes in ~200Î¼s per request, adding no perceptible latency.
 
 ---
 
 ## Summary
 
-- DNS hierarchy has 4 levels: root, TLD, authoritative, recursive resolver — each delegation step is a query from resolver to nameserver
+- DNS hierarchy has 4 levels: root, TLD, authoritative, recursive resolver â€” each delegation step is a query from resolver to nameserver
 - DNS caching occurs at 4 layers (browser, OS, resolver, app) with TTL controlling refresh frequency
 - Round-robin DNS is simple but health-unaware; latency-based routing (Route53 LBR) is more sophisticated
 - Anycast routing (same IP from multiple locations via BGP) provides automatic DDoS absorption and latency reduction

@@ -1,4 +1,6 @@
-﻿# Chapter 4: Cloud Storage Services
+# Chapter 4: Cloud Storage Services
+
+> **Previous:** [Chapter 3: Cloud Compute Services](./03-cloud-compute.md) | **Next:** [Chapter 5: Cloud Database Services](./05-cloud-database.md)
 
 ## Learning Objectives
 
@@ -12,6 +14,30 @@ After completing this chapter, students will be able to:
 6. Evaluate data durability and availability through replication strategies.
 7. Design content delivery strategies using global CDN services.
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Object Storage | S3, Blob, GCS — infinite scale via HTTP | Best for static files, backups, data lakes |
+| Block Storage | EBS, Disk, PD — raw volumes for VMs | Best for databases, OS boot volumes |
+| File Storage | EFS, Azure Files, Filestore — shared NFS/SMB | Best for multi-VM shared access |
+| Storage Tiers | Hot, Cool, Archive | Automate tier transitions for cost savings |
+| Lifecycle Policies | Auto-move data between tiers | Essential for cost management at scale |
+| CDN | Edge caching for global performance | Cuts latency, reduces origin load |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Storage Taxonomy] --> B[Object Storage]
+    A --> C[Block Storage]
+    A --> D[File Storage]
+    B --> E[Lifecycle Policies]
+    D --> E
+    C --> F[Performance Tiers]
+    E --> G[CDN & Distribution]
+```
+
 ## Theory
 
 ### 4.1 Taxonomy of Cloud Storage
@@ -22,7 +48,7 @@ Cloud providers offer three primary categories of storage, each optimized for di
 2. **Block Storage:** Provides raw storage volumes that can be formatted with a filesystem. Low latency, high throughput, attached to a single VM (mostly). Ideal for databases and OS boot volumes.
 3. **File Storage:** Provides managed file shares accessible via standard network protocols (NFS/SMB). Supports concurrent access by multiple VMs. Ideal for home directories and shared application data.
 
-![Cloud Storage Types](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cloud-computing/ch04-storage-types.png)
+![Cloud Storage Types](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch04-storage-types.png)
 
 ### 4.2 Object Storage: S3, Blob, and GCS
 
@@ -96,6 +122,78 @@ Mounting an AWS EFS volume:
 ```bash
 sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-01234567.efs.us-east-1.amazonaws.com:/ /mnt/efs
 ```
+
+> **One-Sentence Takeaway:** The three cloud storage models serve fundamentally different purposes — object for scale and durability, block for performance, and file for shared access — and knowing which to use is the key to cost-effective cloud architecture.
+
+> **Pro Tip:** For cost-optimized object storage, set up lifecycle policies on day one — move objects to infrequent access after 30 days and archive after 90. This can reduce storage costs by 80%+ for data with predictable access decay.
+
+> **Warning:** Object storage does not support file locking or POSIX semantics. If your application needs concurrent writes with locking, use block or file storage. Attempting to use object storage for a database will result in data corruption.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Object Storage | HTTP-accessible key-value for files | Infinite scale, eventual consistency | Backups, media, data lakes |
+| Block Storage | Raw volumes formatted with FS | Low latency, single-VM attachment | Databases, boot volumes |
+| File Storage | Network file system (NFS/SMB) | Multi-VM shared access | Shared configs, home dirs |
+| Hot Tier | Frequent access, highest cost | Low latency retrieval | Active data |
+| Cool/IA Tier | Infrequent access, lower cost | 30+ day retrieval | Backups, logs |
+| Archive Tier | Rare access, lowest cost | Minutes to hours retrieval | Compliance archives |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **Object Storage** | S3, Blob, GCS — buckets, keys, tiers | 99.999999999% durability |
+| **Block Storage** | EBS, Disk, PD — IOPS tiers | Provisioned IOPS costs extra |
+| **File Storage** | EFS (NFS), Azure Files (SMB), FSx | Scales with connected clients |
+| **Lifecycle** | Transition, Expiration, Intelligent-Tiering | Automate data tier movement |
+| **CDN** | CloudFront, Azure CDN, Cloud CDN | Edge caching reduces origin load |
+
+## Cross-Application Matrix
+
+| Technique | Cloud Architecture | DevOps | Security | Enterprise |
+|-----------|-------------------|--------|----------|------------|
+| Object Storage | Data lakes, backups | Artifact storage | Encryption at rest | Long-term archives |
+| Block Storage | Database persistence | Dev volumes | Encryption, snapshots | Boot volumes |
+| File Storage | Shared application data | Config management | Access control lists | Home directories |
+| Lifecycle Policies | Cost governance | Log rotation | Compliance data retention | Archive management |
+| CDN | Global distribution | Cache invalidation | DDoS protection | Reduced latency |
+
+## Chapter Quiz
+
+1. What durability guarantee do major cloud providers offer for object storage?
+   - A) 99.99%
+   - B) 99.999999999% (11 nines)
+   - C) 99.9999%
+   - D) 100%
+
+<details>
+<summary>Answer</summary>
+**B) 99.999999999% (11 nines).** Object storage achieves this by automatically replicating data across multiple physical devices and availability zones. For 10 million objects, this means statistically one object might be lost every 10 million years.
+</details>
+
+2. When should you choose File Storage (EFS/Azure Files/Filestore) over attaching Block Storage to each VM?
+   - A) Always — file storage is cheaper
+   - B) When multiple VMs need concurrent read/write access to the same data
+   - C) File storage is faster than block storage
+   - D) When you need a boot volume for VMs
+
+<details>
+<summary>Answer</summary>
+**B) When multiple VMs need concurrent read/write access to the same data.** Block storage can only be attached to one VM at a time. File storage provides shared access via NFS or SMB, making it ideal for shared configuration, home directories, and clustered applications.
+</details>
+
+3. What happens to data stored on an Instance Store volume when the EC2 instance is stopped?
+   - A) Data is automatically saved to S3
+   - B) Data persists until the instance is terminated
+   - C) Data is permanently lost
+   - D) Data is migrated to a new host
+
+<details>
+<summary>Answer</summary>
+**C) Data is permanently lost.** Instance store volumes are physically attached to the host server. When the instance stops, the data on instance store volumes is lost. This is why critical data must always use persistent storage like EBS.
+</details>
 
 ## Summary
 

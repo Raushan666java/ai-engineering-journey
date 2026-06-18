@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Capstone Project Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch18-capstone.png)
+![Capstone Project Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch18-capstone.png)
 
 By the end of this chapter, students will be able to:
 
@@ -17,9 +17,9 @@ By the end of this chapter, students will be able to:
 
 You will build a complete DevOps pipeline for a sample e-commerce application. The application consists of three microservices:
 
-- **Frontend** — React single-page application served by Nginx
-- **API** — Node.js or Go REST API service
-- **Database** — PostgreSQL
+- **Frontend** â€” React single-page application served by Nginx
+- **API** â€” Node.js or Go REST API service
+- **Database** â€” PostgreSQL
 
 The pipeline must automate build, test, security scan, deploy, monitor, and rollback. All infrastructure is provisioned through code. All operations are observable.
 
@@ -30,17 +30,17 @@ The pipeline must automate build, test, security scan, deploy, monitor, and roll
 - Create a GitHub repository with the following directory structure:
 ```
 /
-├── frontend/          # React application
-├── api/               # Node.js or Go API service
-├── infra/             # Terraform configurations
-├── k8s/               # Kubernetes manifests
-├── scripts/           # Automation scripts
-├── .github/           # CI/CD workflows
-│   └── workflows/
-├── docs/              # Documentation
-├── docker-compose.yml # Local development
-├── Makefile           # Development helpers
-└── README.md
+â”œâ”€â”€ frontend/          # React application
+â”œâ”€â”€ api/               # Node.js or Go API service
+â”œâ”€â”€ infra/             # Terraform configurations
+â”œâ”€â”€ k8s/               # Kubernetes manifests
+â”œâ”€â”€ scripts/           # Automation scripts
+â”œâ”€â”€ .github/           # CI/CD workflows
+â”‚   â””â”€â”€ workflows/
+â”œâ”€â”€ docs/              # Documentation
+â”œâ”€â”€ docker-compose.yml # Local development
+â”œâ”€â”€ Makefile           # Development helpers
+â””â”€â”€ README.md
 ```
 
 - Use trunk-based development with short-lived feature branches
@@ -171,9 +171,9 @@ The deployment script:
   - Resource utilization (CPU, memory)
 - Configure Loki for log aggregation with Promtail
 - Set up alert rules:
-  - High error rate (>1% for 5 minutes) → PagerDuty
-  - High latency (p95 > 500ms for 5 minutes) → Slack notification
-  - Pod crash loop → PagerDuty
+  - High error rate (>1% for 5 minutes) â†’ PagerDuty
+  - High latency (p95 > 500ms for 5 minutes) â†’ Slack notification
+  - Pod crash loop â†’ PagerDuty
 
 ### 8. Security Scanning
 
@@ -197,12 +197,12 @@ Integrate the following security tools in the pipeline:
 
 Submit the following:
 
-1. **GitHub Repository** — Complete source code with all configurations
-2. **README.md** — Architecture overview, setup instructions, deployment guide
-3. **Pipeline Documentation** — Description of each stage, triggers, and gates
-4. **Architecture Diagram** — System architecture including network, deployment, and data flow
-5. **Runbook** — Operational procedures for deployment, rollback, incident response, and recovery
-6. **Presentation** — 10-minute recorded walkthrough of the pipeline
+1. **GitHub Repository** â€” Complete source code with all configurations
+2. **README.md** â€” Architecture overview, setup instructions, deployment guide
+3. **Pipeline Documentation** â€” Description of each stage, triggers, and gates
+4. **Architecture Diagram** â€” System architecture including network, deployment, and data flow
+5. **Runbook** â€” Operational procedures for deployment, rollback, incident response, and recovery
+6. **Presentation** â€” 10-minute recorded walkthrough of the pipeline
 
 ## Evaluation Criteria
 
@@ -250,8 +250,8 @@ The capstone project integrates all course topics into a single cohesive system.
 ### Challenge Problem
 
 Extend the capstone system with the following advanced features (choose two):
-1. **Feature flags** — Integrate LaunchDarkly or Unleash to decouple deployment from feature release. Implement a canary release that gradually shifts 1%, 10%, 50%, 100% of traffic to the new version.
-2. **Chaos engineering** — Integrate Chaos Mesh or Litmus to inject faults during the post-deployment monitoring window. Verify that the system degrades gracefully and auto-heals.
-3. **Cost optimization** — Implement a FinOps dashboard showing per-service and per-environment infrastructure costs. Configure automatic scaling policies and spot instance usage for non-critical workloads.
-4. **Multi-cloud** — Deploy the database on a second cloud provider. Implement cross-region failover and replication using streaming replication or change data capture.
-5. **ML/AI integration** — Add a service that uses a machine learning model for recommendation or personalization. Implement model versioning, A/B testing, and automated model retraining in the pipeline.
+1. **Feature flags** â€” Integrate LaunchDarkly or Unleash to decouple deployment from feature release. Implement a canary release that gradually shifts 1%, 10%, 50%, 100% of traffic to the new version.
+2. **Chaos engineering** â€” Integrate Chaos Mesh or Litmus to inject faults during the post-deployment monitoring window. Verify that the system degrades gracefully and auto-heals.
+3. **Cost optimization** â€” Implement a FinOps dashboard showing per-service and per-environment infrastructure costs. Configure automatic scaling policies and spot instance usage for non-critical workloads.
+4. **Multi-cloud** â€” Deploy the database on a second cloud provider. Implement cross-region failover and replication using streaming replication or change data capture.
+5. **ML/AI integration** â€” Add a service that uses a machine learning model for recommendation or personalization. Implement model versioning, A/B testing, and automated model retraining in the pipeline.

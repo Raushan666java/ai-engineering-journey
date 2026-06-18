@@ -4,7 +4,7 @@
 
 ## Learning Objectives
 
-![Continuous Delivery Deployment Strategies](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch09-cd-strategies.png)
+![Continuous Delivery Deployment Strategies](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch09-cd-strategies.png)
 
 - Distinguish between Continuous Delivery (CD) and Continuous Deployment.
 - Understand the importance of the Deployment Pipeline in the software lifecycle.
@@ -71,7 +71,7 @@ Routing a portion of traffic to a new version.
 - Continuous Deployment represents the highest level of DevOps maturity.
 - Deployment strategies like Blue-Green and Canary reduce the risk of introducing bugs to all users at once.
 - Automated rollbacks are essential for maintaining high availability during failed deployments.
-- The goal of CD is to make software releases a "non-event" — routine, reliable, and frequent.
+- The goal of CD is to make software releases a "non-event" â€” routine, reliable, and frequent.
 
 ---
 

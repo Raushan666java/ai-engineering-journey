@@ -10,7 +10,7 @@ By the end of this chapter, students will be able to:
 - Build parameterised decorators (decorator factories)
 - Stack multiple decorators
 
-![Decorator Pattern](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/15-decorators.png)
+![Decorator Pattern](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/15-decorators.png)
 
 ## 15.1 Function Decorators
 
@@ -321,7 +321,7 @@ class Database:
         print("Database instance created")
 
 db1 = Database()  # Database instance created
-db2 = Database()  # no output — reuses instance
+db2 = Database()  # no output â€” reuses instance
 print(db1 is db2)  # True
 ```
 

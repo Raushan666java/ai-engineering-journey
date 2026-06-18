@@ -1,4 +1,4 @@
-﻿# Chapter 46: Real Estate & Property Interview Q&A
+# Chapter 46: Real Estate & Property Interview Q&A
 
 ---
 
@@ -10,7 +10,7 @@ Common interview questions for Laravel developer roles in real estate technology
 
 ## 1. Real Estate Domain Knowledge
 
-![Real Estate Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/46-interview-real-estate.png)
+![Real Estate Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/46-interview-real-estate.png)
 
 
 ### Q1: What are the key entities in a real estate platform data model, and how do they relate?

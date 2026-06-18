@@ -1,8 +1,8 @@
 # Auto-Configuration & Starters
 
-Auto-configuration is Spring Boot's killer feature. It is the mechanism that transforms a bare Spring Framework application — where you must manually declare every bean, every component scan, every property source — into a Spring Boot application that "just works." When you add `spring-boot-starter-web` to your dependencies, Spring Boot automatically configures a `DispatcherServlet`, an embedded Tomcat server, a Jackson `ObjectMapper`, a multipart resolver, error handling, and dozens of other beans. You write zero configuration for any of them.
+Auto-configuration is Spring Boot's killer feature. It is the mechanism that transforms a bare Spring Framework application â€” where you must manually declare every bean, every component scan, every property source â€” into a Spring Boot application that "just works." When you add `spring-boot-starter-web` to your dependencies, Spring Boot automatically configures a `DispatcherServlet`, an embedded Tomcat server, a Jackson `ObjectMapper`, a multipart resolver, error handling, and dozens of other beans. You write zero configuration for any of them.
 
-The key insight is that auto-configuration is **opinionated but overridable**. Spring Boot makes reasonable default choices (Tomcat over Jetty, Jackson over Gson, Logback over Log4j2) but provides clean escape hatches: exclude an auto-configuration class, supply your own bean (which takes priority), or flip a property. This philosophy — "start with sensible defaults, customize only what you need" — is why Spring Boot dominates enterprise Java.
+The key insight is that auto-configuration is **opinionated but overridable**. Spring Boot makes reasonable default choices (Tomcat over Jetty, Jackson over Gson, Logback over Log4j2) but provides clean escape hatches: exclude an auto-configuration class, supply your own bean (which takes priority), or flip a property. This philosophy â€” "start with sensible defaults, customize only what you need" â€” is why Spring Boot dominates enterprise Java.
 
 This chapter covers the complete auto-configuration machinery: how `@EnableAutoConfiguration` works, the `@Conditional` family of annotations that gates auto-configuration beans, how auto-configuration classes are discovered and ordered, how to build custom starters, how configuration properties bind, how metadata is generated, and how to extend the infrastructure with custom failure analysis and environment post-processing.
 
@@ -16,7 +16,7 @@ By the end of this chapter, you will be able to:
 
 - Explain how `@EnableAutoConfiguration` delegates to `AutoConfigurationImportSelector` and loads auto-configuration classes from `spring.factories` and `AutoConfiguration.imports`
 - Use every member of the `@Conditional` family to gate bean definitions on classpath presence, bean presence, property values, resource availability, expression evaluation, cloud platform, JNDI, Java version, single-candidate beans, and war deployment
-- Recognize the major auto-configuration classes — `DataSourceAutoConfiguration`, `JpaRepositoriesAutoConfiguration`, `SecurityAutoConfiguration` — and understand their conditional guards
+- Recognize the major auto-configuration classes â€” `DataSourceAutoConfiguration`, `JpaRepositoriesAutoConfiguration`, `SecurityAutoConfiguration` â€” and understand their conditional guards
 - Distinguish `@AutoConfiguration` from `@Configuration` and understand the Spring Boot 3.x import mechanism
 - Configure auto-configuration ordering with `@AutoConfigureBefore`, `@AutoConfigureAfter`, and `@AutoConfigureOrder`
 - Build a complete custom Spring Boot starter with auto-configuration module, starter module, `@ConfigurationProperties`, conditionals, and metadata
@@ -28,9 +28,9 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## 1. @EnableAutoConfiguration — The Entry Point
+## 1. @EnableAutoConfiguration â€” The Entry Point
 
-![Spring Boot Auto-Configuration Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/11-auto-configuration.png)
+![Spring Boot Auto-Configuration Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/11-auto-configuration.png)
 
 Every Spring Boot application class is annotated with `@SpringBootApplication`, which is a composed annotation that bundles three others:
 
@@ -455,7 +455,7 @@ class CustomLogger {
 
 ### 2.5 @ConditionalOnExpression
 
-`@ConditionalOnExpression` uses a SpEL expression to determine whether a configuration should be activated. This is the most flexible conditional — you can combine multiple conditions, reference other beans, and evaluate complex logic.
+`@ConditionalOnExpression` uses a SpEL expression to determine whether a configuration should be activated. This is the most flexible conditional â€” you can combine multiple conditions, reference other beans, and evaluate complex logic.
 
 ```java
 package com.example.conditionals;
@@ -488,7 +488,7 @@ public class ExpressionConditionalConfig {
         return new ParallelProcessor();
     }
 
-    // Combine multiple conditions — this is equivalent to using
+    // Combine multiple conditions â€” this is equivalent to using
     // @ConditionalOnProperty AND @ConditionalOnExpression together.
     // Spring Boot evaluates ALL conditions in a logical AND.
     @Bean
@@ -669,7 +669,7 @@ class LegacyCompatibilityService {
 
 ### 2.9 @ConditionalOnSingleCandidate
 
-`@ConditionalOnSingleCandidate` activates a configuration when a bean of the specified type exists **and** is a primary/single candidate. This is stricter than `@ConditionalOnBean` — it requires that exactly one bean of that type is available (or that one of them is `@Primary`).
+`@ConditionalOnSingleCandidate` activates a configuration when a bean of the specified type exists **and** is a primary/single candidate. This is stricter than `@ConditionalOnBean` â€” it requires that exactly one bean of that type is available (or that one of them is `@Primary`).
 
 ```java
 package com.example.conditionals;
@@ -736,7 +736,7 @@ public class WarDeploymentConfig {
 
 class JndiDataSourceProvider {
     public String lookupType() {
-        return "WAR deployment — using JNDI datasource";
+        return "WAR deployment â€” using JNDI datasource";
     }
 }
 ```
@@ -785,7 +785,7 @@ class AfternoonGreeter {
 }
 ```
 
-A more practical custom conditional — checking for a specific system property:
+A more practical custom conditional â€” checking for a specific system property:
 
 ```java
 package com.example.conditionals;
@@ -880,7 +880,7 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 
-// These are NOT real implementations — they illustrate the conditional chain
+// These are NOT real implementations â€” they illustrate the conditional chain
 // that Spring Boot uses. The actual sources are in the spring-boot-autoconfigure JAR.
 
 public class AutoConfigurationExamples {
@@ -923,10 +923,10 @@ import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.*;
 
 // Spring Boot evaluates conditions in this order:
-// 1. @ConditionalOnClass (classpath check — fast)
-// 2. @ConditionalOnBean (bean check — requires bean factory)
-// 3. @ConditionalOnProperty (property check — requires environment)
-// 4. @ConditionalOnExpression (SpEL evaluation — slowest)
+// 1. @ConditionalOnClass (classpath check â€” fast)
+// 2. @ConditionalOnBean (bean check â€” requires bean factory)
+// 3. @ConditionalOnProperty (property check â€” requires environment)
+// 4. @ConditionalOnExpression (SpEL evaluation â€” slowest)
 
 @AutoConfiguration
 // Evaluated first: if Hibernate is not on classpath, skip entirely
@@ -942,7 +942,7 @@ public class ConditionalChainExample {
 
 ### 3.4 @AutoConfigureBefore, @AutoConfigureAfter, @AutoConfigureOrder
 
-Auto-configuration classes often need to run in a specific order. For example, `JpaRepositoriesAutoConfiguration` must run after `DataSourceAutoConfiguration`. Ordering is specified with dedicated annotations — not with `@Order`.
+Auto-configuration classes often need to run in a specific order. For example, `JpaRepositoriesAutoConfiguration` must run after `DataSourceAutoConfiguration`. Ordering is specified with dedicated annotations â€” not with `@Order`.
 
 ```java
 package com.example.autoconfigclasses;
@@ -1044,7 +1044,7 @@ public class ListAutoConfigurations {
 
 ## 5. Building a Custom Spring Boot Starter
 
-A Spring Boot starter is a Maven/Gradle module that bundles dependencies and auto-configuration to provide a turnkey experience for a specific technology. The most famous example is `spring-boot-starter-web` — add it and you get a working web server.
+A Spring Boot starter is a Maven/Gradle module that bundles dependencies and auto-configuration to provide a turnkey experience for a specific technology. The most famous example is `spring-boot-starter-web` â€” add it and you get a working web server.
 
 The convention is to use two modules:
 
@@ -1156,7 +1156,7 @@ public class GreetingService {
             case FORMAL -> String.format("Good day, %s %s.",
                     properties.getTitles().getMale(), name);
             case CASUAL -> String.format(properties.getTemplate(), name);
-            case FESTIVE -> String.format("Welcome, magnificent %s! ✨", name);
+            case FESTIVE -> String.format("Welcome, magnificent %s! âœ¨", name);
         };
     }
 
@@ -1430,7 +1430,7 @@ public class MailConfiguration {
 
 ### 6.3 Relaxed Binding
 
-Spring Boot uses **relaxed binding** — property keys can use various naming conventions and Spring Boot will bind them correctly. This is critical because environment variables (which cannot contain dots or dashes) must map cleanly to property names.
+Spring Boot uses **relaxed binding** â€” property keys can use various naming conventions and Spring Boot will bind them correctly. This is critical because environment variables (which cannot contain dots or dashes) must map cleanly to property names.
 
 | Property source | Example |
 |----------------|---------|
@@ -1556,19 +1556,19 @@ public class ServerProperties {
 ```
 
 Valid duration formats:
-- `5s` — 5 seconds
-- `5000ms` — 5000 milliseconds
-- `1m` — 1 minute
-- `2h` — 2 hours
-- `1d` — 1 day
-- `PT10S` — ISO-8601 format (10 seconds)
+- `5s` â€” 5 seconds
+- `5000ms` â€” 5000 milliseconds
+- `1m` â€” 1 minute
+- `2h` â€” 2 hours
+- `1d` â€” 1 day
+- `PT10S` â€” ISO-8601 format (10 seconds)
 
 Valid data size formats:
-- `10B` — 10 bytes
-- `10KB` — 10 kilobytes
-- `10MB` — 10 megabytes
-- `10GB` — 10 gigabytes
-- `10TB` — 10 terabytes
+- `10B` â€” 10 bytes
+- `10KB` â€” 10 kilobytes
+- `10MB` â€” 10 megabytes
+- `10GB` â€” 10 gigabytes
+- `10TB` â€” 10 terabytes
 
 ### 6.6 @NestedConfigurationProperty
 
@@ -1982,7 +1982,7 @@ spring.autoconfigure.exclude=\
   org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
 ```
 
-This is useful when you want to exclude a class without modifying the source code — for example, across different deployment profiles.
+This is useful when you want to exclude a class without modifying the source code â€” for example, across different deployment profiles.
 
 ### 8.4 Testing Exclusions
 
@@ -2069,7 +2069,7 @@ public class GreetingFailureAnalyzer implements FailureAnalyzer {
                 ex
             );
         }
-        return null; // Not my exception — pass to next analyzer
+        return null; // Not my exception â€” pass to next analyzer
     }
 
     private String getDescription(GreetingServiceNotFoundException ex) {
@@ -2206,7 +2206,7 @@ public class ExternalConfigEnvironmentPostProcessor implements EnvironmentPostPr
 
             System.out.println("Loaded " + map.size() + " properties from " + EXTERNAL_CONFIG_PATH);
         } catch (Exception e) {
-            // File not found is not an error — just skip
+            // File not found is not an error â€” just skip
             System.out.println("No external config at " + EXTERNAL_CONFIG_PATH + " (" + e.getMessage() + ")");
         }
     }
@@ -2293,13 +2293,13 @@ Spring Boot also supports `@PropertySource` on `@Configuration` classes to impor
 9. Default properties (SpringApplication.setDefaultProperties)
 ```
 
-Note that `EnvironmentPostProcessor` can inject at any position — you can use `addFirst`, `addLast`, `addBefore`, or `addAfter`.
+Note that `EnvironmentPostProcessor` can inject at any position â€” you can use `addFirst`, `addLast`, `addBefore`, or `addAfter`.
 
 ---
 
 ## Summary
 
-Spring Boot's auto-configuration is the mechanism that eliminates boilerplate configuration by providing opinionated, conditionally-applied bean definitions. Understanding this machinery is essential for every Spring Boot developer — not just framework authors.
+Spring Boot's auto-configuration is the mechanism that eliminates boilerplate configuration by providing opinionated, conditionally-applied bean definitions. Understanding this machinery is essential for every Spring Boot developer â€” not just framework authors.
 
 **Key takeaways:**
 
@@ -2352,8 +2352,8 @@ Start a Spring Boot 3.x application with `spring-boot-starter-web` and `spring-b
 **Problem 2: Write Custom Conditionals**
 
 Implement a custom `@ConditionalOnOperatingSystem` annotation that accepts a `name` attribute (`WINDOWS`, `LINUX`, `MAC`). Implement the `Condition` interface to check `System.getProperty("os.name")`. Create two beans:
-- `WindowsSpecificService` — annotated with `@ConditionalOnOperatingSystem(name = "WINDOWS")`
-- `UnixSpecificService` — annotated with `@ConditionalOnOperatingSystem(name = "LINUX")`
+- `WindowsSpecificService` â€” annotated with `@ConditionalOnOperatingSystem(name = "WINDOWS")`
+- `UnixSpecificService` â€” annotated with `@ConditionalOnOperatingSystem(name = "LINUX")`
 
 Verify the correct service is created based on your current operating system.
 
@@ -2374,16 +2374,16 @@ Create a `@ConfigurationProperties` class called `NotificationProperties` with p
 
 Use a nested static class for `Email` and `Credentials`. Add `@Validated` and `@jakarta.validation.constraints` annotations to enforce the constraints. Provide the corresponding `application.properties` with sample values.
 
-**Problem 4: Build a Full Custom Starter — Rate Limiter**
+**Problem 4: Build a Full Custom Starter â€” Rate Limiter**
 
 Build a two-module custom starter that provides a rate-limiting capability:
 
 **Auto-Configuration Module (`ratelimit-spring-boot-autoconfigure`):**
 
-- `RateLimitProperties` — prefix `ratelimit`, properties: `enabled` (boolean, default true), `default-limit` (int, default 100), `default-window` (Duration, default 1m), `strategies` (Map<String, StrategyConfig>).
-- `StrategyConfig` — nested class with `limit` (int) and `window` (Duration).
-- `RateLimiter` — simple token-bucket implementation.
-- `RateLimitAutoConfiguration` — conditionally creates a `RateLimiter` bean with `@ConditionalOnMissingBean` and `@ConditionalOnProperty`.
+- `RateLimitProperties` â€” prefix `ratelimit`, properties: `enabled` (boolean, default true), `default-limit` (int, default 100), `default-window` (Duration, default 1m), `strategies` (Map<String, StrategyConfig>).
+- `StrategyConfig` â€” nested class with `limit` (int) and `window` (Duration).
+- `RateLimiter` â€” simple token-bucket implementation.
+- `RateLimitAutoConfiguration` â€” conditionally creates a `RateLimiter` bean with `@ConditionalOnMissingBean` and `@ConditionalOnProperty`.
 
 **Starter Module (`ratelimit-spring-boot-starter`):**
 
@@ -2396,7 +2396,7 @@ Build a two-module custom starter that provides a rate-limiting capability:
 
 ### Challenge Problems
 
-**Problem 5: Deep Dive — Override Auto-Configuration with Custom Bean**
+**Problem 5: Deep Dive â€” Override Auto-Configuration with Custom Bean**
 
 Spring Boot's `WebMvcAutoConfiguration` configures a `ContentNegotiationManager` that includes a `PathExtensionContentNegotiationStrategy`. You want to **disable** path-extension content negotiation (e.g., `/users.json` should return JSON, not trigger `.json` content negotiation) and instead use only the `Accept` header.
 

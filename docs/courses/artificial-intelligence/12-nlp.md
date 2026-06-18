@@ -38,7 +38,7 @@ flowchart LR
 
 ## 12.1 Language Models
 
-![Natural Language Processing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch12-nlp.png)
+![Natural Language Processing](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch12-nlp.png)
 
 A **language model** assigns a probability $P(w_1, w_2, \ldots, w_n)$ to a sequence of words. By the chain rule:
 
@@ -117,16 +117,16 @@ The CKY algorithm (Cocke-Kasami-Younger) parses CNF grammars in $O(n^3 |G|)$ tim
 
 ```
 function CKY-PARSE(words, grammar) returns parse table
-    n ← len(words)
-    table ← n × n array of sets
+    n â† len(words)
+    table â† n Ã— n array of sets
     for j = 0 to n-1 do
-        for each rule (A → words[j]) do
-            table[j][j] ← table[j][j] ∪ {A}
+        for each rule (A â†’ words[j]) do
+            table[j][j] â† table[j][j] âˆª {A}
         for i = j-1 down to 0 do
             for k = i to j-1 do
-                for each rule (A → B C) do
-                    if B ∈ table[i][k] and C ∈ table[k+1][j] then
-                        table[i][j] ← table[i][j] ∪ {A}
+                for each rule (A â†’ B C) do
+                    if B âˆˆ table[i][k] and C âˆˆ table[k+1][j] then
+                        table[i][j] â† table[i][j] âˆª {A}
     return table
 ```
 
@@ -154,38 +154,38 @@ Discourse analysis examines how sentences connect to form coherent text. **Disco
 
 **Hugging Face Transformers:** Library providing pre-trained transformer models (BERT, GPT, RoBERTa, T5) with unified interfaces for transfer learning.
 
-> **💡 Pro Tip:** CRFs almost always outperform HMMs for sequence labeling because they model conditional probability P(t|w) directly and can use arbitrary overlapping features. However, CRF training is slower — use HMMs for quick prototypes and CRFs for production.
+> **ðŸ’¡ Pro Tip:** CRFs almost always outperform HMMs for sequence labeling because they model conditional probability P(t|w) directly and can use arbitrary overlapping features. However, CRF training is slower â€” use HMMs for quick prototypes and CRFs for production.
 
 ## Concept Comparison
 
 | Method | Generative/Discriminative? | Features | Complexity | Best For |
 |--------|:---:|:---:|:---:|---------|
 | N-gram LM | Generative | Word counts | O(V^n) | Language modeling |
-| Naive Bayes | Generative | Word features | O(V × C) | Text classification |
-| HMM | Generative | Tag transitions+emissions | O(T n²) | POS tagging |
-| CRF | Discriminative | Arbitrary overlapping | O(T n²) training | NER, shallow parsing |
-| PCFG | Generative | Rule probabilities | O(n³ |G|) | Parsing |
+| Naive Bayes | Generative | Word features | O(V Ã— C) | Text classification |
+| HMM | Generative | Tag transitions+emissions | O(T nÂ²) | POS tagging |
+| CRF | Discriminative | Arbitrary overlapping | O(T nÂ²) training | NER, shallow parsing |
+| PCFG | Generative | Rule probabilities | O(nÂ³ |G|) | Parsing |
 
-## Quick Reference — NLP Metrics
+## Quick Reference â€” NLP Metrics
 
 | Metric | Formula | What It Measures |
 |--------|---------|-----------------|
-| Perplexity | P(w₁…wₙ)^{-1/n} | Language model quality (lower = better) |
+| Perplexity | P(wâ‚â€¦wâ‚™)^{-1/n} | Language model quality (lower = better) |
 | Precision | TP / (TP + FP) | How many selected are relevant |
 | Recall | TP / (TP + FN) | How many relevant are selected |
-| F1 Score | 2 × P × R / (P + R) | Harmonic mean of P and R |
+| F1 Score | 2 Ã— P Ã— R / (P + R) | Harmonic mean of P and R |
 | Tag Accuracy | Correct tags / Total tags | Sequence labeling quality |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| N-gram LMs | ⬜ | ⬜ | ✅ | ✅ |
-| Naive Bayes | ✅ | ✅ | ✅ | ✅ |
-| HMM/Viterbi | ⬜ | ⬜ | ✅ | ✅ |
-| CRF | ⬜ | ⬜ | ✅ | ✅ |
-| CKY Parsing | ⬜ | ⬜ | ✅ | ✅ |
-| Transformers | ✅ | ✅ | ✅ | ✅ |
+| N-gram LMs | â¬œ | â¬œ | âœ… | âœ… |
+| Naive Bayes | âœ… | âœ… | âœ… | âœ… |
+| HMM/Viterbi | â¬œ | â¬œ | âœ… | âœ… |
+| CRF | â¬œ | â¬œ | âœ… | âœ… |
+| CKY Parsing | â¬œ | â¬œ | âœ… | âœ… |
+| Transformers | âœ… | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
@@ -211,7 +211,7 @@ Discourse analysis examines how sentences connect to form coherent text. **Disco
 - C) Kuroda Normal Form
 - D) Backus-Naur Form
 
-<details><summary>Answer</summary>B) CKY parsing requires the CFG to be in Chomsky Normal Form (rules are A → BC or A → w).</details>
+<details><summary>Answer</summary>B) CKY parsing requires the CFG to be in Chomsky Normal Form (rules are A â†’ BC or A â†’ w).</details>
 
 ## 12.9 Summary
 

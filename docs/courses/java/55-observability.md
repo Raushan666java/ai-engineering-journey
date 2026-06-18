@@ -17,41 +17,41 @@ By the end of this chapter, you will be able to:
 
 ## 1. The Observability Stack
 
-![Observability - Micrometer, Prometheus, Grafana](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/55-observability.png)
+![Observability - Micrometer, Prometheus, Grafana](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/55-observability.png)
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    Grafana (Dashboards)                   │
-│  ┌──────────────┐  ┌──────────────┐  ┌───────────────┐  │
-│  │    JVM       │  │  Spring Boot │  │  Business     │  │
-│  │  Dashboard   │  │  Dashboard   │  │  Dashboard    │  │
-│  └──────┬───────┘  └──────┬───────┘  └───────┬───────┘  │
-└─────────┼─────────────────┼──────────────────┼──────────┘
-          │                 │                  │
-┌─────────┴─────────────────┴──────────────────┴──────────┐
-│                     Prometheus (Metrics)                  │
-│  ┌──────────────┐  ┌──────────────┐  ┌───────────────┐  │
-│  │   JVM        │  │  Spring Boot │  │  Custom       │  │
-│  │   Metrics    │  │  Actuator    │  │  Business     │  │
-│  └──────┬───────┘  └──────┬───────┘  └───────┬───────┘  │
-└─────────┼─────────────────┼──────────────────┼──────────┘
-          │                 │                  │
-┌─────────┴─────────────────┴──────────────────┴──────────┐
-│            Spring Boot Application                        │
-│  ┌──────────────────────────────────────────────────┐    │
-│  │  Micrometer  │  Structured Logging  │  Actuator  │    │
-│  │  Metrics     │  (JSON + MDC)       │  Endpoints │    │
-│  └──────────────────────────────────────────────────┘    │
-└──────────────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    Grafana (Dashboards)                   â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+â”‚  â”‚    JVM       â”‚  â”‚  Spring Boot â”‚  â”‚  Business     â”‚  â”‚
+â”‚  â”‚  Dashboard   â”‚  â”‚  Dashboard   â”‚  â”‚  Dashboard    â”‚  â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+          â”‚                 â”‚                  â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                     Prometheus (Metrics)                  â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚
+â”‚  â”‚   JVM        â”‚  â”‚  Spring Boot â”‚  â”‚  Custom       â”‚  â”‚
+â”‚  â”‚   Metrics    â”‚  â”‚  Actuator    â”‚  â”‚  Business     â”‚  â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+          â”‚                 â”‚                  â”‚
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚            Spring Boot Application                        â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”    â”‚
+â”‚  â”‚  Micrometer  â”‚  Structured Logging  â”‚  Actuator  â”‚    â”‚
+â”‚  â”‚  Metrics     â”‚  (JSON + MDC)       â”‚  Endpoints â”‚    â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 1.1 Three Pillars of Observability
 
 | Pillar | Tool | Purpose |
 |--------|------|---------|
-| **Metrics** | Micrometer → Prometheus → Grafana | Numerical measurements over time |
-| **Logging** | Logback → ELK/Loki → Grafana | Discrete events with context |
-| **Tracing** | Micrometer Tracing → Jaeger/Tempo | Request flow across services |
+| **Metrics** | Micrometer â†’ Prometheus â†’ Grafana | Numerical measurements over time |
+| **Logging** | Logback â†’ ELK/Loki â†’ Grafana | Discrete events with context |
+| **Tracing** | Micrometer Tracing â†’ Jaeger/Tempo | Request flow across services |
 
 This chapter covers **Metrics** and **Logging**. Tracing is covered in a dedicated chapter.
 
@@ -461,7 +461,7 @@ public class OrderService {
 
     @Counted(value = "orders.created.counted", extraTags = {"source", "web"})
     public Order createOrder(OrderRequest request) {
-        // Creates an order — counter incremented automatically
+        // Creates an order â€” counter incremented automatically
         return processOrderCreation(request);
     }
 
@@ -475,7 +475,7 @@ public class OrderService {
     @Timed(value = "orders.fulfillment.timed", longTask = true,
            description = "Time to fulfill an order")
     public void fulfillOrder(String orderId) {
-        // Long-running task — shows active tasks count
+        // Long-running task â€” shows active tasks count
         executeFulfillment(orderId);
     }
 
@@ -2030,7 +2030,7 @@ public class StructuredLogger {
 
 ## 7. ELK/Loki Log Aggregation
 
-### 7.1 ELK Stack (Filebeat → Logstash → Elasticsearch → Kibana)
+### 7.1 ELK Stack (Filebeat â†’ Logstash â†’ Elasticsearch â†’ Kibana)
 
 ```yaml
 # docker-compose.elk.yml
@@ -2177,7 +2177,7 @@ output {
 }
 ```
 
-### 7.4 Loki Stack (Promtail → Loki → Grafana)
+### 7.4 Loki Stack (Promtail â†’ Loki â†’ Grafana)
 
 ```yaml
 # docker-compose.loki.yml
@@ -2438,7 +2438,7 @@ public class ServiceLevelIndicators {
 ### 8.3 SLO Burn Rate Alert
 
 ```yaml
-# prometheus-alerts.yml — SLO-based alerting
+# prometheus-alerts.yml â€” SLO-based alerting
 groups:
   - name: slo-alerts
     rules:
@@ -2652,7 +2652,7 @@ receivers:
   - name: 'slack-critical'
     slack_configs:
       - channel: '#critical-alerts'
-        title: '🚨 CRITICAL: {{ .GroupLabels.alertname }}'
+        title: 'ðŸš¨ CRITICAL: {{ .GroupLabels.alertname }}'
         text: '{{ template "slack.text" . }}'
         color: 'danger'
         send_resolved: true
@@ -2660,7 +2660,7 @@ receivers:
   - name: 'slack-warnings'
     slack_configs:
       - channel: '#alerts-warnings'
-        title: '⚠️ WARNING: {{ .GroupLabels.alertname }}'
+        title: 'âš ï¸ WARNING: {{ .GroupLabels.alertname }}'
         text: '{{ template "slack.text" . }}'
         color: 'warning'
 
@@ -2682,7 +2682,7 @@ receivers:
   - name: 'slo-review'
     slack_configs:
       - channel: '#slo-review'
-        title: '📊 SLO Alert: {{ .GroupLabels.alertname }}'
+        title: 'ðŸ“Š SLO Alert: {{ .GroupLabels.alertname }}'
         text: 'SLO violation detected. Review required: {{ .GroupLabels.alertname }}'
         color: '#FFA500'
 

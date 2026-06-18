@@ -9,14 +9,14 @@
 
 ## Theory
 
-![Doubly Linked List Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch04-doubly-linked-list.png)
+![Doubly Linked List Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch04-doubly-linked-list.png)
 
 ### Doubly Linked List
 
 Each node stores pointers to both the next node and the previous node, enabling \( O(1) \) deletion at the tail and bidirectional traversal.
 
 ```
-nullptr ← [prev|data|next] ↔ [prev|data|next] ↔ [prev|data|next] → nullptr
+nullptr â† [prev|data|next] â†” [prev|data|next] â†” [prev|data|next] â†’ nullptr
 ```
 
 **Advantages over singly linked list:**
@@ -32,10 +32,10 @@ The last node points back to the first node (singly circular) or the first node'
 
 ```
 Singly circular:
-head → [A] → [B] → [C] → (back to head)
+head â†’ [A] â†’ [B] â†’ [C] â†’ (back to head)
 
 Doubly circular:
-head ↔ [A] ↔ [B] ↔ [C] ↔ (back to head)
+head â†” [A] â†” [B] â†” [C] â†” (back to head)
 ```
 
 ## Examples
@@ -269,6 +269,87 @@ int main() {
 ```
 1 -> 2 -> 3 -> 4 -> (back to 1)
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **LRU cache is the classic doubly-linked list application**: Pair a DLL with a hash map. The DLL maintains access order; the hash map provides \(O(1)\) lookup. Move accessed nodes to the head to implement "most recently used" ordering.
+- **Circular lists are natural for round-robin**: No end-of-list checks needed â€” when you reach the same node again, you've visited everyone once. Perfect for CPU scheduling and turn-based games.
+- **Bi-directional traversal costs 1 extra pointer**: Doubly linked nodes use 2Ã— the pointer memory of singly linked. For 1 million integers (32-bit), that's 8 MB vs 4 MB extra â€” a small price for \(O(1)\) deletion at arbitrary positions.
+- **Watch for null prev on the head**: In doubly linked list operations, always check if the node is the head before accessing its prev pointer. Dereferencing nullptr is an immediate crash.
+
+## One-Sentence Takeaways
+
+- Doubly linked lists allow \(O(1)\) deletion at both ends and backward traversal.
+- Circular linked lists form a ring; traversal from any node visits all nodes.
+- LRU cache uses a doubly linked list for \(O(1)\) access-order maintenance.
+- Josephus problem is elegantly solved with a circular linked list.
+- XOR linked list reduces pointer overhead but sacrifices readability.
+
+## Concept Comparison Table
+
+| Feature | Singly | Doubly | Circular Singly | Circular Doubly |
+|---------|--------|--------|-----------------|-----------------|
+| Forward traversal | Yes | Yes | Yes (infinite) | Yes (infinite) |
+| Backward traversal | No | Yes | No | Yes |
+| Delete head | \(O(1)\) | \(O(1)\) | \(O(1)\) | \(O(1)\) |
+| Delete tail | \(O(n)\) | \(O(1)\) | \(O(n)\) | \(O(1)\) |
+| Memory per node | 1 pointer | 2 pointers | 1 pointer | 2 pointers |
+| Round-robin support | No | No | Yes | Yes |
+
+## Quick Reference: When to Use Which List
+
+| Requirement | Best Choice |
+|-------------|-------------|
+| Single-pass forward only | Singly linked |
+| Need reverse traversal | Doubly linked |
+| Round-robin / cyclic access | Circular singly |
+| Full flexibility | Circular doubly |
+| Minimize memory | Singly linked |
+| \(O(1)\) tail deletion | Doubly or circular doubly |
+
+## Cross-Application Matrix
+
+| Application | List Type | Why |
+|-------------|-----------|-----|
+| LRU cache | Doubly linked + hash map | \(O(1)\) move-to-front, \(O(1)\) delete-last |
+| CPU scheduler | Circular singly | Round-robin time-slicing |
+| Music playlist repeat | Circular doubly | Cycle through songs, prev/next |
+| Browser history | Doubly linked | Forward/backward navigation |
+| Undo/redo | Stack + doubly linked list | Navigate history in both directions |
+
+## Chapter Quiz
+
+1. **Why can a DLL delete at the tail in \(O(1)\)?**
+   - a) Tail pointer with prev from last node âœ“
+   - b) Binary search
+   - c) Hash table lookup
+   - d) Circular indexing
+
+2. **What is the memory overhead of a doubly linked node vs singly?**
+   - a) Same
+   - b) 1 extra pointer âœ“
+   - c) 2 extra pointers
+   - d) 4 extra pointers
+
+3. **Which application uses a circular linked list naturally?**
+   - a) Stack
+   - b) Round-robin scheduler âœ“
+   - c) Hash table
+   - d) Binary search tree
+
+4. **LRU cache combines a DLL with:**
+   - a) Array
+   - b) Hash map âœ“
+   - c) Stack
+   - d) Priority queue
+
+5. **What field do we check before accessing node->prev?**
+   - a) node->next
+   - b) node == head âœ“
+   - c) node->data
+   - d) tail pointer
+
+**Answers:** 1-a, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

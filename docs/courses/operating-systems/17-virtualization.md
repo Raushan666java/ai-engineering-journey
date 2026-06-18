@@ -12,7 +12,7 @@
 
 ## Theory
 
-![Virtualization](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/17-virtualization.png)
+![Virtualization](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/17-virtualization.png)
 
 ### Virtualization Concepts
 
@@ -20,16 +20,16 @@
 
 ```
 Virtual Machine:
-┌─────────────────────────────────────────────┐
-│  App A    App B          App C    App D      │
-│  Guest OS (Linux)         Guest OS (BSD)     │
-│  Virtual Hardware         Virtual Hardware   │
-│  ──────────────────────────────────────────  │
-│            Hypervisor (VMM)                  │
-│  ──────────────────────────────────────────  │
-│              Physical Hardware               │
-│  (CPU, Memory, Disk, NIC, GPU)              │
-└─────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚  App A    App B          App C    App D      â”‚
+â”‚  Guest OS (Linux)         Guest OS (BSD)     â”‚
+â”‚  Virtual Hardware         Virtual Hardware   â”‚
+â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
+â”‚            Hypervisor (VMM)                  â”‚
+â”‚  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€  â”‚
+â”‚              Physical Hardware               â”‚
+â”‚  (CPU, Memory, Disk, NIC, GPU)              â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 #### Emulation vs Virtualization vs Paravirtualization
@@ -48,19 +48,19 @@ Virtual Machine:
 The hypervisor runs directly on the hardware with no host OS.
 
 ```
-┌──────────────────────────────────────────┐
-│ VM1           VM2           VM3           │
-│ (Linux)       (Windows)     (BSD)         │
-└──────────────┴──────────────┴─────────────┘
-              ┌──────────┐
-              │ Hypervisor│
-              │ (Xen,    │
-              │  VMware  │
-              │  ESXi)   │
-              └─────┬────┘
-              ┌─────┴────┐
-              │ Hardware  │
-              └──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ VM1           VM2           VM3           â”‚
+â”‚ (Linux)       (Windows)     (BSD)         â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚ Hypervisorâ”‚
+              â”‚ (Xen,    â”‚
+              â”‚  VMware  â”‚
+              â”‚  ESXi)   â”‚
+              â””â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜
+              â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+              â”‚ Hardware  â”‚
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Pros**: Minimal overhead, maximum performance, used in data centers.
@@ -71,23 +71,23 @@ The hypervisor runs directly on the hardware with no host OS.
 The hypervisor runs as an application on a host OS.
 
 ```
-┌──────────────────────────────────────────┐
-│ VM1           VM2           VM3           │
-│ (Linux)       (BSD)         (Windows)    │
-└──────────────┴──────────────┴─────────────┘
-              ┌──────────┐
-              │ Hypervisor│
-              │ (VirtualBox, │
-              │  VMware  │
-              │  Workstation)│
-              └─────┬────┘
-              ┌─────┴────┐
-              │  Host OS  │
-              │ (Linux)   │
-              └─────┬────┘
-              ┌─────┴────┐
-              │ Hardware  │
-              └──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ VM1           VM2           VM3           â”‚
+â”‚ (Linux)       (BSD)         (Windows)    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+              â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚ Hypervisorâ”‚
+              â”‚ (VirtualBox, â”‚
+              â”‚  VMware  â”‚
+              â”‚  Workstation)â”‚
+              â””â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜
+              â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+              â”‚  Host OS  â”‚
+              â”‚ (Linux)   â”‚
+              â””â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”˜
+              â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+              â”‚ Hardware  â”‚
+              â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Pros**: Easy to use, coexists with host OS, development-friendly.
@@ -101,10 +101,10 @@ The x86 architecture was not originally designed for virtualization. Some sensit
 
 Ring levels in x86:
 ```
-Ring 0: Kernel mode — most privileged
+Ring 0: Kernel mode â€” most privileged
 Ring 1: Used by hypervisors in some schemes
 Ring 2: (Unused in practice)
-Ring 3: User mode — least privileged
+Ring 3: User mode â€” least privileged
 ```
 
 **Trap-and-emulate**: Run the guest OS in Ring 1. Privileged instructions trigger a trap to the hypervisor (Ring 0), which emulates the operation. This was impossible on older x86 for some instructions.
@@ -115,17 +115,17 @@ Intel VT-x (and AMD-V) added new CPU modes:
 
 ```
 VMX Root Mode (hypervisor):
-  ┌──────────────────────────┐
-  │ Hypervisor (KVM, VMware) │
-  │ Full Ring 0-3 access     │
-  └──────────────────────────┘
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ Hypervisor (KVM, VMware) â”‚
+  â”‚ Full Ring 0-3 access     â”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 VMX Non-Root Mode (guest):
-  ┌──────────────────────────┐
-  │ Guest OS + Applications  │
-  │ Guest thinks it has      │
-  │ Ring 0-3                  │
-  └──────────────────────────┘
+  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+  â”‚ Guest OS + Applications  â”‚
+  â”‚ Guest thinks it has      â”‚
+  â”‚ Ring 0-3                  â”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 When the guest executes a privileged instruction, the CPU automatically **VM-exits** to the hypervisor, which handles it and **VM-enter** resumes the guest.
@@ -140,7 +140,7 @@ struct kvm_vcpu {
     struct kvm *kvm;              // Pointer to parent VM
 };
 
-// ioctl interface — user-space (QEMU) controls VCPUs
+// ioctl interface â€” user-space (QEMU) controls VCPUs
 int kvm_fd = open("/dev/kvm", O_RDWR);
 int vm_fd = ioctl(kvm_fd, KVM_CREATE_VM, 0);
 int vcpu_fd = ioctl(vm_fd, KVM_CREATE_VCPU, 0);
@@ -166,12 +166,12 @@ The hypervisor maintains shadow page tables that map guest virtual addresses dir
 
 ```
 Guest:  Guest Virtual Address (GVA)
-         ↓ Guest page table (guest thinks it maps to guest physical)
+         â†“ Guest page table (guest thinks it maps to guest physical)
          Guest Physical Address (GPA)
-         ↓ Hypervisor intercepts
+         â†“ Hypervisor intercepts
          Host Physical Address (HPA)
 
-Shadow page table: GVA → HPA (direct, maintained by hypervisor)
+Shadow page table: GVA â†’ HPA (direct, maintained by hypervisor)
 ```
 
 **Problem**: Every guest page table modification causes a VM-exit (expensive).
@@ -180,14 +180,14 @@ Shadow page table: GVA → HPA (direct, maintained by hypervisor)
 
 The CPU handles two levels of page tables simultaneously:
 
-- **Guest page table**: GVA → GPA (managed by guest OS)
-- **Extended page table**: GPA → HPA (managed by hypervisor)
+- **Guest page table**: GVA â†’ GPA (managed by guest OS)
+- **Extended page table**: GPA â†’ HPA (managed by hypervisor)
 
-The CPU walks both tables in hardware — no VM-exit needed for page table updates.
+The CPU walks both tables in hardware â€” no VM-exit needed for page table updates.
 
 ```
-GVA → GPA → HPA (single hardware walk)
-       ↑ EPT  ↑
+GVA â†’ GPA â†’ HPA (single hardware walk)
+       â†‘ EPT  â†‘
        (one CPU operation)
 
 Performance: ~10-15x fewer VM-exits than shadow page tables
@@ -197,29 +197,29 @@ Performance: ~10-15x fewer VM-exits than shadow page tables
 
 | Method | Description | Performance |
 |--------|-------------|-------------|
-| **Emulated I/O** | Hypervisor emulates real hardware (e.g., e1000 NIC) | Poor — every I/O traps |
-| **Paravirtualized I/O** | Guest uses virtio drivers (shared ring buffers) | Good — 80-90% of native |
-| **SR-IOV (passthrough)** | Physical device presents multiple virtual functions | Excellent — near-native |
+| **Emulated I/O** | Hypervisor emulates real hardware (e.g., e1000 NIC) | Poor â€” every I/O traps |
+| **Paravirtualized I/O** | Guest uses virtio drivers (shared ring buffers) | Good â€” 80-90% of native |
+| **SR-IOV (passthrough)** | Physical device presents multiple virtual functions | Excellent â€” near-native |
 | **VFIO (passthrough)** | Dedicate PCI device to one VM via VFIO | Native performance |
 
-#### virtio — Paravirtualized I/O
+#### virtio â€” Paravirtualized I/O
 
 A standard interface for virtual I/O devices:
 
 ```
 Guest (QEMU):
   virtio-blk driver       virtio-net driver
-            │                     │
-            │  virtqueue (shared  │
-            │  ring buffer)       │
-            └──────┬──────────────┘
-                   │
-            ┌──────┴──────┐
-Guest memory │ virtio ring │ ← Shared between host and guest
-            └──────┬──────┘
-                   │
-Hypervisor         │
-  QEMU: ───────────┘
+            â”‚                     â”‚
+            â”‚  virtqueue (shared  â”‚
+            â”‚  ring buffer)       â”‚
+            â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+                   â”‚
+            â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+Guest memory â”‚ virtio ring â”‚ â† Shared between host and guest
+            â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
+                   â”‚
+Hypervisor         â”‚
+  QEMU: â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
   vhost-blk        vhost-net
 ```
 
@@ -228,18 +228,18 @@ Hypervisor         │
 #### Virtual Machine
 
 ```
-┌──────────┐ ┌──────────┐ ┌──────────┐
-│ App A    │ │ App B    │ │ App C    │
-│ Libs     │ │ Libs     │ │ Libs     │
-│ Guest OS │ │ Guest OS │ │ Guest OS │
-│ (full OS)│ │ (full OS)│ │ (full OS)│
-├──────────┴─┴──────────┴─┴──────────┤
-│            Hypervisor               │
-├─────────────────────────────────────┤
-│            Host OS (optional)       │
-├─────────────────────────────────────┤
-│            Hardware                 │
-└─────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ App A    â”‚ â”‚ App B    â”‚ â”‚ App C    â”‚
+â”‚ Libs     â”‚ â”‚ Libs     â”‚ â”‚ Libs     â”‚
+â”‚ Guest OS â”‚ â”‚ Guest OS â”‚ â”‚ Guest OS â”‚
+â”‚ (full OS)â”‚ â”‚ (full OS)â”‚ â”‚ (full OS)â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚            Hypervisor               â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚            Host OS (optional)       â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚            Hardware                 â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Each VM has its own kernel, init system, and full OS. High isolation, high resource overhead (GBs per VM).
@@ -247,14 +247,14 @@ Each VM has its own kernel, init system, and full OS. High isolation, high resou
 #### Container
 
 ```
-┌──────────┐ ┌──────────┐ ┌──────────┐
-│ App A    │ │ App B    │ │ App C    │
-│ Libs     │ │ Libs     │ │ Libs     │
-├──────────┴─┴──────────┴─┴──────────┤
-│         Shared Host OS Kernel       │
-├─────────────────────────────────────┤
-│            Hardware                 │
-└─────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ App A    â”‚ â”‚ App B    â”‚ â”‚ App C    â”‚
+â”‚ Libs     â”‚ â”‚ Libs     â”‚ â”‚ Libs     â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚         Shared Host OS Kernel       â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚            Hardware                 â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Containers share the host kernel. Isolation via **namespaces** (PID, mount, net, IPC, UTS, user) and **cgroups** (resource limits).
@@ -266,7 +266,7 @@ Docker container = several namespaces stacked together:
   Network namespace: Container has its own network stack
   UTS namespace:    Container has its own hostname
   IPC namespace:    Container has its own IPC resources
-  User namespace:   Container can map UIDs (root inside ≠ root outside)
+  User namespace:   Container can map UIDs (root inside â‰  root outside)
 
 Control groups (cgroups):
   Limit and account for resource usage:
@@ -284,12 +284,12 @@ KVM turns Linux into a Type 1 hypervisor. KVM is a kernel module (`kvm.ko` + `kv
 ```
 User space:
   QEMU (emulates devices, manages VMs)
-    │
-    ↓ ioctl(KVM_CREATE_VM, KVM_CREATE_VCPU, KVM_RUN, ...)
+    â”‚
+    â†“ ioctl(KVM_CREATE_VM, KVM_CREATE_VCPU, KVM_RUN, ...)
 Kernel space:
   KVM module (CPU virtualization, MMU, interrupts)
-    │
-    ↓ VMX root mode
+    â”‚
+    â†“ VMX root mode
 Hardware:
   Intel VT-x / AMD-V
 ```
@@ -299,21 +299,21 @@ Hardware:
 Xen uses a different architecture: **Domain 0** (privileged control VM) manages other **Domain U** (unprivileged VMs).
 
 ```
-┌──────────────────────────────┐
-│ Domain 0     Domain U        │
-│ (control VM) (unpriv VMs)   │
-│ paravirt     Linux  Windows  │
-│ or HVM       HVM    HVM      │
-│ Xen tools                    │
-└──────────┬───────────────────┘
-           │
-    ┌──────┴──────┐
-    │   Xen        │
-    │ Hypervisor   │
-    └──────┬──────┘
-    ┌──────┴──────┐
-    │   Hardware   │
-    └──────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Domain 0     Domain U        â”‚
+â”‚ (control VM) (unpriv VMs)   â”‚
+â”‚ paravirt     Linux  Windows  â”‚
+â”‚ or HVM       HVM    HVM      â”‚
+â”‚ Xen tools                    â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+           â”‚
+    â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+    â”‚   Xen        â”‚
+    â”‚ Hypervisor   â”‚
+    â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
+    â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+    â”‚   Hardware   â”‚
+    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ## Examples

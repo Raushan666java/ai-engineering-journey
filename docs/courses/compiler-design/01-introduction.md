@@ -1,18 +1,54 @@
 # Chapter 1: Introduction to Compiler Design
 
+**â† Prerequisite:** None | **Next:** [Chapter 2: Lexical Analysis](02-lexical.md)
+
 ## Learning Objectives
 
 After completing this chapter, students will be able to: describe the analysis-synthesis model of compilation; enumerate and explain the principal phases of a compiler; distinguish between compilers and interpreters; identify appropriate compiler construction tools for each phase; and recognize the role of formal language theory in compilation.
 
+### Chapter at a Glance
+
+| Section | Description |
+|---------|-------------|
+| The Analysis-Synthesis Model | Front end/back end division and the N-plus-M architecture |
+| Phases of Compilation | Lexical analysis through code generation |
+| Symbol Table Management | Hash-table-based storage of identifier information |
+| Interpreters versus Compilers | Execution-time vs compile-time translation trade-offs |
+| Compiler Construction Tools | Lex, Yacc, and automatic code-generator generators |
+| The Role of Formal Language Theory | Chomsky hierarchy and language classification in compilation |
+| The Evolution of Compiler Architecture | From monoliths through IR to LLVM's three-phase design |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Source Program] --> B[Lexical Analyzer]
+    B --> C[Syntax Analyzer]
+    C --> D[Semantic Analyzer]
+    D --> E[IR Generator]
+    E --> F[Optimizer]
+    F --> G[Code Generator]
+    G --> H[Target Program]
+    B --> I[Token Stream]
+    C --> J[Parse Tree]
+    D --> K[Annotated AST]
+    E --> L[Three-Address Code]
+    F --> M[Optimized IR]
+```
+
 ## Theory
 
-![Compiler Phases Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch01-overview.png)
+![Compiler Phases Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/compiler-design/ch01-overview.png)
 
 ### The Analysis-Synthesis Model
 
 A compiler is a program that reads a program written in a source language and translates it into an equivalent program in a target language. This translation process is conventionally partitioned into two broad components: the analysis phase (front end) and the synthesis phase (back end). Analysis decomposes the source program into a structured intermediate representation, exposing its grammatical structure and semantic content. Synthesis constructs the desired target program from this intermediate representation, typically performing resource-conscious transformations such as register allocation and instruction selection.
 
 The rationale for this division is modularity. The front end depends only on the source language and is largely independent of the target architecture. The back end depends on the target architecture and is largely independent of the source language. A compiler writer may combine N front ends with M back ends to support N source languages on M target machines, incurring N plus M development efforts rather than N times M. This architecture is prominently realized in the GNU Compiler Collection (GCC) and the LLVM Compiler Infrastructure, where language-specific front ends (C, C++, Fortran, Rust, Swift) share common back ends (x86, ARM, RISC-V, WebAssembly).
+
+> **One-Sentence Takeaway:** The N-plus-M model is the central architectural insight in compiler design â€” it reduces the implementation problem from NÃ—M to N+M.
+
+> **Pro Tip:** When designing a new language, always plan for an intermediate representation. A well-designed IR lets you target multiple architectures with minimal additional effort.
 
 ### Phases of Compilation
 
@@ -30,15 +66,25 @@ A compiler operates as a pipeline of phases, each transforming one representatio
 
 **Code generation** maps the optimized intermediate representation into the target machine's instruction set. This phase selects machine instructions for each IR operation, allocates registers for variables and temporaries, and resolves addressing modes. The generated code must correctly implement the semantics of the source program while making efficient use of the target machine's resources.
 
+> **One-Sentence Takeaway:** Each compiler phase transforms one representation into another, and the clean separation of these phases is what makes compiler construction tractable.
+
 ### Symbol Table Management
 
 The symbol table is a data structure maintained throughout compilation that stores information about identifiers appearing in the source program. Each entry typically contains the identifier's name, type, scope level, memory location (relative or absolute), and possibly other attributes. Symbol tables are commonly implemented as hash tables, binary search trees, or linked lists organized by scope. The scope management strategy must handle nested scopes correctly, ensuring that references resolve to the most recent declaration.
+
+> **One-Sentence Takeaway:** The symbol table is the shared memory of all compiler phases â€” every phase both reads and writes identifier information through it.
+
+> **Warning:** Scope mismanagement is one of the most common sources of compiler bugs. Always test deeply nested scopes with shadowed identifiers.
 
 ### Interpreters versus Compilers
 
 An interpreter performs the operations specified by the source program directly, without first producing a target-language translation. Pure interpretation reanalyzes each statement on every encounter and consequently exhibits slower execution than compiled code. However, interpreters provide a more interactive development environment and are easier to implement for languages with dynamic features such as eval, dynamic typing, and runtime code modification.
 
 Some language processors blend the two approaches. A **just-in-time (JIT) compiler** translates intermediate code into native machine code at runtime, caching the compiled code for repeated execution. Modern virtual machine implementations for Java and .NET employ JIT compilation, combining portability with performance that approaches that of traditional ahead-of-time compilation. JIT systems may also employ adaptive optimization, where frequently executed methods are compiled at higher optimization levels.
+
+> **One-Sentence Takeaway:** Compilers trade off startup time for steady-state performance; interpreters do the opposite â€” JIT compilation attempts to get the best of both.
+
+> **Remember:** Interpreters shine for dynamic languages and rapid prototyping; compilers are essential for production systems where runtime performance matters.
 
 ### Compiler Construction Tools
 
@@ -73,6 +119,36 @@ The optimizer may fold the constant conversion or, if the values are known at co
 
 A compiler organization has three front ends (C, C++, Ada) and two back ends (x86-64, ARM64). Under the N-plus-M architecture, the implementation cost is 3 plus 2 equals 5 components plus shared IR infrastructure, as opposed to 3 times 2 equals 6 full compilers. Each additional front end or back end adds only one component rather than a full cross-product.
 
+### Concept Comparison
+
+| Concept | Description | Key Insight |
+|---------|-------------|-------------|
+| Front End (Analysis) | Source-language-dependent phases | Independent of target architecture |
+| Back End (Synthesis) | Target-machine-dependent phases | Independent of source language |
+| Compiler | Static translation to target code | Higher performance, longer build cycle |
+| Interpreter | Direct execution without translation | Faster development, slower execution |
+| JIT Compiler | Runtime dynamic translation | Hybrid approach combining portability and speed |
+
+### Quick Reference
+
+| Phase | Input | Output | Key Data Structure |
+|-------|-------|--------|-------------------|
+| Lexical Analysis | Character stream | Token stream | Deterministic finite automaton |
+| Syntax Analysis | Token stream | Parse tree | Context-free grammar |
+| Semantic Analysis | Parse tree | Annotated AST | Symbol table |
+| IC Generation | Annotated AST | Three-address code | Quadruples / triples |
+| Optimization | TAC / IR | Optimized IR | Flow graph |
+| Code Generation | Optimized IR | Target machine code | Register allocation |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Language Design | Implementing new DSLs | Every language needs a compiler or interpreter |
+| Systems Programming | GCC, LLVM, Rustc | Production compilers implement all phases |
+| Web Development | TypeScript â†’ JavaScript transpilation | Compilation concepts apply to transpilers |
+| Tooling | Linters, formatters, static analyzers | Lexing and parsing form the foundation |
+
 ## Summary
 
 Compilers translate source programs into target programs through a sequence of phases organized into front end (analysis) and back end (synthesis). Lexical analysis, syntax analysis, semantic analysis, intermediate code generation, optimization, and code generation each transform one representation into another. Interpreters offer flexibility at the cost of execution speed. Specialized tools automate the construction of scanners, parsers, and other compiler components. The modern three-phase architecture with a shared IR enables efficient retargeting across source languages and target machines.
@@ -97,3 +173,28 @@ Compilers translate source programs into target programs through a sequence of p
 ### Challenge Problem
 
 1. Design a minimal two-phase compiler for arithmetic expressions composed of integers, addition, and multiplication. The front end should convert the expression into postfix notation. The back end should evaluate the postfix expression using a stack machine. Implement both phases in your language of choice and demonstrate correct translation and evaluation. Extend your implementation to support subtraction and division, handling the error condition of division by zero with a meaningful error message.
+
+### Chapter Quiz
+
+1. Which of the following best describes the relationship between the front end and back end of a compiler?
+   - A) The front end generates target code; the back end analyzes source code
+   - B) The front end analyzes source code; the back end synthesizes target code
+   - C) Both front end and back end perform optimization equally
+   - D) The front end is machine-dependent; the back end is language-dependent
+
+2. In the N-plus-M model, how many components are needed for 3 front ends and 4 back ends?
+   - A) 7
+   - B) 12
+   - C) 5
+   - D) 9
+
+3. Which of the following is NOT a phase of compilation?
+   - A) Lexical analysis
+   - B) Syntax analysis
+   - C) Memory management
+   - D) Code generation
+
+<details>
+<summary>Answers</summary>
+1. B, 2. A, 3. C
+</details>

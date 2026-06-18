@@ -31,13 +31,13 @@ The Java Virtual Machine is the cornerstone of Java's platform independence. It 
 
 The JVM consists of three major subsystems:
 
-1. **Class Loader Subsystem** — loads, links, and initializes Java classes
-2. **Runtime Data Areas** — the memory regions where the JVM stores data during execution
-3. **Execution Engine** — interprets and compiles bytecode into native machine instructions
+1. **Class Loader Subsystem** â€” loads, links, and initializes Java classes
+2. **Runtime Data Areas** â€” the memory regions where the JVM stores data during execution
+3. **Execution Engine** â€” interprets and compiles bytecode into native machine instructions
 
 Let us examine each subsystem in depth with complete code examples.
 
-![JVM Architecture & Memory Model](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/01-jvm-memory.png)
+![JVM Architecture & Memory Model](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/01-jvm-memory.png)
 
 ---
 
@@ -107,14 +107,14 @@ The Bootstrap class loader returns `null` because it is implemented natively and
 
 Class loading follows three phases:
 
-**Loading** — The class loader reads binary data from a `.class` file and creates a `Class<?>` object. The JVM identifies the class by its fully qualified name and the defining class loader.
+**Loading** â€” The class loader reads binary data from a `.class` file and creates a `Class<?>` object. The JVM identifies the class by its fully qualified name and the defining class loader.
 
-**Linking** — Three sub-steps:
+**Linking** â€” Three sub-steps:
 1. **Verification**: The bytecode verifier checks that the class file is structurally correct, valid Java bytecode, and does not violate type safety.
 2. **Preparation**: Static fields are allocated with default values (zero, null, false). This is **not** the same as initialization.
 3. **Resolution**: Symbolic references (e.g., CONSTANT_Class_info, CONSTANT_Methodref_info) are resolved to direct memory addresses.
 
-**Initialization** — Static initializer blocks and static field assignments execute. This phase is triggered when the JVM encounters `new`, `getstatic`, `putstatic`, `invokestatic`, or `Class.forName()`.
+**Initialization** â€” Static initializer blocks and static field assignments execute. This phase is triggered when the JVM encounters `new`, `getstatic`, `putstatic`, `invokestatic`, or `Class.forName()`.
 
 The following code demonstrates the precise order of class initialization:
 
@@ -204,7 +204,7 @@ CONSTANT_VALUE
 7. Child constructor
 ```
 
-Observe: the second instance does **not** re-run static initializers — class initialization happens exactly once per class loader.
+Observe: the second instance does **not** re-run static initializers â€” class initialization happens exactly once per class loader.
 
 ### 2.3 Custom Class Loader
 
@@ -787,7 +787,7 @@ The JIT (Just-In-Time) compiler transforms bytecode into native machine code at 
 
 ### 5.1 Interpretation vs Compilation
 
-When a method begins execution, the JVM starts in **interpreted mode** — reading bytecode instruction by instruction. This is slow but has zero startup delay. The JVM monitors which methods are called frequently (hotspot detection) and compiles those methods to native code.
+When a method begins execution, the JVM starts in **interpreted mode** â€” reading bytecode instruction by instruction. This is slow but has zero startup delay. The JVM monitors which methods are called frequently (hotspot detection) and compiles those methods to native code.
 
 ```java
 package com.example.jvm.jit;
@@ -1892,7 +1892,7 @@ public class ThreadLocalLeak {
         pool.shutdown();
         System.out.println("\nIf TL.remove() is NOT called: ");
         System.out.println("  ThreadLocal.Entry <value> references remain");
-        System.out.println("  Thread lives in pool → 1 MB leak per thread");
+        System.out.println("  Thread lives in pool â†’ 1 MB leak per thread");
         System.out.println("  Week-end: total leak = poolSize * 1 MB\n");
         System.out.println("Root cause: ThreadLocalMap Entry extends WeakReference");
         System.out.println("  Key is weak (WeakReference<ThreadLocal>), value is strong");
@@ -2155,8 +2155,8 @@ public class StackOverflowDemo {
 
         int stackKB = (int) (1024 * 1024);
         System.out.println("\nExample stack analysis:");
-        System.out.println("  -Xss256k → ~800 frames ~32 bytes each");
-        System.out.println("  -Xss2m   → ~6500 frames");
+        System.out.println("  -Xss256k â†’ ~800 frames ~32 bytes each");
+        System.out.println("  -Xss2m   â†’ ~6500 frames");
         System.out.println("  Each local variable: 4 or 8 bytes");
         System.out.println("  Each frame overhead: ~24 bytes\n");
 
@@ -2305,8 +2305,8 @@ public class MemoryFlags {
         System.out.println("-Xmn<size>          -Xmn2g");
         System.out.println("-XX:NewSize=<size>");
         System.out.println("-XX:MaxNewSize=<size>");
-        System.out.println("-XX:NewRatio=N       NewRatio=2 → 1:2");
-        System.out.println("-XX:SurvivorRatio=N  8 → eden:survivor = 8:1:1\n");
+        System.out.println("-XX:NewRatio=N       NewRatio=2 â†’ 1:2");
+        System.out.println("-XX:SurvivorRatio=N  8 â†’ eden:survivor = 8:1:1\n");
 
         System.out.println("--- Metaspace ---");
         System.out.println("-XX:MetaspaceSize=<size> (initial threshold)");

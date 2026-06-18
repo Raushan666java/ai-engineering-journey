@@ -8,7 +8,7 @@
 - Understand when and why `goto` is used
 - Write decision-making code that is clear and maintainable
 
-![C Control Flow: if-else if-else and switch-case](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch04-control-flow.png)
+![C Control Flow: if-else if-else and switch-case](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch04-control-flow.png)
 
 ## 4.1 The `if` Statement
 
@@ -111,14 +111,14 @@ Grade: B
 Every `else` binds to the nearest preceding unmatched `else`. Proper indentation prevents confusion:
 
 ```c
-/* BAD — misleading indentation */
+/* BAD â€” misleading indentation */
 if (x > 0)
     if (y > 0)
         printf("both positive\n");
 else
     printf("x is not positive\n");   /* binds to inner if! */
 
-/* CORRECT — braces clarify intent */
+/* CORRECT â€” braces clarify intent */
 if (x > 0) {
     if (y > 0) {
         printf("both positive\n");
@@ -232,7 +232,7 @@ Good
 
 ### 4.5.2 Switch Rules and Limitations
 
-- The controlling expression must be integer type (`int`, `char`, `enum`, etc.) — **not** `float` or `double` or string.
+- The controlling expression must be integer type (`int`, `char`, `enum`, etc.) â€” **not** `float` or `double` or string.
 - Case labels must be compile-time constants.
 - No two case labels may have the same value.
 - The `default` case is optional; it executes when no other case matches.
@@ -401,14 +401,14 @@ if (c == 'y' || c == 'Y') {
 
 ### Application Problems
 
-1. Write a program that reads an integer month number (1–12) and prints the number of days in that month. Use a `switch` statement. Account for February having 28 days (ignore leap years).
+1. Write a program that reads an integer month number (1â€“12) and prints the number of days in that month. Use a `switch` statement. Account for February having 28 days (ignore leap years).
 2. Write a program that reads three sides of a triangle and determines whether it is equilateral, isosceles, or scalene. Use `if-else` chains.
 3. Write a program that reads a character and determines whether it is a vowel, consonant, digit, or other. Use `switch` with fall-through for the vowels (both uppercase and lowercase).
 4. Write a program that simulates a simple calculator: read two numbers and an operator (`+`, `-`, `*`, `/`) and display the result. Use `switch` for the operator selection. Handle division by zero.
 
 ### Challenge Problem
 
-Write a program that reads a year and a month (1–12) and prints the calendar for that month. Use `switch` to determine the number of days. To determine the starting day of the month, use Zeller's congruence (research the formula). Print the calendar in the format:
+Write a program that reads a year and a month (1â€“12) and prints the calendar for that month. Use `switch` to determine the number of days. To determine the starting day of the month, use Zeller's congruence (research the formula). Print the calendar in the format:
 ```
      March 2025
 Su Mo Tu We Th Fr Sa

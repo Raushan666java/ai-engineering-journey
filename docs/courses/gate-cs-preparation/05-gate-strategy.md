@@ -1,8 +1,8 @@
-# GATE CS Exam Strategy — Complete Preparation Guide
+# GATE CS Exam Strategy â€” Complete Preparation Guide
 
 ## GATE Exam Overview
 
-![GATE CS Exam Strategy](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/gate-cs-preparation/05-gate-strategy.png)
+![GATE CS Exam Strategy](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/05-gate-strategy.png)
 
 ### What is GATE?
 
@@ -28,12 +28,12 @@ Graduate Aptitude Test in Engineering (GATE) is a national-level examination con
 
 | Question Type | Marks | Negative Marking |
 |---------------|-------|------------------|
-| **MCQ — 1 mark** | 1 | 1/3 mark deducted for wrong answer |
-| **MCQ — 2 marks** | 2 | 2/3 mark deducted for wrong answer |
-| **MSQ — 1 mark** | 1 | Partial marking may apply; no negative for partially correct |
-| **MSQ — 2 marks** | 2 | Partial marking may apply; no negative for partially correct |
-| **NAT — 1 mark** | 1 | No negative marking |
-| **NAT — 2 marks** | 2 | No negative marking |
+| **MCQ â€” 1 mark** | 1 | 1/3 mark deducted for wrong answer |
+| **MCQ â€” 2 marks** | 2 | 2/3 mark deducted for wrong answer |
+| **MSQ â€” 1 mark** | 1 | Partial marking may apply; no negative for partially correct |
+| **MSQ â€” 2 marks** | 2 | Partial marking may apply; no negative for partially correct |
+| **NAT â€” 1 mark** | 1 | No negative marking |
+| **NAT â€” 2 marks** | 2 | No negative marking |
 
 ### GATE Score vs Rank vs Percentile
 
@@ -42,7 +42,7 @@ These three metrics are often confused by aspirants:
 - **GATE Score**: A normalized score between 0 and 1000, calculated using the formula:
 
 ```
-GATE Score = S_q + (S_t - S_q) × (M - M_q) / (M_t - M_q)
+GATE Score = S_q + (S_t - S_q) Ã— (M - M_q) / (M_t - M_q)
 
 Where:
   M = marks obtained by candidate
@@ -56,13 +56,13 @@ Where:
 - **GATE Percentile**: Percentage of candidates you scored better than. Formula:
 
 ```
-Percentile = ((N - R) / N) × 100
+Percentile = ((N - R) / N) Ã— 100
 Where N = total candidates, R = your rank
 ```
 
 A rank of 1 in a paper with 100,000 candidates gives 99.999 percentile. A rank of 500 gives 99.5 percentile.
 
-**NOTE**: GATE score ≠ percentage of marks. A score of 750+ generally indicates a top-100 rank in CS.
+**NOTE**: GATE score â‰  percentage of marks. A score of 750+ generally indicates a top-100 rank in CS.
 
 ### Important Dates (Typical Cycle)
 
@@ -89,15 +89,15 @@ A rank of 1 in a paper with 100,000 candidates gives 99.999 percentile. A rank o
 
 | Category | Registration Fee |
 |----------|-----------------|
-| General / OBC (NCL) | ~₹1,500 |
-| SC / ST / PwD | ~₹750 |
-| Female candidates (all categories) | ~₹750 |
+| General / OBC (NCL) | ~â‚¹1,500 |
+| SC / ST / PwD | ~â‚¹750 |
+| Female candidates (all categories) | ~â‚¹750 |
 
 ### Latest Changes (2024-2025)
 
 - **MSQ (Multiple Select Questions)** have become more prominent, particularly in the subject paper section
 - **NAT (Numerical Answer Type)** questions now require up to 2 decimal places for answers
-- **Virtual calculator** is provided on-screen — no physical calculators allowed
+- **Virtual calculator** is provided on-screen â€” no physical calculators allowed
 - **Computer Science and Information Technology (CS)** paper code has been consistent as **CS**
 - Some PSUs now use GATE scores from the **last 3 years** instead of just the most recent
 - GATE 2025 onwards, the **total number of questions** is 65 (previously it varied between 55-65 across years)
@@ -153,7 +153,7 @@ These subjects offer the best marks-per-effort ratio. Master these first.
 
 | Subject | Strategy |
 |---------|----------|
-| **Theory of Computation** | Regular languages, pumping lemma, decidability — these topics are formulaic. Focus on closures and problem reductions. |
+| **Theory of Computation** | Regular languages, pumping lemma, decidability â€” these topics are formulaic. Focus on closures and problem reductions. |
 | **DBMS** | SQL queries, normalization, B+ trees, transaction schedules. Practice writing queries and finding conflict serializability. |
 | **Computer Networks** | Layer questions, TCP/IP, routing algorithms, error detection. Focus on numerical NAT questions. |
 | **Computer Organization** | Pipeline, cache mapping, addressing modes. Numerical-heavy. Learn the standard formulas. |
@@ -180,8 +180,8 @@ Key strategy tips:
 - Verbal ability: Read one editorial from The Hindu or similar daily. Focus on vocabulary in context.
 - Numerical ability 1-2 mark questions: These are usually quick. Solve all of them.
 - Numerical ability 2-mark questions: These may involve lengthy calculations. Use approximation.
-- **Do not leave GA unattempted** — 15 marks here is equivalent to mastering an entire subject like OS or DBMS.
-- Practice GA sections from previous year papers — most questions are variations of the same patterns.
+- **Do not leave GA unattempted** â€” 15 marks here is equivalent to mastering an entire subject like OS or DBMS.
+- Practice GA sections from previous year papers â€” most questions are variations of the same patterns.
 
 #### Sample General Aptitude Question
 
@@ -217,40 +217,40 @@ This plan assumes you start in July, giving you 6 months before the February exa
 
 | Week | Focus Area | Daily Target | Milestone |
 |------|-----------|-------------|-----------|
-| Week 1 | Discrete Mathematics — Set Theory, Relations, Functions | 2 hrs | Complete Rosen chapters 1-2 |
-| Week 2 | Discrete Mathematics — Combinatorics, Graph Theory basics | 2 hrs | Solve 50 problems |
-| Week 3 | Data Structures — Arrays, Linked Lists, Stacks, Queues | 2.5 hrs | Implement all in C |
-| Week 4 | Data Structures — Trees, BST, Heaps, Hashing | 2.5 hrs | Solve 100 problems |
-| Week 5 | Algorithms — Sorting, Searching, Divide & Conquer | 3 hrs | Know all sort complexities |
-| Week 6 | Algorithms — Dynamic Programming, Greedy | 3 hrs | Master LCS, knapSack, MST |
-| Week 7 | Algorithms — Graph algorithms, NP-Completeness | 3 hrs | BFS/DFS/Dijkstra/Flyod |
-| Week 8 | General Aptitude — Full coverage | 1 hr + revision | Complete all GA types |
+| Week 1 | Discrete Mathematics â€” Set Theory, Relations, Functions | 2 hrs | Complete Rosen chapters 1-2 |
+| Week 2 | Discrete Mathematics â€” Combinatorics, Graph Theory basics | 2 hrs | Solve 50 problems |
+| Week 3 | Data Structures â€” Arrays, Linked Lists, Stacks, Queues | 2.5 hrs | Implement all in C |
+| Week 4 | Data Structures â€” Trees, BST, Heaps, Hashing | 2.5 hrs | Solve 100 problems |
+| Week 5 | Algorithms â€” Sorting, Searching, Divide & Conquer | 3 hrs | Know all sort complexities |
+| Week 6 | Algorithms â€” Dynamic Programming, Greedy | 3 hrs | Master LCS, knapSack, MST |
+| Week 7 | Algorithms â€” Graph algorithms, NP-Completeness | 3 hrs | BFS/DFS/Dijkstra/Flyod |
+| Week 8 | General Aptitude â€” Full coverage | 1 hr + revision | Complete all GA types |
 
 #### Month 3-4: Core Subjects (September-October)
 
 | Week | Focus Area | Daily Target | Milestone |
 |------|-----------|-------------|-----------|
-| Week 9 | Operating Systems — Processes, Scheduling, Sync | 2.5 hrs | Solve all semaphore problems |
-| Week 10 | OS — Memory Management, Virtual Memory | 2.5 hrs | Paging, segmentation mastery |
-| Week 11 | OS — File Systems, Disk Scheduling, Deadlocks | 2 hrs | Deadlock bank algorithm |
-| Week 12 | DBMS — ER Model, Relational Algebra, SQL | 2.5 hrs | Write 50 SQL queries |
-| Week 13 | DBMS — Normalization, Transactions, Indexing | 2.5 hrs | All normal forms (1NF-5NF) |
-| Week 14 | Computer Networks — Physical, Data Link, MAC | 2.5 hrs | CSMA/CD, Ethernet, CRC |
-| Week 15 | CN — Network Layer, Routing, Transport Layer | 2.5 hrs | TCP, UDP, congestion control |
-| Week 16 | CN — Application Layer, Security basics | 2 hrs | DNS, HTTP, Firewall concepts |
+| Week 9 | Operating Systems â€” Processes, Scheduling, Sync | 2.5 hrs | Solve all semaphore problems |
+| Week 10 | OS â€” Memory Management, Virtual Memory | 2.5 hrs | Paging, segmentation mastery |
+| Week 11 | OS â€” File Systems, Disk Scheduling, Deadlocks | 2 hrs | Deadlock bank algorithm |
+| Week 12 | DBMS â€” ER Model, Relational Algebra, SQL | 2.5 hrs | Write 50 SQL queries |
+| Week 13 | DBMS â€” Normalization, Transactions, Indexing | 2.5 hrs | All normal forms (1NF-5NF) |
+| Week 14 | Computer Networks â€” Physical, Data Link, MAC | 2.5 hrs | CSMA/CD, Ethernet, CRC |
+| Week 15 | CN â€” Network Layer, Routing, Transport Layer | 2.5 hrs | TCP, UDP, congestion control |
+| Week 16 | CN â€” Application Layer, Security basics | 2 hrs | DNS, HTTP, Firewall concepts |
 
 #### Month 5: Difficult & Math Subjects (November)
 
 | Week | Focus Area | Daily Target | Milestone |
 |------|-----------|-------------|-----------|
-| Week 17 | Theory of Computation — Regular Languages, DFA/NFA | 2.5 hrs | Minimize DFA, regular expressions |
-| Week 18 | TOC — CFL, PDA, Turing Machines | 2.5 hrs | Design 20 PDAs and TMs |
-| Week 19 | TOC — Undecidability, P/NP | 1.5 hrs | Memorize reductions |
-| Week 20 | Computer Organization — Pipeline, Memory Hierarchy | 2 hrs | Solve all pipeline problems |
-| Week 21 | COA — Addressing Modes, ALU, I/O | 2 hrs | Cache mapping problems |
-| Week 22 | Digital Logic — Boolean Algebra, K-maps, Counters | 1.5 hrs | K-map minimization |
-| Week 23 | Engineering Mathematics — Probability, Linear Algebra | 2 hrs | Matrix, probability problems |
-| Week 24 | Compiler Design — Parsing, SDT, Code Gen | 1.5 hrs | LR parsers, parse trees |
+| Week 17 | Theory of Computation â€” Regular Languages, DFA/NFA | 2.5 hrs | Minimize DFA, regular expressions |
+| Week 18 | TOC â€” CFL, PDA, Turing Machines | 2.5 hrs | Design 20 PDAs and TMs |
+| Week 19 | TOC â€” Undecidability, P/NP | 1.5 hrs | Memorize reductions |
+| Week 20 | Computer Organization â€” Pipeline, Memory Hierarchy | 2 hrs | Solve all pipeline problems |
+| Week 21 | COA â€” Addressing Modes, ALU, I/O | 2 hrs | Cache mapping problems |
+| Week 22 | Digital Logic â€” Boolean Algebra, K-maps, Counters | 1.5 hrs | K-map minimization |
+| Week 23 | Engineering Mathematics â€” Probability, Linear Algebra | 2 hrs | Matrix, probability problems |
+| Week 24 | Compiler Design â€” Parsing, SDT, Code Gen | 1.5 hrs | LR parsers, parse trees |
 
 #### Month 6: Revision & Mock Tests (December-January)
 
@@ -324,13 +324,13 @@ Time Slot        | Activity                    | Subject Rotation
 
 ### Mock Test Strategy
 
-- **Start mocks from Month 4** (not earlier — you need syllabus coverage first)
+- **Start mocks from Month 4** (not earlier â€” you need syllabus coverage first)
 - **Frequency**: 1 mock per week initially, 2-3 per week in the last month
 - **Analysis time should equal test time**: A 3-hour mock requires 3 hours of analysis
 - **What to analyze in each mock**:
   1. Which subjects had the most errors
   2. Which question types (MCQ vs MSQ vs NAT) caused issues
-  3. Time spent per question (aim for: 1-mark questions ≤ 1 min, 2-mark questions ≤ 2-3 min)
+  3. Time spent per question (aim for: 1-mark questions â‰¤ 1 min, 2-mark questions â‰¤ 2-3 min)
   4. Were errors due to speed or accuracy issues?
   5. Did you miss any sitters (easy questions you should have solved)?
 
@@ -388,27 +388,27 @@ fun(0) returns 1
 
 Let's count the calls level by level:
 
-Level 0: fun(5) → 1 call
-Level 1: fun(4), fun(3) → 2 calls
-Level 2: fun(3), fun(2), fun(2), fun(1) → 4 calls  (wait, let me track carefully)
+Level 0: fun(5) â†’ 1 call
+Level 1: fun(4), fun(3) â†’ 2 calls
+Level 2: fun(3), fun(2), fun(2), fun(1) â†’ 4 calls  (wait, let me track carefully)
 
 Actually let's build the call tree:
 
 fun(5)
-├── fun(4)
-│   ├── fun(3)
-│   │   ├── fun(2)
-│   │   │   ├── fun(1)  ← base case
-│   │   │   └── fun(0)  ← base case
-│   │   └── fun(1)      ← base case
-│   └── fun(2)
-│       ├── fun(1)      ← base case
-│       └── fun(0)      ← base case
-└── fun(3)
-    ├── fun(2)
-    │   ├── fun(1)      ← base case
-    │   └── fun(0)      ← base case
-    └── fun(1)          ← base case
+â”œâ”€â”€ fun(4)
+â”‚   â”œâ”€â”€ fun(3)
+â”‚   â”‚   â”œâ”€â”€ fun(2)
+â”‚   â”‚   â”‚   â”œâ”€â”€ fun(1)  â† base case
+â”‚   â”‚   â”‚   â””â”€â”€ fun(0)  â† base case
+â”‚   â”‚   â””â”€â”€ fun(1)      â† base case
+â”‚   â””â”€â”€ fun(2)
+â”‚       â”œâ”€â”€ fun(1)      â† base case
+â”‚       â””â”€â”€ fun(0)      â† base case
+â””â”€â”€ fun(3)
+    â”œâ”€â”€ fun(2)
+    â”‚   â”œâ”€â”€ fun(1)      â† base case
+    â”‚   â””â”€â”€ fun(0)      â† base case
+    â””â”€â”€ fun(1)          â† base case
 
 Counting all calls (including initial):
 fun(5), fun(4), fun(3), fun(2), fun(1), fun(0)
@@ -418,9 +418,9 @@ fun(1)
 
 Total = 15 (including the initial call)
 
-Verification: For Fibonacci recursion, number of calls = 2×F(n+1) - 1
+Verification: For Fibonacci recursion, number of calls = 2Ã—F(n+1) - 1
 where F(0)=0, F(1)=1, F(2)=1, F(3)=2, F(4)=3, F(5)=5, F(6)=8
-Calls = 2×F(6) - 1 = 2×8 - 1 = 15 ✓
+Calls = 2Ã—F(6) - 1 = 2Ã—8 - 1 = 15 âœ“
 
 Answer: 15
 ```
@@ -487,28 +487,28 @@ P4: 3 - 2 = 1
 
 Average waiting time = (5 + 0 + 8 + 1) / 4 = 14 / 4 = 3.5
 
-Wait — this does not match any option. Let me re-check.
+Wait â€” this does not match any option. Let me re-check.
 
 Actually, at time 3: P1(4), P2(1), P3(8), P4(2). P2 has 1 remaining.
-Time 3-4: P2 runs → completes at t=4.
+Time 3-4: P2 runs â†’ completes at t=4.
 
 At t=4: P1(4), P3(8), P4(2). P4 has 2.
-Time 4-6: P4 runs → completes at t=6.
+Time 4-6: P4 runs â†’ completes at t=6.
 
 At t=6: P1(4), P3(8).
-Time 6-10: P1 runs → completes at t=10.
-Time 10-18: P3 runs → completes at t=18.
+Time 6-10: P1 runs â†’ completes at t=10.
+Time 10-18: P3 runs â†’ completes at t=18.
 
-Wait times: P1=5, P2=0, P3=8, P4=1 → avg = 3.5
+Wait times: P1=5, P2=0, P3=8, P4=1 â†’ avg = 3.5
 
 Hmm, none of the options match 3.5. Let me re-check the problem.
 Maybe the question uses Non-Preemptive SJF or different arrival times.
 
 Actually this is an illustrative example, and the exact answer depends on
 the precise problem parameters from the actual GATE paper. The methodology
-shown above is what matters — draw the Gantt chart step by step.
+shown above is what matters â€” draw the Gantt chart step by step.
 
-Answer: (A) 3.25 — for the actual GATE problem with slightly different numbers
+Answer: (A) 3.25 â€” for the actual GATE problem with slightly different numbers
 ```
 
 ### Problem 3: Database Management Systems (GATE 2022)
@@ -528,9 +528,9 @@ W(B)
 Is this schedule conflict serializable? If so, what is the equivalent
 serial order?
 
-(A) Yes, T1 → T2 → T3
-(B) Yes, T2 → T3 → T1
-(C) Yes, T1 → T3 → T2
+(A) Yes, T1 â†’ T2 â†’ T3
+(B) Yes, T2 â†’ T3 â†’ T1
+(C) Yes, T1 â†’ T3 â†’ T2
 (D) No, it is not conflict serializable
 ```
 
@@ -540,44 +540,44 @@ Step 1: Identify conflicting operations (same data item, different transactions,
 at least one is a write).
 
 Conflicting pairs:
-1. R1(A) and W3(A): T1 reads A, T3 writes A → T1 precedes T3 (T1 → T3)
+1. R1(A) and W3(A): T1 reads A, T3 writes A â†’ T1 precedes T3 (T1 â†’ T3)
 2. W3(A) comes after R1(A); no conflict direction change needed
 
-3. R2(B) and W1(B): T2 reads B, T1 writes B → T2 precedes T1 (T2 → T1)
-4. W1(B) and R3(B): T1 writes B, T3 reads B → T1 precedes T3 (T1 → T3)
+3. R2(B) and W1(B): T2 reads B, T1 writes B â†’ T2 precedes T1 (T2 â†’ T1)
+4. W1(B) and R3(B): T1 writes B, T3 reads B â†’ T1 precedes T3 (T1 â†’ T3)
 
 Step 2: Build the precedence graph
 
 Edges:
-T1 → T3 (from R1(A) before W3(A))
-T2 → T1 (from R2(B) before W1(B))
-T1 → T3 (from W1(B) before R3(B))
+T1 â†’ T3 (from R1(A) before W3(A))
+T2 â†’ T1 (from R2(B) before W1(B))
+T1 â†’ T3 (from W1(B) before R3(B))
 
 Graph:
-T2 → T1 → T3
+T2 â†’ T1 â†’ T3
 
 Step 3: Check for cycles
-The graph has no cycles (it's a DAG: T2 → T1 → T3).
+The graph has no cycles (it's a DAG: T2 â†’ T1 â†’ T3).
 
 Step 4: Topological order
-The equivalent serial schedule is: T2 → T1 → T3
+The equivalent serial schedule is: T2 â†’ T1 â†’ T3
 
-Answer: (B) Yes, T2 → T3 → T1 → Wait, let me re-check.
+Answer: (B) Yes, T2 â†’ T3 â†’ T1 â†’ Wait, let me re-check.
 
-Actually, T2 → T1 → T3 is the order. That means T2 → T1 → T3.
-Looking at options: none say T2 → T1 → T3 exactly.
+Actually, T2 â†’ T1 â†’ T3 is the order. That means T2 â†’ T1 â†’ T3.
+Looking at options: none say T2 â†’ T1 â†’ T3 exactly.
 
-Let me re-examine: R2(B) happens before W1(B), so T2 → T1.
-R1(A) happens before W3(A), so T1 → T3.
-W1(B) happens before R3(B), so T1 → T3 (already).
+Let me re-examine: R2(B) happens before W1(B), so T2 â†’ T1.
+R1(A) happens before W3(A), so T1 â†’ T3.
+W1(B) happens before R3(B), so T1 â†’ T3 (already).
 
-T2 → T1 → T3. That's equivalent to serial order T2, T1, T3.
+T2 â†’ T1 â†’ T3. That's equivalent to serial order T2, T1, T3.
 
-So T2 → T1 → T3. If we read option (C) as T1 → T3 → T2, that's wrong.
-Option (B) says T2 → T3 → T1, which is also wrong.
-Option (A) says T1 → T2 → T3.
+So T2 â†’ T1 â†’ T3. If we read option (C) as T1 â†’ T3 â†’ T2, that's wrong.
+Option (B) says T2 â†’ T3 â†’ T1, which is also wrong.
+Option (A) says T1 â†’ T2 â†’ T3.
 
-None exactly match T2 → T1 → T3. Let me re-check the schedule more carefully.
+None exactly match T2 â†’ T1 â†’ T3. Let me re-check the schedule more carefully.
 
 On re-examination: it's possible I have the order of operations wrong in
 this illustrative example. The key skill being tested is:
@@ -587,7 +587,7 @@ this illustrative example. The key skill being tested is:
 
 The correct answer depends on the exact schedule in the GATE paper.
 
-Answer: (D) — for illustration purposes. Always draw the precedence graph.
+Answer: (D) â€” for illustration purposes. Always draw the precedence graph.
 ```
 
 ### Problem 4: Theory of Computation (GATE 2023)
@@ -595,9 +595,9 @@ Answer: (D) — for illustration purposes. Always draw the precedence graph.
 ```
 Q: Which of the following languages is/are context-free?
 
-(I)  L1 = {a^n b^n c^m d^m | n, m ≥ 1}
-(II) L2 = {a^n b^m c^m d^n | n, m ≥ 1}
-(III) L3 = {a^n b^n c^n | n ≥ 1}
+(I)  L1 = {a^n b^n c^m d^m | n, m â‰¥ 1}
+(II) L2 = {a^n b^m c^m d^n | n, m â‰¥ 1}
+(III) L3 = {a^n b^n c^n | n â‰¥ 1}
 
 (A) Only I
 (B) Only I and II
@@ -609,28 +609,28 @@ Q: Which of the following languages is/are context-free?
 ```
 Step 1: Analyze each language
 
-L1 = {a^n b^n c^m d^m | n, m ≥ 1}
+L1 = {a^n b^n c^m d^m | n, m â‰¥ 1}
 - This requires matching a's with b's (n of each) and c's with d's (m of each)
 - We can push a's, pop b's; then push c's, pop d's
 - A PDA can do this with a single stack
-- Therefore L1 is context-free ✓
+- Therefore L1 is context-free âœ“
 
-L2 = {a^n b^m c^m d^n | n, m ≥ 1}
+L2 = {a^n b^m c^m d^n | n, m â‰¥ 1}
 - This requires matching a's with d's (n of each) AND b's with c's (m of each)
 - The a's need to be remembered while b's and c's are processed, then matched with d's
 - Push a's, push b's, pop b's with c's, pop a's with d's
 - Wait: a's are pushed first, then b's go on top. When we see c's, we pop b's (good).
   But then when we see d's, we need to pop a's which are below in the stack.
-- A PDA cannot access the a's until b's are popped — but that's exactly what happens.
+- A PDA cannot access the a's until b's are popped â€” but that's exactly what happens.
   c's pop the b's, then d's pop the a's.
-- This works with a single stack! So L2 is context-free ✓
+- This works with a single stack! So L2 is context-free âœ“
 
-L3 = {a^n b^n c^n | n ≥ 1}
-- This requires matching a's with b's AND b's with c's — all with the same count
-- With one stack: push a's, pop with b's — then we have nothing left to match c's
-- Requires two simultaneous counts — needs a context-sensitive grammar
+L3 = {a^n b^n c^n | n â‰¥ 1}
+- This requires matching a's with b's AND b's with c's â€” all with the same count
+- With one stack: push a's, pop with b's â€” then we have nothing left to match c's
+- Requires two simultaneous counts â€” needs a context-sensitive grammar
 - This is a classic non-context-free language (proved by pumping lemma)
-- Therefore L3 is NOT context-free ✗
+- Therefore L3 is NOT context-free âœ—
 
 Step 2: Conclusion
 Only L1 and L2 are context-free.
@@ -638,7 +638,7 @@ Only L1 and L2 are context-free.
 Answer: (B) Only I and II
 
 Common Trap: Students often think L2 is not context-free, but it actually is
-because the stack ordering works out — a's go in first, b's on top, c's pop b's,
+because the stack ordering works out â€” a's go in first, b's on top, c's pop b's,
 d's pop a's.
 ```
 
@@ -657,21 +657,21 @@ frame size required to detect collisions using CSMA/CD?
 
 **Solution (Step-by-Step):**
 ```
-In CSMA/CD, the minimum frame size must be at least 2 × propagation delay
+In CSMA/CD, the minimum frame size must be at least 2 Ã— propagation delay
 worth of transmission time, so that the sender is still transmitting when
 a collision signal returns.
 
 Given:
-Bandwidth = 10 Mbps = 10 × 10^6 bps
-Propagation delay (Tp) = 25.6 microseconds = 25.6 × 10^-6 seconds
+Bandwidth = 10 Mbps = 10 Ã— 10^6 bps
+Propagation delay (Tp) = 25.6 microseconds = 25.6 Ã— 10^-6 seconds
 
 Step 1: Calculate the round-trip time (RTT)
-RTT = 2 × Tp = 2 × 25.6 = 51.2 microseconds
+RTT = 2 Ã— Tp = 2 Ã— 25.6 = 51.2 microseconds
 
 Step 2: Calculate minimum frame size
-Minimum bits = Bandwidth × RTT
-Minimum bits = 10 × 10^6 × 51.2 × 10^-6
-Minimum bits = 10 × 51.2
+Minimum bits = Bandwidth Ã— RTT
+Minimum bits = 10 Ã— 10^6 Ã— 51.2 Ã— 10^-6
+Minimum bits = 10 Ã— 51.2
 Minimum bits = 512 bits
 
 Step 3: Convert to bytes
@@ -683,7 +683,7 @@ Answer: (B) 64 bytes
 
 Common Trap: Forgetting to multiply propagation delay by 2 (for round trip).
 Also, remember that the preamble (8 bytes) is not counted in the minimum
-frame size — it's the data portion that matters.
+frame size â€” it's the data portion that matters.
 ```
 
 ### Problem 6: Discrete Mathematics (GATE 2023)
@@ -731,7 +731,7 @@ The standard convention in most GATE problems is to treat reversal as distinct
 unless stated otherwise. With division by 2: 12. Without: 24.
 
 The question says "cycles are considered the same if they are just rotations"
-— it does not mention reversal. So answer may be 24 if they consider
+â€” it does not mention reversal. So answer may be 24 if they consider
 reversal distinct. However, many standard textbooks define Hamiltonian cycles
 with both rotation and reversal being the same. The GATE key accepted 12.
 ```
@@ -765,7 +765,7 @@ Speedup = 9.5 / 3 = 3.167
 
 Rounding to 2 decimal places: 3.17
 
-Wait — let me reconsider. The ideal speedup for an N-stage pipeline is N.
+Wait â€” let me reconsider. The ideal speedup for an N-stage pipeline is N.
 Here N = 4, so ideal speedup = 4.
 Actual speedup = 9.5 / 3 = 3.167 (limited by unbalanced stages)
 
@@ -783,8 +783,8 @@ The pipeline clock is determined by the slowest stage.
 ```
 Q: Given the grammar:
 
-E → E + T | T
-T → id | (E)
+E â†’ E + T | T
+T â†’ id | (E)
 
 Which of the following is the correct FIRST and FOLLOW sets for E?
 
@@ -798,64 +798,64 @@ Which of the following is the correct FIRST and FOLLOW sets for E?
 ```
 Step 1: Compute FIRST sets
 
-FIRST(T) = {id, ( } because T → id and T → (E)
+FIRST(T) = {id, ( } because T â†’ id and T â†’ (E)
 
-FIRST(E) = FIRST(T) because E → T is the first production
+FIRST(E) = FIRST(T) because E â†’ T is the first production
 FIRST(E) = {id, ( }
 
 Step 2: Compute FOLLOW sets
 
 FOLLOW(E):
 - $ is in FOLLOW(E) because E is the start symbol
-- From E → E + T: After E in RHS comes '+', so + ∈ FOLLOW(E)
+- From E â†’ E + T: After E in RHS comes '+', so + âˆˆ FOLLOW(E)
   Also, FIRST(T) is in FOLLOW(E)... wait, let me be more careful.
 
-Rule: A → αBβ
-- If β is not nullable: FIRST(β) - {ε} ⊆ FOLLOW(B)
-- If β is nullable: FOLLOW(A) ⊆ FOLLOW(B)
+Rule: A â†’ Î±BÎ²
+- If Î² is not nullable: FIRST(Î²) - {Îµ} âŠ† FOLLOW(B)
+- If Î² is nullable: FOLLOW(A) âŠ† FOLLOW(B)
 
-For E → E + T:
+For E â†’ E + T:
 Here we're looking at the first E on RHS. Actually we compute FOLLOW(E):
-- E is start symbol → $ ∈ FOLLOW(E)
-- From E → E + T: after the first E comes '+', then T.
-  So '+' ∈ FOLLOW(E) (the terminal + is immediately after E in RHS)
+- E is start symbol â†’ $ âˆˆ FOLLOW(E)
+- From E â†’ E + T: after the first E comes '+', then T.
+  So '+' âˆˆ FOLLOW(E) (the terminal + is immediately after E in RHS)
 - There's no other position where E appears.
 
 Actually let me recalculate more carefully.
 
 FOLLOW(E):
-1. Start symbol: $ ∈ FOLLOW(E)
-2. Production E → E + T:
-   - E appears on RHS. After E comes '+'. So FIRST(+) = {+} ∈ FOLLOW(E).
+1. Start symbol: $ âˆˆ FOLLOW(E)
+2. Production E â†’ E + T:
+   - E appears on RHS. After E comes '+'. So FIRST(+) = {+} âˆˆ FOLLOW(E).
    - '+' is a terminal, so we don't need to compute beyond it.
    
 So FOLLOW(E) = {$, +}
 
 Now we also need FOLLOW(T):
-From E → T: FOLLOW(E) ⊆ FOLLOW(T) → {$, +} ⊆ FOLLOW(T)
-From E → E + T: FOLLOW(E) ⊆ FOLLOW(T) → {$, +} ⊆ FOLLOW(T) (already added)
+From E â†’ T: FOLLOW(E) âŠ† FOLLOW(T) â†’ {$, +} âŠ† FOLLOW(T)
+From E â†’ E + T: FOLLOW(E) âŠ† FOLLOW(T) â†’ {$, +} âŠ† FOLLOW(T) (already added)
 Also FIRST of nothing after T (since +T follows E, not T directly).
 
-Wait, for E → E + T:
+Wait, for E â†’ E + T:
 The T is at the end. So everything in FOLLOW(E) goes to FOLLOW(T).
 FOLLOW(T) = FOLLOW(E) = {$, +}
 
 But is ')' in FOLLOW(E)? Let's check:
-From T → (E): After E comes ')'. So ')' ∈ FOLLOW(E).
+From T â†’ (E): After E comes ')'. So ')' âˆˆ FOLLOW(E).
 
 FOLLOW(E) = {$, +, )}
 
 Step 3: Check options
-FIRST(E) = {id, (} → matches
-FOLLOW(E) = {$, +, )} → matches option (A)
+FIRST(E) = {id, (} â†’ matches
+FOLLOW(E) = {$, +, )} â†’ matches option (A)
 
 Answer: (A)
 
-Common Trap: Forgetting that ')' follows E in T → (E) production.
+Common Trap: Forgetting that ')' follows E in T â†’ (E) production.
 also, students often confuse FIRST and FOLLOW computation rules.
 ```
 
-### Problem 9: Engineering Mathematics — Linear Algebra (GATE 2022)
+### Problem 9: Engineering Mathematics â€” Linear Algebra (GATE 2022)
 
 ```
 Q: Consider the matrix A = [[3, 1], [1, 3]]. What is the sum of the
@@ -874,17 +874,17 @@ Sum of eigenvalues = trace of matrix = sum of diagonal elements
 trace(A) = 3 + 3 = 6
 
 Method 2: Computing eigenvalues directly
-Characteristic equation: det(A - λI) = 0
-|3-λ   1 |
-| 1   3-λ| = 0
+Characteristic equation: det(A - Î»I) = 0
+|3-Î»   1 |
+| 1   3-Î»| = 0
 
-(3-λ)(3-λ) - 1 = 0
-(3-λ)² - 1 = 0
-λ² - 6λ + 9 - 1 = 0
-λ² - 6λ + 8 = 0
-(λ - 2)(λ - 4) = 0
-λ = 2, 4
-Sum = 2 + 4 = 6 ✓
+(3-Î»)(3-Î») - 1 = 0
+(3-Î»)Â² - 1 = 0
+Î»Â² - 6Î» + 9 - 1 = 0
+Î»Â² - 6Î» + 8 = 0
+(Î» - 2)(Î» - 4) = 0
+Î» = 2, 4
+Sum = 2 + 4 = 6 âœ“
 
 Answer: (B) 6
 
@@ -924,17 +924,17 @@ First level: We need 16 unique outputs.
 But we also need to decode the two most significant bits (to enable
 each of the 4 first-level decoders).
 
-Second level: 1 decoder to handle the 2 MSBs → 4 enable signals
+Second level: 1 decoder to handle the 2 MSBs â†’ 4 enable signals
 This requires 1 additional 2-to-4 decoder.
 
 Total decoders = 4 (first level) + 1 (second level) = 5
 
 Step 3: Verification
 Inputs A3, A2 are connected to the first-level decoder
-A3, A2 → 2-to-4 decoder → 4 enable lines
+A3, A2 â†’ 2-to-4 decoder â†’ 4 enable lines
 Each enable line connects to one of 4 second-level decoders
 Each second-level decoder takes A1, A0 as inputs and produces 4 outputs
-Total: 4 × 4 = 16 outputs ✓
+Total: 4 Ã— 4 = 16 outputs âœ“
 
 Answer: (B) 5
 
@@ -949,19 +949,19 @@ enable decoder. Always include the top-level decoder.
 | **Ignoring base cases** in recurrence | Fibonacci recursion count | Draw call tree for small n |
 | **Scheduling confusion** (SRTF vs SJF) | Forgetting preemption | Simulate time-slice by time-slice |
 | **Conflict serializability** edge cases | Blind write | Remember: W-W conflicts matter too |
-| **Pump counting** in TOC | Forgetting n ≥ 1 | Always check lower bounds |
+| **Pump counting** in TOC | Forgetting n â‰¥ 1 | Always check lower bounds |
 | **Pipeline imbalance** | Using sum for clock rate | Clock = max(stage delays) |
 | **FIRST/FOLLOW confusion** | Rules order | Memorize the 3 cases for FOLLOW |
 | **Trace vs determinant** | Eigenvalue properties | Trace = sum, det = product |
 | **Decoder hierarchy** | Missing enable decoder | Draw the tree |
 | **Hamiltonian cycles** | Rotation vs reversal | Read problem carefully |
-| **CSMA/CD formula** | Forgetting 2× | RTT = 2 × propagation delay |
+| **CSMA/CD formula** | Forgetting 2Ã— | RTT = 2 Ã— propagation delay |
 
 ### Time Management Tips Per Question Type
 
 | Question Type | Suggested Time | Strategy |
 |--------------|---------------|----------|
-| **1-mark MCQ** | 30-60 seconds | Solve or skip — no long calculations |
+| **1-mark MCQ** | 30-60 seconds | Solve or skip â€” no long calculations |
 | **1-mark MSQ** | 45-60 seconds | Check ALL options independently |
 | **1-mark NAT** | 60-90 seconds | Quick calculation, verify with estimation |
 | **2-mark MCQ** | 90-150 seconds | Eliminate wrong options first |
@@ -978,23 +978,23 @@ enable decoder. Always include the top-level decoder.
 
 | Subject | Recommended Book | Author | Priority |
 |---------|-----------------|--------|----------|
-| **Discrete Mathematics** | Discrete Mathematics and Its Applications | Kenneth H. Rosen | ★★★★★ |
-| **Data Structures** | Data Structures Using C | Reema Thareja / Aaron Tanenbaum | ★★★★★ |
-| **Algorithms** | Introduction to Algorithms | Cormen, Leiserson, Rivest, Stein (CLRS) | ★★★★★ |
-| **Operating Systems** | Operating System Concepts | Silberschatz, Galvin, Gagne | ★★★★★ |
-| **DBMS** | Database System Concepts | Silberschatz, Korth, Sudarshan | ★★★★★ |
-| **Computer Networks** | Computer Networking: A Top-Down Approach | Kurose & Ross | ★★★★ |
-| **Computer Organization** | Computer Organization and Architecture | William Stallings / Patterson & Hennessy | ★★★★ |
-| **Theory of Computation** | Introduction to Automata Theory | Hopcroft, Ullman, Motwani | ★★★★★ |
-| **Compiler Design** | Compilers: Principles, Techniques, and Tools | Aho, Lam, Sethi, Ullman (Dragon Book) | ★★★ |
-| **Digital Logic** | Digital Logic and Computer Design | M. Morris Mano | ★★★ |
-| **Engineering Mathematics** | Advanced Engineering Mathematics | Erwin Kreyszig | ★★★ |
-| **GATE Previous Year** | GATE Previous Year Solved Papers | Made Easy / G.K. Publications | ★★★★★ |
+| **Discrete Mathematics** | Discrete Mathematics and Its Applications | Kenneth H. Rosen | â˜…â˜…â˜…â˜…â˜… |
+| **Data Structures** | Data Structures Using C | Reema Thareja / Aaron Tanenbaum | â˜…â˜…â˜…â˜…â˜… |
+| **Algorithms** | Introduction to Algorithms | Cormen, Leiserson, Rivest, Stein (CLRS) | â˜…â˜…â˜…â˜…â˜… |
+| **Operating Systems** | Operating System Concepts | Silberschatz, Galvin, Gagne | â˜…â˜…â˜…â˜…â˜… |
+| **DBMS** | Database System Concepts | Silberschatz, Korth, Sudarshan | â˜…â˜…â˜…â˜…â˜… |
+| **Computer Networks** | Computer Networking: A Top-Down Approach | Kurose & Ross | â˜…â˜…â˜…â˜… |
+| **Computer Organization** | Computer Organization and Architecture | William Stallings / Patterson & Hennessy | â˜…â˜…â˜…â˜… |
+| **Theory of Computation** | Introduction to Automata Theory | Hopcroft, Ullman, Motwani | â˜…â˜…â˜…â˜…â˜… |
+| **Compiler Design** | Compilers: Principles, Techniques, and Tools | Aho, Lam, Sethi, Ullman (Dragon Book) | â˜…â˜…â˜… |
+| **Digital Logic** | Digital Logic and Computer Design | M. Morris Mano | â˜…â˜…â˜… |
+| **Engineering Mathematics** | Advanced Engineering Mathematics | Erwin Kreyszig | â˜…â˜…â˜… |
+| **GATE Previous Year** | GATE Previous Year Solved Papers | Made Easy / G.K. Publications | â˜…â˜…â˜…â˜…â˜… |
 
 **Reading Strategy**:
 - Do NOT read cover-to-cover. GATE tests specific topics within each subject.
 - Use GATE syllabus as your table of contents.
-- For each topic: read concept → solve 5-10 practice problems → solve GATE PYQs.
+- For each topic: read concept â†’ solve 5-10 practice problems â†’ solve GATE PYQs.
 - Skip advanced topics that are not in the GATE syllabus (e.g., skip B-trees in CLRS beyond basic operations).
 
 ### Online Resources
@@ -1026,19 +1026,19 @@ enable decoder. Always include the top-level decoder.
 
 | Test Series | Features | Rating |
 |------------|----------|--------|
-| **Made Easy** | Most popular, closest to actual GATE difficulty | ★★★★★ |
-| **ACE Engineering Academy** | High-quality questions, slightly tougher | ★★★★ |
-| **GATE Overflow (GO Classes)** | Excellent online community, detailed discussions | ★★★★★ |
-| **Unacademy Test Series** | Good for mock analysis | ★★★★ |
-| **Testbook** | Affordable, good mobile app | ★★★ |
-| **Previous Year Papers (free)** | Solve all past 10 years — best practice | ★★★★★ |
+| **Made Easy** | Most popular, closest to actual GATE difficulty | â˜…â˜…â˜…â˜…â˜… |
+| **ACE Engineering Academy** | High-quality questions, slightly tougher | â˜…â˜…â˜…â˜… |
+| **GATE Overflow (GO Classes)** | Excellent online community, detailed discussions | â˜…â˜…â˜…â˜…â˜… |
+| **Unacademy Test Series** | Good for mock analysis | â˜…â˜…â˜…â˜… |
+| **Testbook** | Affordable, good mobile app | â˜…â˜…â˜… |
+| **Previous Year Papers (free)** | Solve all past 10 years â€” best practice | â˜…â˜…â˜…â˜…â˜… |
 
 ### Formula Sheet Example
 
 Create compact formula sheets like this for each subject:
 
 ```
-═══ OPERATING SYSTEMS — QUICK FORMULAS ═══
+â•â•â• OPERATING SYSTEMS â€” QUICK FORMULAS â•â•â•
 
 SCHEDULING:
   Turnaround Time = Completion Time - Arrival Time
@@ -1047,39 +1047,39 @@ SCHEDULING:
 
   FCFS: Non-preemptive
   SJF: Can be preemptive (SRTF) or non-preemptive
-  Round Robin: Time quantum q → (n-1)q max wait per round
+  Round Robin: Time quantum q â†’ (n-1)q max wait per round
 
 MEMORY MANAGEMENT:
-  Effective Access Time (EAT) = Hit × TLB_Access + Miss × Page_Fault_Time
+  Effective Access Time (EAT) = Hit Ã— TLB_Access + Miss Ã— Page_Fault_Time
   Page fault rate: p
-  EAT = (1-p) × memory_access + p × page_fault_service_time
+  EAT = (1-p) Ã— memory_access + p Ã— page_fault_service_time
 
-  Optimal page replacement → highest future reference
+  Optimal page replacement â†’ highest future reference
 
 DISK SCHEDULING:
-  Seek time = head movement × seek_cost
-  FCFS → SSTF → SCAN (elevator) → C-SCAN → LOOK → C-LOOK
+  Seek time = head movement Ã— seek_cost
+  FCFS â†’ SSTF â†’ SCAN (elevator) â†’ C-SCAN â†’ LOOK â†’ C-LOOK
 
-═══ COMPUTER NETWORKS — QUICK FORMULAS ═══
+â•â•â• COMPUTER NETWORKS â€” QUICK FORMULAS â•â•â•
 
   Throughput (CSMA/CD) = 1 / (1 + 6.44a) where a = Tp/Tt
-  Minimum frame size = 2 × Tp × Bandwidth
+  Minimum frame size = 2 Ã— Tp Ã— Bandwidth
 
-  TCP throughput ≈ MSS × sqrt(3/2) / (RTT × sqrt(p))
+  TCP throughput â‰ˆ MSS Ã— sqrt(3/2) / (RTT Ã— sqrt(p))
   Where p = packet loss rate
 
   Efficiency of Stop-and-Wait = 1 / (1 + 2a)
   Sliding window efficiency = N / (1 + 2a) where N = window size
 
-═══ COMPUTER ORGANIZATION — QUICK FORMULAS ═══
+â•â•â• COMPUTER ORGANIZATION â€” QUICK FORMULAS â•â•â•
 
   Speedup (Pipeline) = Non-pipelined_time / Pipelined_time_per_instruction
-  Speedup = n / (1 + (n-1) × stall_probability)
+  Speedup = n / (1 + (n-1) Ã— stall_probability)
 
-  Cache: EAT = Hit_Rate × Hit_Time + Miss_Rate × Miss_Penalty
-  AMAT = Hit time + Miss rate × Miss penalty
+  Cache: EAT = Hit_Rate Ã— Hit_Time + Miss_Rate Ã— Miss_Penalty
+  AMAT = Hit time + Miss rate Ã— Miss penalty
 
-  Cache mapping: number of blocks mapping to a set = cache_size / (set_size × block_size)
+  Cache mapping: number of blocks mapping to a set = cache_size / (set_size Ã— block_size)
 ```
 
 ### Last Week Preparation (7 Days Before Exam)
@@ -1098,11 +1098,11 @@ DISK SCHEDULING:
 
 #### What NOT to Do
 
-- ❌ Do not start new topics in the last week
-- ❌ Do not attempt difficult problems that hurt confidence
-- ❌ Do not study for more than 5-6 hours (fatigue hurts more than it helps)
-- ❌ Do not change your strategy or attempt order on exam day
-- ❌ Do not discuss with friends who are also preparing (anxiety multiplies)
+- âŒ Do not start new topics in the last week
+- âŒ Do not attempt difficult problems that hurt confidence
+- âŒ Do not study for more than 5-6 hours (fatigue hurts more than it helps)
+- âŒ Do not change your strategy or attempt order on exam day
+- âŒ Do not discuss with friends who are also preparing (anxiety multiplies)
 
 ### Exam Day Strategy
 
@@ -1128,7 +1128,7 @@ DISK SCHEDULING:
 #### Attempt Order (Recommended)
 
 ```
-1. General Aptitude (all 15 marks — do first, it's easiest marks)
+1. General Aptitude (all 15 marks â€” do first, it's easiest marks)
 2. Subject 1-mark questions (quick wins)
 3. NAT questions in subjects you're strong in (no negative marking)
 4. Subject 2-mark questions you're confident about
@@ -1140,7 +1140,7 @@ DISK SCHEDULING:
 
 - **MCQ with no clue**: Leave unattempted (negative marking hurts)
 - **MCQ where you can eliminate 2 options**: Always attempt (50/50 chance is worth it)
-- **MSQ**: Always attempt in subjects you know (no negative marking for partially correct — check the policy for your GATE year)
+- **MSQ**: Always attempt in subjects you know (no negative marking for partially correct â€” check the policy for your GATE year)
 - **NAT**: Always attempt (no negative marking). Even a guess at the right magnitude can get marks.
 - **Never leave a NAT or MSQ unattempted** if you have any partial understanding
 
@@ -1150,9 +1150,9 @@ DISK SCHEDULING:
 Total time: 180 minutes = 10,800 seconds
 
 Breakdown:
-- General Aptitude: 15 questions → 15-20 minutes
-- Subject 1-mark questions: ~20 questions → 30-35 minutes
-- Subject 2-mark questions: ~30 questions → 100-110 minutes
+- General Aptitude: 15 questions â†’ 15-20 minutes
+- Subject 1-mark questions: ~20 questions â†’ 30-35 minutes
+- Subject 2-mark questions: ~30 questions â†’ 100-110 minutes
 - Review: 15-20 minutes
 
 For a 2-mark problem, if you spend more than 3 minutes without being
@@ -1191,7 +1191,7 @@ For PSU recruitment, **GATE marks > GATE rank** (since PSUs often have their own
 
 ```
 GATE is NOT an IQ test. It is a preparation test.
-The difference between a rank 100 and rank 1000 is NOT intelligence —
+The difference between a rank 100 and rank 1000 is NOT intelligence â€”
 it is consistency over 6 months.
 
 Key numbers to remember:
@@ -1230,31 +1230,31 @@ T(1) = 1
 
 What is the time complexity of T(n)?
 
-(A) Θ(n)
-(B) Θ(n log n)
-(C) Θ(n²)
-(D) Θ(n^(3/2))
+(A) Î˜(n)
+(B) Î˜(n log n)
+(C) Î˜(nÂ²)
+(D) Î˜(n^(3/2))
 ```
 
 **Solution (Step-by-Step):**
 ```
 Step 1: Use recursion tree method.
 At root: cost = n
-Level 1: n/2 + n/4 + n/8 = n × (1/2 + 1/4 + 1/8) = n × 7/8
+Level 1: n/2 + n/4 + n/8 = n Ã— (1/2 + 1/4 + 1/8) = n Ã— 7/8
 Level 2: each node of n/2 gives n/4 + n/8 + n/16, etc.
-         Total = n × (7/8)²
+         Total = n Ã— (7/8)Â²
 
 Step 2: Geometric series
-Total work = n × [1 + 7/8 + (7/8)² + (7/8)³ + ...]
+Total work = n Ã— [1 + 7/8 + (7/8)Â² + (7/8)Â³ + ...]
 
-Step 3: Sum = n × 1/(1 - 7/8) = n × 8 = 8n
+Step 3: Sum = n Ã— 1/(1 - 7/8) = n Ã— 8 = 8n
 
-Step 4: Since the series converges, T(n) = Θ(n)
+Step 4: Since the series converges, T(n) = Î˜(n)
 
-Answer: (A) Θ(n)
+Answer: (A) Î˜(n)
 
 Common Trap: Students assume the tree has log n levels and each level
-costs O(n), giving Θ(n log n). But the branching factor sum here is
+costs O(n), giving Î˜(n log n). But the branching factor sum here is
 7/8 < 1, so the series converges geometrically.
 ```
 
@@ -1274,18 +1274,18 @@ height 4? (Height of a tree with a single node is 0.)
 ```
 Step 1: Maximum nodes = full/complete BST
 Number of nodes at each level:
-Level 0: 2⁰ = 1
-Level 1: 2¹ = 2
-Level 2: 2² = 4
-Level 3: 2³ = 8
-Level 4: 2⁴ = 16
+Level 0: 2â° = 1
+Level 1: 2Â¹ = 2
+Level 2: 2Â² = 4
+Level 3: 2Â³ = 8
+Level 4: 2â´ = 16
 
-Step 2: Total = 2⁰ + 2¹ + 2² + 2³ + 2⁴
+Step 2: Total = 2â° + 2Â¹ + 2Â² + 2Â³ + 2â´
         = 1 + 2 + 4 + 8 + 16
         = 31
 
 Alternatively: For height h, max nodes = 2^(h+1) - 1
-For h = 4: 2⁵ - 1 = 32 - 1 = 31
+For h = 4: 2âµ - 1 = 32 - 1 = 31
 
 Answer: (B) 31
 
@@ -1311,25 +1311,25 @@ What is the index of the last key inserted (56)?
 
 **Solution (Step-by-Step):**
 ```
-Step 1: Insert 50: h1(50) = 50 mod 7 = 1 → index 1 (empty)
-Step 2: Insert 21: h1(21) = 21 mod 7 = 0 → index 0 (empty)
-Step 3: Insert 58: h1(58) = 58 mod 7 = 2 → index 2 (empty)
-Step 4: Insert 17: h1(17) = 17 mod 7 = 3 → index 3 (empty)
-Step 5: Insert 15: h1(15) = 15 mod 7 = 1 → occupied!
+Step 1: Insert 50: h1(50) = 50 mod 7 = 1 â†’ index 1 (empty)
+Step 2: Insert 21: h1(21) = 21 mod 7 = 0 â†’ index 0 (empty)
+Step 3: Insert 58: h1(58) = 58 mod 7 = 2 â†’ index 2 (empty)
+Step 4: Insert 17: h1(17) = 17 mod 7 = 3 â†’ index 3 (empty)
+Step 5: Insert 15: h1(15) = 15 mod 7 = 1 â†’ occupied!
          h2(15) = 1 + (15 mod 5) = 1 + 0 = 1
-         Probe: (1 + 1×1) mod 7 = 2 → occupied
-                (1 + 2×1) mod 7 = 3 → occupied
-                (1 + 3×1) mod 7 = 4 → empty! Insert at 4.
-Step 6: Insert 49: h1(49) = 49 mod 7 = 0 → occupied!
+         Probe: (1 + 1Ã—1) mod 7 = 2 â†’ occupied
+                (1 + 2Ã—1) mod 7 = 3 â†’ occupied
+                (1 + 3Ã—1) mod 7 = 4 â†’ empty! Insert at 4.
+Step 6: Insert 49: h1(49) = 49 mod 7 = 0 â†’ occupied!
          h2(49) = 1 + (49 mod 5) = 1 + 4 = 5
-         Probe: (0 + 1×5) mod 7 = 5 → empty! Insert at 5.
-Step 7: Insert 56: h1(56) = 56 mod 7 = 0 → occupied!
+         Probe: (0 + 1Ã—5) mod 7 = 5 â†’ empty! Insert at 5.
+Step 7: Insert 56: h1(56) = 56 mod 7 = 0 â†’ occupied!
          h2(56) = 1 + (56 mod 5) = 1 + 1 = 2
-         Probe: (0 + 1×2) mod 7 = 2 → occupied
-                (0 + 2×2) mod 7 = 4 → occupied
-                (0 + 3×2) mod 7 = 6 → empty! Insert at 6.
+         Probe: (0 + 1Ã—2) mod 7 = 2 â†’ occupied
+                (0 + 2Ã—2) mod 7 = 4 â†’ occupied
+                (0 + 3Ã—2) mod 7 = 6 â†’ empty! Insert at 6.
 
-Answer: (D) 3 — wait, 56 was inserted at index 6.
+Answer: (D) 3 â€” wait, 56 was inserted at index 6.
 Actually, let me re-check the options. Index of 56 is 6.
 
 Hmm, the options don't have 6. Let me re-examine the question.
@@ -1343,7 +1343,7 @@ For the actual GATE 2022 question, answer was index at position 3.
 The probing sequence continued until finding the correct slot.
 ```
 
-#### Problem 14: Graph — Spanning Tree (GATE 2023)
+#### Problem 14: Graph â€” Spanning Tree (GATE 2023)
 
 ```
 Q: Consider a complete undirected graph with 4 vertices K4.
@@ -1361,7 +1361,7 @@ minimum spanning trees?
 Step 1: K4 has 4 vertices and 6 edges, all weight 1.
 Any spanning tree of K4 uses 3 edges (n-1 = 3).
 
-Step 2: Total spanning trees in K4 = 4^(4-2) = 4² = 16
+Step 2: Total spanning trees in K4 = 4^(4-2) = 4Â² = 16
 (By Cayley's formula: number of spanning trees in Kn = n^(n-2))
 
 Step 3: Since all edges have weight 1, every spanning tree is
@@ -1371,7 +1371,7 @@ Number of MSTs = number of spanning trees = 16
 
 Verification: K4 spanning trees:
 - Choose any 3 of 6 edges that form a tree (no cycles)
-- Total labeled trees on 4 vertices = 4² = 16
+- Total labeled trees on 4 vertices = 4Â² = 16
 
 Answer: (D) 16
 
@@ -1399,15 +1399,15 @@ replace it with either:
 - Inorder successor (smallest in right subtree)
 
 Step 2: Analysis of options:
-(A) Inorder predecessor → valid replacement ✓
-(B) Inorder successor → valid replacement ✓
-(C) Parent of inorder successor → this is NOT a valid replacement.
+(A) Inorder predecessor â†’ valid replacement âœ“
+(B) Inorder successor â†’ valid replacement âœ“
+(C) Parent of inorder successor â†’ this is NOT a valid replacement.
       The parent of the successor is not necessarily the next
-      node in sorted order after 50. ✗
-(D) Left child → valid only if left child is the predecessor,
+      node in sorted order after 50. âœ—
+(D) Left child â†’ valid only if left child is the predecessor,
       which it may be if left child has no right subtree.
       But as a general statement, the left child could be
-      the predecessor. ✓ in certain cases.
+      the predecessor. âœ“ in certain cases.
 
 Step 3: The question asks which CANNOT be the successor.
 (C) is the correct answer because the parent of the inorder
@@ -1443,17 +1443,17 @@ Array: [15, 5, 8, 7, 9, 10, 12]
 
 Step 3: Percolate down (heapify):
 Compare 15 with children 5 and 8. Min child = 5. 15 > 5, swap.
-→ [5, 15, 8, 7, 9, 10, 12]
+â†’ [5, 15, 8, 7, 9, 10, 12]
 
 Compare 15 with children 7 and 9. Min child = 7. 15 > 7, swap.
-→ [5, 7, 8, 15, 9, 10, 12]
+â†’ [5, 7, 8, 15, 9, 10, 12]
 
 Compare 15 with children 9 and 10 (at indices 3's children: 7,8).
 15 > 9, swap.
-→ [5, 7, 8, 9, 15, 10, 12]
+â†’ [5, 7, 8, 9, 15, 10, 12]
 Wait, 15's children at indices 7,8 which are out of bounds.
 15 has only one child (9 at index 7), and 15 > 9, swap.
-→ [5, 7, 8, 9, 15, 10, 12]... no that's wrong.
+â†’ [5, 7, 8, 9, 15, 10, 12]... no that's wrong.
 
 Let me redo carefully.
 
@@ -1462,13 +1462,13 @@ Array: [15, 5, 8, 7, 9, 10, 12]  (length 7)
 Index:  0   1  2  3  4   5   6
 
 i=0: 15 vs children 5(i=1), 8(i=2). Min child = 5. Swap.
-→ [5, 15, 8, 7, 9, 10, 12]
+â†’ [5, 15, 8, 7, 9, 10, 12]
 
 i=1: 15 vs children 7(i=3), 9(i=4). Min child = 7. Swap.
-→ [5, 7, 8, 15, 9, 10, 12]
+â†’ [5, 7, 8, 15, 9, 10, 12]
 
 i=3: 15 vs children... index 7 and 8 are out of bounds (len=7).
-Only left child at 7 if it exists. 7 ≥ 7 (out), so stop.
+Only left child at 7 if it exists. 7 â‰¥ 7 (out), so stop.
 
 Final: [5, 7, 8, 15, 9, 10, 12]
 
@@ -1506,7 +1506,7 @@ Heapify at 15: swap with min child (7):
     / \    / \
    15  9  10 12
 
-Heapify at 15: children at indices 7,8 — out of bounds. Done.
+Heapify at 15: children at indices 7,8 â€” out of bounds. Done.
 
 Level-order: [5, 7, 8, 15, 9, 10, 12]
 
@@ -1552,18 +1552,18 @@ Need P2 = [6, 0, 0]
 Need P3 = [0, 1, 1]
 
 Step 2: Check if any process can be satisfied by Available = [3, 3, 2]
-P1: Need [1, 2, 2] ≤ Available [3, 3, 2] ✓
+P1: Need [1, 2, 2] â‰¤ Available [3, 3, 2] âœ“
 
 Step 3: Assume P1 runs. New Available = [3,3,2] + [2,0,0] = [5,3,2]
-P3: Need [0,1,1] ≤ [5,3,2] ✓
+P3: Need [0,1,1] â‰¤ [5,3,2] âœ“
 
 Step 4: P3 runs. New Available = [5,3,2] + [2,1,1] = [7,4,3]
-P0: Need [7,4,3] ≤ [7,4,3] ✓
+P0: Need [7,4,3] â‰¤ [7,4,3] âœ“
 
 Step 5: P0 runs. New Available = [7,4,3] + [0,1,0] = [7,5,3]
-P2: Need [6,0,0] ≤ [7,5,3] ✓
+P2: Need [6,0,0] â‰¤ [7,5,3] âœ“
 
-Safe sequence: P1 → P3 → P0 → P2
+Safe sequence: P1 â†’ P3 â†’ P0 â†’ P2
 
 Answer: (A) Yes, safe state exists
 
@@ -1571,7 +1571,7 @@ Common Trap: Forgetting to add allocated resources back to
 Available when a process completes.
 ```
 
-#### Problem 18: Page Replacement — LRU (GATE 2021)
+#### Problem 18: Page Replacement â€” LRU (GATE 2021)
 
 ```
 Q: Consider the page reference string: 7, 0, 1, 2, 0, 3, 0, 4,
@@ -1586,28 +1586,28 @@ Using LRU with 4 page frames, how many page faults occur?
 
 **Solution (Step-by-Step):**
 ```
-Frames: 4. Track the LRU order (least recently used → most recent).
+Frames: 4. Track the LRU order (least recently used â†’ most recent).
 
-Ref: 7 → [7]                  fault=1
-Ref: 0 → [7, 0]               fault=2
-Ref: 1 → [7, 0, 1]            fault=3
-Ref: 2 → [7, 0, 1, 2]         fault=4  (all frames full now)
-Ref: 0 → [7, 1, 2, 0]         hit — 0 moved to most recent
-Ref: 3 → [1, 2, 0, 3]         fault=5  (replaces 7, LRU)
-Ref: 0 → [1, 2, 3, 0]         hit
-Ref: 4 → [2, 3, 0, 4]         fault=6  (replaces 1, LRU)
-Ref: 2 → [3, 0, 4, 2]         hit
-Ref: 3 → [0, 4, 2, 3]         hit
-Ref: 0 → [4, 2, 3, 0]         hit
-Ref: 3 → [4, 2, 0, 3]         hit
-Ref: 2 → [4, 0, 3, 2]         hit
-Ref: 1 → [0, 3, 2, 1]         fault=7  (replaces 4)
-Ref: 2 → [0, 3, 1, 2]         hit
-Ref: 0 → [3, 1, 2, 0]         hit
-Ref: 1 → [3, 2, 0, 1]         hit
-Ref: 7 → [2, 0, 1, 7]         fault=8  (replaces 3)
-Ref: 0 → [2, 1, 7, 0]         hit
-Ref: 1 → [2, 7, 0, 1]         hit
+Ref: 7 â†’ [7]                  fault=1
+Ref: 0 â†’ [7, 0]               fault=2
+Ref: 1 â†’ [7, 0, 1]            fault=3
+Ref: 2 â†’ [7, 0, 1, 2]         fault=4  (all frames full now)
+Ref: 0 â†’ [7, 1, 2, 0]         hit â€” 0 moved to most recent
+Ref: 3 â†’ [1, 2, 0, 3]         fault=5  (replaces 7, LRU)
+Ref: 0 â†’ [1, 2, 3, 0]         hit
+Ref: 4 â†’ [2, 3, 0, 4]         fault=6  (replaces 1, LRU)
+Ref: 2 â†’ [3, 0, 4, 2]         hit
+Ref: 3 â†’ [0, 4, 2, 3]         hit
+Ref: 0 â†’ [4, 2, 3, 0]         hit
+Ref: 3 â†’ [4, 2, 0, 3]         hit
+Ref: 2 â†’ [4, 0, 3, 2]         hit
+Ref: 1 â†’ [0, 3, 2, 1]         fault=7  (replaces 4)
+Ref: 2 â†’ [0, 3, 1, 2]         hit
+Ref: 0 â†’ [3, 1, 2, 0]         hit
+Ref: 1 â†’ [3, 2, 0, 1]         hit
+Ref: 7 â†’ [2, 0, 1, 7]         fault=8  (replaces 3)
+Ref: 0 â†’ [2, 1, 7, 0]         hit
+Ref: 1 â†’ [2, 7, 0, 1]         hit
 
 Total page faults = 8
 
@@ -1644,9 +1644,9 @@ The counting semaphore acts as a resource counter.
 
 Step 2: Maximum in CS:
 If all three execute P(S):
-- Process 1: P(S) → S = 1, enters CS
-- Process 2: P(S) → S = 0, enters CS
-- Process 3: P(S) → S = -1, blocked (waiting)
+- Process 1: P(S) â†’ S = 1, enters CS
+- Process 2: P(S) â†’ S = 0, enters CS
+- Process 3: P(S) â†’ S = -1, blocked (waiting)
 
 Maximum = 2 (limited by semaphore value)
 
@@ -1660,7 +1660,7 @@ the first process.
 
 Minimum = 1
 
-Wait — if all three processes call P(S) concurrently, two will
+Wait â€” if all three processes call P(S) concurrently, two will
 succeed and one will block. So exactly 2 get in.
 
 But the question asks for min/max possible. With different
@@ -1674,7 +1674,7 @@ succeeds for at least one process (S starts at 2), at least
 1 process can always enter.
 ```
 
-#### Problem 20: Disk Scheduling — SCAN (GATE 2023)
+#### Problem 20: Disk Scheduling â€” SCAN (GATE 2023)
 
 ```
 Q: Disk has 200 cylinders (0-199). The disk head starts at
@@ -1695,38 +1695,38 @@ movement?
 Step 1: Sort requests and separate by direction.
 Current position: 50, direction: upward (toward 199).
 
-Requests going up (≥ 50): 65, 75, 95, 110, 145, 185
+Requests going up (â‰¥ 50): 65, 75, 95, 110, 145, 185
 Requests going down (< 50): 30, 25
 
 Step 2: SCAN moves in current direction to the end, then reverses.
-Service order: 50 → 65 → 75 → 95 → 110 → 145 → 185 → 199 (end)
-Then reverse: 199 → 30 → 25
+Service order: 50 â†’ 65 â†’ 75 â†’ 95 â†’ 110 â†’ 145 â†’ 185 â†’ 199 (end)
+Then reverse: 199 â†’ 30 â†’ 25
 
 Step 3: Calculate movements:
-50 → 65: 15
-65 → 75: 10
-75 → 95: 20
-95 → 110: 15
-110 → 145: 35
-145 → 185: 40
-185 → 199: 14
-199 → 30: 169 (from end back down)
-30 → 25: 5
+50 â†’ 65: 15
+65 â†’ 75: 10
+75 â†’ 95: 20
+95 â†’ 110: 15
+110 â†’ 145: 35
+145 â†’ 185: 40
+185 â†’ 199: 14
+199 â†’ 30: 169 (from end back down)
+30 â†’ 25: 5
 
 Total = 15 + 10 + 20 + 15 + 35 + 40 + 14 + 169 + 5 = 323
 
 Hmm, that doesn't match options exactly. Let me recount.
 
-Actually, 185 → 199 = 14, and 199 → 30 = 169.
+Actually, 185 â†’ 199 = 14, and 199 â†’ 30 = 169.
 15 + 10 + 20 + 15 + 35 + 40 + 14 + 169 + 5 = 323.
 
 Since 323 is not in options, let me check if the end cylinder
 is 199 or if they use a different convention.
 
 If end is at 199 and we count from 50:
-Service: 50 → 65 → 75 → 95 → 110 → 145 → 185 → 199
+Service: 50 â†’ 65 â†’ 75 â†’ 95 â†’ 110 â†’ 145 â†’ 185 â†’ 199
 Distances: 15+10+20+15+35+40+14 = 149
-Then 199 → 30 → 25: 169+5 = 174
+Then 199 â†’ 30 â†’ 25: 169+5 = 174
 Total = 149+174 = 323
 
 None of the options match exactly. Let me check if SCAN
@@ -1742,7 +1742,7 @@ and the options were designed for slightly different parameters.
 In the actual GATE problem, answer was closer to (B) 315
 or (D) 360 depending on exact request set and end conditions.
 
-Answer: (D) 360 — for the actual GATE 2023 SCAN problem.
+Answer: (D) 360 â€” for the actual GATE 2023 SCAN problem.
 ```
 
 #### Problem 21: TLB and Effective Access Time (GATE 2024)
@@ -1761,8 +1761,8 @@ access time (EMAT) assuming a single-level page table?
 **Solution (Step-by-Step):**
 ```
 Step 1: EMAT formula with TLB:
-EMAT = Hit_Rate × (TLB_Time + Memory_Access)
-       + Miss_Rate × (TLB_Time + Page_Table_Access + Memory_Access)
+EMAT = Hit_Rate Ã— (TLB_Time + Memory_Access)
+       + Miss_Rate Ã— (TLB_Time + Page_Table_Access + Memory_Access)
 
 With single-level page table, page table access = 1 memory access.
 
@@ -1771,8 +1771,8 @@ Hit rate = 0.90, Miss rate = 0.10
 TLB time = 20 ns
 Memory access = 100 ns
 
-EMAT = 0.90 × (20 + 100) + 0.10 × (20 + 100 + 100)
-     = 0.90 × 120 + 0.10 × 220
+EMAT = 0.90 Ã— (20 + 100) + 0.10 Ã— (20 + 100 + 100)
+     = 0.90 Ã— 120 + 0.10 Ã— 220
      = 108 + 22
      = 130 ns
 
@@ -1782,7 +1782,7 @@ Common Trap: Forgetting that page table access on a TLB miss
 requires an additional memory access (to read the page table).
 ```
 
-#### Problem 22: File System — Inode (GATE 2025)
+#### Problem 22: File System â€” Inode (GATE 2025)
 
 ```
 Q: A UNIX-like file system uses inodes with:
@@ -1806,49 +1806,49 @@ Step 1: Number of pointers per block = Block size / Pointer size
 = 4096 / 4 = 1024 pointers per block
 
 Step 2: Data accessible through each pointer type:
-Direct blocks: 10 × 4 KB = 40 KB
+Direct blocks: 10 Ã— 4 KB = 40 KB
 
-Single indirect: 1 block × 1024 pointers × 4 KB = 4 MB
+Single indirect: 1 block Ã— 1024 pointers Ã— 4 KB = 4 MB
 
-Double indirect: 1 block → 1024 single-indirect blocks
-→ 1024 × 1024 × 4 KB = 4 GB
+Double indirect: 1 block â†’ 1024 single-indirect blocks
+â†’ 1024 Ã— 1024 Ã— 4 KB = 4 GB
 
-Triple indirect: 1 block → 1024 double-indirect blocks
-→ 1024 × 4 GB = 4 TB
+Triple indirect: 1 block â†’ 1024 double-indirect blocks
+â†’ 1024 Ã— 4 GB = 4 TB
 
 Wait, let me recalculate:
-Triple indirect: 1 block → 1024 pointers to double-indirect blocks
-Each double-indirect → 1024² × 4 KB = 4 GB
-Triple indirect = 1024 × 4 GB = 4 TB
+Triple indirect: 1 block â†’ 1024 pointers to double-indirect blocks
+Each double-indirect â†’ 1024Â² Ã— 4 KB = 4 GB
+Triple indirect = 1024 Ã— 4 GB = 4 TB
 
 Step 3: Maximum file size = Direct + Single + Double + Triple
 = 40 KB + 4 MB + 4 GB + 4 TB
-≈ 4 TB + 4 GB + small amounts
-≈ 4.004 TB
+â‰ˆ 4 TB + 4 GB + small amounts
+â‰ˆ 4.004 TB
 
 The dominant term is the triple indirect: ~4 TB.
 
-Answer: (A) ~4 GB — wait, that's not right. Let me re-check.
-4 TB ≈ 4096 GB. None of the options mention TB.
+Answer: (A) ~4 GB â€” wait, that's not right. Let me re-check.
+4 TB â‰ˆ 4096 GB. None of the options mention TB.
 
 Hmm, let me reconsider. Some GATE problems use different
 block sizes or pointer sizes. Let me adjust the numbers.
 
 Actually, with block size = 4 KB and pointer = 4 bytes:
-Number of pointers per block = 4096/4 = 1024 = 2¹⁰
+Number of pointers per block = 4096/4 = 1024 = 2Â¹â°
 
-Direct: 10 × 4 KB = 40 KB
-Single indirect: 2¹⁰ × 4 KB = 4 MB
-Double indirect: 2¹⁰ × 2¹⁰ × 4 KB = 4 GB
-Triple indirect: 2¹⁰ × 2¹⁰ × 2¹⁰ × 4 KB = 4 TB
+Direct: 10 Ã— 4 KB = 40 KB
+Single indirect: 2Â¹â° Ã— 4 KB = 4 MB
+Double indirect: 2Â¹â° Ã— 2Â¹â° Ã— 4 KB = 4 GB
+Triple indirect: 2Â¹â° Ã— 2Â¹â° Ã— 2Â¹â° Ã— 4 KB = 4 TB
 
-Total ≈ 4 TB
+Total â‰ˆ 4 TB
 
 The options provided are in GB range, so this may use different
 parameters in the actual GATE paper (e.g., smaller block or
 fewer direct pointers). The computation method is what matters.
 
-Answer: (C) ~64 GB — for the specific GATE 2025 parameters.
+Answer: (C) ~64 GB â€” for the specific GATE 2025 parameters.
 
 Common Trap: Forgetting to multiply by block size after counting
 pointers. Students often report the number of blocks, not the
@@ -1859,7 +1859,7 @@ actual data size.
 
 ### Database Management Systems
 
-#### Problem 23: SQL — Correlated Subquery (GATE 2020)
+#### Problem 23: SQL â€” Correlated Subquery (GATE 2020)
 
 ```
 Q: Given relations: Employee(eid, name, salary, did)
@@ -1888,18 +1888,18 @@ salary is greater than the department's budget?
 ```
 Step 1: Analyze each option:
 
-Option (A): Correlated subquery — for each department,
+Option (A): Correlated subquery â€” for each department,
 computes average salary of employees in that department.
-Compares with budget. ✓ Correct syntax and logic.
+Compares with budget. âœ“ Correct syntax and logic.
 
 Option (B): AVG(e.salary) is incorrectly placed in WHERE clause
-without being in a subquery. SQL syntax error. ✗
+without being in a subquery. SQL syntax error. âœ—
 
 Option (C): AVG in WHERE clause without HAVING. Aggregate
-functions can't be used directly in WHERE. ✗
+functions can't be used directly in WHERE. âœ—
 
 Option (D): Subquery computes overall AVG across all employees,
-not per-department average. No correlation. ✗
+not per-department average. No correlation. âœ—
 
 Step 2: Option (A) is the correct correlated subquery pattern.
 For each tuple in Department d, the inner query computes the
@@ -1912,11 +1912,11 @@ The question specifically asks for department-wise averages,
 not overall average.
 ```
 
-#### Problem 24: Normalization — Highest Normal Form (GATE 2021)
+#### Problem 24: Normalization â€” Highest Normal Form (GATE 2021)
 
 ```
 Q: Consider relation R(A, B, C, D, E) with functional dependencies:
-AB → C, C → D, D → B, D → E
+AB â†’ C, C â†’ D, D â†’ B, D â†’ E
 
 What is the highest normal form satisfied by R?
 
@@ -1929,30 +1929,30 @@ What is the highest normal form satisfied by R?
 **Solution (Step-by-Step):**
 ```
 Step 1: Find candidate keys.
-Closure of AB: AB⁺ = {A, B, C, D, E} = all attributes → AB is CK
+Closure of AB: ABâº = {A, B, C, D, E} = all attributes â†’ AB is CK
 Can any smaller set be a key?
-A⁺ = {A}, B⁺ = {B} — neither is a key.
+Aâº = {A}, Bâº = {B} â€” neither is a key.
 So candidate keys = {AB}
 
 Step 2: Check BCNF:
 For BCNF, LHS of every FD must be a superkey.
-AB → C: AB is a CK → OK ✓
-C → D: C is NOT a superkey → violates BCNF ✗
-D → B: D is NOT a superkey → violates BCNF ✗
-D → E: D is NOT a superkey → violates BCNF ✗
+AB â†’ C: AB is a CK â†’ OK âœ“
+C â†’ D: C is NOT a superkey â†’ violates BCNF âœ—
+D â†’ B: D is NOT a superkey â†’ violates BCNF âœ—
+D â†’ E: D is NOT a superkey â†’ violates BCNF âœ—
 Not in BCNF.
 
 Step 3: Check 3NF:
-For 3NF, for each FD X → Y, either X is a superkey or
+For 3NF, for each FD X â†’ Y, either X is a superkey or
 Y is part of a candidate key.
 
-AB → C: AB is CK → OK ✓
-C → D: C not superkey. Is D part of a CK? CK = {AB}, D ∉ AB.
-        D is not prime attribute. Violates 3NF. ✗
+AB â†’ C: AB is CK â†’ OK âœ“
+C â†’ D: C not superkey. Is D part of a CK? CK = {AB}, D âˆ‰ AB.
+        D is not prime attribute. Violates 3NF. âœ—
 
 Answer: (B) 2NF
 
-Wait — let me check 2NF first.
+Wait â€” let me check 2NF first.
 2NF: No partial dependency (non-prime attribute depends on part
 of a candidate key). CK = {AB}. Both A and B are prime attributes.
 Partial dependency occurs when a non-prime attribute depends on
@@ -1962,24 +1962,24 @@ But all FDs have LHS that are either the full CK (AB) or are
 single attributes (C, D). Let's check if any non-prime depends
 on part of CK.
 
-AB → C: C depends on full CK, OK.
-C → D: D depends on C (transitively on AB through C)
-D → B: B is prime attribute, OK.
-D → E: E depends on D (transitively on AB through C → D)
+AB â†’ C: C depends on full CK, OK.
+C â†’ D: D depends on C (transitively on AB through C)
+D â†’ B: B is prime attribute, OK.
+D â†’ E: E depends on D (transitively on AB through C â†’ D)
 
 No partial dependencies because AB is the only CK and every
 FD needing checking has LHS = AB (full CK) or involves only
 prime/non-prime attributes through transitive dependencies.
 
 Actually, C, D, E are non-prime (not part of CK {AB}).
-There's no dependency like A → C or B → C (partial), so 2NF holds.
+There's no dependency like A â†’ C or B â†’ C (partial), so 2NF holds.
 
 So R is in 2NF but not 3NF.
 
 Answer: (B) 2NF
 
 Common Trap: Thinking 3NF holds because all RHS are prime or
-superkey-related. The FD C → D has C not superkey and D not
+superkey-related. The FD C â†’ D has C not superkey and D not
 prime (since CK = {AB}), so 3NF is violated.
 ```
 
@@ -2007,7 +2007,7 @@ Step 1: B+ tree order d = 3 means:
 
 Let's use the common GATE convention:
 Order d = maximum number of pointers in internal node = 3
-Wait — order definition varies. Let me clarify.
+Wait â€” order definition varies. Let me clarify.
 
 Definition 1: Order = max number of children (pointers) = 3
 Definition 2: Order = max number of keys = d, then pointers = d+1
@@ -2018,7 +2018,7 @@ up to 2d pointers. So d=3, max pointers = 6, max keys = 5.
 
 Step 2: Height 0 (root): max 1 node with 5 keys
 Height 1: max 6 children of root, each with 5 keys = 30 keys
-Height 2: max 6² = 36 nodes, each with 5 keys = 180 keys
+Height 2: max 6Â² = 36 nodes, each with 5 keys = 180 keys
 
 Hmm, that doesn't match options either. Let me try another
 common convention used in GATE.
@@ -2027,14 +2027,14 @@ Some GATE problems define order as the maximum number of keys
 per node. If order = 3 means max 3 keys per node:
 
 Root (h=0): 3 keys
-Level 1: max 4 children × 3 keys = 12
-Level 2: max 4² = 16 children × 3 keys = 48
+Level 1: max 4 children Ã— 3 keys = 12
+Level 2: max 4Â² = 16 children Ã— 3 keys = 48
 
 Nope. Let me try: order = 3 means max 3 pointers:
 
 Root: 2 keys, 3 children
-Level 1: 3 nodes × 2 keys = 6 keys
-Level 2: 9 nodes × 2 keys = 18 keys
+Level 1: 3 nodes Ã— 2 keys = 6 keys
+Level 2: 9 nodes Ã— 2 keys = 18 keys
 Total up to here: 2+6+18 = 26
 
 Still not matching. The exact computation depends on how
@@ -2051,7 +2051,7 @@ GATE usually specifies the definition clearly in the problem.
 Read the definition provided.
 ```
 
-#### Problem 26: Transaction — View Serializability (GATE 2023)
+#### Problem 26: Transaction â€” View Serializability (GATE 2023)
 
 ```
 Q: Consider schedule S:
@@ -2072,16 +2072,16 @@ Which of the following is correct?
 Step 1: Check conflict serializability.
 Conflicting operations (same data, different T, at least one W):
 
-W1(A) and R2(A): T1 → T2 (W1 before R2 of A)
-W1(A) and R3(A): T1 → T3 (W1 before R3 of A)
+W1(A) and R2(A): T1 â†’ T2 (W1 before R2 of A)
+W1(A) and R3(A): T1 â†’ T3 (W1 before R3 of A)
 
-W2(B) and W3(B): T2 → T3 (W2 before W3 of B)
+W2(B) and W3(B): T2 â†’ T3 (W2 before W3 of B)
 
-Wait — R2(B) and W3(B): R2(B) before W3(B), so T2 → T3
-W2(B) and W3(B): W2(B) before W3(B), so T2 → T3
+Wait â€” R2(B) and W3(B): R2(B) before W3(B), so T2 â†’ T3
+W2(B) and W3(B): W2(B) before W3(B), so T2 â†’ T3
 
-Edges: T1 → T2, T1 → T3, T2 → T3
-No cycles → conflict serializable.
+Edges: T1 â†’ T2, T1 â†’ T3, T2 â†’ T3
+No cycles â†’ conflict serializable.
 
 Step 2: Check view serializability.
 A schedule is view serializable if it's view equivalent to
@@ -2091,11 +2091,11 @@ automatically view serializable.
 Answer: (C) S is both conflict and view serializable
 
 Common Trap: Confusing conflict and view serializability.
-Conflict serializable ⊆ View serializable. All conflict
+Conflict serializable âŠ† View serializable. All conflict
 serializable schedules are view serializable.
 ```
 
-#### Problem 27: Relational Algebra — Division (GATE 2024)
+#### Problem 27: Relational Algebra â€” Division (GATE 2024)
 
 ```
 Q: Relations: Student(sid, sname), Enrolled(sid, cid, semester)
@@ -2103,33 +2103,33 @@ Q: Relations: Student(sid, sname), Enrolled(sid, cid, semester)
 Which relational algebra expression finds students enrolled in
 ALL courses?
 
-(A) π_sid(Enrolled) ÷ π_cid(Course)
-(B) π_sid(Enrolled) × π_cid(Course)
-(C) σ_count(cid)=total(π_sid,cid(Enrolled))
-(D) π_sid(Enrolled) − (π_sid(Enrolled) − π_cid(Course))
+(A) Ï€_sid(Enrolled) Ã· Ï€_cid(Course)
+(B) Ï€_sid(Enrolled) Ã— Ï€_cid(Course)
+(C) Ïƒ_count(cid)=total(Ï€_sid,cid(Enrolled))
+(D) Ï€_sid(Enrolled) âˆ’ (Ï€_sid(Enrolled) âˆ’ Ï€_cid(Course))
 ```
 
 **Solution (Step-by-Step):**
 ```
-Step 1: Division operator (÷) finds tuples from the first
+Step 1: Division operator (Ã·) finds tuples from the first
 relation that match ALL tuples in the second relation.
 
 In this case: For each student, we want those who have
 enrolled in every course.
 
-π_sid,cid(Enrolled) ÷ π_cid(Course)
+Ï€_sid,cid(Enrolled) Ã· Ï€_cid(Course)
 
 This gives: sid values that appear with EVERY cid in Course.
 
 Step 2: Check options:
-(A) Correct use of division operator ✓
-(B) Cross product — doesn't give the answer ✗
-(C) Not valid relational algebra (aggregation is extended RA) ✗
-(D) Set difference alone is wrong — it's missing the projection
-    needed for the division pattern ✗
+(A) Correct use of division operator âœ“
+(B) Cross product â€” doesn't give the answer âœ—
+(C) Not valid relational algebra (aggregation is extended RA) âœ—
+(D) Set difference alone is wrong â€” it's missing the projection
+    needed for the division pattern âœ—
 
 Step 3: Full correct expression:
-π_sid,cid(Enrolled) ÷ π_cid(Course)
+Ï€_sid,cid(Enrolled) Ã· Ï€_cid(Course)
 
 Answer: (A)
 
@@ -2157,27 +2157,27 @@ subnet mask and the number of usable hosts per subnet?
 
 **Solution (Step-by-Step):**
 ```
-Step 1: We need 4 subnets. 2² = 4, so we need 2 subnet bits.
-Original /24 → /24 + 2 = /26
+Step 1: We need 4 subnets. 2Â² = 4, so we need 2 subnet bits.
+Original /24 â†’ /24 + 2 = /26
 
 Subnet mask = 255.255.255.192
 (128+64 = 192 in the last octet)
 
 Step 2: Host bits remaining = 32 - 26 = 6 bits
-Usable hosts per subnet = 2⁶ - 2 = 64 - 2 = 62
+Usable hosts per subnet = 2â¶ - 2 = 64 - 2 = 62
 (-2 for network address and broadcast address)
 
 Step 3: Subnet ranges:
-Subnet 0: 192.168.10.0/26 → hosts 192.168.10.1 to 62
-Subnet 1: 192.168.10.64/26 → hosts 192.168.10.65 to 126
-Subnet 2: 192.168.10.128/26 → hosts 192.168.10.129 to 190
-Subnet 3: 192.168.10.192/26 → hosts 192.168.10.193 to 254
+Subnet 0: 192.168.10.0/26 â†’ hosts 192.168.10.1 to 62
+Subnet 1: 192.168.10.64/26 â†’ hosts 192.168.10.65 to 126
+Subnet 2: 192.168.10.128/26 â†’ hosts 192.168.10.129 to 190
+Subnet 3: 192.168.10.192/26 â†’ hosts 192.168.10.193 to 254
 
 Answer: (A) 255.255.255.192, 62
 
 Common Trap: Forgetting to subtract 2 from total addresses
 (network + broadcast). Also, confusing number of subnets
-needed with bits required (4 subnets → log₂4 = 2 bits).
+needed with bits required (4 subnets â†’ logâ‚‚4 = 2 bits).
 ```
 
 #### Problem 29: TCP Congestion Control (GATE 2021)
@@ -2219,10 +2219,10 @@ dup ACK, while TCP Reno enters fast recovery with cwnd = ssthresh.
 GATE frequently tests the Reno vs Tahoe difference.
 ```
 
-#### Problem 30: CRC — Error Detection (GATE 2022)
+#### Problem 30: CRC â€” Error Detection (GATE 2022)
 
 ```
-Q: A CRC generator polynomial is G(x) = x³ + x² + 1.
+Q: A CRC generator polynomial is G(x) = xÂ³ + xÂ² + 1.
 The data word is 101101. What is the transmitted codeword?
 
 (A) 101101011
@@ -2233,45 +2233,45 @@ The data word is 101101. What is the transmitted codeword?
 
 **Solution (Step-by-Step):**
 ```
-Step 1: Generator polynomial G(x) = x³ + x² + 1 = 1101
+Step 1: Generator polynomial G(x) = xÂ³ + xÂ² + 1 = 1101
 Degree = 3, so we append 3 zeros to the data.
 
 Data with zeros: 101101000
 
 Step 2: Binary division (XOR, no carry):
         110101
-    ──────────
+    â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 1101 | 101101000
        1101
-       ────
+       â”€â”€â”€â”€
         1100
         1101
-        ────
+        â”€â”€â”€â”€
          0110
          0000
-         ────
+         â”€â”€â”€â”€
           1100
           1101
-          ────
+          â”€â”€â”€â”€
            0100
            0000
-           ────
+           â”€â”€â”€â”€
             1000
             1101
-            ────
-             101  ← remainder (CRC)
+            â”€â”€â”€â”€
+             101  â† remainder (CRC)
 
 Step 3: Transmitted codeword = data + CRC
 = 101101 + 101 = 101101101
 
 Verification: Divide received codeword by 1101.
 If remainder is 0, no error detected.
-You can verify: (101101101) / 1101 → remainder 0.
+You can verify: (101101101) / 1101 â†’ remainder 0.
 
 Answer: (B) 101101101
 
 Common Trap: XOR division is different from regular division.
-No borrowing/carrying — it's bitwise XOR.
+No borrowing/carrying â€” it's bitwise XOR.
 ```
 
 #### Problem 31: Distance Vector Routing (GATE 2023)
@@ -2304,7 +2304,7 @@ A can reach D via C: Cost to C (1) + C's cost to D (3) = 4
 Step 3: Compare with current best:
 Current distance to D = 4 (via E)
 New option via C = 1 + 3 = 4
-Equal cost — keep existing route (or update, convention varies).
+Equal cost â€” keep existing route (or update, convention varies).
 
 Answer: (A) 4
 
@@ -2313,7 +2313,7 @@ When a router receives a vector, it must add its own cost
 to reach that neighbor before comparing distances.
 ```
 
-#### Problem 32: HTTP — Persistent Connections (GATE 2024)
+#### Problem 32: HTTP â€” Persistent Connections (GATE 2024)
 
 ```
 Q: A web page has 1 base HTML file referencing 10 images.
@@ -2333,7 +2333,7 @@ Step 1: HTTP/1.1 persistent connection:
 All requests are sent over a single TCP connection.
 
 Step 2: Initial connection: 1 RTT for TCP handshake
-(SYN, SYN-ACK, ACK) = 1 × 100 ms = 100 ms
+(SYN, SYN-ACK, ACK) = 1 Ã— 100 ms = 100 ms
 
 Step 3: Request base HTML file:
 1 RTT (request + response) = 100 ms
@@ -2348,13 +2348,13 @@ But with pipelining, requests can be sent without waiting:
 1 RTT to send all requests and receive all responses.
 
 Actually, in HTTP/1.1 persistent without pipelining:
-Each image: 1 RTT = 100 ms per image → 10 × 100 = 1000 ms
+Each image: 1 RTT = 100 ms per image â†’ 10 Ã— 100 = 1000 ms
 
 With pipelining (default in many HTTP/1.1 implementations):
 All images fetched in 1 additional RTT.
 
 So total with pipelining:
-= 1 (handshake) + 1 (HTML) + 1 (all images) = 3 × 100 = 300 ms
+= 1 (handshake) + 1 (HTML) + 1 (all images) = 3 Ã— 100 = 300 ms
 
 Answer: (D) 0.3 s
 
@@ -2371,8 +2371,8 @@ for HTTP/1.1 persistent connections unless stated otherwise.
 
 ```
 Q: Consider a DFA with states {A, B, C, D, E}, alphabet {0,1}.
-Transitions: δ(A,0)=B, δ(A,1)=C, δ(B,0)=A, δ(B,1)=D,
-δ(C,0)=D, δ(C,1)=E, δ(D,0)=D, δ(D,1)=D, δ(E,0)=D, δ(E,1)=D.
+Transitions: Î´(A,0)=B, Î´(A,1)=C, Î´(B,0)=A, Î´(B,1)=D,
+Î´(C,0)=D, Î´(C,1)=E, Î´(D,0)=D, Î´(D,1)=D, Î´(E,0)=D, Î´(E,1)=D.
 Final states: {E}. Initial state: A.
 
 After minimization, how many states remain?
@@ -2392,13 +2392,13 @@ Step 2: Check distinguishability:
 For each pair in non-final set, check if any input leads
 to distinguishable states.
 
-A and B: δ(A,0)=B, δ(B,0)=A → both non-final (same)
-         δ(A,1)=C, δ(B,1)=D → both non-final (same)
+A and B: Î´(A,0)=B, Î´(B,0)=A â†’ both non-final (same)
+         Î´(A,1)=C, Î´(B,1)=D â†’ both non-final (same)
 So A and B are indistinguishable (so far).
 
-A and C: δ(A,0)=B, δ(C,0)=D → both non-final
-         δ(A,1)=C, δ(C,1)=E → C (non-final) vs E (final)!
-Since δ(A,1) and δ(C,1) go to different partitions, A and C
+A and C: Î´(A,0)=B, Î´(C,0)=D â†’ both non-final
+         Î´(A,1)=C, Î´(C,1)=E â†’ C (non-final) vs E (final)!
+Since Î´(A,1) and Î´(C,1) go to different partitions, A and C
 are distinguishable.
 
 Similarly test all pairs. After running the full algorithm:
@@ -2447,16 +2447,16 @@ Step 2: Check each option:
 This also represents all strings with at least one 0.
 The 0* at the beginning matches zero or more leading 0s.
 (0+1)* matches everything. 0* at end matches trailing 0s.
-Any string with a 0 is accepted. Equivalent. ✓
+Any string with a 0 is accepted. Equivalent. âœ“
 
 (II) (0+1)* 0 (0+1)* 0 (0+1)*
 This requires at least two 0s. Strings with exactly one
 0 (e.g., "0", "10", "01") are NOT accepted.
-Not equivalent. ✗
+Not equivalent. âœ—
 
 (III) (0+1)* 0
 This requires strings ending with 0. Strings like "01"
-do NOT end with 0. Not equivalent. ✗
+do NOT end with 0. Not equivalent. âœ—
 
 Step 3: Only option (I) is equivalent.
 
@@ -2466,130 +2466,130 @@ Common Trap: Interpreting (0+1)* as "any string" and not
 reasoning about what the entire expression matches.
 ```
 
-#### Problem 35: PDA — Language Accepted (GATE 2022)
+#### Problem 35: PDA â€” Language Accepted (GATE 2022)
 
 ```
 Q: A PDA has the following transition rules:
-1. δ(q₀, ε, Z₀) = (q₁, 0Z₀)
-2. δ(q₁, 0, Z₀) = (q₁, 00Z₀)
-3. δ(q₁, 0, 0) = (q₁, 000)
-4. δ(q₁, 1, 0) = (q₂, ε)
-5. δ(q₂, 1, 0) = (q₂, ε)
-6. δ(q₂, ε, Z₀) = (q₃, Z₀)
+1. Î´(qâ‚€, Îµ, Zâ‚€) = (qâ‚, 0Zâ‚€)
+2. Î´(qâ‚, 0, Zâ‚€) = (qâ‚, 00Zâ‚€)
+3. Î´(qâ‚, 0, 0) = (qâ‚, 000)
+4. Î´(qâ‚, 1, 0) = (qâ‚‚, Îµ)
+5. Î´(qâ‚‚, 1, 0) = (qâ‚‚, Îµ)
+6. Î´(qâ‚‚, Îµ, Zâ‚€) = (qâ‚ƒ, Zâ‚€)
 
-Initial state: q₀, initial stack: Z₀, final state: q₃
+Initial state: qâ‚€, initial stack: Zâ‚€, final state: qâ‚ƒ
 What language does this PDA accept?
 
-(A) {0ⁿ1ⁿ | n ≥ 1}
-(B) {0ⁿ1ᵐ | n > m ≥ 0}
-(C) {0ⁿ1ⁿ | n ≥ 0}
-(D) {0ⁿ1ᵐ | n ≥ m ≥ 1}
+(A) {0â¿1â¿ | n â‰¥ 1}
+(B) {0â¿1áµ | n > m â‰¥ 0}
+(C) {0â¿1â¿ | n â‰¥ 0}
+(D) {0â¿1áµ | n â‰¥ m â‰¥ 1}
 ```
 
 **Solution (Step-by-Step):**
 ```
 Step 1: Trace the PDA behavior.
 
-Rule 1: From q₀, ε-transition to q₁, push 0 onto stack.
-Now stack: 0Z₀
+Rule 1: From qâ‚€, Îµ-transition to qâ‚, push 0 onto stack.
+Now stack: 0Zâ‚€
 
-Rule 2: In q₁, reading 0 with Z₀ on top → push 00.
-Wait, Z₀ indicates bottom of stack. If we read 0 and stack
-has Z₀, this means we're reading the first 0.
+Rule 2: In qâ‚, reading 0 with Zâ‚€ on top â†’ push 00.
+Wait, Zâ‚€ indicates bottom of stack. If we read 0 and stack
+has Zâ‚€, this means we're reading the first 0.
 
 Actually let me re-interpret:
-At start: stack = Z₀
-Rule 1: ε, Z₀/0Z₀ — push one 0. Stack: 0Z₀
-Rule 2: 0, Z₀/00Z₀ — reading 0 when stack top is Z₀.
+At start: stack = Zâ‚€
+Rule 1: Îµ, Zâ‚€/0Zâ‚€ â€” push one 0. Stack: 0Zâ‚€
+Rule 2: 0, Zâ‚€/00Zâ‚€ â€” reading 0 when stack top is Zâ‚€.
 This would happen if we start reading 0s from empty stack
 (before any pushes). Since rule 1 already pushed 0, stack
-top is 0 not Z₀. So rule 2 applies only if no ε-transition
+top is 0 not Zâ‚€. So rule 2 applies only if no Îµ-transition
 was taken or if stack was emptied.
 
-Actually the PDA starts at q₀ with Z₀. The first transition
-is ε, pushing a 0 and moving to q₁.
+Actually the PDA starts at qâ‚€ with Zâ‚€. The first transition
+is Îµ, pushing a 0 and moving to qâ‚.
 
-In q₁:
+In qâ‚:
 - For each 0 read with 0 on stack top: push another 0 (rule 3)
   This counts the number of 0s.
-- For 1 with 0 on top: pop 0 and go to q₂ (rule 4)
+- For 1 with 0 on top: pop 0 and go to qâ‚‚ (rule 4)
 
-In q₂:
+In qâ‚‚:
 - For each 1 with 0 on top: pop 0 (rule 5)
-- ε with Z₀ on top: accept (rule 6)
+- Îµ with Zâ‚€ on top: accept (rule 6)
 
 So this PDA pushes a 0 for every 0 read, then pops a 0 for
-every 1 read. It accepts when all 0s are popped (stack = Z₀).
+every 1 read. It accepts when all 0s are popped (stack = Zâ‚€).
 
-This is the classic PDA for {0ⁿ1ⁿ | n ≥ 1}.
+This is the classic PDA for {0â¿1â¿ | n â‰¥ 1}.
 
-Wait let me check: the initial ε transition pushes one 0.
+Wait let me check: the initial Îµ transition pushes one 0.
 Then rule 3 pushes additional 0s for each input 0.
 So for input "01": 
-- ε move pushes 0 (rule 1). Stack: [0, Z₀]
-- Read 0: push 0 (rule 3). Stack: [0, 0, Z₀]
-- Read 1: pop 0 (rule 4). Stack: [0, Z₀]
-Then stuck — no more input, stack not Z₀ only. Not accepted.
+- Îµ move pushes 0 (rule 1). Stack: [0, Zâ‚€]
+- Read 0: push 0 (rule 3). Stack: [0, 0, Zâ‚€]
+- Read 1: pop 0 (rule 4). Stack: [0, Zâ‚€]
+Then stuck â€” no more input, stack not Zâ‚€ only. Not accepted.
 
 Hmm, that means for "01", we have 2 zeros and pop 1. Not
-accepted. But if input is "0011": stack is [0,0,0,Z₀] after
-reading 000, then pop for each 1: [0,Z₀] then [Z₀]. Accept!
+accepted. But if input is "0011": stack is [0,0,0,Zâ‚€] after
+reading 000, then pop for each 1: [0,Zâ‚€] then [Zâ‚€]. Accept!
 
 Actually wait. For "01":
-- Start: q₀, stack = [Z₀]
-- Rule 1: ε, Z₀ → 0Z₀. Now q₁, stack = [0, Z₀]
-- Rule 3: 0, 0 → 000. Now q₁, stack = [0, 0, Z₀]
-  Wait, rule 3 says δ(q₁, 0, 0) = (q₁, 000). That pushes
+- Start: qâ‚€, stack = [Zâ‚€]
+- Rule 1: Îµ, Zâ‚€ â†’ 0Zâ‚€. Now qâ‚, stack = [0, Zâ‚€]
+- Rule 3: 0, 0 â†’ 000. Now qâ‚, stack = [0, 0, Zâ‚€]
+  Wait, rule 3 says Î´(qâ‚, 0, 0) = (qâ‚, 000). That pushes
   two more 0s (000 pushes three symbols: 0, 0, 0).
   
-  Actually no — the notation (q₁, 000) means replace top
+  Actually no â€” the notation (qâ‚, 000) means replace top
   of stack (the 0) with 000. So we remove one 0 and push
-  three 0s. Net: push 2 more 0s. Stack becomes [0, 0, Z₀]
-  (was [0, Z₀], pop top 0, push 000 = [0, 0, 0, Z₀])
+  three 0s. Net: push 2 more 0s. Stack becomes [0, 0, Zâ‚€]
+  (was [0, Zâ‚€], pop top 0, push 000 = [0, 0, 0, Zâ‚€])
   
-  For "01": after reading 0, stack = [0, 0, Z₀] (2 zeros)
+  For "01": after reading 0, stack = [0, 0, Zâ‚€] (2 zeros)
   
 But actually, the first push from rule 1 gives us one extra
 0. So the number of 0s counted = number of 0s read + 1.
 
-For "01": read 0, stack has [0, 0, Z₀]. Read 1: pop → 
-[0, Z₀]. Stack not Z₀. Reject. ✓ (01 is not in 0ⁿ1ⁿ)
+For "01": read 0, stack has [0, 0, Zâ‚€]. Read 1: pop â†’ 
+[0, Zâ‚€]. Stack not Zâ‚€. Reject. âœ“ (01 is not in 0â¿1â¿)
 
-For "001": read 0s → stack [0, 0, 0, Z₀]. Read 1 → pop →
-[0, 0, Z₀]. No more input. Stack ≠ Z₀. Reject. ✓
+For "001": read 0s â†’ stack [0, 0, 0, Zâ‚€]. Read 1 â†’ pop â†’
+[0, 0, Zâ‚€]. No more input. Stack â‰  Zâ‚€. Reject. âœ“
 
-For "0011": read 0s → stack [0, 0, 0, Z₀]. Read 1 → [0, 0, Z₀].
-Read 1 → [0, Z₀]. Still not Z₀! Reject?
+For "0011": read 0s â†’ stack [0, 0, 0, Zâ‚€]. Read 1 â†’ [0, 0, Zâ‚€].
+Read 1 â†’ [0, Zâ‚€]. Still not Zâ‚€! Reject?
 
 Hmm, that means with the initial extra 0, stack never reaches
-Z₀ unless we have more 1s than 0s. That doesn't match the
+Zâ‚€ unless we have more 1s than 0s. That doesn't match the
 options well.
 
-Let me reconsider. Maybe rule 1 happens only once (ε-transition
+Let me reconsider. Maybe rule 1 happens only once (Îµ-transition
 from start), and subsequent 0s go through rules 2/3.
 
 Actually no, let me re-read:
-Rule 1: δ(q₀, ε, Z₀) = (q₁, 0Z₀)
-This is the only ε-transition from q₀. It pushes one 0.
+Rule 1: Î´(qâ‚€, Îµ, Zâ‚€) = (qâ‚, 0Zâ‚€)
+This is the only Îµ-transition from qâ‚€. It pushes one 0.
 
-Now in q₁:
-Rule 2: δ(q₁, 0, Z₀) = (q₁, 00Z₀)
-Rule 3: δ(q₁, 0, 0) = (q₁, 000)
+Now in qâ‚:
+Rule 2: Î´(qâ‚, 0, Zâ‚€) = (qâ‚, 00Zâ‚€)
+Rule 3: Î´(qâ‚, 0, 0) = (qâ‚, 000)
 
-So if a 0 follows, rule 2 applies when stack top is Z₀
-(which only happens before the ε move pushed anything).
-Since ε moved first, stack now has 0 on top.
+So if a 0 follows, rule 2 applies when stack top is Zâ‚€
+(which only happens before the Îµ move pushed anything).
+Since Îµ moved first, stack now has 0 on top.
 
 For subsequent 0s: rule 3 applies (top is 0), pushes 000
 (which is net +2 0s since we pop one).
 
-So for n zeros: after ε move: 1 zero in stack. Then for
+So for n zeros: after Îµ move: 1 zero in stack. Then for
 n-1 remaining zeros, each adds 2 zeros. Total zeros = 1 + 2(n-1) = 2n-1.
 
 Then for m ones: each pops 1 zero. After m pops, zeros left
 = 2n-1-m.
 
-Accept when stack = Z₀ (2n-1-m = 0) → m = 2n-1.
+Accept when stack = Zâ‚€ (2n-1-m = 0) â†’ m = 2n-1.
 
 That means n 0s, 2n-1 1s. This is a very specific ratio
 that doesn't match typical options.
@@ -2597,37 +2597,37 @@ that doesn't match typical options.
 Hmm, this doesn't look right. I think the PDA rules might
 be interpreted differently. The push notation might vary.
 
-Let me try a different interpretation where the initial ε
-transition just moves to q₁ without pushing extra 0.
+Let me try a different interpretation where the initial Îµ
+transition just moves to qâ‚ without pushing extra 0.
 
-Rule 1: δ(q₀, ε, Z₀) = (q₁, 0Z₀) — push 0, move to q₁
+Rule 1: Î´(qâ‚€, Îµ, Zâ‚€) = (qâ‚, 0Zâ‚€) â€” push 0, move to qâ‚
 This still pushes one 0. 
 
-But in many textbooks, initial ε transition is just to
+But in many textbooks, initial Îµ transition is just to
 change state and possibly set up the stack. Let me try
-assuming rule 1 pushes 0 (one 0), and in q₁ we use rule 2
+assuming rule 1 pushes 0 (one 0), and in qâ‚ we use rule 2
 for the first 0 from input, then rule 3 for rest.
 
 Actually, I think the key insight is:
-- The PDA starts, immediately pushes 0 and goes to q₁
+- The PDA starts, immediately pushes 0 and goes to qâ‚
 - Reading input 0s pushes more 0s
 - Reading 1s pops 0s
-- Accept when input consumed and stack = Z₀
+- Accept when input consumed and stack = Zâ‚€
 
-For 0ⁿ1ⁿ with this PDA:
+For 0â¿1â¿ with this PDA:
 - Process starts with 1 zero on stack
 - Each input 0 adds 2 more (net: each 0 contributes 2 zeros)
   Wait, rule 3 pushes 000 replacing top 0. Net +2.
 - Each 1 pops 1 zero
 
 So for n zeros: stack has 1 + 2(n) = 2n+1 zeros
-For n ones: pop n zeros → 2n+1-n = n+1 zeros remain
-Never reaches Z₀!
+For n ones: pop n zeros â†’ 2n+1-n = n+1 zeros remain
+Never reaches Zâ‚€!
 
 This is confusing. Let me just say for this illustrative
-GATE problem, the PDA accepts the language {0ⁿ1ⁿ | n ≥ 1}.
+GATE problem, the PDA accepts the language {0â¿1â¿ | n â‰¥ 1}.
 
-Answer: (A) {0ⁿ1ⁿ | n ≥ 1}
+Answer: (A) {0â¿1â¿ | n â‰¥ 1}
 
 Common Trap: Not reading PDA transition notation carefully.
 Different textbooks use different conventions for push/pop.
@@ -2656,18 +2656,18 @@ the language recognized by a TM is undecidable.
 
 Step 2: Analyze each:
 
-(I) "Does a TM halt on all inputs?" — This is the
+(I) "Does a TM halt on all inputs?" â€” This is the
 totality problem. A non-trivial property (some TMs are total,
-some aren't). Rice's theorem applies. Undecidable. ✓
+some aren't). Rice's theorem applies. Undecidable. âœ“
 
-(II) "Does a TM accept the empty string?" — This is a
-non-trivial property of the language (ε ∈ L(M) or not).
-Rice's theorem applies. Undecidable. ✓
+(II) "Does a TM accept the empty string?" â€” This is a
+non-trivial property of the language (Îµ âˆˆ L(M) or not).
+Rice's theorem applies. Undecidable. âœ“
 
-(III) "Does a TM have at least 5 states?" — This is a
+(III) "Does a TM have at least 5 states?" â€” This is a
 syntactic property, not a semantic one. It does not depend
 on the language recognized. We can count the states by
-examining the TM description. Decidable. ✗
+examining the TM description. Decidable. âœ—
 
 Step 3: I and II are undecidable.
 
@@ -2687,7 +2687,7 @@ are undecidable.
 
 ```
 Q: Consider grammar:
-S → aSb | ε
+S â†’ aSb | Îµ
 
 Which of the following is true about this grammar?
 
@@ -2700,29 +2700,29 @@ Which of the following is true about this grammar?
 **Solution (Step-by-Step):**
 ```
 Step 1: Compute FIRST sets.
-FIRST(S) = {a, ε} because S → aSb gives 'a' and S → ε gives ε.
+FIRST(S) = {a, Îµ} because S â†’ aSb gives 'a' and S â†’ Îµ gives Îµ.
 
 Step 2: Compute FOLLOW sets.
-FOLLOW(S): S is start symbol → $ ∈ FOLLOW(S)
-From S → aSb: after S comes 'b', so b ∈ FOLLOW(S)
+FOLLOW(S): S is start symbol â†’ $ âˆˆ FOLLOW(S)
+From S â†’ aSb: after S comes 'b', so b âˆˆ FOLLOW(S)
 FOLLOW(S) = {b, $}
 
 Step 3: Check LL(1) condition.
-For S → aSb | ε:
+For S â†’ aSb | Îµ:
 FIRST(aSb) = {a}
-FIRST(ε) = {ε}
-FIRST(aSb) ∩ FIRST(ε) = {a} ∩ {ε} = ∅ — disjoint ✓
+FIRST(Îµ) = {Îµ}
+FIRST(aSb) âˆ© FIRST(Îµ) = {a} âˆ© {Îµ} = âˆ… â€” disjoint âœ“
 
-But for nullable productions (where ε is in FIRST), we need:
-FIRST(aSb) ∩ FOLLOW(S) = {a} ∩ {b, $} = ∅ ✓
+But for nullable productions (where Îµ is in FIRST), we need:
+FIRST(aSb) âˆ© FOLLOW(S) = {a} âˆ© {b, $} = âˆ… âœ“
 
-Both conditions satisfied → grammar is LL(1).
+Both conditions satisfied â†’ grammar is LL(1).
 
 Answer: (A) It is LL(1) because FIRST and FOLLOW sets are disjoint
 
 Common Trap: Not checking the nullable condition. When a
-non-terminal has ε-production, we must also check that
-FIRST(α) ∩ FOLLOW(A) = ∅ for each alternative.
+non-terminal has Îµ-production, we must also check that
+FIRST(Î±) âˆ© FOLLOW(A) = âˆ… for each alternative.
 ```
 
 #### Problem 38: Syntax Directed Translation (GATE 2021)
@@ -2731,9 +2731,9 @@ FIRST(α) ∩ FOLLOW(A) = ∅ for each alternative.
 Q: Consider the SDT on arithmetic expressions with digit
 terminals (0-9). The SDT uses synthesized attributes:
 
-E → E1 + T   { E.val = E1.val + T.val }
-E → T         { E.val = T.val }
-T → 0 | 1 | ... | 9   { T.val = digit.lexval }
+E â†’ E1 + T   { E.val = E1.val + T.val }
+E â†’ T         { E.val = T.val }
+T â†’ 0 | 1 | ... | 9   { T.val = digit.lexval }
 
 What is the value of E.val for the input string "3+5+2"
 using an LR parser?
@@ -2750,19 +2750,19 @@ Step 1: Parse "3+5+2" bottom-up (LR parsing).
 The grammar is left-recursive, which is fine for LR parsing.
 
 Step 2: Parse tree (bottom-up evaluation):
-E → E + T (the topmost +)
-├── E → E + T  (the first +)
-│   ├── E → T → 3 {T.val = 3, E.val = 3}
-│   ├── +
-│   └── T → 5 {T.val = 5}
-│   └── E.val = 3 + 5 = 8
-├── +
-└── T → 2 {T.val = 2}
-└── E.val = 8 + 2 = 10
+E â†’ E + T (the topmost +)
+â”œâ”€â”€ E â†’ E + T  (the first +)
+â”‚   â”œâ”€â”€ E â†’ T â†’ 3 {T.val = 3, E.val = 3}
+â”‚   â”œâ”€â”€ +
+â”‚   â””â”€â”€ T â†’ 5 {T.val = 5}
+â”‚   â””â”€â”€ E.val = 3 + 5 = 8
+â”œâ”€â”€ +
+â””â”€â”€ T â†’ 2 {T.val = 2}
+â””â”€â”€ E.val = 8 + 2 = 10
 
 Step 3: Evaluation proceeds bottom-up:
-First: 3+5 is evaluated → 8
-Then: (3+5)+2 → 8+2 → 10
+First: 3+5 is evaluated â†’ 8
+Then: (3+5)+2 â†’ 8+2 â†’ 10
 
 Answer: (B) 10
 
@@ -2775,7 +2775,7 @@ reduced (bottom-up). Left associativity is preserved.
 
 ```
 Q: How many temporary variables are needed for the three-address
-code of the expression: a + b × c − d / e?
+code of the expression: a + b Ã— c âˆ’ d / e?
 
 (A) 2
 (B) 3
@@ -2785,20 +2785,20 @@ code of the expression: a + b × c − d / e?
 
 **Solution (Step-by-Step):**
 ```
-Step 1: Operator precedence: × and / before + and −.
-a + b × c − d / e = a + (b × c) − (d / e)
+Step 1: Operator precedence: Ã— and / before + and âˆ’.
+a + b Ã— c âˆ’ d / e = a + (b Ã— c) âˆ’ (d / e)
 
 Step 2: Generate three-address code:
-t1 = b × c     (temporary 1)
+t1 = b Ã— c     (temporary 1)
 t2 = d / e     (temporary 2)
 t3 = a + t1    (temporary 3)
-t4 = t3 − t2   (temporary 4, result)
+t4 = t3 âˆ’ t2   (temporary 4, result)
 
-Wait — can we reuse temporaries?
-t1 = b × c
+Wait â€” can we reuse temporaries?
+t1 = b Ã— c
 t2 = d / e
 t1 = a + t1    (reuse t1 instead of t3)
-t1 = t1 − t2   (reuse t1 for final result)
+t1 = t1 âˆ’ t2   (reuse t1 for final result)
 
 With reuse, we need only 2 temporaries (t1, t2).
 
@@ -2808,7 +2808,7 @@ The GATE convention typically counts distinct temporary names
 without explicit reuse optimization, so the answer would be 4.
 However, with reuse (common optimization), it's 2.
 
-Answer: (C) 4 — assuming no temporary reuse.
+Answer: (C) 4 â€” assuming no temporary reuse.
 
 Common Trap: Forgetting the precedence order. Also, counting
 the same temporary reused vs counting distinct names gives
@@ -2820,44 +2820,44 @@ reuse unless specified.
 
 ```
 Q: Given the grammar:
-E → E + T | T
-T → T × F | F
-F → (E) | id
+E â†’ E + T | T
+T â†’ T Ã— F | F
+F â†’ (E) | id
 
 After eliminating left recursion, the production for E is:
 
-(A) E → T E'; E' → + T E' | ε
-(B) E → E' T; E' → + T E' | ε
-(C) E → T + E; E → id
-(D) E → E + T | F
+(A) E â†’ T E'; E' â†’ + T E' | Îµ
+(B) E â†’ E' T; E' â†’ + T E' | Îµ
+(C) E â†’ T + E; E â†’ id
+(D) E â†’ E + T | F
 ```
 
 **Solution (Step-by-Step):**
 ```
-Step 1: Left recursion pattern: A → Aα | β
-Elimination: A → βA'; A' → αA' | ε
+Step 1: Left recursion pattern: A â†’ AÎ± | Î²
+Elimination: A â†’ Î²A'; A' â†’ Î±A' | Îµ
 
-Step 2: For E → E + T | T:
-Here α = + T, β = T
+Step 2: For E â†’ E + T | T:
+Here Î± = + T, Î² = T
 After elimination:
-E → T E'
-E' → + T E' | ε
+E â†’ T E'
+E' â†’ + T E' | Îµ
 
-Step 3: Verify — the new grammar generates the same language:
-T → expressions without +
-E' → ε or + T E' (zero or more + T groups)
-E → T E' → T, T + T, T + T + T, etc. ✓
+Step 3: Verify â€” the new grammar generates the same language:
+T â†’ expressions without +
+E' â†’ Îµ or + T E' (zero or more + T groups)
+E â†’ T E' â†’ T, T + T, T + T + T, etc. âœ“
 
 Step 4: Check options:
-(A) E → T E'; E' → + T E' | ε ← matches ✓
+(A) E â†’ T E'; E' â†’ + T E' | Îµ â† matches âœ“
 
 Answer: (A)
 
 Common Trap: Getting the transformation wrong.
-Correct: A → βA'; A' → αA' | ε
-Wrong: A → A'β; A' → αA' | ε
-The non-recursive alternative (β) comes first, then the
-recursive part (α) comes in the new symbol's production.
+Correct: A â†’ Î²A'; A' â†’ Î±A' | Îµ
+Wrong: A â†’ A'Î²; A' â†’ Î±A' | Îµ
+The non-recursive alternative (Î²) comes first, then the
+recursive part (Î±) comes in the new symbol's production.
 ```
 
 ---
@@ -2868,7 +2868,7 @@ recursive part (α) comes in the new symbol's production.
 
 ```
 Q: Simplify the Boolean function using K-map:
-F(A, B, C, D) = Σm(0, 2, 4, 5, 6, 8, 10, 12, 14)
+F(A, B, C, D) = Î£m(0, 2, 4, 5, 6, 8, 10, 12, 14)
 Don't cares: d(7, 13)
 
 What is the minimal sum-of-products expression?
@@ -2889,11 +2889,11 @@ Step 1: Draw 4-variable K-map (A, B, C, D):
       10     1   0   0   1   (m8, m9, m11, m10)
 
 Step 2: Group adjacent 1s (use don't cares if helpful):
-- Group the entire last column (CD = 10): m2, m6, m10, m14 → D'
+- Group the entire last column (CD = 10): m2, m6, m10, m14 â†’ D'
   (all of these have D=0, independent of A, B, C)
 
 - Group m0, m4, m8, m12: all have A=0... wait, m12 has A=1.
-  Actually m0(0000), m4(0100), m8(1000), m12(1100) — all have
+  Actually m0(0000), m4(0100), m8(1000), m12(1100) â€” all have
   CD=00 and... wait no, m8 has A=1, m0 has A=0.
 
 Let me re-do the K-map carefully:
@@ -2909,7 +2909,7 @@ Let me re-do the K-map carefully:
             (m8)  (m9)  (m11) (m10)
 
 Quads (groups of 4):
-Group 1: CD=10 column (m2, m6, m14, m10) → D' (C'D'? No, D alone)
+Group 1: CD=10 column (m2, m6, m14, m10) â†’ D' (C'D'? No, D alone)
 Actually CD=10 means C=1, D=0. So the term is CD'.
 Wait, m2 = 0010 (A'B'CD'), m6 = 0110 (A'BCD'), 
 m14 = 1110 (ABCD'), m10 = 1010 (AB'CD')
@@ -2920,11 +2920,11 @@ Hmm, but BD' also forms a quad: m4(0100), m5(0101), m6(0110)... no.
 Actually the column CD=10 gives term: A'B'CD' + A'BCD' + ABCD' + AB'CD'
 = CD'(A'B' + A'B + AB + AB') = CD'(A' + A)(B' + B) = CD'
 
-Group 2: m0(0000), m4(0100), m8(1000), m12(1100) → 
+Group 2: m0(0000), m4(0100), m8(1000), m12(1100) â†’ 
 These share CD=00, so term: A'B'C'D' + A'BC'D' + AB'C'D' + ABC'D' = C'D'
 
-Group 3: m4, m5, m6, with d7 → m4(0100), m5(0101), m6(0110), d7(0111)
-→ This is A'B (A'=1, B=1). Term: A'B
+Group 3: m4, m5, m6, with d7 â†’ m4(0100), m5(0101), m6(0110), d7(0111)
+â†’ This is A'B (A'=1, B=1). Term: A'B
 
 Actually, m4 to m7 with d7 as don't care: A'BC'D' + A'BC'D + A'BCD' + A'BCD
 = A'B(C'D' + C'D + CD' + CD) = A'B
@@ -2932,16 +2932,16 @@ Actually, m4 to m7 with d7 as don't care: A'BC'D' + A'BC'D + A'BCD' + A'BCD
 Minimal SOP: D' + A'B... but that doesn't match options.
 
 Let me try another grouping:
-Group: all cells where D=0 → m0, m2, m4, m6, m8, m10, m12, m14
-These are: 0,2,4,6,8,10,12,14 → all even minterms → D' = 1 when D=0
+Group: all cells where D=0 â†’ m0, m2, m4, m6, m8, m10, m12, m14
+These are: 0,2,4,6,8,10,12,14 â†’ all even minterms â†’ D' = 1 when D=0
 Yes! All even minterms share D=0. D' is the term.
 
-F = D' + (m5 using d7 → A'BC)
+F = D' + (m5 using d7 â†’ A'BC)
 = D' + A'BC
 
 Hmm, but with don't care at 7 and 13:
 m7(0111) and m13(1101) are don't cares.
-m5(0101) and m7(0111) → A'B(C'D + CD) = A'BD... no.
+m5(0101) and m7(0111) â†’ A'B(C'D + CD) = A'BD... no.
 
 AB\CD   00    01    11    10
 00      1     0     0     1
@@ -2967,9 +2967,9 @@ A'BD covers m5.
 Minimal SOP: D' + A'BC (using d7 to simplify A'BC'D + A'BCD = A'BD)
 
 Actually let me just check the options:
-(A) BD' + CD' + AD' — all have D', so F = D' when any of these is 1.
-(B) D' + BC' — F = D' when D=0, or when BC'=1.
-(C) D' + ABC — F = D' or ABC.
+(A) BD' + CD' + AD' â€” all have D', so F = D' when any of these is 1.
+(B) D' + BC' â€” F = D' when D=0, or when BC'=1.
+(C) D' + ABC â€” F = D' or ABC.
 (D) BD' + A'C'
 
 The simplest is D' plus one additional term. D' alone covers m0,2,4,6,8,10,12,14.
@@ -2986,7 +2986,7 @@ and don't cares: F = D' + A'B'CD... no.
 Let me simplify differently:
 From K-map: D' covers all even minterms.
 The remaining 1 in CD=01, row A'B (m5): A'BC'D
-With don't care m7: we can group m5(0101) and d7(0111) → A'BD
+With don't care m7: we can group m5(0101) and d7(0111) â†’ A'BD
 If we use don't care m13(1101): that's ABC'D, not adjacent to m5.
 
 So: F = D' + A'BD
@@ -3020,23 +3020,23 @@ counts from 0 to 255 in binary?
 **Solution (Step-by-Step):**
 ```
 Step 1: A binary counter needs to represent N distinct states.
-Number of flip-flops needed = ⌈log₂N⌉
+Number of flip-flops needed = âŒˆlogâ‚‚NâŒ‰
 
 Step 2: Count from 0 to 255 means 256 distinct states
 (0, 1, 2, ..., 255).
 
 N = 256
-⌈log₂256⌉ = ⌈8⌉ = 8
+âŒˆlogâ‚‚256âŒ‰ = âŒˆ8âŒ‰ = 8
 
 Step 3: Verification:
-2⁸ = 256, so 8 flip-flops can represent 256 states.
+2â¸ = 256, so 8 flip-flops can represent 256 states.
 A 3-bit counter counts 0-7 (8 states).
 An 8-bit counter counts 0-255 (256 states).
 
 Answer: (C) 8
 
 Common Trap: Computing 0 to 255 as 255 states instead of
-256. Remember: count from 0 → n gives n+1 distinct states.
+256. Remember: count from 0 â†’ n gives n+1 distinct states.
 ```
 
 #### Problem 43: Multiplexer Implementation (GATE 2022)
@@ -3049,9 +3049,9 @@ F = S1'S0'I0 + S1'S0 I1 + S1 S0' I2 + S1 S0 I3
 If I0 = 1, I1 = 0, I2 = Q, I3 = Q', what function does it
 implement in terms of Q and the select inputs?
 
-(A) F = S1 ⊕ S0 ⊕ Q
+(A) F = S1 âŠ• S0 âŠ• Q
 (B) F = S1' S0' + S1 S0' Q + S1 S0 Q'
-(C) F = (S1 ⊕ S0) Q + S1 S0 Q'
+(C) F = (S1 âŠ• S0) Q + S1 S0 Q'
 (D) F = S1' + S0 Q'
 ```
 
@@ -3064,21 +3064,21 @@ Step 2: Simplify:
 F = S1'S0' + S1S0'Q + S1S0Q'
 
 Step 3: Check options:
-(A) F = S1 ⊕ S0 ⊕ Q
-    = (S1'S0 + S1S0') ⊕ Q
+(A) F = S1 âŠ• S0 âŠ• Q
+    = (S1'S0 + S1S0') âŠ• Q
     = (S1'S0 + S1S0')Q' + (S1'S0 + S1S0')'Q
     = S1'S0Q' + S1S0'Q' + (S1S0 + S1'S0')Q
     = S1'S0Q' + S1S0'Q' + S1S0Q + S1'S0'Q
-    This doesn't match our expression. ✗
+    This doesn't match our expression. âœ—
 
 (B) Direct match: S1'S0' + S1S0'Q + S1S0Q'
-    Yes, this matches exactly! ✓
+    Yes, this matches exactly! âœ“
 
-(C) (S1⊕S0)Q + S1S0Q' = (S1'S0 + S1S0')Q + S1S0Q'
+(C) (S1âŠ•S0)Q + S1S0Q' = (S1'S0 + S1S0')Q + S1S0Q'
     = S1'S0Q + S1S0'Q + S1S0Q'
-    Missing S1'S0' term. ✗
+    Missing S1'S0' term. âœ—
 
-(D) S1' + S0Q' doesn't match the SOP form. ✗
+(D) S1' + S0Q' doesn't match the SOP form. âœ—
 
 Answer: (B)
 
@@ -3090,7 +3090,7 @@ Each data input connects directly; substitute and simplify.
 
 ### Discrete Mathematics
 
-#### Problem 44: Graph Theory — Chromatic Number (GATE 2020)
+#### Problem 44: Graph Theory â€” Chromatic Number (GATE 2020)
 
 ```
 Q: What is the chromatic number of the following graph?
@@ -3108,7 +3108,7 @@ all 5 vertices of K5.
 Step 1: The graph has 6 vertices: 5 forming K5 plus one
 extra vertex (v6) connected to all 5.
 
-Step 2: Chromatic number of K5 is 5 (χ(Kn) = n for complete
+Step 2: Chromatic number of K5 is 5 (Ï‡(Kn) = n for complete
 graphs, since every pair of vertices is adjacent).
 
 Step 3: The extra vertex v6 is adjacent to all 5 vertices
@@ -3126,10 +3126,10 @@ whose chromatic number is 6.
 Answer: (B) 6
 
 Common Trap: A complete graph K5 plus a vertex connected
-to all 5 is K6. χ(Kn) = n always. No fewer colors suffice.
+to all 5 is K6. Ï‡(Kn) = n always. No fewer colors suffice.
 ```
 
-#### Problem 45: Set Theory — Power Set (GATE 2021)
+#### Problem 45: Set Theory â€” Power Set (GATE 2021)
 
 ```
 Q: Let A = {1, {2, 3}, 4}. What is the cardinality of the
@@ -3150,11 +3150,11 @@ Step 1: A has 3 elements:
 
 Step 2: Cardinality of A: |A| = 3 (three distinct elements)
 
-Step 3: Power set cardinality = 2^|A| = 2³ = 8
+Step 3: Power set cardinality = 2^|A| = 2Â³ = 8
 
 Step 4: The power set P(A) contains:
-∅, {1}, {{2,3}}, {4}, {1,{2,3}}, {1,4}, {{2,3},4}, {1,{2,3},4}
-That's 8 subsets. ✓
+âˆ…, {1}, {{2,3}}, {4}, {1,{2,3}}, {1,4}, {{2,3},4}, {1,{2,3},4}
+That's 8 subsets. âœ“
 
 Answer: (B) 8
 
@@ -3163,7 +3163,7 @@ Inside a set, {2, 3} is a single element (a set itself).
 Only its outer container determines element count.
 ```
 
-#### Problem 46: Combinatorics — Arrangements (GATE 2022)
+#### Problem 46: Combinatorics â€” Arrangements (GATE 2022)
 
 ```
 Q: How many 4-letter words can be formed from the letters of
@@ -3186,31 +3186,31 @@ Step 2: We need 4-letter words. Count by cases based on
 letter repetition patterns.
 
 Case 1: All 4 letters different
-Choose from {M, I, S, P} — 4 distinct letters.
+Choose from {M, I, S, P} â€” 4 distinct letters.
 Number = 4! = 24 ways
 
 Case 2: 2 letters same, 2 different
-Choose the repeated letter: M(0—can't repeat), I(4), S(4), P(2)
+Choose the repeated letter: M(0â€”can't repeat), I(4), S(4), P(2)
 Repeated letter can be I, S, or P (3 choices)
 Choose 2 distinct letters from remaining 3: C(3,2) = 3
 Arrange: 4! / 2! = 12
-Total = 3 × 3 × 12 = 108
+Total = 3 Ã— 3 Ã— 12 = 108
 
 Case 3: 2 letters same, 2 letters same (2 pairs)
 Choose 2 letters from {I, S, P} (I,S), (I,P), (S,P): C(3,2) = 3
-Arrange: 4! / (2! × 2!) = 6
-Total = 3 × 6 = 18
+Arrange: 4! / (2! Ã— 2!) = 6
+Total = 3 Ã— 6 = 18
 
 Case 4: 3 letters same, 1 different
-Repeated letter: I or S (need at least 3 occurrences) — 2 choices
+Repeated letter: I or S (need at least 3 occurrences) â€” 2 choices
 Different letter from remaining 3: 3 choices
 Arrange: 4! / 3! = 4
-Total = 2 × 3 × 4 = 24
+Total = 2 Ã— 3 Ã— 4 = 24
 
 Case 5: All 4 same
 Only I and S have 4 occurrences: 2 choices
 Arrange: only 1 way (all same)
-Total = 2 × 1 = 2
+Total = 2 Ã— 1 = 2
 
 Step 3: Sum all cases:
 24 + 108 + 18 + 24 + 2 = 176
@@ -3227,33 +3227,33 @@ Also, forgetting cases with 4 identical letters.
 ```
 Q: Which of the following is NOT a tautology?
 
-(A) ((P → Q) ∧ (Q → R)) → (P → R)
-(B) (P → (Q → R)) → ((P ∧ Q) → R)
-(C) (P ∧ (P → Q)) → Q
-(D) (P ∨ Q) → (P ∧ Q)
+(A) ((P â†’ Q) âˆ§ (Q â†’ R)) â†’ (P â†’ R)
+(B) (P â†’ (Q â†’ R)) â†’ ((P âˆ§ Q) â†’ R)
+(C) (P âˆ§ (P â†’ Q)) â†’ Q
+(D) (P âˆ¨ Q) â†’ (P âˆ§ Q)
 ```
 
 **Solution (Step-by-Step):**
 ```
 Step 1: Check each option:
 
-(A) ((P → Q) ∧ (Q → R)) → (P → R)
+(A) ((P â†’ Q) âˆ§ (Q â†’ R)) â†’ (P â†’ R)
 This is the chain rule / hypothetical syllogism.
 If P implies Q and Q implies R, then P implies R.
-This is a tautology. ✓
+This is a tautology. âœ“
 
-(B) (P → (Q → R)) → ((P ∧ Q) → R)
+(B) (P â†’ (Q â†’ R)) â†’ ((P âˆ§ Q) â†’ R)
 If P implies (Q implies R), then (P and Q) implies R.
-This is the exportation law. Tautology. ✓
+This is the exportation law. Tautology. âœ“
 
-(C) (P ∧ (P → Q)) → Q
+(C) (P âˆ§ (P â†’ Q)) â†’ Q
 This is modus ponens. If P is true and P implies Q,
-then Q must be true. Tautology. ✓
+then Q must be true. Tautology. âœ“
 
-(D) (P ∨ Q) → (P ∧ Q)
+(D) (P âˆ¨ Q) â†’ (P âˆ§ Q)
 Is this always true? Let's check:
-When P=True, Q=False: P∨Q=True, P∧Q=False → T→F = False
-Counterexample found! Not a tautology. ✗
+When P=True, Q=False: Pâˆ¨Q=True, Pâˆ§Q=False â†’ Tâ†’F = False
+Counterexample found! Not a tautology. âœ—
 
 Answer: (D)
 
@@ -3288,23 +3288,23 @@ Step 1: Write as augmented matrix:
 [1  2   k | 10]
 
 Step 2: Row reduce:
-R2 → R2 - R1: [0  1   2 | 4]
-R3 → R3 - R1: [0  1  k-1 | 4]
+R2 â†’ R2 - R1: [0  1   2 | 4]
+R3 â†’ R3 - R1: [0  1  k-1 | 4]
 
 Matrix:
 [1  1    1  | 6]
 [0  1    2  | 4]
 [0  1  k-1  | 4]
 
-Step 3: R3 → R3 - R2:
+Step 3: R3 â†’ R3 - R2:
 [0  0  k-3  | 0]
 
-For a unique solution: k-3 ≠ 0 → k ≠ 3
-For infinite solutions: k-3 = 0 AND 0 = 0 → k = 3
-For no solution: k-3 = 0 but RHS non-zero → never happens here
+For a unique solution: k-3 â‰  0 â†’ k â‰  3
+For infinite solutions: k-3 = 0 AND 0 = 0 â†’ k = 3
+For no solution: k-3 = 0 but RHS non-zero â†’ never happens here
 
 Wait, with k=3:
-Eq3 becomes: 0·x + 0·y + 0·z = 0 → always true
+Eq3 becomes: 0Â·x + 0Â·y + 0Â·z = 0 â†’ always true
 So infinite solutions.
 
 For no solution, we need contradictory equations.
@@ -3314,8 +3314,8 @@ Actually looking at equations 2 and 3:
 Eq2: x + 2y + 3z = 10
 Eq3: x + 2y + kz = 10
 
-If k = 3, both are same equation → infinite solutions.
-If k ≠ 3, the system has a unique solution (3 variables,
+If k = 3, both are same equation â†’ infinite solutions.
+If k â‰  3, the system has a unique solution (3 variables,
 3 independent equations after eliminating 0=0 case with rank 3).
 
 Hmm, this system always has at least one solution.
@@ -3340,7 +3340,7 @@ Let me provide the correct analysis for the given system.
 
 For the given system, there is never NO solution.
 k=3 gives infinite solutions.
-k≠3 gives unique solution.
+kâ‰ 3 gives unique solution.
 
 Answer: For the given system, no value of k gives no solution.
 (k=3 gives infinite solutions, others give unique)
@@ -3371,8 +3371,8 @@ Q: What is the rank of the matrix A = [[1, 2, 3],
 **Solution (Step-by-Step):**
 ```
 Step 1: Row reduce:
-R2 → R2 - 2R1: [0, 0, 0]
-R3 → R3 - 3R1: [0, 0, 0]
+R2 â†’ R2 - 2R1: [0, 0, 0]
+R3 â†’ R3 - 3R1: [0, 0, 0]
 
 After reduction:
 [1, 2, 3]
@@ -3383,21 +3383,21 @@ Step 2: Number of non-zero rows after row reduction = 1.
 Rank = 1
 
 Step 3: Verification: Every row is a scalar multiple of
-the first row (R2 = 2×R1, R3 = 3×R1). All rows are
+the first row (R2 = 2Ã—R1, R3 = 3Ã—R1). All rows are
 linearly dependent. Only one linearly independent row.
 
 Answer: (B) 1
 
-Common Trap: Just because the matrix is 3×3 doesn't mean
+Common Trap: Just because the matrix is 3Ã—3 doesn't mean
 rank is 3. Always check linear dependence of rows/columns.
-This matrix has rank 1 — all rows are multiples of [1,2,3].
+This matrix has rank 1 â€” all rows are multiples of [1,2,3].
 ```
 
 #### Problem 50: Eigenvalues of a Matrix (GATE 2022)
 
 ```
-Q: A 3×3 matrix A has eigenvalues 1, 2, and 3. What are the
-eigenvalues of A⁻¹ (inverse of A)?
+Q: A 3Ã—3 matrix A has eigenvalues 1, 2, and 3. What are the
+eigenvalues of Aâ»Â¹ (inverse of A)?
 
 (A) 1, 1/2, 1/3
 (B) 1, 2, 3
@@ -3407,22 +3407,22 @@ eigenvalues of A⁻¹ (inverse of A)?
 
 **Solution (Step-by-Step):**
 ```
-Step 1: Property: If λ is an eigenvalue of A, then 1/λ is
-an eigenvalue of A⁻¹ (provided λ ≠ 0).
+Step 1: Property: If Î» is an eigenvalue of A, then 1/Î» is
+an eigenvalue of Aâ»Â¹ (provided Î» â‰  0).
 
-Proof: If Ax = λx, then A⁻¹Ax = A⁻¹(λx) → x = λA⁻¹x
-→ A⁻¹x = (1/λ)x ✓
+Proof: If Ax = Î»x, then Aâ»Â¹Ax = Aâ»Â¹(Î»x) â†’ x = Î»Aâ»Â¹x
+â†’ Aâ»Â¹x = (1/Î»)x âœ“
 
-Step 2: Given eigenvalues of A: λ₁ = 1, λ₂ = 2, λ₃ = 3
+Step 2: Given eigenvalues of A: Î»â‚ = 1, Î»â‚‚ = 2, Î»â‚ƒ = 3
 
-Step 3: Eigenvalues of A⁻¹:
+Step 3: Eigenvalues of Aâ»Â¹:
 1/1 = 1
 1/2 = 0.5
-1/3 ≈ 0.333
+1/3 â‰ˆ 0.333
 
 Answer: (A) 1, 1/2, 1/3
 
-Common Trap: Forgetting that eigenvectors of A and A⁻¹
+Common Trap: Forgetting that eigenvectors of A and Aâ»Â¹
 are the same, but eigenvalues are reciprocals. Also,
 A must be invertible (no zero eigenvalues).
 ```
@@ -3439,8 +3439,8 @@ This section provides detailed chapter-wise book references for systematic GATE 
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
-| **Introduction to Algorithms (CLRS)** | Cormen, Leiserson, Rivest, Stein | Ch 2-4 (Sorting, Divide & Conquer, Recurrences), Ch 6 (Heapsort), Ch 10-12 (Basic Data Structures, Hash Tables, BST), Ch 15 (Dynamic Programming), Ch 16 (Greedy), Ch 22-25 (Graph Algorithms), Ch 34 (NP-Completeness) | ★★★★★ — Master recurrences, DP patterns, graph algorithms |
-| **Data Structures and Algorithms Made Easy** | Narasimha Karumanchi | All chapters; excellent problem bank with 700+ problems organized by topic | ★★★★★ — Practice 200+ problems for GATE-level proficiency |
+| **Introduction to Algorithms (CLRS)** | Cormen, Leiserson, Rivest, Stein | Ch 2-4 (Sorting, Divide & Conquer, Recurrences), Ch 6 (Heapsort), Ch 10-12 (Basic Data Structures, Hash Tables, BST), Ch 15 (Dynamic Programming), Ch 16 (Greedy), Ch 22-25 (Graph Algorithms), Ch 34 (NP-Completeness) | â˜…â˜…â˜…â˜…â˜… â€” Master recurrences, DP patterns, graph algorithms |
+| **Data Structures and Algorithms Made Easy** | Narasimha Karumanchi | All chapters; excellent problem bank with 700+ problems organized by topic | â˜…â˜…â˜…â˜…â˜… â€” Practice 200+ problems for GATE-level proficiency |
 
 **Strategy**: Start with Karumanchi for quick concept coverage and problem practice. Use CLRS for deep understanding of complex topics (DP, Graph algorithms, NP-Completeness). Focus on Chapters 2-6, 10-12, 15-16, 22-25 from CLRS for GATE. Skip amortized analysis, B-trees, Fibonacci heaps, and advanced data structures not in GATE syllabus.
 
@@ -3448,8 +3448,8 @@ This section provides detailed chapter-wise book references for systematic GATE 
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
-| **Operating System Concepts (Dinosaur Book)** | Silberschatz, Galvin, Gagne | Ch 3 (Processes), Ch 5-7 (CPU Scheduling, Synchronization, Deadlocks), Ch 8-9 (Memory Management, Virtual Memory), Ch 10-11 (File System, I/O) | ★★★★★ — All GATE topics covered thoroughly |
-| **Modern Operating Systems** | Andrew S. Tanenbaum | Ch 2 (Processes & Threads), Ch 3 (Memory Management), Ch 4 (File Systems), Ch 5 (I/O), Ch 6 (Deadlocks) | ★★★★ — Excellent for conceptual clarity, especially on paging and VM |
+| **Operating System Concepts (Dinosaur Book)** | Silberschatz, Galvin, Gagne | Ch 3 (Processes), Ch 5-7 (CPU Scheduling, Synchronization, Deadlocks), Ch 8-9 (Memory Management, Virtual Memory), Ch 10-11 (File System, I/O) | â˜…â˜…â˜…â˜…â˜… â€” All GATE topics covered thoroughly |
+| **Modern Operating Systems** | Andrew S. Tanenbaum | Ch 2 (Processes & Threads), Ch 3 (Memory Management), Ch 4 (File Systems), Ch 5 (I/O), Ch 6 (Deadlocks) | â˜…â˜…â˜…â˜… â€” Excellent for conceptual clarity, especially on paging and VM |
 
 **Strategy**: Silberschatz Ch 3-11 cover 100% of the GATE OS syllabus. Focus on: scheduling algorithms (numericals), synchronization problems (semaphore coding questions), deadlock (banker's algorithm), memory management (paging, segmentation, TLB), and file systems (inode, disk scheduling). Tanenbaum provides alternative explanations for tough topics. Solve all numericals from both books' exercise sections.
 
@@ -3457,8 +3457,8 @@ This section provides detailed chapter-wise book references for systematic GATE 
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
-| **Database System Concepts** | Silberschatz, Korth, Sudarshan | Ch 2-3 (ER Model, SQL), Ch 4-5 (Intermediate/Advanced SQL), Ch 6-7 (DB Design, Normalization), Ch 14-16 (Transactions, Concurrency, Recovery), Ch 11-12 (Indexing, B+ Trees) | ★★★★★ — Best single resource for GATE DBMS |
-| **Fundamentals of Database Systems** | Elmasri & Navathe | Ch 3-4 (Data Modeling, ER), Ch 7-8 (Relational Algebra, SQL), Ch 10-11 (Normalization), Ch 17-18 (Transaction Processing, Concurrency Control) | ★★★★ — Excellent normalization and transaction chapters |
+| **Database System Concepts** | Silberschatz, Korth, Sudarshan | Ch 2-3 (ER Model, SQL), Ch 4-5 (Intermediate/Advanced SQL), Ch 6-7 (DB Design, Normalization), Ch 14-16 (Transactions, Concurrency, Recovery), Ch 11-12 (Indexing, B+ Trees) | â˜…â˜…â˜…â˜…â˜… â€” Best single resource for GATE DBMS |
+| **Fundamentals of Database Systems** | Elmasri & Navathe | Ch 3-4 (Data Modeling, ER), Ch 7-8 (Relational Algebra, SQL), Ch 10-11 (Normalization), Ch 17-18 (Transaction Processing, Concurrency Control) | â˜…â˜…â˜…â˜… â€” Excellent normalization and transaction chapters |
 
 **Strategy**: Korth Ch 2-7 for conceptual design and SQL; Ch 14-16 for transaction theory (critical for GATE). Practice: 50+ SQL queries covering GROUP BY, HAVING, correlated subqueries, nested queries. Normalization: solve problems for all normal forms (1NF through BCNF, 4NF). Transaction: practice conflict/view serializability, precedence graphs, lock-based protocols (2PL, timestamp ordering).
 
@@ -3466,44 +3466,44 @@ This section provides detailed chapter-wise book references for systematic GATE 
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
-| **Computer Networking: A Top-Down Approach** | Kurose & Ross | Ch 2 (Application Layer: HTTP, FTP, SMTP, DNS), Ch 3 (Transport: TCP, UDP, Congestion Control), Ch 4 (Network Layer: IPv4, Routing), Ch 5 (Link Layer: Ethernet, CSMA/CD, ARP) | ★★★★★ — Clear explanations, GATE-aligned coverage |
-| **Computer Networks** | Andrew S. Tanenbaum | Ch 2-6 (Physical through Application Layers), thorough coverage of all layers | ★★★★ — Deeper coverage of physical/data link layers |
+| **Computer Networking: A Top-Down Approach** | Kurose & Ross | Ch 2 (Application Layer: HTTP, FTP, SMTP, DNS), Ch 3 (Transport: TCP, UDP, Congestion Control), Ch 4 (Network Layer: IPv4, Routing), Ch 5 (Link Layer: Ethernet, CSMA/CD, ARP) | â˜…â˜…â˜…â˜…â˜… â€” Clear explanations, GATE-aligned coverage |
+| **Computer Networks** | Andrew S. Tanenbaum | Ch 2-6 (Physical through Application Layers), thorough coverage of all layers | â˜…â˜…â˜…â˜… â€” Deeper coverage of physical/data link layers |
 
-**Strategy**: Kurose is the primary GATE resource. Focus on: Ch 2 (HTTP, DNS — application concepts), Ch 3 (TCP congestion control, flow control — numerical questions), Ch 4 (subnetting, routing algorithms, IPv4 — NAT questions), Ch 5 (CSMA/CD, Ethernet — formula-based questions). Tanenbaum supplements with deeper coverage of CRC, error detection, and network hardware.
+**Strategy**: Kurose is the primary GATE resource. Focus on: Ch 2 (HTTP, DNS â€” application concepts), Ch 3 (TCP congestion control, flow control â€” numerical questions), Ch 4 (subnetting, routing algorithms, IPv4 â€” NAT questions), Ch 5 (CSMA/CD, Ethernet â€” formula-based questions). Tanenbaum supplements with deeper coverage of CRC, error detection, and network hardware.
 
 ### Theory of Computation
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
-| **Introduction to Automata Theory, Languages, and Computation** | Hopcroft, Ullman, Motwani | Ch 2-4 (DFA, NFA, Regular Expressions), Ch 5-6 (CFL, PDA), Ch 7-8 (Turing Machines, Undecidability) | ★★★★★ — The definitive TOC text for GATE |
-| **Introduction to the Theory of Computation** | Michael Sipser | Ch 1 (Regular Languages), Ch 2 (Context-Free Languages), Ch 3-4 (Turing Machines, Decidability), Ch 5-6 (Reducibility, Advanced Topics) | ★★★★ — Excellent clarity on decidability and reductions |
+| **Introduction to Automata Theory, Languages, and Computation** | Hopcroft, Ullman, Motwani | Ch 2-4 (DFA, NFA, Regular Expressions), Ch 5-6 (CFL, PDA), Ch 7-8 (Turing Machines, Undecidability) | â˜…â˜…â˜…â˜…â˜… â€” The definitive TOC text for GATE |
+| **Introduction to the Theory of Computation** | Michael Sipser | Ch 1 (Regular Languages), Ch 2 (Context-Free Languages), Ch 3-4 (Turing Machines, Decidability), Ch 5-6 (Reducibility, Advanced Topics) | â˜…â˜…â˜…â˜… â€” Excellent clarity on decidability and reductions |
 
-**Strategy**: Focus on Hopcroft/Ullman Ch 2-6 for GATE. Topic-wise: Regular languages (DFA minimization, pumping lemma — 1-2 questions), CFL/PDA (PDA design, closure properties, pumping lemma for CFL — 1-2 questions), Turing machines (design, variants — 1 question), Undecidability (Rice's theorem, reductions — 1 question). Sipser provides clearer explanations for undecidability proofs.
+**Strategy**: Focus on Hopcroft/Ullman Ch 2-6 for GATE. Topic-wise: Regular languages (DFA minimization, pumping lemma â€” 1-2 questions), CFL/PDA (PDA design, closure properties, pumping lemma for CFL â€” 1-2 questions), Turing machines (design, variants â€” 1 question), Undecidability (Rice's theorem, reductions â€” 1 question). Sipser provides clearer explanations for undecidability proofs.
 
 ### Compiler Design
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
-| **Compilers: Principles, Techniques, and Tools (Dragon Book)** | Aho, Lam, Sethi, Ullman | Ch 2 (Lexical Analysis), Ch 3-4 (Parsing: LL, LR), Ch 5 (Syntax-Directed Translation), Ch 6 (Intermediate Code Gen), Ch 7 (Runtime Environments), Ch 8 (Code Generation) | ★★★★★ — Reference text, Ch 3-5 most GATE-relevant |
+| **Compilers: Principles, Techniques, and Tools (Dragon Book)** | Aho, Lam, Sethi, Ullman | Ch 2 (Lexical Analysis), Ch 3-4 (Parsing: LL, LR), Ch 5 (Syntax-Directed Translation), Ch 6 (Intermediate Code Gen), Ch 7 (Runtime Environments), Ch 8 (Code Generation) | â˜…â˜…â˜…â˜…â˜… â€” Reference text, Ch 3-5 most GATE-relevant |
 
-**Strategy**: Only 4-5 marks in GATE. Focus on: parsing (FIRST/FOLLOW, LL(1) parse tables, LR(0)/SLR(1)/LR(1) parsing — 1-2 questions), SDT (synthesized/inherited attributes, dependency graphs — 1 question), intermediate code (three-address code, DAG representation — 1 question), symbol table and runtime (activation records — potential question). Do NOT deep-dive into optimization or code generation.
+**Strategy**: Only 4-5 marks in GATE. Focus on: parsing (FIRST/FOLLOW, LL(1) parse tables, LR(0)/SLR(1)/LR(1) parsing â€” 1-2 questions), SDT (synthesized/inherited attributes, dependency graphs â€” 1 question), intermediate code (three-address code, DAG representation â€” 1 question), symbol table and runtime (activation records â€” potential question). Do NOT deep-dive into optimization or code generation.
 
 ### Digital Logic
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
-| **Digital Logic and Computer Design** | M. Morris Mano | Ch 1-2 (Binary Systems, Boolean Algebra), Ch 3 (K-map Simplification), Ch 4 (Combinational Logic: MUX, Decoder), Ch 5-6 (Sequential Logic: Flip-flops, Counters, Registers) | ★★★★★ — Covers complete GATE DLD syllabus |
+| **Digital Logic and Computer Design** | M. Morris Mano | Ch 1-2 (Binary Systems, Boolean Algebra), Ch 3 (K-map Simplification), Ch 4 (Combinational Logic: MUX, Decoder), Ch 5-6 (Sequential Logic: Flip-flops, Counters, Registers) | â˜…â˜…â˜…â˜…â˜… â€” Covers complete GATE DLD syllabus |
 
-**Strategy**: Only 4-5 marks. Focus on: Boolean algebra simplification (K-maps, Quine-McCluskey), combinational circuits (MUX, decoder, encoder design — 1 question), sequential circuits (flip-flop conversions, counter design — 1-2 questions), number systems and conversions. Skip PLDs, ASM charts, and advanced sequential design.
+**Strategy**: Only 4-5 marks. Focus on: Boolean algebra simplification (K-maps, Quine-McCluskey), combinational circuits (MUX, decoder, encoder design â€” 1 question), sequential circuits (flip-flop conversions, counter design â€” 1-2 questions), number systems and conversions. Skip PLDs, ASM charts, and advanced sequential design.
 
 ### Discrete Mathematics
 
 | Book | Author | Key Chapters/Topics | GATE Relevance |
 |------|--------|-------------------|----------------|
-| **Discrete Mathematics and Its Applications** | Kenneth H. Rosen | Ch 1 (Logic & Proofs), Ch 2 (Sets, Functions), Ch 4-5 (Number Theory, Counting), Ch 6 (Discrete Probability), Ch 8 (Relations), Ch 9 (Graph Theory), Ch 10 (Trees) | ★★★★★ — Every chapter maps to GATE topics |
-| **Discrete and Combinatorial Mathematics** | Ralph P. Grimaldi | Ch 1-3 (Set Theory, Combinatorics), Ch 5-6 (Relations, Functions), Ch 7-8 (Graph Theory), Ch 11-12 (Groups, Rings) | ★★★★ — Strong on combinatorial proofs and group theory |
+| **Discrete Mathematics and Its Applications** | Kenneth H. Rosen | Ch 1 (Logic & Proofs), Ch 2 (Sets, Functions), Ch 4-5 (Number Theory, Counting), Ch 6 (Discrete Probability), Ch 8 (Relations), Ch 9 (Graph Theory), Ch 10 (Trees) | â˜…â˜…â˜…â˜…â˜… â€” Every chapter maps to GATE topics |
+| **Discrete and Combinatorial Mathematics** | Ralph P. Grimaldi | Ch 1-3 (Set Theory, Combinatorics), Ch 5-6 (Relations, Functions), Ch 7-8 (Graph Theory), Ch 11-12 (Groups, Rings) | â˜…â˜…â˜…â˜… â€” Strong on combinatorial proofs and group theory |
 
-**Strategy**: Rosen is the primary text. Focus on: Propositional logic (tautologies, equivalences — 1 question), Set theory (power sets, cardinality — 1 question), Combinatorics (permutations, combinations, inclusion-exclusion — 1-2 questions), Graph theory (spanning trees, coloring, Euler/Hamiltonian — 1-2 questions), Group theory (properties, subgroups — 1 question). Grimaldi supplements for group theory depth.
+**Strategy**: Rosen is the primary text. Focus on: Propositional logic (tautologies, equivalences â€” 1 question), Set theory (power sets, cardinality â€” 1 question), Combinatorics (permutations, combinations, inclusion-exclusion â€” 1-2 questions), Graph theory (spanning trees, coloring, Euler/Hamiltonian â€” 1-2 questions), Group theory (properties, subgroups â€” 1 question). Grimaldi supplements for group theory depth.
 
 ### General GATE Preparation Resources
 
@@ -3551,8 +3551,8 @@ This mock follows the average subject weightage from 2020-2025 GATE CS papers.
 | **Discrete Mathematics** | 2 | 2 | 6 | 6% |
 | **Engineering Mathematics** | 2 | 2 | 6 | 6% |
 | **Probability & Statistics** | 1 | 1 | 3 | 3% |
-| **Network Security / Misc** | 1 | — | 1 | 1% |
-| **Total** | **25** | **33** | **91** | **≈100%** |
+| **Network Security / Misc** | 1 | â€” | 1 | 1% |
+| **Total** | **25** | **33** | **91** | **â‰ˆ100%** |
 
 #### Question Type Breakdown
 
@@ -3572,12 +3572,12 @@ This mock follows the average subject weightage from 2020-2025 GATE CS papers.
 
 | Phase | Duration | Questions | Target Marks | Strategy |
 |-------|:--------:|:---------:|:------------:|----------|
-| **GA (All)** | 20 min | 10 GA questions | 12-15 | Do first — easiest marks. All MCQs and NATs. No subject questions during this phase. |
-| **Subject — 1-mark** | 25 min | 15 questions | 10-13 | Quick scan: solve what you know in 30 sec, mark tricky ones for review. |
-| **Subject — Easy 2-mark** | 40 min | 12 questions | 18-22 | Pick NAT questions first (no negative). Then MCQs where you're confident. |
-| **Subject — Moderate/Difficult** | 50 min | 18 questions | 18-24 | Attempt with elimination. MSQ: answer only if you're confident of each option. |
-| **Review** | 20 min | All flagged | — | Re-check calculations, NAT decimal places, MSQ selections. |
-| **Buffer** | 5 min | — | — | Final submission, verify all answered. |
+| **GA (All)** | 20 min | 10 GA questions | 12-15 | Do first â€” easiest marks. All MCQs and NATs. No subject questions during this phase. |
+| **Subject â€” 1-mark** | 25 min | 15 questions | 10-13 | Quick scan: solve what you know in 30 sec, mark tricky ones for review. |
+| **Subject â€” Easy 2-mark** | 40 min | 12 questions | 18-22 | Pick NAT questions first (no negative). Then MCQs where you're confident. |
+| **Subject â€” Moderate/Difficult** | 50 min | 18 questions | 18-24 | Attempt with elimination. MSQ: answer only if you're confident of each option. |
+| **Review** | 20 min | All flagged | â€” | Re-check calculations, NAT decimal places, MSQ selections. |
+| **Buffer** | 5 min | â€” | â€” | Final submission, verify all answered. |
 
 **Score Target**: 65+ marks for top 500 rank, 75+ for top 100 rank, 85+ for top 50 rank.
 
@@ -3603,7 +3603,7 @@ This mock emphasizes core Computer Science subjects (DSA, OS, DBMS, TOC, CN) whi
 | **Discrete Mathematics** | 2 | 2 | 6 | 6% |
 | **Engineering Mathematics** | 1 | 1 | 3 | 3% |
 | **Probability & Statistics** | 1 | 1 | 3 | 3% |
-| **Total** | **28** | **34** | **96** | **≈100%** |
+| **Total** | **28** | **34** | **96** | **â‰ˆ100%** |
 
 #### Question Type Breakdown
 
@@ -3622,12 +3622,12 @@ This mock emphasizes core Computer Science subjects (DSA, OS, DBMS, TOC, CN) whi
 | Phase | Duration | Questions | Target | Strategy |
 |-------|:--------:|:---------:|:------:|----------|
 | **GA sitters (Q1-5)** | 10 min | 5 verbal + 5 numerical | 12-15 | Set the tone. Complete GA in one uninterrupted block. |
-| **NAT questions (all subjects)** | 25 min | 13 NAT questions | 10-13 | No negative marking — extract maximum value. |
+| **NAT questions (all subjects)** | 25 min | 13 NAT questions | 10-13 | No negative marking â€” extract maximum value. |
 | **1-mark MCQs (subjects)** | 20 min | 18 questions | 13-15 | Quick knowledge check. Don't overthink. |
 | **2-mark MSQ** | 30 min | 8 MSQ questions | 8-12 | Each option is independent. Partial marking applies. |
 | **2-mark MCQs (confident)** | 40 min | 12 questions | 16-20 | Start with easiest. Use elimination. |
 | **2-mark MCQs (difficult)** | 30 min | 6 questions | 4-8 | Educated guesses only. Skip if no clue. |
-| **Review & submit** | 25 min | All | — | Double-check NAT values. Verify MSQ counts. |
+| **Review & submit** | 25 min | All | â€” | Double-check NAT values. Verify MSQ counts. |
 
 **Score Target**: 70+ marks. With DSA at 16 marks and OS at 11 marks, this paper rewards strong CS fundamentals.
 
@@ -3641,18 +3641,18 @@ This mock exactly mirrors the latest GATE 2025 pattern with 65 questions and inc
 
 | Subject | MCQ (1M) | MCQ (2M) | MSQ (1M) | MSQ (2M) | NAT (1M) | NAT (2M) | Total Marks |
 |---------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:-----------:|
-| **General Aptitude** | 3 | 4 | 1 | 1 | 1 | — | 15 |
+| **General Aptitude** | 3 | 4 | 1 | 1 | 1 | â€” | 15 |
 | **Data Structures & Algorithms** | 1 | 2 | 1 | 1 | 1 | 2 | 13 |
-| **Operating Systems** | 1 | 1 | — | 1 | 1 | 1 | 8 |
-| **DBMS** | 1 | 1 | — | 1 | — | 1 | 6 |
-| **Computer Networks** | 1 | 1 | — | 1 | — | 1 | 6 |
-| **Theory of Computation** | 1 | 1 | — | 1 | — | 1 | 6 |
-| **Compiler Design** | — | 1 | — | 1 | — | 1 | 5 |
-| **Computer Organization** | 1 | 1 | — | — | 1 | 1 | 6 |
-| **Digital Logic** | — | 1 | — | — | 1 | 1 | 5 |
-| **Discrete Mathematics** | 1 | 1 | — | — | 1 | 1 | 6 |
-| **Engineering Maths** | 1 | 1 | — | — | — | 1 | 4 |
-| **Probability & Stats** | — | — | — | — | 1 | 1 | 3 |
+| **Operating Systems** | 1 | 1 | â€” | 1 | 1 | 1 | 8 |
+| **DBMS** | 1 | 1 | â€” | 1 | â€” | 1 | 6 |
+| **Computer Networks** | 1 | 1 | â€” | 1 | â€” | 1 | 6 |
+| **Theory of Computation** | 1 | 1 | â€” | 1 | â€” | 1 | 6 |
+| **Compiler Design** | â€” | 1 | â€” | 1 | â€” | 1 | 5 |
+| **Computer Organization** | 1 | 1 | â€” | â€” | 1 | 1 | 6 |
+| **Digital Logic** | â€” | 1 | â€” | â€” | 1 | 1 | 5 |
+| **Discrete Mathematics** | 1 | 1 | â€” | â€” | 1 | 1 | 6 |
+| **Engineering Maths** | 1 | 1 | â€” | â€” | â€” | 1 | 4 |
+| **Probability & Stats** | â€” | â€” | â€” | â€” | 1 | 1 | 3 |
 | **Total** | **11** | **15** | **2** | **7** | **7** | **12** | **83** |
 
 > **Note**: The remaining ~17 marks come from additional mixed questions across subjects to reach 100 total marks.
@@ -3667,7 +3667,7 @@ This mock exactly mirrors the latest GATE 2025 pattern with 65 questions and inc
 | MSQ (2-mark) | 7 | 14 |
 | NAT (1-mark) | 7 | 7 |
 | NAT (2-mark) | 12 | 24 |
-| **Total** | **54 (+ extra) ≈ 65** | **≈100** |
+| **Total** | **54 (+ extra) â‰ˆ 65** | **â‰ˆ100** |
 
 #### Timing Plan (GATE 2025 Simulation)
 
@@ -3698,12 +3698,12 @@ Pre-test (Day before):
 - No phone, no internet, no distractions
 
 During test (3 hours):
-- 0:00 - 0:15 → GA section
-- 0:15 - 0:45 → ALL NAT questions (no negative marking — priority)
-- 0:45 - 1:05 → 1-mark MCQs
-- 1:05 - 2:20 → 2-mark MCQs (confident first, then difficult)
-- 2:20 - 2:40 → MSQ questions
-- 2:40 - 3:00 → Review flagged questions, verify NAT answers
+- 0:00 - 0:15 â†’ GA section
+- 0:15 - 0:45 â†’ ALL NAT questions (no negative marking â€” priority)
+- 0:45 - 1:05 â†’ 1-mark MCQs
+- 1:05 - 2:20 â†’ 2-mark MCQs (confident first, then difficult)
+- 2:20 - 2:40 â†’ MSQ questions
+- 2:40 - 3:00 â†’ Review flagged questions, verify NAT answers
 
 Post-test analysis:
 - Immediately note: Which subjects felt hardest?
@@ -3724,12 +3724,12 @@ Progressive targets:
 ```
 After each mock test, fill this template:
 
-═══ MOCK ANALYSIS ═══
+â•â•â• MOCK ANALYSIS â•â•â•
 Mock #: ___   Score: ___/100   Time: ___ minutes
 
 SUBJECT BREAKDOWN:
 Subject          | Attempted | Correct | Wrong | Score
-─────────────────|───────────|─────────|───────|───────
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€|â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€|â”€â”€â”€â”€â”€â”€â”€â”€â”€|â”€â”€â”€â”€â”€â”€â”€|â”€â”€â”€â”€â”€â”€â”€
 General Aptitude |           |         |       |
 DSA              |           |         |       |
 OS               |           |         |       |
@@ -3783,7 +3783,7 @@ Main deterioration area:
 
 ### Data Structures & Algorithms (Q51-Q57)
 
-#### Q51 (GATE 2015) — Recursion with Static Variable
+#### Q51 (GATE 2015) â€” Recursion with Static Variable
 
 Consider the following C function:
 
@@ -3798,16 +3798,16 @@ int f(int n) {
 What value is returned by f(1)?
 
 Step-by-step:
-- Call f(1): n=1, i=1. n<5 → n=1+1=2, i=2, call f(2)
-- Call f(2): n=2, i=2. n<5 → n=2+2=4, i=3, call f(4)
-- Call f(4): n=4, i=3. n<5 → n=4+3=7, i=4, call f(7)
-- Call f(7): n=7, i=4. n≥5 → return 7
+- Call f(1): n=1, i=1. n<5 â†’ n=1+1=2, i=2, call f(2)
+- Call f(2): n=2, i=2. n<5 â†’ n=2+2=4, i=3, call f(4)
+- Call f(4): n=4, i=3. n<5 â†’ n=4+3=7, i=4, call f(7)
+- Call f(7): n=7, i=4. nâ‰¥5 â†’ return 7
 
 Answer: 7
 
 ---
 
-#### Q52 (GATE 2016) — Quick Sort Worst-Case Recurrence
+#### Q52 (GATE 2016) â€” Quick Sort Worst-Case Recurrence
 
 Which recurrence represents the worst-case time complexity of Quicksort?
 
@@ -3825,7 +3825,7 @@ Answer: C
 
 ---
 
-#### Q53 (GATE 2017) — Binary Tree Leaves & Internal Nodes
+#### Q53 (GATE 2017) â€” Binary Tree Leaves & Internal Nodes
 
 A binary tree T has 20 leaves. The number of nodes in T with exactly two children is _____.
 
@@ -3839,7 +3839,7 @@ Answer: 19
 
 ---
 
-#### Q54 (GATE 2018) — Nested Loop Complexity
+#### Q54 (GATE 2018) â€” Nested Loop Complexity
 
 int fun(int n) {
     int x = 0;
@@ -3862,7 +3862,7 @@ Answer: A
 
 ---
 
-#### Q55 (GATE 2019) — Counting Min-Heaps
+#### Q55 (GATE 2019) â€” Counting Min-Heaps
 
 The number of possible min-heaps containing values {1, 2, 3, 4, 5, 6, 7} is _____.
 
@@ -3877,7 +3877,7 @@ Answer: 80
 
 ---
 
-#### Q56 (GATE 2015) — Cayley's Formula
+#### Q56 (GATE 2015) â€” Cayley's Formula
 
 In a complete graph Kn, number of spanning trees is:
 (A) n^(n-2)  (B) n^(n-1)  (C) n!  (D) (n-1)!
@@ -3889,7 +3889,7 @@ Answer: A
 
 ---
 
-#### Q57 (GATE 2016) — Non-Comparison Sort
+#### Q57 (GATE 2016) â€” Non-Comparison Sort
 
 Which is NOT a comparison-based sorting algorithm?
 (A) Merge Sort  (B) Counting Sort  (C) Quick Sort  (D) Heap Sort
@@ -3903,7 +3903,7 @@ Answer: B
 
 ### Operating Systems (Q58-Q64)
 
-#### Q58 (GATE 2015) — Banker's Algorithm
+#### Q58 (GATE 2015) â€” Banker's Algorithm
 
 Three processes P0, P1, P2 share two resource types R0(10 instances), R1(5 instances):
 
@@ -3926,7 +3926,7 @@ Answer: Yes. Safe sequence: P1 -> P0 -> P2.
 
 ---
 
-#### Q59 (GATE 2016) — Page Table Size
+#### Q59 (GATE 2016) â€” Page Table Size
 
 Computer with 40-bit virtual address, 32-bit physical address, 4 KB page size. How many entries in a single-level page table?
 
@@ -3939,7 +3939,7 @@ Answer: 2^28 (~ 268 million entries)
 
 ---
 
-#### Q60 (GATE 2017) — Race Condition on Shared Variable
+#### Q60 (GATE 2017) â€” Race Condition on Shared Variable
 
 Two processes P1 and P2 increment a shared variable count = 0:
 count = count + 1;
@@ -3956,7 +3956,7 @@ Answer: B
 
 ---
 
-#### Q61 (GATE 2018) — Page Faults with LRU
+#### Q61 (GATE 2018) â€” Page Faults with LRU
 
 Demand paging, 3 frames, LRU replacement. Reference string: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. How many page faults?
 
@@ -3981,7 +3981,7 @@ Answer: 9
 
 ---
 
-#### Q62 (GATE 2015) — SJF Scheduling
+#### Q62 (GATE 2015) â€” SJF Scheduling
 
 Which scheduling algorithm minimizes average waiting time?
 (A) FCFS  (B) SJF (non-preemptive)  (C) Round Robin  (D) Priority
@@ -3993,7 +3993,7 @@ Answer: B
 
 ---
 
-#### Q63 (GATE 2019) — Maximum File Size
+#### Q63 (GATE 2019) â€” Maximum File Size
 
 Block size = 4 KB, block pointer = 4 bytes. Inode: 12 direct, 1 single indirect, 1 double indirect. Approximate max file size?
 
@@ -4010,7 +4010,7 @@ Answer: A
 
 ---
 
-#### Q64 (GATE 2016) — Fork() Count
+#### Q64 (GATE 2016) â€” Fork() Count
 
 for (i = 0; i < 2; i++)
     fork();
@@ -4030,7 +4030,7 @@ Answer: B
 
 ### Database Management Systems (Q65-Q70)
 
-#### Q65 (GATE 2015) — Candidate Keys
+#### Q65 (GATE 2015) â€” Candidate Keys
 
 R(A, B, C, D, E) with FDs: AB -> C, C -> D, D -> E. How many candidate keys does R have?
 
@@ -4046,7 +4046,7 @@ Answer: A
 
 ---
 
-#### Q66 (GATE 2016) — B+ Tree Properties
+#### Q66 (GATE 2016) â€” B+ Tree Properties
 
 Which is true about B+ trees?
 (A) All leaf nodes are at the same depth
@@ -4064,7 +4064,7 @@ Answer: A
 
 ---
 
-#### Q67 (GATE 2017) — Conflict Serializability
+#### Q67 (GATE 2017) â€” Conflict Serializability
 
 Schedule S: r1(A), w2(A), r3(A), w1(A), w3(A). Is S conflict serializable?
 
@@ -4081,7 +4081,7 @@ Answer: No (precedence graph has a cycle).
 
 ---
 
-#### Q68 (GATE 2018) — 3NF Condition
+#### Q68 (GATE 2018) â€” 3NF Condition
 
 A relation R is in 3NF if for every non-trivial FD X -> Y:
 (A) X is a superkey AND Y is prime
@@ -4096,7 +4096,7 @@ Answer: B
 
 ---
 
-#### Q69 (GATE 2019) — Normal Form Identification
+#### Q69 (GATE 2019) â€” Normal Form Identification
 
 R(A, B, C, D) with FDs: A->B, B->C, C->A, D->B. In which normal form?
 
@@ -4114,7 +4114,7 @@ Answer: B
 
 ---
 
-#### Q70 (GATE 2015) — SQL to Relational Algebra
+#### Q70 (GATE 2015) â€” SQL to Relational Algebra
 
 SELECT DISTINCT A, B FROM R WHERE C > 10
 
@@ -4133,7 +4133,7 @@ Answer: A
 
 ### Computer Networks (Q71-Q76)
 
-#### Q71 (GATE 2015) — Classful IP: Class C
+#### Q71 (GATE 2015) â€” Classful IP: Class C
 
 In classful IP, how many usable host addresses per Class C network?
 (A) 254  (B) 256  (C) 128  (D) 192
@@ -4145,7 +4145,7 @@ Answer: A
 
 ---
 
-#### Q72 (GATE 2016) — DNS Transport Protocol
+#### Q72 (GATE 2016) â€” DNS Transport Protocol
 
 DNS queries use which transport protocol?
 (A) TCP only  (B) UDP only  (C) Both TCP and UDP  (D) Neither
@@ -4157,7 +4157,7 @@ Answer: C
 
 ---
 
-#### Q73 (GATE 2017) — CSMA/CD Minimum Frame Size
+#### Q73 (GATE 2017) â€” CSMA/CD Minimum Frame Size
 
 CSMA/CD network: 10 Mbps bandwidth, slot time = 51.2 us. Minimum frame size?
 (A) 64 bytes  (B) 128 bytes  (C) 256 bytes  (D) 512 bytes
@@ -4169,7 +4169,7 @@ Answer: A
 
 ---
 
-#### Q74 (GATE 2018) — HTTP Status Codes
+#### Q74 (GATE 2018) â€” HTTP Status Codes
 
 Which HTTP status code indicates "Not Found"?
 (A) 300  (B) 400  (C) 404  (D) 500
@@ -4184,7 +4184,7 @@ Answer: C
 
 ---
 
-#### Q75 (GATE 2019) — Subnetting
+#### Q75 (GATE 2019) â€” Subnetting
 
 Subnet 192.168.1.0/24. How many subnets can be created if each needs at least 30 usable hosts?
 (A) 2  (B) 4  (C) 6  (D) 8
@@ -4198,7 +4198,7 @@ Answer: D
 
 ---
 
-#### Q76 (GATE 2016) — TCP Congestion Control
+#### Q76 (GATE 2016) â€” TCP Congestion Control
 
 Which is/are true about TCP congestion control?
 (i) Slow Start doubles congestion window every RTT
@@ -4218,7 +4218,7 @@ Answer: D
 
 ### Theory of Computation (Q77-Q81)
 
-#### Q77 (GATE 2015) — Regular Language Identification
+#### Q77 (GATE 2015) â€” Regular Language Identification
 
 Which language is regular?
 (A) {a^n b^n | n >= 0}
@@ -4236,7 +4236,7 @@ Answer: B
 
 ---
 
-#### Q78 (GATE 2016) — Grammar Language
+#### Q78 (GATE 2016) â€” Grammar Language
 
 Grammar: S -> aSa | bSb | a | b | epsilon. Language generated?
 (A) All palindromes  (B) All odd-length strings  (C) All strings where w = w^R  (D) Both A and C
@@ -4251,7 +4251,7 @@ Answer: D
 
 ---
 
-#### Q79 (GATE 2017) — Language Classification
+#### Q79 (GATE 2017) â€” Language Classification
 
 L = {a^n b^n | n >= 0}. Which is true?
 (A) Regular  (B) Context-free, not regular  (C) Context-sensitive, not context-free  (D) RE, not context-sensitive
@@ -4265,7 +4265,7 @@ Answer: B
 
 ---
 
-#### Q80 (GATE 2018) — Minimal DFA States
+#### Q80 (GATE 2018) â€” Minimal DFA States
 
 Minimal DFA states for L = {w in {0,1}* | w contains "00" as substring}:
 
@@ -4280,7 +4280,7 @@ Answer: 3
 
 ---
 
-#### Q81 (GATE 2019) — Decidable Problems
+#### Q81 (GATE 2019) â€” Decidable Problems
 
 Which problem is decidable?
 (A) Whether a given CFG is ambiguous
@@ -4300,7 +4300,7 @@ Answer: D
 
 ### Compiler Design (Q82-Q86)
 
-#### Q82 (GATE 2015) — Lexical Analysis
+#### Q82 (GATE 2015) â€” Lexical Analysis
 
 Which compiler phase recognizes comments and whitespace?
 (A) Lexical Analysis  (B) Syntax Analysis  (C) Semantic Analysis  (D) Code Generation
@@ -4312,7 +4312,7 @@ Answer: A
 
 ---
 
-#### Q83 (GATE 2016) — Shift-Reduce Parsing
+#### Q83 (GATE 2016) â€” Shift-Reduce Parsing
 
 Number of shift-reduce conflicts in SLR(1) parser for grammar: E -> E + T | T, T -> id
 (A) 0  (B) 1  (C) 2  (D) 3
@@ -4326,7 +4326,7 @@ Answer: A
 
 ---
 
-#### Q84 (GATE 2017) — Three-Address Code
+#### Q84 (GATE 2017) â€” Three-Address Code
 
 Which is NOT a three-address code form?
 (A) x = y op z  (B) x = y  (C) if x goto L  (D) while x do y
@@ -4338,7 +4338,7 @@ Answer: D
 
 ---
 
-#### Q85 (GATE 2018) — Postfix Notation
+#### Q85 (GATE 2018) â€” Postfix Notation
 
 Expression: a + b * c - d. Postfix notation?
 (A) a b c * + d -  (B) a b c * d - +  (C) a b + c * d -  (D) a b c d * + -
@@ -4353,7 +4353,7 @@ Answer: A
 
 ---
 
-#### Q86 (GATE 2019) — Register Allocation
+#### Q86 (GATE 2019) â€” Register Allocation
 
 Which technique is used for register allocation in compilers?
 (A) Graph Coloring  (B) DAG  (C) Symbol Table  (D) Lexical Analyzer
@@ -4368,7 +4368,7 @@ Answer: A
 
 ### Digital Logic (Q87-Q90)
 
-#### Q87 (GATE 2015) â€” XOR Using NAND
+#### Q87 (GATE 2015) Ã¢â‚¬â€ XOR Using NAND
 
 Minimum number of NAND gates to implement XOR?
 (A) 2  (B) 3  (C) 4  (D) 5
@@ -4380,7 +4380,7 @@ Answer: C
 
 ---
 
-#### Q88 (GATE 2016) â€” MUX Tree
+#### Q88 (GATE 2016) Ã¢â‚¬â€ MUX Tree
 
 How many 2:1 multiplexers are needed to implement a 4:1 multiplexer?
 (A) 2  (B) 3  (C) 4  (D) 5
@@ -4395,7 +4395,7 @@ Answer: B
 
 ---
 
-#### Q89 (GATE 2017) â€” Ring Counter States
+#### Q89 (GATE 2017) Ã¢â‚¬â€ Ring Counter States
 
 Number of distinguishable states in a 3-bit ring counter:
 (A) 3  (B) 4  (C) 6  (D) 8
@@ -4411,7 +4411,7 @@ Answer: A
 
 ---
 
-#### Q90 (GATE 2018) â€” Boolean Simplification
+#### Q90 (GATE 2018) Ã¢â‚¬â€ Boolean Simplification
 
 (A + B)(A' + C) simplifies to:
 (A) A + BC  (B) AC + AB  (C) A + B'C  (D) AC + A'B
@@ -4428,7 +4428,7 @@ Answer: D
 
 ### Discrete Mathematics (Q91-Q95)
 
-#### Q91 (GATE 2015) â€” Counting: Balls into Boxes
+#### Q91 (GATE 2015) Ã¢â‚¬â€ Counting: Balls into Boxes
 
 5 distinct balls into 3 distinct boxes. Number of ways?
 (A) 3^5  (B) 5^3  (C) C(5,3)  (D) P(5,3)
@@ -4440,7 +4440,7 @@ Answer: A
 
 ---
 
-#### Q92 (GATE 2016) â€” Equivalence Relation
+#### Q92 (GATE 2016) Ã¢â‚¬â€ Equivalence Relation
 
 R = {(x, y) | x - y is divisible by 3} on integers. Which is true?
 (A) Reflexive but not transitive  (B) Symmetric but not reflexive  (C) Equivalence relation  (D) Transitive but not symmetric
@@ -4455,7 +4455,7 @@ Answer: C
 
 ---
 
-#### Q93 (GATE 2017) â€” Complete Graph Edges
+#### Q93 (GATE 2017) Ã¢â‚¬â€ Complete Graph Edges
 
 Number of edges in a complete graph K7:
 (A) 21  (B) 28  (C) 42  (D) 49
@@ -4467,7 +4467,7 @@ Answer: A
 
 ---
 
-#### Q94 (GATE 2018) â€” Planar Graph Check
+#### Q94 (GATE 2018) Ã¢â‚¬â€ Planar Graph Check
 
 Simple graph with 10 vertices, 36 edges. Which is true?
 (A) Planar  (B) Non-planar  (C) Eulerian  (D) Hamiltonian
@@ -4479,7 +4479,7 @@ Answer: B
 
 ---
 
-#### Q95 (GATE 2019) â€” Probability: Divisibility
+#### Q95 (GATE 2019) Ã¢â‚¬â€ Probability: Divisibility
 
 Random integer from {1, 2, ..., 100}. Probability divisible by 2 or 3?
 (A) 2/3  (B) 1/2  (C) 67/100  (D) 83/100
@@ -4497,7 +4497,7 @@ Answer: C
 
 ### Linear Algebra (Q96-Q98)
 
-#### Q96 (GATE 2015) â€” Matrix Rank
+#### Q96 (GATE 2015) Ã¢â‚¬â€ Matrix Rank
 
 Rank of [[1, 2], [2, 4]]:
 (A) 0  (B) 1  (C) 2  (D) 3
@@ -4509,7 +4509,7 @@ Answer: B
 
 ---
 
-#### Q97 (GATE 2017) â€” Determinant of Scalar Multiple
+#### Q97 (GATE 2017) Ã¢â‚¬â€ Determinant of Scalar Multiple
 
 A is 3x3 with |A| = 2. What is |2A|?
 (A) 4  (B) 8  (C) 16  (D) 32
@@ -4521,7 +4521,7 @@ Answer: C
 
 ---
 
-#### Q98 (GATE 2018) â€” Determinant Product
+#### Q98 (GATE 2018) Ã¢â‚¬â€ Determinant Product
 
 A and B are 3x3 matrices with |A| = 2 and |B| = 3. What is |AB|?
 (A) 5  (B) 6  (C) 9  (D) 12
@@ -4535,7 +4535,7 @@ Answer: B
 
 ### General Aptitude (Q99-Q100)
 
-#### Q99 (GATE 2015) â€” Speed Conversion
+#### Q99 (GATE 2015) Ã¢â‚¬â€ Speed Conversion
 
 A 150 m long train passes a pole in 15 seconds. Speed in km/h?
 (A) 36  (B) 45  (C) 54  (D) 60
@@ -4549,7 +4549,7 @@ Answer: A
 
 ---
 
-#### Q100 (GATE 2017) â€” Number Series
+#### Q100 (GATE 2017) Ã¢â‚¬â€ Number Series
 
 Next number in series: 2, 6, 12, 20, 30, ___?
 (A) 36  (B) 40  (C) 42  (D) 48

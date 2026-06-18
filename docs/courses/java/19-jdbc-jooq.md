@@ -32,7 +32,7 @@ After completing this chapter, you will be able to:
 
 ## 1. JDBC Core
 
-![JDBC Connection Pooling & jOOQ Flow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/19-jdbc-jooq.png)
+![JDBC Connection Pooling & jOOQ Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/19-jdbc-jooq.png)
 
 ### 1.1 What is JDBC?
 
@@ -40,8 +40,8 @@ JDBC (Java Database Connectivity) is the standard Java API for interacting with 
 
 The JDBC architecture consists of two layers:
 
-- **JDBC API** (`java.sql` and `javax.sql` packages) — the application-facing interfaces and classes
-- **JDBC Drivers** — vendor-specific implementations that translate JDBC calls into database-native protocols
+- **JDBC API** (`java.sql` and `javax.sql` packages) â€” the application-facing interfaces and classes
+- **JDBC Drivers** â€” vendor-specific implementations that translate JDBC calls into database-native protocols
 
 ```java
 // Every JDBC program follows this pattern:
@@ -165,10 +165,10 @@ public class StatementExample {
 }
 ```
 
-**SQL Injection — The Critical Problem**
+**SQL Injection â€” The Critical Problem**
 
 ```java
-// VULNERABLE — NEVER DO THIS
+// VULNERABLE â€” NEVER DO THIS
 public User findUserByUsername(String username) {
     // If username = "' OR '1'='1", this becomes:
     // SELECT * FROM users WHERE username = '' OR '1'='1'
@@ -204,15 +204,15 @@ SELECT * FROM users WHERE username = 'admin'--'
 **Statement execute methods:**
 
 ```java
-// executeQuery — for SELECT, returns ResultSet
+// executeQuery â€” for SELECT, returns ResultSet
 ResultSet rs = stmt.executeQuery("SELECT * FROM users");
 
-// executeUpdate — for INSERT, UPDATE, DELETE, DDL; returns affected row count
+// executeUpdate â€” for INSERT, UPDATE, DELETE, DDL; returns affected row count
 int rowsInserted = stmt.executeUpdate("INSERT INTO users (username) VALUES ('newuser')");
 int rowsUpdated = stmt.executeUpdate("UPDATE users SET active = true WHERE id = 1");
 int rowsDeleted = stmt.executeUpdate("DELETE FROM users WHERE last_login IS NULL");
 
-// execute — for any SQL; returns boolean (true = ResultSet, false = update count)
+// execute â€” for any SQL; returns boolean (true = ResultSet, false = update count)
 boolean isResultSet = stmt.execute("SELECT * FROM users");
 if (isResultSet) {
     try (ResultSet rs = stmt.getResultSet()) { }
@@ -618,7 +618,7 @@ public class DatabaseMetaDataExample {
         System.out.println("=== Foreign keys referencing 'users' ===");
         try (ResultSet fk = dbMeta.getExportedKeys(null, "public", "users")) {
             while (fk.next()) {
-                System.out.printf("  %s.%s → users%n",
+                System.out.printf("  %s.%s â†’ users%n",
                     fk.getString("FKTABLE_NAME"),
                     fk.getString("FKCOLUMN_NAME"));
             }
@@ -847,7 +847,7 @@ public class ScrollableUpdatableExample {
         }
     }
 
-    // Updatable ResultSet — modify data through ResultSet
+    // Updatable ResultSet â€” modify data through ResultSet
     public void updatableExample() throws SQLException {
         String sql = "SELECT id, username, email, active FROM users WHERE active = false";
 
@@ -899,9 +899,9 @@ public class ScrollableUpdatableExample {
 
 `DataSource` is the preferred alternative to `DriverManager`. Defined in `javax.sql.DataSource`, it provides:
 
-1. **Connection pooling** — reuse connections instead of creating new ones
-2. **Distributed transactions** — support for XA transactions
-3. **JNDI lookup** — centralized configuration in application servers
+1. **Connection pooling** â€” reuse connections instead of creating new ones
+2. **Distributed transactions** â€” support for XA transactions
+3. **JNDI lookup** â€” centralized configuration in application servers
 
 ```java
 package com.example.datasource;
@@ -938,7 +938,7 @@ public class DataSourceUsage {
 
 ### 2.2 DriverManagerDataSource
 
-`DriverManagerDataSource` is a simple `DataSource` that returns a new connection on every call. It is **not pooled** — for development/testing only.
+`DriverManagerDataSource` is a simple `DataSource` that returns a new connection on every call. It is **not pooled** â€” for development/testing only.
 
 ```java
 package com.example.datasource;
@@ -1388,7 +1388,7 @@ public class MappingStrategiesDao {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
-    // --- RowMapper: one row → one object ---
+    // --- RowMapper: one row â†’ one object ---
 
     public static class UserRowMapper implements RowMapper<User> {
         @Override
@@ -1481,8 +1481,8 @@ public class MappingStrategiesDao {
     }
 
     // Comparison:
-    // RowMapper         | 1 row → 1 object   | query() collects into List
-    // ResultSetExtractor| Entire RS → 1 result| You control the loop
+    // RowMapper         | 1 row â†’ 1 object   | query() collects into List
+    // ResultSetExtractor| Entire RS â†’ 1 result| You control the loop
     // RowCallbackHandler | Callback per row    | Side effects, no collection
 
     public static class User {
@@ -1551,7 +1551,7 @@ public class BeanPropertyDao {
     }
 
     // Maps column names to property names case-insensitively.
-    // user_name → userName (underscore to camelCase)
+    // user_name â†’ userName (underscore to camelCase)
 
     public List<User> findAll() {
         String sql = "SELECT * FROM users ORDER BY id";
@@ -1868,14 +1868,14 @@ jOOQ (Java Object Oriented Querying) is a type-safe SQL DSL. It generates Java c
 ```java
 // jOOQ vs JDBC for the same query:
 
-// JDBC — string-based, error-prone
+// JDBC â€” string-based, error-prone
 String sql = "SELECT u.id, u.username FROM users u " +
              "WHERE u.active = ? ORDER BY u.username LIMIT ?";
 PreparedStatement ps = conn.prepareStatement(sql);
 ps.setBoolean(1, true);
 ps.setInt(2, 20);
 
-// jOOQ — type-safe DSL, compile-time checked
+// jOOQ â€” type-safe DSL, compile-time checked
 List<UserRecord> result = dslContext.selectFrom(USERS)
     .where(USERS.ACTIVE.eq(true))
     .orderBy(USERS.USERNAME)
@@ -1980,7 +1980,7 @@ jooq {
 **Generated code example:**
 
 ```java
-// Generated table — PUBLIC.USERS
+// Generated table â€” PUBLIC.USERS
 public class Users extends TableImpl<UsersRecord> {
     public static final Users USERS = new Users();
 
@@ -2287,7 +2287,7 @@ public class TenantAwareRepository {
     }
 }
 
-// Strategy 2: ExecuteListener — auto-append tenant filter
+// Strategy 2: ExecuteListener â€” auto-append tenant filter
 class TenantExecuteListener extends DefaultExecuteListener {
     private final ThreadLocal<Long> tenantId = new ThreadLocal<>();
 
@@ -2625,7 +2625,7 @@ public class CustomUserDao extends UsersDao {
 | Philosophy | SQL is king | OOP is king |
 | Query style | Type-safe DSL | JPQL / Criteria API |
 | SQL control | Full (every SQL feature) | Partial (JPQL subset) |
-| Schema generation | DB → Java code | Entities → DB DDL |
+| Schema generation | DB â†’ Java code | Entities â†’ DB DDL |
 | Performance | Predictable, direct | N+1, caching, dirty checking |
 | Learning curve | Know SQL = know jOOQ | Entity states, cascade, fetch strategies |
 | Dynamic queries | Condition composition | Specification / Criteria API |
@@ -2702,7 +2702,7 @@ This chapter covered the complete Java database access stack from low-level JDBC
 
 **DataSource & HikariCP**: `DataSource` is the preferred connection factory. HikariCP is Spring Boot's default pool with configurable `maximumPoolSize`, `minimumIdle`, `connectionTimeout`, `maxLifetime`, and `leakDetectionThreshold`. Metrics are exposed via Micrometer and Actuator.
 
-**JdbcTemplate**: Eliminates JDBC boilerplate. `query()` returns lists, `queryForObject()` single results, `queryForList()` maps, `update()` modifications, `batchUpdate()` bulk operations. Three mapping strategies: `RowMapper` (one row → one object), `ResultSetExtractor` (full set → one result), `RowCallbackHandler` (streaming callback). `BeanPropertyRowMapper` auto-maps columns to properties.
+**JdbcTemplate**: Eliminates JDBC boilerplate. `query()` returns lists, `queryForObject()` single results, `queryForList()` maps, `update()` modifications, `batchUpdate()` bulk operations. Three mapping strategies: `RowMapper` (one row â†’ one object), `ResultSetExtractor` (full set â†’ one result), `RowCallbackHandler` (streaming callback). `BeanPropertyRowMapper` auto-maps columns to properties.
 
 **NamedParameterJdbcTemplate**: Named parameters (`:param`) instead of positional (`?`). `MapSqlParameterSource` for fluent API. `BeanPropertySqlParameterSource` auto-derives names from beans. Native IN clause support with lists.
 

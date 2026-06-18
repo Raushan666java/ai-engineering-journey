@@ -10,13 +10,13 @@ By the conclusion of this chapter, the student will be able to: (1) apply unific
 
 | Section | Key Topics | Key Terms |
 |---------|-----------|-----------|
-| Unification | Substitution θ, MGU, occur check | Standardization apart, UNIFY |
-| Forward Chaining | Data-driven, antecedent ⇒ consequent | Pattern matching, fixed point |
+| Unification | Substitution Î¸, MGU, occur check | Standardization apart, UNIFY |
+| Forward Chaining | Data-driven, antecedent â‡’ consequent | Pattern matching, fixed point |
 | Backward Chaining | Goal-driven, depth-first search | SLD resolution, loop detection |
 | Resolution | CNF conversion, Skolemization | Empty clause, refutation |
 | Horn Clauses | Definite clauses, definite vs non-Horn | Efficient inference |
 | Prolog | Facts, rules, queries | SLD resolution, cut operator |
-| Knowledge Engineering | Task → vocabulary → KB → debug | Circuits domain |
+| Knowledge Engineering | Task â†’ vocabulary â†’ KB â†’ debug | Circuits domain |
 
 ## Chapter Roadmap
 
@@ -36,59 +36,59 @@ flowchart LR
 
 ## 7.1 Unification
 
-![Logical Reasoning and Inference](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch07-logical-reasoning.png)
+![Logical Reasoning and Inference](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch07-logical-reasoning.png)
 
-> **One-Sentence Takeaway:** Unification finds a substitution θ that makes two logical expressions identical — the Most General Unifier (MGU) imposes the fewest constraints while achieving the match.
+> **One-Sentence Takeaway:** Unification finds a substitution Î¸ that makes two logical expressions identical â€” the Most General Unifier (MGU) imposes the fewest constraints while achieving the match.
 
 **Unification** is the process of finding a substitution $\theta$ that makes two logical expressions identical. A substitution $\theta = \{v_1/t_1, v_2/t_2, \ldots, v_n/t_n\}$ maps variables to terms. The application of $\theta$ to expression $E$, written $E\theta$, replaces each variable $v_i$ with term $t_i$, with all occurrences replaced simultaneously.
 
 **Standardization apart** renames variables to avoid conflict. The **most general unifier (MGU)** is the substitution that imposes the fewest constraints while achieving unification.
 
 ```
-function UNIFY(x, y, θ) returns substitution or failure
-    if θ = failure then return failure
-    if x = y then return θ
-    if VARIABLE?(x) then return UNIFY-VAR(x, y, θ)
-    if VARIABLE?(y) then return UNIFY-VAR(y, x, θ)
+function UNIFY(x, y, Î¸) returns substitution or failure
+    if Î¸ = failure then return failure
+    if x = y then return Î¸
+    if VARIABLE?(x) then return UNIFY-VAR(x, y, Î¸)
+    if VARIABLE?(y) then return UNIFY-VAR(y, x, Î¸)
     if COMPOUND?(x) and COMPOUND?(y) then
-        return UNIFY(ARGS(x), ARGS(y), UNIFY(OP(x), OP(y), θ))
+        return UNIFY(ARGS(x), ARGS(y), UNIFY(OP(x), OP(y), Î¸))
     if LIST?(x) and LIST?(y) then
-        return UNIFY(REST(x), REST(y), UNIFY(FIRST(x), FIRST(y), θ))
+        return UNIFY(REST(x), REST(y), UNIFY(FIRST(x), FIRST(y), Î¸))
     return failure
 
-function UNIFY-VAR(var, x, θ) returns substitution
-    if {var/val} ∈ θ then return UNIFY(val, x, θ)
-    if {x/val} ∈ θ then return UNIFY(var, val, θ)
+function UNIFY-VAR(var, x, Î¸) returns substitution
+    if {var/val} âˆˆ Î¸ then return UNIFY(val, x, Î¸)
+    if {x/val} âˆˆ Î¸ then return UNIFY(var, val, Î¸)
     if OCCUR-CHECK?(var, x) then return failure
-    return θ ∪ {var/x}
+    return Î¸ âˆª {var/x}
 ```
 
 The **occur check** prevents circular substitutions ($\text{UNIFY}(x, f(x))$ fails). Most practical Prolog implementations omit the occur check for efficiency.
 
 ## 7.2 Forward Chaining
 
-> **💡 Pro Tip:** Forward chaining is linear in the size of the KB for propositional Horn clauses — it makes an excellent choice for real-time monitoring systems where new facts arrive continuously and conclusions must be drawn immediately.
+> **ðŸ’¡ Pro Tip:** Forward chaining is linear in the size of the KB for propositional Horn clauses â€” it makes an excellent choice for real-time monitoring systems where new facts arrive continuously and conclusions must be drawn immediately.
 
 Forward chaining applies inference rules to known facts, deriving new facts until the query is proved or no further inferences are possible. It is data-driven: reasoning proceeds from premises toward conclusions.
 
 ```
 function FORWARD-CHAIN(KB, rules) returns new facts
-    facts ← set of all atomic sentences in KB
+    facts â† set of all atomic sentences in KB
     loop do
-        new_facts ← ∅
-        for each rule (antecedent ⇒ consequent) in rules do
-            substitutions ← all θ such that antecedentθ ⊆ facts
-            for each θ in substitutions do
-                new_facts ← new_facts ∪ {CONSEQUENTθ}
-        if new_facts ⊆ facts then return facts
-        facts ← facts ∪ new_facts
+        new_facts â† âˆ…
+        for each rule (antecedent â‡’ consequent) in rules do
+            substitutions â† all Î¸ such that antecedentÎ¸ âŠ† facts
+            for each Î¸ in substitutions do
+                new_facts â† new_facts âˆª {CONSEQUENTÎ¸}
+        if new_facts âŠ† facts then return facts
+        facts â† facts âˆª new_facts
 ```
 
 Forward chaining is sound and complete for Horn clause KBs. Time complexity is linear in the size of the KB for propositional case.
 
 ## 7.3 Backward Chaining
 
-> **⚠️ Warning:** Backward chaining with depth-first search can loop infinitely on recursive rules. Always implement loop detection (visited goals table) or use iterative deepening in production systems.
+> **âš ï¸ Warning:** Backward chaining with depth-first search can loop infinitely on recursive rules. Always implement loop detection (visited goals table) or use iterative deepening in production systems.
 
 Backward chaining starts from the query and works backward, attempting to find a chain of rules that supports the query. It is goal-driven.
 
@@ -96,15 +96,15 @@ Backward chaining starts from the query and works backward, attempting to find a
 function BACKWARD-CHAIN(KB, query) returns set of substitutions
     return BACKWARD-CHAIN-LIST(KB, [query], {})
 
-function BACKWARD-CHAIN-LIST(KB, goals, θ) returns set of substitutions
-    if EMPTY?(goals) then return {θ}
-    q ← FIRST(goals)
+function BACKWARD-CHAIN-LIST(KB, goals, Î¸) returns set of substitutions
+    if EMPTY?(goals) then return {Î¸}
+    q â† FIRST(goals)
     for each sentence s in KB that UNIFIES with q do
-        θ' ← UNIFY(q, s, θ)
-        if θ' ≠ failure then
-            premises ← REST(s)  // antecedents of the rule
-            results ← BACKWARD-CHAIN-LIST(KB, premises + REST(goals), θ')
-            if results ≠ ∅ then return results
+        Î¸' â† UNIFY(q, s, Î¸)
+        if Î¸' â‰  failure then
+            premises â† REST(s)  // antecedents of the rule
+            results â† BACKWARD-CHAIN-LIST(KB, premises + REST(goals), Î¸')
+            if results â‰  âˆ… then return results
     return failure
 ```
 
@@ -137,16 +137,16 @@ For two clauses $C_1$ and $C_2$ with complementary literals $l_1 \in C_1$ and $\
 $$\text{Resolve}(C_1, C_2) = (C_1\theta - l_1\theta) \cup (C_2\theta - l_2\theta)$$
 
 ```
-function RESOLUTION(KB, α) returns true if KB ⊨ α
-    clauses ← CNF(KB ∪ {¬α})
+function RESOLUTION(KB, Î±) returns true if KB âŠ¨ Î±
+    clauses â† CNF(KB âˆª {Â¬Î±})
     loop do
-        new ← ∅
+        new â† âˆ…
         for each pair of clauses (C_i, C_j) in clauses do
-            resolvents ← RESOLVE(C_i, C_j)
+            resolvents â† RESOLVE(C_i, C_j)
             if resolvents contains empty clause then return true
-            new ← new ∪ resolvents
-        if new ⊆ clauses then return false
-        clauses ← clauses ∪ new
+            new â† new âˆª resolvents
+        if new âŠ† clauses then return false
+        clauses â† clauses âˆª new
 ```
 
 ## 7.5 Horn Clauses
@@ -180,29 +180,29 @@ The **electronic circuits domain** provides a canonical example: encode gate typ
 
 | Inference Method | Sound? | Complete? | KB Type | Use Case |
 |-----------------|:---:|:---:|:---:|---------|
-| Forward Chaining | ✅ | ✅ (Horn) | Horn clauses | Monitoring, alerting |
-| Backward Chaining | ✅ | ✅ (Horn) | Horn clauses | Diagnosis, Q&A |
-| Resolution | ✅ | ✅ (FOL) | CNF clauses | Theorem proving |
-| SLD Resolution | ✅ | ⬜ (DFS) | Horn clauses | Prolog execution |
+| Forward Chaining | âœ… | âœ… (Horn) | Horn clauses | Monitoring, alerting |
+| Backward Chaining | âœ… | âœ… (Horn) | Horn clauses | Diagnosis, Q&A |
+| Resolution | âœ… | âœ… (FOL) | CNF clauses | Theorem proving |
+| SLD Resolution | âœ… | â¬œ (DFS) | Horn clauses | Prolog execution |
 
-## Quick Reference — Unification Rules
+## Quick Reference â€” Unification Rules
 
 | Expression 1 | Expression 2 | MGU | Can Unify? |
 |-------------|-------------|:---:|:---:|
-| P(x, A) | P(B, y) | {x/B, y/A} | ✅ |
-| P(f(x), y) | P(z, g(z)) | {z/f(x), y/g(f(x))} | ✅ |
-| P(x, f(x)) | P(y, y) | — | ❌ (occur check fails) |
-| P(x, x) | P(A, B) | — | ❌ (A ≠ B) |
+| P(x, A) | P(B, y) | {x/B, y/A} | âœ… |
+| P(f(x), y) | P(z, g(z)) | {z/f(x), y/g(f(x))} | âœ… |
+| P(x, f(x)) | P(y, y) | â€” | âŒ (occur check fails) |
+| P(x, x) | P(A, B) | â€” | âŒ (A â‰  B) |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Unification | ⬜ | ⬜ | ✅ | ✅ |
-| Forward Chaining | ⬜ | ⬜ | ✅ | ✅ |
-| Backward Chaining | ⬜ | ⬜ | ✅ | ✅ |
-| Resolution | ⬜ | ⬜ | ⬜ | ✅ |
-| Prolog | ⬜ | ⬜ | ✅ | ✅ |
+| Unification | â¬œ | â¬œ | âœ… | âœ… |
+| Forward Chaining | â¬œ | â¬œ | âœ… | âœ… |
+| Backward Chaining | â¬œ | â¬œ | âœ… | âœ… |
+| Resolution | â¬œ | â¬œ | â¬œ | âœ… |
+| Prolog | â¬œ | â¬œ | âœ… | âœ… |
 
 ## Chapter Quiz
 
@@ -225,7 +225,7 @@ The **electronic circuits domain** provides a canonical example: encode gate typ
 **Q3:** In CNF conversion, Skolemization handles what?
 - A) Dropping universal quantifiers
 - B) Removing existential quantifiers by introducing Skolem functions
-- C) Distributing ∨ over ∧
+- C) Distributing âˆ¨ over âˆ§
 - D) Eliminating implications
 
 <details><summary>Answer</summary>B) Skolemization replaces existential quantifiers with Skolem functions or constants during CNF conversion.</details>

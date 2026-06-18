@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Terraform Infrastructure as Code Workflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch09-terraform-iac.png)
+![Terraform Infrastructure as Code Workflow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch09-terraform-iac.png)
 
 By the end of this chapter, students will be able to:
 
@@ -19,33 +19,33 @@ By the end of this chapter, students will be able to:
 
 Infrastructure as Code (IaC) is the practice of managing infrastructure through machine-readable definition files rather than manual processes. The core principles are:
 
-**Declarative vs Imperative** — Declarative IaC specifies the desired end state; the tool determines the steps to reach it. Imperative IaC specifies the exact commands to execute. Terraform and CloudFormation are declarative. Ansible and Chef support both modes. Declarative configurations are more predictable and idempotent.
+**Declarative vs Imperative** â€” Declarative IaC specifies the desired end state; the tool determines the steps to reach it. Imperative IaC specifies the exact commands to execute. Terraform and CloudFormation are declarative. Ansible and Chef support both modes. Declarative configurations are more predictable and idempotent.
 
-**Idempotency** — Applying the same configuration multiple times produces the same result. Idempotency eliminates configuration drift and enables safe repeated execution.
+**Idempotency** â€” Applying the same configuration multiple times produces the same result. Idempotency eliminates configuration drift and enables safe repeated execution.
 
-**Version Control** — Infrastructure definitions are stored in Git with the application code. Changes undergo code review, automated testing, and approval workflows. Version control provides audit trails, rollback capability, and change history.
+**Version Control** â€” Infrastructure definitions are stored in Git with the application code. Changes undergo code review, automated testing, and approval workflows. Version control provides audit trails, rollback capability, and change history.
 
-**Immutability** — Rather than modifying existing infrastructure, replace it with new instances running the updated configuration. Immutable infrastructure eliminates configuration drift and simplifies rollback.
+**Immutability** â€” Rather than modifying existing infrastructure, replace it with new instances running the updated configuration. Immutable infrastructure eliminates configuration drift and simplifies rollback.
 
 ### 9.2 Terraform Core Concepts
 
-**Providers** — Plugins that interact with cloud APIs. Each provider exposes resources and data sources. Common providers: AWS, Azure, GCP, Kubernetes, Helm, GitHub.
+**Providers** â€” Plugins that interact with cloud APIs. Each provider exposes resources and data sources. Common providers: AWS, Azure, GCP, Kubernetes, Helm, GitHub.
 
-**Resources** — Infrastructure components managed by Terraform: `aws_instance`, `google_storage_bucket`, `azurerm_resource_group`. Resources have attributes, arguments, and lifecycle rules.
+**Resources** â€” Infrastructure components managed by Terraform: `aws_instance`, `google_storage_bucket`, `azurerm_resource_group`. Resources have attributes, arguments, and lifecycle rules.
 
-**Data Sources** — Read-only queries to existing infrastructure. Data sources retrieve information without creating or modifying resources.
+**Data Sources** â€” Read-only queries to existing infrastructure. Data sources retrieve information without creating or modifying resources.
 
-**Variables and Outputs** — Variables parameterize configurations. Outputs expose resource attributes for use by other configurations or modules.
+**Variables and Outputs** â€” Variables parameterize configurations. Outputs expose resource attributes for use by other configurations or modules.
 
-**State** — Terraform maps real-world infrastructure to configuration through state files. State tracks resource metadata, dependencies, and attribute values. State can be stored locally or remotely (S3, Terraform Cloud, Azure Storage).
+**State** â€” Terraform maps real-world infrastructure to configuration through state files. State tracks resource metadata, dependencies, and attribute values. State can be stored locally or remotely (S3, Terraform Cloud, Azure Storage).
 
 ### 9.3 Terraform Workflow
 
 The core Terraform workflow has three steps:
 
-1. **Write** — Author configuration files
-2. **Plan** — `terraform plan` compares the configuration with state and shows what will change
-3. **Apply** — `terraform apply` executes the planned changes
+1. **Write** â€” Author configuration files
+2. **Plan** â€” `terraform plan` compares the configuration with state and shows what will change
+3. **Apply** â€” `terraform apply` executes the planned changes
 
 ```bash
 terraform init          # Initialize providers and modules
@@ -60,11 +60,11 @@ terraform destroy       # Remove managed infrastructure
 
 State management is critical for team use.
 
-**Remote State** — Store state in a shared backend: S3 + DynamoDB (locking), Terraform Cloud, Azure Storage, or GCS. Remote state enables team collaboration and prevents conflicts.
+**Remote State** â€” Store state in a shared backend: S3 + DynamoDB (locking), Terraform Cloud, Azure Storage, or GCS. Remote state enables team collaboration and prevents conflicts.
 
-**State Locking** — Prevents concurrent modifications that could corrupt state. DynamoDB provides locking for S3 backends. Terraform Cloud provides built-in locking.
+**State Locking** â€” Prevents concurrent modifications that could corrupt state. DynamoDB provides locking for S3 backends. Terraform Cloud provides built-in locking.
 
-**Sensitive Data** — State may contain sensitive values (database passwords, access keys). Remote backends should encrypt state at rest. Access to state stores must be controlled.
+**Sensitive Data** â€” State may contain sensitive values (database passwords, access keys). Remote backends should encrypt state at rest. Access to state stores must be controlled.
 
 ```hcl
 terraform {
@@ -119,13 +119,13 @@ Workspaces are suitable for environment separation within a single configuration
 
 ### 9.7 Terraform vs Alternatives
 
-**Pulumi** — Uses general-purpose programming languages (TypeScript, Python, Go, C#) instead of HCL. Provides real programming constructs (loops, conditionals, classes). State management is similar to Terraform. Better suited for teams that prefer programming languages over DSL.
+**Pulumi** â€” Uses general-purpose programming languages (TypeScript, Python, Go, C#) instead of HCL. Provides real programming constructs (loops, conditionals, classes). State management is similar to Terraform. Better suited for teams that prefer programming languages over DSL.
 
-**AWS CloudFormation** — Native AWS IaC solution. Uses JSON or YAML templates. Supports StackSets for multi-account deployments. Change sets are the equivalent of Terraform plans. Drift detection identifies manual changes. Tighter AWS integration but AWS-only.
+**AWS CloudFormation** â€” Native AWS IaC solution. Uses JSON or YAML templates. Supports StackSets for multi-account deployments. Change sets are the equivalent of Terraform plans. Drift detection identifies manual changes. Tighter AWS integration but AWS-only.
 
-**Azure ARM/Bicep** — ARM templates are JSON-based Azure IaC. Bicep is a domain-specific language that compiles to ARM templates. Azure-native with deep integration. Azure-only.
+**Azure ARM/Bicep** â€” ARM templates are JSON-based Azure IaC. Bicep is a domain-specific language that compiles to ARM templates. Azure-native with deep integration. Azure-only.
 
-**Terragrunt** — A thin wrapper around Terraform that provides DRY configuration, state management, and remote execution. Handles module versioning, dependency management, and environment configuration through YAML files.
+**Terragrunt** â€” A thin wrapper around Terraform that provides DRY configuration, state management, and remote execution. Handles module versioning, dependency management, and environment configuration through YAML files.
 
 ### 9.8 Immutable Infrastructure
 

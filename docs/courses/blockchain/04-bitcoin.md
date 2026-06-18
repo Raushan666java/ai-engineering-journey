@@ -1,4 +1,6 @@
-﻿# Chapter 4: The Bitcoin Network
+# Chapter 4: The Bitcoin Network
+
+> **Previous:** [Chapter 3: Consensus Mechanisms](./03-consensus.md) | **Next:** [Chapter 5: Ethereum and Smart Contracts](./05-ethereum.md)
 
 ---
 
@@ -9,6 +11,27 @@
 - Explain the life cycle of a Bitcoin transaction from broadcast to confirmation
 - Analyze the Bitcoin script language and its limited expressiveness
 - Understand the concept of "Mining" and the halving mechanism
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| UTXO Model | No balances — only unspent transaction outputs | Your "balance" is the sum of UTXOs you can unlock |
+| Transaction Structure | Inputs (reference UTXOs) + Outputs (new UTXOs) | Every transaction consumes and creates UTXOs |
+| Bitcoin Script | Stack-based, non-Turing complete language | Intentionally limited to prevent DoS attacks |
+| Mining | Hash power secures the network + new coin issuance | Halving every 4 years enforces 21M supply cap |
+| P2PKH | Standard Pay-to-Public-Key-Hash script | The most common Bitcoin transaction type |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[UTXO Model] --> B[Transaction Structure]
+    B --> C[Bitcoin Script]
+    C --> D[P2PKH Execution]
+    D --> E[Mining Ecosystem]
+    E --> F[Halving Schedule]
+```
 
 ---
 
@@ -26,7 +49,7 @@ A Bitcoin transaction consists of:
 2. **Inputs:** References to previous UTXOs and a `scriptSig` (unlocking script).
 3. **Outputs:** Value (in Satoshis) and a `scriptPubKey` (locking script).
 
-![Bitcoin UTXO Model](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch04-bitcoin.png)
+![Bitcoin UTXO Model](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/blockchain/ch04-bitcoin.png)
 
 ### Bitcoin Script
 Bitcoin uses a stack-based, non-Turing complete language called **Script**. It is intentionally limited to prevent infinite loops (denial of service). Most transactions use **P2PKH (Pay-to-Public-Key-Hash)** scripts.
@@ -62,7 +85,78 @@ Unlocking Script (`scriptSig`): `<Signature> <PublicKey>`
 5. `OP_CHECKSIG` verifies `<Signature>` using `<PublicKey>`.
 If the result is `True`, the transaction is valid.
 
+> **One-Sentence Takeaway:** Bitcoin's UTXO model treats every transaction as a set of consumed and created outputs, making it possible to parallelize validation but requiring users to manage multiple UTXOs as their "balance."
+
+> **Pro Tip:** Bitcoin transaction fees increase with transaction size (in bytes), not transaction value. To save on fees, consolidate many small UTXOs into one larger UTXO during low-fee periods.
+
+> **Warning:** If you lose your private keys, your Bitcoin is gone forever. There is no "forgot password" or customer support — Bitcoin's security model means you are solely responsible for key custody. Use hierarchical deterministic (HD) wallets with BIP39 seed phrases backed up offline.
+
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| UTXO Model | Tracks unspent transaction outputs | No account balances, parallelizable | Bitcoin, Litecoin |
+| Account Model | Tracks account balances directly | Simpler, sequential nonces | Ethereum, most smart contract chains |
+| Bitcoin Script | Stack-based scripting language | Non-Turing complete (intentionally) | Basic conditions, multisig |
+| Coinbase Transaction | First transaction in a block (miner reward) | Creates new BTC from nothing | Miner compensation |
+| P2PKH | Standard payment script | Hash of public key, not the key itself | Most Bitcoin transactions |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **UTXO Terms** | Inputs, Outputs, Change, Fee | Change goes back to you |
+| **Script Ops** | OP_DUP, OP_HASH160, OP_EQUALVERIFY, OP_CHECKSIG | P2PKH uses these 4 in sequence |
+| **Mining** | Hash rate, Difficulty, Block reward, Halving | Reward halves every 210K blocks |
+| **Supply** | 21M total, ~19.5M mined (2026) | Last Bitcoin mined ~2140 |
+| **Transaction** | Version, Inputs, Outputs, Locktime | Locktime enables time-locked transactions |
+
+## Cross-Application Matrix
+
+| Technique | DeFi | Smart Contracts | Enterprise Blockchain | Research |
+|-----------|------|-----------------|----------------------|----------|
+| UTXO Model | Atomic swaps | Not typical | Hyperledger Fabric uses similar | UTXO vs account scalability |
+| Bitcoin Script | Multisig vaults | Simple conditions | Time-locked escrow | Script extension proposals |
+| P2PKH | Standard payments | Address derivation | Identity wallets | Taproot/Schnorr |
+| Halving Schedule | Supply prediction | Tokenomics design | N/A | Scarcity models |
+| Mining | Hash rate markets | PoW security analysis | Not enterprise-relevant | Energy consumption studies |
+
+## Chapter Quiz
+
+1. What happens to Bitcoin transaction fees when there are many small UTXOs being consumed?
+   - A) The fee decreases
+   - B) The fee increases because the transaction is larger (more inputs)
+   - C) The fee stays the same regardless of UTXO count
+   - D) The fee is a percentage of the transaction value
+
+<details>
+<summary>Answer</summary>
+**B) The fee increases because the transaction is larger (more inputs).** Bitcoin fees are based on transaction size in bytes. Each additional UTXO input adds ~150 bytes, so consolidating UTXOs during low-fee periods saves money.
+</details>
+
+2. What prevents Bitcoin Script from being used for infinite loops?
+   - A) It has no looping constructs — it's intentionally non-Turing complete
+   - B) It has a maximum gas limit
+   - C) It times out after 10 minutes
+   - D) It requires user confirmation for each operation
+
+<details>
+<summary>Answer</summary>
+**A) It has no looping constructs — it's intentionally non-Turing complete.** Satoshi deliberately omitted loops and jumps to prevent denial-of-service attacks where scripts could run indefinitely.
+</details>
+
+3. Why does Bitcoin's block reward halve approximately every 4 years?
+   - A) To fix a bug in the original code
+   - B) To enforce the 21 million supply cap through disinflation
+   - C) To make mining more profitable
+   - D) To reduce transaction fees
+
+<details>
+<summary>Answer</summary>
+**B) To enforce the 21 million supply cap through disinflation.** The halving reduces new supply by 50% every 210,000 blocks (~4 years), asymptotically approaching the 21 million limit. This programmed scarcity is central to Bitcoin's value proposition.
+</details>
 
 ## Summary
 

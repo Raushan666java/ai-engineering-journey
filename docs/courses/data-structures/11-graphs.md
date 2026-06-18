@@ -9,15 +9,15 @@
 
 ## Theory
 
-![Graphs: Representations, Traversals and Algorithms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch07-graphs.png)
+![Graphs: Representations, Traversals and Algorithms](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch07-graphs.png)
 
 ### Definition
 
 A **graph** \( G = (V, E) \) consists of a set of vertices \( V \) and a set of edges \( E \subseteq V \times V \). An edge connects two vertices.
 
 **Terminology:**
-- **Directed graph (digraph)**: edges have a direction (u → v).
-- **Undirected graph**: edges have no direction (u — v).
+- **Directed graph (digraph)**: edges have a direction (u â†’ v).
+- **Undirected graph**: edges have no direction (u â€” v).
 - **Weighted graph**: each edge has a numerical weight.
 - **Degree**: number of edges incident to a vertex. In directed graphs: **in-degree** and **out-degree**.
 - **Path**: a sequence of vertices where consecutive vertices are connected by edges.
@@ -282,6 +282,91 @@ void printDegrees(const std::vector<std::list<int>>& adj, bool directed) {
     }
 }
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **Choose representation based on density**: For dense graphs (\(E \approx V^2\)), use an adjacency matrix. For sparse graphs (\(E \ll V^2\)), use an adjacency list. Most real-world graphs are sparse.
+- **Transpose of a directed graph**: Reverse the direction of every edge. This is useful for Kosaraju's SCC algorithm. Building the transpose from an adjacency list is \(O(V+E)\).
+- **Graph is a tree if**: (a) it's connected, and (b) \(|E| = |V| - 1\). If either condition fails, it's not a tree.
+- **Degree sum theorem**: The sum of all degrees in an undirected graph is \(2|E|\). Each edge contributes 1 to the degree of each of its endpoints. This is useful for validation and handshaking lemma problems.
+
+## One-Sentence Takeaways
+
+- A graph \(G = (V, E)\) consists of vertices and edges connecting them.
+- Adjacency matrix: \(O(1)\) edge queries, \(O(V^2)\) space.
+- Adjacency list: \(O(V+E)\) space, preferred for sparse graphs.
+- Directed graphs have ordered edges; undirected graphs have unordered edges.
+- Weighted graphs assign a weight (cost) to each edge.
+- A complete graph has all possible edges; a tree is a connected acyclic graph.
+
+## Concept Comparison Table
+
+| Feature | Adjacency Matrix | Adjacency List | Edge List |
+|---------|-----------------|---------------|-----------|
+| Space | \(O(V^2)\) | \(O(V+E)\) | \(O(E)\) |
+| Edge query | \(O(1)\) | \(O(\deg(v))\) | \(O(E)\) |
+| Neighbor iteration | \(O(V)\) | \(O(\deg(v))\) | \(O(E)\) |
+| Add edge | \(O(1)\) | \(O(1)\) | \(O(1)\) |
+| Remove edge | \(O(1)\) | \(O(\deg(v))\) | \(O(E)\) |
+| Best for | Dense graphs | Sparse graphs | I/O, simple storage |
+
+## Quick Reference: Graph Terminology
+
+| Term | Definition |
+|------|------------|
+| Degree (undirected) | Number of edges incident to a vertex |
+| In-degree (directed) | Number of edges entering a vertex |
+| Out-degree (directed) | Number of edges leaving a vertex |
+| Path | Sequence of vertices connected by edges |
+| Cycle | Path where first = last, no repeated vertices |
+| Connected graph | Path exists between every pair of vertices |
+| Complete graph | Every pair of vertices is connected by an edge |
+| Bipartite graph | Vertices divided into two sets; edges only between sets |
+
+## Cross-Application Matrix
+
+| Domain | Graph Type | Edge Meaning |
+|--------|-----------|--------------|
+| Social network | Undirected | Friendship |
+| Web pages | Directed | Hyperlink |
+| Road network | Weighted undirected | Distance |
+| Computer network | Weighted directed | Bandwidth |
+| Prerequisite chain | Directed acyclic | Course dependency |
+| Recommendation | Weighted bipartite | User-item affinity |
+
+## Chapter Quiz
+
+1. **What is the space complexity of an adjacency matrix?**
+   - a) \(O(V+E)\)
+   - b) \(O(V^2)\) âœ“
+   - c) \(O(E^2)\)
+   - d) \(O(V)\)
+
+2. **What is the sum of degrees in an undirected graph?**
+   - a) \(|E|\)
+   - b) \(2|E|\) âœ“
+   - c) \(|V|\)
+   - d) \(2|V|\)
+
+3. **Which representation is best for a sparse graph?**
+   - a) Adjacency matrix
+   - b) Adjacency list âœ“
+   - c) Edge list with hash set
+   - d) Incidence matrix
+
+4. **A tree must satisfy:**
+   - a) Connected and \(|E| = |V| - 1\) âœ“
+   - b) \(|E| = |V|\)
+   - c) Complete
+   - d) Bipartite
+
+5. **An undirected complete graph with \(n\) vertices has how many edges?**
+   - a) \(n\)
+   - b) \(n(n-1)/2\) âœ“
+   - c) \(n^2\)
+   - d) \(n-1\)
+
+**Answers:** 1-b, 2-b, 3-b, 4-a, 5-b
 
 ## Summary
 

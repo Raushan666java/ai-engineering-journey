@@ -12,7 +12,7 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
-![Combinatorics Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/05-combinatorics.png)
+![Combinatorics Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/05-combinatorics.png)
 
 ### 5.1 Fundamental Counting Principles
 
@@ -55,7 +55,7 @@ $$(x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k$$
 
 **Generalized Pigeonhole Principle.** If $N$ items are placed into $k$ boxes, then at least one box contains at least $\lceil N/k \rceil$ items.
 
-**Theorem 5.4 (Erdős–Szekeres).** Any sequence of $n^2 + 1$ distinct real numbers contains an increasing or decreasing subsequence of length $n + 1$.
+**Theorem 5.4 (ErdÅ‘sâ€“Szekeres).** Any sequence of $n^2 + 1$ distinct real numbers contains an increasing or decreasing subsequence of length $n + 1$.
 
 ### 5.6 Permutations with Repetition
 

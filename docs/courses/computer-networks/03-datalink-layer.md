@@ -1,5 +1,7 @@
 # Chapter 3: The Data Link Layer
 
+> **Prerequisites:** [Chapter 2: Physical Layer](./02-physical-layer.md) â€” Bits and transmission media | **Next:** [Chapter 4: Medium Access Control](./04-mac.md) â€” From framing to channel sharing
+
 ## Learning Objectives
 
 1. Describe the services provided by the data link layer to the network layer.
@@ -8,9 +10,41 @@
 4. Apply Hamming codes for single-bit error correction.
 5. Analyze flow control mechanisms including stop-and-wait and sliding window protocols.
 
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Framing | Three methods: character count, byte stuffing, bit stuffing | Bit stuffing has bounded overhead; byte stuffing overhead varies with payload |
+| Error Detection | CRC-32 catches all bursts â‰¤ 32 bits | Use CRC for link-layer integrity; checksums (Internet) are weaker but simpler |
+| Error Correction | Hamming codes correct single-bit errors with minimal redundancy | Parity positions at powers of 2 enable pinpoint correction |
+| Flow Control | Stop-and-wait vs sliding window | Window must match bandwidth-delay product for full utilization |
+| ARQ Protocols | Stop-and-Wait, Go-Back-N, Selective Repeat | Selective Repeat most efficient on error-prone links; Go-Back-N simpler |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Data Link Layer] --> B[Framing]
+    A --> C[Error Detection/Correction]
+    A --> D[Flow Control]
+    A --> E[ARQ Protocols]
+    A --> F[HDLC / PPP]
+    B --> B1[Character Count]
+    B --> B2[Byte Stuffing]
+    B --> B3[Bit Stuffing]
+    C --> C1[Parity / Checksum / CRC]
+    C --> C2[Hamming Codes]
+    D --> D1[Stop-and-Wait]
+    D --> D2[Sliding Window]
+    E --> E1[Go-Back-N]
+    E --> E2[Selective Repeat]
+```
+
 ## 3.1 Data Link Layer Services
 
-![Data Link Layer: Framing, Error Detection/Correction, Flow Control and ARQ](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch03-datalink.png)
+![Data Link Layer: Framing, Error Detection/Correction, Flow Control and ARQ](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch03-datalink.png)
 
 The data link layer (Layer 2) provides reliable, efficient communication between two directly connected nodes. It accepts packets from the network layer and encapsulates them into frames for transmission across the physical link. The principal services are:
 
@@ -22,7 +56,7 @@ The data link layer (Layer 2) provides reliable, efficient communication between
 
 **Medium access control (Chapter 4).** On shared media, the data link layer coordinates frame transmission among multiple stations.
 
-**Reliability.** Some data link protocols provide automatic repeat request (ARQ) — retransmission of lost or corrupted frames.
+**Reliability.** Some data link protocols provide automatic repeat request (ARQ) â€” retransmission of lost or corrupted frames.
 
 ## 3.2 Framing
 
@@ -38,7 +72,9 @@ Byte stuffing uses flag bytes (0x7E) to mark frame boundaries. If the flag byte 
 
 ### 3.2.3 Bit Stuffing
 
-Bit stuffing inserts a 0 bit after five consecutive 1 bits in the payload. A flag pattern — typically 01111110 — marks frame boundaries. The sender stuffs a 0 after every five consecutive 1s; the receiver unstuffs (removes) any 0 that follows five 1s. If a 0 is removed and the next bit is 1, the receiver knows to check for the flag (if the sixth bit is also 1, the next seven bits must form the flag). HDLC (High-Level Data Link Control) uses bit stuffing. The overhead is at most one bit per five data bits and is content-independent.
+Bit stuffing inserts a 0 bit after five consecutive 1 bits in the payload. A flag pattern â€” typically 01111110 â€” marks frame boundaries. The sender stuffs a 0 after every five consecutive 1s; the receiver unstuffs (removes) any 0 that follows five 1s. If a 0 is removed and the next bit is 1, the receiver knows to check for the flag (if the sixth bit is also 1, the next seven bits must form the flag). HDLC (High-Level Data Link Control) uses bit stuffing. The overhead is at most one bit per five data bits and is content-independent.
+
+> **Pro Tip:** Bit stuffing is the more robust framing method because overhead is bounded (at most 1 bit per 5 data bits) and doesn't depend on payload content. Byte stuffing can balloon if payloads contain many flag bytes â€” a concern for binary protocols over PPP.
 
 ## 3.3 Error Detection and Correction
 
@@ -62,6 +98,8 @@ Common generator polynomials:
 
 CRC-32 detects all single-bit errors, all double-bit errors (when $G(x)$ is primitive), any odd number of errors, any burst of length $\le 32$, and most longer bursts.
 
+> **Pro Tip:** CRC-32 strikes the ideal balance for link-layer error detection â€” it is strong enough to catch virtually all real-world error patterns yet cheap enough to compute in hardware at line rate. Never replace CRC with a simple checksum for data integrity over a noisy link.
+
 ### 3.3.4 Hamming Codes
 
 Hamming codes correct single-bit errors and detect double-bit errors with minimal redundancy. For data of length $m$ bits, the number of parity bits $r$ must satisfy $2^r \ge m + r + 1$.
@@ -73,6 +111,10 @@ Parity bits are placed at positions that are powers of two (1, 2, 4, 8, ...). Ea
 - Position 4 (p4): covers bits 4, 5, 6, 7
 
 The receiver recomputes the parity bits. The position of the failed parity bits, read as a binary number, gives the position of the erroneous bit. Flipping that bit corrects the error.
+
+> **Pro Tip:** Hamming codes are rarely used in modern networking (CRC + retransmission dominates), but they are foundational for memory ECC (Error-Correcting Code) in RAM and storage systems where retransmission is impossible.
+
+**One-Sentence Takeaway:** The data link layer turns a raw bit stream into reliable frame exchange through framing boundaries, error-detection codes (CRC for strength, checksum for simplicity), and flow control that prevents receiver buffers from overflowing.
 
 ## 3.4 Automatic Repeat Request
 
@@ -98,7 +140,7 @@ For a 1 Gbps link with 50 ms round-trip time and 1500-byte frames, utilization i
 
 ### 3.4.2 Sliding Window
 
-The sliding window protocol allows the sender to transmit up to $W$ frames before receiving an acknowledgment. The sender maintains a lower edge (LAR — last acknowledgment received) and an upper edge (SWS — send window size). The receiver maintains a receive window (RWS).
+The sliding window protocol allows the sender to transmit up to $W$ frames before receiving an acknowledgment. The sender maintains a lower edge (LAR â€” last acknowledgment received) and an upper edge (SWS â€” send window size). The receiver maintains a receive window (RWS).
 
 **Go-Back-N.** The receiver discards out-of-order frames. When a frame is lost, the sender times out and retransmits all frames from the lost frame forward. This is simple to implement but wastes bandwidth when errors are frequent.
 
@@ -128,6 +170,96 @@ The control field distinguishes three frame types: Information (I-frames carry d
 ## 3.7 PPP
 
 Point-to-Point Protocol (PPP, RFC 1661) provides encapsulation, authentication, and link control over serial links. PPP uses byte stuffing with flag byte 0x7E. The Link Control Protocol (LCP) negotiates options (MTU, authentication protocol, magic numbers for loop detection). Authentication options: PAP (plaintext passwords, insecure) and CHAP (challenge-response with MD5). The Network Control Protocol (NCP) configures network-layer parameters (IPCP for IP address negotiation).
+
+---
+
+### Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Character Count Framing | Length field in header | Fragile â€” single-bit error desyncs receiver | Legacy Bisync protocol |
+| Byte Stuffing | Flag bytes with escape insertion | Variable overhead depending on payload | PPP over serial links |
+| Bit Stuffing | Insert 0 after five consecutive 1s | Bounded overhead (max 20%) | HDLC, modern link protocols |
+| CRC-32 | Polynomial division remainder | Detects all bursts â‰¤ 32 bits | Ethernet, Wi-Fi |
+| Internet Checksum | One's complement sum | Weaker but simpler than CRC | TCP, UDP, IP headers |
+| Hamming Code | Parity at power-of-2 positions | Corrects single-bit errors | Memory ECC, not networking |
+| Stop-and-Wait ARQ | Transmit one, wait for ACK | Simple but high-latency inefficiency | Low-throughput reliable links |
+| Sliding Window | Transmit up to W frames before ACK | Achieves full utilization with correct W | High-throughput reliable links |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Framing Methods** | Character count (fragile), Byte stuffing (variable overhead, PPP), Bit stuffing (â‰¤20% overhead, HDLC) |
+| **CRC-32 Properties** | Detects: all single-bit, all double-bit, odd-count errors, bursts â‰¤ 32 bits |
+| **Hamming Formula** | $2^r \ge m + r + 1$ for data bits $m$ and parity bits $r$ |
+| **ARQ Comparison** | Stop-and-Wait: utilization = $t_{trans}/(t_{trans} + 2t_{prop})$; GBN: simple but wasteful; SR: efficient but complex buffering |
+| **Efficiency Rule** | Window â‰¥ BDP in frames to achieve 100% link utilization |
+| **HDLC Frame Types** | I-frames (data), S-frames (ACK/NAK/RR/RNR), U-frames (control) |
+
+### Cross-Application Matrix
+
+| Concept | Network Engineering | Embedded Systems | Protocol Design | Storage |
+|---------|-------------------|------------------|----------------|---------|
+| Framing | Configuring serial links | UART frame boundaries | Custom protocol headers | N/A |
+| CRC | Interface diagnostics | Wireless sensor integrity | Custom error detection | RAID parity, disk ECC |
+| Hamming Codes | N/A | N/A | N/A | Memory ECC (DDR) |
+| Sliding Window | TCP window tuning | BLE data transfer | Custom reliable transport | N/A |
+| HDLC/PPP | WAN link configuration | N/A | N/A | N/A |
+
+---
+
+### Chapter Quiz
+
+**Q1.** Which framing method is used by PPP?
+
+- A) Character count
+- B) Byte stuffing
+- C) Bit stuffing
+- D) None of the above
+
+<details>
+<summary>Answer</summary>
+B) PPP uses byte stuffing with flag byte 0x7E and escape byte 0x7D.
+</details>
+
+**Q2.** What is the maximum throughput of slotted ALOHA?
+
+- A) 18.4%
+- B) 36.8%
+- C) 50%
+- D) 100%
+
+<details>
+<summary>Answer</summary>
+B) 36.8% ($1/e$) â€” double that of pure ALOHA (18.4%).
+</details>
+
+**Q3.** A CRC with generator polynomial $x^3 + x + 1$ receives the bit sequence 1101101. The remainder after division is 101. Was an error detected?
+
+- A) Yes
+- B) No
+- C) Cannot determine
+- D) CRC cannot detect errors
+
+<details>
+<summary>Answer</summary>
+B) No â€” a zero remainder indicates no detected error; CRC with non-zero remainder = error detected.
+</details>
+
+**Q4.** In Go-Back-N with a 4-bit sequence number, what is the maximum send window size?
+
+- A) 8
+- B) 15
+- C) 16
+- D) 31
+
+<details>
+<summary>Answer</summary>
+B) 15 â€” Go-Back-N requires $W \le 2^k - 1$ to avoid ambiguity (Selective Repeat requires $W \le 2^{k-1}$).
+</details>
+
+---
 
 ## Summary
 

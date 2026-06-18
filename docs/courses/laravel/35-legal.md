@@ -1,4 +1,4 @@
-﻿# Chapter 35: Legal & Compliance Agents
+# Chapter 35: Legal & Compliance Agents
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## Theory
 
-![Legal Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/35-legal.png)
+![Legal Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/35-legal.png)
 
 
 ### 35.1 Legal Data Models

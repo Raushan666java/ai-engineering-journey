@@ -21,7 +21,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Classes and Objects
 
-![Java OOP - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/p2-java-oop.png)
+![Java OOP - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/p2-java-oop.png)
 
 Java is an object-oriented language: every piece of data except primitive types belongs to a **class**, and every class can produce **objects** (instances). A class is a blueprint; an object is the concrete thing you create from that blueprint.
 
@@ -220,10 +220,10 @@ Java provides four access levels:
 
 | Modifier | Class | Package | Subclass | World |
 |----------|-------|---------|----------|-------|
-| `private` | ✓ | ✗ | ✗ | ✗ |
-| *default* (package-private) | ✓ | ✓ | ✗ | ✗ |
-| `protected` | ✓ | ✓ | ✓ | ✗ |
-| `public` | ✓ | ✓ | ✓ | ✓ |
+| `private` | âœ“ | âœ— | âœ— | âœ— |
+| *default* (package-private) | âœ“ | âœ“ | âœ— | âœ— |
+| `protected` | âœ“ | âœ“ | âœ“ | âœ— |
+| `public` | âœ“ | âœ“ | âœ“ | âœ“ |
 
 ```java
 package com.example.bank;
@@ -695,7 +695,7 @@ public class OverloadingDemo {
 }
 ```
 
-Overloading resolution follows a precise order: exact match → widening primitive conversion → autoboxing → varargs.
+Overloading resolution follows a precise order: exact match â†’ widening primitive conversion â†’ autoboxing â†’ varargs.
 
 ```java
 public class OverloadResolution {
@@ -1134,7 +1134,7 @@ public interface DataProcessor {
 
 ### 6.5 Constants in Interfaces
 
-Every field in an interface is implicitly `public static final`. Interfaces were historically used as constant holders, but this is now considered an anti-pattern—use an enum or a utility class instead.
+Every field in an interface is implicitly `public static final`. Interfaces were historically used as constant holders, but this is now considered an anti-patternâ€”use an enum or a utility class instead.
 
 ```java
 public interface HttpStatusCodes {
@@ -1295,8 +1295,8 @@ Common built-in functional interfaces in `java.util.function`:
 | `Predicate<T>` | `boolean test(T)` | Tests a condition |
 | `Consumer<T>` | `void accept(T)` | Consumes a value |
 | `Supplier<T>` | `T get()` | Supplies a value |
-| `UnaryOperator<T>` | `T apply(T)` | T → T |
-| `BinaryOperator<T>` | `T apply(T, T)` | (T, T) → T |
+| `UnaryOperator<T>` | `T apply(T)` | T â†’ T |
+| `BinaryOperator<T>` | `T apply(T, T)` | (T, T) â†’ T |
 
 ---
 
@@ -1446,7 +1446,7 @@ public class SealedSwitchDemo {
 }
 ```
 
-Exhaustive switch with sealed types eliminates the need for a `default` branch when all subtypes are covered—the compiler proves totality.
+Exhaustive switch with sealed types eliminates the need for a `default` branch when all subtypes are coveredâ€”the compiler proves totality.
 
 ```java
 public class SealedTotalDemo {
@@ -1511,7 +1511,7 @@ public record Person(String name, int age) {
             throw new IllegalArgumentException("Name cannot be blank");
         }
         // The implicit assignment happens after this validation
-        // this.name = name;  // NOT needed — the compiler adds it
+        // this.name = name;  // NOT needed â€” the compiler adds it
     }
 
     // Custom compact constructor logic: normalization
@@ -1652,7 +1652,7 @@ public class PatternMatchingDemo {
 
 ## 9. Enums
 
-An **enum** (enumeration) defines a fixed set of named constants. Java's `enum` is much more powerful than in most languages—it's a full-fledged class.
+An **enum** (enumeration) defines a fixed set of named constants. Java's `enum` is much more powerful than in most languagesâ€”it's a full-fledged class.
 
 ### 9.1 Basic Enum
 
@@ -1876,7 +1876,7 @@ Annotations provide metadata about code. They can influence compilation, generat
 
 ### 10.1 Built-In Standard Annotations
 
-**`@Override`** — ensures a method overrides a superclass or interface method.
+**`@Override`** â€” ensures a method overrides a superclass or interface method.
 
 ```java
 public class OverrideExample {
@@ -1892,7 +1892,7 @@ public class OverrideExample {
 }
 ```
 
-**`@Deprecated`** — marks an element as obsolete, causing a compiler warning when used.
+**`@Deprecated`** â€” marks an element as obsolete, causing a compiler warning when used.
 
 ```java
 public class DeprecatedExample {
@@ -1921,7 +1921,7 @@ public class DeprecatedUsageDemo {
 }
 ```
 
-**`@SuppressWarnings`** — tells the compiler to suppress specific warnings.
+**`@SuppressWarnings`** â€” tells the compiler to suppress specific warnings.
 
 ```java
 import java.util.ArrayList;
@@ -1946,7 +1946,7 @@ public class SuppressWarningsDemo {
 }
 ```
 
-**`@FunctionalInterface`** — indicates an interface is intended to be functional (one abstract method). The compiler enforces this.
+**`@FunctionalInterface`** â€” indicates an interface is intended to be functional (one abstract method). The compiler enforces this.
 
 ```java
 @FunctionalInterface
@@ -1958,7 +1958,7 @@ public interface SimpleAction {
 }
 ```
 
-**`@SafeVarargs`** — suppresses heap pollution warnings on varargs with generic types.
+**`@SafeVarargs`** â€” suppresses heap pollution warnings on varargs with generic types.
 
 ```java
 import java.util.Arrays;
@@ -2548,7 +2548,7 @@ public class EmployeeRecord implements Cloneable {
         this.skills = skills;
     }
 
-    // Shallow clone — primitive fields are copied, reference fields share references
+    // Shallow clone â€” primitive fields are copied, reference fields share references
     @Override
     public EmployeeRecord clone() {
         try {
@@ -2558,7 +2558,7 @@ public class EmployeeRecord implements Cloneable {
         }
     }
 
-    // Deep clone — also clone mutable referenced objects
+    // Deep clone â€” also clone mutable referenced objects
     public EmployeeRecord deepClone() {
         String[] clonedSkills = this.skills.clone();  // array clone
         return new EmployeeRecord(this.name, this.salary, clonedSkills);
@@ -2616,7 +2616,7 @@ public class Person {
         this.age = age;
     }
 
-    // Copy constructor — preferred over clone
+    // Copy constructor â€” preferred over clone
     public Person(Person other) {
         this(other.name, other.age);
     }
@@ -3024,9 +3024,9 @@ public class LibraryManager {
         if (m == null) return "Unknown member";
 
         return switch (m) {
-            case BasicMembership bm -> "Basic — $" + bm.calculateLateFee(5) + " fee for 5 days overdue";
-            case PremiumMembership pm -> "Premium — $" + pm.calculateLateFee(10) + " fee for 10 days overdue";
-            case VipMembership vm -> "VIP — No late fees ever!";
+            case BasicMembership bm -> "Basic â€” $" + bm.calculateLateFee(5) + " fee for 5 days overdue";
+            case PremiumMembership pm -> "Premium â€” $" + pm.calculateLateFee(10) + " fee for 10 days overdue";
+            case VipMembership vm -> "VIP â€” No late fees ever!";
         };
     }
 
@@ -3143,35 +3143,35 @@ public class OOPIntegrationDemo {
 
 ### Application Problems
 
-11. **Design a Banking System** — Create an abstract class `Account` with fields `accountNumber`, `balance`, and abstract method `withdraw(double)`. Implement `SavingsAccount` (withdrawal fee) and `CheckingAccount` (overdraft limit). Demonstrate polymorphism by iterating over an `Account[]` and calling `withdraw`.
+11. **Design a Banking System** â€” Create an abstract class `Account` with fields `accountNumber`, `balance`, and abstract method `withdraw(double)`. Implement `SavingsAccount` (withdrawal fee) and `CheckingAccount` (overdraft limit). Demonstrate polymorphism by iterating over an `Account[]` and calling `withdraw`.
 
-12. **Implement `enum` Season** — Define `Season` with fields for average temperature range and typical activities. Add a method `getSeasonByMonth(int month)`. Use `EnumMap` to map each season to a list of holidays.
+12. **Implement `enum` Season** â€” Define `Season` with fields for average temperature range and typical activities. Add a method `getSeasonByMonth(int month)`. Use `EnumMap` to map each season to a list of holidays.
 
-13. **Write a Generic Cache** — Create a `Cache<K, V>` interface with `put`, `get`, `clear`, and `size` methods. Provide a default method `getOrDefault(K key, V defaultValue)`. Implement `InMemoryCache` and `TimedCache` (which expires entries after a configurable duration).
+13. **Write a Generic Cache** â€” Create a `Cache<K, V>` interface with `put`, `get`, `clear`, and `size` methods. Provide a default method `getOrDefault(K key, V defaultValue)`. Implement `InMemoryCache` and `TimedCache` (which expires entries after a configurable duration).
 
-14. **Validate with Records** — Define a `CreditCard` record with fields `number`, `expiryMonth`, `expiryYear`, `cvv`. In the compact constructor, validate using the Luhn algorithm for the card number, ensure expiry is in the future, and check CVV length.
+14. **Validate with Records** â€” Define a `CreditCard` record with fields `number`, `expiryMonth`, `expiryYear`, `cvv`. In the compact constructor, validate using the Luhn algorithm for the card number, ensure expiry is in the future, and check CVV length.
 
-15. **Sealed Expression Evaluator** — Create a sealed interface `Expr` with `eval(): int`. Permitted subclasses: `Const(int value)`, `Add(Expr left, Expr right)`, `Mul(Expr left, Expr right)`, `Neg(Expr operand)`. Implement `eval()` for each and demonstrate with `(3 + 5) * -(2 + 1)`.
+15. **Sealed Expression Evaluator** â€” Create a sealed interface `Expr` with `eval(): int`. Permitted subclasses: `Const(int value)`, `Add(Expr left, Expr right)`, `Mul(Expr left, Expr right)`, `Neg(Expr operand)`. Implement `eval()` for each and demonstrate with `(3 + 5) * -(2 + 1)`.
 
 ### Challenge Problems
 
-16. **Build a Minimal ORM** — Create a custom annotation `@Entity(tableName)` and `@Column(name, primaryKey)`. Write an `EntityManager` class that uses reflection to:
+16. **Build a Minimal ORM** â€” Create a custom annotation `@Entity(tableName)` and `@Column(name, primaryKey)`. Write an `EntityManager` class that uses reflection to:
     - Generate `INSERT`, `SELECT`, `UPDATE` SQL statements from annotated classes
     - Map `ResultSet` rows back to objects using the default constructor and setters
     - Support a `findById(Class<T>, Object id)` method
     - Support `save(T entity)` which inserts or updates based on primary key presence
     Test your ORM with a `@Entity`-annotated `Product` class.
 
-17. **Implement a Visitor Pattern with Sealed Classes** — Define a sealed interface `TreeNode` with `permits Leaf, Branch`. `Leaf(int value)` and `Branch(TreeNode left, TreeNode right)`. Implement a `Visitor<R>` interface with methods `visit(Leaf leaf)` and `visit(Branch branch)`. Write concrete visitors for `SumVisitor`, `DepthVisitor`, and `ToStringVisitor`. Use pattern matching in the `accept` method of `TreeNode`.
+17. **Implement a Visitor Pattern with Sealed Classes** â€” Define a sealed interface `TreeNode` with `permits Leaf, Branch`. `Leaf(int value)` and `Branch(TreeNode left, TreeNode right)`. Implement a `Visitor<R>` interface with methods `visit(Leaf leaf)` and `visit(Branch branch)`. Write concrete visitors for `SumVisitor`, `DepthVisitor`, and `ToStringVisitor`. Use pattern matching in the `accept` method of `TreeNode`.
 
-18. **Design a Thread-Safe Event Bus** — Create an event bus using generics, functional interfaces, and annotations. Define `@Subscribe` annotation. Provide `register(Object listener)`, `unregister(Object listener)`, and `post(Object event)` methods. Use `Method` handles discovered via reflection. Support both synchronous and asynchronous dispatch with `ExecutorService`.
+18. **Design a Thread-Safe Event Bus** â€” Create an event bus using generics, functional interfaces, and annotations. Define `@Subscribe` annotation. Provide `register(Object listener)`, `unregister(Object listener)`, and `post(Object event)` methods. Use `Method` handles discovered via reflection. Support both synchronous and asynchronous dispatch with `ExecutorService`.
 
-19. **Implement a Custom Stream Collector** — Write a `@SafeVarargs` generic method `mergeAll(Collector<T, A, R>... collectors)` that applies multiple collectors in parallel to a single stream and returns a `Map<String, R>` keyed by collector name. Test it with `Collectors.toList()`, `Collectors.counting()`, and `Collectors.groupingBy(...)`.
+19. **Implement a Custom Stream Collector** â€” Write a `@SafeVarargs` generic method `mergeAll(Collector<T, A, R>... collectors)` that applies multiple collectors in parallel to a single stream and returns a `Map<String, R>` keyed by collector name. Test it with `Collectors.toList()`, `Collectors.counting()`, and `Collectors.groupingBy(...)`.
 
-20. **Refactor with Records and Sealed Types** — Take the following poorly designed code and refactor it to use records, sealed classes/interfaces, and enums. Add proper `equals`/`hashCode`, `toString`, and validation.
+20. **Refactor with Records and Sealed Types** â€” Take the following poorly designed code and refactor it to use records, sealed classes/interfaces, and enums. Add proper `equals`/`hashCode`, `toString`, and validation.
 
 ```java
-// Poor design — needs refactoring
+// Poor design â€” needs refactoring
 public class Animal2 {
     String type; // "dog", "cat", "bird"
     String name;

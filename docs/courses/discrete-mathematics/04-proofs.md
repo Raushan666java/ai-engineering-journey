@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Proof Techniques Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/04-proofs.png)
+![Proof Techniques Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/04-proofs.png)
 
 After completing this chapter, you will be able to:
 
@@ -41,7 +41,7 @@ A proof by contradiction assumes the negation of the statement to be proved and 
 
 **Theorem 4.4.** There are infinitely many primes.
 
-*Proof.* Assume, to the contrary, that there are finitely many primes $p_1, p_2, \ldots, p_k$. Consider $N = p_1 p_2 \cdots p_k + 1$. Since $N > 1$, $N$ has a prime divisor $p$. But $p$ cannot be any $p_i$ because $N \equiv 1 \pmod{p_i}$ for each $i$. Hence $p$ is a prime not in our list — contradiction. $\square$
+*Proof.* Assume, to the contrary, that there are finitely many primes $p_1, p_2, \ldots, p_k$. Consider $N = p_1 p_2 \cdots p_k + 1$. Since $N > 1$, $N$ has a prime divisor $p$. But $p$ cannot be any $p_i$ because $N \equiv 1 \pmod{p_i}$ for each $i$. Hence $p$ is a prime not in our list â€” contradiction. $\square$
 
 ### 4.4 Counterexample
 
@@ -62,7 +62,7 @@ then $P(n)$ is true for all $n \geq n_0$.
 
 **Theorem 4.5.** For all $n \geq 1$, $\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$.
 
-*Proof.* **(Base)** $n = 1$: LHS $= 1$, RHS $= 1(2)/2 = 1$. ✓
+*Proof.* **(Base)** $n = 1$: LHS $= 1$, RHS $= 1(2)/2 = 1$. âœ“
 
 **(Inductive step)** Assume $\sum_{i=1}^{k} i = \frac{k(k+1)}{2}$. Then:
 $$\sum_{i=1}^{k+1} i = \left(\sum_{i=1}^{k} i\right) + (k+1) = \frac{k(k+1)}{2} + (k+1) = \frac{k(k+1) + 2(k+1)}{2} = \frac{(k+1)(k+2)}{2}$$
@@ -81,7 +81,7 @@ Strong induction assumes all smaller instances, not just the immediate predecess
 
 **Theorem 4.6.** Every integer $n \geq 2$ can be expressed as a product of primes.
 
-*Proof.* **(Base)** $n = 2$ is prime. ✓
+*Proof.* **(Base)** $n = 2$ is prime. âœ“
 
 **(Strong inductive step)** Assume every integer $2, 3, \ldots, k$ is a product of primes. Consider $k+1$. If $k+1$ is prime, we are done. If $k+1$ is composite, then $k+1 = ab$ where $2 \leq a, b \leq k$. By the inductive hypothesis, $a$ and $b$ are products of primes, so their product $k+1$ is also a product of primes. $\square$
 
@@ -115,11 +115,11 @@ An **existence proof** demonstrates that $\exists x\; P(x)$ is true. **Construct
 
 **Example 4.4** (Induction). Prove $2^n \geq n+1$ for all $n \geq 1$.
 
-*Proof.* Base $n=1$: $2^1 = 2 \geq 2$. ✓. Assume $2^k \geq k+1$. Then $2^{k+1} = 2 \cdot 2^k \geq 2(k+1) = 2k+2 \geq k+2$ for $k \geq 1$. So $P(k) \implies P(k+1)$. $\square$
+*Proof.* Base $n=1$: $2^1 = 2 \geq 2$. âœ“. Assume $2^k \geq k+1$. Then $2^{k+1} = 2 \cdot 2^k \geq 2(k+1) = 2k+2 \geq k+2$ for $k \geq 1$. So $P(k) \implies P(k+1)$. $\square$
 
 **Example 4.5** (Strong induction). The Fibonacci sequence $F_1 = 1$, $F_2 = 1$, $F_n = F_{n-1} + F_{n-2}$ for $n \geq 3$. Prove $F_n < 2^n$ for all $n \geq 1$.
 
-*Proof.* Base: $F_1 = 1 < 2^1$, $F_2 = 1 < 2^2$. ✓. Assume $F_i < 2^i$ for all $i \leq k$. Then $F_{k+1} = F_k + F_{k-1} < 2^k + 2^{k-1} < 2^k + 2^k = 2^{k+1}$. $\square$
+*Proof.* Base: $F_1 = 1 < 2^1$, $F_2 = 1 < 2^2$. âœ“. Assume $F_i < 2^i$ for all $i \leq k$. Then $F_{k+1} = F_k + F_{k-1} < 2^k + 2^{k-1} < 2^k + 2^k = 2^{k+1}$. $\square$
 
 ## Summary
 

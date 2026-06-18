@@ -36,7 +36,7 @@ flowchart LR
 
 ## 17.1 Foundation Models
 
-![Modern Artificial Intelligence](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch17-modern-ai.png)
+![Modern Artificial Intelligence](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch17-modern-ai.png)
 
 A **foundation model** (Bommasani et al., 2021) is a large-scale neural network trained on broad data that can be adapted to a wide range of downstream tasks. Key characteristics:
 
@@ -118,7 +118,7 @@ Chain-of-thought (CoT) prompting (Wei et al., 2022) elicits step-by-step reasoni
 ```
 Q: Roger has 5 tennis balls. He buys 2 more cans of tennis balls.
 Each can has 3 balls. How many tennis balls does he have now?
-A: Roger starts with 5 balls. 2 cans × 3 balls each = 6 balls.
+A: Roger starts with 5 balls. 2 cans Ã— 3 balls each = 6 balls.
 5 + 6 = 11. The answer is 11.
 ```
 
@@ -160,7 +160,7 @@ Modern AI is deployed across industries:
 - **Content creation:** Text generation, image generation, video production.
 - **Scientific research:** Protein folding (AlphaFold), materials discovery, drug design.
 
-> **💡 Pro Tip:** Prompt engineering (few-shot, chain-of-thought) is the fastest way to improve LLM output on knowledge tasks. For reliability-critical applications, fine-tune a smaller model on curated data rather than relying on prompt hacks with a giant model.
+> **ðŸ’¡ Pro Tip:** Prompt engineering (few-shot, chain-of-thought) is the fastest way to improve LLM output on knowledge tasks. For reliability-critical applications, fine-tune a smaller model on curated data rather than relying on prompt hacks with a giant model.
 
 ## Concept Comparison
 
@@ -168,27 +168,27 @@ Modern AI is deployed across industries:
 |-------|:---:|:---:|:---:|---------------|
 | GPT-4 | Transformer decoder | Text, image | Massive text + vision | Few-shot, reasoning |
 | CLIP | Dual encoder | Text + Image | 400M pairs | Zero-shot classification |
-| DALL-E 3 | Diffusion + LLM | Text → Image | Text-image pairs | Text-to-image generation |
+| DALL-E 3 | Diffusion + LLM | Text â†’ Image | Text-image pairs | Text-to-image generation |
 | GPT-4o | Multimodal | Text, image, audio | Multi-modal | Real-time cross-modal |
 | o1 / o3 | Reasoner | Text | RL + CoT | Step-by-step reasoning |
 
-## Quick Reference — Scaling Laws
+## Quick Reference â€” Scaling Laws
 
 | Term | Formula | Insight |
 |------|---------|--------|
-| Power Law (Loss) | L ≈ c / N^α | Loss decreases predictably with more parameters |
-| Chinchilla Optimum | N_opt ≈ 6D | For optimal compute, tokens should be ~6× parameters |
+| Power Law (Loss) | L â‰ˆ c / N^Î± | Loss decreases predictably with more parameters |
+| Chinchilla Optimum | N_opt â‰ˆ 6D | For optimal compute, tokens should be ~6Ã— parameters |
 | Emergent Abilities | Threshold-dependent | Capabilities appear suddenly past a scale threshold |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Transformer | ✅ | ✅ | ✅ | ✅ |
-| Foundation Models | ✅ | ✅ | ✅ | ✅ |
-| In-Context Learning | ✅ | ✅ | ✅ | ✅ |
-| Multimodal | ✅ | ✅ | ✅ | ✅ |
-| AI Agents | ✅ | ✅ | ✅ | ✅ |
+| Transformer | âœ… | âœ… | âœ… | âœ… |
+| Foundation Models | âœ… | âœ… | âœ… | âœ… |
+| In-Context Learning | âœ… | âœ… | âœ… | âœ… |
+| Multimodal | âœ… | âœ… | âœ… | âœ… |
+| AI Agents | âœ… | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
@@ -206,15 +206,15 @@ Modern AI is deployed across industries:
 - C) Only answer questions about the training data
 - D) Generate code without any input
 
-<details><summary>Answer</summary>B) In-context learning uses examples (few-shot) or instructions (zero-shot) in the prompt itself — no gradient updates or fine-tuning is needed.</details>
+<details><summary>Answer</summary>B) In-context learning uses examples (few-shot) or instructions (zero-shot) in the prompt itself â€” no gradient updates or fine-tuning is needed.</details>
 
 **Q3:** The Chinchilla scaling law findings suggest that:
 - A) More parameters always improve performance
-- B) For optimal training, the number of training tokens should be roughly 6× the number of model parameters
+- B) For optimal training, the number of training tokens should be roughly 6Ã— the number of model parameters
 - C) Larger models are always more sample-efficient
 - D) Compute optimality is irrelevant
 
-<details><summary>Answer</summary>B) Chinchilla showed that many large models were undertrained — optimal performance for a given compute budget comes from balancing model size and training tokens (~6:1 tokens-to-parameters ratio).</details>
+<details><summary>Answer</summary>B) Chinchilla showed that many large models were undertrained â€” optimal performance for a given compute budget comes from balancing model size and training tokens (~6:1 tokens-to-parameters ratio).</details>
 
 ## 17.10 Summary
 

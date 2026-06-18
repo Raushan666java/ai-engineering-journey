@@ -1,8 +1,11 @@
 # Chapter 3: Logic Gates
 
+> **Prereq:** Chapter 2 (Boolean Algebra) â€” gates implement the Boolean operations directly.
+> **Next:** Chapter 4 (Combinational Circuits) â€” gates combine to form useful logic circuits.
+
 ## Learning Objectives
 
-![Logic Gates](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch03-gates.png)
+![Logic Gates](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch03-gates.png)
 
 By the conclusion of this chapter, the student shall be able to:
 
@@ -12,9 +15,35 @@ By the conclusion of this chapter, the student shall be able to:
 4. Interpret datasheet parameters including propagation delay, fan-out, and noise margin
 5. Analyse the behaviour of three-state and open-collector gate configurations
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Fundamental Gates | AND, OR, NOT, NAND, NOR, XOR, XNOR | Basic building blocks of all digital circuits |
+| Universal Gates | NAND/NOR implement any function | IC manufacturing prefers single gate type |
+| Three-State Gates | High-impedance output | Enable shared bus architectures |
+| Logic Families | TTL vs CMOS electrical characteristics | Real-world voltage levels, speed, power |
+
+```mermaid
+flowchart LR
+    A[Boolean Expression] --> B[Gates]
+    B --> C[AND/OR/NOT]
+    B --> D[NAND/NOR - Universal]
+    B --> E[XOR/XNOR]
+    C --> F[Combinational Circuit]
+    D --> F
+    E --> F
+    F --> G[Logic Family: TTL/CMOS]
+    G --> H[Physical Implementation]
+    style A fill:#e1f5fe
+    style H fill:#c8e6c9
+```
+
 ## Theory
 
 ### 3.1 Fundamental Logic Gates
+
+> **One-Sentence Takeaway:** NAND and NOR are universal gates â€” any Boolean function, however complex, can be built entirely from either one, which is why chip manufacturers standardise on a single gate type.
 
 A logic gate is an electronic circuit that implements a Boolean function. The seven fundamental gates are AND, OR, NOT, NAND, NOR, XOR, and XNOR.
 
@@ -207,7 +236,7 @@ Implement the function *F* = *A* &middot; *B* + *C* &middot; *D* using only NAND
   = [(A &middot; B)']' &middot; [(C &middot; D)']'  (involution before De Morgan)
   = [(A &middot; B)' &middot; (C &middot; D)']'
 
-Implementation: Three NAND gates — two for the AND functions, one for the OR function expressed as a NAND.
+Implementation: Three NAND gates â€” two for the AND functions, one for the OR function expressed as a NAND.
 
 ### Example 3.2: Propagation Delay Analysis
 
@@ -215,10 +244,39 @@ A logic circuit consists of five cascaded NAND gates. Each gate has *t_{PLH}* = 
 
 **Solution**: For a rising edge, each gate may exhibit *t_{PHL}* and *t_{PLH}* alternately depending on the gate's position and whether an even or odd number of inversions has occurred. The worst case is when every gate exhibits *t_{PHL}* = 12 ns (or every gate exhibits *t_{PLH}* = 8 ns, whichever path is longer). Worst-case total delay = 5 &times; 12 ns = 60 ns.
 
+### Concept Comparison
+
+| Logic Family | Supply | Static Power | Speed | Fan-Out | Noise Margin |
+|-------------|--------|-------------|-------|---------|-------------|
+| TTL (74LS) | 5V | 2 mW/gate | 10 ns | 20 | 0.4 V |
+| CMOS (74HC) | 2-6V | 0.002 mW/gate | 20 ns | 50 | 0.7 V |
+| Advanced CMOS | 1.8-3.3V | Near zero | 3-5 ns | 30 | 0.3 V |
+
+### Quick Reference
+
+| Gate | Output When | Expression |
+|------|-----------|------------|
+| AND | All inputs 1 | A Â· B |
+| OR | Any input 1 | A + B |
+| NOT | Complement | A' |
+| NAND | Not all 1 | (AÂ·B)' |
+| NOR | No input 1 | (A+B)' |
+| XOR | Inputs differ | A âŠ• B |
+| XNOR | Inputs match | (AâŠ•B)' |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | ALU logic gates | Gates are the physical atoms of computation |
+| Embedded Systems | TTL/CMOS level interfacing | Voltage compatibility is critical |
+| Digital Circuits | IC fabrication | Universal gate reduces mask layers |
+| Research | Emerging logic tech | Reversible/quantum gates studied |
+
 ## Summary
 
 - Seven fundamental gates exist: AND, OR, NOT, NAND, NOR, XOR, and XNOR.
-- NAND and NOR are universal gates — any Boolean function can be constructed from either alone.
+- NAND and NOR are universal gates â€” any Boolean function can be constructed from either alone.
 - Three-state gates enable shared bus architectures by providing a high-impedance state.
 - TTL and CMOS are the dominant logic families, with CMOS prevailing in modern designs due to low power consumption.
 - Key electrical parameters include propagation delay, fan-out, and noise margin.
@@ -245,4 +303,29 @@ A logic circuit consists of five cascaded NAND gates. Each gate has *t_{PLH}* = 
 
 ### Challenge Problem
 
-A digital system uses a shared data bus driven by three-state buffers from four different modules. Design the enable logic such that only one module drives the bus at any time. The module priorities are: Module 1 (highest), Module 2, Module 3, Module 4 (lowest). A higher-priority module's request inhibits all lower-priority modules from driving the bus. Provide the truth table, Boolean expressions for the enable signals, and a gate-level schematic description.
+A digital system uses a shared data bus driven by three-state buffers from four different modules. Design the enable logic such that only one module drives the bus at any time. The module priorities are: Module 1 (highest), Module 2, Module 3, Module 4 (lowest). A higher-priority module's request inhibits all lower-priority modules from driving the bus. Provide the truth table, Boolean expressions for the enable signals,     and a gate-level schematic description.
+
+### Chapter Quiz
+
+1. Which gates are classified as universal?
+   - A) AND and OR
+   - B) NAND and NOR
+   - C) XOR and XNOR
+   - D) NOT and Buffer
+
+2. A three-state gate's third output state is:
+   - A) 0
+   - B) 1
+   - C) High-impedance (Z)
+   - D) Undefined
+
+3. CMOS logic's main advantage over TTL is:
+   - A) Higher speed
+   - B) Lower static power consumption
+   - C) Lower cost
+   - D) Higher output voltage
+
+<details>
+<summary>Answers</summary>
+1. B, 2. C, 3. B
+</details>

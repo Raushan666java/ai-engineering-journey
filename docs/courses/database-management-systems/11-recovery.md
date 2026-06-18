@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Recovery System Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch11-recovery.png)
+![Recovery System Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch11-recovery.png)
 
 ### 11.1 Types of Failures
 
@@ -85,7 +85,7 @@ The foundation of all modern recovery. **Write-Ahead Logging** requires:
 **Physical vs. Logical Logging:**
 - **Physical:** Stores the exact bytes changed (page ID, offset, before/after image). Accurate but more data.
 - **Logical:** Stores the operation (e.g., "INSERT INTO accounts VALUES (1, 500)"). Compact but complex to undo.
-- **Physiological:** Hybrid — physical at page level, logical within page. Used by most systems.
+- **Physiological:** Hybrid â€” physical at page level, logical within page. Used by most systems.
 
 ### 11.5 Log-Based Recovery Algorithms
 
@@ -160,14 +160,14 @@ ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is the most wi
 **ARIES Recovery Phases (in detail):**
 
 ```
-Phase 1 — Analysis:
+Phase 1 â€” Analysis:
   - Start from the most recent BEGIN_CHECKPOINT record
   - Scan log forward to build:
     - Transaction table (active transactions at crash)
     - Dirty page table (pages that may not be on disk)
   - Determine the REDO LSN (the earliest LSN in the dirty page table)
 
-Phase 2 — Redo:
+Phase 2 â€” Redo:
   - Start from the REDO LSN
   - Scan log forward to the end
   - For each update log record:
@@ -175,7 +175,7 @@ Phase 2 — Redo:
     - Otherwise: skip (page already reflects this change)
   - Write the REDO END record
 
-Phase 3 — Undo:
+Phase 3 â€” Undo:
   - Process backward from the end of the log
   - For each active transaction found during analysis:
     - Read log records backward
@@ -237,12 +237,12 @@ COMMIT;
 
 Distributed transactions require the **Two-Phase Commit (2PC)** protocol:
 
-**Phase 1 — Prepare:**
+**Phase 1 â€” Prepare:**
 1. Coordinator sends PREPARE to all participants
 2. Each participant writes prepare log record
 3. Each participant responds YES (ready) or NO (abort)
 
-**Phase 2 — Commit/Abort:**
+**Phase 2 â€” Commit/Abort:**
 1. If ALL responded YES: Coordinator writes COMMIT log record, sends COMMIT to all
 2. If ANY responded NO: Coordinator writes ABORT log record, sends ABORT to all
 3. Participants write the final log record and acknowledge
@@ -276,16 +276,16 @@ LSN 6: <T2, UPDATE, Page=A, Old=50, New=70>
 ```
 
 Analysis Phase:
-- Transaction Table: T1 committed, T2 active → UNDO set = {T2}, REDO set = {T1, T2}
+- Transaction Table: T1 committed, T2 active â†’ UNDO set = {T2}, REDO set = {T1, T2}
 - Dirty Page Table: Page A (recovery LSN = 2), Page B (recovery LSN = 3)
 - REDO LSN = 2
 
 Redo Phase (from LSN 2):
 - LSN 2: Redo: A = 50 (ensure A is 50)
 - LSN 3: Redo: B = 250
-- LSN 4: No action (commit — no data change)
-- LSN 5: No action (begin — no data change)
-- LSN 6: Redo: A = 70 (even though T2 will be undone — T2's changes are redone first)
+- LSN 4: No action (commit â€” no data change)
+- LSN 5: No action (begin â€” no data change)
+- LSN 6: Redo: A = 70 (even though T2 will be undone â€” T2's changes are redone first)
 
 Undo Phase (backward from crash):
 - LSN 6: Undo: A = 50 (restore T2's change). Write CLR: <LSN 7: CLR, T2, UndoNext=5, Page=A, Old=70, New=50>
@@ -294,13 +294,125 @@ Undo Phase (backward from crash):
 
 Final state: A = 50, B = 250. Correct!
 
+## ðŸ’¡ Pro Tips
+
+1. **WAL (Write-Ahead Logging) is the most important recovery concept** â€” "log first, then write" is the rule that makes recovery possible.
+2. **Checkpoints are your safety net** â€” they limit how far back recovery must scan. Monitor checkpoint frequency; too-frequent checkpoints hurt performance, too-rare checkpoints extend recovery time.
+3. **Always test your backups** â€” an untested backup is not a backup. Regularly restore to a test environment and verify data integrity.
+4. **Point-in-time recovery (PITR) is a lifesaver** â€” it lets you recover to any moment, not just the last full backup. Enable continuous WAL archiving.
+5. **ARIES is the industry standard** â€” PostgreSQL, Oracle, SQL Server, and DB2 all use variations. Understanding ARIES gives you insight into almost any database's recovery behavior.
+
+## One-Sentence Takeaways
+
+- **11.1:** Database failures fall into four categories: transaction failures, system crashes, media failures, and catastrophic disasters.
+- **11.2:** The buffer management policy â€” STEAL (write dirty pages to disk before commit) vs. NO-STEAL, FORCE (write at commit) vs. NO-FORCE â€” determines undo and redo requirements.
+- **11.3:** Write-Ahead Logging (WAL) ensures the log record is written to stable storage before the corresponding data page â€” the fundamental rule of database recovery.
+- **11.4:** Checkpoints limit recovery time by establishing a safe restart point where all dirty pages are guaranteed to be on disk.
+- **11.5:** ARIES uses three phases â€” Analysis, Redo, and Undo â€” with Compensation Log Records (CLRs) for idempotent recovery.
+- **11.6:** Backup strategies â€” full, incremental, differential, and continuous archiving â€” provide different trade-offs between speed and completeness.
+- **11.7:** The STEAL/NO-FORCE buffer policy (used in PostgreSQL, Oracle, SQL Server) requires both undo (for aborted transactions) and redo (for committed but not-yet-written data).
+
+## Concept Comparison Table
+
+| Failure Type | Description | Recovery Strategy |
+|-------------|------------|------------------|
+| **Transaction Failure** | Logical error, constraint violation, abort | Undo (ROLLBACK) |
+| **System Crash** | Power failure, OS crash, DBMS bug | ARIES: Analysis â†’ Redo â†’ Undo |
+| **Media Failure** | Disk head crash, sector corruption | Restore from backup + replay WAL |
+| **Catastrophic** | Fire, flood, data center destruction | Off-site backup + disaster recovery plan |
+
+| Buffer Policy | Undo Needed? | Redo Needed? | Used By |
+|--------------|-------------|-------------|---------|
+| **STEAL/NO-FORCE** | Yes (undo uncommitted dirty pages) | Yes (redo committed pages not on disk) | PostgreSQL, Oracle, SQL Server |
+| **NO-STEAL/FORCE** | No | No | Simple embedded DBs |
+| **STEAL/FORCE** | Yes | No | Rare |
+| **NO-STEAL/NO-FORCE** | No | Yes | Theoretically possible, impractical |
+
+## Quick Reference
+
+| ARIES Phase | Purpose | Actions |
+|------------|---------|---------|
+| **Analysis** | Determine dirty pages and in-flight transactions | Scan log forward from last checkpoint; build dirty page table (DPT) and transaction table (TT) |
+| **Redo** | Reapply all changes (committed and uncommitted) | Scan log forward from earliest dirty page LSN; redo updates for pages in DPT |
+| **Undo** | Roll back uncommitted transactions | Scan log backward; for each aborted transaction's log record, write a CLR and undo the change |
+
+| Backup Type | Data Included | Restore Speed | Storage Size |
+|-----------|--------------|--------------|-------------|
+| **Full** | Entire database | Slowest | Largest |
+| **Incremental** | Changes since last backup of any type | Fast | Smallest |
+| **Differential** | Changes since last full backup | Medium | Medium |
+| **Continuous Archiving** | WAL segments (real-time) | Fastest (any point in time) | Ongoing stream |
+
+## Cross-Application Matrix
+
+| Recovery Concept | Applied In | Why It Matters |
+|-----------------|-----------|----------------|
+| **WAL** | All serious DBMS (PostgreSQL, Oracle, SQL Server) | Ensures no committed data is lost |
+| **Checkpoints** | OLTP systems with high transaction volume | Limits recovery time and keeps write-ahead log manageable |
+| **PITR** | Financial systems, regulated industries | Recover to the moment before an error or fraud |
+| **ARIES Recovery** | PostgreSQL, Oracle, SQL Server, DB2 | Industry standard; restarts the database safely after any crash |
+| **2PC (Distributed)** | Multi-node transactions (XA, distributed databases) | Coordinates commit across database shards |
+| **Incremental Backups** | Large databases with limited backup windows | Faster daily backups with less storage overhead |
+
+## Chapter Quiz
+
+1. The fundamental rule of Write-Ahead Logging is:
+   a) Data is written before the log
+   b) The log record is written to stable storage before the data page
+   c) The log and data are written simultaneously
+   d) Logs are optional in crash recovery
+
+2. The STEAL/NO-FORCE buffer policy requires:
+   a) Only undo
+   b) Only redo
+   c) Both undo and redo
+   d) Neither undo nor redo
+
+3. The purpose of a checkpoint is to:
+   a) Reduce the amount of log data
+   b) Limit the scope of recovery scans
+   c) Speed up query execution
+   d) Create a backup copy
+
+4. The three phases of ARIES are:
+   a) Scan, Apply, Commit
+   b) Analysis, Redo, Undo
+   c) Prepare, Write, Validate
+   d) Lock, Log, Recover
+
+5. A Compensation Log Record (CLR) is used to:
+   a) Record a transaction start
+   b) Make undo operations idempotent during recovery
+   c) Create a checkpoint
+   d) Log a successful commit
+
+6. Point-in-time recovery requires:
+   a) Only a full backup
+   b) Continuous WAL archiving plus backups
+   c) A replica database
+   d) Special hardware
+
+7. Which backup type captures only data changed since the last full backup?
+   a) Incremental
+   b) Differential
+   c) Full
+   d) Partial
+
+8. The Analysis phase of ARIES determines:
+   a) Which queries were running
+   b) Which pages were dirty and which transactions were active at crash time
+   c) The cause of the crash
+   d) The optimal recovery strategy
+
+**Answers:** 1-b, 2-c, 3-b, 4-b, 5-b, 6-b, 7-b, 8-b
+
 ## Summary
 
 - Database failures are classified as transaction, system, media, or catastrophic.
 - The buffer management policy (STEAL/NO-FORCE) determines whether undo and redo are needed.
 - Write-Ahead Logging ensures log records precede data writes to disk.
 - Checkpoints reduce recovery time by establishing safe restart points.
-- ARIES (Analysis → Redo → Undo) is the dominant recovery algorithm.
+- ARIES (Analysis â†’ Redo â†’ Undo) is the dominant recovery algorithm.
 - Compensation Log Records make recovery idempotent.
 - Two-Phase Commit coordinates distributed transactions across multiple databases.
 - Regular backups and continuous WAL archiving protect against media failures.

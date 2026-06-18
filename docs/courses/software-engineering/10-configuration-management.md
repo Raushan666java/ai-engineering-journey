@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: explain the purpose 
 
 ## Theory
 
-![Configuration Management System](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-10-configuration-management.png)
+![Configuration Management System](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-10-configuration-management.png)
 
 ### The Purpose of Configuration Management
 
@@ -50,7 +50,7 @@ Release branches isolate release preparation from ongoing development. On a rele
 
 ### Continuous Integration
 
-Continuous integration (CI) is the practice of merging all developer changes into a shared mainline frequently — typically several times per day. Each integration is verified by an automated build and automated tests, giving the team immediate feedback on the quality of their changes.
+Continuous integration (CI) is the practice of merging all developer changes into a shared mainline frequently â€” typically several times per day. Each integration is verified by an automated build and automated tests, giving the team immediate feedback on the quality of their changes.
 
 The benefits of CI include: early detection of integration problems; reduced integration risk; immediate feedback to developers; always-deployable code; and increased confidence in the quality of the codebase.
 

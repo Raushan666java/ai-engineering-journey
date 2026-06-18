@@ -12,7 +12,7 @@ After studying this chapter, students will be able to:
 
 ## 15.1 The Concurrency Landscape
 
-![Concurrency Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/15-concurrency.png)
+![Concurrency Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/15-concurrency.png)
 
 Modern hardware provides multiple cores that execute threads in parallel. C++11 introduced a portable threading library. Two fundamental issues arise:
 
@@ -46,9 +46,9 @@ int main() {
 ```
 
 Key operations:
-- `join()` — blocks until the thread completes
-- `detach()` — allows the thread to run independently (careful: detached threads outlive the creating scope)
-- `joinable()` — checks if `join` or `detach` is valid
+- `join()` â€” blocks until the thread completes
+- `detach()` â€” allows the thread to run independently (careful: detached threads outlive the creating scope)
+- `joinable()` â€” checks if `join` or `detach` is valid
 
 A thread must be joined or detached before destruction, or `std::terminate` is called.
 
@@ -83,9 +83,9 @@ int main() {
 Without the mutex, the result would be unpredictable due to data races.
 
 Additional mutex variants:
-- `std::recursive_mutex` — same thread can lock multiple times
-- `std::timed_mutex` — supports `try_lock_for` and `try_lock_until`
-- `std::shared_mutex` (C++17) — multiple readers, exclusive writer
+- `std::recursive_mutex` â€” same thread can lock multiple times
+- `std::timed_mutex` â€” supports `try_lock_for` and `try_lock_until`
+- `std::shared_mutex` (C++17) â€” multiple readers, exclusive writer
 
 ## 15.4 std::condition_variable
 
@@ -162,9 +162,9 @@ int main() {
 ```
 
 Launch policies:
-- `std::launch::async` — run on a new thread
-- `std::launch::deferred` — run on `get()` call, lazily
-- Default (`std::launch::async | std::launch::deferred`) — implementation chooses
+- `std::launch::async` â€” run on a new thread
+- `std::launch::deferred` â€” run on `get()` call, lazily
+- Default (`std::launch::async | std::launch::deferred`) â€” implementation chooses
 
 `std::promise` provides a channel for setting a value that a `future` retrieves:
 
@@ -214,17 +214,17 @@ int main() {
 ```
 
 Common atomic operations:
-- `load()` — read the value
-- `store()` — write the value
-- `exchange()` — replace and return old value
-- `fetch_add()`, `fetch_sub()` — atomic arithmetic
-- `compare_exchange_weak()`, `compare_exchange_strong()` — CAS
+- `load()` â€” read the value
+- `store()` â€” write the value
+- `exchange()` â€” replace and return old value
+- `fetch_add()`, `fetch_sub()` â€” atomic arithmetic
+- `compare_exchange_weak()`, `compare_exchange_strong()` â€” CAS
 
 Memory ordering specifies visibility constraints:
-- `memory_order_relaxed` — no ordering guarantees (fastest)
-- `memory_order_acquire` — subsequent reads see prior writes
-- `memory_order_release` — prior writes become visible to acquire
-- `memory_order_seq_cst` — sequential consistency (default, safest)
+- `memory_order_relaxed` â€” no ordering guarantees (fastest)
+- `memory_order_acquire` â€” subsequent reads see prior writes
+- `memory_order_release` â€” prior writes become visible to acquire
+- `memory_order_seq_cst` â€” sequential consistency (default, safest)
 
 ## 15.7 Avoiding Common Pitfalls
 

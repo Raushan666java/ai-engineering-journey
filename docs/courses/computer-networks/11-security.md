@@ -10,9 +10,9 @@
 
 ## 11.1 Network Security Threats
 
-![Network Security, Cryptography and Wireless Networking](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch08-security-wireless.png)
+![Network Security, Cryptography and Wireless Networking](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch08-security-wireless.png)
 
-![Network Security Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-14-network-security.png)
+![Network Security Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch-14-network-security.png)
 
 Network security encompasses the policies and mechanisms that protect the confidentiality, integrity, and availability of data in transit.
 
@@ -61,7 +61,7 @@ $$D(K_{priv}, E(K_{pub}, M)) = M$$
 
 Encryption: $c = m^e \mod n$. Decryption: $m = c^d \mod n$.
 
-**Elliptic Curve Cryptography (ECC)** provides equivalent security with smaller key sizes (256-bit ECC ≈ 3072-bit RSA). ECC is used in modern protocols including TLS 1.3 and Bitcoin.
+**Elliptic Curve Cryptography (ECC)** provides equivalent security with smaller key sizes (256-bit ECC â‰ˆ 3072-bit RSA). ECC is used in modern protocols including TLS 1.3 and Bitcoin.
 
 ### 11.2.3 Diffie-Hellman Key Exchange
 
@@ -136,7 +136,7 @@ iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 ```
 
-Packet filters are stateless — each packet is evaluated independently. They cannot detect attacks spread across multiple packets.
+Packet filters are stateless â€” each packet is evaluated independently. They cannot detect attacks spread across multiple packets.
 
 ### 11.4.2 Stateful Firewalls
 
@@ -179,6 +179,86 @@ Intrusion Detection Systems (IDS) monitor traffic for suspicious patterns. Intru
 - **Signature-based:** matches known attack patterns (Snort, Suricata).
 - **Anomaly-based:** detects deviations from normal traffic baselines.
 - **Behavioral:** identifies sequences of actions that indicate compromise.
+
+## ðŸ’¡ Pro Tips
+
+- **Use TLS 1.3 where possible**: TLS 1.3 reduces handshake to 1 RTT (0-RTT for resuming), removes insecure cipher suites, and provides forward secrecy by default. If your server supports it, disable TLS 1.2 and older.
+- **RSA key sizes matter**: 2048-bit RSA is the current minimum; 4096-bit is recommended for long-lived CAs. ECC (256-bit) provides equivalent security to 3072-bit RSA with smaller certificates.
+- **Stateful firewalls are not enough**: Stateful inspection tracks connections but cannot inspect application content. For real protection, deploy an NGFW with application-level inspection and TLS decryption.
+- **IDS placement**: Deploy IDS sensors at network chokepoints (internet ingress, DMZ, internal segments). A single sensor at the border misses lateral movement.
+
+## One-Sentence Takeaways
+
+- Symmetric encryption (AES) is fast but requires key distribution; asymmetric encryption (RSA, ECC) solves key exchange.
+- Diffie-Hellman enables two parties to establish a shared secret over an untrusted channel.
+- Digital signatures provide non-repudiation; certificates bind public keys to identities via PKI.
+- Packet-filter firewalls are stateless; stateful firewalls track connection state; application firewalls inspect content.
+- IPSec operates at the network layer; TLS operates at the transport layer.
+- IDS/IPS use signatures, anomalies, and behavioral analysis to detect threats.
+
+## Concept Comparison Table
+
+| Concept | Purpose | Key Technology | Key Size | Strength |
+|---------|---------|----------------|----------|----------|
+| Symmetric Encryption | Confidentiality | AES | 128â€“256 bits | Fast, bulk encryption |
+| Asymmetric Encryption | Key exchange, signatures | RSA, ECC | 2048â€“4096 bits | Slow, limited data |
+| Hashing | Integrity | SHA-256, SHA-3 | 256-bit output | One-way, collision-resistant |
+| MAC | Authentication + Integrity | HMAC | Key-dependent | Proves sender knowledge |
+| Digital Signature | Non-repudiation | ECDSA, RSA | Key-dependent | Legally binding |
+| Certificate (PKI) | Identity binding | X.509 | CA-signed | Trust chain |
+
+## Quick Reference: Firewall Types
+
+| Type | Layer | Stateful | Application Awareness | Speed |
+|------|-------|----------|----------------------|-------|
+| Packet filter | 3/4 | No | None | Line rate |
+| Stateful | 3/4 | Yes | None | Near line rate |
+| Application proxy | 7 | Yes | Full | Limited |
+| NGFW | 3â€“7 | Yes | Deep (DPI, TLS) | Hardware-dependent |
+
+## Cross-Application Matrix
+
+| Environment | Recommended Crypto | Firewall Type | VPN Type |
+|-------------|-------------------|--------------|----------|
+| Web browsing | TLS 1.3 (ECDHE + AES-GCM) | NGFW | TLS |
+| Site-to-site WAN | IPSec (AES-256, SHA-256) | Stateful | IPSec tunnel |
+| Remote access | TLS 1.3 + OAuth2 | NGFW | SSL VPN |
+| IoT sensors | ECC-256, CoAP over DTLS | Packet filter | None |
+| Data center | MACsec (L2 encryption) | Stateful | None (trusted net) |
+
+## Chapter Quiz
+
+1. **Which cryptographic algorithm is recommended for bulk encryption?**
+   - a) RSA
+   - b) AES âœ“
+   - c) SHA-256
+   - d) Diffie-Hellman
+
+2. **What property must a cryptographic hash provide?**
+   - a) Decryptability
+   - b) Collision resistance âœ“
+   - c) Key agreement
+   - d) Non-repudiation
+
+3. **Which firewall type tracks connection state?**
+   - a) Packet filter
+   - b) Stateful âœ“
+   - c) Proxy
+   - d) Circuit-level
+
+4. **TLS operates at which layer?**
+   - a) Network
+   - b) Transport âœ“
+   - c) Application
+   - d) Data link
+
+5. **What component of PKI signs certificates?**
+   - a) RA
+   - b) CA âœ“
+   - c) CRL
+   - d) CSR
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

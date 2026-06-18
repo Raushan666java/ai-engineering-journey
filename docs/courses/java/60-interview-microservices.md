@@ -1,6 +1,6 @@
-﻿# Chapter 60: Microservices Interview Q&A (Part A â€” Q1â€“Q8)
+# Chapter 60: Microservices Interview Q&A (Part A â€” Q1â€“Q8)
 
-![Microservices Interview Topics - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/60-interview-microservices.png)
+![Microservices Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices.png)
 
 ### Q1: What is microservice architecture and how does it differ from monolithic architecture?
 

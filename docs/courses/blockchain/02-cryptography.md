@@ -1,4 +1,6 @@
-﻿# Chapter 2: Cryptography for Blockchain
+# Chapter 2: Cryptography for Blockchain
+
+> **Previous:** [Chapter 1: Introduction to Blockchain](./01-introduction.md) | **Next:** [Chapter 3: Consensus Mechanisms](./03-consensus.md)
 
 ---
 
@@ -9,6 +11,26 @@
 - Construct and verify a Merkle Tree from a set of transactions
 - Describe the relationship between private keys, public keys, and blockchain addresses
 - Explain how cryptographic proofs ensure data integrity
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Hash Functions | Deterministic, pre-image resistant, collision resistant | Foundation of blockchain immutability |
+| Public Key Cryptography | Asymmetric keys for identity and ownership | Private key signs, public key verifies |
+| Digital Signatures | Authentication, non-repudiation, integrity | Mathematical proof of ownership without revealing the key |
+| Merkle Trees | Binary tree of hashes summarizes all transactions | Enables SPV — verify a transaction without downloading the full chain |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Hash Functions] --> B[SHA-256 Properties]
+    B --> C[Public Key Cryptography]
+    C --> D[Digital Signatures]
+    D --> E[Merkle Trees]
+    E --> F[Merkle Proofs & SPV]
+```
 
 ---
 
@@ -27,7 +49,7 @@ Blockchain uses asymmetric cryptography for identity and ownership.
 - **Public Key:** Derived from the private key; used by the network to verify the signature.
 - **Address:** A hashed version of the public key, acting as the user's "account number."
 
-![Cryptography in Blockchain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/blockchain/ch02-cryptography.png)
+![Cryptography in Blockchain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/blockchain/ch02-cryptography.png)
 
 ### Digital Signatures
 A digital signature (e.g., ECDSA) provides:
@@ -37,6 +59,8 @@ A digital signature (e.g., ECDSA) provides:
 
 ### Merkle Trees
 A Merkle Tree is a binary tree of hashes. Each leaf node is the hash of a transaction, and each non-leaf node is the hash of its children. The **Merkle Root** summarizes all transactions in a block into a single hash. This allows for **SPV (Simplified Payment Verification)** by providing a Merkle Proof.
+
+> **One-Sentence Takeaway:** Cryptographic hash functions are the glue that makes blockchain tamper-evident — any change to any transaction propagates up the Merkle tree to change the Merkle root.
 
 ---
 
@@ -58,7 +82,76 @@ Assume 4 transactions: $T_1, T_2, T_3, T_4$.
 3. Compute Merkle Root: $Root=Hash(H_{12} + H_{34})$.
 If $T_2$ is altered, $H_2$ changes, which changes $H_{12}$, which changes the $Root$.
 
+> **Warning:** A SHA-256 hash collision would be catastrophic for blockchain — it would allow an attacker to create a different input with the same hash, breaking the chain's integrity. This is why SHA-256's collision resistance is constantly monitored by the cryptographic community.
+
+> **Pro Tip:** Never share your private key with anyone — it is the sole proof of ownership of blockchain assets. Hardware wallets keep private keys offline and are the gold standard for security.
+
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Hashing | One-way function producing fixed-size output | Irreversible, deterministic | Block linking, Merkle trees |
+| Encryption | Two-way encoding with decryption | Reversible with key | Data privacy (not used in Bitcoin core) |
+| Digital Signature | Proves authenticity of a message | Binds identity to data | Transaction authorization |
+| Public Key | Derived from private key, shared openly | Cannot derive private key from it | Address generation, signature verification |
+| Private Key | Secret number controlling ownership | Must never be shared | Signing transactions |
+| Merkle Proof | Path of hashes from leaf to root | Logarithmic proof size | SPV wallets, light clients |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **Hash Properties** | Deterministic, Pre-image resistant, Collision resistant, Avalanche effect | SHA-256 is the blockchain standard |
+| **Key Pair** | Private key → Public key → Address | Each transformation is one-way |
+| **Signature Scheme** | ECDSA (Bitcoin), secp256k1 curve | Schnorr signatures (Taproot) are newer |
+| **Merkle Tree** | Leaf = tx hash, Root = Merkle root | Proof requires only log₂(n) hashes |
+
+## Cross-Application Matrix
+
+| Technique | DeFi | Smart Contracts | Enterprise Blockchain | Research |
+|-----------|------|-----------------|----------------------|----------|
+| SHA-256 Hashing | Transaction IDs | State root computation | Channel data hashing | Collision resistance studies |
+| ECDSA Signatures | Transaction authorization | Contract function calls | Identity certificates | Post-quantum crypto research |
+| Merkle Trees | UTXO set verification | State tree (storage) | World state hashing | Merkle tree variants |
+| SPV Proofs | Light wallet verification | Event log proofs | Audit verification | Zero-knowledge proofs |
+| Key Derivation | HD wallet paths | Contract address derivation | MSP certificates | BIP32/39 improvements |
+
+## Chapter Quiz
+
+1. Which property of hash functions prevents an attacker from finding two different inputs that produce the same hash?
+   - A) Pre-image resistance
+   - B) Collision resistance
+   - C) Determinism
+   - D) Avalanche effect
+
+<details>
+<summary>Answer</summary>
+**B) Collision resistance.** Collision resistance guarantees it is computationally infeasible to find two different inputs that hash to the same output. This prevents attackers from substituting one transaction for another while maintaining the same hash.
+</details>
+
+2. How does a Merkle tree enable Simplified Payment Verification (SPV)?
+   - A) By storing all transactions in a single hash
+   - B) By providing a logarithmic-sized proof that a transaction is included in a block
+   - C) By encrypting the transaction data
+   - D) By removing old transactions
+
+<details>
+<summary>Answer</summary>
+**B) By providing a logarithmic-sized proof that a transaction is included in a block.** An SPV wallet only needs to download block headers and a Merkle proof (log₂(n) hashes) to verify a transaction, instead of downloading all transactions.
+</details>
+
+3. In ECDSA, what information is required to verify a digital signature?
+   - A) The private key and the message
+   - B) The public key, the message, and the signature
+   - C) Only the signature
+   - D) The private key and the signature
+
+<details>
+<summary>Answer</summary>
+**B) The public key, the message, and the signature.** Anyone can verify a signature using the signer's public key, the original message, and the signature itself. The private key is never needed for verification.
+</details>
 
 ## Summary
 

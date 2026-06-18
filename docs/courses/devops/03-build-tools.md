@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Build Tools and Packaging Ecosystem](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch03-build-tools.png)
+![Build Tools and Packaging Ecosystem](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch03-build-tools.png)
 
 By the end of this chapter, students will be able to:
 
@@ -26,49 +26,49 @@ Making this distinction explicit improves pipeline design. A build pipeline prod
 
 ### 3.2 Language-Specific Tools
 
-**JavaScript/TypeScript** — npm (Node Package Manager) manages dependencies from the npm registry. `package.json` declares dependencies; `package-lock.json` pins exact versions for reproducibility. Yarn and pnpm are alternative package managers that offer faster installs and stricter dependency resolution. Build tooling includes Webpack (module bundling), Rollup (library bundling), esbuild (ultra-fast build), and Bun (runtime + package manager + bundler).
+**JavaScript/TypeScript** â€” npm (Node Package Manager) manages dependencies from the npm registry. `package.json` declares dependencies; `package-lock.json` pins exact versions for reproducibility. Yarn and pnpm are alternative package managers that offer faster installs and stricter dependency resolution. Build tooling includes Webpack (module bundling), Rollup (library bundling), esbuild (ultra-fast build), and Bun (runtime + package manager + bundler).
 
-**Python** — pip installs packages from PyPI. `requirements.txt` lists top-level dependencies; `pip freeze` outputs the full resolved dependency tree. Poetry and Pipenv provide more sophisticated dependency management with lock files, virtual environment management, and build system integration. Setuptools and Flit handle packaging: `setup.py` or `pyproject.toml` define package metadata, entry points, and build configuration.
+**Python** â€” pip installs packages from PyPI. `requirements.txt` lists top-level dependencies; `pip freeze` outputs the full resolved dependency tree. Poetry and Pipenv provide more sophisticated dependency management with lock files, virtual environment management, and build system integration. Setuptools and Flit handle packaging: `setup.py` or `pyproject.toml` define package metadata, entry points, and build configuration.
 
-**Java** — Maven and Gradle are the dominant build tools. Maven uses XML (`pom.xml`) with a convention-over-configuration philosophy. Gradle uses a Groovy or Kotlin DSL, supporting incremental builds and build caching. Both resolve dependencies from Maven Central or private repositories. Build outputs are JAR, WAR, or EAR files.
+**Java** â€” Maven and Gradle are the dominant build tools. Maven uses XML (`pom.xml`) with a convention-over-configuration philosophy. Gradle uses a Groovy or Kotlin DSL, supporting incremental builds and build caching. Both resolve dependencies from Maven Central or private repositories. Build outputs are JAR, WAR, or EAR files.
 
-**Go** — Go uses a built-in module system (`go mod`). `go.mod` declares dependencies; `go.sum` provides verification hashes. Go compiles to a single static binary, simplifying deployment. Multi-stage builds in Docker leverage the Go compiler's efficiency.
+**Go** â€” Go uses a built-in module system (`go mod`). `go.mod` declares dependencies; `go.sum` provides verification hashes. Go compiles to a single static binary, simplifying deployment. Multi-stage builds in Docker leverage the Go compiler's efficiency.
 
-**Rust** — Cargo manages dependencies from crates.io. `Cargo.toml` declares dependencies with semantic version constraints. Cargo builds produce executables or libraries. It handles testing, benchmarking, documentation generation, and publishing.
+**Rust** â€” Cargo manages dependencies from crates.io. `Cargo.toml` declares dependencies with semantic version constraints. Cargo builds produce executables or libraries. It handles testing, benchmarking, documentation generation, and publishing.
 
-**.NET** — NuGet is the package format and registry. MSBuild and the dotnet CLI handle compilation and packaging. `csproj` files declare dependencies. Paket is an alternative dependency manager.
+**.NET** â€” NuGet is the package format and registry. MSBuild and the dotnet CLI handle compilation and packaging. `csproj` files declare dependencies. Paket is an alternative dependency manager.
 
 ### 3.3 Artifact Repositories
 
 Artifact repositories store and serve build outputs and dependencies. They provide access control, caching, version management, and metadata storage.
 
-**Nexus Repository OSS/Pro** — Supports Maven, npm, Docker, PyPI, NuGet, and more. Provides proxy repositories (cache remote registries), hosted repositories (store internal artifacts), and group repositories (aggregate multiple sources). Pro features include cleanup policies, S3 blob storage, and health checks.
+**Nexus Repository OSS/Pro** â€” Supports Maven, npm, Docker, PyPI, NuGet, and more. Provides proxy repositories (cache remote registries), hosted repositories (store internal artifacts), and group repositories (aggregate multiple sources). Pro features include cleanup policies, S3 blob storage, and health checks.
 
-**JFrog Artifactory** — Universal artifact repository with support for all major package formats. Integrates natively with CI/CD tools. Features include build integration (traces which artifacts comprise a build), release management, and binary analysis. Artifactory also serves as a Helm chart repository and Docker registry.
+**JFrog Artifactory** â€” Universal artifact repository with support for all major package formats. Integrates natively with CI/CD tools. Features include build integration (traces which artifacts comprise a build), release management, and binary analysis. Artifactory also serves as a Helm chart repository and Docker registry.
 
-**Cloud Package Registries** — GitHub Packages, GitLab Container Registry, AWS CodeArtifact, Azure Artifacts, and GCP Artifact Registry provide integrated artifact storage within their respective platforms. These reduce operational overhead for teams already using the platform.
+**Cloud Package Registries** â€” GitHub Packages, GitLab Container Registry, AWS CodeArtifact, Azure Artifacts, and GCP Artifact Registry provide integrated artifact storage within their respective platforms. These reduce operational overhead for teams already using the platform.
 
-**Docker Hub and Container Registries** — Container images are the dominant deployment artifact. Registries include Docker Hub (public and private), Amazon ECR, Azure Container Registry, Google Container Registry, and GitHub Container Registry. All support vulnerability scanning, immutable tags, and access control.
+**Docker Hub and Container Registries** â€” Container images are the dominant deployment artifact. Registries include Docker Hub (public and private), Amazon ECR, Azure Container Registry, Google Container Registry, and GitHub Container Registry. All support vulnerability scanning, immutable tags, and access control.
 
 ### 3.4 Versioning
 
 Version numbers communicate meaning about the nature of changes between releases.
 
-**Semantic Versioning (SemVer)** — Format: `MAJOR.MINOR.PATCH`. Increment MAJOR for incompatible API changes, MINOR for backwards-compatible feature additions, and PATCH for backwards-compatible bug fixes. Pre-release versions append a hyphen and identifier (`1.0.0-alpha.1`). Build metadata appends a plus (`1.0.0+build.123`). SemVer enables dependency resolution tools to determine compatible versions automatically.
+**Semantic Versioning (SemVer)** â€” Format: `MAJOR.MINOR.PATCH`. Increment MAJOR for incompatible API changes, MINOR for backwards-compatible feature additions, and PATCH for backwards-compatible bug fixes. Pre-release versions append a hyphen and identifier (`1.0.0-alpha.1`). Build metadata appends a plus (`1.0.0+build.123`). SemVer enables dependency resolution tools to determine compatible versions automatically.
 
-**Calendar Versioning (CalVer)** — Format based on release date, such as `YY.MM.MINOR` or `YY.0M.0D`. Used by Ubuntu (`24.04`), Unity, and pip. CalVer communicates freshness rather than compatibility scope.
+**Calendar Versioning (CalVer)** â€” Format based on release date, such as `YY.MM.MINOR` or `YY.0M.0D`. Used by Ubuntu (`24.04`), Unity, and pip. CalVer communicates freshness rather than compatibility scope.
 
-**Zero-Ver and Other Schemes** — ZeroVer (`0.x`) indicates pre-stable development. Version Proliferation Review (VPR) and other organizational standards exist for specialized contexts.
+**Zero-Ver and Other Schemes** â€” ZeroVer (`0.x`) indicates pre-stable development. Version Proliferation Review (VPR) and other organizational standards exist for specialized contexts.
 
 ### 3.5 Software Bill of Materials (SBOM)
 
 An SBOM is a formal, machine-readable inventory of all components in a software artifact. It lists each component, its version, license, and dependency relationships.
 
-**Formats** — SPDX (Software Package Data Exchange) and CycloneDX are the dominant standards. Both are ISO/IEC standards. SPDX focuses on licensing; CycloneDX includes vulnerability metadata and cryptographic hashes.
+**Formats** â€” SPDX (Software Package Data Exchange) and CycloneDX are the dominant standards. Both are ISO/IEC standards. SPDX focuses on licensing; CycloneDX includes vulnerability metadata and cryptographic hashes.
 
-**Generation** — Tools like Syft, Trivy, and language-specific plugins analyze build outputs and generate SBOMs. Generation should be integrated into the CI/CD pipeline as a post-build step.
+**Generation** â€” Tools like Syft, Trivy, and language-specific plugins analyze build outputs and generate SBOMs. Generation should be integrated into the CI/CD pipeline as a post-build step.
 
-**Use Cases** — Vulnerability management (correlate components against CVE databases), license compliance, supply chain risk assessment, and regulatory compliance (US Executive Order 14028 mandates SBOMs for government software).
+**Use Cases** â€” Vulnerability management (correlate components against CVE databases), license compliance, supply chain risk assessment, and regulatory compliance (US Executive Order 14028 mandates SBOMs for government software).
 
 ## Examples
 

@@ -10,7 +10,7 @@ By the end of this chapter, students will be able to:
 - Create and manage virtual environments with venv and conda
 - Install third-party packages using pip
 
-![Python Ecosystem](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/01-introduction.png)
+![Python Ecosystem](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/01-introduction.png)
 
 ## 1.1 A Brief History of Python
 
@@ -189,10 +189,10 @@ pip install -r requirements.txt  # install from file
 
 Common commands:
 
-- `pip install --upgrade pip` — upgrade pip itself
-- `pip show <package>` — package metadata
-- `pip uninstall <package>` — remove a package
-- `pip cache purge` — reclaim disk space
+- `pip install --upgrade pip` â€” upgrade pip itself
+- `pip show <package>` â€” package metadata
+- `pip uninstall <package>` â€” remove a package
+- `pip cache purge` â€” reclaim disk space
 
 ## 1.10 Running Python Scripts
 
@@ -237,4 +237,4 @@ The `-m` flag runs a library module as a script. The `-c` flag executes the give
 
 ### Challenge Problem
 
-Write a script that creates a virtual environment, installs the `requests` and `pandas` packages, generates a `requirements.txt` file, then deactivates and removes the environment — all using `subprocess.run` or `os.system`. Verify each step with print statements.
+Write a script that creates a virtual environment, installs the `requests` and `pandas` packages, generates a `requirements.txt` file, then deactivates and removes the environment â€” all using `subprocess.run` or `os.system`. Verify each step with print statements.

@@ -9,7 +9,7 @@ By the end of this chapter, students will be able to:
 - Work with nested lists and multidimensional structures
 - Distinguish shallow and deep copying and select the appropriate copy strategy
 
-![List Operations](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/06-lists.png)
+![List Operations](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/06-lists.png)
 
 ## 6.1 List Basics
 
@@ -191,12 +191,12 @@ print(transpose)  # [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 Creating nested lists requires care:
 
 ```python
-# WRONG — creates 3 references to the same inner list
+# WRONG â€” creates 3 references to the same inner list
 bad = [[0] * 3] * 3
 bad[0][0] = 1
 print(bad)  # [[1, 0, 0], [1, 0, 0], [1, 0, 0]]
 
-# CORRECT — creates 3 independent lists
+# CORRECT â€” creates 3 independent lists
 good = [[0] * 3 for _ in range(3)]
 good[0][0] = 1
 print(good)  # [[1, 0, 0], [0, 0, 0], [0, 0, 0]]
@@ -286,10 +286,10 @@ odds = [x for x in values if x % 2 == 1]
 
 ### Application Problems
 
-1. Write a function `rotate(lst, k)` that rotates a list to the right by `k` positions using slicing: `rotate([1, 2, 3, 4, 5], 2)` → `[4, 5, 1, 2, 3]`.
+1. Write a function `rotate(lst, k)` that rotates a list to the right by `k` positions using slicing: `rotate([1, 2, 3, 4, 5], 2)` â†’ `[4, 5, 1, 2, 3]`.
 2. Use a list comprehension to generate the first 20 Fibonacci numbers. Then filter to keep only odd numbers.
-3. Write a Tic-Tac-Toe board as a 3×3 list of strings. Write functions to print the board, check if a player has won, and check if the board is full.
+3. Write a Tic-Tac-Toe board as a 3Ã—3 list of strings. Write functions to print the board, check if a player has won, and check if the board is full.
 
 ### Challenge Problem
 
-Implement a sparse matrix as a list of lists, but optimise it using a dictionary mapping `(row, col)` indices to values (default 0). Support addition of two sparse matrices. Use `copy.deepcopy` to ensure operations do not mutate operands. Compare memory usage for a 1000×1000 matrix with 100 non-zero entries against a full 1000×1000 list-of-lists representation.
+Implement a sparse matrix as a list of lists, but optimise it using a dictionary mapping `(row, col)` indices to values (default 0). Support addition of two sparse matrices. Use `copy.deepcopy` to ensure operations do not mutate operands. Compare memory usage for a 1000Ã—1000 matrix with 100 non-zero entries against a full 1000Ã—1000 list-of-lists representation.

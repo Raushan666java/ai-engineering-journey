@@ -8,7 +8,7 @@
 - Pass arrays to functions
 - Understand the relationship between arrays and memory layout
 
-![C Arrays and Strings Memory Layout](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch06-arrays-strings.png)
+![C Arrays and Strings Memory Layout](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch06-arrays-strings.png)
 
 ## 6.1 One-Dimensional Arrays
 
@@ -175,7 +175,7 @@ Original: 1 2 3 4 5
 Doubled:  2 4 6 8 10
 ```
 
-**Critical:** The size must be passed separately — `sizeof(arr)` inside `print_array` returns the pointer size, not the array size.
+**Critical:** The size must be passed separately â€” `sizeof(arr)` inside `print_array` returns the pointer size, not the array size.
 
 ## 6.4 Two-Dimensional Arrays
 
@@ -271,7 +271,7 @@ void print_matrix(int rows, int cols, int matrix[rows][cols])
 ## 6.5 Multidimensional Arrays (3D and Beyond)
 
 ```c
-int cube[3][4][5];   /* 3 layers, 4 rows, 5 columns — 60 elements total */
+int cube[3][4][5];   /* 3 layers, 4 rows, 5 columns â€” 60 elements total */
 ```
 
 ## 6.6 Variable-Length Arrays (VLA, C99)
@@ -280,7 +280,7 @@ C99 allows array sizes to be determined at runtime:
 
 ```c
 void process(int n) {
-    int arr[n];               /* VLA — size determined at call time */
+    int arr[n];               /* VLA â€” size determined at call time */
     for (int i = 0; i < n; i++) {
         arr[i] = i * i;
     }

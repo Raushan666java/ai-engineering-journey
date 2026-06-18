@@ -14,7 +14,7 @@
 
 ## Theory
 
-![Observability and Resiliency Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/17-observability-resiliency.png)
+![Observability and Resiliency Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/17-observability-resiliency.png)
 
 ### 1. The Three Pillars of Observability
 
@@ -28,7 +28,7 @@ Observability is the ability to understand a system's internal state from its ex
 
 **RED Method** (for services): Rate (requests/second), Errors (failed requests/second), Duration (latency distribution). Every service should expose at minimum these three metrics.
 
-**USE Method** (for resources): Utilization (time resource busy), Saturation (work queued), Errors (failure count). Applied to CPU, memory, disk, network — every infrastructure resource.
+**USE Method** (for resources): Utilization (time resource busy), Saturation (work queued), Errors (failure count). Applied to CPU, memory, disk, network â€” every infrastructure resource.
 
 **Four Golden Signals** (Google SRE):
 - **Latency**: Time to service a request. Distinguish success latency (fast) from error latency (slow).
@@ -145,14 +145,14 @@ def get_order(id):
 
 ```
 traceparent: 00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01
-  ─┬─ ───────┬────────────────── ───────┬─────────── ─┬─
-   │          │                          │              │
+  â”€â”¬â”€ â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ â”€â”¬â”€
+   â”‚          â”‚                          â”‚              â”‚
  version   trace_id                    span_id       trace_flags
 
 tracestate: vendor1=value1,vendor2=value2
 ```
 
-Automatic propagation via OpenTelemetry's HTTP instrumentation libraries — no manual header passing needed.
+Automatic propagation via OpenTelemetry's HTTP instrumentation libraries â€” no manual header passing needed.
 
 **Sampling strategies**:
 - **Head-based**: Decision at the root span (first service). Simple but may miss important slow requests. Use ProbabilitySampler (sample 1% of traces).
@@ -261,15 +261,15 @@ Isolates resources so failure in one component doesn't exhaust shared resources.
 
 ```
 Thread pools:
-  ┌─ order-service ─┐
-  │ pool: 10 threads│
-  └─────────────────┘
-  ┌─ payment-service─┐  ← this pool exhausts, orders pool unaffected
-  │ pool: 5 threads │
-  └─────────────────┘
-  ┌─ inventory-svc ─┐
-  │ pool: 8 threads │
-  └─────────────────┘
+  â”Œâ”€ order-service â”€â”
+  â”‚ pool: 10 threadsâ”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+  â”Œâ”€ payment-serviceâ”€â”  â† this pool exhausts, orders pool unaffected
+  â”‚ pool: 5 threads â”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+  â”Œâ”€ inventory-svc â”€â”
+  â”‚ pool: 8 threads â”‚
+  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 **Semaphore isolation**: Lighter-weight. Limit concurrent calls to a dependency (no thread context switch). Use when latency is low (< 10ms). Semaphore count = max concurrent calls.
@@ -345,7 +345,7 @@ if len(work_queue) > MAX_DEPTH: return {"error": "too many requests"}, 503
 
 ### 13. Health Check API
 
-Standard endpoints: `GET /health` (liveness — process alive?) and `GET /ready` (readiness — dependencies reachable?). Dependency checks return 503 to remove degraded pods from the load balancer:
+Standard endpoints: `GET /health` (liveness â€” process alive?) and `GET /ready` (readiness â€” dependencies reachable?). Dependency checks return 503 to remove degraded pods from the load balancer:
 
 ```python
 @app.route("/ready")
@@ -468,12 +468,12 @@ Querying Loki for `{correlation_id="abc-123"}` reconstructs the full request flo
 
 ## Summary
 
-- The three pillars of observability are logging, metrics, and tracing — each serves a distinct purpose: debugging, alerting, and latency analysis
+- The three pillars of observability are logging, metrics, and tracing â€” each serves a distinct purpose: debugging, alerting, and latency analysis
 - RED method (Rate, Errors, Duration) for services; USE method (Utilization, Saturation, Errors) for infrastructure resources
 - Prometheus uses a pull model with Counter (monotonic), Gauge (fluctuating), Histogram (bucketed), and Summary (quantile) metric types
 - OpenTelemetry provides vendor-neutral tracing with W3C TraceContext propagation and configurable sampling strategies
 - Structured logging with JSON format and correlation IDs enables centralized aggregation and cross-service log stitching
-- Circuit breaker transitions through CLOSED → OPEN → HALF-OPEN states with configurable thresholds and recovery timeouts
+- Circuit breaker transitions through CLOSED â†’ OPEN â†’ HALF-OPEN states with configurable thresholds and recovery timeouts
 - Bulkhead pattern isolates thread pools or semaphores per dependency to prevent cascading resource exhaustion
 - Retry with exponential backoff and full jitter prevents thundering herd during transient failures
 - Graceful degradation uses fallbacks, default responses, and feature flags to serve partial functionality under load

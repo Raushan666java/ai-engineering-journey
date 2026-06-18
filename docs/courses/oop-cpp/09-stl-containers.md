@@ -12,7 +12,7 @@ After studying this chapter, students will be able to:
 
 ## 9.1 Container Taxonomy
 
-![STL Containers Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/09-stl-containers.png)
+![STL Containers Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/09-stl-containers.png)
 
 The Standard Template Library (STL) defines three broad categories of containers:
 
@@ -50,10 +50,10 @@ int main() {
 ```
 
 Key operations and complexities:
-- `operator[]` — O(1)
-- `push_back` — amortized O(1)
-- `insert` at arbitrary position — O(n)
-- `erase` — O(n)
+- `operator[]` â€” O(1)
+- `push_back` â€” amortized O(1)
+- `insert` at arbitrary position â€” O(n)
+- `erase` â€” O(n)
 
 When `push_back` exceeds capacity, `vector` allocates a new, larger buffer (typically 1.5x or 2x), moves all elements, and deallocates the old buffer. Use `reserve(n)` to pre-allocate and avoid repeated reallocations.
 
@@ -77,7 +77,7 @@ int main() {
         std::cout << v << ' ';  // 0 1 99 2 3 4
     }
 
-    // No operator[] — no random access
+    // No operator[] â€” no random access
 }
 ```
 
@@ -170,14 +170,14 @@ Adaptors provide restricted interfaces over underlying containers:
 #include <queue>
 
 int main() {
-    // Stack (LIFO) — default: deque
+    // Stack (LIFO) â€” default: deque
     std::stack<int> stk;
     stk.push(1);
     stk.push(2);
     stk.top();        // 2
     stk.pop();        // removes 2
 
-    // Queue (FIFO) — default: deque
+    // Queue (FIFO) â€” default: deque
     std::queue<int> q;
     q.push(1);
     q.push(2);
@@ -185,7 +185,7 @@ int main() {
     q.back();         // 2
     q.pop();          // removes 1
 
-    // Priority queue — default: vector, max-heap
+    // Priority queue â€” default: vector, max-heap
     std::priority_queue<int> pq;
     pq.push(10);
     pq.push(30);
@@ -204,7 +204,7 @@ Containers invalidate iterators when their internal structure changes. Dereferen
 | `insert` | All after insertion | None | All | If rehash |
 | `erase` | Erased and after | Erased only | Erased only | Erased only |
 | `push_back` | All if reallocation | None | All if front full | If rehash |
-| `resize` | All | None | All | — |
+| `resize` | All | None | All | â€” |
 
 ```cpp
 std::vector<int> vec = {1, 2, 3, 4, 5};

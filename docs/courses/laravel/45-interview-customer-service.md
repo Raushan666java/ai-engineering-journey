@@ -1,10 +1,10 @@
-﻿# Chapter 45: Customer Service & Support â€” Interview Q&A
+# Chapter 45: Customer Service & Support â€” Interview Q&A
 
 ---
 
 ## 1. Customer Service Domain Knowledge
 
-![Customer Service Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/45-interview-customer-service.png)
+![Customer Service Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/45-interview-customer-service.png)
 
 
 **Q1: What are the core components of a modern customer support ticketing system?**

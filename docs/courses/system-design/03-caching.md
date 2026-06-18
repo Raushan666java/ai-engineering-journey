@@ -17,11 +17,11 @@
 
 ## Theory
 
-![Caching Strategies Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/03-caching.png)
+![Caching Strategies Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/03-caching.png)
 
 ### Locality of Reference
 
-Caching works because of locality of reference — the observation that accessed data is not uniformly distributed.
+Caching works because of locality of reference â€” the observation that accessed data is not uniformly distributed.
 
 **Temporal locality:** If a piece of data is accessed now, it is likely to be accessed again soon. Examples: a user's session data, the hot tweet in a timeline, the current page's CSS file. Temporal locality is the reason LRU (Least Recently Used) eviction works well: recently accessed items are kept, untouched items are evicted.
 
@@ -45,10 +45,10 @@ Caching occurs at every level of a modern system. Each level is faster, smaller,
 | L2 | CPU cache | 256-512 KB | ~4 ns | Hardware |
 | L3 | CPU cache | 4-32 MB | ~12 ns | Hardware |
 | RAM | Main memory | 8-512 GB | ~100 ns | OS |
-| Local disk | SSD | 256 GB-2 TB | ~50 μs | OS/App |
-| Local memory cache | In-process (e.g., Guava cache) | 0-4 GB | ~5 μs | Application |
+| Local disk | SSD | 256 GB-2 TB | ~50 Î¼s | OS/App |
+| Local memory cache | In-process (e.g., Guava cache) | 0-4 GB | ~5 Î¼s | Application |
 | Distributed cache | Redis, Memcached | 10-500 GB | ~1-5 ms | Application |
-| Database buffer pool | InnoDB buffer pool, PostgreSQL shared buffers | 1-100 GB | ~100 μs | Database |
+| Database buffer pool | InnoDB buffer pool, PostgreSQL shared buffers | 1-100 GB | ~100 Î¼s | Database |
 | CDN | Edge cache (CloudFront, Cloudflare) | Distributed | ~10-50 ms | CDN provider |
 
 The **cache miss penalty** increases by orders of magnitude at each level. A miss in L1 (~1 ns) costs ~4 ns to fetch from L2. A miss in Redis (~5 ms) costs ~50 ms to fetch from the database. This asymmetry drives the entire caching strategy: maximize the hit rate at the fastest level possible.
@@ -93,7 +93,7 @@ def update_user(user_id, data):
     # Cache-aside write
     db.execute("UPDATE users SET name = ? WHERE id = ?", data.name, user_id)
 
-    # Invalidate, don't update — simpler and avoids race conditions
+    # Invalidate, don't update â€” simpler and avoids race conditions
     cache.delete(f"user:{user_id}")
 ```
 
@@ -163,9 +163,9 @@ The cache proactively refreshes a key before it expires, based on access pattern
 
 ### Eviction Policies
 
-When the cache is full, something must be evicted. The choice of eviction policy is a bet on future access patterns — which entry is least likely to be needed again?
+When the cache is full, something must be evicted. The choice of eviction policy is a bet on future access patterns â€” which entry is least likely to be needed again?
 
-#### LRU — Least Recently Used
+#### LRU â€” Least Recently Used
 
 Evict the item accessed furthest in the past.
 
@@ -175,15 +175,15 @@ Evict the item accessed furthest in the past.
 
 **Cons:** Vulnerable to scan attacks (a one-time scan of many items evicts all hot data). Does not distinguish between "frequently used but not right now" and "rarely used."
 
-#### LFU — Least Frequently Used
+#### LFU â€” Least Frequently Used
 
 Evict the item with the lowest access frequency.
 
 **Pros:** Resists scan attacks (one-time accesses have low frequency). Good for workload where popularity distribution is stable.
 
-**Cons:** High implementation complexity (need frequency counters + min-heap or frequency buckets). Suffers from "frequency inertia" — once-hot items remain in cache even after they become cold, because their frequency counters take time to decay.
+**Cons:** High implementation complexity (need frequency counters + min-heap or frequency buckets). Suffers from "frequency inertia" â€” once-hot items remain in cache even after they become cold, because their frequency counters take time to decay.
 
-#### FIFO — First In, First Out
+#### FIFO â€” First In, First Out
 
 Evict the item that was inserted earliest.
 
@@ -191,23 +191,23 @@ Evict the item that was inserted earliest.
 
 **Cons:** Ignores access patterns entirely. The most valuable hot item can be evicted simply because it was inserted first. Poor hit rate in practice.
 
-#### MRU — Most Recently Used
+#### MRU â€” Most Recently Used
 
 Evict the most recently used item.
 
-**Counter-intuitive but useful for:** Scenarios where older items are more likely to be reused. For example, a "scrollable feed" where users start at the most recent item and move backward — recent items have been seen, older ones have not.
+**Counter-intuitive but useful for:** Scenarios where older items are more likely to be reused. For example, a "scrollable feed" where users start at the most recent item and move backward â€” recent items have been seen, older ones have not.
 
-#### ARC — Adaptive Replacement Cache
+#### ARC â€” Adaptive Replacement Cache
 
 Combines LRU and LFU by maintaining four lists: recent (recency), frequent (frequency), ghost entries (evicted but tracked). Adaptively balances between recency and frequency based on observed workload.
 
-**Pros:** Self-tuning — no manual configuration of recency vs frequency weight. Outperforms LRU on most real-world workloads.
+**Pros:** Self-tuning â€” no manual configuration of recency vs frequency weight. Outperforms LRU on most real-world workloads.
 
 **Cons:** Complex implementation. Ghost entries consume memory.
 
-#### 2Q — Two-Queue Algorithm
+#### 2Q â€” Two-Queue Algorithm
 
-Maintains three queues: Am (FIFO, for single-access items), A1 (FIFO for recently accessed that do not appear in Am), and Am (LRU for frequently accessed items). An item starts in Am → promoted to A1 on second access → promoted to Am on third access.
+Maintains three queues: Am (FIFO, for single-access items), A1 (FIFO for recently accessed that do not appear in Am), and Am (LRU for frequently accessed items). An item starts in Am â†’ promoted to A1 on second access â†’ promoted to Am on third access.
 
 **Pros:** Resists scan attacks better than LRU (a single scan fills Am, not the main cache). Better hit rate than LRU for many workloads.
 
@@ -231,7 +231,7 @@ class LRUCache:
     def __init__(self, capacity: int):
         self.capacity = capacity
         self.size = 0
-        self.cache = dict()               # key → DLinkedNode
+        self.cache = dict()               # key â†’ DLinkedNode
         self.head = DLinkedNode()          # dummy head (most recently used end)
         self.tail = DLinkedNode()          # dummy tail (least recently used end)
         self.head.next = self.tail
@@ -307,13 +307,13 @@ Each cache entry has a Time-To-Live (TTL). After TTL expires, the entry is autom
 cache.set(key, value, ttl=3600)   # valid for 1 hour
 ```
 
-**Pros:** Simple, automatic, no coordination needed. Bounded staleness — data is never more than TTL old.
+**Pros:** Simple, automatic, no coordination needed. Bounded staleness â€” data is never more than TTL old.
 
 **Cons:** Data can be stale within the TTL window. Short TTL reduces cache effectiveness. Choosing the right TTL is workload-dependent and requires tuning.
 
 #### Event-Driven Invalidation
 
-The database publishes change events (via CDC — Change Data Capture, or explicit application events). A subscriber receives the event and invalidates or updates the cache.
+The database publishes change events (via CDC â€” Change Data Capture, or explicit application events). A subscriber receives the event and invalidates or updates the cache.
 
 ```
 Application update:
@@ -325,7 +325,7 @@ Application update:
 
 **Pros:** Near-instant invalidation (sub-second). TTL can be long or infinite since manual invalidation handles consistency.
 
-**Cons:** Requires a message broker. Eventual consistency — there is a window between DB update and cache invalidation. If the invalidation message is lost, the cache is permanently stale (until TTL fires).
+**Cons:** Requires a message broker. Eventual consistency â€” there is a window between DB update and cache invalidation. If the invalidation message is lost, the cache is permanently stale (until TTL fires).
 
 #### Write Invalidate
 
@@ -340,7 +340,7 @@ def update_user(user_id, name):
     cache.set(f"user:{user_id}", user, ttl=3600)  # update (eager: cache stays hot)
 ```
 
-**Invalidate vs update:** Invalidation is safer — writing the updated value directly to the cache risks writing a stale value if another concurrent writer commits a newer version. Invalidation causes the next read to fetch the latest value. The trade-off is one extra read (the cache miss).
+**Invalidate vs update:** Invalidation is safer â€” writing the updated value directly to the cache risks writing a stale value if another concurrent writer commits a newer version. Invalidation causes the next read to fetch the latest value. The trade-off is one extra read (the cache miss).
 
 ---
 
@@ -350,10 +350,10 @@ When a popular cache key expires, thousands of concurrent requests all see a mis
 
 ```
 Time 0:    key "homepage_feed" expires
-Time 0.01: 500 requests check cache → all miss
+Time 0.01: 500 requests check cache â†’ all miss
 Time 0.02: 500 requests query DB simultaneously
 Time 0.05: Database CPU spikes to 100%, latency degrades
-Time 0.10: Cascading failure — DB connection pool exhausted
+Time 0.10: Cascading failure â€” DB connection pool exhausted
 ```
 
 **Solution 1: Mutex Locking (Cache Stampede Prevention)**
@@ -378,7 +378,7 @@ def get_homepage():
     else:
         # Another request is reloading. Wait and retry.
         sleep(0.05)
-        return get_homepage()   # recursion — will hit cache
+        return get_homepage()   # recursion â€” will hit cache
 ```
 
 **Solution 2: Probabilistic Early Expiration (XFetch Algorithm)**
@@ -403,7 +403,7 @@ if should_refresh(ttl_remaining=60, total_ttl=300, beta=2.0):
     thread_pool.submit(reload_cache_entry, key)
 ```
 
-The parameter β (beta) controls the aggressiveness: β=0 means refresh immediately (always); β=∞ means never refresh early (pure TTL). The XFetch algorithm ensures that the expected number of concurrent recomputations at the TTL boundary is approximately 1, regardless of the number of requesting clients.
+The parameter Î² (beta) controls the aggressiveness: Î²=0 means refresh immediately (always); Î²=âˆž means never refresh early (pure TTL). The XFetch algorithm ensures that the expected number of concurrent recomputations at the TTL boundary is approximately 1, regardless of the number of requesting clients.
 
 ---
 
@@ -424,11 +424,11 @@ Redis Cluster:
 - Keys are mapped to a slot: HASH_SLOT = CRC16(key) mod 16384
 - Each node owns a subset of slots
 - Replication: each master has 1+ replicas (for failover)
-- No central coordinator — gossip protocol for cluster state
+- No central coordinator â€” gossip protocol for cluster state
 
 Memcached:
 - Client-side consistent hashing
-- No replication (Memcached is a cache, not a store — data loss is acceptable)
+- No replication (Memcached is a cache, not a store â€” data loss is acceptable)
 - No persistence
 - Very low overhead (simpler than Redis, faster for simple get/set)
 ```
@@ -470,7 +470,7 @@ Cache-Control: public, max-age=60, must-revalidate    # 1 minute, must check ori
 Cache-Control: private, max-age=0                     # do not cache
 ```
 
-**Edge caching:** CDN nodes cache responses by URL. On a miss (not in edge cache), the edge fetches from the origin. Cache hit serves from the edge — significantly reduced latency.
+**Edge caching:** CDN nodes cache responses by URL. On a miss (not in edge cache), the edge fetches from the origin. Cache hit serves from the edge â€” significantly reduced latency.
 
 **Purge strategies:**
 - **Time-based purge:** Content expires based on Cache-Control headers.
@@ -483,7 +483,7 @@ Cache-Control: private, max-age=0                     # do not cache
 
 ### Real-World Systems
 
-**Facebook's TAO — The Graph Cache at Scale.** Facebook's social graph (users, friends, pages, likes) does not fit traditional caching patterns. TAO is a geographically distributed, always-consistent graph cache layer that sits between application servers and MySQL.
+**Facebook's TAO â€” The Graph Cache at Scale.** Facebook's social graph (users, friends, pages, likes) does not fit traditional caching patterns. TAO is a geographically distributed, always-consistent graph cache layer that sits between application servers and MySQL.
 
 Key properties:
 - **Object association cache:** TAO caches graph associations (friend-of-friend, page-liked-by-user), not just key-value pairs.
@@ -526,7 +526,7 @@ async def get_user_profile(user_id):
     if cached is not None:
         return json.loads(cached)
 
-    # Cache miss — load from database
+    # Cache miss â€” load from database
     profile = await db.fetch_one(
         "SELECT id, name, avatar_url, bio FROM users WHERE id = $1",
         user_id
@@ -544,15 +544,15 @@ async def update_user_profile(user_id, updates):
         "UPDATE users SET name = $1, bio = $2 WHERE id = $3",
         updates['name'], updates['bio'], user_id
     )
-    # Invalidate cache — next read will fetch fresh data
+    # Invalidate cache â€” next read will fetch fresh data
     r.delete(f"user_profile:{user_id}")
 ```
 
 **Expected behavior:**
-- First read for user 42: cache miss → DB query → populate cache → return
-- Second read for user 42 (within 5 min): cache hit → return immediately
-- Update user 42: DB update → cache delete
-- Read after update: cache miss → DB query (fresh data) → repopulate cache
+- First read for user 42: cache miss â†’ DB query â†’ populate cache â†’ return
+- Second read for user 42 (within 5 min): cache hit â†’ return immediately
+- Update user 42: DB update â†’ cache delete
+- Read after update: cache miss â†’ DB query (fresh data) â†’ repopulate cache
 
 ### Example 2: Probabilistic Early Expiration in JavaScript (Node.js)
 
@@ -585,7 +585,7 @@ async function getFeed(userId) {
     return JSON.parse(cached);
   }
 
-  // Cold miss — synchronous reload
+  // Cold miss â€” synchronous reload
   const feed = await db.queryFeed(userId);
   await client.setEx(cacheKey, TTL_SECONDS, JSON.stringify(feed));
   return feed;
@@ -659,14 +659,14 @@ You are designing the caching infrastructure for a real-time news aggregation pl
 The cache must handle:
 - **Global hot articles:** 50 articles that receive 80% of reads (viral content).
 - **Per-user timelines:** Each user's personalized feed, assembled from followed sources.
-- **Category pages:** /technology, /sports, /world — refreshed every 60 seconds.
+- **Category pages:** /technology, /sports, /world â€” refreshed every 60 seconds.
 - **Article content:** Full text of 5M+ articles, stored in S3, indexed in Elasticsearch.
 
 Answer the following:
 
 1. **Design a three-tier cache hierarchy** (CDN tier, distributed caching tier, local caching tier). Specify what data lives at each tier and why.
 
-2. **Choose an eviction policy for each tier.** Justify each choice. For the distributed caching tier, consider that a breaking news event triggers a massive scan of new articles — how does your eviction policy handle this?
+2. **Choose an eviction policy for each tier.** Justify each choice. For the distributed caching tier, consider that a breaking news event triggers a massive scan of new articles â€” how does your eviction policy handle this?
 
 3. **Solve the thundering herd for viral articles.** When a "Article 42" goes viral, 1M users may request it simultaneously. Design a solution using both probabilistic early expiration and a dedicated "viral article" hot cache.
 

@@ -23,7 +23,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Functional Interfaces
 
-![Lambda Expressions and Streams - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/p6-lambdas-streams.png)
+![Lambda Expressions and Streams - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/p6-lambdas-streams.png)
 
 A functional interface is an interface that contains exactly one abstract method. Java 8 introduced the `@FunctionalInterface` annotation to mark such interfaces; the compiler enforces the single-abstract-method constraint. Functional interfaces are the target type for lambda expressions and method references.
 
@@ -38,20 +38,20 @@ public class CoreFunctionalInterfaces {
 
     public static void main(String[] args) {
 
-        // Predicate<T> — boolean test(T t)
+        // Predicate<T> â€” boolean test(T t)
         Predicate<String> isEmpty = s -> s.isEmpty();
         System.out.println("Predicate: " + isEmpty.test(""));       // true
         System.out.println("Predicate: " + isEmpty.test("hello"));  // false
 
-        // Function<T,R> — R apply(T t)
+        // Function<T,R> â€” R apply(T t)
         Function<String, Integer> lengthFn = s -> s.length();
         System.out.println("Function: " + lengthFn.apply("lambda")); // 6
 
-        // Consumer<T> — void accept(T t)
+        // Consumer<T> â€” void accept(T t)
         Consumer<String> printer = s -> System.out.println("Consumer: " + s);
         printer.accept("Hello from Consumer!");
 
-        // Supplier<T> — T get()
+        // Supplier<T> â€” T get()
         Supplier<Double> randomSupplier = () -> Math.random();
         System.out.println("Supplier: " + randomSupplier.get());
 
@@ -78,11 +78,11 @@ public class PrimitiveFunctionalInterfaces {
 
     public static void main(String[] args) {
 
-        // IntPredicate — avoids boxing int -> Integer
+        // IntPredicate â€” avoids boxing int -> Integer
         IntPredicate isEven = n -> n % 2 == 0;
         System.out.println("IntPredicate: " + isEven.test(42));  // true
 
-        // IntFunction<R> — int argument, R result
+        // IntFunction<R> â€” int argument, R result
         IntFunction<String> intToString = i -> "Number: " + i;
         System.out.println(intToString.apply(7));
 
@@ -94,11 +94,11 @@ public class PrimitiveFunctionalInterfaces {
         IntSupplier intSupplier = () -> 42;
         System.out.println("IntSupplier: " + intSupplier.getAsInt());
 
-        // IntUnaryOperator — int -> int
+        // IntUnaryOperator â€” int -> int
         IntUnaryOperator square = n -> n * n;
         System.out.println("IntUnaryOperator: " + square.applyAsInt(12)); // 144
 
-        // IntBinaryOperator — (int, int) -> int
+        // IntBinaryOperator â€” (int, int) -> int
         IntBinaryOperator max = (a, b) -> a > b ? a : b;
         System.out.println("IntBinaryOperator: " + max.applyAsInt(30, 45)); // 45
 
@@ -124,15 +124,15 @@ public class BiFunctionalInterfaces {
 
     public static void main(String[] args) {
 
-        // BiPredicate<T,U> — boolean test(T t, U u)
+        // BiPredicate<T,U> â€” boolean test(T t, U u)
         BiPredicate<String, Integer> lengthCheck = (s, len) -> s.length() == len;
         System.out.println("BiPredicate: " + lengthCheck.test("Java", 4)); // true
 
-        // BiFunction<T,U,R> — R apply(T t, U u)
+        // BiFunction<T,U,R> â€” R apply(T t, U u)
         BiFunction<String, String, String> concat = (a, b) -> a + " " + b;
         System.out.println("BiFunction: " + concat.apply("Hello", "World"));
 
-        // BiConsumer<T,U> — void accept(T t, U u)
+        // BiConsumer<T,U> â€” void accept(T t, U u)
         BiConsumer<String, Double> report = (name, score) ->
             System.out.println(name + " scored " + score);
         report.accept("Alice", 95.5);
@@ -153,7 +153,7 @@ You are not limited to JDK interfaces. Any interface with a single abstract meth
 interface Validator<T> {
     boolean validate(T value);
 
-    // default methods are allowed — they don't count as the SAM
+    // default methods are allowed â€” they don't count as the SAM
     default Validator<T> and(Validator<T> other) {
         return value -> this.validate(value) && other.validate(value);
     }
@@ -208,11 +208,11 @@ public class OperatorInterfaces {
 
     public static void main(String[] args) {
 
-        // UnaryOperator<T> — Function<T,T>
+        // UnaryOperator<T> â€” Function<T,T>
         UnaryOperator<String> reverse = s -> new StringBuilder(s).reverse().toString();
         System.out.println(reverse.apply("lambda")); // adbmal
 
-        // BinaryOperator<T> — BiFunction<T,T,T>
+        // BinaryOperator<T> â€” BiFunction<T,T,T>
         BinaryOperator<Integer> gcd = (a, b) -> {
             while (b != 0) {
                 int temp = b;
@@ -223,7 +223,7 @@ public class OperatorInterfaces {
         };
         System.out.println("GCD: " + gcd.apply(48, 18)); // 6
 
-        // BinaryOperator.minBy / maxBy — use a Comparator
+        // BinaryOperator.minBy / maxBy â€” use a Comparator
         BinaryOperator<String> longest = BinaryOperator.maxBy(
             Comparator.comparingInt(String::length)
         );
@@ -288,10 +288,10 @@ public class ExplicitTyping {
 
     public static void main(String[] args) {
 
-        // All types declared — rarely necessary but legal
+        // All types declared â€” rarely necessary but legal
         BinaryOperator<Integer> sum = (Integer a, Integer b) -> a + b;
 
-        // Mixed: type on one, inferred on another — compile error
+        // Mixed: type on one, inferred on another â€” compile error
         // BinaryOperator<Integer> bad = (Integer a, b) -> a + b; // DOES NOT COMPILE
 
         // When types are explicit, parentheses are always required
@@ -307,7 +307,7 @@ public class ExplicitTyping {
 
 ### 2.3 Variable Capture (Effectively Final)
 
-Lambdas can capture variables from the enclosing scope. Captured variables must be **effectively final** — not reassigned after initialization:
+Lambdas can capture variables from the enclosing scope. Captured variables must be **effectively final** â€” not reassigned after initialization:
 
 ```java
 import java.util.function.*;
@@ -336,7 +336,7 @@ public class VariableCapture {
     private String instanceField = "field-";
 
     void demoFieldCapture() {
-        // instanceField can be reassigned — fields are not subject to
+        // instanceField can be reassigned â€” fields are not subject to
         // effectively-final because they are stored on the heap, not the stack.
         Function<String, String> fn = s -> instanceField + s;
         System.out.println(fn.apply("hello")); // field-hello
@@ -384,7 +384,7 @@ public class ThisReferenceDemo {
 
 ### 2.5 Lambda as Expression, Not Statement
 
-A lambda is an expression — it produces a value. This means you can assign it, pass it as an argument, or return it from a method:
+A lambda is an expression â€” it produces a value. This means you can assign it, pass it as an argument, or return it from a method:
 
 ```java
 import java.util.function.*;
@@ -475,7 +475,7 @@ public class BoundInstanceMethodRef {
         Supplier<String> lambdaForm = () -> greeting.toUpperCase();
         System.out.println(lambdaForm.get());
 
-        // Method reference form — the instance 'greeting' is bound
+        // Method reference form â€” the instance 'greeting' is bound
         Supplier<String> refForm = greeting::toUpperCase;
         System.out.println(refForm.get());
 
@@ -615,16 +615,16 @@ public class MethodRefSummary {
 
     public static void main(String[] args) {
         System.out.println("""
-            ┌──────────────────────────────┬────────────────────────┬──────────────────────────┐
-            │ Kind                         │ Lambda                 │ Method Reference          │
-            ├──────────────────────────────┼────────────────────────┼──────────────────────────┤
-            │ Static method                │ s -> Integer.parseInt  │ Integer::parseInt         │
-            │ Bound instance method        │ () -> greeting.trim()  │ greeting::trim            │
-            │ Unbound instance method      │ s -> s.toUpperCase()   │ String::toUpperCase       │
-            │ Constructor (no-arg)         │ () -> new Person()     │ Person::new               │
-            │ Constructor (one-arg)        │ n -> new Person(n)     │ Person::new               │
-            │ Array constructor            │ n -> new String[n]     │ String[]::new             │
-            └──────────────────────────────┴────────────────────────┴──────────────────────────┘
+            â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+            â”‚ Kind                         â”‚ Lambda                 â”‚ Method Reference          â”‚
+            â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+            â”‚ Static method                â”‚ s -> Integer.parseInt  â”‚ Integer::parseInt         â”‚
+            â”‚ Bound instance method        â”‚ () -> greeting.trim()  â”‚ greeting::trim            â”‚
+            â”‚ Unbound instance method      â”‚ s -> s.toUpperCase()   â”‚ String::toUpperCase       â”‚
+            â”‚ Constructor (no-arg)         â”‚ () -> new Person()     â”‚ Person::new               â”‚
+            â”‚ Constructor (one-arg)        â”‚ n -> new Person(n)     â”‚ Person::new               â”‚
+            â”‚ Array constructor            â”‚ n -> new String[n]     â”‚ String[]::new             â”‚
+            â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
         """);
     }
 }
@@ -636,9 +636,9 @@ public class MethodRefSummary {
 
 A stream pipeline consists of three phases:
 
-1. **Source** — a data source (collection, array, generator function, I/O channel)
-2. **Intermediate operations** — transform the stream (lazy, return a new stream)
-3. **Terminal operation** — produces a result or side effect (eager, consumes the stream)
+1. **Source** â€” a data source (collection, array, generator function, I/O channel)
+2. **Intermediate operations** â€” transform the stream (lazy, return a new stream)
+3. **Terminal operation** â€” produces a result or side effect (eager, consumes the stream)
 
 ### 4.1 Pipeline Structure
 
@@ -759,17 +759,17 @@ public class StatelessVsStateful {
 
         List<Integer> data = Arrays.asList(3, 1, 4, 1, 5, 9, 2, 6, 5, 3);
 
-        // Stateless: filter and map — each element processed independently
+        // Stateless: filter and map â€” each element processed independently
         List<Integer> processed = data.stream()
             .filter(n -> n % 2 == 0)           // stateless
             .map(n -> n * n)                    // stateless
             .collect(Collectors.toList());
         System.out.println("Stateless pipeline: " + processed);
 
-        // Stateful: sorted and distinct — must buffer elements
+        // Stateful: sorted and distinct â€” must buffer elements
         List<Integer> sortedUnique = data.stream()
-            .distinct()                         // stateful — needs to remember seen elements
-            .sorted()                           // stateful — needs to buffer all elements
+            .distinct()                         // stateful â€” needs to remember seen elements
+            .sorted()                           // stateful â€” needs to buffer all elements
             .collect(Collectors.toList());
         System.out.println("With stateful ops: " + sortedUnique);
 
@@ -781,7 +781,7 @@ public class StatelessVsStateful {
 
 ### 4.4 Lazy Evaluation
 
-Intermediate operations are **lazy** — they do nothing until a terminal operation is invoked. This enables:
+Intermediate operations are **lazy** â€” they do nothing until a terminal operation is invoked. This enables:
 
 - Short-circuiting (stop processing once the result is determined)
 - Fusion (combine multiple operations into a single pass)
@@ -835,18 +835,18 @@ public class ShortCircuiting {
             .boxed()
             .collect(Collectors.toList());
 
-        // findFirst — stops at the first match
+        // findFirst â€” stops at the first match
         Optional<Integer> first = numbers.stream()
             .filter(n -> n > 500_000)
             .findFirst();
         System.out.println("First > 500k: " + first.orElse(-1)); // 500001
 
-        // anyMatch — stops at the first match
+        // anyMatch â€” stops at the first match
         boolean hasPrime = numbers.stream()
             .anyMatch(n -> n > 1 && isPrime(n));
         System.out.println("Has prime: " + hasPrime);
 
-        // limit — truncates the stream
+        // limit â€” truncates the stream
         List<Integer> sample = numbers.stream()
             .limit(5)
             .collect(Collectors.toList());
@@ -877,16 +877,16 @@ public class TerminalOperations {
 
         List<String> words = Arrays.asList("apple", "banana", "cherry", "date");
 
-        // forEach — side effect
+        // forEach â€” side effect
         System.out.print("forEach: ");
         words.stream().forEach(w -> System.out.print(w + " "));
         System.out.println();
 
-        // collect — mutable reduction
+        // collect â€” mutable reduction
         Set<String> wordSet = words.stream().collect(Collectors.toSet());
         System.out.println("collect to Set: " + wordSet);
 
-        // toList (Java 16+) — immutable list
+        // toList (Java 16+) â€” immutable list
         List<String> upper = words.stream()
             .map(String::toUpperCase)
             .toList();
@@ -1031,7 +1031,7 @@ public class FlattenNestedStructures {
             .collect(Collectors.toList());
         System.out.println("Flattened matrix: " + flat);
 
-        // Deeply nested — requires multiple flatMaps
+        // Deeply nested â€” requires multiple flatMaps
         List<List<List<String>>> deep = List.of(
             List.of(List.of("a", "b"), List.of("c")),
             List.of(List.of("d", "e"))
@@ -1074,7 +1074,7 @@ public class OptionalFlatMap {
 
     public static void main(String[] args) {
 
-        // Nested Optional — map produces Optional<Optional<R>>
+        // Nested Optional â€” map produces Optional<Optional<R>>
         Optional<String> outer = Optional.of("hello");
         Optional<Optional<Integer>> mapped = outer.map(s -> Optional.of(s.length()));
         System.out.println("map on Optional: " + mapped);        // Optional[Optional[5]]
@@ -1103,7 +1103,7 @@ public class OptionalFlatMap {
 }
 ```
 
-### 5.5 Stream of Optionals — `flatMap(Optional::stream)` (Java 9+)
+### 5.5 Stream of Optionals â€” `flatMap(Optional::stream)` (Java 9+)
 
 ```java
 import java.util.*;
@@ -1298,7 +1298,7 @@ public class DistinctFiltering {
             new Person("Charlie", 30)
         );
 
-        // Distinct by name — use toMap and collect values
+        // Distinct by name â€” use toMap and collect values
         List<Person> uniqueByName = people.stream()
             .collect(Collectors.toMap(
                 Person::getName,
@@ -1325,19 +1325,19 @@ public class TakeWhileDropWhile {
 
         List<Integer> numbers = List.of(2, 4, 6, 7, 8, 10, 11, 12);
 
-        // takeWhile — take elements while the predicate is true, stop when false
+        // takeWhile â€” take elements while the predicate is true, stop when false
         List<Integer> evensThenStop = numbers.stream()
             .takeWhile(n -> n % 2 == 0)
             .collect(Collectors.toList());
         System.out.println("Take evens: " + evensThenStop); // [2, 4, 6]
 
-        // dropWhile — drop elements while the predicate is true, then include the rest
+        // dropWhile â€” drop elements while the predicate is true, then include the rest
         List<Integer> afterFirstOdd = numbers.stream()
             .dropWhile(n -> n % 2 == 0)
             .collect(Collectors.toList());
         System.out.println("Drop evens: " + afterFirstOdd); // [7, 8, 10, 11, 12]
 
-        // Useful on sorted data — operate on prefix/suffix
+        // Useful on sorted data â€” operate on prefix/suffix
         List<String> sorted = List.of("apple", "banana", "cherry", "date");
         List<String> beforeCherry = sorted.stream()
             .takeWhile(s -> !s.equals("cherry"))
@@ -1365,28 +1365,28 @@ public class ReduceWithIdentity {
 
         List<Integer> numbers = List.of(1, 2, 3, 4, 5);
 
-        // Sum — identity value is 0
+        // Sum â€” identity value is 0
         int sum = numbers.stream()
             .reduce(0, (a, b) -> a + b);
         System.out.println("Sum: " + sum); // 15
 
-        // Product — identity value is 1
+        // Product â€” identity value is 1
         int product = numbers.stream()
             .reduce(1, (a, b) -> a * b);
         System.out.println("Product: " + product); // 120
 
-        // String concatenation — identity is ""
+        // String concatenation â€” identity is ""
         List<String> words = List.of("Hello", " ", "World", "!");
         String combined = words.stream()
             .reduce("", (a, b) -> a + b);
         System.out.println("Combined: " + combined);
 
-        // Max — identity is Integer.MIN_VALUE
+        // Max â€” identity is Integer.MIN_VALUE
         int max = numbers.stream()
             .reduce(Integer.MIN_VALUE, Integer::max);
         System.out.println("Max: " + max); // 5
 
-        // Min — identity is Integer.MAX_VALUE
+        // Min â€” identity is Integer.MAX_VALUE
         int min = numbers.stream()
             .reduce(Integer.MAX_VALUE, Integer::min);
         System.out.println("Min: " + min); // 1
@@ -1465,7 +1465,7 @@ public class ReduceThreeArg {
 
 ### 7.4 Mutable Reduction with `collect`
 
-`collect` is specialized for mutable reduction — accumulating results into a mutable container:
+`collect` is specialized for mutable reduction â€” accumulating results into a mutable container:
 
 ```java
 import java.util.*;
@@ -1635,7 +1635,7 @@ public class GroupingDownstream {
             new City("Chicago", "USA", 2_700_000)
         );
 
-        // counting — how many per group
+        // counting â€” how many per group
         Map<String, Long> cityCount = cities.stream()
             .collect(Collectors.groupingBy(
                 City::country,
@@ -1643,7 +1643,7 @@ public class GroupingDownstream {
             ));
         System.out.println("City count per country: " + cityCount);
 
-        // summingInt — total population per country
+        // summingInt â€” total population per country
         Map<String, Integer> totalPop = cities.stream()
             .collect(Collectors.groupingBy(
                 City::country,
@@ -1651,7 +1651,7 @@ public class GroupingDownstream {
             ));
         System.out.println("Total population: " + totalPop);
 
-        // mapping — extract and collect property per group
+        // mapping â€” extract and collect property per group
         Map<String, List<String>> cityNames = cities.stream()
             .collect(Collectors.groupingBy(
                 City::country,
@@ -1748,7 +1748,7 @@ public class ConcurrentGrouping {
             new Task("Alpha", "To Do", 2)
         );
 
-        // groupingByConcurrent — for parallel streams only, unordered
+        // groupingByConcurrent â€” for parallel streams only, unordered
         Map<String, Map<String, List<Task>>> concurrent = tasks
             .parallelStream()
             .collect(Collectors.groupingByConcurrent(
@@ -1764,7 +1764,7 @@ public class ConcurrentGrouping {
             );
         });
 
-        // PartitioningBy — specialized two-group grouping
+        // PartitioningBy â€” specialized two-group grouping
         Map<Boolean, List<Task>> partitioned = tasks.stream()
             .collect(Collectors.partitioningBy(
                 task -> task.points() > 4
@@ -1841,7 +1841,7 @@ public class AdvancedCollectors {
             ));
         System.out.println("Department summaries: " + deptSummary);
 
-        // teeing (Java 12+) — two collectors, one result
+        // teeing (Java 12+) â€” two collectors, one result
         record Stats(double average, double max) {}
 
         Stats employeeStats = employees.stream()
@@ -2047,7 +2047,7 @@ public class OptionalBasics {
         System.out.println("nullable.isEmpty(): " + nullable.isEmpty()); // true (Java 11+)
 
         // Retrieval
-        System.out.println("full.get(): " + full.get()); // value — throws if empty
+        System.out.println("full.get(): " + full.get()); // value â€” throws if empty
 
         // Safe retrieval
         String result = empty.orElse("default");
@@ -2085,16 +2085,16 @@ public class OptionalMapVsFlatMap {
 
     public static void main(String[] args) {
 
-        // map — wraps result in Optional
+        // map â€” wraps result in Optional
         Optional<String> name = Optional.of("Alice");
         Optional<Integer> nameLength = name.map(String::length);
         System.out.println("map result: " + nameLength); // Optional[5]
 
-        // map with method returning Optional — produces nested Optional
+        // map with method returning Optional â€” produces nested Optional
         Optional<Optional<String>> nested = name.map(s -> Optional.of(s.toUpperCase()));
         System.out.println("nested: " + nested); // Optional[Optional[ALICE]]
 
-        // flatMap — flattens nested Optional
+        // flatMap â€” flattens nested Optional
         Optional<String> flat = name.flatMap(s -> Optional.of(s.toUpperCase()));
         System.out.println("flatMap: " + flat); // Optional[ALICE]
 
@@ -2126,7 +2126,7 @@ public class OptionalFilter {
 
         Optional<String> password = Optional.of("securePassword123");
 
-        // filter — keeps value if predicate matches, else empty
+        // filter â€” keeps value if predicate matches, else empty
         Optional<String> valid = password
             .filter(p -> p.length() >= 8)
             .filter(p -> p.matches(".*\\d.*")); // must contain a digit
@@ -2146,7 +2146,7 @@ public class OptionalFilter {
 }
 ```
 
-### 10.4 `or` (Java 9+) — Alternative Optional
+### 10.4 `or` (Java 9+) â€” Alternative Optional
 
 ```java
 import java.util.*;
@@ -2155,7 +2155,7 @@ public class OptionalOr {
 
     public static void main(String[] args) {
 
-        // or — if this Optional is empty, produce another Optional
+        // or â€” if this Optional is empty, produce another Optional
         Optional<String> primary = Optional.empty();
         Optional<String> fallback = Optional.of("fallback value");
 
@@ -2313,7 +2313,7 @@ public class CompletableFutureBasics {
 
     public static void main(String[] args) throws Exception {
 
-        // supplyAsync — runs on ForkJoinPool.commonPool()
+        // supplyAsync â€” runs on ForkJoinPool.commonPool()
         CompletableFuture<String> future = CompletableFuture.supplyAsync(() -> {
             sleep(100);
             return "Hello from async!";
@@ -2353,26 +2353,26 @@ public class FutureCallbacks {
 
         ExecutorService executor = Executors.newFixedThreadPool(4);
 
-        // thenApply — transform result (like map)
+        // thenApply â€” transform result (like map)
         CompletableFuture<String> greeting = CompletableFuture
             .supplyAsync(() -> "World", executor)
             .thenApply(name -> "Hello, " + name)
             .thenApply(String::toUpperCase);
         System.out.println("thenApply: " + greeting.get()); // HELLO, WORLD
 
-        // thenAccept — consume result (like forEach, no return)
+        // thenAccept â€” consume result (like forEach, no return)
         CompletableFuture
             .supplyAsync(() -> 42, executor)
             .thenAccept(n -> System.out.println("Answer: " + n))
             .get(); // wait for completion
 
-        // thenRun — run after completion (no result consumed)
+        // thenRun â€” run after completion (no result consumed)
         CompletableFuture
             .supplyAsync(() -> "data", executor)
             .thenRun(() -> System.out.println("Operation complete"))
             .get();
 
-        // thenCompose — flatMap for futures (avoid nested CompletableFuture)
+        // thenCompose â€” flatMap for futures (avoid nested CompletableFuture)
         CompletableFuture<String> composed = CompletableFuture
             .supplyAsync(() -> "user/123", executor)
             .thenCompose(path -> fetchUserData(path, executor));
@@ -2398,7 +2398,7 @@ public class CombiningFutures {
 
         ExecutorService exec = Executors.newFixedThreadPool(4);
 
-        // thenCombine — combine results of two independent futures
+        // thenCombine â€” combine results of two independent futures
         CompletableFuture<String> future1 = CompletableFuture.supplyAsync(() -> "Hello", exec);
         CompletableFuture<String> future2 = CompletableFuture.supplyAsync(() -> "World", exec);
 
@@ -2406,24 +2406,24 @@ public class CombiningFutures {
             .thenCombine(future2, (a, b) -> a + " " + b);
         System.out.println("Combined: " + combined.get()); // Hello World
 
-        // thenAcceptBoth — consume both results
+        // thenAcceptBoth â€” consume both results
         future1.thenAcceptBoth(future2, (a, b) ->
             System.out.println(a + " and " + b)
         ).get();
 
-        // allOf — wait for all to complete
+        // allOf â€” wait for all to complete
         CompletableFuture<Integer> f1 = CompletableFuture.supplyAsync(() -> 1, exec);
         CompletableFuture<Integer> f2 = CompletableFuture.supplyAsync(() -> 2, exec);
         CompletableFuture<Integer> f3 = CompletableFuture.supplyAsync(() -> 3, exec);
 
         CompletableFuture<Void> allDone = CompletableFuture.allOf(f1, f2, f3);
-        // allOf returns Void — gather results manually
+        // allOf returns Void â€” gather results manually
         CompletableFuture<Integer> sum = allDone.thenApply(v ->
             f1.join() + f2.join() + f3.join()
         );
         System.out.println("Sum: " + sum.get()); // 6
 
-        // anyOf — completes when any completes
+        // anyOf â€” completes when any completes
         CompletableFuture<Object> first = CompletableFuture.anyOf(f1, f2, f3);
         System.out.println("First completed: " + first.get());
 
@@ -2443,7 +2443,7 @@ public class FutureErrorHandling {
 
         ExecutorService exec = Executors.newFixedThreadPool(4);
 
-        // exceptionally — recover from a specific exception
+        // exceptionally â€” recover from a specific exception
         CompletableFuture<Integer> safe = CompletableFuture
             .supplyAsync(() -> {
                 if (Math.random() > 0.5) throw new RuntimeException("Failed");
@@ -2455,7 +2455,7 @@ public class FutureErrorHandling {
             });
         System.out.println("Safe result: " + safe.get());
 
-        // handle — always invoked (success or failure), can transform
+        // handle â€” always invoked (success or failure), can transform
         CompletableFuture<String> handled = CompletableFuture
             .supplyAsync(() -> {
                 return "42"; // try changing to throw new RuntimeException("fail");
@@ -2468,7 +2468,7 @@ public class FutureErrorHandling {
             });
         System.out.println("Handled: " + handled.get());
 
-        // whenComplete — side effect on completion (doesn't transform result)
+        // whenComplete â€” side effect on completion (doesn't transform result)
         CompletableFuture<String> logged = CompletableFuture
             .supplyAsync(() -> "test data", exec)
             .whenComplete((result, ex) -> {
@@ -2496,7 +2496,7 @@ public class FutureTimeouts {
 
         ExecutorService exec = Executors.newFixedThreadPool(4);
 
-        // completeOnTimeout (Java 9+) — fallback value if timeout
+        // completeOnTimeout (Java 9+) â€” fallback value if timeout
         CompletableFuture<String> withTimeout = CompletableFuture
             .supplyAsync(() -> {
                 sleep(200);
@@ -2505,7 +2505,7 @@ public class FutureTimeouts {
             .completeOnTimeout("timeout fallback", 100, TimeUnit.MILLISECONDS);
         System.out.println("Timeout test: " + withTimeout.get()); // timeout fallback
 
-        // orTimeout (Java 9+) — throws TimeoutException
+        // orTimeout (Java 9+) â€” throws TimeoutException
         CompletableFuture<String> throwsTimeout = CompletableFuture
             .supplyAsync(() -> {
                 sleep(200);
@@ -2995,29 +2995,29 @@ public class DashboardService {
 
 This chapter covered the complete landscape of Java functional programming:
 
-**Functional Interfaces** — The six core interfaces (`Predicate`, `Function`, `Consumer`, `Supplier`, `UnaryOperator`, `BinaryOperator`) and their primitive (`IntPredicate`, `IntFunction`, etc.) and bi-argument variants provide a reusable vocabulary for lambda expressions. Custom functional interfaces annotated with `@FunctionalInterface` let you extend this vocabulary.
+**Functional Interfaces** â€” The six core interfaces (`Predicate`, `Function`, `Consumer`, `Supplier`, `UnaryOperator`, `BinaryOperator`) and their primitive (`IntPredicate`, `IntFunction`, etc.) and bi-argument variants provide a reusable vocabulary for lambda expressions. Custom functional interfaces annotated with `@FunctionalInterface` let you extend this vocabulary.
 
-**Lambda Syntax** — Five syntactic forms cover every case from single-expression lambdas to multi-statement block bodies. Type inference reduces verbosity while the effectively-final capture rule ensures thread safety. The `this` reference in a lambda refers to the enclosing instance, not the lambda itself — a critical distinction from anonymous classes.
+**Lambda Syntax** â€” Five syntactic forms cover every case from single-expression lambdas to multi-statement block bodies. Type inference reduces verbosity while the effectively-final capture rule ensures thread safety. The `this` reference in a lambda refers to the enclosing instance, not the lambda itself â€” a critical distinction from anonymous classes.
 
-**Method References** — Four kinds (`Class::staticMethod`, `instance::method`, `Class::instanceMethod`, `Class::new`) provide concise alternatives when a lambda merely delegates to an existing method.
+**Method References** â€” Four kinds (`Class::staticMethod`, `instance::method`, `Class::instanceMethod`, `Class::new`) provide concise alternatives when a lambda merely delegates to an existing method.
 
-**Stream Pipeline** — The three-phase architecture (source, intermediate ops, terminal op) with lazy evaluation enables efficient bulk operations. Stateful operations like `sorted` and `distinct` introduce ordering constraints that affect parallel performance. Short-circuiting operations (`findFirst`, `anyMatch`, `limit`) can terminate early for efficiency.
+**Stream Pipeline** â€” The three-phase architecture (source, intermediate ops, terminal op) with lazy evaluation enables efficient bulk operations. Stateful operations like `sorted` and `distinct` introduce ordering constraints that affect parallel performance. Short-circuiting operations (`findFirst`, `anyMatch`, `limit`) can terminate early for efficiency.
 
-**Map/FlatMap** — `map` performs one-to-one transformation; `flatMap` performs one-to-many expansion with flattening. Both extend to `Optional` — `map` produces `Optional<Optional<R>>` while `flatMap` eliminates nesting. Java 9's `Optional::stream` bridges the gap between `Optional` and `Stream` of optionals.
+**Map/FlatMap** â€” `map` performs one-to-one transformation; `flatMap` performs one-to-many expansion with flattening. Both extend to `Optional` â€” `map` produces `Optional<Optional<R>>` while `flatMap` eliminates nesting. Java 9's `Optional::stream` bridges the gap between `Optional` and `Stream` of optionals.
 
-**Filter/Predicate** — `Predicate.negate()`, `.and()`, `.or()` enable declarative composition of filtering logic. Java 9's `takeWhile`/`dropWhile` process sorted stream prefixes efficiently.
+**Filter/Predicate** â€” `Predicate.negate()`, `.and()`, `.or()` enable declarative composition of filtering logic. Java 9's `takeWhile`/`dropWhile` process sorted stream prefixes efficiently.
 
-**Reduce** — Three overloads serve different scenarios: identity + accumulator for safe reduction with a default, no-identity for potentially empty streams (returns `Optional`), and three-argument reduce for parallel-friendly reduction that changes the result type. Mutable reduction with `collect` handles accumulation into mutable containers.
+**Reduce** â€” Three overloads serve different scenarios: identity + accumulator for safe reduction with a default, no-identity for potentially empty streams (returns `Optional`), and three-argument reduce for parallel-friendly reduction that changes the result type. Mutable reduction with `collect` handles accumulation into mutable containers.
 
-**GroupingBy** — `Collectors.groupingBy` creates maps from streams. Multi-level grouping nests collectors. Downstream collectors (`counting`, `summingInt`, `mapping`, `filtering`, `averagingDouble`) compute per-group aggregates. `groupingByConcurrent` enables parallel-friendly grouping.
+**GroupingBy** â€” `Collectors.groupingBy` creates maps from streams. Multi-level grouping nests collectors. Downstream collectors (`counting`, `summingInt`, `mapping`, `filtering`, `averagingDouble`) compute per-group aggregates. `groupingByConcurrent` enables parallel-friendly grouping.
 
-**Function Composition** — `andThen` and `compose` chain functions left-to-right and right-to-left respectively. Currying simulation via nested lambda returns enables partial application.
+**Function Composition** â€” `andThen` and `compose` chain functions left-to-right and right-to-left respectively. Currying simulation via nested lambda returns enables partial application.
 
-**Optional** — `map` transforms, `flatMap` chains optional-producing operations, `filter` conditionally retains values, `or` (Java 9+) provides alternative optionals, and `stream()` converts an optional into a zero-or-one-element stream. Best practices include preferring `orElseGet` over `orElse` for expensive defaults and avoiding `Optional` as field types or method parameters.
+**Optional** â€” `map` transforms, `flatMap` chains optional-producing operations, `filter` conditionally retains values, `or` (Java 9+) provides alternative optionals, and `stream()` converts an optional into a zero-or-one-element stream. Best practices include preferring `orElseGet` over `orElse` for expensive defaults and avoiding `Optional` as field types or method parameters.
 
-**CompletableFuture** — `supplyAsync` launches async tasks. `thenApply`, `thenAccept`, and `thenRun` chain dependent operations. `thenCompose` avoids nested futures. `thenCombine` merges two independent futures. `allOf` and `anyOf` coordinate multiple futures. `exceptionally` and `handle` provide error recovery. `completeOnTimeout` and `orTimeout` (Java 9+) control timeout behavior.
+**CompletableFuture** â€” `supplyAsync` launches async tasks. `thenApply`, `thenAccept`, and `thenRun` chain dependent operations. `thenCompose` avoids nested futures. `thenCombine` merges two independent futures. `allOf` and `anyOf` coordinate multiple futures. `exceptionally` and `handle` provide error recovery. `completeOnTimeout` and `orTimeout` (Java 9+) control timeout behavior.
 
-**Spring Boot Patterns** — `RouterFunction` replaces annotations with lambda-based route definitions. `@Bean` factory methods return functional interface implementations. `@Async` methods returning `CompletableFuture<T>` compose non-blocking service layers.
+**Spring Boot Patterns** â€” `RouterFunction` replaces annotations with lambda-based route definitions. `@Bean` factory methods return functional interface implementations. `@Async` methods returning `CompletableFuture<T>` compose non-blocking service layers.
 
 ---
 
@@ -3031,7 +3031,7 @@ This chapter covered the complete landscape of Java functional programming:
 
 3. What is the "effectively final" rule for variable capture in lambdas? Can a lambda modify a captured local variable? Can it modify a captured field?
 
-4. Describe the three-argument `Stream.reduce(U identity, BiFunction<U,? super T,U> accumulator, BinaryOperator<U> combiner)` — when is the combiner used, and why is it needed?
+4. Describe the three-argument `Stream.reduce(U identity, BiFunction<U,? super T,U> accumulator, BinaryOperator<U> combiner)` â€” when is the combiner used, and why is it needed?
 
 5. What is lazy evaluation in the context of stream pipelines? How does it enable short-circuiting and operation fusion?
 

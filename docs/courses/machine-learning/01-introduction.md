@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Machine Learning
+# Chapter 1: Introduction to Machine Learning
 
 ---
 
@@ -25,7 +25,7 @@ Machine learning algorithms are typically grouped into three main categories bas
 2. **Unsupervised Learning**: The algorithm is trained on unlabeled data. The goal is to find hidden structures or patterns in the input data. Examples include clustering (grouping similar points) and dimensionality reduction.
 3. **Reinforcement Learning**: An agent learns to make decisions by performing actions in an environment to maximize some notion of cumulative reward. It learns through trial and error.
 
-![Types of Machine Learning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/machine-learning/ch01-ml-types.png)
+![Types of Machine Learning](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/machine-learning/ch01-ml-types.png)
 
 ### The Machine Learning Pipeline
 A typical machine learning project follows a structured workflow:
@@ -37,7 +37,7 @@ A typical machine learning project follows a structured workflow:
 6. **Evaluation**: Assessing the model's performance on unseen data using specific metrics.
 7. **Deployment**: Integrating the model into a production environment to make real-world predictions.
 
-![ML Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/machine-learning/ch01-ml-pipeline.png)
+![ML Pipeline](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/machine-learning/ch01-ml-pipeline.png)
 
 ---
 

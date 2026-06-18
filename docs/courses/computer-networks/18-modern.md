@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Modern Networking](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch18-modern-networking.png)
+![Modern Networking](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch18-modern-networking.png)
 
 1. Describe the QUIC transport protocol and its advantages over TCP.
 2. Explain HTTP/3 architecture and its relationship to QUIC.
@@ -29,7 +29,7 @@ QUIC (Quick UDP Internet Connections, RFC 9000) is a transport protocol original
 ### 18.1.2 QUIC Packet Format
 
 ```
-| Connection ID (0–20 B) | Version (4 B) | Packet Number (1–4 B) | Encrypted Payload |
+| Connection ID (0â€“20 B) | Version (4 B) | Packet Number (1â€“4 B) | Encrypted Payload |
 ```
 
 Long-header packets establish connections; short-header packets carry data. The connection ID may be zero-length for single-path connections to reduce overhead.
@@ -75,7 +75,7 @@ The 5G core (5GC, 3GPP Release 15/16) uses a Service-Based Architecture (SBA). N
 
 ## 18.4 IoT Networking
 
-The Internet of Things (IoT) connects billions of constrained devices — sensors, actuators, and controllers — with limited power, memory, and processing capability.
+The Internet of Things (IoT) connects billions of constrained devices â€” sensors, actuators, and controllers â€” with limited power, memory, and processing capability.
 
 ### 18.4.1 MQTT
 
@@ -84,7 +84,7 @@ MQTT (Message Queuing Telemetry Transport, OASIS standard) is a publish-subscrib
 **QoS levels:**
 - QoS 0 (At most once): fire and forget. No acknowledgment.
 - QoS 1 (At least once): PUBLISH sent until PUBACK received; may duplicate.
-- QoS 2 (Exactly once): four-way handshake (PUBLISH → PUBREC → PUBREL → PUBCOMP) for exactly-once delivery.
+- QoS 2 (Exactly once): four-way handshake (PUBLISH â†’ PUBREC â†’ PUBREL â†’ PUBCOMP) for exactly-once delivery.
 
 **Last Will and Testament (LWT).** A client registers a will message during connection. If the client disconnects unexpectedly, the broker publishes the will message to specified subscribers.
 
@@ -123,9 +123,9 @@ Edge computing processes data near its source rather than in a centralized data 
 
 **Edge tiers:**
 - **Device edge:** computation on the endpoint (IoT sensor, smartphone).
-- **Local edge:** local gateway or micro data center (within 1–5 ms).
-- **Regional edge:** small data center (5–20 ms).
-- **Central cloud:** full data center (20–100 ms).
+- **Local edge:** local gateway or micro data center (within 1â€“5 ms).
+- **Regional edge:** small data center (5â€“20 ms).
+- **Central cloud:** full data center (20â€“100 ms).
 
 **Use cases:** industrial automation (sub-millisecond control loops), autonomous vehicles (real-time obstacle detection), augmented reality (sub-20 ms pose tracking), video analytics (local processing, cloud aggregation).
 
@@ -158,6 +158,89 @@ Network automation replaces manual configuration with programmatic management.
 **CI/CD for networking.** Network changes are tested in virtualized environments (containerlab, EVE-NG) before production deployment. Automated tests verify reachability, latency, and policy compliance.
 
 **Closed-loop automation.** Monitoring systems detect issues and trigger automated remediation. Examples: auto-scaling load balancer capacity, rerouting traffic around congested links, restarting failed services.
+
+## ðŸ’¡ Pro Tips
+
+- **QUIC 0-RTT is powerful but risky**: 0-RTT data is vulnerable to replay attacks. Use single-use tokens, timestamp validation, or idempotent semantics for 0-RTT requests. Never allow 0-RTT for non-idempotent operations like payment submissions.
+- **MQTT QoS 2 is expensive**: Exactly-once delivery uses a 4-way handshake per message. For sensor telemetry where occasional duplicates are acceptable, use QoS 0 (fire-and-forget) or QoS 1 (at-least-once with dedup).
+- **LoRaWAN ADR is essential at scale**: Without Adaptive Data Rate, all devices use the most robust (slowest) spreading factor, limiting network capacity. Enable ADR for stationary devices and optimize SF allocation for gateways.
+- **Intent-based networking â‰  IaC**: IBN translates business intent into policies and verifies them. IaC (Terraform, Ansible) automates device configuration. They complement each other: IBN generates the design; IaC deploys it.
+
+## One-Sentence Takeaways
+
+- QUIC combines transport + TLS handshake (1 RTT new, 0 RTT resumed) with independent multiplexed streams.
+- HTTP/3 maps HTTP semantics onto QUIC streams, eliminating TCP head-of-line blocking.
+- 5G core uses a service-based architecture with independent network functions communicating via HTTP/2.
+- MQTT uses publish-subscribe over TCP; CoAP uses REST-like request-response over UDP.
+- LoRaWAN provides long-range low-power IoT connectivity via unlicensed sub-GHz radio.
+- Edge computing processes data near the source, reducing latency and bandwidth consumption.
+
+## Concept Comparison Table
+
+| Protocol | Transport | Model | QoS Levels | Power | Best For |
+|----------|-----------|-------|------------|-------|----------|
+| MQTT | TCP | Pub-sub | 0, 1, 2 | Medium | Sensors, actuators, messaging |
+| CoAP | UDP | Request-response (REST) | CON, NON | Low | Constrained devices |
+| LoRaWAN | LoRa radio | Star (GW â†’ NS) | Confirmed/Unconfirmed | Very low | Long range, sparse data |
+| HTTP/3 | QUIC (UDP) | Request-response | â€” | High | Web browsing |
+| gRPC | HTTP/2 (TCP) | RPC + streaming | â€” | High | Microservices |
+
+## Quick Reference: IoT Protocol Comparison
+
+| Feature | MQTT | CoAP | LoRaWAN | HTTP/3 |
+|---------|------|------|---------|--------|
+| Transport | TCP | UDP | LoRa PHY | QUIC (UDP) |
+| Range | Network-dependent | Network-dependent | 5â€“15 km | Network-dependent |
+| Power | Moderate | Low | Ultra-low | High |
+| Data rate | Unlimited | Unlimited | 0.3â€“50 kbps | Unlimited |
+| Encryption | TLS | DTLS | AES-128 | Built-in (TLS 1.3) |
+| Standard | OASIS | IETF | LoRa Alliance | IETF |
+| Use case | Sensor data | Smart home, constrained | Agriculture, metering | Web |
+
+## Cross-Application Matrix
+
+| Domain | Preferred Protocol | Why |
+|--------|-------------------|-----|
+| Smart agriculture (soil sensors) | LoRaWAN | Long range (15 km), low power, sparse data |
+| Home automation (lights, locks) | CoAP over Thread | Low power, low latency, mesh |
+| Industrial sensor telemetry | MQTT QoS 1 | Reliable pub-sub with TCP |
+| Video streaming | HTTP/3 over QUIC | Low latency, loss resilience |
+| Auto-pilot data (5G) | 5G uRLLC slice | 1 ms latency, 99.999% reliability |
+| Edge ML inference | HTTP/2 gRPC streaming | Binary protobuf, low overhead |
+
+## Chapter Quiz
+
+1. **How many RTTs does a new QUIC connection require?**
+   - a) 0
+   - b) 1 âœ“
+   - c) 2
+   - d) 3
+
+2. **What problem does QUIC solve that TCP cannot?**
+   - a) Encryption
+   - b) Head-of-line blocking across streams âœ“
+   - c) Congestion control
+   - d) Flow control
+
+3. **Which MQTT QoS level uses a 4-way handshake?**
+   - a) QoS 0
+   - b) QoS 1
+   - c) QoS 2 âœ“
+   - d) All of the above
+
+4. **Which 5G core function handles session management?**
+   - a) AMF
+   - b) SMF âœ“
+   - c) UPF
+   - d) PCF
+
+5. **LoRaWAN Class A devices:**
+   - a) Continuously listen
+   - b) Transmit then open two receive windows âœ“
+   - c) Receive scheduled slots
+   - d) Use mesh routing
+
+**Answers:** 1-b, 2-b, 3-c, 4-b, 5-b
 
 ## Summary
 

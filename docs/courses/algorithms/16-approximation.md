@@ -1,6 +1,6 @@
 # Chapter 16: Approximation Algorithms
 
-> **Prerequisites:** [Chapter 15: NP-Completeness](./15-np-completeness.md) — Understanding of NP-hard problems and reductions | **Next:** [Chapter 17: Randomized Algorithms](./17-randomized.md) — From deterministic approximation to probabilistic methods
+> **Prerequisites:** [Chapter 15: NP-Completeness](./15-np-completeness.md) â€” Understanding of NP-hard problems and reductions | **Next:** [Chapter 17: Randomized Algorithms](./17-randomized.md) â€” From deterministic approximation to probabilistic methods
 
 ## Learning Objectives
 
@@ -18,7 +18,7 @@ By the end of this chapter, students will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Approximation Ratio | ALG / OPT ≤ c (for minimization) | Measures how close an approximation gets to optimal |
+| Approximation Ratio | ALG / OPT â‰¤ c (for minimization) | Measures how close an approximation gets to optimal |
 | Vertex Cover | Pick both endpoints of uncovered edge | Simple 2-approximation; greedy fails worse |
 | TSP (Metric) | MST-based tour + shortcutting | 2-approximation; triangle inequality is essential |
 | Set Cover | Pick set with best cost-per-new-element | O(log n)-approximation via greedy |
@@ -41,7 +41,7 @@ flowchart LR
 
 ## Theory
 
-![Approximation Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch16-approximation.png)
+![Approximation Algorithms Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch16-approximation.png)
 
 ### 16.1 Approximation Ratio
 
@@ -325,12 +325,12 @@ B) The triangle inequality ensures that skipping repeated vertices (shortcutting
 
 - A) 2
 - B) log_2 n
-- C) H_n ≈ ln n
+- C) H_n â‰ˆ ln n
 - D) 1.5
 
 <details>
 <summary>Answer</summary>
-C) The greedy set cover achieves H_n ≈ ln n + γ, which is optimal up to constant factors unless P = NP.
+C) The greedy set cover achieves H_n â‰ˆ ln n + Î³, which is optimal up to constant factors unless P = NP.
 </details>
 
 ### Review Questions

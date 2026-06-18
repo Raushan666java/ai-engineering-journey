@@ -12,13 +12,13 @@
 
 ## Theory
 
-![SQL: DDL, DML, Joins and Aggregation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch02-sql.png)
+![SQL: DDL, DML, Joins and Aggregation](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch02-sql.png)
 
 ### 4.1 Overview of SQL
 
 SQL (Structured Query Language) is the standard language for relational database management. It was developed at IBM in the 1970s and standardized by ANSI and ISO. Every major relational DBMS (PostgreSQL, MySQL, Oracle, SQL Server, SQLite) supports SQL, though each has proprietary extensions.
 
-SQL is a **declarative language** — you specify WHAT you want, not HOW to get it. The DBMS query optimizer determines the execution plan.
+SQL is a **declarative language** â€” you specify WHAT you want, not HOW to get it. The DBMS query optimizer determines the execution plan.
 
 **Language Categories:**
 
@@ -472,6 +472,122 @@ DELETE FROM order_items WHERE order_id IN (SELECT order_id FROM orders WHERE cus
 DELETE FROM orders WHERE customer_id = 1;
 DELETE FROM customers WHERE customer_id = 1;
 ```
+
+## ðŸ’¡ Pro Tips
+
+1. **Always list columns explicitly in INSERT statements** â€” `INSERT INTO t VALUES (...)` breaks when the schema changes; `INSERT INTO t (col1, col2) VALUES (...)` is robust.
+2. **Always use WHERE with UPDATE and DELETE** â€” a missing WHERE clause modifies or removes ALL rows in the table. In production, first write the SELECT to verify your condition.
+3. **Prefer VARCHAR with a reasonable max** over TEXT or huge VARCHAR limits â€” PostgreSQL and others store short strings inline, which is faster.
+4. **Composite primary keys are powerful but make JOINs verbose** â€” consider using a surrogate integer PK and a UNIQUE constraint on the natural composite key.
+5. **Test your constraints with intentional bad data** â€” INSERT a row that violates each constraint to confirm the error messages are clear and the behavior is correct.
+
+## One-Sentence Takeaways
+
+- **4.1:** SQL is a declarative language with four sub-language categories: DDL, DML, DCL, and TCL.
+- **4.2:** Choosing the right data types â€” INTEGER, VARCHAR, DECIMAL, DATE, BOOLEAN â€” balances storage efficiency with query performance.
+- **4.3:** DDL commands (CREATE, ALTER, DROP, TRUNCATE) define and modify database structures.
+- **4.4:** Constraints â€” PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK, NOT NULL â€” enforce data integrity at the database level.
+- **4.5:** DML commands (INSERT, SELECT, UPDATE, DELETE) provide complete data manipulation capabilities.
+- **4.6:** DCL commands (GRANT, REVOKE) control access at the user and role level.
+- **4.7:** Schemas organize database objects into logical namespaces for better management.
+
+## Concept Comparison Table
+
+| SQL Category | Commands | What It Does |
+|-------------|----------|-------------|
+| **DDL** | CREATE, ALTER, DROP, TRUNCATE | Defines and modifies database structure |
+| **DML** | SELECT, INSERT, UPDATE, DELETE | Manipulates data within tables |
+| **DCL** | GRANT, REVOKE | Controls user access and permissions |
+| **TCL** | BEGIN, COMMIT, ROLLBACK, SAVEPOINT | Manages transactions |
+
+| Constraint Type | Purpose | Example |
+|----------------|---------|---------|
+| **NOT NULL** | Column must have a value | `name VARCHAR(100) NOT NULL` |
+| **UNIQUE** | All values in column(s) must be distinct | `email VARCHAR(255) UNIQUE` |
+| **PRIMARY KEY** | NOT NULL + UNIQUE; identifies each row | `id INTEGER PRIMARY KEY` |
+| **FOREIGN KEY** | Values must exist in referenced table | `dept_id INTEGER REFERENCES dept(id)` |
+| **CHECK** | Values must satisfy a boolean expression | `CHECK (salary > 0)` |
+
+## Quick Reference
+
+| DDL Statement | Syntax Pattern | Use Case |
+|-------------|---------------|----------|
+| CREATE TABLE | `CREATE TABLE t (col type constraint, ...)` | New entity |
+| ALTER TABLE ADD | `ALTER TABLE t ADD COLUMN c type` | Schema evolution |
+| ALTER TABLE DROP | `ALTER TABLE t DROP COLUMN c` | Remove unused column |
+| ALTER TABLE RENAME | `ALTER TABLE t RENAME COLUMN a TO b` | Rename |
+| DROP TABLE | `DROP TABLE t [CASCADE]` | Remove permanently |
+| TRUNCATE | `TRUNCATE TABLE t` | Remove data, keep structure |
+
+| DML Statement | Caution |
+|-------------|---------|
+| SELECT | Use WHERE to avoid full table scans on large tables |
+| INSERT | Specify column list for robustness |
+| UPDATE | Always include WHERE; test with SELECT first |
+| DELETE | Always include WHERE; knows no undo in most systems |
+
+## Cross-Application Matrix
+
+| SQL Feature | Applied In | Why It Matters |
+|------------|-----------|----------------|
+| **FOREIGN KEY + ON DELETE CASCADE** | Order management, content CMS | Automatically cleans up child records when parent is removed |
+| **CHECK Constraints** | Financial systems, healthcare | Enforces business rules (positive prices, valid date ranges) at DB level |
+| **GRANT/REVOKE** | Multi-tenant apps, government systems | Implements row/table-level security for different user roles |
+| **DISTINCT + ORDER BY** | Reporting dashboards | Clean duplicate-free sorted data for business reports |
+| **LIKE / ILIKE** | Search functionality | Pattern matching for product lookup, name search |
+| **Composite Keys** | Junction tables (M:N) | Enforces uniqueness of combinations (student+course+semester) |
+
+## Chapter Quiz
+
+1. Which SQL statement belongs to DDL?
+   a) SELECT
+   b) INSERT
+   c) ALTER TABLE
+   d) GRANT
+
+2. The PRIMARY KEY constraint is equivalent to:
+   a) UNIQUE
+   b) NOT NULL + UNIQUE
+   c) NOT NULL + FOREIGN KEY
+   d) CHECK + UNIQUE
+
+3. What happens when you DELETE FROM students without a WHERE clause?
+   a) An error is returned
+   b) All rows in the students table are deleted
+   c) Only the first row is deleted
+   d) The table structure is removed
+
+4. Which referential action automatically deletes child rows when a parent is deleted?
+   a) ON DELETE RESTRICT
+   b) ON DELETE SET NULL
+   c) ON DELETE CASCADE
+   d) ON DELETE NO ACTION
+
+5. The purpose of a CHECK constraint is to:
+   a) Ensure a column is unique
+   b) Verify values satisfy a boolean expression
+   c) Create an index
+   d) Define a foreign key
+
+6. Which SQL command removes all rows but preserves the table structure?
+   a) DROP TABLE
+   b) DELETE FROM
+   c) TRUNCATE TABLE
+   d) ALTER TABLE
+
+7. A composite primary key is:
+   a) A key made of two or more columns
+   b) Two separate primary keys
+   c) A key that references another table
+   d) A key with a default value
+
+8. The UPDATE statement without a WHERE clause:
+   a) Updates only the first row
+   b) Updates all rows in the table
+   c) Returns an error
+   d) Updates rows with NULL values only
+
+**Answers:** 1-c, 2-b, 3-b, 4-c, 5-b, 6-c, 7-a, 8-b
 
 ## Summary
 

@@ -1,4 +1,4 @@
-﻿# Chapter 33: Customer Service & Support Agents
+# Chapter 33: Customer Service & Support Agents
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![Customer Service Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/33-customer-service.png)
+![Customer Service Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/33-customer-service.png)
 
 
 ### 33.1 Customer Service Data Models

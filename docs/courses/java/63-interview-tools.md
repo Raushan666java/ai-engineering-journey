@@ -1,10 +1,10 @@
-﻿# 63. Tools & DevOps — Interview Q&A
+# 63. Tools & DevOps — Interview Q&A
 
 This chapter covers the essential tools and DevOps practices every Java backend developer needs to know: build tools, containers, orchestration, CI/CD, monitoring, logging, version control, code review, and database migrations.
 
 ---
 
-![DevOps Tools Interview Topics - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/63-interview-tools.png)
+![DevOps Tools Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/63-interview-tools.png)
 
 ### Q1: What is Maven and what problem does it solve?
 

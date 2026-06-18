@@ -1,6 +1,6 @@
 # Chapter 3: Comparison-Based Sorting
 
-> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Asymptotic notation and recurrence analysis | **Next:** [Chapter 4: Linear-Time Sorting](./04-sorting-linear.md) — Breaking the Ω(n log n) barrier
+> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) â€” Asymptotic notation and recurrence analysis | **Next:** [Chapter 4: Linear-Time Sorting](./04-sorting-linear.md) â€” Breaking the Î©(n log n) barrier
 
 ## Learning Objectives
 
@@ -17,16 +17,16 @@ By the end of this chapter, students will be able to:
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Lower Bound | Decision trees prove Ω(n log n) comparisons needed | No comparison sort can beat n log n worst-case |
+| Lower Bound | Decision trees prove Î©(n log n) comparisons needed | No comparison sort can beat n log n worst-case |
 | Merge Sort | Divide, sort halves, merge in linear time | Stable, guaranteed O(n log n), needs O(n) extra space |
-| Quick Sort | Partition around pivot, recurse | Fastest in practice, O(n²) worst-case mitigated by randomization |
+| Quick Sort | Partition around pivot, recurse | Fastest in practice, O(nÂ²) worst-case mitigated by randomization |
 | Heap Sort | Build max-heap, extract repeatedly | In-place O(n log n), not stable, excellent for embedded systems |
 
 ### Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Lower Bound Ωn log n] --> B[Merge Sort]
+    A[Lower Bound Î©n log n] --> B[Merge Sort]
     A --> C[Quick Sort]
     A --> D[Heap Sort]
     B --> E[Stable, O(n) space]
@@ -39,7 +39,7 @@ flowchart LR
 
 ## Theory
 
-![Comparison Sort Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch03-sorting-nlogn.png)
+![Comparison Sort Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch03-sorting-nlogn.png)
 
 ### 3.1 Lower Bound for Comparison Sorting
 
@@ -51,9 +51,9 @@ flowchart LR
 2^h \ge n! \implies h \ge \lg(n!) \ge \lg((n/2)^{n/2}) = (n/2)\lg(n/2) = \Omega(n \log n).
 \]
 
-> **Remember:** The Ω(n log n) lower bound applies ONLY to comparison-based sorting. Non-comparison sorts (counting, radix, bucket) can beat it by exploiting key structure.
+> **Remember:** The Î©(n log n) lower bound applies ONLY to comparison-based sorting. Non-comparison sorts (counting, radix, bucket) can beat it by exploiting key structure.
 
-**One-Sentence Takeaway:** The decision tree model proves that any comparison-based sorting algorithm must make at least Ω(n log n) comparisons in the worst case.
+**One-Sentence Takeaway:** The decision tree model proves that any comparison-based sorting algorithm must make at least Î©(n log n) comparisons in the worst case.
 
 ### 3.2 Merge Sort
 
@@ -136,11 +136,11 @@ PartitionHoare(A, low, high):
 2. **Random pivot:** Expected \( O(n \log n) \) on any input.
 3. **Median-of-three:** Choose median of first, middle, and last elements.
 
-> **Pro Tip:** Always randomize pivot selection in production quick sort. Using the first/last element makes sorted or reverse-sorted inputs hit the O(n²) worst case trivially.
+> **Pro Tip:** Always randomize pivot selection in production quick sort. Using the first/last element makes sorted or reverse-sorted inputs hit the O(nÂ²) worst case trivially.
 >
-> **Warning:** Quick sort is NOT stable — equal elements may change relative order. Use merge sort if stability is required.
+> **Warning:** Quick sort is NOT stable â€” equal elements may change relative order. Use merge sort if stability is required.
 
-**One-Sentence Takeaway:** Quick sort's O(n log n) average case and in-place partition make it the fastest general-purpose sort in practice, though randomized pivot selection is essential to avoid O(n²).
+**One-Sentence Takeaway:** Quick sort's O(n log n) average case and in-place partition make it the fastest general-purpose sort in practice, though randomized pivot selection is essential to avoid O(nÂ²).
 
 ### 3.4 Heap Sort
 
@@ -183,7 +183,7 @@ SiftDown(A, i, last):
 
 > **Pro Tip:** Heap sort is ideal when memory is tight (embedded systems, kernel code) since it uses O(1) extra space. Its O(n log n) worst-case guarantee makes it suitable for real-time systems.
 >
-> **Remember:** The heapify phase runs in O(n), not O(n log n) — a common misconception. Only the extraction phase is O(n log n).
+> **Remember:** The heapify phase runs in O(n), not O(n log n) â€” a common misconception. Only the extraction phase is O(n log n).
 
 **One-Sentence Takeaway:** Heap sort offers guaranteed O(n log n) in-place sorting with O(1) extra space, making it the safe choice for memory-constrained environments.
 
@@ -272,7 +272,7 @@ Final sorted array: [1, 3, 4, 5, 10].
 | Merge Sort | Divide, sort, merge | Stable, O(n) space | External sorting, stable multi-key sort |
 | Quick Sort | Partition + recurse | In-place, not stable | General-purpose, fastest in practice |
 | Heap Sort | Heapify + extract | O(1) space, not stable | Embedded, real-time, memory-constrained |
-| Ω(n log n) Bound | Decision tree limit | Comparison-only | Proves optimality, non-comparison exceptions |
+| Î©(n log n) Bound | Decision tree limit | Comparison-only | Proves optimality, non-comparison exceptions |
 | Decision Tree | Model of all comparison paths | Height = worst-case comparisons | Lower bound proofs |
 
 ### Quick Reference
@@ -284,16 +284,16 @@ Final sorted array: [1, 3, 4, 5, 10].
 | **Guaranteed O(n log n)** | Merge sort, heap sort |
 | **Fastest in Practice** | Quick sort (with randomized pivot) |
 | **Space Efficient** | Heap sort (O(1)), quick sort (O(log n)) |
-| **Common Pitfall** | Forgetting that quick sort reaches O(n²) without randomization |
+| **Common Pitfall** | Forgetting that quick sort reaches O(nÂ²) without randomization |
 
 ### Cross-Application Matrix
 
 | Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
 |-----------|---------------|----------------------|---------------|-------------------|
-| Merge Sort | Frequently — merge K sorted lists, inversion count | Used in divide-and-conquer problems | External sort, distributed sort (MapReduce) | Optimal comparison sort proof |
+| Merge Sort | Frequently â€” merge K sorted lists, inversion count | Used in divide-and-conquer problems | External sort, distributed sort (MapReduce) | Optimal comparison sort proof |
 | Quick Sort | Partition logic, quickselect, nth element | Most common sort for CP | In-memory database sorting | Randomized analysis |
 | Heap Sort | K largest/smallest, priority queue use | Heap problems, median maintenance | Real-time system guarantees | Priority queue theory |
-| Lower Bound | Occasionally — prove optimality | Choosing non-comparison sort | Choosing database sort algorithm | Computational complexity |
+| Lower Bound | Occasionally â€” prove optimality | Choosing non-comparison sort | Choosing database sort algorithm | Computational complexity |
 
 ---
 
@@ -323,22 +323,22 @@ Final sorted array: [1, 3, 4, 5, 10].
 
 <details>
 <summary>Answer</summary>
-C) Heap sort. Merge sort uses O(n) space, quick sort uses O(log n) stack space and can degrade to O(n²).
+C) Heap sort. Merge sort uses O(n) space, quick sort uses O(log n) stack space and can degrade to O(nÂ²).
 </details>
 
 **Q2.** What is the lower bound for comparison-based sorting?
 
 - A) O(n)
-- B) Ω(n log n)
-- C) O(n²)
-- D) Θ(n)
+- B) Î©(n log n)
+- C) O(nÂ²)
+- D) Î˜(n)
 
 <details>
 <summary>Answer</summary>
-B) Ω(n log n) — proven by the decision tree model: there are n! permutations and a binary tree of height h has at most 2^h leaves.
+B) Î©(n log n) â€” proven by the decision tree model: there are n! permutations and a binary tree of height h has at most 2^h leaves.
 </details>
 
-**Q3.** Which pivot selection strategy avoids the O(n²) worst case for quick sort on sorted input?
+**Q3.** Which pivot selection strategy avoids the O(nÂ²) worst case for quick sort on sorted input?
 
 - A) First element
 - B) Last element
@@ -347,7 +347,7 @@ B) Ω(n log n) — proven by the decision tree model: there are n! permutations 
 
 <details>
 <summary>Answer</summary>
-C) Random element. First and last element pivots cause O(n²) on already-sorted or reverse-sorted arrays.
+C) Random element. First and last element pivots cause O(nÂ²) on already-sorted or reverse-sorted arrays.
 </details>
 
 ---

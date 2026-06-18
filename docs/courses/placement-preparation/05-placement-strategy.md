@@ -1,4 +1,4 @@
-﻿# 05 â€” Placement Season Strategy
+# 05 â€” Placement Season Strategy
 
 ## Placement Season Overview
 
@@ -6,7 +6,7 @@
 
 Placement season in Indian engineering colleges follows a predictable cycle tied to the academic calendar. For most colleges (IITs, NITs, IIITs, top private universities), the schedule is:
 
-![Placement Preparation Timeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch05-placement-timeline.png)
+![Placement Preparation Timeline](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch05-placement-timeline.png)
 
 The **primary placement window** runs from **July to December of your 3rd year (6th/7th sem merge)** for most colleges. However, the exact schedule depends on:
 

@@ -33,7 +33,7 @@ flowchart LR
 
 ## 18.1 Healthcare
 
-![AI Applications](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch18-ai-applications.png)
+![AI Applications](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch18-ai-applications.png)
 
 ### 18.1.1 Medical Diagnosis
 
@@ -171,7 +171,7 @@ AI accelerates scientific discovery across disciplines:
 
 **AI-driven research systems** like **AlphaFold**, **GNoME** (materials discovery), and **GraphCast** (weather prediction) demonstrate that AI can contribute to fundamental scientific advances.
 
-> **💡 Pro Tip:** When deploying AI in high-stakes domains (healthcare, autonomous driving), build in redundancy — use ensemble models, out-of-distribution detection, and human-in-the-loop approval for any decision above a confidence threshold.
+> **ðŸ’¡ Pro Tip:** When deploying AI in high-stakes domains (healthcare, autonomous driving), build in redundancy â€” use ensemble models, out-of-distribution detection, and human-in-the-loop approval for any decision above a confidence threshold.
 
 ## Concept Comparison
 
@@ -183,7 +183,7 @@ AI accelerates scientific discovery across disciplines:
 | Education | Personalization, assessment | Learning gain, retention | Generalization across curricula |
 | Creative | Generation, style transfer | Human evaluation, novelty | Copyright, authenticity |
 
-## Quick Reference — Deployment Considerations
+## Quick Reference â€” Deployment Considerations
 
 | Factor | Question | Mitigation |
 |--------|---------|------------|
@@ -197,11 +197,11 @@ AI accelerates scientific discovery across disciplines:
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Medical Diagnosis AI | ⬜ | ✅ | ⬜ | ✅ |
-| Fraud Detection | ✅ | ⬜ | ✅ | ✅ |
-| Autonomous Vehicles | ✅ | ✅ | ⬜ | ✅ |
-| Personalized Learning | ✅ | ⬜ | ✅ | ✅ |
-| Generative AI | ✅ | ✅ | ✅ | ✅ |
+| Medical Diagnosis AI | â¬œ | âœ… | â¬œ | âœ… |
+| Fraud Detection | âœ… | â¬œ | âœ… | âœ… |
+| Autonomous Vehicles | âœ… | âœ… | â¬œ | âœ… |
+| Personalized Learning | âœ… | â¬œ | âœ… | âœ… |
+| Generative AI | âœ… | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
@@ -219,7 +219,7 @@ AI accelerates scientific discovery across disciplines:
 - C) Financial models are too complex
 - D) Regulators require it
 
-<details><summary>Answer</summary>B) Fraud is adversarial — as detection improves, fraudsters change tactics, creating a constant arms race that requires adaptive models and continuous monitoring.</details>
+<details><summary>Answer</summary>B) Fraud is adversarial â€” as detection improves, fraudsters change tactics, creating a constant arms race that requires adaptive models and continuous monitoring.</details>
 
 **Q3:** A critical safety challenge for autonomous vehicles is:
 - A) Battery life
@@ -227,7 +227,7 @@ AI accelerates scientific discovery across disciplines:
 - C) Passenger comfort
 - D) Internet connectivity
 
-<details><summary>Answer</summary>B) The long-tail problem — real driving involves rare but critical edge cases — is the primary safety challenge, addressed through extensive simulation and scenario-based testing.</details>
+<details><summary>Answer</summary>B) The long-tail problem â€” real driving involves rare but critical edge cases â€” is the primary safety challenge, addressed through extensive simulation and scenario-based testing.</details>
 
 ## 18.9 Summary
 

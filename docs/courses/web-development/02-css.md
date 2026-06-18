@@ -1,4 +1,4 @@
-# Chapter 2 — CSS3
+# Chapter 2 â€” CSS3
 
 ## Learning Objectives
 
@@ -15,7 +15,7 @@ By the end of this chapter, you will be able to:
 
 ### 2.1 Selectors
 
-![CSS Layout and Selectors Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/02-css.png)
+![CSS Layout and Selectors Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/02-css.png)
 
 CSS selectors determine which elements a rule set applies to. Modern CSS provides a rich selector syntax.
 
@@ -88,12 +88,12 @@ By default, `width` and `height` apply only to the **content box**. Setting `box
 
 **Display values** control how boxes participate in the layout:
 
-- `block` — Fills available width, respects `width`/`height`, forces new line.
-- `inline` — Shrinks to content, ignores `width`/`height`, flows with text.
-- `inline-block` — Shrinks to content but respects `width`/`height`.
-- `flex` — Establishes a flex formatting context for children.
-- `grid` — Establishes a grid formatting context for children.
-- `none` — Removes element from the layout tree entirely.
+- `block` â€” Fills available width, respects `width`/`height`, forces new line.
+- `inline` â€” Shrinks to content, ignores `width`/`height`, flows with text.
+- `inline-block` â€” Shrinks to content but respects `width`/`height`.
+- `flex` â€” Establishes a flex formatting context for children.
+- `grid` â€” Establishes a grid formatting context for children.
+- `none` â€” Removes element from the layout tree entirely.
 
 ### 2.3 Flexbox
 
@@ -208,12 +208,12 @@ Responsive design ensures content renders well on any device width.
 
 **Relative units:**
 
-- `%` — Relative to parent
-- `em` — Relative to element's font-size
-- `rem` — Relative to root font-size (typically 16px)
-- `vw` / `vh` — Percentage of viewport width/height
-- `dvw` / `dvh` — Dynamic viewport units (account for mobile toolbars)
-- `clamp(min, preferred, max)` — Fluid value between bounds
+- `%` â€” Relative to parent
+- `em` â€” Relative to element's font-size
+- `rem` â€” Relative to root font-size (typically 16px)
+- `vw` / `vh` â€” Percentage of viewport width/height
+- `dvw` / `dvh` â€” Dynamic viewport units (account for mobile toolbars)
+- `clamp(min, preferred, max)` â€” Fluid value between bounds
 
 **Media queries:**
 

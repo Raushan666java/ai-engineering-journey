@@ -1,5 +1,8 @@
 # Chapter 4: Combinational Circuits
 
+> **Prereq:** Chapter 3 (Logic Gates) â€” combinational circuits are networks of gates.
+> **Next:** Chapter 5 (Flip-Flops) â€” sequential circuits add memory to combinational logic.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -10,9 +13,38 @@ By the conclusion of this chapter, the student shall be able to:
 4. Implement Boolean functions using decoders and multiplexers
 5. Design magnitude comparators and ALU subcircuits
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Adders | Half-adder, full-adder, CLA | Binary addition is the core of ALU |
+| MUX/DEMUX | Data selection and routing | Fundamental to data path design |
+| Decoder/Encoder | Code conversion | Address decoding, instruction decoding |
+| Comparator | Magnitude comparison | Sorting, decision circuits |
+| ALU | Integrated arithmetic/logic unit | Heart of the CPU |
+
+```mermaid
+flowchart LR
+    A[Gates] --> B[Half Adder]
+    B --> C[Full Adder]
+    C --> D[Ripple-Carry Adder]
+    C --> E[Carry-Lookahead]
+    A --> F[Mux/Demux]
+    A --> G[Decoder/Encoder]
+    A --> H[Comparator]
+    D --> I[ALU]
+    E --> I
+    F --> I
+    G --> I
+    style A fill:#e1f5fe
+    style I fill:#c8e6c9
+```
+
 ## Theory
 
-![Combinational Circuits: Adders, Multiplexers and ALU](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch03-combinational.png)
+![Combinational Circuits: Adders, Multiplexers and ALU](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch03-combinational.png)
+
+> **One-Sentence Takeaway:** Combinational logic has no memory â€” outputs depend only on current inputs â€” making it ideal for arithmetic and data routing, with adders and multiplexers as the canonical building blocks.
 
 ### 4.1 Adders
 
@@ -201,6 +233,33 @@ Design a 4-bit ripple-carry adder using four full-adders.
 
 **Solution**: Use three 2-to-1 MUXes arranged as a tree. The first level uses S_0 to select between D_0/D_1 and D_2/D_3. The second level uses S_1 to select between the two first-level outputs.
 
+### Concept Comparison
+
+| Component | Inputs | Outputs | Function |
+|-----------|--------|---------|----------|
+| Half-Adder | 2 bits | Sum, Carry | Adds 2 bits |
+| Full-Adder | 3 bits | Sum, Carry | Adds 3 bits |
+| MUX | 2^n data, n select | 1 | Selects one of many |
+| DEMUX | 1 data, n select | 2^n | Routes to one of many |
+| Decoder | n-bit code | 2^n one-hot | Activates one of 2^n |
+
+### Quick Reference
+
+| Adder Type | Delay | Gate Count | Best For |
+|-----------|-------|-----------|----------|
+| Ripple-Carry | O(n) | Low | Small widths |
+| Carry-Lookahead | O(log n) | High | Wide addition |
+| Carry-Select | O(âˆšn) | Moderate | Medium widths |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | ALU adder, address decoder | Adders and decoders are CPU building blocks |
+| Embedded Systems | Peripheral selection via MUX | Multiplexing reduces pin count |
+| Digital Circuits | FPGA LUT-based logic | MUX-based architectures dominate FPGAs |
+| Research | Approximate computing | Inexact adders for energy-efficient AI |
+
 ## Summary
 
 - Half-adders and full-adders form the building blocks of binary addition circuits.
@@ -234,4 +293,29 @@ Design a 4-bit ripple-carry adder using four full-adders.
 
 ### Challenge Problem
 
-Design an 8-bit carry-select adder (CSA). The CSA splits the addition into two halves, computes the upper half with both C_in = 0 and C_in = 1 in parallel, then selects the correct result using the actual carry from the lower half. Determine the delay improvement over an 8-bit ripple-carry adder. Assume each full-adder has a delay of *t* and each 2-to-1 MUX has a delay of *t_m*.
+Design an 8-bit carry-select adder (CSA). The CSA splits the addition into two halves, computes the upper half with both C_in = 0 and C_in = 1 in parallel, then selects the correct result using the actual carry from the lower half. Determine the delay improvement over an 8-bit ripple-carry adder.     Assume each full-adder has a delay of *t* and each 2-to-1 MUX has a delay of *t_m*.
+
+### Chapter Quiz
+
+1. A full-adder differs from a half-adder by having:
+   - A) Two sum outputs
+   - B) A carry-in input
+   - C) No carry output
+   - D) Four inputs
+
+2. A 4-to-1 multiplexer requires how many select lines?
+   - A) 1
+   - B) 2
+   - C) 4
+   - D) 8
+
+3. Carry-lookahead adders are faster than ripple-carry because:
+   - A) They use more bits
+   - B) Carries are computed in parallel using generate/propagate signals
+   - C) They use less power
+   - D) They skip the sum computation
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

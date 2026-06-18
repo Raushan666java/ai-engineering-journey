@@ -12,7 +12,7 @@ After studying this chapter, students will be able to:
 
 ## 10.1 The Algorithm-Container Separation
 
-![STL Algorithms Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/10-stl-algorithms.png)
+![STL Algorithms Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/10-stl-algorithms.png)
 
 STL algorithms operate on iterator ranges rather than containers directly. This decoupling means a single algorithm works across `vector`, `list`, `deque`, `array`, and built-in arrays:
 
@@ -80,7 +80,7 @@ if (it != data.end()) {
               << std::distance(data.begin(), it) << '\n';
 }
 
-// Binary search (O(log n) — data must be sorted)
+// Binary search (O(log n) â€” data must be sorted)
 bool exists = std::binary_search(data.begin(), data.end(), 5);
 
 // Lower/upper bound (s sorted range)
@@ -117,7 +117,7 @@ std::transform(src.begin(), src.end(), dst.begin(),
 // Replace
 std::replace(src.begin(), src.end(), 3, 99);  // replace 3 with 99
 
-// Remove (does not erase — returns new logical end)
+// Remove (does not erase â€” returns new logical end)
 auto new_end = std::remove(src.begin(), src.end(), 5);
 src.erase(new_end, src.end());   // erase-remove idiom
 

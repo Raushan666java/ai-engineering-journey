@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: classify requirement
 
 ## Theory
 
-![Requirements Engineering Process](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-02-requirements.png)
+![Requirements Engineering Process](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-02-requirements.png)
 
 ### The Requirements Engineering Process
 
@@ -34,7 +34,7 @@ Interviews are the most common elicitation technique. Structured interviews foll
 
 Surveys and questionnaires enable the collection of information from a large number of stakeholders. They are efficient for gathering quantitative data but provide limited depth and cannot explore unexpected topics.
 
-Observation involves watching users perform their work in their natural environment. It is particularly useful for discovering implicit requirements — things that users do but do not think to mention. Observation may be passive, where the analyst simply watches, or active, where the analyst participates in the work.
+Observation involves watching users perform their work in their natural environment. It is particularly useful for discovering implicit requirements â€” things that users do but do not think to mention. Observation may be passive, where the analyst simply watches, or active, where the analyst participates in the work.
 
 Workshops and focus groups bring together multiple stakeholders in a facilitated session. Workshops can rapidly generate ideas, resolve conflicts, and build consensus. The JAD (Joint Application Development) approach formalises workshops as a primary elicitation technique.
 
@@ -72,10 +72,10 @@ A university library commissioned a new management system. The requirements team
 
 ### Template: IEEE 830 SRS Section Outline
 
-1. Introduction — Purpose, scope, definitions, references, overview
-2. General Description — Product perspective, user characteristics, constraints, assumptions
-3. Specific Requirements — Functional requirements organised by mode or feature, external interface requirements, performance requirements, design constraints, software system attributes (security, reliability, maintainability, portability)
-4. Appendices — Glossary, models, issues list
+1. Introduction â€” Purpose, scope, definitions, references, overview
+2. General Description â€” Product perspective, user characteristics, constraints, assumptions
+3. Specific Requirements â€” Functional requirements organised by mode or feature, external interface requirements, performance requirements, design constraints, software system attributes (security, reliability, maintainability, portability)
+4. Appendices â€” Glossary, models, issues list
 
 ### Template: User Story with Acceptance Criteria
 
@@ -101,7 +101,7 @@ Postcondition: Book status is "on loan" and patron record reflects new loan
 
 ## Summary
 
-Requirements engineering is the foundation of successful software development. Functional requirements define what the system must do; non-functional requirements constrain how it does it; and domain requirements capture the context. Feasibility studies determine whether a project should proceed. Elicitation techniques must be selected based on the project context. Specifications take different forms — IEEE 830 documents, user stories, or use cases — depending on the process model. Validation ensures correctness and completeness. Management through traceability, prioritisation, and change control maintains the specification's integrity as the system evolves.
+Requirements engineering is the foundation of successful software development. Functional requirements define what the system must do; non-functional requirements constrain how it does it; and domain requirements capture the context. Feasibility studies determine whether a project should proceed. Elicitation techniques must be selected based on the project context. Specifications take different forms â€” IEEE 830 documents, user stories, or use cases â€” depending on the process model. Validation ensures correctness and completeness. Management through traceability, prioritisation, and change control maintains the specification's integrity as the system evolves.
 
 ## Exercises
 

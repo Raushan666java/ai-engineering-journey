@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Observability Three Pillars and Practices](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch13-observability.png)
+![Observability Three Pillars and Practices](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch13-observability.png)
 
 By the end of this chapter, students will be able to:
 
@@ -19,11 +19,11 @@ By the end of this chapter, students will be able to:
 
 Observability is the ability to understand a system's internal state by examining its outputs. The three pillars provide complementary views:
 
-**Logs** — Discrete, timestamped records of events. Provide detailed context for specific occurrences. High cardinality but high storage cost. Best for debugging specific errors and tracing request lifecycles.
+**Logs** â€” Discrete, timestamped records of events. Provide detailed context for specific occurrences. High cardinality but high storage cost. Best for debugging specific errors and tracing request lifecycles.
 
-**Metrics** — Numeric aggregations over time. Provide system health at a glance. Low cardinality, efficient storage. Best for alerting, dashboards, and trend analysis.
+**Metrics** â€” Numeric aggregations over time. Provide system health at a glance. Low cardinality, efficient storage. Best for alerting, dashboards, and trend analysis.
 
-**Traces** — End-to-end request flow across distributed services. Show causality and timing. Best for understanding latency bottlenecks and service dependencies.
+**Traces** â€” End-to-end request flow across distributed services. Show causality and timing. Best for understanding latency bottlenecks and service dependencies.
 
 The pillars are interconnected. A metric alert leads to a dashboard, which reveals a trace with a slow span, which links to error logs. Modern observability platforms correlate these signals automatically.
 
@@ -32,13 +32,13 @@ The pillars are interconnected. A metric alert leads to a dashboard, which revea
 OpenTelemetry (OTel) is the industry standard for observability instrumentation. It provides APIs, SDKs, and collectors for generating, collecting, and exporting telemetry data.
 
 **Components**:
-- **API** — Standard interfaces for creating traces, metrics, and logs
-- **SDK** — Language-specific implementations with configuration, batching, and exporting
-- **Collector** — Vendor-agnostic telemetry processing pipeline. Receives, processes, and exports data.
-- **Instrumentation Libraries** — Automatic instrumentation for popular frameworks (HTTP servers, gRPC, database clients, message queues)
-- **Exporter** — Sends data to backends (Jaeger, Prometheus, Datadog, New Relic)
+- **API** â€” Standard interfaces for creating traces, metrics, and logs
+- **SDK** â€” Language-specific implementations with configuration, batching, and exporting
+- **Collector** â€” Vendor-agnostic telemetry processing pipeline. Receives, processes, and exports data.
+- **Instrumentation Libraries** â€” Automatic instrumentation for popular frameworks (HTTP servers, gRPC, database clients, message queues)
+- **Exporter** â€” Sends data to backends (Jaeger, Prometheus, Datadog, New Relic)
 
-**Context Propagation** — OTel propagates trace context across service boundaries via W3C Trace-Context headers:
+**Context Propagation** â€” OTel propagates trace context across service boundaries via W3C Trace-Context headers:
 
 ```text
 traceparent: 00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01
@@ -51,10 +51,10 @@ This enables distributed trace reconstruction across services.
 Distributed tracing tracks a single request as it traverses multiple services.
 
 **Concepts**:
-- **Trace** — The full path of a request through the system. Identified by a Trace ID.
-- **Span** — A single unit of work within a trace. Has a start time, duration, status, and attributes.
-- **Span Context** — Trace ID, Span ID, and propagation metadata.
-- **Parent-Child Relationship** — Spans form a tree; the root span represents the initial request.
+- **Trace** â€” The full path of a request through the system. Identified by a Trace ID.
+- **Span** â€” A single unit of work within a trace. Has a start time, duration, status, and attributes.
+- **Span Context** â€” Trace ID, Span ID, and propagation metadata.
+- **Parent-Child Relationship** â€” Spans form a tree; the root span represents the initial request.
 
 ```python
 # Python OpenTelemetry instrumentation example
@@ -71,9 +71,9 @@ with tracer.start_as_current_span("process_payment") as span:
 ```
 
 **Backends**:
-- **Jaeger** — Open-source distributed tracing platform. Features: UI for trace search and comparison, service dependency graph, sampling strategies. Stores traces in Elasticsearch, Cassandra, or Badger.
-- **Zipkin** — Open-source distributed tracing with similar capabilities to Jaeger. Uses columnar storage backends.
-- **Grafana Tempo** — Cost-effective tracing backend. Does not index by trace content; queries traces by time range and service/operation labels. Integrates natively with Grafana.
+- **Jaeger** â€” Open-source distributed tracing platform. Features: UI for trace search and comparison, service dependency graph, sampling strategies. Stores traces in Elasticsearch, Cassandra, or Badger.
+- **Zipkin** â€” Open-source distributed tracing with similar capabilities to Jaeger. Uses columnar storage backends.
+- **Grafana Tempo** â€” Cost-effective tracing backend. Does not index by trace content; queries traces by time range and service/operation labels. Integrates natively with Grafana.
 
 ### 13.4 Service Maps and Dependency Analysis
 
@@ -88,29 +88,29 @@ Service maps reveal unknown dependencies, single points of failure, and unexpect
 
 ### 13.5 RED Metrics and the USE Method
 
-**RED Method** (Rate, Errors, Duration) — For service-level monitoring:
-- **Rate** — Requests per second
-- **Errors** — Failed requests per second (explicit 5xx, implicit failures)
-- **Duration** — Latency distributions (average, p50, p90, p95, p99)
+**RED Method** (Rate, Errors, Duration) â€” For service-level monitoring:
+- **Rate** â€” Requests per second
+- **Errors** â€” Failed requests per second (explicit 5xx, implicit failures)
+- **Duration** â€” Latency distributions (average, p50, p90, p95, p99)
 
 RED applies to each service in the architecture. Every service should have RED metrics instrumented.
 
-**USE Method** (Utilization, Saturation, Errors) — For resource-level monitoring:
-- **Utilization** — Percentage of resource being used (CPU %, memory %, disk space %)
-- **Saturation** — Degree of resource contention (queue length, run queue depth)
-- **Errors** — Error counts (disk I/O errors, network interface errors)
+**USE Method** (Utilization, Saturation, Errors) â€” For resource-level monitoring:
+- **Utilization** â€” Percentage of resource being used (CPU %, memory %, disk space %)
+- **Saturation** â€” Degree of resource contention (queue length, run queue depth)
+- **Errors** â€” Error counts (disk I/O errors, network interface errors)
 
 USE applies to every resource in the system: CPU, memory, disk, network, and system limits.
 
 ### 13.6 SLOs and Error Budgets
 
-**Service Level Objective (SLO)** — Target level of reliability for a service. Example: 99.9% availability over a 30-day rolling window.
+**Service Level Objective (SLO)** â€” Target level of reliability for a service. Example: 99.9% availability over a 30-day rolling window.
 
-**Service Level Indicator (SLI)** — The actual measurement of reliability. Example: fraction of HTTP requests that complete successfully in under 500ms.
+**Service Level Indicator (SLI)** â€” The actual measurement of reliability. Example: fraction of HTTP requests that complete successfully in under 500ms.
 
-**Service Level Agreement (SLA)** — Contractual commitment to a customer. SLAs must be less stringent than internal SLOs.
+**Service Level Agreement (SLA)** â€” Contractual commitment to a customer. SLAs must be less stringent than internal SLOs.
 
-**Error Budget** — The allowed amount of unreliability. For a 99.9% SLO over 30 days, the error budget is 43 minutes of downtime. Error budgets:
+**Error Budget** â€” The allowed amount of unreliability. For a 99.9% SLO over 30 days, the error budget is 43 minutes of downtime. Error budgets:
 - Measure how much unreliability is remaining
 - Inform release decisions: if budget is exhausted, stop releasing
 - Gate innovation velocity: teams trade reliability for feature velocity
@@ -132,11 +132,11 @@ slo:
 
 Observability infrastructure can become a significant cost driver. Optimization strategies:
 
-- **Sampling** — Trace head-based or tail-based sampling to reduce ingestion volume
-- **Retention Tiers** — Raw data at short retention (7 days), aggregated data longer (90 days), summaries for archive
-- **Aggregation** — Precompute and store aggregations rather than raw data
-- **Cardinality Control** — Limit label cardinality in metrics to prevent metric explosion
-- **Log Levels** — Store INFO+ in production; DEBUG rotated quickly
+- **Sampling** â€” Trace head-based or tail-based sampling to reduce ingestion volume
+- **Retention Tiers** â€” Raw data at short retention (7 days), aggregated data longer (90 days), summaries for archive
+- **Aggregation** â€” Precompute and store aggregations rather than raw data
+- **Cardinality Control** â€” Limit label cardinality in metrics to prevent metric explosion
+- **Log Levels** â€” Store INFO+ in production; DEBUG rotated quickly
 
 ## Summary
 

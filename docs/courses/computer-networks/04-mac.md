@@ -1,5 +1,7 @@
 # Chapter 4: Medium Access Control
 
+> **Prerequisites:** [Chapter 3: Data Link Layer](./03-datalink-layer.md) â€” Framing and error control | **Next:** [Chapter 5: Ethernet & Switching](./05-ethernet-switching.md) â€” From MAC protocols to switched networks
+
 ## Learning Objectives
 
 1. Explain why medium access control is necessary on shared broadcast channels.
@@ -9,11 +11,42 @@
 5. Distinguish contention-based and collision-free MAC protocols.
 6. Interpret the structure of an Ethernet MAC frame and address format.
 
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| ALOHA | Pure: 18.4% max throughput; Slotted: 36.8% | Vulnerable period is the fundamental limit â€” slotted halves it |
+| CSMA | Sense before transmit improves efficiency | 1-persistent is greedy; non-persistent reduces collisions at cost of idle time |
+| CSMA/CD | Detect collisions during transmission | Binary exponential backoff adapts to load; minimum frame size ensures detection |
+| CSMA/CA | Virtual carrier sensing (NAV) for wireless | RTS/CTS mitigates hidden terminal problem |
+| Collision-Free | Token passing, bit-map protocols | Deterministic delay but overhead at light load |
+| Ethernet | IEEE 802.3 with CSMA/CD, 48-bit MAC | Dominant LAN technology; switched Ethernet eliminated collisions |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[MAC Sublayer] --> B[Channel Partitioning]
+    A --> C[Random Access]
+    A --> D[Taking Turns]
+    C --> C1[Pure ALOHA]
+    C --> C2[Slotted ALOHA]
+    C --> C3[CSMA]
+    C --> C4[CSMA/CD]
+    C --> C5[CSMA/CA]
+    D --> D1[Token Passing]
+    D --> D2[Bit-Map]
+    A --> E[Ethernet]
+    A --> F[LLC & MAC Addressing]
+```
+
 ## 4.1 The MAC Sublayer
 
-![MAC Sublayer Protocols, Ethernet Evolution and Switching](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch04-mac-ethernet.png)
+![MAC Sublayer Protocols, Ethernet Evolution and Switching](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch04-mac-ethernet.png)
 
-The medium access control (MAC) sublayer, the lower sublayer of the data link layer in the IEEE 802 architecture, governs how multiple stations share a common broadcast channel. Without coordination, simultaneous transmissions collide — signals interfere and both are lost. MAC protocols are classified into three categories:
+The medium access control (MAC) sublayer, the lower sublayer of the data link layer in the IEEE 802 architecture, governs how multiple stations share a common broadcast channel. Without coordination, simultaneous transmissions collide â€” signals interfere and both are lost. MAC protocols are classified into three categories:
 
 **Channel partitioning.** Divide the channel into smaller pieces (time slots, frequencies, codes) and allocate one piece per station. Examples: TDMA, FDMA, CDMA.
 
@@ -43,6 +76,8 @@ $$S = G \cdot e^{-G}$$
 
 Maximum throughput is $1/e \approx 0.368$ at $G = 1$, doubling pure ALOHA's efficiency. The cost is the need for global time synchronization.
 
+> **Pro Tip:** ALOHA's efficiency limit is a fundamental bound on random-access protocols. Any system where uncoordinated stations transmit freely cannot exceed ~37% channel utilization â€” understanding this limit motivates every MAC protocol that followed.
+
 ## 4.3 Carrier Sense Multiple Access
 
 CSMA improves upon ALOHA by listening to the channel before transmitting (carrier sensing). Four variants exist.
@@ -69,11 +104,13 @@ where $A$ is the probability that exactly one station transmits in a slot. For p
 
 ### 4.3.3 CSMA with Collision Avoidance
 
-CSMA/CA is used in wireless LANs (802.11) where collision detection is impractical — a station cannot listen while transmitting because its own signal overwhelms received signals. CSMA/CA uses explicit acknowledgment and virtual carrier sensing via the Network Allocation Vector (NAV).
+CSMA/CA is used in wireless LANs (802.11) where collision detection is impractical â€” a station cannot listen while transmitting because its own signal overwhelms received signals. CSMA/CA uses explicit acknowledgment and virtual carrier sensing via the Network Allocation Vector (NAV).
 
 When a station wishes to transmit, it senses the channel. If idle for DIFS (DCF Inter-Frame Space) duration, it transmits. If busy or the channel becomes busy during DIFS, it enters the backoff procedure: selects a random backoff counter from the contention window $[0, CW]$, decrements the counter each idle slot, and transmits when the counter reaches zero. After each collision, $CW$ doubles up to $CW_{max}$.
 
 The optional RTS/CTS (Ready to Send / Clear to Send) exchange reserves the medium for the data transmission duration, mitigating the hidden terminal problem.
+
+> **Pro Tip:** RTS/CTS is worth enabling when stations cannot hear each other (hidden terminal), but adds overhead on every transmission. For dense access points and small frames, disabling RTS/CTS and relying on ACK timeout can improve throughput.
 
 ## 4.4 Collision-Free Protocols
 
@@ -93,14 +130,16 @@ The Ethernet MAC frame format:
 
 | Preamble | SFD | Destination MAC | Source MAC | Length/Type | Payload | FCS |
 |----------|-----|----------------|------------|-------------|---------|-----|
-| 7 bytes  | 1 B | 6 B            | 6 B        | 2 B         | 46–1500 B | 4 B |
+| 7 bytes  | 1 B | 6 B            | 6 B        | 2 B         | 46â€“1500 B | 4 B |
 
 - **Preamble**: 7 bytes of alternating 1/0 for receiver synchronization.
 - **Start Frame Delimiter (SFD)**: 1 byte (10101011) indicating the start of the frame.
 - **Destination and Source MAC addresses**: 48-bit globally unique identifiers.
 - **Length/Type**: If $\le 1500$, indicates payload length; if $\ge 1536$, indicates EtherType (e.g., 0x0800 for IPv4, 0x0806 for ARP, 0x86DD for IPv6).
-- **Payload**: 46–1500 bytes (minimum ensures reliable collision detection).
+- **Payload**: 46â€“1500 bytes (minimum ensures reliable collision detection).
 - **Frame Check Sequence (FCS)**: 32-bit CRC.
+
+> **Pro Tip:** The minimum Ethernet payload (46 bytes) exists to ensure collision detection works across the maximum network diameter. In switched Ethernet where every link is point-to-point, this constraint is unnecessary, but the format persists for backward compatibility.
 
 ## 4.6 Performance Comparison of MAC Protocols
 
@@ -117,6 +156,97 @@ The Logical Link Control (LLC) sublayer sits between the MAC sublayer and the ne
 MAC (Media Access Control) addresses are 48-bit identifiers assigned by manufacturers. The first 24 bits (Organizationally Unique Identifier, OUI) identify the manufacturer; the remaining 24 bits are a device-specific serial number. Addresses are typically expressed as six hexadecimal pairs (e.g., `00:1A:2B:3C:4D:5E`).
 
 The type field in the address determines its scope. A unicast address identifies a single interface. A multicast address (first bit = 1) delivers to a group of stations. The broadcast address (all 48 bits set to 1) delivers to all stations on the LAN.
+
+---
+
+### Concept Comparison Table
+
+| Protocol | Max Throughput | Collisions | Coordination | Use Case |
+|----------|---------------|------------|--------------|----------|
+| Pure ALOHA | 18.4% | Yes | None | Historical, satellite |
+| Slotted ALOHA | 36.8% | Yes | Slot sync | Early packet radio |
+| 1-persistent CSMA | Varies with load | High at idleâ†’busy transition | Carrier sense | Early Ethernet |
+| Non-persistent CSMA | Higher than 1-persistent | Lower | Random wait | Low-load environments |
+| p-persistent CSMA | Optimal with tuned p | Controlled | Probabilistic | Slotted channels |
+| CSMA/CD | ~100% (low prop delay) | Detected, retried | Sense + detect | Classical Ethernet |
+| CSMA/CA | Lower than CSMA/CD | Avoided | Virtual carrier sense (NAV) | 802.11 WiFi |
+| Token Passing | ~100% (heavy load) | None (collision-free) | Token ownership | FDDI, industrial control |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **ALOHA Formulas** | Pure: $S = Ge^{-2G}$, max 18.4% at G=0.5; Slotted: $S = Ge^{-G}$, max 36.8% at G=1 |
+| **CSMA Variants** | 1-persistent (greedy), Non-persistent (random wait), p-persistent (probabilistic) |
+| **Binary Exponential Backoff** | After $i$th collision: wait $k \cdot 512$ bit-times, $k \in [0, 2^i - 1]$, cap at $i=10$, drop at $i=16$ |
+| **Ethernet Frame (min)** | Preamble(7) + SFD(1) + Dst(6) + Src(6) + Len(2) + Payload(46-1500) + FCS(4) = 72-1526 bytes |
+| **MAC Address** | 48 bits: OUI (24 bits, manufacturer) + NIC-specific (24 bits); unicast/multicast/broadcast |
+| **Collision-Free** | Bit-map: $n$ reservation slots; Token: circulating permission frame |
+
+### Cross-Application Matrix
+
+| Concept | LAN Design | WiFi Engineering | IoT | Cellular |
+|---------|-----------|-----------------|-----|----------|
+| ALOHA | N/A | N/A | LoRaWAN | Initial 3G random access |
+| CSMA/CD | Classical Ethernet | N/A | N/A | N/A |
+| CSMA/CA | N/A | AP channel selection | Zigbee | N/A |
+| Token Passing | N/A | N/A | PROFIBUS, industrial | N/A |
+| Ethernet Frame | Switch configuration | N/A | N/A | N/A |
+| MAC Addressing | ARP, VLAN config | BSSID filtering | Device addressing | IMSI |
+
+---
+
+### Chapter Quiz
+
+**Q1.** What is the maximum throughput of pure ALOHA?
+
+- A) 36.8%
+- B) 50%
+- C) 18.4%
+- D) 100%
+
+<details>
+<summary>Answer</summary>
+C) 18.4% ($1/2e$) â€” the vulnerable period is twice the frame time.
+</details>
+
+**Q2.** Why does 1-persistent CSMA perform poorly when the channel transitions from busy to idle?
+
+- A) Stations cannot detect the idle state
+- B) Multiple waiting stations all transmit at once, causing collisions
+- C) The carrier sense mechanism fails
+- D) Backoff is disabled
+
+<details>
+<summary>Answer</summary>
+B) All stations waiting for the channel transmit as soon as it becomes idle, causing guaranteed collisions.
+</details>
+
+**Q3.** In CSMA/CD, what is the purpose of the minimum frame size?
+
+- A) Ensure minimum data throughput
+- B) Guarantee collision detection across max network diameter
+- C) Reduce overhead from headers
+- D) Improve CRC strength
+
+<details>
+<summary>Answer</summary>
+B) The frame must be long enough that the sender is still transmitting when the farthest collision signal returns.
+</details>
+
+**Q4.** The IEEE 802.3 MAC address `FF:FF:FF:FF:FF:FF` is what type?
+
+- A) Unicast
+- B) Multicast
+- C) Broadcast
+- D) Anycast
+
+<details>
+<summary>Answer</summary>
+C) Broadcast â€” all 48 bits set to 1, delivering to all stations on the LAN.
+</details>
+
+---
 
 ## Summary
 

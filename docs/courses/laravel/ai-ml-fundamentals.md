@@ -1,4 +1,4 @@
-﻿# Chapter P6: AI/ML Fundamentals & Laravel Integration
+# Chapter P6: AI/ML Fundamentals & Laravel Integration
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![AI and ML Fundamentals](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/ai-ml-fundamentals.png)
+![AI and ML Fundamentals](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/ai-ml-fundamentals.png)
 
 
 ### 1. Machine Learning Fundamentals

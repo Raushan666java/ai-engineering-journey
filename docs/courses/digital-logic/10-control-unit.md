@@ -1,5 +1,8 @@
 # Chapter 10: Control Unit
 
+> **Prereq:** Chapter 9 (Datapath Design) â€” the control unit orchestrates the datapath via control signals.
+> **Next:** Chapter 11 (ISA) â€” the control unit implements the ISA by decoding instructions.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -10,9 +13,34 @@ By the conclusion of this chapter, the student shall be able to:
 4. Analyse the trade-offs between horizontal and vertical microprogramming
 5. Implement micro-instruction formats and micro-address generation logic
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Hardwired Control | FSM-based, fast | RISC CPUs, fixed instruction sets |
+| Microprogrammed Control | ROM-based, flexible | CISC CPUs, easy to modify |
+| Horizontal | Wide control word, parallel | Max parallelism, complex encoding |
+| Vertical | Narrow control word, sequential | Simpler, but slower |
+
+```mermaid
+flowchart LR
+    A[Opcode] --> B[Control Unit]
+    B --> C{Hardwired vs Microprogrammed}
+    C --> D[FSM Logic]
+    C --> E[Control ROM]
+    D --> F[Control Signals]
+    E --> F
+    F --> G[Datapath]
+    style B fill:#e1f5fe
+    style F fill:#c8e6c9
+    style G fill:#fff3e0
+```
+
+> **One-Sentence Takeaway:** The control unit is the CPU's conductor â€” hardwired logic is fast and simple for fixed ISAs, while microprogrammed control offers flexibility for complex instruction sets.
+
 ## Theory
 
-![Hardwired vs Microprogrammed Control Unit](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch10-control-unit.png)
+![Hardwired vs Microprogrammed Control Unit](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch10-control-unit.png)
 
 ### 10.1 Control Unit Function
 
@@ -154,6 +182,32 @@ A datapath requires 50 distinct control signals. Compare the control store width
 
 The vertical approach saves 28 bits per word but requires decoders that add propagation delay.
 
+### Concept Comparison
+
+| Aspect | Hardwired | Microprogrammed |
+|--------|-----------|----------------|
+| Implementation | FSM + gates | ROM + sequencer |
+| Speed | Fast | Slower (ROM access) |
+| Flexibility | Difficult to change | Easy to modify |
+| Design complexity | Complex for many instructions | Systematic, scalable |
+| Best for | RISC | CISC |
+
+### Quick Reference
+
+| Micro-architecture | Control Store Width | Decoder? | Parallelism |
+|-------------------|-------------------|----------|-------------|
+| Horizontal | N bits (1 per signal) | No | Maximum |
+| Vertical | log2(N) bits per field | Yes | Limited |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | RISC hardwired, x86 micro-coded | Control style defines CPU personality |
+| Embedded Systems | Microcontroller CISC vs RISC | Control complexity affects power/area |
+| Digital Circuits | FPGA-based CPU control | Configurable control via LUT-based FSM |
+| Research | Reconfigurable control units | Writable control stores for adaptive CPUs |
+
 ## Summary
 
 - Hardwired control implements control logic as a finite state machine; microprogrammed control stores control signals in a ROM.
@@ -186,4 +240,29 @@ The vertical approach saves 28 bits per word but requires decoders that add prop
 
 ### Challenge Problem
 
-Design a writable control store (WCS) microprogrammed control unit that can be updated at runtime. The system should support 512 micro-instructions of 72 bits each. Describe the hardware for loading micro-instructions from main memory into the control store, the write protection mechanism, and the sequencing logic. What are the security implications of a WCS in a multi-user system?
+Design a writable control store (WCS) microprogrammed control unit that can be updated at runtime. The system should support 512 micro-instructions of 72 bits each. Describe the hardware for loading micro-instructions from main memory into the control store, the write protection mechanism, and the sequencing logic.     What are the security implications of a WCS in a multi-user system?
+
+### Chapter Quiz
+
+1. Hardwired control units are typically used in:
+   - A) CISC processors
+   - B) RISC processors
+   - C) Mainframe computers
+   - D) All types equally
+
+2. Horizontal microprogramming differs from vertical by:
+   - A) Having a narrower control word
+   - B) Using one bit per control signal (maximal parallelism)
+   - C) Requiring more clock cycles per instruction
+   - D) Being harder to modify
+
+3. The mapping ROM in a microprogrammed control unit:
+   - A) Stores program data
+   - B) Maps machine opcodes to micro-instruction addresses
+   - C) Controls the ALU
+   - D) Stores the register file contents
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

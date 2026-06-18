@@ -1,8 +1,8 @@
-﻿# REST API Interview Q&A
+# REST API Interview Q&A
 
 This chapter covers 25 essential REST API interview questions from REST constraints and HTTP semantics through versioning, error handling, security, caching, testing, and HATEOAS. Each answer includes complete, compilable code examples targeting senior-level backend interviews.
 
-![REST API Interview Topics - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/58-interview-rest-api.png)
+![REST API Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/58-interview-rest-api.png)
 
 ### Q1: What are the six constraints of REST? How do they affect API design?
 

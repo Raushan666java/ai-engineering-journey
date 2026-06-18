@@ -4,7 +4,7 @@
 
 ## Learning Objectives
 
-![Continuous Integration Pipeline Stages](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch04-ci-pipeline.png)
+![Continuous Integration Pipeline Stages](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch04-ci-pipeline.png)
 
 - Define Continuous Integration (CI) and its role in reducing integration debt.
 - Identify the key components of a CI pipeline: version control, build server, and automated tests.

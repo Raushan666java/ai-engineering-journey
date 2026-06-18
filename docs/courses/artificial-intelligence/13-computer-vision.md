@@ -40,7 +40,7 @@ flowchart LR
 
 ## 13.1 Image Formation
 
-![Vision and Robotics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch13-vision-robotics.png)
+![Vision and Robotics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch13-vision-robotics.png)
 
 Digital images are two-dimensional arrays of **pixels**, each representing light intensity at a spatial location. A grayscale image is a matrix $I \in \mathbb{R}^{H \times W}$. A color image has three channels (red, green, blue): $I \in \mathbb{R}^{H \times W \times 3}$.
 
@@ -145,7 +145,7 @@ $$p_\theta(x_{t-1} \mid x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\
 
 **Text-to-image diffusion** (DALL-E 2, Imagen) conditions generation on text embeddings from large language models.
 
-> **💡 Pro Tip:** YOLO is the go-to choice for real-time object detection (45+ FPS), while Faster R-CNN offers higher accuracy for offline analysis. For segmentation, U-Net is the standard architecture when data is limited.
+> **ðŸ’¡ Pro Tip:** YOLO is the go-to choice for real-time object detection (45+ FPS), while Faster R-CNN offers higher accuracy for offline analysis. For segmentation, U-Net is the standard architecture when data is limited.
 
 ## Concept Comparison
 
@@ -157,26 +157,26 @@ $$p_\theta(x_{t-1} \mid x_t) = \mathcal{N}(x_{t-1}; \mu_\theta(x_t, t), \Sigma_\
 | Instance Seg. | Per-instance masks | Mask R-CNN | mAP over masks |
 | Generation | Images | GAN, Diffusion Model | FID, IS |
 
-## Quick Reference — CNN Components
+## Quick Reference â€” CNN Components
 
 | Layer | Operation | Effect |
 |-------|-----------|--------|
 | Convolution | Slide kernel over input | Detect local patterns |
 | ReLU | max(0, x) | Non-linearity |
-| Max Pooling | Downsample 2×2 blocks | Reduce spatial dims |
+| Max Pooling | Downsample 2Ã—2 blocks | Reduce spatial dims |
 | Flatten | 2D to 1D vector | Bridge to FC layers |
 | Fully Connected | Weighted sum + activation | Classify features |
-| Softmax | e^xᵢ/Σ e^xⱼ | Probability distribution |
+| Softmax | e^xáµ¢/Î£ e^xâ±¼ | Probability distribution |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| CNN | ✅ | ✅ | ✅ | ✅ |
-| Object Detection | ⬜ | ✅ | ⬜ | ✅ |
-| Segmentation | ⬜ | ✅ | ⬜ | ✅ |
-| Vision Transformer | ✅ | ✅ | ✅ | ✅ |
-| GAN/Diffusion | ✅ | ✅ | ✅ | ✅ |
+| CNN | âœ… | âœ… | âœ… | âœ… |
+| Object Detection | â¬œ | âœ… | â¬œ | âœ… |
+| Segmentation | â¬œ | âœ… | â¬œ | âœ… |
+| Vision Transformer | âœ… | âœ… | âœ… | âœ… |
+| GAN/Diffusion | âœ… | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 

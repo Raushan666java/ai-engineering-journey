@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: distinguish between 
 
 ## Theory
 
-![Software Evolution Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-07-software-evolution.png)
+![Software Evolution Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-07-software-evolution.png)
 
 ### The Nature of Software Evolution
 
@@ -108,7 +108,7 @@ Software evolution consumes the majority of lifecycle costs. Maintenance is clas
 1. What proportion of total lifecycle costs is typically consumed by maintenance?
 2. Distinguish between corrective and adaptive maintenance.
 3. What distinguishes reverse engineering from reengineering?
-4. What is the principal constraint on refactoring — what must be preserved?
+4. What is the principal constraint on refactoring â€” what must be preserved?
 5. List five characteristics of legacy systems.
 6. Describe the strangler fig pattern for legacy system replacement.
 7. What are the two dimensions used in legacy system portfolio analysis?

@@ -50,21 +50,21 @@ By the end of this chapter you will be able to:
 
 ## 1. Architecture Overview
 
-![JUnit 5 Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/29-junit5.png)
+![JUnit 5 Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/29-junit5.png)
 
 JUnit 5 is divided into three modules:
 
 ```
-┌─────────────────────────────────────┐
-│         JUnit Jupiter               │  ← API + implementation for writing tests
-│   (junit-jupiter-api + engine)      │     (@Test, assertions, extensions)
-├─────────────────────────────────────┤
-│         JUnit Vintage                │  ← Allows JUnit 4 tests to run on the Platform
-│   (junit-vintage-engine)             │
-├─────────────────────────────────────┤
-│         JUnit Platform               │  ← Foundation: launcher, console, engine SPI
-│   (junit-platform-commons + engine)  │     IDEs and build tools talk to this layer only
-└─────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚         JUnit Jupiter               â”‚  â† API + implementation for writing tests
+â”‚   (junit-jupiter-api + engine)      â”‚     (@Test, assertions, extensions)
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚         JUnit Vintage                â”‚  â† Allows JUnit 4 tests to run on the Platform
+â”‚   (junit-vintage-engine)             â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚         JUnit Platform               â”‚  â† Foundation: launcher, console, engine SPI
+â”‚   (junit-platform-commons + engine)  â”‚     IDEs and build tools talk to this layer only
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 1.1 JUnit Platform
@@ -88,7 +88,7 @@ import org.junit.platform.launcher.listeners.TestExecutionSummary;
 import static org.junit.platform.engine.discovery.DiscoverySelectors.selectClass;
 
 /**
- * Programmatic launcher — demonstrates how IDEs and build tools
+ * Programmatic launcher â€” demonstrates how IDEs and build tools
  * discover and run JUnit 5 tests without relying on any JUnit 4
  * concepts.
  */
@@ -126,7 +126,7 @@ class SampleTest {
 
 ### 1.2 JUnit Jupiter
 
-Jupiter is the programming model — the `junit-jupiter-api` module provides every annotation and assertion you use when writing JUnit 5 tests. The `junit-jupiter-engine` module is the `TestEngine` implementation that the Platform discovers at runtime.
+Jupiter is the programming model â€” the `junit-jupiter-api` module provides every annotation and assertion you use when writing JUnit 5 tests. The `junit-jupiter-engine` module is the `TestEngine` implementation that the Platform discovers at runtime.
 
 ```java
 package junit5.architecture;
@@ -222,7 +222,7 @@ class CoreAnnotationDemo {
     void temporarilyDisabled() {
     }
 
-    @RepeatedTest(value = 5, name = "{displayName} — attempt {currentRepetition} of {totalRepetitions}")
+    @RepeatedTest(value = 5, name = "{displayName} â€” attempt {currentRepetition} of {totalRepetitions}")
     @DisplayName("Retry sensitive operation")
     void repeated(RepetitionInfo info) {
         int attempt = info.getCurrentRepetition();
@@ -371,10 +371,10 @@ import org.junit.jupiter.api.TestMethodOrder;
  * @TestMethodOrder controls the execution order of test methods.
  *
  * Available orderers:
- * - MethodOrderer.DisplayName        — alphabetical by display name
- * - MethodOrderer.MethodName         — alphabetical by method name
- * - MethodOrderer.OrderAnnotation    — @Order values, ascending
- * - MethodOrderer.Random             — pseudo-random, deterministic seed
+ * - MethodOrderer.DisplayName        â€” alphabetical by display name
+ * - MethodOrderer.MethodName         â€” alphabetical by method name
+ * - MethodOrderer.OrderAnnotation    â€” @Order values, ascending
+ * - MethodOrderer.Random             â€” pseudo-random, deterministic seed
  * - Custom Orderer implementation
  */
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -432,7 +432,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  *   - A single instance of the test class is created for the entire run.
  *   - @BeforeAll and @AfterAll methods do NOT need to be static.
  *   - Useful for expensive setup (e.g., starting a test database).
- *   - Instance variables preserve state across tests — use with caution.
+ *   - Instance variables preserve state across tests â€” use with caution.
  */
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class PerClassLifecycleDemo {
@@ -443,7 +443,7 @@ class PerClassLifecycleDemo {
     @BeforeAll
     void initAll() {
         // Non-static: PER_CLASS makes this legal
-        System.out.println("PER_CLASS @BeforeAll — runs once for the class");
+        System.out.println("PER_CLASS @BeforeAll â€” runs once for the class");
     }
 
     @BeforeEach
@@ -469,12 +469,12 @@ class PerClassLifecycleDemo {
 
     @AfterEach
     void tearDown() {
-        System.out.println("After each test — counter is " + sharedCounter);
+        System.out.println("After each test â€” counter is " + sharedCounter);
     }
 
     @AfterAll
     void tearDownAll() {
-        System.out.println("PER_CLASS @AfterAll — runs once after all tests");
+        System.out.println("PER_CLASS @AfterAll â€” runs once after all tests");
     }
 }
 
@@ -482,7 +482,7 @@ class PerClassLifecycleDemo {
  * PER_METHOD (default):
  *   - A NEW instance of the test class is created for EACH test method.
  *   - @BeforeAll/@AfterAll must be static.
- *   - No shared state between tests — safer default.
+ *   - No shared state between tests â€” safer default.
  */
 @TestInstance(TestInstance.Lifecycle.PER_METHOD)
 class PerMethodLifecycleDemo {
@@ -492,7 +492,7 @@ class PerMethodLifecycleDemo {
     @BeforeAll
     static void initAll() {
         // Must be static in PER_METHOD mode
-        System.out.println("PER_METHOD @BeforeAll — runs once");
+        System.out.println("PER_METHOD @BeforeAll â€” runs once");
     }
 
     @BeforeEach
@@ -517,7 +517,7 @@ class PerMethodLifecycleDemo {
 
     @AfterAll
     static void tearDownAll() {
-        System.out.println("PER_METHOD @AfterAll — runs once");
+        System.out.println("PER_METHOD @AfterAll â€” runs once");
     }
 }
 ```
@@ -714,7 +714,7 @@ class StandardAssertionDemo {
             return "finished";
         });
 
-        // assertTimeoutPreemptively — interrupts the thread if it times out
+        // assertTimeoutPreemptively â€” interrupts the thread if it times out
         // Use with caution: the thread is interrupted, not killed, so
         // resources may leak.
         String result = assertTimeoutPreemptively(
@@ -826,7 +826,7 @@ class GroupedAssertionDemo {
         // With sequential assertions, this test stops at the first failure.
         // Uncomment to see the behaviour:
         // Person p = new Person(null, "Doe");
-        // assertNotNull(p.firstName(), "firstName must not be null"); // FAILS — stops here
+        // assertNotNull(p.firstName(), "firstName must not be null"); // FAILS â€” stops here
         // assertNotNull(p.lastName(), "lastName must not be null");   // never reached
 
         // With assertAll, both failures are reported:
@@ -870,7 +870,7 @@ class AssumptionDemo {
     @Test
     void assumingThatExample() {
         // assumingThat runs the executable only if the condition is true.
-        // Unlike assumeTrue, the test is NOT skipped — the block is
+        // Unlike assumeTrue, the test is NOT skipped â€” the block is
         // simply not executed.
         assumingThat(
             "CI".equals(System.getenv("ENV")),
@@ -1598,7 +1598,7 @@ class DynamicTestDemo {
     }
 
     /**
-     * Generate dynamic tests from external data — this is where
+     * Generate dynamic tests from external data â€” this is where
      * dynamic tests truly shine: tests are generated per data row.
      */
     @TestFactory
@@ -1801,7 +1801,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * @TestTemplate methods are invoked multiple times through
- * a TestTemplateInvocationContextProvider extension — one invocation
+ * a TestTemplateInvocationContextProvider extension â€” one invocation
  * per context. This is the mechanism behind @RepeatedTest and
  * @ParameterizedTest.
  */
@@ -2042,7 +2042,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 /**
- * Tags allow filtering tests at run time — run only "fast" tests
+ * Tags allow filtering tests at run time â€” run only "fast" tests
  * during development, run "integration" and "slow" tests in CI.
  *
  * Maven: mvn test -Dgroups="fast"
@@ -2280,7 +2280,7 @@ class IgnoreIOExceptionExtension implements TestExecutionExceptionHandler {
             throws Throwable {
         if (throwable instanceof java.io.IOException) {
             System.out.println("Ignoring IOException: " + throwable.getMessage());
-            return; // swallow the exception — test passes
+            return; // swallow the exception â€” test passes
         }
         throw throwable; // re-throw all other exceptions
     }
@@ -2452,10 +2452,10 @@ Write a `@TestFactory` method that scans a directory of JSON test case files, re
 
 Test a `Deque` implementation using `@Nested`:
 - Outer: common setup
-- Level 1: "when empty" — test isEmpty, pop/peek exceptions
-- Level 2: "after push" — verify size, pop returns correct element
-- Level 3: "after multiple pushes" — verify LIFO ordering
-- Level 4: "after clear" — verify it is empty again
+- Level 1: "when empty" â€” test isEmpty, pop/peek exceptions
+- Level 2: "after push" â€” verify size, pop returns correct element
+- Level 3: "after multiple pushes" â€” verify LIFO ordering
+- Level 4: "after clear" â€” verify it is empty again
 
 ### Exercise 6: Custom Extension
 
@@ -2472,11 +2472,11 @@ Implement a `FibonacciTestTemplate` using `@TestTemplate` that generates test co
 ### Exercise 9: Tagged Test Suite
 
 Design a tag taxonomy for a multi-module project:
-- `@UnitTest` — fast, no external dependencies
-- `@IntegrationTest` — requires database or external service
-- `@SlowTest` — takes more than 1 second
-- `@SmokeTest` — critical path verification
-- `@SecurityTest` — security-related checks
+- `@UnitTest` â€” fast, no external dependencies
+- `@IntegrationTest` â€” requires database or external service
+- `@SlowTest` â€” takes more than 1 second
+- `@SmokeTest` â€” critical path verification
+- `@SecurityTest` â€” security-related checks
 
 Write a composed annotation that combines these for a "pre-commit" suite.
 

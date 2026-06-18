@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Binary Trees, Traversals and BST](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch05-trees-bst.png)
+![Binary Trees, Traversals and BST](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch05-trees-bst.png)
 
 ### Definitions
 
@@ -270,6 +270,86 @@ int main() {
 Is full tree: 1
 Is full tree: 0
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **Level-order (BFS) is iterative, not recursive**: Use a queue. While the queue is not empty, pop the front, process it, push its children. This is the natural way to visit nodes level by level.
+- **Three traversals are all \(O(n)\)**: Each node is visited exactly once. The difference is the order, not the complexity. Choose the traversal that matches your processing need.
+- **Reconstruct from traversals**: Given inorder + preorder (or inorder + postorder), you can uniquely reconstruct a binary tree. Inorder alone or preorder alone is insufficient.
+- **Threaded trees eliminate recursion**: By reusing null right pointers as inorder successor links, a threaded binary tree can be traversed without recursion or an explicit stack â€” useful in memory-constrained environments.
+
+## One-Sentence Takeaways
+
+- Binary trees are hierarchical structures with at most two children per node.
+- Inorder visits leftâ†’rootâ†’right; preorder visits rootâ†’leftâ†’right; postorder visits leftâ†’rightâ†’root.
+- Level-order traversal uses a queue to process nodes by depth.
+- Tree height is the longest path from root to leaf, computed recursively.
+- Threaded trees reuse null pointers for efficient traversal without recursion.
+- Serialization converts a tree to a string; deserialization reconstructs it.
+
+## Concept Comparison Table
+
+| Traversal | Order | Stack/Queue | Use Case |
+|-----------|-------|-------------|----------|
+| Preorder | root â†’ left â†’ right | Implicit (recursion) | Copy tree, prefix expression |
+| Inorder | left â†’ root â†’ right | Implicit (recursion) | BST sorted output |
+| Postorder | left â†’ right â†’ root | Implicit (recursion) | Delete tree, postfix expression |
+| Level-order | By depth | Queue | BFS, shortest path in unweighted tree |
+
+## Quick Reference: Binary Tree Properties
+
+| Property | Formula | Example (n nodes) |
+|----------|---------|-------------------|
+| Max nodes at level \(i\) | \(2^i\) | Level 3: 8 nodes |
+| Max nodes total (height h) | \(2^{h+1} - 1\) | Height 4: 31 nodes |
+| Min height (full) | \(\lceil \log_2(n+1) \rceil - 1\) | 15 nodes: height 3 |
+| Max height (degenerate) | \(n - 1\) | 15 nodes: height 14 |
+| Leaves in full binary tree | \((n + 1) / 2\) | 15 nodes: 8 leaves |
+
+## Cross-Application Matrix
+
+| Task | Traversal | Why |
+|------|-----------|-----|
+| Print BST in sorted order | Inorder | Natural order property |
+| Compute tree height | Postorder | Need subtree heights first |
+| Serialize for reconstuction | Preorder + inorder | Both needed for unique reconstruction |
+| Level-order print | BFS / level-order | Visually shows tree structure |
+| Evaluate expression tree | Postorder | Operands before operator |
+| Find deepest node | Level-order | Last node in BFS |
+
+## Chapter Quiz
+
+1. **What is the maximum number of nodes at level \(i\) of a binary tree?**
+   - a) \(i\)
+   - b) \(2^i\) âœ“
+   - c) \(n/2\)
+   - d) \(2^{i+1} - 1\)
+
+2. **Which traversal visits root first?**
+   - a) Inorder
+   - b) Preorder âœ“
+   - c) Postorder
+   - d) Level-order
+
+3. **Level-order traversal uses what data structure?**
+   - a) Stack
+   - b) Queue âœ“
+   - c) Priority queue
+   - d) Hash table
+
+4. **Which two traversals uniquely reconstruct a binary tree?**
+   - a) Preorder + postorder
+   - b) Inorder + preorder âœ“
+   - c) Inorder + level-order
+   - d) Any two
+
+5. **What does a threaded tree reuse?**
+   - a) Node values
+   - b) Null pointers âœ“
+   - c) Leaf nodes
+   - d) Memory allocator
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

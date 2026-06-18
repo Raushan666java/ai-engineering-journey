@@ -1,10 +1,10 @@
-﻿# Chapter 38: Laravel General Interview Q&A
+# Chapter 38: Laravel General Interview Q&A
 
 ---
 
 ## 1. Laravel Fundamentals & Architecture
 
-![Laravel General Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/38-interview-general.png)
+![Laravel General Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/38-interview-general.png)
 
 
 ### Q1: Explain the Laravel request lifecycle.

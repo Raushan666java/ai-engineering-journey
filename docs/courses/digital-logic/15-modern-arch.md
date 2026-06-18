@@ -1,5 +1,8 @@
 # Chapter 15: Modern Architectures
 
+> **Prereq:** Chapter 14 (I/O) â€” modern systems integrate I/O with multi-core CPUs via coherent interconnects.
+> **Next:** This is the final chapter â€” review the full digital-logic roadmap from gates to modern processors.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -10,9 +13,37 @@ By the conclusion of this chapter, the student shall be able to:
 4. Analyse GPU architecture and the CUDA programming model
 5. Discuss speculative execution and its security implications
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Superscalar | Multiple instructions per cycle | Beyond pipelining â€” ILP |
+| VLIW | Compiler-managed parallelism | Simpler hardware, exposed ILP |
+| Multi-Core | Multiple CPUs on one die | Parallel computing mainstream |
+| Cache Coherence | MESI protocol | Ensures consistent data across cores |
+| GPU/SIMT | Thousands of threads | Massive throughput for parallel workloads |
+| Speculative Execution | Execute before branch resolved | Performance boost, but Spectre/Meltdown |
+
+```mermaid
+flowchart LR
+    A[Modern CPU] --> B[Superscalar]
+    A --> C[Multi-Core]
+    A --> D[GPU]
+    B --> E[ILP]
+    C --> F[Cache Coherence]
+    C --> G[Shared Memory]
+    D --> H[SIMT / CUDA]
+    style A fill:#e1f5fe
+    style B fill:#c8e6c9
+    style C fill:#c8e6c9
+    style D fill:#c8e6c9
+```
+
+> **One-Sentence Takeaway:** Modern architectures push beyond simple pipelining â€” superscalar, multi-core, and GPU parallelism exploit instruction-, thread-, and data-level parallelism, while cache coherence and speculative execution introduce both performance and security challenges.
+
 ## Theory
 
-![Modern Computer Architectures Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch15-modern-arch.png)
+![Modern Computer Architectures Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch15-modern-arch.png)
 
 ### 15.1 Superscalar Architecture
 
@@ -141,7 +172,7 @@ Vector processing provides high computational throughput for regular data-parall
 
 Speculative execution allows the processor to execute instructions before it is certain that they should be executed. Results are stored in the reorder buffer and committed only when the speculation is confirmed (e.g., branch prediction is correct).
 
-#### 15.6.1 Security Implications — Spectre and Meltdown
+#### 15.6.1 Security Implications â€” Spectre and Meltdown
 
 Speculative execution introduces side-channel vulnerabilities:
 
@@ -202,6 +233,32 @@ A program is 90% parallelisable (can run on multiple cores) and 10% serial. Calc
 4 cores: Speedup = 1 / (0.10 + 0.90/4) = 1 / (0.10 + 0.225) = 1 / 0.325 = 3.08.
 16 cores: Speedup = 1 / (0.10 + 0.90/16) = 1 / (0.10 + 0.05625) = 1 / 0.15625 = 6.40.
 
+### Concept Comparison
+
+| Architecture | Parallelism | Scheduling | Best For |
+|-------------|-------------|-----------|----------|
+| Superscalar | ILP (dynamic) | Hardware | General purpose |
+| VLIW | ILP (static) | Compiler | DSP, embedded |
+| Multi-Core | TLP | Software | All general workloads |
+| GPU/SIMT | DLP | Hardware + software | Graphics, ML, HPC |
+
+### Quick Reference
+
+| Metric | Formula | Example |
+|--------|---------|---------|
+| Superscalar speedup | CPI_scalar / CPI_super | 1.5 / 0.556 = 2.70 |
+| GPU peak GFLOPS | cores Ã— 2 FMA Ã— freq | 1280 Ã— 2 Ã— 1.5 = 3.84 TFLOPS |
+| Amdahl speedup | 1 / (S + P/N) | 1 / (0.1 + 0.9/16) = 6.40 |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | ARM DynamIQ, x86 hybrid core | Big.LITTLE, P-core/E-core |
+| Embedded Systems | VLIW in DSPs | Compiler-scheduled parallelism for low power |
+| Digital Circuits | FPGA soft superscalar cores | Research on custom CPU design |
+| Research | Side-channel attacks | Spectre/Meltdown prevention in future ISAs |
+
 ## Summary
 
 - Superscalar processors exploit ILP by issuing multiple instructions per cycle with out-of-order execution.
@@ -245,3 +302,28 @@ Show a worked example of the renaming process for the instruction sequence:
 ADD R1, R2, R3
 SUB R2, R1, R4
 MUL R5, R1, R6
+
+### Chapter Quiz
+
+1. Superscalar processors achieve higher IPC by:
+   - A) Increasing the clock frequency
+   - B) Issuing multiple instructions per cycle
+   - C) Using larger caches
+   - D) Reducing pipeline depth
+
+2. The MESI protocol ensures:
+   - A) Instructions execute in order
+   - B) Cache coherence across multiple cores
+   - C) Data is encrypted in memory
+   - D) Virtual memory address translation
+
+3. VLIW differs from superscalar because:
+   - A) VLIW uses a deeper pipeline
+   - B) Instruction scheduling is done by the compiler, not hardware
+   - C) VLIW processors have multiple cores
+   - D) VLIW supports out-of-order execution
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

@@ -1,10 +1,37 @@
 # Chapter 8: Runtime Environment
 
+> **Prereq:** Chapter 7 (Type Checking) â€” types determine how values are stored and passed.
+> **Next:** Chapter 9 (Code Generation) â€” the runtime environment guides where code places data.
+
 ## Learning Objectives
 
-![Runtime Environment](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/compiler-design/ch08-runtime-env.png)
+![Runtime Environment](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/compiler-design/ch08-runtime-env.png)
 
 After completing this chapter, students will be able to: design activation records for procedure invocations; allocate storage on the stack and heap; distinguish static scoping from dynamic scoping; implement call-by-value, call-by-reference, and call-by-name parameter passing; manage variable-length data on the stack and heap; and compare garbage collection strategies including reference counting, mark-sweep, copying, and generational collection.
+
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Activation Records | Stack frame layout for calls | Every function call needs memory management |
+| Calling Conventions | Register vs stack argument passing | ABI compatibility between compilers |
+| Static vs Dynamic Scoping | Compile-time vs runtime name resolution | Language semantics affect variable binding |
+| Parameter Passing | Value vs reference vs name | Controls caller-callee data flow |
+| Garbage Collection | Automated memory reclamation | Prevents memory leaks in managed languages |
+
+```mermaid
+flowchart LR
+    A[Procedure Call] --> B[Activation Record]
+    B --> C[Stack Allocation]
+    B --> D[Calling Convention]
+    C --> E[Heap Allocation]
+    D --> F{Name Resolution}
+    E --> G[GC Strategy]
+    F --> H[Release Memory]
+    G --> H
+    style A fill:#e1f5fe
+    style H fill:#c8e6c9
+```
 
 ## Theory
 
@@ -13,6 +40,8 @@ After completing this chapter, students will be able to: design activation recor
 An **activation record** (stack frame) is the storage area allocated for each procedure invocation. It typically contains: actual parameters (evaluated arguments), the return value (or a pointer to its storage), a control link (pointer to the previous activation for stack unwinding), an access link (for nonlocal variable access in nested-scope languages), saved machine registers, local variables, and temporaries. The layout is determined at compile time, though variable-length data may require runtime size computation.
 
 The compiler generates code that references fields within the activation record at fixed offsets from a **frame pointer** (FP). The stack pointer (SP) points to the current top of the stack. The FP provides a stable reference even as SP changes during expression evaluation. Arguments are typically at the highest addresses, followed by the control link, saved registers, local variables, and temporaries.
+
+> **Warning:** Frame-pointer elimination (omitting the frame pointer) saves a register and reduces prologue/epilogue code, but makes stack trace generation and debugging harder â€” production vs debug builds choose differently.
 
 ### Calling Conventions
 
@@ -27,6 +56,8 @@ The standard call sequence: (1) caller evaluates arguments and places them in re
 Objects with lifetimes extending beyond the creating procedure require **heap allocation**. The heap is a region of memory for arbitrary-size blocks allocated in any order. Allocation via `new` or `malloc` obtains heap memory; deallocation via `delete` or `free`, or automatic garbage collection, releases it. Heap management strategies include free lists (linked lists of available blocks), buddy systems (splitting into powers of two), and slab allocators (caching frequently-sized objects).
 
 **Fragmentation** is a chronic heap problem. External fragmentation occurs when free space is divided into small blocks between allocated objects. Internal fragmentation occurs when allocated blocks are larger than requested. Compacting collectors (discussed below) address external fragmentation.
+
+> **One-Sentence Takeaway:** The runtime environment divides memory into stack (procedure-call-driven LIFO allocation) and heap (arbitrary-lifetime allocation) â€” the stack is managed by conventions, the heap by allocation and reclamation strategies.
 
 ### Static versus Dynamic Scoping
 
@@ -56,6 +87,8 @@ Garbage collection reclaims heap memory that is no longer reachable from the roo
 
 **Copying collection**: divides the heap into two semi-spaces. Objects are allocated in from-space. When full, live objects are copied (traced and relocated) to to-space, then the roles swap. Copying collects only live objects, compacts memory, and handles cycles. The cost is that only half the heap is usable at once.
 
+> **Pro Tip:** Modern runtimes (Java HotSpot, .NET CLR, V8) use generational collection precisely because empirical data across languages confirms the weak generational hypothesis â€” optimizing for short-lived objects yields the best throughput per pause.
+
 **Generational collection**: exploits the weak generational hypothesis that most objects die young. The nursery (young generation) is collected frequently with a copying collector. Objects surviving multiple nursery collections are promoted to the older generation, collected less often (typically with mark-sweep or mark-compact). Generational collection reduces pause times by focusing on high-yield, small regions.
 
 ## Example
@@ -63,6 +96,33 @@ Garbage collection reclaims heap memory that is no longer reachable from the roo
 ### Example 8.1: Activation Record for a C Function
 
 Function `int f(int x, int y) { int z[100]; return x + y + z[0]; }`. The activation record on x86-64 contains: return address (8 bytes), saved RBP (8 bytes), local array z (400 bytes). Parameters x and y arrive in RDI and RSI. The frame pointer RBP is set to the saved RBP location, and SP is decremented by approximately 416 bytes.
+
+### Concept Comparison
+
+| GC Strategy | Handles Cycles | Compacts | Pause Time | Memory Overhead |
+|-------------|---------------|----------|------------|-----------------|
+| Reference Counting | No | No | Incremental | High (per-object count) |
+| Mark-Sweep | Yes | No | Heap-wide | Low |
+| Copying | Yes | Yes | Live-data | 2Ã— heap (semi-space) |
+| Generational | Yes | Yes (nursery) | Small regions | Moderate |
+
+### Quick Reference
+
+| Memory Region | Allocation | Lifetime | Deallocation |
+|---------------|-----------|----------|--------------|
+| Stack | SP decrement | Procedure scope | SP restore |
+| Heap | malloc/new | Arbitrary | free/GC |
+| Static data | Linker | Program lifetime | Program exit |
+| Code segment | Loader | Program lifetime | Program exit |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Language Design | Runtime semantics for new languages | Memory model defines language capability |
+| Systems Programming | C/C++ manual memory management | Understanding heap vs stack prevents bugs |
+| Web Development | JavaScript V8 engine | GC design directly affects web app performance |
+| Tooling | Memory profilers and leak detectors | Deep knowledge of runtime yields better tooling |
 
 ## Summary
 
@@ -82,9 +142,34 @@ Runtime organization manages program storage during execution. Activation record
 
 1. For nested Pascal-like procedures f and g with g calling f, draw the activation stack with access links. Show how f resolves a nonlocal variable declared in the outer scope.
 2. Simulate reference counting on a circular list. Show why the cycle is not reclaimed and describe how a cycle-detection pass could help.
-3. Given 128 MB heap with 40 MB live data, compare collection costs: mark-sweep (mark 40 MB, sweep 128 MB). Copying (two 64 MB semi-spaces, copy 40 MB). Generational (8 MB nursery, 120 MB tenured, trace nursery: 8 MB × 30% live = 2.4 MB). Which does the least work? Which has the lowest memory overhead?
+3. Given 128 MB heap with 40 MB live data, compare collection costs: mark-sweep (mark 40 MB, sweep 128 MB). Copying (two 64 MB semi-spaces, copy 40 MB). Generational (8 MB nursery, 120 MB tenured, trace nursery: 8 MB Ã— 30% live = 2.4 MB). Which does the least work? Which has the lowest memory overhead?
 4. Write short C functions demonstrating call-by-value semantics and call-by-reference semantics via pointers.
 
 ### Challenge Problem
 
 1. Implement a mark-sweep collector in C. Manage a 64 KB heap with a free list, allocate via a custom malloc, mark via stack-based DFS from the root set, and sweep by rebuilding the free list. Demonstrate by allocating a tree of objects, removing references to some subtrees, invoking the collector, and verifying reclamation by comparing the free list before and after collection. Print all free blocks with their addresses and sizes.
+
+### Chapter Quiz
+
+1. What is the primary purpose of a frame pointer?
+   - A) To point to the current top of the stack
+   - B) To provide a stable reference for accessing activation record fields while SP changes
+   - C) To store the return address of a function call
+   - D) To count the number of active frames
+
+2. Which garbage collection strategy cannot reclaim cyclic data structures?
+   - A) Mark-Sweep
+   - B) Copying collection
+   - C) Reference counting
+   - D) Generational collection
+
+3. Call by name corresponds to which evaluation strategy in functional languages?
+   - A) Strict evaluation
+   - B) Eager evaluation
+   - C) Lazy evaluation
+   - D) Call by need
+
+<details>
+<summary>Answers</summary>
+1. B, 2. C, 3. C
+</details>

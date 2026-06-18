@@ -1,10 +1,10 @@
-﻿# Chapter 44: Marketing & Advertising â€” Interview Q&A
+# Chapter 44: Marketing & Advertising â€” Interview Q&A
 
 ---
 
 ## 1. Marketing Domain Knowledge
 
-![Marketing Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/44-interview-marketing.png)
+![Marketing Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/44-interview-marketing.png)
 
 
 **Q1: What are the core components of a campaign management system, and how do they interact?**

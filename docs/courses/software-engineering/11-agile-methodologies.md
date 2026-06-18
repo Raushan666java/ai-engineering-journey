@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: explain the Scrum fr
 
 ## Theory
 
-![Agile Lifecycle Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/11-agile-methodologies.png)
+![Agile Lifecycle Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/11-agile-methodologies.png)
 
 ### Agile Fundamentals
 
@@ -22,7 +22,7 @@ Scrum is a lightweight framework for managing complex work. It is founded on the
 
 The Product Owner is responsible for maximising the value of the product resulting from the work of the Development Team. The Product Owner manages the Product Backlog, clearly expresses backlog items, orders them to achieve goals, and ensures that the backlog is visible and understood. The Product Owner is a single person, not a committee.
 
-The Development Team consists of professionals who deliver potentially releasable increments at the end of each Sprint. Development Teams are self-organising — they decide how to best accomplish their work — and cross-functional — they possess all the skills necessary to create the product increment. The optimal team size is small enough to remain nimble but large enough to complete significant work, typically three to nine members.
+The Development Team consists of professionals who deliver potentially releasable increments at the end of each Sprint. Development Teams are self-organising â€” they decide how to best accomplish their work â€” and cross-functional â€” they possess all the skills necessary to create the product increment. The optimal team size is small enough to remain nimble but large enough to complete significant work, typically three to nine members.
 
 The Scrum Master is responsible for ensuring that Scrum is understood and enacted. The Scrum Master serves the Product Owner by facilitating stakeholder collaboration and backlog management, serves the Development Team by coaching self-organisation and removing impediments, and serves the organisation by leading Scrum adoption.
 
@@ -84,7 +84,7 @@ Velocity measures the number of story points a team completes per Sprint. Veloci
 
 ### Agile Testing
 
-Agile testing integrates testing into the development process rather than treating it as a separate phase. The agile testing quadrants, defined by Crispin and Gregory, classify tests into four categories: Q1 — technology-facing tests that support the team (unit tests, component tests); Q2 — business-facing tests that support the team (functional tests, story tests); Q3 — business-facing tests that critique the product (exploratory testing, usability testing); and Q4 — technology-facing tests that critique the product (performance testing, security testing).
+Agile testing integrates testing into the development process rather than treating it as a separate phase. The agile testing quadrants, defined by Crispin and Gregory, classify tests into four categories: Q1 â€” technology-facing tests that support the team (unit tests, component tests); Q2 â€” business-facing tests that support the team (functional tests, story tests); Q3 â€” business-facing tests that critique the product (exploratory testing, usability testing); and Q4 â€” technology-facing tests that critique the product (performance testing, security testing).
 
 In agile testing, the whole team is responsible for quality, not just testers. Test automation is essential, particularly for the Q1 and Q2 quadrants. The test automation pyramid applies: a broad base of unit tests, a middle layer of service tests, and a narrow layer of end-to-end tests.
 
@@ -103,15 +103,15 @@ A twenty-person startup adopted Scrum to manage its SaaS product development. Tw
 | User registration | 5 | Done | Alice |
 | Search by keyword | 8 | In Progress | Bob |
 | Payment integration | 13 | In Review | Carol |
-| Password reset | 3 | To Do | — |
+| Password reset | 3 | To Do | â€” |
 
 ### Template: Kanban Board
 
 | To Do (WIP: 5) | In Dev (WIP: 3) | Review (WIP: 2) | Done |
 |----------------|-----------------|-----------------|------|
 | Story A | Story D | Story G | Story J |
-| Story B | Story E | — | Story K |
-| Story C | — | — | — |
+| Story B | Story E | â€” | Story K |
+| Story C | â€” | â€” | â€” |
 
 ## Summary
 

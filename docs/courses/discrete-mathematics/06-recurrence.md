@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Recurrence Relations Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/06-recurrence.png)
+![Recurrence Relations Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/06-recurrence.png)
 
 After completing this chapter, you will be able to:
 
@@ -79,24 +79,24 @@ The generating function for $a_n = n$ is $G(x) = \frac{x}{(1 - x)^2}$.
 
 **Example 6.1** (Iteration). Solve $a_n = a_{n-1} + 3$, $a_0 = 2$.
 
-*Solution.* $a_1 = 5$, $a_2 = 8$, $a_3 = 11$ — pattern $a_n = 2 + 3n$. Induction confirms.
+*Solution.* $a_1 = 5$, $a_2 = 8$, $a_3 = 11$ â€” pattern $a_n = 2 + 3n$. Induction confirms.
 
 **Example 6.2** (Backward substitution). Solve $a_n = 2a_{n-1}$, $a_0 = 3$.
 
 *Solution.* $a_n = 2a_{n-1} = 2(2a_{n-2}) = \cdots = 2^n a_0 = 3 \cdot 2^n$.
 
-**Example 6.3** (Characteristic equation — distinct roots). Solve $a_n = a_{n-1} + 2a_{n-2}$, $a_0 = 2$, $a_1 = 3$.
+**Example 6.3** (Characteristic equation â€” distinct roots). Solve $a_n = a_{n-1} + 2a_{n-2}$, $a_0 = 2$, $a_1 = 3$.
 
 *Solution.* Characteristic: $r^2 - r - 2 = 0 \implies r = 2$ or $r = -1$. General: $a_n = \alpha 2^n + \beta (-1)^n$. Using $a_0 = 2 \implies \alpha + \beta = 2$. $a_1 = 3 \implies 2\alpha - \beta = 3$. Solving: $\alpha = 5/3$, $\beta = 1/3$. So $a_n = \frac{5}{3} 2^n + \frac{1}{3} (-1)^n$.
 
-**Example 6.4** (Characteristic — repeated root). Solve $a_n = 4a_{n-1} - 4a_{n-2}$, $a_0 = 1$, $a_1 = 4$.
+**Example 6.4** (Characteristic â€” repeated root). Solve $a_n = 4a_{n-1} - 4a_{n-2}$, $a_0 = 1$, $a_1 = 4$.
 
 *Solution.* $r^2 - 4r + 4 = 0 \implies (r-2)^2 = 0 \implies r = 2$ (multiplicity 2). General: $a_n = (\alpha + \beta n)2^n$. $a_0 = \alpha = 1$. $a_1 = (\alpha + \beta)2 = (1+\beta)2 = 4 \implies \beta = 1$. So $a_n = (1 + n)2^n$.
 
 **Example 6.5** (Nonhomogeneous). Solve $a_n = a_{n-1} + 2n$, $a_0 = 1$.
 
 *Solution.* Homogeneous part: $a_n^{(h)} = \alpha \cdot 1^n = \alpha$. Particular: try $a_n^{(p)} = An + B$:
-$An + B = A(n-1) + B + 2n \implies An + B = An - A + B + 2n \implies 0 = -A + 2n \implies A = 2n$ (contradiction — degree mismatch). Try $a_n^{(p)} = An^2 + Bn$:
+$An + B = A(n-1) + B + 2n \implies An + B = An - A + B + 2n \implies 0 = -A + 2n \implies A = 2n$ (contradiction â€” degree mismatch). Try $a_n^{(p)} = An^2 + Bn$:
 $An^2 + Bn = A(n-1)^2 + B(n-1) + 2n = A(n^2 - 2n + 1) + Bn - B + 2n$
 Simplify: $An^2 + Bn = An^2 + (-2A + B + 2)n + (A - B)$
 Compare coefficients: $A = A$ (ok); $B = -2A + B + 2 \implies 0 = -2A + 2 \implies A = 1$; $0 = A - B \implies B = 1$.

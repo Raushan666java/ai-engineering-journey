@@ -12,7 +12,7 @@ After studying this chapter, students will be able to:
 
 ## 12.1 The Problem with Raw `new`/`delete`
 
-![Smart Pointers Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/12-smart-pointers.png)
+![Smart Pointers Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/12-smart-pointers.png)
 
 Manual memory management is error-prone:
 
@@ -62,10 +62,10 @@ arr[0] = 42;
 ```
 
 Key operations:
-- `release()` — relinquish ownership, return raw pointer
-- `reset(p)` — delete current object, take ownership of `p`
-- `get()` — return raw pointer (non-owning)
-- `swap(other)` — swap managed objects
+- `release()` â€” relinquish ownership, return raw pointer
+- `reset(p)` â€” delete current object, take ownership of `p`
+- `get()` â€” return raw pointer (non-owning)
+- `swap(other)` â€” swap managed objects
 
 ## 12.3 std::shared_ptr
 
@@ -105,11 +105,11 @@ std::unique_ptr<MyClass> ptr(new MyClass(arg1, arg2));
 
 `make_shared` allocates the object and control block in a single allocation, improving cache locality and reducing overhead. `make_unique` was added in C++14 (it is `std::make_unique`).
 
-The exception-safety concern: `f(unique_ptr<T>(new T), other_func())` — if `other_func` throws after `new T` but before `unique_ptr` construction, a leak occurs. `make_unique` eliminates this window.
+The exception-safety concern: `f(unique_ptr<T>(new T), other_func())` â€” if `other_func` throws after `new T` but before `unique_ptr` construction, a leak occurs. `make_unique` eliminates this window.
 
 ## 12.5 std::weak_ptr
 
-`weak_ptr` provides a non-owning "weak reference" to a `shared_ptr`-managed object. It does not affect the reference count. To access the object, lock it—which returns a `shared_ptr` (or null if the object was deleted).
+`weak_ptr` provides a non-owning "weak reference" to a `shared_ptr`-managed object. It does not affect the reference count. To access the object, lock itâ€”which returns a `shared_ptr` (or null if the object was deleted).
 
 ```cpp
 #include <memory>
@@ -175,7 +175,7 @@ int main() {
     a->next = b;
     b->next = a;      // Cycle: neither destructor runs
     std::cout << a.use_count() << '\n';  // 2
-}   // Memory leak — "Destroyed" never printed
+}   // Memory leak â€” "Destroyed" never printed
 ```
 
 The fix: use `weak_ptr` for back-references:

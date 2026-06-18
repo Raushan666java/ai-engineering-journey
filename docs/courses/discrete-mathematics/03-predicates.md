@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Predicates and Quantifiers Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/03-predicates.png)
+![Predicates and Quantifiers Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/03-predicates.png)
 
 After completing this chapter, you will be able to:
 
@@ -85,10 +85,10 @@ An argument form with quantifiers is **valid** iff whenever all premises are tru
 
 **Example 3.1** (Truth value). Let domain be $\mathbb{Z}$. Determine truth:
 
-- $\forall x\; (x^2 \geq 0)$: True — squares of integers are nonnegative.
-- $\exists x\; (x^2 = 2)$: False — no integer squares to 2.
-- $\forall x\; \exists y\; (y = x^2)$: True — for each $x$, we can choose $y = x^2$.
-- $\exists y\; \forall x\; (y = x^2)$: False — no single integer equals all squares.
+- $\forall x\; (x^2 \geq 0)$: True â€” squares of integers are nonnegative.
+- $\exists x\; (x^2 = 2)$: False â€” no integer squares to 2.
+- $\forall x\; \exists y\; (y = x^2)$: True â€” for each $x$, we can choose $y = x^2$.
+- $\exists y\; \forall x\; (y = x^2)$: False â€” no single integer equals all squares.
 
 **Example 3.2** (Translation). Translate "Every student in this class has taken exactly one math course."
 

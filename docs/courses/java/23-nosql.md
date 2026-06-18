@@ -1,8 +1,8 @@
 # Spring Data for NoSQL
 
-Relational databases have dominated enterprise storage for decades, but the rise of web-scale applications, unstructured data, and polyglot persistence has made NoSQL databases indispensable. Spring Data provides a unified programming model across SQL and NoSQL stores, reducing the boilerplate of connecting to MongoDB, Redis, Elasticsearch, and others while keeping the abstractions familiar — repositories, templates, and consistent exception hierarchies.
+Relational databases have dominated enterprise storage for decades, but the rise of web-scale applications, unstructured data, and polyglot persistence has made NoSQL databases indispensable. Spring Data provides a unified programming model across SQL and NoSQL stores, reducing the boilerplate of connecting to MongoDB, Redis, Elasticsearch, and others while keeping the abstractions familiar â€” repositories, templates, and consistent exception hierarchies.
 
-This chapter covers three major NoSQL engines — MongoDB (document store), Redis (key-value / in-memory data structure store), and Elasticsearch (search engine) — through the lens of Spring Data. Every example is complete and compilable against the respective database.
+This chapter covers three major NoSQL engines â€” MongoDB (document store), Redis (key-value / in-memory data structure store), and Elasticsearch (search engine) â€” through the lens of Spring Data. Every example is complete and compilable against the respective database.
 
 ---
 
@@ -24,7 +24,7 @@ By the end of this chapter you should be able to:
 
 ## MongoDB with Spring Data
 
-![Spring Data NoSQL Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/23-nosql.png)
+![Spring Data NoSQL Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/23-nosql.png)
 
 MongoDB is a document-oriented NoSQL database that stores data in BSON (Binary JSON) documents. Spring Data MongoDB maps Java objects to MongoDB documents with annotations and provides both repository-level abstractions and a lower-level `MongoTemplate`.
 
@@ -141,7 +141,7 @@ public class Product {
 }
 ```
 
-Embedded documents do not need `@Document` — they are serialized inline:
+Embedded documents do not need `@Document` â€” they are serialized inline:
 
 ```java
 package com.course.nosql.mongo;
@@ -663,7 +663,7 @@ public class CategoryStats {
 
 ### Geo-Spatial Queries
 
-MongoDB supports rich geo-spatial queries — finding documents near a point, within a polygon, or intersecting a geometry.
+MongoDB supports rich geo-spatial queries â€” finding documents near a point, within a polygon, or intersecting a geometry.
 
 ```java
 package com.course.nosql.mongo;
@@ -2722,7 +2722,7 @@ public class MultiStoreProductService {
         try {
             articleRepository.deleteById("product_" + id);
         } catch (Exception e) {
-            // Log but continue — MongoDB is source of truth
+            // Log but continue â€” MongoDB is source of truth
         }
         redisTemplate.delete("product:" + id);
     }
@@ -2845,10 +2845,10 @@ public class ProductQueryService {
 ### Application Problems
 
 1. **Product Search API**: Build a REST controller with endpoints:
-   - `POST /api/products` — create a product in MongoDB
-   - `GET /api/products/search?q=...&category=...&minPrice=...&maxPrice=...` — search across MongoDB and Elasticsearch
-   - `GET /api/products/{id}` — read from Redis cache with MongoDB fallback
-   - `DELETE /api/products/{id}` — delete from all three stores with compensating actions for partial failures
+   - `POST /api/products` â€” create a product in MongoDB
+   - `GET /api/products/search?q=...&category=...&minPrice=...&maxPrice=...` â€” search across MongoDB and Elasticsearch
+   - `GET /api/products/{id}` â€” read from Redis cache with MongoDB fallback
+   - `DELETE /api/products/{id}` â€” delete from all three stores with compensating actions for partial failures
 
 2. **Session Store**: Implement a Redis-backed session store that:
    - Stores user sessions with `@RedisHash` and configurable TTL
@@ -2857,7 +2857,7 @@ public class ProductQueryService {
    - Handles bulk session invalidation for a user
 
 3. **Analytics Dashboard**: Build MongoDB aggregation pipelines that produce:
-   - Top 10 products by revenue (quantity × price)
+   - Top 10 products by revenue (quantity Ã— price)
    - Product count by category with average rating
    - Monthly sales trends with running totals
    - Supplier performance metrics (total products, average price, stock levels)
@@ -2898,7 +2898,7 @@ public class ProductQueryService {
    - Incremental Elasticsearch indexing on content publish
    - Search with highlighting, faceted by content type and tags
    - Scheduled re-indexing for consistency verification
-   - Graceful degradation — if Elasticsearch is down, fall back to MongoDB regex search
+   - Graceful degradation â€” if Elasticsearch is down, fall back to MongoDB regex search
 
 5. **Redis Streams Order Pipeline**: Implement an order processing pipeline entirely with Redis Streams:
    - Orders published to a stream from a REST endpoint

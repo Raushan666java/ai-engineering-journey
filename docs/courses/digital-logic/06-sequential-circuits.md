@@ -1,8 +1,11 @@
 # Chapter 6: Sequential Circuits
 
+> **Prereq:** Chapter 5 (Flip-Flops) â€” sequential circuits use flip-flops as their memory elements.
+> **Next:** Chapter 7 (FSM and Memory) â€” state machines are analysed further and connected to memory systems.
+
 ## Learning Objectives
 
-![Sequential Circuits](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch06-sequential-circuits.png)
+![Sequential Circuits](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch06-sequential-circuits.png)
 
 By the conclusion of this chapter, the student shall be able to:
 
@@ -13,7 +16,30 @@ By the conclusion of this chapter, the student shall be able to:
 5. Implement sequence detectors for arbitrary bit patterns
 6. Perform state minimisation and state assignment
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Mealy Machine | Output depends on input + state | Reacts faster than Moore |
+| Moore Machine | Output depends only on state | Simpler timing, glitch-free |
+| Counters | Ripple vs synchronous | Frequency division, event counting |
+| Sequence Detector | Recognise bit patterns | Protocol decoding, pattern matching |
+| State Minimisation | Reduce redundant states | Smaller, cheaper circuits |
+
+```mermaid
+flowchart LR
+    A[Inputs] --> B[Combinational Logic]
+    B --> C[Outputs]
+    B --> D[Flip-Flops]
+    D --> B
+    D --> E[Clock]
+    style B fill:#e1f5fe
+    style C fill:#c8e6c9
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** Sequential circuits add state to logic â€” outputs depend on both current inputs and past history, with Mealy and Moore as the two canonical state-machine models that map directly to hardware.
 
 ### 6.1 Sequential Circuit Structure
 
@@ -185,6 +211,32 @@ A Johnson (twisted-ring) counter connects the complement of the last flip-flop's
 For a 4-bit Johnson counter starting at 0000:
 0000, 0001, 0011, 0111, 1111, 1110, 1100, 1000, then back to 0000.
 
+### Concept Comparison
+
+| Aspect | Mealy Machine | Moore Machine |
+|--------|--------------|--------------|
+| Output depends on | Input + State | State only |
+| State count | Fewer (output combinational) | More (output requires state) |
+| Timing | Asynchronous faster | Synchronous, glitch-free |
+| Design complexity | Higher (output logic) | Simpler |
+
+### Quick Reference
+
+| Counter Type | Speed | Complexity | Best For |
+|-------------|-------|-----------|----------|
+| Ripple | Slower (cascade) | Lowest | Low-speed division |
+| Synchronous | Fast (parallel clock) | Moderate | General purpose |
+| Johnson | Medium | Low | Simple n-states |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | Program counter, microcode sequencer | Counters drive instruction cycles |
+| Embedded Systems | Timer peripherals, baud rate gen | Sequential circuits generate timing |
+| Digital Circuits | Protocol decoders (UART, SPI) | Sequence detectors recognise start bits |
+| Research | Asynchronous sequential design | Clockless circuits for ultra-low power |
+
 ## Summary
 
 - Sequential circuits incorporate memory; outputs depend on both inputs and state.
@@ -222,6 +274,31 @@ Design a 4-bit universal shift register using JK flip-flops. The register suppor
 - S_1 S_0 = 00: Hold (no change)
 - S_1 S_0 = 01: Shift right (serial input SR)
 - S_1 S_0 = 10: Shift left (serial input SL)
-- S_1 S_0 = 11: Parallel load (inputs P_3, P_2, P_1, P_0)
+    - S_1 S_0 = 11: Parallel load (inputs P_3, P_2, P_1, P_0)
 
 Derive the J and K input equations for each flip-flop and draw the complete circuit.
+
+### Chapter Quiz
+
+1. In a Mealy machine, the output depends on:
+   - A) Current state only
+   - B) Input only
+   - C) Current state and input
+   - D) Next state only
+
+2. A synchronous counter differs from a ripple counter because:
+   - A) All flip-flops share the same clock
+   - B) It uses fewer flip-flops
+   - C) It counts only up
+   - D) It needs no combinational logic
+
+3. State minimisation:
+   - A) Increases circuit speed
+   - B) Removes equivalent states to reduce complexity
+   - C) Converts Mealy to Moore
+   - D) Adds more flip-flops
+
+<details>
+<summary>Answers</summary>
+1. C, 2. A, 3. B
+</details>

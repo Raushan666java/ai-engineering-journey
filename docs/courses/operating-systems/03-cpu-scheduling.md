@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Scheduling Algorithms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/03-cpu-scheduling.png)
+![Scheduling Algorithms](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/03-cpu-scheduling.png)
 
 ### Basic Concepts
 
@@ -22,13 +22,13 @@ CPU scheduling is the foundation of multiprogramming. The **scheduler** selects 
 3. Switches from waiting to ready (I/O completion)
 4. Terminates
 
-When scheduling only happens in cases 1 and 4, the algorithm is **non-preemptive**. Once a process gets the CPU, it keeps it until it voluntarily yields or terminates. Cases 2 and 3 require **preemptive** scheduling — the OS can forcibly remove the CPU from a process.
+When scheduling only happens in cases 1 and 4, the algorithm is **non-preemptive**. Once a process gets the CPU, it keeps it until it voluntarily yields or terminates. Cases 2 and 3 require **preemptive** scheduling â€” the OS can forcibly remove the CPU from a process.
 
 ### Scheduling Criteria
 
 | Metric | Definition | Target |
 |--------|------------|--------|
-| **CPU utilization** | Percentage of time CPU is busy | Maximize (40%–90% typical) |
+| **CPU utilization** | Percentage of time CPU is busy | Maximize (40%â€“90% typical) |
 | **Throughput** | Number of processes completed per time unit | Maximize |
 | **Turnaround time** | Time from submission to completion | Minimize |
 | **Waiting time** | Total time spent in ready queue | Minimize |
@@ -60,13 +60,13 @@ Associates each process with the length of its next CPU burst. When the CPU is a
 - **Non-preemptive**: Once a process gets the CPU, it runs to completion
 - **Preemptive (SRTF)**: If a new process arrives with a shorter burst than the remaining time of the current process, preempt
 
-SJF is **optimal** — it minimizes average waiting time. But it requires knowing the next burst length in advance, which is impossible. Systems use **exponential averaging** to predict:
+SJF is **optimal** â€” it minimizes average waiting time. But it requires knowing the next burst length in advance, which is impossible. Systems use **exponential averaging** to predict:
 
 ```
-τₙ₊₁ = α · tₙ + (1 − α) · τₙ
+Ï„â‚™â‚Šâ‚ = Î± Â· tâ‚™ + (1 âˆ’ Î±) Â· Ï„â‚™
 ```
 
-Where τₙ₊₁ is the predicted next burst, tₙ is the actual last burst, and α controls how quickly the prediction adapts (typically 0.5).
+Where Ï„â‚™â‚Šâ‚ is the predicted next burst, tâ‚™ is the actual last burst, and Î± controls how quickly the prediction adapts (typically 0.5).
 
 #### Priority Scheduling
 
@@ -77,11 +77,11 @@ Each process has a priority (usually a small integer). The CPU is allocated to t
 - **Starvation**: Low-priority processes may never execute
 - **Aging**: Gradually increase the priority of waiting processes to prevent starvation
 
-**Priority inversion**: A high-priority process is indirectly blocked by a low-priority process holding a needed lock. The classic fix is **priority inheritance** — the low-priority process temporarily inherits the high priority.
+**Priority inversion**: A high-priority process is indirectly blocked by a low-priority process holding a needed lock. The classic fix is **priority inheritance** â€” the low-priority process temporarily inherits the high priority.
 
 #### Round Robin (RR)
 
-Built for time-sharing systems. Each process gets a fixed time quantum (10–100ms). When the quantum expires, the process is preempted and moved to the end of the ready queue.
+Built for time-sharing systems. Each process gets a fixed time quantum (10â€“100ms). When the quantum expires, the process is preempted and moved to the end of the ready queue.
 
 ```
 Gantt chart with quantum = 4ms:
@@ -97,7 +97,7 @@ Average waiting time: (6 + 4 + 7) / 3 = 5.67ms
 - Too large: Degrades to FCFS
 - Too small: Too many context switches (overhead)
 
-Context switches are not free. Each switch costs 1–10μs. If quantum = 4ms and switch = 0.1ms, overhead = 0.1/4.1 = 2.4%.
+Context switches are not free. Each switch costs 1â€“10Î¼s. If quantum = 4ms and switch = 0.1ms, overhead = 0.1/4.1 = 2.4%.
 
 ```
 Optimal: quantum should be slightly larger than the typical context switch time
@@ -109,13 +109,13 @@ but small enough to provide good response time.
 The ready queue is partitioned into separate queues, each with its own scheduling algorithm. Processes are permanently assigned to a queue based on type (system processes, interactive, batch).
 
 ```
-High priority ┌──────────────────────┐
-              │  Queue 1 (System)    │  RR (q = 8ms)
-              ├──────────────────────┤
-              │  Queue 2 (Interactive)│  RR (q = 16ms)
-              ├──────────────────────┤
-              │  Queue 3 (Batch)     │  FCFS
-Low priority  └──────────────────────┘
+High priority â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+              â”‚  Queue 1 (System)    â”‚  RR (q = 8ms)
+              â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+              â”‚  Queue 2 (Interactive)â”‚  RR (q = 16ms)
+              â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+              â”‚  Queue 3 (Batch)     â”‚  FCFS
+Low priority  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Scheduling between queues: **fixed-priority** (serve all of Queue 1 first) or **time-slice** (allocate 80% CPU to Queue 1, 20% to Queue 2).
@@ -125,9 +125,9 @@ Scheduling between queues: **fixed-priority** (serve all of Queue 1 first) or **
 Like multilevel queue, but processes **can move between queues**. This allows the scheduler to learn process behavior over time.
 
 **Example (3 queues)**:
-- Q1 — RR, quantum = 8ms, highest priority
-- Q2 — RR, quantum = 16ms
-- Q3 — FCFS, lowest priority
+- Q1 â€” RR, quantum = 8ms, highest priority
+- Q2 â€” RR, quantum = 16ms
+- Q3 â€” FCFS, lowest priority
 
 **Rules**:
 1. A new process enters Q1
@@ -141,7 +141,7 @@ This is the general approach used by Linux, BSD, and other modern OS. It rewards
 
 **Deterministic modeling**: Compute metrics for a fixed workload. Useful for comparing algorithms on the same input.
 
-**Queueing models**: Treat the system as a network of queues. Use Little's law: `n = λ × W` (average queue length = arrival rate × average wait time).
+**Queueing models**: Treat the system as a network of queues. Use Little's law: `n = Î» Ã— W` (average queue length = arrival rate Ã— average wait time).
 
 **Simulation**: Program a model of the system and run it against representative workloads.
 
@@ -150,13 +150,13 @@ This is the general approach used by Linux, BSD, and other modern OS. It rewards
 | System | Scheduler | Key Characteristics |
 |--------|-----------|---------------------|
 | Linux (CFS) | Completely Fair Scheduler | Red-black tree, target latency, virtual runtime |
-| Linux (O(1)) | O(1) Scheduler (2.6.0–2.6.22) | Two arrays (active/expired), fixed time slices |
-| Windows NT | Priority-driven, 32 levels | Variable quantum (6–18 ticks), priority boost |
+| Linux (O(1)) | O(1) Scheduler (2.6.0â€“2.6.22) | Two arrays (active/expired), fixed time slices |
+| Windows NT | Priority-driven, 32 levels | Variable quantum (6â€“18 ticks), priority boost |
 | macOS/XNU | Multi-level feedback + CFS | Combination of BSD and Mach scheduling |
 
 ## Examples
 
-### Example 1: FCFS vs RR — Quantitative Comparison
+### Example 1: FCFS vs RR â€” Quantitative Comparison
 
 ```
 Processes:
@@ -167,14 +167,14 @@ Processes:
 FCFS:
   Gantt:  | P1 |  P2  |  P3  |
   Times:  0    10    15     17
-  Waiting: P1=0, P2=10, P3=15 → Average = 8.33
-  Turnaround: P1=10, P2=15, P3=17 → Average = 14.0
+  Waiting: P1=0, P2=10, P3=15 â†’ Average = 8.33
+  Turnaround: P1=10, P2=15, P3=17 â†’ Average = 14.0
 
 RR (q=5):
   Gantt:  | P1 | P2 | P3 | P1 |
   Times:  0    5   10   12   17
-  Waiting: P1=2, P2=0, P3=5 → Average = 2.33
-  Turnaround: P1=12, P2=10, P3=7 → Average = 9.67
+  Waiting: P1=2, P2=0, P3=5 â†’ Average = 2.33
+  Turnaround: P1=12, P2=10, P3=7 â†’ Average = 9.67
 ```
 
 ### Example 2: Priority Inversion
@@ -185,7 +185,7 @@ RR (q=5):
 
 // 1. P_low acquires lock L
 // 2. P_high preempts P_low
-// 3. P_high tries to acquire lock L → blocked
+// 3. P_high tries to acquire lock L â†’ blocked
 // 4. P_med (medium priority) runs, preventing P_low from releasing L
 // 5. P_high is blocked indefinitely by P_med
 
@@ -228,7 +228,7 @@ int main() {
 - SJF minimizes average waiting time but requires burst prediction
 - Round Robin provides good response time for interactive workloads; quantum size is critical
 - Priority scheduling can starve low-priority processes without aging
-- Multilevel Feedback Queue is the most flexible — it adapts to process behavior
+- Multilevel Feedback Queue is the most flexible â€” it adapts to process behavior
 - Scheduling is about trade-offs: throughput vs fairness vs response time vs overhead
 
 ## Exercises
@@ -249,4 +249,4 @@ int main() {
 
 7. Implement a discrete-event simulator for CPU scheduling. Your program should read a list of (arrival_time, burst_time) pairs and output Gantt charts, average waiting time, and average turnaround time for FCFS, SJF (preemptive), Priority, and RR.
 8. The completely fair scheduler (CFS) in Linux uses a **red-black tree** keyed by **virtual runtime** (`vruntime`). Explain why a red-black tree is used instead of a simple priority queue. What operations must be O(log n) or better?
-9. Write a kernel module (or pseudo-code) that collects per-process scheduling statistics — number of context switches, time in ready queue, CPU burst lengths — and exposes them via `/proc/sched_stats`. What fields would you include in `task_struct`?
+9. Write a kernel module (or pseudo-code) that collects per-process scheduling statistics â€” number of context switches, time in ready queue, CPU burst lengths â€” and exposes them via `/proc/sched_stats`. What fields would you include in `task_struct`?

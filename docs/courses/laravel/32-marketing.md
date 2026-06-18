@@ -1,4 +1,4 @@
-﻿# Chapter 32: Marketing & Advertising Agents
+# Chapter 32: Marketing & Advertising Agents
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![Marketing Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/32-marketing.png)
+![Marketing Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/32-marketing.png)
 
 
 ### 32.1 Marketing Data Models

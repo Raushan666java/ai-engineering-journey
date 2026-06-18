@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Linux Kernel Internals](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/14-linux-kernel.png)
+![Linux Kernel Internals](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/14-linux-kernel.png)
 
 ### Linux Process Model
 
@@ -104,14 +104,14 @@ clone(CLONE_VM | CLONE_FILES | CLONE_SIGHAND | CLONE_THREAD |
 
 ### Linux Scheduler
 
-#### O(1) Scheduler (Linux 2.6.0–2.6.22)
+#### O(1) Scheduler (Linux 2.6.0â€“2.6.22)
 
 The O(1) scheduler maintained two arrays per CPU: **active** and **expired**.
 
 ```
 Priority levels: 0 (highest) to 139 (lowest)
-  - 0–99: Real-time (SCHED_FIFO, SCHED_RR)
-  - 100–139: Normal (SCHED_NORMAL)
+  - 0â€“99: Real-time (SCHED_FIFO, SCHED_RR)
+  - 100â€“139: Normal (SCHED_NORMAL)
 
 Each priority level has a runqueue (list of processes).
 
@@ -122,13 +122,13 @@ struct prio_array {
 };
 ```
 
-When all processes in the active array have exhausted their time slices, the active and expired arrays are swapped — O(1) operation.
+When all processes in the active array have exhausted their time slices, the active and expired arrays are swapped â€” O(1) operation.
 
 **Problems**: Interactive heuristics were complex and sometimes inaccurate.
 
-#### Completely Fair Scheduler (CFS) — Linux 2.6.23+
+#### Completely Fair Scheduler (CFS) â€” Linux 2.6.23+
 
-The CFS, designed by Ingo Molnár, aims to give each process a **fair share** of CPU time. It models the CPU as a perfectly fair multitasking processor.
+The CFS, designed by Ingo MolnÃ¡r, aims to give each process a **fair share** of CPU time. It models the CPU as a perfectly fair multitasking processor.
 
 **Key concepts**:
 
@@ -143,7 +143,7 @@ Red-black tree (keyed by vruntime):
   [v=10]          [v=20]
   /    \          /    \
 [v=5] [v=12]   [v=18] [v=25]
-↑
+â†‘
 Leftmost = next to run
 ```
 
@@ -184,7 +184,7 @@ order 2: [pages 12-15]
 order 3: (empty)
 order 4: [pages 64-79]
 
-Allocation: request 3 pages → 4 pages (next power of 2) → order 2
+Allocation: request 3 pages â†’ 4 pages (next power of 2) â†’ order 2
   - If order 2 list is empty, split order 3, give half back
 ```
 
@@ -196,16 +196,16 @@ The **SLAB allocator** manages kernel objects (task_struct, inode, mm_struct, et
 
 ```
 SLAB Cache for task_struct:
-┌──────────────────────────────────────┐
-│ SLAB 1 (full)                         │
-│ [task][task][task][task][task][task]   │
-├──────────────────────────────────────┤
-│ SLAB 2 (partial)                      │
-│ [task][task][task][  free  ][  free  ]│
-├──────────────────────────────────────┤
-│ SLAB 3 (empty)                        │
-│ [  free  ][  free  ][  free  ][  free]│
-└──────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ SLAB 1 (full)                         â”‚
+â”‚ [task][task][task][task][task][task]   â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ SLAB 2 (partial)                      â”‚
+â”‚ [task][task][task][  free  ][  free  ]â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ SLAB 3 (empty)                        â”‚
+â”‚ [  free  ][  free  ][  free  ][  free]â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 - **kmem_cache_create()**: Create a slab cache for a specific object type
@@ -306,7 +306,7 @@ $ cat /proc/$$/maps     # Memory mappings of the current process
 Linux supports loading and unloading code at runtime via **Loadable Kernel Modules** (LKMs).
 
 ```c
-// hello.c — A minimal kernel module
+// hello.c â€” A minimal kernel module
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
@@ -382,7 +382,7 @@ clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, c
 
 ## Summary
 
-- Linux `task_struct` is a large structure containing all process state (∼2 KB each)
+- Linux `task_struct` is a large structure containing all process state (âˆ¼2 KB each)
 - `clone()` system call with different flags creates processes or threads
 - CFS uses red-black trees keyed by vruntime for fair CPU allocation
 - Buddy allocator manages physical pages in power-of-2 groups

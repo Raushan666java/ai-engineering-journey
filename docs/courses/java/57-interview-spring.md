@@ -1,8 +1,8 @@
-﻿# Spring & Spring Boot Interview Q&A
+# Spring & Spring Boot Interview Q&A
 
 This chapter covers 35+ essential Spring and Spring Boot interview questions from DI/IoC and bean lifecycle through auto-configuration, MVC, data access, security, transactions, and testing. Each answer includes complete, compilable code examples targeting senior-level backend interviews.
 
-![Spring & Spring Boot Interview Topics - Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/57-interview-spring.png)
+![Spring & Spring Boot Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/57-interview-spring.png)
 
 ### Q1: What types of dependency injection does Spring support?
 

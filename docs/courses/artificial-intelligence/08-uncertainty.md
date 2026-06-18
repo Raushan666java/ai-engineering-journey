@@ -41,7 +41,7 @@ flowchart LR
 
 ## Theory
 
-![Uncertainty and Probabilistic Reasoning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch08-uncertainty.png)
+![Uncertainty and Probabilistic Reasoning](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch08-uncertainty.png)
 
 ### The Problem of Uncertainty
 In real-world environments, agents rarely have access to the complete state of the world. Uncertainty arises from:
@@ -55,7 +55,7 @@ In real-world environments, agents rarely have access to the complete state of t
 - **Conditional Probability $P(A|B)$**: The probability of $A$ given that $B$ is known. $P(A|B) = \frac{P(A \wedge B)}{P(B)}$.
 - **Bayes' Rule**: $P(A|B) = \frac{P(B|A)P(A)}{P(B)}$. This is essential for diagnostic reasoning (finding the cause given the effect).
 
-> **One-Sentence Takeaway:** Bayesian Networks factorize the joint probability distribution into local conditional probabilities — representing complex probabilistic relationships with far fewer parameters than a full joint distribution table.
+> **One-Sentence Takeaway:** Bayesian Networks factorize the joint probability distribution into local conditional probabilities â€” representing complex probabilistic relationships with far fewer parameters than a full joint distribution table.
 
 ### Bayesian Networks
 A Bayesian Network is a directed acyclic graph (DAG) where:
@@ -99,29 +99,29 @@ def calculate_joint_prob(b, e, a, j, m, network):
 
 | Inference Method | Type | Exact? | Complexity | Best For |
 |-----------------|:---:|:---:|:---:|---------|
-| Variable Elimination | Exact | ✅ | O(exp treewidth) | Low treewidth BNs |
-| Likelihood Weighting | Approx | ❌ | O(N) | Rare evidence |
-| Rejection Sampling | Approx | ❌ | O(N / P(e)) | Easy-to-satisfy evidence |
-| Gibbs Sampling (MCMC) | Approx | ❌ | O(N × nodes) | High-dimensional posteriors |
+| Variable Elimination | Exact | âœ… | O(exp treewidth) | Low treewidth BNs |
+| Likelihood Weighting | Approx | âŒ | O(N) | Rare evidence |
+| Rejection Sampling | Approx | âŒ | O(N / P(e)) | Easy-to-satisfy evidence |
+| Gibbs Sampling (MCMC) | Approx | âŒ | O(N Ã— nodes) | High-dimensional posteriors |
 
-## Quick Reference — Probability Rules
+## Quick Reference â€” Probability Rules
 
 | Rule | Formula |
 |------|---------|
-| Joint Probability | P(A ∧ B) = P(A|B)P(B) |
+| Joint Probability | P(A âˆ§ B) = P(A|B)P(B) |
 | Bayes' Rule | P(A|B) = P(B|A)P(A) / P(B) |
-| Chain Rule | P(X₁…Xₙ) = ∏ P(Xᵢ | X₁…Xᵢ₋₁) |
-| Law of Total Prob. | P(B) = Σ P(B|Aᵢ)P(Aᵢ) |
+| Chain Rule | P(Xâ‚â€¦Xâ‚™) = âˆ P(Xáµ¢ | Xâ‚â€¦Xáµ¢â‚‹â‚) |
+| Law of Total Prob. | P(B) = Î£ P(B|Aáµ¢)P(Aáµ¢) |
 | Conditional Independence | P(A,B|C) = P(A|C)P(B|C) |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Bayes' Rule | ✅ | ✅ | ✅ | ✅ |
-| Bayesian Networks | ✅ | ✅ | ✅ | ✅ |
-| Variable Elimination | ⬜ | ⬜ | ⬜ | ✅ |
-| MCMC Sampling | ✅ | ✅ | ✅ | ✅ |
+| Bayes' Rule | âœ… | âœ… | âœ… | âœ… |
+| Bayesian Networks | âœ… | âœ… | âœ… | âœ… |
+| Variable Elimination | â¬œ | â¬œ | â¬œ | âœ… |
+| MCMC Sampling | âœ… | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
@@ -131,13 +131,13 @@ def calculate_joint_prob(b, e, a, j, m, network):
 - C) Inductive reasoning
 - D) Abductive reasoning
 
-<details><summary>Answer</summary>B) Bayes' Rule computes P(cause|effect) from P(effect|cause) — diagnostic reasoning from evidence back to cause.</details>
+<details><summary>Answer</summary>B) Bayes' Rule computes P(cause|effect) from P(effect|cause) â€” diagnostic reasoning from evidence back to cause.</details>
 
 **Q2:** What does the chain rule for Bayesian Networks state?
-- A) P(X₁…Xₙ) = Π P(Xᵢ | Parents(Xᵢ))
-- B) P(X₁…Xₙ) = Π P(Xᵢ)
+- A) P(Xâ‚â€¦Xâ‚™) = Î  P(Xáµ¢ | Parents(Xáµ¢))
+- B) P(Xâ‚â€¦Xâ‚™) = Î  P(Xáµ¢)
 - C) P(A|B) = P(B|A)P(A)
-- D) P(A ∧ B) = P(A)P(B)
+- D) P(A âˆ§ B) = P(A)P(B)
 
 <details><summary>Answer</summary>A) The BN chain rule factorizes the joint as the product of each node's probability conditioned on its parents.</details>
 
@@ -147,11 +147,11 @@ def calculate_joint_prob(b, e, a, j, m, network):
 - C) Number of evidence variables
 - D) Number of CPT entries
 
-<details><summary>Answer</summary>B) Complexity is exponential in the treewidth — the size of the largest intermediate factor during elimination.</details>
+<details><summary>Answer</summary>B) Complexity is exponential in the treewidth â€” the size of the largest intermediate factor during elimination.</details>
 
 ---
 
-> **💡 Pro Tip:** When modeling real-world problems with Bayesian networks, focus on getting the qualitative structure (DAG) right — conditional independence assumptions matter far more than precise probability numbers. Use noisy-OR/MAX for efficient parameterization of causal relationships.
+> **ðŸ’¡ Pro Tip:** When modeling real-world problems with Bayesian networks, focus on getting the qualitative structure (DAG) right â€” conditional independence assumptions matter far more than precise probability numbers. Use noisy-OR/MAX for efficient parameterization of causal relationships.
 
 ---
 

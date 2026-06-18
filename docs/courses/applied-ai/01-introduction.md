@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Applied AI
+# Chapter 1: Introduction to Applied AI
 
 > **Prerequisite:** None  
 > **Next Chapter:** [02 - LangChain & LLM Orchestration](./02-langchain.md)
@@ -56,7 +56,7 @@ The difference is the same as designing a jet engine vs flying a commercial airl
 
 ## 1.2 The Production AI Stack
 
-![Production AI Stack](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch01-production-ai-stack.png)
+![Production AI Stack](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/applied-ai/ch01-production-ai-stack.png)
 
 > **⚠️ Warning:** A common mistake is jumping to model selection before understanding your data pipeline. Ensure data ingestion, storage, and preprocessing are solid first — models are only as good as the data they consume.
 
@@ -64,7 +64,7 @@ The difference is the same as designing a jet engine vs flying a commercial airl
 
 ## 1.3 When to Use Which Tool
 
-![Tool Selection Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/applied-ai/ch01-tool-selection.png)
+![Tool Selection Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/applied-ai/ch01-tool-selection.png)
 
 ```python
 def recommend_tool(problem_description: str) -> str:

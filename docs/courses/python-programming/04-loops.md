@@ -9,7 +9,7 @@ By the end of this chapter, students will be able to:
 - Use `enumerate`, `zip`, `reversed`, and `sorted` for idiomatic iteration
 - Choose the appropriate loop construct for a given problem
 
-![Loops and Iteration](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/04-loops.png)
+![Loops and Iteration](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/04-loops.png)
 
 ## 4.1 The for Loop
 
@@ -52,7 +52,7 @@ for i in range(10, 0, -1):   # 10, 9, ..., 1
     print(i, end=" ")        # 10 9 8 7 6 5 4 3 2 1
 ```
 
-`range()` is lazy — it produces values on demand, not as a list. Cast to `list()` to see all values.
+`range()` is lazy â€” it produces values on demand, not as a list. Cast to `list()` to see all values.
 
 ### 4.1.2 Iterating Over Sequences
 
@@ -71,14 +71,14 @@ for value in numbers:
 Modifying a list while iterating over it is dangerous:
 
 ```python
-# BAD — skips elements
+# BAD â€” skips elements
 numbers = [1, 2, 3, 4, 5]
 for n in numbers:
     if n % 2 == 0:
         numbers.remove(n)
 print(numbers)  # [1, 3, 5]  (works here by luck, fails in general)
 
-# CORRECT — iterate over a copy
+# CORRECT â€” iterate over a copy
 numbers = [1, 2, 3, 4, 5]
 for n in numbers[:]:
     if n % 2 == 0:
@@ -101,7 +101,7 @@ while count < 5:
 Ensure the condition eventually becomes falsy, or use `break`:
 
 ```python
-# Infinite loop — ensure termination
+# Infinite loop â€” ensure termination
 total = 0
 while True:
     n = int(input("Enter a number (0 to quit): "))
@@ -121,7 +121,7 @@ print(f"Total: {total}")
 x = 1.0
 while abs(x ** 2 - 2) > 1e-10:
     x = (x + 2 / x) / 2   # Newton's method for sqrt(2)
-print(f"sqrt(2) ≈ {x}")
+print(f"sqrt(2) â‰ˆ {x}")
 ```
 
 ## 4.3 break and continue
@@ -154,8 +154,8 @@ for i in range(3):
             break       # breaks inner loop only
         print(f"({i},{j})", end=" ")
     print()
-# (0,0) (0,1)? — actually break after j=1, so prints (0,0) then inner loop ends
-# Output: (0,0) (1,0) (2,0) — wait j=0, then j=1 -> break
+# (0,0) (0,1)? â€” actually break after j=1, so prints (0,0) then inner loop ends
+# Output: (0,0) (1,0) (2,0) â€” wait j=0, then j=1 -> break
 # Let's trace: i=0: j=0 -> prints, j=1 -> break. i=1: j=0 prints, j=1 break.
 # (0,0) (1,0) (2,0)
 ```
@@ -299,7 +299,7 @@ for i in range(3):
 # (2,0) (2,1) (2,2)
 ```
 
-Nested loops multiply iterations — O(n*m) complexity. For matrix operations:
+Nested loops multiply iterations â€” O(n*m) complexity. For matrix operations:
 
 ```python
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]

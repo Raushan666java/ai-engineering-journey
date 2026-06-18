@@ -39,7 +39,7 @@ flowchart LR
 
 ## Theory
 
-![CSP Advanced Topics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch05-csp.png)
+![CSP Advanced Topics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch05-csp.png)
 
 ### Formal Definition of CSP
 > **One-Sentence Takeaway:** A CSP is a triple (X, D, C) where the goal is a complete, consistent assignment of values to all variables subject to constraints.
@@ -115,7 +115,7 @@ Applying arc consistency to a small problem.
 | Path Consistency | Very Strong | High | Preprocessing |
 | MAC | Strongest | High | Interleaved with search |
 
-## Quick Reference — CSP Search & Propagation
+## Quick Reference â€” CSP Search & Propagation
 
 | Concept | Definition | Benefit |
 |---------|-----------|---------|
@@ -130,11 +130,11 @@ Applying arc consistency to a small problem.
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| CSP Formulation | ✅ | ✅ | ✅ | ✅ |
-| Backtracking Search | ⬜ | ⬜ | ⬜ | ✅ |
-| AC-3 Propagation | ⬜ | ⬜ | ⬜ | ✅ |
-| MRV/LCV Heuristics | ⬜ | ⬜ | ⬜ | ✅ |
-| Forward Checking | ⬜ | ⬜ | ⬜ | ✅ |
+| CSP Formulation | âœ… | âœ… | âœ… | âœ… |
+| Backtracking Search | â¬œ | â¬œ | â¬œ | âœ… |
+| AC-3 Propagation | â¬œ | â¬œ | â¬œ | âœ… |
+| MRV/LCV Heuristics | â¬œ | â¬œ | â¬œ | âœ… |
+| Forward Checking | â¬œ | â¬œ | â¬œ | âœ… |
 
 ## Chapter Quiz
 
@@ -164,7 +164,7 @@ Applying arc consistency to a small problem.
 
 ---
 
-> **💡 Pro Tip:** For real-world CSPs, start with the most constrained variable (MRV) and use AC-3 or GAC for consistency enforcement — these heuristics alone solve most practical problems without needing full backtracking search.
+> **ðŸ’¡ Pro Tip:** For real-world CSPs, start with the most constrained variable (MRV) and use AC-3 or GAC for consistency enforcement â€” these heuristics alone solve most practical problems without needing full backtracking search.
 
 ---
 

@@ -15,7 +15,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-![Service Discovery & Load Balancing - Eureka Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/39-discovery.png)
+![Service Discovery & Load Balancing - Eureka Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/39-discovery.png)
 
 ### Service Discovery Patterns
 
@@ -306,7 +306,7 @@ public class DiscoveryController {
 }
 ```
 
-### Eureka Client — Order Service
+### Eureka Client â€” Order Service
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1737,7 +1737,7 @@ management:
 - **Eureka Server** acts as the service registry; services register with it and discover other services
 - **Eureka Client** handles self-registration, heartbeats, and instance lookup; configured via `@EnableDiscoveryClient`
 - **Self-Preservation** prevents premature instance eviction during network partitions
-- **Spring Cloud LoadBalancer** provides `RoundRobinLoadBalancer` and `RandomLoadBalancer` — the replacement for Netflix Ribbon
+- **Spring Cloud LoadBalancer** provides `RoundRobinLoadBalancer` and `RandomLoadBalancer` â€” the replacement for Netflix Ribbon
 - **@LoadBalanced RestTemplate** and **WebClient.Builder** enable load-balanced inter-service calls
 - **Client-Side Discovery** has the client query the registry; **Server-Side Discovery** uses an intermediary load balancer
 - **Self-Registration** is the default with Eureka Client; **Third-Party Registration** uses a separate registrar like Kubernetes

@@ -736,7 +736,7 @@ public function messages(): array
 
 ### Security
 
-![Auth Guards, Gates & Security](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/05-auth-security.png)
+![Auth Guards, Gates & Security](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/05-auth-security.png)
 
 #### CSRF Protection
 

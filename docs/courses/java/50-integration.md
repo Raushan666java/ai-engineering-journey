@@ -17,7 +17,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Spring Integration Overview
 
-![Spring Integration - Enterprise Integration Patterns](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/50-integration.png)
+![Spring Integration - Enterprise Integration Patterns](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/50-integration.png)
 
 Spring Integration implements the Enterprise Integration Patterns, providing a lightweight message-based framework for integrating systems.
 

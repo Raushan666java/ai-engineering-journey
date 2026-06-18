@@ -1,6 +1,6 @@
 # Chapter 12: Minimum Spanning Trees
 
-> **Prerequisites:** [Chapter 11: Graph Shortest Paths](./11-graph-shortest.md) — Graph algorithms, priority queues, relaxation | **Next:** [Chapter 13: Network Flow](./13-graph-flow.md) — From tree structures to flow networks
+> **Prerequisites:** [Chapter 11: Graph Shortest Paths](./11-graph-shortest.md) â€” Graph algorithms, priority queues, relaxation | **Next:** [Chapter 13: Network Flow](./13-graph-flow.md) â€” From tree structures to flow networks
 
 ## Learning Objectives
 
@@ -41,13 +41,13 @@ flowchart LR
 
 ## Theory
 
-![MST Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch12-graph-mst.png)
+![MST Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch12-graph-mst.png)
 
 ### 12.1 Minimum Spanning Tree: Definition
 
 **Definition 12.1.** Given a connected, undirected, weighted graph \( G = (V, E) \), a **spanning tree** is a subgraph \( T = (V, E') \) that is a tree (connected and acyclic). A **minimum spanning tree** (MST) is a spanning tree that minimizes the total weight \( \sum_{e \in E'} w(e) \).
 
-> **Pro Tip:** MST is one of the few problems where a greedy algorithm is always optimal. The cut property and cycle property are the two correctness pillars — memorize them for proof problems.
+> **Pro Tip:** MST is one of the few problems where a greedy algorithm is always optimal. The cut property and cycle property are the two correctness pillars â€” memorize them for proof problems.
 >
 > **Remember:** An MST always has exactly |V|-1 edges for a connected graph with |V| vertices.
 
@@ -101,7 +101,7 @@ Union(x, y):
 >
 > **Warning:** Without path compression, union-find can degrade to O(V) per operation. Always implement both path compression and union by rank.
 
-**One-Sentence Takeaway:** Kruskal's algorithm sorts edges by weight and uses union-find to add the smallest edge that doesn't create a cycle — O(E log E) overall.
+**One-Sentence Takeaway:** Kruskal's algorithm sorts edges by weight and uses union-find to add the smallest edge that doesn't create a cycle â€” O(E log E) overall.
 
 ### 12.4 Prim's Algorithm
 
@@ -127,9 +127,9 @@ Prim(G, r):
 
 > **Pro Tip:** Prim's algorithm looks almost identical to Dijkstra. The difference is that Prim's key is the minimum edge weight to the current tree, while Dijkstra's key is the total distance from the source.
 >
-> **Remember:** Prim's is better for dense graphs (E ≈ V²) where the priority queue operations dominate. For dense graphs, an O(V²) array-based implementation can outperform a binary heap.
+> **Remember:** Prim's is better for dense graphs (E â‰ˆ VÂ²) where the priority queue operations dominate. For dense graphs, an O(VÂ²) array-based implementation can outperform a binary heap.
 
-**One-Sentence Takeaway:** Prim's algorithm grows an MST from a seed vertex using a priority queue, always adding the cheapest edge connecting the tree to a new vertex — O(E log V).
+**One-Sentence Takeaway:** Prim's algorithm grows an MST from a seed vertex using a priority queue, always adding the cheapest edge connecting the tree to a new vertex â€” O(E log V).
 
 ### 12.5 Boruvka's Algorithm
 
@@ -150,11 +150,11 @@ Boruvka(G):
 
 **Complexity:** Each phase halves the number of components, so there are \\( O(\\log V) \\) phases. Each phase scans all edges, yielding \\( O(E \\log V) \\).
 
-> **Pro Tip:** Boruvka is the most parallelizable MST algorithm — each component independently finds its cheapest edge. It's historically significant and useful for distributed settings where global sorting is expensive.
+> **Pro Tip:** Boruvka is the most parallelizable MST algorithm â€” each component independently finds its cheapest edge. It's historically significant and useful for distributed settings where global sorting is expensive.
 >
 > **Remember:** Boruvka's algorithm works by contracting components. After each phase, the number of components at least halves, guaranteeing O(log V) phases.
 
-**One-Sentence Takeaway:** Boruvka's algorithm repeatedly finds each component's cheapest outgoing edge in parallel, halving components each phase — O(E log V).
+**One-Sentence Takeaway:** Boruvka's algorithm repeatedly finds each component's cheapest outgoing edge in parallel, halving components each phase â€” O(E log V).
 
 ### 12.6 Applications
 
@@ -254,8 +254,8 @@ int prim(const std::vector<std::vector<std::pair<int,int>>>& adj) {
 
 | Algorithm | Strategy | Data Structure | Best For | Complexity |
 |-----------|----------|---------------|----------|------------|
-| Kruskal | Add smallest non-cycle edge | Union-Find DSU | Sparse graphs (E ≈ V) | O(E log E) |
-| Prim | Grow tree from seed | Priority Queue / Array | Dense graphs (E ≈ V²) | O(E log V) |
+| Kruskal | Add smallest non-cycle edge | Union-Find DSU | Sparse graphs (E â‰ˆ V) | O(E log E) |
+| Prim | Grow tree from seed | Priority Queue / Array | Dense graphs (E â‰ˆ VÂ²) | O(E log V) |
 | Boruvka | Component cheapest edges | Per-component arrays | Parallel/Distributed | O(E log V) |
 
 ### Quick Reference
@@ -297,7 +297,7 @@ int prim(const std::vector<std::vector<std::pair<int,int>>>& adj) {
 
 ### Chapter Quiz
 
-**Q1.** Which MST algorithm is best for a sparse graph with E ≈ V?
+**Q1.** Which MST algorithm is best for a sparse graph with E â‰ˆ V?
 
 - A) Prim with binary heap
 - B) Boruvka
@@ -306,7 +306,7 @@ int prim(const std::vector<std::vector<std::pair<int,int>>>& adj) {
 
 <details>
 <summary>Answer</summary>
-C) Kruskal — the sorting step dominates at O(E log E), and union-find operations are nearly constant.
+C) Kruskal â€” the sorting step dominates at O(E log E), and union-find operations are nearly constant.
 </details>
 
 **Q2.** What property guarantees that the smallest edge crossing a cut belongs to some MST?
@@ -330,7 +330,7 @@ B) The cut property states the minimum-weight edge crossing any cut is in some M
 
 <details>
 <summary>Answer</summary>
-C) O(log V) — each phase at least halves the number of components.
+C) O(log V) â€” each phase at least halves the number of components.
 </details>
 
 ### Review Questions

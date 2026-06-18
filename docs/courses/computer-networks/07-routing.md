@@ -1,14 +1,44 @@
 # Chapter 7: Routing
 
+> **Prerequisites:** [Chapter 6: Network Layer](./06-network-layer.md) â€” IP addressing and forwarding | **Next:** [Chapter 8: Transport Layer](./08-transport-layer.md) â€” From routing to end-to-end delivery
+
 ## Learning Objectives
 
-![Routing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch07-routing.png)
+![Routing](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch07-routing.png)
 
 1. Distinguish between distance-vector and link-state routing algorithms.
 2. Analyze the RIP protocol and its limitations due to count-to-infinity.
 3. Describe OSPF operation including area hierarchy and link-state database synchronization.
 4. Explain BGP path attributes and the policy-driven nature of inter-domain routing.
 5. Compare unicast, multicast, and anycast routing paradigms.
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Distance-Vector | Exchange tables with neighbors, Bellman-Ford | Simple but slow convergence (count-to-infinity) |
+| Link-State | Global topology via LSP flooding, Dijkstra | Fast convergence, higher CPU/memory cost |
+| OSPF | Hierarchical areas, DR/BDR election | Area 0 backbone; ABRs isolate failure domains |
+| BGP | Path-vector with policy attributes | Internet routing is driven by business relationships, not metrics |
+| Multicast/Anycast | Group delivery and nearest-server routing | Anycast enables DNS/CDN load distribution |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Routing Algorithms] --> B[Distance-Vector]
+    A --> C[Link-State]
+    A --> D[Path-Vector]
+    B --> B1[Bellman-Ford]
+    B --> B2[RIP / Count-to-Infinity]
+    B --> B3[Split Horizon]
+    C --> C1[Dijkstra]
+    C --> C2[OSPF / Areas]
+    D --> D1[BGP / Attributes / Policy]
+    A --> E[Multicast / Anycast]
+```
 
 ## 7.1 Routing Fundamentals
 
@@ -29,11 +59,11 @@ $$D_x(y) = \min_{v \in N(x)} \{ c(x, v) + D_v(y) \}$$
 
 where $D_x(y)$ is the distance from router $x$ to destination $y$, $c(x,v)$ is the cost of the link from $x$ to neighbor $v$, and $N(x)$ is the set of $x$'s neighbors.
 
-Convergence occurs when no router's table changes — typically within a few exchange intervals.
+Convergence occurs when no router's table changes â€” typically within a few exchange intervals.
 
 ### 7.2.2 Count-to-Infinity Problem
 
-When a link fails, distance-vector protocols may converge slowly. Consider three routers A—B—C, each with distance 1 to its direct neighbor. If the A—B link fails, B sets its distance to A as infinity. Before B broadcasts this update, C advertises a path to A via B with cost 2. B now believes it can reach A via C with cost 3, creating a routing loop. After each exchange cycle, the cost increases by 1 until reaching infinity (16 in RIP). This is the count-to-infinity problem.
+When a link fails, distance-vector protocols may converge slowly. Consider three routers Aâ€”Bâ€”C, each with distance 1 to its direct neighbor. If the Aâ€”B link fails, B sets its distance to A as infinity. Before B broadcasts this update, C advertises a path to A via B with cost 2. B now believes it can reach A via C with cost 3, creating a routing loop. After each exchange cycle, the cost increases by 1 until reaching infinity (16 in RIP). This is the count-to-infinity problem.
 
 Mitigations:
 
@@ -43,7 +73,9 @@ Mitigations:
 
 ### 7.2.3 RIP
 
-Routing Information Protocol (RIP, RFC 1058) is a distance-vector protocol using hop count as the metric (maximum 15 hops; 16 = infinity). RIP sends complete routing tables every 30 seconds. Version 2 adds subnet mask support and authentication. RIP is simple but scales poorly — it converges slowly and is limited to small networks.
+Routing Information Protocol (RIP, RFC 1058) is a distance-vector protocol using hop count as the metric (maximum 15 hops; 16 = infinity). RIP sends complete routing tables every 30 seconds. Version 2 adds subnet mask support and authentication. RIP is simple but scales poorly â€” it converges slowly and is limited to small networks.
+
+> **Pro Tip:** As a network engineer, you will rarely configure RIP outside of a certification lab. However, understanding count-to-infinity and split horizon is essential because the same convergence pathologies appear in BGP and some overlay routing protocols.
 
 ## 7.3 Link-State Routing
 
@@ -111,7 +143,7 @@ Border Gateway Protocol (BGP, RFC 4271) is the inter-domain routing protocol of 
 
 ### 7.4.2 BGP and Policy
 
-Unlike intra-domain protocols that optimize a single metric (hop count, cost), BGP is a policy-driven protocol. An ISP may prefer a path with longer AS_PATH because a customer relationship requires it, or may refuse to transit traffic between two peers. The commercial relationships — transit (provider-customer), peer (settlement-free), and customer-provider — shape the global routing topology.
+Unlike intra-domain protocols that optimize a single metric (hop count, cost), BGP is a policy-driven protocol. An ISP may prefer a path with longer AS_PATH because a customer relationship requires it, or may refuse to transit traffic between two peers. The commercial relationships â€” transit (provider-customer), peer (settlement-free), and customer-provider â€” shape the global routing topology.
 
 ## 7.5 Hierarchical Routing
 
@@ -133,6 +165,96 @@ Multicast delivers packets to a group of receivers. The multicast group address 
 
 Anycast delivers a packet to the nearest member of an anycast group. BGP anycast is widely used for DNS root servers and content delivery networks. Multiple servers share the same IP address; BGP advertisements from each server propagate, and other routers forward traffic to the closest advertiser. Anycast provides load distribution and fault tolerance but does not guarantee session persistence (successive packets may reach different servers).
 
+> **Pro Tip:** BGP anycast is a powerful technique for making services fault-tolerant and low-latency â€” anycast DNS is why `8.8.8.8` works from anywhere on Earth. But it requires careful planning of AS_PATH prepending and community strings to control which servers attract traffic from which regions.
+
+---
+
+### Concept Comparison Table
+
+| Feature | Distance-Vector (RIP) | Link-State (OSPF) | Path-Vector (BGP) |
+|---------|---------------------|-------------------|-------------------|
+| Topology Knowledge | Neighbors only | Complete network | AS path only |
+| Convergence | Slow (minutes) | Fast (seconds) | Slow (policy-dependent) |
+| Metric | Hop count (max 15) | Cost (bandwidth-based) | Multiple attributes |
+| Scalability | Small networks | Enterprise/DC | Global Internet |
+| Loop Prevention | Split horizon, infinity | SPF guarantees | AS_PATH attribute |
+| Update Type | Periodic full table | Event-driven LSA | Incremental UPDATE |
+
+### Quick Reference
+
+| Category | Key Points |
+|----------|------------|
+| **Bellman-Ford** | $D_x(y) = \min\{c(x,v) + D_v(y)\}$ â€” iterative, distributed |
+| **Dijkstra** | $O(N^2)$ or $O(E \log V)$ with heap â€” global computation |
+| **OSPF Areas** | Area 0 backbone; ABR connects areas; ASBR connects to other ASes |
+| **BGP Decision** | LOCAL_PREF â†’ AS_PATH â†’ Origin â†’ MED â†’ eBGP/iBGP â†’ IGP cost â†’ Router ID |
+| **AS_PATH** | Loop detection + path length; manipulated for traffic engineering |
+| **Multicast** | IGMP (host join), PIM-SM (RP-based), PIM-DM (flood-and-prune) |
+
+### Cross-Application Matrix
+
+| Concept | Network Engineering | ISP Operations | Cloud/DC | CDN |
+|---------|-------------------|----------------|----------|-----|
+| OSPF | Campus/enterprise design | N/A | DC fabric (underlay) | N/A |
+| BGP | Multi-homing, peering | Transit policy, route filtering | Direct Connect, VPN | Anycast IP advertisement |
+| RIP | Small office only | N/A | N/A | N/A |
+| Multicast | Video distribution | IPTV | N/A | N/A |
+| Anycast | N/A | DNS root servers | Cloud load balancing | CDN edge servers |
+
+---
+
+### Chapter Quiz
+
+**Q1.** Which routing protocol uses hop count as its metric with a maximum of 15?
+
+- A) OSPF
+- B) BGP
+- C) RIP
+- D) IS-IS
+
+<details>
+<summary>Answer</summary>
+C) RIP uses hop count, max 15 (16 = infinity).
+</details>
+
+**Q2.** What prevents routing loops in BGP?
+
+- A) Split horizon
+- B) AS_PATH attribute
+- C) Dijkstra's algorithm
+- D) TTL
+
+<details>
+<summary>Answer</summary>
+B) BGP checks the AS_PATH â€” if a router sees its own AS in the path, it rejects the route to prevent loops.
+</details>
+
+**Q3.** In OSPF, what is the purpose of a Designated Router (DR)?
+
+- A) Route all traffic through one router
+- B) Reduce adjacencies from $O(n^2)$ to $O(n)$ on multi-access networks
+- C) Connect multiple areas
+- D) Compute routes for all other routers
+
+<details>
+<summary>Answer</summary>
+B) The DR reduces the number of OSPF adjacencies needed on broadcast segments.
+</details>
+
+**Q4.** Which BGP attribute has the highest priority in route selection?
+
+- A) AS_PATH length
+- B) MED
+- C) LOCAL_PREF
+- D) IGP cost to NEXT_HOP
+
+<details>
+<summary>Answer</summary>
+C) LOCAL_PREF (highest wins) is evaluated first in the BGP decision process.
+</details>
+
+---
+
 ## Summary
 
 Distance-vector routing exchanges complete tables with neighbors and converges slowly due to count-to-infinity. Link-state routing provides fast convergence through topology flooding and Dijkstra's algorithm. OSPF adds area hierarchy for scalability. BGP uses path-vector principles and policy attributes to govern inter-domain routing. Hierarchical routing, multicast, and anycast extend the basic routing paradigm to meet scalability, group communication, and proximity requirements.
@@ -149,7 +271,7 @@ Distance-vector routing exchanges complete tables with neighbors and converges s
 
 ### Application Problems
 
-6. Consider the network: A—B (cost 2), B—C (3), A—C (5), C—D (1). Run the Bellman-Ford algorithm from all sources to compute distance tables. Show the table updates after each iteration.
+6. Consider the network: Aâ€”B (cost 2), Bâ€”C (3), Aâ€”C (5), Câ€”D (1). Run the Bellman-Ford algorithm from all sources to compute distance tables. Show the table updates after each iteration.
 7. The same network uses OSPF. Run Dijkstra's algorithm from A to compute the shortest-path tree. Show the steps and the final forwarding table at A.
 8. An ISP has three customers, each advertising a /24 prefix via BGP. The ISP also receives full BGP tables from two upstream providers. Explain how route aggregation might reduce the ISP's RIB size. What prefix length would the ISP advertise to its upstream providers?
 

@@ -1,4 +1,4 @@
-﻿# MySQL & Database Interview Q&A
+# MySQL & Database Interview Q&A
 
 Ace your database interviews with this deep collection of MySQL and Laravel database-layer questions. Each answer includes runnable SQL or code examples. Covers raw SQL queries through database design, indexing, transactions, Laravel's ORM, and advanced MySQL internals.
 
@@ -6,7 +6,7 @@ Ace your database interviews with this deep collection of MySQL and Laravel data
 
 ## SQL Queries
 
-![MySQL Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/50-interview-mysql.png)
+![MySQL Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/50-interview-mysql.png)
 
 
 ### Q1: Write a query to find the second-highest salary from an `employees` table.

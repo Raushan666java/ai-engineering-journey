@@ -19,7 +19,7 @@
 | Section | Key Topics | Key Terms |
 |---------|-----------|-----------|
 | Knowledge-Based Agents | KB, TELL, ASK | Knowledge Base, entailment |
-| Logic Fundamentals | Syntax, semantics, models | Entailment (⊨), soundness, completeness |
+| Logic Fundamentals | Syntax, semantics, models | Entailment (âŠ¨), soundness, completeness |
 | Propositional Logic | Symbols, connectives, truth tables | Modus Ponens, Resolution |
 | Satisfiability & Validity | Valid, satisfiable, unsatisfiable | Tautology, contradiction, SAT |
 
@@ -43,7 +43,7 @@ flowchart LR
 
 ## Theory
 
-![Logic and FOL](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch06-logic-fol.png)
+![Logic and FOL](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch06-logic-fol.png)
 
 > **One-Sentence Takeaway:** A knowledge-based agent maintains a Knowledge Base that it TELLs and ASKs, using entailment to infer new facts that follow logically from what it already knows.
 
@@ -58,7 +58,7 @@ Every logic consists of:
 - **Semantics**: Rules for determining the truth of a sentence with respect to a **model**.
 - **Entailment ($KB \models \alpha$)**: Sentence $\alpha$ follows logically from KB if $\alpha$ is true in every model where KB is true.
 
-> **💡 Pro Tip:** Resolution is refutation-complete for propositional logic — to prove KB ⊨ α, convert KB ∧ ¬α to CNF and derive the empty clause. This single inference rule powers most automated theorem provers.
+> **ðŸ’¡ Pro Tip:** Resolution is refutation-complete for propositional logic â€” to prove KB âŠ¨ Î±, convert KB âˆ§ Â¬Î± to CNF and derive the empty clause. This single inference rule powers most automated theorem provers.
 
 ### Propositional Logic (PL)
 PL is the simplest logic, where symbols represent facts:
@@ -68,7 +68,7 @@ PL is the simplest logic, where symbols represent facts:
   - **Modus Ponens**: From $P$ and $P \Rightarrow Q$, infer $Q$.
   - **Resolution**: From $P \vee Q$ and $\neg Q \vee R$, infer $P \vee R$.
 
-> **⚠️ Warning:** Truth tables grow as 2ⁿ for n symbols. Real SAT problems use DPLL/CDCL algorithms with unit propagation and clause learning, not brute-force truth tables.
+> **âš ï¸ Warning:** Truth tables grow as 2â¿ for n symbols. Real SAT problems use DPLL/CDCL algorithms with unit propagation and clause learning, not brute-force truth tables.
 
 ### Satisfiability and Validity
 - **Valid**: A sentence is valid if it is true in **all** models (a tautology).
@@ -107,40 +107,40 @@ A classic environment for logical agents.
 
 | Inference Method | Sound? | Complete? | Complexity | Best For |
 |-----------------|:---:|:---:|:---:|---------|
-| Truth Table | ✅ | ✅ | O(2ⁿ) | Small n debugging |
-| Resolution | ✅ | Refutation-complete | EXP | Automated proving |
-| DPLL | ✅ | ✅ (for SAT) | NP-complete avg fast | Large SAT instances |
-| Forward Chaining | ✅ | ✅ (Horn) | Linear | Data-driven reasoning |
-| Backward Chaining | ✅ | ✅ (Horn) | Linear | Goal-directed reasoning |
+| Truth Table | âœ… | âœ… | O(2â¿) | Small n debugging |
+| Resolution | âœ… | Refutation-complete | EXP | Automated proving |
+| DPLL | âœ… | âœ… (for SAT) | NP-complete avg fast | Large SAT instances |
+| Forward Chaining | âœ… | âœ… (Horn) | Linear | Data-driven reasoning |
+| Backward Chaining | âœ… | âœ… (Horn) | Linear | Goal-directed reasoning |
 
-## Quick Reference — Logical Connectives
+## Quick Reference â€” Logical Connectives
 
 | Name | Operator | Read As | True When |
 |------|:---:|---------|:---:|
-| Negation | ¬P | not P | P is false |
-| Conjunction | P ∧ Q | P and Q | Both are true |
-| Disjunction | P ∨ Q | P or Q | At least one true |
-| Implication | P ⇒ Q | if P then Q | P is false or Q is true |
-| Biconditional | P ⇔ Q | P iff Q | Same truth value |
+| Negation | Â¬P | not P | P is false |
+| Conjunction | P âˆ§ Q | P and Q | Both are true |
+| Disjunction | P âˆ¨ Q | P or Q | At least one true |
+| Implication | P â‡’ Q | if P then Q | P is false or Q is true |
+| Biconditional | P â‡” Q | P iff Q | Same truth value |
 
 ## Cross-Application Matrix
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Propositional Logic | ⬜ | ⬜ | ✅ | ✅ |
-| Resolution | ⬜ | ⬜ | ⬜ | ✅ |
-| SAT Solving | ✅ | ⬜ | ⬜ | ✅ |
-| Knowledge Bases | ⬜ | ⬜ | ✅ | ✅ |
+| Propositional Logic | â¬œ | â¬œ | âœ… | âœ… |
+| Resolution | â¬œ | â¬œ | â¬œ | âœ… |
+| SAT Solving | âœ… | â¬œ | â¬œ | âœ… |
+| Knowledge Bases | â¬œ | â¬œ | âœ… | âœ… |
 
 ## Chapter Quiz
 
-**Q1:** What does it mean if KB ⊨ α?
-- A) KB proves α syntactically
-- B) α is true in every model where KB is true
-- C) α is consistent with KB
-- D) KB and α have no common models
+**Q1:** What does it mean if KB âŠ¨ Î±?
+- A) KB proves Î± syntactically
+- B) Î± is true in every model where KB is true
+- C) Î± is consistent with KB
+- D) KB and Î± have no common models
 
-<details><summary>Answer</summary>B) Entailment KB ⊨ α means α is true in all models of KB — a semantic relationship.</details>
+<details><summary>Answer</summary>B) Entailment KB âŠ¨ Î± means Î± is true in all models of KB â€” a semantic relationship.</details>
 
 **Q2:** Resolution is the only inference rule needed for refutation-complete proof in PL. What is refutation-completeness?
 - A) It can prove any valid sentence
@@ -148,7 +148,7 @@ A classic environment for logical agents.
 - C) It works only for Horn clauses
 - D) It never produces false positives
 
-<details><summary>Answer</summary>B) Refutation-completeness means the unsatisfiability of KB ∧ ¬α can be proven by deriving the empty clause.</details>
+<details><summary>Answer</summary>B) Refutation-completeness means the unsatisfiability of KB âˆ§ Â¬Î± can be proven by deriving the empty clause.</details>
 
 **Q3:** A sentence is valid if and only if:
 - A) It is true in at least one model

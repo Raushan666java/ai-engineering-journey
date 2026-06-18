@@ -10,7 +10,7 @@ By the end of this chapter, students will be able to:
 - Write data classes with `@dataclass`
 - Understand name mangling for attribute protection
 
-![Python OOP](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/12-oop.png)
+![Python OOP](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/12-oop.png)
 
 ## 12.1 Classes and Instances
 
@@ -22,7 +22,7 @@ class Dog:
     species = "Canis familiaris"  # class attribute
     
     def __init__(self, name: str, age: int):
-        """Constructor — initialises instance attributes."""
+        """Constructor â€” initialises instance attributes."""
         self.name = name
         self.age = age
     
@@ -64,7 +64,7 @@ Counter.count = 10
 print(c2.count)       # 10
 ```
 
-Attribute lookup order: instance → class → parent classes.
+Attribute lookup order: instance â†’ class â†’ parent classes.
 
 ## 12.3 @classmethod and @staticmethod
 
@@ -81,13 +81,13 @@ class Date:
     
     @classmethod
     def from_string(cls, date_str: str) -> "Date":
-        """Alternative constructor — parses 'YYYY-MM-DD'."""
+        """Alternative constructor â€” parses 'YYYY-MM-DD'."""
         year, month, day = map(int, date_str.split("-"))
         return cls(year, month, day)
     
     @classmethod
     def today(cls) -> "Date":
-        """Alternative constructor — returns today's date."""
+        """Alternative constructor â€” returns today's date."""
         from datetime import date
         d = date.today()
         return cls(d.year, d.month, d.day)
@@ -120,12 +120,12 @@ class Circle:
     
     @property
     def radius(self) -> float:
-        """Getter — called when accessing circle.radius."""
+        """Getter â€” called when accessing circle.radius."""
         return self._radius
     
     @radius.setter
     def radius(self, value: float):
-        """Setter — called when assigning to circle.radius."""
+        """Setter â€” called when assigning to circle.radius."""
         if value < 0:
             raise ValueError("Radius cannot be negative")
         self._radius = value
@@ -223,7 +223,7 @@ print(obj2.get_secret())        # 42 (from parent)
 print(obj2._SubClass__secret)   # 99
 ```
 
-Single underscore (`_secret`) is a convention meaning "internal use" — no language enforcement.
+Single underscore (`_secret`) is a convention meaning "internal use" â€” no language enforcement.
 
 ## 12.7 @dataclass
 
@@ -291,7 +291,7 @@ Fields from the parent come first, then child fields.
 
 ## 12.9 Class as a Callable
 
-A class is callable — calling it creates a new instance:
+A class is callable â€” calling it creates a new instance:
 
 ```python
 class Vector:

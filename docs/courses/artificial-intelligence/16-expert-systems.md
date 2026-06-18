@@ -38,7 +38,7 @@ flowchart LR
 
 ## 16.1 Expert System Architecture
 
-![Expert Systems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch16-expert-systems.png)
+![Expert Systems](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch16-expert-systems.png)
 
 An **expert system** is a computer program that emulates the decision-making ability of a human expert in a specific domain. The classical architecture comprises three principal components:
 
@@ -163,34 +163,34 @@ Dempster-Shafer can represent ignorance explicitly (unlike Bayesian approaches) 
 
 Despite these limitations, expert systems remain in use for specific applications where explainability and maintainability are paramount.
 
-> **💡 Pro Tip:** Expert systems remain useful in domains with stable, well-documented knowledge and high explainability requirements (e.g., tax preparation, medical guidelines, configurators). For domains where knowledge changes rapidly, modern ML systems are a better fit.
+> **ðŸ’¡ Pro Tip:** Expert systems remain useful in domains with stable, well-documented knowledge and high explainability requirements (e.g., tax preparation, medical guidelines, configurators). For domains where knowledge changes rapidly, modern ML systems are a better fit.
 
 ## Concept Comparison
 
 | System | Domain | Reasoning | Uncertainty? | Status |
 |--------|--------|:---:|:---:|:---:|
 | MYCIN | Infectious disease diagnosis | Backward chaining | Certainty factors | Historical |
-| DENDRAL | Organic chemistry (mass spec) | Plan-generate-test | ❌ | Historical |
-| XCON/R1 | Computer configuration | Forward chaining (Rete) | ❌ | Deployed (1980s) |
-| CLIPS | General purpose | Forward/backward with Rete | ✅ | Open source |
-| Prolog | Logic programming | Backward chaining (SLD) | ❌ | Research/edu |
+| DENDRAL | Organic chemistry (mass spec) | Plan-generate-test | âŒ | Historical |
+| XCON/R1 | Computer configuration | Forward chaining (Rete) | âŒ | Deployed (1980s) |
+| CLIPS | General purpose | Forward/backward with Rete | âœ… | Open source |
+| Prolog | Logic programming | Backward chaining (SLD) | âŒ | Research/edu |
 
-## Quick Reference — Inference Engine Strategies
+## Quick Reference â€” Inference Engine Strategies
 
 | Strategy | Direction | Mechanism | Start Point |
 |:---:|:---:|:---:|:---:|
-| Forward Chaining | Data → Goal | Match → Fire → Repeat | Known facts |
-| Backward Chaining | Goal → Data | Hypothesize → Verify → Repeat | Hypothesis/goal |
+| Forward Chaining | Data â†’ Goal | Match â†’ Fire â†’ Repeat | Known facts |
+| Backward Chaining | Goal â†’ Data | Hypothesize â†’ Verify â†’ Repeat | Hypothesis/goal |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Rule-Based Systems | ⬜ | ⬜ | ✅ | ✅ |
-| Forward Chaining | ⬜ | ⬜ | ⬜ | ✅ |
-| Backward Chaining | ⬜ | ⬜ | ⬜ | ✅ |
-| Certainty Factors | ⬜ | ⬜ | ⬜ | ✅ |
-| Dempster-Shafer | ✅ | ⬜ | ⬜ | ✅ |
+| Rule-Based Systems | â¬œ | â¬œ | âœ… | âœ… |
+| Forward Chaining | â¬œ | â¬œ | â¬œ | âœ… |
+| Backward Chaining | â¬œ | â¬œ | â¬œ | âœ… |
+| Certainty Factors | â¬œ | â¬œ | â¬œ | âœ… |
+| Dempster-Shafer | âœ… | â¬œ | â¬œ | âœ… |
 
 ## Chapter Quiz
 
@@ -200,7 +200,7 @@ Despite these limitations, expert systems remain in use for specific application
 - C) Forward chaining uses rules; backward chaining uses frames
 - D) There is no difference
 
-<details><summary>Answer</summary>B) Forward chaining is data-driven (facts → conclusions), while backward chaining is goal-driven (hypothesis → supporting evidence).</details>
+<details><summary>Answer</summary>B) Forward chaining is data-driven (facts â†’ conclusions), while backward chaining is goal-driven (hypothesis â†’ supporting evidence).</details>
 
 **Q2:** MYCIN's certainty factors handle uncertainty by:
 - A) Using probability theory
@@ -212,7 +212,7 @@ Despite these limitations, expert systems remain in use for specific application
 
 **Q3:** A classic limitation of expert systems is:
 - A) They cannot handle numerical data
-- B) The knowledge acquisition bottleneck — gathering and encoding expert knowledge is expensive and time-consuming
+- B) The knowledge acquisition bottleneck â€” gathering and encoding expert knowledge is expensive and time-consuming
 - C) They are too fast
 - D) They require GPUs
 

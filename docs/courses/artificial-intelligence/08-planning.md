@@ -37,9 +37,9 @@ flowchart LR
 
 ## 8.1 Classical Planning
 
-![Planning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch08-planning.png)
+![Planning](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch08-planning.png)
 
-**Planning** is the process of selecting a sequence of actions to achieve a goal. > **One-Sentence Takeaway:** Classical planning selects a sequence of actions to reach a goal — the STRIPS representation decomposes each action into preconditions, add effects, and delete effects.
+**Planning** is the process of selecting a sequence of actions to achieve a goal. > **One-Sentence Takeaway:** Classical planning selects a sequence of actions to reach a goal â€” the STRIPS representation decomposes each action into preconditions, add effects, and delete effects.
 
 Classical planning assumes a deterministic, fully observable, static environment with finite actions and states.
 
@@ -58,8 +58,8 @@ $$\text{Result}(s, a) = (s - \text{Delete}(a)) \cup \text{Add}(a)$$
 **Example (Blocks World action):**
 ```
 Action(Stack(x, y)
-    Precond: Clear(y) ∧ Holding(x)
-    Effect: ¬Clear(y) ∧ ¬Holding(x) ∧ On(x, y))
+    Precond: Clear(y) âˆ§ Holding(x)
+    Effect: Â¬Clear(y) âˆ§ Â¬Holding(x) âˆ§ On(x, y))
 ```
 
 ### 8.1.2 ADL (Action Description Language)
@@ -93,12 +93,12 @@ A **partial-order plan** is a tuple $\langle A, O, L, G \rangle$ where:
 
 ```
 function POP(initial, goal) returns plan
-    plan ← MAKE-MINIMAL-PLAN(initial, goal)
+    plan â† MAKE-MINIMAL-PLAN(initial, goal)
     loop do
         if no open preconditions in plan then return plan
         select an open precondition p on action A_need
         choose an action A_add (existing or new) that achieves p
-        add causal link A_add → A_need and ordering A_add ≺ A_need
+        add causal link A_add â†’ A_need and ordering A_add â‰º A_need
         resolve any threats to causal links
 ```
 
@@ -122,12 +122,12 @@ GraphPlan (Blum and Furst, 1997) constructs a compact planning graph that encode
 
 ```
 function GRAPHPLAN(problem) returns plan or failure
-    graph ← INITIAL-PLANNING-GRAPH(problem)
-    for k = 0 to ∞ do
+    graph â† INITIAL-PLANNING-GRAPH(problem)
+    for k = 0 to âˆž do
         if goal propositions present in S_k with no mutex then
-            plan ← EXTRACT-SOLUTION(graph, k)
-            if plan ≠ failure then return plan
-        graph ← EXPAND-GRAPH(graph, k+1)
+            plan â† EXTRACT-SOLUTION(graph, k)
+            if plan â‰  failure then return plan
+        graph â† EXPAND-GRAPH(graph, k+1)
         if graph has leveled off then return failure
 ```
 
@@ -171,27 +171,27 @@ HTN planners (SHOP2, PyHop) are used in real-world applications including logist
 
 **FastDownward:** Introduced the causal graph heuristic and multi-heuristic search. Uses a causal graph to decompose the planning problem into subproblems.
 
-> **💡 Pro Tip:** The ignore-delete-lists heuristic is simple but extremely effective for forward search planning. It solves the relaxed problem (no delete effects) which is always solvable and provides admissible estimates for the original problem.
+> **ðŸ’¡ Pro Tip:** The ignore-delete-lists heuristic is simple but extremely effective for forward search planning. It solves the relaxed problem (no delete effects) which is always solvable and provides admissible estimates for the original problem.
 
-> **⚠️ Warning:** Partial-order planning introduces threats that require promotion/demotion resolution. Always check all causal links when adding a new action — overlooking a threat produces an invalid plan.
+> **âš ï¸ Warning:** Partial-order planning introduces threats that require promotion/demotion resolution. Always check all causal links when adding a new action â€” overlooking a threat produces an invalid plan.
 
 ## Concept Comparison
 
 | Planning Method | Search Space | Plan Type | Sound? | Complete? | Complexity |
 |----------------|:---:|:---:|:---:|:---:|:---:|
-| Forward Search | State | Total order | ✅ | ✅ | High branching |
-| Backward Search | Goal | Total order | ✅ | ✅ | Lower branching |
-| Partial-Order | Plan | Partial order | ✅ | ✅ | Exponential |
-| GraphPlan | Graph | Total order | ✅ | ✅ | Poly existence |
-| SATPlan | SAT formula | Total order | ✅ | ✅ | NP-complete |
-| HTN | Task network | Hierarchy | ✅ | Domain-dep | Domain-dep |
+| Forward Search | State | Total order | âœ… | âœ… | High branching |
+| Backward Search | Goal | Total order | âœ… | âœ… | Lower branching |
+| Partial-Order | Plan | Partial order | âœ… | âœ… | Exponential |
+| GraphPlan | Graph | Total order | âœ… | âœ… | Poly existence |
+| SATPlan | SAT formula | Total order | âœ… | âœ… | NP-complete |
+| HTN | Task network | Hierarchy | âœ… | Domain-dep | Domain-dep |
 
-## Quick Reference — STRIPS Action Model
+## Quick Reference â€” STRIPS Action Model
 
 | Component | Description | Example |
 |-----------|-------------|---------|
 | Action name | Unique identifier | Stack(x, y) |
-| Precondition | Must hold before action | Clear(y) ∧ Holding(x) |
+| Precondition | Must hold before action | Clear(y) âˆ§ Holding(x) |
 | Add list | Becomes true after action | On(x, y) |
 | Delete list | Becomes false after action | Clear(y), Holding(x) |
 
@@ -199,21 +199,21 @@ HTN planners (SHOP2, PyHop) are used in real-world applications including logist
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| STRIPS Planning | ⬜ | ⬜ | ⬜ | ✅ |
-| Partial-Order | ⬜ | ⬜ | ⬜ | ✅ |
-| GraphPlan | ⬜ | ⬜ | ⬜ | ✅ |
-| SATPlan | ✅ | ⬜ | ⬜ | ✅ |
-| HTN Planning | ⬜ | ✅ | ✅ | ✅ |
+| STRIPS Planning | â¬œ | â¬œ | â¬œ | âœ… |
+| Partial-Order | â¬œ | â¬œ | â¬œ | âœ… |
+| GraphPlan | â¬œ | â¬œ | â¬œ | âœ… |
+| SATPlan | âœ… | â¬œ | â¬œ | âœ… |
+| HTN Planning | â¬œ | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
-**Q1:** What does a causal link A→B represent in partial-order planning?
+**Q1:** What does a causal link Aâ†’B represent in partial-order planning?
 - A) A happens before B
 - B) A achieves a precondition p for B
 - C) B depends on A's delete list
 - D) A and B are mutually exclusive
 
-<details><summary>Answer</summary>B) A causal link A→B means action A achieves proposition p that is a precondition for action B.</details>
+<details><summary>Answer</summary>B) A causal link Aâ†’B means action A achieves proposition p that is a precondition for action B.</details>
 
 **Q2:** Why might GraphPlan be preferred over forward state-space search?
 - A) It always finds shorter plans

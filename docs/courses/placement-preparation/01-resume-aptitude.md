@@ -1,4 +1,4 @@
-﻿# Resume Building, LinkedIn Optimization & Aptitude Crash Course
+# Resume Building, LinkedIn Optimization & Aptitude Crash Course
 
 > **Module 1 of Placement Preparation Series** â€” Your complete guide to getting shortlisted, impressing on LinkedIn, and cracking aptitude rounds.
 
@@ -12,7 +12,7 @@ Your resume is your 6-second pitch. Recruiters at service-based companies, produ
 
 A strong campus placement resume follows a strict single-page (or max 2-page for experienced hires) format with these sections in order:
 
-![Standard Resume Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/placement-preparation/ch01-resume-structure.png)
+![Standard Resume Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/placement-preparation/ch01-resume-structure.png)
 
 ### 1.2 The 6-Second Recruiter Scan
 

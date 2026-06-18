@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Paging and Segmentation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/09-virtual-memory.png)
+![Paging and Segmentation](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/09-virtual-memory.png)
 
 ### Virtual Memory Concept
 
@@ -30,10 +30,10 @@ In a **demand paging** system, pages are loaded into memory only when they are r
 
 ```
 Page Table Entry (with demand paging):
-┌──────┬───┬───┬───┬──────────┐
-│Frame │ V │ R │ D │Protection│
-│Number│alid│ef │irty│         │
-└──────┴───┴───┴───┴──────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚Frame â”‚ V â”‚ R â”‚ D â”‚Protectionâ”‚
+â”‚Numberâ”‚alidâ”‚ef â”‚irtyâ”‚         â”‚
+â””â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 - **Valid bit** = 0: Page is not in memory (page fault)
@@ -54,52 +54,52 @@ When a process accesses a page with the valid bit = 0:
 9. The process is restarted at the instruction that caused the fault
 
 ```
-Page Fault → Trap → OS checks validity
-                │
-          ┌─────┴──────┐
-          ↓             ↓
+Page Fault â†’ Trap â†’ OS checks validity
+                â”‚
+          â”Œâ”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
+          â†“             â†“
      Invalid page    Valid page (not in memory)
-          ↓                │
+          â†“                â”‚
      Segmentation     Find free frame
-     Fault                │
-                     ┌────┴────┐
-                     ↓         ↓
+     Fault                â”‚
+                     â”Œâ”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+                     â†“         â†“
                  Found    None available
-                     │         │
-                     │    Page replacement
-                     │         │
-                     ↓─────────┘
+                     â”‚         â”‚
+                     â”‚    Page replacement
+                     â”‚         â”‚
+                     â†“â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
                   Disk read needed page
-                       │
+                       â”‚
                   Update page table
-                       │
+                       â”‚
                   Restart instruction
 ```
 
 #### Effective Access Time with Demand Paging
 
 ```
-EAT = (1 − p) × memory_access + p × page_fault_time
+EAT = (1 âˆ’ p) Ã— memory_access + p Ã— page_fault_time
 
-Where p = page fault probability (0 ≤ p ≤ 1)
+Where p = page fault probability (0 â‰¤ p â‰¤ 1)
 
 Example:
   Memory access = 100 ns
   Page fault service time = 10 ms (including disk access)
   p = 0.001 (1 fault per 1000 accesses)
 
-  EAT = 0.999 × 100ns + 0.001 × 10ms
+  EAT = 0.999 Ã— 100ns + 0.001 Ã— 10ms
       = 99.9ns + 10,000ns
-      = 10,099.9ns (∼10μs)
+      = 10,099.9ns (âˆ¼10Î¼s)
 
-  The system is 100× slower with just 0.1% page faults!
+  The system is 100Ã— slower with just 0.1% page faults!
 ```
 
 ### Copy-on-Write (COW)
 
 When `fork()` is called, instead of copying all pages, the child **shares** the parent's pages. Pages are marked as copy-on-write. When either process writes to a page, a trap occurs, and the page is duplicated.
 
-COW eliminates the overhead of copying the entire address space — especially valuable when `exec()` follows `fork()` (the common case).
+COW eliminates the overhead of copying the entire address space â€” especially valuable when `exec()` follows `fork()` (the common case).
 
 ### Page Replacement
 
@@ -115,13 +115,13 @@ Replace the page that has been in memory the longest.
 Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1
 3 frames:
 
-  7 → fault  [7]
-  0 → fault  [7, 0]
-  1 → fault  [7, 0, 1]
-  2 → fault  [0, 1, 2]     (replaces 7 — the oldest)
-  0 → hit    [0, 1, 2]
-  3 → fault  [1, 2, 3]     (replaces 0)
-  0 → fault  [2, 3, 0]     (replaces 1)
+  7 â†’ fault  [7]
+  0 â†’ fault  [7, 0]
+  1 â†’ fault  [7, 0, 1]
+  2 â†’ fault  [0, 1, 2]     (replaces 7 â€” the oldest)
+  0 â†’ hit    [0, 1, 2]
+  3 â†’ fault  [1, 2, 3]     (replaces 0)
+  0 â†’ fault  [2, 3, 0]     (replaces 1)
   ...
   Total page faults: 15
 ```
@@ -136,17 +136,17 @@ Replace the page that will not be used for the longest time in the future.
 Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1
 3 frames:
 
-  7 → fault  [7]
-  0 → fault  [7, 0]
-  1 → fault  [7, 0, 1]
-  2 → fault  [0, 1, 2]     (replaces 7 — used farthest in future)
-  0 → hit
-  3 → fault  [0, 1, 3]     (replaces 2 or 1; optimal replaces 2)
+  7 â†’ fault  [7]
+  0 â†’ fault  [7, 0]
+  1 â†’ fault  [7, 0, 1]
+  2 â†’ fault  [0, 1, 2]     (replaces 7 â€” used farthest in future)
+  0 â†’ hit
+  3 â†’ fault  [0, 1, 3]     (replaces 2 or 1; optimal replaces 2)
   ...
   Total page faults: 9
 ```
 
-**Problem**: Requires knowledge of the future — impossible to implement. Used as a benchmark for other algorithms.
+**Problem**: Requires knowledge of the future â€” impossible to implement. Used as a benchmark for other algorithms.
 
 #### LRU (Least Recently Used)
 
@@ -156,12 +156,12 @@ Replace the page that has not been used for the longest time. This approximates 
 Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1
 3 frames:
 
-  7 → fault  [7]
-  0 → fault  [7, 0]
-  1 → fault  [7, 0, 1]
-  2 → fault  [0, 1, 2]     (replaces 7 — least recently used)
-  0 → hit    update LRU
-  3 → fault  [1, 2, 3]     (replaces 1 — LRU is 1, then 2, then 0)
+  7 â†’ fault  [7]
+  0 â†’ fault  [7, 0]
+  1 â†’ fault  [7, 0, 1]
+  2 â†’ fault  [0, 1, 2]     (replaces 7 â€” least recently used)
+  0 â†’ hit    update LRU
+  3 â†’ fault  [1, 2, 3]     (replaces 1 â€” LRU is 1, then 2, then 0)
   ...
   Total page faults: 12
 ```
@@ -179,9 +179,9 @@ Reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1
 A FIFO variant that uses the reference bit. Pages are arranged in a circular list with a hand pointer.
 
 ```
-Hand → [Page A: ref=1] → [Page B: ref=0] → [Page C: ref=1] → [Page D: ref=0]
-           │                                                      │
-           └──────────────────────────────────────────────────────┘
+Hand â†’ [Page A: ref=1] â†’ [Page B: ref=0] â†’ [Page C: ref=1] â†’ [Page D: ref=0]
+           â”‚                                                      â”‚
+           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 Algorithm:
 1. Check the page the hand points to
@@ -193,56 +193,56 @@ This is essentially a circular FIFO with a second chance. It approximates LRU wi
 
 ```
 Clock algorithm with reference string 7, 0, 1, 2 (3 frames):
-  After 7, 0, 1: [7(r=1), 0(r=1), 1(r=1)]  hand→7
+  After 7, 0, 1: [7(r=1), 0(r=1), 1(r=1)]  handâ†’7
   Reference 2 (fault):
-    Hand→7: ref=1 → set to 0, advance
-    Hand→0: ref=1 → set to 0, advance
-    Hand→1: ref=1 → set to 0, advance
-    Hand→7: ref=0 → replace!
-    [2(r=1), 0(r=0), 1(r=0)]  hand→0
+    Handâ†’7: ref=1 â†’ set to 0, advance
+    Handâ†’0: ref=1 â†’ set to 0, advance
+    Handâ†’1: ref=1 â†’ set to 0, advance
+    Handâ†’7: ref=0 â†’ replace!
+    [2(r=1), 0(r=0), 1(r=0)]  handâ†’0
 ```
 
 ### Frame Allocation
 
 How many frames should each process get?
 
-**Minimum allocation**: Defined by the architecture — the number of frames needed for all instructions that can reference memory in one cycle. Example: a move instruction with source and destination operands might need 6 frames.
+**Minimum allocation**: Defined by the architecture â€” the number of frames needed for all instructions that can reference memory in one cycle. Example: a move instruction with source and destination operands might need 6 frames.
 
 **Equal allocation**: If 100 frames and 5 processes, give each 20 frames.
 
 **Proportional allocation**: Give frames proportional to process size.
 
 ```
-frames_for_Pi = (size_of_Pi / total_size) × total_frames
+frames_for_Pi = (size_of_Pi / total_size) Ã— total_frames
 ```
 
 **Priority allocation**: Higher-priority processes get more frames.
 
 ### Thrashing
 
-**Thrashing** occurs when a process is spending more time paging than executing. The system is overcommitted — the working set of all processes exceeds physical memory.
+**Thrashing** occurs when a process is spending more time paging than executing. The system is overcommitted â€” the working set of all processes exceeds physical memory.
 
 ```
 Symptoms of thrashing:
 - CPU utilization drops (processes are waiting for pages)
 - OS thinks it needs more multiprogramming
 - OS adds more processes to the system
-- Even more paging → even lower CPU utilization → even more processes
+- Even more paging â†’ even lower CPU utilization â†’ even more processes
   This is a positive feedback loop that can bring a system to its knees!
 ```
 
 #### The Working-Set Model (Denning, 1968)
 
-The **working set** is the set of pages a process is currently using. It is defined as the set of pages referenced in the last Δ (working-set window).
+The **working set** is the set of pages a process is currently using. It is defined as the set of pages referenced in the last Î” (working-set window).
 
-- If the total working set exceeds physical memory → thrashing
-- If a process does not have enough frames to hold its working set → thrashing
+- If the total working set exceeds physical memory â†’ thrashing
+- If a process does not have enough frames to hold its working set â†’ thrashing
 
 ```
-Working set size as a function of Δ (time window):
-  - Small Δ: Working set is small but may not capture locality
-  - Large Δ: Working set approaches the entire address space
-  - Infinite Δ: All pages ever referenced are in the working set
+Working set size as a function of Î” (time window):
+  - Small Î”: Working set is small but may not capture locality
+  - Large Î”: Working set approaches the entire address space
+  - Infinite Î”: All pages ever referenced are in the working set
 
 The working set changes over time as the program moves through different
 phases (locality transitions).
@@ -258,7 +258,7 @@ Choosing the page size involves trade-offs:
 
 ```
 Factor            Small Pages          Large Pages
-──────            ───────────          ──────────
+â”€â”€â”€â”€â”€â”€            â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€          â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 Internal frag     Less waste           More waste
 Page table        Larger table         Smaller table
 I/O overhead      More I/Os            Fewer I/Os
@@ -317,12 +317,12 @@ int main() {
 
     if (!arr) { perror("malloc"); return 1; }
 
-    // Sequential access (good locality — low page faults)
+    // Sequential access (good locality â€” low page faults)
     for (int i = 0; i < size; i++) {
         arr[i] = i;  // Pages brought in sequentially
     }
 
-    // Random access (poor locality — many page faults)
+    // Random access (poor locality â€” many page faults)
     srand(0);
     for (int i = 0; i < 1000000; i++) {
         int idx = rand() % size;
@@ -368,7 +368,7 @@ int fifo(int frames_count) {
             frames[next_replace] = page;
             next_replace = (next_replace + 1) % frames_count;
             faults++;
-            printf("FIFO (%d frames): Page %d → fault\n", frames_count, page);
+            printf("FIFO (%d frames): Page %d â†’ fault\n", frames_count, page);
         }
     }
 
@@ -429,8 +429,8 @@ int main() {
 ## Summary
 
 - Virtual memory decouples logical address space from physical memory via demand paging
-- Page faults are expensive (~10ms); even 0.1% fault rate causes a 100× slowdown
-- FIFO is simple but can exhibit Belady's Anomaly (more frames → more faults)
+- Page faults are expensive (~10ms); even 0.1% fault rate causes a 100Ã— slowdown
+- FIFO is simple but can exhibit Belady's Anomaly (more frames â†’ more faults)
 - Optimal page replacement minimizes faults but requires future knowledge
 - LRU approximates Optimal using past references; Clock algorithm approximates LRU with low overhead
 - Thrashing occurs when working set exceeds physical memory; solved by adjusting multiprogramming level
@@ -449,10 +449,10 @@ int main() {
 
 4. Demonstrate Belady's Anomaly: Find a reference string where FIFO with 4 frames has more faults than with 3 frames.
 5. Implement the Clock (Second-Chance) page replacement algorithm. Use a circular list of page table entries with reference bits. Test it on the same reference string as Example 2.
-6. Explain the working-set model. If a process has working-set window Δ = 10, and the reference string is 1, 2, 3, 2, 1, 4, 5, 6, 1, 2, 4, 5, 6, 1, 2, what is the working set at each point? Identify locality transitions.
+6. Explain the working-set model. If a process has working-set window Î” = 10, and the reference string is 1, 2, 3, 2, 1, 4, 5, 6, 1, 2, 4, 5, 6, 1, 2, what is the working set at each point? Identify locality transitions.
 
 ### Advanced
 
-7. Write a benchmark that allocates a 1 GB array and measures access time for sequential, strided (stride = page_size × 2), and fully random access patterns. Use `clock_gettime()` for precise measurement. Explain the results in terms of TLB misses and page faults.
+7. Write a benchmark that allocates a 1 GB array and measures access time for sequential, strided (stride = page_size Ã— 2), and fully random access patterns. Use `clock_gettime()` for precise measurement. Explain the results in terms of TLB misses and page faults.
 8. Implement the **Working-Set Page Replacement Algorithm**: keep track of each process's working set and preempt pages not in the working set. Compare its fault rate to LRU for the reference string.
 9. Design and implement a program that uses `mmap()` to process a 1 GB file. Measure the time to read the file sequentially with and without `madvise()` hints (`MADV_SEQUENTIAL`, `MADV_RANDOM`, `MADV_WILLNEED`). What is the impact of each hint on page faults?

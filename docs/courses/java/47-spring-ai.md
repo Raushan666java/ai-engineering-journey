@@ -18,7 +18,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Spring AI Overview
 
-![Spring AI - LLM Integration, RAG, Vector Stores](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/47-spring-ai.png)
+![Spring AI - LLM Integration, RAG, Vector Stores](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/47-spring-ai.png)
 
 Spring AI is a framework that brings AI capabilities to Spring Boot applications. It provides a consistent abstraction over LLM providers, vector databases, document processing, and RAG pipelines.
 
@@ -187,7 +187,7 @@ server:
 
 ---
 
-## 2. ChatClient — Prompt, Call, Stream, Messages
+## 2. ChatClient â€” Prompt, Call, Stream, Messages
 
 ChatClient is the central abstraction for interacting with LLMs. It supports synchronous calls, streaming responses, and multi-message conversations with system, user, and assistant message roles.
 
@@ -227,7 +227,7 @@ public class ChatClientConfig {
 }
 ```
 
-### 2.2 ChatService — Sync, Stream, Multi-Turn
+### 2.2 ChatService â€” Sync, Stream, Multi-Turn
 
 ```java
 package com.aiengineering.course.service;

@@ -1,6 +1,6 @@
-# Chapter 7: Dynamic Programming — Foundations
+# Chapter 7: Dynamic Programming â€” Foundations
 
-> **Prerequisites:** [Chapter 6: Greedy Algorithms](./06-greedy.md) — Understanding when local choices aren't enough | **Next:** [Chapter 8: Dynamic Programming — Knapsack Problems](./08-dp-knapsack.md) — Classic DP patterns for resource allocation
+> **Prerequisites:** [Chapter 6: Greedy Algorithms](./06-greedy.md) â€” Understanding when local choices aren't enough | **Next:** [Chapter 8: Dynamic Programming â€” Knapsack Problems](./08-dp-knapsack.md) â€” Classic DP patterns for resource allocation
 
 ## Learning Objectives
 
@@ -20,7 +20,7 @@ By the end of this chapter, students will be able to:
 | DP Paradigm | Optimal substructure + overlapping subproblems | Two properties distinguish DP from divide-and-conquer |
 | Memoization | Top-down recursion with caching | Easy conversion from recursive; lazy evaluation |
 | Tabulation | Bottom-up table filling | Better constant factors; avoids recursion overhead |
-| Fibonacci Numbers | Naive O(φⁿ) → DP O(n) | 1D state with O(1) space optimization |
+| Fibonacci Numbers | Naive O(Ï†â¿) â†’ DP O(n) | 1D state with O(1) space optimization |
 | Rod Cutting | First cut decides remaining optimal | The canonical "DP is for optimization" example |
 
 ### Chapter Roadmap
@@ -41,7 +41,7 @@ flowchart LR
 
 ## Theory
 
-![DP Introduction Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch07-dp-intro.png)
+![DP Introduction Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch07-dp-intro.png)
 
 ### 7.1 The Dynamic Programming Paradigm
 
@@ -57,9 +57,9 @@ DP can be implemented in two ways:
 
 > **Pro Tip:** Start with a recursive solution, then add memoization. This is the easiest way to derive a DP. Once it works, convert to bottom-up for efficiency if needed.
 >
-> **Remember:** If subproblems don't overlap, you don't have a DP problem — you have divide-and-conquer. Merge sort has optimal substructure but no overlapping subproblems.
+> **Remember:** If subproblems don't overlap, you don't have a DP problem â€” you have divide-and-conquer. Merge sort has optimal substructure but no overlapping subproblems.
 
-**One-Sentence Takeaway:** Dynamic programming requires both optimal substructure (optimal solution from optimal sub-solutions) and overlapping subproblems (same subproblems recur), enabling exponential → polynomial speedup.
+**One-Sentence Takeaway:** Dynamic programming requires both optimal substructure (optimal solution from optimal sub-solutions) and overlapping subproblems (same subproblems recur), enabling exponential â†’ polynomial speedup.
 
 ### 7.2 Fibonacci Numbers
 
@@ -87,9 +87,9 @@ FibDP(n):
 
 \( T(n) = \Theta(n) \), space \( \Theta(n) \) or \( \Theta(1) \) with constant space.
 
-> **Pro Tip:** Fibonacci is the simplest example of DP's power — naive recursion is exponential (O(φⁿ)), while DP is linear (O(n)). Always draw the recursion tree to check if subproblems overlap.
+> **Pro Tip:** Fibonacci is the simplest example of DP's power â€” naive recursion is exponential (O(Ï†â¿)), while DP is linear (O(n)). Always draw the recursion tree to check if subproblems overlap.
 >
-> **Warning:** The naive recursive Fibonacci is a classic interview trap — never implement it without memoization.
+> **Warning:** The naive recursive Fibonacci is a classic interview trap â€” never implement it without memoization.
 
 **One-Sentence Takeaway:** Fibonacci numbers demonstrate DP's transformative power, dropping from exponential to linear time by caching overlapping subproblem results.
 
@@ -130,11 +130,11 @@ CutRodDP(p, n):
 
 **Complexity:** \( \Theta(n^2) \) time, \( \Theta(n) \) space.
 
-> **Pro Tip:** Rod cutting introduces the critical DP step of reconstruction — storing decisions (which first cut) alongside optimal values. Always implement reconstruction if the problem asks for the actual solution, not just the value.
+> **Pro Tip:** Rod cutting introduces the critical DP step of reconstruction â€” storing decisions (which first cut) alongside optimal values. Always implement reconstruction if the problem asks for the actual solution, not just the value.
 >
 > **Remember:** The four-step DP framework (structure, recurse, compute, reconstruct) applies to every DP problem. Memorize it.
 
-**One-Sentence Takeaway:** Rod cutting uses the recurrence r[n] = max(p[i] + r[n-i]) to find optimal cutting patterns in O(n²), demonstrating the four-step DP methodology.
+**One-Sentence Takeaway:** Rod cutting uses the recurrence r[n] = max(p[i] + r[n-i]) to find optimal cutting patterns in O(nÂ²), demonstrating the four-step DP methodology.
 
 ### 7.4 Steps for DP Problem Solving
 
@@ -228,10 +228,10 @@ Maximum revenue for length 8: 22, cuts = [2, 6].
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| Optimal Substructure | Optimal solution from optimal sub-solutions | Shared with greedy — not unique to DP | All DP problems |
+| Optimal Substructure | Optimal solution from optimal sub-solutions | Shared with greedy â€” not unique to DP | All DP problems |
 | Overlapping Subproblems | Same subproblems recur | Distinguishes DP from divide-and-conquer | What makes DP necessary |
-| Memoization | Top-down recursion + caching | Lazy — only solves needed subproblems | When subproblem space is sparse |
-| Tabulation | Bottom-up iterative table | Eager — solves all subproblems | When all subproblems are needed |
+| Memoization | Top-down recursion + caching | Lazy â€” only solves needed subproblems | When subproblem space is sparse |
+| Tabulation | Bottom-up iterative table | Eager â€” solves all subproblems | When all subproblems are needed |
 | Reconstruction | Store decisions to recover solution | Separates value computation from solution building | Problems asking for actual solution |
 
 ### Quick Reference
@@ -240,18 +240,18 @@ Maximum revenue for length 8: 22, cuts = [2, 6].
 |----------|------------|
 | **Two Required Properties** | Optimal substructure + overlapping subproblems |
 | **Two Implementation Styles** | Top-down (memoization) vs bottom-up (tabulation) |
-| **4-Step Framework** | Structure → Recurrence → Compute → Reconstruct |
-| **Complexity Pattern** | States × Transitions = O(number of subproblems × choices per problem) |
+| **4-Step Framework** | Structure â†’ Recurrence â†’ Compute â†’ Reconstruct |
+| **Complexity Pattern** | States Ã— Transitions = O(number of subproblems Ã— choices per problem) |
 | **Common Pitfall** | Using DP when subproblems don't overlap (just use recursion); forgetting base cases |
 
 ### Cross-Application Matrix
 
 | Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
 |-----------|---------------|----------------------|---------------|-------------------|
-| DP Paradigm | Extremely common — most important technique | Core technique for optimization | Resource allocation, routing | Algorithm design theory |
+| DP Paradigm | Extremely common â€” most important technique | Core technique for optimization | Resource allocation, routing | Algorithm design theory |
 | Memoization | Quick DP in interviews | Lazy DP for sparse states | Caching, query optimization | Computational complexity |
 | Tabulation | Preferred for efficiency | Standard CP DP approach | Table-driven automation | Formal verification |
-| Fibonacci DP | Trivial — warm-up | Matrix exponentiation variation | N/A | Recursion theory |
+| Fibonacci DP | Trivial â€” warm-up | Matrix exponentiation variation | N/A | Recursion theory |
 | Rod Cutting | Classic DP intro problem | Variations in cutting problems | Inventory optimization | Operations research |
 
 ---
@@ -283,13 +283,13 @@ B) Optimal substructure (optimal solution from optimal sub-solutions) and overla
 **Q2.** What is the time complexity of naive recursive Fibonacci?
 
 - A) O(n)
-- B) O(n²)
-- C) O(φⁿ) — exponential
+- B) O(nÂ²)
+- C) O(Ï†â¿) â€” exponential
 - D) O(log n)
 
 <details>
 <summary>Answer</summary>
-C) O(φⁿ) where φ ≈ 1.618 — each call spawns two recursive calls, leading to exponential growth.
+C) O(Ï†â¿) where Ï† â‰ˆ 1.618 â€” each call spawns two recursive calls, leading to exponential growth.
 </details>
 
 **Q3.** Which DP approach solves only the subproblems that are actually needed?

@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Web APIs and Application Protocols](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch15-web-apis.png)
+![Web APIs and Application Protocols](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch15-web-apis.png)
 
 1. Design RESTful APIs with appropriate resource modeling, HTTP methods, and status codes.
 2. Explain the WebSocket protocol and its use in real-time applications.
@@ -19,11 +19,11 @@ Representational State Transfer (REST) is an architectural style for designing n
 Resources are nouns representing entities in the application domain. A well-designed API models resources hierarchically:
 
 ```
-/users              → collection of users
-/users/{id}         → single user
-/users/{id}/orders  → orders for a specific user
-/orders/{id}        → single order
-/orders/{id}/items  → items in an order
+/users              â†’ collection of users
+/users/{id}         â†’ single user
+/users/{id}/orders  â†’ orders for a specific user
+/orders/{id}        â†’ single order
+/orders/{id}/items  â†’ items in an order
 ```
 
 ### 15.1.2 HTTP Methods
@@ -199,7 +199,7 @@ data: {"message": "World"}
 \n\n
 ```
 
-SSE is simpler than WebSockets (HTTP only, unidirectional server→client, automatic reconnection) but suitable for notifications, live feeds, and status updates.
+SSE is simpler than WebSockets (HTTP only, unidirectional serverâ†’client, automatic reconnection) but suitable for notifications, live feeds, and status updates.
 
 ## 15.6 WebRTC
 
@@ -221,10 +221,93 @@ An API gateway is a reverse proxy that sits between clients and backend services
 - Rate limiting (token bucket, leaky bucket per client)
 - Caching (response cache for idempotent requests)
 - Load balancing across service instances
-- Request/response transformation (XML↔JSON)
+- Request/response transformation (XMLâ†”JSON)
 - Monitoring and analytics (latency, error rates)
 
 Common API gateways: Kong, NGINX, AWS API Gateway, Envoy, Traefik.
+
+## ðŸ’¡ Pro Tips
+
+- **REST â‰  CRUD**: Not every resource needs all four CRUD operations. Design resources around business actions. For example, `POST /orders/{id}/cancel` is more expressive than `PATCH /orders/{id}` with `{status: "cancelled"}`.
+- **gRPC streaming is cheaper than polling**: For real-time feeds, use gRPC server streaming instead of REST polling. One persistent gRPC stream replaces hundreds of REST GET requests, reducing both latency and server load.
+- **GraphQL query complexity limits are mandatory**: Without depth/width limiting, a single malicious query like `{users{posts{comments{user{posts{...}}}}}` can bring down your server. Always enforce max depth (5â€“7) and query cost analysis.
+- **WebRTC needs a TURN server**: STUN works for 80â€“90% of NAT types, but symmetric NAT requires TURN relay. Always deploy a TURN server (coturn) for production WebRTC applications.
+
+## One-Sentence Takeaways
+
+- RESTful APIs model resources as nouns and HTTP methods as verbs, using status codes for results.
+- WebSocket provides full-duplex communication over a single TCP connection after an HTTP upgrade.
+- gRPC uses Protocol Buffers and HTTP/2 for efficient binary streaming with four service types.
+- GraphQL lets clients specify exact data needs, solving over-fetching and under-fetching.
+- SSE provides simple unidirectional server push over HTTP.
+- WebRTC enables peer-to-peer audio/video/data between browsers via ICE/STUN/TURN.
+
+## Concept Comparison Table
+
+| Protocol | Transport | Message Format | Streaming | Use Case |
+|----------|-----------|----------------|-----------|----------|
+| REST (HTTP/1.1) | TCP | JSON/XML | No | CRUD APIs, web services |
+| WebSocket | TCP (upgraded) | Binary/Text | Full-duplex | Chat, live updates, gaming |
+| gRPC | HTTP/2 | Protocol Buffers | Unary/Server/Client/Bidi | Microservices, real-time |
+| GraphQL | HTTP | JSON (query string) | No (subscriptions via WS) | Flexible data fetching |
+| SSE | HTTP | Text/event-stream | Serverâ†’Client | Notifications, feeds |
+| WebRTC | UDP (DTLS) | Binary (media/data) | Peer-to-peer | Voice, video, file sharing |
+
+## Quick Reference: RESTful API Design Cheat Sheet
+
+| Operation | HTTP Method | Endpoint | Status Code | Idempotent |
+|-----------|-------------|----------|-------------|------------|
+| List | GET | /resources | 200 | Yes |
+| Read | GET | /resources/{id} | 200 | Yes |
+| Create | POST | /resources | 201 | No |
+| Replace | PUT | /resources/{id} | 200 | Yes |
+| Partial update | PATCH | /resources/{id} | 200 | No |
+| Delete | DELETE | /resources/{id} | 204 | Yes |
+
+## Cross-Application Matrix
+
+| Application | Recommended API | Why |
+|-------------|-----------------|-----|
+| CRUD microservice | REST | Simple, well-understood, cacheable |
+| Real-time chat | WebSocket | Low latency, full-duplex |
+| Internal microservices | gRPC | Fast binary serialization, streaming |
+| Mobile app with flexible UI | GraphQL | Client-specified fields, reduce payload |
+| Server â†’ browser notifications | SSE | Simple, auto-reconnect, HTTP-only |
+| P2P video conference | WebRTC | Direct browser-to-browser media |
+
+## Chapter Quiz
+
+1. **Which HTTP method is idempotent?**
+   - a) POST
+   - b) PATCH
+   - c) PUT âœ“
+   - d) Both a and b
+
+2. **What does WebSocket use for the initial handshake?**
+   - a) UDP upgrade
+   - b) HTTP upgrade âœ“
+   - c) TLS directly
+   - d) DNS query
+
+3. **Which gRPC service type allows independent streams in both directions?**
+   - a) Unary
+   - b) Server streaming
+   - c) Bidirectional streaming âœ“
+   - d) Client streaming
+
+4. **Which WebRTC component relays traffic when direct P2P fails?**
+   - a) STUN
+   - b) TURN âœ“
+   - c) ICE
+   - d) SDP
+
+5. **What prevents malicious deep queries in GraphQL?**
+   - a) Rate limiting
+   - b) Query complexity analysis âœ“
+   - c) JWT validation
+   - d) DataLoader
+
+**Answers:** 1-c, 2-b, 3-c, 4-b, 5-b
 
 ## Summary
 

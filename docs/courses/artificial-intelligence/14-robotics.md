@@ -39,7 +39,7 @@ flowchart LR
 
 ## 14.1 Robot Definition and Architecture
 
-![Robotics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch14-robotics.png)
+![Robotics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch14-robotics.png)
 
 A **robot** is a physically embodied agent that perceives its environment through sensors and acts upon it through actuators. The robotic system integrates perception, planning, and control within a physical platform.
 
@@ -79,13 +79,13 @@ MCL uses particle filtering to represent the belief over robot pose:
 
 ```
 function MCL(particles, control, observation, map) returns new_particles
-    N ← len(particles)
-    weights ← array of size N
+    N â† len(particles)
+    weights â† array of size N
     for i = 1 to N do
-        particles[i] ← sample motion model P(x' | particles[i], control)
-        weights[i] ← P(observation | particles[i], map)
+        particles[i] â† sample motion model P(x' | particles[i], control)
+        weights[i] â† P(observation | particles[i], map)
     normalize weights
-    new_particles ← resample N particles with probability ∝ weights
+    new_particles â† resample N particles with probability âˆ weights
     return new_particles
 ```
 
@@ -123,11 +123,11 @@ RRT (LaValle, 1998) incrementally builds a tree in configuration space:
 
 ```
 function RRT-PLAN(q_start, q_goal, max_iterations) returns path
-    T ← tree with root q_start
+    T â† tree with root q_start
     for i = 1 to max_iterations do
-        q_rand ← SAMPLE-CONFIGURATION()
-        q_near ← NEAREST-NEIGHBOR(T, q_rand)
-        q_new ← EXTEND(q_near, q_rand, step_size)
+        q_rand â† SAMPLE-CONFIGURATION()
+        q_near â† NEAREST-NEIGHBOR(T, q_rand)
+        q_new â† EXTEND(q_near, q_rand, step_size)
         if COLLISION-FREE(q_near, q_new) then
             T.ADD-VERTEX(q_new)
             T.ADD-EDGE(q_near, q_new)
@@ -165,36 +165,36 @@ ROS (Robot Operating System) is a middleware framework providing:
 
 Robotics applications span manufacturing (industrial arms, collaborative robots), logistics (autonomous warehouses, delivery), healthcare (surgical robots, rehabilitation), exploration (underwater, space, mining), and service (domestic cleaning, hospitality).
 
-> **💡 Pro Tip:** ROS 2 is the industry standard for robot development. Learn its node-based architecture and the `tf` transform system before writing any code — they make localization, planning, and visualization dramatically easier.
+> **ðŸ’¡ Pro Tip:** ROS 2 is the industry standard for robot development. Learn its node-based architecture and the `tf` transform system before writing any code â€” they make localization, planning, and visualization dramatically easier.
 
 ## Concept Comparison
 
 | Task | Algorithm | State | Sensor | Online? |
 |------|-----------|:---:|:---:|:---:|
-| Localization | MCL (Particle Filter) | x, y, θ | Range finder | ✅ |
-| Localization | Extended Kalman Filter | x, y, θ | Various | ✅ |
-| SLAM | EKF-SLAM | Pose + landmarks | Camera/LIDAR | ✅ |
-| SLAM | GraphSLAM | Full trajectory | Camera/LIDAR | ❌ (batch) |
-| Planning | RRT | Configuration space | None | ✅ |
-| Planning | RRT* | Configuration space | None | ✅ (asymp. opt.) |
+| Localization | MCL (Particle Filter) | x, y, Î¸ | Range finder | âœ… |
+| Localization | Extended Kalman Filter | x, y, Î¸ | Various | âœ… |
+| SLAM | EKF-SLAM | Pose + landmarks | Camera/LIDAR | âœ… |
+| SLAM | GraphSLAM | Full trajectory | Camera/LIDAR | âŒ (batch) |
+| Planning | RRT | Configuration space | None | âœ… |
+| Planning | RRT* | Configuration space | None | âœ… (asymp. opt.) |
 
-## Quick Reference — PID Control
+## Quick Reference â€” PID Control
 
 | Term | Name | Effect | Formula |
 |:---:|------|--------|---------|
-| P | Proportional | Corrects current error | Kₚ e(t) |
-| I | Integral | Eliminates steady-state error | Kᵢ ∫e(t)dt |
+| P | Proportional | Corrects current error | Kâ‚š e(t) |
+| I | Integral | Eliminates steady-state error | Káµ¢ âˆ«e(t)dt |
 | D | Derivative | Dampens oscillations | K_d de/dt |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| MCL (Particle Filter) | ⬜ | ✅ | ⬜ | ✅ |
-| SLAM | ⬜ | ✅ | ⬜ | ✅ |
-| RRT Planning | ⬜ | ⬜ | ⬜ | ✅ |
-| PID Control | ⬜ | ⬜ | ⬜ | ✅ |
-| ROS | ⬜ | ⬜ | ⬜ | ✅ |
+| MCL (Particle Filter) | â¬œ | âœ… | â¬œ | âœ… |
+| SLAM | â¬œ | âœ… | â¬œ | âœ… |
+| RRT Planning | â¬œ | â¬œ | â¬œ | âœ… |
+| PID Control | â¬œ | â¬œ | â¬œ | âœ… |
+| ROS | â¬œ | â¬œ | â¬œ | âœ… |
 
 ## Chapter Quiz
 
@@ -208,7 +208,7 @@ Robotics applications span manufacturing (industrial arms, collaborative robots)
 
 **Q2:** RRT* improves on RRT by providing what guarantee?
 - A) Faster convergence
-- B) Asymptotic optimality — the solution converges to the optimal path as samples → ∞
+- B) Asymptotic optimality â€” the solution converges to the optimal path as samples â†’ âˆž
 - C) Deterministic paths
 - D) Guaranteed collision avoidance
 

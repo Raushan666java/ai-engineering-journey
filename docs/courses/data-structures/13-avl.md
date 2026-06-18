@@ -9,7 +9,7 @@
 
 ## Theory
 
-![AVL Tree Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch13-avl.png)
+![AVL Tree Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch13-avl.png)
 
 ### AVL Invariant
 
@@ -312,6 +312,87 @@ bool isAVL(AVLNode<T>* node) {
 // Usage:
 // std::cout << "Is AVL: " << (isAVL(avl.getRoot()) ? "yes" : "no") << "\n";
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **The four rotation patterns are just two**: LL and RR are symmetric (single rotations). LR and RL are symmetric (double rotations â€” rotate the child first, then the node). Master one direction and the other is mirrored.
+- **Balance factor = height(left) - height(right)**: AVL invariant requires this to be -1, 0, or 1. After insertion, walk up to the first unbalanced node and apply the corresponding rotation.
+- **Deletion may cascade**: Unlike insertion (at most one rotation needed), deletion may require rotations at multiple ancestors. Walk all the way up to the root, rebalancing at each unbalanced node.
+- **AVL vs Red-Black**: AVL trees have tighter balance â†’ faster lookups. Red-Black trees have faster insertions/deletions (fewer rotations). Choose AVL for search-heavy workloads.
+
+## One-Sentence Takeaways
+
+- AVL trees maintain height balance factor between -1, 0, and 1 for every node.
+- Four rotation patterns (LL, RR, LR, RL) restore balance after modifications.
+- Height is strictly \(O(\log n)\), guaranteeing logarithmic worst-case operations.
+- Deletion may require multiple rotations propagating up to the root.
+- AVL trees sacrifice insertion speed for faster lookups compared to Red-Black trees.
+- The minimum number of nodes in an AVL tree of height h follows \(n(h) = n(h-1) + n(h-2) + 1\).
+
+## Concept Comparison Table
+
+| Feature | BST (unbalanced) | AVL Tree | Red-Black Tree |
+|---------|------------------|----------|----------------|
+| Height bound | \(n\) (worst) | \(1.44 \log n\) | \(2 \log n\) |
+| Search | \(O(n)\) worst | \(O(\log n)\) | \(O(\log n)\) |
+| Insert | \(O(n)\) worst | \(O(\log n)\) | \(O(\log n)\) |
+| Delete | \(O(n)\) worst | \(O(\log n)\) | \(O(\log n)\) |
+| Rotations per insert | 0 | â‰¤ 2 | â‰¤ 2 |
+| Rotations per delete | 0 | \(O(\log n)\) | â‰¤ 3 |
+| Extra storage | None | Balance factor (2 bits) | Color bit (1 bit) |
+
+## Quick Reference: AVL Rotation Patterns
+
+| Pattern | Condition | Operation | Result |
+|---------|-----------|-----------|--------|
+| LL | Left child is heavy-left | Single right rotation on node | Restores balance |
+| RR | Right child is heavy-right | Single left rotation on node | Restores balance |
+| LR | Left child is heavy-right | Left rotation on child, then right rotation on node | Restores balance |
+| RL | Right child is heavy-left | Right rotation on child, then left rotation on node | Restores balance |
+
+## Cross-Application Matrix
+
+| Application | Why AVL |
+|-------------|---------|
+| Database in-memory index | Guaranteed \(O(\log n)\) search for large datasets |
+| Compiler symbol table | Fast lookups, infrequent insertions |
+| Real-time systems | Predictable worst-case performance |
+| Network routing table | Fast prefix lookup, stable |
+| Gaming (entity lookup) | Low latency, search-heavy workload |
+
+## Chapter Quiz
+
+1. **What balance factor values does AVL permit?**
+   - a) 0, 1, 2
+   - b) -1, 0, 1 âœ“
+   - c) -2, -1, 0, 1, 2
+   - d) 0 only
+
+2. **How many rotations may be needed after an AVL insertion?**
+   - a) At most 1 âœ“
+   - b) At most 2
+   - c) \(O(\log n)\)
+   - d) 0
+
+3. **LR rotation is:**
+   - a) Single rotation
+   - b) Double rotation (left then right) âœ“
+   - c) Double rotation (right then left)
+   - d) No rotation needed
+
+4. **What is the maximum height of an AVL tree with \(n\) nodes?**
+   - a) \(n\)
+   - b) \(1.44 \log n\) âœ“
+   - c) \(2 \log n\)
+   - d) \(\log n\)
+
+5. **Which is better for search-heavy workloads?**
+   - a) AVL âœ“
+   - b) Red-Black
+   - c) Unbalanced BST
+   - d) Linked list
+
+**Answers:** 1-b, 2-a, 3-b, 4-b, 5-a
 
 ## Summary
 

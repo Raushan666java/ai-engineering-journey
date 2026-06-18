@@ -16,7 +16,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-![RabbitMQ / AMQP Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/35-rabbitmq.png)
+![RabbitMQ / AMQP Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/35-rabbitmq.png)
 
 ### 1. AMQP Core Concepts
 
@@ -31,11 +31,11 @@ AMQP (Advanced Message Queuing Protocol) is a wire-level protocol for message-or
 | **Binding** | A rule that connects an exchange to a queue with an optional routing key |
 | **Queue** | A named buffer that stores messages until consumers process them |
 | **Consumer** | Subscribes to a queue and processes messages |
-| **Virtual Host (vhost)** | A namespace isolation unit — exchanges, queues, and bindings are scoped to a vhost |
+| **Virtual Host (vhost)** | A namespace isolation unit â€” exchanges, queues, and bindings are scoped to a vhost |
 
 **Message broker vs Message queue:**
 
-A **message queue** (e.g., ActiveMQ, SQS) stores messages in named queues; producers send directly to a queue. An AMQP **message broker** adds an exchange layer — producers never touch queues directly. The exchange determines routing, enabling complex patterns like topic-based subscriptions and fanout.
+A **message queue** (e.g., ActiveMQ, SQS) stores messages in named queues; producers send directly to a queue. An AMQP **message broker** adds an exchange layer â€” producers never touch queues directly. The exchange determines routing, enabling complex patterns like topic-based subscriptions and fanout.
 
 ### 2. Exchange Types
 
@@ -189,7 +189,7 @@ Every message published to `broadcast.fanout` goes to all three queues simultane
 
 #### 2.4 HeadersExchange
 
-Routes based on message header attributes rather than routing keys. Supports `x-match` — `all` means all headers must match, `any` means at least one header must match.
+Routes based on message header attributes rather than routing keys. Supports `x-match` â€” `all` means all headers must match, `any` means at least one header must match.
 
 ```java
 @Bean
@@ -422,7 +422,7 @@ public ConnectionFactory tlsConnectionFactory() throws Exception {
 }
 ```
 
-### 5. RabbitTemplate — Sending Messages
+### 5. RabbitTemplate â€” Sending Messages
 
 ```java
 @Service
@@ -585,7 +585,7 @@ public MessageConverter simpleConverter() {
 }
 ```
 
-### 6. @RabbitListener — Consuming Messages
+### 6. @RabbitListener â€” Consuming Messages
 
 ```java
 @Component
@@ -968,7 +968,7 @@ public class VhostAwareConsumer {
 }
 ```
 
-### 10. RabbitAdmin — Programmatic Management
+### 10. RabbitAdmin â€” Programmatic Management
 
 ```java
 @Service
@@ -1401,12 +1401,12 @@ class RabbitListenerTest {
 
 RabbitMQ implements the AMQP 0-9-1 protocol, providing a robust message broker with four exchange types, durable and transient queues, and flexible routing through bindings. Key takeaways:
 
-- **Exchanges** are the routing backbone — Direct for exact match, Topic for wildcard patterns, Fanout for broadcast, and Headers for attribute-based routing.
+- **Exchanges** are the routing backbone â€” Direct for exact match, Topic for wildcard patterns, Fanout for broadcast, and Headers for attribute-based routing.
 - **Queues** support rich configuration including TTL, dead-letter exchanges, max length, and priority.
 - **Spring AMQP's `RabbitTemplate`** provides `convertAndSend`, `receiveAndConvert`, and `convertSendAndReceive` for both synchronous and asynchronous messaging. Always configure a `Jackson2JsonMessageConverter` for structured data.
 - **`@RabbitListener`** consumes messages with per-listener concurrency tuning, container factory customization, and manual/auto acknowledgments.
 - **Publisher confirms and returns** ensure reliable delivery. Always set `mandatory=true` and register `ConfirmCallback` and `ReturnCallback`.
-- **Retry and error handling** uses `RetryTemplate` with exponential backoff, and `MessageRecoverer` implementations for final disposition — `RepublishMessageRecoverer` is production-preferred for routing failures to a retry/dead-letter queue.
+- **Retry and error handling** uses `RetryTemplate` with exponential backoff, and `MessageRecoverer` implementations for final disposition â€” `RepublishMessageRecoverer` is production-preferred for routing failures to a retry/dead-letter queue.
 - **`BatchingRabbitTemplate`** aggregates messages for high-throughput scenarios.
 - **`RabbitAdmin`** enables programmatic management of exchanges, queues, and bindings for dynamic multi-tenant setups.
 
@@ -1440,4 +1440,4 @@ Configure a `BatchingRabbitTemplate` with batch size 20, byte limit 10000, and 5
 Configure two `ConnectionFactory` beans for vhosts `/app-a` and `/app-b`. Create separate `RabbitTemplate` beans and `@RabbitListener` container factories.
 
 ### Exercise 10: Complete Order Pipeline
-Build a full order processing pipeline: `order.exchange` (direct), queues for payment → inventory → shipping → notification, with a DLQ for failed messages and publisher confirms.
+Build a full order processing pipeline: `order.exchange` (direct), queues for payment â†’ inventory â†’ shipping â†’ notification, with a DLQ for failed messages and publisher confirms.

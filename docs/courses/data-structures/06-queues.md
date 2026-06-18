@@ -10,7 +10,7 @@
 
 ## Theory
 
-![Queues Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch06-queues.png)
+![Queues Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch06-queues.png)
 
 ### Queue ADT
 
@@ -291,6 +291,87 @@ int main() {
 [Priority 3] Write report
 [Priority 1] Check email
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **Circular array queue needs one sentinel slot**: Use front and rear indices where an empty queue has front == rear, and a full queue has (rear + 1) % size == front. This wastes one slot but avoids tracking separate size.
+- **BFS is queue's natural domain**: Push the start node, mark visited, then repeatedly pop, process neighbors, and push unvisited ones. The queue guarantees level-by-level exploration.
+- **Monotonic queue for sliding window max**: Maintain a deque where elements are in decreasing order. Before pushing, pop from the back while the back is smaller than the new element. The front is always the window max.
+- **Priority queue with `decreaseKey` needs a heap index**: For Dijkstra's algorithm, maintain an array mapping vertex ID â†’ heap position. This allows \(O(\log n)\) priority updates instead of \(O(n)\) search.
+
+## One-Sentence Takeaways
+
+- FIFO means the first enqueued element is the first dequeued.
+- Circular arrays avoid wasted space by wrapping indices modulo capacity.
+- Linked queues have no capacity limit but allocate per node.
+- Deques allow insertion and deletion at both ends.
+- Priority queues use a binary heap for \(O(\log n)\) insertion and extraction.
+- Queues are essential for BFS, scheduling, and buffering.
+
+## Concept Comparison Table
+
+| Feature | Array Queue | Circular Queue | Linked Queue | Deque |
+|---------|-------------|----------------|--------------|-------|
+| Enqueue | \(O(1)\) | \(O(1)\) | \(O(1)\) | \(O(1)\) both ends |
+| Dequeue | \(O(1)\) | \(O(1)\) | \(O(1)\) | \(O(1)\) both ends |
+| Space waste | Wraparound needs free slot | 1 sentinel slot | Per-node ptr overhead | 2 ptrs per node |
+| Capacity limit | Fixed | Fixed | No | No |
+| Cache locality | Good | Good | Poor | Poor |
+
+## Quick Reference: When to Use Which Queue
+
+| Need | Best Queue Type |
+|------|-----------------|
+| Fixed-size buffer | Circular array queue |
+| Variable-size FIFO | Linked queue |
+| Insert/delete at both ends | Deque |
+| Access by priority | Priority queue (binary heap) |
+| Sliding window max | Monotonic deque |
+
+## Cross-Application Matrix
+
+| Application | Queue Type | Why |
+|-------------|-----------|-----|
+| BFS graph traversal | Simple FIFO queue | Level-order processing |
+| CPU task scheduling | Priority queue | Higher-priority tasks first |
+| Keyboard buffer | Circular queue | Fixed buffer, sequential read |
+| Undo history | Deque | Limit size, add/remove from ends |
+| Sliding window max | Monotonic deque | \(O(n)\) time overall |
+| Packet buffering | Circular queue | Fixed capacity, overwrite oldest |
+
+## Chapter Quiz
+
+1. **What does FIFO stand for?**
+   - a) Fast In, Fast Out
+   - b) First In, First Out âœ“
+   - c) Final In, Final Out
+   - d) Fixed Input, Fixed Output
+
+2. **Why does a circular queue waste one slot?**
+   - a) Implementation error
+   - b) To distinguish empty from full âœ“
+   - c) Performance optimization
+   - d) Alignment requirement
+
+3. **Which data structure enables priority queue operations?**
+   - a) Stack
+   - b) Binary heap âœ“
+   - c) Hash table
+   - d) Linked list
+
+4. **A deque allows insertion at:**
+   - a) Front only
+   - b) Back only
+   - c) Both ends âœ“
+   - d) Middle only
+
+5. **Which algorithm uses a queue naturally?**
+   - a) DFS
+   - b) BFS âœ“
+   - c) Binary search
+   - d) Merge sort
+
+**Answers:** 1-b, 2-b, 3-b, 4-c, 5-b
 
 ## Summary
 

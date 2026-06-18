@@ -14,7 +14,7 @@
 ---
 ## Theory
 
-![Distributed Consistency Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/06-distributed-consistency.png)
+![Distributed Consistency Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/06-distributed-consistency.png)
 
 ### The CAP Theorem
 
@@ -22,7 +22,7 @@ The CAP theorem, formalized by Seth Gilbert and Nancy Lynch in 2002, states that
 
 **Definitions:**
 
-- **Consistency (C):** Every read receives the most recent write or an error. All nodes see the same data at the same time. This is *linearizability* — operations appear to execute atomically at a single instant between invocation and response.
+- **Consistency (C):** Every read receives the most recent write or an error. All nodes see the same data at the same time. This is *linearizability* â€” operations appear to execute atomically at a single instant between invocation and response.
 - **Availability (A):** Every request receives a non-error response, without guarantee that it contains the most recent write. The system continues to function even when nodes are down.
 - **Partition Tolerance (P):** The system continues to operate despite an arbitrary number of messages being dropped or delayed between nodes (network partition).
 
@@ -34,7 +34,7 @@ Assume a system with two nodes, G1 and G2, each storing value `v0`.
 Initial state: v0 on G1, v0 on G2
 Time t0: Client writes v1 to G1
 Time t1: Network partition occurs between G1 and G2
-Time t2: Client reads from G2 → G2 still has v0
+Time t2: Client reads from G2 â†’ G2 still has v0
 ```
 
 During a partition:
@@ -52,7 +52,7 @@ The CAP theorem is often misunderstood. Key clarifications:
 
 2. **CAP is not 2-out-of-3.** You don't "pick two" at design time. You design for consistency or availability when partitions happen. Most systems choose CP or AP.
 
-3. **CAP ignores latency.** Partition-like behavior can occur even without a network cut — if two datacenters are connected by a high-latency link, a synchronous write may time out, forcing a choice between consistency and availability.
+3. **CAP ignores latency.** Partition-like behavior can occur even without a network cut â€” if two datacenters are connected by a high-latency link, a synchronous write may time out, forcing a choice between consistency and availability.
 
 ### PACELC Extension
 
@@ -77,24 +77,24 @@ This captures the real design space: even when no partition exists, systems choo
 All operations appear to execute atomically in a global order consistent with real time. After a write completes, all subsequent reads (from any node) return the written value.
 
 ```
-Client 1: write(x=1) → ACK
-             ↓ time
-Client 2: read(x) → returns 1 (guaranteed)
-Client 3: read(x) → returns 1 (guaranteed)
+Client 1: write(x=1) â†’ ACK
+             â†“ time
+Client 2: read(x) â†’ returns 1 (guaranteed)
+Client 3: read(x) â†’ returns 1 (guaranteed)
 ```
 
 **Implementation:** Requires majority acknowledgment before returning to the client. In a quorum system, a write must reach `W` nodes and a read must reach `R` nodes such that `W + R > N`.
 
-**Cost:** Higher latency — every write must coordinate with multiple nodes. During failures, the system may become unavailable (CP sacrifice).
+**Cost:** Higher latency â€” every write must coordinate with multiple nodes. During failures, the system may become unavailable (CP sacrifice).
 
 #### Sequential Consistency
 
 Operations appear in program order per process, but the global order does not need to match real time. Reads may return stale values in some cases.
 
 ```
-Process 1: write(x=1) → write(x=2)
-Process 2: read(x) → 2
-Process 3: read(x) → 1 (allowed, even if later in real time)
+Process 1: write(x=1) â†’ write(x=2)
+Process 2: read(x) â†’ 2
+Process 3: read(x) â†’ 1 (allowed, even if later in real time)
 ```
 
 Sequential consistency is weaker than linearizability but easier to implement efficiently.
@@ -105,20 +105,20 @@ Writes that are causally related (one depends on another) must be seen in the sa
 
 ```
 Related writes (causal):
-  Process 1: write(x=1) → write(y=x+1)
-  Process 2: read(y) → 2 implies read(x) → 1
+  Process 1: write(x=1) â†’ write(y=x+1)
+  Process 2: read(y) â†’ 2 implies read(x) â†’ 1
 
 Concurrent writes (no causal relationship):
   Process 1: write(x=1)
   Process 2: write(x=2)
-  Process 3: read(x) → 1 or 2 (either is valid)
+  Process 3: read(x) â†’ 1 or 2 (either is valid)
 ```
 
 Causal consistency captures the *happens-before* relationship. It is typically implemented using vector clocks.
 
 #### Eventual Consistency
 
-If no new updates are made to a data item, eventually all reads will return the last updated value. There is no time bound — the system converges eventually.
+If no new updates are made to a data item, eventually all reads will return the last updated value. There is no time bound â€” the system converges eventually.
 
 ```
 Write to Node A: x=42
@@ -128,7 +128,7 @@ Read from Node C: x=42 (converged)
 Read from Node B: x=42 (finally converged)
 ```
 
-Eventual consistency is the weakest model. It provides the best availability and latency because reads and writes can complete without waiting for other nodes. However, application complexity increases — developers must handle stale reads and resolve conflicts.
+Eventual consistency is the weakest model. It provides the best availability and latency because reads and writes can complete without waiting for other nodes. However, application complexity increases â€” developers must handle stale reads and resolve conflicts.
 
 **Convergence requires conflict resolution.** Two widely used approaches:
 
@@ -142,7 +142,7 @@ A quorum is the minimum number of nodes that must participate in a read or write
 
 **`W + R > N`**
 
-This ensures that any read quorum intersects with any write quorum — at least one node holds the latest write.
+This ensures that any read quorum intersects with any write quorum â€” at least one node holds the latest write.
 
 #### Quorum Configurations
 
@@ -163,8 +163,8 @@ This ensures that any read quorum intersects with any write quorum — at least 
 
 ```
 N=5, W=3, R=3
-Write to nodes: {1, 2, 3} → ACK after 3 responses
-Read from nodes: {3, 4, 5} → reads latest value from node 3 (intersection)
+Write to nodes: {1, 2, 3} â†’ ACK after 3 responses
+Read from nodes: {3, 4, 5} â†’ reads latest value from node 3 (intersection)
 ```
 
 #### Read Repair
@@ -185,11 +185,11 @@ When a write target node is unavailable, the coordinator picks an alternative no
 
 ```
 Intended target: Node 3 (down)
-  → Coordinator writes to Node 5 with hint: "this belongs to Node 3"
-  → When Node 3 recovers, Node 5 delivers the write
+  â†’ Coordinator writes to Node 5 with hint: "this belongs to Node 3"
+  â†’ When Node 3 recovers, Node 5 delivers the write
 ```
 
-Hinted handoff improves availability — writes succeed even when some replicas are temporarily unavailable. However, it can weaken consistency guarantees if the hint is lost before delivery.
+Hinted handoff improves availability â€” writes succeed even when some replicas are temporarily unavailable. However, it can weaken consistency guarantees if the hint is lost before delivery.
 
 ### Gossip Protocol
 
@@ -219,14 +219,14 @@ SWIM (Scalable Weakly-consistent Infection-style Process Group Membership Protoc
 
 1. **Failure Detector:** Each node periodically picks a random member and sends a ping. If the ping times out, the node sends indirect pings through k other nodes to confirm the failure. After confirmation, the node is declared failed.
 
-2. **Dissemination Component:** Membership updates (joins, leaves, failures) are propagated via gossip — each piggyback update is attached to the ping/pong messages.
+2. **Dissemination Component:** Membership updates (joins, leaves, failures) are propagated via gossip â€” each piggyback update is attached to the ping/pong messages.
 
 ```
-Node A → ping → Node B (random target)
-  If B responds → continue
+Node A â†’ ping â†’ Node B (random target)
+  If B responds â†’ continue
   If B times out:
-    A → ping → C → Node B (indirect)
-    C → ack → A (confirmed or not)
+    A â†’ ping â†’ C â†’ Node B (indirect)
+    C â†’ ack â†’ A (confirmed or not)
   If confirmed failed: A updates membership, gossips to D, E, F
 ```
 
@@ -245,7 +245,7 @@ G-Counter state: {node_0: 3, node_1: 5, node_2: 2}
 Total value: 3 + 5 + 2 = 10
 
 Operation: increment()
-  → node_i.counter += 1
+  â†’ node_i.counter += 1
 
 Merge (state-based):
   new_counters[i] = max(local[i], remote[i]) for each i
@@ -301,7 +301,7 @@ An OR-Set supports add and remove operations. Elements are tagged with unique id
 ```python
 class ORSet:
     def __init__(self):
-        self.elements = {}  # element → set of unique tags
+        self.elements = {}  # element â†’ set of unique tags
 
     def add(self, element, tag):
         if element not in self.elements:
@@ -323,11 +323,11 @@ class ORSet:
                 self.elements[element] = set(other_tags)
 ```
 
-Two concurrent `add("x")` operations produce the same result as one `add("x")` — the union of tags converges. A concurrent add and remove: if the remove has seen the add's tag, the element stays removed; otherwise the remove is ignored.
+Two concurrent `add("x")` operations produce the same result as one `add("x")` â€” the union of tags converges. A concurrent add and remove: if the remove has seen the add's tag, the element stays removed; otherwise the remove is ignored.
 
 ### Logical Clocks
 
-Physical clocks are unreliable in distributed systems — clock skew can produce incorrect orderings. Logical clocks capture causality without relying on synchronized wall clocks.
+Physical clocks are unreliable in distributed systems â€” clock skew can produce incorrect orderings. Logical clocks capture causality without relying on synchronized wall clocks.
 
 #### Lamport Clocks
 
@@ -336,17 +336,17 @@ Each process maintains an integer counter. On each event, the counter increments
 ```
 Process P1:        Process P2:
 C=0                 C=0
-C=1 (internal)      ← receives msg with timestamp 1 → C=max(0,1)+1=2
+C=1 (internal)      â† receives msg with timestamp 1 â†’ C=max(0,1)+1=2
 C=2 (send msg)      C=3 (internal)
                     C=4 (send msg)
-← receives ts 4 → C=max(2,4)+1=5
+â† receives ts 4 â†’ C=max(2,4)+1=5
 ```
 
-**Property:** If `a happens-before b` (causal relationship), then `C(a) < C(b)`. However, `C(a) < C(b)` does NOT imply `a happens-before b` — Lamport clocks cannot detect concurrent events.
+**Property:** If `a happens-before b` (causal relationship), then `C(a) < C(b)`. However, `C(a) < C(b)` does NOT imply `a happens-before b` â€” Lamport clocks cannot detect concurrent events.
 
 #### Vector Clocks
 
-Each process maintains a vector of counters — one entry per process. Updates track causality more precisely.
+Each process maintains a vector of counters â€” one entry per process. Updates track causality more precisely.
 
 ```
 Process P1:        Process P2:
@@ -354,11 +354,11 @@ Process P1:        Process P2:
 [1,0,0] (internal)
 [2,0,0] (send msg)
 
-→ P2 receives: [2,0,0] → max([0,0,0],[2,0,0])+1 = [2,1,0]
+â†’ P2 receives: [2,0,0] â†’ max([0,0,0],[2,0,0])+1 = [2,1,0]
 [2,1,0] (internal)
 [2,2,0] (send msg to P3)
 
-→ P3 receives: [2,2,0] and [0,0,1] (concurrent self-event)
+â†’ P3 receives: [2,2,0] and [0,0,1] (concurrent self-event)
   max([2,2,0],[0,0,1])+1 = [2,2,1]
 ```
 
@@ -390,7 +390,7 @@ A Merkle tree is a hash tree where leaf nodes contain hashes of data blocks and 
 
 **Efficiency:** With N keys in a range, the expected number of exchanged hashes is O(log N) for comparing trees, and O(D * log N) for finding D differences. Without Merkle trees, two replicas would need to compare all N keys (O(N)).
 
-**Use in Dynamo:** Each node maintains a Merkle tree per key range. The tree depth is configurable — a depth-16 tree for 2^16 keys means only 16 hashes are exchanged to detect differences in that entire range. Once a mismatch is found at a specific hash level, the nodes drill down to the exact differing keys.
+**Use in Dynamo:** Each node maintains a Merkle tree per key range. The tree depth is configurable â€” a depth-16 tree for 2^16 keys means only 16 hashes are exchanged to detect differences in that entire range. Once a mismatch is found at a specific hash level, the nodes drill down to the exact differing keys.
 
 ### Distributed Snapshots (Chandy-Lamport Algorithm)
 
@@ -412,17 +412,17 @@ The Chandy-Lamport algorithm captures a consistent global snapshot of a distribu
 
 ```
 Initial state:
-  P1 → [msg1] → P2 → [msg2] → P3
+  P1 â†’ [msg1] â†’ P2 â†’ [msg2] â†’ P3
 
 Snapshot initiated by P1:
   Step 1: P1 records state S1, sends marker M1 on outbound channel
   Step 2: P2 receives marker on incoming channel from P1
-          → Records incoming channel from P1 as empty (no in-flight messages)
-          → Records local state S2
-          → Sends M2 on outbound channel to P3
+          â†’ Records incoming channel from P1 as empty (no in-flight messages)
+          â†’ Records local state S2
+          â†’ Sends M2 on outbound channel to P3
   Step 3: P3 receives M2
-          → Records incoming channel from P2 as empty
-          → Records state S3
+          â†’ Records incoming channel from P2 as empty
+          â†’ Records state S3
 
 Global snapshot = {S1, S2, S3, channel_states}
 ```
@@ -439,7 +439,7 @@ Amazon DynamoDB, derived from the Dynamo paper, offers tunable consistency level
 ```
 Consistency Levels:
   EVENTUAL:     R=1, W=1 (fastest, weakest)
-  STRONG:       R=N, W=N (slowest, strongest) — not available in standard DynamoDB
+  STRONG:       R=N, W=N (slowest, strongest) â€” not available in standard DynamoDB
   CONSISTENT_READ: R=1 with read-after-write consistency guarantee via coordinator
 ```
 
@@ -496,7 +496,7 @@ CL = ANY:     W=1, R=0 at quorum (writes always succeed via hinted handoff)
 
 ```sql
 -- Strong consistency: write to 2 nodes, read from 2 nodes
--- W=2, R=2, N=3 → W+R=4 > 3=√
+-- W=2, R=2, N=3 â†’ W+R=4 > 3=âˆš
 SELECT * FROM users WHERE user_id = 42 USING CONSISTENCY QUORUM;
 
 -- Eventual: write to 1, read from 1
@@ -514,7 +514,7 @@ CL.ALL read: response when all 3 replicas respond (p50 ~10ms, p99 ~50ms)
 
 ### Example 3: Google Spanner External Consistency
 
-Google Spanner provides *external consistency* — the strongest consistency model for geographically distributed databases. It is equivalent to linearizability but across datacenters.
+Google Spanner provides *external consistency* â€” the strongest consistency model for geographically distributed databases. It is equivalent to linearizability but across datacenters.
 
 **Mechanism:** Spanner uses the TrueTime API, which exposes a time interval `[earliest, latest]` for the current time. TrueTime guarantees bounded clock skew of `< 7ms` using GPS clocks and atomic clocks.
 
@@ -547,7 +547,7 @@ Timeline:
   Coordinator: assigns commit_ts = T_latest = 10
   Coordinator: sleeps until TrueTime.earliest > 10 (minimum 7ms)
   Coordinator: commits, now safe because all clocks > 10
-  Client reads after commit → all nodes have time > 10 → sees write
+  Client reads after commit â†’ all nodes have time > 10 â†’ sees write
 ```
 
 ```mermaid

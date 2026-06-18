@@ -9,7 +9,7 @@
 - Navigate files with `fseek`, `ftell`, and `rewind`
 - Handle file I/O errors properly
 
-![C File Operations and Preprocessor Directives](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch12-file-preprocessor.png)
+![C File Operations and Preprocessor Directives](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch12-file-preprocessor.png)
 
 ## 12.1 File Pointers
 
@@ -338,10 +338,10 @@ int main(void)
 
 **Useful functions:**
 
-- `feof(fp)` — returns non-zero if end-of-file indicator is set.
-- `ferror(fp)` — returns non-zero if error indicator is set.
-- `clearerr(fp)` — clears both EOF and error indicators.
-- `perror(str)` — prints `str: system error message` to stderr.
+- `feof(fp)` â€” returns non-zero if end-of-file indicator is set.
+- `ferror(fp)` â€” returns non-zero if error indicator is set.
+- `clearerr(fp)` â€” clears both EOF and error indicators.
+- `perror(str)` â€” prints `str: system error message` to stderr.
 
 ## 12.10 Reading Directory Contents (POSIX)
 

@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Secondary Storage](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/12-secondary-storage.png)
+![Secondary Storage](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/12-secondary-storage.png)
 
 ### Disk Structure
 
@@ -24,23 +24,23 @@ Magnetic hard disk drives (HDDs) consist of:
 - **Cylinders**: The set of tracks at the same radius across all platters
 
 ```
-                    ┌─────────────────┐
-                    │   Spindle        │
-                    │    ┌───┐         │
-                    │    │   │         │
-                    │  ┌─┴───┴─┐       │
-                    │  │Platter│       │
-                    │  │ 0     │       │
-                    │  ├───────┤       │
-                   ╔╣  │Platter│       │
-                   ║ ║ │ 1     │       │
-                   ╚╝  ├───────┤       │
-                    │  │Platter│       │
-                    │  │ 2     │       │
-                    │  └───────┘       │
-                    │  Read/Write      │
-                    │  Heads (arm)     │
-                    └─────────────────┘
+                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+                    â”‚   Spindle        â”‚
+                    â”‚    â”Œâ”€â”€â”€â”         â”‚
+                    â”‚    â”‚   â”‚         â”‚
+                    â”‚  â”Œâ”€â”´â”€â”€â”€â”´â”€â”       â”‚
+                    â”‚  â”‚Platterâ”‚       â”‚
+                    â”‚  â”‚ 0     â”‚       â”‚
+                    â”‚  â”œâ”€â”€â”€â”€â”€â”€â”€â”¤       â”‚
+                   â•”â•£  â”‚Platterâ”‚       â”‚
+                   â•‘ â•‘ â”‚ 1     â”‚       â”‚
+                   â•šâ•  â”œâ”€â”€â”€â”€â”€â”€â”€â”¤       â”‚
+                    â”‚  â”‚Platterâ”‚       â”‚
+                    â”‚  â”‚ 2     â”‚       â”‚
+                    â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”˜       â”‚
+                    â”‚  Read/Write      â”‚
+                    â”‚  Heads (arm)     â”‚
+                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### Disk Access Time
@@ -51,20 +51,20 @@ The time to read or write a disk block has three components:
 Access Time = Seek Time + Rotational Latency + Transfer Time
 ```
 
-1. **Seek Time**: Time to move the disk arm to the correct cylinder (dominant factor: 3–15 ms)
-   - Average seek time on modern HDDs: 4–10 ms
+1. **Seek Time**: Time to move the disk arm to the correct cylinder (dominant factor: 3â€“15 ms)
+   - Average seek time on modern HDDs: 4â€“10 ms
    - Depends on the distance the arm must travel
 
 2. **Rotational Latency**: Time for the desired sector to rotate under the read/write head
    - Average: half a rotation
-   - At 7200 RPM: 60 / 7200 = 8.33 ms per rotation → average 4.17 ms
-   - At 15000 RPM: 60 / 15000 = 4 ms per rotation → average 2 ms
+   - At 7200 RPM: 60 / 7200 = 8.33 ms per rotation â†’ average 4.17 ms
+   - At 15000 RPM: 60 / 15000 = 4 ms per rotation â†’ average 2 ms
 
 3. **Transfer Time**: Time to read/write the data once the head is in position
-   - Transfer rate: 100–200 MB/s for modern HDDs
-   - For a 4 KB sector: 4 KB / 150 MB/s ≈ 0.027 ms (negligible compared to seek+rotation)
+   - Transfer rate: 100â€“200 MB/s for modern HDDs
+   - For a 4 KB sector: 4 KB / 150 MB/s â‰ˆ 0.027 ms (negligible compared to seek+rotation)
 
-**Typical random I/O latency** (7200 RPM HDD): 5 ms (seek) + 4 ms (rotation) + 0.03 ms (transfer) ≈ 9 ms. This is about **100,000× slower** than main memory access (∼100 ns).
+**Typical random I/O latency** (7200 RPM HDD): 5 ms (seek) + 4 ms (rotation) + 0.03 ms (transfer) â‰ˆ 9 ms. This is about **100,000Ã— slower** than main memory access (âˆ¼100 ns).
 
 ### Disk Scheduling
 
@@ -78,7 +78,7 @@ Process requests in arrival order. Fair but can cause wild arm movements.
 Queue: 98, 183, 37, 122, 14, 124, 65, 67
 Head starts at 53
 
-Movement: 53 → 98 → 183 → 37 → 122 → 14 → 124 → 65 → 67
+Movement: 53 â†’ 98 â†’ 183 â†’ 37 â†’ 122 â†’ 14 â†’ 124 â†’ 65 â†’ 67
 Total head movement: |53-98| + |98-183| + |183-37| + |37-122| + |122-14| + |14-124| + |124-65| + |65-67|
 = 45 + 85 + 146 + 85 + 108 + 110 + 59 + 2 = 640 cylinders
 ```
@@ -91,8 +91,8 @@ The arm moves in one direction, servicing all requests in its path. When it reac
 Queue: 98, 183, 37, 122, 14, 124, 65, 67
 Head starts at 53, moving toward 0 (inner tracks first)
 
-Direction ← 0:
-Movement: 53 → 37 → 14 → 0 → 65 → 67 → 98 → 122 → 124 → 183
+Direction â† 0:
+Movement: 53 â†’ 37 â†’ 14 â†’ 0 â†’ 65 â†’ 67 â†’ 98 â†’ 122 â†’ 124 â†’ 183
 Total: |53-37| + |37-14| + |14-0| + |0-65| + |65-67| + |67-98| + |98-122| + |122-124| + |124-183|
 = 16 + 23 + 14 + 65 + 2 + 31 + 24 + 2 + 59 = 236 cylinders
 ```
@@ -102,7 +102,7 @@ Total: |53-37| + |37-14| + |14-0| + |0-65| + |65-67| + |67-98| + |98-122| + |122
 Like SCAN, but the arm only services requests in one direction. When it reaches the end, it jumps back to the beginning without servicing.
 
 ```
-Movement: 53 → 37 → 14 → 0 → (jump to 199) → 199 → 183 → 124 → 122 → 98 → 67 → 65
+Movement: 53 â†’ 37 â†’ 14 â†’ 0 â†’ (jump to 199) â†’ 199 â†’ 183 â†’ 124 â†’ 122 â†’ 98 â†’ 67 â†’ 65
                                             (no service during jump)
 Total: 16 + 23 + 14 + 65 + 199 + |199-183| + |183-124| + |124-122| + |122-98| + |98-67| + |67-65|
 = 16 + 23 + 14 + 65 + 199 + 16 + 59 + 2 + 24 + 31 + 2 = 451 cylinders
@@ -116,7 +116,7 @@ Like SCAN/C-SCAN, but the arm only goes as far as the last request in each direc
 
 ```
 C-LOOK (same queue, head at 53 moving toward 0):
-Movement: 53 → 37 → 14 → (jump to 183) → 183 → 124 → 122 → 98 → 67 → 65
+Movement: 53 â†’ 37 â†’ 14 â†’ (jump to 183) â†’ 183 â†’ 124 â†’ 122 â†’ 98 â†’ 67 â†’ 65
 Total: 16 + 23 + 14 + |183-14| + |183-124| + |124-122| + |122-98| + |98-67| + |67-65|
 = 16 + 23 + 14 + 169 + 59 + 2 + 24 + 31 + 2 = 340 cylinders
 ```
@@ -131,7 +131,7 @@ Total: 16 + 23 + 14 + |183-14| + |183-124| + |124-122| + |122-98| + |98-67| + |6
 | LOOK | ~200 | Possible at edges | No |
 | C-LOOK | ~340 | No | Yes |
 
-Modern Linux uses **completely fair queueing** and **deadline scheduler** — both consider request age and prioritize reads over writes.
+Modern Linux uses **completely fair queueing** and **deadline scheduler** â€” both consider request age and prioritize reads over writes.
 
 ### Disk Management
 
@@ -143,16 +143,16 @@ Modern Linux uses **completely fair queueing** and **deadline scheduler** — bo
 
 #### Boot Block
 
-The first sector of the disk (MBR or GPT) contains the boot loader — a small program that loads the OS kernel.
+The first sector of the disk (MBR or GPT) contains the boot loader â€” a small program that loads the OS kernel.
 
 ```
 MBR (Master Boot Record):
-┌──────────────────────────────────┐
-│ Boot code (440 bytes)             │
-│ Disk signature (4 bytes)          │
-│ Partition table entries (16×4=64) │
-│ Magic number 0xAA55 (2 bytes)     │
-└──────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ Boot code (440 bytes)             â”‚
+â”‚ Disk signature (4 bytes)          â”‚
+â”‚ Partition table entries (16Ã—4=64) â”‚
+â”‚ Magic number 0xAA55 (2 bytes)     â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 Modern systems use **GPT** (GUID Partition Table) instead of MBR, supporting disks larger than 2 TB and more than 4 partitions.
@@ -206,9 +206,9 @@ Data 3    Data 4    Parity    Data 5
 
 ```
             RAID 0
-       ┌──────┴──────┐
+       â”Œâ”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”
      RAID 1        RAID 1
-    ┌──┴──┐       ┌──┴──┐
+    â”Œâ”€â”€â”´â”€â”€â”       â”Œâ”€â”€â”´â”€â”€â”
    Disk0 Disk1   Disk2 Disk3
 ```
 **Performance**: Excellent. **Reliability**: Can survive multiple failures (one per mirror set).
@@ -218,7 +218,7 @@ Data 3    Data 4    Parity    Data 5
 | Level | Min Disks | Redundancy | Read perf | Write perf | Capacity |
 |-------|-----------|------------|-----------|------------|----------|
 | 0 | 2 | None | Excellent | Excellent | 100% |
-| 1 | 2 | Mirror | Good | Good (2× writes) | 50% |
+| 1 | 2 | Mirror | Good | Good (2Ã— writes) | 50% |
 | 5 | 3 | Parity | Good | Poor | (N-1)/N |
 | 6 | 4 | Dual parity | Good | Very poor | (N-2)/N |
 | 10 | 4 | Mirror+stripe | Excellent | Good | 50% |
@@ -227,7 +227,7 @@ Data 3    Data 4    Parity    Data 5
 
 Swap space is used by the virtual memory system to hold pages evicted from physical memory.
 
-**Swap partition**: A dedicated partition on disk (Linux). No file system — just raw blocks for efficiency.
+**Swap partition**: A dedicated partition on disk (Linux). No file system â€” just raw blocks for efficiency.
 
 **Swap file**: A file within a file system (Windows `pagefile.sys`, Linux `swapfile`).
 
@@ -250,7 +250,7 @@ void fcfs(int queue[], int n, int start) {
     for (int i = 0; i < n; i++) {
         total += abs(start - queue[i]);
         start = queue[i];
-        printf(" → %d", start);
+        printf(" â†’ %d", start);
     }
     printf("\n  Total movement: %d\n", total);
 }
@@ -288,19 +288,19 @@ void scan(int queue[], int n, int start) {
         for (int i = pos - 1; i >= 0; i--) {
             total += abs(current - sorted[i]);
             current = sorted[i];
-            printf(" → %d", current);
+            printf(" â†’ %d", current);
         }
         // Go to 0
         if (current != 0) {
             total += current;
             current = 0;
-            printf(" → %d", current);
+            printf(" â†’ %d", current);
         }
         // Reverse and go up
         for (int i = pos; i < n; i++) {
             total += abs(current - sorted[i]);
             current = sorted[i];
-            printf(" → %d", current);
+            printf(" â†’ %d", current);
         }
     }
 
@@ -352,7 +352,7 @@ int main() {
 
 ## Summary
 
-- Disk access time = seek + rotation + transfer; seek dominates (∼5–10 ms)
+- Disk access time = seek + rotation + transfer; seek dominates (âˆ¼5â€“10 ms)
 - SCAN/C-SCAN and LOOK/C-LOOK reduce total arm movement compared to FCFS
 - C-SCAN and C-LOOK provide more uniform waiting times than SCAN-based algorithms
 - RAID 0 (striping) improves performance; RAID 1 (mirroring) improves reliability
@@ -367,7 +367,7 @@ int main() {
 
 1. Given a disk with 200 cylinders, compute total head movement for FCFS and SCAN for the queue: 86, 147, 12, 95, 177, 23, 55, 104. Head starts at 50 moving toward 0.
 2. What are the three components of disk access time? Which is typically the largest?
-3. Describe RAID 0, RAID 1, and RAID 5. What is the effective capacity of each with 4 × 1 TB disks?
+3. Describe RAID 0, RAID 1, and RAID 5. What is the effective capacity of each with 4 Ã— 1 TB disks?
 
 ### Intermediate
 

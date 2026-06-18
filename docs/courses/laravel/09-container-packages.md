@@ -1,4 +1,4 @@
-﻿# Chapter 9: Service Container, Facades & Package Development
+# Chapter 9: Service Container, Facades & Package Development
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Theory
 
-![Service Container and Packages](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/09-container-packages.png)
+![Service Container and Packages](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/09-container-packages.png)
 
 
 ### Service Container Deep Dive

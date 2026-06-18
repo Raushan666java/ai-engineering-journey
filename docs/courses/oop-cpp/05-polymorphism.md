@@ -13,7 +13,7 @@ After studying this chapter, students will be able to:
 
 ## 5.1 The Polymorphism Problem
 
-![Polymorphism Types Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/05-polymorphism.png)
+![Polymorphism Types Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/05-polymorphism.png)
 
 Consider a shape hierarchy where each derived type draws itself differently. Without polymorphism, we must resort to type tags and conditional logic:
 
@@ -93,7 +93,7 @@ The vptr is initialised during construction: when the base class constructor run
 
 ## 5.4 Pure Virtual Functions and Abstract Classes
 
-A pure virtual function has no implementation in the declaring class and makes the class *abstract*—objects of that class cannot be instantiated.
+A pure virtual function has no implementation in the declaring class and makes the class *abstract*â€”objects of that class cannot be instantiated.
 
 ```cpp
 class Shape {
@@ -131,7 +131,7 @@ public:
 
 int main() {
     Base* p = new Derived();
-    delete p;   // Output: "~Base" only — DERIVED MEMORY LEAK
+    delete p;   // Output: "~Base" only â€” DERIVED MEMORY LEAK
 }
 ```
 
@@ -150,8 +150,8 @@ Now `delete p` outputs `~Derived\n~Base\n`. As a rule of thumb: if a class has a
 
 C++ provides two operators for runtime type identification (RTTI):
 
-- `dynamic_cast` — safely casts a base pointer/reference to a derived type, returning `nullptr` (for pointers) or throwing `std::bad_cast` (for references) on failure.
-- `typeid` — returns a `std::type_info` object representing the dynamic type.
+- `dynamic_cast` â€” safely casts a base pointer/reference to a derived type, returning `nullptr` (for pointers) or throwing `std::bad_cast` (for references) on failure.
+- `typeid` â€” returns a `std::type_info` object representing the dynamic type.
 
 ```cpp
 void process(Shape& s) {
@@ -167,7 +167,7 @@ void process(Shape& s) {
 }
 ```
 
-RTTI should be used sparingly. Frequent `dynamic_cast` suggests a design flaw—typically that the interface is insufficient and a virtual function should be added. The performance cost of `dynamic_cast` varies across implementations and class hierarchy depths.
+RTTI should be used sparingly. Frequent `dynamic_cast` suggests a design flawâ€”typically that the interface is insufficient and a virtual function should be added. The performance cost of `dynamic_cast` varies across implementations and class hierarchy depths.
 
 ## 5.7 Compile-Time vs Runtime Polymorphism
 

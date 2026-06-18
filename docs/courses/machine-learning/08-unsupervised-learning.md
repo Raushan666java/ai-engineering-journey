@@ -1,4 +1,4 @@
-﻿# Chapter 8: Unsupervised Learning
+# Chapter 8: Unsupervised Learning
 
 ---
 
@@ -34,7 +34,7 @@ Hierarchical clustering builds a tree of clusters. There are two main approaches
 
 The results are often visualized using a **Dendrogram**, a tree-like diagram that shows the sequence of merges or splits and the distance at which they occurred.
 
-![K-means Clustering Process](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/machine-learning/ch08-kmeans.png)
+![K-means Clustering Process](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/machine-learning/ch08-kmeans.png)
 
 ---
 

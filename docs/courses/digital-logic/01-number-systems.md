@@ -1,5 +1,8 @@
 # Chapter 1: Number Systems
 
+> **Prereq:** Basic arithmetic (decimal operations).
+> **Next:** Chapter 2 (Boolean Algebra & Logic Gates) â€” number systems provide the arithmetic basis for Boolean logic.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -11,9 +14,35 @@ By the conclusion of this chapter, the student shall be able to:
 5. Encode decimal digits using binary-coded decimal (BCD)
 6. Construct and interpret Gray code sequences
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Positional Number Systems | Digits weighted by powers of base | Foundation for all digital representation |
+| Base Conversion | Convert between radices | Translating human â†” machine representation |
+| Signed Representations | Sign-magnitude, ones' comp, two's comp | Negative numbers in binary hardware |
+| BCD | 4-bit per decimal digit | Precision-critical financial computation |
+| Gray Code | Single-bit transitions | Error reduction in encoders and state machines |
+
+```mermaid
+flowchart LR
+    A[Number Systems] --> B[Binary]
+    A --> C[Octal]
+    A --> D[Hexadecimal]
+    B --> E[Signed Representation]
+    E --> F[Sign-Magnitude]
+    E --> G[Ones' Complement]
+    E --> H[Two's Complement]
+    B --> I[BCD]
+    B --> J[Gray Code]
+    H --> K[Arithmetic Hardware]
+    style A fill:#e1f5fe
+    style K fill:#c8e6c9
+```
+
 ## Theory
 
-![Number Systems, Conversions and Binary Representations](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch01-number-systems.png)
+![Number Systems, Conversions and Binary Representations](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch01-number-systems.png)
 
 ### 1.1 Positional Number Systems
 
@@ -79,6 +108,8 @@ Negative numbers are formed by complementing every bit of the positive represent
 
 Negative numbers are formed by taking the ones' complement and adding 1. The range is &minus;2^{n-1} to +(2^{n-1} &minus; 1). A unique representation for zero exists. Two's complement is the dominant signed representation in modern computers because addition hardware need not distinguish signed from unsigned operands.
 
+> **One-Sentence Takeaway:** Two's complement dominates digital design because a single adder circuit handles both signed and unsigned addition â€” the same XOR gates that add positive numbers also handle negatives without modification.
+
 | Decimal | 4-Bit Two's Complement |
 |---------|----------------------|
 | +7 | 0111 |
@@ -120,6 +151,8 @@ BCD encodes each decimal digit as a 4-bit binary sequence. The weighted codes us
 | 9 | 1001 |
 
 BCD is used in applications requiring precise decimal representation, such as financial calculators and digital displays. BCD addition requires correction when the sum exceeds 9: add 6 to the result.
+
+> **Pro Tip:** Gray code is essential in hardware design for crossing clock domains â€” a multi-bit counter transitioning from 0111 â†’ 1000 could produce arbitrary intermediate values on parallel wires. Gray code guarantees single-bit transitions, eliminating the race condition.
 
 ### 1.5 Gray Code
 
@@ -180,6 +213,34 @@ Convert binary 1011_2 to Gray code.
 
 Gray code: 1110.
 
+### Concept Comparison
+
+| Representation | Zero Count | Range (n bits) | Hardware Complexity |
+|---------------|-----------|----------------|---------------------|
+| Sign-Magnitude | 2 (+0, -0) | -(2^{n-1}-1) to +(2^{n-1}-1) | Separate sign logic |
+| Ones' Complement | 2 | -(2^{n-1}-1) to +(2^{n-1}-1) | End-around carry |
+| Two's Complement | 1 | -2^{n-1} to +(2^{n-1}-1) | Single adder for all |
+| BCD | 1 (0000) | 0 to 10^{n/4}-1 | Correction logic needed |
+
+### Quick Reference
+
+| Conversion | Method | Example |
+|-----------|--------|---------|
+| Binary â†’ Decimal | Sum powers of 2 | 1101 = 8+4+0+1 = 13 |
+| Decimal â†’ Binary | Repeat divide by 2 | 13 Ã· 2 = 6 r1 â†’ 1101 |
+| Binary â†’ Hex | Group 4 bits | 1101 0110 = D6 |
+| Binary â†’ Gray | G_i = B_i âŠ• B_{i+1} | 1011 â†’ 1110 |
+| Gray â†’ Binary | B_i = G_i âŠ• B_{i+1} | 1110 â†’ 1011 |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | ALU signed arithmetic | Two's complement enables unified adder |
+| Embedded Systems | BCD for financial transactions | Precision decimal representation |
+| Digital Circuits | Gray code for state machines | Single-bit transitions prevent glitches |
+| Research | Number-theoretic computing | Alternative bases studied in cryptography |
+
 ## Summary
 
 - Positional number systems represent quantities using weighted digit positions.
@@ -221,4 +282,29 @@ Gray code: 1110.
 
 ### Challenge Problem
 
-Design a circuit that accepts a 4-bit binary number and outputs its two's complement. The circuit should also produce an error flag when the input is 1000 (&minus;8), since this value has no positive counterpart in 4-bit two's complement. Describe the truth table and minimal logic expressions.
+Design a circuit that accepts a 4-bit binary number and outputs its two's complement. The circuit should also produce an error flag when the input is 1000 (&minus;8), since this value has no positive counterpart in 4-bit two's complement.     Describe the truth table and minimal logic expressions.
+
+### Chapter Quiz
+
+1. Two's complement is the dominant signed representation because:
+   - A) It has two representations for zero
+   - B) The same adder circuit handles both signed and unsigned operations
+   - C) It requires fewer bits than sign-magnitude
+   - D) It does not support negative numbers
+
+2. Gray code ensures which property between successive values?
+   - A) All bits change
+   - B) Exactly one bit changes
+   - C) The numeric difference is always 1
+   - D) No bits change
+
+3. BCD addition of 9 + 7 produces what invalid result requiring correction?
+   - A) 1111 (valid), no correction needed
+   - B) 1 0000 (valid BCD), no correction
+   - C) 1 0000 (invalid â€” sum > 9), add 6 to correct
+   - D) 0110 (valid), no correction
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. C
+</details>

@@ -13,7 +13,7 @@ After completing this chapter, you will be able to:
 
 ## Theory
 
-![Number Theory Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/14-number-theory.png)
+![Number Theory Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/14-number-theory.png)
 
 ### 14.1 Divisibility
 

@@ -1,14 +1,46 @@
 # Chapter 9: TCP Congestion Control
 
+> **Prerequisites:** [Chapter 8: Transport Layer](./08-transport-layer.md) â€” TCP basics and connection management | **Next:** [Chapter 10: Application Layer](./10-application-layer.md) â€” From transport to user-facing protocols
+
 ## Learning Objectives
 
-![TCP Congestion Control](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch09-tcp-congestion.png)
+![TCP Congestion Control](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch09-tcp-congestion.png)
 
 1. Distinguish between flow control and congestion control.
 2. Explain the TCP sliding window mechanism and the role of the advertised window.
 3. Describe the AIMD principle and its implementation through slow start and congestion avoidance.
 4. Compare TCP Tahoe, Reno, NewReno, and Cubic congestion control algorithms.
 5. Analyze how competing TCP flows share bottleneck bandwidth.
+
+---
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Flow vs Congestion Control | rwnd protects receiver; cwnd protects network | Effective window = min(cwnd, rwnd) |
+| Slow Start | Double cwnd every RTT; starts at 10 MSS | Quickly probes available bandwidth |
+| Congestion Avoidance | Additive increase: +1 MSS per RTT | Linear growth; AIMD sawtooth pattern |
+| Fast Retransmit | 3 duplicate ACKs trigger retransmission | Avoids waiting for RTO timeout |
+| TCP Cubic | Cubic function replaces linear AIMD | RTT-fair; Linux default |
+| BBR | Model-based, not loss-based | Better throughput on deep buffers |
+
+### Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[TCP Congestion Control] --> B[Flow vs Congestion]
+    A --> C[Slow Start]
+    A --> D[Congestion Avoidance]
+    A --> E[Fast Retransmit/Recovery]
+    A --> F[TCP Variants]
+    F --> F1[Tahoe]
+    F --> F2[Reno]
+    F --> F3[NewReno]
+    F --> F4[Cubic]
+    F --> F5[BBR]
+    A --> G[RTO Computation]
+```
 
 ## 9.1 Flow Control vs. Congestion Control
 
@@ -121,6 +153,84 @@ $$\text{RTTVAR} = (1 - \beta) \cdot \text{RTTVAR} + \beta \cdot |\text{SRTT} - \
 $$\text{RTO} = \text{SRTT} + 4 \cdot \text{RTTVAR}$$
 
 With $\alpha = 1/8$ and $\beta = 1/4$, the RTO adapts to varying network conditions. RFC 6298 specifies minimum RTO of 1 second.
+
+## ðŸ’¡ Pro Tips
+
+- **Diagnose with packet traces**: Use Wireshark's "TCP Stream Graph" â†’ "Time-Sequence Graph (Stevens)" to visualize the cwnd sawtooth pattern. This is the fastest way to identify whether a connection is in slow start vs. congestion avoidance.
+- **Bufferbloat warning**: TCP Reno/NewReno rely on packet loss as a congestion signal. On deep-buffer routers, queues fill before packets drop, causing hundreds of milliseconds of added latency (bufferbloat). Use fq_codel or BBR to avoid this on paths you control.
+- **Cubic's hidden advantage**: Cubic's cubic function means flows with different RTTs converge to similar throughput â€” Reno heavily favors short-RTT flows. If you manage a data center, consider replacing Reno with Cubic or BBR to reduce RTT unfairness.
+- **BBR is not a silver bullet**: BBR achieves high throughput on lossy or deep-buffer links but can be aggressive toward loss-based flows when co-existing. In production, pair BBR with per-flow queuing (FQ) on the bottleneck.
+
+## One-Sentence Takeaways
+
+- **Flow control** = receiver protection; **congestion control** = network protection.
+- AIMD produces a sawtooth cwnd pattern that probes bandwidth and reacts to loss.
+- Slow start doubles cwnd per RTT; congestion avoidance adds 1 MSS per RTT.
+- Fast retransmit + Fast recovery (Reno/NewReno) avoids costly timeouts on isolated loss.
+- TCP Cubic uses a cubic growth function to achieve RTT-fair throughput.
+- BBR estimates bottleneck bandwidth and pacing rate directly, bypassing loss-based signals.
+
+## Concept Comparison Table
+
+| Concept | Scope | Signal | Mechanism | Effect on cwnd |
+|---------|-------|--------|-----------|----------------|
+| Flow Control | End-to-end (receiver) | Advertised rwnd field | Sender limits to rwnd | Caps at rwnd |
+| Congestion Control | Network path | Packet loss (dup ACK, RTO) | AIMD: cwnd management | Sawtooth (increase/decrement) |
+| Slow Start | Startup | ssthresh threshold | Double per RTT | Exponential (up to ssthresh) |
+| Congestion Avoidance | Steady state | Loss event | +1 MSS per RTT | Linear |
+| Fast Recovery | Post-loss | 3 dup ACKs | Inflate cwnd for remaining dup ACKs | cwnd = ssthresh after partial ACK |
+
+## Quick Reference: cwnd Evolution on Packet Loss
+
+| Event | Tahoe | Reno | NewReno | Cubic |
+|-------|-------|------|---------|-------|
+| Triple dup ACK | cwnd = 1, slow start | cwnd /= 2, fast recovery | cwnd /= 2, fast recovery (multi-loss) | cwnd *= 0.7, cubic growth |
+| Timeout | cwnd = 1, slow start | cwnd = 1, slow start | cwnd = 1, slow start | cwnd = 1, slow start |
+| RTO minimum | 1 sec (RFC 6298) | 1 sec | 1 sec | 1 sec |
+
+## Cross-Application Matrix: Congestion Control
+
+| Environment | Preferred Algorithm | Reason |
+|-------------|-------------------|--------|
+| Data center (low RTT, low loss) | DCTCP / DCQCN | AIMD tuned for â‰¤ 10 Gbps, ECN-based |
+| Long-fat pipes (satellite) | Cubic / BBR | RTT fairness, loss tolerance |
+| Cellular (variable bandwidth) | BBR / Copa | Model-based; no loss signal needed |
+| General Internet | Cubic (Linux default) | Balanced fairness and throughput |
+| Real-time (VoIP, gaming) | BBR with FQ | Low latency; avoids bufferbloat |
+
+## Chapter Quiz
+
+1. **What is the effective TCP window if cwnd = 32 KB and rwnd = 20 KB?**
+   - a) 32 KB
+   - b) 20 KB âœ“
+   - c) 52 KB
+   - d) 12 KB
+
+2. **During slow start, how does cwnd increase per RTT?**
+   - a) +1 MSS
+   - b) +1 MSS per ACK
+   - c) Doubles âœ“
+   - d) Constant
+
+3. **What triggers fast retransmit in TCP Reno?**
+   - a) RTO expiry
+   - b) 3 duplicate ACKs âœ“
+   - c) ECN mark
+   - d) ICMP unreachable
+
+4. **TCP Cubic's growth function is:**
+   - a) Linear
+   - b) Logarithmic
+   - c) Cubic âœ“
+   - d) Exponential
+
+5. **Which variant handles multiple packet losses in one window best?**
+   - a) Tahoe
+   - b) Reno
+   - c) NewReno âœ“
+   - d) OldTahoe
+
+**Answers:** 1-b, 2-c, 3-b, 4-c, 5-c
 
 ## Summary
 

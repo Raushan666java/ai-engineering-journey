@@ -1,4 +1,4 @@
-﻿# Chapter 21: Concurrency, Multiprocessing & Parallelism
+# Chapter 21: Concurrency, Multiprocessing & Parallelism
 
 ## Learning Objectives
 
@@ -10,7 +10,7 @@ After completing this chapter, you will be able to:
 - Parallelize ML workflows: hyperparameter tuning, batch inference, ensemble evaluation
 - Avoid shared-state pitfalls and serialization bottlenecks
 
-![Concurrency and Multiprocessing](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/python-programming/21-concurrency-multiprocessing.png)
+![Concurrency and Multiprocessing](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/21-concurrency-multiprocessing.png)
 
 ## 21.1 The GIL Problem
 

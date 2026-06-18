@@ -1,6 +1,6 @@
 # Chapter 1: Introduction to Artificial Intelligence
 
-**Previous:** — | **Next:** [Chapter 2: Intelligent Agents](02-agents.md)
+**Previous:** â€” | **Next:** [Chapter 2: Intelligent Agents](02-agents.md)
 
 ---
 
@@ -40,9 +40,9 @@ flowchart LR
 
 ### Defining Artificial Intelligence
 
-> **One-Sentence Takeaway:** AI is a multidisciplinary field defined by four distinct perspectives — acting/thinking humanly or rationally — each emphasizing different aspects of intelligence.
+> **One-Sentence Takeaway:** AI is a multidisciplinary field defined by four distinct perspectives â€” acting/thinking humanly or rationally â€” each emphasizing different aspects of intelligence.
 
-![Introduction to AI](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch01-introduction.png)
+![Introduction to AI](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch01-introduction.png)
 
 Artificial Intelligence (AI) is a multidisciplinary field aimed at creating systems capable of performing tasks that typically require human intelligence. Definitions often fall into four categories:
 1. **Acting Humanly**: The Turing Test approach, where a machine is intelligent if a human cannot distinguish it from another human during conversation.
@@ -60,7 +60,7 @@ The field of AI is built upon several foundational disciplines:
 - **Neuroscience**: Offering insights into the biological hardware of intelligence.
 - **Computer Engineering**: Creating the physical platforms required to run AI algorithms.
 
-> **💡 Pro Tip:** Understanding the four definitions of AI is essential — most modern AI systems are best described by the "acting rationally" perspective, which grounds AI in the concept of rational agents rather than human mimicry.
+> **ðŸ’¡ Pro Tip:** Understanding the four definitions of AI is essential â€” most modern AI systems are best described by the "acting rationally" perspective, which grounds AI in the concept of rational agents rather than human mimicry.
 
 ### A Brief History of AI
 > **One-Sentence Takeaway:** AI has cycled through periods of great optimism and "AI winters," evolving from symbolic reasoning in the 1950s to today's data-driven statistical approaches.
@@ -75,7 +75,7 @@ The field of AI is built upon several foundational disciplines:
 
 ## Examples
 
-> **⚠️ Warning:** The Turing Test, while historically significant, is no longer considered a rigorous measure of intelligence — modern chatbots can easily fool humans in short conversations without possessing genuine understanding.
+> **âš ï¸ Warning:** The Turing Test, while historically significant, is no longer considered a rigorous measure of intelligence â€” modern chatbots can easily fool humans in short conversations without possessing genuine understanding.
 
 ### Example 1: The Turing Test
 The Turing Test is a classic measure of machine intelligence.
@@ -110,7 +110,7 @@ print(deduce(fact, premise))
 | Thinking Rationally (Logic) | Correct reasoning | Logical soundness | Real-world problems are often illogical |
 | Acting Rationally (Agent) | Outcomes | Expected utility | Requires well-defined performance metric |
 
-## Quick Reference — AI Definitions
+## Quick Reference â€” AI Definitions
 
 | Definition | Core Question | Example System |
 |-----------|--------------|---------------|
@@ -123,12 +123,12 @@ print(deduce(fact, premise))
 
 | Technique | ML Engineering | Computer Vision | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Symbolic Reasoning | ⬜ | ⬜ | ⬜ | ✅ |
-| Statistical Learning | ✅ | ✅ | ✅ | ✅ |
-| Rational Agent Paradigm | ✅ | ✅ | ✅ | ✅ |
-| Knowledge Representation | ⬜ | ⬜ | ✅ | ✅ |
-| Search Algorithms | ✅ | ✅ | ⬜ | ✅ |
-| Neural Networks | ✅ | ✅ | ✅ | ✅ |
+| Symbolic Reasoning | â¬œ | â¬œ | â¬œ | âœ… |
+| Statistical Learning | âœ… | âœ… | âœ… | âœ… |
+| Rational Agent Paradigm | âœ… | âœ… | âœ… | âœ… |
+| Knowledge Representation | â¬œ | â¬œ | âœ… | âœ… |
+| Search Algorithms | âœ… | âœ… | â¬œ | âœ… |
+| Neural Networks | âœ… | âœ… | âœ… | âœ… |
 
 ---
 
@@ -151,7 +151,7 @@ print(deduce(fact, premise))
 - C) Acting Rationally
 - D) Thinking Rationally
 
-<details><summary>Answer</summary>C) Acting Rationally — the dominant paradigm in modern AI research focuses on agents that make optimal decisions to achieve the best expected outcome.</details>
+<details><summary>Answer</summary>C) Acting Rationally â€” the dominant paradigm in modern AI research focuses on agents that make optimal decisions to achieve the best expected outcome.</details>
 
 **Q2:** What was the key significance of the 1956 Dartmouth workshop?
 - A) The first neural network was built

@@ -15,7 +15,7 @@
 
 ## Theory
 
-![Queues, Jobs & Notifications Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/06-queues-notifications.png)
+![Queues, Jobs & Notifications Pipeline](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/06-queues-notifications.png)
 
 ### Queue Drivers
 

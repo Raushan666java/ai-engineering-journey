@@ -12,7 +12,7 @@
 
 ## Theory
 
-![SQL Joins and Subqueries Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch05-sql-joins.png)
+![SQL Joins and Subqueries Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch05-sql-joins.png)
 
 ### 5.1 Introduction to Joins
 
@@ -42,7 +42,7 @@ WHERE s.student_id = e.student_id AND e.course_id = c.course_id;
 **Venn Diagram Logic:** INNER JOIN = intersection of two tables on the join condition.
 
 **Join Condition Operators:**
-- **Equi-join:** Most common — uses equality (`=`)
+- **Equi-join:** Most common â€” uses equality (`=`)
 - **Non-equi join:** Uses inequality operators (`<`, `>`, `<=`, `>=`, `<>`)
 
 ### 5.3 Outer Joins
@@ -89,7 +89,7 @@ FULL OUTER JOIN departments d ON e.department_id = d.department_id;
 
 ### 5.4 Special Joins
 
-**CROSS JOIN:** Produces the Cartesian product of two tables — every row of A paired with every row of B.
+**CROSS JOIN:** Produces the Cartesian product of two tables â€” every row of A paired with every row of B.
 
 ```sql
 -- Generate all possible combinations of sizes and colors
@@ -279,7 +279,7 @@ These are not explicit SQL syntax but logical operations.
 - **Join order matters** to the optimizer, but modern optimizers usually find the best plan.
 - **Indexes on join columns** dramatically improve join performance.
 - **Smaller table first** (as inner table) is generally better for hash joins.
-- **Subqueries can often be rewritten as joins** (especially IN → EXISTS or INNER JOIN).
+- **Subqueries can often be rewritten as joins** (especially IN â†’ EXISTS or INNER JOIN).
 - **Correlated subqueries** can sometimes be rewritten as window functions or joins.
 
 ```sql
@@ -372,6 +372,124 @@ WHERE NOT EXISTS (
     SELECT 1 FROM order_items oi WHERE oi.product_id = p.product_id
 );
 ```
+
+## ðŸ’¡ Pro Tips
+
+1. **Prefer explicit ANSI JOIN syntax** (`INNER JOIN ... ON`) over implicit theta-style (`FROM a, b WHERE a.x = b.x`) â€” it separates join conditions from filter conditions and is far more readable.
+2. **LEFT JOIN / IS NULL is the standard anti-join pattern** â€” but NOT EXISTS is often more efficient and handles NULLs correctly.
+3. **SELF JOINs solve more problems than you expect** â€” employee hierarchies, product pairs, consecutive seat bookings, and date range comparisons all use SELF JOIN.
+4. **Correlated subqueries can often be rewritten as window functions** â€” which execute once instead of once per outer row.
+5. **Test your joins on small data first** â€” an incorrect join condition can produce a Cartesian product (millions of rows) that is hard to debug.
+
+## One-Sentence Takeaways
+
+- **5.1:** Joins combine rows from multiple tables based on related columns â€” they are the heart of relational querying.
+- **5.2:** INNER JOIN returns only matched rows; it is the most common and efficient join type.
+- **5.3:** OUTER JOINs (LEFT, RIGHT, FULL) preserve unmatched rows, filling missing values with NULL.
+- **5.4:** CROSS JOIN produces a Cartesian product; SELF JOIN joins a table to itself for hierarchical or pairwise queries.
+- **5.5:** Subqueries can appear in SELECT, FROM, WHERE, and HAVING clauses for powerful nested queries.
+- **5.6:** EXISTS short-circuits on the first match and handles NULLs correctly, often outperforming IN.
+- **5.7:** Correlated subqueries reference the outer query and re-execute per row â€” powerful but potentially expensive.
+- **5.8:** ANY and ALL compare a value against a subquery result set with intuitive semantics.
+- **5.10:** Join order, indexes, and subquery-vs-join rewrites significantly impact query performance.
+
+## Concept Comparison Table
+
+| Join Type | Rows Returned | Use Case |
+|-----------|--------------|----------|
+| **INNER JOIN** | Only matched rows | Most common â€” orders with customer details |
+| **LEFT JOIN** | All left rows + matched right rows | All customers, with or without orders |
+| **RIGHT JOIN** | All right rows + matched left rows | Rare â€” usually rewritten as LEFT JOIN |
+| **FULL JOIN** | All rows from both sides | All employees and all departments, matched if possible |
+| **CROSS JOIN** | Cartesian product (every Ã— every) | Generating date ranges or attribute combinations |
+| **SELF JOIN** | Depends on join condition | Hierarchies, consecutive records, pairs |
+
+| Pattern | Purpose | Example |
+|---------|---------|---------|
+| **IN + Subquery** | Simple membership test | `WHERE id IN (SELECT ...)` |
+| **EXISTS** | Existence test, NULL-safe | `WHERE EXISTS (SELECT 1 ...)` |
+| **NOT IN** | Anti-join (watch for NULLs) | `WHERE id NOT IN (...)` |
+| **NOT EXISTS** | Anti-join, NULL-safe | `WHERE NOT EXISTS (SELECT 1 ...)` |
+| **LEFT JOIN / NULL** | Anti-join (three-table safe) | `LEFT JOIN t2 ... WHERE t2.id IS NULL` |
+| **ANY** | Comparison against any value | `WHERE price > ANY (SELECT ...)` |
+| **ALL** | Comparison against all values | `WHERE price > ALL (SELECT ...)` |
+
+## Quick Reference
+
+| Join Pattern | SQL | Behavior |
+|-------------|-----|----------|
+| Inner Equi-join | `A INNER JOIN B ON A.id = B.id` | Matches rows where ids are equal |
+| Left Outer | `A LEFT JOIN B ON A.id = B.id` | Keeps all A rows; NULLs for unmatched B |
+| Right Outer | `A RIGHT JOIN B ON A.id = B.id` | Keeps all B rows; NULLs for unmatched A |
+| Full Outer | `A FULL JOIN B ON A.id = B.id` | Keeps all rows from both |
+| Cross | `A CROSS JOIN B` | N_A Ã— N_B rows |
+| Self | `A a JOIN A b ON a.parent = b.id` | Table joined to itself with aliases |
+| Semi-join (logical) | `WHERE EXISTS (SELECT ...)` | Rows from A with at least one match in B |
+| Anti-join (logical) | `WHERE NOT EXISTS (SELECT ...)` | Rows from A with no match in B |
+
+## Cross-Application Matrix
+
+| Join Technique | Applied In | Why It Matters |
+|--------------|-----------|----------------|
+| **INNER JOIN** | Every multi-table query | The default way to combine related data |
+| **LEFT JOIN / NULL** | Data quality checks | Finding orphan records, incomplete data |
+| **SELF JOIN** | Org charts, product recommendations | Employee reporting structure, "customers who bought X also bought Y" |
+| **CROSS JOIN** | Calendar tables, size/color combos | Generating complete reference grids |
+| **EXISTS vs IN** | Any subquery | EXISTS short-circuits; IN materializes the full subquery |
+| **Correlated Subquery** | Per-row comparisons | "Above average in their department" â€” row-by-row context |
+| **FULL OUTER JOIN** | Data reconciliation | Comparing two time periods, finding records in either set |
+
+## Chapter Quiz
+
+1. Which join returns only rows where there is a match in both tables?
+   a) LEFT JOIN
+   b) RIGHT JOIN
+   c) INNER JOIN
+   d) FULL OUTER JOIN
+
+2. A LEFT JOIN returns:
+   a) Only matched rows
+   b) All rows from the right table
+   c) All rows from the left table, with NULLs for unmatched right rows
+   d) All rows from both tables
+
+3. Which of the following is the safest anti-join pattern (handles NULLs correctly)?
+   a) NOT IN
+   b) NOT EXISTS
+   c) LEFT JOIN / IS NULL requires special handling
+   d) FULL OUTER JOIN
+
+4. A correlated subquery is:
+   a) A subquery that is executed once for the entire query
+   b) A subquery that references columns from the outer query and re-executes per row
+   c) A subquery that returns multiple columns
+   d) A subquery that cannot be rewritten as a JOIN
+
+5. What does `WHERE price > ALL (SELECT price FROM products WHERE category_id = 2)` return?
+   a) Products priced higher than any product in category 2
+   b) Products priced higher than the average in category 2
+   c) Products priced higher than ALL products in category 2
+   d) Products that are in category 2
+
+6. A SELF JOIN is used to:
+   a) Join a table to another table with the same name
+   b) Join a table to itself using table aliases
+   c) Create a copy of a table
+   d) Join on the primary key only
+
+7. The main performance concern with correlated subqueries is:
+   a) They cannot use indexes
+   b) They re-execute for each row of the outer query
+   c) They always return NULL
+   d) They only work with small tables
+
+8. Which is correct about NOT IN with NULLs?
+   a) NOT IN handles NULLs the same as NOT EXISTS
+   b) NOT IN can produce unexpected results if the subquery contains NULL
+   c) NOT IN is always more efficient
+   d) NOT IN cannot be used in WHERE clauses
+
+**Answers:** 1-c, 2-c, 3-b, 4-b, 5-c, 6-b, 7-b, 8-b
 
 ## Summary
 

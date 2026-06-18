@@ -11,7 +11,7 @@
 
 ## Theory
 
-![File System Structure](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/10-file-systems.png)
+![File System Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/10-file-systems.png)
 
 ### File Concept
 
@@ -48,14 +48,14 @@ Most OS recognize file types to determine how to handle the data:
 
 ```
 Common file types:
-  .exe, .com     — Executable files
-  .txt, .doc     — Text/document files
-  .c, .java      — Source code
-  .o, .obj       — Object files
-  .lib, .a       — Libraries
-  .jpg, .png     — Image files
-  .mp3, .wav     — Audio files
-  .mp4, .mov     — Video files
+  .exe, .com     â€” Executable files
+  .txt, .doc     â€” Text/document files
+  .c, .java      â€” Source code
+  .o, .obj       â€” Object files
+  .lib, .a       â€” Libraries
+  .jpg, .png     â€” Image files
+  .mp3, .wav     â€” Audio files
+  .mp4, .mov     â€” Video files
 ```
 
 Unix-like systems use the file's **magic number** (first few bytes) to determine type, not the extension. Windows uses the extension.
@@ -67,9 +67,9 @@ Unix-like systems use the file's **magic number** (first few bytes) to determine
 The simplest method. Data is read in order, from beginning to end.
 
 ```
-read next    → read next block, advance pointer
-write next   → write block, advance pointer
-reset        → set pointer to beginning
+read next    â†’ read next block, advance pointer
+write next   â†’ write block, advance pointer
+reset        â†’ set pointer to beginning
 ```
 
 Most common access pattern. Used for text editors, compilers, media players.
@@ -79,9 +79,9 @@ Most common access pattern. Used for text editors, compilers, media players.
 A file is composed of fixed-length logical records. A program can read or write records in any order.
 
 ```
-read n       → read block n (where n is a logical record number)
-write n      → write block n
-seek n       → position to record n
+read n       â†’ read block n (where n is a logical record number)
+write n      â†’ write block n
+seek n       â†’ position to record n
 ```
 
 Used for databases, where records must be accessed by key rather than sequentially.
@@ -92,9 +92,9 @@ Builds an index on top of direct access. The index contains pointers to blocks h
 
 ```
 Customer Index:
-  Key: Smith, J. → Record in block 47
-  Key: Jones, A. → Record in block 12
-  Key: Lee, C.   → Record in block 89
+  Key: Smith, J. â†’ Record in block 47
+  Key: Jones, A. â†’ Record in block 12
+  Key: Lee, C.   â†’ Record in block 89
 ```
 
 Used by database management systems. May use multiple levels of indices for large files.
@@ -108,13 +108,13 @@ Directories provide a way to organize files in a hierarchical structure.
 All files are in one directory. Simple, but naming conflicts are inevitable in multi-user systems.
 
 ```
-┌───────────────────────┐
-│   / Directory          │
-│   ├── thesis.docx      │
-│   ├── report.pdf       │
-│   ├── data.csv         │
-│   └── photo.jpg        │
-└───────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚   / Directory          â”‚
+â”‚   â”œâ”€â”€ thesis.docx      â”‚
+â”‚   â”œâ”€â”€ report.pdf       â”‚
+â”‚   â”œâ”€â”€ data.csv         â”‚
+â”‚   â””â”€â”€ photo.jpg        â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 **Problem**: Two users cannot each have a file called `readme.txt`.
 
@@ -123,10 +123,10 @@ All files are in one directory. Simple, but naming conflicts are inevitable in m
 Each user has their own directory. A master file directory (MFD) is indexed by user.
 
 ```
-MFD: ┌─────────────────────────┐
-     │ User1 ─→ UFD1           │
-     │ User2 ─→ UFD2           │
-     └─────────────────────────┘
+MFD: â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+     â”‚ User1 â”€â†’ UFD1           â”‚
+     â”‚ User2 â”€â†’ UFD2           â”‚
+     â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 UFD1:        UFD2:
 thesis.docx  readme.txt
@@ -142,20 +142,20 @@ A tree of arbitrary depth. Each directory may contain files and subdirectories.
 
 ```
 /
-├── home/
-│   ├── user1/
-│   │   ├── docs/
-│   │   └── pics/
-│   └── user2/
-│       └── project/
-├── etc/
-│   ├── passwd
-│   └── hosts
-├── usr/
-│   ├── bin/
-│   └── lib/
-└── var/
-    └── log/
+â”œâ”€â”€ home/
+â”‚   â”œâ”€â”€ user1/
+â”‚   â”‚   â”œâ”€â”€ docs/
+â”‚   â”‚   â””â”€â”€ pics/
+â”‚   â””â”€â”€ user2/
+â”‚       â””â”€â”€ project/
+â”œâ”€â”€ etc/
+â”‚   â”œâ”€â”€ passwd
+â”‚   â””â”€â”€ hosts
+â”œâ”€â”€ usr/
+â”‚   â”œâ”€â”€ bin/
+â”‚   â””â”€â”€ lib/
+â””â”€â”€ var/
+    â””â”€â”€ log/
 ```
 
 Unix/Linux: root is `/`. Windows: each volume has a root like `C:\`.
@@ -166,10 +166,10 @@ A tree with shared subdirectories and files (via links). Allows a file to appear
 
 ```
 /home/user1/
-    ├── docs/
-    │   └── report.pdf
-    ├── pics/ ─── link ───→ /home/user2/shared_pics/
-    └── note.txt ←── link ──── /home/user2/memo.txt
+    â”œâ”€â”€ docs/
+    â”‚   â””â”€â”€ report.pdf
+    â”œâ”€â”€ pics/ â”€â”€â”€ link â”€â”€â”€â†’ /home/user2/shared_pics/
+    â””â”€â”€ note.txt â†â”€â”€ link â”€â”€â”€â”€ /home/user2/memo.txt
 ```
 
 **Hard links** (Unix): Multiple directory entries pointing to the same inode. Deleting one does not delete the file (the inode's reference count decrements). File is only deleted when the count reaches zero.
@@ -245,17 +245,17 @@ The **Virtual File System** (VFS) provides an abstraction layer that allows the 
 
 ```
 Application
-    ↓
+    â†“
 System Calls (open, read, write, close)
-    ↓
+    â†“
 VFS Interface (generic operations)
-    ↓
-┌─────┬─────┬─────┬─────┬─────┐
-│ext4 │btrfs│xfs  │ntfs │nfs  │
-└─────┴─────┴─────┴─────┴─────┘
-    ↓
+    â†“
+â”Œâ”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”
+â”‚ext4 â”‚btrfsâ”‚xfs  â”‚ntfs â”‚nfs  â”‚
+â””â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”˜
+    â†“
 Device Drivers
-    ↓
+    â†“
 Physical Storage
 ```
 
@@ -378,17 +378,17 @@ int main() {
 ```bash
 $ echo "original content" > original.txt
 
-# Hard link — same inode, same data
+# Hard link â€” same inode, same data
 $ ln original.txt hardlink.txt
 $ ls -li original.txt hardlink.txt
 12345 -rw-r--r-- 2 alice staff 17 Jun 1 10:00 original.txt
 12345 -rw-r--r-- 2 alice staff 17 Jun 1 10:00 hardlink.txt
-# Same inode (12345) — they are the same file!
+# Same inode (12345) â€” they are the same file!
 
-# Symbolic link — separate file pointing to original
+# Symbolic link â€” separate file pointing to original
 $ ln -s original.txt symlink.txt
 $ ls -li symlink.txt
-12346 lrwxr-xr-x 1 alice staff 12 Jun 1 10:01 symlink.txt → original.txt
+12346 lrwxr-xr-x 1 alice staff 12 Jun 1 10:01 symlink.txt â†’ original.txt
 # Different inode, different file
 
 # Delete original
@@ -399,7 +399,7 @@ $ cat symlink.txt    # Fails: No such file or directory
 
 ## Summary
 
-- A file is the OS's primary abstraction for persistent storage — named, typed, protected
+- A file is the OS's primary abstraction for persistent storage â€” named, typed, protected
 - File access: sequential (most common), direct (databases), indexed (DBMS)
 - Directory structure evolved from flat (single-level) to tree-structured to acyclic-graph
 - Mounting attaches a file system to the directory hierarchy at a mount point

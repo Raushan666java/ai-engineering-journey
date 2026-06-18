@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Distributed Databases, Security and Performance Tuning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/database-management-systems/ch07-distributed-security-performance.png)
+![Distributed Databases, Security and Performance Tuning](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch07-distributed-security-performance.png)
 
 ### 17.1 Distributed Database Concepts
 
@@ -50,60 +50,60 @@ A **distributed database** is a collection of logically related databases distri
 
 ```
 employees (original)
-┌─────┬───────┬─────────┐
-│ id  │ name  │ dept    │
-├─────┼───────┼─────────┤
-│ 1   │ Alice │ Sales   │
-│ 2   │ Bob   │ Sales   │
-│ 3   │ Carol │ Eng     │
-│ 4   │ Dave  │ Eng     │
-│ 5   │ Eve   │ Sales   │
-└─────┴───────┴─────────┘
+â”Œâ”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ id  â”‚ name  â”‚ dept    â”‚
+â”œâ”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ 1   â”‚ Alice â”‚ Sales   â”‚
+â”‚ 2   â”‚ Bob   â”‚ Sales   â”‚
+â”‚ 3   â”‚ Carol â”‚ Eng     â”‚
+â”‚ 4   â”‚ Dave  â”‚ Eng     â”‚
+â”‚ 5   â”‚ Eve   â”‚ Sales   â”‚
+â””â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 Horizontal fragments:
 Site 1 (Sales):                Site 2 (Engineering):
-┌─────┬───────┬─────────┐      ┌─────┬───────┬─────────┐
-│ id  │ name  │ dept    │      │ id  │ name  │ dept    │
-├─────┼───────┼─────────┤      ├─────┼───────┼─────────┤
-│ 1   │ Alice │ Sales   │      │ 3   │ Carol │ Eng     │
-│ 2   │ Bob   │ Sales   │      │ 4   │ Dave  │ Eng     │
-│ 5   │ Eve   │ Sales   │      └─────┴───────┴─────────┘
-└─────┴───────┴─────────┘
+â”Œâ”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ id  â”‚ name  â”‚ dept    â”‚      â”‚ id  â”‚ name  â”‚ dept    â”‚
+â”œâ”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤      â”œâ”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ 1   â”‚ Alice â”‚ Sales   â”‚      â”‚ 3   â”‚ Carol â”‚ Eng     â”‚
+â”‚ 2   â”‚ Bob   â”‚ Sales   â”‚      â”‚ 4   â”‚ Dave  â”‚ Eng     â”‚
+â”‚ 5   â”‚ Eve   â”‚ Sales   â”‚      â””â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+â””â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ```sql
 -- Horizontal fragmentation rule:
-employee_Sales = σ_dept='Sales'(employees)
-employee_Eng = σ_dept='Engineering'(employees)
+employee_Sales = Ïƒ_dept='Sales'(employees)
+employee_Eng = Ïƒ_dept='Engineering'(employees)
 ```
 
 **Vertical Fragmentation:** Splitting a table by columns (attributes).
 
 ```
 employees (original)
-┌─────┬───────┬─────────┬─────────┬──────────┐
-│ id  │ name  │ dept    │ salary  │ ssn      │
-└─────┴───────┴─────────┴─────────┴──────────┘
+â”Œâ”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ id  â”‚ name  â”‚ dept    â”‚ salary  â”‚ ssn      â”‚
+â””â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 
 Vertical fragments:
 Site 1 (public):                     Site 2 (sensitive):
-┌─────┬───────┬─────────┐            ┌─────┬─────────┬──────────┐
-│ id  │ name  │ dept    │            │ id  │ salary  │ ssn      │
-└─────┴───────┴─────────┘            └─────┴─────────┴──────────┘
+â”Œâ”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”            â”Œâ”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ id  â”‚ name  â”‚ dept    â”‚            â”‚ id  â”‚ salary  â”‚ ssn      â”‚
+â””â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜            â””â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ```sql
 -- Vertical fragmentation (must preserve key):
-employee_public = π_id, name, dept(employees)
-employee_sensitive = π_id, salary, ssn(employees)
+employee_public = Ï€_id, name, dept(employees)
+employee_sensitive = Ï€_id, salary, ssn(employees)
 ```
 
 **Mixed Fragmentation:** Combine horizontal and vertical.
 
 ```sql
 -- First horizontal, then vertical
-sales_public = π_id, name(σ_dept='Sales'(employees))
-sales_sensitive = π_id, salary(σ_dept='Sales'(employees))
+sales_public = Ï€_id, name(Ïƒ_dept='Sales'(employees))
+sales_sensitive = Ï€_id, salary(Ïƒ_dept='Sales'(employees))
 ```
 
 ### 17.3 Replication
@@ -154,7 +154,7 @@ Instead of sending full tables between sites, send only the join columns:
 ```sql
 -- Without semi-join: Send all rows of one table to the other site
 -- With semi-join:
--- Site 1: Send π_dept_id(managers) to Site 2  (small!)
+-- Site 1: Send Ï€_dept_id(managers) to Site 2  (small!)
 -- Site 2: Return matching employee rows only    (filtered!)
 -- Site 1: Join received rows with local managers
 ```
@@ -165,7 +165,7 @@ Instead of sending full tables between sites, send only the join columns:
 
 ```
 Phase 1: Prepare
-Coordinator → All participants: "Prepare to commit transaction T"
+Coordinator â†’ All participants: "Prepare to commit transaction T"
 Participant: If ready, log PREPARED state, respond YES
              If not, log ABORT, respond NO
 
@@ -180,23 +180,23 @@ Participant:
 
 ```
 Coordinator                      Participant 1                     Participant 2
-    │                                  │                                  │
-    ├─────────"Prepare T1"─────────────►                                  │
-    │                                  │                                  │
-    │◄─────────"Ready/YES"──────────────┤                                  │
-    │                                  │                                  │
-    ├─────────"Prepare T1"────────────────────────────────────────────────►
-    │                                  │                                  │
-    │◄─────────"Ready/YES"────────────────────────────────────────────────┤
-    │                                  │                                  │
-    │  (All YES → Decide COMMIT)       │                                  │
-    │                                  │                                  │
-    ├─────────"Commit T1"──────────────►                                  │
-    ├─────────"Commit T1"────────────────────────────────────────────────►
-    │                                  │                                  │
-    │◄─────────"Ack"────────────────────┤                                  │
-    │◄─────────"Ack"──────────────────────────────────────────────────────┤
-    │  (Transaction complete)          │                                  │
+    â”‚                                  â”‚                                  â”‚
+    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€"Prepare T1"â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º                                  â”‚
+    â”‚                                  â”‚                                  â”‚
+    â”‚â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€"Ready/YES"â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤                                  â”‚
+    â”‚                                  â”‚                                  â”‚
+    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€"Prepare T1"â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º
+    â”‚                                  â”‚                                  â”‚
+    â”‚â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€"Ready/YES"â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+    â”‚                                  â”‚                                  â”‚
+    â”‚  (All YES â†’ Decide COMMIT)       â”‚                                  â”‚
+    â”‚                                  â”‚                                  â”‚
+    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€"Commit T1"â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º                                  â”‚
+    â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€"Commit T1"â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â–º
+    â”‚                                  â”‚                                  â”‚
+    â”‚â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€"Ack"â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤                                  â”‚
+    â”‚â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€"Ack"â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+    â”‚  (Transaction complete)          â”‚                                  â”‚
 ```
 
 **2PC Problems:**
@@ -219,7 +219,7 @@ Coordinator                      Participant 1                     Participant 2
 | PostgreSQL (streaming replicas) | RDBMS | CP/AP | Async replicas = AP; sync = CP |
 | Cassandra | Column-family | AP | Tunable consistency |
 | MongoDB | Document | CP (default) | Can be configured |
-| Redis Cluster | KV | CP | Partition → some unavailable |
+| Redis Cluster | KV | CP | Partition â†’ some unavailable |
 | DynamoDB | KV | AP | Eventual consistency by default |
 
 ### 17.7 Consistency in Distributed Systems
@@ -237,8 +237,8 @@ Coordinator                      Participant 1                     Participant 2
 - Condition for strong consistency: R + W > N
 
 ```
-Example: N=3, W=2, R=2 → Strong consistency (2+2=4 > 3)
-         N=3, W=1, R=1 → Weak consistency (1+1=2 ≤ 3)
+Example: N=3, W=2, R=2 â†’ Strong consistency (2+2=4 > 3)
+         N=3, W=1, R=1 â†’ Weak consistency (1+1=2 â‰¤ 3)
 ```
 
 ### 17.8 Distributed Database Architectures
@@ -249,7 +249,7 @@ Example: N=3, W=2, R=2 → Strong consistency (2+2=4 > 3)
 
 **Shared Memory:** All nodes share memory. Rare in distributed databases (more common in parallel databases).
 
-### 17.9 Google Spanner — The Gold Standard
+### 17.9 Google Spanner â€” The Gold Standard
 
 Spanner is Google's globally-distributed SQL database achieving:
 - **External consistency (linearizability)** across global deployments
@@ -341,6 +341,121 @@ class TwoPhaseCommit:
                 p.abort(transaction)
             return "ABORTED"
 ```
+
+## ðŸ’¡ Pro Tips
+
+1. **Distributed transactions (2PC) are expensive** â€” avoid them by designing your data model so that most operations touch a single node (data locality).
+2. **Quorum-based systems give you tunable consistency** â€” choose R + W > N for strong consistency, R + W <= N for better availability during partitions.
+3. **Horizontal (read) vs. Vertical (write) fragmentation** â€” use horizontal for scaling, vertical for separating frequently vs. infrequently accessed columns.
+4. **Semi-joins are the distributed query superpower** â€” they minimize network data transfer by first sending only the join key values across nodes.
+5. **Network partitions happen more often than you think** â€” design for partitions (P in CAP) by choosing between CP and AP based on business requirements.
+
+## One-Sentence Takeaways
+
+- **17.1:** Distributed databases store data across multiple physical locations while presenting a single logical database to users.
+- **17.2:** Fragmentation splits data horizontally (by rows) or vertically (by columns) across sites.
+- **17.3:** Replication maintains copies of data across sites for availability and read scaling.
+- **17.4:** Transparency hides distribution details â€” location, fragmentation, replication, and concurrency.
+- **17.5:** The Two-Phase Commit (2PC) protocol coordinates distributed transactions but blocks on coordinator failure.
+- **17.6:** Distributed query processing uses semi-joins to reduce data transfer across network nodes.
+- **17.7:** The CAP theorem forces a choice between consistency and availability during partitions.
+
+## Concept Comparison Table
+
+| Fragmentation Type | Description | Example |
+|-------------------|-------------|---------|
+| **Horizontal** | Rows split by value range | Customers by region (NA, EU, APAC) |
+| **Vertical** | Columns split by access pattern | User profile (frequent) + audit log (rare) |
+| **Mixed (Hybrid)** | Both horizontal and vertical | Customers by region, with frequent columns separated |
+
+| Replication Strategy | Consistency | Write Cost | Read Benefit |
+|--------------------|-------------|-----------|-------------|
+| **Synchronous** | Immediate (strong) | High â€” wait for all replicas | Read your writes |
+| **Asynchronous** | Eventual | Low â€” fast writes | May read stale data |
+| **Quorum-based** | Tunable | Moderate â€” wait for quorum | Configurable consistency |
+
+| CAP Trade-off | When to Choose |
+|-------------|---------------|
+| **CP** (Consistency + Partition Tolerance) | Banking, inventory where stale reads are unacceptable |
+| **AP** (Availability + Partition Tolerance) | Social media, news where availability matters more |
+| **CA** (Not distributed) | Single-node applications |
+
+## Quick Reference
+
+| Distributed DB Concept | Definition |
+|----------------------|-----------|
+| **Fragmentation** | Splitting data across sites (horizontal, vertical, mixed) |
+| **Replication** | Maintaining copies of data for availability |
+| **Transparency** | Hiding distribution details from users |
+| **2PC** | Two-phase commit protocol for distributed transactions |
+| **Semi-join** | Reduced data transfer by sending only join keys |
+| **CAP** | Consistency, Availability, Partition Tolerance |
+| **Quorum** | Minimum number of nodes that must agree (R + W > N) |
+| **R + W > N** | Strong consistency condition |
+| **Gossip Protocol** | Peer-to-peer information dissemination |
+
+## Cross-Application Matrix
+
+| Distributed DB Concept | Applied In | Why It Matters |
+|----------------------|-----------|----------------|
+| **Horizontal Fragmentation** | Multi-region deployments | Data close to users reduces latency |
+| **2PC** | Cross-shard transactions | Ensures atomic updates across database nodes |
+| **Quorum Reads/Writes** | Cassandra, DynamoDB, Riak | Tunable consistency for different operational needs |
+| **Semi-joins** | Distributed query engines (Presto, Spark) | Minimizes network shuffle during large joins |
+| **CAP Design** | All distributed systems | Fundamental trade-off that shapes system architecture |
+| **Gossip Protocol** | Cassandra, Redis Cluster | Node discovery and state propagation without centralized metadata |
+
+## Chapter Quiz
+
+1. Horizontal fragmentation divides data by:
+   a) Columns
+   b) Rows
+   c) Data types
+   d) Index types
+
+2. The Two-Phase Commit protocol is vulnerable to:
+   a) Network partitions
+   b) Coordinator failure causing blocking
+   c) Slow queries
+   d) Index corruption
+
+3. A semi-join reduces:
+   a) The number of rows in a table
+   b) Network data transfer by sending only join keys
+   c) The number of network nodes
+   d) Query execution time through parallelism
+
+4. The quorum condition for strong consistency is:
+   a) R + W > N
+   b) R + W < N
+   c) R = W
+   d) R + W = N
+
+5. Which CAP choice does a single-node relational database represent?
+   a) CP
+   b) AP
+   c) CA
+   d) None of the above
+
+6. Asynchronous replication provides:
+   a) Strong consistency with slow writes
+   b) Fast writes with eventual consistency
+   c) Immediate consistency across all nodes
+   d) No replication at all
+
+7. The main advantage of distributed databases is:
+   a) Simpler management
+   b) Scalability and availability
+   c) Lower cost
+   d) Stronger consistency
+
+8. Location transparency means:
+   a) Users know where data is stored
+   b) Users do not need to know where data is physically located
+   c) Data is stored in one location
+   d) Locations are encrypted
+
+**Answers:** 1-b, 2-b, 3-b, 4-a, 5-c, 6-b, 7-b, 8-b
 
 ## Summary
 

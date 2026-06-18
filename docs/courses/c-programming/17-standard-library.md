@@ -12,9 +12,9 @@
 - Use `assert.h` for runtime assertions
 - Understand `setjmp.h` for non-local jumps
 
-![C Standard Library and Advanced Topics](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch17-lib-advanced.png)
+![C Standard Library and Advanced Topics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch17-lib-advanced.png)
 
-## 17.1 `<stdlib.h>` — General Utilities
+## 17.1 `<stdlib.h>` â€” General Utilities
 
 ### Memory Allocation
 
@@ -45,7 +45,7 @@ int main(void)
 
     /* More robust: detect errors */
     char *end;
-    long val = strtol(bad_str, &end, 10);  /* 42 — stops at 'a' */
+    long val = strtol(bad_str, &end, 10);  /* 42 â€” stops at 'a' */
     printf("Parsed: %ld, remaining: '%s'\n", val, end);
 
     return 0;
@@ -60,7 +60,7 @@ Parsed: 42, remaining: 'abc'
 | Function | Description |
 |----------|-------------|
 | `atoi`, `atol`, `atoll` | String to integer (no error detection) |
-| `strtol`, `strtoll` | String to long with base (2–36) and error detection |
+| `strtol`, `strtoll` | String to long with base (2â€“36) and error detection |
 | `strtoul`, `strtoull` | String to unsigned long |
 | `strtof`, `strtod`, `strtold` | String to float/double |
 | `itoa` | Non-standard but widely available |
@@ -174,7 +174,7 @@ int main(void)
 | `abs(int)`, `labs(long)`, `llabs(long long)` | Absolute value |
 | `div(int, int)`, `ldiv`, `lldiv` | Integer division returning quotient and remainder |
 
-## 17.2 `<stdio.h>` — Input and Output
+## 17.2 `<stdio.h>` â€” Input and Output
 
 (Detailed in Chapter 12.)
 
@@ -190,7 +190,7 @@ int main(void)
 | `fseek`, `ftell`, `rewind` | File positioning |
 | `printf`, `scanf` | Standard I/O (wrappers for stdin/stdout) |
 | `sprintf`, `sscanf` | String I/O |
-| `snprintf` | Bounded string print (C99 — preferred over `sprintf`) |
+| `snprintf` | Bounded string print (C99 â€” preferred over `sprintf`) |
 | `perror` | Print error message to stderr |
 | `remove`, `rename` | File operations |
 | `tmpfile`, `tmpnam` | Temporary files |
@@ -201,12 +201,12 @@ int main(void)
 
 int main(void)
 {
-    /* snprintf — safe string formatting */
+    /* snprintf â€” safe string formatting */
     char buf[50];
     int written = snprintf(buf, sizeof(buf), "The answer is %d", 42);
     printf("Buffer: '%s' (%d chars written)\n", buf, written);
 
-    /* sscanf — parsing from string */
+    /* sscanf â€” parsing from string */
     int id;
     char name[50];
     float gpa;
@@ -224,7 +224,7 @@ Buffer: 'The answer is 42' (16 chars written)
 Parsed 3 items: 101 Alice 3.85
 ```
 
-## 17.3 `<string.h>` — String Functions
+## 17.3 `<string.h>` â€” String Functions
 
 (Detailed in Chapter 7.)
 
@@ -241,7 +241,7 @@ Parsed 3 items: 101 Alice 3.85
 | `strtok`, `strtok_r` | Tokenize string |
 | `strspn`, `strcspn` | Span character sets |
 | `memset` | Fill memory with byte value |
-| `memcpy` | Copy memory (may overlap — use `memmove` for overlapping) |
+| `memcpy` | Copy memory (may overlap â€” use `memmove` for overlapping) |
 | `memmove` | Copy memory (handles overlap) |
 | `memcmp` | Compare memory |
 | `memchr` | Find byte in memory |
@@ -271,7 +271,7 @@ int main(void)
 Hello, Hello!
 ```
 
-## 17.4 `<math.h>` — Mathematics
+## 17.4 `<math.h>` â€” Mathematics
 
 ```c
 #include <stdio.h>
@@ -330,13 +330,13 @@ gcc -std=c11 -Wall -o program program.c -lm
 #include <math.h>
 
 /* M_PI, M_E, M_SQRT2, etc. */
-printf("π = %.15f\n", M_PI);
+printf("Ï€ = %.15f\n", M_PI);
 printf("e = %.15f\n", M_E);
 ```
 
 These constants are not part of the C standard but are widely available.
 
-## 17.5 `<time.h>` — Date and Time
+## 17.5 `<time.h>` â€” Date and Time
 
 ```c
 #include <stdio.h>
@@ -381,19 +381,19 @@ Elapsed: 0.2340 seconds
 
 ```c
 struct tm {
-    int tm_sec;    /* seconds (0–60) */
-    int tm_min;    /* minutes (0–59) */
-    int tm_hour;   /* hours (0–23) */
-    int tm_mday;   /* day of month (1–31) */
-    int tm_mon;    /* month (0–11) */
+    int tm_sec;    /* seconds (0â€“60) */
+    int tm_min;    /* minutes (0â€“59) */
+    int tm_hour;   /* hours (0â€“23) */
+    int tm_mday;   /* day of month (1â€“31) */
+    int tm_mon;    /* month (0â€“11) */
     int tm_year;   /* year (years since 1900) */
-    int tm_wday;   /* day of week (0–6, Sunday=0) */
-    int tm_yday;   /* day of year (0–365) */
+    int tm_wday;   /* day of week (0â€“6, Sunday=0) */
+    int tm_yday;   /* day of year (0â€“365) */
     int tm_isdst;  /* daylight saving time flag */
 };
 ```
 
-## 17.6 `<ctype.h>` — Character Handling
+## 17.6 `<ctype.h>` â€” Character Handling
 
 ```c
 #include <stdio.h>
@@ -433,7 +433,7 @@ tolower('A') = 'a'
 toupper('A') = 'A'
 ```
 
-## 17.7 `<assert.h>` — Diagnostics
+## 17.7 `<assert.h>` â€” Diagnostics
 
 ```c
 #include <stdio.h>
@@ -467,7 +467,7 @@ To disable assertions in release builds, define `NDEBUG` before including `<asse
 /* assert() now expands to nothing */
 ```
 
-## 17.8 `<setjmp.h>` — Non-Local Jumps
+## 17.8 `<setjmp.h>` â€” Non-Local Jumps
 
 `setjmp` and `longjmp` provide a way to jump across function call boundaries, similar to `goto` but between stack frames.
 
@@ -480,7 +480,7 @@ jmp_buf env;
 void second(void)
 {
     printf("In second()\n");
-    longjmp(env, 42);   /* jump back to setjmp — returns value 42 */
+    longjmp(env, 42);   /* jump back to setjmp â€” returns value 42 */
 }
 
 void first(void)
@@ -512,7 +512,7 @@ In second()
 Back in main() via longjmp (ret = 42)
 ```
 
-**Warnings:** `longjmp` does not call destructors, does not free memory, and can lead to resource leaks. Use sparingly — primarily for error recovery in deep call stacks (e.g., parsing nested data).
+**Warnings:** `longjmp` does not call destructors, does not free memory, and can lead to resource leaks. Use sparingly â€” primarily for error recovery in deep call stacks (e.g., parsing nested data).
 
 ## 17.9 Other Useful Headers
 

@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Functions Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/discrete-mathematics/08-functions.png)
+![Functions Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/08-functions.png)
 
 After completing this chapter, you will be able to:
 
@@ -142,4 +142,4 @@ A **partial function** $f: A \rightharpoonup B$ is a function defined on a subse
 
 ### Challenge Problem
 
-11. Let $f: A \rightarrow B$ and $g: B \rightarrow C$. Prove: $g \circ f$ is bijective if and only if $f$ is injective, $g$ is surjective, and the image of $f$ equals the domain of injectivity restriction of $g$. More directly: prove that if $g \circ f$ is bijective, then $f$ is injective and $g$ is surjective, but the converse (both injective and surjective individually) is not necessary — find a counterexample where $g \circ f$ is bijective but $f$ is not surjective.
+11. Let $f: A \rightarrow B$ and $g: B \rightarrow C$. Prove: $g \circ f$ is bijective if and only if $f$ is injective, $g$ is surjective, and the image of $f$ equals the domain of injectivity restriction of $g$. More directly: prove that if $g \circ f$ is bijective, then $f$ is injective and $g$ is surjective, but the converse (both injective and surjective individually) is not necessary â€” find a counterexample where $g \circ f$ is bijective but $f$ is not surjective.

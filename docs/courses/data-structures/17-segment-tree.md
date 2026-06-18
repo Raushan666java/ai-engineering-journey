@@ -9,14 +9,14 @@
 
 ## Theory
 
-![Segment Tree & Fenwick Tree Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch17-segment-tree.png)
+![Segment Tree & Fenwick Tree Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch17-segment-tree.png)
 
 ### Segment Tree
 
 A **segment tree** is a binary tree that stores interval information. Each node represents a segment \([l, r]\) of the array. The root covers \([0, n-1]\). Each leaf covers a single element. Internal nodes store aggregate information (sum, min, max, etc.) computed from their children.
 
 **Structure:**
-- Array-based storage using 4× the input size.
+- Array-based storage using 4Ã— the input size.
 - Query: \( O(\log n) \)
 - Point update: \( O(\log n) \)
 
@@ -311,6 +311,88 @@ After add 10 at index 2:
   Range sum [1,4]: 34
 ```
 
+## ðŸ’¡ Pro Tips
+
+- **4Ã— size allocation is standard**: A segment tree of size \(n\) needs roughly \(4n\) nodes. The exact formula is \(2 \cdot 2^{\lceil \log_2 n \rceil} - 1\), but allocating \(4n\) is simpler and safe.
+- **Lazy propagation is essential for range updates**: Without it, a range update would touch \(O(n)\) nodes. With lazy propagation, both range update and range query are \(O(\log n)\).
+- **Fenwick tree for prefix sums**: Use BIT (Binary Indexed Tree) when you only need prefix sums and point updates. BIT uses \(n\) space (vs \(4n\) for segment tree) and is simpler to implement.
+- **Coordinate compression for sparse data**: When the array size is huge (\(10^9\)) but only a few positions are used, compress coordinates and build a segment tree dynamically, allocating nodes on demand.
+
+## One-Sentence Takeaways
+
+- Segment trees enable \(O(\log n)\) range queries and point updates.
+- Lazy propagation extends the tree to \(O(\log n)\) range updates.
+- A Fenwick tree (BIT) handles prefix sums with \(n\) space and simpler code.
+- BIT cannot handle range minimum/maximum queries directly.
+- Coordinate compression makes segment trees work on sparse, large-index data.
+- The standard segment tree array size is \(4n\).
+
+## Concept Comparison Table
+
+| Feature | Segment Tree | Fenwick Tree (BIT) | Sparse Table | Square Root Decomposition |
+|---------|-------------|-------------------|--------------|--------------------------|
+| Build time | \(O(n)\) | \(O(n)\) | \(O(n \log n)\) | \(O(n)\) |
+| Point update | \(O(\log n)\) | \(O(\log n)\) | \(O(n \log n)\) | \(O(1)\) |
+| Range query | \(O(\log n)\) | \(O(\log n)\) (prefix) | \(O(1)\) | \(O(\sqrt{n})\) |
+| Range update (lazy) | \(O(\log n)\) | Not supported | Not supported | \(O(\sqrt{n})\) |
+| Space | \(4n\) | \(n\) | \(n \log n\) | \(n + \sqrt{n}\) |
+| Works with min/max | Yes | No | Yes | Yes |
+
+## Quick Reference: Segment Tree Patterns
+
+| Pattern | Array Storage | Query Function | Update Function |
+|---------|--------------|----------------|----------------|
+| Range sum | Sum of children | Query range sum | Add to leaf and propagate |
+| Range minimum | Min of children | Query range min | Update leaf and recompute |
+| Range maximum | Max of children | Query range max | Update leaf and recompute |
+| Lazy sum | Sum + pending add | Propagate before recursion | Mark pending, propagate on query |
+| GCD | GCD of children | Query range GCD | Update leaf and recompute |
+
+## Cross-Application Matrix
+
+| Problem | Structure | Why |
+|---------|-----------|-----|
+| Range sum queries | BIT or segment tree | BIT is simpler for prefix sums |
+| Range minimum query | Segment tree or sparse table | Sparse table if no updates |
+| Range sum with updates | Segment tree with lazy | Updates require lazy propagation |
+| Count inversions | BIT | Standard offline algorithm |
+| Dynamic RMQ with updates | Segment tree | Only structure supporting both |
+| Range GCD queries | Segment tree | GCD is associative, combinable |
+
+## Chapter Quiz
+
+1. **What is the standard array size for a segment tree of n elements?**
+   - a) \(n\)
+   - b) \(2n\)
+   - c) \(4n\) âœ“
+   - d) \(n^2\)
+
+2. **What does lazy propagation enable?**
+   - a) Faster point updates
+   - b) Range updates in \(O(\log n)\) âœ“
+   - c) Range minimum queries
+   - d) Smaller memory
+
+3. **A Fenwick tree (BIT) supports:**
+   - a) Range minimum
+   - b) Prefix sums âœ“
+   - c) Range maximum
+   - d) Range GCD
+
+4. **What is the space complexity of BIT?**
+   - a) \(4n\)
+   - b) \(n\) âœ“
+   - c) \(n \log n\)
+   - d) \(\sqrt{n}\)
+
+5. **Coordinate compression is useful when:**
+   - a) n is small
+   - b) The index range is huge but sparse âœ“
+   - c) Data is unsorted
+   - d) No updates are needed
+
+**Answers:** 1-c, 2-b, 3-b, 4-b, 5-b
+
 ## Summary
 
 - Segment trees support range queries and point updates in \( O(\log n) \).
@@ -323,7 +405,7 @@ After add 10 at index 2:
 
 ### Review Questions
 
-1. Why does a segment tree require approximately 4× the input size?
+1. Why does a segment tree require approximately 4Ã— the input size?
 2. What is the advantage of lazy propagation? What problem does it solve?
 3. How does the Fenwick tree use binary representation to compute prefix sums?
 

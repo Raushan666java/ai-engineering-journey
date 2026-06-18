@@ -13,7 +13,7 @@ After studying this chapter, students will be able to:
 
 ## 3.1 The Role of Constructors
 
-![Constructors and Destructors Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/03-constructors.png)
+![Constructors and Destructors Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/03-constructors.png)
 
 A constructor is a special member function that initialises an object when it is created. It has the same name as the class, no return type, and is invoked automatically. If a class declares no constructors, the compiler generates a default constructor that default-initialises all members.
 
@@ -155,7 +155,7 @@ The copy constructor is invoked in three scenarios:
 2. Returning an object by value from a function
 3. Brace-initialisation: `DynamicArray b = a;`
 
-If no copy constructor is declared, the compiler generates one that performs a member-wise copy. For classes managing resources (heap memory, file handles, sockets), this shallow copy leads to double-free errors—the Rule of Three addresses this.
+If no copy constructor is declared, the compiler generates one that performs a member-wise copy. For classes managing resources (heap memory, file handles, sockets), this shallow copy leads to double-free errorsâ€”the Rule of Three addresses this.
 
 ## 3.7 The Rule of Three and Rule of Five
 
@@ -215,7 +215,7 @@ private:
 
 ## 3.8 Destructor
 
-The destructor is called when an object is destroyed—when it goes out of scope (stack) or when `delete` is invoked (heap). Its primary purpose is to release resources acquired during the object's lifetime.
+The destructor is called when an object is destroyedâ€”when it goes out of scope (stack) or when `delete` is invoked (heap). Its primary purpose is to release resources acquired during the object's lifetime.
 
 ```cpp
 class FileHandle {

@@ -13,7 +13,7 @@
 
 ## Theory
 
-![DevOps Lifecycle, Principles and Practices](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch01-lifecycle.png)
+![DevOps Lifecycle, Principles and Practices](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch01-lifecycle.png)
 
 ### The Core of DevOps
 DevOps is not a software tool or a specific job title, but a cultural and professional movement that stresses communication, collaboration, and integration between software developers and information technology operations professionals. It aims to automate the process of software delivery and infrastructure changes. The core principles are often summarized by the CAMS model:

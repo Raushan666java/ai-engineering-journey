@@ -8,7 +8,7 @@
 - Use storage class specifiers: `auto`, `static`, `extern`, `register`
 - Create recursive functions (preliminary)
 
-![C Functions: Call Stack, Parameter Passing, Storage Classes](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch08-functions.png)
+![C Functions: Call Stack, Parameter Passing, Storage Classes](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch08-functions.png)
 
 ## 8.1 Function Basics
 
@@ -51,7 +51,7 @@ int add(int a, int b)
 - **Declaration (prototype):** Tells the compiler the function's name, return type, and parameter types. Ends with a semicolon. Placed at the top of the file or in a header.
 - **Definition:** Contains the function body. Must match the declaration.
 
-If a function is called before it is defined and no prototype is visible, the compiler assumes it returns `int` — this is an older K&R behavior that should never be relied upon.
+If a function is called before it is defined and no prototype is visible, the compiler assumes it returns `int` â€” this is an older K&R behavior that should never be relied upon.
 
 ## 8.2 Parameter Passing: Call by Value
 
@@ -132,7 +132,7 @@ void print_heading(void)
 }
 ```
 
-The `void` keyword in the parameter list means the function takes no arguments. In C, an empty parameter list `()` means "unspecified parameters" — always use `void` for zero parameters.
+The `void` keyword in the parameter list means the function takes no arguments. In C, an empty parameter list `()` means "unspecified parameters" â€” always use `void` for zero parameters.
 
 ### 8.3.3 Returning Pointers
 
@@ -157,7 +157,7 @@ int main(void)
 ```c
 int *bad_function(void) {
     int local = 42;
-    return &local;   /* UNDEFINED BEHAVIOR — local is gone after return */
+    return &local;   /* UNDEFINED BEHAVIOR â€” local is gone after return */
 }
 ```
 
@@ -173,14 +173,14 @@ int *bad_function(void) {
 ```c
 #include <stdio.h>
 
-int global = 100;          /* file scope — accessible everywhere */
+int global = 100;          /* file scope â€” accessible everywhere */
 
-static int file_static = 200;  /* file scope — restricted to this file */
+static int file_static = 200;  /* file scope â€” restricted to this file */
 
 void function(void)
 {
-    int local = 300;       /* block scope — only inside function */
-    static int calls = 0;  /* static local — persists across calls */
+    int local = 300;       /* block scope â€” only inside function */
+    static int calls = 0;  /* static local â€” persists across calls */
     calls++;
     printf("Called %d times\n", calls);
 }
@@ -250,7 +250,7 @@ void increment(void) {
 ```c
 #include <stdio.h>
 
-extern int global_counter;   /* declaration — defined in file1.c */
+extern int global_counter;   /* declaration â€” defined in file1.c */
 extern void increment(void);
 
 int main(void) {
@@ -322,7 +322,7 @@ Recursion is covered in depth in Chapter 14.
 ## 8.8 Function Organization and Style
 
 - Each function should do **one thing**.
-- Keep functions short — ideally under 50 lines.
+- Keep functions short â€” ideally under 50 lines.
 - Use descriptive names: `calculate_average` not `calc_avg`.
 - Declare functions before they are called (prototypes at file top).
 - Validate parameters at function entry.
@@ -331,7 +331,7 @@ Recursion is covered in depth in Chapter 14.
 #include <stdio.h>
 #include <stdbool.h>
 
-/* Good practice — parameter validation */
+/* Good practice â€” parameter validation */
 double divide(int numerator, int denominator)
 {
     if (denominator == 0) {

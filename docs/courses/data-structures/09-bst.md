@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Binary Search Tree Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch09-bst.png)
+![Binary Search Tree Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch09-bst.png)
 
 ### BST Invariant
 
@@ -291,6 +291,89 @@ int main() {
 Successor of 60: 70
 Predecessor of 70: 60
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **Inorder traversal of a BST is always sorted**: This is the BST invariant. Use it to verify correctness â€” if inorder is not sorted, the BST property is violated.
+- **Sorted array â†’ balanced BST in \(O(n)\)**: Pick the middle element as root, recursively build left from the left half, right from the right half. This guarantees height \(\lceil \log n \rceil\).
+- **Lowest common ancestor in BST is simpler than in binary trees**: Walk from root; the LCA is the first node whose value lies between the two target values (or equals one of them).
+- **Treaps combine BST with heap priorities**: Each node has a key (BST order) and a random priority (heap order). This gives a balanced tree with high probability without explicit rotations.
+
+## One-Sentence Takeaways
+
+- BST property: left subtree < root < right subtree for all nodes.
+- Search, insert, and delete average \(O(\log n)\); worst case \(O(n)\) for degenerate trees.
+- Inorder traversal of a BST yields sorted order.
+- Deletion of a node with two children uses the inorder successor (or predecessor).
+- Sorted array can be converted to a balanced BST in \(O(n)\).
+- Validation of BST requires checking the allowed value range \((min, max)\) per node.
+
+## Concept Comparison Table
+
+| Feature | Binary Tree | BST | Balanced BST (AVL) |
+|---------|-------------|-----|-------------------|
+| Ordering | None | Left < root < right | Left < root < right |
+| Search | \(O(n)\) | \(O(\log n)\) avg | \(O(\log n)\) guaranteed |
+| Insert | \(O(1)\) | \(O(\log n)\) avg | \(O(\log n)\) |
+| Delete | \(O(n)\) | \(O(\log n)\) avg | \(O(\log n)\) |
+| Height bound | None | \(n\) worst | \(1.44 \log n\) |
+| Rotation needed | No | No | Yes |
+
+## Quick Reference: BST Operations
+
+| Operation | Average | Worst Case | Algorithm |
+|-----------|---------|------------|-----------|
+| Search | \(O(\log n)\) | \(O(n)\) | Compare key, go left/right |
+| Insert | \(O(\log n)\) | \(O(n)\) | Search to leaf, attach |
+| Delete (leaf) | \(O(\log n)\) | \(O(n)\) | Simply remove |
+| Delete (1 child) | \(O(\log n)\) | \(O(n)\) | Bypass node |
+| Delete (2 children) | \(O(\log n)\) | \(O(n)\) | Replace with inorder successor |
+| Inorder | \(O(n)\) | \(O(n)\) | Left â†’ root â†’ right |
+
+## Cross-Application Matrix
+
+| Application | Why BST |
+|-------------|---------|
+| Dictionary / symbol table | Fast lookup by key, sorted iteration |
+| Database index | Range queries: find all keys between a and b |
+| Ordered statistics | k-th smallest element (with subtree size) |
+| Priority queue | Not ideal â€” heap is simpler |
+| Autocomplete | TST or trie preferred over BST |
+| Set implementation | Sorted set operations (union, intersection) |
+
+## Chapter Quiz
+
+1. **What is the BST invariant?**
+   - a) All nodes on the left are smaller than root; all on right larger âœ“
+   - b) Root is always the largest
+   - c) Tree is always balanced
+   - d) Every node has two children
+
+2. **Worst-case BST search complexity?**
+   - a) \(O(1)\)
+   - b) \(O(\log n)\)
+   - c) \(O(n)\) âœ“
+   - d) \(O(n^2)\)
+
+3. **What traversal of a BST yields sorted order?**
+   - a) Preorder
+   - b) Inorder âœ“
+   - c) Postorder
+   - d) Level-order
+
+4. **Deletion of a node with two children uses:**
+   - a) Inorder successor âœ“
+   - b) Level-order predecessor
+   - c) Random node
+   - d) Tree rotation
+
+5. **How to build a balanced BST from a sorted array?**
+   - a) Insert in order
+   - b) Pick middle as root, recursively âœ“
+   - c) Reverse order insertion
+   - d) Use heap construction
+
+**Answers:** 1-a, 2-c, 3-b, 4-a, 5-b
 
 ## Summary
 

@@ -1,4 +1,4 @@
-﻿# Chapter 21: System Design: Laravel at Enterprise Scale
+# Chapter 21: System Design: Laravel at Enterprise Scale
 
 ---
 ## Learning Objectives
@@ -16,7 +16,7 @@
 ---
 ## Theory
 
-![System Design and Scale](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/21-system-design-scale.png)
+![System Design and Scale](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/21-system-design-scale.png)
 
 
 ### 1. Design for 10M+ Users

@@ -1,4 +1,4 @@
-﻿# Chapter 18: Automation Patterns & Workflows
+# Chapter 18: Automation Patterns & Workflows
 
 ---
 ## Learning Objectives
@@ -12,7 +12,7 @@
 
 ## Theory
 
-![Automation Patterns](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/18-automation-patterns.png)
+![Automation Patterns](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/18-automation-patterns.png)
 
 
 ### 18.1 Event-Driven Automation

@@ -1,4 +1,4 @@
-# Chapter 20: Case Study — Netflix and Video Streaming
+# Chapter 20: Case Study â€” Netflix and Video Streaming
 
 ---
 
@@ -15,7 +15,7 @@
 
 ## Theory
 
-![Netflix Architecture Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/20-netflix.png)
+![Netflix Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/20-netflix.png)
 
 ### Requirements Phase
 
@@ -56,15 +56,15 @@ Netflix streams over 100 million hours of content daily across 190+ countries. T
 - 100M hours/day = ~1.16M hours/sec peak
 - Average bitrate: ~5 Mbps (mix of SD/HD/4K)
 - Peak concurrent streams: ~20M (prime time)
-- Total peak bandwidth: 20M × 5 Mbps = 100,000 Gbps = 100 Tbps
+- Total peak bandwidth: 20M Ã— 5 Mbps = 100,000 Gbps = 100 Tbps
 - Daily data transfer: ~2.5 exabytes (2.5M TB)
 
 **Storage**
 
-- Master library: 1M hours × 50 GB/hour (4K source) = 50 PB of source content
+- Master library: 1M hours Ã— 50 GB/hour (4K source) = 50 PB of source content
 - Encoded output: each title encoded at 200+ bitrate/resolution combinations
 - Per-title encoded size: ~10 GB (all profiles)
-- Total encoded catalog: 17,000 × 10 GB = 170 TB
+- Total encoded catalog: 17,000 Ã— 10 GB = 170 TB
 - CDN cache: additional ~5 PB (most popular 10% of catalog cached at all OCAs)
 
 **Encoding Pipeline**
@@ -76,7 +76,7 @@ Netflix streams over 100 million hours of content daily across 190+ countries. T
 
 **Recommendation System**
 
-- 260M profiles × thousands of titles = 10^12 potential user-title pairs
+- 260M profiles Ã— thousands of titles = 10^12 potential user-title pairs
 - Model training: terabytes of watch history data
 - Feature vectors: 10,000+ dimensions per user and per title
 - Real-time inference: <500ms per personalized page load
@@ -195,8 +195,8 @@ Cache eviction uses a popularity-weighted algorithm:
 
 Tiered cache architecture:
 ```
-Client → ISP POP → Tier 1 OCA (inside ISP) → Tier 2 OCA (colo)
-→ Netflix Origin (AWS S3)
+Client â†’ ISP POP â†’ Tier 1 OCA (inside ISP) â†’ Tier 2 OCA (colo)
+â†’ Netflix Origin (AWS S3)
 ```
 
 Tier 1 OCAs serve the vast majority of requests. If a miss occurs (unpopular content not pre-populated), the Tier 1 OCA fetches from Tier 2, which may fetch from S3. Tier 2 OCAs have larger storage and serve as a regional cache layer.
@@ -209,12 +209,12 @@ The encoding ladder is the set of bitrate-resolution pairs available for a title
 
 | Profile | Resolution | Bitrate | Codec |
 |---------|------------|---------|-------|
-| Low | 235p (416×234) | 235 Kbps | H.264/AVC |
-| Medium | 360p (640×360) | 560 Kbps | H.264/AVC |
-| Standard | 480p (854×480) | 1 Mbps | H.264/AVC |
-| High | 720p (1280×720) | 3 Mbps | H.264/AVC |
-| Full HD | 1080p (1920×1080) | 6 Mbps | H.264/AVC |
-| UHD | 2160p (3840×2160) | 16 Mbps | HEVC/H.265 |
+| Low | 235p (416Ã—234) | 235 Kbps | H.264/AVC |
+| Medium | 360p (640Ã—360) | 560 Kbps | H.264/AVC |
+| Standard | 480p (854Ã—480) | 1 Mbps | H.264/AVC |
+| High | 720p (1280Ã—720) | 3 Mbps | H.264/AVC |
+| Full HD | 1080p (1920Ã—1080) | 6 Mbps | H.264/AVC |
+| UHD | 2160p (3840Ã—2160) | 16 Mbps | HEVC/H.265 |
 | HDR | 2160p (HDR10/DV) | 20 Mbps | HEVC/H.265 |
 
 Video content is divided into chunks (typically 2-4 seconds). The client's manifest file lists all available chunks at all bitrates. The client-side adaptive bitrate (ABR) algorithm selects the optimal bitrate based on:
@@ -226,8 +226,8 @@ Video content is divided into chunks (typically 2-4 seconds). The client's manif
 
 The ABR algorithm on the client uses a buffer-based approach:
 - Monitor the playout buffer size (target: 30-60 seconds)
-- If buffer is growing → consider upgrading to higher bitrate
-- If buffer is shrinking → downgrade immediately
+- If buffer is growing â†’ consider upgrading to higher bitrate
+- If buffer is shrinking â†’ downgrade immediately
 - The rate of change is limited: no more than one step per chunk to avoid oscillation
 
 **Per-Title Encoding Optimization**
@@ -248,19 +248,19 @@ The result: some titles need 40 encoding profiles (complex action, nature docume
 The encoding pipeline is a large-scale distributed system:
 
 ```
-Source (IMF/J2K 4K) → Step 1: Pre-processing
-  → Step 2: Detection (scene cuts, black frames, audio sync)
-  → Step 3: Parallel Chunk Encoding (N chunks × M profiles)
-  → Step 4: Quality Validation (VMAF per chunk)
-  → Step 5: Manifest Generation (MPD for DASH, M3U8 for HLS)
-  → Step 6: Packaging (fMP4/CMAF segments)
-  → Step 7: CDN Pre-population
+Source (IMF/J2K 4K) â†’ Step 1: Pre-processing
+  â†’ Step 2: Detection (scene cuts, black frames, audio sync)
+  â†’ Step 3: Parallel Chunk Encoding (N chunks Ã— M profiles)
+  â†’ Step 4: Quality Validation (VMAF per chunk)
+  â†’ Step 5: Manifest Generation (MPD for DASH, M3U8 for HLS)
+  â†’ Step 6: Packaging (fMP4/CMAF segments)
+  â†’ Step 7: CDN Pre-population
 ```
 
 A single 2-hour movie at 200 encoding profiles with 2-second chunks produces:
-- 3,600 chunks per profile (2 hours × 60 min × 30 chunks/min)
-- 3,600 × 200 = 720,000 total chunks to encode
-- Each chunk is encoded independently → massive parallelism
+- 3,600 chunks per profile (2 hours Ã— 60 min Ã— 30 chunks/min)
+- 3,600 Ã— 200 = 720,000 total chunks to encode
+- Each chunk is encoded independently â†’ massive parallelism
 
 Netflix runs this pipeline on AWS Spot instances (preemptible EC2 instances at 60-90% discount). The risk of spot termination is managed:
 - Work is broken into small chunks (2-second segments)
@@ -272,7 +272,7 @@ Netflix runs this pipeline on AWS Spot instances (preemptible EC2 instances at 6
 
 Recommendations drive 80% of watch time on Netflix. The ML pipeline has three stages:
 
-**Stage 1: Candidate Generation** (Narrow 10,000+ titles → ~500 candidates)
+**Stage 1: Candidate Generation** (Narrow 10,000+ titles â†’ ~500 candidates)
 
 Multiple independent algorithms generate candidate pools:
 
@@ -286,7 +286,7 @@ Multiple independent algorithms generate candidate pools:
 
 The output of candidate generation is 500 candidate titles per user.
 
-**Stage 2: Ranking** (~500 candidates → score and sort)
+**Stage 2: Ranking** (~500 candidates â†’ score and sort)
 
 A deep neural network ranks the 500 candidates:
 
@@ -300,7 +300,7 @@ The model architecture: A multi-layer perceptron (MLP) with 3-5 hidden layers, 1
 
 Training happens online (incremental updates every few hours) and offline (full retrain weekly). The model is deployed as a TensorFlow/PyTorch model served via Netflix's custom inference infrastructure (Meson).
 
-**Stage 3: Re-Ranking** (~500 scored → ~40 shown on home page)
+**Stage 3: Re-Ranking** (~500 scored â†’ ~40 shown on home page)
 
 The final stage applies business constraints:
 - **Diversity**: Ensure different genres are represented. Don't show 10 action movies in a row.
@@ -312,9 +312,9 @@ The ranking and re-ranking stages together execute in under 500ms per user page 
 
 **Chaos Engineering**
 
-Netflix pioneered chaos engineering — the practice of intentionally injecting failures into production systems to build confidence in resilience.
+Netflix pioneered chaos engineering â€” the practice of intentionally injecting failures into production systems to build confidence in resilience.
 
-**Chaos Monkey**: Randomly terminates EC2 instances in production. If the system survives, auto-scaling and retry mechanisms work correctly. If not, the team fixes the gap. Runs during business hours (not overnight — the goal is learning, not disruption).
+**Chaos Monkey**: Randomly terminates EC2 instances in production. If the system survives, auto-scaling and retry mechanisms work correctly. If not, the team fixes the gap. Runs during business hours (not overnight â€” the goal is learning, not disruption).
 
 **Latency Monkey**: Introduces artificial delays between services. Tests circuit breaker configurations and timeout handling. If Hystrix circuits open correctly, the system degrades gracefully. If not, cascading failures propagate.
 
@@ -338,7 +338,7 @@ The lifecycle of a chaos experiment at Netflix:
 
 1. **Design**: The engineer defines the experiment parameters: which service, what failure type (instance termination, latency injection, DNS failure), duration (typically 15-30 minutes), and the steady state hypothesis (error rate < 0.1%, P99 latency < 500ms).
 
-2. **Schedule**: The experiment is scheduled via the Chaos Platform (FIT — Failure Injection Testing). The platform checks that no other experiments are running in the same service, no production incidents are active, and it is within business hours.
+2. **Schedule**: The experiment is scheduled via the Chaos Platform (FIT â€” Failure Injection Testing). The platform checks that no other experiments are running in the same service, no production incidents are active, and it is within business hours.
 
 3. **Execute**: The platform injects the failure into a small subset of instances (e.g., 1% of the autoscaling group). Monitoring dashboards stream live metrics.
 
@@ -355,15 +355,15 @@ This workflow runs thousands of experiments per month across Netflix's infrastru
 Hystrix is a latency and fault tolerance library for distributed systems. Every inter-service call follows this pattern:
 
 ```
-call_service() → circuit_state == CLOSED?
-  → YES: Make call with timeout (10ms, 50ms, 100ms per tier)
-    → Success: Return result, close circuit if previously half-open
-    → Failure/timeout: Increment failure counter. If threshold exceeded → OPEN circuit
-  → NO (OPEN): Return fallback immediately (fail fast)
-    → After sleep window (5 seconds) → HALF-OPEN
-    → In half-open: Allow one test request
-      → Success → CLOSE circuit
-      → Failure → OPEN circuit, reset sleep window
+call_service() â†’ circuit_state == CLOSED?
+  â†’ YES: Make call with timeout (10ms, 50ms, 100ms per tier)
+    â†’ Success: Return result, close circuit if previously half-open
+    â†’ Failure/timeout: Increment failure counter. If threshold exceeded â†’ OPEN circuit
+  â†’ NO (OPEN): Return fallback immediately (fail fast)
+    â†’ After sleep window (5 seconds) â†’ HALF-OPEN
+    â†’ In half-open: Allow one test request
+      â†’ Success â†’ CLOSE circuit
+      â†’ Failure â†’ OPEN circuit, reset sleep window
 ```
 
 Thread pool isolation: Each downstream dependency gets its own thread pool. If the "search" service's thread pool is exhausted, search requests fail fast, but the "playback" service's thread pool is unaffected. This prevents a single failing dependency from consuming all application resources.
@@ -381,11 +381,11 @@ Netflix operates in multiple AWS regions with an active-active architecture. All
 
 Key components:
 
-- **Cassandra for cross-region data**: User profiles, viewing history, ratings, and My List are stored in Cassandra with cross-region replication. Each write is replicated asynchronously to other regions. Read-your-write consistency is maintained via a "local quorum" — the user's primary region is determined by geolocation.
+- **Cassandra for cross-region data**: User profiles, viewing history, ratings, and My List are stored in Cassandra with cross-region replication. Each write is replicated asynchronously to other regions. Read-your-write consistency is maintained via a "local quorum" â€” the user's primary region is determined by geolocation.
 
 - **EVCache for cross-region caching**: EVCache stores frequently accessed data. Cross-region replication is enabled for critical caches. If a region fails, the new primary region has warm caches via replication.
 
-- **Active-active with rollback**: Deployment proceeds in phases: 5% of traffic → 25% → 50% → 100%. If error rates increase at any phase, traffic is rolled back within minutes.
+- **Active-active with rollback**: Deployment proceeds in phases: 5% of traffic â†’ 25% â†’ 50% â†’ 100%. If error rates increase at any phase, traffic is rolled back within minutes.
 
 - **Circuit breakers at the region level**: If cross-region latency exceeds a threshold (e.g., >100ms between US East and US West), Hystrix circuits open and the local region serves from local data sources only.
 
@@ -400,9 +400,9 @@ Netflix built Spinnaker to manage deployments across 800+ microservices. Spinnak
 
 The deployment pipeline for a single microservice:
 ```
-Build → Test → Package → Deploy to Canary (2%) → Observe (30 min)
-  → Auto-promote or rollback → Deploy to US East → Observe
-  → Deploy to US West → Observe → Deploy to EU → Observe → Deploy to APAC
+Build â†’ Test â†’ Package â†’ Deploy to Canary (2%) â†’ Observe (30 min)
+  â†’ Auto-promote or rollback â†’ Deploy to US East â†’ Observe
+  â†’ Deploy to US West â†’ Observe â†’ Deploy to EU â†’ Observe â†’ Deploy to APAC
 ```
 
 **A/B Testing Infrastructure**
@@ -421,7 +421,7 @@ The A/B testing platform handles 10,000+ concurrent experiments. Each user can b
 
 These features are per-user data served with low latency:
 
-- **Cassandra schema**: `(user_id, profile_id) → {watch_history: list<viewing_event>, my_list: set<title_id>, resume_points: map<title_id, position>}`
+- **Cassandra schema**: `(user_id, profile_id) â†’ {watch_history: list<viewing_event>, my_list: set<title_id>, resume_points: map<title_id, position>}`
 - **EVCache**: Hot data cached in memory with TTL. Cache-aside pattern: read from cache, populate on miss from Cassandra.
 - **Resume playback**: The last-played position is stored on every pause/stop event. Read on playback start. The goal is <1 second from "resume" click to playback at the saved position.
 
@@ -437,21 +437,21 @@ A user in Tokyo clicks "Play" on a 4K HDR title. The system must start playback 
 
 ```
 Time 0ms: User clicks "Play" on Netflix app (Smart TV, Tokyo)
-  ↓
+  â†“
 Time 50ms: App sends playback request to nearest OCA (ISP peering, Tokyo)
-  ↓
+  â†“
 Time 150ms: OCA authenticates request via Zuul (AWS, local cache)
-  ↓
-Time 300ms: OCA resolves manifest → checks which chunks are cached locally
-  ↓
+  â†“
+Time 300ms: OCA resolves manifest â†’ checks which chunks are cached locally
+  â†“
 Time 500ms: OCA returns manifest + first chunk URL to device
-  ↓
+  â†“
 Time 800ms: Device requests first chunk (4-second segment) from OCA
-  ↓
+  â†“
 Time 1200ms: First chunk begins downloading. ABR algorithm evaluates bandwidth.
-  ↓
+  â†“
 Time 2500ms: Buffer accumulates ~4 seconds. Playback begins at initial quality.
-  ↓
+  â†“
 Time 4500ms: ABR upgrades to 4K HDR. Buffer stabilizes at 30 seconds.
 ```
 
@@ -495,16 +495,16 @@ A new 4K HDR movie is delivered to Netflix. It must be encoded, packaged, subtit
 
 ```
 Source Media (IMF package, 4K HDR, 5.1 audio)
-  → Step 1: Ingest — Validate format, checksum, metadata (24-bit audio, color space, frame rate)
-  → Step 2: QC — Automated quality checks (black frames, audio sync, freeze frames, audio loudness)
-  → Step 3: Mezzanine — Transcode to intermediate format (ProRes 4444 or JPEG 2000) for encoding
-  → Step 4: Analysis — Scene detection, complexity analysis (SI/TI), audio track detection
-  → Step 5: Encoding — Per-title optimized encoding into 200+ profiles
-  → Step 6: Quality Validation — VMAF scoring per chunk, minimum score gate
-  → Step 7: Packaging — CMAF segments, MPD/M3U8 manifests per language/audio combination
-  → Step 8: Subtitle Processing — OCR for burned-in subtitles, timed-text conversion (TTML → WebVTT)
-  → Step 9: CDN Pre-population — Fill command to all Open Connect appliances
-  → Step 10: Catalog Activation — Title appears in search and recommendations
+  â†’ Step 1: Ingest â€” Validate format, checksum, metadata (24-bit audio, color space, frame rate)
+  â†’ Step 2: QC â€” Automated quality checks (black frames, audio sync, freeze frames, audio loudness)
+  â†’ Step 3: Mezzanine â€” Transcode to intermediate format (ProRes 4444 or JPEG 2000) for encoding
+  â†’ Step 4: Analysis â€” Scene detection, complexity analysis (SI/TI), audio track detection
+  â†’ Step 5: Encoding â€” Per-title optimized encoding into 200+ profiles
+  â†’ Step 6: Quality Validation â€” VMAF scoring per chunk, minimum score gate
+  â†’ Step 7: Packaging â€” CMAF segments, MPD/M3U8 manifests per language/audio combination
+  â†’ Step 8: Subtitle Processing â€” OCR for burned-in subtitles, timed-text conversion (TTML â†’ WebVTT)
+  â†’ Step 9: CDN Pre-population â€” Fill command to all Open Connect appliances
+  â†’ Step 10: Catalog Activation â€” Title appears in search and recommendations
 ```
 
 ### Subtitle and Audio Pipeline
@@ -530,7 +530,7 @@ A critical quality issue: subtitles that render differently on different devices
 - The migration from monolith to 800+ microservices was an 8-year effort driven by a catastrophic database failure in 2008
 - Adaptive bitrate streaming using DASH/HLS with CMAF single-format delivery provides seamless quality transitions across all devices
 - Per-title encoding optimization uses VMAF and convex hull analysis to create custom encoding ladders, saving bandwidth without sacrificing perceived quality
-- The recommendation pipeline (candidate generation → neural ranking → re-ranking) drives 80% of watch time with under 500ms inference latency
+- The recommendation pipeline (candidate generation â†’ neural ranking â†’ re-ranking) drives 80% of watch time with under 500ms inference latency
 - Chaos engineering (Chaos Monkey, Latency Monkey, Chaos Kong) proactively tests infrastructure resilience through controlled failure injection
 - Hystrix circuit breakers with thread pool isolation, timeouts, and fallbacks prevent cascading failures across the microservice architecture
 - Multi-region active-active operation with Cassandra cross-region replication and EVCache enables seamless region failover
@@ -573,10 +573,10 @@ Netflix has entered live events (Chris Rock special, NFL Christmas games, awards
 - Failure during a live event is visible to all viewers simultaneously
 
 Design a live streaming architecture for Netflix that:
-1. **Ingest and encode**: 8K source from the venue → ingest at regional edge → encode into the full encoding ladder (235p to 4K HDR) with <30 seconds total glass-to-glass latency. How do you parallelize encoding without introducing latency? At what chunk duration do you operate (2s, 4s, 10s)?
+1. **Ingest and encode**: 8K source from the venue â†’ ingest at regional edge â†’ encode into the full encoding ladder (235p to 4K HDR) with <30 seconds total glass-to-glass latency. How do you parallelize encoding without introducing latency? At what chunk duration do you operate (2s, 4s, 10s)?
 2. **CDN delivery**: Open Connect is pre-populated for on-demand content. How does it handle live content that cannot be pre-populated? Design a "live cascade" where content propagates from the venue to regional OCAs to ISP OCAs. What is the time to first byte for a viewer in Australia watching a live event originating in the US?
 3. **Failover**: The venue's internet connection drops 15 minutes into a live event. Design a failover strategy. Do you switch to a secondary ingest path? Do you degrade quality? Do you show a "technical difficulties" screen? At what point do you cancel the stream?
 4. **Time-shifted viewing**: Viewers join 30 minutes late and want to watch from the beginning. How do you simultaneously serve live and time-shifted streams from the same pipeline? How do you manage the transition from "live" to "available on-demand" after the event ends?
 5. **C3 (Content Continuity Control)**: Commercial broadcasters require frame-accurate ad insertion during live events. Design a signaling protocol that marks ad breaks in the live stream and enables server-side ad insertion without disrupting the viewing experience.
 
-This challenge must work for an audience of 200M+ concurrent viewers — a scale no current live streaming system has achieved.
+This challenge must work for an audience of 200M+ concurrent viewers â€” a scale no current live streaming system has achieved.

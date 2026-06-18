@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Laravel 13
+# Chapter 1: Introduction to Laravel 13
 
 ---
 
@@ -16,7 +16,7 @@
 
 ## Theory
 
-![Introduction to Laravel](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/01-introduction.png)
+![Introduction to Laravel](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/01-introduction.png)
 
 
 ### 1.1 What is Laravel?

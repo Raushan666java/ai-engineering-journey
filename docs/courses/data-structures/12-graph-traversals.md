@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Graph Traversals Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch12-graph-traversals.png)
+![Graph Traversals Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch12-graph-traversals.png)
 
 ### Breadth-First Search (BFS)
 
@@ -285,7 +285,7 @@ Has cycle: yes
 DAG has cycle: no
 ```
 
-### Example 5: Topological Sort — Kahn's Algorithm
+### Example 5: Topological Sort â€” Kahn's Algorithm
 
 ```cpp
 #include <iostream>
@@ -341,7 +341,7 @@ int main() {
 Topological order: 4 5 0 2 3 1
 ```
 
-### Example 6: Topological Sort — DFS Based
+### Example 6: Topological Sort â€” DFS Based
 
 ```cpp
 #include <iostream>
@@ -375,6 +375,88 @@ std::vector<int> topologicalSortDFS(const std::vector<std::list<int>>& adj) {
     return result;
 }
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **BFS finds shortest paths in unweighted graphs**: The first time BFS visits a vertex, it has reached it via the shortest path. Track the predecessor to reconstruct the path.
+- **DFS for cycle detection**: In directed graphs, a back edge (edge to a vertex on the current recursion stack) means a cycle. In undirected graphs, any edge to a visited vertex that is not the parent is a cycle.
+- **Kahn's algorithm for topological sort**: Compute in-degrees of all vertices. Repeatedly remove vertices with in-degree 0 and decrement neighbors' in-degrees. If not all vertices are processed, the graph has a cycle.
+- **Strongly connected components**: Kosaraju's algorithm runs DFS, then DFS on the transpose in decreasing finish time. Tarjan's algorithm does it in a single DFS pass.
+
+## One-Sentence Takeaways
+
+- BFS uses a queue, processes vertices by distance, and finds shortest paths.
+- DFS uses recursion (or stack), explores deeply, and is good for connectivity analysis.
+- BFS is \(O(V+E)\) using adjacency list; DFS is also \(O(V+E)\).
+- Cycle detection in directed graphs uses a recursion stack (back edges).
+- Topological sort is possible only on directed acyclic graphs (DAGs).
+- Strongly connected components partition vertices where every pair is mutually reachable.
+
+## Concept Comparison Table
+
+| Feature | BFS | DFS | Dijkstra | A* |
+|---------|-----|-----|----------|----|
+| Data structure | Queue | Stack (implicit recursion) | Priority queue | Priority queue |
+| Space | \(O(V)\) | \(O(V)\) (worst depth) | \(O(V)\) | \(O(V)\) |
+| Shortest path | Unweighted | Not guaranteed | Weighted (non-negative) | Weighted + heuristic |
+| Completeness | Yes | No (may go infinite) | Yes | Yes |
+| Optimality | Yes (unweighted) | No | Yes | Yes (admissible heuristic) |
+
+## Quick Reference: Traversal Use Cases
+
+| Problem | Algorithm | Why |
+|---------|-----------|-----|
+| Shortest path (unweighted) | BFS | Level-order guarantees minimum edges |
+| Topological sort | DFS or Kahn's | Post-order DFS or in-degree removal |
+| Cycle detection (directed) | DFS with recStack | Back edges indicate cycles |
+| Cycle detection (undirected) | DFS with parent check | Edge to visited non-parent = cycle |
+| Connected components | DFS or BFS | Count DFS calls for each component |
+| Bipartite check | BFS with coloring | No edge connects same-colored vertices |
+| SCC | Kosaraju / Tarjan | DFS on graph + transpose / single DFS |
+
+## Cross-Application Matrix
+
+| Application | Traversal | How It Uses It |
+|-------------|-----------|----------------|
+| Web crawling | BFS | Process pages level by level |
+| Puzzle solving (maze) | DFS + backtracking | Explore one path fully before backtracking |
+| Dependency resolution | Topological sort | Build packages in correct order |
+| Social network friend suggestions | BFS | Find distance-2 connections |
+| Garbage collection | DFS | Mark reachable objects from roots |
+
+## Chapter Quiz
+
+1. **BFS uses what data structure?**
+   - a) Stack
+   - b) Queue âœ“
+   - c) Priority queue
+   - d) Hash table
+
+2. **What is BFS's time complexity on adjacency lists?**
+   - a) \(O(V)\)
+   - b) \(O(V+E)\) âœ“
+   - c) \(O(V^2)\)
+   - d) \(O(E^2)\)
+
+3. **In directed graph cycle detection, what indicates a cycle?**
+   - a) Cross edge
+   - b) Back edge âœ“
+   - c) Forward edge
+   - d) Tree edge
+
+4. **Kahn's algorithm detects cycles when:**
+   - a) All vertices are processed
+   - b) Some vertices remain unprocessed âœ“
+   - c) The queue is empty
+   - d) In-degrees are zero
+
+5. **Which algorithm finds shortest paths in unweighted graphs?**
+   - a) DFS
+   - b) BFS âœ“
+   - c) Topological sort
+   - d) Kosaraju's
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

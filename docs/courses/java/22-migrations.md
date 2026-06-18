@@ -16,7 +16,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Why Database Migrations?
 
-![Database Migrations Flyway Liquibase](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/22-migrations.png)
+![Database Migrations Flyway Liquibase](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/22-migrations.png)
 
 Database migrations solve a fundamental problem: **schema drift**. Without migrations, every developer applies changes manually, leading to:
 

@@ -1,5 +1,8 @@
 # Chapter 9: Datapath Design
 
+> **Prereq:** Chapter 8 (Computer Architecture) â€” the datapath is the computational heart of the CPU architecture.
+> **Next:** Chapter 10 (Control Unit) â€” the control unit directs datapath operations via control signals.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -10,9 +13,34 @@ By the conclusion of this chapter, the student shall be able to:
 4. Derive control signals from instruction opcodes
 5. Analyse the timing of single-cycle data path execution
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| ALU Construction | Arithmetic + logic unit | Performs all computation |
+| Register File | Multi-port read/write | Stores operands and results |
+| Single-Cycle Path | All phases in one clock | Simplest CPU design |
+| Control Signals | Derived from opcode | Tells datapath what to do |
+| Timing Analysis | Critical path delay | Determines max clock frequency |
+
+```mermaid
+flowchart LR
+    A[Instruction] --> B[Control Unit]
+    A --> C[Register File]
+    B --> D[ALU]
+    C --> D
+    D --> E[Data Memory]
+    E --> C
+    style A fill:#e1f5fe
+    style D fill:#c8e6c9
+    style B fill:#fff3e0
+```
+
+> **One-Sentence Takeaway:** The datapath is the CPU's computational engine â€” a single-cycle path executes one instruction per clock by routing operands through the ALU and writing results back to the register file.
+
 ## Theory
 
-![Single-Cycle Datapath Design](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch09-datapath.png)
+![Single-Cycle Datapath Design](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch09-datapath.png)
 
 ### 9.1 Datapath Overview
 
@@ -174,6 +202,33 @@ A processor has 32 registers, each 32 bits wide. The register file has two read 
 
 **Solution**: Number of storage cells = 32 &times; 32 = 1024 flip-flops. Address wires: 5 for each read port (2 &times; 5 = 10) + 5 for the write port = 15 total address wires. Data wires: 32 &times; 2 (read outputs) + 32 (write input) = 96 data wires.
 
+### Concept Comparison
+
+| Component | Inputs | Outputs | Function |
+|-----------|--------|---------|----------|
+| ALU | A, B, ALUControl | Result, Zero | Performs arithmetic/logic |
+| Register File | ReadReg1, ReadReg2, WriteReg, WriteData | ReadData1, ReadData2 | Multi-port register storage |
+| Instruction Memory | Address | Instruction | Supplies the opcode |
+| Data Memory | Address, WriteData, MemWrite, MemRead | ReadData | Load/store data access |
+
+### Quick Reference
+
+| Control Signal | 0 Value | 1 Value |
+|---------------|---------|---------|
+| RegDst | WriteReg = Rt (I-type) | WriteReg = Rd (R-type) |
+| ALUSrc | ALU input B = ReadData2 | ALU input B = sign-extended immediate |
+| MemtoReg | WriteData = ALU result | WriteData = memory read data |
+| RegWrite | No register write | Register write enabled |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | ARM/MIPS/RISC-V datapath | Datapath is the foundation of any processor |
+| Embedded Systems | Custom ALU for IoT SoCs | Lightweight datapaths for power-constrained chips |
+| Digital Circuits | FPGA-based CPU cores | Configurable datapaths on programmable logic |
+| Research | Approximate datapath design | Energy-quality trade-offs in inexact computing |
+
 ## Summary
 
 - The datapath comprises the ALU, register file, and interconnect with multiplexers.
@@ -206,4 +261,29 @@ A processor has 32 registers, each 32 bits wide. The register file has two read 
 
 ### Challenge Problem
 
-Design a multi-cycle datapath that breaks the single-cycle into three cycles: fetch, execute, and write-back. Compare the required clock period with the single-cycle design from Application Problem 3. Assume that register-to-register transfers between cycles take 0.5 ns. Show the state diagram and the control signals needed for each cycle.
+Design a multi-cycle datapath that breaks the single-cycle into three cycles: fetch, execute, and write-back. Compare the required clock period with the single-cycle design from Application Problem 3. Assume that register-to-register transfers between cycles take 0.5 ns. Show the state diagram and     the control signals needed for each cycle.
+
+### Chapter Quiz
+
+1. The critical path in a single-cycle processor is determined by:
+   - A) The fastest instruction
+   - B) The slowest instruction (typically LW)
+   - C) The average of all instructions
+   - D) The register file write time
+
+2. The ALUSrc control signal selects between:
+   - A) Two different ALU operations
+   - B) Register data and sign-extended immediate
+   - C) Memory read and write
+   - D) Two destination registers
+
+3. A register file with 32 registers requires how many address bits per port?
+   - A) 4
+   - B) 5
+   - C) 6
+   - D) 32
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

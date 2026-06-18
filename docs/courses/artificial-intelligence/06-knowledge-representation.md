@@ -37,7 +37,7 @@ flowchart LR
 
 ## 6.1 The Ontological Commitment
 
-![Knowledge Representation](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch06-knowledge-representation.png)
+![Knowledge Representation](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch06-knowledge-representation.png)
 
 An **ontology** is a formal, explicit specification of a conceptualization. It defines the categories, relations, constraints, and axioms that capture the structure of a domain. The choice of ontology constitutes an ontological commitment: a decision about what kinds of entities exist in the model.
 
@@ -45,9 +45,9 @@ Knowledge representation languages vary in their **expressiveness** (what can be
 
 ## 6.2 Logic-Based Representation
 
-> **One-Sentence Takeaway:** Knowledge representation languages trade off expressiveness (how much you can say) against tractability (how fast you can reason) — choose the least expressive language that can express your problem.
+> **One-Sentence Takeaway:** Knowledge representation languages trade off expressiveness (how much you can say) against tractability (how fast you can reason) â€” choose the least expressive language that can express your problem.
 
-> **💡 Pro Tip:** Description Logic (DL) sits at the sweet spot of the expressiveness-tractability trade-off. That is why OWL (based on DL) is the W3C standard for the Semantic Web — it is decidable and has polynomial-time classification algorithms.
+> **ðŸ’¡ Pro Tip:** Description Logic (DL) sits at the sweet spot of the expressiveness-tractability trade-off. That is why OWL (based on DL) is the W3C standard for the Semantic Web â€” it is decidable and has polynomial-time classification algorithms.
 
 ### 6.2.1 Propositional Logic
 
@@ -154,18 +154,18 @@ A knowledge-based system consists of:
 
 | Language/Formalism | Expressiveness | Decidable? | Inference Complexity | Best For |
 |-------------------|:---:|:---:|:---:|---------|
-| Propositional Logic | Low | ✅ | O(2ⁿ) SAT | Simple facts |
-| First-Order Logic | High | ❌ (semi) | Undecidable | General domain axioms |
-| Description Logic | Medium | ✅ | PTIME/EXPTIME | Taxonomies, OWL |
+| Propositional Logic | Low | âœ… | O(2â¿) SAT | Simple facts |
+| First-Order Logic | High | âŒ (semi) | Undecidable | General domain axioms |
+| Description Logic | Medium | âœ… | PTIME/EXPTIME | Taxonomies, OWL |
 | Semantic Networks | Medium | Varies | Linear (inheritance) | Quick prototyping |
 | Frames | Medium-High | Varies | Linear (with defaults) | Structured objects |
 
-## Quick Reference — Ontology Concepts
+## Quick Reference â€” Ontology Concepts
 
 | Concept | Definition | Example |
 |---------|-----------|---------|
 | Ontology | Formal specification of a conceptualization | Domain model |
-| TBox | Terminology (concepts and roles) | Mother ≡ Woman ⊓ ∃hasChild.Person |
+| TBox | Terminology (concepts and roles) | Mother â‰¡ Woman âŠ“ âˆƒhasChild.Person |
 | ABox | Assertions about individuals | Woman(Alice) |
 | Fluents | Situation-dependent predicates | On(x, y, s) |
 | Frame Problem | Need to specify what stays the same | Successor-state axioms |
@@ -175,11 +175,11 @@ A knowledge-based system consists of:
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Ontology Engineering | ✅ | ✅ | ✅ | ✅ |
-| Description Logic | ⬜ | ✅ | ✅ | ✅ |
-| Semantic Networks | ⬜ | ✅ | ✅ | ✅ |
-| Situation Calculus | ⬜ | ⬜ | ⬜ | ✅ |
-| Frames | ⬜ | ✅ | ✅ | ✅ |
+| Ontology Engineering | âœ… | âœ… | âœ… | âœ… |
+| Description Logic | â¬œ | âœ… | âœ… | âœ… |
+| Semantic Networks | â¬œ | âœ… | âœ… | âœ… |
+| Situation Calculus | â¬œ | â¬œ | â¬œ | âœ… |
+| Frames | â¬œ | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
@@ -226,4 +226,4 @@ Knowledge representation is concerned with encoding domain knowledge in a form t
 
 ### Challenge Problem
 
-6. Implement a forward-chaining reasoner for a propositional KB containing Horn clauses. Apply it to a simple diagnosis domain (e.g., car故障 diagnosis). Explain how the system handles the case where multiple rules apply simultaneously.
+6. Implement a forward-chaining reasoner for a propositional KB containing Horn clauses. Apply it to a simple diagnosis domain (e.g., caræ•…éšœ diagnosis). Explain how the system handles the case where multiple rules apply simultaneously.

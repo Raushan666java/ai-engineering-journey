@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![DevSecOps Security Pipeline](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch14-devsecops.png)
+![DevSecOps Security Pipeline](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch14-devsecops.png)
 
 By the end of this chapter, students will be able to:
 
@@ -30,9 +30,9 @@ Shift-left security integrates security practices earlier in the software develo
 
 SAST analyzes source code for security vulnerabilities without executing the application.
 
-**SonarQube** — Continuous code quality and security inspection. Analyzes 30+ languages. Reports bugs, vulnerabilities, code smells, and security hotspots. Provides quality gates that fail pipelines.
+**SonarQube** â€” Continuous code quality and security inspection. Analyzes 30+ languages. Reports bugs, vulnerabilities, code smells, and security hotspots. Provides quality gates that fail pipelines.
 
-**Semgrep** — Lightweight static analysis using pattern-based rules. Supports custom rules in a simple syntax. Community rule registry covers OWASP Top 10, CWE Top 25, and framework-specific vulnerabilities.
+**Semgrep** â€” Lightweight static analysis using pattern-based rules. Supports custom rules in a simple syntax. Community rule registry covers OWASP Top 10, CWE Top 25, and framework-specific vulnerabilities.
 
 ```yaml
 # Semgrep rule: detect hardcoded passwords
@@ -49,13 +49,13 @@ rules:
     severity: ERROR
 ```
 
-**CodeQL** — Semantic code analysis by GitHub. Treats code as data for query-based security analysis. Deep analysis of CodeQL databases identifies complex vulnerabilities including injection, XSS, and path traversal. Integrated with GitHub Advanced Security.
+**CodeQL** â€” Semantic code analysis by GitHub. Treats code as data for query-based security analysis. Deep analysis of CodeQL databases identifies complex vulnerabilities including injection, XSS, and path traversal. Integrated with GitHub Advanced Security.
 
 ### 14.3 DAST (Dynamic Application Security Testing)
 
 DAST tests running applications for vulnerabilities by simulating attacks.
 
-**OWASP ZAP** — Open-source web application scanner. Supports automated scanning, passive scanning, active scanning, and API scanning (OpenAPI, GraphQL, SOAP). Integrates into CI/CD pipelines via Docker.
+**OWASP ZAP** â€” Open-source web application scanner. Supports automated scanning, passive scanning, active scanning, and API scanning (OpenAPI, GraphQL, SOAP). Integrates into CI/CD pipelines via Docker.
 
 ```bash
 # Run ZAP full scan against a target
@@ -64,15 +64,15 @@ docker run -v $(pwd):/zap/wrk owasp/zap2docker-stable \
   -r zap_report.html
 ```
 
-**Burp Suite** — Professional web security testing tool. Burp Enterprise automates scanning in CI/CD pipelines. Burp's scanning engine identifies vulnerabilities including SQL injection, XSS, SSRF, and authentication bypass.
+**Burp Suite** â€” Professional web security testing tool. Burp Enterprise automates scanning in CI/CD pipelines. Burp's scanning engine identifies vulnerabilities including SQL injection, XSS, SSRF, and authentication bypass.
 
 ### 14.4 SCA (Software Composition Analysis)
 
 SCA analyzes open-source dependencies for known vulnerabilities, license compliance, and outdated versions.
 
-**Snyk** — Developer-first security platform. Scans dependencies, container images, and IaC configurations. Provides fix suggestions and automated pull requests. Monitors projects continuously.
+**Snyk** â€” Developer-first security platform. Scans dependencies, container images, and IaC configurations. Provides fix suggestions and automated pull requests. Monitors projects continuously.
 
-**Dependabot** — GitHub-native dependency update tool. Creates pull requests for vulnerable dependencies. Configurable update schedule and version constraints.
+**Dependabot** â€” GitHub-native dependency update tool. Creates pull requests for vulnerable dependencies. Configurable update schedule and version constraints.
 
 ```yaml
 # Dependabot configuration
@@ -88,9 +88,9 @@ updates:
       - "security"
 ```
 
-**Trivy** — Comprehensive vulnerability scanner. Scans filesystems, container images, Git repositories, and Kubernetes. Fast, with no database required for installation. Reports CVSS scores and fix versions.
+**Trivy** â€” Comprehensive vulnerability scanner. Scans filesystems, container images, Git repositories, and Kubernetes. Fast, with no database required for installation. Reports CVSS scores and fix versions.
 
-**Grype** — Vulnerability scanner focused on accuracy. Uses multiple vulnerability databases (NVD, GitHub Advisory, RedHat, Alpine). Generates CycloneDX SBOM output.
+**Grype** â€” Vulnerability scanner focused on accuracy. Uses multiple vulnerability databases (NVD, GitHub Advisory, RedHat, Alpine). Generates CycloneDX SBOM output.
 
 ### 14.5 Container Scanning
 
@@ -109,15 +109,15 @@ trivy image registry.example.com/myapp:latest
 trivy fs --severity HIGH,CRITICAL .
 ```
 
-**Clair** — Open-source container vulnerability scanner. Static analysis of layers. API-driven, integrates with registries.
+**Clair** â€” Open-source container vulnerability scanner. Static analysis of layers. API-driven, integrates with registries.
 
-**Docker Scout** — Docker-native vulnerability scanning. Provides policy evaluation, remediation guidance, and SBOM generation.
+**Docker Scout** â€” Docker-native vulnerability scanning. Provides policy evaluation, remediation guidance, and SBOM generation.
 
 ### 14.6 Secret Scanning
 
 Secrets (API keys, passwords, tokens, certificates) committed to source code represent immediate security risks.
 
-**GitLeaks** — Detects secrets in Git repositories. Supports scanning commits, diffs, and directories. Customizable rule sets.
+**GitLeaks** â€” Detects secrets in Git repositories. Supports scanning commits, diffs, and directories. Customizable rule sets.
 
 ```bash
 # Scan entire repository history
@@ -130,7 +130,7 @@ gitleaks protect --staged
 gitleaks detect --source . --report-path gitleaks-report.json
 ```
 
-**TruffleHog** — Scans Git repositories for secrets with entropy detection and regex matching. Supports custom detectors and structured data scanning.
+**TruffleHog** â€” Scans Git repositories for secrets with entropy detection and regex matching. Supports custom detectors and structured data scanning.
 
 ### 14.7 SBOM Generation and Verification
 
@@ -151,7 +151,7 @@ SBOMs enable known vulnerability correlation, supply chain risk assessment, and 
 
 ### 14.8 Policy as Code
 
-**Open Policy Agent (OPA)** — General-purpose policy engine. Decouples policy from software. Policies are written in Rego, a declarative language. Enforces policies on JSON data.
+**Open Policy Agent (OPA)** â€” General-purpose policy engine. Decouples policy from software. Policies are written in Rego, a declarative language. Enforces policies on JSON data.
 
 ```rego
 # OPA policy: containers must not run as root
@@ -165,7 +165,7 @@ deny[msg] {
 }
 ```
 
-**Kyverno** — Kubernetes-native policy engine. Policies are Kubernetes Custom Resources. Supports validate, mutate, generate, and verify patterns.
+**Kyverno** â€” Kubernetes-native policy engine. Policies are Kubernetes Custom Resources. Supports validate, mutate, generate, and verify patterns.
 
 ```yaml
 apiVersion: kyverno.io/v1

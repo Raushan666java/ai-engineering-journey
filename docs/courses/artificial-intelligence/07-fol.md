@@ -29,7 +29,7 @@ flowchart LR
     B --> C[Syntax]
     B --> D[Semantics]
     C --> E[Constants / Predicates / Functions]
-    C --> F[∀ and ∃ Quantifiers]
+    C --> F[âˆ€ and âˆƒ Quantifiers]
     B --> G[Inference]
     G --> H[Unification]
     G --> I[Forward Chaining]
@@ -43,9 +43,9 @@ flowchart LR
 
 ## Theory
 
-![First-Order Logic](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch07-fol.png)
+![First-Order Logic](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch07-fol.png)
 
-> **One-Sentence Takeaway:** FOL extends propositional logic with objects, relations, functions, and quantifiers — enabling the representation of general truths about entire classes of objects rather than just specific facts.
+> **One-Sentence Takeaway:** FOL extends propositional logic with objects, relations, functions, and quantifiers â€” enabling the representation of general truths about entire classes of objects rather than just specific facts.
 
 ### Why First-Order Logic?
 While Propositional Logic assumes the world contains facts, **First-Order Logic (FOL)** assumes the world contains:
@@ -74,7 +74,7 @@ Inference in FOL is more complex than in PL due to variables:
 - **Forward Chaining**: Starting from known facts and applying rules to derive new facts until the goal is reached (data-driven).
 - **Backward Chaining**: Starting from the goal and looking for rules that could derive it, recursively checking their premises (goal-driven).
 
-> **💡 Pro Tip:** Use backward chaining when the goal is well-defined (diagnosis, question answering) and forward chaining when you want to derive all consequences (monitoring, alerting).
+> **ðŸ’¡ Pro Tip:** Use backward chaining when the goal is well-defined (diagnosis, question answering) and forward chaining when you want to derive all consequences (monitoring, alerting).
 
 ---
 
@@ -102,13 +102,13 @@ Find a substitution $\theta$ such that `Knows(John, x)` and `Knows(y, Mother(y))
 
 | Inference Method | Sound? | Complete? | Direction | Best For |
 |-----------------|:---:|:---:|:---:|---------|
-| Universal Instantiation | ✅ | ⬜ | Top-down | Grounding general rules |
-| Unification | ❌ (matching) | ❌ (matching) | Bidirectional | Pattern matching |
-| Forward Chaining | ✅ | ✅ (Horn) | Data-driven | Monitoring, alerting |
-| Backward Chaining | ✅ | ✅ (Horn) | Goal-driven | Diagnosis, Q&A |
-| Resolution | ✅ | ✅ (Refutation) | Refutation | Theorem proving |
+| Universal Instantiation | âœ… | â¬œ | Top-down | Grounding general rules |
+| Unification | âŒ (matching) | âŒ (matching) | Bidirectional | Pattern matching |
+| Forward Chaining | âœ… | âœ… (Horn) | Data-driven | Monitoring, alerting |
+| Backward Chaining | âœ… | âœ… (Horn) | Goal-driven | Diagnosis, Q&A |
+| Resolution | âœ… | âœ… (Refutation) | Refutation | Theorem proving |
 
-## Quick Reference — FOL Syntax
+## Quick Reference â€” FOL Syntax
 
 | Element | Notation | Example |
 |---------|----------|---------|
@@ -116,18 +116,18 @@ Find a substitution $\theta$ such that `Knows(John, x)` and `Knows(y, Mother(y))
 | Predicate | Capital letter | `Brother(john, richard)` |
 | Function | Lowercase | `LeftLeg(john)` |
 | Variable | Lowercase | `x`, `y`, `z` |
-| Universal | ∀x P(x) | "All humans are mortal" |
-| Existential | ∃x P(x) | "Someone is mortal" |
+| Universal | âˆ€x P(x) | "All humans are mortal" |
+| Existential | âˆƒx P(x) | "Someone is mortal" |
 
 ## Cross-Application Matrix
 
 | Technique | ML Engineering | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| FOL Representation | ⬜ | ⬜ | ✅ | ✅ |
-| Unification | ⬜ | ⬜ | ✅ | ✅ |
-| Forward Chaining | ⬜ | ⬜ | ✅ | ✅ |
-| Backward Chaining | ⬜ | ⬜ | ✅ | ✅ |
-| Resolution | ⬜ | ⬜ | ⬜ | ✅ |
+| FOL Representation | â¬œ | â¬œ | âœ… | âœ… |
+| Unification | â¬œ | â¬œ | âœ… | âœ… |
+| Forward Chaining | â¬œ | â¬œ | âœ… | âœ… |
+| Backward Chaining | â¬œ | â¬œ | âœ… | âœ… |
+| Resolution | â¬œ | â¬œ | â¬œ | âœ… |
 
 ## Chapter Quiz
 
@@ -149,7 +149,7 @@ Find a substitution $\theta$ such that `Knows(John, x)` and `Knows(y, Mother(y))
 
 **Q3:** What makes FOL semi-decidable for inference?
 - A) It cannot represent all truths
-- B) If KB ⊨ α, the procedure will eventually find the proof, but if KB ⊭ α, it may loop forever
+- B) If KB âŠ¨ Î±, the procedure will eventually find the proof, but if KB âŠ­ Î±, it may loop forever
 - C) It requires exponential time for all problems
 - D) The unification algorithm is incomplete
 

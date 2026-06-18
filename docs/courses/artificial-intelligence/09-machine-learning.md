@@ -41,11 +41,11 @@ flowchart LR
 
 ## Theory
 
-![Machine Learning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch09-machine-learning.png)
+![Machine Learning](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch09-machine-learning.png)
 
-> **One-Sentence Takeaway:** Machine learning algorithms improve performance on a task with experience — the key challenge is generalizing from finite training data to unseen examples.
+> **One-Sentence Takeaway:** Machine learning algorithms improve performance on a task with experience â€” the key challenge is generalizing from finite training data to unseen examples.
 
-> **💡 Pro Tip:** Decision trees with information gain naturally handle mixed data types and produce interpretable models. However, they can overfit badly — use pruning (min_samples_split, max_depth) or switch to ensemble methods (Random Forest) for better generalization.
+> **ðŸ’¡ Pro Tip:** Decision trees with information gain naturally handle mixed data types and produce interpretable models. However, they can overfit badly â€” use pruning (min_samples_split, max_depth) or switch to ensemble methods (Random Forest) for better generalization.
 
 ### What is Machine Learning?
 Machine Learning (ML) is the study of algorithms that improve their performance $P$ at some task $T$ with experience $E$.
@@ -54,7 +54,7 @@ Machine Learning (ML) is the study of algorithms that improve their performance 
 - **Reinforcement Learning**: The agent learns by interacting with an environment and receiving rewards or penalties.
 
 ### Inductive Learning
-The goal of inductive learning is to find a hypothesis $h$ that approximates the true function $f$ using only a finite set of examples. Because many hypotheses can fit the data, the agent must have an **inductive bias**—a preference for one type of hypothesis over another (e.g., Occam's Razor prefers simpler hypotheses).
+The goal of inductive learning is to find a hypothesis $h$ that approximates the true function $f$ using only a finite set of examples. Because many hypotheses can fit the data, the agent must have an **inductive bias**â€”a preference for one type of hypothesis over another (e.g., Occam's Razor prefers simpler hypotheses).
 
 ### Decision Trees
 A Decision Tree is a flowchart-like structure where each internal node represents a "test" on an attribute, each branch represents the outcome of the test, and each leaf node represents a class label.
@@ -102,27 +102,27 @@ Predict the price of a house based on its square footage.
 
 | Learning Type | Labels? | Feedback | Goal | Examples |
 |--------------|:---:|:---:|------|---------|
-| Supervised | ✅ | Direct (target) | Map inputs to outputs | Classification, regression |
-| Unsupervised | ❌ | None | Discover hidden structure | Clustering, dimensionality reduction |
-| Reinforcement | ❌ | Delayed (reward) | Maximize cumulative reward | Game playing, robot control |
+| Supervised | âœ… | Direct (target) | Map inputs to outputs | Classification, regression |
+| Unsupervised | âŒ | None | Discover hidden structure | Clustering, dimensionality reduction |
+| Reinforcement | âŒ | Delayed (reward) | Maximize cumulative reward | Game playing, robot control |
 
-## Quick Reference — Decision Tree Concepts
+## Quick Reference â€” Decision Tree Concepts
 
 | Concept | Formula | Purpose |
 |---------|---------|---------|
-| Entropy | H(S) = -Σ pᵢ log₂ pᵢ | Measure impurity |
-| Information Gain | IG(S, A) = H(S) - Σ (|Sᵥ|/|S|) H(Sᵥ) | Best attribute selection |
-| Majority Error | 1 - max(pᵢ) | Simpler impurity measure |
-| Gini Index | 1 - Σ pᵢ² | Alternative to entropy |
+| Entropy | H(S) = -Î£ páµ¢ logâ‚‚ páµ¢ | Measure impurity |
+| Information Gain | IG(S, A) = H(S) - Î£ (|Sáµ¥|/|S|) H(Sáµ¥) | Best attribute selection |
+| Majority Error | 1 - max(páµ¢) | Simpler impurity measure |
+| Gini Index | 1 - Î£ páµ¢Â² | Alternative to entropy |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| Decision Trees | ✅ | ⬜ | ✅ | ✅ |
-| Linear Regression | ✅ | ⬜ | ⬜ | ✅ |
-| Bias-Variance Analysis | ✅ | ✅ | ✅ | ✅ |
-| Train/Val/Test Split | ✅ | ✅ | ✅ | ✅ |
+| Decision Trees | âœ… | â¬œ | âœ… | âœ… |
+| Linear Regression | âœ… | â¬œ | â¬œ | âœ… |
+| Bias-Variance Analysis | âœ… | âœ… | âœ… | âœ… |
+| Train/Val/Test Split | âœ… | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 

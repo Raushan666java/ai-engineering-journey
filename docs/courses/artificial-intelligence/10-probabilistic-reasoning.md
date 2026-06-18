@@ -16,7 +16,7 @@ By the conclusion of this chapter, the student will be able to: (1) formulate te
 | Kalman Filters | Linear Gaussian, EKF | Prediction-correction cycle |
 | Decision Theory | Utility, MEU principle | Expected utility |
 | Decision Networks | Decision/utility/chance nodes | Influence diagram |
-| MDP | States, actions, rewards, γ | Policy, value function |
+| MDP | States, actions, rewards, Î³ | Policy, value function |
 | Value/Policy Iteration | Bellman equation, convergence | Dynamic programming |
 
 ## Chapter Roadmap
@@ -37,7 +37,7 @@ flowchart LR
 
 ## 10.1 Temporal Models
 
-![Probabilistic Reasoning Over Time](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch10-probabilistic-reasoning.png)
+![Probabilistic Reasoning Over Time](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch10-probabilistic-reasoning.png)
 
 Temporal probabilistic models treat the state as evolving over discrete time steps $t = 1, 2, \ldots, T$. The **state random variable** $X_t$ represents the true (hidden) state at time $t$; the **evidence variable** $E_t$ represents the observation.
 
@@ -86,17 +86,17 @@ where $\odot$ denotes element-wise multiplication.
 The Viterbi algorithm finds the most likely state sequence using dynamic programming:
 
 ```
-function VITERBI(T, E, π, T_matrix, E_matrix) returns path
+function VITERBI(T, E, Ï€, T_matrix, E_matrix) returns path
     for each state s do
-        m[1, s] ← log π[s] + log E_matrix[s, E[1]]
-        backpointer[1, s] ← 0
+        m[1, s] â† log Ï€[s] + log E_matrix[s, E[1]]
+        backpointer[1, s] â† 0
     for t = 2 to T do
         for each state s do
-            m[t, s] ← max_{s'} (m[t-1, s'] + log T_matrix[s', s]) + log E_matrix[s, E[t]]
-            backpointer[t, s] ← argmax_{s'} (m[t-1, s'] + log T_matrix[s', s])
-    best_path[T] ← argmax_s m[T, s]
+            m[t, s] â† max_{s'} (m[t-1, s'] + log T_matrix[s', s]) + log E_matrix[s, E[t]]
+            backpointer[t, s] â† argmax_{s'} (m[t-1, s'] + log T_matrix[s', s])
+    best_path[T] â† argmax_s m[T, s]
     for t = T down to 2 do
-        best_path[t-1] ← backpointer[t, best_path[t]]
+        best_path[t-1] â† backpointer[t, best_path[t]]
     return best_path
 ```
 
@@ -106,14 +106,14 @@ Particle filtering approximates the belief state with $N\) weighted samples (par
 
 ```
 function PARTICLE-FILTERING(particles, E_t, N) returns new_particles
-    weights ← array of size N
-    new_particles ← array of size N
+    weights â† array of size N
+    new_particles â† array of size N
     for i = 1 to N do
-        x' ← sample from P(X_t | particles[i])
-        weights[i] ← P(E_t | x')
+        x' â† sample from P(X_t | particles[i])
+        weights[i] â† P(E_t | x')
     normalize weights
     for i = 1 to N do
-        new_particles[i] ← sample from particles with probability proportional to weights
+        new_particles[i] â† sample from particles with probability proportional to weights
     return new_particles
 ```
 
@@ -178,42 +178,42 @@ Policy iteration alternates between policy evaluation and policy improvement:
 
 Policy iteration typically converges in fewer iterations than value iteration.
 
-> **💡 Pro Tip:** Particle filtering is the go-to method for robot localization (MCL). Start with 1000 particles and tune the number based on the ratio of successful convergences vs wall-clock time.
+> **ðŸ’¡ Pro Tip:** Particle filtering is the go-to method for robot localization (MCL). Start with 1000 particles and tune the number based on the ratio of successful convergences vs wall-clock time.
 
-> **⚠️ Warning:** The Markov assumption (state depends only on immediate predecessor) is often violated in practice. Always verify that your temporal model captures the relevant time scale — multi-step dependencies may require higher-order models or recurrent architectures.
+> **âš ï¸ Warning:** The Markov assumption (state depends only on immediate predecessor) is often violated in practice. Always verify that your temporal model captures the relevant time scale â€” multi-step dependencies may require higher-order models or recurrent architectures.
 
 ## Concept Comparison
 
 | Algorithm | State Space | Exact? | Complexity | Use Case |
 |-----------|:---:|:---:|:---:|---------|
-| Forward Algorithm | Discrete | ✅ | O(T n²) | Filtering (HMM) |
-| Viterbi | Discrete | ✅ | O(T n²) | Most likely path |
-| Forward-Backward | Discrete | ✅ | O(T n²) | Smoothing |
-| Particle Filter | Continuous | ❌ | O(T N) | Localization |
-| Kalman Filter | Linear Gaussian | ✅ | O(d³) | Tracking |
-| Value Iteration | Discrete | ✅ | O( |S|² |A|) | MDP solving |
-| Policy Iteration | Discrete | ✅ | O( |S|³) | MDP solving |
+| Forward Algorithm | Discrete | âœ… | O(T nÂ²) | Filtering (HMM) |
+| Viterbi | Discrete | âœ… | O(T nÂ²) | Most likely path |
+| Forward-Backward | Discrete | âœ… | O(T nÂ²) | Smoothing |
+| Particle Filter | Continuous | âŒ | O(T N) | Localization |
+| Kalman Filter | Linear Gaussian | âœ… | O(dÂ³) | Tracking |
+| Value Iteration | Discrete | âœ… | O( |S|Â² |A|) | MDP solving |
+| Policy Iteration | Discrete | âœ… | O( |S|Â³) | MDP solving |
 
-## Quick Reference — MDP Components
+## Quick Reference â€” MDP Components
 
 | Component | Symbol | Description |
 |-----------|:---:|-------------|
-| State | s ∈ 𝒮 | Possible configurations |
-| Action | a ∈ 𝒜 | Agent choices |
+| State | s âˆˆ ð’® | Possible configurations |
+| Action | a âˆˆ ð’œ | Agent choices |
 | Transition | P(s'|s,a) | Dynamics model |
 | Reward | R(s,a,s') | Immediate feedback |
-| Discount | γ ∈ [0,1) | Future reward weight |
-| Policy | π(s) → a | Action selection rule |
+| Discount | Î³ âˆˆ [0,1) | Future reward weight |
+| Policy | Ï€(s) â†’ a | Action selection rule |
 
 ## Cross-Application Matrix
 
 | Technique | ML | CV | NLP | Research |
 |-----------|:---:|:---:|:---:|:---:|
-| HMM / Forward-Backward | ⬜ | ⬜ | ✅ | ✅ |
-| Viterbi Decoding | ⬜ | ⬜ | ✅ | ✅ |
-| Particle Filtering | ⬜ | ✅ | ⬜ | ✅ |
-| Kalman Filter | ✅ | ✅ | ⬜ | ✅ |
-| MDP / Value Iteration | ✅ | ✅ | ⬜ | ✅ |
+| HMM / Forward-Backward | â¬œ | â¬œ | âœ… | âœ… |
+| Viterbi Decoding | â¬œ | â¬œ | âœ… | âœ… |
+| Particle Filtering | â¬œ | âœ… | â¬œ | âœ… |
+| Kalman Filter | âœ… | âœ… | â¬œ | âœ… |
+| MDP / Value Iteration | âœ… | âœ… | â¬œ | âœ… |
 
 ## Chapter Quiz
 
@@ -239,7 +239,7 @@ Policy iteration typically converges in fewer iterations than value iteration.
 - C) The transition probabilities
 - D) The policy gradient
 
-<details><summary>Answer</summary>B) The Bellman equation V(s) = maxₐ Σ P(s'|s,a)[R(s,a,s') + γV(s')] expresses value recursively in terms of immediate reward and discounted future value.</details>
+<details><summary>Answer</summary>B) The Bellman equation V(s) = maxâ‚ Î£ P(s'|s,a)[R(s,a,s') + Î³V(s')] expresses value recursively in terms of immediate reward and discounted future value.</details>
 
 ## 10.5 Summary
 

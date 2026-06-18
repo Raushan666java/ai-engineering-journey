@@ -1,4 +1,4 @@
-# Chapter 4 — JavaScript and the DOM
+# Chapter 4 â€” JavaScript and the DOM
 
 ## Learning Objectives
 
@@ -13,7 +13,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-![DOM Manipulation Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/04-dom.png)
+![DOM Manipulation Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/04-dom.png)
 
 ### 4.1 Selecting Elements
 
@@ -81,7 +81,7 @@ parent.insertBefore(div, referenceChild);   // Before reference child
 reference.after(div);                       // Inserts after reference
 reference.before(div);                      // Inserts before reference
 
-// HTML injection (use with caution — XSS risk)
+// HTML injection (use with caution â€” XSS risk)
 element.innerHTML = '<strong>Bold text</strong>';
 
 // Safer alternative
@@ -164,9 +164,9 @@ element.addEventListener('click', handler, {
 
 When a DOM event fires, it travels in three phases:
 
-1. **Capture phase** — Event travels from `document` down to the target element.
-2. **Target phase** — Event reaches the target element.
-3. **Bubble phase** — Event travels from target back up to `document`.
+1. **Capture phase** â€” Event travels from `document` down to the target element.
+2. **Target phase** â€” Event reaches the target element.
+3. **Bubble phase** â€” Event travels from target back up to `document`.
 
 ```javascript
 document.addEventListener('click', () => console.log('capture: document'), true);
@@ -260,7 +260,7 @@ form.addEventListener('submit', (event) => {
 
 ### 4.6 IntersectionObserver
 
-`IntersectionObserver` asynchronously observes visibility changes of elements relative to a parent or the viewport — essential for lazy loading, infinite scroll, and animation triggers.
+`IntersectionObserver` asynchronously observes visibility changes of elements relative to a parent or the viewport â€” essential for lazy loading, infinite scroll, and animation triggers.
 
 ```javascript
 const observer = new IntersectionObserver(
@@ -286,13 +286,13 @@ document.querySelectorAll('img[data-src]').forEach((img) => observer.observe(img
 
 ### 4.7 ResizeObserver
 
-`ResizeObserver` reports changes to element dimensions — useful for responsive components.
+`ResizeObserver` reports changes to element dimensions â€” useful for responsive components.
 
 ```javascript
 const resizeObserver = new ResizeObserver((entries) => {
   for (const entry of entries) {
     const { width, height } = entry.contentBoxSize[0];
-    console.log(`Element is now ${width}px × ${height}px`);
+    console.log(`Element is now ${width}px Ã— ${height}px`);
 
     // Adjust layout or behavior based on size
     entry.target.classList.toggle('compact', width < 400);

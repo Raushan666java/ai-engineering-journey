@@ -14,7 +14,7 @@
 
 ## Theory
 
-![API Gateways and CQRS Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/16-api-gateway-cqrs.png)
+![API Gateways and CQRS Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/16-api-gateway-cqrs.png)
 
 ### 1. API Gateway vs Load Balancer
 
@@ -24,33 +24,33 @@ An **API gateway** sits between clients and microservices and handles:
 
 | Responsibility        | Gateway | Load Balancer |
 |-----------------------|---------|---------------|
-| Request routing       | ✓ Path/header/host-based | ✓ Round-robin/least-conn |
-| Authentication        | ✓ JWT, OAuth2, API keys | ✗                              |
-| Rate limiting         | ✓ Per-client, per-endpoint | ✗ (basic connection limiting)  |
-| Request aggregation   | ✓ Compose N responses → 1 | ✗                              |
-| Circuit breaking      | ✓ Per-service health tracking | ✗                              |
-| Protocol translation  | ✓ HTTP→gRPC, HTTP→WebSocket | ✗                              |
-| Response transformation| ✓ Header rewrite, body transform | ✗                              |
-| Caching               | ✓ Response caching | ✗                              |
-| API versioning        | ✓ /v1/ vs /v2/ routing | ✗                              |
-| Canary deployments    | ✓ Weighted traffic split | ✓ (weighted pools)             |
+| Request routing       | âœ“ Path/header/host-based | âœ“ Round-robin/least-conn |
+| Authentication        | âœ“ JWT, OAuth2, API keys | âœ—                              |
+| Rate limiting         | âœ“ Per-client, per-endpoint | âœ— (basic connection limiting)  |
+| Request aggregation   | âœ“ Compose N responses â†’ 1 | âœ—                              |
+| Circuit breaking      | âœ“ Per-service health tracking | âœ—                              |
+| Protocol translation  | âœ“ HTTPâ†’gRPC, HTTPâ†’WebSocket | âœ—                              |
+| Response transformation| âœ“ Header rewrite, body transform | âœ—                              |
+| Caching               | âœ“ Response caching | âœ—                              |
+| API versioning        | âœ“ /v1/ vs /v2/ routing | âœ—                              |
+| Canary deployments    | âœ“ Weighted traffic split | âœ“ (weighted pools)             |
 
 ### 2. API Gateway Patterns
 
 **Single gateway per system**: One gateway handles all client traffic. Simple, but becomes a single point of failure and bottleneck. All services must evolve in lock-step with the gateway contract.
 
 ```
-Client → [Gateway] → Service A
-                  → Service B
-                  → Service C
+Client â†’ [Gateway] â†’ Service A
+                  â†’ Service B
+                  â†’ Service C
 ```
 
 **Gateway per frontend (BFF)**: Each client type (mobile, web, IoT) gets its own gateway. Mobile BFF returns smaller payloads (limited bandwidth), web BFF returns full HTML + API data. Each BFF team owns their interface independently.
 
 ```
-Mobile App → [Mobile BFF]
-Web App   → [Web BFF]
-IoT        → [IoT Gateway]
+Mobile App â†’ [Mobile BFF]
+Web App   â†’ [Web BFF]
+IoT        â†’ [IoT Gateway]
 ```
 
 **Gateway per domain**: Different business domains each have their own gateway (Orders Gateway, Users Gateway, Payments Gateway). Aligns with domain-driven design bounded contexts. Preferred for large organizations with independent service teams.
@@ -127,29 +127,29 @@ def gateway_auth(request):
 The gateway fetches data from multiple services and merges into a single response. Without aggregation:
 
 ```
-Client → /order/123
+Client â†’ /order/123
   Gateway:
-    1. GET /order-service/orders/123 → {order data}
-    2. GET /user-service/users/456   → {user data}
-    3. GET /payment-service/payments/789 → {payment data}
+    1. GET /order-service/orders/123 â†’ {order data}
+    2. GET /user-service/users/456   â†’ {user data}
+    3. GET /payment-service/payments/789 â†’ {payment data}
   Response: merged {order, user, payment}
 ```
 
 N+1 request problem for list endpoints:
 
 ```
-Client → GET /orders?user=456
+Client â†’ GET /orders?user=456
   Without aggregation:
-    Gateway → order-service → returns [order1, order2, ...]
-    Gateway → for each order, call user-service (N requests)
-    Gateway → for each order, call payment-service (N requests)
+    Gateway â†’ order-service â†’ returns [order1, order2, ...]
+    Gateway â†’ for each order, call user-service (N requests)
+    Gateway â†’ for each order, call payment-service (N requests)
   With batch aggregation:
-    Gateway → order-service → returns [order1, order2, ...]
-    Gateway → user-service batch(user_ids) → returns all users
-    Gateway → payment-service batch(order_ids) → returns all payments
+    Gateway â†’ order-service â†’ returns [order1, order2, ...]
+    Gateway â†’ user-service batch(user_ids) â†’ returns all users
+    Gateway â†’ payment-service batch(order_ids) â†’ returns all payments
 ```
 
-GraphQL gateways (Apollo Federation, Hasura) push aggregation responsibility to the query layer — clients specify exactly which data they need, gateway optimizes the fetch plan.
+GraphQL gateways (Apollo Federation, Hasura) push aggregation responsibility to the query layer â€” clients specify exactly which data they need, gateway optimizes the fetch plan.
 
 ### 6. CQRS Pattern
 
@@ -158,10 +158,10 @@ Command Query Responsibility Segregation separates the write model (Commands) fr
 ```
 Command Side:                    Query Side:
   Client sends Command             Client sends Query
-  → Validate business rules        → Read from read-optimized store
-  → Write to write model           → Return denormalized DTO
-  → Publish event
-  → Event handler updates read model
+  â†’ Validate business rules        â†’ Read from read-optimized store
+  â†’ Write to write model           â†’ Return denormalized DTO
+  â†’ Publish event
+  â†’ Event handler updates read model
 ```
 
 **Without CQRS**: Single model for reads and writes. Complex JOIN-based queries compete for resources with write operations. Object-relational impedance mismatch: domain objects (rich, behavior-laden) map poorly to relational tables.
@@ -195,9 +195,9 @@ class OrderQueryService:
 Simpler than full CQRS+ES. The command side writes to the write database; on write completion, the command handler updates the read database directly (dual-write).
 
 ```
-Client → Command Handler → Write DB (normalized)
-  → Handler also writes to Read DB (denormalized)
-Client → Query Handler → Read DB → Response
+Client â†’ Command Handler â†’ Write DB (normalized)
+  â†’ Handler also writes to Read DB (denormalized)
+Client â†’ Query Handler â†’ Read DB â†’ Response
 ```
 
 **Trade-offs**: Simpler than ES but has dual-write problem (use transactional outbox), lacks audit log, and cannot rebuild read models from scratch.
@@ -208,14 +208,14 @@ Event sourcing stores all changes as an append-only sequence of events. Current 
 
 ```
 Events for Order#123: v1: OrderPlaced, v2: PaymentReceived, v3: OrderShipped, v4: OrderDelivered
-Current state (fold): placed, paid, shipped, delivered ✓
+Current state (fold): placed, paid, shipped, delivered âœ“
 ```
 
-Events are immutable facts — correction events (e.g., PaymentRefunded) are appended. **Snapshotting** saves aggregated state at version V, avoiding replay of millions of events. Rebuild: load snapshot, replay from V+1.
+Events are immutable facts â€” correction events (e.g., PaymentRefunded) are appended. **Snapshotting** saves aggregated state at version V, avoiding replay of millions of events. Rebuild: load snapshot, replay from V+1.
 
 ### 9. Event Store Design
 
-**Event versioning**: Two strategies — versioned event types (`OrderPlacedV1` → `OrderPlacedV2`) handled by branching code, or **upcasting** (transform old events to latest schema on read):
+**Event versioning**: Two strategies â€” versioned event types (`OrderPlacedV1` â†’ `OrderPlacedV2`) handled by branching code, or **upcasting** (transform old events to latest schema on read):
 
 ```python
 class Upcaster:
@@ -230,7 +230,7 @@ class Upcaster:
 Upcaster.register("OrderPlaced", 1, lambda e: {**e, "version": 2, "currency": "USD"})
 ```
 
-**Schema evolution**: Use protobuf/Avro with forward/backward compatibility. Never delete fields — make them optional.
+**Schema evolution**: Use protobuf/Avro with forward/backward compatibility. Never delete fields â€” make them optional.
 
 ### 10. Rebuilding State: Projections and Snapshots
 
@@ -281,7 +281,7 @@ Query Side (Projections):
   7d. SearchProjection indexes order in Elasticsearch
 ```
 
-**Key insight**: The command side NEVER directly updates the read model. It only appends events. Projections handle read-side updates asynchronously. This means eventual consistency between command and query — a client that writes then immediately reads may see stale data.
+**Key insight**: The command side NEVER directly updates the read model. It only appends events. Projections handle read-side updates asynchronously. This means eventual consistency between command and query â€” a client that writes then immediately reads may see stale data.
 
 ### 12. Practical Trade-offs
 
@@ -311,7 +311,7 @@ Query Side (Projections):
 
 **Axon Framework**: Java framework for CQRS/ES. Provides Aggregate annotation, Command Handler, Event Sourcing Handler, and Saga orchestration. Integrates with any event store (Axon Server, Kafka, PostgreSQL).
 
-**Kafka as event store**: Kafka's log-compacted topics serve as an append-only event store. Key properties: ordered, durable, replayable. Each partition is an ordered sequence of events. Log compaction retains the latest value per key — acts as a distributed snapshot. Widely used as the backbone in CQRS architectures.
+**Kafka as event store**: Kafka's log-compacted topics serve as an append-only event store. Key properties: ordered, durable, replayable. Each partition is an ordered sequence of events. Log compaction retains the latest value per key â€” acts as a distributed snapshot. Widely used as the backbone in CQRS architectures.
 
 **Bank ledger systems**: Every transaction is an event (Deposited, Withdrawn, Transferred). Account balance = sum of all Deposit amounts - sum of all Withdrawal amounts. No records are ever deleted or modified. This gives complete audit trail and regulatory compliance.
 
@@ -358,7 +358,7 @@ import httpx
 mobile_gateway = Flask(__name__)
 web_gateway = Flask(__name__)
 
-# Mobile BFF — compact payloads, low bandwidth
+# Mobile BFF â€” compact payloads, low bandwidth
 @mobile_gateway.route("/feed")
 def mobile_feed():
     user_id = request.headers["X-User-Id"]
@@ -369,7 +369,7 @@ def mobile_feed():
         "thumbnail": p.get("images", [None])[0]
     } for p in posts])
 
-# Web BFF — rich content, full HTML
+# Web BFF â€” rich content, full HTML
 @web_gateway.route("/feed")
 def web_feed():
     user_id = request.headers["X-User-Id"]
@@ -459,7 +459,7 @@ class OrderProjection:
 
 ## Summary
 
-- API gateways handle routing, auth, rate limiting, aggregation, circuit breaking, and protocol translation — distinct from load balancers which only distribute traffic
+- API gateways handle routing, auth, rate limiting, aggregation, circuit breaking, and protocol translation â€” distinct from load balancers which only distribute traffic
 - BFF pattern (gateway per frontend) optimizes payloads per client type; gateway per domain aligns with bounded contexts
 - Distributed rate limiting uses token bucket (burst-tolerant) or sliding window (memory-expensive) algorithms with Redis backend
 - Request aggregation at the gateway eliminates N+1 fetch patterns from clients by composing microservice responses server-side
@@ -468,7 +468,7 @@ class OrderProjection:
 - Event versioning and upcasting handle schema evolution without modifying historical events
 - Snapshots prevent unbounded replay costs by saving aggregated state at periodic intervals
 - Kafka serves as a scalable event bus connecting command-side writes to query-side projections
-- CQRS/ES adds significant complexity — use for audit trails and temporal queries, not simple CRUD
+- CQRS/ES adds significant complexity â€” use for audit trails and temporal queries, not simple CRUD
 - Financial systems, Axon Framework, and Event Store DB are canonical real-world applications
 
 ---

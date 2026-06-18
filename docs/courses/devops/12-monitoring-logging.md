@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Monitoring and Logging Stack Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch12-monitoring-logging.png)
+![Monitoring and Logging Stack Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch12-monitoring-logging.png)
 
 By the end of this chapter, students will be able to:
 
@@ -28,14 +28,14 @@ Monitoring is the systematic collection, analysis, and visualization of system d
 Prometheus is a metrics-based monitoring system designed for reliability and operational simplicity.
 
 **Architecture**:
-- **Prometheus Server** — Scrapes metrics from targets at configured intervals, stores data in a time-series database.
-- **Exporters** — Agents that expose metrics in Prometheus format (node_exporter for host metrics, kube-state-metrics for Kubernetes, custom application exporters).
-- **Pushgateway** — Accepts metrics from short-lived jobs that cannot be scraped.
-- **Alertmanager** — Handles alerts: deduplication, grouping, routing, silencing, and notification.
+- **Prometheus Server** â€” Scrapes metrics from targets at configured intervals, stores data in a time-series database.
+- **Exporters** â€” Agents that expose metrics in Prometheus format (node_exporter for host metrics, kube-state-metrics for Kubernetes, custom application exporters).
+- **Pushgateway** â€” Accepts metrics from short-lived jobs that cannot be scraped.
+- **Alertmanager** â€” Handles alerts: deduplication, grouping, routing, silencing, and notification.
 
-**Data Model** — Metrics are identified by a metric name and key-value labels. Four metric types: Counter (monotonically increasing), Gauge (up/down values), Histogram (bucketed observations), Summary (quantile-based observations).
+**Data Model** â€” Metrics are identified by a metric name and key-value labels. Four metric types: Counter (monotonically increasing), Gauge (up/down values), Histogram (bucketed observations), Summary (quantile-based observations).
 
-**PromQL (Prometheus Query Language)** — Powerful query language for metric aggregation and analysis:
+**PromQL (Prometheus Query Language)** â€” Powerful query language for metric aggregation and analysis:
 
 ```promql
 # CPU utilization per instance
@@ -48,7 +48,7 @@ sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total
 histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, service))
 ```
 
-**Recording Rules** — Precompute frequently used or expensive queries for faster dashboard loading:
+**Recording Rules** â€” Precompute frequently used or expensive queries for faster dashboard loading:
 
 ```yaml
 groups:
@@ -58,7 +58,7 @@ groups:
         expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 ```
 
-**Alerting Rules** — Define conditions that trigger alerts:
+**Alerting Rules** â€” Define conditions that trigger alerts:
 
 ```yaml
 groups:
@@ -111,13 +111,13 @@ Grafana visualizes metrics from multiple data sources (Prometheus, Loki, Elastic
 - Application-specific panels: request rate, latency, error count
 - Bottom row: detailed debugging views
 
-**Alerting** — Grafana supports rule-based alerting from any data source. Rules can include multiple conditions, evaluation intervals, and notification channels.
+**Alerting** â€” Grafana supports rule-based alerting from any data source. Rules can include multiple conditions, evaluation intervals, and notification channels.
 
 ### 12.5 Loki
 
 Loki is a log aggregation system designed for cost-effective, scalable log storage. Unlike the ELK stack, Loki does not index log content; it indexes only metadata labels.
 
-**LogQL** — Loki's query language combines log stream selection with PromQL-like aggregation:
+**LogQL** â€” Loki's query language combines log stream selection with PromQL-like aggregation:
 
 ```logQL
 # Count errors by service
@@ -131,13 +131,13 @@ Loki works with Promtail (agent for shipping logs), Fluentd, or any log shipper.
 
 ### 12.6 ELK Stack (Elastic Stack)
 
-**Elasticsearch** — Distributed search and analytics engine. Stores logs as JSON documents. Provides full-text search, aggregations, and high availability through sharding and replication.
+**Elasticsearch** â€” Distributed search and analytics engine. Stores logs as JSON documents. Provides full-text search, aggregations, and high availability through sharding and replication.
 
-**Logstash** — Server-side data processing pipeline. Ingests logs from multiple sources, transforms them, and sends to Elasticsearch. Supports plugins for input, filter, and output stages.
+**Logstash** â€” Server-side data processing pipeline. Ingests logs from multiple sources, transforms them, and sends to Elasticsearch. Supports plugins for input, filter, and output stages.
 
-**Kibana** — Visualization and management interface. Provides log exploration (Discover), dashboard creation, and alerting.
+**Kibana** â€” Visualization and management interface. Provides log exploration (Discover), dashboard creation, and alerting.
 
-**Beats** — Lightweight data shippers. Filebeat (log files), Metricbeat (system metrics), Heartbeat (uptime monitoring), Winlogbeat (Windows event logs).
+**Beats** â€” Lightweight data shippers. Filebeat (log files), Metricbeat (system metrics), Heartbeat (uptime monitoring), Winlogbeat (Windows event logs).
 
 ### 12.7 Structured Logging
 
@@ -168,12 +168,12 @@ Structured logging outputs logs as machine-parseable structured data (JSON) rath
 
 Standard log levels and their appropriate usage:
 
-- **TRACE** — Detailed debugging information, used only during development
-- **DEBUG** — Diagnostic information for troubleshooting in non-production environments
-- **INFO** — Normal application events (request started, payment processed, user registered)
-- **WARN** — Unexpected events that do not affect functionality (deprecated API usage, retry attempts)
-- **ERROR** — Failed operations that require attention (database connection failure, payment processing error)
-- **FATAL** — Catastrophic failures requiring immediate human intervention (application crash, data corruption)
+- **TRACE** â€” Detailed debugging information, used only during development
+- **DEBUG** â€” Diagnostic information for troubleshooting in non-production environments
+- **INFO** â€” Normal application events (request started, payment processed, user registered)
+- **WARN** â€” Unexpected events that do not affect functionality (deprecated API usage, retry attempts)
+- **ERROR** â€” Failed operations that require attention (database connection failure, payment processing error)
+- **FATAL** â€” Catastrophic failures requiring immediate human intervention (application crash, data corruption)
 
 ### 12.9 Logging Best Practices
 

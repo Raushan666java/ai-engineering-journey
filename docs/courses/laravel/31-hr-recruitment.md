@@ -1,4 +1,4 @@
-﻿# Chapter 31: HR & Recruitment â€” AI-Powered Talent Agents
+# Chapter 31: HR & Recruitment â€” AI-Powered Talent Agents
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![HR and Recruitment Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/31-hr-recruitment.png)
+![HR and Recruitment Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/31-hr-recruitment.png)
 
 
 ### 31.1 HR Data Models

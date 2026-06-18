@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Database DevOps Migration Workflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch15-database-devops.png)
+![Database DevOps Migration Workflow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch15-database-devops.png)
 
 By the end of this chapter, students will be able to:
 
@@ -22,7 +22,7 @@ Database as Code stores schema definitions, migrations, and configuration in Git
 
 ### 15.2 Schema Migration Tools
 
-**Flyway** — Open-source database migration tool. Migrations are SQL files named with versioned or repeatable conventions.
+**Flyway** â€” Open-source database migration tool. Migrations are SQL files named with versioned or repeatable conventions.
 
 ```
 V1__create_users.sql
@@ -44,7 +44,7 @@ flyway undo
 
 Flyway records applied migrations in a schema history table. It calculates which migrations are pending by comparing available migration files against the history table.
 
-**Liquibase** — More feature-rich than Flyway. Supports SQL and XML/JSON/YAML changelog formats. Provides rollback, context-aware execution, and preconditions.
+**Liquibase** â€” More feature-rich than Flyway. Supports SQL and XML/JSON/YAML changelog formats. Provides rollback, context-aware execution, and preconditions.
 
 ```xml
 <databaseChangeLog>
@@ -72,7 +72,7 @@ liquibase rollbackCount 3
 liquibase rollbackSQL --tag v2.0.0
 ```
 
-**Alembic** — Python-specific migration tool for SQLAlchemy. Auto-generates migrations from model changes.
+**Alembic** â€” Python-specific migration tool for SQLAlchemy. Auto-generates migrations from model changes.
 
 ```python
 """empty message
@@ -105,31 +105,31 @@ Integrating database changes into CI/CD requires careful design:
 - Rollback migrations are prepared and tested
 
 **Pipeline Stages**:
-1. **Validate** — Check migration file naming, syntax, and history consistency
-2. **Test** — Apply migrations to a test database, run integration tests
-3. **Stage** — Apply migrations to staging environment
-4. **Production** — Apply with monitoring and automatic rollback on failure
+1. **Validate** â€” Check migration file naming, syntax, and history consistency
+2. **Test** â€” Apply migrations to a test database, run integration tests
+3. **Stage** â€” Apply migrations to staging environment
+4. **Production** â€” Apply with monitoring and automatic rollback on failure
 
 ### 15.4 Blue-Green Database Deployments
 
 Database changes that are backward-compatible enable zero-downtime deployments:
 
-- **Add Column** — Safe. Old code ignores the new column.
-- **Remove Column** — Two-phase: first deploy code that stops using the column, then deploy migration to drop it.
-- **Rename Column** — Three-phase: add new column with new name, deploy code that writes to both and reads from new, deploy code that removes old references, remove old column.
-- **Modify Column** — Complex. Requires views, application-level transformation, or scheduled downtime.
+- **Add Column** â€” Safe. Old code ignores the new column.
+- **Remove Column** â€” Two-phase: first deploy code that stops using the column, then deploy migration to drop it.
+- **Rename Column** â€” Three-phase: add new column with new name, deploy code that writes to both and reads from new, deploy code that removes old references, remove old column.
+- **Modify Column** â€” Complex. Requires views, application-level transformation, or scheduled downtime.
 
 ### 15.5 Backup and Restore
 
 Backup strategies:
 
-**Full Backup** — Complete copy of the database. Slowest to create, fastest to restore. Typical nightly schedule.
+**Full Backup** â€” Complete copy of the database. Slowest to create, fastest to restore. Typical nightly schedule.
 
-**Incremental Backup** — Only changes since last backup. Fast to create, complex to restore (requires base + all increments).
+**Incremental Backup** â€” Only changes since last backup. Fast to create, complex to restore (requires base + all increments).
 
-**Continuous Archiving (WAL shipping)** — Streams transaction logs to archive. Enables point-in-time recovery.
+**Continuous Archiving (WAL shipping)** â€” Streams transaction logs to archive. Enables point-in-time recovery.
 
-**Restore Testing** — The most commonly violated best practice: backups must be tested. Automated restore testing validates that backups are usable.
+**Restore Testing** â€” The most commonly violated best practice: backups must be tested. Automated restore testing validates that backups are usable.
 
 ```bash
 # PostgreSQL: pg_dump
@@ -166,17 +166,17 @@ PITR restores a database to a specific moment, not just the last backup. Require
 
 ### 15.7 Database Testing
 
-**Unit Tests** — Test database functions, stored procedures, and triggers in isolation.
+**Unit Tests** â€” Test database functions, stored procedures, and triggers in isolation.
 
-**Integration Tests** — Test application code with a real database:
+**Integration Tests** â€” Test application code with a real database:
 - Use migration tools to create the schema from scratch
 - Seed test data
 - Run application tests against the database
 - Teardown after each test run
 
-**Transaction Tests** — Test concurrent access, isolation levels, deadlock handling, and rollback behavior.
+**Transaction Tests** â€” Test concurrent access, isolation levels, deadlock handling, and rollback behavior.
 
-**Performance Tests** — Query performance regression detection. Capture query plans before and after schema changes.
+**Performance Tests** â€” Query performance regression detection. Capture query plans before and after schema changes.
 
 ```yaml
 # Testcontainers-based integration test
@@ -198,19 +198,19 @@ services:
 
 Validate migrations before production application:
 
-- **Syntax check** — Parse SQL for syntax errors
-- **Empty database test** — Apply to a clean database, verify schema matches expectations
-- **Production-like test** — Apply to a copy of production data, measure execution time
-- **Rollback test** — Verify downgrade works correctly
-- **Data preservation** — Verify no data loss occurs during migration
+- **Syntax check** â€” Parse SQL for syntax errors
+- **Empty database test** â€” Apply to a clean database, verify schema matches expectations
+- **Production-like test** â€” Apply to a copy of production data, measure execution time
+- **Rollback test** â€” Verify downgrade works correctly
+- **Data preservation** â€” Verify no data loss occurs during migration
 
 ### 15.9 Rollback Strategies
 
 Rollbacks for database changes depend on migration type:
 
-- **Variant A: Forward-only** — Applies migration; rollback is a new forward migration that reverses the change. Example: `V2__add_column.sql` followed by `V3__remove_column.sql`.
-- **Variant B: With rollback** — Flyway Pro and Liquibase support versioned rollbacks. Down migration reverses the up migration.
-- **Variant C: Blue-green schema** — Maintain two schema versions simultaneously. Traffic switches after rollback capability is verified.
+- **Variant A: Forward-only** â€” Applies migration; rollback is a new forward migration that reverses the change. Example: `V2__add_column.sql` followed by `V3__remove_column.sql`.
+- **Variant B: With rollback** â€” Flyway Pro and Liquibase support versioned rollbacks. Down migration reverses the up migration.
+- **Variant C: Blue-green schema** â€” Maintain two schema versions simultaneously. Traffic switches after rollback capability is verified.
 
 ## Summary
 

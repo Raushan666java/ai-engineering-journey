@@ -10,9 +10,9 @@
 
 ## 13.1 The Socket API
 
-![Socket Programming and I/O Models](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch09-sockets.png)
+![Socket Programming and I/O Models](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch09-sockets.png)
 
-![Socket Programming and Network APIs](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-13-socket-programming-network-apis.png)
+![Socket Programming and Network APIs](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch-13-socket-programming-network-apis.png)
 
 A socket is an abstraction for a communication endpoint. The socket API, derived from Berkeley UNIX, provides system calls for creating, connecting, sending, receiving, and closing network connections.
 
@@ -318,6 +318,93 @@ if (n == -1 && (errno == EAGAIN || errno == EWOULDBLOCK)) {
 | SO_LINGER | SOL_SOCKET | Control behavior on close with pending data |
 | TCP_NODELAY | IPPROTO_TCP | Disable Nagle's algorithm |
 | TCP_QUICKACK | IPPROTO_TCP | Disable delayed ACK |
+
+## ðŸ’¡ Pro Tips
+
+- **Always check return values**: `send()` and `recv()` may return fewer bytes than requested (short writes/reads). Loop until all bytes are transferred or an error occurs.
+- **Use `SO_REUSEADDR` on servers**: This allows restarting a server immediately after a crash or shutdown without waiting for the TIME_WAIT state to expire.
+- **Epoll edge-triggered is fast but tricky**: With EPOLLET, you must read/write until EAGAIN. If you stop early, you miss data and deadlock. Use non-blocking sockets and loops.
+- **Nagle's algorithm can kill latency**: For interactive applications (SSH, games), set `TCP_NODELAY` to disable Nagle's buffering. For bulk transfers, keep it enabled to reduce small-packet overhead.
+
+## One-Sentence Takeaways
+
+- A socket is an abstraction for a communication endpoint identified by IP address and port.
+- TCP servers follow socket â†’ bind â†’ listen â†’ accept sequence; TCP clients follow socket â†’ connect.
+- UDP is connectionless: `sendto()` and `recvfrom()` handle addressing per message.
+- `select()` works cross-platform but scales poorly beyond 1024 file descriptors.
+- `epoll()` is Linux-specific, event-driven, and scales to tens of thousands of connections.
+- Non-blocking I/O with EAGAIN handling enables single-threaded concurrent servers.
+
+## Concept Comparison Table
+
+| API | Scope | Event Model | Max FDs | Scalability |
+|-----|-------|-------------|---------|-------------|
+| select() | POSIX | Bitmask polling | 1024 (FD_SETSIZE) | O(n) |
+| poll() | POSIX | Array of structs | Unlimited | O(n) |
+| epoll (LT) | Linux | Event-driven (level) | Unlimited | O(1) |
+| epoll (ET) | Linux | Event-driven (edge) | Unlimited | O(1) â€” most efficient |
+| kqueue | BSD/macOS | Event-driven | Unlimited | O(1) |
+| IOCP | Windows | Completion port | Unlimited | O(1) |
+
+## Quick Reference: Socket API Functions
+
+| Function | TCP Server | TCP Client | UDP Server | UDP Client |
+|----------|-----------|------------|------------|------------|
+| socket() | Yes | Yes | Yes | Yes |
+| bind() | Yes | Optional | Yes | Optional |
+| listen() | Yes | No | No | No |
+| connect() | No | Yes | No | Optional |
+| accept() | Yes | No | No | No |
+| send() | On accepted socket | Yes | No | No |
+| sendto() | No | No | Yes | Yes |
+| recv() | On accepted socket | Yes | No | No |
+| recvfrom() | No | No | Yes | Yes |
+| close() | Yes | Yes | Yes | Yes |
+
+## Cross-Application Matrix
+
+| Pattern | Use Case | Mechanism | Libraries |
+|---------|----------|-----------|-----------|
+| Process-per-connection | Simple, isolated workloads | fork() per accept | libc |
+| Thread-per-connection | Moderate concurrency | pthread_create | pthreads |
+| Event-driven (select) | Portable, < 1000 clients | select() loop | libevent, libev |
+| Event-driven (epoll) | 10k+ connections, Linux | epoll_wait() | libuv, asio |
+| Async (libuv) | Cross-platform async I/O | Event loop | Node.js, uv |
+| Coroutines | Async code in sync style | stackful/stackless | Boost.Asio, C++20 |
+
+## Chapter Quiz
+
+1. **Which function is NOT needed for a UDP server?**
+   - a) socket()
+   - b) bind()
+   - c) listen() âœ“
+   - d) recvfrom()
+
+2. **What does `SO_REUSEADDR` allow?**
+   - a) Address sharing between processes
+   - b) Immediate port reuse after close âœ“
+   - c) Connection reuse
+   - d) Multiple connections per socket
+
+3. **Which I/O multiplexing API scales best for 10,000 connections on Linux?**
+   - a) select()
+   - b) poll()
+   - c) epoll() âœ“
+   - d) sleep()
+
+4. **In epoll edge-triggered mode, what error signals no more data?**
+   - a) ENOMEM
+   - b) EAGAIN âœ“
+   - c) EBUSY
+   - d) EINTR
+
+5. **What TCP option disables Nagle's algorithm?**
+   - a) TCP_QUICKACK
+   - b) TCP_NODELAY âœ“
+   - c) TCP_KEEPALIVE
+   - d) TCP_DEFER_ACCEPT
+
+**Answers:** 1-c, 2-b, 3-c, 4-b, 5-b
 
 ## Summary
 

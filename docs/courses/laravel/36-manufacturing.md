@@ -1,4 +1,4 @@
-﻿# Chapter 36: Manufacturing & Industrial â€” AI-Powered Factory Agents
+# Chapter 36: Manufacturing & Industrial â€” AI-Powered Factory Agents
 
 ---
 
@@ -17,7 +17,7 @@
 
 ## Theory
 
-![Manufacturing Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/36-manufacturing.png)
+![Manufacturing Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/36-manufacturing.png)
 
 
 ### 36.1 Manufacturing Data Models

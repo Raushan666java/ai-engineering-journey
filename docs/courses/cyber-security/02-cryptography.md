@@ -1,5 +1,8 @@
 # Chapter 2: Cryptography
 
+> **Prereq:** Chapter 1 (Security Fundamentals) â€” cryptography is a key control for achieving CIA goals.
+> **Next:** Chapter 3 (Network Security) â€” crypto protocols like TLS secure network communications.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,37 @@
 - Understand the components and purpose of a Public Key Infrastructure (PKI).
 - Discuss the fundamental mechanics of the TLS/SSL protocol for secure communication.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Symmetric | AES, ChaCha20 | Fast bulk encryption |
+| Asymmetric | RSA, ECC | Key exchange, digital signatures |
+| Hash Functions | SHA-256, collisions | Data integrity verification |
+| PKI | CA, certificates | Trust infrastructure for the web |
+| TLS | Handshake, cipher suites | Secure HTTP, VPNs, email |
+
+```mermaid
+flowchart LR
+    A[Cryptography] --> B[Symmetric]
+    A --> C[Asymmetric]
+    A --> D[Hash Functions]
+    A --> E[PKI]
+    B --> F[AES]
+    C --> G[RSA / ECC]
+    D --> H[SHA-256]
+    E --> I[TLS]
+    style A fill:#e1f5fe
+    style I fill:#c8e6c9
+```
+
 ---
 
 ## Theory
 
-![Cryptography & TLS Protocol](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch02-crypto-tls.png)
+![Cryptography & TLS Protocol](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cyber-security/ch02-crypto-tls.png)
+
+> **One-Sentence Takeaway:** Cryptography provides the mathematical tools â€” symmetric and asymmetric encryption, hashing, and PKI â€” that underpin all modern secure communications from TLS to digital signatures.
 
 ### Symmetric Encryption
 In symmetric-key cryptography, a single shared secret key is used for both encryption and decryption.
@@ -111,3 +140,45 @@ sha256sum software_update.tar.gz
 
 ### Challenge Problem
 1. Research and explain the "Diffie-Hellman Key Exchange" algorithm. Show mathematically (using modular arithmetic) how two parties can arrive at a shared secret over an insecure channel without ever transmitting the secret itself.
+
+### Concept Comparison
+
+| Type | Keys | Speed | Use Case |
+|------|------|-------|----------|
+| Symmetric | 1 shared | Fast | Bulk data encryption |
+| Asymmetric | Public + Private | Slow | Key exchange, signatures |
+| Hash | None (one-way) | Fast | Integrity verification |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Network Security | TLS, IPsec VPNs | Crypto secures all network protocols |
+| App Security | Password hashing, JWT | Hashes and signatures protect app data |
+| Cloud Security | KMS, envelope encryption | Cloud key management at scale |
+| Research | Post-quantum cryptography | Lattice-based crypto for quantum resistance |
+
+### Chapter Quiz
+
+1. Which encryption type uses a single shared key?
+   - A) Asymmetric
+   - B) Symmetric
+   - C) Hashing
+   - D) PKI
+
+2. A digital signature provides:
+   - A) Confidentiality only
+   - B) Integrity and non-repudiation
+   - C) Availability
+   - D) Key exchange
+
+3. The CA in PKI is responsible for:
+   - A) Encrypting all web traffic
+   - B) Issuing and signing digital certificates
+   - C) Hashing passwords
+   - D) Generating symmetric keys
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

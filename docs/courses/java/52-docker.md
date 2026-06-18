@@ -17,19 +17,19 @@ By the end of this chapter, you will be able to:
 
 ## 1. Why Containerize Spring Boot?
 
-![Docker & Containerization Mindmap](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/52-docker.png)
+![Docker & Containerization Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/52-docker.png)
 
 Containers provide consistent, isolated environments for running applications. For Spring Boot developers, containerization solves:
 
-- **Environment parity** — same image runs identically on a dev laptop, CI server, and production
-- **Dependency encapsulation** — JDK version, OS libraries, and application code ship as one unit
-- **Resource isolation** — CPU and memory limits prevent noisy-neighbor problems
-- **Scaling** — containers are the unit of scaling in Kubernetes, Nomad, and other orchestrators
+- **Environment parity** â€” same image runs identically on a dev laptop, CI server, and production
+- **Dependency encapsulation** â€” JDK version, OS libraries, and application code ship as one unit
+- **Resource isolation** â€” CPU and memory limits prevent noisy-neighbor problems
+- **Scaling** â€” containers are the unit of scaling in Kubernetes, Nomad, and other orchestrators
 
 A typical Spring Boot Docker workflow:
 
 ```
-Developer → Build JAR → Build Image → Push to Registry → Deploy to Orchestrator
+Developer â†’ Build JAR â†’ Build Image â†’ Push to Registry â†’ Deploy to Orchestrator
 ```
 
 ---
@@ -115,7 +115,7 @@ FROM gcr.io/distroless/java17-debian12
 | libc | glibc |
 | Shell | None |
 
-**Pros:** Minimal attack surface — no shell, no package manager, no utilities.  
+**Pros:** Minimal attack surface â€” no shell, no package manager, no utilities.  
 **Cons:** Debugging requires `kubectl exec` or ephermeral debug containers.
 
 ### 3.3 Full JDK (For Development)
@@ -130,10 +130,10 @@ Only use for development images where you need `jmap`, `jstack`, `jcmd`, etc.
 
 ```yaml
 # Decision matrix:
-# Production runtime   → eclipse-temurin:17-jre-alpine or distroless/java17
-# CI/CD builder stage  → eclipse-temurin:17-jdk-alpine
-# Dev/debug image      → eclipse-temurin:17-jdk
-# Native image (Graal) → ubuntu:22.04 or distroless/java-base
+# Production runtime   â†’ eclipse-temurin:17-jre-alpine or distroless/java17
+# CI/CD builder stage  â†’ eclipse-temurin:17-jdk-alpine
+# Dev/debug image      â†’ eclipse-temurin:17-jdk
+# Native image (Graal) â†’ ubuntu:22.04 or distroless/java-base
 ```
 
 ---
@@ -173,7 +173,7 @@ Each excluded file means a smaller build context, faster sends to the Docker dae
 FROM eclipse-temurin:17-jdk-alpine AS builder
 WORKDIR /build
 
-# Copy only dependency descriptors first — maximizes cache reuse
+# Copy only dependency descriptors first â€” maximizes cache reuse
 COPY pom.xml .
 COPY mvnw .
 COPY .mvn .mvn
@@ -238,17 +238,17 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 Each Dockerfile instruction creates a layer. Docker caches each layer and reuses it if nothing changed:
 
 ```dockerfile
-# Layer 1: Base image — cached unless base changes
+# Layer 1: Base image â€” cached unless base changes
 FROM eclipse-temurin:17-jre-alpine
 
-# Layer 2: OS packages — cached unless this line changes
+# Layer 2: OS packages â€” cached unless this line changes
 RUN apk add --no-cache curl
 
-# Layer 3: Dependencies — cached unless pom.xml changes
+# Layer 3: Dependencies â€” cached unless pom.xml changes
 COPY pom.xml .
 RUN ./mvnw dependency:go-offline
 
-# Layer 4: Application — INVALIDATED on every src change
+# Layer 4: Application â€” INVALIDATED on every src change
 COPY src src
 RUN ./mvnw package
 ```
@@ -294,10 +294,10 @@ Output directory structure:
 
 ```
 extracted/
-├── application/           # Your classes and resources
-├── dependencies/          # Third-party JARs
-├── snapshot-dependencies/ # Snapshot dependencies
-└── spring-boot-loader/    # Spring Boot loader classes
+â”œâ”€â”€ application/           # Your classes and resources
+â”œâ”€â”€ dependencies/          # Third-party JARs
+â”œâ”€â”€ snapshot-dependencies/ # Snapshot dependencies
+â””â”€â”€ spring-boot-loader/    # Spring Boot loader classes
 ```
 
 ### 6.3 Custom Layer Configuration
@@ -349,7 +349,7 @@ FROM eclipse-temurin:17-jre-alpine
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
 
-# Copy layers in dependency order — maximizes cache reuse
+# Copy layers in dependency order â€” maximizes cache reuse
 COPY --from=builder /extracted/dependencies/ ./
 COPY --from=builder /extracted/spring-boot-loader/ ./
 COPY --from=builder /extracted/snapshot-dependencies/ ./
@@ -469,7 +469,7 @@ volumes:
 ### 7.2 Docker Compose with Multiple Profiles
 
 ```yaml
-# docker-compose.override.yml — loaded automatically for dev overrides
+# docker-compose.override.yml â€” loaded automatically for dev overrides
 version: "3.9"
 services:
   app:
@@ -483,7 +483,7 @@ services:
 ```
 
 ```yaml
-# docker-compose.prod.yml — for production-like environments
+# docker-compose.prod.yml â€” for production-like environments
 version: "3.9"
 services:
   app:
@@ -1079,16 +1079,16 @@ Running `docker compose up` works for a single host, but production needs:
 ### 11.3 Kubernetes in One Slide
 
 ```
-┌─────────────────────────────────────────────────┐
-│                    Cluster                        │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐       │
-│  │  Node 1  │  │  Node 2  │  │  Node 3  │       │
-│  │ ┌──────┐ │  │ ┌──────┐ │  │ ┌──────┐ │       │
-│  │ │ Pod  │ │  │ │ Pod  │ │  │ │ Pod  │ │       │
-│  │ │ App  │ │  │ │ App  │ │  │ │ App  │ │       │
-│  │ └──────┘ │  │ └──────┘ │  │ └──────┘ │       │
-│  └──────────┘  └──────────┘  └──────────┘       │
-└─────────────────────────────────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚                    Cluster                        â”‚
+â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”       â”‚
+â”‚  â”‚  Node 1  â”‚  â”‚  Node 2  â”‚  â”‚  Node 3  â”‚       â”‚
+â”‚  â”‚ â”Œâ”€â”€â”€â”€â”€â”€â” â”‚  â”‚ â”Œâ”€â”€â”€â”€â”€â”€â” â”‚  â”‚ â”Œâ”€â”€â”€â”€â”€â”€â” â”‚       â”‚
+â”‚  â”‚ â”‚ Pod  â”‚ â”‚  â”‚ â”‚ Pod  â”‚ â”‚  â”‚ â”‚ Pod  â”‚ â”‚       â”‚
+â”‚  â”‚ â”‚ App  â”‚ â”‚  â”‚ â”‚ App  â”‚ â”‚  â”‚ â”‚ App  â”‚ â”‚       â”‚
+â”‚  â”‚ â””â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚ â””â”€â”€â”€â”€â”€â”€â”˜ â”‚  â”‚ â””â”€â”€â”€â”€â”€â”€â”˜ â”‚       â”‚
+â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜       â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 ### 11.4 Docker Compose vs Kubernetes Mapping
@@ -1133,7 +1133,7 @@ kubectl apply -f k8s-manifests/
 
 ```bash
 #!/bin/bash
-# build.sh — Build Docker images with proper tags
+# build.sh â€” Build Docker images with proper tags
 
 set -euo pipefail
 
@@ -1210,7 +1210,7 @@ USER appuser
 # 2. Remove unnecessary tools
 # (Alpine is already minimal, distroless has no shell)
 
-# 3. Don't run as PID 1 — use tini for signal handling
+# 3. Don't run as PID 1 â€” use tini for signal handling
 RUN apk add --no-cache tini
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["java", "-jar", "/app/app.jar"]
@@ -1243,7 +1243,7 @@ CMD ["java", "-jar", "/app/app.jar"]
 | Multi-stage build | ~200 MB (avoids JDK in runtime) | Medium |
 | Layer optimization | Build speed (not size) | Medium |
 | Spring Boot layered JAR | Build speed (not size) | Medium |
-| GraalVM native image | ~200-300 MB → ~50 MB | High |
+| GraalVM native image | ~200-300 MB â†’ ~50 MB | High |
 | CDS archive | Startup speed (not size) | Medium |
 
 ---

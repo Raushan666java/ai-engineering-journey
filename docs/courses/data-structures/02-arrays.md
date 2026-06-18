@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Arrays and Linked Lists Comparison](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch02-arrays-lists.png)
+![Arrays and Linked Lists Comparison](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch02-arrays-lists.png)
 
 ### Static Arrays
 
@@ -122,7 +122,7 @@ After erase at index 2: 5 10 30 40 50
 #include <vector>
 #include <algorithm>
 
-// Rotate array left by k positions — O(n) time, O(1) space
+// Rotate array left by k positions â€” O(n) time, O(1) space
 void rotateLeft(std::vector<int>& arr, int k) {
     int n = arr.size();
     if (n == 0) return;
@@ -154,7 +154,7 @@ Rotated left by 3: 4 5 6 7 1 2 3
 #include <vector>
 #include <algorithm>
 
-// Find pair in sorted array that sums to target — O(n)
+// Find pair in sorted array that sums to target â€” O(n)
 std::pair<int, int> twoSumSorted(const std::vector<int>& arr, int target) {
     int i = 0, j = arr.size() - 1;
     while (i < j) {
@@ -229,6 +229,87 @@ Transposed:
 2 5
 3 6
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **Prefer `std::vector` over raw arrays**: C++ vectors provide dynamic resizing, bounds checking in debug mode, and STL algorithm compatibility. Raw arrays are error-prone and inflexible.
+- **Cache-friendly traversal**: Iterate 2D arrays in row-major order (outer loop = row, inner loop = column). Column-major traversal causes cache misses that can slow access by 10â€“100Ã—.
+- **Two-pointer is your secret weapon**: For sorted arrays, two pointers from opposite ends can solve pair-sum, triplet, and container-with-most-water problems in \(O(n)\) instead of \(O(n^2)\).
+- **Prefix sums turn range queries into \(O(1)\)**: Precompute prefix sums once (\(O(n)\)), then any subarray sum is `prefix[r] - prefix[l-1]`.
+
+## One-Sentence Takeaways
+
+- Static arrays provide \(O(1)\) random access with \(O(n)\) insertion/deletion in the middle.
+- Dynamic arrays amortize resizing cost to \(O(1)\) per push_back.
+- Two-pointer technique reduces nested loops to linear time on sorted arrays.
+- Row-major order stores rows contiguously; column-major stores columns contiguously.
+- Prefix sums enable constant-time subarray sum queries.
+- Sliding window solves contiguous subarray problems in \(O(n)\).
+
+## Concept Comparison Table
+
+| Feature | Static Array | Dynamic Array | Linked List |
+|---------|-------------|---------------|-------------|
+| Random access | \(O(1)\) | \(O(1)\) | \(O(n)\) |
+| Insert at end | \(O(1)\) | \(O(1)\) amortized | \(O(1)\) |
+| Insert at front | \(O(n)\) | \(O(n)\) | \(O(1)\) |
+| Insert in middle | \(O(n)\) | \(O(n)\) | \(O(1)\) (if node known) |
+| Memory overhead | None | Some (capacity > size) | Pointer per node |
+| Cache locality | Excellent | Excellent | Poor |
+
+## Quick Reference: Common Array Patterns
+
+| Pattern | Time | Space | Use Case |
+|---------|------|-------|----------|
+| Two-pointer | \(O(n)\) | \(O(1)\) | Pair sum, palindrome check |
+| Sliding window | \(O(n)\) | \(O(1)\) | Max subarray, substring problems |
+| Prefix sum | \(O(n)\) build, \(O(1)\) query | \(O(n)\) | Range sum queries |
+| Kadane's algorithm | \(O(n)\) | \(O(1)\) | Maximum subarray sum |
+| Dutch flag partition | \(O(n)\) | \(O(1)\) | Sort 3 distinct values |
+
+## Cross-Application Matrix
+
+| Application | Array Type | Reason |
+|-------------|-----------|--------|
+| Image pixels | 2D static array | Fixed dimensions, dense data |
+| Game entity list | Dynamic array | Entities added/removed at end |
+| Undo history | Array as stack | LIFO operations on recent actions |
+| Lookup table | Static array | Fixed-size, \(O(1)\) access |
+| Adjacency matrix | 2D array of booleans | Dense graphs, \(O(1)\) edge queries |
+
+## Chapter Quiz
+
+1. **What is the time complexity of accessing `arr[i]`?**
+   - a) \(O(n)\)
+   - b) \(O(1)\) âœ“
+   - c) \(O(\log n)\)
+   - d) \(O(n^2)\)
+
+2. **What happens when a dynamic array reaches capacity?**
+   - a) Elements are discarded
+   - b) Array doubles in size âœ“
+   - c) Program crashes
+   - d) Insertion fails
+
+3. **Which technique finds the maximum subarray sum in \(O(n)\)?**
+   - a) Binary search
+   - b) Kadane's algorithm âœ“
+   - c) Merge sort
+   - d) Two-pointer
+
+4. **Row-major order stores:**
+   - a) Columns contiguously
+   - b) Rows contiguously âœ“
+   - c) Diagonals contiguously
+   - d) Random order
+
+5. **What is a prefix sum useful for?**
+   - a) Sorting
+   - b) Range sum queries âœ“
+   - c) Searching
+   - d) Insertion
+
+**Answers:** 1-b, 2-b, 3-b, 4-b, 5-b
 
 ## Summary
 

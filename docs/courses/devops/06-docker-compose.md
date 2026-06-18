@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Docker Compose Multi-Service Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch06-docker-compose.png)
+![Docker Compose Multi-Service Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch06-docker-compose.png)
 
 By the end of this chapter, students will be able to:
 
@@ -48,14 +48,14 @@ services:
 ```
 
 Each service can specify:
-- **image/build** — Use a pre-built image or build from source
-- **ports** — Publish container ports to the host
-- **environment / env_file** — Environment variables
-- **volumes** — Mount host paths or named volumes
-- **depends_on** — Startup and shutdown ordering
-- **healthcheck** — Container health verification
-- **restart** — Restart policy
-- **deploy** — Deployment configuration (replicas, resources, placement)
+- **image/build** â€” Use a pre-built image or build from source
+- **ports** â€” Publish container ports to the host
+- **environment / env_file** â€” Environment variables
+- **volumes** â€” Mount host paths or named volumes
+- **depends_on** â€” Startup and shutdown ordering
+- **healthcheck** â€” Container health verification
+- **restart** â€” Restart policy
+- **deploy** â€” Deployment configuration (replicas, resources, placement)
 
 ### 6.3 Networks
 

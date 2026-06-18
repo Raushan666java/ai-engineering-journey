@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![SRE Principles Framework](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch17-sre-principles.png)
+![SRE Principles Framework](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch17-sre-principles.png)
 
 By the end of this chapter, students will be able to:
 
@@ -36,15 +36,15 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 
 ### 17.2 Service Level Objectives (SLO, SLI, SLA)
 
-**Service Level Indicator (SLI)** — A quantitative measure of some aspect of the service. Examples:
+**Service Level Indicator (SLI)** â€” A quantitative measure of some aspect of the service. Examples:
 - Request latency (at p95, < 500ms)
 - Availability (fraction of successful requests)
 - Throughput (requests per second)
 - Freshness (data age)
 
-**Service Level Objective (SLO)** — A target value or range for an SLI. Example: "P95 request latency is less than 500ms over a 28-day rolling window."
+**Service Level Objective (SLO)** â€” A target value or range for an SLI. Example: "P95 request latency is less than 500ms over a 28-day rolling window."
 
-**Service Level Agreement (SLA)** — A contractual commitment to customers, typically with financial penalties for breach. Internal SLOs should be more stringent than customer SLAs to provide a buffer.
+**Service Level Agreement (SLA)** â€” A contractual commitment to customers, typically with financial penalties for breach. Internal SLOs should be more stringent than customer SLAs to provide a buffer.
 
 **SLO Design Principles**:
 - Define SLOs for user-facing services first
@@ -58,10 +58,10 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 An error budget is the acceptable amount of unreliability. For a 99.9% SLO over 28 days:
 
 ```
-Error Budget = (1 - SLO) × Time Window
-             = 0.001 × (28 × 24 × 60 × 60)
-             = 0.001 × 2,419,200 seconds
-             = 2,419 seconds ≈ 40 minutes
+Error Budget = (1 - SLO) Ã— Time Window
+             = 0.001 Ã— (28 Ã— 24 Ã— 60 Ã— 60)
+             = 0.001 Ã— 2,419,200 seconds
+             = 2,419 seconds â‰ˆ 40 minutes
 ```
 
 **Error Budget Mechanics**:
@@ -93,11 +93,11 @@ groups:
 Toil is operational work that is manual, repetitive, automatable, tactical, and devoid of enduring value. Examples: restarting failed processes, manually rotating credentials, responding to non-actionable alerts, hand-configuring monitoring dashboards.
 
 **Toil Characteristics**:
-1. **Manual** — Requires human intervention; no automation
-2. **Repetitive** — Occurs frequently with the same pattern
-3. **Automatable** — Could be automated with appropriate engineering effort
-4. **Tactical** — Reactive rather than strategic
-5. **No enduring value** — Service does not improve when this work is done
+1. **Manual** â€” Requires human intervention; no automation
+2. **Repetitive** â€” Occurs frequently with the same pattern
+3. **Automatable** â€” Could be automated with appropriate engineering effort
+4. **Tactical** â€” Reactive rather than strategic
+5. **No enduring value** â€” Service does not improve when this work is done
 
 **The 50% Rule**: SRE teams should spend no more than 50% of their time on operational work. The remaining time must be invested in engineering projects that reduce future operational load.
 
@@ -120,23 +120,23 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 | SEV-4 | Cosmetic or informational | 24 hours | Dashboard labeling issue |
 
 **Incident Response Process**:
-1. **Detection** — Alert fires or user reports issue
-2. **Triage** — Determine severity, declare incident, assemble response team
-3. **Mitigation** — Stabilize the system (rollback, redirect traffic, scale up)
-4. **Resolution** — Apply permanent fix
-5. **Follow-up** — Conduct postmortem, implement preventive measures
+1. **Detection** â€” Alert fires or user reports issue
+2. **Triage** â€” Determine severity, declare incident, assemble response team
+3. **Mitigation** â€” Stabilize the system (rollback, redirect traffic, scale up)
+4. **Resolution** â€” Apply permanent fix
+5. **Follow-up** â€” Conduct postmortem, implement preventive measures
 
-**Communication** — Incident commander coordinates response. Communication channels (Slack, PagerDuty) keep stakeholders informed. Status page updates for customer-facing incidents.
+**Communication** â€” Incident commander coordinates response. Communication channels (Slack, PagerDuty) keep stakeholders informed. Status page updates for customer-facing incidents.
 
 ### 17.6 On-Call Practices
 
-**On-Call Rotation** — Distributes incident response responsibility across team members. Common patterns:
+**On-Call Rotation** â€” Distributes incident response responsibility across team members. Common patterns:
 
-- **Follow-the-sun** — Primary in each time zone during business hours
-- **Weekly rotation** — Primary handles incidents for one week
-- **Escalation tiers** — Primary → secondary → engineering manager
+- **Follow-the-sun** â€” Primary in each time zone during business hours
+- **Weekly rotation** â€” Primary handles incidents for one week
+- **Escalation tiers** â€” Primary â†’ secondary â†’ engineering manager
 
-**Pager Duty** — Incidents require immediate response. Clear escalation policies prevent incidents from falling through cracks.
+**Pager Duty** â€” Incidents require immediate response. Clear escalation policies prevent incidents from falling through cracks.
 
 **On-Call Best Practices**:
 - Limit on-call frequency to one week per rotation minimum
@@ -150,16 +150,16 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 Postmortems are written analyses of incidents. The goal is to understand what happened, why it happened, and how to prevent recurrence. Blameless means the analysis focuses on systemic factors rather than individual actions.
 
 **Postmortem Structure**:
-1. **Summary** — One-paragraph overview
-2. **Timeline** — Chronological sequence of events with timestamps
-3. **Impact** — User impact, duration, affected users
-4. **Root Cause** — Technical and systemic causes
-5. **Trigger** — What initiated the incident
-6. **Detection** — How was the incident discovered?
-7. **Response** — Actions taken during mitigation
-8. **Contributing Factors** — Conditions that enabled the incident
-9. **Action Items** — Concrete, assigned, tracked remediation steps
-10. **Lessons Learned** — Insights for future improvement
+1. **Summary** â€” One-paragraph overview
+2. **Timeline** â€” Chronological sequence of events with timestamps
+3. **Impact** â€” User impact, duration, affected users
+4. **Root Cause** â€” Technical and systemic causes
+5. **Trigger** â€” What initiated the incident
+6. **Detection** â€” How was the incident discovered?
+7. **Response** â€” Actions taken during mitigation
+8. **Contributing Factors** â€” Conditions that enabled the incident
+9. **Action Items** â€” Concrete, assigned, tracked remediation steps
+10. **Lessons Learned** â€” Insights for future improvement
 
 **The Blame-Free Principle**: If a human made a mistake, the system enabled that mistake. Postmortems find system weaknesses, not human failures.
 
@@ -168,16 +168,16 @@ Postmortems are written analyses of incidents. The goal is to understand what ha
 Capacity planning ensures the system has sufficient resources for current and projected demand.
 
 **Approach**:
-1. **Demand Forecasting** — Predict future usage based on historical trends, business plans, marketing campaigns
-2. **Resource Modeling** — Map demand to resource requirements (CPU, memory, storage, bandwidth)
-3. **Provisioning** — Acquire resources before they are needed
-4. **Monitoring** — Track utilization trends against projections
+1. **Demand Forecasting** â€” Predict future usage based on historical trends, business plans, marketing campaigns
+2. **Resource Modeling** â€” Map demand to resource requirements (CPU, memory, storage, bandwidth)
+3. **Provisioning** â€” Acquire resources before they are needed
+4. **Monitoring** â€” Track utilization trends against projections
 
 **Autoscaling** reduces the need for manual capacity planning for variable workloads. However, proactive planning is still required for predictable growth and large-scale events.
 
 ### 17.9 Reliability Patterns
 
-**Retries** — Automatically retry transient failures (network timeouts, temporary overload). Use exponential backoff with jitter to prevent thundering herd problems.
+**Retries** â€” Automatically retry transient failures (network timeouts, temporary overload). Use exponential backoff with jitter to prevent thundering herd problems.
 
 ```python
 import time
@@ -195,7 +195,7 @@ def retry_with_backoff(fn, max_retries=3, base_delay=0.1):
             time.sleep(delay + jitter)
 ```
 
-**Circuit Breaker** — Stop making requests to a failing service to prevent cascade failures. States: CLOSED (normal), OPEN (fail fast), HALF-OPEN (test recovery).
+**Circuit Breaker** â€” Stop making requests to a failing service to prevent cascade failures. States: CLOSED (normal), OPEN (fail fast), HALF-OPEN (test recovery).
 
 ```python
 class CircuitBreaker:
@@ -225,11 +225,11 @@ class CircuitBreaker:
             raise
 ```
 
-**Bulkhead** — Isolate components so failure in one does not cascade. Implement through separate thread pools, connection pools, or process boundaries for different service components.
+**Bulkhead** â€” Isolate components so failure in one does not cascade. Implement through separate thread pools, connection pools, or process boundaries for different service components.
 
-**Timeouts** — Prevent operations from hanging indefinitely. Client-side timeouts (connect, request, response) and server-side timeouts (read, write, idle) should be configured for all service interactions.
+**Timeouts** â€” Prevent operations from hanging indefinitely. Client-side timeouts (connect, request, response) and server-side timeouts (read, write, idle) should be configured for all service interactions.
 
-**Graceful Degradation** — When dependencies fail, degrade functionality rather than failing completely. Example: display cached data when database is unavailable, disable non-critical features during overload.
+**Graceful Degradation** â€” When dependencies fail, degrade functionality rather than failing completely. Example: display cached data when database is unavailable, disable non-critical features during overload.
 
 ## Summary
 

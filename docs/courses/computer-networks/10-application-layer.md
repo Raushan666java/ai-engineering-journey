@@ -10,9 +10,9 @@
 
 ## 10.1 Domain Name System
 
-![Application Layer Protocols and Web Technologies](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch07-application.png)
+![Application Layer Protocols and Web Technologies](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch07-application.png)
 
-![Application Layer Protocols: DNS, SMTP and FTP](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-11-application-layer-dns-smtp-ftp.png)
+![Application Layer Protocols: DNS, SMTP and FTP](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch-11-application-layer-dns-smtp-ftp.png)
 
 DNS translates human-readable domain names (e.g., www.example.com) to IP addresses. It is a distributed, hierarchical database with client-server architecture.
 
@@ -36,7 +36,7 @@ The DNS namespace is partitioned into zones, each managed by an authoritative na
 Iterative resolution:
 
 ```
-Client → Local Resolver → Root → TLD → Authoritative → Response
+Client â†’ Local Resolver â†’ Root â†’ TLD â†’ Authoritative â†’ Response
 ```
 
 1. Client queries local resolver for www.example.com.
@@ -51,17 +51,17 @@ DNS uses UDP on port 53 for queries (limit 512 bytes without EDNS0) and TCP for 
 
 | Type | Description | Example |
 |------|-------------|---------|
-| A | IPv4 address | www.example.com → 93.184.216.34 |
-| AAAA | IPv6 address | www.example.com → 2606:2800:220:1:248:1893:25c8:1946 |
-| CNAME | Canonical name (alias) | www → example.com |
+| A | IPv4 address | www.example.com â†’ 93.184.216.34 |
+| AAAA | IPv6 address | www.example.com â†’ 2606:2800:220:1:248:1893:25c8:1946 |
+| CNAME | Canonical name (alias) | www â†’ example.com |
 | MX | Mail exchange (priority + hostname) | 10 mail.example.com |
 | NS | Name server | ns1.example.com |
 | TXT | Arbitrary text (SPF, DKIM, verification) | "v=spf1 mx ~all" |
-| PTR | Reverse lookup (IP → name) | 34.216.184.93 → www.example.com |
+| PTR | Reverse lookup (IP â†’ name) | 34.216.184.93 â†’ www.example.com |
 
 ## 10.2 HTTP
 
-![HTTP and Web Technologies Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-12-http-web-technologies.png)
+![HTTP and Web Technologies Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch-12-http-web-technologies.png)
 
 ### 10.2.1 HTTP/1.1
 
@@ -171,7 +171,98 @@ SNMPv3 adds encryption and authentication, addressing the plaintext security wea
 
 **SSH** (Secure Shell, RFC 4251) provides encrypted remote access. SSH uses TCP port 22, supports public-key authentication, port forwarding (tunneling), and SCP/SFTP file transfer. SSH is the standard protocol for remote system administration.
 
-![Multimedia Networking and QoS Mechanisms](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/computer-networks/ch-16-multimedia-networking-qos.png)
+![Multimedia Networking and QoS Mechanisms](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch-16-multimedia-networking-qos.png)
+
+## ðŸ’¡ Pro Tips
+
+- **Check your TTLs on slow DNS**: Stale DNS cache is a common cause of intermittent failures. Use `dig +trace` to see the full resolution path and cache behavior at each hop. A record TTL of 60 seconds is too short for production; 300â€“3600 is typical.
+- **Use passive FTP for NAT traversal**: Active FTP requires the server to connect back to the client's port 20. This fails behind NAT. Always use passive (PASV) mode â€” the client initiates both control and data connections.
+- **IMAP vs POP3 decision**: If users access email from multiple devices or need server-side folder search, use IMAP. POP3 is acceptable only if messages are read on a single device and server storage is a concern.
+- **DHCP lease times matter**: Short leases (minutes) allow rapid IP recovery but increase DHCP traffic. Long leases (days/weeks) reduce overhead but delay IP recycling. Reserve short leases for guest networks.
+
+## One-Sentence Takeaways
+
+- DNS translates domain names to IP addresses via a distributed hierarchy of root, TLD, and authoritative servers.
+- HTTP evolved from text-based request-response (HTTP/1.1) to multiplexed binary framing (HTTP/2) to QUIC-based transport (HTTP/3).
+- SMTP is a push protocol for mail transfer; IMAP/POP3 are pull protocols for mail retrieval.
+- FTP uses separate control (port 21) and data (port 20) connections.
+- DHCP automatically assigns IP configuration via the DORA process.
+- SSH provides encrypted remote access, replacing the insecure Telnet protocol.
+
+## Concept Comparison Table
+
+| Protocol | Transport | Model | Port(s) | Persistent? | Encryption |
+|----------|-----------|-------|---------|-------------|------------|
+| HTTP/1.1 | TCP | Request-response | 80 | Yes | Optional (HTTPS: 443) |
+| HTTP/2 | TCP | Binary framing | 443 | Yes (multiplexed) | Usually |
+| HTTP/3 | QUIC | Stream-based | 443 | Yes | Mandatory |
+| SMTP | TCP | Push | 25, 587 | Yes | Optional (STARTTLS) |
+| POP3 | TCP | Pull (download) | 110, 995 | No | Optional (STLS) |
+| IMAP | TCP | Pull (server-side) | 143, 993 | Yes | Optional (STARTTLS) |
+| FTP | TCP | Control + Data | 21, 20 | Yes | Optional (FTPS) |
+| DNS | UDP (TCP) | Query-response | 53 | No | Optional (DNSSEC) |
+| DHCP | UDP | DORA | 67, 68 | No | No |
+| SNMP | UDP | Manager-agent | 161, 162 | No | SNMPv3 |
+
+## Quick Reference: HTTP Status Codes
+
+| Code | Meaning | Typical Use |
+|------|---------|-------------|
+| 200 | OK | Successful GET, PUT, PATCH |
+| 201 | Created | Successful POST |
+| 301 | Moved Permanently | Resource URL changed |
+| 400 | Bad Request | Malformed client input |
+| 401 | Unauthorized | Authentication required |
+| 403 | Forbidden | No permission |
+| 404 | Not Found | Resource does not exist |
+| 500 | Internal Server Error | Server failure |
+| 503 | Service Unavailable | Temporary overload/maintenance |
+
+## Cross-Application Matrix
+
+| Application Domain | Preferred Protocol | Why |
+|--------------------|-------------------|-----|
+| Web browsing | HTTP/2 or HTTP/3 | Multiplexed, reduced latency |
+| Email transfer (MTA) | SMTP | Industry standard, store-and-forward |
+| Email retrieval (multi-device) | IMAP | Server-side folders, sync |
+| File transfer (automated) | FTP/FTPS | Directory listing, resume support |
+| Network config automation | DHCP | Zero-touch assignment |
+| Remote administration | SSH | Encrypted, port forwarding |
+| Network monitoring | SNMPv3 | Encrypted, standardized MIB |
+
+## Chapter Quiz
+
+1. **What port does DNS primarily use?**
+   - a) TCP 53
+   - b) UDP 53 âœ“
+   - c) UDP 67
+   - d) TCP 80
+
+2. **Which HTTP version eliminated application-layer head-of-line blocking?**
+   - a) HTTP/1.0
+   - b) HTTP/1.1
+   - c) HTTP/2 âœ“
+   - d) HTTP/3
+
+3. **Which email protocol keeps messages on the server?**
+   - a) SMTP
+   - b) POP3
+   - c) IMAP âœ“
+   - d) MIME
+
+4. **In DHCP, what does the 'R' in DORA stand for?**
+   - a) Reply
+   - b) Request âœ“
+   - c) Renew
+   - d) Response
+
+5. **Which protocol adds encryption to Telnet-like remote access?**
+   - a) FTPS
+   - b) SSH âœ“
+   - c) SSL
+   - d) SNMPv3
+
+**Answers:** 1-b, 2-c, 3-c, 4-b, 5-b
 
 ## Summary
 

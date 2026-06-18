@@ -1,10 +1,10 @@
-﻿# Chapter 59: Database Interview Q&A for Java & Spring Boot Developers
+# Chapter 59: Database Interview Q&A for Java & Spring Boot Developers
 
 > 25+ questions covering JDBC, JPA, Hibernate, transactions, locking, indexing, NoSQL, and production database patterns. Each answer includes compilable Java code.
 
 ---
 
-![Database Interview Topics - Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/59-interview-databases.png)
+![Database Interview Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases.png)
 
 ### Q1: What is the difference between JDBC and JPA, and when would you use each?
 

@@ -1,4 +1,4 @@
-﻿# Chapter 42: Logistics & Supply Chain â€” Interview Q&A
+# Chapter 42: Logistics & Supply Chain â€” Interview Q&A
 
 ---
 
@@ -10,7 +10,7 @@ This chapter covers common interview questions for Laravel developer roles at lo
 
 ## 1. Logistics Domain Knowledge
 
-![Logistics Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/42-interview-logistics.png)
+![Logistics Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/42-interview-logistics.png)
 
 
 ### Q1: What are the core components of a supply chain management system, and how do they interact?

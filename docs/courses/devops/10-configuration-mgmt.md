@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-![Configuration Management Tools Landscape](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch10-config-mgmt-tools.png)
+![Configuration Management Tools Landscape](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch10-config-mgmt-tools.png)
 
 By the end of this chapter, students will be able to:
 
@@ -18,9 +18,9 @@ By the end of this chapter, students will be able to:
 
 Configuration management and Infrastructure as Code serve different but complementary purposes:
 
-**Infrastructure Provisioning (Terraform, CloudFormation)** — Creates and manages infrastructure resources: VPCs, subnets, load balancers, database instances. Focuses on the cloud resource layer.
+**Infrastructure Provisioning (Terraform, CloudFormation)** â€” Creates and manages infrastructure resources: VPCs, subnets, load balancers, database instances. Focuses on the cloud resource layer.
 
-**Configuration Management (Ansible, Puppet, Chef)** — Installs and configures software on servers: packages, services, configuration files, users, application settings. Focuses on the operating system and application layer.
+**Configuration Management (Ansible, Puppet, Chef)** â€” Installs and configures software on servers: packages, services, configuration files, users, application settings. Focuses on the operating system and application layer.
 
 The boundary can blur. Ansible and Terraform overlap in provisioning capabilities, but the general recommendation is: Terraform for cloud resources, Ansible for OS configuration. Ansible can invoke Terraform; Terraform can use Ansible provisioners.
 
@@ -29,13 +29,13 @@ The boundary can blur. Ansible and Terraform overlap in provisioning capabilitie
 Ansible is an agentless, push-based configuration management tool. It connects to managed nodes via SSH (Linux) or WinRM (Windows), executes modules, and disconnects. No agent software is required on managed nodes.
 
 **Key Concepts**:
-- **Control Node** — The machine where Ansible is installed. Any machine with Python.
-- **Managed Nodes** — Target servers configured by Ansible.
-- **Inventory** — List of managed nodes in INI or YAML format.
-- **Modules** — Discrete units of work (package installation, file management, service control).
-- **Tasks** — A module invoked with specific arguments.
-- **Playbooks** — YAML files containing ordered lists of tasks.
-- **Roles** — Structured packaging of tasks, handlers, variables, and templates.
+- **Control Node** â€” The machine where Ansible is installed. Any machine with Python.
+- **Managed Nodes** â€” Target servers configured by Ansible.
+- **Inventory** â€” List of managed nodes in INI or YAML format.
+- **Modules** â€” Discrete units of work (package installation, file management, service control).
+- **Tasks** â€” A module invoked with specific arguments.
+- **Playbooks** â€” YAML files containing ordered lists of tasks.
+- **Roles** â€” Structured packaging of tasks, handlers, variables, and templates.
 
 ### 10.3 Inventory
 
@@ -139,15 +139,15 @@ Community roles are shared via Ansible Galaxy (`ansible-galaxy install geerlingg
 
 ### 10.7 Agent vs Agentless
 
-**Agentless (Ansible, Salt SSH)** — No agent required. SSH-based execution. Simpler setup, lower resource overhead, but potentially higher SSH connection overhead for large fleets.
+**Agentless (Ansible, Salt SSH)** â€” No agent required. SSH-based execution. Simpler setup, lower resource overhead, but potentially higher SSH connection overhead for large fleets.
 
-**Agent-Based (Puppet, Chef, Salt)** — Agent runs continuously on managed nodes, pulls configuration from a master or applies cached state. Better scalability for large fleets, real-time enforcement, and offline operation.
+**Agent-Based (Puppet, Chef, Salt)** â€” Agent runs continuously on managed nodes, pulls configuration from a master or applies cached state. Better scalability for large fleets, real-time enforcement, and offline operation.
 
 ### 10.8 Desired State vs Imperative
 
-**Desired State (Puppet, Ansible declarative modules)** — Define the desired end state; the tool determines the steps. Example: "ensure nginx is installed and running."
+**Desired State (Puppet, Ansible declarative modules)** â€” Define the desired end state; the tool determines the steps. Example: "ensure nginx is installed and running."
 
-**Imperative (Shell scripts, Chef recipes)** — Define the exact steps. Example: "run apt-get install nginx, then run systemctl start nginx."
+**Imperative (Shell scripts, Chef recipes)** â€” Define the exact steps. Example: "run apt-get install nginx, then run systemctl start nginx."
 
 Desired state configurations are idempotent, self-documenting, and more predictable at scale.
 
@@ -155,18 +155,18 @@ Desired state configurations are idempotent, self-documenting, and more predicta
 
 Configuration management requires accessing secrets (database passwords, API keys, certificates). Several approaches exist:
 
-**Ansible Vault** — Built-in encryption for variables and files. `ansible-vault create`, `ansible-vault encrypt`, `ansible-vault edit`. Decrypted at runtime with `--ask-vault-pass` or vault password file.
+**Ansible Vault** â€” Built-in encryption for variables and files. `ansible-vault create`, `ansible-vault encrypt`, `ansible-vault edit`. Decrypted at runtime with `--ask-vault-pass` or vault password file.
 
-**HashiCorp Vault** — External secrets management with dynamic secrets, leasing, and audit logging. Ansible integrates via the `community.hashi_vault` collection.
+**HashiCorp Vault** â€” External secrets management with dynamic secrets, leasing, and audit logging. Ansible integrates via the `community.hashi_vault` collection.
 
-**SOPS (Secrets OPerationS)** — Encrypts specific values in YAML/JSON files using AWS KMS, GCP KMS, or age. Works well with Git workflows.
+**SOPS (Secrets OPerationS)** â€” Encrypts specific values in YAML/JSON files using AWS KMS, GCP KMS, or age. Works well with Git workflows.
 
 ```yaml
 # secrets.yaml (encrypted with SOPS)
 db_password: ENC[AES256_GCM,data:abc123...,iv:def456...,tag:ghi789...]
 ```
 
-**Sealed Secrets (Kubernetes)** — Encrypts Kubernetes Secrets into SealedSecrets that can be stored in Git safely. Only the controller in the cluster can decrypt them.
+**Sealed Secrets (Kubernetes)** â€” Encrypts Kubernetes Secrets into SealedSecrets that can be stored in Git safely. Only the controller in the cluster can decrypt them.
 
 ## Examples
 

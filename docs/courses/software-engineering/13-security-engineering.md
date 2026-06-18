@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: explain the principl
 
 ## Theory
 
-![Security Engineering Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-13-security-engineering.png)
+![Security Engineering Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-13-security-engineering.png)
 
 ### Security as an Engineering Discipline
 
@@ -139,4 +139,4 @@ Security engineering embeds security throughout the software lifecycle. The SDL 
 
 ### Challenge Problem
 
-You are the security architect for a healthcare platform that stores electronic medical records, processes insurance claims, and provides patient portals. The platform must comply with HIPAA regulations. Design a comprehensive security architecture covering: authentication and authorisation; data protection at rest and in transit; network security; application security; incident response; and third-party integration security. For each area, specify the threats you are addressing, the controls you will implement, and how you will verify the effectiveness of the controls. Address the tension between security and usability, particularly for the patient portal. Include a threat model for the most critical use case — a physician accessing a patient record.
+You are the security architect for a healthcare platform that stores electronic medical records, processes insurance claims, and provides patient portals. The platform must comply with HIPAA regulations. Design a comprehensive security architecture covering: authentication and authorisation; data protection at rest and in transit; network security; application security; incident response; and third-party integration security. For each area, specify the threats you are addressing, the controls you will implement, and how you will verify the effectiveness of the controls. Address the tension between security and usability, particularly for the patient portal. Include a threat model for the most critical use case â€” a physician accessing a patient record.

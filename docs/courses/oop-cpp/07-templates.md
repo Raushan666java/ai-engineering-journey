@@ -12,7 +12,7 @@ After studying this chapter, students will be able to:
 
 ## 7.1 Motivation
 
-![Templates Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/07-templates.png)
+![Templates Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/07-templates.png)
 
 Strong typing is a cornerstone of C++, but it creates duplication when the same logic applies across multiple types. Consider a function that swaps two values: without templates, we write overloads for every type.
 
@@ -176,10 +176,10 @@ void print_all(const Args&... args) {
 ```
 
 Four fold forms exist:
-- `(... + args)` — unary left fold
-- `(args + ...)` — unary right fold
-- `(0 + ... + args)` — binary left fold
-- `(args + ... + 0)` — binary right fold
+- `(... + args)` â€” unary left fold
+- `(args + ...)` â€” unary right fold
+- `(0 + ... + args)` â€” binary left fold
+- `(args + ... + 0)` â€” binary right fold
 
 ## 7.6 SFINAE
 
@@ -246,7 +246,7 @@ Templates enable type-parametric programming in C++. Function and class template
 ### Application Problems
 
 1. Write a function template `find_max` that accepts a `std::vector<T>` and returns the maximum element. Test with `int`, `double`, and `std::string` vectors.
-2. Implement a class template `RingBuffer<T, N>`—a fixed-size circular buffer using a `std::array<T, N>`. Provide `push`, `pop`, `front`, `back`, `size`, `empty`, and `full` operations. Ensure it works with non-default-constructible types.
+2. Implement a class template `RingBuffer<T, N>`â€”a fixed-size circular buffer using a `std::array<T, N>`. Provide `push`, `pop`, `front`, `back`, `size`, `empty`, and `full` operations. Ensure it works with non-default-constructible types.
 
 ### Challenge Problem
 

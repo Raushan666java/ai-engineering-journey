@@ -14,7 +14,7 @@
 
 ## Theory
 
-![Infrastructure as Code and Configuration Management](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch05-iac-config.png)
+![Infrastructure as Code and Configuration Management](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch05-iac-config.png)
 
 ### What is Infrastructure as Code?
 Infrastructure as Code is the management of infrastructure (networks, virtual machines, load balancers, and connection topology) in a descriptive model, using the same versioning as the DevOps team uses for source code. IaC ensures that the same environment is provisioned every time.

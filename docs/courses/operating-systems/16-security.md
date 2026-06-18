@@ -12,7 +12,7 @@
 
 ## Theory
 
-![Security](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/16-security.png)
+![Security](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/16-security.png)
 
 ### Security Goals
 
@@ -28,11 +28,11 @@
 #### Password-Based Authentication
 
 ```c
-// Traditional password storage — NEVER do this
+// Traditional password storage â€” NEVER do this
 // (storing plaintext passwords)
 struct password_entry {
     char username[32];
-    char password[64];   // PLAINTEXT — catastrophic!
+    char password[64];   // PLAINTEXT â€” catastrophic!
 };
 
 // Modern approach: hashed passwords with salt
@@ -47,12 +47,12 @@ struct password_entry {
 
 ```
 Without salt:
-  password "hello123" → hash("hello123") = 2cf24dba...
+  password "hello123" â†’ hash("hello123") = 2cf24dba...
   Two users with the same password have the same hash!
 
 With salt:
-  password "hello123" + salt "a4f8..." → hash("a4f8...hello123") = 7b3d5c...
-  password "hello123" + salt "b9c2..." → hash("b9c2...hello123") = e1f8a9...
+  password "hello123" + salt "a4f8..." â†’ hash("a4f8...hello123") = 7b3d5c...
+  password "hello123" + salt "b9c2..." â†’ hash("b9c2...hello123") = e1f8a9...
   Different hashes even with the same password!
 ```
 
@@ -89,10 +89,10 @@ chmod u+x script.sh   # Add execute for owner only
 ```bash
 -rwsr-xr-x  1 root root  47040 May 1  2025 /usr/bin/passwd
                     ^
-                    SetUID bit — passwd runs as root when any user runs it
+                    SetUID bit â€” passwd runs as root when any user runs it
 ```
 
-SetUID must be used sparingly — it's a common privilege escalation vector.
+SetUID must be used sparingly â€” it's a common privilege escalation vector.
 
 #### Mandatory Access Control (MAC)
 
@@ -114,9 +114,9 @@ A policy defines allowed operations between labeled subjects and objects.
 RBAC assigns permissions to roles, and users are assigned to roles.
 
 ```
-User Alice → Role "admin" → {read_all, write_all, create_user}
-User Bob   → Role "user"  → {read_own, write_own}
-User Carol → Role "auditor" → {read_logs}
+User Alice â†’ Role "admin" â†’ {read_all, write_all, create_user}
+User Bob   â†’ Role "user"  â†’ {read_own, write_own}
+User Carol â†’ Role "auditor" â†’ {read_logs}
 
 Management: assign/unassign users to/from roles
 No need to manage individual user permissions!
@@ -136,7 +136,7 @@ getfacl file.txt                  # View ACLs
 
 #### Vertical Escalation
 
-Gaining higher privileges than authorized (e.g., user → root):
+Gaining higher privileges than authorized (e.g., user â†’ root):
 
 ```c
 // Classic exploit: buffer overflow in SetUID program
@@ -166,11 +166,11 @@ chmod o-r private_file   # Remove others' read permission
 ```
 Without canary:
   [ buffer ] [ saved ebp ] [ return address ]
-   ↑ write overflow here → overwrites return address
+   â†‘ write overflow here â†’ overwrites return address
 
 With canary:
   [ buffer ] [ CANARY ] [ saved ebp ] [ return address ]
-   ↑ overflow trashes canary → kernel detects mismatch → abort
+   â†‘ overflow trashes canary â†’ kernel detects mismatch â†’ abort
 ```
 
 2. **ASLR** (Address Space Layout Randomization): Randomizes the base addresses of stack, heap, and libraries. Makes it harder for attackers to predict addresses.
@@ -185,11 +185,11 @@ LSM is a framework that allows security modules to hook into kernel operations.
 
 ```
 System call (e.g., open())
-  → VFS layer
-  → LSM hook: security_file_open()
-    → SELinux/AppArmor/Smack policy check
-    → Allow or Deny
-  → Actual file operation
+  â†’ VFS layer
+  â†’ LSM hook: security_file_open()
+    â†’ SELinux/AppArmor/Smack policy check
+    â†’ Allow or Deny
+  â†’ Actual file operation
 ```
 
 ```c
@@ -224,11 +224,11 @@ setenforce 0                  # Switch to permissive
 
 # Check a file's security context
 ls -Z /etc/shadow
-# → system_u:object_r:shadow_t:s0
+# â†’ system_u:object_r:shadow_t:s0
 
 # Check a process's security context
 ps -Z $(pgrep httpd)
-# → system_u:system_r:httpd_t:s0
+# â†’ system_u:system_r:httpd_t:s0
 
 # Query policy rules
 sesearch --allow --source httpd_t --target shadow_t
@@ -269,7 +269,7 @@ gpg -d secret.txt.gpg                # Decrypt to stdout
 
 A hardware chip that provides:
 - **Secure key generation and storage**
-- **Platform integrity measurement** (measured boot — TPM records boot process hashes)
+- **Platform integrity measurement** (measured boot â€” TPM records boot process hashes)
 - **Remote attestation**: Prove to a remote party that the system is in a known good state
 
 ### Principle of Least Privilege
@@ -282,7 +282,7 @@ Every process should run with only the privileges necessary to complete its task
 int main() {
     int server_fd = socket(AF_INET, SOCK_STREAM, 0);
     
-    // Bind to port 80 (requires root—privileged port)
+    // Bind to port 80 (requires rootâ€”privileged port)
     bind(server_fd, ...);
     listen(server_fd, 10);
     
@@ -290,7 +290,7 @@ int main() {
     if (fork() == 0) {
         // Child process: switch to unprivileged user
         struct passwd *pw = getpwnam("www-data");
-        setuid(pw->pw_uid);    // Drop root — now "www-data"
+        setuid(pw->pw_uid);    // Drop root â€” now "www-data"
         setgid(pw->pw_gid);
         
         // Handle requests as www-data (no root privileges)
@@ -305,12 +305,12 @@ int main() {
 
 #### Race Conditions (TOCTOU)
 
-**Time of Check, Time of Use** — the state changes between the check and the use:
+**Time of Check, Time of Use** â€” the state changes between the check and the use:
 
 ```c
 // Vulnerable code:
 if (access("/tmp/log", W_OK) != 0) {   // TOCTOU window starts
-    // "check" — am I allowed to write?
+    // "check" â€” am I allowed to write?
     // ATTACKER: replaces /tmp/log with a symlink to /etc/passwd
     // between the access() and the fopen()!
 }
@@ -368,7 +368,7 @@ $ capsh --drop=all -- --print
 ### Example 2: chroot and Containers
 
 ```bash
-# chroot — change root directory
+# chroot â€” change root directory
 # Creates an isolated filesystem view
 mkdir /jail
 # Copy minimal binaries/libraries to /jail
@@ -411,7 +411,7 @@ unshare --pid --mount --net --fork /bin/bash  # Create new namespaces
 
 4. Write a program that demonstrates a buffer overflow safely (use it on your own machine only). Explain how a stack canary prevents the overflow from being exploitable.
 5. Write a Python script that brute-force checks the strength of Unix passwords against a dictionary. Read `/etc/shadow` (you'll need root), extract the salt+hash for each user, and test the top 10,000 common passwords against them.
-6. Research your system's ASLR implementation. Check the entropy level with `cat /proc/sys/kernel/randomize_va_space`. Write a program that prints the address of a stack variable, a heap allocation, and a function. Run it multiple times — do the addresses change?
+6. Research your system's ASLR implementation. Check the entropy level with `cat /proc/sys/kernel/randomize_va_space`. Write a program that prints the address of a stack variable, a heap allocation, and a function. Run it multiple times â€” do the addresses change?
 
 ### Advanced
 

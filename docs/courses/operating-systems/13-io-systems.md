@@ -11,7 +11,7 @@
 
 ## Theory
 
-![I/O Systems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/13-io-systems.png)
+![I/O Systems](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/13-io-systems.png)
 
 ### I/O Hardware
 
@@ -21,9 +21,9 @@ I/O devices vary enormously in function, but they share common hardware interfac
 
 | Category | Examples | Data Rate | Interface |
 |----------|----------|-----------|-----------|
-| Character | Keyboard, mouse, serial ports | 10–1000 B/s | Interrupt-driven |
-| Block | Disk, SSD, USB storage | 50–5000 MB/s | DMA, block commands |
-| Network | Ethernet, Wi-Fi | 1–100 Gb/s | DMA, packet-oriented |
+| Character | Keyboard, mouse, serial ports | 10â€“1000 B/s | Interrupt-driven |
+| Block | Disk, SSD, USB storage | 50â€“5000 MB/s | DMA, block commands |
+| Network | Ethernet, Wi-Fi | 1â€“100 Gb/s | DMA, packet-oriented |
 
 #### Communication with Devices
 
@@ -36,13 +36,13 @@ Three fundamental approaches for the CPU to communicate with I/O devices:
 ```
 Memory-mapped I/O:
 CPU Address Space:
-┌──────────────────────┐
-│ RAM                   │
-├──────────────────────┤
-│ Device registers      │  ← Reading/writing here
-│ (Video RAM, NIC,     │     communicates with device
-│  disk controller)     │
-└──────────────────────┘
+â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ RAM                   â”‚
+â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
+â”‚ Device registers      â”‚  â† Reading/writing here
+â”‚ (Video RAM, NIC,     â”‚     communicates with device
+â”‚  disk controller)     â”‚
+â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
 ```
 
 #### Polling vs Interrupts
@@ -50,31 +50,31 @@ CPU Address Space:
 **Polling**: The CPU repeatedly checks a device's status register. Simple but wasteful.
 
 ```c
-// Polling loop — CPU spins until device is ready
+// Polling loop â€” CPU spins until device is ready
 while (!(status_register & DEVICE_READY)) {
-    // Busy wait — CPU does nothing useful
+    // Busy wait â€” CPU does nothing useful
 }
 data = data_register;  // Read data from device
 ```
 
-**Interrupts**: The device notifies the CPU when it needs attention. More efficient — the CPU can do other work.
+**Interrupts**: The device notifies the CPU when it needs attention. More efficient â€” the CPU can do other work.
 
 ```
 CPU executes user process
-         │
-    ┌────┴────┐
-    │         │
-    ↓         │ (interrupt occurs)
-Device ──────→│ CPU saves state
-signals       │ Load interrupt handler
-              │ Handle interrupt
-              │ Restore state
-              │ Resume user process
+         â”‚
+    â”Œâ”€â”€â”€â”€â”´â”€â”€â”€â”€â”
+    â”‚         â”‚
+    â†“         â”‚ (interrupt occurs)
+Device â”€â”€â”€â”€â”€â”€â†’â”‚ CPU saves state
+signals       â”‚ Load interrupt handler
+              â”‚ Handle interrupt
+              â”‚ Restore state
+              â”‚ Resume user process
 ```
 
 #### DMA (Direct Memory Access)
 
-For block transfers, interrupt-driven I/O is still wasteful — the CPU would have to copy every byte from the device register to memory.
+For block transfers, interrupt-driven I/O is still wasteful â€” the CPU would have to copy every byte from the device register to memory.
 
 **DMA** solves this: a specialized controller transfers data directly between device and memory without CPU involvement.
 
@@ -92,23 +92,23 @@ With DMA:
 
 ```
 DMA Transfer:
-┌─────┐  request bus  ┌──────────────────┐
-│ CPU │◄──────────────│ DMA Controller    │
-│     │  grant bus    │                   │
-└─────┘   │          │ Registers:        │
-          │          │  source addr      │
-          │          │  dest addr        │
-          │          │  byte count       │
-          │          └────────┬──────────┘
-          │                   │
-          │    ┌──────────────┼──────────────┐
-          │    │  Read from   │  Write to    │
-          │    │  Device      │  Memory      │
-          │    │              │              │
-          │    ↓              ↓              │
-          │  ┌─────┐      ┌────────┐        │
-          │  │Device│      │ Memory │        │
-          │  └─────┘      └────────┘        │
+â”Œâ”€â”€â”€â”€â”€â”  request bus  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+â”‚ CPU â”‚â—„â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”‚ DMA Controller    â”‚
+â”‚     â”‚  grant bus    â”‚                   â”‚
+â””â”€â”€â”€â”€â”€â”˜   â”‚          â”‚ Registers:        â”‚
+          â”‚          â”‚  source addr      â”‚
+          â”‚          â”‚  dest addr        â”‚
+          â”‚          â”‚  byte count       â”‚
+          â”‚          â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+          â”‚                   â”‚
+          â”‚    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
+          â”‚    â”‚  Read from   â”‚  Write to    â”‚
+          â”‚    â”‚  Device      â”‚  Memory      â”‚
+          â”‚    â”‚              â”‚              â”‚
+          â”‚    â†“              â†“              â”‚
+          â”‚  â”Œâ”€â”€â”€â”€â”€â”      â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”        â”‚
+          â”‚  â”‚Deviceâ”‚      â”‚ Memory â”‚        â”‚
+          â”‚  â””â”€â”€â”€â”€â”€â”˜      â””â”€â”€â”€â”€â”€â”€â”€â”€â”˜        â”‚
 ```
 
 ### Kernel I/O Subsystem
@@ -121,11 +121,11 @@ The kernel maintains a queue of pending I/O requests for each device. The schedu
 
 ```
 Request Queue for /dev/sda:
-┌────┬────┬────┬────┬────┬────┐
-│ R1 │ R2 │ R3 │ R4 │ R5 │ R6 │  ← Rearranged by scheduler
-└────┴────┴────┴────┴────┴────┘
-  ↓
-Device Driver → Disk
+â”Œâ”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”
+â”‚ R1 â”‚ R2 â”‚ R3 â”‚ R4 â”‚ R5 â”‚ R6 â”‚  â† Rearranged by scheduler
+â””â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”´â”€â”€â”€â”€â”˜
+  â†“
+Device Driver â†’ Disk
 ```
 
 #### Buffering
@@ -139,17 +139,17 @@ A **buffer** is a memory region that holds data while it is being transferred be
 
 ```
 Application space:    write(fd, buf, 1024)
-                           │
+                           â”‚
 Kernel buffer:           [ copy ]
-                           │
-Device buffer:           [   ] → Disk
+                           â”‚
+Device buffer:           [   ] â†’ Disk
 ```
 
 **Double buffering**: Two buffers are used. While one is being filled, the other is being drained. Eliminates waiting.
 
 ```
-Buffer A:   [ being read from disk → ]  ← application reads from
-Buffer B:   [ ← application writes to ]  ← disk fills this next
+Buffer A:   [ being read from disk â†’ ]  â† application reads from
+Buffer B:   [ â† application writes to ]  â† disk fills this next
 
 When A is consumed and B is filled, they swap roles.
 ```
@@ -170,11 +170,11 @@ A **spool** (Simultaneous Peripheral Operations On-Line) is a buffer that holds 
 **Example**: Printing. Without spooling, if two applications try to print simultaneously, their output would interleave. A **print spooler** serializes requests:
 
 ```
-Application 1: write to printer → spool file job001.pdf
-Application 2: write to printer → spool file job002.pdf
+Application 1: write to printer â†’ spool file job001.pdf
+Application 2: write to printer â†’ spool file job002.pdf
 
 Print daemon:
-  {spool files} → printer (one at a time)
+  {spool files} â†’ printer (one at a time)
 ```
 
 #### Error Handling
@@ -205,13 +205,13 @@ A **device driver** is kernel code that understands the specifics of a particula
 
 ```
 Application
-    ↓  (system calls)
+    â†“  (system calls)
 Kernel I/O Subsystem
-    ↓  (block/char/network interface)
-Device Driver  ── The translation layer
-    ↓  (device-specific commands)
+    â†“  (block/char/network interface)
+Device Driver  â”€â”€ The translation layer
+    â†“  (device-specific commands)
 Device Controller
-    ↓  (electrical signals)
+    â†“  (electrical signals)
 Hardware Device
 ```
 
@@ -231,7 +231,7 @@ The driver provides operations like:
 
 ```c
 // Simplified Linux block device driver structure
-// (not actual code — illustrates the pattern)
+// (not actual code â€” illustrates the pattern)
 
 #include <linux/module.h>
 #include <linux/blkdev.h>
@@ -266,14 +266,14 @@ STREAMS provide a framework for building character I/O as a pipeline of processi
 
 ```
 Application
-    ↓
-Stream Head  ── Interface to user space
-    ↓
-Module 1     ── Line discipline (e.g., terminal processing)
-    ↓
-Module 2     ── Protocol processing
-    ↓
-Driver        ── Device hardware interface
+    â†“
+Stream Head  â”€â”€ Interface to user space
+    â†“
+Module 1     â”€â”€ Line discipline (e.g., terminal processing)
+    â†“
+Module 2     â”€â”€ Protocol processing
+    â†“
+Driver        â”€â”€ Device hardware interface
 ```
 
 Used in System V Unix for networking and terminal I/O. Linux does not use STREAMS (uses different architecture).
@@ -284,9 +284,9 @@ Used in System V Unix for networking and terminal I/O. Linux does not use STREAM
 |-------|-------------|------|------|
 | **Blocking I/O** | Process sleeps until I/O completes | Simple | Process is blocked |
 | **Non-blocking I/O** | `read()` returns immediately with `EAGAIN` | CPU can do other work | Must poll or use event-driven |
-| **I/O multiplexing** | `select()` / `poll()` / `epoll()` — wait on multiple fds | Single thread manages many I/Os | System call overhead |
+| **I/O multiplexing** | `select()` / `poll()` / `epoll()` â€” wait on multiple fds | Single thread manages many I/Os | System call overhead |
 | **Signal-driven I/O** | SIGIO when device is ready | Asynchronous notification | Signal handling complexity |
-| **Asynchronous I/O** | `aio_read()` — initiates I/O, callback on completion | True parallelism | Complex API |
+| **Asynchronous I/O** | `aio_read()` â€” initiates I/O, callback on completion | True parallelism | Complex API |
 
 #### Non-Blocking I/O Example
 
@@ -316,7 +316,7 @@ int main() {
             printf("EOF\n");
             break;
         } else if (errno == EAGAIN) {
-            printf("No input yet — doing other work...\n");
+            printf("No input yet â€” doing other work...\n");
             sleep(1);  // In a real program, do something useful here
         } else {
             perror("read");
@@ -365,7 +365,7 @@ int main() {
         perror("epoll_wait");
         return 1;
     } else if (nfds == 0) {
-        printf("Timeout — no input received\n");
+        printf("Timeout â€” no input received\n");
     } else {
         printf("Input available on fd %d!\n", events[0].data.fd);
     }
@@ -377,7 +377,7 @@ int main() {
 
 ## Examples
 
-### Example 1: Character Device — Reading Keyboard Input
+### Example 1: Character Device â€” Reading Keyboard Input
 
 ```c
 #include <stdio.h>

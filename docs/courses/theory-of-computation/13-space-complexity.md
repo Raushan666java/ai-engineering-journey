@@ -12,7 +12,7 @@
 
 ## Theory
 
-![Space Complexity Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/theory-of-computation/13-space-complexity.png)
+![Space Complexity Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/theory-of-computation/13-space-complexity.png)
 
 ### 13.1 Space Complexity
 
@@ -27,31 +27,31 @@ Similarly, NSPACE(s(n)) = { L | L is decided by an NTM using O(s(n)) space }.
 |-------|-------------|
 | **L** = SPACE(log n) | Deterministic log space |
 | **NL** = NSPACE(log n) | Nondeterministic log space |
-| **PSPACE** = ∪_{k} SPACE(nᵏ) | Polynomial space |
-| **NPSPACE** = ∪_{k} NSPACE(nᵏ) | Nondeterministic polynomial space |
-| **EXPSPACE** = ∪_{k} SPACE(2^{nᵏ}) | Exponential space |
+| **PSPACE** = âˆª_{k} SPACE(náµ) | Polynomial space |
+| **NPSPACE** = âˆª_{k} NSPACE(náµ) | Nondeterministic polynomial space |
+| **EXPSPACE** = âˆª_{k} SPACE(2^{náµ}) | Exponential space |
 
 **Key relationships:**
-- L ⊆ NL ⊆ P ⊆ NP ⊆ PSPACE ⊆ EXPTIME ⊆ EXPSPACE
-- L ≠ PSPACE (space hierarchy theorem).
-- P ≠ EXPTIME (time hierarchy theorem).
+- L âŠ† NL âŠ† P âŠ† NP âŠ† PSPACE âŠ† EXPTIME âŠ† EXPSPACE
+- L â‰  PSPACE (space hierarchy theorem).
+- P â‰  EXPTIME (time hierarchy theorem).
 
 ### 13.3 Savitch's Theorem
 
-**Savitch's Theorem:** For any function s(n) ≥ log n,
-NSPACE(s(n)) ⊆ SPACE(s(n)²)
+**Savitch's Theorem:** For any function s(n) â‰¥ log n,
+NSPACE(s(n)) âŠ† SPACE(s(n)Â²)
 
 **Corollary:** NPSPACE = PSPACE (nondeterminism doesn't add power for polynomial space).
 
-**Proof sketch:** Given an NTM N that uses s(n) space, we construct a deterministic TM that uses O(s(n)²) space by solving the **reachability problem** in the configuration graph of N.
+**Proof sketch:** Given an NTM N that uses s(n) space, we construct a deterministic TM that uses O(s(n)Â²) space by solving the **reachability problem** in the configuration graph of N.
 
 The configuration graph has nodes = configurations of N on input w. Each configuration uses O(s(n)) symbols. N accepts if there is a path from start to accept in this graph.
 
-The deterministic TM uses a recursive **divide-and-conquer** approach: to check if configuration c₂ is reachable from c₁ in t steps, try all possible intermediate configurations cₘ and check:
-- Can we reach cₘ from c₁ in t/2 steps?
-- Can we reach c₂ from cₘ in t/2 steps?
+The deterministic TM uses a recursive **divide-and-conquer** approach: to check if configuration câ‚‚ is reachable from câ‚ in t steps, try all possible intermediate configurations câ‚˜ and check:
+- Can we reach câ‚˜ from câ‚ in t/2 steps?
+- Can we reach câ‚‚ from câ‚˜ in t/2 steps?
 
-The depth of recursion is log(2^{O(s(n))}) = O(s(n)), and each level stores a configuration of size O(s(n)). Total space: O(s(n)²).
+The depth of recursion is log(2^{O(s(n))}) = O(s(n)), and each level stores a configuration of size O(s(n)). Total space: O(s(n)Â²).
 
 ### 13.4 PSPACE
 
@@ -60,22 +60,22 @@ The depth of recursion is log(2^{O(s(n))}) = O(s(n)), and each level stores a co
 Since NPSPACE = PSPACE, nondeterminism doesn't add power here (unlike for time).
 
 **Problems in PSPACE:**
-- **QBF (Quantified Boolean Formulas):** Is a fully quantified Boolean formula (∀x∃y∀z…) true?
+- **QBF (Quantified Boolean Formulas):** Is a fully quantified Boolean formula (âˆ€xâˆƒyâˆ€zâ€¦) true?
 - **GEOGRAPHY:** Can the first player force a win in the geography game?
-- **Generalized CHECKERS, GO, and other games** on n×n boards.
+- **Generalized CHECKERS, GO, and other games** on nÃ—n boards.
 - **REGULAR EXPRESSION EQUIVALENCE** (for some variants).
 - **LBA (Linear Bounded Automaton) acceptance.**
 
 ### 13.5 PSPACE-Completeness
 
 A language B is **PSPACE-complete** if:
-1. B ∈ PSPACE.
-2. For every A ∈ PSPACE, A ≤_P B (B is PSPACE-hard).
+1. B âˆˆ PSPACE.
+2. For every A âˆˆ PSPACE, A â‰¤_P B (B is PSPACE-hard).
 
 **QBF** was the first problem proven PSPACE-complete (the space analog of Cook-Levin).
 
 **TQBF (True Quantified Boolean Formulas):** Given a fully quantified Boolean formula (all variables quantified), is it true?
-- QBF ∈ PSPACE: Recursively evaluate the formula using polynomial space.
+- QBF âˆˆ PSPACE: Recursively evaluate the formula using polynomial space.
 - QBF is PSPACE-hard: Similar to Cook-Levin, but we encode the recursive space-bounded computation.
 
 **Other PSPACE-complete problems:**
@@ -96,13 +96,13 @@ A language B is **PSPACE-complete** if:
 **NL** (nondeterministic log space): Problems solvable on an NTM using O(log n) space.
 
 **PATH** (is there a directed path from s to t?) is NL-complete.
-- PATH ∈ NL: Nondeterministically guess the next vertex on the path; O(log n) bits to store current vertex.
+- PATH âˆˆ NL: Nondeterministically guess the next vertex on the path; O(log n) bits to store current vertex.
 - PATH is NL-hard: Every NL problem reduces to PATH (configuration graph reachability).
 
-**Important theorem:** NL ⊆ P (since PATH ∈ P via BFS, and PATH is NL-complete).
+**Important theorem:** NL âŠ† P (since PATH âˆˆ P via BFS, and PATH is NL-complete).
 
-**NL = co-NL** (Immerman-Szelepcsényi theorem): Nondeterministic log space is closed under complement.
-- Proven independently by Immerman and Szelepcsényi (1987).
+**NL = co-NL** (Immerman-SzelepcsÃ©nyi theorem): Nondeterministic log space is closed under complement.
+- Proven independently by Immerman and SzelepcsÃ©nyi (1987).
 - The proof uses a clever counting technique to verify that no path exists to an accepting configuration.
 
 ### 13.7 The Reachability Method
@@ -113,30 +113,30 @@ Many space-bounded algorithms use the configuration graph approach:
 2. Show that the acceptance problem reduces to reachability in this graph.
 3. Use space-efficient reachability algorithms.
 
-**For Savitch's theorem:** Use divide-and-conquer reachability in O(log² n) space for NL problems, generalized to O(s²) for NSPACE(s).
+**For Savitch's theorem:** Use divide-and-conquer reachability in O(logÂ² n) space for NL problems, generalized to O(sÂ²) for NSPACE(s).
 
-**For NL ⊆ P:** The configuration graph of an NL machine is of polynomial size, and reachability in this graph is in P (via DFS/BFS).
+**For NL âŠ† P:** The configuration graph of an NL machine is of polynomial size, and reachability in this graph is in P (via DFS/BFS).
 
 ### 13.8 The Space Hierarchy
 
-**Space Hierarchy Theorem:** For any space-constructible function f(n) ≥ log n,
-SPACE(f(n)) ⊂ SPACE(g(n)) whenever f(n) = o(g(n)).
+**Space Hierarchy Theorem:** For any space-constructible function f(n) â‰¥ log n,
+SPACE(f(n)) âŠ‚ SPACE(g(n)) whenever f(n) = o(g(n)).
 
 **Consequences:**
-- L ⊂ PSPACE (more space allows more problems to be solved).
-- PSPACE ⊂ EXPSPACE.
+- L âŠ‚ PSPACE (more space allows more problems to be solved).
+- PSPACE âŠ‚ EXPSPACE.
 
-This gives a strict hierarchy: L ⊂ PSPACE ⊂ EXPSPACE ⊂ … unlike time, where we only know P ⊆ NP ⊆ PSPACE with unknown strictness.
+This gives a strict hierarchy: L âŠ‚ PSPACE âŠ‚ EXPSPACE âŠ‚ â€¦ unlike time, where we only know P âŠ† NP âŠ† PSPACE with unknown strictness.
 
 ## Examples
 
-### Example 13.1: PATH ∈ NL
+### Example 13.1: PATH âˆˆ NL
 
 **Algorithm:** Given directed graph G = (V, E), vertices s and t.
 1. Set current = s.
 2. For i = 1 to |V|:
-   - Nondeterministically choose a vertex v ∈ V (O(log n) bits).
-   - If (current, v) ∈ E, set current = v.
+   - Nondeterministically choose a vertex v âˆˆ V (O(log n) bits).
+   - If (current, v) âˆˆ E, set current = v.
    - If current = t, accept.
 3. Reject.
 
@@ -144,29 +144,29 @@ The algorithm stores only the current vertex (log n bits) and a counter (log n b
 
 ### Example 13.2: Savitch's Theorem in Action
 
-Given an NTM that uses s(n) = n space, show the equivalent DTM uses O(n²) space.
+Given an NTM that uses s(n) = n space, show the equivalent DTM uses O(nÂ²) space.
 
 The NTM has at most 2^{O(n)} configurations. The DTM uses recursion:
-- REACH(c₁, c₂, i): can we go from c₁ to c₂ in ≤ 2ⁱ steps?
-  - If i = 0: check if c₁ = c₂ or c₁ → c₂ in one step.
-  - Otherwise: for each configuration cₘ (O(n) space):
-    - If REACH(c₁, cₘ, i-1) and REACH(cₘ, c₂, i-1), return true.
+- REACH(câ‚, câ‚‚, i): can we go from câ‚ to câ‚‚ in â‰¤ 2â± steps?
+  - If i = 0: check if câ‚ = câ‚‚ or câ‚ â†’ câ‚‚ in one step.
+  - Otherwise: for each configuration câ‚˜ (O(n) space):
+    - If REACH(câ‚, câ‚˜, i-1) and REACH(câ‚˜, câ‚‚, i-1), return true.
   - Return false.
 
-Recursion depth: i = log(2^{O(n)}) = O(n). Each call stores a constant number of configurations of size O(n). Total: O(n²) space.
+Recursion depth: i = log(2^{O(n)}) = O(n). Each call stores a constant number of configurations of size O(n). Total: O(nÂ²) space.
 
 ### Example 13.3: QBF is PSPACE-Complete
 
-A QBF formula: ∃x₁ ∀x₂ ∃x₃ … φ(x₁, …, xₙ)
+A QBF formula: âˆƒxâ‚ âˆ€xâ‚‚ âˆƒxâ‚ƒ â€¦ Ï†(xâ‚, â€¦, xâ‚™)
 
 **PSPACE membership:** Evaluate the formula recursively:
-- If φ has no quantifiers (all variables bound), evaluate directly.
-- If φ = ∃x ψ(x, …): return True if ψ(0) or ψ(1) is true.
-- If φ = ∀x ψ(x, …): return True if both ψ(0) and ψ(1) are true.
+- If Ï† has no quantifiers (all variables bound), evaluate directly.
+- If Ï† = âˆƒx Ïˆ(x, â€¦): return True if Ïˆ(0) or Ïˆ(1) is true.
+- If Ï† = âˆ€x Ïˆ(x, â€¦): return True if both Ïˆ(0) and Ïˆ(1) are true.
 
-The recursion depth is O(n), and each level stores partial variable assignments. Total space: O(n²) — polynomial.
+The recursion depth is O(n), and each level stores partial variable assignments. Total space: O(nÂ²) â€” polynomial.
 
-**PSPACE-hardness:** Given any PSPACE machine M and input w, construct a QBF formula that is true iff M accepts w. This is similar to Cook-Levin, but the quantifiers ∀ and ∃ handle the alternation between universal and existential configurations in the nondeterministic computation.
+**PSPACE-hardness:** Given any PSPACE machine M and input w, construct a QBF formula that is true iff M accepts w. This is similar to Cook-Levin, but the quantifiers âˆ€ and âˆƒ handle the alternation between universal and existential configurations in the nondeterministic computation.
 
 ### Example 13.4: L Contains Balanced Parentheses
 
@@ -178,7 +178,7 @@ The recursion depth is O(n), and each level stores partial variable assignments.
    - If counter < 0: reject (too many closing).
 3. If counter = 0: accept. Else reject.
 
-Space used: one counter (⌈log₂(n+1)⌉ bits) = O(log n). So this problem is in L.
+Space used: one counter (âŒˆlogâ‚‚(n+1)âŒ‰ bits) = O(log n). So this problem is in L.
 
 ### Example 13.5: NL-Completeness of PATH
 
@@ -187,20 +187,20 @@ To show EVERY NL problem A reduces to PATH:
 - On input w, construct the configuration graph G of N on w: vertices = configurations, edges = transitions.
 - Let s = start configuration, t = accept configuration.
 - N accepts w iff there is a path from s to t in G.
-- G has O(n·2^{log n}) = O(n²) vertices, and can be constructed in log space (each edge can be generated on demand).
+- G has O(nÂ·2^{log n}) = O(nÂ²) vertices, and can be constructed in log space (each edge can be generated on demand).
 
-Thus A ≤_L PATH, and PATH is NL-complete.
+Thus A â‰¤_L PATH, and PATH is NL-complete.
 
 ## Summary
 
 - Space complexity measures the maximum tape cells used during computation.
 - L = O(log n) space; NL = nondeterministic O(log n) space.
-- Savitch's theorem: NSPACE(s) ⊆ SPACE(s²), so NPSPACE = PSPACE.
+- Savitch's theorem: NSPACE(s) âŠ† SPACE(sÂ²), so NPSPACE = PSPACE.
 - PSPACE = polynomial space; PSPACE-complete problems include QBF, GEOGRAPHY, and generalized games.
-- L ⊆ NL ⊆ P ⊆ NP ⊆ PSPACE, but some containments are not known to be strict.
-- NL = co-NL (Immerman-Szelepcsényi theorem).
+- L âŠ† NL âŠ† P âŠ† NP âŠ† PSPACE, but some containments are not known to be strict.
+- NL = co-NL (Immerman-SzelepcsÃ©nyi theorem).
 - The configuration graph approach is central to space complexity proofs.
-- Space hierarchy is strict (L ⊂ PSPACE ⊂ EXPSPACE), unlike the time hierarchy where P vs PSPACE is unknown.
+- Space hierarchy is strict (L âŠ‚ PSPACE âŠ‚ EXPSPACE), unlike the time hierarchy where P vs PSPACE is unknown.
 
 ## Exercises
 
@@ -210,20 +210,20 @@ Thus A ≤_L PATH, and PATH is NL-complete.
 2. Show that every regular language is in L.
 3. Prove that PATH is in P by giving a polynomial-time algorithm.
 4. Explain Savitch's theorem in your own words.
-5. Show that if L₁ ∈ PSPACE and L₂ ∈ PSPACE then L₁ ∩ L₂ ∈ PSPACE.
+5. Show that if Lâ‚ âˆˆ PSPACE and Lâ‚‚ âˆˆ PSPACE then Lâ‚ âˆ© Lâ‚‚ âˆˆ PSPACE.
 
 ### Intermediate
 
 6. Prove that QBF is in PSPACE by describing a polynomial-space algorithm.
-7. Show that NL ⊆ P using the configuration graph approach.
-8. Prove that the problem of determining if a DFA accepts all strings (universality) is in PSPACE — and actually in NL if the DFA is presented differently.
-9. Show that if A ≤_P B and B ∈ PSPACE, then A ∈ PSPACE.
+7. Show that NL âŠ† P using the configuration graph approach.
+8. Prove that the problem of determining if a DFA accepts all strings (universality) is in PSPACE â€” and actually in NL if the DFA is presented differently.
+9. Show that if A â‰¤_P B and B âˆˆ PSPACE, then A âˆˆ PSPACE.
 10. Give an example of a problem in PSPACE that is not known to be in NP.
 
 ### Advanced
 
-11. Prove Savitch's theorem in detail: show NSPACE(s(n)) ⊆ SPACE(s(n)²).
-12. Prove the Immerman-Szelepcsényi theorem (NL = co-NL).
+11. Prove Savitch's theorem in detail: show NSPACE(s(n)) âŠ† SPACE(s(n)Â²).
+12. Prove the Immerman-SzelepcsÃ©nyi theorem (NL = co-NL).
 13. Show that the problem of deciding whether two regular expressions with exponentiation (a^n means a repeated n times) denote different languages is PSPACE-complete.
 14. Prove that GEOGRAPHY (the game) is PSPACE-complete.
-15. Show that the space hierarchy is strict: SPACE(n) ⊂ SPACE(n²).
+15. Show that the space hierarchy is strict: SPACE(n) âŠ‚ SPACE(nÂ²).

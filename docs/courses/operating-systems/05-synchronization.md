@@ -11,7 +11,7 @@
 
 ## Theory
 
-![Sync Problems](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/operating-systems/05-synchronization.png)
+![Sync Problems](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/operating-systems/05-synchronization.png)
 
 ### Race Conditions
 
@@ -31,21 +31,21 @@ If both threads execute simultaneously:
 ```
 Thread 1: LOAD counter (5)
 Thread 1: INCREMENT (register = 6)
-Thread 2: LOAD counter (5)      ← reads stale value!
+Thread 2: LOAD counter (5)      â† reads stale value!
 Thread 2: INCREMENT (register = 6)
 Thread 1: STORE counter (6)
-Thread 2: STORE counter (6)     ← final value is 6, not 7!
+Thread 2: STORE counter (6)     â† final value is 6, not 7!
 ```
 
 The problem: the two increment operations interleaved incorrectly. This is a race condition.
 
 ### The Critical Section Problem
 
-Consider a system with n processes, each containing a **critical section** — code that accesses shared data. The critical section problem is to design a protocol that processes can use to coordinate access.
+Consider a system with n processes, each containing a **critical section** â€” code that accesses shared data. The critical section problem is to design a protocol that processes can use to coordinate access.
 
 A valid solution must satisfy three requirements:
 
-1. **Mutual Exclusion**: If process Pᵢ is executing in its critical section, no other process can be executing in its critical section
+1. **Mutual Exclusion**: If process Páµ¢ is executing in its critical section, no other process can be executing in its critical section
 2. **Progress**: If no process is in its critical section and some processes want to enter, only those not in their remainder sections can participate in deciding which will enter next; this selection cannot be postponed indefinitely
 3. **Bounded Waiting**: There is a bound on the number of times other processes are allowed to enter their critical sections after a process has made a request to enter
 
@@ -69,7 +69,7 @@ void lock(int self) {
     flag[self] = true;      // I want to enter
     turn = other;            // But I'll let the other go first
     while (flag[other] && turn == other) {
-        // Busy wait — spin until it's my turn
+        // Busy wait â€” spin until it's my turn
     }
 }
 
@@ -106,7 +106,7 @@ int main() {
 }
 ```
 
-Peterson's solution works but only for two processes. It also requires **busy waiting** — the CPU spins uselessly.
+Peterson's solution works but only for two processes. It also requires **busy waiting** â€” the CPU spins uselessly.
 
 ### Hardware Support for Synchronization
 
@@ -115,7 +115,7 @@ Modern hardware provides atomic instructions that make synchronization more effi
 #### Test-and-Set (TSL)
 
 ```c
-// Atomic hardware instruction — implemented in hardware on most architectures
+// Atomic hardware instruction â€” implemented in hardware on most architectures
 int test_and_set(int *target) {
     int old = *target;
     *target = 1;     // Always set to 1
@@ -174,7 +174,7 @@ int shared = 0;
 void *critical_section(void *arg) {
     for (int i = 0; i < 100000; i++) {
         pthread_mutex_lock(&mutex);
-        // Critical section — only one thread at a time
+        // Critical section â€” only one thread at a time
         shared++;
         pthread_mutex_unlock(&mutex);
     }
@@ -188,7 +188,7 @@ void *critical_section(void *arg) {
 
 ### Semaphores
 
-A **semaphore** (Dijkstra, 1965) is an integer variable accessed only through two atomic operations: `wait()` (P — _proberen_, "to test") and `signal()` (V — _verhogen_, "to increment").
+A **semaphore** (Dijkstra, 1965) is an integer variable accessed only through two atomic operations: `wait()` (P â€” _proberen_, "to test") and `signal()` (V â€” _verhogen_, "to increment").
 
 ```c
 // Semaphore as an abstract data type
@@ -260,8 +260,8 @@ int main() {
 Linux provides several synchronization mechanisms:
 
 - **Atomic integers**: `atomic_t`, `atomic_inc()`, `atomic_dec_and_test()`
-- **Spinlocks**: `spin_lock()`, `spin_unlock()` — for short critical sections in interrupt context
-- **Mutexes**: `struct mutex`, `mutex_lock()`, `mutex_unlock()` — for longer critical sections
+- **Spinlocks**: `spin_lock()`, `spin_unlock()` â€” for short critical sections in interrupt context
+- **Mutexes**: `struct mutex`, `mutex_lock()`, `mutex_unlock()` â€” for longer critical sections
 - **Reader-writer spinlocks**: Many readers OR one writer
 - **Sequential locks (seqlocks)**: Writers never wait; readers detect concurrent writes
 
@@ -270,7 +270,7 @@ Linux provides several synchronization mechanisms:
 ### Example 1: Race Condition Demonstration
 
 ```c
-// race.c — compile with: gcc race.c -lpthread -o race
+// race.c â€” compile with: gcc race.c -lpthread -o race
 // Run several times to see the counter vary
 #include <stdio.h>
 #include <pthread.h>
@@ -367,7 +367,7 @@ int main() {
 
 4. Prove that Peterson's solution satisfies mutual exclusion, progress, and bounded waiting.
 5. Implement a **ticket lock**, where each thread takes a number and waits until its number is called. Demonstrate that it provides FIFO fairness (bounded waiting).
-6. Compare spinlocks and mutexes. Write a benchmark that measures the performance of each for a critical section that takes (a) 10ns, (b) 10μs, (c) 10ms.
+6. Compare spinlocks and mutexes. Write a benchmark that measures the performance of each for a critical section that takes (a) 10ns, (b) 10Î¼s, (c) 10ms.
 
 ### Advanced
 

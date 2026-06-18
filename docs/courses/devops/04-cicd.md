@@ -12,19 +12,19 @@ By the end of this chapter, students will be able to:
 
 ## Theory
 
-![CI/CD Pipeline: Continuous Integration and Delivery](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/devops/ch03-cicd.png)
+![CI/CD Pipeline: Continuous Integration and Delivery](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch03-cicd.png)
 
 ### 4.1 Continuous Integration Principles
 
 Continuous Integration (CI) is the practice of merging all developer working copies to a shared mainline several times a day. Each merge triggers an automated build and test suite. The core principles are:
 
-**Automated Builds** — Every commit triggers an automated process that compiles code, runs static analysis, executes unit tests, and produces build artifacts. Builds must be self-contained and reproducible.
+**Automated Builds** â€” Every commit triggers an automated process that compiles code, runs static analysis, executes unit tests, and produces build artifacts. Builds must be self-contained and reproducible.
 
-**Fast Feedback** — The build-verify cycle should complete within minutes. Slow feedback encourages developers to bypass the CI process. Parallel test execution, incremental builds, and test optimization techniques maintain speed.
+**Fast Feedback** â€” The build-verify cycle should complete within minutes. Slow feedback encourages developers to bypass the CI process. Parallel test execution, incremental builds, and test optimization techniques maintain speed.
 
-**Frequent Merges** — Developers integrate their changes at least daily. Small, frequent changes reduce merge conflicts and make it easier to identify which change introduced a regression.
+**Frequent Merges** â€” Developers integrate their changes at least daily. Small, frequent changes reduce merge conflicts and make it easier to identify which change introduced a regression.
 
-**Fail Fast** — Pipelines should abort on the first failure rather than continuing to run subsequent stages. Immediate notification enables rapid remediation.
+**Fail Fast** â€” Pipelines should abort on the first failure rather than continuing to run subsequent stages. Immediate notification enables rapid remediation.
 
 ### 4.2 Continuous Delivery and Deployment
 
@@ -32,40 +32,40 @@ Continuous Delivery (CD) extends CI by ensuring the codebase is always in a depl
 
 Continuous Deployment takes this further by automatically deploying every change that passes the pipeline to production. No human intervention is required. This practice requires exceptional test coverage, feature flags, robust monitoring, and automated rollback capabilities.
 
-**Environment Promotion** — Artifacts progress through environments: development, integration, staging, and production. Each environment validates specific concerns. Staging mirrors production configuration to catch environment-specific issues. Deployments to production use the same artifact that passed testing in lower environments, never a rebuilt version.
+**Environment Promotion** â€” Artifacts progress through environments: development, integration, staging, and production. Each environment validates specific concerns. Staging mirrors production configuration to catch environment-specific issues. Deployments to production use the same artifact that passed testing in lower environments, never a rebuilt version.
 
-**Deployment Gates** — Automated and manual checks that control promotion between environments. Gates include: test coverage thresholds, security scan results, approval workflows, and canary analysis results.
+**Deployment Gates** â€” Automated and manual checks that control promotion between environments. Gates include: test coverage thresholds, security scan results, approval workflows, and canary analysis results.
 
 ### 4.3 GitHub Actions
 
 GitHub Actions provides CI/CD natively within the GitHub ecosystem. Workflows are YAML files stored in `.github/workflows/`.
 
 **Core Concepts**:
-- **Workflow** — An automated process defined in YAML, triggered by events
-- **Job** — A set of steps that execute on the same runner
-- **Step** — An individual task: shell command or action
-- **Action** — A reusable unit of automation (community or custom)
-- **Runner** — A server that executes workflows (GitHub-hosted or self-hosted)
-- **Event** — A trigger: push, pull_request, schedule, workflow_dispatch
+- **Workflow** â€” An automated process defined in YAML, triggered by events
+- **Job** â€” A set of steps that execute on the same runner
+- **Step** â€” An individual task: shell command or action
+- **Action** â€” A reusable unit of automation (community or custom)
+- **Runner** â€” A server that executes workflows (GitHub-hosted or self-hosted)
+- **Event** â€” A trigger: push, pull_request, schedule, workflow_dispatch
 
-**Matrix Builds** — Run the same job across multiple combinations of variables (OS versions, language versions, target architectures). Matrix strategies are defined with `matrix` in the job configuration.
+**Matrix Builds** â€” Run the same job across multiple combinations of variables (OS versions, language versions, target architectures). Matrix strategies are defined with `matrix` in the job configuration.
 
-**Reusable Workflows** — Define a workflow in one repository and call it from others using `uses: org/repo/.github/workflows/workflow.yml@ref`. This enables organization-wide pipeline standards.
+**Reusable Workflows** â€” Define a workflow in one repository and call it from others using `uses: org/repo/.github/workflows/workflow.yml@ref`. This enables organization-wide pipeline standards.
 
-**Environments** — Deployment targets with protection rules: required reviewers, wait timers, and environment-specific secrets. Environments track deployment history.
+**Environments** â€” Deployment targets with protection rules: required reviewers, wait timers, and environment-specific secrets. Environments track deployment history.
 
-**Secrets and Variables** — Encrypted secrets store credentials, tokens, and keys. Organization-level secrets are available across repos. Environment variables configure job behavior without hardcoding.
+**Secrets and Variables** â€” Encrypted secrets store credentials, tokens, and keys. Organization-level secrets are available across repos. Environment variables configure job behavior without hardcoding.
 
 ### 4.4 GitLab CI
 
 GitLab CI uses `.gitlab-ci.yml` at the repository root. Pipeline structure includes stages, jobs, and artifacts.
 
 **Concepts**:
-- **Stages** — Ordered groups of jobs (build, test, deploy). Jobs within a stage run in parallel.
-- **Runners** — Executors registered with GitLab (shared, group, or specific).
-- **Artifacts** — Files saved from jobs for use in later stages or external download.
-- **Cache** — Dependencies between pipeline runs for speed.
-- **Templates** — Reusable job definitions via `extends` and `include`.
+- **Stages** â€” Ordered groups of jobs (build, test, deploy). Jobs within a stage run in parallel.
+- **Runners** â€” Executors registered with GitLab (shared, group, or specific).
+- **Artifacts** â€” Files saved from jobs for use in later stages or external download.
+- **Cache** â€” Dependencies between pipeline runs for speed.
+- **Templates** â€” Reusable job definitions via `extends` and `include`.
 
 **Key Features**: Auto DevOps (convention-based pipeline), review apps (ephemeral environments per branch), container registry integration, and pages deployment.
 
@@ -73,11 +73,11 @@ GitLab CI uses `.gitlab-ci.yml` at the repository root. Pipeline structure inclu
 
 Jenkins is the longest-standing CI/CD tool, with a plugin ecosystem of over 1,800 extensions.
 
-**Architecture** — Jenkins master distributes build jobs to agent nodes. Jobs are defined via declarative or scripted Pipeline (Groovy DSL). Jenkinsfile contains the pipeline definition, ideally stored in version control (Pipeline as Code).
+**Architecture** â€” Jenkins master distributes build jobs to agent nodes. Jobs are defined via declarative or scripted Pipeline (Groovy DSL). Jenkinsfile contains the pipeline definition, ideally stored in version control (Pipeline as Code).
 
 **Pipeline Types**:
-- **Declarative Pipeline** — Structured syntax with agents, stages, steps, post-conditions
-- **Scripted Pipeline** — Full Groovy flexibility for complex workflows
+- **Declarative Pipeline** â€” Structured syntax with agents, stages, steps, post-conditions
+- **Scripted Pipeline** â€” Full Groovy flexibility for complex workflows
 
 **Strengths**: Extensive plugin ecosystem, fine-grained access control, and mature pipeline capabilities. **Weaknesses**: UI-heavy configuration, plugin version conflicts, and operational overhead of master maintenance.
 
@@ -86,20 +86,20 @@ Jenkins is the longest-standing CI/CD tool, with a plugin ecosystem of over 1,80
 CircleCI provides cloud-based CI with intelligent caching and parallelism. Configuration uses `.circleci/config.yml`.
 
 **Key Concepts**:
-- **Orbs** — Reusable configuration packages (like GitHub Actions)
-- **Executors** — Docker, machine, or macOS execution environments
-- **Workspaces** — Share files between jobs in the same pipeline
-- **Contexts** — Environment variable sets shared across projects
+- **Orbs** â€” Reusable configuration packages (like GitHub Actions)
+- **Executors** â€” Docker, machine, or macOS execution environments
+- **Workspaces** â€” Share files between jobs in the same pipeline
+- **Contexts** â€” Environment variable sets shared across projects
 
 ### 4.7 Pipeline Patterns
 
-**Test Pyramid Pipeline** — Execute different categories of tests at appropriate stages: unit tests (fast, many), integration tests (medium, fewer), end-to-end tests (slow, few). Fail early to reduce cycle time.
+**Test Pyramid Pipeline** â€” Execute different categories of tests at appropriate stages: unit tests (fast, many), integration tests (medium, fewer), end-to-end tests (slow, few). Fail early to reduce cycle time.
 
-**Build Once, Deploy Many** — Compile and package the artifact once. Promote the same binary through environments. This eliminates the risk of environment-specific build differences.
+**Build Once, Deploy Many** â€” Compile and package the artifact once. Promote the same binary through environments. This eliminates the risk of environment-specific build differences.
 
-**Approval Gates** — Manual approval steps before production deployment. Useful for compliance-sensitive environments. Gating should be the exception, not the default.
+**Approval Gates** â€” Manual approval steps before production deployment. Useful for compliance-sensitive environments. Gating should be the exception, not the default.
 
-**Rollback Pattern** — Pipelines should support automated rollback. Best practice: deploy incrementally (canary, blue-green) and monitor metrics. If error rates exceed thresholds, the pipeline triggers automatic rollback.
+**Rollback Pattern** â€” Pipelines should support automated rollback. Best practice: deploy incrementally (canary, blue-green) and monitor metrics. If error rates exceed thresholds, the pipeline triggers automatic rollback.
 
 ## Examples
 

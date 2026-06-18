@@ -1,4 +1,4 @@
-﻿# Chapter 54: AI/ML Interview Q&A
+# Chapter 54: AI/ML Interview Q&A
 
 This chapter covers AI and machine learning interview questions for Laravel developers â€” from fundamental ML theory to production deployment with Laravel AI SDK. Each answer includes practical PHP code examples drawn from PHP-ML, Rubix ML, and the Laravel AI ecosystem.
 
@@ -6,7 +6,7 @@ This chapter covers AI and machine learning interview questions for Laravel deve
 
 ## Machine Learning Fundamentals
 
-![AI/ML Interview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/54-interview-ai-ml.png)
+![AI/ML Interview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/54-interview-ai-ml.png)
 
 
 ### Q1: What is the difference between supervised, unsupervised, and reinforcement learning?

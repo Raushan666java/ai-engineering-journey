@@ -1,4 +1,4 @@
-﻿# Chapter 5: Ensemble Methods
+# Chapter 5: Ensemble Methods
 
 ---
 
@@ -22,7 +22,7 @@ Bagging involves training multiple versions of a model on different subsets of t
 2. **Aggregation**: Predictions are combined via voting (for classification) or averaging (for regression).
 Bagging primarily reduces **variance** by smoothing out the eccentricities of individual models.
 
-![Bagging vs Boosting](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/machine-learning/ch05-ensemble.png)
+![Bagging vs Boosting](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/machine-learning/ch05-ensemble.png)
 
 ### Random Forest
 Random Forest is a specialized version of Bagging that uses Decision Trees as base learners. It adds an extra layer of randomness: at each split, only a random subset of features is considered. This ensures that the trees are decorrelated, making the ensemble even more robust.

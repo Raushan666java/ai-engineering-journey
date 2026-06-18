@@ -36,7 +36,7 @@ flowchart LR
 
 > **One-Sentence Takeaway:** A problem-solving agent systematically formulates goals, defines problems as state spaces, searches for action sequences, then executes them in the real world.
 
-![Problem-Solving Search](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch02-problem-solving.png)
+![Problem-Solving Search](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch02-problem-solving.png)
 
 A problem-solving agent is a goal-directed agent that decides what to do by finding sequences of actions that lead to desirable states. The agent operates in discrete, deterministic, fully observable environments. The problem-solving process comprises four steps:
 
@@ -74,7 +74,7 @@ Problems are classified along three principal dimensions:
 
 Toy problems (e.g., the 8-puzzle, vacuum world) are simplified domains used for pedagogical purposes. Real-world problems (e.g., route planning, VLSI layout, robot navigation) involve larger state spaces and more complex constraints.
 
-> **💡 Pro Tip:** The choice between BFS and DFS often comes down to space constraints. BFS guarantees optimality but requires exponential memory; DFS uses linear space but may never find a solution in infinite state spaces.
+> **ðŸ’¡ Pro Tip:** The choice between BFS and DFS often comes down to space constraints. BFS guarantees optimality but requires exponential memory; DFS uses linear space but may never find a solution in infinite state spaces.
 
 ## 2.4 Uninformed Search Algorithms
 
@@ -86,19 +86,19 @@ BFS expands the shallowest unexpanded node. The frontier is implemented as a FIF
 
 ```
 function BREADTH-FIRST-SEARCH(problem) returns solution or failure
-    node ← NODE(problem.INITIAL)
+    node â† NODE(problem.INITIAL)
     if problem.GOAL-TEST(node.STATE) then return SOLUTION(node)
-    frontier ← FIFO queue containing node
-    explored ← empty set
+    frontier â† FIFO queue containing node
+    explored â† empty set
     loop do
         if EMPTY?(frontier) then return failure
-        node ← POP(frontier)
+        node â† POP(frontier)
         add node.STATE to explored
         for each action in problem.ACTIONS(node.STATE) do
-            child ← CHILD-NODE(problem, node, action)
+            child â† CHILD-NODE(problem, node, action)
             if child.STATE not in explored and child.STATE not in frontier then
                 if problem.GOAL-TEST(child.STATE) then return SOLUTION(child)
-                frontier ← INSERT(child, frontier)
+                frontier â† INSERT(child, frontier)
 ```
 
 BFS is complete (finds a solution if one exists) and optimal for uniform step costs. Time and space complexity: $O(b^{d+1})$.
@@ -115,9 +115,9 @@ IDDFS combines the space efficiency of DFS with the completeness and optimality 
 
 ```
 function ITERATIVE-DEEPENING-SEARCH(problem) returns solution or failure
-    for depth = 0 to ∞ do
-        result ← DEPTH-LIMITED-SEARCH(problem, depth)
-        if result ≠ cutoff then return result
+    for depth = 0 to âˆž do
+        result â† DEPTH-LIMITED-SEARCH(problem, depth)
+        if result â‰  cutoff then return result
 ```
 
 ### 2.4.4 Uniform-Cost Search
@@ -130,7 +130,7 @@ Bidirectional search simultaneously expands forward from the initial state and b
 
 ## 2.5 Measuring Search Performance
 
-> **One-Sentence Takeaway:** Search algorithms are evaluated on completeness, optimality, time complexity, and space complexity — and space is often the binding constraint.
+> **One-Sentence Takeaway:** Search algorithms are evaluated on completeness, optimality, time complexity, and space complexity â€” and space is often the binding constraint.
 
 Search algorithms are evaluated along four dimensions:
 
@@ -139,24 +139,24 @@ Search algorithms are evaluated along four dimensions:
 - **Time complexity:** How many nodes are generated?
 - **Space complexity:** How many nodes must be stored in memory simultaneously?
 
-> **⚠️ Warning:** Bidirectional search appears appealing (O(b^{d/2})), but it requires the goal state to be known in advance and actions to be reversible — conditions rarely met in practice.
+> **âš ï¸ Warning:** Bidirectional search appears appealing (O(b^{d/2})), but it requires the goal state to be known in advance and actions to be reversible â€” conditions rarely met in practice.
 
 ## Concept Comparison
 
 | Algorithm | Complete? | Optimal? | Time | Space | Strategy |
 |-----------|:---:|:---:|:---:|:---:|----------|
-| BFS | ✅ | ✅ (uniform cost) | O(b^{d+1}) | O(b^{d+1}) | FIFO queue |
-| DFS | ❌ (without cycle check) | ❌ | O(b^m) | O(bm) | LIFO stack |
-| IDDFS | ✅ | ✅ (uniform cost) | O(b^d) | O(bd) | Depth-limited iterations |
-| UCS | ✅ | ✅ (positive costs) | O(b^{1+⌊C*/ε⌋}) | O(b^{1+⌊C*/ε⌋}) | Priority queue by g(n) |
-| Bidirectional | ✅ | ✅ | O(b^{d/2}) | O(b^{d/2}) | Two simultaneous searches |
+| BFS | âœ… | âœ… (uniform cost) | O(b^{d+1}) | O(b^{d+1}) | FIFO queue |
+| DFS | âŒ (without cycle check) | âŒ | O(b^m) | O(bm) | LIFO stack |
+| IDDFS | âœ… | âœ… (uniform cost) | O(b^d) | O(bd) | Depth-limited iterations |
+| UCS | âœ… | âœ… (positive costs) | O(b^{1+âŒŠC*/ÎµâŒ‹}) | O(b^{1+âŒŠC*/ÎµâŒ‹}) | Priority queue by g(n) |
+| Bidirectional | âœ… | âœ… | O(b^{d/2}) | O(b^{d/2}) | Two simultaneous searches |
 
-## Quick Reference — State-Space Search Components
+## Quick Reference â€” State-Space Search Components
 
 | Component | Definition | Example (8-Puzzle) |
 |-----------|-----------|-------------------|
 | State space S | All configurations | All 9! / 2 = 181,440 tile arrangements |
-| Initial state s₀ | Starting config | Given scrambled puzzle |
+| Initial state sâ‚€ | Starting config | Given scrambled puzzle |
 | Actions Actions(s) | Legal moves | {Up, Down, Left, Right} blank |
 | Transition Result(s,a) | Resulting state | Tile slides into blank position |
 | Goal test | Target check | Is state the goal configuration? |
@@ -166,11 +166,11 @@ Search algorithms are evaluated along four dimensions:
 
 | Search Method | ML Engineering | Computer Vision | NLP | Research |
 |--------------|:---:|:---:|:---:|:---:|
-| BFS | ⬜ | ⬜ | ⬜ | ✅ |
-| DFS | ⬜ | ⬜ | ✅ | ✅ |
-| IDDFS | ⬜ | ⬜ | ⬜ | ✅ |
-| UCS / Dijkstra | ✅ | ✅ | ⬜ | ✅ |
-| Bidirectional | ⬜ | ⬜ | ⬜ | ⬜ |
+| BFS | â¬œ | â¬œ | â¬œ | âœ… |
+| DFS | â¬œ | â¬œ | âœ… | âœ… |
+| IDDFS | â¬œ | â¬œ | â¬œ | âœ… |
+| UCS / Dijkstra | âœ… | âœ… | â¬œ | âœ… |
+| Bidirectional | â¬œ | â¬œ | â¬œ | â¬œ |
 
 ## Chapter Quiz
 

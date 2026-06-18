@@ -41,9 +41,9 @@ flowchart LR
 
 ## Theory
 
-![Neural Networks and Deep Learning](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/artificial-intelligence/ch10-deep-learning.png)
+![Neural Networks and Deep Learning](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/artificial-intelligence/ch10-deep-learning.png)
 
-> **One-Sentence Takeaway:** A perceptron computes a weighted sum of inputs through an activation function — a single perceptron can only learn linearly separable patterns, requiring multiple layers for non-linear problems.
+> **One-Sentence Takeaway:** A perceptron computes a weighted sum of inputs through an activation function â€” a single perceptron can only learn linearly separable patterns, requiring multiple layers for non-linear problems.
 
 ### The Perceptron
 The basic unit of a neural network is the **neuron** (or perceptron). It takes multiple inputs $x_i$, multiplies them by weights $w_i$, adds a bias $b$, and passes the result through an **activation function** $g$:
@@ -57,7 +57,7 @@ An MLP consists of:
 
 By having multiple hidden layers, a network can learn complex, non-linear mappings.
 
-> **💡 Pro Tip:** The Universal Approximation Theorem guarantees that an MLP with one hidden layer can approximate any continuous function — but deeper networks require exponentially fewer neurons per layer. Depth provides representational efficiency, not just raw capacity.
+> **ðŸ’¡ Pro Tip:** The Universal Approximation Theorem guarantees that an MLP with one hidden layer can approximate any continuous function â€” but deeper networks require exponentially fewer neurons per layer. Depth provides representational efficiency, not just raw capacity.
 
 ### Backpropagation
 Training a neural network involves finding the weights that minimize a loss function (e.g., Cross-Entropy). The **Backpropagation** algorithm uses the chain rule of calculus to calculate the gradient of the loss with respect to every weight in the network, allowing for efficient updates via **Stochastic Gradient Descent (SGD)**.
@@ -114,28 +114,28 @@ model.compile(optimizer='adam',
 |-----------|:---:|:---:|:---:|
 | Sigmoid | (0, 1) | Vanishes at extremes | Binary output |
 | Tanh | (-1, 1) | Vanishes, zero-centered | Hidden layers (older) |
-| ReLU | [0, ∞) | 0 or 1, no vanish | Hidden layers (default) |
-| Leaky ReLU | (-∞, ∞) | 0.01 for x<0 | Avoiding dead neurons |
+| ReLU | [0, âˆž) | 0 or 1, no vanish | Hidden layers (default) |
+| Leaky ReLU | (-âˆž, âˆž) | 0.01 for x<0 | Avoiding dead neurons |
 | Softmax | (0, 1), sums to 1 | Full distribution | Multi-class output |
 
-## Quick Reference — Backpropagation Steps
+## Quick Reference â€” Backpropagation Steps
 
 | Step | Operation | Purpose |
 |------|-----------|---------|
 | Forward pass | Compute activations layer by layer | Get predictions |
 | Loss computation | Compare output to target | Measure error |
-| Output gradient | ∂Loss/∂output | Signal at output |
+| Output gradient | âˆ‚Loss/âˆ‚output | Signal at output |
 | Backward pass | Chain rule through layers | Distribute error |
-| Weight update | w ← w - α ∂Loss/∂w | Minimize loss |
+| Weight update | w â† w - Î± âˆ‚Loss/âˆ‚w | Minimize loss |
 
 ## Cross-Application Matrix
 
 | Architecture | CV | NLP | Time Series | Research |
 |-------------|:---:|:---:|:---:|:---:|
-| MLP | ✅ | ✅ | ✅ | ✅ |
-| CNN | ✅ | ✅ | ✅ | ✅ |
-| RNN/LSTM | ⬜ | ✅ | ✅ | ✅ |
-| Transformer | ✅ | ✅ | ✅ | ✅ |
+| MLP | âœ… | âœ… | âœ… | âœ… |
+| CNN | âœ… | âœ… | âœ… | âœ… |
+| RNN/LSTM | â¬œ | âœ… | âœ… | âœ… |
+| Transformer | âœ… | âœ… | âœ… | âœ… |
 
 ## Chapter Quiz
 
@@ -145,7 +145,7 @@ model.compile(optimizer='adam',
 - C) XOR has more than two inputs
 - D) XOR requires a recurrent connection
 
-<details><summary>Answer</summary>B) XOR output is not linearly separable in the input space — a single perceptron can only separate classes with a linear decision boundary.</details>
+<details><summary>Answer</summary>B) XOR output is not linearly separable in the input space â€” a single perceptron can only separate classes with a linear decision boundary.</details>
 
 **Q2:** The chain rule in backpropagation computes what?
 - A) The forward pass activations
@@ -153,7 +153,7 @@ model.compile(optimizer='adam',
 - C) The accuracy of the model
 - D) The optimal number of layers
 
-<details><summary>Answer</summary>B) Backpropagation uses the chain rule to compute ∂Loss/∂w for every weight, propagating error gradients backward from the output layer.</details>
+<details><summary>Answer</summary>B) Backpropagation uses the chain rule to compute âˆ‚Loss/âˆ‚w for every weight, propagating error gradients backward from the output layer.</details>
 
 **Q3:** What primary advantage does ReLU provide over sigmoid/tanh?
 - A) ReLU is symmetric around zero

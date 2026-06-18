@@ -13,7 +13,7 @@ By the end of this chapter, you will be able to:
 
 ## 18.1 Project Overview: TaskFlow
 
-![Full-Stack Architecture Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/web-development/18-fullstack-project.png)
+![Full-Stack Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/18-fullstack-project.png)
 
 Throughout this chapter, we will build **TaskFlow**, a full-stack task management application. TaskFlow allows users to create projects, add tasks, assign team members, set priorities, and track progress in real time.
 
@@ -29,14 +29,14 @@ The monorepo structure:
 
 ```
 taskflow/
-├── apps/
-│   ├── web/          # Next.js frontend
-│   └── api/          # Express backend
-├── packages/
-│   └── shared/       # Shared TypeScript types
-├── docker-compose.yml
-├── package.json
-└── tsconfig.json
+â”œâ”€â”€ apps/
+â”‚   â”œâ”€â”€ web/          # Next.js frontend
+â”‚   â””â”€â”€ api/          # Express backend
+â”œâ”€â”€ packages/
+â”‚   â””â”€â”€ shared/       # Shared TypeScript types
+â”œâ”€â”€ docker-compose.yml
+â”œâ”€â”€ package.json
+â””â”€â”€ tsconfig.json
 ```
 
 ## 18.2 Setting Up the Monorepo

@@ -12,7 +12,7 @@ After studying this chapter, students will be able to:
 
 ## 13.1 Value Categories
 
-![Move vs Copy Sequence Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/oop-cpp/13-move-semantics.png)
+![Move vs Copy Sequence Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/13-move-semantics.png)
 
 C++11 introduced a refined taxonomy of value categories:
 
@@ -170,7 +170,7 @@ constexpr T&& forward(typename std::remove_reference<T>::type& arg) noexcept {
 }
 ```
 
-Practical example — a factory that forwards arguments:
+Practical example â€” a factory that forwards arguments:
 
 ```cpp
 template <typename T, typename... Args>

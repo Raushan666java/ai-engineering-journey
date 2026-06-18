@@ -1,5 +1,8 @@
 # Chapter 7: Cloud & Mobile Security
 
+> **Prereq:** Chapter 6 (IAM) â€” cloud security extends IAM to cloud provider and mobile device identities.
+> **Next:** Chapter 8 (Forensics & IR) â€” incident response in cloud and mobile environments requires specialised processes.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,36 @@
 - Describe the concepts of Mobile Device Management (MDM) and Mobile Application Management (MAM).
 - Discuss the security challenges associated with serverless computing and cloud-native applications.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Shared Responsibility | CSP vs customer | Know what you must secure |
+| Virtualisation | VM escape, hypervisor | Isolation boundaries in cloud |
+| Container Security | Image scanning, runtime | Default container security posture |
+| Mobile Security | Sandboxing, permissions | iOS vs Android threat models |
+| MDM/MAM | Device and app management | BYOD and enterprise mobility |
+
+```mermaid
+flowchart LR
+    A[Cloud Security] --> B[Shared Responsibility]
+    A --> C[Virtualisation]
+    A --> D[Containers]
+    A --> E[Serverless]
+    F[Mobile Security] --> G[OS Sandboxing]
+    F --> H[MDM]
+    F --> I[App Permissions]
+    style A fill:#e1f5fe
+    style F fill:#fff3e0
+```
+
 ---
 
 ## Theory
 
-![Cloud & Mobile Security](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch07-cloud-mobile.png)
+![Cloud & Mobile Security](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cyber-security/ch07-cloud-mobile.png)
+
+> **One-Sentence Takeaway:** Cloud and mobile security shift the model â€” the shared responsibility model clarifies who secures what, while virtualization, containers, and mobile sandboxing each introduce unique attack surfaces.
 
 ### Shared Responsibility Model
 In cloud security, responsibility is divided between the Cloud Service Provider (CSP) and the customer.
@@ -89,3 +117,44 @@ trivy image nginx:1.18.0
 
 ### Challenge Problem
 1. Research the "Side-Channel Attacks" (like Spectre and Meltdown) in the context of cloud computing. Explain how these hardware-level vulnerabilities can be used to bypass the isolation between virtual machines or containers on the same physical host. Discuss the mitigations implemented by cloud providers.
+
+### Concept Comparison
+
+| Layer | IaaS | PaaS | SaaS |
+|-------|------|------|------|
+| Customer secures | Apps, data, OS, network | Apps, data | Data |
+| Provider secures | Virtualisation, hardware | Runtime, OS, hardware | Everything below data |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Network Security | Cloud security groups, VPC | Cloud networking inherits all network security |
+| App Security | Serverless function security | Cloud-native app security model |
+| Cloud Security | CSPM, CWPP, CASB | Cloud-specific security tool categories |
+| Research | Confidential computing | Hardware-enforced isolation for cloud workloads |
+
+### Chapter Quiz
+
+1. In the Shared Responsibility Model, the customer is always responsible for:
+   - A) Physical data center security
+   - B) Securing customer data and applications
+   - C) Hypervisor security
+   - D) Network infrastructure
+
+2. Mobile OS sandboxing means:
+   - A) Apps run in a remote sandbox environment
+   - B) Each app runs in its own isolated environment
+   - C) The OS is sandboxed from the hardware
+   - D) All data is encrypted at rest
+
+3. Container escape is a risk because:
+   - A) Containers share the host OS kernel
+   - B) Containers cannot be patched
+   - C) Containers run as root by default
+   - D) Container images are always public
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. A
+</details>

@@ -1,5 +1,8 @@
 # Chapter 3: Network Security
 
+> **Prereq:** Chapter 2 (Cryptography) â€” TLS, IPsec, and WPA2 rely on cryptographic algorithms.
+> **Next:** Chapter 4 (System Software Security) â€” host-based defenses complement network perimeter controls.
+
 ---
 
 ## Learning Objectives
@@ -10,11 +13,35 @@
 - Understand the mechanisms of Virtual Private Networks (VPNs) and secure tunneling protocols.
 - Describe the principles of wireless security and common vulnerabilities in Wi-Fi networks.
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Firewalls | Packet filter, stateful, NGFW | First line of network defense |
+| IDS/IPS | Signature vs anomaly detection | Detect and block malicious traffic |
+| VPNs | IPsec, WireGuard | Secure remote access and site-to-site |
+| Wireless Security | WPA2, WPA3, EVIL TWIN | Wireless broadcast is inherently risky |
+
+```mermaid
+flowchart LR
+    A[Internet] --> B[Firewall]
+    B --> C[IDS/IPS]
+    C --> D[VPN Gateway]
+    D --> E[Internal Network]
+    E --> F[Wireless AP]
+    F --> G[Clients]
+    style A fill:#fce4ec
+    style B fill:#e1f5fe
+    style D fill:#c8e6c9
+```
+
 ---
+
+> **One-Sentence Takeaway:** Network security relies on layered controls â€” firewalls filter traffic at the perimeter, IDS/IPS detect threats inline, and VPNs encrypt communication across untrusted networks.
 
 ## Theory
 
-![Network Defense Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/cyber-security/ch03-network-defense.png)
+![Network Defense Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cyber-security/ch03-network-defense.png)
 
 ### The OSI Model and Security
 Security must be addressed at multiple layers of the Open Systems Interconnection (OSI) model:
@@ -102,3 +129,47 @@ sudo tcpdump -i eth0 "tcp[tcpflags] & (tcp-syn) != 0" -c 100
 
 ### Challenge Problem
 1. Research the "DNS Cache Poisoning" (Kaminsky) attack. Explain how it works at the network protocol level and why it was so significant. Propose a modern protocol-level solution (e.g., DNSSEC) and explain how it mitigates the threat.
+
+### Concept Comparison
+
+| Technology | Layer | Function | Active/Passive |
+|-----------|-------|----------|---------------|
+| Packet Filter | 3/4 | Filter by IP/port | Passive |
+| Stateful FW | 3/4 | Track connection state | Passive |
+| IDS | 3-7 | Alert on threats | Passive |
+| IPS | 3-7 | Block threats inline | Active |
+| VPN | 3/4/7 | Encrypt traffic | Active |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| Network Security | Firewalls, VPNs, IDS/IPS | Core network defense toolkit |
+| App Security | WAF | Application-layer filtering |
+| Cloud Security | Security groups, NACLs | Cloud-native firewall equivalents |
+| Research | ML-based anomaly detection | Detecting zero-day network threats |
+
+### Chapter Quiz
+
+1. Stateful inspection differs from stateless by:
+   - A) Examining packet payload contents
+   - B) Tracking connection state (SYN, ACK, etc.)
+   - C) Using AI for threat detection
+   - D) Operating at OSI layer 7
+
+2. A VPN primarily provides:
+   - A) Anonymity only
+   - B) Confidentiality and integrity over untrusted networks
+   - C) Faster internet speeds
+   - D) Wireless network access
+
+3. The main difference between IDS and IPS is:
+   - A) IDS is for wireless, IPS is for wired
+   - B) IDS only alerts, IPS can block traffic
+   - C) IDS uses signatures, IPS uses anomaly detection
+   - D) There is no difference
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B
+</details>

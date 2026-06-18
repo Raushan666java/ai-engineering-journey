@@ -9,7 +9,7 @@
 
 ## Theory
 
-![Stacks, Queues and Deques](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/data-structures/ch03-stacks-queues.png)
+![Stacks, Queues and Deques](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch03-stacks-queues.png)
 
 ### Stack ADT
 
@@ -304,6 +304,88 @@ int main() {
 ```
 Postfix: 23*54*+9- = 17
 ```
+
+## ðŸ’¡ Pro Tips
+
+- **Use a stack to detect balanced brackets**: Push opening brackets; pop and match on closing. If the stack isn't empty at the end, or the wrong bracket is on top â€” invalid.
+- **Postfix evaluation is stack's killer app**: Push operands; when you see an operator, pop two operands, apply, push result. One stack, no recursion, no parentheses needed.
+- **`getMin()` in \(O(1)\) needs an auxiliary stack**: The main stack holds values; the min stack tracks the current minimum at each level. On pop, if the popped value equals the min stack's top, pop the min stack too.
+- **Stack overflow = recursion too deep**: Every recursive call pushes a stack frame. Deep recursion (10k+ levels) overflows the call stack. Convert to explicit stack iteration for large inputs.
+
+## One-Sentence Takeaways
+
+- LIFO means the last pushed element is the first popped.
+- Array stacks use less memory; linked stacks never overflow.
+- Balanced parentheses are checked with a single stack.
+- Postfix expression evaluation uses a single stack of operands.
+- Shunting-yard converts infix to postfix via operator stack.
+- Stacks model recursion, undo, and depth-first search.
+
+## Concept Comparison Table
+
+| Feature | Array-based Stack | Linked Stack |
+|---------|------------------|--------------|
+| Push | \(O(1)\) amortized | \(O(1)\) |
+| Pop | \(O(1)\) | \(O(1)\) |
+| Top | \(O(1)\) | \(O(1)\) |
+| Memory | Contiguous (may overallocate) | Per-node allocation |
+| Overflow | Resizes dynamically | Never (until heap full) |
+| Cache locality | Excellent | Poor |
+
+## Quick Reference: Stack Use Cases
+
+| Problem | How Stack Is Used |
+|---------|------------------|
+| Balanced parentheses | Push opens, pop on close, check match |
+| Postfix evaluation | Push operands, pop for operator, push result |
+| Infix â†’ Postfix (Shunting-yard) | Operator precedence stack |
+| DFS traversal | Explicit stack of nodes to visit |
+| Undo (Ctrl+Z) | Stack of previous states |
+| Call stack (function calls) | Return addresses + local variables |
+
+## Cross-Application Matrix
+
+| Application | Stack Type | Justification |
+|-------------|-----------|---------------|
+| Expression parser | Operator stack | Infix to postfix conversion |
+| Undo system | Object stack | Push states, pop to undo |
+| DFS traversal | Node stack | LIFO for backtracking |
+| Back-button navigation | URL stack | Push pages, pop for back |
+| Recursion emulation | Frame stack | Simulate call stack iteratively |
+
+## Chapter Quiz
+
+1. **What does LIFO stand for?**
+   - a) Last In, First Out âœ“
+   - b) Least In, Fastest Out
+   - c) Linear Input, Fixed Output
+   - d) Long In, First Out
+
+2. **What is the time complexity of stack push?**
+   - a) \(O(1)\) âœ“
+   - b) \(O(\log n)\)
+   - c) \(O(n)\)
+   - d) \(O(n^2)\)
+
+3. **Which algorithm converts infix to postfix?**
+   - a) Floyd's algorithm
+   - b) Shunting-yard âœ“
+   - c) Dijkstra's algorithm
+   - d) Kahn's algorithm
+
+4. **Postfix `3 4 + 2 *` evaluates to:**
+   - a) 10
+   - b) 14 âœ“
+   - c) 9
+   - d) 7
+
+5. **A MinStack with \(O(1)\) getMin() uses:**
+   - a) Two stacks âœ“
+   - b) Two queues
+   - c) Hash table
+   - d) Binary tree
+
+**Answers:** 1-a, 2-a, 3-b, 4-b, 5-a
 
 ## Summary
 

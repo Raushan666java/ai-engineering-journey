@@ -1,8 +1,8 @@
-﻿# Laravel 13 with AI & Automation â€” Complete University Textbook
+# Laravel 13 with AI & Automation â€” Complete University Textbook
 
 ## Course Description
 
-![Laravel Course Overview](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/index.png)
+![Laravel Course Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/index.png)
 
 
 This comprehensive textbook covers **Laravel 13**, PHP's premier full-stack web framework, through the lens of modern AI-powered development. Students will master the entire Laravel ecosystemâ€”from foundational concepts like routing, Eloquent ORM, and Blade templating through advanced topics including the **Laravel AI SDK**, **Model Context Protocol (MCP)**, **semantic vector search**, **Laravel Boost**, and **enterprise-scale system design**.

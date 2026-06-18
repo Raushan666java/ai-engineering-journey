@@ -14,7 +14,7 @@
 ---
 ## Theory
 
-![Microservices Patterns Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/system-design/08-microservices-apis.png)
+![Microservices Patterns Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/08-microservices-apis.png)
 
 ### Monolith vs Microservices
 

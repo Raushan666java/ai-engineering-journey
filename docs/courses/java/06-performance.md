@@ -25,7 +25,7 @@ By the end of this chapter, you will be able to:
 
 ## 1. Profiling Tools
 
-![Performance Tuning Workflow](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/06-performance.png)
+![Performance Tuning Workflow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/06-performance.png)
 
 A profiler observes a running application and reports where it spends CPU time, allocates memory, or blocks on locks. Different profilers trade off precision, overhead, and ease of use.
 
@@ -40,7 +40,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 
-// Custom JFR event — you can define your own events
+// Custom JFR event â€” you can define your own events
 @Label("Database Query")
 @Description("Duration of a database query")
 @Category({"Application", "Database"})
@@ -108,7 +108,7 @@ class JfrRecorder {
 
         recording.stop();
 
-        // Dump to file — can be opened in JMC
+        // Dump to file â€” can be opened in JMC
         Path dumpPath = Path.of("my-recording.jfr");
         recording.dump(dumpPath);
         System.out.println("Recording dumped to " + dumpPath.toAbsolutePath());
@@ -161,7 +161,7 @@ jcmd 12345 JFR.stop name=hotspot
 JProfiler is a commercial profiler with a rich GUI for CPU, memory, thread, and JDBC profiling. It supports **offline profiling** via heap dumps and saved snapshots and **live attach** to local and remote JVMs.
 
 ```java
-// JProfiler-specific telemetry via JDBC probe — no code changes needed
+// JProfiler-specific telemetry via JDBC probe â€” no code changes needed
 // JProfiler intercepts JDBC driver calls and shows:
 //   - Slowest queries
 //   - Hotspot call trees for query execution
@@ -173,7 +173,7 @@ JProfiler is a commercial profiler with a rich GUI for CPU, memory, thread, and 
 //   - Statements not closed after use
 //   - ResultSets left open
 
-// ——— Demonstration of a "connection leak" that JProfiler detects ———
+// â€”â€”â€” Demonstration of a "connection leak" that JProfiler detects â€”â€”â€”
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -195,7 +195,7 @@ class ConnectionLeakSimulator {
             leakyQuery(i);
         }
 
-        System.out.println("Done — check JProfiler for unclosed connections");
+        System.out.println("Done â€” check JProfiler for unclosed connections");
     }
 
     static void leakyQuery(int id) throws Exception {
@@ -205,7 +205,7 @@ class ConnectionLeakSimulator {
         if (rs.next()) {
             System.out.println("Found: " + rs.getString(1));
         }
-        // conn.close() never called — leak!
+        // conn.close() never called â€” leak!
         // stmt.close() never called
         // rs.close() never called
     }
@@ -223,7 +223,7 @@ YourKit's distinguishing features:
 - **String duplication** detector shows how much memory is wasted by identical strings
 
 ```java
-// YourKit can detect duplicate strings — useful for large collections
+// YourKit can detect duplicate strings â€” useful for large collections
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -268,7 +268,7 @@ VisualVM is a free, open-source profiler bundled with older JDK distributions. F
 //   - CPU sampling: which methods consume CPU
 //   - Heap dump browsing (similar to MAT but lighter)
 
-// ——— CPU hotspot simulation that VisualVM makes visible ———
+// â€”â€”â€” CPU hotspot simulation that VisualVM makes visible â€”â€”â€”
 class CpuHotspotSimulator {
 
     public static void main(String[] args) throws Exception {
@@ -282,7 +282,7 @@ class CpuHotspotSimulator {
         }
         System.out.println("Result: " + result);
         Thread.sleep(5_000);
-        System.out.println("Done — check VisualVM hot spots");
+        System.out.println("Done â€” check VisualVM hot spots");
     }
 
     static long expensiveComputation() {
@@ -356,13 +356,13 @@ IntelliJ IDEA Ultimate includes an embedded async-profiler-based profiler. It in
 
 ```java
 // To use IntelliJ's profiler:
-// 1. Run → Profile <class> (or right-click in gutter)
+// 1. Run â†’ Profile <class> (or right-click in gutter)
 // 2. IntelliJ attaches async-profiler automatically
 // 3. CPU flame graph opens in the Profiler tool window
 // 4. Click a method to jump to its source
 
 // Memory profiling shows allocations per method/line.
-// ——— Memory allocation hotspot ———
+// â€”â€”â€” Memory allocation hotspot â€”â€”â€”
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -432,7 +432,7 @@ class HeapDumpCreator {
 
 ### 2.2 Dominator Tree
 
-The dominator tree is MAT's most important view. It shows the retained object set for each object — every object that would be garbage collected when that object is collected.
+The dominator tree is MAT's most important view. It shows the retained object set for each object â€” every object that would be garbage collected when that object is collected.
 
 ```java
 import java.util.ArrayList;
@@ -486,10 +486,10 @@ class Employee {
 
 **Reading the dominator tree** in MAT:
 
-1. Open the heap dump → **Dominator Tree** view
+1. Open the heap dump â†’ **Dominator Tree** view
 2. Objects are sorted by **Retained Heap** (largest first)
 3. Expand a `Department` instance to see all dominated `Employee` instances
-4. Right-click → **Path to GC Roots** → **exclude weak/soft references** to see why an object is alive
+4. Right-click â†’ **Path to GC Roots** â†’ **exclude weak/soft references** to see why an object is alive
 
 ### 2.3 Leak Suspect Report
 
@@ -502,7 +502,7 @@ import java.util.List;
 // A classic memory leak pattern: static collection that grows unbounded
 class LeakSuspectSimulator {
 
-    // STATIC — never eligible for GC
+    // STATIC â€” never eligible for GC
     private static final List<byte[]> CACHE = new ArrayList<>();
 
     public static void main(String[] args) throws Exception {
@@ -545,7 +545,7 @@ Understanding the distinction is critical:
 
 | Measure     | Definition                                                   |
 |-------------|--------------------------------------------------------------|
-| Shallow heap | Memory consumed by one object's header + fields. For an `int[]` of 100 elements, shallow = header (16 bytes) + 100 × 4 = 416 bytes. |
+| Shallow heap | Memory consumed by one object's header + fields. For an `int[]` of 100 elements, shallow = header (16 bytes) + 100 Ã— 4 = 416 bytes. |
 | Retained heap | Shallow heap of the object PLUS shallow heap of every object **only reachable through this object**. The total memory freed when this object is GC'd. |
 
 ```java
@@ -586,7 +586,7 @@ class Node {
 
 In MAT, the **Retained Heap column** on the dominator tree shows the true cost of each object. A seemingly small `HashMap` can have a huge retained heap if it references millions of entries.
 
-### 2.5 OQL — Object Query Language
+### 2.5 OQL â€” Object Query Language
 
 MAT includes an OQL (Object Query Language) console for SQL-like queries against the heap.
 
@@ -657,7 +657,7 @@ import java.util.Map;
 // A pattern that JOverflow detects well: ThreadLocal leak in a thread pool
 class ThreadLocalLeak {
 
-    // Static ThreadLocal — the value is retained as long as the thread is alive
+    // Static ThreadLocal â€” the value is retained as long as the thread is alive
     private static final ThreadLocal<Map<String, Object>> USER_SESSION =
         ThreadLocal.withInitial(HashMap::new);
 
@@ -678,7 +678,7 @@ class ThreadLocalLeak {
         session.put("lastAccess", System.nanoTime());
         session.put("user", user);
         session.put("largeData", new byte[100_000]); // accumulates across requests!
-        // NEVER removed — memory leak
+        // NEVER removed â€” memory leak
     }
 }
 ```
@@ -787,7 +787,7 @@ Every thread in a dump shows its state. The key states are:
 | State       | Meaning                                                   |
 |-------------|-----------------------------------------------------------|
 | `RUNNABLE`  | Executing on the CPU (or waiting for CPU scheduling). Also includes threads waiting for I/O (socket read, file read). |
-| `BLOCKED`   | Waiting for a monitor lock — another thread holds the lock. **High BLOCKED count = contention**. |
+| `BLOCKED`   | Waiting for a monitor lock â€” another thread holds the lock. **High BLOCKED count = contention**. |
 | `WAITING`   | Waiting indefinitely via `Object.wait()`, `LockSupport.park()`, or `Thread.join()` with no timeout. |
 | `TIMED_WAITING` | Waiting with a timeout via `Thread.sleep()`, `Object.wait(ms)`, or `LockSupport.parkNanos()`. |
 | `TERMINATED`| Thread has finished execution. Rare in dumps.              |
@@ -803,7 +803,7 @@ class ThreadStateDemo {
     private static final Lock REENTRANT = new ReentrantLock();
 
     public static void main(String[] args) throws Exception {
-        // Thread 1: RUNNABLE — computing
+        // Thread 1: RUNNABLE â€” computing
         Thread t1 = new Thread(() -> {
             long sum = 0;
             for (int i = 0; i < 1_000_000_000; i++) {
@@ -812,17 +812,17 @@ class ThreadStateDemo {
             System.out.println("T1 done: " + sum);
         }, "CPU-Worker");
 
-        // Thread 2: RUNNABLE (waiting for socket read — also "RUNNABLE")
+        // Thread 2: RUNNABLE (waiting for socket read â€” also "RUNNABLE")
         Thread t2 = new Thread(() -> {
             try {
-                // Reading from a socket that has no data — thread is "RUNNABLE" in dump
+                // Reading from a socket that has no data â€” thread is "RUNNABLE" in dump
                 var socket = new java.net.ServerSocket(0);
                 System.out.println("T2 listening on port " + socket.getLocalPort());
                 socket.accept(); // blocks here, state = RUNNABLE
             } catch (Exception e) { /* expected */ }
         }, "IO-Worker");
 
-        // Thread 3: BLOCKED — waiting for monitor held by T4
+        // Thread 3: BLOCKED â€” waiting for monitor held by T4
         Thread t3 = new Thread(() -> {
             synchronized (MONITOR) {
                 System.out.println("T3 inside monitor");
@@ -830,7 +830,7 @@ class ThreadStateDemo {
             }
         }, "Monitor-Holder");
 
-        // Thread 4: BLOCKED — cannot enter synchronized block held by T3
+        // Thread 4: BLOCKED â€” cannot enter synchronized block held by T3
         Thread t4 = new Thread(() -> {
             synchronized (MONITOR) {
                 System.out.println("T4 inside monitor (never reached)");
@@ -857,7 +857,7 @@ class ThreadStateDemo {
             }
         }, "Lock-Waiter");
 
-        // Thread 7: TIMED_WAITING — sleeping
+        // Thread 7: TIMED_WAITING â€” sleeping
         Thread t7 = new Thread(() -> {
             try { Thread.sleep(120_000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
         }, "Sleepy");
@@ -952,7 +952,7 @@ Manual thread dump analysis is tedious. Online analyzers parse and summarize dum
 //
 // THREAD COUNT BY STATE:
 //   RUNNABLE:      23
-//   BLOCKED:        4   ← high contention!
+//   BLOCKED:        4   â† high contention!
 //   WAITING:        7
 //   TIMED_WAITING:  3
 //
@@ -973,10 +973,10 @@ The typical drill for thread dump analysis:
 
 1. Collect **5 thread dumps** over 15 seconds
 2. Upload to fastthread.io (or equivalent)
-3. Check **BLOCKED** count — if > 10% of threads, you have contention
+3. Check **BLOCKED** count â€” if > 10% of threads, you have contention
 4. Check **deadlock** section
-5. Check **CPU hotspots** — frames appearing in 80%+ of dumps
-6. Check **stuck threads** — same stack in every dump, usually waiting on I/O or locks
+5. Check **CPU hotspots** â€” frames appearing in 80%+ of dumps
+6. Check **stuck threads** â€” same stack in every dump, usually waiting on I/O or locks
 
 ---
 
@@ -1003,7 +1003,7 @@ Garbage collection pauses are the single largest source of latency spikes in Jav
 ### 4.2 Reading GC Logs
 
 ```java
-// ——— Application whose GC behavior we will analyze ———
+// â€”â€”â€” Application whose GC behavior we will analyze â€”â€”â€”
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -1065,13 +1065,13 @@ A sample GC log entry (G1GC):
 // What GCeasy reports for the GC log above:
 
 // KEY METRICS
-// ─────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // Total Pause Time:           3.42 sec
 // Avg Pause Time:             85.5 ms
-// Max Pause Time:             420 ms     ← spike!
+// Max Pause Time:             420 ms     â† spike!
 // Throughput:                 98.3%
 // GC Count:                   40
-// Allocation Rate:            245 MB/sec ← high
+// Allocation Rate:            245 MB/sec â† high
 // Promotion Rate:             12 MB/sec
 // Avg Live Heap After GC:     85 MB
 // Survivor Ratio:             6.25%
@@ -1084,9 +1084,9 @@ A sample GC log entry (G1GC):
 //   - Consider ZGC if pause times must stay < 10ms
 
 // KEY GC PHASES PAUSE BREAKDOWN:
-//   1. Object Copy:    55.7 ms (65%)  ← moving objects between regions
-//   2. Update RS:      12.4 ms (15%)  ← updating remembered sets
-//   3. Scan RS:         8.1 ms (9%)   ← scanning remembered sets
+//   1. Object Copy:    55.7 ms (65%)  â† moving objects between regions
+//   2. Update RS:      12.4 ms (15%)  â† updating remembered sets
+//   3. Scan RS:         8.1 ms (9%)   â† scanning remembered sets
 //   4. Ext Root Scanning: 3.2 ms (4%)
 //   5. Termination:     4.8 ms (6%)
 ```
@@ -1129,9 +1129,9 @@ class AllocationRateMonitor {
 
         double elapsedSec = (endTime - startTime) / 1_000_000_000.0;
         System.out.printf("\nWorkload ran for %.2f seconds%n", elapsedSec);
-        System.out.printf("GC count: %d → %d (%d collections)%n",
+        System.out.printf("GC count: %d â†’ %d (%d collections)%n",
             startCount, endCount, endCount - startCount);
-        System.out.printf("GC time: %d ms → %d ms (%d ms total pause)%n",
+        System.out.printf("GC time: %d ms â†’ %d ms (%d ms total pause)%n",
             startGcTime, endGcTime, endGcTime - startGcTime);
         System.out.printf("Throughput: %.1f%%%n",
             (1.0 - (endGcTime - startGcTime) / (elapsedSec * 1000.0)) * 100.0);
@@ -1169,7 +1169,7 @@ Young GC frequency = allocation rate / young generation size
 Example:
   Allocation rate = 500 MB/sec
   Young gen = 100 MB
-  → Young GC every 200 ms (5 pauses/sec)
+  â†’ Young GC every 200 ms (5 pauses/sec)
 
 Fix: Increase young gen or reduce allocation rate.
 ```
@@ -1282,7 +1282,7 @@ public class StringConcatBenchmark {
     private String d = "JMH";
     private int iterations = 1000;
 
-    // ——— BAD: String concatenation in loop ———
+    // â€”â€”â€” BAD: String concatenation in loop â€”â€”â€”
     @Benchmark
     public String stringConcat(Blackhole bh) {
         String result = "";
@@ -1292,7 +1292,7 @@ public class StringConcatBenchmark {
         return result;
     }
 
-    // ——— GOOD: explicit StringBuilder ———
+    // â€”â€”â€” GOOD: explicit StringBuilder â€”â€”â€”
     @Benchmark
     public String stringBuilder(Blackhole bh) {
         StringBuilder sb = new StringBuilder(iterations * 30);
@@ -1302,7 +1302,7 @@ public class StringConcatBenchmark {
         return sb.toString();
     }
 
-    // ——— GOOD: single StringBuilder per call ———
+    // â€”â€”â€” GOOD: single StringBuilder per call â€”â€”â€”
     @Benchmark
     public String stringBuffer(Blackhole bh) {
         StringBuffer sb = new StringBuffer(iterations * 30);
@@ -1358,12 +1358,12 @@ public class ListBenchmark {
 
     @Benchmark
     public int arrayListGet() {
-        return arrayList.get(size / 2); // O(1) — fast
+        return arrayList.get(size / 2); // O(1) â€” fast
     }
 
     @Benchmark
     public int linkedListGet() {
-        return linkedList.get(size / 2); // O(n) — slow
+        return linkedList.get(size / 2); // O(n) â€” slow
     }
 
     public static void main(String[] args) throws Exception {
@@ -1393,7 +1393,7 @@ import org.openjdk.jmh.annotations.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
-@State(Scope.Benchmark) // Shared across all threads — need thread safety
+@State(Scope.Benchmark) // Shared across all threads â€” need thread safety
 public class SharedStateBenchmark {
 
     // Thread-safe: ConcurrentHashMap handles concurrent access
@@ -1456,10 +1456,10 @@ public class MathBenchmark {
 
 **Guidelines** for warmup/measurement:
 
-- **Warmup**: 5--10 iterations of 1--10 seconds each. Watch the warmup graph — steady state should be reached before measurement begins.
+- **Warmup**: 5--10 iterations of 1--10 seconds each. Watch the warmup graph â€” steady state should be reached before measurement begins.
 - **Measurement**: 5--10 iterations of 1--10 seconds. More iterations reduce noise.
 - **Forks**: 3--5 forks to account for JVM warmup randomization. Each fork runs the benchmark in a fresh JVM.
-- **Total time**: 3 forks × (5 warmup + 5 measurement) × 2 sec = 60 seconds minimum per benchmark method.
+- **Total time**: 3 forks Ã— (5 warmup + 5 measurement) Ã— 2 sec = 60 seconds minimum per benchmark method.
 
 ### 5.6 Blackhole
 
@@ -1476,19 +1476,19 @@ public class BlackholeExample {
     private int a = 17;
     private int b = 42;
 
-    // ——— WRONG: JIT sees result is unused, eliminates computation ———
+    // â€”â€”â€” WRONG: JIT sees result is unused, eliminates computation â€”â€”â€”
     @Benchmark
     public void wrong() {
-        a + b;  // Dead Code Elimination — this becomes a no-op!
+        a + b;  // Dead Code Elimination â€” this becomes a no-op!
     }
 
-    // ——— CORRECT: Blackhole consumes the result ———
+    // â€”â€”â€” CORRECT: Blackhole consumes the result â€”â€”â€”
     @Benchmark
     public void correct(Blackhole bh) {
         bh.consume(a + b);
     }
 
-    // ——— Consume multiple results ———
+    // â€”â€”â€” Consume multiple results â€”â€”â€”
     @Benchmark
     public void multipleResults(Blackhole bh) {
         bh.consume(a * b);
@@ -1496,7 +1496,7 @@ public class BlackholeExample {
         bh.consume(a - b);
     }
 
-    // ——— ConsumeCPU for measuring overhead ———
+    // â€”â€”â€” ConsumeCPU for measuring overhead â€”â€”â€”
     @Benchmark
     public void consumeCpu(Blackhole bh) {
         // Consumes approximately 1000 cycles of CPU work
@@ -1527,21 +1527,21 @@ import org.openjdk.jmh.infra.Blackhole;
 @State(Scope.Thread)
 public class CompilerControlExample {
 
-    // ——— DONT_INLINE: force the call to NOT be inlined ———
+    // â€”â€”â€” DONT_INLINE: force the call to NOT be inlined â€”â€”â€”
     @Benchmark
     @CompilerControl(CompilerControl.Mode.DONT_INLINE)
     public void measureWithExclude(Blackhole bh) {
         bh.consume(compute());
     }
 
-    // ——— INLINE: force the call to be inlined ———
+    // â€”â€”â€” INLINE: force the call to be inlined â€”â€”â€”
     @Benchmark
     @CompilerControl(CompilerControl.Mode.INLINE)
     public void measureWithInline(Blackhole bh) {
         bh.consume(compute());
     }
 
-    // ——— EXCLUDE: never JIT compile this method ———
+    // â€”â€”â€” EXCLUDE: never JIT compile this method â€”â€”â€”
     @Benchmark
     @CompilerControl(CompilerControl.Mode.EXCLUDE)
     public void measureInterpreted(Blackhole bh) {
@@ -1633,7 +1633,7 @@ public class ProperBenchmarkRules {
         return sum;
     }
 
-    // RULE 3: avoid constant folding — use fields, not literals
+    // RULE 3: avoid constant folding â€” use fields, not literals
     private final int multiplier = 42;
 
     @Benchmark
@@ -1670,7 +1670,7 @@ public class ProperBenchmarkRules {
         bh.consume(0);
     }
 
-    // RULE 6: test both competitors fairly — same setup
+    // RULE 6: test both competitors fairly â€” same setup
     @Benchmark
     public int rule6_hashMapGet() {
         return 0; // would look up in HashMap in real test
@@ -1698,7 +1698,7 @@ public class ProperBenchmarkRules {
 1. **Never write loops inside a benchmark** to get more "iterations". That's what JMH's `@Measurement` does.
 2. **Always return a value or consume via Blackhole**. If you don't, DCE removes your entire benchmark.
 3. **Use `@State` and `@Setup`** to prepare data. Never prepare data inside the benchmark method.
-4. **Use `@Param`** for size or configuration — not hardcoded values.
+4. **Use `@Param`** for size or configuration â€” not hardcoded values.
 5. **Always include a baseline**. `bh.consume(0)` tells you the framework overhead.
 6. **Run with multiple forks**. A single JVM fork may have already JIT-compiled code, hiding warmup issues.
 7. **Check the JMH output for "HOT" methods** and ensure they are not compiled on first invocation.
@@ -1722,10 +1722,10 @@ import java.util.stream.IntStream;
 @State(Scope.Thread)
 public class ObjectCreationAntiPatterns {
 
-    // ——— ANTI-PATTERN 1: Auto-boxing in loops ———
+    // â€”â€”â€” ANTI-PATTERN 1: Auto-boxing in loops â€”â€”â€”
     @Benchmark
     public long autoBoxing() {
-        Long sum = 0L;              // Long (boxed) — each += creates a new Long
+        Long sum = 0L;              // Long (boxed) â€” each += creates a new Long
         for (int i = 0; i < 1_000_000; i++) {
             sum += i;               // i is auto-boxed, sum is unboxed, result re-boxed
         }
@@ -1734,14 +1734,14 @@ public class ObjectCreationAntiPatterns {
 
     @Benchmark
     public long primitiveSum() {
-        long sum = 0L;              // primitive long — no allocation
+        long sum = 0L;              // primitive long â€” no allocation
         for (int i = 0; i < 1_000_000; i++) {
             sum += i;
         }
         return sum;
     }
 
-    // ——— ANTI-PATTERN 2: String concat in loop ———
+    // â€”â€”â€” ANTI-PATTERN 2: String concat in loop â€”â€”â€”
     @Benchmark
     public String stringConcatInLoop() {
         String s = "";
@@ -1760,13 +1760,13 @@ public class ObjectCreationAntiPatterns {
         return sb.toString();
     }
 
-    // ——— ANTI-PATTERN 3: Creating expensive objects in hot path ———
+    // â€”â€”â€” ANTI-PATTERN 3: Creating expensive objects in hot path â€”â€”â€”
     private static final java.util.regex.Pattern EMAIL_PATTERN =
         java.util.regex.Pattern.compile("^[A-Za-z0-9+_.-]+@(.+)$");
 
     @Benchmark
     public boolean patternCompiledEachTime() {
-        // Pattern.compile() is expensive — do this once as static final
+        // Pattern.compile() is expensive â€” do this once as static final
         return java.util.regex.Pattern
             .compile("^[A-Za-z0-9+_.-]+@(.+)$")
             .matcher("test@example.com")
@@ -1778,7 +1778,7 @@ public class ObjectCreationAntiPatterns {
         return EMAIL_PATTERN.matcher("test@example.com").matches();
     }
 
-    // ——— ANTI-PATTERN 4: Stream overhead for simple operations ———
+    // â€”â€”â€” ANTI-PATTERN 4: Stream overhead for simple operations â€”â€”â€”
     @Benchmark
     public int streamMax() {
         return IntStream.range(0, 1000)
@@ -1813,11 +1813,11 @@ import java.util.stream.*;
 @State(Scope.Benchmark)
 public class SynchronizationAntiPatterns {
 
-    // ——— ANTI-PATTERN: Overly coarse synchronization ———
+    // â€”â€”â€” ANTI-PATTERN: Overly coarse synchronization â€”â€”â€”
     private final Map<String, int[]> synchronizedMap = new HashMap<>();
 
     public synchronized void addSync(String key, int[] value) {
-        // Entire method synchronized — blocks all readers too
+        // Entire method synchronized â€” blocks all readers too
         synchronizedMap.put(key, value);
     }
 
@@ -1830,7 +1830,7 @@ public class SynchronizationAntiPatterns {
         addSync("key-" + ThreadLocalRandom.current().nextInt(100), new int[10]);
     }
 
-    // ——— BETTER: ConcurrentHashMap ———
+    // â€”â€”â€” BETTER: ConcurrentHashMap â€”â€”â€”
     private final Map<String, int[]> concurrentMap = new ConcurrentHashMap<>();
 
     @Benchmark
@@ -1838,7 +1838,7 @@ public class SynchronizationAntiPatterns {
         concurrentMap.put("key-" + ThreadLocalRandom.current().nextInt(100), new int[10]);
     }
 
-    // ——— ANTI-PATTERN: Synchronized when atomic is enough ———
+    // â€”â€”â€” ANTI-PATTERN: Synchronized when atomic is enough â€”â€”â€”
     private int syncCounter = 0;
 
     public synchronized int incrementSync() {
@@ -1850,7 +1850,7 @@ public class SynchronizationAntiPatterns {
         return incrementSync();
     }
 
-    // ——— BETTER: AtomicInteger ———
+    // â€”â€”â€” BETTER: AtomicInteger â€”â€”â€”
     private final AtomicInteger atomicCounter = new AtomicInteger(0);
 
     @Benchmark
@@ -1858,7 +1858,7 @@ public class SynchronizationAntiPatterns {
         return atomicCounter.incrementAndGet();
     }
 
-    // ——— ANTI-PATTERN: Synchronized wrapper on single-threaded code ———
+    // â€”â€”â€” ANTI-PATTERN: Synchronized wrapper on single-threaded code â€”â€”â€”
     private final List<String> syncList = Collections.synchronizedList(new ArrayList<>());
 
     @Benchmark
@@ -1866,7 +1866,7 @@ public class SynchronizationAntiPatterns {
         syncList.add("item");
     }
 
-    // ——— BETTER: Plain ArrayList when single-threaded ———
+    // â€”â€”â€” BETTER: Plain ArrayList when single-threaded â€”â€”â€”
     private final List<String> plainList = new ArrayList<>();
 
     @Benchmark
@@ -1910,7 +1910,7 @@ class ConnectionPoolLeak {
         System.out.println("Connection pool size: " + ds.getMaximumPoolSize());
         System.out.println("Leak detection threshold: " + ds.getLeakDetectionThreshold() + " ms");
 
-        // ——— Simulate connection leak ———
+        // â€”â€”â€” Simulate connection leak â€”â€”â€”
         ExecutorService executor = Executors.newFixedThreadPool(15);
         for (int i = 0; i < 50; i++) {
             final int userId = i;
@@ -1925,7 +1925,7 @@ class ConnectionPoolLeak {
                     if (rs.next()) {
                         System.out.printf("User %d count: %d%n", userId, rs.getInt(1));
                     }
-                    // conn.close() NOT called — leak!
+                    // conn.close() NOT called â€” leak!
                     // ps.close() NOT called
                     // rs.close() NOT called
                 } catch (Exception e) {
@@ -1958,7 +1958,7 @@ class ConnectionPoolLeak {
 import jakarta.persistence.*;
 import java.util.List;
 
-// ——— ENTITY DEFINITIONS ———
+// â€”â€”â€” ENTITY DEFINITIONS â€”â€”â€”
 @Entity
 @Table(name = "authors")
 class Author {
@@ -2003,7 +2003,7 @@ class Book {
     public Author getAuthor() { return author; }
 }
 
-// ——— N+1 DEMONSTRATION ———
+// â€”â€”â€” N+1 DEMONSTRATION â€”â€”â€”
 @org.springframework.stereotype.Service
 class BookService {
 
@@ -2015,7 +2015,7 @@ class BookService {
         this.bookRepository = bookRepository;
     }
 
-    // ——— N+1: 1 query for authors + N queries for books ———
+    // â€”â€”â€” N+1: 1 query for authors + N queries for books â€”â€”â€”
     @Transactional(readOnly = true)
     public void printAuthorBooksNPlus1() {
         List<Author> authors = authorRepository.findAll(); // 1 query
@@ -2025,10 +2025,10 @@ class BookService {
             List<Book> books = author.getBooks();
             System.out.printf("%s wrote %d books%n", author.getName(), books.size());
         }
-        // Total: 1 + N queries — disastrous with 1000 authors
+        // Total: 1 + N queries â€” disastrous with 1000 authors
     }
 
-    // ——— FIX: JOIN FETCH ———
+    // â€”â€”â€” FIX: JOIN FETCH â€”â€”â€”
     @Query("SELECT DISTINCT a FROM Author a LEFT JOIN FETCH a.books")
     List<Author> findAllWithBooks() {
         return authorRepository.findAllWithBooks();
@@ -2038,18 +2038,18 @@ class BookService {
     public void printAuthorBooksJoinFetch() {
         List<Author> authors = findAllWithBooks(); // 1 query with JOIN
         for (Author author : authors) {
-            // books already loaded — no additional queries
+            // books already loaded â€” no additional queries
             System.out.printf("%s wrote %d books%n", author.getName(), author.getBooks().size());
         }
         // Total: 1 query
     }
 
-    // ——— FIX: @EntityGraph ———
+    // â€”â€”â€” FIX: @EntityGraph â€”â€”â€”
     @EntityGraph(attributePaths = "books")
     @Query("SELECT a FROM Author a")
     List<Author> findAllWithEntityGraph();
 
-    // ——— FIX: batch fetching ———
+    // â€”â€”â€” FIX: batch fetching â€”â€”â€”
     // application.properties:
     // spring.jpa.properties.hibernate.default_batch_fetch_size=20
 }
@@ -2072,9 +2072,9 @@ interface BookRepository extends org.springframework.data.jpa.repository.JpaRepo
 import java.util.*;
 import java.util.concurrent.*;
 
-// ——— LEAK 1: Static collection ———
+// â€”â€”â€” LEAK 1: Static collection â€”â€”â€”
 class StaticCollectionLeak {
-    // Never cleared — grows indefinitely
+    // Never cleared â€” grows indefinitely
     private static final List<byte[]> GLOBAL_CACHE = new ArrayList<>();
 
     public void processRequest(byte[] data) {
@@ -2082,7 +2082,7 @@ class StaticCollectionLeak {
     }
 }
 
-// ——— LEAK 2: Unregistered listener/callback ———
+// â€”â€”â€” LEAK 2: Unregistered listener/callback â€”â€”â€”
 interface ChangeListener {
     void onChange();
 }
@@ -2095,7 +2095,7 @@ class EventSource {
     }
 
     public void unregister(ChangeListener listener) {
-        listeners.remove(listener); // never called → leak
+        listeners.remove(listener); // never called â†’ leak
     }
 }
 
@@ -2109,7 +2109,7 @@ class LeakyComponent {
     }
 }
 
-// ——— LEAK 3: ThreadLocal not cleared ———
+// â€”â€”â€” LEAK 3: ThreadLocal not cleared â€”â€”â€”
 class ThreadLocalLeakExample {
     private static final ThreadLocal<Map<String, Object>> REQUEST_CONTEXT =
         ThreadLocal.withInitial(HashMap::new);
@@ -2126,7 +2126,7 @@ class ThreadLocalLeakExample {
     }
 }
 
-// ——— LEAK 4: HashMap with mutable keys ———
+// â€”â€”â€” LEAK 4: HashMap with mutable keys â€”â€”â€”
 class MutableKeyLeak {
     public static void main(String[] args) {
         Map<MutableKey, String> map = new HashMap<>();
@@ -2140,10 +2140,10 @@ class MutableKeyLeak {
         // Now we CANNOT retrieve the value
         System.out.println(map.get(key)); // null
 
-        // And we CANNOT remove it — the bucket is wrong
+        // And we CANNOT remove it â€” the bucket is wrong
         map.remove(key);
 
-        // The entry is leaked — unreachable but still in the map
+        // The entry is leaked â€” unreachable but still in the map
         System.out.println("Map size: " + map.size()); // still 1!
     }
 }
@@ -2168,7 +2168,7 @@ class MutableKey {
     }
 }
 
-// ——— LEAK 5: Inner class holding outer reference ———
+// â€”â€”â€” LEAK 5: Inner class holding outer reference â€”â€”â€”
 class OuterWithLeak {
     private final byte[] expensiveData = new byte[1_000_000];
 
@@ -2185,7 +2185,7 @@ class OuterWithLeak {
     }
 }
 
-// ——— FIXES ———
+// â€”â€”â€” FIXES â€”â€”â€”
 class LeakPrevention {
 
     // Fix 1: Use WeakHashMap for caches
@@ -2238,7 +2238,7 @@ Understanding JIT compiler behavior helps you write code that the JVM can optimi
 The JVM starts interpreting bytecode. Methods that execute frequently (the **hot** threshold, default 10,000 invocations) are compiled to native code by the C1 compiler. Methods that are even hotter are recompiled by C2 with more aggressive optimizations.
 
 ```java
-// ——— Observing JIT warmup ———
+// â€”â€”â€” Observing JIT warmup â€”â€”â€”
 // Run with: -XX:+PrintCompilation -XX:+UnlockDiagnosticVMOptions
 
 class JitWarmupDemo {
@@ -2267,14 +2267,14 @@ class JitWarmupDemo {
         long result = compute(100);
         long end = System.nanoTime();
 
-        System.out.printf("Result: %d, Time: %.2f µs%n", result, (end - start) / 1000.0);
+        System.out.printf("Result: %d, Time: %.2f Âµs%n", result, (end - start) / 1000.0);
 
         // Repeat to see stable timings after compilation
         for (int i = 0; i < 10; i++) {
             start = System.nanoTime();
             compute(100);
             end = System.nanoTime();
-            System.out.printf("Run %d: %.2f µs%n", i, (end - start) / 1000.0);
+            System.out.printf("Run %d: %.2f Âµs%n", i, (end - start) / 1000.0);
         }
     }
 }
@@ -2317,7 +2317,7 @@ class WarmupStrategies {
     }
 
     // Strategy 3: Use @Warmup in JMH (recommended)
-    // JMH handles this automatically — it runs warmup iterations
+    // JMH handles this automatically â€” it runs warmup iterations
     // and verifies that JIT compilation has stabilized before
     // recording measurements.
 
@@ -2335,10 +2335,10 @@ class WarmupStrategies {
 
 ### 7.2 Inlining
 
-Inlining replaces a method call with the method body, eliminating call overhead and enabling further optimizations. The JIT inlines aggressively — methods smaller than 325 bytes of bytecode (default `-XX:MaxInlineSize=325`) and call sites with high frequency.
+Inlining replaces a method call with the method body, eliminating call overhead and enabling further optimizations. The JIT inlines aggressively â€” methods smaller than 325 bytes of bytecode (default `-XX:MaxInlineSize=325`) and call sites with high frequency.
 
 ```java
-// ——— Methods the JIT will inline ———
+// â€”â€”â€” Methods the JIT will inline â€”â€”â€”
 class InlineExample {
 
     // Small, hot: WILL be inlined (13 bytes bytecode)
@@ -2355,7 +2355,7 @@ class InlineExample {
         return result;
     }
 
-    // ——— Methods the JIT will NOT inline ———
+    // â€”â€”â€” Methods the JIT will NOT inline â€”â€”â€”
     // Large method: will NOT be inlined by default
     static int largeMethod(int input) {
         int a = input * 2;
@@ -2421,7 +2421,7 @@ class DeadCodeElimination {
         // the JIT can prove 'result' is never used and removes it!
         System.out.printf("Time: %.2f ms%n", (end - start) / 1_000_000.0);
 
-        // ——— Now compare: prevent DCE by using result ———
+        // â€”â€”â€” Now compare: prevent DCE by using result â€”â€”â€”
         long start2 = System.nanoTime();
 
         long result2 = 0;
@@ -2456,7 +2456,7 @@ class DceAwareService {
         this.expensiveDep = expensiveDep;
     }
 
-    // Unused method — Spring AOT may skip its instantiation
+    // Unused method â€” Spring AOT may skip its instantiation
     public String unusedMethod() {
         return expensiveDep.compute();
     }
@@ -2477,17 +2477,17 @@ The JIT unrolls loops to reduce branch overhead and expose instruction-level par
 ```java
 class LoopUnrolling {
 
-    // ——— JIT unrolls small, countable loops ———
+    // â€”â€”â€” JIT unrolls small, countable loops â€”â€”â€”
     static int sumArray(int[] arr) {
         int sum = 0;
-        // Loop with 4 constant-length iterations → fully unrolled
+        // Loop with 4 constant-length iterations â†’ fully unrolled
         for (int i = 0; i < 4; i++) {
             sum += arr[i];  // becomes: sum = arr[0] + arr[1] + arr[2] + arr[3];
         }
         return sum;
     }
 
-    // ——— Partial unrolling for larger loops ———
+    // â€”â€”â€” Partial unrolling for larger loops â€”â€”â€”
     static int sumLargeArray(int[] arr) {
         int sum = 0;
         // For variable-length loops, JIT may unroll in chunks of 4-8
@@ -2505,7 +2505,7 @@ class LoopUnrolling {
         return sum;
     }
 
-    // ——— Manual unrolling for hot paths ———
+    // â€”â€”â€” Manual unrolling for hot paths â€”â€”â€”
     static int sumManuallyUnrolled(int[] arr) {
         int sum = 0;
         int i = 0;
@@ -2539,13 +2539,13 @@ class LoopUnrolling {
 
 ### 7.5 Intrinsics
 
-Intrinsics are methods that the JIT recognizes and replaces with hand-written machine code — usually a CPU instruction.
+Intrinsics are methods that the JIT recognizes and replaces with hand-written machine code â€” usually a CPU instruction.
 
 ```java
 class IntrinsicsExample {
 
     public static void main(String[] args) {
-        // ——— Math intrinsics ———
+        // â€”â€”â€” Math intrinsics â€”â€”â€”
         // These are intrinsified on most platforms:
         double sin = Math.sin(1.5);
         double cos = Math.cos(1.5);
@@ -2555,17 +2555,17 @@ class IntrinsicsExample {
         double abs = Math.abs(-42.0);
         long max = Math.max(100L, 200L);
 
-        // ——— Array copy intrinsic ———
+        // â€”â€”â€” Array copy intrinsic â€”â€”â€”
         int[] src = {1, 2, 3, 4, 5};
         int[] dst = new int[5];
         System.arraycopy(src, 0, dst, 0, 5);
-        // This becomes a single memmove() call — very fast
+        // This becomes a single memmove() call â€” very fast
 
-        // ——— Object intrinsics ———
+        // â€”â€”â€” Object intrinsics â€”â€”â€”
         // Object.getClass() is intrinsified
         Class<?> clazz = "hello".getClass();
 
-        // ——— Unsafe intrinsics (used internally by JDK) ———
+        // â€”â€”â€” Unsafe intrinsics (used internally by JDK) â€”â€”â€”
         // Unsafe.compareAndSwapObject, Unsafe.putOrderedObject, etc.
         // These become single CPU instructions (CMPXCHG on x86)
 
@@ -2585,7 +2585,7 @@ class IntrinsicsExample {
 class IntrinsicChecker {
 
     static void checkIntrinsic() {
-        double x = Math.sin(1.0); // intrinsic on x86_64 → FSIN instruction
+        double x = Math.sin(1.0); // intrinsic on x86_64 â†’ FSIN instruction
     }
 
     public static void main(String[] args) {
@@ -2614,14 +2614,14 @@ class BranchPrediction {
 
         Arrays.sort(sorted);
 
-        // ——— Predictable branch: sorted data ———
+        // â€”â€”â€” Predictable branch: sorted data â€”â€”â€”
         long start = System.nanoTime();
         long sum1 = countAboveThreshold(sorted, 50);
         long end = System.nanoTime();
         System.out.printf("Sorted (predictable): %d, time=%.2f ms%n",
             sum1, (end - start) / 1_000_000.0);
 
-        // ——— Unpredictable branch: unsorted data ———
+        // â€”â€”â€” Unpredictable branch: unsorted data â€”â€”â€”
         start = System.nanoTime();
         long sum2 = countAboveThreshold(unsorted, 50);
         end = System.nanoTime();
@@ -2683,15 +2683,15 @@ import java.util.concurrent.CountDownLatch;
 
 class FalseSharingDemo {
 
-    // ——— FALSE SHARING: fields on same cache line ———
+    // â€”â€”â€” FALSE SHARING: fields on same cache line â€”â€”â€”
     static class SharedCounters {
         volatile long counter1 = 0; // occupies bytes 0-7
-        volatile long counter2 = 0; // bytes 8-15 — SAME CACHE LINE!
+        volatile long counter2 = 0; // bytes 8-15 â€” SAME CACHE LINE!
         // Padding would be needed:
         // volatile long p1, p2, p3, p4, p5, p6, p7; // fill to byte 64
     }
 
-    // ——— FIX: @Contended (JDK 8+) or manual padding ———
+    // â€”â€”â€” FIX: @Contended (JDK 8+) or manual padding â€”â€”â€”
     @jdk.internal.vm.annotation.Contended
     static class PaddedCounters {
         volatile long counter1 = 0;
@@ -2699,7 +2699,7 @@ class FalseSharingDemo {
         volatile long counter2 = 0;
     }
 
-    // ——— Manual padding (works on all JDK versions) ———
+    // â€”â€”â€” Manual padding (works on all JDK versions) â€”â€”â€”
     static class ManualPaddedCounters {
         volatile long counter1 = 0;
         // 7 unused longs push counter2 to a different cache line
@@ -2767,7 +2767,7 @@ class FalseSharingDemo {
 **When to think about false sharing**:
 
 - High-frequency writes to `volatile` fields by different threads
-- Atomic counters (`AtomicLong`, `AtomicInteger`) in arrays — adjacent elements share cache lines
+- Atomic counters (`AtomicLong`, `AtomicInteger`) in arrays â€” adjacent elements share cache lines
 - `Exchanger`, `Exchanger` internal slots, `ThreadPoolExecutor` worker counts
 - Ring buffers (LMAX Disruptor style)
 
@@ -2786,16 +2786,16 @@ JVM flags control memory allocation, garbage collection, compilation, and runtim
 # Young generation size (absolute)
 -Xmn1g
 
-# Ratio of old/young (default 2 → old:young = 2:1)
+# Ratio of old/young (default 2 â†’ old:young = 2:1)
 -XX:NewRatio=3
 
-# Survivor space ratio (default 8 → Eden:S0:S1 = 8:1:1)
+# Survivor space ratio (default 8 â†’ Eden:S0:S1 = 8:1:1)
 -XX:SurvivorRatio=6
 
-# Max metaspace (class metadata) — avoid metaspace GC
+# Max metaspace (class metadata) â€” avoid metaspace GC
 -XX:MaxMetaspaceSize=512m
 
-# Initial metaspace — prevent growth-induced GC
+# Initial metaspace â€” prevent growth-induced GC
 -XX:MetaspaceSize=256m
 ```
 
@@ -2833,7 +2833,7 @@ class HeapConfig {
 ### 8.2 GC Selection & Tuning
 
 ```bash
-# G1GC (default since JDK 9) — balanced throughput and latency
+# G1GC (default since JDK 9) â€” balanced throughput and latency
 -XX:+UseG1GC
 -XX:MaxGCPauseMillis=100         # Target max pause (default 200 ms)
 -XX:G1HeapRegionSize=4m           # Region size (1-32 MB, default based on heap)
@@ -2841,7 +2841,7 @@ class HeapConfig {
 -XX:G1MaxNewSizePercent=60        # Max young gen % (default 60%)
 -XX:G1HeapWastePercent=5          # Waste threshold for mixed GC (default 5%)
 
-# ZGC (JDK 15+ GA, JDK 21+ production-ready) — sub-millisecond pauses
+# ZGC (JDK 15+ GA, JDK 21+ production-ready) â€” sub-millisecond pauses
 -XX:+UseZGC
 -XX:ZAllocationSpikeTolerance=2.0 # Tolerate allocation spikes
 -Xmx16g
@@ -2900,48 +2900,48 @@ class GcComparison {
 ### 8.3 Additional JVM Tuning Flags
 
 ```bash
-# ——— String Deduplication (G1GC only) ———
+# â€”â€”â€” String Deduplication (G1GC only) â€”â€”â€”
 # Deduplicates identical String values in the heap (saves 10-30% on string-heavy apps)
 -XX:+UseStringDeduplication
 
-# ——— Always PreTouch ———
+# â€”â€”â€” Always PreTouch â€”â€”â€”
 # Commit all heap memory at startup instead of lazily.
 # Eliminates pause during first GC when the OS page-faults memory.
 -XX:+AlwaysPreTouch
 
-# ——— Compiler Threads ———
+# â€”â€”â€” Compiler Threads â€”â€”â€”
 # More compiler threads = faster warmup, more CPU during startup
 -XX:CICompilerCount=4
 
-# ——— Reserved Code Cache ———
+# â€”â€”â€” Reserved Code Cache â€”â€”â€”
 # Ensure code cache doesn't fill up (which disables JIT)
 -XX:ReservedCodeCacheSize=256m
 -XX:InitialCodeCacheSize=64m
 
-# ——— Optimize String Concat ———
+# â€”â€”â€” Optimize String Concat â€”â€”â€”
 # String concatenation optimization (default on since JDK 9)
 -XX:+OptimizeStringConcat
 
-# ——— Tiered Compilation ———
+# â€”â€”â€” Tiered Compilation â€”â€”â€”
 # Default on. Can be disabled for faster startup (but slower peak perf)
 -XX:-TieredCompilation
 
-# ——— Thread Stack Size ———
+# â€”â€”â€” Thread Stack Size â€”â€”â€”
 -XX:ThreadStackSize=256k
 
-# ——— Direct Memory ———
+# â€”â€”â€” Direct Memory â€”â€”â€”
 -XX:MaxDirectMemorySize=256m
 
-# ——— Heap Dump on OOM ———
+# â€”â€”â€” Heap Dump on OOM â€”â€”â€”
 -XX:+HeapDumpOnOutOfMemoryError
 -XX:HeapDumpPath=/var/log/app/heapdumps/
 
-# ——— Exit on OOM ———
+# â€”â€”â€” Exit on OOM â€”â€”â€”
 -XX:+ExitOnOutOfMemoryError
 
-# ——— GC Time Ratio ———
+# â€”â€”â€” GC Time Ratio â€”â€”â€”
 # Target that GC time should not exceed 1% of total time (default 99)
--XX:GCTimeRatio=19  # GC time should be < 5% (99 → 1%)
+-XX:GCTimeRatio=19  # GC time should be < 5% (99 â†’ 1%)
 ```
 
 ```java
@@ -2994,17 +2994,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 
-// ——— Option 1: Global lazy initialization ———
+// â€”â€”â€” Option 1: Global lazy initialization â€”â€”â€”
 // application.properties:
 //   spring.main.lazy-initialization=true
 
-// ——— Option 2: Per-bean lazy initialization ———
+// â€”â€”â€” Option 2: Per-bean lazy initialization â€”â€”â€”
 @Service
 @Lazy
 class ExpensiveService {
 
     public ExpensiveService() {
-        System.out.println("ExpensiveService created — deferred until first use");
+        System.out.println("ExpensiveService created â€” deferred until first use");
         // Simulate expensive setup
         try { Thread.sleep(2000); } catch (InterruptedException e) {}
     }
@@ -3018,7 +3018,7 @@ class ExpensiveService {
 class NormalService {
 
     public NormalService() {
-        System.out.println("NormalService created at startup — eager");
+        System.out.println("NormalService created at startup â€” eager");
     }
 }
 
@@ -3043,17 +3043,17 @@ class LazyInitDemo {
 
 | Use Case               | Recommendation                              |
 |------------------------|---------------------------------------------|
-| Development           | Always — faster startup time                |
+| Development           | Always â€” faster startup time                |
 | Production            | Only if startup time matters and services are hit uniformly |
-| Low-traffic services  | Good — infrequently used endpoints skip startup cost |
-| High-traffic services | Not recommended — first request pays full initialization tax |
+| Low-traffic services  | Good â€” infrequently used endpoints skip startup cost |
+| High-traffic services | Not recommended â€” first request pays full initialization tax |
 
 ### 9.2 Connection Pool Tuning
 
 HikariCP is Spring Boot's default connection pool. Tuning it is the single highest-impact per-database optimization.
 
 ```yaml
-# application.yml — HikariCP tuning
+# application.yml â€” HikariCP tuning
 spring:
   datasource:
     hikari:
@@ -3061,8 +3061,8 @@ spring:
       maximum-pool-size: 20
       minimum-idle: 5
       connection-timeout: 5000     # Max ms to wait for a connection
-      idle-timeout: 300000         # 5 min — remove idle connections
-      max-lifetime: 1800000        # 30 min — max connection age
+      idle-timeout: 300000         # 5 min â€” remove idle connections
+      max-lifetime: 1800000        # 30 min â€” max connection age
 
       # Performance settings
       pool-name: AppPool
@@ -3071,7 +3071,7 @@ spring:
       validation-timeout: 3000
 
       # Leak detection
-      leak-detection-threshold: 10000  # 10 sec — warn if connection held too long
+      leak-detection-threshold: 10000  # 10 sec â€” warn if connection held too long
 
       # Prepared statement cache (if driver supports it)
       data-source-properties:
@@ -3118,14 +3118,14 @@ class HikariTuning {
         config.addDataSourceProperty("useServerPrepStmts", "true");
 
         // These reduce per-connection overhead by caching prepared statements
-        // across the connection's lifetime — can improve throughput by 20-40%.
+        // across the connection's lifetime â€” can improve throughput by 20-40%.
 
         config.setAutoCommit(false); // Let Spring manage transactions
         config.setTransactionIsolation("TRANSACTION_READ_COMMITTED");
 
         config.setLeakDetectionThreshold(10_000);
         config.setConnectionTimeout(5_000);
-        config.setMaxLifetime(1_800_000); // 30 min — rotate connections to avoid DB-side drops
+        config.setMaxLifetime(1_800_000); // 30 min â€” rotate connections to avoid DB-side drops
         config.setIdleTimeout(300_000);   // 5 min
 
         return new HikariDataSource(config);
@@ -3156,7 +3156,7 @@ import org.springframework.aot.hint.RuntimeHintsRegistrar;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 
-// ——— AOT hints ———
+// â€”â€”â€” AOT hints â€”â€”â€”
 // In a native image, reflection must be declared at build time.
 // AOT processing analyzes your code and generates these hints automatically,
 // but for edge cases you register them manually.
@@ -3199,7 +3199,7 @@ class SomeSerializableClass implements java.io.Serializable {
     private String data;
 }
 
-// ——— Building with AOT ———
+// â€”â€”â€” Building with AOT â€”â€”â€”
 // Maven:
 //   mvn spring-boot:process-aot
 //   mvn package -Pnative
@@ -3318,7 +3318,7 @@ class VirtualThreadDemo {
         SpringApplication.run(VirtualThreadDemo.class, args);
     }
 
-    // ——— Enable virtual threads for Tomcat ———
+    // â€”â€”â€” Enable virtual threads for Tomcat â€”â€”â€”
     @Bean
     public TomcatProtocolHandlerCustomizer<?> protocolHandlerVirtualThreadExecutor() {
         return handler -> {
@@ -3366,7 +3366,7 @@ class BlockingService {
 
     public String fetchFromExternalService() {
         try {
-            // Simulate blocking I/O — database call, HTTP call, etc.
+            // Simulate blocking I/O â€” database call, HTTP call, etc.
             Thread.sleep(500);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
@@ -3384,7 +3384,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class VirtualThreadPitfalls {
 
-    // ——— PITFALL 1: Pinned threads ———
+    // â€”â€”â€” PITFALL 1: Pinned threads â€”â€”â€”
     // Virtual threads "pin" to their carrier thread when:
     //   - Inside a synchronized block (the main cause)
     //   - Executing native code or JNI
@@ -3392,7 +3392,7 @@ class VirtualThreadPitfalls {
     private static final Object MONITOR = new Object();
 
     static void blockPinned() throws Exception {
-        // synchronized causes pinning — virtual thread can't be unmounted
+        // synchronized causes pinning â€” virtual thread can't be unmounted
         synchronized (MONITOR) {
             Thread.sleep(1000); // carrier thread is blocked!
         }
@@ -3404,13 +3404,13 @@ class VirtualThreadPitfalls {
     static void blockNotPinned() throws Exception {
         REENTRANT_LOCK.lock();
         try {
-            Thread.sleep(1000); // virtual thread unmounts — carrier is free
+            Thread.sleep(1000); // virtual thread unmounts â€” carrier is free
         } finally {
             REENTRANT_LOCK.unlock();
         }
     }
 
-    // ——— PITFALL 2: ThreadLocal with massive data ———
+    // â€”â€”â€” PITFALL 2: ThreadLocal with massive data â€”â€”â€”
     // ThreadLocal works with virtual threads, but each virtual thread
     // has its own copy. With millions of virtual threads, ThreadLocal
     // data multiplies.
@@ -3418,7 +3418,7 @@ class VirtualThreadPitfalls {
     private static final ThreadLocal<byte[]> LARGE_CONTEXT =
         ThreadLocal.withInitial(() -> new byte[100_000]);
 
-    // ——— PITFALL 3: Pool of virtual threads is pointless ———
+    // â€”â€”â€” PITFALL 3: Pool of virtual threads is pointless â€”â€”â€”
     // Virtual threads should NOT be pooled. Create new ones cheaply.
     // Pooling adds overhead for zero benefit.
 
@@ -3430,17 +3430,17 @@ class VirtualThreadPitfalls {
         Thread.startVirtualThread(task);
     }
 
-    // ——— PITFALL 4: Thread pool wrapping ———
+    // â€”â€”â€” PITFALL 4: Thread pool wrapping â€”â€”â€”
     // Wrapping a virtual thread executor in a bounded pool
-    // defeats the purpose — you get the overhead of pooling
+    // defeats the purpose â€” you get the overhead of pooling
     // with a fixed limit on parallelism.
 
     // BAD:
     static final ExecutorService boundedVirtual = Executors.newThreadPerTaskExecutor(
         Thread.ofVirtual().factory()
-    ); // Actually this is OK — newThreadPerTaskExecutor is unbounded
+    ); // Actually this is OK â€” newThreadPerTaskExecutor is unbounded
 
-    // ——— PITFALL 5: Semaphore is your new friend ———
+    // â€”â€”â€” PITFALL 5: Semaphore is your new friend â€”â€”â€”
     // With unlimited virtual threads, you need Semaphore to limit
     // external resource access (DB connections, sockets, etc.)
 
@@ -3449,7 +3449,7 @@ class VirtualThreadPitfalls {
     static void limitedDbAccess() throws Exception {
         DB_CONNECTIONS.acquire();
         try {
-            // access database — at most 10 concurrent virtual threads
+            // access database â€” at most 10 concurrent virtual threads
         } finally {
             DB_CONNECTIONS.release();
         }
@@ -3461,13 +3461,13 @@ class VirtualThreadPitfalls {
 
 ## Summary
 
-- **Profiling tools** range from built-in (JFR/JMC, VisualVM, jstack, jcmd) to commercial (JProfiler, YourKit) to specialized (async-profiler for flame graphs, IntelliJ profiler for IDE integration). Start with JFR for production profiling — its overhead is under 1%.
+- **Profiling tools** range from built-in (JFR/JMC, VisualVM, jstack, jcmd) to commercial (JProfiler, YourKit) to specialized (async-profiler for flame graphs, IntelliJ profiler for IDE integration). Start with JFR for production profiling â€” its overhead is under 1%.
 - **Heap analysis** with Eclipse MAT focuses on the dominator tree, leak suspect reports, and OQL. Understand shallow vs retained heap to identify true memory cost.
 - **Thread dump analysis** reveals deadlocks, contention (BLOCKED threads), and CPU hotspots when you analyze multiple dumps. Online tools like fastthread.io automate the pattern recognition.
 - **GC log analysis** measures pause time, allocation rate, and promotion rate. Tools like GCeasy and GCViewer parse GC logs and provide tuning recommendations.
 - **JMH** is essential for correct microbenchmarking. Key elements: `@Benchmark`, `@State`, `Blackhole`, `@Warmup`/`@Measurement`/`@Fork`, and profiler integration via `-prof`.
 - **Anti-patterns** include auto-boxing in loops, string concatenation in loops, excessive synchronization (prefer `ConcurrentHashMap` and `AtomicInteger`), connection pool leaks, N+1 queries in Hibernate, and memory leaks from static collections, unregistered listeners, mutable keys in HashMap, and ThreadLocal not cleared.
-- **Code optimization** relies on JIT behavior: warmup, inlining, loop unrolling, intrinsics, and branch prediction. Understand that the JIT is your ally — write clear code and let it optimize, with targeted manual optimizations only in confirmed hot paths.
+- **Code optimization** relies on JIT behavior: warmup, inlining, loop unrolling, intrinsics, and branch prediction. Understand that the JIT is your ally â€” write clear code and let it optimize, with targeted manual optimizations only in confirmed hot paths.
 - **JVM tuning** covers heap sizing (`-Xms`/`-Xmx`), GC selection (G1GC for general use, ZGC for sub-millisecond pauses), and flags like `-XX:+AlwaysPreTouch`, `-XX:+UseStringDeduplication`, and `-XX:+HeapDumpOnOutOfMemoryError`.
 - **Spring Boot performance** tuning includes lazy initialization, HikariCP connection pool tuning, AOT processing for native images, graceful shutdown with timeout, and virtual threads (JDK 21+) for high-concurrency blocking I/O.
 
@@ -3547,15 +3547,15 @@ Calculate the minimum `maximum-pool-size` using the formula `poolSize = cores * 
 
 ```
 Benchmark                              Mode  Cnt   Score    Error  Units
-StringConcat.stringConcat             thrpt    5   12.4 ±  2.1  ops/s
-StringConcat.stringBuilder            thrpt    5  842.3 ± 34.2  ops/s
-StringConcat.stringBuffer             thrpt    5  721.5 ± 28.9  ops/s
+StringConcat.stringConcat             thrpt    5   12.4 Â±  2.1  ops/s
+StringConcat.stringBuilder            thrpt    5  842.3 Â± 34.2  ops/s
+StringConcat.stringBuffer             thrpt    5  721.5 Â± 28.9  ops/s
 ```
 
 ```
 Benchmark                        Mode  Cnt     Score    Error  Units
-ListBenchmark.arrayListGet      thrpt    5  8421.3 ± 212.4  ops/s
-ListBenchmark.linkedListGet     thrpt    5   832.1 ±  67.3  ops/s
+ListBenchmark.arrayListGet      thrpt    5  8421.3 Â± 212.4  ops/s
+ListBenchmark.linkedListGet     thrpt    5   832.1 Â±  67.3  ops/s
 ```
 
 14. Analyze the following GC log segment and identify potential issues:
@@ -3604,7 +3604,7 @@ class LeakyCache {
                     rng.nextBytes(payload);
                     sessions.put(sessionId, new SessionData(sessionId, payload));
                 }
-                // Sessions are never removed — leak
+                // Sessions are never removed â€” leak
             }
         }, 0, 5000);
     }
@@ -3732,9 +3732,9 @@ Set up a complete profiling exercise:
    - Capture a heap dump
 
 4. Analyze:
-   - Open JFR in JMC — find the hottest methods
-   - Upload thread dumps to fastthread.io — identify contention
-   - Open heap dump in MAT — run leak suspect report
+   - Open JFR in JMC â€” find the hottest methods
+   - Upload thread dumps to fastthread.io â€” identify contention
+   - Open heap dump in MAT â€” run leak suspect report
 
 5. Based on findings, apply 3 optimizations. Re-run and show the improvement.
 

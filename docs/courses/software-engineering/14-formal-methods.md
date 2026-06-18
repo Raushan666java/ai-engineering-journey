@@ -6,7 +6,7 @@ After completing this chapter, the student will be able to: explain the purpose 
 
 ## Theory
 
-![Formal Methods Landscape](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/software-engineering/ch-14-formal-methods.png)
+![Formal Methods Landscape](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-14-formal-methods.png)
 
 ### The Role of Formal Methods
 
@@ -14,7 +14,7 @@ Formal methods are mathematically based techniques for the specification, develo
 
 The use of formal methods is motivated by the limitations of informal approaches. Natural language specifications are inherently ambiguous. Testing can demonstrate the presence of defects but cannot demonstrate their absence. Formal methods enable precise specification and exhaustive verification, making them essential for safety-critical and security-critical systems where failure has catastrophic consequences.
 
-The adoption of formal methods in industry has been limited by the mathematical sophistication required, the cost of formal analysis, and the difficulty of scaling formal techniques to large systems. However, in domains where correctness is paramount — such as railway signalling, avionics, and cryptographic protocol verification — formal methods are established practice.
+The adoption of formal methods in industry has been limited by the mathematical sophistication required, the cost of formal analysis, and the difficulty of scaling formal techniques to large systems. However, in domains where correctness is paramount â€” such as railway signalling, avionics, and cryptographic protocol verification â€” formal methods are established practice.
 
 ### Formal Specification
 
@@ -22,7 +22,7 @@ Formal specification uses mathematical notation to describe what a system must d
 
 #### The Z Notation
 
-Z is a formal specification language based on set theory and first-order predicate logic. Z organises specifications into schemas — rectangular boxes that describe the state of a system and the operations that change it.
+Z is a formal specification language based on set theory and first-order predicate logic. Z organises specifications into schemas â€” rectangular boxes that describe the state of a system and the operations that change it.
 
 A Z schema has a name and consists of two parts: the declaration part, which introduces variables and their types, and the predicate part, which constrains the values of those variables. A state schema defines the system state and its invariants. An operation schema describes an operation in terms of its effect on the state and its inputs and outputs.
 
@@ -66,7 +66,7 @@ Hoare logic provides a formal system for reasoning about program correctness. Th
 
 A Hoare triple is valid if every execution of C starting from a state satisfying P results in a state satisfying Q. Hoare logic provides inference rules for each programming language construct: the assignment rule, the composition rule, the conditional rule, the loop rule with invariants, and the consequence rule for strengthening preconditions and weakening postconditions.
 
-The key challenge in Hoare logic is finding loop invariants — predicates that hold before and after each iteration. Loop invariants must be true initially, preserved by the loop body, and strong enough to imply the desired postcondition when the loop terminates.
+The key challenge in Hoare logic is finding loop invariants â€” predicates that hold before and after each iteration. Loop invariants must be true initially, preserved by the loop body, and strong enough to imply the desired postcondition when the loop terminates.
 
 Partial correctness requires that if the program terminates, the postcondition holds. Total correctness additionally requires that the program terminates.
 
@@ -111,14 +111,14 @@ The loop invariant is: f = (i-1)! and i <= n+1.
 
 _LibrarySystem_
 knownBooks: P ISBN
-shelved: ISBN → Location
-borrowed: ISBN → Borrower
-status: ISBN → BookStatus
+shelved: ISBN â†’ Location
+borrowed: ISBN â†’ Borrower
+status: ISBN â†’ BookStatus
 
-dom shelved ∪ dom borrowed = knownBooks
-dom shelved ∩ dom borrowed = ∅
-∀ b: dom borrowed • status(b) = ON_LOAN
-∀ b: dom shelved • status(b) = AVAILABLE
+dom shelved âˆª dom borrowed = knownBooks
+dom shelved âˆ© dom borrowed = âˆ…
+âˆ€ b: dom borrowed â€¢ status(b) = ON_LOAN
+âˆ€ b: dom shelved â€¢ status(b) = AVAILABLE
 
 ## Summary
 

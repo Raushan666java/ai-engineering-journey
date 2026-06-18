@@ -15,7 +15,7 @@ By the end of this chapter, you will be able to:
 
 ## Theory
 
-![Apache Kafka Architecture](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/36-kafka.png)
+![Apache Kafka Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/36-kafka.png)
 
 ### 1. Kafka Core Concepts
 
@@ -35,7 +35,7 @@ Apache Kafka is a distributed event streaming platform. Unlike RabbitMQ (a messa
 | **Replication** | Partitions are replicated across brokers. The leader handles reads/writes; followers replicate. |
 | **Log Segment** | The physical storage unit. Topics are split into segments on disk. |
 
-**Architecture evolution — ZooKeeper vs KRaft:**
+**Architecture evolution â€” ZooKeeper vs KRaft:**
 
 | Aspect | ZooKeeper-based (legacy) | KRaft (Kafka 3.x+) |
 |--------|------------------------|--------------------|
@@ -202,7 +202,7 @@ producerProps.put(ProducerConfig.MAX_REQUEST_SIZE_CONFIG, 10485760);  // 10MB
 producerProps.put(ProducerConfig.MAX_BLOCK_MS_CONFIG, 60000);         // Block for metadata
 ```
 
-### 4. KafkaTemplate — Producing Messages
+### 4. KafkaTemplate â€” Producing Messages
 
 ```java
 @Service
@@ -415,7 +415,7 @@ consumerProps.put(ConsumerConfig.PARTITION_ASSIGNMENT_STRATEGY_CONFIG,
     CooperativeStickyAssignor.class.getName());
 ```
 
-### 7. @KafkaListener — Consuming Messages
+### 7. @KafkaListener â€” Consuming Messages
 
 ```java
 @Component
@@ -488,7 +488,7 @@ public class OrderConsumer {
             acknowledgment.acknowledge();
         } catch (Exception e) {
             log.error("Failed to process order {}", order.getId(), e);
-            // Do not ack — message will be redelivered
+            // Do not ack â€” message will be redelivered
         }
     }
 
@@ -1583,9 +1583,9 @@ Apache Kafka is a distributed event streaming platform built on an append-only l
 - **Producers** use `KafkaTemplate` with callbacks for reliability. Enable idempotence (`enable.idempotence=true`) and use `acks=all` for strong guarantees. Tune `batch.size` and `linger.ms` for throughput.
 - **Consumers** use `@KafkaListener` with configurable `AckMode`. `MANUAL_IMMEDIATE` gives precise control. Use `DefaultErrorHandler` with `DeadLetterPublishingRecoverer` for production error handling.
 - **Exactly-once** requires idempotent producers + transactional producers/consumers + `read_committed` isolation. Configure `processing.guarantee=exactly_once_v2` for Streams.
-- **Schema Registry** provides schema evolution with Avro, Protobuf, or JSON Schema — essential for production.
+- **Schema Registry** provides schema evolution with Avro, Protobuf, or JSON Schema â€” essential for production.
 - **Kafka Streams** enables stream processing within the same application. Use `KStream` for record streams, `KTable` for changelog views, and `GlobalKTable` for fully replicated lookup tables. Windows (tumbling, hopping, sliding) enable time-based aggregations.
-- **Error handling** with `@RetryableTopic` simplifies retry infrastructure — it auto-creates retry topics and a DLT.
+- **Error handling** with `@RetryableTopic` simplifies retry infrastructure â€” it auto-creates retry topics and a DLT.
 
 ## Exercises
 

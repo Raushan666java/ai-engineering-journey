@@ -1,10 +1,10 @@
-﻿# 66. Behavioral Interview — Q&A
+# 66. Behavioral Interview — Q&A
 
 This chapter covers behavioral interview preparation for Java backend engineers. It includes the STAR method, common behavioral questions with structured answers, salary negotiation tactics, and thoughtful questions to ask your interviewer. Each answer follows the STAR format (Situation, Task, Action, Result) and is tailored to software engineering contexts.
 
 ---
 
-![Behavioral Interview - STAR Method Flowchart](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/java/66-interview-behavioral.png)
+![Behavioral Interview - STAR Method Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/66-interview-behavioral.png)
 
 ### Q1: Tell me about a time you had a conflict with a teammate. How did you resolve it?
 

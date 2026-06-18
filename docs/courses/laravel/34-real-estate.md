@@ -1,4 +1,4 @@
-﻿# Chapter 34: Real Estate & Property â€” AI-Powered Real Estate Agents
+# Chapter 34: Real Estate & Property â€” AI-Powered Real Estate Agents
 
 ---
 
@@ -18,7 +18,7 @@
 
 ## Theory
 
-![Real Estate Domain](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/34-real-estate.png)
+![Real Estate Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/34-real-estate.png)
 
 
 ### 34.1 Real Estate Data Models

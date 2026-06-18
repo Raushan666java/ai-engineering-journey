@@ -1,4 +1,4 @@
-﻿# Chapter 12: Laravel AI SDK â€” Agents, Prompting & Structured Output
+# Chapter 12: Laravel AI SDK â€” Agents, Prompting & Structured Output
 
 ---
 ## Learning Objectives
@@ -12,7 +12,7 @@
 ---
 ## Theory
 
-![AI SDK Agents](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/laravel/12-ai-sdk-agents.png)
+![AI SDK Agents](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/12-ai-sdk-agents.png)
 
 
 ### 12.1 The AI SDK Architecture

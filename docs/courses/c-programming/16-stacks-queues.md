@@ -8,7 +8,7 @@
 - Analyze the time complexity of stack and queue operations
 - Apply stacks and queues to practical problems
 
-![C Stacks and Queues: LIFO and FIFO ADTs, Array and Linked-List Implementations](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/c-programming/ch-16-stacks-queues.png)
+![C Stacks and Queues: LIFO and FIFO ADTs, Array and Linked-List Implementations](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-16-stacks-queues.png)
 
 ## 16.1 The Stack Abstract Data Type
 
@@ -575,9 +575,9 @@ Dequeued: 4
 ## 16.4 Queue Applications
 
 1. **BFS (Breadth-First Search)** in graphs
-2. **Print spooling** — documents queued for printing
+2. **Print spooling** â€” documents queued for printing
 3. **Task scheduling** in operating systems
-4. **Buffering** — IO buffers, keyboard buffers
+4. **Buffering** â€” IO buffers, keyboard buffers
 5. **Breadth-first traversal** of trees
 
 ## Summary
@@ -601,10 +601,10 @@ Dequeued: 4
 
 ### Application Problems
 
-1. Implement a function `int evaluate_postfix(const char *expr)` that evaluates a postfix expression using a stack. The expression contains single-digit integers and the operators `+`, `-`, `*`, `/`. Example: `"23+"` → 5, `"23*54*+"` → 26.
+1. Implement a function `int evaluate_postfix(const char *expr)` that evaluates a postfix expression using a stack. The expression contains single-digit integers and the operators `+`, `-`, `*`, `/`. Example: `"23+"` â†’ 5, `"23*54*+"` â†’ 26.
 2. Implement a **deque** (double-ended queue) using a doubly linked list. Provide `push_front`, `push_back`, `pop_front`, `pop_back`, `front`, `back`, `is_empty` operations.
 3. Use a stack to implement a function `void decimal_to_binary(int n)` that prints the binary representation of a non-negative integer.
-4. Write a program that uses a queue to simulate a **printer queue**: jobs arrive every 1–5 seconds (use `rand()`), each taking 1–3 seconds to print. Simulate for 30 seconds and report the average wait time.
+4. Write a program that uses a queue to simulate a **printer queue**: jobs arrive every 1â€“5 seconds (use `rand()`), each taking 1â€“3 seconds to print. Simulate for 30 seconds and report the average wait time.
 
 ### Challenge Problem
 

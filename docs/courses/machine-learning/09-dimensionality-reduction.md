@@ -1,4 +1,4 @@
-﻿# Chapter 9: Dimensionality Reduction
+# Chapter 9: Dimensionality Reduction
 
 ---
 
@@ -33,7 +33,7 @@ The explained variance ratio tells us how much information (variance) each princ
 ### Other Techniques (t-SNE and UMAP)
 While PCA is linear, other techniques like t-Distributed Stochastic Neighbor Embedding (t-SNE) and Uniform Manifold Approximation and Projection (UMAP) are non-linear. They are primarily used for visualizing high-dimensional data in 2D or 3D by preserving local relationships between points.
 
-![PCA Process](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/machine-learning/ch09-pca.png)
+![PCA Process](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/machine-learning/ch09-pca.png)
 
 ---
 

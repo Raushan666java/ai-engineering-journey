@@ -1,6 +1,6 @@
 # Chapter 17: Randomized Algorithms
 
-> **Prerequisites:** [Chapter 16: Approximation Algorithms](./16-approximation.md) — Algorithm design for hard problems | **Next:** [Chapter 18: Advanced Topics](./18-advanced.md) — From randomized methods to online and streaming algorithms
+> **Prerequisites:** [Chapter 16: Approximation Algorithms](./16-approximation.md) â€” Algorithm design for hard problems | **Next:** [Chapter 18: Advanced Topics](./18-advanced.md) â€” From randomized methods to online and streaming algorithms
 
 ## Learning Objectives
 
@@ -19,9 +19,9 @@ By the end of this chapter, students will be able to:
 |-------|-------------|-------------------|
 | Monte Carlo | May give wrong answer with bounded probability | Probability of error can be made arbitrarily small |
 | Las Vegas | Always correct; running time is random | Expected time analysis, not worst case |
-| Randomized Quicksort | Random pivot avoids worst case | O(n log n) expected; O(n²) worst case with vanishing probability |
+| Randomized Quicksort | Random pivot avoids worst case | O(n log n) expected; O(nÂ²) worst case with vanishing probability |
 | Randomized Quickselect | Random pivot for k-th smallest | O(n) expected time selection |
-| Miller-Rabin | Probabilistic primality test | O(log³ n); composite detected with probability ≥ 3/4 |
+| Miller-Rabin | Probabilistic primality test | O(logÂ³ n); composite detected with probability â‰¥ 3/4 |
 
 ### Chapter Roadmap
 
@@ -38,7 +38,7 @@ flowchart LR
 
 ## Theory
 
-![Randomized Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch17-randomized.png)
+![Randomized Algorithms Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch17-randomized.png)
 
 ### 17.1 Classification
 
@@ -69,7 +69,7 @@ flowchart LR
 
 ## Theory
 
-![Randomized Algorithms Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch17-randomized.png)
+![Randomized Algorithms Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch17-randomized.png)
 
 ### 17.1 Classification
 
@@ -252,7 +252,7 @@ bool millerRabin(int64_t n, int k) {
 |-----------|------|------|-------------|---------------|
 | Randomized Quicksort | Las Vegas | O(n log n) expected | Always | Random pivot avoids worst case |
 | Randomized Quickselect | Las Vegas | O(n) expected | Always | Random pivot gives linear expected time |
-| Miller-Rabin | Monte Carlo | O(k log^3 n) | Error ≤ 4^-k | Strong pseudoprime check, k rounds |
+| Miller-Rabin | Monte Carlo | O(k log^3 n) | Error â‰¤ 4^-k | Strong pseudoprime check, k rounds |
 | Karger Min-Cut | Monte Carlo | O(n^4 log n) | High probability | Random edge contraction |
 
 ### Quick Reference
@@ -263,7 +263,7 @@ bool millerRabin(int64_t n, int k) {
 | **Monte Carlo** | Bounded error; deterministic time; amplify via repetition; examples: Miller-Rabin, Karger |
 | **Quickselect** | Expected O(n); probability of worst case is 1/n! |
 | **Quicksort** | Expected O(n log n); ~1.39 n log_2 n comparisons |
-| **Miller-Rabin** | Error ≤ 4^-k; strong pseudoprime; deterministic for n < 2^64 |
+| **Miller-Rabin** | Error â‰¤ 4^-k; strong pseudoprime; deterministic for n < 2^64 |
 | **Other Techniques** | Karger min-cut, Freivalds matrix check, birthday paradox |
 
 ### Cross-Application Matrix
@@ -309,11 +309,11 @@ B) Las Vegas algorithms are always correct (running time is random); Monte Carlo
 - A) O(log n)
 - B) O(n)
 - C) O(n log n)
-- D) O(n²)
+- D) O(nÂ²)
 
 <details>
 <summary>Answer</summary>
-B) O(n) expected. The recurrence T(n) ≤ T(3n/4) + O(n) solves to O(n).
+B) O(n) expected. The recurrence T(n) â‰¤ T(3n/4) + O(n) solves to O(n).
 </details>
 
 **Q3.** What is the source of error in the Miller-Rabin primality test?
@@ -331,7 +331,7 @@ D) For a composite number, a random base has at most 25% chance of falsely decla
 ### Review Questions
 
 1. Distinguish between Monte Carlo and Las Vegas algorithms with examples.
-2. Why does randomized quicksort avoid the worst-case O(n²) behavior?
+2. Why does randomized quicksort avoid the worst-case O(nÂ²) behavior?
 3. What is the source of error in the Miller-Rabin test?
 
 ### Application Problems

@@ -1,5 +1,8 @@
 # Chapter 11: Instruction Set Architecture
 
+> **Prereq:** Chapter 10 (Control Unit) â€” the control unit decodes and executes instructions defined by the ISA.
+> **Next:** Chapter 12 (Pipelining) â€” the ISA determines pipeline design and hazard handling.
+
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
@@ -10,9 +13,34 @@ By the conclusion of this chapter, the student shall be able to:
 4. Analyse the MIPS ISA as a representative RISC architecture
 5. Write simple assembly programs using common instruction types
 
+### Chapter at a Glance
+
+| Section | Key Concept | Why It Matters |
+|---------|-------------|----------------|
+| Instruction Formats | R, I, J types | Determines encoding efficiency |
+| Addressing Modes | Register, immediate, base | How operands are located |
+| MIPS ISA | RISC reference | Clean design, widely studied |
+| RISC-V | Modern open-source ISA | Industry momentum, extensibility |
+| Calling Convention | Register usage, stack frame | Software interoperability |
+
+```mermaid
+flowchart LR
+    A[ISA] --> B[Instruction Formats]
+    A --> C[Addressing Modes]
+    A --> D[Register Set]
+    A --> E[Data Types]
+    A --> F[MIPS]
+    A --> G[RISC-V]
+    style A fill:#e1f5fe
+    style F fill:#c8e6c9
+    style G fill:#c8e6c9
+```
+
+> **One-Sentence Takeaway:** The ISA defines the contract between software and hardware â€” its choice of formats, addressing modes, and register conventions directly shapes compiler code generation and microarchitecture complexity.
+
 ## Theory
 
-![Instruction Set Architecture Concepts and MIPS Formats](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/digital-logic/ch11-isa.png)
+![Instruction Set Architecture Concepts and MIPS Formats](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch11-isa.png)
 
 ### 11.1 Instruction Set Architecture (ISA) Overview
 
@@ -49,7 +77,7 @@ MIPS is a 32-bit RISC architecture with 32 general-purpose registers (R0 through
 - shamt (5 bits): Shift amount (used by shift instructions).
 - funct (6 bits): Extended opcode for R-type operations.
 
-Example: `ADD rd, rs, rt` — rd = rs + rt.
+Example: `ADD rd, rs, rt` â€” rd = rs + rt.
 
 #### 11.3.2 I-Type (Immediate)
 
@@ -59,7 +87,7 @@ Example: `ADD rd, rs, rt` — rd = rs + rt.
 
 The immediate field is sign-extended to 32 bits for arithmetic operations.
 
-Example: `LW rt, offset(rs)` — rt = Memory[rs + offset].
+Example: `LW rt, offset(rs)` â€” rt = Memory[rs + offset].
 
 #### 11.3.3 J-Type (Jump)
 
@@ -69,7 +97,7 @@ Example: `LW rt, offset(rs)` — rt = Memory[rs + offset].
 
 The 26-bit target address is left-shifted by 2 and combined with the upper 4 bits of PC + 4 to form the 32-bit jump target.
 
-Example: `J target` — PC = (PC + 4)[31:28] || target &lt;&lt; 2.
+Example: `J target` â€” PC = (PC + 4)[31:28] || target &lt;&lt; 2.
 
 ### 11.4 Addressing Modes
 
@@ -108,7 +136,7 @@ Store: SW, SH, SB.
 #### 11.5.4 Control Transfer Instructions
 
 - **Conditional branches**: BEQ (branch if equal), BNE (branch if not equal), BLEZ, BGTZ, BLTZ.
-- **Unconditional jumps**: J (jump), JR (jump register), JAL (jump and link — saves return address to R31).
+- **Unconditional jumps**: J (jump), JR (jump register), JAL (jump and link â€” saves return address to R31).
 
 #### 11.5.5 Miscellaneous Instructions
 
@@ -123,8 +151,8 @@ The MIPS calling convention partitions the register file:
 - R0: Hardwired zero
 - R2&ndash;R3: Return values
 - R4&ndash;R7: Function arguments (a0&ndash;a3)
-- R8&ndash;R15: Temporaries (t0&ndash;t7) — not preserved across calls
-- R16&ndash;R23: Saved values (s0&ndash;s7) — preserved across calls
+- R8&ndash;R15: Temporaries (t0&ndash;t7) â€” not preserved across calls
+- R16&ndash;R23: Saved values (s0&ndash;s7) â€” preserved across calls
 - R24&ndash;R25: Temporaries (t8&ndash;t9)
 - R26&ndash;R27: Kernel temporaries
 - R28: Global pointer
@@ -175,6 +203,33 @@ LOOP:
     BNE  R2, R0, LOOP   ; if count != 0, loop
 ```
 
+### Concept Comparison
+
+| Format | Opcode | rs | rt | rd | funct | Immediate/Target |
+|--------|--------|----|----|----|-------|-----------------|
+| R-type | 6 bits | 5 | 5 | 5 | 6 bits | â€” |
+| I-type | 6 bits | 5 | 5 | â€” | â€” | 16 bits |
+| J-type | 6 bits | â€” | â€” | â€” | â€” | 26 bits |
+
+### Quick Reference
+
+| Addressing Mode | Effective Address | MIPS Example |
+|----------------|------------------|-------------|
+| Register | Operand = Rs | ADD Rd, Rs, Rt |
+| Immediate | Operand = imm | ADDI Rt, Rs, imm |
+| Base+Offset | EA = Rs + offset | LW Rt, offset(Rs) |
+| PC-relative | EA = PC + 4 + offsetÃ—4 | BEQ Rs, Rt, label |
+| Pseudo-direct | EA = (PC+4)[31:28] âˆ¥ targetÃ—4 | J target |
+
+### Cross-Application Matrix
+
+| Domain | Application | Relevance |
+|--------|-------------|-----------|
+| CPU Design | MIPS, ARM, x86, RISC-V ISA design | ISA defines the hardware-software boundary |
+| Embedded Systems | Thumb/ARM compressed instructions | Code density matters in small memory |
+| Digital Circuits | Custom ISA for FPGA soft-cores | ISA tailoring for specialised workloads |
+| Research | Domain-specific ISAs (DSA) | ML-oriented instructions for tensor ops |
+
 ## Summary
 
 - An ISA defines the programmer-visible interface between software and hardware.
@@ -207,4 +262,29 @@ LOOP:
 
 ### Challenge Problem
 
-Design a minimal instruction set for a custom 16-bit processor with the following requirements: 16 general-purpose registers, byte-addressable memory, and support for arithmetic (ADD, SUB), logic (AND, OR), data transfer (LOAD, STORE), and control (BEQ, JMP). Define the instruction formats, assign opcodes, and write the assembly code for the function F = (A + B) &minus; (C + D). Each instruction must be exactly 16 bits.
+Design a minimal instruction set for a custom 16-bit processor with the following requirements: 16 general-purpose registers, byte-addressable memory, and support for arithmetic (ADD, SUB), logic (AND, OR), data transfer (LOAD, STORE), and control (BEQ, JMP). Define the instruction formats, assign opcodes, and write the assembly code for the function F =     (A + B) &minus; (C + D). Each instruction must be exactly 16 bits.
+
+### Chapter Quiz
+
+1. MIPS R-type instructions encode:
+   - A) All operands in 16-bit immediate fields
+   - B) Three register operands and a function code
+   - C) A memory address and a register
+   - D) A jump target and opcode only
+
+2. The funct field in MIPS R-type instructions is needed because:
+   - A) Multiple instructions share the same opcode
+   - B) It stores the immediate value
+   - C) It encodes the destination register
+   - D) It determines the instruction length
+
+3. PC-relative addressing is used primarily by:
+   - A) Load instructions
+   - B) Store instructions
+   - C) Branch instructions
+   - D) Jump instructions
+
+<details>
+<summary>Answers</summary>
+1. B, 2. A, 3. C
+</details>

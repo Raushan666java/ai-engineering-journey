@@ -1,6 +1,6 @@
 # Chapter 5: Divide and Conquer
 
-> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) — Recurrence analysis and the master theorem | **Next:** [Chapter 6: Greedy Algorithms](./06-greedy.md) — From divide-and-conquer to locally optimal choices
+> **Prerequisites:** [Chapter 1: Fundamentals of Algorithm Analysis](./01-analysis.md) â€” Recurrence analysis and the master theorem | **Next:** [Chapter 6: Greedy Algorithms](./06-greedy.md) â€” From divide-and-conquer to locally optimal choices
 
 ## Learning Objectives
 
@@ -18,9 +18,9 @@ By the end of this chapter, students will be able to:
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
 | Maximum Subarray | Crossing sum requires linear scan | Kadane's O(n) DP beats divide-and-conquer O(n log n) |
-| Strassen's Matrix Mult | 7 multiplications instead of 8 | O(n^2.807) — breakthrough but high constant factor |
-| Closest Pair | Strip of width 2δ, only 7 comparisons per point | Classic O(n log n) geometric algorithm |
-| Karatsuba Multiplication | 3 multiplications instead of 4 | O(n^1.585) — first fast multiplication algorithm |
+| Strassen's Matrix Mult | 7 multiplications instead of 8 | O(n^2.807) â€” breakthrough but high constant factor |
+| Closest Pair | Strip of width 2Î´, only 7 comparisons per point | Classic O(n log n) geometric algorithm |
+| Karatsuba Multiplication | 3 multiplications instead of 4 | O(n^1.585) â€” first fast multiplication algorithm |
 
 ### Chapter Roadmap
 
@@ -31,10 +31,10 @@ flowchart LR
     A --> D[Closest Pair]
     A --> E[Karatsuba Mult]
     B --> F[Tn=2Tn/2+On]
-    C --> G[Tn=7Tn/2+On²]
+    C --> G[Tn=7Tn/2+OnÂ²]
     D --> H[Tn=2Tn/2+On]
     E --> I[Tn=3Tn/2+On]
-    F --> J[Θ(n log n)]
+    F --> J[Î˜(n log n)]
     G --> K[O(n^2.807)]
     H --> L[O(n log n)]
     I --> M[O(n^1.585)]
@@ -42,7 +42,7 @@ flowchart LR
 
 ## Theory
 
-![Divide and Conquer Diagram](https://raw.githubusercontent.com/AkashSingh3031/AI-Engineering-Journey/main/docs/assets/images/diagrams/algorithms/ch05-divide-conquer.png)
+![Divide and Conquer Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch05-divide-conquer.png)
 
 ### 5.1 Maximum Subarray Problem
 
@@ -117,9 +117,9 @@ C_{22} &= P_5 + P_1 - P_3 - P_7
 
 **Recurrence:** \( T(n) = 7T(n/2) + O(n^2) \). By the master theorem, \( \log_2 7 \approx 2.807 \), so \( T(n) = O(n^{2.807}) \).
 
-> **Pro Tip:** Strassen's algorithm has a large constant factor and numerical stability issues. In practice, standard O(n³) multiplication is faster for n < 1000. Use Strassen only for very large matrices.
+> **Pro Tip:** Strassen's algorithm has a large constant factor and numerical stability issues. In practice, standard O(nÂ³) multiplication is faster for n < 1000. Use Strassen only for very large matrices.
 >
-> **Remember:** Strassen was the first algorithm to break the O(n³) barrier, but theoretical improvements now reach O(n^2.372).
+> **Remember:** Strassen was the first algorithm to break the O(nÂ³) barrier, but theoretical improvements now reach O(n^2.372).
 
 **One-Sentence Takeaway:** Strassen's matrix multiplication reduces subproblems from 8 to 7, achieving O(n^2.807) at the cost of complex recombination and numerical precision.
 
@@ -137,7 +137,7 @@ C_{22} &= P_5 + P_1 - P_3 - P_7
 
 **Recurrence:** \( T(n) = 2T(n/2) + O(n) = O(n \log n) \). (The \( O(n) \) factor accounts for merging the strip by \( y \)-coordinate using a global sort or merge.)
 
-> **Pro Tip:** In the closest pair algorithm, the "7-point check" is critical — after sorting the strip by y, each point needs checking against at most 7 following points. This guarantees the O(n log n) bound.
+> **Pro Tip:** In the closest pair algorithm, the "7-point check" is critical â€” after sorting the strip by y, each point needs checking against at most 7 following points. This guarantees the O(n log n) bound.
 >
 > **Warning:** The closest pair algorithm assumes no duplicate points. If duplicates exist, the distance becomes 0 and the strip logic changes.
 
@@ -163,9 +163,9 @@ Then \( xy = 10^n z_2 + 10^{n/2} z_1 + z_0 \).
 
 **Recurrence:** \( T(n) = 3T(n/2) + O(n) \). By the master theorem, \( \log_2 3 \approx 1.585 \), so \( T(n) = O(n^{1.585}) \).
 
-> **Pro Tip:** Karatsuba's insight — computing (a+b)(c+d) saves one multiplication — generalizes to Toom-Cook (split into 3 parts) and FFT-based methods (O(n log n)). Each reduces the subproblem count at the cost of more additions.
+> **Pro Tip:** Karatsuba's insight â€” computing (a+b)(c+d) saves one multiplication â€” generalizes to Toom-Cook (split into 3 parts) and FFT-based methods (O(n log n)). Each reduces the subproblem count at the cost of more additions.
 
-**One-Sentence Takeaway:** Karatsuba multiplication reduces the naive O(n²) integer multiplication to O(n^1.585) by cleverly reusing three multiplication results instead of four.
+**One-Sentence Takeaway:** Karatsuba multiplication reduces the naive O(nÂ²) integer multiplication to O(n^1.585) by cleverly reusing three multiplication results instead of four.
 
 ---
 
@@ -252,29 +252,29 @@ double closestPairRec(std::vector<Point>& Px, int l, int r) {
 | Maximum Subarray | Largest sum contiguous subarray | Crossing case O(n) scan | Stock trading, signal analysis |
 | Strassen's Algorithm | 7 recursive multiplications | Constant factor > standard for small n | Very large matrix multiplication |
 | Closest Pair | Divide plane, check strip | Only 7 points checked per point | Computational geometry, collision detection |
-| Karatsuba | 3 recursive multiplications | First sub-O(n²) multiplication | Big integer arithmetic (Python/Java big ints) |
+| Karatsuba | 3 recursive multiplications | First sub-O(nÂ²) multiplication | Big integer arithmetic (Python/Java big ints) |
 | Master Theorem Cases | Compare f(n) to n^{log_b a} | Each case gives different growth | Divide-and-conquer recurrence solving |
 
 ### Quick Reference
 
 | Category | Key Points |
 |----------|------------|
-| **Divide-and-Conquer Pattern** | Divide → Recurse → Combine |
+| **Divide-and-Conquer Pattern** | Divide â†’ Recurse â†’ Combine |
 | **Recurrence of the Form** | T(n) = aT(n/b) + O(n^k) |
-| **Strassen** | a=7, b=2, log₂7≈2.807, huge constant |
-| **Closest Pair** | Presort by x, strip width 2δ, 7-point y-check |
-| **Karatsuba** | a=3, b=2, log₂3≈1.585, practical in big-int libs |
+| **Strassen** | a=7, b=2, logâ‚‚7â‰ˆ2.807, huge constant |
+| **Closest Pair** | Presort by x, strip width 2Î´, 7-point y-check |
+| **Karatsuba** | a=3, b=2, logâ‚‚3â‰ˆ1.585, practical in big-int libs |
 | **Common Pitfall** | Recurrence doesn't match master theorem form |
 
 ### Cross-Application Matrix
 
 | Technique | DSA Interviews | Competitive Programming | System Design | Academia/Research |
 |-----------|---------------|----------------------|---------------|-------------------|
-| Max Subarray DC | Conceptual — Kadane's is preferred | Variations (2D, circular) | Stock/financial analysis | Divide-and-conquer pedagogy |
-| Strassen | Rarely — theoretical interest | N/A | N/A | Computational complexity theory |
-| Closest Pair | Occasionally — 2D geometry | Sweep-line alternative | Spatial databases, GIS | Geometric optimization |
+| Max Subarray DC | Conceptual â€” Kadane's is preferred | Variations (2D, circular) | Stock/financial analysis | Divide-and-conquer pedagogy |
+| Strassen | Rarely â€” theoretical interest | N/A | N/A | Computational complexity theory |
+| Closest Pair | Occasionally â€” 2D geometry | Sweep-line alternative | Spatial databases, GIS | Geometric optimization |
 | Karatsuba | Rarely asked | Big integer libraries | N/A | Algebraic complexity |
-| Divide-and-Conquer Thinking | Extremely common — mergesort, BST, quickselect | Core problem-solving paradigm | Distributed computing, MapReduce | Foundational algorithm design |
+| Divide-and-Conquer Thinking | Extremely common â€” mergesort, BST, quickselect | Core problem-solving paradigm | Distributed computing, MapReduce | Foundational algorithm design |
 
 ---
 
@@ -293,14 +293,14 @@ double closestPairRec(std::vector<Point>& Px, int l, int r) {
 
 **Q1.** What is the recurrence for Strassen's matrix multiplication?
 
-- A) T(n) = 8T(n/2) + O(n²)
-- B) T(n) = 7T(n/2) + O(n²)
-- C) T(n) = 4T(n/2) + O(n²)
-- D) T(n) = 7T(n/3) + O(n²)
+- A) T(n) = 8T(n/2) + O(nÂ²)
+- B) T(n) = 7T(n/2) + O(nÂ²)
+- C) T(n) = 4T(n/2) + O(nÂ²)
+- D) T(n) = 7T(n/3) + O(nÂ²)
 
 <details>
 <summary>Answer</summary>
-B) T(n) = 7T(n/2) + O(n²) — 7 subproblems, each half size, O(n²) for additions.
+B) T(n) = 7T(n/2) + O(nÂ²) â€” 7 subproblems, each half size, O(nÂ²) for additions.
 </details>
 
 **Q2.** How many points in the strip need checking against each other in the closest pair algorithm?
@@ -312,7 +312,7 @@ B) T(n) = 7T(n/2) + O(n²) — 7 subproblems, each half size, O(n²) for additio
 
 <details>
 <summary>Answer</summary>
-C) 7 — the geometric bound ensures at most 7 points can fit in a δ × 2δ rectangle without being closer than δ.
+C) 7 â€” the geometric bound ensures at most 7 points can fit in a Î´ Ã— 2Î´ rectangle without being closer than Î´.
 </details>
 
 **Q3.** What is the recurrence for Karatsuba multiplication?
@@ -324,7 +324,7 @@ C) 7 — the geometric bound ensures at most 7 points can fit in a δ × 2δ rec
 
 <details>
 <summary>Answer</summary>
-C) T(n) = 3T(n/2) + O(n) — three multiplications of half-sized numbers.
+C) T(n) = 3T(n/2) + O(n) â€” three multiplications of half-sized numbers.
 </details>
 
 ---

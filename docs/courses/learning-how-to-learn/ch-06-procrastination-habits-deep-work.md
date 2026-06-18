@@ -1,5 +1,8 @@
 ﻿# Chapter 6: Procrastination, Habits & Deep Work
 
+> **Prerequisites:** [Chapter 5: Memory Systems & Mnemonics](./ch-05-memory-systems.md) — Memory techniques for encoding and retrieval.
+> **Next:** [Chapter 7: DSA & Coding Interview Prep](./ch-07-dsa-coding-interview.md) — Apply all learning techniques to coding interview preparation.
+
 > **Understanding why you procrastinate — and what to do about it — is the single highest-leverage skill in learning.**
 > 20 Q&As · Practical frameworks grounded in behavioral psychology and cognitive science.
 
@@ -45,6 +48,18 @@ After completing this chapter, you will be able to:
 | Weekly Review | Weekly pause that catches drift and maintains strategic alignment | Every Sunday: review wins, struggles, lead measures, and next week's commitment |
 | Compound Effect | Small daily improvements compound into massive gains over time | 1% daily improvement yields 38x growth in a year |
 | Keystone Habits | One habit that triggers positive chain reactions across multiple areas | Identify and establish one keystone habit first (e.g., morning study block) |
+
+```mermaid
+flowchart LR
+    A[Procrastination Loop] --> B[2-Minute Rule]
+    B --> C[Habit Stacking]
+    C --> D[Implementation Intentions]
+    D --> E[Deep Work]
+    E --> F[Attention Residue]
+    F --> G[Weekly Review]
+    G --> H[Compound Effect]
+    H --> I[Keystone Habits]
+```
 
 ---
 
@@ -2092,6 +2107,17 @@ d) To set annual goals; complements the compound effect
 
 
 
+## Cross-Application Matrix
+
+| Technique | DSA Prep | GATE/Theory | System Design | Coding Interviews |
+|-----------|----------|-------------|---------------|-------------------|
+| 2-Minute Rule | Start one problem immediately | Open one formula page now | Begin one design sketch | Write one solution line |
+| Habit Stacking | Code after morning coffee | Study theory after lunch | Design after standup | Practice after daily standup |
+| Implementation Intentions | "If stuck, try brute force first" | "If confused, draw a diagram" | "If blocked, list tradeoffs" | "If silent, narrate thinking" |
+| Deep Work | 90-min DSA problem sprints | Deep theory comprehension dives | Focused architecture sessions | Distraction-free mock interviews |
+| Attention Residue | Batch one DSA pattern per block | Single-topic theory sessions | Isolate design mode completely | Dedicate full session to prep |
+| Weekly Review | Audit DSA progress on patterns | Review theory topic coverage | Assess design comprehension | Evaluate interview readiness |
+
 ## Quick Reference
 
 | Category | Key Points |
@@ -2149,6 +2175,44 @@ Run a 15-minute mini-retro right now:
 Write them down. Post them where you'll see them daily for the next 30 days.
 
 ---
+
+## Chapter Quiz
+
+**Q1:** A student consistently finds themselves watching YouTube instead of studying. According to the chapter, what is the root cause and the most effective immediate action?
+- A) They lack willpower; they should force themselves to sit longer
+- B) The brain perceives studying as a threat; use the 2-minute rule to bypass the emotional trigger
+- C) They need a better study playlist
+- D) They should study later when they feel more motivated
+
+<details>
+<summary>Answer</summary>
+
+**Answer:** B — Procrastination is an emotional regulation problem, not a willpower deficit. The brain interprets studying as a threat (difficult, boring, uncertain). The 2-minute rule lowers the activation barrier below the threat threshold, making starting nearly effortless.
+</details>
+
+**Q2:** A student checks Slack for 30 seconds mid-way through a deep work session. What is the hidden cost beyond those 30 seconds?
+- A) None — they will immediately refocus
+- B) Attention residue causes 10-20 minutes of degraded focus after resuming
+- C) Slack notifications permanently break concentration for the entire session
+- D) They will lose 30 seconds of data in working memory
+
+<details>
+<summary>Answer</summary>
+
+**Answer:** B — Attention residue means part of your attention remains on the previous task after switching. A 30-second notification check creates lingering cognitive drag that takes 10-20 minutes to fully dissipate, making the true cost far higher than the interruption itself.
+</details>
+
+**Q3:** A student creates a wildly important goal to "master dynamic programming" and tracks "hours studied" on a scoreboard. What is wrong with this 4DX setup?
+- A) "Hours studied" is a lag measure, not a lead measure — they should track problems solved per day
+- B) The WIG is not ambitious enough
+- C) The scoreboard should track weekly hours, not daily
+- D) 4DX only works for teams, not individuals
+
+<details>
+<summary>Answer</summary>
+
+**Answer:** A — The 4DX framework requires lead measures (actions you control that drive the goal), not lag measures (outcomes you want). "Problems solved per day" is a lead measure; "mastering DP" is the lag measure. Tracking lead measures gives actionable daily feedback.
+</details>
 
 ## Further Reading
 

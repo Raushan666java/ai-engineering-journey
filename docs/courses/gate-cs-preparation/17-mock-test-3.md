@@ -1,5 +1,58 @@
 # GATE CS Mock Test 3 â€” Full-Length Practice Paper
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Exam | GATE CS Full-Length Mock |
+| Total Marks | 100 |
+| Duration | 3 Hours |
+| Sections | General Aptitude + Core CS |
+| Purpose | Topic-wise assessment |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[GA Section A] --> B[Verbal]
+    C[GA Section B] --> D[Math]
+    E[Core CS] --> F[Topic-wise]
+    B --> G[Score]
+    D --> G
+    F --> G
+    G --> H[Topic Strengths]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Section A | Section B |
+|--- |--- |--- |
+| Format | MCQs only | Mixed |
+| Weight | 55 percent | 45 percent |
+| Typical Topics | Core CS, Aptitude, Math | Advanced problem-solving |
+| Attempt Strategy | First 30 min | Last 90 min |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Performance Analysis | Identifying strengths and weaknesses |
+| Time Management | Allocating minutes per question optimally |
+| Accuracy Rate | Ratio of correct to total attempted |
+| Error Pattern | Recurring type of mistakes |
+| Speed Benchmark | Target questions per hour |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** After the mock test, categorize each mistake as conceptual, careless, or time-related. Address each differently.
+>
+> **Remember:** Consistent practice builds speed naturally. Do not force speed at cost of understanding.
+
+
 ## Exam Instructions
 
 ![Mock Test 3 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/17-mock-test-3.png)

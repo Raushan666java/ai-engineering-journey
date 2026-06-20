@@ -1,5 +1,59 @@
 # GATE CS Mock Test 6 â€” Full-Length Practice Paper
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Exam | GATE CS Full-Length Mock |
+| Total Marks | 100 |
+| Duration | 3 Hours |
+| Sections | General Aptitude + Core CS |
+| Purpose | Pre-final readiness |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[GA Section A] --> B[Conceptual]
+    C[GA Section B] --> D[Analytical]
+    E[Core CS] --> F[Comprehensive]
+    B --> G[Score]
+    D --> G
+    F --> G
+    G --> H[Readiness Check]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Section A | Section B |
+|--- |--- |--- |
+| Type | MCQs | MCQs + NATs |
+| Marks | 55 | 45 |
+| Questions | 25 | 40 |
+| Difficulty | High | Very High |
+| Strategy | Secure easy marks first | Attempt partial solutions |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Pre-Final Assessment | Readiness check before actual exam |
+| Difficulty Curve | Progression of question hardness |
+| Stress Management | Maintaining composure during exam |
+| Last-Minute Revision | Final review strategy |
+| Time Allocation | Distribution of minutes across sections |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** With the actual exam approaching, focus more on revision than new topics. Consolidate what you already know.
+>
+> **Remember:** Your preparation level is higher than you think - trust your practice and stay confident.
+
+
 ## Exam Instructions
 
 ![Mock Test 6 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/20-mock-test-6.png)

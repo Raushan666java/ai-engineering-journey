@@ -5,6 +5,68 @@
 
 ---
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 8-12 marks |
+| Topics | Processes, Memory management, File systems, Synchronization, Deadlocks |
+| Difficulty | Moderate |
+| Weightage | 8-10% of GATE CS paper |
+| Key Skills | Process scheduling, Page replacement, Disk scheduling |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[OS Basics] --> B[Process Management]
+    B --> C[CPU Scheduling]
+    B --> D[Synchronization]
+    B --> E[Deadlocks]
+    A --> F[Memory Management]
+    F --> G[Virtual Memory]
+    A --> H[File Systems]
+    A --> I[I/O Management]
+    C --> J[System Performance]
+    D --> J
+    E --> J
+    G --> J
+    H --> J
+    I --> J
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Preemptive Scheduling | Non-Preemptive Scheduling |
+|--- |--- |--- |
+| Context Switch | Can interrupt running process | Process runs until completion/block |
+| Starvation Risk | Lower | Higher |
+| Throughput | Higher (better CPU utilization) | Lower |
+| Algorithm Examples | Round Robin, SRTF | FCFS, SJF (non-preemptive) |
+| Complexity | Higher | Lower |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| PCB | Process Control Block |
+| TLB | Translation Lookaside Buffer |
+| Page Fault | When referenced page not in memory |
+| Thrashing | Excessive paging due to low frames |
+| Mutex | Mutual exclusion lock |
+| Semaphore | Integer variable for signaling between processes |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Practice CPU scheduling and page replacement algorithms until you can compute them in under 2 minutes.
+>
+> **Remember:** Synchronization problems with semaphores are a high-weightage question type. Master wait(P) and signal(V) operations.
+
+
 ## Topic Weightage in GATE (2010â€“2025)
 
 ![Operating Systems Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/07-operating-systems.png)

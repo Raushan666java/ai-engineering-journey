@@ -1,4 +1,6 @@
-# Chapter 14: DevSecOps
+﻿# Chapter 14: DevSecOps
+
+> **Previous:** [Observability](./13-observability.md) | **Next:** [Database DevOps](./15-database-devops.md)
 
 ## Learning Objectives
 
@@ -14,9 +16,37 @@ By the end of this chapter, students will be able to:
 6. Detect secrets in source code with GitLeaks and TruffleHog
 7. Enforce security policies using OPA and Kyverno
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Shift-Left Security | Integrate security earlier in development | 10-100x cost difference finding vulns in design vs production |
+| SAST Tools | Source code analysis without execution | SonarQube, Semgrep, CodeQL for CI/CD integration |
+| DAST Tools | Running application attack simulation | OWASP ZAP, Burp Suite for dynamic testing |
+| SCA Tools | Open-source dependency vulnerability scanning | Snyk, Dependabot, Trivy, Grype for supply chain |
+| Container Scanning | Image vulnerability detection | Scan images before push and in registries |
+| Policy as Code | OPA/Kyverno for policy enforcement | Decouple policy from application logic |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Shift-Left Security] --> B[SAST]
+    A --> C[DAST]
+    A --> D[SCA]
+    A --> E[Container Scan]
+    A --> F[Secret Scan]
+    B & C & D & E & F --> G[Policy as Code]
+    G --> H[OPA]
+    G --> I[Kyverno]
+```
+
 ## Theory
 
 ### 14.1 Shift-Left Security
+
+> **Pro Tip:** Run SAST and secret scanning on every push, not just on PRs, to catch issues immediately.
 
 Shift-left security integrates security practices earlier in the software development lifecycle. Traditional security performed a penetration test shortly before release, discovering vulnerabilities that were expensive to fix. Shift-left makes security a continuous concern throughout development.
 
@@ -27,6 +57,8 @@ Shift-left security integrates security practices earlier in the software develo
 - Continuous compliance through policy-as-code
 
 ### 14.2 SAST (Static Application Security Testing)
+
+> **Warning:** Secrets committed to Git are compromised forever. Use pre-commit hooks with GitLeaks or TruffleHog.
 
 SAST analyzes source code for security vulnerabilities without executing the application.
 
@@ -52,6 +84,8 @@ rules:
 **CodeQL** â€” Semantic code analysis by GitHub. Treats code as data for query-based security analysis. Deep analysis of CodeQL databases identifies complex vulnerabilities including injection, XSS, and path traversal. Integrated with GitHub Advanced Security.
 
 ### 14.3 DAST (Dynamic Application Security Testing)
+
+> **Remember:** Shift-left means finding security issues during development, not during a pre-release pen test.
 
 DAST tests running applications for vulnerabilities by simulating attacks.
 
@@ -187,6 +221,46 @@ spec:
             labels:
               team: "?*"
 ```
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| SAST | Static source code analysis (SonarQube, Semgrep) |
+| DAST | Dynamic app testing (OWASP ZAP, Burp Suite) |
+| SCA | Dependency vulnerability scanning (Snyk, Trivy) |
+| Container Scan | Image vulnerability detection (Trivy, Clair) |
+| Policy as Code | OPA (Rego), Kyverno (K8s-native) |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| SAST Tools | SonarQube, Semgrep, CodeQL |
+| DAST Tools | OWASP ZAP, Burp Suite |
+| SCA Tools | Snyk, Dependabot, Trivy, Grype |
+| Secret Scan | GitLeaks, TruffleHog |
+| Policy as Code | OPA/Rego, Kyverno |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | Web app vulnerability scanning |
+| Cloud | Cloud config security scanning |
+| Enterprise | Compliance policy enforcement |
+| Container | Container image CVE scanning |
+
+## Chapter Quiz
+
+<details><summary>Question 1: What is shift-left security?</summary>**A)** Moving security testing to the right<br>**B)** Integrating security earlier in development<br>**C)** Outsourcing security<br>**D)** Removing security gates<br><br>**Answer: B)** Integrating security earlier in development</details>
+
+<details><summary>Question 2: What does SAST analyze?</summary>**A)** Running applications<br>**B)** Source code without execution<br>**C)** Network traffic<br>**D)** User behavior<br><br>**Answer: B)** Source code without execution</details>
+
+<details><summary>Question 3: Which tool detects secrets in Git history?</summary>**A)** SonarQube<br>**B)** GitLeaks<br>**C)** OWASP ZAP<br>**D)** Prometheus<br><br>**Answer: B)** GitLeaks</details>
+
 
 ## Summary
 

@@ -2,6 +2,63 @@
 
 ---
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 15-22 marks |
+| Topics | Arrays, Linked lists, Trees, Graphs, Sorting, DP, Greedy |
+| Difficulty | Moderate to High |
+| Weightage | 18-22% of GATE CS paper |
+| Key Skills | Algorithm analysis, Problem-solving, Optimization |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[Arrays] --> B[Linked Lists]
+    B --> C[Stacks & Queues]
+    C --> D[Trees]
+    D --> E[Graphs]
+    E --> F[Sorting]
+    F --> G[Searching]
+    G --> H[DP & Greedy]
+    H --> I[Algo Analysis]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Arrays | Linked Lists |
+|--- |--- |--- |
+| Memory allocation | Contiguous | Dynamic (scattered) |
+| Random access | O(1) | O(n) |
+| Insert/Delete at start | O(n) | O(1) |
+| Insert/Delete at end | O(1) | O(n) or O(1) with tail |
+| Memory overhead | Low (data only) | High (data + pointer) |
+| Cache friendliness | High (spatial locality) | Low |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Time Complexity | Running time as function of input size |
+| Space Complexity | Memory usage as function of input size |
+| Big-O | Upper bound on growth rate |
+| Omega | Lower bound |
+| Theta | Tight bound |
+| Recurrence | Equation defining recursive algorithm time |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** For algorithm analysis, practice recurrence relation solving using Master Theorem - it saves precious exam time.
+>
+> **Remember:** Graph algorithms (DFS/BFS, MST, Shortest Path) and Dynamic Programming are the highest weightage topics in GATE CS.
+
+
 ## Topic Weightage Table (GATE 2010â€“2025)
 
 ![Data Structures and Algorithms Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms.png)

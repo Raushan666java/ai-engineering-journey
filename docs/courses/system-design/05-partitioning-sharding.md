@@ -1,4 +1,5 @@
 # Chapter 5: Data Partitioning and Sharding
+> **Previous:** [04 Database Foundations](./04-database-foundations.md) | **Next:** [06 Distributed Consistency](./06-distributed-consistency.md)
 
 ---
 ## Learning Objectives
@@ -11,12 +12,39 @@
 - Design compound shard keys and database-per-service decompositions using real-world case studies
 
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Vertical/horizontal partitioning, sharding strategies, rebalancing |
+| **Key Concepts** | Range, hash, directory-based, consistent hashing, compound keys |
+| **Sharding Strategies** | Range, hash, directory, consistent hashing with virtual nodes |
+| **Hotspot Mitigation** | Celebrity problem, split, secondary keys, read replication |
+| **Cross-Shard Queries** | Scatter-gather, distributed joins, secondary indexes |
+| **Real-World** | Instagram, Discord, Uber sharding architectures |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+```
+
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Partitioning and Sharding Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/05-partitioning-sharding.png)
 
 ### Partitioning Fundamentals
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Partitioning is the process of splitting a large dataset into smaller, independent subsets that can be stored and queried separately. The two primary forms are vertical partitioning and horizontal partitioning (sharding).
 
 **Vertical Partitioning** splits a table by columns. Frequently accessed columns are placed in one partition, while less frequently accessed or larger columns (BLOBs, text) reside in another. This is natural in normalized database design â€” each normalized table is effectively a vertical partition of the logical entity.
@@ -39,6 +67,10 @@ Shard 2:    user_id 2000001..3000000
 ```
 
 ### Sharding Strategies
+
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
 #### Range-Based Sharding
 
@@ -90,6 +122,10 @@ To find a row, the system queries the directory first, then routes to the approp
 **Disadvantages:** The directory becomes a potential bottleneck and single point of failure. Every read requires an additional lookup (two round trips), increasing latency. The directory must be kept consistent with actual shard contents.
 
 ### Consistent Hashing
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 Consistent hashing solves the resharding problem by arranging both keys and nodes on a conceptual hash ring.
 
@@ -401,7 +437,58 @@ sequenceDiagram
     G-->>C: 201 Created
 ```
 
+## Concept Comparison
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 5: Data Partitioning and Sharding | Fundamental concept for system design |
+
 ---
+
+## Quick Reference
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept from Chapter 5: Data Partitioning and Sharding |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application | Trade-Off |
+|---------|------------|-----------|
+| Theory | Relevant across design scenarios | Requirements-driven decisions |
+
+---
+
+## Chapter Quiz
+
+**Q1:** What is the key takeaway from this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most critical for distributed systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q3:** How does this topic apply to FAANG-level system design?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+---
+
 ## Summary
 
 - Vertical partitioning splits by columns for I/O and cache efficiency; horizontal partitioning (sharding) splits by rows for distributed scale
@@ -438,6 +525,7 @@ sequenceDiagram
 
 ### Challenge Problem
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Distributed Shard Migration at Scale**
 
 Design a shard rebalancing system for a real-time multiplayer game with the following constraints:

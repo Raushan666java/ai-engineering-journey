@@ -1,4 +1,6 @@
-# Chapter 10: Configuration Management
+﻿# Chapter 10: Configuration Management
+
+> **Previous:** [Infrastructure as Code (Terraform)](./09-iac.md) | **Next:** [SRE and Monitoring](./10-monitoring.md)
 
 ## Learning Objectives
 
@@ -12,9 +14,34 @@ By the end of this chapter, students will be able to:
 4. Compare agent-based and agentless configuration management approaches
 5. Integrate secrets management with Vault, SOPS, and sealed secrets
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| CM vs Provisioning | CM configures software; Provisioning creates resources | Terraform for infra, Ansible for OS config |
+| Ansible Inventory | Static files or dynamic cloud queries | Use dynamic inventory for auto-scaling environments |
+| Playbooks | YAML execution units with tasks and handlers | Use handlers for service restarts only when config changes |
+| Idempotence | Check current state before making changes | Modules report 'changed' or 'ok' for visibility |
+| Secrets Management | Ansible Vault, Vault, SOPS, Sealed Secrets | Vault for dynamic secrets; SOPS for Git workflow |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[CM vs Provisioning] --> B[Ansible Overview]
+    B --> C[Inventory]
+    B --> D[Playbooks]
+    B --> E[Roles]
+    C & D & E --> F[Idempotence]
+    F --> G[Secrets Management]
+```
+
 ## Theory
 
 ### 10.1 Configuration Management vs Infrastructure Provisioning
+
+> **Pro Tip:** Use nsible-playbook --syntax-check to validate playbook syntax before running.
 
 Configuration management and Infrastructure as Code serve different but complementary purposes:
 
@@ -25,6 +52,8 @@ Configuration management and Infrastructure as Code serve different but compleme
 The boundary can blur. Ansible and Terraform overlap in provisioning capabilities, but the general recommendation is: Terraform for cloud resources, Ansible for OS configuration. Ansible can invoke Terraform; Terraform can use Ansible provisioners.
 
 ### 10.2 Ansible
+
+> **Remember:** Terraform for cloud resources, Ansible for OS configuration is the recommended division.
 
 Ansible is an agentless, push-based configuration management tool. It connects to managed nodes via SSH (Linux) or WinRM (Windows), executes modules, and disconnects. No agent software is required on managed nodes.
 
@@ -38,6 +67,8 @@ Ansible is an agentless, push-based configuration management tool. It connects t
 - **Roles** â€” Structured packaging of tasks, handlers, variables, and templates.
 
 ### 10.3 Inventory
+
+> **Warning:** Never store plaintext secrets in playbooks. Use Ansible Vault, SOPS, or HashiCorp Vault.
 
 Inventory defines which hosts Ansible manages and groups them:
 
@@ -170,6 +201,8 @@ db_password: ENC[AES256_GCM,data:abc123...,iv:def456...,tag:ghi789...]
 
 ## Examples
 
+> **One-Sentence Takeaway:** Configuration management installs and configures software; IaC provisions cloud resources.
+
 ### Example 10.1: Complete Ansible Role
 
 ```yaml
@@ -207,6 +240,46 @@ ansible-playbook site.yml --ask-vault-pass
 # Encrypt existing file
 ansible-vault encrypt secrets.yml
 ```
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| Infra Provisioning | Creates VPCs, subnets, load balancers, databases |
+| Config Management | Installs packages, configures files, manages services |
+| Agentless | SSH-based (Ansible), simpler setup |
+| Agent-Based | Continuous agent (Puppet, Chef), better scalability |
+| Desired State | Declare end state, tool determines steps |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| Ansible Key | Control Node, Inventory, Modules, Playbooks, Roles |
+| Idempotence | Check current state before changing |
+| Secrets | Ansible Vault, Vault, SOPS, Sealed Secrets |
+| Templates | Jinja2 with variables, facts, filters |
+| Best Practice | --check, diff mode, tags, --limit |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | Web server farm configuration management |
+| Cloud | Post-provision OS configuration |
+| Enterprise | Compliance baseline enforcement |
+| Container | Container host OS hardening |
+
+## Chapter Quiz
+
+<details><summary>Question 1: What distinguishes CM from IaC?</summary>**A)** CM is faster<br>**B)** IaC provisions resources; CM configures software<br>**C)** There is no difference<br>**D)** CM is cloud-only<br><br>**Answer: B)** IaC provisions resources; CM configures software</details>
+
+<details><summary>Question 2: What does Ansible's check_mode do?</summary>**A)** Runs playbook for real<br>**B)** Dry-run preview without changes<br>**C)** Validates YAML syntax<br>**D)** Tests network connectivity<br><br>**Answer: B)** Dry-run preview without changes</details>
+
+<details><summary>Question 3: Which tool encrypts specific values in YAML for Git?</summary>**A)** Ansible Vault<br>**B)** SOPS<br>**C)** Sealed Secrets<br>**D)** HashiCorp Vault<br><br>**Answer: B)** SOPS</details>
+
 
 ## Summary
 

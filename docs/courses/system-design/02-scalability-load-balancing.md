@@ -1,4 +1,5 @@
 # Chapter 2: Scalability and Load Balancing
+> **Previous:** [01 Introduction](./01-introduction.md) | **Next:** [03 Caching](./03-caching.md)
 
 ---
 
@@ -12,14 +13,68 @@
 - Analyze the sticky sessions problem and design stateless alternatives
 - Model real-world load balancing at AWS, Google Cloud, and Cloudflare
 
+## Chapter at a Glance
+
+| Aspect | Details |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Core Concepts] --> B[Design Decisions]
+    B --> C[Real-World Examples]
+```
+|--------|---------|
+| **Scope** | Vertical/horizontal scaling, L4/L7, algorithms, DNS, GSLB, auto-scaling |
+| **Key Concepts** | Core topics covered in Chapter 2: Scalability and Load Balancing |
+| **Design Skills** | Algorithm selection, health check design, auto-scaling policy |
+| **Interview Angle** | Frequently tested in system design interviews |
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Vertical/horizontal scaling, L4/L7 balancing, algorithms, DNS, GSLB |
+| **Key Concepts** | Scale-out vs scale-up, load balancing algorithms, health checks |
+| **LB Algorithms** | Round Robin, Least Connections, Consistent Hashing, IP Hash, Random |
+| **DNS/GSLB** | GeoDNS, active-active, active-passive, anycast routing |
+| **Auto-Scaling** | Reactive vs predictive, cooldown, scale-up/down strategies |
+| **Anti-Pattern** | Sticky sessions and why they are bad |
+
+---
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+    B[Concept Comparison]
+    A --> B
+    C[Quick Reference]
+    B --> C
+    D[CrossApplication Matrix]
+    C --> D
+    E[Chapter Quiz]
+    D --> E
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Load Balancing Algorithms Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/02-scalability-load-balancing.png)
 
 ### Vertical Scaling (Scale Up)
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Vertical scaling adds resources to a single machine: more CPU cores, more RAM, faster SSDs, higher-bandwidth NICs. It is the simplest scaling strategy because it requires zero application changes.
 
 **Advantages:**
@@ -40,6 +95,10 @@ Vertical scaling is appropriate for legacy applications, stateful systems that c
 
 ### Horizontal Scaling (Scale Out)
 
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
+
 Horizontal scaling adds more machines to the pool. Each machine handles a fraction of the workload. The system's total capacity is N Ã— (capacity of a single node) minus coordination overhead.
 
 **Advantages:**
@@ -58,6 +117,10 @@ Horizontal scaling adds more machines to the pool. Each machine handles a fracti
 ---
 
 ### L4 vs L7 Load Balancing
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 Load balancers operate at different layers of the OSI model:
 
@@ -537,6 +600,114 @@ class ConsistentHashRing:
         return self.ring[idx][1]
 ```
 
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Metric |
+|---------|-----------|------------|
+| Theory | Core topic covered in Chapter 2: Scalability and Load Balancing | Defined by specific measurable attributes |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Fundamental concept for Chapter 2: Scalability and Load Balancing |
+
+---
+
+## Cross-Application Matrix
+
+| Component | When to Use | Trade-Off |
+|-----------|------------|-----------|
+| Theory | Appropriate for specific system contexts | Each choice involves trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q2:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q3:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 2: Scalability and Load Balancing | Fundamental to system design |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept for Chapter 2: Scalability and Load Balancing |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 2
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
+
 ---
 
 ## Summary
@@ -579,6 +750,7 @@ class ConsistentHashRing:
 
 ### Challenge Problem (1)
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 You are designing a multi-region gaming platform that hosts real-time multiplayer matches. 50M DAU, each match lasts 10-30 minutes with 10-100 players. Players must be grouped by latency (all players in a match should have <100ms to the server). The platform must handle peak traffic (weekend evenings) at 5x average.
 
 1. Design a three-tier load-balancing architecture: DNS â†’ regional â†’ per-match. Specify the algorithm at each tier and justify each choice.

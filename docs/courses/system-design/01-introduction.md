@@ -1,5 +1,18 @@
 # Chapter 1: Introduction to System Design
+> **Previous:** None | **Next:** [02 Scalability Load Balancing](./02-scalability-load-balancing.md)
 
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Foundational concepts, NFRs, design process, capacity estimation |
+| **Key Concepts** | Scalability, reliability, availability, performance, trade-offs |
+| **Design Process** | 4-phase: Requirements, Estimation, HLD, Deep Dive |
+| **Estimation Tools** | QPS, storage, bandwidth, memory formulas |
+| **Mindset** | Trade-off recognition, order-of-magnitude thinking |
+| **Real-World Examples** | Google Search, Facebook, WhatsApp |
+
+---
 ---
 
 ## Learning Objectives
@@ -11,13 +24,46 @@
 - Analyze trade-offs including latency vs throughput, consistency vs availability, and read vs write optimization
 - Model real-world systems (Google Search, Facebook, WhatsApp) through a system-design lens
 
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Foundational concepts, NFRs, design process, capacity estimation |
+| **Key Concepts** | Scalability, reliability, availability, performance, trade-offs |
+| **Design Process** | 4-phase: Requirements, Estimation, HLD, Deep Dive |
+| **Estimation Tools** | QPS, storage, bandwidth, memory formulas |
+| **Mindset** | Trade-off recognition, order-of-magnitude thinking |
+| **Real-World Examples** | Google Search, Facebook, WhatsApp |
+
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+    B[Concept Comparison]
+    A --> B
+    C[Quick Reference]
+    B --> C
+    D[CrossApplication Matrix]
+    C --> D
+    E[Chapter Quiz]
+    D --> E
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![System Design Fundamentals Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/01-introduction.png)
 
 ### What Is System Design?
+
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
 
 System design is the discipline of defining the architecture, components, modules, interfaces, and data flow of a large-scale distributed system to satisfy specified functional and non-functional requirements. It sits at the intersection of three distinct but overlapping fields.
 
@@ -30,6 +76,10 @@ System design is the discipline of defining the architecture, components, module
 ---
 
 ### Non-Functional Requirements
+
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
 Functional requirements describe *what* the system does. Non-functional requirements (NFRs) describe *how well* it does it. In system design interviews and real-world architecture, NFRs drive every decision.
 
@@ -111,27 +161,33 @@ Throughput = (1 - p_error) / L_avg  (where L_avg is average latency)
 Little's Law relates these for stable systems:
 
 ```
-L = Î» * W
+L = ÃŽÂ» * W
 ```
 
-where L = average number of requests in system, Î» = arrival rate, W = average time per request.
+where L = average number of requests in system, ÃŽÂ» = arrival rate, W = average time per request.
 
 #### Security
 
 Security encompasses confidentiality (unauthorized access prevention), integrity (unauthorized modification prevention), and availability (protection against DoS). Design considerations include authentication, authorization (RBAC, ACLs), encryption in transit (TLS) and at rest, input validation, rate limiting, and DDoS mitigation.
 
-#### Cost Efficiency
+#
+> **Warning:** Avoid designing for five-nines availability if you only need two-nines. Each "nine" adds ~10x infrastructure cost.
 
-Cost efficiency measures the operational expense per unit of useful work (e.g., cost per request, cost per GB stored, cost per user). This trades against all other NFRs: five-nines availability costs more than two-nines; higher throughput requires more servers; stronger consistency increases coordination overhead. A cost-unbounded design is not a design â€” it is a wishlist.
+Cost efficiency measures the operational expense per unit of useful work (e.g., cost per request, cost per GB stored, cost per user). This trades against all other NFRs: five-nines availability costs more than two-nines; higher throughput requires more servers; stronger consistency increases coordination overhead. A cost-unbounded design is not a design Ã¢â‚¬â€ it is a wishlist.
 
 ---
 
 ### The Four-Phase Design Process
 
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
+
 Industry-standard approach to system design problems:
 
 #### Phase 1: Requirements Gathering
 
+> **Pro Tip:** In system design interviews, spend 3-5 minutes clarifying requirements first. Most candidates fail by jumping to architecture too early.
 Collect and clarify functional and non-functional requirements. Ask clarifying questions:
 
 - What are the core features? (e.g., "shorten a URL", "redirect to long URL")
@@ -148,13 +204,13 @@ Collect and clarify functional and non-functional requirements. Ask clarifying q
 Rough capacity calculations to constrain the design before committing to architecture. Key formulas:
 
 ```
-QPS = Daily Active Users Ã— Actions Per User / 86,400
+QPS = Daily Active Users Ãƒâ€” Actions Per User / 86,400
 
-Storage = Data per item Ã— Items per day Ã— Retention days Ã— Replication factor
+Storage = Data per item Ãƒâ€” Items per day Ãƒâ€” Retention days Ãƒâ€” Replication factor
 
-Bandwidth = Bits per request Ã— QPS
+Bandwidth = Bits per request Ãƒâ€” QPS
 
-Memory needed = Hot data ratio Ã— Total data size
+Memory needed = Hot data ratio Ãƒâ€” Total data size
 ```
 
 **Prefix conventions:**
@@ -182,26 +238,26 @@ Produce a component diagram showing the major building blocks:
 - **CDN:** Static asset delivery
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚   Clients   â”‚
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
-       â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”
-â”‚ Load        â”‚
-â”‚ Balancer    â”‚
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜
-       â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚ App Server  â”‚â”€â”€â–ºâ”‚  Cache   â”‚   â”‚  CDN      â”‚
-â”‚ (stateless) â”‚   â”‚ (Redis)  â”‚   â”‚ (CloudFl) â”‚
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-       â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â–¼â”€â”€â”€â”€â”€â”€â”
-â”‚  Database   â”‚
-â”‚ (Primary)   â”‚
-â”‚             â”‚
-â”‚  Replica(s) â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š   Clients   Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+       Ã¢â€â€š
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š Load        Ã¢â€â€š
+Ã¢â€â€š Balancer    Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+       Ã¢â€â€š
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â   Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â   Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š App Server  Ã¢â€â€šÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€“ÂºÃ¢â€â€š  Cache   Ã¢â€â€š   Ã¢â€â€š  CDN      Ã¢â€â€š
+Ã¢â€â€š (stateless) Ã¢â€â€š   Ã¢â€â€š (Redis)  Ã¢â€â€š   Ã¢â€â€š (CloudFl) Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+       Ã¢â€â€š
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š  Database   Ã¢â€â€š
+Ã¢â€â€š (Primary)   Ã¢â€â€š
+Ã¢â€â€š             Ã¢â€â€š
+Ã¢â€â€š  Replica(s) Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 ```
 
 #### Phase 4: Detailed Deep Dive
@@ -234,13 +290,14 @@ Every design decision is a trade-off. Recognizing and articulating trade-offs is
 
 ### Capacity Estimation Examples
 
+> **Remember:** QPS, storage, and bandwidth estimates should be within 2x of actual values. Off by 10x means a modeling problem.
 **Twitter-Scale QPS.** Assume 500M DAU, each user posts 0.5 tweets/day and reads 200 tweets/day.
 
 ```
-Write QPS = 500M Ã— 0.5 / 86,400 â‰ˆ 2,894 QPS
-Peak write QPS = 2,894 Ã— 3 (peak factor) â‰ˆ 8,682 QPS
-Read QPS = 500M Ã— 200 / 86,400 â‰ˆ 1,157,407 QPS
-Peak read QPS â‰ˆ 3.5M QPS
+Write QPS = 500M Ãƒâ€” 0.5 / 86,400 Ã¢â€°Ë† 2,894 QPS
+Peak write QPS = 2,894 Ãƒâ€” 3 (peak factor) Ã¢â€°Ë† 8,682 QPS
+Read QPS = 500M Ãƒâ€” 200 / 86,400 Ã¢â€°Ë† 1,157,407 QPS
+Peak read QPS Ã¢â€°Ë† 3.5M QPS
 ```
 
 A read:write ratio of ~400:1 justifies heavy caching and read replicas.
@@ -248,10 +305,10 @@ A read:write ratio of ~400:1 justifies heavy caching and read replicas.
 **YouTube Storage.** Assume 500 hours of video uploaded per minute, average bitrate 5 Mbps.
 
 ```
-Storage per hour = 5 Ã— 10^6 bps Ã— 3,600 s / 8 = 2.25 GB/hour
-Per minute: 500 hours Ã— 2.25 GB = 1,125 GB/minute
-Per day: 1,125 GB Ã— 60 Ã— 24 â‰ˆ 1.62 PB/day
-Per year: 1.62 PB Ã— 365 â‰ˆ 591 PB/year
+Storage per hour = 5 Ãƒâ€” 10^6 bps Ãƒâ€” 3,600 s / 8 = 2.25 GB/hour
+Per minute: 500 hours Ãƒâ€” 2.25 GB = 1,125 GB/minute
+Per day: 1,125 GB Ãƒâ€” 60 Ãƒâ€” 24 Ã¢â€°Ë† 1.62 PB/day
+Per year: 1.62 PB Ãƒâ€” 365 Ã¢â€°Ë† 591 PB/year
 ```
 
 With 3x replication: ~1.77 exabytes/year.
@@ -259,12 +316,12 @@ With 3x replication: ~1.77 exabytes/year.
 **URL Shortener Storage** (tinyurl.com style). Assume 100M new URLs/day, average length 500 bytes.
 
 ```
-Daily storage = 100M Ã— 500 bytes = 50 GB/day
-Yearly storage = 50 GB Ã— 365 â‰ˆ 18.25 TB/year
+Daily storage = 100M Ãƒâ€” 500 bytes = 50 GB/day
+Yearly storage = 50 GB Ãƒâ€” 365 Ã¢â€°Ë† 18.25 TB/year
 10-year storage = ~182.5 TB
 ```
 
-This fits on a handful of SSDs. The bottleneck is not storage â€” it is write QPS and availability.
+This fits on a handful of SSDs. The bottleneck is not storage Ã¢â‚¬â€ it is write QPS and availability.
 
 ---
 
@@ -272,7 +329,7 @@ This fits on a handful of SSDs. The bottleneck is not storage â€” it is wri
 
 **Google Search.** The defining challenge is indexing the web (tens of billions of pages) and returning relevant results in under 200ms. Design constraints: extreme read throughput, sub-second latency, global distribution. Architecture: web crawling pipeline (distributed crawlers), inverted index (sharded across thousands of machines), query serving (MapReduce for indexing, distributed serving for queries). NFR priority: performance > reliability > maintainability > cost. Google accepts massive infrastructure cost to deliver sub-100ms search.
 
-**Facebook (Meta).** The defining challenge is the social graph: billions of users, each with complex relationships (friends, pages, groups, events). Design constraints: extremely high read QPS, globally distributed, writes triggered by user action. Architecture: TAO (graph cache layer over MySQL), Presto (interactive analytics), Cassandra (inbox search), Haystack (photo storage). NFR priority: availability > performance > scalability > maintainability. Facebook uses eventual consistency extensively â€” seeing a slightly stale Like count is acceptable.
+**Facebook (Meta).** The defining challenge is the social graph: billions of users, each with complex relationships (friends, pages, groups, events). Design constraints: extremely high read QPS, globally distributed, writes triggered by user action. Architecture: TAO (graph cache layer over MySQL), Presto (interactive analytics), Cassandra (inbox search), Haystack (photo storage). NFR priority: availability > performance > scalability > maintainability. Facebook uses eventual consistency extensively Ã¢â‚¬â€ seeing a slightly stale Like count is acceptable.
 
 **WhatsApp.** The defining challenge is reliable message delivery with end-to-end encryption for 2B+ users. Design constraints: must work with intermittent connectivity, low latency for delivery, zero message loss. Architecture: Custom Erlang-based server (ejabberd fork), persistence on a per-user basis (not per-message), highly optimized for mobile battery and bandwidth. NFR priority: reliability > availability > performance > efficiency. WhatsApp famously served 900M users with only ~50 engineers.
 
@@ -284,22 +341,22 @@ This fits on a handful of SSDs. The bottleneck is not storage â€” it is wri
 
 **Requirements:** Shorten URLs, redirect to original URL, track click analytics, handle 100M URLs/day.
 
-**Phase 1 â€” Requirements:** 100M new URLs/day, read:write ratio ~100:1 (each URL clicked ~100 times), analytics per-URL, 5-year data retention.
+**Phase 1 Ã¢â‚¬â€ Requirements:** 100M new URLs/day, read:write ratio ~100:1 (each URL clicked ~100 times), analytics per-URL, 5-year data retention.
 
-**Phase 2 â€” Estimation:**
-- Write QPS: 100M / 86,400 â‰ˆ 1,157 QPS (peak ~3,500)
-- Read QPS: 1,157 Ã— 100 â‰ˆ 115,700 QPS (peak ~350,000)
-- Storage: 100M Ã— 500 bytes/day = 50 GB/day â†’ ~91 TB in 5 years
+**Phase 2 Ã¢â‚¬â€ Estimation:**
+- Write QPS: 100M / 86,400 Ã¢â€°Ë† 1,157 QPS (peak ~3,500)
+- Read QPS: 1,157 Ãƒâ€” 100 Ã¢â€°Ë† 115,700 QPS (peak ~350,000)
+- Storage: 100M Ãƒâ€” 500 bytes/day = 50 GB/day Ã¢â€ â€™ ~91 TB in 5 years
 
-**Phase 3 â€” HLD:**
+**Phase 3 Ã¢â‚¬â€ HLD:**
 - Stateless API servers (auto-scaled)
 - Redis cache for hot URLs (LRU eviction, TTL 1 hour)
-- Base-62 encoding for short IDs (7 chars = 62^7 â‰ˆ 3.5T combinations)
+- Base-62 encoding for short IDs (7 chars = 62^7 Ã¢â€°Ë† 3.5T combinations)
 - Database: NoSQL (Cassandra or DynamoDB) for write scalability
 
-**Phase 4 â€” Deep Dive:**
+**Phase 4 Ã¢â‚¬â€ Deep Dive:**
 - Encoding choice: Base-62 (a-z, A-Z, 0-9) vs Base-64 (adds + and /, less user-friendly)
-- Key generation: Snowflake-style ID â†’ encode to base-62. Avoids DB lookup for ID allocation
+- Key generation: Snowflake-style ID Ã¢â€ â€™ encode to base-62. Avoids DB lookup for ID allocation
 - Cache strategy: Cache-aside. On write miss: query DB, populate cache, return redirect
 - Redirection: 301 (permanent) for most clients to reduce load; 307 (temporary) for analytics tracking
 
@@ -308,14 +365,143 @@ This fits on a handful of SSDs. The bottleneck is not storage â€” it is wri
 Instagram-scale: 500M DAU, each user uploads ~2 photos/day, average photo 2 MB, each photo viewed ~50 times.
 
 ```
-Write QPS = 500M Ã— 2 / 86,400 â‰ˆ 11,574 QPS
-Storage/day = 500M Ã— 2 photos Ã— 2 MB = 2 PB/day
-Storage/year â‰ˆ 730 PB
-Read QPS = 11,574 Ã— 50 â‰ˆ 578,700 QPS
-CDN bandwidth = 578,700 Ã— 2 MB = 1,157,400 MB/s â‰ˆ 1.15 TB/s
+Write QPS = 500M Ãƒâ€” 2 / 86,400 Ã¢â€°Ë† 11,574 QPS
+Storage/day = 500M Ãƒâ€” 2 photos Ãƒâ€” 2 MB = 2 PB/day
+Storage/year Ã¢â€°Ë† 730 PB
+Read QPS = 11,574 Ãƒâ€” 50 Ã¢â€°Ë† 578,700 QPS
+CDN bandwidth = 578,700 Ãƒâ€” 2 MB = 1,157,400 MB/s Ã¢â€°Ë† 1.15 TB/s
 ```
 
 Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions, cache the most-requested 80% on CDN, serve originals only on explicit demand.
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Metric | Trade-Off |
+|---------|-----------|--------|-----------|
+| Scalability | Ability to handle growth | QPS, data volume | Horizontal vs vertical |
+| Reliability | Probability of no failure | MTBF, MTTR | Redundancy vs failure risk |
+| Availability | Proportion of time operational | Uptime % (nines) | Cost per nine |
+| Performance | Speed and capacity | Latency, throughput | Latency vs throughput |
+| Maintainability | Ease of change | Operability, simplicity | Complexity vs flexibility |
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Formula | Expression |
+|---------|-----------|
+| Availability | A = MTBF / (MTBF + MTTR) |
+| QPS | DAU * Actions / 86,400 |
+| Storage | Items/day * size * retention * replication |
+| Bandwidth | Bits/request * QPS |
+| Little's Law | L = lambda * W |
+
+## Cross-Application Matrix
+
+| System | Primary NFR | Key Trade-Off | Architecture Highlight |
+|--------|------------|---------------|----------------------|
+| Google Search | Performance | Cost for sub-100ms latency | Inverted index + MapReduce |
+| Facebook | Availability | Staleness for availability | TAO graph cache over MySQL |
+| WhatsApp | Reliability | Zero message loss | Erlang custom server |
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the minimum availability for less than 1 hour downtime/year?
+- A) 99%
+- B) 99.9%
+- C) 99.99%
+- D) 99.999%
+
+<details><summary>Answer</summary>C) 99.99% (52.6 minutes/year)</details>
+
+**Q2:** Which phase comes after back-of-the-envelope estimation?
+- A) Requirements gathering
+- B) High-level design
+- C) Detailed deep dive
+- D) Deployment
+
+<details><summary>Answer</summary>B) High-level design (Phase 3)</details>
+
+**Q3:** MTBF=720h, MTTR=4h. What is availability?
+- A) 99.0%
+- B) 99.45%
+- C) 99.94%
+- D) 99.99%
+
+<details><summary>Answer</summary>B) 720/724 = 99.45%</details>
+
+**Q4:** What does Little's Law state?
+- A) Throughput equals capacity
+- B) Concurrency = arrival rate * latency
+- C) Latency is always under 100ms
+- D) Storage grows linearly
+
+<details><summary>Answer</summary>B) L = lambda * W</details>
+
+**Q5:** Why is tail latency critical in distributed systems?
+- A) It determines median user experience
+- B) A single slow request causes head-of-line blocking
+- C) It is cheaper to optimize
+- D) SLAs only measure tail latency
+
+<details><summary>Answer</summary>B) Head-of-line blocking in fan-out requests</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 1: Introduction to System Design | Fundamental to system design |
+| Concept Comparison | Core topic in Chapter 1: Introduction to System Design | Fundamental to system design |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept for Chapter 1: Introduction to System Design |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 1
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
 
 ---
 
@@ -328,7 +514,7 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 - Every design decision is a trade-off; the correct choice depends on the system's primary NFRs, not on abstract "best practices."
 - SLA, SLO, and SLI form a three-tier commitment cascade: legal contract, internal target, actual measurement.
 - Real systems like Google Search, Facebook, and WhatsApp optimize for radically different NFR profiles despite serving similar scale.
-- Little's Law (L = Î»W) relates throughput, concurrency, and latency in stable-state systems.
+- Little's Law (L = ÃŽÂ»W) relates throughput, concurrency, and latency in stable-state systems.
 
 ---
 

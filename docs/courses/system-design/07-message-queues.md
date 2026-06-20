@@ -1,4 +1,5 @@
 # Chapter 7: Message Queues and Event-Driven Architecture
+> **Previous:** [06 Distributed Consistency](./06-distributed-consistency.md) | **Next:** [08 Microservices Apis](./08-microservices-apis.md)
 
 ---
 ## Learning Objectives
@@ -11,12 +12,39 @@
 - Apply backpressure handling strategies and priority queue patterns in real-time systems
 
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Message queue models, Kafka, RabbitMQ, delivery guarantees |
+| **Key Concepts** | Publish-subscribe, point-to-point, push vs pull |
+| **Delivery Semantics** | At-most-once, at-least-once, exactly-once |
+| **Broker Comparison** | Kafka, RabbitMQ, AWS SQS, Pulsar trade-offs |
+| **Use Cases** | Async processing, event sourcing, stream processing, CDC |
+| **Real-World** | LinkedIn Kafka, Uber dispatch, Airbnb event bus |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+```
+
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Message Queue Architectures Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/07-message-queues.png)
 
 ### Synchronous vs Asynchronous Communication
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 In distributed systems, services communicate either synchronously or asynchronously.
 
 **Synchronous communication** blocks the caller until a response is received. HTTP/REST and gRPC are synchronous by default.
@@ -45,6 +73,10 @@ Client â† â† â† â† 202 Accepted (immediate)
 
 ### Point-to-Point vs Publish-Subscribe
 
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
+
 **Point-to-Point (Queue):** A message is consumed by exactly one consumer. Multiple consumers compete for messages â€” Kafka consumer groups implement this model.
 
 ```
@@ -69,6 +101,10 @@ Producer â†’ [Topic] â†’ Subscriber A
 | Use case | Task distribution | Event broadcasting |
 
 ### Apache Kafka
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 Apache Kafka is a distributed event streaming platform organized as a commit log. Its architecture centers on topics, partitions, offsets, and consumer groups.
 
@@ -606,7 +642,58 @@ sequenceDiagram
     C->>DB: Delete outbox row (or mark processed)
 ```
 
+## Concept Comparison
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 7: Message Queues and Event-Driven Architecture | Fundamental concept for system design |
+
 ---
+
+## Quick Reference
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept from Chapter 7: Message Queues and Event-Driven Architecture |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application | Trade-Off |
+|---------|------------|-----------|
+| Theory | Relevant across design scenarios | Requirements-driven decisions |
+
+---
+
+## Chapter Quiz
+
+**Q1:** What is the key takeaway from this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most critical for distributed systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q3:** How does this topic apply to FAANG-level system design?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+---
+
 ## Summary
 
 - Asynchronous communication decouples services via a message broker, improving resilience and allowing independent scaling at the cost of increased system complexity
@@ -643,6 +730,7 @@ sequenceDiagram
 
 ### Challenge Problem
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Design a Financial Event Sourcing System**
 
 Design an event-sourced ledger system for a financial exchange processing 50,000 trades/second.

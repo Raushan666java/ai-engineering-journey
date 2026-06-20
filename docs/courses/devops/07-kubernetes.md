@@ -1,4 +1,6 @@
-# Chapter 7: Kubernetes Basics
+﻿# Chapter 7: Kubernetes Basics
+
+> **Previous:** [Container Orchestration with Kubernetes](./06-orchestration.md) | **Next:** [Infrastructure as Code (IaC)](./07-infrastructure-as-code.md)
 
 ## Learning Objectives
 
@@ -13,9 +15,37 @@ By the end of this chapter, students will be able to:
 5. Use Namespaces, labels, and selectors for resource organization
 6. Apply annotations for metadata and tool integration
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| K8s Architecture | Control Plane and Worker Node components | API Server is the front door for all cluster operations |
+| Pods | One or more containers sharing network and storage | Use multi-container Pods for tightly coupled processes |
+| Deployments | Declarative Pod management with rolling updates | Always use Deployments for stateless applications |
+| Services | ClusterIP, NodePort, LoadBalancer, ExternalName | Match Service type to access requirements |
+| ConfigMaps & Secrets | Configuration separation from images | Secrets are base64 encoded, not truly secure by default |
+| Namespaces & Labels | Virtual cluster partitions and metadata | Labels enable flexible resource selection |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[K8s Architecture] --> B[Control Plane]
+    A --> C[Worker Nodes]
+    B & C --> D[Pods]
+    D --> E[Deployments]
+    D --> F[Services]
+    D --> G[ConfigMaps]
+    D --> H[Secrets]
+    E & F & G & H --> I[Namespaces & Labels]
+```
+
 ## Theory
 
 ### 7.1 Kubernetes Architecture
+
+> **Pro Tip:** Always set both requests and limits for Pod resources. CPU and memory guarantees prevent resource starvation.
 
 Kubernetes (K8s) is an open-source container orchestration platform that automates deployment, scaling, and management of containerized applications. A Kubernetes cluster consists of control plane nodes and worker nodes.
 
@@ -32,6 +62,8 @@ Kubernetes (K8s) is an open-source container orchestration platform that automat
 - **Container Runtime** â€” The software that runs containers (containerd, CRI-O, Docker Engine via cri-dockerd). Kubernetes uses the Container Runtime Interface (CRI) for runtime abstraction.
 
 ### 7.2 Pods
+
+> **Remember:** Services select Pods by labels. Ensure your Pod labels match the Service selector exactly.
 
 A Pod is the smallest deployable unit in Kubernetes. It represents one or more containers that share network namespace, storage volumes, and lifecycle. Containers in the same Pod communicate via localhost and share the same IP address.
 
@@ -61,6 +93,8 @@ spec:
 Pods are ephemeral. Direct Pod creation is rare; higher-level controllers (Deployments, StatefulSets) manage Pod lifecycle.
 
 ### 7.3 Deployments
+
+> **Warning:** Secrets in etcd are only base64 encoded. Enable encryption at rest for production clusters.
 
 A Deployment provides declarative updates for Pods and ReplicaSets. It manages rollout, rollback, scaling, and self-healing.
 
@@ -197,6 +231,46 @@ metadata:
     prometheus.io/scrape: "true"
     prometheus.io/port: "8080"
 ```
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| Pod | One or more containers sharing network and storage |
+| Deployment | Declarative Pod management with updates |
+| Service | Stable endpoint with load balancing |
+| ConfigMap | Non-sensitive config via key-value pairs |
+| Secret | Base64-encoded sensitive data in etcd |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| Control Plane | API Server, etcd, Scheduler, Controller Manager |
+| Worker | Kubelet, kube-proxy, container runtime |
+| Services | ClusterIP(internal), NodePort, LoadBalancer(external) |
+| ConfigMap | Environment variables or mounted files |
+| Labels | Key-value metadata for resource selection |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | Deploy and scale web applications |
+| Cloud | Multi-cloud workload portability |
+| Enterprise | Microservice platform with RBAC |
+| ML | GPU-accelerated training jobs |
+
+## Chapter Quiz
+
+<details><summary>Question 1: What does etcd use for consistency?</summary>**A)** Paxos<br>**B)** Raft consensus algorithm<br>**C)** Two-phase commit<br>**D)** Quorum-based voting<br><br>**Answer: B)** Raft consensus algorithm</details>
+
+<details><summary>Question 2: Which Service type exposes pods via every node's IP?</summary>**A)** ClusterIP<br>**B)** NodePort<br>**C)** LoadBalancer<br>**D)** ExternalName<br><br>**Answer: B)** NodePort</details>
+
+<details><summary>Question 3: What is a label selector used for?</summary>**A)** Authentication<br>**B)** Identifying and grouping Kubernetes objects<br>**C)** Load balancing configuration<br>**D)** Logging configuration<br><br>**Answer: B)** Identifying and grouping Kubernetes objects</details>
+
 
 ## Summary
 

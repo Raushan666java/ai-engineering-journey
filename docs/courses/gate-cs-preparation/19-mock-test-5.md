@@ -1,5 +1,59 @@
 # GATE CS Mock Test 5 â€” Full-Length Practice Paper
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Exam | GATE CS Full-Length Mock |
+| Total Marks | 100 |
+| Duration | 3 Hours |
+| Sections | General Aptitude + Core CS |
+| Purpose | Concept application test |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[GA Section A] --> B[Logic]
+    C[GA Section B] --> D[Data Interpretation]
+    E[Core CS] --> F[Application]
+    B --> G[Score]
+    D --> G
+    F --> G
+    G --> H[Concept Review]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Section A | Section B |
+|--- |--- |--- |
+| Type | MCQs | MCQs + NATs |
+| Marks | 55 | 45 |
+| Questions | 25 | 40 |
+| Difficulty | Challenging | Very Challenging |
+| Time Allocation | 60 min | 120 min |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Speed vs Accuracy | Tradeoff between questions and correctness |
+| Elimination Strategy | Removing wrong options for higher success |
+| Mental Math | Arithmetic without calculator |
+| Time Buffer | Reserved time for revision at end |
+| Guessing Penalty | Negative marking impact calculation |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Practice mental math for NAT questions - GATE does not allow calculators for most questions.
+>
+> **Remember:** If a problem seems too complex, there is likely a simpler approach. Step back and reconsider.
+
+
 ## Exam Instructions
 
 ![Mock Test 5 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/19-mock-test-5.png)

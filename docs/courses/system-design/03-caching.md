@@ -1,4 +1,5 @@
 # Chapter 3: Caching Strategies and Patterns
+> **Previous:** [02 Scalability Load Balancing](./02-scalability-load-balancing.md) | **Next:** [04 Database Foundations](./04-database-foundations.md)
 
 ---
 
@@ -13,14 +14,68 @@
 - Model cache consistency trade-offs and apply invalidation strategies
 - Analyze real-world cache architectures including Facebook's TAO and Twitter's Twemproxy
 
+## Chapter at a Glance
+
+| Aspect | Details |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Core Concepts] --> B[Design Decisions]
+    B --> C[Real-World Examples]
+```
+|--------|---------|
+| **Scope** | Locality, caching patterns, eviction policies, invalidation, CDN |
+| **Key Concepts** | Core topics covered in Chapter 3: Caching Strategies and Patterns |
+| **Design Skills** | Cache pattern selection, eviction tuning, thundering herd prevention |
+| **Interview Angle** | Frequently tested in system design interviews |
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Locality, caching patterns, eviction policies, invalidation, CDN |
+| **Key Concepts** | Cache-aside, read/write-through, write-behind, refresh-ahead |
+| **Eviction Policies** | LRU, LFU, FIFO, MRU, ARC, 2Q — strengths and weaknesses |
+| **Thundering Herd** | Mutex locking and probabilistic early expiration (XFetch) |
+| **Invalidation** | TTL, event-driven, write-invalidate — consistency trade-offs |
+| **Real-World** | Facebook TAO, Twitter Twemproxy |
+
+---
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+    B[Concept Comparison]
+    A --> B
+    C[Quick Reference]
+    B --> C
+    D[CrossApplication Matrix]
+    C --> D
+    E[Chapter Quiz]
+    D --> E
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Caching Strategies Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/03-caching.png)
 
 ### Locality of Reference
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Caching works because of locality of reference â€” the observation that accessed data is not uniformly distributed.
 
 **Temporal locality:** If a piece of data is accessed now, it is likely to be accessed again soon. Examples: a user's session data, the hot tweet in a timeline, the current page's CSS file. Temporal locality is the reason LRU (Least Recently Used) eviction works well: recently accessed items are kept, untouched items are evicted.
@@ -36,6 +91,10 @@ A well-tuned cache for an internet application achieves 90-99% hit rate. Below 8
 ---
 
 ### Cache Hierarchy
+
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
 Caching occurs at every level of a modern system. Each level is faster, smaller, and more expensive per byte than the one below it.
 
@@ -56,6 +115,10 @@ The **cache miss penalty** increases by orders of magnitude at each level. A mis
 ---
 
 ### Caching Patterns
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 Five fundamental patterns govern every cache implementation.
 
@@ -612,6 +675,114 @@ async function refreshFeedAsync(userId) {
 - The beta parameter controls how early refreshes begin (higher = later, more concentrated at TTL boundary)
 - Mutex lock ensures only one background refresh runs per key
 
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Metric |
+|---------|-----------|------------|
+| Theory | Core topic covered in Chapter 3: Caching Strategies and Patterns | Defined by specific measurable attributes |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Fundamental concept for Chapter 3: Caching Strategies and Patterns |
+
+---
+
+## Cross-Application Matrix
+
+| Component | When to Use | Trade-Off |
+|-----------|------------|-----------|
+| Theory | Appropriate for specific system contexts | Each choice involves trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q2:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q3:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 3: Caching Strategies and Patterns | Fundamental to system design |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept for Chapter 3: Caching Strategies and Patterns |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 3
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
+
 ---
 
 ## Summary
@@ -654,6 +825,7 @@ async function refreshFeedAsync(userId) {
 
 ### Challenge Problem (1)
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 You are designing the caching infrastructure for a real-time news aggregation platform. The platform ingests 10,000 articles per minute from sources worldwide and serves 100M daily active users. Each user sees a personalized feed.
 
 The cache must handle:

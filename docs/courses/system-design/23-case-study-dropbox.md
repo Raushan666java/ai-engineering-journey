@@ -1,4 +1,5 @@
 # Chapter 23: Case Study â€” Dropbox and File Storage
+> **Previous:** [22 Case Study Twitter](./22-case-study-twitter.md) | **Next:** [24 Interview Preparation](./24-interview-preparation.md)
 
 ---
 
@@ -12,13 +13,54 @@
 - Understand the metadata store sharding pattern and the streaming download architecture for large files
 
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Dropbox architecture: sync, block storage, dedup, conflict resolution |
+| **Key Concepts** | Block-level sync, chunking, deduplication, delta sync, LAN sync |
+| **Sync Engine** | Local folder monitoring, chunking, compression, encryption |
+| **Block Storage** | Block-level deduplication, compression, encrypted storage |
+| **Conflict Resolution** | Version vectors, CRDTs, server-authoritative |
+| **Real-World** | Local-first design, incremental sync, efficient delta encoding |
+
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory / Case Study]
+    B[Concept Comparison]
+    A --> B
+    C[Quick Reference]
+    B --> C
+    D[Chapter Quiz]
+    C --> D
+    E[Concept Comparison]
+    D --> E
+    F[Quick Reference]
+    E --> F
+    G[Chapter Quiz]
+    F --> G
+    H[Exercises]
+    G --> H
+```
 
 ## Theory / Case Study
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Dropbox Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/23-dropbox.png)
 
 ### Phase 1: Problem Scope and Requirements
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Dropbox serves over 700 million users storing more than 500 billion files across Windows, macOS, Linux, iOS, Android, and the web. The core promise is simple: a file saved on one device appears on all others within seconds. Behind this simplicity lies one of the most complex engineering challenges in distributed systems â€” synchronizing billions of file changes across heterogeneous devices with unreliable network connections, limited battery life, and widely varying storage capacities.
 
 The requirements are deceptively demanding. Conflict detection for small files must complete within 100 milliseconds â€” the user should not see a sync conflict icon persist after saving a file. Sync must work across platforms with fundamentally different file system event notification APIs: Windows uses ReadDirectoryChangesW, macOS uses FSEvents, and Linux uses inotify. The system must handle files up to hundreds of gigabytes (CAD files, video projects, database dumps) while also optimizing for the common case of small text documents and photos.
@@ -28,6 +70,10 @@ Non-functional requirements include strong read-after-write consistency within a
 The scale is staggering. Users store over 500 billion files. The average user stores 10,000 files across 500 folders. The total data stored exceeds 10 exabytes (10 million terabytes). On the desktop client alone, the file watcher must track changes to millions of files without consuming more than 5% of CPU or 200MB of memory â€” the client cannot degrade the user's computing experience. The mobile app must handle photo uploads from the camera roll, selective sync (choose which folders to sync to mobile), and offline access with local caching. The web client must serve file previews for 100+ file types, including Office documents, PDFs, videos, and RAW photos â€” all within a browser tab.
 
 ### Phase 2: Client Architecture
+
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
 The Dropbox desktop client is a multi-process application with carefully separated concerns. Each component runs in its own process or thread with well-defined interfaces.
 
@@ -100,6 +146,10 @@ Implementation differs by platform:
 Smart Sync dramatically reduces local storage requirements. An enterprise user with a team folder containing 500GB of files might only store 5GB locally â€” the files they actually use â€” while seeing all 500GB in their file system.
 
 ### Phase 3: Sync Protocol and Block-Level Transfer
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 **Block-Level Sync**
 
@@ -330,6 +380,119 @@ graph TB
     API --> AL
 ```
 
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Metric |
+|---------|-----------|------------|
+| Theory / Case Study | Core topic covered in Chapter 23: Case Study â€” Dropbox and File Storage | Defined by specific measurable attributes |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory / Case Study | Fundamental concept for Chapter 23: Case Study â€” Dropbox and File Storage |
+
+---
+
+## Cross-Application Matrix
+
+| Component | When to Use | Trade-Off |
+|-----------|------------|-----------|
+| Theory / Case Study | Appropriate for specific system contexts | Each choice involves trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q2:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q3:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory / Case Study | Core topic in Chapter 23: Case Study â€” Dropbox and File Storage | Fundamental to system design |
+| Concept Comparison | Core topic in Chapter 23: Case Study â€” Dropbox and File Storage | Fundamental to system design |
+| Quick Reference | Core topic in Chapter 23: Case Study â€” Dropbox and File Storage | Fundamental to system design |
+| Cross-Application Matrix | Core topic in Chapter 23: Case Study â€” Dropbox and File Storage | Fundamental to system design |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory / Case Study | Essential concept for Chapter 23: Case Study â€” Dropbox and File Storage |
+| Concept Comparison | Essential concept for Chapter 23: Case Study â€” Dropbox and File Storage |
+| Quick Reference | Essential concept for Chapter 23: Case Study â€” Dropbox and File Storage |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory / Case Study | Relevant across multiple system design scenarios | Each choice has trade-offs |
+| Concept Comparison | Relevant across multiple system design scenarios | Each choice has trade-offs |
+| Quick Reference | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 23
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
+
 ---
 
 ## Summary
@@ -389,6 +552,7 @@ graph TB
 
 ### Challenge Problem
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Exabyte-Scale Storage System Design**: Dropbox's user base grows to 1 billion users, each storing an average of 50GB. Total storage exceeds 50 exabytes. The current Magic Pocket single-region design cannot scale to this size without unacceptable latency for remote users.
 
 Design a global storage architecture that:

@@ -1,5 +1,59 @@
 # GATE CS Mock Test 2 â€” Full-Length Practice Paper
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Exam | GATE CS Full-Length Mock |
+| Total Marks | 100 |
+| Duration | 3 Hours |
+| Sections | General Aptitude + Core CS |
+| Purpose | Mid-preparation check |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[GA Section A] --> B[Reasoning]
+    C[GA Section B] --> D[Quantitative]
+    E[Core CS] --> F[Applied Problems]
+    B --> G[Score]
+    D --> G
+    F --> G
+    G --> H[Weak Area ID]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Section A | Section B |
+|--- |--- |--- |
+| Focus | Core concepts | Application |
+| Question Type | MCQs | MCQs + NATs |
+| Marks | 55 | 45 |
+| Difficulty | Moderate | High |
+| Strategy | Attempt confidently | Show steps for NATs |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Sectional Timing | Time allocated per paper section |
+| Three-Pass Method | Easy to Hard question sequence |
+| NAT Precision | Enter answers with correct decimal places |
+| Answer Review | Final check before submission |
+| Mark for Review | Flag uncertain questions for later revisit |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Use the elimination technique for MCQs - even eliminating 2 of 4 options doubles guessing accuracy.
+>
+> **Remember:** Focus on accuracy over speed. 50 questions at 90% accuracy scores higher than 65 at 50%.
+
+
 ## Exam Instructions
 
 ![Mock Test 2 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/16-mock-test-2.png)

@@ -1,5 +1,59 @@
 # GATE CS Mock Test 1 â€” Full-Length Practice Paper
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Exam | GATE CS Full-Length Mock |
+| Total Marks | 100 |
+| Duration | 3 Hours |
+| Sections | General Aptitude + Core CS |
+| Purpose | Baseline assessment |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[GA Section A] --> B[MCQ]
+    C[GA Section B] --> D[Numerical]
+    E[Core CS] --> F[Topic Questions]
+    B --> G[Score]
+    D --> G
+    F --> G
+    G --> H[Analysis]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Section A | Section B |
+|--- |--- |--- |
+| Question Type | All MCQs | MCQs + NATs |
+| Total Marks | 55 | 45 |
+| Question Count | 25 | 40 |
+| Negative Marking | Yes | Yes (MCQs only) |
+| Recommended Time | 50 min | 130 min |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| 1-Mark Question | Carry 1 mark each, lower difficulty |
+| 2-Mark Question | Carry 2 marks each, higher difficulty |
+| NAT | Numerical Answer Type, no negative marking |
+| Elimination | Technique to reduce MCQ options |
+| Guess Factor | Probability-based decision for uncertain questions |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** For 2-mark questions, verify your answer carefully. One small miscalculation wastes 3+ minutes of effort.
+>
+> **Remember:** If stuck on a question for more than 3 minutes, mark and move on. Return if time permits.
+
+
 ## Exam Instructions
 
 ![Mock Test 1 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/15-mock-test-1.png)

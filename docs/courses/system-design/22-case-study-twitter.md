@@ -1,4 +1,5 @@
 # Chapter 22: Case Study â€” Twitter and News Feed
+> **Previous:** [21 Case Study Uber](./21-case-study-uber.md) | **Next:** [23 Case Study Dropbox](./23-case-study-dropbox.md)
 
 ---
 
@@ -12,13 +13,54 @@
 - Understand rate limiting, social graph storage, and disaster recovery lessons from the "Fail Whale" era
 
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Twitter architecture: fan-out, timeline, Tweet cache, real-time search |
+| **Key Concepts** | Fan-out on write vs read, timeline generation, Tweet cache |
+| **Timeline** | Hybrid fan-out, precomputed timelines, pull for celebrities |
+| **Tweet Cache** | Redis-based Tweet cache with LRU eviction |
+| **Real-Time Search** | Early Bird, inverted index in memory, 300ms latency |
+| **Real-World** | Handling celebrity hotspots, read throughput at millions QPS |
+
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory / Case Study]
+    B[Concept Comparison]
+    A --> B
+    C[Quick Reference]
+    B --> C
+    D[Chapter Quiz]
+    C --> D
+    E[Concept Comparison]
+    D --> E
+    F[Quick Reference]
+    E --> F
+    G[Chapter Quiz]
+    F --> G
+    H[Exercises]
+    G --> H
+```
 
 ## Theory / Case Study
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Twitter Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/22-twitter.png)
 
 ### Phase 1: Problem Scope and Requirements
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Twitter serves 330+ million monthly active users who generate 500+ million tweets per day. Every user expects to see their timeline load in under 5 seconds, no matter how many accounts they follow. When a breaking news event occurs â€” an earthquake, a political announcement, a celebrity death â€” Twitter must surface relevant tweets within seconds, not minutes. The character limit started at 140 and expanded to 280 in 2017, which fundamentally changed the distribution of tweet lengths and engagement patterns.
 
 The core challenge is the fan-out problem. A single tweet from a popular account must appear in the timelines of every one of that account's followers. When @BarackObama tweets â€” with 60+ million followers â€” the system must insert that tweet into 60 million timelines. If 10 celebrities tweet in the same second, that is 600 million timeline insertions. Doing this instantly is impossible; doing it in seconds requires careful architectural choices.
@@ -26,6 +68,10 @@ The core challenge is the fan-out problem. A single tweet from a popular account
 Non-functional requirements include high write availability (tweets must never be lost), eventual consistency for timelines (it is acceptable if a tweet appears slightly late for some users), and resistance to abuse (spam, harassment, coordinated disinformation campaigns must be detectable and filterable). The platform operates under significant legal pressure regarding content moderation in different jurisdictions (Germany's NetzDG, India's IT Rules).
 
 ### Phase 2: Timeline Generation â€” Fan-Out Strategies
+
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
 The timeline generation problem admits three fundamental approaches, each with different trade-offs.
 
@@ -113,6 +159,10 @@ The hybrid with threshold T where 99.9% of users have < T followers:
 This analysis explains the hybrid threshold. Since 99.9% of users have followers well below the threshold, their tweets are pushed normally. The threshold effectively isolates the 0.1% of celebrity accounts whose follower counts would cause O(100B) additional writes per day under full push. The marginal cost of the read-time merge (pulling celebrity tweets) is small relative to the saved write costs.
 
 ### Phase 3: The Evolution of Twitter's Architecture
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 **The Ruby on Rails Monolith (2006-2010)**
 
@@ -339,6 +389,119 @@ Both lists are stored in Memcache (in-memory) across a cluster of machines. The 
 
 The pre-computed timeline lists (fan-on-write output) are stored in Redis as lists keyed by user ID. Each list contains tweet IDs in reverse-chronological order. The list is capped at 800 entries â€” older tweets are evicted. When a user reads their timeline, the timeline service reads the list with `LRANGE user:<id>:timeline 0 799` and hydrates the tweet metadata from Manhattan.
 
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Metric |
+|---------|-----------|------------|
+| Theory / Case Study | Core topic covered in Chapter 22: Case Study â€” Twitter and News Feed | Defined by specific measurable attributes |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory / Case Study | Fundamental concept for Chapter 22: Case Study â€” Twitter and News Feed |
+
+---
+
+## Cross-Application Matrix
+
+| Component | When to Use | Trade-Off |
+|-----------|------------|-----------|
+| Theory / Case Study | Appropriate for specific system contexts | Each choice involves trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q2:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q3:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory / Case Study | Core topic in Chapter 22: Case Study â€” Twitter and News Feed | Fundamental to system design |
+| Concept Comparison | Core topic in Chapter 22: Case Study â€” Twitter and News Feed | Fundamental to system design |
+| Quick Reference | Core topic in Chapter 22: Case Study â€” Twitter and News Feed | Fundamental to system design |
+| Cross-Application Matrix | Core topic in Chapter 22: Case Study â€” Twitter and News Feed | Fundamental to system design |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory / Case Study | Essential concept for Chapter 22: Case Study â€” Twitter and News Feed |
+| Concept Comparison | Essential concept for Chapter 22: Case Study â€” Twitter and News Feed |
+| Quick Reference | Essential concept for Chapter 22: Case Study â€” Twitter and News Feed |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory / Case Study | Relevant across multiple system design scenarios | Each choice has trade-offs |
+| Concept Comparison | Relevant across multiple system design scenarios | Each choice has trade-offs |
+| Quick Reference | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 22
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
+
 ---
 
 ## Summary
@@ -395,6 +558,7 @@ The pre-computed timeline lists (fan-on-write output) are stored in Redis as lis
 
 ### Challenge Problem
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Global Event Handling**: A major global event (e.g., a World Cup final goal) causes a traffic spike: tweets per second go from 6,000 to 150,000 in 10 seconds. The timeline service is overwhelmed. Design a system that:
 
 - Automatically detects the traffic onset within 5 seconds and classifies it as a global event (not a DDoS)

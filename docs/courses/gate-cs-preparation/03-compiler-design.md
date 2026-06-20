@@ -1,5 +1,60 @@
 # Compiler Design â€” GATE CS Preparation
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 5-8 marks |
+| Topics | Lexical analysis, Parsing, SDT, Code generation, Optimization |
+| Difficulty | Moderate |
+| Weightage | 4-6% of GATE CS paper |
+| Key Skills | Grammar analysis, Parse trees, Intermediate code |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[Source Code] --> B[Lexical Analysis]
+    B --> C[Syntax Analysis]
+    C --> D[Semantic Analysis]
+    D --> E[Intermediate Code]
+    E --> F[Code Optimization]
+    F --> G[Code Generation]
+    G --> H[Target Code]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Top-Down Parsing | Bottom-Up Parsing |
+|--- |--- |--- |
+| Starting Point | Start symbol | Input tokens |
+| Derivation | Leftmost | Rightmost (reverse) |
+| Grammar | LL(k) | LR(k), LALR |
+| Error Detection | Early | Late (after full reduction) |
+| Table Size | Small | Large |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Lexeme | Sequence of characters matching a pattern |
+| Token | Lexeme classified by type |
+| Parse Tree | Tree representation of derivation |
+| AST | Abstract Syntax Tree |
+| SDT | Syntax-Directed Translation |
+| DAG | Directed Acyclic Graph (for optimization) |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Focus on LL(1) vs LR(1) parsing table construction. SDT for expression evaluation is also frequently tested.
+>
+> **Remember:** Three-address code generation questions are common. Know how to convert statements to TAC.
+
+
 ## Overview
 
 ![Compiler Design Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/03-compiler-design.png)

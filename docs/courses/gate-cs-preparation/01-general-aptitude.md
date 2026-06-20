@@ -1,5 +1,61 @@
 # General Aptitude for GATE CS
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 15 MCQs |
+| Topics | Numerical ability, Reasoning, Verbal ability, Data interpretation |
+| Difficulty | Easy to Moderate |
+| Weightage | 15% of GATE CS paper |
+| Key Skills | Speed, Accuracy, Elimination techniques |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[General Aptitude] --> B[Numerical Ability]
+    A --> C[Reasoning]
+    A --> D[Verbal Ability]
+    B --> E[Speed Calculation]
+    C --> F[Logical Deduction]
+    D --> G[Comprehension]
+    E --> H[Score]
+    F --> H
+    G --> H
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | 1-Mark Questions | 2-Mark Questions |
+|--- |--- |--- |
+| Negative Marking | -1/3 | -2/3 |
+| Time Budget | approx 1 min each | approx 3 min each |
+| Count in Paper | approx 30 | approx 35 |
+| Total from Type | approx 30 | approx 70 |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Ratio | Comparison of two quantities a:b |
+| Percentage | Parts per hundred (x% = x/100) |
+| Average | Sum of values divided by count |
+| Probability | Favorable outcomes / Total outcomes |
+| Permutation | Arrangement (nPr = n!/(n-r)!) |
+| Combination | Selection (nCr = n!/(r!(n-r)!)) |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** For 2-mark questions, verify your answer carefully. One small miscalculation wastes 3+ minutes of effort.
+>
+> **Remember:** If stuck on a question for more than 3 minutes, mark and move on. Return if time permits.
+
+
 ## GATE Marks Distribution
 
 ![GATE General Aptitude Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/01-general-aptitude.png)

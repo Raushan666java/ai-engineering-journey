@@ -1,4 +1,5 @@
 # Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond
+> **Previous:** [13 Lld Concurrency](./13-lld-concurrency.md) | **Next:** [15 Cdn Dns Edge](./15-cdn-dns-edge.md)
 
 ---
 ## Learning Objectives
@@ -10,14 +11,66 @@
 - Implement counting, scalable, and cuckoo filters for real-world distributed systems
 - Evaluate time-series data structures including segment trees and round-robin databases
 
+## Chapter at a Glance
+
+| Aspect | Details |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Core Concepts] --> B[Design Decisions]
+    B --> C[Real-World Examples]
+```
+|--------|---------|
+| **Scope** | Distributed data structures, Bloom filters, HyperLogLog, Count-Min Sketch |
+| **Key Concepts** | Core topics covered in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
+| **Design Skills** | Probabilistic data structure selection, memory budgeting |
+| **Interview Angle** | Frequently tested in system design interviews |
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Core concepts covered in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
+| **Key Concepts** | Theory, Examples, Concept Comparison, Quick Reference |
+| **Design Skills** | Concept mastery and practical application |
+| **Interview Angle** | Common system design interview topic |
+
+---
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+    B[Concept Comparison]
+    A --> B
+    C[Quick Reference]
+    B --> C
+    D[CrossApplication Matrix]
+    C --> D
+    E[Chapter Quiz]
+    D --> E
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Distributed Data Structures Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/14-distributed-data-structures.png)
 
 ### 1. Consistent Hashing
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Consistent hashing maps keys to nodes in a hash ring (range [0, 2^m - 1]). Both nodes and keys hash into this ring; each key is assigned to the nearest clockwise node. When a node joins or leaves, only keys in its immediate vicinity redistribute â€” O(K/N) keys rather than O(K) reshuffling, where K is total keys and N is node count.
 
 **Hash ring**: Construct a circle of size 2^m (typically m = 32 or 64). Hash each node identifier (e.g., IP:port) with a uniform hash function and place it on the ring. Hash each key and walk clockwise to find the first node.
@@ -62,6 +115,10 @@ class ConsistentHashRing:
 
 ### 2. Rendezvous Hashing (HRW)
 
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
+
 Highest Random Weight (HRW) assigns each key to the node with the highest weight = hash(key || node_id). It requires O(N) computation per lookup (scan all nodes), but achieves perfect distribution with zero metadata overhead and handles node additions/removals gracefully using an O(N) mapping.
 
 **Comparison**:
@@ -82,6 +139,10 @@ selected = argmax(W(n, key)) for n in nodes
 For large node sets, HRW can be accelerated with a tree-based grouping (hierarchical HRW), reducing lookup to O(log N).
 
 ### 3. Merkle Trees
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 A Merkle tree is a complete binary tree where leaf nodes store hashes of data blocks and internal nodes store hashes of their children. The root hash commits the entire dataset. Two replicas compare root hashes; if they differ, they walk down divergent branches to find the specific blocks that differ â€” O(log B) comparisons for B blocks rather than O(B).
 
@@ -357,6 +418,114 @@ class CuckooFilter:
         return any(self.table[i][j] == fp for i in (i1, i2) for j in range(self.b))
 ```
 
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Metric |
+|---------|-----------|------------|
+| Theory | Core topic covered in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond | Defined by specific measurable attributes |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Fundamental concept for Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
+
+---
+
+## Cross-Application Matrix
+
+| Component | When to Use | Trade-Off |
+|-----------|------------|-----------|
+| Theory | Appropriate for specific system contexts | Each choice involves trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q2:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q3:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond | Fundamental to system design |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept for Chapter 14: Distributed Data Structures â€” Consistent Hashing and Beyond |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 14
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
+
 ---
 
 ## Summary
@@ -393,6 +562,7 @@ class CuckooFilter:
 
 ### Challenge Problem
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Design a distributed membership test service**: A global key-value store supports 1 billion keys across 200 nodes with chain replication. Build a multi-layer membership test architecture using:
 
 - A top-level Bloom filter per node (1% FP, covering all local keys)

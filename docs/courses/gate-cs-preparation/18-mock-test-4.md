@@ -1,5 +1,58 @@
 # GATE CS Mock Test 4 â€” Full-Length Practice Paper
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Exam | GATE CS Full-Length Mock |
+| Total Marks | 100 |
+| Duration | 3 Hours |
+| Sections | General Aptitude + Core CS |
+| Purpose | Speed and accuracy test |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[GA Section A] --> B[Comprehension]
+    C[GA Section B] --> D[Calculation]
+    E[Core CS] --> F[Mixed Topics]
+    B --> G[Score]
+    D --> G
+    F --> G
+    G --> H[Accuracy Metrics]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | MCQs | NATs |
+|--- |--- |--- |
+| Negative Marking | Yes | No |
+| Answer Input | Multiple choice | Enter numeric value |
+| Strategy | Elimination | Derive step-by-step |
+| Difficulty | Variable | Moderate to Hard |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Simulated Exam | Practice test under real conditions |
+| Score Analysis | Breakdown of marks by section and subject |
+| Revision Triggers | Wrong answers to topic revisit |
+| Confidence Level | Self-assessed readiness per subject |
+| Attempt Ratio | Number of questions attempted vs total |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Simulate real exam conditions - no phone, no breaks, no distractions. Environment matters for exam temperament.
+>
+> **Remember:** Each wrong answer is a learning opportunity. Review the underlying concept immediately.
+
+
 ## Exam Instructions
 
 ![Mock Test 4 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/18-mock-test-4.png)

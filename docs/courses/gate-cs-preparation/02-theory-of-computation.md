@@ -1,5 +1,60 @@
 # Theory of Computation â€” GATE CS
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 8-10 marks |
+| Topics | Automata, Regular languages, CFL, Turing machines, Undecidability |
+| Difficulty | Moderate to High |
+| Weightage | 5-8% of GATE CS paper |
+| Key Skills | Formal proofs, Language classification |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[Automata Theory] --> B[Regular Languages]
+    A --> C[Context-Free Languages]
+    B --> D[DFA/NFA/Regex]
+    C --> E[PDA/CFG]
+    D --> F[Turing Machines]
+    E --> F
+    F --> G[Undecidability]
+    G --> H[Complexity Classes]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Regular Languages | CFL | CSL/Recursive |
+|--- |--- |--- |--- |
+| Automaton | DFA/NFA | PDA | LBA/TM |
+| Grammar | Regular Grammar | CFG | CSG |
+| Closure | Closed under all | Closed under some | Not closed under complement |
+| Pumping Lemma | Yes | Yes | No |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| DFA | Deterministic Finite Automaton |
+| NFA | Nondeterministic Finite Automaton |
+| PDA | Pushdown Automaton |
+| TM | Turing Machine |
+| CFG | Context-Free Grammar |
+| Pumping Lemma | Tool to prove non-regularity / non-CFL |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Practice constructing DFA/NFA for languages and converting between them. TM construction questions are a favorite for 2-mark NATs.
+>
+> **Warning:** Pumping Lemma proofs can be tricky. Memorize the template structure for both regular and CFL pumping lemma.
+
+
 ## GATE Marks Distribution (Last 10 Years)
 
 ![Theory of Computation Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/02-theory-of-computation.png)

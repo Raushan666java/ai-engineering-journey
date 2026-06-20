@@ -1,5 +1,59 @@
 # GATE CS Mock Test 8 — Full-Length Practice Paper (Hardest Edition)
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Exam | GATE CS Full-Length Mock |
+| Total Marks | 100 |
+| Duration | 3 Hours |
+| Sections | General Aptitude + Core CS |
+| Purpose | Final readiness check |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[GA Section A] --> B[Quick Solve]
+    C[GA Section B] --> D[Precise Solve]
+    E[Core CS] --> F[Hardest Questions]
+    B --> G[Score]
+    D --> G
+    F --> G
+    G --> H[Readiness Score]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Section A | Section B |
+|--- |--- |--- |
+| Type | MCQs | MCQs + NATs |
+| Marks | 55 | 45 |
+| Questions | 25 | 40 |
+| Difficulty | Hardest | Hardest |
+| Focus | Speed + Accuracy | Depth + Precision |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| GATE Readiness | Overall preparedness score |
+| Last Attempt | Final mock before actual GATE exam |
+| Section Balance | Performance evenness across sections |
+| Peak Performance | Optimal speed-accuracy combination |
+| Final Review | Last-minute concept verification |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** This is your final mock. Review all previous mocks together and identify the 3 topics where you lost the most marks.
+>
+> **Remember:** Stay confident, get proper sleep before the exam, and trust your preparation.
+
+
 ## Exam Instructions
 
 ![Mock Test 8 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/22-mock-test-8.png)

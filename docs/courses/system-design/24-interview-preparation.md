@@ -1,4 +1,5 @@
 # Chapter 24: System Design Interview Preparation
+> **Previous:** [23 Case Study Dropbox](./23-case-study-dropbox.md) | **Next:** None
 
 ---
 
@@ -12,13 +13,54 @@
 - Practice time-boxed mock interview workflow with specific phase durations
 
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Interview strategies, system design frameworks, mock interview templates |
+| **Key Concepts** | Six-phase framework, estimation heuristics, company patterns |
+| **Framework** | Requirements -> Estimation -> HLD -> Deep Dive -> Bottlenecks -> Summary |
+| **Estimation** | QPS, storage, bandwidth, memory at order-of-magnitude precision |
+| **Company Patterns** | FAANG-specific question types and evaluation rubrics |
+| **Real-World** | Silent thinking, over-engineering, vague requirements, no trade-offs |
+
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory / Case Study]
+    B[Concept Comparison]
+    A --> B
+    C[Quick Reference]
+    B --> C
+    D[Chapter Quiz]
+    C --> D
+    E[Concept Comparison]
+    D --> E
+    F[Quick Reference]
+    E --> F
+    G[Chapter Quiz]
+    F --> G
+    H[Exercises]
+    G --> H
+```
 
 ## Theory / Case Study
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![System Design Interview Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/24-interview-preparation.png)
 
 ### Phase 1: The Interview Format
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 A system design interview typically lasts 45-60 minutes. The format varies by company but generally follows one of four archetypes:
 
 **Product Design (most common)**: "Design YouTube." The interviewer wants to see how you approach a familiar consumer product, making reasonable assumptions about scale, and prioritizing features based on user needs. These questions test your ability to decompose a known product into its architectural components.
@@ -36,6 +78,10 @@ The interviewer is evaluating four dimensions simultaneously:
 4. **Communication**: Can you explain complex ideas clearly, use whiteboard diagrams effectively, and incorporate feedback?
 
 ### Phase 2: The Structured Answer Framework
+
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
 The most reliable approach to any system design question follows six phases. The time allocations are guidelines â€” adjust based on the question's emphasis and the interviewer's signals.
 
@@ -226,6 +272,10 @@ This phase is your opportunity to show that you understand engineering as a seri
 
 ### Phase 3: Company-Specific Question Catalogs
 
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
+
 **Google**
 
 Google interviewers favor questions that test algorithmic thinking and scalability. Their questions often have a search or data processing angle:
@@ -410,6 +460,119 @@ Practice with a timer. The following schedule simulates a real interview:
                - "How to make this eventually consistent?"
 ```
 
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Metric |
+|---------|-----------|------------|
+| Theory / Case Study | Core topic covered in Chapter 24: System Design Interview Preparation | Defined by specific measurable attributes |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory / Case Study | Fundamental concept for Chapter 24: System Design Interview Preparation |
+
+---
+
+## Cross-Application Matrix
+
+| Component | When to Use | Trade-Off |
+|-----------|------------|-----------|
+| Theory / Case Study | Appropriate for specific system contexts | Each choice involves trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q2:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q3:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory / Case Study | Core topic in Chapter 24: System Design Interview Preparation | Fundamental to system design |
+| Concept Comparison | Core topic in Chapter 24: System Design Interview Preparation | Fundamental to system design |
+| Quick Reference | Core topic in Chapter 24: System Design Interview Preparation | Fundamental to system design |
+| Cross-Application Matrix | Core topic in Chapter 24: System Design Interview Preparation | Fundamental to system design |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory / Case Study | Essential concept for Chapter 24: System Design Interview Preparation |
+| Concept Comparison | Essential concept for Chapter 24: System Design Interview Preparation |
+| Quick Reference | Essential concept for Chapter 24: System Design Interview Preparation |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory / Case Study | Relevant across multiple system design scenarios | Each choice has trade-offs |
+| Concept Comparison | Relevant across multiple system design scenarios | Each choice has trade-offs |
+| Quick Reference | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 24
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
+
 ---
 
 ## Summary
@@ -513,6 +676,7 @@ If you scored "Pass" on at least 7 of 10 criteria, you are ready for E5-level in
 
 ### Resources for Further Study
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Books (ranked by difficulty)**
 - â˜…â˜†â˜†: "System Design Interview â€” An Insider's Guide" (Alex Xu) â€” Best for beginners, covers 15 common questions step by step
 - â˜…â˜…â˜†: "Designing Data-Intensive Applications" (Martin Kleppmann) â€” Required reading for distributed systems fundamentals

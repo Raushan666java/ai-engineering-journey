@@ -1,4 +1,5 @@
 # Chapter 21: Case Study â€” Uber and Location-Based Services
+> **Previous:** [20 Case Study Netflix](./20-case-study-netflix.md) | **Next:** [22 Case Study Twitter](./22-case-study-twitter.md)
 
 ---
 
@@ -12,13 +13,54 @@
 - Examine the trade-offs in sharding strategies for location-based services operating in 70+ countries
 
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Uber architecture: dispatch, real-time matching, polyglot persistence |
+| **Key Concepts** | Geospatial indexing, real-time matching, polyglot persistence |
+| **Dispatch System** | Geospatial indexing, real-time driver matching, ETAs |
+| **Polyglot Persistence** | MySQL, Redis, Cassandra, Kafka, Schemaless |
+| **Microservices** | Domain-oriented decomposition, 2200+ microservices |
+| **Real-World** | Evolving from monolith to microservices, data platform unification |
+
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory / Case Study]
+    B[Concept Comparison]
+    A --> B
+    C[Quick Reference]
+    B --> C
+    D[Chapter Quiz]
+    C --> D
+    E[Concept Comparison]
+    D --> E
+    F[Quick Reference]
+    E --> F
+    G[Chapter Quiz]
+    F --> G
+    H[Exercises]
+    G --> H
+```
 
 ## Theory / Case Study
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Uber Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/21-uber.png)
 
 ### Phase 1: Problem Scope and Requirements
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Uber connects riders with drivers in real time across 70+ countries and 10,000+ cities. By 2024, the platform handled over 100 million monthly active riders and a comparable number of drivers, processing 30+ billion location events per day. Every four seconds, each active driver's GPS coordinate streams to Uber's servers. The matching system must pair a rider with the best available driver in under 500 milliseconds â€” fewer than the blink of an eye. The ETA displayed in the rider app must be accurate within 60 seconds for trips lasting over 30 minutes. Surge pricing adjusts in real time as demand spikes during rush hour, concerts, or severe weather.
 
 The challenge is multifaceted. Location data is inherently two-dimensional, requiring specialized indexing structures that standard B-Trees cannot handle efficiently. GPS coordinates arrive with noise â€” urban canyons, tunnels, and atmospheric interference degrade accuracy. The system must distinguish between a driver stopped at a red light and a driver who has parked and gone offline. The matching problem is combinatorial: given N available drivers and M riders in a region, find the assignment that minimizes total wait time, subject to constraints on driver preferences, rider ratings, and vehicle type.
@@ -38,6 +80,10 @@ The functional requirements span four major user flows. For riders: request a ri
 
 ### Phase 2: Pre-Uber Architecture â€” The Monolith Era
 
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
+
 Uber's original architecture circa 2010 was a Python monolith built on top of a single MySQL database. The monolith handled ride requests, driver dispatch, payment processing, driver onboarding, surge pricing, and the web dashboard â€” all in one codebase. The database held a single `trips` table, a `drivers` table, and a `riders` table, with spatial queries executed through MySQL's geospatial extensions (which at the time supported only basic bounding-box lookups via MyISAM tables with R-Tree indexes).
 
 As Uber expanded from San Francisco to Paris, London, Shanghai, and SÃ£o Paulo, the monolith groaned under its own weight. A deployment to fix a typo in the payment email template required redeploying the entire stack, risking the dispatch system. The MySQL master could not keep up with write volume â€” the `trips` table alone grew to hundreds of gigabytes, and adding indexes caused replication lag that made followers minutes stale.
@@ -45,6 +91,10 @@ As Uber expanded from San Francisco to Paris, London, Shanghai, and SÃ£o Paulo
 The spatial queries were the first bottleneck. Finding nearby drivers required a MySQL query like `SELECT * FROM drivers WHERE lat BETWEEN ? AND ? AND lng BETWEEN ? AND ? AND status = 'available'`. This bounding-box scan worked for 1,000 drivers but failed at 100,000. The response time for a dispatch query grew from 50 milliseconds to several seconds. Uber's engineers realized they needed a fundamentally different approach to spatial indexing.
 
 ### Phase 3: Post-Uber Architecture â€” Microservices, S2, and Kafka
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 Uber's transformation into a service-oriented architecture unfolded over several years, resulting in 750+ microservices organized by domain. The architecture can be understood as a set of interconnected subsystems.
 
@@ -329,6 +379,119 @@ graph TB
     SQL --> SP
 ```
 
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Metric |
+|---------|-----------|------------|
+| Theory / Case Study | Core topic covered in Chapter 21: Case Study â€” Uber and Location-Based Services | Defined by specific measurable attributes |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory / Case Study | Fundamental concept for Chapter 21: Case Study â€” Uber and Location-Based Services |
+
+---
+
+## Cross-Application Matrix
+
+| Component | When to Use | Trade-Off |
+|-----------|------------|-----------|
+| Theory / Case Study | Appropriate for specific system contexts | Each choice involves trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q2:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q3:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory / Case Study | Core topic in Chapter 21: Case Study â€” Uber and Location-Based Services | Fundamental to system design |
+| Concept Comparison | Core topic in Chapter 21: Case Study â€” Uber and Location-Based Services | Fundamental to system design |
+| Quick Reference | Core topic in Chapter 21: Case Study â€” Uber and Location-Based Services | Fundamental to system design |
+| Cross-Application Matrix | Core topic in Chapter 21: Case Study â€” Uber and Location-Based Services | Fundamental to system design |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory / Case Study | Essential concept for Chapter 21: Case Study â€” Uber and Location-Based Services |
+| Concept Comparison | Essential concept for Chapter 21: Case Study â€” Uber and Location-Based Services |
+| Quick Reference | Essential concept for Chapter 21: Case Study â€” Uber and Location-Based Services |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory / Case Study | Relevant across multiple system design scenarios | Each choice has trade-offs |
+| Concept Comparison | Relevant across multiple system design scenarios | Each choice has trade-offs |
+| Quick Reference | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 21
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
+
 ---
 
 ## Summary
@@ -384,6 +547,7 @@ graph TB
 
 ### Challenge Problem
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Global Outage Recovery Design**: Uber experiences a cascading failure in its dispatch system when a configuration change causes the Redis cluster storing driver positions to evict all keys simultaneously (a mass TTL expiration bug). All 3 million active drivers appear offline. Design a multi-layered recovery plan that:
 
 - Immediately restores service with stale-but-safe state (show how you would reconstruct driver positions from the last 30 seconds of Kafka events)

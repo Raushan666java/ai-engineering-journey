@@ -1,4 +1,6 @@
-# Chapter 17: SRE Principles
+﻿# Chapter 17: SRE Principles
+
+> **Previous:** [Container Networking](./16-networking.md) | **Next:** [Capstone Project](./18-capstone.md)
 
 ## Learning Objectives
 
@@ -15,9 +17,36 @@ By the end of this chapter, students will be able to:
 7. Conduct blameless postmortems with systemic root cause analysis
 8. Apply capacity planning and reliability patterns (retries, circuit breakers, bulkheads, timeouts)
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| SRE vs DevOps | SRE is Google's engineering practice; DevOps is a cultural movement | SRE operationalizes DevOps with measurable reliability |
+| SLO/SLI/SLA | Indicators measure; Objectives target; Agreements contract | Internal SLOs tighter than external SLAs |
+| Error Budgets | Allowed unreliability = 1 - SLO | Release gating when budget exhausted |
+| Toil Elimination | Manual, repetitive, automatable work | SRE teams spend <50% on operations |
+| Incident Management | Severity-based response with clear roles | Blameless postmortems find system causes |
+| Reliability Patterns | Retries, circuit breakers, bulkheads, timeouts | Build resilience into service design |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[SRE vs DevOps] --> B[SLO/SLI/SLA]
+    B --> C[Error Budgets]
+    C --> D[Toil Elimination]
+    D --> E[Incident Management]
+    E --> F[Blameless Postmortems]
+    F --> G[Capacity Planning]
+    G --> H[Reliability Patterns]
+```
+
 ## Theory
 
 ### 17.1 SRE vs DevOps
+
+> **Pro Tip:** Start with one SLO for your most critical user-facing service and expand from there.
 
 SRE (Site Reliability Engineering) originates from Google, formalized by Ben Treynor Sloss in 2003. While DevOps is a cultural movement emphasizing collaboration between development and operations, SRE is a specific engineering practice with measurable outcomes.
 
@@ -35,6 +64,8 @@ SRE (Site Reliability Engineering) originates from Google, formalized by Ben Tre
 SRE operationalizes DevOps principles with engineering rigor. Many organizations implement SRE practices within a DevOps culture.
 
 ### 17.2 Service Level Objectives (SLO, SLI, SLA)
+
+> **Remember:** If a human could make a mistake, the system enabled it. Postmortems find system weaknesses.
 
 **Service Level Indicator (SLI)** â€” A quantitative measure of some aspect of the service. Examples:
 - Request latency (at p95, < 500ms)
@@ -54,6 +85,8 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 - Review SLOs regularly as the service evolves
 
 ### 17.3 Error Budgets
+
+> **Warning:** The 50% rule for toil is a ceiling, not a target. Aim for less toil, not exactly 50%.
 
 An error budget is the acceptable amount of unreliability. For a 99.9% SLO over 28 days:
 
@@ -230,6 +263,46 @@ class CircuitBreaker:
 **Timeouts** â€” Prevent operations from hanging indefinitely. Client-side timeouts (connect, request, response) and server-side timeouts (read, write, idle) should be configured for all service interactions.
 
 **Graceful Degradation** â€” When dependencies fail, degrade functionality rather than failing completely. Example: display cached data when database is unavailable, disable non-critical features during overload.
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| SLO | Target reliability for a service (99.9% availability) |
+| SLI | Actual measurement of reliability (request success rate) |
+| SLA | Contractual commitment with financial penalties |
+| Error Budget | Allowed unreliability = (1 - SLO) × window |
+| Toil | Manual, repetitive, automatable operational work |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| SRE vs DevOps | DevOps=culture, SRE=engineering practice |
+| SLO/SLI | Measure and target reliability quantitatively |
+| Error Budget | 40 min/month for 99.9% SLO |
+| Toil | Manual, repetitive, automatable, no enduring value |
+| Incidents | SEV-1 to SEV-4 with response SLAs |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | Web service reliability SLOs |
+| Cloud | Cloud infrastructure capacity planning |
+| Enterprise | Enterprise incident management |
+| Microservices | Resilience patterns for distributed systems |
+
+## Chapter Quiz
+
+<details><summary>Question 1: What is the 50% rule in SRE?</summary>**A)** 50% test coverage target<br>**B)** Max 50% of time on operational work<br>**C)** 50% budget for tools<br>**D)** 50% of team must be on-call<br><br>**Answer: B)** Max 50% of time on operational work</details>
+
+<details><summary>Question 2: What does a circuit breaker do when OPEN?</summary>**A)** Allow all requests<br>**B)** Fail fast without calling the service<br>**C)** Log errors<br>**D)** Retry immediately<br><br>**Answer: B)** Fail fast without calling the service</details>
+
+<details><summary>Question 3: Why are postmortems blameless?</summary>**A)** To find who to blame<br>**B)** To focus on systemic causes, not individual mistakes<br>**C)** To avoid documentation<br>**D)** To reduce incident response time<br><br>**Answer: B)** To focus on systemic causes, not individual mistakes</details>
+
 
 ## Summary
 

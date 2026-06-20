@@ -1,4 +1,6 @@
-# Chapter 15: Database DevOps
+﻿# Chapter 15: Database DevOps
+
+> **Previous:** [DevSecOps](./14-devsecops.md) | **Next:** [Container Networking](./16-networking.md)
 
 ## Learning Objectives
 
@@ -12,15 +14,45 @@ By the end of this chapter, students will be able to:
 4. Configure backup, restore, and point-in-time recovery procedures
 5. Develop database testing strategies including integration, unit, and performance tests
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Database as Code | Schema changes version-controlled in Git | Apply engineering discipline to database management |
+| Schema Migration Tools | Flyway, Liquibase, Alembic | Choose based on language (Alembic for Python, Flyway for SQL) |
+| Database CI/CD | Validate, test, stage, production pipeline | Always test migrations on a production-like database copy |
+| Blue-Green DB Deployments | Backward-compatible changes enable zero-downtime | Three-phase approach for column renames |
+| Backup & PITR | Full backup, WAL shipping, point-in-time recovery | Test backups regularly--untested backups are useless |
+| Database Testing | Unit, integration, performance, transaction tests | Test query performance before and after schema changes |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Database as Code] --> B[Migration Tools]
+    B --> C[Flyway]
+    B --> D[Liquibase]
+    B --> E[Alembic]
+    C & D & E --> F[CI/CD Pipeline]
+    F --> G[Blue-Green Deploy]
+    F --> H[Backup & PITR]
+    F --> I[Database Testing]
+```
+
 ## Theory
 
 ### 15.1 Database as Code
+
+> **Pro Tip:** Always create rollback migrations and test them before deploying forward migrations to production.
 
 Database as Code applies version control, CI/CD, and automation principles to database schemas. Historically, database changes were manual, scripted by DBAs, and applied outside the application release process. This created a bottleneck and introduced errors.
 
 Database as Code stores schema definitions, migrations, and configuration in Git. Changes undergo code review, automated testing, and pipeline-based deployment alongside application changes.
 
 ### 15.2 Schema Migration Tools
+
+> **Warning:** Destructive operations like DROP COLUMN require multi-phase deployments for zero-downtime.
 
 **Flyway** â€” Open-source database migration tool. Migrations are SQL files named with versioned or repeatable conventions.
 
@@ -94,6 +126,8 @@ def downgrade():
 ```
 
 ### 15.3 Database CI/CD
+
+> **Remember:** A backup that hasn't been restored is not a backup. Test restore procedures regularly.
 
 Integrating database changes into CI/CD requires careful design:
 
@@ -211,6 +245,46 @@ Rollbacks for database changes depend on migration type:
 - **Variant A: Forward-only** â€” Applies migration; rollback is a new forward migration that reverses the change. Example: `V2__add_column.sql` followed by `V3__remove_column.sql`.
 - **Variant B: With rollback** â€” Flyway Pro and Liquibase support versioned rollbacks. Down migration reverses the up migration.
 - **Variant C: Blue-green schema** â€” Maintain two schema versions simultaneously. Traffic switches after rollback capability is verified.
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| Flyway | Versioned SQL migrations, schema history table |
+| Liquibase | XML/JSON/YAML changelogs, rollback, contexts |
+| Alembic | Python/SQLAlchemy, auto-generation from models |
+| PITR | Full backup + WAL stream to any point in time |
+| Blue-Green DB | Backward-compat changes for zero-downtime |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| Flyway | V1__description.sql, migrate, info, undo |
+| Liquibase | changelog.xml, update, rollbackCount, rollbackSQL |
+| Alembic | revision --autogenerate, upgrade, downgrade |
+| Backup | pg_dump, pg_basebackup, mysqldump, mongodump |
+| PITR | Base backup + WAL archive + recovery.conf |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | E-commerce database schema management |
+| Cloud | Managed database migration pipelines |
+| Enterprise | Compliance-aligned database changes |
+| ML | Feature store schema evolution |
+
+## Chapter Quiz
+
+<details><summary>Question 1: How does Flyway track applied migrations?</summary>**A)** Git tags<br>**B)** Schema history table<br>**C)** File timestamps<br>**D)** Manual tracking<br><br>**Answer: B)** Schema history table</details>
+
+<details><summary>Question 2: What backup method enables PITR?</summary>**A)** Full backup only<br>**B)** Full backup + WAL archiving<br>**C)** Incremental backup only<br>**D)** Snapshot backup only<br><br>**Answer: B)** Full backup + WAL archiving</details>
+
+<details><summary>Question 3: How many phases for a column rename with zero-downtime?</summary>**A)** One<br>**B)** Two<br>**C)** Three<br>**D)** Four<br><br>**Answer: C)** Three (add new, update dual-write, drop old)</details>
+
 
 ## Summary
 

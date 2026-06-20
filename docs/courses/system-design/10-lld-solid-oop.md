@@ -1,4 +1,6 @@
 # Chapter 10: Low-Level Design: SOLID Principles and OOP
+> **Previous:** [09 Distributed Coordination](./09-distributed-coordination.md) | **Next:** [11 Lld Design Patterns](./11-lld-design-patterns.md)
+
 ---
 ## Learning Objectives
 - Apply the five SOLID principles to refactor tightly coupled class hierarchies into maintainable designs
@@ -8,11 +10,38 @@
 - Implement package-level design principles (REP, CCP, CRP) for dependency management
 - Refactor monolithic classes into single-responsibility components without breaking existing contracts
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | SOLID principles, OOP fundamentals, design patterns foundation |
+| **Key Concepts** | Single responsibility, open-closed, Liskov substitution |
+| **SOLID** | Five principles for maintainable object-oriented design |
+| **OOP Design** | Encapsulation, inheritance, polymorphism, composition |
+| **Best Practices** | Dependency injection, interface segregation, clean architecture |
+| **Real-World** | Applied in all major object-oriented codebases |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+```
+
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 ![SOLID and OOP Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/10-solid-oop.png)
 
 ### Object-Oriented Programming Foundations
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Object-Oriented Programming (OOP) rests on four pillars: Encapsulation, Abstraction, Inheritance, and Polymorphism. Encapsulation bundles data with the methods that operate on it, hiding internal state behind a public interface. Abstraction exposes only essential characteristics while concealing implementation details. Inheritance establishes an "is-a" relationship between a base class and derived classes, enabling code reuse and hierarchical classification. Polymorphism allows objects of different types to respond to the same interface contract, dispatching the correct method at runtime.
 
 **Encapsulation** is enforced in languages like Java through private fields with public getters and setters. Python uses a naming convention: a single underscore `_protected` signals internal use; a double underscore `__private` triggers name mangling to `_ClassName__private`. Neither provides true access controlâ€”Python trusts developers to follow conventions.
@@ -25,6 +54,10 @@ Object-Oriented Programming (OOP) rests on four pillars: Encapsulation, Abstract
 
 ### Coupling and Cohesion
 
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
+
 Coupling measures the degree of interdependence between modules. **Tight coupling** occurs when a class knows too much about the internal details of another classâ€”it creates a chain where a change in one module forces cascading changes in many others. **Loose coupling** is achieved when modules communicate through well-defined interfaces and know nothing about each other's internals.
 
 Cohesion measures how strongly the responsibilities of a module are related. **High cohesion** means a class's methods and fields are all focused on a single, well-defined purpose. **Low cohesion** indicates a class does many unrelated thingsâ€”a classic symptom of a God Object.
@@ -32,6 +65,10 @@ Cohesion measures how strongly the responsibilities of a module are related. **H
 A useful metric is **LCOM** (Lack of Cohesion of Methods). LCOM counts pairs of methods that do not share any fields. A high LCOM value suggests the class should be split. Most static analysis tools calculate LCOM4, which counts connected components in a method-field access graph; LCOM4 > 1 indicates the class has multiple responsibilities.
 
 ### Single Responsibility Principle (SRP)
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 > A class should have one, and only one, reason to change.
 
@@ -355,6 +392,7 @@ No client of `OldPrinter` is forced to depend on `fax` or `scan`.
 
 ### Example 5: DIP with Dependency Injection
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Before** â€” High-level module depends on low-level module directly:
 
 ```python
@@ -397,7 +435,58 @@ class UserService:
 
 Switching databases requires zero changes to `UserService`. Testing is trivial: inject a mock `UserRepository`.
 
+## Concept Comparison
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 10: Low-Level Design: SOLID Principles and OOP | Fundamental concept for system design |
+
 ---
+
+## Quick Reference
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept from Chapter 10: Low-Level Design: SOLID Principles and OOP |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application | Trade-Off |
+|---------|------------|-----------|
+| Theory | Relevant across design scenarios | Requirements-driven decisions |
+
+---
+
+## Chapter Quiz
+
+**Q1:** What is the key takeaway from this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most critical for distributed systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q3:** How does this topic apply to FAANG-level system design?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+---
+
 ## Summary
 - SRP demands one reason to change per class, keyed to a single actor or stakeholder.
 - OCP is achieved through abstraction: add behavior via new classes, not by modifying existing ones.

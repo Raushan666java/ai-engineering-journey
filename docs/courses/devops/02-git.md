@@ -1,4 +1,6 @@
-# Chapter 2: Advanced Git
+﻿# Chapter 2: Advanced Git
+
+> **Previous:** [Introduction to DevOps](./01-introduction.md) | **Next:** [Linux Fundamentals](./02-linux-basics.md)
 
 ## Learning Objectives
 
@@ -11,17 +13,46 @@ By the end of this chapter, students will be able to:
 5. Implement git hooks for automation and policy enforcement
 6. Manage submodules, signed commits, and large file storage
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Git Object Model | DAG of blobs, trees, commits, tags with SHA-1 hashes | Understanding objects is essential for advanced Git operations |
+| Branching Strategies | Git Flow, GitHub Flow, GitLab Flow, Trunk-Based | Match strategy to release cadence and team size |
+| Merge vs Rebase | Preserves history vs linearizes it | Rebase local work before push; merge after |
+| Git Bisect | Binary search for regression commits | Automate with git bisect run for efficient debugging |
+| Git Hooks | Client-side and server-side automation scripts | Use .githooks directory for team-wide hooks |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Git Object Model] --> B[Branching Strategies]
+    B --> C{Merge vs Rebase}
+    C --> D[Merge]
+    C --> E[Rebase]
+    E --> F[Interactive Rebase]
+    D & F --> G[Git Bisect]
+    G --> H[Hooks & Submodules]
+    H --> I[Automation]
+```
+
 ## Theory
 
 ![Git, Linux Basics and Build Tools](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch02-git-linux-build.png)
 
 ### 2.1 Git Object Model
 
+> **Pro Tip:** Use git bisect run with your test suite to automatically find regression commits overnight.
+
 Git stores data as a directed acyclic graph of objects. Four object types exist: blobs (file contents), trees (directory listings), commits (snapshots referencing root tree, parent commits, author, committer, and message), and annotated tags (references to commits with metadata). References (branches, tags, HEAD) are pointers to specific commits. Understanding this model is essential for mastering advanced Git operations.
 
 Each commit is identified by a SHA-1 hash of its contents, including parent hashes. This means the commit graph is tamper-evident: changing any historical commit changes all descendant hashes.
 
 ### 2.2 Branching Strategies
+
+> **Warning:** Rebasing shared branches rewrites history and causes chaos for collaborators. Follow the golden rule.
 
 **Git Flow** â€” Proposed by Vincent Driessen in 2010. Uses two long-running branches: `main` (production-ready code) and `develop` (integration branch). Supporting branches include `feature/*` (new features, branch from develop, merge back to develop), `release/*` (release preparation, branch from develop, merge to main and develop), and `hotfix/*` (urgent production fixes, branch from main, merge to main and develop). Git Flow is well-suited for versioned software with scheduled releases but introduces complexity and overhead for continuous delivery.
 
@@ -32,6 +63,8 @@ Each commit is identified by a SHA-1 hash of its contents, including parent hash
 **Trunk-Based Development** â€” Developers commit directly to a shared trunk (main) or use very short-lived feature branches (fewer than 2 days). Frequent small commits avoid merge conflicts. Requires robust feature flags to manage incomplete features. Trunk-based development is associated with high-performing teams and is required for continuous deployment.
 
 ### 2.3 Merge vs Rebase
+
+> **Remember:** The golden rule of rebasing: never rebase commits that have been pushed to a shared repository.
 
 **Merging** â€” `git merge feature` creates a new commit that has two parents, preserving the complete history of both branches. This accurately represents what happened but can create non-linear history with many merge commits.
 
@@ -101,6 +134,46 @@ Git aliases, scripting, and automation frameworks reduce repetitive operations. 
 - CI/CD integration that validates commit history
 - Automation that synchronizes issue tracker state with commit references
 - Scripts that automate release branch creation and version bumping
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| Git Flow | Two long-running branches with feature/release/hotfix branches |
+| GitHub Flow | Single main branch with short-lived feature branches |
+| Trunk-Based Dev | Direct commits to main with very short branches |
+| Merge | Preserves full history with merge commits |
+| Rebase | Linearizes history by replaying commits |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| Git Object Model | Blobs, trees, commits, tags in a DAG |
+| Branch Strategy | Git Flow, GitHub Flow, GitLab Flow, Trunk-Based |
+| Golden Rule | Never rebase shared branches |
+| Interactive Rebase | reword, squash, fixup, drop, edit |
+| Bisect Automation | git bisect run with test script |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | Branch-based feature development with PR reviews |
+| Cloud | GitOps workflows with trunk-based deployment |
+| Enterprise | Git Flow for scheduled release cycles |
+| Embedded | Submodules for dependency management |
+
+## Chapter Quiz
+
+<details><summary>Question 1: What's the golden rule of rebasing?</summary>**A)** Always rebase before every push<br>**B)** Never rebase commits pushed to a shared repo<br>**C)** Rebase only on Fridays<br>**D)** Always squash commits during rebase<br><br>**Answer: B)** Never rebase commits pushed to a shared repo</details>
+
+<details><summary>Question 2: Which branching strategy is recommended for CI/CD?</summary>**A)** Git Flow<br>**B)** Trunk-Based Development<br>**C)** Feature Branch<br>**D)** Release Branch<br><br>**Answer: B)** Trunk-Based Development</details>
+
+<details><summary>Question 3: What does interactive rebase NOT allow?</summary>**A)** Squash commits<br>**B)** Reword messages<br>**C)** Drop commits<br>**D)** Merge conflict resolution<br><br>**Answer: D)** Merge conflict resolution</details>
+
 
 ## Summary
 

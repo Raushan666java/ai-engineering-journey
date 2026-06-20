@@ -1,5 +1,62 @@
 # Chapter 11: Computer Organization & Architecture
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 5-8 marks |
+| Topics | CPU design, Memory hierarchy, Pipeline, I/O, Parallel architecture |
+| Difficulty | Moderate |
+| Weightage | 5-8% of GATE CS paper |
+| Key Skills | Pipeline analysis, Cache mapping, Performance calculation |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[Digital Logic] --> B[CPU Architecture]
+    B --> C[Pipeline]
+    B --> D[Memory Hierarchy]
+    C --> E[Performance]
+    D --> E
+    B --> F[I/O Systems]
+    F --> G[Parallel Arch]
+    E --> H[Overall System Design]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | RISC | CISC |
+|--- |--- |--- |
+| Instruction set | Simple, fixed-length | Complex, variable-length |
+| Pipeline | Efficient (single-cycle) | Complex (multi-cycle) |
+| Register count | Many (32+) | Few (8-16) |
+| Addressing modes | Few | Many |
+| Memory access | Load/Store only | Direct memory operands |
+| Examples | ARM, RISC-V | x86, 8086 |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| CPI | Cycles Per Instruction |
+| MIPS | Million Instructions Per Second |
+| Clock Rate | Frequency of CPU clock (GHz) |
+| Cache Hit | Data found in cache |
+| Cache Miss | Data not found in cache |
+| Pipeline Hazard | Condition preventing next instruction execution |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Pipeline performance calculations with hazards and stall cycles are guaranteed problems. Master the speedup formula.
+>
+> **Remember:** Cache mapping (direct, set-associative, fully-associative) and formula-based questions are highly scoring.
+
+
 ## Topic Weightage in GATE (2010â€“2025)
 
 ![Computer Architecture Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/11-computer-architecture.png)

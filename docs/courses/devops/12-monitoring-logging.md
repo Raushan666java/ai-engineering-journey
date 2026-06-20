@@ -1,4 +1,6 @@
-# Chapter 12: Monitoring and Logging
+﻿# Chapter 12: Monitoring and Logging
+
+> **Previous:** [Cloud Platforms](./11-cloud-platforms.md) | **Next:** [Observability](./13-observability.md)
 
 ## Learning Objectives
 
@@ -12,9 +14,38 @@ By the end of this chapter, students will be able to:
 4. Deploy the ELK stack (Elasticsearch, Logstash, Kibana) for centralized logging
 5. Implement structured logging with JSON and appropriate log levels
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Monitoring Principles | Detection, dashboarding, analysis, diagnostics | Effective monitoring answers four key questions |
+| Prometheus | Pull-based metrics with four metric types | Use recording rules for expensive queries |
+| Alertmanager | Deduplication, grouping, routing, silencing | Configure correct group_wait and repeat_interval |
+| Grafana | Multi-source visualization and alerting | Design dashboard hierarchy from global to detailed |
+| Loki | Label-indexed log aggregation | Cheaper than ELK at scale; uses LogQL |
+| ELK Stack | Full-text search with Elasticsearch | Best for advanced log analytics and search |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Monitoring Principles] --> B[Prometheus]
+    B --> C[Metrics Types]
+    B --> D[PromQL]
+    B --> E[Alertmanager]
+    A --> F[Loki]
+    A --> G[ELK Stack]
+    G --> H[Elasticsearch]
+    G --> I[Kibana]
+    F & H & I --> J[Structured Logging]
+```
+
 ## Theory
 
 ### 12.1 Monitoring Principles
+
+> **Pro Tip:** Use histogram_quantile in PromQL to calculate percentile latencies from histogram metrics.
 
 Monitoring is the systematic collection, analysis, and visualization of system data to understand behavior, detect anomalies, and support decision making. Effective monitoring answers four questions:
 
@@ -24,6 +55,8 @@ Monitoring is the systematic collection, analysis, and visualization of system d
 4. Why did the system behave that way? (Diagnostics)
 
 ### 12.2 Prometheus
+
+> **Remember:** Loki does not index log content--only labels. Use LogQL for log stream filtering and aggregation.
 
 Prometheus is a metrics-based monitoring system designed for reliability and operational simplicity.
 
@@ -74,6 +107,8 @@ groups:
 ```
 
 ### 12.3 Alertmanager
+
+> **Warning:** Never log sensitive data (PII, passwords, tokens). Use structured fields, not string interpolation.
 
 Alertmanager processes alerts before sending notifications:
 
@@ -185,6 +220,46 @@ Standard log levels and their appropriate usage:
 - Use structured context fields, not string interpolation
 - Ensure logs are asynchronous and non-blocking
 - Configure sampling for high-volume logs
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| Prometheus | Pull metric collection, time-series DB, PromQL |
+| Loki | Label-indexed log aggregation, LogQL |
+| ELK Stack | Elasticsearch search, Logstash pipeline, Kibana viz |
+| Grafana | Multi-source dashboards and alerting |
+| Alertmanager | Dedup, grouping, routing, silencing |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| Prometheus Types | Counter, Gauge, Histogram, Summary |
+| Log Levels | TRACE, DEBUG, INFO, WARN, ERROR, FATAL |
+| Loki vs ELK | Loki cheaper but no full-text search |
+| Best Practice | Structured JSON, correlation IDs, log rotation |
+| Alertmanager | group_wait, group_interval, repeat_interval |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | Web server metrics and access logs |
+| Cloud | Cloud service metrics and audit logs |
+| Enterprise | Centralized logging compliance |
+| Container | Pod metrics and container logs |
+
+## Chapter Quiz
+
+<details><summary>Question 1: What are Prometheus's four metric types?</summary>**A)** String, Int, Float, Boolean<br>**B)** Counter, Gauge, Histogram, Summary<br>**C)** Log, Metric, Trace, Event<br>**D)** Hot, Warm, Cold, Archive<br><br>**Answer: B)** Counter, Gauge, Histogram, Summary</details>
+
+<details><summary>Question 2: How does Loki differ from Elasticsearch?</summary>**A)** Loki indexes only labels, not content<br>**B)** Loki is slower<br>**C)** Loki has full-text search<br>**D)** Loki uses SQL<br><br>**Answer: A)** Loki indexes only labels, not content</details>
+
+<details><summary>Question 3: What log level should be used in production?</summary>**A)** TRACE<br>**B)** DEBUG<br>**C)** INFO<br>**D)** All of the above, with appropriate retention<br><br>**Answer: D)** All of the above, with appropriate retention</details>
+
 
 ## Summary
 

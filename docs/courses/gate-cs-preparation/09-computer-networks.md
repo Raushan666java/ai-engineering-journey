@@ -2,6 +2,66 @@
 
 ---
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 8-10 marks |
+| Topics | OSI/TCP-IP, Data link, Network, Transport, Application layers |
+| Difficulty | Moderate |
+| Weightage | 8-10% of GATE CS paper |
+| Key Skills | Routing algorithms, Flow control, Error detection |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[Physical Layer] --> B[Data Link Layer]
+    B --> C[Network Layer]
+    C --> D[Transport Layer]
+    D --> E[Application Layer]
+    B --> F[Error Control]
+    C --> G[Routing]
+    D --> H[Flow Control]
+    F --> I[Network Performance]
+    G --> I
+    H --> I
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | TCP | UDP |
+|--- |--- |--- |
+| Connection | Connection-oriented | Connectionless |
+| Reliability | Reliable (ACK/retransmit) | Unreliable (no ACK) |
+| Ordering | Preserves order | No ordering |
+| Header Size | 20-60 bytes | 8 bytes |
+| Use Cases | Web, email, file transfer | DNS, video streaming, VoIP |
+| Flow Control | Yes | No |
+| Congestion Control | Yes | No |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| IP Address | 32-bit (IPv4) or 128-bit (IPv6) host identifier |
+| Subnet Mask | Separates network/host portion of IP |
+| MTU | Maximum Transmission Unit |
+| RTT | Round Trip Time |
+| Bandwidth | Data transmission capacity (bps) |
+| Latency | Time for data to travel source to destination |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Master CRC calculation, subnetting, and routing algorithm (Distance Vector vs Link State) for numerical questions.
+>
+> **Remember:** TCP congestion control phases (slow start, congestion avoidance, fast recovery) appear in both MCQ and NAT formats.
+
+
 ## Topic Weightage Analysis (GATE 2010â€“2025)
 
 ![Computer Networks Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/09-computer-networks.png)

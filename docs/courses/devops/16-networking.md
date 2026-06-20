@@ -1,4 +1,6 @@
-# Chapter 16: Container Networking
+﻿# Chapter 16: Container Networking
+
+> **Previous:** [Database DevOps](./15-database-devops.md) | **Next:** [SRE Principles](./17-sre.md)
 
 ## Learning Objectives
 
@@ -12,9 +14,39 @@ By the end of this chapter, students will be able to:
 4. Configure ingress controllers including NGINX, Traefik, HAProxy, and Envoy
 5. Implement network policies, mTLS, egress controls, and API gateways
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Container Networking Models | Bridge, overlay, host, MACVLAN | Choose based on isolation and performance needs |
+| CNI Plugins | Flannel, Calico, Weave, Cilium | Calico for policy; Cilium for eBPF performance |
+| Service Mesh | Istio, Linkerd for traffic management | Sidecar proxies enable mTLS without code changes |
+| Ingress Controllers | NGINX, Traefik, HAProxy, Envoy | NGINX is most widely adopted; Envoy powers Istio |
+| mTLS | Mutual TLS for service-to-service security | Service meshes implement mTLS transparently |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Container Networking] --> B[Bridge]
+    A --> C[Overlay]
+    A --> D[Host]
+    A --> E[MACVLAN]
+    B & C & D & E --> F[CNI Plugins]
+    F --> G[Calico]
+    F --> H[Cilium]
+    F --> I[Flannel]
+    G & H & I --> J[Service Mesh]
+    J --> K[Istio]
+    J --> L[Linkerd]
+```
+
 ## Theory
 
 ### 16.1 Container Networking Models
+
+> **Pro Tip:** Cilium's eBPF-based approach can replace kube-proxy for better performance and security observability.
 
 Container networking enables communication between containers on the same host and across hosts. Multiple networking models exist:
 
@@ -27,6 +59,8 @@ Container networking enables communication between containers on the same host a
 **MACVLAN/IPVLAN** â€” Assigns MAC or IP addresses directly from the physical network. Containers appear as separate hosts on the network. Provides better performance than bridge or overlay but requires physical network configuration changes.
 
 ### 16.2 CNI (Container Network Interface)
+
+> **Remember:** By default, all Pods can communicate freely. NetworkPolicy restricts this--it's deny-by-default when applied.
 
 CNI is a specification and library for configuring network interfaces in Linux containers. Kubernetes uses CNI plugins for pod networking. The CNI specification defines:
 
@@ -42,6 +76,8 @@ CNI is a specification and library for configuring network interfaces in Linux c
 - **Third-party plugins** â€” Flannel, Calico, Weave, Cilium
 
 ### 16.3 CNI Plugins Compared
+
+> **Warning:** Service meshes add operational complexity. Start without one and adopt only when needed.
 
 **Flannel** â€” Simplest overlay network. Uses VXLAN encapsulation. No network policy support. Suitable for basic connectivity requirements. Configuration via etcd or Kubernetes API.
 
@@ -151,6 +187,46 @@ API gateways provide a single entry point for external API traffic:
 - **APIgee (GCP)** â€” Full-featured API management platform.
 - **AWS API Gateway** â€” AWS-managed gateway with Lambda integration, caching, throttling.
 - **Azure API Management** â€” Enterprise API gateway with developer portal and policy engine.
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| Bridge | Default Docker networking, NAT-based, single host |
+| Overlay | VXLAN tunneling for multi-host communication |
+| Service Mesh | Sidecar proxies for traffic mgmt and security |
+| Ingress | HTTP/HTTPS external routing controller |
+| mTLS | Mutual certificate-based service authentication |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| CNI Plugins | Flannel(simple), Calico(policy), Cilium(eBPF) |
+| Service Mesh | Istio(feature-rich), Linkerd(lightweight) |
+| Ingress | NGINX, Traefik, HAProxy, Envoy |
+| DNS | CoreDNS, service.namespace.svc.cluster.local |
+| mTLS | Mutual TLS with automatic cert rotation |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | HTTP ingress routing for web apps |
+| Cloud | Multi-cloud networking via overlays |
+| Enterprise | mTLS for zero-trust compliance |
+| Microservices | Service mesh traffic management |
+
+## Chapter Quiz
+
+<details><summary>Question 1: Which CNI plugin uses eBPF?</summary>**A)** Flannel<br>**B)** Calico<br>**C)** Cilium<br>**D)** Weave<br><br>**Answer: C)** Cilium</details>
+
+<details><summary>Question 2: How does a service mesh proxy intercept traffic?</summary>**A)** DNS redirection<br>**B)** Sidecar proxy intercepts all in/out traffic<br>**C)** Application code modification<br>**D)** Virtual IP addresses<br><br>**Answer: B)** Sidecar proxy intercepts all in/out traffic</details>
+
+<details><summary>Question 3: What does mTLS provide beyond TLS?</summary>**A)** Faster encryption<br>**B)** Mutual client and server authentication<br>**C)** Lower latency<br>**D)** Compression<br><br>**Answer: B)** Mutual client and server authentication</details>
+
 
 ## Summary
 

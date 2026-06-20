@@ -1,4 +1,6 @@
-# Chapter 8: Kubernetes Advanced
+﻿# Chapter 8: Kubernetes Advanced
+
+> **Previous:** [Infrastructure as Code (IaC)](./07-infrastructure-as-code.md) | **Next:** [Configuration Management with Ansible](./08-configuration-management.md)
 
 ## Learning Objectives
 
@@ -13,9 +15,37 @@ By the end of this chapter, students will be able to:
 5. Apply RBAC for fine-grained access control
 6. Package and deploy applications with Helm and Kustomize
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Ingress | HTTP/HTTPS routing with TLS termination | Use Ingress controller annotations for advanced routing |
+| Persistent Storage | PV, PVC, StorageClass for stateful workloads | Use CSI drivers for cloud provider storage integration |
+| StatefulSet | Stable identities for stateful applications | Use for databases requiring ordered deployment |
+| HPA | Automatic scaling based on CPU/memory/custom metrics | Set min/max replicas with target utilization |
+| RBAC | Fine-grained API access control | Use ClusterRole for cluster-wide permissions sparingly |
+| Helm & Kustomize | Package management and configuration customization | Helm for templating; Kustomize for overlays |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Ingress] --> B[Storage]
+    B --> C[PV/PVC/StorageClass]
+    A --> D[StatefulSet]
+    D --> E[DaemonSet]
+    A --> F[HPA]
+    A --> G[RBAC]
+    A --> H[Helm]
+    A --> I[Kustomize]
+```
+
 ## Theory
 
 ### 8.1 Ingress
+
+> **Pro Tip:** Use Helm and Kustomize together: Helm for generic chart distribution, Kustomize for environment-specific overlays.
 
 Ingress exposes HTTP and HTTPS routes from outside the cluster to Services within the cluster. An Ingress controller (NGINX, Traefik, HAProxy, AWS ALB Ingress Controller) implements the Ingress specification.
 
@@ -56,6 +86,8 @@ Ingress supports path-based routing, host-based routing, TLS termination, sticky
 
 ### 8.2 Storage
 
+> **Warning:** StatefulSet rolling updates are ordered (N-1 to 0). This is slower than Deployment updates but maintains data integrity.
+
 Persistent storage in Kubernetes follows a three-layer model:
 
 **PersistentVolume (PV)** â€” Cluster resource provisioned by an administrator or dynamically provisioned via StorageClass. Represents a storage unit (NFS share, EBS volume, GCE PD).
@@ -90,6 +122,8 @@ spec:
 Container Storage Interface (CSI) drivers standardize storage plugin development. Major cloud providers and storage vendors provide CSI drivers.
 
 ### 8.3 StatefulSet
+
+> **Remember:** NetworkPolicy is deny-by-default when applied. Always ensure essential traffic is explicitly allowed.
 
 StatefulSet manages stateful applications that require stable, unique network identities and persistent storage. Unlike Deployments, StatefulSet Pods are created and deleted in order, and each Pod gets a stable identity (`podname-0`, `podname-1`, etc.).
 
@@ -308,6 +342,46 @@ patches:
 Operators extend Kubernetes with application-specific operational knowledge. A Custom Resource Definition (CRD) defines new resource types. An operator controller reconciles desired state with actual state for the custom resource.
 
 Popular operators: Prometheus Operator, PostgreSQL Operator (Crunchy, Zalando), Cert-Manager, External Secrets Operator.
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| Ingress | HTTP/HTTPS external routing controller |
+| StatefulSet | Ordered, stable Pods for stateful apps |
+| DaemonSet | One Pod per node for infrastructure agents |
+| HPA | Automatic Pod scaling based on metrics |
+| RBAC | Role-based API access control |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| Ingress | Path/host routing, TLS, annotations |
+| Storage | PV(cluster), PVC(request), StorageClass(dynamic) |
+| Controllers | StatefulSet, DaemonSet, Job, CronJob |
+| HPA | CPU/memory target, min/max replicas |
+| RBAC | Role, RoleBinding, ClusterRole, ClusterRoleBinding |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | TLS ingress for multiple web services |
+| Cloud | Cloud-specific CSI storage drivers |
+| Enterprise | RBAC for multi-team cluster access |
+| ML | GPU nodes via DaemonSet drivers |
+
+## Chapter Quiz
+
+<details><summary>Question 1: What does HPA stand for?</summary>**A)** High Performance Architecture<br>**B)** Horizontal Pod Autoscaler<br>**C)** Host Process Allocator<br>**D)** Hierarchical Pod Automation<br><br>**Answer: B)** Horizontal Pod Autoscaler</details>
+
+<details><summary>Question 2: Why use StatefulSet instead of Deployment for databases?</summary>**A)** StatefulSets are faster<br>**B)** StatefulSets provide stable network identities<br>**C)** Deployments cannot run databases<br>**D)** StatefulSets use less memory<br><br>**Answer: B)** StatefulSets provide stable network identities</details>
+
+<details><summary>Question 3: What does a RoleBinding grant?</summary>**A)** Network access to Pods<br>**B)** API permissions within a namespace<br>**C)** Storage access<br>**D)** Image pull access<br><br>**Answer: B)** API permissions within a namespace</details>
+
 
 ## Summary
 

@@ -6,6 +6,66 @@
 
 ---
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 10-15 marks |
+| Topics | Linear algebra, Calculus, Probability, Discrete math, Graph theory |
+| Difficulty | Easy to Moderate |
+| Weightage | 13-15% of GATE CS paper |
+| Key Skills | Formula recall, Derivation, Application to CS problems |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[Discrete Math] --> B[Set Theory]
+    A --> C[Logic]
+    A --> D[Graph Theory]
+    A --> E[Probability]
+    A --> F[Linear Algebra]
+    A --> G[Calculus]
+    B --> H[Problem Solving]
+    C --> H
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Discrete Math | Continuous Math |
+|--- |--- |--- |
+| Domain | Integers, sets | Real numbers |
+| Topics | Logic, graphs, combinatorics | Calculus, differential equations |
+| GATE Focus | Graph theory, probability | Linear algebra, calculus |
+| Problem Type | Counting, proofs | Computation, optimization |
+| Difficulty | Moderate | Easy to Moderate |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Eigenvalue | Scalar lambda satisfying Av = lambda*v |
+| Eigenvector | Non-zero vector v scaled by eigenvalue |
+| Determinant | Scalar value of a square matrix |
+| Rank | Number of linearly independent rows/columns |
+| Variance | Measure of spread from mean |
+| Standard Deviation | Square root of variance |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Probability and graph theory are the most heavily tested math topics. Master these for maximum score.
+>
+> **Remember:** In linear algebra, focus on eigenvalues, rank, and linear transformations - these appear frequently.
+
+
 ## 1. Linear Algebra
 
 ![Engineering Mathematics Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/06-engineering-mathematics.png)

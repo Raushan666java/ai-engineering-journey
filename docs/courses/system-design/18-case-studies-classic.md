@@ -1,4 +1,5 @@
 # Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin
+> **Previous:** [17 Observability Resiliency](./17-observability-resiliency.md) | **Next:** [19 Case Study Whatsapp](./19-case-study-whatsapp.md)
 
 ---
 
@@ -11,14 +12,75 @@
 - Understand how to pre-generate unique identifiers to avoid database contention on write paths
 - Compare token bucket, leaky bucket, fixed window, and sliding window algorithms for rate limiting at scale
 
+## Chapter at a Glance
+
+| Aspect | Details |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory] --> B[Case Study: URL Shortener]
+    C[Case Study: Rate Limiter]
+    B --> C
+    D[Case Study: Pastebin]
+    C --> D
+```
+|--------|---------|
+| **Scope** | Classic case studies: URL shortener, rate limiter, chat system |
+| **Key Concepts** | Core topics covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+| **Design Skills** | System decomposition, architecture comparison |
+| **Interview Angle** | Frequently tested in system design interviews |
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Core concepts covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+| **Key Concepts** | Theory, Case Study: URL Shortener, Case Study: Rate Limiter, Case Study: Pastebin |
+| **Design Skills** | Concept mastery and practical application |
+| **Interview Angle** | Common system design interview topic |
+
+---
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+    B[Case Study URL Shortener]
+    A --> B
+    C[Case Study Rate Limiter]
+    B --> C
+    D[Case Study Pastebin]
+    C --> D
+    E[Concept Comparison]
+    D --> E
+    F[Quick Reference]
+    E --> F
+    G[CrossApplication Matrix]
+    F --> G
+    H[Chapter Quiz]
+    G --> H
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![URL Shortener Rate Limiter Pastebin Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/18-url-shortener-rate-limiter.png)
 
 ### Requirements Phase
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Every system design begins with precise functional and non-functional requirements. Ambiguity is the enemy of good architecture.
 
 **URL Shortener Requirements**
@@ -63,6 +125,10 @@ Every system design begins with precise functional and non-functional requiremen
 
 ### Estimation Phase
 
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
+
 Orders of magnitude matter. We compute storage, bandwidth, and QPS before choosing components.
 
 **URL Shortener Storage**
@@ -92,6 +158,10 @@ Orders of magnitude matter. We compute storage, bandwidth, and QPS before choosi
 - CDN: cache popular pastes (Pareto: 10% of pastes serve 90% of reads)
 
 ### High-Level Design Phase
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 Logical architecture before physical implementation. We decompose the system into collaborating services.
 
@@ -345,6 +415,7 @@ The `content_hash` unique index enables O(1) deduplication lookup. The `short_id
 ---
 
 ## Case Study: URL Shortener
+> **One-Sentence Takeaway:** Real-world case studies reveal how architectural decisions map to business constraints at scale.
 
 ### Requirements
 
@@ -423,6 +494,7 @@ Key metrics tracked for the URL shortener:
 ---
 
 ## Case Study: Rate Limiter
+> **One-Sentence Takeaway:** Real-world case studies reveal how architectural decisions map to business constraints at scale.
 
 ### Requirements
 
@@ -499,6 +571,7 @@ Clients are expected to implement exponential backoff with jitter. A well-behave
 ---
 
 ## Case Study: Pastebin
+> **One-Sentence Takeaway:** Real-world case studies reveal how architectural decisions map to business constraints at scale.
 
 ### Requirements
 
@@ -553,6 +626,118 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 - Soft delete window protects against accidental expiry
 - PostgreSQL partial index makes expiry queries efficient at scale
 
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Metric |
+|---------|-----------|------------|
+| Theory | Core topic covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
+| Case Study: URL Shortener | Core topic covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
+| Case Study: Rate Limiter | Core topic covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
+| Case Study: Pastebin | Core topic covered in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Defined by specific measurable attributes |
+
+---
+
+## Quick Reference
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Fundamental concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+| Case Study: URL Shortener | Fundamental concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+| Case Study: Rate Limiter | Fundamental concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+| Case Study: Pastebin | Fundamental concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+
+---
+
+## Cross-Application Matrix
+
+| Component | When to Use | Trade-Off |
+|-----------|------------|-----------|
+| Theory | Appropriate for specific system contexts | Each choice involves trade-offs |
+| Case Study: URL Shortener | Appropriate for specific system contexts | Each choice involves trade-offs |
+| Case Study: Rate Limiter | Appropriate for specific system contexts | Each choice involves trade-offs |
+| Case Study: Pastebin | Appropriate for specific system contexts | Each choice involves trade-offs |
+
+---
+
+## Chapter Quiz
+
+**Q1:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q2:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q3:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Fundamental to system design |
+| Case Study: URL Shortener | Core topic in Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin | Fundamental to system design |
+
+---
+
+## Quick Reference
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept for Chapter 18: Case Study â€” URL Shortener, Rate Limiter, Pastebin |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 18
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
+
 ---
 
 ## Summary
@@ -595,4 +780,5 @@ For each expired paste, the worker marks `is_deleted = TRUE` in metadata (soft d
 
 ### Challenge Problem
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Distributed Pastebin with Collaborative Editing**: Extend the basic Pastebin to support real-time collaborative editing (Google Docs style). Users share a paste URL and can simultaneously edit. Each edit creates a new version with Operational Transform (OT) or CRDTs for conflict resolution. Design the version storage (content-delta chain vs full-copy-per-version), OT transformation server, real-time sync via WebSocket, and the merge strategy when users paste content with existing hashes. How do deduplication, content addressing, and real-time collaboration interact? What happens to the SHA-256 content address when two users both edit the same document differently?

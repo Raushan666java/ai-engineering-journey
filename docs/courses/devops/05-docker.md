@@ -1,4 +1,6 @@
-# Chapter 5: Docker
+﻿# Chapter 5: Docker
+
+> **Previous:** [Containerization with Docker](./05-containerization.md) | **Next:** [Docker Compose](./06-docker-compose.md)
 
 ## Learning Objectives
 
@@ -12,9 +14,36 @@ By the end of this chapter, students will be able to:
 4. Apply Docker security best practices including non-root execution and read-only filesystems
 5. Use Dockerfile linters to detect configuration issues
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Images vs Containers | Read-only layered templates vs running instances | Layered filesystem enables efficient caching |
+| Dockerfile Best Practices | Official base images, multi-stage builds, layer caching | Order instructions by change frequency |
+| Volumes and Mounts | Volumes, bind mounts, tmpfs for data persistence | Use volumes for production data, bind mounts for dev |
+| Docker Networking | Bridge, host, overlay, macvlan drivers | Choose network driver based on isolation needs |
+| Docker Security | Non-root user, read-only FS, capability dropping | Apply security hardening for production containers |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Images] --> B[Containers]
+    A --> C[Dockerfile Best Practices]
+    B --> D[Volumes]
+    B --> E[Networking]
+    B --> F[Resource Limits]
+    B --> G[Security]
+    C --> H[Multi-Stage Builds]
+    G --> I[Non-Root User]
+```
+
 ## Theory
 
 ### 5.1 Images vs Containers
+
+> **Pro Tip:** Use .dockerignore to exclude node_modules, .git, and build artifacts from the build context.
 
 A **Docker image** is a read-only template containing instructions for creating a container. Images consist of layers, each representing a filesystem change (a RUN command, a COPY operation, a chmod change). Layers are cached and reused across images. An image includes the application code, runtime, libraries, environment variables, and configuration files.
 
@@ -23,6 +52,8 @@ A **container** is a running instance of an image. Containers leverage the host 
 The layered filesystem is fundamental to Docker's efficiency. Each instruction in a Dockerfile creates a new layer. Docker uses a union filesystem (overlay2 by default) to present a single coherent filesystem from these layers. Write operations in a running container create an ephemeral container layer that is discarded when the container stops.
 
 ### 5.2 Dockerfile Best Practices
+
+> **Warning:** Docker containers run as root by default. Always use the USER directive to create a non-root user.
 
 **Use Official Base Images** â€” Official images from Docker Hub are maintained by upstream teams and are regularly scanned for vulnerabilities. Pin specific versions rather than using `latest`.
 
@@ -54,6 +85,8 @@ CMD ["node", "dist/index.js"]
 **Metadata** â€” Use LABEL instructions for maintainer, version, license, and other metadata. HEALTHCHECK defines the command Docker uses to determine if the container is healthy.
 
 ### 5.3 Layer Caching
+
+> **Remember:** Layer caching is your friend. Place frequently changed instructions (COPY of source code) at the end.
 
 Docker builds each layer and caches the result. On subsequent builds, if the build context and instruction haven't changed, Docker reuses the cached layer. This dramatically accelerates builds.
 
@@ -151,6 +184,46 @@ hadolint Dockerfile
 # With severity filtering
 hadolint --failure-threshold error Dockerfile
 ```
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| Image | Read-only layered template for creating containers |
+| Container | Running instance of an image with isolated process |
+| Volume | Docker-managed persistent storage in /var/lib/docker/volumes |
+| Bind Mount | Host directory mapped into the container |
+| tmpfs Mount | In-memory storage for temporary data |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| Dockerfile Key | FROM, RUN, COPY, CMD, EXPOSE, USER |
+| Volumes | docker volume create, -v flag |
+| Networks | bridge(default), host, overlay, macvlan |
+| Resources | --memory, --cpus, --restart |
+| Security | USER, --read-only, --cap-drop, image scanning |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | Development environments with hot-reload |
+| Cloud | Consistent deployment across environments |
+| Enterprise | Isolated microservice deployments |
+| ML | Reproducible model training environments |
+
+## Chapter Quiz
+
+<details><summary>Question 1: How does multi-stage builds help?</summary>**A)** Runs builds in parallel<br>**B)** Separates build and runtime to reduce image size<br>**C)** Improves network performance<br>**D)** Increases container security<br><br>**Answer: B)** Separates build and runtime to reduce image size</details>
+
+<details><summary>Question 2: What is the purpose of the USER instruction?</summary>**A)** Create a user account<br>**B)** Switch to non-root user for security<br>**C)** Set container hostname<br>**D)** Configure user authentication<br><br>**Answer: B)** Switch to non-root user for security</details>
+
+<details><summary>Question 3: Which network driver enables multi-host communication?</summary>**A)** bridge<br>**B)** host<br>**C)** overlay<br>**D)** none<br><br>**Answer: C)** overlay</details>
+
 
 ## Summary
 

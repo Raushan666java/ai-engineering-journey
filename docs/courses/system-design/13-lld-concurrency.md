@@ -1,4 +1,6 @@
 # Chapter 13: Low-Level Design: Concurrency and Threading
+> **Previous:** [12 Lld Component Design](./12-lld-component-design.md) | **Next:** [14 Distributed Data Structures](./14-distributed-data-structures.md)
+
 ---
 ## Learning Objectives
 - Identify and fix race conditions using mutual exclusion, semaphores, and condition variables
@@ -8,9 +10,36 @@
 - Design thread pool configurations (fixed, cached, scheduled, work-stealing) for different workload types
 - Distinguish between threading models: async/await event loops, actor model message passing, and CSP channels
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Concurrency models, threading, async, locks, race conditions |
+| **Key Concepts** | Thread safety, deadlock, livelock, starvation, race conditions |
+| **Concurrency Models** | Thread-based, event-driven, actor model, coroutines |
+| **Synchronization** | Mutex, semaphore, condition variable, atomic operations |
+| **Async Patterns** | Promise, future, async/await, reactor pattern |
+| **Real-World** | Node.js, Go goroutines, Java concurrency, Akka actors |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+```
+
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 ### Thread Safety Fundamentals
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 ![Concurrency and Threading Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/13-concurrency.png)
 
 A **race condition** occurs when the behavior of a program depends on the interleaving of operations across multiple threads. The classic example is a non-atomic increment: `counter += 1` compiles into three machine instructionsâ€”load, add, store. Two threads executing simultaneously can both load the same value, both increment it, and both store it, losing one increment.
@@ -39,6 +68,10 @@ def increment():
 **Read-Write Lock** allows multiple concurrent readers but exclusive access for writers. This optimizes for read-heavy workloads: readers do not block other readers, only writers. Python's standard library does not include a read-write lock, but one can be built on top of `threading.Condition`.
 
 ### Deadlock
+
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
 Deadlock occurs when two or more threads are each waiting for the other to release a resource. The four **Coffman conditions** are necessary for deadlock:
 
@@ -70,6 +103,10 @@ A **lock order** prevents circular wait by ensuring that all threads acquire loc
 **Deadlock Detection** allows the system to enter a deadlock but detects it (via a wait-for graph cycle detection) and recovers by terminating one or more threads or preempting resources.
 
 ### Lock-Free Programming
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 Lock-free programming achieves thread safety without mutexes by using **atomic operations** directly on memory. The fundamental primitive is **Compare-and-Swap (CAS)**:
 
@@ -628,6 +665,7 @@ class DeadlockDetector:
 
 ### Example 9: Go-Style Channel in Python
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 ```python
 import threading
 import queue
@@ -680,7 +718,58 @@ def select(chan_map: dict[Chan, callable], timeout=None) -> bool:
         time.sleep(0.001)
 ```
 
+## Concept Comparison
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 13: Low-Level Design: Concurrency and Threading | Fundamental concept for system design |
+
 ---
+
+## Quick Reference
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept from Chapter 13: Low-Level Design: Concurrency and Threading |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application | Trade-Off |
+|---------|------------|-----------|
+| Theory | Relevant across design scenarios | Requirements-driven decisions |
+
+---
+
+## Chapter Quiz
+
+**Q1:** What is the key takeaway from this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most critical for distributed systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q3:** How does this topic apply to FAANG-level system design?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+---
+
 ## Summary
 - Race conditions require mutual exclusion: use mutex, semaphore, or read-write locks to protect critical sections.
 - Deadlock requires four Coffman conditions; the most practical prevention is a global lock ordering to break circular wait.

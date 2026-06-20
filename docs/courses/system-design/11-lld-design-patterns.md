@@ -1,4 +1,6 @@
 # Chapter 11: Low-Level Design: Design Patterns
+> **Previous:** [10 Lld Solid Oop](./10-lld-solid-oop.md) | **Next:** [12 Lld Component Design](./12-lld-component-design.md)
+
 ---
 ## Learning Objectives
 - Classify design patterns into creational, structural, behavioral, and concurrency categories
@@ -8,9 +10,36 @@
 - Identify anti-patterns (God Object, Spaghetti Code, Lava Flow) in legacy codebases
 - Choose among similar patterns (Factory vs Abstract Factory vs Builder) based on construction complexity
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Creational, structural, behavioral design patterns with examples |
+| **Key Concepts** | Singleton, Factory, Observer, Strategy, Adapter, Decorator |
+| **Creational** | Singleton, Factory, Builder, Prototype |
+| **Structural** | Adapter, Decorator, Proxy, Facade, Composite |
+| **Behavioral** | Observer, Strategy, Command, Template, Iterator |
+| **Real-World** | Used extensively in Java, C++, Python frameworks |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+```
+
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 ### What Are Design Patterns?
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 Design patterns are reusable, battle-tested solutions to recurring design problems. They are not code templates but rather formalized best practices that provide a shared vocabulary for designers. The Gang of Four (GoF) book "Design Patterns: Elements of Reusable Object-Oriented Software" (1994) cataloged 23 patterns into three categories: Creational, Structural, and Behavioral.
 
 A pattern has four essential elements: a **name** (shared vocabulary), a **problem** (when to apply it), a **solution** (the abstraction and relationships), and **consequences** (trade-offs and results).
@@ -18,6 +47,10 @@ A pattern has four essential elements: a **name** (shared vocabulary), a **probl
 ![Design Patterns Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/11-design-patterns.png)
 
 ### Creational Patterns
+
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
 Creational patterns abstract the instantiation process, making a system independent of how its objects are created, composed, and represented.
 
@@ -66,6 +99,10 @@ pizza = PizzaBuilder().set_size("large").add_cheese().add_topping("pepperoni").b
 **Prototype** creates new objects by cloning an existing instance (the prototype), avoiding costly construction. The prototype pattern is particularly useful when object creation is expensive and most instances are similar to an existing one.
 
 ### Structural Patterns
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 Structural patterns concern class and object compositionâ€”how entities use each other to form larger structures.
 
@@ -483,6 +520,7 @@ The state pattern eliminates the messy `if state == IDLE` conditionals. Each sta
 
 ### Example 6: Producer-Consumer with Thread-Safe Queue
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 ```python
 import threading
 import queue
@@ -519,7 +557,58 @@ for _ in cons: q.put(None)  # Send poison pills
 for c in cons: c.join()
 ```
 
+## Concept Comparison
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 11: Low-Level Design: Design Patterns | Fundamental concept for system design |
+
 ---
+
+## Quick Reference
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept from Chapter 11: Low-Level Design: Design Patterns |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application | Trade-Off |
+|---------|------------|-----------|
+| Theory | Relevant across design scenarios | Requirements-driven decisions |
+
+---
+
+## Chapter Quiz
+
+**Q1:** What is the key takeaway from this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most critical for distributed systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q3:** How does this topic apply to FAANG-level system design?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+---
+
 ## Summary
 - Creational patterns abstract object creation: Singleton (single instance), Factory Method (deferred creation), Abstract Factory (product families), Builder (stepwise construction), Prototype (cloning).
 - Structural patterns compose objects: Adapter (interface translation), Decorator (dynamic responsibility), Facade (simplified interface), Proxy (controlled access), Composite (uniform tree handling).

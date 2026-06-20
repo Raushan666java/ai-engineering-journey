@@ -2,6 +2,61 @@
 
 **GATE CS Weightage:** 5â€“8 marks (2â€“3 questions on average). High-scoring topic with predictable problem patterns.
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 5-7 marks |
+| Topics | Number systems, Boolean algebra, Combinational/Sequential circuits |
+| Difficulty | Easy to Moderate |
+| Weightage | 4-5% of GATE CS paper |
+| Key Skills | K-maps, Flip-flop analysis, Counter design |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[Number Systems] --> B[Boolean Algebra]
+    B --> C[Combinational Circuits]
+    C --> D[Sequential Circuits]
+    D --> E[Finite State Machines]
+    E --> F[Memory Elements]
+    F --> G[Counters/Registers]
+    G --> H[Digital System Design]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Combinational Circuits | Sequential Circuits |
+|--- |--- |--- |
+| Memory | No memory | Has memory (feedback) |
+| Output depends on | Current inputs | Current inputs + state |
+| Basic building block | Gates | Flip-flops |
+| Examples | Adders, MUX, Decoder | Counters, Registers |
+| Timing | Instantaneous | Clock-driven |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| SOP | Sum of Products (minterm expression) |
+| POS | Product of Sums (maxterm expression) |
+| Minterm | ANDed product term with all variables |
+| Maxterm | ORed sum term with all variables |
+| K-map | Graphical minimization method |
+| Flip-flop | 1-bit memory element (SR, JK, D, T) |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** K-map minimization up to 5 variables is a must. Also practice designing counters for arbitrary sequences.
+>
+> **Remember:** Race conditions in flip-flops and setup/hold time questions appear in advanced problems.
+
+
 ## GATE Marks Distribution (Last 10 Years)
 
 ![Digital Logic Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/04-digital-logic.png)

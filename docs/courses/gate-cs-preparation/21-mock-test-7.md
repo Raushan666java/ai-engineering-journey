@@ -1,5 +1,59 @@
 # GATE CS Mock Test 7 â€” Full-Length Practice Paper
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Exam | GATE CS Full-Length Mock |
+| Total Marks | 100 |
+| Duration | 3 Hours |
+| Sections | General Aptitude + Core CS |
+| Purpose | Advanced practice |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[GA Section A] --> B[Speed Test]
+    C[GA Section B] --> D[Accuracy Test]
+    E[Core CS] --> F[Advanced Questions]
+    B --> G[Score]
+    D --> G
+    F --> G
+    G --> H[Final Review]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Section A | Section B |
+|--- |--- |--- |
+| Type | MCQs | MCQs + NATs |
+| Marks | 55 | 45 |
+| Questions | 25 | 40 |
+| Difficulty | Hardest | Hardest |
+| Expected Score | 70-80% | 50-60% |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Final Readiness | Comprehensive exam preparedness gauge |
+| Hardest Edition | Maximum difficulty practice paper |
+| Complete Syllabus | All GATE CS topics covered |
+| Exam Simulation | Full exam conditions practice |
+| Score Projection | Estimated GATE score from mock performance |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** This hardest edition tests your limits. If you find it challenging, that means it is working correctly.
+>
+> **Remember:** The actual GATE exam will likely feel easier than this mock. Use this to build overconfidence resistance.
+
+
 ## Exam Instructions
 
 ![Mock Test 7 Structure](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/21-mock-test-7.png)

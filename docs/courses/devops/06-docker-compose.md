@@ -1,4 +1,6 @@
-# Chapter 6: Docker Compose
+﻿# Chapter 6: Docker Compose
+
+> **Previous:** [Docker](./05-docker.md) | **Next:** [Container Orchestration with Kubernetes](./06-orchestration.md)
 
 ## Learning Objectives
 
@@ -12,9 +14,35 @@ By the end of this chapter, students will be able to:
 4. Apply YAML extensions for DRY configuration
 5. Configure production-oriented Compose deployments with logging and secrets
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Docker Compose Overview | Multi-container applications defined in YAML | Use for local dev and small-scale production |
+| Services | Image, build, ports, environment, volumes, health checks | Define each service with explicit health checks |
+| Networks | Default, custom bridge, internal networks | Use internal networks for database isolation |
+| Profiles | Conditional services per environment | Replace multiple compose files with profiles |
+| Production Patterns | Resource limits, logging, secrets, restart policies | Every production service needs resource constraints |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Docker Compose] --> B[Services]
+    B --> C[Images]
+    B --> D[Networks]
+    B --> E[Volumes]
+    B --> F[Health Checks]
+    C & D & E & F --> G[Profiles]
+    G --> H[Production Deploy]
+```
+
 ## Theory
 
 ### 6.1 Docker Compose Overview
+
+> **Pro Tip:** Use depends_on with condition: service_healthy for proper startup ordering, not just simple depends.
 
 Docker Compose defines and runs multi-container Docker applications. A `compose.yaml` (or `docker-compose.yml`) file declares the application's services, networks, and volumes. A single command (`docker compose up`) creates and starts the entire application stack.
 
@@ -23,6 +51,8 @@ Compose is primarily a development and local-testing tool. In production, Docker
 Compose v2 is integrated into the Docker CLI as the `docker compose` command (replacing the standalone `docker-compose`).
 
 ### 6.2 Services
+
+> **Remember:** Docker Compose is primarily for development. For multi-host production, use Kubernetes or Docker Swarm.
 
 Services are the core abstraction. Each service defines a container image, configuration, environment, and runtime behavior.
 
@@ -58,6 +88,8 @@ Each service can specify:
 - **deploy** â€” Deployment configuration (replicas, resources, placement)
 
 ### 6.3 Networks
+
+> **Warning:** Never hardcode secrets in compose files. Use secrets: with external files or Docker Swarm secrets.
 
 Compose creates a default network for the application stack. Custom networks enable service isolation and configuration:
 
@@ -232,6 +264,46 @@ Compose files (version 3+) are compatible with Docker Swarm for multi-host orche
 - **Secret management** natively
 
 Swarm mode is simpler than Kubernetes but less capable for complex workloads.
+
+## Summary
+
+## Concept Comparison Table
+
+| Concept | Description |
+|---------|-------------|
+| Docker Compose | YAML-based multi-container app definition |
+| Docker Swarm | Multi-host orchestration using Compose files |
+| Service | Container definition with image, config, env |
+| Profile | Conditional service enablement per environment |
+| Health Check | Container readiness verification |
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|------------|
+| Services | image, build, ports, environment, volumes |
+| Networks | driver(bridge/overlay), internal, ipam |
+| Volumes | driver, driver_opts, external |
+| Health Check | test, interval, timeout, retries |
+| Production | restart, logging, secrets, deploy.resources |
+
+## Cross-Application Matrix
+
+| Domain | Application |
+|--------|-------------|
+| Web | Full-stack app with API, DB, and cache services |
+| Cloud | Local development mirroring cloud services |
+| Enterprise | Microservice stack for testing environments |
+| ML | Multiple service containers for model serving |
+
+## Chapter Quiz
+
+<details><summary>Question 1: What is Docker Compose best suited for?</summary>**A)** Multi-host production deployments<br>**B)** Local development and testing<br>**C)** Database migrations<br>**D)** CI/CD pipelines<br><br>**Answer: B)** Local development and testing</details>
+
+<details><summary>Question 2: What does depends_on: condition: service_healthy do?</summary>**A)** Starts services in random order<br>**B)** Waits for the service health check to pass<br>**C)** Ignores service health<br>**D)** Stops unhealthy services<br><br>**Answer: B)** Waits for the service health check to pass</details>
+
+<details><summary>Question 3: What problem do Compose profiles solve?</summary>**A)** Network performance<br>**B)** Environment-specific service configurations<br>**C)** Image layer caching<br>**D)** Volume backup<br><br>**Answer: B)** Environment-specific service configurations</details>
+
 
 ## Summary
 

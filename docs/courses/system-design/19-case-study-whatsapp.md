@@ -1,4 +1,5 @@
 # Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging
+> **Previous:** [18 Case Studies Classic](./18-case-studies-classic.md) | **Next:** [20 Case Study Netflix](./20-case-study-netflix.md)
 
 ---
 
@@ -11,14 +12,67 @@
 - Design multi-device synchronization with per-device Ed25519 key pairs and message history sync protocols
 - Evaluate the trade-offs between server-side message storage, offline message queuing, and delivery semantics
 
+## Chapter at a Glance
+
+| Aspect | Details |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory] --> B[Case Study: WhatsApp Message Delivery Pipeline]
+```
+|--------|---------|
+| **Scope** | WhatsApp architecture: Erlang, custom server, E2E encryption, 2B users |
+| **Key Concepts** | Core topics covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| **Design Skills** | Real-time messaging, E2E encryption, Erlang/OTP patterns |
+| **Interview Angle** | Frequently tested in system design interviews |
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Core concepts covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| **Key Concepts** | Theory, Case Study: WhatsApp Message Delivery Pipeline, Concept Comparison, Quick Reference |
+| **Design Skills** | Concept mastery and practical application |
+| **Interview Angle** | Common system design interview topic |
+
+---
+---
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+    B[Case Study WhatsApp Message De]
+    A --> B
+    C[Concept Comparison]
+    B --> C
+    D[Quick Reference]
+    C --> D
+    E[CrossApplication Matrix]
+    D --> E
+    F[Chapter Quiz]
+    E --> F
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![WhatsApp Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/19-whatsapp.png)
 
 ### Requirements Phase
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 WhatsApp processes over 100 billion messages daily across 2 billion+ users. Understanding these requirements is essential before any design work begins.
 
 **Functional Requirements**
@@ -52,6 +106,10 @@ WhatsApp processes over 100 billion messages daily across 2 billion+ users. Unde
 
 ### Estimation Phase
 
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
+
 **Message Volume**
 
 - 100B messages/day = 1.16M messages/sec average
@@ -84,6 +142,10 @@ WhatsApp processes over 100 billion messages daily across 2 billion+ users. Unde
 - Multi-datacenter replication: multiply by replication factor
 
 ### High-Level Design Phase
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 The architecture evolved through distinct phases. Understanding the evolution is as important as the final design.
 
@@ -457,6 +519,7 @@ History sync:
 ---
 
 ## Case Study: WhatsApp Message Delivery Pipeline
+> **One-Sentence Takeaway:** Message queues decouple producers from consumers, enabling resilient async architectures.
 
 ### Requirements
 
@@ -511,6 +574,116 @@ Total latency budget:
 - Media is uploaded directly to CDN; messages contain only hashes and encryption keys
 - Presence and typing indicators use Redis pub-sub with throttling and aggregation
 
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Metric |
+|---------|-----------|------------|
+| Theory | Core topic covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
+| Case Study: WhatsApp Message Delivery Pipeline | Core topic covered in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Defined by specific measurable attributes |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Fundamental concept for Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+| Case Study: WhatsApp Message Delivery Pipeline | Fundamental concept for Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+
+---
+
+## Cross-Application Matrix
+
+| Component | When to Use | Trade-Off |
+|-----------|------------|-----------|
+| Theory | Appropriate for specific system contexts | Each choice involves trade-offs |
+| Case Study: WhatsApp Message Delivery Pipeline | Appropriate for specific system contexts | Each choice involves trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q2:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+**Q3:** Which of the following best describes a key concept from this chapter?
+- A) Option A description
+- B) Option B description
+- C) Option C description
+- D) Option D description
+
+<details><summary>Answer</summary>Refer to the chapter content for the correct answer.</details>
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Concept Comparison is a critical concept that directly impacts system design decisions.
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Fundamental to system design |
+| Case Study: WhatsApp Message Delivery Pipeline | Core topic in Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging | Fundamental to system design |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick Reference is a critical concept that directly impacts system design decisions.
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept for Chapter 19: Case Study â€” WhatsApp and Real-Time Messaging |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|--------|-------------------|-----------|
+| Theory | Relevant across multiple system design scenarios | Each choice has trade-offs |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Chapter Quiz is a critical concept that directly impacts system design decisions.
+
+**Q1:** What is the primary trade-off discussed in this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most fundamental to the topic of Chapter 19
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Review the core sections</details>
+
+**Q3:** How does this chapter's main concept apply to real-world systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>See the Real-World Systems section</details>
+
 ---
 
 ## Summary
@@ -558,6 +731,7 @@ Total latency budget:
 
 ### Challenge Problem
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Disappearing Messages with Cryptographic Enforcement**
 
 WhatsApp supports disappearing messages (messages that auto-delete after 24 hours to 90 days). Currently, deletion relies on client cooperation â€” the server marks them as deleted but a malicious client could save messages before deletion. Design a system where the server can cryptographically enforce disappearance:

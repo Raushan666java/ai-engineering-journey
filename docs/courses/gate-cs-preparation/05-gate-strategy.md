@@ -1,5 +1,60 @@
 # GATE CS Exam Strategy â€” Complete Preparation Guide
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | N/A (Strategy guide) |
+| Topics | Exam pattern, Time management, Preparation roadmap, Resource planning |
+| Difficulty | N/A |
+| Weightage | N/A |
+| Key Skills | Strategic planning, Self-assessment, Revision methodology |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[Understand Exam] --> B[Assess Strengths]
+    B --> C[Create Schedule]
+    C --> D[Topic Mastery]
+    D --> E[Mock Tests]
+    E --> F[Analysis]
+    F --> G[Revision]
+    G --> H[Final Preparation]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | Self-Study | Coaching | Online Course |
+|--- |--- |--- |--- |
+| Cost | Low | High | Moderate |
+| Flexibility | High | Fixed schedule | Flexible |
+| Guidance | Self-driven | Structured | Semi-structured |
+| Peer Learning | Limited | High | Moderate |
+| Best For | Self-disciplined students | Need structure | Remote learners |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| GATE Score | Normalized score based on performance |
+| Percentile | Percentage of candidates below your score |
+| Qualifying Marks | Minimum marks to pass |
+| AIR | All India Rank |
+| Gate Score Formula | S = m + (M - m) * (s - mq) / (Mq - mq) |
+| Validity | GATE score valid for 3 years |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** Create a study schedule with 70% of time on high-weightage topics (DSA, Math, OS, DBMS) and 30% on moderate topics.
+>
+> **Remember:** Consistency beats intensity - study 3-4 hours daily rather than 10 hours on weekends.
+
+
 ## GATE Exam Overview
 
 ![GATE CS Exam Strategy](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/05-gate-strategy.png)

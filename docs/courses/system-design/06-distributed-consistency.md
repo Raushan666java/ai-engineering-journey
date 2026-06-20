@@ -1,4 +1,5 @@
 # Chapter 6: CAP Theorem and Distributed Consistency
+> **Previous:** [05 Partitioning Sharding](./05-partitioning-sharding.md) | **Next:** [07 Message Queues](./07-message-queues.md)
 
 ---
 ## Learning Objectives
@@ -12,12 +13,39 @@
 - Explain how Merkle trees enable efficient anti-entropy and how the Chandy-Lamport algorithm captures consistent global snapshots
 
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Consistency models, CAP theorem, consensus, distributed transactions |
+| **Key Concepts** | Strong vs eventual consistency, linearizability, serializability |
+| **CAP Theorem** | Consistency, Availability, Partition Tolerance — choose two |
+| **Consensus** | Paxos, Raft, Zab — how distributed systems agree on state |
+| **Distributed Transactions** | 2PC, SAGA, TCC patterns for multi-node atomicity |
+| **Real-World** | Google Spanner, etcd, ZooKeeper, Cosmos DB |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+```
+
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Distributed Consistency Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/06-distributed-consistency.png)
 
 ### The CAP Theorem
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 The CAP theorem, formalized by Seth Gilbert and Nancy Lynch in 2002, states that a distributed data store can simultaneously provide at most two of three guarantees: Consistency, Availability, and Partition Tolerance.
 
 **Definitions:**
@@ -56,6 +84,10 @@ The CAP theorem is often misunderstood. Key clarifications:
 
 ### PACELC Extension
 
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
+
 Daniel Abadi proposed PACELC in 2010 to capture what happens *during* partitions and *during normal operation*:
 
 **PACELC:** If there is a Partition (P), choose between Availability (A) and Consistency (C); Else (E), choose between Latency (L) and Consistency (C).
@@ -71,6 +103,10 @@ PACELC Trade-off Space:
 This captures the real design space: even when no partition exists, systems choose between low latency (eventual consistency) and strong consistency (higher latency due to coordination).
 
 ### Consistency Models
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 #### Strong Consistency (Linearizability)
 
@@ -572,7 +608,58 @@ graph TD
     E & F & G --> H[Global Snapshot]
 ```
 
+## Concept Comparison
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 6: CAP Theorem and Distributed Consistency | Fundamental concept for system design |
+
 ---
+
+## Quick Reference
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept from Chapter 6: CAP Theorem and Distributed Consistency |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application | Trade-Off |
+|---------|------------|-----------|
+| Theory | Relevant across design scenarios | Requirements-driven decisions |
+
+---
+
+## Chapter Quiz
+
+**Q1:** What is the key takeaway from this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most critical for distributed systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q3:** How does this topic apply to FAANG-level system design?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+---
+
 ## Summary
 
 - The CAP theorem proves that during a network partition, a distributed system must choose between consistency and availability; it does not apply when the network is healthy
@@ -612,6 +699,7 @@ graph TD
 
 ### Challenge Problem
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Design a Multi-Datacenter CRDT-Based Shopping Cart**
 
 Design a shopping cart system that operates across 3 datacenters (US-East, EU-West, Asia-Pacific) using CRDTs for conflict-free convergence without cross-datacenter coordination.

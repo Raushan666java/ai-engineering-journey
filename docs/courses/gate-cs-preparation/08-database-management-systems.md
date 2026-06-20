@@ -2,6 +2,64 @@
 
 **GATE CS Weightage:** 8â€“12 marks (3â€“5 questions). Consistent high-weight subject with predictable patterns in normalization, SQL, relational algebra, transactions, and B+ trees.
 
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| Total Questions | 8-12 marks |
+| Topics | ER model, SQL, Normalization, Transactions, Indexing |
+| Difficulty | Moderate |
+| Weightage | 8-10% of GATE CS paper |
+| Key Skills | Query writing, Normal forms, B+ tree analysis |
+
+## Roadmap
+
+```mermaid
+flowchart LR
+    A[DBMS Basics] --> B[ER Model]
+    A --> C[Relational Model]
+    B --> D[SQL Queries]
+    C --> D
+    D --> E[Normalization]
+    E --> F[Transaction Processing]
+    F --> G[Concurrency Control]
+    G --> H[Recovery]
+    H --> I[Indexing & Storage]
+```
+
+## Concept Comparison
+
+| Concept | Key Insight | Practical Takeaway |
+|--------|-------------|-------------------|
+
+| Feature | 1NF | 2NF | 3NF | BCNF |
+|--- |--- |--- |--- |--- |
+| Atomic values | Yes | Yes | Yes | Yes |
+| No partial dependency | No | Yes | Yes | Yes |
+| No transitive dependency | No | No | Yes | Yes |
+| Every FD is superkey | No | No | No | Yes |
+| Lossless join | Yes | Yes | Yes | Yes |
+| Dependency preservation | Yes | Yes | Yes | May break |
+
+## Quick Reference
+
+| Term | Definition |
+|--- |--- |
+| Tuple | A row in a relational table |
+| Attribute | A column in a relational table |
+| Primary Key | Uniquely identifies each tuple |
+| Foreign Key | References primary key of another table |
+| Candidate Key | Minimal superkey |
+| Functional Dependency | X -> Y means X determines Y uniquely |
+
+## Pro Tips & Reminders
+
+> **Pro Tip:** For normalization questions, check BCNF first - if a relation is in BCNF, it is automatically in all lower NFs.
+>
+> **Remember:** B+ tree indexing questions are calculation-heavy. Practice computing block accesses and tree heights.
+
+
 ## GATE Marks Distribution (Last 15 Years)
 
 ![Database Management Systems Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/gate-cs-preparation/08-database-management-systems.png)

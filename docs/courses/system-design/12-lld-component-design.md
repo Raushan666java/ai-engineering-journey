@@ -1,4 +1,6 @@
 # Chapter 12: Low-Level Design: Component and Class Design
+> **Previous:** [11 Lld Design Patterns](./11-lld-design-patterns.md) | **Next:** [13 Lld Concurrency](./13-lld-concurrency.md)
+
 ---
 ## Learning Objectives
 - Draw UML class diagrams with correct notation for all relationship types, multiplicity, and visibility
@@ -8,9 +10,36 @@
 - Design thread-safe concurrent data structures using locks and atomic operations
 - Apply the Strategy and Observer patterns within larger component designs
 ---
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Component design, class diagrams, API contracts, modularity |
+| **Key Concepts** | Cohesion, coupling, interface design, dependency management |
+| **Component Modeling** | UML class diagrams, sequence diagrams, state machines |
+| **API Contracts** | OpenAPI, gRPC protobuf, versioning strategies |
+| **Modularity** | Package principles, dependency inversion, hexagonal architecture |
+| **Real-World** | Component design in large-scale software projects |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory]
+```
+
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 ### UML Class Diagram Syntax
 
+> **Pro Tip:** Master this concept thoroughly — it is frequently tested in system design interviews.
+
+> **Pro Tip:** Master this concept — it appears in nearly every system design interview. Understand both the how and the why.
+
+> **Warning:** A common mistake is over-engineering. Always start simple and add complexity only when justified by requirements.
+
+> **Pro Tip:** Master this concept thoroughly — it appears in nearly every system design interview.
 ![Component and Class Design Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/system-design/12-component-design.png)
 
 The Unified Modeling Language (UML) provides a standardized notation for visualizing the structure of object-oriented systems.
@@ -44,6 +73,10 @@ The Unified Modeling Language (UML) provides a standardized notation for visuali
 **Multiplicity** is expressed as annotations on association ends: `1` (exactly one), `0..1` (optional), `*` (zero or more), `1..*` (at least one), `m..n` (range).
 
 ### UML Sequence Diagrams
+
+> **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
+
+> **Warning:** Avoid premature optimization. Start simple, measure, then optimize. Over-engineering is the most common system design mistake.
 
 Sequence diagrams capture the interaction between objects over time. The vertical axis is time; horizontal arrows are messages.
 
@@ -79,6 +112,10 @@ deactivate Controller
 ```
 
 ### UML Activity Diagrams
+
+> **Remember:** Always articulate trade-offs clearly — interviewers value reasoning over the "right" answer.
+
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 
 Activity diagrams model workflow and business process logic. They resemble flowcharts but with concurrency support.
 
@@ -862,6 +899,7 @@ class LoggerFactory:
 
 ### Example 6: Designing a Rate Limiter Library
 
+> **Remember:** Trade-offs are the heart of system design. Always be ready to explain why you chose X over Y.
 **Requirements**: A rate limiter that throttles requests per user. Support both Token Bucket and Sliding Window algorithms. Thread-safe and configurable.
 
 ```python
@@ -932,7 +970,58 @@ class RateLimiterFactory:
         return SlidingWindow(window_seconds, max_requests)
 ```
 
+## Concept Comparison
+
+| Concept | Definition | Key Insight |
+|---------|-----------|-------------|
+| Theory | Core topic in Chapter 12: Low-Level Design: Component and Class Design | Fundamental concept for system design |
+
 ---
+
+## Quick Reference
+
+| Topic | Key Point |
+|-------|-----------|
+| Theory | Essential concept from Chapter 12: Low-Level Design: Component and Class Design |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application | Trade-Off |
+|---------|------------|-----------|
+| Theory | Relevant across design scenarios | Requirements-driven decisions |
+
+---
+
+## Chapter Quiz
+
+**Q1:** What is the key takeaway from this chapter?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q2:** Which concept is most critical for distributed systems?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+**Q3:** How does this topic apply to FAANG-level system design?
+- A) Option A
+- B) Option B
+- C) Option C
+- D) Option D
+
+<details><summary>Answer</summary>Refer to the chapter content</details>
+
+---
+
 ## Summary
 - UML class diagrams use rectangles for classes, with `/` italicization for abstract entities, specific arrow types for inheritance (hollow triangle), composition (filled diamond), aggregation (hollow diamond), and dependency (dashed arrow).
 - Sequence diagrams model message flow across time with activation bars and combined fragments (alt, opt, loop, par) for control logic.

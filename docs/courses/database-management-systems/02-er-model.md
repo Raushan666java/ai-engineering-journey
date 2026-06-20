@@ -1,5 +1,7 @@
 # Chapter 2: Entity-Relationship Model
 
+> **Previous:** [Chapter 1: Introduction to Database Systems](./01-introduction.md) | **Next:** [Chapter 3: The Relational Model](./03-relational-model.md)
+
 ## Learning Objectives
 
 - Identify entities, attributes, and relationships in a problem domain
@@ -10,7 +12,31 @@
 - Model generalization, specialization, and aggregation hierarchies
 - Translate an ER diagram into a relational schema
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Entities & Attributes** | Real-world objects with descriptive properties | Identify entities first, then their attributes |
+| **Relationships & Cardinality** | Associations between entities with 1:1, 1:N, M:N rules | Correct cardinality prevents schema redesign |
+| **Weak Entities** | Depend on owner entity for identity | Common for line items, dependents, seat assignments |
+| **Generalization/Specialization** | Inheritance modeling for entity types | Choose Strategy B (separate tables) for flexibility |
+| **ER-to-Relational Mapping** | Systematic conversion of conceptual to logical schema | Follow the 8 mapping rules in order |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Identify Entities] --> B[Define Attributes]
+    B --> C[Specify Relationships]
+    C --> D[Set Cardinality & Participation]
+    D --> E[Draw ER Diagram]
+    E --> F[Map to Relational Schema]
+    F --> G[Implement SQL DDL]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** The ER model provides a high-level conceptual blueprint — translating real-world requirements into visual diagrams before any SQL is written.
 
 ![ER Model Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch02-er-model.png)
 
@@ -182,6 +208,8 @@ ER diagrams are conceptual â€” they must be converted to relational schemas
 
 ## Examples
 
+> **One-Sentence Takeaway:** Practicing ER-to-relational mapping with real examples — from strong entities to weak entities to generalization — builds the skill to design any database schema systematically.
+
 **Example 2.1: Mapping a University ER Diagram to Relations**
 
 Given the ER diagram described above:
@@ -279,6 +307,10 @@ CREATE TABLE faculty (
 -- INSERT INTO student VALUES (1, 3.8, 'CS');
 -- INSERT INTO faculty VALUES (1, 85000, 'CS');
 ```
+
+> **Warning:** Ternary relationships (degree 3) are often overused — most scenarios modeled with three entities can be expressed as two binary relationships.
+>
+> **Remember:** The ER diagram is a communication tool, not just a design artifact — use consistent notation so all stakeholders interpret it the same way.
 
 ## ðŸ’¡ Pro Tips
 

@@ -1,8 +1,49 @@
 # Chapter 2 â€” CSS3
 
+> **Previous:** [01-html](./01-html.md) | **Next:** [03-js-basics](./03-js-basics.md)
+
 ## Learning Objectives
 
+> **One-Sentence Takeaway:** CSS selectors allow precise element targeting using combinators, pseudo-classes, and attribute patterns.
+
 By the end of this chapter, you will be able to:
+
+## Chapter at a Glance
+
+> **One-Sentence Takeaway:** The box model consists of content, padding, border, and margin — always use `box-sizing: border-box`.
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+|Selectors|CSS selectors range from simple types to advanced pseudo-classes like `:has()`|Master combinators, pseudo-classes, and attribute selectors for precise targeting|
+|Box Model|Every element is a box of content, padding, border, and margin|Always set `box-sizing: border-box` globally for predictable sizing|
+|Flexbox|One-dimensional layout model for distributing space along a row or column|Use `justify-content` for main-axis and `align-items` for cross-axis alignment|
+|CSS Grid|Two-dimensional layout system controlling rows and columns simultaneously|Use `grid-template-areas` for intuitive named layout regions|
+|Responsive Design|Relative units, media queries, and mobile-first patterns adapt to any screen|Build mobile-first with `min-width` breakpoints and `clamp()` for fluid typography|
+|Custom Properties|CSS variables cascade and can be updated at runtime|Define theme palettes with `--color-*` variables in `:root` for easy theming|
+
+## Chapter Roadmap
+
+> **One-Sentence Takeaway:** Flexbox excels at one-dimensional layouts while CSS Grid handles two-dimensional page structures.
+
+```mermaid
+graph TD
+    A[CSS Selectors]
+    B[Box Model & Display]
+    A --> B
+    C[Flexbox Layouts]
+    B --> C
+    D[CSS Grid]
+    C --> D
+    E[Responsive Design]
+    D --> E
+    F[Custom Properties]
+    E --> F
+    G[Animations & Transitions]
+    F --> G
+    H[@font-face]
+    G --> H
+```
+
 
 1. Select HTML elements using a variety of CSS selectors, including combinators and pseudo-classes.
 2. Explain and apply the CSS box model, including `box-sizing`, margin collapsing, and the visual formatting model.
@@ -12,6 +53,8 @@ By the end of this chapter, you will be able to:
 6. Create declarative animations and transitions for interactive feedback and visual flair.
 
 ## Theory
+
+> **One-Sentence Takeaway:** Responsive design requires relative units, media queries, and a mobile-first approach.
 
 ### 2.1 Selectors
 
@@ -355,7 +398,107 @@ body {
 
 The `font-display: swap` ensures text remains visible while the custom font loads, preventing flash-of-invisible-text (FOIT).
 
+
+> [!TIP]
+> Use `clamp(min, preferred, max)` for fluid typography: `font-size: clamp(1rem, 2.5vw, 2rem)` scales smoothly.
+
+> [!WARNING]
+> Margin collapsing only affects vertical margins. Horizontal margins never collapse.
+
+> [!REMEMBER]
+> `auto-fill` preserves empty grid tracks while `auto-fit` collapses them — choose based on whether ghost columns matter.
+
+
+
+## Concept Comparison Table
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|Flexbox vs Grid|One-dimensional (row OR column)|Two-dimensional (rows AND columns)|
+|`em` vs `rem`|Relative to parent font-size|Relative to root font-size (16px default)|
+|`auto-fill` vs `auto-fit`|Preserves empty grid tracks|Collapses empty grid tracks|
+|Transition vs Animation|Two-state interpolation|Multi-step keyframe sequence|
+|`inline` vs `inline-block`|Ignores width/height|Respects width/height|
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|-----------|
+|Selectors|.class, #id, [attr], A > B, A + B, A ~ B, :hover, :nth-child(), :has()|
+|Box Model|`content-box` (default) vs `border-box`, margin collapsing rules|
+|Flex Properties|`flex-direction`,`flex-wrap`,`justify-content`,`align-items`,`gap`,`flex: grow shrink basis`|
+|Grid Properties|`grid-template-columns`,`grid-template-rows`,`grid-template-areas`,`gap`|
+|Responsive Units|`%`,`em`,`rem`,`vw`,`vh`,`dvw`,`dvh`,`clamp()`|
+
+## Cross-Application Matrix
+
+| Domain | Application | Benefit |
+|--------|------------|--------|
+|Marketing Site|Flexbox for navbar, Grid for card layout|Consistent, responsive page structure|
+|Dashboard|Grid for overall layout, Flexbox for widget content|Two-dimensional page shell with one-dimensional components|
+|E-commerce|Flexbox for product rows, Grid for category pages|Flexible product display at any screen width|
+|Blog|Grid with `grid-template-areas` for article + sidebar layout|Named regions make layout intent clear|
+|Design System|Custom properties for colors, spacing, typography tokens|Single-source theme that cascades everywhere|
+
+## Chapter Quiz
+
+Test your understanding with these quick questions.
+
+**Q1. Which CSS property is the correct way to include padding and border in an element's total width?**
+
+- A) `box-sizing: content-box`
+- B) `box-sizing: border-box`
+- C) `width: auto`
+- D) `display: block`
+
+<details><summary>Answer</summary>
+
+**B) `box-sizing: border-box` includes padding and border in the specified dimensions.**
+
+</details>
+
+**Q2. What does `justify-content: center` do in a flex container?**
+
+- A) Centers items on the cross-axis
+- B) Centers items on the main-axis
+- C) Centers the entire flex container
+- D) Vertically centers all children
+
+<details><summary>Answer</summary>
+
+**B) `justify-content` aligns items along the main axis (defined by `flex-direction`).**
+
+</details>
+
+**Q3. Which media query feature checks for dark mode preference?**
+
+- A) `@media (dark-mode: true)`
+- B) `@media (prefers-color-scheme: dark)`
+- C) `@media (theme: dark)`
+- D) `@media (color-scheme: dark)`
+
+<details><summary>Answer</summary>
+
+**B) `prefers-color-scheme: dark` detects the user's system-wide dark mode setting.**
+
+</details>
+
+**Q4. What does `animation: fadeInUp 0.6s ease-out both;` do?**
+
+- A) Applies the fadeInUp animation once
+- B) Runs the animation with a 0.6s delay
+- C) Applies both forwards and backwards fill modes
+- D) Repeats the animation infinitely
+
+<details><summary>Answer</summary>
+
+**C) `both` applies both `forwards` (retain end state) and `backwards` (apply initial state before delay) fill modes.**
+
+</details>
+
 ## Summary
+
+> **One-Sentence Takeaway:** CSS custom properties enable maintainable, themeable stylesheets that update at runtime.
 
 - CSS selectors range from type and class selectors to advanced pseudo-classes like `:has()` and `:nth-child()`.
 - The box model comprises content, padding, border, and margin; always use `box-sizing: border-box`.
@@ -366,6 +509,8 @@ The `font-display: swap` ensures text remains visible while the custom font load
 - `@font-face` with `font-display: swap` optimizes typography loading.
 
 ## Exercises
+
+> **One-Sentence Takeaway:** Transitions and animations provide declarative motion without requiring JavaScript.
 
 ### Review Questions
 

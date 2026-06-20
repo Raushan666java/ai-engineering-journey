@@ -1,4 +1,6 @@
-# Chapter 13: Move Semantics
+﻿# Chapter 13: Move Semantics
+
+> **Previous:** [12-smart-pointers](./12-smart-pointers.md) | **Next:** [14-lambdas](./14-lambdas.md)
 
 ## Learning Objectives
 
@@ -9,6 +11,29 @@ After studying this chapter, students will be able to:
 - Apply `std::move` to enable move operations
 - Use `std::forward` and perfect forwarding
 - Understand the relationship between move semantics and noexcept
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Value Categories** | lvalues persist; rvalues are temporary and movable | Knowing the category tells you whether a move is possible |
+| **Rvalue References** | Type&& binds to temporaries, enabling resource transfer | Foundation of move semantics |
+| **Move Constructor/Assignment** | Pilfer resources from expiring objects | Leave source in valid but unspecified state |
+| **noexcept and Move** | noexcept enables move-based optimisations in vectors | Always mark move ops as noexcept |
+| **std::move** | Cast to rvalue reference — enables, does not perform, move | Does not move anything by itself |
+| **Perfect Forwarding** | Preserves value category through template deduction | Use forwarding references (T&&) with std::forward |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Value Categories] --> B[Rvalue References]
+    B --> C[Move Constructor and Assignment]
+    C --> D[noexcept and Move Ops]
+    D --> E[std::move]
+    E --> F[Perfect Forwarding]
+    F --> G[Rule of Five]
+```
 
 ## 13.1 Value Categories
 
@@ -40,6 +65,7 @@ int&& rref2 = std::move(x);  // x is cast to xvalue, rref2 binds
 
 ## 13.2 Rvalue References
 
+> **One-Sentence Takeaway:** Rvalue references (Type&&) bind only to temporaries and objects about to be destroyed, enabling move semantics.
 An rvalue reference (`T&&`) binds exclusively to rvalues. It extends the lifetime of the temporary and signals that the referred object is about to be destroyed, allowing its resources to be "stolen" rather than copied.
 
 ```cpp
@@ -61,6 +87,7 @@ int main() {
 
 ## 13.3 Move Constructor and Move Assignment
 
+> **One-Sentence Takeaway:** The move constructor transfers resources from a source object, leaving it in a valid but unspecified state.
 Move operations transfer ownership of resources from a source object to a destination, leaving the source in a valid but unspecified state (typically empty or null).
 
 ```cpp
@@ -117,6 +144,7 @@ int main() {
 
 ## 13.4 noexcept and Move Operations
 
+> **One-Sentence Takeaway:** Mark move operations as noexcept to enable optimisations like vector growth to use moves over copies.
 Move constructors and move assignments should be declared `noexcept`. The standard library containers use `std::move_if_noexcept` internally: when reallocating, if the type has a `noexcept` move constructor, elements are moved; otherwise they are copied.
 
 ```cpp
@@ -133,6 +161,7 @@ vec.emplace_back();  // allocate, move-construct
 
 ## 13.5 std::move
 
+> **One-Sentence Takeaway:** std::move is a cast to rvalue reference — it enables but does not perform the move.
 `std::move` does not move anything. It unconditionally casts its argument to an rvalue reference:
 
 ```cpp
@@ -150,6 +179,7 @@ After `std::move(s)`, `s` is in a valid but unspecified state. Accessing it is a
 
 ## 13.6 Perfect Forwarding and std::forward
 
+> **One-Sentence Takeaway:** Perfect forwarding preserves value category through template argument deduction with forwarding references.
 Perfect forwarding preserves the value category of arguments through function templates. The forwarding reference `T&&` (also called universal reference) binds to both lvalues and rvalues.
 
 ```cpp
@@ -183,6 +213,7 @@ std::unique_ptr<T> make_unique(Args&&... args) {
 
 ## 13.7 The Rule of Five
 
+> **One-Sentence Takeaway:** The Rule of Five says: if you define or =delete any of the five special member functions, think about all of them.
 With move semantics, the original Rule of Three expands to five special member functions:
 
 1. Destructor
@@ -213,6 +244,74 @@ public:
 ```
 
 If the argument is an lvalue, `other` is copy-constructed; if an rvalue, it is move-constructed. In either case, swap exchanges resources, and the old state is destroyed when `other` goes out of scope.
+
+## Concept Comparison Table
+
+| Concept | Syntax | What It Does |
+|---------|--------|-------------|
+| lvalue reference | `Type&` | Binds to persistent objects |
+| rvalue reference | `Type&&` | Binds to temporaries |
+| std::move | `std::move(x)` | Casts to rvalue reference |
+| std::forward | `std::forward<T>(x)` | Preserves original value category |
+| Move ctor | `T(T&& other)` | Transfers resources from other |
+| Move assign | `T& operator=(T&&)` | Releases current, takes other's resources |
+
+## Quick Reference
+
+| Rule | Description |
+|------|-------------|
+| Rule of Zero | If no custom resource management needed, use defaults |
+| Rule of Five | If you define/customise any: destructor, copy ctor, copy assign, move ctor, move assign — think about all five |
+| noexcept guarantee | Always mark move ops noexcept for container optimisations |
+| std::move | Does nothing by itself — it just enables the move (cast to &&) |
+| Forwarding reference | `T&&` in deduced context — preserves value category |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Containers** | Move semantics enable efficient reallocation in vector |
+| **String Processing** | Moving strings is O(1) pointer swap vs O(n) copy |
+| **Unique Ownership** | unique_ptr is move-only — expresses exclusive ownership |
+| **Async/Tasks** | Moving callables into thread or async is standard |
+| **Large Objects** | Move constructor avoids deep copies of large data |
+
+## Chapter Quiz
+
+1. What does std::move actually do?
+   A) Moves the object to a new location
+   B) Casts its argument to an rvalue reference
+   C) Creates a copy
+   D) Destroys the object
+   <details><summary>Answer</summary>**B)** std::move is a cast to rvalue reference — it enables but does not perform the move.</details>
+
+2. A move constructor should leave the source object in:
+   A) The same state
+   B) A valid but unspecified state
+   C) A deleted state
+   D) An empty state
+   <details><summary>Answer</summary>**B)** The source is left valid but unspecified — it must be destructible and assignable.</details>
+
+3. Why mark move constructors noexcept?
+   A) It is required by the compiler
+   B) std::vector uses noexcept moves during reallocation
+   C) It improves readability
+   D) It prevents compilation errors
+   <details><summary>Answer</summary>**B)** std::vector checks noexcept to choose between move and copy during reallocation.</details>
+
+4. The Rule of Five replaces the Rule of Three by adding:
+   A) Default constructor and destructor
+   B) Move constructor and move assignment operator
+   C) Copy constructor and move constructor
+   D) Destructor and move assignment
+   <details><summary>Answer</summary>**B)** The Rule of Five adds move constructor and move assignment to the original three.</details>
+
+5. Perfect forwarding requires:
+   A) rvalue references and std::move
+   B) Forwarding references (T&&) and std::forward
+   C) const references and std::forward
+   D) raw pointers
+   <details><summary>Answer</summary>**B)** Forwarding references preserve value category, and std::forward restores it.</details>
 
 ## 13.8 Summary
 

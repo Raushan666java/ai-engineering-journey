@@ -1,4 +1,6 @@
-# Chapter 9: Binary Search Trees
+﻿# Chapter 9: Binary Search Trees
+
+> **Previous:** [Chapter 8: Binary Trees](./08-binary-trees.md) | **Next:** [Heaps](./10-heaps.md)
 
 ## Learning Objectives
 
@@ -7,11 +9,35 @@
 - Implement min, max, successor, and predecessor.
 - Analyze the complexity of BST operations.
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| BST Invariant | Left < root < right for all nodes | Enables O(log n) average search |
+| Insert/Search | Compare key, descend left or right | Recursive or iterative both O(h) |
+| Deletion (3 cases) | Leaf, one child, two children | Two-child case uses successor swap |
+| Successor/Predecessor | Min of right subtree or ancestor | Useful for ordered traversal |
+| Complexity | O(log n) average, O(n) worst | Balanced tree guarantees O(log n) |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Binary Search Tree] --> B[BST Invariant]
+    B --> C[Search / Insert O(log n)]
+    C --> D[Successor / Predecessor]
+    D --> E[Deletion: 3 Cases]
+    E --> F[Complexity Analysis]
+    F --> G[Applications: Dictionary, Index]
+```
+
 ## Theory
 
 ![Binary Search Tree Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch09-bst.png)
 
 ### BST Invariant
+
+> **Remember:** The BST property applies to all nodes in the subtree, not just direct children - a node's left descendant cannot exceed the root even if it is the right child of the left child.
 
 For any node with key \( k \):
 - All keys in the left subtree are **less than** \( k \).
@@ -48,6 +74,8 @@ The successor of node \( x \) is the node with the smallest key greater than \( 
 1. **Leaf**: remove the node directly.
 2. **One child**: replace the node with its child.
 3. **Two children**: replace with the inorder successor (or predecessor), then delete the successor.
+
+> **One-Sentence Takeaway:** BSTs enable O(log n) average-case search by maintaining the left < root < right invariant - but sorted input creates degenerate O(n) trees that require balancing.
 
 ## Examples
 
@@ -292,7 +320,11 @@ Successor of 60: 70
 Predecessor of 70: 60
 ```
 
+> **One-Sentence Takeaway:** The three deletion cases (leaf, one child, two children) are fundamental - master the two-child case where you replace with the inorder successor.
+
 ## ðŸ’¡ Pro Tips
+
+> **Pro Tip:** When implementing BST deletion, always draw the tree first. The two-child case is the most error-prone - remember you are moving the successor's value, not the successor node itself.
 
 - **Inorder traversal of a BST is always sorted**: This is the BST invariant. Use it to verify correctness â€” if inorder is not sorted, the BST property is violated.
 - **Sorted array â†’ balanced BST in \(O(n)\)**: Pick the middle element as root, recursively build left from the left half, right from the right half. This guarantees height \(\lceil \log n \rceil\).

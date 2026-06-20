@@ -1,4 +1,6 @@
-# Chapter 6: Operator Overloading
+﻿# Chapter 6: Operator Overloading
+
+> **Previous:** [Polymorphism](./05-polymorphism.md) | **Next:** [Templates](./07-templates.md)
 
 ## Learning Objectives
 
@@ -10,9 +12,31 @@ After studying this chapter, students will be able to:
 - Overload stream insertion `<<` and extraction `>>`
 - Write conversion operators for type interoperability
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Philosophy & Constraints | Operators follow fixed precedence, associativity, and arity | "When in doubt, do as the ints do" |
+| Binary Operators | Member vs non-member: left operand determines form | Use non-member when left operand is not the class type |
+| Unary Operators | Prefix returns reference; postfix returns value | Prefer prefix `++` — it avoids a copy |
+| Friend Functions | Non-member access to private state | Friendship is not symmetric, transitive, or inherited |
+| Stream Operators | `<<` and `>>` must return stream reference | Always return the stream parameter for chaining |
+| Conversion Operators | `operator T()` enables implicit conversion | Use `explicit` to prevent accidental narrowing |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Philosophy & Constraints] --> B[Binary Operators]
+    B --> C[Unary Operators]
+    C --> D[Friend Functions]
+    D --> E[Stream Operators]
+    E --> F[Conversion Operators]
+```
+
 ## 6.1 Philosophy and Constraints
 
-![Operator Overloading Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/06-operator-overloading.png)
+> **One-Sentence Takeaway:** Operator overloading lets user-defined types use C++ expression syntax — precedence, associativity, and arity remain fixed, and at least one operand must be user-defined.(https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/06-operator-overloading.png)
 
 Operator overloading allows user-defined types to participate in C++'s expression syntax. The language imposes several invariants:
 
@@ -25,7 +49,7 @@ The golden rule: *when in doubt, do as the ints do*. An overloaded operator shou
 
 ## 6.2 Binary Operators
 
-A binary operator can be implemented as a member function (one explicit parameter, the left operand is `*this`) or a non-member function (two explicit parameters).
+> **One-Sentence Takeaway:** Binary operators can be members (left operand is `*this`) or non-members — prefer non-member when the left operand is not the class type. (one explicit parameter, the left operand is `*this`) or a non-member function (two explicit parameters).
 
 ```cpp
 class Vector2D {
@@ -62,6 +86,8 @@ Vector2D operator*(double scalar, const Vector2D& v) {
 
 ## 6.3 Unary Operators
 
+> **One-Sentence Takeaway:** Prefix ++ returns a reference; postfix returns a copy of the old value — prefix is more efficient.
+
 Unary operators (`++`, `--`, `-`, `!`, `~`) are typically member functions with no parameters (prefix) or one `int` parameter (postfix, used as a disambiguator):
 
 ```cpp
@@ -91,7 +117,9 @@ Prefix increment returns a reference (no copy), while postfix returns a value (c
 
 ## 6.4 Friend Functions
 
-A `friend` declaration grants a non-member function access to the class's private members. Friends are declared inside the class body but are not member functions.
+> **One-Sentence Takeaway:** A riend declaration grants non-member functions access to private members — use it sparingly.
+
+A riend declaration grants a non-member function access to the class's private members. Friends are declared inside the class body but are not member functions.
 
 ```cpp
 class Matrix {
@@ -111,7 +139,9 @@ Friendship is not symmetric, transitive, or inherited. If class A declares B as 
 
 ## 6.5 Stream Operators
 
-Overloading `<<` for output and `>>` for input follows a fixed pattern:
+> **One-Sentence Takeaway:** Stream operators return a stream reference to support chaining — they are always non-member functions.
+
+Overloading << for output and `>>` for input follows a fixed pattern:
 
 ```cpp
 class Complex {
@@ -142,6 +172,8 @@ private:
 Stream operators must return a reference to the stream to enable chaining: `cout << a << b`.
 
 ## 6.6 Conversion Operators
+
+> **One-Sentence Takeaway:** Conversion operators define implicit conversions — mark them explicit to prevent dangerous silent conversions.
 
 Conversion operators allow implicit conversion from a user-defined type to another type. The `explicit` keyword (C++11) prevents unwanted implicit conversions.
 
@@ -174,6 +206,79 @@ int main() {
 ```
 
 The `explicit` conversion operator prevents accidental narrowing. The `bool` conversion operator is a common special case: `explicit operator bool() const` allows use in conditionals while preventing unintended integer promotion.
+
+> **Pro Tip:** Always mark `operator bool()` as `explicit`. Without it, your type could accidentally participate in arithmetic expressions — one of the most common operator-overloading bugs.
+
+> **Remember:** Friend functions are not member functions — they are ordinary functions with special access privileges. Do not confuse friends with methods.
+
+## Concept Comparison Table
+
+| Operator Category | Member vs Non-member | Typical Syntax | Notes |
+|------------------|---------------------|---------------|-------|
+| Arithmetic (`+`, `-`, `*`, `/`) | Either; non-member for mixed types | `T operator+(const T&, const T&)` | Return by value |
+| Compound assignment (`+=`, `-=`) | Member only | `T& operator+=(const T&)` | Return `*this` by reference |
+| Increment/Decrement | Member | `T& operator++()` / `T operator++(int)` | Prefix ref, postfix value |
+| Stream (`<<`, `>>`) | Non-member (friend) | `ostream& operator<<(ostream&, const T&)` | Return stream reference |
+| Conversion | Member only | `explicit operator bool() const` | Use `explicit` in C++11 |
+| Function call `()` | Member only | `ReturnType operator()(Args...)` | Enables functors |
+
+## Quick Reference
+
+| Construct | Syntax | Critical Detail |
+|-----------|--------|----------------|
+| Binary member | `T operator+(const T& rhs) const` | Left operand is `*this` |
+| Binary non-member | `T operator+(const T& lhs, const T& rhs)` | Friend if private access needed |
+| Prefix `++` | `T& operator++()` | Return reference |
+| Postfix `++` | `T operator++(int)` | `int` is dummy disambiguator |
+| Stream out | `ostream& operator<<(ostream&, const T&)` | Return `os` |
+| Explicit conversion | `explicit operator bool() const` | Prevents implicit narrowing |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Game Development** | `Vector2D`, `Matrix4` overload arithmetic for transformations |
+| **Financial Systems** | `Currency`, `Money` overload arithmetic and `<<` for reporting |
+| **Scientific Computing** | `Complex`, `Quaternion` overload all arithmetic operators |
+| **GUI Frameworks** | `QString` overloads `+` for concatenation, `<<` for stream output |
+| **Embedded Systems** | Fixed-point `Fixed` class overloads arithmetic for efficient DSP |
+
+## Chapter Quiz
+
+1. Why are `<<` and `>>` overloaded as non-member functions?
+   A) They cannot be member functions
+   B) The left operand (`ostream&`) is not the class type
+   C) The compiler requires it for stream operators
+   D) It is more efficient
+   <details><summary>Answer</summary>**B)** The left operand of `<<` is `std::ostream&`, not the class type, so a non-member function is required.</details>
+
+2. How does C++ distinguish prefix `++` from postfix `++`?
+   A) Return type — prefix returns reference, postfix returns value
+   B) Postfix has a dummy `int` parameter
+   C) Prefix has no parameters, postfix has a `double` parameter
+   D) They are distinguished by the function name
+   <details><summary>Answer</summary>**B)** Postfix `++` takes an unnamed `int` parameter as a disambiguator: `T operator++(int)`.</details>
+
+3. Is friendship inherited?
+   A) Yes, derived classes inherit the base's friendships
+   B) No, friendship is not inherited
+   C) Only if the derived class re-declares the friend
+   D) Only for `public` inheritance
+   <details><summary>Answer</summary>**B)** Friendship is not symmetric, transitive, or inherited in C++.</details>
+
+4. What does `explicit operator bool() const` prevent?
+   A) Using the object in `if` statements
+   B) Implicit conversion to `int`, `pointer`, etc. via `bool` promotion
+   C) The object from being copied
+   D) Calling `delete` on the object
+   <details><summary>Answer</summary>**B)** Without `explicit`, `operator bool()` allows accidental promotion to integer types — `explicit` restricts it to boolean contexts.</details>
+
+5. The golden rule of operator overloading is:
+   A) Overload as many operators as possible
+   B) When in doubt, do as the ints do
+   C) Always use member functions
+   D) Never overload operators
+   <details><summary>Answer</summary>**B)** Operators should behave consistently with their built-in counterparts — surprising semantics confuse users and invite bugs.</details>
 
 ## 6.7 Summary
 

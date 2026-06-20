@@ -1,5 +1,10 @@
 # Chapter 4: Threads
 
+**<< [CPU Scheduling](./03-cpu-scheduling.md)** | [**Next: Process Synchronization**](./05-synchronization.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Define a thread and differentiate it from a process
@@ -8,6 +13,28 @@
 - Use POSIX threads (pthreads) for multithreaded programming
 - Identify issues in multithreaded programs (safety, liveness, performance)
 - Understand how threading maps to modern multicore hardware
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Thread Concept** | Lightweight process; unit of CPU utilization with own stack/registers, shares address space |
+| **User-Level Threads** | Managed by thread library; faster but kernel sees single process |
+| **Kernel-Level Threads** | Managed by OS; slower but kernel can schedule independent threads |
+| **Multithreading Models** | Many-to-One, One-to-One, Many-to-Many |
+| **Thread Pools** | Pre-created threads for efficient task execution |
+| **Fork vs Thread** | Fork duplicates everything; threads share address space |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Thread Concept] --> B[Benefits vs Processes]
+    B --> C[User-Level vs Kernel-Level]
+    C --> D[Multithreading Models]
+    D --> E[Thread Libraries]
+    E --> F[Thread Pools & Issues]
+    F --> G[Examples & Summary]
+</div>
 
 ## Theory
 
@@ -322,6 +349,65 @@ Speedup = 1 / (0.1 + 0.9/16) = 1 / (0.1 + 0.05625) = 6.4x
 ```
 
 Even with infinite cores, the speedup cannot exceed 1/S = 10x.
+
+
+> [TIP]
+> Threads share the **same address space** -- communication between threads is trivial (just read/write shared variables), but this introduces synchronization challenges. Thread creation is 10-100x faster than process creation.
+
+> [WARNING]
+> User-level threads cannot take advantage of multiple CPU cores because the kernel sees only one process. Use kernel-level threads (one-to-one model) for true parallelism on multi-core systems.
+
+> [NOTE]
+> The **many-to-many** model combines the best of both worlds: user-level thread management for fast operations plus kernel-level scheduling for true parallelism.
+
+## Concept Comparison
+
+| Feature | User-Level Threads | Kernel-Level Threads |
+|-------|------------------|--------------------|
+| Managed by | Thread library (user space) | OS kernel |
+| Context Switch | Fast (no system call) | Slower (system call) |
+| Parallelism | None (kernel sees one process) | Full (kernel schedules each thread) |
+| Blocking | One thread blocks => all block | Independent blocking |
+| Example | POSIX Pthreads (user mode) | Windows threads, Solaris |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Thread** | Lightweight process with own stack and registers, sharing address space |
+| **User-Level Thread** | Thread managed entirely in user space without kernel awareness |
+| **Kernel-Level Thread** | Thread managed and scheduled by the OS kernel |
+| **Thread Pool** | Collection of pre-created threads awaiting work |
+| **Parallelism** | Multiple threads executing simultaneously on different cores |
+| **Concurrency** | Multiple threads making progress via interleaving |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Thread per Request | Serve concurrent HTTP requests | Event loop + UI threads | Parallel computation | Handle concurrent queries |
+| Thread Pool | Bounded worker pool | N/A | Fixed worker pool for matrix ops | Connection pool |
+| Kernel Threads | Needed for true parallelism | Less critical | Essential for multi-CPU | Essential for OLTP |
+
+## Chapter Quiz
+
+1. Main advantage of threads over processes?
+   - a) Better security
+   - b) Lower creation overhead and shared address space
+   - c) Automatic synchronization
+   - d) No context switching needed
+
+2. In which model does the kernel see only one process?
+   - a) Many-to-One
+   - b) One-to-One
+   - c) Many-to-Many
+   - d) Two-level
+
+3. Which thread type achieves true parallelism on multi-core?
+   - a) User-level threads
+   - b) Kernel-level threads
+   - c) Green threads
+   - d) Fiber threads
 
 ## Summary
 

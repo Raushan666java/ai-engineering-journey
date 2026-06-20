@@ -1,5 +1,10 @@
 # Chapter 10: File Systems
 
+**<< [Virtual Memory](./09-virtual-memory.md)** | [**Next: File System Implementation**](./11-file-system-impl.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Define a file and describe its attributes, operations, and types
@@ -8,6 +13,28 @@
 - Explain file system mounting and the unified namespace concept
 - Describe file sharing mechanisms (links, consistency semantics)
 - Distinguish between contiguous, linked, and indexed disk allocation
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **File Concept** | Named collection of related data; persistent storage abstraction |
+| **File Attributes** | Name, identifier, type, location, size, protection, timestamps |
+| **Access Methods** | Sequential, Direct/Random, Indexed (via index table) |
+| **Directory Structure** | Single-level, two-level, tree-structured, acyclic-graph, general-graph |
+| **Protection** | Read/write/execute per user/group/other; ACLs, capabilities |
+| **Mounting** | Attaching a file system to a mount point in the directory tree |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[File Concept] --> B[File Attributes & Operations]
+    B --> C[Access Methods]
+    C --> D[Directory Structures]
+    D --> E[File System Mounting]
+    E --> F[File Protection]
+    F --> G[Summary]
+</div>
 
 ## Theory
 
@@ -396,6 +423,65 @@ $ rm original.txt
 $ cat hardlink.txt   # Works! (data still exists)
 $ cat symlink.txt    # Fails: No such file or directory
 ```
+
+
+> [TIP]
+> A **tree-structured directory** is the most common organization. Each user has a subtree rooted at their home directory. Absolute paths start at root (`/home/user/file`); relative paths at current directory.
+
+> [WARNING]
+> **Cyclic graph directories** (with symbolic links) allow cycles. `ls -R` can loop forever. Implementations must detect cycles (path-length limits or garbage collection).
+
+> [NOTE]
+> Unix file protection uses a 9-bit permission mask: three groups (owner, group, other) x three permissions (read=4, write=2, execute=1). `chmod 755` gives owner rwx, group r-x, other r-x.
+
+## Concept Comparison
+
+| Feature | Sequential Access | Direct Access | Indexed Access |
+|-------|-----------------|-------------|--------------|
+| Read Pattern | Data read in order from beginning | Random record by number | Via index key lookup |
+| Storage Type | Tape, streaming | Disk | Disk with index structures |
+| Overhead | Minimal | Fixed-size records needed | Index management overhead |
+| Use Case | Log files, media streaming | Database files, paging | Large data with metadata search |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **File** | Named, persistent collection of data on secondary storage |
+| **Directory** | Maps file names to file control blocks (inodes) |
+| **Mount Point** | Directory where a file system attaches to the system tree |
+| **Inode** | Unix file metadata (permissions, timestamps, block pointers) |
+| **Symbolic Link** | Points to another file by name (crosses file systems) |
+| **Hard Link** | Directory entry to an inode (same file system only) |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Directory | Tree (inodes) | B+ tree ($MFT) | B-tree | Schema/tablespace |
+| Access Control | 9-bit permission + ACL | Security descriptors | Unix + ACL | GRANT/REVOKE |
+| Mounting | mount command | Drive letters (C:) | Fstab + auto-mount | Attach database |
+| Links | Hard + symlink | Shortcut + junction | Symlink + hard link | Foreign keys |
+
+## Chapter Quiz
+
+1. Which directory structure supports cycles?
+   - a) Tree-structured
+   - b) Acyclic-graph
+   - c) General-graph
+   - d) Single-level
+
+2. The Unix inode stores:
+   - a) File name
+   - b) File metadata + block pointers
+   - c) File content only
+   - d) Directory path
+
+3. chmod 644 gives which permissions?
+   - a) r-x,rwx,---
+   - b) rwx,r-x,r-x
+   - c) rw-,r--,r--
+   - d) rw-,rw-,rw-
 
 ## Summary
 

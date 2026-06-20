@@ -1,5 +1,9 @@
 # Chapter 8: Turing Machines
 
+> **Previous:** [Properties of Context-Free Languages](./07-cfl.md) | **Next:** [Turing Machine Extensions](./09-turing-extensions.md)
+
+
+
 ## Learning Objectives
 
 - Define a Turing machine formally.
@@ -9,6 +13,30 @@
 - Prove equivalence of Turing machine variants.
 - Compare Turing machines with finite automata and PDAs.
 - Describe the relationship between Turing machines and algorithms.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| TM Model | Infinite tape, read/write head | Most powerful computation model |
+| Formal Definition | 7-tuple (Q, Σ, Γ, δ, q₀, q_accept, q_reject) | Universal model of algorithms |
+| Configurations | (state, tape content, head position) triple | Complete computation snapshot |
+| Multitape TM | k independent tapes | Equivalent to single-tape TM |
+| Nondeterministic TM | Multiple next-configuration choices | Equivalent to DTM for computability |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[TM Model] --> B[Formal Definition]
+    B --> C[Configurations]
+    C --> D[Language Recognition]
+    D --> E[Design Patterns]
+    E --> F[Multitape TM]
+    F --> G[Nondeterministic TM]
+```
 
 ## Theory
 
@@ -203,6 +231,92 @@ Given a Boolean formula in CNF, determine if there is a satisfying assignment. A
 2. Deterministically evaluate the formula (the "check" phase).
 
 If any assignment satisfies the formula, the NTM accepts. The DTM simulation would try all 2â¿ assignments exponentially.
+
+
+
+## Concept Comparison Table
+| Model | Memory | Read/Write | Power |
+|-------|--------|-----------|-------|
+| DFA | None (state only) | Read only | Regular |
+| PDA | Stack (LIFO) | Read/pop/push | Context-free |
+| TM | Tape (random access) | Read and write | RE |
+
+## Quick Reference
+| TM Component | Description |
+|--------------|-------------|
+| Q | Finite set of states |
+| Σ | Input alphabet (no blank) |
+| Γ | Tape alphabet (includes blank ␣) |
+| δ | Q × Γ → Q × Γ × {L, R} |
+| q₀ | Start state |
+| q_accept | Accept state |
+| q_reject | Reject state |
+
+## Cross-Application Matrix
+| Domain | TM Concept |
+|--------|-----------|
+| Algorithm theory | Formal model of computation |
+| Complexity theory | Time/space complexity definition |
+| Programming | Stored-program concept (UTM) |
+| Compilers | Code generation as tape transformation |
+| AI | Problem reduction to TM acceptance |
+
+## Chapter Quiz
+
+**Q1.** A TM differs from a PDA by having:
+- A) More states
+- B) Random access memory (tape) ✓
+- C) Nondeterminism
+- D) Finite control
+
+<details>
+<summary>Answer</summary>
+**B)** A TM's tape allows random access read/write, unlike the PDA's stack.
+</details>
+
+**Q2.** How many tapes does a standard TM have?
+- A) 1 ✓
+- B) 2
+- C) 3
+- D) Unlimited
+
+<details>
+<summary>Answer</summary>
+**A)** The standard TM has a single tape. Multitape TMs are equivalent but not standard.
+</details>
+
+**Q3.** A TM configuration is a triple of:
+- A) State, input, output
+- B) State, tape content, head position ✓
+- C) State only
+- D) State, stack, input
+
+<details>
+<summary>Answer</summary>
+**B)** (state, tape content, head position) fully describes the TM at any point.
+</details>
+
+**Q4.** Multitape TMs are ___ standard TMs:
+- A) More powerful than
+- B) Equivalent to ✓
+- C) Less powerful than
+- D) Incomparable to
+
+<details>
+<summary>Answer</summary>
+**B)** Every multitape TM can be simulated by a single-tape TM (with possible slowdown).
+</details>
+
+**Q5.** Nondeterministic TMs are ___ deterministic TMs:
+- A) More powerful
+- B) Equivalent (for computability) ✓
+- C) Less powerful
+- D) Only equivalent for regular languages
+
+<details>
+<summary>Answer</summary>
+**B)** NTM and DTM recognize the same languages (though NTM may be faster).
+</details>
 
 ## Summary
 

@@ -1,5 +1,7 @@
 # Chapter 6: Advanced SQL
 
+> **Previous:** [Chapter 5: SQL Joins and Subqueries](./05-sql-joins.md) | **Next:** [Chapter 7: Normalization](./07-normalization.md)
+
 ## Learning Objectives
 
 - Write GROUP BY queries with aggregate functions
@@ -10,7 +12,31 @@
 - Understand B-tree and hash indexes and when to create them
 - Apply aggregate functions: COUNT, SUM, AVG, MIN, MAX
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Window Functions** | Per-row calculations across partitions without collapsing rows | Replace 80% of self-join and subquery use cases |
+| **GROUP BY & HAVING** | HAVING filters groups after aggregation (WHERE filters before) | Remember SQL execution order: FROM → WHERE → GROUP BY → HAVING → SELECT |
+| **CTEs & Recursive CTEs** | Named temporary result sets; self-referencing for trees | Recursive CTEs elegantly solve hierarchies and date generation |
+| **Views** | Virtual tables defined by stored queries | Materialized views for speed, regular views for abstraction |
+| **Indexes** | B-tree, Hash, Partial, Expression, Composite | Index WHERE/JOIN columns; high-selectivity first in composites |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Aggregates] --> B[GROUP BY & HAVING]
+    B --> C[Window Functions]
+    C --> D[CTEs & Recursive CTEs]
+    D --> E[Views & Materialized Views]
+    E --> F[Index Strategies]
+    F --> G[Information Schema]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** Window functions, CTEs, and views transform SQL from a simple query language into a powerful analytical tool — and indexes make it fast.
 
 ![Advanced SQL, Normalization and Higher Normal Forms](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch03-advanced-sql-normalization.png)
 
@@ -363,6 +389,8 @@ WHERE tablename = 'employees';
 
 ## Examples
 
+> **One-Sentence Takeaway:** Applying window functions, CTEs, and crosstab queries to real analytics scenarios demonstrates how advanced SQL techniques reduce complex multi-step logic to concise, readable queries.
+
 **Example 6.1: Employee Analytics with Window Functions**
 
 ```sql
@@ -454,6 +482,10 @@ FROM crosstab(
     sep NUMERIC, oct NUMERIC, nov NUMERIC, dec NUMERIC
 );
 ```
+
+> **Warning:** SQL execution order (FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY) is NOT the same as writing order — misunderstanding this is the #1 source of GROUP BY errors.
+>
+> **Remember:** Recursive CTEs are the most underused SQL feature — they elegantly solve tree traversal, date generation, and graph walking problems that are painful in procedural code.
 
 ## ðŸ’¡ Pro Tips
 

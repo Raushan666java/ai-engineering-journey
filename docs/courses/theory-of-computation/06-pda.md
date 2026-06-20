@@ -1,5 +1,9 @@
 # Chapter 6: Pushdown Automata
 
+> **Previous:** [Context-Free Grammars](./05-cfg.md) | **Next:** [Properties of Context-Free Languages](./07-cfl.md)
+
+
+
 ## Learning Objectives
 
 - Define pushdown automata (PDA) formally.
@@ -9,6 +13,29 @@
 - Convert a CFG to an equivalent PDA.
 - Convert a PDA to an equivalent CFG.
 - Understand the limitations of deterministic PDA.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| PDA Definition | NFA + stack (LIFO memory) | Recognizes context-free languages |
+| DPDA vs NPDA | Not equivalent for PDA! | Some CFLs need nondeterminism |
+| Computation | (state, input, stack) triples | Stack grows/shrinks during execution |
+| CFG ↔ PDA | Every CFG has equivalent PDA | Parsing algorithms use this equivalence |
+| Stack Patterns | Counter, accumulator, nesting | Common design templates for PDA |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[PDA Definition] --> B[Computation]
+    B --> C[DPDA vs NPDA]
+    C --> D[CFG to PDA]
+    D --> E[PDA to CFG]
+    E --> F[Design Patterns]
+```
 
 ## Theory
 
@@ -154,6 +181,92 @@ Transitions:
 - Accept with empty stack (using empty stack acceptance)
 
 The stack counts the nesting depth. At any point, the number of P's on the stack equals the current nesting level. If we try to pop when stack is empty, the computation dies (reject). After processing all input, accept if stack is empty.
+
+
+
+## Concept Comparison Table
+| Feature | DFA | PDA | Turing Machine |
+|---------|-----|-----|---------------|
+| Memory | None (state only) | Stack (LIFO) | Tape (random access) |
+| Languages | Regular | Context-free | Recursively enumerable |
+| Determinism vs Nondet | Equivalent | Not equivalent | Equivalent |
+| Power hierarchy | Lowest | Medium | Highest |
+
+## Quick Reference
+| PDA Component | Description |
+|--------------|-------------|
+| Q | Finite states |
+| Σ | Input alphabet |
+| Γ | Stack alphabet |
+| δ | Q × (Σ∪{ε}) × (Γ∪{ε}) → P(Q × (Γ∪{ε})) |
+| q₀ | Start state |
+| F | Accepting states |
+
+## Cross-Application Matrix
+| Domain | PDA Application |
+|--------|----------------|
+| Compilers | Bottom-up (LR) parsing |
+| Programming languages | Syntax analysis phase |
+| Formal verification | Protocol state tracking |
+| NLP | Context-free grammar parsing |
+| Bioinformatics | RNA pseudoknot detection |
+
+## Chapter Quiz
+
+**Q1.** A PDA = NFA + what?
+- A) Random access memory
+- B) Stack ✓
+- C) Queue
+- D) Counter
+
+<details>
+<summary>Answer</summary>
+**B)** A PDA extends an NFA with a stack (LIFO memory), enabling recognition of context-free languages.
+</details>
+
+**Q2.** DPDA and NPDA are:
+- A) Equivalent in power
+- B) Not equivalent ✓
+- C) Equivalent only for regular languages
+- D) Both equivalent to DFA
+
+<details>
+<summary>Answer</summary>
+**B)** Deterministic and nondeterministic PDA are NOT equivalent. Some CFLs require nondeterminism.
+</details>
+
+**Q3.** PDAs accept by:
+- A) Final state only
+- B) Empty stack only
+- C) Final state or empty stack ✓
+- D) Both simultaneously
+
+<details>
+<summary>Answer</summary>
+**C)** Acceptance by final state and acceptance by empty stack are equivalent definitions.
+</details>
+
+**Q4.** Every CFG can be converted to:
+- A) A DFA
+- B) A PDA ✓
+- C) A regular expression
+- D) A Turing machine only
+
+<details>
+<summary>Answer</summary>
+**B)** Every CFG has an equivalent PDA (and vice versa) — this is a fundamental theorem.
+</details>
+
+**Q5.** The language { ww^R } requires:
+- A) Deterministic PDA
+- B) Nondeterministic PDA ✓
+- C) DFA
+- D) Regular expression
+
+<details>
+<summary>Answer</summary>
+**B)** The PDA must nondeterministically guess the midpoint — a DPDA cannot.
+</details>
 
 ## Summary
 

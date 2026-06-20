@@ -1,4 +1,6 @@
-# Chapter 11: File I/O
+﻿# Chapter 11: File I/O
+
+> **Previous:** [10-stl-algorithms](./10-stl-algorithms.md) | **Next:** [12-smart-pointers](./12-smart-pointers.md)
 
 ## Learning Objectives
 
@@ -9,6 +11,30 @@ After studying this chapter, students will be able to:
 - Position the file pointer for random access
 - Serialise and deserialise C++ objects
 - Handle file I/O errors correctly
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **File Stream Classes** | ifstream, ofstream, fstream with RAII cleanup | File closes automatically when stream goes out of scope |
+| **Opening Modes** | Append, binary, truncate modes compose with bitwise OR | Always check stream state after opening |
+| **Reading Line by Line** | getline reads until delimiter, manages buffers | Prefer getline over the extraction operator for text |
+| **Text vs Binary Mode** | Binary preserves raw bytes; text transforms newlines | Use binary mode for non-text data to avoid corruption |
+| **File Positioning** | seekg/seekp reposition; tellg/tellp query position | Verify position before and after seeks |
+| **Serialisation** | Object-to-stream conversion for persistence | Write size-prefixed data for portable formats |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[File Stream Classes] --> B[Opening Modes]
+    B --> C[Reading Line by Line]
+    B --> D[Text vs Binary Mode]
+    C --> E[File Positioning]
+    D --> F[Serialisation]
+    E --> F
+    F --> G[Error Handling]
+```
 
 ## 11.1 File Stream Classes
 
@@ -57,6 +83,7 @@ int main() {
 
 ## 11.2 Opening Modes
 
+> **One-Sentence Takeaway:** Opening modes (app, binary, in, out, trunc, ate) control how the file is opened and can be combined with bitwise OR.
 File open modes are defined in `std::ios_base`:
 
 | Flag | Effect |
@@ -80,6 +107,7 @@ std::fstream file("data.bin",
 
 ## 11.3 Reading Line by Line
 
+> **One-Sentence Takeaway:** Use getline for line-oriented text input; it reads until the delimiter and handles buffer management.
 ```cpp
 #include <fstream>
 #include <string>
@@ -106,6 +134,10 @@ std::string content(
 
 ## 11.4 Text vs Binary Mode
 
+> **One-Sentence Takeaway:** Binary mode reads and writes raw bytes.
+
+> **Warning:** Text mode on Windows translates CRLF to LF on read and LF to CRLF on write — this corrupts binary data. Always use ios::binary for non-text files.
+without text transformations, essential for non-text data.
 In text mode, the runtime performs platform-specific transformations: on Windows, `\n` is written as `\r\n` and `\r\n` is read back as `\n`. Binary mode suppresses these transformations.
 
 ```cpp
@@ -132,6 +164,7 @@ Binary I/O is faster and avoids precision loss for floating-point values, but fi
 
 ## 11.5 File Positioning
 
+> **One-Sentence Takeaway:** tellg/tellp and seekg/seekp let you query and reposition the read/write cursor within a file.
 File streams maintain two positions: the *get* position (for reading) and the *put* position (for writing). Positioning functions:
 
 ```cpp
@@ -156,6 +189,7 @@ file.seekp(200, std::ios::beg);  // seek put to byte 200
 
 ## 11.6 Serialisation
 
+> **One-Sentence Takeaway:** Serialisation converts objects to byte streams for storage or transmission.
 Serialisation converts objects to a format suitable for storage or transmission. Simple struct serialisation:
 
 ```cpp
@@ -199,6 +233,7 @@ private:
 
 ## 11.7 Error Handling
 
+> **One-Sentence Takeaway:** Stream state flags (good, fail, eof, bad) and explicit checking prevent silent data corruption.
 File stream operations set error state flags:
 
 ```cpp
@@ -227,6 +262,75 @@ if (!file.eof()) {
     std::cerr << "Error reading file (non-EOF failure)\n";
 }
 ```
+
+## Concept Comparison Table
+
+| Operation | ifstream | ofstream | fstream |
+|-----------|----------|----------|---------|
+| Open | `open(filename)` | `open(filename)` | `open(filename, mode)` |
+| Read | `>>`, `getline`, `read` | — | `>>`, `getline`, `read` |
+| Write | — | `<<`, `write` | `<<`, `write` |
+| Close | `close()` | `close()` | `close()` |
+| Default Mode | `in` | `out | trunc` | `in | out` |
+
+## Quick Reference
+
+| Concept | Syntax | Notes |
+|---------|--------|-------|
+| Open file | `ifstream file("name.txt")` | Constructor opens; destructor closes |
+| Read line | `getline(file, line)` | Reads until delimiter (default newline) |
+| Read binary | `file.read(buffer, size)` | Raw bytes, no transformation |
+| Write binary | `file.write(data, size)` | Use with `ios::binary` mode |
+| Seek | `file.seekg(pos)` / `file.seekp(pos)` | Absolute or relative via `beg`, `cur`, `end` |
+| Tell | `file.tellg()` / `file.tellp()` | Returns `streampos` |
+| Check state | `file.good()`, `file.fail()`, `file.eof()` | Always check after read operations |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Config Files** | ifstream reads INI/JSON/YAML text configs |
+| **Game Saves** | Binary serialisation of game state structs |
+| **Databases** | fstream for low-level page storage, random access with seek |
+| **Logging Systems** | ofstream in append mode for rotating log files |
+| **Data Processing** | Sequential read, transform, write pipeline |
+
+## Chapter Quiz
+
+1. Which file stream class can both read and write?
+   A) ifstream
+   B) ofstream
+   C) fstream
+   D) iostream
+   <details><summary>Answer</summary>**C)** fstream supports both input and output operations.</details>
+
+2. What does `ios::binary` mode prevent?
+   A) Opening the file
+   B) Newline translation between platform formats
+   C) Writing to the file
+   D) Reading from the file
+   <details><summary>Answer</summary>**B)** Binary mode disables newline translation, essential for non-text data.</details>
+
+3. Which function reads a line from a file into a std::string?
+   A) `file >> line`
+   B) `file.read(line)`
+   C) `getline(file, line)`
+   D) `file.getline(line)`
+   <details><summary>Answer</summary>**C)** `std::getline(file, line)` reads until the delimiter.</details>
+
+4. seekg and seekp differ in that:
+   A) seekg works on input streams, seekp on output streams
+   B) seekg is absolute, seekp is relative
+   C) They are identical
+   D) seekg works only on binary files
+   <details><summary>Answer</summary>**A)** seekg positions the get pointer (input), seekp positions the put pointer (output).</details>
+
+5. The file destructor:
+   A) Throws an exception if the file is open
+   B) Closes the file automatically (RAII)
+   C) Leaves the file open
+   D) Truncates the file
+   <details><summary>Answer</summary>**B)** The destructor closes the file automatically via RAII.</details>
 
 ## 11.8 Summary
 

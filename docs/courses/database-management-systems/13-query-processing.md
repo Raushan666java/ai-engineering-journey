@@ -1,5 +1,7 @@
 # Chapter 13: Query Processing and Optimization
 
+> **Prev:** [Chapter 12: Indexing](12-indexing.md) | **Next:** [Chapter 14: NoSQL Databases](14-nosql.md)
+
 ## Learning Objectives
 
 - Trace the lifecycle of a SQL query from text to result
@@ -8,6 +10,34 @@
 - Compare join algorithms: nested loop, hash join, merge join
 - Describe pipelining and materialization in query execution
 - Read and interpret query execution plans (EXPLAIN)
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Query Lifecycle** | SQL text → Parse → Optimize → Execute → Result | Use EXPLAIN to see how your queries are executed |
+| **Parsing** | Syntax check + semantic validation (tables/columns exist) | Pre-validate queries with EXPLAIN to catch errors early |
+| **Cost-Based Optimization** | Multiple plans generated, cheapest selected | Keep statistics updated (ANALYZE) for accurate cost estimates |
+| **Join Algorithms** | Nested Loop (small), Hash Join (equality), Merge Join (sorted) | Choose join type based on data size and access patterns |
+| **Pipelining** | Stream results between operators without temp tables | Pipelined execution avoids expensive disk I/O for intermediate results |
+| **Execution Plans** | Tree of operators with estimated costs per node | Read plans bottom-up; look for sequential scans on large tables |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[SQL Query] --> B[Parser]
+    B --> C[Parse Tree]
+    C --> D[Preprocessor]
+    D --> E[Query Optimizer]
+    E --> F[Plan 1] & G[Plan 2] & H[Plan N]
+    F & G & H --> I[Cost Estimator]
+    I --> J[Cheapest Plan]
+    J --> K[Execution Engine]
+    K --> L[Result]
+```
+
+
 
 ## Theory
 
@@ -30,6 +60,9 @@ SQL Query Text
     â†“
 Result
 ```
+
+
+> **One-Sentence Takeaway:** The SQL query lifecycle runs through four stages — parsing, optimization, execution, and result delivery — each adding its own processing cost.
 
 ### 13.2 Parsing and Preprocessing
 
@@ -60,6 +93,9 @@ QUERY
 - Validates that columns (`name`, `dept_name`, `salary`, `dept_id`) exist in those tables
 - Resolves view references to their underlying queries
 - Verifies data type compatibility in comparisons and joins
+
+
+> **One-Sentence Takeaway:** Parsing checks syntax and semantics; a valid parse tree means the query is structurally correct but not necessarily efficient.
 
 ### 13.3 Query Optimization
 
@@ -122,6 +158,9 @@ FROM pg_stats WHERE tablename = 'employees';
 - Range filter: Estimate â‰ˆ total_rows / 3 (heuristic)
 - AND of two conditions: Estimate = rows_after_first Ã— selectivity_of_second
 - Join: Estimate â‰ˆ rows_left Ã— rows_right / max(n_distinct(join_column))
+
+
+> **One-Sentence Takeaway:** The cost-based optimizer evaluates multiple execution plans using table statistics and chooses the cheapest estimated plan.
 
 ### 13.4 Join Algorithms
 
@@ -187,6 +226,9 @@ while i < len(R) and j < len(S):
 - Best when: Data is already sorted (e.g., via index), or large equi-joins
 - Used for: Large tables when sorting is already needed for ORDER BY
 
+
+> **One-Sentence Takeaway:** Nested Loop joins work best for small datasets, Hash Join for large unsorted equality joins, and Merge Join for pre-sorted data.
+
 ### 13.5 Other Operations
 
 **Aggregation:**
@@ -202,6 +244,9 @@ Two approaches:
 **Sorting (ORDER BY):**
 - If an index provides the desired order, use it
 - Otherwise, sort in memory (if fits) or use external merge sort
+
+
+> **One-Sentence Takeaway:** Sort, aggregation, and set operations follow the same optimization principles as joins — minimize data movement.
 
 ### 13.6 Pipelining vs. Materialization
 
@@ -224,6 +269,9 @@ Materialized build side
 ```
 
 Result: Better for algorithms needing random access (hash joins, sort operations).
+
+
+> **One-Sentence Takeaway:** Pipelining streams results between operators without intermediate storage, avoiding expensive disk writes during query execution.
 
 ### 13.7 Reading Execution Plans
 
@@ -271,6 +319,9 @@ WHERE e.salary > 100000;
 | Aggregate | GROUP BY or other aggregation |
 | Limit | Stop after N rows |
 
+
+> **One-Sentence Takeaway:** Execution plans are tree structures read bottom-up — the leaf nodes (sequential/index scans) show where the real work happens.
+
 ### 13.8 Query Plan Selection Example
 
 ```sql
@@ -309,6 +360,9 @@ Good if: Both tables are large and moderate portions are filtered.
 
 The optimizer estimates which plan has the lowest total cost.
 
+
+> **One-Sentence Takeaway:** Query plan selection depends on table size, available indexes, join order, and up-to-date statistics.
+
 ### 13.9 Optimization Hints
 
 Most DBMS allow hints to override the optimizer:
@@ -330,6 +384,9 @@ SELECT STRAIGHT_JOIN e.* FROM employees e JOIN departments d ON e.dept_id = d.de
 - The optimizer consistently chooses a bad plan
 - The statistics are out of date
 - The query has unusual characteristics
+
+
+> **One-Sentence Takeaway:** Optimization hints let developers override the optimizer's choices when statistics are stale or queries are unusual.
 
 ## Examples
 

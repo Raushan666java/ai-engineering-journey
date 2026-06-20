@@ -1,4 +1,6 @@
-# Chapter 17: Distributed Database Systems
+# Chapter 17:
+
+> **Prev:** [Chapter 16redis](16-redis.md) | **Next:** [Chapter 18security](18-security.md) Distributed Database Systems
 
 ## Learning Objectives
 
@@ -8,6 +10,32 @@
 - Implement distributed transactions using 2PC and 3PC
 - Understand consistency models in distributed systems
 - Evaluate CAP theorem trade-offs in practice
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Distributed DB Challenges** | Network latency, partial failures, consistency | Design for failure — assume any node can go down at any time |
+| **CAP Theorem Revisited** | Consistency vs. Availability during partitions | Most systems choose AP with eventual consistency |
+| **Data Replication** | Synchronous (strong) vs. asynchronous (eventual) | Use synchronous for critical data, async for scalability |
+| **Sharding Strategies** | Range, hash, list, and geographic partitioning | Hash sharding gives the most uniform distribution |
+| **Distributed Transactions** | 2PC coordinator with prepare/commit phases | 2PC blocks on coordinator failure — use Saga for long-running transactions |
+| **Consistency Models** | Strong → Eventual → Causal → Read-Your-Writes | Match consistency model to business requirements |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Client] --> B[Load Balancer]
+    B --> C[Node 1] & D[Node 2] & E[Node N]
+    C --> F[Replica 1a] & G[Replica 1b]
+    D --> H[Replica 2a] & I[Replica 2b]
+    E --> J[Replica Na] & K[Replica Nb]
+    F & G & H & I & J & K --> L[Consensus Layer]
+    L --> M[Global Consistent View]
+```
+
+
 
 ## Theory
 
@@ -43,6 +71,9 @@ A **distributed database** is a collection of logically related databases distri
 - **Network dependency:** Latency, partitions, bandwidth limits
 - **Security:** More attack surface
 - **Transaction coordination:** Multi-site ACID is hard
+
+
+> **One-Sentence Takeaway:** Distributed databases face challenges of network latency, partial failures, and data consistency across nodes.
 
 ### 17.2 Data Fragmentation
 
@@ -106,6 +137,9 @@ sales_public = Ï€_id, name(Ïƒ_dept='Sales'(employees))
 sales_sensitive = Ï€_id, salary(Ïƒ_dept='Sales'(employees))
 ```
 
+
+> **One-Sentence Takeaway:** The CAP theorem forces a choice between strong consistency and availability during network partitions.
+
 ### 17.3 Replication
 
 **Full Replication:** Every site stores the complete database.
@@ -122,6 +156,9 @@ sales_sensitive = Ï€_id, salary(Ïƒ_dept='Sales'(employees))
 
 - **Eager (Synchronous):** All replicas updated before transaction commits. Guarantees consistency. High latency.
 - **Lazy (Asynchronous):** Update one replica, propagate later. Low latency. Risk of inconsistency.
+
+
+> **One-Sentence Takeaway:** Data replication can be synchronous (strong consistency, higher latency) or asynchronous (eventual consistency, better performance).
 
 ### 17.4 Distributed Query Processing
 
@@ -158,6 +195,9 @@ Instead of sending full tables between sites, send only the join columns:
 -- Site 2: Return matching employee rows only    (filtered!)
 -- Site 1: Join received rows with local managers
 ```
+
+
+> **One-Sentence Takeaway:** Sharding partitions data horizontally across servers using range, hash, or geographic strategies.
 
 ### 17.5 Distributed Transactions
 
@@ -211,6 +251,9 @@ Coordinator                      Participant 1                     Participant 2
 
 3PC avoids blocking because participants can unilaterally abort after a timeout in certain states.
 
+
+> **One-Sentence Takeaway:** The Two-Phase Commit protocol coordinates distributed transactions but blocks if the coordinator fails.
+
 ### 17.6 CAP Theorem in Practice
 
 | Database | Style | CAP | Notes |
@@ -221,6 +264,9 @@ Coordinator                      Participant 1                     Participant 2
 | MongoDB | Document | CP (default) | Can be configured |
 | Redis Cluster | KV | CP | Partition â†’ some unavailable |
 | DynamoDB | KV | AP | Eventual consistency by default |
+
+
+> **One-Sentence Takeaway:** Consistency models range from strong (linearizability) to eventual — choose based on business requirements.
 
 ### 17.7 Consistency in Distributed Systems
 
@@ -241,6 +287,9 @@ Example: N=3, W=2, R=2 â†’ Strong consistency (2+2=4 > 3)
          N=3, W=1, R=1 â†’ Weak consistency (1+1=2 â‰¤ 3)
 ```
 
+> **One-Sentence Takeaway:** Distributed consistency models span a spectrum from strong linearizability to eventual consistency with causal and read-your-writes in between.
+
+
 ### 17.8 Distributed Database Architectures
 
 **Shared Nothing:** Each node has its own CPU, memory, and disk. Data is distributed across nodes. Example: Cassandra, HBase, Google Spanner.
@@ -248,6 +297,9 @@ Example: N=3, W=2, R=2 â†’ Strong consistency (2+2=4 > 3)
 **Shared Disk:** All nodes share a central disk. Example: Oracle RAC.
 
 **Shared Memory:** All nodes share memory. Rare in distributed databases (more common in parallel databases).
+
+> **One-Sentence Takeaway:** Distributed database architectures include shared-nothing, shared-disk, and shared-memory — each with different trade-offs for scalability and complexity.
+
 
 ### 17.9 Google Spanner â€” The Gold Standard
 
@@ -258,6 +310,9 @@ Spanner is Google's globally-distributed SQL database achieving:
 - **SQL interface** with distributed joins
 
 Key insight: TrueTime allows Spanner to enforce commit ordering without centralized coordination.
+
+> **One-Sentence Takeaway:** Google Spanner achieves global strong consistency and high availability using TrueTime clocks and the Paxos consensus protocol.
+
 
 ### 17.10 NewSQL
 
@@ -270,6 +325,9 @@ A class of databases that combine SQL/ACID with distributed scalability:
 | TiDB | Distributed SQL with Raft consensus |
 | VoltDB | In-memory, shared-nothing, stored procedures |
 | NuoDB | Peer-to-peer, elastic SQL |
+
+> **One-Sentence Takeaway:** NewSQL databases combine the scalability of NoSQL with the ACID guarantees and SQL interface of traditional relational databases.
+
 
 ## Examples
 

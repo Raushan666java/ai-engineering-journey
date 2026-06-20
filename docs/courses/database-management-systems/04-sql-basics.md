@@ -1,5 +1,7 @@
 # Chapter 4: SQL Basics
 
+> **Previous:** [Chapter 3: The Relational Model](./03-relational-model.md) | **Next:** [Chapter 5: SQL Joins and Subqueries](./05-sql-joins.md)
+
 ## Learning Objectives
 
 - Distinguish DDL, DML, and DCL categories of SQL statements
@@ -10,7 +12,31 @@
 - Write effective WHERE clause conditions with logical operators
 - Manage user permissions with DCL commands
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **DDL Commands** | CREATE, ALTER, DROP define database structure | Always specify column list in INSERT for robustness |
+| **Constraints** | PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK, NOT NULL | Enforce data integrity at the database level, not in code |
+| **DML Operations** | INSERT, SELECT, UPDATE, DELETE manipulate data | Always use WHERE with UPDATE/DELETE — test with SELECT first |
+| **DCL & Schemas** | GRANT/REVOKE control access; schemas organize objects | Apply least-privilege principle via roles |
+| **SELECT Clause** | WHERE, ORDER BY, DISTINCT, LIMIT filter and sort | Use LIMIT/OFFSET for pagination, DISTINCT sparingly |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Data Types] --> B[DDL: CREATE/ALTER/DROP]
+    B --> C[Constraints: PK, FK, UNIQUE, CHECK]
+    C --> D[DML: INSERT & SELECT]
+    D --> E[WHERE & Filtering]
+    E --> F[UPDATE & DELETE]
+    F --> G[DCL: GRANT/REVOKE]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** SQL is the universal declarative language for relational databases — master DDL for structure, DML for data, and constraints for integrity.
 
 ![SQL: DDL, DML, Joins and Aggregation](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch02-sql.png)
 
@@ -371,6 +397,8 @@ DROP SCHEMA IF EXISTS old_schema CASCADE;
 
 ## Examples
 
+> **One-Sentence Takeaway:** Real-world SQL examples — from creating e-commerce tables to querying products and managing cascading deletes — illustrate the practical power of DDL, constraints, and DML working together.
+
 **Example 4.1: Complete E-Commerce Database Creation**
 
 ```sql
@@ -472,6 +500,10 @@ DELETE FROM order_items WHERE order_id IN (SELECT order_id FROM orders WHERE cus
 DELETE FROM orders WHERE customer_id = 1;
 DELETE FROM customers WHERE customer_id = 1;
 ```
+
+> **Warning:** A missing WHERE clause in UPDATE or DELETE affects ALL rows — always write the SELECT first to verify your condition before executing the modification.
+>
+> **Remember:** Composite primary keys are powerful but make JOINs verbose — consider a surrogate integer PK with a UNIQUE constraint on the natural composite key instead.
 
 ## ðŸ’¡ Pro Tips
 

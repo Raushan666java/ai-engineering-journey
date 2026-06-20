@@ -1,5 +1,10 @@
 # Chapter 9: Virtual Memory
 
+**<< [Memory Management](./08-memory-management.md)** | [**Next: File Systems**](./10-file-systems.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Distinguish virtual memory from physical memory management
@@ -8,6 +13,29 @@
 - Analyze thrashing and its relation to the working-set model
 - Describe the effects of page size on system performance
 - Apply the principle of locality (spatial and temporal)
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Virtual Memory** | Allows execution of processes partially in memory; illusion of larger memory |
+| **Demand Paging** | Pages loaded only when referenced; lazy pager |
+| **Page Fault** | Referenced page not in memory => trap to OS => load from disk => restart instruction |
+| **Page Replacement** | Select victim page: FIFO, Optimal, LRU, Approximated LRU (Clock) |
+| **Thrashing** | Excessive paging -- process spends more time paging than executing |
+| **Allocation** | Equal, proportional, or priority-based page allocation among processes |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Virtual Memory Concept] --> B[Demand Paging]
+    B --> C[Page Fault Handling]
+    C --> D[Copy-on-Write]
+    D --> E[Page Replacement Algorithms]
+    E --> F[Frame Allocation]
+    F --> G[Thrashing]
+    G --> H[Summary]
+</div>
 
 ## Theory
 
@@ -425,6 +453,71 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> **LRU replacement** is the most effective theoretical algorithm but expensive to implement exactly. Practical systems use approximations: the **second-chance (clock) algorithm** uses a reference bit to approximate LRU with minimal overhead.
+
+> [WARNING]
+> **Belady anomaly** is unique to FIFO: adding more frames can increase page faults. This does not occur with stack-based algorithms like LRU or Optimal.
+
+> [NOTE]
+> **Copy-on-Write (CoW)** is key: `fork()` creates a child that shares the parent pages until one writes. No physical pages are copied until then. This dramatically speeds up `fork()` and reduces memory usage.
+
+## Concept Comparison
+
+| Algorithm | Belady Anomaly | Implementation Cost | Hit Ratio |
+|---------|--------------|-------------------|---------|
+| FIFO | Yes | Very low | Poor -- may evict frequently used pages |
+| Optimal (MIN) | No | Impossible (needs future knowledge) | Best (benchmark) |
+| LRU | No | High (full implementation) | Near-optimal |
+| Clock (2nd Chance) | Varies | Low (reference bit) | Good approx. of LRU |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Virtual Memory** | Separation of logical from physical memory; process runs partially loaded |
+| **Demand Paging** | Page loaded only when a reference to it occurs |
+| **Page Fault** | Interrupt when referenced page is not in physical memory |
+| **Thrashing** | Critical performance collapse from excessive paging |
+| **Copy-on-Write** | Pages shared until modified, then copied |
+| **Working Set** | Set of pages a process is actively referencing |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Demand Paging | Standard | May disable (prefers own caching) | Host-paged | Guest OS manages own paging |
+| LRU | Approximated (Clock) | Buffer pool replacement | Not applicable | Page ballooning |
+| Thrashing | Good allocation reduces | Rare (controlled workload) | Rare | Over-commitment risk |
+| CoW | fork() optimization | Snapshot/checkpoint | Container layers | VM cloning |
+
+## Chapter Quiz
+
+1. What happens when a process references a page not in memory?
+   - a) Process terminated
+   - b) Page fault; OS loads page from disk
+   - c) System reboots
+   - d) TLB is flushed
+
+2. Which replacement algorithm is impossible to implement?
+   - a) FIFO
+   - b) LRU
+   - c) Optimal (MIN)
+   - d) Clock
+
+3. Belady anomaly is associated with:
+   - a) FIFO
+   - b) LRU
+   - c) Optimal
+   - d) Clock
+
+4. Spending more time paging than executing is called:
+   - a) Deadlock
+   - b) Thrashing
+   - c) Starvation
+   - d) Race condition
 
 ## Summary
 

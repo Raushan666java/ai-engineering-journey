@@ -1,5 +1,7 @@
 # Chapter 11: Recovery System
 
+> **Previous:** [Chapter 10: Concurrency Control](./10-concurrency.md) | **Next:** [Chapter 12: Indexing](./12-indexing.md)
+
 ## Learning Objectives
 
 - Classify types of database failures and their causes
@@ -8,6 +10,33 @@
 - Explain checkpointing and its purpose
 - Describe the ARIES recovery algorithm
 - Understand steal/no-steal and force/no-force buffer policies
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Failure Types** | Four categories: transaction, system, media, catastrophic | Match recovery strategy to failure type |
+| **Buffer Policies** | STEAL/NO-FORCE requires both undo and redo | Most DBMS use STEAL/NO-FORCE — understand your system's policy |
+| **Write-Ahead Log** | Log record must reach stable storage before data page | Enable WAL in all production databases |
+| **ARIES Algorithm** | Three-phase recovery: Analysis → Redo → Undo | Industry standard — powers PostgreSQL, Oracle, SQL Server |
+| **Checkpoints** | Limit the scope of recovery scans | Monitor checkpoint frequency for optimal performance |
+| **Media Recovery** | Full backups + WAL archiving = point-in-time recovery | Always test restores — untested backup is no backup |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Failure Occurs] --> B{Type?}
+    B -->|Transaction| C[ROLLBACK]
+    B -->|System Crash| D[ARIES Recovery]
+    B -->|Media Failure| E[Restore + WAL Replay]
+    D --> F[Analysis Phase]
+    F --> G[Redo Phase]
+    G --> H[Undo Phase]
+    H --> I[System Ready]
+    E --> J[Apply WAL Archives]
+    J --> I
+```
 
 ## Theory
 
@@ -29,11 +58,17 @@ Database systems face various failure scenarios, each requiring different recove
 
 **Human Error:** Accidental DROP TABLE, incorrect UPDATE without WHERE clause, or malicious data destruction.
 
+> **One-Sentence Takeaway:** Database failures fall into transaction (rollback), system (crash recovery), media (backup+WAL), and catastrophic (disaster recovery) categories.
+
+> **💡 Pro Tip:** Always categorize failures before designing recovery — most production outages are system crashes recoverable via ARIES, not media failures requiring full restore.
+
 ### 11.2 Storage Hierarchy
 
 - **Volatile Storage (RAM, CPU cache):** Fast but loses data on crash. Used for buffers and intermediate results.
 - **Non-Volatile Storage (SSD, HDD):** Persistent. Used for the database itself, logs, and backups.
 - **Stable Storage:** Fully replicated non-volatile storage (RAID, remote mirroring). Survives individual device failures.
+
+> **One-Sentence Takeaway:** The storage hierarchy determines what survives crashes — volatile memory is lost, non-volatile persists, stable storage survives individual device failures.
 
 ### 11.3 Buffer Management Policies
 
@@ -54,6 +89,10 @@ Four policy combinations determine when pages are written to disk:
 | No-Force/Steal | Undo AND redo (most DBMS use this) | Best performance |
 
 Most commercial DBMS (Oracle, PostgreSQL, SQL Server) use **STEAL/NO-FORCE** with ARIES-style recovery.
+
+> **⚠️ Warning:** Unlike what the name suggests, NO-STEAL doesn't mean no data is written to disk — it means uncommitted dirty pages cannot be evicted. This requires enough buffer space to hold all uncommitted changes, which can be a challenge for long-running transactions.
+
+> **One-Sentence Takeaway:** The STEAL/NO-FORCE buffer policy (undo for aborted + redo for committed) offers the best performance and is used by all major commercial databases.
 
 ### 11.4 The Write-Ahead Log (WAL)
 
@@ -85,7 +124,9 @@ The foundation of all modern recovery. **Write-Ahead Logging** requires:
 **Physical vs. Logical Logging:**
 - **Physical:** Stores the exact bytes changed (page ID, offset, before/after image). Accurate but more data.
 - **Logical:** Stores the operation (e.g., "INSERT INTO accounts VALUES (1, 500)"). Compact but complex to undo.
-- **Physiological:** Hybrid â€” physical at page level, logical within page. Used by most systems.
+- **Physiological:** Hybrid — physical at page level, logical within page. Used by most systems.
+
+> **One-Sentence Takeaway:** Write-Ahead Logging ensures every log record reaches stable storage before its corresponding data page, making recovery possible after any crash.
 
 ### 11.5 Log-Based Recovery Algorithms
 
@@ -94,6 +135,8 @@ The foundation of all modern recovery. **Write-Ahead Logging** requires:
 **Redo:** Re-apply the effects of a committed transaction whose changes may not have reached disk.
 
 **Recovery After System Crash:**
+
+> **💡 Pro Tip:** During recovery, always redo ALL transactions (committed and uncommitted) first, then undo only the losers. This "repeat history" approach is simpler and more robust than trying to skip uncommitted work during redo.
 
 ```
 1. Analyze Phase: Read the log to determine:
@@ -111,6 +154,10 @@ The foundation of all modern recovery. **Write-Ahead Logging** requires:
    - Restore old values using the undo information in each log record
    - Write CLRs (Compensation Log Records) to track undo progress
 ```
+
+
+
+> **One-Sentence Takeaway:** The three phases of log-based recovery — Analysis (find what happened), Redo (reapply all changes), Undo (roll back losers) — guarantee the database returns to a consistent state after any crash.
 
 ### 11.6 Checkpointing
 
@@ -136,6 +183,8 @@ Problem: Database is unavailable during checkpointing.
 The database remains fully operational during fuzzy checkpoints.
 
 **Action Consistent Checkpoint:** Checkpoint at a point where no actions are in progress (simpler but still requires coordination).
+
+> **One-Sentence Takeaway:** Checkpoints reduce recovery time by establishing a safe restart point — fuzzy checkpoints allow the database to remain operational during the process.
 
 ### 11.7 The ARIES Algorithm
 
@@ -189,6 +238,8 @@ Phase 3 â€” Undo:
 
 **Why ARIES is Idempotent:** If the system crashes again during recovery, ARIES starts over. The CLRs ensure that already-undone operations are not redone, and the redo phase correctly handles pages that were already brought to the correct state.
 
+> **One-Sentence Takeaway:** ARIES achieves idempotent recovery through Compensation Log Records (CLRs) that track undo progress, allowing safe restart even if recovery itself crashes.
+
 ### 11.8 Media Recovery
 
 For media failures (disk failure), recovery from backups is needed:
@@ -209,6 +260,8 @@ pg_basebackup -D /backup/location          -- Physical backup
 - **Incremental backup:** Only data changed since last full or incremental backup. Faster, smaller.
 - **Differential backup:** Only data changed since last full backup. Middle ground.
 - **Continuous archiving:** Stream transaction logs to a remote location. Used for point-in-time recovery.
+
+> **One-Sentence Takeaway:** Media recovery combines full backups with WAL archives (continuous archiving) to restore any point in time, making backup testing as critical as backup creation.
 
 ### 11.9 SQL Recovery Commands
 
@@ -233,6 +286,10 @@ COMMIT;
 -- mysqlbinlog mysql-bin.000001 | mysql -u root
 ```
 
+> **One-Sentence Takeaway:** SQL recovery commands — SAVEPOINT, ROLLBACK TO, and COMMIT — give developers fine-grained control over transaction boundaries without waiting for crashes.
+
+> **💡 Pro Tip:** Use SAVEPOINTs strategically in long-running transactions (e.g., batch imports) — if one row fails, you can roll back to the last savepoint instead of redoing the entire transaction.
+
 ### 11.10 Recovery in Distributed Systems
 
 Distributed transactions require the **Two-Phase Commit (2PC)** protocol:
@@ -248,6 +305,10 @@ Distributed transactions require the **Two-Phase Commit (2PC)** protocol:
 3. Participants write the final log record and acknowledge
 
 2PC ensures all participants agree on the outcome, even with failures. The **Three-Phase Commit (3PC)** protocol adds a pre-commit phase to avoid blocking under certain failure scenarios.
+
+> **One-Sentence Takeaway:** Two-Phase Commit extends the WAL principle across distributed systems — every participant logs its intent before committing, guaranteeing atomic outcomes across machines.
+
+> **⚠️ Warning:** In 2PC, if the coordinator crashes after sending PREPARE but before the decision, participants remain blocked holding locks. This is the blocking problem — 3PC and Paxos avoid it at the cost of more messages.
 
 ## Examples
 

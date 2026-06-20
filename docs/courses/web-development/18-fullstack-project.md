@@ -1,8 +1,59 @@
 # Chapter 18: Building a Full-Stack Application
 
+> **Previous:** [17-performance](./17-performance.md)
+
 ## Learning Objectives
 
+> **One-Sentence Takeaway:** Monorepo with shared types package ensures type consistency across frontend and backend.
+
 By the end of this chapter, you will be able to:
+
+## Chapter at a Glance
+
+> **One-Sentence Takeaway:** Express API with Prisma provides type-safe database access and RESTful CRUD endpoints.
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+|Monorepo Setup|npm workspaces manage shared packages alongside frontend and backend apps|Use Turborepo for task orchestration — it caches build outputs and runs tasks in parallel|
+|Shared Types|A packages/shared directory holds types consumed by both frontend and backend|Define all API contracts (request/response shapes) in the shared package to prevent drift|
+|Express API|Full REST API with Prisma, JWT auth, Zod validation, and error handling|Structure routes by resource (auth, projects, tasks) with middleware for cross-cutting concerns|
+|Next.js Frontend|App Router with auth context, API hooks, and component-based UI|Separate data fetching hooks from presentation components for testability|
+|Auth Integration|JWT tokens managed via localStorage with automatic refresh on 401|Implement the AuthProvider at the app root, useApi hook for all authenticated requests|
+|Testing|Integration tests for API, E2E tests for user flows|Test the complete user journey (register → login → create task) as a single E2E test|
+|Docker & CI|Docker Compose for local dev, GitHub Actions for CI/CD|Use service containers in CI for PostgreSQL — no need for separate infrastructure|
+
+## Chapter Roadmap
+
+> **One-Sentence Takeaway:** JWT authentication with access and refresh tokens is implemented at the API gateway layer.
+
+```mermaid
+graph TD
+    A[Project Architecture & Stack]
+    B[Monorepo with npm Workspaces]
+    A --> B
+    C[Shared TypeScript Types]
+    B --> C
+    D[Express API with Prisma]
+    C --> D
+    E[Auth Middleware & JWT]
+    D --> E
+    F[CRUD Task Routes]
+    E --> F
+    G[Next.js Frontend Setup]
+    F --> G
+    H[Auth Context & API Hooks]
+    G --> H
+    I[Components & Modals]
+    H --> I
+    J[Docker Compose]
+    I --> J
+    K[CI/CD Pipeline]
+    J --> K
+    L[Testing]
+    K --> L
+```
+
+
 - Design and architect a full-stack web application from scratch
 - Set up a monorepo with shared TypeScript types
 - Build a RESTful API with Express and Prisma
@@ -12,6 +63,8 @@ By the end of this chapter, you will be able to:
 - Apply testing and performance optimization strategies
 
 ## 18.1 Project Overview: TaskFlow
+
+> **One-Sentence Takeaway:** Next.js frontend uses the App Router with client components for interactive task management.
 
 ![Full-Stack Architecture Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/18-fullstack-project.png)
 
@@ -40,6 +93,8 @@ taskflow/
 ```
 
 ## 18.2 Setting Up the Monorepo
+
+> **One-Sentence Takeaway:** Docker Compose manages local development infrastructure (PostgreSQL, Redis).
 
 We use npm workspaces to manage the monorepo:
 
@@ -84,6 +139,8 @@ Root `tsconfig.json` establishes base settings:
 ```
 
 ## 18.3 Shared Types Package
+
+> **One-Sentence Takeaway:** CI/CD with GitHub Actions automates testing and deployment to production.
 
 The `packages/shared` directory defines types used by both frontend and backend:
 
@@ -1323,6 +1380,104 @@ export function cache(durationSeconds: number) {
   };
 }
 ```
+
+
+> [!TIP]
+> Use `concurrently` in the root package.json to start both frontend and backend with a single `npm run dev` command — it significantly improves developer experience.
+
+> [!WARNING]
+> The GitHub Actions service container for PostgreSQL uses a test password. Never use the CI test database credentials in production — always rotate secrets between environments.
+
+> [!REMEMBER]
+> This full-stack project ties together every chapter in the course. If something feels unclear, revisit the specific chapter — REST APIs (ch9), Auth (ch10), Databases (ch11), Deployment (ch12), Security (ch13), TypeScript (ch14), Next.js (ch15), Testing (ch16), and Performance (ch17).
+
+
+
+## Concept Comparison Table
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|Monorepo vs Multi-repo|Shared types, single CI, atomic commits|Independent deploy cycles, separate issues|
+|npm Workspaces vs Turborepo|Workspace resolution, hoisting|Task orchestration, caching, parallel execution|
+|API with Prisma vs without|Type-safe queries, auto-migrations, relation handling|Manual SQL, raw queries|
+|Next.js vs SPA|SSR, ISR, file-based routing, image optimization|Client-only rendering, requires separate backend|
+|Docker Compose vs cloud DB|Local dev, reproducible setup|Managed, scalable, production-ready|
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|-----------|
+|Project Structure|`apps/web`, `apps/api`, `packages/shared`, root `package.json` with workspaces|
+|Stack|Next.js 15 + React 19 + TypeScript + Express + Prisma + PostgreSQL + Redis|
+|Key Dependencies|`lucide-react` (icons), `tailwindcss` (styling), `bcryptjs` (hashing), `jsonwebtoken` (JWT), `zod` (validation), `helmet` (security), `cors` (CORS)|
+|Auth Flow|Register/Login → JWT (15min) + Refresh Token (7d) → 401 triggers refresh → auto-retry|
+|CI Pipeline|quality (type-check + lint + build) → test (with postgres service) → deploy (Railway)|
+
+## Cross-Application Matrix
+
+| Domain | Application | Benefit |
+|--------|------------|--------|
+|TaskFlow (this project)|Full-stack task manager with projects and teams|Complete reference implementation|
+|E-commerce Platform|Same stack but with products, cart, orders, payments|Proven architecture scales to any domain|
+|SaaS App|Multi-tenant with organization-based data isolation|Add orgId to every query, nested layouts per org|
+|Content Platform|ISR for public pages, SSR for authenticated creator dashboard|Performance + personalization|
+|Social Network|Real-time features with WebSockets or SSE|Extend with push notifications and live feeds|
+
+## Chapter Quiz
+
+Test your understanding with these quick questions.
+
+**Q1. What is the advantage of a monorepo for full-stack development?**
+
+- A) It is simpler than multi-repo
+- B) Shared types between frontend and backend prevent API contract drift
+- C) It reduces server costs
+- D) It eliminates the need for TypeScript
+
+<details><summary>Answer</summary>
+
+**B) A monorepo with a shared types package ensures that the frontend and backend always agree on data shapes. Changing an API response type in the shared package immediately surfaces type errors in both codebases.**
+
+</details>
+
+**Q2. How does the `useApi` hook handle expired access tokens?**
+
+- A) It logs the user out immediately
+- B) It catches the 401, attempts a token refresh using the refresh token, and retries the original request
+- C) It re-fetches from the server
+- D) It throws an error for the component to handle
+
+<details><summary>Answer</summary>
+
+**B) When the API returns 401, `useApi` calls the refresh endpoint with the stored refresh token. If successful, it retries the original request with the new access token. If refresh also fails, the user is redirected to login.**
+
+</details>
+
+**Q3. What is the purpose of the `AuthenticatedRequest` interface?**
+
+- A) To define the request body schema
+- B) To extend Express Request with the `userId` property added by the auth middleware
+- C) To validate authentication headers
+- D) To type the API response
+
+<details><summary>Answer</summary>
+
+**B) The `AuthenticatedRequest` interface extends Express `Request` with an optional `userId` property. The `authenticate` middleware sets this property after verifying the JWT, and route handlers access it to scope queries to the authenticated user.**
+
+</details>
+
+**Q4. Which Docker service does the TaskFlow application depend on for local development?**
+
+- A) MySQL
+- B) MongoDB
+- C) PostgreSQL and Redis
+- D) SQLite
+
+<details><summary>Answer</summary>
+
+**C) The `docker-compose.yml` defines PostgreSQL (main database) and Redis (caching) services. The Express API connects to both for data persistence and caching.**
+
+</details>
 
 ## Summary
 

@@ -1,5 +1,7 @@
 # Chapter 5: SQL Joins and Subqueries
 
+> **Previous:** [Chapter 4: SQL Basics](./04-sql-basics.md) | **Next:** [Chapter 6: Advanced SQL](./06-sql-advanced.md)
+
 ## Learning Objectives
 
 - Write INNER, LEFT, RIGHT, and FULL OUTER joins to combine tables
@@ -10,7 +12,32 @@
 - Understand correlated subqueries and their performance implications
 - Rewrite subqueries as joins and vice versa
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **INNER JOIN** | Returns only matched rows — the most common join | Use explicit ANSI JOIN syntax over theta-style |
+| **OUTER JOINs** | LEFT, RIGHT, FULL preserve unmatched rows with NULLs | LEFT JOIN / IS NULL is the standard anti-join pattern |
+| **SELF JOIN** | Join a table to itself using aliases | Ideal for hierarchies, pairs, and consecutive records |
+| **Subqueries** | Nested SELECT in WHERE, FROM, or SELECT clause | EXISTS short-circuits and handles NULLs better than IN |
+| **Correlated Subqueries** | Re-execute per outer row — powerful but expensive | Rewrite as window functions or JOINs when possible |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Join Concepts] --> B[INNER JOIN]
+    B --> C[OUTER JOINs]
+    C --> D[SELF & CROSS JOIN]
+    D --> E[Subqueries in WHERE]
+    E --> F[EXISTS & Correlated]
+    F --> G[ANY/ALL & Anti-joins]
+    G --> H[Performance Comparison]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** Joins are the heart of relational querying — mastering INNER, OUTER, SELF, and subqueries lets you combine any data across normalized tables.
 
 ![SQL Joins and Subqueries Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch05-sql-joins.png)
 
@@ -315,6 +342,8 @@ WHERE o.order_id IS NULL;
 
 ## Examples
 
+> **One-Sentence Takeaway:** Practicing multi-table JOINs — from employee-department analysis to customer spending reports — solidifies the ability to write correct, efficient queries for real reporting needs.
+
 **Example 5.1: Employee Department Analysis**
 
 ```sql
@@ -372,6 +401,10 @@ WHERE NOT EXISTS (
     SELECT 1 FROM order_items oi WHERE oi.product_id = p.product_id
 );
 ```
+
+> **Warning:** NOT IN with NULLs in the subquery returns zero rows — use NOT EXISTS or LEFT JOIN / IS NULL for safe anti-joins.
+>
+> **Remember:** Test your joins on small data first — an incorrect join condition can produce a Cartesian product with millions of rows that is extremely hard to debug.
 
 ## ðŸ’¡ Pro Tips
 

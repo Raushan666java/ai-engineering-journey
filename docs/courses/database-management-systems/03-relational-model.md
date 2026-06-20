@@ -1,5 +1,7 @@
 # Chapter 3: The Relational Model
 
+> **Previous:** [Chapter 2: Entity-Relationship Model](./02-er-model.md) | **Next:** [Chapter 4: SQL Basics](./04-sql-basics.md)
+
 ## Learning Objectives
 
 - Define relations, tuples, attributes, and domains formally
@@ -9,7 +11,31 @@
 - Understand the closure property of relational algebra
 - Apply selection, projection, join, set operations, and division
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Relation Structure** | A relation is a set of tuples with atomic values | Every cell holds exactly one value (1NF) |
+| **Keys** | Superkey, candidate, primary, foreign key hierarchy | Choose minimal candidate keys as primary keys |
+| **Integrity Constraints** | Domain, entity, and referential rules | Enforce at DB level, not in application code |
+| **Relational Algebra** | Procedural query language with closure property | Every operation outputs a relation — enabling composition |
+| **Relational Calculus** | Declarative alternative — specify WHAT not HOW | Understand both for complete query mastery |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Relation Concepts] --> B[Keys & Integrity]
+    B --> C[Algebra Basics]
+    C --> D[Derived Operations]
+    D --> E[Query Composition]
+    E --> F[Relational Calculus]
+    F --> G[Equivalence Rules]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** The relational model, rooted in set theory and predicate logic, represents all data as simple relations and provides a small set of powerful algebraic operations for querying.
 
 ![Relational Model Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch03-relational-model.png)
 
@@ -229,6 +255,8 @@ Understanding equivalences is crucial for query optimization:
 
 ## Examples
 
+> **One-Sentence Takeaway:** Writing relational algebra queries — from simple selections to division — builds the intuition needed to understand SQL query optimization.
+
 **Example 3.1: Complete University Query in Relational Algebra**
 
 Schema: `STUDENT(sid, sname, major)` and `ENROLLED(sid, course)`
@@ -250,6 +278,10 @@ Query: "Find stores that sell ALL products."
 Step 1: Get all product IDs: `Ï€<pid>(PRODUCT)`
 Step 2: Divide SALE by all products: `Ï€<sid, pid>(SALE) Ã· Ï€<pid>(PRODUCT)`
 Step 3: Join with STORE for names: `Ï€<sname>(STORE â‹ˆ (Ï€<sid, pid>(SALE) Ã· Ï€<pid>(PRODUCT)))`
+
+> **Warning:** Division (Ã·) is the most misunderstood operation — test your division queries with small datasets first to ensure correctness.
+>
+> **Remember:** The closure property (every operation outputs a relation) is why you can nest queries arbitrarily — this single idea enables the entire SQL query composition model.
 
 ## ðŸ’¡ Pro Tips
 

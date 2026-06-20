@@ -1,5 +1,10 @@
 # Chapter 12: Secondary Storage
 
+**<< [File System Implementation](./11-file-system-impl.md)** | [**Next: I/O Systems**](./13-io-systems.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Describe disk hardware: platters, tracks, sectors, cylinders, and seek time
@@ -8,6 +13,28 @@
 - Explain disk formatting, partitioning, and bad-block management
 - Design RAID structures and compare RAID levels (0, 1, 5, 6, 10)
 - Understand swap space management
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Disk Structure** | Platters, tracks, sectors, cylinders; data read via actuator arm over spinning platters |
+| **Disk Scheduling** | FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK -- minimize seek time |
+| **Disk Management** | Partitioning, formatting, boot block, bad block handling |
+| **RAID** | Redundant Array of Independent Disks: striping, mirroring, parity |
+| **Swap Space** | Virtual memory paging area on disk; raw partition or file-based |
+| **Stable Storage** | Write-ahead logging ensures data survives crashes |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Disk Structure] --> B[Disk Scheduling]
+    B --> C[FCFS / SSTF / SCAN / C-SCAN]
+    C --> D[Disk Management]
+    D --> E[RAID Levels]
+    E --> F[Swap Space & Stable Storage]
+    F --> G[Summary]
+</div>
 
 ## Theory
 
@@ -349,6 +376,67 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> **SCAN (elevator algorithm)** moves the disk arm in one direction, servicing all requests, then reverses. **C-SCAN** provides more uniform wait times by servicing only in one direction then jumping back.
+
+> [WARNING]
+> **SSTF** (Shortest Seek Time First) may cause **starvation** -- distant cylinder requests may be delayed indefinitely if nearby requests keep arriving.
+
+> [NOTE]
+> **RAID 0** (striping) improves performance with no redundancy. **RAID 1** (mirroring) doubles reliability. **RAID 5** (striping+parity) balances performance, capacity, and reliability.
+
+## Concept Comparison
+
+| Algorithm | Direction | Starvation | Throughput | Uniformity |
+|---------|---------|----------|----------|----------|
+| FCFS | Order of arrival | No | Low | Poor |
+| SSTF | Closest request first | Yes | Moderate | Poor |
+| SCAN | One direction then reverse | No | High | Moderate |
+| C-SCAN | One direction only | No | High | Best |
+| LOOK | Only to last request | No | Higher than SCAN | Moderate |
+| C-LOOK | Last request, one direction | No | Similar to C-SCAN | Best |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Seek Time** | Time to move disk arm to desired cylinder |
+| **Rotational Latency** | Time for sector to rotate under head |
+| **Cylinder** | Same track across all platter surfaces |
+| **SSTF** | Shortest Seek Time First |
+| **RAID** | Multiple disks for performance and/or reliability |
+| **Swap Space** | Disk space for paging virtual memory pages |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Disk Sched. | Elevator (deadline) | Noop (DB manages I/O) | C-LOOK (sequential) | CFQ or BFQ |
+| RAID 0 | Not suitable | Scratch space | Temp storage | Not for production |
+| RAID 1 | OS partition | Transaction logs | Critical metadata | Critical data |
+| RAID 5/6 | Bulk data | Data tables | Media archive | General file storage |
+
+## Chapter Quiz
+
+1. Which algorithm provides most uniform waiting time?
+   - a) SSTF
+   - b) C-SCAN
+   - c) FCFS
+   - d) LOOK
+
+2. What does RAID stand for?
+   - a) Redundant Array of Independent Disks
+   - b) Random Access Integrated Drive
+   - c) Reliable Array of Internet Devices
+   - d) Rapid Access Information Disk
+
+3. Which RAID level provides striping with parity?
+   - a) RAID 0
+   - b) RAID 1
+   - c) RAID 5
+   - d) RAID 10
 
 ## Summary
 

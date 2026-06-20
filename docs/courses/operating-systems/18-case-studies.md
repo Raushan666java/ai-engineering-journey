@@ -1,5 +1,10 @@
 # Chapter 18: Case Studies
 
+**<< [Virtualization and Cloud Computing](./17-virtualization.md)**
+
+---
+
+
 ## Learning Objectives
 
 - Compare Windows, Linux, and macOS kernel architectures
@@ -9,6 +14,30 @@
 - Describe FreeBSD's design contributions to modern operating systems
 - Explore the architecture of real-time operating systems (RTOS)
 - Understand the principles of microkernel design through Minix and seL4
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Windows NT** | Hybrid kernel; NT kernel + HAL + executive; Win32/POSIX/OS2 subsystems |
+| **Linux** | Monolithic + modules; CFS scheduler; VFS; loadable kernel modules |
+| **macOS/XNU** | Hybrid: Mach microkernel + BSD + I/O Kit; Mach message IPC |
+| **FreeBSD** | Monolithic + POSIX; ZFS, pf firewall, jails |
+| **RTOS** | Real-time: FreeRTOS (small), VxWorks (certified), QNX (microkernel) |
+| **Minix/seL4** | True microkernel; seL4 formally verified, no kernel bugs |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Windows NT] --> B[Linux Kernel]
+    A --> C[macOS XNU]
+    B --> D[FreeBSD]
+    C --> D
+    D --> E[RTOS: FreeRTOS / VxWorks / QNX]
+    E --> F[Minix & seL4 Microkernels]
+    F --> G[Comparative Analysis]
+    G --> H[Summary]
+</div>
 
 ## Theory
 
@@ -366,6 +395,73 @@ Low:     â”€â”€â”€â”€â”€â”€â”€â”€â”�
 Solution: Priority inheritance â€” Low temporarily inherits High's priority
 (POSIX: pthread_mutexattr_setprotocol with PTHREAD_PRIO_INHERIT)
 ```
+
+
+> [TIP]
+> **seL4** is the first formally verified OS kernel. Using the Isabelle/HOL theorem prover, the kernel code is proven correct against its specification. No buffer overflows or memory safety bugs are possible.
+
+> [WARNING]
+> macOS XNU Mach messaging IPC has performance issues; Apple uses it only for essential services. Most BSD services bypass Mach and run in kernel space, making XNU a hybrid in practice.
+
+> [NOTE]
+> **Windows NT** was designed for portability -- the HAL (Hardware Abstraction Layer) abstracts CPU architecture. NT ran on x86, Alpha, MIPS, Itanium, and ARM.
+
+## Concept Comparison
+
+| Feature | Windows NT | Linux | macOS (XNU) | FreeBSD |
+|-------|----------|-----|-----------|-------|
+| Kernel Type | Hybrid | Monolithic + modules | Hybrid (Mach+BSD) | Monolithic |
+| Scheduling | Priority + boosts | CFS (fair) | Multi-level feedback | ULE scheduler |
+| File System | NTFS | VFS -> ext4/XFS/Btrfs | APFS | UFS, ZFS |
+| Process | CreateProcess() | fork()/clone() | fork() + Mach tasks | fork() |
+| Security | ACL, BitLocker | SELinux, AppArmor | SIP, AMFI | Capsicum, Jails |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **NT Kernel** | Windows NT: executive + kernel + HAL |
+| **XNU** | Apple hybrid kernel (Mach + BSD + I/O Kit) |
+| **HAL** | Hardware Abstraction Layer (portable NT) |
+| **Jails** | FreeBSD OS-level virtualization (precursor to containers) |
+| **ZFS** | Advanced FS with snapshots, checksums, pooled storage |
+| **seL4** | Formally verified microkernel |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Desktop | Best app/software support | Developer-friendly | Creative & media | Not applicable |
+| Server | AD, .NET | Web, cloud dominant | Minimal server | N/A |
+| Embedded | Windows IoT | Yocto/Buildroot | N/A | FreeRTOS, VxWorks |
+| Real-Time | No native RT | PREEMPT_RT | No | QNX, VxWorks |
+| Security Critical | E5/Defender | SELinux | SIP + notarization | seL4 (verified) |
+
+## Chapter Quiz
+
+1. Which kernel is formally verified?
+   - a) Windows NT
+   - b) Linux
+   - c) seL4
+   - d) macOS XNU
+
+2. What allows Windows NT on different CPUs?
+   - a) Win32 subsystem
+   - b) HAL
+   - c) Executive
+   - d) NTFS
+
+3. macOS XNU is best described as:
+   - a) Monolithic
+   - b) Microkernel
+   - c) Hybrid (Mach+BSD)
+   - d) Exokernel
+
+4. FreeBSD precursor to containers?
+   - a) ZFS
+   - b) Jails
+   - c) pf firewall
+   - d) Ports
 
 ## Summary
 

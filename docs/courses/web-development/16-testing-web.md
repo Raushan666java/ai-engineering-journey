@@ -1,8 +1,50 @@
 # Chapter 16: Testing
 
+> **Previous:** [15-nextjs](./15-nextjs.md) | **Next:** [17-performance](./17-performance.md)
+
 ## Learning Objectives
 
+> **One-Sentence Takeaway:** The testing pyramid recommends many fast unit tests, fewer integration tests, and minimal E2E tests.
+
 By the end of this chapter, you will be able to:
+
+## Chapter at a Glance
+
+> **One-Sentence Takeaway:** Vitest provides fast, parallel test execution with a Jest-compatible API and native Vite integration.
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+|Testing Pyramid|Many unit tests, some integration tests, few E2E tests|Unit tests should be fast and isolated; E2E tests should cover critical user journeys only|
+|Vitest|Fast, Vite-native test runner with Jest-compatible API|Use `describe`/`it`/`expect` for structure — Vitest runs tests in parallel by default|
+|React Testing|Testing Library tests components from the user's perspective|Query by accessible roles and text, not implementation details like class names or state|
+|Integration Tests|Test API endpoints end-to-end with a real or test database|Spin up the server in beforeAll, clean data between tests, use test-specific environment variables|
+|Playwright E2E|Browser automation testing real user flows|Use data-testid attributes for selectors, test user registration through task completion|
+|MSW Mocking|Mock Service Worker intercepts HTTP requests at the network level|Define handlers for each endpoint, set up in beforeAll, reset between tests|
+
+## Chapter Roadmap
+
+> **One-Sentence Takeaway:** Testing Library encourages testing components by user-visible behavior, not implementation details.
+
+```mermaid
+graph TD
+    A[Testing Pyramid]
+    B[Unit Testing with Vitest]
+    A --> B
+    C[React Component Testing]
+    B --> C
+    D[Custom Hook Testing]
+    C --> D
+    E[API Integration Tests]
+    D --> E
+    F[End-to-End Testing with Playwright]
+    E --> F
+    G[MSW Mocking]
+    F --> G
+    H[Code Coverage]
+    G --> H
+```
+
+
 - Write unit tests with Vitest for functions and components
 - Test React components with Testing Library
 - Implement API integration tests
@@ -11,6 +53,8 @@ By the end of this chapter, you will be able to:
 - Measure and enforce code coverage
 
 ## 16.1 Testing Pyramid
+
+> **One-Sentence Takeaway:** Integration tests verify API endpoints against a real database with setup and teardown in lifecycle hooks.
 
 ![Testing Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/16-testing.png)
 
@@ -25,6 +69,8 @@ By the end of this chapter, you will be able to:
 ```
 
 ## 16.2 Unit Testing with Vitest
+
+> **One-Sentence Takeaway:** Playwright automates real browsers for end-to-end user flow testing.
 
 ```typescript
 // utils/format.test.ts
@@ -68,6 +114,8 @@ describe("truncate", () => {
 ```
 
 ## 16.3 React Component Testing
+
+> **One-Sentence Takeaway:** MSW mocks HTTP requests at the network level, enabling reliable, fast tests without a running backend.
 
 ```typescript
 // components/TaskCard.test.tsx
@@ -293,6 +341,104 @@ beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 ```
+
+
+> [!TIP]
+> Use `screen.getByRole()` as the primary Testing Library query — it best reflects how assistive technologies and real users find elements.
+
+> [!WARNING]
+> Testing implementation details (component state, internal methods, class names) creates brittle tests that break on refactoring. Test behavior, not implementation.
+
+> [!REMEMBER]
+> MSW intercepts at the network level, not the module level. This means your code runs exactly as it would in production, with no mocking framework leaks in your application code — unlike mocking fetch or axios directly.
+
+
+
+## Concept Comparison Table
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|Unit vs Integration Test|Tests isolated functions, no dependencies|Tests API endpoints with real database|
+|Vitest vs Jest|Faster, native Vite, ESM-native, better TypeScript|Slower, requires config for ESM|
+|Testing Library vs Enzyme|Behavior-focused, no implementation access|Implementation-focused, state/shallow access|
+|Playwright vs Cypress|Multi-browser, native ESM, network control|In-process, limited to Chromium|
+|MSW vs nock|Network-level, works in browser and Node|Module-level, Node only|
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|-----------|
+|Vitest API|`describe()`, `it()`, `expect()`, `vi.fn()`, `vi.mock()`, `beforeAll()`, `afterEach()`|
+|Testing Library|`render()`, `screen.getByRole()`, `.getByText()`, `.getByTestId()`, `fireEvent()`, `waitFor()`|
+|Playwright API|`page.goto()`, `.fill()`, `.click()`, `.locator()`, `expect().toBeVisible()`, `.toHaveURL()`|
+|MSW API|`http.get()`, `http.post()`, `HttpResponse.json()`, `setupServer()`, `server.listen()`|
+|Coverage|`--coverage` flag, `istanbul` reporter, coverage thresholds in vitest.config|
+
+## Cross-Application Matrix
+
+| Domain | Application | Benefit |
+|--------|------------|--------|
+|Todo App|Unit test utility functions, E2E test CRUD flow|Confidence in logic and user experience|
+|E-commerce|Integration test checkout API, E2E test purchase flow|Payment correctness and cart reliability|
+|Dashboard|Component tests for chart rendering, MSW for data|Visual and data correctness assurance|
+|Auth System|Unit test token logic, E2E test login/register flow|Critical auth flows fully validated|
+|API Service|Integration test all CRUD endpoints|API contract verified against real database|
+
+## Chapter Quiz
+
+Test your understanding with these quick questions.
+
+**Q1. What is the main advantage of MSW over mocking the fetch function directly?**
+
+- A) MSW is faster
+- B) MSW intercepts at the network level, so application code remains unmodified and tests run as in production
+- C) MSW requires less setup
+- D) MSW supports GraphQL
+
+<details><summary>Answer</summary>
+
+**B) MSW intercepts HTTP requests at the network level using Service Worker API (browser) or protocol-level interception (Node). Application code uses real fetch — no mocks leak into production code.**
+
+</details>
+
+**Q2. Why should tests use `getByRole` instead of `getByTestId`?**
+
+- A) `getByRole` is faster
+- B) `getByRole` queries elements by their accessible role, promoting inclusive design and testing real user interactions
+- C) `getByRole` does not require the element to be in the DOM
+- D) `getByTestId` is deprecated
+
+<details><summary>Answer</summary>
+
+**B) `getByRole` queries elements by their accessibility role, testing how assistive technologies and keyboard users experience the component. It also encourages adding proper ARIA roles.**
+
+</details>
+
+**Q3. What is the correct way to test a custom React hook?**
+
+- A) Render a component that uses the hook
+- B) Use `renderHook` from Testing Library, which creates a test component wrapper
+- C) Call the hook directly in the test
+- D) Mock the hook entirely
+
+<details><summary>Answer</summary>
+
+**B) `renderHook` from `@testing-library/react` creates a minimal wrapper component to test hooks in isolation, providing `result` and `act` for assertions and updates.**
+
+</details>
+
+**Q4. What is the purpose of the `describe` block in Vitest?**
+
+- A) To enable parallel execution
+- B) To group related tests for better organization and shared setup via `beforeEach`
+- C) To skip tests
+- D) To mark tests as slow
+
+<details><summary>Answer</summary>
+
+**B) `describe` blocks organize tests into logical groups, allowing shared `beforeAll`/`beforeEach` setup and producing cleaner test output with hierarchical naming.**
+
+</details>
 
 ## Summary
 

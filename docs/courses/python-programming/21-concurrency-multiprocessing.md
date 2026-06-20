@@ -1,5 +1,7 @@
 # Chapter 21: Concurrency, Multiprocessing & Parallelism
 
+
+> **Previous:** [NumPy and pandas](./20-numpy-pandas.md) | **Next:** None
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -12,7 +14,48 @@ After completing this chapter, you will be able to:
 
 ![Concurrency and Multiprocessing](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/21-concurrency-multiprocessing.png)
 
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+|21.1 The GIL Problem||The GIL prevents multiple threads from executing Python bytecode simultaneously on one core.|
+|21.2 Threading for I/O-bound Work||Threading works for I/O-bound tasks; multiprocessing is needed for CPU-bound work in pure Python.|
+|21.3 Multiprocessing for CPU-bound Work||`concurrent.futures` provides a uniform API: `ThreadPoolExecutor` and `ProcessPoolExecutor`.|
+|21.4 concurrent.futures High-Level API||joblib is optimised for ML parallelism with transparent batching and memmap for large arrays.|
+|21.5 joblib for ML Parallelism||NumPy releases the GIL for C-level operations; BLAS environment variables control CPU threading.|
+|21.6 Shared Memory vs Serialization||undefined|
+|21.7 NumPy/Pandas Parallelism||undefined|
+|21.8 Practical ML Patterns||undefined|
+|21.9 AsyncIO vs Threading vs Multiprocessing||undefined|
+
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    S0[The GIL Problem]
+    S1[Threading for I/O-bound Work]
+    S2[Multiprocessing for CPU-bound Work]
+    S3[concurrent.futures High-Level API]
+    S4[joblib for ML Parallelism]
+    S5[Shared Memory vs Serialization]
+    S6[NumPy/Pandas Parallelism]
+    S7[Practical ML Patterns]
+    S8[AsyncIO vs Threading vs Multiprocessing]
+    S0 --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+    S6 --> S7
+    S7 --> S8
+```
 ## 21.1 The GIL Problem
+
+> **One-Sentence Takeaway:** The GIL prevents multiple threads from executing Python bytecode simultaneously on one core.
+
 
 The Global Interpreter Lock (GIL) is a mutex in CPython that prevents multiple threads from executing Python bytecode simultaneously. It exists because CPython's memory management (reference counting) is not thread-safe.
 
@@ -63,6 +106,9 @@ def io_bound():
 Many blocking operations release the GIL internally: time.sleep(), read/write on sockets, file I/O, database drivers, NumPy C extensions.
 
 ## 21.2 Threading for I/O-bound Work
+
+> **One-Sentence Takeaway:** Threading works for I/O-bound tasks; multiprocessing is needed for CPU-bound work in pure Python.
+
 
 Threading excels when the program spends most of its time waiting on external resources.
 
@@ -157,6 +203,9 @@ assert len(results) == 50
 
 ## 21.3 Multiprocessing for CPU-bound Work
 
+> **One-Sentence Takeaway:** `concurrent.futures` provides a uniform API: `ThreadPoolExecutor` and `ProcessPoolExecutor`.
+
+
 Multiprocessing bypasses the GIL by spawning separate Python processes, each with its own interpreter and memory space.
 
 ### 21.3.1 ProcessPoolExecutor
@@ -224,6 +273,9 @@ with Pool() as p:
 ```
 
 ## 21.4 concurrent.futures High-Level API
+
+> **One-Sentence Takeaway:** joblib is optimised for ML parallelism with transparent batching and memmap for large arrays.
+
 
 The concurrent.futures module provides a uniform interface for both threading and multiprocessing.
 
@@ -294,6 +346,9 @@ with ThreadPoolExecutor() as ex:
 
 ## 21.5 joblib for ML Parallelism
 
+> **One-Sentence Takeaway:** NumPy releases the GIL for C-level operations; BLAS environment variables control CPU threading.
+
+
 joblib is the standard parallelism library in the scikit-learn ecosystem. It handles transparent process pooling, efficient data serialization (memmap), and caching.
 
 ### 21.5.1 Parallel and delayed
@@ -361,6 +416,9 @@ print(f"Global mean: {np.mean(results):.4f}")
 
 ## 21.6 Shared Memory vs Serialization
 
+> **One-Sentence Takeaway:** undefined
+
+
 ### 21.6.1 multiprocessing.shared_memory (Python 3.8+)
 
 ```python
@@ -407,6 +465,9 @@ Each call to ProcessPoolExecutor.map serializes arguments and return values via 
 
 ## 21.7 NumPy/Pandas Parallelism
 
+> **One-Sentence Takeaway:** undefined
+
+
 NumPy and many pandas operations release the GIL because they are implemented in C. This means they can benefit from threading -- but only if the underlying BLAS library is multi-threaded.
 
 ### 21.7.1 BLAS Threading
@@ -449,6 +510,9 @@ print(result)
 ```
 
 ## 21.8 Practical ML Patterns
+
+> **One-Sentence Takeaway:** undefined
+
 
 ### 21.8.1 Hyperparameter Tuning with Grid Search
 
@@ -565,6 +629,9 @@ print(f"Processed {len(final_df)} rows")
 
 ## 21.9 AsyncIO vs Threading vs Multiprocessing
 
+> **One-Sentence Takeaway:** undefined
+
+
 Python offers three concurrency models for different problems:
 
 ```python
@@ -594,6 +661,74 @@ print(f"Async: {time.perf_counter() - start:.2f}s")
 | threading | Moderate I/O, blocking calls | GIL released during blocking ops | Medium |
 | multiprocessing | CPU-bound computation | No GIL (separate processes) | High |
 | joblib | ML/NumPy parallelism | Combines all approaches | Medium |
+
+
+## Concept Comparison Table
+
+| Model | Best For | Memory |
+|---|---|---|
+| asyncio | Many concurrent I/O | Low |
+| threading | Moderate I/O, blocking | Medium |
+| multiprocessing | CPU-bound | High |
+| joblib | ML/NumPy parallelism | Medium |
+
+
+## Quick Reference
+
+```python
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+
+# I/O-bound
+with ThreadPoolExecutor(max_workers=10) as ex:
+    futures = [ex.submit(fetch, url) for url in urls]
+
+# CPU-bound
+with ProcessPoolExecutor(max_workers=4) as ex:
+    results = list(ex.map(is_prime, numbers))
+```
+
+## Cross-Application Matrix
+
+| Area | Application | Relevant Section |
+|------|-------------|------------------|
+|Data Science|Hyperparameter tuning with joblib|21.8|
+|Web Dev|Async fetch with ThreadPoolExecutor|21.2|
+|DevOps|Parallel log processing|21.3|
+|Automation|Batch inference pipelines|21.8|
+
+
+## Chapter Quiz
+
+**Q1.** What does the GIL prevent?
+- multi-threading entirely
+- parallel bytecode execution on one core **<-- Correct**
+- multiprocessing
+- file I/O
+
+**Q2.** When does threading help in Python?
+- CPU-bound tasks
+- I/O-bound tasks **<-- Correct**
+- both
+- neither
+
+**Q3.** What does ProcessPoolExecutor use?
+- threads
+- separate processes **<-- Correct**
+- coroutines
+- lightweight threads
+
+**Q4.** What is joblib optimised for?
+- web scraping
+- ML parallelism **<-- Correct**
+- file I/O
+- GUI apps
+
+**Q5.** What does BLAS_NUM_THREADS control?
+- thread pool size
+- BLAS CPU core count **<-- Correct**
+- memory limit
+- process count
+
 
 ## Summary
 

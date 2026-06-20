@@ -1,5 +1,7 @@
 # Chapter 16: Stacks and Queues
 
+> **Previous:** [Linked Lists](./15-linked-lists.md) | **Next:** [The C Standard Library](./17-standard-library.md)
+
 ## Learning Objectives
 
 - Implement a stack using both arrays and linked lists
@@ -8,6 +10,27 @@
 - Analyze the time complexity of stack and queue operations
 - Apply stacks and queues to practical problems
 
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Stack (LIFO) | Last-In-First-Out data structure | Push adds to top; pop removes from top — both O(1) |
+| Queue (FIFO) | First-In-First-Out data structure | Enqueue adds to rear; dequeue removes from front — both O(1) |
+| Array Implementation | Use an index pointer for the top/front | Handle wrap-around for circular queues |
+| Linked List Implementation | Push/pop at head for stack; enqueue at tail, dequeue at head for queue | Linked implementation avoids fixed-size limits |
+| Applications | Expression evaluation, BFS, undo/redo, print spooling | Choose the structure that matches your access pattern |
+
+
+```mermaid
+flowchart LR
+    A["16.1 Stack (LIFO)"] --> B["16.2 Queue (FIFO)"]
+    B --> C["16.3 Array-based Stack"]
+    C --> D["16.4 Linked Stack"]
+    D --> E["16.5 Queue Implementations"]
+    E --> F["16.6 Applications"]
+    F --> G["Summary & Exercises"]
+```
 ![C Stacks and Queues: LIFO and FIFO ADTs, Array and Linked-List Implementations](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-16-stacks-queues.png)
 
 ## 16.1 The Stack Abstract Data Type
@@ -209,6 +232,9 @@ Popped: 400
 Popped: 100
 ```
 
+> **One-Sentence Takeaway:** A stack provides O(1) push and pop operations following Last-In-First-Out order
+> **Warning:** Array-based stacks have a fixed capacity always check for overflow before pushing.
+
 ## 16.2 Stack Applications
 
 ### 16.2.1 Balanced Parentheses
@@ -370,6 +396,9 @@ A*(B+C-D)/E     -> ABC+D-*E/
 A^B*C           -> AB^C*
 ```
 
+
+> **One-Sentence Takeaway:** A queue is a FIFO data structure supporting enqueue and dequeue operations
+> **Pro Tip:** Stacks are ideal for expression evaluation backtracking and undo-redo implementations.
 ## 16.3 The Queue Abstract Data Type
 
 A queue is a first-in, first-out (FIFO) data structure.
@@ -572,6 +601,9 @@ Dequeued: 3
 Dequeued: 4
 ```
 
+
+> **One-Sentence Takeaway:** Array-based stacks use an index pointer for O(1) push and pop
+> **Warning:** Array-based stacks have a fixed capacity always check for overflow before pushing.
 ## 16.4 Queue Applications
 
 1. **BFS (Breadth-First Search)** in graphs
@@ -579,6 +611,65 @@ Dequeued: 4
 3. **Task scheduling** in operating systems
 4. **Buffering** â€” IO buffers, keyboard buffers
 5. **Breadth-first traversal** of trees
+
+## Concept Comparison Table
+
+| Operation | Stack (LIFO) | Queue (FIFO) |
+|-----------|--------------|--------------|
+| Insert | `push(x)` — at top | `enqueue(x)` — at rear |
+| Remove | `pop()` — from top | `dequeue()` — from front |
+| Peek | `top()` — top element | `front()` — front element |
+| Empty check | `is_empty()` | `is_empty()` |
+| Time complexity | O(1) for all operations | O(1) for all operations |
+| Memory | Array or linked list | Array (circular) or linked |
+
+## Quick Reference
+
+| Structure | Array Implementation | Linked Implementation |
+|-----------|---------------------|---------------------|
+| Stack push | `arr[++top] = val;` | `new->next = head; head = new;` |
+| Stack pop | `return arr[top--];` | `tmp = head; head = head->next; free(tmp);` |
+| Queue enqueue | `arr[rear = (rear+1)%N] = val;` | `tail->next = new; tail = new;` |
+| Queue dequeue | `val = arr[front]; front = (front+1)%N;` | `tmp = head; head = head->next; free(tmp);` |
+| Stack empty | `top == -1` | `head == NULL` |
+| Queue empty | `front == rear` (with wasted slot) | `head == NULL` |
+
+## Cross-Application Matrix
+
+| Application | Structure | Why |
+|-------------|-----------|-----|
+| Undo in editor | Stack | Push actions; pop to undo |
+| Browser back button | Stack | Push pages; pop to go back |
+| Print spooler | Queue | First come, first served |
+| BFS on graph | Queue | Level-order traversal |
+| Expression parsing | Stack | Convert/shunt infix to postfix |
+| CPU task scheduler | Queue | Round-robin (often circular) |
+
+## Chapter Quiz
+
+1. If you push 1, 2, 3 onto a stack then pop once, what value do you get?
+   A) 1
+   B) 2
+   C) 3
+   D) Error (stack empty)
+
+<details><summary>Answer</summary>**C)** LIFO means the last pushed (3) is the first popped.</details>
+
+2. What is the main advantage of a linked list queue over an array-based circular queue?
+   A) Faster access
+   B) No fixed maximum size
+   C) Less memory
+   D) Simpler implementation
+
+<details><summary>Answer</summary>**B)** Linked queues grow dynamically; array queues have a fixed capacity.</details>
+
+3. Which data structure is most appropriate for breadth-first search?
+   A) Stack
+   B) Queue
+   C) Array
+   D) Linked list
+
+<details><summary>Answer</summary>**B)** BFS explores nodes level by level — a queue provides the FIFO ordering needed.</details>
 
 ## Summary
 
@@ -614,3 +705,6 @@ Implement an **LRU (Least Recently Used) cache** using a combination of a doubly
 - If the item is not in the cache and the cache is full, evict the least recently used item (at the back) and insert the new item at the front.
 
 Operations: `int cache_get(int key)` and `void cache_put(int key, int value)`. For the hash map, you may use a simple array of key-indexed entries or implement a basic hash table with chaining. Demonstrate with a series of operations.
+
+> **One-Sentence Takeaway:** Linked stack implementations grow dynamically without fixed size limits
+> **Remember:** The system call stack uses the same LIFO principle as a stack data structure.

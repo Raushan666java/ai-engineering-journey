@@ -1,4 +1,6 @@
-# Chapter 5: Stacks
+﻿# Chapter 5: Stacks
+
+> **Previous:** [Chapter 4: Doubly Linked List](./04-doubly-linked-list.md) | **Next:** [Queues](./06-queues.md)
 
 ## Learning Objectives
 
@@ -7,11 +9,36 @@
 - Apply stacks to expression evaluation, parenthesis matching, and undo functionality.
 - Analyze the complexity of each stack operation.
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| LIFO Principle | Last-In-First-Out access order | Natural fit for undo and backtracking |
+| Array-Based Stack | Contiguous memory, dynamic resizing | Cache-friendly, O(1) amortized push/pop |
+| Linked-List Stack | Nodes with top pointer | No resizing overhead, consistent O(1) ops |
+| Expression Evaluation | Shunting-yard converts infix to postfix | Postfix eval uses one operand stack |
+| Parenthesis Matching | Push opens, pop and match on close | Single stack checks all bracket types |
+| Applications | Function calls, undo, DFS | Used in compilers, browsers, parsers |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Stack LIFO] --> B[Array vs Linked Implementation]
+    B --> C[Push / Pop / Top O(1)]
+    C --> D[Parenthesis Matching]
+    D --> E[Shunting-Yard: Infix to Postfix]
+    E --> F[Postfix Evaluation]
+    F --> G[Applications: DFS, Undo]
+```
+
 ## Theory
 
 ![Stacks, Queues and Deques](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch03-stacks-queues.png)
 
 ### Stack ADT
+
+> **Pro Tip:** Array-based stacks are cache-friendly and faster for most use cases; linked-list stacks avoid resizing but have higher per-element overhead.
 
 A stack is a linear data structure that supports two primary operations: **push** (insert at the top) and **pop** (remove from the top). The Last-In-First-Out (LIFO) discipline governs access.
 
@@ -32,6 +59,8 @@ A stack is a linear data structure that supports two primary operations: **push*
 - **Undo operations**: Maintain a history of states; pop the last state on undo.
 - **Function call stack**: Manage activation records for recursive calls.
 - **DFS traversal**: Implicitly via recursion or explicitly with a stack.
+
+> **One-Sentence Takeaway:** Stacks provide LIFO access with all operations O(1) - essential for parsing, undo, and depth-first search algorithms.
 
 ## Examples
 
@@ -305,7 +334,11 @@ int main() {
 Postfix: 23*54*+9- = 17
 ```
 
+> **One-Sentence Takeaway:** Master the stack through bracket matching and postfix evaluation - these are the most common stack problems in technical interviews.
+
 ## ðŸ’¡ Pro Tips
+
+> **Remember:** Stack overflow from deep recursion can be avoided by converting to an explicit iterative stack - this is critical for processing large datasets without crashing.
 
 - **Use a stack to detect balanced brackets**: Push opening brackets; pop and match on closing. If the stack isn't empty at the end, or the wrong bracket is on top â€” invalid.
 - **Postfix evaluation is stack's killer app**: Push operands; when you see an operator, pop two operands, apply, push result. One stack, no recursion, no parentheses needed.

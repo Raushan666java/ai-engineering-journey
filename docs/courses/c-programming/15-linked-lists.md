@@ -1,5 +1,7 @@
 # Chapter 15: Linked Lists
 
+> **Previous:** [Recursion](./14-recursion.md) | **Next:** [Stacks and Queues](./16-stacks-queues.md)
+
 ## Learning Objectives
 
 - Define self-referential structures for linked data structures
@@ -8,6 +10,27 @@
 - Implement circular linked lists
 - Understand the trade-offs between linked lists and arrays
 
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Node Structure | Each node contains data and a pointer to the next node | Define as `struct Node { int data; struct Node *next; };` |
+| Singly Linked List | Nodes linked in one direction (forward only) | Traversal is O(n); insert at head is O(1) |
+| Doubly Linked List | Each node has `prev` and `next` pointers | Bidirectional traversal; insert/delete anywhere is O(1) with the pointer |
+| Basic Operations | Insert, delete, search, traverse, reverse | Always update all relevant pointers and free removed nodes |
+| Circular Linked List | Last node points back to the head | Useful for round-robin scheduling and cyclic buffers |
+
+
+```mermaid
+flowchart LR
+    A["15.1 Node Structure"] --> B["15.2 Singly Linked List"]
+    B --> C["15.3 Basic Operations"]
+    C --> D["15.4 Doubly Linked List"]
+    D --> E["15.5 Circular Linked List"]
+    E --> F["15.6 Advantages & Limitations"]
+    F --> G["Summary & Exercises"]
+```
 ![C Linked Lists: Singly, Doubly, Circular, Operations and Complexity](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-15-linked-lists.png)
 
 ## 15.1 Node Structure
@@ -22,6 +45,8 @@ typedef struct node {
 ```
 
 The structure is **self-referential** because it contains a pointer to an instance of itself.
+
+> **One-Sentence Takeaway:** A linked list node is a self-referential struct containing data and a pointer to the next node
 
 ## 15.2 Singly Linked List
 
@@ -233,6 +258,11 @@ After deleting 20: 10 -> 30 -> 40 -> NULL
 After inserting 5 at front: 5 -> 10 -> 30 -> 40 -> NULL
 ```
 
+> **One-Sentence Takeaway:** Each node points only forward; traversal requires starting from the head each time
+
+
+> **Pro Tip:** Always use a temporary pointer when traversing: `struct Node *cur = head; while (cur) { ... cur = cur->next; }`. Never modify `head` directly or you lose the list.
+
 ## 15.3 Doubly Linked List
 
 A doubly linked list has pointers in both directions, enabling traversal forward and backward.
@@ -352,6 +382,9 @@ After deleting 30:
 Forward:  10 <-> 20 <-> 40 <-> NULL
 ```
 
+
+> **One-Sentence Takeaway:** Basic operations include insert delete search traverse and reverse
+> **Warning:** Deleting a node requires a pointer to the previous node to relink the list.
 ## 15.4 Circular Linked List
 
 In a circular linked list, the last node points back to the head.
@@ -418,6 +451,8 @@ int main(void)
 Circular list: 10 -> 40 -> 30 -> 20 -> (back to 10)
 ```
 
+
+> **One-Sentence Takeaway:** Doubly linked lists have prev and next pointers for bidirectional traversal
 ## 15.5 Linked List vs. Array
 
 | Operation | Array | Linked List |
@@ -431,6 +466,9 @@ Circular list: 10 -> 40 -> 30 -> 20 -> (back to 10)
 | Cache performance | Excellent (locality) | Poor (indirection) |
 | Size change | Difficult (may need realloc) | Trivial |
 
+
+> **One-Sentence Takeaway:** Circular linked lists connect the tail back to the head for cyclic iteration
+> **Remember:** Circular lists require explicit termination conditions to avoid infinite loops.
 ## 15.6 Common Operations â€” Complexity
 
 | Operation | Singly | Doubly | Circular |
@@ -443,6 +481,64 @@ Circular list: 10 -> 40 -> 30 -> 20 -> (back to 10)
 
 \* With tail pointer
 \** Traverse backward, not strictly a reversal
+
+## Concept Comparison Table
+
+| Feature | Singly Linked | Doubly Linked | Circular |
+|---------|---------------|---------------|----------|
+| Memory per node | 1 pointer + data | 2 pointers + data | 1 pointer + data |
+| Direction | Forward only | Forward + backward | Forward (or both) |
+| End marker | `NULL` in `next` | `NULL` in both | `next` = head |
+| Insert at head | O(1) | O(1) | O(1) |
+| Delete with pointer | O(n) to find prev | O(1) | O(n) or O(1) |
+| Reverse traversal | Impossible | O(1) per step | Requires full walk |
+
+## Quick Reference
+
+| Operation | Singly Linked List |
+|-----------|-------------------|
+| Create node | `struct Node *n = malloc(sizeof(*n)); n->data = val; n->next = NULL;` |
+| Insert at head | `n->next = head; head = n;` |
+| Delete after prev | `struct Node *tmp = prev->next; prev->next = tmp->next; free(tmp);` |
+| Search | `for (struct Node *c = head; c; c = c->next) if (c->data == val) ...` |
+| Reverse | Three-pointer technique: `prev/cur/next` slide pointers |
+| Free all | `while (head) { struct Node *t = head; head = head->next; free(t); }` |
+
+## Cross-Application Matrix
+
+| Application | List Type | Rationale |
+|-------------|-----------|-----------|
+| Undo buffer | Doubly linked | Forward/backward navigation |
+| Round-robin scheduler | Circular | Wrap to start automatically |
+| Music playlist | Circular doubly | Repeat + bidirectional skip |
+| Hash table buckets | Singly | Simple, minimal memory per node |
+| OS memory free list | Doubly or singly | Fast alloc/dealloc from head |
+
+## Chapter Quiz
+
+1. What is the time complexity of searching for a value in a singly linked list?
+   A) O(1)
+   B) O(log n)
+   C) O(n)
+   D) O(n²)
+
+<details><summary>Answer</summary>**C)** Search requires traversing from the head, potentially visiting all n nodes.</details>
+
+2. What advantage does a doubly linked list have over a singly linked list?
+   A) Less memory
+   B) O(1) deletion given a pointer to the node
+   C) Faster search
+   D) Smaller code
+
+<details><summary>Answer</summary>**B)** With a pointer to the node, the previous node is accessible via the `prev` pointer, enabling O(1) deletion.</details>
+
+3. How does a circular linked list know when the traversal is complete?
+   A) It never completes
+   B) When `current == head` on the second visit
+   C) When `current->next == NULL`
+   D) It uses a counter
+
+<details><summary>Answer</summary>**B)** Traversal is complete when the pointer returns to the head node.</details>
 
 ## Summary
 
@@ -482,3 +578,5 @@ Implement a **polynomial** using a linked list where each node stores a coeffici
 - `double poly_eval(const Poly *p, double x)` â€” evaluate using Horner's method.
 
 Test with `(3x^2 + 2x - 5) + (x^3 - 4x + 7)` and `(x + 1) * (x - 1)`.
+
+> **One-Sentence Takeaway:** Linked lists offer O(1) insertion and deletion but O(n) access and poor cache locality

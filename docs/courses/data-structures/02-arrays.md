@@ -1,4 +1,6 @@
-# Chapter 2: Arrays
+﻿# Chapter 2: Arrays
+
+> **Previous:** [Chapter 1: Complexity Analysis](./01-complexity.md) | **Next:** [Singly Linked List](./03-singly-linked-list.md)
 
 ## Learning Objectives
 
@@ -6,6 +8,30 @@
 - Implement insertion, deletion, and traversal on arrays.
 - Solve problems using the two-pointer technique.
 - Manipulate 2D arrays and matrices.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Static Arrays | Contiguous memory block, fixed size at allocation | Use when element count is known and constant |
+| Dynamic Arrays | Grows by doubling when capacity exhausted | Default choice for general-purpose sequential data |
+| Two-Pointer Technique | Two indices scan from opposite ends | Reduces pair-sum from O(n2) to O(n) on sorted arrays |
+| 2D Arrays / Matrices | Row-major or column-major storage | Row-major traversal is cache-friendly in C/C++ |
+| Prefix Sums | Precomputed running total for O(1) range queries | Essential for repeated subarray-sum problems |
+| Sliding Window | Expand/contract window over contiguous elements | Solves max subarray and substring problems in O(n) |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Array Concepts] --> B[Static vs Dynamic]
+    B --> C[Basic Ops: Access, Insert, Delete]
+    C --> D[Multi-dimensional Arrays]
+    D --> E[Two-Pointer Technique]
+    E --> F[Sliding Window]
+    F --> G[Prefix Sums and Kadane]
+    G --> H[Matrix Operations]
+```
 
 ## Theory
 
@@ -27,11 +53,17 @@ A static array is a contiguous block of memory holding elements of the same type
 
 ### Dynamic Arrays
 
+> **Pro Tip:** Dynamic arrays like std::vector achieve amortized O(1) push_back by doubling capacity - the rare resize cost is spread across all insertions.
+
 A dynamic array (e.g., `std::vector`) doubles its capacity when full. The amortized cost of an insertion at the end is \( O(1) \), though an individual insertion may trigger an \( O(n) \) resize.
 
 ### Two-Dimensional Arrays
 
+> **Warning:** Cache performance degrades dramatically when traversing a 2D array column-first. The CPU prefetcher expects sequential memory access; column-major traversal causes cache misses that can slow access by 10-100x.
+
 A 2D array is stored in row-major order (C/C++ convention): the entire first row occupies contiguous memory, followed by the second row, etc. Element `a[i][j]` is at address `base + (i * cols + j) * sizeof(T)`.
+
+> **One-Sentence Takeaway:** Arrays guarantee O(1) random access via contiguous memory but incur O(n) cost for insertions and deletions in the middle due to element shifting.
 
 ## Examples
 
@@ -233,7 +265,11 @@ Transposed:
 ## ðŸ’¡ Pro Tips
 
 - **Prefer `std::vector` over raw arrays**: C++ vectors provide dynamic resizing, bounds checking in debug mode, and STL algorithm compatibility. Raw arrays are error-prone and inflexible.
-- **Cache-friendly traversal**: Iterate 2D arrays in row-major order (outer loop = row, inner loop = column). Column-major traversal causes cache misses that can slow access by 10â€“100Ã—.
+- > **Remember:** Row-major vs column-major traversal order can make a 10x performance difference on large 2D arrays due to CPU cache line behavior.
+
+> **Remember:** Row-major vs column-major traversal order can make a 10x performance difference on large 2D arrays due to CPU cache line behavior.
+
+**Cache-friendly traversal**: Iterate 2D arrays in row-major order (outer loop = row, inner loop = column). Column-major traversal causes cache misses that can slow access by 10â€“100Ã—.
 - **Two-pointer is your secret weapon**: For sorted arrays, two pointers from opposite ends can solve pair-sum, triplet, and container-with-most-water problems in \(O(n)\) instead of \(O(n^2)\).
 - **Prefix sums turn range queries into \(O(1)\)**: Precompute prefix sums once (\(O(n)\)), then any subarray sum is `prefix[r] - prefix[l-1]`.
 

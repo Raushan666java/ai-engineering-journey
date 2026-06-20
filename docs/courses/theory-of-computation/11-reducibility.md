@@ -1,5 +1,9 @@
 # Chapter 11: Reducibility and Advanced Undecidability
 
+> **Previous:** [Decidability](./10-decidability.md) | **Next:** [Time Complexity](./12-time-complexity.md)
+
+
+
 ## Learning Objectives
 
 - Define and apply mapping reductions (many-one reductions).
@@ -9,6 +13,29 @@
 - Prove undecidability of problems from formal language theory.
 - Understand the concept of completeness within RE.
 - Recognize the limitations of automated verification.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Mapping Reduction | Computable f: w ∈ A iff f(w) ∈ B | Primary undecidability proof tool |
+| Rice's Theorem | Any non-trivial TM language property undecidable | Most TM problems are undecidable |
+| Turing Reduction | Oracle-based more general than mapping | Allows multiple queries |
+| PCP | Combinatorial undecidable problem | Undecidability outside TMs |
+| RE-Completeness | A_TM is canonical RE-complete problem | Hardest problems in RE |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[Mapping Reductions] --> B[Rice Theorem]
+    B --> C[Turing Reductions]
+    C --> D[PCP]
+    D --> E[Undecidable Language Problems]
+    E --> F[RE-Completeness]
+```
 
 ## Theory
 
@@ -174,6 +201,89 @@ Given PCP instance with dominoes (tâ‚,bâ‚), â€¦, (tâ‚–,bâ‚
 Where Táµ¢ and Báµ¢ are "marker" variables.
 
 The idea: T generates sequences of top strings; B generates sequences of bottom strings. The grammar is ambiguous for some string iff the same sequence of dominoes (indices) can generate it from both T and B â€” i.e., there's a PCP solution.
+
+
+
+## Concept Comparison Table
+| Reduction Type | Definition | Power |
+|---------------|------------|-------|
+| Mapping (≤_m) | Computable f: w∈A iff f(w)∈B | Preserves RE |
+| Turing (≤_T) | Oracle TM decides A with B oracle | More general |
+
+## Quick Reference
+| Problem | Status | Proof Method |
+|---------|--------|-------------|
+| A_TM | Undecidable, RE | Diagonalization |
+| HALT_TM | Undecidable, RE | Reduction from A_TM |
+| EMPTY_TM | Undecidable, not RE | Reduction from co-A_TM |
+| EQ_TM | Undecidable, not RE | Reduction from EMPTY_TM |
+| PCP | Undecidable, RE | Reduction from A_TM |
+
+## Cross-Application Matrix
+| Domain | Reducibility Concept |
+|--------|---------------------|
+| Software engineering | Problem hardness classification |
+| Algorithms | Problem transformation techniques |
+| AI | Planning problem hardness |
+| Cryptography | Security reduction proofs |
+| Database | Query equivalence undecidability |
+
+## Chapter Quiz
+
+**Q1.** A mapping reduction f must be:
+- A) Computable ✓
+- B) Polynomial-time
+- C) One-to-one
+- D) Onto
+
+<details>
+<summary>Answer</summary>
+**A)** A mapping reduction is any computable function such that w ∈ A iff f(w) ∈ B.
+</details>
+
+**Q2.** If A ≤_m B and B is RE, then:
+- A) A is RE ✓
+- B) A is recursive
+- C) A is not RE
+- D) B is recursive
+
+<details>
+<summary>Answer</summary>
+**A)** Mapping reductions preserve RE: if B is recognizable, so is A.
+</details>
+
+**Q3.** Rice's theorem proves undecidability of:
+- A) All TM problems
+- B) Non-trivial language properties ✓
+- C) Only syntactic properties
+- D) Only trivial properties
+
+<details>
+<summary>Answer</summary>
+**B)** Any non-trivial semantic property (about L(M)) is undecidable. Syntactic properties may be decidable.
+</details>
+
+**Q4.** PCP is important because it's:
+- A) Decidable
+- B) A combinatorial undecidable problem ✓
+- C) In P
+- D) About DFAs
+
+<details>
+<summary>Answer</summary>
+**B)** PCP is undecidable but purely combinatorial — no TMs in its statement.
+</details>
+
+**Q5.** The Busy Beaver function BB(n) is:
+- A) Computable
+- B) Not computable ✓
+- C) Polynomial
+- D) Linear
+
+<details>
+<summary>Answer</summary>
+**B)** BB(n) grows faster than any computable function — computing it would solve the halting problem.
+</details>
 
 ## Summary
 

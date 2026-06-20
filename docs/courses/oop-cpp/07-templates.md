@@ -1,5 +1,7 @@
 # Chapter 7: Templates
 
+> **Previous:** [06-operator-overloading](./06-operator-overloading.md) | **Next:** [08-exceptions](./08-exceptions.md)
+
 ## Learning Objectives
 
 After studying this chapter, students will be able to:
@@ -9,6 +11,28 @@ After studying this chapter, students will be able to:
 - Apply template specialisation for type-specific behaviour
 - Use variadic templates for type-safe heterogeneous parameter packs
 - Recognise SFINAE and its role in overload resolution
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Function Templates** | Type-agnostic functions using template parameters | Write once, use with any type that supports the operations |
+| **Class Templates** | Type-parameterised classes | `std::vector<T>` is the canonical example |
+| **Template Instantiation** | Compiler generates concrete code for each type used | Each instantiation is a separate type |
+| **Template Specialisation** | Provide type-specific implementations | Use for optimisations or when generic version fails |
+| **Variadic Templates** | Accept any number of type parameters | Enable perfect forwarding and tuple-like types |
+| **SFINAE** | Substitution Failure Is Not An Error | Compile-time type introspection mechanism |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Function Templates] --> B[Class Templates]
+    B --> C[Template Instantiation]
+    C --> D[Specialisation]
+    D --> E[Variadic Templates]
+    E --> F[SFINAE]
+```
 
 ## 7.1 Motivation
 
@@ -37,6 +61,8 @@ int main() {
 
 ## 7.2 Function Templates
 
+> **One-Sentence Takeaway:** Function templates let you write type-agnostic code — the compiler generates a concrete function for each type you use.
+
 A function template is not a function but a blueprint from which the compiler generates functions through *instantiation*. The template parameter can be deduced from the arguments or specified explicitly:
 
 ```cpp
@@ -54,6 +80,8 @@ int main() {
 
 Template parameters need not be types. Non-type template parameters accept compile-time constant values:
 
+> **Pro Tip:** Use non-type template parameters (like `size_t N`) for compile-time dimensions — this shifts bounds checking from runtime to compile time with zero overhead.
+
 ```cpp
 template <typename T, size_t N>
 class FixedArray {
@@ -66,6 +94,8 @@ public:
 ```
 
 ## 7.3 Class Templates
+
+> **One-Sentence Takeaway:** Class templates parameterise both data members and member functions — `std::vector<T>` and `std::array<T, N>` are canonical examples.
 
 Class templates enable generic container types:
 
@@ -109,7 +139,11 @@ void Stack<T>::push(const T& value) {
 
 ## 7.4 Template Specialisation
 
+> **One-Sentence Takeaway:** Specialisation lets you provide a custom implementation for a specific type while keeping the generic version for all others.
+
 Specialisation allows providing a different implementation for a specific type:
+
+> **Warning:** Partial specialisation works for class templates but NOT for function templates — use overloading instead.
 
 ```cpp
 // Primary template
@@ -141,6 +175,8 @@ std::string to_string(const std::string& value) {
 ```
 
 ## 7.5 Variadic Templates
+
+> **One-Sentence Takeaway:** Variadic templates accept any number of type parameters — they are the foundation of perfect forwarding and tuple-like types.
 
 Variadic templates (C++11) accept an arbitrary number of template arguments:
 
@@ -182,6 +218,8 @@ Four fold forms exist:
 - `(args + ... + 0)` â€” binary right fold
 
 ## 7.6 SFINAE
+
+> **One-Sentence Takeaway:** Substitution Failure Is Not An Error — when template substitution produces invalid code, the compiler silently removes that candidate instead of failing.
 
 Substitution Failure Is Not An Error (SFINAE) is a principle: when substituting template arguments for a function template produces an invalid type or expression, the compiler removes that candidate from overload resolution rather than emitting an error.
 
@@ -228,6 +266,75 @@ auto half(T value) {
     }
 }
 ```
+
+## Concept Comparison Table
+
+| Feature | Syntax | Use Case | Limitation |
+|---------|--------|----------|------------|
+| Function Template | `template <typename T> T max(T a, T b)` | Type-agnostic algorithms | Must compile for all types used |
+| Class Template | `template <typename T> class C {}` | Generic containers | Each instantiation separate code |
+| Full Specialisation | `template <> class C<int> {}` | Type-specific optimisation | Must provide complete reimplementation |
+| Partial Specialisation | `template <typename T> class C<T*> {}` | Match a family of types | Only for class templates |
+| Variadic Template | `template <typename... Ts>` | Arbitrary number of args | Recursive instantiation complexity |
+| SFINAE | `enable_if<condition>` | Compile-time introspection | Hard to debug |
+
+## Quick Reference
+
+| Construct | Syntax | Notes |
+|-----------|--------|-------|
+| Template declaration | `template <typename T>` | `typename` and `class` interchangeable |
+| Function template | `T max(T a, T b)` | T deduced from arguments |
+| Class template | `vector<T>` | Must specify T at instantiation |
+| Variadic | `template <typename... Ts>` | Expand with `Ts...` |
+| Fold expr (C++17) | `(op ...)` | Reduces recursive instantiation |
+| SFINAE | `std::enable_if_t<condition, T>` | Replaced by Concepts in C++20 |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Containers** | `vector<T>`, `list<T>`, `map<K,V>` — all class templates |
+| **Algorithms** | `sort(begin, end)`, `find_if` — function templates |
+| **Math Libraries** | `complex<T>`, `valarray<T>` — type-parameterised numeric types |
+| **Serialisation** | Template `serialize<T>` for trivially-copyable types |
+| **Smart Pointers** | `unique_ptr<T>`, `shared_ptr<T>` with custom deleters |
+
+## Chapter Quiz
+
+1. What does the compiler do when you call `max(3, 7)` with a function template?
+   A) Creates one version for all ints
+   B) Instantiates `int max(int, int)` concretely
+   C) Creates a vtable entry
+   D) Links to a precompiled version
+   <details><summary>Answer</summary>**B)** The compiler generates a concrete instantiation with T = int.</details>
+
+2. What problem do concepts (C++20) solve?
+   A) Runtime performance of templates
+   B) Inscrutable template error messages
+   C) Binary size bloat
+   D) Code duplication across TUs
+   <details><summary>Answer</summary>**B)** Concepts replace SFINAE with readable requirements and clear errors.</details>
+
+3. Partial specialisation is allowed for:
+   A) Function templates only
+   B) Class templates only
+   C) Both
+   D) Neither
+   <details><summary>Answer</summary>**B)** Only class templates can be partially specialised.</details>
+
+4. When is a template instantiated?
+   A) When defined
+   B) When used with a specific type
+   C) When program starts
+   D) When linker sees it
+   <details><summary>Answer</summary>**B)** Templates are blueprints — no code until instantiation.</details>
+
+5. SFINAE stands for:
+   A) Standard Function Inlining and Name Evaluation
+   B) Substitution Failure Is Not An Error
+   C) Static Function Instantiation and Name Encoding
+   D) Standard Function Instantiation with Non-type Arguments
+   <details><summary>Answer</summary>**B)** Invalid template substitutions are silently removed from overload resolution.</details>
 
 ## 7.7 Summary
 

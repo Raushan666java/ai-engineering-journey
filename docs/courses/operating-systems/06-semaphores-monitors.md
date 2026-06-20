@@ -1,5 +1,10 @@
 # Chapter 6: Semaphores & Monitors
 
+**<< [Process Synchronization](./05-synchronization.md)** | [**Next: Deadlocks**](./07-deadlocks.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Solve the bounded-buffer (producer-consumer) problem with semaphores
@@ -8,6 +13,27 @@
 - Explain monitors as a high-level synchronization construct
 - Use condition variables to implement complex synchronization patterns
 - Compare semaphore-based and monitor-based solutions
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Semaphore** | Integer variable accessed only via `wait()` and `signal()` operations |
+| **Binary Semaphore** | Semaphore with values 0 and 1; behaves like a mutex |
+| **Counting Semaphore** | Semaphore with integer range; controls access to multiple resources |
+| **Monitor** | High-level synchronization construct with condition variables |
+| **Classic Problems** | Bounded Buffer, Readers-Writers, Dining Philosophers |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Semaphore Concept] --> B[Binary & Counting Semaphores]
+    B --> C[Implementation with busy-waiting / blocking]
+    C --> D[Classic Synchronization Problems]
+    D --> E[Monitors & Condition Variables]
+    E --> F[Monitor-based Problem Solutions]
+    F --> G[Summary]
+</div>
 
 ## Theory
 
@@ -452,6 +478,65 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> A **binary semaphore** can be used as a mutex, but they are conceptually different: a mutex has ownership (only the locking thread can unlock), while a binary semaphore can be signaled by any thread.
+
+> [WARNING]
+> Semaphores are prone to **programming errors**: forgetting `signal()` causes deadlock, forgetting `wait()` violates mutual exclusion. Monitors are safer because the compiler enforces correct usage patterns.
+
+> [NOTE]
+> The **Dining Philosophers** problem illustrates the risk of deadlock and starvation. A simple fix: make philosophers pick up both forks atomically, or have an odd/even picking order.
+
+## Concept Comparison
+
+| Feature | Semaphore | Monitor |
+|-------|---------|-------|
+| Primitive | Low-level (integer + wait/signal) | High-level (class with condition variables) |
+| Error-prone? | Yes (easy to forget signal/wait) | Less (compiler enforces structure) |
+| Distributed? | No (shared memory needed) | No (shared memory needed) |
+| Condition Variables | Manual implementation | Built-in (wait/signal on condition) |
+| Popularity | Used in OS kernels | Used in concurrent programming languages |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Semaphore S** | Integer variable accessed via `wait(S)` and `signal(S)` |
+| **Binary Semaphore** | Semaphore with values 0 or 1 |
+| **Counting Semaphore** | Semaphore with integer range >= 0 |
+| **Monitor** | Abstract data type with mutual exclusion + condition variables |
+| **Condition Variable** | Queue of threads waiting for a specific condition |
+| **Bounded Buffer** | Producer-consumer with finite shared buffer |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Bounded Buffer | Producer-consumer, message queues | Full/empty semaphores + mutex | wait(notFull)/wait(notEmpty) |
+| Readers-Writers | Database access, file sharing | Reader count + mutex + write sem | startRead()/startWrite() |
+| Dining Philosophers | Resource allocation, deadlock demo | Fork semaphores | State array + condition vars |
+
+## Chapter Quiz
+
+1. Key difference between binary semaphore and mutex?
+   - a) Semaphores are faster
+   - b) Mutex has ownership -- only locking thread can unlock
+   - c) Mutex can be binary only
+   - d) There is no difference
+
+2. Forgetting `signal()` on a semaphore leads to:
+   - a) Race condition
+   - b) Deadlock
+   - c) Starvation
+   - d) Livelock
+
+3. Which construct provides compiler-enforced structure?
+   - a) Spinlock
+   - b) Monitor
+   - c) Test-and-set
+   - d) Barrier
 
 ## Summary
 

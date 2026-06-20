@@ -1,5 +1,7 @@
 # Chapter 14: Magic Methods
 
+
+> **Previous:** [Inheritance and Polymorphism](./13-inheritance.md) | **Next:** [Decorators](./15-decorators.md)
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -12,7 +14,51 @@ By the end of this chapter, students will be able to:
 
 ![Magic Methods](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/14-magic-methods.png)
 
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+|14.1 Introduction||Magic methods (dunder methods) hook objects into Python language behaviours.|
+|14.2 __str__ and __repr__||`__repr__` is for developers (unambiguous); `__str__` is for users (readable via print()).|
+|14.3 __eq__ and __hash__||Override `__eq__` and `__hash__` together — if `__eq__` changes, `__hash__` must change too.|
+|14.4 __lt__, __le__, __gt__, __ge__||`__enter__`/`__exit__` implement context managers; `@contextmanager` offers a generator-based alternative.|
+|14.5 __getitem__, __setitem__, __delitem__||`__call__` makes objects callable; `__getitem__`/`__setitem__` make them subscriptable.|
+|14.6 __call__||undefined|
+|14.7 __enter__ and __exit__ (Context Managers)||undefined|
+|14.8 __iter__ and __next__||undefined|
+|14.9 __len__ and __bool__||undefined|
+|14.10 __add__, __sub__, __mul__, and Arithmetic||undefined|
+
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    S0[Introduction]
+    S1[__str__ and __repr__]
+    S2[__eq__ and __hash__]
+    S3[__lt__, __le__, __gt__, __ge__]
+    S4[__getitem__, __setitem__, __delitem__]
+    S5[__call__]
+    S6[__enter__ and __exit__ (Context Managers)]
+    S7[__iter__ and __next__]
+    S8[__len__ and __bool__]
+    S9[__add__, __sub__, __mul__, and Arithmetic]
+    S0 --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+    S6 --> S7
+    S7 --> S8
+    S8 --> S9
+```
 ## 14.1 Introduction
+
+> **One-Sentence Takeaway:** Magic methods (dunder methods) hook objects into Python language behaviours.
+
 
 Magic methods (dunder methods) are special methods with double underscores that allow objects to define Python language behaviours. They are not meant to be called directly â€” Python calls them implicitly.
 
@@ -36,6 +82,9 @@ print(p)         # (3, 4)       â€” calls __str__
 
 ## 14.2 __str__ and __repr__
 
+> **One-Sentence Takeaway:** `__repr__` is for developers (unambiguous); `__str__` is for users (readable via print()).
+
+
 `__repr__` is for developers (unambiguous, used in debugging). `__str__` is for users (readable, used by `print()`):
 
 ```python
@@ -58,6 +107,9 @@ print(f)                     # 3/4  (uses __str__)
 If `__str__` is not defined, Python falls back to `__repr__`.
 
 ## 14.3 __eq__ and __hash__
+
+> **One-Sentence Takeaway:** Override `__eq__` and `__hash__` together — if `__eq__` changes, `__hash__` must change too.
+
 
 `__eq__` defines equality. `__hash__` makes an object usable as a dict key or set member:
 
@@ -97,6 +149,9 @@ print(registry[p2])   # "active" (same hash, same equality)
 **Rule**: if you define `__eq__`, define `__hash__`. If `__eq__` is defined but `__hash__` is not, the object becomes unhashable (can't be used in sets or as dict keys). If a class defines `__eq__` but not `__hash__`, `__hash__` is set to `None`.
 
 ## 14.4 __lt__, __le__, __gt__, __ge__
+
+> **One-Sentence Takeaway:** `__enter__`/`__exit__` implement context managers; `@contextmanager` offers a generator-based alternative.
+
 
 Define ordering for sorting and comparison:
 
@@ -156,6 +211,9 @@ print(s2 >= s1)  # True
 
 ## 14.5 __getitem__, __setitem__, __delitem__
 
+> **One-Sentence Takeaway:** `__call__` makes objects callable; `__getitem__`/`__setitem__` make them subscriptable.
+
+
 Make objects subscriptable:
 
 ```python
@@ -188,6 +246,9 @@ del d["name"]           # __delitem__
 
 ## 14.6 __call__
 
+> **One-Sentence Takeaway:** undefined
+
+
 Make objects callable like functions:
 
 ```python
@@ -218,6 +279,9 @@ print(counter())   # 3
 ```
 
 ## 14.7 __enter__ and __exit__ (Context Managers)
+
+> **One-Sentence Takeaway:** undefined
+
 
 Context managers handle setup and teardown automatically with the `with` statement:
 
@@ -262,6 +326,9 @@ with managed_file("test.txt") as f:
 
 ## 14.8 __iter__ and __next__
 
+> **One-Sentence Takeaway:** undefined
+
+
 Make objects iterable:
 
 ```python
@@ -302,6 +369,9 @@ print(list(s))   # [0, 1, 4, 9, 16]  (fresh iterator each time)
 
 ## 14.9 __len__ and __bool__
 
+> **One-Sentence Takeaway:** undefined
+
+
 ```python
 class Team:
     def __init__(self, members: list[str]):
@@ -325,6 +395,9 @@ print(bool(empty))      # False
 If `__bool__` is not defined, Python falls back to `__len__` (truthy if length > 0).
 
 ## 14.10 __add__, __sub__, __mul__, and Arithmetic
+
+> **One-Sentence Takeaway:** undefined
+
 
 ```python
 class Vector:
@@ -361,6 +434,71 @@ print(abs(v1))    # 5.0
 ```
 
 **Reflected operators** (`__radd__`, `__rsub__`, etc.) are called when the left operand does not support the operation.
+
+
+## Concept Comparison Table
+
+| Method | Purpose | Trigger |
+|---|---|---|
+| __init__ | Constructor | ClassName() |
+| __str__ | User-friendly string | print(), str() |
+| __repr__ | Developer-friendly string | repr(), debug |
+| __call__ | Callable objects | obj() |
+| __enter__/__exit__ | Context manager | with statement |
+
+
+## Quick Reference
+
+```python
+class Point:
+    def __init__(self, x, y): self.x=x; self.y=y
+    def __repr__(self): return f"Point({self.x},{self.y})"
+    def __add__(self, o): return Point(self.x+o.x, self.y+o.y)
+    def __eq__(self, o): return self.x==o.x and self.y==o.y
+```
+
+## Cross-Application Matrix
+
+| Area | Application | Relevant Section |
+|------|-------------|------------------|
+|Web Dev|Context managers for DB connections|14.7|
+|Data Science|Callable models with __call__|14.6|
+|DevOps|Custom iterable configuration parsers|14.8|
+|Automation|Comparable version objects with __lt__|14.4|
+
+
+## Chapter Quiz
+
+**Q1.** What is the difference between __str__ and __repr__?
+- no difference
+- __str__ for users, __repr__ for devs **<-- Correct**
+- __str__ for devs, __repr__ for users
+- both are for debugging
+
+**Q2.** What must you do when overriding __eq__?
+- also override __hash__ **<-- Correct**
+- also override __str__
+- call super().__eq__
+- nothing
+
+**Q3.** What does __enter__ return?
+- None
+- the context manager itself
+- any object bound to "as" **<-- Correct**
+- True/False
+
+**Q4.** What does __call__ do?
+- creates instances
+- makes instances callable **<-- Correct**
+- deletes attributes
+- iterates over items
+
+**Q5.** What @total_ordering generates?
+- all comparison methods **<-- Correct**
+- __init__ and __repr__
+- __hash__ only
+- getter/setter
+
 
 ## Summary
 

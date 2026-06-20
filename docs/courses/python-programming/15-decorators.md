@@ -1,5 +1,7 @@
 # Chapter 15: Decorators
 
+
+> **Previous:** [Magic Methods](./14-magic-methods.md) | **Next:** [Generators and itertools](./16-generators.md)
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -12,7 +14,45 @@ By the end of this chapter, students will be able to:
 
 ![Decorator Pattern](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/15-decorators.png)
 
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+|15.1 Function Decorators||A decorator wraps a function to extend behaviour without modifying its source.|
+|15.2 Decorators with Arguments||The wrapper must accept `*args, **kwargs` and forward them to the wrapped function.|
+|15.3 functools.wraps||Always use `@functools.wraps` to preserve `__name__`, `__doc__`, and other metadata.|
+|15.4 Common Decorator Patterns||Decorator factories take arguments and return the actual decorator.|
+|15.5 Decorator Factories||Multiple decorators stack bottom-up: `@a @b` applies `a(b(func))`.|
+|15.6 Multiple Decorators||undefined|
+|15.7 Class Decorators||undefined|
+|15.8 Decorators with Optional Arguments||undefined|
+
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    S0[Function Decorators]
+    S1[Decorators with Arguments]
+    S2[functools.wraps]
+    S3[Common Decorator Patterns]
+    S4[Decorator Factories]
+    S5[Multiple Decorators]
+    S6[Class Decorators]
+    S7[Decorators with Optional Arguments]
+    S0 --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+    S6 --> S7
+```
 ## 15.1 Function Decorators
+
+> **One-Sentence Takeaway:** A decorator wraps a function to extend behaviour without modifying its source.
+
 
 A decorator is a function that takes another function and extends its behaviour without modifying it:
 
@@ -44,6 +84,9 @@ say_hello = simple_decorator(say_hello)
 ```
 
 ## 15.2 Decorators with Arguments
+
+> **One-Sentence Takeaway:** The wrapper must accept `*args, **kwargs` and forward them to the wrapped function.
+
 
 When the wrapped function takes arguments, the wrapper must accept and forward them:
 
@@ -77,6 +120,9 @@ print(greet("Alice", greeting="Hi"))
 
 ## 15.3 functools.wraps
 
+> **One-Sentence Takeaway:** Always use `@functools.wraps` to preserve `__name__`, `__doc__`, and other metadata.
+
+
 `@wraps` preserves the original function's metadata (`__name__`, `__doc__`, `__module__`, etc.):
 
 ```python
@@ -101,6 +147,9 @@ print(add.__doc__)   # 'Add two numbers.' (would be None without @wraps)
 Always use `@wraps` when writing decorators.
 
 ## 15.4 Common Decorator Patterns
+
+> **One-Sentence Takeaway:** Decorator factories take arguments and return the actual decorator.
+
 
 ### 15.4.1 Timer
 
@@ -218,6 +267,9 @@ print(unstable_network_call("http://example.com"))
 
 ## 15.5 Decorator Factories
 
+> **One-Sentence Takeaway:** Multiple decorators stack bottom-up: `@a @b` applies `a(b(func))`.
+
+
 A decorator factory takes arguments and returns a decorator:
 
 ```python
@@ -251,6 +303,9 @@ get_time = repeat(3)(get_time)
 
 ## 15.6 Multiple Decorators
 
+> **One-Sentence Takeaway:** undefined
+
+
 Decorators stack bottom-up (the one closest to the function applies first):
 
 ```python
@@ -281,6 +336,9 @@ def compute(x: int) -> int:
 This differs because `timer` wraps first, then `debug` wraps the timed version.
 
 ## 15.7 Class Decorators
+
+> **One-Sentence Takeaway:** undefined
+
 
 Decorators can also modify classes:
 
@@ -327,6 +385,9 @@ print(db1 is db2)  # True
 
 ## 15.8 Decorators with Optional Arguments
 
+> **One-Sentence Takeaway:** undefined
+
+
 Support both `@decorator` and `@decorator(args)` syntax:
 
 ```python
@@ -349,6 +410,76 @@ def simple(): pass
 @log(prefix="INFO")
 def detailed(): pass
 ```
+
+
+## Concept Comparison Table
+
+| Pattern | Purpose | Key Detail |
+|---|---|---|
+| @timer | Measure execution time | Uses time.perf_counter |
+| @debug | Log calls and returns | Prints args/kwargs/result |
+| @cache | Memoize results | Dict keyed on args |
+| @retry | Retry on failure | Backoff between attempts |
+
+
+## Quick Reference
+
+```python
+from functools import wraps
+
+def timer(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        import time
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        print(f"{func.__name__}: {time.perf_counter()-start:.3f}s")
+        return result
+    return wrapper
+```
+
+## Cross-Application Matrix
+
+| Area | Application | Relevant Section |
+|------|-------------|------------------|
+|Web Dev|Route decorators in Flask/FastAPI|15.1|
+|Data Science|Cache expensive computations|15.4|
+|DevOps|Retry decorator for API calls|15.4|
+|Automation|Logging decorator for task pipelines|15.4|
+
+
+## Chapter Quiz
+
+**Q1.** What is a decorator in Python?
+- a class that inherits from another
+- a function that wraps another function **<-- Correct**
+- a lambda expression
+- a type annotation
+
+**Q2.** Why use @functools.wraps?
+- to add metadata
+- to preserve __name__ and __doc__ **<-- Correct**
+- to improve performance
+- to enable recursion
+
+**Q3.** How do multiple decorators stack?
+- top-down
+- bottom-up **<-- Correct**
+- in order of definition
+- randomly
+
+**Q4.** What does a decorator factory return?
+- a wrapped function
+- a decorator **<-- Correct**
+- a class
+- a lambda
+
+**Q5.** What does @timer decorator typically measure?
+- memory usage
+- execution time **<-- Correct**
+- CPU usage
+- network latency
+
 
 ## Summary
 

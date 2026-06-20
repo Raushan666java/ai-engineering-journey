@@ -1,4 +1,6 @@
-# Chapter 9: STL Containers
+﻿# Chapter 9: STL Containers
+
+> **Previous:** [08-exceptions](./08-exceptions.md) | **Next:** [10-stl-algorithms](./10-stl-algorithms.md)
 
 ## Learning Objectives
 
@@ -9,6 +11,27 @@ After studying this chapter, students will be able to:
 - Use associative containers: map, set, unordered_map
 - Use container adaptors: stack, queue, priority_queue
 - Understand iterator invalidation rules
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Container Taxonomy** | Sequence, associative, unordered categories | Match container choice to access patterns |
+| **std::vector** | Contiguous storage, O(1) index access | Reserve capacity when final size is known |
+| **std::list** | Doubly-linked, O(1) insert at known position | Prefer vector unless you have measured |
+| **std::deque** | Double-ended, O(1) push/pop both ends | Default for FIFO queues |
+| **std::map/std::set** | Sorted red-black tree, O(log n) | Use map for order, unordered_map for speed |
+| **Unordered Containers** | Hash table, average O(1) lookup | Rehash is expensive -- reserve upfront |
+
+## Chapter Roadmap
+
+``mermaid
+flowchart LR
+    A[Container Taxonomy] --> B[Sequence: vector, list, deque]
+    B --> C[Associative: map, set]
+    C --> D[Unordered: unordered_map, unordered_set]
+    D --> E[Container Adaptors]
+    E --> F[Iterator Invalidation]
+``
 
 ## 9.1 Container Taxonomy
 
@@ -25,6 +48,8 @@ The Standard Template Library (STL) defines three broad categories of containers
 
 ## 9.2 std::vector
 
+> **One-Sentence Takeaway:** std::vector stores elements contiguously in memory, giving cache-friendly O(1) random access and O(n) insertion anywhere but the end.
+> **One-Sentence Takeaway:** std::vector stores elements contiguously in memory, giving cache-friendly O(1) random access and O(n) insertion anywhere but the end.
 `vector` is a dynamically resizable array. Elements are stored contiguously in memory, providing cache-friendly iteration and O(1) random access.
 
 ```cpp
@@ -59,6 +84,8 @@ When `push_back` exceeds capacity, `vector` allocates a new, larger buffer (typi
 
 ## 9.3 std::list
 
+> **One-Sentence Takeaway:** std::list is a doubly-linked list with O(1) insertion and deletion at any known position but poor cache locality.
+> **One-Sentence Takeaway:** std::list is a doubly-linked list with O(1) insertion and deletion at any known position but poor cache locality.
 `list` is a doubly-linked list. Insertion and deletion at any position are O(1), but random access is O(n) and memory overhead per element is significant.
 
 ```cpp
@@ -85,6 +112,8 @@ Use `list` when insertion/removal in the middle is frequent and element count is
 
 ## 9.4 std::deque
 
+> **One-Sentence Takeaway:** std::deque is a double-ended queue offering O(1) push/pop at both ends and a middle ground between vector and list.
+> **One-Sentence Takeaway:** std::deque is a double-ended queue offering O(1) push/pop at both ends and a middle ground between vector and list.
 `deque` (double-ended queue) provides O(1) insertion and deletion at both ends, with O(1) random access.
 
 ```cpp
@@ -107,6 +136,8 @@ Internally, `deque` is a sequence of fixed-size blocks. It combines many of `vec
 
 ## 9.5 std::map and std::set
 
+> **One-Sentence Takeaway:** std::map and std::set store elements in sorted order using a red-black tree, giving O(log n) lookup and iteration.
+> **One-Sentence Takeaway:** std::map and std::set store elements in sorted order using a red-black tree, giving O(log n) lookup and iteration.
 `map` stores key-value pairs sorted by key. `set` stores unique sorted keys. Both are implemented as balanced binary trees (typically red-black trees).
 
 ```cpp
@@ -137,6 +168,8 @@ Operations: O(log n) for `find`, `insert`, `erase`.
 
 ## 9.6 std::unordered_map and std::unordered_set
 
+> **One-Sentence Takeaway:** Unordered containers use a hash table for average O(1) lookup but lose ordering guarantees.
+> **One-Sentence Takeaway:** Unordered containers use a hash table for average O(1) lookup but lose ordering guarantees.
 Hash-based containers (C++11) with average O(1) operations:
 
 ```cpp
@@ -163,6 +196,8 @@ Choose `unordered_map` over `map` when ordering is irrelevant and average O(1) l
 
 ## 9.7 Container Adaptors
 
+> **One-Sentence Takeaway:** Adaptors like stack, queue, and priority_queue wrap underlying containers to expose restricted interfaces.
+> **One-Sentence Takeaway:** Adaptors like stack, queue, and priority_queue wrap underlying containers to expose restricted interfaces.
 Adaptors provide restricted interfaces over underlying containers:
 
 ```cpp
@@ -197,6 +232,17 @@ int main() {
 
 ## 9.8 Iterator Invalidation
 
+> **One-Sentence Takeaway:** Iterators become invalid after certain container modifications — Using an invalidated iterator is undefined behaviour.
+
+> **Warning:** Inserting into a vector can invalidate ALL iterators if reallocation occurs. Inserting into a list or unordered_map only invalidates iterators to the specific element. Know your container's invalidation rules.
+
+> **One-Sentence Takeaway:** Iterators become invalid after certain container modifications — Using an invalidated iterator is undefined behaviour.
+
+> **Warning:** Inserting into a vector can invalidate ALL iterators if reallocation occurs. Inserting into a list or unordered_map only invalidates iterators to the specific element. Know your container's invalidation rules.
+
+
+> **Warning:** Inserting into a vector can invalidate ALL iterators if reallocation occurs. Inserting into a list or unordered_map only invalidates iterators to the specific element. Know your container's invalidation rules.
+
 Containers invalidate iterators when their internal structure changes. Dereferencing an invalidated iterator is undefined behaviour:
 
 | Operation | Vector | List | Deque | Unordered map |
@@ -227,6 +273,138 @@ for (auto it = vec.begin(); it != vec.end(); ) {
 }
 ```
 
+## Concept Comparison Table
+
+| Container | Access | Insert/Erase | Memory | Iterators |
+|-----------|--------|--------------|--------|-----------|
+| vector | O(1) index | O(n) middle, O(1) amortised end | Contiguous | Random access |
+| list | O(n) search | O(1) at known position | Linked nodes | Bidirectional |
+| deque | O(1) index | O(1) front/back, O(n) middle | Chunked | Random access |
+| map/set | O(log n) | O(log n) | Tree nodes | Bidirectional |
+| unordered_map/set | O(1) avg | O(1) avg | Hash table | Forward only |
+
+## Quick Reference
+
+| Container | When to Use | Avoid When |
+|-----------|-------------|------------|
+| vector | Default, cache-friendly, random access needed | Frequent insert/erase in middle |
+| list | Frequent splice, no random access needed | Cache misses matter |
+| deque | FIFO, push/pop both ends | Need contiguous memory |
+| map | Sorted key-value lookup | Order does not matter |
+| unordered_map | Fast lookup, no ordering | Hash collisions, ordered iteration |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Game Dev** | vector for entity lists (cache-friendly iteration) |
+| **Network Stack** | deque for packet buffers (FIFO at both ends) |
+| **Compiler** | map for symbol tables (ordered lookup) |
+| **Database** | unordered_map for in-memory caches (O(1) access) |
+| **GUI Systems** | list for undo/redo stacks (splice-efficient) |
+
+## Chapter Quiz
+
+1. Which container has contiguous memory storage?
+   A) list
+   B) vector
+   C) map
+   D) unordered_map
+   <details><summary>Answer</summary>**B)** Only vector (and array) store elements contiguously.</details>
+
+2. Resizing a vector that requires reallocation:
+   A) Invalidates only iterators past the insertion point
+   B) Invalidates all iterators and references to elements
+   C) Invalidates no iterators
+   D) Always throws an exception
+   <details><summary>Answer</summary>**B)** Reallocation moves all elements to a new memory block, invalidating all iterators and references.</details>
+
+3. The primary advantage of list over vector is:
+   A) Faster random access
+   B) O(1) insertion anywhere given an iterator
+   C) Contiguous memory
+   D) Lower memory overhead
+   <details><summary>Answer</summary>**B)** list offers O(1) insertion and deletion at any known position.</details>
+
+4. Which container adaptor provides LIFO access?
+   A) queue
+   B) priority_queue
+   C) stack
+   D) deque
+   <details><summary>Answer</summary>**C)** stack provides last-in-first-out (LIFO) access.</details>
+
+5. unordered_map uses which data structure internally?
+   A) Red-black tree
+   B) Hash table
+   C) Skip list
+   D) B-tree
+   <details><summary>Answer</summary>**B)** unordered_map uses a hash table for average O(1) lookup.</details>
+## Concept Comparison Table
+
+| Container | Access | Insert/Erase | Memory | Iterators |
+|-----------|--------|--------------|--------|-----------|
+| vector | O(1) index | O(n) middle, O(1) amortised end | Contiguous | Random access |
+| list | O(n) search | O(1) at known position | Linked nodes | Bidirectional |
+| deque | O(1) index | O(1) front/back, O(n) middle | Chunked | Random access |
+| map/set | O(log n) | O(log n) | Tree nodes | Bidirectional |
+| unordered_map/set | O(1) avg | O(1) avg | Hash table | Forward only |
+
+## Quick Reference
+
+| Container | When to Use | Avoid When |
+|-----------|-------------|------------|
+| vector | Default, cache-friendly, random access | Frequent insert/erase in middle |
+| list | Frequent splice, no random access | Cache misses matter |
+| deque | FIFO, push/pop both ends | Need contiguous memory |
+| map | Sorted key-value lookup | Order does not matter |
+| unordered_map | Fast lookup, no ordering | Hash collisions, ordered iteration |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Game Dev** | vector for entity lists (cache-friendly iteration) |
+| **Network Stack** | deque for packet buffers (FIFO at both ends) |
+| **Compiler** | map for symbol tables (ordered lookup) |
+| **Database** | unordered_map for in-memory caches (O(1) access) |
+| **GUI Systems** | list for undo/redo stacks (splice-efficient) |
+
+## Chapter Quiz
+
+1. Which container has contiguous memory storage?
+   A) list
+   B) vector
+   C) map
+   D) unordered_map
+   <details><summary>Answer</summary>**B)** Only vector (and array) store elements contiguously.</details>
+
+2. Resizing a vector that requires reallocation:
+   A) Invalidates only iterators past the insertion point
+   B) Invalidates all iterators and references
+   C) Invalidates no iterators
+   D) Always throws an exception
+   <details><summary>Answer</summary>**B)** Reallocation invalidates all iterators and references.</details>
+
+3. The primary advantage of list over vector is:
+   A) Faster random access
+   B) O(1) insertion anywhere given an iterator
+   C) Contiguous memory
+   D) Lower memory overhead
+   <details><summary>Answer</summary>**B)** list offers O(1) insertion at any known position.</details>
+
+4. Which container adaptor provides LIFO access?
+   A) queue
+   B) priority_queue
+   C) stack
+   D) deque
+   <details><summary>Answer</summary>**C)** stack provides last-in-first-out (LIFO) access.</details>
+
+5. unordered_map internally uses:
+   A) Red-black tree
+   B) Hash table
+   C) Skip list
+   D) B-tree
+   <details><summary>Answer</summary>**B)** unordered_map uses a hash table.</details>
 ## 9.9 Summary
 
 Container selection is governed by algorithmic requirements: `vector` for contiguous storage and random access, `list` for frequent middle insertion, `deque` for efficient front/back operations, ordered associative containers for sorted access, unordered for fast hashed access, and adaptors for restricted interfaces. Iterator invalidation rules must be respected to avoid undefined behaviour.

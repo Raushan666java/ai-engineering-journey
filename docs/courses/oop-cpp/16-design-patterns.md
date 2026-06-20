@@ -1,4 +1,6 @@
-# Chapter 16: Design Patterns
+﻿# Chapter 16: Design Patterns
+
+> **Previous:** [15-concurrency](./15-concurrency.md) | **Next:** None
 
 ## Learning Objectives
 
@@ -10,11 +12,35 @@ After studying this chapter, students will be able to:
 - Implement behavioural patterns: Observer, Strategy, Iterator
 - Adapt classical patterns to idiomatic modern C++
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Patterns in Context** | Proven solutions to recurring design problems | Patterns are guides, not recipes |
+| **Creational Patterns** | Factory, Singleton, Builder, Prototype | Abstract object creation from clients |
+| **Structural Patterns** | Adapter, Decorator, Facade, Composite | Compose classes into larger structures |
+| **Behavioural Patterns** | Strategy, Observer, Command, Visitor | Define object interaction and responsibility |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Patterns in Context] --> B[Creational Patterns]
+    A --> C[Structural Patterns]
+    A --> D[Behavioural Patterns]
+    B --> E[Factory, Singleton, Builder]
+    C --> F[Adapter, Decorator, Facade]
+    D --> G[Strategy, Observer, Command]
+```
+
 ## 16.1 Patterns in Context
 
 ![Design Patterns Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/16-design-patterns.png)
 
 Design patterns are reusable solutions to recurring problems in software design. Catalogued by the "Gang of Four" (GoF) in 1994, they describe relationships and interactions between classes and objects. Patterns are not templates to be copied but rather conceptual guides to be adapted.
+
+> **Remember:** Patterns are not silver bullets — applying a pattern to the wrong problem creates unnecessary complexity. Start simple and introduce patterns when a genuine need emerges.
+
 
 Three categories:
 - **Creational** â€” object creation mechanisms
@@ -23,6 +49,7 @@ Three categories:
 
 ## 16.2 Creational Patterns
 
+> **One-Sentence Takeaway:** Creational patterns (Factory, Singleton, Builder, Prototype) abstract object creation, decoupling clients from concrete types.
 ### 16.2.1 Singleton
 
 The Singleton ensures a class has exactly one instance and provides a global access point.
@@ -161,6 +188,7 @@ public:
 
 ## 16.3 Structural Patterns
 
+> **One-Sentence Takeaway:** Structural patterns (Adapter, Decorator, Facade, Composite) compose classes and objects into larger structures.
 ### 16.3.1 Adapter
 
 The Adapter converts one interface to another that the client expects.
@@ -304,6 +332,7 @@ int main() {
 
 ## 16.4 Behavioural Patterns
 
+> **One-Sentence Takeaway:** Behavioural patterns (Strategy, Observer, Command, Visitor) define how objects interact and distribute responsibility.
 ### 16.4.1 Observer
 
 The Observer pattern defines a one-to-many dependency where state changes in one object are propagated to all dependents.
@@ -502,9 +531,80 @@ private:
 };
 ```
 
+## Concept Comparison Table
+
+| Category | Pattern | Purpose | Modern C++ Implementation |
+|----------|---------|---------|-------------------------|
+| Creational | Factory Method | Delegate object creation to subclasses | unique_ptr with polymorphic base |
+| Creational | Singleton | Ensure single instance | Meyers singleton (static local) |
+| Creational | Builder | Construct complex objects step by step | Chain fluent setters returning *this |
+| Structural | Adapter | Convert one interface to another | Wrapper class with delegation |
+| Structural | Decorator | Add responsibilities dynamically | Wrapper that forwards and extends |
+| Structural | Facade | Simplified interface to subsystem | Single class delegating to subsystem |
+| Behavioural | Strategy | Select algorithm at runtime | std::function or virtual interface |
+| Behavioural | Observer | One-to-many dependency notification | std::function callbacks, signals |
+| Behavioural | Command | Encapsulate request as object | std::function, packaged_task |
+
+## Quick Reference
+
+| Principle | Description |
+|-----------|-------------|
+| Program to interfaces, not implementations | Depend on abstract types, not concrete classes |
+| Favour composition over inheritance | Compose behaviour through delegation rather than deep hierarchies |
+| Single Responsibility | Each class should have one reason to change |
+| Open/Closed | Open for extension, closed for modification |
+| Dependency Inversion | Depend on abstractions, not concretions |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Game Dev** | Strategy for AI behaviour, Observer for event systems, Command for input |
+| **GUI Frameworks** | Observer for event handling, Decorator for widget styling, Command for undo |
+| **Web Frameworks** | Factory for request handling, Strategy for authentication, Facade for API |
+| **Compilers** | Visitor for AST traversal, Builder for code generation, Strategy for optimisation |
+| **Middleware** | Adapter for protocol bridges, Facade for service interfaces, Proxy for lazy loading |
+
+## Chapter Quiz
+
+1. What is the main advantage of using the Factory Method pattern?
+   A) It creates singletons
+   B) It decouples client code from concrete types
+   C) It improves runtime performance
+   D) It reduces memory usage
+   <details><summary>Answer</summary>**B)** Factory Method lets subclasses decide which concrete type to create, decoupling client code.</details>
+
+2. The Meyers Singleton implementation uses:
+   A) A global variable
+   B) A static local variable inside a static method
+   C) A shared_ptr
+   D) A mutex-locked double-checked pattern
+   <details><summary>Answer</summary>**B)** The Meyers Singleton uses a function-static local variable, which is thread-safe in C++11.</details>
+
+3. Which pattern is best for adding behaviour to an object without affecting others of the same type?
+   A) Adapter
+   B) Decorator
+   C) Facade
+   D) Strategy
+   <details><summary>Answer</summary>**B)** Decorator wraps an object to add responsibilities dynamically.</details>
+
+4. The Observer pattern solves which problem?
+   A) Object creation
+   B) One-to-many dependency notification
+   C) Algorithm selection
+   D) Interface conversion
+   <details><summary>Answer</summary>**B)** Observer establishes a one-to-many dependency: when one object changes, all dependents are notified.</details>
+
+5. "Favour composition over inheritance" means:
+   A) Never use inheritance
+   B) Prefer delegating behaviour to contained objects over deep class hierarchies
+   C) Use multiple inheritance whenever possible
+   D) Inherit from std::enable_shared_from_this
+   <details><summary>Answer</summary>**B)** Composition is more flexible than inheritance because behaviour can be changed at runtime.</details>
+
 ## 16.5 Summary
 
-Design patterns capture proven solutions to recurring design problems. Creational patterns manage object creation, structural patterns compose objects, and behavioural patterns define communication. Modern C++ implements patterns with smart pointers, templates, and STL components. Patterns are guides, not prescriptionsâ€”adapt them to the specific problem rather than forcing a pattern into the code.
+Design patterns capture proven solutions to recurring design problems. Creational patterns manage object creation, structural patterns compose objects, and behavioural patterns define communication. Modern C++ implements patterns with smart pointers, templates, and STL components. Patterns are guides, not prescriptions — adapt them to the specific problem rather than forcing a pattern into the code.
 
 ## Exercises
 

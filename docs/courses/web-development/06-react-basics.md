@@ -1,8 +1,51 @@
 # Chapter 6 â€” React Basics
 
+> **Previous:** [05-es6-plus](./05-es6-plus.md) | **Next:** [07-react-advanced](./07-react-advanced.md)
+
 ## Learning Objectives
 
+> **One-Sentence Takeaway:** JSX is syntactic sugar for `React.createElement` with rules like `className` and camelCase styles.
+
 By the end of this chapter, you will be able to:
+
+## Chapter at a Glance
+
+> **One-Sentence Takeaway:** Function components are the standard way to define reusable UI pieces in modern React.
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+|JSX|HTML-like syntax that compiles to `React.createElement` calls|Use `className` instead of `class`, camelCase for style properties|
+|Components|Function components are the modern standard for defining reusable UI|Keep components small and focused on a single responsibility|
+|Props|Read-only inputs passed from parent to child components|Use default parameter values for optional props|
+|State (useState)|Mutable data that triggers re-renders when changed|Never mutate state directly — always use the setter function|
+|Effects (useEffect)|Synchronize components with external systems|Always include proper cleanup functions and correct dependency arrays|
+|Conditional Rendering|Use ternaries, `&&`, and conditional variables to render different UI|Avoid ternary nesting — extract into variables for complex conditions|
+
+## Chapter Roadmap
+
+> **One-Sentence Takeaway:** Props are immutable inputs from parent to child — never modify them directly.
+
+```mermaid
+graph TD
+    A[JSX Syntax & Rules]
+    B[Function Components]
+    A --> B
+    C[Props & Children]
+    B --> C
+    D[useState Hook]
+    C --> D
+    E[useEffect Hook]
+    D --> E
+    F[Conditional Rendering]
+    E --> F
+    G[Lists & Keys]
+    F --> G
+    H[Controlled Forms]
+    G --> H
+    I[Lifting State Up]
+    H --> I
+```
+
 
 1. Create and render React components using both function and class syntax.
 2. Pass data through components using props with proper type expectations.
@@ -14,6 +57,8 @@ By the end of this chapter, you will be able to:
 8. Lift shared state to a common ancestor component.
 
 ## Theory
+
+> **One-Sentence Takeaway:** `useState` returns a state value and a setter; always use the functional update form for derived state.
 
 ### 6.1 JSX
 
@@ -412,7 +457,107 @@ function FahrenheitDisplay({ value }) {
 }
 ```
 
+
+> [!TIP]
+> Use the functional update form `setCount(prev => prev + 1)` when the new state depends on the previous state — it's safe in concurrent mode.
+
+> [!WARNING]
+> Never use array index as a `key` prop for dynamic lists that can be reordered, filtered, or have items inserted/removed.
+
+> [!REMEMBER]
+> Effects run after every render by default. Always specify the dependency array — omitting it can cause infinite loops or stale closures.
+
+
+
+## Concept Comparison Table
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|Function vs Class Component|Simpler, hooks-based, no `this`|More verbose, lifecycle methods, `this` binding|
+|`useState` vs `useReducer`|Simple independent values|Complex state logic with sub-values|
+|Controlled vs Uncontrolled|React manages the input value|DOM manages its own value|
+|Props vs State|Immutable, passed from parent|Mutable, managed by component|
+|`useEffect` with [] vs [deps]|Runs once on mount|Runs on mount and when deps change|
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|-----------|
+|JSX Rules|Single root, close all tags, `className`, `htmlFor`, camelCase styles|
+|Hooks|`useState(init)`, `useEffect(fn, deps)`|
+|State Rules|Don't mutate, use setters, create new references for objects/arrays|
+|List Keys|Stable unique IDs, never array index, unique among siblings only|
+|Conditional Patterns|Ternary `? :`, logical `&&`, IIFE, early return|
+
+## Cross-Application Matrix
+
+| Domain | Application | Benefit |
+|--------|------------|--------|
+|Form-heavy Apps|Controlled components + useState|Real-time validation and dynamic form state|
+|Data Dashboards|useEffect for data fetching, conditional rendering|Loading/error/data state management|
+|E-commerce|List rendering with keys, lifting cart state|Efficient re-renders and shared cart state|
+|Social Media|Props drilling for deeply nested data|Pass data through component hierarchy|
+|Real-time Apps|useEffect with subscriptions and cleanup|Prevent memory leaks on unmount|
+
+## Chapter Quiz
+
+Test your understanding with these quick questions.
+
+**Q1. Why must React keys be stable and unique?**
+
+- A) To avoid TypeScript errors
+- B) For React's reconciliation algorithm to efficiently identify items
+- C) To enable server-side rendering
+- D) To satisfy the linter
+
+<details><summary>Answer</summary>
+
+**B) Stable keys help React identify which items changed, were added, or removed during reconciliation.**
+
+</details>
+
+**Q2. What happens when the dependency array is omitted from `useEffect`?**
+
+- A) The effect never runs
+- B) The effect runs after every render
+- C) The effect runs only on mount
+- D) The component throws an error
+
+<details><summary>Answer</summary>
+
+**B) Without a dependency array, the effect runs after every render, which often causes infinite re-render loops.**
+
+</details>
+
+**Q3. How do you share state between two sibling components?**
+
+- A) Use `useEffect`
+- B) Lift the state up to their common ancestor
+- C) Pass props directly between siblings
+- D) Use `useRef`
+
+<details><summary>Answer</summary>
+
+**B) Lifting state up means moving the shared state to the nearest common ancestor and passing it down via props.**
+
+</details>
+
+**Q4. What is the correct way to update an object in state?**
+
+- A) `state.user.name = 'Alice'`
+- B) `setState({user: {name: 'Alice'}})`
+- C) `setState(prev => ({...prev, user: {...prev.user, name: 'Alice'}}))`
+- D) `Object.assign(state.user, {name: 'Alice'})`
+
+<details><summary>Answer</summary>
+
+**C) Always create a new reference when updating objects in state — spread the previous state and override the specific property.**
+
+</details>
+
 ## Summary
+
+> **One-Sentence Takeaway:** `useEffect` handles side effects with a cleanup function and dependency array for precise execution control.
 
 - JSX compiles to `React.createElement` and enables HTML-like syntax in JavaScript.
 - Function components are the standard approach; props are read-only inputs.
@@ -424,6 +569,8 @@ function FahrenheitDisplay({ value }) {
 - Lifting state up shares state across sibling components via a common ancestor.
 
 ## Exercises
+
+> **One-Sentence Takeaway:** Lifting state up shares data between sibling components via a common ancestor.
 
 ### Review Questions
 

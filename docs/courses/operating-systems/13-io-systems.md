@@ -1,5 +1,10 @@
 # Chapter 13: I/O Systems
 
+**<< [Secondary Storage](./12-secondary-storage.md)** | [**Next: The Linux Kernel**](./14-linux-kernel.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Describe I/O hardware components: ports, buses, controllers, and devices
@@ -8,6 +13,29 @@
 - Design the kernel I/O subsystem: buffering, caching, spooling, error handling
 - Describe the device driver interface and the I/O request life cycle
 - Understand the performance implications of different I/O models
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **I/O Hardware** | Ports, buses, controllers; devices have data/command/status registers |
+| **I/O Techniques** | Programmed I/O, Interrupt-driven I/O, DMA |
+| **DMA** | Direct Memory Access: device transfers data directly to/from memory without CPU |
+| **Device Drivers** | Kernel modules understanding device protocols; standard interface to OS |
+| **Buffering** | Temporary storage to decouple producer and consumer of data |
+| **Spooling/Caching** | Spooling manages shared device access; caching keeps frequent data ready |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[I/O Hardware Basics] --> B[Ports / Buses / Controllers]
+    B --> C[I/O Control Methods]
+    C --> D[Programmed / Interrupt / DMA]
+    D --> E[Device Drivers]
+    E --> F[Buffering & Caching]
+    F --> G[I/O Performance]
+    G --> H[Summary]
+</div>
 
 ## Theory
 
@@ -450,6 +478,64 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> **DMA** is essential for high-throughput I/O. Without it, the CPU must copy every byte from device to memory. DMA allows the CPU to initiate the transfer and work on other tasks while the DMA controller handles data movement.
+
+> [WARNING]
+> Interrupt-driven I/O is fine for character devices but too much overhead for block devices. For bulk transfers, DMA is essential. Each interrupt requires a full context switch.
+
+> [NOTE]
+> The **device driver** layer provides a uniform interface so the same system calls (`read()`, `write()`, `ioctl()`) work across different hardware.
+
+## Concept Comparison
+
+| Feature | Programmed I/O | Interrupt-Driven | DMA |
+|-------|--------------|----------------|---|
+| CPU Role | Polls device until ready | Starts I/O, gets interrupt | Initiates, DMA does rest |
+| Data Path | CPU each byte | CPU each byte | Device <-> Memory directly |
+| Overhead | Very high (busy-waits) | Moderate (interrupt per byte) | Low (interrupt per transfer) |
+| Best For | Simple/slow devices | Character devices | Block devices, high throughput |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **DMA** | Direct Memory Access -- hardware for device-to-memory transfers |
+| **Device Driver** | Kernel module providing standard interface to specific hardware |
+| **Buffering** | Temporary storage for speed mismatches between devices |
+| **Spooling** | Managing shared exclusive-access devices (e.g., printer queue) |
+| **Memory-Mapped I/O** | Device registers mapped into CPU address space |
+| **Interrupt** | Hardware signal causing CPU to save state and run handler |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| I/O Method | DMA (NVMe, AHCI) | DMA (ring buffers) | DMA (framebuffer) | DMA (UHCI/EHCI) |
+| Driver Model | Block driver | Network driver | DRM/KMS driver | USB core + class |
+| Buffering | Disk cache | Socket buffer | Back buffer | OHCI/EHCI frame lists |
+
+## Chapter Quiz
+
+1. Which I/O method needs least CPU for large transfers?
+   - a) Programmed I/O
+   - b) Interrupt-driven I/O
+   - c) DMA
+   - d) Memory-mapped I/O
+
+2. Main purpose of a device driver?
+   - a) Uniform kernel interface for specific hardware
+   - b) Speed up hardware
+   - c) Manage memory
+   - d) Schedule processes
+
+3. Buffering is used to:
+   - a) Increase disk space
+   - b) Handle speed mismatches
+   - c) Reduce power
+   - d) Encrypt data
 
 ## Summary
 

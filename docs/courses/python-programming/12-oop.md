@@ -1,5 +1,7 @@
 # Chapter 12: Object-Oriented Programming
 
+
+> **Previous:** [Modules and Packages](./11-modules.md) | **Next:** [Inheritance and Polymorphism](./13-inheritance.md)
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -12,7 +14,48 @@ By the end of this chapter, students will be able to:
 
 ![Python OOP](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/12-oop.png)
 
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+|12.1 Classes and Instances||A class is a blueprint; `__init__` initialises instance state.|
+|12.2 Instance Methods vs Class Attributes||`@classmethod` receives `cls` for alternative constructors; `@staticmethod` receives nothing.|
+|12.3 @classmethod and @staticmethod||`@property` controls attribute access with getter/setter/deleter — validation without breaking the API.|
+|12.4 @property Decorator||`__slots__` saves memory by replacing `__dict__` with a fixed array.|
+|12.5 __slots__||`@dataclass` auto-generates `__init__`, `__repr__`, `__eq__`, and more.|
+|12.6 Name Mangling||undefined|
+|12.7 @dataclass||undefined|
+|12.8 Method Types Summary||undefined|
+|12.9 Class as a Callable||undefined|
+
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    S0[Classes and Instances]
+    S1[Instance Methods vs Class Attributes]
+    S2[@classmethod and @staticmethod]
+    S3[@property Decorator]
+    S4[__slots__]
+    S5[Name Mangling]
+    S6[@dataclass]
+    S7[Method Types Summary]
+    S8[Class as a Callable]
+    S0 --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+    S6 --> S7
+    S7 --> S8
+```
 ## 12.1 Classes and Instances
+
+> **One-Sentence Takeaway:** A class is a blueprint; `__init__` initialises instance state.
+
 
 A class is a blueprint for creating objects:
 
@@ -44,6 +87,9 @@ print(max_dog.bark())  # Max says Woof!
 
 ## 12.2 Instance Methods vs Class Attributes
 
+> **One-Sentence Takeaway:** `@classmethod` receives `cls` for alternative constructors; `@staticmethod` receives nothing.
+
+
 Instance attributes belong to each object; class attributes are shared:
 
 ```python
@@ -67,6 +113,9 @@ print(c2.count)       # 10
 Attribute lookup order: instance â†’ class â†’ parent classes.
 
 ## 12.3 @classmethod and @staticmethod
+
+> **One-Sentence Takeaway:** `@property` controls attribute access with getter/setter/deleter — validation without breaking the API.
+
 
 - **Instance method**: receives `self`, can access instance and class.
 - **Class method** (`@classmethod`): receives `cls`, can access class but not instance.
@@ -111,6 +160,9 @@ print(Date.is_valid("invalid"))  # False
 
 ## 12.4 @property Decorator
 
+> **One-Sentence Takeaway:** `__slots__` saves memory by replacing `__dict__` with a fixed array.
+
+
 Properties control attribute access with getter, setter, and deleter methods:
 
 ```python
@@ -150,6 +202,9 @@ print(c.area)      # 153.938...
 Properties allow you to add validation or computed values without changing the public interface.
 
 ## 12.5 __slots__
+
+> **One-Sentence Takeaway:** `@dataclass` auto-generates `__init__`, `__repr__`, `__eq__`, and more.
+
 
 `__slots__` restricts the attributes a class can have, saving memory:
 
@@ -194,6 +249,12 @@ Use `__slots__` for classes with many instances (millions). For most cases, the 
 
 ## 12.6 Name Mangling
 
+> **One-Sentence Takeaway:** undefined
+> **Remember:** Name mangling (`__attr`) prevents subclass collisions — it is not true privacy. Single underscore `_attr` signals "internal use."
+
+
+
+
 Names starting with double underscore (but not ending with double underscore) are mangled to `_ClassName__name`:
 
 ```python
@@ -226,6 +287,9 @@ print(obj2._SubClass__secret)   # 99
 Single underscore (`_secret`) is a convention meaning "internal use" â€” no language enforcement.
 
 ## 12.7 @dataclass
+
+> **One-Sentence Takeaway:** undefined
+
 
 The `@dataclass` decorator (Python 3.7+) auto-generates `__init__`, `__repr__`, `__eq__`, and more:
 
@@ -282,6 +346,9 @@ Fields from the parent come first, then child fields.
 
 ## 12.8 Method Types Summary
 
+> **One-Sentence Takeaway:** undefined
+
+
 | Type | Decorator | First Parameter | Can Access Instance | Can Access Class |
 |------|-----------|----------------|---------------------|------------------|
 | Instance method | none | `self` | Yes | Yes |
@@ -290,6 +357,9 @@ Fields from the parent come first, then child fields.
 | Property | `@property` | `self` (on getter) | Yes | Yes |
 
 ## 12.9 Class as a Callable
+
+> **One-Sentence Takeaway:** undefined
+
 
 A class is callable â€” calling it creates a new instance:
 
@@ -307,6 +377,74 @@ v = Vector(3, 4)
 print(v())       # (3, 4)
 print(v(2))      # (6, 8)
 ```
+
+
+## Concept Comparison Table
+
+| Method Type | Decorator | First Param |
+|---|---|---|
+| Instance | none | self |
+| Class | @classmethod | cls |
+| Static | @staticmethod | none |
+| Property | @property | self (getter) |
+
+
+## Quick Reference
+
+```python
+class Dog:
+    species = "Canis"
+    def __init__(self, name):
+        self.name = name
+    def bark(self):
+        return f"{self.name} says Woof!"
+
+buddy = Dog("Buddy")
+print(buddy.bark())
+```
+
+## Cross-Application Matrix
+
+| Area | Application | Relevant Section |
+|------|-------------|------------------|
+|Web Dev|Models in Django/Flask|12.1|
+|Data Science|Custom data containers with dataclass|12.7|
+|DevOps|Configuration objects with validation|12.4|
+|Automation|Singleton pattern with class decorators|12.1|
+
+
+## Chapter Quiz
+
+**Q1.** What is the first parameter of an instance method?
+- cls
+- self **<-- Correct**
+- instance
+- this
+
+**Q2.** What does @classmethod receive as first argument?
+- self
+- cls **<-- Correct**
+- instance
+- class
+
+**Q3.** What does @property allow you to do?
+- define class methods
+- control attribute access with getter/setter **<-- Correct**
+- create static methods
+- auto-generate __init__
+
+**Q4.** What is __slots__ primarily used for?
+- memory optimisation **<-- Correct**
+- name mangling
+- property definition
+- class inheritance
+
+**Q5.** What does @dataclass auto-generate?
+- __init__ only
+- __init__, __repr__, __eq__ **<-- Correct**
+- @property
+- __slots__
+
 
 ## Summary
 

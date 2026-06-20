@@ -1,4 +1,6 @@
-# Chapter 6: Queues
+﻿# Chapter 6: Queues
+
+> **Previous:** [Chapter 5: Stacks](./05-stacks.md) | **Next:** [Hash Tables](./07-hash-tables.md)
 
 ## Learning Objectives
 
@@ -7,6 +9,27 @@
 - Implement a queue using linked lists.
 - Describe priority queues and deques.
 - Apply queues to scheduling and breadth-first processing.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| FIFO Principle | First-In-First-Out access order | Natural fit for BFS and scheduling |
+| Circular Array Queue | Wrap indices modulo capacity | No wasted space from prior dequeues |
+| Linked Queue | Nodes with head and tail pointers | Dynamic sizing without resizing |
+| Deque | Insert/delete at both ends O(1) | Combines stack + queue capabilities |
+| Priority Queue | Elements ordered by priority | Binary heap gives O(log n) ops |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Queue FIFO] --> B[Circular Array vs Linked]
+    B --> C[Enqueue / Dequeue O(1)]
+    C --> D[Deque: Both Ends]
+    D --> E[Priority Queue with Heap]
+    E --> F[Applications: BFS, Sliding Window]
+```
 
 ## Theory
 
@@ -26,6 +49,8 @@ A queue follows the First-In-First-Out (FIFO) discipline: elements are inserted 
 
 ### Circular Queue
 
+> **Pro Tip:** The modulo arithmetic (rear + 1) % capacity for circular wrap-around is both elegant and error-prone - always test edge cases where rear wraps past front.
+
 A naive array queue wastes space because after dequeues the front pointer moves forward, leaving unused slots at the beginning. A circular queue wraps around: when the rear reaches the end, it continues at index 0 (modulo arithmetic).
 
 ### Priority Queue
@@ -35,6 +60,8 @@ In a priority queue, elements have a priority value; the element with the highes
 ### Deque (Double-Ended Queue)
 
 A deque allows insertion and deletion at both ends in \( O(1) \) time, combining stack and queue capabilities.
+
+> **One-Sentence Takeaway:** Queues enable FIFO processing essential for BFS, scheduling, and buffering - choose circular arrays for fixed-size and linked queues for dynamic capacity.
 
 ## Examples
 
@@ -292,7 +319,11 @@ int main() {
 [Priority 1] Check email
 ```
 
+> **One-Sentence Takeaway:** Match the queue variant to the problem - circular arrays for bounded buffers, linked for dynamic FIFO, deques for double-ended access, and heaps for priority ordering.
+
 ## ðŸ’¡ Pro Tips
+
+> **Remember:** Use a sentinel slot in circular queues to distinguish full from empty when front == rear - this is the most common off-by-one bug in queue implementations.
 
 - **Circular array queue needs one sentinel slot**: Use front and rear indices where an empty queue has front == rear, and a full queue has (rear + 1) % size == front. This wastes one slot but avoids tracking separate size.
 - **BFS is queue's natural domain**: Push the start node, mark visited, then repeatedly pop, process neighbors, and push unvisited ones. The queue guarantees level-by-level exploration.

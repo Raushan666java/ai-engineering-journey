@@ -1,5 +1,10 @@
 # Chapter 15: Shell Scripting
 
+**<< [The Linux Kernel](./14-linux-kernel.md)** | [**Next: Security**](./16-security.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Understand the role of the shell as both a command interpreter and scripting language
@@ -8,6 +13,30 @@
 - Manage processes: background execution, job control, signals, and process substitution
 - Use common text-processing utilities: grep, sed, awk, cut, sort, uniq
 - Debug and write robust shell scripts with proper error handling
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Shell Basics** | Command interpreter; Linux default is Bash (Bourne Again SHell) |
+| **Variables** | User-defined, environment, positional parameters; $? for exit status |
+| **Conditionals** | if-then-else, case; test command [ ] and [[ ]] |
+| **Loops** | for, while, until; iterating over files and command output |
+| **Functions** | Reusable code blocks; local variables with local keyword |
+| **Script Control** | exit, return, break, continue, error handling with trap |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Shell & Bash Basics] --> B[Variables & Parameters]
+    B --> C[Conditionals]
+    B --> D[Loops]
+    C --> E[Functions]
+    D --> E
+    E --> F[Error Handling & Debugging]
+    F --> G[Real-World Scripts]
+    G --> H[Summary]
+</div>
 
 ## Theory
 
@@ -563,6 +592,65 @@ for dir in */; do
     echo "  $dir: $count files"
 done
 ```
+
+
+> [TIP]
+> Always quote your variables: `"$var"` instead of `$var`. Unquoted variables undergo word splitting and glob expansion, causing bugs with spaces or special characters.
+
+> [WARNING]
+> Never parse `ls` output. Use globs: `for file in *.txt; do` -- NOT `for file in $(ls *.txt)`. Filenames with spaces or newlines break the ls approach.
+
+> [NOTE]
+> The **shebang** (`#!/bin/bash`) tells the kernel which interpreter to use. Use `#!/usr/bin/env bash` for better portability.
+
+## Concept Comparison
+
+| Feature | test / [ ] | [[ ]] (Bash) | (( )) (Arithmetic) |
+|-------|----------|------------|------------------|
+| String Comp. | = != | = != < > (lexical) | N/A |
+| Arith. Comp. | -eq -ne -lt | -eq -ne -lt | == != < > |
+| Pattern Match | No | == =~ (regex) | N/A |
+| Globbing | No | Disabled (safe) | N/A |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **$?** | Exit status of last command (0=success, nonzero=failure) |
+| **$0, $1, ...** | Positional parameters: script name, first arg, etc. |
+| **$@** | All arguments as separate words (use "$@" to preserve quoting) |
+| **$#** | Number of positional parameters |
+| **stdin/stdout/stderr** | Standard input (0), output (1), error (2) |
+| **Shebang** | #!/bin/bash -- tells kernel to use Bash |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Loops | Process log rotation | CI/CD pipeline steps | Build automation | Batch file processing |
+| Conditionals | Check disk usage | Validate deployment | Test exit codes | Data validation |
+| Functions | Common admin tasks | Reusable pipeline stages | Utility library | Data transform |
+| Error Handling | Alert on failures | Retry logic | Assertions | Log errors + skip |
+
+## Chapter Quiz
+
+1. Purpose of shebang (#!/bin/bash)?
+   - a) Specify interpreter
+   - b) Add comments
+   - c) Set env vars
+   - d) Define author
+
+2. What does $? represent?
+   - a) All arguments
+   - b) Exit status of last command
+   - c) PID of script
+   - d) Script name
+
+3. Why quote variables ("$var") in Bash?
+   - a) Make read-only
+   - b) Prevent word splitting and globbing
+   - c) Improve performance
+   - d) Declare arrays
 
 ## Summary
 

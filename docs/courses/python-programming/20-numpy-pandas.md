@@ -1,5 +1,7 @@
 # Chapter 20: NumPy and pandas
 
+
+> **Previous:** [APIs and Testing](./19-apis-testing.md) | **Next:** [Concurrency, Multiprocessing & Parallelism](./21-concurrency-multiprocessing.md)
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -13,7 +15,60 @@ By the end of this chapter, students will be able to:
 
 ![Data Science Stack](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/20-numpy-pandas.png)
 
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+|20.1 NumPy Arrays||NumPy arrays enable vectorised computation — operations apply to all elements without explicit loops.|
+|20.2 Indexing and Slicing||Broadcasting performs operations on arrays of different shapes by stretching size-1 dimensions.|
+|20.3 Vectorised Operations||Boolean indexing and fancy indexing select rows/columns based on conditions or index arrays.|
+|20.4 Broadcasting||pandas Series and DataFrame provide labelled, columnar data with `groupby`, `merge`, and `pivot`.|
+|20.5 Reshaping and Transposing||Data cleaning with `fillna`, `dropna`, and `apply` is essential before analysis or modelling.|
+|20.6 Linear Algebra||undefined|
+|20.7 pandas Series||undefined|
+|20.8 pandas DataFrames||undefined|
+|20.9 Data Cleaning||undefined|
+|20.10 GroupBy and Aggregation||undefined|
+|20.11 Merging and Joining||undefined|
+|20.12 Time Series||undefined|
+|20.13 Basic Visualisation||undefined|
+
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    S0[NumPy Arrays]
+    S1[Indexing and Slicing]
+    S2[Vectorised Operations]
+    S3[Broadcasting]
+    S4[Reshaping and Transposing]
+    S5[Linear Algebra]
+    S6[pandas Series]
+    S7[pandas DataFrames]
+    S8[Data Cleaning]
+    S9[GroupBy and Aggregation]
+    S10[Merging and Joining]
+    S11[Time Series]
+    S12[Basic Visualisation]
+    S0 --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+    S6 --> S7
+    S7 --> S8
+    S8 --> S9
+    S9 --> S10
+    S10 --> S11
+    S11 --> S12
+```
 ## 20.1 NumPy Arrays
+
+> **One-Sentence Takeaway:** NumPy arrays enable vectorised computation — operations apply to all elements without explicit loops.
+
 
 ### 20.1.1 Creating Arrays
 
@@ -63,6 +118,9 @@ print(arr.nbytes)     # 48 (total bytes)
 
 ## 20.2 Indexing and Slicing
 
+> **One-Sentence Takeaway:** Broadcasting performs operations on arrays of different shapes by stretching size-1 dimensions.
+
+
 ```python
 arr = np.array([10, 20, 30, 40, 50])
 
@@ -97,6 +155,12 @@ print(arr[indices])   # [10 30 50]
 
 ## 20.3 Vectorised Operations
 
+> **One-Sentence Takeaway:** Boolean indexing and fancy indexing select rows/columns based on conditions or index arrays.
+> **Remember:** Vectorised NumPy operations are 10-100x faster than Python for-loops — avoid iterating when possible.
+
+
+
+
 Vectorised operations apply to every element without explicit loops:
 
 ```python
@@ -130,6 +194,9 @@ print(np.sum(matrix, axis=1))  # [6 15]    row sums
 
 ## 20.4 Broadcasting
 
+> **One-Sentence Takeaway:** pandas Series and DataFrame provide labelled, columnar data with `groupby`, `merge`, and `pivot`.
+
+
 Broadcasting performs operations on arrays of different shapes:
 
 ```python
@@ -157,6 +224,9 @@ print(matrix + col)
 ```
 
 ## 20.5 Reshaping and Transposing
+
+> **One-Sentence Takeaway:** Data cleaning with `fillna`, `dropna`, and `apply` is essential before analysis or modelling.
+
 
 ```python
 arr = np.arange(12)
@@ -191,6 +261,9 @@ row = arr[np.newaxis, :]  # (1, 3)
 ```
 
 ## 20.6 Linear Algebra
+
+> **One-Sentence Takeaway:** undefined
+
 
 ```python
 import numpy as np
@@ -234,6 +307,9 @@ print(np.linalg.norm(vector, ord=1))   # 7.0 (L1 norm)
 
 ## 20.7 pandas Series
 
+> **One-Sentence Takeaway:** undefined
+
+
 ```python
 import pandas as pd
 
@@ -269,6 +345,9 @@ print(s[s > 80])  # Alice 85, Bob 92
 ```
 
 ## 20.8 pandas DataFrames
+
+> **One-Sentence Takeaway:** undefined
+
 
 ```python
 import pandas as pd
@@ -359,6 +438,9 @@ df = df.drop(index=[2])  # drop row with index 2
 
 ## 20.9 Data Cleaning
 
+> **One-Sentence Takeaway:** undefined
+
+
 ```python
 import numpy as np
 
@@ -389,6 +471,9 @@ df_unique = df.drop_duplicates()
 ```
 
 ## 20.10 GroupBy and Aggregation
+
+> **One-Sentence Takeaway:** undefined
+
 
 ```python
 df = pd.DataFrame({
@@ -430,6 +515,9 @@ print(df.groupby(["Department", "Year"])["Salary"].mean())
 
 ## 20.11 Merging and Joining
 
+> **One-Sentence Takeaway:** undefined
+
+
 ```python
 employees = pd.DataFrame({
     "emp_id": [1, 2, 3, 4],
@@ -470,6 +558,9 @@ concat_cols = pd.concat([df_a, df_b], axis=1)     # horizontal stack
 
 ## 20.12 Time Series
 
+> **One-Sentence Takeaway:** undefined
+
+
 ```python
 # Creating date ranges
 dates = pd.date_range("2025-01-01", periods=5, freq="D")
@@ -496,6 +587,9 @@ print(ts_daily.rolling(window=3).mean())
 ```
 
 ## 20.13 Basic Visualisation
+
+> **One-Sentence Takeaway:** undefined
+
 
 ### 20.13.1 matplotlib
 
@@ -578,6 +672,73 @@ sns.heatmap(numeric_cols.corr(), annot=True, cmap="coolwarm")
 plt.title("Correlation Heatmap")
 plt.show()
 ```
+
+
+## Concept Comparison Table
+
+| Library | Primary Object | Strengths |
+|---|---|---|
+| NumPy | ndarray | Speed, broadcasting, linear algebra |
+| pandas | Series/DataFrame | Labels, missing data, I/O, groupby |
+| matplotlib | Figure/Axes | Every plot type, fine-grained control |
+| seaborn | Axes-level functions | Statistical plots, built-in themes |
+
+
+## Quick Reference
+
+```python
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr * 2)  # [2 4 6 8 10]
+print(arr[arr > 2])  # [3 4 5]
+
+import pandas as pd
+df = pd.DataFrame({"Name": ["A","B"], "Age": [25,30]})
+print(df.groupby("Age").mean())
+```
+
+## Cross-Application Matrix
+
+| Area | Application | Relevant Section |
+|------|-------------|------------------|
+|Data Science|Core data manipulation tool|All sections|
+|Web Dev|Not primary use|N/A|
+|DevOps|Log analysis with pandas|20.8|
+|Automation|Data pipeline transformations|20.10|
+
+
+## Chapter Quiz
+
+**Q1.** What is broadcasting in NumPy?
+- sending data over network
+- operating on different-shaped arrays **<-- Correct**
+- converting to boolean
+- sorting arrays
+
+**Q2.** What is the difference between iloc and loc?
+- iloc uses labels, loc uses position
+- iloc uses position, loc uses labels **<-- Correct**
+- no difference
+- both use position
+
+**Q3.** What does groupby().agg() return?
+- a DataFrame
+- a Series or DataFrame with aggregated values **<-- Correct**
+- a list of groups
+- a dict of groups
+
+**Q4.** Which method fills missing values?
+- dropna
+- fillna **<-- Correct**
+- isnull
+- astype
+
+**Q5.** What does pd.merge do?
+- concatenates rows
+- combines DataFrames on a key column **<-- Correct**
+- reshapes data
+- plots data
+
 
 ## Summary
 

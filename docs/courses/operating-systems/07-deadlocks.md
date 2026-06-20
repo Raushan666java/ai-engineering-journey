@@ -1,5 +1,10 @@
 # Chapter 7: Deadlocks
 
+**<< [Semaphores and Monitors](./06-semaphores-monitors.md)** | [**Next: Memory Management**](./08-memory-management.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Characterize deadlocks using the four necessary conditions
@@ -8,6 +13,29 @@
 - Implement Banker's algorithm for deadlock avoidance
 - Design deadlock detection algorithms for single and multiple resource types
 - Compare recovery strategies: process termination vs resource preemption
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Deadlock** | Set of blocked processes, each holding a resource waiting for another held by another |
+| **Necessary Conditions** | Mutual exclusion, hold-and-wait, no preemption, circular wait |
+| **Prevention** | Prevent at least one necessary condition -- most commonly circular wait via resource ordering |
+| **Avoidance** | Banker Algorithm: safe state ensures no deadlock even with maximum claims |
+| **Detection** | Wait-for graph cycle detection; O(n²) algorithm |
+| **Recovery** | Process termination or resource preemption; trade-off between cost and impact |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Deadlock Concept] --> B[Necessary Conditions]
+    B --> C[Resource-Allocation Graphs]
+    C --> D[Prevention]
+    C --> E[Avoidance: Banker's Algorithm]
+    C --> F[Detection: Wait-for Graph]
+    F --> G[Recovery]
+    G --> H[Summary]
+</div>
 
 ## Theory
 
@@ -431,6 +459,63 @@ void *thread2_fixed(void *arg) {
     return NULL;
 }
 ```
+
+
+> [TIP]
+> The **Banker Algorithm** is the standard deadlock-avoidance technique. It uses the concept of a safe state: a state where the system can allocate resources to each process in some order without deadlock. Processes must declare their maximum resource needs in advance.
+
+> [WARNING]
+> Deadlock **prevention** (breaking one condition) hurts resource utilization. Breaking hold-and-wait requires processes to request all resources at once, leading to low utilization. Breaking circular wait via ordered resource allocation is the most practical prevention method.
+
+> [NOTE]
+> In practice, most operating systems use **deadlock ignorance** (the ostrich algorithm). Deadlocks are rare enough that the cost of prevention/avoidance outweighs the occasional manual recovery.
+
+## Concept Comparison
+
+| Approach | Strategy | Resource Util. | Impl. Cost | Use in Practice |
+|--------|--------|--------------|----------|---------------|
+| Prevention | Break one necessary condition | Low | Moderate | Limited (embedded) |
+| Avoidance | Banker Algorithm (safe state) | Moderate | High (needs max claims) | Rare (databases) |
+| Detection+Recovery | Wait-for graph, terminate/preempt | High | Moderate | Some databases |
+| Ignorance | Assume deadlocks will not occur | Maximum | Zero | Most OS |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Deadlock** | Permanent blocking due to circular resource waiting |
+| **Safe State** | State from which all processes can complete without deadlock |
+| **Banker Algorithm** | Avoidance algorithm using maximum claims and safe-state checking |
+| **Wait-for Graph** | Directed graph showing process wait relationships |
+| **Resource-Allocation Graph** | Graph with processes (circles) and resources (squares) |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Prevention | Resource ordering for kernel locks | Lock ordering | Simple/predictable | Global lock ordering |
+| Avoidance | Rarely used | Two-phase locking | Critical safety systems | Distributed transactions |
+| Detection | Kernel lockdep tool | InnoDB deadlock detection | Watchdog timers | Distributed detection |
+
+## Chapter Quiz
+
+1. Which is NOT a necessary condition for deadlock?
+   - a) Mutual exclusion
+   - b) Preemption
+   - c) Hold-and-wait
+   - d) Circular wait
+
+2. What does the Banker Algorithm check before granting resources?
+   - a) Resource availability
+   - b) Whether resulting state is safe
+   - c) Process priority
+   - d) CPU utilization
+
+3. Most general-purpose OS handle deadlocks by:
+   - a) Prevention
+   - b) Avoidance
+   - c) Detection+recovery
+   - d) Ignoring them (ostrich algorithm)
 
 ## Summary
 

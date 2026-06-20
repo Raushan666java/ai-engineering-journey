@@ -1,5 +1,7 @@
 # Chapter 13: Inheritance and Protocols
 
+
+> **Previous:** [Object-Oriented Programming](./12-oop.md) | **Next:** [Magic Methods and Operator Overloading](./14-magic-methods.md)
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -12,7 +14,48 @@ By the end of this chapter, students will be able to:
 
 ![Inheritance and Protocols](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/13-inheritance.png)
 
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+|13.1 Basic Inheritance||Inheritance creates an "is-a" relationship; `super()` delegates to the next class in MRO.|
+|13.2 super()||MRO (C3 linearization) determines method lookup order: child before parent, base-order preserved.|
+|13.3 Method Resolution Order (MRO)||Mixins provide focused, reusable behaviour and should avoid `__init__`.|
+|13.4 Multiple Inheritance||ABCs enforce interface contracts via `@abstractmethod` — cannot be instantiated directly.|
+|13.5 Mixins||Protocols (PEP 544) provide structural subtyping: any object with the right methods satisfies the protocol.|
+|13.6 Abstract Base Classes (ABCs)||undefined|
+|13.7 isinstance and issubclass||undefined|
+|13.8 Structural Subtyping (Protocols)||undefined|
+|13.9 Composition over Inheritance||undefined|
+
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    S0[Basic Inheritance]
+    S1[super()]
+    S2[Method Resolution Order (MRO)]
+    S3[Multiple Inheritance]
+    S4[Mixins]
+    S5[Abstract Base Classes (ABCs)]
+    S6[isinstance and issubclass]
+    S7[Structural Subtyping (Protocols)]
+    S8[Composition over Inheritance]
+    S0 --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+    S6 --> S7
+    S7 --> S8
+```
 ## 13.1 Basic Inheritance
+
+> **One-Sentence Takeaway:** Inheritance creates an "is-a" relationship; `super()` delegates to the next class in MRO.
+
 
 A subclass inherits all attributes and methods from its parent:
 
@@ -45,6 +88,9 @@ for a in animals:
 
 ## 13.2 super()
 
+> **One-Sentence Takeaway:** MRO (C3 linearization) determines method lookup order: child before parent, base-order preserved.
+
+
 `super()` delegates method calls to the parent class:
 
 ```python
@@ -71,6 +117,9 @@ print(car.description())  # Toyota Camry (4 doors)
 `super()` works even in multiple inheritance, following the MRO (discussed below).
 
 ## 13.3 Method Resolution Order (MRO)
+
+> **One-Sentence Takeaway:** Mixins provide focused, reusable behaviour and should avoid `__init__`.
+
 
 MRO determines the order in which classes are searched for methods. Python uses the C3 linearization algorithm:
 
@@ -108,6 +157,9 @@ C3 linearization ensures:
 
 ## 13.4 Multiple Inheritance
 
+> **One-Sentence Takeaway:** ABCs enforce interface contracts via `@abstractmethod` — cannot be instantiated directly.
+
+
 Python supports multiple inheritance directly:
 
 ```python
@@ -142,6 +194,9 @@ print(penguin.move())  # Swimming through water (Swimmer first in MRO)
 ```
 
 ## 13.5 Mixins
+
+> **One-Sentence Takeaway:** Protocols (PEP 544) provide structural subtyping: any object with the right methods satisfies the protocol.
+
 
 Mixins are small classes that provide reusable behaviour without defining a complete interface:
 
@@ -181,6 +236,9 @@ Mixins should:
 - Have names ending in "Mixin" or describing the behaviour
 
 ## 13.6 Abstract Base Classes (ABCs)
+
+> **One-Sentence Takeaway:** undefined
+
 
 ABCs define interfaces that subclasses must implement:
 
@@ -268,6 +326,9 @@ print(issubclass(MyList, Sequence))  # True
 
 ## 13.7 isinstance and issubclass
 
+> **One-Sentence Takeaway:** undefined
+
+
 ```python
 class Animal: pass
 class Dog(Animal): pass
@@ -282,6 +343,9 @@ print(issubclass(bool, int))    # True (bool is a subclass of int)
 ```
 
 ## 13.8 Structural Subtyping (Protocols)
+
+> **One-Sentence Takeaway:** undefined
+
 
 PEP 544 introduced `Protocol` in Python 3.8 for structural subtyping (static duck typing):
 
@@ -330,6 +394,12 @@ Protocols enable duck typing with static safety â€” objects satisfy a proto
 
 ## 13.9 Composition over Inheritance
 
+> **One-Sentence Takeaway:** undefined
+> **Pro Tip:** Favour composition over inheritance — it allows different implementations to be injected without changing the class hierarchy.
+
+
+
+
 Prefer composition over inheritance for code reuse:
 
 ```python
@@ -357,6 +427,72 @@ app.run()
 ```
 
 Composition allows different logger implementations (file, database, cloud) to be injected without changing the class hierarchy.
+
+
+## Concept Comparison Table
+
+| Mechanism | Type checking | Flexibility |
+|---|---|---|
+| Inheritance | isinstance checks class tree | Rigid hierarchy |
+| ABC | isinstance checks ABC tree | Enforced interface |
+| Protocol | Static type checker only | Duck typing with safety |
+| Composition | Runtime via injected object | Maximum flexibility |
+
+
+## Quick Reference
+
+```python
+class Animal:
+    def speak(self): return "..."
+class Dog(Animal):
+    def speak(self): return "Woof!"
+
+for a in [Dog(), Animal()]:
+    print(a.speak())
+```
+
+## Cross-Application Matrix
+
+| Area | Application | Relevant Section |
+|------|-------------|------------------|
+|Web Dev|Class-based views inheriting from generic views|13.1|
+|Data Science|Custom transformers inheriting sklearn base|13.6|
+|DevOps|Plugin systems with ABC interfaces|13.6|
+|Automation|Mixin-based logging/timestamp behaviour|13.5|
+
+
+## Chapter Quiz
+
+**Q1.** What does super() do?
+- creates a new instance
+- delegates to parent in MRO **<-- Correct**
+- calls __init__ only
+- returns the class name
+
+**Q2.** What algorithm does Python use for MRO?
+- DFS
+- BFS
+- C3 linearization **<-- Correct**
+- Topological sort
+
+**Q3.** What is a mixin?
+- a base class with abstract methods
+- a focused reusable behaviour class **<-- Correct**
+- a protocol interface
+- a composition pattern
+
+**Q4.** What prevents ABC instantiation?
+- __init__
+- @abstractmethod **<-- Correct**
+- @staticmethod
+- Protocol
+
+**Q5.** Composition is preferred over inheritance because:
+- it is faster
+- it is more flexible **<-- Correct**
+- it uses less memory
+- it is simpler
+
 
 ## Summary
 

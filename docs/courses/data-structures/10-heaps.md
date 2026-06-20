@@ -1,4 +1,6 @@
-# Chapter 10: Heaps
+﻿# Chapter 10: Heaps
+
+> **Previous:** [Chapter 9: Binary Search Trees](./09-bst.md) | **Next:** [Graphs](./11-graphs.md)
 
 ## Learning Objectives
 
@@ -7,11 +9,36 @@
 - Implement heapify and heap sort.
 - Use a heap as a priority queue.
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Binary Heap | Complete binary tree with heap property | Array storage, no pointers needed |
+| Max-Heap | Parent >= children | Root is always the maximum element |
+| Min-Heap | Parent <= children | Root is always the minimum element |
+| Insert / Extract | Bubble up / sift down O(log n) | Priority queue core operations |
+| Build Heap | Bottom-up heapify is O(n) | Faster than inserting n elements |
+| Heap Sort | Build + extract repeatedly | In-place O(n log n) sorting |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Heap] --> B[Complete Binary Tree Property]
+    B --> C[Max-Heap vs Min-Heap]
+    C --> D[Insert: Bubble Up O(log n)]
+    D --> E[Extract: Sift Down O(log n)]
+    E --> F[Build Heap O(n)]
+    F --> G[Heap Sort O(n log n)]
+```
+
 ## Theory
 
 ![Heaps, Balanced Trees and Advanced Data Structures](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch06-heap-trees-advanced.png)
 
 ### Binary Heap
+
+> **Remember:** Array indexing for heaps: parent at i/2, left child at 2i, right child at 2i+1 (1-based) - these index formulas are essential for all heap operations.
 
 A **binary heap** is a complete binary tree satisfying the **heap property**:
 - **Max-heap**: for every node, \( \text{parent} \ge \text{children} \).
@@ -44,6 +71,8 @@ For node at index \( i \):
 1. Build a max-heap from the array (\( O(n) \)).
 2. Repeatedly extract the root (swap with last, reduce heap size, heapify).
 3. Total: \( O(n \log n) \), in-place.
+
+> **One-Sentence Takeaway:** Heaps combine array storage with tree structure for O(log n) priority operations - the key insight is that complete binary trees map perfectly to flat arrays.
 
 ## Examples
 
@@ -265,7 +294,11 @@ Events (by timestamp):
   t=200 Process
 ```
 
+> **One-Sentence Takeaway:** The O(n) build-heap vs O(n log n) repeated-insert distinction is a classic interview question - bottom-up heapify is the key to understanding it.
+
 ## ðŸ’¡ Pro Tips
+
+> **Pro Tip:** The two-heap median finder (max-heap for lower half, min-heap for upper half) is a classic interview problem that showcases the power of pairing opposite heaps together.
 
 - **Building a heap is \(O(n)\), not \(O(n \log n)\)**: The trick is percolate-down (heapify) starting from the last non-leaf node. Percolate-up from each element (Floyd's method) would be \(O(n \log n)\). Always use bottom-up construction.
 - **Heap sort is in-place but not stable**: The relative order of equal elements is not preserved. Use merge sort if stability is required.

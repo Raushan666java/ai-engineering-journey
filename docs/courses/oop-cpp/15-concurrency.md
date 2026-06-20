@@ -1,4 +1,6 @@
-# Chapter 15: Concurrency
+﻿# Chapter 15: Concurrency
+
+> **Previous:** [14-lambdas](./14-lambdas.md) | **Next:** [16-design-patterns](./16-design-patterns.md)
 
 ## Learning Objectives
 
@@ -10,11 +12,38 @@ After studying this chapter, students will be able to:
 - Launch asynchronous tasks with `std::async` and `std::future`
 - Use `std::atomic` for lock-free operations
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Concurrency Landscape** | C++11 memory model enables portable threading | Know your hardware concurrency |
+| **std::thread** | Join or detach every thread before destruction | Store thread objects, don't let them fall out of scope |
+| **Mutex and Lock Guard** | mutex + lock_guard = RAII lock management | Always lock with RAII wrappers |
+| **condition_variable** | Wait for condition, notify when state changes | Always check the predicate in a loop |
+| **async/future/promise** | Highest-level primitive: launch policy + future result | Prefer async over manual thread for task parallelism |
+| **Atomics** | Lock-free operations on fundamental types | Use for simple counters and flags only |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Concurrency Landscape] --> B[std::thread]
+    B --> C[Mutex and Lock Guard]
+    C --> D[condition_variable]
+    B --> E[async/future/promise]
+    C --> F[Atomics]
+    E --> F
+    F --> G[Avoiding Common Pitfalls]
+```
+
 ## 15.1 The Concurrency Landscape
 
 ![Concurrency Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/15-concurrency.png)
 
 Modern hardware provides multiple cores that execute threads in parallel. C++11 introduced a portable threading library. Two fundamental issues arise:
+
+> **Warning:** Always lock mutexes with RAII wrappers (lock_guard or unique_lock). Manual lock/unlock pairs are error-prone and exception-unsafe.
+
 
 1. **Data races**: multiple threads access the same memory location without synchronisation
 2. **Deadlocks**: threads block waiting for each other's resources
@@ -23,6 +52,7 @@ The C++ memory model guarantees that well-defined concurrent programs behave pre
 
 ## 15.2 std::thread
 
+> **One-Sentence Takeaway:** std::thread launches execution in a new thread; you must join or detach before it is destroyed.
 A `std::thread` represents a single execution context:
 
 ```cpp
@@ -54,6 +84,7 @@ A thread must be joined or detached before destruction, or `std::terminate` is c
 
 ## 15.3 Mutex and Lock Guard
 
+> **One-Sentence Takeaway:** std::mutex protects shared data; lock_guard and unique_lock provide RAII lock management.
 A `std::mutex` provides mutual exclusion. `std::lock_guard` acquires the mutex on construction and releases it on destruction (RAII):
 
 ```cpp
@@ -89,6 +120,7 @@ Additional mutex variants:
 
 ## 15.4 std::condition_variable
 
+> **One-Sentence Takeaway:** condition_variable lets threads wait for a condition, waking only when another thread notifies them.
 A condition variable allows threads to wait for a condition to become true:
 
 ```cpp
@@ -140,6 +172,7 @@ int main() {
 
 ## 15.5 std::async, std::future, std::promise
 
+> **One-Sentence Takeaway:** std::async with std::future is the highest-level concurrency primitive, returning a result that will be available later.
 `std::async` runs a function asynchronously and returns a `std::future` that holds the result:
 
 ```cpp
@@ -189,6 +222,7 @@ int main() {
 
 ## 15.6 Atomic Operations
 
+> **One-Sentence Takeaway:** std::atomic provides lock-free operations on fundamental types, essential for lock-free algorithms.
 `std::atomic<T>` provides lock-free operations for small types (typically integral and pointer):
 
 ```cpp
@@ -228,6 +262,7 @@ Memory ordering specifies visibility constraints:
 
 ## 15.7 Avoiding Common Pitfalls
 
+> **One-Sentence Takeaway:** Deadlock, data races, and false sharing are common pitfalls — systematic discipline prevents them.
 ### Deadlock
 Lock mutexes in a consistent order:
 
@@ -260,6 +295,74 @@ t.detach();
 ```
 
 Capture by value or join the thread before exit.
+
+## Concept Comparison Table
+
+| Primitive | Purpose | Key Method | RAII Wrapper |
+|-----------|---------|------------|-------------|
+| std::thread | Execution context | `join()`, `detach()` | N/A (join in destructor) |
+| std::mutex | Mutual exclusion | `lock()`, `unlock()` | std::lock_guard, unique_lock |
+| std::condition_variable | Thread coordination | `wait()`, `notify_one()` | unique_lock required |
+| std::future | Async result | `get()`, `wait_for()` | N/A |
+| std::atomic | Lock-free ops | `load()`, `store()`, `fetch_add()` | N/A |
+
+## Quick Reference
+
+| Situation | Correct Pattern |
+|-----------|----------------|
+| Protect shared data | `std::mutex m; std::lock_guard<std::mutex> lock(m);` |
+| Thread-safe queue | mutex + condition_variable: wait loop with predicate |
+| Fire-and-forget task | `std::async(std::launch::async, func)` |
+| Get a result later | `auto future = std::async(func); auto result = future.get();` |
+| Simple counter | `std::atomic<int> counter{0}; counter.fetch_add(1);` |
+| Avoid deadlock | Lock mutexes in consistent order; use std::lock |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Web Servers** | Thread pool processing requests, async for I/O |
+| **Game Engines** | Dedicated threads for render, physics, audio, network |
+| **Data Processing** | async for parallel map-reduce, future for result collection |
+| **GUI Applications** | Background thread for work, future to update UI on completion |
+| **Real-time Systems** | Atomics for lock-free metrics, careful mutex discipline |
+
+## Chapter Quiz
+
+1. What must you do with every std::thread before it is destroyed?
+   A) Nothing — destructor handles it
+   B) Call join() or detach()
+   C) Call interrupt()
+   D) Call cancel()
+   <details><summary>Answer</summary>**B)** If neither join nor detach is called, std::thread's destructor calls std::terminate.</details>
+
+2. What is the correct RAII wrapper for a mutex?
+   A) std::mutex_lock
+   B) std::lock_guard or std::unique_lock
+   C) std::scoped_mutex
+   D) std::auto_lock
+   <details><summary>Answer</summary>**B)** lock_guard and unique_lock provide RAII lock management.</details>
+
+3. Why must you check the predicate in a loop with condition_variable::wait?
+   A) It is optional
+   B) Spurious wakeups can occur
+   C) The compiler requires it
+   D) The mutex is unlocked during wait
+   <details><summary>Answer</summary>**B)** Spurious wakeups are allowed — always check the predicate in a loop.</details>
+
+4. std::async with std::launch::async guarantees:
+   A) The function runs on the calling thread
+   B) A new thread is created
+   C) The function is deferred
+   D) The function runs asynchronously
+   <details><summary>Answer</summary>**B)** std::launch::async forces a new thread to be created.</details>
+
+5. Which of the following is NOT a common concurrency pitfall?
+   A) Deadlock
+   B) Data race
+   C) Virtual function call overhead
+   D) False sharing
+   <details><summary>Answer</summary>**C)** Virtual function call overhead is not a concurrency-specific issue.</details>
 
 ## 15.8 Summary
 

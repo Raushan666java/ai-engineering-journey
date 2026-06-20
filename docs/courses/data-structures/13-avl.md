@@ -1,13 +1,51 @@
 # Chapter 13: AVL Trees
 
+**Prev:** [Chapter 12: Graph Traversals](12-graph-traversals.md) | **Next:** [Chapter 14: Red-Black Trees](14-red-black.md)
+
 ## Learning Objectives
+
+> **One-Sentence Takeaway:** AVL trees guarantee O(log n) operations by maintaining a strict height balance factor of -1, 0, or 1 at every node.
 
 - Define balance factor and AVL invariant.
 - Implement LL, RR, LR, and RL rotations.
 - Implement insertion and deletion with rebalancing.
 - Analyze AVL tree height guarantees.
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Balance factor | height(left) - height(right) ∈ {-1, 0, 1} | The invariant that keeps the tree balanced |
+| Rotations | LL, RR (single), LR, RL (double) | Four patterns that restore balance after modifications |
+| Insertion | Insert as BST, then rebalance | At most one rotation needed |
+| Deletion | Remove as BST, then rebalance up the path | May require cascading rotations to root |
+| Height bound | \(h < 1.44 \log n\) | Guarantees logarithmic worst-case search |
+| AVL vs Red-Black | Tighter balance → faster search | Choose AVL for search-heavy workloads |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[AVL Tree] --> B[BST Insert/Delete]
+    B --> C{Balance Factor Check}
+    C --> D[|bf| ≤ 1 ✓]
+    C --> E[|bf| > 1 ✗]
+    D --> F[Done]
+    E --> G{Which Rotation?}
+    G --> H[LL → Right Rotate]
+    G --> I[RR → Left Rotate]
+    G --> J[LR → Left then Right]
+    G --> K[RL → Right then Left]
+    H --> L[Tree Balanced]
+    I --> L
+    J --> L
+    K --> L
+    L --> F
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** The AVL invariant ensures that the tree height never exceeds 1.44 log n, making all operations O(log n).
 
 ![AVL Tree Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch13-avl.png)
 
@@ -51,6 +89,8 @@ T1  y          =>       z   x
 ```
 
 ## Examples
+
+> **One-Sentence Takeaway:** The code demonstrates how rotations, balance factor checking, and rebalancing work together to maintain the AVL invariant through insertions and deletions.
 
 ### Example 1: AVL Tree Full Implementation
 
@@ -313,12 +353,14 @@ bool isAVL(AVLNode<T>* node) {
 // std::cout << "Is AVL: " << (isAVL(avl.getRoot()) ? "yes" : "no") << "\n";
 ```
 
-## ðŸ’¡ Pro Tips
+## 💡 Pro Tips
 
-- **The four rotation patterns are just two**: LL and RR are symmetric (single rotations). LR and RL are symmetric (double rotations â€” rotate the child first, then the node). Master one direction and the other is mirrored.
+> **One-Sentence Takeaway:** Master single rotations (LL/RR) first — double rotations (LR/RL) are just two single rotations in sequence.
+
+- **The four rotation patterns are just two**: LL and RR are symmetric (single rotations). LR and RL are symmetric (double rotations — rotate the child first, then the node). Master one direction and the other is mirrored.
 - **Balance factor = height(left) - height(right)**: AVL invariant requires this to be -1, 0, or 1. After insertion, walk up to the first unbalanced node and apply the corresponding rotation.
 - **Deletion may cascade**: Unlike insertion (at most one rotation needed), deletion may require rotations at multiple ancestors. Walk all the way up to the root, rebalancing at each unbalanced node.
-- **AVL vs Red-Black**: AVL trees have tighter balance â†’ faster lookups. Red-Black trees have faster insertions/deletions (fewer rotations). Choose AVL for search-heavy workloads.
+- **AVL vs Red-Black**: AVL trees have tighter balance → faster lookups. Red-Black trees have faster insertions/deletions (fewer rotations). Choose AVL for search-heavy workloads.
 
 ## One-Sentence Takeaways
 
@@ -337,8 +379,8 @@ bool isAVL(AVLNode<T>* node) {
 | Search | \(O(n)\) worst | \(O(\log n)\) | \(O(\log n)\) |
 | Insert | \(O(n)\) worst | \(O(\log n)\) | \(O(\log n)\) |
 | Delete | \(O(n)\) worst | \(O(\log n)\) | \(O(\log n)\) |
-| Rotations per insert | 0 | â‰¤ 2 | â‰¤ 2 |
-| Rotations per delete | 0 | \(O(\log n)\) | â‰¤ 3 |
+| Rotations per insert | 0 | ≤ 2 | ≤ 2 |
+| Rotations per delete | 0 | \(O(\log n)\) | ≤ 3 |
 | Extra storage | None | Balance factor (2 bits) | Color bit (1 bit) |
 
 ## Quick Reference: AVL Rotation Patterns
@@ -364,30 +406,30 @@ bool isAVL(AVLNode<T>* node) {
 
 1. **What balance factor values does AVL permit?**
    - a) 0, 1, 2
-   - b) -1, 0, 1 âœ“
+   - b) -1, 0, 1 ✅
    - c) -2, -1, 0, 1, 2
    - d) 0 only
 
 2. **How many rotations may be needed after an AVL insertion?**
-   - a) At most 1 âœ“
+   - a) At most 1 ✅
    - b) At most 2
    - c) \(O(\log n)\)
    - d) 0
 
 3. **LR rotation is:**
    - a) Single rotation
-   - b) Double rotation (left then right) âœ“
+   - b) Double rotation (left then right) ✅
    - c) Double rotation (right then left)
    - d) No rotation needed
 
 4. **What is the maximum height of an AVL tree with \(n\) nodes?**
    - a) \(n\)
-   - b) \(1.44 \log n\) âœ“
+   - b) \(1.44 \log n\) ✅
    - c) \(2 \log n\)
    - d) \(\log n\)
 
 5. **Which is better for search-heavy workloads?**
-   - a) AVL âœ“
+   - a) AVL ✅
    - b) Red-Black
    - c) Unbalanced BST
    - d) Linked list

@@ -1,11 +1,43 @@
 # Chapter 18: Union-Find (Disjoint Set Union)
 
+**Prev:** [Chapter 17: Segment Tree and Fenwick Tree](17-segment-tree.md) | **Next:** None
+
 ## Learning Objectives
 
 - Define the Disjoint Set Union (DSU) data structure.
 - Implement find and union with path compression and union by rank.
 - Analyze the inverse-Ackermann amortized complexity.
 - Apply DSU to Kruskal's MST and connected components problems.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| DSU operations | Find + Union with optimizations | Near-constant time per operation |
+| Path compression | Flatten tree during find | \(O(\log n)\) amortized |
+| Union by rank | Attach smaller tree under larger | Limits tree depth |
+| Combined optimizations | Path compression + union by rank | \(O(\alpha(n))\) amortized |
+| Kruskal's MST | Sort edges + DSU for cycle detection | \(O(E \log V)\) total |
+| Connected components | Union adjacent elements | \(O(n \alpha(n))\) |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[DSU Operations] --> B[find(x)]
+    A --> C[union(x,y)]
+    B --> D[Path Compression]
+    C --> E[Union by Rank]
+    D --> F[O(α(n))]
+    E --> F
+    F --> G[Applications]
+    G --> H[Kruskal's MST]
+    G --> I[Cycle Detection]
+    G --> J[Connected Components]
+    G --> K[Image Segmentation]
+```
+
+> **One-Sentence Takeaway:** DSU, with path compression and union by rank, supports find and union in amortized near-constant \(O(\alpha(n))\) — the most efficient dynamic connectivity structure.
 
 ## Theory
 
@@ -36,6 +68,8 @@ The DSU data structure maintains a collection of disjoint (non-overlapping) sets
 - Image segmentation (connected components labeling)
 
 ## Examples
+
+> **One-Sentence Takeaway:** Five worked examples show DSU power: basic operations, Kruskal's MST, cycle detection, connected components — all using the same near-constant time abstraction.
 
 ### Example 1: DSU Implementation with Path Compression and Union by Rank
 
@@ -314,7 +348,9 @@ int main() {
 Connected components: 3
 ```
 
-## ðŸ’¡ Pro Tips
+## 💡 Pro Tips
+
+> **One-Sentence Takeaway:** Union by rank limits tree depth; path compression alone already gives O(log n) — together they reach the theoretical best.
 
 - **Implement union by rank OR by size**: Both give similar theoretical guarantees. Union by size is slightly more intuitive â€” attach the smaller tree under the larger tree.
 - **Path compression alone is almost enough**: Even without union by rank, path compression gives amortized \(O(\log n)\). Adding union by rank yields the inverse Ackermann bound \(O(\alpha(n))\).

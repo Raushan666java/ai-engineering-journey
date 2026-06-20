@@ -1,4 +1,6 @@
-# Chapter 8: Exception Handling
+﻿# Chapter 8: Exception Handling
+
+> **Previous:** [07-templates](./07-templates.md) | **Next:** [09-stl-containers](./09-stl-containers.md)
 
 ## Learning Objectives
 
@@ -10,6 +12,29 @@ After studying this chapter, students will be able to:
 - Use `noexcept` correctly in function declarations
 - Create custom exception types
 - Distinguish among error-handling strategies
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Traditional Error Handling** | Return codes are fragile; exceptions provide structured propagation | Use exceptions for exceptional conditions, not control flow |
+| **Throw, Try, Catch** | Three-keyword mechanism separates detection from handling | Always catch by reference to avoid slicing |
+| **Stack Unwinding** | Destructors run automatically during scope rollback | Keep destructors noexcept — exceptions during unwinding terminate |
+| **RAII** | Resource acquisition is initialisation — deterministic cleanup | Prefer RAII wrappers over manual try/catch |
+| **noexcept** | Declares functions that never throw, enabling optimisation | Mark move operations and swap as noexcept |
+| **Exception Hierarchy** | std::exception base class for polymorphic catching | Derive custom exceptions from std::runtime_error |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Traditional Error Handling] --> B[Throw/Try/Catch]
+    B --> C[Stack Unwinding]
+    C --> D[RAII]
+    D --> E[noexcept]
+    E --> F[Exception Hierarchy]
+    F --> G[Custom Exception Classes]
+```
 
 ## 8.1 Traditional Error Handling
 
@@ -29,6 +54,7 @@ This approach has weaknesses: return codes can be ignored, error paths interleav
 
 ## 8.2 Throw, Try, Catch
 
+> **One-Sentence Takeaway:** The try/catch/throw mechanism separates error detection from error handling, letting you deal with exceptions where it makes sense.
 Exception handling uses three keywords:
 
 ```cpp
@@ -72,6 +98,7 @@ try {
 
 ## 8.3 Stack Unwinding
 
+> **One-Sentence Takeaway:** Stack unwinding guarantees that local objects are destroyed in reverse construction order as the call stack rolls back.
 When an exception propagates, destructors run for all local objects on the stack between the throw point and the catch handler:
 
 ```cpp
@@ -115,6 +142,7 @@ This demonstrates why RAII (Resource Acquisition Is Initialisation) is fundament
 
 ## 8.4 RAII
 
+> **One-Sentence Takeaway:** RAII ties resource lifetime to object lifetime — your destructor releases the resource automatically regardless of how the scope is exited.
 RAII ties resource lifetime to object lifetime: acquire resources in the constructor, release them in the destructor. When the destructor runs during stack unwinding, the resource is released correctly.
 
 ```cpp
@@ -140,6 +168,7 @@ All standard library classes (containers, strings, streams, smart pointers) impl
 
 ## 8.5 The noexcept Specifier
 
+> **One-Sentence Takeaway:** The noexcept specifier tells the compiler the function will never emit an exception, enabling optimisations and clarifying contracts.
 `noexcept` declares that a function will not emit exceptions. It enables compiler optimisations (exception-handling bookkeeping can be omitted) and signals intent to callers.
 
 ```cpp
@@ -165,6 +194,7 @@ Move constructors and move assignments should be `noexcept` to enable optimisati
 
 ## 8.6 Standard Exception Hierarchy
 
+> **One-Sentence Takeaway:** std::exception and its derived types provide a standardised hierarchy for polymorphic exception handling.
 The C++ standard library defines an exception hierarchy rooted at `std::exception`:
 
 ```
@@ -184,6 +214,7 @@ std::exception
 
 ## 8.7 Custom Exception Classes
 
+> **One-Sentence Takeaway:** Deriving from std::exception gives you a standard interface that integrates with existing catch blocks.
 Derive custom exceptions from `std::exception` or one of its subclasses:
 
 ```cpp
@@ -207,6 +238,75 @@ private:
 ```
 
 Custom exceptions preserve the polymorphic `what()` interface while adding domain-specific information.
+
+## Concept Comparison Table
+
+| Strategy | Mechanism | When to Use |
+|----------|-----------|-------------|
+| Return Codes | errno, sentinel values | Non-critical, frequent failures |
+| Exceptions | 	hrow/	ry/catch | Exceptional, rare failures |
+| 
+oexcept | Compiler guarantee | Functions that truly never throw |
+| RAII | Destructor-based cleanup | Resource management always |
+| std::optional (C++17) | Value-or-nullopt | Expected absence, not failure |
+
+## Quick Reference
+
+| Concept | Key Detail | Common Pitfall |
+|---------|------------|----------------|
+| 	hrow | Creates exception object, starts unwinding | Throwing during stack unwinding = terminate |
+| 	ry/catch | Catches by reference | Catching by value slices the object |
+| RAII | Destructor releases resource | Forgetting RAII = manual cleanup |
+| 
+oexcept | Optimisation contract | Violating it calls terminate |
+| what() | Virtual method on std::exception | Not overridden in custom types |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Embedded Systems** | Exceptions often disabled — use error codes + RAII |
+| **Game Dev** | Critical loops avoid exceptions for performance |
+| **Financial Software** | Transaction rollback via RAII wrappers |
+| **Network Services** | Connection cleanup in destructors ensures no leaks |
+| **Database Drivers** | Exception-safe transaction guards |
+
+## Chapter Quiz
+
+1. What happens to local objects during stack unwinding?
+   A) They are leaked
+   B) Their destructors run in reverse order of construction
+   C) Their destructors run in construction order
+   D) They are ignored
+   <details><summary>Answer</summary>**B)** Stack unwinding destroys local objects in reverse order of construction.</details>
+
+2. Why should destructors never throw?
+   A) It is undefined behaviour
+   B) std::terminate is called during stack unwinding if a destructor throws
+   C) The compiler forbids it
+   D) It causes a segmentation fault
+   <details><summary>Answer</summary>**B)** If a destructor throws during stack unwinding when another exception is active, std::terminate is called.</details>
+
+3. What does noexcept enable that copy constructors do not?
+   A) Virtual dispatch
+   B) Move-based reallocation in std::vector
+   C) Inline expansion
+   D) Template instantiation
+   <details><summary>Answer</summary>**B)** std::vector uses noexcept move constructors to choose moves over copies during reallocation.</details>
+
+4. The RAII idiom stands for:
+   A) Resource Allocation in Initialisation
+   B) Resource Acquisition Is Initialisation
+   C) Runtime Allocation and Immediate Initialisation
+   D) Random Access Iterator Integration
+   <details><summary>Answer</summary>**B)** Resource Acquisition Is Initialisation — resources are acquired in constructors and released in destructors.</details>
+
+5. Which catch-all handler is correct?
+   A) catch()
+   B) catch(...)
+   C) catch(any)
+   D) catch(*)
+   <details><summary>Answer</summary>**B)** catch(...) is the catch-all handler in C++.</details>
 
 ## 8.8 Summary
 

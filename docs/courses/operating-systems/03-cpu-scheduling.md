@@ -1,5 +1,10 @@
 # Chapter 3: CPU Scheduling
 
+**<< [Processes](./02-processes.md)** | [**Next: Threads**](./04-threads.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Distinguish between preemptive and non-preemptive scheduling
@@ -8,6 +13,29 @@
 - Explain the priority inversion problem and its solutions
 - Design multilevel queue and multilevel feedback queue schedulers
 - Evaluate scheduling algorithms using Gantt charts and quantitative metrics
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Scheduling Criteria** | CPU utilization, throughput, turnaround time, waiting time, response time |
+| **FCFS** | Non-preemptive; simple but convoy effect; average waiting time can be high |
+| **SJF** | Optimal avg. waiting time; impractical without knowing future CPU bursts |
+| **Priority Scheduling** | Can cause indefinite blocking (starvation); aging solves it |
+| **Round Robin** | Preemptive; time quantum determines performance -- too large=>FCFS, too small=>overhead |
+| **Multilevel Queue** | Processes partitioned into queues with different scheduling policies |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Scheduling Basics] --> B[Scheduling Criteria]
+    B --> C[FCFS]
+    B --> D[SJF / SRTF]
+    B --> E[Priority Scheduling]
+    B --> F[Round Robin]
+    F --> G[Multilevel Queue / Feedback]
+    G --> H[Evaluation & Examples]
+</div>
 
 ## Theory
 
@@ -219,6 +247,72 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> SJF gives the **minimum average waiting time** theoretically, but it is impossible to implement perfectly because future CPU burst lengths are unknown. **SRTF** (preemptive SJF) is used as a benchmark to compare other algorithms.
+
+> [WARNING]
+> **Priority inversion** occurs when a low-priority process holds a resource needed by a high-priority process. Priority inheritance (temporarily boosting the low-priority process priority) is the standard solution. The Mars Pathfinder famously suffered from this.
+
+> [NOTE]
+> Round Robin time quantum is critical: if too large (>> context switch time), RR degenerates to FCFS. If too small, context switch overhead dominates. Rule of thumb: quantum should be ~80% of CPU bursts.
+
+## Concept Comparison
+
+| Criterion | FCFS | SJF | Priority | Round Robin |
+|---------|----|---|--------|-----------|
+| Preemptive | No | Optional (SRTF) | Optional | Yes |
+| Avg. Waiting Time | High | Optimal | Depends on priority | Moderate (depends on quantum) |
+| Starvation | No | Possible (long jobs) | Yes (low priority) | No |
+| Convoy Effect | Yes | No | No | No |
+| Overhead | Minimal | Moderate | Low | Moderate |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Turnaround Time** | Total time from process submission to completion |
+| **Waiting Time** | Total time spent waiting in ready queue |
+| **Response Time** | Time from submission to first CPU response |
+| **Throughput** | Number of processes completed per unit time |
+| **Aging** | Gradually increasing priority of waiting processes to prevent starvation |
+| **Convoy Effect** | Short processes waiting behind a long process in FCFS |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| FCFS | Not suitable | Suitable for serial jobs | Not suitable | Not suitable |
+| SJF | Not practical | Good for known workloads | Not suitable | Not suitable |
+| RR | Excellent (fair) | High overhead | Poor (no guarantees) | Good with small quantum |
+| Priority | Good for foreground tasks | Limited use | Essential (deadline-based) | Good for mixed workloads |
+
+## Chapter Quiz
+
+1. Which scheduling algorithm is provably optimal for min. avg. waiting time?
+   - a) FCFS
+   - b) SJF
+   - c) Round Robin
+   - d) Priority Scheduling
+
+2. The convoy effect is associated with which scheduling algorithm?
+   - a) FCFS
+   - b) SJF
+   - c) Round Robin
+   - d) Multilevel Queue
+
+3. What technique prevents starvation in priority scheduling?
+   - a) Preemption
+   - b) Aging
+   - c) Time quantum
+   - d) Multiprogramming
+
+4. In Round Robin, if the time quantum is very large, it degenerates to:
+   - a) SJF
+   - b) FCFS
+   - c) Priority
+   - d) Multilevel Queue
 
 ## Summary
 

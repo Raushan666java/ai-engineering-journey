@@ -1,8 +1,47 @@
 # Chapter 1 â€” HTML5
 
+> **Next:** [02-css](./02-css.md)
+
 ## Learning Objectives
 
+> **One-Sentence Takeaway:** Semantic HTML5 elements provide meaningful document structure that aids accessibility and SEO.
+
 By the end of this chapter, you will be able to:
+
+## Chapter at a Glance
+
+> **One-Sentence Takeaway:** HTML5 forms offer built-in validation through attributes like `required`, `pattern`, and `min`/`max`.
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+|Semantic Elements|Landmark tags convey meaning to browsers and assistive tech|Use `<header>`,`<nav>`,`<main>`,`<section>`,`<article>`,`<aside>`,`<footer>` for document structure|
+|HTML Forms|Rich input types and validation attributes enable client-side checks|Leverage `required`,`pattern`,`min`,`max` for zero-JS validation|
+|Multimedia|Native `<audio>` and `<video>` elements replace plugin-based players|Always provide multiple source formats and a `<track>` for captions|
+|Accessibility|WCAG 2.2 and ARIA make web content perceivable by all users|Add `alt` text, ARIA roles, and keyboard support to every component|
+|SEO Meta Tags|Open Graph and Twitter Card tags control link previews|Include `og:title`,`og:description`,`og:image` for social sharing|
+|Browser APIs|Web Storage, Geolocation, Drag & Drop enable rich client features|Use `localStorage` for persistence, `sessionStorage` for tab-scoped data|
+
+## Chapter Roadmap
+
+> **One-Sentence Takeaway:** Native `<audio>` and `<video>` elements with multiple source formats ensure broad browser compatibility.
+
+```mermaid
+graph TD
+    A[Semantic Document Structure]
+    B[HTML Forms & Validation]
+    A --> B
+    C[Multimedia Elements]
+    B --> C
+    D[Accessibility & ARIA]
+    C --> D
+    E[SEO & Meta Tags]
+    D --> E
+    F[Browser APIs]
+    E --> F
+    G[Putting It All Together]
+    F --> G
+```
+
 
 1. Construct semantically correct HTML5 documents using the full complement of semantic elements.
 2. Implement accessible, validated HTML forms with modern input types and constraint validation.
@@ -12,6 +51,8 @@ By the end of this chapter, you will be able to:
 6. Leverage browser APIs including the Geolocation API, Web Storage, and the Drag and Drop API.
 
 ## Theory
+
+> **One-Sentence Takeaway:** ARIA roles and properties bridge accessibility gaps for custom interactive widgets.
 
 ### 1.1 Semantic Document Structure
 
@@ -307,7 +348,107 @@ function onDrop(event) {
 }
 ```
 
+
+> [!TIP]
+> Use the `<picture>` element with `<source>` tags for responsive images and format fallbacks (WebP, AVIF, JPEG).
+
+> [!WARNING]
+> Always use `label` elements with `for` attributes on form inputs to ensure screen-reader accessibility.
+
+> [!REMEMBER]
+> A valid HTML document must have exactly one `<main>` element per page — never duplicate it.
+
+
+
+## Concept Comparison Table
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|`<section>` vs `<div>`|Semantic grouping with heading|Generic container without meaning|
+|`localStorage` vs `sessionStorage`|Persists across sessions|Cleared when tab closes|
+|`<audio>` vs `<video>`|Sound-only playback|Visual + audio with optional captions|
+|`aria-selected` vs `aria-current`|Indicates selected option in a group|Indicates current item in a set|
+|`GET` vs `POST` form|Retrieves data, visible in URL|Submits data, hidden in body|
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|-----------|
+|Semantic Elements|`<header>`,`<nav>`,`<main>`,`<section>`,`<article>`,`<aside>`,`<footer>`|
+|Form Validation|`required`,`pattern`,`minlength`,`maxlength`,`min`,`max`,`step`|
+|Multimedia Attributes|`controls`,`autoplay`,`loop`,`preload`,`poster`,`muted`|
+|ARIA Landmarks|`role='banner'`,`role='navigation'`,`role='main'`,`role='complementary'`,`role='contentinfo'`|
+|Open Graph Tags|`og:title`,`og:description`,`og:image`,`og:type`,`og:url`|
+
+## Cross-Application Matrix
+
+| Domain | Application | Benefit |
+|--------|------------|--------|
+|Blog|Semantic structure, SEO meta tags|Improved search ranking and accessibility|
+|E-commerce|Forms with validation, ARIA for product cards|Better conversion through usable forms|
+|Video Platform|Native video with captions and poster|Cross-browser video without plugins|
+|Social Media|Open Graph tags, drag-and-drop uploads|Rich link previews and intuitive interactions|
+|Dashboard|Web Storage for preferences, canvas for charts|Persistent settings and dynamic visualizations|
+
+## Chapter Quiz
+
+Test your understanding with these quick questions.
+
+**Q1. Which HTML5 semantic element represents the dominant content of the page?**
+
+- A) `<header>`
+- B) `<main>`
+- C) `<section>`
+- D) `<article>`
+
+<details><summary>Answer</summary>
+
+**B) `<main>` — a document must have exactly one visible `<main>` element.**
+
+</details>
+
+**Q2. What attribute on an `<input>` element enforces a regular expression pattern?**
+
+- A) `required`
+- B) `regex`
+- C) `pattern`
+- D) `format`
+
+<details><summary>Answer</summary>
+
+**C) `pattern` — the value is matched against the given regular expression.**
+
+</details>
+
+**Q3. Which storage mechanism persists data even after the browser is closed?**
+
+- A) `sessionStorage`
+- B) `localStorage`
+- C) Cookies without expiry
+- D) Both B and C
+
+<details><summary>Answer</summary>
+
+**D) Both B and C — `localStorage` and persistent cookies survive browser restarts.**
+
+</details>
+
+**Q4. What is the purpose of the `alt` attribute on `<img>` elements?**
+
+- A) Display a tooltip on hover
+- B) Provide alternative text for screen readers
+- C) Set the image dimensions
+- D) Link to a higher-resolution version
+
+<details><summary>Answer</summary>
+
+**B) The `alt` attribute provides alternative text for assistive technologies and when images fail to load.**
+
+</details>
+
 ## Summary
+
+> **One-Sentence Takeaway:** Meta tags and Open Graph data control how content appears in search results and social media.
 
 - HTML5 semantic elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`) provide meaning and improve accessibility.
 - HTML5 forms include built-in validation via attributes such as `required`, `pattern`, `min`, and `max`.
@@ -317,6 +458,8 @@ function onDrop(event) {
 - Browser APIs such as Web Storage, Geolocation, and Drag and Drop enable rich client-side functionality without external libraries.
 
 ## Exercises
+
+> **One-Sentence Takeaway:** Browser APIs like Web Storage and Geolocation enable feature-rich client-side experiences.
 
 ### Review Questions
 

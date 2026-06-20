@@ -1,5 +1,10 @@
 # Chapter 14: Linux Kernel Internals
 
+**<< [I/O Systems](./13-io-systems.md)** | [**Next: Shell Scripting**](./15-shell-scripting.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Describe the Linux process model and the `task_struct`
@@ -8,6 +13,29 @@
 - Describe the Linux memory management architecture (buddy allocator, slab, vmalloc)
 - Explain the Virtual File System (VFS) layer and its data structures
 - Understand the /proc filesystem and how it exposes kernel state
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Linux Architecture** | Monolithic kernel with loadable modules; kernel space vs user space |
+| **Process Mgmt** | task_struct PCB, CFS scheduler, clone() system call |
+| **Memory Mgmt** | Buddy allocator (physical), SLUB (kernel objects), page tables (virtual) |
+| **VFS** | Virtual File System: uniform interface for all file systems |
+| **IPC** | Signals, pipes, sockets, shared memory, message queues, futexes |
+| **Modules** | Dynamically loadable kernel modules (drivers, file systems) |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Linux Architecture] --> B[Process Management]
+    A --> C[Memory Management]
+    A --> D[Virtual File System]
+    A --> E[IPC Mechanisms]
+    A --> F[Kernel Modules]
+    F --> G[Booting Process]
+    G --> H[Summary]
+</div>
 
 ## Theory
 
@@ -379,6 +407,66 @@ execve("/bin/sleep", ["sleep", "1"], 0x7fff...) = 0
 ... (much output from dynamic linker)
 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=...) = 12345
 ```
+
+
+> [TIP]
+> The **CFS (Completely Fair Scheduler)** uses a red-black tree of tasks ordered by virtual runtime (`vruntime`). It always picks the task with smallest `vruntime`, ensuring perfect fairness in O(log n) time.
+
+> [WARNING]
+> Kernel modules run in kernel space -- a buggy module can crash the entire system. Always test modules before production. Use `modprobe --dry-run` to check dependencies.
+
+> [NOTE]
+> **VFS** (Virtual File System) allows Linux to support ext4, XFS, Btrfs, NTFS, FAT32 simultaneously. All file systems implement the same VFS operations.
+
+## Concept Comparison
+
+| Feature | Linux | Windows NT | macOS/XNU |
+|-------|-----|----------|---------|
+| Kernel Type | Monolithic + modules | Hybrid | Hybrid (Mach + BSD) |
+| Scheduler | CFS (vruntime-based) | Priority-based (boosts) | Multi-level feedback |
+| File System | VFS -> ext4/XFS/Btrfs | NTFS (B+ tree $MFT) | APFS (B-tree) |
+| Process Model | fork()/clone() | CreateProcess() | fork() + Mach tasks |
+| IPC | Pipes, sockets, shm, futex | LPC/ALPC, named pipes | Mach messages, BSD sockets |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **CFS** | Completely Fair Scheduler -- O(log n) red-black tree |
+| **VFS** | Virtual File System -- uniform interface for diverse FS |
+| **Buddy Allocator** | Physical page allocation using power-of-two blocks |
+| **SLUB** | Kernel object allocator (replacement for SLAB) |
+| **Kernel Module** | Dynamically loadable kernel code (.ko file) |
+| **System Call** | Interface between user space and kernel space |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| CFS | Fair CPU distribution | Responsive UI | RT patches (PREEMPT_RT) | CPU shares via cgroups |
+| VFS | Mixed file systems | Desktop storage | Flash-friendly FS | OverlayFS for layers |
+| Modules | Netfilter/storage | GPU drivers | Minimal static kernel | Minimal modules |
+| cgroups | Resource limits | N/A | N/A | Container isolation |
+
+## Chapter Quiz
+
+1. What type of kernel does Linux use?
+   - a) Microkernel
+   - b) Hybrid
+   - c) Monolithic with modules
+   - d) Exokernel
+
+2. CFS uses which data structure?
+   - a) Linked list
+   - b) Red-black tree
+   - c) B-tree
+   - d) Priority queue
+
+3. VFS is responsible for:
+   - a) Managing virtual memory
+   - b) Uniform interface to multiple FS types
+   - c) Scheduling I/O
+   - d) Loading modules
 
 ## Summary
 

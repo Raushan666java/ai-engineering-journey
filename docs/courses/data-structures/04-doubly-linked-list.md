@@ -1,4 +1,6 @@
-# Chapter 4: Doubly Linked List and Circular Linked List
+﻿# Chapter 4: Doubly Linked List and Circular Linked List
+
+> **Previous:** [Chapter 3: Singly Linked List](./03-singly-linked-list.md) | **Next:** [Stacks](./05-stacks.md)
 
 ## Learning Objectives
 
@@ -7,11 +9,35 @@
 - Compare singly, doubly, and circular linked lists.
 - Analyze operation complexity for each variant.
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Node Structure | Each node has prev + data + next pointers | Use struct Node with prev, data, next fields |
+| Doubly Linked List | Forward and backward traversal supported | Delete node at known position in O(1) |
+| Circular Linked List | Last node points back to head | Use for round-robin scheduling |
+| Doubly Circular | Tail.next = head, head.prev = tail | Traverse in any direction indefinitely |
+| Memory Overhead | 2 pointers per node vs 1 in singly linked | Trade memory for operational flexibility |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Doubly Linked List] --> B[Singly vs Doubly vs Circular]
+    B --> C[Doubly: Insert, Delete, Traverse]
+    C --> D[Circular Singly]
+    D --> E[Circular Doubly]
+    E --> F[Complexity Comparison]
+    F --> G[Applications: LRU, Scheduler]
+```
+
 ## Theory
 
 ![Doubly Linked List Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch04-doubly-linked-list.png)
 
 ### Doubly Linked List
+
+> **Pro Tip:** Doubly linked lists use 2 pointers per node (prev + next) enabling O(1) deletion at both ends but double the memory overhead of singly linked lists.
 
 Each node stores pointers to both the next node and the previous node, enabling \( O(1) \) deletion at the tail and bidirectional traversal.
 
@@ -37,6 +63,8 @@ head â†’ [A] â†’ [B] â†’ [C] â†’ (back to head)
 Doubly circular:
 head â†” [A] â†” [B] â†” [C] â†” (back to head)
 ```
+
+> **One-Sentence Takeaway:** Doubly linked lists provide O(1) deletion at known nodes and backward traversal at the cost of double the pointer overhead per element.
 
 ## Examples
 
@@ -270,7 +298,11 @@ int main() {
 1 -> 2 -> 3 -> 4 -> (back to 1)
 ```
 
+> **One-Sentence Takeaway:** Review the complexity comparison table - choosing the right list variant can make the difference between O(1) and O(n) for critical operations.
+
 ## ðŸ’¡ Pro Tips
+
+> **Remember:** Always check for null prev on the head node before accessing node->prev in doubly linked list operations - this is the most common source of crashes.
 
 - **LRU cache is the classic doubly-linked list application**: Pair a DLL with a hash map. The DLL maintains access order; the hash map provides \(O(1)\) lookup. Move accessed nodes to the head to implement "most recently used" ordering.
 - **Circular lists are natural for round-robin**: No end-of-list checks needed â€” when you reach the same node again, you've visited everyone once. Perfect for CPU scheduling and turn-based games.

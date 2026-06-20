@@ -1,13 +1,47 @@
 # Chapter 11: Graphs
 
+**Prev:** [Chapter 10: Heaps](10-heaps.md) | **Next:** [Chapter 12: Graph Traversals](12-graph-traversals.md)
+
 ## Learning Objectives
+
+> **One-Sentence Takeaway:** Graphs model pairwise relationships; choose adjacency matrix for dense graphs and adjacency list for sparse graphs.
 
 - Define graphs and graph terminology.
 - Implement graph representations: adjacency matrix and adjacency list.
 - Distinguish directed, undirected, weighted, and unweighted graphs.
 - Analyze space complexity of each representation.
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Graph definition | \(G = (V, E)\) — vertices and edges | Models relationships between any entities |
+| Adjacency matrix | \(n \times n\) matrix, \(O(1)\) edge queries | Best for dense graphs (\(E \approx V^2\)) |
+| Adjacency list | Array of neighbor lists, \(O(V+E)\) space | Best for sparse graphs (most real-world graphs) |
+| Weighted graphs | Edge carries a numerical weight | Essential for shortest-path problems |
+| Directed vs Undirected | Arrows vs lines between vertices | Choose based on relationship symmetry |
+| Graph density | Dense: \(E \approx V^2\); Sparse: \(E \ll V^2\) | Density drives representation choice |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Graph Concepts] --> B{Representation?}
+    B --> C[Adjacency Matrix]
+    B --> D[Adjacency List]
+    C --> E[Dense Graphs]
+    D --> F[Sparse Graphs]
+    E --> G[O₁ Edge Queries]
+    F --> H[O(V+E) Space]
+    G --> I[Weighted Graphs]
+    H --> I
+    I --> J[Directed & Undirected]
+    J --> K[Applications]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** The choice between adjacency matrix (\(O(V^2)\) space) and adjacency list (\(O(V+E)\) space) depends on graph density.
 
 ![Graphs: Representations, Traversals and Algorithms](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch07-graphs.png)
 
@@ -51,6 +85,8 @@ A **graph** \( G = (V, E) \) consists of a set of vertices \( V \) and a set of 
 | \( \Delta(G) \) | Maximum degree |
 
 ## Examples
+
+> **One-Sentence Takeaway:** Code implementations reveal the practical trade-offs between matrix and list representations for real graph problems.
 
 ### Example 1: Adjacency Matrix
 

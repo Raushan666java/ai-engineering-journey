@@ -1,4 +1,6 @@
-# Chapter 14: NoSQL Databases
+# Chapter 14:
+
+> **Prev:** [Chapter 13query-processing](13-query-processing.md) | **Next:** [Chapter 15mongodb](15-mongodb.md) NoSQL Databases
 
 ## Learning Objectives
 
@@ -8,6 +10,34 @@
 - Classify NoSQL database types: document, key-value, column-family, graph
 - Select appropriate NoSQL solutions based on application requirements
 - Understand when to use SQL vs. NoSQL
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **NoSQL Motivation** | Scale-out, flexible schema, high availability | Choose NoSQL when relational constraints become bottlenecks |
+| **Key-Value Stores** | Simple get/put by primary key | Best for caching, session storage, and simple lookups |
+| **Document Stores** | Semi-structured data with nested queries | Use for content management, catalogs, and evolving schemas |
+| **Column-Family Stores** | Wide-column tables optimized for aggregation | Ideal for time-series data and analytics |
+| **Graph Databases** | Nodes + edges with graph traversal queries | Best for social networks, recommendations, and fraud detection |
+| **CAP Theorem** | Choose 2 of 3: Consistency, Availability, Partition Tolerance | Partition tolerance is mandatory — choose CP or AP |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Application Needs] --> B{Data Model}
+    B -->|Simple Key Lookups| C[Key-Value]
+    B -->|Nested Documents| D[Document Store]
+    B -->|Aggregations| E[Column-Family]
+    B -->|Relationships| F[Graph]
+    C --> G[Redis/DynamoDB]
+    D --> H[MongoDB/Couchbase]
+    E --> I[Cassandra/HBase]
+    F --> J[Neo4j/ArangoDB]
+```
+
+
 
 ## Theory
 
@@ -24,6 +54,9 @@ Relational databases dominated data management for decades, but the 2000s brough
 **Data Variety:** Relational normalization is designed for structured data, but modern applications handle documents, graphs, time-series, and key-value patterns.
 
 **The "NoSQL" Name:** The term "NoSQL" was popularized at a 2009 meetup about distributed non-relational databases. It was originally "No SQL" but is now commonly understood as "Not Only SQL."
+
+
+> **One-Sentence Takeaway:** NoSQL databases emerged to handle scale-out architectures, flexible schemas, and high availability that relational databases struggle with.
 
 ### 14.2 The CAP Theorem
 
@@ -53,6 +86,9 @@ Availability  Partition Tolerance
 
 **Important nuance:** CAP is not "pick 2 of 3 forever" but rather "during a network partition, you must choose between C and A." Outside of partitions, you can have both C and A.
 
+
+> **One-Sentence Takeaway:** Key-value stores are the simplest NoSQL model — get/put by primary key with no query language.
+
 ### 14.3 BASE vs. ACID
 
 NoSQL systems often use **BASE** instead of ACID:
@@ -70,7 +106,13 @@ NoSQL systems often use **BASE** instead of ACID:
 4. **Monotonic reads:** Once you see a value, you never see an older version
 5. **Strong (Linearizable):** Every read sees the latest write (like ACID)
 
+
+> **One-Sentence Takeaway:** Document stores store semi-structured JSON/BSON documents with nested query capabilities.
+
 ### 14.4 NoSQL Database Categories
+
+
+> **One-Sentence Takeaway:** Column-family stores organize data by column families rather than rows, optimizing for aggregation queries.
 
 #### 14.4.1 Document Stores (MongoDB, Couchbase, CouchDB, Firebase)
 
@@ -228,6 +270,9 @@ Unlike SQL's universal standard, NoSQL systems have diverse query languages:
 | Redis | Commands | `SCAN 0 MATCH user:*` |
 | DynamoDB | PartiQL / API | `SELECT * FROM Users WHERE age > 25` |
 
+
+> **One-Sentence Takeaway:** Graph databases represent entities as nodes and relationships as edges, enabling efficient traversal queries.
+
 ### 14.6 Polyglot Persistence
 
 Modern applications often use **multiple** database types, each optimized for specific workloads:
@@ -240,6 +285,9 @@ Modern applications often use **multiple** database types, each optimized for sp
 # - Elasticsearch: Full-text product search
 # - Neo4j: Product recommendation engine
 ```
+
+
+> **One-Sentence Takeaway:** The CAP theorem states you can only guarantee two of Consistency, Availability, and Partition Tolerance — and partitions are inevitable.
 
 ### 14.7 SQL vs. NoSQL Decision Guide
 
@@ -258,6 +306,9 @@ Modern applications often use **multiple** database types, each optimized for sp
 - "Which is better?" is the wrong question
 - The right question: "What data access patterns does my application need?"
 - Many modern apps use both (polyglot persistence)
+
+> **One-Sentence Takeaway:** Choosing between SQL and NoSQL depends on data structure, consistency needs, query patterns, and scale requirements.
+
 
 ## Examples
 

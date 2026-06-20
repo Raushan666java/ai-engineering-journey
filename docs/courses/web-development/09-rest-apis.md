@@ -1,8 +1,50 @@
 # Chapter 9: REST APIs and API Design
 
+> **Previous:** [08-node-express](./08-node-express.md) | **Next:** [10-auth](./10-auth.md)
+
 ## Learning Objectives
 
+> **One-Sentence Takeaway:** REST APIs organize endpoints around resources identified by URIs and manipulated via HTTP methods.
+
 By the end of this chapter, you will be able to:
+
+## Chapter at a Glance
+
+> **One-Sentence Takeaway:** Plural noun resource names with consistent URL hierarchy create intuitive, self-documenting APIs.
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+|REST Principles|Six constraints including stateless, cacheable, uniform interface|Use plural nouns for resources, HTTP methods for actions, nested URIs for relations|
+|Route Design|Maps HTTP methods + URL patterns to handler functions|Keep resource names plural, use params for IDs, query params for filtering|
+|Input Validation|Zod schemas parse and validate request bodies and query params|Validate at the boundary — parse input before it reaches business logic|
+|Error Handling|Structured error responses with code, message, and details fields|Use consistent error shape across all endpoints for client-side handling|
+|OpenAPI/Swagger|YAML/JSON specification documents the entire API surface|Auto-generate client SDKs and interactive docs from the spec file|
+|API Versioning|URI, header, or query-parameter strategies for backward compat|Prefer URI versioning `/v1/` for simplicity; header versioning for cleaner URLs|
+
+## Chapter Roadmap
+
+> **One-Sentence Takeaway:** Input validation at the boundary using Zod catches malformed data before business logic runs.
+
+```mermaid
+graph TD
+    A[REST Constraints]
+    B[Resource Naming Conventions]
+    A --> B
+    C[Express Route Implementation]
+    B --> C
+    D[Input Validation with Zod]
+    C --> D
+    E[Structured Error Handling]
+    D --> E
+    F[Pagination & Filtering]
+    E --> F
+    G[OpenAPI Documentation]
+    F --> G
+    H[Versioning & Bulk Operations]
+    G --> H
+```
+
+
 - Design RESTful APIs following resource-oriented principles
 - Implement proper URI naming conventions and HTTP method usage
 - Handle request validation, pagination, filtering, and sorting
@@ -11,6 +53,8 @@ By the end of this chapter, you will be able to:
 - Test APIs with automated integration tests
 
 ## 9.1 Principles of REST
+
+> **One-Sentence Takeaway:** Structured error responses with codes and details enable robust client-side error handling.
 
 ![REST APIs Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/09-rest-apis.png)
 
@@ -47,6 +91,8 @@ PUT    /api/update_user
 ```
 
 ## 9.2 Express REST API Implementation
+
+> **One-Sentence Takeaway:** OpenAPI specifications generate documentation, client SDKs, and automated test suites.
 
 ```typescript
 import express, { Request, Response, NextFunction } from "express";
@@ -243,6 +289,8 @@ app.listen(3000, () => console.log("API running on port 3000"));
 
 ## 9.3 OpenAPI Documentation
 
+> **One-Sentence Takeaway:** API versioning ensures backward compatibility as the API evolves over time.
+
 ```yaml
 openapi: 3.1.0
 info:
@@ -388,6 +436,104 @@ app.post("/api/users/bulk", async (req, res, next) => {
   }
 });
 ```
+
+
+> [!TIP]
+> Use `z.coerce.number()` to automatically convert query string values to numbers in Zod schemas — query params are always strings.
+
+> [!WARNING]
+> Never expose internal IDs like database primary keys in API responses. Use UUIDs or slugs for public resource identifiers.
+
+> [!REMEMBER]
+> PUT replaces the entire resource while PATCH applies partial modifications. Clients should know which one your API expects.
+
+
+
+## Concept Comparison Table
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|PUT vs PATCH|Full resource replacement|Partial modification|
+|URI vs Header versioning|Simple `/v1/`,`/v2/` in the path|Clean URLs, client sets `Accept-Version`|
+|Offset vs Cursor pagination|`?page=1&limit=20`, random access|`?cursor=abc`, stable under writes|
+|Zod vs manual validation|Declarative schemas, type inference|Error-prone, verbose, no types|
+|JSON API vs REST|Strict spec, compound documents|Loose guidelines, resource-oriented|
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|-----------|
+|REST Constraints|Stateless, Client-Server, Cacheable, Layered System, Uniform Interface, Code on Demand|
+|Status Code Ranges|2xx Success, 3xx Redirection, 4xx Client Error, 5xx Server Error|
+|Common Codes|200 OK, 201 Created, 204 No Content, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 409 Conflict, 422 Unprocessable, 429 Rate Limited, 500 Server Error|
+|Zod Methods|`.parse()`, `.safeParse()`, `.coerce.`, `.optional()`, `.default()`, `.refine()`|
+|OpenAPI Fields|`openapi`,`info`,`servers`,`paths`,`components`,`schemas`,`parameters`,`requestBody`,`responses`|
+
+## Cross-Application Matrix
+
+| Domain | Application | Benefit |
+|--------|------------|--------|
+|E-commerce|RESTful product, cart, order endpoints|Standardized CRUD operations|
+|Social Media|Nested post/comment/like resources|Natural resource hierarchy|
+|SaaS Dashboard|Pagination, filtering, sorting on list endpoints|Efficient data browsing at scale|
+|Mobile Backend|OpenAPI spec generates mobile client SDK|Type-safe mobile API consumption|
+|Microservices|Versioned endpoints for service-to-service calls|Safe parallel evolution of services|
+
+## Chapter Quiz
+
+Test your understanding with these quick questions.
+
+**Q1. Which HTTP method should be used to partially update a resource?**
+
+- A) PUT
+- B) POST
+- C) PATCH
+- D) UPDATE
+
+<details><summary>Answer</summary>
+
+**C) PATCH applies partial modifications to a resource. PUT replaces the entire resource.**
+
+</details>
+
+**Q2. What HTTP status code indicates a resource was successfully created?**
+
+- A) 200
+- B) 201
+- C) 202
+- D) 204
+
+<details><summary>Answer</summary>
+
+**B) 201 Created is returned after successfully creating a resource via POST.**
+
+</details>
+
+**Q3. What is the purpose of Zod's `.parse()` method?**
+
+- A) Transform data into a different format
+- B) Validate input and return typed data or throw
+- C) Parse JSON strings into objects
+- D) Generate API documentation
+
+<details><summary>Answer</summary>
+
+**B) `.parse()` validates the input against the schema and returns the typed data, or throws a `ZodError` with validation details.**
+
+</details>
+
+**Q4. When should you use cursor-based pagination over offset-based?**
+
+- A) When the data set is small
+- B) When items are frequently added or removed
+- C) When using SQL databases
+- D) When building a mobile app
+
+<details><summary>Answer</summary>
+
+**B) Cursor-based pagination is stable when items are inserted or deleted between page requests, unlike offset pagination which can skip or duplicate items.**
+
+</details>
 
 ## Summary
 

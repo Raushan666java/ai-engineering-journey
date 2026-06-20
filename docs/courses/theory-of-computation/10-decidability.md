@@ -1,5 +1,9 @@
 # Chapter 10: Decidability
 
+> **Previous:** [Turing Machine Extensions](./09-turing-extensions.md) | **Next:** [Reducibility](./11-reducibility.md)
+
+
+
 ## Learning Objectives
 
 - Distinguish between decidable and undecidable problems.
@@ -8,6 +12,29 @@
 - Apply the reduction technique to prove undecidability.
 - Understand the relationship between undecidability and non-RE languages.
 - Recognize common patterns in undecidability proofs.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Halting Problem | No algorithm decides if TM halts | Fundamental limit of computation |
+| Diagonalization | Self-reference leads to contradiction | Core technique for undecidability |
+| Reductions | Convert problem A to problem B | Prove undecidability systematically |
+| Rice's Theorem | Non-trivial semantic properties undecidable | Generalizes many undecidability proofs |
+| Decidable Problems | DFA/CFG membership, emptiness | Algorithms exist for these |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[Decidable vs Undecidable] --> B[Halting Problem]
+    B --> C[Diagonalization]
+    C --> D[Reductions]
+    D --> E[Decidable Problems]
+    E --> F[Rice Theorem]
+```
 
 ## Theory
 
@@ -191,6 +218,91 @@ This is essentially graph reachability, runtime O(|Q| + |E|).
 2. Run the CYK algorithm on G and w.
 3. If S âˆˆ T[1,n], accept. Otherwise reject.
 Runtime O(nÂ³) where n = |w|.
+
+
+
+## Concept Comparison Table
+| Problem | Status | Class |
+|---------|--------|-------|
+| DFA membership | Decidable | P |
+| CFG membership | Decidable | P (O(n³)) |
+| DFA equivalence | Decidable | P |
+| CFG equivalence | Undecidable | — |
+| Halting problem | Undecidable | RE |
+
+## Quick Reference
+| Technique | Purpose |
+|-----------|---------|
+| Diagonalization | Direct undecidability proof |
+| Mapping reduction | Translate problem A to B |
+| Rice's theorem | General undecidability for TM properties |
+| CYK algorithm | Decidable CFG membership |
+
+## Cross-Application Matrix
+| Domain | Decidability Concept |
+|--------|---------------------|
+| Software engineering | Limits of automated verification |
+| Programming languages | Type system decidability |
+| Automated reasoning | Theorem proving limits |
+| Compilers | Optimization correctness |
+| AI | Problem-solving limitations |
+
+## Chapter Quiz
+
+**Q1.** The halting problem asks if a TM:
+- A) Accepts its input
+- B) Halts on its input ✓
+- C) Has finitely many states
+- D) Is deterministic
+
+<details>
+<summary>Answer</summary>
+**B)** HALT_TM = { ⟨M, w⟩ | M halts on w }. Proven undecidable by Turing in 1936.
+</details>
+
+**Q2.** Diagonalization proves undecidability by:
+- A) Counting states
+- B) Self-reference paradox ✓
+- C) Reducing to a known problem
+- D) Using Rice's theorem
+
+<details>
+<summary>Answer</summary>
+**B)** Diagonalization creates a self-referential contradiction — "what does D do on input ⟨D⟩?"
+</details>
+
+**Q3.** Which is decidable?
+- A) CFG equivalence
+- B) DFA membership ✓
+- C) TM emptiness
+- D) TM equivalence
+
+<details>
+<summary>Answer</summary>
+**B)** DFA membership is decidable — simply simulate the DFA on the input string.
+</details>
+
+**Q4.** Rice's theorem applies to:
+- A) Syntactic properties of TMs
+- B) Non-trivial semantic properties ✓
+- C) Properties of DFAs
+- D) Properties of CFGs
+
+<details>
+<summary>Answer</summary>
+**B)** Any non-trivial property of the language of a TM is undecidable.
+</details>
+
+**Q5.** A reduction shows:
+- A) Problem A is easier than B
+- B) If B is decidable, A is decidable ✓
+- C) Both problems are the same
+- D) Neither problem is decidable
+
+<details>
+<summary>Answer</summary>
+**B)** A ≤_m B means a solution to B yields a solution to A (or undecidability of A transfers to B).
+</details>
 
 ## Summary
 

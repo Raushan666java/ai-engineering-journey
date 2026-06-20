@@ -1,5 +1,7 @@
 # Chapter 8: Higher Normal Forms and Denormalization
 
+> **Previous:** [Chapter 7: Normalization](./07-normalization.md) | **Next:** [Chapter 9: Transactions](./09-transactions.md)
+
 ## Learning Objectives
 
 - Define multi-valued dependencies and fourth normal form (4NF)
@@ -8,7 +10,32 @@
 - Recognize when to denormalize for performance
 - Apply practical trade-offs between normalization and performance
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **4NF** | No multi-valued dependencies (MVDs) — independent 1:N relationships | Split when one attribute has multiple independent values |
+| **5NF** | No join dependencies — lossless decomposition must be possible | Often already in 5NF if in 4NF and all keys are single-attribute |
+| **DKNF** | Every constraint is a domain constraint or key constraint | Theoretical ideal — rarely fully achievable in practice |
+| **Denormalization** | Intentional redundancy for read performance | Apply AFTER proving a read-performance problem exists |
+| **Trade-offs** | Normalization = write-efficiency; denormalization = read-efficiency | Profile before optimizing; denormalization is a design decision, not a default |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[BCNF Refresher] --> B[Multi-valued Dependencies]
+    B --> C[4NF]
+    C --> D[Join Dependencies]
+    D --> E[5NF]
+    E --> F[DKNF & Domain Constraints]
+    F --> G[Denormalization Strategies]
+    G --> H[Trade-off Decision Framework]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** Beyond BCNF, 4NF and 5NF handle exotic dependencies — and denormalization is a deliberate performance trade-off, not an excuse to skip normalization.
 
 ![Higher Normal Forms Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch08-higher-nf.png)
 
@@ -276,6 +303,8 @@ CREATE TABLE orders (
 
 ## Examples
 
+> **One-Sentence Takeaway:** Working through 4NF decomposition and denormalization scenarios shows when the higher forms actually improve data integrity and when denormalization is the smarter choice for real-world workloads.
+
 **Example 8.1: Full 4NF Decomposition**
 
 Given: `DOCTOR_INFO(doctor_id, patient, specialty)`
@@ -338,6 +367,10 @@ JOIN customers c ON o.customer_id = c.customer_id
 LEFT JOIN order_items oi ON o.order_id = oi.order_id
 GROUP BY o.order_id, c.name, c.email, o.order_date, o.status;
 ```
+
+> **Warning:** Denormalization is NOT a shortcut for skipping normalization during schema design — first normalize fully, then measure, then consider denormalization only if there is a provable performance problem.
+>
+> **Remember:** Multi-valued dependencies (MVDs) in 4NF are independent attributes — if you need to store a customer's phone numbers and email addresses separately, each should be its own child table, not a comma-separated list.
 
 ## ðŸ’¡ Pro Tips
 

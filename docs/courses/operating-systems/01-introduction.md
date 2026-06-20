@@ -1,5 +1,10 @@
 # Chapter 1: Introduction to Operating Systems
 
+[**Next: Processes**](./02-processes.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Define an operating system and explain its role as a resource manager
@@ -8,6 +13,26 @@
 - Describe the services an OS provides to users and programs
 - Explain system calls and differentiate standard APIs from actual system calls
 - Compare OS structures: monolithic, microkernel, layered, modular, hybrid
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **What is an OS?** | Resource allocator, control program, intermediary between hardware and users |
+| **OS History** | Batch → Multiprogramming → Time-sharing → Personal → Modern/Cloud |
+| **OS Types** | Batch, time-sharing, distributed, real-time (hard/soft), embedded |
+| **System Calls** | Interface for user programs to request kernel services; switch from user to kernel mode |
+| **OS Structures** | Monolithic (Linux), microkernel (MINIX), layered (THE), modular/hybrid (Windows NT) |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[OS Basics] --> B[OS History & Types]
+    B --> C[System Calls]
+    C --> D[OS Structures]
+    D --> E[Examples & Applications]
+    E --> F[Summary & Exercises]
+</div>
 
 ## Theory
 
@@ -239,6 +264,71 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> Focus on understanding the **system call flow** -- it is the bridge between user programs and the kernel. The switch from user mode to kernel mode via a trap/interrupt is a foundational concept for every OS topic that follows.
+
+> [NOTE]
+> The distinction between **API** and **system call** is frequently tested in exams. Remember: `printf()` is an API function; `write()` is the underlying system call.
+
+> [WARNING]
+> Do not confuse **multiprogramming** (multiple jobs in memory, CPU switches during I/O wait) with **time-sharing** (CPU switching between users for interactive response). Multiprogramming improves CPU utilization; time-sharing improves user experience.
+
+## Concept Comparison
+
+| Feature | Monolithic Kernel | Microkernel | Layered | Modular (Hybrid) |
+|-------|-----------------|-----------|-------|----------------|
+| Architecture | Single large kernel in kernel space | Minimal kernel + user-space services | Strict layered hierarchy | Core + loadable modules |
+| Performance | High (direct calls) | Lower (IPC overhead) | Moderate | High |
+| Reliability | Low (bug crashes all) | High (services isolated) | Moderate | Moderate |
+| Flexibility | Low (static) | High (services swappable) | Low | High (dynamic modules) |
+| Examples | Linux, BSD, MS-DOS | MINIX, QNX, seL4 | THE, Venus | Windows NT, modern Linux |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **System Call** | Programmatic request for kernel service (e.g., `fork()`, `open()`) |
+| **User Mode** | Restricted privilege level -- no direct hardware access |
+| **Kernel Mode** | Full privilege -- can execute any instruction |
+| **Trap/Interrupt** | Mechanism to switch from user to kernel mode |
+| **API** | Application Programming Interface -- library wrappers around syscalls |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Process Management | Handle concurrent connections | Manage query execution threads | Real-time task scheduling | App lifecycle management |
+| Memory Management | Static allocation per connection | Buffer pool management | Limited SRAM/Flash | Memory pressure handling |
+| File System | Serve static files | Store/retrieve table data | Flash file system | App sandbox storage |
+| Protection | User isolation | Access control | Memory protection | App sandboxing |
+
+## Chapter Quiz
+
+1. Which OS type guarantees that critical tasks complete within a strict time bound?
+   - a) Batch OS
+   - b) Time-sharing OS
+   - c) Real-time OS
+   - d) Distributed OS
+
+2. What mechanism triggers the switch from user mode to kernel mode?
+   - a) A trap or interrupt
+   - b) A function call
+   - c) A context switch
+   - d) A system library call
+
+3. Which kernel structure runs most services in user space?
+   - a) Monolithic
+   - b) Microkernel
+   - c) Layered
+   - d) Hybrid
+
+4. Which of the following is a system call?
+   - a) printf()
+   - b) scanf()
+   - c) fork()
+   - d) malloc()
 
 ## Summary
 

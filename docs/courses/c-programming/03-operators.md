@@ -1,5 +1,8 @@
 # Chapter 3: Operators
 
+> **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Control Flow](./04-control-flow.md)
+
+
 ## Learning Objectives
 
 - Apply arithmetic, relational, logical, and bitwise operators correctly
@@ -8,7 +11,29 @@
 - Use the ternary conditional operator
 - Avoid common pitfalls with assignment and equality
 
-![C Operators: Categories, Precedence, and Common Pitfalls](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch-03-operators.png)
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Arithmetic Operators | C provides `+`, `-`, `*`, `/`, `%` for numeric computation | Integer division truncates; use `%` for remainders |
+| Relational Operators | `<`, `>`, `<=`, `>=`, `==`, `!=` compare values | Comparisons yield 0 (false) or 1 (true) |
+| Logical Operators | `&&`, `||`, `!` combine boolean expressions | Short-circuit evaluation stops early when result is determined |
+| Bitwise Operators | `&`, `|`, `^`, `~`, `<<`, `>>` operate on individual bits | Use bitwise for flags, masks, and low-level hardware access |
+| Assignment Operators | `=` and compound forms like `+=`, `&=` | Compound operators modify a variable and assign in one step |
+| Operator Precedence | Expressions evaluate in a defined order (PEMDAS-like) | Use parentheses to make intent explicit, even when precedence is correct |
+
+
+```mermaid
+flowchart LR
+    A["3.1 Arithmetic Operators"] --> B["3.2 Relational & Logical"]
+    B --> C["3.3 Bitwise Operators"]
+    C --> D["3.4 Assignment Operators"]
+    D --> E["3.5 Other Operators (sizeof, ternary, comma)"]
+    E --> F["3.6 Operator Precedence"]
+    F --> G["Summary & Exercises"]
+```
+
 
 ## 3.1 Classification of Operators
 
@@ -24,6 +49,9 @@ C provides operators grouped by function:
 | Ternary | `?:` |
 | Other | `sizeof` `&` `*` `.` `->` `[]` `()` `,` |
 
+> **One-Sentence Takeaway:** C operators are grouped by function: arithmetic, relational, logical, bitwise, and assignment
+
+> **Warning:** Division by zero at runtime crashes the program — always validate divisors before dividing.
 ## 3.2 Arithmetic Operators
 
 ```c
@@ -80,6 +108,8 @@ x = 6, y = 5
 x = 6, y = 6
 ```
 
+
+> **One-Sentence Takeaway:** Arithmetic operators perform mathematical computations on numeric operands
 ## 3.3 Relational Operators
 
 These operators compare two values and yield an `int` result: `1` (true) or `0` (false).
@@ -107,6 +137,8 @@ if (x = 5)   /* assigns 5 to x, then evaluates 5 (true) â€” ALWAYS true! */
 if (x == 5)  /* correct: compares x to 5 */
 ```
 
+
+> **One-Sentence Takeaway:** Relational operators compare values and produce a boolean result true or false
 ## 3.4 Logical Operators
 
 | Operator | Meaning | Example |
@@ -126,6 +158,8 @@ if (a != 0 && b / a > 1)   /* short-circuit: b/a is NEVER evaluated */
     printf("OK");           /* division by zero avoided */
 ```
 
+
+> **One-Sentence Takeaway:** Logical operators combine boolean expressions for complex conditional logic
 ## 3.5 Bitwise Operators
 
 Bitwise operators manipulate individual bits in integer operands.
@@ -183,6 +217,9 @@ flags &= ~(1 << n);
 flags ^= (1 << n);
 ```
 
+
+> **One-Sentence Takeaway:** Bitwise operators manipulate individual bits for low-level and systems programming
+> **Pro Tip:** Bitwise operators are essential for low-level hardware control and flags manipulation.
 ## 3.6 Assignment Operators
 
 Simple assignment assigns the value of the right operand to the left operand. Compound assignment combines an operation with assignment.
@@ -202,6 +239,8 @@ x <<= 1;     /* x = x << 1 */
 x >>= 2;     /* x = x >> 2 */
 ```
 
+
+> **One-Sentence Takeaway:** Assignment operators store values and compound forms combine operation with assignment
 ## 3.7 Ternary Conditional Operator
 
 The ternary operator `?:` is a compact form of `if-else` that yields a value.
@@ -228,6 +267,9 @@ int main(void)
 int largest = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
 ```
 
+
+> **One-Sentence Takeaway:** The ternary conditional operator provides a compact inline if-else expression
+> **Remember:** The ternary operator ?: is an expression not a statement and returns a value.
 ## 3.8 Operator Precedence and Associativity
 
 When multiple operators appear in an expression, precedence determines the order of evaluation. Associativity determines the order when operators of equal precedence appear together.
@@ -257,6 +299,9 @@ int x = 5 + 3 * 4;        /* 17 â€” multiplication first */
 int y = (5 + 3) * 4;      /* 32 â€” parentheses override */
 ```
 
+
+> **One-Sentence Takeaway:** Operator precedence and associativity determine the order of evaluation in expressions
+> **Warning:** Operator precedence can produce unintuitive results always use parentheses for clarity.
 ## 3.9 The Comma Operator
 
 The comma operator `,` evaluates both operands and yields the value of the right operand.
@@ -270,6 +315,8 @@ int result = (a += 2, b += 3, a + b);  /* result = 8 (a=3, b=5, sum=8) */
 
 Commonly used in `for` loops to initialize or update multiple variables.
 
+
+> **One-Sentence Takeaway:** The comma operator evaluates multiple expressions and returns the last value
 ## 3.10 `sizeof` as an Operator
 
 `sizeof` can be applied to a type or an expression:
@@ -280,6 +327,70 @@ int x;
 size_t s2 = sizeof x;            /* variable */
 size_t s3 = sizeof(x + 1);       /* expression â€” not evaluated */
 ```
+
+## Concept Comparison Table
+
+| Category | Operators | Associativity | Example |
+|----------|-----------|---------------|---------|
+| Arithmetic | `+  -  *  /  %` | Left to right | `a + b * c` evaluates `*` first |
+| Relational | `<  >  <=  >=  ==  !=` | Left to right | `a < b == c` is `(a < b) == c` |
+| Logical | `&&  \|\|  !` | Left (`&&`/`\|\|`), Right (`!`) | `a && b \|\| c` is `(a && b) \|\| c` |
+| Bitwise | `&  \|  ^  ~  <<  >>` | Left to right | `a & b \| c` applies `&` first |
+| Assignment | `=  +=  -=  *=  /=  %=  <<=  >>=  &=  \|=  ^=` | Right to left | `a = b = c` is `a = (b = c)` |
+| Ternary | `?:` | Right to left | `a ? b : c ? d : e` groups rightmost first |
+
+## Quick Reference
+
+| Expression | Result | Notes |
+|------------|--------|-------|
+| `5 / 2` | `2` | Integer division truncates |
+| `5.0 / 2` | `2.5` | Float promotion |
+| `5 % 2` | `1` | Modulus (remainder) |
+| `1 << 4` | `16` | Left-shift = multiply by 2⁴ |
+| `0xFF >> 2` | `0x3F` | Right-shift divide by 4 |
+| `~0` | `-1` | Bitwise NOT (two's complement) |
+| `3 ^ 5` | `6` | XOR: 011 ^ 101 = 110 |
+| `x ? a : b` | `a` or `b` | Ternary expression value |
+
+## Cross-Application Matrix
+
+| Domain | Operator Usage |
+|--------|---------------|
+| Embedded GPIO | `PORT |= (1 << 3)` to set bit 3 high |
+| Graphics/color | `(r << 16) | (g << 8) | b` to pack RGB |
+| Permission masks | `(mode & 0444) != 0` to check read permission |
+| Networking checksum | `sum = (sum >> 16) + (sum & 0xFFFF)` |
+| Game collision | `!(a.x > b.x + b.w || a.x + a.w < b.x)` bounding-box check |
+
+## Chapter Quiz
+
+1. What is the value of `10 & 6`?
+   A) 0
+   B) 2
+   C) 6
+   D) 10
+
+<details><summary>Answer</summary>**B)** 10 decimal = 1010 binary, 6 = 0110 binary. 1010 & 0110 = 0010 = 2 decimal.</details>
+
+2. Why does `if (x = 5)` compile without error but behave unexpectedly?
+   A) It is a syntax error in C
+   B) Assignment returns the assigned value, which is nonzero (truthy)
+   C) The compiler automatically converts to `x == 5`
+   D) It causes undefined behavior
+
+<details><summary>Answer</summary>**B)** `x = 5` assigns 5 and returns 5, which is truthy. This is a common typo for `x == 5`. Enable `-Wall` to get a warning.</details>
+
+3. Which operator has the highest precedence?
+   A) `+`
+   B) `*`
+   C) `()`
+   D) `&&`
+
+<details><summary>Answer</summary>**C)** Parentheses `()` have the highest precedence — use them to override default ordering.</details>
+
+
+
+
 
 ## Summary
 
@@ -313,3 +424,5 @@ size_t s3 = sizeof(x + 1);       /* expression â€” not evaluated */
 ### Challenge Problem
 
 Write a program that reverses the bits of an 8-bit unsigned integer. For example, `0b11001010` (202) becomes `0b01010011` (83). Do not use arrays â€” use only bitwise operators and loops. Print both the original and reversed values in hexadecimal and binary.
+
+> **One-Sentence Takeaway:** sizeof is a compile-time operator that returns the size in bytes of a type or expression

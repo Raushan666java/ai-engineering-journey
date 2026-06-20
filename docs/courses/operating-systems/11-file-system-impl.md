@@ -1,5 +1,10 @@
 # Chapter 11: File System Implementation
 
+**<< [File Systems](./10-file-systems.md)** | [**Next: Secondary Storage**](./12-secondary-storage.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Describe the on-disk and in-memory structures of a file system
@@ -8,6 +13,30 @@
 - Explain the role of the superblock, inodes, and directory entries
 - Analyze file system performance, including the impact of fragmentation
 - Understand journaling and write-ahead logging for crash recovery
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **File System Layers** | Application -> logical FS -> file-org module -> I/O control -> devices |
+| **On-Disk Structures** | Boot block, superblock, free-space mgmt, inodes, file data blocks |
+| **Directory Impl.** | Linear list (simple, slow) vs hash table (fast, complex) |
+| **Contiguous** | Fast sequential/direct access; severe external fragmentation |
+| **Linked** | No fragmentation; only sequential access (FAT helps) |
+| **Indexed** | Direct access via index block; good for large files |
+| **Free-Space Mgmt** | Bit vector, linked list, group counting |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[File System Layers] --> B[On-Disk Structures]
+    B --> C[Directory Implementation]
+    C --> D[Allocation Methods]
+    D --> E[Contiguous / Linked / Indexed]
+    E --> F[Free-Space Management]
+    F --> G[Efficiency & Performance]
+    G --> H[Summary]
+</div>
 
 ## Theory
 
@@ -387,6 +416,65 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> The **Unix inode** uses a multi-level index scheme: 12 direct block pointers -> 1 single indirect -> 1 double indirect -> 1 triple indirect. Small files use direct pointers; huge files use indirect ones.
+
+> [WARNING]
+> **Linked allocation** solves fragmentation but makes direct access impractical. The File Allocation Table (FAT) mitigates this by storing the chain separately in memory.
+
+> [NOTE]
+> A **bit vector** (free bitmap) is the simplest free-space tracking: each block = one bit. Finding the first free block is fast with bit-scan instructions, but the bitmap must fit in memory.
+
+## Concept Comparison
+
+| Feature | Contiguous | Linked | Indexed (Unix inode) |
+|-------|----------|------|--------------------|
+| Ext. Frag. | Yes | No | No |
+| Direct Access | Yes | No | Yes |
+| Seq. Access | Fast | Moderate | Fast |
+| Overhead | Minimal | Per-block pointers | Index block(s) |
+| Max File Size | Limited by contiguous space | No limit | Very large (indirect blocks) |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Superblock** | FS metadata: size, block count, free-block count, inode count |
+| **Inode** | Index node -- metadata + block pointers |
+| **FAT** | File Allocation Table -- linked-list table cached in memory |
+| **Bit Vector** | Bitmap where each bit = free (0) or used (1) block |
+| **Multi-Level Index** | Inode indirect block pointers (single/double/triple) |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Allocation | Extents (multi-block) | B+ tree | Linked (FAT table) | Extents |
+| Max File Size | 16 TiB | 16 EiB | 4 GiB | 8 EiB |
+| FS Check | e2fsck | chkdsk | scandisk | fsck_apfs |
+| Journaling | Yes (metadata) | Yes (full) | No | Yes |
+
+## Chapter Quiz
+
+1. Which allocation method suffers external fragmentation?
+   - a) Contiguous
+   - b) Linked
+   - c) Indexed
+   - d) FAT
+
+2. The inode multi-level index allows:
+   - a) Faster sequential access
+   - b) Small file efficiency + large file support
+   - c) Simplified directory lookup
+   - d) Journaling without overhead
+
+3. Advantage of indexed over linked allocation?
+   - a) Less overhead
+   - b) Support for direct (random) access
+   - c) Simpler implementation
+   - d) Better space utilization
 
 ## Summary
 

@@ -1,4 +1,6 @@
-# Chapter 3: Singly Linked List
+﻿# Chapter 3: Singly Linked List
+
+> **Previous:** [Chapter 2: Arrays](./02-arrays.md) | **Next:** [Doubly Linked List](./04-doubly-linked-list.md)
 
 ## Learning Objectives
 
@@ -6,6 +8,30 @@
 - Implement insertion at the beginning, middle, and end.
 - Implement deletion, traversal, search, and reversal.
 - Analyze the complexity of each operation.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Node Structure | Each node holds data + pointer to next | Use struct Node with data and next fields |
+| Head Insertion | O(1) since no elements need shifting | Use pushFront for LIFO / stack behavior |
+| Tail Insertion | O(1) with tail pointer, O(n) without | Always maintain a tail pointer for efficiency |
+| Iterative Reversal | Three pointers rewire links in one pass | O(n) time, O(1) space - no recursion overhead |
+| Cycle Detection | Floyd Tortoise and Hare algorithm | Slow + fast pointer meet if cycle exists |
+| Sentinel / Dummy Node | Placeholder node eliminates edge cases | Simplifies insertion/deletion code significantly |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Singly Linked List] --> B[Node Structure]
+    B --> C[Basic Operations]
+    C --> D[Insert: Head, Tail, Middle]
+    D --> E[Deletion and Search]
+    E --> F[Iterative Reversal]
+    F --> G[Recursive Reversal]
+    G --> H[Cycle Detection and Merge]
+```
 
 ## Theory
 
@@ -30,6 +56,8 @@ head â†’ [data|next] â†’ [data|next] â†’ [data|next] â†’ nul
 | Delete at head | \( O(1) \) | \( O(n) \) |
 
 ### Reversal
+
+> **Pro Tip:** Iterative reversal with three pointers (prev, curr, next) is O(n) time and O(1) space - prefer it over recursive reversal for production code to avoid stack overflow on long lists.
 
 Reversing a singly linked list can be done iteratively in \( O(n) \) time and \( O(1) \) space by rewiring the pointers.
 
@@ -232,7 +260,11 @@ Node<T>* reverseRecursive(Node<T>* node) {
 // list.reverseRecursive(); assigns head = reverseRecursive(head);
 ```
 
+> **One-Sentence Takeaway:** Mastering linked list reversal and cycle detection is essential - these patterns appear in 70% of linked list interview questions.
+
 ## ðŸ’¡ Pro Tips
+
+> **Remember:** Always draw the pointer changes before coding linked list operations - a quick diagram prevents the most common pointer-mangling bugs.
 
 - **Iterative reversal is cleaner than recursive**: Three pointers (prev, curr, next) in a while loop â€” no call stack overhead, no risk of stack overflow for long lists.
 - **Always consider the empty list edge case**: Every linked list function must handle `head == nullptr`. A surprising number of bugs come from forgetting this.

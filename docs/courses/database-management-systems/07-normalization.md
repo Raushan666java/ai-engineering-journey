@@ -1,5 +1,7 @@
 # Chapter 7: Normalization
 
+> **Previous:** [Chapter 6: Advanced SQL](./06-sql-advanced.md) | **Next:** [Chapter 8: Higher Normal Forms and Denormalization](./08-higher-nf.md)
+
 ## Learning Objectives
 
 - Identify and eliminate data redundancy and anomalies
@@ -9,7 +11,30 @@
 - Understand lossless join decomposition and dependency preservation
 - Determine when normalization has gone far enough
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Functional Dependencies** | X → Y means X determines Y — the foundation of all normalization | Find all FDs first; normalization follows automatically |
+| **1NF** | Atomic columns, no repeating groups | Every cell holds one value; every row is unique |
+| **2NF** | No partial dependency on a composite key | Every non-key attribute depends on the whole key |
+| **3NF** | No transitive dependency on non-key attributes | Every non-key attribute depends on nothing but the key |
+| **BCNF** | Every determinant must be a candidate key | BCNF removes remaining anomalies but may lose dependency preservation |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Functional Dependencies] --> B[1NF: Atomic Values]
+    B --> C[2NF: Full Key Dependency]
+    C --> D[3NF: No Transitive Dependency]
+    D --> E[BCNF: Every Determinant a Key]
+    E --> F[Decomposition: Lossless & Dependency-Preserving]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** Normalization systematically removes data redundancy by decomposing tables through 1NF → 2NF → 3NF → BCNF — think of it as "each column depends on the key, the whole key, and nothing but the key."
 
 ![Normalization Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch07-normalization.png)
 
@@ -233,6 +258,8 @@ A better decomposition: R1(A, B) and R2(B, C)
 BCNF may not preserve all FDs. In practice, we often stop at 3NF (which guarantees dependency preservation) and accept BCNF only when possible.
 
 ## Examples
+
+> **One-Sentence Takeaway:** Walking through a unnormalized spreadsheet → 1NF → 2NF → 3NF step-by-step crystallizes the theory into a repeatable skill you can apply to any database design.
 
 **Example 7.1: Full Normalization Walkthrough**
 

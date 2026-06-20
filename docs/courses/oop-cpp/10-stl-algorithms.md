@@ -1,4 +1,6 @@
-# Chapter 10: STL Algorithms
+﻿# Chapter 10: STL Algorithms
+
+> **Previous:** [09-stl-containers](./09-stl-containers.md) | **Next:** [11-file-io](./11-file-io.md)
 
 ## Learning Objectives
 
@@ -9,6 +11,29 @@ After studying this chapter, students will be able to:
 - Distinguish among searching, sorting, modifying, and numeric algorithms
 - Compose algorithms for complex operations
 - Understand algorithm complexity guarantees
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Algo-Container Separation** | Iterator design decouples algo from container | STL algorithms work with any container |
+| **Sorting** | introsort default, stable_sort when order matters | Use sort() by default; partial_sort for top-N |
+| **Searching** | find for unsorted, binary_search for sorted | Check sorted precondition before binary search |
+| **Modifying** | copy, transform, replace mutate elements | Use back_inserter for output algorithms |
+| **Numeric** | accumulate, inner_product in numeric header | Pair with lambdas for custom reductions |
+| **Non-Modifying** | count_if, all_of query without mutation | Prefer STL algorithms over raw loops |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Algo-Container Separation] --> B[Sorting]
+    A --> C[Searching]
+    A --> D[Modifying]
+    A --> E[Numeric]
+    A --> F[Non-Modifying]
+    D --> G[Algorithm Composition]
+```
 
 ## 10.1 The Algorithm-Container Separation
 
@@ -35,6 +60,7 @@ int main() {
 
 ## 10.2 Sorting Algorithms
 
+> **One-Sentence Takeaway:** std::sort is introsort (O(n log n)); std::stable_sort preserves relative order of equivalent elements.
 ```cpp
 #include <algorithm>
 
@@ -67,6 +93,7 @@ std::sort(data.begin(), data.end(),
 
 ## 10.3 Searching Algorithms
 
+> **One-Sentence Takeaway:** std::find is linear; std::binary_search and std::lower_bound require a sorted range.
 ```cpp
 #include <algorithm>
 #include <vector>
@@ -96,6 +123,7 @@ auto [lo, hi] = std::equal_range(data.begin(), data.end(), 5);
 
 ## 10.4 Modifying Algorithms
 
+> **One-Sentence Takeaway:** std::copy, std::transform, std::replace, and std::remove operate in-place or into an output iterator.
 ```cpp
 #include <algorithm>
 #include <vector>
@@ -134,6 +162,7 @@ std::rotate(src.begin(), src.begin() + 2, src.end());
 
 ## 10.5 Numeric Algorithms
 
+> **One-Sentence Takeaway:** std::accumulate, std::inner_product, and std::partial_sum in numeric handle reductions.
 ```cpp
 #include <numeric>
 
@@ -166,6 +195,7 @@ std::adjacent_difference(data.begin(), data.end(), diffs.begin());
 
 ## 10.6 Non-Modifying Algorithms
 
+> **One-Sentence Takeaway:** std::count_if, std::all_of, std::any_of, and std::none_of query ranges without mutation.
 ```cpp
 std::vector<int> data = {1, 2, 3, 4, 5};
 
@@ -203,6 +233,7 @@ bool less = std::lexicographical_compare(
 
 ## 10.7 Algorithm Composition
 
+> **One-Sentence Takeaway:** Algorithms compose naturally through iterator adaptors like back_inserter and lambdas.
 Complex operations are built by composing simpler algorithms:
 
 ```cpp
@@ -226,6 +257,76 @@ std::sort(people.begin(), people.end(),
         return a.age < b.age;
     });
 ```
+
+## Concept Comparison Table
+
+| Algorithm Category | Example | Complexity | Requires Sorted? |
+|-------------------|---------|------------|-----------------|
+| Sorting | sort, stable_sort, partial_sort | O(n log n) avg | No (outputs sorted) |
+| Binary Search | binary_search, lower_bound | O(log n) | Yes |
+| Linear Search | find, find_if | O(n) | No |
+| Modifying | copy, transform, replace, remove | O(n) | No |
+| Numeric | accumulate, inner_product | O(n) | No |
+| Query | count_if, all_of, any_of | O(n) | No |
+
+## Quick Reference
+
+| Algorithm | What It Does | Iterator Required |
+|-----------|-------------|-------------------|
+| sort | Sort range | RandomAccess |
+| find | Linear search | Input |
+| binary_search | Sorted range check | Forward |
+| copy | Copy range | Output |
+| transform | Apply function | Output |
+| accumulate | Reduce | Input |
+| count_if | Count matches | Input |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **Data Science** | sort + unique for dedup, accumulate for statistics |
+| **Game Dev** | remove_if for culling entities, sort by draw order |
+| **Finance** | stable_sort for transactions, accumulate for totals |
+| **Text Processing** | find_first_of for search, transform for case conversion |
+| **Networking** | copy for buffers, count_if for packet analysis |
+
+## Chapter Quiz
+
+1. What is the complexity of std::sort?
+   A) O(n)
+   B) O(n log n)
+   C) O(n^2)
+   D) O(log n)
+   <details><summary>Answer</summary>**B)** std::sort is introsort with O(n log n) average complexity.</details>
+
+2. Which algorithm requires a sorted range?
+   A) find
+   B) binary_search
+   C) count_if
+   D) copy
+   <details><summary>Answer</summary>**B)** binary_search requires the range to be sorted.</details>
+
+3. The less-than-numeric greater-than header contains:
+   A) sort
+   B) accumulate
+   C) find
+   D) copy
+   <details><summary>Answer</summary>**B)** accumulate is in the numeric header.</details>
+
+4. Which algorithm modifies a range in place?
+   A) count_if
+   B) find
+   C) replace
+   D) all_of
+   <details><summary>Answer</summary>**C)** replace modifies elements matching a value.</details>
+
+5. What does transform need besides a source range?
+   A) A comparison function
+   B) An output iterator and a unary operation
+   C) A predicate
+   D) A random access iterator
+   <details><summary>Answer</summary>**B)** transform applies an operation and writes to an output iterator.</details>
 
 ## 10.8 Summary
 

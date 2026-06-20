@@ -1,5 +1,7 @@
 # Chapter 17: The C Standard Library
 
+> **Previous:** [Stacks and Queues](./16-stacks-queues.md) | **Next:** [Advanced C](./18-advanced-c.md)
+
 ## Learning Objectives
 
 - Identify the major headers in the C standard library
@@ -12,6 +14,29 @@
 - Use `assert.h` for runtime assertions
 - Understand `setjmp.h` for non-local jumps
 
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| <stdio.h> | Input/output: printf, scanf, fopen, fclose, fread, fwrite | The most-used header; handles all console and file I/O |
+| <stdlib.h> | Memory allocation, random numbers, sorting, atoi | Contains malloc, free, qsort, rand, and atoi |
+| <string.h> | String manipulation: strlen, strcpy, strcmp, memcpy | All string functions operate on null-terminated arrays |
+| <math.h> | Floating-point math: sin, cos, sqrt, pow, fabs | Link with `-lm` on Unix systems |
+| <ctype.h> | Character classification: isalpha, isdigit, tolower, toupper | Handles locale-specific character tests |
+| <time.h> | Time functions: time, clock, difftime, strftime | `time()` returns seconds since epoch (January 1, 1970) |
+
+
+```mermaid
+flowchart LR
+    A["17.1 <stdio.h>"] --> B["17.2 <stdlib.h>"]
+    B --> C["17.3 <string.h>"]
+    C --> D["17.4 <math.h>"]
+    D --> E["17.5 <ctype.h>"]
+    E --> F["17.6 <time.h>"]
+    F --> G["17.7 Other Headers"]
+    G --> H["Summary & Exercises"]
+```
 ![C Standard Library and Advanced Topics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch17-lib-advanced.png)
 
 ## 17.1 `<stdlib.h>` â€” General Utilities
@@ -174,6 +199,8 @@ int main(void)
 | `abs(int)`, `labs(long)`, `llabs(long long)` | Absolute value |
 | `div(int, int)`, `ldiv`, `lldiv` | Integer division returning quotient and remainder |
 
+
+> **One-Sentence Takeaway:** stdio.h provides console and file I/O functions like printf and fopen
 ## 17.2 `<stdio.h>` â€” Input and Output
 
 (Detailed in Chapter 12.)
@@ -224,6 +251,9 @@ Buffer: 'The answer is 42' (16 chars written)
 Parsed 3 items: 101 Alice 3.85
 ```
 
+
+> **One-Sentence Takeaway:** stdlib.h provides memory allocation sorting and numeric conversion functions
+> **Pro Tip:** qsort requires a comparison function that returns negative zero or positive.
 ## 17.3 `<string.h>` â€” String Functions
 
 (Detailed in Chapter 7.)
@@ -271,6 +301,8 @@ int main(void)
 Hello, Hello!
 ```
 
+
+> **One-Sentence Takeaway:** string.h provides string manipulation and memory copying functions
 ## 17.4 `<math.h>` â€” Mathematics
 
 ```c
@@ -336,6 +368,9 @@ printf("e = %.15f\n", M_E);
 
 These constants are not part of the C standard but are widely available.
 
+
+> **One-Sentence Takeaway:** math.h provides floating-point math functions requiring -lm linkage
+> **Remember:** Link the math library explicitly with -lm on Unix systems.
 ## 17.5 `<time.h>` â€” Date and Time
 
 ```c
@@ -393,6 +428,8 @@ struct tm {
 };
 ```
 
+
+> **One-Sentence Takeaway:** ctype.h provides character classification and case conversion functions
 ## 17.6 `<ctype.h>` â€” Character Handling
 
 ```c
@@ -433,6 +470,9 @@ tolower('A') = 'a'
 toupper('A') = 'A'
 ```
 
+
+> **One-Sentence Takeaway:** time.h provides calendar time and clock measurement functions
+> **Warning:** time_t may overflow in 2038 on systems using 32-bit time_t.
 ## 17.7 `<assert.h>` â€” Diagnostics
 
 ```c
@@ -527,6 +567,65 @@ Back in main() via longjmp (ret = 42)
 | `<errno.h>` | Error number macros: `errno`, `EDOM`, `ERANGE`, `EINVAL` |
 | `<signal.h>` | Signal handling: `signal()`, `raise()` |
 | `<stdarg.h>` | Variable-length argument lists: `va_list`, `va_start`, etc. |
+
+## Concept Comparison Table
+
+| Header | Key Functions | Purpose |
+|--------|---------------|---------|
+| `<stdio.h>` | `printf`, `scanf`, `fopen`, `fclose`, `fread`, `fwrite` | I/O operations |
+| `<stdlib.h>` | `malloc`, `free`, `qsort`, `rand`, `atoi`, `abs` | General utilities |
+| `<string.h>` | `strlen`, `strcpy`, `strcmp`, `memcpy`, `memset` | String & memory |
+| `<math.h>` | `sqrt`, `sin`, `cos`, `pow`, `fabs`, `floor` | Math functions |
+| `<ctype.h>` | `isalpha`, `isdigit`, `toupper`, `tolower` | Character tests |
+| `<time.h>` | `time`, `clock`, `difftime`, `strftime`, `localtime` | Time handling |
+
+## Quick Reference
+
+| Task | Header | Function |
+|------|--------|----------|
+| Print formatted output | `<stdio.h>` | `printf("val=%d", x)` |
+| Allocate memory | `<stdlib.h>` | `malloc(n)` |
+| Sort array | `<stdlib.h>` | `qsort(arr, n, sz, cmp)` |
+| String length | `<string.h>` | `strlen(s)` |
+| Square root | `<math.h>` | `sqrt(x)` (link with `-lm`) |
+| Check if digit | `<ctype.h>` | `isdigit(c)` |
+| Current time | `<time.h>` | `time(NULL)` |
+
+## Cross-Application Matrix
+
+| Domain | Standard Library Usage |
+|--------|----------------------|
+| Data processing | `qsort` for sorting, `bsearch` for searching |
+| Command-line tools | `printf`, `fgets`, `strtok` for parsing |
+| Scientific computing | `<math.h>` functions, `rand()` for Monte Carlo |
+| Configuration | `atoi`/`atof` for string-to-number conversion |
+| Logging | `<time.h>` for timestamps, `<stdio.h>` for output |
+
+## Chapter Quiz
+
+1. Which header must you include for `malloc`?
+   A) `<stdio.h>`
+   B) `<stdlib.h>`
+   C) `<string.h>`
+   D) `<math.h>`
+
+<details><summary>Answer</summary>**B)** `malloc` is declared in `<stdlib.h>`.</details>
+
+2. What does `strlen("hello\n")` return?
+   A) 5
+   B) 6
+   C) 7
+   D) Undefined
+
+<details><summary>Answer</summary>**B)** `"hello\n"` is 6 characters: h, e, l, l, o, \n. The null terminator is not counted.</details>
+
+3. Why do you need to link with `-lm`?
+   A) To enable all standard headers
+   B) The math library is a separate shared library on POSIX systems
+   C) To get better precision
+   D) It is optional — only needed for `printf`
+
+<details><summary>Answer</summary>**B)** `<math.h>` functions are in `libm` which must be explicitly linked with `-lm`.</details>
 
 ## Summary
 

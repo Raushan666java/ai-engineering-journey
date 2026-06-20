@@ -1,5 +1,9 @@
 # Chapter 3: Regular Expressions
 
+> **Previous:** [Nondeterministic Finite Automata](./02-nfa.md) | **Next:** [Properties of Regular Languages](./04-regular-languages.md)
+
+
+
 ## Learning Objectives
 
 - Define regular expressions and the languages they denote.
@@ -9,6 +13,29 @@
 - Convert between regular expressions and finite automata.
 - Apply Arden's lemma to solve regular expression equations.
 - Understand the limitations of regular expressions.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Regex Definition | Algebraic notation for patterns | Foundation for text processing |
+| Three Operators | Union, concatenation, Kleene star | Build complex patterns from simple |
+| Operator Precedence | Star > concat > union | Prevents ambiguity in patterns |
+| RE ↔ FA | Every RE has equivalent automaton | Lexer generators use this equivalence |
+| Arden's Lemma | Solves X = AX ∪ B | Converts DFA to RE systematically |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[Regex Definition] --> B[Three Operators]
+    B --> C[Algebraic Laws]
+    C --> D[RE to FA]
+    D --> E[FA to RE]
+    E --> F[Arden Lemma]
+```
 
 ## Theory
 
@@ -185,6 +212,93 @@ Lâ‚€ = 0Â·(1Â·Lâ‚€) + 1Â·(0Â·1Â·Lâ‚€) + Îµ = (01 + 10
 
 **Step 4:** Apply Arden's lemma (X = AX + B â†’ X = A*B):
 Lâ‚€ = (01 + 101)*Â·Îµ = (01 + 101)*
+
+
+
+## Concept Comparison Table
+| Operator | Notation | Example | Language |
+|----------|----------|---------|----------|
+| Union | + or | | a+b | {a, b} |
+| Concatenation | · or juxtaposition | ab | {ab} |
+| Kleene star | * | a* | {ε, a, aa, ...} |
+| One or more | ⁺ | a⁺ | {a, aa, aaa, ...} |
+| Optional | ? | a? | {ε, a} |
+
+## Quick Reference
+| Rule | Law |
+|------|-----|
+| Identity (union) | r + ∅ = r |
+| Identity (concat) | εr = rε = r |
+| Annihilator | ∅r = r∅ = ∅ |
+| Distributive | r(s+t) = rs + rt |
+| Star | (r*)* = r* |
+| Star | ε* = ε |
+
+## Cross-Application Matrix
+| Area | Regex Usage |
+|------|------------|
+| Text editors | Search/replace patterns |
+| Compilers | Lexer token specification |
+| Data validation | Email, phone, SSN format check |
+| Network security | Signature patterns in IDS |
+| Database | SQL LIKE, REGEXP operators |
+
+## Chapter Quiz
+
+**Q1.** What does the Kleene star operator do?
+- A) Matches exactly one repetition
+- B) Matches zero or more repetitions ✓
+- C) Matches zero or one repetition
+- D) Matches one or more repetitions
+
+<details>
+<summary>Answer</summary>
+**B)** r* = {ε} ∪ {r} ∪ {rr} ∪ ... — zero or more repetitions.
+</details>
+
+**Q2.** In ab*c, the star applies to:
+- A) ab
+- B) b ✓
+- C) bc
+- D) Entire expression
+
+<details>
+<summary>Answer</summary>
+**B)** Star has highest precedence: ab*c = a(b*)c.
+</details>
+
+**Q3.** What language does (0+1)* 0 denote?
+- A) All binary strings
+- B) Binary strings ending with 0 ✓
+- C) Binary strings starting with 0
+- D) Binary strings with only 0s
+
+<details>
+<summary>Answer</summary>
+**B)** (0+1)* generates any binary string, then 0 forces it to end with 0.
+</details>
+
+**Q4.** Arden's lemma solves X = AX ∪ B with solution:
+- A) X = BA*
+- B) X = A*B ✓
+- C) X = B*A
+- D) X = (AB)*
+
+<details>
+<summary>Answer</summary>
+**B)** X = A*B is the unique solution when ε ∉ A.
+</details>
+
+**Q5.** Can regular expressions describe { aⁿbⁿ | n ≥ 0 }?
+- A) Yes, with star operator
+- B) No, it's not regular ✓
+- C) Yes, using concatenation
+- D) Only with backreferences
+
+<details>
+<summary>Answer</summary>
+**B)** { aⁿbⁿ } is not regular — no regex can match balanced pairs without counting.
+</details>
 
 ## Summary
 

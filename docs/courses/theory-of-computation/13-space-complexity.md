@@ -1,5 +1,9 @@
 # Chapter 13: Space Complexity
 
+> **Previous:** [Time Complexity](./12-time-complexity.md) | **Next:** [Advanced Complexity Topics](./14-advanced-complexity.md)
+
+
+
 ## Learning Objectives
 
 - Define space complexity classes SPACE and NSPACE.
@@ -9,6 +13,30 @@
 - Identify key PSPACE-complete problems.
 - Understand the relationship between time and space complexity classes.
 - Apply the reachability method for space-efficient computation.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Space Complexity | Maximum tape cells used | Memory-bounded computation |
+| Savitch's Theorem | NSPACE(s) ⊆ SPACE(s²) | Nondeterminism less powerful for space |
+| PSPACE | Polynomial space | Games like QBF, GEOGRAPHY |
+| L and NL | Log-space classes | Reachability problems |
+| Space Hierarchy | SPACE(n) ⊂ SPACE(n²) strict | More space = more power |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[Space Complexity] --> B[Savitch Theorem]
+    B --> C[PSPACE]
+    C --> D[PSPACE-Completeness]
+    D --> E[L and NL]
+    E --> F[Reachability Method]
+    F --> G[Space Hierarchy]
+```
 
 ## Theory
 
@@ -190,6 +218,90 @@ To show EVERY NL problem A reduces to PATH:
 - G has O(nÂ·2^{log n}) = O(nÂ²) vertices, and can be constructed in log space (each edge can be generated on demand).
 
 Thus A â‰¤_L PATH, and PATH is NL-complete.
+
+
+
+## Concept Comparison Table
+| Class | Space Bound | Example Problem |
+|-------|------------|-----------------|
+| L | O(log n) | Balanced parentheses |
+| NL | O(log n) nondet | PATH |
+| PSPACE | O(n^k) | QBF |
+| EXPSPACE | O(2^{n^k}) | Succinct reachability |
+
+## Quick Reference
+| Theorem | Statement |
+|---------|-----------|
+| Savitch's | NSPACE(s) ⊆ SPACE(s²) |
+| Immerman-Szelepcsényi | NL = co-NL |
+| Space hierarchy | SPACE(n) ⊂ SPACE(n²) |
+| NL ⊆ P | Configuration graph poly-size |
+
+## Cross-Application Matrix
+| Domain | Space Complexity Concept |
+|--------|------------------------|
+| Game theory | PSPACE-complete games (GO, chess generalized) |
+| Verification | LBA acceptance |
+| Databases | Query evaluation space bounds |
+| AI | Game tree search |
+| Compilers | Memory-bounded parsing |
+
+## Chapter Quiz
+
+**Q1.** Savitch's theorem states:
+- A) NSPACE(s) = SPACE(s)
+- B) NSPACE(s) ⊆ SPACE(s²) ✓
+- C) NSPACE(s) ⊆ SPACE(s³)
+- D) PSPACE = NP
+
+<details>
+<summary>Answer</summary>
+**B)** Savitch: NSPACE(s(n)) ⊆ SPACE(s(n)²). Corollary: NPSPACE = PSPACE.
+</details>
+
+**Q2.** NL is the class of problems solvable in:
+- A) O(n) space
+- B) O(log n) space nondeterministically ✓
+- C) O(n²) space
+- D) O(1) space
+
+<details>
+<summary>Answer</summary>
+**B)** NL = nondeterministic O(log n) space. PATH is NL-complete.
+</details>
+
+**Q3.** QBF is the canonical:
+- A) NP-complete problem
+- B) PSPACE-complete problem ✓
+- C) NL-complete problem
+- D) P problem
+
+<details>
+<summary>Answer</summary>
+**B)** True Quantified Boolean Formulas is PSPACE-complete (space analog of Cook-Levin).
+</details>
+
+**Q4.** The Immerman-Szelepcsényi theorem says:
+- A) P = NP
+- B) NL = co-NL ✓
+- C) PSPACE = NPSPACE
+- D) L = NL
+
+<details>
+<summary>Answer</summary>
+**B)** Nondeterministic log space is closed under complement.
+</details>
+
+**Q5.** Which containment is known to be strict?
+- A) P ⊂ NP
+- B) L ⊂ PSPACE ✓
+- C) NP ⊂ PSPACE
+- D) P ⊂ PSPACE
+
+<details>
+<summary>Answer</summary>
+**B)** The space hierarchy theorem gives L ⊂ PSPACE, while P vs NP remains open.
+</details>
 
 ## Summary
 

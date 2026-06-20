@@ -1,8 +1,51 @@
 # Chapter 7 â€” React Advanced
 
+> **Previous:** [06-react-basics](./06-react-basics.md) | **Next:** [08-node-express](./08-node-express.md)
+
 ## Learning Objectives
 
+> **One-Sentence Takeaway:** `useRef` persists mutable values across renders without causing re-renders when mutated.
+
 By the end of this chapter, you will be able to:
+
+## Chapter at a Glance
+
+> **One-Sentence Takeaway:** `useMemo` and `useCallback` cache computations and function references to avoid wasted work.
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+|useRef|Mutable references that persist across renders without causing re-renders|Use for DOM access, previous values, and render count tracking|
+|useMemo/useCallback|Memoize expensive computations and function references|Only memoize after measuring — premature optimization adds complexity|
+|useReducer|Handles complex state transitions with a reducer function|Ideal for state that depends on previous state with multiple sub-values|
+|useContext|Provides dependency injection across the component tree|Create custom hooks with context validation for better developer experience|
+|Custom Hooks|Encapsulate reusable stateful logic into functions that can use other hooks|Prefix custom hooks with `use` and compose them from built-in hooks|
+|React Router|Declarative client-side routing with nested routes and navigation|Use `Outlet` for nested layouts and `NavLink` for active link styling|
+
+## Chapter Roadmap
+
+> **One-Sentence Takeaway:** `useReducer` manages complex state logic with a reducer function and action dispatches.
+
+```mermaid
+graph TD
+    A[useRef]
+    B[useMemo & useCallback]
+    A --> B
+    C[useReducer]
+    B --> C
+    D[Context API & useContext]
+    C --> D
+    E[Custom Hooks]
+    D --> E
+    F[React Router]
+    E --> F
+    G[Error Boundaries]
+    F --> G
+    H[Portals]
+    G --> H
+    I[Performance Optimization]
+    H --> I
+```
+
 
 1. Manage mutable references and DOM access using `useRef`.
 2. Memoize expensive computations with `useMemo` and callback identity with `useCallback`.
@@ -13,6 +56,8 @@ By the end of this chapter, you will be able to:
 7. Use error boundaries, portals, and performance optimization techniques.
 
 ## Theory
+
+> **One-Sentence Takeaway:** Context API with `useContext` provides dependency injection across the component tree.
 
 ![React Advanced Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/07-react-advanced.png)
 
@@ -525,7 +570,107 @@ React DevTools (browser extension) provides:
 - **Profiler tab**: Record performance flamegraphs showing render duration and reason.
 - **Source maps**: Navigate from component to source file.
 
+
+> [!TIP]
+> Create a custom hook for every piece of reusable stateful logic. Extract `useFetch`, `useLocalStorage`, and `useMediaQuery` early — they pay for themselves.
+
+> [!WARNING]
+> `useMemo` and `useCallback` add complexity. Only use them when you've measured a performance problem — React is fast without them in most cases.
+
+> [!REMEMBER]
+> Error boundaries catch errors during rendering, in lifecycle methods, and in constructors. They do NOT catch errors in event handlers, async code, or SSR.
+
+
+
+## Concept Comparison Table
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|`useRef` vs `useState`|Mutable, no re-render on change|Immutable setter, triggers re-render|
+|`useMemo` vs `useCallback`|Returns cached value|Returns cached function reference|
+|`useReducer` vs `useState`|Complex state, action-based updates|Simple independent values|
+|Context vs Props Drilling|Global state without manual threading|Passes through every intermediate layer|
+|Error Boundary vs try/catch|Declarative, catches render errors|Imperative, catches synchronous code|
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|-----------|
+|Hooks|`useRef`,`useMemo`,`useCallback`,`useReducer`,`useContext`|
+|Memoization|`React.memo(Component)` for props comparison, `useMemo` for values, `useCallback` for functions|
+|Context|`createContext`,`Context.Provider`,`useContext()`|
+|Router Components|`BrowserRouter`,`Routes`,`Route`,`Link`,`NavLink`,`Outlet`|
+|Advanced Patterns|Error boundaries, Portals, React.memo, Code splitting with `React.lazy`|
+
+## Cross-Application Matrix
+
+| Domain | Application | Benefit |
+|--------|------------|--------|
+|Shopping Cart|useReducer for cart state, Context for user data|Complex state transitions with predictable actions|
+|Dashboard|useMemo for filtered data, React.memo for charts|Smooth rendering with large datasets|
+|Auth System|Context for user session, custom useAuth hook|Global user state accessible from any component|
+|Form Wizard|useReducer for multi-step form state|Step navigation with validation at each step|
+|Real-time App|Custom useWebSocket hook, useRef for instance tracking|Encapsulated WebSocket lifecycle management|
+
+## Chapter Quiz
+
+Test your understanding with these quick questions.
+
+**Q1. When should you use `useReducer` over `useState`?**
+
+- A) Always — it's more powerful
+- B) When state has multiple sub-values or complex transition logic
+- C) When you need synchronous updates
+- D) Never — useReducer is deprecated
+
+<details><summary>Answer</summary>
+
+**B) `useReducer` excels when state logic involves multiple sub-values, complex transitions, or when the next state depends on the previous one.**
+
+</details>
+
+**Q2. What is the purpose of `React.memo`?**
+
+- A) To memoize function results
+- B) To prevent re-renders when props haven't changed (shallow comparison)
+- C) To memoize API calls
+- D) To track render count
+
+<details><summary>Answer</summary>
+
+**B) `React.memo` is a higher-order component that prevents re-rendering when the component's props haven't changed according to shallow comparison.**
+
+</details>
+
+**Q3. What types of errors do Error Boundaries NOT catch?**
+
+- A) Render errors
+- B) Errors in lifecycle methods
+- C) Errors in event handlers
+- D) Constructor errors
+
+<details><summary>Answer</summary>
+
+**C) Error boundaries do not catch errors in event handlers, asynchronous code (setTimeout, fetch), or server-side rendering.**
+
+</details>
+
+**Q4. How do you prevent unnecessary re-renders when passing callbacks to memoized children?**
+
+- A) Use `useRef`
+- B) Use `useMemo`
+- C) Use `useCallback`
+- D) Use `React.Fragment`
+
+<details><summary>Answer</summary>
+
+**C) `useCallback` returns a stable function reference that only changes when its dependencies change, preventing unnecessary re-renders of memoized children.**
+
+</details>
+
 ## Summary
+
+> **One-Sentence Takeaway:** Custom hooks encapsulate reusable stateful logic and must start with the `use` prefix.
 
 - `useRef` persists mutable values across renders without causing re-renders.
 - `useMemo` and `useCallback` memoize values and functions to avoid wasted work.
@@ -539,6 +684,8 @@ React DevTools (browser extension) provides:
 - React DevTools enables real-time inspection and profiling.
 
 ## Exercises
+
+> **One-Sentence Takeaway:** React Router enables declarative nested routing with `BrowserRouter`, `Routes`, and `Route`.
 
 ### Review Questions
 

@@ -1,8 +1,51 @@
 # Chapter 5 â€” ES6+ JavaScript
 
+> **Previous:** [04-js-dom](./04-js-dom.md) | **Next:** [06-react-basics](./06-react-basics.md)
+
 ## Learning Objectives
 
+> **One-Sentence Takeaway:** `let` and `const` provide block scoping and eliminate the hoisting pitfalls of `var`.
+
 By the end of this chapter, you will be able to:
+
+## Chapter at a Glance
+
+> **One-Sentence Takeaway:** Arrow functions offer concise syntax and inherit `this` from the enclosing scope.
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+|Block-Scoped Declarations|`let` and `const` replace `var` with block scoping and the TDZ|Use `const` by default; only use `let` when you need reassignment|
+|Arrow Functions|Concise syntax with lexical `this` binding|Ideal for callbacks, array methods, and avoiding `this` confusion|
+|Template Literals|String interpolation, multi-line strings, and tagged templates|Use backticks for any string containing variables or line breaks|
+|Destructuring|Extract values from arrays and objects with a single statement|Use with function parameters for clean optional/default value handling|
+|Classes & Modules|Syntactic sugar over prototypes with `class`, `extends`, `import`/`export`|Organize code into modules with named and default exports|
+|Async Patterns|Promises and `async`/`await` provide composable asynchronous control flow|Prefer `async`/`await` over raw `.then()` chains for readability|
+
+## Chapter Roadmap
+
+> **One-Sentence Takeaway:** Template literals enable interpolation, multi-line strings, and custom tagged template processing.
+
+```mermaid
+graph TD
+    A[let, const & Block Scoping]
+    B[Arrow Functions]
+    A --> B
+    C[Template Literals]
+    B --> C
+    D[Destructuring]
+    C --> D
+    E[Spread & Rest]
+    D --> E
+    F[Classes]
+    E --> F
+    G[ES Modules]
+    F --> G
+    H[Promises & Async/Await]
+    G --> H
+    I[Map, Set & Symbol]
+    H --> I
+```
+
 
 1. Use `let` and `const` with proper understanding of block scoping and the temporal dead zone.
 2. Write arrow functions with concise syntax and correct `this` binding.
@@ -15,6 +58,8 @@ By the end of this chapter, you will be able to:
 9. Use `Map`, `Set`, `WeakMap`, and `Symbol` for advanced data modeling.
 
 ## Theory
+
+> **One-Sentence Takeaway:** Destructuring extracts values from arrays and objects with a clean, readable syntax.
 
 ![ES6+ JavaScript Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/05-es6-plus.png)
 
@@ -445,7 +490,107 @@ function process(obj) {
 }
 ```
 
+
+> [!TIP]
+> Combine destructuring with rest: `const {a, b, ...rest} = obj` extracts `a` and `b` while gathering remaining properties into `rest`.
+
+> [!WARNING]
+> Arrow functions cannot be used as constructors and have no `arguments` object. Use rest parameters `...args` instead.
+
+> [!REMEMBER]
+> `Promise.all` fails fast (rejects on first rejection). Use `Promise.allSettled` when you need results from all promises regardless of failure.
+
+
+
+## Concept Comparison Table
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|`Promise.all` vs `Promise.allSettled`|Rejects on first rejection, short-circuits|Never rejects, returns all results|
+|`Map` vs `Object`|Any key type, ordered insertion, `.size` property|String/Symbol keys only, inherits prototype|
+|`Set` vs `Array`|Unique values, no index access, `.has()` is O(1)|Ordered, allows duplicates, index access|
+|`class` vs prototype|Cleaner syntax, `super` keyword, `extends`|Manual `.prototype` manipulation|
+|`import` vs `require`|Static, tree-shakeable, async dynamic import|Synchronous, runtime resolution|
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|-----------|
+|Declarations|`const` (no reassign), `let` (block-scoped), avoid `var`|
+|Arrow Functions|`(params) => expr`, lexical `this`, no `arguments`|
+|Destructuring|`const {a, b} = obj`, `const [x, y] = arr`|
+|Spread/Rest|`...arr` expands, `...args` collects|
+|Promise Combinators|`Promise.all()`, `.allSettled()`, `.race()`, `.any()`|
+
+## Cross-Application Matrix
+
+| Domain | Application | Benefit |
+|--------|------------|--------|
+|React Components|Arrow functions, destructuring props|Clean component syntax|
+|API Client|Async/await with try/catch for error handling|Readable asynchronous data fetching|
+|Configuration|Spread operator for merging defaults|Immutable configuration merging|
+|Data Modeling|Map for caches, Set for unique collections|Efficient lookups and deduplication|
+|Code Organization|ES modules for splitting code|Tree-shakeable, maintainable codebase|
+
+## Chapter Quiz
+
+Test your understanding with these quick questions.
+
+**Q1. Which of the following correctly uses destructuring?**
+
+- A) `const user = {name, email}`
+- B) `const {name, email} = user`
+- C) `const [name, email] = user`
+- D) `const user = [name, email]`
+
+<details><summary>Answer</summary>
+
+**B) Object destructuring extracts properties by name using `{ }` on the left side of the assignment.**
+
+</details>
+
+**Q2. What does `Promise.allSettled` return?**
+
+- A) The first resolved value
+- B) An array of objects with `status` and `value`/`reason`
+- C) Only rejected promises
+- D) A single resolved value or the first rejection
+
+<details><summary>Answer</summary>
+
+**B) `allSettled` returns results for all promises, each with `status: 'fulfilled'` or `status: 'rejected'`.**
+
+</details>
+
+**Q3. How do you make a property private in an ES2022 class?**
+
+- A) Prefix with underscore `_prop`
+- B) Use the `private` keyword
+- C) Prefix with hash `#prop`
+- D) Use `const prop` inside the constructor
+
+<details><summary>Answer</summary>
+
+**C) The `#` prefix creates true private fields in JavaScript classes (ES2022).**
+
+</details>
+
+**Q4. What is the difference between `Map` and `WeakMap`?**
+
+- A) WeakMap keys must be objects and are garbage-collected
+- B) WeakMap has a `.size` property
+- C) WeakMap is iterable
+- D) There is no difference
+
+<details><summary>Answer</summary>
+
+**A) `WeakMap` keys must be objects, and entries are garbage-collected when the key object is no longer referenced elsewhere.**
+
+</details>
+
 ## Summary
+
+> **One-Sentence Takeaway:** ES6 classes and ES modules provide a modern OOP and code organization model.
 
 - `let` and `const` replace `var` with block scoping; `const` prevents reassignment.
 - Arrow functions provide lexical `this` and concise syntax but lack `arguments`.
@@ -458,6 +603,8 @@ function process(obj) {
 - `Map`, `Set`, `WeakMap`, and `Symbol` extend the language's data modeling capabilities.
 
 ## Exercises
+
+> **One-Sentence Takeaway:** `async`/`await` makes promise-based code read like synchronous logic.
 
 ### Review Questions
 

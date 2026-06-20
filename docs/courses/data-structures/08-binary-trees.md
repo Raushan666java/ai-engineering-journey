@@ -1,4 +1,6 @@
-# Chapter 8: Binary Trees
+﻿# Chapter 8: Binary Trees
+
+> **Previous:** [Chapter 7: Hash Tables](./07-hash-tables.md) | **Next:** [Binary Search Trees](./09-bst.md)
 
 ## Learning Objectives
 
@@ -6,6 +8,28 @@
 - Implement tree traversals (inorder, preorder, postorder, level-order).
 - Derive tree properties from structural relations.
 - Describe threaded binary trees.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Tree Structure | Each node has 0-2 children | Root at top, leaves at bottom |
+| Traversals | Preorder, inorder, postorder, level-order | Each serves different processing order |
+| Properties | Leaves = internal nodes + 1 | Maximum nodes at level i is 2^i |
+| Complete vs Full | Full: 0 or 2 children; Complete: filled left to right | Important for heap storage |
+| Threaded Trees | Null pointers reused as traversal links | O(1) traversal without stack |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Binary Tree] --> B[Structure & Terminology]
+    B --> C[Properties: Height, Levels, Size]
+    C --> D[Traversals]
+    D --> E[Preorder / Inorder / Postorder / Level]
+    E --> F[Iterative vs Recursive]
+    F --> G[Threaded Binary Trees]
+```
 
 ## Theory
 
@@ -53,6 +77,8 @@ A **binary tree** is a hierarchical structure where each node has at most two ch
 ### Threaded Binary Trees
 
 A threaded binary tree replaces null pointers with pointers to the inorder predecessor (left) or successor (right), enabling \( O(1) \) inorder traversal without a stack or recursion.
+
+> **One-Sentence Takeaway:** Binary trees enable hierarchical data representation with four traversal orders each suited for different processing needs - pick the right traversal for the job.
 
 ## Examples
 
@@ -271,7 +297,11 @@ Is full tree: 1
 Is full tree: 0
 ```
 
+> **One-Sentence Takeaway:** Master the four traversals - each reveals different structure: inorder for sorted order, preorder for copies, postorder for cleanup, level-order for BFS.
+
 ## ðŸ’¡ Pro Tips
+
+> **Pro Tip:** Always prefer iterative BFS (queue-based) for level-order traversal over recursion; recursion for level-order would require tracking depth explicitly and wastes stack frames.
 
 - **Level-order (BFS) is iterative, not recursive**: Use a queue. While the queue is not empty, pop the front, process it, push its children. This is the natural way to visit nodes level by level.
 - **Three traversals are all \(O(n)\)**: Each node is visited exactly once. The difference is the order, not the complexity. Choose the traversal that matches your processing need.

@@ -1,5 +1,9 @@
 # Chapter 2: Nondeterministic Finite Automata
 
+> **Previous:** [Deterministic Finite Automata](./01-dfa.md) | **Next:** [Regular Expressions](./03-regex.md)
+
+
+
 ## Learning Objectives
 
 - Define nondeterministic finite automata formally.
@@ -9,6 +13,30 @@
 - Apply the subset construction algorithm to convert an NFA to a DFA.
 - Prove the equivalence of NFA and DFA.
 - Understand when nondeterminism simplifies automaton design.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Nondeterminism | Multiple next states per symbol | Simpler automata than DFA |
+| NFA Definition | δ: Q × Σ → P(Q) | Accept if any path accepts |
+| Epsilon | ε-transitions consume no input | Modular automata construction |
+| Subset Construction | NFA → DFA via state sets | DFA may need exponential states |
+| Equivalence | NFA = DFA in power | Convenience ≠ more power |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[NFA Concept] --> B[Formal Definition]
+    B --> C[NFA Computation]
+    C --> D[Epsilon Transitions]
+    D --> E[Subset Construction]
+    E --> F[Equivalence Proof]
+    F --> G[Nondeterminism in CS]
+```
 
 ## Theory
 
@@ -157,6 +185,92 @@ DFA approach: product construction, 4-6 states.
 NFA approach: add a new start state q with Îµ-transitions to the start states of Lâ‚'s and Lâ‚‚'s automata. The NFA nondeterministically chooses which language to match against.
 
 This shows why nondeterminism simplifies **modular** automaton construction.
+
+
+
+## Concept Comparison Table
+| Feature | DFA | NFA | NFA-ε |
+|---------|-----|-----|-------|
+| δ returns | Single state | Set of states | Set of states |
+| ε-transitions | Not allowed | Not allowed | Allowed |
+| State count | Potentially large | Potentially smaller | Potentially smaller |
+| Design ease | Harder | Easier | Easiest |
+| Power | Regular langs | Regular langs | Regular langs |
+
+## Quick Reference
+| NFA Concept | Definition |
+|-------------|-----------|
+| Formal NFA | (Q, Σ, δ, q₀, F), δ: Q × Σ → P(Q) |
+| Extended δ̂ | { r | q₀ →* r reading w } |
+| Acceptance | δ̂(q₀, w) ∩ F ≠ ∅ |
+| ε-closure(q) | States reachable via ε* |
+| NFA-ε δ | δ: Q × (Σ ∪ {ε}) → P(Q) |
+
+## Cross-Application Matrix
+| Domain | Application |
+|--------|------------|
+| Compilers | Combined NFA for token recognition |
+| Text search | Regex search engines |
+| Protocol analysis | Concurrent system behavior |
+| Network security | Intrusion pattern matching |
+| Bioinformatics | Sequence motif search |
+
+## Chapter Quiz
+
+**Q1.** NFA transition function returns:
+- A) A single state
+- B) A set of states ✓
+- C) A Boolean
+- D) A string
+
+<details>
+<summary>Answer</summary>
+**B)** NFA δ returns a set of possible next states — this is the key difference from DFA.
+</details>
+
+**Q2.** An NFA accepts w if:
+- A) All paths lead to accept
+- B) At least one path leads to accept ✓
+- C) The NFA reads all symbols
+- D) No path rejects
+
+<details>
+<summary>Answer</summary>
+**B)** NFA acceptance requires at least one computation path to an accepting state.
+</details>
+
+**Q3.** ε-closure(q) contains:
+- A) States reachable by one symbol
+- B) States reachable via ε-transitions only ✓
+- C) All reachable states
+- D) Only q itself
+
+<details>
+<summary>Answer</summary>
+**B)** ε-closure(q) = { r | q →* r using only ε-transitions }.
+</details>
+
+**Q4.** Subset construction DFA may have up to:
+- A) Same as NFA
+- B) Twice the NFA
+- C) 2^|Q_NFA| states ✓
+- D) |Q_NFA| log |Q_NFA|
+
+<details>
+<summary>Answer</summary>
+**C)** Each DFA state = subset of NFA states, so up to 2^k states.
+</details>
+
+**Q5.** Are NFA more powerful than DFA?
+- A) Yes, NFA recognize more languages
+- B) No, they are equivalent ✓
+- C) Only NFA-ε are more powerful
+- D) Only if ε-transitions are used
+
+<details>
+<summary>Answer</summary>
+**B)** NFA and DFA recognize exactly the same class: regular languages.
+</details>
 
 ## Summary
 

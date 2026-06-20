@@ -1,5 +1,10 @@
 # Chapter 5: Process Synchronization
 
+**<< [Threads](./04-threads.md)** | [**Next: Semaphores and Monitors**](./06-semaphores-monitors.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Define race conditions and explain why they occur in concurrent systems
@@ -8,6 +13,27 @@
 - Explain hardware support for synchronization (test-and-set, compare-and-swap)
 - Use mutex locks and semaphores for process synchronization
 - Recognize classic synchronization problems and their solutions
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Race Condition** | Multiple processes manipulate shared data concurrently; result depends on scheduling order |
+| **Critical Section** | Code segment accessing shared resources; must be executed atomically |
+| **Peterson Solution** | Software-based two-process synchronization using turn and flag variables |
+| **Hardware Support** | Test-and-set, compare-and-swap, memory barriers for lock implementation |
+| **Mutex Locks** | Simple lock variable with acquire/release; spinlock if busy-waiting |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Race Conditions] --> B[Critical Section Problem]
+    B --> C[Peterson's Solution]
+    C --> D[Hardware Synchronization]
+    D --> E[Mutex Locks]
+    E --> F[Semaphores & Monitors]
+    F --> G[Classic Problems]
+</div>
 
 ## Theory
 
@@ -344,6 +370,64 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> Peterson solution is the classic software-only approach to mutual exclusion, but it does not work on modern hardware that reorders instructions. Use **hardware primitives** (test-and-set, CAS) or **higher-level constructs** (mutex, semaphore) in real systems.
+
+> [WARNING]
+> **Spinlocks** (busy-waiting mutexes) waste CPU cycles. Only appropriate when the wait is expected to be short (e.g., in the kernel before a context switch). For longer waits, use a blocking mutex that yields the CPU.
+
+> [NOTE]
+> Three requirements for a valid critical section solution: **mutual exclusion** (only one process in CS), **progress** (no process outside CS blocks entry), and **bounded waiting** (no indefinite postponement).
+
+## Concept Comparison
+
+| Solution | Mutual Exclusion | Progress | Bounded Waiting | Busy-Waiting |
+|--------|----------------|--------|---------------|------------|
+| Peterson | Yes | Yes | Yes | Yes |
+| Test-and-Set | Yes | Yes | No (may starve) | Yes |
+| Compare-and-Swap | Yes | Yes | No | Yes |
+| Mutex (blocking) | Yes | Yes | Yes | No |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Race Condition** | Timing-dependent error from concurrent shared data access |
+| **Critical Section** | Code segment where shared data is accessed |
+| **Mutual Exclusion** | No two processes simultaneously in critical section |
+| **Spinlock** | Lock that busy-waits until acquired |
+| **Test-and-Set** | Atomic hardware instruction that reads and writes a memory location |
+| **Bounded Waiting** | Guarantee that a process will not wait indefinitely |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Mutex | Protect shared connection pool | Buffer pool access | Shared peripheral registers |
+| Spinlock | Short critical sections | Log buffer writes | Interrupt handler sync |
+| Atomic Ops | Reference counting | Sequence generation | Flag setting |
+
+## Chapter Quiz
+
+1. What is a race condition?
+   - a) Two processes using different resources
+   - b) Concurrent access to shared data producing incorrect results
+   - c) CPU runs too fast
+   - d) A deadlock situation
+
+2. Which is NOT a requirement for a critical section solution?
+   - a) Mutual exclusion
+   - b) Progress
+   - c) Deadlock avoidance
+   - d) Bounded waiting
+
+3. When should spinlocks be used instead of blocking mutexes?
+   - a) For long waits
+   - b) For short waits where context switch overhead is higher
+   - c) Always
+   - d) Never
 
 ## Summary
 

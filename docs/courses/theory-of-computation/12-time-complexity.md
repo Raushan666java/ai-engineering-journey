@@ -1,5 +1,9 @@
 # Chapter 12: Time Complexity and NP-Completeness
 
+> **Previous:** [Reducibility](./11-reducibility.md) | **Next:** [Space Complexity](./13-space-complexity.md)
+
+
+
 ## Learning Objectives
 
 - Define time complexity classes P and NP.
@@ -9,6 +13,30 @@
 - Prove NP-completeness for classic problems.
 - Distinguish between P, NP, and NP-complete.
 - Understand the significance of the P vs NP question.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Class P | Polynomial-time DTM solution | Efficiently solvable problems |
+| Class NP | Polynomial-time verification | Solutions easy to check |
+| NP-Completeness | Hardest problems in NP | If one falls, all fall |
+| Cook-Levin Theorem | SAT is NP-complete | First NP-complete problem |
+| Polynomial Reduction | A ≤_P B preserves P membership | Tool for proving NP-completeness |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[Time Complexity] --> B[Class P]
+    B --> C[Class NP]
+    C --> D[Polynomial Reductions]
+    D --> E[NP-Completeness]
+    E --> F[Cook-Levin Theorem]
+    F --> G[Proving NP-Completeness]
+```
 
 ## Theory
 
@@ -187,6 +215,91 @@ Given numbers aâ‚, â€¦, aâ‚™ and target T.
 **In NP:** Certificate is the subset. Verify sum = T.
 
 **NP-hardness:** Reduce 3SAT to SUBSET-SUM. For each variable, create two numbers (one for true, one for false). For each clause, create two "slack" numbers. The construction ensures a subset summing to T corresponds to a satisfying assignment (each clause's sum is satisfied by at least one literal).
+
+
+
+## Concept Comparison Table
+| Class | Definition | Characteristic |
+|-------|------------|---------------|
+| P | ⋃ TIME(n^k) | Polynomial-time DTM solution |
+| NP | ⋃ NTIME(n^k) | Polynomial-time verification |
+| NP-complete | NP ∩ NP-hard | Hardest in NP |
+| co-NP | { L | complement ∈ NP } | Negative certificates |
+
+## Quick Reference
+| Problem | Class | Key Insight |
+|---------|-------|-------------|
+| PATH | P | BFS/DFS reachability |
+| SAT | NP-complete | Cook-Levin theorem |
+| CLIQUE | NP-complete | 3SAT reduction |
+| TSP | NP-complete | Many practical problems |
+| Primality | P | AKS algorithm |
+
+## Cross-Application Matrix
+| Domain | Complexity Concept |
+|--------|-------------------|
+| Cryptography | One-way functions require P ≠ NP |
+| AI | Many planning problems NP-complete |
+| Operations research | Optimization NP-hard |
+| Bioinformatics | Sequence alignment in P |
+| Scheduling | Many variants NP-complete |
+
+## Chapter Quiz
+
+**Q1.** P is the class of problems solvable in:
+- A) Linear time
+- B) Polynomial time on DTM ✓
+- C) Polynomial time on NTM
+- D) Exponential time
+
+<details>
+<summary>Answer</summary>
+**B)** P = problems decidable in O(n^k) time on a deterministic Turing machine.
+</details>
+
+**Q2.** NP problems can be:
+- A) Solved in polynomial time
+- B) Verified in polynomial time ✓
+- C) Solved in exponential time only
+- D) Solved by DFA
+
+<details>
+<summary>Answer</summary>
+**B)** NP = problems with polynomial-time verifiable certificates (solutions).
+</details>
+
+**Q3.** A problem is NP-complete if it is:
+- A) In NP
+- B) NP-hard
+- C) Both in NP and NP-hard ✓
+- D) In P
+
+<details>
+<summary>Answer</summary>
+**C)** NP-complete = in NP + all NP problems reduce to it (NP-hard).
+</details>
+
+**Q4.** Cook-Levin theorem proved ___ is NP-complete:
+- A) TSP
+- B) SAT ✓
+- C) CLIQUE
+- D) HAM-CYCLE
+
+<details>
+<summary>Answer</summary>
+**B)** Cook (1971) and Levin (1973) independently proved SAT is NP-complete.
+</details>
+
+**Q5.** If P = NP, then:
+- A) All NP problems have polynomial algorithms ✓
+- B) All problems are decidable
+- C) Cryptography becomes impossible
+- D) Exponential time is unnecessary
+
+<details>
+<summary>Answer</summary>
+**A)** P = NP means every efficiently verifiable problem is efficiently solvable.
+</details>
 
 ## Summary
 

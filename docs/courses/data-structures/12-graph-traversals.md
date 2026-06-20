@@ -1,13 +1,48 @@
-# Chapter 12: Graph Traversals
+﻿# Chapter 12: Graph Traversals
+
+**Prev:** [Chapter 11: Graphs](11-graphs.md) | **Next:** [Chapter 13: AVL Trees](13-avl.md)
 
 ## Learning Objectives
+
+> **One-Sentence Takeaway:** BFS finds shortest paths in unweighted graphs; DFS excels at connectivity analysis and topological sorting.
 
 - Implement Breadth-First Search (BFS) and Depth-First Search (DFS).
 - Find connected components in undirected graphs.
 - Detect cycles in directed and undirected graphs.
 - Compute topological ordering using Kahn's algorithm and DFS.
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| BFS | Level-order traversal using a queue | Shortest path in unweighted graphs |
+| DFS | Depth-first exploration using recursion/stack | Cycle detection, topological sort, SCC |
+| Topological sort | Linear ordering of DAG vertices | Dependency resolution, build systems |
+| Cycle detection | Back edge in directed, visited non-parent in undirected | Detect invalid graphs, deadlocks |
+| Connected components | Vertices reachable within same component | Cluster analysis, graph partitioning |
+| Bipartite checking | Two-coloring with BFS | Matching problems, resource allocation |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Graph Traversal] --> B{BFS or DFS?}
+    B --> C[BFS - Queue]
+    B --> D[DFS - Stack/Recursion]
+    C --> E[Shortest Path Unweighted]
+    C --> F[Bipartite Check]
+    D --> G[Topological Sort]
+    D --> H[Cycle Detection]
+    D --> I[Strongly Connected Components]
+    E --> J[Applications]
+    G --> J
+    H --> J
+    I --> J
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** BFS and DFS both run in O(V+E) but use different data structures and excel at different problems.
 
 ![Graph Traversals Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch12-graph-traversals.png)
 
@@ -35,6 +70,8 @@ A topological ordering of a directed acyclic graph (DAG) is a linear ordering su
 - **DFS-based**: perform DFS; push vertices onto a stack after finishing.
 
 ## Examples
+
+> **One-Sentence Takeaway:** Code implementations demonstrate BFS queue-based distance computation, DFS recursive exploration, and Kahn's algorithm for topological ordering.
 
 ### Example 1: BFS Implementation
 
@@ -285,7 +322,7 @@ Has cycle: yes
 DAG has cycle: no
 ```
 
-### Example 5: Topological Sort â€” Kahn's Algorithm
+### Example 5: Topological Sort — Kahn's Algorithm
 
 ```cpp
 #include <iostream>
@@ -341,7 +378,7 @@ int main() {
 Topological order: 4 5 0 2 3 1
 ```
 
-### Example 6: Topological Sort â€” DFS Based
+### Example 6: Topological Sort — DFS Based
 
 ```cpp
 #include <iostream>
@@ -376,7 +413,9 @@ std::vector<int> topologicalSortDFS(const std::vector<std::list<int>>& adj) {
 }
 ```
 
-## ðŸ’¡ Pro Tips
+## 💡 Pro Tips
+
+> **One-Sentence Takeaway:** BFS guarantees shortest paths in unweighted graphs, DFS with recursion stack detects directed cycles, and Kahn's algorithm doubles as a cycle detector.
 
 - **BFS finds shortest paths in unweighted graphs**: The first time BFS visits a vertex, it has reached it via the shortest path. Track the predecessor to reconstruct the path.
 - **DFS for cycle detection**: In directed graphs, a back edge (edge to a vertex on the current recursion stack) means a cycle. In undirected graphs, any edge to a visited vertex that is not the parent is a cycle.
@@ -428,31 +467,31 @@ std::vector<int> topologicalSortDFS(const std::vector<std::list<int>>& adj) {
 
 1. **BFS uses what data structure?**
    - a) Stack
-   - b) Queue âœ“
+   - b) Queue ✅
    - c) Priority queue
    - d) Hash table
 
 2. **What is BFS's time complexity on adjacency lists?**
    - a) \(O(V)\)
-   - b) \(O(V+E)\) âœ“
+   - b) \(O(V+E)\) ✅
    - c) \(O(V^2)\)
    - d) \(O(E^2)\)
 
 3. **In directed graph cycle detection, what indicates a cycle?**
    - a) Cross edge
-   - b) Back edge âœ“
+   - b) Back edge ✅
    - c) Forward edge
    - d) Tree edge
 
 4. **Kahn's algorithm detects cycles when:**
    - a) All vertices are processed
-   - b) Some vertices remain unprocessed âœ“
+   - b) Some vertices remain unprocessed ✅
    - c) The queue is empty
    - d) In-degrees are zero
 
 5. **Which algorithm finds shortest paths in unweighted graphs?**
    - a) DFS
-   - b) BFS âœ“
+   - b) BFS ✅
    - c) Topological sort
    - d) Kosaraju's
 

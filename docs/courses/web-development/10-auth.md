@@ -1,8 +1,50 @@
 # Chapter 10: Authentication and Authorization
 
+> **Previous:** [09-rest-apis](./09-rest-apis.md) | **Next:** [11-databases-web](./11-databases-web.md)
+
 ## Learning Objectives
 
+> **One-Sentence Takeaway:** Authentication verifies identity; authorization determines what an authenticated user can access.
+
 By the end of this chapter, you will be able to:
+
+## Chapter at a Glance
+
+> **One-Sentence Takeaway:** bcrypt with 12+ salt rounds hashes passwords with built-in salting to resist rainbow table attacks.
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+|Auth vs Auth|Authentication verifies identity; authorization controls access|Always check auth first, then authz — never skip either step|
+|Password Hashing|bcrypt with salt rounds makes rainbow table attacks infeasible|Use 12+ salt rounds — higher is slower but more resistant to GPU cracking|
+|JWT Tokens|Stateless access tokens (short-lived) and refresh tokens (long-lived)|Keep access tokens to 15min, rotate refresh tokens on each use to detect theft|
+|OAuth 2.0|Delegated authorization via third-party providers (Google, GitHub)|Use Passport.js strategies for standardized social login integration|
+|RBAC|Role-based access control maps permissions to roles, not users|Define roles as enums with explicit permission matrices for each role|
+|MFA/TOTP|Time-based one-time passwords add a second factor beyond passwords|Store TOTP secrets encrypted; provide recovery codes for account recovery|
+
+## Chapter Roadmap
+
+> **One-Sentence Takeaway:** JWTs provide stateless authentication with short-lived access tokens and longer-lived refresh tokens.
+
+```mermaid
+graph TD
+    A[Auth vs Authz]
+    B[Password Hashing with bcrypt]
+    A --> B
+    C[JWT Access & Refresh Tokens]
+    B --> C
+    D[Login & Registration Routes]
+    C --> D
+    E[Token Refresh & Rotation]
+    D --> E
+    F[OAuth 2.0 with Passport.js]
+    E --> F
+    G[Role-Based Access Control]
+    F --> G
+    H[Multi-Factor Authentication]
+    G --> H
+```
+
+
 - Implement session-based and token-based authentication
 - Create JWT-based authentication with refresh tokens
 - Implement OAuth 2.0 flows for third-party authentication
@@ -11,6 +53,8 @@ By the end of this chapter, you will be able to:
 - Implement multi-factor authentication with TOTP
 
 ## 10.1 Authentication vs Authorization
+
+> **One-Sentence Takeaway:** OAuth 2.0 delegates identity verification to trusted providers like Google and GitHub.
 
 ![Authentication and Authorization Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/web-development/10-authentication.png)
 
@@ -43,6 +87,8 @@ function authorize(...roles: string[]) {
 
 ## 10.2 Password Hashing with bcrypt
 
+> **One-Sentence Takeaway:** RBAC assigns permissions to roles and roles to users, simplifying permission management at scale.
+
 ```typescript
 import bcrypt from "bcryptjs";
 
@@ -65,6 +111,8 @@ const isValid = await verifyPassword("userPassword123", passwordHash);
 ```
 
 ## 10.3 JWT Authentication
+
+> **One-Sentence Takeaway:** TOTP-based multi-factor authentication adds a critical second layer of security beyond passwords.
 
 ```typescript
 import jwt from "jsonwebtoken";
@@ -294,6 +342,104 @@ router.post("/mfa/verify", authenticate, async (req, res) => {
   res.json({ message: "MFA enabled" });
 });
 ```
+
+
+> [!TIP]
+> Always rotate refresh tokens on each use. If a stolen refresh token is used alongside the legitimate one, revoke all sessions for that user immediately.
+
+> [!WARNING]
+> Never store plaintext passwords or use weak hashing like MD5/SHA1. bcrypt, scrypt, or argon2 are the only acceptable password hashing algorithms.
+
+> [!REMEMBER]
+> Authentication failures should return 401 Unauthorized. Authorization failures (insufficient permissions) should return 403 Forbidden. Never confuse these two status codes.
+
+
+
+## Concept Comparison Table
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|Authentication vs Authorization|Verifies WHO the user is|Determines WHAT they can do|
+|Access Token vs Refresh Token|Short-lived (15min), sent with every request|Long-lived (7d), used only to get new access tokens|
+|bcrypt vs SHA256|Slow, salted, resistant to GPU cracking|Fast, unsalted, trivially rainbow-tabled|
+|Session vs JWT|Server-side storage, easy to revoke|Stateless, no server storage needed|
+|OAuth 2.0 vs SAML|Modern, REST-based, token-focused|Older, XML-based, enterprise-focused|
+
+## Quick Reference
+
+| Topic | Key Points |
+|-------|-----------|
+|JWT Parts|Header (alg/typ), Payload (claims), Signature (verify integrity)|
+|Auth Status Codes|401 Unauthorized (not logged in), 403 Forbidden (insufficient role)|
+|bcrypt|`bcrypt.hash(password, 12)`, `bcrypt.compare(password, hash)`|
+|OAuth 2.0 Roles|Resource Owner, Client, Authorization Server, Resource Server|
+|TOTP|`authenticator.generateSecret()`, `authenticator.verify({token, secret})`|
+
+## Cross-Application Matrix
+
+| Domain | Application | Benefit |
+|--------|------------|--------|
+|Social Login|OAuth 2.0 with Google/GitHub providers|Frictionless user onboarding|
+|Admin Dashboard|RBAC with Admin/Editor/Viewer roles|Granular control over sensitive actions|
+|Banking App|MFA + JWT with short access token lifetime|Defense in depth for financial data|
+|API Service|API key auth for machine-to-machine|No user interaction needed|
+|Multi-tenant SaaS|RBAC per organization with role hierarchies|Isolated permissions per workspace|
+
+## Chapter Quiz
+
+Test your understanding with these quick questions.
+
+**Q1. What is the difference between 401 Unauthorized and 403 Forbidden?**
+
+- A) They are synonyms
+- B) 401 means not authenticated, 403 means not authorized
+- C) 401 means invalid token, 403 means expired token
+- D) 401 is for APIs, 403 is for web pages
+
+<details><summary>Answer</summary>
+
+**B) 401 indicates the client is not authenticated (no valid credentials). 403 indicates the client is authenticated but lacks permission for the requested resource.**
+
+</details>
+
+**Q2. Why should refresh tokens be rotated?**
+
+- A) To reduce server storage
+- B) To detect token theft — if a stolen token is used, the old one becomes invalid
+- C) To comply with GDPR
+- D) To improve API performance
+
+<details><summary>Answer</summary>
+
+**B) Refresh token rotation invalidates the old token each time a new one is issued. If a stolen token is used, the legitimate user's next refresh attempt will fail, signaling theft.**
+
+</details>
+
+**Q3. What salt round count is recommended for bcrypt in production?**
+
+- A) 4
+- B) 8
+- C) 12
+- D) 2
+
+<details><summary>Answer</summary>
+
+**C) 12 or higher. The cost factor is exponential — 12 rounds (2^12 iterations) balances security and performance for production use.**
+
+</details>
+
+**Q4. Which OAuth 2.0 flow is recommended for single-page applications?**
+
+- A) Authorization Code with PKCE
+- B) Implicit Flow
+- C) Client Credentials
+- D) Resource Owner Password
+
+<details><summary>Answer</summary>
+
+**A) Authorization Code with PKCE (Proof Key for Code Exchange) is the recommended flow for SPAs and mobile apps as it prevents authorization code interception attacks.**
+
+</details>
 
 ## Summary
 

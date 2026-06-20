@@ -1,5 +1,10 @@
 # Chapter 16: Security
 
+**<< [Shell Scripting](./15-shell-scripting.md)** | [**Next: Virtualization and Cloud Computing**](./17-virtualization.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Identify the four main goals of OS security: confidentiality, integrity, availability, and authentication
@@ -9,6 +14,29 @@
 - Describe Linux Security Modules (LSM) and SELinux
 - Understand buffer overflow attacks and modern mitigations
 - Explain the principle of least privilege and its implementation
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Security Goals** | Confidentiality, integrity, availability (CIA triad) |
+| **Authentication** | Passwords, biometrics, two-factor, Kerberos |
+| **Access Control** | Discretionary (DAC), mandatory (MAC), role-based (RBAC) |
+| **Buffer Overflow** | Classic exploit; overwrite return address to execute arbitrary code |
+| **Cryptography** | Symmetric (AES), asymmetric (RSA), hashing (SHA-256), signatures |
+| **Network Security** | Firewalls, VPNs, TLS, intrusion detection systems |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Security Goals: CIA] --> B[Authentication Methods]
+    B --> C[Access Control Models]
+    C --> D[Buffer Overflow & Malware]
+    D --> E[Cryptography Basics]
+    E --> F[Network Security]
+    F --> G[Security Best Practices]
+    G --> H[Summary]
+</div>
 
 ## Theory
 
@@ -385,6 +413,66 @@ chroot /jail /bin/bash
 
 unshare --pid --mount --net --fork /bin/bash  # Create new namespaces
 ```
+
+
+> [TIP]
+> **Defense in depth** is key: no single mechanism is sufficient. Layer multiple controls -- firewall + authentication + encryption + monitoring + least privilege.
+
+> [WARNING]
+> **Buffer overflow** attacks exploit programs with missing input length checks. Modern mitigations: ASLR, NX stack, stack canaries -- but careful coding is still essential.
+
+> [NOTE]
+> **Kerberos** is a network authentication protocol using tickets and a Key Distribution Center (KDC). It is the foundation of Windows Active Directory authentication.
+
+## Concept Comparison
+
+| Feature | DAC | MAC | RBAC |
+|-------|---|---|----|
+| Control by | File owner | System policy | Role assignment |
+| Flexibility | High | Low | Moderate |
+| Security Level | Low (user-granted) | High (enforced) | Moderate-High |
+| Examples | Unix permissions | SELinux, AppArmor | Windows AD groups |
+| Use Case | Desktops/servers | Military/classified | Enterprise orgs |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **CIA** | Confidentiality, Integrity, Availability |
+| **ASLR** | Address Space Layout Randomization |
+| **Stack Canary** | Value before return address to detect overflow |
+| **Kerberos** | Network authentication using tickets + KDC |
+| **SELinux** | Linux Security Module implementing MAC |
+| **TLS** | Transport Layer Security for encrypted communication |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Authentication | HTTP basic/OAuth | User/password, cert | Login/PAM | 802.1X, VPN certs |
+| Access Control | File perms, .htaccess | GRANT/REVOKE | Unix perms, ACLs | Firewall rules |
+| Encryption | HTTPS (TLS) | Transparent encryption | dm-crypt | IPsec, TLS |
+| Auditing | Access logs | Query logs | Auditd, syslog | NetFlow, IDS |
+
+## Chapter Quiz
+
+1. What does I in CIA stand for?
+   - a) Integrity
+   - b) Identity
+   - c) Implementation
+   - d) Isolation
+
+2. Which technique randomizes addresses against overflow?
+   - a) Stack canary
+   - b) NX bit
+   - c) ASLR
+   - d) KASLR
+
+3. Which access control uses resource owner identity?
+   - a) DAC
+   - b) MAC
+   - c) RBAC
+   - d) ABAC
 
 ## Summary
 

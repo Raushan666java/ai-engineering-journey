@@ -1,5 +1,9 @@
 # Chapter 4: Properties of Regular Languages
 
+> **Previous:** [Regular Expressions](./03-regex.md) | **Next:** [Context-Free Grammars](./05-cfg.md)
+
+
+
 ## Learning Objectives
 
 - State and apply the pumping lemma for regular languages.
@@ -8,6 +12,29 @@
 - State and apply the Myhill-Nerode theorem.
 - Minimize a DFA using the table-filling algorithm.
 - Distinguish between regular and non-regular languages.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Pumping Lemma | Long strings have pumpable substring | Proves languages are not regular |
+| Closure Properties | Regular langs closed under ∪, ∩, ¬, etc. | Build complex languages from simple |
+| Myhill-Nerode | Characterizes regularity via equivalence | Finds minimal DFA uniquely |
+| DFA Minimization | Table-filling merges equivalent states | Most efficient language recognizer |
+| Decision Properties | Membership, emptiness, equivalence decidable | Algorithms exist for regular langs |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[Pumping Lemma] --> B[Non-Regular Proofs]
+    B --> C[Closure Properties]
+    C --> D[Myhill-Nerode]
+    D --> E[DFA Minimization]
+    E --> F[Decision Properties]
+```
 
 ## Theory
 
@@ -151,6 +178,83 @@ To check if L(M) = âˆ… for DFA M with states Q, start qâ‚€, accept F:
 - If any accept state is reachable, L(M) â‰  âˆ….
 - Otherwise, L(M) = âˆ….
 
+
+
+## Concept Comparison Table
+| Property | Regular? | Construction |
+|----------|----------|-------------|
+| Union | Yes | ε-NFA from new start |
+| Intersection | Yes | Product DFA |
+| Complement | Yes | Flip accept/reject |
+| Concatenation | Yes | ε-chain NFAs |
+| Kleene star | Yes | ε-loop NFA |
+| Reversal | Yes | Reverse transitions |
+
+## Quick Reference
+| Tool | Purpose |
+|------|---------|
+| Pumping lemma | Prove non-regularity |
+| Myhill-Nerode | Characterize/maximally classify |
+| Table-filling | Minimize DFA |
+| Product construction | Intersection/union closure |
+| State elimination | DFA → regex |
+
+## Cross-Application Matrix
+| Domain | Application |
+|--------|------------|
+| Compiler theory | Lexer optimization via DFA minimization |
+| Formal verification | Model checking regular properties |
+| Text processing | Efficient regex matching |
+| Network security | Aho-Corasick multi-pattern search |
+| Bioinformatics | DNA sequence pattern search |
+
+## Chapter Quiz
+
+**Q1.** The pumping lemma shows a language is:
+- A) Regular
+- B) Not regular ✓
+- C) Context-free
+- D) Decidable
+
+<details>
+<summary>Answer</summary>
+**B)** The pumping lemma gives a necessary condition for regularity; violating it proves non-regularity.
+</details>
+
+**Q2.** Regular languages are closed under:
+- A) Intersection ✓
+- B) All set operations
+- C) Every operation
+- D) Only union
+
+<details>
+<summary>Answer</summary>
+**A)** Regular languages are closed under union, intersection, complement, concatenation, and Kleene star.
+</details>
+
+**Q3.** Myhill-Nerode theorem states L is regular iff ≡_L has:
+- A) Zero classes
+- B) Finite index ✓
+- C) One class
+- D) Infinite index
+
+<details>
+<summary>Answer</summary>
+**B)** Finite-index right-invariant equivalence relation — number of classes = minimal DFA states.
+</details>
+
+**Q4.** DFA minimization merges:
+- A) All states
+- B) Indistinguishable states ✓
+- C) Reachable states
+- D) Accepting states
+
+<details>
+<summary>Answer</summary>
+**B)** States that behave identically on all suffixes are merged.
+</details>
+
+**
 ## Summary
 
 - The pumping lemma provides a necessary condition for regularity used to prove non-regularity.

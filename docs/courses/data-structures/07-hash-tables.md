@@ -1,4 +1,6 @@
-# Chapter 7: Hash Tables
+﻿# Chapter 7: Hash Tables
+
+> **Previous:** [Chapter 6: Queues](./06-queues.md) | **Next:** [Binary Trees](./08-binary-trees.md)
 
 ## Learning Objectives
 
@@ -6,6 +8,28 @@
 - Implement collision resolution via chaining and open addressing.
 - Analyze load factor and rehashing strategies.
 - Evaluate the complexity of search, insert, and delete.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Hash Function | Maps keys to bucket indices | Must be fast and uniform |
+| Chaining | Linked list per bucket for collisions | Simple, O(alpha) search |
+| Open Addressing | Probe sequence for next empty slot | Memory efficient, cluster-prone |
+| Load Factor | n/m ratio determines performance | Rehash when alpha > threshold |
+| Rehashing | Double table, reinsert all keys | O(n) cost, infrequent |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Hash Table] --> B[Hash Function Design]
+    B --> C[Collision Resolution]
+    C --> D[Chaining vs Open Addressing]
+    D --> E[Probing: Linear, Quadratic, Double]
+    E --> F[Load Factor & Rehashing]
+    F --> G[Applications: Caches, Symbol Tables]
+```
 
 ## Theory
 
@@ -32,6 +56,8 @@ For string keys, a common polynomial hash:
 
 ### Collision Resolution
 
+> **Remember:** In open addressing with linear probing, deleted entries must be marked as tombstones (not removed) to preserve the probe sequence for existing keys - failing to do so breaks search.
+
 **Chaining**: each bucket holds a linked list of entries. Insert is \( O(1) \); search is \( O(\alpha) \) where \( \alpha = n/m \) is the load factor.
 
 **Open addressing**: all entries are stored directly in the bucket array. On collision, probe for the next empty slot.
@@ -42,6 +68,8 @@ For string keys, a common polynomial hash:
 ### Load Factor and Rehashing
 
 Load factor \( \alpha = \frac{n}{m} \). For chaining, typical threshold is \( \alpha > 1.0 \) triggers rehash. For open addressing, \( \alpha > 0.7 \) is common. Rehashing allocates a larger table (typically 2x), recomputes hash indices for all entries, and inserts them into the new table.
+
+> **One-Sentence Takeaway:** Hash tables provide O(1) average-case operations through uniform key distribution and careful load factor management.
 
 ## Examples
 
@@ -322,7 +350,11 @@ table -> bucket 3
 function -> bucket 10
 ```
 
+> **One-Sentence Takeaway:** Choose chaining for simplicity and safe deletion or open addressing (with double hashing to minimize clustering) for memory-constrained environments.
+
 ## ðŸ’¡ Pro Tips
+
+> **Pro Tip:** For hash tables with open addressing, keep load factor below 0.7. Above 0.7, cluster formation accelerates rapidly and performance degrades - rehash proactively.
 
 - **Load factor is your most important metric**: Keep \(\alpha < 0.75\) for open addressing, \(\alpha < 1.0\) for chaining. Rehash (resize and reinsert all keys) when the threshold is exceeded.
 - **Choose the right probing strategy**: Linear probing is cache-friendly but suffers from primary clustering. Quadratic probing reduces clustering but may not find an empty slot even if one exists. Double hashing is safest for open addressing.

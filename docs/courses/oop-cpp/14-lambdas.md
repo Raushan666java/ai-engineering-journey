@@ -1,4 +1,6 @@
-# Chapter 14: Lambdas
+﻿# Chapter 14: Lambdas
+
+> **Previous:** [13-move-semantics](./13-move-semantics.md) | **Next:** [15-concurrency](./15-concurrency.md)
 
 ## Learning Objectives
 
@@ -9,6 +11,31 @@ After studying this chapter, students will be able to:
 - Create generic lambdas (C++14) and understand their template nature
 - Use lambdas with STL algorithms effectively
 - Apply the Immediately Invoked Function Expression (IIFE) pattern
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Lambda Syntax** | `[capture](params) -> ret { body }` syntactic sugar | Write concise inline function objects |
+| **Capture Clause** | By-value or by-reference capture of surrounding scope | Prefer explicit captures for clarity |
+| **Mutable Lambdas** | mutable allows modification of by-value captures | Changes affect the copy, not the original |
+| **Capturing this** | this capture gives access to enclosing members | Beware of dangling if lambda outlives object |
+| **Initialised Captures** | C++14 enables move-only captures | Move unique_ptr into lambdas |
+| **Generic Lambdas** | C++14 auto parameters make templated lambdas | Useful with STL algorithms |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Lambda Syntax] --> B[Capture Clause]
+    B --> C[Mutable Lambdas]
+    B --> D[Capturing this]
+    B --> E[Initialised Captures]
+    B --> F[Generic Lambdas]
+    A --> G[IIFE]
+    A --> H[Lambdas with STL]
+    H --> I[Capturing and Performance]
+```
 
 ## 14.1 Lambda Syntax
 
@@ -45,6 +72,7 @@ struct Comparator {
 
 ## 14.2 Capture Clause
 
+> **One-Sentence Takeaway:** The capture clause specifies which surrounding variables the lambda accesses — by value or by reference.
 The capture clause determines what external variables the lambda can access:
 
 | Capture | Meaning |
@@ -70,6 +98,7 @@ auto updater = [&](int& x) { x = x * multiplier + offset; };
 
 ## 14.3 Mutable Lambdas
 
+> **One-Sentence Takeaway:** mutable allows a by-value-captured lambda to modify its copies without affecting the original.
 By default, `operator()` on the closure is `const`. To modify captured-by-value variables, use `mutable`:
 
 ```cpp
@@ -109,6 +138,7 @@ C++17 allows `[*this]` to capture a copy of the object (useful for asynchronous 
 
 ## 14.5 Initialised Captures (C++14)
 
+> **One-Sentence Takeaway:** Initialised captures (C++14) let you capture move-only types and create local aliases within the capture.
 Capture an expression result into a named variable within the closure:
 
 ```cpp
@@ -126,6 +156,7 @@ auto func2 = [result = compute_value()] {
 
 ## 14.6 Generic Lambdas (C++14)
 
+> **One-Sentence Takeaway:** Generic lambdas (C++14) use auto parameters, making them template function objects.
 Generic lambdas use `auto` parameter types, which effectively makes `operator()` a template:
 
 ```cpp
@@ -168,6 +199,7 @@ const auto settings = [] {
 
 ## 14.8 Lambdas with STL Algorithms
 
+> **One-Sentence Takeaway:** STL algorithms pair naturally with lambdas for concise, local predicate and transformation logic.
 Lambdas are the idiomatic way to customise STL algorithm behaviour:
 
 ```cpp
@@ -205,6 +237,7 @@ std::for_each(people.begin(), people.end(),
 
 ## 14.9 Capturing and Performance
 
+> **One-Sentence Takeaway:** Default capture by reference can create dangling references — prefer explicit capture or capture by value.
 Lambdas with empty capture lists can be converted to function pointers:
 
 ```cpp
@@ -219,7 +252,82 @@ int main() {
 }
 ```
 
-Lambdas with captures cannot convert to function pointers but can be stored in `std::function` (at some overhead).
+Lambdas with captures cannot convert to function pointers
+
+> **Pro Tip:** Prefer explicit captures over [=] or [&] — they make the lambda's dependencies clear and prevent dangling reference bugs.
+ but can be stored in `std::function` (at some overhead).
+
+## Concept Comparison Table
+
+| Feature | Syntax | Availability | Use Case |
+|---------|--------|-------------|----------|
+| Basic lambda | `[](int x) { return x+1; }` | C++11 | Inline transformation |
+| Capture by value | `[x]() { return x; }` | C++11 | Read current value |
+| Capture by ref | `[&x]() { x++; }` | C++11 | Modify or large objects |
+| Mutable | `[x]() mutable { x++; }` | C++11 | Modify copy without affecting original |
+| Capture this | `[this]() { member++; }` | C++11 | Access class members |
+| Init capture | `[x = std::move(y)]{}` | C++14 | Move-only types |
+| Generic lambda | `[](auto x) { return x; }` | C++14 | Type-agnostic lambdas |
+
+## Quick Reference
+
+| Component | Example | Meaning |
+|-----------|---------|---------|
+| Empty capture | `[]` | Captures nothing |
+| Value capture | `[x]` | Copies x into lambda |
+| Ref capture | `[&x]` | References x |
+| Default value | `[=]` | Captures all by value |
+| Default ref | `[&]` | Captures all by reference |
+| Mixed | `[=, &x]` | Default value, x by reference |
+| this | `[this]` | Captures enclosing object by ref |
+| init | `[u = std::move(ptr)]` | Initialised capture |
+
+## Cross-Application Matrix
+
+| Domain | How Concepts Apply |
+|--------|-------------------|
+| **STL Algorithms** | Lambdas are the customisation point for sort, transform, find_if |
+| **GUI Callbacks** | Lambdas as event handlers with captured UI state |
+| **Async/Tasks** | Lambdas for thread tasks, captured context for arguments |
+| **Pipelines** | Chain lambdas through composition for data transformation |
+| **Lazy Evaluation** | IIFE lambdas initialise const values with complex logic |
+
+## Chapter Quiz
+
+1. What does [=] capture?
+   A) Nothing
+   B) All variables by reference
+   C) All variables by value
+   D) Only variables explicitly listed
+   <details><summary>Answer</summary>**C)** [=] captures all automatic variables used in the body by value.</details>
+
+2. A mutable lambda allows:
+   A) Modifying the original captured variables
+   B) Modifying the copies of by-value captures
+   C) Capturing by reference
+   D) Recursive calls
+   <details><summary>Answer</summary>**B)** mutable permits modification of the lambda's internal copies of by-value captures.</details>
+
+3. Generic lambdas (C++14) use which parameter type?
+   A) int
+   B) auto
+   C) template
+   D) typename
+   <details><summary>Answer</summary>**B)** Generic lambdas use auto parameters, making them template function objects.</details>
+
+4. What is an IIFE?
+   A) An inline function
+   B) A lambda defined and immediately invoked
+   C) A recursive lambda
+   D) A generic lambda
+   <details><summary>Answer</summary>**B)** Immediately Invoked Function Expression — a lambda defined and called in one step.</details>
+
+5. A lambda that captures nothing can:
+   A) Only be stored in std::function
+   B) Convert to a function pointer
+   C) Not be passed to algorithms
+   D) Only capture by reference
+   <details><summary>Answer</summary>**B)** A captureless lambda has an implicit conversion to a matching function pointer.</details>
 
 ## 14.10 Summary
 

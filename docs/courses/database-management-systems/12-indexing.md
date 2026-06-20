@@ -1,5 +1,7 @@
 # Chapter 12: Indexing
 
+> **Prev:** [Chapter 11: Recovery System](11-recovery.md) | **Next:** [Chapter 13: Query Processing](13-query-processing.md)
+
 ## Learning Objectives
 
 - Explain the purpose of indexes in query acceleration
@@ -8,6 +10,32 @@
 - Design composite indexes based on query patterns
 - Understand bitmap indexes for low-cardinality columns
 - Choose appropriate index types based on workload
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Purpose of Indexes** | Accelerate lookups at the cost of writes + storage | Index only columns used in WHERE, JOIN, and ORDER BY |
+| **B+ Tree** | Balanced, disk-optimized, all leaves at same depth | Default choice for range queries and most workloads |
+| **Hash Index** | O(1) equality lookups, no range support | Use for primary-key lookups only |
+| **Composite Indexes** | Leftmost prefix rule determines usability | Order columns by selectivity (highest first) |
+| **Bitmap Indexes** | Compact bitwise representation per value | Ideal for low-cardinality columns in data warehouses |
+| **Index Selection** | Match index type to query pattern | Monitor slow queries, add indexes iteratively |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Query Arrives] --> B{Full Scan?}
+    B -->|Yes| C[Sequential Read]
+    B -->|No - Use Index| D{Index Type}
+    D -->|B+ Tree| E[Range / Equality]
+    D -->|Hash| F[Equality Only]
+    D -->|Bitmap| G[Boolean Combos]
+    D -->|Composite| H[Multi-Column]
+    E & F & G & H --> I[Page Lookup]
+    I --> J[Return Results]
+```
 
 ## Theory
 
@@ -20,6 +48,8 @@ Without indexes, finding data requires a **full table scan** â€” reading ev
 **Concept:** An index is a data structure organized for fast search. For each search key value, the index stores the physical location (row ID, page ID) where the corresponding data is stored.
 
 **Trade-off:** Indexes speed up reads but slow down writes (INSERT, UPDATE, DELETE) because the index must be maintained. They also consume storage.
+
+> **One-Sentence Takeaway:** Indexes transform full table scans (minutes) into direct lookups (milliseconds) at the cost of slower writes and extra storage.
 
 ### 12.2 B+ Tree Indexes
 
@@ -85,6 +115,8 @@ Leaf: Scan [55, 65, 80] â†’ found 65 at position 2
 
 This is why large databases can be searched with 3â€“4 I/O operations.
 
+> **One-Sentence Takeaway:** The B+ tree's high fanout (hundreds of keys per node) keeps depth to 3-4 levels, making it possible to search billions of rows with just a handful of disk I/Os.
+
 ### 12.3 Clustered vs. Unclustered Indexes
 
 **Clustered Index:** The table data is physically ordered and stored according to the index key. There can be only one clustered index per table. The leaf nodes of a clustered index contain the actual data rows.
@@ -106,6 +138,8 @@ CREATE INDEX idx_orders_customer ON orders(customer_id);
 -- Cluster command (one-time physical reorganization)
 CLUSTER orders USING idx_orders_customer;
 ```
+
+> **One-Sentence Takeaway:** Clustered indexes physically sort data (one per table, ideal for range queries); unclustered indexes store pointers to data (many per table, each lookup costs an extra I/O).
 
 ### 12.4 Hash Indexes
 
@@ -135,6 +169,8 @@ SELECT * FROM employees WHERE employee_id = 1001;  -- Fast!
 -- Query that cannot use hash index:
 SELECT * FROM employees WHERE employee_id > 1000;  -- Must scan!
 ```
+
+> **One-Sentence Takeaway:** Hash indexes deliver O(1) equality lookups but cannot support range queries — reserve them for primary-key or unique-ID lookups.
 
 ### 12.5 Composite (Multi-Column) Indexes
 
@@ -176,6 +212,10 @@ SELECT last_name, first_name, salary FROM employees
 WHERE last_name LIKE 'S%';
 ```
 
+> **One-Sentence Takeaway:** Composite indexes serve multi-column queries via the leftmost prefix rule — place equality columns before range columns and highest-selectivity first.
+
+> **💡 Pro Tip:** A covering index that includes all columns a query needs eliminates table access entirely (index-only scan) — check `pg_stat_user_indexes` for index usage stats.
+
 ### 12.6 Bitmap Indexes
 
 Bitmap indexes use a bit array (bitmap) for each distinct value of a column. They are efficient for **low-cardinality** columns (few distinct values but many rows) and **data warehousing** workloads.
@@ -208,6 +248,8 @@ EXPLAIN SELECT * FROM employees WHERE gender = 'M' AND department_id = 10;
 **Advantages:** Space-efficient for low cardinality. Supports fast AND, OR, NOT, COUNT operations.
 
 **Disadvantages:** Poor for high-cardinality columns. Updates can be expensive (bitmaps may need rebuilding).
+
+> **One-Sentence Takeaway:** Bitmap indexes enable fast bitwise AND/OR operations on low-cardinality columns, making them ideal for data warehouse queries that combine multiple dimension filters.
 
 ### 12.7 Index Selection
 
@@ -242,6 +284,8 @@ FROM pg_stat_user_indexes
 ORDER BY idx_scan;
 ```
 
+> **One-Sentence Takeaway:** Index selection balances read speed against write cost — index columns in WHERE/JOIN/ORDER BY that have high selectivity and skip small tables or low-selectivity columns.
+
 ### 12.8 Index-Organized Tables (IOT)
 
 Some databases (Oracle, MySQL InnoDB) store the table as a clustered index. The data is the index, and the index is the data:
@@ -255,6 +299,8 @@ CREATE TABLE employees (
 );
 -- Secondary indexes on name or department_id contain pointers to the primary key
 ```
+
+> **One-Sentence Takeaway:** In index-organized tables (clustered indexes), the data IS the index — secondary indexes store primary key pointers, adding an extra lookup step.
 
 ### 12.9 Partial and Functional Indexes
 
@@ -279,6 +325,8 @@ SELECT * FROM customers WHERE LOWER(email) = 'user@example.com';
 -- PostgreSQL functional index on JSON column
 CREATE INDEX idx_order_total ON orders(((items->>'total')::DECIMAL));
 ```
+
+> **One-Sentence Takeaway:** Partial indexes reduce storage and maintenance by indexing only relevant rows (WHERE clause), while functional indexes accelerate queries that transform column values (LOWER, JSON extraction).
 
 ## Examples
 

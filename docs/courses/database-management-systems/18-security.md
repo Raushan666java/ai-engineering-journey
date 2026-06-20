@@ -1,4 +1,6 @@
-# Chapter 18: Database Security
+# Chapter 18:
+
+> **Prev:** [Chapter 17distributed-db](17-distributed-db.md) | **Next:** [Chapter 19performance-tuning](19-performance-tuning.md) Database Security
 
 ## Learning Objectives
 
@@ -9,6 +11,34 @@
 - Audit database activity for compliance
 - Apply row-level security and data masking
 - Understand GDPR and privacy regulations
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Authentication** | Username/password, Kerberos, certificates | Use multi-factor authentication for all database access |
+| **Authorization** | GRANT/REVOKE with role-based access control | Follow the principle of least privilege |
+| **Encryption** | Transparent Data Encryption (TDE) + TLS | Encrypt at rest AND in transit — never one without the other |
+| **SQL Injection** | Malicious input alters query structure | Always use parameterized queries (prepared statements) |
+| **Auditing** | Log all DDL, DML, and login attempts | Enable audit logging with centralized SIEM integration |
+| **Backup Security** | Encrypted backups with restricted access | Test restore from encrypted backups regularly |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Client] --> B{Authentication}
+    B -->|Pass| C{Authorization}
+    B -->|Fail| D[Reject]
+    C -->|Permitted| E[Encrypted Channel]
+    C -->|Denied| D
+    E --> F[Query Execution]
+    F --> G[Audit Log]
+    G --> H[Encrypted Storage]
+    H --> I[Encrypted Backups]
+```
+
+
 
 ## Theory
 
@@ -35,6 +65,9 @@ Databases store an organization's most valuable asset â€” data. Security br
 | Backup compromise | Stolen backup tapes | Offline data access |
 | Social engineering | DBA tricked into revealing password | Credential compromise |
 | Ransomware | Encrypt database files | Data unavailability |
+
+
+> **One-Sentence Takeaway:** Database authentication verifies user identity through passwords, Kerberos, certificates, or multi-factor methods.
 
 ### 18.2 Authentication
 
@@ -88,6 +121,9 @@ CREATE USER 'external_user' IDENTIFIED WITH auth_ldap_simple
 - Use separate credentials for each application
 - Revoke credentials immediately when personnel leave
 - Use connection pooling with credential management (PgBouncer, ProxySQL)
+
+
+> **One-Sentence Takeaway:** Authorization controls what authenticated users can do using GRANT/REVOKE with role-based access control (RBAC).
 
 ### 18.3 Authorization and Access Control
 
@@ -143,6 +179,9 @@ REVOKE ALL ON ALL TABLES IN SCHEMA public FROM PUBLIC;
 GRANT USAGE ON SCHEMA public TO app_role;
 GRANT SELECT, INSERT, UPDATE ON orders TO app_role;
 ```
+
+
+> **One-Sentence Takeaway:** Encryption at rest (TDE) protects data files; encryption in transit (TLS) protects network communication.
 
 ### 18.4 SQL Injection
 
@@ -258,6 +297,9 @@ SELECT query, calls, total_time FROM pg_stat_statements
 WHERE query ~* '(union.*select|drop|truncate|exec|xp_cmdshell|--|;)';
 ```
 
+
+> **One-Sentence Takeaway:** SQL injection exploits unsanitized user input — parameterized queries are the definitive defense.
+
 ### 18.5 Encryption
 
 **Encryption at Rest:**
@@ -337,6 +379,9 @@ require_secure_transport = ON
 psql "host=db.example.com port=5432 dbname=mydb sslmode=verify-full sslrootcert=root.crt"
 ```
 
+
+> **One-Sentence Takeaway:** Database auditing logs all privileged operations and access attempts for compliance and forensic investigation.
+
 ### 18.6 Auditing
 
 **Logging Database Activity:**
@@ -397,6 +442,9 @@ SELECT * FROM unified_audit_trail
   WHERE unified_audit_policies = 'SENSITIVE_DATA_ACCESS';
 ```
 
+
+> **One-Sentence Takeaway:** Database security requires defense in depth — authentication, authorization, encryption, auditing, and secure backups.
+
 ### 18.7 Row-Level Security
 
 SQL databases can enforce access control based on row properties.
@@ -451,6 +499,9 @@ CREATE SECURITY POLICY RegionFilter
     ON dbo.customer_data;
 ```
 
+> **One-Sentence Takeaway:** Row-level security restricts which rows a user can query based on their identity or role, enabling multi-tenant data isolation.
+
+
 ### 18.8 Dynamic Data Masking
 
 Hide sensitive data from non-privileged users.
@@ -494,6 +545,9 @@ REVOKE ALL ON employees FROM PUBLIC;
 GRANT SELECT ON employees_public TO PUBLIC;
 ```
 
+> **One-Sentence Takeaway:** Dynamic data masking hides sensitive data from non-privileged users at query time without altering the underlying storage.
+
+
 ### 18.9 Backup Security
 
 Backups are a frequent target for attackers. Secure them:
@@ -513,6 +567,9 @@ mysqldump --all-databases | gzip | openssl enc -aes-256-cbc -out backup.sql.gz.e
 -- 5. Use immutable storage (S3 Object Lock)
 -- 6. Rotate encryption keys
 ```
+
+> **One-Sentence Takeaway:** Backup security requires encrypted backup files, restricted storage access, and regular restore testing to ensure recoverability.
+
 
 ### 18.10 GDPR and Data Privacy
 
@@ -558,6 +615,9 @@ DELETE FROM raw_logs WHERE created_at < NOW() - INTERVAL '90 days';
 CREATE VIEW active_sessions AS
 SELECT * FROM sessions WHERE last_access > NOW() - INTERVAL '30 minutes';
 ```
+
+> **One-Sentence Takeaway:** GDPR compliance for databases requires data anonymization, the right to be forgotten, and audit trails for all personal data access.
+
 
 ## Examples
 

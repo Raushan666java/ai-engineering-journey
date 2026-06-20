@@ -1,5 +1,7 @@
 # Chapter 2: Classes and Objects
 
+> **Previous:** [Introduction](./01-introduction.md) | **Next:** [Constructors](./03-constructors.md)
+
 ## Learning Objectives
 
 After studying this chapter, students will be able to:
@@ -11,7 +13,33 @@ After studying this chapter, students will be able to:
 - Declare `const` member functions and understand their purpose
 - Implement and access static members
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Class Concept | A class is a blueprint; an object is an instance | Encapsulate data + operations together as a unit |
+| Access Specifiers | `private`, `protected`, `public` control visibility | Keep data `private`, expose only what callers need |
+| `class` vs `struct` | Identical except default access level | Use `struct` for aggregates, `class` for invariants |
+| Member Functions | Functions scoped within a class operate on its data | Define in header for small functions; `.cpp` for larger ones |
+| `this` Pointer | Implicit pointer to the invoking object | Return `*this` for fluent method chaining |
+| `const` Member Functions | Promise not to modify the object's state | Mark all read-only methods `const` — enables `const` correctness |
+| Static Members | Belong to the class, not any instance | Use for counters, factories, and shared configuration |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Class Concept] --> B[Access Specifiers]
+    B --> C[class vs struct]
+    C --> D[Member Functions]
+    D --> E[this Pointer]
+    E --> F[const Member Functions]
+    F --> G[Static Members]
+```
+
 ## 2.1 The Class Concept
+
+> **One-Sentence Takeaway:** A class bundles data and behaviour into a single user-defined type; an object is a concrete, run-time instantiation of that blueprint.
 
 ![OOP Concepts Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/oop-cpp/02-classes-objects.png)
 
@@ -57,6 +85,8 @@ int main() {
 
 ## 2.2 Access Specifiers
 
+> **One-Sentence Takeaway:** Access specifiers enforce encapsulation — `private` hides implementation, `protected` opens it to derived classes, and `public` defines the interface contract.
+
 Access specifiers control the visibility of class members:
 
 | Specifier | Meaning |
@@ -65,9 +95,13 @@ Access specifiers control the visibility of class members:
 | `protected` | Accessible within the class and its derived classes |
 | `public` | Accessible from any code |
 
-Encapsulation is the principle that an object's internal state should be protected from direct external modification. By making data members `private` and exposing controlled access through `public` member functions, the class enforces invariants. In the `BankAccount` example, the `balance_` can never become negative because all mutations pass through `deposit` and `withdraw`, which validate their arguments.
+Encapsulation is the principle that an object's internal state should be protected from direct external modification. By making data members `private` and exposing controlled access through `public` member functions, the class enforces invariants.
+
+> **Pro Tip:** The "rule of thumb" for access: start everything `private`, then elevate to `protected` only when a derived class genuinely needs it, and to `public` only for the interface your callers require. In the `BankAccount` example, the `balance_` can never become negative because all mutations pass through `deposit` and `withdraw`, which validate their arguments.
 
 ## 2.3 `class` versus `struct`
+
+> **One-Sentence Takeaway:** `class` and `struct` differ only in default access — `private` for `class`, `public` for `struct` — making `struct` the natural choice for plain-data aggregates.
 
 In C++, `struct` and `class` are functionally identical except for default access:
 
@@ -94,6 +128,8 @@ This is a stylistic convention, not a technical distinction. The compiler treats
 
 ## 2.4 Member Functions
 
+> **One-Sentence Takeaway:** Member functions operate on the object's data directly; define them inside the class for implicit `inline`, or outside using `::` to reduce header dependencies.
+
 Member functions (also called methods) are functions defined inside a class scope. They operate on the object on which they are called, accessing that object's member variables directly.
 
 Member functions can be defined inside the class body (implicitly `inline`) or outside using the scope resolution operator `::`:
@@ -115,6 +151,8 @@ double Rectangle::area() const {
 Separating declaration (in the header) from definition (in the `.cpp` file) reduces compilation dependencies and is standard practice for larger projects.
 
 ## 2.5 The `this` Pointer
+
+> **One-Sentence Takeaway:** `this` is the implicit pointer to the calling object — use it to disambiguate names and return `*this` for method chaining.
 
 Every non-static member function has access to an implicit parameter named `this`, which is a pointer to the object on which the function was invoked.
 
@@ -156,6 +194,8 @@ p.add("Hello ").add("World!").print();
 
 ## 2.6 const Member Functions
 
+> **One-Sentence Takeaway:** A `const` after the parameter list makes `*this` read-only — the compiler enforces that the object's observable state does not change.
+
 A member function declared with `const` after its parameter list promises not to modify the object's observable state. The compiler enforces this promise.
 
 ```cpp
@@ -186,7 +226,11 @@ private:
 
 A `const` object can only call `const` member functions. This is the foundation of const-correctness, a critical design discipline in C++.
 
+> **Remember:** Every getter that does not mutate should be `const`. If you forget, callers with a `const&` to your object cannot use that method — leading to frustrating compile errors.
+
 ## 2.7 Static Members
+
+> **One-Sentence Takeaway:** Static members exist once per class, not once per object — use them for counters, factories, and class-wide configuration.
 
 Static members belong to the class itself rather than to any individual object. They represent shared state or utility functions.
 
@@ -212,6 +256,77 @@ int Logger::instance_count_ = 0;
 Static member functions have no `this` pointer and cannot access non-static members. They are often used for factory functions, singleton accessors, and utility operations.
 
 Static data members must be defined outside the class (in exactly one translation unit), unless they are declared `constexpr` or `inline` (C++17).
+
+> **Warning:** Forgetting to define a static data member in exactly one `.cpp` file causes a linker error. The C++17 `inline` keyword eliminates this hassle — use `static inline` for class-level constants.
+
+## Concept Comparison Table
+
+| Feature | Description | Default `class` | Default `struct` |
+|---------|-------------|----------------|-------------------|
+| Default access | Members implicitly | `private` | `public` |
+| Inheritance default | Derivation access | `private` | `public` |
+| Typical use | Types with invariants | `class` | `struct` |
+| Data member convention | Naming style | Trailing `_` (e.g. `value_`) | No suffix |
+| Aggregate initialisation | `{ ... }` syntax | Not allowed with private members | Allowed with all-public |
+
+## Quick Reference
+
+| Construct | Syntax | Notes |
+|-----------|--------|-------|
+| Class definition | `class Name { ... };` | Semicolon required after `}` |
+| Access specifier | `private:` / `protected:` / `public:` | Stays in effect until next specifier |
+| `this` pointer | `this->member` | Implicit in member functions |
+| `const` member function | `void f() const;` | `*this` is `const` inside the body |
+| Static member function | `static void f();` | No `this` pointer |
+| Static data member (C++17) | `static inline T x = val;` | No out-of-class definition needed |
+| Method chaining | `return *this;` | Return type must be `T&` |
+
+## Cross-Application Matrix
+
+| Area | Application of Concepts |
+|------|------------------------|
+| Game Engines (Unreal) | `UObject` base class with static reflection and `this`-based chaining |
+| GUI Frameworks (Qt) | QObject uses static meta-object system and const-correct getters |
+| Banking / Finance | Account classes enforce invariants through private data + public accessors |
+| Embedded Firmware | `struct` for register maps; `class` for driver abstractions with static instances |
+| Compiler / Language Tools | AST nodes use `class` hierarchies with `const` visitor methods |
+
+## Chapter Quiz
+
+1. What is the default access level for members of a `class` in C++?
+   A) `public`
+   B) `protected`
+   C) `private`
+   D) It depends on the compiler
+   <details><summary>Answer</summary>**C)** For a `class`, members are `private` by default. For a `struct`, they are `public` by default.</details>
+
+2. Which statement about `const` member functions is **true**?
+   A) They cannot be called on non-`const` objects
+   B) They can modify `mutable` members and static members
+   C) They must be defined inside the class body
+   D) They cannot be overloaded
+   <details><summary>Answer</summary>**B)** `const` member functions cannot modify object state, but `mutable` members and static members are exempt from this restriction.</details>
+
+3. What does `this` represent inside a static member function?
+   A) A pointer to the class type
+   B) A pointer to the current object
+   C) A null pointer
+   D) Static member functions do not have a `this` pointer
+   <details><summary>Answer</summary>**D)** Static member functions belong to the class, not any instance, so they have no `this` pointer.</details>
+
+4. Why would you return `*this` from a member function?
+   A) To avoid copying the object
+   B) To enable method chaining
+   C) To mark the function as const
+   D) To access private members
+   <details><summary>Answer</summary>**B)** Returning `*this` as a reference (typically `T&`) allows callers to chain multiple calls on the same object: `obj.setX(1).setY(2)`.</details>
+
+5. How do you share a counter across all instances of a class?
+   A) Use a global variable
+   B) Use a static data member
+   C) Use a local variable inside each method
+   D) Use a `const` member function
+   <details><summary>Answer</summary>**B)** A `static` data member exists once for the entire class, shared across all instances. Increment it in the constructor to count living objects.</details>
 
 ## 2.8 Summary
 

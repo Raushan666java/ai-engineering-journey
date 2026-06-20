@@ -1,5 +1,7 @@
 # Chapter 10: Concurrency Control
 
+> **Previous:** [Chapter 9: Transactions](./09-transactions.md) | **Next:** Continue learning with advanced database concepts.
+
 ## Learning Objectives
 
 - Understand the need for concurrency control in multi-user databases
@@ -9,7 +11,31 @@
 - Understand Multi-Version Concurrency Control (MVCC)
 - Detect and resolve deadlocks in database systems
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **Lock-Based Protocols** | Shared (S) and Exclusive (X) locks control read/write access | Lock manager is the single source of truth for concurrency |
+| **Two-Phase Locking (2PL)** | Growing phase (acquire locks) → Shrinking phase (release locks) | Strict 2PL only releases locks at commit — most practical variant |
+| **Timestamp Ordering** | Assign timestamps; abort operations out of order | Avoids deadlocks but may cause cascading aborts |
+| **Optimistic Concurrency** | Validate at commit time — detect conflicts then | Works best in low-contention workloads |
+| **MVCC** | Maintain multiple versions — readers see a snapshot | Powers PostgreSQL and Oracle — no reader blocks writer |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Lock-Based Protocols] --> B[2PL & Strict 2PL]
+    B --> C[Deadlock Detection/Prevention]
+    C --> D[Timestamp Ordering]
+    D --> E[Optimistic Concurrency]
+    E --> F[MVCC]
+    F --> G[Granularity & Intent Locks]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** Every concurrency control protocol — locking, timestamps, optimism, MVCC — trades off throughput against consistency; choose based on your workload's contention level.
 
 ![Concurrency Control Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch10-concurrency.png)
 
@@ -278,6 +304,8 @@ WHERE blocker.pid = blocker_locks.pid
 
 ## Examples
 
+> **One-Sentence Takeaway:** Working through deadlock scenarios, 2PL schedules, and MVCC examples makes the theoretical protocols tangible — and reveals the trade-offs baked into every real DBMS.
+
 **Example 10.1: Deadlock in Action**
 
 ```sql
@@ -326,6 +354,10 @@ BEGIN;
 SELECT amount FROM accounts WHERE id = 1;
 -- Result: 500 (now sees the committed change)
 ```
+
+> **Warning:** Deadlocks are a natural consequence of locking — write application code that retries on deadlock (PostgreSQL error code 40001) rather than trying to prevent all deadlocks upfront.
+>
+> **Remember:** MVCC is the default concurrency model in PostgreSQL and Oracle — it allows readers to never block writers and vice versa, making it the most practical approach for OLTP workloads.
 
 ## ðŸ’¡ Pro Tips
 

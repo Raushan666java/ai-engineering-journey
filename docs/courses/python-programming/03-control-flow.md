@@ -1,5 +1,7 @@
 # Chapter 3: Control Flow
 
+
+> **Previous:** [Variables, Types, and Operators](./02-variables.md) | **Next:** [Loops and Iteration](./04-loops.md)
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -11,7 +13,38 @@ By the end of this chapter, students will be able to:
 
 ![Control Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/03-control-flow.png)
 
+
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+| 3.1 | if Statement | Branching with if/elif/else |
+| 3.2 | Truthiness | Truthy/falsy values in conditions |
+| 3.3 | Chained Comparisons | 1 < x < 10 syntax |
+| 3.4 | Short-Circuit | and/or lazy evaluation |
+| 3.5 | Ternary Expression | x if cond else y |
+| 3.6 | match-case | Structural pattern matching (3.10+) |
+| 3.7 | Conditional Assignment | Walrus operator := |
+| 3.8 | Boolean Precedence | not > and > or |
+
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[if/elif/else] --> B[Truthiness]
+    B --> C[Chained Comparisons]
+    C --> D[Short-Circuit]
+    D --> E[Ternary]
+    E --> F[match-case]
+    F --> G[Walrus Operator]
+    G --> H[Precedence]
+```
+
 ## 3.1 The if Statement
+
+> **One-Sentence Takeaway:** if/elif/else chains replace the switch statement found in other languages.
 
 The `if` statement executes a block when a condition is truthy:
 
@@ -21,6 +54,8 @@ if temperature > 25:
     print("It is hot today")
 ```
 
+
+> **Remember:** Every if can stand alone -- elif and else are optional. An if with no else simply does nothing when false.
 Add an `else` clause for the complementary case:
 
 ```python
@@ -49,6 +84,8 @@ else:
 
 Unlike some languages, Python has no `switch` statement (prior to 3.10). The `elif` chain serves the same purpose, and the `match-case` statement provides a more powerful alternative in Python 3.10+.
 
+
+> **Pro Tip:** Mixing tabs and spaces causes IndentationError. Configure your editor to convert tabs to spaces for Python files.
 Indentation is the only delimiter â€” there is no `endif` or closing brace. The colon after each condition is mandatory:
 
 ```python
@@ -63,6 +100,8 @@ else:
 ```
 
 ## 3.2 Truthiness and Condition Evaluation
+
+> **One-Sentence Takeaway:** Any value works as a condition -- empty collections, zero, and None are falsy; everything else is truthy.
 
 Conditions do not need to be boolean. Any expression can serve as a condition:
 
@@ -95,6 +134,8 @@ if result:               # wrong if result could be 0 or False
 
 ## 3.3 Chained Comparisons
 
+> **One-Sentence Takeaway:** Python's `1 < x < 10` syntax is more readable and efficient than `1 < x and x < 10`.
+
 Python supports chained comparisons naturally:
 
 ```python
@@ -119,6 +160,8 @@ This is more readable and efficient than the equivalent `1 < x and x < 10`.
 
 ## 3.4 Short-Circuit Evaluation
 
+> **One-Sentence Takeaway:** and stops at the first falsy operand; or stops at the first truthy operand.
+
 The logical operators `and` and `or` stop evaluating as soon as the result is determined:
 
 ```python
@@ -142,6 +185,8 @@ This pattern is less common since the walrus operator and `None`-aware idioms ga
 
 ## 3.5 Ternary Conditional Expression
 
+> **One-Sentence Takeaway:** x if cond else y is an expression, not a statement, so it can be used inside other expressions.
+
 Python's conditional expression (ternary operator) takes the form:
 
 ```python
@@ -163,9 +208,13 @@ print("Even" if 5 % 2 == 0 else "Odd")   # Odd
 result = "A" if score >= 90 else "B" if score >= 80 else "C" if score >= 70 else "F"
 ```
 
+
+> **Warning:** Nested ternaries are hard to read. Limit to one level; use if-elif-else blocks for anything more complex.
 Avoid deep nesting. For complex logic, use a full `if-elif-else` block.
 
 ## 3.6 match-case (Structural Pattern Matching)
+
+> **One-Sentence Takeaway:** match-case supports literals, captures, guards, sequences, mappings, and class patterns.
 
 Introduced in Python 3.10, `match-case` provides powerful pattern matching inspired by Scala, Rust, and Haskell:
 
@@ -257,6 +306,8 @@ Match-case is exhaustive â€” if no pattern matches and no wildcard `_` is p
 
 ## 3.7 Conditional Expressions and Assignment
 
+> **One-Sentence Takeaway:** The walrus operator := assigns and returns a value in a single expression.
+
 The walrus operator `:=` can streamline conditional assignments:
 
 ```python
@@ -278,6 +329,8 @@ print(results)  # [25, 36, 49, 64, 81]
 
 ## 3.8 Boolean Operator Precedence in Conditions
 
+> **One-Sentence Takeaway:** not has highest precedence, then and, then or -- parenthesise when mixing them.
+
 Understanding precedence is critical for complex conditions:
 
 ```python
@@ -298,6 +351,91 @@ When mixing `and` and `or`, parenthesise for clarity:
 ```python
 valid = (age >= 18) and (has_id or is_vip)
 ```
+
+
+## Concept Comparison Table
+
+| Feature | Python | C/Java | JavaScript |
+|---|---|---|---|
+| Branching | if/elif/else | if/else if/else | if/else if/else |
+| Switch | match-case (3.10+) | switch/case | switch/case |
+| Ternary | x if cond else y | cond ? x : y | cond ? x : y |
+| Logical | and, or, not | &&, ||, ! | &&, ||, ! |
+| Chained compare | 1 < x < 10 | Not supported | Not supported |
+
+
+## Quick Reference
+
+```python
+# if-elif-else
+if condition:
+    pass
+elif other:
+    pass
+else:
+    pass
+
+# Ternary
+value = x if condition else y
+
+# match-case (3.10+)
+match value:
+    case 1: print("one")
+    case _: print("other")
+
+# Chained comparison
+if 0 < x < 100:
+    print("in range")
+
+# Walrus
+if (n := len(items)) > 0:
+    print(f"Count: {n}")
+```
+
+
+## Cross-Application Matrix
+
+| Area | Application | Relevant Section |
+|------|-------------|------------------|
+| Data Validation | Input sanitisation with truthiness | 3.2 |
+| API Dev | Status code matching with match-case | 3.6 |
+| Game Dev | State machines with match-case | 3.6.2 |
+| Scripting | Safe file checks with short-circuit | 3.4 |
+
+
+## Chapter Quiz
+
+**Q1.** Which of the following is falsy in Python?
+- A) [0]
+- B) "" **<-- Correct**
+- C) "False"
+- D) -1
+
+**Q2.** What does print(3 < 5 > 2) output?
+- A) False
+- B) True **<-- Correct**
+- C) SyntaxError
+- D) (3 < 5) > 2
+
+**Q3.** What is x after `x = "A" if False else "B"`?
+- A) "A"
+- B) "B" **<-- Correct**
+- C) False
+- D) None
+
+**Q4.** In match-case, what does `_` represent?
+- A) The default value
+- B) The wildcard pattern **<-- Correct**
+- C) A variable capture
+- D) Syntax error
+
+**Q5.** not True and False or True evaluates to:
+- A) True **<-- Correct**
+- B) False
+- C) None
+- D) SyntaxError
+
+
 
 ## Summary
 

@@ -1,5 +1,9 @@
 # Chapter 7: Properties of Context-Free Languages
 
+> **Previous:** [Pushdown Automata](./06-pda.md) | **Next:** [Turing Machines](./08-turing.md)
+
+
+
 ## Learning Objectives
 
 - State and apply the pumping lemma for context-free languages.
@@ -9,6 +13,29 @@
 - Convert a CFG to Greibach Normal Form.
 - Apply the CYK algorithm for CFG parsing.
 - Determine whether a CFL is inherently ambiguous.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Pumping Lemma for CFL | Two pumpable substrings v and y | Proves languages not context-free |
+| CNF | A → BC or A → a | Enables CYK parsing algorithm |
+| GNF | A → aα (terminal first) | Simplifies PDA construction |
+| CYK Algorithm | O(n³) CFG parsing | Practical membership testing |
+| Closure | CFLs closed under ∪, concat, *; not ∩ | Explains limits of CFGs |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[Pumping Lemma CFL] --> B[CNF]
+    B --> C[GNF]
+    C --> D[CYK Algorithm]
+    D --> E[Closure Properties]
+    E --> F[Decision Properties]
+```
 
 ## Theory
 
@@ -195,6 +222,90 @@ Given CFG G for L_C and DFA M for L_R, construct PDA P for L_C âˆ© L_R.
 The key idea: simulate both the PDA for L_C and the DFA for L_R simultaneously. The stack handles the CFL part; the state tracks the DFA's state. Since we're integrating the DFA's state into the PDA's state, the product is still a PDA.
 
 This construction works because the DFA's finite memory can be absorbed into the PDA's finite control. However, this does NOT give closure under general intersection (since the intersection of two CFLs may not be a CFL).
+
+
+
+## Concept Comparison Table
+| Normal Form | Production Forms | Use Case |
+|-------------|-----------------|----------|
+| Chomsky (CNF) | A → BC or A → a | CYK algorithm |
+| Greibach (GNF) | A → aα (terminal first) | Single-state PDA |
+| Original CFG | Any form | Human comprehension |
+
+## Quick Reference
+| CFL Property | Status | Method |
+|-------------|--------|--------|
+| Pumping lemma | Necessary condition | Prove non-CFL |
+| Membership | Decidable O(n³) | CYK algorithm |
+| Emptiness | Decidable | Reachability |
+| Equivalence | Undecidable | No algorithm |
+| Ambiguity | Undecidable | No algorithm |
+
+## Cross-Application Matrix
+| Domain | CFL Concept Used |
+|--------|-----------------|
+| Compilers | Grammar normalization for parsing |
+| NLP | Probabilistic CFG parsing |
+| Bioinformatics | RNA secondary structure |
+| Programming languages | Syntax design |
+| Formal verification | Specification languages |
+
+## Chapter Quiz
+
+**Q1.** CNF allows productions of form:
+- A) A → B only
+- B) A → BC or A → a ✓
+- C) A → aB only
+- D) Any form
+
+<details>
+<summary>Answer</summary>
+**B)** Chomsky Normal Form: A → BC (two non-terminals) or A → a (single terminal).
+</details>
+
+**Q2.** CYK algorithm runs in:
+- A) O(n)
+- B) O(n²)
+- C) O(n³) ✓
+- D) O(2ⁿ)
+
+<details>
+<summary>Answer</summary>
+**C)** CYK uses dynamic programming with O(n³) time and O(n²) space.
+</details>
+
+**Q3.** CFLs are NOT closed under:
+- A) Union
+- B) Concatenation
+- C) Intersection ✓
+- D) Kleene star
+
+<details>
+<summary>Answer</summary>
+**C)** Intersection of two CFLs may not be context-free (e.g., { aⁿbⁿcᵐ } ∩ { aⁿbᵐcᵐ }).
+</details>
+
+**Q4.** The CFL pumping lemma provides:
+- A) One pumpable substring
+- B) Two pumpable substrings ✓
+- C) Three pumpable substrings
+- D) No pumpable substrings
+
+<details>
+<summary>Answer</summary>
+**B)** uvⁱxyⁱz — two substrings v and y can be pumped independently.
+</details>
+
+**Q5.** GNF requires each production to start with:
+- A) A non-terminal
+- B) A terminal ✓
+- C) ε
+- D) Two non-terminals
+
+<details>
+<summary>Answer</summary>
+**B)** Greibach Normal Form: A → aα where a is a terminal and α is a string of variables.
+</details>
 
 ## Summary
 

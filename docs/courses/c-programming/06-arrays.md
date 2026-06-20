@@ -1,5 +1,7 @@
 # Chapter 6: Arrays
 
+> **Previous:** [Loops](./05-loops.md) | **Next:** [Strings](./07-strings.md)
+
 ## Learning Objectives
 
 - Declare and initialize one-dimensional arrays
@@ -8,6 +10,27 @@
 - Pass arrays to functions
 - Understand the relationship between arrays and memory layout
 
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Array Declaration | Contiguous block of elements of the same type | Array indices start at 0 and go to size-1 |
+| Array Initialization | Can be fully, partially, or zero-initialized | Uninitialized elements in a partial list are zero-filled |
+| Accessing Elements | Use `arr[index]` which is equivalent to `*(arr + index)` | No bounds checking — accessing out-of-bounds is undefined behavior |
+| Multi-dimensional Arrays | Arrays of arrays stored in row-major order | Access `arr[row][col]` — inner index varies fastest |
+| Arrays and Functions | Arrays decay to pointers when passed to functions | Pass the size separately since `sizeof` on a parameter gives pointer size, not array size |
+
+
+```mermaid
+flowchart LR
+    A["6.1 Declaration & Init"] --> B["6.2 Accessing Elements"]
+    B --> C["6.3 Multi-dimensional"]
+    C --> D["6.4 Arrays & Functions"]
+    D --> E["6.5 Variable-Length Arrays"]
+    E --> F["6.6 Common Pitfalls"]
+    F --> G["Summary & Exercises"]
+```
 ![C Arrays and Strings Memory Layout](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch06-arrays-strings.png)
 
 ## 6.1 One-Dimensional Arrays
@@ -100,6 +123,8 @@ int length = sizeof(arr) / sizeof(arr[0]);   /* 5 */
 
 **Caveat:** This only works in the scope where the array was declared. Once decayed to a pointer (when passed to a function), `sizeof` returns the pointer size, not the array size.
 
+
+> **One-Sentence Takeaway:** Array declaration reserves contiguous memory for a fixed number of elements
 ## 6.2 Memory Layout of Arrays
 
 Array elements are stored in contiguous memory:
@@ -129,6 +154,9 @@ int main(void)
 
 Each element is 4 bytes apart (the size of `int` on this system).
 
+
+> **One-Sentence Takeaway:** Array access uses pointer arithmetic internally and performs no bounds checking
+> **Warning:** Array bounds are not checked accessing arr[size] causes undefined behavior.
 ## 6.3 Arrays and Functions
 
 When an array is passed to a function, it *decays* to a pointer to its first element. The function receives the address, not a copy of the array.
@@ -177,6 +205,8 @@ Doubled:  2 4 6 8 10
 
 **Critical:** The size must be passed separately â€” `sizeof(arr)` inside `print_array` returns the pointer size, not the array size.
 
+
+> **One-Sentence Takeaway:** Multi-dimensional arrays are stored in row-major order in contiguous memory
 ## 6.4 Two-Dimensional Arrays
 
 A 2D array is an array of arrays, stored in row-major order.
@@ -268,12 +298,17 @@ void print_matrix(int rows, int cols, int matrix[rows][cols])
 | `int (*matrix)[4]` | Pointer to an array of 4 ints (same as above) |
 | `int *matrix[4]` | Array of 4 pointers to int |
 
+
+> **One-Sentence Takeaway:** Passing an array to a function decays it to a pointer losing size information
+> **Remember:** When passed to a function the array name decays to a pointer losing size information.
 ## 6.5 Multidimensional Arrays (3D and Beyond)
 
 ```c
 int cube[3][4][5];   /* 3 layers, 4 rows, 5 columns â€” 60 elements total */
 ```
 
+
+> **One-Sentence Takeaway:** Variable-length arrays allow runtime-sized stack allocation since C99
 ## 6.6 Variable-Length Arrays (VLA, C99)
 
 C99 allows array sizes to be determined at runtime:
@@ -288,6 +323,64 @@ void process(int n) {
 ```
 
 **Caveats:** VLAs cannot be global, cannot be initialized in their declaration, and are optional in C11.
+
+## Concept Comparison Table
+
+| Array Type | Declaration | Memory Layout | Access |
+|-----------|-------------|---------------|--------|
+| 1D | `int a[5];` | 5 contiguous ints | `a[2]` |
+| 2D | `int a[3][4];` | 3 rows × 4 cols, row-major | `a[1][2]` |
+| 3D | `int a[2][3][4];` | 2 planes × 3 rows × 4 cols | `a[0][1][2]` |
+| VLA | `int a[n];` | Stack-allocated at runtime | `a[i]` (same as fixed) |
+| Partially initialized | `int a[5] = {1,2};` | First 2 set, rest zero-filled | `a[4]` is 0 |
+
+## Quick Reference
+
+| Operation | Syntax | Example |
+|-----------|--------|---------|
+| Declare size N | `type name[N];` | `int scores[100];` |
+| Full initialization | `type name[] = {v1, v2};` | `int vals[] = {1, 2, 3};` |
+| Zero initialization | `type name[N] = {0};` | `int arr[10] = {0};` |
+| Access element i | `name[i]` | `scores[5]` |
+| 2D access | `name[r][c]` | `matrix[2][3]` |
+| Pass to function | `func(arr, size);` | `process(scores, 100);` |
+| Element count | `sizeof(arr)/sizeof(arr[0])` | Only in declaration scope |
+
+## Cross-Application Matrix
+
+| Application | Array Usage |
+|-------------|-------------|
+| Image processing | `unsigned char pixels[1920][1080][3];` (RGB array) |
+| Audio buffer | `short samples[44100];` (1 second at 44.1kHz) |
+| Matrix math | `double A[3][3];` (3×3 transformation matrix) |
+| Lookup table | `const int days_in_month[] = {31,28,31,30,...};` |
+| Text buffer | `char line[256];` (single-line input buffer) |
+
+## Chapter Quiz
+
+1. What is the value of `arr[2]` after `int arr[5] = {10, 20};`?
+   A) 0
+   B) undefined
+   C) 30
+   D) Compiler error
+
+<details><summary>Answer</summary>**A)** Partially initialized elements are zero-filled.</details>
+
+2. Why does `void f(int a[]) { printf("%zu", sizeof(a)); }` print the wrong size?
+   A) Compiler bug
+   B) `a` is a pointer, not an array, in the function parameter
+   C) `sizeof` is out of scope
+   D) Array must be global
+
+<details><summary>Answer</summary>**B)** Array parameters decay to pointers; `sizeof(a)` returns the pointer size (4 or 8 bytes), not the array size.</details>
+
+3. How is `int a[2][3]` laid out in memory?
+   A) Column by column
+   B) Row by row — all of row 0, then all of row 1
+   C) Random order
+   D) Zigzag pattern
+
+<details><summary>Answer</summary>**B)** C uses row-major order: `a[0][0], a[0][1], a[0][2], a[1][0], a[1][1], a[1][2]`.</details>
 
 ## Summary
 
@@ -318,3 +411,6 @@ void process(int n) {
 ### Challenge Problem
 
 Write a program that implements the Sieve of Eratosthenes to find all prime numbers up to a user-specified limit `n`. Use an array of booleans (or `int`). The algorithm: create an array of size `n+1` initialized to true. Set indices 0 and 1 to false. For each `i` from 2 to sqrt(n), if `i` is prime, mark all multiples of `i` (starting from `i*i`) as false. Print all remaining prime numbers. Analyze the time complexity of this approach.
+
+> **One-Sentence Takeaway:** Off-by-one and buffer overflow are the most common and dangerous array errors
+> **Pro Tip:** Use sizeof(arr)/sizeof(arr[0]) to compute element count where the array is declared.

@@ -1,13 +1,50 @@
 # Chapter 15: B-Trees and B+ Trees
 
+**Prev:** [Chapter 14: Red-Black Trees](14-red-black.md) | **Next:** [Chapter 16: Trie (Prefix Tree)](16-trie.md)
+
 ## Learning Objectives
+
+> **One-Sentence Takeaway:** B-trees achieve extremely shallow trees by using multi-way nodes that match disk block sizes, making them ideal for database indexing.
 
 - Define B-tree order, properties, and structure.
 - Implement search, insertion, and deletion in B-trees.
 - Describe B+ trees and their advantages for databases.
 - Analyze B-tree height and complexity.
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Order m | Max children per node = m | Higher order → shallower trees |
+| Node occupancy | At least ⌈m/2⌉ children, at most m | Prevents degenerate trees |
+| Splitting | Full node splits in two, middle key rises | Propagation may reach root |
+| Merging | Underfull node borrows or merges with sibling | Maintains occupancy invariant |
+| Height bound | \(\log_{⌈m/2⌉} n\) | Order 1000 → height ≤ 3 for billions |
+| B+ tree leaves | Linked list of data pages | Efficient range scans |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[B-Tree Concepts] --> B{Order m}
+    B --> C[Node with m children max]
+    C --> D[Insert Key]
+    D --> E{Node Full?}
+    E --> F[No → Insert in sorted order]
+    E --> G[Yes → Split Node]
+    G --> H[Middle key → parent]
+    H --> I{Parent Full?}
+    I --> G
+    I --> J[Done]
+    F --> J
+    J --> K[Search: O(log n)]
+    J --> L[B+ Tree: Linked Leaves]
+    L --> M[Range Queries Efficient]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** B-trees minimize disk I/O by packing hundreds of keys per node, so even massive databases need only 3-4 levels of traversal.
 
 ![B-Trees & B+ Trees Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/data-structures/ch15-b-trees.png)
 
@@ -48,6 +85,8 @@ In a B+ tree:
 - This makes range queries efficient: find the first key, then follow leaf pointers.
 
 ## Examples
+
+> **One-Sentence Takeaway:** The code shows how B-tree search follows child pointers between key ranges, and how split operations propagate overflow up the tree.
 
 ### Example 1: B-Tree Node and Search
 
@@ -212,7 +251,7 @@ Search 10: found
 Search 25: not found
 ```
 
-### Example 3: B+ Tree â€” Leaf-Linked Structure Sketch
+### Example 3: B+ Tree — Leaf-Linked Structure Sketch
 
 ```cpp
 #include <iostream>
@@ -305,10 +344,12 @@ Searching for key 65:
   Level 0 (leaf): found at page #105
 ```
 
-## ðŸ’¡ Pro Tips
+## 💡 Pro Tips
 
-- **High order = very shallow trees**: A B-tree of order 1000 (nodes hold up to 999 keys) has height â‰¤ 3 for 1 billion keys. Compare to a BST which would be 30 levels deep.
-- **B+ trees are superior for range queries**: In B-trees, range queries bounce between internal nodes. B+ trees store all data in leaves linked by a next pointer â€” range scans are just a linked list traversal.
+> **One-Sentence Takeaway:** High order B-trees keep height minimal; B+ trees add leaf-linked lists for fast range scans — choose based on your query pattern.
+
+- **High order = very shallow trees**: A B-tree of order 1000 (nodes hold up to 999 keys) has height ≤ 3 for 1 billion keys. Compare to a BST which would be 30 levels deep.
+- **B+ trees are superior for range queries**: In B-trees, range queries bounce between internal nodes. B+ trees store all data in leaves linked by a next pointer — range scans are just a linked list traversal.
 - **Fill factor matters**: B-tree nodes should never drop below half full (minimum occupancy = \(\lceil m/2 \rceil - 1\) keys). Monitor your fill factor; many half-empty nodes waste disk space.
 - **Concurrent B-trees use latching**: Crabbing (lock-coupling) is the standard concurrent access pattern: lock parent, lock child, release parent. B-link trees add sibling pointers for reduced contention.
 
@@ -357,31 +398,31 @@ Searching for key 65:
 
 1. **What is the minimum number of keys in a B-tree node of order m?**
    - a) \(m-1\)
-   - b) \(\lceil m/2 \rceil - 1\) âœ“
+   - b) \(\lceil m/2 \rceil - 1\) ✅
    - c) \(m/2\)
    - d) 1
 
 2. **What happens when a B-tree node overflows?**
    - a) It is deleted
-   - b) It splits into two nodes âœ“
+   - b) It splits into two nodes ✅
    - c) Keys are discarded
    - d) The tree rebalances
 
 3. **What key advantage does a B+ tree have over a B-tree?**
    - a) Lower height
-   - b) Efficient range scans âœ“
+   - b) Efficient range scans ✅
    - c) Less memory
    - d) Simpler implementation
 
 4. **B-trees are designed for:**
    - a) In-memory computation
-   - b) Disk-block storage âœ“
+   - b) Disk-block storage ✅
    - c) Network communication
    - d) Cache optimization
 
 5. **What is the height bound of a B-tree of order m with n keys?**
    - a) \(\log m\)
-   - b) \(\log_{\lceil m/2 \rceil} n\) âœ“
+   - b) \(\log_{\lceil m/2 \rceil} n\) ✅
    - c) \(n/m\)
    - d) \(\log n\)
 

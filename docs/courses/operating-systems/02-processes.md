@@ -1,5 +1,10 @@
 # Chapter 2: Processes
 
+**<< [Introduction to Operating Systems](./01-introduction.md)** | [**Next: CPU Scheduling**](./03-cpu-scheduling.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Define a process and differentiate it from a program
@@ -9,6 +14,28 @@
 - Implement process creation and termination using Unix system calls
 - Compare interprocess communication methods: shared memory and message passing
 - Distinguish between independent and cooperating processes
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Process Concept** | Active instance of a program; has text, data, heap, stack sections |
+| **Process States** | New → Ready → Running → Waiting → Terminated (five-state model) |
+| **PCB** | task_struct in Linux; holds PID, PC, registers, scheduling info, memory mgmt, I/O status |
+| **Context Switch** | Saving/restoring process state; pure overhead (1-10 µs) |
+| **Process Creation** | `fork()` creates child; `exec()` replaces program image |
+| **IPC** | Shared memory (fast, needs sync) vs message passing (structured, works cross-network) |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Process Concept] --> B[Process in Memory]
+    B --> C[Process States]
+    C --> D[PCB & Context Switch]
+    D --> E[Process Creation & Termination]
+    E --> F[IPC: Shared Memory vs Message Passing]
+    F --> G[Examples & Summary]
+</div>
 
 ## Theory
 
@@ -329,6 +356,73 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> The `fork()` + `exec()` pattern is the Unix way of creating processes. `fork()` duplicates the current process, then `exec()` replaces it with a new program. This two-step design allows the child to modify its environment (file descriptors, signals) before loading the new program.
+
+> [WARNING]
+> **Zombie processes** are terminated processes whose parent has not called `wait()`. They only consume a PCB entry but can exhaust the PID table if accumulated. Always call `wait()` or `waitpid()` in the parent.
+
+> [NOTE]
+> Context switching is **pure overhead** -- the CPU does zero useful work during a switch. Modern systems do hundreds to thousands of context switches per second, making switch efficiency critical.
+
+## Concept Comparison
+
+| Feature | Shared Memory | Message Passing |
+|-------|-------------|---------------|
+| Speed | Fast (kernel bypass after setup) | Slower (kernel copies messages) |
+| Synchronization | Explicit (mutex/semaphore needed) | Implicit (blocking send/recv) |
+| Complexity | Higher (race conditions) | Lower (kernel-managed buffers) |
+| Distributed Support | No (needs shared physical memory) | Yes (works across network) |
+| Use Case | High-throughput local data sharing | Structured communication, distributed systems |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Process** | Program in execution with own address space |
+| **PCB** | Process Control Block -- kernel data structure for process metadata |
+| **Context Switch** | Saving/restoring CPU state when switching processes |
+| **fork()** | System call to create a child process |
+| **exec()** | System call to replace current process image |
+| **Zombie** | Terminated process awaiting parent `wait()` |
+| **Orphan** | Process whose parent died; adopted by `init` (PID 1) |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| fork()/exec() | Spawn CGI scripts | Create worker processes | Execute user commands |
+| IPC: Shared Memory | Cache sharing between workers | Buffer pool | N/A |
+| IPC: Message Passing | Request queuing | Query routing | Pipeline between commands |
+| Process Termination | Cleanup after request | Transaction commit | Job control |
+
+## Chapter Quiz
+
+1. Which section of a process's memory contains the program counter and local variables?
+   - a) Text
+   - b) Data
+   - c) Stack
+   - d) Heap
+
+2. What system call creates a new process in Unix?
+   - a) exec()
+   - b) fork()
+   - c) clone()
+   - d) spawn()
+
+3. A process that has finished execution but still has an entry in the process table is called:
+   - a) Orphan
+   - b) Zombie
+   - c) Daemon
+   - d) Ghost
+
+4. Which IPC method requires explicit synchronization?
+   - a) Shared memory
+   - b) Message passing
+   - c) Signals
+   - d) Pipes
 
 ## Summary
 

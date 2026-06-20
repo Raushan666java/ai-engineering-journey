@@ -1,5 +1,10 @@
 # Chapter 17: Virtualization
 
+**<< [Security](./16-security.md)** | [**Next: Case Studies**](./18-case-studies.md) >>
+
+---
+
+
 ## Learning Objectives
 
 - Define virtualization and distinguish it from emulation and paravirtualization
@@ -9,6 +14,29 @@
 - Explain paravirtualization and its performance benefits
 - Understand memory virtualization: shadow page tables vs nested paging
 - Describe the Linux KVM and Docker architectures
+## Chapter at a Glance
+
+| Topic | Key Points |
+|-------|------------|
+| **Virtualization** | Abstracting physical hardware into virtual resources; multiple VMs per host |
+| **Hypervisor Types** | Type 1 (bare-metal: ESXi, Hyper-V) vs Type 2 (hosted: VirtualBox) |
+| **CPU Virt.** | Hardware-assisted via Intel VT-x/AMD-V; trap-and-emulate |
+| **Memory Virt.** | Nested page tables (EPT, NPT); shadow page tables |
+| **I/O Virt.** | Pass-through (VT-d), paravirtualized (virtio), emulated |
+| **Containers** | OS-level virtualization: share kernel, isolate via namespaces + cgroups |
+
+## Chapter Roadmap
+
+<div class="mermaid">
+flowchart LR
+    A[Virtualization Concept] --> B[Hypervisor Types]
+    B --> C[CPU Virtualization]
+    B --> D[Memory Virtualization]
+    B --> E[I/O Virtualization]
+    E --> F[Containerization]
+    F --> G[Cloud Computing Models]
+    G --> H[Summary]
+</div>
 
 ## Theory
 
@@ -403,6 +431,66 @@ int main() {
     return 0;
 }
 ```
+
+
+> [TIP]
+> **Type 1 hypervisors** (bare-metal) run directly on hardware with higher performance and better isolation. **Type 2 hypervisors** run as applications on a host OS -- simpler but more overhead.
+
+> [WARNING]
+> Containers are **not lightweight VMs**. They share the host kernel -- a kernel compromise gives access to all containers. Container security relies on namespaces, cgroups, and seccomp.
+
+> [NOTE]
+> **Hardware-assisted virtualization** (Intel VT-x, AMD-V) lets the CPU natively support root (hypervisor) and non-root (guest) modes, eliminating binary translation for most instructions.
+
+## Concept Comparison
+
+| Feature | Type 1 (Bare-Metal) | Type 2 (Hosted) | Containers |
+|-------|-------------------|---------------|----------|
+| Host OS | No (runs on hardware) | Yes (app on host OS) | Shared host kernel |
+| Performance | Near-native | Moderate | Native (process-level) |
+| Isolation | Strong (separate kernel) | Strong | Moderate (shared kernel) |
+| Boot Time | Minutes | Minutes | Milliseconds |
+| Example | ESXi, Hyper-V, KVM | VirtualBox, Workstation | Docker, podman |
+
+## Quick Reference
+
+| Term | Definition |
+|------|------------|
+| **Hypervisor** | Software layer creating and managing VMs |
+| **VM** | Virtual Machine -- virtualized hardware + guest OS |
+| **Container** | Process isolation sharing host kernel |
+| **VT-x/AMD-V** | CPU hardware extensions for virtualization |
+| **Nested Page Tables** | EPT/NPT -- hardware VM memory translation |
+| **VirtIO** | Paravirtualized I/O for high-performance VM access |
+
+## Cross-Application Matrix
+
+| Concept | Web Server | Database | Embedded System | Smartphone |
+|-------|----------|--------|---------------|----------|
+| Server Consolidation | ESXi, KVM | Docker on VMs | AWS EC2, Azure VMs |
+| Dev/Test | Vagrant + VirtualBox | Docker Compose | Cloud playgrounds |
+| Microservices | Kubernetes on VMs | Docker + K8s | EKS, AKS, GKE |
+| Desktop Virt. | VDI (Horizon) | Not suitable | Windows Virtual Desktop |
+
+## Chapter Quiz
+
+1. Key difference between Type 1 and Type 2?
+   - a) Type 1 proprietary, Type 2 open
+   - b) Type 1 runs on hardware, Type 2 on host OS
+   - c) Type 1 supports containers
+   - d) Type 1 slower
+
+2. What isolates containers while sharing kernel?
+   - a) VirtualBox
+   - b) Namespaces and cgroups
+   - c) VT-x
+   - d) Shadow page tables
+
+3. Main advantage of containers over VMs?
+   - a) Better security
+   - b) Different guest OS
+   - c) Faster startup, lower overhead
+   - d) Better hardware support
 
 ## Summary
 

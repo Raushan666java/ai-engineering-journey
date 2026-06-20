@@ -1,5 +1,7 @@
 # Chapter 5: Loops
 
+> **Previous:** [Control Flow](./04-control-flow.md) | **Next:** [Arrays](./06-arrays.md)
+
 ## Learning Objectives
 
 - Write iterative code using `for`, `while`, and `do-while` loops
@@ -8,6 +10,27 @@
 - Construct nested loops
 - Avoid common loop errors including off-by-one and infinite loops
 
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| for Loop | Iterate with init, condition, and increment in one line | Use `for` when the number of iterations is known |
+| while Loop | Repeat while a condition holds | Use `while` when iterating until a condition changes |
+| do-while Loop | Executes body at least once before checking condition | Use when the body must run before the first check |
+| break and continue | `break` exits the loop; `continue` skips to the next iteration | `break` exits the innermost loop only |
+| Nested Loops | Loops inside loops for multi-dimensional traversal | Inner loops reset completely on each outer iteration |
+
+
+```mermaid
+flowchart LR
+    A["5.1 for Loop"] --> B["5.2 while Loop"]
+    B --> C["5.3 do-while Loop"]
+    C --> D["5.4 break and continue"]
+    D --> E["5.5 Nested Loops"]
+    E --> F["5.6 Infinite Loops"]
+    F --> G["Summary & Exercises"]
+```
 ![C Loops: while, do-while, for and jump statements](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch05-loops.png)
 
 ## 5.1 The `while` Loop
@@ -53,6 +76,9 @@ while ((ch = getchar()) != EOF) {
 }
 ```
 
+
+> **One-Sentence Takeaway:** The for loop is best when the number of iterations is known in advance
+> **Pro Tip:** Declare loop variables in the for init expression for C99+ scoped local variables.
 ## 5.2 The `do-while` Loop
 
 The `do-while` loop is similar to `while`, but the condition is evaluated **after** each iteration. This guarantees the loop body executes at least once.
@@ -84,6 +110,8 @@ int main(void)
 
 **When to use `do-while`:** When the loop body must run at least once regardless of the condition â€” input validation loops, menu-driven programs.
 
+
+> **One-Sentence Takeaway:** The while loop checks the condition before each iteration and may never execute
 ## 5.3 The `for` Loop
 
 The `for` loop collects initialization, condition-checking, and update in one line.
@@ -142,6 +170,8 @@ while (*p++ != '\0')
     ;
 ```
 
+
+> **One-Sentence Takeaway:** The do-while loop guarantees at least one execution of the body
 ## 5.4 `break` and `continue`
 
 ### `break`
@@ -217,6 +247,9 @@ while (i < 10) {
 }
 ```
 
+
+> **One-Sentence Takeaway:** Break exits the loop immediately; continue skips to the next iteration
+> **Warning:** Break exits only the innermost loop in nested loop constructs.
 ## 5.5 Nested Loops
 
 A loop inside another loop is a nested loop. The inner loop completes all its iterations for each iteration of the outer loop.
@@ -268,6 +301,8 @@ int main(void)
   10  20  30  40  50  60  70  80  90 100
 ```
 
+> **One-Sentence Takeaway:** Each level of nesting multiplies iterations — O(n × m) total complexity
+
 ## 5.6 Infinite Loops
 
 An infinite loop runs indefinitely. Some are bugs; others are intentional.
@@ -297,6 +332,9 @@ while (i < 10);   /* <-- semicolon! infinite loop */
 
 The trailing semicolon creates a loop with an empty body. The `{...}` block is outside the loop entirely.
 
+
+> **One-Sentence Takeaway:** Common loop patterns include sentinel controlled counter controlled and event driven
+> **Remember:** while(1) is idiomatic for event loops as long as a break path exists.
 ## 5.7 Loop Selection Guide
 
 | When to use | Construct |
@@ -347,6 +385,61 @@ do {
     scanf("%d", &age);
 } while (age < 0 || age > 150);
 ```
+
+## Concept Comparison Table
+
+| Loop Type | Condition Check | Minimum Executions | Use Case |
+|-----------|----------------|-------------------|----------|
+| `for` | Before each iteration | 0 | Known iteration count |
+| `while` | Before each iteration | 0 | Condition-controlled repetition |
+| `do-while` | After each iteration | 1 | Menu display / input validation |
+| `for(;;)` | None (no condition) | Infinite | Event loops, servers |
+
+## Quick Reference
+
+| Loop | Syntax Snippet | Example |
+|------|---------------|---------|
+| for | `for(int i=0; i<n; i++)` | `for(int i=0; i<5; i++) printf("%d", i);` |
+| while | `while(cond)` | `while(n > 0) { sum += n--; }` |
+| do-while | `do { } while(cond);` | `do { c=getchar(); } while(c != '\n');` |
+| Break | `if(cond) break;` | Exits loop when `cond` is true |
+| Continue | `if(cond) continue;` | Skips to next iteration |
+
+## Cross-Application Matrix
+
+| Real-World Task | Loop Pattern |
+|-----------------|-------------|
+| Sum array elements | `for (int i = 0; i < len; i++)` |
+| Read file until EOF | `while ((c = fgetc(f)) != EOF)` |
+| Process command input | `do { prompt(); get_input(); } while (cmd != 'q');` |
+| Matrix multiplication | `for(i...) for(j...) for(k...)` (nested 3 deep) |
+| Network server accept loop | `for(;;) { client = accept(srv); handle(client); }` |
+
+## Chapter Quiz
+
+1. How many times does `for(int i=0; i<0; i++)` execute?
+   A) 0
+   B) 1
+   C) Infinite
+   D) Compiler error
+
+<details><summary>Answer</summary>**A)** The condition `i < 0` is false immediately, so the body never executes.</details>
+
+2. What does `while (1) { break; }` do?
+   A) Runs forever
+   B) Runs once, then breaks
+   C) Compiler error
+   D) Undefined behavior
+
+<details><summary>Answer</summary>**B)** The `while (1)` creates an infinite loop, but `break` immediately exits.</details>
+
+3. Which loop guarantees at least one execution of the body?
+   A) `for`
+   B) `while`
+   C) `do-while`
+   D) All of the above
+
+<details><summary>Answer</summary>**C)** `do-while` checks the condition after the body runs, guaranteeing at least one execution.</details>
 
 ## Summary
 

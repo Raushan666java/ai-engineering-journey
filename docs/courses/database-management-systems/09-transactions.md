@@ -1,5 +1,7 @@
 # Chapter 9: Transactions
 
+> **Previous:** [Chapter 8: Higher Normal Forms and Denormalization](./08-higher-nf.md) | **Next:** [Chapter 10: Concurrency Control](./10-concurrency.md)
+
 ## Learning Objectives
 
 - Define a transaction and explain its necessity for data integrity
@@ -9,7 +11,31 @@
 - Use conflict serializability and view serializability
 - Understand the role of the transaction manager and recovery manager
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| **ACID Properties** | Atomicity, Consistency, Isolation, Durability | The four guarantees that define a "safe" transaction |
+| **Transaction States** | Active → Partially Committed → Committed / Failed → Aborted | Every transaction follows the same lifecycle |
+| **Schedule Classification** | Serial, Serializable, Non-serializable | Serializable schedules are the gold standard for correctness |
+| **Conflict Serializability** | Swapping non-conflicting operations to match a serial schedule | The precedence graph is your primary tool |
+| **View Serializability** | Same read/write order as a serial schedule | Less restrictive than conflict serializability |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[ACID Properties] --> B[Transaction States]
+    B --> C[Schedules & Classification]
+    C --> D[Conflict Serializability]
+    D --> E[Precedence Graph]
+    E --> F[View Serializability]
+    F --> G[Transaction Manager Role]
+```
+
 ## Theory
+
+> **One-Sentence Takeaway:** ACID guarantees define safe transactions — and serializability (ensured via precedence graphs) is the correctness criterion for concurrent schedule execution.
 
 ![ACID, Transactions, Concurrency Control and Crash Recovery](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/database-management-systems/ch04-transactions-concurrency-recovery.png)
 
@@ -254,6 +280,8 @@ for attempt in range(max_retries):
 
 ## Examples
 
+> **One-Sentence Takeaway:** Applying conflict and view serializability tests to concrete schedules builds the intuition needed to reason about transaction correctness in multi-user databases.
+
 **Example 9.1: Testing Serializability**
 
 Schedule S:
@@ -283,6 +311,10 @@ Conflicts:
 - T2 WRITE(A) conflicts with T1 READ(A): T2 â†’ T1
 
 Edges: T1 â†’ T2 and T2 â†’ T1 (CYCLE!). This schedule is NOT conflict-serializable.
+
+> **Warning:** SERIALIZABLE is NOT the default isolation level in any major DBMS — READ COMMITTED is. Always verify the isolation level before writing production transaction logic.
+>
+> **Remember:** Dirty reads are never acceptable in a well-designed system — always use at least READ COMMITTED to avoid reading uncommitted (and potentially rolled back) data.
 
 ## ðŸ’¡ Pro Tips
 

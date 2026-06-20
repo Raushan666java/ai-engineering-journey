@@ -1,5 +1,9 @@
 # Chapter 9: Turing Machine Extensions and the Church-Turing Thesis
 
+> **Previous:** [Turing Machines](./08-turing.md) | **Next:** [Decidability](./10-decidability.md)
+
+
+
 ## Learning Objectives
 
 - Distinguish between recursively enumerable and recursive languages.
@@ -8,6 +12,30 @@
 - Understand the encoding of Turing machines as strings.
 - Recognize the limits of TM-based computation.
 - Understand the concept of oracles and relativized computation.
+
+
+## Chapter at a Glance
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| RE vs Recursive | RE may loop; recursive always halts | Decidable vs semi-decidable |
+| Universal TM | Simulates any TM on any input | Stored-program computer concept |
+| Church-Turing Thesis | Everything computable = TM-computable | Accepted but unprovable claim |
+| Oracle TM | TM with external query capability | Relativized computation |
+| Arithmetic Hierarchy | Quantifier alternation depth | Classification beyond RE/co-RE |
+
+
+
+
+## Chapter Roadmap
+```mermaid
+flowchart LR
+    A[RE vs Recursive] --> B[Complements]
+    B --> C[TM Encoding]
+    C --> D[Universal TM]
+    D --> E[Church-Turing Thesis]
+    E --> F[Oracle TM]
+    F --> G[Arithmetic Hierarchy]
+```
 
 ## Theory
 
@@ -147,6 +175,90 @@ Let SAT be the language of satisfiable Boolean formulas.
 - If we could decide SAT in polynomial time, then P^SAT = NP^SAT (since an oracle for SAT, the hardest NP problem, would collapse NP into P relative to SAT).
 - However, there also exist oracles B where this doesn't hold.
 - This "relativization barrier" explains why standard diagonalization techniques cannot resolve P vs NP.
+
+
+
+## Concept Comparison Table
+| Language Class | TM Behavior on w ∉ L | TM Behavior on w ∈ L |
+|---------------|----------------------|---------------------|
+| Recursive (decidable) | Halts (reject) | Halts (accept) |
+| RE (recognizable) | May loop | Halts (accept) |
+| co-RE | Halts (reject) | May loop |
+
+## Quick Reference
+| Concept | Definition |
+|---------|-----------|
+| Recursive (decidable) | TM always halts |
+| RE (recognizable) | TM halts on accept, may loop on reject |
+| co-RE | Complement is RE |
+| UTM | Simulates any TM on any input |
+| Oracle TM | TM with external language query |
+
+## Cross-Application Matrix
+| Domain | Concept |
+|--------|---------|
+| Computing | Stored-program architecture |
+| Programming languages | Interpreter = UTM |
+| Complexity | Oracle separations |
+| AI | Turing test connection |
+| Philosophy | Limits of mechanistic computation |
+
+## Chapter Quiz
+
+**Q1.** Every recursive language is:
+- A) RE ✓
+- B) co-RE only
+- C) Neither
+- D) Not RE
+
+<details>
+<summary>Answer</summary>
+**A)** A decider is a special case of a recognizer, so recursive ⊆ RE.
+</details>
+
+**Q2.** L is recursive iff:
+- A) L is RE
+- B) L is RE and co-RE ✓
+- C) L is not RE
+- D) L is infinite
+
+<details>
+<summary>Answer</summary>
+**B)** Decidable = TM halts on all inputs = both L and its complement are recognizable.
+</details>
+
+**Q3.** The Church-Turing thesis is:
+- A) A proven theorem
+- B) A universally accepted thesis ✓
+- C) A definition
+- D) A conjecture that's been disproven
+
+<details>
+<summary>Answer</summary>
+**B)** It's a thesis about the nature of computation, not provable but universally accepted.
+</details>
+
+**Q4.** The UTM demonstrates:
+- A) TMs cannot simulate other TMs
+- B) Stored-program concept ✓
+- C) Halting problem is decidable
+- D) TMs are impractical
+
+<details>
+<summary>Answer</summary>
+**B)** The UTM stores ⟨M⟩ as data and simulates it — the theoretical basis for general-purpose computers.
+</details>
+
+**Q5.** Oracle TMs help:
+- A) Speed up computation
+- B) Classify problems relative to oracles ✓
+- C) Prove P = NP
+- D) Eliminate nondeterminism
+
+<details>
+<summary>Answer</summary>
+**B)** Oracle machines create relativized complexity classes and identify proof barriers.
+</details>
 
 ## Summary
 

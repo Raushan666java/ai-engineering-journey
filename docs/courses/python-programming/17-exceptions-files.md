@@ -1,5 +1,7 @@
 # Chapter 17: Exceptions and File I/O
 
+
+> **Previous:** [Generators and itertools](./16-generators.md) | **Next:** [The Python Standard Library](./18-stdlib.md)
 ## Learning Objectives
 
 By the end of this chapter, students will be able to:
@@ -13,7 +15,48 @@ By the end of this chapter, students will be able to:
 
 ![Exceptions and File I/O](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/17-exceptions-files.png)
 
+
+## Chapter at a Glance
+
+| Section | Topic | Key Concept |
+|---------|-------|-------------|
+|17.1 Exception Handling||Use `try/except` for expected errors; catch specific exceptions, not bare `except:`.|
+|17.2 Raising Exceptions||The `else` block runs when no exception occurs; `finally` always runs.|
+|17.3 Custom Exception Classes||Custom exceptions should inherit from `Exception`; chain with `raise ... from`.|
+|17.4 Assertions||Assertions (`assert`) verify invariants during development; disable with `-O` flag.|
+|17.5 File Operations||Use `with open(...)` for automatic resource management; `pathlib` provides modern filesystem access.|
+|17.6 CSV Files||undefined|
+|17.7 JSON Files||undefined|
+|17.8 pickle||undefined|
+|17.9 pathlib||undefined|
+
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    S0[Exception Handling]
+    S1[Raising Exceptions]
+    S2[Custom Exception Classes]
+    S3[Assertions]
+    S4[File Operations]
+    S5[CSV Files]
+    S6[JSON Files]
+    S7[pickle]
+    S8[pathlib]
+    S0 --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 --> S4
+    S4 --> S5
+    S5 --> S6
+    S6 --> S7
+    S7 --> S8
+```
 ## 17.1 Exception Handling
+
+> **One-Sentence Takeaway:** Use `try/except` for expected errors; catch specific exceptions, not bare `except:`.
+
 
 ### 17.1.1 Basic try/except
 
@@ -101,6 +144,9 @@ print(safe_divide(10, 0))  # Division by zero, Cleanup complete, inf
 
 ## 17.2 Raising Exceptions
 
+> **One-Sentence Takeaway:** The `else` block runs when no exception occurs; `finally` always runs.
+
+
 ```python
 def withdraw(balance: float, amount: float) -> float:
     if amount < 0:
@@ -147,6 +193,9 @@ except ValueError as e:
 
 ## 17.3 Custom Exception Classes
 
+> **One-Sentence Takeaway:** Custom exceptions should inherit from `Exception`; chain with `raise ... from`.
+
+
 ```python
 class InsufficientFundsError(Exception):
     """Raised when an account has insufficient funds."""
@@ -186,6 +235,9 @@ except InsufficientFundsError as e:
 
 ## 17.4 Assertions
 
+> **One-Sentence Takeaway:** Assertions (`assert`) verify invariants during development; disable with `-O` flag.
+
+
 Assertions verify internal invariants during development:
 
 ```python
@@ -201,6 +253,9 @@ print(calculate_discount(100, 0.2))  # 80.0
 Assertions can be disabled with `-O` (optimize) flag: `python -O script.py`. Do not use assertions for input validation in production code â€” use proper error handling.
 
 ## 17.5 File Operations
+
+> **One-Sentence Takeaway:** Use `with open(...)` for automatic resource management; `pathlib` provides modern filesystem access.
+
 
 ### 17.5.1 Opening and Closing Files
 
@@ -274,6 +329,9 @@ with open("data.txt", "w+") as f:
 
 ## 17.6 CSV Files
 
+> **One-Sentence Takeaway:** undefined
+
+
 ```python
 import csv
 
@@ -314,6 +372,9 @@ with open("output.csv", "w", newline="") as f:
 
 ## 17.7 JSON Files
 
+> **One-Sentence Takeaway:** undefined
+
+
 ```python
 import json
 
@@ -336,6 +397,9 @@ print(loaded["name"])  # Alice
 
 ## 17.8 pickle
 
+> **One-Sentence Takeaway:** undefined
+
+
 pickle serialises arbitrary Python objects:
 
 ```python
@@ -356,6 +420,12 @@ print(loaded)  # {'key': [1, 2, 3], 'nested': {'a': 1}}
 Security warning: never `pickle.load()` untrusted data â€” it can execute arbitrary code during deserialization. Prefer JSON for cross-language or untrusted data.
 
 ## 17.9 pathlib
+
+> **One-Sentence Takeaway:** undefined
+> **Warning:** `pickle.loads()` executes arbitrary code during deserialisation — never unpickle untrusted data.
+
+
+
 
 `pathlib` provides an object-oriented interface to the filesystem:
 
@@ -410,6 +480,79 @@ Path("empty_dir").rmdir()  # delete empty directory
 import shutil
 shutil.rmtree("non_empty_dir")  # delete directory tree
 ```
+
+
+## Concept Comparison Table
+
+| Module | Purpose | Key Function/Class |
+|---|---|---|
+| builtins | Core exceptions | Exception, ValueError, TypeError |
+| csv | CSV reading/writing | csv.reader, csv.writer |
+| json | JSON encoding/decoding | json.dumps, json.loads |
+| pickle | Python object serialisation | pickle.dumps, pickle.loads |
+| pathlib | Modern filesystem paths | Path, PurePath |
+
+
+## Quick Reference
+
+```python
+try:
+    result = 10 / x
+except ZeroDivisionError:
+    print("Cannot divide")
+except TypeError as e:
+    print(f"Type error: {e}")
+else:
+    print(f"Result: {result}")
+finally:
+    print("Done")
+
+with open("file.txt") as f:
+    content = f.read()
+```
+
+## Cross-Application Matrix
+
+| Area | Application | Relevant Section |
+|------|-------------|------------------|
+|Web Dev|Error handlers in FastAPI|17.1|
+|Data Science|Try/except in data cleaning|17.1|
+|DevOps|Config file parsing with pathlib|17.9|
+|Automation|CSV export with csv module|17.6|
+
+
+## Chapter Quiz
+
+**Q1.** When does the else block in try/except run?
+- when exception occurs
+- when no exception occurs **<-- Correct**
+- always
+- never
+
+**Q2.** What should custom exceptions inherit from?
+- BaseException
+- Exception **<-- Correct**
+- object
+- Error
+
+**Q3.** What does raise ... from do?
+- creates a new exception
+- chains exceptions **<-- Correct**
+- re-raises the same exception
+- clears exception context
+
+**Q4.** Why is pickle unsafe for untrusted data?
+- it is slow
+- it executes code during deserialisation **<-- Correct**
+- it corrupts files
+- it raises exceptions
+
+**Q5.** What does pathlib.Path provide?
+- regular expressions
+- object-oriented filesystem paths **<-- Correct**
+- JSON parsing
+- CSV handling
+
 
 ## Summary
 

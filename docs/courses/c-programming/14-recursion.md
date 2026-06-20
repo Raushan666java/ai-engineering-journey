@@ -1,5 +1,7 @@
 # Chapter 14: Recursion
 
+> **Previous:** [The Preprocessor](./13-preprocessor.md) | **Next:** [Linked Lists](./15-linked-lists.md)
+
 ## Learning Objectives
 
 - Understand the recursive function model: base case and recursive case
@@ -8,6 +10,27 @@
 - Compare recursion and iteration in terms of clarity and performance
 - Solve classic problems using recursion
 
+
+### Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Recursion Fundamentals | A function calling itself with a smaller subproblem | Every recursive function needs a base case and a recursive case |
+| Call Stack | Each recursive call pushes a new stack frame | Deep recursion can overflow the stack (stack overflow) |
+| Tail Recursion | Recursive call is the last operation in the function | Modern compilers optimize tail recursion into iteration |
+| Classic Examples | Factorial, Fibonacci, tower of Hanoi | These illustrate the power and pitfalls of recursion |
+| Recursion vs Iteration | Recursion trades clarity for stack usage | Use recursion for naturally recursive structures (trees, graphs) |
+
+
+```mermaid
+flowchart LR
+    A["14.1 Base Case & Recursive Case"] --> B["14.2 Call Stack"]
+    B --> C["14.3 Tail Recursion"]
+    C --> D["14.4 Classic Examples"]
+    D --> E["14.5 Recursion vs Iteration"]
+    E --> F["14.6 Performance & Optimization"]
+    F --> G["Summary & Exercises"]
+```
 ## 14.1 Fundamentals of Recursion
 
 ![C Recursion, Linked Lists, Stacks and Queues](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/c-programming/ch14-recursion-ds.png)
@@ -41,6 +64,8 @@ countdown(3) â†’ prints "3..."
     â†’ returns
 â†’ returns
 ```
+
+> **One-Sentence Takeaway:** Every recursion needs a base case that stops the recursion and a recursive case that moves toward the base case
 
 ## 14.2 The Call Stack and Recursion
 
@@ -80,6 +105,11 @@ Depth 3: returning
 Depth 2: returning
 Depth 1: returning
 ```
+
+> **One-Sentence Takeaway:** Each recursive call consumes stack space — deep recursion causes stack overflow
+
+
+> **Warning:** Each recursive call consumes a stack frame (~24-32 bytes). For `fib(1000000)`, the stack would need gigabytes — use iteration or tail recursion instead.
 
 ## 14.3 Classic Recursive Examples
 
@@ -282,6 +312,9 @@ int main(void)
 45 found at index 7
 ```
 
+
+> **One-Sentence Takeaway:** Tail recursion places the recursive call as the final operation enabling optimization
+> **Pro Tip:** Write recursive calls as the final statement to enable tail-call optimization.
 ## 14.4 Tail Recursion
 
 A recursive call is **tail-recursive** if it is the last operation in the function, and the function's return value is the recursive call's return value.
@@ -314,6 +347,8 @@ return n * factorial(n - 1);      /* not tail-recursive */
 return fact_tail(n - 1, n * acc); /* tail-recursive â€” potential TCO */
 ```
 
+
+> **One-Sentence Takeaway:** Classic recursive problems include factorial Fibonacci and Tower of Hanoi
 ## 14.5 Recursion vs. Iteration
 
 | Aspect | Recursion | Iteration |
@@ -323,6 +358,8 @@ return fact_tail(n - 1, n * acc); /* tail-recursive â€” potential TCO */
 | Performance | Function call overhead; may be slower | Generally faster |
 | Optimization | Tail recursion can be optimized to iteration | No optimization needed |
 | Infinite | Can overflow the stack | Can run forever (no stack issue) |
+
+> **One-Sentence Takeaway:** Use recursion for tree traversal and divide-and-conquer; use iteration for simple linear problems
 
 ## 14.6 Common Pitfalls
 
@@ -347,6 +384,9 @@ int bad(int n) {
 /* Factorial of 100,000 will likely overflow the stack */
 ```
 
+
+> **One-Sentence Takeaway:** Memoization caches recursive results to reduce exponential to linear time
+> **Remember:** Memoization transforms exponential algorithms into linear time by caching results.
 ## 14.7 Problems Suited to Recursion
 
 1. **Tree traversal** (file systems, expression trees, binary search trees)
@@ -354,6 +394,63 @@ int bad(int n) {
 3. **Backtracking** (N-queens, maze solving, Sudoku)
 4. **Recursive data structures** (linked lists, trees, graphs)
 5. **Mathematical definitions** that are naturally recursive (factorial, Fibonacci, GCD)
+
+## Concept Comparison Table
+
+| Aspect | Recursion | Iteration |
+|--------|-----------|-----------|
+| Mechanism | Function calls itself | Loop constructs (for, while) |
+| Stack usage | O(depth) stack frames | O(1) stack usage |
+| Termination | Base case | Loop condition |
+| Readability | Natural for recursive structures | More explicit control flow |
+| Optimization | Tail recursion can be optimized | Typically faster |
+| Risk | Stack overflow | Infinite loop (less severe) |
+
+## Quick Reference
+
+| Pattern | Code |
+|---------|------|
+| Base case | `if (n <= 1) return 1;` |
+| Recursive case | `return n * factorial(n - 1);` |
+| Tail recursive | `int fact(int n, int acc) { if (n <= 1) return acc; return fact(n-1, n*acc); }` |
+| Memoized | `if (memo[n] != -1) return memo[n]; memo[n] = fib(n-1) + fib(n-2);` |
+| Tree traversal | `postorder(node) { postorder(node->left); postorder(node->right); visit(node); }` |
+
+## Cross-Application Matrix
+
+| Domain | Recursion Pattern |
+|--------|------------------|
+| File system | Recursively traverse directories |
+| Parsing | Recursive descent parser for expressions |
+| Sorting | QuickSort (divide and conquer) |
+| Graphics | Subdivision surfaces (recursive refinement) |
+| AI / Games | Minimax with recursive game tree evaluation |
+
+## Chapter Quiz
+
+1. What is the base case in `int fact(int n) { if (n <= 1) return 1; return n * fact(n-1); }`?
+   A) `return n * fact(n-1);`
+   B) `n <= 1`
+   C) `n * fact(n-1)`
+   D) `return 1`
+
+<details><summary>Answer</summary>**B)** `n <= 1` is the condition that stops the recursion — when true, the function returns 1 without recursing.</details>
+
+2. What is the worst-case stack depth for recursive Fibonacci without memoization?
+   A) O(log n)
+   B) O(n)
+   C) O(2ⁿ)
+   D) O(n²)
+
+<details><summary>Answer</summary>**B)** While the time complexity is O(2ⁿ), the stack depth is O(n) because each branch recurses down to the base case.</details>
+
+3. What does tail recursion optimization do?
+   A) Makes the function faster by inlining
+   B) Reuses the current stack frame for the recursive call
+   C) Adds memoization automatically
+   D) Converts recursion to a separate thread
+
+<details><summary>Answer</summary>**B)** The compiler reuses the current function's stack frame for the tail call, preventing stack growth.</details>
 
 ## Summary
 

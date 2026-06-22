@@ -1012,3 +1012,4 @@ Build a complete RAG-powered support system with:
 - A reranking step using the Collection `rerank()` method
 - Caching of search results for 10 minutes
 - A `POST /support/ask` endpoint that accepts a natural language question, retrieves the top 5 most relevant articles, builds a context prompt, and returns a generated answer with source citations
+

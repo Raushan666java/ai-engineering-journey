@@ -1,5 +1,10 @@
 # Chapter 35: Legal & Compliance Agents
 
+> **Previous:** [Real Estate & Property — AI-Powered Real Estate Agents](./34-real-estate.md) | **Next:** [Manufacturing & Industrial — AI-Powered Factory Agents](./36-manufacturing.md)
+
+
+
+
 ---
 
 ## Learning Objectives
@@ -13,9 +18,109 @@
 - Implement an e-discovery pipeline with staged collection, processing, deduplication, and production
 - Automate legal report generation with template filling, data aggregation, and multi-format output
 
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Legal & compliance AI agents for document review, contract analysis, case management, regulatory monitoring |
+| **Key Concepts** | Document analysis, contract clause extraction, compliance monitoring, legal research, risk assessment |
+| **Learning Approach** | Theory, data models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, NLP concepts |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Legal & compliance AI agents for document review, contract analysis, case management, regulatory monitoring |
+| **Key Concepts** | Document analysis, contract clause extraction, compliance monitoring, legal research, risk assessment |
+| **Learning Approach** | Theory, data models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, NLP concepts |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Legal & compliance AI agents for document review, contract analysis, case management, regulatory monitoring |
+| **Key Concepts** | Document analysis, contract clause extraction, compliance monitoring, legal research, risk assessment |
+| **Learning Approach** | Theory, data models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, NLP concepts |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Legal & compliance AI agents for document review, contract analysis, case management, regulatory monitoring |
+| **Key Concepts** | Document analysis, contract clause extraction, compliance monitoring, legal research, risk assessment |
+| **Learning Approach** | Theory, data models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, NLP concepts |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Legal Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/35-legal.png)
 
@@ -2121,6 +2226,310 @@ PROMPT;
 ```
 
 ---
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare legal AI agents and their techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| DocumentReviewAgent | Analyze legal documents for key clauses | LLM text extraction + classification |
+| ContractAnalysisAgent | Extract terms and flag risky clauses | LLM pattern matching + risk scoring |
+| ComplianceMonitorAgent | Track regulatory changes and requirements | Web scraping + LLM summarization |
+| LegalResearchAgent | Search and summarize case law | Vector search + semantic retrieval |
+| RiskAssessmentAgent | Evaluate legal risk exposure | Rule engine + AI risk scoring |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for legal AI agents and concepts.
+
+| Topic | Key Point |
+|-------|-----------|
+| Legal Models | Document, Contract, Case, Regulation, RiskRecord |
+| Document Review | Clause extraction + classification |
+| Contract Analysis | Term extraction + risk flagging |
+| Compliance Monitoring | Regulation tracking + requirement mapping |
+| Legal Research | Semantic case law search |
+| Risk Assessment | Multi-factor risk scoring |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Document Review | Legal document processing | Speed vs accuracy |
+| Contract Analysis | Risk identification | Thoroughness vs false positives |
+| Compliance Monitoring | Regulatory adherence | Coverage vs maintenance |
+| Legal Research | Case law discovery | Precision vs recall |
+| Risk Assessment | Exposure evaluation | Detail vs actionability |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding of legal AI agents.
+
+**Q1:** What does the DocumentReviewAgent extract from legal documents?
+- A) Only dates
+- B) Key clauses using LLM text extraction
+- C) Document metadata
+- D) Author names
+
+<details><summary>Answer</summary>B) Key clauses using LLM text extraction</details>
+
+**Q2:** How does the ContractAnalysisAgent identify risky clauses?
+- A) Manual review
+- B) LLM pattern matching + risk scoring
+- C) Random checking
+- D) User flagging only
+
+<details><summary>Answer</summary>B) LLM pattern matching + risk scoring</details>
+
+**Q3:** What does the ComplianceMonitorAgent track?
+- A) Only internal policies
+- B) Regulatory changes from external sources
+- C) Employee attendance
+- D) Budget compliance
+
+<details><summary>Answer</summary>B) Regulatory changes from external sources</details>
+
+**Q4:** How does the LegalResearchAgent search case law?
+- A) Full-text keyword search
+- B) Vector embeddings + semantic retrieval
+- C) Manual catalog browsing
+- D) Citation graph only
+
+<details><summary>Answer</summary>B) Vector embeddings + semantic retrieval</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare legal AI agents and their techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| DocumentReviewAgent | Analyze legal documents for key clauses | LLM text extraction + classification |
+| ContractAnalysisAgent | Extract terms and flag risky clauses | LLM pattern matching + risk scoring |
+| ComplianceMonitorAgent | Track regulatory changes and requirements | Web scraping + LLM summarization |
+| LegalResearchAgent | Search and summarize case law | Vector search + semantic retrieval |
+| RiskAssessmentAgent | Evaluate legal risk exposure | Rule engine + AI risk scoring |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for legal AI agents and concepts.
+
+| Topic | Key Point |
+|-------|-----------|
+| Legal Models | Document, Contract, Case, Regulation, RiskRecord |
+| Document Review | Clause extraction + classification |
+| Contract Analysis | Term extraction + risk flagging |
+| Compliance Monitoring | Regulation tracking + requirement mapping |
+| Legal Research | Semantic case law search |
+| Risk Assessment | Multi-factor risk scoring |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Document Review | Legal document processing | Speed vs accuracy |
+| Contract Analysis | Risk identification | Thoroughness vs false positives |
+| Compliance Monitoring | Regulatory adherence | Coverage vs maintenance |
+| Legal Research | Case law discovery | Precision vs recall |
+| Risk Assessment | Exposure evaluation | Detail vs actionability |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding of legal AI agents.
+
+**Q1:** What does the DocumentReviewAgent extract from legal documents?
+- A) Only dates
+- B) Key clauses using LLM text extraction
+- C) Document metadata
+- D) Author names
+
+<details><summary>Answer</summary>B) Key clauses using LLM text extraction</details>
+
+**Q2:** How does the ContractAnalysisAgent identify risky clauses?
+- A) Manual review
+- B) LLM pattern matching + risk scoring
+- C) Random checking
+- D) User flagging only
+
+<details><summary>Answer</summary>B) LLM pattern matching + risk scoring</details>
+
+**Q3:** What does the ComplianceMonitorAgent track?
+- A) Only internal policies
+- B) Regulatory changes from external sources
+- C) Employee attendance
+- D) Budget compliance
+
+<details><summary>Answer</summary>B) Regulatory changes from external sources</details>
+
+**Q4:** How does the LegalResearchAgent search case law?
+- A) Full-text keyword search
+- B) Vector embeddings + semantic retrieval
+- C) Manual catalog browsing
+- D) Citation graph only
+
+<details><summary>Answer</summary>B) Vector embeddings + semantic retrieval</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare legal AI agents and their techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| DocumentReviewAgent | Analyze legal documents for key clauses | LLM text extraction + classification |
+| ContractAnalysisAgent | Extract terms and flag risky clauses | LLM pattern matching + risk scoring |
+| ComplianceMonitorAgent | Track regulatory changes and requirements | Web scraping + LLM summarization |
+| LegalResearchAgent | Search and summarize case law | Vector search + semantic retrieval |
+| RiskAssessmentAgent | Evaluate legal risk exposure | Rule engine + AI risk scoring |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for legal AI agents and concepts.
+
+| Topic | Key Point |
+|-------|-----------|
+| Legal Models | Document, Contract, Case, Regulation, RiskRecord |
+| Document Review | Clause extraction + classification |
+| Contract Analysis | Term extraction + risk flagging |
+| Compliance Monitoring | Regulation tracking + requirement mapping |
+| Legal Research | Semantic case law search |
+| Risk Assessment | Multi-factor risk scoring |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Document Review | Legal document processing | Speed vs accuracy |
+| Contract Analysis | Risk identification | Thoroughness vs false positives |
+| Compliance Monitoring | Regulatory adherence | Coverage vs maintenance |
+| Legal Research | Case law discovery | Precision vs recall |
+| Risk Assessment | Exposure evaluation | Detail vs actionability |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding of legal AI agents.
+
+**Q1:** What does the DocumentReviewAgent extract from legal documents?
+- A) Only dates
+- B) Key clauses using LLM text extraction
+- C) Document metadata
+- D) Author names
+
+<details><summary>Answer</summary>B) Key clauses using LLM text extraction</details>
+
+**Q2:** How does the ContractAnalysisAgent identify risky clauses?
+- A) Manual review
+- B) LLM pattern matching + risk scoring
+- C) Random checking
+- D) User flagging only
+
+<details><summary>Answer</summary>B) LLM pattern matching + risk scoring</details>
+
+**Q3:** What does the ComplianceMonitorAgent track?
+- A) Only internal policies
+- B) Regulatory changes from external sources
+- C) Employee attendance
+- D) Budget compliance
+
+<details><summary>Answer</summary>B) Regulatory changes from external sources</details>
+
+**Q4:** How does the LegalResearchAgent search case law?
+- A) Full-text keyword search
+- B) Vector embeddings + semantic retrieval
+- C) Manual catalog browsing
+- D) Citation graph only
+
+<details><summary>Answer</summary>B) Vector embeddings + semantic retrieval</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare legal AI agents and their techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| DocumentReviewAgent | Analyze legal documents for key clauses | LLM text extraction + classification |
+| ContractAnalysisAgent | Extract terms and flag risky clauses | LLM pattern matching + risk scoring |
+| ComplianceMonitorAgent | Track regulatory changes and requirements | Web scraping + LLM summarization |
+| LegalResearchAgent | Search and summarize case law | Vector search + semantic retrieval |
+| RiskAssessmentAgent | Evaluate legal risk exposure | Rule engine + AI risk scoring |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for legal AI agents and concepts.
+
+| Topic | Key Point |
+|-------|-----------|
+| Legal Models | Document, Contract, Case, Regulation, RiskRecord |
+| Document Review | Clause extraction + classification |
+| Contract Analysis | Term extraction + risk flagging |
+| Compliance Monitoring | Regulation tracking + requirement mapping |
+| Legal Research | Semantic case law search |
+| Risk Assessment | Multi-factor risk scoring |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Document Review | Legal document processing | Speed vs accuracy |
+| Contract Analysis | Risk identification | Thoroughness vs false positives |
+| Compliance Monitoring | Regulatory adherence | Coverage vs maintenance |
+| Legal Research | Case law discovery | Precision vs recall |
+| Risk Assessment | Exposure evaluation | Detail vs actionability |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding of legal AI agents.
+
+**Q1:** What does the DocumentReviewAgent extract from legal documents?
+- A) Only dates
+- B) Key clauses using LLM text extraction
+- C) Document metadata
+- D) Author names
+
+<details><summary>Answer</summary>B) Key clauses using LLM text extraction</details>
+
+**Q2:** How does the ContractAnalysisAgent identify risky clauses?
+- A) Manual review
+- B) LLM pattern matching + risk scoring
+- C) Random checking
+- D) User flagging only
+
+<details><summary>Answer</summary>B) LLM pattern matching + risk scoring</details>
+
+**Q3:** What does the ComplianceMonitorAgent track?
+- A) Only internal policies
+- B) Regulatory changes from external sources
+- C) Employee attendance
+- D) Budget compliance
+
+<details><summary>Answer</summary>B) Regulatory changes from external sources</details>
+
+**Q4:** How does the LegalResearchAgent search case law?
+- A) Full-text keyword search
+- B) Vector embeddings + semantic retrieval
+- C) Manual catalog browsing
+- D) Citation graph only
+
+<details><summary>Answer</summary>B) Vector embeddings + semantic retrieval</details>
 
 ## Summary
 

@@ -1,5 +1,7 @@
 # Performance Tuning & Profiling
 
+> **Previous:** [Functional Programming in Practice](./05-functional-deep.md) | **Next:** [Maven Deep Dive](./07-maven.md)
+
 Performance is a feature. In production Java applications, performance problems manifest as high latency, low throughput, excessive CPU, memory leaks, and cascading failures. Solving them requires a systematic approach: **measure**, **identify the bottleneck**, **fix**, and **verify**. This chapter covers the tools, techniques, and JVM internals you need to diagnose and eliminate performance problems in Java and Spring Boot applications.
 
 The chapter is organized into nine sections. Sections 1--4 cover **diagnostic tools**: profilers, heap analyzers, thread dump analysis, and GC log analysis. Section 5 covers **benchmarking with JMH**. Sections 6--8 cover **anti-patterns, code-level optimizations, and JVM tuning**. Section 9 covers **Spring-Boot-specific performance** techniques.
@@ -20,6 +22,32 @@ By the end of this chapter, you will be able to:
 - Identify and fix common performance anti-patterns: auto-boxing loops, string concatenation in loops, excessive synchronization, N+1 queries, connection pool leaks, and unintentional object retention
 - Apply JVM tuning flags for heap sizing, GC selection, and memory layout
 - Configure Spring Boot for better startup and runtime performance via lazy initialization, connection pool tuning, AOT, graceful shutdown, and virtual threads
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Profiling Tools | JFR, async-profiler, VisualVM, MAT | Always start with JFR — <1% overhead |
+| Heap Analysis | MAT dominator tree, leak suspect, OQL | Retained heap reveals true memory cost |
+| Thread Dumps | jstack analysis for deadlocks and contention | Look for BLOCKED threads and lock owners |
+| GC Log Analysis | Pause time, allocation rate, promotion rate | GC tuning is a trade-off: throughput vs latency |
+| JMH Benchmarking | Annotation-based microbenchmarks | Warmup, Blackhole, and dead code elimination matter |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Profiling Tools] --> B[Heap Analysis]
+    B --> C[Thread Dump Analysis]
+    C --> D[GC Log Analysis]
+    D --> E[JMH Benchmarking]
+    E --> F[Anti-Patterns]
+    F --> G[Code Optimization]
+    G --> H[JVM Tuning]
+    H --> I[Spring Boot Performance]
+```
+
+> **Warning:** Never tune without metrics. Guessing which GC to use or which flag to set without JFR or GC logs is cargo-cult optimization. Always measure first.
 
 ---
 
@@ -3456,6 +3484,80 @@ class VirtualThreadPitfalls {
     }
 }
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| JFR/JMC | Built-in event recording and analysis | <1% overhead, production-safe | First-choice diagnostic tool |
+| async-profiler | Sampling CPU/memory profiler | Stack traces with safepoint bias avoidance | CPU hotspot identification |
+| MAT | Heap dump analyzer | Dominator tree, leak suspect, OQL | Memory leak root cause analysis |
+| JMH | Microbenchmark harness | @Benchmark, Blackhole, warmup forks | Precise method-level performance measurement |
+
+## Quick Reference
+
+| Category | Tools & Techniques | Notes |
+|----------|-------------------|-------|
+| **CPU Profiling** | async-profiler, JFR, VisualVM | async-profiler handles safepoint bias |
+| **Memory Analysis** | MAT, jmap, jhat | Dominator tree shows biggest retained objects |
+| **Thread Analysis** | jstack, ThreadMXBean, JMC | 3-column thread dump: blocked, waiting, running |
+| **GC Analysis** | GC logs, GCViewer, G1GC -Xlog:gc* | Key metrics: pause time, allocation rate, promoted bytes |
+| **Benchmarking** | JMH with @Benchmark, @State, Blackhole | Always include warmup and avoid constant folding |
+
+## Cross-Application Matrix
+
+| Technique | Web Apps | Batch Jobs | Low-Latency | Microservices |
+|-----------|----------|------------|-------------|---------------|
+| JFR Profiling | Transaction latency | CPU hotspots | Real-time monitoring | Distributed tracing |
+| Heap Dump Analysis | OOM investigation | Large data leaks | Memory leak detection | Container OOMKilled |
+| JMH | - | - | Critical path benchmarks | Library performance |
+| GC Tuning | Steady throughput | Large heap tuning | Sub-ms pause goals | Container heap sizing |
+
+## Chapter Quiz
+
+1. Which tool has the lowest overhead for production profiling?
+   - A) async-profiler
+   - B) JFR (JDK Flight Recorder)
+   - C) VisualVM
+   - D) MAT
+
+<details>
+<summary>Answer</summary>
+**B) JFR (JDK Flight Recorder).** JFR has <1% overhead and is designed for continuous production use.
+</details>
+
+2. In Eclipse MAT, what does the Dominator Tree show?
+   - A) The call stack for each thread
+   - B) Which objects keep others alive — the dominator path to the GC root
+   - C) The JVM heap configuration
+   - D) GC log summary
+
+<details>
+<summary>Answer</summary>
+**B) Which objects keep others alive — the dominator path to the GC root.** The dominator tree simplifies heap analysis by showing the smallest set of objects that retain the largest amount of memory.
+</details>
+
+3. What is the purpose of `Blackhole` in JMH?
+   - A) To consume the return value of a benchmark to prevent dead code elimination
+   - B) To measure memory allocation
+   - C) To simulate a slow I/O operation
+   - D) To profile CPU usage
+
+<details>
+<summary>Answer</summary>
+**A) To consume the return value of a benchmark to prevent dead code elimination.** Without Blackhole, the JIT may optimize away the code being benchmarked if the result is unused.
+</details>
+
+4. Which GC metric is most important for latency-sensitive applications?
+   - A) Throughput
+   - B) Pause time
+   - C) Heap size
+   - D) Allocation rate
+
+<details>
+<summary>Answer</summary>
+**B) Pause time.** For latency-sensitive applications, stop-the-world pause times directly impact response time SLAs.
+</details>
 
 ---
 

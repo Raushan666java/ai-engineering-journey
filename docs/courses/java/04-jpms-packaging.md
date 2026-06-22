@@ -1,5 +1,7 @@
 # Java Modules (JPMS) & Packaging
 
+> **Previous:** [Java NIO & Networking](./03-nio-networking.md) | **Next:** [Functional Programming in Practice](./05-functional-deep.md)
+
 Java's module systemâ€”formally **Java Platform Module System (JPMS)**â€”was introduced in Java 9 as part of Project Jigsaw. It is the largest structural change to the Java language since its inception. Before JPMS, Java had only packages as a namespacing mechanism, with no concept of declared dependencies, no enforced encapsulation at the JAR level, and no reliable way to reason about what a library required or exposed. The result was classpath hell: conflicting versions, missing classes at runtime, and a `public` keyword that was all-or-nothing.
 
 JPMS introduces **modules** as a new level of abstraction above packages. A module is a self-describing collection of code and data that explicitly declares its dependencies and its exported API. This chapter covers the full module system: from motivation and basic `module-info.java` declarations through advanced topics like ServiceLoader, `jlink` for custom runtime images, `jpackage` for native installers, multi-module project architecture, migration strategies for existing codebases, and how Spring Boot interacts with the module system.
@@ -22,6 +24,31 @@ By the end of this chapter, you will be able to:
 - Architect multi-module Maven and Gradle projects with JPMS, avoiding split-package and circular-dependency problems
 - Migrate an existing application to JPMS using `jdeps`, `--add-exports`, `--add-opens`, `--add-reads`, and the automatic-module-name pattern
 - Understand how Spring Boot auto-configuration, JPA entities, and modular JARs interact with the module system
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Module Motivation | Classpath hell — no encapsulation, no declared deps | JPMS enforces reliable configuration at compile + runtime |
+| module-info.java | Declares requires, exports, opens, provides, uses | Explicit dependency graph replaces guesswork |
+| Module Types | Named, unnamed, automatic modules | Automatic module bridges legacy JARs |
+| jlink | Builds custom JRE with only needed modules | Reduces footprint from 300MB to 30MB |
+| jpackage | Creates native installers (.msi, .dmg, .deb) | Distribute desktop apps without requiring JRE |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Motivation] --> B[module-info.java]
+    B --> C[Module Types & Graph]
+    C --> D[jlink: Custom Runtime]
+    D --> E[jpackage: Native Installers]
+    E --> F[Multi-Module Projects]
+    F --> G[Migration Strategies]
+    G --> H[Spring Boot + JPMS]
+```
+
+> **Warning:** When migrating to JPMS, expect the most friction from reflection-heavy frameworks (Spring, Hibernate, Mockito). You'll need `--add-opens` for reflective access or use `open module` declarations.
 
 ---
 
@@ -2162,6 +2189,80 @@ if (meta != null) {
     System.out.printf("Module version: %s%n", meta.version());
 }
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Package | Groups related classes | No encapsulation boundary | Namespace organization |
+| Module | Groups related packages | Enforces visibility at module boundary | Reliable dependency configuration |
+| Automatic Module | JAR on module path without module-info | Reads all, exports all | Migration bridge for legacy libraries |
+| Unnamed Module | JAR on classpath | Cannot access named modules | Backward compatibility |
+
+## Quick Reference
+
+| Category | Key Directives | Notes |
+|----------|---------------|-------|
+| **requires** | module dependency | `requires transitive` for implied readability |
+| **exports** | public types accessible | `exports com.foo.api to specific.module` |
+| **opens** | reflective access | `open module` opens all packages |
+| **provides/uses** | ServiceLoader pattern | Decoupled plugin architecture |
+| **Tools** | jdeps, jlink, jpackage, jmod | jlink creates minimum JRE; jpackage creates native installer |
+
+## Cross-Application Matrix
+
+| Technique | Desktop Apps | Microservices | Libraries | Legacy Migration |
+|-----------|-------------|---------------|-----------|------------------|
+| jlink | Minimal JRE bundle | Docker image size reduction | - | - |
+| jpackage | Native installers | - | - | - |
+| opens | - | - | Hibernate entity scanning | Reflection support |
+| Automatic Module | - | - | Library JAR compatibility | Migration stepping stone |
+
+## Chapter Quiz
+
+1. Which keyword in module-info.java makes a package accessible to reflection at runtime?
+   - A) exports
+   - B) opens
+   - C) requires
+   - D) provides
+
+<details>
+<summary>Answer</summary>
+**B) opens.** The `opens` directive grants reflective access to a package, which is needed by frameworks like Hibernate and Spring that use reflection for entity scanning and dependency injection.
+</details>
+
+2. What is the primary benefit of using `jlink`?
+   - A) It compiles Java code faster
+   - B) It creates a custom runtime image containing only the modules your application needs
+   - C) It replaces the need for Maven or Gradle
+   - D) It automatically migrates your code to JPMS
+
+<details>
+<summary>Answer</summary>
+**B) It creates a custom runtime image containing only the modules your application needs.** jlink reduces the JRE footprint from ~300MB to as little as ~30MB for minimal applications.
+</details>
+
+3. What happens when a JAR without module-info.java is placed on the module path?
+   - A) It is ignored
+   - B) It becomes an automatic module
+   - C) It throws a compile error
+   - D) It becomes an unnamed module
+
+<details>
+<summary>Answer</summary>
+**B) It becomes an automatic module.** Automatic modules read all other modules and export all their packages, serving as a bridge for migrating existing libraries.
+</details>
+
+4. What tool should you use to analyze JAR dependencies before migrating to JPMS?
+   - A) javac
+   - B) jdeps
+   - C) jlink
+   - D) jar
+
+<details>
+<summary>Answer</summary>
+**B) jdeps.** jdeps analyzes class dependencies and provides the information needed to write module-info.java files and identify missing modules.
+</details>
 
 ---
 

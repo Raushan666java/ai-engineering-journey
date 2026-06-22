@@ -1,6 +1,8 @@
 # Multithreading & Concurrency
 
-Concurrency is one of the most challenging topics in Java. This chapter covers the entire concurrency landscape â€” from the low-level `Thread` API and `synchronized` blocks to modern abstractions like `CompletableFuture`, virtual threads, and structured concurrency. Every example is complete and compilable.
+> **Previous:** [JVM Architecture & Memory Management](./01-jvm-memory.md) | **Next:** [NIO & Networking](./03-nio-networking.md)
+
+Concurrency is one of the most challenging topics in Java. This chapter covers the entire concurrency landscape — from the low-level `Thread` API and `synchronized` blocks to modern abstractions like `CompletableFuture`, virtual threads, and structured concurrency. Every example is complete and compilable.
 
 ---
 
@@ -18,6 +20,33 @@ By the end of this chapter you should be able to:
 - Decompose CPU-intensive work with the ForkJoinPool
 - Use virtual threads and structured concurrency from Project Loom
 - Detect and prevent deadlocks using `jstack`, `ThreadMXBean`, and lock ordering
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Thread Lifecycle | Six states: NEW → RUNNABLE → BLOCKED/WAITING/TIMED_WAITING → TERMINATED | `jstack` shows thread state for debugging |
+| Synchronization | `synchronized`, `Lock`, `Atomic*` — mutual exclusion + visibility | Prefer `Lock` for flexibility, `synchronized` for simplicity |
+| Java Memory Model | Happens-before rules guarantee visibility across threads | `volatile` for flags, `synchronized` for compound actions |
+| Concurrency Utilities | ExecutorService, ForkJoinPool, CompletableFuture | Thread pools decouple task submission from execution |
+| Virtual Threads | Lightweight JVM-managed threads, millions possible | Avoid `synchronized` in hot paths to prevent pinning |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Thread Lifecycle] --> B[Race Conditions]
+    B --> C[Synchronized & Locks]
+    C --> D[Atomic Classes & volatile]
+    D --> E[Concurrent Collections]
+    E --> F[ExecutorService & Thread Pools]
+    F --> G[ForkJoinPool]
+    G --> H[CompletableFuture]
+    H --> I[Virtual Threads]
+    I --> J[Deadlock Prevention]
+```
+
+> **Warning:** Virtual threads are not a free pass to ignore thread safety. Shared mutable state still requires synchronization — virtual threads only reduce the overhead of having many threads, not the need for correctness.
 
 ---
 
@@ -2992,6 +3021,95 @@ class DiningPhilosophers {
     }
 }
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| synchronized | Intrinsic lock on object | Reentrant, implicit | Simple mutual exclusion |
+| ReentrantLock | Explicit lock with fairness | tryLock, interruptible | Need timeout or fairness |
+| AtomicInteger | CAS-based thread-safe counter | Non-blocking, lock-free | High-contention counters |
+| volatile | Visibility guarantee only | Not atomic | Status flags, double-checked locking |
+| CompletableFuture | Async computation pipeline | Composable, non-blocking | Chained async operations |
+
+## Quick Reference
+
+| Category | Key Classes | Notes |
+|----------|-------------|-------|
+| **Thread API** | Thread, Runnable, Callable, Future | Prefer Runnable/Callable over raw Thread |
+| **Locks** | ReentrantLock, ReadWriteLock, StampedLock | StampedLock supports optimistic reads |
+| **Atomics** | AtomicInteger, AtomicLong, AtomicReference, AtomicStampedReference | CAS-based, no contention under low load |
+| **Executors** | ThreadPoolExecutor, ScheduledThreadPoolExecutor, ForkJoinPool | Common pool = ForkJoinPool.commonPool() |
+| **Async** | CompletableFuture, CompletionStage | thenApply/thenCompose for chaining |
+| **Virtual Threads** | Thread.ofVirtual(), Executors.newVirtualThreadPerTaskExecutor() | 1000x lighter than platform threads |
+| **Collections** | ConcurrentHashMap, CopyOnWriteArrayList, BlockingQueue variants | ConcurrentHashMap: compute/merge are atomic |
+
+## Cross-Application Matrix
+
+| Technique | Web Apps | Microservices | Batch Processing | Real-Time Systems |
+|-----------|----------|---------------|------------------|-------------------|
+| Thread Pools | Request handling | Service orchestration | Parallel processing | Bounded work queues |
+| CompletableFuture | Async endpoints | Service composition | Pipeline parallelism | Timeout-based fallbacks |
+| Virtual Threads | High-throughput servers | Per-request isolation | I/O-bound parallelism | Avoid synchronized |
+| ForkJoinPool | - | Parallel stream ops | Divide-and-conquer | Work-stealing for CPU tasks |
+| ConcurrentHashMap | Session caching | Service registry | Aggregation maps | Fine-grained concurrency |
+
+## Chapter Quiz
+
+1. What happens when a thread calls `wait()` on an object?
+   - A) The thread releases all its locks
+   - B) The thread releases the intrinsic lock on that object and waits
+   - C) The thread continues executing
+   - D) The thread terminates
+
+<details>
+<summary>Answer</summary>
+**B) The thread releases the intrinsic lock on that object and waits.** `wait()` must be called from a synchronized block. The thread releases the lock and enters WAITING state until notified.
+</details>
+
+2. Which primitive guarantees visibility across threads without atomicity?
+   - A) synchronized
+   - B) volatile
+   - C) final
+   - D) static
+
+<details>
+<summary>Answer</summary>
+**B) volatile.** volatile guarantees that writes to a variable are visible to all threads, but does not provide atomicity for compound operations like increment.
+</details>
+
+3. What is a key benefit of virtual threads over platform threads?
+   - A) They are faster for CPU-bound tasks
+   - B) They are lightweight — millions can run on a single OS thread
+   - C) They eliminate the need for synchronization
+   - D) They automatically parallelize all operations
+
+<details>
+<summary>Answer</summary>
+**B) They are lightweight — millions can run on a single OS thread.** Virtual threads are managed by the JVM and are not tied to OS threads, allowing high concurrency with low memory footprint.
+</details>
+
+4. Which method places a task in a BlockingQueue if space is available, or waits until space becomes available?
+   - A) `offer()`
+   - B) `put()`
+   - C) `add()`
+   - D) `poll()`
+
+<details>
+<summary>Answer</summary>
+**B) `put()`.** `put()` blocks until space becomes available, while `offer()` returns false if no space is available.
+</details>
+
+5. What does `ThreadLocal` provide?
+   - A) A shared variable visible to all threads
+   - B) A variable that has a separate copy for each thread
+   - C) A global counter
+   - D) A synchronization primitive
+
+<details>
+<summary>Answer</summary>
+**B) A variable that has a separate copy for each thread.** ThreadLocal provides per-thread variable instances, useful for thread confinement patterns.
+</details>
 
 ---
 

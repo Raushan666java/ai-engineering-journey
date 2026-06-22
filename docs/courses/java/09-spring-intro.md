@@ -1,5 +1,7 @@
 # Introduction to Spring & Spring Boot
 
+> **Previous:** [Gradle Deep Dive](./08-gradle.md) | **Next:** [Dependency Injection & IoC Container](./10-di-container.md)
+
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
@@ -16,9 +18,34 @@ By the end of this chapter, you will be able to:
 - Use the Spring Boot CLI to run Groovy-based Spring applications with grab annotations
 - Build and run a complete Hello World REST application step by step
 
-## Table of Contents
+## Chapter at a Glance
 
-1. [The Spring Ecosystem](#1-the-spring-ecosystem)
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Spring History | 2004-2024: XML config -> Java config -> auto-configuration -> AOT | Spring evolved to reduce boilerplate |
+| IoC Principle | Container manages object lifecycle and dependencies | Loose coupling through DI |
+| Spring Boot | Opinionated defaults + embedded server + auto-configuration | Production app in minutes, not days |
+| Starters | Curated dependency sets | One dependency instead of ten |
+| Project Setup | Initializr, CLI, IDE wizards | Standardized project structure |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Spring History] --> B[IoC & DI]
+    B --> C[Spring Boot Philosophy]
+    C --> D[Project Setup]
+    D --> E[Starters & Dependencies]
+    E --> F[Project Structure]
+    F --> G[Container Configuration]
+    G --> H[Hello World App]
+```
+
+> **Pro Tip:** For any new project, start at start.spring.io. Manually adding Spring dependencies to a bare Maven project is error-prone and wastes time.
+
+---
+
+## Table of Contents(#1-the-spring-ecosystem)
 2. [Inversion of Control & Dependency Injection](#2-inversion-of-control--dependency-injection)
 3. [Spring Boot Philosophy](#3-spring-boot-philosophy)
 4. [Project Initialization](#4-project-initialization)
@@ -3114,6 +3141,68 @@ class HelloWorldApplicationTests {
     }
 }
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Spring Framework | Core DI, AOP, MVC, Data Access | Full control, XML or Java config | Enterprise apps needing flexibility |
+| Spring Boot | Opinionated auto-configuration | Embedded server, starters, production-ready | Rapid development, microservices |
+| Spring Cloud | Distributed systems patterns | Service discovery, config server, circuit breakers | Microservice orchestration |
+| Spring Data | Consistent data access across stores | Repository abstraction | JPA, MongoDB, Redis integration |
+
+## Quick Reference
+
+| Category | Key Components | Notes |
+|----------|---------------|-------|
+| **Core** | IoC Container, AOP, SpEL | ApplicationContext is the central interface |
+| **Web** | Spring MVC, WebFlux, REST APIs | @RestController for REST services |
+| **Boot** | Auto-configuration, Starters, Actuator | @SpringBootApplication = @Config + @EnableAutoConfig + @ComponentScan |
+| **Data** | JPA, JDBC, MongoDB, Redis | Spring Data repositories reduce boilerplate |
+| **Security** | Authentication, Authorization, OAuth2 | @EnableWebSecurity for custom config |
+
+## Cross-Application Matrix
+
+| Technique | Monolith | Microservices | Reactive | Batch |
+|-----------|----------|---------------|----------|-------|
+| Spring Boot | Standard choice | Foundation framework | WebFlux for reactive | Spring Batch |
+| Auto-Configuration | Quick setup | Consistent config across services | Conditional on reactive deps | Batch auto-config |
+| Starters | spring-boot-starter-web | spring-boot-starter-webflux | spring-boot-starter-webflux | spring-boot-starter-batch |
+
+## Chapter Quiz
+
+1. What does @SpringBootApplication combine?
+   - A) @Configuration, @ComponentScan, @EnableAutoConfiguration
+   - B) @SpringBootConfiguration, @EnableAspectJAutoProxy, @ComponentScan
+   - C) @Configuration, @EnableWebMvc, @EnableAutoConfiguration
+   - D) @SpringBootConfiguration, @ComponentScan, @EnableAutoConfiguration
+
+<details>
+<summary>Answer</summary>
+**D) @SpringBootConfiguration, @ComponentScan, @EnableAutoConfiguration.** @SpringBootApplication is a convenience annotation that composes these three.
+</details>
+
+2. Which embedded servlet container is the default in Spring Boot?
+   - A) Jetty
+   - B) Undertow
+   - C) Tomcat
+   - D) Netty
+
+<details>
+<summary>Answer</summary>
+**C) Tomcat.** Spring Boot defaults to Tomcat but can be swapped to Jetty or Undertow by excluding Tomcat and including the desired starter.
+</details>
+
+3. Where is the best place to start a new Spring Boot project?
+   - A) Clone a random GitHub repo
+   - B) Spring Initializr (start.spring.io)
+   - C) Copy an old project
+   - D) Write all files from scratch
+
+<details>
+<summary>Answer</summary>
+**B) Spring Initializr (start.spring.io).** Initializr generates a correct project structure with the right dependencies, build configuration, and main class.
+</details>
 
 ---
 

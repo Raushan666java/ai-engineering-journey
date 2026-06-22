@@ -1,5 +1,8 @@
 # Chapter 2: Architecture, Routing, Middleware & Controllers
 
+> **Previous:** [Introduction to Laravel 13](./01-introduction.md) | **Next:** [Blade Templating, Components & Frontend](./03-blade-frontend.md)
+
+
 ---
 
 ## Learning Objectives
@@ -14,7 +17,41 @@
 
 ---
 
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+|Request Lifecycle|Request flows: index.php → kernel → router → middleware → controller|Understanding lifecycle helps debug performance and ordering|
+|Service Container|Auto-resolves dependencies via type-hints and providers|Use container — never use `new` for services manually|
+|Routing|Routes support params, constraints, names, and groups|Use route naming with ->name() for clean URL generation|
+|Middleware|Filters HTTP requests before controllers|Global for all, group for web/api, named for specific routes|
+|Controllers|Organize route logic into classes with DI|Resource controllers map to 7 RESTful actions|
+|Route Model Binding|Auto-resolves Eloquent models from route params|Use explicit binding for custom resolution logic|
+|CSRF & Responses|CSRF auto for web; views, JSON, redirects, files|Exclude CSRF for API routes and webhooks|
+
+
+
+
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[HTTP Request] --> B[public/index.php]
+    B --> C[bootstrap/app.php]
+    C --> D[HTTP Kernel]
+    D --> E[Global Middleware]
+    E --> F[Route Matching]
+    F --> G[Route Middleware]
+    G --> H[Controller]
+    H --> I[Response]
+    I --> J[Send to Browser]
+```
+
+
 ## Theory
+
+> **One-Sentence Takeaway:** The request lifecycle follows a precise 8-step path from entry point to response delivery
 
 ### 2.1 Request Lifecycle
 
@@ -37,6 +74,9 @@ $kernel->terminate($request, $response);
 
 ```php
 protected $middlewareGroups = [
+
+> **Remember:** Middleware order matters. `SubstituteBindings` must come after `StartSession`.
+
     'web' => [
         \App\Http\Middleware\EncryptCookies::class,
         \Illuminate\Session\Middleware\StartSession::class,
@@ -542,6 +582,72 @@ Route::resource('posts', PostController::class);
 
 ---
 
+
+## Concept Comparison
+
+| Concept | Description | Use Case |
+|---------|-------------|---------|
+|Implicit vs Explicit|Implicit: {user} → User; Explicit: custom resolver|Use implicit for id lookups, explicit for composite keys|
+|Web vs API|Web: session+CSRF; API: stateless+rate-limit|Web for browser, API for mobile/clients|
+|Resource vs Single|Resource: 7 methods; Single: __invoke only|Resource for CRUD, single for dashboards|
+
+## Quick Reference
+
+| Task | Command / Method | Notes |
+|------|-----------------|-------|
+|Create controller|php artisan make:controller UserController|Add --resource for CRUD|
+|Create middleware|php artisan make:middleware CheckAge|Register in Kernel|
+|View routes|php artisan route:list|Filter with --path=/api|
+|Named route|route('users.show', $user)|Must match ->name()|
+|Inject request|public function store(Request \$request)|Auto-injected by container|
+
+## Cross-Application Matrix
+
+| Domain | Application | Key Integration |
+|--------|-------------|-----------------|
+|Web Apps|Blade-rendered apps|Web middleware group|
+|APIs|RESTful services|API middleware group|
+|Admin Panels|Dashboards|Custom role middleware|
+|Microservices|Stateless services|Ziggy for frontend routes|
+
+## Chapter Quiz
+
+Test your understanding with these questions.
+
+**1.** First file executed during request?
+
+- A) routes/web.php
+- B) public/index.php
+- C) app/Http/Kernel.php
+- D) bootstrap/app.php
+**Answer:** B
+
+**2.** Which group includes CSRF?
+
+- A) api
+- B) web
+- C) global
+- D) custom
+**Answer:** B
+
+**3.** What does implicit binding do?
+
+- A) Validates data
+- B) Resolves model from route param
+- C) Applies CSRF
+- D) Creates migrations
+**Answer:** B
+
+**4.** Resource controller methods count?
+
+- A) 5
+- B) 6
+- C) 7
+- D) 8
+**Answer:** C
+
+
+
 ## Summary
 
 - The HTTP request lifecycle follows `index.php` â†’ `bootstrap/app.php` â†’ Kernel â†’ Service Providers â†’ Router â†’ Middleware â†’ Controller â†’ Response
@@ -582,3 +688,4 @@ Route::resource('posts', PostController::class);
 ### Challenge Problem
 
 **Task Manager REST API**: Build a complete API for a Task Manager. Create `EnsureTokenIsValid` middleware checking an `X-API-Key` header against the `api_tokens` table. Apply rate limiting (60 req/min authenticated, 10 req/min unauthenticated) using named limiters. Create `TaskController` and `ProjectController` as API resource controllers. Tasks are scoped under projects and bound by ULID (`projects/{project:ulid}/tasks/{task:ulid}`). Include soft-delete support with `withTrashed()` for 30 days. Create form request classes for validation. Define `apiSuccess($data)` and `apiError($message)` response macros in a service provider. Show all files.
+

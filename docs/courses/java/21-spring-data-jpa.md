@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="../20-jpa-hibernate.md">â† Previous (JPA/Hibernate)</a> | <a href="../22-migrations.md">Next (Migrations) â†’</a>
+</p>
+
 # Spring Data JPA
 
 ## Learning Objectives
@@ -16,6 +20,31 @@ By the end of this chapter, you will be able to:
 
 ---
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Repositories | CrudRepository, JpaRepository, PagingAndSortingRepository | JpaRepository extends all others |
+| Derived Queries | findBy*, countBy*, deleteBy* | Follow naming conventions for auto-implementation |
+| @Query | Custom JPQL and native SQL | Use native queries for database-specific features |
+| Specifications | Dynamic query building | Combine with JpaSpecificationExecutor |
+| Projections | Interface-based, DTO-based | Reduce data transfer overhead |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Repository Interfaces] --> B[Derived Queries]
+    B --> C[@Query & @Modifying]
+    C --> D[Specifications]
+    D --> E[QueryDSL]
+    E --> F[Auditing]
+    F --> G[Pagination & Sorting]
+    G --> H[Projections]
+```
+
+> **Pro Tip:** For read-only queries, use projections or DTO-based queries to avoid loading entire entities. This significantly reduces memory usage for large result sets.
+
 ## 1. Repository Interfaces
 
 ![Spring Data JPA Repository Hierarchy](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/21-spring-data-jpa.png)
@@ -25,31 +54,31 @@ Spring Data JPA provides a hierarchy of repository interfaces. Each adds functio
 ### 1.1 Interface Hierarchy
 
 ```java
-// Repository â€” Marker interface (no methods)
+// Repository Ã¢â‚¬â€ Marker interface (no methods)
 public interface Repository<T, ID> { }
 
-// CrudRepository â€” Basic CRUD operations
+// CrudRepository Ã¢â‚¬â€ Basic CRUD operations
 //   save(S), saveAll(Iterable<S>), findById(ID), existsById(ID),
 //   findAll(), findAllById(Iterable<ID>), count(), deleteById(ID),
 //   delete(T), deleteAllById(Iterable<? extends ID>), deleteAll()
 
-// PagingAndSortingRepository â€” Adds pagination and sorting
+// PagingAndSortingRepository Ã¢â‚¬â€ Adds pagination and sorting
 //   findAll(Sort), findAll(Pageable)
 
-// JpaRepository â€” JPA-specific extensions
+// JpaRepository Ã¢â‚¬â€ JPA-specific extensions
 //   findAll(), findAll(Sort), findAll(Pageable), saveAllAndFlush(),
 //   saveAndFlush(), flush(), deleteInBatch(), deleteAllInBatch(),
 //   getOne(ID), getById(ID), getReferenceById(ID)
 //   Also exposes all methods of CrudRepository and PagingAndSortingRepository
 
-// ListCrudRepository â€” Modern variant returning List instead of Iterable
-// ListPagingAndSortingRepository â€” Modern pagination variant returning List/Page
+// ListCrudRepository Ã¢â‚¬â€ Modern variant returning List instead of Iterable
+// ListPagingAndSortingRepository Ã¢â‚¬â€ Modern pagination variant returning List/Page
 ```
 
 ### 1.2 Choosing the Right Interface
 
 ```java
-// Minimal â€” just type-safe ID-based access
+// Minimal Ã¢â‚¬â€ just type-safe ID-based access
 @Repository
 public interface CountryRepository extends Repository<Country, Long> {
     Optional<Country> findByCode(String code);
@@ -130,23 +159,23 @@ Spring Data JPA parses method names to generate JPQL queries automatically.
 ```java
 public interface CustomerRepository extends JpaRepository<Customer, Long> {
 
-    // find...By â€” Returns entity, Optional, List, Set, Stream
+    // find...By Ã¢â‚¬â€ Returns entity, Optional, List, Set, Stream
     Optional<Customer> findByEmail(String email);
     List<Customer> findByLastName(String lastName);
     Set<Customer> findByTier(CustomerTier tier);
     Stream<Customer> findByCreatedAtAfter(LocalDateTime date);  // Requires @Transactional
 
-    // exists...By â€” Returns boolean
+    // exists...By Ã¢â‚¬â€ Returns boolean
     boolean existsByEmail(String email);
 
-    // count...By â€” Returns long
+    // count...By Ã¢â‚¬â€ Returns long
     long countByTier(CustomerTier tier);
 
-    // delete...By / remove...By â€” Returns void or int (number of deleted)
+    // delete...By / remove...By Ã¢â‚¬â€ Returns void or int (number of deleted)
     void deleteByEmail(String email);
     int removeByLastName(String lastName);
 
-    // stream...By â€” Returns Stream<Entity>
+    // stream...By Ã¢â‚¬â€ Returns Stream<Entity>
     @Transactional(readOnly = true)
     Stream<Customer> streamByTier(CustomerTier tier);
 }
@@ -218,10 +247,10 @@ public class Shipment {
 
 public interface ShipmentRepository extends JpaRepository<Shipment, Long> {
 
-    // Traverse through Order â†’ Customer â†’ email
+    // Traverse through Order Ã¢â€ â€™ Customer Ã¢â€ â€™ email
     List<Shipment> findByOrderCustomerEmail(String email);
 
-    // Traverse through Order â†’ status
+    // Traverse through Order Ã¢â€ â€™ status
     List<Shipment> findByOrderStatus(OrderStatus status);
 
     // Multiple levels
@@ -235,7 +264,7 @@ public interface ShipmentRepository extends JpaRepository<Shipment, Long> {
 ```java
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
-    // Top / First â€” limits results
+    // Top / First Ã¢â‚¬â€ limits results
     List<Product> findTop10ByOrderByPriceDesc();
     List<Product> findFirst5ByCategoryIdOrderByNameAsc(Long categoryId);
     Optional<Product> findTopByOrderBySalesCountDesc();  // Single result
@@ -247,7 +276,7 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
 ---
 
-## 3. @Query â€” Custom JPQL and Native Queries
+## 3. @Query Ã¢â‚¬â€ Custom JPQL and Native Queries
 
 ### 3.1 JPQL Queries
 
@@ -385,7 +414,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 public interface OrderRepository extends JpaRepository<Order, Long> {
 
     // After execution, automatically clear the persistence context
-    // Prevents stale data â€” the 1LC is cleared so subsequent reads hit the DB
+    // Prevents stale data Ã¢â‚¬â€ the 1LC is cleared so subsequent reads hit the DB
     @Modifying(clearAutomatically = true)
     @Query("UPDATE Order o SET o.status = :newStatus WHERE o.customer.id = :customerId")
     int updateOrdersByCustomer(@Param("customerId") Long customerId,
@@ -399,8 +428,8 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
                               @Param("cutoff") LocalDateTime cutoff);
 
     // Usage is typically:
-    // 1. flushAutomatically = true  â€” flush pending changes first
-    // 2. clearAutomatically = true  â€” clear 1LC after to avoid stale state
+    // 1. flushAutomatically = true  Ã¢â‚¬â€ flush pending changes first
+    // 2. clearAutomatically = true  Ã¢â‚¬â€ clear 1LC after to avoid stale state
 }
 ```
 
@@ -417,7 +446,7 @@ public class OrderService {
         this.orderRepository = orderRepository;
     }
 
-    // Bulk cancel â€” service-layer transaction wraps the modifying operation
+    // Bulk cancel Ã¢â‚¬â€ service-layer transaction wraps the modifying operation
     public int bulkCancelOrders(Long customerId) {
         return orderRepository.updateOrdersByCustomer(customerId, OrderStatus.CANCELLED);
     }
@@ -535,7 +564,7 @@ public class OrderSearchService {
 }
 ```
 
-### 5.4 Criteria API â€” Advanced Usage
+### 5.4 Criteria API Ã¢â‚¬â€ Advanced Usage
 
 ```java
 @Repository
@@ -1065,10 +1094,10 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
     // Spring Data automatically applies pagination
     Page<Order> findByStatus(OrderStatus status, Pageable pageable);
 
-    // Slice â€” lighter than Page (no count query)
+    // Slice Ã¢â‚¬â€ lighter than Page (no count query)
     Slice<Order> findByCustomerId(Long customerId, Pageable pageable);
 
-    // List â€” ignores pagination in method signature but can still use Limit
+    // List Ã¢â‚¬â€ ignores pagination in method signature but can still use Limit
     List<Order> findByCustomerId(Long customerId);
 
     // Custom query with pagination
@@ -1091,21 +1120,21 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
 
-    // Page â€” full pagination with total count (expensive for large datasets)
+    // Page Ã¢â‚¬â€ full pagination with total count (expensive for large datasets)
     public Page<Order> getOrdersPage(Pageable pageable) {
         return orderRepository.findAll(pageable);
         // Executes: SELECT ... LIMIT ? OFFSET ?
         // Executes: SELECT COUNT(*) ...
     }
 
-    // Slice â€” knows if there are more results, no count query (faster)
+    // Slice Ã¢â‚¬â€ knows if there are more results, no count query (faster)
     public Slice<Order> getOrdersSlice(Pageable pageable) {
         return orderRepository.findByCustomerId(42L, pageable);
         // Executes: SELECT ... LIMIT ? + 1 OFFSET ?
         // The +1 determines hasNext without a count query
     }
 
-    // List â€” no pagination (use with caution for large datasets)
+    // List Ã¢â‚¬â€ no pagination (use with caution for large datasets)
     public List<Order> getAllOrders() {
         return orderRepository.findAll();
     }
@@ -1142,7 +1171,7 @@ public class OrderService {
 ### 8.5 Keyset Pagination
 
 ```java
-// Keyset pagination â€” efficient for large datasets
+// Keyset pagination Ã¢â‚¬â€ efficient for large datasets
 // Instead of OFFSET, use WHERE createdAt < :lastCreatedAt
 
 public interface OrderRepository extends JpaRepository<Order, Long> {
@@ -1153,7 +1182,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
                              Pageable pageable);
 }
 
-// Spring Data 3+ â€” ScrollSubquery for keyset pagination
+// Spring Data 3+ Ã¢â‚¬â€ ScrollSubquery for keyset pagination
 @Query("SELECT o FROM Order o ORDER BY o.createdAt DESC, o.id DESC")
 Window<Order> findFirstWindow(Pageable pageable);
 
@@ -1187,8 +1216,8 @@ Projections allow you to fetch only the data you need, reducing network transfer
 ### 9.1 Interface-Based Closed Projection
 
 ```java
-// Closed projection â€” only getter methods matching entity properties
-// Spring Data generates a proxy at runtime â€” no data is fetched for unneeded columns
+// Closed projection Ã¢â‚¬â€ only getter methods matching entity properties
+// Spring Data generates a proxy at runtime Ã¢â‚¬â€ no data is fetched for unneeded columns
 public interface CustomerSummary {
 
     Long getId();
@@ -1206,7 +1235,7 @@ public interface OrderView {
 
     CustomerSummary getCustomer();     // Nested projection for the customer
 
-    // Computed property (not in entity â€” SpEL evaluated)
+    // Computed property (not in entity Ã¢â‚¬â€ SpEL evaluated)
     @Value("#{target.total > 1000 ? 'HIGH' : 'NORMAL'}")
     String getPriority();
 }
@@ -1225,7 +1254,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
 ### 9.2 Interface-Based Open Projection
 
 ```java
-// Open projection â€” uses SpEL to compute values
+// Open projection Ã¢â‚¬â€ uses SpEL to compute values
 // Spring Data loads ALL columns because it cannot determine which ones are needed
 public interface CustomerWithFullName {
 
@@ -1246,7 +1275,7 @@ public interface CustomerWithFullName {
 ### 9.3 Class-Based DTO Projection (DTO)
 
 ```java
-// DTO with constructor â€” most efficient projection
+// DTO with constructor Ã¢â‚¬â€ most efficient projection
 // JPQL constructor expression must match DTO constructor exactly
 public record CustomerDto(
     Long id,
@@ -1291,7 +1320,7 @@ public interface OrderRepository extends JpaRepository<Order, Long> {
         """)
     List<OrderListItem> findOrderListItems(@Param("since") LocalDateTime since);
 
-    // Interface projection â€” returns proxy (no constructor needed)
+    // Interface projection Ã¢â‚¬â€ returns proxy (no constructor needed)
     List<CustomerSummary> findCustomerSummaryByTier(CustomerTier tier);
 }
 ```
@@ -1340,23 +1369,23 @@ public class CustomerService {
 // Full entity (Customer.class):
 //   SELECT id, first_name, last_name, email, tier, age, created_at, updated_at, version
 //   FROM customers
-//   â€” All columns loaded
-//   â€” Managed entity in persistence context
-//   â€” Supports lazy loading
+//   Ã¢â‚¬â€ All columns loaded
+//   Ã¢â‚¬â€ Managed entity in persistence context
+//   Ã¢â‚¬â€ Supports lazy loading
 //
 // Interface projection (CustomerSummary):
 //   SELECT id, first_name, last_name, email
 //   FROM customers
-//   â€” Only requested columns loaded
-//   â€” Not managed (read-only)
-//   â€” No lazy loading
+//   Ã¢â‚¬â€ Only requested columns loaded
+//   Ã¢â‚¬â€ Not managed (read-only)
+//   Ã¢â‚¬â€ No lazy loading
 //
 // DTO projection (new CustomerDto(...)):
 //   SELECT id, first_name, last_name, email, tier
 //   FROM customers
-//   â€” Same as interface projection
-//   â€” No proxy creation overhead
-//   â€” Not managed
+//   Ã¢â‚¬â€ Same as interface projection
+//   Ã¢â‚¬â€ No proxy creation overhead
+//   Ã¢â‚¬â€ Not managed
 //
 // When to use each:
 // - Full entity: when you need to update data
@@ -1364,9 +1393,74 @@ public class CustomerService {
 // - DTO projection: service-layer DTOs, complex constructor logic
 ```
 
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Derived Query | Method name to query auto-generation | findBy*, countBy*, deleteBy* | Simple lookups by fields |
+| @Query | Custom JPQL or native SQL | Full query control | Complex or optimized queries |
+| Specifications | Dynamic, combinable query predicates | and/or/not composition | Filter-based search |
+| QueryDSL | Type-safe query construction | Q-types generation | Complex dynamic queries |
+| Projections | Interface-based data transfer | Optimize data retrieval | Read-only data views |
+
+## Quick Reference
+
+| Query Method Prefix | JPQL Translation | Use Case |
+|--------------------|-----------------|----------|
+| findBy... | WHERE clause | Field-based lookups |
+| countBy... | COUNT query | Aggregation |
+| deleteBy... | DELETE query | Bulk deletion |
+| existsBy... | EXISTS query | Existence check |
+| findBy...OrderBy... | ORDER BY | Sorted results |
+
+## Cross-Application Matrix
+
+| Query Type | Simple Lookups | Complex Filters | Aggregations | Pagination |
+|------------|---------------|-----------------|--------------|------------|
+| Derived | Excellent | Poor | Poor | Good |
+| @Query | Good | Good | Excellent | Good |
+| Specifications | Overkill | Excellent | Poor | Good |
+| QueryDSL | Overkill | Excellent | Good | Good |
+
+## Chapter Quiz
+
+1. Which method name deletes user records by email?
+   - A) removeByEmail
+   - B) deleteByEmail
+   - C) eraseByEmail
+   - D) dropByEmail
+
+<details>
+<summary>Answer</summary>
+**B) deleteByEmail.** Spring Data JPA derives delete operations from the deleteBy prefix in method names.
+</details>
+
+2. What is the primary advantage of Specifications?
+   - A) Better performance
+   - B) Dynamic, composable query predicates
+   - C) Automatic caching
+   - D) No SQL knowledge needed
+
+<details>
+<summary>Answer</summary>
+**B) Dynamic, composable query predicates.** Specifications allow building dynamic WHERE clauses programmatically.
+</details>
+
+3. How do you implement pagination in Spring Data JPA?
+   - A) @Pageable annotation
+   - B) Pageable parameter in repository method
+   - C) Manual LIMIT/OFFSET
+   - D) @Query(native=true)
+
+<details>
+<summary>Answer</summary>
+**B) Pageable parameter in repository method.** Spring Data automatically applies pagination when the method accepts a Pageable parameter.
+</details>
+
 ---
 
 ## Summary
+ummary
 
 - **Repository hierarchy** progresses from `Repository` (minimal) through `CrudRepository` and `PagingAndSortingRepository` to `JpaRepository` (full feature set). Modern `ListCrudRepository` and `ListPagingAndSortingRepository` return List instead of Iterable.
 - **Derived query methods** parse method names into JPQL. Support `findBy`, `existsBy`, `countBy`, `deleteBy`, and `streamBy` prefixes with rich expressions (And, Or, Between, Like, In, OrderBy, IgnoreCase).

@@ -14,9 +14,109 @@
 - Understand migration concepts: schema versioning, up/down methods, and seeding
 - Apply performance best practices: connection pooling, read replicas, query caching
 
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | MySQL & database design: relational model, SQL queries, normalization, indexing, Laravel integration |
+| **Key Concepts** | Relational model, SQL DDL/DML, JOINs, normalization, indexing, transactions, Laravel migrations |
+| **Learning Approach** | Theory, SQL examples, Laravel migration patterns |
+| **Skills Required** | Basic programming, SQL fundamentals |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | MySQL & database design: relational model, SQL queries, normalization, indexing, Laravel integration |
+| **Key Concepts** | Relational model, SQL DDL/DML, JOINs, normalization, indexing, transactions, Laravel migrations |
+| **Learning Approach** | Theory, SQL examples, Laravel migration patterns |
+| **Skills Required** | Basic programming, SQL fundamentals |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | MySQL & database design: relational model, SQL queries, normalization, indexing, Laravel integration |
+| **Key Concepts** | Relational model, SQL DDL/DML, JOINs, normalization, indexing, transactions, Laravel migrations |
+| **Learning Approach** | Theory, SQL examples, Laravel migration patterns |
+| **Skills Required** | Basic programming, SQL fundamentals |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | MySQL & database design: relational model, SQL queries, normalization, indexing, Laravel integration |
+| **Key Concepts** | Relational model, SQL DDL/DML, JOINs, normalization, indexing, transactions, Laravel migrations |
+| **Learning Approach** | Theory, SQL examples, Laravel migration patterns |
+| **Skills Required** | Basic programming, SQL fundamentals |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![MySQL Database](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/mysql-database.png)
 
@@ -2261,6 +2361,310 @@ OPTIMIZE TABLE employees;
 ```
 
 ---
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key MySQL concepts for database design.
+
+| Concept | Purpose | Key Feature |
+|---------|---------|-------------|
+| Relational Model | Organize data into related tables | Tables, rows, columns, keys, relationships |
+| SQL DDL | Define database structure | CREATE, ALTER, DROP, TRUNCATE |
+| SQL DML | Manipulate data | SELECT, INSERT, UPDATE, DELETE |
+| JOINs | Combine data from multiple tables | INNER, LEFT, RIGHT, CROSS |
+| Normalization | Reduce data redundancy | 1NF, 2NF, 3NF, BCNF |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for MySQL and database design.
+
+| Topic | Key Point |
+|-------|-----------|
+| Keys | Primary key, foreign key, unique key, composite key |
+| Constraints | NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK |
+| JOIN Types | INNER, LEFT, RIGHT, CROSS, SELF |
+| Index Types | B-Tree, Hash, Full-text, Spatial |
+| Normal Forms | 1NF (atomic), 2NF (partial dep), 3NF (transitive dep) |
+| Laravel Migrations | Schema builder, up/down, foreign keys, indexes |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Normalization | Data integrity | Storage vs query complexity |
+| Denormalization | Read performance | Speed vs consistency |
+| Indexing | Query speed | Read vs write performance |
+| Laravel Migrations | Schema versioning | Control vs overhead |
+| Laravel Eloquent | ORM abstraction | Productivity vs raw SQL control |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your MySQL and database design knowledge.
+
+**Q1:** What is the primary key?
+- A) A key for sorting
+- B) A column that uniquely identifies each row
+- C) An index on a table
+- D) A foreign reference
+
+<details><summary>Answer</summary>B) A column that uniquely identifies each row</details>
+
+**Q2:** What does 2NF require beyond 1NF?
+- A) All columns are atomic
+- B) No partial dependency on composite keys
+- C) No transitive dependencies
+- D) All tables have a primary key
+
+<details><summary>Answer</summary>B) No partial dependency on composite keys</details>
+
+**Q3:** What is an index used for?
+- A) Store additional data
+- B) Speed up data retrieval
+- C) Enforce foreign keys
+- D) Create backups
+
+<details><summary>Answer</summary>B) Speed up data retrieval</details>
+
+**Q4:** What is the main trade-off with indexes?
+- A) Faster reads, slower writes
+- B) Faster writes, slower reads
+- C) More storage, faster everything
+- D) Less storage, slower everything
+
+<details><summary>Answer</summary>A) Faster reads, slower writes</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key MySQL concepts for database design.
+
+| Concept | Purpose | Key Feature |
+|---------|---------|-------------|
+| Relational Model | Organize data into related tables | Tables, rows, columns, keys, relationships |
+| SQL DDL | Define database structure | CREATE, ALTER, DROP, TRUNCATE |
+| SQL DML | Manipulate data | SELECT, INSERT, UPDATE, DELETE |
+| JOINs | Combine data from multiple tables | INNER, LEFT, RIGHT, CROSS |
+| Normalization | Reduce data redundancy | 1NF, 2NF, 3NF, BCNF |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for MySQL and database design.
+
+| Topic | Key Point |
+|-------|-----------|
+| Keys | Primary key, foreign key, unique key, composite key |
+| Constraints | NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK |
+| JOIN Types | INNER, LEFT, RIGHT, CROSS, SELF |
+| Index Types | B-Tree, Hash, Full-text, Spatial |
+| Normal Forms | 1NF (atomic), 2NF (partial dep), 3NF (transitive dep) |
+| Laravel Migrations | Schema builder, up/down, foreign keys, indexes |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Normalization | Data integrity | Storage vs query complexity |
+| Denormalization | Read performance | Speed vs consistency |
+| Indexing | Query speed | Read vs write performance |
+| Laravel Migrations | Schema versioning | Control vs overhead |
+| Laravel Eloquent | ORM abstraction | Productivity vs raw SQL control |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your MySQL and database design knowledge.
+
+**Q1:** What is the primary key?
+- A) A key for sorting
+- B) A column that uniquely identifies each row
+- C) An index on a table
+- D) A foreign reference
+
+<details><summary>Answer</summary>B) A column that uniquely identifies each row</details>
+
+**Q2:** What does 2NF require beyond 1NF?
+- A) All columns are atomic
+- B) No partial dependency on composite keys
+- C) No transitive dependencies
+- D) All tables have a primary key
+
+<details><summary>Answer</summary>B) No partial dependency on composite keys</details>
+
+**Q3:** What is an index used for?
+- A) Store additional data
+- B) Speed up data retrieval
+- C) Enforce foreign keys
+- D) Create backups
+
+<details><summary>Answer</summary>B) Speed up data retrieval</details>
+
+**Q4:** What is the main trade-off with indexes?
+- A) Faster reads, slower writes
+- B) Faster writes, slower reads
+- C) More storage, faster everything
+- D) Less storage, slower everything
+
+<details><summary>Answer</summary>A) Faster reads, slower writes</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key MySQL concepts for database design.
+
+| Concept | Purpose | Key Feature |
+|---------|---------|-------------|
+| Relational Model | Organize data into related tables | Tables, rows, columns, keys, relationships |
+| SQL DDL | Define database structure | CREATE, ALTER, DROP, TRUNCATE |
+| SQL DML | Manipulate data | SELECT, INSERT, UPDATE, DELETE |
+| JOINs | Combine data from multiple tables | INNER, LEFT, RIGHT, CROSS |
+| Normalization | Reduce data redundancy | 1NF, 2NF, 3NF, BCNF |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for MySQL and database design.
+
+| Topic | Key Point |
+|-------|-----------|
+| Keys | Primary key, foreign key, unique key, composite key |
+| Constraints | NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK |
+| JOIN Types | INNER, LEFT, RIGHT, CROSS, SELF |
+| Index Types | B-Tree, Hash, Full-text, Spatial |
+| Normal Forms | 1NF (atomic), 2NF (partial dep), 3NF (transitive dep) |
+| Laravel Migrations | Schema builder, up/down, foreign keys, indexes |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Normalization | Data integrity | Storage vs query complexity |
+| Denormalization | Read performance | Speed vs consistency |
+| Indexing | Query speed | Read vs write performance |
+| Laravel Migrations | Schema versioning | Control vs overhead |
+| Laravel Eloquent | ORM abstraction | Productivity vs raw SQL control |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your MySQL and database design knowledge.
+
+**Q1:** What is the primary key?
+- A) A key for sorting
+- B) A column that uniquely identifies each row
+- C) An index on a table
+- D) A foreign reference
+
+<details><summary>Answer</summary>B) A column that uniquely identifies each row</details>
+
+**Q2:** What does 2NF require beyond 1NF?
+- A) All columns are atomic
+- B) No partial dependency on composite keys
+- C) No transitive dependencies
+- D) All tables have a primary key
+
+<details><summary>Answer</summary>B) No partial dependency on composite keys</details>
+
+**Q3:** What is an index used for?
+- A) Store additional data
+- B) Speed up data retrieval
+- C) Enforce foreign keys
+- D) Create backups
+
+<details><summary>Answer</summary>B) Speed up data retrieval</details>
+
+**Q4:** What is the main trade-off with indexes?
+- A) Faster reads, slower writes
+- B) Faster writes, slower reads
+- C) More storage, faster everything
+- D) Less storage, slower everything
+
+<details><summary>Answer</summary>A) Faster reads, slower writes</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key MySQL concepts for database design.
+
+| Concept | Purpose | Key Feature |
+|---------|---------|-------------|
+| Relational Model | Organize data into related tables | Tables, rows, columns, keys, relationships |
+| SQL DDL | Define database structure | CREATE, ALTER, DROP, TRUNCATE |
+| SQL DML | Manipulate data | SELECT, INSERT, UPDATE, DELETE |
+| JOINs | Combine data from multiple tables | INNER, LEFT, RIGHT, CROSS |
+| Normalization | Reduce data redundancy | 1NF, 2NF, 3NF, BCNF |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for MySQL and database design.
+
+| Topic | Key Point |
+|-------|-----------|
+| Keys | Primary key, foreign key, unique key, composite key |
+| Constraints | NOT NULL, UNIQUE, PRIMARY KEY, FOREIGN KEY, CHECK |
+| JOIN Types | INNER, LEFT, RIGHT, CROSS, SELF |
+| Index Types | B-Tree, Hash, Full-text, Spatial |
+| Normal Forms | 1NF (atomic), 2NF (partial dep), 3NF (transitive dep) |
+| Laravel Migrations | Schema builder, up/down, foreign keys, indexes |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Normalization | Data integrity | Storage vs query complexity |
+| Denormalization | Read performance | Speed vs consistency |
+| Indexing | Query speed | Read vs write performance |
+| Laravel Migrations | Schema versioning | Control vs overhead |
+| Laravel Eloquent | ORM abstraction | Productivity vs raw SQL control |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your MySQL and database design knowledge.
+
+**Q1:** What is the primary key?
+- A) A key for sorting
+- B) A column that uniquely identifies each row
+- C) An index on a table
+- D) A foreign reference
+
+<details><summary>Answer</summary>B) A column that uniquely identifies each row</details>
+
+**Q2:** What does 2NF require beyond 1NF?
+- A) All columns are atomic
+- B) No partial dependency on composite keys
+- C) No transitive dependencies
+- D) All tables have a primary key
+
+<details><summary>Answer</summary>B) No partial dependency on composite keys</details>
+
+**Q3:** What is an index used for?
+- A) Store additional data
+- B) Speed up data retrieval
+- C) Enforce foreign keys
+- D) Create backups
+
+<details><summary>Answer</summary>B) Speed up data retrieval</details>
+
+**Q4:** What is the main trade-off with indexes?
+- A) Faster reads, slower writes
+- B) Faster writes, slower reads
+- C) More storage, faster everything
+- D) Less storage, slower everything
+
+<details><summary>Answer</summary>A) Faster reads, slower writes</details>
 
 ## Summary
 

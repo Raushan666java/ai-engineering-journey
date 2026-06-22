@@ -1411,3 +1411,4 @@ Design a complete polymorphic many-to-many tagging system where `Post` and `Vide
 - A `TagObserver` that prevents deletion of tags attached to more than 10 models
 - An accessor on `Tag` that returns `$tag->usage_count` from a cached query
 - Demonstrate the query chain: `Post::withoutGlobalScope('exclude_archived')->withAllTags(['laravel', 'eloquent'])->get()`
+

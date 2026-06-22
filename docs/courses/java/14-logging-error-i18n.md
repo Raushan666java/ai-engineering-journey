@@ -1,5 +1,7 @@
 # Logging, Error Handling & Internationalization
 
+> **Previous:** [Actuator, DevTools & Monitoring](./13-actuator-devtools.md) | **Next:** [REST API Development](./15-rest-api.md)
+
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -14,6 +16,31 @@ After completing this chapter, you will be able to:
 - Configure `LocaleResolver` strategies for multi-language applications
 - Integrate i18n with Thymeleaf templates
 - Internationalize validation error messages
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Logback | SLF4J facade + Logback implementation | MDC for contextual logging, rolling policies for log rotation |
+| Structured Logging | JSON format for log aggregation | Use logstash-logback-encoder for ELK integration |
+| Error Handling | @ControllerAdvice + @ExceptionHandler | Centralized, consistent error responses |
+| RFC 7807 | Problem Details for HTTP API errors | Standard error format adopted by Spring Boot 3.x |
+| i18n | MessageSource + LocaleResolver | Externalize messages in properties files per locale |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Logging Configuration] --> B[Logback & Log4j2]
+    B --> C[MDC & Structured Logging]
+    C --> D[Error Handling]
+    D --> E[RFC 7807 Problem Details]
+    E --> F[Internationalization]
+    F --> G[Locale Resolution]
+    G --> H[i18n + Validation]
+```
+
+> **Pro Tip:** Use parametrized logging (`log.info("user {} logged in", userId)`) instead of string concatenation — SLF4J evaluates the template only if the log level is enabled, saving CPU cycles.
 
 ---
 
@@ -2412,6 +2439,70 @@ Putting it all together:
 14. **Configure a `LocaleResolver`** appropriate for your deployment (AcceptHeader for APIs, Cookie for web apps).
 15. **Handle uncaught exceptions** with a catch-all `@ExceptionHandler(Exception.class)`.
 16. **Log exceptions at the right level**: `log.error` for application errors, `log.warn` for recoverable issues.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Logback | Default SLF4J implementation | Flexible configuration, rolling file appenders | General purpose logging |
+| Log4j2 | Alternative logging implementation | Async loggers, garbage-free mode | High-throughput systems |
+| SLF4J | Logging facade | Decouples API from implementation | Library development |
+| MDC | Mapped Diagnostic Context | Thread-local key-value pairs | Request tracing |
+| Structured Logging | JSON-formatted log output | Machine-parseable, log aggregation friendly | ELK/EFK stack integration |
+
+## Quick Reference
+
+| Log Level | Use Case | Spring Boot Default |
+|-----------|----------|-------------------|
+| ERROR | Critical failures requiring immediate attention | Shown |
+| WARN | Recoverable issues or unusual conditions | Shown |
+| INFO | Normal application lifecycle events | Shown |
+| DEBUG | Detailed diagnostic information | Hidden |
+| TRACE | Very detailed execution trace | Hidden |
+
+## Cross-Application Matrix
+
+| Feature | Development | Staging | Production |
+|---------|-------------|---------|------------|
+| Log Level | DEBUG | INFO | WARN for app, INFO for framework |
+| Format | Plain text | JSON | JSON |
+| Appenders | Console | Console + File rolling | Console + File rolling + external |
+| MDC Population | Request ID + user | Request ID + user + session | Request ID + user + session + tenant |
+
+## Chapter Quiz
+
+1. What is the recommended way to add contextual information to log entries in Spring Boot?
+   - A) Thread name
+   - B) Mapped Diagnostic Context (MDC)
+   - C) System.out.println
+   - D) Static fields
+
+<details>
+<summary>Answer</summary>
+**B) Mapped Diagnostic Context (MDC).** MDC allows adding request-specific information that gets included in all subsequent log entries from the same thread.
+</details>
+
+2. Which Spring annotation captures exception handling globally?
+   - A) @ExceptionHandler
+   - B) @ControllerAdvice
+   - C) @RestController
+   - D) @ResponseStatus
+
+<details>
+<summary>Answer</summary>
+**B) @ControllerAdvice.** @ControllerAdvice combined with @ExceptionHandler methods provides global, cross-controller exception handling.
+</details>
+
+3. How do you resolve locale-specific messages in Spring Boot?
+   - A) Resource bundle properties files
+   - B) JavaScript i18n library
+   - C) Database translations
+   - D) OS locale settings
+
+<details>
+<summary>Answer</summary>
+**A) Resource bundle properties files.** Spring Boot uses MessageSource backed by messages.properties files per locale, resolved via Accept-Language header.
+</details>
 
 ---
 

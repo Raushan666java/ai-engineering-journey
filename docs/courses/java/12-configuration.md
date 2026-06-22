@@ -1,5 +1,7 @@
 # Application Properties & Configuration
 
+> **Previous:** [Auto-Configuration & Starters](./11-auto-configuration.md) | **Next:** [Actuator, DevTools & Monitoring](./13-actuator-devtools.md)
+
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -17,6 +19,31 @@ After completing this chapter, you will be able to:
 - Convert Duration and DataSize properties automatically
 - Import additional configuration with `spring.config.import`
 - Understand config location ordering and override precedence
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Property Sources | Properties vs YAML, loading order | YAML supports hierarchical structure and multi-doc profiles |
+| @ConfigurationProperties | Type-safe property binding | Use @ConstructorBinding for immutable config beans |
+| @Value | SpEL-powered single property injection | Use for simple values; prefer @ConfigurationProperties for groups |
+| Externalization | CLI args, env vars, JNDI, config trees | CLI args override env vars, which override files |
+| Profiles | Environment-specific property files | application-{profile}.properties loaded after base |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Property Files] --> B[@ConfigurationProperties]
+    B --> C[@Value & SpEL]
+    C --> D[Externalized Config]
+    D --> E[Profiles]
+    E --> F[Relaxed Binding]
+    F --> G[Validation & Conversion]
+    G --> H[Config Import]
+```
+
+> **Pro Tip:** Always externalize environment-specific configuration. Database URLs, credentials, and API keys should never be hardcoded — use environment variables or a secrets manager.
 
 ---
 
@@ -1767,6 +1794,72 @@ spring:
 8. **Use relaxed binding** to maintain clean env var names.
 9. **Generate metadata** with the configuration processor for IDE support.
 10. **Document properties** with meaningful Javadoc for generated metadata.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| application.properties | Flat key=value format | Simple, familiar to Java devs | Simple apps, basic configuration |
+| application.yml | Hierarchical YAML format | Supports structured data, multi-doc profiles | Complex config with nesting |
+| @ConfigurationProperties | Type-safe binding | IDE support, metadata generation | Configuration POJOs |
+| @Value | Direct property injection | SpEL support for expressions | Simple single-value injection |
+| Environment Abstraction | Unified property source access | Profile-aware, ordered resolution | Runtime environment information |
+
+## Quick Reference
+
+| Property Source | Order | Override Mechanism |
+|----------------|-------|-------------------|
+| Command line args | Highest | --server.port=9090 |
+| JNDI attributes | 2nd | Environment properties |
+| System properties | 3rd | -Dserver.port=9090 |
+| OS environment variables | 4th | SERVER_PORT=9090 |
+| application-{profile}.properties | 5th | Profile-specific overrides |
+| application.properties | 6th | Base application config |
+| @PropertySource | 7th | Class-level source annotation |
+
+## Cross-Application Matrix
+
+| Configuration Type | Development | QA/Staging | Production |
+|-------------------|-------------|------------|------------|
+| Database | H2 in-memory | Test database | RDS connection pool |
+| Logging | DEBUG | INFO | WARN |
+| Server Port | 8080 | 8080 | 80/443 |
+| Endpoints | All exposed | Restricted | Minimal |
+
+## Chapter Quiz
+
+1. Which property binding form has the highest precedence?
+   - A) application.properties
+   - B) OS environment variables
+   - C) Command line arguments
+   - D) application-{profile}.properties
+
+<details>
+<summary>Answer</summary>
+**C) Command line arguments.** CLI args override all other property sources except those with explicitly higher priority.
+</details>
+
+2. What annotation enables type-safe configuration properties?
+   - A) @Value
+   - B) @PropertySource
+   - C) @ConfigurationProperties
+   - D) @EnableAutoConfiguration
+
+<details>
+<summary>Answer</summary>
+**C) @ConfigurationProperties.** This annotation binds external properties to a POJO with full IDE support.
+</details>
+
+3. How does Spring Boot handle relaxed binding for property names?
+   - A) Exact case-sensitive match
+   - B) Case-insensitive, hyphens/camelCase/underscores match
+   - C) Only exact camelCase matches
+   - D) Regular expression matching
+
+<details>
+<summary>Answer</summary>
+**B) Case-insensitive, hyphens/camelCase/underscores match.** Relaxed binding allows `my-property`, `myProperty`, `my_property` to bind to the same field.
+</details>
 
 ---
 

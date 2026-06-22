@@ -14,9 +14,109 @@
 - Engineer feature pipelines with Laravel queues for cleaning, transforming, and selecting features at scale
 - Apply MLOps practices including experiment tracking, model registry, drift detection, and deployment strategies
 
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | AI/ML fundamentals for Laravel: ML paradigms, PHP-ML, Rubix ML, Laravel AI SDK, MLOps |
+| **Key Concepts** | Supervised/unsupervised/reinforcement learning, overfitting, feature engineering, NLP, neural networks, MLOps |
+| **Learning Approach** | Theory, code examples, Laravel integration patterns |
+| **Skills Required** | PHP, Laravel, basic statistics |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | AI/ML fundamentals for Laravel: ML paradigms, PHP-ML, Rubix ML, Laravel AI SDK, MLOps |
+| **Key Concepts** | Supervised/unsupervised/reinforcement learning, overfitting, feature engineering, NLP, neural networks, MLOps |
+| **Learning Approach** | Theory, code examples, Laravel integration patterns |
+| **Skills Required** | PHP, Laravel, basic statistics |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | AI/ML fundamentals for Laravel: ML paradigms, PHP-ML, Rubix ML, Laravel AI SDK, MLOps |
+| **Key Concepts** | Supervised/unsupervised/reinforcement learning, overfitting, feature engineering, NLP, neural networks, MLOps |
+| **Learning Approach** | Theory, code examples, Laravel integration patterns |
+| **Skills Required** | PHP, Laravel, basic statistics |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | AI/ML fundamentals for Laravel: ML paradigms, PHP-ML, Rubix ML, Laravel AI SDK, MLOps |
+| **Key Concepts** | Supervised/unsupervised/reinforcement learning, overfitting, feature engineering, NLP, neural networks, MLOps |
+| **Learning Approach** | Theory, code examples, Laravel integration patterns |
+| **Skills Required** | PHP, Laravel, basic statistics |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![AI and ML Fundamentals](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/ai-ml-fundamentals.png)
 
@@ -3159,6 +3259,322 @@ Custom Pulse card for the dashboard:
 ```
 
 ---
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key AI/ML concepts for Laravel integration.
+
+| Concept | Purpose | Key Feature |
+|---------|---------|-------------|
+| Supervised Learning | Predict from labeled data | Classification + regression |
+| Unsupervised Learning | Discover patterns in unlabeled data | Clustering + dimensionality reduction |
+| Reinforcement Learning | Learn through interaction | Reward-based optimization |
+| Overfitting | Model too complex | High variance, poor generalization |
+| Underfitting | Model too simple | High bias, poor performance |
+| Transfer Learning | Reuse pre-trained models | Faster training with less data |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for AI/ML fundamentals.
+
+| Topic | Key Point |
+|-------|-----------|
+| ML Types | Supervised, Unsupervised, Reinforcement, Semi-supervised |
+| Evaluation | Accuracy, Precision, Recall, F1, Confusion Matrix, RMSE |
+| PHP-ML | Classification, Regression, Clustering, Association learning |
+| Rubix ML | Pipelines, Neural Networks, Anomaly Detection |
+| Laravel AI SDK | Agents, Tools, Embeddings, RAG, MCP, Media |
+| MLOps Concepts | Experiment tracking, model registry, drift detection, deployment |
+| NLP Pipeline | Tokenization, TF-IDF, word embeddings, sentiment analysis |
+| Feature Engineering | One-hot encoding, scaling, PCA, feature selection |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| ML Paradigm Selection | Problem type | Labeled data vs unsupervised approach |
+| Model Selection | Accuracy needs | Complexity vs interpretability |
+| Feature Engineering | Data preparation | Domain expertise vs automated methods |
+| Model Deployment | Production | Performance vs resource usage |
+| MLOps | Model lifecycle | Automation vs infrastructure complexity |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your AI/ML fundamentals knowledge.
+
+**Q1:** Which ML type uses labeled training data?
+- A) Unsupervised learning
+- B) Supervised learning
+- C) Reinforcement learning
+- D) Semi-supervised learning
+
+<details><summary>Answer</summary>B) Supervised learning</details>
+
+**Q2:** What indicates model overfitting?
+- A) Poor performance on both train and test
+- B) High training accuracy but poor test accuracy
+- C) Equal train and test performance
+- D) Perfect test accuracy
+
+<details><summary>Answer</summary>B) High training accuracy but poor test accuracy</details>
+
+**Q3:** Which PHP library provides ML pipelines and neural network support?
+- A) PHP-ML
+- B) Rubix ML
+- C) Laravel AI SDK
+- D) TensorFlow PHP
+
+<details><summary>Answer</summary>B) Rubix ML</details>
+
+**Q4:** What does RAG stand for in the Laravel AI SDK?
+- A) Rapid Application Generation
+- B) Retrieval-Augmented Generation
+- C) Real-time Algorithm Grid
+- D) Random Access Generator
+
+<details><summary>Answer</summary>B) Retrieval-Augmented Generation</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key AI/ML concepts for Laravel integration.
+
+| Concept | Purpose | Key Feature |
+|---------|---------|-------------|
+| Supervised Learning | Predict from labeled data | Classification + regression |
+| Unsupervised Learning | Discover patterns in unlabeled data | Clustering + dimensionality reduction |
+| Reinforcement Learning | Learn through interaction | Reward-based optimization |
+| Overfitting | Model too complex | High variance, poor generalization |
+| Underfitting | Model too simple | High bias, poor performance |
+| Transfer Learning | Reuse pre-trained models | Faster training with less data |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for AI/ML fundamentals.
+
+| Topic | Key Point |
+|-------|-----------|
+| ML Types | Supervised, Unsupervised, Reinforcement, Semi-supervised |
+| Evaluation | Accuracy, Precision, Recall, F1, Confusion Matrix, RMSE |
+| PHP-ML | Classification, Regression, Clustering, Association learning |
+| Rubix ML | Pipelines, Neural Networks, Anomaly Detection |
+| Laravel AI SDK | Agents, Tools, Embeddings, RAG, MCP, Media |
+| MLOps Concepts | Experiment tracking, model registry, drift detection, deployment |
+| NLP Pipeline | Tokenization, TF-IDF, word embeddings, sentiment analysis |
+| Feature Engineering | One-hot encoding, scaling, PCA, feature selection |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| ML Paradigm Selection | Problem type | Labeled data vs unsupervised approach |
+| Model Selection | Accuracy needs | Complexity vs interpretability |
+| Feature Engineering | Data preparation | Domain expertise vs automated methods |
+| Model Deployment | Production | Performance vs resource usage |
+| MLOps | Model lifecycle | Automation vs infrastructure complexity |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your AI/ML fundamentals knowledge.
+
+**Q1:** Which ML type uses labeled training data?
+- A) Unsupervised learning
+- B) Supervised learning
+- C) Reinforcement learning
+- D) Semi-supervised learning
+
+<details><summary>Answer</summary>B) Supervised learning</details>
+
+**Q2:** What indicates model overfitting?
+- A) Poor performance on both train and test
+- B) High training accuracy but poor test accuracy
+- C) Equal train and test performance
+- D) Perfect test accuracy
+
+<details><summary>Answer</summary>B) High training accuracy but poor test accuracy</details>
+
+**Q3:** Which PHP library provides ML pipelines and neural network support?
+- A) PHP-ML
+- B) Rubix ML
+- C) Laravel AI SDK
+- D) TensorFlow PHP
+
+<details><summary>Answer</summary>B) Rubix ML</details>
+
+**Q4:** What does RAG stand for in the Laravel AI SDK?
+- A) Rapid Application Generation
+- B) Retrieval-Augmented Generation
+- C) Real-time Algorithm Grid
+- D) Random Access Generator
+
+<details><summary>Answer</summary>B) Retrieval-Augmented Generation</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key AI/ML concepts for Laravel integration.
+
+| Concept | Purpose | Key Feature |
+|---------|---------|-------------|
+| Supervised Learning | Predict from labeled data | Classification + regression |
+| Unsupervised Learning | Discover patterns in unlabeled data | Clustering + dimensionality reduction |
+| Reinforcement Learning | Learn through interaction | Reward-based optimization |
+| Overfitting | Model too complex | High variance, poor generalization |
+| Underfitting | Model too simple | High bias, poor performance |
+| Transfer Learning | Reuse pre-trained models | Faster training with less data |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for AI/ML fundamentals.
+
+| Topic | Key Point |
+|-------|-----------|
+| ML Types | Supervised, Unsupervised, Reinforcement, Semi-supervised |
+| Evaluation | Accuracy, Precision, Recall, F1, Confusion Matrix, RMSE |
+| PHP-ML | Classification, Regression, Clustering, Association learning |
+| Rubix ML | Pipelines, Neural Networks, Anomaly Detection |
+| Laravel AI SDK | Agents, Tools, Embeddings, RAG, MCP, Media |
+| MLOps Concepts | Experiment tracking, model registry, drift detection, deployment |
+| NLP Pipeline | Tokenization, TF-IDF, word embeddings, sentiment analysis |
+| Feature Engineering | One-hot encoding, scaling, PCA, feature selection |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| ML Paradigm Selection | Problem type | Labeled data vs unsupervised approach |
+| Model Selection | Accuracy needs | Complexity vs interpretability |
+| Feature Engineering | Data preparation | Domain expertise vs automated methods |
+| Model Deployment | Production | Performance vs resource usage |
+| MLOps | Model lifecycle | Automation vs infrastructure complexity |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your AI/ML fundamentals knowledge.
+
+**Q1:** Which ML type uses labeled training data?
+- A) Unsupervised learning
+- B) Supervised learning
+- C) Reinforcement learning
+- D) Semi-supervised learning
+
+<details><summary>Answer</summary>B) Supervised learning</details>
+
+**Q2:** What indicates model overfitting?
+- A) Poor performance on both train and test
+- B) High training accuracy but poor test accuracy
+- C) Equal train and test performance
+- D) Perfect test accuracy
+
+<details><summary>Answer</summary>B) High training accuracy but poor test accuracy</details>
+
+**Q3:** Which PHP library provides ML pipelines and neural network support?
+- A) PHP-ML
+- B) Rubix ML
+- C) Laravel AI SDK
+- D) TensorFlow PHP
+
+<details><summary>Answer</summary>B) Rubix ML</details>
+
+**Q4:** What does RAG stand for in the Laravel AI SDK?
+- A) Rapid Application Generation
+- B) Retrieval-Augmented Generation
+- C) Real-time Algorithm Grid
+- D) Random Access Generator
+
+<details><summary>Answer</summary>B) Retrieval-Augmented Generation</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key AI/ML concepts for Laravel integration.
+
+| Concept | Purpose | Key Feature |
+|---------|---------|-------------|
+| Supervised Learning | Predict from labeled data | Classification + regression |
+| Unsupervised Learning | Discover patterns in unlabeled data | Clustering + dimensionality reduction |
+| Reinforcement Learning | Learn through interaction | Reward-based optimization |
+| Overfitting | Model too complex | High variance, poor generalization |
+| Underfitting | Model too simple | High bias, poor performance |
+| Transfer Learning | Reuse pre-trained models | Faster training with less data |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for AI/ML fundamentals.
+
+| Topic | Key Point |
+|-------|-----------|
+| ML Types | Supervised, Unsupervised, Reinforcement, Semi-supervised |
+| Evaluation | Accuracy, Precision, Recall, F1, Confusion Matrix, RMSE |
+| PHP-ML | Classification, Regression, Clustering, Association learning |
+| Rubix ML | Pipelines, Neural Networks, Anomaly Detection |
+| Laravel AI SDK | Agents, Tools, Embeddings, RAG, MCP, Media |
+| MLOps Concepts | Experiment tracking, model registry, drift detection, deployment |
+| NLP Pipeline | Tokenization, TF-IDF, word embeddings, sentiment analysis |
+| Feature Engineering | One-hot encoding, scaling, PCA, feature selection |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| ML Paradigm Selection | Problem type | Labeled data vs unsupervised approach |
+| Model Selection | Accuracy needs | Complexity vs interpretability |
+| Feature Engineering | Data preparation | Domain expertise vs automated methods |
+| Model Deployment | Production | Performance vs resource usage |
+| MLOps | Model lifecycle | Automation vs infrastructure complexity |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your AI/ML fundamentals knowledge.
+
+**Q1:** Which ML type uses labeled training data?
+- A) Unsupervised learning
+- B) Supervised learning
+- C) Reinforcement learning
+- D) Semi-supervised learning
+
+<details><summary>Answer</summary>B) Supervised learning</details>
+
+**Q2:** What indicates model overfitting?
+- A) Poor performance on both train and test
+- B) High training accuracy but poor test accuracy
+- C) Equal train and test performance
+- D) Perfect test accuracy
+
+<details><summary>Answer</summary>B) High training accuracy but poor test accuracy</details>
+
+**Q3:** Which PHP library provides ML pipelines and neural network support?
+- A) PHP-ML
+- B) Rubix ML
+- C) Laravel AI SDK
+- D) TensorFlow PHP
+
+<details><summary>Answer</summary>B) Rubix ML</details>
+
+**Q4:** What does RAG stand for in the Laravel AI SDK?
+- A) Rapid Application Generation
+- B) Retrieval-Augmented Generation
+- C) Real-time Algorithm Grid
+- D) Random Access Generator
+
+<details><summary>Answer</summary>B) Retrieval-Augmented Generation</details>
 
 ## Summary
 

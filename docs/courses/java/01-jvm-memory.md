@@ -1,5 +1,7 @@
 # JVM Architecture & Memory Management
 
+> **Previous:** None (First Chapter) | **Next:** [Concurrency & Threading](./02-concurrency.md)
+
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
@@ -22,6 +24,31 @@ By the end of this chapter, you will be able to:
 
 - Basic Java syntax and object-oriented programming
 - Familiarity with the command line
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| JVM Architecture | Three subsystems: Class Loader, Runtime Data Areas, Execution Engine | Platform independence through bytecode abstraction |
+| Class Loading | Delegation hierarchy: Bootstrap, Platform, Application | Custom ClassLoaders enable framework isolation |
+| Memory Areas | Heap (shared), Stack (per-thread), Metaspace, Direct Memory | GC focuses on heap; stack frames hold method state |
+| Garbage Collection | Generational hypothesis: most objects die young | Choose GC based on pause time vs throughput needs |
+| JIT Compilation | Hot code paths compiled to native machine code | -XX flags control tiered compilation behavior |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[JVM Architecture] --> B[Class Loading]
+    B --> C[Runtime Data Areas]
+    C --> D[Bytecode & JIT]
+    D --> E[Memory Deep Dive]
+    E --> F[Garbage Collection]
+    F --> G[GC Tuning & Flags]
+    G --> H[Memory Leaks & Debugging]
+```
+
+> **Pro Tip:** Always start tuning with a clear goal — minimize pause time (G1/ZGC) or maximize throughput (Parallel). Guessing GC flags without metrics is cargo-cult optimization.
 
 ---
 
@@ -2379,6 +2406,93 @@ public class ProductionFlags {
     }
 }
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| JVM | Abstract computing machine executing bytecode | Platform-independent execution model | Write once, run anywhere |
+| Class Loader | Loads .class files into memory | Delegation hierarchy prevents duplicate loading | Framework isolation (Tomcat, OSGi) |
+| Heap | Shared runtime memory for objects | GC-managed, divided into generations | All object allocations |
+| Stack | Per-thread memory for method frames | LIFO structure, holds locals + operand stack | Method invocation and return |
+| Garbage Collector | Automatic memory reclamation | Different algorithms for different workloads | Throughput vs latency trade-off |
+
+## Quick Reference
+
+| Category | Key Concepts | Notes |
+|----------|-------------|-------|
+| **Memory Areas** | Heap, Stack, Metaspace, PC Register, Native Stack | Only heap is GC-managed |
+| **GC Algorithms** | Serial, Parallel, G1, ZGC, Shenandoah | Choose by pause-time SLA |
+| **Key Flags** | -Xms, -Xmx, -Xss, -XX:MetaspaceSize, -XX:+UseG1GC | Set -Xms = -Xmx to avoid resizing |
+| **Diagnostic Tools** | jstat, jmap, jhat, MAT, jvisualvm | Always take heap dump before restart |
+| **Class Loaders** | Bootstrap, Platform, Application, Custom | Custom loaders need careful native memory planning |
+
+## Cross-Application Matrix
+
+| Technique | Web Apps | Microservices | Big Data | Low-Latency Trading |
+|-----------|----------|---------------|----------|---------------------|
+| G1 GC | Primary choice for steady throughput | Default in containers | - | Too high latency |
+| ZGC | Sub-10ms pause target | Good for critical services | - | Ideal for real-time |
+| Custom ClassLoader | App server isolation | Plugin systems | UDF loading in Spark | - |
+| Heap Dump Analysis | Memory leak debugging | OOM crash investigation | Large heap analysis | - |
+| JIT Tuning | Startup vs peak perf trade-off | Container warmup | Long-running optimization | Profile-guided optimization |
+
+## Chapter Quiz
+
+1. What is the correct order of the class loader delegation model?
+   - A) Application → Platform → Bootstrap
+   - B) Bootstrap → Platform → Application
+   - C) Application → Bootstrap → Platform
+   - D) Platform → Application → Bootstrap
+
+<details>
+<summary>Answer</summary>
+**B) Bootstrap → Platform → Application.** The delegation model is parent-first: a class loader delegates to its parent before attempting to load a class itself.
+</details>
+
+2. Which garbage collector is designed for sub-millisecond pause times?
+   - A) Parallel GC
+   - B) G1 GC
+   - C) ZGC
+   - D) Serial GC
+
+<details>
+<summary>Answer</summary>
+**C) ZGC.** ZGC is a low-latency garbage collector designed for sub-millisecond pause times, regardless of heap size.
+</details>
+
+3. What happens when a method is called 10,000+ times in the JVM?
+   - A) It is reinterpreted each time
+   - B) It may be JIT-compiled to native code
+   - C) The JVM throws an exception
+   - D) It gets garbage collected
+
+<details>
+<summary>Answer</summary>
+**B) It may be JIT-compiled to native code.** The JIT compiler monitors hot methods and compiles them to native machine code for better performance.
+</details>
+
+4. What is the primary difference between stack and heap memory?
+   - A) Stack is slower than heap
+   - B) Stack stores method frames per-thread; heap stores objects shared across threads
+   - C) Heap is per-thread; stack is shared
+   - D) There is no difference
+
+<details>
+<summary>Answer</summary>
+**B) Stack stores method frames per-thread; heap stores objects shared across threads.** Each thread has its own stack, while the heap is shared among all threads.
+</details>
+
+5. Which JVM flag controls the initial heap size?
+   - A) -Xms
+   - B) -Xmx
+   - C) -Xss
+   - D) -XX:MaxMetaspaceSize
+
+<details>
+<summary>Answer</summary>
+**A) -Xms.** The -Xms flag sets the initial heap size, while -Xmx sets the maximum heap size.
+</details>
 
 ---
 

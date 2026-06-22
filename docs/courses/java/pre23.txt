@@ -1,0 +1,66 @@
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| MongoDB | Document store | JSON-like documents, flexible schema | Content management, catalogs |
+| Redis | In-memory data structure | Sub-millisecond latency, pub/sub | Caching, sessions, real-time |
+| Elasticsearch | Search engine | Full-text search, aggregations | Search, analytics, logging |
+| Spring Data | Unified repository model | Consistent API across stores | Polyglot persistence |
+
+## Quick Reference
+
+| Operation | MongoDB | Redis | Elasticsearch |
+|-----------|---------|-------|---------------|
+| Save | mongoTemplate.save() | redisTemplate.opsForValue().set() | elasticsearchTemplate.save() |
+| Find by ID | repository.findById() | redisTemplate.opsForValue().get() | repository.findById() |
+| Search | @Query with JSON | Redis Search | Query DSL |
+| Delete | repository.delete() | redisTemplate.delete() | repository.delete() |
+
+## Cross-Application Matrix
+
+| Pattern | MongoDB | Redis | Elasticsearch |
+|---------|---------|-------|---------------|
+| Primary Storage | Yes | No | No |
+| Cache Layer | No | Yes | No |
+| Full-Text Search | Limited | No | Yes |
+| Session Store | No | Yes | No |
+| Pub/Sub | No | Yes | No |
+
+## Chapter Quiz
+
+1. Which annotation maps a Java class to a MongoDB collection?
+   - A) @Entity
+   - B) @Document
+   - C) @Collection
+   - D) @Table
+
+<details>
+<summary>Answer</summary>
+**B) @Document.** Spring Data MongoDB uses @Document to map classes to MongoDB collections.
+</details>
+
+2. What is Redis best suited for in a typical Spring Boot application?
+   - A) Primary data storage
+   - B) Caching, session management, pub/sub
+   - C) Full-text search
+   - D) Relational data with joins
+
+<details>
+<summary>Answer</summary>
+**B) Caching, session management, pub/sub.** Redis excels at in-memory operations with sub-millisecond latency.
+</details>
+
+3. Which Spring Data repository interface is used for Elasticsearch?
+   - A) MongoRepository
+   - B) ElasticsearchRepository
+   - C) SearchRepository
+   - D) CrudRepository
+
+<details>
+<summary>Answer</summary>
+**B) ElasticsearchRepository.** Spring Data Elasticsearch provides ElasticsearchRepository for search operations.
+</details>
+
+---
+
+## Summary

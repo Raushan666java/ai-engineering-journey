@@ -1,5 +1,7 @@
 # Java NIO & Networking
 
+> **Previous:** [Multithreading & Concurrency](./02-concurrency.md) | **Next:** [Java Modules & Packaging](./04-jpms-packaging.md)
+
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
@@ -14,6 +16,33 @@ By the end of this chapter, you will be able to:
 - Write asynchronous NIO code using `CompletionHandler` and `Future`
 - Navigate the filesystem and monitor directory changes with NIO.2
 - Read and write file attributes using the NIO.2 attribute views
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| NIO Architecture | Buffer + Channel + Selector model | Non-blocking I/O without thread-per-connection |
+| Buffers | Direct vs heap buffers, ByteBuffer API | Direct buffers avoid copying for I/O operations |
+| Channels | FileChannel, SocketChannel, ServerSocketChannel | FileChannel supports zero-copy transferTo/transferFrom |
+| Selectors | Single thread monitors multiple channels | Event-driven networking without thread-per-connection |
+| Java HTTP Client | Reactive-style HTTP/1.1 and HTTP/2 client | Built-in, supports async send with CompletableFuture |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[NIO Overview] --> B[Buffers]
+    B --> C[Channels]
+    C --> D[Selectors]
+    D --> E[TCP Networking]
+    E --> F[UDP Networking]
+    F --> G[Java HTTP Client]
+    G --> H[Async NIO]
+    H --> I[NIO.2 Files]
+    I --> J[Performance]
+```
+
+> **Pro Tip:** For most web applications, the Java HTTP Client (Java 11+) is sufficient. Drop down to raw NIO with Selectors only when you need custom protocol handling or maximum control over I/O multiplexing.
 
 ---
 
@@ -2658,6 +2687,80 @@ public class BufferSizeBenchmark {
     }
 }
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Traditional IO | Stream-oriented, blocking | Reads byte-by-byte, thread-per-connection | Simple file operations |
+| NIO | Buffer + Channel + Selector | Non-blocking, scatter/gather | High-performance networking |
+| NIO.2 | Enhanced filesystem API | Path, FileVisitor, WatchService | File tree walking, directory monitoring |
+| Java HTTP Client | HTTP/1.1 + HTTP/2 client | Async via CompletableFuture | Modern HTTP communication |
+
+## Quick Reference
+
+| Category | Key Classes | Notes |
+|----------|-------------|-------|
+| **Buffers** | ByteBuffer, CharBuffer, IntBuffer, MappedByteBuffer | flip() before read, clear()/compact() after read |
+| **Channels** | FileChannel, SocketChannel, ServerSocketChannel, DatagramChannel | FileChannel.transferTo() for zero-copy |
+| **Selectors** | Selector, SelectionKey, SelectableChannel | Register channels with interest ops OP_READ/OP_WRITE/OP_ACCEPT |
+| **Async** | AsynchronousSocketChannel, CompletionHandler | Callback-based or Future-based |
+| **Files** | Path, Files, FileVisitor, WatchService | Files.walkFileTree() for recursive operations |
+
+## Cross-Application Matrix
+
+| Technique | Web Servers | File Processing | Real-Time Systems | Microservices |
+|-----------|-------------|-----------------|-------------------|---------------|
+| NIO Selector | Netty, Undertow core | - | High-throughput gateways | Service mesh proxies |
+| Memory-Mapped Files | - | Large file processing | Shared memory IPC | - |
+| Java HTTP Client | - | - | - | Internal service calls |
+| WatchService | Hot reload | File ingestion | Config file monitoring | - |
+
+## Chapter Quiz
+
+1. What is the primary advantage of using `FileChannel.transferTo()`?
+   - A) It compresses data during transfer
+   - B) It performs zero-copy transfer directly between channels
+   - C) It encrypts data automatically
+   - D) It is the only way to read files
+
+<details>
+<summary>Answer</summary>
+**B) It performs zero-copy transfer directly between channels.** transferTo/transferFrom avoids copying data through application memory, making it highly efficient for large file transfers.
+</details>
+
+2. In NIO Selector, which method returns the set of channels ready for I/O operations?
+   - A) `select()`
+   - B) `keys()`
+   - C) `selectedKeys()`
+   - D) `wakeup()`
+
+<details>
+<summary>Answer</summary>
+**C) `selectedKeys()`.** After select() blocks until channels are ready, selectedKeys() returns the Set of SelectionKeys ready for processing.
+</details>
+
+3. What does `ByteBuffer.flip()` do?
+   - A) Clears the buffer
+   - B) Switches from write mode to read mode by setting limit to position and position to 0
+   - C) Increases buffer capacity
+   - D) Rewinds the buffer to the beginning
+
+<details>
+<summary>Answer</summary>
+**B) Switches from write mode to read mode.** After writing data into a buffer, flip() prepares it for reading by setting limit to current position and position to 0.
+</details>
+
+4. Which feature distinguishes Java NIO.2 from the original NIO?
+   - A) Non-blocking I/O
+   - B) FileVisitor and WatchService for filesystem traversal and monitoring
+   - C) ByteBuffer API
+   - D) Channel-based I/O
+
+<details>
+<summary>Answer</summary>
+**B) FileVisitor and WatchService.** NIO.2 enhanced the original NIO with a comprehensive filesystem API including symbolic link support, file tree walking, and directory change monitoring.
+</details>
 
 ---
 

@@ -1620,3 +1620,4 @@ Design a full hexagonal architecture for a loan application system. The system m
 - Expose a read-only API for internal dashboards with pre-computed aggregate statistics
 
 Produce the port interfaces (directory structure and interface definitions), adapter implementations for at least two infrastructure concerns, the service container wiring, and demonstrate dependency inversion by writing a test that swaps the credit check adapter for a fake.
+

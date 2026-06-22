@@ -633,3 +633,4 @@ function addLineItem() {
 - **Admin index** `posts.admin-index` with a table, checkboxes for bulk selection, dropdown for bulk actions (delete, publish, unpublish), and individual edit/delete buttons. Use `@push` for a confirmation modal and bulk selection JavaScript.
 
 All views must be fully functional Blade â€” every `@error`, `@csrf`, `@method`, `@push`, `@stack`, `old()`, and `@each` present with correct syntax.
+

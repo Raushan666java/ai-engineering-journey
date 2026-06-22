@@ -1,5 +1,7 @@
 # Request Validation, Error Handling & Binding
 
+> **Previous:** [REST API Development](./15-rest-api.md) | **Next:** [OpenAPI & API Documentation](./17-openapi.md)
+
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -16,6 +18,31 @@ After completing this chapter, you will be able to:
 - Interpolate validation messages with `ValidationMessages.properties` and custom interpolators
 - Combine Spring `Validator` interface with Bean Validation
 - Apply DTO patterns with MapStruct for entity-to-DTO conversion
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Bean Validation | Jakarta EE standard annotations | @NotNull, @NotEmpty, @Size, @Pattern cover most cases |
+| Validation Groups | Partial validation for different scenarios | Define group interfaces, specify via @Validated |
+| Custom Constraints | @Constraint + ConstraintValidator | Reusable validation logic with message interpolation |
+| Error Handling | @ExceptionHandler for MethodArgumentNotValidException | Structured error response with field-level details |
+| DTO Pattern | Separate API models from entity models | MapStruct generates mapper implementations at compile time |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Bean Validation] --> B[Validation Groups]
+    B --> C[Custom Constraints]
+    C --> D[Global Error Handling]
+    D --> E[InitBinder]
+    E --> F[ModelAttribute]
+    F --> G[DTO Pattern]
+    G --> H[MapStruct]
+```
+
+> **Pro Tip:** Always use DTOs for your API layer. Exposing JPA entities directly creates tight coupling between your database schema and your API contract, making both harder to evolve independently.
 
 ---
 
@@ -2742,6 +2769,70 @@ class UserControllerValidationTest {
     }
 }
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Bean Validation | Jakarta EE validation annotations | Declarative, annotation-driven | Field-level constraints |
+| Validation Groups | Partial validation for scenarios | Group interfaces with @Validated(groups=...) | Update vs. Create validation |
+| Custom Constraint | User-defined validation logic | @Constraint + ConstraintValidator | Business-specific rules |
+| DTO | Data Transfer Object | Separate API model from entity | Avoid exposing entity to API |
+| MapStruct | Compile-time code generator | No reflection, faster than manual | Entity-to-DTO conversion |
+
+## Quick Reference
+
+| Constraint | Purpose | Example Value |
+|------------|---------|---------------|
+| @NotNull | Value cannot be null | null |
+| @NotEmpty | String/collection not null or empty | "" |
+| @NotBlank | String not null and has text | "   " |
+| @Size | Size within bounds | min=1, max=50 |
+| @Min/@Max | Numeric range | min=0, max=100 |
+| @Pattern | Regex matching | regexp="\\d{3}-\\d{2}-\\d{4}" |
+
+## Cross-Application Matrix
+
+| Validation Strategy | REST API | Form Submission | Batch Processing | Internal Service |
+|--------------------|----------|-----------------|------------------|------------------|
+| Bean Validation | Primary | Primary | Configurable | Optional |
+| Custom Constraints | Domain rules | Business validation | File validation | Business logic |
+| DTO Validation | Request DTOs | Form DTOs | Job parameters | Not needed |
+
+## Chapter Quiz
+
+1. Which annotation ensures a string has at least one non-whitespace character?
+   - A) @NotEmpty
+   - B) @NotNull
+   - C) @NotBlank
+   - D) @Size(min=1)
+
+<details>
+<summary>Answer</summary>
+**C) @NotBlank.** @NotBlank requires the string to be non-null and contain at least one non-whitespace character.
+</details>
+
+2. How do you validate different constraints for create vs. update operations?
+   - A) Separate methods
+   - B) Validation groups with group interfaces
+   - C) Conditional validation
+   - D) Profile-based validation
+
+<details>
+<summary>Answer</summary>
+**B) Validation groups with group interfaces.** Define marker interfaces (e.g., Create.class, Update.class) and specify groups on both constraints and @Validated.
+</details>
+
+3. What is the primary advantage of MapStruct over manual DTO mapping?
+   - A) Runtime performance via reflection
+   - B) Compile-time code generation with type safety
+   - C) Less code to write but slower
+   - D) Automatic JSON serialization
+
+<details>
+<summary>Answer</summary>
+**B) Compile-time code generation with type safety.** MapStruct generates mapper implementations at compile time, avoiding reflection overhead and catching errors early.
+</details>
 
 ---
 

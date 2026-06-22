@@ -500,3 +500,4 @@ Route::prefix('v1')->group(function () {
 ### Challenge Problem
 
 **Build a Full-Stack Blog Platform API**: Implement a complete API with JSON:API compliance, three user roles with granular Sanctum abilities, URI versioning (v1/v2), per-endpoint rate limiting, a GraphQL endpoint duplicating REST functionality, custom error format with correlation IDs, HATEOAS links on all resources, and cursor-based pagination.
+

@@ -1,8 +1,12 @@
+<p align="center">
+  <a href="../22-migrations.md">â† Previous (Migrations)</a> | <a href="../24-transactions.md">Next (Transactions) â†’</a>
+</p>
+
 # Spring Data for NoSQL
 
-Relational databases have dominated enterprise storage for decades, but the rise of web-scale applications, unstructured data, and polyglot persistence has made NoSQL databases indispensable. Spring Data provides a unified programming model across SQL and NoSQL stores, reducing the boilerplate of connecting to MongoDB, Redis, Elasticsearch, and others while keeping the abstractions familiar â€” repositories, templates, and consistent exception hierarchies.
+Relational databases have dominated enterprise storage for decades, but the rise of web-scale applications, unstructured data, and polyglot persistence has made NoSQL databases indispensable. Spring Data provides a unified programming model across SQL and NoSQL stores, reducing the boilerplate of connecting to MongoDB, Redis, Elasticsearch, and others while keeping the abstractions familiar Ã¢â‚¬â€ repositories, templates, and consistent exception hierarchies.
 
-This chapter covers three major NoSQL engines â€” MongoDB (document store), Redis (key-value / in-memory data structure store), and Elasticsearch (search engine) â€” through the lens of Spring Data. Every example is complete and compilable against the respective database.
+This chapter covers three major NoSQL engines Ã¢â‚¬â€ MongoDB (document store), Redis (key-value / in-memory data structure store), and Elasticsearch (search engine) Ã¢â‚¬â€ through the lens of Spring Data. Every example is complete and compilable against the respective database.
 
 ---
 
@@ -21,6 +25,30 @@ By the end of this chapter you should be able to:
 - Combine MongoDB, Redis, and Elasticsearch in multi-model patterns for caching and search
 
 ---
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| MongoDB | Document store with Spring Data | @Document, MongoRepository, MongoTemplate |
+| Redis | In-memory data structure store | @RedisHash, RedisTemplate, pub/sub |
+| Elasticsearch | Full-text search engine | @Document, ElasticsearchRepository, query DSL |
+| Multi-Model | Combining stores for real-world apps | MongoDB for storage, Redis for cache, ES for search |
+| Transactions | ACID across documents | MongoDB 4.0+ supports multi-document transactions |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[MongoDB] --> B[Spring Data MongoDB]
+    B --> C[Redis]
+    C --> D[Spring Data Redis]
+    D --> E[Elasticsearch]
+    E --> F[Spring Data ES]
+    F --> G[Multi-Model Patterns]
+```
+
+> **Pro Tip:** Use Redis for caching and session storage, MongoDB for persistent documents, and Elasticsearch for full-text search. Each database excels in its own domain â€” choose the right tool for each job.
 
 ## MongoDB with Spring Data
 
@@ -141,7 +169,7 @@ public class Product {
 }
 ```
 
-Embedded documents do not need `@Document` â€” they are serialized inline:
+Embedded documents do not need `@Document` Ã¢â‚¬â€ they are serialized inline:
 
 ```java
 package com.course.nosql.mongo;
@@ -663,7 +691,7 @@ public class CategoryStats {
 
 ### Geo-Spatial Queries
 
-MongoDB supports rich geo-spatial queries â€” finding documents near a point, within a polygon, or intersecting a geometry.
+MongoDB supports rich geo-spatial queries Ã¢â‚¬â€ finding documents near a point, within a polygon, or intersecting a geometry.
 
 ```java
 package com.course.nosql.mongo;
@@ -2722,7 +2750,7 @@ public class MultiStoreProductService {
         try {
             articleRepository.deleteById("product_" + id);
         } catch (Exception e) {
-            // Log but continue â€” MongoDB is source of truth
+            // Log but continue Ã¢â‚¬â€ MongoDB is source of truth
         }
         redisTemplate.delete("product:" + id);
     }
@@ -2808,9 +2836,73 @@ public class ProductQueryService {
 | Partitioning | Sharding | Cluster slots | Sharding |
 | Best for | Primary store, documents | Cache, counter, queue, pub/sub | Search, analytics, logs |
 
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| MongoDB | Document store | JSON-like documents, flexible schema | Content management, catalogs |
+| Redis | In-memory data structure | Sub-millisecond latency, pub/sub | Caching, sessions, real-time |
+| Elasticsearch | Search engine | Full-text search, aggregations | Search, analytics, logging |
+| Spring Data | Unified repository model | Consistent API across stores | Polyglot persistence |
+
+## Quick Reference
+
+| Operation | MongoDB | Redis | Elasticsearch |
+|-----------|---------|-------|---------------|
+| Save | mongoTemplate.save() | redisTemplate.opsForValue().set() | elasticsearchTemplate.save() |
+| Find by ID | repository.findById() | redisTemplate.opsForValue().get() | repository.findById() |
+| Search | @Query with JSON | Redis Search | Query DSL |
+| Delete | repository.delete() | redisTemplate.delete() | repository.delete() |
+
+## Cross-Application Matrix
+
+| Pattern | MongoDB | Redis | Elasticsearch |
+|---------|---------|-------|---------------|
+| Primary Storage | Yes | No | No |
+| Cache Layer | No | Yes | No |
+| Full-Text Search | Limited | No | Yes |
+| Session Store | No | Yes | No |
+| Pub/Sub | No | Yes | No |
+
+## Chapter Quiz
+
+1. Which annotation maps a Java class to a MongoDB collection?
+   - A) @Entity
+   - B) @Document
+   - C) @Collection
+   - D) @Table
+
+<details>
+<summary>Answer</summary>
+**B) @Document.** Spring Data MongoDB uses @Document to map classes to MongoDB collections.
+</details>
+
+2. What is Redis best suited for in a typical Spring Boot application?
+   - A) Primary data storage
+   - B) Caching, session management, pub/sub
+   - C) Full-text search
+   - D) Relational data with joins
+
+<details>
+<summary>Answer</summary>
+**B) Caching, session management, pub/sub.** Redis excels at in-memory operations with sub-millisecond latency.
+</details>
+
+3. Which Spring Data repository interface is used for Elasticsearch?
+   - A) MongoRepository
+   - B) ElasticsearchRepository
+   - C) SearchRepository
+   - D) CrudRepository
+
+<details>
+<summary>Answer</summary>
+**B) ElasticsearchRepository.** Spring Data Elasticsearch provides ElasticsearchRepository for search operations.
+</details>
+
 ---
 
 ## Summary
+ummary
 
 - **MongoDB**: Use `@Document` to map classes to collections, `MongoRepository` for CRUD, `@Query` for custom MongoDB JSON queries, `MongoTemplate` for imperative access, and `Aggregation` for pipeline operations. Geo-spatial queries use `NearQuery` and `Criteria` with geo predicates. GridFS handles files over 16 MB. Transactions require a replica set.
 
@@ -2845,10 +2937,10 @@ public class ProductQueryService {
 ### Application Problems
 
 1. **Product Search API**: Build a REST controller with endpoints:
-   - `POST /api/products` â€” create a product in MongoDB
-   - `GET /api/products/search?q=...&category=...&minPrice=...&maxPrice=...` â€” search across MongoDB and Elasticsearch
-   - `GET /api/products/{id}` â€” read from Redis cache with MongoDB fallback
-   - `DELETE /api/products/{id}` â€” delete from all three stores with compensating actions for partial failures
+   - `POST /api/products` Ã¢â‚¬â€ create a product in MongoDB
+   - `GET /api/products/search?q=...&category=...&minPrice=...&maxPrice=...` Ã¢â‚¬â€ search across MongoDB and Elasticsearch
+   - `GET /api/products/{id}` Ã¢â‚¬â€ read from Redis cache with MongoDB fallback
+   - `DELETE /api/products/{id}` Ã¢â‚¬â€ delete from all three stores with compensating actions for partial failures
 
 2. **Session Store**: Implement a Redis-backed session store that:
    - Stores user sessions with `@RedisHash` and configurable TTL
@@ -2857,7 +2949,7 @@ public class ProductQueryService {
    - Handles bulk session invalidation for a user
 
 3. **Analytics Dashboard**: Build MongoDB aggregation pipelines that produce:
-   - Top 10 products by revenue (quantity Ã— price)
+   - Top 10 products by revenue (quantity Ãƒâ€” price)
    - Product count by category with average rating
    - Monthly sales trends with running totals
    - Supplier performance metrics (total products, average price, stock levels)
@@ -2898,7 +2990,7 @@ public class ProductQueryService {
    - Incremental Elasticsearch indexing on content publish
    - Search with highlighting, faceted by content type and tags
    - Scheduled re-indexing for consistency verification
-   - Graceful degradation â€” if Elasticsearch is down, fall back to MongoDB regex search
+   - Graceful degradation Ã¢â‚¬â€ if Elasticsearch is down, fall back to MongoDB regex search
 
 5. **Redis Streams Order Pipeline**: Implement an order processing pipeline entirely with Redis Streams:
    - Orders published to a stream from a REST endpoint

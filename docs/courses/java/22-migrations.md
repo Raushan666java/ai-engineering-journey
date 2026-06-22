@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="../21-spring-data-jpa.md">â† Previous (Spring Data JPA)</a> | <a href="../23-nosql.md">Next (NoSQL) â†’</a>
+</p>
+
 # Database Migrations (Flyway & Liquibase)
 
 ## Learning Objectives
@@ -13,6 +17,30 @@ By the end of this chapter, you will be able to:
 7.  Handle rollback strategies, validation, and repair scenarios
 
 ---
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Flyway | Versioned SQL-based migrations | V{number}__{desc}.sql naming convention |
+| Liquibase | XML/YAML/JSON/SQL changelog format | Changesets with id/author/file attributes |
+| Versioning | Semantic versioning of schema changes | Automatically track applied vs pending |
+| Rollback | Undo migrations | Flyway: undo plugin (pro); Liquibase: rollback tag |
+| Testing | Testcontainers for migration testing | Verify migrations in CI pipeline |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Why Migrations] --> B[Flyway Basics]
+    B --> C[Liquibase Basics]
+    C --> D[Versioning Strategy]
+    D --> E[Rollback Strategies]
+    E --> F[Testing with Testcontainers]
+    F --> G[CI/CD Integration]
+```
+
+> **Pro Tip:** Never modify an already-applied migration. Create a new migration file for any schema change. Flyway validates checksums and will fail if a migration has been altered.
 
 ## 1. Why Database Migrations?
 
@@ -1374,9 +1402,74 @@ src/main/resources/db/
 // - Assuming all environments are at the same migration version
 ```
 
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Flyway | Versioned SQL-based migrations | Naming: V{num}__{desc}.sql | SQL-centric teams |
+| Liquibase | XML/YAML/JSON changelog format | Changeset-based, database-agnostic | Multi-DB support |
+| Rollback | Undo applied migrations | Flyway: undo (pro); Liquibase: rollback | Disaster recovery |
+| Testcontainers | Docker-based integration testing | Auto-start database container | CI pipeline migration testing |
+| Checksum | Migration file integrity validation | Flyway validates on each run | Prevents migration tampering |
+
+## Quick Reference
+
+| Flyway Command | Description |
+|----------------|-------------|
+| migrate | Apply pending migrations |
+| clean | Drop all objects |
+| info | Show migration status |
+| validate | Verify applied migrations |
+| repair | Fix checksum issues |
+
+## Cross-Application Matrix
+
+| Strategy | Development | Staging | Production |
+|----------|-------------|---------|------------|
+| Flyway Clean | Before each run | Never | Never |
+| Seed Data | Sample data | Realistic data | Minimal reference |
+| Rollback Plan | V{num}__{desc} + manual | V{num}__{desc} + script | Automated rollback |
+| Testing | Manual verify | Testcontainers CI | Pre-deploy staging test |
+
+## Chapter Quiz
+
+1. What happens if you modify an already-applied Flyway migration?
+   - A) Flyway re-applies it
+   - B) Flyway detects checksum mismatch and fails
+   - C) The change is ignored
+   - D) Flyway skips it silently
+
+<details>
+<summary>Answer</summary>
+**B) Flyway detects checksum mismatch and fails.** Flyway stores a checksum of each migration and validates it on every application startup.
+</details>
+
+2. Which Liquibase changelog format is database-agnostic?
+   - A) SQL
+   - B) XML
+   - C) JSON
+   - D) Both XML and YAML (non-SQL formats)
+
+<details>
+<summary>Answer</summary>
+**D) Both XML and YAML (non-SQL formats).** XML, YAML, and JSON changelogs are database-agnostic and Liquibase translates them to the target database dialect.
+</details>
+
+3. How should you fix a failed migration in production?
+   - A) Edit the migration file and re-run
+   - B) Create a new migration that repairs the state
+   - C) Delete the failed migration from the database
+   - D) Restart the application
+
+<details>
+<summary>Answer</summary>
+**B) Create a new migration that repairs the state.** Never modify an existing migration â€” create a compensating migration that fixes the issue.
+</details>
+
 ---
 
 ## Summary
+ummary
 
 - **Flyway** uses SQL files with a simple naming convention (`V{version}__{description}.sql`). It's convention-over-configuration and ideal for teams comfortable with SQL.
 - **Liquibase** uses changelogs in XML, YAML, JSON, or SQL format with rich changeset metadata. It provides preconditions, contexts, labels, and built-in rollback support.

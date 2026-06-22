@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="../18-file-handling.md">â† Previous (File Upload)</a> | <a href="../20-jpa-hibernate.md">Next (JPA/Hibernate) â†’</a>
+</p>
+
 # JDBC, Connection Pooling & JOOQ
 
 ## Learning Objectives
@@ -17,6 +21,30 @@ After completing this chapter, you will be able to:
 - Build complex queries using the jOOQ DSL
 - Implement multi-tenancy strategies with jOOQ
 - Compare jOOQ with JPA for different use cases
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| JDBC Core | DriverManager, Connection, Statement, ResultSet | Low-level, full control over SQL |
+| Connection Pooling | HikariCP manages reusable connections | Configure pool size, timeout, leak detection |
+| JdbcTemplate | Spring template for JDBC | Reduces boilerplate, maps results |
+| jOOQ | Type-safe SQL DSL | Compile-time SQL validation |
+| Multi-tenancy | Schema/table per tenant with jOOQ | Filter queries by tenant context |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[JDBC Core] --> B[DataSource & Pooling]
+    B --> C[JdbcTemplate]
+    C --> D[jOOQ DSL]
+    D --> E[Code Generation]
+    E --> F[Advanced Queries]
+    F --> G[Multi-tenancy]
+```
+
+> **Pro Tip:** Always use PreparedStatement over Statement to prevent SQL injection. The parameterized query approach ensures user input is never interpreted as SQL code.
 
 ## Table of Contents
 
@@ -40,8 +68,8 @@ JDBC (Java Database Connectivity) is the standard Java API for interacting with 
 
 The JDBC architecture consists of two layers:
 
-- **JDBC API** (`java.sql` and `javax.sql` packages) â€” the application-facing interfaces and classes
-- **JDBC Drivers** â€” vendor-specific implementations that translate JDBC calls into database-native protocols
+- **JDBC API** (`java.sql` and `javax.sql` packages) Ã¢â‚¬â€ the application-facing interfaces and classes
+- **JDBC Drivers** Ã¢â‚¬â€ vendor-specific implementations that translate JDBC calls into database-native protocols
 
 ```java
 // Every JDBC program follows this pattern:
@@ -165,10 +193,10 @@ public class StatementExample {
 }
 ```
 
-**SQL Injection â€” The Critical Problem**
+**SQL Injection Ã¢â‚¬â€ The Critical Problem**
 
 ```java
-// VULNERABLE â€” NEVER DO THIS
+// VULNERABLE Ã¢â‚¬â€ NEVER DO THIS
 public User findUserByUsername(String username) {
     // If username = "' OR '1'='1", this becomes:
     // SELECT * FROM users WHERE username = '' OR '1'='1'
@@ -204,15 +232,15 @@ SELECT * FROM users WHERE username = 'admin'--'
 **Statement execute methods:**
 
 ```java
-// executeQuery â€” for SELECT, returns ResultSet
+// executeQuery Ã¢â‚¬â€ for SELECT, returns ResultSet
 ResultSet rs = stmt.executeQuery("SELECT * FROM users");
 
-// executeUpdate â€” for INSERT, UPDATE, DELETE, DDL; returns affected row count
+// executeUpdate Ã¢â‚¬â€ for INSERT, UPDATE, DELETE, DDL; returns affected row count
 int rowsInserted = stmt.executeUpdate("INSERT INTO users (username) VALUES ('newuser')");
 int rowsUpdated = stmt.executeUpdate("UPDATE users SET active = true WHERE id = 1");
 int rowsDeleted = stmt.executeUpdate("DELETE FROM users WHERE last_login IS NULL");
 
-// execute â€” for any SQL; returns boolean (true = ResultSet, false = update count)
+// execute Ã¢â‚¬â€ for any SQL; returns boolean (true = ResultSet, false = update count)
 boolean isResultSet = stmt.execute("SELECT * FROM users");
 if (isResultSet) {
     try (ResultSet rs = stmt.getResultSet()) { }
@@ -618,7 +646,7 @@ public class DatabaseMetaDataExample {
         System.out.println("=== Foreign keys referencing 'users' ===");
         try (ResultSet fk = dbMeta.getExportedKeys(null, "public", "users")) {
             while (fk.next()) {
-                System.out.printf("  %s.%s â†’ users%n",
+                System.out.printf("  %s.%s Ã¢â€ â€™ users%n",
                     fk.getString("FKTABLE_NAME"),
                     fk.getString("FKCOLUMN_NAME"));
             }
@@ -847,7 +875,7 @@ public class ScrollableUpdatableExample {
         }
     }
 
-    // Updatable ResultSet â€” modify data through ResultSet
+    // Updatable ResultSet Ã¢â‚¬â€ modify data through ResultSet
     public void updatableExample() throws SQLException {
         String sql = "SELECT id, username, email, active FROM users WHERE active = false";
 
@@ -899,9 +927,9 @@ public class ScrollableUpdatableExample {
 
 `DataSource` is the preferred alternative to `DriverManager`. Defined in `javax.sql.DataSource`, it provides:
 
-1. **Connection pooling** â€” reuse connections instead of creating new ones
-2. **Distributed transactions** â€” support for XA transactions
-3. **JNDI lookup** â€” centralized configuration in application servers
+1. **Connection pooling** Ã¢â‚¬â€ reuse connections instead of creating new ones
+2. **Distributed transactions** Ã¢â‚¬â€ support for XA transactions
+3. **JNDI lookup** Ã¢â‚¬â€ centralized configuration in application servers
 
 ```java
 package com.example.datasource;
@@ -938,7 +966,7 @@ public class DataSourceUsage {
 
 ### 2.2 DriverManagerDataSource
 
-`DriverManagerDataSource` is a simple `DataSource` that returns a new connection on every call. It is **not pooled** â€” for development/testing only.
+`DriverManagerDataSource` is a simple `DataSource` that returns a new connection on every call. It is **not pooled** Ã¢â‚¬â€ for development/testing only.
 
 ```java
 package com.example.datasource;
@@ -1388,7 +1416,7 @@ public class MappingStrategiesDao {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
-    // --- RowMapper: one row â†’ one object ---
+    // --- RowMapper: one row Ã¢â€ â€™ one object ---
 
     public static class UserRowMapper implements RowMapper<User> {
         @Override
@@ -1481,8 +1509,8 @@ public class MappingStrategiesDao {
     }
 
     // Comparison:
-    // RowMapper         | 1 row â†’ 1 object   | query() collects into List
-    // ResultSetExtractor| Entire RS â†’ 1 result| You control the loop
+    // RowMapper         | 1 row Ã¢â€ â€™ 1 object   | query() collects into List
+    // ResultSetExtractor| Entire RS Ã¢â€ â€™ 1 result| You control the loop
     // RowCallbackHandler | Callback per row    | Side effects, no collection
 
     public static class User {
@@ -1551,7 +1579,7 @@ public class BeanPropertyDao {
     }
 
     // Maps column names to property names case-insensitively.
-    // user_name â†’ userName (underscore to camelCase)
+    // user_name Ã¢â€ â€™ userName (underscore to camelCase)
 
     public List<User> findAll() {
         String sql = "SELECT * FROM users ORDER BY id";
@@ -1868,14 +1896,14 @@ jOOQ (Java Object Oriented Querying) is a type-safe SQL DSL. It generates Java c
 ```java
 // jOOQ vs JDBC for the same query:
 
-// JDBC â€” string-based, error-prone
+// JDBC Ã¢â‚¬â€ string-based, error-prone
 String sql = "SELECT u.id, u.username FROM users u " +
              "WHERE u.active = ? ORDER BY u.username LIMIT ?";
 PreparedStatement ps = conn.prepareStatement(sql);
 ps.setBoolean(1, true);
 ps.setInt(2, 20);
 
-// jOOQ â€” type-safe DSL, compile-time checked
+// jOOQ Ã¢â‚¬â€ type-safe DSL, compile-time checked
 List<UserRecord> result = dslContext.selectFrom(USERS)
     .where(USERS.ACTIVE.eq(true))
     .orderBy(USERS.USERNAME)
@@ -1980,7 +2008,7 @@ jooq {
 **Generated code example:**
 
 ```java
-// Generated table â€” PUBLIC.USERS
+// Generated table Ã¢â‚¬â€ PUBLIC.USERS
 public class Users extends TableImpl<UsersRecord> {
     public static final Users USERS = new Users();
 
@@ -2287,7 +2315,7 @@ public class TenantAwareRepository {
     }
 }
 
-// Strategy 2: ExecuteListener â€” auto-append tenant filter
+// Strategy 2: ExecuteListener Ã¢â‚¬â€ auto-append tenant filter
 class TenantExecuteListener extends DefaultExecuteListener {
     private final ThreadLocal<Long> tenantId = new ThreadLocal<>();
 
@@ -2625,7 +2653,7 @@ public class CustomUserDao extends UsersDao {
 | Philosophy | SQL is king | OOP is king |
 | Query style | Type-safe DSL | JPQL / Criteria API |
 | SQL control | Full (every SQL feature) | Partial (JPQL subset) |
-| Schema generation | DB â†’ Java code | Entities â†’ DB DDL |
+| Schema generation | DB Ã¢â€ â€™ Java code | Entities Ã¢â€ â€™ DB DDL |
 | Performance | Predictable, direct | N+1, caching, dirty checking |
 | Learning curve | Know SQL = know jOOQ | Entity states, cascade, fetch strategies |
 | Dynamic queries | Condition composition | Specification / Criteria API |
@@ -2692,9 +2720,72 @@ class HybridApproachService {
 }
 ```
 
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| JDBC | Low-level database access API | Manual connection, statement, result set | Simple queries, full control |
+| JdbcTemplate | Spring template for JDBC | Reduces boilerplate, maps rows to objects | Common CRUD operations |
+| jOOQ | Type-safe SQL DSL | Generated classes match schema | Complex queries, compile-time safety |
+| HikariCP | High-performance connection pool | Fast, lightweight, reliable | Production connection pooling |
+
+## Quick Reference
+
+| JDBC Component | Description | Best Practice |
+|----------------|-------------|---------------|
+| DriverManager | Direct connection creation | Use DataSource in production |
+| PreparedStatement | Parameterized query execution | Prevents SQL injection |
+| ResultSet | Query result iteration | Use RowMapper for mapping |
+| HikariCP | Connection pool configuration | Set pool size, connection timeout |
+
+## Cross-Application Matrix
+
+| Data Access Pattern | JDBC | JdbcTemplate | jOOQ |
+|--------------------|------|-------------|------|
+| Simple CRUD | Verbose | Good | Excellent |
+| Complex Joins | Very verbose | Verbose | Excellent |
+| Dynamic Queries | String building | String building | DSL-based |
+| Batch Operations | Manual | Good | Good |
+
+## Chapter Quiz
+
+1. What is the best practice for preventing SQL injection?
+   - A) Input validation
+   - B) PreparedStatement with parameterized queries
+   - C) Escaping user input
+   - D) Stored procedures
+
+<details>
+<summary>Answer</summary>
+**B) PreparedStatement with parameterized queries.** Parameterized queries ensure user input is never interpreted as SQL code.
+</details>
+
+2. Which jOOQ feature provides compile-time SQL validation?
+   - A) DSL API
+   - B) Code generation from schema
+   - C) Query logging
+   - D) Result mapping
+
+<details>
+<summary>Answer</summary>
+**B) Code generation from schema.** jOOQ generates Java classes matching your database schema, enabling type-safe query construction.
+</details>
+
+3. What is HikariCP's default pool size?
+   - A) 5
+   - B) 10
+   - C) 20
+   - D) 50
+
+<details>
+<summary>Answer</summary>
+**B) 10.** HikariCP defaults to a maximum of 10 connections in the pool.
+</details>
+
 ---
 
 ## Summary
+ummary
 
 This chapter covered the complete Java database access stack from low-level JDBC to type-safe jOOQ queries:
 
@@ -2702,7 +2793,7 @@ This chapter covered the complete Java database access stack from low-level JDBC
 
 **DataSource & HikariCP**: `DataSource` is the preferred connection factory. HikariCP is Spring Boot's default pool with configurable `maximumPoolSize`, `minimumIdle`, `connectionTimeout`, `maxLifetime`, and `leakDetectionThreshold`. Metrics are exposed via Micrometer and Actuator.
 
-**JdbcTemplate**: Eliminates JDBC boilerplate. `query()` returns lists, `queryForObject()` single results, `queryForList()` maps, `update()` modifications, `batchUpdate()` bulk operations. Three mapping strategies: `RowMapper` (one row â†’ one object), `ResultSetExtractor` (full set â†’ one result), `RowCallbackHandler` (streaming callback). `BeanPropertyRowMapper` auto-maps columns to properties.
+**JdbcTemplate**: Eliminates JDBC boilerplate. `query()` returns lists, `queryForObject()` single results, `queryForList()` maps, `update()` modifications, `batchUpdate()` bulk operations. Three mapping strategies: `RowMapper` (one row Ã¢â€ â€™ one object), `ResultSetExtractor` (full set Ã¢â€ â€™ one result), `RowCallbackHandler` (streaming callback). `BeanPropertyRowMapper` auto-maps columns to properties.
 
 **NamedParameterJdbcTemplate**: Named parameters (`:param`) instead of positional (`?`). `MapSqlParameterSource` for fluent API. `BeanPropertySqlParameterSource` auto-derives names from beans. Native IN clause support with lists.
 

@@ -1,5 +1,7 @@
 # Functional Programming in Practice
 
+> **Previous:** [Java Modules & Packaging](./04-jpms-packaging.md) | **Next:** [Performance Tuning & Profiling](./06-performance.md)
+
 ## Learning Objectives
 
 By the end of this chapter, you will be able to:
@@ -17,6 +19,32 @@ By the end of this chapter, you will be able to:
 - Build functional Spring Boot endpoints with `RouterFunction`, `HandlerFunction`, `StreamResponseBody`, and lambda-based `@Bean` definitions
 
 **Prerequisite:** Chapter P6 (Lambda Expressions & Functional Programming) covers the fundamentals this chapter builds on. You should be comfortable with basic lambda syntax, method references, core functional interfaces, basic `Stream` pipelines, and the `Optional` and `CompletableFuture` APIs before proceeding.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Advanced Streams | mapMulti, custom distinctBy, zip | Avoid intermediate collections for performance |
+| Custom Collectors | Collector interface with five components | Reusable aggregation logic beyond built-in collectors |
+| Monad Patterns | Optional, CompletableFuture, Validation | Compose operations without nested null/error checks |
+| Function Composition | andThen, compose, partial application | Build pipelines from small reusable functions |
+| Pattern Matching | Switch expressions, record patterns, sealed classes | Exhaustive, compiler-verified type dispatch |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Advanced Streams] --> B[Custom Collectors]
+    B --> C[Monad Patterns]
+    C --> D[Function Composition]
+    D --> E[Lazy Evaluation]
+    E --> F[Immutable Data]
+    F --> G[Pattern Matching]
+    G --> H[Functional Error Handling]
+    H --> I[Spring Boot Functional]
+```
+
+> **Pro Tip:** The most impactful functional technique for reducing bugs is making illegal states unrepresentable — use sealed classes for domain states and records for immutable data carriers.
 
 ---
 
@@ -2563,6 +2591,81 @@ record AppProperties(
 
 record Feature(String name, boolean active) {}
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Stream | Lazy sequence of elements | Internal iteration, pipeline of operations | Bulk data processing |
+| Optional | Container for present/absent value | Monad-like chaining with map/flatMap | Null-safe value access |
+| CompletableFuture | Async computation pipeline | Non-blocking chaining | Async service orchestration |
+| Collector | Mutable reduction protocol | Five components: supplier, accumulator, combiner, finisher, characteristics | Custom aggregation logic |
+| Record | Immutable data carrier | Auto-generates equals, hashCode, toString | DTOs, value objects |
+
+## Quick Reference
+
+| Category | Key Interfaces | Notes |
+|----------|---------------|-------|
+| **Stream** | Stream, IntStream, LongStream, DoubleStream | mapMulti for one-to-many without flatMap overhead |
+| **Optional** | Optional, OptionalInt, OptionalLong, OptionalDouble | or() for fallback Optional, stream() to flatten |
+| **Functional Interfaces** | Function, BiFunction, Predicate, Consumer, Supplier | @FunctionalInterface annotation validates |
+| **Collectors** | Collector, Collectors utility class | Use Collectors.teeing() to branch streams |
+| **Pattern Matching** | switch expressions, record patterns, sealed classes | Exhaustive matching verified at compile time |
+
+## Cross-Application Matrix
+
+| Technique | Data Processing | Web APIs | Event-Driven | Configuration |
+|-----------|----------------|----------|--------------|---------------|
+| Stream pipelines | ETL transformations | Response mapping | Event filtering | - |
+| Custom Collectors | Aggregation reports | - | Batch accumulation | - |
+| CompletableFuture | Parallel computation | Async endpoints | Event processing chains | - |
+| Pattern Matching | - | Request type dispatch | Event type routing | Config case analysis |
+
+## Chapter Quiz
+
+1. What is the key difference between `map` and `flatMap` in Stream?
+   - A) map is faster
+   - B) flatMap returns a Stream of Streams
+   - C) flatMap flattens nested streams into a single stream; map transforms each element
+   - D) There is no difference
+
+<details>
+<summary>Answer</summary>
+**C) flatMap flattens nested streams into a single stream; map transforms each element.** map applies a one-to-one transformation, while flatMap applies a one-to-many transformation and flattens the result.
+</details>
+
+2. What does `Collectors.teeing()` do?
+   - A) Merges two collectors into one by branching a stream and combining their results
+   - B) Splits a stream into two separate streams
+   - C) Converts a stream to a string
+   - D) Groups elements by a classifier function
+
+<details>
+<summary>Answer</summary>
+**A) Merges two collectors into one by branching a stream and combining their results.** teeing() is useful for computing multiple aggregations (e.g., sum and count) in a single pass.
+</details>
+
+3. Which feature guarantees exhaustive pattern matching at compile time?
+   - A) Optional
+   - B) Sealed classes combined with switch expressions
+   - C) Records
+   - D) Method references
+
+<details>
+<summary>Answer</summary>
+**B) Sealed classes combined with switch expressions.** Sealed classes define a fixed set of subtypes, and the compiler verifies that all subtypes are covered in switch patterns.
+</details>
+
+4. How does `Optional.or()` differ from `Optional.orElse()`?
+   - A) or() accepts a Supplier<Optional> for fallback Optional chaining
+   - B) They are identical
+   - C) orElse() is faster
+   - D) or() throws an exception
+
+<details>
+<summary>Answer</summary>
+**A) or() accepts a Supplier<Optional> for fallback Optional chaining.** or() allows chaining Optional-producing fallbacks, while orElse() returns a direct value.
+</details>
 
 ---
 

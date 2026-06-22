@@ -1,5 +1,7 @@
 # REST API Development with Spring MVC
 
+> **Previous:** [Logging, Error Handling & i18n](./14-logging-error-i18n.md) | **Next:** [Request Validation & Error Handling](./16-validation.md)
+
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -15,6 +17,32 @@ After completing this chapter, you will be able to:
 - Configure CORS with `@CrossOrigin` and `GlobalCorsConfiguration`
 - Apply REST best practices for endpoint naming, pagination, filtering, sorting, ETags, idempotency, and partial responses
 - Implement pagination and sorting using Spring Data's `Pageable`, `Page`, `Sort`, and `PagedModel`
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| REST Principles | Stateless, resource-oriented, uniform interface | Use nouns for resources, HTTP methods for actions |
+| Request Mapping | @RequestMapping, @GetMapping, @PostMapping | Composed annotations reduce boilerplate |
+| Response Building | ResponseEntity, @ResponseStatus, status codes | Use ResponseEntity for full control over response |
+| Content Negotiation | JSON, XML, custom media types | Accept header drives response format |
+| HATEOAS | Links embedded in responses guide API discovery | WebMvcLinkBuilder for type-safe link generation |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[REST Principles] --> B[Request Mapping]
+    B --> C[Data Extraction]
+    C --> D[Response Building]
+    D --> E[Content Negotiation]
+    E --> F[HATEOAS]
+    F --> G[API Versioning]
+    G --> H[CORS]
+    H --> I[Best Practices]
+```
+
+> **Pro Tip:** Use `@ExceptionHandler` in a `@ControllerAdvice` to return consistent error responses across all endpoints — never let the container generate the error response.
 
 ---
 
@@ -3168,6 +3196,69 @@ public class CompleteBookController {
     }
 }
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| @RestController | RESTful web service endpoint | @Controller + @ResponseBody | REST API controllers |
+| ResponseEntity | Full HTTP response control | Status code, headers, body | Fine-grained response control |
+| HATEOAS | Hypermedia-driven API responses | Links guide API navigation | Discoverable REST APIs |
+| CORS | Cross-Origin Resource Sharing | Browser-based access control | Frontend-backend separation |
+| API Versioning | URL path, header, or query param | Backward compatibility strategy | Evolution of public APIs |
+
+## Quick Reference
+
+| HTTP Method | CRUD Operation | Status Codes | Idempotent |
+|-------------|---------------|--------------|------------|
+| GET | Read | 200 OK, 404 Not Found | Yes |
+| POST | Create | 201 Created, 400 Bad Request | No |
+| PUT | Update/Replace | 200 OK, 204 No Content | Yes |
+| PATCH | Partial Update | 200 OK, 204 No Content | No |
+| DELETE | Delete | 204 No Content, 404 Not Found | Yes |
+
+## Cross-Application Matrix
+
+| Pattern | Simple CRUD | Complex Domain | Event-Driven | Reactive |
+|---------|-------------|----------------|--------------|----------|
+| @RestController | Standard | Domain controllers | Thin event wrappers | WebFlux functional |
+| HATEOAS | Optional | Useful for navigation | Not needed | Not needed |
+| @ControllerAdvice | Basic error handling | Domain-specific exceptions | Error events | WebFlux error handling |
+
+## Chapter Quiz
+
+1. Which HTTP method should be used for resource creation?
+   - A) GET
+   - B) POST
+   - C) PUT
+   - D) DELETE
+
+<details>
+<summary>Answer</summary>
+**B) POST.** POST creates a new resource. PUT is for full replacement and is idempotent.
+</details>
+
+2. What does ResponseEntity provide beyond @ResponseBody?
+   - A) Faster serialization
+   - B) Control over HTTP status code, headers, and body
+   - C) Built-in validation
+   - D) Swagger documentation
+
+<details>
+<summary>Answer</summary>
+**B) Control over HTTP status code, headers, and body.** ResponseEntity is a full HTTP response object offering fine-grained control.
+</details>
+
+3. How does HATEOAS benefit REST API clients?
+   - A) Reduces payload size
+   - B) Provides navigable links with responses
+   - C) Enables caching
+   - D) Adds security
+
+<details>
+<summary>Answer</summary>
+**B) Provides navigable links with responses.** HATEOAS embeds related resource links so clients discover the API through hypermedia.
+</details>
 
 ---
 

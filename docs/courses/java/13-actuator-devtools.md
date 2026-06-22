@@ -1,5 +1,7 @@
 # Actuator, DevTools & Monitoring
 
+> **Previous:** [Application Properties & Configuration](./12-configuration.md) | **Next:** [Logging, Error Handling & i18n](./14-logging-error-i18n.md)
+
 ## Learning Objectives
 
 After completing this chapter, you will be able to:
@@ -14,6 +16,30 @@ After completing this chapter, you will be able to:
 - Use Spring Boot DevTools for live reload and automatic restart during development
 - Configure remote debugging with DevTools for containerized environments
 - Understand JMX vs HTTP endpoint exposure
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Actuator Endpoints | /health, /info, /metrics, /env, /beans, /configprops | Expose only what's needed in production |
+| Health Indicators | Custom HealthIndicator with health status aggregation | Component-level health checks for dependency services |
+| Micrometer Metrics | @Counted, @Timed with dimensional metrics | Publish to Prometheus, Datadog, or Graphite |
+| DevTools | Live reload, automatic restart, remote debug | Include DevTools only in development |
+| Info Contributors | Build info, git info, environment info | Add build metadata via spring-boot-maven-plugin |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Actuator Overview] --> B[Health & Info]
+    B --> C[Metrics & Monitoring]
+    C --> D[Custom Endpoints]
+    D --> E[Securing Actuator]
+    E --> F[DevTools Live Reload]
+    F --> G[Remote Debugging]
+```
+
+> **Warning:** Never expose sensitive actuator endpoints (/env, /configprops, /dump) in production without authentication. Use Spring Security or management port separation.
 
 ---
 
@@ -1873,6 +1899,71 @@ logging:
 10. **Set health endpoint to `when-authorized`** for details in production.
 11. **Use the spring-boot-maven-plugin with build-info** to populate the info endpoint.
 12. **Exclude DevTools from the final artifact** in multi-stage Docker builds.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Actuator | Production-ready monitoring endpoints | Health, metrics, env, beans, configprops | Observability in production |
+| Micrometer | Vendor-neutral metrics facade | Dimensional metrics with tags | Prometheus, Datadog, Graphite exporters |
+| Health Indicator | Component health check | Aggregated health status | Database, disk, external service health |
+| DevTools | Developer productivity tools | Live reload, auto-restart, remote debug | Development-only dependency |
+| Info Contributor | Metadata about running application | Build info, git commit, environment | Version tracking in production |
+
+## Quick Reference
+
+| Actuator Endpoint | Path | Default Exposure | Usage |
+|------------------|------|-----------------|-------|
+| Health | /actuator/health | Web + JMX | App health with component details |
+| Info | /actuator/info | Web + JMX | Build, git, custom metadata |
+| Metrics | /actuator/metrics | Web + JMX | Application metrics |
+| Env | /actuator/env | JMX only | Environment properties |
+| Beans | /actuator/beans | JMX only | All Spring beans |
+| Loggers | /actuator/loggers | Web + JMX | Dynamic log level changes |
+
+## Cross-Application Matrix
+
+| Feature | Development | Staging | Production |
+|---------|-------------|---------|------------|
+| DevTools | Enabled | Disabled | Disabled |
+| Actuator Web | All endpoints | Health, info, metrics | Health, info, liveness, readiness |
+| Log Levels | DEBUG | INFO | WARN |
+| Metrics Recording | Verbose | Key metrics | Production-optimized |
+
+## Chapter Quiz
+
+1. Which actuator endpoint provides liveness and readiness probes for Kubernetes?
+   - A) /actuator/health
+   - B) /actuator/info
+   - C) /actuator/metrics
+   - D) /actuator/liveness
+
+<details>
+<summary>Answer</summary>
+**A) /actuator/health.** Spring Boot exposes liveness and readiness as grouped health indicators under /actuator/health/liveness and /actuator/health/readiness when configured.
+</details>
+
+2. What is the purpose of Micrometer in Spring Boot?
+   - A) Code profiling
+   - B) Vendor-neutral metrics collection
+   - C) Log aggregation
+   - D) Health checking
+
+<details>
+<summary>Answer</summary>
+**B) Vendor-neutral metrics collection.** Micrometer provides a dimensional metrics facade that supports multiple monitoring systems like Prometheus, Datadog, and Graphite.
+</details>
+
+3. How do you enable DevTools live reload for template changes?
+   - A) Add spring-boot-devtools dependency
+   - B) Set spring.liveReload.enabled=true
+   - C) Install a browser plugin
+   - D) Use IntelliJ LiveReload plugin
+
+<details>
+<summary>Answer</summary>
+**A) Add spring-boot-devtools dependency.** DevTools automatically enables LiveReload server; install LiveReload browser extension to trigger page refresh on changes.
+</details>
 
 ---
 

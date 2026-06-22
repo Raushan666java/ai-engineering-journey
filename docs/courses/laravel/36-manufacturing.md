@@ -1,5 +1,10 @@
 # Chapter 36: Manufacturing & Industrial â€” AI-Powered Factory Agents
 
+> **Previous:** [Legal & Compliance Agents](./35-legal.md) | **Next:** [Enterprise Capstone — Multi-Agent Platform](./37-enterprise-capstone.md)
+
+
+
+
 ---
 
 ## Learning Objectives
@@ -13,9 +18,109 @@
 - Develop an InventoryAutomationAgent that manages raw material and work-in-progress inventory with AI-driven reorder calculations
 - Build an EquipmentLifecycleAgent that tracks depreciation, warranty status, calibration schedules, and maintenance history across the equipment fleet
 
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Manufacturing AI agents for production monitoring, quality control, predictive maintenance, supply chain optimization |
+| **Key Concepts** | Predictive maintenance, quality inspection, production scheduling, inventory optimization, anomaly detection |
+| **Learning Approach** | Theory, data models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, time-series basics |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Manufacturing AI agents for production monitoring, quality control, predictive maintenance, supply chain optimization |
+| **Key Concepts** | Predictive maintenance, quality inspection, production scheduling, inventory optimization, anomaly detection |
+| **Learning Approach** | Theory, data models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, time-series basics |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Manufacturing AI agents for production monitoring, quality control, predictive maintenance, supply chain optimization |
+| **Key Concepts** | Predictive maintenance, quality inspection, production scheduling, inventory optimization, anomaly detection |
+| **Learning Approach** | Theory, data models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, time-series basics |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | Manufacturing AI agents for production monitoring, quality control, predictive maintenance, supply chain optimization |
+| **Key Concepts** | Predictive maintenance, quality inspection, production scheduling, inventory optimization, anomaly detection |
+| **Learning Approach** | Theory, data models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, time-series basics |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![Manufacturing Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/36-manufacturing.png)
 
@@ -2210,6 +2315,310 @@ class EquipmentLifecycleAgent
 ```
 
 ---
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare manufacturing AI agents and their techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| PredictiveMaintenanceAgent | Predict equipment failures before they occur | Time-series analysis + anomaly detection |
+| QualityControlAgent | Inspect products for defects | Computer vision + classification models |
+| ProductionSchedulerAgent | Optimize production schedules | Constraint optimization + demand forecasting |
+| InventoryOptimizerAgent | Maintain optimal stock levels | Demand prediction + reorder point calculation |
+| SupplyChainAgent | Monitor and optimize supply chain | Multi-variable optimization + LLM analysis |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for manufacturing AI agents and concepts.
+
+| Topic | Key Point |
+|-------|-----------|
+| Manufacturing Models | Equipment, Product, ProductionOrder, Inventory, Supplier |
+| Predictive Maintenance | Sensor data + failure prediction |
+| Quality Control | Defect detection + classification |
+| Production Scheduling | Capacity + demand optimization |
+| Inventory Management | Reorder point + safety stock calculation |
+| Supply Chain | Supplier monitoring + risk assessment |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Predictive Maintenance | Equipment uptime optimization | False positives vs missed failures |
+| Quality Control | Defect detection | Sensitivity vs specificity |
+| Production Scheduling | Manufacturing optimization | Efficiency vs flexibility |
+| Inventory Management | Stock level optimization | Holding cost vs stockout risk |
+| Supply Chain | Supplier risk management | Monitoring depth vs data overhead |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding of manufacturing AI agents.
+
+**Q1:** What does the PredictiveMaintenanceAgent use to predict failures?
+- A) Random sampling
+- B) Time-series analysis + anomaly detection
+- C) Manual inspection schedules
+- D) Equipment age only
+
+<details><summary>Answer</summary>B) Time-series analysis + anomaly detection</details>
+
+**Q2:** How does the QualityControlAgent detect defects?
+- A) Manual inspection
+- B) Computer vision + classification models
+- C) Random sampling
+- D) Customer complaints
+
+<details><summary>Answer</summary>B) Computer vision + classification models</details>
+
+**Q3:** What does the ProductionSchedulerAgent optimize?
+- A) Only machine utilization
+- B) Production schedules using constraint optimization
+- C) Only labor allocation
+- D) Only material costs
+
+<details><summary>Answer</summary>B) Production schedules using constraint optimization</details>
+
+**Q4:** What does the InventoryOptimizerAgent calculate?
+- A) Maximum storage capacity
+- B) Reorder points + safety stock levels
+- C) Warehouse rental cost
+- D) Shipping rates
+
+<details><summary>Answer</summary>B) Reorder points + safety stock levels</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare manufacturing AI agents and their techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| PredictiveMaintenanceAgent | Predict equipment failures before they occur | Time-series analysis + anomaly detection |
+| QualityControlAgent | Inspect products for defects | Computer vision + classification models |
+| ProductionSchedulerAgent | Optimize production schedules | Constraint optimization + demand forecasting |
+| InventoryOptimizerAgent | Maintain optimal stock levels | Demand prediction + reorder point calculation |
+| SupplyChainAgent | Monitor and optimize supply chain | Multi-variable optimization + LLM analysis |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for manufacturing AI agents and concepts.
+
+| Topic | Key Point |
+|-------|-----------|
+| Manufacturing Models | Equipment, Product, ProductionOrder, Inventory, Supplier |
+| Predictive Maintenance | Sensor data + failure prediction |
+| Quality Control | Defect detection + classification |
+| Production Scheduling | Capacity + demand optimization |
+| Inventory Management | Reorder point + safety stock calculation |
+| Supply Chain | Supplier monitoring + risk assessment |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Predictive Maintenance | Equipment uptime optimization | False positives vs missed failures |
+| Quality Control | Defect detection | Sensitivity vs specificity |
+| Production Scheduling | Manufacturing optimization | Efficiency vs flexibility |
+| Inventory Management | Stock level optimization | Holding cost vs stockout risk |
+| Supply Chain | Supplier risk management | Monitoring depth vs data overhead |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding of manufacturing AI agents.
+
+**Q1:** What does the PredictiveMaintenanceAgent use to predict failures?
+- A) Random sampling
+- B) Time-series analysis + anomaly detection
+- C) Manual inspection schedules
+- D) Equipment age only
+
+<details><summary>Answer</summary>B) Time-series analysis + anomaly detection</details>
+
+**Q2:** How does the QualityControlAgent detect defects?
+- A) Manual inspection
+- B) Computer vision + classification models
+- C) Random sampling
+- D) Customer complaints
+
+<details><summary>Answer</summary>B) Computer vision + classification models</details>
+
+**Q3:** What does the ProductionSchedulerAgent optimize?
+- A) Only machine utilization
+- B) Production schedules using constraint optimization
+- C) Only labor allocation
+- D) Only material costs
+
+<details><summary>Answer</summary>B) Production schedules using constraint optimization</details>
+
+**Q4:** What does the InventoryOptimizerAgent calculate?
+- A) Maximum storage capacity
+- B) Reorder points + safety stock levels
+- C) Warehouse rental cost
+- D) Shipping rates
+
+<details><summary>Answer</summary>B) Reorder points + safety stock levels</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare manufacturing AI agents and their techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| PredictiveMaintenanceAgent | Predict equipment failures before they occur | Time-series analysis + anomaly detection |
+| QualityControlAgent | Inspect products for defects | Computer vision + classification models |
+| ProductionSchedulerAgent | Optimize production schedules | Constraint optimization + demand forecasting |
+| InventoryOptimizerAgent | Maintain optimal stock levels | Demand prediction + reorder point calculation |
+| SupplyChainAgent | Monitor and optimize supply chain | Multi-variable optimization + LLM analysis |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for manufacturing AI agents and concepts.
+
+| Topic | Key Point |
+|-------|-----------|
+| Manufacturing Models | Equipment, Product, ProductionOrder, Inventory, Supplier |
+| Predictive Maintenance | Sensor data + failure prediction |
+| Quality Control | Defect detection + classification |
+| Production Scheduling | Capacity + demand optimization |
+| Inventory Management | Reorder point + safety stock calculation |
+| Supply Chain | Supplier monitoring + risk assessment |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Predictive Maintenance | Equipment uptime optimization | False positives vs missed failures |
+| Quality Control | Defect detection | Sensitivity vs specificity |
+| Production Scheduling | Manufacturing optimization | Efficiency vs flexibility |
+| Inventory Management | Stock level optimization | Holding cost vs stockout risk |
+| Supply Chain | Supplier risk management | Monitoring depth vs data overhead |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding of manufacturing AI agents.
+
+**Q1:** What does the PredictiveMaintenanceAgent use to predict failures?
+- A) Random sampling
+- B) Time-series analysis + anomaly detection
+- C) Manual inspection schedules
+- D) Equipment age only
+
+<details><summary>Answer</summary>B) Time-series analysis + anomaly detection</details>
+
+**Q2:** How does the QualityControlAgent detect defects?
+- A) Manual inspection
+- B) Computer vision + classification models
+- C) Random sampling
+- D) Customer complaints
+
+<details><summary>Answer</summary>B) Computer vision + classification models</details>
+
+**Q3:** What does the ProductionSchedulerAgent optimize?
+- A) Only machine utilization
+- B) Production schedules using constraint optimization
+- C) Only labor allocation
+- D) Only material costs
+
+<details><summary>Answer</summary>B) Production schedules using constraint optimization</details>
+
+**Q4:** What does the InventoryOptimizerAgent calculate?
+- A) Maximum storage capacity
+- B) Reorder points + safety stock levels
+- C) Warehouse rental cost
+- D) Shipping rates
+
+<details><summary>Answer</summary>B) Reorder points + safety stock levels</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare manufacturing AI agents and their techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| PredictiveMaintenanceAgent | Predict equipment failures before they occur | Time-series analysis + anomaly detection |
+| QualityControlAgent | Inspect products for defects | Computer vision + classification models |
+| ProductionSchedulerAgent | Optimize production schedules | Constraint optimization + demand forecasting |
+| InventoryOptimizerAgent | Maintain optimal stock levels | Demand prediction + reorder point calculation |
+| SupplyChainAgent | Monitor and optimize supply chain | Multi-variable optimization + LLM analysis |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for manufacturing AI agents and concepts.
+
+| Topic | Key Point |
+|-------|-----------|
+| Manufacturing Models | Equipment, Product, ProductionOrder, Inventory, Supplier |
+| Predictive Maintenance | Sensor data + failure prediction |
+| Quality Control | Defect detection + classification |
+| Production Scheduling | Capacity + demand optimization |
+| Inventory Management | Reorder point + safety stock calculation |
+| Supply Chain | Supplier monitoring + risk assessment |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Predictive Maintenance | Equipment uptime optimization | False positives vs missed failures |
+| Quality Control | Defect detection | Sensitivity vs specificity |
+| Production Scheduling | Manufacturing optimization | Efficiency vs flexibility |
+| Inventory Management | Stock level optimization | Holding cost vs stockout risk |
+| Supply Chain | Supplier risk management | Monitoring depth vs data overhead |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding of manufacturing AI agents.
+
+**Q1:** What does the PredictiveMaintenanceAgent use to predict failures?
+- A) Random sampling
+- B) Time-series analysis + anomaly detection
+- C) Manual inspection schedules
+- D) Equipment age only
+
+<details><summary>Answer</summary>B) Time-series analysis + anomaly detection</details>
+
+**Q2:** How does the QualityControlAgent detect defects?
+- A) Manual inspection
+- B) Computer vision + classification models
+- C) Random sampling
+- D) Customer complaints
+
+<details><summary>Answer</summary>B) Computer vision + classification models</details>
+
+**Q3:** What does the ProductionSchedulerAgent optimize?
+- A) Only machine utilization
+- B) Production schedules using constraint optimization
+- C) Only labor allocation
+- D) Only material costs
+
+<details><summary>Answer</summary>B) Production schedules using constraint optimization</details>
+
+**Q4:** What does the InventoryOptimizerAgent calculate?
+- A) Maximum storage capacity
+- B) Reorder points + safety stock levels
+- C) Warehouse rental cost
+- D) Shipping rates
+
+<details><summary>Answer</summary>B) Reorder points + safety stock levels</details>
 
 ## Summary
 

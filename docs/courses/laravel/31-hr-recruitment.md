@@ -1,5 +1,10 @@
 # Chapter 31: HR & Recruitment â€” AI-Powered Talent Agents
 
+> **Previous:** [Logistics & Supply Chain Agents](./30-logistics.md) | **Next:** [Marketing & Advertising Agents](./32-marketing.md)
+
+
+
+
 ---
 
 ## Learning Objectives
@@ -14,9 +19,109 @@
 - Develop a TrainingRecommendationAgent that identifies skill gaps from performance data and recommends targeted training programs
 - Implement an HrComplianceAgent that tracks certification deadlines, equal-opportunity metrics, and generates compliance reports
 
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | HR domain data models, AI agents for recruitment, onboarding, performance, compliance |
+| **Key Concepts** | Resume screening, interview scheduling, candidate matching, sentiment analysis, training recommendations, compliance tracking |
+| **Learning Approach** | Theory, Eloquent models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, PDF parsing |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | HR domain data models, AI agents for recruitment, onboarding, performance, compliance |
+| **Key Concepts** | Resume screening, interview scheduling, candidate matching, sentiment analysis, training recommendations, compliance tracking |
+| **Learning Approach** | Theory, Eloquent models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, PDF parsing |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | HR domain data models, AI agents for recruitment, onboarding, performance, compliance |
+| **Key Concepts** | Resume screening, interview scheduling, candidate matching, sentiment analysis, training recommendations, compliance tracking |
+| **Learning Approach** | Theory, Eloquent models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, PDF parsing |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
+## Chapter at a Glance
+
+| Aspect | Details |
+|--------|---------|
+| **Scope** | HR domain data models, AI agents for recruitment, onboarding, performance, compliance |
+| **Key Concepts** | Resume screening, interview scheduling, candidate matching, sentiment analysis, training recommendations, compliance tracking |
+| **Learning Approach** | Theory, Eloquent models, agent implementations, AI integration |
+| **Skills Required** | PHP, Laravel, Eloquent, Laravel AI SDK, PDF parsing |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Theory & Concepts]
+    B[Data Models]
+    C[Agent Implementation]
+    D[Integration Patterns]
+    E[Best Practices]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
+
 ---
 
 ## Theory
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
 
 ![HR and Recruitment Domain](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/31-hr-recruitment.png)
 
@@ -2298,6 +2403,338 @@ class HrComplianceAgent
 ```
 
 ---
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key agents to understand their roles and AI techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| ResumeScreeningAgent | Parse and rank resumes against job requirements | LLM structured extraction + weighted scoring |
+| InterviewSchedulingAgent | Coordinate multi-party interview scheduling | Constraint satisfaction + availability overlap |
+| CandidateMatchingAgent | Semantic matching of candidates to jobs | Vector embeddings + cosine similarity |
+| OnboardingAgent | Automate new-hire task checklists and verification | Deterministic workflow + role-based assignment |
+| PerformanceReviewAgent | Analyze review text and detect performance trends | LLM sentiment analysis + trend calculation |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for key topics and definitions.
+
+| Topic | Key Point |
+|-------|-----------|
+| HR Data Models | Candidate, Employee, JobPosting, Review, TrainingRecord, HrDocument |
+| Resume Parsing | PDF, DOCX, TXT, image formats with OCR fallback |
+| Weighted Scoring | 60% required skills + 25% preferred + 15% experience |
+| Interview Scheduling | 14-day window, business hours, weekend exclusion |
+| Compliance Reports | EEO-1 format with AI-generated executive summaries |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Resume Screening | Recruitment pipeline automation | Accuracy vs parsing speed |
+| Interview Scheduling | Multi-interviewer coordination | Comprehensive search vs compute time |
+| Candidate Matching | Vector similarity search | Precision vs recall |
+| Sentiment Monitoring | Employee engagement tracking | Privacy vs actionable insight |
+| Compliance Reporting | Regulatory adherence automation | Automation vs manual verification |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding with these chapter questions.
+
+**Q1:** What is the weighted breakdown used by the ResumeScreeningAgent for ranking candidates?
+- A) 70% required skills, 20% preferred, 10% experience
+- B) 60% required skills, 25% preferred, 15% experience
+- C) 50% required skills, 30% preferred, 20% experience
+- D) 40% required skills, 40% preferred, 20% experience
+
+<details><summary>Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>
+
+**Q2:** Which agent uses vector embeddings and cosine similarity for matching?
+- A) ResumeScreeningAgent
+- B) InterviewSchedulingAgent
+- C) CandidateMatchingAgent
+- D) OnboardingAgent
+
+<details><summary>Answer</summary>C) CandidateMatchingAgent</details>
+
+**Q3:** What does the SentimentAgent use to analyze employee engagement?
+- A) Only numeric rating scales
+- B) LLM-based text sentiment analysis
+- C) Keyword matching
+- D) Rule-based scoring
+
+<details><summary>Answer</summary>B) LLM-based text sentiment analysis</details>
+
+**Q4:** Which compliance report format does the HrComplianceAgent generate?
+- A) SOC-2
+- B) EEO-1
+- C) ISO 27001
+- D) PCI-DSS
+
+<details><summary>Answer</summary>B) EEO-1</details>
+
+**Q5:** How are onboarding task assignments routed?
+- A) All tasks assigned solely to HR
+- B) Per-role assignment (employee, HR, IT, manager)
+- C) All tasks assigned to the new hire
+- D) Tasks are not assigned to anyone
+
+<details><summary>Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key agents to understand their roles and AI techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| ResumeScreeningAgent | Parse and rank resumes against job requirements | LLM structured extraction + weighted scoring |
+| InterviewSchedulingAgent | Coordinate multi-party interview scheduling | Constraint satisfaction + availability overlap |
+| CandidateMatchingAgent | Semantic matching of candidates to jobs | Vector embeddings + cosine similarity |
+| OnboardingAgent | Automate new-hire task checklists and verification | Deterministic workflow + role-based assignment |
+| PerformanceReviewAgent | Analyze review text and detect performance trends | LLM sentiment analysis + trend calculation |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for key topics and definitions.
+
+| Topic | Key Point |
+|-------|-----------|
+| HR Data Models | Candidate, Employee, JobPosting, Review, TrainingRecord, HrDocument |
+| Resume Parsing | PDF, DOCX, TXT, image formats with OCR fallback |
+| Weighted Scoring | 60% required skills + 25% preferred + 15% experience |
+| Interview Scheduling | 14-day window, business hours, weekend exclusion |
+| Compliance Reports | EEO-1 format with AI-generated executive summaries |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Resume Screening | Recruitment pipeline automation | Accuracy vs parsing speed |
+| Interview Scheduling | Multi-interviewer coordination | Comprehensive search vs compute time |
+| Candidate Matching | Vector similarity search | Precision vs recall |
+| Sentiment Monitoring | Employee engagement tracking | Privacy vs actionable insight |
+| Compliance Reporting | Regulatory adherence automation | Automation vs manual verification |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding with these chapter questions.
+
+**Q1:** What is the weighted breakdown used by the ResumeScreeningAgent for ranking candidates?
+- A) 70% required skills, 20% preferred, 10% experience
+- B) 60% required skills, 25% preferred, 15% experience
+- C) 50% required skills, 30% preferred, 20% experience
+- D) 40% required skills, 40% preferred, 20% experience
+
+<details><summary>Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>
+
+**Q2:** Which agent uses vector embeddings and cosine similarity for matching?
+- A) ResumeScreeningAgent
+- B) InterviewSchedulingAgent
+- C) CandidateMatchingAgent
+- D) OnboardingAgent
+
+<details><summary>Answer</summary>C) CandidateMatchingAgent</details>
+
+**Q3:** What does the SentimentAgent use to analyze employee engagement?
+- A) Only numeric rating scales
+- B) LLM-based text sentiment analysis
+- C) Keyword matching
+- D) Rule-based scoring
+
+<details><summary>Answer</summary>B) LLM-based text sentiment analysis</details>
+
+**Q4:** Which compliance report format does the HrComplianceAgent generate?
+- A) SOC-2
+- B) EEO-1
+- C) ISO 27001
+- D) PCI-DSS
+
+<details><summary>Answer</summary>B) EEO-1</details>
+
+**Q5:** How are onboarding task assignments routed?
+- A) All tasks assigned solely to HR
+- B) Per-role assignment (employee, HR, IT, manager)
+- C) All tasks assigned to the new hire
+- D) Tasks are not assigned to anyone
+
+<details><summary>Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key agents to understand their roles and AI techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| ResumeScreeningAgent | Parse and rank resumes against job requirements | LLM structured extraction + weighted scoring |
+| InterviewSchedulingAgent | Coordinate multi-party interview scheduling | Constraint satisfaction + availability overlap |
+| CandidateMatchingAgent | Semantic matching of candidates to jobs | Vector embeddings + cosine similarity |
+| OnboardingAgent | Automate new-hire task checklists and verification | Deterministic workflow + role-based assignment |
+| PerformanceReviewAgent | Analyze review text and detect performance trends | LLM sentiment analysis + trend calculation |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for key topics and definitions.
+
+| Topic | Key Point |
+|-------|-----------|
+| HR Data Models | Candidate, Employee, JobPosting, Review, TrainingRecord, HrDocument |
+| Resume Parsing | PDF, DOCX, TXT, image formats with OCR fallback |
+| Weighted Scoring | 60% required skills + 25% preferred + 15% experience |
+| Interview Scheduling | 14-day window, business hours, weekend exclusion |
+| Compliance Reports | EEO-1 format with AI-generated executive summaries |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Resume Screening | Recruitment pipeline automation | Accuracy vs parsing speed |
+| Interview Scheduling | Multi-interviewer coordination | Comprehensive search vs compute time |
+| Candidate Matching | Vector similarity search | Precision vs recall |
+| Sentiment Monitoring | Employee engagement tracking | Privacy vs actionable insight |
+| Compliance Reporting | Regulatory adherence automation | Automation vs manual verification |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding with these chapter questions.
+
+**Q1:** What is the weighted breakdown used by the ResumeScreeningAgent for ranking candidates?
+- A) 70% required skills, 20% preferred, 10% experience
+- B) 60% required skills, 25% preferred, 15% experience
+- C) 50% required skills, 30% preferred, 20% experience
+- D) 40% required skills, 40% preferred, 20% experience
+
+<details><summary>Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>
+
+**Q2:** Which agent uses vector embeddings and cosine similarity for matching?
+- A) ResumeScreeningAgent
+- B) InterviewSchedulingAgent
+- C) CandidateMatchingAgent
+- D) OnboardingAgent
+
+<details><summary>Answer</summary>C) CandidateMatchingAgent</details>
+
+**Q3:** What does the SentimentAgent use to analyze employee engagement?
+- A) Only numeric rating scales
+- B) LLM-based text sentiment analysis
+- C) Keyword matching
+- D) Rule-based scoring
+
+<details><summary>Answer</summary>B) LLM-based text sentiment analysis</details>
+
+**Q4:** Which compliance report format does the HrComplianceAgent generate?
+- A) SOC-2
+- B) EEO-1
+- C) ISO 27001
+- D) PCI-DSS
+
+<details><summary>Answer</summary>B) EEO-1</details>
+
+**Q5:** How are onboarding task assignments routed?
+- A) All tasks assigned solely to HR
+- B) Per-role assignment (employee, HR, IT, manager)
+- C) All tasks assigned to the new hire
+- D) Tasks are not assigned to anyone
+
+<details><summary>Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>
+
+---
+
+## Concept Comparison
+> **One-Sentence Takeaway:** Compare key agents to understand their roles and AI techniques.
+
+| Agent | Primary Function | AI Technique Used |
+|-------|-----------------|-------------------|
+| ResumeScreeningAgent | Parse and rank resumes against job requirements | LLM structured extraction + weighted scoring |
+| InterviewSchedulingAgent | Coordinate multi-party interview scheduling | Constraint satisfaction + availability overlap |
+| CandidateMatchingAgent | Semantic matching of candidates to jobs | Vector embeddings + cosine similarity |
+| OnboardingAgent | Automate new-hire task checklists and verification | Deterministic workflow + role-based assignment |
+| PerformanceReviewAgent | Analyze review text and detect performance trends | LLM sentiment analysis + trend calculation |
+
+---
+
+## Quick Reference
+> **One-Sentence Takeaway:** Quick reference for key topics and definitions.
+
+| Topic | Key Point |
+|-------|-----------|
+| HR Data Models | Candidate, Employee, JobPosting, Review, TrainingRecord, HrDocument |
+| Resume Parsing | PDF, DOCX, TXT, image formats with OCR fallback |
+| Weighted Scoring | 60% required skills + 25% preferred + 15% experience |
+| Interview Scheduling | 14-day window, business hours, weekend exclusion |
+| Compliance Reports | EEO-1 format with AI-generated executive summaries |
+
+---
+
+## Cross-Application Matrix
+
+| Concept | Application Context | Trade-Off |
+|---------|--------------------|-----------|
+| Resume Screening | Recruitment pipeline automation | Accuracy vs parsing speed |
+| Interview Scheduling | Multi-interviewer coordination | Comprehensive search vs compute time |
+| Candidate Matching | Vector similarity search | Precision vs recall |
+| Sentiment Monitoring | Employee engagement tracking | Privacy vs actionable insight |
+| Compliance Reporting | Regulatory adherence automation | Automation vs manual verification |
+
+---
+
+## Chapter Quiz
+> **One-Sentence Takeaway:** Test your understanding with these chapter questions.
+
+**Q1:** What is the weighted breakdown used by the ResumeScreeningAgent for ranking candidates?
+- A) 70% required skills, 20% preferred, 10% experience
+- B) 60% required skills, 25% preferred, 15% experience
+- C) 50% required skills, 30% preferred, 20% experience
+- D) 40% required skills, 40% preferred, 20% experience
+
+<details><summary>Answer</summary>B) 60% required skills, 25% preferred, 15% experience</details>
+
+**Q2:** Which agent uses vector embeddings and cosine similarity for matching?
+- A) ResumeScreeningAgent
+- B) InterviewSchedulingAgent
+- C) CandidateMatchingAgent
+- D) OnboardingAgent
+
+<details><summary>Answer</summary>C) CandidateMatchingAgent</details>
+
+**Q3:** What does the SentimentAgent use to analyze employee engagement?
+- A) Only numeric rating scales
+- B) LLM-based text sentiment analysis
+- C) Keyword matching
+- D) Rule-based scoring
+
+<details><summary>Answer</summary>B) LLM-based text sentiment analysis</details>
+
+**Q4:** Which compliance report format does the HrComplianceAgent generate?
+- A) SOC-2
+- B) EEO-1
+- C) ISO 27001
+- D) PCI-DSS
+
+<details><summary>Answer</summary>B) EEO-1</details>
+
+**Q5:** How are onboarding task assignments routed?
+- A) All tasks assigned solely to HR
+- B) Per-role assignment (employee, HR, IT, manager)
+- C) All tasks assigned to the new hire
+- D) Tasks are not assigned to anyone
+
+<details><summary>Answer</summary>B) Per-role assignment (employee, HR, IT, manager)</details>
 
 ## Summary
 

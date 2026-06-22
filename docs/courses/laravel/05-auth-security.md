@@ -1111,3 +1111,4 @@ Design a full blog authentication and authorization system that includes:
 - Sanctum integration for the blogging API: issue tokens with `posts:read` and `posts:write` abilities, a separate `posts:publish` ability for the publish action, and SPA-based auth for the frontend dashboard
 - Email verification enforced for all write operations, password confirmation for the publish action
 - Blade directives throughout the frontend checking `@can('update', $post)` and `@can('publish', $post)`
+

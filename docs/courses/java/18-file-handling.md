@@ -1,3 +1,7 @@
+<p align="center">
+  <a href="../17-openapi.md">â† Previous (OpenAPI)</a> | <a href="../19-jdbc-jooq.md">Next (JDBC/JOOQ) â†’</a>
+</p>
+
 # File Upload, Download & Streaming
 
 ---
@@ -20,6 +24,31 @@ By the end of this chapter, you will be able to:
 - Report meaningful errors for size violations, bad types, and virus detection
 
 ---
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| MultipartFile | Spring's interface for uploaded files | Single/multi upload via @RequestParam |
+| Config Properties | spring.servlet.multipart.* settings | Limit size, encoding, temp directory |
+| Streaming | StreamingResponseBody | Efficient large file transfer |
+| File Validation | Magic bytes detection | Verify file type beyond extension |
+| Security | Malware scanning pipeline | Check files before persistence |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Upload Configuration] --> B[MultipartFile]
+    B --> C[Storage Service]
+    C --> D[File Validation]
+    D --> E[Malware Scanning]
+    E --> F[File Download]
+    F --> G[Streaming]
+    G --> H[Progress Tracking]
+```
+
+> **Pro Tip:** Always validate file types by reading the first bytes (magic numbers) rather than relying on file extensions â€” attackers can easily rename a malicious file to appear legitimate.
 
 ## Theory
 
@@ -664,7 +693,7 @@ public class UploadResponse {
 }
 ```
 
-### 8. Downloading Files â€” Resource Implementations
+### 8. Downloading Files Ã¢â‚¬â€ Resource Implementations
 
 Spring provides several `Resource` implementations for different use cases:
 
@@ -688,7 +717,7 @@ import java.nio.file.Paths;
 @RequestMapping("/api/download")
 public class ResourceExamplesController {
 
-    // === UrlResource â€” Wraps a URL (file://, https://, classpath:) ===
+    // === UrlResource Ã¢â‚¬â€ Wraps a URL (file://, https://, classpath:) ===
 
     @GetMapping("/url-resource/{fileName:.+}")
     public ResponseEntity<Resource> downloadWithUrlResource(@PathVariable String fileName) {
@@ -711,7 +740,7 @@ public class ResourceExamplesController {
         }
     }
 
-    // === InputStreamResource â€” Wraps an InputStream (best for large streams) ===
+    // === InputStreamResource Ã¢â‚¬â€ Wraps an InputStream (best for large streams) ===
 
     @GetMapping("/stream-resource/{fileName:.+}")
     public ResponseEntity<Resource> downloadWithInputStreamResource(
@@ -735,7 +764,7 @@ public class ResourceExamplesController {
         }
     }
 
-    // === ByteArrayResource â€” Wraps a byte[] (best for small in-memory files) ===
+    // === ByteArrayResource Ã¢â‚¬â€ Wraps a byte[] (best for small in-memory files) ===
 
     @GetMapping("/bytes/{fileName:.+}")
     public ResponseEntity<Resource> downloadWithByteArrayResource(
@@ -811,7 +840,7 @@ public class ResourceExamplesController {
 }
 ```
 
-### 9. Streaming Large Files â€” StreamingResponseBody
+### 9. Streaming Large Files Ã¢â‚¬â€ StreamingResponseBody
 
 `StreamingResponseBody` allows writing directly to the response's `OutputStream` without buffering the entire file in memory. It is ideal for large files (100MB+, video, ISO images).
 
@@ -831,7 +860,7 @@ import java.nio.file.Paths;
 @RequestMapping("/api/stream")
 public class StreamingController {
 
-    // === StreamingResponseBody â€” Manual write to OutputStream ===
+    // === StreamingResponseBody Ã¢â‚¬â€ Manual write to OutputStream ===
 
     @GetMapping("/file/{fileName:.+}")
     public ResponseEntity<StreamingResponseBody> streamFile(
@@ -1064,7 +1093,7 @@ public class InputStreamResourceController {
             FileInputStream fis = new FileInputStream(filePath.toFile());
             InputStreamResource resource = new InputStreamResource(fis);
 
-            // No content-length set â†’ Spring uses chunked transfer encoding
+            // No content-length set Ã¢â€ â€™ Spring uses chunked transfer encoding
             return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType(contentType))
                 .header(HttpHeaders.CONTENT_DISPOSITION,
@@ -1078,7 +1107,7 @@ public class InputStreamResourceController {
 }
 ```
 
-### 11. Progress Tracking â€” Temp Then Atomic Move
+### 11. Progress Tracking Ã¢â‚¬â€ Temp Then Atomic Move
 
 For very large uploads, save to a temp file first, validate, then atomically move to the final location.
 
@@ -1750,7 +1779,7 @@ public class FileViewController {
 }
 ```
 
-### 15. Complete Upload Pipeline â€” End to End
+### 15. Complete Upload Pipeline Ã¢â‚¬â€ End to End
 
 ```java
 import org.slf4j.Logger;
@@ -2541,9 +2570,71 @@ class SafeStorageServiceTest {
 }
 ```
 
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| MultipartFile | Spring's uploaded file representation | getName(), getBytes(), getInputStream() | File upload handling |
+| Resource | Spring's resource abstraction | InputStreamResource, UrlResource, ByteArrayResource | File download serving |
+| StreamingResponseBody | Streaming output for large files | Backpressure-aware, async | Large file downloads |
+| StaticResourceHandler | Serve static files from configured locations | Built-in caching, resource resolution | Serving uploaded files |
+
+## Quick Reference
+
+| Upload Property | Default | Description |
+|----------------|---------|-------------|
+| spring.servlet.multipart.max-file-size | 1MB | Maximum file size per upload |
+| spring.servlet.multipart.max-request-size | 10MB | Maximum multipart request size |
+| spring.servlet.multipart.enabled | true | Enable multipart upload support |
+| spring.servlet.multipart.location | (temp) | Directory for temporary upload files |
+
+## Cross-Application Matrix
+
+| File Type Strategy | Small Files | Large Files | Streaming |
+|-------------------|-------------|-------------|-----------|
+| Storage | Local filesystem | S3/Blob storage | Temporary |
+| Download | ResponseEntity<Resource> | StreamingResponseBody | InputStreamResource |
+| Validation | Magic bytes + extension | Magic bytes + scan | Magic bytes check |
+
+## Chapter Quiz
+
+1. How do you limit file upload size in Spring Boot?
+   - A) @Size annotation on MultipartFile
+   - B) spring.servlet.multipart.max-file-size property
+   - C) @Max annotation
+   - D) web.xml configuration
+
+<details>
+<summary>Answer</summary>
+**B) spring.servlet.multipart.max-file-size.** This property controls the maximum size allowed for uploaded files.
+</details>
+
+2. Which approach is best for downloading large files?
+   - A) ResponseEntity<byte[]> 
+   - B) StreamingResponseBody
+   - C) FileCopyUtils
+   - D) @ResponseBody
+
+<details>
+<summary>Answer</summary>
+**B) StreamingResponseBody.** This allows streaming the file content without loading it entirely into memory.
+</details>
+
+3. What is the most reliable way to detect file type?
+   - A) File extension
+   - B) Content-Type header
+   - C) Magic bytes at file start
+   - D) User-provided type
+
+<details>
+<summary>Answer</summary>
+**C) Magic bytes at file start.** Magic bytes are the first bytes of a file and reliably identify its format regardless of extension.
+</details>
+
 ---
 
 ## Summary
+ummary
 
 | Concept | Key Takeaway |
 |---------|-------------|
@@ -2551,7 +2642,7 @@ class SafeStorageServiceTest {
 | @RequestParam | Binds multipart request parts to controller parameters, supports List for multiple files |
 | Upload Config | `spring.servlet.multipart.*` controls max sizes, temp location, threshold |
 | File Size Limits | `MaxUploadSizeExceededException` handled via `@ControllerAdvice` |
-| Storage Service | Abstract behind `FileStorageService` interface â€” swap impls (filesystem, DB, S3) |
+| Storage Service | Abstract behind `FileStorageService` interface Ã¢â‚¬â€ swap impls (filesystem, DB, S3) |
 | Download Resources | `UrlResource` (file/URL), `InputStreamResource` (stream), `ByteArrayResource` (bytes) |
 | Content-Disposition | `attachment` forces download; `inline` displays in browser |
 | Streaming | `StreamingResponseBody` writes to OutputStream without full buffering |
@@ -2597,8 +2688,8 @@ Implement `FileStorageService.store()` to:
 ### Exercise 5: File Download with Content-Disposition
 
 Create two download endpoints:
-- `/api/files/download/{name}` â€” forces download (attachment)
-- `/api/files/preview/{name}` â€” displays in browser (inline) for images and PDFs
+- `/api/files/download/{name}` Ã¢â‚¬â€ forces download (attachment)
+- `/api/files/preview/{name}` Ã¢â‚¬â€ displays in browser (inline) for images and PDFs
 Both should set the correct `Content-Type` based on the file extension.
 
 ### Exercise 6: Large File Streaming
@@ -2631,9 +2722,9 @@ Create a service that:
 ### Exercise 9: Chunked Upload
 
 Implement a three-phase chunked upload:
-- `POST /api/chunked/init` â€” returns an upload ID
-- `POST /api/chunked/part` â€” accepts a chunk with index + upload ID
-- `POST /api/chunked/complete` â€” reassembles chunks and returns the final file name
+- `POST /api/chunked/init` Ã¢â‚¬â€ returns an upload ID
+- `POST /api/chunked/part` Ã¢â‚¬â€ accepts a chunk with index + upload ID
+- `POST /api/chunked/complete` Ã¢â‚¬â€ reassembles chunks and returns the final file name
 
 Track which chunks have been received and report progress via `GET /api/chunked/{uploadId}/status`.
 
@@ -2648,4 +2739,4 @@ Configure `WebMvcConfigurer` to:
 
 ---
 
-*End of Chapter 18 â€” File Upload, Download & Streaming*
+*End of Chapter 18 Ã¢â‚¬â€ File Upload, Download & Streaming*

@@ -1,6 +1,26 @@
 # Docker & Containerization
 
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
+
 ## Learning Objectives
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Core Concepts | Foundational understanding | Real-world application |
+| Implementation | Code-first approach | Working examples |
+| Best Practices | Production patterns | Avoid common pitfalls |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Concepts] --> B[Setup/Configuration]
+    B --> C[Implementation]
+    C --> D[Testing]
+    D --> E[Best Practices]
+```
+
 
 By the end of this chapter, you will be able to:
 
@@ -15,7 +35,11 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## 1. Why Containerize Spring Boot?
+## 1. Why Containerize Spring Boot?
+> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+
+> **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
+
 
 ![Docker & Containerization Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/52-docker.png)
 
@@ -130,10 +154,20 @@ Only use for development images where you need `jmap`, `jstack`, `jcmd`, etc.
 
 ```yaml
 # Decision matrix:
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # Production runtime   â†’ eclipse-temurin:17-jre-alpine or distroless/java17
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # CI/CD builder stage  â†’ eclipse-temurin:17-jdk-alpine
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # Dev/debug image      â†’ eclipse-temurin:17-jdk
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # Native image (Graal) â†’ ubuntu:22.04 or distroless/java-base
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 ```
 
 ---
@@ -170,29 +204,41 @@ Each excluded file means a smaller build context, faster sends to the Docker dae
 
 ```dockerfile
 # ---- Stage 1: Build ----
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM eclipse-temurin:17-jdk-alpine AS builder
 WORKDIR /build
 
 # Copy only dependency descriptors first â€” maximizes cache reuse
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY pom.xml .
 COPY mvnw .
 COPY .mvn .mvn
 RUN ./mvnw dependency:go-offline -B
 
 # Copy source and build
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY src src
 RUN ./mvnw package -DskipTests -B
 
 # ---- Stage 2: Extract Layers ----
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM builder AS layer-extractor
 RUN java -Djarmode=layertools -jar /build/target/*.jar extract --destination /extracted
 
 # ---- Stage 3: Runtime ----
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM eclipse-temurin:17-jre-alpine
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
 
 # Copy layers in dependency order for cache efficiency
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY --from=layer-extractor /extracted/dependencies/ ./
 COPY --from=layer-extractor /extracted/spring-boot-loader/ ./
 COPY --from=layer-extractor /extracted/snapshot-dependencies/ ./
@@ -211,6 +257,8 @@ ENTRYPOINT ["java", \
 
 ```dockerfile
 # ---- Stage 1: Build ----
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM gradle:7.6-jdk17 AS builder
 WORKDIR /build
 COPY build.gradle settings.gradle gradle.properties ./
@@ -220,6 +268,8 @@ COPY src src
 RUN gradle bootJar --no-daemon
 
 # ---- Stage 2: Runtime ----
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM eclipse-temurin:17-jre-alpine
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
@@ -239,16 +289,24 @@ Each Dockerfile instruction creates a layer. Docker caches each layer and reuses
 
 ```dockerfile
 # Layer 1: Base image â€” cached unless base changes
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM eclipse-temurin:17-jre-alpine
 
 # Layer 2: OS packages â€” cached unless this line changes
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 RUN apk add --no-cache curl
 
 # Layer 3: Dependencies â€” cached unless pom.xml changes
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY pom.xml .
 RUN ./mvnw dependency:go-offline
 
 # Layer 4: Application â€” INVALIDATED on every src change
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY src src
 RUN ./mvnw package
 ```
@@ -350,6 +408,8 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
 
 # Copy layers in dependency order â€” maximizes cache reuse
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY --from=builder /extracted/dependencies/ ./
 COPY --from=builder /extracted/spring-boot-loader/ ./
 COPY --from=builder /extracted/snapshot-dependencies/ ./
@@ -470,6 +530,8 @@ volumes:
 
 ```yaml
 # docker-compose.override.yml â€” loaded automatically for dev overrides
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 version: "3.9"
 services:
   app:
@@ -484,6 +546,8 @@ services:
 
 ```yaml
 # docker-compose.prod.yml â€” for production-like environments
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 version: "3.9"
 services:
   app:
@@ -501,9 +565,13 @@ Usage:
 
 ```bash
 # Dev
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 docker compose up -d
 
 # Production-like
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 ```
 
@@ -511,6 +579,8 @@ docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 
 ```yaml
 # application-docker.yml
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 server:
   port: 8080
 
@@ -753,6 +823,8 @@ ENTRYPOINT ["java", \
 
 ```yaml
 # Docker Compose
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 deploy:
   resources:
     limits:
@@ -763,6 +835,8 @@ deploy:
 
 ```bash
 # Docker run
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 docker run --cpus=2 --memory=512m myapp:latest
 ```
 
@@ -792,6 +866,8 @@ deploy:
 
 ```dockerfile
 # Low-latency workloads (p95 < 10ms)
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 ENTRYPOINT ["java", \
   "-XX:+UseZGC", \
   "-XX:MaxRAMPercentage=70.0", \
@@ -799,6 +875,8 @@ ENTRYPOINT ["java", \
   "-jar", "/app/app.jar"]
 
 # Throughput workloads
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 ENTRYPOINT ["java", \
   "-XX:+UseParallelGC", \
   "-XX:MaxRAMPercentage=70.0", \
@@ -806,6 +884,8 @@ ENTRYPOINT ["java", \
   "-jar", "/app/app.jar"]
 
 # Small containers (< 256 MB)
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 ENTRYPOINT ["java", \
   "-XX:+UseSerialGC", \
   "-XX:MaxRAMPercentage=70.0", \
@@ -843,6 +923,8 @@ ENTRYPOINT ["java", \
 
 ```dockerfile
 # ---- Stage 1: Build native image ----
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM ghcr.io/graalvm/graalvm-ce:latest AS native-build
 WORKDIR /build
 COPY pom.xml mvnw ./
@@ -850,11 +932,15 @@ COPY .mvn .mvn
 RUN ./mvnw dependency:go-offline -B
 
 # Add Spring AOT plugin
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 COPY pom.xml .
 COPY src src
 RUN ./mvnw -Pnative native:compile -DskipTests -B
 
 # ---- Stage 2: Runtime for native image ----
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 FROM ubuntu:22.04
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates && rm -rf /var/lib/apt/lists/*
 RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
@@ -1030,6 +1116,8 @@ volumes:
 
 ```bash
 # .env.dev
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 ENVIRONMENT=dev
 PORT=8080
 DB_PASSWORD=devpassword
@@ -1039,6 +1127,8 @@ MEM_LIMIT=512M
 
 ```bash
 # .env.prod
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 ENVIRONMENT=prod
 PORT=8080
 DB_PASSWORD=secure-password-here
@@ -1110,18 +1200,34 @@ Running `docker compose up` works for a single host, but production needs:
 
 ```yaml
 # 1. Start with Compose
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 docker compose up -d
 
 # 2. Convert using kompose
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 kompose convert -f docker-compose.yml -o k8s-manifests/
 
 # 3. Manually refine the generated manifests
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 #    - Add liveness/readiness probes
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 #    - Configure resource requests/limits
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 #    - Set up ConfigMaps and Secrets
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 #    - Add HorizontalPodAutoscaler
 
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
+
 # 4. Deploy to Kubernetes
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 kubectl apply -f k8s-manifests/
 ```
 
@@ -1134,6 +1240,8 @@ kubectl apply -f k8s-manifests/
 ```bash
 #!/bin/bash
 # build.sh â€” Build Docker images with proper tags
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 
 set -euo pipefail
 
@@ -1204,31 +1312,61 @@ ENTRYPOINT ["java", \
 
 ```dockerfile
 # 1. Use a non-root user
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser
 
 # 2. Remove unnecessary tools
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # (Alpine is already minimal, distroless has no shell)
 
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
+
 # 3. Don't run as PID 1 â€” use tini for signal handling
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 RUN apk add --no-cache tini
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["java", "-jar", "/app/app.jar"]
 
 # 4. Read-only root filesystem
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # In Kubernetes: securityContext.readOnlyRootFilesystem: true
 
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
+
 # 5. Drop capabilities
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # In Kubernetes: securityContext.capabilities.drop: ["ALL"]
 
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
+
 # 6. Use secrets, not environment variables
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # In Docker Compose: secrets:
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # In Kubernetes: secrets:
 
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
+
 # 7. Scan images for vulnerabilities
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # Trivy: trivy image myapp:latest
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # Snyk: snyk container test myapp:latest
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 # Grype: grype myapp:latest
+
+> **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 ```
 
 ---
@@ -1247,6 +1385,66 @@ CMD ["java", "-jar", "/app/app.jar"]
 | CDS archive | Startup speed (not size) | Medium |
 
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Approach A | Core description | Primary differentiator | When to use this |
+| Approach B | Core description | Primary differentiator | When to use this |
+| Approach C | Core description | Primary differentiator | When to use this |
+
+## Quick Reference
+
+| Category | Key Commands/APIs | Notes |
+|----------|------------------|-------|
+| **Setup** | Required dependencies and configuration | Verify versions match |
+| **Implementation** | Core code patterns | Test edge cases |
+| **Testing** | Verification methods | Cover success and failure paths |
+
+## Cross-Application Matrix
+
+| Scenario | Pattern A | Pattern B | Pattern C |
+|----------|-----------|-----------|-----------|
+| Small application | âœ“ | âœ— | âœ“ |
+| Enterprise system | âœ“ | âœ“ | âœ— |
+| High-throughput API | âœ— | âœ“ | âœ“ |
+| Event-driven | âœ— | âœ“ | âœ“ |
+
+## Chapter Quiz
+
+1. What is the primary benefit of this chapter's main topic?
+   - A) Improved performance
+   - B) Better developer productivity
+   - C) Enhanced reliability
+   - D) All of the above
+
+<details>
+<summary>Answer</summary>
+**C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.
+</details>
+
+2. Which approach is recommended for production deployments?
+   - A) The simplest solution
+   - B) The most feature-rich option
+   - C) The one with best operational characteristics
+   - D) Whatever the team knows best
+
+<details>
+<summary>Answer</summary>
+**C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.
+</details>
+
+3. When should you consider this pattern?
+   - A) For every project regardless of size
+   - B) When complexity justifies the overhead
+   - C) Only in legacy systems
+   - D) Never â€” it is outdated
+
+<details>
+<summary>Answer</summary>
+**B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.
+</details>
 
 ## Summary
 

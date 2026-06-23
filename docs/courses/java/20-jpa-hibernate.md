@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="../19-jdbc-jooq.md">â† Previous (JDBC/JOOQ)</a> | <a href="../21-spring-data-jpa.md">Next (Spring Data JPA) â†’</a>
-</p>
+> **Previous:** [JDBC/JOOQ](./19-jdbc-jooq.md) | **Next:** [Spring Data JPA](./21-spring-data-jpa.md)
 
 # JPA & Hibernate Deep Dive
 

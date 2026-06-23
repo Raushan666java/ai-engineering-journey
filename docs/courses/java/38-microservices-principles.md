@@ -1,4 +1,5 @@
-# Microservices Architecture Principles
+﻿# Microservices Architecture Principles
+> **Previous:** [Event-Driven Architecture and Saga Pattern](37-event-driven-saga.md) | **Next:** [Service Discovery](39-discovery.md)
 
 ## Learning Objectives
 
@@ -11,11 +12,73 @@ By the end of this chapter, you will be able to:
 - Implement the database-per-service pattern and recognize the shared-database anti-pattern
 - Understand service mesh concepts including sidecar proxies, Istio, Linkerd, traffic management, observability, and security
 
+---
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Microservices â€” independently deployable, loosely coupled services | Bounded contexts, autonomous teams, polyglot persistence |
+| Communication â€” synchronous (REST/gRPC) vs async (events/messaging) | Choose sync for queries, async for commands and events |
+| Observability â€” logging, metrics, and distributed tracing | Centralized logging (ELK), metrics (Prometheus + Grafana), tracing (Jaeger/Zipkin) |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Microservices Principles] --> B[Design Principles]
+    A --> C[Communication]
+    A --> D[Observability]
+    A --> E[Deployment]
+    B --> B1[Bounded Context]
+    B --> B2[Autonomy / Decentralization]
+    C --> C1[Synchronous]
+    C --> C2[Asynchronous]
+    D --> D1[Logging / Metrics / Tracing]
+    E --> E1[CI/CD / Containerization]
+```
+
+---
+## Concept Comparison Table
+
+| Concept | Description | Key Difference |
+|---------|-------------|----------------|
+| REST | HTTP sync communication | Simple, universally supported |
+| gRPC | Binary, streaming RPC | Fast, typed, bidirectional streams |
+| Messaging | Async via broker | Loose coupling, buffered delivery |
+| Events | Async via event bus | Event sourcing, CQRS support |
+
+---
+## Quick Reference
+
+| Element | Purpose | Example |
+|---------|---------|---------|
+| `@SpringBootApplication` | Microservice entry point | Includes auto-config, component scan, property support |
+| `spring-boot-starter-actuator` | Health checks and metrics | `/actuator/health`, `/actuator/metrics` |
+| `spring-boot-starter-web` | REST endpoint support | Embedded Tomcat, Jackson, validation |
+| Maven/Gradle multi-module | Shared API contracts | `api` module defines DTOs and interfaces |
+
+---
+## Cross-Application Matrix
+
+| Domain | Application | Use Case |
+|--------|-------------|----------|
+| E-Commerce Platform | Microservices per domain | Order, Inventory, Payment, Shipping as separate services |
+| SaaS Platform | Bounded contexts | Tenant management, Billing, Analytics as independent services |
+| Media Streaming | CQRS + Events | Content ingestion (write) vs delivery (read) separated |
+
+---
+## Chapter Quiz
+
+1. What is a bounded context in Domain-Driven Design? **Answer:** A logical boundary where a particular domain model applies, with its own ubiquitous language
+2. What are the three pillars of observability? **Answer:** Logging, Metrics, Distributed Tracing
+3. Why prefer async communication over sync in microservices? **Answer:** Loose coupling â€” services do not need to be available simultaneously
+
 ## Theory
 
 ### Domain-Driven Design and Bounded Context
 
-Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the **bounded context** â€” a explicit boundary within which a particular domain model applies. Each bounded context has its own **ubiquitous language**, a shared vocabulary used by domain experts and developers alike.
+Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the **bounded context** Ã¢â‚¬â€ a explicit boundary within which a particular domain model applies. Each bounded context has its own **ubiquitous language**, a shared vocabulary used by domain experts and developers alike.
 
 ![Microservices Architecture Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/38-microservices-principles.png)
 
@@ -34,7 +97,7 @@ Three primary strategies guide service decomposition:
 
 1. **By Business Capability**: Map each business capability (e.g., Order Management, Inventory, Shipping) to a separate service
 2. **By Subdomain**: Use DDD subdomains (core, supporting, generic) to identify service boundaries
-3. **By Conway's Law**: Structure services to match the team organization â€” "organizations design systems that mirror their communication structure"
+3. **By Conway's Law**: Structure services to match the team organization Ã¢â‚¬â€ "organizations design systems that mirror their communication structure"
 
 ### Inter-Service Communication
 
@@ -46,7 +109,7 @@ Three primary strategies guide service decomposition:
 
 ### Data Ownership
 
-**Database-per-service** is the preferred pattern â€” each service owns its data exclusively and exposes it only through its API. The **shared-database anti-pattern** couples services at the data layer, creating hidden dependencies that prevent independent evolution.
+**Database-per-service** is the preferred pattern Ã¢â‚¬â€ each service owns its data exclusively and exposes it only through its API. The **shared-database anti-pattern** couples services at the data layer, creating hidden dependencies that prevent independent evolution.
 
 ### Service Mesh
 
@@ -58,6 +121,15 @@ A service mesh manages inter-service communication through a dedicated infrastru
 - **Traffic Management**: Canary releases, blue-green deployments, circuit breaking
 - **Observability**: Metrics, traces, and access logs from all service-to-service communication
 - **Security**: mTLS between sidecars, fine-grained access policies
+
+> [!TIP]
+> Start with a monolith. Extract microservices only when you understand the domain boundaries â€” premature decomposition adds complexity without benefit.
+
+> [!WARNING]
+> Synchronous calls between services (REST/gRPC) create runtime coupling. Use circuit breakers and timeouts to prevent cascading failures.
+
+> [!NOTE]
+> Every service must expose health, metrics, and distributed tracing â€” without observability, a microservices architecture is unmanageable.
 
 ## Complete Code Examples
 
@@ -239,7 +311,7 @@ management:
         include: health,info,metrics
 ```
 
-### Domain Model â€” Value Objects
+### Domain Model Ã¢â‚¬â€ Value Objects
 
 ```java
 package com.course.microservices.order.domain.vo;
@@ -759,7 +831,7 @@ public class PaymentReceivedEvent extends DomainEvent {
 }
 ```
 
-### Domain Model â€” Entity & Aggregate
+### Domain Model Ã¢â‚¬â€ Entity & Aggregate
 
 ```java
 package com.course.microservices.order.domain.model;

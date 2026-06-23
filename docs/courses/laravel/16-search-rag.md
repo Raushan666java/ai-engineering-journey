@@ -1,4 +1,5 @@
 # Chapter 16: Semantic Search, Vector Search & RAG with pgvector
+> **Previous:** [Laravel MCP -- Model Context Protocol](./15-mcp) | **Next:** [Boost](./17-boost)
 
 ---
 ## Learning Objectives
@@ -7,6 +8,32 @@
 - Install and configure pgvector for vector similarity search in Laravel
 - Build a complete RAG (Retrieval-Augmented Generation) pipeline
 - Integrate Laravel Scout with database, full-text, and vector engines
+## Chapter at a Glance
+
+| Section | Key Topics |
+|---------|-----------|
+| Full-Text Search | MySQL MATCH/AGAINST, PostgreSQL tsvector |
+| Semantic Search | Embeddings, cosine similarity |
+| pgvector | Extension, vector columns, HNSW indexes |
+| Embedding Generation | Str::toEmbeddings(), batch processing |
+| Vector Search | whereVectorSimilarTo(), auto-embedding |
+| Reranking | Cross-encoder rescoring, Collection rerank |
+| Laravel Scout | Database engine, full-text attributes |
+| RAG Patterns | Full-text + reranking, vector + filters, hybrid |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Full-Text Search] --> B[Semantic Search Concept]
+    B --> C[pgvector Installation]
+    C --> D[Generating Embeddings]
+    D --> E[Storing Vectors]
+    E --> F[Complete Search Pipeline]
+    F --> G[Reranking]
+    G --> H[Laravel Scout]
+    H --> I[RAG Patterns]
+```
 ---
 
 ## Theory
@@ -169,6 +196,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::ensureVectorExtensionExists();
+
+> **Pro Tip:** The HNSW index parameters (ef_construction, m) balance build time vs. accuracy. Start with ef_construction=200 and m=16 for most applications. Increase ef_construction for better quality at the cost of slower index building.
     }
 
     public function down(): void
@@ -281,6 +310,8 @@ class EmbedDocuments extends Command
 
         foreach ($documents as $document) {
             $embedding = Str::of($document->content)->toEmbeddings();
+
+> **Remember:** Always cache embeddings using content-hash keys during batch indexing. Generating embeddings is both time-consuming and costly — caching prevents redundant API calls during re-indexing operations.
 
             $document->forceFill([
                 'content_embedding' => $embedding,
@@ -498,6 +529,8 @@ class RerankedSearchController extends Controller
 
         // Step 1: Fast retrieval with vector search
         $documents = Document::whereVectorSimilarTo(
+
+> **Warning:** The minSimilarity threshold directly impacts RAG answer quality. Too low (0.3) includes irrelevant context that confuses the LLM. Too high (0.85) may miss relevant documents. Tune this per use case — start at 0.4 and adjust based on result quality.
             'content_embedding',
             $validated['query'],
             minSimilarity: 0.3
@@ -978,6 +1011,67 @@ Route::post('/docs/ask', DocumentationRagController::class)
 ```
 
 ---
+
+
+## Concept Comparison
+
+| Feature | Full-Text Search | Vector Search | Hybrid Search |
+|---------|-----------------|---------------|---------------|
+| Matching | Keywords, stemming | Semantic meaning | Both |
+| Language | Query-dependent | Language-agnostic | Both |
+| Index | B-tree, GIN | HNSW (IVFFlat) | Both |
+| Speed | Fast | Fast (with HNSW) | Moderate |
+| Cold Start | Zero config | Embeddings required | Both required |
+| Best For | Exact terms, SKU | Synonyms, concepts | General purpose |
+
+## Quick Reference — Search Methods
+
+| Method | Purpose |
+|--------|---------|
+| `whereFullText(['col1','col2'], $query)` | Full-text search |
+| `whereVectorSimilarTo('embedding', $text, 0.4)` | Semantic search (auto-embed) |
+| `whereVectorSimilarTo('embedding', $array, 0.4)` | Semantic search (pre-computed) |
+| `$collection->rerank('field', $query)` | Re-rank results |
+| `Model::search($query)->paginate()` | Scout search |
+| `Str::of($text)->toEmbeddings()` | Generate embedding |
+
+## Cross-Application Matrix
+
+| Concept | Documentation | E-Commerce | Support System |
+|---------|-------------|-----------|---------------|
+| Search Type | Hybrid | Full-text + vector | Vector + filters |
+| Primary Index | Full-text (title, body) | Vector (product names) | Vector (articles) |
+| Filter | Version, category | Category, price range | Product, tenant |
+| Rerank | Top 50 \u2192 10 | Top 20 \u2192 5 | Top 30 \u2192 5 |
+| Cache TTL | 5 minutes | 1 minute | 10 minutes |
+
+## Chapter Quiz
+
+**1. Which PostgreSQL operator does pgvector use for cosine distance?**
+- a) <#>
+- b) <=>
+- c) <->
+- d) <@>
+
+**2. What does the vector column dimension parameter (e.g., 1536) correspond to?**
+- a) The number of rows in the table
+- b) The embedding model's output dimensions
+- c) The index size
+- d) The query timeout
+
+**3. Which Scout attribute enables MySQL MATCH/AGAINST queries?**
+- a) SearchUsingPrefix
+- b) SearchUsingFullText
+- c) SearchUsingLike
+- d) SearchUsingMatch
+
+**4. What is the primary benefit of the retrieve-then-rerank pattern?**
+- a) Faster queries
+- b) Improved precision with manageable cost
+- c) Reduced storage
+- d) Simpler code
+
+**Answers: 1-b, 2-b, 3-b, 4-b**
 
 ## Summary
 - Full-text search uses database-native `MATCH/AGAINST` (MySQL) or `to_tsvector` (PostgreSQL) via `whereFullText()`

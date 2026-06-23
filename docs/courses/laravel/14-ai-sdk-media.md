@@ -1,4 +1,5 @@
 # Chapter 14: Laravel AI SDK â€” Images, Audio, Transcriptions & Embeddings
+> **Previous:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools) | **Next:** [Laravel MCP -- Model Context Protocol](./15-mcp)
 
 ---
 ## Learning Objectives
@@ -9,6 +10,33 @@
 - Implement caching strategies for embeddings to reduce API costs and latency
 - Apply reranking to improve search result relevance using supported providers
 - Test and mock AI SDK operations using the built-in fake implementations
+## Chapter at a Glance
+
+| Section | Key Topics |
+|---------|-----------|
+| Image Generation | Text-to-image, provider selection, options |
+| Text-to-Speech | Audio synthesis, voice selection |
+| Speech-to-Text | Transcription, timestamps |
+| Embeddings | Str helper, Embeddings class, batch processing |
+| Embedding Caching | Cache keys, observer invalidation |
+| Reranking | Cross-encoder rescoring |
+| Vector Stores | File management, provider-side storage |
+| Failover & Retry | Provider chaining, exponential backoff |
+| Testing | Fakes for all AI SDK operations |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Image Generation] --> B[Text-to-Speech]
+    B --> C[Speech-to-Text]
+    C --> D[Embeddings]
+    D --> E[Embedding Caching]
+    E --> F[Reranking]
+    F --> G[Vector Stores]
+    G --> H[Failover & Retry]
+    H --> I[Testing & Fakes]
+```
 ---
 ## Theory
 
@@ -16,6 +44,8 @@
 
 
 ### 14.1 Image Generation
+
+> **One-Sentence Takeaway:** The Image class provides a unified interface for generating images across providers like OpenAI (DALL-E 3), Gemini, and Azure.
 
 The `Laravel\Ai\Image` class provides a unified interface for generating images from text prompts. Supported providers include OpenAI (DALL-E 3), Gemini, xAI, Azure OpenAI, Amazon Bedrock, and OpenRouter.
 
@@ -82,11 +112,15 @@ class ImageController extends Controller
         Storage::disk('public')->put($filename, $rawContent);
 
         return ['url' => Storage::disk('public')->url($filename)];
+
+> **Pro Tip:** Always validate and sanitize image prompts before sending to the API. Provider content policies vary — what works on OpenAI may be rejected by Gemini. Append style guidance ('photorealistic', 'digital art') for consistent results.
     }
 }
 ```
 
 ### 14.2 Text-to-Speech (TTS) Audio
+
+> **One-Sentence Takeaway:** The Audio class converts text to spoken audio with support for OpenAI TTS-1, ElevenLabs, and Gemini, accepting voice and stability parameters.
 
 The `Laravel\Ai\Audio` class converts text to spoken audio. Supported providers include OpenAI (TTS-1), ElevenLabs, and Gemini:
 
@@ -125,6 +159,8 @@ class AudioController extends Controller
 ```
 
 ### 14.3 Speech-to-Text Transcription
+
+> **One-Sentence Takeaway:** The Transcript class transcribes audio files to text with Whisper, supporting word-level timestamps for segmented analysis.
 
 The `Laravel\Ai\Transcript` class transcribes audio to text. Supported providers include OpenAI (Whisper), ElevenLabs, Mistral, and Gemini:
 
@@ -201,6 +237,8 @@ class TranscriptionController extends Controller
 
 ### 14.4 Embeddings
 
+> **One-Sentence Takeaway:** Str::toEmbeddings() handles single texts while Embeddings::for([...])->generate() batch-processes multiple texts in a single API call for efficiency.
+
 Embeddings convert text into high-dimensional vector representations capturing semantic meaning. The SDK provides two approaches.
 
 #### 14.4.1 The `Str` Helper
@@ -227,6 +265,8 @@ class IndexDocuments extends Command
             ->each(function (Document $document): void {
                 $text = $document->title . "\n\n" . $document->content;
                 $embedding = Str::of($text)->toEmbeddings();
+
+> **Remember:** Embedding API calls are stateless — generating the same text twice costs twice. Always implement caching with content-hash keys (md5 of the input text) to avoid redundant API costs.
                 $document->forceFill([
                     'embedding' => $embedding,
                     'embedding_indexed_at' => now(),
@@ -326,6 +366,8 @@ class SearchController extends Controller
 
 ### 14.5 Caching Embeddings
 
+> **One-Sentence Takeaway:** Cache embeddings using content-hash keys to avoid redundant API calls; observer hooks invalidate caches when documents change.
+
 Cache embeddings using a deterministic hash to avoid redundant API calls:
 
 ```php
@@ -391,6 +433,8 @@ class DocumentObserver
 
 ### 14.6 Reranking
 
+> **One-Sentence Takeaway:** Reranking rescales initial search results using cross-encoder models from Cohere, Jina, and VoyageAI for improved precision.
+
 Reranking rescores initial results using a cross-encoder model. Supported providers: Cohere, Jina, VoyageAI.
 
 ```php
@@ -414,6 +458,8 @@ class RerankController extends Controller
         ];
 
         $results = Reranking::of($documents)->rerank($request->input('query'));
+
+> **Warning:** Reranking adds latency and cost per operation. Only rerank the top 20-50 results from your initial retrieval, not the entire corpus. The two-stage retrieve-then-rerank pattern balances speed with accuracy.
 
         return [
             'results' => $results->map(fn($r) => [
@@ -540,6 +586,8 @@ class ResilientImageController extends Controller
 ```
 
 ### 14.9 Testing AI SDK Operations
+
+> **One-Sentence Takeaway:** The SDK provides fake implementations for Agent, Image, Audio, Transcript, Embedding, and Reranking, enabling deterministic, side-effect-free testing.
 
 The SDK provides fake implementations for deterministic testing.
 
@@ -722,6 +770,65 @@ class MultiModalAnalyzer
 ```
 
 ---
+
+## Concept Comparison
+
+| Feature | Str::toEmbeddings() | Embeddings::for() |
+|---------|--------------------|-------------------|
+| Scope | Single text | Multiple texts (batch) |
+| API Calls | 1 per invocation | 1 for entire batch |
+| Efficiency | Lower (per-text call) | Higher (batched) |
+| Use Case | Real-time search query | Batch document indexing |
+
+## Quick Reference — AI SDK Media Methods
+
+| Method | Purpose |
+|--------|---------|
+| `Image::of($prompt)->generate()` | Generate image |
+| `Audio::of($text)->generate()` | Text-to-speech |
+| `Transcript::of($file)->fromFile()` | Speech-to-text |
+| `Str::of($text)->toEmbeddings()` | Single embedding |
+| `Embeddings::for([$texts])->generate()` | Batch embeddings |
+| `Reranking::of($docs)->rerank($query)` | Re-rank results |
+
+## Cross-Application Matrix
+
+| Concept | Media App | Content Platform | Enterprise Search |
+|---------|----------|-----------------|-----------------|
+| Image Gen | Thumbnails, covers | Social media posts | Report headers |
+| TTS | Audiobooks | Article narration | Accessibility |
+| Embeddings | Video descriptions | Article search | Document retrieval |
+| Reranking | Search relevance | Content discovery | Compliance search |
+| Caching | Video metadata | Article embeddings | Legal documents |
+
+## Chapter Quiz
+
+**1. Which method generates a single text embedding?**
+- a) Embeddings::for([$text])->generate()
+- b) Str::of($text)->toEmbeddings()
+- c) Text::embed($text)
+- d) Vector::create($text)
+
+**2. What is the purpose of Reranking in a search pipeline?**
+- a) To reduce the number of search results
+- b) To rescale initial results using a cross-encoder
+- c) To generate search query embeddings
+- d) To cache search results
+
+**3. Which facade provides fake implementations for testing?**
+- a) Agent::fake(), Image::fake(), Audio::fake()
+- b) Mock::fake(), Stub::fake()
+- c) Test::fake(), Assert::fake()
+- d) Fake::agent(), Fake::image()
+
+**4. How does failover work in the AI SDK?**
+- a) By retrying the same provider
+- b) By chaining providers with priority ordering
+- c) By switching to a local model
+- d) By caching the last successful response
+
+**Answers: 1-b, 2-b, 3-a, 4-b**
+
 ## Summary
 
 - Image generation uses `Image::of(prompt)->generate()` with support for OpenAI, Gemini, xAI, Azure, Bedrock, and OpenRouter

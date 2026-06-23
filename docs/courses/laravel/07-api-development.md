@@ -1,4 +1,5 @@
 # Chapter 7: API Development & Integration
+> **Previous:** [Queues, Jobs, Notifications & Mail](./06-queues-notifications) | **Next:** [Broadcasting, Events & Real-Time Features](./08-broadcasting-realtime)
 
 ---
 
@@ -10,14 +11,44 @@
 - Authenticate and authorize API consumers using Laravel Sanctum with token abilities and expiry
 - Apply API versioning strategies, rate limiting, response formatting, and error handling
 - Integrate GraphQL endpoints using the Lighthouse package
+## Chapter at a Glance
 
+| Section | Key Topics |
+|---------|-----------|
+| RESTful Design | HTTP verbs, status codes, HATEOAS |
+| Resource Controllers | apiResource, nested, shallow nesting |
+| API Resources | JsonResource, conditional attributes, pagination |
+| JSON:API | Native support in Laravel 13 |
+| Sanctum Auth | Token creation, abilities, expiry |
+| Versioning | URI, header, query parameter strategies |
+| Rate Limiting | Limiters, throttle middleware |
+| Error Handling | Exception rendering, custom exceptions |
+| GraphQL | Lighthouse schema-first integration |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[RESTful Design] --> B[Resource Controllers]
+    B --> C[API Resources]
+    C --> D[JSON:API]
+    D --> E[Sanctum Auth]
+    E --> F[Versioning]
+    F --> G[Rate Limiting]
+    G --> H[Error Handling]
+    G --> I[GraphQL]
+```
 ---
 
 ## Theory
 
+> **One-Sentence Takeaway:** RESTful APIs treat server data as resources accessed through standard HTTP verbs with consistent status codes.
+
 ![API Development Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/07-api-development.png)
 
 ### RESTful API Design
+
+> **One-Sentence Takeaway:** API endpoints represent nouns (resources) not verbs (actions), with GET/POST/PUT/PATCH/DELETE mapping to CRUD operations.
 
 REST treats server data as resources accessed through a uniform interface. API endpoints represent **nouns** (resources), not **verbs** (actions):
 
@@ -27,6 +58,8 @@ REST treats server data as resources accessed through a uniform interface. API e
 | POST      | `/users`       | Create a new user    |
 | GET       | `/users/{id}`  | Show a specific user |
 | PUT       | `/users/{id}`  | Full user update     |
+
+> **Remember:** PUT replaces the entire resource — missing fields are set to null. PATCH only applies partial modifications. Use PUT sparingly; PATCH is almost always the better choice for update endpoints.
 | PATCH     | `/users/{id}`  | Partial user update  |
 | DELETE    | `/users/{id}`  | Delete a user        |
 
@@ -74,8 +107,12 @@ Route::apiResource('photos.comments', CommentController::class)->shallow();
 
 ### API Resources & Collections
 
+> **One-Sentence Takeaway:** API Resources transform Eloquent models into JSON with conditional attributes, relationship inclusion, and automatic pagination metadata.
+
 ```bash
 php artisan make:resource UserResource
+
+> **Pro Tip:** Use `$this->whenLoaded('relation')` in API Resources to conditionally include relationships only when they've been eager loaded. This prevents silent N+1 queries from accidental resource usage.
 ```
 
 ```php
@@ -115,6 +152,8 @@ Pagination metadata is automatically included in JSON responses with `links` (fi
 
 ### JSON:API Resources (Laravel 13)
 
+> **One-Sentence Takeaway:** Laravel 13's native JSON:API support provides structured resources with relationship inclusion (?include) and sparse fieldsets (?fields).
+
 Laravel 13 introduces native support for the JSON:API specification. Generate resources with:
 
 ```bash
@@ -149,6 +188,8 @@ class ArticleResource extends JsonApiResource
 Relationship inclusion via `include` parameter: `GET /api/articles?include=author,comments`. Sparse fieldsets via `fields` parameter: `GET /api/articles?fields[articles]=title,body`. Response headers must include `Content-Type: application/vnd.api+json`.
 
 ### Sanctum Token Authentication
+
+> **One-Sentence Takeaway:** Sanctum provides token authentication with typed abilities, configurable expiry, and straightforward revocation.
 
 Add `HasApiTokens` trait to User model:
 
@@ -199,6 +240,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
 ### API Versioning
 
+> **One-Sentence Takeaway:** URI versioning is the simplest approach, while header-based versioning keeps URLs clean but requires more client configuration.
+
 **URI versioning:**
 
 ```php
@@ -214,10 +257,14 @@ Route::prefix('v2')->group(function () {
 
 ### Rate Limiting
 
+> **One-Sentence Takeaway:** Rate limiting via RateLimiter::for() and the throttle middleware protects API endpoints from abuse and brute-force attacks.
+
 Define limiters in `AppServiceProvider`:
 
 ```php
 RateLimiter::for('api', function (Request $request) {
+
+> **Warning:** Always differentiate rate limits between authenticated and unauthenticated users. Authenticated users should get higher limits (e.g., 100/min) than guests (e.g., 30/min) to prevent IP-based shared limits from affecting legitimate users.
     return Limit::perMinute(60)
         ->by($request->user()?->id ?: $request->ip());
 });
@@ -465,6 +512,71 @@ Route::prefix('v1')->group(function () {
 ```
 
 ---
+
+
+## Concept Comparison
+
+| Feature | REST | GraphQL |
+|---------|------|---------|
+| Data Fetching | Fixed response structure | Client-specified fields |
+| Over-fetching | Common | Eliminated |
+| Endpoints | Multiple (one per resource) | Single endpoint |
+| Versioning | URI/header required | Schema evolution |
+| Caching | HTTP caching (ETag, Last-Modified) | Complex (per-query) |
+| Tooling | Swagger/OpenAPI | GraphiQL, Apollo DevTools |
+
+## Quick Reference — HTTP Status Codes
+
+| Code | Meaning | Use Case |
+|------|---------|----------|
+| 200 | OK | Successful GET, PUT, PATCH |
+| 201 | Created | Successful POST (new resource) |
+| 204 | No Content | Successful DELETE |
+| 400 | Bad Request | Malformed request body |
+| 401 | Unauthorized | Missing/invalid authentication |
+| 403 | Forbidden | Authenticated but not authorized |
+| 404 | Not Found | Resource does not exist |
+| 422 | Unprocessable Entity | Validation failure |
+| 429 | Too Many Requests | Rate limit exceeded |
+| 500 | Internal Server Error | Unexpected server error |
+
+## Cross-Application Matrix
+
+| Concept | Blog API | E-Commerce API | SaaS API |
+|---------|---------|---------------|----------|
+| Auth | Sanctum tokens | Sanctum + OAuth | Sanctum + API keys |
+| Versioning | v1 URI prefix | v1 \u2192 v2 header | v2 URI prefix |
+| Pagination | Cursor-based | LengthAware 20/page | Cursor 50/page |
+| Rate Limit | 60/min auth, 20/min guest | 100/min auth, 10/min guest | Tiered by plan |
+| Error Format | JSON:API errors | Custom error codes | RFC 7807 Problem Details |
+
+## Chapter Quiz
+
+**1. Which artisan command generates the correct routes for an API-only resource?**
+- a) Route::resource()
+- b) Route::apiResource()
+- c) Route::restResource()
+- d) Route::jsonResource()
+
+**2. What does Sanctum's tokenCan() method check?**
+- a) Token expiration date
+- b) Token ability/permission
+- c) Token creation time
+- d) Token IP restriction
+
+**3. Which pagination method avoids the COUNT query and is stable with new insertions?**
+- a) paginate()
+- b) simplePaginate()
+- c) cursorPaginate()
+- d) lengthAwarePaginate()
+
+**4. What is the purpose of $this->whenLoaded() in an API Resource?**
+- a) Load a relationship lazily
+- b) Conditionally include data when relation is loaded
+- c) Eager load a relationship
+- d) Filter relationship results
+
+**Answers: 1-b, 2-b, 3-c, 4-b**
 
 ## Summary
 

@@ -1,6 +1,27 @@
 ![Service Mesh - Istio and Envoy](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-c.png)
 
-### Q14: How do you deploy microservices on Kubernetes?
+## Chapter at a Glance
+
+| Topic | Key Focus | Key Questions |
+|-------|----------|--------------|
+| Core Concepts | Foundational understanding | Definitions, contrasts, trade-offs |
+| Code Examples | Compilable, runnable solutions | Real interview scenarios |
+| Best Practices | Production-ready patterns | Pitfalls to avoid |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Core Concepts] --> B[Code Examples]
+    B --> C[Edge Cases]
+    C --> D[Best Practices]
+```
+
+### Q14: How do you deploy microservices on Kubernetes?
+> **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
+
+> **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
+
 
 **Answer:**
 
@@ -8,6 +29,8 @@ Kubernetes orchestrates containerized microservices with deployments, services, 
 
 ```yaml
 # â”€â”€ Deployment for a microservice â”€â”€
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -69,6 +92,8 @@ spec:
               cpu: "500m"
 ---
 # â”€â”€ Service (stable network endpoint) â”€â”€
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: v1
 kind: Service
 metadata:
@@ -82,6 +107,8 @@ spec:
   type: ClusterIP  # Internal â€” only accessible within the cluster
 ---
 # â”€â”€ ConfigMap for non-sensitive config â”€â”€
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -93,6 +120,8 @@ data:
       max-batch-size: 100
 ---
 # â”€â”€ HPA (auto-scaling) â”€â”€
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
@@ -113,6 +142,8 @@ spec:
           averageUtilization: 70
 ---
 # â”€â”€ Ingress (external traffic routing) â”€â”€
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -144,6 +175,8 @@ spec:
 Spring Boot Kubernetes-friendly configuration:
 ```yaml
 # application-k8s.yml
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 spring:
   cloud:
     kubernetes:
@@ -206,12 +239,26 @@ spec:
     version: green   # â† Flip this from "blue" to "green" to switch traffic
 ---
 # Deploy green:
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 # kubectl apply -f deployment-green.yml
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 # Wait for all green pods to pass readiness probes
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 # Then switch traffic:
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 # kubectl patch service order-service -p '{"spec":{"selector":{"version":"green"}}}'
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 # When confirmed, delete blue:
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 # kubectl delete -f deployment-blue.yml
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 
 // â”€â”€ Canary deployment (traffic splitting) â”€â”€
 // Route 5% of traffic to the new version, monitor, then gradually increase
@@ -342,6 +389,8 @@ public class PaymentProcessor {
 
 ```yaml
 # â”€â”€ Prometheus config (prometheus.yml) â”€â”€
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 scrape_configs:
   - job_name: 'spring-boot-apps'
     metrics_path: '/actuator/prometheus'
@@ -362,6 +411,8 @@ scrape_configs:
 
 ```yaml
 # â”€â”€ Kubernetes PodMonitor (operator-based scraping) â”€â”€
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 apiVersion: monitoring.coreos.com/v1
 kind: PodMonitor
 metadata:
@@ -436,6 +487,8 @@ public abstract class BaseContractTest {
 
 ```bash
 # Generate contract tests + publish stubs:
+
+> **Previous:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-b.md) | **Next:** [Microservices Interview Q&amp;A (cont.)](./60-interview-microservices-d.md)
 ./mvnw verifystubs:8080
 ```
 
@@ -737,3 +790,63 @@ class OrderServiceWireMockTest {
 ```
 
 End-to-end tests are slow and flaky. Keep them to 3-5 critical paths per service. Rely on contract tests for cross-service integration and unit tests for business logic.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Interface | Contract without state | Multiple inheritance of type | API contracts |
+| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
+| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
+
+## Quick Reference
+
+| Topic | Key Points | Interview Frequency |
+|-------|-----------|-------------------|
+| **OOP** | Encapsulation, Inheritance, Polymorphism, Abstraction | Every interview |
+| **Collections** | List, Set, Map, Queue, Deque | 9/10 interviews |
+| **Concurrency** | synchronized, volatile, Locks, CompletableFuture | 7/10 senior interviews |
+| **Java 8+** | Lambdas, Streams, Optional, CompletableFuture | 8/10 interviews |
+
+## Cross-Application Matrix
+
+| Skill | Junior (0-2yr) | Mid (3-5yr) | Senior (6-9yr) | Staff (10+) |
+|-------|---------------|-------------|----------------|-------------|
+| OOP & Design Patterns | Define and identify | Apply and combine | Evaluate and refactor | Create and teach |
+| Collections | Basic usage | Performance trade-offs | Concurrent collections | Custom implementations |
+| Concurrency | Syntax knowledge | Write thread-safe code | Debug deadlocks | Design concurrent systems |
+
+## Chapter Quiz
+
+1. What is the difference between equals() and == in Java?
+   - A) They are identical
+   - B) equals() compares values, == compares references
+   - C) == compares values, equals() compares references
+   - D) equals() is for primitives, == is for objects
+
+<details>
+<summary>Answer</summary>
+**B) equals() compares logical equality (overridable), == compares reference equality.**
+</details>
+
+2. Which collection guarantees insertion order?
+   - A) HashMap
+   - B) TreeMap
+   - C) LinkedHashMap
+   - D) HashSet
+
+<details>
+<summary>Answer</summary>
+**C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
+</details>
+
+3. What keyword prevents a method from being overridden?
+   - A) static
+   - B) final
+   - C) private
+   - D) abstract
+
+<details>
+<summary>Answer</summary>
+**B) final.** A final method cannot be overridden by subclasses.
+</details>

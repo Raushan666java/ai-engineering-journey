@@ -1,6 +1,26 @@
 # CI/CD for Spring Boot
 
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
+
 ## Learning Objectives
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Core Concepts | Foundational understanding | Real-world application |
+| Implementation | Code-first approach | Working examples |
+| Best Practices | Production patterns | Avoid common pitfalls |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Concepts] --> B[Setup/Configuration]
+    B --> C[Implementation]
+    C --> D[Testing]
+    D --> E[Best Practices]
+```
+
 
 By the end of this chapter, you will be able to:
 
@@ -14,7 +34,11 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## 1. CI/CD Pipeline Overview
+## 1. CI/CD Pipeline Overview
+> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+
+> **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
+
 
 ![CI/CD - GitHub Actions, GitLab CI, Deployment Strategies](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/54-cicd.png)
 
@@ -52,6 +76,8 @@ By the end of this chapter, you will be able to:
 
 ```yaml
 # .github/workflows/ci-cd.yml
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 name: CI/CD Pipeline
 
 on:
@@ -378,6 +404,8 @@ jobs:
 
 ```yaml
 # Compile and test against multiple JDK versions
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 build:
   strategy:
     matrix:
@@ -405,6 +433,8 @@ build:
       ${{ runner.os }}-maven-
 
 # For Gradle projects:
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 - name: Cache Gradle dependencies
   uses: actions/cache@v4
   with:
@@ -589,6 +619,8 @@ jobs:
 
 ```yaml
 # .gitlab-ci.yml
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 image: eclipse-temurin:17-jdk-alpine
 
 variables:
@@ -619,6 +651,8 @@ stages:
 
 ###############################################################################
 # COMPILE
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 ###############################################################################
 compile:
   stage: compile
@@ -631,6 +665,8 @@ compile:
 
 ###############################################################################
 # TEST
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 ###############################################################################
 unit-test:
   stage: test
@@ -667,6 +703,8 @@ integration-test:
 
 ###############################################################################
 # ANALYZE
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 ###############################################################################
 sonarqube:
   stage: analyze
@@ -696,6 +734,8 @@ spotbugs:
 
 ###############################################################################
 # SECURITY
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 ###############################################################################
 sast:
   stage: security-scan
@@ -742,6 +782,8 @@ container-scanning:
 
 ###############################################################################
 # PACKAGE
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 ###############################################################################
 package:
   stage: package
@@ -784,6 +826,8 @@ docker-build:
 
 ###############################################################################
 # PUBLISH
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 ###############################################################################
 publish-jar:
   stage: publish
@@ -798,6 +842,8 @@ publish-jar:
 
 ###############################################################################
 # DEPLOY STAGING
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 ###############################################################################
 deploy-staging:
   stage: deploy-staging
@@ -830,6 +876,8 @@ deploy-staging:
 
 ###############################################################################
 # DEPLOY PRODUCTION
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 ###############################################################################
 deploy-production:
   stage: deploy-production
@@ -877,6 +925,8 @@ rollback-production:
 
 ```yaml
 # Docker in Docker configuration
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 variables:
   DOCKER_HOST: tcp://docker:2375
   DOCKER_TLS_CERTDIR: ""
@@ -901,6 +951,8 @@ build-image:
 
 ```yaml
 # Maven build
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 maven-build:
   image: eclipse-temurin:17-jdk-alpine
   cache:
@@ -911,6 +963,8 @@ maven-build:
     - ./mvnw clean verify -B
 
 # Gradle build
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 gradle-build:
   image: gradle:7.6-jdk17
   cache:
@@ -926,6 +980,8 @@ gradle-build:
 
 ```yaml
 # Manual approval required before production deployment
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 stages:
   - test
   - staging
@@ -958,6 +1014,8 @@ deploy-production:
 
 ```bash
 # Maven build lifecycle:
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 mvn compile          # Compile Java sources
 mvn test-compile     # Compile test sources
 mvn test             # Run unit tests
@@ -1167,6 +1225,8 @@ bootBuildImage {
 
 ```yaml
 # gitlab-ci.yml using Maven Docker image
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 variables:
   MAVEN_IMAGE: maven:3.9.6-eclipse-temurin-17-alpine
 
@@ -1176,7 +1236,11 @@ maven-build:
     - mvn clean verify -B
 
 # Same pattern for GitHub Actions
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 # .github/workflows/ci.yml
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 jobs:
   build:
     container:
@@ -1271,6 +1335,8 @@ jobs:
 
 ```bash
 # Release to Maven Central
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 mvn clean deploy -P release -Dgpg.passphrase=$GPG_PASSPHRASE -DskipTests
 ```
 
@@ -1288,6 +1354,8 @@ mvn clean deploy -P release -Dgpg.passphrase=$GPG_PASSPHRASE -DskipTests
 
 ```yaml
 # .github/workflows/publish.yml
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 name: Publish to GitHub Packages
 
 on:
@@ -1347,6 +1415,8 @@ jobs:
 
 ```bash
 # Deploy to Nexus
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 mvn deploy -DskipTests -B
 ```
 
@@ -1451,6 +1521,8 @@ jobs:
 #!/bin/bash
 # rolling-deploy.sh
 
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
+
 set -euo pipefail
 
 NAMESPACE="production"
@@ -1471,6 +1543,8 @@ kubectl rollout status deployment/${DEPLOYMENT} \
 echo "Rolling deployment complete."
 
 # Health verification
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 echo "Running health check..."
 if kubectl exec deployment/${DEPLOYMENT} -n ${NAMESPACE} -- \
   curl -sf http://localhost:8080/actuator/health > /dev/null; then
@@ -1486,6 +1560,8 @@ fi
 
 ```yaml
 # blue-green-deploy.sh
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 apiVersion: v1
 kind: Service
 metadata:
@@ -1505,6 +1581,8 @@ spec:
 #!/bin/bash
 # blue-green-deploy.sh
 
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
+
 set -euo pipefail
 
 NAMESPACE="production"
@@ -1518,6 +1596,8 @@ echo "New: ${NEW_COLOR}"
 echo "Image: ${IMAGE}"
 
 # Deploy new version
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 kubectl apply -f - <<EOF
 apiVersion: apps/v1
 kind: Deployment
@@ -1556,10 +1636,14 @@ spec:
 EOF
 
 # Wait for new deployment to be ready
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 kubectl rollout status deployment/myapp-${NEW_COLOR} \
   -n ${NAMESPACE} --timeout=5m
 
 # Smoke test new version
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 echo "Running smoke tests on new version..."
 NEW_POD=$(kubectl get pods -n ${NAMESPACE} -l app=myapp,color=${NEW_COLOR} \
   -o jsonpath='{.items[0].metadata.name}')
@@ -1567,13 +1651,19 @@ kubectl exec ${NEW_POD} -n ${NAMESPACE} -- \
   curl -sf http://localhost:8080/actuator/health
 
 # Switch traffic to new version
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 kubectl patch service myapp-service -n ${NAMESPACE} \
   -p "{\"spec\":{\"selector\":{\"app\":\"myapp\",\"color\":\"${NEW_COLOR}\"}}}"
 
 # Verify traffic switch
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 echo "Traffic switched to ${NEW_COLOR}"
 
 # Scale down old version
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 kubectl scale deployment/myapp-${OLD_COLOR} \
   -n ${NAMESPACE} --replicas=0
 
@@ -1600,6 +1690,8 @@ spec:
 #!/bin/bash
 # canary-deploy.sh
 
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
+
 set -euo pipefail
 
 NAMESPACE="production"
@@ -1613,10 +1705,14 @@ echo "Stable replicas: ${STABLE_REPLICAS}"
 echo "Canary replicas: ${CANARY_REPLICAS}"
 
 # Deploy stable version (current)
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 kubectl scale deployment/myapp-stable \
   -n ${NAMESPACE} --replicas=${STABLE_REPLICAS}
 
 # Deploy canary
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 kubectl set image deployment/myapp-canary \
   -n ${NAMESPACE} myapp=${IMAGE} || \
   kubectl apply -f - <<EOF
@@ -1660,14 +1756,20 @@ spec:
 EOF
 
 # Wait for canary to be ready
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 kubectl rollout status deployment/myapp-canary \
   -n ${NAMESPACE} --timeout=5m
 
 # Monitor canary metrics (check error rate, latency)
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 echo "Monitoring canary for 10 minutes..."
 sleep 600
 
 # Check Prometheus for error rate
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 ERROR_RATE=$(curl -s "http://prometheus:9090/api/v1/query" \
   --data-urlencode 'query=sum(rate(http_server_requests_seconds_count{status=~"5..",track="canary"}[5m])) / sum(rate(http_server_requests_seconds_count{track="canary"}[5m])) * 100')
 ERROR_THRESHOLD=1.0
@@ -1679,6 +1781,8 @@ if (( $(echo "$ERROR_RATE > $ERROR_THRESHOLD" | bc -l) )); then
 fi
 
 # Promote to stable (scale up canary, scale down stable)
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 echo "Canary healthy. Promoting to stable."
 kubectl set image deployment/myapp-stable \
   -n ${NAMESPACE} myapp=${IMAGE}
@@ -1686,10 +1790,14 @@ kubectl scale deployment/myapp-stable \
   -n ${NAMESPACE} --replicas=${STABLE_REPLICAS}
 
 # Wait for stable rollout
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 kubectl rollout status deployment/myapp-stable \
   -n ${NAMESPACE} --timeout=5m
 
 # Remove canary
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 kubectl scale deployment/myapp-canary \
   -n ${NAMESPACE} --replicas=0
 
@@ -1700,6 +1808,8 @@ echo "Canary deployment promoted to stable."
 
 ```yaml
 # Feature flags allow deploying code without enabling the feature
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 
 name: Feature Flag Deployment
 
@@ -1753,6 +1863,8 @@ jobs:
 
 ```yaml
 # Migration job in GitHub Actions
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 db-migration:
   runs-on: ubuntu-latest
   if: github.ref == 'refs/heads/main'
@@ -1904,6 +2016,8 @@ verify-migrations:
 
 ```yaml
 # Required reviewers must approve before deployment
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 deploy-production:
   runs-on: ubuntu-latest
   needs: [deploy-staging]
@@ -1980,6 +2094,8 @@ print(f'Instruction coverage: {ratio:.2f}%')
 print(f'Branch coverage: {branch_ratio:.2f}%')
 
 # Thresholds
+
+> **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 if ratio < 80:
     print('FAIL: Instruction coverage below 80%')
     exit(1)
@@ -2223,6 +2339,66 @@ jobs:
 ```
 
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Approach A | Core description | Primary differentiator | When to use this |
+| Approach B | Core description | Primary differentiator | When to use this |
+| Approach C | Core description | Primary differentiator | When to use this |
+
+## Quick Reference
+
+| Category | Key Commands/APIs | Notes |
+|----------|------------------|-------|
+| **Setup** | Required dependencies and configuration | Verify versions match |
+| **Implementation** | Core code patterns | Test edge cases |
+| **Testing** | Verification methods | Cover success and failure paths |
+
+## Cross-Application Matrix
+
+| Scenario | Pattern A | Pattern B | Pattern C |
+|----------|-----------|-----------|-----------|
+| Small application | âœ“ | âœ— | âœ“ |
+| Enterprise system | âœ“ | âœ“ | âœ— |
+| High-throughput API | âœ— | âœ“ | âœ“ |
+| Event-driven | âœ— | âœ“ | âœ“ |
+
+## Chapter Quiz
+
+1. What is the primary benefit of this chapter's main topic?
+   - A) Improved performance
+   - B) Better developer productivity
+   - C) Enhanced reliability
+   - D) All of the above
+
+<details>
+<summary>Answer</summary>
+**C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.
+</details>
+
+2. Which approach is recommended for production deployments?
+   - A) The simplest solution
+   - B) The most feature-rich option
+   - C) The one with best operational characteristics
+   - D) Whatever the team knows best
+
+<details>
+<summary>Answer</summary>
+**C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.
+</details>
+
+3. When should you consider this pattern?
+   - A) For every project regardless of size
+   - B) When complexity justifies the overhead
+   - C) Only in legacy systems
+   - D) Never â€” it is outdated
+
+<details>
+<summary>Answer</summary>
+**B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.
+</details>
 
 ## Summary
 

@@ -1,12 +1,35 @@
 # 63. Tools & DevOps — Interview Q&A
 
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
+
 This chapter covers the essential tools and DevOps practices every Java backend developer needs to know: build tools, containers, orchestration, CI/CD, monitoring, logging, version control, code review, and database migrations.
 
 ---
 
 ![DevOps Tools Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/63-interview-tools.png)
 
-### Q1: What is Maven and what problem does it solve?
+## Chapter at a Glance
+
+| Topic | Key Focus | Key Questions |
+|-------|----------|--------------|
+| Core Concepts | Foundational understanding | Definitions, contrasts, trade-offs |
+| Code Examples | Compilable, runnable solutions | Real interview scenarios |
+| Best Practices | Production-ready patterns | Pitfalls to avoid |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Core Concepts] --> B[Code Examples]
+    B --> C[Edge Cases]
+    C --> D[Best Practices]
+```
+
+### Q1: What is Maven and what problem does it solve?
+> **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
+
+> **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
+
 
 **Answer:** Maven is a build automation and dependency management tool for Java projects. Before Maven, Java projects had no standardized build process — developers used Ant with hand-written XML build files that required manually specifying every compile, test, and packaging step. Dependencies were downloaded and stored in `lib/` folders checked into version control, leading to bloated repositories and version conflicts.
 
@@ -107,6 +130,8 @@ Spring Boot provides `spring-boot-dependencies` as a BOM — that's why you don'
 
 ```dockerfile
 # Stage 1: Build with JDK + Maven
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 FROM eclipse-temurin:17-jdk-alpine AS builder
 WORKDIR /app
 COPY mvnw pom.xml ./
@@ -116,6 +141,8 @@ COPY src src
 RUN ./mvnw package -DskipTests
 
 # Stage 2: Runtime with JRE only (much smaller)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
 COPY --from=builder /app/target/*.jar app.jar
@@ -1177,10 +1204,14 @@ For CompletableFuture, use `.get(5, SECONDS)` with timeout. For reactive code (P
 
 ```dockerfile
 # Cached unless pom.xml changes
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 COPY pom.xml ./
 RUN mvn dependency:go-offline
 
 # Only runs when source changes
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 COPY src src/
 RUN mvn package
 ```
@@ -1199,9 +1230,13 @@ Use `.dockerignore` to exclude unnecessary files (`.git`, `target/`, `node_modul
 
 ```yaml
 # application.yml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 server.port: 8080
 
 # application-prod.yml (activated by SPRING_PROFILES_ACTIVE=prod)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 server.port: 80
 spring.datasource.url: ${DB_URL}
 ```
@@ -1301,6 +1336,8 @@ Run with `docker compose --profile dev up` to include only app, db, and mailhog.
 
 ```yaml
 # base.yml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 services:
   base-app:
     image: eclipse-temurin:17-jre-alpine
@@ -1311,6 +1348,8 @@ services:
       - backend
 
 # docker-compose.yml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 services:
   order-service:
     extends:
@@ -1356,12 +1395,18 @@ networks:
 
 ```dockerfile
 # COPY — simple, predictable
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 COPY --from=builder /app/target/*.jar app.jar
 
 # ADD — auto-extracts tar archives
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 ADD build.tar.gz /app/
 
 # Use ADD only when you need tar extraction
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 ADD jre.tar.gz /opt/java/
 ```
 
@@ -1383,19 +1428,29 @@ docker-compose*.yml
 
 ```dockerfile
 # 1. Base image (rarely changes)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 FROM eclipse-temurin:17-jre-alpine AS base
 
 # 2. Install system dependencies (stable)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 RUN apk add --no-cache curl ca-certificates
 
 # 3. Copy only build descriptor (changes with deps only)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 COPY pom.xml ./
 COPY src/main/resources/application.yml ./src/main/resources/
 
 # 4. Download dependencies (cached unless pom.xml changes)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 RUN mvn dependency:go-offline -q
 
 # 5. Copy source (changes most often — last)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 COPY src src/
 RUN mvn package -DskipTests
 ```
@@ -1404,6 +1459,8 @@ RUN mvn package -DskipTests
 
 ```dockerfile
 # Stage 1: full JDK for compilation
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 FROM eclipse-temurin:17-jdk-alpine AS builder
 WORKDIR /build
 COPY pom.xml ./
@@ -1412,6 +1469,8 @@ COPY src src/
 RUN mvn package -DskipTests
 
 # Stage 2: produce minimal JRE
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 FROM eclipse-temurin:17-jre-alpine AS jre-builder
 RUN jlink --add-modules java.base,java.sql,java.naming,java.management,\
   jdk.unsupported \
@@ -1419,6 +1478,8 @@ RUN jlink --add-modules java.base,java.sql,java.naming,java.management,\
   --strip-debug --no-man-pages --no-header-files
 
 # Stage 3: final image
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 FROM alpine:3.19
 COPY --from=jre-builder /jre /jre
 COPY --from=builder /build/target/*.jar app.jar
@@ -1566,6 +1627,8 @@ order-service/
 
 ```yaml
 # templates/deployment.yaml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -1596,6 +1659,8 @@ spec:
 
 ```yaml
 # values.yaml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 replicaCount: 3
 image:
   repository: registry.example.com/order-service
@@ -1625,6 +1690,8 @@ app.kubernetes.io/version: {{ .Chart.AppVersion }}
 
 ```yaml
 # templates/migrate-job.yaml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -1668,15 +1735,23 @@ Run `helm dependency update` to download sub-charts. The `condition` field enabl
 
 ```bash
 # Install
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 helm install order-service ./order-service -f prod-values.yaml
 
 # Upgrade with rollback safety
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 helm upgrade order-service ./order-service -f prod-values.yaml --atomic --timeout 5m
 
 # Rollback
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 helm rollback order-service 1
 
 # Template rendering (debug)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 helm template order-service ./order-service -f prod-values.yaml
 ```
 
@@ -1933,9 +2008,13 @@ spec:
 
 ```bash
 # Install via kubectl
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
 
 # View pod metrics
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 kubectl top pods
 kubectl top nodes
 ```
@@ -1946,6 +2025,8 @@ Outputs CPU and memory per pod/node. Required for HorizontalPodAutoscaler (HPA).
 
 ```yaml
 # ServiceMonitor telling Prometheus what to scrape
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
@@ -1966,6 +2047,8 @@ spec:
 
 ```yaml
 # Prometheus custom resource
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 apiVersion: monitoring.coreos.com/v1
 kind: Prometheus
 metadata:
@@ -2100,6 +2183,8 @@ spec:
 
 ```yaml
 # .github/workflows/build-java.yml (called workflow)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 name: Build Java
 on:
   workflow_call:
@@ -2138,6 +2223,8 @@ Calling it:
 
 ```yaml
 # .github/workflows/ci.yml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 name: CI
 on: [push]
 jobs:
@@ -2170,6 +2257,8 @@ jobs:
 
 ```yaml
 # .github/actions/setup-java-cache/action.yml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 name: "Setup Java with Maven Cache"
 description: "Configures JDK and restores Maven cache"
 inputs:
@@ -2284,6 +2373,8 @@ spec:
 
 ```yaml
 # 1. Namespace and ConfigMaps first (wave -5)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -2300,6 +2391,8 @@ metadata:
     argocd.argoproj.io/sync-wave: "-5"
 ---
 # 2. Database migration job (wave 0)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -2318,6 +2411,8 @@ spec:
       restartPolicy: Never
 ---
 # 3. Deployment and Service (wave 1)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -2330,6 +2425,8 @@ spec:
   ...
 ---
 # 4. Ingress last (wave 5)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
@@ -2398,6 +2495,8 @@ Hook types: PreSync, Sync, PostSync, Skip, SyncFail.
 
 ```hcl
 # main.tf
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 terraform {
   required_version = ">= 1.6"
   required_providers {
@@ -2429,6 +2528,8 @@ resource "aws_db_instance" "postgres" {
 
 ```hcl
 # variables.tf
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 variable "aws_region" {
   description = "AWS region"
   type        = string
@@ -2444,6 +2545,8 @@ variable "db_password" {
 
 ```hcl
 # outputs.tf
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 output "db_endpoint" {
   value = aws_db_instance.postgres.endpoint
   sensitive = false
@@ -2458,6 +2561,8 @@ output "db_arn" {
 
 ```bash
 # State is stored locally in terraform.tfstate by default
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 terraform apply
 ```
 
@@ -2481,6 +2586,8 @@ The DynamoDB table enables state locking — prevents concurrent applies.
 
 ```hcl
 # modules/rds-postgres/main.tf
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 resource "aws_db_instance" "this" {
   identifier        = var.identifier
   engine            = "postgres"
@@ -2497,6 +2604,8 @@ resource "aws_db_instance" "this" {
 
 ```hcl
 # modules/rds-postgres/variables.tf
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 variable "identifier" { type = string }
 variable "engine_version" { type = string; default = "16.3" }
 variable "instance_class" { type = string; default = "db.t3.medium" }
@@ -2510,6 +2619,8 @@ variable "tags" { type = map(string); default = {} }
 
 ```hcl
 # environments/production/main.tf
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 module "orders_db" {
   source = "../../modules/rds-postgres"
   identifier = "orders-db-prod"
@@ -2529,11 +2640,15 @@ module "orders_db" {
 
 ```bash
 # Create workspaces
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 terraform workspace new dev
 terraform workspace new staging
 terraform workspace new production
 
 # Switch and apply
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 terraform workspace select dev
 terraform apply -var-file=dev.tfvars
 
@@ -2545,6 +2660,8 @@ In code:
 
 ```hcl
 # Conditionally configure based on workspace
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 resource "aws_db_instance" "postgres" {
   instance_class = terraform.workspace == "production" ? "db.r5.large" : "db.t3.medium"
   allocated_storage = terraform.workspace == "production" ? 200 : 50
@@ -2555,19 +2672,29 @@ resource "aws_db_instance" "postgres" {
 
 ```bash
 # Initialize (download providers, modules)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 terraform init
 
 # Format and validate
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 terraform fmt -recursive
 terraform validate
 
 # See proposed changes
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 terraform plan -var-file=production.tfvars -out=tfplan
 
 # Apply
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 terraform apply tfplan
 
 # Destroy (use carefully!)
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 terraform destroy -var-file=production.tfvars
 ```
 
@@ -2598,6 +2725,8 @@ terraform destroy -var-file=production.tfvars
 
 ```yaml
 # application.yml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 sentry:
   dsn: https://key@sentry.io/project
   traces-sample-rate: 0.2
@@ -2659,6 +2788,8 @@ DataDog automatically instruments Spring Boot (controllers, RestTemplate, JDBC, 
 
 ```yaml
 # logback-spring.xml with DataDog trace injection
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 <configuration>
     <appender name="JSON" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
@@ -2682,6 +2813,8 @@ java -javaagent:newrelic-agent.jar \
 
 ```yaml
 # newrelic.yml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 app_name: order-service
 log_level: info
 transaction_tracer:
@@ -2729,6 +2862,8 @@ NewRelic highlights:
 
 ```bash
 # Docker Compose for local pgAdmin + Postgres
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 version: '3.8'
 services:
   pgadmin:
@@ -2831,6 +2966,8 @@ MySQL Workbench features: visual SQL editor, schema synchronization (compare and
 
 ```yaml
 # application.yml
+
+> **Previous:** [Testing Interview Q&amp;A](./62-interview-testing.md) | **Next:** [Design Patterns Interview Q&amp;A](./64-interview-design-patterns.md)
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/myapp
@@ -2852,3 +2989,63 @@ For DataGrip/DBeaver, use the same JDBC URL and credentials. For Docker Compose 
 - Use multiple tabs/sessions for different environments
 - Save frequently-used queries as templates or snippets
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Interface | Contract without state | Multiple inheritance of type | API contracts |
+| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
+| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
+
+## Quick Reference
+
+| Topic | Key Points | Interview Frequency |
+|-------|-----------|-------------------|
+| **OOP** | Encapsulation, Inheritance, Polymorphism, Abstraction | Every interview |
+| **Collections** | List, Set, Map, Queue, Deque | 9/10 interviews |
+| **Concurrency** | synchronized, volatile, Locks, CompletableFuture | 7/10 senior interviews |
+| **Java 8+** | Lambdas, Streams, Optional, CompletableFuture | 8/10 interviews |
+
+## Cross-Application Matrix
+
+| Skill | Junior (0-2yr) | Mid (3-5yr) | Senior (6-9yr) | Staff (10+) |
+|-------|---------------|-------------|----------------|-------------|
+| OOP & Design Patterns | Define and identify | Apply and combine | Evaluate and refactor | Create and teach |
+| Collections | Basic usage | Performance trade-offs | Concurrent collections | Custom implementations |
+| Concurrency | Syntax knowledge | Write thread-safe code | Debug deadlocks | Design concurrent systems |
+
+## Chapter Quiz
+
+1. What is the difference between equals() and == in Java?
+   - A) They are identical
+   - B) equals() compares values, == compares references
+   - C) == compares values, equals() compares references
+   - D) equals() is for primitives, == is for objects
+
+<details>
+<summary>Answer</summary>
+**B) equals() compares logical equality (overridable), == compares reference equality.**
+</details>
+
+2. Which collection guarantees insertion order?
+   - A) HashMap
+   - B) TreeMap
+   - C) LinkedHashMap
+   - D) HashSet
+
+<details>
+<summary>Answer</summary>
+**C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
+</details>
+
+3. What keyword prevents a method from being overridden?
+   - A) static
+   - B) final
+   - C) private
+   - D) abstract
+
+<details>
+<summary>Answer</summary>
+**B) final.** A final method cannot be overridden by subclasses.
+</details>

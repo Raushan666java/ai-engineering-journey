@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="../22-migrations.md">â† Previous (Migrations)</a> | <a href="../24-transactions.md">Next (Transactions) â†’</a>
-</p>
+> **Previous:** [Migrations](./22-migrations.md) | **Next:** [Transactions](./24-transactions.md)
 
 # Spring Data for NoSQL
 

@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="../20-jpa-hibernate.md">â† Previous (JPA/Hibernate)</a> | <a href="../22-migrations.md">Next (Migrations) â†’</a>
-</p>
+> **Previous:** [JPA/Hibernate](./20-jpa-hibernate.md) | **Next:** [Migrations](./22-migrations.md)
 
 # Spring Data JPA
 

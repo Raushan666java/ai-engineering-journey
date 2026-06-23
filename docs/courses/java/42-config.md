@@ -1,6 +1,26 @@
 # Distributed Configuration
 
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
+
 ## Learning Objectives
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Core Concepts | Foundational understanding | Real-world application |
+| Implementation | Code-first approach | Working examples |
+| Best Practices | Production patterns | Avoid common pitfalls |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Concepts] --> B[Setup/Configuration]
+    B --> C[Implementation]
+    C --> D[Testing]
+    D --> E[Best Practices]
+```
+
 
 By the end of this chapter, you will be able to:
 
@@ -12,7 +32,11 @@ By the end of this chapter, you will be able to:
 - Integrate HashiCorp Vault for secure secrets management
 - Configure Spring Cloud Config Monitor with webhooks for automatic refresh
 
-## Theory
+## Theory
+> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+
+> **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
+
 
 ![Distributed Configuration - Spring Cloud Config Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/42-config.png)
 
@@ -132,6 +156,8 @@ public class ConfigServerApplication {
 
 ```yaml
 # src/main/resources/application.yml
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 server:
   port: 8888
 
@@ -217,6 +243,8 @@ management:
 
 ```yaml
 # src/main/resources/config-repo/order-service.yml
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/orderdb
@@ -256,6 +284,8 @@ management:
 
 ```yaml
 # src/main/resources/config-repo/order-service-dev.yml
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 server:
   port: 8081
 
@@ -279,6 +309,8 @@ order:
 
 ```yaml
 # src/main/resources/config-repo/order-service-prod.yml
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 server:
   port: 8081
 
@@ -310,6 +342,8 @@ order:
 
 ```yaml
 # src/main/resources/config-repo/payment-service.yml
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5433/paymentdb
@@ -338,6 +372,8 @@ payment:
 
 ```yaml
 # src/main/resources/config-repo/common.yml
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 spring:
   application:
     name: ${spring.application.name}
@@ -602,6 +638,8 @@ public class OrderServiceClientApplication {
 
 ```yaml
 # src/main/resources/bootstrap.yml
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 spring:
   application:
     name: order-service
@@ -629,6 +667,8 @@ spring:
 
 ```yaml
 # src/main/resources/application.yml
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 server:
   port: 8081
 
@@ -932,6 +972,8 @@ public class ConfigurationChangeLogger {
 
 ```yaml
 # config-client/bootstrap.yml (with bus)
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 spring:
   cloud:
     bus:
@@ -951,6 +993,8 @@ spring:
 
 ```yaml
 # config-client/bootstrap.yml (with Kafka bus)
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 spring:
   cloud:
     bus:
@@ -1012,6 +1056,8 @@ public class BusEventListener {
 
 ```yaml
 # config-server/bootstrap.yml for Vault
+
+> **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 spring:
   cloud:
     config:
@@ -1526,6 +1572,66 @@ class ConfigClientIntegrationTest {
     }
 }
 ```
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Approach A | Core description | Primary differentiator | When to use this |
+| Approach B | Core description | Primary differentiator | When to use this |
+| Approach C | Core description | Primary differentiator | When to use this |
+
+## Quick Reference
+
+| Category | Key Commands/APIs | Notes |
+|----------|------------------|-------|
+| **Setup** | Required dependencies and configuration | Verify versions match |
+| **Implementation** | Core code patterns | Test edge cases |
+| **Testing** | Verification methods | Cover success and failure paths |
+
+## Cross-Application Matrix
+
+| Scenario | Pattern A | Pattern B | Pattern C |
+|----------|-----------|-----------|-----------|
+| Small application | âœ“ | âœ— | âœ“ |
+| Enterprise system | âœ“ | âœ“ | âœ— |
+| High-throughput API | âœ— | âœ“ | âœ“ |
+| Event-driven | âœ— | âœ“ | âœ“ |
+
+## Chapter Quiz
+
+1. What is the primary benefit of this chapter's main topic?
+   - A) Improved performance
+   - B) Better developer productivity
+   - C) Enhanced reliability
+   - D) All of the above
+
+<details>
+<summary>Answer</summary>
+**C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.
+</details>
+
+2. Which approach is recommended for production deployments?
+   - A) The simplest solution
+   - B) The most feature-rich option
+   - C) The one with best operational characteristics
+   - D) Whatever the team knows best
+
+<details>
+<summary>Answer</summary>
+**C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.
+</details>
+
+3. When should you consider this pattern?
+   - A) For every project regardless of size
+   - B) When complexity justifies the overhead
+   - C) Only in legacy systems
+   - D) Never â€” it is outdated
+
+<details>
+<summary>Answer</summary>
+**B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.
+</details>
 
 ## Summary
 

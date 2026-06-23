@@ -1,4 +1,4 @@
-# Chapter 20: Scaling Laravel
+﻿# Chapter 20: Scaling Laravel
 
 ---
 ## Learning Objectives
@@ -18,6 +18,9 @@
 
 ### 1. Horizontal Scaling Fundamentals
 
+
+> **One-Sentence Takeaway:** Horizontal scaling adds more servers to distribute load, while vertical scaling upgrades a single server.
+
 Horizontal scaling adds more application servers rather than making a single server larger. Laravel applications must be designed as stateless, share-nothing processes.
 
 #### Stateless Application Design
@@ -25,22 +28,22 @@ Horizontal scaling adds more application servers rather than making a single ser
 A horizontally scalable Laravel instance stores zero important data in local memory or local files:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  App Node 1  â”‚  â”‚  App Node 2  â”‚  â”‚  App Node 3  â”‚
-â”‚  (ephemeral) â”‚  â”‚  (ephemeral) â”‚  â”‚  (ephemeral) â”‚
-â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜  â””â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-       â”‚                 â”‚                 â”‚
-       â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                         â”‚
-          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-          â”‚         Redis (state)        â”‚
-          â”‚  sessions Â· cache Â· queues   â”‚
-          â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                         â”‚
-          â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-          â”‚    Database (persistence)    â”‚
-          â”‚  primary + read replicas     â”‚
-          â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š  App Node 1  Ã¢â€â€š  Ã¢â€â€š  App Node 2  Ã¢â€â€š  Ã¢â€â€š  App Node 3  Ã¢â€â€š
+Ã¢â€â€š  (ephemeral) Ã¢â€â€š  Ã¢â€â€š  (ephemeral) Ã¢â€â€š  Ã¢â€â€š  (ephemeral) Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+       Ã¢â€â€š                 Ã¢â€â€š                 Ã¢â€â€š
+       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                         Ã¢â€â€š
+          Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+          Ã¢â€â€š         Redis (state)        Ã¢â€â€š
+          Ã¢â€â€š  sessions Ã‚Â· cache Ã‚Â· queues   Ã¢â€â€š
+          Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                         Ã¢â€â€š
+          Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+          Ã¢â€â€š    Database (persistence)    Ã¢â€â€š
+          Ã¢â€â€š  primary + read replicas     Ã¢â€â€š
+          Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 ```
 
 | State Type | Where to Store | Anti-pattern |
@@ -146,8 +149,38 @@ Horizontal scaling requires read replicas to prevent the database from becoming 
 ```
 
 ---
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Horizontal Scaling | Add more servers to handle increased load | Use load balancers and auto-scaling groups |
+| Laravel Vapor | Serverless Laravel on AWS Lambda | Auto-scales from zero to thousands of requests |
+| Octane | Swoole/RR-based performance boost | Persist framework in memory between requests |
+| Redis Cluster | Distributed Redis for caching and sessions | Use Redis Cluster for multi-node caching |
+| Read Replicas | Separate read DB connections | Configure read/write connections in database.php |
+| Queue Scaling | Multiple queue workers across servers | Use Horizon for queue monitoring and scaling |
+
+## Chapter Roadmap
+
+``mermaid
+flowchart LR
+    A[User] --> B[Load Balancer]
+    B --> C[Web Server Pool]
+    C --> D[App Servers - Octane]
+    D --> E[Redis Cluster]
+    D --> F[DB Primary]
+    F --> G[Read Replicas]
+    D --> H[Queue Workers]
+    C --> I[CDN]
+    J[Vapor] --> C
+``
+
+
 
 ### 2. Laravel Vapor (Serverless)
+
+
+> **One-Sentence Takeaway:** Vapor runs Laravel on AWS Lambda, auto-scaling from zero to thousands of concurrent requests.
 
 Vapor runs Laravel on AWS Lambda, abstracting server management entirely.
 
@@ -220,11 +253,11 @@ vapor deploy production
 Vapor uses RDS Proxy between Lambda and Aurora:
 
 ```
-Lambda Instance â†’ RDS Proxy â†’ Aurora Cluster
-     â”‚                             â”‚
-     â”‚  Connection pooling         â”‚  Read/write replicas
-     â”‚  IAM authentication         â”‚  Auto-scaling
-     â”‚  Minimal cold start latency  â”‚  Multi-AZ
+Lambda Instance Ã¢â€ â€™ RDS Proxy Ã¢â€ â€™ Aurora Cluster
+     Ã¢â€â€š                             Ã¢â€â€š
+     Ã¢â€â€š  Connection pooling         Ã¢â€â€š  Read/write replicas
+     Ã¢â€â€š  IAM authentication         Ã¢â€â€š  Auto-scaling
+     Ã¢â€â€š  Minimal cold start latency  Ã¢â€â€š  Multi-AZ
 ```
 
 Configure the proxy in `config/database.php`:
@@ -256,7 +289,7 @@ Configure the proxy in `config/database.php`:
 #### Vapor Cache
 
 ```php
-// Stored in ElastiCache Redis â€” persists across Lambda executions
+// Stored in ElastiCache Redis Ã¢â‚¬â€ persists across Lambda executions
 Cache::store('vapor')->put('key', 'value', 3600);
 $value = Cache::store('vapor')->get('key');
 ```
@@ -280,7 +313,7 @@ class ProcessPodcast implements ShouldQueue
 
     public function handle(): void
     {
-        // Job logic here â€” each invocation is isolated
+        // Job logic here Ã¢â‚¬â€ each invocation is isolated
         // Database connections managed by RDS Proxy
         // Cache available via Vapor cache store
     }
@@ -313,7 +346,13 @@ schedules:
 
 ---
 
+
+> **Pro Tip:** Use Vapor vapor.yml deploy file to define build commands, worker counts, and environment variables per environment.
+
 ### 3. Laravel Cloud
+
+
+> **One-Sentence Takeaway:** Laravel Cloud provides managed hosting with auto-scaling, databases, queues, and domains.
 
 Laravel Cloud is a managed PaaS with LAN-connected services, auto-scaling databases, and native CI/CD.
 
@@ -345,11 +384,11 @@ assets:
 LAN-connected services eliminate network latency between app, database, cache, and queue:
 
 ```
-App Container â”€â”€LANâ”€â”€â†’ Aurora Database
-     â”‚                  (sub-millisecond latency)
-     â”œâ”€â”€LANâ”€â”€â†’ ElastiCache Redis
-     â”œâ”€â”€LANâ”€â”€â†’ SQS Queue
-     â””â”€â”€LANâ”€â”€â†’ S3 Assets
+App Container Ã¢â€â‚¬Ã¢â€â‚¬LANÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€ â€™ Aurora Database
+     Ã¢â€â€š                  (sub-millisecond latency)
+     Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬LANÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€ â€™ ElastiCache Redis
+     Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬LANÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€ â€™ SQS Queue
+     Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬LANÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€ â€™ S3 Assets
 ```
 
 #### Auto-Scaling Databases
@@ -391,6 +430,9 @@ jobs:
 ---
 
 ### 4. Octane Performance Tuning
+
+
+> **One-Sentence Takeaway:** Octane boots Laravel once and keeps it in memory using Swoole or RoadRunner workers.
 
 Laravel Octane boots your application once and keeps it in memory across requests using Swoole or RoadRunner.
 
@@ -512,23 +554,29 @@ class OctaneServiceProvider extends ServiceProvider
 #### Dangerous Patterns in Octane
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                        Octane Anti-Patterns                            â”‚
-â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¤
-â”‚                                      â”‚                                 â”‚
-â”‚  Global state in static properties    â†’  Shared across requests         â”‚
-â”‚  Facade with deferred resolution       â†’  Resolution happens once        â”‚
-â”‚  Locally scoped cache without flush    â†’  Stale data persists forever    â”‚
-â”‚  Unclosed database transactions        â†’  Held across requests           â”‚
-â”‚  Memory accumulation in arrays         â†’  Worker grows over time         â”‚
-â”‚  Singletons with mutable state         â†’  Corrupted by concurrent reqs  â”‚
-â”‚                                                                         â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š                        Octane Anti-Patterns                            Ã¢â€â€š
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¤
+Ã¢â€â€š                                      Ã¢â€â€š                                 Ã¢â€â€š
+Ã¢â€â€š  Global state in static properties    Ã¢â€ â€™  Shared across requests         Ã¢â€â€š
+Ã¢â€â€š  Facade with deferred resolution       Ã¢â€ â€™  Resolution happens once        Ã¢â€â€š
+Ã¢â€â€š  Locally scoped cache without flush    Ã¢â€ â€™  Stale data persists forever    Ã¢â€â€š
+Ã¢â€â€š  Unclosed database transactions        Ã¢â€ â€™  Held across requests           Ã¢â€â€š
+Ã¢â€â€š  Memory accumulation in arrays         Ã¢â€ â€™  Worker grows over time         Ã¢â€â€š
+Ã¢â€â€š  Singletons with mutable state         Ã¢â€ â€™  Corrupted by concurrent reqs  Ã¢â€â€š
+Ã¢â€â€š                                                                         Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 ```
 
 ---
 
+
+> **Warning:** Octane requires careful attention to static state. Avoid storing request-specific data in class properties or singletons.
+
 ### 5. Redis Cluster
+
+
+> **One-Sentence Takeaway:** Redis Cluster distributes data across multiple nodes for high-availability caching at scale.
 
 When a single Redis instance can't keep up with memory or throughput demands, Redis Cluster distributes data across multiple nodes.
 
@@ -536,10 +584,10 @@ When a single Redis instance can't keep up with memory or throughput demands, Re
 
 ```
 Client
-  â”‚
-  â”œâ”€â”€ Hash slot 0-5460   â†’ Redis Node A (master + replica)
-  â”œâ”€â”€ Hash slot 5461-10922 â†’ Redis Node B (master + replica)
-  â””â”€â”€ Hash slot 10923-16383 â†’ Redis Node C (master + replica)
+  Ã¢â€â€š
+  Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Hash slot 0-5460   Ã¢â€ â€™ Redis Node A (master + replica)
+  Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Hash slot 5461-10922 Ã¢â€ â€™ Redis Node B (master + replica)
+  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Hash slot 10923-16383 Ã¢â€ â€™ Redis Node C (master + replica)
 ```
 
 Key routing uses CRC16 modulo 16384:
@@ -584,11 +632,11 @@ slot = CRC16("user:12345") % 16384
 Sentinel provides automatic failover:
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                   Sentinel                      â”‚
-â”‚  Monitors: Node A (master), Node B (slave),     â”‚
-â”‚  Node C (slave). If A fails, promote B.         â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š                   Sentinel                      Ã¢â€â€š
+Ã¢â€â€š  Monitors: Node A (master), Node B (slave),     Ã¢â€â€š
+Ã¢â€â€š  Node C (slave). If A fails, promote B.         Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 
 Laravel config connects via sentinel service:
 
@@ -641,6 +689,9 @@ Laravel config connects via sentinel service:
 ---
 
 ### 6. Database Read Replicas
+
+
+> **One-Sentence Takeaway:** Read replicas offload SELECT queries from the primary database, improving write throughput.
 
 Read replicas offload SELECT queries from the primary database, preserving write capacity.
 
@@ -774,28 +825,34 @@ class SubscriptionService
 
 ---
 
+
+> **Remember:** Configure separate read/write connections in config/database.php using the read key to specify replica hosts.
+
 ### 7. Queue Scaling
+
+
+> **One-Sentence Takeaway:** Multiple queue workers across servers process jobs in parallel; Horizon manages the fleet.
 
 Queue throughput determines how fast asynchronous work processes.
 
 #### Multiple Queue Workers on Multiple Servers
 
 ```
-â”Œâ”€ App Server 1 â”€â”    â”Œâ”€ Worker Pool A â”€â”
-â”‚  Web requests   â”‚    â”‚  php artisan    â”‚
-â”‚  + dispatch jobsâ”‚    â”‚  queue:work     â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜    â””â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                               â”‚
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                    â”‚       Redis/SQS      â”‚
-                    â”‚    (queue backend)   â”‚
-                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                               â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚         Worker Pool B        â”‚       Worker Pool C      â”‚
-â”‚  php artisan queue:work      â”‚  php artisan queue:work  â”‚
-â”‚  --queue=high,default        â”‚  --queue=default,low     â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+Ã¢â€Å’Ã¢â€â‚¬ App Server 1 Ã¢â€â‚¬Ã¢â€Â    Ã¢â€Å’Ã¢â€â‚¬ Worker Pool A Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š  Web requests   Ã¢â€â€š    Ã¢â€â€š  php artisan    Ã¢â€â€š
+Ã¢â€â€š  + dispatch jobsÃ¢â€â€š    Ã¢â€â€š  queue:work     Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                               Ã¢â€â€š
+                    Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+                    Ã¢â€â€š       Redis/SQS      Ã¢â€â€š
+                    Ã¢â€â€š    (queue backend)   Ã¢â€â€š
+                    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                               Ã¢â€â€š
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š         Worker Pool B        Ã¢â€â€š       Worker Pool C      Ã¢â€â€š
+Ã¢â€â€š  php artisan queue:work      Ã¢â€â€š  php artisan queue:work  Ã¢â€â€š
+Ã¢â€â€š  --queue=high,default        Ã¢â€â€š  --queue=default,low     Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 ```
 
 Each worker server runs:
@@ -881,7 +938,7 @@ dispatch(new SendWelcomeEmail($user))->onQueue('default');
 // Low priority
 dispatch(new GenerateReport($report))->onQueue('low');
 
-// Worker picks in order: high â†’ default â†’ low
+// Worker picks in order: high Ã¢â€ â€™ default Ã¢â€ â€™ low
 php artisan queue:work redis --queue=high,default,low
 ```
 
@@ -889,22 +946,25 @@ php artisan queue:work redis --queue=high,default,low
 
 ### 8. CDN (Content Delivery Network)
 
+
+> **One-Sentence Takeaway:** CDNs cache static assets at edge locations, reducing origin server load and latency.
+
 A CDN distributes static assets geographically, reducing latency and origin server load.
 
 #### CloudFront / Cloudflare Configuration
 
 ```
 User in Tokyo
-    â”‚
-    â”œâ”€â”€ CloudFront Edge (Tokyo)  â”€â”€cache hitâ”€â”€â†’  User gets asset
-    â”‚       â”‚
-    â”‚       â””â”€â”€ cache miss
-    â”‚           â”‚
-    â”‚           â””â”€â”€ Origin (us-east-1 S3 / App Server)
-    â”‚
-    â”œâ”€â”€ CloudFront Edge (London)  â”€â”€cache hitâ”€â”€â†’  Other user
-    â”‚
-    â””â”€â”€ CloudFront Edge (SÃ£o Paulo)
+    Ã¢â€â€š
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ CloudFront Edge (Tokyo)  Ã¢â€â‚¬Ã¢â€â‚¬cache hitÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€ â€™  User gets asset
+    Ã¢â€â€š       Ã¢â€â€š
+    Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ cache miss
+    Ã¢â€â€š           Ã¢â€â€š
+    Ã¢â€â€š           Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Origin (us-east-1 S3 / App Server)
+    Ã¢â€â€š
+    Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ CloudFront Edge (London)  Ã¢â€â‚¬Ã¢â€â‚¬cache hitÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€ â€™  Other user
+    Ã¢â€â€š
+    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ CloudFront Edge (SÃƒÂ£o Paulo)
 ```
 
 Laravel Mix / Vite integration:
@@ -1027,6 +1087,9 @@ class DownloadService
 
 ### 9. Session Scaling
 
+
+> **One-Sentence Takeaway:** Centralized Redis sessions allow any web server to handle any user request.
+
 Multiple application servers must share session state.
 
 #### Redis Session Driver
@@ -1068,7 +1131,7 @@ $token = $user->createToken('api-token', ['read', 'write'])->plainTextToken;
 // Return to client
 return response()->json(['token' => $token]);
 
-// Middleware handles verification â€” no session storage needed
+// Middleware handles verification Ã¢â‚¬â€ no session storage needed
 // Token is hashed and stored in DB, verified on every request
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', fn (Request $r) => $r->user());
@@ -1078,6 +1141,9 @@ Route::middleware('auth:sanctum')->group(function () {
 ---
 
 ### 10. Monitoring at Scale
+
+
+> **One-Sentence Takeaway:** Laravel Pulse, Horizon, and third-party tools provide real-time insights into application health.
 
 Without monitoring, scaling decisions are guesses.
 
@@ -1209,7 +1275,7 @@ return [
         'logs' => true,
         'queries' => [
             'enabled' => true,
-            'slow' => 100, // ms â€” captures slow queries
+            'slow' => 100, // ms Ã¢â‚¬â€ captures slow queries
         ],
         'requests' => true,
         'schedule' => true,
@@ -1218,12 +1284,67 @@ return [
 ];
 ```
 
-Nightwatch captures and groups production errors with full stack traces, request context, and database queries â€” critical for post-deployment monitoring.
+Nightwatch captures and groups production errors with full stack traces, request context, and database queries Ã¢â‚¬â€ critical for post-deployment monitoring.
 
 ---
 
+## Concept Comparison Table
+
+| Concept | Purpose | Key Benefit | Limitation |
+|---------|---------|-------------|------------|
+| Vapor | Serverless Lambda execution | Auto-scales to zero | Cold start latency |
+| Octane | Persistent in-memory app | Dramatic throughput increase | Static state risks |
+| Cloud | Managed Laravel platform | Zero ops overhead | Vendor lock-in |
+| Redis Cluster | Distributed caching | High availability | Operational complexity |
+
+## Quick Reference
+
+| Item | Description |
+|------|-------------|
+| php artisan octane:start --server=swoole|Start Octane with Swoole | php artisan octane:start --server=roadrunner|Start Octane with RoadRunner |
+| php artisan vapor:deploy|Deploy to Laravel Vapor | php artisan horizon|Start Horizon dashboard |
+
+## Cross-Application Matrix
+
+| Scenario | Approach | Benefit | Challenge |
+|----------|----------|---------|-----------|
+| High traffic | Vapor/Cloud + Octane | Auto-scaling, high throughput | Cost at scale |
+| Caching | Redis Cluster | Low-latency reads | Cluster management |
+| Database | Read replicas | Read throughput | Replica lag |
+| Assets | CDN | Low global latency | Cache invalidation |
+
+## Chapter Quiz
+
+1. What is Laravel Octane's primary optimization?
+   - A) Faster database queries
+   - B) Persistent in-memory application across requests
+   - C) Compressed responses
+   - D) Async database connections
+   <details><summary>Answer</summary>**B)** Octane boots Laravel once and keeps it in memory using Swoole or RoadRunner workers.</details>
+
+2. Which Laravel deployment platform runs on AWS Lambda?
+   - A) Laravel Forge
+   - B) Laravel Vapor
+   - C) Laravel Cloud
+   - D) Laravel Envoyer
+   <details><summary>Answer</summary>**B)** Laravel Vapor runs on AWS Lambda with auto-scaling serverless infrastructure.</details>
+
+3. What is the recommended approach for scaling sessions across multiple web servers?
+   - A) File-based sessions
+   - B) Database sessions
+   - C) Centralized Redis sessions
+   - D) Cookie-based sessions
+   <details><summary>Answer</summary>**C)** Centralized Redis sessions allow any web server to handle any user request.</details>
+
+4. What tool provides real-time application monitoring for Laravel?
+   - A) Telescope
+   - B) Horizon
+   - C) Pulse
+   - D) All of the above
+   <details><summary>Answer</summary>**D)** Pulse provides real-time metrics, Horizon monitors queues, and Telescope debugs requests.</details>
+
 ## Summary
-- Horizontal scaling requires stateless application design with all shared state stored in Redis, database, or S3 â€” never in local memory or files
+- Horizontal scaling requires stateless application design with all shared state stored in Redis, database, or S3 Ã¢â‚¬â€ never in local memory or files
 - Laravel Vapor abstracts server management entirely by running on AWS Lambda, with SQS queues, RDS Proxy connection pooling, and ElastiCache Redis for state
 - Laravel Cloud provides a managed PaaS with LAN-connected services, auto-scaling Aurora databases, and native CI/CD integration
 - Octane boots the framework once and serves thousands of requests per worker using Swoole or RoadRunner, but requires careful management of in-memory state

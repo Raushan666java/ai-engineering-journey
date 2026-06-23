@@ -23,9 +23,33 @@ By the end of this chapter you should be able to:
 - Apply pessimistic locking with `@Lock` annotations and `SELECT ... FOR UPDATE`
 - Implement optimistic locking with `@Version` and retry logic
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
+
 ---
 
-## @Transactional â€” Declarative Transactions
+## @Transactional Ã¢â‚¬â€ Declarative Transactions
 
 ![Transaction Management Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/24-transactions.png)
 
@@ -191,7 +215,7 @@ public class PropagationDemoService {
     @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void childRequiresNew() {
         // Suspends the caller's transaction and creates a brand new one.
-        // The new transaction commits independently â€” even if the parent
+        // The new transaction commits independently Ã¢â‚¬â€ even if the parent
         // rolls back, this child's work is already committed.
         auditLogRepository.save(new AuditLog("requires_new child executed"));
     }
@@ -358,7 +382,7 @@ public class InventoryService {
     @Transactional(isolation = Isolation.SERIALIZABLE)
     public void allocateInventory(Long orderId, List<OrderLine> lines) {
         // Strictest level: prevents phantoms and all anomalies
-        // Use sparingly â€” throughput suffers significantly
+        // Use sparingly Ã¢â‚¬â€ throughput suffers significantly
         for (OrderLine line : lines) {
             int stock = inventoryRepository.getStock(line.getProductId());
             if (stock >= line.getQuantity()) {
@@ -372,7 +396,7 @@ public class InventoryService {
 
     @Transactional(isolation = Isolation.READ_UNCOMMITTED)
     public int approximateStockLevel(Long productId) {
-        // Allows dirty reads â€” fastest but least safe
+        // Allows dirty reads Ã¢â‚¬â€ fastest but least safe
         return inventoryRepository.getStock(productId);
     }
 }
@@ -419,7 +443,7 @@ public class RollbackControlService {
     @Transactional(rollbackForClassName = {"java.sql.SQLException"},
                    noRollbackForClassName = {"com.course.tx.OptimisticLockException"})
     public void rollbackByClassName() {
-        // Class name strings â€” useful when the exception class isn't on the classpath
+        // Class name strings Ã¢â‚¬â€ useful when the exception class isn't on the classpath
         // at compile time
     }
 }
@@ -454,7 +478,7 @@ public class ReadOnlyDemoService {
 
     @Transactional(readOnly = true)
     public AccountSummary getAccountSummary(Long accountId) {
-        // Hibernate skips dirty checking â€” no flush at commit
+        // Hibernate skips dirty checking Ã¢â‚¬â€ no flush at commit
         // Database may optimize query path
         Account account = accountRepository.findById(accountId)
             .orElseThrow(() -> new IllegalArgumentException("Account not found"));
@@ -556,7 +580,7 @@ public class OrderFulfillmentService {
         order.setStatus("FULFILLED");
         order.setShippingLabel(label);
 
-        // 4. Log audit independently â€” uses REQUIRES_NEW
+        // 4. Log audit independently Ã¢â‚¬â€ uses REQUIRES_NEW
         // This persists even if the main transaction rolls back
         auditService.logAction(
             "ORDER_FULFILLED",
@@ -569,11 +593,35 @@ public class OrderFulfillmentService {
 }
 ```
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
+
 ---
 
-## TransactionTemplate â€” Programmatic Transactions
+## TransactionTemplate Ã¢â‚¬â€ Programmatic Transactions
 
-When you need fine-grained control over transaction boundaries â€” for example, looping with per-item transactions or conditionally committing â€” use `TransactionTemplate` instead of `@Transactional`.
+When you need fine-grained control over transaction boundaries Ã¢â‚¬â€ for example, looping with per-item transactions or conditionally committing Ã¢â‚¬â€ use `TransactionTemplate` instead of `@Transactional`.
 
 ### Basic TransactionTemplate
 
@@ -848,6 +896,30 @@ public class DynamicTransactionService {
 }
 ```
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
+
 ---
 
 ## PlatformTransactionManager Hierarchy
@@ -858,19 +930,19 @@ Spring's `PlatformTransactionManager` is the strategy interface that all transac
 
 ```
 PlatformTransactionManager
-â”œâ”€â”€ AbstractPlatformTransactionManager
-â”‚   â”œâ”€â”€ DataSourceTransactionManager    (JDBC / single DataSource)
-â”‚   â”œâ”€â”€ JpaTransactionManager           (JPA / EntityManager)
-â”‚   â”œâ”€â”€ JtaTransactionManager          (JTA / application server)
-â”‚   â””â”€â”€ HibernateTransactionManager    (Hibernate 5, legacy)
-â”œâ”€â”€ ReactiveTransactionManager
-â”‚   â””â”€â”€ ReactiveTransactionAdapter
-â””â”€â”€ ChainedTransactionManager          (multiple resources)
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ AbstractPlatformTransactionManager
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ DataSourceTransactionManager    (JDBC / single DataSource)
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ JpaTransactionManager           (JPA / EntityManager)
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ JtaTransactionManager          (JTA / application server)
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ HibernateTransactionManager    (Hibernate 5, legacy)
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ ReactiveTransactionManager
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ReactiveTransactionAdapter
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ ChainedTransactionManager          (multiple resources)
 ```
 
 ### DataSourceTransactionManager
 
-Manages transactions on a plain JDBC `DataSource`. The simplest implementation â€” does not support savepoints, but is lightweight and fast.
+Manages transactions on a plain JDBC `DataSource`. The simplest implementation Ã¢â‚¬â€ does not support savepoints, but is lightweight and fast.
 
 ```java
 package com.course.tx;
@@ -951,7 +1023,7 @@ public class JtaTxConfig {
 
 ### ChainedTransactionManager
 
-The `ChainedTransactionManager` (deprecated in recent Spring versions; use `org.springframework.data.transaction.ChainedTransactionManager` from Spring Data) commits and rolls back multiple transaction managers in order. Use it when you need to coordinate across heterogeneous resources â€” for example, a JPA repository and a MongoDB repository in the same transactional method.
+The `ChainedTransactionManager` (deprecated in recent Spring versions; use `org.springframework.data.transaction.ChainedTransactionManager` from Spring Data) commits and rolls back multiple transaction managers in order. Use it when you need to coordinate across heterogeneous resources Ã¢â‚¬â€ for example, a JPA repository and a MongoDB repository in the same transactional method.
 
 ```java
 package com.course.tx;
@@ -1059,6 +1131,30 @@ public class CustomTransactionManager extends AbstractPlatformTransactionManager
     }
 }
 ```
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
 
 ---
 
@@ -1230,7 +1326,7 @@ public class SynchronizationRegistrationService {
 
 ### Resource Binding
 
-`TransactionSynchronizationManager` also manages resource binding â€” associating a JDBC `Connection` or JPA `EntityManager` with the current thread.
+`TransactionSynchronizationManager` also manages resource binding Ã¢â‚¬â€ associating a JDBC `Connection` or JPA `EntityManager` with the current thread.
 
 ```java
 package com.course.tx;
@@ -1269,6 +1365,30 @@ public class ResourceBindingService {
 }
 ```
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
+
 ---
 
 ## Declarative vs Programmatic Transactions
@@ -1277,9 +1397,9 @@ Both approaches have their place. Choose based on the complexity and nature of y
 
 | Aspect | Declarative (@Transactional) | Programmatic (TransactionTemplate) |
 |---|---|---|
-| **Boilerplate** | Minimal â€” single annotation | More code per method |
-| **Readability** | High â€” transaction scope is visible at a glance | Moderate â€” logic interleaved with transaction code |
-| **Control** | Coarse â€” applies to entire method | Fine-grained â€” per-item, conditional commit/rollback |
+| **Boilerplate** | Minimal Ã¢â‚¬â€ single annotation | More code per method |
+| **Readability** | High Ã¢â‚¬â€ transaction scope is visible at a glance | Moderate Ã¢â‚¬â€ logic interleaved with transaction code |
+| **Control** | Coarse Ã¢â‚¬â€ applies to entire method | Fine-grained Ã¢â‚¬â€ per-item, conditional commit/rollback |
 | **Self-invocation** | Bypassed (proxy limitation) | Works correctly |
 | **Dynamic attributes** | Fixed at compile time | Can change per invocation |
 | **Exception handling** | Declarative via rollbackFor | Full try/catch/retry |
@@ -1308,7 +1428,7 @@ public class ComparisonService {
         this.transactionTemplate = transactionTemplate;
     }
 
-    // Declarative â€” best for simple whole-method transactions
+    // Declarative Ã¢â‚¬â€ best for simple whole-method transactions
     @Transactional
     public void transferDeclarative(Long fromId, Long toId, BigDecimal amount) {
         Account from = accountRepository.findById(fromId).orElseThrow();
@@ -1319,7 +1439,7 @@ public class ComparisonService {
         accountRepository.save(to);
     }
 
-    // Programmatic â€” best when you need per-item transaction boundaries
+    // Programmatic Ã¢â‚¬â€ best when you need per-item transaction boundaries
     public void batchTransferDeclarative(List<TransferRequest> requests) {
         // BEWARE: One transaction for ALL transfers
         // One failure rolls back EVERYTHING
@@ -1328,7 +1448,7 @@ public class ComparisonService {
         }
     }
 
-    // Programmatic â€” each transfer is an independent transaction
+    // Programmatic Ã¢â‚¬â€ each transfer is an independent transaction
     public void batchTransferProgrammatic(List<TransferRequest> requests) {
         for (TransferRequest req : requests) {
             transactionTemplate.execute(status -> {
@@ -1348,7 +1468,7 @@ public class ComparisonService {
         }
     }
 
-    // Programmatic â€” conditional commit/rollback
+    // Programmatic Ã¢â‚¬â€ conditional commit/rollback
     public void conditionalProcess(List<TransferRequest> requests) {
         transactionTemplate.execute(status -> {
             int processed = 0;
@@ -1358,7 +1478,7 @@ public class ComparisonService {
                     continue;
                 }
                 if (req.amount().compareTo(BigDecimal.ZERO) <= 0) {
-                    // Invalid â€” roll back everything
+                    // Invalid Ã¢â‚¬â€ roll back everything
                     status.setRollbackOnly();
                     throw new IllegalArgumentException("Invalid amount: " + req.amount());
                 }
@@ -1375,6 +1495,30 @@ public class ComparisonService {
     }
 }
 ```
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
 
 ---
 
@@ -1553,7 +1697,31 @@ public class NarayanaConfig {
 3. **Scalability**: The coordinator is a single point of failure and a throughput bottleneck.
 4. **Support**: Not all databases and message brokers support XA. NoSQL databases generally do not.
 5. **Complexity**: Recovery managers, transaction logs, and heuristic outcomes (ambiguous commits) add operational burden.
-6. **Not suitable for microservices**: 2PC does not span network boundaries well â€” services must share the same transaction manager.
+6. **Not suitable for microservices**: 2PC does not span network boundaries well Ã¢â‚¬â€ services must share the same transaction manager.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
 
 ---
 
@@ -1576,9 +1744,9 @@ import org.springframework.transaction.annotation.Transactional;
  *
  * Flow:
  *   1. Order Service: create order (PENDING)
- *   2. Inventory Service: reserve items  â†’  fail â†’ Order Service: CANCEL order
- *   3. Payment Service: charge card      â†’  fail â†’ Inventory: release items
- *   4. Shipping Service: create label    â†’  fail â†’ Payment: refund
+ *   2. Inventory Service: reserve items  Ã¢â€ â€™  fail Ã¢â€ â€™ Order Service: CANCEL order
+ *   3. Payment Service: charge card      Ã¢â€ â€™  fail Ã¢â€ â€™ Inventory: release items
+ *   4. Shipping Service: create label    Ã¢â€ â€™  fail Ã¢â€ â€™ Payment: refund
  */
 @Service
 public class OrderSagaOrchestrator {
@@ -1752,7 +1920,7 @@ public class OrderSagaCoordinator {
         try {
             shippingClient.cancel(sagaId, command.getOrderId());
         } catch (Exception e) {
-            // Log and continue â€” best effort compensation
+            // Log and continue Ã¢â‚¬â€ best effort compensation
         }
 
         try {
@@ -2246,6 +2414,30 @@ public class RestSagaCoordinator {
 }
 ```
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
+
 ---
 
 ## Pessimistic Locking
@@ -2298,8 +2490,8 @@ public interface AccountLockingRepository extends JpaRepository<Account, Long> {
 
 | Lock Mode | SQL (PostgreSQL) | Behavior |
 |---|---|---|
-| `PESSIMISTIC_READ` | `SELECT ... FOR SHARE` | Shared lock â€” others can read but not write |
-| `PESSIMISTIC_WRITE` | `SELECT ... FOR UPDATE` | Exclusive lock â€” no other transaction can read or write |
+| `PESSIMISTIC_READ` | `SELECT ... FOR SHARE` | Shared lock Ã¢â‚¬â€ others can read but not write |
+| `PESSIMISTIC_WRITE` | `SELECT ... FOR UPDATE` | Exclusive lock Ã¢â‚¬â€ no other transaction can read or write |
 | `PESSIMISTIC_FORCE_INCREMENT` | `SELECT ... FOR UPDATE` + `@Version` increment | Like WRITE but also increments the version column |
 
 ### Pessimistic Locking in a Service
@@ -2343,7 +2535,7 @@ public class PessimisticLockingService {
 
     @Transactional
     public BigDecimal readWithSharedLock(Long accountId) {
-        // SELECT ... FOR SHARE â€” allows other shared locks
+        // SELECT ... FOR SHARE Ã¢â‚¬â€ allows other shared locks
         // but blocks exclusive locks
         Account account = accountRepository.findByIdWithPessimisticReadLock(accountId)
             .orElseThrow(() -> new IllegalArgumentException("Not found"));
@@ -2519,6 +2711,30 @@ public class OrderedLockingService {
     }
 }
 ```
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
 
 ---
 
@@ -2781,6 +2997,30 @@ public class AccountController {
 | **Overhead** | Version increment on every write | Lock management in database |
 | **Database support** | Universal (version column) | Requires `SELECT ... FOR UPDATE` |
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
+
 ---
 
 ## Transaction Configuration
@@ -2795,8 +3035,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-// @EnableTransactionManagement(order = 0) â€” custom order for advisors
-// @EnableTransactionManagement(mode = AdviceMode.ASPECTJ) â€” use AspectJ instead of proxies
+// @EnableTransactionManagement(order = 0) Ã¢â‚¬â€ custom order for advisors
+// @EnableTransactionManagement(mode = AdviceMode.ASPECTJ) Ã¢â‚¬â€ use AspectJ instead of proxies
 public class TransactionConfig {
 }
 ```
@@ -2966,6 +3206,30 @@ public class MultiDataSourceService {
     }
 }
 ```
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
 
 ---
 
@@ -3259,6 +3523,30 @@ public class TransactionCourseApplication {
 }
 ```
 
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
+
 ---
 
 ## Summary
@@ -3278,6 +3566,30 @@ public class TransactionCourseApplication {
 - **Pessimistic locking**: `@Lock(PESSIMISTIC_WRITE/PESSIMISTIC_READ/PESSIMISTIC_FORCE_INCREMENT)` acquires database locks at read time. Use for high-contention scenarios with retry logic for deadlock victims. `SELECT ... FOR UPDATE` and `SELECT ... FOR SHARE` are the underlying SQL mechanisms.
 
 - **Optimistic locking**: `@Version` column increments on every update, with conflict detection at commit time throws `OptimisticLockException` or `StaleStateException`. Use for low-contention scenarios with retry patterns. Always retry with exponential backoff.
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| @Transactional | Declarative transaction demarcation | Use propagation, isolation, rollbackFor attributes |
+| Propagation | Required, RequiresNew, Nested | REQUIRED is default; RequiresNew for independent units |
+| Isolation Levels | READ_UNCOMMITTED to SERIALIZABLE | READ_COMMITTED balances safety and performance |
+| Optimistic Locking | Version-based conflict detection | @Version on a numeric/timestamp column |
+| Distributed Tx | JTA, 2PC, Saga patterns | 2PC for short XA; Saga for long-running workflows |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[@Transactional] --> B[Propagation]
+    B --> C[Isolation Levels]
+    C --> D[Rollback Rules]
+    D --> E[Programmatic Tx]
+    E --> F[Distributed Tx]
+    F --> G[Saga Pattern]
+```
+
+> **Pro Tip:** Start with @Transactional(readOnly = true) on all read-only service methods because it hints Hibernate to disable dirty checking, reducing memory and flush overhead.
 
 ---
 
@@ -3353,11 +3665,11 @@ public class TransactionCourseApplication {
    - Implements timeout-based abort for stuck transactions
 
 2. **Multi-Phase Saga with Axon**: Implement an Axon Framework saga for a travel booking system:
-   - Book flight â†’ Reserve hotel â†’ Rent car â†’ Confirm all
+   - Book flight Ã¢â€ â€™ Reserve hotel Ã¢â€ â€™ Rent car Ã¢â€ â€™ Confirm all
    - Each step is a separate microservice with its own database
    - Compensating actions: cancel flight, release hotel, cancel car
-   - Handle partial failures â€” if car rental fails, cancel both flight and hotel
-   - Implement timeout handling â€” if any step takes longer than 30 seconds, compensate
+   - Handle partial failures Ã¢â‚¬â€ if car rental fails, cancel both flight and hotel
+   - Implement timeout handling Ã¢â‚¬â€ if any step takes longer than 30 seconds, compensate
    - Add monitoring: saga state, step status, and compensating action history
 
 3. **Concurrent Auction System**: Build a real-time bidding system that:

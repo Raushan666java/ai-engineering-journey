@@ -1,4 +1,5 @@
-# JWT, OAuth2 & OIDC
+﻿# JWT, OAuth2 & OIDC
+> **Previous:** [Authentication & Authorization](25-auth-authz.md) | **Next:** [Method Security, CORS & CSRF](27-method-cors-csrf.md)
 
 Modern applications rarely authenticate against a single database. Users log in via Google, GitHub, or corporate identity providers. APIs authenticate via signed tokens rather than session cookies. Microservices trust claims embedded in JWTs rather than querying a central auth service.
 
@@ -20,8 +21,69 @@ By the end of this chapter you should be able to:
 - Implement social login for Google, GitHub, and Facebook with account linking
 
 ---
+## Chapter at a Glance
 
-## JWT â€” JSON Web Token
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| JWT â€” compact, self-contained token format for claims | Sign with RS256; never expose secrets in the payload |
+| OAuth2 â€” authorization framework with multiple grant types | Use Authorization Code + PKCE for public clients |
+| OpenID Connect â€” identity layer atop OAuth2 | ID Token (JWT) carries user identity; UserInfo endpoint provides additional claims |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[JWT, OAuth2 and OIDC] --> B[JWT Structure]
+    A --> C[OAuth2 Grants]
+    A --> D[OpenID Connect]
+    B --> B1[Header / Payload / Signature]
+    C --> C1[Auth Code + PKCE]
+    C --> C2[Client Credentials]
+    C --> C3[Refresh Token]
+    D --> D1[ID Token]
+    D --> D2[UserInfo Endpoint]
+```
+
+---
+## Concept Comparison Table
+
+| Concept | Description | Key Difference |
+|---------|-------------|----------------|
+| JWS | Signed JWT (payload visible) | Default for access tokens |
+| JWE | Encrypted JWT (payload hidden) | Rare; used for sensitive claims |
+| OAuth2 | Authorization framework (delegated access) | Scopes, tokens, grants |
+| OIDC | Identity layer (authentication) | ID token, UserInfo, discovery |
+
+---
+## Quick Reference
+
+| Element | Purpose | Example |
+|---------|---------|---------|
+| `NimbusJwtDecoder` | Decodes and validates JWTs | `NimbusJwtDecoder.withJwkSetUri(jwkSetUri)` |
+| `OAuth2AuthorizedClientManager` | Manages token lifecycle | `authorizedClientManager.authorize()` |
+| `@RegisteredOAuth2AuthorizedClient` | Injects authorized client | `@RegisteredOAuth2AuthorizedClient("google")` |
+| `oauth2Login()` | Configures OAuth2 login | `http.oauth2Login(Customizer.withDefaults())` |
+
+---
+## Cross-Application Matrix
+
+| Domain | Application | Use Case |
+|--------|-------------|----------|
+| Social Login | Spring OAuth2 Client | Google / GitHub / Facebook login with account linking |
+| API Gateway | OAuth2 Resource Server | Validate JWTs from external IdP |
+| Mobile App | Authorization Code + PKCE | Secure native app authentication |
+
+---
+## Chapter Quiz
+
+1. What are the three parts of a JWT? **Answer:** Header, Payload, Signature
+2. Which OAuth2 grant is recommended for mobile apps? **Answer:** Authorization Code with PKCE
+3. What OIDC token carries user identity claims? **Answer:** ID Token
+
+---
+
+## JWT Ã¢â‚¬â€ JSON Web Token
 
 ![OAuth2 Authorization Code Flow with JWT](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/26-jwt-oauth2.png)
 
@@ -35,7 +97,7 @@ A JWT consists of three Base64-URL-encoded segments separated by dots:
 header.payload.signature
 ```
 
-**Header** â€” describes the signing algorithm and token type:
+**Header** Ã¢â‚¬â€ describes the signing algorithm and token type:
 
 ```json
 {
@@ -45,7 +107,7 @@ header.payload.signature
 }
 ```
 
-**Payload** â€” contains the claims (statements about the subject):
+**Payload** Ã¢â‚¬â€ contains the claims (statements about the subject):
 
 ```json
 {
@@ -59,7 +121,7 @@ header.payload.signature
 }
 ```
 
-**Signature** â€” proves the token was issued by a trusted party and has not been tampered with. For HMAC it is computed as:
+**Signature** Ã¢â‚¬â€ proves the token was issued by a trusted party and has not been tampered with. For HMAC it is computed as:
 
 ```
 HMACSHA256(
@@ -198,7 +260,7 @@ import java.util.Map;
 
 public class JjwtTokenCreator {
 
-    // HMAC key â€” in production, load from a secure vault
+    // HMAC key Ã¢â‚¬â€ in production, load from a secure vault
     private static final SecretKey SECRET_KEY = Keys.hmacShaKeyFor(
         Base64.getDecoder().decode(
             "dGhpcyBpcyBhIHZlcnkgbG9uZyBzZWNyZXQga2V5IGZvciBKU1dTIHRoYXQgbXVzdCBiZSAyNTYgYml0cyBsb25n"))
@@ -493,7 +555,7 @@ public class TokenBlacklist {
     }
 ```
 
-### Token Service â€” Complete
+### Token Service Ã¢â‚¬â€ Complete
 
 ```java
 package com.course.jwt.service;
@@ -575,6 +637,9 @@ public class JwtTokenService {
     }
 }
 ```
+
+> [!TIP]
+> Always set short expiration times (15 minutes or less) for access tokens and use refresh tokens for long-lived sessions.
 
 ---
 
@@ -783,7 +848,7 @@ public class ClientCredentialsFlow {
     }
 
     private String extractAccessToken(String responseBody) {
-        // Simple parsing â€” use Jackson in production
+        // Simple parsing Ã¢â‚¬â€ use Jackson in production
         int start = responseBody.indexOf("\"access_token\":\"") + 17;
         int end = responseBody.indexOf("\"", start);
         return responseBody.substring(start, end);
@@ -858,7 +923,7 @@ import java.util.Base64;
 public class RopcFlow {
 
     // WARNING: This flow is deprecated in OAuth 2.1.
-    // The client has access to the user's password â€” a security risk.
+    // The client has access to the user's password Ã¢â‚¬â€ a security risk.
 
     private static final String TOKEN_URL = "https://auth.example.com/token";
     private static final String CLIENT_ID = "legacy-client";
@@ -966,6 +1031,9 @@ public class AuthorizationCodeFlow {
         String accessToken, String refreshToken, int expiresIn) {}
 }
 ```
+
+> [!WARNING]
+> The Resource Owner Password Credentials grant is deprecated in OAuth2.1 and should not be used for new applications.
 
 ---
 
@@ -1656,7 +1724,7 @@ public class IdTokenValidator {
 
         // Standard OIDC claims
         return new IdTokenClaims(
-            claims.getSubject(),           // sub â€” unique identifier
+            claims.getSubject(),           // sub Ã¢â‚¬â€ unique identifier
             claims.get("name", String.class),
             claims.get("email", String.class),
             claims.get("email_verified", Boolean.class),
@@ -1837,6 +1905,9 @@ public class CustomOidcUserService extends OidcUserService {
     }
 }
 ```
+
+> [!NOTE]
+> OIDC is not OAuth2 â€” it adds user authentication on top of OAuth2 delegation. An ID Token proves who the user is, not what they can access.
 
 ---
 
@@ -2114,7 +2185,7 @@ public class AccountLinkingService {
                 .orElseGet(() -> createNewUser(provider, providerId, email, name));
         }
 
-        // No email â€” try by provider + providerId
+        // No email Ã¢â‚¬â€ try by provider + providerId
         return localUserRepository
             .findByProviderAndProviderId(provider, providerId)
             .orElseGet(() -> createNewUser(provider, providerId, email, name));

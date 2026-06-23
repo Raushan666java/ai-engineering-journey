@@ -1,4 +1,5 @@
-# Service Discovery & Load Balancing
+﻿# Service Discovery & Load Balancing
+> **Previous:** [Microservices Principles](38-microservices-principles.md) | **Next:** [API Gateway](40-gateway.md)
 
 ## Learning Objectives
 
@@ -12,6 +13,68 @@ By the end of this chapter, you will be able to:
 - Use @LoadBalanced RestTemplate and WebClient.Builder for load-balanced calls
 - Distinguish between client-side and server-side load balancing
 - Implement self-registration and third-party registration patterns
+
+---
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Service Discovery â€” locate service instances dynamically | Client-side vs server-side discovery patterns |
+| Eureka â€” Netflix OSS service registry | `@EnableEurekaServer` for registry; `@EnableEurekaClient` for registration |
+| Health Checks â€” detect unhealthy instances | Eureka heartbeat mechanism; custom health indicators |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Service Discovery] --> B[Discovery Patterns]
+    A --> C[Eureka]
+    A --> D[Health Checks]
+    B --> B1[Client-side discovery]
+    B --> B2[Server-side discovery]
+    C --> C1[Eureka Server]
+    C --> C2[Eureka Client]
+    C --> C3[Self-preservation]
+    D --> D1[Heartbeat / Renew]
+    D --> D2[HealthIndicator]
+```
+
+---
+## Concept Comparison Table
+
+| Concept | Description | Key Difference |
+|---------|-------------|----------------|
+| Eureka | Client-side discovery (REST) | AP in CAP theorem â€” prioritizes availability |
+| Consul | Client-side + server-side (DNS/HTTP) | CP â€” prioritizes consistency with Raft |
+| ZooKeeper | Server-side discovery | CP â€” strong consistency for distributed coordination |
+| Kubernetes DNS | Server-side via DNS SRV records | Native to K8s, no extra infra needed |
+
+---
+## Quick Reference
+
+| Element | Purpose | Example |
+|---------|---------|---------|
+| `@EnableEurekaServer` | Turns app into Eureka registry | Single or clustered deployment |
+| `@EnableEurekaClient` | Registers service with Eureka | `spring.application.name` used as service ID |
+| `DiscoveryClient` | Programmatic service lookup | `discoveryClient.getInstances("order-service")` |
+| `eureka.client.serviceUrl.defaultZone` | Eureka server URL | `http://localhost:8761/eureka/` |
+
+---
+## Cross-Application Matrix
+
+| Domain | Application | Use Case |
+|--------|-------------|----------|
+| E-Commerce | Eureka + Feign | Order service discovers inventory service by name |
+| Cloud Native | Kubernetes DNS | Services resolve via `<service>.<namespace>.svc.cluster.local` |
+| Multi-Datacenter | Eureka replication | Cross-region failover with Eureka peer awareness |
+
+---
+## Chapter Quiz
+
+1. What is the difference between client-side and server-side discovery? **Answer:** Client-side: the client queries the registry directly. Server-side: a load balancer queries the registry for the client.
+2. Which Eureka CAP property does it prioritize? **Answer:** AP (Availability and Partition tolerance), not consistency
+3. How does Eureka detect unhealthy instances? **Answer:** Heartbeat â€” instances send renew requests every 30 seconds; 3 missed = evicted
 
 ## Theory
 
@@ -47,6 +110,15 @@ Spring Cloud LoadBalancer is the replacement for Netflix Ribbon. It provides:
 - **RoundRobinLoadBalancer**: Distributes requests sequentially across instances
 - **RandomLoadBalancer**: Selects instances randomly
 - Custom load balancers via `ReactorServiceInstanceLoadBalancer`
+
+> [!TIP]
+> Use Feign client with Eureka â€” Feign automatically resolves service names to instances via the registry.
+
+> [!WARNING]
+> Eureka self-preservation mode prevents mass eviction during network partitions. In development, disable it with `eureka.server.enableSelfPreservation=false`.
+
+> [!NOTE]
+> Replace Eureka default health check with Spring Actuator health endpoint for richer instance health reporting.
 
 ## Complete Code Examples
 
@@ -306,7 +378,7 @@ public class DiscoveryController {
 }
 ```
 
-### Eureka Client â€” Order Service
+### Eureka Client Ã¢â‚¬â€ Order Service
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -1737,7 +1809,7 @@ management:
 - **Eureka Server** acts as the service registry; services register with it and discover other services
 - **Eureka Client** handles self-registration, heartbeats, and instance lookup; configured via `@EnableDiscoveryClient`
 - **Self-Preservation** prevents premature instance eviction during network partitions
-- **Spring Cloud LoadBalancer** provides `RoundRobinLoadBalancer` and `RandomLoadBalancer` â€” the replacement for Netflix Ribbon
+- **Spring Cloud LoadBalancer** provides `RoundRobinLoadBalancer` and `RandomLoadBalancer` Ã¢â‚¬â€ the replacement for Netflix Ribbon
 - **@LoadBalanced RestTemplate** and **WebClient.Builder** enable load-balanced inter-service calls
 - **Client-Side Discovery** has the client query the registry; **Server-Side Discovery** uses an intermediary load balancer
 - **Self-Registration** is the default with Eureka Client; **Third-Party Registration** uses a separate registrar like Kubernetes

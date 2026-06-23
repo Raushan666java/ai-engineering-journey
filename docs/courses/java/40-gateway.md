@@ -1,4 +1,5 @@
-# API Gateway (Spring Cloud Gateway)
+﻿# API Gateway (Spring Cloud Gateway)
+> **Previous:** [Service Discovery](39-discovery.md) | **Next:** [Resilience and Circuit Breakers](41-resilience.md)
 
 ## Learning Objectives
 
@@ -12,6 +13,68 @@ By the end of this chapter, you will be able to:
 - Implement rate limiting with Redis and custom KeyResolver
 - Secure the gateway with OAuth2 Resource Server and custom security filters
 - Understand the WebFlux-based reactive architecture
+
+---
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| API Gateway â€” single entry point for all client requests | Routing, filtering, cross-cutting concerns in one layer |
+| Spring Cloud Gateway â€” reactive, non-blocking gateway | Route definitions with predicates and filters |
+| Advanced Features â€” rate limiting, circuit breaking, security | Global and per-route filters; integration with Resilience4j |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[API Gateway] --> B[Core Concepts]
+    A --> C[Spring Cloud Gateway]
+    A --> D[Advanced Features]
+    B --> B1[Routing / Filtering]
+    B --> B2[Cross-cutting concerns]
+    C --> C1[Route definition]
+    C --> C2[Predicates / Filters]
+    D --> D1[Rate Limiting]
+    D --> D2[Circuit Breaker]
+    D --> D3[Security]
+```
+
+---
+## Concept Comparison Table
+
+| Concept | Description | Key Difference |
+|---------|-------------|----------------|
+| Spring Cloud Gateway | Reactive (WebFlux) | Non-blocking, built on Spring 5 |
+| Zuul 1 | Servlet-based (blocking) | Legacy Netflix OSS, no longer actively developed |
+| Kong | Lua/OpenResty gateway | Plugin ecosystem, Kubernetes Ingress Controller |
+| Nginx + Lua | Reverse proxy with scripting | High-performance, custom routing logic |
+
+---
+## Quick Reference
+
+| Element | Purpose | Example |
+|---------|---------|---------|
+| `RouteLocator` | Defines gateway routes | `@Bean RouteLocator routes(RouteLocatorBuilder builder)` |
+| `.route(r -> r.path("/api/**").uri("lb://service"))` | Path-based route to Eureka service | Combines routing with load balancing |
+| `AddRequestHeader` | GatewayFilter to add header | `.filter(gatewayFilter)` |
+| `RequestRateLimiter` | Redis-backed rate limiter | `@Bean KeyResolver userKeyResolver()` |
+
+---
+## Cross-Application Matrix
+
+| Domain | Application | Use Case |
+|--------|-------------|----------|
+| Microservices | Gateway + Eureka | Single endpoint for all: `/api/orders/`, `/api/payments/`, `/api/inventory/` |
+| Multi-Version API | Predicate-based routing | Route `/v1/**` to old service, `/v2/**` to new service |
+| Global Auth | Security filter | Validate JWT at the gateway before routing to backend |
+
+---
+## Chapter Quiz
+
+1. On which reactive framework is Spring Cloud Gateway built? **Answer:** Spring WebFlux (Project Reactor)
+2. Which two components make up a route definition? **Answer:** Predicate (match condition) and Filter (request/response transformation)
+3. What is the main advantage of a gateway in a microservices architecture? **Answer:** Centralized cross-cutting concerns â€” auth, rate limiting, logging â€” without per-service duplication
 
 ## Theory
 
@@ -39,6 +102,15 @@ Spring Cloud Gateway integrates with Spring Cloud CircuitBreaker to wrap downstr
 ### Rate Limiting
 
 The `RequestRateLimiter` filter uses Redis and the Token Bucket algorithm. The `KeyResolver` determines how to identify unique clients (e.g., by IP, authenticated user, or header).
+
+> [!TIP]
+> Use `lb://service-name` as the URI in route definitions to leverage Eureka load balancing through the gateway.
+
+> [!WARNING]
+> Spring Cloud Gateway is reactive and uses Netty â€” do not depend on `spring-boot-starter-web` (Tomcat) as they conflict.
+
+> [!NOTE]
+> Enable `RouteDefinitionMetrics` via Micrometer to monitor route hit rates, latency, and error responses.
 
 ## Complete Code Examples
 

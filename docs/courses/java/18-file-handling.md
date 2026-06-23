@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="../17-openapi.md">â† Previous (OpenAPI)</a> | <a href="../19-jdbc-jooq.md">Next (JDBC/JOOQ) â†’</a>
-</p>
+> **Previous:** [OpenAPI](./17-openapi.md) | **Next:** [JDBC/JOOQ](./19-jdbc-jooq.md)
 
 # File Upload, Download & Streaming
 

@@ -1,4 +1,5 @@
-# Mockito & Mocking Frameworks
+﻿# Mockito & Mocking Frameworks
+> **Previous:** [JUnit 5](29-junit5.md) | **Next:** [Spring Boot Testing](31-spring-boot-test.md)
 
 Mockito is the most widely used mocking framework in the Java ecosystem. It allows you to create test doubles (mocks, spies) that isolate the unit under test from its dependencies, control the behaviour of those dependencies through stubbing, and verify that specific interactions occurred. This chapter covers everything from basic mock creation through advanced features like mocking static methods and constructors introduced in Mockito 3.x/4.x/5.x.
 
@@ -39,11 +40,73 @@ By the end of this chapter you will be able to:
 - Mock final classes and methods, static methods, and constructors using mockito-inline
 
 ---
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Mockito â€” mocking framework for unit tests | Create mocks with `@Mock`, inject with `@InjectMocks` |
+| Stubbing â€” define mock behavior with `when().thenReturn()` | Support for exceptions, answers, and callbacks |
+| Verification â€” assert interactions with `verify()` | Check invocation count, order, timeout, and argument matching |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Mockito] --> B[Mock Creation]
+    A --> C[Stubbing]
+    A --> D[Verification]
+    A --> E[Argument Matchers]
+    B --> B1[@Mock / @Spy]
+    B --> B2[@InjectMocks]
+    C --> C1[when / thenReturn]
+    C --> C2[doThrow / doAnswer]
+    D --> D1[verify / verifyNoInteractions]
+    E --> E1[any / eq / argThat]
+```
+
+---
+## Concept Comparison Table
+
+| Concept | Description | Key Difference |
+|---------|-------------|----------------|
+| `@Mock` | Creates a mock instance | All methods return defaults unless stubbed |
+| `@Spy` | Wraps a real object | Real methods execute unless stubbed |
+| `@InjectMocks` | Injects mocks into the object under test | Constructor, setter, field injection |
+| `Mockito.when()` | Defines stubbing | `when(foo.bar()).thenReturn(value)` |
+
+---
+## Quick Reference
+
+| Element | Purpose | Example |
+|---------|---------|---------|
+| `when(mock.method()).thenReturn(x)` | Stubs return value | Basic stubbing pattern |
+| `doThrow(e).when(mock).method()` | Stubs exception | For void methods |
+| `verify(mock, times(n)).method()` | Verifies invocation count | `atLeast(1)`, `never()` |
+| `ArgumentCaptor<T>` | Captures method arguments | `captor.getValue()` for assertion |
+
+---
+## Cross-Application Matrix
+
+| Domain | Application | Use Case |
+|--------|-------------|----------|
+| Service Layer Tests | Mock repositories with `@Mock` | Isolate business logic from data access |
+| Controller Tests | Mock service layer | Test HTTP handling without full context |
+| Legacy Code | `@Spy` on real objects | Partial mocking for hard-to-test classes |
+
+---
+## Chapter Quiz
+
+1. What annotation creates a mock and automatically injects it into the test subject? **Answer:** `@InjectMocks`
+2. How do you stub a void method to throw an exception? **Answer:** `doThrow(new RuntimeException()).when(mock).voidMethod()`
+3. Which Mockito method checks that no interactions occurred on a mock? **Answer:** `verifyNoInteractions(mock)`
+
+---
 
 ## Table of Contents
 
 1. [Mock Creation](#1-mock-creation)
-2. [InjectMocks â€” Wiring the System Under Test](#2-injectmocks--wiring-the-system-under-test)
+2. [InjectMocks Ã¢â‚¬â€ Wiring the System Under Test](#2-injectmocks--wiring-the-system-under-test)
 3. [Stubbing](#3-stubbing)
 4. [Verification](#4-verification)
 5. [Argument Matchers](#5-argument-matchers)
@@ -107,7 +170,7 @@ class MockCreationTest {
     @Test
     void mockConcreteClass() {
         ArrayList<String> arrayList = mock(ArrayList.class);
-        // ArrayList is a concrete class â€” Mockito can mock it
+        // ArrayList is a concrete class Ã¢â‚¬â€ Mockito can mock it
         assertNull(arrayList.get(0)); // default behaviour, not the real ArrayList
     }
 }
@@ -130,7 +193,7 @@ import static org.mockito.Mockito.*;
 
 /**
  * @ExtendWith(MockitoExtension.class) initialises all @Mock fields
- * before each test method. This is the preferred approach â€” it
+ * before each test method. This is the preferred approach Ã¢â‚¬â€ it
  * reduces boilerplate, provides better error messages, and integrates
  * with JUnit 5's lifecycle.
  */
@@ -158,7 +221,7 @@ class MockAnnotationTest {
     @Test
     void deepStubs() {
         // With RETURNS_DEEP_STUBS, chained calls return mocks automatically
-        // deepService.getConfig().getTimeout() â€” both getConfig() and getTimeout()
+        // deepService.getConfig().getTimeout() Ã¢â‚¬â€ both getConfig() and getTimeout()
         // return mocks without explicit stubbing
         int timeout = deepService.getConfig().getTimeout();
         assertEquals(0, timeout); // default int value
@@ -235,9 +298,12 @@ class ManualInitTest {
 }
 ```
 
+> [!TIP]
+> Use `@ExtendWith(MockitoExtension.class)` to enable Mockito annotations â€” this replaces the legacy `MockitoJUnitRunner`.
+
 ---
 
-## 2. InjectMocks â€” Wiring the System Under Test
+## 2. InjectMocks Ã¢â‚¬â€ Wiring the System Under Test
 
 `@InjectMocks` attempts to inject mock dependencies into the object under test using three strategies, tried in order:
 
@@ -292,7 +358,7 @@ class UserRegistrationService {
     private final UserRepository userRepository;
     private final EmailService emailService;
 
-    // Constructor injection â€” Mockito uses this
+    // Constructor injection Ã¢â‚¬â€ Mockito uses this
     public UserRegistrationService(UserRepository userRepository, EmailService emailService) {
         this.userRepository = userRepository;
         this.emailService = emailService;
@@ -448,7 +514,7 @@ class WhenThenStubbingTest {
 
         assertEquals("first", list.get(0));
         assertEquals("second", list.get(1));
-        assertNull(list.get(2)); // unstubbed â€” returns default
+        assertNull(list.get(2)); // unstubbed Ã¢â‚¬â€ returns default
     }
 
     @Test
@@ -542,7 +608,7 @@ class WhenThenStubbingTest {
 
         // For primitive wrappers, autoboxing handles null
         when(list.size()).thenReturn(null);
-        // This works but is unusual â€” prefer returning explicit values
+        // This works but is unusual Ã¢â‚¬â€ prefer returning explicit values
     }
 }
 
@@ -553,7 +619,7 @@ interface InventoryService {
 
 ### 3.2 doReturn/when, doThrow/when, doAnswer/when
 
-The `do*` family is used when `when()` cannot be used â€” primarily for **void methods** and **spies**.
+The `do*` family is used when `when()` cannot be used Ã¢â‚¬â€ primarily for **void methods** and **spies**.
 
 ```java
 package mockito.stubbing;
@@ -731,6 +797,9 @@ interface CalculatorService {
 }
 ```
 
+> [!WARNING]
+> Do not over-stub. Only stub methods that will actually be called by the code under test â€” unnecessary stubbing makes tests brittle.
+
 ---
 
 ## 4. Verification
@@ -778,7 +847,7 @@ class VerificationTest {
     @Test
     void verifyOnly() {
         // verifyNoOtherInteractions: checks that ONLY the verified
-        // interaction happened â€” no other calls on this mock.
+        // interaction happened Ã¢â‚¬â€ no other calls on this mock.
         list.add("hello");
         verify(list).add("hello");
         verifyNoMoreInteractions(list); // passes
@@ -792,7 +861,7 @@ class VerificationTest {
     @Test
     void verifyNoInteractions() {
         // verifyNoInteractions: checks that NO calls happened at all
-        verifyNoInteractions(list); // list has no interactions â€” passes
+        verifyNoInteractions(list); // list has no interactions Ã¢â‚¬â€ passes
         verifyNoInteractions(emailService);
     }
 
@@ -950,7 +1019,7 @@ class TimeoutVerificationTest {
             return null;
         });
 
-        // timeout: polls every 10ms â€” returns as soon as the interaction happens
+        // timeout: polls every 10ms Ã¢â‚¬â€ returns as soon as the interaction happens
         verify(callback, timeout(1000)).onComplete("success");
         executor.shutdown();
     }
@@ -990,6 +1059,9 @@ interface AsyncCallback {
     void onError(Throwable t);
 }
 ```
+
+> [!NOTE]
+> Verification is optional â€” only verify interactions when proving a side effect occurred. Testing return values is usually sufficient.
 
 ---
 
@@ -1383,13 +1455,13 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  * BDDMockito uses BDD-style language that reads naturally:
  *
- * // Given â€” stub configuration
+ * // Given Ã¢â‚¬â€ stub configuration
  * given(repository.findById(1L)).willReturn(Optional.of(user));
  *
- * // When â€” exercise the SUT
+ * // When Ã¢â‚¬â€ exercise the SUT
  * User result = service.getUser(1L);
  *
- * // Then â€” verify outcomes
+ * // Then Ã¢â‚¬â€ verify outcomes
  * then(repository).should(times(1)).findById(1L);
  */
 @ExtendWith(MockitoExtension.class)
@@ -1415,7 +1487,7 @@ class BddStyleTest {
         assertNotNull(result);
         assertEquals("Alice", result.name());
 
-        // Then â€” verify interactions
+        // Then Ã¢â‚¬â€ verify interactions
         then(repository).should(times(1)).findById(1L);
         then(notificationService).should(never()).notify(anyString());
     }
@@ -1464,7 +1536,7 @@ class BddStyleTest {
         User result1 = service.getUser(1L);
         User result2 = service.getUser(1L);
 
-        // Then â€” should verify with exact times
+        // Then Ã¢â‚¬â€ should verify with exact times
         then(repository).should(times(2)).findById(1L);
     }
 
@@ -1478,13 +1550,13 @@ class BddStyleTest {
         UserService service = new UserService(repository, notificationService);
         service.createUser("Carol", "carol@example.com");
 
-        // Then â€” ordered verification
+        // Then Ã¢â‚¬â€ ordered verification
         then(repository).should().findByEmail("carol@example.com");
         then(repository).should().save(any(User.class));
         then(notificationService).should().notify("Welcome Carol!");
     }
 
-    // BDDMockito's then() returns BDDMockito.Then â€” not Mockito.verify directly
+    // BDDMockito's then() returns BDDMockito.Then Ã¢â‚¬â€ not Mockito.verify directly
     // but they behave equivalently
 }
 
@@ -1555,7 +1627,7 @@ import static org.mockito.Mockito.*;
  *
  * spy():  You want the real behaviour most of the time,
  *        but need to stub a few specific methods.
- * mock(): You want a completely controlled double â€” no real
+ * mock(): You want a completely controlled double Ã¢â‚¬â€ no real
  *        implementation runs unless explicitly stubbed.
  */
 @ExtendWith(MockitoExtension.class)
@@ -1575,7 +1647,7 @@ class SpyTest {
 
     @Test
     void spyWithStubbedMethod() {
-        // Stub a specific method â€” the rest remain real
+        // Stub a specific method Ã¢â‚¬â€ the rest remain real
         doReturn(100).when(list).size();
 
         list.add("hello");
@@ -1614,7 +1686,7 @@ class SpyTest {
 }
 ```
 
-### 8.2 Spy vs Mock â€” When to Use What
+### 8.2 Spy vs Mock Ã¢â‚¬â€ When to Use What
 
 ```java
 package mockito.spy;
@@ -1651,7 +1723,7 @@ class SpyVsMockTest {
 
         // Adding to a mock does nothing visible
         mockList.add("hello");
-        assertEquals(0, mockList.size()); // still 0 â€” mock ignores real behaviour
+        assertEquals(0, mockList.size()); // still 0 Ã¢â‚¬â€ mock ignores real behaviour
     }
 
     @Test
@@ -1784,7 +1856,7 @@ class LenientStubbingTest {
         when(lenientList.get(0)).thenReturn("a");
         when(lenientList.get(1)).thenReturn("b");
 
-        // Only get(0) is used â€” get(1) stub is unnecessary but
+        // Only get(0) is used Ã¢â‚¬â€ get(1) stub is unnecessary but
         // does NOT cause a failure because the mock is lenient
         lenientList.get(0);
         verify(lenientList).get(0);
@@ -2080,7 +2152,7 @@ class HeavyService {
 
     public HeavyService(String config) {
         this.config = config;
-        // Expensive initialisation â€” database connection, etc.
+        // Expensive initialisation Ã¢â‚¬â€ database connection, etc.
     }
 
     boolean initialize() {
@@ -2123,7 +2195,7 @@ class MockCleanupTest {
 
     @BeforeEach
     void setUp() {
-        // Mocks are fresh at this point â€” no interaction history
+        // Mocks are fresh at this point Ã¢â‚¬â€ no interaction history
     }
 
     @AfterEach
@@ -2140,7 +2212,7 @@ class MockCleanupTest {
 
     @Test
     void secondTest() {
-        // Mock is clean â€” no leftover state from firstTest
+        // Mock is clean Ã¢â‚¬â€ no leftover state from firstTest
         when(list.size()).thenReturn(10);
         assertEquals(10, list.size());
     }
@@ -2182,7 +2254,7 @@ class MockCleanupTest {
 
 ## Summary
 
-This chapter covered the complete Mockito mocking framework, starting with mock creation using both the static `mock()` method and the `@Mock` annotation with `@ExtendWith(MockitoExtension.class)`. The `@InjectMocks` annotation was explained with its three injection strategies â€” constructor, setter, and field â€” and how mock naming resolves ambiguity when multiple mocks share a type.
+This chapter covered the complete Mockito mocking framework, starting with mock creation using both the static `mock()` method and the `@Mock` annotation with `@ExtendWith(MockitoExtension.class)`. The `@InjectMocks` annotation was explained with its three injection strategies Ã¢â‚¬â€ constructor, setter, and field Ã¢â‚¬â€ and how mock naming resolves ambiguity when multiple mocks share a type.
 
 Stubbing was covered in full detail: `when().thenReturn` for simple return values, chained `thenReturn` for multiple calls, `thenThrow` for exceptions, `thenAnswer` for computed return values, and `thenCallRealMethod` for delegating to real implementations. The `doReturn/when`, `doThrow/when`, and `doAnswer/when` patterns were shown as alternatives necessary for void methods and spies.
 
@@ -2218,10 +2290,10 @@ Create a `ShoppingCartService` class that depends on `ProductRepository`, `Prici
 ### Exercise 3: Stubbing
 
 Write stubs for the following scenarios:
-- `when().thenReturn()` â€” return a user for a specific ID
-- `when().thenThrow()` â€” throw `IllegalStateException` when the database is closed
-- `when().thenAnswer()` â€” map input IDs to generated usernames: `findById(1) -> User("user-1")`
-- `doThrow()` â€” simulate a void method failure on `auditLogger.log()`
+- `when().thenReturn()` Ã¢â‚¬â€ return a user for a specific ID
+- `when().thenThrow()` Ã¢â‚¬â€ throw `IllegalStateException` when the database is closed
+- `when().thenAnswer()` Ã¢â‚¬â€ map input IDs to generated usernames: `findById(1) -> User("user-1")`
+- `doThrow()` Ã¢â‚¬â€ simulate a void method failure on `auditLogger.log()`
 - Multiple calls: first call returns "init", second call throws, third call returns "recovered"
 
 ### Exercise 4: Verification

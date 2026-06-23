@@ -1,4 +1,6 @@
-# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
+﻿# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
+
+> **Previous:** [Capstone](./24-capstone.md) | **Next:** [Business Automation Agents](./26-business-automation-agents.md)
 
 ---
 
@@ -13,6 +15,33 @@
 - Write comprehensive PEST tests for multi-agent systems including mock agents, integration tests, and handoff verification
 
 ---
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Supervisor/Worker | Central supervisor delegates tasks to workers | Use queues for reliable async delegation |
+| Agent Teams | Team-based agent coordination with handoff protocols | Define handoff contracts between agents |
+| Parallel Execution | Run independent agents simultaneously | Use Laravel queues with separate workers |
+| State Management | Shared state across distributed agents | Use Redis for agent state with TTL |
+| Queue Orchestration | Queue-backed agent coordination | Dispatch agent jobs to priority queues |
+| Failure Modes | Handle agent failures and retries | Implement circuit breakers and fallback agents |
+
+## Chapter Roadmap
+
+``mermaid
+flowchart LR
+    A[Supervisor Agent] --> B[Queue Dispatcher]
+    B --> C[Worker Agent 1]
+    B --> D[Worker Agent 2]
+    B --> E[Worker Agent 3]
+    C --> F[Result Aggregator]
+    D --> F
+    E --> F
+    F --> G[State Store Redis]
+    F --> H[Response Handler]
+``
+
+
 
 ## Theory
 
@@ -21,21 +50,24 @@
 
 ### 25.1 The Supervisor/Worker Pattern
 
-Single-agent systems handle one task per invocation. A multi-agent system introduces a **supervisor** that accepts a high-level goal, decomposes it into sub-tasks, and dispatches each sub-task to a specialized **worker** agent. The supervisor does not perform the work itself â€” it plans, delegates, and synthesises results.
+
+> **One-Sentence Takeaway:** A central supervisor delegates tasks to worker agents via queues, handling distribution and result aggregation.
+
+Single-agent systems handle one task per invocation. A multi-agent system introduces a **supervisor** that accepts a high-level goal, decomposes it into sub-tasks, and dispatches each sub-task to a specialized **worker** agent. The supervisor does not perform the work itself Ã¢â‚¬â€ it plans, delegates, and synthesises results.
 
 #### Architecture
 
 ```
 User Request
-      â”‚
-      â–¼
-SupervisorAgent â”€â”€analyzes taskâ”€â”€â–º decides worker
-      â”‚
-      â”œâ”€â”€â–º ResearchAgent   (gathers information)
-      â”œâ”€â”€â–º SummarizerAgent (condenses content)
-      â””â”€â”€â–º WriterAgent     (produces final output)
-      â”‚
-      â””â”€â”€â–º merges results â”€â”€â–º returns response
+      Ã¢â€â€š
+      Ã¢â€“Â¼
+SupervisorAgent Ã¢â€â‚¬Ã¢â€â‚¬analyzes taskÃ¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Âº decides worker
+      Ã¢â€â€š
+      Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Âº ResearchAgent   (gathers information)
+      Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Âº SummarizerAgent (condenses content)
+      Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Âº WriterAgent     (produces final output)
+      Ã¢â€â€š
+      Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Âº merges results Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€“Âº returns response
 ```
 
 #### The SupervisorAgent Class
@@ -65,7 +97,7 @@ Analyze the user's request and classify it into one of these categories:
 - write: needs original content produced
 
 Call the appropriate worker tool with the user's input.
-Do NOT answer the question yourself â€” delegate it.
+Do NOT answer the question yourself Ã¢â‚¬â€ delegate it.
 PROMPT;
     }
 }
@@ -236,7 +268,7 @@ class SummarizerAgent implements Agent
         return <<<PROMPT
 You are a summarization specialist. Condense content while preserving key
 facts, arguments, and conclusions. Adapt your summary length to the
-request â€” one paragraph for quick overviews, structured sections for
+request Ã¢â‚¬â€ one paragraph for quick overviews, structured sections for
 detailed summaries. Never add information not in the original.
 PROMPT;
     }
@@ -269,7 +301,7 @@ PROMPT;
 
 #### The Supervisor Resolver
 
-The supervisor's tool execution layer resolves which worker to call. This is handled by the AI SDK â€” when the model calls the `research`, `summarize`, or `write` tool, the SDK routes the call to the tool handler registered in the application:
+The supervisor's tool execution layer resolves which worker to call. This is handled by the AI SDK Ã¢â‚¬â€ when the model calls the `research`, `summarize`, or `write` tool, the SDK routes the call to the tool handler registered in the application:
 
 ```php
 <?php
@@ -349,9 +381,18 @@ class AiServiceProvider extends ServiceProvider
 
 ---
 
+
+> **Pro Tip:** Make the supervisor stateless. Store all task state in Redis so the supervisor can be safely restarted.
+
+
+> **Pro Tip:** Make the supervisor stateless. Store all task state in Redis so the supervisor can be safely restarted.
+
 ### 25.2 Agent Teams & Handoff Protocols
 
-A single supervisor dispatching to isolated workers works for straightforward delegation. Complex goals require **agent teams** â€” multiple agents that collaborate, pass context, and hand off control to one another mid-conversation.
+
+> **One-Sentence Takeaway:** Agent teams use handoff protocols with contracts defining what data is passed and what the receiving agent should do.
+
+A single supervisor dispatching to isolated workers works for straightforward delegation. Complex goals require **agent teams** Ã¢â‚¬â€ multiple agents that collaborate, pass context, and hand off control to one another mid-conversation.
 
 #### The Handoff Pattern
 
@@ -619,7 +660,10 @@ class HandoffServiceProvider extends ServiceProvider
 
 ### 25.3 Parallel Agent Execution
 
-Multi-agent systems often need to run several agents at the same time â€” analyzing the same data from different perspectives, researching multiple topics, or generating alternative outputs. Laravel queues enable true parallel execution.
+
+> **One-Sentence Takeaway:** Independent agents run concurrently on separate queue workers, with results aggregated after all complete.
+
+Multi-agent systems often need to run several agents at the same time Ã¢â‚¬â€ analyzing the same data from different perspectives, researching multiple topics, or generating alternative outputs. Laravel queues enable true parallel execution.
 
 #### The Fan-Out/Fan-In Pattern
 
@@ -998,6 +1042,9 @@ class ParallelAnalysisController extends Controller
 
 ### 25.4 State Management Across Agents
 
+
+> **One-Sentence Takeaway:** Redis stores shared agent state with TTL, job IDs, and status tracking for distributed coordination.
+
 When multiple agents collaborate on a shared goal, they need a mechanism to read and write shared state. Each agent should be able to save information for other agents, recall what previous agents have discovered, and signal completion of their part.
 
 #### The AgentMemory System
@@ -1338,7 +1385,16 @@ class TeamConversationController extends Controller
 
 ---
 
+
+> **Warning:** Always set TTL on agent state in Redis. Expired state from dead agents should be automatically cleaned up.
+
+
+> **Warning:** Always set TTL on agent state in Redis. Expired state from dead agents should be automatically cleaned up.
+
 ### 25.5 Queue-Backed Agent Orchestration
+
+
+> **One-Sentence Takeaway:** Dedicated queues per agent type with priority levels ensure critical agents process first.
 
 Production multi-agent systems run on queues. Laravel Horizon provides a rich dashboard for monitoring agent workers, while job batching enables complex multi-step workflows with built-in sequencing, failure handling, and completion callbacks.
 
@@ -1820,6 +1876,9 @@ SummarizeExistingJob::dispatch(...)->onQueue('agent-low');
 
 ### 25.6 Multi-Agent Failure Modes
 
+
+> **One-Sentence Takeaway:** Circuit breakers, dead-letter queues, and fallback agents handle failures in distributed agent systems.
+
 Multi-agent systems introduce failure modes that single-agent systems do not face. Agents can produce conflicting outputs, enter infinite handoff loops, cascade failures across a chain, or silently degrade in quality.
 
 #### Circuit Breaker Pattern
@@ -2218,7 +2277,16 @@ class GuardedAgent
 
 ---
 
+
+> **Remember:** Design for partial failure. A single failing agent should not block the entire multi-agent system.
+
+
+> **Remember:** Design for partial failure. A single failing agent should not block the entire multi-agent system.
+
 ### 25.7 Testing Multi-Agent Systems
+
+
+> **One-Sentence Takeaway:** Test each agent in isolation, then test team interactions with integration tests and mock agent responses.
 
 Testing multi-agent systems requires mocking individual agents, verifying handoff logic, and validating orchestration workflows. PEST tests with Laravel's built-in mocking capabilities provide the foundation.
 
@@ -2665,6 +2733,116 @@ test('parallel analysis dispatches batch of agent jobs', function () {
 
 ---
 
+## Concept Comparison Table
+
+| Concept | Purpose | Key Benefit | Limitation |
+|---------|---------|-------------|------------|
+| Supervisor/Worker | Centralized task delegation | Clear orchestration | Single point of coordination |
+| Agent Teams | Team-based coordination | Natural delegation | Handoff complexity |
+| Parallel Execution | Concurrent workers | Throughput | Result synchronization |
+| Queue Orchestration | Priority queues | Reliable delivery | Queue management overhead |
+
+## Quick Reference
+
+| Item | Description |
+|------|-------------|
+| Supervisor::dispatch()|Dispatch task to worker | Agent::handoff(, )|Handoff to another agent |
+| Bus::batch([...])|Parallel agent execution | Redis state TTL|Automatic state cleanup |
+
+## Cross-Application Matrix
+
+| Scenario | Approach | Benefit | Challenge |
+|----------|----------|---------|-----------|
+| Task Delegation | Supervisor/Worker | Clear orchestration | Single point of coordination |
+| Team Coordination | Handoff protocols | Natural delegation | Contract complexity |
+| Parallel Work | Concurrent workers | High throughput | Result sync |
+| Failure Handling | Circuit breakers | System resilience | Implementation complexity |
+
+## Chapter Quiz
+
+1. What pattern does the supervisor follow for task delegation?
+   - A) Pub/sub
+   - B) Supervisor/Worker
+   - C) Event sourcing
+   - D) CQRS
+   <details><summary>Answer</summary>**B)** The supervisor delegates tasks to workers via queues and aggregates results.</details>
+
+2. Where is shared agent state stored?
+   - A) Database
+   - B) Redis with TTL
+   - C) File system
+   - D) Session
+   <details><summary>Answer</summary>**B)** Redis stores shared agent state with TTL for automatic cleanup.</details>
+
+3. What happens when a worker agent fails?
+   - A) The entire system fails
+   - B) The job is retried or sent to a dead-letter queue
+   - C) The supervisor retries indefinitely
+   - D) The failure is ignored
+   <details><summary>Answer</summary>**B)** Failed jobs are retried and eventually sent to a dead-letter queue for analysis.</details>
+
+4. How are agents tested in isolation?
+   - A) Integration tests only
+   - B) Unit tests with mock responses
+   - C) End-to-end tests
+   - D) Manual testing
+   <details><summary>Answer</summary>**B)** Each agent is tested in isolation with unit tests using mock responses from other agents.</details>
+
+## Concept Comparison Table
+
+| Concept | Purpose | Key Benefit | Limitation |
+|---------|---------|-------------|------------|
+| Supervisor/Worker | Centralized task delegation | Clear orchestration | Single point of coordination |
+| Agent Teams | Team-based coordination | Natural delegation | Handoff complexity |
+| Parallel Execution | Concurrent workers | Throughput | Result synchronization |
+| Queue Orchestration | Priority queues | Reliable delivery | Queue management overhead |
+
+## Quick Reference
+
+| Item | Description |
+|------|-------------|
+| Supervisor::dispatch()|Dispatch task to worker | Agent::handoff(, )|Handoff to another agent |
+| Bus::batch([...])|Parallel agent execution | Redis state TTL|Automatic state cleanup |
+
+## Cross-Application Matrix
+
+| Scenario | Approach | Benefit | Challenge |
+|----------|----------|---------|-----------|
+| Task Delegation | Supervisor/Worker | Clear orchestration | Single point of coordination |
+| Team Coordination | Handoff protocols | Natural delegation | Contract complexity |
+| Parallel Work | Concurrent workers | High throughput | Result sync |
+| Failure Handling | Circuit breakers | System resilience | Implementation complexity |
+
+## Chapter Quiz
+
+1. What pattern does the supervisor follow for task delegation?
+   - A) Pub/sub
+   - B) Supervisor/Worker
+   - C) Event sourcing
+   - D) CQRS
+   <details><summary>Answer</summary>**B)** The supervisor delegates tasks to workers via queues and aggregates results.</details>
+
+2. Where is shared agent state stored?
+   - A) Database
+   - B) Redis with TTL
+   - C) File system
+   - D) Session
+   <details><summary>Answer</summary>**B)** Redis stores shared agent state with TTL for automatic cleanup.</details>
+
+3. What happens when a worker agent fails?
+   - A) The entire system fails
+   - B) The job is retried or sent to a dead-letter queue
+   - C) The supervisor retries indefinitely
+   - D) The failure is ignored
+   <details><summary>Answer</summary>**B)** Failed jobs are retried and eventually sent to a dead-letter queue for analysis.</details>
+
+4. How are agents tested in isolation?
+   - A) Integration tests only
+   - B) Unit tests with mock responses
+   - C) End-to-end tests
+   - D) Manual testing
+   <details><summary>Answer</summary>**B)** Each agent is tested in isolation with unit tests using mock responses from other agents.</details>
+
 ## Summary
 
 - The supervisor/worker pattern uses a central SupervisorAgent that classifies tasks and dispatches them to specialized worker agents (ResearchAgent, SummarizerAgent, WriterAgent) via tool-calling
@@ -2696,7 +2874,7 @@ test('parallel analysis dispatches batch of agent jobs', function () {
 
 1. Build a `QualityReviewAgent` that works alongside an existing `WriterAgent`. The writer produces content, then the quality reviewer checks grammar, tone, and factual accuracy. Use the AgentMemory system so the writer's output is automatically available to the reviewer. Implement the handoff as a job chain.
 
-2. Create a `SentimentAnalysisTeam` with three parallel agents â€” each analyzing the same customer review text using a different model provider (Anthropic, OpenAI, Gemini). Use the parallel execution pattern to run them simultaneously, then use `ConflictResolver` to synthesize a final sentiment score when the agents disagree.
+2. Create a `SentimentAnalysisTeam` with three parallel agents Ã¢â‚¬â€ each analyzing the same customer review text using a different model provider (Anthropic, OpenAI, Gemini). Use the parallel execution pattern to run them simultaneously, then use `ConflictResolver` to synthesize a final sentiment score when the agents disagree.
 
 3. Implement a `RetryPolicy`-protected agent that calls an unreliable external API through an AI agent. Configure the retry with 3 attempts, 2-second base delay, and 1.5x backoff multiplier. Write a PEST test that verifies the retry logic by making the agent throw on the first two calls and succeed on the third.
 

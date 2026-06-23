@@ -1,4 +1,5 @@
 # Chapter 13: Laravel AI SDK â€” Tools, MCP Tools & Provider Tools
+> **Previous:** [Laravel AI SDK -- Agents, Prompting & Structured Output](./12-ai-sdk-agents) | **Next:** [Laravel AI SDK -- Images, Audio, Transcriptions & Embeddings](./14-ai-sdk-media)
 
 ---
 ## Learning Objectives
@@ -9,6 +10,31 @@
 - Integrate Model Context Protocol (MCP) tools from remote and local MCP servers
 - Leverage built-in provider tools for web search, web fetching, and file search
 - Build a complete support agent combining multiple tools for production use
+## Chapter at a Glance
+
+| Section | Key Topics |
+|---------|-----------|
+| Tools Concept | Tool interface, description/schema/handle |
+| Creating Tools | Custom tools, database query tools |
+| Similarity Search | RAG via vector search, custom queries |
+| MCP Tools | Remote/local MCP servers, spread operator |
+| Provider Tools | WebSearch, WebFetch, FileSearch |
+| Agent Middleware | before()/after() hooks |
+| Configuration | Provider, model, timeout defaults |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Tools Concept] --> B[Creating Tools]
+    B --> C[Database Query Tools]
+    B --> D[Similarity Search RAG]
+    C --> E[MCP Tools Integration]
+    D --> E
+    E --> F[Provider Tools]
+    A --> G[Agent Middleware]
+    A --> H[Agent Configuration]
+```
 ---
 ## Theory
 
@@ -16,6 +42,8 @@
 
 
 ### 13.1 The Tools Concept
+
+> **One-Sentence Takeaway:** Tools bridge the gap between language models and external systems by letting agents call your code through a typed schema interface during generation.
 
 Language models are text-in, text-out systems. They cannot access external systems, query databases, browse the web, or compute values at runtime. Tools bridge this gap by giving the agent the ability to call your code during the prompting process.
 
@@ -27,6 +55,8 @@ Every tool must implement the `Tool` interface, which defines three methods:
 - `handle(Request $request)` â€” Receives model-generated arguments and executes the tool logic. Must return a string or Stringable.
 
 ### 13.2 Creating Tools
+
+> **One-Sentence Takeaway:** Every tool implements the Tool interface with description() guiding model decisions, schema() defining typed parameters, and handle() executing logic.
 
 Generate a new tool with `php artisan make:tool RandomNumberGenerator`, which creates a class in `app/Ai/Tools/`:
 
@@ -43,6 +73,8 @@ use Stringable;
 class RandomNumberGenerator implements Tool
 {
     public function description(): Stringable|string
+
+> **Pro Tip:** The description() return value is critical — the language model uses these descriptions to decide which tool to call. A vague description like 'Gets data' causes incorrect tool selection. Be specific about what the tool does and when to use it.
     {
         return 'Generates cryptographically secure random integers within a specified inclusive range. Use this when the user needs a random number, a random selection, or any randomized value.';
     }
@@ -126,6 +158,8 @@ class GameController extends Controller
 
 ### 13.4 Database Query Tools
 
+> **One-Sentence Takeaway:** Database query tools are the most common pattern, allowing agents to look up orders, users, or products through controlled, parameterized queries.
+
 The most common tool pattern is querying application data:
 
 ```php
@@ -149,6 +183,8 @@ class OrderLookup implements Tool
     public function handle(Request $request): Stringable|string
     {
         if (isset($request['order_id'])) {
+
+> **Warning:** Always cast and validate incoming values in handle(). Models send arbitrary types based on their training data. A parameter documented as integer might arrive as a string. Defensive validation prevents runtime errors.
             $order = Order::with(['items', 'shippingAddress'])
                 ->find($request['order_id']);
 
@@ -179,6 +215,8 @@ class OrderLookup implements Tool
 
 ### 13.5 Similarity Search Tool
 
+> **One-Sentence Takeaway:** SimilaritySearch provides the foundation for Retrieval-Augmented Generation (RAG) by performing vector search against Eloquent models with embedding columns.
+
 The `SimilaritySearch` tool performs vector similarity search against Eloquent models with an embedding column â€” the foundation of Retrieval-Augmented Generation (RAG):
 
 ```php
@@ -207,6 +245,8 @@ class KnowledgeBaseAgent implements Agent
         return [
             new OrderLookup,
             SimilaritySearch::usingModel(Document::class, 'embedding')
+
+> **Remember:** The minSimilarity threshold directly impacts RAG quality. Start with 0.78 and tune based on your embedding model and use case. Higher values return fewer but more relevant results; lower values increase recall at the cost of noise.
                 ->minSimilarity(0.78)
                 ->limit(5)
                 ->withDescription('Search the product documentation knowledge base for relevant articles.'),
@@ -292,6 +332,8 @@ class CustomSimilarityAgent implements Agent
 ```
 
 ### 13.6 MCP Tools Integration
+
+> **One-Sentence Takeaway:** MCP tools from remote or local servers are spread into agents using the ... operator, combining external capabilities with local tools.
 
 The Model Context Protocol (MCP) is an open standard allowing agents to discover and invoke tools from external servers. Install with `composer require laravel/mcp`. Connect to remote MCP servers and spread their tools using `...`:
 
@@ -395,6 +437,8 @@ class LocalMcpAgent implements Agent
 ```
 
 ### 13.7 Provider Tools
+
+> **One-Sentence Takeaway:** Provider tools like WebSearch, WebFetch, and FileSearch are built-in capabilities configured directly on PendingAgentRequest without custom tool classes.
 
 Provider tools are built-in capabilities offered by AI providers, configured directly on `PendingAgentRequest`.
 
@@ -517,6 +561,8 @@ class QuickSupportController extends Controller
 ```
 
 ### 13.9 Agent Middleware
+
+> **One-Sentence Takeaway:** Agent middleware provides before() and after() hooks for cross-cutting concerns like logging, metrics collection, and access control.
 
 Implement the `AgentMiddleware` interface for cross-cutting concerns:
 
@@ -734,6 +780,66 @@ class EnterpriseSupportController extends Controller
 ```
 
 ---
+
+## Concept Comparison
+
+| Feature | Custom Tools | MCP Tools | Provider Tools |
+|---------|-------------|-----------|---------------|
+| Definition | PHP Tool class | External server | Provider built-in |
+| Hosting | In-app | Remote/local server | Provider-side |
+| Schema | JsonSchema in code | Server-defined | Provider-defined |
+| Latency | Low (in-process) | Medium (network) | Medium (API call) |
+| Use Case | Database queries | GitHub, Slack APIs | Web search, file search |
+
+## Quick Reference — AI SDK Tool Methods
+
+| Method | Purpose |
+|--------|---------|
+| `php artisan make:tool RandomNumber` | Create tool class |
+| `->withTools([...])` | Register tools on anonymous agent |
+| `->withWebSearch(max: 5)` | Enable provider web search |
+| `->withWebFetch()` | Enable URL fetching |
+| `->withFileSearch(vectorStoreIds: [...])` | Enable file search |
+| `SimilaritySearch::usingModel()` | Create vector search tool |
+
+## Cross-Application Matrix
+
+| Concept | Support Agent | Developer Agent | Research Agent |
+|---------|--------------|----------------|---------------|
+| Custom Tools | OrderLookup | GitHubIssueTool | WebScraperTool |
+| MCP Tools | CRM server | GitHub + Slack | Database explorer |
+| SimilaritySearch | Product docs | Codebase docs | Research papers |
+| Provider Tools | WebSearch (docs) | WebFetch (bug reports) | WebSearch (research) |
+| Middleware | Audit logging | Rate limiting | Cost tracking |
+
+## Chapter Quiz
+
+**1. What are the three methods every Tool must implement?**
+- a) name(), schema(), execute()
+- b) description(), schema(), handle()
+- c) instructions(), parameters(), run()
+- d) title(), input(), output()
+
+**2. How are MCP tools combined with local tools in an agent?**
+- a) Through a configuration file
+- b) Using the spread (...) operator
+- c) Via dependency injection
+- d) Through facade registration
+
+**3. What does withWebSearch() enable?**
+- a) URL fetching
+- b) Internet search capabilities
+- c) Vector store search
+- d) File system search
+
+**4. What is the purpose of Agent Middleware?**
+- a) To validate tool parameters
+- b) To provide before/after hooks for logging and metrics
+- c) To authenticate API requests
+- d) To cache agent responses
+
+**Answers: 1-b, 2-b, 3-b, 4-b**
+
 ## Summary
 
 - Tools implement the `Tool` interface with `description()` (guides model decisions), `schema()` (typed parameters via `JsonSchema`), and `handle()` (executes logic, returns string)

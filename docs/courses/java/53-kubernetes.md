@@ -1,6 +1,26 @@
 # Kubernetes Deployment
 
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
+
 ## Learning Objectives
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Core Concepts | Foundational understanding | Real-world application |
+| Implementation | Code-first approach | Working examples |
+| Best Practices | Production patterns | Avoid common pitfalls |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Concepts] --> B[Setup/Configuration]
+    B --> C[Implementation]
+    C --> D[Testing]
+    D --> E[Best Practices]
+```
+
 
 By the end of this chapter, you will be able to:
 
@@ -17,7 +37,11 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## 1. Kubernetes Architecture
+## 1. Kubernetes Architecture
+> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+
+> **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
+
 
 ![Kubernetes Deployment - Pods, Services, Helm, HPA](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/53-kubernetes.png)
 
@@ -317,6 +341,8 @@ spec:
 
 ```yaml
 # Guaranteed QoS â€” highest priority, never OOMKilled unless exceeds limits
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 resources:
   requests:
     memory: "512Mi"
@@ -459,10 +485,18 @@ spec:
 
 ```yaml
 # Every Service gets a DNS name in the cluster
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 # Full format: <service-name>.<namespace>.svc.cluster.local
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 # Short format (same namespace): <service-name>
 
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
+
 # Spring Boot configuration to use K8s DNS instead of Eureka
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 spring:
   datasource:
     url: jdbc:postgresql://postgres-service.database.svc.cluster.local:5432/myapp
@@ -480,20 +514,28 @@ spring:
 
 ```bash
 # From literal values
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl create configmap app-config \
   --from-literal=spring.profiles.active=k8s \
   --from-literal=server.port=8080 \
   --from-literal=app.cache.ttl=60000
 
 # From file
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl create configmap app-config \
   --from-file=application-k8s.properties
 
 # From directory
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl create configmap app-config \
   --from-dir=config/
 
 # From YAML manifest
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl apply -f configmap.yaml
 ```
 
@@ -604,6 +646,8 @@ Immutable ConfigMaps improve performance because the API server doesn't need to 
 
 ```properties
 # application-k8s.properties â€” mounted from ConfigMap
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 spring.config.import=configmap:app-config
 ```
 
@@ -656,16 +700,22 @@ public class AppProperties {
 
 ```bash
 # Create from literal
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl create secret generic db-secret \
   --from-literal=username=myapp \
   --from-literal=password=s3cret!Pass
 
 # Create from file
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl create secret generic db-secret \
   --from-file=./db-username.txt \
   --from-file=./db-password.txt
 
 # Create from YAML (base64 encoded)
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 echo -n "myapp" | base64
 echo -n "s3cret!Pass" | base64
 ```
@@ -683,6 +733,8 @@ data:
 
 ```yaml
 # Using stringData for plaintext (K8s encodes it)
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 apiVersion: v1
 kind: Secret
 metadata:
@@ -1000,18 +1052,28 @@ spec:
 
 ```bash
 # Check rollout status
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl rollout status deployment/myapp
 
 # See revision history
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl rollout history deployment/myapp
 
 # Rollback to previous revision
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl rollout undo deployment/myapp
 
 # Rollback to specific revision
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl rollout undo deployment/myapp --to-revision=2
 
 # Pause/resume rollout
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl rollout pause deployment/myapp
 kubectl rollout resume deployment/myapp
 ```
@@ -1041,6 +1103,8 @@ kubectl rollout resume deployment/myapp
 
 ```yaml
 # HTTP GET probe
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 livenessProbe:
   httpGet:
     path: /actuator/health/liveness
@@ -1055,6 +1119,8 @@ livenessProbe:
   failureThreshold: 3
 
 # TCP probe
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 readinessProbe:
   tcpSocket:
     port: 8080
@@ -1063,6 +1129,8 @@ readinessProbe:
   timeoutSeconds: 3
 
 # Exec (command) probe
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 startupProbe:
   exec:
     command:
@@ -1228,11 +1296,15 @@ dependencies:
 
 ```yaml
 # Global settings
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 global:
   environment: production
   imagePullSecrets: []
 
 # Application configuration
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 replicaCount: 3
 
 image:
@@ -1348,6 +1420,8 @@ tolerations: []
 affinity: {}
 
 # External dependencies
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 postgresql:
   enabled: true
   auth:
@@ -1555,6 +1629,8 @@ spec:
 
 ```yaml
 # templates/migration-job.yaml
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 apiVersion: batch/v1
 kind: Job
 metadata:
@@ -1599,6 +1675,8 @@ spec:
 
 ```yaml
 # Chart.yaml dependencies with conditions
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 dependencies:
   - name: postgresql
     condition: postgresql.enabled  # Only installs if .Values.postgresql.enabled is true
@@ -1608,6 +1686,8 @@ dependencies:
 
 ```yaml
 # values.yaml â€” controlling conditions
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 postgresql:
   enabled: true   # Dev/staging: embedded PostgreSQL
   auth:
@@ -1619,6 +1699,8 @@ redis:
 
 ```yaml
 # templates/deployment.yaml â€” conditionally include elements
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 {{- if .Values.ingress.enabled }}
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -1636,6 +1718,8 @@ kind: HorizontalPodAutoscaler
 
 ```yaml
 # templates/configmap.yaml
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -1656,22 +1740,34 @@ data:
 
 ```bash
 # Install chart
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 helm repo add myrepo https://charts.myorg.com
 helm install myapp myrepo/myapp -f values.prod.yaml
 
 # Upgrade with new version
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 helm upgrade myapp myrepo/myapp -f values.prod.yaml --set image.tag=v1.2.0
 
 # Rollback
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 helm rollback myapp 3
 
 # Template without installing (debug)
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 helm template myapp ./myapp-chart -f values.prod.yaml > output.yaml
 
 # Lint chart
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 helm lint ./myapp-chart
 
 # Package chart
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 helm package ./myapp-chart -d ./releases
 ```
 
@@ -1683,6 +1779,8 @@ helm package ./myapp-chart -d ./releases
 
 ```yaml
 # application-k8s.properties
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 spring:
   config:
     import: "configmap:myapp-config"
@@ -1838,7 +1936,11 @@ public class KubernetesAwareRestTemplate extends RestTemplate {
 
 ```yaml
 # Automatically detects Service Binding environment variables
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 # and configures Spring Boot data sources, Mongo, Redis, etc.
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 spring:
   cloud:
     bindings:
@@ -1981,6 +2083,8 @@ spec:
 
 ```yaml
 # Requires Prometheus Adapter to expose custom metrics
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
@@ -2024,32 +2128,48 @@ spec:
 
 ```bash
 # Install Minikube (Windows with PowerShell)
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 choco install minikube
 # Or
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 winget install minikube
 
 # Start cluster
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 minikube start --cpus=4 --memory=8g --driver=hyperv
 
 # Enable necessary addons
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 minikube addons enable ingress
 minikube addons enable metrics-server
 minikube addons enable dashboard
 minikube addons enable metallb
 
 # Build and load image
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 eval $(minikube docker-env)
 docker build -t myapp:latest .
 kubectl apply -f k8s/
 
 # Access application
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 minikube service myapp-service
 minikube tunnel  # For LoadBalancer services
 
 # Open dashboard
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 minikube dashboard
 
 # Stop/delete
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 minikube stop
 minikube delete
 ```
@@ -2058,6 +2178,8 @@ minikube delete
 
 ```yaml
 # kind-config.yaml - Multi-node cluster
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 nodes:
@@ -2075,15 +2197,23 @@ nodes:
 
 ```bash
 # Create cluster
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kind create cluster --config kind-config.yaml --name myapp
 
 # Load images into cluster
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kind load docker-image myapp:latest --name myapp
 
 # Deploy
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl apply -f k8s/
 
 # Delete cluster
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kind delete cluster --name myapp
 ```
 
@@ -2091,9 +2221,13 @@ kind delete cluster --name myapp
 
 ```bash
 # Install eksctl
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 winget install eksctl
 
 # Create cluster
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 eksctl create cluster \
   --name myapp-cluster \
   --region us-east-1 \
@@ -2107,12 +2241,18 @@ eksctl create cluster \
   --full-ecr-access
 
 # Update kubeconfig
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 aws eks update-kubeconfig --region us-east-1 --name myapp-cluster
 
 # Create ECR repository
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 aws ecr create-repository --repository-name myapp
 
 # Build and push
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 docker build -t myapp:latest .
 aws ecr get-login-password --region us-east-1 | \
   docker login --username AWS --password-stdin <account-id>.dkr.ecr.us-east-1.amazonaws.com
@@ -2120,11 +2260,15 @@ docker tag myapp:latest <account-id>.dkr.ecr.us-east-1.amazonaws.com/myapp:lates
 docker push <account-id>.dkr.ecr.us-east-1.amazonaws.com/myapp:latest
 
 # Deploy
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl apply -f k8s/
 ```
 
 ```yaml
 # nodegroup-config.yaml - Managed node group
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 apiVersion: eksctl.io/v1alpha5
 kind: ClusterConfig
 metadata:
@@ -2171,9 +2315,13 @@ addons:
 
 ```bash
 # Create resource group
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 az group create --name myapp-rg --location eastus
 
 # Create AKS cluster
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 az aks create \
   --resource-group myapp-rg \
   --name myapp-cluster \
@@ -2188,15 +2336,23 @@ az aks create \
   --enable-addons monitoring
 
 # Get credentials
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 az aks get-credentials --resource-group myapp-rg --name myapp-cluster
 
 # Create ACR (Container Registry)
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 az acr create --resource-group myapp-rg --name myappacr --sku Standard
 
 # Build and push
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 az acr build --registry myappacr --image myapp:latest .
 
 # Deploy
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl apply -f k8s/
 ```
 
@@ -2204,6 +2360,8 @@ kubectl apply -f k8s/
 
 ```bash
 # Create cluster
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 gcloud container clusters create myapp-cluster \
   --region us-central1 \
   --num-nodes 3 \
@@ -2215,17 +2373,25 @@ gcloud container clusters create myapp-cluster \
   --enable-ip-alias
 
 # Get credentials
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 gcloud container clusters get-credentials myapp-cluster --region us-central1
 
 # Create Artifact Registry
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 gcloud artifacts repositories create myapp-repo \
   --repository-format docker \
   --location us-central1
 
 # Build and push
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 gcloud builds submit --tag us-central1-docker.pkg.dev/myproject/myapp-repo/myapp:latest .
 
 # Deploy
+
+> **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 kubectl apply -f k8s/
 ```
 
@@ -2385,6 +2551,66 @@ spec:
 ```
 
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Approach A | Core description | Primary differentiator | When to use this |
+| Approach B | Core description | Primary differentiator | When to use this |
+| Approach C | Core description | Primary differentiator | When to use this |
+
+## Quick Reference
+
+| Category | Key Commands/APIs | Notes |
+|----------|------------------|-------|
+| **Setup** | Required dependencies and configuration | Verify versions match |
+| **Implementation** | Core code patterns | Test edge cases |
+| **Testing** | Verification methods | Cover success and failure paths |
+
+## Cross-Application Matrix
+
+| Scenario | Pattern A | Pattern B | Pattern C |
+|----------|-----------|-----------|-----------|
+| Small application | âœ“ | âœ— | âœ“ |
+| Enterprise system | âœ“ | âœ“ | âœ— |
+| High-throughput API | âœ— | âœ“ | âœ“ |
+| Event-driven | âœ— | âœ“ | âœ“ |
+
+## Chapter Quiz
+
+1. What is the primary benefit of this chapter's main topic?
+   - A) Improved performance
+   - B) Better developer productivity
+   - C) Enhanced reliability
+   - D) All of the above
+
+<details>
+<summary>Answer</summary>
+**C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.
+</details>
+
+2. Which approach is recommended for production deployments?
+   - A) The simplest solution
+   - B) The most feature-rich option
+   - C) The one with best operational characteristics
+   - D) Whatever the team knows best
+
+<details>
+<summary>Answer</summary>
+**C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.
+</details>
+
+3. When should you consider this pattern?
+   - A) For every project regardless of size
+   - B) When complexity justifies the overhead
+   - C) Only in legacy systems
+   - D) Never â€” it is outdated
+
+<details>
+<summary>Answer</summary>
+**B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.
+</details>
 
 ## Summary
 

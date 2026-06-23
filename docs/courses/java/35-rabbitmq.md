@@ -1,4 +1,5 @@
-# RabbitMQ
+﻿# RabbitMQ
+> **Previous:** [Async and Events](34-async-events.md) | **Next:** [Kafka](36-kafka.md)
 
 ## Learning Objectives
 
@@ -13,6 +14,70 @@ By the end of this chapter, you will be able to:
 - Configure `BatchingRabbitTemplate` for batch message publishing
 - Work with multiple virtual hosts, `RabbitAdmin`, and connection factory customization
 - Secure connections with TLS and customize container factories
+
+---
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| RabbitMQ â€” AMQP-compliant message broker | Exchange types: Direct, Topic, Fanout, Headers |
+| Producer-Consumer â€” send and receive messages via `RabbitTemplate` | `@RabbitListener` for message consumption |
+| Advanced Patterns â€” dead letter queues, retry, and idempotency | DLQ handles poison messages; manual ack for retry control |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[RabbitMQ] --> B[Core Concepts]
+    A --> C[Producers]
+    A --> D[Consumers]
+    A --> E[Advanced]
+    B --> B1[Exchange / Queue / Binding]
+    B --> B2[AMQP protocol]
+    C --> C1[RabbitTemplate]
+    C --> C2[Correlation ID]
+    D --> D1[@RabbitListener]
+    D --> D2[Manual ack]
+    E --> E1[DLQ / Retry]
+    E --> E2[Idempotent consumers]
+```
+
+---
+## Concept Comparison Table
+
+| Concept | Description | Key Difference |
+|---------|-------------|----------------|
+| Direct Exchange | Routes by routing key exactly | `routingKey = "order.created"` |
+| Topic Exchange | Routes by routing key pattern | `routingKey = "order.#"` |
+| Fanout Exchange | Routes to all bound queues | No routing key filtering |
+| Headers Exchange | Routes by header matching | `x-match = all/any` |
+
+---
+## Quick Reference
+
+| Element | Purpose | Example |
+|---------|---------|---------|
+| `RabbitTemplate.convertAndSend()` | Sends a message | `rabbitTemplate.convertAndSend(exchange, routingKey, payload)` |
+| `@RabbitListener(queues = "myQueue")` | Consumes messages | `@RabbitListener(queues = "#{queue.name}")` |
+| `MessageProperties#setDeliveryMode(PERSISTENT)` | Persists message to disk | Survives broker restart |
+| `RabbitAdmin.declareQueue()` | Declares queues programmatically | Used for dynamic queue setup |
+
+---
+## Cross-Application Matrix
+
+| Domain | Application | Use Case |
+|--------|-------------|----------|
+| Order Processing | Direct Exchange + DLQ | Process orders; send failures to DLQ for manual retry |
+| Notifications | Fanout Exchange | Broadcast alerts to all connected services |
+| Routing | Topic Exchange | Route messages based on event type hierarchy |
+
+---
+## Chapter Quiz
+
+1. What are the four exchange types in RabbitMQ? **Answer:** Direct, Topic, Fanout, Headers
+2. Which annotation is used to consume messages from a RabbitMQ queue? **Answer:** `@RabbitListener`
+3. What happens to a message that cannot be processed after max retries? **Answer:** It goes to the Dead Letter Queue (DLQ)
 
 ## Theory
 
@@ -31,11 +96,11 @@ AMQP (Advanced Message Queuing Protocol) is a wire-level protocol for message-or
 | **Binding** | A rule that connects an exchange to a queue with an optional routing key |
 | **Queue** | A named buffer that stores messages until consumers process them |
 | **Consumer** | Subscribes to a queue and processes messages |
-| **Virtual Host (vhost)** | A namespace isolation unit â€” exchanges, queues, and bindings are scoped to a vhost |
+| **Virtual Host (vhost)** | A namespace isolation unit Ã¢â‚¬â€ exchanges, queues, and bindings are scoped to a vhost |
 
 **Message broker vs Message queue:**
 
-A **message queue** (e.g., ActiveMQ, SQS) stores messages in named queues; producers send directly to a queue. An AMQP **message broker** adds an exchange layer â€” producers never touch queues directly. The exchange determines routing, enabling complex patterns like topic-based subscriptions and fanout.
+A **message queue** (e.g., ActiveMQ, SQS) stores messages in named queues; producers send directly to a queue. An AMQP **message broker** adds an exchange layer Ã¢â‚¬â€ producers never touch queues directly. The exchange determines routing, enabling complex patterns like topic-based subscriptions and fanout.
 
 ### 2. Exchange Types
 
@@ -189,7 +254,7 @@ Every message published to `broadcast.fanout` goes to all three queues simultane
 
 #### 2.4 HeadersExchange
 
-Routes based on message header attributes rather than routing keys. Supports `x-match` â€” `all` means all headers must match, `any` means at least one header must match.
+Routes based on message header attributes rather than routing keys. Supports `x-match` Ã¢â‚¬â€ `all` means all headers must match, `any` means at least one header must match.
 
 ```java
 @Bean
@@ -422,7 +487,7 @@ public ConnectionFactory tlsConnectionFactory() throws Exception {
 }
 ```
 
-### 5. RabbitTemplate â€” Sending Messages
+### 5. RabbitTemplate Ã¢â‚¬â€ Sending Messages
 
 ```java
 @Service
@@ -585,7 +650,7 @@ public MessageConverter simpleConverter() {
 }
 ```
 
-### 6. @RabbitListener â€” Consuming Messages
+### 6. @RabbitListener Ã¢â‚¬â€ Consuming Messages
 
 ```java
 @Component
@@ -968,7 +1033,7 @@ public class VhostAwareConsumer {
 }
 ```
 
-### 10. RabbitAdmin â€” Programmatic Management
+### 10. RabbitAdmin Ã¢â‚¬â€ Programmatic Management
 
 ```java
 @Service
@@ -1397,16 +1462,25 @@ class RabbitListenerTest {
 }
 ```
 
+> [!TIP]
+> Always use `CorrelationId` message property for end-to-end tracing â€” it helps track messages across producer, broker, and consumer.
+
+> [!WARNING]
+> Idempotent consumers are essential â€” messages can be redelivered after consumer failure or connection loss.
+
+> [!NOTE]
+> Configure a DLQ with a TTL-based retry queue for handling transient failures â€” the message returns to the original queue after TTL expires.
+
 ## Summary
 
 RabbitMQ implements the AMQP 0-9-1 protocol, providing a robust message broker with four exchange types, durable and transient queues, and flexible routing through bindings. Key takeaways:
 
-- **Exchanges** are the routing backbone â€” Direct for exact match, Topic for wildcard patterns, Fanout for broadcast, and Headers for attribute-based routing.
+- **Exchanges** are the routing backbone Ã¢â‚¬â€ Direct for exact match, Topic for wildcard patterns, Fanout for broadcast, and Headers for attribute-based routing.
 - **Queues** support rich configuration including TTL, dead-letter exchanges, max length, and priority.
 - **Spring AMQP's `RabbitTemplate`** provides `convertAndSend`, `receiveAndConvert`, and `convertSendAndReceive` for both synchronous and asynchronous messaging. Always configure a `Jackson2JsonMessageConverter` for structured data.
 - **`@RabbitListener`** consumes messages with per-listener concurrency tuning, container factory customization, and manual/auto acknowledgments.
 - **Publisher confirms and returns** ensure reliable delivery. Always set `mandatory=true` and register `ConfirmCallback` and `ReturnCallback`.
-- **Retry and error handling** uses `RetryTemplate` with exponential backoff, and `MessageRecoverer` implementations for final disposition â€” `RepublishMessageRecoverer` is production-preferred for routing failures to a retry/dead-letter queue.
+- **Retry and error handling** uses `RetryTemplate` with exponential backoff, and `MessageRecoverer` implementations for final disposition Ã¢â‚¬â€ `RepublishMessageRecoverer` is production-preferred for routing failures to a retry/dead-letter queue.
 - **`BatchingRabbitTemplate`** aggregates messages for high-throughput scenarios.
 - **`RabbitAdmin`** enables programmatic management of exchanges, queues, and bindings for dynamic multi-tenant setups.
 
@@ -1440,4 +1514,4 @@ Configure a `BatchingRabbitTemplate` with batch size 20, byte limit 10000, and 5
 Configure two `ConnectionFactory` beans for vhosts `/app-a` and `/app-b`. Create separate `RabbitTemplate` beans and `@RabbitListener` container factories.
 
 ### Exercise 10: Complete Order Pipeline
-Build a full order processing pipeline: `order.exchange` (direct), queues for payment â†’ inventory â†’ shipping â†’ notification, with a DLQ for failed messages and publisher confirms.
+Build a full order processing pipeline: `order.exchange` (direct), queues for payment Ã¢â€ â€™ inventory Ã¢â€ â€™ shipping Ã¢â€ â€™ notification, with a DLQ for failed messages and publisher confirms.

@@ -1,12 +1,35 @@
 # 66. Behavioral Interview — Q&A
 
+> **Previous:** [System Design Interview Q&amp;A](./65-interview-system-design.md) | **Next:** (End of Series)
+
 This chapter covers behavioral interview preparation for Java backend engineers. It includes the STAR method, common behavioral questions with structured answers, salary negotiation tactics, and thoughtful questions to ask your interviewer. Each answer follows the STAR format (Situation, Task, Action, Result) and is tailored to software engineering contexts.
 
 ---
 
 ![Behavioral Interview - STAR Method Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/66-interview-behavioral.png)
 
-### Q1: Tell me about a time you had a conflict with a teammate. How did you resolve it?
+## Chapter at a Glance
+
+| Topic | Key Focus | Key Questions |
+|-------|----------|--------------|
+| Core Concepts | Foundational understanding | Definitions, contrasts, trade-offs |
+| Code Examples | Compilable, runnable solutions | Real interview scenarios |
+| Best Practices | Production-ready patterns | Pitfalls to avoid |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Core Concepts] --> B[Code Examples]
+    B --> C[Edge Cases]
+    C --> D[Best Practices]
+```
+
+### Q1: Tell me about a time you had a conflict with a teammate. How did you resolve it?
+> **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
+
+> **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
+
 
 **Answer:**
 
@@ -2791,3 +2814,63 @@ I ask: "What is the minimum quality level that does not cause problems for users
 When stakeholders push for speed at the expense of quality, I make the trade-off explicit: "If we ship this now, we will have to spend 2 weeks fixing it next month. Is that acceptable?" Most stakeholders will choose quality when they understand the downstream cost.
 
 **Key lesson:** The tension between speed and quality is a false dichotomy. The real question is: "What is the right quality level for this specific piece of code at this specific moment?" The answer varies. The skill is knowing when to invest in quality and when to cut corners — and being honest about which corners you are cutting so you can come back to fix them later.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Interface | Contract without state | Multiple inheritance of type | API contracts |
+| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
+| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
+
+## Quick Reference
+
+| Topic | Key Points | Interview Frequency |
+|-------|-----------|-------------------|
+| **OOP** | Encapsulation, Inheritance, Polymorphism, Abstraction | Every interview |
+| **Collections** | List, Set, Map, Queue, Deque | 9/10 interviews |
+| **Concurrency** | synchronized, volatile, Locks, CompletableFuture | 7/10 senior interviews |
+| **Java 8+** | Lambdas, Streams, Optional, CompletableFuture | 8/10 interviews |
+
+## Cross-Application Matrix
+
+| Skill | Junior (0-2yr) | Mid (3-5yr) | Senior (6-9yr) | Staff (10+) |
+|-------|---------------|-------------|----------------|-------------|
+| OOP & Design Patterns | Define and identify | Apply and combine | Evaluate and refactor | Create and teach |
+| Collections | Basic usage | Performance trade-offs | Concurrent collections | Custom implementations |
+| Concurrency | Syntax knowledge | Write thread-safe code | Debug deadlocks | Design concurrent systems |
+
+## Chapter Quiz
+
+1. What is the difference between equals() and == in Java?
+   - A) They are identical
+   - B) equals() compares values, == compares references
+   - C) == compares values, equals() compares references
+   - D) equals() is for primitives, == is for objects
+
+<details>
+<summary>Answer</summary>
+**B) equals() compares logical equality (overridable), == compares reference equality.**
+</details>
+
+2. Which collection guarantees insertion order?
+   - A) HashMap
+   - B) TreeMap
+   - C) LinkedHashMap
+   - D) HashSet
+
+<details>
+<summary>Answer</summary>
+**C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
+</details>
+
+3. What keyword prevents a method from being overridden?
+   - A) static
+   - B) final
+   - C) private
+   - D) abstract
+
+<details>
+<summary>Answer</summary>
+**B) final.** A final method cannot be overridden by subclasses.
+</details>

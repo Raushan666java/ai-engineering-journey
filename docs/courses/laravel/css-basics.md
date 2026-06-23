@@ -1,4 +1,4 @@
-# CSS Fundamentals
+﻿# CSS Fundamentals
 
 ## Learning Objectives
 
@@ -1532,6 +1532,9 @@ npm run build
 
 ---
 
+
+> **Pro Tip:** Use CSS custom properties (variables) for theme values. They cascade naturally and make dark mode switching trivial.
+
 ## Quick Reference
 > **One-Sentence Takeaway:** Quick reference for CSS fundamentals.
 
@@ -1548,6 +1551,9 @@ npm run build
 
 ---
 
+
+> **Remember:** Use ox-sizing: border-box globally. It makes sizing predictable and is the single most impactful CSS declaration.
+
 ## Cross-Application Matrix
 
 | Concept | Application Context | Trade-Off |
@@ -1559,6 +1565,9 @@ npm run build
 | Tailwind CSS | Rapid styling | Development speed vs HTML readability |
 
 ---
+
+
+> **Warning:** Avoid !important in production CSS. It breaks the cascade and makes overrides unpredictable.
 
 ## Chapter Quiz
 > **One-Sentence Takeaway:** Test your CSS fundamentals knowledge.

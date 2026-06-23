@@ -1,4 +1,5 @@
-# Resilience & Circuit Breakers (Resilience4j)
+﻿# Resilience & Circuit Breakers (Resilience4j)
+> **Previous:** [API Gateway](40-gateway.md) | **Next:** [Configuration and Cloud Config](42-config.md)
 
 ## Learning Objectives
 
@@ -13,6 +14,68 @@ By the end of this chapter, you will be able to:
 - Integrate Resilience4j with Micrometer for metrics collection
 - Use Actuator endpoints to monitor circuit breakers, retries, and rate limiters
 - Integrate with Feign clients and Spring Cloud CircuitBreaker
+
+---
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Circuit Breaker â€” three states: CLOSED, OPEN, HALF_OPEN | Sliding window (count- or time-based) tracks failure rate |
+| Retry â€” automatic reattempt with backoff | Exponential backoff and exception-based retry triggers |
+| Rate Limiter â€” token bucket algorithm | `limitForPeriod` and `limitRefreshPeriod` control throughput |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Resilience4j] --> B[Circuit Breaker]
+    A --> C[Retry]
+    A --> D[Rate Limiter]
+    A --> E[Bulkhead / Time Limiter]
+    B --> B1[CLOSED / OPEN / HALF_OPEN]
+    B --> B2[Sliding window]
+    C --> C1[Backoff / Max attempts]
+    D --> D1[Token bucket]
+    E --> E1[Semaphore / ThreadPool]
+    E --> E2[Timeout / Future cancel]
+```
+
+---
+## Concept Comparison Table
+
+| Concept | Description | Key Difference |
+|---------|-------------|----------------|
+| Circuit Breaker | Prevents repeated failures | State machine: CLOSED â†’ OPEN â†’ HALF_OPEN â†’ CLOSED |
+| Retry | Repeats failed operations | With exponential backoff, maxAttempts |
+| Rate Limiter | Throttles request rate | Token bucket: `limitForPeriod`, `limitRefreshPeriod` |
+| Bulkhead | Limits concurrent calls | Semaphore vs ThreadPool isolation |
+
+---
+## Quick Reference
+
+| Element | Purpose | Example |
+|---------|---------|---------|
+| `@CircuitBreaker(name = "x", fallbackMethod = "y")` | Circuit breaker annotation | `fallbackMethod` must match signature |
+| `@Retry(name = "x", maxAttempts = 3)` | Retry annotation | `backoff = @Backoff(delay = 500)` |
+| `@RateLimiter(name = "x")` | Rate limiter annotation | `limitForPeriod = 10, limitRefreshPeriod = 1s` |
+| `@Bulkhead(name = "x", type = THREADPOOL)` | Bulkhead annotation | `maxThreadPoolSize = 10` |
+
+---
+## Cross-Application Matrix
+
+| Domain | Application | Use Case |
+|--------|-------------|----------|
+| E-Commerce | Circuit Breaker on payment API | Fail fast when payment gateway is down |
+| External API Client | Retry + exponential backoff | Transient network errors are automatically retried |
+| API Gateway | Rate Limiter per API key | Each client limited to 100 requests/minute |
+
+---
+## Chapter Quiz
+
+1. What are the three states of a Resilience4j Circuit Breaker? **Answer:** CLOSED, OPEN, HALF_OPEN
+2. What algorithm does RateLimiter use? **Answer:** Token bucket algorithm
+3. What is the difference between SemaphoreBulkhead and ThreadPoolBulkhead? **Answer:** Semaphore limits concurrent calls in the same thread; ThreadPool isolates calls in a separate thread pool
 
 ## Theory
 
@@ -47,6 +110,15 @@ Bulkhead limits the number of concurrent calls to a service. Two implementations
 
 - **SemaphoreBulkhead**: Uses Java semaphores; limits concurrent calls in the same thread
 - **ThreadPoolBulkhead**: Uses a thread pool; isolates calls in separate threads
+
+> [!TIP]
+> Always define a `fallbackMethod` for `@CircuitBreaker` â€” it provides a degraded response when the circuit is open.
+
+> [!WARNING]
+> Do not combine `@Retry` with `@CircuitBreaker` carelessly â€” configure retries before circuit breaker so failed retries trip the breaker.
+
+> [!NOTE]
+> Use `SemaphoreBulkhead` for in-process isolation (same thread pool) and `ThreadPoolBulkhead` to separate execution contexts entirely.
 
 ## Complete Code Examples
 

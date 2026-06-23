@@ -1,4 +1,4 @@
-# Chapter 0: PHP Foundations for Laravel
+﻿# Chapter 0: PHP Foundations for Laravel
 
 ---
 
@@ -115,10 +115,10 @@ By the end of this chapter, students will be able to:
 ---
 
 ## Theory
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
-> **One-Sentence Takeaway:** Theory is the foundation — master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
+> **One-Sentence Takeaway:** Theory is the foundation â€” master it before moving to examples and exercises.
 
 ![PHP Basics](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/php-basics.png)
 
@@ -364,7 +364,7 @@ $message = match ($statusCode) {
 };
 echo $message; // Client Error
 
-// match is an expression â€” it returns a value
+// match is an expression Ã¢â‚¬â€ it returns a value
 $result = match (true) {
     $statusCode < 300 => 'Success',
     $statusCode < 400 => 'Redirect',
@@ -601,7 +601,7 @@ array_walk($prices, function (&$price) {
 
 $numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// array_map â€” transform every element
+// array_map Ã¢â‚¬â€ transform every element
 $squared = array_map(fn(int $n): int => $n * $n, $numbers);
 // [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
@@ -613,7 +613,7 @@ $add = array_map(
 );
 // [11, 22, 33]
 
-// array_filter â€” keep elements matching a predicate
+// array_filter Ã¢â‚¬â€ keep elements matching a predicate
 $evens = array_filter($numbers, fn(int $n): bool => $n % 2 === 0);
 // [2, 4, 6, 8, 10] (note: keys are preserved)
 
@@ -639,7 +639,7 @@ $admins = array_filter(
 );
 // ['alice' => 'admin', 'charlie' => 'admin']
 
-// array_reduce â€” fold/reduce to a single value
+// array_reduce Ã¢â‚¬â€ fold/reduce to a single value
 $sum = array_reduce($numbers, fn(int $carry, int $item): int => $carry + $item, 0);
 // 55
 
@@ -1172,7 +1172,7 @@ class OldWay
     }
 }
 
-// With promotion (concise) â€” used throughout Laravel
+// With promotion (concise) Ã¢â‚¬â€ used throughout Laravel
 class User
 {
     public function __construct(
@@ -1286,11 +1286,11 @@ abstract class PaymentGateway
         protected bool $sandbox = true,
     ) {}
 
-    // Abstract methods â€” subclasses MUST implement these
+    // Abstract methods Ã¢â‚¬â€ subclasses MUST implement these
     abstract public function charge(float $amount, array $payload): array;
     abstract public function refund(string $transactionId): array;
 
-    // Concrete method â€” shared across all gateways
+    // Concrete method Ã¢â‚¬â€ shared across all gateways
     public function isSandbox(): bool
     {
         return $this->sandbox;
@@ -2130,20 +2130,20 @@ Example directory structure with PSR-4:
 
 ```
 project/
-â”œâ”€â”€ composer.json
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ Models/
-â”‚   â”‚   â”œâ”€â”€ User.php          # namespace App\Models;
-â”‚   â”‚   â””â”€â”€ Product.php       # namespace App\Models;
-â”‚   â”œâ”€â”€ Services/
-â”‚   â”‚   â””â”€â”€ InvoiceService.php # namespace App\Services;
-â”‚   â””â”€â”€ Exceptions/
-â”‚       â””â”€â”€ AppException.php  # namespace App\Exceptions;
-â”œâ”€â”€ tests/
-â”‚   â””â”€â”€ Unit/
-â”‚       â””â”€â”€ UserTest.php      # namespace App\Tests\Unit;
-â””â”€â”€ public/
-    â””â”€â”€ index.php
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ composer.json
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ src/
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Models/
+Ã¢â€â€š   Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ User.php          # namespace App\Models;
+Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Product.php       # namespace App\Models;
+Ã¢â€â€š   Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ Services/
+Ã¢â€â€š   Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ InvoiceService.php # namespace App\Services;
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Exceptions/
+Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ AppException.php  # namespace App\Exceptions;
+Ã¢â€Å“Ã¢â€â‚¬Ã¢â€â‚¬ tests/
+Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ Unit/
+Ã¢â€â€š       Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ UserTest.php      # namespace App\Tests\Unit;
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ public/
+    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬ index.php
 ```
 
 #### 1.7.4 Composer Scripts
@@ -2485,7 +2485,7 @@ echo $product->sku; // SKU_6612a3b4c5d6e
 // Typed properties must be initialized before access
 // Uninitialized typed property access throws TypeError
 
-// Property hook proposal (PHP 8.4+) â€” future feature
+// Property hook proposal (PHP 8.4+) Ã¢â‚¬â€ future feature
 ```
 
 #### 1.8.4 `json_validate` (PHP 8.3+)
@@ -2496,14 +2496,14 @@ PHP 8.3 introduced `json_validate()` to check if a string is valid JSON without 
 <?php
 declare(strict_types=1);
 
-// Before PHP 8.3 (wasteful â€” decodes twice)
+// Before PHP 8.3 (wasteful Ã¢â‚¬â€ decodes twice)
 function isValidJsonOld(string $data): bool
 {
     json_decode($data);
     return json_last_error() === JSON_ERROR_NONE;
 }
 
-// With PHP 8.3 (efficient â€” validates without decoding)
+// With PHP 8.3 (efficient Ã¢â‚¬â€ validates without decoding)
 function isValidJson(string $data): bool
 {
     return json_validate($data);
@@ -2677,7 +2677,7 @@ class Service
     ) {}
 }
 
-// 5. Fibers (PHP 8.1+) â€” used in Laravel's async features
+// 5. Fibers (PHP 8.1+) Ã¢â‚¬â€ used in Laravel's async features
 $fiber = new Fiber(function (): void {
     $value = Fiber::suspend('suspended');
     echo "Resumed with: $value";
@@ -3345,6 +3345,9 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 
 ---
 
+
+> **Pro Tip:** Use strict types (declare(strict_types=1)) in all new PHP files. It prevents subtle type coercion bugs.
+
 ## Quick Reference
 > **One-Sentence Takeaway:** Quick reference for PHP fundamentals.
 
@@ -3358,6 +3361,9 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 
 ---
 
+
+> **Remember:** PSR-4 autoloading requires namespace-to-directory matching. A single mismatch causes cryptic class-not-found errors.
+
 ## Cross-Application Matrix
 
 | Concept | Application Context | Trade-Off |
@@ -3369,6 +3375,9 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 | Error Handling | Application stability | Exceptions vs return codes |
 
 ---
+
+
+> **Warning:** Never use extract() on user input. It can overwrite existing variables and create security vulnerabilities.
 
 ## Chapter Quiz
 > **One-Sentence Takeaway:** Test your PHP fundamentals knowledge.
@@ -3672,12 +3681,12 @@ var_dump($db1 === $cache1);  // false (different named singletons)
 
 1. **Strict Type Calculator**: Write a class `Calculator` with methods `add`, `subtract`, `multiply`, and `divide`. Each method must use strict type declarations (int parameters, return types). The `divide` method must throw a custom `DivisionByZeroException` when the divisor is zero. Include both an interface `CalculatorInterface` and an implementation.
 
-2. **Functional Array Processing**: Given an array of associative arrays representing products â€” each with `name`, `price`, `category`, and `in_stock` (boolean) â€” write PHP code that:
+2. **Functional Array Processing**: Given an array of associative arrays representing products Ã¢â‚¬â€ each with `name`, `price`, `category`, and `in_stock` (boolean) Ã¢â‚¬â€ write PHP code that:
    - Filters to only in-stock items
    - Applies a 10% discount to the price
    - Groups the resulting items by category
    - Returns the average price per category
-   - Use only `array_filter`, `array_map`, `array_reduce`, and `array_map` â€” no foreach loops.
+   - Use only `array_filter`, `array_map`, `array_reduce`, and `array_map` Ã¢â‚¬â€ no foreach loops.
 
 3. **Namespace and Autoloading Setup**: Create the complete file structure for a PHP project with:
    - Namespace `App\Domain\Models` containing a `Customer` class with constructor property promotion for `name`, `email`, and `loyaltyPoints`

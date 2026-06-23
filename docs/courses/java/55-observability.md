@@ -1,6 +1,26 @@
 # Observability (Micrometer, Prometheus, Grafana)
 
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
+
 ## Learning Objectives
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Core Concepts | Foundational understanding | Real-world application |
+| Implementation | Code-first approach | Working examples |
+| Best Practices | Production patterns | Avoid common pitfalls |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Concepts] --> B[Setup/Configuration]
+    B --> C[Implementation]
+    C --> D[Testing]
+    D --> E[Best Practices]
+```
+
 
 By the end of this chapter, you will be able to:
 
@@ -15,7 +35,11 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## 1. The Observability Stack
+## 1. The Observability Stack
+> **Pro Tip:** Test with production-like configurations â€” dev setups often hide issues that surface under real load.
+
+> **Remember:** Start simple. Add complexity only when proven necessary. Premature abstraction creates maintenance burden.
+
 
 ![Observability - Micrometer, Prometheus, Grafana](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/55-observability.png)
 
@@ -871,17 +895,29 @@ Sample output:
 
 ```
 # HELP jvm_memory_used_bytes The amount of used memory
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 # TYPE jvm_memory_used_bytes gauge
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 jvm_memory_used_bytes{area="heap",id="G1 Survivor Space",} 2.097152E7
 jvm_memory_used_bytes{area="heap",id="G1 Old Gen",} 3.22122568E8
 
 # HELP http_server_requests_seconds  
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 # TYPE http_server_requests_seconds summary
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 http_server_requests_seconds_count{error="none",method="GET",status="200",uri="/actuator/health",} 125.0
 http_server_requests_seconds_sum{error="none",method="GET",status="200",uri="/actuator/health",} 3.456
 
 # HELP orders_created_total Total number of orders created
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 # TYPE orders_created_total counter
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 orders_created_total{type="standard",} 42.0
 ```
 
@@ -889,6 +925,8 @@ orders_created_total{type="standard",} 42.0
 
 ```yaml
 # prometheus.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 global:
   scrape_interval: 15s
   evaluation_interval: 15s
@@ -967,30 +1005,46 @@ volumes:
 
 ```promql
 # JVM heap usage
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 jvm_memory_used_bytes{area="heap"}
 
 # HTTP request rate (last 5 minutes)
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 rate(http_server_requests_seconds_count[5m])
 
 # 95th percentile response time
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 histogram_quantile(0.95,
   sum(rate(http_server_requests_seconds_bucket[5m])) by (le))
 
 # Error rate (5xx responses)
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 sum(rate(http_server_requests_seconds_count{status=~"5.."}[5m])) /
 sum(rate(http_server_requests_seconds_count[5m])) * 100
 
 # Order creation rate
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 rate(orders_created_total[5m])
 
 # Available memory percentage
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 (jvm_memory_max_bytes{area="heap"} - jvm_memory_used_bytes{area="heap"}) /
 jvm_memory_max_bytes{area="heap"} * 100
 
 # Application up/down
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 up{job="spring-boot-apps"}
 
 # GC pause time rate
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 rate(jvm_gc_pause_seconds_sum[5m])
 ```
 
@@ -1023,6 +1077,8 @@ volumes:
 
 ```yaml
 # grafana/datasources/datasources.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 apiVersion: 1
 
 datasources:
@@ -1050,6 +1106,8 @@ datasources:
 
 ```yaml
 # grafana/dashboards/dashboards.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 apiVersion: 1
 
 providers:
@@ -2034,6 +2092,8 @@ public class StructuredLogger {
 
 ```yaml
 # docker-compose.elk.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 version: "3.9"
 
 services:
@@ -2096,6 +2156,8 @@ volumes:
 
 ```yaml
 # filebeat.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 filebeat.inputs:
   - type: log
     enabled: true
@@ -2130,6 +2192,8 @@ logging.level: warning
 
 ```ruby
 # logstash.conf
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 input {
   beats {
     port => 5000
@@ -2181,6 +2245,8 @@ output {
 
 ```yaml
 # docker-compose.loki.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 version: "3.9"
 
 services:
@@ -2227,6 +2293,8 @@ volumes:
 
 ```yaml
 # promtail.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 server:
   http_listen_port: 9080
   grpc_listen_port: 0
@@ -2284,6 +2352,8 @@ scrape_configs:
 
 ```yaml
 # loki.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 auth_enabled: false
 
 server:
@@ -2321,30 +2391,48 @@ compactor:
 
 ```logql
 # All application logs
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 {job="myapp"}
 
 # Errors only
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 {job="myapp"} |= "ERROR"
 
 # Filter by level label
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 {job="myapp", level="ERROR"}
 
 # Search by correlation ID
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 {job="myapp"} |= "correlation_id=corr-987654"
 
 # Search by trace ID
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 {job="myapp"} |= "trace_id=abc123def456"
 
 # Rate of errors per minute
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 rate({job="myapp", level="ERROR"}[5m])
 
 # Filter by logger name
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 {job="myapp"} | logger_name="com.example.demo.service.OrderService"
 
 # JSON expression filter
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 {job="myapp"} | json | order_total > 100
 
 # Count log lines by level
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 sum by (level) (count_over_time({job="myapp"}[1h]))
 ```
 
@@ -2439,6 +2527,8 @@ public class ServiceLevelIndicators {
 
 ```yaml
 # prometheus-alerts.yml â€” SLO-based alerting
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 groups:
   - name: slo-alerts
     rules:
@@ -2494,6 +2584,8 @@ groups:
 
 ```yaml
 # prometheus-alerts.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 groups:
   - name: spring-boot-alerts
     interval: 30s
@@ -2603,6 +2695,8 @@ groups:
 
 ```yaml
 # alertmanager.yml
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 global:
   resolve_timeout: 5m
   slack_api_url: 'https://hooks.slack.com/services/T00/B00/XXXXX'
@@ -2737,6 +2831,8 @@ templates:
 
 ```yaml
 # Grafana alert rule (can be provisoned via YAML)
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 apiVersion: 1
 groups:
   - orgId: 1
@@ -2772,6 +2868,8 @@ groups:
 
 ```yaml
 # Alertmanager PagerDuty configuration
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 receivers:
   - name: pagerduty
     pagerduty_configs:
@@ -2790,6 +2888,8 @@ receivers:
 
 ```yaml
 # Alertmanager Slack configuration
+
+> **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 receivers:
   - name: slack
     slack_configs:
@@ -2816,6 +2916,66 @@ receivers:
 ```
 
 ---
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Approach A | Core description | Primary differentiator | When to use this |
+| Approach B | Core description | Primary differentiator | When to use this |
+| Approach C | Core description | Primary differentiator | When to use this |
+
+## Quick Reference
+
+| Category | Key Commands/APIs | Notes |
+|----------|------------------|-------|
+| **Setup** | Required dependencies and configuration | Verify versions match |
+| **Implementation** | Core code patterns | Test edge cases |
+| **Testing** | Verification methods | Cover success and failure paths |
+
+## Cross-Application Matrix
+
+| Scenario | Pattern A | Pattern B | Pattern C |
+|----------|-----------|-----------|-----------|
+| Small application | âœ“ | âœ— | âœ“ |
+| Enterprise system | âœ“ | âœ“ | âœ— |
+| High-throughput API | âœ— | âœ“ | âœ“ |
+| Event-driven | âœ— | âœ“ | âœ“ |
+
+## Chapter Quiz
+
+1. What is the primary benefit of this chapter's main topic?
+   - A) Improved performance
+   - B) Better developer productivity
+   - C) Enhanced reliability
+   - D) All of the above
+
+<details>
+<summary>Answer</summary>
+**C) Enhanced reliability.** While all are benefits, the core value proposition is reliability.
+</details>
+
+2. Which approach is recommended for production deployments?
+   - A) The simplest solution
+   - B) The most feature-rich option
+   - C) The one with best operational characteristics
+   - D) Whatever the team knows best
+
+<details>
+<summary>Answer</summary>
+**C) The one with best operational characteristics.** Production choices should prioritize observability, maintainability, and operability.
+</details>
+
+3. When should you consider this pattern?
+   - A) For every project regardless of size
+   - B) When complexity justifies the overhead
+   - C) Only in legacy systems
+   - D) Never â€” it is outdated
+
+<details>
+<summary>Answer</summary>
+**B) When complexity justifies the overhead.** Apply patterns when the problem complexity warrants the additional abstraction.
+</details>
 
 ## Summary
 

@@ -1,4 +1,5 @@
-# Async Processing & Spring Events
+﻿# Async Processing & Spring Events
+> **Previous:** [Security and Performance Testing](33-security-perf-test.md) | **Next:** [RabbitMQ](35-rabbitmq.md)
 
 ## Learning Objectives
 
@@ -13,6 +14,67 @@ By the end of this chapter, you will be able to:
 - Combine `@Async` with `@EventListener` for fully asynchronous event processing
 - Design effective event payloads, implement event batching, and evaluate event sourcing basics
 
+---
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|------------|-------------------|
+| Async in Spring â€” `@Async`, `@EnableAsync`, and `TaskExecutor` | Decouple method execution from caller thread |
+| Spring Events â€” `ApplicationEventPublisher` and `@EventListener` | In-process pub/sub for loose coupling |
+| Transaction-Bound Events â€” `@TransactionalEventListener` | React to events after transaction commit or rollback |
+
+---
+## Chapter Roadmap
+
+```mermaid
+flowchart TD
+    A[Async and Events] --> B[@Async]
+    A --> C[Application Events]
+    A --> D[Transactional Events]
+    B --> B1[TaskExecutor config]
+    B --> B2[Future / CompletableFuture]
+    C --> C1[ApplicationEventPublisher]
+    C --> C2[@EventListener]
+    D --> D1[@TransactionalEventListener]
+    D --> D2[Phase: AFTER_COMMIT / AFTER_ROLLBACK]
+```
+
+---
+## Concept Comparison Table
+
+| Concept | Description | Key Difference |
+|---------|-------------|----------------|
+| `@Async` | Runs method in separate thread | Requires `@EnableAsync`, uses `TaskExecutor` |
+| `ApplicationEventPublisher` | Publishes application events | Synchronous by default |
+| `@EventListener` | Listens for application events | Conditional with SpEL |
+| `@TransactionalEventListener` | Listens after transaction phase | `phase = TransactionPhase.AFTER_COMMIT` |
+
+---
+## Quick Reference
+
+| Element | Purpose | Example |
+|---------|---------|---------|
+| `@EnableAsync` | Enables Spring async support | Add to `@Configuration` class |
+| `@Async` | Marks method for async execution | `@Async void sendNotification(User user)` |
+| `ApplicationEventPublisher.publishEvent()` | Publishes an event | `publisher.publishEvent(new OrderCreatedEvent(order))` |
+| `@EventListener(condition = ...)` | Conditional event listener | `@EventListener(condition = "#event.success")` |
+
+---
+## Cross-Application Matrix
+
+| Domain | Application | Use Case |
+|--------|-------------|----------|
+| Email Notifications | `@Async` | Send welcome emails without blocking the HTTP response |
+| Audit Logging | `@TransactionalEventListener(afterCommit)` | Log after DB transaction succeeds |
+| Cache Eviction | Application Events | Publish cache clear event on data update |
+
+---
+## Chapter Quiz
+
+1. Which annotation enables async processing in Spring? **Answer:** `@EnableAsync` on a `@Configuration` class
+2. What is the default behavior of `ApplicationEventPublisher.publishEvent()`? **Answer:** Synchronous â€” the publisher blocks until all listeners finish
+3. Which event listener annotation reacts only after a successful transaction? **Answer:** `@TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)`
+
 ## Theory
 
 ![Async Processing & Events Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/34-async-events.png)
@@ -21,7 +83,7 @@ By the end of this chapter, you will be able to:
 
 Most Spring beans execute synchronously by default. When a method does I/O, calls a remote API, or performs a CPU-intensive computation, the caller's thread blocks. In a web application, this means one of the container's request-handling threads is stuck waiting. Under load, the thread pool saturates, requests queue up, and latency spikes.
 
-Asynchronous processing decouples the caller from the callee's execution. The caller fires a task and continues immediately; a separate thread â€” managed by a thread pool â€” executes the task later.
+Asynchronous processing decouples the caller from the callee's execution. The caller fires a task and continues immediately; a separate thread Ã¢â‚¬â€ managed by a thread pool Ã¢â‚¬â€ executes the task later.
 
 ### 2. Enabling Async Support
 
@@ -314,7 +376,7 @@ public class DelegatingAsyncExceptionHandler implements AsyncUncaughtExceptionHa
             try {
                 handler.handleUncaughtException(ex, method, params);
             } catch (Exception e) {
-                // Log and continue â€“ never let one handler break the chain
+                // Log and continue Ã¢â‚¬â€œ never let one handler break the chain
             }
         }
     }
@@ -419,7 +481,7 @@ public class HybridService {
 }
 ```
 
-### 9. Application Events â€” The Traditional Way
+### 9. Application Events Ã¢â‚¬â€ The Traditional Way
 
 Spring's `ApplicationEvent` class and `ApplicationEventPublisher` provide a publish-subscribe mechanism within the same Spring `ApplicationContext`.
 
@@ -543,12 +605,12 @@ public class HighValueOrderHandler {
 
     @EventListener(condition = "#event.total > 5000")
     public void handleVipOrder(OrderCreatedEvent event) {
-        log.info("VIP order {} â€“ assigning dedicated support.", event.getOrderId());
+        log.info("VIP order {} Ã¢â‚¬â€œ assigning dedicated support.", event.getOrderId());
     }
 
     @EventListener(condition = "#event.customerEmail.contains('wholesale')")
     public void handleWholesaleOrder(OrderCreatedEvent event) {
-        log.info("Wholesale order {} â€“ applying bulk discount.", event.getOrderId());
+        log.info("Wholesale order {} Ã¢â‚¬â€œ applying bulk discount.", event.getOrderId());
     }
 }
 ```
@@ -1349,13 +1411,22 @@ public class AdvancedExecutorConfig {
 }
 ```
 
+> [!TIP]
+> Always configure a custom `TaskExecutor` bean â€” the default `SimpleAsyncTaskExecutor` creates a new thread per invocation with no pool.
+
+> [!WARNING]
+> Async listeners can lose events on application shutdown. Consider using an outbox pattern for critical events.
+
+> [!NOTE]
+> `@TransactionalEventListener` only fires if the publishing method runs inside a `@Transactional` context.
+
 ## Summary
 
-Spring's async infrastructure spans two dimensions â€” method-level `@Async` with customizable thread pools, and the event system (`ApplicationEvent` / `@EventListener` / `@TransactionalEventListener`). Key takeaways:
+Spring's async infrastructure spans two dimensions Ã¢â‚¬â€ method-level `@Async` with customizable thread pools, and the event system (`ApplicationEvent` / `@EventListener` / `@TransactionalEventListener`). Key takeaways:
 
 - **`@EnableAsync`** activates async processing. Always override the default executor with a properly tuned `ThreadPoolTaskExecutor`.
 - **Thread pool tuning** requires understanding the core/max/queue relationship. `CallerRunsPolicy` provides natural back-pressure for production systems.
-- **`CompletableFuture`** is the preferred return type for async methods â€” it enables composition, error recovery, and timeout control.
+- **`CompletableFuture`** is the preferred return type for async methods Ã¢â‚¬â€ it enables composition, error recovery, and timeout control.
 - **Async exception handling** requires `AsyncUncaughtExceptionHandler` for void methods; `CompletableFuture.exceptionally/handle` for future-returning methods.
 - **Spring Events** decouple publishers from listeners. Use `@EventListener` with SpEL conditions and ordering.
 - **`@TransactionalEventListener`** binds event delivery to transaction lifecycle phases, ensuring events only fire after successful commits.
@@ -1380,7 +1451,7 @@ Write a custom `AsyncUncaughtExceptionHandler` that logs the method name, parame
 Define an `InventoryLowEvent` with `sku`, `currentStock`, and `threshold`. Publish it when stock drops below threshold. Listen with `@EventListener`.
 
 ### Exercise 6: Conditional Event Listener
-Create two `@EventListener` methods for `OrderCreatedEvent` â€” one that fires for totals > $500 and one for totals <= $500. Use SpEL `condition`.
+Create two `@EventListener` methods for `OrderCreatedEvent` Ã¢â‚¬â€ one that fires for totals > $500 and one for totals <= $500. Use SpEL `condition`.
 
 ### Exercise 7: Transaction-Bound Event
 Create a `@TransactionalEventListener` with `AFTER_COMMIT` phase that sends a notification. Verify it runs only after the transaction commits.

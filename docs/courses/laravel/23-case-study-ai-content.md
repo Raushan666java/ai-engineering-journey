@@ -1,4 +1,6 @@
-# Chapter 23: Case Study â€” AI-Powered Content Platform
+﻿# Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform
+
+> **Previous:** [Case Study E-Commerce](./22-case-study-ecommerce.md) | **Next:** [Capstone](./24-capstone.md)
 
 ---
 
@@ -12,13 +14,44 @@
 - Design caching strategies for embeddings, search results, and AI responses that balance freshness with cost
 
 ---
+## Chapter at a Glance
 
-## Theory â€” End-to-End Design
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Requirements | AI content platform with RAG, agents, and vector search | Define content creation, moderation, and search flows |
+| Architecture | Event-driven with queued AI processing | Use events for async content processing pipeline |
+| RAG Pipeline | Retrieve, augment, generate content | Use vector store for semantic search over content |
+| AI Agent Design | Specialized agents for content tasks | Moderation, generation, and search agents collaborate |
+| Vector Store Strategy | Store embeddings for semantic search | Use PostgreSQL pgvector or dedicated vector DB |
+| Real-Time | WebSockets for live updates | Use Laravel Reverb for real-time collaboration |
+
+## Chapter Roadmap
+
+``mermaid
+flowchart LR
+    A[User] --> B[Laravel App]
+    B --> C[Content Moderation Agent]
+    B --> D[RAG Pipeline]
+    D --> E[Vector Store]
+    D --> F[LLM Service]
+    B --> G[Search Agent]
+    B --> H[Real-Time Reverb]
+    H --> I[WebSocket Clients]
+    B --> J[Queue Workers]
+    J --> K[AI Processing Jobs]
+``
+
+
+
+## Theory Ã¢â‚¬â€ End-to-End Design
 
 ![AI Content Case Study](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/23-case-study-ai-content.png)
 
 
 ### 7.1 Requirements Gathering
+
+
+> **One-Sentence Takeaway:** The AI content platform requires content creation, moderation, search, and real-time collaboration features.
 
 The platform enables content teams to author, edit, search, and publish articles at scale with AI assistance. Writers produce drafts, editors refine them, and AI agents provide research augmentation, quality checks, and semantic search across the entire knowledge base.
 
@@ -48,68 +81,74 @@ The platform enables content teams to author, edit, search, and publish articles
 
 ### 7.2 Architecture Overview
 
+
+> **One-Sentence Takeaway:** The architecture uses event-driven design with queued AI processing and WebSocket real-time updates.
+
 The system consists of five layers: API gateway, Laravel backend, vector database, AI SDK agent layer, and external service integrations.
 
 ```
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-â”‚                          Content Platform UI                             â”‚
-â”‚            (Livewire / Inertia + Vue 3, Reverb WebSockets)               â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-                            â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”
-                            â”‚   Load Balancerâ”‚
-                            â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-                    â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-                    â”‚       Laravel Octane           â”‚
-                    â”‚   â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”   â”‚
-                    â”‚   â”‚  API Controllers       â”‚   â”‚
-                    â”‚   â”‚  AI Agent Orchestrator â”‚   â”‚
-                    â”‚   â”‚  MCP Server Handlers   â”‚   â”‚
-                    â”‚   â”‚  Document Service      â”‚   â”‚
-                    â”‚   â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜   â”‚
-                    â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
-                                    â”‚
-        â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¼â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”
-        â”‚                           â”‚                           â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”           â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”           â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”
-â”‚  PostgreSQL    â”‚           â”‚    Redis       â”‚           â”‚  Queue Workers â”‚
-â”‚  + pgvector    â”‚           â”‚                â”‚           â”‚  (Horizon)     â”‚
-â”‚  (documents,   â”‚           â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚           â”‚  â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â” â”‚
-â”‚   embeddings,  â”‚           â”‚ â”‚ Embeddings â”‚ â”‚           â”‚  â”‚Moderation â”‚ â”‚
-â”‚   vectors)     â”‚           â”‚ â”‚ Cache      â”‚ â”‚           â”‚  â”‚Pipeline   â”‚ â”‚
-â”‚               â”‚           â”‚ â”‚ Search TTL  â”‚ â”‚           â”‚  â”‚Embed Gen  â”‚ â”‚
-â”‚               â”‚           â”‚ â”‚ AI Responsesâ”‚ â”‚           â”‚  â”‚Content Genâ”‚ â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜           â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚           â”‚  â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜ â”‚
-        â”‚                   â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜           â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜
-        â”‚                           â”‚                           â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”           â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”                   â”‚
-â”‚  AI SDK Layer  â”‚           â”‚   Reverb WS    â”‚                   â”‚
-â”‚ â”Œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”  â”‚           â”‚ (collaboration  â”‚                   â”‚
-â”‚ â”‚ Researcherâ”‚  â”‚           â”‚  edit status,   â”‚                   â”‚
-â”‚ â”‚ Writer    â”‚  â”‚           â”‚  agent progress â”‚                   â”‚
-â”‚ â”‚ Editor    â”‚  â”‚           â”‚  broadcasts)   â”‚                   â”‚
-â”‚ â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜  â”‚           â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                   â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”˜                                               â”‚
-        â”‚                                                       â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”                                               â”‚
-â”‚ External APIs  â”‚                                               â”‚
-â”‚ (OpenAI,      â”‚                                               â”‚
-â”‚  Perplexity,  â”‚                                               â”‚
-â”‚  Claude)      â”‚                                               â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                                               â”‚
-        â”‚                                                       â”‚
-â”Œâ”€â”€â”€â”€â”€â”€â”€â”´â”€â”€â”€â”€â”€â”€â”€â”                                               â”‚
-â”‚   MCP Servers  â”‚                                              â”‚
-â”‚ (search_docs, â”‚                                               â”‚
-â”‚  generate,    â”‚                                               â”‚
-â”‚  analyze)     â”‚                                               â”‚
-â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜                                               â”‚
-        â”‚                                                       â”‚
-        â””â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”˜
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š                          Content Platform UI                             Ã¢â€â€š
+Ã¢â€â€š            (Livewire / Inertia + Vue 3, Reverb WebSockets)               Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                                    Ã¢â€â€š
+                            Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+                            Ã¢â€â€š   Load BalancerÃ¢â€â€š
+                            Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                                    Ã¢â€â€š
+                    Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+                    Ã¢â€â€š       Laravel Octane           Ã¢â€â€š
+                    Ã¢â€â€š   Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â   Ã¢â€â€š
+                    Ã¢â€â€š   Ã¢â€â€š  API Controllers       Ã¢â€â€š   Ã¢â€â€š
+                    Ã¢â€â€š   Ã¢â€â€š  AI Agent Orchestrator Ã¢â€â€š   Ã¢â€â€š
+                    Ã¢â€â€š   Ã¢â€â€š  MCP Server Handlers   Ã¢â€â€š   Ã¢â€â€š
+                    Ã¢â€â€š   Ã¢â€â€š  Document Service      Ã¢â€â€š   Ã¢â€â€š
+                    Ã¢â€â€š   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ   Ã¢â€â€š
+                    Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+                                    Ã¢â€â€š
+        Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¼Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+        Ã¢â€â€š                           Ã¢â€â€š                           Ã¢â€â€š
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â           Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â           Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â
+Ã¢â€â€š  PostgreSQL    Ã¢â€â€š           Ã¢â€â€š    Redis       Ã¢â€â€š           Ã¢â€â€š  Queue Workers Ã¢â€â€š
+Ã¢â€â€š  + pgvector    Ã¢â€â€š           Ã¢â€â€š                Ã¢â€â€š           Ã¢â€â€š  (Horizon)     Ã¢â€â€š
+Ã¢â€â€š  (documents,   Ã¢â€â€š           Ã¢â€â€š Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â Ã¢â€â€š           Ã¢â€â€š  Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â Ã¢â€â€š
+Ã¢â€â€š   embeddings,  Ã¢â€â€š           Ã¢â€â€š Ã¢â€â€š Embeddings Ã¢â€â€š Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€šModeration Ã¢â€â€š Ã¢â€â€š
+Ã¢â€â€š   vectors)     Ã¢â€â€š           Ã¢â€â€š Ã¢â€â€š Cache      Ã¢â€â€š Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€šPipeline   Ã¢â€â€š Ã¢â€â€š
+Ã¢â€â€š               Ã¢â€â€š           Ã¢â€â€š Ã¢â€â€š Search TTL  Ã¢â€â€š Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€šEmbed Gen  Ã¢â€â€š Ã¢â€â€š
+Ã¢â€â€š               Ã¢â€â€š           Ã¢â€â€š Ã¢â€â€š AI ResponsesÃ¢â€â€š Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€šContent GenÃ¢â€â€š Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ           Ã¢â€â€š Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ Ã¢â€â€š           Ã¢â€â€š  Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ Ã¢â€â€š
+        Ã¢â€â€š                   Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ           Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
+        Ã¢â€â€š                           Ã¢â€â€š                           Ã¢â€â€š
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â           Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â                   Ã¢â€â€š
+Ã¢â€â€š  AI SDK Layer  Ã¢â€â€š           Ã¢â€â€š   Reverb WS    Ã¢â€â€š                   Ã¢â€â€š
+Ã¢â€â€š Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â  Ã¢â€â€š           Ã¢â€â€š (collaboration  Ã¢â€â€š                   Ã¢â€â€š
+Ã¢â€â€š Ã¢â€â€š ResearcherÃ¢â€â€š  Ã¢â€â€š           Ã¢â€â€š  edit status,   Ã¢â€â€š                   Ã¢â€â€š
+Ã¢â€â€š Ã¢â€â€š Writer    Ã¢â€â€š  Ã¢â€â€š           Ã¢â€â€š  agent progress Ã¢â€â€š                   Ã¢â€â€š
+Ã¢â€â€š Ã¢â€â€š Editor    Ã¢â€â€š  Ã¢â€â€š           Ã¢â€â€š  broadcasts)   Ã¢â€â€š                   Ã¢â€â€š
+Ã¢â€â€š Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ  Ã¢â€â€š           Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ                   Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ                                               Ã¢â€â€š
+        Ã¢â€â€š                                                       Ã¢â€â€š
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â                                               Ã¢â€â€š
+Ã¢â€â€š External APIs  Ã¢â€â€š                                               Ã¢â€â€š
+Ã¢â€â€š (OpenAI,      Ã¢â€â€š                                               Ã¢â€â€š
+Ã¢â€â€š  Perplexity,  Ã¢â€â€š                                               Ã¢â€â€š
+Ã¢â€â€š  Claude)      Ã¢â€â€š                                               Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ                                               Ã¢â€â€š
+        Ã¢â€â€š                                                       Ã¢â€â€š
+Ã¢â€Å’Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â´Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Â                                               Ã¢â€â€š
+Ã¢â€â€š   MCP Servers  Ã¢â€â€š                                              Ã¢â€â€š
+Ã¢â€â€š (search_docs, Ã¢â€â€š                                               Ã¢â€â€š
+Ã¢â€â€š  generate,    Ã¢â€â€š                                               Ã¢â€â€š
+Ã¢â€â€š  analyze)     Ã¢â€â€š                                               Ã¢â€â€š
+Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ                                               Ã¢â€â€š
+        Ã¢â€â€š                                                       Ã¢â€â€š
+        Ã¢â€â€Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€â‚¬Ã¢â€Ëœ
 ```
 
 ### 7.3 Data Model
+
+
+> **One-Sentence Takeaway:** Content, users, embeddings, and moderation results are stored in PostgreSQL with pgvector for vector search.
 
 The schema is designed around documents, their versions, embeddings, and the artifacts produced by AI agents.
 
@@ -283,6 +322,9 @@ CREATE TABLE moderation_results (
 ```
 
 ### 7.4 RAG Pipeline
+
+
+> **One-Sentence Takeaway:** Retrieve-Augment-Generate: fetch relevant content from vector store, augment the prompt, generate the response.
 
 RAG (Retrieval-Augmented Generation) is the core architectural pattern. When a user queries the knowledge base, we retrieve relevant document chunks via vector similarity, then pass those chunks as context to an LLM for the final answer.
 
@@ -626,7 +668,7 @@ class RagService
 
         // 3. Build context from retrieved chunks
         $context = collect($results)
-            ->map(fn ($r) => "â€” {$r->chunk_text} (source: {$r->title}, similarity: " . round($r->similarity, 3) . ")")
+            ->map(fn ($r) => "Ã¢â‚¬â€ {$r->chunk_text} (source: {$r->title}, similarity: " . round($r->similarity, 3) . ")")
             ->implode("\n\n");
 
         $sources = collect($results)
@@ -652,7 +694,7 @@ class RagService
             'from_cache' => false,
         ];
 
-        // 5. Cache result (TTL based on query specificity â€” shorter for vague queries)
+        // 5. Cache result (TTL based on query specificity Ã¢â‚¬â€ shorter for vague queries)
         $ttl = strlen($query) > 50 ? 3600 : 300;
         Cache::put($cacheKey, $result, $ttl);
 
@@ -668,7 +710,16 @@ class RagService
 }
 ```
 
+
+> **Pro Tip:** Chunk your content strategically. Overlapping chunks with metadata improve retrieval accuracy significantly.
+
+
+> **Pro Tip:** Chunk your content strategically. Overlapping chunks with metadata improve retrieval accuracy significantly.
+
 ### 7.5 AI Agent Design
+
+
+> **One-Sentence Takeaway:** Specialized agents handle moderation, generation, and search, communicating through events and queues.
 
 The agent layer uses Ollama or the AI SDK with structured output. Each agent has a specific role, prompt, and output schema.
 
@@ -984,7 +1035,7 @@ PROMPT;
 
 #### 7.5.5 Agent Chaining Workflow
 
-The full content generation pipeline chains the Researcher â†’ Writer â†’ Editor in sequence.
+The full content generation pipeline chains the Researcher Ã¢â€ â€™ Writer Ã¢â€ â€™ Editor in sequence.
 
 ```php
 // App\Services\ContentGenerationService.php
@@ -1072,6 +1123,9 @@ class ContentGenerationService
 
 ### 7.6 Vector Store Strategy
 
+
+> **One-Sentence Takeaway:** PostgreSQL pgvector stores embeddings alongside relational data, avoiding a separate vector database.
+
 The system uses multiple vector collections (separated by `content_type`) with hybrid search.
 
 **Collection Strategy**
@@ -1136,9 +1190,18 @@ class ReindexEmbeddings extends Command
 }
 ```
 
+
+> **Warning:** Embedding generation is expensive. Cache embeddings and generate them asynchronously via queue jobs.
+
+
+> **Warning:** Embedding generation is expensive. Cache embeddings and generate them asynchronously via queue jobs.
+
 ### 7.7 MCP Tool Exposure
 
-The platform exposes its AI capabilities through MCP (Model Context Protocol) servers. This allows external AI clientsâ€”like Claude Desktop, Cursor, or custom agentsâ€”to search the knowledge base, generate content, and analyze sentiment directly.
+
+> **One-Sentence Takeaway:** Expose content search and generation as MCP tools for external AI agents to discover and use.
+
+The platform exposes its AI capabilities through MCP (Model Context Protocol) servers. This allows external AI clientsÃ¢â‚¬â€like Claude Desktop, Cursor, or custom agentsÃ¢â‚¬â€to search the knowledge base, generate content, and analyze sentiment directly.
 
 ```php
 // App/Mcp/Servers/ContentMcpServer.php
@@ -1288,6 +1351,9 @@ Route::match(['POST'], 'mcp/content/sentiment', [ContentMcpServer::class, 'analy
 
 ### 7.8 Content Moderation
 
+
+> **One-Sentence Takeaway:** Moderation agents scan content for policy violations using AI classification before publication.
+
 Moderation is a two-stage pipeline: text analysis for toxicity and hate speech, image analysis for NSFW content. Both run asynchronously via Horizon queues.
 
 ```php
@@ -1416,6 +1482,9 @@ class ModerationService
 
 ### 7.9 Caching Strategy
 
+
+> **One-Sentence Takeaway:** Cache generated content and search results with Redis, invalidating on content updates.
+
 Caching in an AI-powered platform must balance cost (LLM API calls are expensive) with freshness (embeddings and search results become stale).
 
 | Cache Layer | Key Pattern | TTL | Storage | Invalidation Trigger |
@@ -1499,6 +1568,9 @@ class AiCacheService
 ```
 
 ### 7.10 Real-Time Collaboration
+
+
+> **One-Sentence Takeaway:** Laravel Reverb provides WebSocket-based real-time updates for collaborative content editing.
 
 Reverb broadcasts collaboration events and agent progress updates to connected clients.
 
@@ -1588,13 +1660,123 @@ class AgentProgressUpdated implements ShouldBroadcast
 
 ---
 
+## Concept Comparison Table
+
+| Concept | Purpose | Key Benefit | Limitation |
+|---------|---------|-------------|------------|
+| RAG | Retrieve + augment + generate | Context-aware AI output | Embedding cost and latency |
+| Vector Store | pgvector or dedicated DB | Semantic search | Index maintenance |
+| MCP | Tool exposure for AI agents | Interoperability | Security considerations |
+| Real-Time | Reverb WebSockets | Live collaboration | Connection state management |
+
+## Quick Reference
+
+| Item | Description |
+|------|-------------|
+| AI::embed()|Generate text embeddings | AI::chat()|Generate AI response |
+| Reverb channel|Real-time WebSocket channel | pgvector index|Efficient vector similarity search |
+
+## Cross-Application Matrix
+
+| Scenario | Approach | Benefit | Challenge |
+|----------|----------|---------|-----------|
+| Content Generation | RAG pipeline | Contextual, relevant output | Latency from LLM calls |
+| Content Moderation | AI classification agent | Scalable moderation | False positive tuning |
+| Real-Time Editing | Reverb WebSockets | Live collaboration | Connection overhead |
+| Search | Vector similarity | Semantic understanding | Index maintenance cost |
+
+## Chapter Quiz
+
+1. What vector search strategy does this case study use?
+   - A) Pinecone
+   - B) Weaviate
+   - C) PostgreSQL pgvector
+   - D) Milvus
+   <details><summary>Answer</summary>**C)** pgvector stores embeddings alongside relational data in PostgreSQL.</details>
+
+2. What is the purpose of the RAG pipeline?
+   - A) Generate images
+   - B) Retrieve relevant context and augment LLM prompts
+   - C) Cache API responses
+   - D) Route user requests
+   <details><summary>Answer</summary>**B)** RAG retrieves relevant content from a vector store and augments the prompt before LLM generation.</details>
+
+3. Which Laravel package provides real-time WebSocket capabilities?
+   - A) Horizon
+   - B) Reverberate
+   - C) Reverb
+   - D) Echo
+   <details><summary>Answer</summary>**C)** Laravel Reverb provides WebSocket-based real-time updates.</details>
+
+4. How are AI agents designed in this architecture?
+   - A) Monolithic single agent
+   - B) Specialized agents communicating through events and queues
+   - C) External API calls only
+   - D) Serverless functions
+   <details><summary>Answer</summary>**B)** Specialized agents for moderation, generation, and search communicate through events and queues.</details>
+
+## Concept Comparison Table
+
+| Concept | Purpose | Key Benefit | Limitation |
+|---------|---------|-------------|------------|
+| RAG | Retrieve + augment + generate | Context-aware AI output | Embedding cost and latency |
+| Vector Store | pgvector or dedicated DB | Semantic search | Index maintenance |
+| MCP | Tool exposure for AI agents | Interoperability | Security considerations |
+| Real-Time | Reverb WebSockets | Live collaboration | Connection state management |
+
+## Quick Reference
+
+| Item | Description |
+|------|-------------|
+| AI::embed()|Generate text embeddings | AI::chat()|Generate AI response |
+| Reverb channel|Real-time WebSocket channel | pgvector index|Efficient vector similarity search |
+
+## Cross-Application Matrix
+
+| Scenario | Approach | Benefit | Challenge |
+|----------|----------|---------|-----------|
+| Content Generation | RAG pipeline | Contextual, relevant output | Latency from LLM calls |
+| Content Moderation | AI classification agent | Scalable moderation | False positive tuning |
+| Real-Time Editing | Reverb WebSockets | Live collaboration | Connection overhead |
+| Search | Vector similarity | Semantic understanding | Index maintenance cost |
+
+## Chapter Quiz
+
+1. What vector search strategy does this case study use?
+   - A) Pinecone
+   - B) Weaviate
+   - C) PostgreSQL pgvector
+   - D) Milvus
+   <details><summary>Answer</summary>**C)** pgvector stores embeddings alongside relational data in PostgreSQL.</details>
+
+2. What is the purpose of the RAG pipeline?
+   - A) Generate images
+   - B) Retrieve relevant context and augment LLM prompts
+   - C) Cache API responses
+   - D) Route user requests
+   <details><summary>Answer</summary>**B)** RAG retrieves relevant content from a vector store and augments the prompt before LLM generation.</details>
+
+3. Which Laravel package provides real-time WebSocket capabilities?
+   - A) Horizon
+   - B) Reverberate
+   - C) Reverb
+   - D) Echo
+   <details><summary>Answer</summary>**C)** Laravel Reverb provides WebSocket-based real-time updates.</details>
+
+4. How are AI agents designed in this architecture?
+   - A) Monolithic single agent
+   - B) Specialized agents communicating through events and queues
+   - C) External API calls only
+   - D) Serverless functions
+   <details><summary>Answer</summary>**B)** Specialized agents for moderation, generation, and search communicate through events and queues.</details>
+
 ## Summary
 
-- The RAG pipeline follows a five-step sequence: text ingestion â†’ chunking â†’ embedding generation (OpenAI text-embedding-3-small, 1536 dimensions) â†’ pgvector storage with HNSW index â†’ similarity search + LLM augmentation.
+- The RAG pipeline follows a five-step sequence: text ingestion Ã¢â€ â€™ chunking Ã¢â€ â€™ embedding generation (OpenAI text-embedding-3-small, 1536 dimensions) Ã¢â€ â€™ pgvector storage with HNSW index Ã¢â€ â€™ similarity search + LLM augmentation.
 - Three specialized AI agents handle content production: Writer (generates articles from briefs with structured JSON output), Editor (reviews for grammar, style, and factual consistency), and Researcher (performs web search and returns fact-checked citations).
-- Agent chaining creates a production pipeline: Researcher â†’ Writer â†’ Editor. Each step broadcasts progress via Reverb so the UI provides real-time feedback.
+- Agent chaining creates a production pipeline: Researcher Ã¢â€ â€™ Writer Ã¢â€ â€™ Editor. Each step broadcasts progress via Reverb so the UI provides real-time feedback.
 - The vector store is partitioned by `content_type` (article, comment, metadata) with separate HNSW indexes. A periodic `embeddings:reindex` artisan command handles stale embeddings.
-- Hybrid search combines pgvector cosine similarity (vector_score) with PostgreSQL full-text search (fts_score) using a weighted formula: `hybrid_score = vector_score Ã— 0.7 + fts_score Ã— 0.3`.
+- Hybrid search combines pgvector cosine similarity (vector_score) with PostgreSQL full-text search (fts_score) using a weighted formula: `hybrid_score = vector_score Ãƒâ€” 0.7 + fts_score Ãƒâ€” 0.3`.
 - MCP tools (search_documents, generate_content, analyze_sentiment) expose platform capabilities to external AI clients through a JSON-RPC interface.
 - Content moderation runs asynchronously: submitted documents and images pass through AI analysis queues. Text is scored for toxicity and NSFW content; images are analyzed via vision model.
 - A multi-layer caching strategy reduces API costs: embedding cache (24h, content-addressed), search result cache (5-60 min), AI response cache (1h), and moderation cache (24h).
@@ -1602,6 +1784,12 @@ class AgentProgressUpdated implements ShouldBroadcast
 ---
 
 ## Exercises
+
+
+> **Remember:** Use presence channels in Reverb to show which users are actively editing content.
+
+
+> **Remember:** Use presence channels in Reverb to show which users are actively editing content.
 
 ### Review Questions
 

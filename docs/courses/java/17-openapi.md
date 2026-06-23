@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="../16-validation.md">Ã¢â€ Â Previous (Validation)</a> | <a href="../18-file-handling.md">Next (File Upload) Ã¢â€ â€™</a>
-</p>
+> **Previous:** [Validation](./16-validation.md) | **Next:** [File Handling](./18-file-handling.md)
 
 # API Documentation with OpenAPI/Swagger
 

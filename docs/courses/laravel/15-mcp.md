@@ -1,4 +1,5 @@
 # Chapter 15: Laravel MCP â€” Model Context Protocol
+> **Previous:** [Laravel AI SDK -- Images, Audio, Transcriptions & Embeddings](./14-ai-sdk-media) | **Next:** [Semantic Search, Vector Search & RAG with pgvector](./16-search-rag)
 
 ---
 ## Learning Objectives
@@ -8,6 +9,39 @@
 - Implement tool schemas, annotations, and response types
 - Build an MCP Client for agent integration
 - Authenticate and test MCP servers
+## Chapter at a Glance
+
+| Section | Key Topics |
+|---------|-----------|
+| MCP Overview | Protocol architecture, primitives |
+| Server Creation | Attributes, tools/resources/prompts |
+| Server Registration | HTTP and local deployment |
+| Tools | inputSchema, handle, outputSchema |
+| Tool Annotations | ReadOnly, Destructive, Idempotent, OpenWorld |
+| Tool Responses | Text, file, structured, streaming |
+| Prompts | Templates, arguments, validation |
+| Resources | URI-based data, template parameters |
+| MCP Apps | Blade/Livewire interactive UIs |
+| Authentication | OAuth 2.1, Sanctum tokens |
+| MCP Client | Consuming remote servers |
+| Testing | HTTP assertions, unit testing |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[MCP Overview] --> B[Creating Servers]
+    B --> C[Server Registration]
+    C --> D[Tools]
+    C --> E[Prompts]
+    C --> F[Resources]
+    D --> G[Tool Annotations]
+    D --> H[Tool Responses]
+    F --> I[MCP Apps]
+    C --> J[Authentication]
+    J --> K[MCP Client]
+    K --> L[Testing]
+```
 ---
 
 ## Theory
@@ -16,6 +50,8 @@
 
 
 ### 15.1 MCP Overview
+
+> **One-Sentence Takeaway:** MCP is an open standard defining how AI clients communicate with servers that provide tools, resources, and prompts via JSON-RPC.
 
 The Model Context Protocol (MCP) is an open standard published by Anthropic that defines how AI clients communicate with servers that provide context, tools, and resources. It follows a client-server architecture where the AI model (the client) discovers and invokes capabilities exposed by MCP servers.
 
@@ -52,6 +88,8 @@ Start by requiring the package and publishing the configuration:
 ```php
 composer require laravel/mcp
 
+> **Pro Tip:** Always define server instructions (#[Instructions]) with specific guidance on when to use each tool. This attribute is sent to the AI agent and significantly improves tool selection accuracy.
+
 php artisan vendor:publish --tag=ai-routes
 ```
 
@@ -60,6 +98,8 @@ The publish command creates a `routes/ai.php` file where you register your MCP s
 The package also publishes a `config/mcp.php` configuration file where you can set defaults for authentication, rate limiting, and client registration.
 
 ### 15.3 Creating Servers
+
+> **One-Sentence Takeaway:** MCP servers are Laravel classes extending Server with PHP attributes for name, version, and instructions, and arrays for tools, resources, and prompts.
 
 An MCP server is a plain PHP class that extends `Laravel\Mcp\Server`. Use the generator command to scaffold one:
 
@@ -127,6 +167,8 @@ use App\Mcp\Servers\WeatherServer;
 
 // HTTP server â€” accessible at /mcp/weather via POST
 Mcp::web('/mcp/weather', WeatherServer::class)
+
+> **Warning:** Always add authentication and rate limiting middleware to HTTP MCP servers. An unauthenticated MCP server exposes your application's internal tools and data to anyone who discovers the endpoint.
     ->middleware('throttle:30,1')
     ->middleware('auth:sanctum');
 
@@ -147,6 +189,8 @@ Mcp::local('analytics', AnalyticsServer::class);
 Local servers are invoked via `php artisan mcp:call {server} {tool}` and are ideal for AI coding agents that run in the same environment as your application.
 
 ### 15.5 Creating Tools
+
+> **One-Sentence Takeaway:** MCP tools define inputSchema for parameters, handle() for execution logic, and outputSchema for response documentation.
 
 Tools are the core of MCP â€” they are the actions an AI agent can invoke. Generate one with:
 
@@ -270,6 +314,8 @@ The `outputSchema()` method documents what the response contains. This helps the
 
 ### 15.6 Tool Annotations
 
+> **One-Sentence Takeaway:** Annotations like IsReadOnly, IsDestructive, IsIdempotent, and IsOpenWorld communicate behavioral metadata to guide AI agent decision-making.
+
 Annotations convey metadata about tool behavior to the AI agent. They help the model make safe decisions about when and how to invoke tools:
 
 ```php
@@ -321,6 +367,8 @@ The four annotations are:
 - `#[IsOpenWorld]` â€” The tool interacts with external systems (APIs, third-party services). Results may change between calls
 
 ### 15.7 Tool Responses
+
+> **One-Sentence Takeaway:** Tools return structured responses via Response::text(), Response::fromStorage(), Response::error(), Response::image(), and streaming generators.
 
 Tools return structured responses. Laravel MCP provides several response types for different data shapes:
 
@@ -609,6 +657,8 @@ public function getResources(): array
 
 ### 15.10 MCP Apps
 
+> **One-Sentence Takeaway:** MCP Apps render rich UIs using Blade and Livewire directly within AI agent interfaces, enabling interactive dashboards and forms.
+
 MCP Apps allow you to build rich user interfaces that render directly within the AI agent's interface. They use Laravel's Blade or Livewire to create interactive experiences:
 
 ```php
@@ -710,6 +760,8 @@ The Blade view at `resources/views/mcp/dashboards/sales.blade.php` can use Tailw
 
 ### 15.11 Authentication
 
+> **One-Sentence Takeaway:** Laravel MCP supports OAuth 2.1 for remote AI agents and Sanctum token-based auth for first-party integrations.
+
 Laravel MCP supports two authentication flows. The **OAuth 2.1** flow is the standard for remote AI agents:
 
 ```php
@@ -756,6 +808,8 @@ Authorization: Bearer {plainTextToken}
 ```
 
 ### 15.12 MCP Client
+
+> **One-Sentence Takeaway:** The MCP client allows Laravel applications to consume remote MCP servers, listing capabilities and invoking tools programmatically.
 
 The client side allows a Laravel application to consume remote MCP servers. This is useful when you want your application to act as an AI agent or when integrating with external MCP providers:
 
@@ -890,6 +944,8 @@ class CurrentWeatherToolTest extends TestCase
     public function test_validates_required_city()
     {
         $this->expectException(\Illuminate\Validation\ValidationException::class);
+
+> **Remember:** Test your MCP tools directly using Request::fromArray() for unit tests, and use HTTP JSON-RPC assertions for integration tests. Both approaches are essential for robust MCP server quality.
 
         $request = Request::fromArray([
             'units' => 'celsius',
@@ -1129,6 +1185,65 @@ Mcp::local('weather', WeatherServer::class);
 ```
 
 ---
+
+
+## Concept Comparison
+
+| Feature | MCP Tools | Provider Tools | Local Tools |
+|---------|-----------|---------------|-------------|
+| Protocol | JSON-RPC over HTTP | Provider API | In-process |
+| Schema | inputSchema + outputSchema | Provider-defined | Tool interface |
+| Deployment | Separate server | Provider-managed | Same app |
+| Use Case | External API access | Web search, files | Database queries |
+| Annotations | IsReadOnly, Destructive | — | — |
+
+## Quick Reference — MCP Artisan Commands
+
+| Command | Purpose |
+|---------|---------|
+| `composer require laravel/mcp` | Install MCP |
+| `php artisan make:mcp-server WeatherServer` | Create server class |
+| `php artisan make:mcp-tool CurrentWeatherTool` | Create tool |
+| `php artisan make:mcp-prompt WeatherSummaryPrompt` | Create prompt |
+| `php artisan make:mcp-resource WeatherAlertResource` | Create resource |
+
+## Cross-Application Matrix
+
+| Concept | Weather Service | CRM System | DevOps Platform |
+|---------|---------------|-----------|----------------|
+| Server | WeatherServer | CrmServer | DevopsServer |
+| Tools | CurrentWeather, Forecast | ContactLookup, CreateTicket | DeployStatus, Rollback |
+| Annotations | IsReadOnly, IsOpenWorld | IsDestructive (delete) | IsDestructive (rollback) |
+| Auth | Sanctum | OAuth 2.1 | Sanctum + OAuth |
+| Deployment | Web + Local | Local only | Local only |
+
+## Chapter Quiz
+
+**1. What are the three core primitives of the MCP protocol?**
+- a) Actions, Data, Templates
+- b) Tools, Resources, Prompts
+- c) Functions, Files, Forms
+- d) Commands, Queries, Events
+
+**2. Which annotation tells the AI that a tool modifies or deletes data?**
+- a) IsReadOnly
+- b) IsDestructive
+- c) IsIdempotent
+- d) IsOpenWorld
+
+**3. How do you register an HTTP MCP server in routes/ai.php?**
+- a) Route::mcp('/endpoint', Server::class)
+- b) Mcp::web('/endpoint', Server::class)
+- c) Mcp::server('/endpoint', Server::class)
+- d) Server::register('/endpoint')
+
+**4. What does inputSchema() define in an MCP tool?**
+- a) The response structure
+- b) The parameters the AI agent must supply
+- c) The server configuration
+- d) The error handling logic
+
+**Answers: 1-b, 2-b, 3-b, 4-b**
 
 ## Summary
 - MCP is an open standard for AI client-to-server communication defining tools, resources, and prompts

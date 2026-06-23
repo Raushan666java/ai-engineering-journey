@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="../21-spring-data-jpa.md">â† Previous (Spring Data JPA)</a> | <a href="../23-nosql.md">Next (NoSQL) â†’</a>
-</p>
+> **Previous:** [Spring Data JPA](./21-spring-data-jpa.md) | **Next:** [NoSQL](./23-nosql.md)
 
 # Database Migrations (Flyway & Liquibase)
 

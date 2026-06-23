@@ -1,6 +1,27 @@
 ![Database Sharding - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-c.png)
 
-### Q16: How do you implement auditing (created_at, updated_at) in JPA?
+## Chapter at a Glance
+
+| Topic | Key Focus | Key Questions |
+|-------|----------|--------------|
+| Core Concepts | Foundational understanding | Definitions, contrasts, trade-offs |
+| Code Examples | Compilable, runnable solutions | Real interview scenarios |
+| Best Practices | Production-ready patterns | Pitfalls to avoid |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Core Concepts] --> B[Code Examples]
+    B --> C[Edge Cases]
+    C --> D[Best Practices]
+```
+
+### Q16: How do you implement auditing (created_at, updated_at) in JPA?
+> **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
+
+> **Remember:** Code readability matters in interviews. Write clean, well-structured code with meaningful variable names.
+
 
 **Answer:**
 
@@ -76,6 +97,8 @@ OSIV keeps the Hibernate session open throughout the entire HTTP request, includ
 
 ```yaml
 # Spring Boot default (enabled) â€” causes the anti-pattern:
+
+> **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-b.md) | **Next:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md)
 spring:
   jpa:
     open-in-view: true   # default is true â€” BAD for production
@@ -248,6 +271,8 @@ Multi-tenancy separates data across tenants (customers/organizations). Three app
 **1. Separate Database** â€” each tenant has its own database:
 ```yaml
 # application.yml
+
+> **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-b.md) | **Next:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md)
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/
@@ -590,6 +615,8 @@ logging:
     org.hibernate.SQL: DEBUG
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
 # OR for formatted output:
+
+> **Previous:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-b.md) | **Next:** [Databases Interview Q&amp;A (cont.)](./59-interview-databases-d.md)
 spring:
   jpa:
     show-sql: true
@@ -670,3 +697,63 @@ Common fixes by symptom:
 | Same query in logs 100x | No query plan cache | Enable Hibernate query cache |
 
 The most impactful single change: **enable slow query logging in both Hibernate and the database**, correlate the logs, and fix the top 5 queries. That typically resolves 80% of database performance issues.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|-----------------|----------|
+| Interface | Contract without state | Multiple inheritance of type | API contracts |
+| Abstract Class | Partial implementation | Single inheritance, shared state | Template method pattern |
+| Record | Transparent data carrier | Auto-generated methods | DTOs, value objects |
+
+## Quick Reference
+
+| Topic | Key Points | Interview Frequency |
+|-------|-----------|-------------------|
+| **OOP** | Encapsulation, Inheritance, Polymorphism, Abstraction | Every interview |
+| **Collections** | List, Set, Map, Queue, Deque | 9/10 interviews |
+| **Concurrency** | synchronized, volatile, Locks, CompletableFuture | 7/10 senior interviews |
+| **Java 8+** | Lambdas, Streams, Optional, CompletableFuture | 8/10 interviews |
+
+## Cross-Application Matrix
+
+| Skill | Junior (0-2yr) | Mid (3-5yr) | Senior (6-9yr) | Staff (10+) |
+|-------|---------------|-------------|----------------|-------------|
+| OOP & Design Patterns | Define and identify | Apply and combine | Evaluate and refactor | Create and teach |
+| Collections | Basic usage | Performance trade-offs | Concurrent collections | Custom implementations |
+| Concurrency | Syntax knowledge | Write thread-safe code | Debug deadlocks | Design concurrent systems |
+
+## Chapter Quiz
+
+1. What is the difference between equals() and == in Java?
+   - A) They are identical
+   - B) equals() compares values, == compares references
+   - C) == compares values, equals() compares references
+   - D) equals() is for primitives, == is for objects
+
+<details>
+<summary>Answer</summary>
+**B) equals() compares logical equality (overridable), == compares reference equality.**
+</details>
+
+2. Which collection guarantees insertion order?
+   - A) HashMap
+   - B) TreeMap
+   - C) LinkedHashMap
+   - D) HashSet
+
+<details>
+<summary>Answer</summary>
+**C) LinkedHashMap.** LinkedHashMap maintains a doubly-linked list of entries to preserve insertion order.
+</details>
+
+3. What keyword prevents a method from being overridden?
+   - A) static
+   - B) final
+   - C) private
+   - D) abstract
+
+<details>
+<summary>Answer</summary>
+**B) final.** A final method cannot be overridden by subclasses.
+</details>

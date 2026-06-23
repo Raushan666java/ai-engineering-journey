@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="../18-file-handling.md">â† Previous (File Upload)</a> | <a href="../20-jpa-hibernate.md">Next (JPA/Hibernate) â†’</a>
-</p>
+> **Previous:** [File Handling](./18-file-handling.md) | **Next:** [JPA/Hibernate](./20-jpa-hibernate.md)
 
 # JDBC, Connection Pooling & JOOQ
 

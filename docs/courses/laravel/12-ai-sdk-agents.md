@@ -1,4 +1,5 @@
 # Chapter 12: Laravel AI SDK â€” Agents, Prompting & Structured Output
+> **Previous:** [Caching, Performance & Octane](./11-caching-performance) | **Next:** [Laravel AI SDK -- Tools, MCP Tools & Provider Tools](./13-ai-sdk-tools)
 
 ---
 ## Learning Objectives
@@ -9,6 +10,34 @@
 - Manage conversational context using the RemembersConversations trait and database persistence
 - Define structured output schemas using the fluent JsonSchema builder with nested and constrained types
 - Implement streaming responses, broadcasting, and queued agent execution
+## Chapter at a Glance
+
+| Section | Key Topics |
+|---------|-----------|
+| SDK Architecture | Provider-agnostic design, configuration |
+| Agent Creation | Agent interface, Promptable trait |
+| Prompting | Static make(), prompt(), configuration |
+| Conversation Context | RemembersConversations, forUser(), continue() |
+| Structured Output | HasStructuredOutput, JsonSchema builder |
+| Streaming | stream(), then(), Vercel protocol |
+| Broadcasting | broadcast(), broadcastOnQueue(), channels |
+| Queueing | queue(), then(), catch(), job tracking |
+| Anonymous Agents | Agent facade, inline creation |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[SDK Architecture] --> B[Installation & Config]
+    B --> C[Creating Agents]
+    C --> D[Prompting Agents]
+    D --> E[Conversation Context]
+    D --> F[Structured Output]
+    D --> G[Streaming]
+    D --> H[Broadcasting]
+    D --> I[Queueing]
+    C --> J[Anonymous Agents]
+```
 ---
 ## Theory
 
@@ -16,6 +45,8 @@
 
 
 ### 12.1 The AI SDK Architecture
+
+> **One-Sentence Takeaway:** The laravel/ai package provides a unified, provider-agnostic interface for interacting with 14+ AI providers through a single fluent API.
 
 Laravel 13 introduces the `laravel/ai` package, a unified, provider-agnostic interface for interacting with large language models and AI services. The package abstracts away provider-specific SDKs behind a single, expressive API that supports text generation, tool-calling agents, embeddings, audio transcription, image generation, vector-store integration, and file uploads. With more than fourteen supported providers, the SDK allows you to swap between Anthropic Claude, OpenAI GPT, Google Gemini, Amazon Bedrock, Azure OpenAI, Groq, xAI, DeepSeek, Mistral, Ollama, OpenRouter, Cohere, Jina, VoyageAI, and ElevenLabs without changing application code.
 
@@ -143,6 +174,8 @@ class GenerateConceptArt extends Command
 
 ### 12.4 Creating Agents
 
+> **One-Sentence Takeaway:** Agents encapsulate a system prompt and model configuration; they implement the Agent interface with the Promptable trait providing make() and prompt().
+
 Agents encapsulate a system prompt, a default model configuration, and optional tool definitions. Generate a new agent using `php artisan make:agent SalesCoach`, which creates a class in `app/Ai/Agents/SalesCoach.php`. Every agent must implement the `Agent` interface, which requires an `instructions()` method. The `Promptable` trait provides the default implementation for the `make()` static factory method and convenience methods for prompting:
 
 ```php
@@ -160,7 +193,9 @@ class SalesCoach implements Agent
 
     public function instructions(): Stringable|string
     {
-        return 'You are an expert sales coach with 20 years of experience training B2B SaaS sales teams. Analyze call transcripts and provide specific, actionable feedback on discovery questions, objection handling, closing techniques, and talk-to-listen ratio. Be direct and constructive.';
+        return 'You are an expert sales coach
+
+> **Remember:** The system prompt (instructions()) is the most critical factor in agent quality. Invest time in writing clear, specific instructions that include the agent's role, tone, constraints, and expected output format. with 20 years of experience training B2B SaaS sales teams. Analyze call transcripts and provide specific, actionable feedback on discovery questions, objection handling, closing techniques, and talk-to-listen ratio. Be direct and constructive.';
     }
 }
 ```
@@ -222,11 +257,15 @@ class CoachingController extends Controller
             ->prompt('Provide a brief 3-bullet analysis: ' . $request->input('transcript'));
 
         return ['feedback' => $response->text()];
+
+> **Pro Tip:** Always log token usage (`$response->inputTokens()` and `$response->outputTokens()`) in production. AI costs scale with usage, and tracking token consumption per endpoint is essential for cost monitoring and optimization.
     }
 }
 ```
 
 ### 12.6 Conversation Context
+
+> **One-Sentence Takeaway:** Conversational agents use RemembersConversations to persist multi-turn interactions to the database, with forUser() starting and continue() resuming conversations.
 
 For multi-turn interactions, use the `Conversational` interface and the `RemembersConversations` trait. The SDK persists every message exchange to the database and groups messages into conversations:
 
@@ -330,6 +369,8 @@ class User extends Authenticatable
 
 ### 12.7 Structured Output
 
+> **One-Sentence Takeaway:** HasStructuredOutput enables typed JSON responses using the fluent JsonSchema builder with nested objects, arrays, enums, and validation constraints.
+
 The `HasStructuredOutput` interface enables agents to return typed, validated JSON responses. Use the `schema()` method with the fluent `JsonSchema` builder:
 
 ```php
@@ -340,6 +381,8 @@ namespace App\Ai\Agents;
 use Illuminate\Contracts\JsonSchema\JsonSchema;
 use Laravel\Ai\Contracts\Agent;
 use Laravel\Ai\HasStructuredOutput;
+
+> **Warning:** Structured output enforces the response shape — if the model produces output that violates the schema, the SDK throws an exception. Design your schemas with nullable and optional fields for real-world data variability.
 use Laravel\Ai\Promptable;
 use Stringable;
 
@@ -411,6 +454,8 @@ class InvoiceController extends Controller
 ```
 
 ### 12.8 Streaming Responses
+
+> **One-Sentence Takeaway:** The stream() method returns tokens as they arrive, with then() callbacks for post-stream processing and Vercel AI SDK protocol compatibility.
 
 The `stream()` method returns a `StreamableAgentResponse`, essential for chat interfaces where you display tokens as they arrive:
 
@@ -602,6 +647,8 @@ class BroadcastChatController extends Controller
 
 ### 12.10 Queueing Agent Work
 
+> **One-Sentence Takeaway:** The queue() method dispatches agent prompts to the queue for async processing, with then() and catch() callbacks for result handling.
+
 The `queue()` method dispatches agent prompts to the queue for async processing:
 
 ```php
@@ -741,6 +788,64 @@ class QuickController extends Controller
 ```
 
 ---
+
+## Concept Comparison
+
+| Feature | prompt() | stream() | queue() |
+|---------|----------|----------|---------|
+| Response | Blocking (full text) | Streaming (chunks) | Async (callback) |
+| Latency | Full round-trip | First token fast | Background processing |
+| User Experience | Waiting indicator | Real-time token display | Poll/broadcast result |
+| Error Handling | Try/catch | then() callback | catch() callback |
+| Best For | Simple questions | Chat interfaces | Heavy processing |
+
+## Quick Reference — AI SDK Artisan Commands
+
+| Command | Purpose |
+|---------|---------|
+| `composer require laravel/ai` | Install AI SDK |
+| `php artisan vendor:publish --provider="Laravel\Ai\AiServiceProvider"` | Publish config |
+| `php artisan make:agent SalesCoach` | Create agent class |
+| `php artisan migrate` | Create conversation tables |
+
+## Cross-Application Matrix
+
+| Concept | Support Bot | Content Generator | Data Extractor |
+|---------|------------|------------------|---------------|
+| Agent Type | Conversational | Single-prompt | Structured output |
+| Context | Multi-turn (forUser) | None (stateless) | None (stateless) |
+| Output | Text stream | Text (full response) | Structured JSON |
+| Execution | stream() | prompt() | queue() |
+| Provider | Anthropic | OpenAI | Gemini |
+
+## Chapter Quiz
+
+**1. Which trait provides the default make() method implementation for agents?**
+- a) HasConversations
+- b) Promptable
+- c) HasStructuredOutput
+- d) RemembersConversations
+
+**2. How do you continue an existing conversation with an agent?**
+- a) Agent::resume($id)
+- b) ->continue($conversationId)
+- c) ->resume($conversationId)
+- d) ->load($conversationId)
+
+**3. What does HasStructuredOutput enforce?**
+- a) Response speed
+- b) Typed JSON response shape
+- c) Conversation history length
+- d) Token limits
+
+**4. Which method enables Vercel AI SDK protocol compatibility?**
+- a) usingVercelProtocol()
+- b) usingVercelDataProtocol()
+- c) enableVercel()
+- d) vercelMode()
+
+**Answers: 1-b, 2-b, 3-b, 4-b**
+
 ## Summary
 
 - The `laravel/ai` package provides a unified, provider-agnostic API for text generation, tool calling, embeddings, audio, images, and vector stores across 14+ providers

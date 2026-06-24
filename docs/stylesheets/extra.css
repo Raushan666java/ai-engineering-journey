@@ -590,3 +590,41 @@ nav .md-nav__link .priority-badge {
   font-size: 0.88rem;
   line-height: 1.5;
 }
+
+/* ── Image Sizing ── */
+.md-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.md-content img[src*="diagram"],
+.md-content img[src*="Diagram"],
+.md-content img[src*="architecture"],
+.md-content img[src*="Architecture"],
+.md-content img[src*="flow"],
+.md-content img[src*="Flow"] {
+  max-width: 90%;
+  display: block;
+  margin: 1.5rem auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Mermaid diagram sizing */
+.mermaid {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inline mermaid in superfences */
+.md-typeset .mermaid {
+  max-width: 100%;
+  overflow-x: auto;
+}

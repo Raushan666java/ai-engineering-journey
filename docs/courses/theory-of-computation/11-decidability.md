@@ -95,7 +95,30 @@ Define A_TM = { âŸ¨M, wâŸ© | M accepts w }.
   - If D rejects âŸ¨DâŸ©, then H(âŸ¨D, âŸ¨DâŸ©âŸ©) = reject, so D should accept. Contradiction.
 - Therefore H cannot exist.
 
-### 10.4 Reductions
+### 10.4 The Post Correspondence Problem (PCP)
+
+The **Post Correspondence Problem** asks: given a collection of dominoes (tiles), each with a top string and bottom string, can we arrange them (with repetitions allowed) so that the concatenation of top strings equals the concatenation of bottom strings?
+
+Formally: an instance of PCP is a set of pairs \((t_1, b_1), (t_2, b_2), \ldots, (t_k, b_k)\) over an alphabet \(\Sigma\). A solution is a sequence of indices \(i_1, i_2, \ldots, i_m\) such that:
+\[
+t_{i_1} t_{i_2} \ldots t_{i_m} = b_{i_1} b_{i_2} \ldots b_{i_m}
+\]
+
+**Theorem:** PCP is undecidable.
+
+**Significance:** PCP is a simple combinatorial problem that is undecidable, making it ideal for reductions to other problems. Many undecidability proofs for language theory problems (CFG ambiguity, CFG inclusion) reduce PCP.
+
+**Example PCP instance:**
+| Domino | 1 | 2 | 3 |
+|--------|---|---|---|
+| Top | a | ab | bba |
+| Bottom | b | aa | bb |
+
+A solution: 1, 3, 2, 3 gives:
+- Top: a + bba + ab + bba = abbababba
+- Bottom: b + bb + aa + bb = bbbaabb
+
+### 10.5 Reductions
 
 A **reduction** is a way to convert one problem to another so that a solution to the second can be used to solve the first.
 
@@ -147,7 +170,42 @@ Once we have one undecidable problem (A_TM), we can prove many others undecidabl
 | FINITE_TM | Is L(M) finite? | Undecidable, not RE |
 | TOTAL_TM | Does M halt on all inputs? | Undecidable, not RE |
 
-### 10.8 Rice's Theorem
+### 10.8 Mapping Reductions vs Turing Reductions
+
+**Mapping reduction (≤ₘ):** There is a computable function f such that w ∈ A ⇔ f(w) ∈ B.
+
+**Turing reduction (≤ₜ):** There is an oracle TM that decides A using B as an oracle.
+
+| Property | Mapping Reduction | Turing Reduction |
+|----------|-------------------|------------------|
+| Preserves RE? | Yes (if B∈RE then A∈RE) | No |
+| Preserves co-RE? | Yes | No |
+| Strength | Weaker (finer degrees) | Stronger (coarser degrees) |
+| Common use | Proving undecidability | Classifying relative complexity |
+
+**Example:** The complement of A_TM is not many-one reducible to A_TM (since A_TM is RE but not recursive), but it IS Turing-reducible (just flip the answer). This subtlety matters in the arithmetic hierarchy.
+
+### 10.9 Hilbert's Tenth Problem
+
+Hilbert's tenth problem (1900) asked for an algorithm to determine whether a given Diophantine equation (polynomial equation with integer coefficients) has an integer solution.
+
+**Theorem (Matiyasevich, 1970):** Hilbert's tenth problem is undecidable.
+
+This was proved by showing that every RE language can be represented as the set of solutions to a Diophantine equation — the **MRDP theorem** (Matiyasevich, Robinson, Davis, Putnam). This means there is no general algorithm for solving polynomial equations over integers, a result with profound implications for number theory and automated theorem proving.
+
+```mermaid
+flowchart TD
+    subgraph "Undecidability Proofs"
+        HALT -->|reduction| EMPTY_TM
+        HALT -->|reduction| REGULAR_TM
+        HALT -->|reduction| PCP
+        PCP -->|reduction| CFG_equiv
+        PCP -->|reduction| CFG_ambig
+        HALT -->|encoding| HILBERT10
+    end
+```
+
+### 10.10 Rice's Theorem
 
 Rice's theorem is a powerful generalization: any non-trivial property of the language of a TM is undecidable.
 
@@ -247,6 +305,57 @@ Runtime O(nÂ³) where n = |w|.
 | Compilers | Optimization correctness |
 | AI | Problem-solving limitations |
 
+## The Limitations of Reduction Proofs
+
+While reductions are powerful, they have limitations:
+
+1. **Reduction direction matters.** To prove B undecidable, reduce FROM a known undecidable problem TO B. A reduction in the opposite direction proves nothing.
+
+2. **The reduction function must be computable.** You cannot use an oracle or non-computable function to construct the reduction. Every step in building f(w) must be realizable on a Turing machine.
+
+3. **Reductions preserve RE status.** If A ≤ₘ B and B is RE, then A is RE. If A is not RE, then B cannot be RE. Tracking the RE/non-RE status is essential for classification.
+
+### TypeScript: Generic Reduction Framework
+
+```typescript
+// A reduction maps instances of problem A to instances of problem B
+type Reduction<A, B> = (instanceA: A) => B;
+
+// If we have a decider for B, we can decide A
+function reduceAndDecide<A, B>(
+  reduction: Reduction<A, B>,
+  deciderB: (instanceB: B) => boolean,
+  instanceA: A
+): boolean {
+  const instanceB = reduction(instanceA);
+  return deciderB(instanceB);
+}
+
+// Concrete: HALT_TM to EMPTY_TM reduction
+type TMHaltingInstance = { description: TMDescription; input: string };
+type TMEmptinessInstance = TMDescription;
+
+function haltToEmptyReduction(
+  instance: TMHaltingInstance
+): TMEmptinessInstance {
+  // Construct M' that:
+  // On any input x, simulate M on w; if M halts, accept x
+  const MPrime: TMDescription = {
+    Q: instance.description.Q.concat(["q_sim"]),
+    gamma: instance.description.gamma,
+    delta: new Map([
+      // Simulate M on w (hardcoded input)
+      ["q_sim,_", ["q_accept", "_", "R"]],
+      ...Array.from(instance.description.delta.entries())
+    ]),
+    q0: "q_sim",
+    qAccept: "q_accept",
+    qReject: "q_reject",
+  };
+  return MPrime;
+}
+```
+
 ## Chapter Quiz
 
 **Q1.** The halting problem asks if a TM:
@@ -345,10 +454,29 @@ Runtime O(nÂ³) where n = |w|.
 ### Advanced
 
 11. Prove Rice's theorem in full generality.
-12. Show that the language { âŸ¨MâŸ© | M is a TM that never writes a blank symbol on its tape } is decidable. Why doesn't Rice's theorem apply?
-13. Prove that EQ_TM = { âŸ¨Mâ‚, Mâ‚‚âŸ© | L(Mâ‚) = L(Mâ‚‚) } is neither RE nor co-RE.
-14. Consider the language S = { âŸ¨MâŸ© | M accepts all palindromes }. Is it decidable? Prove your answer.
+12. Show that the language { ⟨M⟩ | M is a TM that never writes a blank symbol on its tape } is decidable. Why doesn't Rice's theorem apply?
+13. Prove that EQ_TM = { ⟨M₁, M₂⟩ | L(M₁) = L(M₂) } is neither RE nor co-RE.
+14. Consider the language S = { ⟨M⟩ | M accepts all palindromes }. Is it decidable? Prove your answer.
 15. Prove that there is no algorithm that, given a TM M, determines whether M halts on all inputs of even length.
+16. Show that the Post Correspondence Problem with two tiles (k=2) is decidable, but with seven tiles it becomes undecidable.
+17. Prove that the universal language U = { ⟨M, w⟩ | M accepts w } is RE-complete under many-one reductions.
+
+## Summary Table of Decidable and Undecidable Problems
+
+| Problem | Model | Status | Algorithm / Proof |
+|---------|-------|--------|-------------------|
+| Membership | DFA | Decidable (P) | Simulation |
+| Emptiness | DFA | Decidable (P) | Graph reachability |
+| Equivalence | DFA | Decidable (P) | Product + minimization |
+| Membership | CFG | Decidable (P) | CYK algorithm |
+| Emptiness | CFG | Decidable (P) | Variable marking |
+| Ambiguity | CFG | **Undecidable** | Reduction from PCP |
+| Equivalence | CFG | **Undecidable** | Reduction from PCP |
+| Halting | TM | **Undecidable** | Diagonalization |
+| Acceptance | TM | **Undecidable** | Diagonalization |
+| Emptiness | TM | **Undecidable** | Reduction from HALT |
+| Totality | TM | **Undecidable** | Reduction from HALT |
+| Equivalence | TM | **Undecidable** | Rice's theorem |
 
 ## Further Reading
 
@@ -412,5 +540,64 @@ function diagonalFunction(s: string): boolean {
 // Proof: diagonalFunction differs from every function in the enumeration
 // For function f_i at index i, diagonalFunction(strings[i]) != f_i(strings[i])
 // This is the same technique used to prove the halting problem undecidable
+```
+
+## Decision Procedures in Practice
+
+While many problems are undecidable in general, practical tools use **conservative approximations**:
+
+| Tool | Problem | Approach |
+|------|---------|----------|
+| **TypeScript compiler** | Type checking (undecidable in general) | Restricted type system (structural subtyping, no dependent types) |
+| **Model checkers** | Program correctness | Finite-state abstraction, bounded model checking |
+| **Static analyzers** | Null pointer safety | Over-approximation (may report false alarms) |
+| **SMT solvers** (Z3) | Logical satisfiability | Quantifier-free theories, decidable fragments |
+
+### Example: Decidable Fragment of First-Order Logic
+
+The **Bernays-Schönfinkel class** (∃*∀* formulas without function symbols) is decidable. This "effectively propositional" fragment underpins many SMT-based verification tools:
+
+```typescript
+// The Bernays-Schönfinkel fragment is ∃*∀* quantifier prefix
+// Formulas like: ∃x ∀y ∀z (P(x,y) ∧ Q(x,z) → R(y,z))
+// are decidable because Herbrand's theorem limits the search space
+
+type BSSentence = {
+  existentialVars: string[];
+  universalVars: string[];
+  body: string; // Propositional formula over predicates
+};
+
+function checkBSDecidability(formula: BSSentence): boolean {
+  // The Bernays-Schönfinkel class is decidable
+  // because it satisfies the finite model property
+  const baseSize = formula.existentialVars.length;
+  const uVars = formula.universalVars.length;
+
+  // For each existential witness, check all uVars assignments
+  // Complexity: O(2^(|P| * (baseSize + uVars))) where |P| is predicate count
+  // Finite model check is guaranteed to terminate
+
+  console.log(
+    `BS formula with ${baseSize} ∃ and ${uVars} ∀ vars — decidable`
+  );
+  return true; // Decision procedure exists
+}
+```
+
+## The Process of Proving Undecidability
+
+```mermaid
+flowchart TD
+    A["New problem P"] --> B{Is P about<br/>TM language?}
+    B -->|Yes| C{Is property<br/>non-trivial?}
+    C -->|Yes| D["Undecidable<br/>(Rice's theorem)"]
+    C -->|No| E["Check syntactic<br/>or trivial"]
+    B -->|No| F{Can we reduce<br/>known undecidable<br/>problem to P?}
+    F -->|Yes| D
+    F -->|No| G["Unknown — may be<br/>decidable"]
+    E --> H{Is it about<br/>DFA/CFG?}
+    H -->|Yes| I["Likely decidable"]
+    H -->|No| F
 ```
 

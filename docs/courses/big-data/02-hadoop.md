@@ -389,6 +389,250 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
 - **Rack awareness not working:** Verify topology script is configured correctly
 - **HDFS safe mode:** Namenode starting up or recovering — wait or manually leave safe mode
 
+### TypeScript: HDFS & MapReduce Simulator
+
+```typescript
+// === HDFS Simulator ===
+interface Block {
+  id: number;
+  sizeMB: number;
+  replicas: number[];
+}
+
+class HDFSSimulator {
+  private datanodes: Map<number, number>; // nodeId -> usedSpaceGB
+  private blocks: Block[] = [];
+  private namenodeHeapMB: number = 64 * 1024;
+  private bytesPerInode: number = 150;
+
+  constructor(private numNodes: number, private nodeCapacityGB: number) {
+    this.datanodes = new Map();
+    for (let i = 1; i <= numNodes; i++) this.datanodes.set(i, 0);
+  }
+
+  writeFile(name: string, sizeMB: number): void {
+    const blockSize = 128;
+    const numBlocks = Math.ceil(sizeMB / blockSize);
+    const replicationFactor = 3;
+
+    for (let i = 0; i < numBlocks; i++) {
+      const block: Block = { id: this.blocks.length + 1, sizeMB: Math.min(blockSize, sizeMB - i * blockSize), replicas: [] };
+
+      // Rack-aware placement simulation
+      const racks = Math.ceil(this.numNodes / 3);
+      const firstNode = (block.id * 7) % this.numNodes + 1;
+      block.replicas.push(firstNode);
+
+      // Second replica on different rack
+      let secondNode = firstNode;
+      while (Math.ceil(secondNode / 3) === Math.ceil(firstNode / 3)) {
+        secondNode = (secondNode * 3 + 1) % this.numNodes + 1;
+      }
+      block.replicas.push(secondNode);
+
+      // Third replica on same rack as second
+      const rackBase = Math.ceil(secondNode / 3) * 3 - 2;
+      const thirdNode = rackBase + ((secondNode - rackBase + 1) % 3);
+      block.replicas.push(thirdNode);
+
+      // Update node storage
+      for (const nodeId of block.replicas) {
+        this.datanodes.set(nodeId, (this.datanodes.get(nodeId) ?? 0) + block.sizeMB / 1024);
+      }
+
+      this.blocks.push(block);
+    }
+    console.log(`Wrote ${sizeMB}MB file "${name}" as ${numBlocks} blocks (${replicationFactor}x replication)`);
+  }
+
+  simulateNodeFailure(nodeId: number): void {
+    const affectedBlocks = this.blocks.filter(b => b.replicas.includes(nodeId));
+    console.log(`Node ${nodeId} failed. ${affectedBlocks.length} blocks need re-replication.`);
+
+    for (const block of affectedBlocks) {
+      block.replicas = block.replicas.filter(n => n !== nodeId);
+      // Re-replicate to a healthy node
+      for (let n = 1; n <= this.numNodes; n++) {
+        if (!block.replicas.includes(n) && block.replicas.length < 3) {
+          block.replicas.push(n);
+          this.datanodes.set(n, (this.datanodes.get(n) ?? 0) + block.sizeMB / 1024);
+        }
+      }
+    }
+    console.log("Re-replication complete. All blocks at 3x replication.");
+  }
+
+  getNamenodeMemoryUsage(): number {
+    return this.blocks.length * this.bytesPerInode;
+  }
+
+  getClusterStatus(): void {
+    console.log(`\nCluster Status (${this.numNodes} nodes, ${this.nodeCapacityGB}GB each):`);
+    let totalUsed = 0;
+    for (const [id, used] of this.datanodes) {
+      console.log(`  Node ${id}: ${used.toFixed(1)}GB / ${this.nodeCapacityGB}GB (${((used / this.nodeCapacityGB) * 100).toFixed(1)}%)`);
+      totalUsed += used;
+    }
+    console.log(`Total used: ${totalUsed.toFixed(1)}GB / ${(this.numNodes * this.nodeCapacityGB)}GB`);
+    console.log(`Blocks: ${this.blocks.length}, NN heap: ${(this.getNamenodeMemoryUsage() / 1024 / 1024).toFixed(2)}MB`);
+  }
+}
+
+// === MapReduce Simulator ===
+type MapperFn = (key: string, value: string) => [string, number][];
+type ReducerFn = (key: string, values: number[]) => [string, number];
+
+class MapReduceJob {
+  private data: string[];
+
+  constructor(data: string[]) { this.data = data; }
+
+  run(mapper: MapperFn, reducer: ReducerFn): Map<string, number> {
+    console.log("=== MAP PHASE ===");
+    const mapped = this.data.flatMap((line, i) => {
+      const result = mapper(`line_${i}`, line);
+      console.log(`  Mapper ${i}: "${line.substring(0, 30)}..." -> ${result.length} pairs`);
+      return result;
+    });
+
+    console.log("\n=== SHUFFLE/SORT PHASE ===");
+    const grouped = new Map<string, number[]>();
+    for (const [key, value] of mapped) {
+      if (!grouped.has(key)) grouped.set(key, []);
+      grouped.get(key)!.push(value);
+    }
+    for (const [key, values] of grouped) {
+      console.log(`  "${key}": [${values.join(", ")}]`);
+    }
+
+    console.log("\n=== REDUCE PHASE ===");
+    const result = new Map<string, number>();
+    for (const [key, values] of grouped) {
+      const [k, v] = reducer(key, values);
+      result.set(k, v);
+      console.log(`  Reducer: "${k}" -> ${v}`);
+    }
+
+    return result;
+  }
+}
+
+// === Word Count Demo ===
+const docs = [
+  "hello world spark is fast",
+  "world of big data and spark",
+  "spark is fast and powerful",
+  "big data needs fast processing",
+];
+
+const wordCountMapper: MapperFn = (_key, value) => {
+  return value.split(" ").map(word => [word.toLowerCase(), 1]);
+};
+
+const wordCountReducer: ReducerFn = (key, values) => {
+  return [key, values.reduce((a, b) => a + b, 0)];
+};
+
+const mr = new MapReduceJob(docs);
+const counts = mr.run(wordCountMapper, wordCountReducer);
+console.log("\n=== FINAL WORD COUNTS ===");
+for (const [word, count] of [...counts.entries()].sort((a, b) => b[1] - a[1])) {
+  console.log(`  ${word}: ${count}`);
+}
+
+// === HDFS Demo ===
+const hdfs = new HDFSSimulator(9, 100);
+hdfs.writeFile("sales_data_2024.csv", 1280); // 1.28 GB
+hdfs.simulateNodeFailure(1);
+hdfs.getClusterStatus();
+```
+
+### Mermaid: HDFS Block Replication Flow
+
+```mermaid
+flowchart TD
+    A[Client writes 1.28 GB file] --> B[HDFS splits into 128 MB blocks]
+    B --> C[Block 1 - Replica 1: Node 1]
+    C --> D[Block 1 - Replica 2: Rack 2 Node 4]
+    D --> E[Block 1 - Replica 3: Same Rack Node 5]
+    B --> F[Block 2 - Replica 1: Node 2]
+    F --> G[Block 2 - Replica 2: Rack 3 Node 7]
+    G --> H[Block 2 - Replica 3: Same Rack Node 8]
+    B --> I[Block 3... across remaining nodes]
+    E --> J[Total: 10 blocks × 3 replicas = 30 block replicas]
+    H --> J
+```
+
+### Mermaid: MapReduce Execution Pipeline
+
+```mermaid
+flowchart LR
+    subgraph Input[Input Data]
+        A1[Split 1]
+        A2[Split 2]
+        A3[Split 3]
+    end
+    subgraph Map[Map Phase]
+        B1[Mapper 1]
+        B2[Mapper 2]
+        B3[Mapper 3]
+    end
+    subgraph Shuffle[Shuffle & Sort]
+        C1[Partitioner]
+        C2[Sorter]
+    end
+    subgraph Reduce[Reduce Phase]
+        D1[Reducer 1]
+        D2[Reducer 2]
+    end
+    subgraph Output[Output]
+        E1[Part-00000]
+        E2[Part-00001]
+    end
+    A1 --> B1; A2 --> B2; A3 --> B3
+    B1 & B2 & B3 --> C1 --> C2
+    C2 --> D1 & D2
+    D1 --> E1; D2 --> E2
+```
+
+### Case Study: Migrating a Hadoop Pipeline to Cloud
+
+**Scenario:** A retail company runs daily ETL jobs on a 50-node on-premise Hadoop cluster processing 5 TB of data daily. The cluster costs $200K/year in hardware maintenance and operations. They want to migrate to AWS.
+
+**Migration Plan:**
+
+| Phase | Action | Timeline | Savings |
+|-------|--------|----------|---------|
+| 1 | Move HDFS data to S3 (retain Parquet format) | 2 weeks | Storage cost -40% |
+| 2 | Replace Hive queries with Spark SQL on EMR | 4 weeks | Compute time -60% |
+| 3 | Replace Oozie scheduling with Airflow | 2 weeks | Maintenance -80% |
+| 4 | Decommission physical cluster | 1 week | Hardware cost -100% |
+
+```typescript
+// Cost comparison simulation
+const onPremCost: { hardware: number; ops: number; total: number } = {
+  hardware: 150000, ops: 50000, total: 200000
+};
+const cloudCost: { compute: number; storage: number; ops: number; total: number } = {
+  compute: 60000, storage: 24000, ops: 10000, total: 94000
+};
+console.log(`On-premise: $${onPremCost.total}/year`);
+console.log(`Cloud-native: $${cloudCost.total}/year`);
+console.log(`Savings: $${onPremCost.total - cloudCost.total}/year (${(((onPremCost.total - cloudCost.total) / onPremCost.total) * 100).toFixed(0)}% reduction)`);
+```
+
+### Additional Exercises
+
+6. Write a Python MapReduce job to compute the average temperature per month from a weather dataset (format: "date,temperature"). Use a combiner.
+7. Design a rack-aware replica placement strategy for a 30-node cluster across 3 racks. Show which rack receives each replica of Block 1.
+8. A YARN cluster has 10 nodes, each with 32 GB RAM and 8 vcores. If each container needs 4 GB and 1 vcore, what is the maximum number of concurrent mappers?
+9. Compare the cost of storing 500 TB on HDFS (3x replication, 50 nodes × 20 TB each) vs S3 standard ($0.023/GB/month) over 3 years.
+10. Simulate a datanode failure and trace the complete recovery process through heartbeat timeout → block detection → re-replication.
+
+### Answer Key (Additional)
+
+6. Mapper: parse date, emit (month, temp). Combiner: sum temps per month. Reducer: average = sum/count. | 7. R1: Rack1-Node1, R2: Rack2-Node4, R3: Rack2-Node5 | 8. 80 containers | 9. HDFS: ~$150K (disks+servers), S3: ~$414K over 3 years (S3 cheaper on storage but compute separate)
+
 ## Summary
 
 - HDFS provides fault-tolerant distributed storage with block replication, rack awareness, and a single namenode.

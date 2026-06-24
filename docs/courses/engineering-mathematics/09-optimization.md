@@ -327,6 +327,14 @@ KKT satisfied. The optimal point is $(0.5, 1.5)$ with $f = 0.25 + 0.25 = 0.5$.
 
 **Duality Gap in Nonconvex Optimization:** Construct a simple nonconvex optimization problem where strong duality fails ($p^* \neq d^*$). Prove the gap and explain why convexity is required for strong duality.
 
+### Additional Exercises
+
+6. **Gradient Descent with Momentum:** Implement gradient descent with momentum ($v_{t+1} = \beta v_t + \nabla f(x_t)$, $x_{t+1} = x_t - \alpha v_{t+1}$) for $f(x) = x^4 - 3x^2 + 2x$. Compare convergence speed with plain gradient descent.
+
+7. **Portfolio Optimization with Constraints:** Three assets have expected returns $\mu = [0.12, 0.08, 0.15]$ and covariance matrix $\Sigma = \begin{pmatrix} 0.1 & 0.02 & 0.04 \\ 0.02 & 0.08 & 0.01 \\ 0.04 & 0.01 & 0.15 \end{pmatrix}$. Find the optimal portfolio that minimizes variance subject to achieving at least 10% expected return, with no short selling ($w_i \geq 0$) and $\sum w_i = 1$.
+
+8. **Dual SVM Derivation:** Derive the dual of the soft-margin SVM optimization problem. Show that the dual is a quadratic program with box constraints and that the weight vector can be expressed as $w = \sum \alpha_i y_i x_i$.
+
 ## Practical Takeaways
 
 | Method | Convergence | Pros | Cons |
@@ -372,6 +380,195 @@ const result = gradientDescent(
 );
 console.log(`Minimum at (${result[0].toFixed(4)}, ${result[1].toFixed(4)})`);
 // Output: Minimum at (0.0000, 0.0000)
+```
+
+### Real-World Application: Training Neural Networks
+
+Optimization is the computational engine behind all deep learning. Training a neural network involves minimizing a non-convex loss function $L(w)$ over millions of parameters $w$.
+
+**Challenges in Deep Learning Optimization:**
+- **Non-convexity:** The loss landscape has many local minima and saddle points
+- **Ill-conditioning:** The Hessian may have a large condition number, causing gradient descent to zigzag
+- **Vanishing/exploding gradients:** Gradients become very small or very large in deep networks
+- **Generalization gap:** Optimizing to zero loss can sometimes hurt test performance
+
+**Learning Rate Schedules:**
+
+| Schedule | Formula | Effect |
+|----------|---------|--------|
+| Step decay | $\eta_t = \eta_0 \cdot \gamma^{\lfloor t/s \rfloor}$ | Reduces LR at specific epochs |
+| Exponential | $\eta_t = \eta_0 \cdot e^{-kt}$ | Smooth decay |
+| Cosine annealing | $\eta_t = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 + \cos(t\pi/T))$ | Cyclic restart behavior |
+| Warmup | $\eta_t = \eta_0 \cdot \min(1, t/T_{warm})$ | Gradual increase to prevent early divergence |
+
+**Second-Order Methods in ML:** While full Newton is too expensive for deep learning ($O(n^3)$ with $n > 10^7$), approximations like KFAC (Kronecker-Factored Approximate Curvature) use block-diagonal Fisher information matrix approximations to achieve faster convergence than SGD.
+
+**Batch Size and Generalization:** There is evidence that very large batch sizes lead to sharp minima that generalize poorly. Small-batch training tends to find flatter minima with better generalization. This is related to the **empirical Fisher information matrix** and the spectrum of the Hessian.
+
+## TypeScript Examples
+
+### Example 6: Adam Optimizer Implementation
+
+```typescript
+function adam(
+  gradient: (w: number[]) => number[],
+  initial: number[],
+  learningRate: number = 0.001,
+  beta1: number = 0.9,
+  beta2: number = 0.999,
+  epsilon: number = 1e-8,
+  iterations: number = 1000
+): number[] {
+  let w = [...initial];
+  const m = new Array(w.length).fill(0);
+  const v = new Array(w.length).fill(0);
+  let t = 0;
+
+  for (let iter = 0; iter < iterations; iter++) {
+    t++;
+    const grad = gradient(w);
+    for (let i = 0; i < w.length; i++) {
+      m[i] = beta1 * m[i] + (1 - beta1) * grad[i];
+      v[i] = beta2 * v[i] + (1 - beta2) * grad[i] * grad[i];
+      const mHat = m[i] / (1 - Math.pow(beta1, t));
+      const vHat = v[i] / (1 - Math.pow(beta2, t));
+      w[i] -= learningRate * mHat / (Math.sqrt(vHat) + epsilon);
+    }
+  }
+  return w;
+}
+
+// Minimize f(w1,w2) = w1^2 + 10*w2^2 (poorly conditioned)
+const result = adam(
+  (w) => [2 * w[0], 20 * w[1]],
+  [5, 5],
+  0.1
+);
+console.log(`Adam result: (${result[0].toFixed(4)}, ${result[1].toFixed(4)})`);
+// Adam handles the ill-conditioning better than plain gradient descent
+```
+
+### Example 7: Simplex Method for Linear Programming
+
+```typescript
+type SimplexTableau = number[][];
+
+function simplexStep(tableau: SimplexTableau): SimplexTableau {
+  const [m, n] = [tableau.length, tableau[0].length];
+
+  // Find pivot column (most negative in bottom row)
+  let pivotCol = -1;
+  let minVal = 0;
+  for (let j = 0; j < n - 1; j++) {
+    if (tableau[m - 1][j] < minVal) {
+      minVal = tableau[m - 1][j];
+      pivotCol = j;
+    }
+  }
+  if (pivotCol === -1) return tableau; // optimal
+
+  // Find pivot row (minimum ratio test)
+  let pivotRow = -1;
+  let minRatio = Infinity;
+  for (let i = 0; i < m - 1; i++) {
+    if (tableau[i][pivotCol] > 0) {
+      const ratio = tableau[i][n - 1] / tableau[i][pivotCol];
+      if (ratio < minRatio) {
+        minRatio = ratio;
+        pivotRow = i;
+      }
+    }
+  }
+  if (pivotRow === -1) throw new Error("Unbounded solution");
+
+  // Pivot
+  const pivotVal = tableau[pivotRow][pivotCol];
+  const newTableau = tableau.map(row => [...row]);
+
+  // Scale pivot row
+  for (let j = 0; j < n; j++) {
+    newTableau[pivotRow][j] /= pivotVal;
+  }
+
+  // Eliminate pivot column in other rows
+  for (let i = 0; i < m; i++) {
+    if (i === pivotRow) continue;
+    const factor = tableau[i][pivotCol];
+    for (let j = 0; j < n; j++) {
+      newTableau[i][j] -= factor * newTableau[pivotRow][j];
+    }
+  }
+  return newTableau;
+}
+
+// Maximize z = 3x + 2y subject to x + y ≤ 4, 2x + y ≤ 6, x,y ≥ 0
+// Tableau: [x, y, s1, s2, RHS]
+let tableau: SimplexTableau = [
+  [1, 1, 1, 0, 4],    // x + y + s1 = 4
+  [2, 1, 0, 1, 6],    // 2x + y + s2 = 6
+  [-3, -2, 0, 0, 0],  // -z = -3x - 2y (negated objective)
+];
+for (let iter = 0; iter < 10; iter++) {
+  const prev = tableau[m - 1][n - 1];
+  tableau = simplexStep(tableau);
+  // Check if optimal (no negative entries in bottom row except RHS)
+  // ... (simplified for brevity)
+}
+console.log("Simplex completed");
+```
+
+### Example 8: Conjugate Gradient Method
+
+```typescript
+function conjugateGradient(
+  A: number[][],
+  b: number[],
+  x0: number[],
+  maxIter: number = 100,
+  tolerance: number = 1e-10
+): number[] {
+  const n = b.length;
+  let x = [...x0];
+
+  // r = b - A*x
+  const r = b.map((bi, i) => {
+    let sum = 0;
+    for (let j = 0; j < n; j++) sum += A[i][j] * x[j];
+    return bi - sum;
+  });
+
+  let p = [...r];
+  let rsold = r.reduce((sum, ri) => sum + ri * ri, 0);
+
+  for (let k = 0; k < maxIter; k++) {
+    // Ap = A * p
+    const Ap = new Array(n).fill(0);
+    for (let i = 0; i < n; i++)
+      for (let j = 0; j < n; j++)
+        Ap[i] += A[i][j] * p[j];
+
+    const pAp = p.reduce((sum, pi, i) => sum + pi * Ap[i], 0);
+    const alpha = rsold / pAp;
+
+    x = x.map((xi, i) => xi + alpha * p[i]);
+    const rNew = r.map((ri, i) => ri - alpha * Ap[i]);
+
+    const rsnew = rNew.reduce((sum, ri) => sum + ri * ri, 0);
+    if (Math.sqrt(rsnew) < tolerance) break;
+
+    p = rNew.map((ri, i) => ri + (rsnew / rsold) * p[i]);
+    r.splice(0, r.length, ...rNew);
+    rsold = rsnew;
+  }
+  return x;
+}
+
+// Solve: [4, 1; 1, 3] * x = [1, 2]
+const A = [[4, 1], [1, 3]];
+const b = [1, 2];
+const sol = conjugateGradient(A, b, [0, 0]);
+console.log(`CG solution: (${sol[0].toFixed(4)}, ${sol[1].toFixed(4)})`);
+// Exact: (0.0909, 0.6364)
 ```
 
 ### Example 5: ADMM for Lasso Regression

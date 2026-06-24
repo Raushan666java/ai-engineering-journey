@@ -405,6 +405,202 @@ console.log(exists(people, p => p.name === "Alice")); // true
 - Inference rules for quantifiers enable formal reasoning.
 - First-order logic is strictly more expressive than propositional logic.
 
+### 3.6 Quantifier Evaluation in TypeScript
+
+```typescript
+function forall<T>(domain: T[], predicate: (x: T) => boolean): boolean {
+  return domain.every(predicate);
+}
+
+function exists<T>(domain: T[], predicate: (x: T) => boolean): boolean {
+  return domain.some(predicate);
+}
+
+function evaluateQuantified(
+  domain: number[],
+  expression: string
+): { result: boolean; counterexample?: any } {
+  if (expression === "∀x (x > 0)" && domain[0] === 1) {
+    const allPos = domain.every(x => x > 0);
+    return allPos
+      ? { result: true }
+      : { result: false, counterexample: domain.find(x => x <= 0) };
+  }
+  if (expression === "∃x (x < 0)") {
+    const found = domain.some(x => x < 0);
+    return found
+      ? { result: true, example: domain.find(x => x < 0) }
+      : { result: false };
+  }
+  return { result: false };
+}
+
+const domain = [-2, -1, 0, 1, 2];
+console.log(forall(domain, x => x > 0)); // false
+console.log(exists(domain, x => x < 0)); // true
+```
+
+**Evaluation of nested quantifiers over finite domains.**
+
+```typescript
+function evaluateNested(
+  domain: number[],
+  quantifiers: ("forall" | "exists")[],
+  predicate: (args: number[]) => boolean
+): boolean {
+  function recurse(vars: number[], depth: number): boolean {
+    if (depth === quantifiers.length) return predicate(vars);
+    const q = quantifiers[depth];
+    if (q === "forall") return domain.every(v => recurse([...vars, v], depth + 1));
+    return domain.some(v => recurse([...vars, v], depth + 1));
+  }
+  return recurse([], 0);
+}
+
+// ∀x ∃y (x + y = 0) over [-2, -1, 0, 1, 2]
+const result1 = evaluateNested(
+  [-2, -1, 0, 1, 2],
+  ["forall", "exists"],
+  ([x, y]) => x + y === 0
+);
+console.log(result1); // true
+
+// ∃y ∀x (x + y = 0) — same domain
+const result2 = evaluateNested(
+  [-2, -1, 0, 1, 2],
+  ["exists", "forall"],
+  ([x, y]) => x + y === 0
+);
+console.log(result2); // false (no single y works for all x)
+```
+
+### 3.7 Negation of Quantified Statements — Normalization
+
+**Theorem 3.3 (Quantifier Negation).**
+$$\neg \forall x\; P(x) \equiv \exists x\; \neg P(x)$$
+$$\neg \exists x\; P(x) \equiv \forall x\; \neg P(x)$$
+
+```typescript
+function negate(formula: string): string {
+  if (formula.startsWith("∀")) return formula.replace("∀", "∃").replace("P", "¬P");
+  if (formula.startsWith("∃")) return formula.replace("∃", "∀").replace("P", "¬P");
+  return `¬(${formula})`;
+}
+
+console.log(negate("∀x P(x)"));  // ∃x ¬P(x)
+console.log(negate("∃x P(x)"));  // ∀x ¬P(x)
+```
+
+### 3.8 Prenex Normal Form and Skolemization
+
+**Definition 3.9 (Prenex Normal Form).** A formula where all quantifiers appear at the front:
+$$Q_1 x_1\; Q_2 x_2\; \ldots\; Q_n x_n\; (\text{quantifier-free formula})$$
+
+**Conversion algorithm:**
+1. Eliminate $\rightarrow$ and $\leftrightarrow$.
+2. Push negations inward using De Morgan and quantifier negation.
+3. Rename bound variables to avoid capture.
+4. Move all quantifiers to the front.
+
+**Skolemization** removes existential quantifiers by introducing Skolem constants/functions.
+
+```typescript
+function toPrenex(formula: string): string {
+  // ∀x ∃y (P(x) → Q(y)) → ∀x ∃y (¬P(x) ∨ Q(y)) → ∀x ∃y (¬P(x) ∨ Q(y))
+  // Already in prenex form
+  return formula;
+}
+
+// Example: "Every rational number has a multiplicative inverse if nonzero"
+// ∀x ∈ ℚ (x ≠ 0 → ∃y (xy = 1))
+// In prenex: ∀x ∃y (x ≠ 0 → xy = 1)
+```
+
+### 3.9 First-Order Logic in Practice
+
+**Example 3.14** (Translating natural language to predicate logic).
+
+| English | Logic |
+|---------|-------|
+| All CS majors graduate | $\forall x (\text{CS}(x) \rightarrow \text{Grad}(x))$ |
+| Some math major is smart | $\exists x (\text{Math}(x) \land \text{Smart}(x))$ |
+| No CS major likes Java | $\forall x (\text{CS}(x) \rightarrow \neg \text{LikesJava}(x))$ |
+| Only CS majors take AI | $\forall x (\text{TakesAI}(x) \rightarrow \text{CS}(x))$ |
+| Every student has a advisor | $\forall s \in S \; \exists a \in A\; \text{Advisor}(s,a)$ |
+
+**Example 3.15** (Translating with unique existence). "There is exactly one even prime."
+$$\exists x (\text{Prime}(x) \land \text{Even}(x) \land \forall y ((\text{Prime}(y) \land \text{Even}(y)) \rightarrow y = x))$$
+
+**Proof 3.1** ($\forall$ distributes over $\land$ but not $\lor$).
+
+$\forall x (P(x) \land Q(x)) \equiv \forall x P(x) \land \forall x Q(x)$ is true.
+
+But $\forall x (P(x) \lor Q(x))$ is NOT equivalent to $\forall x P(x) \lor \forall x Q(x)$. Counterexample: domain = $\{1,2\}$, $P(1)=T$, $P(2)=F$, $Q(1)=F$, $Q(2)=T$. Then $\forall x (P(x) \lor Q(x))$ is true (each x satisfies one), but $\forall x P(x) \lor \forall x Q(x)$ is false (neither property holds for all).
+
+### 3.10 Inference with Quantifiers
+
+**Rule 3.1 (Universal Instantiation).** From $\forall x P(x)$, infer $P(c)$ for any $c$ in the domain.
+
+**Rule 3.2 (Existential Instantiation).** From $\exists x P(x)$, infer $P(c)$ for a fresh constant $c$.
+
+**Rule 3.3 (Universal Generalization).** If $P(c)$ for an arbitrary $c$, infer $\forall x P(x)$.
+
+**Rule 3.4 (Existential Generalization).** From $P(c)$, infer $\exists x P(x)$.
+
+```typescript
+function universalInstantiation<T>(
+  forallStatement: ((x: T) => boolean),
+  domain: T[],
+  c: T
+): boolean {
+  return forallStatement(domain) && forallStatement([c]);
+}
+
+function existentialGeneralization<T>(
+  P: (x: T) => boolean,
+  c: T
+): boolean {
+  return P(c);
+}
+
+// Example: ∀x (x > 0 → x^2 > 0) over positive integers
+const forallPosSquare = (arr: number[]) => arr.every(x => x > 0 ? x * x > 0 : true);
+console.log(universalInstantiation(forallPosSquare, [1, 2, 3], 5)); // true
+```
+
+### 3.11 Limitations of First-Order Logic
+
+- **Compactness theorem:** If every finite subset of a theory has a model, the whole theory has a model.
+- **Löwenheim-Skolem theorem:** If a countable theory has an infinite model, it has models of every infinite cardinality.
+- **Gödel's incompleteness:** No consistent, complete, recursive axiomatization of arithmetic exists.
+- First-order logic cannot express: "there are finitely many," "most," or transitive closure in general.
+
+```mermaid
+flowchart TD
+    subgraph "Logic Hierarchy"
+        A[Propositional Logic] -->|Add quantifiers| B[First-Order Logic]
+        B -->|Add set quantification| C[Second-Order Logic]
+        A --> D[Boolean connectives only]
+        B --> E[∀x, ∃x over individuals]
+        C --> F[∀P, ∃P over predicates]
+        B --> G[Expressiveness limit: compactness]
+    end
+```
+
+## Additional Exercises
+
+16. Write a TypeScript function `uniqueExists<T>` that checks $\exists!x P(x)$ over a finite domain.
+
+17. Translate to predicate logic: "Every student who takes a discrete math class passes."
+
+18. Negate and simplify: $\forall x \exists y ((P(x) \lor Q(y)) \rightarrow R(x, y))$.
+
+19. Determine whether $\exists x \forall y (x \leq y)$ is true over $\mathbb{Z}$ and over $\mathbb{N}$.
+
+20. Let domain be $\{1,2,3,4\}$ and $P(x,y)$ mean "$x$ divides $y$". Evaluate $\forall x \exists y P(x,y)$ and $\exists x \forall y P(x,y)$.
+
+21. Give a Skolemized form of $\forall x \exists y P(x,y)$.
+
 ## Exercises
 
 ### Review Questions

@@ -121,17 +121,70 @@ An **oracle Turing machine** is a TM with an additional "oracle tape" and a spec
 Oracle machines allow us to:
 - **Classify problems relative to oracles.** For example, Pá´¬ and NPá´¬ are classes relativized to A.
 - **Prove relativization results.** There exist oracles A and B such that Pá´¬ = NPá´¬ and Pá´® â‰  NPá´®. This shows that any proof resolving P vs NP must be "non-relativizing" â€” it cannot work for all possible oracles.
+- **Understand the limits of diagonalization.** Since relativizing proofs apply to all oracles, and P vs NP has contradicting relativizations, any correct proof must be non-relativizing. This rules out many standard proof techniques.
 
 ### 9.7 The Arithmetic Hierarchy
 
 Languages definable by alternating quantifiers over recursive predicates form the **arithmetic hierarchy**:
-- Î£â‚: Languages of the form { x | âˆƒy R(x,y) } where R is recursive (these are exactly RE).
-- Î â‚: Languages of the form { x | âˆ€y R(x,y) } (these are co-RE).
-- Î£â‚‚: Languages of the form { x | âˆƒyâ‚ âˆ€yâ‚‚ R(x,yâ‚,yâ‚‚) }.
-- Î â‚‚: Languages of the form { x | âˆ€yâ‚ âˆƒyâ‚‚ R(x,yâ‚,yâ‚‚) }.
-- etc.
 
-This hierarchy is strict: Î£â‚™ âŠ‚ Î£_{n+1} and Î â‚™ âŠ‚ Î _{n+1} for all n.
+\[
+\Sigma_n = \{ x \mid \exists y_1 \forall y_2 \exists y_3 \ldots Q y_n \; R(x, y_1, \ldots, y_n) \}
+\]
+\[
+\Pi_n = \{ x \mid \forall y_1 \exists y_2 \forall y_3 \ldots Q y_n \; R(x, y_1, \ldots, y_n) \}
+\]
+
+Where R is a recursive predicate and the quantifiers alternate.
+
+| Level | Form | Known as | Example Problem |
+|-------|------|----------|-----------------|
+| \(\Sigma_1\) | \(\exists y R(x,y)\) | RE | Halting problem |
+| \(\Pi_1\) | \(\forall y R(x,y)\) | co-RE | Totality (halts on all inputs) |
+| \(\Sigma_2\) | \(\exists y_1 \forall y_2 R(x,y_1,y_2)\) | — | Does M halt on infinitely many inputs? |
+| \(\Pi_2\) | \(\forall y_1 \exists y_2 R(x,y_1,y_2)\) | — | Does M halt on all inputs? |
+| \(\Sigma_3\) | \(\exists y_1 \forall y_2 \exists y_3 R(x,y_1,y_2,y_3)\) | — | Is L(M) co-finite? |
+
+```mermaid
+flowchart LR
+    subgraph "Arithmetic Hierarchy"
+        S1["Σ₁ = RE<br/>(∃)"] --> P1["Π₁ = co-RE<br/>(∀)"]
+        P1 --> S2["Σ₂<br/>(∃∀)"]
+        S2 --> P2["Π₂<br/>(∀∃)"]
+        P2 --> S3["Σ₃<br/>(∃∀∃)"]
+        S3 --> P3["Π₃<br/>(∀∃∀)"]
+        P3 --> "..."
+    end
+```
+
+This hierarchy is strict: \(\Sigma_n \subset \Sigma_{n+1}\) and \(\Pi_n \subset \Pi_{n+1}\) for all \(n \geq 1\).
+
+### 9.8 Reductions and Completeness
+
+**Many-one reduction:** A language A is **many-one reducible** to language B (written \(A \leq_m B\)) if there exists a computable function f such that:
+\[
+w \in A \iff f(w) \in B
+\]
+
+**Turing reduction:** A language A is **Turing-reducible** to B (written \(A \leq_T B\)) if a decision procedure for A can be computed by an oracle TM with oracle B.
+
+**Key properties:**
+- If \(A \leq_m B\) and B is recursive, then A is recursive.
+- If \(A \leq_m B\) and B is RE, then A is RE.
+- Turing reductions are more general than many-one reductions.
+- Many-one reductions can separate degree structures (many-one degrees vs Turing degrees).
+
+### 9.9 The Chomsky Hierarchy Revisited
+
+The relationship between language classes and Turing machines:
+
+| Language Class | Machine Model | Closure Properties |
+|---------------|--------------|-------------------|
+| **Type 0** (RE) | Turing machine | ∪, ∩, concat, * |
+| **Type 1** (CSL) | Linear-bounded TM | ∪, ∩, concat, * (not complement) |
+| **Type 2** (CFL) | PDA (nondeterministic) | ∪, concat, * (not ∩) |
+| **Type 3** (Regular) | DFA/NFA | All Boolean operations |
+
+Each type is a proper subset of the next: Regular ⊂ CFL ⊂ CSL ⊂ RE.
 
 ## Examples
 
@@ -241,6 +294,63 @@ Key properties:
 - The halting problem is in RE \ REC
 - Its complement is in co-RE \ REC
 
+## The Language Hierarchy and Complete Problems
+
+A language A is **complete** for a class C if:
+1. A ∈ C
+2. Every language in C reduces to A
+
+For the RE class, the classic complete problem is:
+- **HALT_TM** = { ⟨M, w⟩ | M halts on w }
+- **ACCEPT_TM** = { ⟨M, w⟩ | M accepts w }
+
+Both are RE-complete under many-one reductions. Showing a language is RE-complete is the standard way to prove it is "as hard as" the halting problem.
+
+## TypeScript: Oracle TM Simulator
+
+```typescript
+type OracleFunction = (query: string) => boolean;
+
+class OracleTM {
+  private machine: TuringMachine;
+  private oracle: OracleFunction;
+  private oracleTape: string[] = [];
+
+  constructor(machine: TuringMachine, oracle: OracleFunction) {
+    this.machine = machine;
+    this.oracle = oracle;
+  }
+
+  run(input: string): boolean {
+    this.machine.loadInput(input);
+    let halted = false;
+
+    while (!halted) {
+      // Check if machine is in query state
+      // (Simplified: we use a convention where q_query triggers oracle)
+      if (this.machine.getState() === "q_query") {
+        const query = this.oracleTape.join("").trim();
+        const answer = this.oracle(query);
+        // Write answer (1 for yes, 0 for no) and return
+        this.machine.forceTransition(answer ? "q_yes" : "q_no");
+      }
+      halted = this.machine.step();
+    }
+    return this.machine.getState() === "q_accept";
+  }
+}
+
+// Example: Use oracle to decide if a number is prime
+const primeOracle: OracleFunction = (query: string) => {
+  const n = parseInt(query, 10);
+  if (isNaN(n) || n < 2) return false;
+  for (let i = 2; i * i <= n; i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+};
+```
+
 ## The Encoding of Turing Machines
 
 TMs are encoded as strings over a fixed alphabet. A standard encoding scheme:
@@ -257,6 +367,112 @@ Where:
 ```
 
 This encoding makes TMs countable: each TM maps to a unique natural number. The existence of a universal TM means the set of all computable functions is enumerable by a single machine.
+
+### TypeScript: TM Encoding/Decoding
+
+```typescript
+function encodeState(name: string): string {
+  // Encode state names as unary-coded numbers
+  const n = parseInt(name.replace(/\D/g, ""), 10) || 0;
+  return "1".repeat(n + 1);
+}
+
+function encodeSymbol(sym: string): string {
+  const syms = ["_", "0", "1", "a", "b", "c", "X", "Y", "Z"];
+  const n = syms.indexOf(sym);
+  return "1".repeat(Math.max(n + 1, 1));
+}
+
+function encodeDirection(dir: "L" | "R"): string {
+  return dir === "L" ? "1" : "11";
+}
+
+function encodeTransition(
+  from: string, readSym: string,
+  to: string, writeSym: string, dir: "L" | "R"
+): string {
+  return `0${encodeState(from)}0${encodeSymbol(readSym)}0` +
+         `${encodeState(to)}0${encodeSymbol(writeSym)}0` +
+         `${encodeDirection(dir)}0`;
+}
+
+function encodeTMDescription(desc: TMDescription): string {
+  let encoding = "";
+  for (const [key, [next, write, dir]] of desc.delta) {
+    const [state, sym] = key.split(",");
+    encoding += encodeTransition(state, sym, next, write, dir);
+  }
+  return encoding;
+}
+```
+
+The encoding function maps every TM to a unique binary string. The UTM can then parse this encoding and simulate the original machine.
+
+## Rice's Theorem
+
+**Rice's Theorem:** Any non-trivial semantic property of Turing machines is undecidable.
+
+A property P of TMs is:
+- **Semantic:** depends only on the language recognized (not on the machine's structure).
+- **Non-trivial:** there exist TMs that satisfy P and TMs that do not.
+
+**Examples of undecidable properties:**
+- Does M accept the empty string?
+- Does M accept any string at all?
+- Does M accept all strings?
+- Does M accept a finite language?
+- Does L(M) = L(M') for two given machines?
+
+**Examples of decidable properties (trivial or syntactic):**
+- Does M have exactly 5 states? (Structural, not semantic)
+- Does M halt within 100 steps on input ε? (Decidable by simulation)
+
+### TypeScript: Rice's Theorem Verifier
+
+```typescript
+type UndecidableProperty = (description: TMDescription) => boolean;
+
+// The theorem says: for any non-trivial semantic property,
+// there is no TM that decides it.
+function illustrativeRiceVerifier(
+  property: UndecidableProperty,
+  sampleAccepting: string,
+  sampleRejecting: string
+): { property: string; undecidable: boolean; reason: string } {
+  // Check property is non-trivial
+  const acceptDesc = parseTM(sampleAccepting);
+  const rejectDesc = parseTM(sampleRejecting);
+  const acceptHas = property(acceptDesc);
+  const rejectHas = property(rejectDesc);
+
+  if (acceptHas === rejectHas) {
+    return {
+      property: property.name,
+      undecidable: false,
+      reason: "Property is trivial — all TMs either satisfy or don't"
+    };
+  }
+
+  return {
+    property: property.name,
+    undecidable: true,
+    reason: "Non-trivial semantic property — undecidable per Rice's theorem"
+  };
+}
+
+function parseTM(encoding: string): TMDescription {
+  // Simplified parser for TM encodings
+  const parts = encoding.split(";");
+  return {
+    Q: parts[0]?.split(",") ?? [],
+    gamma: parts[1]?.split(",") ?? [],
+    delta: new Map(),
+    q0: parts[2] ?? "q0",
+    qAccept: parts[3] ?? "q_accept",
+    qReject: parts[4] ?? "q_reject",
+  };
+}
+```
 
 ## The Chomsky-Schützenberger Theorem
 
@@ -354,16 +570,6 @@ Every context-free language can be expressed as the homomorphic image of the int
 **B)** Oracle machines create relativized complexity classes and identify proof barriers.
 </details>
 
-## Practical Takeaways
-
-1. **The UTM is the stored-program computer.** The universal Turing machine's ability to read and execute a description of another TM is the theoretical foundation for every modern general-purpose computer. An operating system loading a program into memory is a real-world UTM simulation.
-
-2. **RE but not recursive = programs that may loop forever.** Many useful problems are RE but not recursive: whether a program has a bug, whether a function terminates, whether two programs are equivalent. This is why testing cannot prove correctness.
-
-3. **The Church-Turing thesis guides architecture decisions.** If a problem is not computable on a Turing machine, it is not computable on any real computer. This means some problems truly have no algorithmic solution, regardless of hardware advances or programming language improvements.
-
-4. **The arithmetic hierarchy classifies real problems.** Determining if a program halts on all inputs is Π₂⁰ (harder than the halting problem). Determining if a program halts on infinitely many inputs is Π₃⁰. Each quantifier alternation adds fundamental difficulty.
-
 ## Summary
 
 - Recursive languages are decidable (TM always halts); RE languages are recognizable (TM may loop).
@@ -377,26 +583,31 @@ Every context-free language can be expressed as the homomorphic image of the int
 ### Basic
 
 1. Explain why every recursive language is RE but not vice versa.
-2. Describe how a UTM simulates another TM. Why is the UTM's ability to read âŸ¨MâŸ© important?
+2. Describe how a UTM simulates another TM. Why is the UTM's ability to read ⟨M⟩ important?
 3. State the Church-Turing thesis in your own words.
-4. Show that if L is recursive, then LÌ… is recursive.
-5. Give an example of a language in RE âˆ© co-RE that is not obviously recursive.
+4. Show that if L is recursive, then its complement is recursive.
+5. Give an example of a language in RE ∩ co-RE that is not obviously recursive.
+6. Write a TypeScript function that encodes a simple TM as a string suitable for UTM input.
 
 ### Intermediate
 
-6. Prove: If a language L is RE, then L is recursive iff LÌ… is also RE.
-7. Show that the language { âŸ¨MâŸ© | M accepts Îµ } is RE but not recursive (reduce from the halting problem).
-8. Describe how to construct a UTM with 4 states and 6 symbols (or argue why this is the minimum).
-9. Prove that the arithmetic hierarchy is strict: Î£â‚™ â‰  Î£_{n+1} for all n â‰¥ 1.
-10. Explain the relevance of the Church-Turing thesis to quantum computing.
+7. Prove: If a language L is RE, then L is recursive iff its complement is also RE.
+8. Show that the language { ⟨M⟩ | M accepts ε } is RE but not recursive (reduce from the halting problem).
+9. Describe how to construct a UTM with 4 states and 6 symbols (or argue why this is the minimum).
+10. Prove that the arithmetic hierarchy is strict: Σₙ ≠ Σ_{n+1} for all n ≥ 1.
+11. Explain the relevance of the Church-Turing thesis to quantum computing.
+12. Apply Rice's theorem: prove that the language { ⟨M⟩ | L(M) is regular } is undecidable.
+13. Show that HALT_TM ≤ₘ ACCEPT_TM (halting reduces to acceptance) by constructing the reduction function.
 
 ### Advanced
 
-11. Prove that the language of descriptions of TMs that accept at least one string (NONEMPTY_TM) is RE but not recursive.
-12. Construct an encoding scheme for TMs and prove that the set of all TM descriptions is countable.
-13. Prove that there are uncountably many languages but only countably many TMs â€” conclude that most languages are not RE.
-14. Show relativization: find oracles A and B such that Pá´¬ = NPá´¬ and Pá´® â‰  NPá´®.
-15. Prove that the universal language U = { âŸ¨M, wâŸ© | M accepts w } is RE but not recursive.
+14. Prove that the language of descriptions of TMs that accept at least one string (NONEMPTY_TM) is RE but not recursive.
+15. Construct an encoding scheme for TMs and prove that the set of all TM descriptions is countable.
+16. Prove that there are uncountably many languages but only countably many TMs — conclude that most languages are not RE.
+17. Show relativization: find oracles A and B such that P^A = NP^A and P^B ≠ NP^B.
+18. Prove that the universal language U = { ⟨M, w⟩ | M accepts w } is RE but not recursive.
+19. Show that TOTAL_TM = { ⟨M⟩ | M halts on all inputs } is not RE and not co-RE (it is Π₂⁰-complete).
+20. Implement a TypeScript function that simulates an oracle TM: given a TM description D and an oracle function O, compute whether D accepts input w using O.
 
 ## Further Reading
 

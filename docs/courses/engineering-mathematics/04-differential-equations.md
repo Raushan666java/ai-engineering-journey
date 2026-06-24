@@ -439,6 +439,151 @@ $$\mathcal{L}^{-1}\left\{\frac{1}{(s^2 + 1)^2}\right\} = \frac{\sin t - t\cos t}
 
 **Solution:** $y(t) = \cos t + \frac{\sin t - t\cos t}{2}$
 
+### Example 6: Phase Plane Analysis
+
+Analyze the system $\mathbf{x}' = \begin{pmatrix} 1 & 2 \\ -2 & 1 \end{pmatrix} \mathbf{x}$.
+
+**Solution:**
+Eigenvalues: $\det(A - \lambda I) = (1-\lambda)^2 + 4 = 0 \implies \lambda = 1 \pm 2i$.
+
+Since eigenvalues are complex with positive real part, the equilibrium at $(0,0)$ is an **unstable spiral**. Trajectories spiral outward as $t \to \infty$.
+
+For $\lambda = 1 + 2i$:
+$$(A - (1+2i)I)\mathbf{v} = \begin{pmatrix} -2i & 2 \\ -2 & -2i \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = 0 \implies \mathbf{v} = \begin{pmatrix} 1 \\ i \end{pmatrix}$$
+
+General solution:
+$$\mathbf{x}(t) = e^t \begin{pmatrix} \cos 2t & -\sin 2t \\ \sin 2t & \cos 2t \end{pmatrix} \begin{pmatrix} c_1 \\ c_2 \end{pmatrix}$$
+
+The $e^t$ factor causes exponential growth, while the rotation matrix causes oscillation at frequency 2.
+
+### Example 7: Solving a PDE with Separation of Variables
+
+Solve the wave equation $u_{tt} = c^2 u_{xx}$ for $0 < x < L$, $t > 0$, with $u(0,t) = u(L,t) = 0$, $u(x,0) = f(x)$, $u_t(x,0) = 0$.
+
+**Solution:**
+Assume $u(x,t) = X(x)T(t)$. Substitute: $X T'' = c^2 X'' T$.
+
+Divide by $c^2 X T$: $\frac{T''}{c^2 T} = \frac{X''}{X} = -\lambda$ (separation constant).
+
+Solve for $X$: $X'' + \lambda X = 0$, $X(0) = X(L) = 0$.
+
+$\lambda_n = \left(\frac{n\pi}{L}\right)^2$, $X_n(x) = \sin\left(\frac{n\pi x}{L}\right)$, $n = 1, 2, 3, \ldots$
+
+Solve for $T$: $T'' + c^2\lambda_n T = 0$, $T(0) = A_n$, $T'(0) = 0$.
+
+$T_n(t) = A_n \cos\left(\frac{n\pi c t}{L}\right)$
+
+The complete solution is a superposition of normal modes:
+$$u(x,t) = \sum_{n=1}^\infty A_n \sin\left(\frac{n\pi x}{L}\right) \cos\left(\frac{n\pi c t}{L}\right)$$
+
+where $A_n = \frac{2}{L} \int_0^L f(x) \sin\left(\frac{n\pi x}{L}\right) dx$.
+
+## TypeScript Examples
+
+### Euler's Method for First-Order ODEs
+
+```typescript
+type ODE = (t: number, y: number) => number;
+
+function eulerMethod(
+  f: ODE,
+  t0: number,
+  y0: number,
+  h: number,
+  n: number
+): { t: number[]; y: number[] } {
+  const t: number[] = [t0];
+  const y: number[] = [y0];
+  for (let i = 0; i < n; i++) {
+    y.push(y[i] + h * f(t[i], y[i]));
+    t.push(t[i] + h);
+  }
+  return { t, y };
+}
+
+// y' = -2xy, y(0) = 1 → exact: y = exp(-x²)
+const f = (x: number, y: number) => -2 * x * y;
+const { t: tv, y: yv } = eulerMethod(f, 0, 1, 0.1, 10);
+for (let i = 0; i <= 10; i += 2) {
+  const exact = Math.exp(-tv[i] * tv[i]);
+  console.log(
+    `x=${tv[i].toFixed(1)}: Euler=${yv[i].toFixed(6)}, exact=${exact.toFixed(6)}`
+  );
+}
+```
+
+### System of ODEs: Lotka-Volterra (Predator-Prey)
+
+```typescript
+type ODESystem = (t: number, y: number[]) => number[];
+
+function rk4System(
+  f: ODESystem,
+  t0: number,
+  y0: number[],
+  h: number,
+  n: number
+): { t: number[]; y: number[][] } {
+  const t: number[] = [t0];
+  const y: number[][] = [y0];
+  const m = y0.length;
+  for (let step = 0; step < n; step++) {
+    const ti = t[step], yi = y[step];
+    const k1 = f(ti, yi);
+    const k2 = f(ti + h / 2, yi.map((v, i) => v + (h / 2) * k1[i]));
+    const k3 = f(ti + h / 2, yi.map((v, i) => v + (h / 2) * k2[i]));
+    const k4 = f(ti + h, yi.map((v, i) => v + h * k3[i]));
+    const next: number[] = [];
+    for (let i = 0; i < m; i++)
+      next.push(yi[i] + (h / 6) * (k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]));
+    t.push(ti + h);
+    y.push(next);
+  }
+  return { t, y };
+}
+
+// Lotka-Volterra: dx/dt = αx - βxy, dy/dt = δxy - γy
+const α = 1.5, β = 1.0, δ = 1.0, γ = 3.0;
+const lotkaVolterra: ODESystem = (_, y) => [
+  α * y[0] - β * y[0] * y[1],  // prey
+  δ * y[0] * y[1] - γ * y[1],  // predator
+];
+
+const { t: lt, y: ly } = rk4System(lotkaVolterra, 0, [10, 5], 0.01, 500);
+// Print every 100 steps
+for (let i = 0; i <= 500; i += 100) {
+  console.log(
+    `t=${lt[i].toFixed(1)}: prey=${ly[i][0].toFixed(1)}, predator=${ly[i][1].toFixed(1)}`
+  );
+}
+```
+
+## Real-World Application: Epidemic Modeling (SIR Model)
+
+The SIR model describes the spread of infectious diseases through a population:
+
+$$\frac{dS}{dt} = -\beta S I, \quad \frac{dI}{dt} = \beta S I - \gamma I, \quad \frac{dR}{dt} = \gamma I$$
+
+where $S$ = susceptible, $I$ = infected, $R$ = recovered, $\beta$ = transmission rate, $\gamma$ = recovery rate.
+
+**Key Epidemiological Parameters:**
+- **Basic reproduction number:** $R_0 = \beta S_0 / \gamma$ — average number of secondary infections
+- **Herd immunity threshold:** $1 - 1/R_0$ — fraction of population that must be immune
+- **Peak infection:** Occurs when $S = \gamma/\beta$ (where $dI/dt = 0$)
+
+```typescript
+const sir: ODESystem = (_, y) => {
+  const S = y[0], I = y[1], R = y[2];
+  const beta = 0.3, gamma = 0.1;  // R₀ = 3.0
+  return [-beta * S * I, beta * S * I - gamma * I, gamma * I];
+};
+
+const { t: st, y: sy } = rk4System(sir, 0, [0.99, 0.01, 0], 0.1, 200);
+console.log(`Day 50: S=${sy[50][0].toFixed(3)}, I=${sy[50][1].toFixed(3)}, R=${sy[50][2].toFixed(3)}`);
+console.log(`Day 100: S=${sy[100][0].toFixed(3)}, I=${sy[100][1].toFixed(3)}, R=${sy[100][2].toFixed(3)}`);
+// At R₀=3, ~90% of population gets infected before epidemic ends
+```
+
 ## Summary
 
 - First-order ODEs are classified into separable, linear, exact, Bernoulli, and homogeneous types
@@ -469,6 +614,14 @@ $$\mathcal{L}^{-1}\left\{\frac{1}{(s^2 + 1)^2}\right\} = \frac{\sin t - t\cos t}
 3. **Predator-Prey:** Write the Lotka-Volterra equations and find their equilibrium points.
 
 4. **Heat Equation:** Solve $u_t = u_{xx}$ for $0 < x < 1$, $t > 0$, with $u(0,t) = u(1,t) = 0$, $u(x,0) = \sin(2\pi x)$.
+
+### Additional Exercises
+
+5. **Bernoulli Equation:** Solve $y' + \frac{y}{x} = x^2 y^2$ by reducing to a linear ODE using the substitution $v = y^{1-n}$.
+
+6. **Phase Portrait:** For $\mathbf{x}' = \begin{pmatrix} 0 & 1 \\ -4 & 0 \end{pmatrix} \mathbf{x}$, find the eigenvalues and classify the equilibrium.
+
+7. **Method of Undetermined Coefficients:** Solve $y'' - 4y' + 3y = e^{2x}$ with $y(0) = 0$, $y'(0) = 0$.
 
 ### Challenge Problem
 

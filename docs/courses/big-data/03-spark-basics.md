@@ -518,6 +518,365 @@ df.write.mode("overwrite").parquet("s3a://my-bucket/output/")
 **A) It removes unused columns from the scan.** If a query only needs 3 of 100 columns, Catalyst ensures only those 3 columns are read from the data source, dramatically reducing I/O.
 </details>
 
+## 3.11 Spark Execution Plan Visualization
+
+```mermaid
+flowchart TB
+    subgraph User["User Code"]
+        A1[df.filter.age > 25.select name, dept]
+    end
+    subgraph Catalyst["Catalyst Optimizer"]
+        B1[Unresolved Logical Plan]
+        B2[Analyzed Logical Plan]
+        B3[Optimized Logical Plan<br>predicate pushdown<br>projection pruning]
+        B4[Physical Plan]
+        B1 --> B2 --> B3 --> B4
+    end
+    subgraph Tungsten["Tungsten Execution"]
+        C1[Whole-Stage CodeGen]
+        C2[Off-Heap Memory]
+        C3[Cache-Aware Layout]
+        C1 --> D1[Generated Java Bytecode]
+    end
+    subgraph Execution["Cluster Execution"]
+        E1[Task Scheduler]
+        E2[Executor 1]
+        E3[Executor 2]
+        E4[Executor N]
+        E1 --> E2 & E3 & E4
+    end
+    User --> Catalyst
+    B4 --> Tungsten
+    D1 --> Execution
+```
+
+## 3.12 Join Strategy Decision Flow
+
+```mermaid
+flowchart LR
+    A[Join Required] --> B{One side<br> < 10 MB?}
+    B -->|Yes| C[BroadcastHashJoin<br>No Shuffle]
+    B -->|No| D{Equi-Join?}
+    D -->|Yes| E[SortMergeJoin<br>Both Sides Shuffled]
+    D -->|No| F[NestedLoopJoin<br>Expensive]
+    C & E --> G[AQE Enabled?]
+    G -->|Yes| H[Adaptive Optimization<br>Skew Join Handling]
+    G -->|No| I[Fixed Plan]
+```
+
+## 3.13 TypeScript Spark Simulator
+
+The following TypeScript classes simulate core Spark concepts — DAG building, lazy evaluation, partition-aware execution — to deepen understanding without a cluster.
+
+### SparkSession Builder
+
+```typescript
+interface SparkConfig {
+  appName: string;
+  executorInstances: number;
+  executorCores: number;
+  executorMemory: string;
+  driverMemory: string;
+}
+
+class SparkSession {
+  private config: SparkConfig;
+  private constructor(config: SparkConfig) { this.config = config; }
+
+  static builder() {
+    return new (class Builder {
+      private cfg: Partial<SparkConfig> = {};
+      appName(n: string) { this.cfg.appName = n; return this; }
+      config(k: string, v: unknown) {
+        if (k === "spark.executor.instances") this.cfg.executorInstances = v as number;
+        if (k === "spark.executor.cores") this.cfg.executorCores = v as number;
+        if (k === "spark.executor.memory") this.cfg.executorMemory = v as string;
+        if (k === "spark.driver.memory") this.cfg.driverMemory = v as string;
+        return this;
+      }
+      getOrCreate() {
+        return new SparkSession(this.cfg as SparkConfig);
+      }
+    })();
+  }
+
+  get totalCores() {
+    return (this.config.executorInstances ?? 1) * (this.config.executorCores ?? 1);
+  }
+
+  get totalMemoryGB() {
+    const parseGB = (s: string) => parseInt(s) || 1;
+    return (this.config.executorInstances ?? 1) * parseGB(this.config.executorMemory ?? "1g");
+  }
+
+  status() {
+    return {
+      appName: this.config.appName,
+      totalCores: this.totalCores,
+      totalMemoryGB: this.totalMemoryGB,
+    };
+  }
+}
+
+// Demo
+const spark = SparkSession.builder()
+  .appName("architecture-demo")
+  .config("spark.executor.instances", 4)
+  .config("spark.executor.cores", 4)
+  .config("spark.executor.memory", "8g")
+  .config("spark.driver.memory", "4g")
+  .getOrCreate();
+
+console.log(spark.status());
+// { appName: "architecture-demo", totalCores: 16, totalMemoryGB: 32 }
+```
+
+### RDD Simulator with Lazy DAG
+
+```typescript
+type TransformFn<T, U> = (x: T) => U;
+type Predicate<T> = (x: T) => boolean;
+type ReduceFn<T> = (a: T, b: T) => T;
+
+class RDD<T> {
+  private partitions: T[][];
+  private lineage: string[] = [];
+
+  constructor(data: T[], numPartitions = 2) {
+    const size = Math.ceil(data.length / numPartitions);
+    this.partitions = [];
+    for (let i = 0; i < numPartitions; i++) {
+      this.partitions.push(data.slice(i * size, (i + 1) * size));
+    }
+    this.lineage.push(`Parallelize(${data.length} items, ${numPartitions} parts)`);
+  }
+
+  private fromParts(parts: T[][], desc: string): RDD<T> {
+    const rdd = new RDD<T>([]);
+    rdd.partitions = parts;
+    rdd.lineage = [...this.lineage, desc];
+    return rdd;
+  }
+
+  // Transformation: map (lazy)
+  map<U>(fn: TransformFn<T, U>): RDD<U> {
+    const rdd = new RDD<U>([]);
+    rdd.partitions = this.partitions.map(p => p.map(fn));
+    rdd.lineage = [...this.lineage, `Map`];
+    return rdd;
+  }
+
+  // Transformation: filter (lazy)
+  filter(pred: Predicate<T>): RDD<T> {
+    return this.fromParts(
+      this.partitions.map(p => p.filter(pred)),
+      `Filter`
+    );
+  }
+
+  // Transformation: flatMap (lazy)
+  flatMap<U>(fn: (x: T) => U[]): RDD<U> {
+    const rdd = new RDD<U>([]);
+    rdd.partitions = this.partitions.map(p => p.flatMap(fn));
+    rdd.lineage = [...this.lineage, `FlatMap`];
+    return rdd;
+  }
+
+  // Transformation: reduceByKey (simulated for pair RDDs)
+  reduceByKey(fn: ReduceFn<number>): RDD<[string, number]> {
+    const reduced = this.partitions.map(p => {
+      const map = new Map<string, number>();
+      for (const [k, v] of p as unknown as [string, number][]) {
+        map.set(k, (map.get(k) ?? 0) + v);
+      }
+      return Array.from(map.entries());
+    });
+    const rdd = new RDD<[string, number]>([]);
+    rdd.partitions = reduced;
+    rdd.lineage = [...this.lineage, `ReduceByKey`];
+    return rdd;
+  }
+
+  // Action: collect (eager — triggers computation)
+  collect(): T[] {
+    console.log(`Collect triggered. Lineage: ${this.lineage.join(" → ")}`);
+    return this.partitions.flat();
+  }
+
+  // Action: count
+  count(): number {
+    const n = this.partitions.reduce((s, p) => s + p.length, 0);
+    console.log(`Count: ${n}`);
+    return n;
+  }
+
+  // Action: take
+  take(n: number): T[] {
+    const result: T[] = [];
+    for (const p of this.partitions) {
+      for (const item of p) {
+        if (result.length >= n) return result;
+        result.push(item);
+      }
+    }
+    return result;
+  }
+
+  // Action: reduce
+  reduce(fn: ReduceFn<T>): T | undefined {
+    const all = this.collect();
+    if (all.length === 0) return undefined;
+    return all.reduce(fn);
+  }
+
+  getNumPartitions() { return this.partitions.length; }
+  getLineage() { return this.lineage; }
+}
+
+// Demo: Word Count
+const lines = new RDD(["hello world", "spark is fast", "hello spark"]);
+const words = lines.flatMap(line => line.split(" "));
+const pairs = words.map(w => [w, 1] as [string, number]);
+const counts = pairs.reduceByKey((a, b) => a + b);
+const sorted = counts
+  .map(([w, c]) => ({ word: w, count: c }))
+  .collect()
+  .sort((a, b) => b.count - a.count);
+
+console.table(sorted);
+// ┌─────────┬────────┬───────┐
+// │ (index) │  word  │ count │
+// ├─────────┼────────┼───────┤
+// │    0    │ hello  │   2   │
+// │    1    │ spark  │   2   │
+// │    2    │  world │   1   │
+// │    3    │   is   │   1   │
+// │    4    │  fast  │   1   │
+// └─────────┴────────┴───────┘
+```
+
+### DataFrame Operation Simulator
+
+```typescript
+type Row = Record<string, unknown>;
+
+class DataFrame {
+  private rows: Row[];
+
+  constructor(rows: Row[]) { this.rows = rows; }
+
+  select(...cols: string[]): DataFrame {
+    return new DataFrame(this.rows.map(r => {
+      const selected: Row = {};
+      for (const c of cols) selected[c] = r[c];
+      return selected;
+    }));
+  }
+
+  filter(pred: (r: Row) => boolean): DataFrame {
+    return new DataFrame(this.rows.filter(pred));
+  }
+
+  withColumn(name: string, fn: (r: Row) => unknown): DataFrame {
+    return new DataFrame(this.rows.map(r => ({ ...r, [name]: fn(r) })));
+  }
+
+  groupBy(col: string): GroupedData {
+    return new GroupedData(this.rows, col);
+  }
+
+  orderBy(col: string, desc = false): DataFrame {
+    const sorted = [...this.rows].sort((a, b) => {
+      const va = a[col] as number, vb = b[col] as number;
+      return desc ? vb - va : va - vb;
+    });
+    return new DataFrame(sorted);
+  }
+
+  join(other: DataFrame, on: string): DataFrame {
+    const joined: Row[] = [];
+    for (const r1 of this.rows) {
+      for (const r2 of other.rows) {
+        if (r1[on] === r2[on]) {
+          joined.push({ ...r1, ...r2 });
+        }
+      }
+    }
+    return new DataFrame(joined);
+  }
+
+  show() { console.table(this.rows); }
+  count() { return this.rows.length; }
+}
+
+class GroupedData {
+  constructor(private rows: Row[], private col: string) {}
+
+  agg(aggregations: Record<string, string>): DataFrame {
+    const groups = new Map<string, Row[]>();
+    for (const r of this.rows) {
+      const key = String(r[this.col]);
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key)!.push(r);
+    }
+    const result: Row[] = [];
+    for (const [key, group] of groups) {
+      const entry: Row = { [this.col]: key };
+      for (const [targetCol, op] of Object.entries(aggregations)) {
+        if (op === "count") entry[`count_${targetCol}`] = group.length;
+        if (op === "avg") entry[`avg_${targetCol}`] = group.reduce((s, r) => s + (r[targetCol] as number), 0) / group.length;
+        if (op === "max") entry[`max_${targetCol}`] = Math.max(...group.map(r => r[targetCol] as number));
+      }
+      result.push(entry);
+    }
+    return new DataFrame(result);
+  }
+}
+
+// Demo
+const df = new DataFrame([
+  { name: "Alice", age: 30, dept: "Engineering" },
+  { name: "Bob", age: 25, dept: "Sales" },
+  { name: "Charlie", age: 35, dept: "Engineering" },
+  { name: "Diana", age: 28, dept: "Marketing" },
+]);
+
+df.filter(r => (r.age as number) > 28).select("name", "age").show();
+// ┌─────────┬─────────┬─────┐
+// │ (index) │  name   │ age │
+// ├─────────┼─────────┼─────┤
+// │    0    │ Alice   │ 30  │
+// │    1    │ Charlie │ 35  │
+// └─────────┴─────────┴─────┘
+
+df.groupBy("dept").agg({ age: "avg", name: "count" }).show();
+// ┌─────────────┬──────────┬─────────────┐
+// │   dept      │ avg_age  │ count_name  │
+// ├─────────────┼──────────┼─────────────┤
+// │ Engineering │   32.5   │      2      │
+// │   Sales     │   25.0   │      1      │
+// │  Marketing  │   28.0   │      1      │
+// └─────────────┴──────────┴─────────────┘
+```
+
+### Partition Tuning Worked Example
+
+```typescript
+function optimalPartitions(dataSizeGB: number, targetMBPerPartition = 128) {
+  const partitions = Math.ceil((dataSizeGB * 1024) / targetMBPerPartition);
+  const schedulingOverhead = partitions * 0.005; // 5ms scheduling per partition
+  const ioTimePerPartition = targetMBPerPartition / 200; // 200 MB/s read
+  const totalTime = schedulingOverhead + partitions * ioTimePerPartition;
+  return { partitions, estimatedTimeMinutes: (totalTime / 60).toFixed(2) };
+}
+
+console.log(optimalPartitions(200));   // ~1600 partitions, ~10.67 min
+console.log(optimalPartitions(50));    // ~400 partitions, ~2.67 min
+console.log(optimalPartitions(1024));  // ~8192 partitions, ~54.62 min
+```
+
+> **Key Insight:** Too few partitions wastes cluster parallelism; too many adds scheduling overhead. The 100-200 MB/partition rule balances both.
+
 ## Summary
 
 - RDDs are the low-level building block; DataFrames provide a higher-level, optimized API.
@@ -534,3 +893,8 @@ df.write.mode("overwrite").parquet("s3a://my-bucket/output/")
 3. Use `df.explain("extended")` to trace Catalyst optimizations for a query with filter, join, and aggregation.
 4. Write a PySpark job that reads 100 GB of Parquet from S3, filters to the last 7 days, and writes the result partitioned by date.
 5. Configure a Spark cluster on Kubernetes and run a word count job. Tune executor memory, cores, and parallelism for optimal throughput.
+6. Extend the TypeScript `RDD` class with a `distinct()` transformation that removes duplicates across partitions, then test it on `[1,1,2,3,3,4,5,5]`.
+7. Use the `DataFrame` simulator to join two tables (orders and customers) on `customerId`, filter orders above $100, and display the result.
+8. Implement a `coalesce` method in the TypeScript `RDD` class that merges partitions without a full shuffle (just concatenates adjacent partitions).
+9. Write a function that calculates the ideal number of shuffle partitions for a 500 GB dataset with 200 executors (4 cores each), targeting 128 MB/partition.
+10. Using the `SparkSession` builder, configure a cluster with 100 executors (8 GB, 4 cores each) and compute total cluster memory and cores.

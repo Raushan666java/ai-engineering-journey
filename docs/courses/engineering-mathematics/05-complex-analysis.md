@@ -371,7 +371,153 @@ b) For $|z| > 1$: $|1/z| < 1$, so $\frac{1}{z-1} = \frac{1}{z} \cdot \frac{1}{1-
 
 $$f(z) = -\frac{1}{z} + \sum_{n=1}^\infty z^{-n} = \sum_{n=2}^\infty z^{-n}$$
 
-## Summary
+### Example 7: Using the Residue Theorem for a Real Rational Integral
+
+Evaluate $\int_{-\infty}^\infty \frac{x^2}{(x^2+1)(x^2+4)}\,dx$.
+
+**Solution:**
+Consider $\oint_C \frac{z^2}{(z^2+1)(z^2+4)}\,dz$ over the semicircular contour in the upper half-plane.
+
+Poles in upper half-plane: $z = i$ (simple) and $z = 2i$ (simple).
+
+Residue at $z = i$:
+$$\text{Res}(f, i) = \lim_{z \to i} (z-i) \cdot \frac{z^2}{(z-i)(z+i)(z^2+4)} = \frac{i^2}{(i+i)(i^2+4)} = \frac{-1}{(2i)(3)} = \frac{-1}{6i} = \frac{i}{6}$$
+
+Residue at $z = 2i$:
+$$\text{Res}(f, 2i) = \lim_{z \to 2i} (z-2i) \cdot \frac{z^2}{(z^2+1)(z-2i)(z+2i)} = \frac{(2i)^2}{((2i)^2+1)(2i+2i)} = \frac{-4}{(-4+1)(4i)} = \frac{-4}{(-3)(4i)} = \frac{1}{3i} = -\frac{i}{3}$$
+
+Sum of residues: $\frac{i}{6} + \left(-\frac{i}{3}\right) = -\frac{i}{6}$
+
+By the residue theorem: $\oint_C = 2\pi i \cdot \left(-\frac{i}{6}\right) = \frac{\pi}{3}$
+
+The semicircular arc integral vanishes as $R \to \infty$ (degree of denominator exceeds numerator by 2), so:
+
+$$\int_{-\infty}^\infty \frac{x^2}{(x^2+1)(x^2+4)}\,dx = \frac{\pi}{3}$$
+
+### Example 8: Conformal Mapping for Electrostatics
+
+Find the electrostatic potential between two semi-infinite parallel plates held at potentials $V = 0$ and $V = 1$, separated by distance $\pi$.
+
+**Solution:** Consider the conformal map $w = \log z = \ln r + i\theta$. This maps the upper half-plane to the infinite strip $0 < \text{Im}(w) < \pi$.
+
+The potential in the $w$-plane is $\phi(w) = \frac{1}{\pi}\text{Im}(w) = \frac{\theta}{\pi}$, which satisfies Laplace's equation $\nabla^2 \phi = 0$ and boundary conditions $\phi = 0$ on $\theta = 0$, $\phi = 1$ on $\theta = \pi$.
+
+In the original $z$-plane: $\phi(x,y) = \frac{1}{\pi}\arctan(y/x)$ for $x > 0$, with $\phi$ being the harmonic conjugate of the stream function $\psi = \frac{1}{\pi}\ln r = \frac{1}{2\pi}\ln(x^2 + y^2)$.
+
+The complex potential is $\Phi(z) = \phi + i\psi = \frac{1}{\pi}\text{Log}\,z$.
+
+## TypeScript Examples
+
+### Complex Number Operations
+
+```typescript
+type Complex = { re: number; im: number };
+
+function add(a: Complex, b: Complex): Complex {
+  return { re: a.re + b.re, im: a.im + b.im };
+}
+
+function multiply(a: Complex, b: Complex): Complex {
+  return {
+    re: a.re * b.re - a.im * b.im,
+    im: a.re * b.im + a.im * b.re,
+  };
+}
+
+function modulus(z: Complex): number {
+  return Math.sqrt(z.re * z.re + z.im * z.im);
+}
+
+function argument(z: Complex): number {
+  return Math.atan2(z.im, z.re);
+}
+
+function exp(z: Complex): Complex {
+  const r = Math.exp(z.re);
+  return { re: r * Math.cos(z.im), im: r * Math.sin(z.im) };
+}
+
+// Euler's formula: e^(iπ) = -1
+const euler = exp({ re: 0, im: Math.PI });
+console.log(`e^(iπ) = ${euler.re.toFixed(6)} + ${euler.im.toFixed(6)}i`);
+// ≈ -1 + 0i
+
+// Roots of unity: z^4 = 1
+function rootsOfUnity(n: number): Complex[] {
+  const roots: Complex[] = [];
+  for (let k = 0; k < n; k++) {
+    const angle = (2 * Math.PI * k) / n;
+    roots.push({ re: Math.cos(angle), im: Math.sin(angle) });
+  }
+  return roots;
+}
+
+const z4roots = rootsOfUnity(4);
+z4roots.forEach((z, i) =>
+  console.log(`ω${i} = ${z.re.toFixed(4)} + ${z.im.toFixed(4)}i`)
+);
+// ω0 = 1 + 0i, ω1 = 0 + 1i, ω2 = -1 + 0i, ω3 = 0 - 1i
+```
+
+### Numerical Contour Integration
+
+```typescript
+type ComplexFn = (z: Complex) => Complex;
+
+function contourIntegral(
+  f: ComplexFn,
+  contour: (t: number) => Complex,
+  tStart: number,
+  tEnd: number,
+  steps: number = 10000
+): Complex {
+  const dt = (tEnd - tStart) / steps;
+  let sumRe = 0, sumIm = 0;
+  for (let i = 0; i < steps; i++) {
+    const t = tStart + i * dt;
+    const z = contour(t);
+    const dz = contour(t + dt);
+    const fz = f(z);
+    // dz = contour(t+dt) - contour(t)
+    const dr = dz.re - z.re;
+    const di = dz.im - z.im;
+    // f(z) * dz
+    sumRe += fz.re * dr - fz.im * di;
+    sumIm += fz.re * di + fz.im * dr;
+  }
+  return { re: sumRe, im: sumIm };
+}
+
+// Integrate f(z) = 1/z around unit circle → should be 2πi
+const unitCircle = (t: number): Complex => ({
+  re: Math.cos(t), im: Math.sin(t)
+});
+const fInverse = (z: Complex): Complex => {
+  const r2 = z.re * z.re + z.im * z.im;
+  return { re: z.re / r2, im: -z.im / r2 };
+};
+
+const resultCI = contourIntegral(fInverse, unitCircle, 0, 2 * Math.PI);
+console.log(`∮ 1/z dz = ${resultCI.re.toFixed(4)} + ${resultCI.im.toFixed(4)}i`);
+// Expected: ≈ 0 + 6.2832i (= 2πi)
+```
+
+## Real-World Application: Signal Processing with Analytic Signals
+
+In signal processing, a real-valued signal $x(t)$ can be converted to an **analytic signal** (a complex-valued function with no negative frequencies) using the Hilbert transform:
+
+$$x_a(t) = x(t) + i \hat{x}(t)$$
+
+where $\hat{x}(t)$ is the Hilbert transform. The analytic signal enables:
+- **Instantaneous amplitude:** $A(t) = |x_a(t)|$
+- **Instantaneous phase:** $\phi(t) = \arg(x_a(t))$
+- **Instantaneous frequency:** $\omega(t) = \phi'(t)$
+
+**Connection to Complex Analysis:** The analytic signal $x_a(t)$ is the boundary value of an analytic function in the upper half-plane. This is a direct application of Cauchy's integral formula — the real and imaginary parts are harmonic conjugates.
+
+**FFT-Based Computation:** The Hilbert transform is efficiently computed by taking the FFT, zeroing negative frequencies, doubling positive frequencies (except DC and Nyquist), and inverse transforming. This produces a complex signal where real and imaginary parts satisfy the Cauchy-Riemann equations.
+
+**AM Demodulation:** For an AM signal $x(t) = A(t)\cos(\omega_c t)$, the analytic signal is $x_a(t) = A(t)e^{i\omega_c t}$, and the envelope $A(t) = |x_a(t)|$ is recovered by taking the modulus — a direct result of the polar representation of complex numbers.
 
 - Complex numbers extend reals with $i^2 = -1$; polar and exponential forms simplify multiplication/division
 - Analytic functions satisfy Cauchy-Riemann equations and are infinitely differentiable
@@ -405,6 +551,14 @@ $$f(z) = -\frac{1}{z} + \sum_{n=1}^\infty z^{-n} = \sum_{n=2}^\infty z^{-n}$$
 4. **Conformal Mapping:** Show that $w = z^2$ maps the first quadrant to the upper half-plane
 
 5. **Control Stability:** For transfer function $H(s) = \frac{1}{s^2 + 2s + 5}$, find poles and determine stability
+
+### Additional Exercises
+
+6. **Cauchy-Riemann Check:** Determine whether $f(z) = \overline{z}$ (complex conjugate) is analytic. Verify using the Cauchy-Riemann equations.
+
+7. **Residue Computation:** Find the residue of $f(z) = \frac{e^z}{(z-1)^3}$ at $z = 1$.
+
+8. **Möbius Transformation:** Find a Möbius transformation mapping the unit disk $|z| < 1$ to the upper half-plane $\text{Im}(w) > 0$. Show that it maps the boundary $|z| = 1$ to $\text{Im}(w) = 0$.
 
 ### Challenge Problem
 

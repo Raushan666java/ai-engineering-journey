@@ -301,6 +301,189 @@ Place each language in the Chomsky hierarchy:
 
 4. **P vs NP affects real systems.** NP-complete problems (SAT, TSP, knapsack) appear constantly in scheduling, optimization, and verification. Understanding their nature helps choose between exact algorithms, heuristics, and approximation schemes.
 
+## Cantor's Diagonalization: Uncountability of Languages
+
+A foundational result that drives undecidability is that the set of all languages over an alphabet is uncountable, while the set of all Turing machines is countable.
+
+```typescript
+// Demonstrating countable vs uncountable infinities
+function cantorDiagonalization(): void {
+  // Enumerate all possible binary strings (countable)
+  function* enumerateBinaryStrings(): Generator<string> {
+    yield "ε";
+    for (let len = 1; len < 10; len++) {
+      for (let i = 0; i < (1 << len); i++) {
+        let s = "";
+        for (let j = len - 1; j >= 0; j--) {
+          s += (i & (1 << j)) ? "1" : "0";
+        }
+        yield s;
+      }
+    }
+  }
+
+  // Suppose we had a list of all languages (each language is a boolean
+  // function over strings). We construct a new language not in the list.
+  const languages: Array<(s: string) => boolean> = [
+    (s: string) => s.length % 2 === 0,
+    (s: string) => s.startsWith("0"),
+    (s: string) => s.includes("01"),
+    (s: string) => /^10*1$/.test(s),
+  ];
+
+  // Diagonalization: flip the diagonal
+  const diagonalLanguage = (w: string): boolean => {
+    const idx = [...enumerateBinaryStrings()].indexOf(w);
+    if (idx >= 0 && idx < languages.length) {
+      return !languages[idx](w);
+    }
+    return false;
+  };
+
+  // diagonalLanguage differs from every language in the list
+  // at the corresponding diagonal position — exactly Cantor's proof.
+  console.log("Diagonal language constructed — not in the original list.");
+}
+```
+
+This same diagonalization technique is used to prove the halting problem undecidable (Chapter 11).
+
+## The Importance of Formal Languages
+
+Formal language theory is not merely an abstract mathematical exercise — it has profound practical implications for computing:
+
+1. **Specification:** Formal languages give us precise, unambiguous ways to specify syntax (e.g., programming language grammars, protocol messages).
+
+2. **Recognition:** Automata give us efficient algorithms to determine whether a string belongs to a language (e.g., parsing source code, validating input).
+
+3. **Limits:** Understanding what cannot be computed or recognized saves enormous wasted effort. The undecidability of the halting problem, for instance, means we know that fully automated program verification is impossible.
+
+4. **Complexity classification:** Knowing whether a problem is in P, NP-complete, or PSPACE-complete guides algorithm design and tells us whether to seek exact solutions or heuristics.
+
+### TypeScript: Simulating a General Language Recognizer
+
+```typescript
+type LanguageClassifier = {
+  name: string;
+  chomskyType: 0 | 1 | 2 | 3;
+  automatonType: string;
+  recognize: (w: string) => boolean | null;
+};
+
+function classifyLanguage(
+  input: string,
+  alphabets: Set<string>
+): LanguageClassifier | null {
+  const classifiers: LanguageClassifier[] = [
+    {
+      name: "All strings with even length",
+      chomskyType: 3,
+      automatonType: "DFA",
+      recognize: (w) => w.length % 2 === 0,
+    },
+    {
+      name: "Balanced parentheses (limited depth)",
+      chomskyType: 2,
+      automatonType: "PDA",
+      recognize: (w) => {
+        let depth = 0;
+        for (const c of w) {
+          if (c === "(") depth++;
+          else if (c === ")") depth--;
+          if (depth < 0) return false;
+        }
+        return depth === 0;
+      },
+    },
+    {
+      name: "Equal number of a's, b's, and c's",
+      chomskyType: 1,
+      automatonType: "LBA",
+      recognize: (w) => {
+        const counts = { a: 0, b: 0, c: 0 };
+        for (const c of w) {
+          if (!alphabets.has(c)) return false;
+          if (c in counts) counts[c as keyof typeof counts]++;
+        }
+        return counts.a === counts.b && counts.b === counts.c;
+      },
+    },
+  ];
+
+  for (const cl of classifiers) {
+    if (cl.recognize(input)) return cl;
+  }
+  return null;
+}
+
+console.log(classifyLanguage("aabbcc", new Set(["a", "b", "c"])));
+// LBA — equal counts of all three
+```
+
+## Historical Context and Key Figures
+
+The Theory of Computation emerged from a remarkable confluence of intellectual breakthroughs in the 1930s:
+
+### Kurt Gödel (1931)
+Gödel's **Incompleteness Theorems** showed that any sufficiently powerful formal system contains statements that can neither be proved nor disproved within the system. This shattered Hilbert's dream of a complete, consistent axiomatization of all mathematics and laid the groundwork for undecidability.
+
+### Alonzo Church (1936)
+Church introduced the **lambda calculus** as a formal model of computation and proved that there is no algorithmic procedure to determine whether two lambda expressions are equivalent (the Church-Turing theorem). He also formulated the **Church-Turing thesis**: any function computable by an effective procedure is computable by a Turing machine.
+
+### Alan Turing (1936–1937)
+Turing's seminal paper "On Computable Numbers, with an Application to the Entscheidungsproblem" introduced the **Turing machine** as a model of computation. He proved the **undecidability of the halting problem** using a diagonalization argument. Turing also introduced the concept of a **universal Turing machine** — a single machine that can simulate any other Turing machine, which is the theoretical foundation of the stored-program computer.
+
+### Stephen Kleene (1943–1956)
+Kleene developed **recursive function theory**, formalized **regular expressions** as a notation for regular languages, and proved Kleene's theorem establishing the equivalence of regular expressions and finite automata.
+
+### Noam Chomsky (1956)
+Chomsky introduced the **Chomsky hierarchy** in his work on formal grammars, connecting linguistics to automata theory. His classification system remains the foundational taxonomy of formal language theory.
+
+### The Modern Era
+- **1960s–70s:** Cook, Karp, and Levin develop NP-completeness theory.
+- **1970s–80s:** Hartmanis, Stearns, and others develop computational complexity theory.
+- **1990s–2000s:** Interactive proofs (Goldwasser, Micali, Rackoff), PCP theorem, quantum computation.
+- **2010s–present:** Deep learning, LLMs, and the renewed philosophical debate about what constitutes "understanding" in computation — echoing Turing's original questions.
+
+### Mermaid: Timeline of Key Contributions
+
+```mermaid
+timeline
+    title Milestones in the Theory of Computation
+    1931 : Gödel's Incompleteness Theorems
+    1936 : Church's lambda calculus
+         : Turing's machine & undecidability
+    1937 : Turing's "On Computable Numbers"
+    1943 : Kleene's recursive functions
+    1956 : Chomsky hierarchy
+    1959 : Rabin & Scott: finite automata
+    1965 : Hartmanis & Stearns: complexity
+    1971 : Cook-Levin: NP-completeness
+    1985 : Goldwasser et al.: interactive proofs
+    1994 : Shor's quantum factoring algorithm
+    2000s : PCP theorem, derandomization
+    2020s : AI & the nature of computation
+```
+
+### Philosophical Implications
+
+The theory of computation forces us to confront deep questions:
+
+- **What is computation?** Is it a physical process, a mathematical abstraction, or both?
+- **What is knowledge?** The existence of undecidable problems means there are well-posed yes/no questions that no computer can answer.
+- **Is the human mind a computer?** This question, at the heart of the philosophy of AI, remains unresolved. Gödel's theorems have been used (controversially) to argue that human mathematical intuition transcends formal computation.
+
+```typescript
+// The Entscheidungsproblem in TypeScript form
+// Can we write a program that decides whether
+// an arbitrary program halts on an arbitrary input?
+function haltingDetector(program: string, input: string): boolean {
+  // Hypothetical — this cannot exist
+  throw new Error("This function is provably unimplementable");
+  // See Chapter 11 for the proof
+}
+```
+
 ## Summary
 
 The Theory of Computation provides the mathematical foundations for understanding what computers can and cannot do. Key concepts include:
@@ -387,6 +570,18 @@ The Theory of Computation provides the mathematical foundations for understandin
 15. Write a TypeScript function that takes a string w and a fixed alphabet Σ and determines whether w is a string over Σ. For Σ = {0, 1}, classify "012", "", "101", and "2".
 
 16. Research the concept of universality in computation. Explain how the universal Turing machine relates to the concept of a general-purpose computer and why this insight is considered one of Turing's greatest contributions.
+
+## Practical Takeaways
+
+1. **Always name your alphabet.** In formal language theory, every problem begins with a clear definition of allowable symbols. The same principle applies in engineering: specify the input domain before designing a solution.
+
+2. **Know where your problem lives in the hierarchy.** Before attempting to solve a problem, determine its position in the Chomsky hierarchy. If your problem requires a context-sensitive language but you're building a regular expression parser, you will fail. This classification saves enormous design effort.
+
+3. **The three pillars structure your education.** Automata theory teaches you to think like a state machine (useful for system design). Computability tells you what problems to avoid wasting time on. Complexity guides algorithm selection.
+
+4. **Decision problems are everywhere.** Every validation check ("is this email address valid?", "does this program halt on input X?") is a decision problem in disguise. Viewing them through this lens clarifies what you can and cannot automate.
+
+5. **Countability arguments are your intuition.** When evaluating whether a problem might be solvable, ask: "Is the search space countable?" If the answer produces a diagonalization argument reminiscent of Cantor, you are likely facing an undecidable problem.
 
 ## Further Reading
 

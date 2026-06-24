@@ -368,6 +368,196 @@ console.log(verifyLinearGrowth(n => 100 * n + 5, 1000)); // true
 
 ## Exercises
 
+### 8.6 Function Properties in Practice
+
+A function $f: A \to B$ associates each element of $A$ (domain) with exactly one element of $B$ (codomain). The **range** (or image) is $\{f(a) : a \in A\} \subseteq B$.
+
+**Definition 8.10 (Injection/Surjection/Bijection).**
+- **Injective (one-to-one):** $f(a_1) = f(a_2) \implies a_1 = a_2$. No two domain elements map to the same codomain element.
+- **Surjective (onto):** For every $b \in B$, there exists $a \in A$ such that $f(a) = b$. Every codomain element is hit.
+- **Bijective:** Both injective and surjective — a perfect one-to-one correspondence.
+
+```typescript
+function isInjective<T, U>(f: (x: T) => U, domain: T[]): boolean {
+  const seen = new Set<U>();
+  for (const x of domain) {
+    const y = f(x);
+    if (seen.has(y)) return false;
+    seen.add(y);
+  }
+  return true;
+}
+
+function isSurjective<T, U>(f: (x: T) => U, domain: T[], codomain: U[]): boolean {
+  const image = new Set(domain.map(f));
+  return codomain.every(y => image.has(y));
+}
+
+function isBijective<T, U>(f: (x: T) => U, domain: T[], codomain: U[]): boolean {
+  return isInjective(f, domain) && isSurjective(f, domain, codomain);
+}
+
+console.log(isInjective((x: number) => 2 * x, [1, 2, 3]));    // true
+console.log(isSurjective((x: number) => 2 * x, [1, 2, 3], [2, 4, 6])); // true
+console.log(isBijective((x: number) => x + 1, [1, 2], [2, 3])); // true
+```
+
+### 8.7 Function Composition and Inverse Functions
+
+**Definition 8.11 (Composition).** $(g \circ f)(x) = g(f(x))$. Composition is associative: $h \circ (g \circ f) = (h \circ g) \circ f$.
+
+**Definition 8.12 (Inverse).** If $f: A \to B$ is bijective, there exists $f^{-1}: B \to A$ such that $f^{-1} \circ f = \text{id}_A$ and $f \circ f^{-1} = \text{id}_B$.
+
+```typescript
+function compose<T, U, V>(f: (x: T) => U, g: (y: U) => V): (x: T) => V {
+  return (x: T) => g(f(x));
+}
+
+function inverse<T extends string | number>(
+  f: (x: T) => T,
+  domain: T[]
+): ((y: T) => T) | null {
+  const pairs = new Map(domain.map(x => [f(x), x] as [T, T]));
+  if (pairs.size !== domain.length) return null; // not bijective
+  return (y: T) => {
+    const x = pairs.get(y);
+    if (x === undefined) throw new Error("Not in range");
+    return x;
+  };
+}
+
+const double = (x: number) => 2 * x;
+const add1 = (x: number) => x + 1;
+const h = compose(double, add1);
+console.log(h(5)); // (5*2)+1 = 11
+```
+
+### 8.8 Growth of Functions — Extended Analysis
+
+**Definition 8.13 (Little-o and Little-$\omega$).**
+- $f(n) = o(g(n))$: For every $c > 0$, there exists $n_0$ such that $0 \leq f(n) \leq c\,g(n)$ for all $n \geq n_0$. Strictly slower growth.
+- $f(n) = \omega(g(n))$: For every $c > 0$, there exists $n_0$ such that $0 \leq c\,g(n) \leq f(n)$ for all $n \geq n_0$. Strictly faster growth.
+
+```typescript
+function growthClass(n: number, f: (n: number) => number): string {
+  const logN = Math.log2(n);
+  const nLogN = n * logN;
+  const nSq = n * n;
+  const nCb = n * n * n;
+  const twoN = Math.pow(2, n);
+  const fn = f(n);
+
+  if (fn <= n) return "O(n) or less";
+  if (fn <= nLogN) return "Θ(n log n)";
+  if (fn <= nSq) return "Θ(n²)";
+  if (fn <= nCb) return "Θ(n³)";
+  if (fn <= twoN) return "O(2^n)";
+  return "super-exponential";
+}
+
+console.log(growthClass(10, n => n * n + 5 * n));     // Θ(n²)
+console.log(growthClass(10, n => Math.pow(2, n)));     // O(2^n)
+```
+
+**Theorem 8.3 (Hierarchy of Growth).**
+$$1 \ll \log n \ll \sqrt{n} \ll n \ll n\log n \ll n^2 \ll n^3 \ll 2^n \ll n! \ll n^n$$
+
+```mermaid
+flowchart LR
+    A["1<br/>Constant"] --> B["log n<br/>Logarithmic"]
+    B --> C["√n<br/>Sublinear"]
+    C --> D["n<br/>Linear"]
+    D --> E["n log n<br/>Linearithmic"]
+    E --> F["n²<br/>Quadratic"]
+    F --> G["n³<br/>Cubic"]
+    G --> H["2ⁿ<br/>Exponential"]
+    H --> I["n!<br/>Factorial"]
+```
+
+### 8.9 Special Functions and Their Properties
+
+**Definition 8.14 (Characteristic Function).** For a set $A \subseteq U$:
+$$\chi_A(x) = \begin{cases} 1 & \text{if } x \in A \\ 0 & \text{if } x \notin A \end{cases}$$
+
+**Definition 8.15 (Signum Function).**
+$$\text{sgn}(x) = \begin{cases} -1 & \text{if } x < 0 \\ 0 & \text{if } x = 0 \\ 1 & \text{if } x > 0 \end{cases}$$
+
+```typescript
+function sgn(x: number): -1 | 0 | 1 {
+  return x > 0 ? 1 : x < 0 ? -1 : 0;
+}
+
+function characteristic<T>(A: Set<T>): (x: T) => number {
+  return (x: T) => A.has(x) ? 1 : 0;
+}
+
+// Floor and ceiling properties
+function floorDivision(a: number, b: number): number {
+  return Math.floor(a / b);
+}
+
+// Identity: floor(x) + floor(-x) = 0 (if x is integer), -1 otherwise
+function checkFloorIdentity(x: number): boolean {
+  return Math.floor(x) + Math.floor(-x) === (Number.isInteger(x) ? 0 : -1);
+}
+```
+
+**Example 8.8** (Composition and cardinalities). For finite sets $A$ and $B$:
+- Number of functions $A \to B$: $|B|^{|A|}$
+- Number of injective functions: $P(|B|, |A|)$
+- Number of bijective functions: $|A|!$ (when $|A| = |B|$)
+- Number of surjective functions: $|B|! \cdot S(|A|, |B|)$ (Stirling numbers of second kind)
+
+**Example 8.9** (Stirling's approximation). $n! \sim \sqrt{2\pi n}\left(\frac{n}{e}\right)^n$
+
+```typescript
+function stirling(n: number): number {
+  return Math.sqrt(2 * Math.PI * n) * Math.pow(n / Math.E, n);
+}
+
+// Compare n! vs Stirling for n = 10
+console.log(stirling(10));  // ~3598695 (actual 3628800 — 0.8% error)
+```
+
+**Proof 8.4** ($\log(n!) = \Theta(n \log n)$ via integral bound).
+
+$$\int_1^n \log x \,dx \leq \sum_{k=1}^n \log k \leq \int_0^n \log(x+1)\,dx$$
+$$n\log n - n + 1 \leq \log(n!) \leq (n+1)\log(n+1) - n$$
+
+Thus $\log(n!) = \Theta(n \log n)$.
+
+**Example 8.10** (Partial functions). A function $f: A \rightharpoonup B$ is defined on a subset of $A$. In TypeScript: `(x: T) => U | undefined`.
+
+```typescript
+type PartialFunction<T, U> = (x: T) => U | undefined;
+
+function safeDivide(n: number, d: number): number | undefined {
+  return d === 0 ? undefined : n / d;
+}
+
+function composePartial<T, U, V>(
+  f: PartialFunction<T, U>,
+  g: PartialFunction<U, V>
+): PartialFunction<T, V> {
+  return (x: T) => {
+    const y = f(x);
+    return y !== undefined ? g(y) : undefined;
+  };
+}
+```
+
+## Additional Exercises
+
+16. Determine whether $f(x) = e^x$ as a function $\mathbb{R} \to \mathbb{R}$ is injective, surjective, or bijective.
+
+17. Prove that if $f$ and $g$ are surjective, then $g \circ f$ is surjective.
+
+18. Rank the following in order of growth: $n^3$, $2^n$, $n!$, $n \log n$, $n^{\sqrt{n}}$, $4^{\log n}$.
+
+19. Write a TypeScript function `checkFunction<T, U>` that verifies a mapping is a valid function (every domain element maps to exactly one codomain element).
+
+20. Show that the function $f(n) = \lfloor \sqrt{n} \rfloor$ is surjective when considered as a function $\mathbb{N} \to \mathbb{N}$.
+
 ### Review Questions
 
 1. Can a function from $\{1,2,3\}$ to $\{1,2\}$ be injective? Explain.

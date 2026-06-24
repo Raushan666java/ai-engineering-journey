@@ -470,6 +470,433 @@ for i, center in enumerate(centers):
 **B) MLlib doesn't natively support GPU acceleration for deep learning.** MLlib is optimized for distributed training on CPU clusters. For deep learning, use Pandas UDFs to bridge to PyTorch/TensorFlow or use Spark + Horovod.
 </details>
 
+## 4.9 Cross-Validation Workflow
+
+```mermaid
+flowchart TB
+    subgraph Data["Dataset"]
+        A[Full Data]
+    end
+    A --> B[Split into 3 Folds]
+    B --> C1[Fold 1 Test<br>Folds 2-3 Train]
+    B --> C2[Fold 2 Test<br>Folds 1,3 Train]
+    B --> C3[Fold 3 Test<br>Folds 1-2 Train]
+    subgraph ParamGrid["Hyperparameter Grid"]
+        D1[numTrees: 10, maxDepth: 5]
+        D2[numTrees: 50, maxDepth: 10]
+        D3[numTrees: 100, maxDepth: 15]
+    end
+    C1 --> E1[Train & Evaluate]
+    C2 --> E2[Train & Evaluate]
+    C3 --> E3[Train & Evaluate]
+    D1 --> E1 & E2 & E3
+    D2 --> E1 & E2 & E3
+    D3 --> E1 & E2 & E3
+    E1 & E2 & E3 --> F[Average Metric per Param Set]
+    F --> G[Select Best Params]
+    G --> H[Retrain on Full Data]
+```
+
+## 4.10 ML Pipeline Flow
+
+```mermaid
+flowchart LR
+    subgraph Raw["Raw Data"]
+        R[CSV / Parquet]
+    end
+    subgraph Pipeline["ML Pipeline"]
+        A[StringIndexer<br>color → 0,1,2] --> B[OneHotEncoder<br>0 → 100]
+        B --> C[VectorAssembler<br>features → vector]
+        C --> D[StandardScaler<br>mean=0, std=1]
+        D --> E[RandomForest<br>numTrees=100]
+    end
+    subgraph Eval["Evaluation"]
+        F[BinaryClassificationEvaluator<br>AUC]
+    end
+    Raw --> Pipeline
+    E --> F
+    F --> G{AUC ≥ 0.85?}
+    G -->|Yes| H[Save Model]
+    G -->|No| I[Tune Hyperparams]
+    I --> D
+```
+
+## 4.11 TypeScript ML Pipeline Simulator
+
+The following TypeScript classes simulate Spark MLlib's pipeline API — Transformers, Estimators, Pipelines, and CrossValidator — to demonstrate the concepts without a cluster.
+
+### Transformer & Pipeline Classes
+
+```typescript
+// Types
+type DataFrame = Record<string, unknown>[];
+
+interface Transformer {
+  transform(df: DataFrame): DataFrame;
+}
+
+interface Estimator {
+  fit(df: DataFrame): Transformer;
+}
+
+interface Evaluator {
+  evaluate(df: DataFrame, labelCol: string, predictionCol: string): number;
+}
+
+// Helper
+function col(df: DataFrame, name: string): unknown[] {
+  return df.map(r => r[name]);
+}
+
+// ─── Transformers ──────────────────────────────────────────
+
+class VectorAssembler implements Transformer {
+  constructor(private inputCols: string[], private outputCol: string) {}
+  transform(df: DataFrame): DataFrame {
+    return df.map(r => ({
+      ...r,
+      [this.outputCol]: this.inputCols.map(c => r[c] as number),
+    }));
+  }
+}
+
+class StringIndexer implements Transformer {
+  private mapping: Record<string, number> = {};
+  constructor(private inputCol: string, private outputCol: string) {}
+
+  fit(df: DataFrame): StringIndexer {
+    const unique = [...new Set(col(df, this.inputCol) as string[])];
+    this.mapping = Object.fromEntries(unique.map((v, i) => [v, i]));
+    return this;
+  }
+
+  transform(df: DataFrame): DataFrame {
+    return df.map(r => ({
+      ...r,
+      [this.outputCol]: this.mapping[r[this.inputCol] as string] ?? -1,
+    }));
+  }
+}
+
+class StandardScaler implements Transformer {
+  private mean = 0;
+  private std = 1;
+  constructor(private inputCol: string, private outputCol: string) {}
+
+  fit(df: DataFrame): StandardScaler {
+    const vals = col(df, this.inputCol) as number[];
+    this.mean = vals.reduce((s, v) => s + v, 0) / vals.length;
+    const variance = vals.reduce((s, v) => s + (v - this.mean) ** 2, 0) / vals.length;
+    this.std = Math.sqrt(variance);
+    return this;
+  }
+
+  transform(df: DataFrame): DataFrame {
+    return df.map(r => ({
+      ...r,
+      [this.outputCol]: this.std === 0 ? 0 : ((r[this.inputCol] as number) - this.mean) / this.std,
+    }));
+  }
+}
+
+// ─── Estimators ────────────────────────────────────────────
+
+class LinearRegression implements Estimator {
+  private weights: number[] = [];
+  private bias = 0;
+
+  constructor(private config: { featuresCol: string; labelCol: string; maxIter?: number }) {}
+
+  fit(df: DataFrame): Transformer {
+    const features = col(df, this.config.featuresCol) as number[][];
+    const labels = col(df, this.config.labelCol) as number[];
+    const n = features.length;
+    const dim = features[0]?.length ?? 0;
+
+    // Gradient descent (simplified)
+    this.weights = new Array(dim).fill(0);
+    const lr = 0.01;
+    const iterations = this.config.maxIter ?? 100;
+
+    for (let iter = 0; iter < iterations; iter++) {
+      const grads = new Array(dim).fill(0);
+      let biasGrad = 0;
+      for (let i = 0; i < n; i++) {
+        const pred = features[i].reduce((s, f, j) => s + f * this.weights[j], this.bias);
+        const error = pred - labels[i];
+        for (let j = 0; j < dim; j++) grads[j] += error * features[i][j];
+        biasGrad += error;
+      }
+      for (let j = 0; j < dim; j++) this.weights[j] -= (lr / n) * grads[j];
+      this.bias -= (lr / n) * biasGrad;
+    }
+
+    return {
+      transform: (newDF: DataFrame): DataFrame => {
+        return newDF.map(r => {
+          const vec = r[this.config.featuresCol] as number[];
+          const pred = vec.reduce((s, f, j) => s + f * this.weights[j], this.bias);
+          return { ...r, prediction: Math.round(pred * 100) / 100 };
+        });
+      },
+    };
+  }
+}
+
+class RandomForestClassifier implements Estimator {
+  constructor(private config: { featuresCol: string; labelCol: string; numTrees: number; maxDepth: number }) {}
+
+  fit(df: DataFrame): Transformer {
+    // Simplified: compute feature importance via correlation
+    const features = col(df, this.config.featuresCol) as number[][];
+    const labels = col(df, this.config.labelCol) as number[];
+    const dim = features[0]?.length ?? 0;
+    const n = df.length;
+
+    // Majority class predictor (simulated ensemble)
+    const majority = labels.filter(l => l === 1).length >= n / 2 ? 1 : 0;
+
+    // Feature importance (absolute correlation with label)
+    const importance: number[] = [];
+    for (let j = 0; j < dim; j++) {
+      const meanF = features.reduce((s, f) => s + f[j], 0) / n;
+      const meanL = labels.reduce((s, l) => s + l, 0) / n;
+      let num = 0, denomF = 0, denomL = 0;
+      for (let i = 0; i < n; i++) {
+        const df_ = features[i][j] - meanF;
+        const dl = labels[i] - meanL;
+        num += df_ * dl;
+        denomF += df_ * df_;
+        denomL += dl * dl;
+      }
+      importance.push(Math.abs(num) / Math.sqrt(denomF * denomL + 1e-9));
+    }
+
+    return {
+      transform: (newDF: DataFrame): DataFrame => {
+        return newDF.map(r => {
+          const vec = r[this.config.featuresCol] as number[];
+          const confidence = vec.reduce((s, f, j) => s + f * importance[j], 0);
+          return {
+            ...r,
+            prediction: confidence > 0 ? majority : 1 - majority,
+            probability: [1 - Math.abs(confidence), Math.abs(confidence)],
+            featureImportance: importance,
+          };
+        });
+      },
+    };
+  }
+}
+
+// ─── Pipeline ──────────────────────────────────────────────
+
+class Pipeline implements Estimator {
+  constructor(private stages: (Transformer | Estimator)[]) {}
+
+  fit(df: DataFrame): Transformer {
+    let current = df;
+    const fittedStages: Transformer[] = [];
+
+    for (const stage of this.stages) {
+      if (stage instanceof StringIndexer || stage instanceof StandardScaler) {
+        const fitted = stage.fit(current);
+        fittedStages.push(fitted);
+        current = fitted.transform(current);
+      } else if (stage instanceof VectorAssembler) {
+        fittedStages.push(stage);
+        current = stage.transform(current);
+      } else if (stage instanceof Estimator) {
+        const model = stage.fit(current);
+        fittedStages.push(model);
+        current = model.transform(current);
+      }
+    }
+
+    return {
+      transform: (newDF: DataFrame): DataFrame => {
+        return fittedStages.reduce((d, t) => t.transform(d), newDF);
+      },
+    };
+  }
+}
+
+// ─── Evaluators ────────────────────────────────────────────
+
+class RegressionEvaluator implements Evaluator {
+  evaluate(df: DataFrame, labelCol: string, predictionCol: string): number {
+    const labels = col(df, labelCol) as number[];
+    const preds = col(df, predictionCol) as number[];
+    const mse = labels.reduce((s, l, i) => s + (l - preds[i]) ** 2, 0) / labels.length;
+    return Math.sqrt(mse);
+  }
+}
+
+class BinaryClassificationEvaluator implements Evaluator {
+  evaluate(df: DataFrame, labelCol: string, predictionCol: string): number {
+    const labels = col(df, labelCol) as number[];
+    const preds = col(df, predictionCol) as number[];
+
+    // AUC: simplified rank-based computation
+    const pairs = labels.map((l, i) => ({ label: l, pred: preds[i] }));
+    pairs.sort((a, b) => b.pred - a.pred);
+    const pos = pairs.filter(p => p.label === 1).length;
+    const neg = pairs.length - pos;
+    if (pos === 0 || neg === 0) return 0.5;
+
+    let sumRank = 0;
+    let rank = 1;
+    for (const p of pairs) {
+      if (p.label === 1) sumRank += rank;
+      rank++;
+    }
+    return (sumRank - pos * (pos + 1) / 2) / (pos * neg);
+  }
+}
+
+// ─── Cross-Validator ───────────────────────────────────────
+
+class CrossValidator {
+  constructor(private config: {
+    estimator: Estimator;
+    paramGrid: Record<string, unknown[]>[];
+    evaluator: Evaluator;
+    numFolds: number;
+  }) {}
+
+  fit(df: DataFrame): { bestModel: Transformer; bestParams: Record<string, unknown>; metrics: number[] } {
+    const foldSize = Math.floor(df.length / this.config.numFolds);
+    let bestScore = -Infinity;
+    let bestModel: Transformer | null = null;
+    let bestParams: Record<string, unknown> = {};
+    const allMetrics: number[] = [];
+
+    for (const params of this.config.paramGrid) {
+      const foldScores: number[] = [];
+      for (let fold = 0; fold < this.config.numFolds; fold++) {
+        const testStart = fold * foldSize;
+        const testEnd = (fold + 1) * foldSize;
+        const train = df.filter((_, i) => i < testStart || i >= testEnd);
+        const test = df.filter((_, i) => i >= testStart && i < testEnd);
+
+        const model = this.config.estimator.fit(train);
+        const predictions = model.transform(test);
+        const score = this.config.evaluator.evaluate(predictions, "label", "prediction");
+        foldScores.push(score);
+      }
+      const avgScore = foldScores.reduce((s, x) => s + x, 0) / foldScores.length;
+      allMetrics.push(avgScore);
+      if (avgScore > bestScore) {
+        bestScore = avgScore;
+        bestModel = this.config.estimator.fit(df); // retrain on full data
+        bestParams = params;
+      }
+    }
+    return { bestModel: bestModel!, bestParams, metrics: allMetrics };
+  }
+}
+
+// ─── Demo: Full ML Pipeline ────────────────────────────────
+
+// Generate synthetic dataset
+const data: DataFrame = Array.from({ length: 1000 }, (_, id) => ({
+  id,
+  feature1: Math.random(),
+  feature2: Math.random(),
+  feature3: Math.random(),
+  label: Math.random() > 0.5 ? 1 : 0,
+}));
+
+const pipeline = new Pipeline([
+  new VectorAssembler(["feature1", "feature2", "feature3"], "features"),
+  new RandomForestClassifier({
+    featuresCol: "features",
+    labelCol: "label",
+    numTrees: 50,
+    maxDepth: 10,
+  }),
+]);
+
+const model = pipeline.fit(data);
+const predictions = model.transform(data);
+console.log("Predictions sample:", predictions.slice(0, 3));
+
+const evaluator = new BinaryClassificationEvaluator();
+const auc = evaluator.evaluate(predictions, "label", "prediction");
+console.log(`Test AUC: ${auc.toFixed(4)}`);
+
+// Cross-validation
+const cv = new CrossValidator({
+  estimator: pipeline,
+  paramGrid: [
+    { numTrees: [10], maxDepth: [5] },
+    { numTrees: [50], maxDepth: [10] },
+  ],
+  evaluator,
+  numFolds: 3,
+});
+const cvResult = cv.fit(data);
+console.log(`Best params: ${JSON.stringify(cvResult.bestParams)}, AUC: ${Math.max(...cvResult.metrics).toFixed(4)}`);
+```
+
+### Feature Engineering Worked Example
+
+```typescript
+interface FeaturePipeline {
+  transform(raw: DataFrame): DataFrame;
+}
+
+class FeaturePipelineBuilder {
+  private steps: Transformer[] = [];
+
+  addStringIndexer(input: string, output: string) {
+    const idx = new StringIndexer(input, output);
+    idx.fit([] as unknown as DataFrame); // learn mapping from sample
+    this.steps.push(idx);
+    return this;
+  }
+
+  addVectorAssembler(inputs: string[], output: string) {
+    this.steps.push(new VectorAssembler(inputs, output));
+    return this;
+  }
+
+  addStandardScaler(input: string, output: string) {
+    const scaler = new StandardScaler(input, output);
+    scaler.fit([] as unknown as DataFrame);
+    this.steps.push(scaler);
+    return this;
+  }
+
+  build(): FeaturePipeline {
+    return {
+      transform: (df: DataFrame) =>
+        this.steps.reduce((d, t) => t.transform(d), df),
+    };
+  }
+}
+
+// Demo: Feature pipeline for customer churn data
+const rawData: DataFrame = [
+  { id: 1, plan: "premium", usage: 450, tenure: 24, churned: 0 },
+  { id: 2, plan: "basic", usage: 80, tenure: 3, churned: 1 },
+  { id: 3, plan: "enterprise", usage: 1200, tenure: 60, churned: 0 },
+];
+
+const fp = new FeaturePipelineBuilder()
+  .addStringIndexer("plan", "planIndex")
+  .addVectorAssembler(["usage", "tenure", "planIndex"], "features")
+  .addStandardScaler("features", "scaledFeatures")
+  .build();
+
+const processed = fp.transform(rawData);
+console.log("Processed features:", processed.map(r => ({
+  id: r.id,
+  features: r.features,
+  scaled: r.scaledFeatures,
+})));
+```
+
 ## Summary
 
 - MLlib provides a DataFrame-based pipeline API for scalable ML.
@@ -486,3 +913,8 @@ for i, center in enumerate(centers):
 3. Train a K-Means model on a 1 billion row dataset with k=100. Measure the iteration time and silhouette score.
 4. Export a trained LogisticRegression model to JSON coefficients and build a FastAPI inference endpoint.
 5. Use Pandas UDFs to train a PyTorch model on each partition of a grouped DataFrame.
+6. Extend the TypeScript `VectorAssembler` to support a `handleInvalid` option that can skip, error, or keep invalid rows.
+7. Implement a `OneHotEncoder` Transformer in TypeScript that converts indexed categories into binary vectors, then test it on `["red","blue","green","red"]`.
+8. Use the `Pipeline` class to build a multi-stage pipeline: StringIndexer → OneHotEncoder → VectorAssembler → StandardScaler, and verify the output schema.
+9. Write a function that computes the total training cost (in estimated dollar terms) for a CrossValidator run with 5 param combinations, 3 folds, on a 50-executor cluster where each model takes 2 minutes to train.
+10. Implement a `TrainValidationSplit` class (single train/test split instead of k-fold) and compare its results with `CrossValidator` on the same dataset.

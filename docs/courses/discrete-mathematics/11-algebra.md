@@ -368,6 +368,220 @@ Finite fields are widely used in cryptography (AES uses $\text{GF}(2^8)$), codin
 
 ## Exercises
 
+### 11.6 Group Actions and Applications
+
+A **group action** is a formal way for a group to act on a set. A group $G$ acts on a set $X$ if there is a map $\cdot : G \times X \to X$ satisfying:
+1. $e \cdot x = x$ for all $x \in X$ (identity).
+2. $(g_1 g_2) \cdot x = g_1 \cdot (g_2 \cdot x)$ for all $g_1, g_2 \in G$, $x \in X$ (compatibility).
+
+```typescript
+type GroupAction<T> = (g: (x: T) => T, x: T) => T;
+
+function checkGroupAction<T>(
+  elements: T[],
+  identity: (x: T) => T,
+  compose: (f: (x: T) => T, g: (x: T) => T) => (x: T) => T,
+  action: GroupAction<T>,
+  xs: T[]
+): boolean {
+  for (const x of xs) {
+    if (action(identity, x) !== x) return false;
+  }
+  return true;
+}
+```
+
+**The Orbit-Stabilizer Theorem.** For a group $G$ acting on $X$:
+$$|\text{Orb}(x)| \cdot |\text{Stab}(x)| = |G|$$
+
+where $\text{Orb}(x) = \{g \cdot x : g \in G\}$ and $\text{Stab}(x) = \{g \in G : g \cdot x = x\}$.
+
+### 11.7 Rings and Fields in Depth
+
+**Definition 11.11 (Ring).** A set $R$ with two binary operations $+$ and $\cdot$ such that:
+- $(R, +)$ is an abelian group.
+- $(R, \cdot)$ is a semigroup.
+- Multiplication distributes over addition: $a(b+c) = ab + ac$ and $(b+c)a = ba + ca$.
+
+**Definition 11.12 (Integral Domain).** A commutative ring with $1 \neq 0$ and no zero divisors ($ab = 0 \implies a = 0$ or $b = 0$).
+
+**Definition 11.13 (Field).** A commutative ring where every nonzero element has a multiplicative inverse.
+
+```typescript
+interface Ring<T> {
+  add: (a: T, b: T) => T;
+  mul: (a: T, b: T) => T;
+  zero: T;
+  one: T;
+  neg: (a: T) => T;
+  equals: (a: T, b: T) => boolean;
+}
+
+function isIntegralDomain<T>(R: Ring<T>, elements: T[]): boolean {
+  for (const a of elements) {
+    for (const b of elements) {
+      if (R.equals(R.mul(a, b), R.zero)) {
+        if (!R.equals(a, R.zero) && !R.equals(b, R.zero)) return false;
+      }
+    }
+  }
+  return true;
+}
+
+function isField<T>(R: Ring<T>, elements: T[]): boolean {
+  if (!isIntegralDomain(R, elements)) return false;
+  for (const a of elements) {
+    if (R.equals(a, R.zero)) continue;
+    let hasInverse = false;
+    for (const b of elements) {
+      if (R.equals(R.mul(a, b), R.one)) { hasInverse = true; break; }
+    }
+    if (!hasInverse) return false;
+  }
+  return true;
+}
+```
+
+**Example 11.7** (Ring classification).
+- $\mathbb{Z}$ is an integral domain but not a field.
+- $\mathbb{Z}_p$ ($p$ prime) is a field.
+- $\mathbb{Z}_6$ is not an integral domain: $2 \cdot 3 = 0$ with $2, 3 \neq 0$.
+- $\mathbb{R}[x]$ (polynomials over reals) is an integral domain but not a field.
+- $M_2(\mathbb{R})$ (2x2 matrices) is a non-commutative ring with zero divisors.
+
+### 11.8 Group Homomorphisms and Isomorphism Theorems
+
+**Theorem 11.4 (First Isomorphism Theorem).** If $\phi: G \to H$ is a homomorphism, then $G / \ker(\phi) \cong \text{Im}(\phi)$.
+
+```typescript
+function isHomomorphism<T, U>(
+  G: T[],
+  opG: (a: T, b: T) => T,
+  H: U[],
+  opH: (a: U, b: U) => U,
+  phi: (x: T) => U
+): boolean {
+  for (const a of G) {
+    for (const b of G) {
+      const lhs = phi(opG(a, b));
+      const rhs = opH(phi(a), phi(b));
+      if (lhs !== rhs) return false;
+    }
+  }
+  return true;
+}
+
+// Example: determinant is a homomorphism from GL_n(R) to (R\{0}, *)
+// det(AB) = det(A) * det(B)
+```
+
+### 11.9 Algebraic Structures in Cryptography
+
+**Diffie-Hellman key exchange** relies on the cyclic group $\mathbb{Z}_p^\times$:
+- Public: prime $p$, generator $g$.
+- Alice: picks $a$, sends $g^a \bmod p$.
+- Bob: picks $b$, sends $g^b \bmod p$.
+- Shared secret: $g^{ab} \bmod p$.
+
+```typescript
+function diffieHellman(p: number, g: number, a: number, b: number) {
+  const A = Math.pow(g, a) % p;
+  const B = Math.pow(g, b) % p;
+  const secretA = Math.pow(B, a) % p;
+  const secretB = Math.pow(A, b) % p;
+  return { A, B, secretA, secretB, match: secretA === secretB };
+}
+console.log(diffieHellman(23, 5, 6, 15)); // shared secret = 2
+```
+
+**RSA encryption** uses the ring $\mathbb{Z}_n$ where $n = pq$:
+- Public key: $(n, e)$, private key: $d$.
+- Encrypt: $c = m^e \bmod n$.
+- Decrypt: $m = c^d \bmod n$.
+
+```typescript
+function rsaEncrypt(m: number, e: number, n: number): number {
+  return Math.pow(m, e) % n;
+}
+
+function rsaDecrypt(c: number, d: number, n: number): number {
+  return Math.pow(c, d) % n;
+}
+
+// p=11, q=13, n=143, phi=120, e=7, d=103
+// encrypt(42, 7, 143) = 81, decrypt(81, 103, 143) = 42
+```
+
+```mermaid
+flowchart LR
+    A[Group G] --> B[Abelian?]
+    B -->|Yes| C[Ring with +]
+    A --> D[Non-Abelian]
+    C --> E[Multiplicative<br/>Identity?]
+    E -->|Yes| F[Ring with 1]
+    E -->|No| G[Ring without 1]
+    F --> H[Zero<br/>Divisors?]
+    H -->|No| I[Integral Domain]
+    H -->|Yes| G
+    I --> J[Inverses?]
+    J -->|Yes| K[Field]
+    J -->|No| I
+```
+
+### 11.10 Cayley Tables and Subgroup Lattices
+
+```typescript
+function cayleyTable(elements: number[], op: (a: number, b: number) => number): number[][] {
+  const n = elements.length;
+  const table: number[][] = [];
+  for (let i = 0; i < n; i++) {
+    table[i] = [];
+    for (let j = 0; j < n; j++) {
+      table[i][j] = op(elements[i], elements[j]);
+    }
+  }
+  return table;
+}
+
+// Cayley table for Z_4 under addition mod 4
+const Z4 = [0, 1, 2, 3];
+const addMod4 = (a: number, b: number) => (a + b) % 4;
+console.table(cayleyTable(Z4, addMod4));
+// ┌───┬─────────────┐
+// │   │ 0 1 2 3     │
+// ├───┼─────────────┤
+// │ 0 │ 0 1 2 3     │
+// │ 1 │ 1 2 3 0     │
+// │ 2 │ 2 3 0 1     │
+// │ 3 │ 3 0 1 2     │
+// └───┴─────────────┘
+```
+
+**Example 11.8** (Permutation group $S_3$). $S_3$ has 6 elements: identity, three 2-cycles (transpositions), and two 3-cycles. Subgroups: $\{e\}$, 3 subgroups of order 2, one subgroup of order 3 ($A_3$).
+
+**Example 11.9** (Group of units $\mathbb{Z}_n^\times$). The elements coprime to $n$ form a multiplicative group.
+- $\mathbb{Z}_5^\times = \{1, 2, 3, 4\}$ of order 4.
+- $\mathbb{Z}_8^\times = \{1, 3, 5, 7\}$ — each element is its own inverse.
+- $\mathbb{Z}_9^\times = \{1, 2, 4, 5, 7, 8\}$ of order 6 (isomorphic to $\mathbb{Z}_6$).
+
+**Example 11.10** (Lagrange's theorem application). $S_4$ has order $4! = 24$. Any subgroup of $S_4$ must have order dividing 24. Possible orders: 1, 2, 3, 4, 6, 8, 12, 24. $A_4$ (alternating group) has order 12.
+
+**Proof 11.5** (Every subgroup of a cyclic group is cyclic).
+
+*Proof.* Let $G = \langle g \rangle$ be cyclic with $|G| = n$ (or infinite). Let $H \leq G$ be a subgroup. If $H = \{e\}$, it is trivial cyclic. Otherwise, let $k$ be the smallest positive integer such that $g^k \in H$. We claim $H = \langle g^k \rangle$. Take any $h = g^m \in H$. Write $m = qk + r$ with $0 \leq r < k$. Then $g^r = g^{m - qk} = h \cdot (g^k)^{-q} \in H$. Minimality of $k$ forces $r = 0$, so $m = qk$ and $h = (g^k)^q \in \langle g^k \rangle$. $\square$
+
+## Additional Exercises
+
+16. Let $G = \{1, -1, i, -i\}$ under multiplication. Show $G$ is a group. Is it cyclic?
+
+17. Prove: The intersection of two subgroups is a subgroup.
+
+18. Determine whether $\mathbb{Z}_{10}$ under addition and multiplication modulo 10 is a ring, integral domain, or field.
+
+19. Write a TypeScript function `isGroup<T>` that checks closure, associativity, identity, and inverses for a finite set under a binary operation.
+
+20. Prove that every cyclic group is abelian.
+
 ### Review Questions
 
 1. What is the difference between a semigroup and a monoid?

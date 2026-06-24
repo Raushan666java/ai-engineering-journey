@@ -98,6 +98,70 @@ graph TD
 
 The minimized DFA has the fewest possible states. Two states are **distinguishable** if there exists a string that leads from one to accept and the other to reject.
 
+### TypeScript: Table-Filling Minimization Algorithm
+
+```typescript
+function minimizeDFA(states: string[], accept: Set<string>,
+                     delta: Map<string, string>): Set<[string, string]> {
+  const n = states.length;
+  const distinguishable = new Array(n).fill(0)
+    .map(() => new Array(n).fill(false));
+
+  // Step 1: Mark all pairs where one is accepting and one is not
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      if (accept.has(states[i]) !== accept.has(states[j])) {
+        distinguishable[i][j] = true;
+      }
+    }
+  }
+
+  // Step 2: Propagate — if (δ(qᵢ,a), δ(qⱼ,a)) is marked, mark (qᵢ,qⱼ)
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (let i = 0; i < n; i++) {
+      for (let j = 0; j < n; j++) {
+        if (distinguishable[i][j]) continue;
+        for (const sym of ['0', '1']) {
+          const keyI = `${states[i]},${sym}`;
+          const keyJ = `${states[j]},${sym}`;
+          if (!delta.has(keyI) || !delta.has(keyJ)) continue;
+          const nextI = states.indexOf(delta.get(keyI)!);
+          const nextJ = states.indexOf(delta.get(keyJ)!);
+          if (distinguishable[nextI][nextJ]) {
+            distinguishable[i][j] = true;
+            changed = true;
+          }
+        }
+      }
+    }
+  }
+
+  // Return unmarked pairs (these are equivalent states to merge)
+  const equivalent: Set<[string, string]> = new Set();
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+      if (!distinguishable[i][j]) {
+        equivalent.add([states[i], states[j]]);
+      }
+    }
+  }
+  return equivalent;
+}
+
+// Test on DFA for strings ending with "0"
+const states = ['q0', 'q1'];
+const accept = new Set(['q1']);
+const delta = new Map<string, string>([
+  ['q0,0', 'q1'], ['q0,1', 'q0'],
+  ['q1,0', 'q1'], ['q1,1', 'q0'],
+]);
+const equiv = minimizeDFA(states, accept, delta);
+console.log('Equivalent state pairs:', [...equiv]);
+// None — this DFA is already minimal
+```
+
 
 ![DFA State Diagram - Binary Numbers Divisible by 3](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/theory-of-computation/01-dfa.png)
 
@@ -197,9 +261,78 @@ A DFA M = (Q, Î£, Î´, qâ‚€, F) on input w = wâ‚wâ‚‚â€¦wâ
 
 A language is **regular** if there exists some DFA that recognizes it. The class of regular languages has important closure properties (Chapter 4) and corresponds exactly to what can be expressed with regular expressions (Chapter 3).
 
-## Examples
+## DFA Product Construction: Union and Intersection
 
-### Example 1.1: DFA for Strings Starting with '0'
+Given two DFAs, we can construct a single DFA that recognizes the union or intersection of their languages using the **Cartesian product** of states.
+
+### Formal Definition
+
+Let \(M_1 = (Q_1, \Sigma, \delta_1, q_1, F_1)\) and \(M_2 = (Q_2, \Sigma, \delta_2, q_2, F_2)\) be two DFAs over the same alphabet. The **product DFA** \(M_\times\) is:
+
+- \(Q_\times = Q_1 \times Q_2 = \{(q_i, p_j) \mid q_i \in Q_1, p_j \in Q_2\}\)
+- \(\delta_\times((q,p), a) = (\delta_1(q,a), \delta_2(p,a))\)
+- Start state: \((q_1, q_2)\)
+- For **intersection:** \(F_\times = F_1 \times F_2\) (both must accept)
+- For **union:** \(F_\times = (F_1 \times Q_2) \cup (Q_1 \times F_2)\) (at least one accepts)
+
+### TypeScript: Product Construction
+
+```typescript
+class ProductDFA {
+  private delta: Map<string, string>;
+
+  constructor(m1: DFA, m2: DFA, mode: 'intersection' | 'union') {
+    this.delta = new Map();
+    const q1 = [...m1['Q']];
+    const q2 = [...m2['Q']];
+    const sigma = [...m1['sigma']];
+
+    for (const s1 of q1) {
+      for (const s2 of q2) {
+        for (const sym of sigma) {
+          const k1 = `${s1},${sym}`;
+          const k2 = `${s2},${sym}`;
+          if (!m1['delta'].has(k1) || !m2['delta'].has(k2)) continue;
+          const next1 = m1['delta'].get(k1)!;
+          const next2 = m2['delta'].get(k2)!;
+          const key = `${s1},${s2},${sym}`;
+          this.delta.set(key, `${next1},${next2}`);
+        }
+      }
+    }
+  }
+}
+
+// Example: DFA for even length (M1) × DFA for odd number of 1s (M2)
+// The product DFA recognizes strings with even length AND odd number of 1s
+```
+
+### Mermaid: Product Construction Visualization
+
+```mermaid
+graph TD
+    subgraph "M1: Even length"
+        q0_even((q₀))
+        q1_even(((q₁)))
+        q0_even -->|0,1| q1_even
+        q1_even -->|0,1| q0_even
+    end
+    subgraph "M2: Odd number of 1s"
+        p0_odd((p₀))
+        p1_odd(((p₁)))
+        p0_odd -->|1| p1_odd
+        p0_odd -->|0| p0_odd
+        p1_odd -->|1| p0_odd
+        p1_odd -->|0| p1_odd
+    end
+    subgraph "Product: (q0,p0) start"
+        q0p0((q₀,p₀))
+    end
+```
+
+The product construction proves that the class of regular languages is closed under boolean operations — a key property used throughout automata theory.
+
+## Examples
 
 Design a DFA over Î£ = {0, 1} that accepts strings that begin with 0.
 
@@ -373,6 +506,64 @@ Check: On input "110" (binary for 6): qâ‚€ â†’ qâ‚ (1) â†’ q
 
 4. **Complementation is free.** Given a DFA, swapping accepting and non-accepting states gives a DFA for the complement language — trivially proving closure under complement.
 
+## DFA Equivalence Testing
+
+Two DFAs \(M_1\) and \(M_2\) are **equivalent** if they recognize the same language, i.e., \(L(M_1) = L(M_2)\). We can test equivalence in polynomial time using the **table-filling algorithm** on the product automaton.
+
+### Algorithm
+
+1. Construct a DFA \(M_\times\) with start state \((q_1, q_2)\) and no accepting states.
+2. Run the table-filling algorithm on \(M_\times\).
+3. If \((q_1, q_2)\) is distinguishable, the DFAs are **not equivalent**.
+
+Intuitively, we are checking whether there exists any string that is accepted by one DFA but rejected by the other. If such a string exists, the pair \((q_1, q_2)\) will be marked distinguishable.
+
+```typescript
+function areEquivalent(m1: DFA, m2: DFA): boolean {
+  const states1 = [...m1['Q']];
+  const states2 = [...m2['Q']];
+  const sigma = [...m1['sigma']];
+  const produce: Array<[string, string]> = [[m1['q0'], m2['q0']]];
+  const visited = new Set<string>();
+
+  while (produce.length > 0) {
+    const [s1, s2] = produce.pop()!;
+    const key = `${s1},${s2}`;
+    if (visited.has(key)) continue;
+    visited.add(key);
+
+    const s1Accept = m1['F'].has(s1);
+    const s2Accept = m2['F'].has(s2);
+    if (s1Accept !== s2Accept) return false;
+
+    for (const sym of sigma) {
+      const k1 = `${s1},${sym}`;
+      const k2 = `${s2},${sym}`;
+      if (m1['delta'].has(k1) && m2['delta'].has(k2)) {
+        produce.push([m1['delta'].get(k1)!, m2['delta'].get(k2)!]);
+      }
+    }
+  }
+  return true;
+}
+
+// DFAs for "ends with 0" and "starts with 0" are NOT equivalent
+const endsWith0 = new DFA(
+  new Set(['q0', 'q1']),
+  new Set(['0', '1']),
+  new Map([['q0,0','q1'], ['q0,1','q0'], ['q1,0','q1'], ['q1,1','q0']]),
+  'q0', new Set(['q1'])
+);
+const startsWith0 = new DFA(
+  new Set(['q0', 'q1', 'q2']),
+  new Set(['0', '1']),
+  new Map([['q0,0','q1'], ['q0,1','q2'], ['q1,0','q1'], ['q1,1','q1'], ['q2,0','q2'], ['q2,1','q2']]),
+  'q0', new Set(['q1'])
+);
+console.log(areEquivalent(endsWith0, startsWith0));
+// false — "0" is accepted by both but "10" is accepted only by endsWith0
+```
+
 ## Summary
 
 - A DFA is a 5-tuple (Q, Î£, Î´, qâ‚€, F) with a deterministic transition function.
@@ -381,6 +572,9 @@ Check: On input "110" (binary for 6): qâ‚€ â†’ qâ‚ (1) â†’ q
 - A language recognized by some DFA is called regular.
 - DFA design requires identifying the finite-state information needed to determine acceptance.
 - Every DFA has exactly one computation path for any input string.
+- **Product construction** enables building complex DFAs from simpler ones.
+- **Table-filling** minimization yields the unique minimal DFA for any regular language.
+- **Equivalence testing** can be done efficiently using the product construction.
 
 ## Exercises
 
@@ -407,3 +601,6 @@ Check: On input "110" (binary for 6): qâ‚€ â†’ qâ‚ (1) â†’ q
 13. Design a DFA for the language L = { w âˆˆ {a,b}* | |w| mod 3 = 0 and w contains at least one 'a' and at least one 'b' }.
 14. Prove formally that the DFA in Example 1.3 correctly recognizes binary strings divisible by 3 by induction on string length.
 15. Let Mâ‚ accept Lâ‚ and Mâ‚‚ accept Lâ‚‚. Show how to construct a DFA that accepts Lâ‚ âˆª Lâ‚‚ using the Cartesian product of states. Apply this to combine the DFA from Example 1.2 with the DFA from Example 1.3.
+16. Write a TypeScript function `productDFA(m1, m2, 'union')` that returns a DFA for L(m1) ∪ L(m2). Test it on the "even length" and "odd number of 1s" DFAs constructed earlier.
+17. Prove that the class of regular languages is closed under the **set difference** operation (L₁ - L₂) using DFA product construction.
+18. Implement a DFA minimization function that takes a DFA and returns the minimized version by merging equivalent states identified by the table-filling algorithm.

@@ -371,6 +371,227 @@ Favorable outcomes (sum = 7): $(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)$ = 6.
 
 $P = 6/36 = 1/6$.
 
+### TypeScript: Quantitative Aptitude Calculator
+
+```typescript
+class QuantitativeAptitude {
+  // === NUMBER SYSTEMS ===
+  static gcd(a: number, b: number): number {
+    return b === 0 ? a : QuantitativeAptitude.gcd(b, a % b);
+  }
+  static lcm(a: number, b: number): number {
+    return (a * b) / QuantitativeAptitude.gcd(a, b);
+  }
+  static lcmOfArray(nums: number[]): number {
+    return nums.reduce((acc, n) => QuantitativeAptitude.lcm(acc, n));
+  }
+  static isPrime(n: number): boolean {
+    if (n < 2) return false;
+    for (let i = 2; i * i <= n; i++) if (n % i === 0) return false;
+    return true;
+  }
+
+  // === PERCENTAGES ===
+  static successiveChange(a: number, b: number): number {
+    return a + b + (a * b) / 100;
+  }
+
+  // === PROFIT & LOSS ===
+  static profitPercent(cp: number, sp: number): number {
+    return ((sp - cp) / cp) * 100;
+  }
+  static discountPrice(mp: number, d: number): number {
+    return mp * (1 - d / 100);
+  }
+
+  // === TIME SPEED DISTANCE ===
+  static convertKmhToMs(kmh: number): number { return kmh * (5 / 18); }
+  static convertMsToKmh(ms: number): number { return ms * (18 / 5); }
+  static avgSpeedEqualDist(v1: number, v2: number): number {
+    return (2 * v1 * v2) / (v1 + v2);
+  }
+
+  // === TIME & WORK ===
+  static daysTogether(a: number, b: number): number {
+    return (a * b) / (a + b);
+  }
+
+  // === INTEREST ===
+  static simpleInterest(p: number, r: number, t: number): number {
+    return (p * r * t) / 100;
+  }
+  static compoundInterest(p: number, r: number, t: number): number {
+    return p * Math.pow(1 + r / 100, t) - p;
+  }
+  static compoundAmount(p: number, r: number, t: number, n: number = 1): number {
+    return p * Math.pow(1 + r / (n * 100), n * t);
+  }
+
+  // === PERMUTATION & COMBINATION ===
+  static factorial(n: number): number {
+    if (n <= 1) return 1;
+    return n * QuantitativeAptitude.factorial(n - 1);
+  }
+  static permutation(n: number, r: number): number {
+    return QuantitativeAptitude.factorial(n) / QuantitativeAptitude.factorial(n - r);
+  }
+  static combination(n: number, r: number): number {
+    return QuantitativeAptitude.factorial(n)
+      / (QuantitativeAptitude.factorial(r) * QuantitativeAptitude.factorial(n - r));
+  }
+
+  // === PROBABILITY ===
+  static probability(favorable: number, total: number): number {
+    return favorable / total;
+  }
+  static probabilityUnion(pA: number, pB: number, pI: number): number {
+    return pA + pB - pI;
+  }
+
+  // === MENSURATION ===
+  static areaCircle(r: number): number { return Math.PI * r * r; }
+  static volumeSphere(r: number): number { return (4 / 3) * Math.PI * r * r * r; }
+
+  // === AVERAGES ===
+  static average(values: number[]): number {
+    return values.reduce((a, b) => a + b, 0) / values.length;
+  }
+  static weightedAverage(values: number[], weights: number[]): number {
+    const sumW = values.reduce((s, v, i) => s + v * weights[i], 0);
+    return sumW / weights.reduce((a, b) => a + b, 0);
+  }
+}
+
+// === Interactive Solver ===
+class ProblemSolver {
+  solve(problem: string): string {
+    const p = problem.toLowerCase();
+    if (p.includes("lcm")) return this.solveLCM(p);
+    if (p.includes("permutation")) return this.solvePermutation(p);
+    if (p.includes("combination")) return this.solveCombination(p);
+    if (p.includes("probability")) return this.solveProbability(p);
+    if (p.includes("compound")) return this.solveCompoundInterest(p);
+    if (p.includes("interest")) return this.solveSimpleInterest(p);
+    if (p.includes("speed") || p.includes("distance")) return this.solveTSD(p);
+    return "Problem type not recognized.";
+  }
+  private solveLCM(p: string): string {
+    const nums = p.match(/\d+/g)?.map(Number) ?? [];
+    return `LCM of [${nums}] = ${QuantitativeAptitude.lcmOfArray(nums)}`;
+  }
+  private solvePermutation(p: string): string {
+    const nums = p.match(/\d+/g)?.map(Number) ?? [];
+    return `P(${nums[0]},${nums[1]}) = ${QuantitativeAptitude.permutation(nums[0], nums[1])}`;
+  }
+  private solveCombination(p: string): string {
+    const nums = p.match(/\d+/g)?.map(Number) ?? [];
+    return `C(${nums[0]},${nums[1]}) = ${QuantitativeAptitude.combination(nums[0], nums[1])}`;
+  }
+  private solveProbability(p: string): string {
+    const nums = p.match(/\d+/g)?.map(Number) ?? [];
+    return `P = ${nums[0]}/${nums[1]} = ${(nums[0] / nums[1]).toFixed(4)}`;
+  }
+  private solveCompoundInterest(p: string): string {
+    const nums = p.match(/\d+(\.\d+)?/g)?.map(Number) ?? [];
+    const ci = QuantitativeAptitude.compoundInterest(nums[0], nums[1], nums[2]);
+    return `CI on Rs.${nums[0]} at ${nums[1]}% for ${nums[2]}y = Rs.${ci.toFixed(2)}`;
+  }
+  private solveSimpleInterest(p: string): string {
+    const nums = p.match(/\d+(\.\d+)?/g)?.map(Number) ?? [];
+    const si = QuantitativeAptitude.simpleInterest(nums[0], nums[1], nums[2]);
+    return `SI on Rs.${nums[0]} at ${nums[1]}% for ${nums[2]}y = Rs.${si.toFixed(2)}`;
+  }
+  private solveTSD(p: string): string {
+    const nums = p.match(/\d+/g)?.map(Number) ?? [];
+    return `Speed = ${(nums[0] / nums[1]).toFixed(2)} units/time`;
+  }
+}
+
+const solver = new ProblemSolver();
+console.log(solver.solve("Find LCM of 12, 15, 18"));
+console.log(solver.solve("Permutation n=5 r=3"));
+console.log(solver.solve("Compound interest on 10000 at 10 for 3 years"));
+console.log(solver.solve("Probability of 6 out of 36"));
+```
+
+### Decision Flowchart for Problem Solving
+
+```mermaid
+flowchart TD
+    A[Read Problem] --> B{Identify Category}
+    B -->|Percentage| C[Identify Part & Whole]
+    B -->|Profit-Loss| D[Find CP & SP]
+    B -->|TSD| E[D = S × T]
+    B -->|Time-Work| F[Rate = 1/Days]
+    B -->|CI/SI| G[Identify P, R, T]
+    C --> H[Apply % = Part/Whole × 100]
+    D --> I[Profit = SP - CP; % = Profit/CP × 100]
+    E --> J[Convert Units: km/h × 5/18 = m/s]
+    F --> K[Sum Rates; Remaining = 1 - Done]
+    G --> L[SI = PRT/100; CI = P(1+R/100)^T - P]
+    H --> M[Verify Answer Reasonableness]
+    I --> M; J --> M; K --> M; L --> M
+```
+
+### Example 8: Compound Interest Half-Yearly
+
+Find the CI on Rs. 15,000 at 8% p.a. compounded half-yearly for 2 years.
+
+**Solution:** $n = 2$, $T = 2$, periods = 4. Rate per period = $8/2 = 4\%$.
+$A = 15000(1.04)^4 = 15000 \times 1.16986 = 17547.86$
+$CI = 17547.86 - 15000 = Rs. 2547.86$
+
+```typescript
+const p = 15000, r = 8, t = 2, n = 2;
+const amount = QuantitativeAptitude.compoundAmount(p, r, t, n);
+console.log(`CI: Rs.${(amount - p).toFixed(2)}`); // Rs.2547.86
+```
+
+### Example 9: Mixture & Alligation
+
+Rice costing Rs. 30/kg and Rs. 45/kg mixed to cost Rs. 36/kg. Ratio?
+
+**Solution:** $\frac{Q_1}{Q_2} = \frac{45 - 36}{36 - 30} = \frac{9}{6} = \frac{3}{2}$
+
+```mermaid
+flowchart LR
+    A[Cheaper: Rs.30] --> C[Mean: Rs.36]
+    B[Dearer: Rs.45] --> C
+    C --> D[45-36 = 9]
+    C --> E[36-30 = 6]
+    D & E --> F[Ratio = 9:6 = 3:2]
+```
+
+### Example 10: Probability Without Replacement
+
+A bag has 5 red, 4 blue, 3 green marbles. Three drawn without replacement. Probability at least one red?
+
+**Solution:**
+$P(\text{at least one red}) = 1 - P(\text{no red})$
+$P(\text{no red}) = \frac{7}{12} \times \frac{6}{11} \times \frac{5}{10} = \frac{210}{1320} = \frac{7}{44}$
+$P(\text{at least one red}) = 1 - \frac{7}{44} = \frac{37}{44}$
+
+```typescript
+function probAtLeastOneRed(total: number, red: number, draws: number): number {
+  let noRed = 1;
+  for (let i = 0; i < draws; i++) noRed *= (total - red - i) / (total - i);
+  return +(1 - noRed).toFixed(4);
+}
+console.log(probAtLeastOneRed(12, 5, 3)); // 0.8409
+```
+
+### Additional Exercises (Level 3 — Advanced)
+
+16. A person invests equal sums in two schemes at 10% SI and 8% CI (annual). After 2 years the difference is Rs. 320. Find the sum.
+17. In how many ways can the letters of "MATHEMATICS" be arranged? (Hint: M×2, A×2, T×2)
+18. A 200m train crosses a man in 10s and a platform in 25s. Find the platform length.
+19. 200 men build a bridge in 50 days. After 20 days only 25% of work is done. How many additional men needed?
+20. Probability of sum > 9 when rolling two dice?
+
+### Answer Key (Additional)
+
+16. Rs. 20,000 | 17. $\frac{11!}{2!2!2!} = 4,989,600$ | 18. 300m | 19. 100 men | 20. $\frac{6}{36} = \frac{1}{6}$
+
 ## Summary
 
 - Percentages use fraction conversion shortcuts for rapid calculation

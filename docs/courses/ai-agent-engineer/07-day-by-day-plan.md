@@ -1,5 +1,44 @@
 # Day-by-Day Plan: 12 Weeks
 
+> **Purpose:** A structured 12-week plan to build job-ready AI agent engineering skills. Each week targets a specific phase with daily topics, actions, and done conditions.
+
+## Overview
+
+This plan bridges backend engineering (Python, FastAPI) with AI agent development (LangGraph, CrewAI, MCP) and production hardening (Docker, CI/CD, monitoring). By week 12 you will have:
+- A RAG demo API with cited answers deployed to a VPS
+- A LangGraph-based orchestration system ported from an existing n8n flow
+- Both projects hardened with Docker, CI/CD, monitoring, and cost tracking
+- Updated Upwork/LinkedIn profiles and published case-study content
+
+## Prerequisites
+
+| Skill | Required Level | How to Assess |
+|-------|---------------|---------------|
+| Python | Write functions, classes, decorators, type hints | Can solve 3 LeetCode Easy in Python |
+| Basic web dev | Understand HTTP, REST, JSON | Can explain request/response cycle |
+| Git | Commit, branch, merge, PR | Uses Git daily |
+| Linux | SSH, file system, processes, env vars | Can deploy a static site to a VPS |
+| Database | SQL SELECT/JOIN/INSERT/UPDATE, basic indexing | Can write a 3-table JOIN query |
+
+## Learning Resources by Phase
+
+| Phase | Primary Resource | Backup Resource |
+|-------|-----------------|-----------------|
+| 0 — Backend Gap-Fill | Redis docs, FastAPI docs | Real Python tutorials |
+| 1 — Python + FastAPI | FastAPI official tutorial, Pydantic docs | TestDriven.io FastAPI course |
+| 2 — LLM + RAG | Anthropic Cookbook, OpenAI Cookbook | Pinecone RAG guide |
+| 3 — Agents | LangGraph docs, CrewAI docs, MCP spec | Simon Willison's LLM tools posts |
+| 4 — Production Hardening | Docker docs, GitHub Actions docs | Grafana + Prometheus docs |
+| 5 — Portfolio + Job Search | dev.to, Upwork guides | LinkedIn optimization guides |
+
+## Common Pitfalls
+
+1. **Phase skipping**: Each phase builds on the previous one — do not jump ahead without passing the checkpoint
+2. **Over-engineering**: Build the simplest version first; you can always add complexity later
+3. **Tutorial paralysis**: If you spend more than 30 min researching how to do something, just build the simplest version and iterate
+4. **Scope creep on portfolio projects**: Pick 2 projects and finish them both rather than starting 5 and finishing none
+5. **Ignoring the job search phase**: Building skills without a job search strategy is like building a product without a go-to-market plan
+
 ## How to use this plan
 
 Each day has a **topic**, an **action** (what to do), and a **done condition** (how to know you're done). If a day takes longer, stretch it — the buffer weeks absorb overruns.
@@ -226,6 +265,30 @@ Ask yourself these 3 questions at the end of each week:
 
 ---
 
+## Phase Dependency Diagram
+
+```mermaid
+flowchart LR
+    P0[Phase 0: Backend Gap-Fill<br/>Week 1] --> P1[Phase 1: Python + FastAPI<br/>Weeks 2-3]
+    P1 --> P2[Phase 2: LLM + RAG<br/>Weeks 4-5]
+    P2 --> P3[Phase 3: Agents<br/>Weeks 6-8]
+    P3 --> P4[Phase 4: Production Hardening<br/>Weeks 9-10]
+    P1 --> P4
+    P2 --> P5[Phase 5: Portfolio + Job Search<br/>Weeks 11-12]
+    P3 --> P5
+    P4 --> P5
+```
+
+## Success Metrics
+
+| Metric | Target | How to Measure |
+|--------|--------|----------------|
+| Daily consistency | 80%+ of days completed | Weekly tracker |
+| Phase checkpoints | All items verified | Phase-end review |
+| Portfolio projects | 2 deployed projects | Public URLs |
+| Job applications | 10 submitted | Application tracker |
+| Skills gained | 6 phase competencies | Self-assessment |
+
 ## Quick Reference: Time Commitment
 
 | Phase | Weeks | Hours | Key Deliverable |
@@ -238,4 +301,109 @@ Ask yourself these 3 questions at the end of each week:
 | 5 | 2 | 15 + ongoing | Profiles rewritten, applications started |
 | **Total** | **12** | **~140** | **Everything above** |
 
-[Back to Index](00-index.md)
+## Phase Checkpoint Checklists
+
+### Phase 0 Checkpoint
+- [ ] Can explain Redis SETEX vs RQ
+- [ ] Working pub/sub publisher + subscriber
+- [ ] Can draw JWT access/refresh flow from memory
+- [ ] Can explain token bucket vs sliding window rate limiting
+- [ ] Written 1-page microservices vs monolith comparison
+- [ ] Working idempotency check + WebSocket echo server
+
+### Phase 1 Checkpoint
+- [ ] Can write `list[dict[str,int]]` annotations without checking
+- [ ] Working custom DB context manager
+- [ ] `@retry(times=3)` decorator works on any function
+- [ ] FastAPI CRUD endpoints with correct param types and DI
+- [ ] Model-level validator rejects invalid data
+- [ ] `.env` loads into typed pydantic-settings config
+- [ ] Working async concurrent HTTP calls with `asyncio.gather`
+- [ ] pytest passes with mocked DB fixtures
+- [ ] Alembic migration created and applied
+
+### Phase 2 Checkpoint
+- [ ] Can estimate token counts within 20% without tools
+- [ ] Can explain cosine similarity concretely
+- [ ] Few-shot prompting beats zero-shot measurably
+- [ ] Hand-written function-calling schema works
+- [ ] Can explain HNSW speed/accuracy tradeoff
+- [ ] RAG pipeline drawn from memory with all arrows labeled
+- [ ] Documents ingested and searchable via vector DB
+- [ ] RAG API returns cited answers at a public URL
+
+### Phase 3 Checkpoint
+- [ ] Minimal ReAct loop handles tool calls correctly
+- [ ] Nested parameter schema works with real API call
+- [ ] LangGraph StateGraph runs end to end
+- [ ] Graph resumes from last checkpoint
+- [ ] Graph pauses and resumes with HITL
+- [ ] CrewAI researcher + writer crew produces coherent output
+- [ ] Server exposes all 3 MCP primitives
+- [ ] Agent recalls past conversation with memory
+
+### Phase 4 Checkpoint
+- [ ] Docker image < 300MB
+- [ ] `docker ps` shows healthy for all services
+- [ ] Background jobs survive restart (Celery/RQ)
+- [ ] Failed jobs land in DLQ with retry backoff
+- [ ] Request traceable across services via correlation IDs
+- [ ] Prometheus can scrape `/metrics`
+- [ ] Startup fails if required env var is missing
+- [ ] Every LLM call logged with cost
+- [ ] Knows RPS limit of current deployment
+- [ ] Green CI badge on both repos
+
+### Phase 5 Checkpoint
+- [ ] Both READMEs pass the 60-second test
+- [ ] 90-second demo video recorded for each project
+- [ ] Upwork profile lists LangGraph, CrewAI, FastAPI
+- [ ] LinkedIn headline: "AI Agent Engineer"
+- [ ] 1 published dev.to case-study post
+- [ ] 10 applications sent with tailored proposals
+
+## Weekly Progress Tracker Template
+
+```markdown
+# Week [N] — [Phase Name]
+
+| Day | Planned | Completed? | Notes |
+|-----|---------|------------|-------|
+| Mon |         | Yes/No/Partial | |
+| Tue |         | Yes/No/Partial | |
+| Wed |         | Yes/No/Partial | |
+| Thu |         | Yes/No/Partial | |
+| Fri |         | Yes/No/Partial | |
+| Sat |         | Yes/No/Partial | |
+| Sun |         | Yes/No/Partial | |
+
+**Completed this week:** [list]
+**Blocked by:** [what stopped you]
+**Adjust for next week:** [what to change]
+```
+
+## Detailed Daily Action Descriptions
+
+### Week 1 Deep Dive
+**Day 1 — Redis as Cache vs Queue**
+Read the Redis documentation on SETEX (caching with TTL) and RQ (Redis Queue for background jobs). Build two small scripts: one using `redis-py` to cache API responses with `SETEX`, another using `rq` to enqueue a background email-sending job. Compare when each is appropriate — caching for read-heavy, latency-sensitive data; queues for write-heavy, durable operations.
+
+**Day 2 — Redis Pub/Sub + OpenAPI**
+Build a chat-room-style pub/sub system where one script publishes messages and another subscribes. Then read the OpenAPI specification structure (paths, methods, schemas, responses) and document your pub/sub API using FastAPI's auto-generated OpenAPI. Understanding OpenAPI is essential because MCP uses a similar spec-based approach.
+
+**Day 3 — JWT Refresh Rotation**
+Study the access/refresh token lifecycle: short-lived access tokens (15 min) with longer-lived refresh tokens (7 days). Implement rotation where each refresh issues a new access token AND a new refresh token, invalidating the old refresh token. Understand why rotation prevents replay attacks.
+
+**Day 4 — Rate Limiting + API Versioning**
+Implement both token bucket and sliding window rate limiting in FastAPI middleware. Token bucket allows bursts but limits average rate; sliding window enforces a hard limit per time window. Then add URL-based versioning (`/v1/`, `/v2/`) to your API.
+
+**Day 5 — Microservices vs Monolith**
+Read about the microservices pattern (independent deployability, bounded contexts, polyglot persistence) vs monoliths (simplicity, shared-nothing within process, easier transactions). Write a one-page analysis of your ApexERP project — would it benefit from microservices or should it stay monolithic?
+
+**Day 6 — Idempotency Keys + WebSocket**
+Implement idempotency by requiring an `Idempotency-Key` header on POST endpoints. Store processed keys with expiration in Redis. Then build a WebSocket echo server using FastAPI's WebSocket support and test it with a browser-based WebSocket client.
+
+**Day 7 — Phase 0 Review**
+Run through all 6 days' exercises again from scratch, timing yourself. If anything takes more than 30 minutes, note it for extra practice. Verify all Phase 0 checkpoint items.
+
+## Quick Reference: Time Commitment

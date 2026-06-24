@@ -355,6 +355,224 @@ console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())",
 
 *Solution.* Total permutations: $4! = 24$. Subtract those fixing at least one: $\binom{4}{1}3! = 24$, add back $\binom{4}{2}2! = 12$, subtract $\binom{4}{3}1! = 4$, add $\binom{4}{4}0! = 1$. Result: $24 - 24 + 12 - 4 + 1 = 9$.
 
+### 5.6 Combinatorial Algorithms in TypeScript
+
+**Permutation and Combination Calculators.**
+
+```typescript
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+function permutation(n: number, r: number): number {
+  if (r > n) return 0;
+  let result = 1;
+  for (let i = 0; i < r; i++) result *= (n - i);
+  return result;
+}
+
+function combination(n: number, r: number): number {
+  if (r > n || r < 0) return 0;
+  if (r === 0 || r === n) return 1;
+  r = Math.min(r, n - r);
+  let result = 1;
+  for (let i = 1; i <= r; i++) {
+    result = result * (n - r + i) / i;
+  }
+  return result;
+}
+
+console.log(permutation(10, 3)); // 720
+console.log(combination(10, 3)); // 120
+```
+
+**Generating all permutations (Heap's algorithm).**
+
+```typescript
+function generatePermutations<T>(arr: T[]): T[][] {
+  const result: T[][] = [];
+  const n = arr.length;
+
+  function heap(k: number, a: T[]) {
+    if (k === 1) { result.push([...a]); return; }
+    for (let i = 0; i < k; i++) {
+      heap(k - 1, a);
+      if (k % 2 === 0) [a[i], a[k - 1]] = [a[k - 1], a[i]];
+      else [a[0], a[k - 1]] = [a[k - 1], a[0]];
+    }
+  }
+  heap(n, [...arr]);
+  return result;
+}
+
+console.log(generatePermutations([1, 2, 3]));
+// [[1,2,3], [2,1,3], [3,1,2], [1,3,2], [2,3,1], [3,2,1]]
+```
+
+**Binomial Theorem in TypeScript — expanding $(x + y)^n$.**
+
+```typescript
+function binomialExpansion(x: number, y: number, n: number): number[] {
+  const terms: number[] = [];
+  for (let k = 0; k <= n; k++) {
+    const coeff = combination(n, k);
+    terms.push(coeff * Math.pow(x, n - k) * Math.pow(y, k));
+  }
+  return terms;
+}
+
+// (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3
+console.log(binomialExpansion(1, 1, 3));  // [1, 3, 3, 1]
+console.log(binomialExpansion(2, -1, 4)); // [16, -32, 24, -8, 1] → (2x-1)^4
+```
+
+**Stars and Bars — counting combinations with repetition.**
+
+```typescript
+function starsAndBars(boxes: number, total: number): number {
+  return combination(total + boxes - 1, boxes - 1);
+}
+
+// x1 + x2 + x3 = 6, nonnegative integers
+console.log(starsAndBars(3, 6)); // C(8, 2) = 28
+
+// How many ways to choose 12 donuts from 5 varieties?
+console.log(starsAndBars(5, 12)); // C(16, 4) = 1820
+```
+
+**Theorem 5.3 (Stars and Bars).** The number of solutions to $x_1 + x_2 + \cdots + x_k = n$ in nonnegative integers is $\binom{n + k - 1}{k - 1}$.
+
+### 5.7 Catalan Numbers and Their Applications
+
+**Definition 5.3 (Catalan numbers).**
+$$C_n = \frac{1}{n+1}\binom{2n}{n}$$
+
+```typescript
+function catalan(n: number): number {
+  return combination(2 * n, n) / (n + 1);
+}
+
+// Catalan numbers C_0 through C_5
+for (let i = 0; i <= 5; i++) console.log(catalan(i));
+// 1, 1, 2, 5, 14, 42
+```
+
+Catalan numbers count at least 20 distinct combinatorial structures, including:
+- Valid parentheses strings of length $2n$.
+- Binary trees with $n$ internal nodes.
+- Triangulations of a convex $(n+2)$-gon.
+- Monotonic paths from $(0,0)$ to $(n,n)$ that stay on or below the diagonal.
+- Ways to connect $2n$ points on a circle with non-crossing chords.
+
+**Proof 5.4 (Catalan recurrence).** $C_0 = 1$ and $C_{n+1} = \sum_{i=0}^n C_i C_{n-i}$.
+
+*Proof.* For the Catalan number of balanced parentheses, consider the first time the count of opens equals closes (the first return). There are $C_i$ ways to arrange the inner parentheses (between the first open and its matching close) and $C_{n-i}$ ways to arrange the remaining $n-i$ pairs. Summing over all $i$ gives the recurrence. $\square$
+
+### 5.8 Inclusion-Exclusion Principle
+
+**Theorem 5.4 (Inclusion-Exclusion).**
+$$\left|\bigcup_{i=1}^n A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
+
+```typescript
+function inclusionExclusion<T>(sets: Set<T>[]): number {
+  const n = sets.length;
+  let total = 0;
+
+  for (let mask = 1; mask < (1 << n); mask++) {
+    let intersection: T[] | null = null;
+    for (let i = 0; i < n; i++) {
+      if (mask & (1 << i)) {
+        const si = [...sets[i]];
+        intersection = intersection
+          ? intersection.filter(x => si.includes(x))
+          : si;
+      }
+    }
+    const bits = mask.toString(2).split('1').length - 1;
+    if (bits % 2 === 1) total += intersection!.length;
+    else total -= intersection!.length;
+  }
+  return total;
+}
+
+const A = new Set([1, 2, 3, 4]);
+const B = new Set([3, 4, 5, 6]);
+const C = new Set([4, 5, 6, 7]);
+console.log(inclusionExclusion([A, B, C])); // |A∪B∪C| = 4+4+4-2-2-2+1 = 7
+```
+
+**Example 5.11** (Derangements formula). The number of permutations of $n$ elements with no fixed points:
+$$!n = n! \sum_{k=0}^n \frac{(-1)^k}{k!}$$
+
+```typescript
+function derangements(n: number): number {
+  let result = 0;
+  for (let k = 0; k <= n; k++) {
+    result += (k % 2 === 0 ? 1 : -1) * factorial(n) / factorial(k);
+  }
+  return Math.round(result);
+}
+
+for (let i = 1; i <= 5; i++) console.log(derangements(i));
+// 0, 1, 2, 9, 44
+```
+
+### 5.9 Pigeonhole Principle — Advanced Applications
+
+**Theorem 5.5 (Generalized Pigeonhole).** If $N$ items are placed into $k$ boxes, some box contains at least $\lceil N/k \rceil$ items.
+
+```typescript
+function pigeonholeMinCount(N: number, k: number): number {
+  return Math.ceil(N / k);
+}
+
+// Among 100 people, at least how many share a birthday month?
+console.log(pigeonholeMinCount(100, 12)); // ceil(100/12) = 9
+```
+
+**Example 5.12** (Erdős–Szekeres theorem — application of pigeonhole). Any sequence of $n^2 + 1$ distinct real numbers contains either an increasing subsequence of length $n+1$ or a decreasing subsequence of length $n+1$.
+
+*Proof sketch.* Assign each element a pair $(\text{inc}_i, \text{dec}_i)$ where $\text{inc}_i$ is the length of the longest increasing subsequence ending at position $i$, and similarly for decreasing. If all $\text{inc}_i \leq n$ and $\text{dec}_i \leq n$, there are at most $n^2$ distinct pairs, but we have $n^2+1$ elements — contradiction by pigeonhole. $\square$
+
+**Example 5.13** (Subset sums). Among any 10 integers, there exist two disjoint subsets with equal sum.
+
+*Proof.* There are $2^{10} = 1024$ subsets, each with sum between 0 and $10 \cdot \text{max value}$. If max value is 100, the sum range has at most 1001 possible values. By pigeonhole, two different subsets have equal sum. Remove the intersection to get disjoint subsets. $\square$
+
+```mermaid
+flowchart TD
+    subgraph "Combinatorics Framework"
+        A[Problem] --> B{Order matters?}
+        B -->|Yes| C{Permutation}
+        B -->|No| D{Combination}
+        C --> E{Repetition?}
+        E -->|No| F[P(n,r)]
+        E -->|Yes| G[n^r]
+        D --> H{Repetition?}
+        H -->|No| I[C(n,r)]
+        H -->|Yes| J[C(n+r-1, r)]
+        I --> K[Binomial<br/>Coefficients]
+        G --> L[Counting<br/>Functions]
+    end
+```
+
+**Example 5.14** (Combinatorial identity — Vandermonde's convolution).
+$$\sum_{k=0}^r \binom{m}{k}\binom{n}{r-k} = \binom{m+n}{r}$$
+
+*Proof.* Choosing $r$ elements from $m + n$ total. Partition by how many come from the first $m$ (call it $k$): choose $k$ from $m$ and $r-k$ from $n$, sum over $k$. $\square$
+
+## Additional Exercises
+
+16. Use stars and bars to find the number of integer solutions to $x_1 + x_2 + x_3 + x_4 = 20$ where each $x_i \geq 2$.
+
+17. Compute the 7th Catalan number and list the 5 valid parentheses strings of length 6.
+
+18. A computer password is 6-8 characters, each either a lowercase letter (26) or digit (10). Digits may not be first. How many passwords are possible?
+
+19. Prove Vandermonde's identity $\sum_{k=0}^r \binom{m}{k}\binom{n}{r-k} = \binom{m+n}{r}$ by induction on $m$.
+
+20. Count the number of ways to distribute 10 identical candies to 4 distinct children where each child gets at least 1 candy.
+
 ## Summary
 
 - Product rule for sequential choices; sum rule for disjoint alternatives.

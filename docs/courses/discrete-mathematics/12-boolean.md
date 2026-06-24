@@ -402,6 +402,229 @@ function fullAdderGates(a: Bit, b: Bit, cin: Bit): { sum: Bit; cout: Bit } {
 4. **De Morgan transforms circuit types** — use it to convert AND-OR to NAND-NAND or OR-AND to NOR-NOR.
 5. **K-maps work up to 4 variables** — for more, use Quine-McCluskey algorithmically.
 
+### 12.6 Boolean Function Implementations in TypeScript
+
+```typescript
+type BooleanFunc = (inputs: boolean[]) => boolean;
+
+function evaluateSOP(
+  minterms: number[][],
+  inputs: boolean[]
+): boolean {
+  return minterms.some(term =>
+    term.every((lit, i) => lit === 1 ? inputs[i] : !inputs[i])
+  );
+}
+
+function evaluatePOS(
+  maxterms: number[][],
+  inputs: boolean[]
+): boolean {
+  return maxterms.every(term =>
+    term.some((lit, i) => lit === 1 ? inputs[i] : !inputs[i])
+  );
+}
+
+function truthTable(func: BooleanFunc, n: number): boolean[][] {
+  const table: boolean[][] = [];
+  for (let i = 0; i < (1 << n); i++) {
+    const inputs: boolean[] = [];
+    for (let j = n - 1; j >= 0; j--) {
+      inputs.push(Boolean((i >> j) & 1));
+    }
+    table.push([...inputs, func(inputs)]);
+  }
+  return table;
+}
+
+// XOR: a ⊕ b = a'b + ab'
+const xor: BooleanFunc = ([a, b]) => (a !== b);
+const xorTable = truthTable(xor, 2);
+console.table(xorTable); // 00→0, 01→1, 10→1, 11→0
+```
+
+### 12.7 K-Map Minimization Algorithm
+
+**Karnaugh maps** provide a visual method for minimizing Boolean expressions with up to 6 variables.
+
+```typescript
+function kmap2var(minterms: number[]): string {
+  const grid = [
+    [minterms.includes(0), minterms.includes(1)],
+    [minterms.includes(2), minterms.includes(3)]
+  ];
+  const terms: string[] = [];
+
+  // Check for whole row/column coverage
+  if (grid[0][0] && grid[0][1]) terms.push("a'");
+  if (grid[1][0] && grid[1][1]) terms.push("a");
+  if (grid[0][0] && grid[1][0]) terms.push("b'");
+  if (grid[0][1] && grid[1][1]) terms.push("b");
+
+  // Single cells not covered
+  const vars = ["a", "b"];
+  for (let i = 0; i < 2; i++) {
+    for (let j = 0; j < 2; j++) {
+      if (grid[i][j] && !terms.some(t => t.includes(vars[0]) || t.includes(vars[1]))) {
+        terms.push(`${i === 0 ? "a'" : "a"}${j === 0 ? "b'" : "b"}`);
+      }
+    }
+  }
+  return terms.join(" + ") || "0";
+}
+
+// Example: f(a,b) = Σm(0,1,3) = a'b' + a'b + ab = a' + b
+console.log(kmap2var([0, 1, 3])); // a' + b
+```
+
+**4-variable K-map grouping rules:**
+- Groups must be rectangular and contain $2^k$ cells.
+- Groups wrap around edges and corners.
+- Each group corresponds to an implicant where variables are constant.
+- Choose the minimum number of largest possible groups.
+
+```mermaid
+flowchart TD
+    subgraph "K-map for f=Σm(0,1,3,4,7,8,12,15)"
+        A["ab\cd 00 01 11 10"]
+        A --> B["00: 1 1 0 1"]
+        A --> C["01: 0 0 1 0"]
+        A --> D["11: 1 0 1 0"]
+        A --> E["10: 1 0 0 0"]
+    end
+```
+
+### 12.8 Quine-McCluskey Algorithm
+
+The **Quine-McCluskey** algorithm systematically minimizes Boolean functions with any number of variables.
+
+```typescript
+function quineMcCluskey(minterms: number[], n: number): string[] {
+  // Step 1: Group minterms by number of 1s
+  const groups: Map<number, number[]> = new Map();
+  for (const m of minterms) {
+    const ones = m.toString(2).padStart(n, '0').split('1').length - 1;
+    if (!groups.has(ones)) groups.set(ones, []);
+    groups.get(ones)!.push(m);
+  }
+
+  // Step 2: Combine adjacent groups
+  const combined = new Set<number>();
+  const primes: string[] = [];
+  const groupKeys = [...groups.keys()].sort();
+
+  for (let i = 0; i < groupKeys.length - 1; i++) {
+    const g1 = groups.get(groupKeys[i])!;
+    const g2 = groups.get(groupKeys[i + 1])!;
+    for (const a of g1) {
+      for (const b of g2) {
+        const diff = a ^ b;
+        if ((diff & (diff - 1)) === 0) { // power of 2
+          combined.add(a);
+          combined.add(b);
+          const merged = a & (b ^ diff);
+          const bitStr = merged.toString(2).padStart(n, '0');
+          const dashPos = Math.log2(diff);
+          const term = bitStr.split('').map((c, idx) =>
+            idx === n - 1 - dashPos ? '-' : c
+          ).join('');
+          if (!primes.includes(term)) primes.push(term);
+        }
+      }
+    }
+  }
+
+  return primes;
+}
+
+// Minimize f(a,b,c) = Σm(0,2,5,7)
+const primes = quineMcCluskey([0, 2, 5, 7], 3);
+console.log(primes);
+```
+
+### 12.9 Logic Gate Implementation
+
+**Universal gates** (NAND, NOR) can implement any Boolean function.
+
+```typescript
+function nand(a: boolean, b: boolean): boolean { return !(a && b); }
+function nor(a: boolean, b: boolean): boolean { return !(a || b); }
+
+// NOT using NAND
+function notNAND(a: boolean): boolean { return nand(a, a); }
+
+// AND using NAND
+function andNAND(a: boolean, b: boolean): boolean {
+  const y = nand(a, b);
+  return nand(y, y);
+}
+
+// OR using NAND
+function orNAND(a: boolean, b: boolean): boolean {
+  return nand(nand(a, a), nand(b, b));
+}
+
+// XOR using NAND gates (4 NAND gates)
+function xorNAND(a: boolean, b: boolean): boolean {
+  const w1 = nand(a, b);
+  const w2 = nand(a, w1);
+  const w3 = nand(b, w1);
+  return nand(w2, w3);
+}
+
+console.log(xorNAND(true, false)); // true
+console.log(xorNAND(false, true)); // true
+console.log(xorNAND(true, true));  // false
+```
+
+### 12.10 Boolean Algebra in Circuit Design
+
+**Example 12.6** (Full adder implementation). A full adder sums three bits ($A, B, C_\text{in}$) producing sum $S$ and carry $C_\text{out}$.
+
+$$S = A \oplus B \oplus C_\text{in}$$
+$$C_\text{out} = AB + AC_\text{in} + BC_\text{in}$$
+
+```typescript
+function fullAdder(A: boolean, B: boolean, Cin: boolean): { S: boolean; Cout: boolean } {
+  return {
+    S: A !== B !== Cin,
+    Cout: (A && B) || (A && Cin) || (B && Cin)
+  };
+}
+
+function fourBitAdder(A: boolean[], B: boolean[]): { S: boolean[]; Cout: boolean } {
+  const S: boolean[] = [];
+  let Cin = false;
+  for (let i = 3; i >= 0; i--) {
+    const result = fullAdder(A[i], B[i], Cin);
+    S[i] = result.S;
+    Cin = result.Cout;
+  }
+  return { S, Cout: Cin };
+}
+
+// 5 + 3 = 8: 0101 + 0011 = 1000
+const A = [false, true, false, true]; // 0101
+const B = [false, false, true, true]; // 0011
+console.log(fourBitAdder(A, B)); // S=[1,0,0,0], Cout=false
+```
+
+**Proof 12.3 (De Morgan's laws in Boolean algebra).** $\overline{x + y} = \overline{x} \cdot \overline{y}$.
+
+*Proof by truth table.* For all $(x, y) \in \{0, 1\}^2$, both sides produce the same output: $x+y$ is 1 except when $x=y=0$; complement gives 1 only when $x=y=0$, same as $\overline{x} \cdot \overline{y}$.
+
+## Additional Exercises
+
+16. Simplify $f(a,b,c) = a'bc + ab'c + abc' + abc$ using a K-map.
+
+17. Show that NOR is also a universal gate by expressing NOT, AND, and OR using only NOR gates.
+
+18. Design a 4-to-1 multiplexer using only NAND gates.
+
+19. Write a TypeScript function `booleanFunctionToSOP` that converts any truth table (array of input/output pairs) to SOP form.
+
+20. Prove that the dual of any Boolean algebra identity is also an identity.
+
 ## Exercises
 
 ### Review Questions

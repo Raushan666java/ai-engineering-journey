@@ -380,6 +380,281 @@ class CubeTracker {
 | Cubes & Dice | Opposite faces never touch | Adjacent faces share an edge |
 | Embedded Figures | Scan systematically | Match orientation exactly |
 
+### TypeScript: Non-Verbal Reasoning Toolkit
+
+```typescript
+// === Pattern Matcher for Figure Series ===
+type Transform = "rotate90" | "rotate180" | "rotate270" | "mirrorH" | "mirrorV" | "addDot" | "removeDot" | "shade" | "unshade";
+
+interface Figure {
+  shape: "circle" | "square" | "triangle" | "diamond" | "star";
+  shading: "none" | "solid" | "hatch" | "dots";
+  dots: number;
+  rotation: number; // degrees
+}
+
+class FigureSeriesSolver {
+  static detectTransform(seq: Figure[]): Transform[] {
+    const transforms: Transform[] = [];
+    for (let i = 1; i < seq.length; i++) {
+      const prev = seq[i - 1];
+      const curr = seq[i];
+
+      // Check rotation
+      if (prev.shape === curr.shape && prev.shading === curr.shading) {
+        const rotDiff = ((curr.rotation - prev.rotation) % 360 + 360) % 360;
+        if (rotDiff === 90) transforms.push("rotate90");
+        else if (rotDiff === 180) transforms.push("rotate180");
+        else if (rotDiff === 270) transforms.push("rotate270");
+      }
+
+      // Check dot changes
+      if (curr.dots === prev.dots + 1 && curr.shape === prev.shape) transforms.push("addDot");
+      if (curr.dots === prev.dots - 1 && curr.shape === prev.shape) transforms.push("removeDot");
+
+      // Check shading
+      if (prev.shading === "none" && curr.shading !== "none") transforms.push("shade");
+      if (prev.shading !== "none" && curr.shading === "none") transforms.push("unshade");
+    }
+    return [...new Set(transforms)];
+  }
+
+  static predictNext(figures: Figure[], transforms: Transform[]): Figure {
+    const last = figures[figures.length - 1];
+    const next: Figure = { ...last };
+
+    for (const t of transforms) {
+      switch (t) {
+        case "rotate90": next.rotation = (next.rotation + 90) % 360; break;
+        case "rotate180": next.rotation = (next.rotation + 180) % 360; break;
+        case "addDot": next.dots += 1; break;
+        case "removeDot": next.dots = Math.max(0, next.dots - 1); break;
+        case "shade": next.shading = "solid"; break;
+        case "unshade": next.shading = "none"; break;
+      }
+    }
+    return next;
+  }
+}
+
+// === Figure Counting (Triangles in Complex Diagrams) ===
+class FigureCounter {
+  // Count triangles in a subdivided triangle with n base segments
+  static countTriangles(baseSegments: number): number {
+    // Small triangles = n²
+    // Upward triangles at higher levels = sum of i² from i=1 to n (for even orientation)
+    let total = 0;
+    for (let i = 1; i <= baseSegments; i++) {
+      total += i * (i + 1) / 2; // simplified formula for total triangles
+    }
+    return total;
+  }
+
+  // Count squares in an m × n grid
+  static countSquares(rows: number, cols: number): number {
+    let total = 0;
+    for (let size = 1; size <= Math.min(rows, cols); size++) {
+      total += (rows - size + 1) * (cols - size + 1);
+    }
+    return total;
+  }
+
+  // Count rectangles in an m × n grid
+  static countRectangles(rows: number, cols: number): number {
+    return (rows * (rows + 1) / 2) * (cols * (cols + 1) / 2);
+  }
+
+  // Count triangles in a triangle with horizontal divisions
+  static countTrianglesInDivisions(divisions: number): number {
+    // Formula for number of triangles divided by lines from vertex
+    return (divisions * (divisions + 1) * (divisions + 2)) / 6;
+  }
+}
+
+// === Mirror & Water Image Generator ===
+class ImageTransformer {
+  // Mirror image (left-right reversal)
+  static mirrorImage(text: string): string {
+    const mirrorMap: Record<string, string> = {
+      'a': 'a', 'b': 'd', 'c': 'c', 'd': 'b', 'e': 'e',
+      'h': 'h', 'i': 'i', 'k': 'k', 'm': 'm', 'n': 'n',
+      'o': 'o', 'p': 'q', 'q': 'p', 'r': 'r', 's': 's',
+      't': 't', 'u': 'u', 'v': 'v', 'w': 'w', 'x': 'x',
+      'y': 'y', 'A': 'A', 'H': 'H', 'I': 'I', 'M': 'M',
+      'O': 'O', 'T': 'T', 'U': 'U', 'V': 'V', 'W': 'W',
+      'X': 'X', 'Y': 'Y',
+    };
+    return text.split('').map(c => mirrorMap[c.toLowerCase()] ?? c)
+      .reverse().join('');
+  }
+
+  // Water image (top-bottom reversal)
+  static waterImage(text: string): string {
+    const waterMap: Record<string, string> = {
+      'b': 'p', 'p': 'b', 'd': 'q', 'q': 'd',
+      '6': '9', '9': '6',
+      'A': 'A', 'H': 'H', 'I': 'I', 'M': 'M',
+      'O': 'O', 'T': 'T', 'U': 'U', 'V': 'V',
+      'W': 'W', 'X': 'X', 'Y': 'Y',
+    };
+    return text.split('').map(c => waterMap[c.toUpperCase()] ?? waterMap[c] ?? c).join('');
+  }
+
+  // Check if a letter is symmetric (same in mirror)
+  static isSymmetric(char: string): boolean {
+    const symmetric = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y', 'o', 'x'];
+    return symmetric.includes(char.toUpperCase());
+  }
+}
+
+// === Cube Face Tracker (Extended) ===
+class CubeFaceTracker {
+  private adjacent = new Map<string, Set<string>>();
+
+  addView(top: string, front: string, right: string): void {
+    const faces = [top, front, right];
+    for (const f of faces) {
+      if (!this.adjacent.has(f)) this.adjacent.set(f, new Set());
+    }
+    this.adjacent.get(top)!.add(front).add(right);
+    this.adjacent.get(front)!.add(top).add(right);
+    this.adjacent.get(right)!.add(top).add(front);
+  }
+
+  findOpposite(face: string): string | null {
+    const adj = this.adjacent.get(face);
+    if (!adj) return null;
+    for (const [candidate, candidateAdj] of this.adjacent) {
+      if (candidate !== face && !adj.has(candidate)) {
+        // Verify: the candidate's adjacents shouldn't include face either
+        if (!candidateAdj.has(face)) return candidate;
+      }
+    }
+    return null;
+  }
+
+  isAdjacent(a: string, b: string): boolean {
+    return this.adjacent.get(a)?.has(b) ?? false;
+  }
+
+  // Standard dice check: opposite faces sum to 7
+  static isStandardDice(views: [number, number, number][]): boolean {
+    const tracker = new CubeFaceTracker();
+    for (const [top, front, right] of views) {
+      tracker.addView(String(top), String(front), String(right));
+    }
+    // Check: 1 opposite 6, 2 opposite 5, 3 opposite 4
+    const checks: [number, number][] = [[1, 6], [2, 5], [3, 4]];
+    return checks.every(([a, b]) => tracker.findOpposite(String(a)) === String(b));
+  }
+}
+
+// === Venn Diagram Analyzer ===
+class VennAnalyzer {
+  static twoSet(onlyA: number, onlyB: number, both: number, neither: number): Record<string, number> {
+    return {
+      onlyA, onlyB, both,
+      total: onlyA + onlyB + both + neither,
+      atLeastOne: onlyA + onlyB + both,
+      exactlyOne: onlyA + onlyB,
+      neither
+    };
+  }
+
+  static threeSet(
+    a: number, b: number, c: number,
+    ab: number, bc: number, ac: number, abc: number
+  ): Record<string, number> {
+    return {
+      onlyA: a - ab - ac + abc,
+      onlyB: b - ab - bc + abc,
+      onlyC: c - ac - bc + abc,
+      exactlyTwo: (ab - abc) + (bc - abc) + (ac - abc),
+      allThree: abc,
+      total: a + b + c - ab - bc - ac + abc
+    };
+  }
+}
+
+// === Demo ===
+console.log("=== Figure Series ===");
+const seq: Figure[] = [
+  { shape: "square", shading: "none", dots: 0, rotation: 0 },
+  { shape: "square", shading: "none", dots: 1, rotation: 90 },
+  { shape: "square", shading: "none", dots: 2, rotation: 180 },
+];
+const transforms = FigureSeriesSolver.detectTransform(seq);
+console.log("Detected transforms:", transforms);
+console.log("Next figure:", FigureSeriesSolver.predictNext(seq, transforms));
+
+console.log("\n=== Figure Counting ===");
+console.log(`Squares in 3×3 grid: ${FigureCounter.countSquares(3, 3)}`);
+console.log(`Rectangles in 3×4 grid: ${FigureCounter.countRectangles(3, 4)}`);
+
+console.log("\n=== Mirror Images ===");
+console.log(`Mirror of 'RAMA': ${ImageTransformer.mirrorImage("RAMA")}`);
+console.log(`Water image of 'b': ${ImageTransformer.waterImage("b")}`);
+
+console.log("\n=== Cube Faces ===");
+const cube = new CubeFaceTracker();
+cube.addView("A", "B", "C");
+cube.addView("A", "D", "E");
+cube.addView("F", "B", "D");
+console.log(`Opposite of C: ${cube.findOpposite("C")}`);
+
+console.log("\n=== Venn Diagram ===");
+const venn = VennAnalyzer.twoSet(12, 8, 5, 3);
+console.log("Two-set results:", venn);
+```
+
+### Mermaid: Pattern Recognition Strategy
+
+```mermaid
+flowchart TD
+    A[Observe First 3 Figures] --> B{What Changes?}
+    B -->|Rotation| C[Measure Angle: 45°, 90°, 180°]
+    B -->|Shading| D[Track Movement of Shaded Region]
+    B -->|Count| E[Elements Increase/Decrease by Constant]
+    B -->|Position| F[Elements Shift Cyclically]
+    B -->|Size| G[Size Changes Progressively]
+    C & D & E & F & G --> H{What Stays Constant?}
+    H --> I[Identify the Invariant]
+    I --> J[Apply Rule to Predict Next]
+    J --> K[Verify Against All Options]
+```
+
+### Mermaid: Paper Folding Visualization
+
+```mermaid
+flowchart TD
+    A[Start: Square Paper] --> B[Fold 1: Top to Bottom]
+    B --> C[2 Layers, Symmetry on Horizontal Axis]
+    C --> D[Fold 2: Left to Right]
+    D --> E[4 Layers, Symmetry on Both Axes]
+    E --> F[Make Cut at Bottom-Right of Folded Shape]
+    F --> G[Unfold Step 2: Cut Mirrors on Vertical Axis]
+    G --> H[Unfold Step 1: All Cuts Mirrored on Horizontal Axis]
+    H --> I[Final: 4 Symmetric Holes in 4 Quadrants]
+```
+
+### Additional Exercises (Level 2 & 3)
+
+13. **Figure Series:** A sequence shows a star rotating 45° clockwise, with alternating solid/outline fill. Describe the 7th figure.
+
+14. **Counting Triangles:** A triangle is divided by 5 lines from each vertex to the opposite side (forming a triangular grid). How many small triangles total?
+
+15. **Paper Folding:** A rectangular paper is folded in half lengthwise, then in half widthwise, then a quarter-circle is cut from the corner opposite all folds. How many holes when unfolded?
+
+16. **Cube:** Given nets for cubes, identify which nets cannot form a valid cube.
+
+17. **Figure Matrix:** A 3×3 grid where row 1 shows circles (0, 1, 2 lines inside), row 2 shows squares (1, 2, 3 lines), row 3 shows triangles (2, 3, ?). What is the missing figure?
+
+18. **Water Image:** Draw the water image of "MATHS".
+
+### Answer Key (Additional)
+
+13. Star at 270° rotation with outline fill | 14. Uses formula: depends on partition count | 15. 4 quarter-circles (one in each quadrant) | 16. Nets with overlapping faces when folded | 17. Triangle with 4 internal lines | 18. MATHS inverted vertically (water reflection)
+
 ## Summary
 
 - Figure series: identify the rule from first 2-3 figures; apply to predict next

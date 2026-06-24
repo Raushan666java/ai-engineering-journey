@@ -327,6 +327,193 @@ This generates simple programs with declarations, assignments, conditionals, loo
 **B)** Left factoring extracts common prefixes to enable predictive parsing.
 </details>
 
+## Chomsky Normal Form (CNF)
+
+A CFG is in **Chomsky Normal Form** if every production has one of these forms:
+
+1. \(A \to BC\) (two non-terminals)
+2. \(A \to a\) (a single terminal)
+3. \(S \to \varepsilon\) (only the start variable can derive \(\varepsilon\))
+
+Any CFG can be converted to CNF through a systematic process:
+
+### CNF Conversion Algorithm
+
+1. **Add a new start variable** \(S_0\) with \(S_0 \to S\)
+2. **Eliminate \(\varepsilon\)-productions:** Remove \(A \to \varepsilon\) and adjust all rules that use \(A\)
+3. **Eliminate unit productions:** Remove \(A \to B\) (single variable on right)
+4. **Replace long productions:** \(A \to B_1 B_2 \ldots B_k\) becomes \(A \to B_1 C_1\), \(C_1 \to B_2 C_2\), etc.
+5. **Replace terminals in mixed productions:** If \(A \to X Y\) where \(X\) is terminal, add \(X \to a\) and replace
+
+### Why CNF Matters
+
+CNF guarantees that every parse tree for a string of length \(n\) has exactly \(2n-1\) internal nodes (if \(\varepsilon\)-free). This property makes CNF the foundation for:
+
+- **The CYK parsing algorithm** (polynomial-time CFG recognition)
+- **Proving the pumping lemma for CFLs**
+- **Computing the size of parse trees**
+
+### Mermaid: CNF Conversion Flowchart
+
+```mermaid
+flowchart TD
+    A["Original CFG G"] --> B["Add new start S₀ → S"]
+    B --> C["Eliminate ε-productions"]
+    C --> D["Eliminate unit productions<br/>(A → B)"]
+    D --> E["Replace long productions<br/>(A → B₁B₂...Bk)"]
+    E --> F["Replace terminals<br/>in mixed productions"]
+    F --> G["CNF Grammar G'"]
+    style G fill:#a6e3a1,stroke:#333
+```
+
+### TypeScript: CNF Converter
+
+```typescript
+type Production = { lhs: string; rhs: string[] };
+
+function toCNF(productions: Production[]): Production[] {
+  const result: Production[] = [];
+  let varCounter = 0;
+  const newVar = () => `X${varCounter++}`;
+
+  // Step 1: Add new start
+  const start = productions.find(p => p.lhs === 'S')!;
+  result.push({ lhs: 'S0', rhs: ['S'] });
+
+  // Step 2: Eliminate ε-productions
+  const nullable = new Set<string>();
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const p of productions) {
+      if (p.rhs.every(s => s === 'ε' || nullable.has(s))) {
+        if (!nullable.has(p.lhs)) { nullable.add(p.lhs); changed = true; }
+      }
+    }
+  }
+
+  // Step 3: Replace long productions
+  for (const p of productions) {
+    if (p.rhs.length === 1 && /[a-zε]/.test(p.rhs[0])) {
+      // Already in form A → a
+      result.push(p);
+    } else if (p.rhs.length >= 3) {
+      // A → B₁ B₂ ... Bₖ
+      let lastVar = p.lhs;
+      for (let i = 0; i < p.rhs.length - 1; i++) {
+        const nextVar = newVar();
+        if (i === 0) {
+          // Replace original production
+          result.push({
+            lhs: lastVar,
+            rhs: [p.rhs[i], nextVar]
+          });
+        } else {
+          result.push({ lhs: lastVar, rhs: [p.rhs[i], nextVar] });
+        }
+        lastVar = nextVar;
+      }
+      result.push({ lhs: lastVar, rhs: [p.rhs[p.rhs.length - 1]] });
+    } else {
+      result.push(p);
+    }
+  }
+
+  return result.filter(p => !p.rhs.every(s => s === 'ε'));
+}
+
+// Test on arithmetic expression grammar
+const exprGrammar: Production[] = [
+  { lhs: 'E', rhs: ['E', '+', 'T'] },
+  { lhs: 'E', rhs: ['T'] },
+  { lhs: 'T', rhs: ['T', '*', 'F'] },
+  { lhs: 'T', rhs: ['F'] },
+  { lhs: 'F', rhs: ['(', 'E', ')'] },
+  { lhs: 'F', rhs: ['id'] },
+];
+
+const cnf = toCNF(exprGrammar);
+console.log('CNF productions:', cnf.length);
+```
+
+## CFG to PDA Conversion
+
+Every CFG can be converted to an equivalent **pushdown automaton** (PDA) — this is a key part of the equivalence proof between CFGs and PDAs.
+
+### Algorithm: CFG → PDA
+
+Given CFG \(G = (V, \Sigma, R, S)\), construct PDA \(P = (\{q\}, \Sigma, V \cup \Sigma \cup \{\$\}, \delta, q, \$\}\):
+
+1. Start by pushing \(S\$\) onto the stack.
+2. For each production \(A \to \alpha\), add a transition that pops \(A\) and pushes \(\alpha\).
+3. For each terminal \(a\), add a transition that pops \(a\) on matching input \(a\).
+
+```mermaid
+flowchart LR
+    subgraph "PDA for Grammar G"
+        q((q))
+        q -->|"ε, ε → S$"| q
+        q -->|"ε, A → α<br/>for each A → α"| q
+        q -->|"a, a → ε<br/>for each a ∈ Σ"| q
+    end
+```
+
+The PDA nondeterministically guesses the derivation. If it reaches the bottom-of-stack marker \(\$\) after reading all input, the string is accepted.
+
+### TypeScript: Grammar Derivation Simulator
+
+```typescript
+class CFGParser {
+  private grammar: Map<string, string[][]>;
+
+  constructor(rules: [string, string[]][]) {
+    this.grammar = new Map();
+    for (const [lhs, rhs] of rules) {
+      if (!this.grammar.has(lhs)) this.grammar.set(lhs, []);
+      this.grammar.get(lhs)!.push(rhs);
+    }
+  }
+
+  /** Check if string can be derived in defined steps */
+  canDerive(input: string, maxSteps: number = 100): boolean {
+    return this.search('S', input, maxSteps);
+  }
+
+  private search(current: string, target: string, steps: number): boolean {
+    if (steps <= 0) return false;
+    if (current === target) return true;
+
+    // Find first non-terminal
+    const match = current.match(/[A-Z']/);
+    if (!match) return current === target;
+
+    const pos = match.index!;
+    const nt = match[0];
+    const alternatives = this.grammar.get(nt);
+
+    if (!alternatives) return false;
+
+    // Try each alternative (backtracking search)
+    for (const alt of alternatives) {
+      const next = current.slice(0, pos) + alt.join('') + current.slice(pos + 1);
+      if (next.length > target.length + 10) continue;
+      if (this.search(next, target, steps - 1)) return true;
+    }
+    return false;
+  }
+}
+
+// Grammar for aⁿbⁿ
+const grammar = new CFGParser([
+  ['S', ['a', 'S', 'b']],
+  ['S', ['ε']],
+]);
+
+console.log(grammar.canDerive('aabb', 50));   // true
+console.log(grammar.canDerive('aab', 50));    // false
+console.log(grammar.canDerive('aaabbb', 50)); // true
+```
+
 ## Practical Takeaways
 
 1. **Grammars are the standard for syntax specification.** Most programming languages are defined using CFGs. Understanding derivations, parse trees, and ambiguity is essential for anyone building or using programming languages.
@@ -339,6 +526,10 @@ This generates simple programs with declarations, assignments, conditionals, loo
 
 5. **CFGs are more expressive than regex.** Regular expressions can only describe regular languages. CFGs describe context-free languages, which properly include regular languages. Nested structures like balanced parentheses require CFGs.
 
+6. **Chomsky Normal Form enables polynomial parsing.** The CYK algorithm, which runs in O(n³) time, requires CNF. Converting to CNF is a prerequisite for efficient CFG recognition.
+
+7. **CFG ↔ PDA equivalence** is the foundation for syntax analysis in compilers. Grammars are how we *specify* syntax; PDAs are how we *implement* recognizers.
+
 ## Summary
 
 - A CFG consists of variables, terminals, productions, and a start variable.
@@ -348,6 +539,8 @@ This generates simple programs with declarations, assignments, conditionals, loo
 - Left factoring prepares grammars for predictive parsing.
 - CFGs can describe nested structures like parentheses, arithmetic expressions, and programming language syntax.
 - Formal grammars enable precise, unambiguous specification of programming language syntax.
+- **Chomsky Normal Form** restricts CFG productions to form \(A \to BC\) or \(A \to a\), enabling the CYK algorithm.
+- CFGs and **pushdown automata** are equivalent — every grammar can be converted to a PDA and vice versa.
 
 ## Exercises
 
@@ -366,14 +559,17 @@ This generates simple programs with declarations, assignments, conditionals, loo
 8. Find a CFG for L = { aâ±bÊ²cáµ | i = j or j = k } and show it is ambiguous.
 9. Design a CFG for the language of balanced parentheses (all strings of '(' and ')' where parentheses match properly).
 10. Prove formally that the grammar E â†’ E + T | T, T â†’ id is unambiguous.
+11. Convert the arithmetic expression grammar (Example 5.2) to Chomsky Normal Form.
+12. Write a TypeScript function that, given a CFG, constructs an equivalent PDA using the single-state algorithm.
 
 ### Advanced
 
-11. Prove that the language { aâ¿bâ¿câ¿ | n â‰¥ 0 } is NOT context-free (using the pumping lemma for CFLs, which will be covered in Chapter 7).
-12. Write a CFG for the language L = { w âˆˆ {a,b}* | w has twice as many a's as b's }.
-13. Show that every regular language is context-free by constructing a CFG from a DFA.
-14. Design a CFG for L = { aâ¿báµ | n â‰  m } and prove its correctness.
-15. Show that the grammar S â†’ SS | aSb | Îµ generates strings with equal numbers of a's and b's where every prefix has at least as many a's as b's. Prove by induction on string length.
+13. Prove that the language { aâ¿bâ¿câ¿ | n â‰¥ 0 } is NOT context-free (using the pumping lemma for CFLs, which will be covered in Chapter 7).
+14. Write a CFG for the language L = { w âˆˆ {a,b}* | w has twice as many a's as b's }.
+15. Show that every regular language is context-free by constructing a CFG from a DFA.
+16. Design a CFG for L = { aâ¿báµ | n â‰  m } and prove its correctness.
+17. Show that the grammar S â†’ SS | aSb | Îµ generates strings with equal numbers of a's and b's where every prefix has at least as many a's as b's. Prove by induction on string length.
+18. Implement the CYK algorithm in TypeScript for a grammar in CNF. Test it on the grammar for palindromes with input "abba".
 
 ## Further Reading
 
@@ -382,45 +578,15 @@ This generates simple programs with declarations, assignments, conditionals, loo
 - **Aho, Alfred V., Lam, Monica S., Sethi, Ravi, and Ullman, Jeffrey D.** *Compilers: Principles, Techniques, and Tools* (2nd ed.). Chapters 4-5 cover the practical application of CFGs in parsing and syntax analysis.
 - **Grzegorz, Rozenberg and Salomaa, Arto.** *Handbook of Formal Languages* (3 vols.). The definitive reference for formal language theory including context-free grammars.
 
-## TypeScript CFG Derivation Example
+## Practical Takeaways
 
-```typescript
-type Symbol = string;
+1. **Grammars are the standard for syntax specification.** Most programming languages are defined using CFGs. Understanding derivations, parse trees, and ambiguity is essential for anyone building or using programming languages.
 
-class CFGDeriver {
-  private rules: Map<string, Symbol[][]> = new Map();
+2. **Ambiguity must be eliminated for compilers.** A parse tree determines the meaning of a program. Ambiguous grammars allow multiple interpretations. Use precedence and associativity rules to disambiguate.
 
-  addRule(lhs: string, ...rhsAlternatives: string[][]) {
-    if (!this.rules.has(lhs)) this.rules.set(lhs, []);
-    for (const alt of rhsAlternatives) {
-      this.rules.get(lhs).push(alt);
-    }
-  }
+3. **Left recursion prevents top-down parsing.** Always eliminate left recursion before attempting LL parsing. The transformation preserves the language while making it amenable to predictive parsers.
 
-  derive(start: string, target: string, maxSteps: number = 10): string[] {
-    const derivations: string[] = [start];
-    for (let step = 0; step < maxSteps; step++) {
-      const current = derivations[derivations.length - 1];
-      if (current === target) return derivations;
-      const match = current.match(/[A-Z]/);
-      if (!match) break;
-      const pos = match.index;
-      const nt = match[0];
-      const alternatives = this.rules.get(nt);
-      if (!alternatives || alternatives.length === 0) break;
-      const chosen = alternatives[0];
-      const next = current.slice(0, pos) + chosen.join("") + current.slice(pos + 1);
-      derivations.push(next);
-    }
-    return derivations;
-  }
-}
+4. **CNF is a prerequisite for efficient parsing.** The CYK algorithm (O(n³)) requires CNF. Converting to CNF is the first step for any grammar before algorithmic parsing.
 
-const cf = new CFGDeriver();
-cf.addRule("E", ["E", "+", "T"], ["T"]);
-cf.addRule("T", ["T", "*", "F"], ["F"]);
-cf.addRule("F", ["(", "E", ")"], ["id"]);
-const steps = cf.derive("E", "id+id*id", 8);
-console.log("Derivation steps:", steps);
-```
+5. **CFG ↔ PDA equivalence is foundational.** Grammars specify syntax; PDAs implement recognizers. This pair forms the backbone of compiler frontends.
 

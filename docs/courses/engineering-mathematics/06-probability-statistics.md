@@ -410,9 +410,148 @@ Since $|-1.826| < 2.045$, we fail to reject $H_0$. Not enough evidence to disput
 
 4. **MLE:** Find the MLE for the parameter $\lambda$ of an exponential distribution given sample $x_1, \ldots, x_n$.
 
+### Additional Exercises
+
+5. **Hypothesis Testing:** A coin is tossed 100 times and lands heads 62 times. Test $H_0: p = 0.5$ vs $H_1: p > 0.5$ at $\alpha = 0.05$ using both the critical value and p-value approaches.
+
+6. **Bayesian Inference:** A factory has two machines producing bolts. Machine A produces 60% of bolts with 5% defect rate. Machine B produces 40% with 2% defect rate. A random bolt is defective. What is the probability it came from Machine A?
+
+7. **ANOVA:** Three groups have sample means 10, 12, and 15 with within-group variances 4, 5, and 3 (n=10 each). Compute the F-statistic and test for equal means.
+
 ### Challenge Problem
 
 **Benford's Law:** In many real datasets, the leading digit $d$ occurs with probability $P(d) = \log_{10}(1 + 1/d)$. Verify this is a valid probability distribution. Show that if $X \sim \text{Unif}(0,1)$, the leading digit of $10^X$ follows Benford's law.
+
+## TypeScript Examples
+
+### Probability Distributions
+
+```typescript
+// Normal PDF
+function normalPDF(x: number, mu: number = 0, sigma: number = 1): number {
+  return Math.exp(-((x - mu) ** 2) / (2 * sigma * sigma))
+         / (sigma * Math.sqrt(2 * Math.PI));
+}
+
+// Normal CDF (approximation using error function)
+function normalCDF(x: number, mu: number = 0, sigma: number = 1): number {
+  const z = (x - mu) / (sigma * Math.SQRT2);
+  return 0.5 * (1 + erf(z));
+}
+
+function erf(z: number): number {
+  // Abramowitz and Stegun approximation
+  const a1 = 0.254829592, a2 = -0.284496736;
+  const a3 = 1.421413741, a4 = -1.453152027;
+  const a5 = 1.061405429, p = 0.3275911;
+  const sign = z < 0 ? -1 : 1;
+  z = Math.abs(z);
+  const t = 1 / (1 + p * z);
+  const y = 1 - (((((a5 * t + a4) * t) + a3) * t + a2) * t + a1) * t * Math.exp(-z * z);
+  return sign * y;
+}
+
+// Bootstrap confidence interval
+function bootstrapCI(
+  data: number[],
+  statistic: (s: number[]) => number,
+  alpha: number = 0.05,
+  B: number = 10000
+): [number, number] {
+  const stats: number[] = [];
+  const n = data.length;
+  for (let b = 0; b < B; b++) {
+    const sample: number[] = [];
+    for (let i = 0; i < n; i++)
+      sample.push(data[Math.floor(Math.random() * n)]);
+    stats.push(statistic(sample));
+  }
+  stats.sort((a, b) => a - b);
+  const lowerIdx = Math.floor(B * alpha / 2);
+  const upperIdx = Math.floor(B * (1 - alpha / 2));
+  return [stats[lowerIdx], stats[upperIdx]];
+}
+
+// Example: bootstrap CI for mean
+const sample = [12, 15, 14, 10, 18, 13, 16, 11, 17, 14];
+const meanFn = (s: number[]) => s.reduce((a, b) => a + b, 0) / s.length;
+const [ciLo, ciHi] = bootstrapCI(sample, meanFn);
+console.log(`95% Bootstrap CI for mean: [${ciLo.toFixed(2)}, ${ciHi.toFixed(2)}]`);
+```
+
+### Linear Regression Implementation
+
+```typescript
+function linearRegression(x: number[], y: number[]) {
+  const n = x.length;
+  const xMean = x.reduce((a, b) => a + b, 0) / n;
+  const yMean = y.reduce((a, b) => a + b, 0) / n;
+
+  // Compute sums
+  let sxx = 0, sxy = 0, syy = 0;
+  for (let i = 0; i < n; i++) {
+    const dx = x[i] - xMean;
+    const dy = y[i] - yMean;
+    sxx += dx * dx;
+    sxy += dx * dy;
+    syy += dy * dy;
+  }
+
+  const beta1 = sxy / sxx;
+  const beta0 = yMean - beta1 * xMean;
+  const r2 = (sxy * sxy) / (sxx * syy);
+
+  return { beta0, beta1, r2 };
+}
+
+// Test: y = 2 + 3x + noise
+const xs = [1, 2, 3, 4, 5];
+const ys = [5.1, 8.2, 11.3, 14.1, 17.0];
+const { beta0, beta1, r2 } = linearRegression(xs, ys);
+console.log(`y = ${beta0.toFixed(2)} + ${beta1.toFixed(2)}x`);
+console.log(`R² = ${r2.toFixed(4)}`);
+```
+
+## Real-World Application: A/B Testing
+
+A/B testing is a controlled experiment comparing two versions (A and B) to determine which performs better on a metric.
+
+**Statistical Framework:**
+- $H_0$: $\mu_A = \mu_B$ (no difference)
+- $H_1$: $\mu_A \neq \mu_B$ (two-tailed test)
+- Test statistic: $t = \frac{\bar{x}_A - \bar{x}_B}{\sqrt{s_p^2(1/n_A + 1/n_B)}}$
+
+where $s_p^2$ is the pooled variance:
+
+$$s_p^2 = \frac{(n_A-1)s_A^2 + (n_B-1)s_B^2}{n_A + n_B - 2}$$
+
+**Sample Size Calculation:** For a desired power $1-\beta$ and significance $\alpha$:
+
+$$n = \frac{(z_{\alpha/2} + z_\beta)^2 \cdot 2\sigma^2}{\delta^2}$$
+
+where $\delta$ is the minimum detectable effect.
+
+**Sequential Testing:** Traditional A/B tests fix sample size upfront. Sequential testing (using the SPRT — Sequential Probability Ratio Test) allows early stopping when results are conclusive, reducing the expected sample size by up to 50%.
+
+**Example:** A website tests a new checkout button. Version A (n=1000) converts at 8.2%; Version B (n=1000) converts at 9.7%. The two-proportion z-test yields $z = 1.21$, $p = 0.226$ — not statistically significant at $\alpha = 0.05$. The experiment needs a larger sample or a larger effect.
+
+```typescript
+function twoProportionZTest(
+  x1: number, n1: number,
+  x2: number, n2: number
+): { z: number; pValue: number } {
+  const p1 = x1 / n1, p2 = x2 / n2;
+  const pPool = (x1 + x2) / (n1 + n2);
+  const se = Math.sqrt(pPool * (1 - pPool) * (1 / n1 + 1 / n2));
+  const z = (p1 - p2) / se;
+  const pValue = 2 * (1 - normalCDF(Math.abs(z)));
+  return { z, pValue };
+}
+
+const { z, pValue } = twoProportionZTest(82, 1000, 97, 1000);
+console.log(`z = ${z.toFixed(3)}, p = ${pValue.toFixed(4)}`);
+// z ≈ -1.21, p ≈ 0.226 — not significant
+```
 
 ## Notation Reference
 

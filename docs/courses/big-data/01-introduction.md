@@ -402,6 +402,226 @@ flowchart TD
     G -->|Serialization| I[Avro]
 ```
 
+### TypeScript: Big Data Concepts Simulator
+
+```typescript
+// === 3 V's Simulator ===
+interface BigDataScenario {
+  volumeTB: number;
+  eventsPerSecond: number;
+  dataTypes: string[];
+  latencyMS: number;
+}
+
+class BigDataAnalyzer {
+  static classify(scenario: BigDataScenario): { primaryV: string; engine: string; storage: string } {
+    const volumeScore = scenario.volumeTB / 10;
+    const velocityScore = scenario.eventsPerSecond / 10000;
+    const varietyScore = scenario.dataTypes.length / 3;
+
+    const scores = [
+      { v: "Volume", score: volumeScore },
+      { v: "Velocity", score: velocityScore },
+      { v: "Variety", score: varietyScore },
+    ];
+    scores.sort((a, b) => b.score - a.score);
+    const primary = scores[0].v;
+
+    let engine: string, storage: string;
+    if (primary === "Velocity") {
+      engine = scenario.latencyMS < 100 ? "Apache Flink / Spark Streaming" : "Apache Spark (micro-batch)";
+      storage = "Apache Kafka + Parquet on S3";
+    } else if (primary === "Volume") {
+      engine = "Apache Spark (batch)";
+      storage = "Parquet on S3 / HDFS";
+    } else {
+      engine = "Spark with schema-on-read";
+      storage = "JSON + Parquet on S3 / Data Lake";
+    }
+
+    return { primaryV: primary, engine, storage };
+  }
+
+  static estimateCost(volumeTB: number, computeHours: number): { hdfs: number; s3: number; spark: number } {
+    const hdfsStorage = volumeTB * 3 * 10; // 3x replication, $10/TB/month
+    const s3Storage = volumeTB * 23; // $0.023/GB ≈ $23/TB/month
+    const sparkCompute = computeHours * 0.5 * 10; // 10 nodes at $0.50/hour
+    return {
+      hdfs: Math.round(hdfsStorage),
+      s3: Math.round(s3Storage),
+      spark: Math.round(sparkCompute),
+    };
+  }
+
+  static simulateProcessing(dataSizeGB: number, numNodes: number): void {
+    console.log(`\nProcessing ${dataSizeGB}GB across ${numNodes} nodes:`);
+    const perNode = dataSizeGB / numNodes;
+    const timeWithLocality = perNode * 0.1; // 100 MB/s read with locality
+    const timeWithoutLocality = dataSizeGB * 0.15; // network bottleneck
+
+    console.log(`  Data per node: ${perNode.toFixed(1)}GB`);
+    console.log(`  With data locality: ~${timeWithLocality.toFixed(1)}s`);
+    console.log(`  Without data locality (moving data): ~${timeWithoutLocality.toFixed(1)}s`);
+    console.log(`  Speedup from locality: ${(timeWithoutLocality / timeWithLocality).toFixed(1)}x`);
+  }
+}
+
+// === Streaming vs Batch Simulator ===
+class ProcessingSimulator {
+  static simulateBatch(dataSizeGB: number, throughputGBps: number): { time: number; recordsPerSec: number } {
+    const time = dataSizeGB / throughputGBps;
+    return {
+      time: Math.round(time * 100) / 100,
+      recordsPerSec: Math.round((dataSizeGB * 1e6) / time), // assuming ~1KB records
+    };
+  }
+
+  static simulateStream(eventsPerSec: number, windowSeconds: number): { throughput: number; maxDelay: number } {
+    return {
+      throughput: eventsPerSec * windowSeconds,
+      maxDelay: windowSeconds * 1000, // ms
+    };
+  }
+
+  static compare(scenario: { dataGB: number; throughput: number; eventsPerSec: number; windowSec: number }): void {
+    const batch = this.simulateBatch(scenario.dataGB, scenario.throughput);
+    const stream = this.simulateStream(scenario.eventsPerSec, scenario.windowSec);
+
+    console.log("\nBatch vs Stream Comparison:");
+    console.log(`  Batch: ${batch.time}s to process ${scenario.dataGB}GB`);
+    console.log(`  Stream: ${(stream.maxDelay / 1000).toFixed(1)}s max delay, process ${stream.throughput} events/window`);
+    console.log(`  Recommendation: ${batch.time < 60 ? "Batch sufficient" : stream.maxDelay < 5000 ? "Stream required" : "Lambda architecture (batch + stream)"}`);
+  }
+}
+
+// === CAP Theorem Simulator ===
+class CAPSimulator {
+  static simulate(options: { consistency: boolean; availability: boolean; partitionTolerance: boolean }): string {
+    const { consistency: C, availability: A, partitionTolerance: P } = options;
+
+    if (C && A && !P) return "CA System (e.g., Traditional RDBMS) — Single-site only, no partition tolerance";
+    if (C && !A && P) return "CP System (e.g., HDFS, MongoDB) — Consistent under partition, may reject writes";
+    if (!C && A && P) return "AP System (e.g., Cassandra, DynamoDB) — Available under partition, eventual consistency";
+    return "Invalid — must pick 2 of 3 in a distributed system";
+  }
+
+  static comparison(): void {
+    const systems = [
+      { name: "HDFS", consistency: true, availability: false, partitionTolerance: true },
+      { name: "Cassandra", consistency: false, availability: true, partitionTolerance: true },
+      { name: "PostgreSQL (single)", consistency: true, availability: true, partitionTolerance: false },
+    ];
+    for (const sys of systems) {
+      console.log(`  ${sys.name}: ${this.simulate(sys)}`);
+    }
+  }
+}
+
+// === Data Format Benchmarker ===
+class DataFormatBenchmark {
+  static benchmark(format: string, columns: number, rows: number): { sizeMB: number; readTime: number } {
+    const compressionRatio: Record<string, number> = {
+      csv: 1, json: 1.3, parquet: 0.25, orc: 0.22, avro: 0.45,
+    };
+    const readSpeed: Record<string, number> = {
+      csv: 100, json: 80, parquet: 500, orc: 450, avro: 200,
+    };
+
+    const rowSize = columns * 8; // bytes per row (8 bytes per numeric column)
+    const rawSizeMB = (rows * rowSize) / (1024 * 1024);
+    const compressedSizeMB = rawSizeMB * (compressionRatio[format] ?? 1);
+    const readTime = (compressedSizeMB / (readSpeed[format] ?? 100)) * 1000; // ms
+
+    return {
+      sizeMB: Math.round(compressedSizeMB * 100) / 100,
+      readTime: Math.round(readTime * 100) / 100,
+    };
+  }
+
+  static compareAll(columns: number, rows: number): void {
+    const formats = ["csv", "json", "parquet", "orc", "avro"];
+    console.log(`\nData Format Comparison (${rows.toLocaleString()} rows, ${columns} cols):`);
+    for (const fmt of formats) {
+      const result = this.benchmark(fmt, columns, rows);
+      console.log(`  ${fmt.padEnd(10)} ${result.sizeMB.toFixed(1)}MB | read: ${result.readTime.toFixed(0)}ms`);
+    }
+    const parquet = this.benchmark("parquet", columns, rows);
+    const csv = this.benchmark("csv", columns, rows);
+    console.log(`\n  Parquet vs CSV: ${(csv.sizeMB / parquet.sizeMB).toFixed(1)}x smaller, ${(parquet.readTime < csv.readTime ? (csv.readTime / parquet.readTime).toFixed(1) + "x faster" : "similar read speed")}`);
+  }
+}
+
+// === Demo ===
+const scenario: BigDataScenario = {
+  volumeTB: 50, eventsPerSecond: 500000,
+  dataTypes: ["CSV", "JSON", "Images", "Logs"],
+  latencyMS: 200,
+};
+console.log("=== Scenario Classification ===");
+console.log(BigDataAnalyzer.classify(scenario));
+
+console.log("\n=== Cost Estimation ===");
+console.log("Monthly costs:", BigDataAnalyzer.estimateCost(100, 500));
+
+BigDataAnalyzer.simulateProcessing(500, 10);
+
+ProcessingSimulator.compare({
+  dataGB: 100, throughput: 1,
+  eventsPerSec: 10000, windowSec: 60,
+});
+
+console.log("\n=== CAP Theorem ===");
+CAPSimulator.comparison();
+
+DataFormatBenchmark.compareAll(20, 10_000_000);
+```
+
+### Case Study: Real-Time Fraud Detection Pipeline
+
+**Scenario:** A payment processing company handles 1M transactions/day. They need to detect fraud within 100ms. Current system uses a PostgreSQL database with batch ML scoring, taking ~5 minutes per batch.
+
+**Proposed Architecture:**
+
+```mermaid
+flowchart LR
+    A[Payment Events] --> B[Kafka: transactions topic]
+    B --> C[Spark Structured Streaming]
+    C --> D[Feature Lookup: Redis]
+    D --> E[ML Model: ONNX Runtime]
+    E --> F{Score > Threshold?}
+    F -->|Yes| G[Block: Kafka fraud topic]
+    F -->|No| H[Approve: Kafka approved topic]
+    G --> I[Alert Team: PagerDuty]
+    H --> J[Write to S3: Parquet]
+```
+
+**Results after migration:**
+- Fraud detection latency: 5 min → 350ms
+- Fraud capture rate: 60% → 94%
+- Annual savings: $2.4M in fraud losses
+
+```typescript
+const transactionsPerDay = 1_000_000;
+const peakTPS = transactionsPerDay / 86400 * 10; // 10x peak factor
+const oldLatency = 5 * 60 * 1000; // ms
+const newLatency = 350; // ms
+console.log(`Peak throughput: ${peakTPS.toFixed(0)} TPS`);
+console.log(`Latency reduction: ${(oldLatency / newLatency).toFixed(0)}x`);
+console.log(`Fraud capture improvement: 60% → 94%`);
+```
+
+### Additional Exercises
+
+6. Design a Lambda architecture for a social media analytics platform processing 10TB/day with both real-time trending topics and daily aggregated reports.
+7. Compare the cost of running a 20-node Spark cluster (10TB data, 500 compute hours/month) on-premise vs AWS EMR vs Databricks.
+8. Simulate a data locality scenario: 10 nodes with 100GB data on each. Calculate the time difference between sending code to data vs moving 100GB data to a central processing node over 10GbE.
+9. Given a CSV dataset of 500GB with 100 columns, estimate the storage savings and query speedup by converting to Parquet with snappy compression.
+10. Explain how the CAP theorem applies to a distributed data lake architecture using S3 (AP) + Spark (CP during shuffles).
+
+### Answer Key (Additional)
+
+6. Batch layer: Spark hourly jobs → Parquet; Speed layer: Kafka + Flink → Redis for real-time; Serving layer: Presto on Parquet + API on Redis | 7. On-prem: ~$15K/mo, EMR: ~$5K/mo, Databricks: ~$8K/mo | 8. With locality: ~100s; without: ~800s (8x slower) | 9. ~75% storage savings, ~5x faster queries | 10. S3 is AP (available during partition), Spark shuffle is CP (blocks if partition)
+
 ## Summary
 
 - Big data is defined by volume, velocity, and variety — traditional tools break at petabyte scale.

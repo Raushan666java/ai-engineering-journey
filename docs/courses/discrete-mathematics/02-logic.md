@@ -444,6 +444,217 @@ console.log(isValidModusTollens(true, true, false));   // false
 - Inference rules (modus ponens, modus tollens, syllogism) formalize reasoning.
 - Propositional logic cannot express quantifiers — that requires predicate logic.
 
+### 2.9 Truth Table Generator
+
+```typescript
+type TruthTableRow = Record<string, boolean>;
+
+function generateTruthTable(vars: string[]): TruthTableRow[] {
+  const rows: TruthTableRow[] = [];
+  for (let i = 0; i < (1 << vars.length); i++) {
+    const row: TruthTableRow = {};
+    for (let j = 0; j < vars.length; j++) {
+      row[vars[j]] = Boolean((i >> (vars.length - 1 - j)) & 1);
+    }
+    rows.push(row);
+  }
+  return rows;
+}
+
+function evaluate(
+  expr: (vars: TruthTableRow) => boolean,
+  vars: string[]
+): { table: TruthTableRow[]; isTautology: boolean; isContradiction: boolean } {
+  const table = generateTruthTable(vars);
+  const results = table.map(row => expr(row));
+  return {
+    table,
+    isTautology: results.every(r => r),
+    isContradiction: results.every(r => !r)
+  };
+}
+
+// p → q ≡ ¬p ∨ q
+const result = evaluate(
+  row => !row.p || row.q,
+  ["p", "q"]
+);
+console.log(result.isTautology); // false (satisfiable but not tautology)
+
+const tautology = evaluate(
+  row => (!row.p || row.q) === (!(!row.p && !row.q)),
+  ["p", "q"]
+);
+console.log(tautology.isTautology); // true
+```
+
+### 2.10 Logical Equivalence Prover
+
+```typescript
+function areLogicallyEquivalent(
+  expr1: (row: TruthTableRow) => boolean,
+  expr2: (row: TruthTableRow) => boolean,
+  vars: string[]
+): boolean {
+  const table = generateTruthTable(vars);
+  return table.every(row => expr1(row) === expr2(row));
+}
+
+// Prove: p → q ≡ ¬p ∨ q
+const equiv1 = areLogicallyEquivalent(
+  row => !row.p || row.q,
+  row => row.p ? row.q : true,
+  ["p", "q"]
+);
+console.log(equiv1); // true
+
+// Prove: p ⊕ q ≡ (p ∨ q) ∧ ¬(p ∧ q)
+const equiv2 = areLogicallyEquivalent(
+  row => row.p !== row.q,
+  row => (row.p || row.q) && !(row.p && row.q),
+  ["p", "q"]
+);
+console.log(equiv2); // true
+```
+
+### 2.11 Inference Rules — Systematic Proofs
+
+```typescript
+type Proposition = { type: string; args: any[] };
+
+function modusPonens(p: boolean, pImpliesQ: boolean): boolean | null {
+  if (p && pImpliesQ) return true;
+  return null; // cannot conclude
+}
+
+function modusTollens(notQ: boolean, pImpliesQ: boolean): boolean | null {
+  if (notQ && pImpliesQ) return false;
+  return null;
+}
+
+function hypotheticalSyllogism(
+  pImpliesQ: boolean,
+  qImpliesR: boolean
+): boolean | null {
+  if (pImpliesQ && qImpliesR) return true;
+  return null;
+}
+```
+
+**Proof 2.4 (Logical proof using inference rules).** Prove that $p \land q$, $p \rightarrow r$, $q \rightarrow s$ entails $r \land s$.
+
+| Step | Formula | Justification |
+|------|---------|---------------|
+| 1 | $p \land q$ | Premise |
+| 2 | $p$ | Simplification (1) |
+| 3 | $q$ | Simplification (1) |
+| 4 | $p \rightarrow r$ | Premise |
+| 5 | $q \rightarrow s$ | Premise |
+| 6 | $r$ | Modus ponens (2, 4) |
+| 7 | $s$ | Modus ponens (3, 5) |
+| 8 | $r \land s$ | Conjunction (6, 7) |
+
+### 2.12 Normal Forms — CNF and DNF
+
+**Definition 2.18 (Conjunctive Normal Form).** A conjunction of clauses, where each clause is a disjunction of literals. Example: $(p \lor \neg q) \land (q \lor r)$.
+
+**Definition 2.19 (Disjunctive Normal Form).** A disjunction of minterms, where each minterm is a conjunction of literals. Example: $(p \land q) \lor (\neg p \land r)$.
+
+```typescript
+function toDNF(truthTable: { vars: string[]; result: boolean }[]): string {
+  const terms: string[] = [];
+  for (const row of truthTable) {
+    if (!row.result) continue;
+    const literals: string[] = [];
+    for (const v of row.vars) {
+      literals.push(row[row.vars.indexOf(v)] ? v : `¬${v}`);
+    }
+    terms.push(`(${literals.join(" ∧ ")})`);
+  }
+  return terms.join(" ∨ ");
+}
+
+// Example: XOR truth table
+function dnfOfXor(): string {
+  const table = [
+    { vars: ["p", "q"], result: false },
+    { vars: ["p", "q"], result: true },
+    { vars: ["p", "q"], result: true },
+    { vars: ["p", "q"], result: false }
+  ];
+  return toDNF(table); // (¬p ∧ q) ∨ (p ∧ ¬q)
+}
+```
+
+### 2.13 SAT Solver — Brute Force
+
+```typescript
+function bruteForceSAT(
+  clauses: number[][],
+  varCount: number
+): number[] | null {
+  // clauses: array of clauses, each clause is array of literals
+  // positive = variable, negative = ¬variable
+  for (let assignment = 0; assignment < (1 << varCount); assignment++) {
+    const vars: boolean[] = [];
+    for (let i = 0; i < varCount; i++) {
+      vars[i] = Boolean((assignment >> (varCount - 1 - i)) & 1);
+    }
+    const allClausesSat = clauses.every(clause =>
+      clause.some(lit => lit > 0 ? vars[lit - 1] : !vars[-lit - 1])
+    );
+    if (allClausesSat) return vars.map(v => v ? 1 : 0);
+  }
+  return null; // unsatisfiable
+}
+
+// (p ∨ q) ∧ (¬p ∨ q) ∧ (p ∨ ¬q) ∧ (¬p ∨ ¬q)
+const unsat = bruteForceSAT([[1, 2], [-1, 2], [1, -2], [-1, -2]], 2);
+console.log(unsat); // null (contradiction)
+
+// (p ∨ q) ∧ (¬p ∨ r)
+const sat = bruteForceSAT([[1, 2], [-1, 3]], 3);
+console.log(sat); // [1, 0, 1] e.g., p=true, q=false, r=true
+```
+
+```mermaid
+flowchart TD
+    subgraph "Logic Flow"
+        A[Proposition] --> B{Truth Table}
+        B --> C[Tautology]
+        B --> D[Contradiction]
+        B --> E[Satisfiable]
+        C --> F[Use as Theorem]
+        D --> G[Always False]
+        E --> H{CNF or DNF?}
+        H --> I[CNF: Conjunction of Clauses]
+        H --> J[DNF: Disjunction of Minterms]
+        I --> K[SAT Solver]
+        J --> K
+    end
+```
+
+**Example 2.18** (Sheffer stroke — universal gate). The NAND gate ($p \mid q$) alone can express all connectives:
+- $\neg p \equiv p \mid p$
+- $p \land q \equiv (p \mid q) \mid (p \mid q)$
+- $p \lor q \equiv (p \mid p) \mid (q \mid q)$
+
+**Proof 2.5** (Resolution principle). $(p \lor q) \land (\neg p \lor r) \implies (q \lor r)$.
+
+*Proof by cases.* If $p$ is true, then $\neg p$ is false, so $r$ must be true, giving $q \lor r$. If $p$ is false, then $p \lor q$ forces $q$ true, again giving $q \lor r$. $\square$
+
+## Additional Exercises
+
+17. Show that $(p \rightarrow q) \land (q \rightarrow r) \rightarrow (p \rightarrow r)$ is a tautology using a truth table.
+
+18. Convert $(p \land q) \lor (\neg p \land r)$ to CNF.
+
+19. Express the XOR gate using only NOR gates (the dual of NAND).
+
+20. Prove by logical equivalence: $p \rightarrow (q \rightarrow r) \equiv (p \land q) \rightarrow r$.
+
+21. Determine whether $(p \rightarrow q) \land (p \rightarrow \neg q)$ is satisfiable.
+
 ## Exercises
 
 ### Review Questions

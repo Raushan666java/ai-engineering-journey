@@ -356,6 +356,254 @@ Greedy coloring algorithm: Order vertices; assign each vertex the smallest color
 - **Transportation:** Airline route optimization, shipping logistics.
 - **Computer networks:** Topology design, routing protocols, fault tolerance.
 
+### 9.11 Graph Traversal Implementations
+
+**Breadth-First Search (BFS)** explores vertices in order of increasing distance from the source.
+
+```typescript
+function bfs(graph: number[][], start: number): { dist: number[]; parent: number[] } {
+  const n = graph.length;
+  const dist = new Array(n).fill(-1);
+  const parent = new Array(n).fill(-1);
+  const queue: number[] = [start];
+  dist[start] = 0;
+
+  while (queue.length > 0) {
+    const u = queue.shift()!;
+    for (const v of graph[u]) {
+      if (dist[v] === -1) {
+        dist[v] = dist[u] + 1;
+        parent[v] = u;
+        queue.push(v);
+      }
+    }
+  }
+  return { dist, parent };
+}
+
+// Example: path from 0 to 4
+function getPath(parent: number[], target: number): number[] {
+  const path: number[] = [];
+  for (let v = target; v !== -1; v = parent[v]) path.push(v);
+  return path.reverse();
+}
+
+const adjList = [[1, 2], [0, 3], [0, 3], [1, 2, 4], [3]];
+const { dist, parent } = bfs(adjList, 0);
+console.log(dist);  // [0, 1, 1, 2, 3]
+console.log(getPath(parent, 4)); // [0, 1, 3, 4] or [0, 2, 3, 4]
+```
+
+**Depth-First Search (DFS)** explores as far as possible before backtracking.
+
+```typescript
+function dfs(graph: number[][], start: number): number[] {
+  const visited = new Set<number>();
+  const order: number[] = [];
+
+  const dfsRec = (u: number) => {
+    visited.add(u);
+    order.push(u);
+    for (const v of graph[u]) {
+      if (!visited.has(v)) dfsRec(v);
+    }
+  };
+  dfsRec(start);
+  return order;
+}
+
+function hasCycle(graph: number[][]): boolean {
+  const n = graph.length;
+  const visited = new Array(n).fill(false);
+  const recStack = new Array(n).fill(false);
+
+  const dfsCycle = (u: number): boolean => {
+    visited[u] = true;
+    recStack[u] = true;
+    for (const v of graph[u]) {
+      if (!visited[v]) { if (dfsCycle(v)) return true; }
+      else if (recStack[v]) return true;
+    }
+    recStack[u] = false;
+    return false;
+  };
+
+  for (let i = 0; i < n; i++) {
+    if (!visited[i] && dfsCycle(i)) return true;
+  }
+  return false;
+}
+```
+
+### 9.12 Shortest Path Algorithms
+
+**Dijkstra's Algorithm** finds the shortest path from a source to all other vertices in a weighted graph with nonnegative weights.
+
+```typescript
+function dijkstra(
+  graph: [number, number][][],
+  start: number
+): { dist: number[]; prev: number[] } {
+  const n = graph.length;
+  const dist = new Array(n).fill(Infinity);
+  const prev = new Array(n).fill(-1);
+  const visited = new Array(n).fill(false);
+  dist[start] = 0;
+
+  for (let i = 0; i < n; i++) {
+    let u = -1;
+    let minDist = Infinity;
+    for (let j = 0; j < n; j++) {
+      if (!visited[j] && dist[j] < minDist) {
+        minDist = dist[j];
+        u = j;
+      }
+    }
+    if (u === -1) break;
+    visited[u] = true;
+
+    for (const [v, w] of graph[u]) {
+      if (!visited[v] && dist[u] + w < dist[v]) {
+        dist[v] = dist[u] + w;
+        prev[v] = u;
+      }
+    }
+  }
+  return { dist, prev };
+}
+
+// Weighted graph: edges are [neighbor, weight]
+const weightedGraph: [number, number][][] = [
+  [[1, 4], [2, 1]],           // 0
+  [[3, 1]],                    // 1
+  [[1, 2], [3, 5]],            // 2
+  [[4, 3]],                    // 3
+  []                           // 4
+];
+console.log(dijkstra(weightedGraph, 0).dist); // [0, 3, 1, 4, 7]
+```
+
+**Bellman-Ford Algorithm** handles negative edge weights and detects negative cycles.
+
+```typescript
+function bellmanFord(
+  n: number,
+  edges: [number, number, number][],
+  start: number
+): { dist: number[]; hasNegativeCycle: boolean } {
+  const dist = new Array(n).fill(Infinity);
+  dist[start] = 0;
+
+  for (let i = 0; i < n - 1; i++) {
+    for (const [u, v, w] of edges) {
+      if (dist[u] !== Infinity && dist[u] + w < dist[v]) {
+        dist[v] = dist[u] + w;
+      }
+    }
+  }
+
+  let hasNegativeCycle = false;
+  for (const [u, v, w] of edges) {
+    if (dist[u] !== Infinity && dist[u] + w < dist[v]) {
+      hasNegativeCycle = true;
+    }
+  }
+  return { dist, hasNegativeCycle };
+}
+```
+
+### 9.13 Graph Applications in Practice
+
+**Detecting bipartite graphs** via BFS 2-coloring:
+
+```typescript
+function isBipartite(graph: number[][]): boolean {
+  const n = graph.length;
+  const color = new Array(n).fill(-1);
+
+  for (let start = 0; start < n; start++) {
+    if (color[start] !== -1) continue;
+    color[start] = 0;
+    const queue = [start];
+    while (queue.length > 0) {
+      const u = queue.shift()!;
+      for (const v of graph[u]) {
+        if (color[v] === -1) {
+          color[v] = 1 - color[u];
+          queue.push(v);
+        } else if (color[v] === color[u]) {
+          return false;
+        }
+      }
+    }
+  }
+  return true;
+}
+```
+
+**Theorem 9.2 (Graph equivalence).** A graph is bipartite if and only if it has no odd cycles.
+
+```mermaid
+flowchart TD
+    subgraph "Graph Problems by Complexity"
+        A[Graph Problem] --> B{Eulerian?}
+        B -->|Yes| C[O(E) — check degrees]
+        B -->|No| D{Hamiltonian?}
+        D -->|Yes| E[NP-complete — brute force]
+        D -->|No| F{Planar?}
+        F -->|Yes| G[O(V) — check K5, K3,3 minors]
+        F -->|No| H[Non-planar]
+    end
+```
+
+**Example 9.7** (Dijkstra in GPS navigation). The road network has ~2M vertices (intersections) and ~5M edges (road segments). Dijkstra with a priority queue runs in $O((V+E)\log V) \approx 15M$ operations — feasible for real-time navigation. A* adds a heuristic (straight-line distance) for faster routing.
+
+**Example 9.8** (Graph coloring for exam scheduling). Five exams: A conflicts with B, C; B conflicts with A, C, D; C conflicts with A, B, E; D conflicts with B, E; E conflicts with C, D. Greedy coloring: color A=1, B=2, C=3 (conflicts with 1,2), D=1 (conflicts with 2 only), E=2 (conflicts with 3,1). Uses 3 colors.
+
+**Proof 9.3** (Five Color Theorem — sketch). Every planar graph is 5-colorable.
+
+*Proof sketch.* By induction on $|V|$. Every planar graph has a vertex $v$ of degree $\leq 5$ (by Euler's formula $E \leq 3V - 6$). Remove $v$, 5-color the rest by induction. If the 5 neighbors use fewer than 5 colors, recolor $v$ with the unused color. Otherwise, use Kempe chain recolorings: consider two nonadjacent colors among the neighbors, swap them along alternating paths to free a color for $v$. $\square$
+
+**Example 9.9** (Topological sort — DAG ordering).
+
+```typescript
+function topologicalSort(graph: number[][]): number[] {
+  const n = graph.length;
+  const inDegree = new Array(n).fill(0);
+  for (const neighbors of graph) {
+    for (const v of neighbors) inDegree[v]++;
+  }
+  const queue: number[] = [];
+  for (let i = 0; i < n; i++) if (inDegree[i] === 0) queue.push(i);
+
+  const result: number[] = [];
+  while (queue.length > 0) {
+    const u = queue.shift()!;
+    result.push(u);
+    for (const v of graph[u]) {
+      inDegree[v]--;
+      if (inDegree[v] === 0) queue.push(v);
+    }
+  }
+  return result;
+}
+
+// Course prerequisites: {0 → 1, 0 → 2, 1 → 3, 2 → 3}
+console.log(topologicalSort([[1, 2], [3], [3], []])); // [0, 1, 2, 3] or [0, 2, 1, 3]
+```
+
+## Additional Exercises
+
+16. Determine whether a graph with degree sequence $(3, 3, 2, 2, 2)$ can be planar.
+
+17. Run Dijkstra's algorithm on a graph with 5 vertices where edges are $(0,1,4), (0,2,2), (1,2,1), (1,3,5), (2,3,8), (2,4,10), (3,4,2)$ starting from vertex 0. Show the shortest distances.
+
+18. A **complete bipartite graph** $K_{m,n}$ has $m + n$ vertices. How many edges does it have? When is it planar?
+
+19. Write a TypeScript function `isConnected(graph: number[][]): boolean` that uses BFS to test graph connectivity.
+
+20. Prove that a finite graph where every vertex has degree at least 2 contains a cycle.
+
 ## Summary
 
 - Graphs are modeled as $(V,E)$; types include undirected, directed, weighted, and multigraphs.

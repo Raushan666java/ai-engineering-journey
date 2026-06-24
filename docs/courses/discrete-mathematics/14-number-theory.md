@@ -455,6 +455,214 @@ $\phi(100) = \phi(2^2) \cdot \phi(5^2) = (4-2) \cdot (25-5) = 2 \cdot 20 = 40$.
 4. **RSA uses large primes** — typical $p, q$ are 2048-bit numbers (~600 decimal digits).
 5. **CRT speeds up RSA** — decryption can be done modulo $p$ and $q$ separately and combined, giving 4x speedup.
 
+### 14.6 Euclidean Algorithm and Extended Euclidean
+
+**Theorem 14.4 (Euclidean Algorithm).** For integers $a > b > 0$, $\gcd(a, b) = \gcd(b, a \bmod b)$.
+
+```typescript
+function gcdEuclidean(a: number, b: number): number {
+  a = Math.abs(a);
+  b = Math.abs(b);
+  while (b !== 0) {
+    [a, b] = [b, a % b];
+  }
+  return a;
+}
+
+function gcdRecursive(a: number, b: number): number {
+  if (b === 0) return Math.abs(a);
+  return gcdRecursive(b, a % b);
+}
+
+// Extended Euclidean: returns (gcd, x, y) such that ax + by = gcd
+function extendedEuclidean(a: number, b: number): { gcd: number; x: number; y: number } {
+  if (b === 0) return { gcd: Math.abs(a), x: a >= 0 ? 1 : -1, y: 0 };
+  const { gcd, x: x1, y: y1 } = extendedEuclidean(b, a % b);
+  return { gcd, x: y1, y: x1 - Math.floor(a / b) * y1 };
+}
+
+console.log(gcdEuclidean(462, 336)); // 42
+console.log(extendedEuclidean(11, 26));
+// { gcd: 1, x: -7, y: 3 } → 11(-7) + 26(3) = 1
+```
+
+### 14.7 Modular Arithmetic and Inverses
+
+**Definition 14.7 (Modular Inverse).** $a^{-1} \bmod m$ is the integer $x$ such that $ax \equiv 1 \pmod{m}$, existing iff $\gcd(a, m) = 1$.
+
+```typescript
+function modInverse(a: number, m: number): number | null {
+  const { gcd, x } = extendedEuclidean(a, m);
+  if (gcd !== 1) return null;
+  return ((x % m) + m) % m;
+}
+
+function modExp(base: number, exp: number, mod: number): number {
+  let result = 1;
+  base = base % mod;
+  while (exp > 0) {
+    if (exp & 1) result = (result * base) % mod;
+    exp >>= 1;
+    base = (base * base) % mod;
+  }
+  return result;
+}
+
+console.log(modInverse(11, 26)); // 19 (11*19=209≡1 mod 26)
+console.log(modExp(7, 2023, 11)); // 7^2023 mod 11 using FLT
+```
+
+### 14.8 Chinese Remainder Theorem
+
+**Theorem 14.5 (Chinese Remainder Theorem).** If $m_1, m_2, \ldots, m_k$ are pairwise coprime, the system $x \equiv a_i \pmod{m_i}$ has a unique solution modulo $M = m_1 m_2 \cdots m_k$.
+
+```typescript
+function chineseRemainder(remainders: number[], moduli: number[]): number {
+  const M = moduli.reduce((a, b) => a * b, 1);
+  let x = 0;
+  for (let i = 0; i < moduli.length; i++) {
+    const Mi = M / moduli[i];
+    const inv = modInverse(Mi % moduli[i], moduli[i]);
+    if (inv === null) throw new Error("Moduli not coprime");
+    x = (x + remainders[i] * Mi * inv) % M;
+  }
+  return x;
+}
+
+// x ≡ 1 (mod 4), x ≡ 2 (mod 5), x ≡ 3 (mod 9)
+const solution = chineseRemainder([1, 2, 3], [4, 5, 9]);
+console.log(solution); // 57
+// 57 ≡ 1 mod 4 ✓, 57 ≡ 2 mod 5 ✓, 57 ≡ 3 mod 9 ✓
+```
+
+### 14.9 RSA Cryptosystem — Complete Implementation
+
+```typescript
+function generateRSAKeys(p: number, q: number) {
+  const n = p * q;
+  const phi = (p - 1) * (q - 1);
+  // choose e coprime to phi (commonly 65537 or small primes)
+  let e = 3;
+  while (gcdEuclidean(e, phi) !== 1) e += 2;
+  const d = modInverse(e, phi)!;
+  return { publicKey: { e, n }, privateKey: { d, n } };
+}
+
+function rsaEncrypt(m: number, e: number, n: number): number {
+  return modExp(m, e, n);
+}
+
+function rsaDecrypt(c: number, d: number, n: number): number {
+  return modExp(c, d, n);
+}
+
+// Encrypt/decrypt example
+const p = 61, q = 53;
+const keys = generateRSAKeys(p, q);
+const plaintext = 42;
+const ciphertext = rsaEncrypt(plaintext, keys.publicKey.e, keys.publicKey.n);
+const decrypted = rsaDecrypt(ciphertext, keys.privateKey.d, keys.privateKey.n);
+console.log({ plaintext, ciphertext, decrypted }); // 42 → encrypted → 42
+```
+
+### 14.10 Primality Testing
+
+```typescript
+function isPrimeTrial(n: number): boolean {
+  if (n < 2) return false;
+  if (n === 2) return true;
+  if (n % 2 === 0) return false;
+  const limit = Math.floor(Math.sqrt(n));
+  for (let i = 3; i <= limit; i += 2) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+// Fermat primality test
+function fermatTest(n: number, k: number = 5): boolean {
+  if (n < 2) return false;
+  if (n === 2 || n === 3) return true;
+  for (let i = 0; i < k; i++) {
+    const a = 2 + Math.floor(Math.random() * (n - 3));
+    if (modExp(a, n - 1, n) !== 1) return false; // composite
+  }
+  return true; // probably prime
+}
+
+// Sieve of Eratosthenes
+function sievePrimes(limit: number): number[] {
+  const isPrime = new Array(limit + 1).fill(true);
+  isPrime[0] = isPrime[1] = false;
+  for (let i = 2; i * i <= limit; i++) {
+    if (isPrime[i]) {
+      for (let j = i * i; j <= limit; j += i) isPrime[j] = false;
+    }
+  }
+  return Array.from({ length: limit + 1 }, (_, i) => i).filter(i => isPrime[i]);
+}
+
+console.log(sievePrimes(100));
+console.log(isPrimeTrial(7919)); // true
+console.log(fermatTest(7919));   // true
+```
+
+```mermaid
+flowchart TD
+    subgraph "Number Theory — Key Algorithms"
+        A[GCD] --> B[Euclidean: Olog mina,b]
+        A --> C[Extended: ax + by = gcd]
+        C --> D[Modular Inverse]
+        D --> E[RSA Key Generation]
+        E --> F[Encryption: c = m^e mod n]
+        F --> G[Decryption: m = c^d mod n]
+        D --> H[Chinese Remainder Theorem]
+        H --> I[Solve systems of congruences]
+    end
+```
+
+**Theorem 14.6 (Euler's Theorem).** If $\gcd(a, n) = 1$, then $a^{\phi(n)} \equiv 1 \pmod{n}$.
+
+```typescript
+function eulerTotient(n: number): number {
+  let result = n;
+  let temp = n;
+  for (let p = 2; p * p <= temp; p++) {
+    if (temp % p === 0) {
+      while (temp % p === 0) temp /= p;
+      result -= result / p;
+    }
+  }
+  if (temp > 1) result -= result / temp;
+  return result;
+}
+
+console.log(eulerTotient(12)); // 4 (1,5,7,11)
+console.log(eulerTotient(100)); // 40
+```
+
+**Proof 14.3 (Fermat's Little Theorem).** If $p$ is prime and $p \nmid a$, then $a^{p-1} \equiv 1 \pmod{p}$.
+
+*Proof.* Consider the set $\{a \bmod p, 2a \bmod p, \ldots, (p-1)a \bmod p\}$. These are all nonzero and distinct modulo $p$ (if $ia \equiv ja \pmod{p}$, then $p \mid (i-j)a$, so $p \mid i-j$, forcing $i=j$). Thus they are a permutation of $\{1, 2, \ldots, p-1\}$. Their product: $a^{p-1}(p-1)! \equiv (p-1)! \pmod{p}$. Since $(p-1)!$ is coprime to $p$, cancel it: $a^{p-1} \equiv 1 \pmod{p}$. $\square$
+
+**Example 14.9** (Fermat's Little Theorem application). Compute $7^{2023} \bmod 11$.
+
+Since 11 is prime and $7 \not\equiv 0 \pmod{11}$, by FLT $7^{10} \equiv 1 \pmod{11}$. Write $2023 = 10 \cdot 202 + 3$, so $7^{2023} = (7^{10})^{202} \cdot 7^3 \equiv 1^{202} \cdot 7^3 \equiv 343 \equiv 2 \pmod{11}$.
+
+## Additional Exercises
+
+16. Use the Euclidean algorithm to compute $\gcd(1234, 5678)$.
+
+17. Find all solutions to $3x \equiv 7 \pmod{20}$.
+
+18. Solve the system: $x \equiv 2 \pmod{3}$, $x \equiv 3 \pmod{5}$, $x \equiv 2 \pmod{7}$.
+
+19. Prove that $\phi(p^k) = p^k - p^{k-1}$ for prime $p$.
+
+20. Write a TypeScript function `carmichael(n: number): boolean` that checks if $n$ is a Carmichael number by verifying $a^{n-1} \equiv 1 \pmod{n}$ for several $a$ coprime to $n$.
+
+21. Show that if $p$ is prime, then $a^p \equiv a \pmod{p}$ for all integers $a$ (Fermat's Little Theorem — alternative form).
+
 ## Exercises
 
 ### Review Questions

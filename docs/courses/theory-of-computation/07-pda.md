@@ -264,7 +264,33 @@ class PDA {
 
 This simulator performs DFS over the PDA's configuration space. Because the stack can grow unboundedly, the search may not terminate for rejecting inputs — which matches the theoretical limitation of PDAs.
 
-## Bottom-Up PDA Construction
+## Acceptance by Final State vs Empty Stack
+
+PDAs accept strings under two equivalent conventions:
+
+1. **Final state acceptance:** A configuration \((q, \varepsilon, \gamma)\) where \(q \in F\) is accepting, regardless of stack content.
+2. **Empty stack acceptance:** A configuration \((q, \varepsilon, \varepsilon)\) is accepting, regardless of state.
+
+### Equivalence Proof
+
+Given a PDA \(P_F\) that accepts by final state, we construct \(P_\varepsilon\) that accepts by empty stack:
+
+1. Add a new start state \(q'_0\) with \(\delta(q'_0, \varepsilon, \varepsilon) = \{(q_0, \$)\}\) (push bottom marker)
+2. Add a new state \(q_{clear}\)
+3. For every accept state \(q \in F\), add \(\delta(q, \varepsilon, X) = \{(q_{clear}, \varepsilon)\}\) for all \(X \in \Gamma\)
+4. In \(q_{clear}\), pop everything: \(\delta(q_{clear}, \varepsilon, X) = \{(q_{clear}, \varepsilon)\}\) for all \(X \in \Gamma\)
+
+```mermaid
+graph TD
+    subgraph "Final State → Empty Stack Conversion"
+        q0["q₀' (new start)"] -->|"ε, ε → $"| original["Original PDA"]
+        original -->|"ε, any → ε"| clear["q_clear (new)"]
+        clear -->|"ε, any → ε"| clear
+        clear -->|"ε, $ → ε"| accept["✓ Accept (empty stack)"]
+    end
+```
+
+## Bottom-Up PDA Construction (Shift-Reduce)
 
 Alternatively, a PDA can be constructed **bottom-up** by reducing the input to the start symbol:
 
@@ -275,7 +301,55 @@ Alternatively, a PDA can be constructed **bottom-up** by reducing the input to t
 3. Accept: If stack contains only S (start symbol) and input is exhausted.
 ```
 
-This is the foundation of **shift-reduce parsing**, used in LR parsers (Chapter 10). The deterministic version (DPDA) corresponds to languages that can be parsed efficiently without backtracking.
+This is the foundation of **shift-reduce parsing**, used in LR parsers. The deterministic version (DPDA) corresponds to languages that can be parsed efficiently without backtracking.
+
+### TypeScript: Shift-Reduce PDA Simulation
+
+```typescript
+class ShiftReducePDA {
+  private productions: Map<string, string[]> = new Map();
+
+  addProduction(lhs: string, rhs: string) {
+    this.productions.set(rhs, lhs);
+  }
+
+  accepts(input: string): boolean {
+    const stack: string[] = [];
+    const tokens = [...input];
+
+    for (let i = 0; i <= tokens.length; i++) {
+      // Shift
+      if (i < tokens.length) {
+        stack.push(tokens[i]);
+      }
+
+      // Reduce: repeatedly try to reduce top of stack
+      let reduced = true;
+      while (reduced) {
+        reduced = false;
+        for (const [rhs, lhs] of this.productions) {
+          const top = stack.slice(-rhs.length).join('');
+          if (top === rhs) {
+            stack.splice(stack.length - rhs.length, rhs.length);
+            stack.push(lhs);
+            reduced = true;
+            break;
+          }
+        }
+      }
+    }
+
+    return stack.join('') === 'S';
+  }
+}
+
+// Grammar: S → aSb | ε (reverse representation)
+const sr = new ShiftReducePDA();
+sr.addProduction('S', 'aSb');
+sr.addProduction('S', '');
+console.log(sr.accepts('aabb'));  // true
+console.log(sr.accepts('aab'));   // false
+```
 
 ## PDA Instantaneous Description Diagrams
 
@@ -288,6 +362,72 @@ graph LR
         S3 -->|"pop A"| S4["(q₁, ε, ε)"]
         S4 -->|"ε"| ACC["(q₂, ε, ε)✓"]
     end
+```
+
+## PDA to CFG Conversion Algorithm
+
+The reverse direction (PDA → CFG) constructs variables \([pXq]\) representing: "starting in state \(p\) with \(X\) on top of the stack, eventually pop \(X\) and end in state \(q\)."
+
+### Production Rules
+
+For each transition \(\delta(p, a, X) = \{(r, Y_1Y_2\ldots Y_k)\}\):
+
+1. If \(k = 0\) (pop): Add \(R_{[pXq]} \to a\)
+2. If \(k \geq 1\): Add \(R_{[pXq]} \to a R_{[rY_1s_1]} R_{[s_1Y_2s_2]} \ldots R_{[s_{k-1}Y_kq]}\) for all combinations of intermediate states \(s_1, s_2, \ldots, s_{k-1}\)
+
+The resulting CFG has \(O(|Q|^2 \cdot |\Gamma|)\) variables.
+
+### TypeScript: PDA to CFG (Partial Implementation)
+
+```typescript
+type PDA2CFG = {
+  variables: Set<string>;
+  productions: Map<string, string[][]>;
+};
+
+function pdaToCFG(
+  Q: string[], Sigma: string[], Gamma: string[],
+  delta: Map<string, Array<[string, string]>>,
+  q0: string, F: string[]
+): PDA2CFG {
+  const vars = new Set<string>();
+  const prods = new Map<string, string[][]>();
+
+  // Add variable for each (state, stack_symbol, state) triple
+  for (const p of Q) {
+    for (const X of [...Gamma, '$']) {
+      for (const q of Q) {
+        vars.add(`[${p}X${q}]`);
+      }
+    }
+  }
+
+  // Add start symbol
+  vars.add('S');
+  prods.set('S', [[`[${q0}$${q0}]`]]);
+  for (const q of F) {
+    prods.set('S', [[`[${q0}$${q}]`]]);
+  }
+
+  // Process each transition
+  for (const [key, transitions] of delta) {
+    // Parse key: "p,a,X"
+    const [p, a, X] = key.split(',');
+    for (const [r, pushStr] of transitions) {
+      const pushSymbols = [...pushStr];
+      if (pushSymbols.length === 0) {
+        // Pop: R_{[pXr]} → a
+        const varKey = `[${p}X${r}]`;
+        if (!prods.has(varKey)) prods.set(varKey, []);
+        prods.get(varKey)!.push([a]);
+      }
+      // For k ≥ 1, we'd iterate over all intermediate states
+      // (omitted for brevity — generates O(|Q|^{k-1}) productions)
+    }
+  }
+
+  return { variables: vars, productions: prods };
+}
 ```
 
 ## Practical Takeaways
@@ -393,6 +533,21 @@ graph LR
 - Every CFG can be converted to an equivalent PDA (top-down or bottom-up construction).
 - Every PDA can be converted to an equivalent CFG.
 - Stack operations: push (add to top), pop (remove from top), or no change.
+- **Acceptance by final state** and **acceptance by empty stack** are equivalent definitions.
+- **DPDA vs NPDA** is the first model where nondeterminism adds genuine power — a unique situation in the Chomsky hierarchy.
+- **Shift-reduce parsing** (LR parsing) is the practical realization of bottom-up PDA construction, used in real compilers.
+
+## Practical Takeaways
+
+1. **Stack memory enables counting.** PDAs can recognize languages like {aⁿbⁿ} that require counting, but the LIFO restriction means only one counter is available — languages requiring two independent counters (like {aⁿbⁿcⁿ}) are beyond CFGs.
+
+2. **Nondeterminism is essential for some CFLs.** Unlike finite automata, nondeterministic PDAs are strictly more powerful than deterministic ones. Languages like {ww^R} inherently require guessing.
+
+3. **CFG ↔ PDA equivalence is the basis for parsing.** Every grammar-to-PDA conversion gives a parsing algorithm. The direction matters: top-down (LL) parsers correspond to one construction, bottom-up (LR) to another.
+
+4. **DPDA = deterministic parsing.** Deterministic context-free languages are precisely those that can be parsed in linear time without backtracking — virtually all programming languages fall into this class.
+
+5. **Empty stack acceptance simplifies proofs.** When constructing PDAs for theoretical results, empty stack acceptance often yields cleaner constructions, while final state acceptance is closer to how real parsers work.
 
 ## Exercises
 
@@ -419,3 +574,8 @@ graph LR
 13. Show formally that if PDA P accepts by final state, there is an equivalent PDA P' that accepts by empty stack, and vice versa.
 14. Design a PDA for the language of arithmetic expressions generated by E â†’ E + T | T, T â†’ T * F | F, F â†’ (E) | i. Show the stack behavior for "i + i * i".
 15. Prove that the language { aâ¿báµ | n â‰  m } is a DCFL by constructing a DPDA for it.
+16. Implement a TypeScript function that converts a CFG to a PDA using the top-down construction (single-state method). Test it on the grammar for palindromes.
+17. Show that the language L = { aⁱbʲcᵏ | i, j, k ≥ 0, i = j or j = k } is context-free by designing a PDA for it. Explain why nondeterminism is required.
+18. Write a TypeScript simulator for the shift-reduce PDA and test it on a grammar for balanced parentheses.
+19. Prove that if L is a DCFL, then L̅ (complement) is also a DCFL. (Hint: modify the DPDA to swap accepting and non-accepting states — but be careful with infinite loops from ε-moves.)
+20. Design a DPDA for the language L = { aⁿbᵐcᵖ | n, m, p ≥ 0 and n = m + p }.

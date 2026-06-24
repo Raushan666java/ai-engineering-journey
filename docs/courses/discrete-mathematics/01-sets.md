@@ -399,6 +399,153 @@ console.log(jaccardSimilarity(A, B)); // 0.333...
 - Inclusion-exclusion prevents double-counting in overlapping sets.
 - $\mathbb{Q}$ is countably infinite; $\mathbb{R}$ is uncountably infinite.
 
+### 1.8 Set Operations in TypeScript
+
+```typescript
+function union<T>(a: Set<T>, b: Set<T>): Set<T> {
+  return new Set([...a, ...b]);
+}
+
+function intersection<T>(a: Set<T>, b: Set<T>): Set<T> {
+  return new Set([...a].filter(x => b.has(x)));
+}
+
+function difference<T>(a: Set<T>, b: Set<T>): Set<T> {
+  return new Set([...a].filter(x => !b.has(x)));
+}
+
+function symmetricDifference<T>(a: Set<T>, b: Set<T>): Set<T> {
+  return union(difference(a, b), difference(b, a));
+}
+
+function isSubset<T>(a: Set<T>, b: Set<T>): boolean {
+  return [...a].every(x => b.has(x));
+}
+
+function isSuperset<T>(a: Set<T>, b: Set<T>): boolean {
+  return isSubset(b, a);
+}
+
+function cartesianProduct<T, U>(a: Set<T>, b: Set<U>): Set<[T, U]> {
+  const result = new Set<[T, U]>();
+  for (const x of a) for (const y of b) result.add([x, y]);
+  return result;
+}
+
+function powerSet<T>(set: Set<T>): Set<Set<T>> {
+  const arr = [...set];
+  const result = new Set<Set<T>>();
+  for (let mask = 0; mask < (1 << arr.length); mask++) {
+    const subset = new Set<T>();
+    for (let i = 0; i < arr.length; i++) {
+      if (mask & (1 << i)) subset.add(arr[i]);
+    }
+    result.add(subset);
+  }
+  return result;
+}
+
+const A = new Set([1, 2, 3, 4]);
+const B = new Set([3, 4, 5, 6]);
+console.log([...union(A, B)]); // [1, 2, 3, 4, 5, 6]
+console.log([...intersection(A, B)]); // [3, 4]
+console.log([...difference(A, B)]); // [1, 2]
+console.log(powerSet(new Set([1, 2])).size); // 4
+```
+
+### 1.9 Set Identities — Formal Proofs
+
+**Theorem 1.7 (De Morgan's Laws for Sets).**
+1. $\overline{A \cup B} = \overline{A} \cap \overline{B}$
+2. $\overline{A \cap B} = \overline{A} \cup \overline{B}$
+
+*Proof of (1).* We show $\overline{A \cup B} \subseteq \overline{A} \cap \overline{B}$ and $\overline{A \cap B} \supseteq \overline{A} \cup \overline{B}$.
+
+*($\subseteq$)* Take $x \in \overline{A \cup B}$. Then $x \notin A \cup B$, so $x \notin A$ and $x \notin B$. Thus $x \in \overline{A}$ and $x \in \overline{B}$, so $x \in \overline{A} \cap \overline{B}$.
+
+*($\supseteq$)* Take $x \in \overline{A} \cap \overline{B}$. Then $x \in \overline{A}$ and $x \in \overline{B}$, so $x \notin A$ and $x \notin B$. Thus $x \notin A \cup B$, so $x \in \overline{A \cup B}$.
+
+**Theorem 1.8 (Absorption Laws).**
+$$A \cup (A \cap B) = A \quad \text{and} \quad A \cap (A \cup B) = A$$
+
+*Proof.* For the first: $A \cup (A \cap B) = (A \cup A) \cap (A \cup B) = A \cap (A \cup B) = A$. By duality, the second also holds.
+
+### 1.10 Cardinality and the Power Set
+
+**Theorem 1.9 (Power Set Cardinality).** If $|S| = n$, then $|\mathcal{P}(S)| = 2^n$.
+
+*Proof.* For each element of $S$, a subset either includes or excludes that element — two choices per element. By the product rule, $2^n$ total subsets.
+
+```typescript
+function powerSetSize(n: number): number {
+  return 1 << n;
+}
+
+function subsetsOfSize<T>(set: Set<T>, k: number): Set<T>[] {
+  const arr = [...set];
+  const result: Set<T>[] = [];
+  function combine(start: number, chosen: T[]) {
+    if (chosen.length === k) { result.add(new Set(chosen)); return; }
+    for (let i = start; i < arr.length; i++) {
+      chosen.push(arr[i]);
+      combine(i + 1, chosen);
+      chosen.pop();
+    }
+  }
+  combine(0, []);
+  return result;
+}
+```
+
+**Example 1.15** (Counting subsets). For $S = \{a, b, c, d\}$:
+- All subsets: $2^4 = 16$
+- Subsets of size 2: $\binom{4}{2} = 6$
+- Subsets containing $a$: $2^3 = 8$ (each of the other 3 elements can be in or out)
+
+### 1.11 Infinite Sets and Countability
+
+**Definition 1.15 (Countably Infinite).** A set $S$ is countably infinite if there exists a bijection $f: \mathbb{N} \to S$.
+
+**Theorem 1.10 (Cantor's Diagonalization).** $\mathbb{R}$ is uncountable.
+
+*Proof (by contradiction).* Suppose $\mathbb{R}$ is countable. List all real numbers in $(0, 1)$ as binary expansions:
+- $r_1 = 0.d_{11}d_{12}d_{13}\ldots$
+- $r_2 = 0.d_{21}d_{22}d_{23}\ldots$
+- $r_3 = 0.d_{31}d_{32}d_{33}\ldots$
+
+Construct $x = 0.x_1x_2x_3\ldots$ where $x_i = 1 - d_{ii}$. Then $x$ differs from each $r_i$ at the $i$-th digit, so $x$ is not in the list — contradiction. $\square$
+
+**Theorem 1.11.** $\mathbb{Q}$ is countably infinite.
+
+*Proof.* List all fractions $p/q$ in an infinite grid. The zigzag diagonal traversal enumerates each rational exactly once.
+
+```typescript
+function enumerateRationals(n: number): [number, number][] {
+  const result: [number, number][] = [];
+  for (let sum = 1; result.length < n; sum++) {
+    for (let i = 1; i <= sum; i++) {
+      const j = sum - i;
+      if (result.length < n) result.push([i, j]);
+    }
+  }
+  return result;
+}
+console.log(enumerateRationals(10));
+// [(1,0), (1,1), (2,0), (1,2), (2,1), (3,0), (1,3), (2,2), (3,1), (4,0)]
+```
+
+**Example 1.16** (Finite set cardinality). A set with 5 elements has $2^5 = 32$ subsets, exactly half (16) of which have even cardinality and half odd, since the empty set is even.
+
+## Additional Exercises
+
+17. Determine whether the set of all finite binary strings is countable or uncountable. Justify.
+
+18. Use TypeScript to generate and count all 32 subsets of $\{1, 2, 3, 4, 5\}$, grouped by size. Verify that $\sum_{k=0}^5 \binom{5}{k} = 32$.
+
+19. Prove that if $A \subseteq B$, then $\mathcal{P}(A) \subseteq \mathcal{P}(B)$.
+
+20. Count the number of functions $f: \{1, 2, 3\} \to \{a, b\}$ that are surjective.
+
 ## Exercises
 
 ### Review Questions

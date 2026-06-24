@@ -250,15 +250,161 @@ function dfaToRegex(states: string[], accept: Set<string>,
 
 The theoretical connection between regular expressions and automata means every regex pattern can be compiled to a DFA for O(n) matching — this is exactly what lexer generators like Lex do.
 
-## Practical Takeaways
+## Thompson's Construction: Full TypeScript Implementation
 
-1. **Regex engines are not all equal.** Theoretical regex (regular expressions) recognizes exactly regular languages. Practical regex engines add backreferences, lookahead, and recursion — these go beyond regular languages and require backtracking, which can be exponential.
+```typescript
+type NFAState = { id: number; trans: Map<string, Set<number>>; isAccept: boolean };
 
-2. **Kleene's theorem is a compiler design principle.** The equivalence of regular expressions and finite automata means you can specify tokens as regex patterns and automatically generate efficient recognizers via Thompson construction.
+class RegexCompiler {
+  private stateCount = 0;
+  private states: NFAState[] = [];
 
-3. **Algebraic laws optimize patterns.** Use identities like rε = r, ∅r = ∅, and r* = (r*)* to simplify patterns before implementation. This reduces NFA size and matching time.
+  private newState(accept = false): NFAState {
+    const s = { id: this.stateCount++, trans: new Map(), isAccept: accept };
+    this.states.push(s);
+    return s;
+  }
 
-4. **Arden's lemma solves language equations.** When you need to invert a DFA to a regex (for code generation or documentation), Arden's lemma provides a systematic algebraic approach.
+  private addTransition(from: NFAState, sym: string, to: NFAState) {
+    if (!from.trans.has(sym)) from.trans.set(sym, new Set());
+    from.trans.get(sym)!.add(to.id);
+  }
+
+  compile(regex: string): { start: NFAState; states: NFAState[] } {
+    return this.parseUnion(regex, 0).nfa;
+  }
+
+  private parseUnion(re: string, i: number): { nfa: { start: NFAState; states: NFAState[] }; end: number } {
+    let left = this.parseConcat(re, i);
+    while (left.end < re.length && re[left.end] === '|') {
+      const right = this.parseConcat(re, left.end + 1);
+      const start = this.newState();
+      const accept = this.newState(true);
+      this.addTransition(start, 'ε', left.nfa.start);
+      this.addTransition(start, 'ε', right.nfa.start);
+      left.nfa.start.isAccept = false;
+      right.nfa.start.isAccept = false;
+      for (const s of left.nfa.states) if (s.isAccept) this.addTransition(s, 'ε', accept);
+      for (const s of right.nfa.states) if (s.isAccept) this.addTransition(s, 'ε', accept);
+      left = { nfa: { start, states: [start, ...left.nfa.states, ...right.nfa.states, accept] }, end: right.end };
+    }
+    return left;
+  }
+
+  private parseConcat(re: string, i: number): { nfa: { start: NFAState; states: NFAState[] }; end: number } {
+    let left = this.parseStar(re, i);
+    while (left.end < re.length && re[left.end] !== '|' && re[left.end] !== ')') {
+      if (re[left.end] === '*') break;
+      const right = this.parseStar(re, left.end);
+      const accept = this.newState(true);
+      for (const s of left.nfa.states) if (s.isAccept) { s.isAccept = false; this.addTransition(s, 'ε', right.nfa.start); }
+      left = { nfa: { start: left.nfa.start, states: [...left.nfa.states, ...right.nfa.states, accept] }, end: right.end };
+    }
+    return left;
+  }
+
+  private parseStar(re: string, i: number): { nfa: { start: NFAState; states: NFAState[] }; end: number } {
+    let base = this.parseBase(re, i);
+    while (base.end < re.length && re[base.end] === '*') {
+      const start = this.newState();
+      const accept = this.newState(true);
+      this.addTransition(start, 'ε', base.nfa.start);
+      this.addTransition(start, 'ε', accept);
+      base.nfa.start.isAccept = false;
+      for (const s of base.nfa.states) if (s.isAccept) { this.addTransition(s, 'ε', base.nfa.start); this.addTransition(s, 'ε', accept); }
+      base = { nfa: { start, states: [start, ...base.nfa.states, accept] }, end: base.end + 1 };
+    }
+    return base;
+  }
+
+  private parseBase(re: string, i: number): { nfa: { start: NFAState; states: NFAState[] }; end: number } {
+    if (i >= re.length) throw new Error('Unexpected end');
+    if (re[i] === '(') {
+      const inner = this.parseUnion(re, i + 1);
+      if (re[inner.end] !== ')') throw new Error('Missing )');
+      return { nfa: inner.nfa, end: inner.end + 1 };
+    }
+    if (re[i] === 'ε') {
+      const s = this.newState(true);
+      return { nfa: { start: s, states: [s] }, end: i + 1 };
+    }
+    const s1 = this.newState();
+    const s2 = this.newState(true);
+    this.addTransition(s1, re[i], s2);
+    return { nfa: { start: s1, states: [s1, s2] }, end: i + 1 };
+  }
+
+  simulate(nfa: { start: NFAState; states: NFAState[] }, input: string): boolean {
+    let current = this.epsilonClosure(new Set([nfa.start.id]));
+    for (const sym of input) {
+      const next = new Set<number>();
+      for (const sid of current) {
+        const s = nfa.states.find(st => st.id === sid)!;
+        const targets = s.trans.get(sym);
+        if (targets) for (const t of targets) next.add(t);
+      }
+      current = this.epsilonClosure(next);
+    }
+    for (const sid of current) {
+      const s = nfa.states.find(st => st.id === sid)!;
+      if (s.isAccept) return true;
+    }
+    return false;
+  }
+
+  private epsilonClosure(states: Set<number>): Set<number> {
+    const result = new Set(states);
+    const stack = [...states];
+    while (stack.length > 0) {
+      const sid = stack.pop()!;
+      const s = this.states.find(st => st.id === sid)!;
+      const eps = s.trans.get('ε');
+      if (eps) for (const t of eps) if (!result.has(t)) { result.add(t); stack.push(t); }
+    }
+    return result;
+  }
+}
+
+const compiler = new RegexCompiler();
+const nfa = compiler.compile('(a|b)*abb');
+console.log(compiler.simulate(nfa, 'abb'));       // true
+console.log(compiler.simulate(nfa, 'aabb'));      // true
+console.log(compiler.simulate(nfa, 'ab'));         // false
+```
+
+## NFA vs Backtracking Regex Engines
+
+| Feature | NFA-based (Thompson) | Backtracking (PCRE) |
+|---------|---------------------|-------------------|
+| Matching time | O(n) linear | O(2ⁿ) worst-case exponential |
+| Space | O(k) for k states | O(n) recursion depth |
+| Backreferences | Not supported | Supported |
+| Lookahead/lookbehind | Not supported | Supported |
+| Catastrophic backtracking | Impossible | Possible |
+| Examples | grep, awk, RE2 | Perl, JavaScript, Python |
+
+The NFA-based approach guarantees **linear time** but cannot handle non-regular features. Backtracking engines are more expressive but risk catastrophic backtracking on pathological inputs. Russ Cox's article "Regular Expression Matching Can Be Simple and Fast" provides a definitive comparison.
+
+## Mermaid: Regex to NFA to DFA Pipeline
+
+```mermaid
+flowchart LR
+    subgraph "Stage 1: Compilation"
+        RE["Regex: (a|b)*abb"] --> PARSE["Parse Tree"]
+        PARSE --> NFA_BUILD["Thompson Construction"]
+    end
+    subgraph "Stage 2: Determinization"
+        NFA_BUILD --> NFA["NFA-ε"]
+        NFA --> DFA_BUILD["Subset Construction"]
+    end
+    subgraph "Stage 3: Optimization & Execution"
+        DFA_BUILD --> DFA["DFA"]
+        DFA --> MIN["Minimize"]
+        MIN --> MATCH["O(n) matching"]
+    end
+```
+
+This pipeline is exactly what lexer generators (lex, flex) and regex libraries implement. The key insight: the conversion is fully automatable, so specifying the pattern is enough — the machine generates itself.
 
 ## Concept Comparison Table
 | Operator | Notation | Example | Language |
@@ -347,13 +493,58 @@ The theoretical connection between regular expressions and automata means every 
 
 ## Practical Takeaways
 
-1. **RegEx engines are more powerful than theory suggests.** Modern regex engines (PCRE, JavaScript, Python) include backreferences, lookahead, and recursion — making them strictly more powerful than regular expressions. They can match non-regular languages like {aⁿbⁿ}. Use caution: "regular expression" in practice ≠ regular expression in theory.
+1. **Thompson's construction is used in production.** The algorithm that converts regex to NFA is the basis for grep, awk, and many lexer generators. Understanding it helps predict performance: backtracking engines can be exponential, while NFA-based engines are guaranteed linear.
 
-2. **Thompson's construction is used in production.** The algorithm that converts regex to NFA is the basis for grep, awk, and many lexer generators. Understanding it helps predict performance: backtracking engines can be exponential, while NFA-based engines are guaranteed linear.
+2. **DFA minimization has practical impact.** Minimizing the DFA from a regex reduces memory usage in production systems. Pattern matching in network intrusion detection systems (Snort, Suricata) processes thousands of patterns simultaneously and benefits directly from minimization.
 
-3. **DFA minimization has practical impact.** Minimizing the DFA from a regex reduces memory usage in production systems. Pattern matching in network intrusion detection systems (Snort, Suricata) processes thousands of patterns simultaneously and benefits directly from minimization.
+3. **Star height reflects complexity.** Expressions with nested Kleene stars require more complex automata. When designing patterns, minimizing star depth leads to simpler, faster implementations.
 
-4. **Star height reflects complexity.** Expressions with nested Kleene stars require more complex automata. When designing patterns, minimizing star depth leads to simpler, faster implementations.
+4. **"Regular expression" in practice ≠ regular expression in theory.** Modern regex engines include backreferences, lookahead, and recursion — making them strictly more powerful than regular expressions. They can match non-regular languages like {aⁿbⁿ} but risk catastrophic backtracking.
+
+## Star Height and Regular Expression Complexity
+
+The **star height** of a regular expression is the maximum depth of nested Kleene stars. This measure captures the algebraic complexity of a regular language.
+
+- Star height 0: Finite languages (no stars). Example: `a + b`
+- Star height 1: Single level of star. Example: `(a + b)*`
+- Star height 2: Nested stars. Example: `(a* b*)*`
+
+### Eggan's Theorem
+
+The star height of a regular language is a property of the language itself, not just a specific expression. Eggan's theorem relates star height to the **cycle rank** of the syntactic monoid's transition graph.
+
+```typescript
+function starHeight(regex: string): number {
+  let maxDepth = 0, depth = 0;
+  for (const c of regex) {
+    if (c === '(') depth++;
+    else if (c === ')') depth--;
+    else if (c === '*') maxDepth = Math.max(maxDepth, depth);
+  }
+  return maxDepth;
+}
+
+console.log(starHeight('(a|b)*'));       // 1
+console.log(starHeight('(a* b*)*'));     // 2
+console.log(starHeight('((a*)*)'));      // 2 (depth 2)
+```
+
+Expressions with higher star height can always be reduced to star height 1 or 2 for regular languages, though the proof is non-trivial. In practice, most regex patterns used in programming have star height 0 or 1.
+
+## Generalised Regular Expressions (GRE)
+
+Regular expressions can be extended with additional operators while preserving their regularity:
+
+| Extension | Notation | Meaning |
+|-----------|----------|---------|
+| Complement | $r^c$ or $\overline{r}$ | $\Sigma^* - L(r)$ |
+| Intersection | $r \cap s$ | $L(r) \cap L(s)$ |
+| Difference | $r - s$ | $L(r) - L(s)$ |
+| Reversal | $r^R$ | Reverse of all strings in $L(r)$ |
+
+These extended operators make some languages easier to describe. For example, "strings with at least one 'a' and at least one 'b'" can be written as $\Sigma^*a\Sigma^* \cap \Sigma^*b\Sigma^*$ — more readable than the pure regex form.
+
+The key result is that **all these extensions describe only regular languages** — they add convenience but not power.
 
 ## Summary
 
@@ -363,6 +554,9 @@ The theoretical connection between regular expressions and automata means every 
 - The state elimination method converts DFA to regular expression by removing states.
 - Algebraic laws allow algebraic manipulation and simplification of regular expressions.
 - Three basic operations correspond to modular NFA constructions (union, concatenation, star).
+- **Star height** measures the nesting depth of Kleene stars and reflects language complexity.
+- **Generalised regular expressions** add intersection, complement, and reversal while remaining regular.
+- **Thompson's construction** provides a practical compiler from regex to executable automaton.
 
 ### Basic
 
@@ -387,6 +581,11 @@ The theoretical connection between regular expressions and automata means every 
 13. Prove that the language { 0â¿1â¿ | n â‰¥ 0 } is not regular (cannot be described by a regular expression).
 14. Show that every regular expression can be converted to an equivalent Îµ-free NFA (no Îµ-transitions) with at most 2|r| states, where |r| is the length of the expression.
 15. Implement (in pseudocode) the Thompson construction: given a parse tree of a regular expression, produce an NFA-Îµ. Your algorithm should handle union, concatenation, and Kleene star.
+16. Implement the full Thompson construction in TypeScript as shown in the chapter. Extend it to support `+` (one or more) and `?` (optional) operators.
+17. Using the state elimination method, convert the DFA for "binary strings divisible by 3" (Example 1.3) to a regular expression. Verify your answer by testing on sample strings.
+18. Write a TypeScript function that, given a DFA transition table, produces a regular expression using Arden's lemma. Test it on a 3-state DFA of your choice.
+19. Compare the matching time of an NFA-based simulator vs a backtracking engine on the input `"aaaa...a!"` matched against `(a*)*b`. Explain why catastrophic backtracking occurs.
+20. Prove that regular expressions are closed under intersection by constructing an NFA-ε for L(r) ∩ L(s) given the regular expressions r and s.
 
 ## Further Reading
 

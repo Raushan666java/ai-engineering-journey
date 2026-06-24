@@ -416,6 +416,349 @@ Next: $7^2 - 1 = 49 - 1 = 48$
 
 **Answer:** 48
 
+### TypeScript: Logical Reasoning Toolkit
+
+```typescript
+// === Syllogism Venn Diagram Checker ===
+type StatementType = "All" | "No" | "Some" | "SomeNot";
+interface Proposition { subject: string; type: StatementType; object: string; }
+
+class SyllogismSolver {
+  static evaluate(
+    premises: Proposition[],
+    conclusion: Proposition
+  ): { valid: boolean; explanation: string } {
+    // Check each inference rule
+    const allSubjects = [...new Set(premises.map(p => p.subject).concat(premises.map(p => p.object)))];
+
+    // Build adjacency: does every A that is B also relate to C?
+    const allRelations: Map<string, Set<string>> = new Map();
+    for (const p of premises) {
+      if (p.type === "All") {
+        if (!allRelations.has(p.subject)) allRelations.set(p.subject, new Set());
+        allRelations.get(p.subject)!.add(p.object);
+      }
+      if (p.type === "No") {
+        if (!allRelations.has(p.subject)) allRelations.set(p.subject, new Set());
+        allRelations.get(p.subject)!.add(`not_${p.object}`);
+      }
+      if (p.type === "Some") {
+        if (!allRelations.has(p.subject)) allRelations.set(p.subject, new Set());
+        allRelations.get(p.subject)!.add(`some_${p.object}`);
+      }
+    }
+
+    // Transitive check for "All A are B + All B are C => All A are C"
+    if (conclusion.type === "All") {
+      const subj = conclusion.subject;
+      const obj = conclusion.object;
+      const direct = allRelations.get(subj);
+      if (direct?.has(obj)) return { valid: true, explanation: `${subj} ⊆ ${obj} by direct relation` };
+      // Check transitive
+      for (const [key, vals] of allRelations) {
+        if (vals.has(subj) && allRelations.get(key)?.has(obj)) {
+          return { valid: true, explanation: `${subj} ⊆ ${obj} via transitive chain` };
+        }
+      }
+      return { valid: false, explanation: `Cannot prove all ${subj} are ${obj}` };
+    }
+
+    if (conclusion.type === "No") {
+      const subj = conclusion.subject;
+      const obj = conclusion.object;
+      const direct = allRelations.get(subj);
+      if (direct?.has(`not_${obj}`)) return { valid: true, explanation: `No ${subj} is ${obj}` };
+      return { valid: false, explanation: `Cannot prove no ${subj} is ${obj}` };
+    }
+
+    if (conclusion.type === "Some") {
+      if (conclusion.subject === conclusion.object) {
+        return { valid: true, explanation: "Some A are A is trivially true" };
+      }
+      const direct = allRelations.get(conclusion.subject);
+      if (direct?.has(`some_${conclusion.object}`)) {
+        return { valid: true, explanation: `Some ${conclusion.subject} are ${conclusion.object}` };
+      }
+      return { valid: false, explanation: `Cannot prove some ${conclusion.subject} are ${conclusion.object}` };
+    }
+
+    return { valid: false, explanation: "Insufficient information" };
+  }
+
+  static drawVenn(sets: string[], relations: string[]): string {
+    // ASCII Venn representation
+    const [a, b, c] = sets.length >= 3 ? sets : [...sets, "", ""];
+    let diagram = "```\n";
+    diagram += `  ┌─────────────────┐\n`;
+    diagram += `  │  ${a.padEnd(15)}  │\n`;
+    diagram += `  │   ┌─────────┐    │\n`;
+    diagram += `  │   │  ${(a + "∩" + b).padEnd(8)}  │    │\n`;
+    diagram += `  │   │         │    │\n`;
+    diagram += `  │   └─────────┘    │\n`;
+    diagram += `  │  ${b.padEnd(15)}  │\n`;
+    diagram += `  └─────────────────┘\n`;
+    diagram += "```\n";
+    return diagram;
+  }
+}
+
+// === Direction Sense Tracker ===
+type Direction = "N" | "S" | "E" | "W";
+type Turn = "left" | "right";
+
+class DirectionTracker {
+  private x = 0;
+  private y = 0;
+  private facing: Direction = "N";
+
+  private turnLeft: Record<Direction, Direction> = { N: "W", W: "S", S: "E", E: "N" };
+  private turnRight: Record<Direction, Direction> = { N: "E", E: "S", S: "W", W: "N" };
+
+  move(steps: number): void {
+    switch (this.facing) {
+      case "N": this.y += steps; break;
+      case "S": this.y -= steps; break;
+      case "E": this.x += steps; break;
+      case "W": this.x -= steps; break;
+    }
+  }
+
+  turn(direction: Turn): void {
+    this.facing = direction === "left" ? this.turnLeft[this.facing] : this.turnRight[this.facing];
+  }
+
+  getPosition(): { x: number; y: number } {
+    return { x: this.x, y: this.y };
+  }
+
+  getDisplacement(): number {
+    return Math.round(Math.sqrt(this.x * this.x + this.y * this.y) * 100) / 100;
+  }
+
+  getDirection(): Direction {
+    return this.facing;
+  }
+
+  // Execute a sequence: ["E5", "L3", "R4", "R3"]
+  executeSequence(commands: string[]): void {
+    for (const cmd of commands) {
+      const turn = cmd[0];
+      const steps = parseInt(cmd.slice(1), 10);
+      if (turn === "L") this.turn("left");
+      else if (turn === "R") this.turn("right");
+      else if (turn === "F") { /* continue straight */ }
+      this.move(steps);
+      console.log(`After ${cmd}: (${this.x}, ${this.y}) facing ${this.facing}`);
+    }
+  }
+}
+
+// === Blood Relation Tree Builder ===
+class Person {
+  constructor(
+    public name: string,
+    public gender: "M" | "F",
+    public spouse?: Person,
+    public children: Person[] = [],
+    public parents: Person[] = []
+  ) {}
+}
+
+class FamilyTree {
+  private people = new Map<string, Person>();
+
+  addPerson(name: string, gender: "M" | "F"): Person {
+    const p = new Person(name, gender);
+    this.people.set(name, p);
+    return p;
+  }
+
+  addMarriage(name1: string, name2: string): void {
+    const p1 = this.people.get(name1)!;
+    const p2 = this.people.get(name2)!;
+    p1.spouse = p2; p2.spouse = p1;
+  }
+
+  addChild(parentName: string, childName: string): void {
+    const parent = this.people.get(parentName)!;
+    const child = this.people.get(childName)!;
+    parent.children.push(child);
+    child.parents.push(parent);
+    // Also add to spouse's children
+    if (parent.spouse) {
+      parent.spouse.children.push(child);
+      if (!child.parents.includes(parent.spouse)) child.parents.push(parent.spouse);
+    }
+  }
+
+  getRelation(from: string, to: string): string {
+    const p1 = this.people.get(from)!;
+    const p2 = this.people.get(to)!;
+
+    // Check parent-child
+    if (p1.parents.includes(p2)) return p2.gender === "M" ? "Father" : "Mother";
+    if (p1.children.includes(p2)) return p2.gender === "M" ? "Son" : "Daughter";
+
+    // Check siblings (shared parent)
+    for (const parent of p1.parents) {
+      if (parent.children.includes(p2) && p2 !== p1) {
+        return p2.gender === "M" ? "Brother" : "Sister";
+      }
+    }
+
+    // Check grandparent
+    for (const parent of p1.parents) {
+      if (parent.parents.includes(p2)) return p2.gender === "M" ? "Grandfather" : "Grandmother";
+    }
+
+    // Spouse
+    if (p1.spouse === p2) return p2.gender === "M" ? "Husband" : "Wife";
+
+    return "Unknown (extended relation)";
+  }
+
+  printTree(root: string, indent: number = 0): void {
+    const person = this.people.get(root)!;
+    console.log(`${"  ".repeat(indent)}${person.name} (${person.gender})${person.spouse ? ` m. ${person.spouse.name}` : ""}`);
+    for (const child of person.children) {
+      this.printTree(child.name, indent + 1);
+    }
+  }
+}
+
+// === Series Completion ===
+class SeriesSolver {
+  static findNext(series: number[]): number | null {
+    // Check arithmetic
+    const diff = series[1] - series[0];
+    if (series.every((v, i) => i === 0 || v - series[i - 1] === diff)) {
+      return series[series.length - 1] + diff;
+    }
+
+    // Check geometric
+    if (series[0] !== 0) {
+      const ratio = series[1] / series[0];
+      if (ratio % 1 === 0 && series.every((v, i) => i === 0 || v / series[i - 1] === ratio)) {
+        return series[series.length - 1] * ratio;
+      }
+    }
+
+    // Check n^2 - 1 pattern
+    const squares = series.map((v, i) => Math.sqrt(v + 1));
+    if (squares.every(s => s % 1 === 0)) {
+      const next = series.length + 2;
+      return next * next - 1;
+    }
+
+    // Check Fibonacci-like
+    if (series.length >= 3 && series[2] === series[0] + series[1]) {
+      return series[series.length - 1] + series[series.length - 2];
+    }
+
+    return null; // pattern not recognized
+  }
+
+  static findNextLetter(letters: string[]): string | null {
+    // Positional pattern
+    const positions = letters.map(l => l.toUpperCase().charCodeAt(0) - 64);
+    const diffs = positions.slice(1).map((p, i) => p - positions[i]);
+    if (diffs.every(d => d === diffs[0])) {
+      const nextPos = positions[positions.length - 1] + diffs[0];
+      if (nextPos >= 1 && nextPos <= 26) return String.fromCharCode(nextPos + 64);
+    }
+    // Increasing gap: A(1)→C(3)→F(6)→J(10): gaps +2,+3,+4
+    const gaps = diffs;
+    if (gaps.length >= 2 && gaps.every((_, i) => i === 0 || gaps[i] === gaps[i - 1] + 1)) {
+      const nextGap = gaps[gaps.length - 1] + 1;
+      const nextPos = positions[positions.length - 1] + nextGap;
+      if (nextPos >= 1 && nextPos <= 26) return String.fromCharCode(nextPos + 64);
+    }
+    return null;
+  }
+}
+
+// === Demo ===
+const dir = new DirectionTracker();
+console.log("Direction Demo:");
+dir.executeSequence(["E5", "L3", "R4", "R3"]);
+console.log(`Displacement: ${dir.getDisplacement()} km`);
+
+const tree = new FamilyTree();
+tree.addPerson("John", "M"); tree.addPerson("Mary", "F");
+tree.addMarriage("John", "Mary");
+tree.addPerson("Bob", "M"); tree.addPerson("Alice", "F");
+tree.addChild("John", "Bob"); tree.addChild("Mary", "Alice");
+console.log("\nFamily Tree:");
+tree.printTree("John");
+console.log(`Relation Bob→John: ${tree.getRelation("Bob", "John")}`);
+
+console.log("\nSeries:");
+console.log(`3, 8, 15, 24, 35 → next: ${SeriesSolver.findNext([3, 8, 15, 24, 35])}`);
+console.log(`A, C, F, J → next: ${SeriesSolver.findNextLetter(["A", "C", "F", "J"])}`);
+```
+
+### Mermaid: Syllogism Decision Tree
+
+```mermaid
+flowchart TD
+    A[Two Statements] --> B{Types?}
+    B -->|All + All| C[Transitive: A→B + B→C => A→C]
+    B -->|All + No| D[A excluded from C via B]
+    B -->|Some + All| E[Some A are C]
+    B -->|Some + No| F[Some A not C]
+    B -->|All + Some| G[Cannot conclude directly]
+    C & D & E & F & G --> H{Conclusion matches?}
+    H -->|Yes| I[Follows]
+    H -->|No, but complementary pair| J[Either-Or follows]
+    H -->|No| K[Does not follow]
+```
+
+### Mermaid: Blood Relation Solving Strategy
+
+```mermaid
+flowchart TD
+    A[Read Relations] --> B[Identify Root Person]
+    B --> C{Has Spouse?}
+    C -->|Yes| D[Add Spouse as Same Generation]
+    C -->|No| E[Check for Siblings]
+    D --> F{Has Children?}
+    E --> F
+    F -->|Yes| G[Add Children as Next Generation]
+    F -->|No| H[Check Parents]
+    H --> I[Add Parents as Previous Generation]
+    G --> J[Label All Relationships]
+    I --> J
+    J --> K[Count Generations Between Query Persons]
+    K --> L[Answer the Question]
+```
+
+### Additional Exercises (Level 2 & 3)
+
+14. **Coding-Decoding:** In a certain code, "COMPUTER" is written as "RFUVQNPC". How is "PRINTER" written?
+15. **Blood Relation:** A is the mother of B. C is the sister of A. D is the son of C. E is the father of D. How is E related to B?
+16. **Direction:** A man walks 10m north, turns right, walks 15m, turns right, walks 20m, turns left, walks 10m, turns left, walks 5m. In which direction is he facing now and how far is he from the start?
+17. **Series:** Find the next term: 2Z, 5Y, 10X, 17W, ?
+18. **Complex Puzzle (TypeScript):** Solve using constraint propagation.
+
+```typescript
+function solvePuzzle(): void {
+  const people = ["A", "B", "C", "D"];
+  const cities = ["Delhi", "Mumbai", "Chennai", "Kolkata"];
+  const profs = ["Doctor", "Engineer", "Teacher", "Artist"];
+  const constraints = [
+    (a: string[]) => a[0] !== "Doctor",  // Delhi person not Doctor
+    (a: string[]) => a[1] === "Engineer", // Mumbai person is Engineer
+    (a: string[]) => a[2] === "Artist",   // Chennai person is Artist
+    (a: string[]) => a[3] === "Lawyer",   // Kolkata person is Lawyer
+  ];
+  console.log("Constraint puzzle: assign each person a city and profession");
+}
+```
+
+### Answer Key (Additional)
+
+14. QSOHDSFQ (each letter shifted by pattern) | 15. Brother-in-law | 16. Facing south, 10m from start | 17. 26V (pattern: n²+1, reverse alphabet letter)
+
 ## Summary
 
 - Syllogisms: draw Venn diagrams for each possibility; eliminate conclusions that don't necessarily follow

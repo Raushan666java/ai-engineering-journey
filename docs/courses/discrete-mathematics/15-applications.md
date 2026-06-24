@@ -599,6 +599,244 @@ Wait, let me recalculate: items 1 (2,3) + 2 (3,4) + 3 (4,5) is weight 9 > 8. Ite
 4. **Formal languages define syntax** — every programming language is defined by a context-free grammar; every regex compiles to a DFA.
 5. **Discrete math runs the internet** — from PageRank (graph theory) to TLS (number theory) to routing (shortest paths).
 
+### 15.6 Additional Applications in Practice
+
+**Theorem 15.6 (Max-Flow Min-Cut Theorem).** In any flow network, the value of the maximum flow equals the capacity of the minimum $s$-$t$ cut.
+
+```typescript
+function fordFulkerson(
+  capacity: number[][],
+  source: number,
+  sink: number
+): { maxFlow: number; residual: number[][] } {
+  const n = capacity.length;
+  const residual = capacity.map(row => [...row]);
+  let maxFlow = 0;
+
+  function bfsPath(): number[] | null {
+    const parent = new Array(n).fill(-1);
+    const queue = [source];
+    parent[source] = source;
+    while (queue.length > 0) {
+      const u = queue.shift()!;
+      for (let v = 0; v < n; v++) {
+        if (parent[v] === -1 && residual[u][v] > 0) {
+          parent[v] = u;
+          if (v === sink) return parent;
+          queue.push(v);
+        }
+      }
+    }
+    return null;
+  }
+
+  let parent = bfsPath();
+  while (parent !== null) {
+    let flow = Infinity;
+    for (let v = sink; v !== source; v = parent[v]) {
+      flow = Math.min(flow, residual[parent[v]][v]);
+    }
+    for (let v = sink; v !== source; v = parent[v]) {
+      residual[parent[v]][v] -= flow;
+      residual[v][parent[v]] += flow;
+    }
+    maxFlow += flow;
+    parent = bfsPath();
+  }
+  return { maxFlow, residual };
+}
+
+// Network with 4 nodes: s=0, a=1, b=2, t=3
+const cap: number[][] = [
+  [0, 5, 4, 0],
+  [0, 0, 2, 3],
+  [0, 0, 0, 6],
+  [0, 0, 0, 0]
+];
+console.log(fordFulkerson(cap, 0, 3).maxFlow); // 8
+```
+
+### 15.7 Error-Correcting Codes — Hamming(7,4)
+
+```typescript
+function hammingEncode(data: number[]): number[] {
+  const d = [...data];
+  const p1 = d[0] ^ d[1] ^ d[3];
+  const p2 = d[0] ^ d[2] ^ d[3];
+  const p3 = d[1] ^ d[2] ^ d[3];
+  return [p1, p2, d[0], p3, d[1], d[2], d[3]];
+}
+
+function hammingDecode(encoded: number[]): { data: number[]; errorPos: number } {
+  const p1 = encoded[0], p2 = encoded[1], p3 = encoded[3];
+  const d = [encoded[2], encoded[4], encoded[5], encoded[6]];
+  const s1 = p1 ^ d[0] ^ d[1] ^ d[3];
+  const s2 = p2 ^ d[0] ^ d[2] ^ d[3];
+  const s3 = p3 ^ d[1] ^ d[2] ^ d[3];
+  const errorPos = s1 + s2 * 2 + s3 * 4 - 1;
+  return { data: d, errorPos };
+}
+
+function transmitWithError(bits: number[], pos: number): number[] {
+  const result = [...bits];
+  result[pos] ^= 1;
+  return result;
+}
+
+const data = [1, 0, 1, 1];
+const encoded = hammingEncode(data);
+const received = transmitWithError(encoded, 2); // flip bit 2
+const decoded = hammingDecode(received);
+console.log(decoded.errorPos); // 2
+console.log(decoded.data); // [1, 0, 1, 1] — corrected
+```
+
+### 15.8 Automata Theory — DFA Implementation
+
+```typescript
+interface DFA {
+  states: Set<string>;
+  alphabet: Set<string>;
+  transitions: Map<string, Map<string, string>>;
+  start: string;
+  accept: Set<string>;
+}
+
+function runDFA(dfa: DFA, input: string): boolean {
+  let state = dfa.start;
+  for (const symbol of input) {
+    const next = dfa.transitions.get(state)?.get(symbol);
+    if (!next) return false;
+    state = next;
+  }
+  return dfa.accept.has(state);
+}
+
+// DFA that accepts binary strings containing "00"
+const dfa00: DFA = {
+  states: new Set(["q0", "q1", "q2"]),
+  alphabet: new Set(["0", "1"]),
+  transitions: new Map([
+    ["q0", new Map([["0", "q1"], ["1", "q0"]])],
+    ["q1", new Map([["0", "q2"], ["1", "q0"]])],
+    ["q2", new Map([["0", "q2"], ["1", "q2"]])]
+  ]),
+  start: "q0",
+  accept: new Set(["q2"])
+};
+
+console.log(runDFA(dfa00, "1010")); // false
+console.log(runDFA(dfa00, "1001")); // true
+console.log(runDFA(dfa00, "000"));  // true
+```
+
+### 15.9 Matching and Hall's Theorem
+
+**Theorem 15.7 (Hall's Marriage Theorem).** A bipartite graph $G = (X \cup Y, E)$ has a matching that covers $X$ iff for every subset $S \subseteq X$, $|N(S)| \geq |S|$.
+
+```typescript
+function hasPerfectMatching(
+  X: number[],
+  Y: number[],
+  edges: [number, number][]
+): boolean {
+  const adj = new Map<number, number[]>();
+  for (const [x, y] of edges) {
+    if (!adj.has(x)) adj.set(x, []);
+    adj.get(x)!.push(y);
+  }
+
+  // Check Hall's condition for all subsets S ⊆ X
+  for (let mask = 1; mask < (1 << X.length); mask++) {
+    const S = X.filter((_, i) => mask & (1 << i));
+    const neighbors = new Set<number>();
+    for (const x of S) {
+      for (const y of adj.get(x) || []) neighbors.add(y);
+    }
+    if (neighbors.size < S.length) return false;
+  }
+  return true;
+}
+
+// Example: X={1,2,3}, Y={a,b,c}, edges: (1,a),(1,b),(2,b),(2,c),(3,c)
+const X = [1, 2, 3];
+const Y = ["a", "b", "c"];
+const E: [number, string][] = [[1,"a"],[1,"b"],[2,"b"],[2,"c"],[3,"c"]];
+console.log(hasPerfectMatching(X, Y, E)); // true
+```
+
+### 15.10 Knapsack Problem — Dynamic Programming
+
+```typescript
+function knapsack01(
+  weights: number[],
+  values: number[],
+  capacity: number
+): { maxValue: number; selected: number[] } {
+  const n = weights.length;
+  const dp: number[][] = Array.from({ length: n + 1 }, () =>
+    new Array(capacity + 1).fill(0)
+  );
+
+  for (let i = 1; i <= n; i++) {
+    for (let w = 0; w <= capacity; w++) {
+      if (weights[i - 1] <= w) {
+        dp[i][w] = Math.max(
+          dp[i - 1][w],
+          dp[i - 1][w - weights[i - 1]] + values[i - 1]
+        );
+      } else {
+        dp[i][w] = dp[i - 1][w];
+      }
+    }
+  }
+
+  const selected: number[] = [];
+  let w = capacity;
+  for (let i = n; i > 0; i--) {
+    if (dp[i][w] !== dp[i - 1][w]) {
+      selected.push(i - 1);
+      w -= weights[i - 1];
+    }
+  }
+  return { maxValue: dp[n][capacity], selected };
+}
+
+console.log(knapsack01([1, 2, 3, 4], [2, 3, 4, 5], 6));
+// { maxValue: 9, selected: [2, 1, 0] } — items 3+2+1 = 6 weight, value 9
+```
+
+```mermaid
+flowchart LR
+    subgraph "Discrete Math Applications Map"
+        A[Graph Theory] --> B[PageRank, GPS, Social Nets]
+        C[Number Theory] --> D[RSA, TLS, Blockchain]
+        E[Boolean Algebra] --> F[CPU Design, Error Correction]
+        G[Probability] --> H[ML, Risk Analysis]
+        I[Formal Languages] --> J[Compilers, NLP]
+        K[Combinatorics] --> L[Network Design, Scheduling]
+    end
+```
+
+**Example 15.11** (Chromatic number of common graphs).
+- $K_n$: $\chi(K_n) = n$
+- $C_n$ (cycle): $\chi(C_n) = 2$ if $n$ even, $3$ if $n$ odd
+- $W_n$ (wheel): $\chi(W_n) = 3$ if $n$ odd, $4$ if $n$ even
+- Petersen graph: $\chi(P) = 3$
+- Planar graphs: $\chi(G) \leq 4$ (Four Color Theorem)
+
+## Additional Exercises
+
+16. Find the maximum flow for a network with 5 nodes: $s \to a$ (8), $s \to b$ (6), $a \to b$ (3), $a \to t$ (5), $b \to t$ (7), $b \to c$ (4), $c \to t$ (4).
+
+17. Design a DFA that accepts binary strings with an even number of 0s and an odd number of 1s.
+
+18. A Hamming(15,11) code has 11 data bits and 4 parity bits. How many errors can it correct? How many can it detect?
+
+19. Write a TypeScript function that solves the 0/1 knapsack problem using recursion with memoization (top-down DP).
+
+20. Prove that if a bipartite graph has a perfect matching, then $|X| = |Y|$ and Hall's condition holds.
+
 ## Exercises
 
 ### Review Questions

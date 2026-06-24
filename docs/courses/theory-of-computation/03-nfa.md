@@ -268,6 +268,170 @@ graph TD
 
 The NFA accepts if any leaf node is an accepting state after processing all input. The simulation implicitly performs a breadth-first search of this tree.
 
+## Thompson's Construction: From Regex to NFA
+
+One of the most important applications of NFA theory is **Thompson's construction**, which converts a regular expression into an equivalent NFA-ε. This is the foundation of how regex engines work under the hood.
+
+### Basic Building Blocks
+
+| Regex | NFA Fragment | Description |
+|-------|-------------|-------------|
+| \(a\) | `q₀ --a--> q₁` | Single symbol |
+| \(ε\) | `q₀` (same state is accepting) | Empty string |
+| ∅ | `q₀` (non-accepting with no transitions) | Empty language |
+| \(r_1 \mid r_2\) | New start with ε to both sub-NFAs | Union |
+| \(r_1 r_2\) | Accept of r₁ connects via ε to start of r₂ | Concatenation |
+| \(r^*\) | Loop: ε from accept back to start | Kleene star |
+
+### TypeScript: Thompson Construction
+
+```typescript
+type NFragment = { start: string; accept: string };
+
+class ThompsonNFA {
+  private stateCounter = 0;
+  private transitions: Map<string, Map<string, Set<string>>> = new Map();
+
+  private newState(): string {
+    return `q${this.stateCounter++}`;
+  }
+
+  symbol(sym: string): NFragment {
+    const s = this.newState(), a = this.newState();
+    this.addTrans(s, sym, a);
+    return { start: s, accept: a };
+  }
+
+  private addTrans(from: string, sym: string, to: string) {
+    if (!this.transitions.has(from))
+      this.transitions.set(from, new Map());
+    const t = this.transitions.get(from)!;
+    if (!t.has(sym)) t.set(sym, new Set());
+    t.get(sym)!.add(to);
+  }
+
+  union(r1: NFragment, r2: NFragment): NFragment {
+    const s = this.newState(), a = this.newState();
+    this.addTrans(s, 'ε', r1.start);
+    this.addTrans(s, 'ε', r2.start);
+    this.addTrans(r1.accept, 'ε', a);
+    this.addTrans(r2.accept, 'ε', a);
+    return { start: s, accept: a };
+  }
+
+  concat(r1: NFragment, r2: NFragment): NFragment {
+    this.addTrans(r1.accept, 'ε', r2.start);
+    return { start: r1.start, accept: r2.accept };
+  }
+
+  star(r: NFragment): NFragment {
+    const s = this.newState(), a = this.newState();
+    this.addTrans(s, 'ε', r.start);
+    this.addTrans(s, 'ε', a);
+    this.addTrans(r.accept, 'ε', r.start);
+    this.addTrans(r.accept, 'ε', a);
+    return { start: s, accept: a };
+  }
+}
+
+// Build NFA for (a|b)*ab
+const th = new ThompsonNFA();
+const a = th.symbol('a');
+const b = th.symbol('b');
+const unionAB = th.union(a, b);
+const starAB = th.star(unionAB);
+const a2 = th.symbol('a');
+const b2 = th.symbol('b');
+const expr = th.concat(th.concat(starAB, a2), b2);
+console.log(`NFA for (a|b)*ab: start=${expr.start}, accept=${expr.accept}`);
+```
+
+### Mermaid: Subset Construction Visualization
+
+```mermaid
+graph LR
+    subgraph "NFA States"
+        q0((q₀))
+        q1((q₁))
+        q2(((q₂)))
+    end
+    subgraph "DFA States (Subsets)"
+        s0["{q₀}"]
+        s01["{q₀,q₁}"]
+        s02["{q₀,q₂}"]
+    end
+    s0 -->|a| s01
+    s0 -->|b| s0
+    s01 -->|a| s01
+    s01 -->|b| s02
+    s02 -->|a| s01
+    s02 -->|b| s0
+```
+
+Each DFA state is labeled by the set of NFA states reachable at that point. The DFA transitions follow the union of all NFA transitions from the constituent states.
+
+## NFA to DFA: Detailed Subset Construction in TypeScript
+
+```typescript
+function nfaToDfa(nfa: NFA): DFA {
+  const nfaStates = [...nfa['Q']];
+  const sigma = [...nfa['sigma']];
+
+  // Map from DFA state (subset of NFA states) to DFA state name
+  const subsetNames = new Map<string, string>();
+  const dfaDelta = new Map<string, string>();
+  const dfaStates = new Set<string>();
+  const dfaAccept = new Set<string>();
+  const worklist: string[] = [];
+
+  const startSubset = [...nfa['eclose'](new Set([nfa['q0']]))].sort().join(',');
+  subsetNames.set(startSubset, `{${startSubset}}`);
+  worklist.push(startSubset);
+  dfaStates.add(startSubset);
+
+  while (worklist.length > 0) {
+    const current = worklist.pop()!;
+    const currentStates = new Set(current.split(',').filter(s => s.length > 0));
+
+    // Check if this subset contains an accepting state
+    for (const s of currentStates) {
+      if (nfa['F'].has(s)) {
+        dfaAccept.add(current);
+        break;
+      }
+    }
+
+    for (const sym of sigma) {
+      const nextSet = new Set<string>();
+      for (const s of currentStates) {
+        const trans = nfa['delta'].get(`${s},${sym}`);
+        if (trans) for (const t of trans) nextSet.add(t);
+      }
+
+      const eclosed = [...nfa['eclose'](nextSet)].sort().join(',');
+      const key = `${current},${sym}`;
+      dfaDelta.set(key, eclosed);
+
+      if (!subsetNames.has(eclosed)) {
+        subsetNames.set(eclosed, `{${eclosed}}`);
+        dfaStates.add(eclosed);
+        worklist.push(eclosed);
+      }
+    }
+  }
+
+  return new DFA(
+    dfaStates,
+    nfa['sigma'],
+    dfaDelta,
+    startSubset,
+    dfaAccept
+  );
+}
+```
+
+The subset construction demonstrates that NFAs are a **convenience abstraction** — they make automaton design easier without expanding the class of recognizable languages.
+
 ## Practical Takeaways
 
 1. **Nondeterminism is a specification tool.** When designing an automaton, start with an NFA for clarity, then convert to a DFA for implementation. The NFA captures the *what* without worrying about the *how*.
@@ -373,16 +537,9 @@ The NFA accepts if any leaf node is an accepting state after processing all inpu
 - Nondeterminism simplifies automaton design for many languages.
 - The subset construction is the basis for converting regex patterns into efficient matchers.
 - Understanding NFA computation trees is essential for grasping how backtracking regex engines work.
-
-## Practical Takeaways
-
-1. **Use NFAs for design, DFAs for execution.** Nondeterminism makes automata easier to design and reason about; determinism makes them efficient to execute. The subset construction bridges both worlds.
-
-2. **ε-closure is the key operation.** Every NFA-ε algorithm centers on computing ε-closure. Master this, and you understand NFA simulation, subset construction, and the conversion algorithms.
-
-3. **Exponential blowup is real but manageable.** The worst-case DFA from subset construction can be exponentially larger than the NFA. Always compute only reachable subsets — unreachable states inflate the DFA unnecessarily.
-
-4. **Nondeterminism reappears at higher levels.** NPDA > DPDA and the P vs NP question show that nondeterminism's power varies by model. Finite automata are the only model where nondeterminism adds no power at all.
+- **Thompson's construction** provides a systematic method for building NFA-ε fragments from regular expressions, forming the theoretical basis of practical regex engines.
+- **Computation tree analysis** reveals that NFA acceptance can be modeled as reachability in a directed graph of configurations.
+- The **exponential state blowup** in the DFA equivalent to an NFA is worst-case unavoidable, as shown by the language family where the k-th symbol from the end is constrained.
 
 ## Exercises
 
@@ -409,3 +566,39 @@ The NFA accepts if any leaf node is an accepting state after processing all inpu
 13. Prove that for any NFA, the subset construction yields a DFA with at most 2â¿ states, and that this bound is tight â€” exhibit a family of languages Lâ‚™ that require a DFA with 2â¿ states but only an NFA with n+1 states.
 14. Design an NFA-Îµ where Îµ-transitions create exponentially many states in the equivalent DFA. Show the full subset construction.
 15. Given two NFA-Îµ Nâ‚ and Nâ‚‚, show how to construct an NFA-Îµ for L(Nâ‚)L(Nâ‚‚) (concatenation) and L(Nâ‚)* (Kleene star) using Îµ-transitions. Prove the constructions correct.
+16. Implement Thompson's construction in TypeScript for the full regex syntax including union (`|`), concatenation, and Kleene star (`*`). Test it by building the NFA for `(0|1)*00` and simulating it on "100" and "101".
+17. Write a TypeScript function that takes an NFA and returns a DFA using the full subset construction with ε-closure handling. Test it on the NFA from Example 2.1.
+18. Prove that if an NFA has k states, the equivalent minimal DFA may have up to 2^k states. Construct a family of languages where this exponential blowup is realized. (Hint: consider the language of strings where the k-th symbol from the end is 1.)
+
+### Mermaid: NFA to DFA Conversion Flow
+
+```mermaid
+flowchart TD
+    A["Start with NFA N<br/>(Q, Σ, δ, q₀, F)"] --> B["Compute ε-closure of start set<br/>S₀ = ECLOSE({q₀})"]
+    B --> C["Add S₀ to worklist<br/>and DFA states Q_D"]
+    C --> D["Pop state S from worklist"]
+    D --> E["For each symbol a ∈ Σ:<br/>T = ∪_{r∈S} ECLOSE(δ(r,a))"]
+    E --> F{"Is T already in Q_D?"}
+    F -->|No| G["Add T to Q_D and worklist"]
+    F -->|Yes| H["Use existing state"]
+    G --> I["Add transition<br/>δ_D(S, a) = T"]
+    H --> I
+    I --> J{"More symbols?"}
+    J -->|Yes| E
+    J -->|No| K{"Worklist empty?"}
+    K -->|No| D
+    K -->|Yes| L["Set F_D = {S ∈ Q_D | S ∩ F ≠ ∅}"]
+    L --> M["Return DFA D = (Q_D, Σ, δ_D, S₀, F_D)"]
+```
+
+### Practical Takeaways
+
+1. **Nondeterminism is a specification tool.** When designing an automaton, start with an NFA for clarity, then convert to a DFA for implementation. The NFA captures the *what* without worrying about the *how*.
+
+2. **Epsilon transitions enable modularity.** Use ε-transitions to compose automata like building blocks — glue together sub-automata for union, concatenation, and Kleene star. Thompson's construction is the canonical example.
+
+3. **Subset construction can explode.** An NFA with k states can yield a DFA with up to 2^k states. In practice, many subsets are unreachable, but the worst case is real and limits direct DFA generation.
+
+4. **NFA simulation is efficient.** Simulating an NFA directly (tracking state sets) takes O(k²n) time for k states and n input symbols — no need to materialize the DFA unless you need repeated simulations.
+
+5. **Thompson construction is everywhere.** Modern regex engines like PCRE, RE2, and Rust's regex crate all build NFA representations internally, then apply variants of the subset construction to run matches efficiently.

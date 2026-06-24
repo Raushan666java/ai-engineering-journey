@@ -370,6 +370,7 @@ function cykParse(grammar: Grammar, input: string): boolean {
     Array.from({ length: n }, () => new Set<string>())
   );
 
+  // Initialize: find all variables that derive each single symbol
   for (let i = 0; i < n; i++) {
     const char = input[i];
     for (const [varName, rhsList] of grammar.productions) {
@@ -381,6 +382,7 @@ function cykParse(grammar: Grammar, input: string): boolean {
     }
   }
 
+  // Fill table for longer substrings
   for (let len = 2; len <= n; len++) {
     for (let i = 0; i <= n - len; i++) {
       const j = i + len - 1;
@@ -402,6 +404,264 @@ function cykParse(grammar: Grammar, input: string): boolean {
 
   return table[0][n - 1].has(grammar.start);
 }
+
+// Test: L = { aⁿbⁿ | n ≥ 0 } with grammar S → aSb | ε
+const grammar: Grammar = {
+  variables: new Set(['S']),
+  terminals: new Set(['a', 'b']),
+  productions: new Map([
+    ['S', [['a', 'S', 'b'], ['ε']]]
+  ]),
+  start: 'S',
+};
+// Note: CYK requires CNF, so this test needs CNF conversion first
+```
+
+## CYK Algorithm Visualization
+
+```mermaid
+graph TD
+    subgraph "CYK Table for n=5"
+        T11["T[1,1] = {A,C}<br/>w₁=a"] --- T22["T[2,2] = {B}<br/>w₂=b"]
+        T22 --- T33["T[3,3] = {B}<br/>w₃=b"]
+        T33 --- T44["T[4,4] = {A,C}<br/>w₄=a"]
+        
+        T12["T[1,2] = {S}<br/>AB from T[1,1]×T[2,2]"]
+        T23["T[2,3]"]
+        T34["T[3,4] = {S}<br/>AB from T[3,3]×T[4,4]"]
+        
+        T13["T[1,3]"]
+        T24["T[2,4]"]
+        
+        T14["T[1,4]"]
+        
+        T11 -.-> T12
+        T22 -.-> T12
+        T22 -.-> T23
+        T33 -.-> T23
+        T33 -.-> T34
+        T44 -.-> T34
+    end
+```
+
+## Ogden's Lemma: A Concrete Application
+
+Ogden's lemma is essential when the basic pumping lemma's constraint \(|vxy| \leq p\) is not enough.
+
+**Example:** Prove \(L = \{ a^n b^m c^k \mid n = m \text{ or } m = k \}\) is not context-free.
+
+Note: this language is actually context-free! Let's try a language that genuinely needs Ogden's lemma:
+
+\[
+L = \{ a^i b^j c^k \mid i, j, k \geq 0, i = j \text{ and } j = k \text{ is false} \}
+\]
+
+With Ogden's lemma, mark all \(b\)'s and \(c\)'s. Since \(|vxy|\) has at most \(p\) marked positions, and we have \(2p\) marked positions total, the pumpable part can be confined appropriately to derive a contradiction.
+
+### TypeScript: Ogden's Lemma Condition Checker
+
+```typescript
+function checkOgdensCondition(
+  language: (s: string) => boolean,
+  s: string,
+  marked: boolean[]
+): { satisfies: boolean; witness?: string } {
+  if (!language(s)) return { satisfies: false };
+
+  const p = Math.floor(s.length / 3);
+  // Simulate the lemma: try to find uvxyz decomposition
+  for (let vStart = 1; vStart < s.length - 1; vStart++) {
+    for (let vEnd = vStart + 1; vEnd < s.length; vEnd++) {
+      for (let yStart = vEnd; yStart < s.length - 1; yStart++) {
+        for (let yEnd = yStart + 1; yEnd <= s.length; yEnd++) {
+          const v = s.slice(vStart, vEnd);
+          const y = s.slice(yStart, yEnd);
+          if (v.length === 0 && y.length === 0) continue;
+
+          // Check |vxy| ≤ p
+          const vxy = s.slice(vStart, yEnd);
+          if (vxy.length > p) continue;
+
+          // Check v or y has at least one marked position
+          const vMarked = marked.slice(vStart, vEnd).some(m => m);
+          const yMarked = marked.slice(yStart, yEnd).some(m => m);
+          if (!(vMarked || yMarked)) continue;
+
+          // Check pumping
+          for (const i of [0, 2]) {
+            const u = s.slice(0, vStart);
+            const x = s.slice(vEnd, yStart);
+            const z = s.slice(yEnd);
+            const pumped = u + v.repeat(i) + x + y.repeat(i) + z;
+            if (!language(pumped)) {
+              return {
+                satisfies: false,
+                witness: `u='${u}', v='${v}', x='${x}', y='${y}', z='${z}', i=${i}`
+              };
+            }
+          }
+        }
+      }
+    }
+  }
+  return { satisfies: true };
+}
+```
+
+## Decision Properties of Context-Free Languages
+
+For context-free languages, several important questions are **decidable**, but others are **undecidable**. This contrasts with regular languages, where essentially all interesting questions are decidable.
+
+### Decidable Problems
+
+| Problem | Algorithm | Complexity |
+|---------|-----------|------------|
+| **Membership** | CYK / Earley parsing | O(n³) / O(n²) |
+| **Emptiness** | Graph reachability from start variable | O(\|G\|) |
+| **Finiteness** | Cycle detection in dependency graph | O(\|G\|) |
+| **Non-emptiness of intersection with RL** | Product construction | O(\|G\| × \|D\|) |
+
+### Undecidable Problems
+
+| Problem | Explanation |
+|---------|-------------|
+| **Equivalence** | Given two CFGs G₁, G₂, is L(G₁) = L(G₂)? |
+| **Ambiguity** | Is a given CFG inherently ambiguous? |
+| **Universality** | Does a CFG generate all possible strings? |
+| **Intersection emptiness** | Given two CFGs, is L(G₁) ∩ L(G₂) = ∅? |
+| **Inclusion** | Is L(G₁) ⊆ L(G₂)? |
+
+### TypeScript: Membership and Emptiness Checker
+
+```typescript
+type CFG = {
+  start: string;
+  productions: Map<string, string[][]>;
+};
+
+function membership(grammar: CFG, input: string): boolean {
+  // Uses CYK algorithm described above
+  // First convert to CNF, then parse
+  return cykParse(toCNF(grammar), input);
+}
+
+function isEmpty(grammar: CFG): boolean {
+  const reachable = new Set<string>();
+  const queue: string[] = [grammar.start];
+  const generatesTerminals = new Map<string, boolean>();
+
+  while (queue.length > 0) {
+    const varName = queue.shift()!;
+    if (reachable.has(varName)) continue;
+    reachable.add(varName);
+
+    for (const rhs of grammar.productions.get(varName) || []) {
+      for (const sym of rhs) {
+        if (grammar.productions.has(sym) && !reachable.has(sym)) {
+          queue.push(sym);
+        }
+      }
+    }
+  }
+
+  // Check each variable can derive terminal strings
+  for (const varName of reachable) {
+    const prods = grammar.productions.get(varName) || [];
+    for (const rhs of prods) {
+      if (rhs.length === 0) { generatesTerminals.set(varName, true); break; }
+      if (rhs.length === 1 && !grammar.productions.has(rhs[0])) {
+        generatesTerminals.set(varName, true); break;
+      }
+    }
+  }
+
+  return !reachable.has(grammar.start);
+}
+
+function toCNF(grammar: CFG): CFG {
+  // Step 1: Eliminate ε-productions
+  const nullable = new Set<string>();
+  let changed = true;
+  while (changed) {
+    changed = false;
+    for (const [varName, rhsList] of grammar.productions) {
+      for (const rhs of rhsList) {
+        if (rhs.length === 0 && !nullable.has(varName)) {
+          nullable.add(varName); changed = true;
+        }
+      }
+    }
+  }
+
+  // Step 2: Eliminate unit productions (A → B)
+  const unitFree = new Map<string, string[][]>();
+  for (const [varName, rhsList] of grammar.productions) {
+    const nonUnit: string[][] = [];
+    for (const rhs of rhsList) {
+      if (!(rhs.length === 1 && grammar.productions.has(rhs[0]))) {
+        nonUnit.push(rhs);
+      }
+    }
+    unitFree.set(varName, nonUnit);
+  }
+
+  return { start: grammar.start, productions: unitFree };
+}
+```
+
+## Parikh's Theorem
+
+Parikh's theorem is a powerful result that relates context-free languages to regular languages via their commutative images.
+
+**Definition:** For a string \(w\), the Parikh vector \(\Psi(w)\) maps each symbol to its count: \(\Psi(w) = (|w|_{a_1}, |w|_{a_2}, \ldots, |w|_{a_k})\).
+
+**Parikh's Theorem:** For every context-free language \(L\), there exists a regular language \(R\) such that \(\Psi(L) = \Psi(R)\). In other words, every CFL is **semi-linear**: its Parikh image is a semilinear set (a finite union of linear sets).
+
+**Example:** For \(L = \{ a^n b^n \mid n \geq 0 \}\), \(\Psi(L) = \{(n,n) \mid n \geq 0\}\) which is the same as \(\Psi((ab)^*)\).
+
+### Implications
+
+1. **CFLs and counting:** CFLs cannot distinguish all counting patterns — only a restricted class of counting constraints (those expressible as semilinear sets).
+
+2. **Non-CFL by Parikh:** If a language's Parikh image is not semilinear, it cannot be context-free. For example, \(\Psi(\{ a^{n^2} \}) = \{(n^2)\}\) is not semilinear, proving \(\{ a^{n^2} \}\) is not context-free without using the pumping lemma.
+
+3. **Ogmden's lemma vs. Parikh:** Ogden's lemma detects non-context-freeness that Parikh cannot. For example, \(\{ a^n b^m c^n d^m \}\) has a semilinear Parikh image but is not context-free — Ogden's lemma catches this where Parikh does not.
+
+### TypeScript: Parikh Vector Computations
+
+```typescript
+type ParikhVector = Map<string, number>;
+
+function parikhVector(word: string, alphabet: string[]): ParikhVector {
+  const vec = new Map<string, number>();
+  for (const sym of alphabet) vec.set(sym, 0);
+  for (const ch of word) {
+    if (vec.has(ch)) vec.set(ch, vec.get(ch)! + 1);
+  }
+  return vec;
+}
+
+function isSemilinear(vectors: ParikhVector[]): boolean {
+  if (vectors.length === 0) return true;
+  // Check if the set forms a finite union of linear sets
+  // A practical test: validate that the growth is eventually periodic
+  const sorted = vectors.slice(1).sort((a, b) => {
+    const suma = Array.from(a.values()).reduce((s, v) => s + v, 0);
+    const sumb = Array.from(b.values()).reduce((s, v) => s + v, 0);
+    return suma - sumb;
+  });
+  return true; // Placeholder for full implementation
+}
+
+// Example: Parikh image of a^n b^n
+function generateParikhExamples(): ParikhVector[] {
+  const examples: ParikhVector[] = [];
+  for (let n = 0; n <= 10; n++) {
+    const word = 'a'.repeat(n) + 'b'.repeat(n);
+    examples.push(parikhVector(word, ['a', 'b']));
+  }
+  return examples;
+}
 ```
 
 ## Further Reading
@@ -420,18 +680,22 @@ function cykParse(grammar: Grammar, input: string): boolean {
 3. Convert S -> AB, A -> aAb | epsilon, B -> cBd | epsilon to GNF.
 4. Use CYK to determine if "baaba" is generated by S -> AB, A -> a | BA, B -> b | BC, C -> a | AB.
 5. Prove that the regular language { a,b }* is context-free by giving a CFG.
+6. Write a TypeScript function that converts a CFG to CNF by eliminating ε-productions and unit productions.
 
 ### Intermediate
 
-6. Prove that L = { a^n b^m c^n d^m | n, m >= 0 } is context-free by giving a grammar. Then prove { a^n b^n c^n d^n | n >= 0 } is not context-free.
-7. Use Ogden's lemma to prove { a^n b^m c^k | n, m, k >= 0, n = m or n = k } is not context-free (note: this language IS context-free — find the flaw in this proof attempt, or find the actual non-CFL to test Ogden's on).
-8. Show that CFLs are closed under reversal by constructing a new CFG.
-9. Show that the language { w in {a,b,c}* | |w|_a = |w|_b = |w|_c } is not context-free.
-10. Convert the expression grammar E -> E+T | T, T -> T*F | F, F -> (E) | i to CNF.
+7. Prove that L = { a^n b^m c^n d^m | n, m >= 0 } is context-free by giving a grammar. Then prove { a^n b^n c^n d^n | n >= 0 } is not context-free.
+8. Use Ogden's lemma to prove a language that requires marked positions. Construct a language that satisfies the basic pumping lemma but fails Ogden's.
+9. Show that CFLs are closed under reversal by constructing a new CFG.
+10. Show that the language { w in {a,b,c}* | |w|_a = |w|_b = |w|_c } is not context-free.
+11. Convert the expression grammar E -> E+T | T, T -> T*F | F, F -> (E) | i to CNF.
+12. Implement the full CYK algorithm in TypeScript that accepts a grammar in CNF and returns the parse table.
 
 ### Advanced
 
-11. Prove that the CYK algorithm runs in O(n^3) time and O(n^2) space.
-12. Show that { a^p | p is prime } is not context-free.
-13. Prove that if L is a CFL and R is regular, then L - R is a CFL.
-14. Show that the grammar S -> aSb | aSbb | epsilon is inherently ambiguous.
+13. Prove that the CYK algorithm runs in O(n^3) time and O(n^2) space.
+14. Show that { a^p | p is prime } is not context-free.
+15. Prove that if L is a CFL and R is regular, then L - R is a CFL.
+16. Show that the grammar S -> aSb | aSbb | epsilon is inherently ambiguous.
+17. Prove that the language L = { aⁿbᵐcᵖ | n, m, p ≥ 0, n < m < p } is not context-free using the pumping lemma.
+18. Implement the GNF conversion algorithm in TypeScript for a grammar in CNF.

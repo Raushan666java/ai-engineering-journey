@@ -379,6 +379,122 @@ $$(x_{new}, y_{new}) = (1,1) - 0.1 \cdot \langle 2, 4 \rangle = (0.8, 0.6)$$
 
 $f(1,1) = 1 + 2 = 3$, $f(0.8, 0.6) = 0.64 + 0.72 = 1.36$. The function value decreased.
 
+### Example 8: Triple Integral in Spherical Coordinates
+
+Find the volume of the region bounded by the cone $z = \sqrt{x^2 + y^2}$ and the sphere $x^2 + y^2 + z^2 = 1$ (an ice cream cone).
+
+**Solution:** In spherical coordinates, the cone $\phi = \pi/4$ and the sphere is $\rho = 1$.
+
+$$V = \iiint_E 1\,dV = \int_0^{2\pi} \int_0^{\pi/4} \int_0^1 \rho^2 \sin\phi \, d\rho \, d\phi \, d\theta$$
+
+$$= \int_0^{2\pi} d\theta \int_0^{\pi/4} \sin\phi \, d\phi \int_0^1 \rho^2 \, d\rho = 2\pi \cdot [-\cos\phi]_0^{\pi/4} \cdot \left[\frac{\rho^3}{3}\right]_0^1$$
+
+$$= 2\pi \cdot \left(-\frac{\sqrt{2}}{2} + 1\right) \cdot \frac{1}{3} = \frac{2\pi}{3}\left(1 - \frac{\sqrt{2}}{2}\right)$$
+
+### Example 9: Jacobian for Change of Variables
+
+Evaluate $\iint_R (x - y)^2 \sin^2(x + y)\,dA$ where $R$ is the square with vertices $(0,0), (\pi/2, -\pi/2), (\pi, 0), (\pi/2, \pi/2)$.
+
+**Solution:** The region suggests the transformation: $u = x - y$, $v = x + y$.
+
+Solving for $x$ and $y$: $x = (u+v)/2$, $y = (v-u)/2$.
+
+Jacobian: $$J = \begin{vmatrix} \partial x/\partial u & \partial x/\partial v \\ \partial y/\partial u & \partial y/\partial v \end{vmatrix} = \begin{vmatrix} 1/2 & 1/2 \\ -1/2 & 1/2 \end{vmatrix} = \frac{1}{2}$$
+
+The region $R$ transforms to $0 \leq u \leq \pi$, $0 \leq v \leq \pi$ in the $uv$-plane.
+
+$$\iint_R (x-y)^2 \sin^2(x+y)\,dA = \int_0^\pi \int_0^\pi u^2 \sin^2 v \cdot \frac{1}{2} \, du \, dv$$
+
+$$= \frac{1}{2} \int_0^\pi u^2 \, du \int_0^\pi \sin^2 v \, dv = \frac{1}{2} \cdot \left[\frac{u^3}{3}\right]_0^\pi \cdot \left[\frac{v}{2} - \frac{\sin 2v}{4}\right]_0^\pi = \frac{1}{2} \cdot \frac{\pi^3}{3} \cdot \frac{\pi}{2} = \frac{\pi^4}{12}$$
+
+## TypeScript Examples
+
+### Numerical Gradient and Hessian Computation
+
+```typescript
+type Vec2 = [number, number];
+type ScalarFn2 = (x: Vec2) => number;
+
+function numericalGradient(f: ScalarFn2, x: Vec2, h: number = 1e-5): Vec2 {
+  return [
+    (f([x[0] + h, x[1]]) - f([x[0] - h, x[1]])) / (2 * h),
+    (f([x[0], x[1] + h]) - f([x[0], x[1] - h])) / (2 * h),
+  ];
+}
+
+function numericalHessian(f: ScalarFn2, x: Vec2, h: number = 1e-5): number[][] {
+  const fxx = (f([x[0] + h, x[1]]) - 2 * f(x) + f([x[0] - h, x[1]])) / (h * h);
+  const fyy = (f([x[0], x[1] + h]) - 2 * f(x) + f([x[0], x[1] - h])) / (h * h);
+  const fxy = (f([x[0] + h, x[1] + h]) - f([x[0] + h, x[1] - h])
+            - f([x[0] - h, x[1] + h]) + f([x[0] - h, x[1] - h])) / (4 * h * h);
+  return [[fxx, fxy], [fxy, fyy]];
+}
+
+// Test: f(x,y) = x^2 + 3xy + y^2
+const f = (p: Vec2): number => p[0]**2 + 3 * p[0] * p[1] + p[1]**2;
+const grad = numericalGradient(f, [1, 2]);
+console.log(`Gradient at (1,2): (${grad[0].toFixed(4)}, ${grad[1].toFixed(4)})`);
+// Analytical: (2x+3y, 3x+2y) = (8, 7)
+
+const hess = numericalHessian(f, [1, 2]);
+console.log(`Hessian at (1,2): [[${hess[0][0]}, ${hess[0][1]}], [${hess[1][0]}, ${hess[1][1]}]]`);
+// Analytical: [[2, 3], [3, 2]]
+```
+
+### Numerical Double Integration
+
+```typescript
+function doubleIntegral(
+  f: (x: number, y: number) => number,
+  xMin: number, xMax: number,
+  yMin: (x: number) => number,
+  yMax: (x: number) => number,
+  nx: number = 100,
+  ny: number = 100
+): number {
+  const dx = (xMax - xMin) / nx;
+  let total = 0;
+  for (let i = 0; i < nx; i++) {
+    const x = xMin + (i + 0.5) * dx;  // midpoint
+    const yLo = yMin(x), yHi = yMax(x);
+    const dy = (yHi - yLo) / ny;
+    for (let j = 0; j < ny; j++) {
+      const y = yLo + (j + 0.5) * dy;
+      total += f(x, y) * dx * dy;
+    }
+  }
+  return total;
+}
+
+// Integrate f(x,y) = x + 2y over region: 0 ≤ x ≤ 2, x² ≤ y ≤ 2x
+const result = doubleIntegral(
+  (x, y) => x + 2 * y,
+  0, 2,
+  (x) => x * x,
+  (x) => 2 * x,
+  200, 200
+);
+console.log(`Double integral ≈ ${result.toFixed(4)} (expected 5.6)`);
+```
+
+## Real-World Application: Backpropagation as the Chain Rule
+
+Backpropagation, the algorithm that trains neural networks, is fundamentally the multivariable chain rule applied to millions of nested function compositions.
+
+**Forward Pass:** A neural network computes $L = f_L(f_{L-1}(\cdots f_1(x; w_1)\cdots; w_{L-1}); w_L)$ where each layer $f_l$ applies a linear transformation followed by a nonlinear activation.
+
+**Backward Pass (Backpropagation):** For each weight $w_{ij}^{(l)}$, the gradient is computed by:
+
+$$\frac{\partial L}{\partial w_{ij}^{(l)}} = \frac{\partial L}{\partial z_i^{(l)}} \cdot \frac{\partial z_i^{(l)}}{\partial w_{ij}^{(l)}}$$
+
+where $z^{(l)}$ is the pre-activation at layer $l$. The "error signal" $\delta_i^{(l)} = \partial L / \partial z_i^{(l)}$ is propagated backward using:
+
+$$\delta_i^{(l)} = \sum_k \delta_k^{(l+1)} \cdot w_{ki}^{(l+1)} \cdot \sigma'(z_i^{(l)})$$
+
+This is the chain rule: the gradient at layer $l$ depends on gradients at layer $l+1$, chained through the weight matrix and activation derivative.
+
+**Connection to Jacobians:** The entire backpropagation algorithm can be understood as efficient computation of the Jacobian-vector product $\nabla_w L = (J_{f_L} \cdot J_{f_{L-1}} \cdots J_{f_1})^T \cdot 1$, where each $J_{f_l}$ is the Jacobian of layer $l$.
+
 ## Summary
 
 - Partial derivatives compute rates of change with respect to one variable at a time
@@ -410,6 +526,14 @@ $f(1,1) = 1 + 2 = 3$, $f(0.8, 0.6) = 0.64 + 0.72 = 1.36$. The function value dec
 3. **ML Loss Surface:** For $L(w_1,w_2) = (w_1^2 - 1)^2 + (w_2^2 - 2)^2$, find all critical points and classify them.
 
 4. **Flux through Surface:** Compute the flux of $\mathbf{F} = \langle 0, 0, z \rangle$ through the surface of the box $0 \leq x \leq 1$, $0 \leq y \leq 1$, $0 \leq z \leq 1$ using the divergence theorem.
+
+### Additional Exercises
+
+5. **Directional Derivative:** For $f(x,y,z) = x^2 y + yz^3$, find the directional derivative at $(1,2,-1)$ in the direction toward $(3,4,-3)$.
+
+6. **Triple Integral:** Compute $\iiint_E z\,dV$ where $E$ is the tetrahedron bounded by $x=0$, $y=0$, $z=0$, and $x+y+z=1$.
+
+7. **Lagrange Multipliers:** Find the maximum volume of a rectangular box with surface area $S = 24$ (no top).
 
 ### Challenge Problem
 

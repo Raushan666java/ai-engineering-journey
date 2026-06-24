@@ -204,6 +204,256 @@ Understanding undecidability helps engineers recognize what **cannot** be automa
 **Implications for the Church-Turing thesis:**
 The **extended Church-Turing thesis** (every physically realizable computation can be simulated by a probabilistic TM with polynomial slowdown) is challenged by quantum computing. Whether quantum computers provide a super-polynomial advantage remains an active research question.
 
+## TypeScript Applications
+
+### TypeScript 15.1: DFA-based Lexer for a Mini-Language
+
+```typescript
+// Token types
+enum TokenType {
+  NUMBER, IDENTIFIER, KEYWORD, PLUS, MINUS,
+  STAR, SLASH, LPAREN, RPAREN, ASSIGN, EOF, ERROR
+}
+
+class Token {
+  constructor(public type: TokenType, public lexeme: string, public pos: number) {}
+}
+
+class Lexer {
+  private pos = 0;
+  private tokens: Token[] = [];
+
+  constructor(private input: string) {}
+
+  // DFA simulation for each token type
+  private recognizeNumber(): Token | null {
+    let start = this.pos;
+    while (this.pos < this.input.length && /[0-9]/.test(this.input[this.pos]))
+      this.pos++;
+    if (this.pos > start) return new Token(TokenType.NUMBER, this.input.slice(start, this.pos), start);
+    return null;
+  }
+
+  private recognizeIdentifierOrKeyword(): Token | null {
+    let start = this.pos;
+    if (this.pos < this.input.length && /[a-zA-Z_]/.test(this.input[this.pos])) {
+      this.pos++;
+      while (this.pos < this.input.length && /[a-zA-Z0-9_]/.test(this.input[this.pos]))
+        this.pos++;
+      const word = this.input.slice(start, this.pos);
+      const type = ["if", "else", "while", "return"].includes(word)
+        ? TokenType.KEYWORD : TokenType.IDENTIFIER;
+      return new Token(type, word, start);
+    }
+    return null;
+  }
+
+  tokenize(): Token[] {
+    while (this.pos < this.input.length) {
+      if (/[\s]/.test(this.input[this.pos])) { this.pos++; continue; }
+      const num = this.recognizeNumber();
+      if (num) { this.tokens.push(num); continue; }
+      const id = this.recognizeIdentifierOrKeyword();
+      if (id) { this.tokens.push(id); continue; }
+
+      const ch = this.input[this.pos];
+      const map: Record<string, TokenType> = {
+        "+": TokenType.PLUS, "-": TokenType.MINUS,
+        "*": TokenType.STAR, "/": TokenType.SLASH,
+        "(": TokenType.LPAREN, ")": TokenType.RPAREN,
+        "=": TokenType.ASSIGN,
+      };
+      if (map[ch]) {
+        this.tokens.push(new Token(map[ch], ch, this.pos));
+        this.pos++;
+      } else {
+        this.tokens.push(new Token(TokenType.ERROR, ch, this.pos));
+        this.pos++;
+      }
+    }
+    this.tokens.push(new Token(TokenType.EOF, "", this.pos));
+    return this.tokens;
+  }
+}
+
+// Example
+const lexer = new Lexer("if x = 42 + y");
+const tokens = lexer.tokenize();
+tokens.forEach(t =>
+  console.log(`${TokenType[t.type]}: "${t.lexeme}" at ${t.pos}`)
+);
+```
+
+### TypeScript 15.2: Aho-Corasick Multi-Pattern Matcher
+
+```typescript
+// Aho-Corasick automaton for multi-pattern string matching
+// Builds a DFA with failure links (prefix-suffix matching)
+
+class ACTrie {
+  private goto: Map<number, Map<string, number>> = new Map();
+  private fail: Map<number, number> = new Map();
+  private output: Map<number, string[]> = new Map();
+  private nextState = 0;
+
+  constructor(private patterns: string[]) {
+    this.buildTrie();
+    this.buildFailureLinks();
+  }
+
+  private buildTrie() {
+    this.goto.set(0, new Map());
+    this.output.set(0, []);
+    this.patterns.forEach(p => {
+      let state = 0;
+      for (const ch of p) {
+        if (!this.goto.get(state)!.has(ch)) {
+          this.nextState++;
+          this.goto.set(this.nextState, new Map());
+          this.output.set(this.nextState, []);
+          this.goto.get(state)!.set(ch, this.nextState);
+        }
+        state = this.goto.get(state)!.get(ch)!;
+      }
+      this.output.get(state)!.push(p);
+    });
+  }
+
+  private buildFailureLinks() {
+    const queue: number[] = [];
+    // Depth-1 states fail to state 0
+    for (const [ch, state] of this.goto.get(0)!) {
+      this.fail.set(state, 0);
+      queue.push(state);
+    }
+    // BFS to build failure links
+    while (queue.length > 0) {
+      const r = queue.shift()!;
+      for (const [ch, s] of this.goto.get(r)!) {
+        queue.push(s);
+        let f = this.fail.get(r)!;
+        while (f !== 0 && !this.goto.get(f)!.has(ch)) f = this.fail.get(f)!;
+        this.fail.set(s, this.goto.get(f)!.has(ch) ? this.goto.get(f)!.get(ch)! : 0);
+        this.output.set(s, [
+          ...this.output.get(s)!,
+          ...this.output.get(this.fail.get(s)!)!,
+        ]);
+      }
+    }
+  }
+
+  search(text: string): Map<string, number[]> {
+    const results = new Map<string, number[]>();
+    let state = 0;
+    for (let i = 0; i < text.length; i++) {
+      while (state !== 0 && !this.goto.get(state)!.has(text[i]))
+        state = this.fail.get(state)!;
+      state = this.goto.get(state)!.has(text[i])
+        ? this.goto.get(state)!.get(text[i])! : 0;
+      for (const p of this.output.get(state)!) {
+        if (!results.has(p)) results.set(p, []);
+        results.get(p)!.push(i - p.length + 1);
+      }
+    }
+    return results;
+  }
+}
+
+// Example
+const ac = new ACTrie(["he", "she", "his", "hers"]);
+const result = ac.search("ushers");
+for (const [pat, positions] of result) {
+  console.log(`"${pat}" found at positions: ${positions.join(", ")}`);
+}
+// "she" at 1, "he" at 2, "hers" at 2
+```
+
+### TypeScript 15.3: HMM for Part-of-Speech Tagging (Viterbi)
+
+```typescript
+// Hidden Markov Model for POS tagging using the Viterbi algorithm
+
+class HMM {
+  constructor(
+    private states: string[],
+    private observations: string[],
+    private startProb: Map<string, number>,
+    private transProb: Map<string, Map<string, number>>,
+    private emitProb: Map<string, Map<string, number>>
+  ) {}
+
+  viterbi(obs: string[]): string[] {
+    const T = obs.length;
+    const N = this.states.length;
+    const viterbi: number[][] = Array.from({ length: T }, () => new Array(N).fill(0));
+    const backpointer: number[][] = Array.from({ length: T }, () => new Array(N).fill(-1));
+
+    // Initialization
+    for (let s = 0; s < N; s++) {
+      const state = this.states[s];
+      viterbi[0][s] = (this.startProb.get(state) || 0) *
+                       (this.emitProb.get(state)?.get(obs[0]) || 0);
+    }
+
+    // Recursion
+    for (let t = 1; t < T; t++) {
+      for (let s = 0; s < N; s++) {
+        const state = this.states[s];
+        let maxProb = 0;
+        let bestPrev = 0;
+        for (let ps = 0; ps < N; ps++) {
+          const prevState = this.states[ps];
+          const prob = viterbi[t - 1][ps] *
+                       (this.transProb.get(prevState)?.get(state) || 0) *
+                       (this.emitProb.get(state)?.get(obs[t]) || 0);
+          if (prob > maxProb) { maxProb = prob; bestPrev = ps; }
+        }
+        viterbi[t][s] = maxProb;
+        backpointer[t][s] = bestPrev;
+      }
+    }
+
+    // Termination
+    let bestLast = 0;
+    let bestProb = 0;
+    for (let s = 0; s < N; s++) {
+      if (viterbi[T - 1][s] > bestProb) { bestProb = viterbi[T - 1][s]; bestLast = s; }
+    }
+
+    // Backtrack
+    const path: string[] = new Array(T);
+    let current = bestLast;
+    for (let t = T - 1; t >= 0; t--) {
+      path[t] = this.states[current];
+      current = t > 0 ? backpointer[t][current] : 0;
+    }
+    return path;
+  }
+}
+
+// Example: Simple POS tagger
+const hmm = new HMM(
+  ["DET", "NOUN", "VERB", "ADJ"],
+  ["the", "cat", "dog", "runs", "big"],
+  new Map([["DET", 0.5], ["NOUN", 0.3], ["VERB", 0.15], ["ADJ", 0.05]]),
+  new Map([
+    ["DET", new Map([["NOUN", 0.8], ["ADJ", 0.2]])],
+    ["NOUN", new Map([["VERB", 0.6], ["DET", 0.2], ["ADJ", 0.2]])],
+    ["VERB", new Map([["DET", 0.7], ["NOUN", 0.2], ["ADV", 0.1]])],
+    ["ADJ", new Map([["NOUN", 1.0]])],
+  ]),
+  new Map([
+    ["DET", new Map([["the", 1.0]])],
+    ["NOUN", new Map([["cat", 0.5], ["dog", 0.5]])],
+    ["VERB", new Map([["runs", 1.0]])],
+    ["ADJ", new Map([["big", 1.0]])],
+  ])
+);
+
+const tags = hmm.viterbi(["the", "big", "cat", "runs"]);
+console.log(tags.join(" ")); // DET ADJ NOUN VERB
+```
+
 ## Examples
 
 ### Example 15.1: Lexer Design for a Mini-Language
@@ -354,6 +604,10 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 
 6. **Static analysis must approximate.** Because program equivalence is undecidable, all practical static analysis tools must be either incomplete (miss some bugs) or unsound (report false positives). Understanding this trade-off is essential for tool designers and users.
 
+7. **Regex and automata are core security primitives.** Network IDS/IPS systems like Snort and Suricata compile rules into Aho-Corasick DFA automata for line-rate pattern matching. Every security scanner uses automata theory under the hood.
+
+8. **Grammarware is everywhere.** From JSON parse rs and SQL interpreters to HTML sanitizers and configuration file readers — any structured data format relies on automata and formal language theory for correct parsing.
+
 ## Summary
 
 - Finite automata power lexical analysis, pattern matching, and network intrusion detection.
@@ -363,6 +617,7 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 - Automata theory is applied in NLP (morphology, POS tagging), bioinformatics (HMMs, RNA folding), and protocol verification.
 - Undecidability results guide the design of practical static analysis tools.
 - Quantum computing challenges the extended Church-Turing thesis.
+- The entire software stack — from compilers to security to AI — builds on automata theory.
 
 ## Exercises
 
@@ -373,22 +628,26 @@ The CYK-like DP algorithm finds the structure maximizing the number of paired ba
 3. What is the role of the pumping lemma in proving that some languages cannot be parsed with regular expressions?
 4. Give three examples of undecidable problems that affect software engineering.
 5. What is a one-way function and why is it important for cryptography?
+6. Trace the Aho-Corasick automaton on text "cacache" with patterns ["ca", "ac", "che"].
 
 ### Intermediate
 
-6. Design a lexer DFA that recognizes: identifiers ([a-zA-Z_][a-zA-Z0-9_]*), numbers ([0-9]+), and operators (+, -, *, /), with longest match semantics.
-7. Explain how model checking works for verifying hardware designs. What is the state explosion problem?
-8. Show how the LTL formula G(p â†’ F q) can be translated into a BÃ¼chi automaton.
-9. Explain why static analysis tools cannot be both sound (no false negatives) and complete (no false positives) for non-trivial properties.
-10. Describe how RNA secondary structure prediction uses the CYK algorithm or similar DP methods.
+7. Design a lexer DFA that recognizes: identifiers ([a-zA-Z_][a-zA-Z0-9_]*), numbers ([0-9]+), and operators (+, -, *, /), with longest match semantics.
+8. Explain how model checking works for verifying hardware designs. What is the state explosion problem?
+9. Show how the LTL formula G(p → F q) can be translated into a Büchi automaton.
+10. Explain why static analysis tools cannot be both sound (no false negatives) and complete (no false positives) for non-trivial properties.
+11. Describe how RNA secondary structure prediction uses the CYK algorithm or similar DP methods.
+12. Implement a Viterbi algorithm in TypeScript for a 2-state HMM (rainy/sunny) predicting weather from activity observations.
+13. Show the product construction used in model checking for a simple mutual exclusion protocol with 2 processes.
 
 ### Advanced
 
-11. Build a complete lexer and parser (in pseudocode) for a simple expression language using a DFA for tokens and a recursive-descent parser for the CFG. The language should support variables, integers, +, *, parentheses, and assignment.
-12. Prove that the problem of determining whether a C program ever dereferences a null pointer is undecidable (by reduction from the halting problem).
-13. Explain the relationship between P, NP, and the existence of one-way functions. Show that if P = NP, then one-way functions do not exist.
-14. Show how the Aho-Corasick algorithm constructs a finite automaton for multiple pattern matching. What is its complexity?
-15. Write a research summary on the state of quantum computing relative to the Church-Turing thesis, covering BQP, Shor's algorithm, and the limits of quantum speedup.
+14. Build a complete lexer and parser (in pseudocode) for a simple expression language using a DFA for tokens and a recursive-descent parser for the CFG. The language should support variables, integers, +, *, parentheses, and assignment.
+15. Prove that the problem of determining whether a C program ever dereferences a null pointer is undecidable (by reduction from the halting problem).
+16. Explain the relationship between P, NP, and the existence of one-way functions. Show that if P = NP, then one-way functions do not exist.
+17. Show how the Aho-Corasick algorithm constructs a finite automaton for multiple pattern matching. What is its complexity?
+18. Write a research summary on the state of quantum computing relative to the Church-Turing thesis, covering BQP, Shor's algorithm, and the limits of quantum speedup.
+19. Implement an LTL model checker for a simple Kripke structure in TypeScript, checking property G(¬critical₁ ∧ ¬critical₂).
 
 ## Further Reading
 

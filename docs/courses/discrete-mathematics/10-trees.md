@@ -367,6 +367,331 @@ Codes: $A:0$, $B:101$, $C:100$, $D:111$, $E:1101$, $F:1100$. Total bits: $45 \cd
 4. **Huffman requires frequency data** — the compression ratio depends on the frequency distribution.
 5. **Tree height matters** — height determines traversal and search efficiency.
 
+### 10.8 Binary Search Tree Implementation
+
+A Binary Search Tree (BST) is a binary tree where each node's left subtree contains only values less than the node and the right subtree only values greater.
+
+```typescript
+class BSTNode {
+  constructor(
+    public value: number,
+    public left: BSTNode | null = null,
+    public right: BSTNode | null = null
+  ) {}
+}
+
+class BST {
+  root: BSTNode | null = null;
+
+  insert(value: number): void {
+    const insertRec = (node: BSTNode | null, val: number): BSTNode => {
+      if (!node) return new BSTNode(val);
+      if (val < node.value) node.left = insertRec(node.left, val);
+      else if (val > node.value) node.right = insertRec(node.right, val);
+      return node;
+    };
+    this.root = insertRec(this.root, value);
+  }
+
+  search(value: number): boolean {
+    const searchRec = (node: BSTNode | null, val: number): boolean => {
+      if (!node) return false;
+      if (val === node.value) return true;
+      return val < node.value
+        ? searchRec(node.left, val)
+        : searchRec(node.right, val);
+    };
+    return searchRec(this.root, value);
+  }
+
+  inorder(): number[] {
+    const result: number[] = [];
+    const traverse = (node: BSTNode | null) => {
+      if (!node) return;
+      traverse(node.left);
+      result.push(node.value);
+      traverse(node.right);
+    };
+    traverse(this.root);
+    return result;
+  }
+
+  preorder(): number[] {
+    const result: number[] = [];
+    const traverse = (node: BSTNode | null) => {
+      if (!node) return;
+      result.push(node.value);
+      traverse(node.left);
+      traverse(node.right);
+    };
+    traverse(this.root);
+    return result;
+  }
+
+  postorder(): number[] {
+    const result: number[] = [];
+    const traverse = (node: BSTNode | null) => {
+      if (!node) return;
+      traverse(node.left);
+      traverse(node.right);
+      result.push(node.value);
+    };
+    traverse(this.root);
+    return result;
+  }
+
+  height(): number {
+    const heightRec = (node: BSTNode | null): number => {
+      if (!node) return -1;
+      return 1 + Math.max(heightRec(node.left), heightRec(node.right));
+    };
+    return heightRec(this.root);
+  }
+}
+
+const bst = new BST();
+[10, 5, 15, 3, 7, 12, 18].forEach(v => bst.insert(v));
+console.log(bst.inorder());   // [3, 5, 7, 10, 12, 15, 18]
+console.log(bst.preorder());  // [10, 5, 3, 7, 15, 12, 18]
+console.log(bst.postorder()); // [3, 7, 5, 12, 18, 15, 10]
+console.log(bst.height());    // 2
+```
+
+### 10.9 Tree Traversal Visualizations
+
+```mermaid
+flowchart TD
+    A["10"] --> B["5"]
+    A --> C["15"]
+    B --> D["3"]
+    B --> E["7"]
+    C --> F["12"]
+    C --> G["18"]
+```
+
+| Traversal | Order | Visit Pattern |
+|-----------|-------|---------------|
+| Preorder | 10, 5, 3, 7, 15, 12, 18 | root - left - right |
+| Inorder | 3, 5, 7, 10, 12, 15, 18 | left - root - right |
+| Postorder | 3, 7, 5, 12, 18, 15, 10 | left - right - root |
+| Level-order | 10, 5, 15, 3, 7, 12, 18 | BFS by level |
+
+### 10.10 Huffman Coding — Complete Implementation
+
+Huffman coding constructs an optimal prefix code from character frequencies.
+
+```typescript
+class HuffmanNode {
+  constructor(
+    public char: string | null,
+    public freq: number,
+    public left: HuffmanNode | null = null,
+    public right: HuffmanNode | null = null
+  ) {}
+}
+
+function buildHuffmanTree(freqs: Map<string, number>): HuffmanNode {
+  const pq: HuffmanNode[] = [];
+  for (const [char, freq] of freqs) {
+    pq.push(new HuffmanNode(char, freq));
+  }
+
+  while (pq.length > 1) {
+    pq.sort((a, b) => a.freq - b.freq);
+    const left = pq.shift()!;
+    const right = pq.shift()!;
+    pq.push(new HuffmanNode(null, left.freq + right.freq, left, right));
+  }
+  return pq[0];
+}
+
+function buildHuffmanCodes(
+  node: HuffmanNode | null,
+  code: string = "",
+  codes: Map<string, string> = new Map()
+): Map<string, string> {
+  if (!node) return codes;
+  if (node.char !== null) codes.set(node.char, code);
+  buildHuffmanCodes(node.left, code + "0", codes);
+  buildHuffmanCodes(node.right, code + "1", codes);
+  return codes;
+}
+
+function huffmanEncode(text: string): { codes: Map<string, string>; encoded: string } {
+  const freqs = new Map<string, number>();
+  for (const ch of text) freqs.set(ch, (freqs.get(ch) || 0) + 1);
+
+  const tree = buildHuffmanTree(freqs);
+  const codes = buildHuffmanCodes(tree);
+  const encoded = text.split('').map(c => codes.get(c)!).join('');
+  return { codes, encoded };
+}
+
+const result = huffmanEncode("A_DEAD_DAD_CEDED_A_BAD_BABY_A_BEADED_ABACA_BED");
+console.log([...result.codes.entries()].map(([c, code]) => `${c}:${code}`).join(", "));
+// A:0, B:100, C:1110, D:101, E:110, _:1111...
+```
+
+### 10.11 Minimum Spanning Tree Algorithms
+
+**Kruskal's Algorithm** sorts edges by weight and adds them if they don't form a cycle.
+
+```typescript
+class UnionFind {
+  parent: number[];
+  constructor(n: number) {
+    this.parent = Array.from({ length: n }, (_, i) => i);
+  }
+  find(x: number): number {
+    if (this.parent[x] !== x) this.parent[x] = this.find(this.parent[x]);
+    return this.parent[x];
+  }
+  union(x: number, y: number): void {
+    this.parent[this.find(x)] = this.find(y);
+  }
+}
+
+function kruskal(n: number, edges: [number, number, number][]): [number, number, number][] {
+  const mst: [number, number, number][] = [];
+  const uf = new UnionFind(n);
+  edges.sort((a, b) => a[2] - b[2]);
+
+  for (const [u, v, w] of edges) {
+    if (uf.find(u) !== uf.find(v)) {
+      uf.union(u, v);
+      mst.push([u, v, w]);
+    }
+  }
+  return mst;
+}
+
+const graphEdges: [number, number, number][] = [
+  [0, 1, 2], [1, 2, 1], [2, 3, 5], [0, 3, 4], [1, 3, 3]
+];
+console.log(kruskal(4, graphEdges));
+// [[1, 2, 1], [0, 1, 2], [1, 3, 3]]
+```
+
+**Prim's Algorithm** grows the MST from a starting vertex.
+
+```typescript
+function prim(n: number, adj: [number, number][][]): [number, number, number][] {
+  const visited = new Set<number>();
+  const mst: [number, number, number][] = [];
+  const pq: [number, number, number][] = []; // [weight, from, to]
+
+  visited.add(0);
+  for (const [neighbor, w] of adj[0]) {
+    pq.push([w, 0, neighbor]);
+  }
+
+  while (pq.length > 0 && mst.length < n - 1) {
+    pq.sort((a, b) => a[0] - b[0]);
+    const [w, from, to] = pq.shift()!;
+    if (visited.has(to)) continue;
+    visited.add(to);
+    mst.push([from, to, w]);
+    for (const [neighbor, weight] of adj[to]) {
+      if (!visited.has(neighbor)) pq.push([weight, to, neighbor]);
+    }
+  }
+  return mst;
+}
+```
+
+```mermaid
+flowchart TD
+    subgraph "Kruskal's Algorithm"
+        A["Sort edges by weight"] --> B["Pick smallest edge"]
+        B --> C["Forms cycle?"]
+        C -->|No| D["Add to MST"]
+        C -->|Yes| E["Skip"]
+        D --> F["More edges?"]
+        E --> F
+        F -->|Yes| B
+        F -->|No| G["MST complete"]
+    end
+```
+
+### 10.12 Decision Trees and Information Theory
+
+A **decision tree** models a sequence of decisions. Each leaf represents a classification or outcome.
+
+**Example 10.5** (Sorting lower bound). Any comparison-based sorting algorithm requires $\lceil \log_2(n!) \rceil \geq n \log_2 n - 1.44n$ comparisons in the worst case.
+
+```typescript
+function decisionTreeHeight(leaves: number): number {
+  return Math.ceil(Math.log2(leaves));
+}
+
+// To sort 3 items, there are 3! = 6 permutations
+console.log(decisionTreeHeight(6));  // 3 comparisons minimum
+
+// To sort 4 items
+console.log(decisionTreeHeight(24)); // 5 comparisons minimum
+```
+
+**Proof 10.4** (Decision tree lower bound for sorting). A binary decision tree with $L$ leaves has height $\geq \lceil \log_2 L \rceil$. For sorting $n$ items, there are $n!$ possible outcomes, so any decision tree must have at least $n!$ leaves. Therefore the minimum height (worst-case comparisons) is $\lceil \log_2(n!) \rceil = \Theta(n \log n)$. $\square$
+
+**Example 10.6** (Binary tree leaf count). A **full binary tree** (every node has 0 or 2 children) with $i$ internal nodes has $L = i + 1$ leaves.
+
+*Proof.* Each internal node has exactly 2 children. Count edges two ways: (1) each of $n$ nodes except root has one parent, so $|E| = n - 1$. (2) Each internal node contributes 2 edges, so $|E| = 2i$. Thus $n - 1 = 2i$. Since $n = i + L$, we have $(i + L) - 1 = 2i \implies L = i + 1$. $\square$
+
+### 10.13 AVL Trees — Self-Balancing BST
+
+An **AVL tree** maintains the invariant $|\text{height(left)} - \text{height(right)}| \leq 1$ for every node. Rotations restore balance after insertions and deletions.
+
+```typescript
+class AVLNode {
+  height: number = 1;
+  constructor(
+    public value: number,
+    public left: AVLNode | null = null,
+    public right: AVLNode | null = null
+  ) {}
+}
+
+function avlHeight(node: AVLNode | null): number {
+  return node ? node.height : 0;
+}
+
+function avlBalanceFactor(node: AVLNode): number {
+  return avlHeight(node.left) - avlHeight(node.right);
+}
+
+function avlRotateRight(y: AVLNode): AVLNode {
+  const x = y.left!;
+  y.left = x.right;
+  x.right = y;
+  y.height = 1 + Math.max(avlHeight(y.left), avlHeight(y.right));
+  x.height = 1 + Math.max(avlHeight(x.left), avlHeight(x.right));
+  return x;
+}
+
+function avlRotateLeft(x: AVLNode): AVLNode {
+  const y = x.right!;
+  x.right = y.left;
+  y.left = x;
+  x.height = 1 + Math.max(avlHeight(x.left), avlHeight(x.right));
+  y.height = 1 + Math.max(avlHeight(y.left), avlHeight(y.right));
+  return y;
+}
+```
+
+## Additional Exercises
+
+16. Show that a full binary tree with $L$ leaves has $2L - 1$ nodes total.
+
+17. Implement a level-order (BFS) traversal for the BST class above and return values as an array.
+
+18. Prove that any comparison-based sorting algorithm requires at least $\lceil \log_2(7!)\rceil$ comparisons in the worst case to sort 7 items (calculate the exact number).
+
+19. Build a Huffman tree for frequencies $\{a:5, b:9, c:12, d:13, e:16, f:45\}$ and compute the total bits to encode "abcdef".
+
+20. Write a TypeScript function `isValidBST(root: BSTNode): boolean` that verifies the BST property for every node.
+
+21. Show that the minimum height of a binary tree with $n$ nodes is $\lfloor \log_2 n \rfloor$ (for a completely balanced tree).
+
 ## Exercises
 
 ### Review Questions

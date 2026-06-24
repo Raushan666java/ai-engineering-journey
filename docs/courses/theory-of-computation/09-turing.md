@@ -100,7 +100,26 @@ L(M) = { w | M accepts w }
 
 Turing machines recognize exactly the **recursively enumerable** (RE) languages. If a TM halts on all inputs, it's a **decider** and recognizes a **recursive** language.
 
-### 8.5 Designing Turing Machines
+### 8.5 Acceptors, Deciders, and Recognizers
+
+A TM can play three distinct roles:
+
+| Role | Behavior | Language Class |
+|------|----------|---------------|
+| **Recognizer** | Accepts strings in L; may loop or reject on strings not in L | Recursively enumerable (RE) |
+| **Decider** | Always halts: accepts strings in L, rejects strings not in L | Recursive |
+| **Enumerator** | Generates all strings in L one by one (possibly with repetitions) | RE |
+
+**Theorem:** A language is RE iff some enumerator enumerates it.
+
+**Proof sketch (→):** Given a TM M that recognizes L, construct an enumerator E that:
+1. Generates strings s₁, s₂, s₃, ... over Σ* in lexicographic order.
+2. For each sᵢ, runs M on sᵢ for at most i steps.
+3. If M accepts within i steps, prints sᵢ.
+
+This "dovetailing" technique ensures every accepted string is eventually printed.
+
+### 8.6 Designing Turing Machines
 
 Designing TMs is akin to writing low-level programs. Common design patterns:
 
@@ -110,7 +129,35 @@ Designing TMs is akin to writing low-level programs. Common design patterns:
 4. **Subroutine states:** Use sets of states to implement subroutine-like behavior.
 5. **Multi-track tape:** Treat each tape cell as containing a tuple (like an array).
 
-### 8.6 Multitape Turing Machines
+### 8.7 The TM Computation: A Complete Example
+
+Let's trace the TM for { aⁿbⁿcⁿ | n ≥ 0 } on input "aabbcc":
+
+**Step-by-step trace:**
+
+| Step | State | Tape (head at ^) | Action |
+|------|-------|-------------------|--------|
+| 0 | q₀ | ^a a b b c c ␣ | Mark a → X |
+| 1 | q₁ | X ^a b b c c ␣ | Scan right for b |
+| 2 | q₁ | X a ^b b c c ␣ | Read b, mark → Y |
+| 3 | q₂ | X a Y ^b c c ␣ | Scan right for c |
+| 4 | q₂ | X a Y b ^c c ␣ | Read c, mark → Z |
+| 5 | q₃ | X a Y b Z ^c ␣ | Scan left for X |
+| 6 | q₃ | X a Y b ^Z c ␣ | Continue left |
+| 7 | q₃ | ^X a Y b Z c ␣ | Back to start |
+| 8 | q₀ | X ^a Y b Z c ␣ | Mark next a → X |
+| 9 | q₁ | X X ^Y b Z c ␣ | Scan right for b |
+| 10 | q₁ | X X Y ^b Z c ␣ | Mark b → Y |
+| 11 | q₂ | X X Y Y ^Z c ␣ | Scan right for c |
+| 12 | q₂ | X X Y Y Z ^c ␣ | Mark c → Z |
+| 13 | q₃ | X X Y Y Z ^Z ␣ | Back to start |
+| 14 | q₀ | X X Y Y Z ^Z ␣ | No more a's, verify |
+| 15 | q₄ | X X Y Y Z ^Z ␣ | Scan right |
+| 16 | q_accept | X X Y Y Z Z ^␣ | Accept! |
+
+This trace shows the algorithm's pattern: each pass removes one a, one b, and one c.
+
+### 8.8 Multitape Turing Machines
 
 A **k-tape Turing machine** has k independent tapes, each with its own read/write head. The transition function becomes:
 
@@ -121,6 +168,19 @@ The machine reads all k heads simultaneously, writes to all k tapes, and moves a
 **Theorem:** Every multitape Turing machine has an equivalent single-tape Turing machine.
 
 **Proof sketch:** Use a single tape with "tracks" separated by a delimiter #. Each track stores the content of one tape. A special marker (á¸ƒ) indicates the position of each tape's head. Simulating one step of the k-tape machine may require sweeping the entire tape to find all head positions, making the simulation potentially slow but correct.
+
+```mermaid
+flowchart LR
+    subgraph "Multitape TM (k=3)"
+        T1[tape1: 0 1 0]
+        T2[tape2: a b a]
+        T3[tape3: x y z]
+    end
+    subgraph "Single-tape encoding"
+        ST["#0̇1 0#a ḃa#x ẏz#"]
+    end
+    Multitape -->|"Encoding"| Single-tape
+```
 
 ### 8.7 Nondeterministic Turing Machines
 
@@ -366,7 +426,7 @@ If any assignment satisfies the formula, the NTM accepts. The DTM simulation wou
 
 ## TypeScript TM Simulator
 
-`	ypescript
+```typescript
 type TapeSymbol = string;
 type State = string;
 
@@ -432,7 +492,123 @@ class TuringMachine {
     return this.state === this.acceptState;
   }
 }
-`
+```
+
+## TM Simulator: Practical Test
+
+```typescript
+// Test: Binary increment TM
+const incrementTransitions: TMTransitionFunction = new Map([
+  ["q0,0", { write: "0", move: "R", nextState: "q0" }],
+  ["q0,1", { write: "1", move: "R", nextState: "q0" }],
+  ["q0,_", { write: "_", move: "L", nextState: "q1" }],
+  ["q1,0", { write: "1", move: "L", nextState: "q2" }],
+  ["q1,1", { write: "0", move: "L", nextState: "q1" }],
+  ["q1,_", { write: "1", move: "L", nextState: "q2" }],
+  ["q2,0", { write: "0", move: "L", nextState: "q2" }],
+  ["q2,1", { write: "1", move: "L", nextState: "q2" }],
+  ["q2,_", { write: "_", move: "R", nextState: "q_accept" }],
+]);
+
+const incrementTM = new TuringMachine(
+  "q0", incrementTransitions, "q_accept", "q_reject"
+);
+console.log(incrementTM.run("1011")); // true (11 → 12)
+```
+
+## Universal Turing Machine
+
+A **Universal Turing Machine (UTM)** is a TM that can simulate any other TM. It takes as input:
+- The **description** of another TM M (encoded as a string ⟨M⟩)
+- The **input** string w for M
+
+The UTM then simulates M's computation on w.
+
+```mermaid
+flowchart LR
+    A["⟨M⟩w"] --> B[UTM]
+    B --> C{Decode<br/>transition}
+    C --> D{Simulate step}
+    D --> E{Halted?}
+    E -->|No| C
+    E -->|Yes| F[Accept/Reject]
+```
+
+### Encoding TMs
+
+A TM M = (Q, Σ, Γ, δ, q₀, q_accept, q_reject) can be encoded as a string over {0,1}:
+
+1. Encode states: q₁ → 1, q₂ → 11, q₃ → 111, ...
+2. Encode symbols: a₁ → 1, a₂ → 11, a₃ → 111, ...
+3. Encode directions: L → 1, R → 11
+4. Encode transitions: δ(q, a) = (r, b, Δ) → 0{q}0{a}0{r}0{b}0{Δ}0
+5. Concatenate all transition encodings separated by 00
+
+```typescript
+function encodeTM(M: TuringMachineDefinition): string {
+  const encodings: string[] = [];
+  for (const [key, trans] of M.transitions) {
+    const [q, sym] = key.split(",");
+    const qCode = "1".repeat(stateToInt(q) + 1);
+    const symCode = "1".repeat(symToInt(sym) + 1);
+    const rCode = "1".repeat(stateToInt(trans.nextState) + 1);
+    const wCode = "1".repeat(symToInt(trans.write) + 1);
+    const dirCode = trans.move === "L" ? "1" : "11";
+    encodings.push(`0${qCode}0${symCode}0${rCode}0${wCode}0${dirCode}0`);
+  }
+  return encodings.join("00");
+}
+
+type TuringMachineDefinition = {
+  states: string[];
+  alphabet: string[];
+  transitions: TMTransitionFunction;
+};
+```
+
+### Significance of the UTM
+
+The UTM is the theoretical foundation of the **stored-program computer**. Modern computers are essentially UTMs:
+- Programs are stored as data in memory (encoded instructions)
+- The CPU fetches, decodes, and executes instructions from memory
+
+Without the UTM concept, computers would be fixed-function devices — each machine dedicated to a single computation.
+
+## Church-Turing Thesis
+
+The **Church-Turing thesis** states:
+
+> **Every effectively computable function can be computed by a Turing machine.**
+
+This is not a theorem — it's a claim about the nature of computation. It has been remarkably resilient:
+- Every proposed model of computation (λ-calculus, recursive functions, Post systems, RAM machines, cellular automata) has been proven equivalent to TMs
+- No one has found a function that is "intuitively computable" but not TM-computable
+- Quantum computers (with bounded precision) can be simulated by TMs
+
+### The Extended Church-Turing Thesis
+
+The **Extended Church-Turing thesis** adds:
+
+> **Any computation that can be done efficiently (in polynomial time) on any reasonable model can be done in polynomial time on a TM.**
+
+Quantum computing challenges this thesis — Shor's algorithm factors in polynomial time on a quantum computer, but no polynomial-time TM factoring algorithm is known. Whether quantum computers violate the extended thesis remains an open question.
+
+```mermaid
+flowchart TD
+    A["Models of Computation"] --> B[λ-calculus]
+    A --> C[Recursive Functions]
+    A --> D[Post Systems]
+    A --> E["Turing Machines"]
+    A --> F["RAM Machines"]
+    A --> G["Cellular Automata"]
+    B --> H[All Equivalent]
+    C --> H
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+    H --> I["Church-Turing thesis:<br/>All capture 'effective<br/>computability'"]
+```
 
 ## Further Reading
 

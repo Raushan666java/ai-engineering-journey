@@ -64,7 +64,21 @@ Similarly, NSPACE(s(n)) = { L | L is decided by an NTM using O(s(n)) space }.
 - L â‰  PSPACE (space hierarchy theorem).
 - P â‰  EXPTIME (time hierarchy theorem).
 
-### 13.3 Savitch's Theorem
+### 13.3 Time vs Space: Key Differences
+
+Time and space complexity behave differently in fundamental ways:
+
+| Aspect | Time | Space |
+|--------|------|-------|
+| **Reusable resource?** | No (steps consumed) | Yes (cells can be reused) |
+| **Nondeterminism** | Adds power (P vs NP open) | Closed (NPSPACE = PSPACE) |
+| **Complement** | co-NP vs NP open | NL = co-NL proven |
+| **Hierarchy** | P ⊂ EXP (known) | L ⊂ PSPACE (known, stricter) |
+| **Key technique** | Diagonalization | Configuration graphs |
+
+The reusability of space explains why nondeterminism is less powerful: a nondeterministic space-bounded machine can try all possibilities by reusing space, but a nondeterministic time-bounded machine must "pay" for each step.
+
+### 13.4 Savitch's Theorem
 
 **Savitch's Theorem:** For any function s(n) â‰¥ log n,
 NSPACE(s(n)) âŠ† SPACE(s(n)Â²)
@@ -81,7 +95,7 @@ The deterministic TM uses a recursive **divide-and-conquer** approach: to check 
 
 The depth of recursion is log(2^{O(s(n))}) = O(s(n)), and each level stores a configuration of size O(s(n)). Total space: O(s(n)Â²).
 
-### 13.4 PSPACE
+### 13.5 PSPACE
 
 **PSPACE** = languages decidable in polynomial space on a DTM.
 
@@ -94,7 +108,7 @@ Since NPSPACE = PSPACE, nondeterminism doesn't add power here (unlike for time).
 - **REGULAR EXPRESSION EQUIVALENCE** (for some variants).
 - **LBA (Linear Bounded Automaton) acceptance.**
 
-### 13.5 PSPACE-Completeness
+### 13.6 PSPACE-Completeness
 
 A language B is **PSPACE-complete** if:
 1. B âˆˆ PSPACE.
@@ -112,7 +126,7 @@ A language B is **PSPACE-complete** if:
 - **MASTERMIND** (the game).
 - **NUMBER-LABELED PARTITION.**
 
-### 13.6 L and NL
+### 13.7 L and NL
 
 **L** (deterministic log space): Problems solvable using only O(log n) work space (excluding the input).
 
@@ -133,7 +147,7 @@ A language B is **PSPACE-complete** if:
 - Proven independently by Immerman and SzelepcsÃ©nyi (1987).
 - The proof uses a clever counting technique to verify that no path exists to an accepting configuration.
 
-### 13.7 The Reachability Method
+### 13.8 The Reachability Method
 
 Many space-bounded algorithms use the configuration graph approach:
 
@@ -145,7 +159,7 @@ Many space-bounded algorithms use the configuration graph approach:
 
 **For NL âŠ† P:** The configuration graph of an NL machine is of polynomial size, and reachability in this graph is in P (via DFS/BFS).
 
-### 13.8 The Space Hierarchy
+### 13.9 The Space Hierarchy
 
 **Space Hierarchy Theorem:** For any space-constructible function f(n) â‰¥ log n,
 SPACE(f(n)) âŠ‚ SPACE(g(n)) whenever f(n) = o(g(n)).
@@ -324,6 +338,30 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 - The configuration graph approach is central to space complexity proofs.
 - Space hierarchy is strict (L ⊂ PSPACE ⊂ EXPSPACE), unlike the time hierarchy where P vs PSPACE is unknown.
 
+## Complexity Class Relationships
+
+```mermaid
+flowchart TD
+    L["L<br/>log space"] --> NL["NL<br/>nondet log space"]
+    NL --> P["P<br/>polynomial time"]
+    P --> NP["NP<br/>nondet poly time"]
+    NP --> PSPACE["PSPACE<br/>polynomial space"]
+    PSPACE --> EXP["EXP<br/>exponential time"]
+    EXP --> EXPSPACE["EXPSPACE<br/>exponential space"]
+    
+    L -.->|"⊂ (known)"| PSPACE
+    P -.->|"? (open)"| NP
+    NP -.->|"? (open)"| PSPACE
+```
+
+Key: solid arrows indicate known containments; dashed arrows with labels show what's known vs open.
+
+Summary of known containments:
+- L ⊂ PSPACE (strict, by space hierarchy)
+- P ⊂ EXP (strict, by time hierarchy)
+- NL = co-NL (Immerman-Szelepcsényi)
+- NPSPACE = PSPACE (Savitch)
+
 ## Exercises
 
 ### Basic
@@ -332,23 +370,25 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 2. Show that every regular language is in L.
 3. Prove that PATH is in P by giving a polynomial-time algorithm.
 4. Explain Savitch's theorem in your own words.
-5. Show that if Lâ‚ âˆˆ PSPACE and Lâ‚‚ âˆˆ PSPACE then Lâ‚ âˆ© Lâ‚‚ âˆˆ PSPACE.
+5. Show that if L₁ ∈ PSPACE and L₂ ∈ PSPACE then L₁ ∩ L₂ ∈ PSPACE.
+6. Write a TypeScript function that checks balanced parentheses using O(log n) space.
 
 ### Intermediate
 
-6. Prove that QBF is in PSPACE by describing a polynomial-space algorithm.
-7. Show that NL âŠ† P using the configuration graph approach.
-8. Prove that the problem of determining if a DFA accepts all strings (universality) is in PSPACE â€” and actually in NL if the DFA is presented differently.
-9. Show that if A â‰¤_P B and B âˆˆ PSPACE, then A âˆˆ PSPACE.
-10. Give an example of a problem in PSPACE that is not known to be in NP.
+7. Prove that QBF is in PSPACE by describing a polynomial-space algorithm.
+8. Show that NL ⊆ P using the configuration graph approach.
+9. Prove that the problem of determining if a DFA accepts all strings (universality) is in PSPACE — and actually in NL if the DFA is presented differently.
+10. Show that if A ≤_P B and B ∈ PSPACE, then A ∈ PSPACE.
+11. Give an example of a problem in PSPACE that is not known to be in NP.
+12. Implement the Savitch reachability algorithm in TypeScript for a directed graph.
 
 ### Advanced
 
-11. Prove Savitch's theorem in detail: show NSPACE(s(n)) âŠ† SPACE(s(n)Â²).
-12. Prove the Immerman-SzelepcsÃ©nyi theorem (NL = co-NL).
-13. Show that the problem of deciding whether two regular expressions with exponentiation (a^n means a repeated n times) denote different languages is PSPACE-complete.
-14. Prove that GEOGRAPHY (the game) is PSPACE-complete.
-15. Show that the space hierarchy is strict: SPACE(n) âŠ‚ SPACE(nÂ²).
+13. Prove Savitch's theorem in detail: show NSPACE(s(n)) ⊆ SPACE(s(n)²).
+14. Prove the Immerman-Szelepcsényi theorem (NL = co-NL).
+15. Show that the problem of deciding whether two regular expressions with exponentiation (a^n means a repeated n times) denote different languages is PSPACE-complete.
+16. Prove that GEOGRAPHY (the game) is PSPACE-complete.
+17. Show that the space hierarchy is strict: SPACE(n) ⊂ SPACE(n²).
 
 ## Further Reading
 
@@ -357,6 +397,128 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 - **Papadimitriou, Christos H.** *Computational Complexity*. Chapters 7-8 give a comprehensive treatment of space complexity and the Immerman-Szelepcsenyi theorem.
 - **Stockmeyer, Larry and Chandra, Ashok K.** "Provably Difficult Combinatorial Games." SIAM Journal on Computing, 1979. A seminal paper on PSPACE-completeness of combinatorial games.
 
+
+## TypeScript QBF Evaluator (PSPACE Algorithm)
+
+```typescript
+// Evaluate a Quantified Boolean Formula in polynomial space
+// Formula syntax: ∃x(φ), ∀x(φ), or a Boolean expression with variables
+
+type QBF =
+  | { type: "exists"; var: string; sub: QBF }
+  | { type: "forall"; var: string; sub: QBF }
+  | { type: "var"; name: string }
+  | { type: "not"; sub: QBF }
+  | { type: "and"; left: QBF; right: QBF }
+  | { type: "or"; left: QBF; right: QBF };
+
+function evaluateQBF(
+  formula: QBF,
+  assignments: Map<string, boolean>
+): boolean {
+  switch (formula.type) {
+    case "exists": {
+      const trueAssign = new Map(assignments);
+      trueAssign.set(formula.var, true);
+      const falseAssign = new Map(assignments);
+      falseAssign.set(formula.var, false);
+      return evaluateQBF(formula.sub, trueAssign) ||
+             evaluateQBF(formula.sub, falseAssign);
+    }
+    case "forall": {
+      const trueAssign = new Map(assignments);
+      trueAssign.set(formula.var, true);
+      const falseAssign = new Map(assignments);
+      falseAssign.set(formula.var, false);
+      return evaluateQBF(formula.sub, trueAssign) &&
+             evaluateQBF(formula.sub, falseAssign);
+    }
+    case "var":
+      return assignments.get(formula.name) ?? false;
+    case "not":
+      return !evaluateQBF(formula.sub, assignments);
+    case "and":
+      return evaluateQBF(formula.left, assignments) &&
+             evaluateQBF(formula.right, assignments);
+    case "or":
+      return evaluateQBF(formula.left, assignments) ||
+             evaluateQBF(formula.right, assignments);
+  }
+}
+
+// Example: ∀x ∃y ((x ∧ y) ∨ (¬x ∧ ¬y))
+// This formula asserts that for every x, there is a y equal to x
+const exampleQBF: QBF = {
+  type: "forall", var: "x",
+  sub: {
+    type: "exists", var: "y",
+    sub: {
+      type: "or",
+      left: { type: "and",
+        left: { type: "var", name: "x" },
+        right: { type: "var", name: "y" }
+      },
+      right: { type: "and",
+        left: { type: "not", sub: { type: "var", name: "x" } },
+        right: { type: "not", sub: { type: "var", name: "y" } }
+      }
+    }
+  }
+};
+
+console.log(evaluateQBF(exampleQBF, new Map())); // true
+```
+
+## The Immerman-Szelepcsényi Theorem: Counting Without Paths
+
+The theorem states NL = co-NL, meaning nondeterministic log space is closed under complement.
+
+**Proof intuition for PATH complement:** To prove no path exists from s to t:
+
+1. Compute the number of vertices reachable from s (call it R).
+2. Perform a nondeterministic traversal that visits R distinct vertices.
+3. If we never reach t and visit exactly R distinct vertices, no path from s to t exists.
+
+The key insight: we can count reachable vertices using an inductive definition:
+- Let R(i) = vertices reachable in ≤ i steps.
+- R(0) = {s}.
+- R(i+1) = vertices in R(i) plus any vertex with an edge from R(i).
+- We can nondeterministically verify |R(i)| without explicitly storing all vertices.
+
+### TypeScript: NL Reachability Counter (Concept Demonstration)
+
+```typescript
+function countReachableVertices(
+  graph: Map<number, number[]>,
+  source: number,
+  totalVertices: number
+): number {
+  let count = 0;
+  // Try all vertices; guess which ones are reachable
+  for (let v = 0; v < totalVertices; v++) {
+    if (isReachable(graph, source, v)) count++;
+  }
+  return count;
+}
+
+function isReachable(
+  graph: Map<number, number[]>,
+  source: number,
+  target: number
+): boolean {
+  let current = source;
+  const n = graph.size;
+  // Nondeterministically guess a path (simulated with iterative deepening)
+  for (let step = 0; step < n; step++) {
+    if (current === target) return true;
+    const neighbors = graph.get(current) || [];
+    if (neighbors.length === 0) return false;
+    // Nondeterministic choice of next vertex
+    current = neighbors[Math.floor(Math.random() * neighbors.length)];
+  }
+  return current === target;
+}
+```
 
 ## TypeScript Configuration Graph Example
 

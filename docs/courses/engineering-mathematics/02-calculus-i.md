@@ -489,6 +489,167 @@ For convergence, we need $|1 - 2\eta| < 1 \implies 0 < \eta < 1$.
 
 With $\eta = 0.1$: $x_{t+1} = 0.8 x_t$, decaying geometrically to 0.
 
+### Example 5: Integral Test for Convergence
+
+Determine whether $\sum_{n=1}^\infty \frac{1}{n^2 + 1}$ converges.
+
+**Solution:**
+Let $f(x) = \frac{1}{x^2 + 1}$. For $x \geq 1$, $f$ is positive, continuous, and decreasing.
+
+$$\int_1^\infty \frac{dx}{x^2 + 1} = \lim_{b \to \infty} [\arctan x]_1^b = \lim_{b \to \infty} (\arctan b - \arctan 1) = \frac{\pi}{2} - \frac{\pi}{4} = \frac{\pi}{4}$$
+
+Since the integral converges to a finite value, the series converges by the integral test.
+
+### Example 6: Taylor Series Expansion
+
+Find the Taylor series for $f(x) = e^x$ centered at $x = 1$.
+
+**Solution:**
+For $f(x) = e^x$, $f^{(n)}(x) = e^x$ for all $n$, so $f^{(n)}(1) = e$.
+
+The Taylor series is:
+$$e^x = \sum_{n=0}^\infty \frac{e}{n!} (x-1)^n$$
+
+Radius of convergence: $R = \infty$ (converges for all $x$).
+
+To approximate $e^2$ using $n = 4$: $e^2 \approx e[1 + 1 + \frac{1}{2} + \frac{1}{6} + \frac{1}{24}] = e \cdot \frac{65}{24} \approx 7.359$. The true value is $e^2 \approx 7.389$, error is about 0.4%.
+
+### Example 7: Trigonometric Substitution
+
+Evaluate $\int \sqrt{4 - x^2}\,dx$ using trigonometric substitution.
+
+**Solution:**
+Let $x = 2\sin\theta$, so $dx = 2\cos\theta\,d\theta$, $\sqrt{4 - x^2} = 2\cos\theta$.
+
+$$\int \sqrt{4 - x^2}\,dx = \int 2\cos\theta \cdot 2\cos\theta\,d\theta = 4\int \cos^2\theta\,d\theta$$
+
+$$= 4\int \frac{1 + \cos 2\theta}{2}\,d\theta = 2\theta + \sin 2\theta + C$$
+
+$$= 2\theta + 2\sin\theta\cos\theta + C = 2\arcsin(x/2) + \frac{x\sqrt{4-x^2}}{2} + C$$
+
+## TypeScript Examples
+
+### Numerical Differentiation
+
+```typescript
+function centralDifference(
+  f: (x: number) => number,
+  x: number,
+  h: number = 1e-5
+): number {
+  return (f(x + h) - f(x - h)) / (2 * h);
+}
+
+function richardsonExtrapolation(
+  f: (x: number) => number,
+  x: number,
+  h: number = 0.1
+): number {
+  const D1 = centralDifference(f, x, h);
+  const D2 = centralDifference(f, x, h / 2);
+  // Richardson: more accurate = D2 + (D2 - D1) / 3
+  return D2 + (D2 - D1) / 3;
+}
+
+// Test: f(x) = x³, f'(x) = 3x²
+const cube = (x: number) => x * x * x;
+const x = 2;
+console.log(`f'(2) exact: ${12}`);
+console.log(`Central diff: ${centralDifference(cube, x).toFixed(6)}`);
+console.log(`Richardson: ${richardsonExtrapolation(cube, x).toFixed(6)}`);
+```
+
+### Numerical Integration: Adaptive Simpson's Rule
+
+```typescript
+function simpsonRule(
+  f: (x: number) => number,
+  a: number,
+  b: number
+): number {
+  const c = (a + b) / 2;
+  const h = (b - a) / 6;
+  return h * (f(a) + 4 * f(c) + f(b));
+}
+
+function adaptiveSimpson(
+  f: (x: number) => number,
+  a: number,
+  b: number,
+  tol: number = 1e-6,
+  maxDepth: number = 20
+): number {
+  const c = (a + b) / 2;
+  const whole = simpsonRule(f, a, b);
+  const left = simpsonRule(f, a, c);
+  const right = simpsonRule(f, c, b);
+
+  const error = Math.abs(left + right - whole) / 15;
+  if (error < tol || maxDepth <= 0) return whole + (whole - left - right) / 15;
+
+  return adaptiveSimpson(f, a, c, tol / 2, maxDepth - 1)
+       + adaptiveSimpson(f, c, b, tol / 2, maxDepth - 1);
+}
+
+// Integrate e^(-x²) from 0 to 2
+const integrand = (x: number) => Math.exp(-x * x);
+const resultAI = adaptiveSimpson(integrand, 0, 2);
+console.log(`∫₀² e^(-x²) dx ≈ ${resultAI.toFixed(8)}`);
+// Expected: ≈ 0.88208139 (error function)
+```
+
+### Series Summation with Machine Epsilon Precision
+
+```typescript
+function sumSeries(
+  term: (n: number) => number,
+  tolerance: number = 1e-15
+): { sum: number; terms: number } {
+  let sum = 0, n = 0;
+  while (true) {
+    const t = term(n);
+    sum += t;
+    if (Math.abs(t) < tolerance * Math.abs(sum)) break;
+    n++;
+    if (n > 1e6) break;  // safety limit
+  }
+  return { sum, terms: n + 1 };
+}
+
+// Sum of 1/n! = e
+const factorialTerm = (n: number) => {
+  if (n === 0) return 1;
+  let fact = 1;
+  for (let i = 2; i <= n; i++) fact *= i;
+  return 1 / fact;
+};
+
+const { sum, terms } = sumSeries(factorialTerm);
+console.log(`e ≈ ${sum.toFixed(12)} (${terms} terms)`);
+```
+
+## Real-World Application: Gradient Descent for Machine Learning
+
+Gradient descent is the backbone of neural network training, where the goal is to minimize a loss function $L(\theta)$ over parameters $\theta$.
+
+**Batch Gradient Descent:**
+$$\theta_{t+1} = \theta_t - \eta \nabla L(\theta_t)$$
+
+**Stochastic Gradient Descent (SGD):** Uses one random sample per update:
+$$\theta_{t+1} = \theta_t - \eta \nabla L_i(\theta_t)$$
+
+SGD is noisier but scales to massive datasets because each step costs $O(1)$ instead of $O(N)$.
+
+**Learning Rate Scheduling:** The learning rate $\eta$ controls step size. Common schedules:
+- **Step decay:** $\eta_t = \eta_0 \cdot 0.1^{\lfloor t / k \rfloor}$ (reduce by 10x every $k$ epochs)
+- **Exponential decay:** $\eta_t = \eta_0 e^{-\beta t}$
+- **Cosine annealing:** $\eta_t = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 + \cos(\frac{t}{T}\pi))$
+
+**Convergence Analysis:** For convex $L$ with $L$-Lipschitz gradient, gradient descent with $\eta \leq 2/L$ satisfies:
+$$L(\theta_t) - L(\theta^*) \leq \frac{\|\theta_0 - \theta^*\|^2}{2\eta t}$$
+
+This $O(1/t)$ convergence rate is the same asymptotic behavior as a series that converges like $\sum 1/n^2$ — fast enough for practical use but slower than Newton's method ($O(e^{-ct})$).
+
 ## Summary
 
 - Limits describe function behavior near points; continuity ensures no gaps
@@ -522,6 +683,14 @@ With $\eta = 0.1$: $x_{t+1} = 0.8 x_t$, decaying geometrically to 0.
 4. **Volume of Revolution:** Find the volume generated by rotating the region bounded by $y = x^2$ and $y = 2x$ about the $x$-axis.
 
 5. **Series for Computing $\pi$:** Use the series $\arctan x = x - x^3/3 + x^5/5 - \cdots$ with $x = 1$ to approximate $\pi/4$. How many terms for accuracy to 4 decimal places?
+
+### Additional Exercises
+
+6. **Integration by Parts:** Compute $\int e^x \sin x\,dx$ using integration by parts (twice).
+
+7. **Improper Integral:** Determine whether $\int_0^1 \frac{dx}{\sqrt{x}}$ converges. If so, find its value.
+
+8. **Ratio Test:** Use the ratio test to determine the convergence of $\sum_{n=1}^\infty \frac{n^2}{2^n}$.
 
 ### Challenge Problem
 

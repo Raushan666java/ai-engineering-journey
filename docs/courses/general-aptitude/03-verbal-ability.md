@@ -389,6 +389,284 @@ Passage: "The Industrial Revolution brought unprecedented economic growth but al
 
 **Answer:** Insolvent
 
+### TypeScript: Verbal Ability Toolkit
+
+```typescript
+// === Grammar Error Detector ===
+class GrammarChecker {
+  private static subjectVerbAgreement: [RegExp, string][] = [
+    [/\b(he|she|it)\s+don't\b/gi, "$1 doesn't"],
+    [/\b(they|we|you)\s+doesn't\b/gi, "$1 don't"],
+    [/\b(the number of \w+) are\b/gi, "$1 is"],
+    [/\b(a number of \w+) is\b/gi, "$1 are"],
+    [/\b(either|neither)\s+\w+\s+or\s+\w+\s+(are|have)\b/gi, "$1 $2 (check agreement with nearest subject)"],
+  ];
+
+  private static commonErrors: [RegExp, string][] = [
+    [/\b(irregardless)\b/gi, "regardless"],
+    [/\b(supposebly)\b/gi, "supposedly"],
+    [/\b(expresso)\b/gi, "espresso"],
+    [/\b(should of|could of|would of)\b/gi, "should have/could have/would have"],
+    [/\b(lie|lay) (down|on)\b/gi, "Use 'lie' for reclining, 'lay' for placing"],
+  ];
+
+  static checkSentence(sentence: string): string[] {
+    const issues: string[] = [];
+    for (const [pattern, fix] of this.subjectVerbAgreement) {
+      if (pattern.test(sentence)) {
+        issues.push(`Subject-verb agreement: "${pattern.source}" → ${fix}`);
+      }
+    }
+    for (const [pattern, fix] of this.commonErrors) {
+      if (pattern.test(sentence)) {
+        issues.push(`Common error: "${pattern.source}" → ${fix}`);
+      }
+    }
+    // Check for double negatives
+    if ((sentence.match(/\b(no|not|never|nothing|nobody|nowhere)\b/gi)?.length ?? 0) >= 2) {
+      if (sentence.match(/\b(no|not|never|nothing|nobody|nowhere)\b/gi)!.length >= 2) {
+        issues.push("Double negative detected — avoid using two negatives in one clause");
+      }
+    }
+    // Check for although...but
+    if (/\balthough\b/i.test(sentence) && /\bbut\b/i.test(sentence)) {
+      issues.push("Double conjunction: use 'although' or 'but', not both");
+    }
+    return issues;
+  }
+
+  static suggestCorrection(sentence: string): string {
+    let corrected = sentence;
+    corrected = corrected.replace(/\b(he|she|it) don't\b/gi, (_, p1) => `${p1} doesn't`);
+    corrected = corrected.replace(/\bthe number of\s+(\w+) are\b/gi, "the number of $1 is");
+    corrected = corrected.replace(/\b(irregardless)\b/gi, "regardless");
+    corrected = corrected.replace(/\b(should of|would of|could of)\b/gi, (m) => m.replace(" of", " have"));
+    return corrected;
+  }
+}
+
+// === Vocabulary Builder ===
+class Vocabulary {
+  static synonyms = new Map<string, string[]>([
+    ["abundant", ["plentiful", "ample", "copious"]],
+    ["benevolent", ["kind", "generous", "charitable"]],
+    ["candid", ["frank", "honest", "straightforward"]],
+    ["diligent", ["hardworking", "industrious", "conscientious"]],
+    ["ephemeral", ["fleeting", "transient", "momentary"]],
+    ["frugal", ["thrifty", "economical", "sparing"]],
+    ["gregarious", ["sociable", "outgoing", "friendly"]],
+    ["hypothetical", ["theoretical", "assumed", "supposed"]],
+    ["innocuous", ["harmless", "safe", "benign"]],
+    ["jubilant", ["joyful", "elated", "exultant"]],
+    ["magnanimous", ["generous", "forgiving", "noble"]],
+    ["pragmatic", ["practical", "realistic", "sensible"]],
+    ["resilient", ["tough", "flexible", "adaptable"]],
+    ["tenacious", ["persistent", "determined", "unyielding"]],
+    ["ubiquitous", ["everywhere", "omnipresent", "pervasive"]],
+  ]);
+
+  static antonyms = new Map<string, string[]>([
+    ["abundant", ["scarce", "sparse", "rare"]],
+    ["benevolent", ["malevolent", "cruel", "selfish"]],
+    ["candid", ["dishonest", "evasive", "deceitful"]],
+    ["ephemeral", ["permanent", "eternal", "lasting"]],
+    ["frugal", ["extravagant", "wasteful", "lavish"]],
+    ["innocuous", ["harmful", "dangerous", "toxic"]],
+    ["magnanimous", ["petty", "spiteful", "mean"]],
+    ["pragmatic", ["idealistic", "impractical", "fanciful"]],
+  ]);
+
+  static getSynonyms(word: string): string[] {
+    const lower = word.toLowerCase();
+    return this.synonyms.get(lower) ?? this.antonyms.get(lower) ?? [];
+  }
+
+  static getAntonyms(word: string): string[] {
+    const lower = word.toLowerCase();
+    return this.antonyms.get(lower) ?? [];
+  }
+
+  static quiz(level: "easy" | "medium" | "hard"): { word: string; options: string[]; answer: string } {
+    const words = [...this.synonyms.keys()];
+    const word = words[Math.floor(Math.random() * words.length)];
+    const correct = this.synonyms.get(word)![0];
+    const distractors = [...this.synonyms.values()]
+      .flat()
+      .filter(s => s !== correct)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3);
+    const options = [correct, ...distractors].sort(() => Math.random() - 0.5);
+    return { word, options, answer: correct };
+  }
+
+  static oneWordSubstitution(phrase: string): string {
+    const dict: [string, string][] = [
+      ["one who looks at the bright side", "Optimist"],
+      ["one who knows everything", "Omniscient"],
+      ["one who loves mankind", "Philanthropist"],
+      ["one who hates mankind", "Misanthrope"],
+      ["one who loves books", "Bibliophile"],
+      ["one who walks in sleep", "Somnambulist"],
+      ["one who talks in sleep", "Somniloquist"],
+      ["that which cannot be read", "Illegible"],
+      ["that which cannot be heard", "Inaudible"],
+      ["that which cannot be conquered", "Invincible"],
+      ["that which lasts forever", "Eternal"],
+      ["government by one person", "Autocracy"],
+      ["government by the people", "Democracy"],
+      ["government by the rich", "Plutocracy"],
+      ["speech by one person", "Monologue"],
+      ["speech between two", "Dialogue"],
+    ];
+    const lower = phrase.toLowerCase();
+    for (const [key, value] of dict) {
+      if (lower.includes(key)) return value;
+    }
+    return "Not found — check phrase spelling";
+  }
+}
+
+// === Para-Jumble Solver ===
+class ParaJumbleSolver {
+  static solve(sentences: string[]): string[] {
+    const scored = sentences.map((s, i) => {
+      let score = 0;
+      const lower = s.toLowerCase();
+      // Opening sentence indicators
+      if (/^(the|a|an|in|on|at)\b/i.test(s)) score += 1;
+      if (/^(there|it|this)\b/i.test(s)) score -= 1; // likely referential
+      if (/^(however|but|therefore|thus|consequently)\b/i.test(lower)) score -= 2;
+      // Definite article without prior reference => not opening
+      if (/^the\s/.test(lower) && !/\bthere\b/.test(lower)) score -= 0.5;
+      // Pronoun reference => not opening
+      if (/^(he|she|it|they|this|these|those)\b/i.test(s)) score -= 2;
+      return { sentence: s, index: i, score };
+    });
+
+    scored.sort((a, b) => b.score - a.score);
+    return scored.map(s => s.sentence);
+  }
+
+  static getConnectors(sentence: string): string[] {
+    const connectors = /(however|therefore|moreover|furthermore|nevertheless|consequently|meanwhile|subsequently|for example|in addition|on the other hand|as a result)/gi;
+    return sentence.match(connectors) ?? [];
+  }
+}
+
+// === Reading Comprehension Analyzer ===
+class ComprehensionAnalyzer {
+  static getMainIdea(passage: string): string {
+    const sentences = passage.split(".").filter(s => s.trim());
+    // Usually the first or last sentence
+    const candidates = [sentences[0], sentences[sentences.length - 1]];
+    return candidates.sort((a, b) => a.length - b.length)[0].trim();
+  }
+
+  static getTone(passage: string): string {
+    const lower = passage.toLowerCase();
+    const positive = ["good", "beneficial", "excellent", "positive", "optimistic", "admirable"];
+    const negative = ["bad", "harmful", "terrible", "negative", "pessimistic", "critical"];
+    const posCount = positive.filter(w => lower.includes(w)).length;
+    const negCount = negative.filter(w => lower.includes(w)).length;
+    if (posCount > negCount) return "Positive / Supportive";
+    if (negCount > posCount) return "Negative / Critical";
+    return "Neutral / Objective";
+  }
+
+  static answerQuestion(passage: string, question: string): string {
+    const lower = passage.toLowerCase();
+    const qLower = question.toLowerCase();
+
+    // Extract keywords from question
+    const keywords = qLower.split(" ").filter(w => w.length > 4);
+    // Find sentence with most keyword matches
+    const sentences = passage.split(".").filter(s => s.trim());
+    let bestSentence = "";
+    let bestScore = 0;
+    for (const sentence of sentences) {
+      const score = keywords.filter(k => sentence.toLowerCase().includes(k)).length;
+      if (score > bestScore) { bestScore = score; bestSentence = sentence; }
+    }
+    return bestSentence.trim() || "Answer not directly found in passage.";
+  }
+}
+
+// === Demo ===
+console.log("--- Grammar Checker ---");
+console.log(GrammarChecker.checkSentence("She don't like coffee."));
+console.log("Corrected:", GrammarChecker.suggestCorrection("She don't like coffee."));
+
+console.log("\n--- Vocabulary Quiz ---");
+const q = Vocabulary.quiz("medium");
+console.log(`Q: Synonym of "${q.word}"? Options: ${q.options.join(", ")}`);
+console.log(`Answer: ${q.answer}`);
+
+console.log("\n--- One Word Substitution ---");
+console.log(Vocabulary.oneWordSubstitution("One who loves books"));
+
+console.log("\n--- Para-Jumble ---");
+const jumbled = [
+  "This shift has been driven by increased awareness.",
+  "However, this trend is slowly changing.",
+  "Traditionally, engineering was male-dominated.",
+  "More women are now pursuing careers in STEM."
+];
+console.log("Original order:", ParaJumbleSolver.solve(jumbled));
+```
+
+### Mermaid: Sentence Correction Decision Flow
+
+```mermaid
+flowchart TD
+    A[Identify Sentence] --> B{Check Subject-Verb}
+    B -->|Singular Subject| C[Must Use Singular Verb]
+    B -->|Plural Subject| D[Must Use Plural Verb]
+    C --> E{Check Tense Consistency}
+    D --> E
+    E -->|Time Frame Clear| F[Use Appropriate Tense]
+    E -->|Mixed Time| G[Use Past Perfect for Earlier Action]
+    F --> H{Check Modifiers}
+    G --> H
+    H -->|Correct Placement| I[Dangling or Misplaced?]
+    I --> J{Check Parallelism}
+    J -->|List Items| K[All Same Grammatical Form]
+    J -->|Comparisons| L[Must Compare Like Items]
+    K --> M[Final: No Redundancy]
+    L --> M
+```
+
+### Mermaid: Reading Comprehension Strategy
+
+```mermaid
+flowchart LR
+    A[Read Title & First Para] --> B[Identify Topic & Main Idea]
+    B --> C[Read Questions First]
+    C --> D[Scan for Keywords]
+    D --> E{Question Type?}
+    E -->|Factual| F[Find Exact Text Match]
+    E -->|Inference| G[Combine Multiple Clues]
+    E -->|Vocabulary| H[Use Context Around Word]
+    E -->|Tone| I[Identify Emotion Words]
+    F & G & H & I --> J[Eliminate Wrong Options]
+    J --> K[Select Best Answer]
+```
+
+### Additional Exercises (Level 3)
+
+16. **Multiple Error Correction:** "The committee, along with the chairperson, were meeting to discuss the agenda when the fire alarm had rang. They quickly evacuate the building, but unfortunately, the documents was left behind."
+
+17. **Vocabulary in Context:** "The speaker's **verbose** explanation confused rather than clarified the issue." What does "verbose" mean?
+
+18. **Para-jumble:** P: This creates a cycle of poverty that's hard to break. Q: Lack of education limits employment opportunities. R: Limited income means children often work instead of studying. S: Education is the most powerful tool for breaking the cycle of poverty.
+
+19. **Cloze Test:** Complete the passage: "The industrial revolution ___ (bring) about significant changes in manufacturing. Factories ___ (establish) across cities, ___ (lead) to urbanization. However, working conditions ___ (be) often poor."
+
+20. **RC Inference:** Read a passage about AI ethics. Which statement is the most logical inference?
+
+### Answer Key (Additional)
+
+16. "were meeting" → "was meeting", "had rang" → "had rung", "evacuate" → "evacuated", "was left" → "were left" | 17. Wordy, using too many words | 18. S → Q → R → P | 19. brought, were established, leading, were | 20. Depends on passage
+
 ## Summary
 
 - Subject-verb agreement: identify the true subject; ignore intervening phrases

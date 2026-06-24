@@ -297,6 +297,37 @@ To prove non-regularity, you need a strategy that beats every possible decomposi
 | Product construction | Intersection/union closure |
 | State elimination | DFA → regex |
 
+## The Pumping Lemma: Advanced Applications
+
+### Proving Non-Regularity via Closure Properties
+
+Sometimes the pumping lemma alone is insufficient or awkward. Using closure properties, we can reduce a language to a known non-regular language:
+
+**Example:** Prove \(L = \{ w \in \{a,b\}^* \mid \#_a(w) = \#_b(w) \}\) is not regular.
+
+If L were regular, then \(L \cap a^*b^* = \{a^n b^n \mid n \ge 0\}\) would be regular (intersection closure). But \(\{a^n b^n\}\) is not regular. Therefore, L is not regular.
+
+This approach is often simpler than applying the pumping lemma directly.
+
+### The Pumping Lemma for Finite Languages
+
+Languages with finitely many strings are always regular (they can be represented as a finite union of singleton strings). The pumping lemma does not apply to them because the pumping length p exceeds all strings in the language.
+
+```mermaid
+flowchart TD
+    L["Language L"] --> Finite{"Finite?"}
+    Finite -->|Yes| REG["Regular (trivially)"]
+    Finite -->|No| PL["Apply Pumping Lemma"]
+    PL --> Result{"Pumping condition holds?"}
+    Result -->|No| NOT_REG["Not Regular ✓"]
+    Result -->|Yes| MN["Apply Myhill-Nerode"]
+    MN --> MNResult{"Finite index?"}
+    MNResult -->|Yes| REG2["Regular ✓"]
+    MNResult -->|No| NOT_REG2["Not Regular ✓"]
+```
+
+This decision tree illustrates the relationship between the pumping lemma (necessary condition), Myhill-Nerode (necessary and sufficient), and the finite/infinite distinction.
+
 ## Cross-Application Matrix
 | Domain | Application |
 |--------|------------|
@@ -353,6 +384,145 @@ To prove non-regularity, you need a strategy that beats every possible decomposi
 </details>
 
 **
+## Pumping Lemma Prover: TypeScript Implementation
+
+```typescript
+type PumpingDecomposition = { x: string; y: string; z: string };
+
+function checkPumpingLemma(
+  language: (s: string) => boolean,
+  p: number,
+  s: string
+): { isRegular: boolean | null; witness?: string } {
+  if (!language(s) || s.length < p) {
+    return { isRegular: null };  // String doesn't meet conditions
+  }
+
+  // Try all valid decompositions
+  for (let xyLen = 1; xyLen <= p; xyLen++) {
+    for (let yLen = 1; yLen <= xyLen; yLen++) {
+      const x = s.slice(0, xyLen - yLen);
+      const y = s.slice(xyLen - yLen, xyLen);
+      const z = s.slice(xyLen);
+
+      // Try pumping: i = 0 (pump down), i = 2 (pump up)
+      for (const i of [0, 2]) {
+        const pumped = x + y.repeat(i) + z;
+        if (!language(pumped)) {
+          return {
+            isRegular: false,
+            witness: `s=${s}, x='${x}', y='${y}', z='${z}', i=${i} → '${pumped}' not in L`
+          };
+        }
+      }
+    }
+  }
+  return { isRegular: true };  // Passed all decompositions
+}
+
+// Test: {0ⁿ1ⁿ} is not regular
+const anbn = (s: string) => /^0+1+$/.test(s) &&
+  s.split('0').length - 1 === s.split('1').length - 1;
+
+const result = checkPumpingLemma(anbn, 5, '0000011111');
+console.log(result.isRegular === false
+  ? 'Not regular: ' + result.witness
+  : 'May be regular');
+```
+
+## Decision Properties in TypeScript
+
+```typescript
+class DecisionProcedures {
+  // Emptiness: Is L(M) = ∅?
+  static isEmpty(Q: Set<string>, delta: Map<string, string>,
+                  q0: string, F: Set<string>): boolean {
+    const visited = new Set<string>();
+    const stack = [q0];
+    while (stack.length > 0) {
+      const q = stack.pop()!;
+      if (visited.has(q)) continue;
+      visited.add(q);
+      if (F.has(q)) return false;  // Can reach accept
+      for (const sym of ['0', '1', 'a', 'b']) {
+        const key = `${q},${sym}`;
+        if (delta.has(key)) stack.push(delta.get(key)!);
+      }
+    }
+    return true;  // No accept state reachable
+  }
+
+  // Finiteness: Is L(M) finite?
+  static isFinite(Q: Set<string>, delta: Map<string, string>,
+                  q0: string, F: Set<string>): boolean {
+    // A DFA accepts infinite language iff there is a cycle
+    // reachable from start that can reach an accept state
+    const visited = new Set<string>();
+    const recStack = new Set<string>();
+
+    function dfs(q: string): boolean {
+      visited.add(q);
+      recStack.add(q);
+      for (const sym of ['0', '1', 'a', 'b']) {
+        const key = `${q},${sym}`;
+        if (!delta.has(key)) continue;
+        const next = delta.get(key)!;
+        if (!visited.has(next)) {
+          if (dfs(next)) return true;
+        } else if (recStack.has(next)) {
+          // Found cycle — check if it can reach accept
+          return canReachAccept(next, new Set(), delta, F);
+        }
+      }
+      recStack.delete(q);
+      return false;
+    }
+
+    function canReachAccept(q: string, seen: Set<string>,
+                            delta: Map<string, string>,
+                            F: Set<string>): boolean {
+      if (F.has(q)) return true;
+      seen.add(q);
+      for (const sym of ['0', '1', 'a', 'b']) {
+        const key = `${q},${sym}`;
+        if (!delta.has(key)) continue;
+        const next = delta.get(key)!;
+        if (!seen.has(next) && canReachAccept(next, seen, delta, F))
+          return true;
+      }
+      return false;
+    }
+
+    return !dfs(q0);
+  }
+
+  // Equivalence: Do two DFAs accept the same language?
+  static areEquivalent(m1: DFA, m2: DFA): boolean {
+    // Product construction + table-filling
+    const Q1 = [...m1['Q']], Q2 = [...m2['Q']];
+    const worklist: Array<[string, string]> = [[m1['q0'], m2['q0']]];
+    const visited = new Set<string>();
+
+    while (worklist.length > 0) {
+      const [s1, s2] = worklist.pop()!;
+      const key = `${s1}|${s2}`;
+      if (visited.has(key)) continue;
+      visited.add(key);
+
+      if (m1['F'].has(s1) !== m2['F'].has(s2)) return false;
+
+      for (const sym of m1['sigma']) {
+        const k1 = `${s1},${sym}`, k2 = `${s2},${sym}`;
+        if (m1['delta'].has(k1) && m2['delta'].has(k2)) {
+          worklist.push([m1['delta'].get(k1)!, m2['delta'].get(k2)!]);
+        }
+      }
+    }
+    return true;
+  }
+}
+```
+
 ## Practical Takeaways
 
 1. **The pumping lemma is a negative tool.** Use it to prove that a language is NOT regular, never to prove regularity. The lemma gives a necessary condition, not a sufficient one — some non-regular languages satisfy it.
@@ -363,6 +533,10 @@ To prove non-regularity, you need a strategy that beats every possible decomposi
 
 4. **Decidability means automation.** Membership, emptiness, finiteness, and equivalence are all decidable for regular languages. This enables automated tools like regex testers, lexer generators, and pattern matchers that can reason about regular languages without human intervention.
 
+5. **The pumping lemma as a game.** Understanding the adversarial game formulation helps construct correct proofs — the key is that you must beat every possible decomposition, not just the obvious ones.
+
+6. **Closure under complement is unique to regular languages.** For CFLs and above, complement closure fails spectacularly. This makes regular languages exceptionally well-behaved for verification tasks.
+
 ## Summary
 
 - The pumping lemma provides a necessary condition for regularity used to prove non-regularity.
@@ -371,6 +545,8 @@ To prove non-regularity, you need a strategy that beats every possible decomposi
 - The table-filling algorithm produces the minimal (unique) DFA for any regular language.
 - Membership, emptiness, finiteness, and equivalence are decidable for regular languages.
 - Product construction is the key technique for closure under intersection and difference.
+- **Decision procedures** exist for all major questions about regular languages — a property not shared by more powerful language classes.
+- The **adversarial game formulation** of the pumping lemma clarifies the quantifier structure of non-regularity proofs.
 
 ## Exercises
 
@@ -397,6 +573,25 @@ To prove non-regularity, you need a strategy that beats every possible decomposi
 13. Let Lâ‚ = { aâ¿báµ | n â‰  m } and Lâ‚‚ = { aâ¿bÂ²â¿ | n â‰¥ 0 }. Prove Lâ‚ is regular (construct a DFA) and Lâ‚‚ is not regular.
 14. Prove that the language L = { aâ¿ | n is prime } is not regular using the pumping lemma. (Hint: use properties of prime numbers â€” if y = aáµ, then xyâ±á¨Â¹z has length p + (i-1)k. Choose i appropriately to get a composite number.)
 15. Implement the table-filling algorithm for a DFA with up to 100 states. Show that the algorithm runs in O(|Q|Â² |Î£|) time.
+16. Write a TypeScript function that implements the adversarial game formulation of the pumping lemma. Given a language L described as a TypeScript predicate, determine (as far as possible) whether L is non-regular.
+17. Prove that the language L = { ww | w ∈ {0,1}* } is not regular using both (a) the pumping lemma and (b) the Myhill-Nerode theorem.
+18. Show that regular languages are closed under the operation prefix(L) = { w | wx ∈ L for some x } by constructing a DFA that accepts prefix(L).
+19. Implement a TypeScript function that, given a DFA, decides whether the language is infinite using the cycle-and-reachability algorithm from the DecisionProcedures class.
+20. Prove that the regular languages are closed under the operation half(L) = { w | ww ∈ L } using the Myhill-Nerode approach.
+21. Implement a TypeScript function that, given a DFA M, constructs a DFA for the language prefix(L(M)). Prove your construction correct.
+22. Show that the language L = { aⁿ | n is a perfect square } is not regular using both the pumping lemma and Myhill-Nerode.
+
+## Practical Takeaways
+
+1. **The pumping lemma is a negative tool.** Use it to prove that a language is NOT regular, never to prove regularity. It gives a necessary condition — some non-regular languages satisfy it, making Myhill-Nerode the definitive method.
+
+2. **Closure properties simplify proofs.** Instead of directly applying the pumping lemma to a complex language, try to prove non-regularity by reduction: if L were regular, then applying a closure property (intersection with a regular language, homomorphism) would produce a known non-regular language.
+
+3. **DFA minimization guarantees optimality.** The table-filling algorithm produces the unique minimal DFA. This is the gold standard: two regular expressions are equivalent iff their minimized DFAs are isomorphic.
+
+4. **Decidability means automation.** Membership, emptiness, finiteness, and equivalence are all decidable for regular languages. This enables automated tools like regex testers, lexer generators, and pattern matchers.
+
+5. **Closure under complement is unique to regular languages.** For CFLs and above, complement closure fails spectacularly. This makes regular languages exceptionally well-behaved for verification tasks.
 
 ## Further Reading
 

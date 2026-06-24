@@ -314,6 +314,14 @@ The divergence term $\nabla_x \cdot s_\theta$ comes from integration by parts of
 
 5. **Divergence Theorem:** Use the divergence theorem to compute the flux of $\mathbf{F} = \langle x, y, z \rangle$ through the surface of the cube $0 \leq x \leq 1$, $0 \leq y \leq 1$, $0 \leq z \leq 1$.
 
+### Additional Exercises
+
+6. **Surface Integral:** Compute $\iint_S (x^2 + y^2)\,dS$ where $S$ is the lateral surface of the cylinder $x^2 + y^2 = 1$, $0 \leq z \leq 1$.
+
+7. **Conservative Field:** Show that $\mathbf{F} = \langle 2xy + z, x^2, x \rangle$ is conservative and find its potential function $\phi$.
+
+8. **Flux Through a Sphere:** Use the divergence theorem to compute the flux of $\mathbf{F} = \langle x^3, y^3, z^3 \rangle$ through the sphere $x^2 + y^2 + z^2 = 4$.
+
 ### Challenge Problem
 
 **Connection to Neural ODEs:** The adjoint method for Neural ODE backpropagation requires solving the adjoint ODE:
@@ -366,6 +374,123 @@ function divergence(F: (p: Vector3) => Vector3,
 // Example: F(x,y,z) = [x², y², z²]
 const F_field = (p: Vector3): Vector3 => [p[0]**2, p[1]**2, p[2]**2];
 console.log(divergence(F_field, [1, 2, 3])); // ≈ 2+4+6 = 12
+```
+
+## Real-World Application: Computational Fluid Dynamics
+
+Vector calculus is the mathematical foundation of computational fluid dynamics (CFD), used to simulate airflow over aircraft, blood flow in arteries, and weather patterns.
+
+**The Navier-Stokes Equations in Vector Form:**
+
+$$\rho\left(\frac{\partial \mathbf{v}}{\partial t} + \mathbf{v} \cdot \nabla \mathbf{v}\right) = -\nabla p + \mu \nabla^2 \mathbf{v} + \rho \mathbf{g}$$
+
+**Key Vector Calculus Operations in CFD:**
+- **Gradient $\nabla p$:** Pressure gradient drives fluid flow from high to low pressure
+- **Laplacian $\nabla^2 \mathbf{v}$:** Viscous diffusion smooths velocity gradients
+- **Divergence $\nabla \cdot \mathbf{v}$:** For incompressible flow, $\nabla \cdot \mathbf{v} = 0$ (continuity)
+- **Curl $\nabla \times \mathbf{v}$:** Vorticity measures local rotation of fluid elements
+
+**Vorticity-Streamfunction Formulation:** For 2D incompressible flow, define vorticity $\omega = \nabla \times \mathbf{v}$ (scalar in 2D) and streamfunction $\psi$ such that $\mathbf{v} = \nabla^\perp \psi = \langle -\partial \psi/\partial y, \partial \psi/\partial x \rangle$. The Navier-Stokes equations become:
+
+$$\frac{\partial \omega}{\partial t} + \mathbf{v} \cdot \nabla \omega = \nu \nabla^2 \omega, \quad \nabla^2 \psi = -\omega$$
+
+This eliminates pressure and automatically satisfies incompressibility.
+
+**Finite Element Methods:** PDEs are discretized using basis functions $\phi_i(x,y)$. The weak form uses integration by parts (divergence theorem) to reduce continuity requirements:
+
+$$\int_\Omega (\nabla \cdot \mathbf{F}) \phi_i \, dV = -\int_\Omega \mathbf{F} \cdot \nabla \phi_i \, dV + \int_{\partial\Omega} \mathbf{F} \cdot \mathbf{n} \phi_i \, dS$$
+
+## TypeScript Examples
+
+### Example 6: Numerical Curl Computation
+
+```typescript
+type Vector3 = [number, number, number];
+
+function curl(
+  F: (p: Vector3) => Vector3,
+  p: Vector3,
+  h: number = 1e-5
+): Vector3 {
+  const [x, y, z] = p;
+  // dFz/dy - dFy/dz
+  const curlX = (F([x, y+h, z])[2] - F([x, y-h, z])[2]) / (2*h)
+              - (F([x, y, z+h])[1] - F([x, y, z-h])[1]) / (2*h);
+  // dFx/dz - dFz/dx
+  const curlY = (F([x, y, z+h])[0] - F([x, y, z-h])[0]) / (2*h)
+              - (F([x+h, y, z])[2] - F([x-h, y, z])[2]) / (2*h);
+  // dFy/dx - dFx/dy
+  const curlZ = (F([x+h, y, z])[1] - F([x-h, y, z])[1]) / (2*h)
+              - (F([x, y+h, z])[0] - F([x, y-h, z])[0]) / (2*h);
+  return [curlX, curlY, curlZ];
+}
+
+// Rotational field: F(x,y,z) = [-y, x, 0]
+const rotational = (p: Vector3): Vector3 => [-p[1], p[0], 0];
+console.log(`Curl of [-y,x,0] at (0,0,0):`, curl(rotational, [0,0,0]));
+// Expected: (0, 0, 2) — purely in z-direction
+```
+
+### Example 7: Line Integral Computation
+
+```typescript
+type ParametricCurve = (t: number) => Vector3;
+
+function lineIntegral(
+  F: (p: Vector3) => Vector3,
+  curve: ParametricCurve,
+  tStart: number,
+  tEnd: number,
+  steps: number = 1000
+): number {
+  const dt = (tEnd - tStart) / steps;
+  let integral = 0;
+  for (let i = 0; i < steps; i++) {
+    const t = tStart + i * dt;
+    const p = curve(t);
+    // Numerical derivative of curve
+    const pNext = curve(t + dt);
+    const dr: Vector3 = [
+      pNext[0] - p[0],
+      pNext[1] - p[1],
+      pNext[2] - p[2],
+    ];
+    const field = F(p);
+    // Dot product F · dr
+    integral += field[0] * dr[0] + field[1] * dr[1] + field[2] * dr[2];
+  }
+  return integral;
+}
+
+// F(x,y) = [y, x], curve: unit circle from t=0 to t=pi/2
+const F1 = (p: Vector3): Vector3 => [p[1], p[0], 0];
+const circle = (t: number): Vector3 => [Math.cos(t), Math.sin(t), 0];
+const work = lineIntegral(F1, circle, 0, Math.PI / 2);
+console.log(`Work along quarter-circle: ${work.toFixed(6)}`); // ≈ 0
+```
+
+### Example 8: Conservative Field Check and Potential
+
+```typescript
+function isConservative(
+  F: (p: Vector3) => Vector3,
+  p: Vector3,
+  tolerance: number = 1e-7
+): boolean {
+  const c = curl(F, p);
+  return Math.abs(c[0]) < tolerance
+      && Math.abs(c[1]) < tolerance
+      && Math.abs(c[2]) < tolerance;
+}
+
+// F = [2x, 2y, 2z] — gradient of phi = x^2 + y^2 + z^2
+const gradientField = (p: Vector3): Vector3 => [2*p[0], 2*p[1], 2*p[2]];
+console.log(`Is gradient field conservative? ${isConservative(gradientField, [1,1,1])}`);
+// true
+
+// Non-conservative: F = [-y, x, 0]
+console.log(`Is rotational field conservative? ${isConservative(rotational, [1,1,1])}`);
+// false
 ```
 
 ### Example 6: Conservation Laws and Divergence-Free Fields

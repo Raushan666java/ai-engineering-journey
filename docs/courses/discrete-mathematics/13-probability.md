@@ -348,6 +348,201 @@ $P(A \cup B \cup C) = 0.3 + 0.4 + 0.5 - 0.1 - 0.1 - 0.1 + 0.05 = 0.95$.
 
 **Example 13.10** (Probability of at least one). $P(\text{at least one 6 in 4 dice rolls}) = 1 - P(\text{no 6}) = 1 - (5/6)^4 = 1 - 625/1296 = 671/1296 \approx 0.518$.
 
+### 13.11 Law of Total Probability
+
+The **law of total probability** expresses the probability of an event $A$ as a weighted average over a partition of the sample space:
+
+$$P(A) = \sum_{i} P(A \mid B_i) \cdot P(B_i)$$
+
+where $\{B_1, B_2, \dots, B_n\}$ is a partition of $S$ (disjoint and covering all outcomes).
+
+**Theorem 13.6 (Law of Total Probability).** If $B_1, B_2, \dots, B_n$ partition $S$, then for any event $A$:
+$$P(A) = P(A \cap B_1) + P(A \cap B_2) + \cdots + P(A \cap B_n) = \sum_i P(A \mid B_i) P(B_i)$$
+
+```typescript
+function totalProbability(
+  conditionalProbs: number[],
+  priorProbs: number[]
+): number {
+  let total = 0;
+  for (let i = 0; i < conditionalProbs.length; i++) {
+    total += conditionalProbs[i] * priorProbs[i];
+  }
+  return total;
+}
+
+// Example: 3 factories produce 50%, 30%, 20% of units.
+// Defect rates: 2%, 3%, 4%. Overall defect rate:
+const defectRate = totalProbability([0.02, 0.03, 0.04], [0.5, 0.3, 0.2]);
+console.log(defectRate); // 0.027 (2.7%)
+```
+
+### 13.12 Monte Carlo Simulation
+
+Monte Carlo methods use random sampling to approximate probabilities when analytical computation is intractable.
+
+```typescript
+function monteCarloPi(samples: number): number {
+  let inside = 0;
+  for (let i = 0; i < samples; i++) {
+    const x = Math.random() * 2 - 1;
+    const y = Math.random() * 2 - 1;
+    if (x * x + y * y <= 1) inside++;
+  }
+  return 4 * inside / samples;
+}
+
+console.log(monteCarloPi(100000)); // ~3.14159
+
+function simulateDiceSum(target: number, trials: number): number {
+  let successes = 0;
+  for (let t = 0; t < trials; t++) {
+    const d1 = Math.floor(Math.random() * 6) + 1;
+    const d2 = Math.floor(Math.random() * 6) + 1;
+    if (d1 + d2 === target) successes++;
+  }
+  return successes / trials;
+}
+
+console.log(simulateDiceSum(7, 100000)); // ~0.1667
+```
+
+### 13.13 Conditional Expectation
+
+The **conditional expectation** $E[X \mid Y = y]$ is the expected value of $X$ given that $Y = y$:
+
+$$E[X \mid Y = y] = \sum_x x \cdot P(X = x \mid Y = y)$$
+
+**Theorem 13.7 (Law of Total Expectation / Tower Law).**
+$$E[X] = E[E[X \mid Y]] = \sum_y E[X \mid Y = y] \cdot P(Y = y)$$
+
+```typescript
+function conditionalExpectation(
+  xValues: number[],
+  givenY: (y: number) => number[],
+  yProbs: number[],
+  yValues: number[]
+): number {
+  let total = 0;
+  for (let i = 0; i < yValues.length; i++) {
+    const condProbs = givenY(yValues[i]);
+    let condExp = 0;
+    for (let j = 0; j < xValues.length; j++) {
+      condExp += xValues[j] * condProbs[j];
+    }
+    total += condExp * yProbs[i];
+  }
+  return total;
+}
+```
+
+### 13.14 Markov and Chebyshev Inequalities
+
+These inequalities bound probabilities using only the mean and variance — no distributional assumptions required.
+
+**Theorem 13.8 (Markov's Inequality).** For a nonnegative random variable $X$ and $a > 0$:
+$$P(X \geq a) \leq \frac{E[X]}{a}$$
+
+**Theorem 13.9 (Chebyshev's Inequality).** For any random variable $X$ with mean $\mu$ and variance $\sigma^2$, and any $k > 0$:
+$$P(|X - \mu| \geq k\sigma) \leq \frac{1}{k^2}$$
+
+```typescript
+function markovBound(mean: number, a: number): number {
+  if (a <= 0) return 1;
+  return Math.min(1, mean / a);
+}
+
+function chebyshevBound(variance: number, k: number): number {
+  return Math.min(1, 1 / (k * k));
+}
+
+// If average income is $50K, P(income >= $250K) <= 50/250 = 0.2
+console.log(markovBound(50, 250)); // 0.2
+
+// If mean=50, variance=25 (std=5), P(|X-50| >= 10) <= 1/4 = 0.25
+console.log(chebyshevBound(25, 2)); // 0.25
+```
+
+### 13.15 Probability in Machine Learning: Naive Bayes
+
+Naive Bayes classifiers apply Bayes' theorem with a "naive" assumption of conditional independence:
+
+$$P(\text{class} \mid \text{features}) \propto P(\text{class}) \cdot \prod_i P(\text{feature}_i \mid \text{class})$$
+
+```typescript
+interface NaiveBayesModel {
+  classProbs: Map<string, number>;
+  featureProbs: Map<string, Map<string, Map<string, number>>>;
+}
+
+function predictNB(
+  model: NaiveBayesModel,
+  features: Record<string, string>
+): string {
+  let bestClass = "";
+  let bestProb = -1;
+  for (const [cls, prior] of model.classProbs) {
+    let prob = Math.log(prior);
+    const clsProbs = model.featureProbs.get(cls)!;
+    for (const [feat, val] of Object.entries(features)) {
+      prob += Math.log(clsProbs.get(feat)?.get(val) ?? 1e-10);
+    }
+    if (prob > bestProb) { bestProb = prob; bestClass = cls; }
+  }
+  return bestClass;
+}
+```
+
+```mermaid
+flowchart TD
+    A[Prior PClass] --> B[Evidence]
+    B --> C[Features]
+    C --> D[Likelihood PFeature|Class]
+    D --> E[Posterior PClass|Features]
+    E --> F[Predict Class with Max Probability]
+```
+
+**Example 13.11** (Monte Carlo approximation of $\pi$). Using 1,000,000 random points in $[-1,1]^2$, the proportion inside the unit circle approximates $\pi/4$, giving $\pi \approx 4 \times \text{inside} / \text{total}$.
+
+**Example 13.12** (Law of total expectation — expected die roll). Let $Y$ be the result of the first roll of a die, and $X$ the sum of two independent rolls. Then $E[X \mid Y = y] = y + 3.5$, so $E[X] = E[E[X \mid Y]] = E[Y + 3.5] = 3.5 + 3.5 = 7$.
+
+**Example 13.13** (Chebyshev bound on a die). For a fair die, $\mu = 3.5$, $\sigma^2 \approx 2.917$, $\sigma \approx 1.708$. For $k = 2$, $P(|X - 3.5| \geq 3.416) \leq 1/4 = 0.25$. The actual probability $P(X \leq 0 \text{ or } X \geq 7) = 0$ — Chebyshev gives a loose bound but requires no distribution assumption.
+
+**Example 13.14** (Naive Bayes for spam). A word "offer" appears in 80% of spam emails and 10% of legitimate emails. Prior: 30% of all emails are spam. For an email containing "offer", the posterior $P(\text{spam} \mid \text{offer}) = (0.8 \times 0.3) / (0.8 \times 0.3 + 0.1 \times 0.7) = 0.24 / 0.31 \approx 0.774$.
+
+**Example 13.15** (Counting with probability — birthday problem simulation).
+
+```typescript
+function simulateBirthdayCollision(people: number, trials: number): number {
+  let collisions = 0;
+  for (let t = 0; t < trials; t++) {
+    const birthdays = new Set<number>();
+    let hasCollision = false;
+    for (let i = 0; i < people; i++) {
+      const bday = Math.floor(Math.random() * 365);
+      if (birthdays.has(bday)) { hasCollision = true; break; }
+      birthdays.add(bday);
+    }
+    if (hasCollision) collisions++;
+  }
+  return collisions / trials;
+}
+
+console.log(simulateBirthdayCollision(23, 50000)); // ~0.507
+```
+
+## Additional Exercises
+
+16. Use the law of total probability: A bag has 3 red and 2 blue marbles from urn A, and 5 red and 1 blue from urn B. An urn is chosen uniformly at random, then a marble is drawn. What is $P(\text{red})$?
+
+17. Implement a Monte Carlo simulation for the "Monty Hall problem": a contestant picks one of three doors, the host opens a losing door, and the contestant may switch. Estimate $P(\text{win})$ for staying vs switching.
+
+18. Use Markov's inequality: If the average number of emails received per hour is 20, give an upper bound on $P(\text{50 or more emails in an hour})$.
+
+19. Prove that if $X$ and $Y$ are independent, then $\text{Var}(X + Y) = \text{Var}(X) + \text{Var}(Y)$.
+
+20. Show that $\text{Cov}(X, Y) = E[XY] - E[X]E[Y]$ and use it to prove that for independent variables, $\text{Cov}(X, Y) = 0$.
+
 ## Summary
 
 - Probability measures likelihood from 0 to 1; all rules derive from Kolmogorov's axioms.

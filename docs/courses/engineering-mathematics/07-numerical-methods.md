@@ -338,6 +338,94 @@ $a_1 = 1$, $b_1 = 0$, $c_1 = -1.5$, $d_1 = 0.5$
 
 $$S(x) = \begin{cases} 1.5x - 0.5x^3 & 0 \leq x \leq 1 \\ 1 - 1.5(x-1)^2 + 0.5(x-1)^3 & 1 \leq x \leq 2 \end{cases}$$
 
+### Additional Exercises
+
+5. **Lagrange Interpolation:** Find the polynomial $P(x)$ interpolating $(0,1), (1,3), (2,7)$ using Lagrange basis polynomials. Evaluate at $x = 1.5$.
+
+6. **Gaussian Quadrature:** Use 3-point Gaussian quadrature to approximate $\int_{-1}^1 e^x\,dx$. Compare with the exact value $e - e^{-1}$.
+
+7. **Finite Difference:** Use the central difference formula to approximate $f'(0.5)$ for $f(x) = \sin(x^2)$ with $h = 0.1, 0.01, 0.001$. Show that the error scales as $O(h^2)$.
+
+## TypeScript Implementation: Runge-Kutta 4 (RK4) ODE Solver
+
+```typescript
+type ODEFunction = (t: number, y: number) => number;
+
+function rk4(
+  f: ODEFunction,
+  t0: number,
+  y0: number,
+  h: number,
+  steps: number
+): { t: number[]; y: number[] } {
+  const t: number[] = [t0];
+  const y: number[] = [y0];
+  for (let i = 0; i < steps; i++) {
+    const ti = t[i], yi = y[i];
+    const k1 = f(ti, yi);
+    const k2 = f(ti + h / 2, yi + (h / 2) * k1);
+    const k3 = f(ti + h / 2, yi + (h / 2) * k2);
+    const k4 = f(ti + h, yi + h * k3);
+    t.push(ti + h);
+    y.push(yi + (h / 6) * (k1 + 2 * k2 + 2 * k3 + k4));
+  }
+  return { t, y };
+}
+
+// Solve y' = -2ty², y(0) = 1 — exact solution: y = 1/(1+t²)
+const f1: ODEFunction = (t, y) => -2 * t * y * y;
+const { t: tv, y: yv } = rk4(f1, 0, 1, 0.1, 20);
+for (let i = 0; i <= 20; i += 5) {
+  const exact = 1 / (1 + tv[i] * tv[i]);
+  console.log(
+    `t=${tv[i].toFixed(1)}: RK4=${yv[i].toFixed(6)}, exact=${exact.toFixed(6)}`
+  );
+}
+```
+
+## Real-World Application: Solving the Heat Equation
+
+The heat equation $\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}$ is a parabolic PDE modeling heat diffusion. Numerical solution uses finite differences to discretize both time and space.
+
+**Finite Difference Discretization:**
+- Space: $\frac{\partial^2 u}{\partial x^2} \approx \frac{u_{i+1} - 2u_i + u_{i-1}}{\Delta x^2}$ (second-order central)
+- Time (Forward Euler): $\frac{\partial u}{\partial t} \approx \frac{u^{n+1} - u^n}{\Delta t}$
+- Combined (explicit scheme): $u_i^{n+1} = u_i^n + \frac{\alpha \Delta t}{\Delta x^2}(u_{i+1}^n - 2u_i^n + u_{i-1}^n)$
+
+**Stability Constraint (CFL condition):** $\frac{\alpha \Delta t}{\Delta x^2} \leq \frac{1}{2}$ — the time step must be small enough to avoid numerical instability.
+
+```typescript
+function solveHeatEquation1D(
+  alpha: number,
+  length: number,
+  nx: number,
+  totalTime: number,
+  initialTemp: (x: number) => number
+): { x: number[]; u: number[][] } {
+  const dx = length / (nx - 1);
+  const dt = 0.4 * dx * dx / alpha;  // CFL: dt <= dx^2/(2*alpha)
+  const nt = Math.ceil(totalTime / dt);
+  const x = Array.from({ length: nx }, (_, i) => i * dx);
+  const u: number[][] = [x.map(initialTemp)];
+  const r = alpha * dt / (dx * dx);
+
+  for (let n = 0; n < nt; n++) {
+    const current = u[u.length - 1];
+    const next: number[] = [0];  // Dirichlet BC at left
+    for (let i = 1; i < nx - 1; i++)
+      next.push(current[i] + r * (current[i + 1] - 2 * current[i] + current[i - 1]));
+    next.push(0);  // Dirichlet BC at right
+    u.push(next);
+  }
+  return { x, u };
+}
+
+// Rod with initial temp: 100°C at center, 0°C at ends
+const initial = (x: number) => x < 0.5 ? 2 * 100 * x : 2 * 100 * (1 - x);
+const { x, u } = solveHeatEquation1D(0.01, 1, 20, 1, initial);
+console.log(`Temperature at center after 1s: ${u[u.length - 1][10].toFixed(2)}°C`);
+```
+
 ## Summary
 
 - Root-finding methods (bisection, Newton-Raphson, secant) solve nonlinear equations

@@ -397,6 +397,79 @@ function squareWave(t: number, harmonics: number): number {
 console.log(squareWave(Math.PI / 2, 10));
 ```
 
+### Additional Exercises
+
+6. **Convolution Theorem:** Use the convolution theorem to find $\mathcal{L}^{-1}\left\{\frac{1}{(s^2+1)(s^2+4)}\right\}$.
+
+7. **Duality in Fourier Transforms:** Using the duality property $\mathcal{F}\{F(t)\} = 2\pi f(-\omega)$, find the Fourier transform of $\text{sinc}(t) = \sin(t)/t$.
+
+8. **Sampling Theorem:** A signal $x(t)$ has bandwidth $B = 5\text{ kHz}$. What is the minimum sampling rate to avoid aliasing? If sampled at $8\text{ kHz}$, what frequencies would an $8\text{ kHz}$ component alias to?
+
+## Real-World Application: JPEG Image Compression
+
+JPEG compression uses the Discrete Cosine Transform (DCT), a variant of the Fourier transform that uses only cosine basis functions with real coefficients.
+
+**The DCT-II formula:**
+
+$$X[k] = \sum_{n=0}^{N-1} x[n] \cos\left(\frac{\pi}{N}\left(n+\frac{1}{2}\right)k\right)$$
+
+Unlike the DFT, the DCT has excellent energy compaction properties — most of the signal energy concentrates in the low-frequency coefficients.
+
+**JPEG Compression Pipeline:**
+
+1. **Color space conversion:** RGB → YCbCr (separates luminance from chrominance)
+2. **Block splitting:** Image divided into $8 \times 8$ pixel blocks
+3. **DCT:** Each block transformed to frequency domain
+4. **Quantization:** High-frequency coefficients divided by larger quantization values (lossy step)
+5. **Zigzag scanning:** Coefficients ordered by frequency (low to high)
+6. **Run-length + Huffman encoding:** Lossless compression of the quantized coefficients
+
+**Energy Compaction Example:**
+```typescript
+function dct1D(signal: number[]): number[] {
+  const N = signal.length;
+  const result: number[] = new Array(N).fill(0);
+  for (let k = 0; k < N; k++) {
+    let sum = 0;
+    for (let n = 0; n < N; n++)
+      sum += signal[n] * Math.cos((Math.PI / N) * (n + 0.5) * k);
+    result[k] = k === 0
+      ? sum / Math.sqrt(N)
+      : sum * Math.sqrt(2 / N);
+  }
+  return result;
+}
+
+// DC signal: all same value → DCT concentrates all energy in first coefficient
+const dcSignal = Array.from({ length: 8 }, () => 100);
+const dctCoeffs = dct1D(dcSignal);
+console.log(`DC signal DCT: [${dctCoeffs.map(c => c.toFixed(1)).join(', ')}]`);
+// Only first coefficient is non-zero
+
+// Smooth ramp: energy concentrated in first few coefficients
+const ramp = [0, 10, 20, 30, 40, 50, 60, 70];
+const dctRamp = dct1D(ramp);
+console.log(`Ramp DCT: [${dctRamp.map(c => c.toFixed(1)).join(', ')}]`);
+// Large low coefficients, small high coefficients
+```
+
+**Quantization and Compression:** After quantization, a typical $8 \times 8$ block of 64 coefficients may be reduced to only 5-15 non-zero values, achieving 70-80% compression with minimal visual loss.
+
+## Laplace Transform in Circuit Analysis
+
+The Laplace transform converts integro-differential equations from circuit analysis into algebraic equations:
+
+| Element | Time Domain | Laplace (s-domain) |
+|---------|-------------|-------------------|
+| Resistor | $v(t) = Ri(t)$ | $V(s) = RI(s)$ |
+| Capacitor | $i(t) = C\frac{dv}{dt}$ | $I(s) = sCV(s) - Cv(0^-)$ |
+| Inductor | $v(t) = L\frac{di}{dt}$ | $V(s) = sLI(s) - Li(0^-)$ |
+
+**Example:** An $RLC$ circuit with $R = 2\Omega$, $L = 1\text{H}$, $C = 0.5\text{F}$, initial conditions $i(0) = 1\text{A}$, $v_C(0) = 0\text{V}$:
+
+The transfer function from input voltage to output across the capacitor:
+$$H(s) = \frac{V_C(s)}{V_{in}(s)} = \frac{1}{LC s^2 + RC s + 1} = \frac{1}{0.5s^2 + s + 1}$$
+
 ## Practical Takeaways
 
 | Transform | Best For | Key Property |

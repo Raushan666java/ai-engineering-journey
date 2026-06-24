@@ -433,6 +433,223 @@ function verifyHeightBound<T>(t: BinTree<T>): boolean {
 5. **Strong induction when dependencies skip** — if $P(k+1)$ needs $P(k-1)$ or $P(k-2)$, use strong induction.
 6. **One counterexample suffices** — never try to prove a universal false; find a single exception.
 
+### 4.8 Proof Techniques in Practice — TypeScript Examples
+
+**Direct proof of a universal claim over a small finite domain.**
+
+```typescript
+function verifyDirect(domain: number[], property: (n: number) => boolean): boolean {
+  return domain.every(property);
+}
+
+// Claim: for all n in {1,...,20}, if n is even then n² is even
+const domain = Array.from({ length: 20 }, (_, i) => i + 1);
+const claim = verifyDirect(domain, n => n % 2 !== 0 || (n * n) % 2 === 0);
+console.log(claim); // true
+```
+
+**Contrapositive prover for small domains.**
+
+```typescript
+function verifyContrapositive(
+  domain: number[],
+  premise: (n: number) => boolean,
+  conclusion: (n: number) => boolean
+): boolean {
+  // Direct: premise → conclusion
+  const direct = domain.every(n => !premise(n) || conclusion(n));
+  // Contrapositive: ¬conclusion → ¬premise
+  const contra = domain.every(n => conclusion(n) || !premise(n));
+  return direct && contra;
+}
+
+// Claim: n² odd → n odd
+const result = verifyContrapositive(
+  domain,
+  n => (n * n) % 2 !== 0,
+  n => n % 2 !== 0
+);
+console.log(result); // true
+```
+
+### 4.9 Induction — Formal Framework
+
+**Theorem 4.4 (Principle of Mathematical Induction).** Let $P(n)$ be a statement about $n \in \mathbb{N}$. If:
+1. $P(1)$ is true (base case).
+2. $\forall k \geq 1, P(k) \implies P(k+1)$ (inductive step).
+
+Then $P(n)$ is true for all $n \in \mathbb{N}$.
+
+```typescript
+function proveByInduction(
+  baseCase: number,
+  predicate: (n: number) => boolean,
+  inductiveStep: (k: number) => boolean,
+  upTo: number
+): boolean {
+  if (!predicate(baseCase)) return false;
+  for (let k = baseCase; k < upTo; k++) {
+    if (predicate(k) && !inductiveStep(k)) return false;
+  }
+  return true;
+}
+
+// Prove: 1 + 2 + ... + n = n(n+1)/2 for n up to 10
+const sumFormula = (n: number) => {
+  const sum = (n * (n + 1)) / 2;
+  const actual = Array.from({ length: n }, (_, i) => i + 1).reduce((a, b) => a + b, 0);
+  return sum === actual;
+};
+const inductionWorks = proveByInduction(1, sumFormula, k => sumFormula(k) && sumFormula(k + 1), 10);
+console.log(inductionWorks); // true
+```
+
+**Proof 4.6 (Sum of squares formula by induction).** $\sum_{i=1}^n i^2 = \frac{n(n+1)(2n+1)}{6}$.
+
+*Base $n=1$:* LHS $= 1^2 = 1$. RHS $= \frac{1\cdot2\cdot3}{6} = 1$. ✓
+
+*Inductive step:* Assume true for $n = k$:
+$$\sum_{i=1}^k i^2 = \frac{k(k+1)(2k+1)}{6}$$
+
+For $n = k+1$:
+$$\sum_{i=1}^{k+1} i^2 = \frac{k(k+1)(2k+1)}{6} + (k+1)^2$$
+$$= \frac{k+1}{6}[k(2k+1) + 6(k+1)]$$
+$$= \frac{k+1}{6}[2k^2 + 7k + 6]$$
+$$= \frac{k+1}{6}[2k^2 + 4k + 3k + 6]$$
+$$= \frac{k+1}{6}[2k(k+2) + 3(k+2)]$$
+$$= \frac{(k+1)(k+2)(2k+3)}{6}$$
+
+Which is the formula for $n = k+1$. $\square$
+
+### 4.10 Strong Induction
+
+**Theorem 4.5 (Strong Induction).** If $P(1), \ldots, P(m)$ are true and $P(1) \land \cdots \land P(k) \implies P(k+1)$, then $P(n)$ is true for all $n$.
+
+```typescript
+function strongInduction(
+  base: number,
+  baseCases: number[],
+  predicate: (n: number) => boolean,
+  inductiveStep: (k: number, prev: boolean[]) => boolean,
+  upTo: number
+): boolean {
+  const results: boolean[] = [false]; // 1-indexed
+  for (let i = 0; i < baseCases.length; i++) {
+    if (!predicate(base + i)) return false;
+    results[base + i] = true;
+  }
+  for (let k = base + baseCases.length; k <= upTo; k++) {
+    if (!inductiveStep(k - 1, results)) return false;
+    results[k] = predicate(k);
+  }
+  return true;
+}
+```
+
+**Proof 4.7 (Every integer > 1 has a prime factorization).** Use strong induction. $P(2)$ is true (2 is prime). Assume all $2 \leq m \leq k$ have prime factorizations. For $k+1$, if it's prime, done. Otherwise $k+1 = ab$ with $1 < a, b < k+1$, which by the inductive hypothesis have prime factorizations. Their product is a factorization of $k+1$. $\square$
+
+### 4.11 Structural Induction
+
+**Definition 4.5 (Structural Induction).** Used for recursively defined structures (trees, lists, formulas):
+1. Show the property holds for all base elements.
+2. Show the property is preserved by each construction rule.
+
+```typescript
+// Structural induction on arithmetic expressions
+type Expr =
+  | { type: "num"; value: number }
+  | { type: "add"; left: Expr; right: Expr }
+  | { type: "mul"; left: Expr; right: Expr };
+
+function evalExpr(e: Expr): number {
+  switch (e.type) {
+    case "num": return e.value;
+    case "add": return evalExpr(e.left) + evalExpr(e.right);
+    case "mul": return evalExpr(e.left) * evalExpr(e.right);
+  }
+}
+
+// Structural induction claim: Every expression built from integers,
+// +, and × evaluates to an integer.
+function allResultsAreIntegers(e: Expr): boolean {
+  const result = evalExpr(e);
+  if (!Number.isInteger(result)) return false;
+  // Verify recursively
+  if (e.type === "num") return Number.isInteger(e.value);
+  return allResultsAreIntegers(e.left) && allResultsAreIntegers(e.right);
+}
+```
+
+### 4.12 Proof by Contradiction — Classic Examples
+
+**Proof 4.8 ($\sqrt{2}$ is irrational).**
+
+*Proof by contradiction.* Assume $\sqrt{2} = p/q$ in lowest terms ($p, q$ integers, coprime). Then $2 = p^2/q^2$, so $p^2 = 2q^2$. Thus $p^2$ is even, so $p$ is even: $p = 2k$. Then $(2k)^2 = 2q^2 \implies 4k^2 = 2q^2 \implies q^2 = 2k^2$, so $q$ is also even. But $p$ and $q$ both even contradicts that $p/q$ is in lowest terms. $\square$
+
+```typescript
+function isRationalSqrt2(): boolean {
+  // Check all p/q up to a bound — if none squared equals 2, √2 is irrational
+  const limit = 100;
+  for (let q = 1; q <= limit; q++) {
+    for (let p = 1; p <= limit; p++) {
+      if (Math.abs(p * p / (q * q) - 2) < 1e-10) return true;
+    }
+  }
+  return false;
+}
+console.log(isRationalSqrt2()); // false
+```
+
+**Proof 4.9 (There are infinitely many primes).**
+
+*Proof by contradiction.* Assume finitely many primes $p_1, \ldots, p_k$. Let $N = p_1 p_2 \cdots p_k + 1$. $N$ is greater than each $p_i$ and not divisible by any $p_i$ (remainder 1). Thus $N$ has a prime divisor not among $p_1, \ldots, p_k$, contradiction. $\square$
+
+### 4.13 Proof Strategies — Decision Flow
+
+```mermaid
+flowchart TD
+    A[Statement to Prove] --> B{Universal?}
+    B -->|Yes| C{Over ℕ?}
+    C -->|Yes| D[Try Induction]
+    C -->|No| E[Choose arbitrary element]
+    E --> F[Direct Proof]
+    B -->|No| G{Existence?}
+    G -->|Yes| H[Construct Example]
+    G -->|No| I{Implication?}
+    I -->|Yes| J{Contrapositive<br/>Easier?}
+    J -->|Yes| K[Prove ¬Q → ¬P]
+    J -->|No| L[Direct Proof]
+    I -->|No| M[Biconditional]
+    M --> N[Prove Both Directions]
+    D --> O[Base Case + Inductive Step]
+    F --> P[Premise → Conclusion]
+    K --> Q[Assume ¬Q, Derive ¬P]
+    H --> R[Find Witness]
+    N --> S[P→Q and Q→P]
+```
+
+**Proof 4.10 (Pigeonhole principle proof).** Among any $n+1$ integers, two have the same remainder when divided by $n$.
+
+*Proof.* There are $n$ possible remainders modulo $n$: $\{0, 1, \ldots, n-1\}$. By the pigeonhole principle, among $n+1$ integers, two must fall in the same remainder class. Their difference is divisible by $n$.
+
+**Example 4.8** (Combinatorial proof using double counting). In any group of people, the number of people who have shaken hands an odd number of times is even.
+
+*Proof.* Each handshake contributes 2 to the total handshake count. Sum of all handshake counts = $2 \times \text{(handshakes)}$, which is even. An odd number of odd terms would sum to an odd total, impossible. Therefore the count of odd-degree vertices is even. $\square$
+
+## Additional Exercises
+
+17. Prove by induction: $1^3 + 2^3 + \cdots + n^3 = \left(\frac{n(n+1)}{2}\right)^2$.
+
+18. Prove that the product of any two odd integers is odd (direct proof).
+
+19. Prove by contradiction: If $a$ and $b$ are rational numbers with $a < b$, then there exists an irrational number $x$ such that $a < x < b$.
+
+20. Use strong induction to prove that every integer $n > 1$ can be written as a product of primes (the Fundamental Theorem of Arithmetic).
+
+21. Prove by structural induction: In a binary tree, the number of leaves equals the number of internal nodes with 2 children plus 1.
+
+22. Show that $\log_2 3$ is irrational. (Hint: adapt the proof that $\sqrt{2}$ is irrational.)
+
 ## Exercises
 
 ### Review Questions

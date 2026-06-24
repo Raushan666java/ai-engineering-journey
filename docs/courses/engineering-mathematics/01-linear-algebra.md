@@ -376,6 +376,151 @@ $$\text{proj}_{u_1}(v_2) = \frac{v_2 \cdot u_1}{u_1 \cdot u_1} u_1 = \frac{1}{2}
 
 **Result:** $\{e_1, e_2\}$ is an orthonormal basis.
 
+## TypeScript Examples
+
+### Matrix Operations
+
+```typescript
+type Matrix = number[][];
+type Vector = number[];
+
+function matMul(A: Matrix, B: Matrix): Matrix {
+  const m = A.length, n = A[0].length, p = B[0].length;
+  const C: Matrix = Array.from({ length: m }, () => Array(p).fill(0));
+  for (let i = 0; i < m; i++)
+    for (let k = 0; k < n; k++)
+      for (let j = 0; j < p; j++)
+        C[i][j] += A[i][k] * B[k][j];
+  return C;
+}
+
+function matVecMul(A: Matrix, v: Vector): Vector {
+  return A.map(row => row.reduce((sum, a, j) => sum + a * v[j], 0));
+}
+
+function transpose(A: Matrix): Matrix {
+  return A[0].map((_, i) => A.map(row => row[i]));
+}
+
+// 2x2 determinant
+function det2x2(A: Matrix): number {
+  return A[0][0] * A[1][1] - A[0][1] * A[1][0];
+}
+
+// Power iteration for dominant eigenvalue
+function powerIteration(
+  A: Matrix,
+  iterations: number = 100
+): { eigenvalue: number; eigenvector: Vector } {
+  const n = A.length;
+  let v: Vector = Array.from({ length: n }, () => Math.random());
+  for (let iter = 0; iter < iterations; iter++) {
+    v = matVecMul(A, v);
+    const norm = Math.sqrt(v.reduce((s, x) => s + x * x, 0));
+    v = v.map(x => x / norm);
+  }
+  const Av = matVecMul(A, v);
+  const eigenvalue = v.reduce((s, x, i) => s + Av[i] * x, 0);
+  return { eigenvalue, eigenvector: v };
+}
+
+// Gram-Schmidt orthogonalization
+function gramSchmidt(V: Matrix): Matrix {
+  const n = V.length;
+  const U: Matrix = V.map(v => [...v]);
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < i; j++) {
+      const dot = U[i].reduce((s, x, k) => s + x * U[j][k], 0);
+      const norm2 = U[j].reduce((s, x) => s + x * x, 0);
+      const coeff = dot / norm2;
+      U[i] = U[i].map((x, k) => x - coeff * U[j][k]);
+    }
+    const norm = Math.sqrt(U[i].reduce((s, x) => s + x * x, 0));
+    U[i] = U[i].map(x => x / norm);
+  }
+  return U;
+}
+
+// Example: power iteration
+const A: Matrix = [[4, 1], [1, 3]];
+const { eigenvalue, eigenvector } = powerIteration(A);
+console.log(`Dominant eigenvalue: ${eigenvalue.toFixed(4)}`);
+console.log(`Eigenvector: [${eigenvector.map(x => x.toFixed(4)).join(', ')}]`);
+```
+
+### SVD via Power Iteration
+
+```typescript
+function svd2x2(A: Matrix): { U: Matrix; S: Matrix; V: Matrix } {
+  // Compute A^T A
+  const At = transpose(A);
+  const AtA = matMul(At, A);
+  const AAt = matMul(A, At);
+
+  // Eigenvectors of A^T A = V columns
+  const { eigenvector: v1 } = powerIteration(AtA);
+  // Orthogonal complement
+  const v2: Vector = [-v1[1], v1[0]];
+
+  // Singular values
+  const Av1 = matVecMul(A, v1);
+  const Av2 = matVecMul(A, v2);
+  const sigma1 = Math.sqrt(Av1.reduce((s, x) => s + x * x, 0));
+  const sigma2 = Math.sqrt(Av2.reduce((s, x) => s + x * x, 0));
+
+  // U columns
+  const u1 = Av1.map(x => x / sigma1);
+  const u2 = Av2.map(x => x / sigma2);
+
+  return {
+    U: [u1, u2],
+    S: [[sigma1, 0], [0, sigma2]],
+    V: [v1, v2],
+  };
+}
+
+const B: Matrix = [[3, 1], [1, 3]];
+const { U, S, V } = svd2x2(B);
+console.log(`σ₁ = ${S[0][0].toFixed(4)}, σ₂ = ${S[1][1].toFixed(4)}`);
+console.log(`U₁ = [${U[0].map(x => x.toFixed(4)).join(', ')}]`);
+console.log(`V₁ = [${V[0].map(x => x.toFixed(4)).join(', ')}]`);
+```
+
+## Real-World Application: Principal Component Analysis (PCA)
+
+PCA is a dimensionality reduction technique that uses eigendecomposition of the covariance matrix to find the directions of maximum variance in data.
+
+**Algorithm:**
+1. Center the data: subtract the mean $\bar{x}$ from each observation
+2. Compute covariance matrix: $\Sigma = \frac{1}{n-1} X^T X$
+3. Find eigenvalues and eigenvectors of $\Sigma$
+4. Project data onto top-$k$ eigenvectors
+
+**Why SVD Works Better:** In practice, PCA is computed via SVD of the centered data matrix $X = U\Sigma V^T$, which is numerically more stable than forming $\Sigma$ explicitly. The right singular vectors $V$ equal the eigenvectors of $\Sigma$, and the singular values $\sigma_i$ relate to eigenvalues by $\lambda_i = \sigma_i^2 / (n-1)$.
+
+**Image Compression Pipeline:**
+```typescript
+// Approximate: rank-k approximation via truncated SVD
+function rankKApprox(A: Matrix, k: number): Matrix {
+  const { U, S, V } = svd2x2(A);
+  const approx: Matrix = Array.from(
+    { length: A.length },
+    () => Array(A[0].length).fill(0)
+  );
+  for (let r = 0; r < k; r++) {
+    const sigma = S[r][r];
+    const u = U[r];
+    const v = V[r];
+    for (let i = 0; i < A.length; i++)
+      for (let j = 0; j < A[0].length; j++)
+        approx[i][j] += sigma * u[i] * v[j];
+  }
+  return approx;
+}
+```
+
+Storage savings: $m \times n$ original → $k(m + n + 1)$ with SVD. For $1000 \times 1000$ at $k = 100$: $1,000,000$ → $100(1000 + 1000 + 1) = 200,100$, a 5x compression.
+
 ## Summary
 
 - A matrix is a linear transformation; matrix multiplication composes transformations
@@ -405,6 +550,12 @@ $$\text{proj}_{u_1}(v_2) = \frac{v_2 \cdot u_1}{u_1 \cdot u_1} u_1 = \frac{1}{2}
 2. **PCA on 2D Data:** Given data points $(1,1), (2,2), (3,3), (1,3), (2,4)$, compute the covariance matrix, find its eigenvectors, and determine the principal component.
 
 3. **Image Compression via SVD:** Explain how you would compress a $1000 \times 1000$ grayscale image using SVD. How many singular values would you keep for 10x compression?
+
+4. **Linear Regression via QR:** Show how to solve the least squares problem $\min_x \|Ax - b\|_2$ using QR decomposition of $A$.
+
+5. **Markov Chain Stationary Distribution:** A Markov chain has transition matrix $P = \begin{pmatrix} 0.7 & 0.2 & 0.1 \\ 0.3 & 0.5 & 0.2 \\ 0.1 & 0.4 & 0.5 \end{pmatrix}$. Find the stationary distribution $\pi$ satisfying $\pi P = \pi$ and $\sum \pi_i = 1$.
+
+6. **Kernel Trick:** Show that using the feature map $\phi(x_1, x_2) = (x_1^2, \sqrt{2}x_1x_2, x_2^2)$ and the dot product in feature space is equivalent to the kernel $K(x, y) = (x \cdot y)^2$.
 
 ### Challenge Problem
 

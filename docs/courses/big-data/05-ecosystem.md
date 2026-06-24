@@ -393,6 +393,448 @@ decision = {
 4. **Streaming:** Keep Kafka or use managed MSK/Confluent
 5. **SQL layer:** Replace Hive with Athena/Presto for interactive queries
 
+## 5.7 Ecosystem Architecture Overview
+
+```mermaid
+flowchart TB
+    subgraph Ingestion["Data Ingestion"]
+        K[Kafka<br>Streaming Events]
+        F[Flume / Sqoop<br>Batch Import]
+    end
+    subgraph Storage["Data Storage"]
+        HDFS[HDFS<br>Distributed FS]
+        S3[S3 / GCS<br>Cloud Object Store]
+        HB[HBase<br>Column-Family NoSQL]
+    end
+    subgraph Processing["Data Processing"]
+        SP[Spark<br>Batch + Streaming + ML]
+        MR[MapReduce<br>Legacy Batch]
+        HIVE[Hive<br>SQL-on-Hadoop]
+        PRESTO[Presto / Trino<br>Interactive SQL]
+    end
+    subgraph Formats["Serialization Formats"]
+        PARQ[Parquet<br>Columnar Analytics]
+        AVRO[Avro<br>Row-Oriented Streaming]
+        ORC[ORC<br>Hive Optimized]
+    end
+    subgraph Orchestration["Orchestration & Scheduling"]
+        OOZIE[Oozie<br>Legacy DAG Scheduler]
+        AIR[Airflow<br>Modern DAG Orchestrator]
+        YARN[YARN<br>Resource Manager]
+    end
+    Ingestion --> Storage
+    Storage --> Formats
+    Formats --> Processing
+    Processing --> Orchestration
+```
+
+## 5.8 Hive Query Execution Flow
+
+```mermaid
+flowchart LR
+    A[HiveQL Query] --> B[Parser<br>AST Generation]
+    B --> C[Semantic Analyzer<br>Schema Validation]
+    C --> D[Logical Plan<br>Operator Tree]
+    D --> E[Optimizer<br>Predicate Pushdown]
+    E --> F[Physical Plan<br>MapReduce / Tez]
+    F --> G[Execution Engine]
+    G --> H1[Map Phase<br>Filter + Project]
+    G --> H2[Reduce Phase<br>Aggregate + Sort]
+    H1 & H2 --> I[HDFS Output]
+```
+
+## 5.9 Kafka Producer-Consumer TypeScript Simulator
+
+```typescript
+// ─── Kafka Topic & Partition Simulator ─────────────────────
+
+interface KafkaMessage {
+  key: string;
+  value: unknown;
+  partition: number;
+  offset: number;
+  timestamp: number;
+}
+
+class TopicPartition {
+  private messages: KafkaMessage[] = [];
+  private currentOffset = 0;
+
+  constructor(readonly id: number) {}
+
+  append(key: string, value: unknown): KafkaMessage {
+    const msg: KafkaMessage = {
+      key,
+      value,
+      partition: this.id,
+      offset: this.currentOffset++,
+      timestamp: Date.now(),
+    };
+    this.messages.push(msg);
+    return msg;
+  }
+
+  read(fromOffset: number, maxCount: number): KafkaMessage[] {
+    return this.messages.slice(fromOffset, fromOffset + maxCount);
+  }
+
+  get endOffset() { return this.messages.length; }
+}
+
+class KafkaTopic {
+  private partitions: TopicPartition[] = [];
+
+  constructor(readonly name: string, numPartitions: number) {
+    for (let i = 0; i < numPartitions; i++) {
+      this.partitions.push(new TopicPartition(i));
+    }
+  }
+
+  getPartition(key: string): TopicPartition {
+    const hash = [...key].reduce((h, c) => h * 31 + c.charCodeAt(0), 0);
+    return this.partitions[Math.abs(hash) % this.partitions.length];
+  }
+
+  produce(key: string, value: unknown): KafkaMessage {
+    const part = this.getPartition(key);
+    return part.append(key, value);
+  }
+
+  getPartitions() { return this.partitions; }
+}
+
+// ─── Kafka Producer ────────────────────────────────────────
+
+class KafkaProducer {
+  constructor(private topic: KafkaTopic) {}
+
+  send(key: string, value: unknown): KafkaMessage {
+    const msg = this.topic.produce(key, value);
+    console.log(`Produced [p${msg.partition}@o${msg.offset}]: ${JSON.stringify(value)}`);
+    return msg;
+  }
+
+  sendBatch(records: { key: string; value: unknown }[]): KafkaMessage[] {
+    return records.map(r => this.send(r.key, r.value));
+  }
+}
+
+// ─── Kafka Consumer ────────────────────────────────────────
+
+class KafkaConsumer {
+  private offsets: number[] = [];
+  private groupId: string;
+
+  constructor(private topic: KafkaTopic, groupId: string) {
+    this.offsets = topic.getPartitions().map(() => 0);
+    this.groupId = groupId;
+  }
+
+  poll(maxMessages = 10): KafkaMessage[] {
+    const messages: KafkaMessage[] = [];
+    for (const [i, part] of this.topic.getPartitions().entries()) {
+      const batch = part.read(this.offsets[i], maxMessages);
+      messages.push(...batch);
+      this.offsets[i] += batch.length;
+    }
+    return messages.sort((a, b) => a.timestamp - b.timestamp).slice(0, maxMessages);
+  }
+
+  commit() {
+    console.log(`[${this.groupId}] Committed offsets: ${this.offsets}`);
+  }
+
+  seek(partition: number, offset: number) {
+    this.offsets[partition] = offset;
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────
+
+const topic = new KafkaTopic("events", 3);
+const producer = new KafkaProducer(topic);
+
+producer.sendBatch([
+  { key: "user_001", value: { event: "page_view", page: "/home" } },
+  { key: "user_002", value: { event: "purchase", amount: 29.99 } },
+  { key: "user_001", value: { event: "click", element: "signup" } },
+  { key: "user_003", value: { event: "login" } },
+  { key: "user_002", value: { event: "logout" } },
+]);
+
+const consumer = new KafkaConsumer(topic, "analytics-group");
+const batch = consumer.poll(10);
+console.log(`\nConsumer got ${batch.length} messages:`);
+batch.forEach(m => {
+  console.log(`  [p${m.partition}@o${m.offset}] ${JSON.stringify(m.value)}`);
+});
+consumer.commit();
+```
+
+### Kafka + Spark Streaming Data Flow
+
+```mermaid
+flowchart LR
+    subgraph Producers["Producers"]
+        P1[Web App]
+        P2[Mobile App]
+        P3[IoT Devices]
+    end
+    subgraph Kafka["Kafka Cluster"]
+        B1[Broker 1]
+        B2[Broker 2]
+        B3[Broker 3]
+        T[Topic: events<br>6 Partitions x 3 Replicas]
+    end
+    subgraph Spark["Spark Streaming"]
+        S[Structured Stream]
+        W[Windowed Aggregation<br>5 min tumbling]
+        SINK[(Parquet Output<br>S3 / HDFS)]
+    end
+    P1 & P2 & P3 --> T
+    T --> B1 & B2 & B3
+    B1 & B2 & B3 --> S
+    S --> W --> SINK
+```
+
+## 5.10 HBase Column-Family TypeScript Simulator
+
+```typescript
+// ─── HBase Column-Family Store Simulator ───────────────────
+
+type ColumnFamily = Map<string, unknown>;
+type HBaseRow = Map<string, ColumnFamily>;
+
+class HBaseTable {
+  private rows = new Map<string, HBaseRow>();
+
+  constructor(
+    readonly tableName: string,
+    readonly columnFamilies: string[]
+  ) {}
+
+  // Row key design: salted prefix to avoid hot spotting
+  static saltKey(key: string, saltChars = 2): string {
+    let hash = 0;
+    for (const ch of key) hash = hash * 31 + ch.charCodeAt(0);
+    const salt = Math.abs(hash % 256).toString(16).padStart(saltChars, "0");
+    return `${salt}_${key}`;
+  }
+
+  put(rowKey: string, family: string, qualifier: string, value: unknown) {
+    if (!this.columnFamilies.includes(family)) {
+      throw new Error(`Column family '${family}' not in table schema`);
+    }
+    const saltedKey = HBaseTable.saltKey(rowKey);
+    if (!this.rows.has(saltedKey)) {
+      this.rows.set(saltedKey, new Map());
+    }
+    const row = this.rows.get(saltedKey)!;
+    if (!row.has(family)) row.set(family, new Map());
+    const cf = row.get(family)! as Map<string, unknown>;
+    cf.set(qualifier, value);
+    console.log(`Put: ${saltedKey} | ${family}:${qualifier} = ${JSON.stringify(value)}`);
+  }
+
+  get(rowKey: string, family?: string, qualifier?: string): unknown {
+    const saltedKey = HBaseTable.saltKey(rowKey);
+    const row = this.rows.get(saltedKey);
+    if (!row) return null;
+
+    if (!family) {
+      // Return all families
+      const result: Record<string, Record<string, unknown>> = {};
+      for (const [cfName, cf] of row) {
+        result[cfName] = Object.fromEntries(cf);
+      }
+      return result;
+    }
+
+    const cf = row.get(family);
+    if (!cf) return null;
+
+    if (!qualifier) return Object.fromEntries(cf);
+    return (cf as Map<string, unknown>).get(qualifier) ?? null;
+  }
+
+  scan(limit = 10): { rowKey: string; data: Record<string, Record<string, unknown>> }[] {
+    const results: { rowKey: string; data: Record<string, Record<string, unknown>> }[] = [];
+    for (const [saltedKey, row] of this.rows) {
+      if (results.length >= limit) break;
+      const data: Record<string, Record<string, unknown>> = {};
+      for (const [cfName, cf] of row) {
+        data[cfName] = Object.fromEntries(cf);
+      }
+      results.push({ rowKey: saltedKey, data });
+    }
+    return results;
+  }
+
+  get stats() {
+    return {
+      table: this.tableName,
+      rowCount: this.rows.size,
+      columnFamilies: this.columnFamilies,
+    };
+  }
+}
+
+// ─── Demo ──────────────────────────────────────────────────
+
+const events = new HBaseTable("events", ["meta", "payload"]);
+
+// Timestamp-based keys (with salt to distribute writes)
+const t1 = "2026-06-24T10:00:00Z";
+const t2 = "2026-06-24T10:00:01Z";
+
+events.put("sensor_001", "meta", "timestamp", t1);
+events.put("sensor_001", "payload", "temperature", 22.5);
+events.put("sensor_001", "payload", "humidity", 65);
+
+events.put("sensor_002", "meta", "timestamp", t2);
+events.put("sensor_002", "payload", "temperature", 18.3);
+events.put("sensor_002", "payload", "pressure", 1013);
+
+console.log("\nRow scan:", JSON.stringify(events.scan(), null, 2));
+console.log("\nSingle get:", events.get("sensor_001", "payload", "temperature"));
+console.log("\nTable stats:", events.stats);
+```
+
+### Row Key Design Comparison
+
+```typescript
+function simulateWriteDistribution(numWrites: number): void {
+  const badKeys = new Map<string, number>();
+  const goodKeys = new Map<string, number>();
+
+  for (let i = 0; i < numWrites; i++) {
+    const ts = new Date(Date.now() + i * 1000).toISOString();
+    const userId = `user_${String(i % 100).padStart(3, "0")}`;
+
+    // Bad: timestamp prefix
+    const badKey = `${ts}_${userId}`;
+    badKeys.set("single-region", (badKeys.get("single-region") ?? 0) + 1);
+
+    // Good: salted prefix
+    const salt = HBaseTable.saltKey(userId);
+    const goodKey = `${salt}_${ts}_${userId}`;
+    const region = salt.split("_")[0];
+    goodKeys.set(region, (goodKeys.get(region) ?? 0) + 1);
+  }
+
+  console.log("Bad key design (timestamp prefix):");
+  console.log(`  All writes to 1 region: ${badKeys.get("single-region")}`);
+
+  console.log("Good key design (salted prefix):");
+  console.log(`  Writes distributed across ${goodKeys.size} regions:`);
+  for (const [region, count] of goodKeys) {
+    console.log(`    Region ${region}: ${count} writes`);
+  }
+}
+
+simulateWriteDistribution(1000);
+```
+
+## 5.11 Data Format Benchmark Simulator
+
+```typescript
+interface FormatBenchmark {
+  name: string;
+  readTimeMs: number;
+  storageGB: number;
+  supportsPredicatePushdown: boolean;
+  supportsSchema: boolean;
+}
+
+function benchmarkFormats(dataSizeGB: number, selectColumns: number, totalColumns: number): FormatBenchmark[] {
+  const formats: FormatBenchmark[] = [
+    {
+      name: "CSV",
+      readTimeMs: dataSizeGB * 1200,  // reads all columns, no pushdown
+      storageGB: dataSizeGB,
+      supportsPredicatePushdown: false,
+      supportsSchema: false,
+    },
+    {
+      name: "JSON",
+      readTimeMs: dataSizeGB * 1500,  // slower parsing
+      storageGB: dataSizeGB * 1.3,    // verbose format
+      supportsPredicatePushdown: false,
+      supportsSchema: false,
+    },
+    {
+      name: "Avro",
+      readTimeMs: dataSizeGB * 800,   // row-oriented, fast serialization
+      storageGB: dataSizeGB * 0.6,    // compact binary
+      supportsPredicatePushdown: false,
+      supportsSchema: true,
+    },
+    {
+      name: "Parquet",
+      readTimeMs: dataSizeGB * 200 * (selectColumns / totalColumns), // column pruning
+      storageGB: dataSizeGB * 0.4,    // columnar compression
+      supportsPredicatePushdown: true,
+      supportsSchema: true,
+    },
+    {
+      name: "ORC",
+      readTimeMs: dataSizeGB * 180 * (selectColumns / totalColumns),
+      storageGB: dataSizeGB * 0.35,
+      supportsPredicatePushdown: true,
+      supportsSchema: true,
+    },
+  ];
+
+  return formats.sort((a, b) => a.readTimeMs - b.readTimeMs);
+}
+
+const results = benchmarkFormats(100, 3, 20);
+console.log("Data format benchmark (100 GB, 3 of 20 columns selected):");
+console.table(results.map(r => ({
+  format: r.name,
+  "readTime (s)": (r.readTimeMs / 1000).toFixed(1),
+  "storage (GB)": r.storageGB.toFixed(1),
+  pushdown: r.supportsPredicatePushdown ? "yes" : "no",
+  schema: r.supportsSchema ? "yes" : "no",
+})));
+// ┌──────────┬──────────────┬──────────────┬──────────┬───────┐
+// │  format  │ readTime (s) │ storage (GB) │ pushdown │ schema│
+// ├──────────┼──────────────┼──────────────┼──────────┼───────┤
+// │  ORC     │     2.7      │    35.0      │   yes    │  yes  │
+// │ Parquet  │     3.0      │    40.0      │   yes    │  yes  │
+// │  Avro    │    80.0      │    60.0      │    no    │  yes  │
+// │  CSV     │   120.0      │   100.0      │    no    │  no   │
+// │  JSON    │   150.0      │   130.0      │    no    │  no   │
+// └──────────┴──────────────┴──────────────┴──────────┴───────┘
+```
+
+> **Key Insight:** With column pruning, Parquet reads only 3 of 20 columns — a 6.7x I/O reduction versus CSV. For analytical queries over wide tables, columnar formats deliver 10-50x performance gains.
+
+## 5.12 Cloud Migration Strategy Flow
+
+```mermaid
+flowchart TB
+    subgraph Legacy["On-Premises Hadoop"]
+        L1[HDFS Storage]
+        L2[MapReduce Processing]
+        L3[Hive SQL]
+        L4[Oozie Scheduling]
+    end
+    subgraph Phase1["Phase 1: Storage Migration"]
+        P1[S3 / GCS<br>Retain Avro/Parquet]
+    end
+    subgraph Phase2["Phase 2: Compute Migration"]
+        P2[EMR / Dataproc<br>Spark replaces MapReduce]
+    end
+    subgraph Phase3["Phase 3: SQL & Orchestration"]
+        P3[Athena / BigQuery<br>replaces Hive]
+        P4[Airflow / Dagster<br>replaces Oozie]
+    end
+    Legacy --> Phase1
+    Phase1 --> Phase2
+    Phase2 --> Phase3
+```
+
 ## Summary
 
 - Hive provides SQL-on-HDFS but is being replaced by Spark SQL and Presto for most use cases.
@@ -408,3 +850,8 @@ decision = {
 3. Compare the read performance of Parquet vs Avro vs CSV for a 10 GB dataset with a selective column query.
 4. Design a HBase row key strategy for a time-series table receiving 100K writes/second from 1000 sensors.
 5. Translate a legacy Hive ETL pipeline (3 HiveQL queries, 2 intermediate tables) into a Spark SQL job.
+6. Extend the TypeScript `KafkaTopic` class to support `replicationFactor` — simulate broker failure and verify that messages are still readable from replicas.
+7. Use the `HBaseTable` simulator to design a time-series schema for 1000 IoT sensors writing temperature every second, and verify the salted key distribution.
+8. Implement a `KafkaConsumerGroup` class that distributes partitions across multiple consumer instances (round-robin), then test with 3 consumers and 6 partitions.
+9. Write a function that benchmarks Parquet vs Avro vs CSV for a 50 GB dataset with 50 columns, selecting 2 columns, and report estimated read times.
+10. Build a TypeScript `SchemaRegistry` class that stores Avro schemas by subject and validates messages against their schema before producing to Kafka.

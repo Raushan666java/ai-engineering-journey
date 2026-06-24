@@ -361,6 +361,224 @@ $a = 1$, $b = 2$, $\log_2 1 = 0$, $f(n) = 1 = \Theta(n^0)$. Case 2: $T(n) = \The
 
 *Solution.* Homogeneous: $a_n^{(h)} = \alpha \cdot 2^n$. For the particular, try $A \cdot 3^n$ (3 is not a characteristic root). $A \cdot 3^n = 2A \cdot 3^{n-1} + 3^n \implies A \cdot 3^n = 2A \cdot 3^{n-1} + 3^n$. Divide by $3^{n-1}$: $3A = 2A + 3 \implies A = 3$. So $a_n^{(p)} = 3 \cdot 3^n = 3^{n+1}$. Thus $a_n = \alpha \cdot 2^n + 3^{n+1}$. $a_0 = \alpha + 3 = 0 \implies \alpha = -3$. So $a_n = -3 \cdot 2^n + 3^{n+1} = 3(3^n - 2^n)$.
 
+### 6.7 Solving Recurrences with TypeScript
+
+**General Linear Recurrence Solver** (for homogeneous recurrences with constant coefficients).
+
+```typescript
+function solveLinearRecurrence(
+  coeffs: number[],
+  initial: number[],
+  n: number
+): number[] {
+  const k = coeffs.length;
+  const seq = [...initial];
+
+  for (let i = k; i <= n; i++) {
+    let next = 0;
+    for (let j = 0; j < k; j++) {
+      next += coeffs[j] * seq[i - 1 - j];
+    }
+    seq.push(next);
+  }
+  return seq;
+}
+
+// Fibonacci: a_n = a_{n-1} + a_{n-2}, a_0 = 0, a_1 = 1
+console.log(solveLinearRecurrence([1, 1], [0, 1], 10));
+// [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+// a_n = 2a_{n-1} + 3a_{n-2}, a_0 = 1, a_1 = 2
+console.log(solveLinearRecurrence([2, 3], [1, 2], 8));
+// [1, 2, 7, 20, 61, 182, 547, 1640, 4921]
+```
+
+**Divide-and-Conquer Recurrence Simulator.**
+
+```typescript
+function simulateDivideConquer(
+  a: number,
+  b: number,
+  f: (n: number) => number,
+  base: (n: number) => number,
+  n: number
+): number {
+  if (n <= 1) return base(n);
+  return a * simulateDivideConquer(a, b, f, base, Math.floor(n / b)) + f(n);
+}
+
+// Merge sort: T(n) = 2T(n/2) + n, T(1) = 0
+const mergeSortCost = (n: number) => simulateDivideConquer(2, 2, n => n, n => 0, n);
+console.log(mergeSortCost(8));  // 24 operations
+
+// Binary search: T(n) = T(n/2) + 1, T(1) = 0
+const binarySearchCost = (n: number) => simulateDivideConquer(1, 2, n => 1, n => 0, n);
+console.log(binarySearchCost(16)); // 4 comparisons
+```
+
+### 6.8 Master Theorem — Extended Cases
+
+**Theorem 6.3 (Master Theorem).** For recurrences of the form $T(n) = aT(n/b) + f(n)$:
+
+Let $\alpha = \log_b a$. Compare $f(n)$ to $n^\alpha$:
+- **Case 1:** $f(n) = O(n^{\alpha - \epsilon})$ → $T(n) = \Theta(n^\alpha)$
+- **Case 2:** $f(n) = \Theta(n^\alpha \log^k n)$ → $T(n) = \Theta(n^\alpha \log^{k+1} n)$
+- **Case 3:** $f(n) = \Omega(n^{\alpha + \epsilon})$ and $af(n/b) \leq c f(n)$ for some $c < 1$ → $T(n) = \Theta(f(n))$
+
+```typescript
+function masterTheorem(
+  a: number,
+  b: number,
+  fExponent: number,
+  fLogPower: number
+): string {
+  const alpha = Math.log(a) / Math.log(b);
+  const diff = fExponent - alpha;
+
+  if (Math.abs(diff) < 1e-10) {
+    if (fLogPower === -1) return `Θ(n^${alpha} log log n)`;
+    return `Θ(n^${alpha} log^${fLogPower + 1} n)`;
+  }
+  if (diff < 0) return `Θ(n^${alpha.toFixed(2)})`;
+  if (diff > 0) return `Θ(n^${fExponent})`;
+  return "Check regularity condition";
+}
+
+console.log(masterTheorem(2, 2, 1, 0));   // Merge sort: Θ(n log n)
+console.log(masterTheorem(1, 2, 0, 0));   // Binary search: Θ(log n)
+console.log(masterTheorem(4, 2, 2, 0));   // Case 2: Θ(n² log n)
+console.log(masterTheorem(2, 2, 2, 0));   // Case 3: Θ(n²)
+console.log(masterTheorem(3, 4, 1, 0));   // Case 1: Θ(n^0.79)
+```
+
+### 6.9 Generating Functions — Extended Examples
+
+A **generating function** encodes a sequence as coefficients of a power series: $G(x) = \sum_{n=0}^\infty a_n x^n$.
+
+```typescript
+function generatingFunction(
+  coeffFn: (n: number) => number,
+  terms: number
+): number[] {
+  return Array.from({ length: terms }, (_, i) => coeffFn(i));
+}
+
+function seqToGeneratingFunction(seq: number[]): string {
+  return seq.map((a, i) => a === 0 ? "" : `${a}x^${i}`).filter(s => s).join(" + ");
+}
+
+const fib = solveLinearRecurrence([1, 1], [0, 1], 8);
+console.log(seqToGeneratingFunction(fib));
+// "0 + 1x^1 + 1x^2 + 2x^3 + 3x^4 + 5x^5 + 8x^6 + 13x^7 + 21x^8"
+```
+
+**Example 6.9** (Generating function for Fibonacci numbers). The generating function $F(x) = \sum F_n x^n$ satisfies $F(x) = x + xF(x) + x^2F(x)$, giving:
+
+$$F(x) = \frac{x}{1 - x - x^2}$$
+
+### 6.10 Nonhomogeneous Recurrences — Root Conflict Handling
+
+When the nonhomogeneous term matches a characteristic root, multiply the particular solution by $n^m$ where $m$ is the root multiplicity.
+
+**Example 6.10** (Root conflict). Solve $a_n = 5a_{n-1} - 6a_{n-2} + 2^n$, $a_0 = 0$, $a_1 = 1$.
+
+*Solution.* Characteristic: $r^2 - 5r + 6 = 0 \to r = 2, 3$. Homogeneous: $a_n^{(h)} = \alpha \cdot 2^n + \beta \cdot 3^n$.
+
+Since $2$ is a characteristic root, the particular solution attempts $A \cdot n \cdot 2^n$:
+
+$$A n 2^n = 5A (n-1)2^{n-1} - 6A (n-2)2^{n-2} + 2^n$$
+
+Divide through by $2^{n-2}$: $4An = 10A(n-1) - 6A(n-2) + 4$
+$4An = 10An - 10A - 6An + 12A + 4 = 4An + 2A + 4$
+Thus $0 = 2A + 4 \implies A = -2$.
+
+Particular: $a_n^{(p)} = -2n \cdot 2^n$. General: $a_n = \alpha \cdot 2^n + \beta \cdot 3^n - 2n \cdot 2^n$.
+
+Using $a_0 = \alpha + \beta = 0$, $a_1 = 2\alpha + 3\beta - 4 = 1$, we get $\alpha = 1$, $\beta = -1$.
+Thus $a_n = 2^n - 3^n - 2n \cdot 2^n$.
+
+**Example 6.11** (Master theorem — Strassen's matrix multiplication). $T(n) = 7T(n/2) + O(n^2)$.
+
+$a = 7$, $b = 2$, $\alpha = \log_2 7 \approx 2.807$, $f(n) = n^2 = O(n^{2.807 - 0.807})$. Case 1: $T(n) = \Theta(n^{\log_2 7}) \approx \Theta(n^{2.807})$.
+
+### 6.11 Recurrence Applications in Algorithms
+
+```typescript
+// Tower of Hanoi: T(n) = 2T(n-1) + 1, T(1) = 1
+function hanoi(n: number, from: string, to: string, aux: string): string[] {
+  if (n === 0) return [];
+  const moves: string[] = [];
+  moves.push(...hanoi(n - 1, from, aux, to));
+  moves.push(`Move disk ${n} from ${from} to ${to}`);
+  moves.push(...hanoi(n - 1, aux, to, from));
+  return moves;
+}
+
+console.log(hanoi(3, "A", "C", "B"));
+// Move disk 1 from A to C, disk 2 from A to B, ...
+console.log(`Total moves for 3 disks: ${Math.pow(2, 3) - 1}`); // 7
+
+// Quicksort worst case: T(n) = T(n-1) + n
+function quicksortCost(n: number): number {
+  if (n <= 1) return 0;
+  return n + quicksortCost(n - 1);
+}
+console.log(quicksortCost(10)); // 55 comparisons (n(n+1)/2 - n = n²/2 - n/2)
+```
+
+```mermaid
+flowchart TD
+    subgraph "Recurrence Solving Strategy"
+        A[Tn = ...] --> B{Linear?}
+        B -->|Yes| C{Constant<br/>Coefficients?}
+        B -->|No| D[Iteration or<br/>Substitution]
+        C -->|Yes| E{Homogeneous?}
+        C -->|No| F[Generating<br/>Functions]
+        E -->|Yes| G[Characteristic<br/>Equation]
+        E -->|No| H[Homogeneous +<br/>Particular]
+        G --> I[r^k - c₁r^{k-1} - ... = 0]
+        I --> J[Roots → General Form]
+        H --> K[Root Conflict?]
+        K -->|Yes| L[Multiply by n^m]
+        K -->|No| M[Standard Form]
+        D --> N[Guess then<br/>Induction Proof]
+    end
+```
+
+**Example 6.12** (Divide-and-conquer — maximum subarray). The divide-and-conquer approach for Kadane's problem can be analyzed as $T(n) = 2T(n/2) + O(n) = O(n \log n)$.
+
+**Proof 6.5** (Correctness of Master theorem case 2). Let $T(n) = aT(n/b) + cn^\alpha \log^k n$ where $\alpha = \log_b a$. Expanding the recurrence:
+
+$$T(n) = n^\alpha \sum_{j=0}^{\log_b n} c \log^k\left(\frac{n}{b^j}\right)$$
+
+The sum approximates $\int_0^{\log_b n} c(\log_b n - x)^k \,dx = \frac{c}{k+1} (\log_b n)^{k+1}$, giving $T(n) = \Theta(n^\alpha \log^{k+1} n)$. $\square$
+
+**Example 6.13** (Solving $a_n = a_{n-1} + a_{n-2}$ — Fibonacci closed form).
+
+```typescript
+function fibonacciClosedForm(n: number): number {
+  const phi = (1 + Math.sqrt(5)) / 2;
+  const psi = (1 - Math.sqrt(5)) / 2;
+  return Math.round((Math.pow(phi, n) - Math.pow(psi, n)) / Math.sqrt(5));
+}
+
+for (let i = 0; i <= 10; i++) {
+  console.log(`F_${i} = ${fibonacciClosedForm(i)}`);
+}
+```
+
+## Additional Exercises
+
+16. Solve $a_n = 4a_{n-1} - 4a_{n-2}$, $a_0 = 1$, $a_1 = 4$ (double root case).
+
+17. Use the Master theorem to analyze $T(n) = 8T(n/2) + n^3$. Which case applies?
+
+18. Solve the recurrence $a_n = 2a_{n-1} - a_{n-2} + 2^n$, $a_0 = 0$, $a_1 = 2$.
+
+19. Show that the solution to $T(n) = 2T(\lfloor n/2 \rfloor) + n$ (merge sort) is $\Theta(n \log n)$ by induction.
+
+20. Write a TypeScript function that uses generating functions to compute the first 10 terms of any linear recurrence with constant coefficients.
+
 ## Summary
 
 - Recurrence relations define sequences from initial terms and a dependency rule.

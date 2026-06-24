@@ -478,6 +478,244 @@ function subset<T>(a: Set<T>, b: Set<T>): boolean {
 5. **Partial order = hierarchy** — Hasse diagrams make hierarchies readable.
 6. **Topological sort for dependencies** — Kahn's algorithm handles scheduling.
 
+### 7.9 Relation Property Checker in TypeScript
+
+```typescript
+function isReflexive<T>(R: [T, T][], A: T[]): boolean {
+  return A.every(a => R.some(([x, y]) => x === a && y === a));
+}
+
+function isIrreflexive<T>(R: [T, T][], A: T[]): boolean {
+  return A.every(a => !R.some(([x, y]) => x === a && y === a));
+}
+
+function isSymmetric<T>(R: [T, T][]): boolean {
+  return R.every(([a, b]) => R.some(([x, y]) => x === b && y === a));
+}
+
+function isAntisymmetric<T>(R: [T, T][]): boolean {
+  return R.every(([a, b]) =>
+    a === b || !R.some(([x, y]) => x === b && y === a)
+  );
+}
+
+function isTransitive<T>(R: [T, T][]): boolean {
+  return R.every(([a, b]) =>
+    R.every(([c, d]) =>
+      b !== c || R.some(([x, y]) => x === a && y === d)
+    )
+  );
+}
+
+function isEquivalenceRelation<T>(R: [T, T][], A: T[]): boolean {
+  return isReflexive(R, A) && isSymmetric(R) && isTransitive(R);
+}
+
+function isPartialOrder<T>(R: [T, T][], A: T[]): boolean {
+  return isReflexive(R, A) && isAntisymmetric(R) && isTransitive(R);
+}
+
+// Example: R = {(1,1), (1,2), (2,1), (2,2), (3,3)} on {1,2,3}
+const R1: [number, number][] = [[1,1], [1,2], [2,1], [2,2], [3,3]];
+console.log(isEquivalenceRelation(R1, [1,2,3])); // false (not transitive: 1R2,2R1 missing 1R1)
+```
+
+### 7.10 Warshall's Algorithm — Transitive Closure
+
+**Warshall's algorithm** computes the transitive closure of a relation in $O(n^3)$ time.
+
+```typescript
+function warshall(adj: boolean[][]): boolean[][] {
+  const n = adj.length;
+  const closure = adj.map(row => [...row]);
+
+  for (let k = 0; k < n; k++) {
+    for (let i = 0; i < n; i++) {
+      for (let j = 0; j < n; j++) {
+        closure[i][j] = closure[i][j] || (closure[i][k] && closure[k][j]);
+      }
+    }
+  }
+  return closure;
+}
+
+function relationToMatrix<T>(R: [T, T][], A: T[]): boolean[][] {
+  const index = new Map(A.map((v, i) => [v, i]));
+  const n = A.length;
+  const M = Array.from({ length: n }, () => new Array(n).fill(false));
+  for (const [a, b] of R) {
+    M[index.get(a)!][index.get(b)!] = true;
+  }
+  return M;
+}
+
+function matrixToRelation<T>(M: boolean[][], A: T[]): [T, T][] {
+  const R: [T, T][] = [];
+  for (let i = 0; i < M.length; i++) {
+    for (let j = 0; j < M[i].length; j++) {
+      if (M[i][j]) R.push([A[i], A[j]]);
+    }
+  }
+  return R;
+}
+
+const A = [1, 2, 3, 4];
+const R2: [number, number][] = [[1,3], [2,1], [3,2], [4,3]];
+const M = relationToMatrix(R2, A);
+const closure = warshall(M);
+console.log(matrixToRelation(closure, A));
+// [(1,1), (1,2), (1,3), (2,1), (2,2), (2,3), (3,1), (3,2), (3,3), (4,1), (4,2), (4,3)]
+```
+
+### 7.11 Composition of Relations
+
+**Definition 7.10 (Composition).** $S \circ R = \{(a, c) \mid \exists b: (a, b) \in R \land (b, c) \in S\}$.
+
+```typescript
+function composeRelations<T>(
+  R: [T, T][],
+  S: [T, T][]
+): [T, T][] {
+  const result: [T, T][] = [];
+  for (const [a, b] of R) {
+    for (const [c, d] of S) {
+      if (b === c) result.push([a, d]);
+    }
+  }
+  return result;
+}
+
+// R = {(1,2), (2,3)}, S = {(2,4), (3,5)}
+// S ∘ R = {(1,4), (1,5)}
+console.log(composeRelations([[1,2], [2,3]], [[2,4], [3,5]]));
+// [[1,4], [1,5]]
+```
+
+### 7.12 Equivalence Relations and Partitions
+
+**Theorem 7.4.** Every equivalence relation on $A$ induces a partition of $A$, and every partition of $A$ defines an equivalence relation.
+
+```typescript
+function equivalenceClasses<T>(R: [T, T][], A: T[]): Set<T>[] {
+  const classes: Set<T>[] = [];
+  const visited = new Set<T>();
+
+  for (const start of A) {
+    if (visited.has(start)) continue;
+    const cls = new Set<T>();
+    const stack = [start];
+    while (stack.length > 0) {
+      const a = stack.pop()!;
+      if (visited.has(a)) continue;
+      visited.add(a);
+      cls.add(a);
+      for (const [x, y] of R) {
+        if (x === a && !visited.has(y)) stack.push(y);
+        if (y === a && !visited.has(x)) stack.push(x);
+      }
+    }
+    if (cls.size > 0) classes.push(cls);
+  }
+  return classes;
+}
+
+const R3: [number, number][] = [
+  [1,1], [1,2], [2,1], [2,2], [3,3], [4,4], [4,5], [5,4], [5,5]
+];
+const classes = equivalenceClasses(R3, [1,2,3,4,5]);
+console.log(classes.map(c => [...c])); // [[1,2], [3], [4,5]]
+```
+
+### 7.13 Hasse Diagrams — Lattices
+
+A **lattice** is a poset where every pair of elements has a unique supremum (join) and infimum (meet).
+
+```typescript
+interface Lattice<T> {
+  elements: T[];
+  leq: (a: T, b: T) => boolean;
+  join: (a: T, b: T) => T;
+  meet: (a: T, b: T) => T;
+}
+
+function isLattice<T>(L: Lattice<T>): boolean {
+  const { elements, leq, join, meet } = L;
+  for (const a of elements) {
+    for (const b of elements) {
+      const j = join(a, b);
+      const m = meet(a, b);
+      if (!leq(a, j) || !leq(b, j)) return false;
+      if (!leq(m, a) || !leq(m, b)) return false;
+    }
+  }
+  return true;
+}
+
+// The divisibility lattice on {1,2,3,4,6,12}
+const divLattice: Lattice<number> = {
+  elements: [1, 2, 3, 4, 6, 12],
+  leq: (a, b) => b % a === 0,
+  join: (a, b) => lcm(a, b),
+  meet: (a, b) => gcd(a, b)
+};
+console.log(isLattice(divLattice)); // true
+```
+
+```mermaid
+flowchart TD
+    subgraph "Hasse Diagram: Divisibility on {1,2,3,4,6,12}"
+        A["12"] --> B["4"]
+        A --> C["6"]
+        B --> D["2"]
+        C --> D
+        C --> E["3"]
+        D --> F["1"]
+        E --> F
+    end
+```
+
+**Example 7.6** (Topological sort via Kahn's algorithm).
+
+```typescript
+function topologicalSortKahn(
+  vertices: number[],
+  edges: [number, number][]
+): number[] | null {
+  const adj = new Map<number, number[]>();
+  const inDeg = new Map<number, number>();
+  for (const v of vertices) { adj.set(v, []); inDeg.set(v, 0); }
+  for (const [u, v] of edges) {
+    adj.get(u)!.push(v);
+    inDeg.set(v, (inDeg.get(v) || 0) + 1);
+  }
+  const queue: number[] = [];
+  for (const v of vertices) if (inDeg.get(v) === 0) queue.push(v);
+
+  const result: number[] = [];
+  while (queue.length > 0) {
+    const u = queue.shift()!;
+    result.push(u);
+    for (const v of adj.get(u) || []) {
+      inDeg.set(v, inDeg.get(v)! - 1);
+      if (inDeg.get(v) === 0) queue.push(v);
+    }
+  }
+  return result.length === vertices.length ? result : null;
+}
+```
+
+## Additional Exercises
+
+16. Prove that if $R$ is an equivalence relation, then $R^{-1}$ is also an equivalence relation.
+
+17. Show that the relation "has the same birthday as" on the set of all people is an equivalence relation. Describe its equivalence classes.
+
+18. Compute the transitive closure of $R = \{(1,2), (2,3), (3,4), (4,1)\}$ on $\{1,2,3,4\}$ using Warshall's algorithm.
+
+19. Write a TypeScript function `isTotalOrder<T>` that checks if a relation is a total order (partial order where all pairs are comparable).
+
+20. Find all linear extensions (topological sorts) of the poset with $a < b$, $a < c$, $b < d$, $c < d$.
+
 ## Exercises
 
 ### Review Questions

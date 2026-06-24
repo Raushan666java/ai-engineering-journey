@@ -42,18 +42,31 @@ flowchart LR
 
 ![Advanced Complexity Topics Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/theory-of-computation/14-advanced-complexity.png)
 
-### 14.1 Log-Space Reductions and Completeness
+### 14.1 The BQP Complexity Class
 
-A **log-space reduction** (A â‰¤_L B) is a reduction computable in O(log n) space (on a TM with read-only input and write-only output).
+**BQP** (Bounded-error Quantum Polynomial Time) is the class of problems solvable by a quantum computer in polynomial time with error probability ≤ 1/3.
+
+**Relationships:**
+- P ⊆ BQP ⊆ PSPACE
+- BQP contains problems not known to be in P (e.g., factoring, discrete log)
+- BQP is believed to be incomparable with NP (neither contains the other)
+- Shor's algorithm: factoring ∈ BQP (exponential speedup over classical)
+- Grover's algorithm: unstructured search ∈ BQP (quadratic speedup)
+
+**Significance:** If BQP ⊈ NP, then quantum computers can efficiently solve problems whose solutions cannot even be verified classically — a profound expansion of tractable computation.
+
+### 14.3 Log-Space Reductions and Completeness
+
+A **log-space reduction** (A ≤_L B) is a reduction computable in O(log n) space (on a TM with read-only input and write-only output).
 
 **Properties:**
-- â‰¤_L is transitive.
-- If A â‰¤_L B and B âˆˆ L, then A âˆˆ L.
-- NL-completeness is defined using â‰¤_L reductions (not â‰¤_P).
+- ≤_L is transitive.
+- If A ≤_L B and B ∈ L, then A ∈ L.
+- NL-completeness is defined using ≤_L reductions (not ≤_P).
 
 **PATH** is NL-complete under log-space reductions.
 
-### 14.2 The Polynomial Hierarchy (PH)
+### 14.4 The Polynomial Hierarchy (PH)
 
 The polynomial hierarchy extends the concepts of P, NP, and co-NP using **oracle machines** with alternating quantifiers.
 
@@ -83,7 +96,7 @@ The polynomial hierarchy extends the concepts of P, NP, and co-NP using **oracle
 - SAT âˆˆ Î£â‚ = NP.
 - UNSAT âˆˆ Î â‚ = co-NP.
 
-### 14.3 co-NP
+### 14.5 co-NP
 
 **co-NP** = { L | LÌ… âˆˆ NP }.
 
@@ -98,7 +111,7 @@ A problem is in co-NP if "no" instances have short proofs (certificates for reje
 - If NP â‰  co-NP, then P â‰  NP.
 - For the complement of an NP-complete problem, we don't expect short proofs.
 
-### 14.4 Circuit Complexity
+### 14.6 Circuit Complexity
 
 A **Boolean circuit** is a directed acyclic graph (DAG) where:
 - Leaves = input variables (xâ‚, â€¦, xâ‚™).
@@ -124,7 +137,7 @@ Proving that certain functions require large circuits is notoriously difficult.
 - NC âŠ† P (NC represents efficient parallel computation).
 - P-complete problems (like CIRCUIT-VALUE) are those not believed to be in NC.
 
-### 14.5 Interactive Proofs (IP)
+### 14.7 Interactive Proofs (IP)
 
 An **interactive proof system** consists of a prover (P, unbounded computational power) and a verifier (V, probabilistic polynomial time). V exchanges messages with P and decides whether to accept the input.
 
@@ -137,7 +150,7 @@ An **interactive proof system** consists of a prover (P, unbounded computational
 
 **Significance:** Interactive proofs show that a computationally bounded verifier can be convinced of the truth of statements far beyond what they could verify deterministically â€” if interaction and randomization are allowed.
 
-### 14.6 Probabilistic Complexity (BPP)
+### 14.8 Probabilistic Complexity (BPP)
 
 **BPP** (Bounded-error Probabilistic Polynomial time): Languages decidable by a probabilistic TM with error probability â‰¤ 1/3 on every input.
 
@@ -147,7 +160,7 @@ An **interactive proof system** consists of a prover (P, unbounded computational
 - **Adleman's theorem:** BPP âŠ† P/poly (every BPP language has polynomial-size circuits).
 - **Sipser-GÃ¡cs theorem:** BPP âŠ† Î£â‚‚ âˆ© Î â‚‚ (BPP is in the second level of the polynomial hierarchy).
 
-### 14.7 Probabilistically Checkable Proofs (PCP)
+### 14.9 Probabilistically Checkable Proofs (PCP)
 
 **PCP theorem** (Arora, Lund, Motwani, Sudan, Szegedy, 1992):
 
@@ -160,7 +173,7 @@ NP = PCP(log n, 1)
 - Shows that for many NP-hard optimization problems, finding approximate solutions within certain ratios is also NP-hard.
 - Used to prove hardness of approximation for MAX-3SAT, MAX-CUT, etc.
 
-### 14.8 The Landscape of Complexity Classes
+### 14.10 The Landscape of Complexity Classes
 
 ```
 EXPSPACE
@@ -183,6 +196,20 @@ L
 ```
 
 Note: Many containments are not known to be strict.
+
+### 14.11 MA and AM: Merlin-Arthur Games
+
+**MA** (Merlin-Arthur): Languages with a proof system where Merlin (unbounded) sends a single message, and Arthur (BPP verifier) decides.
+
+**AM** (Arthur-Merlin): Languages where Arthur sends random bits first, then Merlin responds.
+
+**Relationships:**
+- NP ⊆ MA ⊆ AM ⊆ Π₂
+- Graph Non-Isomorphism ∈ AM (but not known to be in NP)
+- If co-NP ⊆ AM, then PH collapses
+- MA and AM are considered "interactive proof lite" — limited interaction but more than NP
+
+**Significance:** These classes model public-coin proof systems where the verifier only sends random bits. Goldwasser-Sipser showed public-coin = private-coin (IP = AM with poly rounds).
 
 ## Examples
 
@@ -253,6 +280,183 @@ This explains why progress on circuit lower bounds has been slow â€” the to
 | Parallel computing | NC = efficient parallel algorithms |
 | Circuit design | Circuit lower bounds |
 | Quantum computing | BQP and relation to classical classes |
+
+## TypeScript Interactive Proof Protocol Simulator
+
+```typescript
+// Simulates an interactive proof protocol for Graph Non-Isomorphism
+// Uses a simple graph representation with adjacency matrices
+
+type Graph = number[][];
+
+function generatePermutation(n: number): number[] {
+  const perm = Array.from({ length: n }, (_, i) => i);
+  // Fisher-Yates shuffle
+  for (let i = n - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [perm[i], perm[j]] = [perm[j], perm[i]];
+  }
+  return perm;
+}
+
+function applyPermutation(g: Graph, perm: number[]): Graph {
+  const n = g.length;
+  const result: Graph = Array.from({ length: n }, () => new Array(n).fill(0));
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      result[perm[i]][perm[j]] = g[i][j];
+    }
+  }
+  return result;
+}
+
+function areIsomorphic(g1: Graph, g2: Graph): boolean {
+  const n = g1.length;
+  // Check all permutations (n! — only for small n)
+  const allPerms = (arr: number[]): number[][] => {
+    if (arr.length <= 1) return [arr];
+    const result: number[][] = [];
+    for (let i = 0; i < arr.length; i++) {
+      const rest = [...arr.slice(0, i), ...arr.slice(i + 1)];
+      for (const p of allPerms(rest)) {
+        result.push([arr[i], ...p]);
+      }
+    }
+    return result;
+  };
+
+  const vertices = Array.from({ length: n }, (_, i) => i);
+  for (const perm of allPerms(vertices)) {
+    if (JSON.stringify(applyPermutation(g1, perm)) === JSON.stringify(g2)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+// Interactive proof for non-isomorphism
+function interactiveProof(
+  g1: Graph,
+  g2: Graph,
+  proverResponse: (h: Graph) => number
+): boolean {
+  const verifierBit = Math.random() < 0.5 ? 1 : 2;
+  const perm = generatePermutation(g1.length);
+  const h = verifierBit === 1
+    ? applyPermutation(g1, perm)
+    : applyPermutation(g2, perm);
+
+  const proverBit = proverResponse(h);
+  return proverBit === verifierBit;
+}
+
+// Honest prover (knows the non-isomorphism)
+function honestProver(h: Graph, g1: Graph, g2: Graph): number {
+  return areIsomorphic(h, g1) ? 1 : 2;
+}
+
+// Dishonest prover (guesses randomly)
+function dishonestProver(): number {
+  return Math.random() < 0.5 ? 1 : 2;
+}
+
+// Example
+const g1: Graph = [
+  [0, 1, 0],
+  [1, 0, 1],
+  [0, 1, 0],
+];
+
+const g2: Graph = [
+  [0, 1, 1],
+  [1, 0, 0],
+  [1, 0, 0],
+];
+
+console.log("Non-isomorphic:", !areIsomorphic(g1, g2)); // true (one is a path, the other is a triangle)
+
+// Run protocol 10 times
+let successes = 0;
+for (let i = 0; i < 10; i++) {
+  const hProver = (h: Graph) => honestProver(h, g1, g2);
+  if (interactiveProof(g1, g2, hProver)) successes++;
+}
+console.log(`Honest prover success: ${successes}/10`); // 10/10
+```
+
+## TypeScript Circuit Complexity Example
+
+```typescript
+// Boolean circuit representation and evaluation
+// A circuit is a DAG with gates
+
+type GateType = "AND" | "OR" | "NOT" | "INPUT";
+
+class CircuitGate {
+  constructor(
+    public id: number,
+    public type: GateType,
+    public inputs: number[],
+    public value?: boolean
+  ) {}
+}
+
+class BooleanCircuit {
+  constructor(
+    public output: number,
+    public gates: Map<number, CircuitGate>
+  ) {}
+
+  evaluate(inputs: boolean[]): boolean {
+    const values = new Map<number, boolean>();
+
+    // Set input values (gates 0..n-1 are inputs)
+    let inputIdx = 0;
+    for (const [id, gate] of this.gates) {
+      if (gate.type === "INPUT") {
+        values.set(id, inputs[inputIdx++]);
+      }
+    }
+
+    // Topological evaluation
+    const evaluateGate = (id: number): boolean => {
+      if (values.has(id)) return values.get(id)!;
+      const gate = this.gates.get(id)!;
+      const inputVals = gate.inputs.map(evaluateGate);
+      let result: boolean;
+      switch (gate.type) {
+        case "AND": result = inputVals.every(Boolean); break;
+        case "OR": result = inputVals.some(Boolean); break;
+        case "NOT": result = !inputVals[0]; break;
+        default: throw new Error("Unknown gate");
+      }
+      values.set(id, result);
+      return result;
+    };
+
+    return evaluateGate(this.output);
+  }
+
+  size(): number {
+    return this.gates.size;
+  }
+}
+
+// Example: XOR circuit: (x OR y) AND NOT (x AND y)
+const xorCircuit = new BooleanCircuit(5, new Map([
+  [0, new CircuitGate(0, "INPUT", [])],
+  [1, new CircuitGate(1, "INPUT", [])],
+  [2, new CircuitGate(2, "OR", [0, 1])],
+  [3, new CircuitGate(3, "AND", [0, 1])],
+  [4, new CircuitGate(4, "NOT", [3])],
+  [5, new CircuitGate(5, "AND", [2, 4])],
+]));
+
+console.log(xorCircuit.evaluate([false, false])); // false
+console.log(xorCircuit.evaluate([false, true]));  // true
+console.log(xorCircuit.evaluate([true, false]));  // true
+console.log(xorCircuit.evaluate([true, true]));   // false
+```
 
 ## Chapter Quiz
 

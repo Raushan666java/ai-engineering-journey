@@ -340,6 +340,194 @@ const growthRates = revenues.map((r, i) =>
 console.log(growthRates); // [0, 25, -12, 27.27]
 ```
 
+### TypeScript: Full Data Interpretation Toolkit
+
+```typescript
+interface Dataset { labels: string[]; values: number[]; }
+
+class DataInterpreter {
+  // Table operations
+  static sum(values: number[]): number {
+    return values.reduce((a, b) => a + b, 0);
+  }
+  static average(values: number[]): number {
+    return DataInterpreter.sum(values) / values.length;
+  }
+  static ratio(a: number, b: number): string {
+    const g = (x: number, y: number): number => y === 0 ? x : g(y, x % y);
+    const gcd = g(a, b);
+    return `${a / gcd}:${b / gcd}`;
+  }
+  static percentageOf(part: number, whole: number): number {
+    return (part / whole) * 100;
+  }
+
+  // Bar graph analysis
+  static findMax(data: Dataset): { label: string; value: number } {
+    const idx = data.values.indexOf(Math.max(...data.values));
+    return { label: data.labels[idx], value: data.values[idx] };
+  }
+  static findMin(data: Dataset): { label: string; value: number } {
+    const idx = data.values.indexOf(Math.min(...data.values));
+    return { label: data.labels[idx], value: data.values[idx] };
+  }
+  static difference(a: number, b: number): number {
+    return Math.abs(a - b);
+  }
+
+  // Line chart trends
+  static growthRate(current: number, previous: number): number {
+    return ((current - previous) / previous) * 100;
+  }
+  static growthRates(values: number[]): number[] {
+    return values.map((v, i) => i === 0 ? 0 : DataInterpreter.growthRate(v, values[i - 1]));
+  }
+  static movingAverage(values: number[], window: number): number[] {
+    const result: number[] = [];
+    for (let i = 0; i <= values.length - window; i++) {
+      const avg = values.slice(i, i + window).reduce((a, b) => a + b, 0) / window;
+      result.push(avg);
+    }
+    return result;
+  }
+
+  // Pie chart calculations
+  static sectorAngle(value: number, total: number): number {
+    return (value / total) * 360;
+  }
+  static sectorPercentage(value: number, total: number): number {
+    return (value / total) * 100;
+  }
+  static valueFromAngle(angle: number, total: number): number {
+    return (angle / 360) * total;
+  }
+
+  // Data sufficiency checker
+  static checkSufficiency(
+    statement1: string[], statement2: string[],
+    neededVars: string[]
+  ): string {
+    const s1Covers = neededVars.every(v => statement1.includes(v));
+    const s2Covers = neededVars.every(v => statement2.includes(v));
+    const bothCover = neededVars.every(v =>
+      [...statement1, ...statement2].includes(v)
+    );
+    if (s1Covers && s2Covers) return "D (Each alone sufficient)";
+    if (s1Covers) return "A (Statement 1 alone sufficient)";
+    if (s2Covers) return "B (Statement 2 alone sufficient)";
+    if (bothCover) return "C (Both together sufficient)";
+    return "E (Not sufficient even together)";
+  }
+
+  // Caselet parser
+  static parseCaselet(text: string): Map<string, number> {
+    const map = new Map<string, number>();
+    const numbers = text.match(/\d+(\.\d+)?/g)?.map(Number) ?? [];
+    const labels = ["total", "group_a", "group_b", "group_c", "both_ab", "both_bc", "both_ac", "none"];
+    labels.forEach((l, i) => { if (i < numbers.length) map.set(l, numbers[i]); });
+    return map;
+  }
+
+  // Visualization helpers
+  static printBarChart(data: Dataset, width: number = 20): void {
+    const maxVal = Math.max(...data.values);
+    data.labels.forEach((label, i) => {
+      const barLen = Math.round((data.values[i] / maxVal) * width);
+      const bar = "█".repeat(barLen);
+      console.log(`${label.padEnd(10)} ${bar} ${data.values[i]}`);
+    });
+  }
+
+  static printPieChart(data: Dataset): void {
+    const total = DataInterpreter.sum(data.values);
+    console.log("Pie Chart Breakdown:");
+    data.labels.forEach((label, i) => {
+      const pct = DataInterpreter.sectorPercentage(data.values[i], total);
+      const angle = DataInterpreter.sectorAngle(data.values[i], total);
+      const bar = "●".repeat(Math.round(pct / 5));
+      console.log(`${label.padEnd(12)} ${bar} ${pct.toFixed(1)}% (${angle.toFixed(1)}°)`);
+    });
+  }
+}
+
+// === Demo ===
+const sales: Dataset = {
+  labels: ["Q1", "Q2", "Q3", "Q4"],
+  values: [200, 250, 220, 280]
+};
+
+console.log("Max quarter:", DataInterpreter.findMax(sales));
+console.log("Growth rates:", DataInterpreter.growthRates(sales.values));
+console.log("3-period MA:", DataInterpreter.movingAverage(sales.values, 3));
+
+DataInterpreter.printBarChart(sales);
+
+const budget: Dataset = {
+  labels: ["IT", "Finance", "HR", "Sales", "Admin"],
+  values: [30, 25, 20, 15, 10]
+};
+DataInterpreter.printPieChart(budget);
+```
+
+### Mermaid Flowcharts for Data Interpretation
+
+```mermaid
+flowchart TD
+    A[Raw Data] --> B{Data Format?}
+    B -->|Table| C[Identify Row & Column Headers]
+    B -->|Bar Graph| D[Read Height Against Scale]
+    B -->|Line Chart| E[Identify Trend & Slope]
+    B -->|Pie Chart| F[Calculate Sector Angle]
+    C --> G[Compute: %, Ratio, Avg, Growth]
+    D --> G; E --> G; F --> G
+    G --> H{Question Type?}
+    H -->|Compare| I[Find Difference or Ratio]
+    H -->|Percentage| J[Part/Total × 100]
+    H -->|Trend| K[Growth Rate Formula]
+    H -->|Total| L[Sum All Components]
+    I & J & K & L --> M[Verify with Reasonableness Check]
+```
+
+### Example 10: Advanced Caselet
+
+A company has 1000 employees across three departments. Engineering has 400 employees, Marketing has 350, and Sales has 250. Among Engineering, 60% are male. Marketing has 40% male. Sales has 80% male. 20% of Engineering males are managers, 30% of Marketing females are managers, and 10% of Sales employees are managers.
+
+**Question:** How many female managers are there in total?
+
+**Solution:**
+- Engineering males = 400 × 0.6 = 240, females = 160
+- Marketing males = 350 × 0.4 = 140, females = 210
+- Sales males = 250 × 0.8 = 200, females = 50
+- Engineering male managers = 240 × 0.2 = 48 (not counted)
+- Marketing female managers = 210 × 0.3 = 63
+- Sales managers = 250 × 0.1 = 25 (male + female, but not enough data to split)
+- From the given data, we can only determine Marketing female managers = 63.
+
+```typescript
+const engM = 400 * 0.6, engF = 400 * 0.4;
+const mktM = 350 * 0.4, mktF = 350 * 0.6;
+const salesM = 250 * 0.8, salesF = 250 * 0.2;
+console.log(`Engineering: ${engM}M, ${engF}F`);
+console.log(`Marketing: ${mktM}M, ${mktF}F`);
+console.log(`Sales: ${salesM}M, ${salesF}F`);
+const femaleMgrs = 210 * 0.3; // only determinable value
+console.log(`Marketing female managers: ${femaleMgrs}`);
+```
+
+### Additional Exercises
+
+12. **Caselet:** A university has 2400 students — 55% male. 40% of males and 60% of females are in STEM. 30% of STEM males and 25% of STEM females are in research programs. How many research students are there?
+
+13. **Mixed Graph:** A bar graph shows monthly production (Jan-Jun): 500, 650, 600, 720, 680, 800 (units). A line graph shows defect %: 5, 4, 6, 3, 4, 2. Calculate: (a) total good units for the half-year (b) month with most defects (c) average defect rate.
+
+14. **Data Sufficiency:** What is the area of a rectangle? (1) Perimeter = 40 cm (2) Length = 3 × Width
+
+15. **Complex Table:** 5 companies' revenue (in Cr) for 2021-2024. Calculate CAGR for each and identify the best performer.
+
+### Answer Key (Additional)
+
+12. 396 research students | 13a. 3927, 13b. March (36 defects), 13c. 4% | 14. C | 15. CAGR = (Final/Initial)^(1/3) - 1
+
 ## Practical Takeaways
 
 | Data Type | Key Formula | Common Pitfall |

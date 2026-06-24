@@ -253,3 +253,151 @@ $report->setMatter($matter)
 - D) Email inquiries
 
 <details><summary>Answer</summary>B) Semantic search with citation analysis</details>
+
+**Q5:** What does chain of custody in legal document management primarily ensure?
+- A) Documents are stored cheaply
+- B) Documents are accessible to everyone
+- C) An unbroken, tamper-evident record of every action on every document
+- D) Documents are automatically deleted after a set period
+
+<details><summary>Answer</summary>C) An unbroken, tamper-evident record of every action on every document</details>
+
+**Q6:** What is the primary purpose of a legal hold?
+- A) To encrypt all documents in a case
+- B) To notify custodians to preserve relevant ESI and suspend routine deletion
+- C) To automatically produce documents to opposing counsel
+- D) To calculate attorney billing hours
+
+<details><summary>Answer</summary>B) To notify custodians to preserve relevant ESI and suspend routine deletion</details>
+
+## Best Practices for Legal Tech Development
+
+1. **Always use soft deletes** — legal documents must never be permanently deleted; implement `SoftDeletes` on all legal models
+2. **Encrypt at multiple layers** — field-level encryption for privileged content, envelope encryption for document blobs, tenant-specific keys for multi-tenancy
+3. **Design for auditability** — every action on every document must be logged with user, timestamp, and immutable hash chain
+4. **Batch AI calls** — legal document volumes are large; always batch LLM API calls and implement rate-limit-aware throttling
+5. **Test with realistic data** — synthetic legal documents with proper terminology; test privilege detection, clause extraction, and compliance rule matching
+6. **Plan for e-discovery** — any legal system may need to produce documents in litigation; design for identification, preservation, collection, and export from day one
+
+## Practical Takeaways
+
+1. **Document management** is the foundation of legal tech — always implement versioning, encryption, and audit trails
+2. **AI agents** can automate contract review (clause detection, risk scoring), e-discovery classification (relevance, privilege), compliance monitoring, and legal research
+3. **Chain of custody** requires append-only audit logs with cryptographic hash chains — no deletes or updates
+4. **Multi-tenancy** in legal tech demands tenant-level data isolation with tenant-specific encryption keys
+5. **E-discovery** follows the EDRM model: identification → preservation → collection → processing → review → analysis → production
+6. **Legal holds** prevent document deletion during litigation and must be tracked per matter and custodian
+
+## Exercises
+
+1. Design a database schema for a legal document management system supporting versioning, access control, and audit logging. Include all foreign key relationships and indexes.
+2. Implement a PHP/Laravel `DocumentVersionObserver` that creates a new version record with SHA-256 hash whenever a document is updated. Include the rollback method.
+3. Write a `ComplianceCheckCommand` artisan command that iterates all active matters and runs configured regulatory checks, logging results to `legal_compliance_records`.
+4. Create a `ContractClauseDetector` class with a `detectClauses(string $text): array` method that uses regex patterns to identify indemnification, limitation of liability, auto-renewal, and non-compete clauses.
+5. Design an Eloquent model for a legal audit log with an append-only interface. Include the hash chain linking and an `integrityCheck(): bool` method.
+6. Build a multi-tenant document controller that enforces tenant-level data isolation via a global scope. Include upload, download, and search actions.
+7. Implement a `DiscoveryProductionJob` that generates a production set with privilege log and load file in PDF format.
+
+## TypeScript Parallel: Legal Document Processing
+
+```typescript
+interface LegalDocument {
+  id: string;
+  matterId: string;
+  title: string;
+  content: string;
+  isPrivileged: boolean;
+  privilegeType?: "attorney-client" | "work-product";
+  hash: string;
+  version: number;
+}
+
+interface AuditLogEntry {
+  id: string;
+  documentId: string;
+  userId: string;
+  action: "view" | "download" | "edit" | "print" | "tag" | "produce";
+  timestamp: Date;
+  ipAddress: string;
+  previousHash: string;
+  currentHash: string;
+}
+
+class DocumentProcessor {
+  computeHash(content: string): string {
+    let hash = 0;
+    for (let i = 0; i < content.length; i++) {
+      const char = content.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash |= 0;
+    }
+    return Math.abs(hash).toString(16).padStart(64, "0");
+  }
+
+  createAuditEntry(
+    entry: Omit<AuditLogEntry, "previousHash" | "currentHash">,
+    lastEntry?: AuditLogEntry
+  ): AuditLogEntry {
+    const previousHash = lastEntry?.currentHash ?? "0".repeat(64);
+    const serialized = `${entry.documentId}|${entry.userId}|${entry.action}|${previousHash}`;
+    return {
+      ...entry,
+      previousHash,
+      currentHash: this.computeHash(serialized),
+    };
+  }
+
+  verifyChainIntegrity(entries: AuditLogEntry[]): boolean {
+    for (let i = 0; i < entries.length; i++) {
+      const expectedPrev = i === 0 ? "0".repeat(64) : entries[i - 1].currentHash;
+      if (entries[i].previousHash !== expectedPrev) return false;
+    }
+    return true;
+  }
+}
+
+function detectPrivilegedContent(text: string): {
+  isPrivileged: boolean;
+  matches: string[];
+} {
+  const patterns = [
+    /attorney.client communication/i,
+    /legal advice/i,
+    /confidential/i,
+    /work product/i,
+    /privileged/i,
+  ];
+  const matches = patterns
+    .filter((p) => p.test(text))
+    .map((p) => p.source);
+  return { isPrivileged: matches.length > 0, matches };
+}
+
+// E-discovery document classifier
+class DiscoveryClassifier {
+  classifyForRelevance(doc: LegalDocument, caseIssues: string[]): number {
+    const text = doc.content.toLowerCase();
+    let score = 0;
+    for (const issue of caseIssues) {
+      const count = (text.match(new RegExp(issue.toLowerCase(), "g")) ?? []).length;
+      score += count;
+    }
+    return Math.min(100, score);
+  }
+}
+```
+
+## Quick Reference: Key Legal Concepts for Interviews
+
+| Concept | Definition | Laravel Implementation |
+|---------|-----------|----------------------|
+| Privilege Log | Record of withheld documents | `legal_privilege_logs` table with date, author, basis |
+| Legal Hold | Preservation notice preventing deletion | `legal_holds` table with custodian tracking + automated retention |
+| EDRM | Electronic Discovery Reference Model | Queue-based pipeline with chainable jobs |
+| CLM | Contract Lifecycle Management | `legal_contracts` + `contract_versions` + approval workflow |
+| ESI | Electronically Stored Information | Encrypted S3 storage with SHA-256 verification |
+| Spoliation | Destruction of evidence | Append-only audit logs, tamper-evident hash chains |
+
+---
+
+[Back to Index](00-index.md)

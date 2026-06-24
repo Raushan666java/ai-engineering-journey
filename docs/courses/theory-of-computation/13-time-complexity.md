@@ -15,6 +15,17 @@
 - Understand the significance of the P vs NP question.
 
 
+## Nondeterminism as Proof Search
+
+An NTM solving an NP problem can be thought of as performing **parallel proof search**:
+
+1. **Guess phase:** Nondeterministically write a certificate (candidate solution).
+2. **Verify phase:** Deterministically check the certificate in polynomial time.
+
+This is equivalent to the verifier definition: NP = { L | ∃ polynomially-checkable certificate for each w ∈ L }.
+
+The NTM's nondeterministic branches correspond to trying all possible certificates simultaneously. If any branch accepts, the NTM accepts — which means a certificate exists.
+
 ## Chapter at a Glance
 | Topic | Key Insight | Practical Takeaway |
 |-------|------------|-------------------|
@@ -52,7 +63,22 @@ For a **multitape TM**, the time complexity is defined similarly, but one step m
 
 Common complexity classes: O(1), O(log n), O(n), O(n log n), O(nÂ²), O(2â¿), O(n!).
 
-### 12.2 The Class P
+### 12.2 The Time Hierarchy Theorem
+
+The **time hierarchy theorem** shows that more time gives more computational power. For time-constructible functions f(n) and g(n) with f(n) log f(n) = o(g(n)):
+
+\[ \text{TIME}(f(n)) \subsetneq \text{TIME}(g(n)) \]
+
+**Implications:**
+- There are problems solvable in O(n²) that are NOT solvable in O(n).
+- There are problems solvable in O(2ⁿ) that are NOT solvable in O(n²).
+- Therefore, the hierarchy of TIME classes is strict.
+
+**Proof technique:** Diagonalization. Construct a TM that simulates all TMs running in time f(n), but does the opposite of what they do, then extends the runtime to g(n).
+
+**Corollary:** P ⊂ EXP (since nᵏ vs 2ⁿ satisfies the hierarchy condition).
+
+### 12.3 The Class P
 
 **P = âˆª_{k â‰¥ 0} TIME(náµ)**
 
@@ -72,7 +98,7 @@ P is the class of languages decidable in **polynomial time** on a deterministic 
 - Context-free language membership (CYK algorithm).
 - DFA equivalence.
 
-### 12.3 The Class NP
+### 12.4 The Class NP
 
 **NP = âˆª_{k â‰¥ 0} NTIME(náµ)**
 
@@ -98,7 +124,7 @@ NP is the class of languages decidable in polynomial time on a **nondeterministi
 
 Most researchers believe P â‰  NP.
 
-### 12.4 Polynomial-Time Reductions
+### 12.5 Polynomial-Time Reductions
 
 A language A is **polynomial-time reducible** to B (written A â‰¤_P B) if there exists a function f computable in polynomial time such that w âˆˆ A iff f(w) âˆˆ B.
 
@@ -107,7 +133,7 @@ A language A is **polynomial-time reducible** to B (written A â‰¤_P B) if th
 - If A â‰¤_P B and A âˆ‰ P, then B âˆ‰ P.
 - Polynomial-time reductions are **transitive**: if A â‰¤_P B and B â‰¤_P C, then A â‰¤_P C.
 
-### 12.5 NP-Completeness
+### 12.6 NP-Completeness
 
 A language B is **NP-complete** if:
 1. B âˆˆ NP.
@@ -115,7 +141,7 @@ A language B is **NP-complete** if:
 
 **Significance:** If any NP-complete problem is in P, then P = NP. If any NP-complete problem is not in P, then no NP-complete problem is in P.
 
-### 12.6 Cook-Levin Theorem
+### 12.7 Cook-Levin Theorem
 
 **Theorem (Cook 1971, Levin 1973):** SAT is NP-complete.
 
@@ -132,9 +158,30 @@ The formula encodes:
 
 The formula size is O(nÂ²áµ), which is polynomial in n. A satisfying assignment corresponds to an accepting computation of N.
 
+**The three-part formula φ:**
+
+1. **φ_cell**: Each cell (i,j) contains exactly one symbol. This is a conjunction of clauses ensuring at least one symbol (OR) and at most one symbol (pairwise AND of negations).
+
+2. **φ_start**: The first row encodes the initial configuration: tape content = w, state = q₀, head at position 0.
+
+3. **φ_move**: For each adjacent pair of rows, the transition relation of the NTM constrains which symbols can appear. This is encoded by checking each 2×3 "window" of cells — the transition function determines legal window patterns.
+
+4. **φ_accept**: At least one row contains an accepting state.
+
+The window method ensures the formula size is O(n²ᵏ) where nᵏ is the runtime bound.
+
+```mermaid
+flowchart LR
+    subgraph "Cook-Levin: Encoding TM as SAT"
+        INIT["Initial config"] --> WINDOW["2×3 windows<br/>per row pair"]
+        WINDOW --> TRANS["Legal transitions<br/>encoded as clauses"]
+        TRANS --> ACCEPT["Accept state<br/>in final row"]
+    end
+```
+
 **Consequences:**
 - Thousands of problems have been proven NP-complete.
-- The first NP-complete problem enables a chain of reductions: SAT â‰¤_P 3SAT â‰¤_P CLIQUE â‰¤_P VERTEX-COVER â‰¤_P HAM-CYCLE â‰¤_P TSP, etc.
+- The first NP-complete problem enables a chain of reductions: SAT ≤ₚ 3SAT ≤ₚ CLIQUE ≤ₚ VERTEX-COVER ≤ₚ HAM-CYCLE ≤ₚ TSP, etc.
 
 ### 12.7 Proving NP-Completeness
 
@@ -153,7 +200,26 @@ To prove a problem B is NP-complete:
 - **BIN-PACKING:** Can items of given sizes fit into K bins of capacity C?
 - **GRAPH-COLORING (3-COLOR):** Is G 3-colorable?
 
-### 12.8 Beyond NP
+### 12.9 The Polynomial Hierarchy
+
+The **polynomial hierarchy** extends the idea of P and NP with oracles:
+
+\[
+\Delta_0^P = \Sigma_0^P = \Pi_0^P = P
+\]
+\[
+\Sigma_{i+1}^P = NP^{\Sigma_i^P}
+\]
+\[
+\Pi_{i+1}^P = co\Sigma_{i+1}^P
+\]
+\[
+\Delta_{i+1}^P = P^{\Sigma_i^P}
+\]
+
+If P = NP, the entire polynomial hierarchy collapses to P at the first level. This is why resolving P vs NP is so important: it determines the structure of all complexity classes.
+
+### 12.10 Beyond NP
 
 **NP-hard:** Problems to which every NP problem reduces (but may not be in NP). Includes:
 - The halting problem (much harder than NP).
@@ -208,7 +274,18 @@ Given SAT formula Ï†, convert to 3SAT Ï†':
 
 The transformation is polynomial and preserves satisfiability.
 
-### Example 12.5: SUBSET-SUM is NP-Complete
+### Example 12.5: VERTEX-COVER is NP-Complete
+
+**Reduction from 3SAT:** Given 3CNF formula φ with variables x₁,...,xₙ and clauses C₁,...,Cₘ:
+
+1. For each variable xᵢ, create two vertices (xᵢ and ¬xᵢ) connected by an edge.
+2. For each clause Cⱼ = (l₁ ∨ l₂ ∨ l₃), create a triangle connecting the three literals.
+3. Connect each clause-literal vertex to the corresponding variable-literal vertex.
+4. Set k = n + 2m (one from each variable pair, two from each clause triangle).
+
+**Correctness:** A vertex cover must pick one vertex from each variable edge and two from each clause triangle. The third vertex in each clause triangle must be connected to a variable vertex that's in the cover — meaning that literal satisfies the clause.
+
+### Example 12.6: SUBSET-SUM is NP-Complete
 
 Given numbers aâ‚, â€¦, aâ‚™ and target T.
 
@@ -234,6 +311,26 @@ Given numbers aâ‚, â€¦, aâ‚™ and target T.
 | CLIQUE | NP-complete | 3SAT reduction |
 | TSP | NP-complete | Many practical problems |
 | Primality | P | AKS algorithm |
+| 3-COLOR | NP-complete | Planar 3-colorability |
+| BIN-PACKING | NP-complete | Scheduling applications |
+| FACTORING | NP ∩ co-NP | Crypto relevance (NPI candidate) |
+
+## Known vs Unknown Relationships
+
+```mermaid
+flowchart TD
+    P["P"]
+    NP["NP"]
+    NPC["NP-complete"]
+    CoNP["co-NP"]
+    EXP["EXP"]
+    P --> NP
+    NP --> EXP
+    NP --> NPC
+    P --> CoNP
+    NP -.->|"?"| CoNP
+    P -->|"≠ (strict)"| EXP
+```
 
 ## Cross-Application Matrix
 | Domain | Complexity Concept |
@@ -301,6 +398,50 @@ Given numbers aâ‚, â€¦, aâ‚™ and target T.
 **A)** P = NP means every efficiently verifiable problem is efficiently solvable.
 </details>
 
+## Approximation Algorithms for NP-Complete Problems
+
+Even though NP-complete problems cannot be solved exactly in polynomial time (unless P=NP), they can often be **approximated** efficiently:
+
+| Problem | Approximation | Algorithm |
+|---------|--------------|-----------|
+| VERTEX-COVER | 2-approximation | Greedy edge selection |
+| MAX-CUT | 0.878-approximation | Goemans-Williamson (SDP) |
+| TSP (metric) | 1.5-approximation | Christofides algorithm |
+| SET-COVER | O(log n)-approximation | Greedy covering |
+| KNAPSACK | (1-ε)-approximation | FPTAS (dynamic programming) |
+
+### TypeScript: Greedy Vertex Cover 2-Approximation
+
+```typescript
+function approxVertexCover(
+  vertices: number[],
+  edges: [number, number][]
+): Set<number> {
+  const cover = new Set<number>();
+  const remaining = new Set(edges.map(e => `${e[0]},${e[1]}`));
+
+  while (remaining.size > 0) {
+    // Pick any remaining edge
+    const first = remaining.values().next().value as string;
+    const [u, v] = first.split(",").map(Number);
+
+    // Add both endpoints to cover
+    cover.add(u);
+    cover.add(v);
+
+    // Remove all edges incident to u or v
+    for (const edge of edges) {
+      if (edge[0] === u || edge[0] === v ||
+          edge[1] === u || edge[1] === v) {
+        remaining.delete(`${edge[0]},${edge[1]}`);
+      }
+    }
+  }
+
+  return cover;
+}
+```
+
 ## Practical Takeaways
 
 1. **P vs NP affects every programmer.** Verifying a solution (P) is almost always easier than finding one (NP). This is why SAT solvers, constraint solvers, and optimization tools exist — they encode hard problems and use exponential algorithms that work well on real-world instances.
@@ -311,6 +452,28 @@ Given numbers aâ‚, â€¦, aâ‚™ and target T.
 
 4. **Reductions connect seemingly unrelated problems.** SAT reduces to 3SAT reduces to CLIQUE reduces to VERTEX-COVER reduces to HAM-CYCLE reduces to TSP. Understanding this chain lets you recognize NP-complete problems when you encounter them.
 
+5. **Approximation algorithms are the practical response to NP-completeness.** When you prove a problem is NP-complete, the next step isn't to give up — it's to find an approximation algorithm, a heuristic, or a special case that's tractable. Most real-world optimization involves this tradeoff.
+
+## The Structure of NP Within P vs NP
+
+```mermaid
+flowchart TD
+    subgraph "If P ≠ NP"
+        P["P (tractable)"]
+        NPC["NP-complete<br/>(hardest in NP)"]
+        NPI["NP-intermediate<br/>(candidates: Factoring,<br/>Graph Isomorphism)"]
+        NP["NP"]
+        P --> NPI
+        NPI --> NPC
+    end
+    
+    subgraph "If P = NP"
+        ALL["P = NP = NP-complete<br/>(all collapse)"]
+    end
+```
+
+Ladner's theorem guarantees that if P ≠ NP, then NPI is non-empty — there exist problems in NP that are neither in P nor NP-complete.
+
 ## Summary
 
 - P = problems solvable in polynomial time on a DTM.
@@ -320,6 +483,7 @@ Given numbers aâ‚, â€¦, aâ‚™ and target T.
 - The Cook-Levin theorem proves SAT is NP-complete by encoding TM computations as Boolean formulas.
 - Thousands of NP-complete problems span computing, optimization, and mathematics.
 - P vs NP remains the most important open question in theoretical CS.
+- The time hierarchy theorem proves P ≠ EXP strictly.
 
 ## Exercises
 
@@ -341,11 +505,14 @@ Given numbers aâ‚, â€¦, aâ‚™ and target T.
 
 ### Advanced
 
-11. Prove the Cook-Levin theorem: construct the formula Ï† for a nondeterministic TM and show it is satisfiable iff the TM accepts.
-12. Prove Ladner's theorem: if P â‰  NP, then there exists an NP-intermediate language.
+11. Prove the Cook-Levin theorem: construct the formula φ for a nondeterministic TM and show it is satisfiable iff the TM accepts.
+12. Prove Ladner's theorem: if P ≠ NP, then there exists an NP-intermediate language.
 13. Show that GRAPH-ISOMORPHISM is in NP (and is a candidate for NP-intermediate status).
 14. Prove that the optimization version of TSP (find the shortest tour) is NP-hard.
-15. Show that if SAT âˆˆ P, then every NP problem has an algorithm running in O(náµ) time for some fixed k (the same polynomial degree for all problems).
+15. Show that if SAT ∈ P, then every NP problem has an algorithm running in O(nᵏ) time for some fixed k (the same polynomial degree for all problems).
+16. Implement the 3SAT-to-CLIQUE reduction in TypeScript and test it on a small 3SAT instance.
+17. Show that the metric TSP has a 2-approximation algorithm (minimum spanning tree based).
+18. Prove that if P ≠ NP, then no NP-complete problem can be solved in polynomial time on average.
 
 ## TypeScript NP-Completeness Reduction Example
 
@@ -387,6 +554,44 @@ function satTo3Sat(clauses: Clause[]): Clause[] {
 }
 ```
 
+## TypeScript: Cook-Levin Window Checker
+
+```typescript
+// Demonstrate the "window" method from the Cook-Levin proof
+
+type TapeWindow = string[][];  // 2 rows × 3 columns
+
+function getLegalWindows(
+  tapeAlphabet: string[],
+  states: string[],
+  transition: (state: string, symbol: string) => [string, string, "L" | "R"][]
+): Set<string> {
+  const legal = new Set<string>();
+
+  // A window encodes a 2×3 slice of the TM computation table
+  for (const s1 of tapeAlphabet) {
+    for (const s2 of tapeAlphabet) {
+      for (const s3 of tapeAlphabet) {
+        for (const q of states) {
+          // Window with head position in the middle of top row:
+          // Row i:     a1  (q,a2)  a3
+          // Row i+1:   b1   b2     b3
+          const windows = transition(q, s2);
+          for (const [newQ, write, dir] of windows) {
+            const bottomRow = dir === "R"
+              ? [s1, write, s3]
+              : [write, s1, s3];
+            const key = `${s1},q(${q},${s2}),${s3}|${bottomRow.join(",")}`;
+            legal.add(key);
+          }
+        }
+      }
+    }
+  }
+  return legal;
+}
+```
+
 ## Further Reading
 
 - **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapter 7 covers time complexity, P, NP, and NP-completeness with complete proofs.
@@ -395,6 +600,4 @@ function satTo3Sat(clauses: Clause[]): Clause[] {
 - **Sipser, Michael.** *The History and Status of the P vs NP Problem*. Communications of the ACM, 2012. An accessible overview of the most important open question in computer science.
 - **Karp, Richard M.** "Reducibility Among Combinatorial Problems." 1972. The seminal paper establishing NP-completeness of 21 fundamental problems.
 - **Cook, Stephen A.** "The Complexity of Theorem-Proving Procedures." STOC 1971. The original paper introducing NP-completeness and proving SAT is NP-complete.
-
-
 - **Levin, Leonid A.** 'Universal Sequential Search Problems.' Problems of Information Transmission, 1973. Independently discovered NP-completeness and the Cook-Levin theorem.

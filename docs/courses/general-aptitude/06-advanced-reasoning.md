@@ -359,6 +359,256 @@ Step II: word1 word2 word5 word3 word4 (next largest moved to second last)
 5. **Data sufficiency:** Never solve completely — stop as soon as sufficiency is determined
 6. **Multiple conclusions:** Evaluate each conclusion independently
 
+### TypeScript: Puzzle Solver & Reasoning Toolkit
+
+```typescript
+// === Syllogism Checker ===
+type Statement = "All" | "No" | "Some" | "SomeNot";
+
+class Syllogism {
+  static evaluate(statements: [string, Statement, string][], conclusion: [string, Statement, string]): boolean {
+    // Simplified evaluation using Venn region reasoning
+    const [subj, conn, obj] = conclusion;
+
+    // Check if conclusion is directly derivable
+    const allRules = [
+      // All A are B + All B are C => All A are C
+      (s: [string, Statement, string][], c: [string, Statement, string]): boolean => {
+        const [subj, conn, obj] = c;
+        if (conn !== "All") return false;
+        return s.some(([a, , b]) => a === subj) &&
+               s.some(([a, , b]) => a === b && b === obj);
+      },
+      // No A is B => No B is A
+      (s: [string, Statement, string][], c: [string, Statement, string]): boolean => {
+        return c[1] === "No" && s.some(([a, b]) => b === "No" && a === c[2] && b === c[0]);
+      },
+    ];
+
+    return allRules.some(rule => rule(statements, conclusion));
+  }
+}
+
+// === Seating Arrangement Solver ===
+class SeatingArrangement {
+  static solveLinear(
+    constraints: { type: string; a: string; b?: string; pos?: number }[],
+    total: number
+  ): string[] {
+    const seats: (string | null)[] = Array(total).fill(null);
+
+    // Place fixed positions first
+    constraints.filter(c => c.type === "fixed").forEach(c => {
+      if (c.pos !== undefined) seats[c.pos - 1] = c.a;
+    });
+
+    // Apply relative constraints
+    for (const c of constraints) {
+      if (c.type === "leftOf" && c.b) {
+        const idxA = seats.indexOf(c.a);
+        const idxB = seats.indexOf(c.b);
+        if (idxA !== -1 && idxB === -1 && idxA + 1 < total && !seats[idxA + 1]) {
+          seats[idxA + 1] = c.b;
+        }
+      }
+      if (c.type === "between" && c.b) {
+        // A between X and Y
+        const parts = c.a.split(",");
+        if (parts.length === 2) {
+          const [, mid] = parts;
+          const endIdx = seats.indexOf(c.b);
+          if (endIdx > 0 && !seats[endIdx - 1]) seats[endIdx - 1] = mid;
+        }
+      }
+    }
+
+    return seats.map(s => s ?? "_");
+  }
+
+  static printSeating(seats: string[]): void {
+    console.log(seats.map((s, i) => `[${i + 1}:${s}]`).join(" "));
+  }
+}
+
+// === Input-Output Machine Simulator ===
+class InputOutputMachine {
+  private rule: (arr: number[]) => number[];
+
+  constructor(rule: "ascending" | "descending" | "alternate") {
+    switch (rule) {
+      case "ascending":
+        this.rule = (arr) => {
+          const sorted = [...arr].sort((a, b) => a - b);
+          const result = [...arr];
+          for (let i = 0; i < arr.length; i++) {
+            if (result[i] !== sorted[i]) {
+              const idx = result.indexOf(sorted[i]);
+              [result[i], result[idx]] = [result[idx], result[i]];
+              break;
+            }
+          }
+          return result;
+        };
+        break;
+      case "descending":
+        this.rule = (arr) => {
+          const sorted = [...arr].sort((a, b) => b - a);
+          const result = [...arr];
+          for (let i = 0; i < arr.length; i++) {
+            if (result[i] !== sorted[i]) {
+              const idx = result.indexOf(sorted[i]);
+              [result[i], result[idx]] = [result[idx], result[i]];
+              break;
+            }
+          }
+          return result;
+        };
+        break;
+      default:
+        this.rule = (arr) => [...arr];
+    }
+  }
+
+  run(input: number[], steps: number): number[][] {
+    const outputs: number[][] = [input];
+    let current = [...input];
+    for (let s = 1; s <= steps; s++) {
+      current = this.rule(current);
+      outputs.push([...current]);
+      if (current.every((v, i) => v === [...input].sort((a, b) => a - b)[i])) break;
+    }
+    return outputs;
+  }
+}
+
+// === Critical Reasoning Analyzer ===
+class CriticalReasoning {
+  static identifyPremises(argument: string): string[] {
+    const premises: string[] = [];
+    const premiseMarkers = ["because", "since", "as", "given that", "due to"];
+    const lower = argument.toLowerCase();
+    for (const marker of premiseMarkers) {
+      const idx = lower.indexOf(marker);
+      if (idx !== -1) {
+        const end = argument.indexOf(".", idx);
+        premises.push(argument.slice(idx, end !== -1 ? end + 1 : undefined).trim());
+      }
+    }
+    return premises.length ? premises : ["No explicit premise markers found."];
+  }
+
+  static identifyConclusion(argument: string): string {
+    const conclusionMarkers = ["therefore", "thus", "hence", "so", "consequently", "as a result"];
+    const lower = argument.toLowerCase();
+    for (const marker of conclusionMarkers) {
+      const idx = lower.indexOf(marker);
+      if (idx !== -1) {
+        const end = argument.indexOf(".", idx);
+        return argument.slice(idx, end !== -1 ? end + 1 : undefined).trim();
+      }
+    }
+    // If no marker, the conclusion may be the first or last sentence
+    const sentences = argument.split(".").filter(s => s.trim());
+    return sentences[sentences.length - 1]?.trim() + "." || "Cannot identify.";
+  }
+
+  static checkFallacy(argument: string): string | null {
+    const lower = argument.toLowerCase();
+    if (lower.includes("everyone") && lower.includes("so")) return "Bandwagon fallacy";
+    if ((lower.match(/if we allow/g) || []).length > 1) return "Slippery slope";
+    if (lower.includes("straw man") || lower.includes("misrepresent")) return "Straw man";
+    if (lower.includes("ad hominem") || lower.includes("attack the person")) return "Ad hominem";
+    return null;
+  }
+}
+
+// === Demo ===
+const io = new InputOutputMachine("ascending");
+const steps = io.run([42, 18, 95, 27, 63, 51], 6);
+steps.forEach((s, i) => console.log(`Step ${i}: ${s.join(" ")}`));
+
+const arg = "Regular exercise improves cardiovascular health. Therefore, everyone should exercise daily.";
+console.log("Premises:", CriticalReasoning.identifyPremises(arg));
+console.log("Conclusion:", CriticalReasoning.identifyConclusion(arg));
+console.log("Fallacy:", CriticalReasoning.checkFallacy(arg));
+```
+
+### Mermaid: Critical Reasoning Question Flowchart
+
+```mermaid
+flowchart TD
+    A[Read Argument] --> B[Identify Conclusion]
+    B --> C[Identify Premises]
+    C --> D{Question Type?}
+    D -->|Strengthen| E[Add Supporting Evidence]
+    D -->|Weaken| F[Find Counter-Example]
+    D -->|Assumption| G[Identify Unstated Premise]
+    D -->|Flaw| H[Detect Logical Fallacy]
+    D -->|Parallel| I[Match Logical Structure]
+    E --> J[Test: Does It Support Conclusion?]
+    F --> K[Test: Does It Undermine Conclusion?]
+    G --> L[Test: Negate It — Does Argument Collapse?]
+    H --> M[Name the Fallacy]
+    I --> N[Compare Premise-Conclusion Pattern]
+```
+
+### Mermaid: Input-Output Machine Flow
+
+```mermaid
+flowchart LR
+    A[Input: 42 18 95 27 63 51] --> B[Step I: 18 42 95 27 63 51]
+    B --> C[Step II: 18 27 42 95 63 51]
+    C --> D[Step III: 18 27 42 63 95 51]
+    D --> E[Step IV: 18 27 42 51 63 95]
+    E --> F[Step V: Sorted — Stop]
+    F --> G[Rule: Ascending order, one element per step]
+```
+
+### Example 7: Complex Puzzle (TypeScript)
+
+Eight persons A-H live on different floors of an 8-floor building (1=lowest). A lives above B. C lives 2 floors above D. E lives immediately below F. G lives on an even-numbered floor. H lives on floor 5. B lives on floor 2. Find all assignments.
+
+**Solution:**
+
+```typescript
+function solveFloorPuzzle(): Map<string, number> {
+  const floors = new Map<string, number>();
+  floors.set("B", 2);
+  floors.set("H", 5);
+  // A above B, so A > 2
+  // C = D + 2
+  // F = E + 1 (immediately above)
+  // G is even
+  // Remaining floors: 1, 3, 4, 6, 7, 8
+  // Try: D=1, C=3; E=6, F=7; G=4 or 8; A=8
+  floors.set("D", 1); floors.set("C", 3);
+  floors.set("E", 6); floors.set("F", 7);
+  floors.set("G", 4); floors.set("A", 8);
+  return floors;
+}
+const floors = solveFloorPuzzle();
+console.log("Floor assignments:");
+for (const [person, floor] of [...floors.entries()].sort((a, b) => a[1] - b[1])) {
+  console.log(`Floor ${floor}: ${person}`);
+}
+```
+
+### Additional Exercises (Level 3 — Advanced)
+
+11. **Complex Puzzle:** Seven friends P, Q, R, S, T, U, V have different hobbies (Reading, Swimming, Dancing, Singing, Painting, Cooking, Traveling) and favorite colors (Red, Blue, Green, Yellow, White, Black, Purple). Given: The one who likes Reading likes Blue. Q likes Swimming but not Red. The Singer likes White. R and T like neither Cooking nor Painting. U is the Traveler and likes Yellow. The one who likes Green likes Dancing. The Cook does not like Red or Purple. Determine each person's hobby and color.
+
+12. **Input-Output:** Input: "sky blue ocean deep green forest". Step I: "blue sky ocean deep green forest". Step II: "blue deep sky ocean green forest". Find the rule and determine Step V.
+
+13. **Critical Reasoning (Parallel):** "All mammals are warm-blooded. Whales are mammals. Therefore, whales are warm-blooded." Find the argument with the same structure from given options.
+
+14. **Multi-Statement Syllogism:** Statements: Some trees are plants. All plants are living. No living thing is artificial. Some artificial things are plastic. Conclusions: (I) Some trees are not artificial. (II) Some plastic are not living. (III) No plant is artificial. Which follow?
+
+15. **Course of Action:** A city's public transport system is overcrowded. Proposals: (a) Increase frequency of trains (b) Raise fares to reduce demand (c) Build new metro lines (d) Promote work-from-home. Evaluate each.
+
+### Answer Key (Additional)
+
+11. P=Reading/Blue, Q=Swimming/Red, R=Singing/White, S=Dancing/Green, T=Painting/Purple, U=Traveling/Yellow, V=Cooking/Black | 12. Alphabetical by first letter, one word per step; Step V: "blue deep forest green ocean sky" | 13. Find argument with "All X are Y, Z is X, therefore Z is Y" structure | 14. I, II, and III all follow | 15. (a) Follow — directly addresses overcrowding; (b) Do not follow — penalizes commuters; (c) Follow — long-term solution; (d) Follow — reduces demand
+
 ## Summary
 
 - Puzzles: organize data systematically; use grids/tables

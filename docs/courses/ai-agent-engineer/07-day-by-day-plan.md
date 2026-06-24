@@ -4,6 +4,27 @@
 
 Each day has a **topic**, an **action** (what to do), and a **done condition** (how to know you're done). If a day takes longer, stretch it — the buffer weeks absorb overruns.
 
+### Daily rhythm
+
+1. **Morning (15 min):** Review today's topic and action. Preview the material.
+2. **Work session (2-4 hrs):** Read the phase section, run the examples, complete the action.
+3. **Wrap-up (5 min):** Verify the done condition. Write a 1-sentence reflection in your log.
+
+### Weekly rhythm
+
+| Day | Focus |
+|-----|-------|
+| Mon-Thu | New topics, exercise, code |
+| Fri | Catch-up on anything unfinished from Mon-Thu |
+| Sat | Review the week's checkpoint checklist, fill gaps |
+| Sun | Rest or optional — read ahead in next week's content |
+
+### Progress tracking
+
+At the start of each week, copy the week's table into your tracker. Cross off days as you complete them. If 3+ days in a week require buffer time, reduce scope for the remaining days rather than skipping them entirely.
+
+---
+
 ---
 
 ## Week 1 — Phase 0: Backend Gap-Fill
@@ -176,13 +197,32 @@ Each day has a **topic**, an **action** (what to do), and a **done condition** (
 
 ## Buffer Weeks
 
-Weeks 8 and 10 have built-in buffer days. If you finish early, use the extra days for:
+Weeks 8 and 10 have built-in buffer days. These are the most important weeks in the plan — they determine whether you fall behind or stay on track.
 
-- Polish the READMEs further
-- Add more test coverage
-- Record a longer architecture walkthrough video
-- Publish a second case-study post
-- Start applications early
+### How to use buffer days
+
+| Scenario | What to do |
+|----------|-----------|
+| **Caught up (no backlog)** | Add polish: better READMEs, more test coverage, extra edge case handling |
+| **1-2 days behind** | Use buffer days to catch the most important missed exercises only |
+| **3+ days behind** | Reduce scope: skip optional exercises, focus on must-pass checkpoint items |
+| **Ahead of schedule** | Record architecture walkthrough videos, publish bonus content, start next phase early |
+
+### Hard rules for staying on track
+
+1. **Never skip a day** — even 30 min of focused work counts. Consistency beats intensity.
+2. **Done > perfect** — a working prototype deployed today is worth more than a polished one next week.
+3. **Phase checkpoints are non-negotiable** — if you can't pass a phase checkpoint, do not start the next phase. Use buffer days to close the gap.
+4. **Log your velocity** — after each week, note how many days you actually completed vs planned. This helps you adjust the remaining weeks realistically.
+5. **If you're consistently overrunning, reduce scope** — the goal is 3 working portfolio projects and a job search, not completing every exercise perfectly.
+
+### Weekly reflection template
+
+Ask yourself these 3 questions at the end of each week:
+
+1. **What did I complete?** List the days you finished and what you built.
+2. **What blocked me?** Was it unclear material, tool issues, time constraints, or motivation?
+3. **What will I adjust next week?** More time, skip optional content, change approach?
 
 ---
 

@@ -120,6 +120,11 @@ nav:
     - Phase 5 - Portfolio & Positioning: courses/ai-agent-engineer/06-phase5-portfolio-positioning.md
     - Day-by-Day Plan: courses/ai-agent-engineer/07-day-by-day-plan.md
     - Job Search Playbook: courses/ai-agent-engineer/08-job-search-playbook.md
+    - '09 - AI System Design': courses/ai-agent-engineer/09-ai-system-design.md
+    - '10 - Prompt Engineering Mastery': courses/ai-agent-engineer/10-prompt-engineering-mastery.md
+    - '11 - AI Testing & Evaluation': courses/ai-agent-engineer/11-ai-testing-evaluation.md
+    - '12 - AI Observability & Debugging': courses/ai-agent-engineer/12-ai-observability-debugging.md
+    - '13 - Advanced Vector Search': courses/ai-agent-engineer/13-advanced-vector-search.md
   - "🤖 AI Engineering":
     - Overview: ai-engineering-from-scratch/README.md
     - About: references/ai-engineering/about.md

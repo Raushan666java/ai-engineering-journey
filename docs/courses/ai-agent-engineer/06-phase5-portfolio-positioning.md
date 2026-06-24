@@ -18,6 +18,11 @@
 | 7 | Technical interview prep | 2 | Can explain RAG pipeline, ReAct loop, and MCP protocol from memory without notes |
 | 8 | Salary negotiation | 1 | Written walk-away number + target range for Dubai market |
 | 9 | Freelance pricing strategy | 1 | Rate card set for 3 engagement types (hourly, fixed-price, retainer) |
+| 10 | GitHub profile optimization | 0.5 | Profile README + 3 pinned repos with proper topics |
+| 11 | Portfolio website | 1.5 | Single-page site deployed on Cloudflare Pages |
+| 12 | Building in public + content strategy | 2 | First LinkedIn post published, 3 more scheduled |
+| 13 | Certifications worth pursuing | 2 | 1 certification completed and listed on LinkedIn |
+| 14 | Networking in the Dubai AI scene | 1.5 | Joined 2 communities + 3 LinkedIn connections sent |
 
 ---
 
@@ -329,7 +334,220 @@ Calculate your walk-away number. Write your rate card (hourly, fixed-price for a
 
 ---
 
-## 5.9 Freelance Pricing Strategy
+## 5.10 GitHub Profile Optimization
+
+Your GitHub profile is often the first thing a technical interviewer checks after your resume. A well-optimized profile signals professionalism and active engineering.
+
+### Profile essentials
+
+| Element | What to do | Why |
+|---------|-----------|-----|
+| **Profile README** | Create a repo named `{your-username}` with a README that summarizes your work | Shows up on your profile as a hero section |
+| **Pinned repos** | Pin all 3 portfolio projects | First thing visitors see |
+| **Contribution graph** | Commit daily (even small fixes/docs) to keep the graph green | Passive credibility signal |
+| **Topics** | Add technologies to each repo (langgraph, rag, fastapi, chromadb, mcp) | Helps your repos appear in searches |
+| **README per repo** | Follow the template from §5.1 on every project repo | Consistent presentation |
+
+### Profile README template
+
+```markdown
+### 👋 I build production AI agent systems
+
+**What I do:** LangGraph state machines · RAG pipelines · MCP servers · FastAPI backends
+
+**Live projects:**
+- 🔗 [RAG Memory API](https://rag-demo.apexpillar.tech) — document Q&A with cited sources
+- 🔗 [LangGraph Agent Pipeline](https://github.com/yourname/purvanchal-langgraph) — multi-node agent state machine
+- 🔗 [Booking Module (FastAPI)](https://github.com/yourname/booking-api) — async real-estate booking port
+
+**Stack:** Python · FastAPI · LangGraph · CrewAI · MCP · ChromaDB · Qdrant · Docker · Redis
+
+📫 [LinkedIn](https://linkedin.com/in/yourprofile) · [Upwork](https://upwork.com/freelancers/yourprofile)
+```
+
+### Exercise
+
+Create your profile README repo. Pin your 3 project repos. Verify each has proper topics and a README. Ask someone to visit your profile and tell you within 5 seconds what you do.
+
+---
+
+## 5.11 Portfolio Website
+
+A simple single-page portfolio site gives you control over your narrative and a centralized link for applications. No need for a complex build — a single HTML file hosted on Cloudflare Pages or GitHub Pages.
+
+### Minimal structure
+
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent Engineer — Raushan Kumar</title>
+  <style>
+    body { font-family: system-ui; max-width: 800px; margin: auto; padding: 2rem; }
+    .project { border-left: 3px solid #0070f3; padding-left: 1rem; margin: 1.5rem 0; }
+    .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .tags span { background: #eaeaea; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <h1>Raushan Kumar</h1>
+  <p><strong>AI Agent Engineer</strong> — LangGraph · RAG · FastAPI · MCP</p>
+
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>RAG Memory API</h3>
+    <p>Document ingestion, vector search, and question-answering with cited sources.</p>
+    <div class="tags"><span>FastAPI</span><span>ChromaDB</span><span>OpenAI</span><span>Docker</span></div>
+  </div>
+  <div class="project">
+    <h3>LangGraph Agent Pipeline</h3>
+    <p>Multi-node agent state machine with web search, document query, and report generation.</p>
+    <div class="tags"><span>LangGraph</span><span>MCP</span><span>Redis</span><span>Postgres</span></div>
+  </div>
+  <div class="project">
+    <h3>Real-Estate Booking API</h3>
+    <p>Production FastAPI port of a multi-tenant real-estate booking system with full test coverage.</p>
+    <div class="tags"><span>FastAPI</span><span>SQLAlchemy</span><span>Pydantic</span><span>pytest</span></div>
+  </div>
+
+  <h2>Links</h2>
+  <p><a href="https://github.com/yourname">GitHub</a> · <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> · <a href="https://upwork.com/freelancers/yourprofile">Upwork</a></p>
+</body>
+</html>
+```
+
+### Deployment (Cloudflare Pages, free)
+
+1. Push the HTML file to a GitHub repo
+2. Go to Cloudflare Dashboard → Workers & Pages → Create → Pages
+3. Connect your GitHub repo
+4. Framework preset: "None" — just deploy the static folder
+5. Set a custom subdomain: `raushan-ai.pages.dev` or use your apexpillar.tech subdomain
+
+### Exercise
+
+Build the portfolio page, deploy to Cloudflare Pages, and add the URL to your LinkedIn Featured section, GitHub profile, and Upwork portfolio. Forward it from a subdomain like `portfolio.apexpillar.tech`.
+
+---
+
+## 5.12 Building in Public & Content Strategy
+
+Writing about your build process is a force multiplier for your job search. A single detailed post can generate more recruiter attention than 50 cold applications.
+
+### Why it works
+
+- Recruiters search LinkedIn for specific terms (LangGraph, RAG, MCP)
+- A post demonstrating expertise is stronger than a resume bullet point
+- Engineers at target companies see your post and refer you internally
+- Each post becomes a shareable portfolio artifact
+
+### Content calendar (bi-weekly cadence)
+
+| Week | Topic | Format | Est. time |
+|------|-------|--------|-----------|
+| 1 | "How I Built a RAG API in 2 Weeks" | Technical walkthrough with architecture diagram | 2 hrs |
+| 3 | "Chunking Strategies Compared: Fixed vs Semantic vs Agentic" | Benchmark post with results table | 2 hrs |
+| 5 | "My LangGraph State Machine: A Visual Tour" | Video or annotated diagram post | 2 hrs |
+| 7 | "MCP Protocol: What I Learned Building a Server" | Technical explainer | 2 hrs |
+| 9 | "From n8n to LangGraph: Why I Rebuilt My Orchestrator" | Comparison post | 2 hrs |
+| 11 | "How I Pivoted from Laravel to AI Agents in 12 Weeks" | Career story post | 2 hrs |
+
+### Platform strategy
+
+| Platform | Content type | Frequency | Goal |
+|----------|-------------|-----------|------|
+| LinkedIn | Native posts (not links), 400-800 words | 2x/month | Recruiter visibility, networking |
+| dev.to | Tutorial-style, 1000-2000 words | 1x/month | SEO, inbound opportunities |
+| GitHub | Code, README, architecture diagram | Ongoing | Portfolio credibility |
+| Twitter/X | Short updates, screenshots, links | 2-3x/week | Community, peer recognition |
+
+### Exercise
+
+Schedule your first LinkedIn post for this week. Write a 500-word version of "How I Built a RAG API in 2 Weeks." Include at least one concrete technical decision with your rationale. Post it natively on LinkedIn. Then schedule the next 3 posts on your calendar with due dates.
+
+---
+
+## 5.13 Certifications Worth Pursuing
+
+Certifications won't get you hired on their own, but they can help you past HR filters and signal commitment to the field.
+
+### High-value certs for AI Agent Engineer roles
+
+| Certification | Cost | Time | Why it helps |
+|-------------|------|------|-------------|
+| **OpenAI API Certification** | Free | 2 hours | Proves you know the most-used AI platform |
+| **AWS AI Practitioner** | $100 | 4-6 weeks | Shows cloud-AI competence for enterprise roles |
+| **LangGraph Academy** | Free | 4 hours | Directly validates agent framework skills |
+| **MCP Certification** | Free | 2 hours | First-mover advantage on protocol adoption |
+| **FastAPI Official Course** | Free | 2-3 hours | Validates Python backend skills |
+| **Docker DCA** | $195 | 4-6 weeks | Useful for production deployment roles |
+
+### What NOT to bother with
+
+- Generic "AI for Everyone" courses (too basic for agent roles)
+- Certifications from unverifiable providers (Udemy completion badges)
+- Outdated certs (TensorFlow Developer Certificate — framework-specific and stale)
+
+### How to list them
+
+```
+**Certifications:**
+- OpenAI API Certified (2026)
+- AWS AI Practitioner (in progress)
+- LangGraph Academy — Advanced Agent Patterns (2026)
+```
+
+### Exercise
+
+Pick 1 certification from the high-value list. Register and complete it within 2 weeks. Add it to your LinkedIn Licenses & Certifications section with the verification link.
+
+---
+
+## 5.14 Networking in the Dubai AI Scene
+
+Dubai's AI job market runs on relationships. A referral from a local engineer can bypass the entire HR screening process.
+
+### Where to network
+
+| Venue | Type | Frequency | How to engage |
+|-------|------|-----------|---------------|
+| **Dubai AI Meetup** | In-person | Monthly | Attend, ask 1 question per event |
+| **T-resonance** | Conference | Annual (March) | Volunteer or attend with a specific goal |
+| **LinkedIn DM** | Online | Daily | Comment on posts from Dubai AI engineers |
+| **UAE AI Discord/Slack** | Online | Weekly | Share progress, ask questions |
+| **What's App AI groups** | Online | Weekly | Join shared from meetups |
+
+### Cold outreach template (LinkedIn)
+
+```
+Hi {Name},
+
+I came across your work on {specific project/company} and was impressed by {specific thing}.
+
+I'm an AI Agent Engineer building production LangGraph systems (RAG pipelines, MCP servers) and I'm actively looking for opportunities in Dubai's AI ecosystem. I'd love to hear about what you're working on and any advice you have for someone breaking into the space here.
+
+Would you be open to a 10-minute chat next week?
+
+Thanks,
+Raushan
+```
+
+### Keep the pipeline warm
+
+- Set a recurring calendar reminder: "Dubai networking — 30 min"
+- Review on Sunday: who to DM, which meetup to register, which post to comment on
+- Track connections in a spreadsheet: Name, Company, When met, Follow-up date, Notes
+
+### Exercise
+
+Join 2 of the online communities above. Register for the next Dubai AI Meetup. Send 3 LinkedIn connection requests to Dubai AI engineers with the template above. Track everything in your networking spreadsheet.
+
+---
+
+## Phase 5 Done Checkpoint (Updated)
 
 ### Three engagement models
 
@@ -393,7 +611,7 @@ Build your rate card:
 
 ---
 
-## Phase 5 Done Checkpoint
+## Phase 5 Done Checkpoint (Updated)
 
 Before declaring yourself ready to apply:
 
@@ -408,8 +626,13 @@ Before declaring yourself ready to apply:
 - [ ] Can answer all 10 interview questions from memory without notes
 - [ ] Walk-away number + rate card written and saved
 - [ ] 3 engagement types priced (hourly, fixed, retainer)
+- [ ] GitHub profile has README + 3 pinned repos with correct topics
+- [ ] Portfolio website deployed and linked from all profiles
+- [ ] First LinkedIn technical post published, 3 more scheduled
+- [ ] 1 certification completed and listed on LinkedIn
+- [ ] Joined 2 Dubai AI communities, sent 3+ networking messages
 
-**Estimated time to checkpoint:** 16-20 hours over 2 weeks, plus ongoing applications.
+**Estimated time to checkpoint:** 22-28 hours over 2 weeks, plus ongoing applications.
 
 ---
 
@@ -417,7 +640,7 @@ Before declaring yourself ready to apply:
 
 You already run production systems on Hetzner with ChromaDB, FastAPI, LangGraph, and MCP. The gap isn't technical — it's that the output is scattered across a course repo and personal infra, not packaged as a portfolio.
 
-These 6 phases close that gap. At the end, a recruiter opens your profile and sees: "AI Agent Engineer" → "LangGraph, RAG, FastAPI, MCP" → "Live demo at rag-demo.apexpillar.tech" → "Open-source pipeline on GitHub."
+These 14 sections close that gap. At the end, a recruiter opens your profile and sees: "AI Agent Engineer" → "LangGraph, RAG, FastAPI, MCP" → "Live demo at rag-demo.apexpillar.tech" → "Open-source pipeline on GitHub" → "Published posts on LinkedIn" → "Portfolio at portfolio.apexpillar.tech."
 
 That's what converts. Not another course. Not another certification. A live, documented, production system.
 

@@ -60,7 +60,73 @@ Upon completion of this course, you will be able to:
 
 ---
 
-## Course Structure
+## Advanced Chapters (Beyond the 12-Week Course)
+
+The following chapters cover advanced production AI topics. These are standalone references — study them in any order as needed for your projects or interview prep.
+
+### Chapter 09 — AI System Design
+
+**Goal:** Design production AI architectures that scale — RAG at 10K QPS, multi-region agents, cost-optimized model tiering.
+
+**Topics:** RAG architecture patterns (naive, multi-hop, agentic), 3-tier caching (semantic + response + KV cache), cost optimization (model tiering, prompt compression, batching), latency profiling (TTFT, TPOT, end-to-end), scaling strategies (horizontal, vertical, partitioning), multi-region deployment, agent infrastructure patterns, ingestion pipelines, AI gateway design, system design interview prep for AI roles.
+
+**Chapter file:** `09-ai-system-design.md`
+
+---
+
+### Chapter 10 — Prompt Engineering Mastery
+
+**Goal:** Move beyond basic prompts — master chain-of-thought, structured output, prompt management, and production evaluation.
+
+**Topics:** CoT/ToT/self-consistency, structured output (JSON mode, tool calling, constrained decoding), prompt management and versioning, few-shot optimization, system prompt design, multi-turn conversation patterns, prompt compression, evaluation frameworks (BLEU, ROUGE, METEOR, BERTScore, LLM-as-judge), A/B testing, injection defense strategies.
+
+**Chapter file:** `10-prompt-engineering-mastery.md`
+
+---
+
+### Chapter 11 — AI Testing & Evaluation
+
+**Goal:** Build a robust evaluation pipeline for AI systems — unit tests for agents, integration tests for RAG, LLM-as-judge, and CI/CD integration.
+
+**Topics:** Unit testing for agents (tool call assertions, state transitions), integration testing for RAG (chunk quality, retrieval relevance), LLM-as-judge (rubric design, calibration, bias mitigation), trajectory evaluation, hallucination detection, eval datasets (construction, curation, versioning), CI/CD eval gates, quality metrics dashboards, A/B model testing.
+
+**Chapter file:** `11-ai-testing-evaluation.md`
+
+---
+
+### Chapter 12 — AI Observability & Debugging
+
+**Goal:** See inside your AI system — trace every LLM call, track costs, detect drift, and debug agent failures systematically.
+
+**Topics:** Custom tracing (OpenTelemetry spans per agent step), LangSmith integration, OpenTelemetry GenAI conventions, token tracking and cost attribution, latency profiling (per-tool, per-LLM-call), quality monitoring (hallucination rate, retrieval relevance), structured agent logging (JSON, correlation IDs, log levels), anomaly detection and alerting, debugging agent failures (stuck loops, tool errors, context overflow), drift detection (embedding drift, response distribution shift).
+
+**Chapter file:** `12-ai-observability-debugging.md`
+
+---
+
+### Chapter 13 — Advanced Vector Search
+
+**Goal:** Go beyond basic cosine similarity — hybrid search, multi-vector retrieval, quantized indexes, and multi-modal RAG.
+
+**Topics:** Hybrid search (BM25 + dense + sparse embeddings + RRF), multi-vector retrieval (ColBERT-style late interaction), HyDE and query expansion, cross-encoder reranking, HNSW tuning (M, efConstruction, efSearch), metadata filtering (pre-filtering vs post-filtering), quantization (PQ + SQ + binary), multi-modal RAG (text + image + table), graph RAG (entity extraction + relationship graph), streaming ingestion, vector DB comparison and migration strategies.
+
+**Chapter file:** `13-advanced-vector-search.md`
+
+---
+
+### How the Advanced Chapters Fit
+
+| Chapter | When to Study | Prerequisites |
+|---------|--------------|-------------|
+| 09 — System Design | Before AI system design interviews | Phase 2 (RAG) + Phase 4 (hardening) |
+| 10 — Prompt Engineering | Ongoing, reference during all phases | Phase 2 (prompt basics) |
+| 11 — Testing & Evaluation | Before production deployment | Phase 4 (testing basics) |
+| 12 — Observability | During Phase 4 hardening | Phase 4 (logging + metrics) |
+| 13 — Advanced Vector Search | When optimizing RAG quality | Phase 2 (vector search basics) |
+
+---
+
+## Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)
 
 ### Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)
 
@@ -395,9 +461,14 @@ Upon completion of this course, you will be able to:
 | [`03-phase2-llm-rag-theory.md`](03-phase2-llm-rag-theory.md) | 2 — LLM/RAG | 890 | Tokenization, embeddings, vector search, chunking, RAG pipeline, fine-tuning, eval, guardrails |
 | [`04-phase3-agents-langgraph-mcp.md`](04-phase3-agents-langgraph-mcp.md) | 3 — Agents | 1,044 | ReAct, LangGraph state machines, CrewAI, MCP protocol, agent memory, multi-agent patterns, cost analysis |
 | [`05-phase4-production-hardening.md`](05-phase4-production-hardening.md) | 4 — Hardening | 511 | Docker, Celery, logging, Sentry, CI/CD, load testing, cost controls, Prometheus/Grafana, security |
-| [`06-phase5-portfolio-positioning.md`](06-phase5-portfolio-positioning.md) | 5 — Portfolio | 299 | README design, demo videos, Upwork/LinkedIn profiles, case study, interview prep, negotiation, pricing |
-| [`07-day-by-day-plan.md`](07-day-by-day-plan.md) | — Schedule | 155 | Day-by-day schedule for all 12 weeks with specific tasks per day |
+| [`06-phase5-portfolio-positioning.md`](06-phase5-portfolio-positioning.md) | 5 — Portfolio | 520+ | README design, demo videos, profiles, case study, interview prep, negotiation, pricing, GitHub profile, portfolio site, content strategy, certs, networking |
+| [`07-day-by-day-plan.md`](07-day-by-day-plan.md) | — Schedule | 250+ | Day-by-day schedule for all 12 weeks with daily rhythm, progress tracking, buffer week playbook |
 | [`08-job-search-playbook.md`](08-job-search-playbook.md) | — Job Search | 552 | Market landscape, platform deep-dives, outreach sequences, interview prep, Dubai market, visa process |
+| [`09-ai-system-design.md`](09-ai-system-design.md) | Advanced — System Design | 450 | 3-tier caching, model tiering, latency profiling, scaling, multi-region, AI gateway, ingestion pipelines |
+| [`10-prompt-engineering-mastery.md`](10-prompt-engineering-mastery.md) | Advanced — Prompt Eng | 430 | CoT/ToT, structured output, prompt management, few-shot optimization, eval frameworks, injection defense |
+| [`11-ai-testing-evaluation.md`](11-ai-testing-evaluation.md) | Advanced — Testing | 380 | Unit/integration/eval for AI, LLM-as-judge, hallucination detection, CI/CD eval gates |
+| [`12-ai-observability-debugging.md`](12-ai-observability-debugging.md) | Advanced — Observability | 380 | OpenTelemetry tracing, cost tracking, latency profiling, drift detection, anomaly alerting |
+| [`13-advanced-vector-search.md`](13-advanced-vector-search.md) | Advanced — Vector Search | 410 | Hybrid search, multi-vector, HyDE, reranking, HNSW tuning, quantization, graph RAG |
 
 ---
 

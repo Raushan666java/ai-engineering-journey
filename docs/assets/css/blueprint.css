@@ -60,8 +60,8 @@ html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 body {
   font-family: var(--font-body);
-  font-size: 18px;
-  line-height: 1.62;
+  font-size: 17px;
+  line-height: 1.7;
   color: var(--ink);
   background-color: var(--bg);
   background-image: radial-gradient(var(--paper-rule) 1px, transparent 1px);
@@ -179,8 +179,8 @@ body {
 
 .md-typeset {
   font-family: var(--font-body) !important;
-  font-size: 18px !important;
-  line-height: 1.62 !important;
+  font-size: 17px !important;
+  line-height: 1.7 !important;
   color: var(--ink) !important;
 }
 
@@ -226,7 +226,7 @@ body {
 /* === TYPOGRAPHY === */
 .md-typeset h1 {
   font-family: var(--font-display) !important;
-  font-size: clamp(2.4rem, 6vw, 4.4rem) !important;
+  font-size: clamp(2rem, 5vw, 3rem) !important;
   font-weight: 400 !important;
   letter-spacing: 0.02em !important;
   text-transform: uppercase !important;
@@ -239,7 +239,7 @@ body {
 
 .md-typeset h2 {
   font-family: var(--font-display) !important;
-  font-size: clamp(1.8rem, 4vw, 2.6rem) !important;
+  font-size: clamp(1.5rem, 3vw, 1.9rem) !important;
   font-weight: 400 !important;
   letter-spacing: 0.02em !important;
   text-transform: uppercase !important;
@@ -250,8 +250,8 @@ body {
 
 .md-typeset h3 {
   font-family: var(--font-mono) !important;
-  font-size: 0.9rem !important;
-  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
   color: var(--ink-soft) !important;
@@ -259,7 +259,7 @@ body {
 
 .md-typeset h4 {
   font-family: var(--font-mono) !important;
-  font-size: 0.78rem !important;
+  font-size: 0.82rem !important;
   font-weight: 500 !important;
   letter-spacing: 0.12em !important;
   text-transform: uppercase !important;
@@ -275,7 +275,7 @@ body {
 
 .md-typeset code {
   font-family: var(--font-mono) !important;
-  font-size: 0.85rem !important;
+  font-size: 0.86rem !important;
   background: var(--code-bg) !important;
   border: 1px solid var(--rule-soft) !important;
   padding: 2px 6px !important;
@@ -406,7 +406,7 @@ body {
 
 .section-num {
   font-family: var(--font-display);
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
   color: var(--ink);
   text-transform: uppercase;
   line-height: 1;
@@ -476,14 +476,14 @@ body {
   gap: 16px;
   padding: 8px 0;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   letter-spacing: 0.04em;
 }
 
 .stat-row-label {
   text-transform: uppercase;
   color: var(--ink-soft);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
 }
 
 .stat-row-bar {
@@ -547,10 +547,10 @@ body {
 
 .grid-card p {
   font-family: var(--font-body);
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   color: var(--ink-soft);
   margin: 8px 0;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .grid-card .card-meta {
@@ -637,14 +637,14 @@ body {
   border: 2px solid var(--ink) !important;
   box-shadow: var(--shadow-hard) !important;
   font-family: var(--font-mono) !important;
-  font-size: 0.78rem !important;
+  font-size: 0.96rem !important;
 }
 
 .md-typeset table:not(.highlighttable) th {
   background: var(--ink) !important;
   color: var(--bg) !important;
   font-family: var(--font-mono) !important;
-  font-size: 0.72rem !important;
+  font-size: 0.74rem !important;
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
   border-bottom: 2px solid var(--ink) !important;
@@ -838,10 +838,10 @@ body {
 
 .topic-card p {
   font-family: var(--font-body);
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--ink-soft);
   margin: 0 0 12px 0;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .topic-card .topic-meta {
@@ -1005,9 +1005,9 @@ body {
 .phase-body p {
   margin: 8px 0;
   font-family: var(--font-body);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: var(--ink-soft);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 /* === TIP BANNER === */
@@ -1020,9 +1020,9 @@ body {
   padding: 16px 20px;
   margin: 24px 0;
   font-family: var(--font-body);
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: var(--ink-soft);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .tip-banner .tip-badge {
@@ -1114,16 +1114,16 @@ body {
 
 .track-card h4 {
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin: 0;
   color: var(--ink);
 }
 
 .track-card p {
   font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-size: 0.93rem;
   color: var(--ink-soft);
-  line-height: 1.55;
+  line-height: 1.6;
   margin: 0;
   flex: 1;
 }
@@ -1189,7 +1189,7 @@ body {
 
 .company-card h4 {
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   margin: 0;
   color: var(--ink);
 }
@@ -1204,9 +1204,9 @@ body {
 
 .company-card p {
   font-family: var(--font-body);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--ink-soft);
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -1252,14 +1252,14 @@ body {
 
 .lang-card h4 {
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   margin: 0;
   color: var(--ink);
 }
 
 .lang-card p {
   font-family: var(--font-body);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--ink-soft);
   margin: 0;
   flex: 1;
@@ -1307,14 +1307,14 @@ body {
 
 .ds-card h4 {
   font-family: var(--font-body);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   margin: 0;
   color: var(--ink);
 }
 
 .ds-card p {
   font-family: var(--font-body);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--ink-soft);
   margin: 0;
   flex: 1;
@@ -1391,7 +1391,7 @@ body {
 
 .roadmap-step strong {
   font-family: var(--font-mono);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   letter-spacing: 0.04em;
   display: block;
 }
@@ -1730,7 +1730,7 @@ body {
 
 .link-chip {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   padding: 6px 14px;
   border: 1px solid var(--rule-soft);
   text-decoration: none !important;

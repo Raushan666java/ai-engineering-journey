@@ -107,14 +107,14 @@
 }
 
 .project-card p {
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.6;
   margin-bottom: 12px;
   color: var(--md-default-fg-color--light);
 }
 
 .project-card a {
-  font-size: 0.83rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--ai-primary) !important;
 }
@@ -189,12 +189,12 @@
 }
 
 .resume-entry .subtitle {
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   color: var(--md-default-fg-color--light);
 }
 
 .resume-entry .date {
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   color: var(--md-default-fg-color--light);
 }
 
@@ -204,8 +204,8 @@
 }
 
 .resume-entry li {
-  font-size: 0.85rem;
-  line-height: 1.5;
+  font-size: 0.92rem;
+  line-height: 1.55;
   margin-bottom: 3px;
 }
 
@@ -364,7 +364,7 @@ nav .md-nav__link .priority-badge {
   padding: 0.65rem 0.9rem;
   border: 1px solid var(--ai-card-border);
   border-radius: 8px;
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   font-weight: 600;
   text-decoration: none;
   color: var(--md-default-fg-color) !important;
@@ -429,7 +429,7 @@ nav .md-nav__link .priority-badge {
 .start-here-content p {
   color: rgba(255,255,255,0.85);
   margin: 0 0 16px;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .start-here-btn {
@@ -540,8 +540,8 @@ nav .md-nav__link .priority-badge {
 
 .phase-info strong {
   display: block;
-  font-size: 0.82rem;
-  line-height: 1.3;
+  font-size: 0.88rem;
+  line-height: 1.4;
 }
 
 .phase-info span {
@@ -581,14 +581,14 @@ nav .md-nav__link .priority-badge {
 
 .timeline-year {
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--ai-primary);
   text-align: right;
 }
 
 .timeline-desc {
-  font-size: 0.88rem;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* ── Image Sizing ── */

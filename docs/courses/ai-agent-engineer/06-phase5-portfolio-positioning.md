@@ -23,6 +23,8 @@
 | 12 | Building in public + content strategy | 2 | First LinkedIn post published, 3 more scheduled |
 | 13 | Certifications worth pursuing | 2 | 1 certification completed and listed on LinkedIn |
 | 14 | Networking in the Dubai AI scene | 1.5 | Joined 2 communities + 3 LinkedIn connections sent |
+| 15 | Modern AI frameworks — landscape & strategy | 2 | Can explain 6 major frameworks, their strengths, and when to use each |
+| 16 | Trending AI repos to follow | 1 | Following 10+ key repos, can cite latest developments in interviews |
 
 ---
 
@@ -547,71 +549,142 @@ Join 2 of the online communities above. Register for the next Dubai AI Meetup. S
 
 ---
 
-## Phase 5 Done Checkpoint (Updated)
+## 5.15 Modern AI Frameworks — Landscape & Strategy
 
-### Three engagement models
+Knowing the framework landscape signals that you understand the industry — not just your own stack. Interviewers ask "Why LangGraph over CrewAI?" and your answer needs data, not vibes.
 
-| Model | When to use | Your rate | Risk level |
-|-------|------------|-----------|------------|
-| Hourly | Discovery phase, ongoing maintenance | $50-80/hr | Low |
-| Fixed-price | Well-defined scope ("build a RAG API") | $1,500-5,000 per project | Medium |
-| Retainer | Monthly maintenance + improvements | $1,000-3,000/month | Low |
+### The 2026 Landscape (ranked by GitHub stars)
 
-### Estimating fixed-price projects
+| # | Framework | Stars | Creator | Best for |
+|---|-----------|-------|---------|----------|
+| 1 | **LangChain** | ~134K | LangChain Inc. | Integration breadth, 500+ connectors, prototyping |
+| 2 | **AutoGPT** | ~183K | Significant Gravitas | Autonomous long-running agents |
+| 3 | **Langflow** | ~147K | Logspace | Visual drag-and-drop agent builder |
+| 4 | **Dify** | ~136K | Dify | Production platform for agentic workflows |
+| 5 | **LangGraph** | ~33K | LangChain Inc. | Stateful graph-based production agents |
+| 6 | **CrewAI** | ~54K | João Moura | Role-based multi-agent orchestration |
+| 7 | **AutoGen** | ~57K | Microsoft | MAINTENANCE MODE — replaced by MAF |
+| 8 | **MAF** | ~11K | Microsoft | Enterprise stack, .NET + Python, successor to AutoGen |
+| 9 | **OpenAI Agents SDK** | ~27K | OpenAI | Lightweight multi-agent for OpenAI-native stacks |
+| 10 | **smolagents** | ~28K | Hugging Face | Minimal code-agent library, model-agnostic |
+| 11 | **LlamaIndex** | ~60K | LlamaIndex | Document-centric RAG + agent workflows |
+| 12 | **Google ADK** | ~19K | Google | GCP-native, agent development kit |
+| 13 | **Mastra** | ~23K | Mastra (Gatsby team) | TypeScript agents, partial OSS |
+| 14 | **Browser-use** | ~86K | Browser-use | AI agents that control browsers |
+| 15 | **Mem0** | ~52K | Mem0 | Memory layer for persistent agent context |
+| 16 | **MetaGPT** | ~67K | MetaGPT | Multi-agent simulating a software company |
 
-```python
-def estimate_fixed_price(
-    hours: float,
-    hourly_rate: float = 60,
-    risk_buffer: float = 1.5,  # 50% buffer for unknown unknowns
-    complexity_mult: float = 1.0,
-) -> dict:
-    base = hours * hourly_rate
-    total = base * risk_buffer * complexity_mult
-    return {
-        "base_estimate": base,
-        "risk_buffer_pct": (risk_buffer - 1) * 100,
-        "total_quote": total,
-    }
+### Which ones to actually learn
 
-# RAG demo API build: ~40 hours
-print(estimate_fixed_price(40, 60, 1.5, 1.2))
-# → base: $2,400, buffer: 50%, total: $4,320
+You don't need all 16. Here's the priority order for an AI Agent Engineer:
 
-# LangGraph workflow: ~60 hours
-print(estimate_fixed_price(60, 70, 1.5, 1.3))
-# → base: $4,200, buffer: 50%, total: $8,190
+| Tier | Frameworks | Why | Time |
+|------|-----------|-----|------|
+| **Core** (must know) | LangGraph, CrewAI, OpenAI Agents SDK | These are what job postings ask for | Already done |
+| **Strong** (know deeply) | MCP, smolagents, Browser-use | Production patterns, code agents, browser automation | 4-6 hours |
+| **Awareness** (can discuss) | MAF, Google ADK, Mastra, Mem0, Dify | Enterprise/TypeScript/memory/nocode alternatives | 2-3 hours |
+| **Legacy** (know why not) | AutoGen, pure LangChain | Maintenance mode or deprecated for agents | 30 min |
+
+### Framework decision flow
+
+```
+What are you building?
+│
+├─ One agent with tools → try smolagents or OpenAI Agents SDK
+│
+├─ Multi-step workflow with state
+│   ├─ Simple → LLM Router pattern (just if-else tool dispatch)
+│   └─ Complex → LangGraph (checkpoints, human-in-loop, cycles)
+│
+├─ Multi-agent team
+│   ├─ Role-based, protoype fast → CrewAI
+│   └─ Enterprise, .NET → Microsoft Agent Framework (MAF)
+│
+├─ Browser automation → Browser-use
+│
+├─ Long-running autonomous agent → AutoGPT
+│
+├─ Visual/no-code builder → Langflow or Dify
+│
+└─ "I don't know yet" → Start with smolagents or OpenAI Agents SDK
 ```
 
-### Upwork proposal pricing strategy
+### The 2026 production stack (most common)
 
-| Project type | Your bid | Competitor range | Win rate |
-|-------------|----------|-----------------|----------|
-| Simple API build | $1,500-2,500 | $500-5,000 | 40% |
-| RAG system | $3,000-5,000 | $1,000-10,000 | 30% |
-| Agent workflow | $4,000-8,000 | $2,000-15,000 | 25% |
-| Consultation (hourly) | $60-80 | $30-150 | 50% |
+Research from LangChain Inc., production deployment analysis, and community benchmarks converge on this pattern:
 
-### Street-smart pricing rules
+```
+Prototype → CrewAI or smolagents
+Production → LangGraph + MCP + Mem0
+Observability → LangSmith or OpenTelemetry
+Deployment → Docker + FastAPI + Cloudflare Tunnel
+```
 
-1. **Never compete on price** — compete on specificity ("I've built this exact system for real estate")
-2. **Anchor high** — your first number sets the range; say your rate confidently
-3. **Discount scope, not rate** — if they can't afford $5K, offer $3K with reduced scope
-4. **First client at any rate** — your first Upwork gig validates your profile; take a lower rate for the first one
-5. **Raise rates every 3 months** — if you're fully booked, you're undercharging
+**The migration path:** Teams consistently start with CrewAI for speed, then migrate to LangGraph for production control. This is normal — plan for it.
+
+### Interview talking points
+
+When asked "Which framework should we use?":
+
+> "For a production agent with state persistence and human-in-the-loop, I'd use **LangGraph** — it has checkpoint recovery, TypedDict state management, and LangSmith observability. For rapid prototyping of a multi-agent research workflow, **CrewAI** gets you a working demo in hours. If you're on the Microsoft stack, **MAF** is the play. And whatever framework we pick, I'd pair it with **MCP** for tool interoperability so we're not locked into one provider's protocol."
 
 ### Exercise
 
-Build your rate card:
-- Hourly rate: $__
-- Fixed-price: RAG demo $__, Agent workflow $__, Consultation $__/hr
-- Monthly retainer: $__
-- Minimum engagement: $__
-- Walk-away minimum (below which you say no): $__
+Pick 2 frameworks from the "Awareness" tier you haven't used. Spend 1 hour each reading their quickstart and building one small example. You don't need production depth — just enough to say "I've tried X and here's what I noticed" in an interview.
 
 ---
 
-## Phase 5 Done Checkpoint (Updated)
+## 5.16 Trending AI Repos to Follow
+
+Following the right repos keeps you current, gives you interview ammunition (mentioning a trending repo signals you're engaged), and feeds your content pipeline with topics to write about.
+
+### Must-watch repos (June 2026)
+
+These are the most influential repos by category:
+
+| Category | Repo | Stars | Why it matters |
+|----------|------|-------|---------------|
+| **Coding Agent** | openai/openai-agents-python | 27K | The official OpenAI multi-agent SDK — lightweight, provider-agnostic |
+| **Code Agent** | huggingface/smolagents | 28K | Code-as-action agents, sandboxed execution, barebones philosophy |
+| **Browser Agent** | browser-use | 86K | Make any website accessible to AI agents — huge for automation |
+| **Memory** | mem0ai/mem0 | 52K | Universal memory layer — persistent agent context across sessions |
+| **RAG** | infiniflow/ragflow | 77K | Deep document understanding + agent capabilities |
+| **GUI Agent Builder** | Langflow | 147K | Visual drag-and-drop — understand what no-code looks like |
+| **Agent OS** | Significant-Gravitas/AutoGPT | 183K | The original autonomous agent — still the most-starred |
+| **Multi-Agent** | facebookresearch/hyperagents | 2.6K | Self-referential self-improving agents (Meta Research, new) |
+| **Agents Course** | microsoft/ai-agents-for-beginners | 56K | Microsoft's 12-lesson course — great for structured learning |
+| **Agent Kit** | vudovn/ag-kit | 7.7K | Multi-agent templates with coordinator mode & persistent memory |
+| **Tool platform** | Dify | 136K | Production agentic workflow platform — full-stack |
+| **MCP Ecosystem** | modelcontextprotocol/servers | 15K+ | Official + community MCP servers — the interoperability layer |
+| **Visual builder** | Flowise | 52K | Low-code AI agent builder with drag-and-drop |
+
+### How to stay updated
+
+| Method | What to do | Time |
+|--------|-----------|------|
+| **GitHub trending** | Check github.com/trending/python weekly | 5 min/week |
+| **OSSInsight** | ossinsight.io/trending/ai — data-driven repo rankings | 5 min/week |
+| **Hacker News** | Search "Show HN: AI" + filter by recent | 10 min/week |
+| **Twitter/X** | Follow @langchain, @crewAI, @huggingface | Passive |
+| **Newsletter** | The Rundown AI, TLDR AI, AI Agent Insider | 10 min/read |
+
+### How to use repos in your job search
+
+1. **In interviews:** "I've been following the `browser-use` repo — it's solving the problem of making any website accessible to AI agents. I'm experimenting with it for automated testing of my RAG API."
+
+2. **On LinkedIn:** Share a reaction to a trending release. "Just read the smolagents v1.26 release — sandboxed code execution via E2B is a game-changer for agent safety. Anyone tried it?"
+
+3. **In your README:** Cite repos your project builds on. Mention specific versions.
+
+4. **As learning material:** Pick 1 trending repo per week, read its README and architecture doc, build one small example. In 4 weeks, you'll have 4 new talking points.
+
+### Exercise
+
+Star 10 repos from the table above. Set a recurring Friday 15-min calendar reminder: "Check GitHub trending + OSSInsight." Pick 1 repo and write a 200-word LinkedIn post about something interesting in its latest release. Schedule it for next week.
+
+---
+
+## Phase 5 Done Checkpoint
 
 Before declaring yourself ready to apply:
 
@@ -631,8 +704,12 @@ Before declaring yourself ready to apply:
 - [ ] First LinkedIn technical post published, 3 more scheduled
 - [ ] 1 certification completed and listed on LinkedIn
 - [ ] Joined 2 Dubai AI communities, sent 3+ networking messages
+- [ ] Can explain 6 major frameworks and when to use each
+- [ ] Following 10+ trending AI repos, starred them on GitHub
+- [ ] Written 1 LinkedIn post about a trending repo or framework comparison
+- [ ] Tried 2 unfamiliar frameworks from the awareness tier
 
-**Estimated time to checkpoint:** 22-28 hours over 2 weeks, plus ongoing applications.
+**Estimated time to checkpoint:** 26-32 hours over 2 weeks, plus ongoing applications.
 
 ---
 
@@ -640,7 +717,7 @@ Before declaring yourself ready to apply:
 
 You already run production systems on Hetzner with ChromaDB, FastAPI, LangGraph, and MCP. The gap isn't technical — it's that the output is scattered across a course repo and personal infra, not packaged as a portfolio.
 
-These 14 sections close that gap. At the end, a recruiter opens your profile and sees: "AI Agent Engineer" → "LangGraph, RAG, FastAPI, MCP" → "Live demo at rag-demo.apexpillar.tech" → "Open-source pipeline on GitHub" → "Published posts on LinkedIn" → "Portfolio at portfolio.apexpillar.tech."
+These 16 sections close that gap. At the end, a recruiter opens your profile and sees: "AI Agent Engineer" → "LangGraph, RAG, FastAPI, MCP" → "Live demo at rag-demo.apexpillar.tech" → "Open-source pipeline on GitHub" → "Published posts on LinkedIn" → "Portfolio at portfolio.apexpillar.tech."
 
 That's what converts. Not another course. Not another certification. A live, documented, production system.
 

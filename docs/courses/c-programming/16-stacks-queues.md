@@ -1,4 +1,4 @@
-﻿# Chapter 16: Stacks and Queues
+# Chapter 16: Stacks and Queues
 
 > **Previous:** [Linked Lists](./15-linked-lists.md) | **Next:** [The C Standard Library](./17-standard-library.md)
 

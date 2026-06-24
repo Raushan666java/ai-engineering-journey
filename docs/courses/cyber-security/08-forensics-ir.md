@@ -1,4 +1,4 @@
-﻿# Chapter 8: Forensics & Incident Response 
+# Chapter 8: Forensics & Incident Response 
 
 > **Prereq:** Chapter 7 (Cloud & Mobile) â€” modern forensics must account for cloud and mobile evidence sources.
 > **Next:** Chapter 9 (GRC) â€” incident findings feed into governance, risk, and compliance processes.

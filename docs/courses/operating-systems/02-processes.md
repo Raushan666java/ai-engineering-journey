@@ -1,4 +1,4 @@
-﻿# Chapter 2: Processes
+# Chapter 2: Processes
 
 **<< [Introduction to Operating Systems](./01-introduction.md)** | [**Next: CPU Scheduling**](./03-cpu-scheduling.md) >>
 

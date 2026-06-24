@@ -1,4 +1,4 @@
-﻿# Chapter 8: Planning
+# Chapter 8: Planning
 
 **Previous:** [Chapter 8: Uncertainty and Probabilistic Reasoning](08-uncertainty.md) | **Next:** [Chapter 9: Reasoning Under Uncertainty](09-uncertainty.md)
 

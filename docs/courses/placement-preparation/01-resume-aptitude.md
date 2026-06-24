@@ -1,4 +1,4 @@
-﻿# Resume Building, LinkedIn Optimization & Aptitude Crash Course
+# Resume Building, LinkedIn Optimization & Aptitude Crash Course
 
 > **Previous:** None (First Chapter) | **Next:** [Chapter 2: DSA Coding Problem Bank](./02-dsa-problem-bank.md)
 

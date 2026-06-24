@@ -1,4 +1,4 @@
-﻿# Chapter 11: Cloud Platforms
+# Chapter 11: Cloud Platforms
 
 > **Previous:** [SRE and Monitoring](./10-monitoring.md) | **Next:** [Monitoring and Logging](./12-monitoring-logging.md)
 

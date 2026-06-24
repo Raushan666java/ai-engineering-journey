@@ -1,4 +1,4 @@
-﻿# Chapter 1: Deterministic Finite Automata
+# Chapter 1: Deterministic Finite Automata
 
 > **Previous:** None | **Next:** [Nondeterministic Finite Automata](./02-nfa.md)
 

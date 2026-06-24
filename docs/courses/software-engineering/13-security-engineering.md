@@ -1,4 +1,4 @@
-﻿# Security Engineering
+# Security Engineering
 
 ## Learning Objectives
 

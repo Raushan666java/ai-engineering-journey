@@ -1,4 +1,4 @@
-﻿# Chapter 8: Functions
+# Chapter 8: Functions
 
 > **Previous:** [Strings](./07-strings.md) | **Next:** [Pointers](./09-pointers.md)
 

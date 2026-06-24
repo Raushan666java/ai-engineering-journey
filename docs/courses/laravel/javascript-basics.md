@@ -1,4 +1,4 @@
-﻿# Chapter: JavaScript Fundamentals
+# Chapter: JavaScript Fundamentals
 
 ---
 

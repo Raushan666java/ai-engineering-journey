@@ -1,4 +1,4 @@
-﻿# Chapter 3: Network Security
+# Chapter 3: Network Security
 
 > **Prereq:** Chapter 2 (Cryptography) â€” TLS, IPsec, and WPA2 rely on cryptographic algorithms.
 > **Next:** Chapter 4 (System Software Security) â€” host-based defenses complement network perimeter controls.

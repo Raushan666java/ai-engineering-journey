@@ -1,4 +1,4 @@
-﻿# Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform
+# Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform
 
 > **Previous:** [Case Study E-Commerce](./22-case-study-ecommerce.md) | **Next:** [Capstone](./24-capstone.md)
 

@@ -1,4 +1,4 @@
-﻿# Chapter 4: Pomodoro, Interleaving & the Feynman Technique
+# Chapter 4: Pomodoro, Interleaving & the Feynman Technique
 
 > **Prerequisites:** [Chapter 3: Active Recall & Spaced Repetition](./ch-03-active-recall-spaced-repetition.md) — Retrieval practice and spaced repetition systems.
 > **Next:** [Chapter 5: Memory Systems & Mnemonics](./ch-05-memory-systems.md) — Transform your memory with ancient and modern techniques.

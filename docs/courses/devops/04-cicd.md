@@ -1,4 +1,4 @@
-﻿# Chapter 4: CI/CD Pipelines
+# Chapter 4: CI/CD Pipelines
 
 > **Previous:** [Build Tools and Packaging](./03-build-tools.md) | **Next:** [Continuous Integration (CI)](./04-continuous-integration.md)
 

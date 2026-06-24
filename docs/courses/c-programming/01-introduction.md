@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to C
+# Chapter 1: Introduction to C
 
 > **Next:** [Variables and Data Types](./02-variables-datatypes.md)
 

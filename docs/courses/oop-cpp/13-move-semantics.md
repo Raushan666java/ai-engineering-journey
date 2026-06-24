@@ -1,4 +1,4 @@
-﻿# Chapter 13: Move Semantics
+# Chapter 13: Move Semantics
 
 > **Previous:** [12-smart-pointers](./12-smart-pointers.md) | **Next:** [14-lambdas](./14-lambdas.md)
 

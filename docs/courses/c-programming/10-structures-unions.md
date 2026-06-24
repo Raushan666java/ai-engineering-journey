@@ -1,4 +1,4 @@
-﻿# Chapter 10: Structures and Unions
+# Chapter 10: Structures and Unions
 
 > **Previous:** [Pointers](./09-pointers.md) | **Next:** [Dynamic Memory Allocation](./11-dma.md)
 

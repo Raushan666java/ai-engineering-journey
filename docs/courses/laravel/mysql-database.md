@@ -1,4 +1,4 @@
-﻿# MySQL & Database Design
+# MySQL & Database Design
 
 ---
 

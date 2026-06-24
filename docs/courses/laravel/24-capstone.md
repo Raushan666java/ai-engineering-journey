@@ -1,4 +1,4 @@
-﻿# Chapter 24: Capstone Project Ã¢â‚¬â€ AI-Powered Team Collaboration SaaS
+# Chapter 24: Capstone Project Ã¢â‚¬â€ AI-Powered Team Collaboration SaaS
 
 > **Previous:** [Case Study AI Content](./23-case-study-ai-content.md) | **Next:** [Multi-Agent Systems](./25-multi-agent-systems.md)
 

@@ -1,4 +1,4 @@
-﻿# Chapter 7: Normalization in Database Management Systems
+# Chapter 7: Normalization in Database Management Systems
 
 > **Previous:** [Chapter 6: Advanced SQL](./06-sql-advanced.md) | **Next:** [Chapter 8: Higher Normal Forms and Denormalization](./08-higher-nf.md)
 

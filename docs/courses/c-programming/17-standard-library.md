@@ -1,4 +1,4 @@
-﻿# Chapter 17: The C Standard Library
+# Chapter 17: The C Standard Library
 
 > **Previous:** [Stacks and Queues](./16-stacks-queues.md) | **Next:** [Advanced C](./18-advanced-c.md)
 

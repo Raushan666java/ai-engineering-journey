@@ -1,4 +1,4 @@
-﻿# Chapter 7: Infrastructure as Code (IaC)
+# Chapter 7: Infrastructure as Code (IaC)
 
 > **Previous:** [Kubernetes Basics](./07-kubernetes.md) | **Next:** [Kubernetes Advanced](./08-k8s-advanced.md)
 

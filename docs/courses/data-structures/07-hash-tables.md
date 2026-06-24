@@ -1,4 +1,4 @@
-﻿# Chapter 7: Hash Tables
+# Chapter 7: Hash Tables
 
 > **Previous:** [Chapter 6: Queues](./06-queues.md) | **Next:** [Binary Trees](./08-binary-trees.md)
 

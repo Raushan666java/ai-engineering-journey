@@ -1,4 +1,4 @@
-﻿# DSA Coding Problem Bank for Placement Interviews
+# DSA Coding Problem Bank for Placement Interviews
 
 > **Previous:** [Chapter 1: Resume Building, LinkedIn & Aptitude](./01-resume-aptitude.md) | **Next:** [Chapter 3: SQL Problem Bank](./03-sql-problem-bank.md)
 

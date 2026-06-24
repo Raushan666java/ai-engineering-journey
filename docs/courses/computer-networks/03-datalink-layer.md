@@ -1,4 +1,4 @@
-﻿# Chapter 3: The Data Link Layer
+# Chapter 3: The Data Link Layer
 
 > **Prerequisites:** [Chapter 2: Physical Layer](./02-physical-layer.md) â€” Bits and transmission media | **Next:** [Chapter 4: Medium Access Control](./04-mac.md) â€” From framing to channel sharing
 

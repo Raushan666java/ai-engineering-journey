@@ -1,4 +1,4 @@
-﻿# Mockito & Mocking Frameworks
+# Mockito & Mocking Frameworks
 > **Previous:** [JUnit 5](29-junit5.md) | **Next:** [Spring Boot Testing](31-spring-boot-test.md)
 
 Mockito is the most widely used mocking framework in the Java ecosystem. It allows you to create test doubles (mocks, spies) that isolate the unit under test from its dependencies, control the behaviour of those dependencies through stubbing, and verify that specific interactions occurred. This chapter covers everything from basic mock creation through advanced features like mocking static methods and constructors introduced in Mockito 3.x/4.x/5.x.

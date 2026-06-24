@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to DevOps
+# Chapter 1: Introduction to DevOps
 
 > **Next:** [Advanced Git](./02-git.md)
 

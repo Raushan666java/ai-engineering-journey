@@ -1,4 +1,4 @@
-﻿# Chapter 3: Constructors and Destructors
+# Chapter 3: Constructors and Destructors
 
 > **Previous:** [Classes and Objects](./02-classes-objects.md) | **Next:** [Inheritance](./04-inheritance.md)
 

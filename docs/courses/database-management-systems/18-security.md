@@ -1,4 +1,4 @@
-﻿# Chapter 18: Database Security
+# Chapter 18: Database Security
 
 > **Prev:** [Chapter 17 — Distributed DB](17-distributed-db.md) | **Next:** [Chapter 19 — Performance Tuning](19-performance-tuning.md)
 

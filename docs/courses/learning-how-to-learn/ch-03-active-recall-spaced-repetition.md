@@ -1,4 +1,4 @@
-﻿# Chapter 3: Active Recall & Spaced Repetition
+# Chapter 3: Active Recall & Spaced Repetition
 
 > **Prerequisites:** [Chapter 2: Practice, Mindset & Performance](./ch-02-practice-mindset.md) — Practice frameworks and illusions of competence.
 > **Next:** [Chapter 4: Pomodoro, Interleaving & the Feynman Technique](./ch-04-pomodoro-interleaving-feynman.md) — Three complementary weapons for deep understanding.

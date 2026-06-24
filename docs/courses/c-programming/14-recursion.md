@@ -1,4 +1,4 @@
-﻿# Chapter 14: Recursion
+# Chapter 14: Recursion
 
 > **Previous:** [The Preprocessor](./13-preprocessor.md) | **Next:** [Linked Lists](./15-linked-lists.md)
 

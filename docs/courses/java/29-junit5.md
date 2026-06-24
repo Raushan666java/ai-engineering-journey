@@ -1,4 +1,4 @@
-﻿# JUnit 5 Deep Dive
+# JUnit 5 Deep Dive
 > **Previous:** [Keycloak](28-keycloak.md) | **Next:** [Mockito](30-mockito.md)
 
 JUnit 5 is a complete rewrite of the most widely used testing framework in the Java ecosystem. Unlike JUnit 4, which was a single monolithic library, JUnit 5 is composed of three modules: JUnit Platform, JUnit Jupiter, and JUnit Vintage. This modular architecture enables IDEs, build tools, and custom engines to integrate cleanly while supporting both JUnit 5's new model and backward compatibility with JUnit 4 tests.

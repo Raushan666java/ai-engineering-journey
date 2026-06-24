@@ -1,4 +1,4 @@
-﻿# Chapter 17: Network Troubleshooting
+# Chapter 17: Network Troubleshooting
 
 ## Learning Objectives
 

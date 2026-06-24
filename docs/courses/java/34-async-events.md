@@ -1,4 +1,4 @@
-﻿# Async Processing & Spring Events
+# Async Processing & Spring Events
 > **Previous:** [Security and Performance Testing](33-security-perf-test.md) | **Next:** [RabbitMQ](35-rabbitmq.md)
 
 ## Learning Objectives

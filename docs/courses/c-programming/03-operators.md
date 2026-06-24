@@ -1,4 +1,4 @@
-﻿# Chapter 3: Operators in C --- In-Depth Reference
+# Chapter 3: Operators in C --- In-Depth Reference
 
 > **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Control Flow](./04-control-flow.md)
 

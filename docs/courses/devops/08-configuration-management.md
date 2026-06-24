@@ -1,4 +1,4 @@
-﻿# Chapter 8: Configuration Management with Ansible
+# Chapter 8: Configuration Management with Ansible
 
 > **Previous:** [Kubernetes Advanced](./08-k8s-advanced.md) | **Next:** [Continuous Delivery](./09-cicd.md)
 

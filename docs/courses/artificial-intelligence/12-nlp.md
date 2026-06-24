@@ -1,4 +1,4 @@
-﻿# Chapter 12: Natural Language Processing
+# Chapter 12: Natural Language Processing
 
 **Previous:** [Chapter 11: Reinforcement Learning](11-reinforcement-learning.md) | **Next:** [Chapter 13: Computer Vision](13-computer-vision.md)
 

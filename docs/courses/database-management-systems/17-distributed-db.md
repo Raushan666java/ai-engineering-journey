@@ -1,4 +1,4 @@
-﻿# Chapter 17: Distributed Database Systems
+# Chapter 17: Distributed Database Systems
 
 > **Prev:** [Chapter 16 â€” Redis](16-redis.md) | **Next:** [Chapter 18 â€” Security](18-security.md)
 

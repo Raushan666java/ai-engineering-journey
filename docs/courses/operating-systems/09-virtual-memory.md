@@ -1,4 +1,4 @@
-﻿# Chapter 9: Virtual Memory
+# Chapter 9: Virtual Memory
 
 **<< [Memory Management](./08-memory-management.md)** | [**Next: File Systems**](./10-file-systems.md) >>
 

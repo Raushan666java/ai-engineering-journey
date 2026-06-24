@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Computer Networks
+# Chapter 1: Introduction to Computer Networks
 
 > **Prerequisites:** None | **Next:** [Chapter 2: Physical Layer](./02-physical-layer.md) â€” From network models to transmission media
 

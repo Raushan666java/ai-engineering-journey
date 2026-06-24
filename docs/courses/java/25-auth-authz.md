@@ -1,4 +1,4 @@
-﻿# Authentication & Authorization
+# Authentication & Authorization
 > **Previous:** [Transactions](24-transactions.md) | **Next:** [JWT, OAuth2 & OIDC](26-jwt-oauth2.md)
 
 Security is not a feature Ã¢â‚¬â€ it is a property of the entire system. In any non-trivial application you must answer two questions about every request: *who is this?* (authentication) and *are they allowed to do that?* (authorization). Spring Security provides a comprehensive, extensible framework that addresses both concerns from the Servlet stack up through reactive applications.

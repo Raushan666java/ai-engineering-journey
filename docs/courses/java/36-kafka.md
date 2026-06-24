@@ -1,4 +1,4 @@
-﻿# Apache Kafka
+# Apache Kafka
 > **Previous:** [RabbitMQ](35-rabbitmq.md) | **Next:** [Event-Driven Architecture and Saga Pattern](37-event-driven-saga.md)
 
 ## Learning Objectives

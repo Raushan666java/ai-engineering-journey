@@ -1,4 +1,4 @@
-﻿# Chapter 27: Healthcare AI Agents
+# Chapter 27: Healthcare AI Agents
 
 > **Previous:** [Business Automation Agents](./26-business-automation-agents.md) | **Next:** [Finance](./28-finance.md)
 

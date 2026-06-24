@@ -1,4 +1,4 @@
-﻿# Chapter 9: Infrastructure as Code (Terraform)
+# Chapter 9: Infrastructure as Code (Terraform)
 
 > **Previous:** [Continuous Delivery](./09-cicd.md) | **Next:** [Configuration Management](./10-configuration-mgmt.md)
 

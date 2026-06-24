@@ -1,4 +1,4 @@
-﻿# HTML Fundamentals
+# HTML Fundamentals
 
 HyperText Markup Language (HTML) is the foundational language of the World Wide Web. It provides the structural skeleton upon which every web page is built. Before any CSS styling is applied, before any JavaScript adds interactivity, and before any server-side framework like Laravel generates dynamic content, HTML defines what a page *is* Ã¢â‚¬â€ its headings, paragraphs, images, links, forms, and semantic regions. This chapter provides a rigorous, ground-up treatment of HTML5, the current living standard. You will learn correct document structure, semantic markup, embedded media, tabular data, form construction with validation, accessibility (a11y) best practices, search-engine optimization (SEO) fundamentals, browser APIs, and finally how all of these concepts integrate with Laravel's Blade templating engine. Every code example is a complete, self-contained HTML5 document that you can save, open in a browser, and experiment with immediately.
 

@@ -1,4 +1,4 @@
-﻿# Chapter 18: Advanced C
+# Chapter 18: Advanced C
 
 > **Previous:** [The C Standard Library](./17-standard-library.md)
 

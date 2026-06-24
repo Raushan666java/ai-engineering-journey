@@ -1,4 +1,4 @@
-﻿# Project Management
+# Project Management
 
 ## Learning Objectives
 

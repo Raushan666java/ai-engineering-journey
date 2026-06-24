@@ -1,4 +1,4 @@
-﻿# Chapter 4: Continuous Integration (CI)
+# Chapter 4: Continuous Integration (CI)
 
 > **Previous:** [CI/CD Pipelines](./04-cicd.md) | **Next:** [Containerization with Docker](./05-containerization.md)
 

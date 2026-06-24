@@ -1,4 +1,4 @@
-﻿# Chapter 15: Concurrency
+# Chapter 15: Concurrency
 
 > **Previous:** [14-lambdas](./14-lambdas.md) | **Next:** [16-design-patterns](./16-design-patterns.md)
 

@@ -1,4 +1,4 @@
-﻿# Chapter 5: Polymorphism
+# Chapter 5: Polymorphism
 
 > **Previous:** [Inheritance](./04-inheritance.md) | **Next:** [Operator Overloading](./06-operator-overloading.md)
 

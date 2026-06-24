@@ -1,4 +1,4 @@
-﻿# Chapter 7: Templates
+# Chapter 7: Templates
 
 > **Previous:** [06-operator-overloading](./06-operator-overloading.md) | **Next:** [08-exceptions](./08-exceptions.md)
 

@@ -1,4 +1,4 @@
-﻿# Chapter 29: Education & EdTech
+# Chapter 29: Education & EdTech
 
 > **Previous:** [Finance](./28-finance.md) | **Next:** [Logistics](./30-logistics.md)
 

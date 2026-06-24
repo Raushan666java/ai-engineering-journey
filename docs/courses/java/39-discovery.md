@@ -1,4 +1,4 @@
-﻿# Service Discovery & Load Balancing
+# Service Discovery & Load Balancing
 > **Previous:** [Microservices Principles](38-microservices-principles.md) | **Next:** [API Gateway](40-gateway.md)
 
 ## Learning Objectives

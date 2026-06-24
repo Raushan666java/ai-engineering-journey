@@ -1,4 +1,4 @@
-﻿# Microservices Architecture Principles
+# Microservices Architecture Principles
 > **Previous:** [Event-Driven Architecture and Saga Pattern](37-event-driven-saga.md) | **Next:** [Service Discovery](39-discovery.md)
 
 ## Learning Objectives

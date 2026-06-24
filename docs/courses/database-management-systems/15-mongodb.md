@@ -1,4 +1,4 @@
-﻿# Chapter 15: MongoDB
+# Chapter 15: MongoDB
 
 > **Prev:** [Chapter 14: NoSQL](14-nosql.md) | **Next:** [Chapter 16: Redis](16-redis.md)
 

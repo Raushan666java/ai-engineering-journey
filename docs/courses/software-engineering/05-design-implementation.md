@@ -1,4 +1,4 @@
-﻿# Design and Implementation
+# Design and Implementation
 
 ## Learning Objectives
 

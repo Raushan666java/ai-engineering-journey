@@ -1,4 +1,4 @@
-﻿# Chapter 13: Socket Programming â€” Complete Reference
+# Chapter 13: Socket Programming â€” Complete Reference
 
 ## Learning Objectives
 

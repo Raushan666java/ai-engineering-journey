@@ -1,4 +1,4 @@
-﻿# Chapter 1: How Your Brain Learns
+# Chapter 1: How Your Brain Learns
 
 > **Prerequisites:** None
 > **Next:** [Chapter 2: Practice, Mindset & Performance](./ch-02-practice-mindset.md) — Build a practice framework rooted in cognitive science and replace illusions of competence with real learning.

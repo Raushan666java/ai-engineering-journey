@@ -1,4 +1,4 @@
-﻿# Chapter 18: Automation Patterns & Workflows
+# Chapter 18: Automation Patterns & Workflows
 
 > **Previous:** [Laravel Boost](./17-boost.md) | **Next:** [Architecture Patterns](./19-architecture-patterns.md)
 

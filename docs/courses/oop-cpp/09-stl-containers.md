@@ -1,4 +1,4 @@
-﻿# Chapter 9: STL Containers -- In-Depth Mastery
+# Chapter 9: STL Containers -- In-Depth Mastery
 
 > **Previous:** [08-exceptions](./08-exceptions.md) | **Next:** [10-stl-algorithms](./10-stl-algorithms.md)
 

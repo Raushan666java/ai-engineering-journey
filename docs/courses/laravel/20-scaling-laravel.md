@@ -1,4 +1,4 @@
-﻿# Chapter 20: Scaling Laravel
+# Chapter 20: Scaling Laravel
 
 ---
 ## Learning Objectives

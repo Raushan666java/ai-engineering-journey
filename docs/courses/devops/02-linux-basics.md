@@ -1,4 +1,4 @@
-﻿# Chapter 2: Linux Fundamentals for DevOps
+# Chapter 2: Linux Fundamentals for DevOps
 
 > **Previous:** [Advanced Git](./02-git.md) | **Next:** [Version Control with Git](./03-version-control.md)
 

@@ -1,4 +1,4 @@
-﻿# Chapter 2: Variables and Data Types
+# Chapter 2: Variables and Data Types
 
 > **Previous:** [Introduction to C](./01-introduction.md) | **Next:** [Operators](./03-operators.md)
 

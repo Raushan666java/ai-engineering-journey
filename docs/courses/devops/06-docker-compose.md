@@ -1,4 +1,4 @@
-﻿# Chapter 6: Docker Compose
+# Chapter 6: Docker Compose
 
 > **Previous:** [Docker](./05-docker.md) | **Next:** [Container Orchestration with Kubernetes](./06-orchestration.md)
 

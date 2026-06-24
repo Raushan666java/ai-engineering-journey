@@ -1,4 +1,4 @@
-﻿# API Gateway (Spring Cloud Gateway)
+# API Gateway (Spring Cloud Gateway)
 > **Previous:** [Service Discovery](39-discovery.md) | **Next:** [Resilience and Circuit Breakers](41-resilience.md)
 
 ## Learning Objectives

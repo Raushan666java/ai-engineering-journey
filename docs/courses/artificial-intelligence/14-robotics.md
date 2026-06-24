@@ -1,4 +1,4 @@
-﻿# Chapter 14: Robotics
+# Chapter 14: Robotics
 
 **Previous:** [Chapter 13: Computer Vision](13-computer-vision.md) | **Next:** [Chapter 15: Ethics of AI](15-ethics-ai.md)
 

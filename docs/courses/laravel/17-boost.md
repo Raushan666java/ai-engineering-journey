@@ -1,4 +1,4 @@
-﻿# Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development
+# Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development
 
 > **Previous:** [Search & RAG](./16-search-rag.md) | **Next:** [Automation Patterns](./18-automation-patterns.md)
 

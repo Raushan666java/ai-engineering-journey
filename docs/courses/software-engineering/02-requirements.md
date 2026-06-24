@@ -1,4 +1,4 @@
-﻿# Requirements Engineering
+# Requirements Engineering
 
 ## Learning Objectives
 

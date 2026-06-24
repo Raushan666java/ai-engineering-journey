@@ -1,4 +1,4 @@
-﻿# Keycloak & Identity Federation
+# Keycloak & Identity Federation
 > **Previous:** [Method Security, CORS & CSRF](27-method-cors-csrf.md) | **Next:** [JUnit 5](29-junit5.md)
 
 Keycloak is an open-source identity and access management (IAM) platform that provides authentication, authorization, single sign-on (SSO), social login, user federation, and identity brokering Ã¢â‚¬â€ all behind a unified administration console.

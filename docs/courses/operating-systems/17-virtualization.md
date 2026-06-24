@@ -1,4 +1,4 @@
-﻿# Chapter 17: Virtualization
+# Chapter 17: Virtualization
 
 **<< [Security](./16-security.md)** | [**Next: Case Studies**](./18-case-studies.md) >>
 

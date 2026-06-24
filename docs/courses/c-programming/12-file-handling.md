@@ -1,4 +1,4 @@
-﻿# Chapter 12: File Handling
+# Chapter 12: File Handling
 
 > **Previous:** [Dynamic Memory Allocation](./11-dma.md) | **Next:** [The Preprocessor](./13-preprocessor.md)
 

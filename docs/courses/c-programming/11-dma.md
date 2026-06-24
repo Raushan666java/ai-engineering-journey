@@ -1,4 +1,4 @@
-﻿# Chapter 11: Dynamic Memory Allocation
+# Chapter 11: Dynamic Memory Allocation
 
 > **Previous:** [Structures and Unions](./10-structures-unions.md) | **Next:** [File Handling](./12-file-handling.md)
 

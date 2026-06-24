@@ -1,4 +1,4 @@
-﻿# Chapter 12: Indexing
+# Chapter 12: Indexing
 
 > **Prev:** [Chapter 11: Recovery System](11-recovery.md) | **Next:** [Chapter 13: Query Processing](13-query-processing.md)
 

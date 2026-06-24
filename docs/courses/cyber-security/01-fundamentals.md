@@ -1,4 +1,4 @@
-﻿# Chapter 1: Security Fundamentals
+# Chapter 1: Security Fundamentals
 
 > **Prereq:** None — this chapter introduces core security concepts.
 > **Next:** Chapter 2 (Cryptography & TLS) — encryption and PKI build on the CIA triad.

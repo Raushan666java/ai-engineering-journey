@@ -1,4 +1,4 @@
-﻿# Chapter 18: Capstone Project
+# Chapter 18: Capstone Project
 
 > **Previous:** [SRE Principles](./17-sre.md)
 

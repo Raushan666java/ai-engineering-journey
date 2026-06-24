@@ -1,4 +1,4 @@
-﻿# Chapter 15: Database DevOps
+# Chapter 15: Database DevOps
 
 > **Previous:** [DevSecOps](./14-devsecops.md) | **Next:** [Container Networking](./16-networking.md)
 

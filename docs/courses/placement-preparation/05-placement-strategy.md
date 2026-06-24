@@ -1,4 +1,4 @@
-﻿# 05 â€” Placement Season Strategy
+# 05 â€” Placement Season Strategy
 
 > **Previous:** [04 — Company-Specific Preparation](04-company-specific.md)  
 > **Next:** [06 — HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)

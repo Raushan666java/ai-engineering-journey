@@ -1,4 +1,4 @@
-﻿# Chapter 4: System & Software Security
+# Chapter 4: System & Software Security
 
 > **Prereq:** Chapter 3 (Network Security) â€” network perimeter controls limit what reaches the host; this chapter assumes that baseline.
 > **Next:** Chapter 5 (Web Security) â€” web applications depend on the OS and software security discussed here.

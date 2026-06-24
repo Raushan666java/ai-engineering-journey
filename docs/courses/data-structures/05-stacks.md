@@ -1,4 +1,4 @@
-﻿# Chapter 5: Stacks
+# Chapter 5: Stacks
 
 > **Previous:** [Chapter 4: Doubly Linked List](./04-doubly-linked-list.md) | **Next:** [Queues](./06-queues.md)
 

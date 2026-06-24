@@ -1,4 +1,4 @@
-﻿# Architectural Design
+# Architectural Design
 
 ## Learning Objectives
 

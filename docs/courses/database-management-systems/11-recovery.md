@@ -1,4 +1,4 @@
-﻿# Chapter 11: Recovery System
+# Chapter 11: Recovery System
 
 > **Previous:** [Chapter 10: Concurrency Control](./10-concurrency.md) | **Next:** [Chapter 12: Indexing](./12-indexing.md)
 

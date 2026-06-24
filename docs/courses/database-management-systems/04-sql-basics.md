@@ -1,4 +1,4 @@
-﻿# Chapter 4: SQL Basics
+# Chapter 4: SQL Basics
 
 > **Previous:** [Chapter 3: The Relational Model](./03-relational-model.md) | **Next:** [Chapter 5: SQL Joins and Subqueries](./05-sql-joins.md)
 

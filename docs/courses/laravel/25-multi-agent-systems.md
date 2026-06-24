@@ -1,4 +1,4 @@
-﻿# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
+# Chapter 25: Multi-Agent Systems & Orchestration with Laravel
 
 > **Previous:** [Capstone](./24-capstone.md) | **Next:** [Business Automation Agents](./26-business-automation-agents.md)
 

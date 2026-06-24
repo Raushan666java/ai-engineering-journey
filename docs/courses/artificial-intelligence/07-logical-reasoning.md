@@ -1,4 +1,4 @@
-﻿# Chapter 7: Logical Reasoning and Inference
+# Chapter 7: Logical Reasoning and Inference
 
 **Previous:** [Chapter 6: First-Order Logic and Inference](06-fol.md) | **Next:** [Chapter 8: Uncertainty in AI](08-uncertainty.md)
 

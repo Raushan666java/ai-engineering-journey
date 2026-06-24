@@ -1,4 +1,4 @@
-﻿# Chapter 5: Ethernet Switching
+# Chapter 5: Ethernet Switching
 
 > **Prerequisites:** [Chapter 4: Medium Access Control](./04-mac.md) â€” MAC protocols and CSMA/CD | **Next:** [Chapter 6: Network Layer](./06-network-layer.md) â€” From switching to IP routing
 

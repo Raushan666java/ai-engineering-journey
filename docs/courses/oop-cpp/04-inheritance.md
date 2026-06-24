@@ -1,4 +1,4 @@
-﻿# Chapter 4: Inheritance
+# Chapter 4: Inheritance
 
 > **Previous:** [Constructors](./03-constructors.md) | **Next:** [Polymorphism](./05-polymorphism.md)
 

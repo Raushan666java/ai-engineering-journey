@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Applied AI
+# Chapter 1: Introduction to Applied AI
 
 > **Prerequisite:** None  
 > **Next Chapter:** [02 - LangChain & LLM Orchestration](./02-langchain.md)

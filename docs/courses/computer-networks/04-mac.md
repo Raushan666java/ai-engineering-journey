@@ -1,4 +1,4 @@
-﻿# Chapter 4: Medium Access Control (MAC)
+# Chapter 4: Medium Access Control (MAC)
 
 > **Prerequisites:** [Chapter 3: Data Link Layer](./03-datalink-layer.md) — Framing and error control | **Next:** [Chapter 5: Ethernet & Switching](./05-ethernet-switching.md) — From MAC protocols to switched networks
 

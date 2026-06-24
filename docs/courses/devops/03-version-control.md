@@ -1,4 +1,4 @@
-﻿# Chapter 3: Version Control with Git
+# Chapter 3: Version Control with Git
 
 > **Previous:** [Linux Fundamentals](./02-linux-basics.md) | **Next:** [Build Tools and Packaging](./03-build-tools.md)
 

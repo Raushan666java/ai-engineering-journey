@@ -1,4 +1,4 @@
-﻿# Agile Methodologies
+# Agile Methodologies
 
 ## Learning Objectives
 

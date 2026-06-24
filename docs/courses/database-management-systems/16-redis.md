@@ -1,4 +1,4 @@
-﻿# Chapter 16: Redis â€” In-Memory Data Store
+# Chapter 16: Redis â€” In-Memory Data Store
 
 > **Prev:** [Chapter 15 â€” MongoDB](15-mongodb.md) | **Next:** [Chapter 17 â€” Distributed DB](17-distributed-db.md)
 

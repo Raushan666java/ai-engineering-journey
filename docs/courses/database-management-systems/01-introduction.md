@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Database Management Systems
+# Chapter 1: Introduction to Database Management Systems
 
 ## Learning Objectives
 

@@ -1,4 +1,4 @@
-﻿# Chapter 5: Containerization with Docker
+# Chapter 5: Containerization with Docker
 
 > **Previous:** [Continuous Integration (CI)](./04-continuous-integration.md) | **Next:** [Docker](./05-docker.md)
 

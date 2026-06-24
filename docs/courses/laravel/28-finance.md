@@ -1,4 +1,4 @@
-﻿# Chapter 28: Finance & FinTech Agents
+# Chapter 28: Finance & FinTech Agents
 
 > **Previous:** [Healthcare](./27-healthcare.md) | **Next:** [Education](./29-education.md)
 

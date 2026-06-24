@@ -1,4 +1,4 @@
-﻿# Chapter 13: I/O Systems
+# Chapter 13: I/O Systems
 
 **<< [Secondary Storage](./12-secondary-storage.md)** | [**Next: The Linux Kernel**](./14-linux-kernel.md) >>
 

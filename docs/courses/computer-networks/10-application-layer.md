@@ -1,4 +1,4 @@
-﻿# Chapter 10: The Application Layer â€” Complete Reference
+# Chapter 10: The Application Layer â€” Complete Reference
 
 > **GFG/Javatpoint Depth â€” Comprehensive Coverage of Application Layer Protocols, Architectures, Implementations, and Interview Corner**
 

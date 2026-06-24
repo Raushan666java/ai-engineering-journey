@@ -1,4 +1,4 @@
-﻿# Resilience & Circuit Breakers (Resilience4j)
+# Resilience & Circuit Breakers (Resilience4j)
 > **Previous:** [API Gateway](40-gateway.md) | **Next:** [Configuration and Cloud Config](42-config.md)
 
 ## Learning Objectives

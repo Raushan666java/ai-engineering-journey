@@ -1,4 +1,4 @@
-﻿# Chapter 8: Exception Handling
+# Chapter 8: Exception Handling
 
 > **Previous:** [07-templates](./07-templates.md) | **Next:** [09-stl-containers](./09-stl-containers.md)
 

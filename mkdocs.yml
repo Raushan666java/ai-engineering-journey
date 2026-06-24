@@ -110,6 +110,16 @@ nav:
   - "📚 AI/ML Study Portal": ai-ml-study.html
   - "🗺️ Roadmap": roadmap.md
   - "🔥 Trending": trending.md
+  - "🤖 AI Agent Engineer":
+    - Overview: courses/ai-agent-engineer/00-index.md
+    - Phase 0 - Backend Hardening: courses/ai-agent-engineer/01-phase0-backend-hardening.md
+    - Phase 1 - Python FastAPI Async: courses/ai-agent-engineer/02-phase1-python-fastapi-async.md
+    - Phase 2 - LLM RAG Theory: courses/ai-agent-engineer/03-phase2-llm-rag-theory.md
+    - Phase 3 - Agents LangGraph MCP: courses/ai-agent-engineer/04-phase3-agents-langgraph-mcp.md
+    - Phase 4 - Production Hardening: courses/ai-agent-engineer/05-phase4-production-hardening.md
+    - Phase 5 - Portfolio & Positioning: courses/ai-agent-engineer/06-phase5-portfolio-positioning.md
+    - Day-by-Day Plan: courses/ai-agent-engineer/07-day-by-day-plan.md
+    - Job Search Playbook: courses/ai-agent-engineer/08-job-search-playbook.md
   - "🤖 AI Engineering":
     - Overview: ai-engineering-from-scratch/README.md
     - About: references/ai-engineering/about.md

@@ -1,4 +1,4 @@
-﻿# Chapter 2: Cryptography
+# Chapter 2: Cryptography
 
 > **Prereq:** Chapter 1 (Security Fundamentals) â€” cryptography provides the mathematical controls for achieving CIA goals.
 > **Next:** Chapter 3 (Network Security) â€” protocols like TLS, IPsec, and SSH depend on the primitives defined here.

@@ -1,4 +1,4 @@
-﻿# Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform
+# Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform
 
 > **Previous:** [System Design](./21-system-design-scale.md) | **Next:** [Case Study AI Content](./23-case-study-ai-content.md)
 

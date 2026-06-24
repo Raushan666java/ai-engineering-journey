@@ -1,4 +1,4 @@
-﻿# Chapter 6: Procrastination, Habits & Deep Work
+# Chapter 6: Procrastination, Habits & Deep Work
 
 > **Prerequisites:** [Chapter 5: Memory Systems & Mnemonics](./ch-05-memory-systems.md) — Memory techniques for encoding and retrieval.
 > **Next:** [Chapter 7: DSA & Coding Interview Prep](./ch-07-dsa-coding-interview.md) — Apply all learning techniques to coding interview preparation.

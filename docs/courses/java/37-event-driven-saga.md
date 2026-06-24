@@ -1,4 +1,4 @@
-﻿# Event-Driven Architecture & SAGA
+# Event-Driven Architecture & SAGA
 > **Previous:** [Kafka](36-kafka.md) | **Next:** [Microservices Principles](38-microservices-principles.md)
 
 ## Learning Objectives

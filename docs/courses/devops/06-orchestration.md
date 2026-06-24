@@ -1,4 +1,4 @@
-﻿# Chapter 6: Container Orchestration with Kubernetes
+# Chapter 6: Container Orchestration with Kubernetes
 
 > **Previous:** [Docker Compose](./06-docker-compose.md) | **Next:** [Kubernetes Basics](./07-kubernetes.md)
 

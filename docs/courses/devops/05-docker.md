@@ -1,4 +1,4 @@
-﻿# Chapter 5: Docker
+# Chapter 5: Docker
 
 > **Previous:** [Containerization with Docker](./05-containerization.md) | **Next:** [Docker Compose](./06-docker-compose.md)
 

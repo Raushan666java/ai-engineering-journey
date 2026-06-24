@@ -1,4 +1,4 @@
-﻿# Chapter 16: Security
+# Chapter 16: Security
 
 **<< [Shell Scripting](./15-shell-scripting.md)** | [**Next: Virtualization and Cloud Computing**](./17-virtualization.md) >>
 

@@ -1,4 +1,4 @@
-﻿# Chapter 4: Control Flow
+# Chapter 4: Control Flow
 
 > **Previous:** [Operators](./03-operators.md) | **Next:** [Loops](./05-loops.md)
 

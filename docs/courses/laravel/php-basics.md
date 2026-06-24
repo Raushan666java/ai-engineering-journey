@@ -1,4 +1,4 @@
-﻿# Chapter 0: PHP Foundations for Laravel
+# Chapter 0: PHP Foundations for Laravel
 
 ---
 

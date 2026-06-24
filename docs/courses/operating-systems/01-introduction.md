@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Operating Systems
+# Chapter 1: Introduction to Operating Systems
 
 [**Next: Processes**](./02-processes.md) >>
 

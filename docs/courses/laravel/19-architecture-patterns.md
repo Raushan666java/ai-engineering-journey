@@ -1,4 +1,4 @@
-﻿# Chapter 19: Laravel Application Architecture Patterns
+# Chapter 19: Laravel Application Architecture Patterns
 
 > **Previous:** [Automation Patterns](./18-automation-patterns.md) | **Next:** [Scaling Laravel](./20-scaling-laravel.md)
 

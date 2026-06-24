@@ -1,4 +1,4 @@
-﻿# Quality Management
+# Quality Management
 
 ## Learning Objectives
 

@@ -1,4 +1,4 @@
-﻿# Chapter 16: Cloud Networking
+# Chapter 16: Cloud Networking
 
 ## Learning Objectives
 

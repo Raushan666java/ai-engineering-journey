@@ -1,4 +1,4 @@
-﻿# Chapter 12: Wireless Networks (Extended)
+# Chapter 12: Wireless Networks (Extended)
 
 ## Learning Objectives
 

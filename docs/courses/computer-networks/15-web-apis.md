@@ -1,4 +1,4 @@
-﻿# Chapter 15: Web APIs and Application Protocols
+# Chapter 15: Web APIs and Application Protocols
 
 ## Learning Objectives
 

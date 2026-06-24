@@ -1,4 +1,4 @@
-﻿# Chapter 7: Routing
+# Chapter 7: Routing
 
 > **Prerequisites:** [Chapter 6: Network Layer](./06-network-layer.md) â€” IP addressing and forwarding | **Next:** [Chapter 8: Transport Layer](./08-transport-layer.md) â€” From routing to end-to-end delivery
 

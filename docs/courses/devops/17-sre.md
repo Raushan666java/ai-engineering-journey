@@ -1,4 +1,4 @@
-﻿# Chapter 17: SRE Principles
+# Chapter 17: SRE Principles
 
 > **Previous:** [Container Networking](./16-networking.md) | **Next:** [Capstone Project](./18-capstone.md)
 

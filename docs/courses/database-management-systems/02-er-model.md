@@ -1,4 +1,4 @@
-﻿# Chapter 2: Entity-Relationship Model
+# Chapter 2: Entity-Relationship Model
 ```
 > **Previous:** [Chapter 1: Introduction to Database Systems](./01-introduction.md) | **Next:** [Chapter 3: The Relational Model](./03-relational-model.md)
 ```

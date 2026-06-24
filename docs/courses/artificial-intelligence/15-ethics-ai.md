@@ -1,4 +1,4 @@
-﻿# Chapter 15: Ethics of Artificial Intelligence
+# Chapter 15: Ethics of Artificial Intelligence
 
 **Previous:** [Chapter 14: Robotics](14-robotics.md) | **Next:** [Chapter 16: Expert Systems](16-expert-systems.md)
 

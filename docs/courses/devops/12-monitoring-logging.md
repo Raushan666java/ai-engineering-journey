@@ -1,4 +1,4 @@
-﻿# Chapter 12: Monitoring and Logging
+# Chapter 12: Monitoring and Logging
 
 > **Previous:** [Cloud Platforms](./11-cloud-platforms.md) | **Next:** [Observability](./13-observability.md)
 

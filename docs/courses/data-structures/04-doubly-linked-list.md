@@ -1,4 +1,4 @@
-﻿# Chapter 4: Doubly Linked List and Circular Linked List
+# Chapter 4: Doubly Linked List and Circular Linked List
 
 > **Previous:** [Chapter 3: Singly Linked List](./03-singly-linked-list.md) | **Next:** [Stacks](./05-stacks.md)
 

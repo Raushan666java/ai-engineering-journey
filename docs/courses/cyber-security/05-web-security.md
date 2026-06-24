@@ -1,4 +1,4 @@
-﻿# Chapter 5: Web Security
+# Chapter 5: Web Security
 
 > **Prereq:** Chapter 4 (System & Software Security) — web apps build on OS foundations.
 > **Next:** Chapter 6 (IAM) — web authentication relies on secure identity management.

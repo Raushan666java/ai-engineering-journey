@@ -1,4 +1,4 @@
-﻿# Chapter 18: Modern Networking â€” Complete Reference
+# Chapter 18: Modern Networking â€” Complete Reference
 
 > **GFG/Javatpoint Depth â€” IPv6, IoT, 4Gâ†’5Gâ†’6G, Satellite Internet, Network Automation, Zero Trust, AI/ML in Networking, Quantum Networking, Edge Computing, Network Observability**
 

@@ -1,4 +1,4 @@
-﻿# Chapter 3: Build Tools and Packaging
+# Chapter 3: Build Tools and Packaging
 
 > **Previous:** [Version Control with Git](./03-version-control.md) | **Next:** [CI/CD Pipelines](./04-cicd.md)
 

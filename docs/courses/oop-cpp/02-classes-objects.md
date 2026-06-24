@@ -1,4 +1,4 @@
-﻿# Chapter 2: Classes and Objects
+# Chapter 2: Classes and Objects
 
 > **Previous:** [Introduction](./01-introduction.md) | **Next:** [Constructors](./03-constructors.md)
 

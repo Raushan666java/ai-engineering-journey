@@ -1,4 +1,4 @@
-﻿# Chapter 6: Identity & Access Management
+# Chapter 6: Identity & Access Management
 
 > **Prereq:** Chapter 5 (Web Security) â€” OAuth 2.0 and SAML secure web authentication.
 > **Next:** Chapter 7 (Cloud & Mobile Security) â€” cloud IAM extends enterprise identity to cloud providers.

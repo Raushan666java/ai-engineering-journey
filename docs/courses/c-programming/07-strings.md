@@ -1,4 +1,4 @@
-﻿# Chapter 7: Strings
+# Chapter 7: Strings
 
 > **Previous:** [Arrays](./06-arrays.md) | **Next:** [Functions](./08-functions.md)
 

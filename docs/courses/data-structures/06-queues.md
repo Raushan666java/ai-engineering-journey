@@ -1,4 +1,4 @@
-﻿# Chapter 6: Queues
+# Chapter 6: Queues
 
 > **Previous:** [Chapter 5: Stacks](./05-stacks.md) | **Next:** [Hash Tables](./07-hash-tables.md)
 

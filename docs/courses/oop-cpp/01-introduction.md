@@ -1,4 +1,4 @@
-﻿# Chapter 1: Introduction to Object-Oriented Programming
+# Chapter 1: Introduction to Object-Oriented Programming
 
 > **Previous:** None | **Next:** [Classes and Objects](./02-classes-objects.md)
 

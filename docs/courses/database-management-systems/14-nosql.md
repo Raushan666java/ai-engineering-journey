@@ -1,4 +1,4 @@
-﻿# Chapter 14: NoSQL Databases
+# Chapter 14: NoSQL Databases
 
 > **Prev:** [Chapter 13—Query Processing](13-query-processing.md) | **Next:** [Chapter 15—MongoDB](15-mongodb.md)
 

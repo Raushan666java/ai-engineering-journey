@@ -1,4 +1,4 @@
-﻿# Testcontainers & Integration Testing
+# Testcontainers & Integration Testing
 > **Previous:** [Spring Boot Testing](31-spring-boot-test.md) | **Next:** [Security & Performance Testing](33-security-perf-test.md)
 
 ## Learning Objectives

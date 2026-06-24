@@ -1,4 +1,4 @@
-﻿# Chapter 5: Memory Systems & Mnemonics
+# Chapter 5: Memory Systems & Mnemonics
 
 > **Prerequisites:** [Chapter 4: Pomodoro, Interleaving & the Feynman Technique](./ch-04-pomodoro-interleaving-feynman.md) — Focus discipline and comprehension checks.
 > **Next:** [Chapter 6: Procrastination, Habits & Deep Work](./ch-06-procrastination-habits-deep-work.md) — Overcome the emotional barriers to effective learning.

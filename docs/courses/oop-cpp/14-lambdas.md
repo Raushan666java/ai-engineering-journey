@@ -1,4 +1,4 @@
-﻿# Chapter 14: Lambdas (Deep Dive)
+# Chapter 14: Lambdas (Deep Dive)
 
 > **Previous:** [13-move-semantics](./13-move-semantics.md) | **Next:** [15-concurrency](./15-concurrency.md)
 

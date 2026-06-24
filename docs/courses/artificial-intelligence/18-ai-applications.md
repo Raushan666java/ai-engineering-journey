@@ -1,4 +1,4 @@
-﻿# Chapter 18: Applications of Artificial Intelligence
+# Chapter 18: Applications of Artificial Intelligence
 
 **Previous:** [Chapter 17: Modern Artificial Intelligence](17-modern-ai.md)
 

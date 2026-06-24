@@ -1,4 +1,4 @@
-﻿
+
 # Chapter 13: Computer Vision
 
 **Previous:** [Chapter 12: Natural Language Processing](12-nlp.md) | **Next:** [Chapter 14: Robotics](14-robotics.md)

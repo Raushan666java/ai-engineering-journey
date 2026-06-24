@@ -1,4 +1,4 @@
-﻿# 07 â€” Company-Wise Previous Year Questions
+# 07 â€” Company-Wise Previous Year Questions
 
 > **Previous:** [06 â€” HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)  
 > **Next:** None (Last Chapter)

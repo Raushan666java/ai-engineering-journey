@@ -1,4 +1,4 @@
-﻿# Chapter 4: Threads
+# Chapter 4: Threads
 
 **<< [CPU Scheduling](./03-cpu-scheduling.md)** | [**Next: Process Synchronization**](./05-synchronization.md) >>
 

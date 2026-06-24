@@ -1,4 +1,4 @@
-﻿
+
 # Chapter 9: Governance, Risk & Compliance (GRC)
 
 > **Prereq:** Chapter 8 (Forensics & IR) â€” incident findings feed into risk assessments and compliance reporting.

@@ -1,4 +1,4 @@
-﻿# Chapter 2: Advanced Git
+# Chapter 2: Advanced Git
 
 > **Previous:** [Introduction to DevOps](./01-introduction.md) | **Next:** [Linux Fundamentals](./02-linux-basics.md)
 

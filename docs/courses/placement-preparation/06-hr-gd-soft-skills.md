@@ -1,4 +1,4 @@
-﻿# HR Interview, Group Discussion & Soft Skills â€” Complete Campus Placement Guide
+# HR Interview, Group Discussion & Soft Skills â€” Complete Campus Placement Guide
 
 > **Previous:** [05 â€” Placement Season Strategy](05-placement-strategy.md)  
 > **Next:** [07 â€” Company-Wise Previous Year Questions](07-company-wise-pyqs.md)

@@ -1,4 +1,4 @@
-﻿# Chapter 6: Operator Overloading
+# Chapter 6: Operator Overloading
 
 > **Previous:** [Polymorphism](./05-polymorphism.md) | **Next:** [Templates](./07-templates.md)
 

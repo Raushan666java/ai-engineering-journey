@@ -1,4 +1,4 @@
-﻿# Chapter 11: Network Security
+# Chapter 11: Network Security
 
 ## Learning Objectives
 

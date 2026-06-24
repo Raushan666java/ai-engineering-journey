@@ -1,4 +1,4 @@
-﻿# Security Testing & Performance Testing
+# Security Testing & Performance Testing
 > **Previous:** [Testcontainers](32-testcontainers.md) | **Next:** [Async and Events](34-async-events.md)
 
 ## Learning Objectives

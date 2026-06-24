@@ -1,4 +1,4 @@
-﻿# RabbitMQ
+# RabbitMQ
 > **Previous:** [Async and Events](34-async-events.md) | **Next:** [Kafka](36-kafka.md)
 
 ## Learning Objectives

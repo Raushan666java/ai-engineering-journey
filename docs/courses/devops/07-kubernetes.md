@@ -1,4 +1,4 @@
-﻿# Chapter 7: Kubernetes Basics
+# Chapter 7: Kubernetes Basics
 
 > **Previous:** [Container Orchestration with Kubernetes](./06-orchestration.md) | **Next:** [Infrastructure as Code (IaC)](./07-infrastructure-as-code.md)
 

@@ -1,4 +1,4 @@
-﻿# Chapter 8: Kubernetes Advanced
+# Chapter 8: Kubernetes Advanced
 
 > **Previous:** [Infrastructure as Code (IaC)](./07-infrastructure-as-code.md) | **Next:** [Configuration Management with Ansible](./08-configuration-management.md)
 

@@ -1,4 +1,4 @@
-﻿# Chapter 16: Container Networking
+# Chapter 16: Container Networking
 
 > **Previous:** [Database DevOps](./15-database-devops.md) | **Next:** [SRE Principles](./17-sre.md)
 

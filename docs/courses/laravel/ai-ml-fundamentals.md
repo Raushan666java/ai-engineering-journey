@@ -1,4 +1,4 @@
-﻿# Chapter P6: AI/ML Fundamentals & Laravel Integration
+# Chapter P6: AI/ML Fundamentals & Laravel Integration
 
 ---
 

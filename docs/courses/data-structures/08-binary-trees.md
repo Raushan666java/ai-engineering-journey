@@ -1,4 +1,4 @@
-﻿# Chapter 8: Binary Trees
+# Chapter 8: Binary Trees
 
 > **Previous:** [Chapter 7: Hash Tables](./07-hash-tables.md) | **Next:** [Binary Search Trees](./09-bst.md)
 

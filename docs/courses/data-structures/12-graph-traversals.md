@@ -1,4 +1,4 @@
-﻿# Chapter 12: Graph Traversals
+# Chapter 12: Graph Traversals
 
 **Prev:** [Chapter 11: Graphs](11-graphs.md) | **Next:** [Chapter 13: AVL Trees](13-avl.md)
 

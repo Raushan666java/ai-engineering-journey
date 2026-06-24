@@ -1,4 +1,4 @@
-﻿# JWT, OAuth2 & OIDC
+# JWT, OAuth2 & OIDC
 > **Previous:** [Authentication & Authorization](25-auth-authz.md) | **Next:** [Method Security, CORS & CSRF](27-method-cors-csrf.md)
 
 Modern applications rarely authenticate against a single database. Users log in via Google, GitHub, or corporate identity providers. APIs authenticate via signed tokens rather than session cookies. Microservices trust claims embedded in JWTs rather than querying a central auth service.

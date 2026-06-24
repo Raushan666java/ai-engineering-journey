@@ -1,4 +1,4 @@
-﻿# Learning How to Learn
+# Learning How to Learn
 
 > **Master the universal meta-skill: accelerate learning across every course in this repository.**
 > 10 chapters · 162 Q&As · 10 self-assessment quizzes · Mermaid diagrams · Practical techniques grounded in cognitive science.

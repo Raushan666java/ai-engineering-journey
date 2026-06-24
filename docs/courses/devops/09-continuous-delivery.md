@@ -1,4 +1,4 @@
-﻿# Chapter 9: Continuous Delivery & Deployment (CD)
+# Chapter 9: Continuous Delivery & Deployment (CD)
 
 > **Previous:** [Configuration Management](./08-configuration-management.md) | **Next:** [Infrastructure as Code (Terraform)](./09-iac.md)
 

@@ -1,4 +1,4 @@
-﻿# Chapter 5: SQL Joins and Subqueries
+# Chapter 5: SQL Joins and Subqueries
 
 > **Previous:** [Chapter 4: SQL Basics](./04-sql-basics.md) | **Next:** [Chapter 6: Advanced SQL](./06-sql-advanced.md)
 

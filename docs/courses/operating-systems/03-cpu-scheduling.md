@@ -1,4 +1,4 @@
-﻿# Chapter 3: CPU Scheduling
+# Chapter 3: CPU Scheduling
 
 **<< [Processes](./02-processes.md)** | [**Next: Threads**](./04-threads.md) >>
 

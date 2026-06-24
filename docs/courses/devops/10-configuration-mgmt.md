@@ -1,4 +1,4 @@
-﻿# Chapter 10: Configuration Management
+# Chapter 10: Configuration Management
 
 > **Previous:** [Infrastructure as Code (Terraform)](./09-iac.md) | **Next:** [SRE and Monitoring](./10-monitoring.md)
 

@@ -1,4 +1,4 @@
-﻿# Chapter 19: Performance Tuning
+# Chapter 19: Performance Tuning
 
 > **Prev:** [Chapter 18: Database Security](18-security.md) | **Next:** *(Last Chapter)*
 

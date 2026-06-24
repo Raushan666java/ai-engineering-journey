@@ -1,4 +1,4 @@
-﻿# Chapter 5: Process Synchronization
+# Chapter 5: Process Synchronization
 
 **<< [Threads](./04-threads.md)** | [**Next: Semaphores and Monitors**](./06-semaphores-monitors.md) >>
 

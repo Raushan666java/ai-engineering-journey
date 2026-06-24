@@ -1,4 +1,4 @@
-﻿# Chapter 11: File System Implementation
+# Chapter 11: File System Implementation
 
 **<< [File Systems](./10-file-systems.md)** | [**Next: Secondary Storage**](./12-secondary-storage.md) >>
 

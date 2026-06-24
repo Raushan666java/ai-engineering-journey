@@ -1,4 +1,4 @@
-﻿# Chapter 26: Business Automation Agents
+# Chapter 26: Business Automation Agents
 
 > **Previous:** [Multi-Agent Systems](./25-multi-agent-systems.md) | **Next:** [Healthcare](./27-healthcare.md)
 

@@ -1,4 +1,4 @@
-﻿# Configuration Management
+# Configuration Management
 
 ## Learning Objectives
 

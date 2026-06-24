@@ -1,4 +1,4 @@
-﻿# Chapter 16: Design Patterns â€” The Gang of Four
+# Chapter 16: Design Patterns â€” The Gang of Four
 
 > **Previous:** [15-concurrency](./15-concurrency.md) | **Next:** None
 

@@ -1,4 +1,4 @@
-﻿# Spring Boot Testing
+# Spring Boot Testing
 > **Previous:** [Mockito](30-mockito.md) | **Next:** [Testcontainers](32-testcontainers.md)
 
 Spring Boot provides first-class support for testing at every level of the application: unit tests with mocked slices, integration tests with the full application context, and end-to-end tests via HTTP clients. The testing layer builds on JUnit 5 and Mockito, adding Spring-specific annotations, test slices, and utilities that simplify wiring, configuration, and verification of Spring-managed components.

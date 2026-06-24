@@ -1,4 +1,4 @@
-﻿# Chapter 7: Deadlocks
+# Chapter 7: Deadlocks
 
 **<< [Semaphores and Monitors](./06-semaphores-monitors.md)** | [**Next: Memory Management**](./08-memory-management.md) >>
 

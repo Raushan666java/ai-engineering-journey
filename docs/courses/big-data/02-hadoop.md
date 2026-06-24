@@ -372,6 +372,23 @@ The industry trend is toward **storage-compute separation** (S3 + Spark/EMR), bu
 **B) To reduce the number of metadata entries in the namenode.** Large blocks mean fewer blocks per file, which reduces the memory pressure on the namenode (which stores all metadata in RAM).
 </details>
 
+## Practical Takeaways
+
+| Hadoop Component | Role | Modern Alternative | Key Concept |
+|------------------|------|-------------------|-------------|
+| HDFS | Distributed storage | S3, GCS, Azure Blob | Block replication, rack awareness |
+| MapReduce | Batch processing | Spark, EMR, Dataproc | Map → Shuffle → Reduce |
+| YARN | Resource management | Kubernetes | Separates compute from scheduling |
+| HDFS CLI | File operations | AWS CLI, gsutil | `dfs -put/get/ls/cat` |
+
+### Hadoop Troubleshooting Quick Reference
+
+- **Namenode out of memory:** Too many files (reduce file count, increase heap)
+- **Slow MapReduce jobs:** Not enough reducers, data skew, too many small files
+- **Datanode failures:** Check heartbeats, disk space, network connectivity
+- **Rack awareness not working:** Verify topology script is configured correctly
+- **HDFS safe mode:** Namenode starting up or recovering — wait or manually leave safe mode
+
 ## Summary
 
 - HDFS provides fault-tolerant distributed storage with block replication, rack awareness, and a single namenode.

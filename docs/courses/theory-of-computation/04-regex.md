@@ -1,6 +1,6 @@
-# Chapter 3: Regular Expressions
+# Chapter 4: Regular Expressions
 
-> **Previous:** [Nondeterministic Finite Automata](./02-nfa.md) | **Next:** [Properties of Regular Languages](./04-regular-languages.md)
+> **Previous:** [Nondeterministic Finite Automata](./03-nfa.md) | **Next:** [Properties of Regular Languages](./05-regular-languages.md)
 
 
 
@@ -215,6 +215,51 @@ Lâ‚€ = (01 + 101)*Â·Îµ = (01 + 101)*
 
 
 
+## TypeScript Regex Utilities
+
+TypeScript's built-in `RegExp` class implements regular expression matching using an efficient DFA/NFA engine under the hood:
+
+```typescript
+// Building a regex-based language recognizer
+class FinitePatternMatcher {
+  private re: RegExp;
+
+  constructor(pattern: string, alphabet: string[]) {
+    const anchored = `^(${pattern})$`;
+    this.re = new RegExp(anchored);
+  }
+
+  recognizes(w: string): boolean {
+    return this.re.test(w);
+  }
+}
+
+// Recognizing regular languages via patterns
+const endsWith01 = new FinitePatternMatcher('(0|1)*01', ['0', '1']);
+console.log(endsWith01.recognizes('00101'));  // true
+console.log(endsWith01.recognises('00100'));  // false
+
+// Converting a DFA transition table to a regex
+// State elimination algorithm
+function dfaToRegex(states: string[], accept: Set<string>,
+                    trans: Map<string, string>): string {
+  // Placeholder: full implementation uses Arden's lemma
+  return "(0|1)*01";  // for a specific case
+}
+```
+
+The theoretical connection between regular expressions and automata means every regex pattern can be compiled to a DFA for O(n) matching — this is exactly what lexer generators like Lex do.
+
+## Practical Takeaways
+
+1. **Regex engines are not all equal.** Theoretical regex (regular expressions) recognizes exactly regular languages. Practical regex engines add backreferences, lookahead, and recursion — these go beyond regular languages and require backtracking, which can be exponential.
+
+2. **Kleene's theorem is a compiler design principle.** The equivalence of regular expressions and finite automata means you can specify tokens as regex patterns and automatically generate efficient recognizers via Thompson construction.
+
+3. **Algebraic laws optimize patterns.** Use identities like rε = r, ∅r = ∅, and r* = (r*)* to simplify patterns before implementation. This reduces NFA size and matching time.
+
+4. **Arden's lemma solves language equations.** When you need to invert a DFA to a regex (for code generation or documentation), Arden's lemma provides a systematic algebraic approach.
+
 ## Concept Comparison Table
 | Operator | Notation | Example | Language |
 |----------|----------|---------|----------|
@@ -300,16 +345,24 @@ Lâ‚€ = (01 + 101)*Â·Îµ = (01 + 101)*
 **B)** { aⁿbⁿ } is not regular — no regex can match balanced pairs without counting.
 </details>
 
+## Practical Takeaways
+
+1. **RegEx engines are more powerful than theory suggests.** Modern regex engines (PCRE, JavaScript, Python) include backreferences, lookahead, and recursion — making them strictly more powerful than regular expressions. They can match non-regular languages like {aⁿbⁿ}. Use caution: "regular expression" in practice ≠ regular expression in theory.
+
+2. **Thompson's construction is used in production.** The algorithm that converts regex to NFA is the basis for grep, awk, and many lexer generators. Understanding it helps predict performance: backtracking engines can be exponential, while NFA-based engines are guaranteed linear.
+
+3. **DFA minimization has practical impact.** Minimizing the DFA from a regex reduces memory usage in production systems. Pattern matching in network intrusion detection systems (Snort, Suricata) processes thousands of patterns simultaneously and benefits directly from minimization.
+
+4. **Star height reflects complexity.** Expressions with nested Kleene stars require more complex automata. When designing patterns, minimizing star depth leads to simpler, faster implementations.
+
 ## Summary
 
 - Regular expressions describe languages algebraically using union (+), concatenation, and Kleene star (*).
 - Regular expressions and finite automata are equivalent: each can be converted to the other.
-- Arden's lemma solves language equations of the form X = AX âˆª B.
+- Arden's lemma solves language equations of the form X = AX ∪ B.
 - The state elimination method converts DFA to regular expression by removing states.
 - Algebraic laws allow algebraic manipulation and simplification of regular expressions.
 - Three basic operations correspond to modular NFA constructions (union, concatenation, star).
-
-## Exercises
 
 ### Basic
 
@@ -334,3 +387,15 @@ Lâ‚€ = (01 + 101)*Â·Îµ = (01 + 101)*
 13. Prove that the language { 0â¿1â¿ | n â‰¥ 0 } is not regular (cannot be described by a regular expression).
 14. Show that every regular expression can be converted to an equivalent Îµ-free NFA (no Îµ-transitions) with at most 2|r| states, where |r| is the length of the expression.
 15. Implement (in pseudocode) the Thompson construction: given a parse tree of a regular expression, produce an NFA-Îµ. Your algorithm should handle union, concatenation, and Kleene star.
+
+## Further Reading
+
+- **Friedl, Jeffrey E. F.** *Mastering Regular Expressions* (3rd ed.). The definitive practical guide to regex engines, backtracking, and optimization techniques.
+- **Thompson, Ken.** "Programming Techniques: Regular Expression Search Algorithm." Communications of the ACM, 1968. The original paper describing the Thompson construction for NFA-based regex matching.
+- **Cox, Russ.** "Regular Expression Matching Can Be Simple and Fast." 2007. An influential article contrasting NFA-based and backtracking regex engines.
+
+
+- **Hopcroft, John E.** *The Theory of Formal Languages*. Background reading on regular expressions and their relationship to finite automata.
+- **Aho, Alfred V. and Ullman, Jeffrey D.** *The Theory of Parsing, Translation, and Compiling*. A classic reference on the application of regex and automata theory to compilation.
+
+- **McNaughton, Robert and Yamada, Hisao.** 'Regular Expressions and State Graphs for Automata.' IRE Transactions on Electronic Computers, 1960. Early work on the equivalence of regular expressions and finite automata.

@@ -1,6 +1,6 @@
-# Chapter 12: Time Complexity and NP-Completeness
+# Chapter 13: Time Complexity and NP-Completeness
 
-> **Previous:** [Reducibility](./11-reducibility.md) | **Next:** [Space Complexity](./13-space-complexity.md)
+> **Previous:** [Reducibility](./12-reducibility.md) | **Next:** [Space Complexity](./14-space-complexity.md)
 
 
 
@@ -301,11 +301,21 @@ Given numbers aâ‚, â€¦, aâ‚™ and target T.
 **A)** P = NP means every efficiently verifiable problem is efficiently solvable.
 </details>
 
+## Practical Takeaways
+
+1. **P vs NP affects every programmer.** Verifying a solution (P) is almost always easier than finding one (NP). This is why SAT solvers, constraint solvers, and optimization tools exist — they encode hard problems and use exponential algorithms that work well on real-world instances.
+
+2. **NP-completeness guides algorithm choice.** When faced with an NP-complete problem, don't try to find a polynomial-time algorithm (you'd solve P=NP). Instead, use approximation algorithms, heuristics, SAT solvers, or restrict the problem to a special case.
+
+3. **Polynomial vs exponential is the real divide.** While O(n) vs O(n²) matters in practice, the fundamental computational divide is between any polynomial (O(n^k)) and any exponential (O(2^n)). Exponential algorithms become unusable for n > 50.
+
+4. **Reductions connect seemingly unrelated problems.** SAT reduces to 3SAT reduces to CLIQUE reduces to VERTEX-COVER reduces to HAM-CYCLE reduces to TSP. Understanding this chain lets you recognize NP-complete problems when you encounter them.
+
 ## Summary
 
 - P = problems solvable in polynomial time on a DTM.
 - NP = problems verifiable in polynomial time = solvable in polynomial time on an NTM.
-- Polynomial-time reductions (â‰¤_P) preserve polynomial-time solvability.
+- Polynomial-time reductions (≤_P) preserve polynomial-time solvability.
 - A problem is NP-complete if it's in NP and all NP problems reduce to it.
 - The Cook-Levin theorem proves SAT is NP-complete by encoding TM computations as Boolean formulas.
 - Thousands of NP-complete problems span computing, optimization, and mathematics.
@@ -336,3 +346,55 @@ Given numbers aâ‚, â€¦, aâ‚™ and target T.
 13. Show that GRAPH-ISOMORPHISM is in NP (and is a candidate for NP-intermediate status).
 14. Prove that the optimization version of TSP (find the shortest tour) is NP-hard.
 15. Show that if SAT âˆˆ P, then every NP problem has an algorithm running in O(náµ) time for some fixed k (the same polynomial degree for all problems).
+
+## TypeScript NP-Completeness Reduction Example
+
+```typescript
+// SAT to 3SAT reduction
+// Any SAT clause can be transformed to 3-CNF by adding auxiliary variables
+
+type Literal = number;  // positive or negative variable index
+type Clause = Literal[];
+
+function satTo3Sat(clauses: Clause[]): Clause[] {
+  const result: Clause[] = [];
+
+  for (const clause of clauses) {
+    if (clause.length <= 3) {
+      result.push(clause);
+      continue;
+    }
+
+    // For clauses with k > 3 literals, introduce k-3 new variables
+    // (l1 OR l2 OR y1) AND (!y1 OR l3 OR y2) AND ... AND (!y_{k-3} OR l_{k-1} OR l_k)
+    const k = clause.length;
+    const newVars = k - 3;
+    const baseVar = 10000;  // offset for new variables (avoid collisions)
+
+    for (let i = 0; i < newVars; i++) {
+      const y = baseVar + i;
+      if (i === 0) {
+        result.push([clause[0], clause[1], y]);
+      } else if (i === newVars - 1) {
+        result.push([-y, clause[k - 2], clause[k - 1]]);
+      } else {
+        result.push([-y, clause[i + 1], baseVar + i + 1]);
+      }
+    }
+  }
+
+  return result;
+}
+```
+
+## Further Reading
+
+- **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapter 7 covers time complexity, P, NP, and NP-completeness with complete proofs.
+- **Arora, Sanjeev and Barak, Boaz.** *Computational Complexity: A Modern Approach*. Chapters 2 and 6 provide rigorous coverage of NP-completeness and the Cook-Levin theorem.
+- **Garey, Michael R. and Johnson, David S.** *Computers and Intractability: A Guide to the Theory of NP-Completeness*. The classic reference containing hundreds of NP-complete problems and their reductions.
+- **Sipser, Michael.** *The History and Status of the P vs NP Problem*. Communications of the ACM, 2012. An accessible overview of the most important open question in computer science.
+- **Karp, Richard M.** "Reducibility Among Combinatorial Problems." 1972. The seminal paper establishing NP-completeness of 21 fundamental problems.
+- **Cook, Stephen A.** "The Complexity of Theorem-Proving Procedures." STOC 1971. The original paper introducing NP-completeness and proving SAT is NP-complete.
+
+
+- **Levin, Leonid A.** 'Universal Sequential Search Problems.' Problems of Information Transmission, 1973. Independently discovered NP-completeness and the Cook-Levin theorem.

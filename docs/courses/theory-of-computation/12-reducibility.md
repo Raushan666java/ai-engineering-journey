@@ -1,6 +1,6 @@
-# Chapter 11: Reducibility and Advanced Undecidability
+# Chapter 12: Reducibility and Advanced Undecidability
 
-> **Previous:** [Decidability](./10-decidability.md) | **Next:** [Time Complexity](./12-time-complexity.md)
+> **Previous:** [Decidability](./11-decidability.md) | **Next:** [Time Complexity](./13-time-complexity.md)
 
 
 
@@ -285,10 +285,69 @@ The idea: T generates sequences of top strings; B generates sequences of bottom 
 **B)** BB(n) grows faster than any computable function — computing it would solve the halting problem.
 </details>
 
+## Practical Takeaways
+
+1. **Reductions are everywhere in computing.** Anytime you solve problem A by transforming it into problem B and using an existing solver for B, you are performing a reduction. Compilers, interpreters, and SAT solvers all depend on this idea.
+
+2. **Completeness identifies the hardest problems.** A problem being NP-complete or RE-complete means it is representative of the entire class. If you can solve a complete problem efficiently, you can solve every problem in that class efficiently.
+
+3. **Rice's theorem has practical implications.** Any static analysis tool that attempts to determine a non-trivial property of programs (will it crash? does it compute the right answer?) is either incomplete or unsound in general. All practical analysis tools must make conservative approximations.
+
+4. **Turing reductions are strictly more powerful.** A mapping reduction requires the entire input to be transformed, but a Turing reduction can make multiple adaptive queries. This extra power allows solving strictly more problems.
+
+## TypeScript Reduction Example
+
+```typescript
+// Reduction: SAT-3CNF to VERTEX-COVER
+// Given a 3CNF formula, construct a graph where a vertex cover
+// of size k exists iff the formula is satisfiable.
+
+type Clause = [number, number, number];  // literals (positive/negative)
+type Graph = { vertices: number[]; edges: [number, number][] };
+
+function reduce3SATtoVertexCover(
+  variables: number,
+  clauses: Clause[]
+): { graph: Graph; k: number } {
+  const vertices: number[] = [];
+  const edges: [number, number][] = [];
+
+  // Create variable gadgets: triangles for each variable
+  for (let v = 1; v <= variables; v++) {
+    const t = (v - 1) * 2 + 1;  // true literal node
+    const f = t + 1;            // false literal node
+    vertices.push(t, f);
+    edges.push([t, f]);  // at least one must be in cover
+  }
+
+  // Create clause gadgets: triangles for each clause
+  let offset = variables * 2;
+  for (let c = 0; c < clauses.length; c++) {
+    const a = offset + c * 3 + 1;
+    vertices.push(a, a + 1, a + 2);
+    // Fully connect clause triangle
+    edges.push([a, a + 1], [a + 1, a + 2], [a, a + 2]);
+
+    // Connect clause literals to corresponding variable literals
+    for (let i = 0; i < 3; i++) {
+      const lit = clauses[c][i];
+      const litNode = lit > 0
+        ? (lit - 1) * 2 + 1     // true literal
+        : (-lit - 1) * 2 + 2;   // false literal
+      edges.push([a + i, litNode]);
+    }
+  }
+  return {
+    graph: { vertices, edges },
+    k: variables + 2 * clauses.length
+  };
+}
+```
+
 ## Summary
 
 - Mapping reductions are computable functions that preserve language membership.
-- If A â‰¤_m B and B is decidable, then A is decidable (contrapositive for undecidability).
+- If A ≤_m B and B is decidable, then A is decidable (contrapositive for undecidability).
 - Rice's theorem: any non-trivial semantic property of TMs is undecidable.
 - The Post Correspondence Problem is a combinatorial undecidable problem.
 - Turing reductions (oracle access) are more general than mapping reductions.
@@ -320,3 +379,39 @@ The idea: T generates sequences of top strings; B generates sequences of bottom 
 13. Prove that there is an oracle relative to which P = NP, and another relative to which P â‰  NP. Why does this show that diagonalization cannot resolve P vs NP?
 14. Show that the problem of whether a TM ever writes a non-blank symbol on its tape is undecidable but NOT covered by Rice's theorem (it's not a property of the language).
 15. Prove that the Busy Beaver function BB(n) is not computable. (Hint: if it were, we could solve the halting problem by running a TM for BB(n) steps and checking if it halted.)
+
+## TypeScript Reduction Example
+
+```typescript
+// Mapping reduction: A_TM <=_m HALT_TM
+// Show that A_TM (does M accept w?) reduces to HALT_TM (does M halt on w?)
+
+function reduceAcceptToHalt(description: string): string {
+  // Given: <M, w> for acceptance problem
+  // Construct: <M', w> for halting problem, where M' is:
+  //   "On input x, run M on x. If M accepts, halt. If M rejects, loop."
+
+  // The reduction converts: <M, w> -> <M', w>
+  // Where M' is the modified TM that enters an infinite loop on reject
+
+  const machineDef = parseTuringMachine(description);
+  const modifiedTransitions = modifyTMToLoopOnReject(machineDef);
+  return encodeMachine(modifiedTransitions);
+}
+
+function parseTuningMachine(s: string): any { return {}; }
+function modifyTMToLoopOnReject(m: any): any { return m; }
+function encodeMachine(m: any): string { return "<encoded>"; }
+
+// The key insight: if M accepts w, then M' halts on w (accept state reached)
+// If M rejects w, then M' loops forever (reject replaced with infinite loop)
+// If M loops on w, then M' loops forever (same behavior)
+// Therefore: M accepts w iff M' halts on w
+```
+
+## Further Reading
+
+- **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapter 5 covers reductions with detailed proofs of undecidability.
+- **Post, Emil L.** "A Variant of a Recursively Unsolvable Problem." Bulletin of the AMS, 1946. The original paper introducing the Post Correspondence Problem.
+- **Soare, Robert I.** *Recursively Enumerable Sets and Degrees*. The definitive reference on the Turing degrees and the structure of the arithmetical hierarchy.
+

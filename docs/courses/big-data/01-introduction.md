@@ -336,6 +336,72 @@ Parquet is the recommended default for analytical workloads. It stores columnar 
 **B) Spark processes data in memory instead of writing intermediate results to disk.** This eliminates the disk I/O bottleneck that made MapReduce 10-100x slower for multi-stage jobs.
 </details>
 
+## TypeScript Example: Distributed Data Processing Concept
+
+```typescript
+// Conceptual simulation of distributed data processing
+interface DataPartition {
+  id: number;
+  records: Record<string, unknown>[];
+}
+
+class DistributedProcessor {
+  private nodes: number;
+
+  constructor(nodes: number) { this.nodes = nodes; }
+
+  // Simulate Map phase: each node processes its partition independently
+  mapPhase(data: DataPartition[]): Map<string, number>[] {
+    return data.map((partition, i) => {
+      const result = new Map<string, number>();
+      // Each node independently processes its partition
+      for (const record of partition.records) {
+        const key = String(record.category ?? "unknown");
+        result.set(key, (result.get(key) ?? 0) + 1);
+      }
+      return result;
+    });
+  }
+
+  // Simulate Reduce phase: aggregate results from all nodes
+  reducePhase(mappedResults: Map<string, number>[]): Map<string, number> {
+    const final = new Map<string, number>();
+    for (const nodeResult of mappedResults) {
+      for (const [key, count] of nodeResult) {
+        final.set(key, (final.get(key) ?? 0) + count);
+      }
+    }
+    return final;
+  }
+}
+```
+
+## Practical Takeaways
+
+| Big Data Principle | What It Means | How to Apply |
+|--------------------|---------------|--------------|
+| Volume | Data too large for single node | Use distributed storage (HDFS/S3) + compute (Spark) |
+| Velocity | Data arrives continuously | Choose stream processing (Kafka + Flink/Spark Streaming) |
+| Variety | Data in many formats | Use schema-on-read (Parquet, JSON, Avro) |
+| Data Locality | Move code to data, not data to code | Co-locate compute clusters with storage |
+| Horizontal Scaling | Add more machines, not bigger ones | Design for commodity hardware |
+| Columnar Storage | Store by column for analytics | Always use Parquet for analytical workloads |
+
+### Decision Flowchart
+
+```mermaid
+flowchart TD
+    A[Data Size?] -->|"< 1 TB"| B[Single Node: PostgreSQL, DuckDB]
+    A -->|"> 1 TB"| C[Distributed System Needed]
+    C --> D[Latency Requirement?]
+    D -->|"Seconds-Minutes"| E[Batch: Spark]
+    D -->|"Sub-second"| F[Stream: Kafka + Flink]
+    E --> G[Storage Format?]
+    F --> G
+    G -->|Analytics| H[Parquet]
+    G -->|Serialization| I[Avro]
+```
+
 ## Summary
 
 - Big data is defined by volume, velocity, and variety — traditional tools break at petabyte scale.

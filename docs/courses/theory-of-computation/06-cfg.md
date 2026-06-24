@@ -1,6 +1,6 @@
-# Chapter 5: Context-Free Grammars
+# Chapter 6: Context-Free Grammars
 
-> **Previous:** [Properties of Regular Languages](./04-regular-languages.md) | **Next:** [Pushdown Automata](./06-pda.md)
+> **Previous:** [Properties of Regular Languages](./05-regular-languages.md) | **Next:** [Pushdown Automata](./07-pda.md)
 
 
 
@@ -327,6 +327,18 @@ This generates simple programs with declarations, assignments, conditionals, loo
 **B)** Left factoring extracts common prefixes to enable predictive parsing.
 </details>
 
+## Practical Takeaways
+
+1. **Grammars are the standard for syntax specification.** Most programming languages are defined using CFGs. Understanding derivations, parse trees, and ambiguity is essential for anyone building or using programming languages.
+
+2. **Ambiguity must be eliminated for compilers.** A parse tree determines the meaning of a program. Ambiguous grammars allow multiple interpretations, which is unacceptable. Use precedence and associativity rules to disambiguate.
+
+3. **Left recursion prevents top-down parsing.** Always eliminate left recursion before attempting LL parsing. The transformation preserves the language while making it amenable to predictive parsing.
+
+4. **Left factoring enables lookahead decisions.** When two productions share a prefix, the parser cannot decide which to use. Left factoring delays the decision until enough input is seen.
+
+5. **CFGs are more expressive than regex.** Regular expressions can only describe regular languages. CFGs describe context-free languages, which properly include regular languages. Nested structures like balanced parentheses require CFGs.
+
 ## Summary
 
 - A CFG consists of variables, terminals, productions, and a start variable.
@@ -335,6 +347,7 @@ This generates simple programs with declarations, assignments, conditionals, loo
 - Left recursion must be eliminated for top-down parsing.
 - Left factoring prepares grammars for predictive parsing.
 - CFGs can describe nested structures like parentheses, arithmetic expressions, and programming language syntax.
+- Formal grammars enable precise, unambiguous specification of programming language syntax.
 
 ## Exercises
 
@@ -361,3 +374,53 @@ This generates simple programs with declarations, assignments, conditionals, loo
 13. Show that every regular language is context-free by constructing a CFG from a DFA.
 14. Design a CFG for L = { aâ¿báµ | n â‰  m } and prove its correctness.
 15. Show that the grammar S â†’ SS | aSb | Îµ generates strings with equal numbers of a's and b's where every prefix has at least as many a's as b's. Prove by induction on string length.
+
+## Further Reading
+
+- **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapter 2 covers context-free grammars in depth including Chomsky Normal Form and ambiguity.
+- **Hopcroft, John E., Motwani, Rajeev, and Ullman, Jeffrey D.** *Introduction to Automata Theory, Languages, and Computation* (3rd ed.). Chapter 5 provides comprehensive coverage of CFG simplification and normal forms.
+- **Aho, Alfred V., Lam, Monica S., Sethi, Ravi, and Ullman, Jeffrey D.** *Compilers: Principles, Techniques, and Tools* (2nd ed.). Chapters 4-5 cover the practical application of CFGs in parsing and syntax analysis.
+- **Grzegorz, Rozenberg and Salomaa, Arto.** *Handbook of Formal Languages* (3 vols.). The definitive reference for formal language theory including context-free grammars.
+
+## TypeScript CFG Derivation Example
+
+```typescript
+type Symbol = string;
+
+class CFGDeriver {
+  private rules: Map<string, Symbol[][]> = new Map();
+
+  addRule(lhs: string, ...rhsAlternatives: string[][]) {
+    if (!this.rules.has(lhs)) this.rules.set(lhs, []);
+    for (const alt of rhsAlternatives) {
+      this.rules.get(lhs).push(alt);
+    }
+  }
+
+  derive(start: string, target: string, maxSteps: number = 10): string[] {
+    const derivations: string[] = [start];
+    for (let step = 0; step < maxSteps; step++) {
+      const current = derivations[derivations.length - 1];
+      if (current === target) return derivations;
+      const match = current.match(/[A-Z]/);
+      if (!match) break;
+      const pos = match.index;
+      const nt = match[0];
+      const alternatives = this.rules.get(nt);
+      if (!alternatives || alternatives.length === 0) break;
+      const chosen = alternatives[0];
+      const next = current.slice(0, pos) + chosen.join("") + current.slice(pos + 1);
+      derivations.push(next);
+    }
+    return derivations;
+  }
+}
+
+const cf = new CFGDeriver();
+cf.addRule("E", ["E", "+", "T"], ["T"]);
+cf.addRule("T", ["T", "*", "F"], ["F"]);
+cf.addRule("F", ["(", "E", ")"], ["id"]);
+const steps = cf.derive("E", "id+id*id", 8);
+console.log("Derivation steps:", steps);
+```
+

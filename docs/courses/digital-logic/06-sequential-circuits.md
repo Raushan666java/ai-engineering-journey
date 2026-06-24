@@ -1,304 +1,824 @@
 # Chapter 6: Sequential Circuits
 
-> **Prereq:** Chapter 5 (Flip-Flops) â€” sequential circuits use flip-flops as their memory elements.
-> **Next:** Chapter 7 (FSM and Memory) â€” state machines are analysed further and connected to memory systems.
+> **Prereq:** Chapter 5 (Combinational Circuits) — sequential circuits add memory to combinational logic.
+> **Next:** Chapter 7 (State Machines) — sequential circuits with a systematic state-transition structure.
 
 ## Learning Objectives
 
-![Sequential Circuits](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch06-sequential-circuits.png)
-
 By the conclusion of this chapter, the student shall be able to:
 
-1. Distinguish between Mealy and Moore state machine models
-2. Construct state diagrams and state tables from problem descriptions
-3. Design synchronous sequential circuits using flip-flop excitation tables
-4. Analyse and design counters (ripple and synchronous)
-5. Implement sequence detectors for arbitrary bit patterns
-6. Perform state minimisation and state assignment
+1. Distinguish between latches and flip-flops and explain their timing behaviour
+2. Analyse SR, D, JK, and T flip-flops using characteristic tables and excitation tables
+3. Design edge-triggered flip-flops using master-slave and transmission-gate topologies
+4. Compute setup time, hold time, and propagation delay constraints
+5. Build registers, shift registers, and counters from flip-flop primitives
+6. Analyse clock skew and its effect on sequential circuit timing
+7. Identify and eliminate race conditions and metastability
 
-### Chapter at a Glance
+## 6.1 Introduction to Sequential Circuits
 
-| Section | Key Concept | Why It Matters |
-|---------|-------------|----------------|
-| Mealy Machine | Output depends on input + state | Reacts faster than Moore |
-| Moore Machine | Output depends only on state | Simpler timing, glitch-free |
-| Counters | Ripple vs synchronous | Frequency division, event counting |
-| Sequence Detector | Recognise bit patterns | Protocol decoding, pattern matching |
-| State Minimisation | Reduce redundant states | Smaller, cheaper circuits |
+A **sequential circuit** differs from a combinational circuit in one critical respect: its output depends on **both the present inputs and the past history** of those inputs. This memory is implemented using **bistable elements** — circuits that can store one bit of state indefinitely.
 
 ```mermaid
-flowchart LR
-    A[Inputs] --> B[Combinational Logic]
-    B --> C[Outputs]
-    B --> D[Flip-Flops]
-    D --> B
-    D --> E[Clock]
-    style B fill:#e1f5fe
-    style C fill:#c8e6c9
+graph LR
+    X[Inputs X] --> COMB[Combinational<br>Logic]
+    COMB --> Y[Outputs Y]
+    STATE[State Memory] --> COMB
+    COMB --> NEXT[Next State] --> STATE
+    CLK[Clock] --> STATE
+    style STATE fill:#f9f,stroke:#333,stroke-width:2px
+    style COMB fill:#e6f3ff,stroke:#4a90d9,stroke-width:2px
 ```
 
-## Theory
-
-> **One-Sentence Takeaway:** Sequential circuits add state to logic â€” outputs depend on both current inputs and past history, with Mealy and Moore as the two canonical state-machine models that map directly to hardware.
-
-### 6.1 Sequential Circuit Structure
-
-A sequential circuit comprises a combinational logic block and memory elements (flip-flops). The outputs depend on both the current inputs and the state stored in the memory elements. Two models exist for describing sequential circuits.
-
-### 6.2 Mealy Machine
-
-In the Mealy model, outputs depend on both the present state and the current inputs. Outputs may change asynchronously with input changes within a clock period.
-
-Next state = f(current state, inputs)
-Outputs = g(current state, inputs)
-
-### 6.3 Moore Machine
-
-In the Moore model, outputs depend only on the present state. Outputs are synchronised with the clock and are stable throughout each clock period.
-
-Next state = f(current state, inputs)
-Outputs = g(current state)
-
-### 6.4 State Diagrams and State Tables
-
-A state diagram is a directed graph where nodes represent states and edges represent transitions. Edge labels follow the convention:
-
-- Mealy: input/output (e.g., 0/1 means input 0 produces output 1)
-- Moore: output is written inside the state node; edges carry only the input
-
-A state table tabulates the same information. Columns include present state, input(s), next state, and output(s).
-
-| Present State | Input | Next State | Output |
-|--------------|:-----:|-----------|:------:|
-| S_0 | 0 | S_1 | 0 |
-| S_0 | 1 | S_0 | 1 |
-| S_1 | 0 | S_0 | 0 |
-| S_1 | 1 | S_1 | 1 |
-
-### 6.5 State Minimisation
-
-State minimisation reduces the number of states while preserving the input-output behaviour. The partitioning method:
-
-1. Partition states into groups based on output values.
-2. Split groups whose members have transitions to different groups for the same input.
-3. Repeat until no further splitting occurs.
-
-Equivalent states are those that remain in the same group through all partitions.
-
-### 6.6 Counters
-
-Counters are sequential circuits that progress through a predetermined sequence of states.
-
-#### 6.6.1 Ripple Counter
-
-In a ripple (asynchronous) counter, the clock input of each flip-flop is driven by the output of the preceding flip-flop. The delay accumulates through the chain, limiting the maximum counting frequency.
-
-A 4-bit binary ripple counter using T flip-flops with T = 1:
-
-- FF_0 toggles on every clock edge (LSB).
-- FF_1 toggles when Q_0 transitions from 1 to 0.
-- FF_2 toggles when Q_1 transitions from 1 to 0.
-- FF_3 toggles when Q_2 transitions from 1 to 0.
-
-#### 6.6.2 Synchronous Counter
-
-In a synchronous counter, all flip-flops receive the same clock. The count enable logic determines which flip-flops toggle.
-
-For a 4-bit synchronous binary counter:
-- T_0 = 1
-- T_1 = Q_0
-- T_2 = Q_0 &middot; Q_1
-- T_3 = Q_0 &middot; Q_1 &middot; Q_2
-
-#### 6.6.3 Mod-N Counter
-
-A modulo-N counter counts from 0 to N &minus; 1 and then resets. For N not a power of 2, additional logic detects the terminal count and resets the counter.
-
-### 6.7 Register
-
-A register is a collection of *n* D flip-flops sharing a common clock, used to store an *n*-bit binary word.
-
-**Shift register**: A register wherein the bits are moved one position left or right on each clock cycle. A serial-in, serial-out (SISO) shift register connects Q_i to D_{i+1}. A parallel-in, parallel-out (PIPO) register provides individual data inputs and outputs for each bit.
-
-### 6.8 Sequence Detector
-
-A sequence detector recognises a specific bit pattern in a serial input stream. The circuit enters a unique state when the pattern is detected and asserts an output.
-
-**Design procedure**:
-
-1. Determine the sequence to detect.
-2. Construct the state diagram showing all partial matches.
-3. Derive the state table.
-4. Perform state assignment.
-5. Determine flip-flop input equations using excitation tables.
-6. Derive the output equation.
-7. Draw the circuit.
-
-## Examples
-
-### Example 6.1: 3-Bit Synchronous Binary Counter
-
-Design a 3-bit synchronous binary counter using JK flip-flops.
-
-**Solution**: The counter sequences through states 000, 001, 010, 011, 100, 101, 110, 111.
-
-Excitation table for JK flip-flops:
-
-| Q | Q_next | J | K |
-|---|---|:---:|:---:|
-| 0 | 0 | 0 | X |
-| 0 | 1 | 1 | X |
-| 1 | 0 | X | 1 |
-| 1 | 1 | X | 0 |
-
-Present and next state for all flip-flops:
-
-| Q_2 Q_1 Q_0 | Q_2^+ Q_1^+ Q_0^+ | J_2 K_2 | J_1 K_1 | J_0 K_0 |
-|-------------|------------------|---------|---------|---------|
-| 0 0 0 | 0 0 1 | 0 X | 0 X | 1 X |
-| 0 0 1 | 0 1 0 | 0 X | 1 X | X 1 |
-| 0 1 0 | 0 1 1 | 0 X | X 0 | 1 X |
-| 0 1 1 | 1 0 0 | 1 X | X 1 | X 1 |
-| 1 0 0 | 1 0 1 | X 0 | 0 X | 1 X |
-| 1 0 1 | 1 1 0 | X 0 | 1 X | X 1 |
-| 1 1 0 | 1 1 1 | X 0 | X 0 | 1 X |
-| 1 1 1 | 0 0 0 | X 1 | X 1 | X 1 |
-
-From K-maps:
-- J_0 = 1, K_0 = 1
-- J_1 = Q_0, K_1 = Q_0
-- J_2 = Q_0 &middot; Q_1, K_2 = Q_0 &middot; Q_1
-
-### Example 6.2: Sequence Detector
-
-Design a Mealy sequence detector for the pattern 1101. Overlapping sequences are allowed.
-
-**Solution**: States represent how much of the pattern has been matched:
-- S_0: No bits matched (initial)
-- S_1: '1' matched
-- S_2: '11' matched
-- S_3: '110' matched
-- Detection: S_3 + input '1' produces output 1 and goes to S_1 (since '1' begins a new match)
-
-State diagram transitions from S_0, S_1, S_2, S_3 on inputs 0 and 1. The output is 1 only in the transition from S_3 on input 1.
-
-State table:
-
-| PS | Input=0 | Input=1 |
-|----|---------|---------|
-| S_0 | S_0, 0 | S_1, 0 |
-| S_1 | S_0, 0 | S_2, 0 |
-| S_2 | S_3, 0 | S_2, 0 |
-| S_3 | S_0, 0 | S_1, 1 |
-
-### Example 6.3: BCD Counter (Mod-10)
-
-Design a synchronous BCD counter that counts 0 through 9 and resets to 0.
-
-**Solution**: The counter must detect state 1001 (9) and transition to 0000 (0) on the next clock. Using D flip-flops:
-
-D_0 = Q_0'
-D_1 = Q_0 &middot; Q_1' &middot; Q_2' &middot; Q_3' + Q_1 &middot; Q_0' (after K-map minimisation considering invalid states as don't-cares)
-D_2 = Q_2 &oplus; (Q_0 &middot; Q_1)
-D_3 = Q_3 &oplus; (Q_0 &middot; Q_1 &middot; Q_2)
-
-The reset condition at count 9 (Q_3 = 1, Q_0 = 1) was used in the derivation.
-
-### Example 6.4: Johnson Counter
-
-A Johnson (twisted-ring) counter connects the complement of the last flip-flop's output to the first flip-flop's input. An *n*-bit Johnson counter cycles through 2*n* states.
-
-For a 4-bit Johnson counter starting at 0000:
-0000, 0001, 0011, 0111, 1111, 1110, 1100, 1000, then back to 0000.
-
-### Concept Comparison
-
-| Aspect | Mealy Machine | Moore Machine |
-|--------|--------------|--------------|
-| Output depends on | Input + State | State only |
-| State count | Fewer (output combinational) | More (output requires state) |
-| Timing | Asynchronous faster | Synchronous, glitch-free |
-| Design complexity | Higher (output logic) | Simpler |
-
-### Quick Reference
-
-| Counter Type | Speed | Complexity | Best For |
-|-------------|-------|-----------|----------|
-| Ripple | Slower (cascade) | Lowest | Low-speed division |
-| Synchronous | Fast (parallel clock) | Moderate | General purpose |
-| Johnson | Medium | Low | Simple n-states |
-
-### Cross-Application Matrix
-
-| Domain | Application | Relevance |
-|--------|-------------|-----------|
-| CPU Design | Program counter, microcode sequencer | Counters drive instruction cycles |
-| Embedded Systems | Timer peripherals, baud rate gen | Sequential circuits generate timing |
-| Digital Circuits | Protocol decoders (UART, SPI) | Sequence detectors recognise start bits |
-| Research | Asynchronous sequential design | Clockless circuits for ultra-low power |
+### 6.1.1 Sequential Circuit Model
+
+A sequential circuit is defined by:
+- **Next-state function:** `S⁺ = f(X, S)`
+- **Output function:** `Y = g(X, S)` (Mealy) or `Y = g(S)` (Moore)
+
+Where `S` is the current state, `S⁺` is the next state, and `X` are the primary inputs.
+
+### 6.1.2 Classification
+
+| Type | Clocked? | Output Depends On | Example |
+|------|----------|-------------------|---------|
+| Asynchronous | No | Inputs + state | SR latch |
+| Synchronous (Moore) | Yes | State only | State machine |
+| Synchronous (Mealy) | Yes | Inputs + state | State machine |
+
+## 6.2 Latches
+
+A **latch** is a level-sensitive memory element — it follows its inputs while the enable signal is asserted and holds its value when the enable is de-asserted.
+
+### 6.2.1 SR Latch (NOR Implementation)
+
+```mermaid
+graph TD
+    S[S] --> NOR1[≥1]
+    R[R] --> NOR2[≥1]
+    NOR1 --> Q[Q]
+    NOR2 --> Qn[¬Q]
+    Qn --> NOR1
+    Q --> NOR2
+    style NOR1 fill:#faa,stroke:#333,stroke-width:1px
+    style NOR2 fill:#faa,stroke:#333,stroke-width:1px
+```
+
+| S | R | Q⁺ | ¬Q⁺ | Mode |
+|---|---|----|-----|------|
+| 0 | 0 | Q  | ¬Q  | Hold |
+| 0 | 1 | 0  | 1   | Reset |
+| 1 | 0 | 1  | 0   | Set |
+| 1 | 1 | 0  | 0   | Invalid |
+
+```typescript
+type LatchState = { Q: number; Qn: number };
+
+function srLatch(S: number, R: number, prev: LatchState): LatchState {
+    if (S === 1 && R === 0) return { Q: 1, Qn: 0 }; // Set
+    if (S === 0 && R === 1) return { Q: 0, Qn: 1 }; // Reset
+    if (S === 0 && R === 0) return prev;              // Hold
+    return { Q: 0, Qn: 0 };                           // Invalid (S=R=1)
+}
+```
+
+**Critical constraint:** The SR = 11 input combination is forbidden because it forces both outputs low, and when both inputs return to 0 simultaneously, the latch enters a **race condition** where the final state is unpredictable.
+
+### 6.2.2 D Latch
+
+The D latch (transparent latch) eliminates the SR invalid state by adding an inverter between S and R.
+
+```
+Q⁺ = D when Enable = 1
+Q⁺ = Q  when Enable = 0
+```
+
+```mermaid
+graph TD
+    D[D] --> AND1[&]
+    EN[Enable] --> AND1
+    D --> NOT[NOT]
+    NOT --> AND2[&]
+    EN --> AND2
+    AND1 --> OR1[≥1]
+    AND2 --> OR2[≥1]
+    OR1 --> Q[Q]
+    OR2 --> Qn[¬Q]
+    Qn --> OR1
+    Q --> OR2
+```
+
+```typescript
+function dLatch(D: number, enable: number, prev: number): number {
+    return enable === 1 ? D : prev;
+}
+```
+
+## 6.3 Flip-Flops
+
+A **flip-flop** is an edge-triggered memory element — it samples its inputs only on a clock edge (rising or falling) and holds the value between edges.
+
+```mermaid
+timeline
+    title Edge-Triggered Behaviour
+    Clock : Rising edge samples input : Output stable between edges
+    Data : Must be stable before edge : Held after edge
+```
+
+### 6.3.1 Edge Detection
+
+```typescript
+type EdgeType = 'rising' | 'falling' | 'none';
+
+function detectEdge(clk: number, prevClk: number): EdgeType {
+    if (clk === 1 && prevClk === 0) return 'rising';
+    if (clk === 0 && prevClk === 1) return 'falling';
+    return 'none';
+}
+```
+
+### 6.3.2 D Flip-Flop
+
+The D flip-flop is the most widely used storage element in digital design. On each clock edge, it copies the D input to the Q output.
+
+```
+Q⁺ = D  (on rising edge of clock)
+```
+
+```mermaid
+graph TD
+    D[D] --> M1[Master<br>D Latch]
+    CLK[Clock] --> INV[NOT]
+    INV --> M1
+    M1 --> M2[Slave<br>D Latch]
+    CLK --> M2
+    M2 --> Q[Q]
+    style M1 fill:#f9f,stroke:#333,stroke-width:1px
+    style M2 fill:#f9f,stroke:#333,stroke-width:1px
+```
+
+```typescript
+interface FlipFlop {
+    Q: number;
+    update(D: number, clk: number): void;
+}
+
+class DFlipFlop implements FlipFlop {
+    Q: number = 0;
+    private prevClk: number = 0;
+
+    update(D: number, clk: number): void {
+        if (clk === 1 && this.prevClk === 0) { // rising edge
+            this.Q = D;
+        }
+        this.prevClk = clk;
+    }
+}
+
+// Simulate a D flip-flop
+const dff = new DFlipFlop();
+for (const [clk, D] of [[0,0],[1,0],[0,0],[1,1],[0,1],[1,0],[0,0]]) {
+    dff.update(D, clk);
+    console.log(`CLK=${clk} D=${D} → Q=${dff.Q}`);
+}
+```
+
+### 6.3.3 JK Flip-Flop
+
+The JK flip-flop is a universal flip-flop that combines the behaviour of all other types.
+
+| J | K | Q⁺     | Mode    |
+|---|----|--------|---------|
+| 0 | 0  | Q      | Hold    |
+| 0 | 1  | 0      | Reset   |
+| 1 | 0  | 1      | Set     |
+| 1 | 1  | ¬Q     | Toggle  |
+
+```typescript
+class JKFlipFlop implements FlipFlop {
+    Q: number = 0;
+    private prevClk: number = 0;
+
+    update(J: number, K: number, clk: number): void {
+        if (clk === 1 && this.prevClk === 0) {
+            this.Q = (J & ~this.Q) | (~K & this.Q);
+            // Alternative: T = J & ~Q | ~K & Q
+        }
+        this.prevClk = clk;
+    }
+}
+```
+
+### 6.3.4 T Flip-Flop
+
+The T flip-flop toggles its state whenever T=1 on a clock edge.
+
+```
+Q⁺ = Q ⊕ T
+```
+
+```typescript
+class TFlipFlop implements FlipFlop {
+    Q: number = 0;
+    private prevClk: number = 0;
+
+    update(T: number, clk: number): void {
+        if (clk === 1 && this.prevClk === 0) {
+            this.Q = this.Q ^ T; // toggle
+        }
+        this.prevClk = clk;
+    }
+}
+```
+
+### 6.3.5 Flip-Flop Conversion
+
+Any flip-flop type can be converted to another by deriving the appropriate input equations.
+
+```typescript
+function dToJK(D: number, Q: number): { J: number; K: number } {
+    return { J: D, K: ~D & 1 };
+}
+
+function jkToD(J: number, K: number): number {
+    // D = J·Q̄ + K̄·Q — but for next state, D = Q⁺
+    // We need the excitation function
+    if (J === 0 && K === 1) return 0;
+    if (J === 1 && K === 0) return 1;
+    if (J === 0 && K === 0) return J; // meaningless here
+    return -1; // toggle case needs Q
+}
+```
+
+## 6.4 Characteristic and Excitation Tables
+
+### 6.4.1 Characteristic Table
+
+Describes the next state `Q⁺` as a function of current state `Q` and inputs.
+
+| Flip-Flop | Characteristic Equation |
+|-----------|------------------------|
+| D         | Q⁺ = D                 |
+| SR        | Q⁺ = S + ¬R·Q          |
+| JK        | Q⁺ = J·¬Q + ¬K·Q       |
+| T         | Q⁺ = Q ⊕ T             |
+
+### 6.4.2 Excitation Table
+
+Describes the required input to produce a desired state transition. Essential for sequential circuit design.
+
+| Transition Q → Q⁺ | D | S | R | J | K | T |
+|-------------------|---|---|---|---|---|---|
+| 0 → 0             | 0 | 0 | X | 0 | X | 0 |
+| 0 → 1             | 1 | 1 | 0 | 1 | X | 1 |
+| 1 → 0             | 0 | 0 | 1 | X | 1 | 1 |
+| 1 → 1             | 1 | X | 0 | X | 0 | 0 |
+
+## 6.5 Registers
+
+A **register** is an array of D flip-flops sharing a common clock, enabling parallel storage of an N-bit word.
+
+```typescript
+class Register {
+    private flops: DFlipFlop[];
+    readonly width: number;
+
+    constructor(width: number) {
+        this.width = width;
+        this.flops = Array.from({ length: width }, () => new DFlipFlop());
+    }
+
+    get value(): number {
+        let val = 0;
+        for (let i = 0; i < this.width; i++) {
+            val |= (this.flops[i].Q << i);
+        }
+        return val;
+    }
+
+    load(data: number, clk: number): void {
+        for (let i = 0; i < this.width; i++) {
+            this.flops[i].update((data >> i) & 1, clk);
+        }
+    }
+}
+
+const reg = new Register(8);
+reg.load(0b10101100, 1);
+reg.load(0b10101100, 0); // ignored (not rising edge)
+console.log(`Register value: ${reg.value.toString(2).padStart(8, '0')}`);
+```
+
+### 6.5.1 Register with Enable
+
+Many designs require conditional loading. An enable signal gates the clock or the data.
+
+```typescript
+class EnabledRegister {
+    private flops: DFlipFlop[];
+    readonly width: number;
+
+    constructor(width: number) {
+        this.width = width;
+        this.flops = Array.from({ length: width }, () => new DFlipFlop());
+    }
+
+    get value(): number {
+        let val = 0;
+        for (let i = 0; i < this.width; i++) {
+            val |= (this.flops[i].Q << i);
+        }
+        return val;
+    }
+
+    load(data: number, enable: number, clk: number): void {
+        // MUX at input: D = enable ? data_in : Q
+        const actualData = enable === 1 ? data : this.value;
+        for (let i = 0; i < this.width; i++) {
+            this.flops[i].update((actualData >> i) & 1, clk);
+        }
+    }
+}
+```
+
+## 6.6 Shift Registers
+
+A **shift register** moves data one position per clock cycle. It is the fundamental building block for serial communication, delay lines, and sequence generators.
+
+```mermaid
+graph LR
+    SI[Serial In] --> FF0[DFF₀]
+    FF0 --> FF1[DFF₁]
+    FF1 --> FF2[DFF₂]
+    FF2 --> FF3[DFF₃]
+    FF3 --> SO[Serial Out]
+    CLK --> FF0
+    CLK --> FF1
+    CLK --> FF2
+    CLK --> FF3
+    style FF0 fill:#f9f,stroke:#333,stroke-width:2px
+    style FF1 fill:#f9f,stroke:#333,stroke-width:2px
+    style FF2 fill:#f9f,stroke:#333,stroke-width:2px
+    style FF3 fill:#f9f,stroke:#333,stroke-width:2px
+```
+
+```typescript
+class ShiftRegister {
+    private flops: DFlipFlop[];
+    readonly width: number;
+
+    constructor(width: number) {
+        this.width = width;
+        this.flops = Array.from({ length: width }, () => new DFlipFlop());
+    }
+
+    get value(): number {
+        let val = 0;
+        for (let i = 0; i < this.width; i++) {
+            val |= (this.flops[i].Q << i);
+        }
+        return val;
+    }
+
+    shift(serialIn: number, clk: number): number {
+        const serialOut = this.flops[this.width - 1].Q;
+        for (let i = this.width - 1; i > 0; i--) {
+            const prevQ = this.flops[i - 1].Q;
+            this.flops[i].update(prevQ, clk);
+        }
+        this.flops[0].update(serialIn, clk);
+        return serialOut;
+    }
+}
+
+// Serial-in, parallel-out demo
+const sr = new ShiftRegister(4);
+sr.shift(1, 1); sr.shift(0, 1); sr.shift(1, 1); sr.shift(1, 1);
+console.log(`SIPO: ${sr.value.toString(2).padStart(4, '0')}`); // 1101 (LSB first)
+```
+
+### 6.6.1 Universal Shift Register
+
+A universal shift register supports parallel load, shift left, shift right, and hold — controlled by mode select lines S₁, S₀.
+
+| S₁ | S₀ | Operation     |
+|----|----|---------------|
+| 0  | 0  | Hold          |
+| 0  | 1  | Shift right   |
+| 1  | 0  | Shift left    |
+| 1  | 1  | Parallel load |
+
+```typescript
+class UniversalShiftRegister {
+    private flops: DFlipFlop[];
+    readonly width: number;
+
+    constructor(width: number) {
+        this.width = width;
+        this.flops = Array.from({ length: width }, () => new DFlipFlop());
+    }
+
+    get value(): number {
+        let val = 0;
+        for (let i = 0; i < this.width; i++) {
+            val |= (this.flops[i].Q << i);
+        }
+        return val;
+    }
+
+    operate(data: number, sLeft: number, sRight: number, mode: number, clk: number): void {
+        const S0 = mode & 1;
+        const S1 = (mode >> 1) & 1;
+
+        const D = new Array(this.width);
+        const cur = this.value;
+
+        for (let i = 0; i < this.width; i++) {
+            if (S1 === 0 && S0 === 0) D[i] = (cur >> i) & 1; // Hold
+            else if (S1 === 0 && S0 === 1) {                   // Shift right
+                D[i] = (i === 0) ? sRight : (cur >> (i-1)) & 1;
+            } else if (S1 === 1 && S0 === 0) {                 // Shift left
+                D[i] = (i === this.width - 1) ? sLeft : (cur >> (i+1)) & 1;
+            } else {                                            // Parallel load
+                D[i] = (data >> i) & 1;
+            }
+        }
+
+        for (let i = 0; i < this.width; i++) {
+            this.flops[i].update(D[i], clk);
+        }
+    }
+}
+```
+
+## 6.7 Counters
+
+A **counter** is a sequential circuit that cycles through a predetermined sequence of states.
+
+### 6.7.1 Binary Ripple Counter
+
+The simplest counter: T flip-flops with each output driving the clock of the next stage.
+
+```mermaid
+graph TD
+    CLK[Clock] --> T0[T FF₀]
+    T0 --> Q0[Q₀]
+    Q0 --> T1[T FF₁]
+    T1 --> Q1[Q₁]
+    Q1 --> T2[T FF₂]
+    T2 --> Q2[Q₂]
+    Q2 --> T3[T FF₃]
+    T3 --> Q3[Q₃]
+```
+
+```typescript
+class RippleCounter {
+    private flops: TFlipFlop[];
+    readonly width: number;
+
+    constructor(width: number) {
+        this.width = width;
+        this.flops = Array.from({ length: width }, () => new TFlipFlop());
+    }
+
+    get value(): number {
+        let val = 0;
+        for (let i = 0; i < this.width; i++) {
+            val |= (this.flops[i].Q << i);
+        }
+        return val;
+    }
+
+    tick(): void {
+        // Ripple: each stage toggles when the previous stage's output falls
+        for (let i = 0; i < this.width; i++) {
+            const prevClk = (i === 0) ? 1 : this.flops[i - 1].Q;
+            // We need to simulate clock edges — simplified here
+            this.flops[i].update(1, prevClk);
+        }
+    }
+}
+
+// Simulate a 4-bit ripple counter
+const rc = new RippleCounter(4);
+for (let step = 0; step < 16; step++) {
+    rc.tick();
+    console.log(`Step ${step + 1}: ${rc.value}`);
+}
+```
+
+**Problem:** Ripple counters are slow — the Nth stage toggles only after N gate delays.
+
+### 6.7.2 Synchronous Binary Counter
+
+All flip-flops share a common clock. The T input of each stage is the AND of all lower-order bits.
+
+```
+T₀ = 1           (always toggle)
+T₁ = Q₀
+T₂ = Q₁ · Q₀
+T₃ = Q₂ · Q₁ · Q₀
+```
+
+```typescript
+class SyncCounter {
+    private flops: TFlipFlop[];
+    readonly width: number;
+
+    constructor(width: number) {
+        this.width = width;
+        this.flops = Array.from({ length: width }, () => new TFlipFlop());
+    }
+
+    get value(): number {
+        let val = 0;
+        for (let i = 0; i < this.width; i++) {
+            val |= (this.flops[i].Q << i);
+        }
+        return val;
+    }
+
+    tick(clk: number): void {
+        let enable = 1;
+        for (let i = 0; i < this.width; i++) {
+            this.flops[i].update(this.value === (1 << i) - 1 ? 1 : 0, clk);
+        }
+    }
+}
+```
+
+### 6.7.3 Up/Down Counter
+
+```typescript
+class UpDownCounter {
+    private flops: TFlipFlop[];
+    readonly width: number;
+
+    constructor(width: number) {
+        this.width = width;
+        this.flops = Array.from({ length: width }, () => new TFlipFlop());
+    }
+
+    get value(): number {
+        let val = 0;
+        for (let i = 0; i < this.width; i++) {
+            val |= (this.flops[i].Q << i);
+        }
+        return val;
+    }
+
+    tick(up: number, clk: number): void {
+        const cur = this.value;
+        for (let i = 0; i < this.width; i++) {
+            const allLowerOnes = ((cur & ((1 << i) - 1)) === ((1 << i) - 1)) ? 1 : 0;
+            const allLowerZeros = ((cur & ((1 << i) - 1)) === 0) ? 1 : 0;
+            const toggle = up === 1 ? allLowerOnes : allLowerZeros;
+            this.flops[i].update(toggle, clk);
+        }
+    }
+}
+```
+
+### 6.7.4 Ring Counter
+
+A ring counter is a shift register with the serial output fed back to the serial input. It produces a single 1 that circulates through the register.
+
+```typescript
+class RingCounter {
+    private sr: ShiftRegister;
+    readonly width: number;
+
+    constructor(width: number) {
+        this.width = width;
+        this.sr = new ShiftRegister(width);
+    }
+
+    init(): void {
+        // No clean way to set initial state in this model
+        // In hardware, use a preset/reset to set Q₀=1, others=0
+    }
+
+    tick(clk: number): void {
+        const serialOut = this.sr.shift(this.sr.value, clk);
+    }
+
+    get value(): number { return this.sr.value; }
+}
+```
+
+## 6.8 Timing Analysis
+
+### 6.8.1 Setup and Hold Time
+
+**Setup time (tₛᵤ):** the minimum time data must be stable **before** the clock edge.
+**Hold time (tₕ):** the minimum time data must be stable **after** the clock edge.
+
+```text
+          _________         _________
+Clock   _|         |_______|         |______
+          |  tsetup |
+Data    XXXXXXXXXXXX|XXXXXXXXX
+                    |  thold  |
+Data    XXXXXXXXXXXX|XXXXXXXXX
+```
+
+```typescript
+function checkTiming(
+    dataTransition: number,  // time of last data change
+    clockEdge: number,
+    tSetup: number,
+    tHold: number
+): boolean {
+    const actualSetup = clockEdge - dataTransition;
+    const actualHold = dataTransition - clockEdge; // negative if after edge
+
+    if (actualSetup < tSetup) {
+        console.log(`Setup violation: ${actualSetup} < ${tSetup}`);
+        return false;
+    }
+    if (actualHold < tHold) {
+        console.log(`Hold violation: ${actualHold} < ${tHold}`);
+        return false;
+    }
+    return true;
+}
+
+// For a flip-flop with 2ns setup and 1ns hold
+console.log(checkTiming(8, 10, 2, 1));  // true (2ns setup, 2ns hold margin)
+console.log(checkTiming(9.5, 10, 2, 1)); // false (0.5ns setup violation)
+```
+
+### 6.8.2 Clock Skew
+
+Clock skew is the difference in arrival time of the clock at different flip-flops. It can causehold violations if the destination flip-flop receives the clock later than the source.
+
+```
+t_c > tₕ + t_skew  →  hold failure
+```
+
+```mermaid
+graph LR
+    CLK_SRC[Clock Source] --> |Long wire| FF1[FF₁]
+    CLK_SRC --> |Short wire| FF2[FF₂]
+    subgraph "Clock Skew"
+        SK[Δt = t₂ - t₁]
+    end
+    FF1 --> FF2
+```
+
+### 6.8.3 Maximum Clock Frequency
+
+The minimum clock period is determined by:
+
+```
+T_min ≥ t_clk-to-Q + t_logic_max + t_su + t_skew
+```
+
+Where:
+- t_clk-to-Q: clock-to-output delay of the flip-flop
+- t_logic_max: maximum combinational logic delay
+- t_su: setup time of the receiving flip-flop
+- t_skew: clock skew (adds margin if present)
+
+```typescript
+function maxFreq(
+    tClkQ: number, tLogic: number, tSetup: number, tSkew: number
+): number {
+    const Tmin = tClkQ + tLogic + tSetup + tSkew;
+    return 1 / (Tmin * 1e-9); // frequency in Hz (times in ns)
+}
+
+console.log(`${maxFreq(0.5, 5, 0.3, 0.2)} MHz`); // ~166.7 MHz
+```
+
+## 6.9 Metastability
+
+**Metastability** occurs when a flip-flop's input changes within the setup/hold window, causing the output to enter an undefined voltage state that can take arbitrarily long to resolve.
+
+```mermaid
+graph LR
+    D[Data] --> FF[DFF]
+    CLK[Clock] --> FF
+    FF --> Q[Q]
+    FF --> |Metastable| M[Unknown]
+    style M fill:#faa,stroke:#f00,stroke-width:2px
+```
+
+### 6.9.1 Mean Time Between Failures (MTBF)
+
+```
+MTBF = exp(t_res / τ) / (f_clk · f_data · t_W)
+```
+
+Where τ is the flip-flop's metastability time constant and t_W is the sampling window.
+
+```typescript
+function mtbf(tRes: number, tau: number, fClk: number, fData: number, tW: number): number {
+    return Math.exp(tRes / tau) / (fClk * fData * tW);
+}
+
+// Typical values: τ = 0.1ns, tW = 0.05ns, fClk=100MHz, fData=10MHz
+console.log(`${mtbf(2e-9, 0.1e-9, 100e6, 10e6, 0.05e-9)} seconds`); // ≈ 5.4e7 s
+```
+
+### 6.9.2 Synchroniser Chain
+
+To mitigate metastability when crossing clock domains, cascade two (or more) flip-flops:
+
+```typescript
+class Synchronizer {
+    private ff1: DFlipFlop;
+    private ff2: DFlipFlop;
+
+    constructor() {
+        this.ff1 = new DFlipFlop();
+        this.ff2 = new DFlipFlop();
+    }
+
+    synchronize(asyncData: number, clk: number): number {
+        this.ff1.update(asyncData, clk);
+        this.ff2.update(this.ff1.Q, clk);
+        return this.ff2.Q;
+    }
+}
+```
+
+## 6.10 Flip-Flop Timing Parameters in Practice
+
+| Parameter | 74LS74 (TTL) | 74HC74 (CMOS) | 74LVC1G74 (LVCMOS) |
+|-----------|--------------|---------------|--------------------|
+| t_clk-to-Q | 15 ns       | 30 ns         | 3.7 ns             |
+| t_su      | 20 ns        | 16 ns         | 2.0 ns             |
+| t_h       | 5 ns         | 3 ns          | 0.5 ns             |
+| Max freq  | 25 MHz       | 30 MHz        | 200 MHz            |
+| τ (MTBF)  | 0.3 ns       | 0.15 ns       | 0.05 ns            |
+
+## Practical Takeaways
+
+1. **Use D flip-flops for most designs** — they are the simplest to work with and map directly to register-transfer-level (RTL) code
+2. **Never gate the clock** — use clock enable signals instead; gated clocks introduce skew and glitches
+3. **Synchronous design avoids race conditions** — edge-triggered flip-flops with a single clock domain eliminate most timing hazards
+4. **Always synchronise asynchronous inputs** — a two-flip-flop synchroniser gives MTBF in the range of years at typical clock frequencies
+5. **Keep timing margins** — account for process, voltage, and temperature (PVT) variation in addition to setup/hold requirements
 
 ## Summary
 
-- Sequential circuits incorporate memory; outputs depend on both inputs and state.
-- Mealy machines compute outputs from state and inputs; Moore machines compute outputs from state only.
-- State diagrams and state tables are the primary design representations.
-- Counters are sequential circuits that cycle through a predetermined state sequence.
-- Sequence detectors recognise specific input patterns.
-- State minimisation reduces circuit complexity by merging equivalent states.
+This chapter introduced the core building blocks of sequential circuits. We covered the behaviour of latches and flip-flops (SR, D, JK, T), their characteristic and excitation tables, and the timing constraints that govern their reliable operation. Registers, shift registers, and counters were presented as practical applications, from simple storage to universal shift registers and synchronous counters. The critical concepts of setup/hold time, clock skew, and metastability provide the foundation for reliable sequential system design. The next chapter systematises these elements into finite state machines — the formal framework for controlling sequential behaviour.
+
+## Chapter Quiz
+
+**Q1.** Which flip-flop type is the most universal (can emulate all others)?
+a) D
+b) SR
+c) JK
+d) T
+
+**Q2.** The minimum clock period in a sequential circuit depends on:
+a) t_clk-to-Q + t_logic + t_su
+b) t_clk-to-Q + t_logic
+c) t_clk-to-Q + t_su
+d) t_logic + t_su
+
+**Q3.** A transparent D latch samples its input when:
+a) The clock is low
+b) The enable is asserted
+c) The clock rises
+d) The clock falls
+
+**Q4.** Metastability is resolved by:
+a) Lowering the clock frequency
+b) Using a two-flip-flop synchroniser
+c) Adding a Schmitt trigger
+d) Increasing the supply voltage
+
+**Q5.** In a synchronous up-counter, the T input of bit i is:
+a) The AND of Q₀ through Qᵢ₋₁
+b) The OR of Q₀ through Qᵢ₋₁
+c) The XOR of all lower bits
+d) Always 1
+
+### Answers
+
+Q1: c | Q2: a | Q3: b | Q4: b | Q5: a
 
 ## Exercises
 
-### Review Questions
+1. **Flip-flop conversion:** Design a JK flip-flop using a D flip-flop and external logic. Implement the excitation logic and verify with TypeScript.
 
-1. What is the fundamental difference between combinational and sequential circuits?
-2. Compare Mealy and Moore machine models. Which requires fewer states for the same behaviour?
-3. Define state minimisation. Why is it important?
-4. How does a synchronous counter differ from a ripple counter?
-5. What is a sequence detector?
+2. **Excitation table practice:** Given a desired state machine with states S₀→S₁→S₂→S₃→S₀, determine the JK input equations for each flip-flop.
 
-### Application Problems
+3. **8-bit register with reset:** Extend the EnabledRegister class with an asynchronous reset input that forces all outputs to 0.
 
-1. Design a synchronous 3-bit up-down counter using JK flip-flops. An input U controls the direction: U = 1 for up, U = 0 for down. Show the state diagram and circuit.
+4. **LFSR:** Implement a 4-bit linear feedback shift register (LFSR) with polynomial x⁴ + x³ + 1. Generate the full 15-state sequence (non-zero states).
 
-2. Design a Mealy sequence detector for the pattern 101 (non-overlapping). Show the state diagram, state table, and flip-flop input equations using D flip-flops.
+5. **Timing analysis:** For a circuit with t_clk-to-Q = 1ns, t_logic = 8ns, t_su = 0.5ns, t_skew = 0.3ns, compute (a) maximum clock frequency and (b) MTBF with f_data = 5 MHz, τ = 0.1ns, t_W = 0.03ns.
 
-3. Convert the Mealy machine from Problem 2 to an equivalent Moore machine. Compare the state counts.
+6. **Dual-clock FIFO:** Design a synchroniser for passing a 2-bit Gray-coded pointer between clock domains. Explain why Gray encoding is preferred.
 
-4. Design a synchronous BCD counter using T flip-flops. Derive the input equations for all four T inputs.
+7. **Counter with reset:** Implement a synchronous 8-bit counter that resets to 0 when an external reset line is asserted. Include a count-enable input.
 
-5. A 5-bit Johnson counter is initialised to 00000. List the complete state sequence and determine the number of unique states.
+8. **Johnson counter:** Design and simulate a 4-bit Johnson counter (twisted ring counter) that produces 8 unique states. Compare its state sequence with a standard ring counter.
 
-### Challenge Problem
+9. **Hold time fix:** A critical path has a hold time violation when t_skew = 200ps. Propose three solutions and analyse their impact on maximum clock frequency.
 
-Design a 4-bit universal shift register using JK flip-flops. The register supports four operations controlled by S_1 and S_0:
-- S_1 S_0 = 00: Hold (no change)
-- S_1 S_0 = 01: Shift right (serial input SR)
-- S_1 S_0 = 10: Shift left (serial input SL)
-    - S_1 S_0 = 11: Parallel load (inputs P_3, P_2, P_1, P_0)
-
-Derive the J and K input equations for each flip-flop and draw the complete circuit.
-
-### Chapter Quiz
-
-1. In a Mealy machine, the output depends on:
-   - A) Current state only
-   - B) Input only
-   - C) Current state and input
-   - D) Next state only
-
-2. A synchronous counter differs from a ripple counter because:
-   - A) All flip-flops share the same clock
-   - B) It uses fewer flip-flops
-   - C) It counts only up
-   - D) It needs no combinational logic
-
-3. State minimisation:
-   - A) Increases circuit speed
-   - B) Removes equivalent states to reduce complexity
-   - C) Converts Mealy to Moore
-   - D) Adds more flip-flops
-
-<details>
-<summary>Answers</summary>
-1. C, 2. A, 3. B
-</details>
+10. **Power analysis:** Estimate the dynamic power consumption of an 8-bit synchronous counter vs. a ripple counter at 100 MHz, assuming each flip-flop transition consumes 20 pJ. Which is more power-efficient and why?

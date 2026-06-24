@@ -1,6 +1,6 @@
-# Chapter 13: Space Complexity
+# Chapter 14: Space Complexity
 
-> **Previous:** [Time Complexity](./12-time-complexity.md) | **Next:** [Advanced Complexity Topics](./14-advanced-complexity.md)
+> **Previous:** [Time Complexity](./13-time-complexity.md) | **Next:** [Advanced Complexity Topics](./15-advanced-complexity.md)
 
 
 
@@ -303,16 +303,26 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 **B)** The space hierarchy theorem gives L ⊂ PSPACE, while P vs NP remains open.
 </details>
 
+## Practical Takeaways
+
+1. **Space is more structured than time.** While the P vs NP question remains open, the space hierarchy has been fully characterized: L ≠ PSPACE and PSPACE ≠ EXPSPACE are proven. Space complexity admits cleaner mathematical analysis.
+
+2. **The configuration graph technique is powerful.** Space complexity proofs rely on the observation that a machine's behavior can be represented as a graph of configurations. Reachability in this graph determines acceptance, and graph reachability is in NL.
+
+3. **Savitch's theorem has a surprising consequence.** Because NPSPACE = PSPACE, nondeterminism doesn't help with space the way it does with time. This means PSPACE-complete problems cannot be solved efficiently by simply guessing and verifying.
+
+4. **PSPACE-complete problems are harder than NP-complete ones.** While NP-complete problems like SAT have practical solvers, PSPACE-complete problems like QBF (quantified Boolean formulas) are exponentially harder. Generalized games (chess, Go) are PSPACE-hard.
+
 ## Summary
 
 - Space complexity measures the maximum tape cells used during computation.
 - L = O(log n) space; NL = nondeterministic O(log n) space.
-- Savitch's theorem: NSPACE(s) âŠ† SPACE(sÂ²), so NPSPACE = PSPACE.
+- Savitch's theorem: NSPACE(s) ⊆ SPACE(s²), so NPSPACE = PSPACE.
 - PSPACE = polynomial space; PSPACE-complete problems include QBF, GEOGRAPHY, and generalized games.
-- L âŠ† NL âŠ† P âŠ† NP âŠ† PSPACE, but some containments are not known to be strict.
-- NL = co-NL (Immerman-SzelepcsÃ©nyi theorem).
+- L ⊆ NL ⊆ P ⊆ NP ⊆ PSPACE, but some containments are not known to be strict.
+- NL = co-NL (Immerman-Szelepcsényi theorem).
 - The configuration graph approach is central to space complexity proofs.
-- Space hierarchy is strict (L âŠ‚ PSPACE âŠ‚ EXPSPACE), unlike the time hierarchy where P vs PSPACE is unknown.
+- Space hierarchy is strict (L ⊂ PSPACE ⊂ EXPSPACE), unlike the time hierarchy where P vs PSPACE is unknown.
 
 ## Exercises
 
@@ -339,3 +349,92 @@ Thus A â‰¤_L PATH, and PATH is NL-complete.
 13. Show that the problem of deciding whether two regular expressions with exponentiation (a^n means a repeated n times) denote different languages is PSPACE-complete.
 14. Prove that GEOGRAPHY (the game) is PSPACE-complete.
 15. Show that the space hierarchy is strict: SPACE(n) âŠ‚ SPACE(nÂ²).
+
+## Further Reading
+
+- **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapter 8 covers space complexity with Savitch's theorem and PSPACE-completeness.
+- **Arora, Sanjeev and Barak, Boaz.** *Computational Complexity: A Modern Approach*. Chapters 4 and 7 provide detailed coverage of space complexity and the polynomial hierarchy.
+- **Papadimitriou, Christos H.** *Computational Complexity*. Chapters 7-8 give a comprehensive treatment of space complexity and the Immerman-Szelepcsenyi theorem.
+- **Stockmeyer, Larry and Chandra, Ashok K.** "Provably Difficult Combinatorial Games." SIAM Journal on Computing, 1979. A seminal paper on PSPACE-completeness of combinatorial games.
+
+
+## TypeScript Configuration Graph Example
+
+```typescript
+// Configuration graph for space-bounded Turing machines
+// Demonstrates the concept of reachability in PSPACE
+
+interface Config {
+  state: string;
+  tapeHead: number;
+  tapeContent: string;
+}
+
+function configToString(c: Config): string {
+  return c.state + "," + c.tapeHead + "," + c.tapeContent;
+}
+
+function buildConfigGraph(
+  initialState: string,
+  acceptState: string,
+  maxSpace: number,
+  maxSteps: number
+): Map<string, string[]> {
+  const graph = new Map<string, string[]>();
+
+  function explore(
+    state: string,
+    head: number,
+    tape: string,
+    depth: number
+  ): void {
+    if (depth > maxSteps) return;
+    if (tape.length > maxSpace) return;
+
+    const current = configToString({ state, tapeHead: head, tapeContent: tape });
+    if (graph.has(current)) return;
+
+    const neighbors: string[] = [];
+    const symbol = head < tape.length ? tape[head] : "_";
+
+    // Simulate transitions
+    const transitions = generateTransitions(state, symbol);
+    for (const t of transitions) {
+      let newTape = tape;
+      if (head < newTape.length) {
+        newTape = newTape.substring(0, head) + t.write + newTape.substring(head + 1);
+      } else {
+        newTape += t.write;
+      }
+
+      const newHead = head + (t.move === "R" ? 1 : -1);
+      if (newHead < 0) {
+        newTape = "_" + newTape;
+        head = 0;
+      }
+
+      const neighbor = configToString({
+        state: t.nextState,
+        tapeHead: Math.max(0, newHead),
+        tapeContent: newTape
+      });
+      neighbors.push(neighbor);
+    }
+
+    graph.set(current, neighbors);
+
+    for (const n of neighbors) {
+      const parts = n.split(",");
+      explore(parts[0], parseInt(parts[1]), parts.slice(2).join(","), depth + 1);
+    }
+  }
+
+  explore(initialState, 0, "_", 0);
+  return graph;
+}
+
+function generateTransitions(state: string, symbol: string): any[] {
+  return [{ write: symbol, move: "R", nextState: state }];
+}
+```
+

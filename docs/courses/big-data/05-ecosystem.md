@@ -375,6 +375,24 @@ decision = {
 **B) Monotonically increasing keys cause hot spotting on a single region server.** Sequential keys (like timestamps) route all writes to one region, creating a bottleneck. Salting or hashing the key prefix distributes writes across all region servers.
 </details>
 
+## Practical Takeaways
+
+| Tool | When to Use | When NOT to Use |
+|------|-------------|-----------------|
+| Hive | Legacy batch ETL on HDFS, ACID requirements | Interactive queries, ML workloads |
+| HBase | Low-latency KV lookups, time-series (salted keys) | Full-table scans, complex joins |
+| Kafka | Event ingestion, streaming pipeline, decoupling microservices | Simple point-to-point messaging |
+| Spark SQL | Unified batch + streaming + ML | Pure SQL (use Presto), low-latency KV (use HBase/DynamoDB) |
+| Presto/Trino | Interactive ad-hoc SQL on data lake | Heavy ETL, long-running batch jobs |
+
+### Cloud Migration Decision Guide
+
+1. **Start small:** Migrate one pipeline at a time (Hive → Spark SQL)
+2. **Storage first:** Move HDFS to S3/GCS (retain data format)
+3. **Compute second:** Replace MapReduce with Spark (EMR/Dataproc)
+4. **Streaming:** Keep Kafka or use managed MSK/Confluent
+5. **SQL layer:** Replace Hive with Athena/Presto for interactive queries
+
 ## Summary
 
 - Hive provides SQL-on-HDFS but is being replaced by Spark SQL and Presto for most use cases.

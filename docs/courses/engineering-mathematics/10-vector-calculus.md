@@ -206,7 +206,23 @@ $$= \int_0^{\pi/2} \cos(2t)\,dt = \left[\frac{\sin(2t)}{2}\right]_0^{\pi/2} = 0$
 
 Note: $\mathbf{F} = \nabla(xy)$, so $\mathbf{F}$ is conservative. The integral depends only on endpoints: $xy|_{(0,1)} - xy|_{(1,0)} = 0 - 0 = 0$. ✓
 
-### Example 2: Green's Theorem
+### Example 2: Green's Theorem for Area
+
+Use Green's theorem to find the area of the ellipse $\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$.
+
+**Solution:**
+Area formula: $A = \frac{1}{2}\oint_C x\,dy - y\,dx$
+
+Parametrize ellipse: $x = a\cos t$, $y = b\sin t$, $0 \leq t \leq 2\pi$
+
+$dx = -a\sin t\,dt$, $dy = b\cos t\,dt$
+
+$$A = \frac{1}{2}\int_0^{2\pi} [(a\cos t)(b\cos t) - (b\sin t)(-a\sin t)]\,dt$$
+$$= \frac{1}{2}\int_0^{2\pi} (ab\cos^2 t + ab\sin^2 t)\,dt = \frac{ab}{2}\int_0^{2\pi} dt = \pi ab$$
+
+This confirms the known area formula for an ellipse.
+
+### Example 3: Green's Theorem
 
 Use Green's theorem to evaluate $\oint_C (x^2 + y)\,dx + (y^2 + x)\,dy$ where $C$ is the triangle with vertices $(0,0)$, $(1,0)$, $(0,1)$.
 
@@ -305,6 +321,63 @@ The divergence term $\nabla_x \cdot s_\theta$ comes from integration by parts of
 $$\frac{d\mathbf{a}(t)}{dt} = -\mathbf{a}(t)^T \frac{\partial f_\theta(\mathbf{z}(t), t)}{\partial \mathbf{z}}$$
 
 Show that if $f_\theta = \nabla \phi_\theta$ (a gradient field), then the dynamics $\frac{d\mathbf{z}}{dt} = \nabla \phi_\theta(\mathbf{z})$ is a gradient flow. Prove that in this case, $\phi_\theta$ decreases monotonically along trajectories.
+
+## Practical Takeaways
+
+| Theorem | 2D/3D | Connects | Key Application |
+|---------|-------|----------|-----------------|
+| Green's | 2D | Line integral ↔ Area integral | Computing area, flux in 2D |
+| Stokes' | 3D | Line integral ↔ Surface integral | Circulation, electromagnetism |
+| Divergence | 3D | Surface integral ↔ Volume integral | Flux, conservation laws |
+
+### When to Use Each
+
+- **Check if a field is conservative:** Compute curl — if zero and domain is simply connected, it's conservative
+- **Simplify complex integrals:** If a line integral looks hard, try applying Stokes' or Green's to convert to a surface/area integral
+- **Compute flux efficiently:** If the divergence is simple, use the Divergence Theorem instead of directly integrating over the surface
+- **Physics applications:** Maxwell's equations in integral form use all three theorems
+
+## TypeScript Example: 3D Vector Field Operations
+
+```typescript
+type Vector3 = [number, number, number];
+
+function gradient(f: (x: number, y: number, z: number) => number,
+                  p: Vector3, h: number = 1e-5): Vector3 {
+  const [x, y, z] = p;
+  return [
+    (f(x + h, y, z) - f(x - h, y, z)) / (2 * h),
+    (f(x, y + h, z) - f(x, y - h, z)) / (2 * h),
+    (f(x, y, z + h) - f(x, y, z - h)) / (2 * h),
+  ];
+}
+
+function divergence(F: (p: Vector3) => Vector3,
+                    p: Vector3, h: number = 1e-5): number {
+  const [x, y, z] = p;
+  const Fval = F(p);
+  // Numerical divergence using central differences
+  const dFdx = (F([x + h, y, z])[0] - F([x - h, y, z])[0]) / (2 * h);
+  const dFdy = (F([x, y + h, z])[1] - F([x, y - h, z])[1]) / (2 * h);
+  const dFdz = (F([x, y, z + h])[2] - F([x, y, z - h])[2]) / (2 * h);
+  return dFdx + dFdy + dFdz;
+}
+
+// Example: F(x,y,z) = [x², y², z²]
+const F_field = (p: Vector3): Vector3 => [p[0]**2, p[1]**2, p[2]**2];
+console.log(divergence(F_field, [1, 2, 3])); // ≈ 2+4+6 = 12
+```
+
+### Example 6: Conservation Laws and Divergence-Free Fields
+
+Show that $\mathbf{F} = \langle y^2, x^2, 0 \rangle$ is not divergence-free.
+
+**Solution:**
+$\nabla \cdot \mathbf{F} = \frac{\partial(y^2)}{\partial x} + \frac{\partial(x^2)}{\partial y} + \frac{\partial(0)}{\partial z} = 0 + 0 + 0 = 0$
+
+This field IS divergence-free! This means the net flux through any closed surface is zero, representing an incompressible flow in 2D.
+
+**Physical interpretation:** A divergence-free vector field represents a source-free flow — whatever flows into a region must flow out. This is the mathematical basis of incompressible fluid dynamics and conservation of mass.
 
 ## Notation Reference
 

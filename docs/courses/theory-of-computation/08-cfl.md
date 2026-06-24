@@ -1,6 +1,6 @@
-# Chapter 7: Properties of Context-Free Languages
+# Chapter 8: Properties of Context-Free Languages
 
-> **Previous:** [Pushdown Automata](./06-pda.md) | **Next:** [Turing Machines](./08-turing.md)
+> **Previous:** [Pushdown Automata](./07-pda.md) | **Next:** [Turing Machines](./09-turing.md)
 
 
 
@@ -307,15 +307,25 @@ This construction works because the DFA's finite memory can be absorbed into the
 **B)** Greibach Normal Form: A → aα where a is a terminal and α is a string of variables.
 </details>
 
+## Practical Takeaways
+
+1. **Normal forms are parsing prerequisites.** Before applying any parsing algorithm (CYK, Earley, LR), convert the grammar to CNF or GNF. This standardization simplifies implementation and guarantees correctness.
+
+2. **Closure properties determine language class membership.** If a language is the intersection of two CFLs and you need to recognize it, you'll need a context-sensitive grammar or accept using a Turing machine — CFL intersection is not context-free.
+
+3. **Undecidability starts with CFLs.** While many regular language problems are decidable, CFL equivalence and ambiguity are undecidable. When designing programming languages, ambiguity must be proven manually, not automatically.
+
+4. **The CYK algorithm is a practical parser.** With O(n³) time and O(n²) space, CYK is one of the most practical general CFG parsing algorithms. It handles all context-free grammars without restriction.
+
 ## Summary
 
 - The pumping lemma for CFLs provides two pumpable substrings (v and y).
 - Ogden's lemma strengthens the pumping lemma with marked positions.
 - CFLs are closed under union, concatenation, star, reversal, homomorphism, and intersection with regular languages.
 - CFLs are NOT closed under intersection or complement.
-- Chomsky Normal Form restricts productions to A â†’ BC or A â†’ a (plus S â†’ Îµ).
-- Greibach Normal Form restricts productions to A â†’ aÎ± (terminal first).
-- The CYK algorithm parses any CFG in CNF in O(nÂ³) time.
+- Chomsky Normal Form restricts productions to A → BC or A → a (plus S → ε).
+- Greibach Normal Form restricts productions to A → aα (terminal first).
+- The CYK algorithm parses any CFG in CNF in O(n³) time.
 - Several important problems (equivalence, ambiguity) are undecidable for CFLs.
 
 ## Exercises
@@ -338,8 +348,90 @@ This construction works because the DFA's finite memory can be absorbed into the
 
 ### Advanced
 
-11. Prove that the CYK algorithm runs in O(nÂ³) time and O(nÂ²) space.
-12. Show that { aáµ– | p is prime } is not context-free.
-13. Prove that if L is a CFL and R is regular, then L âˆ’ R is a CFL.
-14. Show that the grammar S â†’ aSb | aSbb | Îµ is inherently ambiguous by finding a string with two distinct parse trees.
-15. Prove the full pumping lemma for CFLs. Start with a grammar in CNF, show that a parse tree for a long string must have a path with a repeated variable, and use this to construct the uvâ±xyâ±z decomposition.
+11. Prove that the CYK algorithm runs in O(n³) time and O(n²) space.
+12. Show that { a^p | p is prime } is not context-free.
+13. Prove that if L is a CFL and R is regular, then L - R is a CFL.
+14. Show that the grammar S -> aSb | aSbb | epsilon is inherently ambiguous by finding a string with two distinct parse trees.
+15. Prove the full pumping lemma for CFLs. Start with a grammar in CNF, show that a parse tree for a long string must have a path with a repeated variable, and use this to construct the uv^k xy^k z decomposition.
+
+## TypeScript CYK Parser Implementation
+
+```typescript
+type Grammar = {
+  variables: Set<string>;
+  terminals: Set<string>;
+  productions: Map<string, string[][]>;
+  start: string;
+};
+
+function cykParse(grammar: Grammar, input: string): boolean {
+  const n = input.length;
+  const table: Set<string>[][] = Array.from({ length: n }, () =>
+    Array.from({ length: n }, () => new Set<string>())
+  );
+
+  for (let i = 0; i < n; i++) {
+    const char = input[i];
+    for (const [varName, rhsList] of grammar.productions) {
+      for (const rhs of rhsList) {
+        if (rhs.length === 1 && rhs[0] === char) {
+          table[i][i].add(varName);
+        }
+      }
+    }
+  }
+
+  for (let len = 2; len <= n; len++) {
+    for (let i = 0; i <= n - len; i++) {
+      const j = i + len - 1;
+      for (let k = i; k < j; k++) {
+        for (const B of table[i][k]) {
+          for (const C of table[k + 1][j]) {
+            for (const [varName, rhsList] of grammar.productions) {
+              for (const rhs of rhsList) {
+                if (rhs.length === 2 && rhs[0] === B && rhs[1] === C) {
+                  table[i][j].add(varName);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return table[0][n - 1].has(grammar.start);
+}
+```
+
+## Further Reading
+
+- **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapter 2 covers context-free languages with thorough pumping lemma and closure property proofs.
+- **Hopcroft, John E. and Ullman, Jeffrey D.** *Introduction to Automata Theory, Languages, and Computation*. Chapters 6-7 provide an in-depth treatment of CFL pumping lemmas and closure properties.
+- **Harrison, Michael A.** *Introduction to Formal Language Theory*. A comprehensive reference covering the mathematical theory of context-free languages.
+- **Grune, Dick and Jacobs, Ceriel J. H.** *Parsing Techniques: A Practical Guide* (2nd ed.). The definitive reference on parsing algorithms including CYK, Earley, and LR parsing.
+
+## Exercises
+
+### Basic
+
+1. Prove that { a^n b^n a^n b^n | n >= 0 } is not context-free.
+2. Convert S -> aS | Sb | epsilon to CNF.
+3. Convert S -> AB, A -> aAb | epsilon, B -> cBd | epsilon to GNF.
+4. Use CYK to determine if "baaba" is generated by S -> AB, A -> a | BA, B -> b | BC, C -> a | AB.
+5. Prove that the regular language { a,b }* is context-free by giving a CFG.
+
+### Intermediate
+
+6. Prove that L = { a^n b^m c^n d^m | n, m >= 0 } is context-free by giving a grammar. Then prove { a^n b^n c^n d^n | n >= 0 } is not context-free.
+7. Use Ogden's lemma to prove { a^n b^m c^k | n, m, k >= 0, n = m or n = k } is not context-free (note: this language IS context-free — find the flaw in this proof attempt, or find the actual non-CFL to test Ogden's on).
+8. Show that CFLs are closed under reversal by constructing a new CFG.
+9. Show that the language { w in {a,b,c}* | |w|_a = |w|_b = |w|_c } is not context-free.
+10. Convert the expression grammar E -> E+T | T, T -> T*F | F, F -> (E) | i to CNF.
+
+### Advanced
+
+11. Prove that the CYK algorithm runs in O(n^3) time and O(n^2) space.
+12. Show that { a^p | p is prime } is not context-free.
+13. Prove that if L is a CFL and R is regular, then L - R is a CFL.
+14. Show that the grammar S -> aSb | aSbb | epsilon is inherently ambiguous.

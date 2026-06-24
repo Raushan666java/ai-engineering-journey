@@ -247,7 +247,23 @@ $(x_3, y_3) = (0.64, 0.36) - 0.1\langle 1.28, 1.44 \rangle = (0.512, 0.216)$, $f
 
 After 10 iterations: $(0.107, 0.007)$, $f \approx 0.012$. Converging to $(0,0)$.
 
-### Example 2: KKT Conditions
+### Example 2: Linear Programming — Simplex
+
+Maximize $z = 3x + 2y$ subject to $x + y \leq 4$, $2x + y \leq 6$, $x, y \geq 0$.
+
+**Solution:**
+Vertices of the feasible region:
+- $(0,0)$: $z = 0$
+- $(3,0)$: $z = 9$
+- $(2,2)$: intersection of $x+y=4$ and $2x+y=6$, giving $(2,2)$. $z = 3(2) + 2(2) = 10$
+- $(0,4)$: $z = 8$
+
+Optimal: $(2,2)$ with $z = 10$.
+
+**Dual Problem:** Minimize $w = 4u + 6v$ subject to $u + 2v \geq 3$, $u + v \geq 2$, $u, v \geq 0$.
+By strong duality, $w^* = z^* = 10$.
+
+### Example 4: KKT Conditions
 
 Minimize $f(x,y) = (x-1)^2 + (y-2)^2$ subject to $x + y \leq 2$, $x \geq 0$, $y \geq 0$.
 
@@ -310,6 +326,63 @@ KKT satisfied. The optimal point is $(0.5, 1.5)$ with $f = 0.25 + 0.25 = 0.5$.
 ### Challenge Problem
 
 **Duality Gap in Nonconvex Optimization:** Construct a simple nonconvex optimization problem where strong duality fails ($p^* \neq d^*$). Prove the gap and explain why convexity is required for strong duality.
+
+## Practical Takeaways
+
+| Method | Convergence | Pros | Cons |
+|--------|-------------|------|------|
+| Gradient Descent | Linear | Simple, memory-efficient | Slow near optimum, tuning needed |
+| Newton's Method | Quadratic | Very fast near optimum | $O(n^3)$ Hessian inversion |
+| BFGS (Quasi-Newton) | Superlinear | No Hessian needed | Memory $O(n^2)$ |
+| L-BFGS | Superlinear | Memory $O(mn)$ | Approximate curvature |
+| SGD | Sublinear | Scales to big data | Noisy, needs learning rate schedule |
+
+### Optimization Checklist
+
+1. **Is the problem convex?** If yes, any local minimum is global — use gradient descent or Newton
+2. **Is it large-scale ($n > 10^5$)?** Use SGD or L-BFGS (avoid full Hessian)
+3. **Are there constraints?** Use KKT conditions or transform to dual
+4. **Is it linear?** Use simplex or interior-point methods
+5. **Is the objective expensive?** Use Bayesian optimization or surrogate models
+
+## TypeScript Example: Gradient Descent
+
+```typescript
+function gradientDescent(
+  gradient: (x: number[]) => number[],
+  initial: number[],
+  learningRate: number = 0.1,
+  iterations: number = 100
+): number[] {
+  let x = [...initial];
+  for (let i = 0; i < iterations; i++) {
+    const grad = gradient(x);
+    x = x.map((xi, idx) => xi - learningRate * grad[idx]);
+  }
+  return x;
+}
+
+// Minimize f(x,y) = x^2 + 2y^2
+// Gradient: [2x, 4y]
+const result = gradientDescent(
+  (x) => [2 * x[0], 4 * x[1]],
+  [1, 1],
+  0.1,
+  100
+);
+console.log(`Minimum at (${result[0].toFixed(4)}, ${result[1].toFixed(4)})`);
+// Output: Minimum at (0.0000, 0.0000)
+```
+
+### Example 5: ADMM for Lasso Regression
+
+The Lasso problem $\min_x \frac{1}{2}\|Ax - b\|^2 + \lambda\|x\|_1$ can be solved with ADMM:
+
+$$x^{k+1} = (A^T A + \rho I)^{-1}(A^T b + \rho(z^k - u^k))$$
+$$z^{k+1} = S_{\lambda/\rho}(x^{k+1} + u^k)$$
+$$u^{k+1} = u^k + x^{k+1} - z^{k+1}$$
+
+where $S_\kappa(\cdot)$ is the soft-thresholding operator. ADMM decomposes the non-smooth $\ell_1$ penalty from the smooth least-squares term.
 
 ## Notation Reference
 

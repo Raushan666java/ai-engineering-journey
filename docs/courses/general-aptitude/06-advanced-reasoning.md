@@ -338,6 +338,27 @@ Step II: word1 word2 word5 word3 word4 (next largest moved to second last)
 
 **Answer:** Both I and II follow, with I being urgent and II being preventive.
 
+## Practical Takeaways
+
+| Section | Core Skill | Test Strategy |
+|---------|-----------|---------------|
+| Puzzles | Constraint satisfaction | Draw tables, use reference points |
+| Syllogisms | Deductive logic | Venn diagrams for 2-3 sets |
+| Critical Reasoning | Argument analysis | Identify premise vs conclusion first |
+| Input-Output | Pattern detection | Find rule from step I → step II |
+| Cause-Effect | Causal analysis | Check for common cause first |
+| Statement-Assumption | Assumption identification | Negate to test necessity |
+| Course of Action | Decision evaluation | Check feasibility + relevance + authority |
+
+### Exam Strategy for Advanced Reasoning
+
+1. **Time management:** Puzzles take the longest — solve last if time is short
+2. **Syllogisms:** Draw Venn diagrams for every question, even simple ones
+3. **Critical reasoning:** Read the argument twice — once for gist, once to separate premise from conclusion
+4. **Input-Output:** Write the rule in words before applying to the question
+5. **Data sufficiency:** Never solve completely — stop as soon as sufficiency is determined
+6. **Multiple conclusions:** Evaluate each conclusion independently
+
 ## Summary
 
 - Puzzles: organize data systematically; use grids/tables

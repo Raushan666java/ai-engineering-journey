@@ -372,6 +372,62 @@ $$S(x) = \begin{cases} 1.5x - 0.5x^3 & 0 \leq x \leq 1 \\ 1 - 1.5(x-1)^2 + 0.5(x
 
 **Gradient Descent as Numerical Method:** Show that gradient descent $x_{n+1} = x_n - \alpha f'(x_n)$ is Euler's method applied to the ODE $dx/dt = -f'(x)$. For $f(x) = x^2$, derive the condition on $\alpha$ for convergence, and show the convergence rate is linear (not quadratic like Newton).
 
+## TypeScript Implementation: Newton-Raphson Root Finder
+
+```typescript
+type ScalarFunction = (x: number) => number;
+
+function newtonRaphson(
+  f: ScalarFunction,
+  fPrime: ScalarFunction,
+  x0: number,
+  tolerance: number = 1e-7,
+  maxIterations: number = 100
+): { root: number; iterations: number; converged: boolean } {
+  let x = x0;
+  for (let i = 0; i < maxIterations; i++) {
+    const fx = f(x);
+    if (Math.abs(fx) < tolerance) {
+      return { root: x, iterations: i, converged: true };
+    }
+    const fpx = fPrime(x);
+    if (fpx === 0) {
+      return { root: x, iterations: i, converged: false };
+    }
+    x = x - fx / fpx;
+  }
+  return { root: x, iterations: maxIterations, converged: false };
+}
+
+// Find sqrt(5): solve x^2 - 5 = 0
+const result = newtonRaphson(
+  (x) => x * x - 5,
+  (x) => 2 * x,
+  2.0
+);
+console.log(`sqrt(5) ≈ ${result.root}, iterations: ${result.iterations}`);
+// Output: sqrt(5) ≈ 2.23606797749979, iterations: 4
+```
+
+## Practical Takeaways
+
+| Method | When to Use | Watch Out |
+|--------|-------------|-----------|
+| Bisection | Root on interval with sign change | Slow linear convergence |
+| Newton-Raphson | Smooth function, good initial guess | May diverge; needs derivative |
+| Secant | Derivative unavailable | Superlinear but no guaranteed convergence |
+| RK4 | Moderate accuracy ODE solving | Fixed step size may miss stiffness |
+| Monte Carlo | High-dimensional integration | Slow convergence $O(1/\sqrt{N})$ |
+| Gaussian Quadrature | Smooth functions, moderate dimension | Node/weight precomputation needed |
+
+### When to Use Each Method
+
+- **Root Finding:** Start with bisection to bracket, switch to Newton for speed
+- **Interpolation:** Use splines for smooth data; avoid high-degree Lagrange for many points
+- **Integration:** Gaussian quadrature for smooth functions; Simpson for equally spaced data; Monte Carlo for high dimensions
+- **ODEs:** RK4 as default; implicit methods (backward Euler, BDF) for stiff equations
+- **Linear Systems:** Direct methods (LU) for dense $n < 10^4$; iterative (CG, GMRES) for sparse large systems
+
 ## Notation Reference
 
 | Symbol | Meaning |

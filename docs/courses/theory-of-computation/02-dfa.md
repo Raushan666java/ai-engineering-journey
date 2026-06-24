@@ -1,10 +1,10 @@
-# Chapter 1: Deterministic Finite Automata
+# Chapter 2: Deterministic Finite Automata
 
-> **Previous:** None | **Next:** [Nondeterministic Finite Automata](./02-nfa.md)
+> **Previous:** [Introduction](./01-introduction.md) | **Next:** [Nondeterministic Finite Automata](./03-nfa.md)
 
 
 
-> **Previous:** None | **Next:** [Nondeterministic Finite Automata](./02-nfa.md)
+> **Previous:** [Introduction](./01-introduction.md) | **Next:** [Nondeterministic Finite Automata](./03-nfa.md)
 
 
 ## Learning Objectives
@@ -17,15 +17,6 @@
 - Prove properties of DFA-recognizable languages.
 
 
-
-## Chapter at a Glance
-| Topic | Key Insight | Practical Takeaway |
-|-------|------------|-------------------|
-| DFA Definition | 5-tuple (Q, Σ, δ, q₀, F) deterministic | Foundation for automata theory |
-| Transition Diagrams | Graphs showing state changes | Visual protocol debugging |
-| Extended Transition | δ̂(q, w) for whole strings | Formal acceptance model |
-| DFA Design | States = essential memory | Systematic language recognition |
-| Regular Languages | Languages recognized by DFA | Finite-memory solvable problems |
 
 
 
@@ -40,25 +31,72 @@ flowchart LR
     E --> F[Regular Languages]
 ```
 
-## Chapter at a Glance
-| Topic | Key Insight | Practical Takeaway |
-|-------|------------|-------------------|
-| DFA Definition | 5-tuple (Q, Σ, δ, q₀, F) with deterministic transitions | Foundation for all automata theory |
-| Transition Diagrams | Directed graphs representing state changes | Visual debugging of protocol logic |
-| Extended Transition Function | δ̂(q, w) generalizes δ to entire strings | Formal model for string acceptance |
-| DFA Design | States encode essential memory about input read | Systematic method for regular language recognition |
-| Regular Languages | Languages recognized by some DFA | Class of problems solvable with finite memory |
-## Theory
-## Chapter Roadmap
-`mermaid
-flowchart LR
-    A[Formal Definition] --> B[Transition Diagrams]
-    B --> C[Extended Transition Function]
-    C --> D[Language of a DFA]
-    D --> E[Design Methodology]
-    E --> F[Regular Languages]
-    F --> G[Closure Properties]
-`
+## TypeScript DFA Simulator
+
+A DFA can be implemented as a generic class in TypeScript:
+
+```typescript
+type State = string;
+type Alphabet = string;
+
+class DFA {
+  constructor(
+    private Q: Set<State>,
+    private sigma: Set<Alphabet>,
+    private delta: Map<string, State>,
+    private q0: State,
+    private F: Set<State>
+  ) {}
+
+  private transitionKey(q: State, a: Alphabet): string {
+    return `${q},${a}`;
+  }
+
+  simulate(input: string): boolean {
+    let current = this.q0;
+    for (const symbol of input) {
+      const key = this.transitionKey(current, symbol);
+      if (!this.delta.has(key)) return false;
+      current = this.delta.get(key)!;
+    }
+    return this.F.has(current);
+  }
+}
+
+// DFA for binary numbers divisible by 3
+const delta = new Map<string, State>([
+  ['q0,0', 'q0'], ['q0,1', 'q1'],
+  ['q1,0', 'q2'], ['q1,1', 'q0'],
+  ['q2,0', 'q1'], ['q2,1', 'q2'],
+]);
+const dfa = new DFA(
+  new Set(['q0', 'q1', 'q2']),
+  new Set(['0', '1']),
+  delta, 'q0', new Set(['q0'])
+);
+console.log(dfa.simulate('110'));  // true (6)
+console.log(dfa.simulate('100'));  // false (4)
+```
+
+## DFA Minimization via Table-Filling Algorithm
+
+Every regular language has a unique minimal DFA up to isomorphism. The **table-filling algorithm** (Myhill-Nerode) finds it:
+
+```mermaid
+graph TD
+    subgraph "Step 1: Mark pairs"
+        A["Mark all pairs (qᵢ, qⱼ)<br/>where qᵢ∈F, qⱼ∉F"]
+    end
+    subgraph "Step 2: Propagate"
+        B["For unmarked (qᵢ, qⱼ),<br/>if (δ(qᵢ,a), δ(qⱼ,a)) is marked,<br/>mark (qᵢ,qⱼ)"]
+    end
+    subgraph "Step 3: Merge"
+        C["Merge unmarked pairs<br/>into single states"]
+    end
+    A --> B --> C
+```
+
+The minimized DFA has the fewest possible states. Two states are **distinguishable** if there exists a string that leads from one to accept and the other to reject.
 
 
 ![DFA State Diagram - Binary Numbers Divisible by 3](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/theory-of-computation/01-dfa.png)
@@ -205,6 +243,17 @@ Transitions:
 | *qâ‚‚   | qâ‚‚ | qâ‚ƒ |
 | qâ‚ƒ    | qâ‚ƒ | qâ‚ƒ |
 
+```mermaid
+graph LR
+    q0((q₀)) -->|1| q1((q₁))
+    q1 -->|1| q2(((q₂)))
+    q2 -->|1| q3((q₃))
+    q0 -->|0| q0
+    q1 -->|0| q1
+    q2 -->|0| q2
+    q3 -->|0,1| q3
+```
+
 On 0, each state stays in itself (count of 1s doesn't change). On 1, we advance to the next state. L(M) = { w | w contains exactly two 1s }.
 
 ### Example 1.3: DFA for Binary Numbers Divisible by 3
@@ -314,8 +363,16 @@ Check: On input "110" (binary for 6): qâ‚€ â†’ qâ‚ (1) â†’ q
 **C)** The pumping lemma shows any sufficiently long string in a regular language can be "pumped"; { aⁿbⁿ } violates this property.
 </details>
 
+## Practical Takeaways
 
-## Concept Comparison Table
+1. **States encode finite memory.** Every distinct piece of information the DFA needs to remember becomes a state. If you can solve a problem while remembering only a bounded amount of information, the language is regular.
+
+2. **DFAs are everywhere in practice.** Regular expression engines, lexical analyzers (lex/flex), network protocol parsers, and UI state machines all use DFA concepts under the hood.
+
+3. **Design with purpose.** Name states for what they remember (e.g., `seen_00`, `remainder_2`). This makes the DFA self-documenting and easier to verify.
+
+4. **Complementation is free.** Given a DFA, swapping accepting and non-accepting states gives a DFA for the complement language — trivially proving closure under complement.
+
 ## Summary
 
 - A DFA is a 5-tuple (Q, Î£, Î´, qâ‚€, F) with a deterministic transition function.

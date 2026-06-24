@@ -33,32 +33,33 @@ Each chapter is structured as follows:
 ### Part I: Automata and Languages
 
 | # | Chapter | Description |
-|---|---------|-------------|
-| 1 | [Deterministic Finite Automata](01-dfa.md) | DFA definition, transition diagrams, language acceptance, DFA design |
-| 2 | [Nondeterministic Finite Automata](02-nfa.md) | NFA definition, epsilon transitions, subset construction, DFA/NFA equivalence |
-| 3 | [Regular Expressions](03-regex.md) | Regex operators, precedence, algebraic laws, Arden's lemma, FA equivalence |
-| 4 | [Properties of Regular Languages](04-regular-languages.md) | Pumping lemma, closure properties, Myhill-Nerode theorem, DFA minimization |
-| 5 | [Context-Free Grammars](05-cfg.md) | CFG definition, derivations, parse trees, ambiguity, left recursion, left factoring |
-| 6 | [Pushdown Automata](06-pda.md) | PDA definition, types, CFG/PDA equivalence, design examples |
-| 7 | [Properties of Context-Free Languages](07-cfl.md) | Pumping lemma for CFLs, closure, Chomsky/Greibach normal forms, CYK algorithm |
+|-- |---------|-------------|
+| 1 | [Introduction to the Theory of Computation](01-introduction.md) | Mathematical preliminaries, Chomsky hierarchy, problems, decidability vs recognizability |
+| 2 | [Deterministic Finite Automata](02-dfa.md) | DFA definition, transition diagrams, language acceptance, DFA design |
+| 3 | [Nondeterministic Finite Automata](03-nfa.md) | NFA definition, epsilon transitions, subset construction, DFA/NFA equivalence |
+| 4 | [Regular Expressions](04-regex.md) | Regex operators, precedence, algebraic laws, Arden's lemma, FA equivalence |
+| 5 | [Properties of Regular Languages](05-regular-languages.md) | Pumping lemma, closure properties, Myhill-Nerode theorem, DFA minimization |
+| 6 | [Context-Free Grammars](06-cfg.md) | CFG definition, derivations, parse trees, ambiguity, left recursion, left factoring |
+| 7 | [Pushdown Automata](07-pda.md) | PDA definition, types, CFG/PDA equivalence, design examples |
+| 8 | [Properties of Context-Free Languages](08-cfl.md) | Pumping lemma for CFLs, closure, Chomsky/Greibach normal forms, CYK algorithm |
 
 ### Part II: Computability Theory
 
 | # | Chapter | Description |
-|---|---------|-------------|
-| 8 | [Turing Machines](08-turing.md) | TM definition, design patterns, multitape TMs, nondeterministic TMs |
-| 9 | [Turing Machine Extensions and the Church-Turing Thesis](09-turing-extensions.md) | RE vs recursive languages, universal TM, Church-Turing thesis |
-| 10 | [Decidability](10-decidability.md) | Decidable vs undecidable problems, the halting problem, reduction technique |
-| 11 | [Reducibility and Advanced Undecidability](11-reducibility.md) | Mapping reductions, Rice's theorem, Post's correspondence problem |
+|---|---|---|---|
+| 9 | [Turing Machines](09-turing.md) | TM definition, design patterns, multitape TMs, nondeterministic TMs |
+| 10 | [Turing Machine Extensions and the Church-Turing Thesis](10-turing-extensions.md) | RE vs recursive languages, universal TM, Church-Turing thesis |
+| 11 | [Decidability](11-decidability.md) | Decidable vs undecidable problems, the halting problem, reduction technique |
+| 12 | [Reducibility and Advanced Undecidability](12-reducibility.md) | Mapping reductions, Rice's theorem, Post's correspondence problem |
 
 ### Part III: Complexity Theory
 
 | # | Chapter | Description |
-|---|---------|-------------|
-| 12 | [Time Complexity and NP-Completeness](12-time-complexity.md) | Time complexity classes P and NP, polynomial reductions, Cook-Levin theorem |
-| 13 | [Space Complexity](13-space-complexity.md) | Space complexity classes, PSPACE, Savitch's theorem, PSPACE-completeness |
-| 14 | [Advanced Complexity Topics](14-advanced-complexity.md) | L, NL, co-NP, polynomial hierarchy, circuit complexity |
-| 15 | [Applications of Automata Theory](15-applications.md) | Compilers, formal verification, AI, cryptography, programming languages |
+|---|---|---|---|
+| 13 | [Time Complexity and NP-Completeness](13-time-complexity.md) | Time complexity classes P and NP, polynomial reductions, Cook-Levin theorem |
+| 14 | [Space Complexity](14-space-complexity.md) | Space complexity classes, PSPACE, Savitch's theorem, PSPACE-completeness |
+| 15 | [Advanced Complexity Topics](15-advanced-complexity.md) | L, NL, co-NP, polynomial hierarchy, circuit complexity |
+| 16 | [Applications of Automata Theory](16-applications.md) | Compilers, formal verification, AI, cryptography, programming languages |
 
 ## Recommended Reading and References
 

@@ -1,6 +1,6 @@
-# Chapter 2: Nondeterministic Finite Automata
+# Chapter 3: Nondeterministic Finite Automata
 
-> **Previous:** [Deterministic Finite Automata](./01-dfa.md) | **Next:** [Regular Expressions](./03-regex.md)
+> **Previous:** [Deterministic Finite Automata](./02-dfa.md) | **Next:** [Regular Expressions](./04-regex.md)
 
 
 
@@ -188,6 +188,96 @@ This shows why nondeterminism simplifies **modular** automaton construction.
 
 
 
+## TypeScript NFA Simulator
+
+An NFA can be simulated by tracking all possible current states:
+
+```typescript
+class NFA {
+  constructor(
+    private Q: Set<string>,
+    private sigma: Set<string>,
+    private delta: Map<string, Set<string>>,
+    private q0: string,
+    private F: Set<string>,
+    private epsilon: Map<string, Set<string>> = new Map()
+  ) {}
+
+  private eclose(states: Set<string>): Set<string> {
+    const result = new Set(states);
+    const stack = [...states];
+    while (stack.length > 0) {
+      const q = stack.pop()!;
+      const eps = this.epsilon.get(q) || new Set();
+      for (const r of eps) {
+        if (!result.has(r)) {
+          result.add(r);
+          stack.push(r);
+        }
+      }
+    }
+    return result;
+  }
+
+  simulate(input: string): boolean {
+    let current = this.eclose(new Set([this.q0]));
+    for (const symbol of input) {
+      const next = new Set<string>();
+      for (const q of current) {
+        const trans = this.delta.get(`${q},${symbol}`) || new Set();
+        for (const r of trans) next.add(r);
+      }
+      current = this.eclose(next);
+    }
+    for (const q of current) {
+      if (this.F.has(q)) return true;
+    }
+    return false;
+  }
+}
+
+// NFA for strings ending with "01"
+const delta = new Map<string, Set<string>>();
+delta.set('q0,0', new Set(['q0', 'q1']));
+delta.set('q0,1', new Set(['q0']));
+delta.set('q1,1', new Set(['q2']));
+const nfa = new NFA(
+  new Set(['q0', 'q1', 'q2']),
+  new Set(['0', '1']),
+  delta, 'q0', new Set(['q2'])
+);
+console.log(nfa.simulate('00101'));  // true
+console.log(nfa.simulate('00100'));  // false
+```
+
+This tracks sets of states rather than a single state, implementing the subset construction's computation directly. The simulation runs in polynomial time because we store all reachable states explicitly.
+
+## NFA Computation Tree
+
+An NFA's execution on input can be visualized as a tree where each branch represents one possible path:
+
+```mermaid
+graph TD
+    q0((q₀)) -->|"read: 1"| q0_1((q₀))
+    q0 -->|"read: 1"| q1((q₁))
+    q0_1 -->|"read: 0"| q0_2((q₀))
+    q0_1 -->|"read: 0"| q1_2((q₁))
+    q1 -->|"read: 0"| q2(((q₂)))
+    q2 --- accept["✓ Accept"]
+```
+
+The NFA accepts if any leaf node is an accepting state after processing all input. The simulation implicitly performs a breadth-first search of this tree.
+
+## Practical Takeaways
+
+1. **Nondeterminism is a specification tool.** When designing an automaton, start with an NFA for clarity, then convert to a DFA for implementation. The NFA captures the *what* without worrying about the *how*.
+
+2. **Epsilon transitions enable modularity.** Use ε-transitions to compose automata like building blocks — glue together sub-automata for union, concatenation, and Kleene star.
+
+3. **Subset construction can explode.** An NFA with k states can yield a DFA with up to 2^k states. In practice, many subsets are unreachable, but the worst case is real.
+
+4. **NFA simulation is efficient.** Simulating an NFA directly (tracking state sets) takes O(k²n) time for k states and n input symbols — no need to materialize the DFA unless you need repeated simulations.
+
 ## Concept Comparison Table
 | Feature | DFA | NFA | NFA-ε |
 |---------|-----|-----|-------|
@@ -281,6 +371,18 @@ This shows why nondeterminism simplifies **modular** automaton construction.
 - The DFA may have up to exponentially more states than the NFA.
 - NFA and DFA recognize exactly the same class of languages: the regular languages.
 - Nondeterminism simplifies automaton design for many languages.
+- The subset construction is the basis for converting regex patterns into efficient matchers.
+- Understanding NFA computation trees is essential for grasping how backtracking regex engines work.
+
+## Practical Takeaways
+
+1. **Use NFAs for design, DFAs for execution.** Nondeterminism makes automata easier to design and reason about; determinism makes them efficient to execute. The subset construction bridges both worlds.
+
+2. **ε-closure is the key operation.** Every NFA-ε algorithm centers on computing ε-closure. Master this, and you understand NFA simulation, subset construction, and the conversion algorithms.
+
+3. **Exponential blowup is real but manageable.** The worst-case DFA from subset construction can be exponentially larger than the NFA. Always compute only reachable subsets — unreachable states inflate the DFA unnecessarily.
+
+4. **Nondeterminism reappears at higher levels.** NPDA > DPDA and the P vs NP question show that nondeterminism's power varies by model. Finite automata are the only model where nondeterminism adds no power at all.
 
 ## Exercises
 

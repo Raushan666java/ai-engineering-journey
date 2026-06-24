@@ -1,6 +1,6 @@
-# Chapter 10: Decidability
+# Chapter 11: Decidability
 
-> **Previous:** [Turing Machine Extensions](./09-turing-extensions.md) | **Next:** [Reducibility](./11-reducibility.md)
+> **Previous:** [Turing Machine Extensions](./10-turing-extensions.md) | **Next:** [Reducibility](./12-reducibility.md)
 
 
 
@@ -304,9 +304,19 @@ Runtime O(nÂ³) where n = |w|.
 **B)** A ≤_m B means a solution to B yields a solution to A (or undecidability of A transfers to B).
 </details>
 
+## Practical Takeaways
+
+1. **Undecidability is not hypothetical.** Problems like program equivalence, whether a program will crash, or whether two pieces of code do the same thing are all undecidable in general. Software engineers work with conservative approximations and restricted cases.
+
+2. **Diagonalization is a general proof technique.** The same technique used to prove the halting problem undecidable also proves that the real numbers are uncountable, that there are more languages than TMs, and that the halting problem for other models is undecidable.
+
+3. **Decidable vs undecidable is a spectrum.** Many problems are decidable for restricted models (DFA emptiness, CFG parsing) but undecidable in general. When facing a hard analysis problem, restrict the input model until the problem becomes decidable.
+
+4. **Reductions transfer undecidability.** To prove a new problem undecidable, show it can solve a known undecidable problem. This is the standard toolkit: halting → acceptance → emptiness → equivalence → all non-trivial TM properties.
+
 ## Summary
 
-- The halting problem (does TM M halt on w?) is undecidable â€” proved via diagonalization.
+- The halting problem (does TM M halt on w?) is undecidable — proved via diagonalization.
 - A_TM (does TM M accept w?) is undecidable but RE.
 - Reductions show new problems are undecidable by relating them to known undecidable problems.
 - All problems about DFAs (membership, emptiness, equivalence) are decidable.
@@ -339,3 +349,68 @@ Runtime O(nÂ³) where n = |w|.
 13. Prove that EQ_TM = { âŸ¨Mâ‚, Mâ‚‚âŸ© | L(Mâ‚) = L(Mâ‚‚) } is neither RE nor co-RE.
 14. Consider the language S = { âŸ¨MâŸ© | M accepts all palindromes }. Is it decidable? Prove your answer.
 15. Prove that there is no algorithm that, given a TM M, determines whether M halts on all inputs of even length.
+
+## Further Reading
+
+- **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapter 4 covers decidability with detailed proofs of the halting problem and other undecidable languages.
+- **Hopcroft, John E., Motwani, Rajeev, and Ullman, Jeffrey D.** *Introduction to Automata Theory, Languages, and Computation* (3rd ed.). Chapter 9 provides an in-depth treatment of undecidability and Rice's theorem.
+- **Davis, Martin.** *The Undecidable: Basic Papers on Undecidable Propositions, Unsolvable Problems and Computable Functions*. A collection of original papers by Godel, Church, Turing, and Post.
+- **Arora, Sanjeev and Barak, Boaz.** *Computational Complexity: A Modern Approach*. Chapter 2 covers diagonalization and the time hierarchy theorems.
+
+
+## TypeScript Diagonalization Example
+
+```typescript
+// Simulating Cantor's diagonalization to show undecidability
+// Instead of TM descriptions, we use simple string functions
+
+type StringFunction = (s: string) => boolean;
+
+// Enumerate all possible string functions (analogous to all TMs)
+function enumerateFunctions(): StringFunction[] {
+  // In reality this is impossible for all functions,
+  // but we can show the concept with a limited set
+  const functions: StringFunction[] = [
+    (s: string) => s.length > 2,
+    (s: string) => s.startsWith("a"),
+    (s: string) => s === s.split("").reverse().join(""),
+    (s: string) => /^\d+$/.test(s),
+  ];
+  return functions;
+}
+
+// Enumerate all possible strings
+function enumerateStrings(): string[] {
+  const alphabet = "ab";
+  const strings: string[] = [];
+  for (let len = 1; len <= 3; len++) {
+    for (let i = 0; i < Math.pow(alphabet.length, len); i++) {
+      let s = "";
+      let n = i;
+      for (let j = 0; j < len; j++) {
+        s = alphabet[n % alphabet.length] + s;
+        n = Math.floor(n / alphabet.length);
+      }
+      strings.push(s);
+    }
+  }
+  return strings;
+}
+
+// Diagonal function that differs from every enumerated function
+function diagonalFunction(s: string): boolean {
+  const funcs = enumerateFunctions();
+  const strings = enumerateStrings();
+  const idx = strings.indexOf(s);
+  if (idx >= 0 && idx < funcs.length) {
+    // Flip the result - guarantees difference
+    return !funcs[idx](s);
+  }
+  return false;
+}
+
+// Proof: diagonalFunction differs from every function in the enumeration
+// For function f_i at index i, diagonalFunction(strings[i]) != f_i(strings[i])
+// This is the same technique used to prove the halting problem undecidable
+```
+

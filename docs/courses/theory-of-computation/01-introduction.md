@@ -1,0 +1,400 @@
+# Chapter 1: Introduction to the Theory of Computation
+
+> **Previous:** None | **Next:** [Deterministic Finite Automata](./02-dfa.md)
+
+## Learning Objectives
+
+- Define the basic mathematical objects: alphabets, strings, languages, problems.
+- Explain the Chomsky hierarchy and the four levels of formal languages.
+- Distinguish between decision problems, optimization problems, and function problems.
+- Understand the difference between a problem being decidable vs. merely recognizable.
+- Relate automata theory, computability theory, and complexity theory to real computing.
+
+## Mathematical Preliminaries
+
+### Sets
+
+A **set** is an unordered collection of distinct elements, written with curly braces.
+
+```text
+A = {0, 1, 2, 3}
+B = {x ∈ ℕ | x is prime}
+```
+
+Basic set operations include union (∪), intersection (∩), difference (−), and complement (‾). The **power set** of A, written 𝒫(A) or 2^A, is the set of all subsets of A.
+
+```typescript
+// Set operations in TypeScript
+const A = new Set([0, 1, 2, 3]);
+const B = new Set([2, 3, 4, 5]);
+const union = new Set([...A, ...B]);          // {0,1,2,3,4,5}
+const intersection = new Set([...A].filter(x => B.has(x))); // {2,3}
+```
+
+**Cartesian product** A × B = {(a,b) | a ∈ A, b ∈ B} is the set of all ordered pairs. This is the foundation for transition functions in automata.
+
+### Relations and Functions
+
+A **relation** R ⊆ A × B is a set of ordered pairs. A **function** f: A → B is a relation where each a ∈ A maps to exactly one b ∈ B.
+
+```text
+f: ℕ → ℕ, f(n) = n²  // total function
+g: ℕ ↛ ℕ, g(n) = 1/n  // partial function (undefined at n=0)
+```
+
+A function is **injective** (one-to-one), **surjective** (onto), or **bijective** (both). Bijections establish that two sets have the same **cardinality**. Countably infinite sets (ℕ, ℚ) can be listed; uncountably infinite sets (ℝ, 𝒫(ℕ)) cannot — this distinction drives undecidability.
+
+### Graphs and Trees
+
+A **directed graph** G = (V, E) consists of vertices V and edges E ⊆ V × V. A **tree** is a connected acyclic graph. Automata are labeled directed graphs where vertices are states and edges are transitions.
+
+```mermaid
+graph LR
+    q0((q₀)) -->|a| q1((q₁))
+    q1 -->|b| q2(((q₂)))
+    q2 -->|a| q1
+    q0 -->|b| q0
+```
+
+### Alphabets, Strings, and Languages
+
+An **alphabet** Σ is a finite non-empty set of symbols. Examples:
+
+```text
+Σ₁ = {0, 1}              // binary alphabet
+Σ₂ = {a, b, c, …, z}     // lowercase letters
+Σ₃ = {0, 1, 2, …, 9}     // decimal digits
+```
+
+A **string** over Σ is a finite sequence of symbols from Σ. The **empty string** is denoted ε (or λ). The **length** of string w is written |w|, with |ε| = 0.
+
+The set of all strings over Σ of length k is Σ^k. The set of all strings over Σ is Σ^*. Formally:
+
+```text
+Σ^* = ∪_{k ≥ 0} Σ^k
+```
+
+A **language** L over Σ is any subset of Σ^*. That is, L ⊆ Σ^*.
+
+```text
+L₁ = {ε, 0, 1, 00, 01, 10, 11, …}  = Σ^*    (all binary strings)
+L₂ = {0^n 1^n | n ≥ 0}                    (balanced parentheses)
+L₃ = {w ∈ {a,b}^* | w has equal a's and b's}
+```
+
+```typescript
+// Representing languages as string predicates
+type Language = (w: string) => boolean;
+
+const allBinaryStrings: Language = (w) =>
+  [...w].every(c => c === '0' || c === '1');
+
+const balanced01: Language = (w) => {
+  const n = w.length;
+  if (n % 2 !== 0) return false;
+  const half = n / 2;
+  return w.slice(0, half) === '0'.repeat(half) &&
+         w.slice(half) === '1'.repeat(half);
+};
+```
+
+## The Chomsky Hierarchy
+
+Noam Chomsky (1956) proposed a hierarchy of formal grammars that organizes languages by the complexity of their generation rules. Each level corresponds to a class of automaton that can recognize it.
+
+```mermaid
+graph BT
+    subgraph Type-0
+    RE["Recursively Enumerable<br/>(Turing Machine)"]
+    end
+    subgraph Type-1
+    CS["Context-Sensitive<br/>(LBA)"]
+    end
+    subgraph Type-2
+    CF["Context-Free<br/>(Pushdown Automaton)"]
+    end
+    subgraph Type-3
+    REG["Regular<br/>(Finite Automaton)"]
+    end
+    REG --> CF --> CS --> RE
+```
+
+| Type | Grammar | Automaton | Production Form | Example Language |
+|------|---------|-----------|-----------------|------------------|
+| 3 | Regular | Finite Automaton | A → aB, A → a | {a^n b^m} |
+| 2 | Context-Free | Pushdown Automaton | A → α | {a^n b^n} |
+| 1 | Context-Sensitive | Linear Bounded Automaton | αAβ → αγβ | {a^n b^n c^n} |
+| 0 | Unrestricted | Turing Machine | α → β | {a^n | n is prime} |
+
+### Type 3: Regular Grammars
+
+Productions are of the form A → aB or A → a where A, B are non-terminals and a is a terminal. These generate exactly the regular languages recognized by finite automata.
+
+```text
+S → aS | bS | ε    // all strings over {a, b}
+S → aA | bA, A → a | b    // strings of length 1 or more
+```
+
+### Type 2: Context-Free Grammars
+
+Productions are of the form A → γ where γ is any string of terminals and non-terminals. Context-free grammars generate languages recognized by pushdown automata.
+
+```text
+S → aSb | ε    // {a^n b^n | n ≥ 0}
+```
+
+### Type 1: Context-Sensitive Grammars
+
+Productions have the form αAβ → αγβ where γ ≠ ε. A non-terminal A can be replaced only in the context of its surrounding strings α and β. These correspond to linear bounded automata.
+
+```text
+S → aSBC | aBC
+CB → BC
+aB → ab
+bB → bb
+bC → bc
+cC → cc    // {a^n b^n c^n | n ≥ 1}
+```
+
+### Type 0: Unrestricted Grammars
+
+Productions have the form α → β where |α| ≤ |β|. No restrictions. These correspond exactly to Turing machines in generative power.
+
+## Problems as Languages
+
+A **decision problem** asks whether a given input satisfies a property. Every decision problem corresponds to a language: the set of strings that encode "yes" instances.
+
+```text
+PRIME = { binary representations of prime numbers }
+HALT = { descriptions of programs that halt on their own input }
+SAT = { Boolean formulas that have a satisfying assignment }
+```
+
+An **optimization problem** asks for the best solution among many. These can often be reformulated as repeated decision problems.
+
+```text
+TSP-OPT: Given cities and distances, find the shortest tour.
+TSP-DEC: Given cities, distances, and bound k, is there a tour ≤ k?
+```
+
+A **function problem** asks for a specific output value relative to the input.
+
+```text
+MULT: Given (x, y), compute x × y.
+```
+
+```typescript
+// Encoding problems as languages
+function encodeBinary(n: number): string {
+  return n.toString(2);
+}
+
+function isPrime(n: number): boolean {
+  if (n < 2) return false;
+  for (let i = 2; i * i <= n; i++) {
+    if (n % i === 0) return false;
+  }
+  return true;
+}
+
+const PRIME_Language: Language = (w) => {
+  const n = parseInt(w, 2);
+  return !isNaN(n) && isPrime(n);
+};
+```
+
+## Decidability vs. Recognizability
+
+A language L is **decidable** (or recursive) if there exists an algorithm that, for every input w, correctly determines whether w ∈ L in finite time.
+
+A language L is **recognizable** (or recursively enumerable) if there exists an algorithm that halts and accepts for every w ∈ L, but may run forever for w ∉ L.
+
+```mermaid
+graph TD
+    subgraph "All languages (uncountable)"
+        RE["Recursively Enumerable<br/>(recognizable)"]
+        subgraph REC["Decidable (recursive)"]
+            REG["Regular"]
+            CFL["Context-Free"]
+        end
+    end
+    NOTRE["Not RE<br/>(not recognizable)"]
+    RE --> NOTRE
+    style NOTRE fill:#f99,color:#000
+```
+
+Every decidable language is recognizable, but not vice versa. The halting problem is the canonical example of a recognizable but undecidable language.
+
+```typescript
+// Simulating a recognizer that may not halt
+function recognizerForHalting(program: string, input: string): string {
+  // This function cannot exist — proven by diagonalization
+  // Placeholder: the concept of recognizability
+  return "A recognizer halts and accepts for yes-instances, " +
+         "but may loop on no-instances.";
+}
+```
+
+## Overview of Pillars
+
+The Theory of Computation rests on three pillars:
+
+1. **Automata Theory** — finite and infinite-state machines that model computation. Covers DFA, NFA, PDA, Turing machines, and their language classes.
+
+2. **Computability Theory** — what can and cannot be computed. Explores the halting problem, reductions, and the limits of algorithmic solvability.
+
+3. **Complexity Theory** — how efficiently problems can be solved. Studies time and space bounds, the P vs NP question, and classification of problems by difficulty.
+
+```mermaid
+graph LR
+    subgraph "Automata Theory"
+        DFA --> NFA --> REGEX["Regex"]
+        CFG --> PDA
+        TM
+    end
+    subgraph "Computability Theory"
+        DEC["Decidable Problems"]
+        UND["Undecidable Problems"]
+        RED["Reductions"]
+    end
+    subgraph "Complexity Theory"
+        P
+        NP
+        PSPACE
+        EXP
+    end
+    TM --> DEC --> UND
+    DEC --> P
+    UND --> RED
+    P --> NP --> PSPACE --> EXP
+```
+
+## Examples
+
+### Example 1: Problem Classification
+
+Classify each problem as decision, optimization, or function:
+
+1. "Is graph G connected?" — **Decision** (yes/no answer)
+2. "Find the shortest path from s to t." — **Optimization** (best among many)
+3. "Multiply two matrices." — **Function** (compute output)
+4. "Does program P halt on input x?" — **Decision** (yes/no, also undecidable)
+
+### Example 2: Chomsky Hierarchy Placement
+
+Place each language in the Chomsky hierarchy:
+
+| Language | Grammar Type | Justification |
+|----------|-------------|---------------|
+| {0^n 1^m} | Regular (Type 3) | Can be recognized by DFA |
+| {0^n 1^n} | Context-Free (Type 2) | Requires counting, PDA suffices |
+| {0^n 1^n 0^n} | Context-Sensitive (Type 1) | Two counters, context needed |
+| {0^p | p is prime} | Unrestricted (Type 0) | Prime checking is Turing-complete |
+
+## Practical Takeaways
+
+1. **Every yes/no problem is a language.** This encoding insight lets us apply automata theory to any computational problem.
+
+2. **The Chomsky hierarchy gives a complexity roadmap.** When designing a parser or recognizer, choose the weakest grammar class that can express your language — regular for tokenization, context-free for syntax, context-sensitive for semantic analysis.
+
+3. **Not all problems are solvable.** Recognizing undecidability early saves engineering effort. If your problem can encode the halting problem, it has no general algorithmic solution.
+
+4. **P vs NP affects real systems.** NP-complete problems (SAT, TSP, knapsack) appear constantly in scheduling, optimization, and verification. Understanding their nature helps choose between exact algorithms, heuristics, and approximation schemes.
+
+## Summary
+
+The Theory of Computation provides the mathematical foundations for understanding what computers can and cannot do. Key concepts include:
+
+- **Alphabets, strings, and languages** form the basic vocabulary
+- **The Chomsky hierarchy** classifies languages by generative complexity
+- **Decision problems** are equivalent to language membership
+- **Decidability** separates solvable from unsolvable problems
+- **Three pillars** — automata, computability, complexity — build on each other
+
+## Chapter Quiz
+
+1. Which of the following is NOT a valid alphabet?
+   - a) {0, 1}
+   - b) {a, b, c}
+   - c) {ε, 0, 1} (ε is a string, not a symbol)
+   - d) {0, 1, 2}
+
+2. A context-free grammar corresponds to which automaton?
+   - a) Finite automaton
+   - b) Pushdown automaton
+   - c) Linear bounded automaton
+   - d) Turing machine
+
+3. The set of all strings over alphabet Σ is denoted:
+   - a) Σ^+
+   - b) Σ^∗
+   - c) 𝒫(Σ)
+   - d) Σ^∞
+
+4. Which of the following is true about decidable languages?
+   - a) Every recognizable language is decidable
+   - b) Every decidable language is recognizable
+   - c) Decidable languages are always finite
+   - d) Decidable languages cannot be recognized by a Turing machine
+
+5. The language {a^n b^n c^n} belongs to which Chomsky type?
+   - a) Type 3 (regular)
+   - b) Type 2 (context-free)
+   - c) Type 1 (context-sensitive)
+   - d) Type 0 (unrestricted)
+
+**Answers:** 1-c, 2-b, 3-b, 4-b, 5-c
+
+## Exercises
+
+### Basic
+
+1. Write a TypeScript function that checks whether a string belongs to the language L = {w ∈ {0,1}* | w starts with 0 and ends with 1}.
+
+2. For each of the following strings over Σ = {a, b}, determine the length: ε, a, abba, aaaaa.
+
+3. List all strings in {0,1}^3 (strings of length 3 over binary alphabet).
+
+4. Give three examples of decision problems encountered in everyday computing.
+
+### Intermediate
+
+5. Prove that the set of all binary strings that are palindromes is a language. Write a TypeScript recognizer for it.
+
+6. For each language below, determine its Chomsky type and justify your answer:
+   - L₁ = {ww^R | w ∈ {a,b}*}
+   - L₂ = {a^n b^m | n, m ≥ 0}
+   - L₃ = {a^n b^n c^n d^n | n ≥ 1}
+
+7. Show that the set of all languages over Σ is uncountable, while the set of all Turing machines is countable. Conclude there exist unrecognizable languages.
+
+8. Represent the SAT problem as a language encoding. What symbols would your alphabet need?
+
+### Advanced
+
+9. Prove that if a language L is decidable, then its complement L̅ is also decidable. What happens if L is only recognizable?
+
+10. Research the concept of oracle machines. Explain how they enable relative computability and why they are used in the study of the Turing degrees.
+
+11. Write a TypeScript program that enumerates all binary strings of length ≤ 4 and classifies each as belonging to language L = { w | w contains the substring "01" }.
+
+12. Show that there are languages that are not recursively enumerable by using a counting argument between the set of all TMs (countable) and the set of all languages (uncountable).
+
+13. Design a finite automaton that recognizes binary strings with an even number of 0s and an odd number of 1s. Explain why this language is regular.
+
+14. Consider the language L = { aⁿbⁿcⁿdⁿeⁿ | n ≥ 1 }. Identify its position in the Chomsky hierarchy and justify why it cannot be generated by a context-free grammar.
+
+15. Write a TypeScript function that takes a string w and a fixed alphabet Σ and determines whether w is a string over Σ. For Σ = {0, 1}, classify "012", "", "101", and "2".
+
+16. Research the concept of universality in computation. Explain how the universal Turing machine relates to the concept of a general-purpose computer and why this insight is considered one of Turing's greatest contributions.
+
+## Further Reading
+
+- **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapters 0–1 provide an excellent introduction to mathematical preliminaries and the Chomsky hierarchy.
+- **Hopcroft, John E., Motwani, Rajeev, and Ullman, Jeffrey D.** *Introduction to Automata Theory, Languages, and Computation* (3rd ed.). Chapters 1–2 cover basic concepts and the regular/context-free classification.
+- **Arora, Sanjeev and Barak, Boaz.** *Computational Complexity: A Modern Approach*. Chapter 1 gives a concise overview of the computational worldview and complexity classification.
+- **Lewis, Harry R. and Papadimitriou, Christos H.** *Elements of the Theory of Computation* (2nd ed.). A rigorous treatment of automata, computability, and complexity fundamentals.
+- **Davis, Martin, Sigal, Ron, and Weyuker, Elaine J.** *Computability, Complexity, and Languages* (2nd ed.). A deeper exploration of the mathematical foundations including recursive function theory and the μ-recursive functions.
+- **Kozen, Dexter C.** *Automata and Computability*. A concise and rigorous undergraduate text covering automata theory, computability, and complexity in a unified framework.
+- **Harel, David.** *Computers Ltd.: What They Really Can't Do*. An accessible and entertaining exploration of the limits of computation for a general audience.
+- **Chomsky, Noam.** *Syntactic Structures*. 1957. The book that introduced the Chomsky hierarchy and revolutionized linguistics with formal grammar theory.

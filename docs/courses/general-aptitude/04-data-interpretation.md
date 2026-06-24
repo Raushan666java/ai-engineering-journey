@@ -223,6 +223,141 @@ Both together: Average = 1250/50 = 25. Sufficient.
 
 **Answer:** C (Both together)
 
+### Example 5: Line Chart Interpretation
+
+A company's monthly revenue (in Cr): Jan=50, Feb=55, Mar=52, Apr=60, May=58, Jun=65.
+
+**Question:** What is the percentage increase from Feb to June?
+
+**Solution:**
+Growth = ((65 - 55) / 55) × 100 = (10/55) × 100 ≈ 18.18%
+
+**Question:** In which month was the growth rate highest compared to the previous month?
+
+**Solution:**
+- Feb: (55-50)/50 = 10%
+- Mar: (52-55)/55 = -5.45%
+- Apr: (60-52)/52 = 15.38%
+- May: (58-60)/60 = -3.33%
+- Jun: (65-58)/58 = 12.07%
+
+Highest growth: April (15.38%)
+
+### Example 6: Mixed Graph — Bar + Line
+
+A bar graph shows quarterly revenue: Q1=200, Q2=250, Q3=220, Q4=280.
+A line graph shows profit percentage: Q1=10%, Q2=12%, Q3=15%, Q4=18%.
+
+**Question:** What is the total profit for the year?
+
+**Solution:**
+Q1 profit = 200 × 0.10 = 20
+Q2 profit = 250 × 0.12 = 30
+Q3 profit = 220 × 0.15 = 33
+Q4 profit = 280 × 0.18 = 50.4
+Total profit = 20 + 30 + 33 + 50.4 = 133.4 Cr
+
+### Example 7: Table with Multiple Operations
+
+| Year | Sales (units) | Price/unit ($) | Cost/unit ($) |
+|------|---------------|----------------|---------------|
+| 2020 | 1000 | 50 | 30 |
+| 2021 | 1200 | 55 | 32 |
+| 2022 | 1500 | 60 | 35 |
+| 2023 | 1800 | 58 | 38 |
+
+**Question:** In which year was the profit per unit highest?
+
+**Solution:**
+Profit/unit = Price - Cost
+- 2020: 50 - 30 = $20
+- 2021: 55 - 32 = $23
+- 2022: 60 - 35 = $25
+- 2023: 58 - 38 = $20
+
+Highest: 2022 ($25 profit/unit)
+
+**Question:** What was the total profit in 2023?
+
+**Solution:**
+Total profit = (Price - Cost) × Sales = (58 - 38) × 1800 = 20 × 1800 = $36,000
+
+### Example 8: Complex Data Sufficiency
+
+**Question:** Is $x$ divisible by 6?
+1. $x$ is divisible by 2
+2. $x$ is divisible by 3
+
+**Solution:**
+For $x$ to be divisible by 6, it must be divisible by both 2 and 3.
+Statement 1 alone: $x$ is even but may not be divisible by 3 (e.g., $x=4$). Not sufficient.
+Statement 2 alone: $x$ is a multiple of 3 but may be odd (e.g., $x=9$). Not sufficient.
+Both together: $x$ is divisible by both 2 and 3 → divisible by LCM(2,3) = 6. Sufficient.
+**Answer:** C (Both together)
+
+### Example 9: Stacked Bar Graph Interpretation
+
+A stacked bar shows the production of three products (A, B, C) across quarters:
+- Q1: A=30, B=20, C=10 (total=60)
+- Q2: A=40, B=25, C=15 (total=80)
+- Q3: A=35, B=30, C=25 (total=90)
+- Q4: A=50, B=35, C=30 (total=115)
+
+**Question:** What percentage of total production came from Product A across the entire year?
+
+**Solution:**
+Total A = 30 + 40 + 35 + 50 = 155
+Total all = 60 + 80 + 90 + 115 = 345
+Percentage = (155 / 345) × 100 ≈ 44.9%
+
+**Question:** In which quarter was Product C's share highest?
+
+**Solution:**
+Q1: 10/60 = 16.7%
+Q2: 15/80 = 18.8%
+Q3: 25/90 = 27.8%
+Q4: 30/115 = 26.1%
+Highest share: Q3 (27.8%)
+
+### TypeScript: Data Analysis Helper
+
+```typescript
+interface DataPoint { category: string; value: number; }
+
+function calculatePercentage(data: DataPoint[], total: number): DataPoint[] {
+  return data.map(d => ({ ...d, value: (d.value / total) * 100 }));
+}
+
+function findGrowth(current: number, previous: number): number {
+  return ((current - previous) / previous) * 100;
+}
+
+// Example: quarterly revenue growth
+const revenues = [200, 250, 220, 280];
+const growthRates = revenues.map((r, i) =>
+  i === 0 ? 0 : findGrowth(r, revenues[i - 1])
+);
+console.log(growthRates); // [0, 25, -12, 27.27]
+```
+
+## Practical Takeaways
+
+| Data Type | Key Formula | Common Pitfall |
+|-----------|-------------|----------------|
+| Table | Percentage = (part/total)×100 | Misreading row/column headers |
+| Bar Graph | Read height against scale | Non-zero baseline exaggerates differences |
+| Line Chart | Growth = (new-old)/old×100 | Confusing slope with growth rate |
+| Pie Chart | Angle = (value/total)×360 | Assuming different pies have same total |
+| Caselet | Organize data in a table first | Missing hidden information in text |
+| Data Sufficiency | Don't solve — just check sufficiency | Solving instead of checking |
+| Mixed Graphs | Each graph has its own scale | Applying one graph's scale to another |
+
+### Quick Estimation Techniques
+
+- **Approximation:** Round numbers before calculating (e.g., 48.7% of 199 ≈ 50% of 200 = 100)
+- **Fraction Conversion:** Knowing common fractions: $33.3\% = 1/3$, $25\% = 1/4$, $20\% = 1/5$, $12.5\% = 1/8$
+- **Growth Rate Doubling:** A 10% growth rate doubles in ~7.2 years (Rule of 72)
+
 ## Summary
 
 - Tables: read carefully, identify headers, compute percentages correctly
@@ -243,20 +378,26 @@ Both together: Average = 1250/50 = 25. Sufficient.
 
 3. **Data Sufficiency:** Is $x > y$? (1) $x + y = 10$ (2) $x - y = 2$
 
+4. **Bar Graph:** A bar shows: City A = 5000 people, City B = 7500, City C = 3000. What is the ratio of B to A?
+
 ### Level 2 — Medium
 
-4. **Bar Graph:** A company's revenue: Q1 = 50 Cr, Q2 = 65 Cr, Q3 = 45 Cr, Q4 = 80 Cr. Total expenses = 200 Cr. Profit % for the year?
+5. **Bar Graph:** A company's revenue: Q1 = 50 Cr, Q2 = 65 Cr, Q3 = 45 Cr, Q4 = 80 Cr. Total expenses = 200 Cr. Profit % for the year?
 
-5. **Caselet:** A school has 800 students — 45% boys, rest girls. 30% of boys and 40% of girls play football. How many students don't play football?
+6. **Caselet:** A school has 800 students — 45% boys, rest girls. 30% of boys and 40% of girls play football. How many students don't play football?
+
+7. **Line Chart:** Sales over 6 months: Jan=120, Feb=150, Mar=130, Apr=170, May=160, Jun=200. Calculate: (a) Average monthly sales (b) Month with highest growth (c) Total sales for first quarter
 
 ### Level 3 — Advanced
 
-6. **Mixed Graph:** A bar graph shows monthly sales, and a line graph shows cumulative profit %. At what month does cumulative profit first exceed 15%?
+8. **Mixed Graph:** A bar graph shows monthly sales, and a line graph shows cumulative profit %. At what month does cumulative profit first exceed 15%?
 
-7. **Data Sufficiency:** What is the value of $xy$? (1) $x^2 + y^2 = 25$ (2) $x + y = 7$
+9. **Data Sufficiency:** What is the value of $xy$? (1) $x^2 + y^2 = 25$ (2) $x + y = 7$
 
-8. **Caselet with Multiple Categories:** A three-department caselet with overlapping categories.
+10. **Caselet with Multiple Categories:** A three-department caselet with overlapping categories.
+
+11. **Complex Table:** A table with production data for 5 factories across 4 quarters. Calculate: (a) highest total production (b) quarter with most output (c) factory with most consistent production (lowest variance)
 
 ### Answer Key
 
-1. 50% | 2. 20% | 3. D (each alone sufficient for $x > y$ given) | 4. 20% | 5. 532 | 7. C (need both)
+1. 50% | 2. 20% | 3. D | 4. 2:3 | 5. 20% | 6. 532 | 7a. 155, 7b. April (30.8%), 7c. 400 | 9. C (need both)

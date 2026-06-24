@@ -1,320 +1,381 @@
 # Chapter 2: Boolean Algebra
 
-> **Prereq:** Chapter 1 (Number Systems) â€” binary values 0/1 are the domain of Boolean algebra.
-> **Next:** Chapter 3 (Logic Gates) â€” Boolean algebra directly describes gate behavior.
+> **Prereq:** Chapter 1 (Number Systems) — binary values 0/1 are the domain of Boolean algebra.
+> **Next:** Chapter 3 (Logic Gates) — Boolean algebra directly describes gate behavior.
 
 ## Learning Objectives
 
 By the conclusion of this chapter, the student shall be able to:
 
 1. State and apply the fundamental postulates and theorems of Boolean algebra
-2. Simplify Boolean expressions using algebraic manipulation
-3. Apply De Morgan's theorems to complement expressions
-4. Derive sum-of-products (SOP) and product-of-sums (POS) forms from truth tables
-5. Minimise logic functions using Karnaugh maps of two, three, and four variables
-6. Apply the Quine-McCluskey algorithm for systematic function minimisation
+2. Simplify Boolean expressions using algebraic manipulation with formal proof steps
+3. Apply De Morgan's theorems to complement expressions and convert gate types
+4. Derive sum-of-products (SOP) and product-of-sums (POS) canonical forms from truth tables
+5. Implement any Boolean function using only NAND or only NOR gates
+6. Analyse XOR applications in parity, comparators, and adders
+7. Determine functional completeness of gate sets
 
 ### Chapter at a Glance
 
 | Section | Key Concept | Why It Matters |
 |---------|-------------|----------------|
 | Boolean Postulates | OR, AND, NOT axioms | Foundation of all digital logic |
-| Fundamental Theorems | Idempotence, absorption, etc. | Enable algebraic simplification |
-| De Morgan's Theorems | Complement of sum/product | Convert gate types (AND-OR â†” NAND-NAND) |
-| Standard Forms | SOP and POS canonical forms | Uniquely represent any Boolean function |
-| Karnaugh Maps | Graphical minimisation | Quick simplification for â‰¤4 variables |
-| Quine-McCluskey | Tabular minimisation | Algorithmic for many variables |
+| Fundamental Theorems | Idempotence, absorption, consensus | Enable algebraic simplification |
+| De Morgan's Theorems | Complement of sum/product | Convert gate types (AND-OR ↔ NAND-NAND) |
+| Canonical Forms | SOP and POS | Uniquely represent any Boolean function |
+| NAND/NOR Universality | Single gate type for any function | IC manufacturing prefers one gate type |
+| XOR Applications | Parity, comparison, addition | Key building block for arithmetic |
+| Function Completeness | Minimal gate sets | Understanding logic universality |
 
 ```mermaid
 flowchart LR
     A[Boolean Postulates] --> B[Theorems & Laws]
     B --> C[De Morgan's Theorems]
     C --> D[SOP / POS Forms]
-    D --> E[Karnaugh Maps]
-    D --> F[Quine-McCluskey]
-    E --> G[Minimised Expression]
-    F --> G
+    D --> E[Canonical Forms]
+    D --> F[NAND/NOR Universality]
+    B --> G[XOR Applications]
+    E --> H[Minimised Expression]
+    F --> H
+    G --> H
     style A fill:#e1f5fe
-    style G fill:#c8e6c9
+    style H fill:#c8e6c9
 ```
 
 ## Theory
 
-![Boolean Algebra Laws and Logic Gates](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/digital-logic/ch02-boolean-gates.png)
-
 ### 2.1 Boolean Postulates
 
-Boolean algebra, introduced by George Boole in 1854 and adapted by Claude Shannon in 1938 for switching circuit analysis, is a mathematical system defined on a set of two elements {0, 1} with operators + (OR) and &middot; (AND), and complement (NOT).
+Boolean algebra, introduced by George Boole in 1854 and adapted by Claude Shannon in 1938 for switching circuit analysis, is a mathematical system defined on a set of two elements {0, 1} with operators + (OR) and · (AND), and complement (NOT).
 
 The fundamental postulates are as follows:
 
 | Postulate | OR Form | AND Form |
 |-----------|---------|----------|
-| Identity | *x* + 0 = *x* | *x* &middot; 1 = *x* |
-| Commutativity | *x* + *y* = *y* + *x* | *x* &middot; *y* = *y* &middot; *x* |
-| Associativity | (*x* + *y*) + *z* = *x* + (*y* + *z*) | (*x* &middot; *y*) &middot; *z* = *x* &middot; (*y* &middot; *z*) |
-| Distributivity | *x* &middot; (*y* + *z*) = *x*&middot;*y* + *x*&middot;*z* | *x* + (*y* &middot; *z*) = (*x* + *y*) &middot; (*x* + *z*) |
-| Complement | *x* + *x*' = 1 | *x* &middot; *x*' = 0 |
+| Identity | x + 0 = x | x · 1 = x |
+| Commutativity | x + y = y + x | x · y = y · x |
+| Associativity | (x + y) + z = x + (y + z) | (x · y) · z = x · (y · z) |
+| Distributivity | x · (y + z) = x·y + x·z | x + (y·z) = (x + y)·(x + z) |
+| Complement | x + x' = 1 | x · x' = 0 |
 
 ### 2.2 Fundamental Theorems
 
 | Theorem | OR Form | AND Form |
 |---------|---------|----------|
-| Idempotence | *x* + *x* = *x* | *x* &middot; *x* = *x* |
-| Null element | *x* + 1 = 1 | *x* &middot; 0 = 0 |
-| Involution | (*x*')' = *x* | |
-| Absorption | *x* + *x* &middot; *y* = *x* | *x* &middot; (*x* + *y*) = *x* |
-| Adjacency | *x* &middot; *y* + *x* &middot; *y*' = *x* | (*x* + *y*) &middot; (*x* + *y*') = *x* |
-| Consensus | *x* &middot; *y* + *x*' &middot; *z* + *y* &middot; *z* = *x* &middot; *y* + *x*' &middot; *z* | |
+| Idempotence | x + x = x | x · x = x |
+| Null element | x + 1 = 1 | x · 0 = 0 |
+| Involution | (x')' = x | — |
+| Absorption | x + x·y = x | x·(x + y) = x |
+| Adjacency | x·y + x·y' = x | (x + y)·(x + y') = x |
+| Consensus | x·y + x'·z + y·z = x·y + x'·z | (x+y)·(x'+z)·(y+z) = (x+y)·(x'+z) |
+| De Morgan | (x·y)' = x' + y' | (x + y)' = x'·y' |
+
+#### 2.2.1 Proof of Absorption Theorem
+
+Prove: x + x·y = x
+
+**Proof**:
+x + x·y = x·1 + x·y (Identity)
+= x·(1 + y) (Distributivity)
+= x·1 (Null element: 1 + y = 1)
+= x (Identity)
+
+#### 2.2.2 Proof of Consensus Theorem
+
+Prove: x·y + x'·z + y·z = x·y + x'·z
+
+**Proof**:
+x·y + x'·z + y·z = x·y + x'·z + y·z·(x + x') (Complement)
+= x·y + x'·z + x·y·z + x'·y·z (Distributivity)
+= x·y·(1 + z) + x'·z·(1 + y) (Distributivity)
+= x·y·1 + x'·z·1 (Null element)
+= x·y + x'·z (Identity)
 
 ### 2.3 De Morgan's Theorems
 
-> **One-Sentence Takeaway:** Boolean algebra is the algebra of binary logic â€” every digital circuit, from a simple AND gate to a microprocessor, can be expressed and minimised using its postulates and theorems.
+Augustus De Morgan formulated two transformation rules of singular importance:
 
-Augustus De Morgan formulated two transformation rules of singular importance in digital logic:
+**Theorem 1**: (x·y)' = x' + y'
 
-**Theorem 1**: (*x* &middot; *y*)' = *x*' + *y'*
+**Theorem 2**: (x + y)' = x'·y'
 
-**Theorem 2**: (*x* + *y*)' = *x*' &middot; *y'*
-
-These theorems generalise to *n* variables:
-
-(*x*_1 &middot; *x*_2 &middot; ... &middot; *x*_n)' = *x*_1' + *x*_2' + ... + *x*_n'
-(*x*_1 + *x*_2 + ... + *x*_n)' = *x*_1' &middot; *x*_2' &middot; ... &middot; *x*_n'
+These generalise to n variables:
+(x_1·x_2·...·x_n)' = x_1' + x_2' + ... + x_n'
+(x_1 + x_2 + ... + x_n)' = x_1'·x_2'·...·x_n'
 
 De Morgan's theorems are essential for converting AND-OR networks to NAND-NAND or NOR-NOR equivalents.
 
-### 2.4 Standard Forms
+**Proof of Theorem 1 by truth table**:
+
+| x | y | x·y | (x·y)' | x' | y' | x' + y' |
+|---|---|:---:|:------:|:---:|:---:|:-------:|
+| 0 | 0 | 0 | 1 | 1 | 1 | 1 |
+| 0 | 1 | 0 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+
+The columns for (x·y)' and x' + y' match for all four input combinations, proving equivalence.
+
+### 2.4 Canonical Forms
 
 #### 2.4.1 Minterms and Maxterms
 
-A **minterm** is a product term in which every variable appears exactly once, either complemented or uncomplemented. For *n* variables, there exist 2^n distinct minterms.
+A **minterm** is a product term in which every variable appears exactly once, either complemented or uncomplemented. For n variables, there exist 2^n distinct minterms.
 
-A **maxterm** is a sum term in which every variable appears exactly once. For *n* variables, there exist 2^n distinct maxterms.
+A **maxterm** is a sum term in which every variable appears exactly once. For n variables, there exist 2^n distinct maxterms.
 
-| *x* | *y* | *z* | Minterm | Notation |
-|-----|-----|-----|----------|----------|
-| 0 | 0 | 0 | *x' y' z'* | *m*_0 |
-| 0 | 0 | 1 | *x' y' z* | *m*_1 |
-| 0 | 1 | 0 | *x' y z'* | *m*_2 |
-| 0 | 1 | 1 | *x' y z* | *m*_3 |
-| 1 | 0 | 0 | *x y' z'* | *m*_4 |
-| 1 | 0 | 1 | *x y' z* | *m*_5 |
-| 1 | 1 | 0 | *x y z'* | *m*_6 |
-| 1 | 1 | 1 | *x y z* | *m*_7 |
+| x | y | z | Minterm | Notation | Maxterm | Notation |
+|---|---|---|---|---|---|---|
+| 0 | 0 | 0 | x'y'z' | m_0 | x+y+z | M_0 |
+| 0 | 0 | 1 | x'y'z | m_1 | x+y+z' | M_1 |
+| 0 | 1 | 0 | x'yz' | m_2 | x+y'+z | M_2 |
+| 0 | 1 | 1 | x'yz | m_3 | x+y'+z' | M_3 |
+| 1 | 0 | 0 | xy'z' | m_4 | x'+y+z | M_4 |
+| 1 | 0 | 1 | xy'z | m_5 | x'+y+z' | M_5 |
+| 1 | 1 | 0 | xyz' | m_6 | x'+y'+z | M_6 |
+| 1 | 1 | 1 | xyz | m_7 | x'+y'+z' | M_7 |
 
 #### 2.4.2 Sum-of-Products (SOP)
 
-A Boolean function expressed as the OR of minterms for which the function output is 1. Example:
+A Boolean function expressed as the OR of minterms for which the function output is 1.
 
-*F*(*x*, *y*, *z*) = *m*_1 + *m*_3 + *m*_5 + *m*_7 = &Sigma;(1, 3, 5, 7)
+F(x, y, z) = m_1 + m_3 + m_5 + m_7 = Σ(1, 3, 5, 7)
+F = x'y'z + x'yz + xy'z + xyz = z·(x'y' + x'y + xy' + xy) = z·(x'(y'+y) + x(y'+y)) = z·(x' + x) = z
 
 #### 2.4.3 Product-of-Sums (POS)
 
-A Boolean function expressed as the AND of maxterms for which the function output is 0. Example:
+A Boolean function expressed as the AND of maxterms for which the function output is 0.
 
-*F*(*x*, *y*, *z*) = *M*_0 &middot; *M*_2 &middot; *M*_4 &middot; *M*_6 = &Pi;(0, 2, 4, 6)
+F(x, y, z) = M_0·M_2·M_4·M_6 = Π(0, 2, 4, 6)
+F = (x+y+z)·(x+y'+z)·(x'+y+z)·(x'+y'+z)
 
-### 2.5 Karnaugh Maps
+#### 2.4.4 Conversion Between SOP and POS
 
-The Karnaugh map (K-map) is a graphical tool for minimising Boolean functions. It arranges truth table entries in a grid where adjacent cells differ in exactly one variable.
+Any Boolean function can be expressed in both forms. To convert:
+- SOP Σ(m_i) = POS Π(M_j) where j indexes the minterms NOT in the SOP
+- For an n-variable function: if F = Σ(m_i), then F' = Σ(m_j) where j ≠ i
+- F = Π(M_j) where j ≠ i
 
-#### 2.5.1 Two-Variable K-Map
+### 2.5 NAND and NOR as Universal Gates
 
-|  | *y* = 0 | *y* = 1 |
-|--|---------|---------|
-| *x* = 0 | *m*_0 | *m*_1 |
-| *x* = 1 | *m*_2 | *m*_3 |
+NAND and NOR are termed universal gates because either alone suffices to implement any Boolean expression.
 
-#### 2.5.2 Three-Variable K-Map
+**NAND as universal gate**:
+- NOT: A' = (A·A)'
+- AND: A·B = [(A·B)']'
+- OR: A + B = (A'·B')' = (A·A)'·(B·B)'
 
-|  | *yz* = 00 | *yz* = 01 | *yz* = 11 | *yz* = 10 |
-|--|-----------|-----------|-----------|-----------|
-| *x* = 0 | *m*_0 | *m*_1 | *m*_3 | *m*_2 |
-| *x* = 1 | *m*_4 | *m*_5 | *m*_7 | *m*_6 |
+**NOR as universal gate**:
+- NOT: A' = (A + A)'
+- OR: A + B = [(A + B)']'
+- AND: A·B = (A' + B')' = (A+A)' + (B+B)'
 
-#### 2.5.3 Four-Variable K-Map
+```mermaid
+graph TD
+    subgraph "NAND as Universal Gate"
+        N1[NOT from NAND] --> N1d["A' = (A·A)''"]
+        N2[AND from NAND] --> N2d["A·B = ((A·B)')'"]
+        N3[OR from NAND] --> N3d["A+B = (A'·B')'"]
+    end
+    style N1d fill:#c8e6c9
+    style N2d fill:#c8e6c9
+    style N3d fill:#c8e6c9
+```
 
-|  | *zw* = 00 | *zw* = 01 | *zw* = 11 | *zw* = 10 |
-|--|-----------|-----------|-----------|-----------|
-| *xy* = 00 | *m*_0 | *m*_1 | *m*_3 | *m*_2 |
-| *xy* = 01 | *m*_4 | *m*_5 | *m*_7 | *m*_6 |
-| *xy* = 11 | *m*_12 | *m*_13 | *m*_15 | *m*_14 |
-| *xy* = 10 | *m*_8 | *m*_9 | *m*_11 | *m*_10 |
+### 2.6 XOR Applications
 
-**Minimisation procedure**:
+The XOR (exclusive-OR) function produces 1 when inputs differ: A ⊕ B = A'B + AB'.
 
-1. Enter 1s in cells corresponding to minterms where the function is true.
-2. Enter Xs for don't-care conditions.
-3. Group adjacent 1s (and Xs if beneficial) into rectangular groups of size 2^k.
-4. Each group corresponds to a product term. Variables that change within the group are eliminated.
-5. The minimal SOP is the OR of all essential prime implicants.
+**Applications**:
+1. **Parity generation**: XOR tree produces even/odd parity. An n-bit parity generator uses n−1 XOR gates.
+2. **Magnitude comparison**: A ⊕ B = 0 when A = B. XOR followed by NOR produces equality detection.
+3. **Half adder**: Sum = A ⊕ B, Carry = A·B.
+4. **Controlled inverter**: B ⊕ control. When control=1, output is B' (complement). When control=0, output is B.
+5. **Pseudo-random number generation**: Linear feedback shift registers (LFSRs) use XOR for feedback taps.
 
-### 2.6 Quine-McCluskey Minimisation
+```typescript
+function xorParity(data: boolean[]): boolean {
+    return data.reduce((acc, bit) => acc !== bit, false);
+}
 
-The Quine-McCluskey algorithm is a tabular method for Boolean minimisation suitable for functions with many variables where K-maps become unwieldy.
+function magnitudeEqual(a: boolean[], b: boolean[]): boolean {
+    return a.every((bit, i) => bit === b[i]);
+}
+```
 
-**Phase 1 â€” Generation of prime implicants**:
+### 2.7 Function Completeness
 
-1. List all minterms grouped by the number of 1s in the binary representation.
-2. Compare each minterm in group *i* with each in group *i* + 1. If they differ in exactly one bit, combine them and mark the differing position with a dash.
-3. Repeat until no further combinations are possible. The unchecked terms are the prime implicants.
+A set of logic operators is **functionally complete** if any Boolean function can be expressed using only operators from that set.
 
-> **Pro Tip:** De Morgan's theorems are the key to universal gate conversion â€” any AND-OR network can be converted to all-NAND or all-NOR gates, which is vital in IC design where a single gate type reduces manufacturing cost.
+| Gate Set | Complete? | Notes |
+|----------|-----------|-------|
+| {AND, OR, NOT} | Yes | Standard Boolean basis |
+| {AND, NOT} | Yes | NAND = (A·B)' can be built |
+| {OR, NOT} | Yes | NOR = (A+B)' can be built |
+| {NAND} | Yes | Universal gate |
+| {NOR} | Yes | Universal gate |
+| {AND, OR} | No | Cannot implement NOT |
+| {XOR, AND} | No | Cannot implement OR/NOT alone |
+| {XOR, 1} | No | Linear functions only |
 
-**Phase 2 â€” Essential prime implicant selection**:
+**Proof that {AND, NOT} is complete**:
+- NOT is available
+- A + B = (A'·B')' (De Morgan)
+- Since AND and NOT give us OR, every function is realizable
 
-1. Construct a prime implicant chart with prime implicants as rows and minterms as columns.
-2. Identify essential prime implicants (those covering a minterm that no other implicant covers).
-3. Cover the remaining minterms using a minimal set of non-essential prime implicants.
+**Proof that {NAND} is complete**:
+- NOT: A' = (A·A)'
+- AND: A·B = ((A·B)')'
+- OR: A + B = (A'·B')' = ((A·A)'·(B·B)')'
+
+### 2.8 Boolean Expression Minimisation
+
+```typescript
+interface TruthTableEntry {
+    inputs: boolean[];
+    output: boolean;
+}
+
+function evaluateSOP(expression: string, variables: string[], values: boolean[]): boolean {
+    // Parse SOP expression like "AB + A'C" and evaluate
+    const terms = expression.split("+").map(t => t.trim());
+    return terms.some(term => {
+        let result = true;
+        let i = 0;
+        while (i < term.length) {
+            const isComplemented = term[i] === "'";
+            const varName = isComplemented ? term[++i] : term[i];
+            const varIndex = variables.indexOf(varName);
+            if (varIndex === -1) throw new Error(`Unknown variable: ${varName}`);
+            const value = isComplemented ? !values[varIndex] : values[varIndex];
+            result &&= value;
+            i++;
+        }
+        return result;
+    });
+}
+```
 
 ## Examples
 
-### Example 2.1: Algebraic Simplification
+### Example 2.1: Algebraic Simplification with Proof Steps
 
-Simplify *F* = *x* &middot; *y* + *x* &middot; *z* + *y* &middot; *z*.
+Simplify F = x·y + x·z + y·z using Boolean algebra, showing each step.
 
-**Solution**: *F* = *x* &middot; *y* + *x* &middot; *z* + *y* &middot; *z* = *x* &middot; *y* + *x* &middot; *z* + *y* &middot; *z* &middot; (*x* + *x'*) = *x* &middot; *y* + *x* &middot; *z* + *x* &middot; *y* &middot; *z* + *x'* &middot; *y* &middot; *z*.
+**Solution**:
+F = x·y + x·z + y·z
+= x·y + x·z + y·z·(x + x') (Complement: x + x' = 1)
+= x·y + x·z + x·y·z + x'·y·z (Distributivity)
+= x·y·(1 + z) + x·z + x'·y·z (Distributivity)
+= x·y·1 + x·z + x'·y·z (Null element: 1 + z = 1)
+= x·y + x·z + x'·y·z (Identity)
+= x·y + z·(x + x'·y) (Distributivity)
+= x·y + z·(x + y) (Absorption: x + x'y = x + y)
+= x·y + x·z + y·z (Distributivity)
 
-Absorb *x* &middot; *y* &middot; *z* into *x* &middot; *y*: *F* = *x* &middot; *y* + *x* &middot; *z* + *x'* &middot; *y* &middot; *z*.
+The expression returned to its original form — it is a consensus form and cannot be simplified.
 
-Factor *z*: *F* = *x* &middot; *y* + *z* &middot; (*x* + *x'* &middot; *y*) = *x* &middot; *y* + *z* &middot; (*x* + *y*) by the absorption theorem.
+### Example 2.2: Conversion Between Canonical Forms
 
-Expanding: *F* = *x* &middot; *y* + *x* &middot; *z* + *y* &middot; *z*. This is the original expression â€” the function is a consensus form and cannot be simplified further.
+Given F(A,B,C) = Σ(0, 2, 4, 6), express F in POS form.
 
-### Example 2.2: K-Map Minimisation
+**Solution**: F = Σ(0, 2, 4, 6) means F = 1 for minterms 0, 2, 4, 6. F = 0 for minterms 1, 3, 5, 7.
+F' = Σ(1, 3, 5, 7) = A'B'C + A'BC + AB'C + ABC = C·(A'B' + A'B + AB' + AB) = C
+F = (F')' = C'
+In POS: F = Π(1, 3, 5, 7) = M_1·M_3·M_5·M_7 = (A+B+C')·(A+B'+C')·(A'+B+C')·(A'+B'+C')
 
-Minimise *F*(*A*, *B*, *C*, *D*) = &Sigma;(0, 1, 2, 5, 8, 9, 10) using a 4-variable K-map.
-
-**Solution**: Construct the K-map:
-
-Cells with 1: 0000, 0001, 0010, 0101, 1000, 1001, 1010.
-
-|  | CD=00 | CD=01 | CD=11 | CD=10 |
-|--|-------|-------|-------|-------|
-| AB=00 | 1 | 1 | 0 | 1 |
-| AB=01 | 0 | 1 | 0 | 0 |
-| AB=11 | 0 | 0 | 0 | 0 |
-| AB=10 | 1 | 1 | 0 | 1 |
-
-Grouping: The four corner cells (0000, 0010, 1000, 1010) form a group eliminating *B* and *D*, yielding *A'* &middot; *C'*. The pair (0001, 1001) yields *B'* &middot; *C'* &middot; *D*. The singleton (0101) yields *A'* &middot; *B* &middot; *C'* &middot; *D*.
-
-Minimal expression: *F* = *A'* &middot; *C'* + *B'* &middot; *C'* &middot; *D* + *A'* &middot; *B* &middot; *C'* &middot; *D*
+The minimal expression is simply C'.
 
 ### Example 2.3: De Morgan Application
 
-Apply De Morgan's theorem to find the complement of *F* = (*A* + *B* &middot; *C*) &middot; (*A'* + *C*).
+Apply De Morgan's theorem to find the complement of F = (A + B·C)·(A' + C).
 
-**Solution**: *F'* = [(*A* + *B* &middot; *C*) &middot; (*A'* + *C*)]' = (*A* + *B* &middot; *C*)' + (*A'* + *C*)'.
+**Solution**:
+F' = [(A + B·C)·(A' + C)]' = (A + B·C)' + (A' + C)'
 
 Apply De Morgan to each term:
+(A + B·C)' = A'·(B·C)' = A'·(B' + C')
+(A' + C)' = A·C'
 
-(*A* + *B* &middot; *C*)' = *A'* &middot; (*B* &middot; *C*)' = *A'* &middot; (*B'* + *C'*)
+Therefore: F' = A'·(B' + C') + A·C' = A'·B' + A'·C' + A·C' = A'·B' + C'·(A' + A) = A'·B' + C'
 
-(*A'* + *C*)' = *A* &middot; *C'*
+### Example 2.4: NAND-Only Implementation
 
-Therefore: *F'* = *A'* &middot; (*B'* + *C'*) + *A* &middot; *C'* = *A'* &middot; *B'* + *A'* &middot; *C'* + *A* &middot; *C'* = *A'* &middot; *B'* + *C'*.
+Implement F = A·B + C·D using only NAND gates.
 
-### Example 2.4: Quine-McCluskey
+**Solution**:
+F = A·B + C·D
+= [(A·B)']' + [(C·D)']' (Double complement)
+= ([(A·B)']'·[(C·D)']')' (De Morgan applied backwards: X+Y = (X'·Y')')
+= [(A·B)'·(C·D)']'
 
-Minimise *F*(*w*, *x*, *y*, *z*) = &Sigma;(0, 1, 2, 8, 9, 10, 15) using Quine-McCluskey.
+Implementation: Three NAND gates — two for the AND functions, one for the OR function expressed as a NAND.
 
-**Solution**: 
+### Example 2.5: XOR Application — Parity Checker
 
-Group by number of 1s:
-- Group 0: 0000 (0)
-- Group 1: 0001 (1), 0010 (2), 1000 (8)
-- Group 2: 1001 (9), 1010 (10)
-- Group 4: 1111 (15)
+Design a 4-bit even parity checker using XOR gates.
 
-Combine: 0&minus;1 gives 000&minus; (0,1), 00&minus;0 (0,2), &minus;000 (0,8). 1&minus;2 gives 00&minus;1 (1,9) â€” wait, 0001 and 1001 differ in bit position 3: &minus;001 (1,9). 0010 and 1010: &minus;010 (2,10). 1000 and 1001: 100&minus; (8,9). 1000 and 1010: 10&minus;0 (8,10).
+**Solution**: P = A ⊕ B ⊕ C ⊕ D. P = 0 when there is an even number of 1s. Implementation uses three XOR gates in a tree structure: XOR1 = A⊕B, XOR2 = C⊕D, P = XOR1⊕XOR2.
 
-Combine again: No further combinations possible.
-
-Prime implicants: 000&minus; (covering 0,1), 00&minus;0 (0,2), &minus;000 (0,8), &minus;001 (1,9), &minus;010 (2,10), 100&minus; (8,9), 10&minus;0 (8,10), and 1111 (15).
-
-Essential prime implicants: 1111 (15), 000&minus; (covers 1 uniquely), &minus;000 (covers 8 uniquely). After covering 0,1,8,15, remaining minterms: 2,9,10. Choose 100&minus; (covers 9) and &minus;010 (covers 2,10).
-
-Minimal expression: *w' x' y'* + *x' y'* + *w y' z'* + *w x y z*.
+```typescript
+function evenParity(bits: boolean[]): boolean {
+    return bits.reduce((p, b) => p !== b, false);
+}
+// evenParity([true, false, true, false]) → false (2 ones = even)
+// evenParity([true, false, true, true]) → true (3 ones = odd)
+```
 
 ### Concept Comparison
 
 | Minimisation Method | Best For | Strengths | Weaknesses |
 |-------------------|----------|-----------|------------|
 | Algebraic | Any | Insightful, no tool needed | Error-prone, no optimality guarantee |
-| K-Map | â‰¤4 variables | Visual, fast, optimal | Unwieldy for 5+ variables |
-| Quine-McCluskey | 5-16 variables | Algorithmic, computers can run it | Slow for many inputs, memory intensive |
+| K-Map | ≤4 variables | Visual, fast, optimal | Unwieldy for 5+ variables |
+| Quine-McCluskey | 5-16 variables | Algorithmic | Slow for many inputs |
 
 ### Quick Reference
 
 | Theorem | Expression | Use |
 |---------|-----------|-----|
-| Absorption | x + xÂ·y = x | Eliminates redundant terms |
-| Adjacency | xÂ·y + xÂ·y' = x | Combines adjacent minterms |
-| De Morgan 1 | (xÂ·y)' = x' + y' | AND â†’ NOR conversion |
-| De Morgan 2 | (x+y)' = x'Â·y' | OR â†’ NAND conversion |
-| Consensus | xÂ·y + x'Â·z + yÂ·z = xÂ·y + x'Â·z | Eliminates redundant term |
+| Absorption | x + x·y = x | Eliminates redundant terms |
+| Adjacency | x·y + x·y' = x | Combines adjacent minterms |
+| De Morgan 1 | (x·y)' = x' + y' | AND → NOR conversion |
+| De Morgan 2 | (x+y)' = x'·y' | OR → NAND conversion |
+| Consensus | x·y + x'·z + y·z = x·y + x'·z | Eliminates redundant term |
 
 ### Cross-Application Matrix
 
 | Domain | Application | Relevance |
 |--------|-------------|-----------|
 | CPU Design | ALU control logic | Boolean minimisation reduces gate count |
-| Embedded Systems | Firmware state machines | K-maps optimise combinational next-state logic |
-| Digital Circuits | IC design and synthesis | EDA tools use QMC for gate minimisation |
-| Research | Formal verification | Boolean equivalence checking proves correctness |
+| Embedded Systems | Firmware state machines | Simplified expressions save area |
+| Digital Circuits | IC design and synthesis | EDA tools use Boolean minimisation |
+| Research | Formal verification | Boolean equivalence checking |
+
+## Practical Takeaways
+
+1. **Proofs matter** — every algebraic simplification step should be justified by a postulate or theorem.
+2. **De Morgan's theorems are the key to universality** — they convert between AND-OR and NAND-NAND forms.
+3. **Canonical forms guarantee uniqueness** — any function has exactly one canonical SOP and one canonical POS.
+4. **XOR is more useful than it seems** — parity, comparators, adders, and LFSRs all rely on XOR.
+5. **Function completeness tells you what gates you need** — {NAND} alone suffices for any digital circuit.
 
 ## Summary
 
 - Boolean algebra, with operators AND, OR, and NOT on the set {0, 1}, is the mathematical foundation of digital logic design.
 - De Morgan's theorems enable systematic transformation between AND-OR and OR-AND networks.
 - Sum-of-products and product-of-sums are canonical representations of Boolean functions.
-- Karnaugh maps provide a visual method for minimising functions of up to six variables.
-- The Quine-McCluskey algorithm systematises minimisation for an arbitrary number of variables.
-
-## Exercises
-
-### Review Questions
-
-1. State the three Boolean postulates and the five fundamental theorems.
-2. What is a minterm? How many minterms exist for a function of *n* variables?
-3. Distinguish between sum-of-products and product-of-sums forms.
-4. When is a prime implicant described as essential?
-5. Why does adjacency of cells in a K-map correspond to single-variable changes?
-
-### Application Problems
-
-1. Simplify using algebraic manipulation:
-   a) *F* = *A* &middot; *B* + *A* &middot; *B'* + *A'* &middot; *B*
-   b) *G* = (*X* + *Y*) &middot; (*X* + *Y'*) &middot; (*X'* + *Y*)
-   c) *H* = *P* &middot; *Q* + *P* &middot; *R* + *Q* &middot; *R*
-
-2. Use 3-variable K-maps to minimise:
-   a) *F*(*x*,*y*,*z*) = &Sigma;(2, 3, 4, 5)
-   b) *G*(*x*,*y*,*z*) = &Sigma;(0, 2, 4, 6)
-   c) *H*(*x*,*y*,*z*) = &Pi;(1, 3, 5, 7)
-
-3. Using a 4-variable K-map, minimise:
-   *F*(*A*,*B*,*C*,*D*) = &Sigma;(0, 2, 4, 6, 8, 10, 12, 14). Comment on the result.
-
-4. Apply De Morgan's theorem to:
-   a) (*A* &middot; *B* + *C*)'
-   b) [(*A* + *B*) &middot; (*C* + *D*)]'
-
-5. Use Quine-McCluskey to minimise:
-   *F*(*w*,*x*,*y*,*z*) = &Sigma;(0, 2, 3, 6, 7, 8, 10, 12, 13)
-
-### Challenge Problem
-
-Design a 4-bit prime number detector. The circuit accepts a 4-bit unsigned binary number (0&ndash;15) and outputs 1 when the input is prime. Prime numbers in this range are {2, 3, 5, 7, 11, 13}. Use a K-map to derive the minimal SOP and POS implementations. The numbers 0 and 1 are not prime.     Compare the gate count of the two implementations.
+- NAND and NOR are universal gates — any Boolean function can be implemented using only one type.
+- XOR has important applications in parity, comparison, and arithmetic circuits.
+- Function completeness analysis determines which gate sets are sufficient for universal computation.
 
 ### Chapter Quiz
 
 1. The adjacency theorem states:
-   - A) x + xÂ·y = x
-   - B) xÂ·y + xÂ·y' = x
-   - C) (xÂ·y)' = x' + y'
-   - D) xÂ·x' = 0
+   - A) x + x·y = x
+   - B) x·y + x·y' = x
+   - C) (x·y)' = x' + y'
+   - D) x·x' = 0
 
 2. De Morgan's theorem converts an AND-OR expression to:
    - A) SOP form
@@ -322,13 +383,61 @@ Design a 4-bit prime number detector. The circuit accepts a 4-bit unsigned binar
    - C) POS form
    - D) A minterm list
 
-3. A Karnaugh map cell grouping of size 8 in a 4-variable map eliminates how many variables?
-   - A) 0
-   - B) 1
-   - C) 2
-   - D) 3
+3. Which gate set is NOT functionally complete?
+   - A) {NAND}
+   - B) {AND, OR}
+   - C) {NOR}
+   - D) {AND, NOT}
+
+4. The XOR of four inputs equals 1 when:
+   - A) All inputs are 1
+   - B) Exactly one input is 1
+   - C) An odd number of inputs are 1
+   - D) An even number of inputs are 1
+
+5. The consensus theorem eliminates which term?
+   - A) x·y
+   - B) x'·z
+   - C) y·z
+   - D) None — it adds a redundant term
 
 <details>
 <summary>Answers</summary>
-1. B, 2. B, 3. D
+1. B, 2. B, 3. B, 4. C, 5. C
 </details>
+
+## Exercises
+
+### Review Questions
+
+1. State the three Boolean postulates and the five fundamental theorems.
+2. What is a minterm? How many minterms exist for a function of n variables?
+3. Distinguish between sum-of-products and product-of-sums forms.
+4. Prove that {NOR} is a functionally complete set.
+5. Why is XOR useful for parity generation?
+
+### Application Problems
+
+1. Simplify using algebraic manipulation (show each step with justification):
+   a) F = A·B + A·B' + A'·B
+   b) G = (X + Y)·(X + Y')·(X' + Y)
+   c) H = P·Q + P·R + Q·R
+
+2. Convert between canonical forms:
+   a) F(x,y,z) = Σ(0, 2, 4) to POS
+   b) G(A,B,C) = Π(1, 3, 7) to SOP
+
+3. Apply De Morgan's theorem to:
+   a) (A·B + C)'
+   b) [(A + B)·(C + D)]'
+   c) (A' + B·C' + D·E)'
+
+4. Implement using only NAND gates:
+   a) F = A·B' + C·D
+   b) G = (A + B)·(C + D)
+
+5. Design a 3-bit even parity generator using XOR gates. Show the truth table and circuit.
+
+### Challenge Problem
+
+Design a 4-bit prime number detector using Boolean algebra. The circuit accepts a 4-bit unsigned binary number (0-15) and outputs 1 when the input is prime. Prime numbers in this range are {2, 3, 5, 7, 11, 13}. Derive the minimal SOP expression using algebraic simplification, then implement it using only NAND gates. Compare the gate count with a direct AND-OR implementation.

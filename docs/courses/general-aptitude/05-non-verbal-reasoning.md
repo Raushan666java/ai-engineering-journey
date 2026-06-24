@@ -287,6 +287,99 @@ Net: Top = A, Left = B, Right = C. Above B = D. Below B = E. Below C = F. Faces:
 
 **Answer:** B, C, their opposites (E, F) in appropriate orientation.
 
+### Example 6: Figure Matrix
+
+A 3×3 matrix:
+- Row 1: Circle, Circle with dot, Circle with two dots
+- Row 2: Square, Square with dot, Square with two dots
+- Row 3: Triangle, Triangle with dot, ?
+
+**Deduction:** Each row starts with a shape, adds one dot in the second cell, and adds two dots in the third. For row 3: Triangle, Triangle with dot, Triangle with two dots.
+
+**Answer:** Triangle with two dots.
+
+### Example 7: Counting Rectangles in a Grid
+
+Find the number of rectangles in a $3 \times 4$ grid.
+
+**Solution:**
+Formula: $\frac{m(m+1)}{2} \times \frac{n(n+1)}{2}$
+
+For $m = 3$, $n = 4$:
+$\frac{3(4)}{2} \times \frac{4(5)}{2} = 6 \times 10 = 60$ rectangles
+
+**Note:** This counts all rectangles including squares. To count only non-square rectangles, subtract the number of squares.
+
+### Example 8: Paper Folding
+
+A circular paper is folded in half (top to bottom), then in half again (left to right). A small triangular cut is made at the bottom-right corner of the folded shape. How many holes when fully unfolded?
+
+**Solution:**
+1. First fold (top→bottom): creates symmetry along the horizontal axis
+2. Second fold (left→right): creates symmetry along the vertical axis
+3. The cut goes through 4 layers (two folds = 4 layers)
+4. When unfolded: 4 symmetric cuts appear: one in each quadrant
+
+**Answer:** 4 holes (one in each quadrant of the circle)
+
+### Example 9: Cubes — Opposite Face Determination
+
+Three views of a cube show:
+- View 1: Top=1, Front=2, Right=3
+- View 2: Top=1, Front=4, Right=5
+- View 3: Top=6, Front=2, Right=4
+
+Which face is opposite 3?
+
+**Solution:**
+From View 1: 3 is adjacent to 1 and 2.
+From View 2: 5 is adjacent to 1 and 4. Since 1 is common to views 1 and 2: 1 is adjacent to 2, 3, 4, 5. So 1 is opposite the remaining face: 6. ✓ (View 3 confirms: 6 is opposite 1)
+
+From View 3: 6 adjacent to 2 and 4. 3 is adjacent to 2 (View 1). So 3 is opposite 5 (the only face not appearing adjacent to 2 or 1).
+
+**Answer:** 3 is opposite 5.
+
+### TypeScript: Cube Face Tracker
+
+```typescript
+class CubeTracker {
+  private adjacent: Map<number, Set<number>> = new Map();
+
+  addView(top: number, front: number, right: number): void {
+    // Adjacent faces share an edge
+    const faces = [top, front, right];
+    for (const face of faces) {
+      if (!this.adjacent.has(face)) this.adjacent.set(face, new Set());
+    }
+    this.adjacent.get(top)!.add(front).add(right);
+    this.adjacent.get(front)!.add(top).add(right);
+    this.adjacent.get(right)!.add(top).add(front);
+  }
+
+  findOpposite(face: number, totalFaces: number = 6): number {
+    const adj = this.adjacent.get(face) ?? new Set();
+    for (let candidate = 1; candidate <= totalFaces; candidate++) {
+      if (candidate !== face && !adj.has(candidate)) return candidate;
+    }
+    return -1; // not found
+  }
+}
+```
+
+## Practical Takeaways
+
+| Topic | Key Insight | Solving Strategy |
+|-------|-------------|------------------|
+| Figure Series | Find the rule from the first 3 figures | Rotate, shade, count, position changes |
+| Analogy | Apply exact same transformation | List every change explicitly |
+| Matrix | Check rows first, then columns | Multiple patterns may combine |
+| Counting Figures | Use combinatorial formulas | Label intersections systematically |
+| Mirror Images | Left↔right, top/bottom unchanged | Visualize the reflection |
+| Water Images | Top↔bottom, left/right unchanged | Turn the page upside down mentally |
+| Paper Folding | Each fold doubles the symmetry | Unfold in reverse order |
+| Cubes & Dice | Opposite faces never touch | Adjacent faces share an edge |
+| Embedded Figures | Scan systematically | Match orientation exactly |
+
 ## Summary
 
 - Figure series: identify the rule from first 2-3 figures; apply to predict next
@@ -312,22 +405,28 @@ Net: Top = A, Left = B, Right = C. Above B = D. Below B = E. Below C = F. Faces:
 
 4. **Venn Diagram:** In a class, 20 play cricket, 15 play football, 8 play both. How many play at least one?
 
+5. **Counting Squares:** How many squares in a 3×3 grid of small squares?
+
 ### Level 2 — Medium
 
-5. **Counting Triangles:** A triangle with 4 base segments (divided into smaller triangles). Total triangles?
+6. **Counting Triangles:** A triangle with 4 base segments (divided into smaller triangles). Total triangles?
 
-6. **Cube:** Two views show: (1) Top=A, Front=B, Right=C (2) Top=A, Front=D, Right=E. Which face is opposite C?
+7. **Cube:** Two views show: (1) Top=A, Front=B, Right=C (2) Top=A, Front=D, Right=E. Which face is opposite C?
 
-7. **Paper Folding:** A square paper is folded once diagonally, then a corner is cut. How many holes when unfolded?
+8. **Paper Folding:** A square paper is folded once diagonally, then a corner is cut. How many holes when unfolded?
+
+9. **Water Image:** What is the water image of the letter 'b'?
 
 ### Level 3 — Advanced
 
-8. **Figure Matrix:** A 3×3 matrix with rotation + shading rules. Find the missing figure.
+10. **Figure Matrix:** A 3×3 matrix with rotation + shading rules. Find the missing figure.
 
-9. **Embedded Figure:** Identify which option contains the given simple figure.
+11. **Embedded Figure:** Identify which option contains the given simple figure.
 
-10. **Complex Dice:** A special dice (non-standard) with three views shown. Find which letter is opposite a given letter.
+12. **Complex Dice:** A special dice (non-standard) with three views shown. Find which letter is opposite a given letter.
+
+13. **Paper Cutting (Complex):** A paper is folded in half three times (alternating directions), then two different cuts are made. Determine the final pattern.
 
 ### Answer Key
 
-1. Rotation result (depends on specific sequence) | 2. Left-right reflection of R | 3. Circle (no straight lines) | 4. 27 | 5. Depends on partition pattern | 8. Apply row/column rule | 10. Track common faces across views
+1. Rotation result (depends on specific sequence) | 2. Left-right reflection of R | 3. Circle (no straight lines) | 4. 27 | 5. 14 | 6. Depends on partition pattern | 9. Upside-down 'b' looks like 'p' | 10. Apply row/column rule | 12. Track common faces across views

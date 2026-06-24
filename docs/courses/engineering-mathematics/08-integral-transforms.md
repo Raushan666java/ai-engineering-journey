@@ -274,6 +274,77 @@ ROC: $|z| > |a|$.
 - The sampling theorem dictates minimum sampling rate for digital processing
 - The FFT computes discrete Fourier transforms in $O(N\log N)$ time
 
+### Example 5: Convolution Theorem
+
+Compute $(f * g)(t)$ where $f(t) = e^{-t}u(t)$ and $g(t) = e^{-2t}u(t)$ using the Laplace transform.
+
+**Solution:**
+
+$$\mathcal{L}\{f(t)\} = \frac{1}{s+1}, \quad \mathcal{L}\{g(t)\} = \frac{1}{s+2}$$
+
+$$\mathcal{L}\{(f*g)(t)\} = \frac{1}{s+1} \cdot \frac{1}{s+2} = \frac{1}{(s+1)(s+2)}$$
+
+Partial fractions: $\frac{1}{(s+1)(s+2)} = \frac{1}{s+1} - \frac{1}{s+2}$
+
+Inverse: $(f*g)(t) = e^{-t} - e^{-2t}$
+
+### Example 6: Sampling and Aliasing Demonstration
+
+A signal $f(t) = \cos(2\pi \cdot 100t) + \cos(2\pi \cdot 300t)$ contains frequencies 100 Hz and 300 Hz.
+
+**Question:** If sampled at $f_s = 250$ Hz, which frequencies appear?
+
+**Solution:**
+Nyquist rate $= 2 \times 300 = 600$ Hz. Sampling at 250 Hz < 600 Hz → aliasing occurs.
+
+The 300 Hz component aliases to $|300 - 250| = 50$ Hz (folded back into baseband).
+The 100 Hz component is below Nyquist (125 Hz) and appears correctly.
+The reconstructed signal would appear as $\cos(2\pi \cdot 100t) + \cos(2\pi \cdot 50t)$ — the 300 Hz tone is misinterpreted as a 50 Hz tone.
+
+### Example 7: System Transfer Function and Stability
+
+A system has transfer function $H(s) = \frac{s+2}{s^2 + 2s + 5}$.
+
+**Question:** Determine the impulse response and stability.
+
+**Solution:**
+Poles: $s^2 + 2s + 5 = 0 \implies s = -1 \pm 2i$. Both have $\text{Re}(s) = -1 < 0$ → stable.
+
+Partial fractions: $\frac{s+2}{s^2 + 2s + 5} = \frac{s+2}{(s+1)^2 + 4} = \frac{s+1}{(s+1)^2 + 4} + \frac{1}{(s+1)^2 + 4}$
+
+Inverse Laplace: $h(t) = e^{-t}\cos(2t) + \frac{1}{2}e^{-t}\sin(2t)$
+
+The impulse response decays exponentially (due to $e^{-t}$), confirming stability.
+
+## TypeScript: Signal Reconstruction from Fourier Series
+
+```typescript
+function reconstructFromFourier(
+  coefficients: { a0: number; an: number[]; bn: number[] },
+  t: number,
+  T: number
+): number {
+  const omega0 = (2 * Math.PI) / T;
+  let sum = coefficients.a0;
+  for (let n = 1; n <= coefficients.an.length; n++) {
+    sum += coefficients.an[n - 1] * Math.cos(n * omega0 * t);
+    sum += coefficients.bn[n - 1] * Math.sin(n * omega0 * t);
+  }
+  return sum;
+}
+
+// Reconstruct square wave at t=0.1, period=2*pi, with 10 harmonics
+const squareWave = {
+  a0: 0,
+  an: [] as number[],
+  bn: Array.from({ length: 10 }, (_, i) =>
+    (4 / Math.PI) * (1 / (2 * i + 1))
+  ),
+};
+const val = reconstructFromFourier(squareWave, 0.1, 2 * Math.PI);
+console.log(`Reconstructed value: ${val.toFixed(4)}`); // ≈ 1.0 (square wave at t=0.1)
+```
+
 ## Exercises
 
 ### Review Questions
@@ -295,6 +366,54 @@ ROC: $|z| > |a|$.
 4. **Z-Transform:** Find the Z-transform of $x[n] = n a^n u[n]$.
 
 5. **FFT Application:** Explain how the FFT can be used for efficient polynomial multiplication.
+
+## TypeScript Example: DFT Implementation
+
+```typescript
+function dft(signal: number[]): { real: number[]; imag: number[] } {
+  const N = signal.length;
+  const real: number[] = new Array(N).fill(0);
+  const imag: number[] = new Array(N).fill(0);
+  for (let k = 0; k < N; k++) {
+    for (let n = 0; n < N; n++) {
+      const angle = (2 * Math.PI * k * n) / N;
+      real[k] += signal[n] * Math.cos(angle);
+      imag[k] -= signal[n] * Math.sin(angle);
+    }
+  }
+  return { real, imag };
+}
+
+// Square wave approximation via Fourier series
+function squareWave(t: number, harmonics: number): number {
+  let sum = 0;
+  for (let k = 0; k < harmonics; k++) {
+    const n = 2 * k + 1; // odd harmonics only
+    sum += Math.sin(n * t) / n;
+  }
+  return (4 / Math.PI) * sum;
+}
+// Example: squareWave(Math.PI/2, 10) ≈ 0.998
+console.log(squareWave(Math.PI / 2, 10));
+```
+
+## Practical Takeaways
+
+| Transform | Best For | Key Property |
+|-----------|----------|--------------|
+| Fourier Series | Periodic continuous signals | Harmonic decomposition |
+| Fourier Transform | Non-periodic signals, spectrum analysis | Time ↔ frequency duality |
+| Laplace Transform | ODEs, control systems, circuits | Converts DEs to algebraic equations |
+| Z-Transform | Discrete-time systems, digital filters | Maps time domain to frequency domain |
+| DFT/FFT | Digital signal processing | $O(N \log N)$ computation |
+
+### Transform Selection Guide
+
+- **Control systems:** Laplace transform for continuous, Z-transform for digital
+- **Signal filtering:** Fourier transform for frequency-domain design
+- **Data compression:** FFT for spectral analysis, DCT for JPEG/image compression
+- **Audio processing:** Short-Time Fourier Transform (STFT) for spectrograms
+- **Solving ODEs:** Laplace transform for linear constant-coefficient ODEs
 
 ## Notation Reference
 

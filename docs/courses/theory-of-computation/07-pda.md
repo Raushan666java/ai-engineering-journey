@@ -1,6 +1,6 @@
-# Chapter 6: Pushdown Automata
+# Chapter 7: Pushdown Automata
 
-> **Previous:** [Context-Free Grammars](./05-cfg.md) | **Next:** [Properties of Context-Free Languages](./07-cfl.md)
+> **Previous:** [Context-Free Grammars](./06-cfg.md) | **Next:** [Properties of Context-Free Languages](./08-cfl.md)
 
 
 
@@ -183,6 +183,122 @@ Transitions:
 The stack counts the nesting depth. At any point, the number of P's on the stack equals the current nesting level. If we try to pop when stack is empty, the computation dies (reject). After processing all input, accept if stack is empty.
 
 
+
+## TypeScript PDA Simulator
+
+A PDA can be simulated using a DFS of all possible configurations:
+
+```typescript
+type PDAConfig = {
+  state: string;
+  input: string;
+  stack: string[];
+};
+
+class PDA {
+  constructor(
+    private Q: Set<string>,
+    private sigma: Set<string>,
+    private gamma: Set<string>,
+    private delta: Map<string, Array<[string, string]>>,
+    private q0: string,
+    private F: Set<string>
+  ) {}
+
+  private key(q: string, a: string, X: string): string {
+    return `${q},${a},${X}`;
+  }
+
+  accepts(input: string): boolean {
+    const stack: PDAConfig[] = [
+      { state: this.q0, input, stack: [] }
+    ];
+    const seen = new Set<string>();
+
+    while (stack.length > 0) {
+      const { state, input, stack: stk } = stack.pop()!;
+      const id = `${state}|${input}|${stk.join('')}`;
+      if (seen.has(id)) continue;
+      seen.add(id);
+
+      if (input.length === 0 && this.F.has(state)) {
+        return true;
+      }
+
+      // ε-moves (no input consumed)
+      const epsKey = this.key(state, '', stk[0] || '');
+      const epsTrans = this.delta.get(epsKey) || [];
+      for (const [nextState, pushStr] of epsTrans) {
+        const newStack = [...stk];
+        if (stk.length > 0) newStack.shift();
+        if (pushStr !== '') {
+          for (let i = pushStr.length - 1; i >= 0; i--) {
+            newStack.unshift(pushStr[i]);
+          }
+        }
+        stack.push({ state: nextState, input, stack: newStack });
+      }
+
+      // Consume input
+      if (input.length > 0) {
+        const a = input[0];
+        const rest = input.slice(1);
+        const transKey = this.key(state, a, stk[0] || '');
+        const transitions = this.delta.get(transKey) || [];
+        for (const [nextState, pushStr] of transitions) {
+          const newStack = [...stk];
+          if (stk.length > 0) newStack.shift();
+          if (pushStr !== '') {
+            for (let i = pushStr.length - 1; i >= 0; i--) {
+              newStack.unshift(pushStr[i]);
+            }
+          }
+          stack.push({ state: nextState, input: rest, stack: newStack });
+        }
+      }
+    }
+    return false;
+  }
+}
+```
+
+This simulator performs DFS over the PDA's configuration space. Because the stack can grow unboundedly, the search may not terminate for rejecting inputs — which matches the theoretical limitation of PDAs.
+
+## Bottom-Up PDA Construction
+
+Alternatively, a PDA can be constructed **bottom-up** by reducing the input to the start symbol:
+
+```text
+1. Shift: Push the next input symbol onto the stack.
+2. Reduce: If the top of the stack matches the RHS of a production,
+   replace it with the LHS (pop RHS, push LHS).
+3. Accept: If stack contains only S (start symbol) and input is exhausted.
+```
+
+This is the foundation of **shift-reduce parsing**, used in LR parsers (Chapter 10). The deterministic version (DPDA) corresponds to languages that can be parsed efficiently without backtracking.
+
+## PDA Instantaneous Description Diagrams
+
+```mermaid
+graph LR
+    subgraph "Accepting Computation"
+        I["(q₀, aabb, ε)"] -->|"push A"| S1["(q₀, abb, A)"]
+        S1 -->|"push A"| S2["(q₀, bb, AA)"]
+        S2 -->|"pop A"| S3["(q₁, b, A)"]
+        S3 -->|"pop A"| S4["(q₁, ε, ε)"]
+        S4 -->|"ε"| ACC["(q₂, ε, ε)✓"]
+    end
+```
+
+## Practical Takeaways
+
+1. **Stack memory enables counting.** PDAs can recognize languages like {aⁿbⁿ} that require counting, but the LIFO restriction means only one counter is available — languages requiring two independent counters (like {aⁿbⁿcⁿ}) are beyond CFG.
+
+2. **Nondeterminism is essential for some CFLs.** Unlike finite automata, nondeterministic PDAs are strictly more powerful than deterministic ones. Languages like {ww^R} inherently require guessing.
+
+3. **CFG ↔ PDA equivalence is the basis for parsing.** Every grammar-to-PDA conversion gives a parsing algorithm. The direction matters: top-down (LL) parsers correspond to one construction, bottom-up (LR) to another.
+
+4. **DPDA = deterministic parsing.** Deterministic context-free languages are precisely those that can be parsed in linear time without backtracking — virtually all programming languages fall into this class.
 
 ## Concept Comparison Table
 | Feature | DFA | PDA | Turing Machine |

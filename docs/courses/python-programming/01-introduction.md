@@ -325,6 +325,33 @@ python -m http.server 8000
 
 
 
+## TypeScript Equivalent: First Program
+
+Since this course has TypeScript examples elsewhere, here is how the same concepts look in TypeScript:
+
+```typescript
+// Hello world equivalent
+console.log("Hello, world!");
+
+// Indentation in TypeScript (uses braces, not indentation)
+const x: number = 10;
+if (x > 5) {
+  console.log("x is greater than 5"); // inside block
+}
+console.log("This is outside the if block");
+```
+
+## Practical Takeaways
+
+| Python Concept | Key Point | Common Mistake |
+|----------------|-----------|----------------|
+| REPL | `python` starts interactive shell | Forgetting `exit()` or Ctrl+D to quit |
+| Indentation | 4 spaces, mandatory for blocks | Mixing tabs and spaces |
+| Virtual Environments | `python -m venv .venv` isolates packages | Installing globally instead of in env |
+| pip | `pip freeze > requirements.txt` to lock deps | Not pinning versions |
+| Docstrings | `"""triple quotes"""` for documentation | Confusing with comments |
+| Python vs TypeScript | Dynamic typing vs static | Python catches type errors at runtime |
+
 ## Chapter Quiz
 
 **Q1.** What does the REPL acronym stand for?

@@ -30,7 +30,7 @@ A 12-week, 6-phase transition curriculum. Builds on your existing production exp
 | 4 — Production hardening | 2 | 24-26 | Both projects retrofitted |
 | 5 — Portfolio + positioning | 2 + ongoing | 16-20 + applications | Profile rewrite + outreach |
 
-**Total: ~150-170 hours, 12 weeks with buffer.**
+**Total: ~150-170 hours, 12 weeks with buffer. Plus ongoing job search (see [playbook](08-job-search-playbook.md)).**
 
 ## Syllabus structure
 
@@ -54,3 +54,4 @@ Each phase file contains:
 | [05-phase4-production-hardening.md](05-phase4-production-hardening.md) | Docker, queues, logging, CI/CD, load testing, Grafana |
 | [06-phase5-portfolio-positioning.md](06-phase5-portfolio-positioning.md) | README, demo, profiles, interview prep, negotiation, pricing |
 | [07-day-by-day-plan.md](07-day-by-day-plan.md) | Day-by-day schedule for all 12 weeks |
+| [08-job-search-playbook.md](08-job-search-playbook.md) | Comprehensive job search system + interview prep + Dubai market deep-dive |

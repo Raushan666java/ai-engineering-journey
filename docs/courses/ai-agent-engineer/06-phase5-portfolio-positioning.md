@@ -197,7 +197,9 @@ Publish one case-study post on LinkedIn (native post, not a link to a blog). Spe
 
 ## 5.6 Dubai Job Search + Applications
 
-### Where to search
+> **See the full playbook:** [08-job-search-playbook.md](08-job-search-playbook.md) — covers job sites, networking, proposals, interviews, Dubai visa process, and pipeline management in depth.
+
+### Where to search (quick reference)
 
 | Platform | Best for | Search terms |
 |----------|----------|-------------|
@@ -215,20 +217,19 @@ Publish one case-study post on LinkedIn (native post, not a link to a blog). Spe
 
 ### Response tracking
 
-Create `docs/profile/proposal-tracker.md`:
+Create a proposal tracker (see the [job search playbook](08-job-search-playbook.md) for a complete template):
 
 ```markdown
 # Proposal Tracker
 
-| Date | Company | Role | Link | Template | Response | Notes |
-|------|---------|------|------|----------|----------|-------|
-| 2026-06-24 | Talent Bridge HR | AI Automation Engineer | [link] | B | Interview scheduled | Asked about LangGraph experience |
-| 2026-06-25 | ... | ... | ... | ... | ... | ... |
+| Date | Company | Role | Platform | Template | Status | Follow-up | Notes |
+|------|---------|------|----------|----------|--------|-----------|-------|
+| 2026-06-24 | Talent Bridge HR | AI Automation Engineer | LinkedIn | B | Applied | Day 5 | Customized for LangGraph |
 ```
 
 ### Exercise
 
-Spend 1 hour identifying 20 target postings. Apply to 3-5 of them using your proposal templates. Log everything in the tracker.
+Read the [full job search playbook](08-job-search-playbook.md). It covers everything from the 50-application rule to Dubai visa types to interview system design. Then spend 1 hour identifying 20 target postings and apply to 3-5.
 
 ---
 

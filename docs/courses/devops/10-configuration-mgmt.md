@@ -1,306 +1,543 @@
-# Chapter 10: Configuration Management
+# Chapter 10: Advanced Configuration Management
 
-> **Previous:** [Infrastructure as Code (Terraform)](./09-iac.md) | **Next:** [SRE and Monitoring](./10-monitoring.md)
+> **Prev:** [Terraform & IaC](./09-iac.md)
+> **Next:** [Monitoring Basics](./10-monitoring.md)
+
+---
 
 ## Learning Objectives
 
-![Configuration Management Tools Landscape](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch10-config-mgmt-tools.png)
+- Master advanced Ansible patterns: dynamic inventories, delegation, async tasks.
+- Implement Ansible Tower/AWX for enterprise configuration management.
+- Use configuration management for compliance and security hardening.
+- Implement configuration management for containers and Kubernetes.
+- Apply change management and auditing through configuration automation.
+- Integrate configuration management with CI/CD and secrets management.
 
-By the end of this chapter, students will be able to:
-
-1. Distinguish configuration management from infrastructure provisioning
-2. Write Ansible playbooks, inventory files, and roles for configuration automation
-3. Explain idempotence and desired state configuration principles
-4. Compare agent-based and agentless configuration management approaches
-5. Integrate secrets management with Vault, SOPS, and sealed secrets
-
+---
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| CM vs Provisioning | CM configures software; Provisioning creates resources | Terraform for infra, Ansible for OS config |
-| Ansible Inventory | Static files or dynamic cloud queries | Use dynamic inventory for auto-scaling environments |
-| Playbooks | YAML execution units with tasks and handlers | Use handlers for service restarts only when config changes |
-| Idempotence | Check current state before making changes | Modules report 'changed' or 'ok' for visibility |
-| Secrets Management | Ansible Vault, Vault, SOPS, Sealed Secrets | Vault for dynamic secrets; SOPS for Git workflow |
+| Dynamic Inventory | Cloud API sources inventory | Auto-discover EC2 instances by tags |
+| Ansible Tower | Enterprise CM with RBAC | Scheduling, approvals, logging |
+| Compliance | CIS benchmarks automation | Automate hardening and verify continuously |
+| Container CM | Build images with playbooks | Ansible inside containers for provisioning |
+| Secrets Integration | Vault, AWS SSM, Azure KV | Dynamic secrets at playbook runtime |
+| Delegation | Run tasks on behalf of other hosts | Local execution for API calls |
+| Pull Mode | Ansible-pull for fleet management | Nodes pull config from Git |
+| CI/CD Integration | Git-driven playbook execution | Run playbooks from CI pipeline |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[CM vs Provisioning] --> B[Ansible Overview]
-    B --> C[Inventory]
-    B --> D[Playbooks]
-    B --> E[Roles]
-    C & D & E --> F[Idempotence]
-    F --> G[Secrets Management]
+    A[Advanced Ansible] --> B[Dynamic Inventory]
+    A --> C[Ansible Tower/AWX]
+    A --> D[Compliance Automation]
+    A --> E[Secrets Management]
+    A --> F[Container CM]
+    B --> G[AWS EC2 Plugin]
+    B --> H[Azure Plugin]
+    C --> I[Join Tokens]
+    C --> J[Job Templates]
+    D --> K[CIS Benchmarks]
+    D --> L[OpenSCAP]
+    E --> M[HashiCorp Vault]
+    E --> N[AWS SSM]
+    F --> O[Docker Module]
+    F --> P[Kubernetes Module]
 ```
 
 ## Theory
 
-### 10.1 Configuration Management vs Infrastructure Provisioning
+### Dynamic Inventories
 
-> **Pro Tip:** Use nsible-playbook --syntax-check to validate playbook syntax before running.
+Static inventory files don't scale. Dynamic inventories query cloud APIs:
 
-Configuration management and Infrastructure as Code serve different but complementary purposes:
-
-**Infrastructure Provisioning (Terraform, CloudFormation)** â€” Creates and manages infrastructure resources: VPCs, subnets, load balancers, database instances. Focuses on the cloud resource layer.
-
-**Configuration Management (Ansible, Puppet, Chef)** â€” Installs and configures software on servers: packages, services, configuration files, users, application settings. Focuses on the operating system and application layer.
-
-The boundary can blur. Ansible and Terraform overlap in provisioning capabilities, but the general recommendation is: Terraform for cloud resources, Ansible for OS configuration. Ansible can invoke Terraform; Terraform can use Ansible provisioners.
-
-### 10.2 Ansible
-
-> **Remember:** Terraform for cloud resources, Ansible for OS configuration is the recommended division.
-
-Ansible is an agentless, push-based configuration management tool. It connects to managed nodes via SSH (Linux) or WinRM (Windows), executes modules, and disconnects. No agent software is required on managed nodes.
-
-**Key Concepts**:
-- **Control Node** â€” The machine where Ansible is installed. Any machine with Python.
-- **Managed Nodes** â€” Target servers configured by Ansible.
-- **Inventory** â€” List of managed nodes in INI or YAML format.
-- **Modules** â€” Discrete units of work (package installation, file management, service control).
-- **Tasks** â€” A module invoked with specific arguments.
-- **Playbooks** â€” YAML files containing ordered lists of tasks.
-- **Roles** â€” Structured packaging of tasks, handlers, variables, and templates.
-
-### 10.3 Inventory
-
-> **Warning:** Never store plaintext secrets in playbooks. Use Ansible Vault, SOPS, or HashiCorp Vault.
-
-Inventory defines which hosts Ansible manages and groups them:
-
-```yaml
-all:
-  children:
-    webservers:
-      hosts:
-        web01:
-          ansible_host: 192.168.1.10
-        web02:
-          ansible_host: 192.168.1.11
-    databases:
-      hosts:
-        db01:
-          ansible_host: 192.168.1.20
-  vars:
-    ansible_user: ubuntu
-    ansible_python_interpreter: /usr/bin/python3
+```ini
+# inventory/aws_ec2.yaml
+plugin: aws_ec2
+regions:
+  - us-east-1
+  - us-west-2
+filters:
+  tag:Environment:
+    - production
+  instance-state-name: running
+hostnames:
+  - dns-name
+keyed_groups:
+  - key: tags.Role
+    prefix: role
+  - key: placement.region
+    prefix: region
+compose:
+  ansible_host: public_dns_name
 ```
 
-Inventories can be static files or dynamic scripts that query cloud providers, CMDB, or other sources.
-
-### 10.4 Playbooks
-
-Playbooks are the execution units of Ansible. They define hosts, tasks, variables, and execution order:
-
 ```yaml
----
+# Using dynamic groups
 - name: Configure web servers
-  hosts: webservers
-  become: yes
-  vars:
-    nginx_port: 8080
+  hosts: role_web
   tasks:
-    - name: Install Nginx
+    - name: Install nginx
       apt:
         name: nginx
         state: present
-        update_cache: yes
-
-    - name: Deploy configuration
-      template:
-        src: nginx.conf.j2
-        dest: /etc/nginx/nginx.conf
-      notify: restart nginx
-
-    - name: Ensure Nginx is running
-      service:
-        name: nginx
-        state: started
-        enabled: yes
-
-  handlers:
-    - name: restart nginx
-      service:
-        name: nginx
-        state: restarted
 ```
 
-### 10.5 Idempotence
+### Ansible Tower / AWX
 
-Ansible modules are designed to be idempotent. Running the same playbook multiple times produces the same result. Modules check current state before making changes:
+Ansible Tower (Red Hat) / AWX (upstream open-source) provides:
 
-- `apt: name=nginx state=present` checks if nginx is installed before installing
-- `file: path=/data state=directory` creates the directory only if it does not exist
-- `template: src=... dest=...` copies the file only if the template has changed
-
-The `changed_when` directive customizes idempotence detection. The `check_mode` flag (dry-run) previews changes without executing.
-
-### 10.6 Roles
-
-Roles organize playbooks into reusable components:
-
-```
-roles/
-  common/
-    tasks/main.yml
-    handlers/main.yml
-    templates/
-    files/
-    vars/main.yml
-    defaults/main.yml
-    meta/main.yml
-  nginx/
-    tasks/main.yml
-    templates/nginx.conf.j2
-```
+- **User interface:** Manage inventories, credentials, and playbooks
+- **RBAC:** Team-based access control for playbook execution
+- **Scheduling:** Cron-based playbook execution
+- **Approvals:** Workflow approval gates
+- **Logging:** Centralized audit trail
+- **REST API:** Programmatic playbook triggering
+- **Notifications:** Slack, email, webhook on status changes
 
 ```yaml
+# AWX job template via API
+- name: Trigger AWX job
+  uri:
+    url: "https://awx.example.com/api/v2/job_templates/10/launch/"
+    method: POST
+    headers:
+      Authorization: "Bearer {{ awx_token }}"
+      Content-Type: application/json
+    body_format: json
+    body:
+      extra_vars:
+        environment: production
+        version: "{{ lookup('env', 'CI_COMMIT_SHA') }}"
+```
+
+### Compliance Automation
+
+Automated security hardening and compliance verification:
+
+```yaml
+# CIS benchmark compliance checks
+- name: CIS Benchmark - SSH Hardening
+  hosts: all
+  vars:
+    cis_rules:
+      - rule: "1.1.1.1 Disable unused filesystems"
+        check: "modprobe -n -v cramfs"
+      - rule: "5.2.1 Ensure permissions on /etc/ssh/sshd_config"
+        check: "stat /etc/ssh/sshd_config"
+  tasks:
+    - name: Check SSH permissions are 600
+      stat:
+        path: /etc/ssh/sshd_config
+      register: ssh_config
+
+    - name: Remediate SSH permissions
+      file:
+        path: /etc/ssh/sshd_config
+        mode: "0600"
+        owner: root
+        group: root
+      when: ssh_config.stat.mode != "0600"
+
+    - name: Verify no root SSH login
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: "^PermitRootLogin"
+        line: "PermitRootLogin no"
+      notify: restart sshd
+      check_mode: yes
+```
+
+### Ansible and Container Configuration
+
+**Building Docker images with Ansible:**
+
+```yaml
+- name: Build application image
+  hosts: localhost
+  tasks:
+    - name: Create Dockerfile
+      copy:
+        dest: /tmp/Dockerfile
+        content: |
+          FROM node:20-alpine
+          WORKDIR /app
+          COPY package*.json ./
+          RUN npm ci
+          COPY dist/ ./
+          EXPOSE 3000
+          CMD ["node", "server.js"]
+
+    - name: Build Docker image
+      docker_image:
+        name: myapp
+        tag: "{{ version }}"
+        build:
+          path: /tmp
+          pull: yes
+        source: build
+        push: yes
+```
+
+**Managing Kubernetes with Ansible:**
+
+```yaml
+- name: Deploy to Kubernetes
+  hosts: localhost
+  tasks:
+    - name: Create namespace
+      kubernetes.core.k8s:
+        name: "{{ environment }}"
+        api_version: v1
+        kind: Namespace
+        state: present
+
+    - name: Deploy application
+      kubernetes.core.k8s:
+        state: present
+        definition:
+          apiVersion: apps/v1
+          kind: Deployment
+          metadata:
+            name: myapp
+            namespace: "{{ environment }}"
+          spec:
+            replicas: 3
+            selector:
+              matchLabels:
+                app: myapp
+            template:
+              metadata:
+                labels:
+                  app: myapp
+              spec:
+                containers:
+                  - name: myapp
+                    image: "myapp:{{ version }}"
+                    ports:
+                      - containerPort: 3000
+```
+
+### Secrets Integration
+
+Inject secrets at runtime without storing them in playbooks:
+
+```yaml
+# HashiCorp Vault lookup
+- name: Get database password from Vault
+  debug:
+    msg: "{{ lookup('community.hashi_vault.hashi_vault', 'secret/data/db', url='https://vault.example.com') }}"
+
+# AWS SSM Parameter Store lookup
+- name: Get DB password from SSM
+  set_fact:
+    db_password: "{{ lookup('amazon.aws.ssm_parameter', '/prod/db/password', decrypt=True) }}"
+
+# Azure Key Vault lookup
+- name: Get API key from Azure KV
+  set_fact:
+    api_key: "{{ lookup('azure.azcollection.azure_keyvault_secret', 'api-key', vault_url='https://myvault.vault.azure.net') }}"
+```
+
+### Ansible Pull Mode
+
+In pull mode, nodes fetch configuration from Git and apply locally:
+
+```text
+# Cron job on each node
+*/15 * * * * ansible-pull -o -U https://github.com/org/config-repo.git -d /etc/ansible/pull -i localhost
+```
+
+**Use cases:**
+- Infrastructure at scale (thousands of nodes)
+- Nodes without direct SSH access from control node
+- IoT and edge devices
+- Ephemeral instances that self-configure on boot
+
+### Delegation and Local Actions
+
+Delegate tasks to specific hosts:
+
+```yaml
+- name: Register instance with load balancer
+  hosts: webservers
+  tasks:
+    - name: Add instance to ELB
+      elb_instance:
+        instance_id: "{{ ansible_ec2_instance_id }}"
+        ec2_elbs:
+          - myapp-elb
+        state: present
+      delegate_to: localhost
+
+- name: Run database migration
+  hosts: app_servers
+  serial: 1
+  tasks:
+    - name: Run migrations
+      command: npm run migrate
+      run_once: true
+      delegate_to: "{{ groups.app_servers[0] }}"
+```
+
+### Ansible in CI/CD
+
+```yaml
+# .gitlab-ci.yml
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - ansible-galaxy install -r requirements.yml
+    - ansible-playbook -i inventory/production site.yml \
+        --extra-vars "version=$CI_COMMIT_TAG" \
+        --vault-password-file .vault_pass
+  only:
+    - tags
+  environment:
+    name: production
+```
+
 ---
-- hosts: webservers
-  roles:
-    - common
-    - nginx
-```
-
-Community roles are shared via Ansible Galaxy (`ansible-galaxy install geerlingguy.nginx`).
-
-### 10.7 Agent vs Agentless
-
-**Agentless (Ansible, Salt SSH)** â€” No agent required. SSH-based execution. Simpler setup, lower resource overhead, but potentially higher SSH connection overhead for large fleets.
-
-**Agent-Based (Puppet, Chef, Salt)** â€” Agent runs continuously on managed nodes, pulls configuration from a master or applies cached state. Better scalability for large fleets, real-time enforcement, and offline operation.
-
-### 10.8 Desired State vs Imperative
-
-**Desired State (Puppet, Ansible declarative modules)** â€” Define the desired end state; the tool determines the steps. Example: "ensure nginx is installed and running."
-
-**Imperative (Shell scripts, Chef recipes)** â€” Define the exact steps. Example: "run apt-get install nginx, then run systemctl start nginx."
-
-Desired state configurations are idempotent, self-documenting, and more predictable at scale.
-
-### 10.9 Secrets Management
-
-Configuration management requires accessing secrets (database passwords, API keys, certificates). Several approaches exist:
-
-**Ansible Vault** â€” Built-in encryption for variables and files. `ansible-vault create`, `ansible-vault encrypt`, `ansible-vault edit`. Decrypted at runtime with `--ask-vault-pass` or vault password file.
-
-**HashiCorp Vault** â€” External secrets management with dynamic secrets, leasing, and audit logging. Ansible integrates via the `community.hashi_vault` collection.
-
-**SOPS (Secrets OPerationS)** â€” Encrypts specific values in YAML/JSON files using AWS KMS, GCP KMS, or age. Works well with Git workflows.
-
-```yaml
-# secrets.yaml (encrypted with SOPS)
-db_password: ENC[AES256_GCM,data:abc123...,iv:def456...,tag:ghi789...]
-```
-
-**Sealed Secrets (Kubernetes)** â€” Encrypts Kubernetes Secrets into SealedSecrets that can be stored in Git safely. Only the controller in the cluster can decrypt them.
 
 ## Examples
 
-> **One-Sentence Takeaway:** Configuration management installs and configures software; IaC provisions cloud resources.
+### Example 1: Compliance Scanner
 
-### Example 10.1: Complete Ansible Role
+```typescript
+interface ComplianceRule {
+  id: string;
+  description: string;
+  category: string;
+  severity: 'critical' | 'high' | 'medium' | 'low';
+  check: () => Promise<boolean>;
+  remediate: () => Promise<void>;
+}
 
-```yaml
-# roles/postgres/tasks/main.yml
+class ComplianceScanner {
+  private rules: ComplianceRule[] = [];
+  private results: Array<{ rule: string; passed: boolean; error?: string }> = [];
+
+  addRule(rule: ComplianceRule): void {
+    this.rules.push(rule);
+  }
+
+  async runScan(): Promise<void> {
+    console.log('🔍 Starting compliance scan...\n');
+
+    for (const rule of this.rules) {
+      try {
+        const passed = await rule.check();
+        this.results.push({ rule: rule.id, passed });
+        const icon = passed ? '✅' : '❌';
+        console.log(`${icon} ${rule.id}: ${rule.description}`);
+        if (!passed) {
+          console.log(`   Severity: ${rule.severity}`);
+        }
+      } catch (error) {
+        this.results.push({ rule: rule.id, passed: false, error: String(error) });
+        console.log(`❌ ${rule.id}: Error - ${error}`);
+      }
+    }
+
+    this.printSummary();
+  }
+
+  private printSummary(): void {
+    const passed = this.results.filter(r => r.passed).length;
+    const failed = this.results.filter(r => !r.passed).length;
+    const critical = this.results.filter(r => !r.passed && this.rules.find(rule => rule.id === r.rule)?.severity === 'critical').length;
+    const high = this.results.filter(r => !r.passed && this.rules.find(rule => rule.id === r.rule)?.severity === 'high').length;
+
+    console.log(`\n=== Compliance Summary ===`);
+    console.log(`Passed: ${passed}/${this.results.length}`);
+    console.log(`Failed: ${failed}`);
+    console.log(`Critical: ${critical}, High: ${high}`);
+
+    if (failed > 0) {
+      console.log(`\n❌ Compliance score: ${((passed / this.results.length) * 100).toFixed(0)}%`);
+    } else {
+      console.log(`\n✅ Fully compliant`);
+    }
+  }
+
+  generateReport(): string {
+    let report = '# Compliance Scan Report\n\n';
+    report += `| Rule | Status | Severity |\n`;
+    report += `|------|--------|----------|\n`;
+
+    for (const result of this.results) {
+      const rule = this.rules.find(r => r.id === result.rule);
+      const status = result.passed ? '✅ Passed' : '❌ Failed';
+      report += `| ${rule?.id} | ${status} | ${rule?.severity} |\n`;
+    }
+
+    return report;
+  }
+}
+
+const scanner = new ComplianceScanner();
+scanner.addRule({
+  id: 'CIS-1.1.1', description: 'Disable unused filesystems', category: 'system', severity: 'high',
+  check: async () => true,
+  remediate: async () => {},
+});
+scanner.addRule({
+  id: 'CIS-5.2.1', description: 'SSH config permissions', category: 'ssh', severity: 'critical',
+  check: async () => false,
+  remediate: async () => {},
+});
+scanner.runScan();
+```
+
+### Example 2: Ansible Vault Manager
+
+```typescript
+interface VaultEntry {
+  name: string;
+  path: string;
+  data: Record<string, string>;
+}
+
+class AnsibleVaultManager {
+  private entries: VaultEntry[] = [];
+
+  addEntry(path: string, name: string, data: Record<string, string>): void {
+    const existing = this.entries.findIndex(e => e.path === path);
+    if (existing >= 0) {
+      this.entries[existing] = { name, path, data };
+    } else {
+      this.entries.push({ name, path, data });
+    }
+  }
+
+  generateVaultFile(path: string): string {
+    const entries = this.entries.filter(e => e.path === path);
+    if (entries.length === 0) throw new Error(`No entries for path: ${path}`);
+
+    return entries.map(entry =>
+      Object.entries(entry.data)
+        .map(([key, value]) => `${key}: "${value}"`)
+        .join('\n')
+    ).join('\n');
+  }
+
+  auditHardcodedSecrets(playbookPath: string): string[] {
+    const issues: string[] = [];
+    for (const entry of this.entries) {
+      for (const [key, value] of Object.entries(entry.data)) {
+        if (value.length > 4 && /^[a-zA-Z0-9!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]{8,}$/.test(value)) {
+          issues.push(`Potential secret "${key}" in ${entry.path} — should be vault-encrypted`);
+        }
+      }
+    }
+    return issues;
+  }
+
+  generateSecretsPlaybook(path: string): string {
+    const entries = this.entries.filter(e => e.path === path);
+
+    return `---
+- name: Deploy secrets from vault
+  hosts: all
+  become: yes
+  vars_files:
+    - vault.yml
+  tasks:
+${entries.map(entry =>
+      Object.keys(entry.data).map(key =>
+        `    - name: Set ${key}
+      set_fact:
+        ${key}: "{{ ${key} }}"
+      no_log: true`
+      ).join('\n')
+    ).join('\n')}
+    - name: Write .env file
+      template:
+        src: .env.j2
+        dest: /opt/app/.env
+        owner: appuser
+        mode: "0600"`;
+  }
+}
+
+const vault = new AnsibleVaultManager();
+vault.addEntry('vault.yml', 'production', {
+  DB_PASSWORD: 'p@ssw0rd123!',
+  API_KEY: 'sk-abc123def456',
+  JWT_SECRET: 'super-secret-key-2024',
+});
+vault.addEntry('vault.yml', 'staging', {
+  DB_PASSWORD: 'staging-pass',
+  API_KEY: 'sk-test-key',
+  JWT_SECRET: 'test-secret',
+});
+
+console.log('Vault file:\n', vault.generateVaultFile('vault.yml'));
+console.log('\nHardcoded secrets audit:\n', vault.auditHardcodedSecrets('site.yml').join('\n'));
+```
+
 ---
-- name: Add PostgreSQL repository
-  apt_repository:
-    repo: "deb http://apt.postgresql.org/pub/repos/apt {{ ansible_distribution_release }}-pgdg main"
-    state: present
 
-- name: Install PostgreSQL
-  apt:
-    name: "postgresql-{{ postgres_version }}"
-    state: present
+## Practical Takeaways
 
-- name: Configure postgresql.conf
-  template:
-    src: postgresql.conf.j2
-    dest: "/etc/postgresql/{{ postgres_version }}/main/postgresql.conf"
-  notify: restart postgresql
-```
+1. **Use dynamic inventories for cloud environments.** Don't maintain static host lists.
+2. **Integrate with a secrets manager.** Use Vault, SSM, or Azure Key Vault for runtime secrets.
+3. **Run compliance checks as regular playbooks.** Automate CIS benchmark verification.
+4. **Use pull mode for large fleets.** ansible-pull scales better than push for 1000+ nodes.
+5. **Run Ansible Tower/AWX for enterprise teams.** Web UI, RBAC, scheduling, auditing.
+6. **Use check mode first.** Always preview changes with `--check` before applying.
 
-### Example 10.2: Ansible-Vault Usage
-
-```bash
-# Create encrypted variable file
-ansible-vault create group_vars/production/vault.yml
-
-# Edit encrypted file
-ansible-vault edit group_vars/production/vault.yml
-
-# Run playbook with vault
-ansible-playbook site.yml --ask-vault-pass
-
-# Encrypt existing file
-ansible-vault encrypt secrets.yml
-```
-
-## Summary
-
-## Concept Comparison Table
-
-| Concept | Description |
-|---------|-------------|
-| Infra Provisioning | Creates VPCs, subnets, load balancers, databases |
-| Config Management | Installs packages, configures files, manages services |
-| Agentless | SSH-based (Ansible), simpler setup |
-| Agent-Based | Continuous agent (Puppet, Chef), better scalability |
-| Desired State | Declare end state, tool determines steps |
-
-## Quick Reference
-
-| Topic | Key Points |
-|-------|------------|
-| Ansible Key | Control Node, Inventory, Modules, Playbooks, Roles |
-| Idempotence | Check current state before changing |
-| Secrets | Ansible Vault, Vault, SOPS, Sealed Secrets |
-| Templates | Jinja2 with variables, facts, filters |
-| Best Practice | --check, diff mode, tags, --limit |
-
-## Cross-Application Matrix
-
-| Domain | Application |
-|--------|-------------|
-| Web | Web server farm configuration management |
-| Cloud | Post-provision OS configuration |
-| Enterprise | Compliance baseline enforcement |
-| Container | Container host OS hardening |
+---
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What distinguishes CM from IaC?</summary>**A)** CM is faster<br>**B)** IaC provisions resources; CM configures software<br>**C)** There is no difference<br>**D)** CM is cloud-only<br><br>**Answer: B)** IaC provisions resources; CM configures software</details>
+<details><summary>Question 1: What is a dynamic inventory in Ansible?</summary>**A)** A static host list<br>**B)** An inventory that queries cloud APIs for host information<br>**C)** A manually maintained host file<br>**D)** A YAML file with hostnames<br><br>**Answer: B)** An inventory that queries cloud APIs for host information</details>
 
-<details><summary>Question 2: What does Ansible's check_mode do?</summary>**A)** Runs playbook for real<br>**B)** Dry-run preview without changes<br>**C)** Validates YAML syntax<br>**D)** Tests network connectivity<br><br>**Answer: B)** Dry-run preview without changes</details>
+<details><summary>Question 2: What is the purpose of Ansible Tower/AWX?</summary>**A)** A code editor<br>**B)** Enterprise Ansible management with UI, RBAC, and scheduling<br>**C)** An alternative to Docker<br>**D)** A monitoring tool<br><br>**Answer: B)** Enterprise Ansible management with UI, RBAC, and scheduling</details>
 
-<details><summary>Question 3: Which tool encrypts specific values in YAML for Git?</summary>**A)** Ansible Vault<br>**B)** SOPS<br>**C)** Sealed Secrets<br>**D)** HashiCorp Vault<br><br>**Answer: B)** SOPS</details>
+<details><summary>Question 3: How does ansible-pull differ from default Ansible?</summary>**A)** It pushes configuration to nodes<br>**B)** Nodes pull configuration from Git and apply locally<br>**C)** It requires a control node<br>**D)** It only works with Windows<br><br>**Answer: B)** Nodes pull configuration from Git and apply locally</details>
 
+<details><summary>Question 4: What is the benefit of using delegate_to in Ansible?</summary>**A)** It speeds up playbook execution<br>**B)** It runs tasks on a specific host (like localhost) while targeting others<br>**C)** It delegates to another playbook<br>**D)** It creates new users<br><br>**Answer: B)** It runs tasks on a specific host (like localhost) while targeting others</details>
+
+<details><summary>Question 5: How should secrets be handled in Ansible playbooks?</summary>**A)** Stored in plaintext in variables<br>**B)** Loaded from a secrets manager or Ansible Vault at runtime<br>**C)** Hardcoded in tasks<br>**D)** Passed via command-line arguments<br><br>**Answer: B)** Loaded from a secrets manager or Ansible Vault at runtime</details>
+
+---
 
 ## Summary
 
-Configuration management automates software installation and configuration on servers. Ansible provides agentless, push-based automation through playbooks and roles. Idempotence ensures safe repeated execution. Puppet and Chef offer agent-based models for larger deployments. Secrets management is critical: Ansible Vault, HashiCorp Vault, SOPS, and Sealed Secrets each address specific use cases. Desired state configuration is preferred for its predictability and self-documentation.
+- Dynamic inventories query cloud APIs (AWS, Azure, GCP) to discover hosts automatically.
+- Ansible Tower/AWX provides enterprise features: RBAC, scheduling, approvals, and auditing.
+- Compliance automation uses Ansible to enforce CIS benchmarks and security hardening.
+- Secrets should be injected from HashiCorp Vault, AWS SSM, or Azure Key Vault at runtime.
+- ansible-pull enables nodes to fetch configuration from Git and apply it locally.
+- Delegation runs tasks on specific hosts while targeting others (e.g., API calls from localhost).
+- Ansible modules for Docker and Kubernetes extend configuration management to containers.
+- CI/CD integration automates playbook execution on infrastructure changes.
+
+---
 
 ## Exercises
 
 ### Review Questions
-
-1. How does configuration management differ from infrastructure provisioning? Provide examples of each.
-2. What makes an Ansible module idempotent? How does a module report that no change was needed?
-3. Compare agentless and agent-based configuration management. What factors determine the appropriate choice?
-4. How does Ansible Vault protect secrets at rest? How are secrets decrypted during playbook execution?
-5. What is the difference between Ansible variables in `vars/main.yml` and `defaults/main.yml`?
+1. How does a dynamic inventory differ from a static inventory?
+2. What are the advantages of pull mode over push mode for large deployments?
+3. How does Ansible Tower improve team collaboration on playbooks?
+4. What is the purpose of delegate_to and when should you use it?
+5. How can you integrate HashiCorp Vault with Ansible?
 
 ### Application Problems
-
-1. Write an Ansible playbook that installs and configures Nginx on a remote Ubuntu server. Include a template for the virtual host configuration, firewall rules (ufw), and service management. Use handlers for service restarts.
-2. Create an Ansible role for deploying a Node.js application. The role should: install Node.js from the official repository, copy application files, install npm dependencies, configure a systemd service, and start the application. Parameterize the Node.js version, application name, and port.
-3. Set up Ansible Vault to encrypt database credentials. Create an encrypted variable file, reference it in a playbook, and execute the playbook with the vault password.
+1. Create a dynamic inventory configuration for AWS EC2 instances tagged with `Role=web` and `Environment=production`.
+2. Write a compliance playbook that checks and remediates SSH hardening settings.
+3. Configure an Ansible workflow that deploys a Docker container with Kubernetes integration.
+4. Implement a secrets management pattern that loads database credentials from Vault at runtime.
 
 ### Challenge Problem
-
-Design a configuration management strategy for an organization running 200 servers across three environments (dev, staging, production) in a hybrid cloud (AWS + on-premises). Compare Ansible and Puppet approaches. Define the inventory structure, role hierarchy, secret management approach, deployment workflow, change management process, and compliance auditing. Address: rolling updates to minimize downtime, configuration validation before production application, integration with Terraform-provisioned infrastructure, and secrets rotation strategy. Justify the tool selection with specific advantages for the stated constraints.
+1. Design a complete enterprise configuration management system using Ansible including: dynamic inventory for 500+ AWS EC2 instances across 3 environments, Ansible Tower/AWX with RBAC (developers can deploy to dev/staging, operators approve prod), compliance automation running CIS benchmarks daily with email reports for violations, secrets integration with HashiCorp Vault for dynamic database credentials, pull-mode configuration for auto-scaling instances using ansible-pull, CI/CD integration running playbooks from GitHub Actions on infrastructure changes, and a self-service portal (via Tower API) allowing developers to trigger common playbooks.

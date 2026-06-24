@@ -10,9 +10,11 @@ After completing this chapter, you will be able to:
 - Determine subsets, proper subsets, and set equality
 - Perform set operations: union, intersection, difference, symmetric difference, complement
 - Construct and interpret Venn diagrams
-- Compute power sets
+- Compute power sets and cardinalities
 - Work with Cartesian products
 - Apply set identities in proofs
+- Distinguish finite, countable, and uncountable sets
+- Understand characteristic functions, multisets, and fuzzy sets
 
 ## Chapter at a Glance
 
@@ -24,18 +26,22 @@ After completing this chapter, you will be able to:
 | Power Set | $\mathcal{P}(S)$ is the set of all subsets of $S$ | A set of $n$ elements has $2^n$ subsets |
 | Set Identities | De Morgan's and distributive laws are foundational | Use identity chains to simplify complex set expressions without element arguments |
 | Cartesian Product | $A \times B$ is the set of all ordered pairs | Useful for defining relations, functions, and coordinate spaces |
+| Cardinality | Finite vs infinite, countable vs uncountable | Diagonalization shows $\mathbb{R}$ is uncountably infinite |
+| Multisets and Fuzzy Sets | Generalizations of classical sets | Real-world data often needs bag semantics or graded membership |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Definition of a Set] --> B[Subsets & Set Equality]
-    B --> C[Cardinality & Power Set]
+    A[Definition of a Set] --> B[Subsets and Set Equality]
+    B --> C[Cardinality and Power Set]
     C --> D[Set Operations]
     D --> E[Set Identities]
     E --> F[Venn Diagrams]
     F --> G[Cartesian Product]
-    G --> H[Applications & Proofs]
+    G --> H[Characteristic Functions]
+    H --> I[Multisets and Fuzzy Sets]
+    I --> J[Applications and Proofs]
 ```
 
 ## Theory
@@ -53,12 +59,18 @@ or by a set-builder (predicate) notation:
 $$B = \{x \mid x \in \mathbb{N},\; x \text{ is even},\; x \leq 20\}$$
 
 Standard number sets:
-- $\mathbb{N} = \{0, 1, 2, 3, \ldots\}$ â€” natural numbers
-- $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$ â€” integers
-- $\mathbb{Q} = \{a/b \mid a, b \in \mathbb{Z},\; b \neq 0\}$ â€” rational numbers
-- $\mathbb{R}$ â€” real numbers
+- $\mathbb{N} = \{0, 1, 2, 3, \ldots\}$ — natural numbers
+- $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}$ — integers
+- $\mathbb{Q} = \{a/b \mid a, b \in \mathbb{Z},\; b \neq 0\}$ — rational numbers
+- $\mathbb{R}$ — real numbers
 
 The **empty set** $\emptyset$ (or $\{\}$) contains no elements. The **universal set** $U$ is the set of all elements under consideration in a given context.
+
+**Set-builder notation patterns:**
+- $\{x \in \mathbb{N} \mid x < 10\}$ — natural numbers less than 10
+- $\{2k \mid k \in \mathbb{Z}\}$ — even integers
+- $\{x^2 \mid x \in \mathbb{R}\}$ — nonnegative reals
+- $\{a/b \in \mathbb{Q} \mid a, b \in \mathbb{Z},\; b \neq 0\}$ — rationals in lowest terms
 
 > **One-Sentence Takeaway:** A set is defined solely by its membership — two sets are equal iff they contain exactly the same elements, regardless of order.
 
@@ -79,16 +91,26 @@ $A$ is a **proper subset** of $B$, written $A \subset B$, if $A \subseteq B$ and
 
 The **cardinality** of a finite set $S$, denoted $|S|$, is the number of distinct elements in $S$. For example, $|\{a, b, c\}| = 3$ and $|\emptyset| = 0$.
 
-> **One-Sentence Takeaway:** Cardinality measures the size of a set; it is the gateway to counting arguments throughout discrete mathematics.
+**Finite vs infinite sets.** A set is **finite** if its cardinality is a natural number. Otherwise it is **infinite**. $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, and $\mathbb{R}$ are all infinite, but they have different "sizes" of infinity.
+
+**Countable sets.** A set is **countably infinite** if it can be put into a bijection with $\mathbb{N}$. Examples: $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$.
+
+**Uncountable sets.** A set is **uncountable** if it is infinite but not countable. The real numbers $\mathbb{R}$ are uncountable.
+
+**Theorem 1.3 (Cantor's Diagonalization).** The set of real numbers $\mathbb{R}$ is uncountable.
+
+*Proof sketch.* Assume $\mathbb{R}$ is countable, so we list all reals in $(0,1)$. Construct a number whose $n$-th digit differs from the $n$-th digit of the $n$-th number in the list. This new number is not in the list — contradiction.
+
+> **One-Sentence Takeaway:** Cardinality measures the size of a set; some infinities are larger than others — $\mathbb{R}$ is uncountably infinite while $\mathbb{Q}$ is countably infinite.
 
 ### 1.4 Power Set
 
 The **power set** of $S$, denoted $\mathcal{P}(S)$ or $2^S$, is the set of all subsets of $S$:
 $$\mathcal{P}(S) = \{T \mid T \subseteq S\}$$
 
-**Theorem 1.3.** If $|S| = n$, then $|\mathcal{P}(S)| = 2^n$.
+**Theorem 1.4.** If $|S| = n$, then $|\mathcal{P}(S)| = 2^n$.
 
-*Proof.* Each element of $S$ may either be in a given subset or not â€” two choices per element, independently, yielding $2^n$ subsets.
+*Proof.* Each element of $S$ may either be in a given subset or not — two choices per element, independently, yielding $2^n$ subsets.
 
 > **One-Sentence Takeaway:** A set of size $n$ has $2^n$ subsets — the power set grows exponentially.
 
@@ -102,7 +124,17 @@ Let $A$ and $B$ be sets.
 - **Symmetric difference:** $A \oplus B = (A \setminus B) \cup (B \setminus A)$
 - **Complement (relative to $U$):** $\overline{A} = A^c = \{x \in U \mid x \notin A\}$
 
-> **One-Sentence Takeaway:** Set operations — union, intersection, difference, complement — mirror logical connectives and form the algebra of sets.
+Venn diagram for three sets:
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+graph TD
+    subgraph U[Universal Set U]
+        A1((A))
+        B1((B))
+        C1((C))
+    end
+```
 
 ### 1.6 Set Identities
 
@@ -120,11 +152,25 @@ For sets $A, B, C$ under universal set $U$:
 | Distributive laws | $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$, $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$ |
 | De Morgan's laws | $\overline{A \cup B} = \overline{A} \cap \overline{B}$, $\overline{A \cap B} = \overline{A} \cup \overline{B}$ |
 
-> **One-Sentence Takeaway:** Set identities like De Morgan's and distributive laws allow algebraic manipulation of set expressions without elementwise reasoning.
+**Proving set identities.** Two methods:
+1. **Elementwise argument:** Show $x$ in LHS $\iff$ $x$ in RHS by logical reasoning.
+2. **Identity chain:** Reduce one side to the other using known identities.
 
 ### 1.7 Venn Diagrams
 
-Venn diagrams represent sets as overlapping regions in a plane. The universal set $U$ is a rectangle; sets are circles (or ovals) inside it. Shaded regions indicate the result of operations. For example, $A \cap B$ is the overlapping region of circles $A$ and $B$; $A \cup B$ is all area inside either circle.
+Venn diagrams represent sets as overlapping regions in a plane. The universal set $U$ is a rectangle; sets are circles (or ovals) inside it. Shaded regions indicate the result of operations.
+
+```mermaid
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+graph TD
+    subgraph "A ∪ B (Union)"
+        direction LR
+        a1((A)) --- b1((B))
+    end
+    subgraph "A ∩ B (Intersection)"
+        a2((A)) --- b2((B))
+    end
+```
 
 > **One-Sentence Takeaway:** Venn diagrams provide visual intuition for set relationships but are not substitutes for formal proofs.
 
@@ -133,15 +179,84 @@ Venn diagrams represent sets as overlapping regions in a plane. The universal se
 The **Cartesian product** of sets $A$ and $B$, written $A \times B$, is the set of all ordered pairs $(a, b)$ with $a \in A$ and $b \in B$:
 $$A \times B = \{(a, b) \mid a \in A,\; b \in B\}$$
 
-**Theorem 1.4.** $|A \times B| = |A| \cdot |B|$.
+**Theorem 1.5.** $|A \times B| = |A| \cdot |B|$.
 
 The $n$-fold Cartesian product $A_1 \times A_2 \times \cdots \times A_n$ is the set of all $n$-tuples $(a_1, a_2, \ldots, a_n)$ with $a_i \in A_i$.
 
+**Example:** If $A = \{1,2\}$ and $B = \{x,y\}$, then $A \times B = \{(1,x),(1,y),(2,x),(2,y)\}$.
+
 > **One-Sentence Takeaway:** The Cartesian product builds ordered pairs from sets, and its size is the product of the individual set sizes — the foundation of relations and functions.
+
+### 1.9 Characteristic Functions
+
+The **characteristic function** (indicator function) of a set $A \subseteq U$ is:
+$$\chi_A(x) = \begin{cases} 1 & \text{if } x \in A \\ 0 & \text{if } x \notin A \end{cases}$$
+
+Characteristic functions connect set operations to Boolean algebra:
+- $\chi_{A \cap B}(x) = \chi_A(x) \land \chi_B(x)$
+- $\chi_{A \cup B}(x) = \chi_A(x) \lor \chi_B(x)$
+- $\chi_{\overline{A}}(x) = 1 - \chi_A(x)$
+
+```typescript
+function characteristic<T>(set: Set<T>, universal: T[]): number[] {
+  return universal.map(x => set.has(x) ? 1 : 0);
+}
+
+const A = new Set([1, 3, 5]);
+const U = [1, 2, 3, 4, 5];
+console.log(characteristic(A, U)); // [1, 0, 1, 0, 1]
+```
+
+### 1.10 Multisets (Bags)
+
+A **multiset** allows elements to appear multiple times. The count of element $x$ in multiset $M$ is $m_M(x)$.
+
+Operations on multisets:
+- **Union:** $m_{M \cup N}(x) = \max(m_M(x), m_N(x))$
+- **Intersection:** $m_{M \cap N}(x) = \min(m_M(x), m_N(x))$
+- **Sum:** $m_{M + N}(x) = m_M(x) + m_N(x)$
+- **Difference:** $m_{M - N}(x) = \max(m_M(x) - m_N(x), 0)$
+
+```typescript
+type Multiset<T> = Map<T, number>;
+
+function add<T>(M: Multiset<T>, N: Multiset<T>): Multiset<T> {
+  const result = new Map(M);
+  for (const [elem, count] of N) {
+    result.set(elem, (result.get(elem) || 0) + count);
+  }
+  return result;
+}
+
+const bag1: Multiset<string> = new Map([["a", 2], ["b", 1]]);
+const bag2: Multiset<string> = new Map([["a", 1], ["c", 3]]);
+console.log(Object.fromEntries(add(bag1, bag2))); // {a: 3, b: 1, c: 3}
+```
+
+### 1.11 Fuzzy Sets
+
+A **fuzzy set** assigns a membership degree in $[0,1]$ to each element, capturing partial membership:
+$$\mu_A: U \to [0,1]$$
+
+Operations:
+- $\mu_{A \cup B}(x) = \max(\mu_A(x), \mu_B(x))$
+- $\mu_{A \cap B}(x) = \min(\mu_A(x), \mu_B(x))$
+- $\mu_{\overline{A}}(x) = 1 - \mu_A(x)$
+
+> **One-Sentence Takeaway:** Fuzzy sets generalize classical sets by allowing partial membership values between 0 and 1, useful for handling uncertainty and vagueness.
+
+### 1.12 Inclusion-Exclusion Principle
+
+For two sets: $|A \cup B| = |A| + |B| - |A \cap B|$.
+
+For three sets: $|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|$.
+
+**General formula:**
+$$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
 
 > **Pro Tip:** When proving set identities, start with the more complex side and reduce it to the simpler side using known identities — this is cleaner than elementwise arguments.
 >
-> **Pro Tip:** For finite sets, use the inclusion-exclusion principle $|A \cup B| = |A| + |B| - |A \cap B|$ to avoid double-counting elements.
+> **Pro Tip:** For finite sets, always use inclusion-exclusion to avoid double-counting when sets overlap.
 >
 > **Warning:** Do not confuse $\emptyset$ (the empty set, a set with no elements) with $\{\emptyset\}$ (a set containing the empty set as an element — its cardinality is 1).
 
@@ -155,6 +270,8 @@ The $n$-fold Cartesian product $A_1 \times A_2 \times \cdots \times A_n$ is the 
 | Cartesian Product ($\times$) | Set of all ordered pairs | Order matters; non-commutative | Defining coordinates and relations |
 | Union ($\cup$) | Elements in either set | Inclusive OR logic | Combining sets without duplication |
 | Intersection ($\cap$) | Elements in both sets | AND logic | Finding common elements |
+| Multiset | Elements can repeat | $m(x) > 1$ allowed | Bag semantics, histogram bins |
+| Fuzzy Set | Membership in $[0,1]$ | Partial membership | Uncertainty, AI, control systems |
 
 ## Quick Reference
 
@@ -180,6 +297,7 @@ The $n$-fold Cartesian product $A_1 \times A_2 \times \cdots \times A_n$ is the 
 | Logic | Truth sets of predicates connect logic to set membership |
 | Graph Theory | Vertices and edges are sets; adjacency is a relation (set of ordered pairs) |
 | Software Engineering | Collections, uniqueness constraints, and access control lists use set semantics |
+| Data Science | Feature spaces, categorical encoding, and deduplication use set concepts |
 
 ## Chapter Quiz
 
@@ -207,7 +325,25 @@ The $n$-fold Cartesian product $A_1 \times A_2 \times \cdots \times A_n$ is the 
 
    <details><summary>Answer</summary>**B)** By De Morgan's law, $\overline{A \cap B} = \overline{A} \cup \overline{B}$</details>
 
-## Examples Write the set of all positive odd integers less than 20 in roster and set-builder form.
+4. Which set is countably infinite?
+   - A) $\mathbb{R}$
+   - B) $\mathbb{Q}$
+   - C) $(0, 1)$
+   - D) $\mathcal{P}(\mathbb{N})$
+
+   <details><summary>Answer</summary>**B)** $\mathbb{Q}$ is countably infinite; $\mathbb{R}$, $(0,1)$, and $\mathcal{P}(\mathbb{N})$ are all uncountable.</details>
+
+5. If $A$ has 4 elements, what is $|\mathcal{P}(A)|$?
+   - A) 4
+   - B) 8
+   - C) 16
+   - D) 32
+
+   <details><summary>Answer</summary>**C)** $|\mathcal{P}(A)| = 2^4 = 16$</details>
+
+## Examples
+
+**Example 1.1** (Set notation). Write the set of all positive odd integers less than 20 in roster and set-builder form.
 
 *Solution.* Roster: $\{1, 3, 5, 7, 9, 11, 13, 15, 17, 19\}$.
 Set-builder: $\{x \in \mathbb{N} \mid x < 20 \land x \bmod 2 = 1\}$.
@@ -233,6 +369,24 @@ $$A \times B = \{(1, x), (1, y), (2, x), (2, y)\}$$
 
 *Proof.* Let $x \in A \cup (B \cap C)$. Then $x \in A$ or $x \in (B \cap C)$. If $x \in A$, then $x \in A \cup B$ and $x \in A \cup C$, so $x \in (A \cup B) \cap (A \cup C)$. If $x \in B \cap C$, then $x \in B$ and $x \in C$, so $x \in A \cup B$ and $x \in A \cup C$, hence $x \in (A \cup B) \cap (A \cup C)$. The reverse inclusion is analogous.
 
+**Example 1.7** (Characteristic function in TypeScript). Compute the Jaccard similarity of two sets using characteristic functions.
+
+```typescript
+function jaccardSimilarity<T>(A: Set<T>, B: Set<T>): number {
+  const intersection = new Set([...A].filter(x => B.has(x)));
+  const union = new Set([...A, ...B]);
+  return intersection.size / union.size;
+}
+
+const A = new Set([1, 2, 3, 4]);
+const B = new Set([3, 4, 5, 6]);
+console.log(jaccardSimilarity(A, B)); // 0.333...
+```
+
+**Example 1.8** (Inclusion-exclusion). In a class of 50 students, 30 study math, 25 study physics, and 10 study both. How many study neither?
+
+*Solution.* $|M \cup P| = |M| + |P| - |M \cap P| = 30 + 25 - 10 = 45$. So $50 - 45 = 5$ study neither.
+
 ## Summary
 
 - A set is a collection of distinct objects. Sets are equal when they contain exactly the same elements.
@@ -240,6 +394,10 @@ $$A \times B = \{(1, x), (1, y), (2, x), (2, y)\}$$
 - Union, intersection, difference, and complement generate new sets from existing ones.
 - De Morgan's laws and the distributive laws are fundamental set identities.
 - The Cartesian product $A \times B$ is the set of ordered pairs from $A$ and $B$.
+- Characteristic functions bridge sets and Boolean algebra.
+- Multisets allow repeated elements; fuzzy sets allow partial membership.
+- Inclusion-exclusion prevents double-counting in overlapping sets.
+- $\mathbb{Q}$ is countably infinite; $\mathbb{R}$ is uncountably infinite.
 
 ## Exercises
 
@@ -250,25 +408,33 @@ $$A \times B = \{(1, x), (1, y), (2, x), (2, y)\}$$
 3. State De Morgan's laws for sets in words.
 4. For $A = \{x \in \mathbb{Z} \mid -3 \leq x \leq 3\}$ and $B = \{x \in \mathbb{Z} \mid x^2 < 10\}$, determine $A \cap B$.
 5. Is $\emptyset \in \mathcal{P}(\emptyset)$? Justify.
+6. What does it mean for a set to be countably infinite?
+7. How does a multiset differ from a classical set?
 
 ### Application Problems
 
-6. Let $U = \{1, 2, \ldots, 10\}$, $A = \{1, 3, 5, 7, 9\}$, $B = \{2, 3, 5, 7\}$, $C = \{4, 5, 6, 7\}$. Compute:
+8. Let $U = \{1, 2, \ldots, 10\}$, $A = \{1, 3, 5, 7, 9\}$, $B = \{2, 3, 5, 7\}$, $C = \{4, 5, 6, 7\}$. Compute:
    (a) $A \cup (B \cap C)$
    (b) $(A \cup B) \setminus C$
    (c) $\overline{A \cap B}$
    (d) $A \oplus B$
 
-7. Prove the complement law: $A \cup \overline{A} = U$ and $A \cap \overline{A} = \emptyset$.
+9. Prove the complement law: $A \cup \overline{A} = U$ and $A \cap \overline{A} = \emptyset$.
 
-8. Prove De Morgan's law: $\overline{A \cap B} = \overline{A} \cup \overline{B}$ using elementwise argument.
+10. Prove De Morgan's law: $\overline{A \cap B} = \overline{A} \cup \overline{B}$ using elementwise argument.
 
-9. Let $A = \{a, b\}$, $B = \{1, 2, 3\}$. List $A \times B$ and $B \times A$.
+11. Let $A = \{a, b\}$, $B = \{1, 2, 3\}$. List $A \times B$ and $B \times A$.
 
-10. Show that $A \subseteq B$ if and only if $A \cap B = A$.
+12. Show that $A \subseteq B$ if and only if $A \cap B = A$.
+
+13. Write a TypeScript function that computes the symmetric difference of two sets.
+
+14. Show that $|\mathcal{P}(\{1,2,3,4\})| = 16$ by listing all subsets grouped by size.
 
 ### Challenge Problem
 
-11. Let $A_1, A_2, \ldots, A_n$ be sets. Prove the generalized distributive law:
+15. Let $A_1, A_2, \ldots, A_n$ be sets. Prove the generalized distributive law:
     $$A \cap (B_1 \cup B_2 \cup \cdots \cup B_n) = (A \cap B_1) \cup (A \cap B_2) \cup \cdots \cup (A \cap B_n)$$
     by induction on $n$.
+
+16. Cantor's theorem states: For any set $S$, $|S| < |\mathcal{P}(S)|$. Prove this by showing there is no surjection $f: S \to \mathcal{P}(S)$. (Hint: consider $B = \{x \in S \mid x \notin f(x)\}$.)

@@ -1,186 +1,548 @@
-# Chapter 4: Continuous Integration (CI)
+# Chapter 4: Continuous Integration
 
-> **Previous:** [CI/CD Pipelines](./04-cicd.md) | **Next:** [Containerization with Docker](./05-containerization.md)
+> **Prev:** [CI/CD](./04-cicd.md)
+> **Next:** [Containerization](./05-containerization.md)
 
 ---
 
 ## Learning Objectives
 
-![Continuous Integration Pipeline Stages](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch04-ci-pipeline.png)
-
-- Define Continuous Integration (CI) and its role in reducing integration debt.
-- Identify the key components of a CI pipeline: version control, build server, and automated tests.
-- Explain the "Fail Fast" principle and why it is critical for software quality.
-- Differentiate between different types of automated tests (Unit, Integration, Linting).
-- Configure a basic CI pipeline using industry-standard tools.
+- Understand the principles and practices of Continuous Integration.
+- Set up automated build and test triggers on every code push.
+- Design comprehensive test suites (unit, integration, end-to-end).
+- Implement code quality gates (linting, coverage, static analysis).
+- Configure CI for monorepos and microservices.
+- Master CI optimization, artifact handling, and reporting.
 
 ---
-
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| CI Philosophy | Merge changes frequently, prevent integration hell | Small frequent commits reduce integration conflict risk |
-| Pipeline Stages | Trigger, Checkout, Build, Test, Artifact Generation | Each stage adds validation before proceeding |
-| Fail Fast Principle | Abort pipeline on first failure | Enable immediate developer notification |
-| Testing Strategies | Linting, Unit Tests, Integration Tests, Code Coverage | Use the test pyramid for efficient feedback |
+| CI Principles | Integrate early and often | Every push triggers automated verification |
+| Test Pyramid | Unit > Integration > E2E | Write many fast unit tests, few slow E2E tests |
+| Quality Gates | Automated checks before merge | Block merges that reduce quality |
+| CI for Monorepos | Detect changed packages | Only build and test affected code |
+| Build Artifacts | Immutable outputs | Every CI run produces a versioned artifact |
+| CI Reporting | Test results, coverage, timing | Make CI results visible to the whole team |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Code Commit] --> B[Trigger]
-    B --> C[Checkout]
-    C --> D[Build]
-    D --> E[Test Suite]
-    E --> F[Lint]
-    E --> G[Unit Tests]
-    E --> H[Integration Tests]
-    F & G & H --> I[Artifacts]
+    A[Push Code] --> B[CI Pipeline Triggers]
+    B --> C[Install Dependencies]
+    C --> D[Parallel Checks]
+    D --> E[Lint]
+    D --> F[Format Check]
+    D --> G[Type Check]
+    D --> H[Unit Tests]
+    E & F & G & H --> I[Build]
+    I --> J[Integration Tests]
+    J --> K[Security Scan]
+    K --> L[Generate Reports]
+    L --> M[Update Status]
+    M --> N[Notify Team]
 ```
 
 ## Theory
 
-### The Philosophy of Continuous Integration
+### Core Principles of CI
 
-> **Pro Tip:** Aim for a CI pipeline that completes in under 10 minutes. Slow CI encourages developers to bypass it.
-Continuous Integration is the practice of merging all developer working copies to a shared mainline several times a day. The primary goal is to prevent integration problems, often referred to as "integration hell." CI ensures that the software is always in a buildable state.
+Continuous Integration is built on five essential practices:
 
-### The CI Pipeline Stages
+1. **Maintain a single source repository.** Every team member commits to the same main branch frequently.
+2. **Automate the build.** Scripts should compile, package, and verify without manual intervention.
+3. **Make the build self-testing.** Automated tests should validate correctness after every build.
+4. **Everyone commits to main every day.** Short-lived branches reduce integration complexity.
+5. **Keep the build fast.** Feedback in minutes, not hours.
 
-> **Remember:** Code coverage is a metric, not a goal. Focus on meaningful test quality, not just percentage.
-A typical CI pipeline consists of several automated stages:
-1.  **Trigger:** Initiated by a code commit or pull request.
-2.  **Checkout:** The CI server pulls the latest code from the repository.
-3.  **Build:** Compiling the source code and resolving dependencies.
-4.  **Test:** Running automated test suites.
-5.  **Artifact Generation:** Packaging the build into a deployable format (e.g., JAR, Docker image).
+### The Test Pyramid
 
-### Testing Strategies in CI
+The test pyramid guides where to invest testing effort:
 
-> **Warning:** Flaky tests erode trust in CI. Fix or remove them promptly to maintain pipeline reliability.
-- **Linting:** Static analysis to check for syntax errors and style violations.
-- **Unit Tests:** Testing individual functions or components in isolation.
-- **Integration Tests:** Verifying that different modules work together correctly.
-- **Code Coverage:** Measuring the percentage of code executed during tests.
+```mermaid
+flowchart TD
+    subgraph "Test Pyramid"
+        A[E2E Tests<br/>Few, Slow, Expensive]
+        B[Integration Tests<br/>Some, Medium]
+        C[Unit Tests<br/>Many, Fast, Cheap]
+    end
+    A --> B --> C
+```
+
+**Unit tests (70-80%):** Test individual functions, methods, and classes in isolation. Mock external dependencies. Fast execution (milliseconds each).
+
+**Integration tests (15-20%):** Test interactions between components — database queries, API endpoints, service-to-service communication. Verify real behavior of integrated parts.
+
+**E2E tests (5-10%):** Test complete user workflows from UI to database. Slow and brittle. Cover critical paths only.
+
+### Test Execution Strategy
+
+**Fast feedback loops:**
+- Unit tests run on every commit (pre-push hook)
+- Integration tests run after unit tests pass
+- E2E tests run on merge to main or scheduled nightly
+
+**Test parallelization:**
+- Split test files across multiple CI runners
+- Use test sharding (Jest `--shard`)
+- Run independent test suites in parallel
+
+### Code Quality Gates
+
+Quality gates prevent low-quality code from being merged:
+
+| Gate | Tool | Enforcement |
+|------|------|-------------|
+| Linting | ESLint | PR must pass |
+| Formatting | Prettier | PR must pass |
+| Type checking | TypeScript | PR must pass |
+| Unit test coverage | Jest/istanbul | Minimum 80% |
+| Integration tests | Supertest | PR must pass |
+| Security scan | CodeQL, Snyk | No critical vulnerabilities |
+| Bundle size | size-limit | Must not exceed threshold |
+| Dependency audit | npm audit | No known vulnerabilities |
+
+### CI for Monorepos
+
+Monorepos require smart CI that only builds changed packages:
+
+**Approach 1: Path filtering:**
+```yaml
+jobs:
+  api:
+    on:
+      push:
+        paths: ['packages/api/**']
+  web:
+    on:
+      push:
+        paths: ['packages/web/**']
+```
+
+**Approach 2: Dependency graph analysis:**
+```text
+# Determine affected packages
+npx nx affected:test --base=main
+npx nx affected:build --base=main
+```
+
+**Approach 3: Manual configuration with check scripts:**
+```typescript
+function getChangedPackages(): string[] {
+  // Get changed files from git diff
+  // Map files to packages
+  // Return affected package names
+}
+```
+
+### CI Reporting
+
+Effective CI provides visibility into build health:
+
+**Status badges:** Show latest build status in README
+**Test reports:** HTML or XML reports with pass/fail details
+**Coverage reports:** Line, branch, function coverage with trends
+**Performance charts:** Build duration trends over time
+**Notifications:** Slack/email/Discord on build failures
+
+**Example CI report structure:**
+```text
+Build #1234 - main - abc1234
+Status: ✅ Passed
+Duration: 2m 34s
+Tests: 247 passed, 3 skipped, 0 failed
+Coverage: 87.3% (+0.2%)
+Lint: 0 errors, 0 warnings
+Dependencies: up to date
+```
+
+### Handling Flaky Tests
+
+Flaky tests pass or fail nondeterministically. Strategies:
+
+1. **Quarantine:** Move flaky tests to a separate suite, don't block the build
+2. **Retry:** Retry failed tests once (but flag them for investigation)
+3. **Fix or delete:** Either fix the root cause or remove the test
+4. **Isolation:** Ensure tests don't share state or rely on timing
+
+**Flaky test detection:**
+```typescript
+function detectFlakyTests(testResults: TestResult[][]): string[] {
+  const flaky: string[] = [];
+  // A test is flaky if it passes sometimes and fails sometimes
+  // across multiple runs on the same code
+  return flaky;
+}
+```
+
+### CI Services and Infrastructure
+
+**Self-hosted runners:**
+- Full control over environment
+- No per-minute costs
+- Maintenance overhead
+- Suitable for compliance requirements
+
+**Cloud-hosted runners:**
+- GitHub Actions, GitLab CI, Circle CI, Jenkins Cloud
+- Zero maintenance
+- Scale automatically
+- Pay per usage
+
+**Containerized CI:**
+- CI runs in containers matching production environment
+- Consistent behavior across local dev and CI
+- Easy dependency management
 
 ---
 
 ## Examples
 
-> **One-Sentence Takeaway:** CI prevents integration hell by merging all developer copies to shared mainline multiple times daily.
+### Example 1: Complete CI Pipeline Configuration
 
-### Example 1: GitHub Actions Configuration
-Defining a CI workflow for a Node.js project.
-- **Step-by-step:**
-  1. Create `.github/workflows/ci.yml`.
-  2. Define the trigger: `on: [push, pull_request]`.
-  3. Specify the runner: `runs-on: ubuntu-latest`.
-  4. Add steps:
-     ```yaml
-     steps:
-       - uses: actions/checkout@v2
-       - name: Use Node.js
-         uses: actions/setup-node@v2
-         with:
-           node-version: '16'
-       - run: npm install
-       - run: npm run lint
-       - run: npm test
-     ```
-- **Expected output:** A green checkmark on GitHub if all steps pass; a red X if any step fails.
-- **What the example demonstrates:** How to define an automated pipeline as code.
+```typescript
+interface CITestConfig {
+  nodeVersion: string;
+  maxWorkers: number;
+  coverageThreshold: number;
+  lintEnabled: boolean;
+  integrationTests: boolean;
+  e2eTests: boolean;
+  cacheDependencies: boolean;
+}
 
-### Example 2: Jenkins Pipeline (Declarative)
-A more complex build process in Jenkins.
-- **Step-by-step:**
-  1. Create a `Jenkinsfile` in the project root.
-  2. Define stages:
-     ```groovy
-     pipeline {
-         agent any
-         stages {
-             stage('Build') {
-                 steps {
-                     sh 'mvn clean compile'
-                 }
-             }
-             stage('Test') {
-                 steps {
-                     sh 'mvn test'
-                 }
-             }
-         }
-     }
-     ```
-- **Expected output:** Jenkins dashboard shows the status of each stage in the pipeline.
-- **What the example demonstrates:** Orchestrating multiple stages in a specialized CI server.
+class CIPipelineConfig {
+  private config: CITestConfig;
+
+  constructor(config: CITestConfig) {
+    this.config = config;
+  }
+
+  generateGitHubActions(): string {
+    return `name: CI Pipeline
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [${this.config.nodeVersion}]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: \${{ matrix.node }}
+      ${this.generateCacheStep()}
+      - run: npm ci
+      ${this.generateLintStep()}
+      - run: npm run typecheck
+      - run: npm test -- --maxWorkers=${this.config.maxWorkers} --coverage --coverageThreshold='{"global":{"lines":${this.config.coverageThreshold}}}'
+      ${this.generateIntegrationTestStep()}
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build-\${{ github.sha }}
+          path: dist/
+      - name: Upload coverage
+        uses: codecov/codecov-action@v4
+        with:
+          token: \${{ secrets.CODECOV_TOKEN }}
+`;
+  }
+
+  private generateCacheStep(): string {
+    if (!this.config.cacheDependencies) return '';
+    return `
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-`;
+  }
+
+  private generateLintStep(): string {
+    if (!this.config.lintEnabled) return '';
+    return `- run: npm run lint`;
+  }
+
+  private generateIntegrationTestStep(): string {
+    if (!this.config.integrationTests) return '';
+    return `- run: npm run test:integration`;
+  }
+}
+
+const config = new CIPipelineConfig({
+  nodeVersion: '20',
+  maxWorkers: 4,
+  coverageThreshold: 80,
+  lintEnabled: true,
+  integrationTests: true,
+  e2eTests: false,
+  cacheDependencies: true,
+});
+
+console.log(config.generateGitHubActions());
+```
+
+### Example 2: Test Harness with Coverage Enforcement
+
+```typescript
+interface TestCase {
+  name: string;
+  fn: () => Promise<boolean>;
+  category: 'unit' | 'integration' | 'e2e';
+  timeout: number;
+}
+
+interface TestResult {
+  name: string;
+  passed: boolean;
+  duration: number;
+  error?: string;
+}
+
+interface CoverageReport {
+  totalLines: number;
+  coveredLines: number;
+  percentage: number;
+  thresholds: Record<string, number>;
+}
+
+class TestRunner {
+  private tests: TestCase[] = [];
+  private results: TestResult[] = [];
+  private coverage: CoverageReport = { totalLines: 0, coveredLines: 0, percentage: 0, thresholds: {} };
+
+  addTest(test: TestCase): void {
+    this.tests.push(test);
+  }
+
+  setCoverageReport(report: CoverageReport): void {
+    this.coverage = report;
+  }
+
+  async run(): Promise<boolean> {
+    console.log('🧪 Starting test execution...\n');
+    let allPassed = true;
+    let passed = 0;
+    let failed = 0;
+
+    for (const test of this.tests) {
+      const start = Date.now();
+      try {
+        const result = await Promise.race([
+          test.fn(),
+          new Promise<boolean>((_, reject) =>
+            setTimeout(() => reject(new Error('Test timeout')), test.timeout)
+          ),
+        ]);
+        const duration = Date.now() - start;
+        this.results.push({ name: test.name, passed: result, duration });
+        if (result) {
+          passed++;
+          console.log(`  ✅ ${test.name} (${duration}ms)`);
+        } else {
+          allPassed = false;
+          failed++;
+          console.log(`  ❌ ${test.name} (${duration}ms)`);
+        }
+      } catch (error) {
+        allPassed = false;
+        failed++;
+        this.results.push({ name: test.name, passed: false, duration: Date.now() - start, error: String(error) });
+        console.log(`  ❌ ${test.name} - ${error}`);
+      }
+    }
+
+    this.printSummary(passed, failed);
+
+    // Check coverage threshold
+    if (this.coverage.percentage > 0) {
+      const threshold = this.coverage.thresholds.lines || 80;
+      if (this.coverage.percentage < threshold) {
+        console.log(`❌ Coverage ${this.coverage.percentage}% below threshold ${threshold}%`);
+        allPassed = false;
+      } else {
+        console.log(`✅ Coverage ${this.coverage.percentage}% meets threshold ${threshold}%`);
+      }
+    }
+
+    return allPassed;
+  }
+
+  private printSummary(passed: number, failed: number): void {
+    const total = this.tests.length;
+    console.log(`\n📊 Results: ${passed}/${total} passed`);
+    if (failed > 0) console.log(`❌ ${failed} tests failed`);
+    console.log(`⏱️  Total: ${this.results.reduce((s, r) => s + r.duration, 0)}ms`);
+  }
+}
+
+const runner = new TestRunner();
+
+runner.addTest({
+  name: 'UserService.createUser should return user object',
+  fn: async () => true,
+  category: 'unit',
+  timeout: 5000,
+});
+
+runner.addTest({
+  name: 'Database connection should execute query',
+  fn: async () => true,
+  category: 'integration',
+  timeout: 10000,
+});
+
+runner.setCoverageReport({
+  totalLines: 1000,
+  coveredLines: 873,
+  percentage: 87.3,
+  thresholds: { lines: 80, branches: 75, functions: 80 },
+});
+
+runner.run();
+```
+
+### Example 3: CI Result Notifier
+
+```typescript
+interface BuildResult {
+  buildNumber: number;
+  branch: string;
+  commitSha: string;
+  status: 'passed' | 'failed' | 'running';
+  duration: number;
+  testResults: { passed: number; failed: number; skipped: number };
+  coverage: number;
+  author: string;
+}
+
+class CINotifier {
+  async notify(results: BuildResult): Promise<void> {
+    const message = this.formatMessage(results);
+
+    // Post to Slack
+    await this.postToSlack(message);
+
+    // Update GitHub commit status
+    await this.updateCommitStatus(results);
+
+    // Send email on failure
+    if (results.status === 'failed') {
+      await this.sendFailureEmail(results);
+    }
+  }
+
+  private formatMessage(result: BuildResult): string {
+    const statusEmoji = result.status === 'passed' ? '✅' : '❌';
+    const duration = (result.duration / 1000).toFixed(1);
+
+    return [
+      `${statusEmoji} Build #${result.buildNumber} ${result.status}`,
+      `Branch: ${result.branch} (${result.commitSha.slice(0, 7)})`,
+      `Duration: ${duration}s`,
+      `Tests: ${result.testResults.passed} passed, ${result.testResults.failed} failed, ${result.testResults.skipped} skipped`,
+      `Coverage: ${result.coverage}%`,
+      `Author: ${result.author}`,
+    ].join('\n');
+  }
+
+  private async postToSlack(message: string): Promise<void> {
+    // Mock Slack webhook call
+    console.log('📨 Slack notification sent');
+    console.log(message);
+  }
+
+  private async updateCommitStatus(result: BuildResult): Promise<void> {
+    // Mock GitHub API call
+    console.log(`🏷️  Commit status updated: ${result.commitSha} = ${result.status}`);
+  }
+
+  private async sendFailureEmail(result: BuildResult): Promise<void> {
+    // Mock email sending
+    console.log(`📧 Failure email sent to ${result.author}`);
+  }
+}
+
+const notifier = new CINotifier();
+notifier.notify({
+  buildNumber: 1234,
+  branch: 'main',
+  commitSha: 'abc123def456',
+  status: 'failed',
+  duration: 154000,
+  testResults: { passed: 243, failed: 4, skipped: 3 },
+  coverage: 82.1,
+  author: 'dev@example.com',
+});
+```
+
+---
+
+## Practical Takeaways
+
+1. **Every push triggers CI.** No exceptions. If the build breaks, fixing it is the top priority.
+2. **Keep the build under 10 minutes.** Long builds discourage frequent commits.
+3. **Unit tests first.** Fast, reliable unit tests catch the majority of regressions.
+4. **Enforce quality gates in CI, not in IDE.** Don't rely on developers running checks locally.
+5. **Quarantine flaky tests immediately.** A flaky test destroys trust in the entire CI system.
+6. **Make CI results visible.** Dashboard, Slack bot, or build monitor in the team area.
+
+---
+
+## Chapter Quiz
+
+<details><summary>Question 1: What is the optimal shape of the test pyramid?</summary>**A)** Many E2E, some integration, few unit<br>**B)** Many unit, some integration, few E2E<br>**C)** Equal numbers of each<br>**D)** Only E2E tests<br><br>**Answer: B)** Many unit, some integration, few E2E</details>
+
+<details><summary>Question 2: What should happen when a CI build fails?</summary>**A)** The team continues working on new features<br>**B)** Fixing the build is the top priority<br>**C)** The broken commit is automatically reverted<br>**D)** The build is ignored until release day<br><br>**Answer: B)** Fixing the build is the top priority</details>
+
+<details><summary>Question 3: How should flaky tests be handled?</summary>**A)** Ignore them<br>**B)** Quarantine them and fix the root cause<br>**C)** Retry them 10 times<br>**D)** Delete them immediately<br><br>**Answer: B)** Quarantine them and fix the root cause</details>
+
+<details><summary>Question 4: What is the recommended maximum CI build time?</summary>**A)** 1 minute<br>**B)** 10 minutes<br>**C)** 30 minutes<br>**D)** 60 minutes<br><br>**Answer: B)** 10 minutes</details>
+
+<details><summary>Question 5: What does affected:build do in a monorepo CI?</summary>**A)** Builds all packages<br>**B)** Only builds packages affected by changed code<br>**C)** Builds the entire dependency tree<br>**D)** Skips the build entirely<br><br>**Answer: B)** Only builds packages affected by changed code</details>
 
 ---
 
 ## Summary
 
-## Concept Comparison Table
-
-| Concept | Description |
-|---------|-------------|
-| Linting | Static analysis for syntax and style issues |
-| Unit Tests | Test individual functions in isolation |
-| Integration Tests | Verify modules work together correctly |
-| Code Coverage | Percentage of code executed during tests |
-| Fail Fast | Abort pipeline immediately on first failure |
-
-## Quick Reference
-
-| Topic | Key Points |
-|-------|------------|
-| CI Definition | Frequent merges with automated build and test |
-| Pipeline Stages | Trigger, Checkout, Build, Test, Artifacts |
-| Test Types | Lint, Unit, Integration, Coverage |
-| Key Principle | Fail fast to provide immediate feedback |
-| CI Output | Validated, versioned deployable artifact |
-
-## Cross-Application Matrix
-
-| Domain | Application |
-|--------|-------------|
-| Web | Automated JS linting and testing per PR |
-| Cloud | Infrastructure testing before provisioning |
-| Enterprise | Compliance checks in CI pipelines |
-| Mobile | Device matrix testing in CI |
-
-## Chapter Quiz
-
-<details><summary>Question 1: What is 'integration hell'?</summary>**A)** Database connection issues<br>**B)** Major merge conflicts from infrequent integration<br>**C)** Server overload<br>**D)** Test environment setup problems<br><br>**Answer: B)** Major merge conflicts from infrequent integration</details>
-
-<details><summary>Question 2: What is the 'fail fast' principle?</summary>**A)** Slow down builds for stability<br>**B)** Abort pipeline on first failure for rapid feedback<br>**C)** Skip failing tests to save time<br>**D)** Run all tests regardless of failures<br><br>**Answer: B)** Abort pipeline on first failure for rapid feedback</details>
-
-<details><summary>Question 3: Without tests, CI is just:</summary>**A)** A build server<br>**B)** A testing framework<br>**C)** A deployment tool<br>**D)** A monitoring system<br><br>**Answer: A)** A build server</details>
-
-
-## Summary
-
-- Continuous Integration (CI) minimizes the risk of big integration failures at the end of a project.
-- A CI pipeline should be triggered by every change to the source code.
-- "Failing fast" allows developers to identify and fix bugs immediately after they are introduced.
-- Automated testing is the heart of CI; without tests, CI is just a build server.
-- The output of a successful CI pipeline is a validated, versioned artifact ready for deployment.
+- Continuous Integration is the practice of merging code changes frequently, with each merge automatically built and tested.
+- The test pyramid guides investment: 70-80% unit tests, 15-20% integration, 5-10% E2E.
+- Quality gates (lint, coverage, type check, security) automate code review standards.
+- Monorepo CI requires smart change detection to avoid building unchanged packages.
+- Fast feedback (<10 minutes) encourages frequent commits and rapid iteration.
+- Flaky tests must be quarantined and fixed to maintain CI trust.
+- CI results should be visible and actionable for the entire team.
 
 ---
 
 ## Exercises
 
 ### Review Questions
-1. What is "Integration Hell" and how does CI solve it?
-2. What are the minimal components required for a CI system?
-3. Explain the "Fail Fast" principle.
-4. What is the difference between a "Build" and a "Test" stage?
+1. What are the five essential practices of CI?
+2. Why should unit tests outnumber integration and E2E tests?
+3. How do you handle a flaky test in CI?
+4. What is the purpose of CI quality gates?
+5. How does monorepo CI differ from single-repo CI?
 
 ### Application Problems
-1. Design a CI pipeline for a Python project that includes linting with `flake8` and testing with `pytest`.
-2. A build takes 30 minutes to run. How would you optimize the CI pipeline to provide faster feedback to developers?
-3. Identify a scenario where a CI build passes but the application still fails in production.
+1. Design a CI pipeline for a TypeScript project with unit tests, integration tests, linting, coverage enforcement, and build artifact generation.
+2. Create a strategy for test parallelization across multiple CI runners.
+3. Implement a flaky test detection system that tracks test results across runs.
+4. Configure a monorepo CI setup that only builds and tests affected packages.
 
 ### Challenge Problem
-1. Propose a strategy for managing CI tests that are "flaky" (i.e., they sometimes fail for non-code related reasons like network timeouts) without compromising the reliability of the pipeline.
+1. Design and implement a comprehensive CI system for a TypeScript monorepo with 12 packages. Include: dependency graph-based change detection for selective builds, parallel test execution with sharding and load balancing, quality gate enforcement (lint, type check, 85% coverage, no critical vulnerabilities), artifact versioning and publishing, flaky test detection and quarantine with automated issue creation, and a CI health dashboard tracking build time trends, test count trends, coverage trends, and cache hit rate.

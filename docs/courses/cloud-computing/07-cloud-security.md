@@ -1,217 +1,524 @@
-# Chapter 7: Cloud Security and Identity
+﻿# Chapter 7: Cloud Security
 
-> **Previous:** [Chapter 6: Cloud Networking and Delivery](./06-cloud-networking.md) | **Next:** [Chapter 8: Serverless Computing](./08-serverless.md)
+> **Previous:** [Chapter 6: Cloud Networking](./06-cloud-networking.md) | **Next:** [Chapter 8: Serverless Computing](./08-serverless.md)
 
 ## Learning Objectives
 
 After completing this chapter, students will be able to:
 
-1. Explain the Shared Responsibility Model and its implications across different service models.
-2. Design least-privilege IAM policies using Users, Groups, and Roles.
-3. Implement identity federation using modern protocols (SAML, OIDC).
-4. Manage cryptographic keys using managed KMS and Hardware Security Modules (HSM).
-5. Secure sensitive application data using Secrets Management services.
-6. Configure auditing and logging to ensure regulatory compliance and incident response.
-7. Apply multi-factor authentication (MFA) and conditional access policies.
+1. Apply the shared responsibility model to determine security boundaries.
+2. Configure IAM users, groups, roles, and policies for least-privilege access.
+3. Implement encryption at rest and in transit using KMS and TLS.
+4. Design network security controls including WAF, Shield, and GuardDuty.
+5. Manage secrets securely using dedicated secret management services.
+6. Implement compliance frameworks aligned with SOC 2, PCI DSS, and HIPAA.
+7. Deploy identity federation using IAM Identity Center and SAML.
+8. Monitor security events using CloudTrail, Config, and Security Hub.
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| Shared Responsibility | Provider secures the cloud; customer secures in the cloud | Know your boundary — it shifts between IaaS/PaaS/SaaS |
-| IAM | Users, Groups, Roles, Policies | Roles > Users for granting permissions to services |
-| Identity Federation | SAML 2.0, OIDC | Use corporate credentials, not cloud provider users |
-| KMS & Envelope Encryption | Encrypt data with Data Keys, wrap with Master Key | Enables efficient encryption of large datasets |
-| Secrets Management | Store API keys, DB passwords securely | Auto-rotate secrets, never hardcode |
-| Audit & Monitoring | CloudTrail, Log Analytics | You can't detect what you don't log |
+| Shared Responsibility | AWS secures the cloud, you secure what is in it | Never assume default security |
+| IAM | Identity-based access control | Least privilege, roles over users |
+| Encryption | KMS for keys, TLS for transit | Encrypt everything by default |
+| Network Security | WAF, Shield, NACLs, Security Groups | Defense in depth at every layer |
+| Secrets Management | Secrets Manager vs Parameter Store | Centralize, rotate, audit all secrets |
+| Compliance | SOC 2, PCI DSS, HIPAA on cloud | Use compliance programs to validate controls |
+| Monitoring | CloudTrail, Config, GuardDuty | Detect anomalies before they become breaches |
+| Incident Response | Automated remediation playbooks | Prepare runbooks ahead of incidents |
 
 ## Chapter Roadmap
 
-```mermaid
+\\\mermaid
 flowchart LR
-    A[Shared Responsibility] --> B[IAM & Policies]
-    B --> C[Identity Federation]
-    C --> D[Encryption & KMS]
-    D --> E[Secrets Management]
-    E --> F[Audit & Compliance]
-```
+    A[Cloud Security Foundations] --> B[Shared Responsibility Model]
+    A --> C[Identity and Access Management]
+    A --> D[Data Protection]
+    A --> E[Network Security]
+    A --> F[Monitoring and Detection]
+    B --> G[Customer vs Provider Controls]
+    C --> H[Policies, Roles, Federation]
+    D --> I[Encryption: KMS, TLS, Secrets]
+    E --> J[WAF, Shield, Security Groups]
+    F --> K[CloudTrail, GuardDuty, Security Hub]
+\\\
 
 ## Theory
 
-### 7.1 The Shared Responsibility Model
+### 7.1 Shared Responsibility Model
 
-A fundamental concept in cloud security is that security is a shared effort between the provider and the customer.
+Security in the cloud is a partnership:
 
-- **Security OF the Cloud (Provider):** Physical security of data centers, hardware, and the virtualization layer.
-- **Security IN the Cloud (Customer):** Guest OS patching, firewall configuration, identity management, and data encryption.
+| Layer | AWS Responsible | Customer Responsible |
+|-------|----------------|---------------------|
+| Physical Security | Data centers, access controls, surveillance | Nothing |
+| Hardware | Servers, storage, networking | Nothing |
+| Hypervisor | Virtualization layer | Nothing |
+| OS and Application | Nothing | Patching, configuration, firewalls |
+| Network | Foundation, DDoS protection | Security Groups, NACLs |
+| Identity | IAM service availability | User management, permissions, MFA |
+| Data | Nothing | Encryption, access control, backups |
 
-The boundary shifts based on the service model (IaaS vs. PaaS vs. SaaS). In SaaS, the provider handles almost everything except data and access control.
-
-![Shared Responsibility Model](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch07-shared-responsibility.png)
+\\\mermaid
+graph TB
+    subgraph "Customer Responsibility (Security IN the Cloud)"
+        C1[Customer Data]
+        C2[Platform & Applications]
+        C3[Identity & Access Management]
+        C4[OS, Network, Firewall Config]
+        C5[Client-Side Encryption]
+    end
+    
+    subgraph "AWS Responsibility (Security OF the Cloud)"
+        A1[Physical Security]
+        A2[Hardware & Network Infrastructure]
+        A3[Hypervisor Isolation]
+        A4[Compliance Certifications]
+        A5[Global Infrastructure]
+    end
+    
+    subgraph "Shared"
+        S1[Network Protection - DDoS]
+        S2[Availability Zones]
+    end
+\\\
 
 ### 7.2 Identity and Access Management (IAM)
 
-IAM is the framework of policies and technologies for ensuring that the right users have the appropriate access to technology resources.
+**Core IAM Concepts:**
 
-- **AWS IAM:** Uses Users, Groups, Roles, and JSON-based Policies.
-- **Azure Entra ID (formerly Azure AD):** A comprehensive identity service that manages users and provides "Tenant" level security.
-- **GCP IAM:** Uses "Service Accounts" extensively for machine-to-machine communication.
+- **User:** A permanent identity tied to a person or service account.
+- **Group:** A collection of users. Assign policies to groups, not individuals.
+- **Role:** A temporary identity that can be assumed by users, services, or federated identities.
+- **Policy:** A JSON document defining permissions (Allow/Deny).
+- **Resource-Based Policy:** Attached to a resource (e.g., S3 bucket policy).
 
-**Key Principle: Least Privilege.** Granting only the minimum permissions necessary to perform a task.
+**IAM Policy Structure:**
 
-### 7.3 Identity Federation and SSO
-
-Organizations prefer to use a single identity for multiple systems.
-- **Federation:** Linking a user's identity across multiple security domains (e.g., using corporate credentials to log into AWS).
-- **Protocols:** **SAML 2.0** (XML-based, common for Enterprise SSO) and **OIDC** (JSON/OAuth2-based, common for modern web/mobile apps).
-- **Services:** AWS IAM Identity Center, Azure Entra ID, Google Cloud Identity.
-
-### 7.4 Data Encryption and Key Management
-
-Encryption protects data at rest (on disk) and in transit (over the network).
-
-- **KMS (Key Management Service):** A managed service that allows you to create and control the keys used to encrypt your data.
-- **Envelope Encryption:** Encrypting data with a *Data Key*, then encrypting that Data Key with a *Master Key*. This improves performance for large datasets.
-- **HSM (Hardware Security Module):** Physical devices that provide extra protection for cryptographic keys.
-
-### 7.5 Secrets Management
-
-Hardcoding database passwords or API keys in source code is a major security risk.
-- **Secret Managers:** Services (AWS Secrets Manager, Azure Key Vault, GCP Secret Manager) that store secrets securely and allow for **Automatic Rotation** of credentials.
-
-### 7.6 Infrastructure and Network Security
-
-- **WAF (Web Application Firewall):** Filters malicious HTTP traffic (SQLi, XSS).
-- **DDoS Protection:** Protects against Distributed Denial of Service attacks.
-- **Security Posture Management:** Services like **AWS Security Hub** or **Azure Defender** that provide a unified view of security alerts.
-
-## Examples
-
-### Example 7.1: Least Privilege IAM Policy (AWS JSON)
-
-A policy that allows reading from only one specific S3 bucket:
-```json
+\\\json
 {
   "Version": "2012-10-17",
   "Statement": [
     {
       "Effect": "Allow",
-      "Action": "s3:ListBucket",
-      "Resource": "arn:aws:s3:::my-secure-app-data"
-    },
-    {
-      "Effect": "Allow",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::my-secure-app-data/*"
+      "Action": ["s3:GetObject", "s3:ListBucket"],
+      "Resource": [
+        "arn:aws:s3:::company-data",
+        "arn:aws:s3:::company-data/*"
+      ],
+      "Condition": {
+        "IpAddress": {
+          "aws:SourceIp": "10.0.0.0/8"
+        }
+      }
     }
   ]
 }
-```
+\\\
 
-### Example 7.2: Retrieving a Secret via CLI (GCP)
+**IAM Best Practices:**
 
-```bash
-gcloud secrets versions access latest --secret="database-password"
-```
+- Grant least privilege — start with minimum permissions, add as needed.
+- Use IAM roles instead of long-term access keys for applications.
+- Enable MFA for all human users.
+- Use conditions (SourceIp, MFA, time) to restrict access.
+- Use permission boundaries to delegate administration safely.
+- Apply service control policies (SCPs) for guard rails across accounts.
 
-> **One-Sentence Takeaway:** In the cloud, security is a shared responsibility — no matter how secure the provider's infrastructure is, a misconfigured S3 bucket or leaked IAM key can expose everything.
+\\\	ypescript
+interface IAMPolicy {
+  version: "2012-10-17";
+  statement: IAMStatement[];
+}
 
-> **Pro Tip:** Always use IAM Roles instead of Access Keys for EC2 instances and Lambda functions. Roles auto-rotate credentials and eliminate the risk of hardcoded keys in code or configuration files.
+interface IAMStatement {
+  effect: "Allow" | "Deny";
+  action: string[];
+  resource: string[];
+  condition?: Record<string, Record<string, string>>;
+}
 
-> **Warning:** The principle of least privilege is easy to state and hard to enforce. Start with a deny-by-default policy and grant permissions incrementally. Use AWS Access Analyzer or GCP Policy Analyzer to identify overly permissive policies.
+class IAMPolicyBuilder {
+  private statements: IAMStatement[] = [];
+
+  allowRead(bucket: string, ipRange?: string): this {
+    const stmt: IAMStatement = {
+      effect: "Allow",
+      action: ["s3:GetObject", "s3:ListBucket"],
+      resource: [
+        "arn:aws:s3:::" + bucket,
+        "arn:aws:s3:::" + bucket + "/*",
+      ],
+    };
+    if (ipRange) {
+      stmt.condition = {
+        IpAddress: { "aws:SourceIp": ipRange },
+      };
+    }
+    this.statements.push(stmt);
+    return this;
+  }
+
+  allowWrite(bucket: string): this {
+    this.statements.push({
+      effect: "Allow",
+      action: ["s3:PutObject"],
+      resource: ["arn:aws:s3:::" + bucket + "/*"],
+    });
+    return this;
+  }
+
+  denyDelete(bucket: string): this {
+    this.statements.push({
+      effect: "Deny",
+      action: ["s3:DeleteObject"],
+      resource: ["arn:aws:s3:::" + bucket + "/*"],
+    });
+    return this;
+  }
+
+  build(): IAMPolicy {
+    return { version: "2012-10-17", statement: this.statements };
+  }
+}
+
+const policy = new IAMPolicyBuilder()
+  .allowRead("company-data", "10.0.0.0/8")
+  .allowWrite("company-data")
+  .denyDelete("company-data")
+  .build();
+
+console.log(JSON.stringify(policy, null, 2));
+\\\
+
+### 7.3 Data Encryption
+
+**Encryption at Rest:**
+
+| Service | Default Encryption | Custom Key | Notes |
+|---------|-------------------|------------|-------|
+| S3 | SSE-S3 (AES-256) | SSE-KMS or SSE-C | Bucket-level or object-level |
+| EBS | Enabled by default | KMS | Per-volume or snapshot |
+| RDS | Enabled for new instances | KMS | Can encrypt existing DBs via snapshot |
+| DynamoDB | Server-side encryption | KMS | Transparent, no application changes |
+
+**Encryption in Transit:**
+
+- **TLS 1.2/1.3:** Default for all AWS API endpoints.
+- **ALB Listener:** Terminates TLS, re-encrypts to targets.
+- **VPC Peering:** Traffic stays within AWS backbone (no internet).
+
+\\\mermaid
+sequenceDiagram
+    participant Client as Client
+    participant ALB as ALB (TLS Terminator)
+    participant App as App Server
+    participant DB as RDS (KMS Encrypted)
+
+    Client->>ALB: HTTPS (TLS 1.3)
+    ALB->>ALB: Decrypt TLS, attach X-Forwarded-For
+    ALB->>App: HTTP (internal VPC)
+    App->>App: Read/Write data
+    App->>DB: TLS-encrypted connection
+    DB->>DB: KMS decrypts for operations
+\\\
+
+**Key Management Service (KMS):**
+
+- Create, rotate, and manage encryption keys.
+- Integrates with 50+ AWS services.
+- Supports automatic yearly key rotation.
+- Envelope encryption: KMS key encrypts data keys, data keys encrypt your data.
+
+### 7.4 Network Security Services
+
+**AWS WAF (Web Application Firewall):**
+
+- Protects against SQL injection, XSS, and OWASP Top 10 attacks.
+- Rate-based rules for DDoS mitigation.
+- IP reputation lists from AWS and third parties.
+- Integrates with ALB, CloudFront, API Gateway.
+
+**AWS Shield:**
+
+- **Shield Standard:** Free, protects against common DDoS attacks (SYN floods, UDP reflection).
+- **Shield Advanced:** Paid, includes DDoS cost protection, dedicated DDoS response team, advanced real-time metrics.
+
+\\\mermaid
+graph TB
+    subgraph "Defense in Depth"
+        INTERNET[Internet Traffic]
+        WAF[AWS WAF - L7 Filtering]
+        Shield[AWS Shield - DDoS Protection]
+        NACL[Network ACL - Subnet Level]
+        SG[Security Group - Instance Level]
+        APP[Application]
+        
+        INTERNET --> WAF
+        WAF --> Shield
+        Shield --> NACL
+        NACL --> SG
+        SG --> APP
+    end
+\\\
+
+**AWS GuardDuty:**
+
+- Intelligent threat detection using ML and integrated threat intelligence.
+- Analyzes CloudTrail, VPC Flow Logs, and DNS logs.
+- Detects: compromised credentials, crypto-mining, port scanning, data exfiltration.
+- Can trigger automated remediation via EventBridge and Lambda.
+
+### 7.5 Secrets Management
+
+**AWS Secrets Manager vs Systems Manager Parameter Store:**
+
+| Feature | Secrets Manager | Parameter Store (Standard) |
+|---------|----------------|---------------------------|
+| Max Secret Size | 64 KB | 8 KB (4 KB for advanced) |
+| Auto-Rotation | Yes (RDS, Redshift, DocumentDB) | No |
+| Cross-Account Access | Resource-based policies | Parameter policies |
+| Price | .40/secret/month + rotation | Free standard, .05/advanced |
+| Use Case | Database passwords, API keys | Config values, AMI IDs |
+
+\\\	ypescript
+interface DatabaseCredentials {
+  username: string;
+  password: string;
+  host: string;
+  port: number;
+  database: string;
+}
+
+class SecretsManagerClient {
+  private secrets: Map<string, string> = new Map();
+
+  async getSecret(secretId: string): Promise<string | null> {
+    return this.secrets.get(secretId) || null;
+  }
+
+  async rotateSecret(secretId: string): Promise<void> {
+    const current = this.secrets.get(secretId);
+    if (current) {
+      const parsed = JSON.parse(current) as DatabaseCredentials;
+      parsed.password = this.generatePassword(32);
+      this.secrets.set(secretId, JSON.stringify(parsed));
+      console.log("Secret rotated:", secretId);
+    }
+  }
+
+  async getDatabaseCredentials(secretId: string): Promise<DatabaseCredentials | null> {
+    const secret = await this.getSecret(secretId);
+    return secret ? (JSON.parse(secret) as DatabaseCredentials) : null;
+  }
+
+  private generatePassword(length: number): string {
+    const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*";
+    let password = "";
+    for (let i = 0; i < length; i++) {
+      password += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return password;
+  }
+}
+
+async function connectToDatabase(): Promise<void> {
+  const secretsManager = new SecretsManagerClient();
+
+  await secretsManager.getDatabaseCredentials("prod/db/credentials");
+  console.log("Connected to database with rotated credentials");
+}
+\\\
+
+### 7.6 Compliance Frameworks
+
+| Framework | Scope | Key Requirements | AWS Support |
+|-----------|-------|------------------|-------------|
+| SOC 2 | Service organization controls | Security, availability, processing integrity | SOC 2 reports for 140+ services |
+| PCI DSS | Credit card data handling | Encrypt card data, restrict access, audit logs | PCI-compliant services list |
+| HIPAA | Protected health information (PHI) | BAA required, encrypted storage, access controls | BAA with AWS, HIPAA-eligible services |
+| FedRAMP | US government data | Third-party assessment, continuous monitoring | FedRAMP authorized at multiple levels |
+| ISO 27001 | Information security management | Risk assessment, controls, improvement cycle | ISO 27001 certified regions |
+
+## Examples
+
+### Example 7.1: IAM Role for EC2 with S3 Access
+
+\\\json
+{
+  "Effect": "Allow",
+  "Action": ["s3:GetObject", "s3:PutObject"],
+  "Resource": "arn:aws:s3:::my-app-bucket/*"
+}
+\\\
+
+### Example 7.2: KMS Encryption Workflow
+
+\\\ash
+aws kms create-key --description "App encryption key"
+aws kms encrypt --key-id alias/my-key --plaintext fileb://secret.txt
+aws kms decrypt --ciphertext-blob fileb://encrypted.txt
+\\\
+
+### Example 7.3: GuardDuty Finding Types
+
+\\\	ypescript
+interface GuardDutyFinding {
+  id: string;
+  severity: number;
+  type: string;
+  resource: { type: string; instanceDetails?: any };
+  createdAt: string;
+}
+
+function classifyFinding(severity: number): "CRITICAL" | "HIGH" | "MEDIUM" | "LOW" {
+  if (severity >= 8) return "CRITICAL";
+  if (severity >= 5) return "HIGH";
+  if (severity >= 2) return "MEDIUM";
+  return "LOW";
+}
+
+const findings: GuardDutyFinding[] = [
+  { id: "f1", severity: 8, type: "CryptoCurrency:EC2/BitcoinTool.B", resource: { type: "EC2" }, createdAt: "2025-01-15" },
+  { id: "f2", severity: 4, type: "Recon:EC2/PortProbeUnprotected", resource: { type: "EC2" }, createdAt: "2025-01-15" },
+];
+
+for (const finding of findings) {
+  console.log(finding.id, classifyFinding(finding.severity), finding.type);
+}
+\\\
+
+> **One-Sentence Takeaway:** Security in the cloud follows the shared responsibility model — the provider secures infrastructure, but you must secure your data, identities, and application configuration.
+
+> **Pro Tip:** Use IAM roles instead of access keys for every workload — EC2 instances, Lambda functions, and even CI/CD pipelines can assume roles. Long-term access keys should be rare exceptions.
+
+> **Warning:** An unencrypted S3 bucket with public access enabled is the most common cloud security breach. Enable "Block Public Access" at the account level and never disable it without strong justification.
 
 ## Concept Comparison Table
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| IAM User | Individual person with long-term credentials | Has username + password or access keys | Human administrators |
-| IAM Role | Identity with temporary credentials | No permanent keys, assumed by services | EC2 instances, Lambda functions |
-| IAM Policy | JSON document defining permissions | Attached to users, groups, or roles | Access control rules |
-| SAML 2.0 | XML-based identity federation | Enterprise SSO, attribute-based | Corporate identity integration |
-| OIDC | JSON/OAuth2-based federation | Modern, web/mobile friendly | Social login, app auth |
-| KMS | Managed key creation and rotation | Hardware-backed, audited | Encryption key lifecycle |
+| IAM User | Permanent identity for a person | Long-term credentials | Human administrators |
+| IAM Role | Temporary identity assumed by entities | STS tokens, auto-rotation | Applications, cross-account |
+| KMS | Managed key creation and rotation | Envelope encryption | Data encryption at rest |
+| Secrets Manager | Rotating secrets storage | Auto-rotation support | Database passwords |
+| WAF | Web application firewall | L7 filtering, OWASP protection | API and web app protection |
+| Shield | DDoS mitigation service | Standard free, Advanced paid | Production workloads |
+| GuardDuty | ML-powered threat detection | CloudTrail + DNS + VPC analysis | Continuous monitoring |
+| Security Hub | Centralized security findings | Multi-account aggregation | Compliance posture |
 
 ## Quick Reference
 
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
-| **IAM Entities** | Users, Groups, Roles, Policies | Roles for machines, Users for people |
-| **Encryption** | At rest (KMS), In transit (TLS), Envelope | Encrypt everything — it's cheap and easy |
-| **Federation** | SAML (enterprise), OIDC (modern) | One identity to rule all clouds |
-| **Secrets** | AWS Secrets Manager, Azure Key Vault, GCP Secret Manager | Auto-rotation, audit access |
-| **Audit** | CloudTrail, Azure Monitor, Cloud Audit Logs | Enable in all regions from day one |
+| **IAM** | Users, groups, roles, policies | Least privilege, MFA, conditions |
+| **Encryption** | KMS, SSE, TLS, envelope encryption | Encrypt at rest and in transit |
+| **Network** | WAF, Shield, SG, NACL, VPC endpoints | Defense in depth |
+| **Secrets** | Secrets Manager, Parameter Store | Centralize, rotate, audit |
+| **Compliance** | SOC 2, PCI DSS, HIPAA, FedRAMP | Know which certs apply |
+| **Monitoring** | CloudTrail, Config, GuardDuty | Detect, alert, respond |
 
 ## Cross-Application Matrix
 
 | Technique | Cloud Architecture | DevOps | Security | Enterprise |
 |-----------|-------------------|--------|----------|------------|
-| IAM Roles | Instance identity | CI/CD pipeline permissions | Access governance | Least privilege |
-| KMS Encryption | Data protection | Encrypted CI/CD artifacts | Compliance mandates | Data residency |
-| Secrets Manager | Secure configuration | Automated rotation | Credential hygiene | No hardcoded secrets |
-| CloudTrail/Logs | Audit trail | Deployment verification | SIEM integration | Compliance reporting |
-| WAF | App-layer security | Rate limiting | OWASP protection | PCI DSS |
+| IAM Roles | Service-to-service auth | CI/CD pipeline permissions | Reduced credential surface | Cross-account access |
+| KMS Encryption | Data protection at rest | Encrypted build artifacts | Key rotation policies | Compliance (HIPAA/PCI) |
+| WAF | API security | Bot protection | OWASP prevention | DDoS mitigation |
+| Secrets Manager | Configuration centralization | Automated rotation | Audit trails | Password policies |
+| GuardDuty | Runtime monitoring | Anomaly detection | Threat intelligence | SIEM integration |
 
 ## Chapter Quiz
 
-1. Why should an EC2 instance use an IAM Role instead of hardcoded Access Keys?
-   - A) Roles are faster
-   - B) Roles provide temporary, automatically rotated credentials — no hardcoded secrets
-   - C) Roles are cheaper
-   - D) Access Keys don't work on EC2
+1. What does the shared responsibility model state about security?
+   - A) The cloud provider is responsible for all security
+   - B) The customer is responsible for all security
+   - C) Security is shared: provider secures infrastructure, customer secures data and configurations
+   - D) Third-party auditors are responsible
 
 <details>
 <summary>Answer</summary>
-**B) Roles provide temporary, automatically rotated credentials — no hardcoded secrets.** IAM Roles use the EC2 instance metadata service to deliver temporary credentials that rotate automatically. This eliminates the risk of accidentally committing API keys to source code.
+**C) Security is shared: provider secures infrastructure, customer secures data and configurations.** AWS is responsible for the security of the cloud (physical, hardware, hypervisor); customers are responsible for security in the cloud (data, IAM, OS, network config).
 </details>
 
-2. What does the Shared Responsibility Model mean for a customer using SaaS?
-   - A) The customer is responsible for everything
-   - B) The provider handles almost everything except data classification, access management, and user permissions
-   - C) The customer must patch the underlying OS
-   - D) Security is entirely the provider's problem
+2. Which IAM entity is best for granting an EC2 instance access to S3?
+   - A) IAM User with access keys
+   - B) IAM Role attached to the EC2 instance profile
+   - C) S3 bucket policy
+   - D) Security Group rule
 
 <details>
 <summary>Answer</summary>
-**B) The provider handles almost everything except data classification, access management, and user permissions.** As the service model moves from IaaS → PaaS → SaaS, the provider takes increasing responsibility. In SaaS, the customer secures their data and who has access to it.
+**B) IAM Role attached to the EC2 instance profile.** Roles provide temporary credentials that auto-rotate. Access keys would be long-term credentials embedded in the instance, which is a security risk.
 </details>
 
-3. How does envelope encryption improve performance over directly encrypting large datasets?
-   - A) It uses weaker encryption that's faster
-   - B) It encrypts the data once with a Data Key (fast, symmetric), then wraps only the Data Key with a Master Key
-   - C) It doesn't encrypt all the data
-   - D) It caches encryption results
+3. What is the primary purpose of AWS KMS?
+   - A) Monitoring API calls
+   - B) Creating and managing encryption keys
+   - C) Blocking web application attacks
+   - D) Detecting compromised credentials
 
 <details>
 <summary>Answer</summary>
-**B) It encrypts the data once with a Data Key (fast, symmetric), then wraps only the Data Key with a Master Key.** Symmetric encryption of large data is fast. The Master Key (often stored in KMS) only encrypts the small Data Key, reducing KMS API calls and cost while maintaining strong security.
+**B) Creating and managing encryption keys.** KMS (Key Management Service) creates, rotates, and manages encryption keys for use with 50+ AWS services. It uses envelope encryption where KMS keys encrypt data keys that encrypt your data.
+</details>
+
+4. Which AWS service provides ML-powered threat detection across CloudTrail, VPC Flow Logs, and DNS logs?
+   - A) WAF
+   - B) Shield
+   - C) GuardDuty
+   - D) Inspector
+
+<details>
+<summary>Answer</summary>
+**C) GuardDuty.** GuardDuty uses machine learning and integrated threat intelligence to analyze CloudTrail events, VPC Flow Logs, and DNS logs for suspicious activity like compromised credentials, crypto-mining, and port scanning.
+</details>
+
+5. Why should you never use long-term IAM access keys for applications running on EC2?
+   - A) They cost more than IAM roles
+   - B) Access keys are long-lived credentials that can be stolen and used indefinitely
+   - C) IAM roles have higher performance
+   - D) Access keys can only be used by human users
+
+<details>
+<summary>Answer</summary>
+**B) Access keys are long-lived credentials that can be stolen and used indefinitely.** IAM roles provide temporary security credentials that auto-rotate. If an EC2 instance with an access key is compromised, the attacker can use it until it is manually revoked.
 </details>
 
 ## Summary
 
-- Security in the cloud is a **Shared Responsibility**.
-- **IAM** is the primary gatekeeper for cloud resources.
-- **Least Privilege** is the most important security best practice.
-- **Federation** allow users to use one set of credentials for multiple clouds.
-- **KMS** and **Envelope Encryption** provide scalable data protection.
-- **Secret Managers** eliminate the need for hardcoded credentials and support automated rotation.
-- Auditing (CloudTrail/Log Analytics) is mandatory for compliance and forensics.
+- The shared responsibility model defines clear boundaries for provider and customer security obligations.
+- IAM roles with temporary credentials are preferred over long-term access keys.
+- Encryption at rest (KMS) and in transit (TLS) protects data throughout its lifecycle.
+- Defense in depth combines WAF, Shield, Security Groups, and NACLs for network security.
+- Secrets Manager centralizes and auto-rotates sensitive credentials.
+- GuardDuty provides ML-based threat detection across multiple log sources.
+- Compliance frameworks (SOC 2, PCI DSS, HIPAA) are supported through AWS compliance programs.
 
 ## Exercises
 
 ### Review Questions
 
-1. Identify three things the cloud provider is responsible for in an IaaS model.
-2. What is the difference between an IAM User and an IAM Role?
-3. Explain the concept of "Envelope Encryption."
-4. Why is SAML 2.0 preferred over managing individual users in the cloud console?
-5. How does a Secret Manager improve security compared to environment variables?
+1. Explain the shared responsibility model with specific examples of customer vs provider responsibilities.
+2. What are the differences between IAM Users, Groups, Roles, and Policies?
+3. Describe envelope encryption and how KMS uses it for scalable encryption.
+4. How do WAF, Shield, Security Groups, and NACLs work together for defense in depth?
+5. Compare Secrets Manager vs Parameter Store for storing application secrets.
+6. What types of threats does GuardDuty detect?
 
 ### Application Problems
 
-1. A developer needs to grant an EC2 instance access to an S3 bucket. Should they use Access Keys or an IAM Role? Justify your choice.
-2. A company requires that all database passwords be changed every 30 days. How would you implement this automatically using cloud-native services?
-3. Design a security architecture for a public-facing website that protects against common OWASP Top 10 threats and massive bot attacks.
+1. Design an IAM architecture for a three-tier application with separate web, app, and database tiers. Each tier should only have the permissions it needs.
+
+2. Write a TypeScript function that evaluates the security posture of an S3 bucket policy and reports any public access risks.
+
+3. A healthcare application needs to comply with HIPAA on AWS. List all the AWS services and configurations required for HIPAA compliance.
+
+4. Design an encryption strategy for a data lake containing sensitive financial records, including key management, key rotation, and access control.
+
+5. Implement an incident response automation that triggers when GuardDuty detects a crypto-mining finding on an EC2 instance.
 
 ### Challenge Problem
 
-You are the CISO of a startup that uses all three major cloud providers (Multi-Cloud). Your team is struggling with different IAM models and fragmented logging. Propose a **Centralized Security Governance** strategy that includes: 1) A single source of truth for identities, 2) A unified logging architecture for compliance auditing, and 3) A method to enforce "No Public Buckets" across all three clouds automatically.
+Design a comprehensive security architecture for a multi-account AWS organization serving 100,000 users. Requirements: 1) Centralized logging and monitoring across all accounts, 2) Automated incident response for common threats, 3) Encryption of all data at rest and in transit, 4) Network isolation between environments, 5) Compliance with SOC 2 Type II, 6) Secrets management with rotation for all databases, 7) IAM federation with corporate SSO, and 8) Automated security scanning in CI/CD pipelines. Propose specific services, configurations, and an architecture diagram.

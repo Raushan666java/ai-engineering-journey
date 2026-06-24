@@ -8,9 +8,11 @@
 
 - Describe the architecture of the Bitcoin network and the role of different node types
 - Understand the UTXO (Unspent Transaction Output) model vs. Account model
-- Explain the life cycle of a Bitcoin transaction from broadcast to confirmation
-- Analyze the Bitcoin script language and its limited expressiveness
-- Understand the concept of "Mining" and the halving mechanism
+- Explain the full lifecycle of a Bitcoin transaction from broadcast to confirmation
+- Analyze the Bitcoin scripting language (Script) and its opcodes
+- Understand the mining process, difficulty adjustment, and halving mechanism
+- Describe mempool mechanics and transaction fee estimation
+- Identify orphan blocks and their role in blockchain reorganization
 
 ## Chapter at a Glance
 
@@ -21,16 +23,21 @@
 | Bitcoin Script | Stack-based, non-Turing complete language | Intentionally limited to prevent DoS attacks |
 | Mining | Hash power secures the network + new coin issuance | Halving every 4 years enforces 21M supply cap |
 | P2PKH | Standard Pay-to-Public-Key-Hash script | The most common Bitcoin transaction type |
+| Mempool | Pending transaction pool | Miners select highest fee txs from mempool |
+| Difficulty | Target threshold for PoW mining | Adjusts every 2016 blocks for 10-min average |
+| Coinbase Transaction | First transaction in block (miner reward) | Creates new BTC from nothing |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
     A[UTXO Model] --> B[Transaction Structure]
-    B --> C[Bitcoin Script]
+    B --> C[Bitcoin Script & Opcodes]
     C --> D[P2PKH Execution]
-    D --> E[Mining Ecosystem]
-    E --> F[Halving Schedule]
+    D --> E[Mempool Mechanics]
+    E --> F[Mining Ecosystem & Halving]
+    F --> G[Difficulty Adjustment]
+    G --> H[Orphan Blocks & Reorgs]
 ```
 
 ---
@@ -38,52 +45,444 @@ flowchart LR
 ## Theory
 
 ### The UTXO Model
-Bitcoin does not use "accounts" or "balances" in the way a bank does. Instead, it tracks **UTXOs**.
-- Every transaction consumes one or more existing UTXOs as **Inputs**.
-- Every transaction creates one or more new UTXOs as **Outputs**.
+
+Bitcoin does not use "accounts" or "balances" in the way a bank does. Instead, it tracks **UTXOs (Unspent Transaction Outputs)**.
+
+```mermaid
+flowchart LR
+    subgraph UTXOSet["UTXO Set Before"]
+        UTXO_A["UTXO A: 0.5 BTC<br/>(Alice's address)"]
+        UTXO_B["UTXO B: 1.2 BTC<br/>(Alice's address)"]
+        UTXO_C["UTXO C: 0.3 BTC<br/>(Alice's address)"]
+    end
+    subgraph Transaction["Transaction"]
+        Inputs["Inputs:<br/>UTXO A: 0.5<br/>UTXO B: 1.2<br/>UTXO C: 0.3"]
+        Outputs["Outputs:<br/>Dealer: 1.8 BTC<br/>Alice change: 0.19 BTC<br/>Fee: 0.01 BTC"]
+    end
+    subgraph UTXOSetAfter["UTXO Set After"]
+        NewA["UTXO D: 1.8 BTC<br/>(Dealer's address)"]
+        NewB["UTXO E: 0.19 BTC<br/>(Alice's address)"]
+    end
+    
+    UTXO_A --> Transaction
+    UTXO_B --> Transaction
+    UTXO_C --> Transaction
+    Transaction --> NewA
+    Transaction --> NewB
+```
+
+- Every transaction consumes one or more existing UTXOs as **Inputs**. These UTXOs are marked as spent and removed from the UTXO set.
+- Every transaction creates one or more new UTXOs as **Outputs**. These are added to the UTXO set.
 - Your "balance" is simply the sum of all UTXOs associated with your addresses.
+- The **UTXO set** is the canonical state of the Bitcoin ledger — every full node maintains it.
+
+### UTXO Lifecycle
+
+```mermaid
+stateDiagram-v2
+    [*] --> Unspent: Block containing output is mined
+    Unspent --> Spent: Transaction input references UTXO
+    Spent --> [*]: Removed from UTXO set
+    
+    state Unspent {
+        [*] --> Available: 1 confirmation (usable)
+        Available --> Mature: 100 confirmations (coinbase txs)
+    }
+```
+
+**Key UTXO properties:**
+- **Immutability:** Once created, a UTXO's value and locking script never change.
+- **Atomicity:** UTXOs must be spent entirely (you can't spend "half" a UTXO).
+- **Coinbase maturity:** Coinbase transaction outputs cannot be spent for 100 blocks.
 
 ### Transaction Structure
-A Bitcoin transaction consists of:
-1. **Metadata:** Version, Locktime.
-2. **Inputs:** References to previous UTXOs and a `scriptSig` (unlocking script).
-3. **Outputs:** Value (in Satoshis) and a `scriptPubKey` (locking script).
 
-![Bitcoin UTXO Model](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/blockchain/ch04-bitcoin.png)
+A Bitcoin transaction consists of:
+
+```typescript
+interface BitcoinTransaction {
+    version: number;
+    inputs: TxInput[];
+    outputs: TxOutput[];
+    locktime: number;
+}
+
+interface TxInput {
+    previousTxHash: string;     // Reference to previous transaction
+    previousOutputIndex: number; // Which output in that tx
+    scriptSig: Script;          // Unlocking script (signature + pubkey)
+    sequence: number;           // For timelocks and replace-by-fee
+}
+
+interface TxOutput {
+    value: number;              // Value in satoshis (1 BTC = 100M satoshis)
+    scriptPubKey: Script;       // Locking script (conditions to spend)
+}
+
+// Version types
+const TX_VERSION_1 = 1;  // Original
+const TX_VERSION_2 = 2;  // BIP-68 relative timelocks
+```
+
+**Transaction size matters for fees:**
+- Each input: ~150 bytes
+- Each output: ~34 bytes
+- Overhead: ~10 bytes
 
 ### Bitcoin Script
-Bitcoin uses a stack-based, non-Turing complete language called **Script**. It is intentionally limited to prevent infinite loops (denial of service). Most transactions use **P2PKH (Pay-to-Public-Key-Hash)** scripts.
 
-### The Mining Ecosystem
-Miners play two roles:
-1. **Security:** Providing hash rate to secure the history.
-2. **Issuance:** Releasing new BTC into circulation via the **Coinbase Transaction**.
-The **Halving** occurs every 210,000 blocks (roughly 4 years), cutting the block reward in half to enforce scarcity (21 million total supply).
+Bitcoin uses a stack-based, **non-Turing complete** language called **Script**. It is intentionally limited to prevent infinite loops (denial of service). There are no loops, no recursion, and no complex control flow.
+
+**Key properties:**
+- **Stack-based:** All operations push/pop from a single stack.
+- **Non-Turing complete:** No loops or goto statements.
+- **Deterministic:** Same script always produces the same result.
+- **Stateless:** No persistent memory between executions.
+
+**Common Opcodes:**
+
+| Opcode | Code | Description |
+|--------|------|-------------|
+| OP_DUP | 0x76 | Duplicates top stack item |
+| OP_HASH160 | 0xA9 | Hash with SHA-256 then RIPEMD-160 |
+| OP_EQUAL | 0x87 | Returns 1 if equal, 0 otherwise |
+| OP_EQUALVERIFY | 0x88 | Like EQUAL but fails if not equal |
+| OP_CHECKSIG | 0xAC | Verify ECDSA signature (1 sig) |
+| OP_CHECKMULTISIG | 0xAE | Verify M-of-N multisig signatures |
+| OP_RETURN | 0x6A | Mark output as provably unspendable |
+| OP_IF | 0x63 | Conditional execution |
+| OP_ELSE | 0x67 | Alternative branch |
+| OP_ENDIF | 0x68 | End conditional |
+| OP_SHA256 | 0xAA | SHA-256 hash |
+| OP_SIZE | 0x82 | Push size of top item onto stack |
+
+### P2PKH Script Execution
+
+The most common Bitcoin transaction type is **Pay-to-Public-Key-Hash (P2PKH)**.
+
+**Locking Script (scriptPubKey):**
+`OP_DUP OP_HASH160 <PubKHash> OP_EQUALVERIFY OP_CHECKSIG`
+
+**Unlocking Script (scriptSig):**
+`<Signature> <PublicKey>`
+
+```mermaid
+flowchart TB
+    subgraph StackExecution["Stack Execution"]
+        Step0["Step 0: Empty Stack"]
+        Step1["Step 1: Push &lt;Sig&gt; & &lt;PubKey&gt;"]
+        Step2["Step 2: OP_DUP duplicates PubKey"]
+        Step3["Step 3: OP_HASH160 hashes the duplicate"]
+        Step4["Step 4: OP_EQUALVERIFY checks match"]
+        Step5["Step 5: OP_CHECKSIG verifies signature"]
+    end
+    Result["Result: TRUE (valid) or FALSE (invalid)"]
+    
+    Step0 --> Step1 --> Step2 --> Step3 --> Step4 --> Step5 --> Result
+```
+
+**Step-by-step execution:**
+1. `<Signature>` and `<PublicKey>` are pushed to the stack.
+2. `OP_DUP` duplicates `<PublicKey>` (now two copies on stack).
+3. `OP_HASH160` SHA-256 + RIPEMD-160 hashes the duplicate.
+4. `OP_EQUALVERIFY` checks if the hash matches `<PubKHash>`. If not equal, transaction fails.
+5. `OP_CHECKSIG` verifies `<Signature>` is valid for the transaction data using `<PublicKey>`.
+
+### Mempool Mechanics
+
+The **mempool** (memory pool) is where pending transactions wait to be included in a block:
+
+```mermaid
+flowchart TB
+    subgraph Mempool["Mempool (Pending)"]
+        Tx1["Tx1: 5 sat/vB"]
+        Tx2["Tx2: 8 sat/vB"]
+        Tx3["Tx3: 2 sat/vB"]
+        Tx4["Tx4: 12 sat/vB"]
+        Tx5["Tx5: 3 sat/vB"]
+    end
+    subgraph Selection["Miner Selection"]
+        Sort["Sort by fee rate<br/>(highest first)"]
+        Include["Include txs up to<br/>block size limit (4MB)"]
+    end
+    Block["Candidate Block<br/>Tx4, Tx2, Tx1"]
+    
+    Mempool --> Sort
+    Sort --> Include
+    Include --> Block
+```
+
+- **Transaction broadcasting:** Txs flow through the P2P network via INV (inventory) messages.
+- **Relay policies:** Nodes check each tx before relaying (validity, fees, size).
+- **Replacement (RBF):** Opt-in Replace-by-Fee allows replacing an unconfirmed tx with a higher fee version.
+- **Mempool limits:** Default ~300 MB on Bitcoin Core nodes.
+
+### Mining and Block Structure
+
+```mermaid
+flowchart TB
+    subgraph Block["Bitcoin Block Structure (1 MB to 4 MB)"]
+        Header["Block Header (80 bytes)"]
+        Txs["Transaction List"]
+    end
+    subgraph HeaderFields["Header Fields"]
+        Version["Version (4 bytes)"]
+        PrevHash["Previous Block Hash (32 bytes)"]
+        MerkleRoot["Merkle Root (32 bytes)"]
+        Timestamp["Timestamp (4 bytes)"]
+        Bits["Difficulty Target (4 bytes)"]
+        Nonce["Nonce (4 bytes)"]
+    end
+    
+    Block --> Header
+    Header --> Version
+    Header --> PrevHash
+    Header --> MerkleRoot
+    Header --> Timestamp
+    Header --> Bits
+    Header --> Nonce
+    Block --> Txs
+```
+
+**Coinbase Transaction:** The first transaction in every block. It has no inputs and creates new BTC.
+- Contains the miner's output address (where the reward goes).
+- Block reward = subsidy + transaction fees.
+- Can include arbitrary data (up to 100 bytes) in the coinbase input script.
+
+### Mining Hardware Evolution
+
+| Era | Year | Hardware | Hash Rate | Power | When |
+|-----|------|----------|-----------|-------|------|
+| CPU Mining | 2009 | Standard CPUs | ~10 MH/s | ~100W | Early days |
+| GPU Mining | 2010 | AMD/NVIDIA GPUs | ~400 MH/s | ~200W | First year |
+| FPGA Mining | 2011 | Xilinx/Altera FPGAs | ~1 GH/s | ~60W | Short transition |
+| ASIC Early | 2013 | Bitfury, KnC Miner | ~100 GH/s | ~500W | First ASICs |
+| ASIC Modern | 2023+ | Antminer S21 | ~200 TH/s | ~3500W | Current gen |
+
+### Halving Schedule
+
+```typescript
+function calculateBlockReward(height: number): number {
+    // Initial reward: 50 BTC
+    // Halves every 210,000 blocks (~4 years)
+    const halvings = Math.floor(height / 210000);
+    if (halvings >= 64) return 0; // Reward reaches zero
+    
+    // Shift right: 50 >> halvings (in integer BTC terms)
+    return 50 / Math.pow(2, halvings);
+}
+
+// Reward schedule
+const schedule = [
+    { height: 0,     reward: 50 },    // 2009-2012
+    { height: 210000, reward: 25 },   // 2012-2016
+    { height: 420000, reward: 12.5 }, // 2016-2020
+    { height: 630000, reward: 6.25 }, // 2020-2024
+    { height: 840000, reward: 3.125 }, // 2024-2028
+];
+
+// Total supply cap (asymptotic 21M)
+const totalSupply = 210000 * (50 + 25 + 12.5 + 6.25 + 3.125 + 1.5625 + ...);
+```
+
+```mermaid
+flowchart LR
+    subgraph Timeline["Halving Timeline"]
+        H1["2012<br/>50 → 25 BTC"]
+        H2["2016<br/>25 → 12.5 BTC"]
+        H3["2020<br/>12.5 → 6.25 BTC"]
+        H4["2024<br/>6.25 → 3.125 BTC"]
+        H5["2028<br/>3.125 → 1.5625 BTC"]
+        H6["2140<br/>Mining ends<br/>~21M BTC mined"]
+    end
+    
+    H1 --> H2 --> H3 --> H4 --> H5 --> H6
+```
+
+### Difficulty Adjustment Algorithm
+
+Bitcoin recalculates difficulty every 2016 blocks:
+
+```typescript
+function calculateDifficulty(
+    currentTarget: bigint,
+    previousTarget: bigint,
+    actualTimespanSeconds: number
+): bigint {
+    const expectedTimespan = 2016 * 600; // 2 weeks in seconds
+    // Clamp adjustment range (cannot change more than 4x)
+    const adjustedTimespan = Math.min(
+        Math.max(actualTimespanSeconds, expectedTimespan / 4),
+        expectedTimespan * 4,
+    );
+    // New target = previous * (actual / expected)
+    const ratio = adjustedTimespan / expectedTimespan;
+    return BigInt(Math.floor(Number(previousTarget) * ratio));
+}
+```
+
+### Orphan Blocks and Reorgs
+
+**Orphan blocks:** Valid blocks that are not part of the main chain because another block was found first.
+
+```mermaid
+flowchart TB
+    subgraph MainChain["Main Chain"]
+        B1["Block #100"]
+        B2["Block #101"]
+        B3["Block #102"]
+        B4["Block #103 (Longest)"]
+    end
+    subgraph OrphanChain["Orphaned Chain"]
+        O1["Block #102 (orphan)"]
+        O2["Block #103 (orphan)"]
+    end
+    
+    B1 --> B2 --> B3 --> B4
+    B2 --> O1
+    O1 --> O2
+```
+
+- **Reorg (Reorganization):** When a longer chain appears and replaces the current best chain.
+- **Depth matters:** A reorg of 1-3 blocks can happen naturally; 6+ blocks is extremely rare.
+- **Double-spend risk:** A 51% attacker can perform a reorg of any depth.
 
 ---
 
 ## Examples
 
 ### Example 1: UTXO Consolidation
+
 Alice has three UTXOs:
 - UTXO A: 0.5 BTC
 - UTXO B: 1.2 BTC
 - UTXO C: 0.3 BTC
+
 Alice wants to buy a motorcycle for 1.8 BTC.
+
 - **Input:** Alice provides A, B, and C (Total 2.0 BTC).
 - **Output 1:** 1.8 BTC to the Dealer.
 - **Output 2 (Change):** 0.19 BTC back to Alice.
 - **Fee:** 0.01 BTC remains unallocated; it is collected by the miner.
 
+```typescript
+interface UTXO {
+    txid: string;
+    vout: number;
+    satoshis: number;
+    scriptPubKey: string;
+    address: string;
+}
+
+function createTransaction(
+    utxos: UTXO[],
+    targetAddress: string,
+    targetAmount: number,  // in satoshis
+    changeAddress: string,
+    feeRate: number,       // satoshis per byte
+): BitcoinTransaction {
+    const totalInput = utxos.reduce((sum, u) => sum + u.satoshis, 0);
+    
+    // Estimate transaction size (~150 bytes per input + ~34 per output + 10 overhead)
+    const estimatedSize = utxos.length * 148 + 2 * 34 + 10;
+    const fee = estimatedSize * feeRate;
+    
+    const outputs: TxOutput[] = [
+        { value: targetAmount, scriptPubKey: createP2PKH(targetAddress) },
+        {
+            value: totalInput - targetAmount - fee,
+            scriptPubKey: createP2PKH(changeAddress),
+        },
+    ];
+    
+    return {
+        version: 1,
+        inputs: utxos.map(u => ({
+            previousTxHash: u.txid,
+            previousOutputIndex: u.vout,
+            scriptSig: createScriptSig(),
+            sequence: 0xFFFFFFFF,  // Disable timelock
+        })),
+        outputs,
+        locktime: 0,
+    };
+}
+```
+
 ### Example 2: P2PKH Script Execution
+
 Locking Script (`scriptPubKey`): `OP_DUP OP_HASH160 <PubKHash> OP_EQUALVERIFY OP_CHECKSIG`
 Unlocking Script (`scriptSig`): `<Signature> <PublicKey>`
-1. `<Signature>` and `<PublicKey>` are pushed to the stack.
-2. `OP_DUP` duplicates `<PublicKey>`.
-3. `OP_HASH160` hashes it.
-4. `OP_EQUALVERIFY` checks if it matches `<PubKHash>`.
-5. `OP_CHECKSIG` verifies `<Signature>` using `<PublicKey>`.
-If the result is `True`, the transaction is valid.
+
+```text
+Stack Execution Trace:
+
+1. scriptSig pushed: <Signature>
+   Stack: [Signature]
+
+2. scriptSig pushed: <PublicKey>
+   Stack: [Signature, PublicKey]
+
+3. OP_DUP duplicates top item
+   Stack: [Signature, PublicKey, PublicKey]
+
+4. OP_HASH160 hashes the duplicate
+   Stack: [Signature, PublicKey, PubKHash]
+
+5. OP_EQUALVERIFY: pop top two, verify they're equal
+   Stack: [Signature, PublicKey]
+
+6. OP_CHECKSIG: verify Signature against PublicKey
+   Stack: [true]     ← or [false] if invalid
+```
+
+### Example 3: Transaction Fee Calculation
+
+```typescript
+function calculateFee(
+    txSizeBytes: number,
+    feeRateSatPerByte: number
+): number {
+    return txSizeBytes * feeRateSatPerByte;
+}
+
+// Example: Consolidating 5 small UTXOs into 1
+const txSize = 5 * 148 + 34 + 10;  // ~784 bytes
+const feeRate = 10;  // 10 sat/vB (moderate priority)
+const fee = calculateFee(txSize, feeRate);
+console.log(`Fee: ${fee} satoshis (${fee / 1e8} BTC)`);  // 7840 satoshis
+
+// vs: Spending 1 large UTXO
+const simpleTxSize = 148 + 34 + 10;  // ~192 bytes
+const simpleFee = calculateFee(simpleTxSize, feeRate);
+console.log(`Simple Fee: ${simpleFee} satoshis (${simpleFee / 1e8} BTC)`);  // 1920 satoshis
+```
+
+### Example 4: Mining and the Coinbase Transaction
+
+A coinbase transaction is the first transaction in a block, with:
+- **No inputs** (creates new coins from nothing)
+- **Outputs** equal to the block reward (subsidy + fees)
+- Can include a message (e.g., "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks")
+
+```typescript
+interface CoinbaseTransaction {
+    version: number;
+    coinbaseInput: {
+        txid: "0000...0000";  // All zeros (no previous tx)
+        vout: 0xFFFFFFFF;      // Special output index
+        scriptSig: CoinbaseScript;  // Arbitrary data + height
+    };
+    outputs: TxOutput[];
+    locktime: number;
+}
+
+interface CoinbaseScript {
+    blockHeight: number;  // BIP-34: Must include block height
+    extraNonce: number;   // Extra randomness for mining
+    message?: string;     // Optional data (100 byte limit)
+}
+```
 
 > **One-Sentence Takeaway:** Bitcoin's UTXO model treats every transaction as a set of consumed and created outputs, making it possible to parallelize validation but requiring users to manage multiple UTXOs as their "balance."
 
@@ -102,6 +501,9 @@ If the result is `True`, the transaction is valid.
 | Bitcoin Script | Stack-based scripting language | Non-Turing complete (intentionally) | Basic conditions, multisig |
 | Coinbase Transaction | First transaction in a block (miner reward) | Creates new BTC from nothing | Miner compensation |
 | P2PKH | Standard payment script | Hash of public key, not the key itself | Most Bitcoin transactions |
+| Mempool | Pool of unconfirmed transactions | Miners select from here | Pending tx storage |
+| Orphan Block | Valid block not in main chain | Can be built upon if chain grows longest | Temporary forks |
+| Replace-by-Fee | Replace unconfirmed tx with higher fee tx | Solves stuck transaction problem | Fee bumping |
 
 ## Quick Reference
 
@@ -112,6 +514,9 @@ If the result is `True`, the transaction is valid.
 | **Mining** | Hash rate, Difficulty, Block reward, Halving | Reward halves every 210K blocks |
 | **Supply** | 21M total, ~19.5M mined (2026) | Last Bitcoin mined ~2140 |
 | **Transaction** | Version, Inputs, Outputs, Locktime | Locktime enables time-locked transactions |
+| **Fee Estimation** | Fee = size × fee_rate | Input size ~148B, output ~34B |
+| **Difficulty** | Target threshold for PoW | Adjusts every 2016 blocks |
+| **Mempool** | ~300 MB default limit | Transactions with fees below ~1 sat/vB may be evicted |
 
 ## Cross-Application Matrix
 
@@ -122,6 +527,8 @@ If the result is `True`, the transaction is valid.
 | P2PKH | Standard payments | Address derivation | Identity wallets | Taproot/Schnorr |
 | Halving Schedule | Supply prediction | Tokenomics design | N/A | Scarcity models |
 | Mining | Hash rate markets | PoW security analysis | Not enterprise-relevant | Energy consumption studies |
+| Mempool | MEV opportunities | N/A | N/A | Fee market dynamics |
+| Coinbase | N/A | N/A | N/A | Monetary policy research |
 
 ## Chapter Quiz
 
@@ -158,6 +565,28 @@ If the result is `True`, the transaction is valid.
 **B) To enforce the 21 million supply cap through disinflation.** The halving reduces new supply by 50% every 210,000 blocks (~4 years), asymptotically approaching the 21 million limit. This programmed scarcity is central to Bitcoin's value proposition.
 </details>
 
+4. What is the minimum number of confirmations required before a coinbase transaction's output can be spent?
+   - A) 1 (immediately)
+   - B) 6
+   - C) 100
+   - D) 1000
+
+<details>
+<summary>Answer</summary>
+**C) 100.** Coinbase transaction outputs cannot be spent until they have 100 confirmations. This prevents miners from spending freshly mined coins before the block is deeply embedded in the chain.
+</details>
+
+5. How does Replace-by-Fee (RBF) help Bitcoin users?
+   - A) It reduces transaction fees
+   - B) It allows replacing a stuck transaction with a higher-fee version
+   - C) It merges two transactions into one
+   - D) It cancels transactions automatically
+
+<details>
+<summary>Answer</summary>
+**B) It allows replacing a stuck transaction with a higher-fee version.** RBF allows a user to broadcast a new transaction that spends the same inputs with a higher fee, replacing the original unconfirmed transaction and potentially getting it confirmed faster.
+</details>
+
 ## Summary
 
 - Bitcoin is a P2P electronic cash system based on the UTXO model.
@@ -165,21 +594,39 @@ If the result is `True`, the transaction is valid.
 - Bitcoin Script allows for basic conditional payments without the complexity of a full VM.
 - Mining ensures network security and regulates the supply of BTC.
 - Hardcoded scarcity (21M limit) and the halving mechanism are central to Bitcoin's value proposition.
+- The mempool holds pending transactions from which miners select based on fee rates.
+- Difficulty adjusts every 2016 blocks to maintain consistent block timing.
+- Orphan blocks and reorgs are natural consequences of distributed block propagation.
+- Coinbase transactions require 100 confirmations before the reward can be spent.
+
+## Practical Takeaways
+
+1. Consolidate small UTXOs during low-fee periods to save on future transaction costs.
+2. Use a wallet that supports RBF to avoid stuck transactions during network congestion.
+3. Wait for 6+ confirmations (Bitcoin) before considering a transaction final for high-value transfers.
+4. Transaction fees depend on byte size, not value — optimize by minimizing input count.
+5. Back up your seed phrase offline — hardware wallets are the gold standard for key management.
 
 ---
 
 ## Exercises
 
 ### Review Questions
+
 1. What is a "Coinbase Transaction"?
 2. Why does Bitcoin use a stack-based language?
 3. Explain why there are no "balances" stored on the Bitcoin blockchain.
 4. What happens to the remaining value in a transaction if the sum of inputs exceeds the sum of outputs?
+5. How does the mempool work and how are transactions prioritized?
 
 ### Application Problems
+
 1. Design a 2-of-3 Multisig script structure at a high level.
 2. If Alice sends 1 BTC to Bob, but Bob never spends it, what happens to that UTXO in the long term?
 3. Calculate the total number of Bitcoins that will ever be mined, assuming a starting reward of 50 BTC and halving every 210,000 blocks.
+4. Estimate the fee savings of consolidating 10 UTXOs (0.01 BTC each) into one UTXO during a 5 sat/vB fee environment versus consolidating during a 50 sat/vB fee environment.
 
 ### Challenge Problem
+
 1. Analyze the "Stacking" attack in Script and explain how `OP_RETURN` is used to store arbitrary data without bloating the UTXO set.
+2. Research the Taproot upgrade (BIP-340, 341, 342) and explain how Schnorr signatures and MAST (Merkelized Abstract Syntax Trees) improve Bitcoin's privacy and scalability.

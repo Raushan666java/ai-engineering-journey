@@ -4,8 +4,6 @@
 
 ## Learning Objectives
 
-![Observability Three Pillars and Practices](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch13-observability.png)
-
 By the end of this chapter, students will be able to:
 
 1. Explain the three pillars of observability: logs, metrics, and traces
@@ -14,7 +12,7 @@ By the end of this chapter, students will be able to:
 4. Apply RED metrics and the USE method for service monitoring
 5. Define and use SLOs with error budgets for reliability management
 6. Analyze observability running costs and optimize instrumentation
-
+7. Implement context propagation for end-to-end request tracking
 
 ## Chapter at a Glance
 
@@ -26,6 +24,7 @@ By the end of this chapter, students will be able to:
 | RED Method | Rate, Errors, Duration for service monitoring | Every service should have RED metrics |
 | USE Method | Utilization, Saturation, Errors for resources | Apply to every system resource (CPU, memory, disk) |
 | SLOs & Error Budgets | Quantify reliability and gate releases | Burn-rate alerts prevent budget exhaustion |
+| Context Propagation | W3C Trace-Context for distributed correlation | Automatic trace parent-child relationships |
 
 ## Chapter Roadmap
 
@@ -35,145 +34,401 @@ flowchart LR
     A --> C[Metrics]
     A --> D[Traces]
     B & C & D --> E[OpenTelemetry]
-    E --> F[Collector]
-    E --> G[Backends]
-    G --> H[Jaeger/Tempo]
-    G --> I[Prometheus]
-    G --> J[Loki]
+    E --> F[OTel API]
+    E --> G[OTel SDK]
+    E --> H[OTel Collector]
+    H --> I[Backends]
+    I --> J[Jaeger/Tempo]
+    I --> K[Prometheus]
+    I --> L[Loki]
+    D --> M[Context Propagation]
+    M --> N[W3C Trace-Context]
 ```
 
 ## Theory
 
 ### 13.1 The Three Pillars of Observability
 
-> **Pro Tip:** Use tail-based sampling to keep the most interesting traces (high latency, errors) while reducing storage costs.
-
 Observability is the ability to understand a system's internal state by examining its outputs. The three pillars provide complementary views:
 
-**Logs** â€” Discrete, timestamped records of events. Provide detailed context for specific occurrences. High cardinality but high storage cost. Best for debugging specific errors and tracing request lifecycles.
+**Logs** — Discrete, timestamped records of events. Provide detailed context for specific occurrences. High cardinality but high storage cost. Best for debugging specific errors and tracing request lifecycles.
 
-**Metrics** â€” Numeric aggregations over time. Provide system health at a glance. Low cardinality, efficient storage. Best for alerting, dashboards, and trend analysis.
+**Metrics** — Numeric aggregations over time. Provide system health at a glance. Low cardinality, efficient storage. Best for alerting, dashboards, and trend analysis.
 
-**Traces** â€” End-to-end request flow across distributed services. Show causality and timing. Best for understanding latency bottlenecks and service dependencies.
+**Traces** — End-to-end request flow across distributed services. Show causality and timing. Best for understanding latency bottlenecks and service dependencies.
 
-The pillars are interconnected. A metric alert leads to a dashboard, which reveals a trace with a slow span, which links to error logs. Modern observability platforms correlate these signals automatically.
+The pillars are interconnected. A metric alert leads to a dashboard, which reveals a trace with a slow span, which links to error logs containing the root cause. Modern observability platforms correlate these signals automatically.
 
 ### 13.2 OpenTelemetry
 
-> **Remember:** RED for services (Rate, Errors, Duration); USE for resources (Utilization, Saturation, Errors).
-
 OpenTelemetry (OTel) is the industry standard for observability instrumentation. It provides APIs, SDKs, and collectors for generating, collecting, and exporting telemetry data.
 
-**Components**:
-- **API** â€” Standard interfaces for creating traces, metrics, and logs
-- **SDK** â€” Language-specific implementations with configuration, batching, and exporting
-- **Collector** â€” Vendor-agnostic telemetry processing pipeline. Receives, processes, and exports data.
-- **Instrumentation Libraries** â€” Automatic instrumentation for popular frameworks (HTTP servers, gRPC, database clients, message queues)
-- **Exporter** â€” Sends data to backends (Jaeger, Prometheus, Datadog, New Relic)
+**Core Components:**
 
-**Context Propagation** â€” OTel propagates trace context across service boundaries via W3C Trace-Context headers:
+- **API** — Standard interfaces for creating traces, metrics, and logs. Language-specific (TypeScript, Java, Python, Go, etc.).
+- **SDK** — Language-specific implementations with configuration, batching, sampling, and exporting. Pluggable processors and exporters.
+- **Collector** — Vendor-agnostic telemetry processing pipeline. Receives telemetry in OTLP format, processes (filter, transform, sample), and exports to one or more backends.
+- **Instrumentation Libraries** — Automatic instrumentation for popular frameworks: Express, gRPC, database clients (PostgreSQL, MySQL, MongoDB), message queues (Kafka, RabbitMQ), HTTP clients, and more.
+- **Exporter** — Sends data to backends (Jaeger, Prometheus, Datadog, New Relic, AWS X-Ray, Azure Monitor).
 
-```text
+**Context Propagation:**
+OpenTelemetry propagates trace context across service boundaries via W3C Trace-Context headers:
+
+```
 traceparent: 00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01
 ```
 
-This enables distributed trace reconstruction across services.
+This header is automatically injected into outgoing HTTP requests and extracted from incoming requests by OTel instrumentation libraries, enabling distributed trace reconstruction across service boundaries.
 
 ### 13.3 Distributed Tracing
 
-> **Warning:** Observability infrastructure can become a significant cost driver. Plan sampling and retention strategies.
-
 Distributed tracing tracks a single request as it traverses multiple services.
 
-**Concepts**:
-- **Trace** â€” The full path of a request through the system. Identified by a Trace ID.
-- **Span** â€” A single unit of work within a trace. Has a start time, duration, status, and attributes.
-- **Span Context** â€” Trace ID, Span ID, and propagation metadata.
-- **Parent-Child Relationship** â€” Spans form a tree; the root span represents the initial request.
+**Core Concepts:**
+- **Trace** — The full path of a request through the system. Identified by a Trace ID. A trace is a tree of spans.
+- **Span** — A single unit of work within a trace. Has a start time, duration, status (OK/ERROR), and attributes (key-value metadata). A span represents one operation in one service.
+- **Span Context** — Trace ID, Span ID, and propagation metadata (W3C Trace-Context).
+- **Parent-Child Relationship** — Spans form a tree structure. The root span represents the initial request entry point. Child spans represent downstream operations.
 
-```python
-# Python OpenTelemetry instrumentation example
-from opentelemetry import trace
-tracer = trace.get_tracer(__name__)
+**Instrumentation Example:**
 
-with tracer.start_as_current_span("process_payment") as span:
-    span.set_attribute("payment.amount", 4999)
-    span.set_attribute("payment.currency", "USD")
-    span.add_event("payment.authorized", {"auth_code": "A12345"})
-    result = process_payment_gateway()
-    if not result.success:
-        span.set_status(trace.Status(trace.StatusCode.ERROR))
+```typescript
+import { trace, SpanStatusCode } from '@opentelemetry/api';
+
+const tracer = trace.getTracer('payment-service');
+
+async function processPayment(paymentId: string, amount: number) {
+  const span = tracer.startSpan('process-payment', {
+    attributes: {
+      'payment.id': paymentId,
+      'payment.amount': amount,
+      'payment.currency': 'USD',
+    },
+  });
+
+  try {
+    const result = await paymentGateway.authorize(paymentId, amount);
+    span.setAttribute('payment.auth_code', result.authCode);
+    span.addEvent('payment.authorized', { authCode: result.authCode });
+    return result;
+  } catch (error) {
+    span.recordException(error);
+    span.setStatus({ code: SpanStatusCode.ERROR, message: String(error) });
+    throw error;
+  } finally {
+    span.end();
+  }
+}
 ```
 
-**Backends**:
-- **Jaeger** â€” Open-source distributed tracing platform. Features: UI for trace search and comparison, service dependency graph, sampling strategies. Stores traces in Elasticsearch, Cassandra, or Badger.
-- **Zipkin** â€” Open-source distributed tracing with similar capabilities to Jaeger. Uses columnar storage backends.
-- **Grafana Tempo** â€” Cost-effective tracing backend. Does not index by trace content; queries traces by time range and service/operation labels. Integrates natively with Grafana.
+**Tracing Backends:**
+
+| Backend | Storage | Search | Query | Cost Profile |
+|---------|---------|--------|-------|--------------|
+| Jaeger | Elasticsearch, Cassandra, Badger | Trace ID, service, operation, tags | UI, gRPC API | Index-based |
+| Zipkin | Cassandra, Elasticsearch, MySQL | Trace ID, service, annotations | UI, JSON API | Columnar |
+| Grafana Tempo | Object store (S3, GCS) | Time range + service + operation | TraceQL | Cheap at scale (no content indexing) |
+
+**Sampling Strategies:**
+- **Head-based sampling** — Decision made at the root span. Simple but cannot prioritize by interestingness.
+- **Tail-based sampling** — Decision made after the trace is complete. Can keep traces with errors or high latency. More complex and resource-intensive.
 
 ### 13.4 Service Maps and Dependency Analysis
 
 Observability platforms generate service maps that visualize inter-service communication:
 
 - Node size indicates request volume or resource consumption
-- Edge thickness indicates traffic volume
-- Edge color indicates latency or error rate
-- Failed connections are highlighted
+- Edge thickness indicates traffic volume between services
+- Edge color indicates latency or error rate (green = healthy, red = failing)
+- Failed connections are highlighted for immediate attention
 
-Service maps reveal unknown dependencies, single points of failure, and unexpected traffic patterns.
+Service maps reveal unknown dependencies, single points of failure, unexpected traffic patterns, and orphan services that no longer serve traffic.
 
 ### 13.5 RED Metrics and the USE Method
 
-**RED Method** (Rate, Errors, Duration) â€” For service-level monitoring:
-- **Rate** â€” Requests per second
-- **Errors** â€” Failed requests per second (explicit 5xx, implicit failures)
-- **Duration** â€” Latency distributions (average, p50, p90, p95, p99)
+**RED Method** (Rate, Errors, Duration) — For service-level monitoring:
+- **Rate** — Requests per second. Indicates traffic patterns and load.
+- **Errors** — Failed requests per second (explicit 5xx, implicit failures like wrong results or slow responses).
+- **Duration** — Latency distributions (average, p50, p90, p95, p99). Distinguish between successful and failed request latency.
 
-RED applies to each service in the architecture. Every service should have RED metrics instrumented.
+RED applies to each service in the architecture. Every service should have RED metrics instrumented and dashboarded.
 
-**USE Method** (Utilization, Saturation, Errors) â€” For resource-level monitoring:
-- **Utilization** â€” Percentage of resource being used (CPU %, memory %, disk space %)
-- **Saturation** â€” Degree of resource contention (queue length, run queue depth)
-- **Errors** â€” Error counts (disk I/O errors, network interface errors)
+**USE Method** (Utilization, Saturation, Errors) — For resource-level monitoring:
+- **Utilization** — Percentage of resource being used (CPU %, memory %, disk space %, network bandwidth %)
+- **Saturation** — Degree of resource contention (CPU run queue length, disk I/O queue depth, memory swap usage)
+- **Errors** — Error counts or rates (disk I/O errors, network interface errors/drops, memory allocation failures)
 
-USE applies to every resource in the system: CPU, memory, disk, network, and system limits.
+USE applies to every resource in the system: CPU, memory, disk, network, and system limits (file descriptors, connection pools, thread pools).
 
 ### 13.6 SLOs and Error Budgets
 
-**Service Level Objective (SLO)** â€” Target level of reliability for a service. Example: 99.9% availability over a 30-day rolling window.
+**Service Level Objective (SLO)** — Target level of reliability for a service. Example: 99.9% availability over a 30-day rolling window.
 
-**Service Level Indicator (SLI)** â€” The actual measurement of reliability. Example: fraction of HTTP requests that complete successfully in under 500ms.
+**Service Level Indicator (SLI)** — The actual measurement of reliability. Example: fraction of HTTP requests that complete successfully in under 500ms.
 
-**Service Level Agreement (SLA)** â€” Contractual commitment to a customer. SLAs must be less stringent than internal SLOs.
+**Service Level Agreement (SLA)** — Contractual commitment to a customer. SLAs must be less stringent than internal SLOs.
 
-**Error Budget** â€” The allowed amount of unreliability. For a 99.9% SLO over 30 days, the error budget is 43 minutes of downtime. Error budgets:
-- Measure how much unreliability is remaining
-- Inform release decisions: if budget is exhausted, stop releasing
-- Gate innovation velocity: teams trade reliability for feature velocity
+**Error Budget** — The allowed amount of unreliability. For a 99.9% SLO over 30 days:
 
-```yaml
-# Example SLO configuration
-slo:
-  name: api-availability
-  target: 99.9
-  window: 30d
-  sli:
-    type: latency
-    threshold_ms: 500
-    valid_events: http_requests_total
-    good_events: http_requests_duration_seconds_bucket{le="0.5"}
+```
+Error Budget = (1 - SLO) × Time Window
+             = 0.001 × (30 × 24 × 60 × 60)
+             = 2,592 seconds ≈ 43 minutes
 ```
 
-### 13.7 Running Cost Analysis
+**Error Budget Mechanics:**
+- Budget is consumed by events that violate the SLO
+- Budget replenishes as the measurement window rolls past violations
+- If budget is exhausted, releases are halted until it recovers
+- Burn-rate alerts notify when budget consumption exceeds expected rates
+
+**Burn-rate alert example:**
+```yaml
+# Multi-window burn-rate alert: 2% of 30-day budget consumed in 1 hour
+groups:
+  - name: slo-alerts
+    rules:
+      - alert: ErrorBudgetBurn
+        expr: |
+          (1 - (sum(rate(http_requests_total{status=~"5.."}[1h]))
+                / sum(rate(http_requests_total[1h]))))
+          < 0.99
+        for: 1h
+        labels:
+          severity: critical
+```
+
+### 13.7 Observability Cost Optimization
 
 Observability infrastructure can become a significant cost driver. Optimization strategies:
 
-- **Sampling** â€” Trace head-based or tail-based sampling to reduce ingestion volume
-- **Retention Tiers** â€” Raw data at short retention (7 days), aggregated data longer (90 days), summaries for archive
-- **Aggregation** â€” Precompute and store aggregations rather than raw data
-- **Cardinality Control** â€” Limit label cardinality in metrics to prevent metric explosion
-- **Log Levels** â€” Store INFO+ in production; DEBUG rotated quickly
+- **Sampling** — Head-based or tail-based trace sampling. Start with 10% sampling for high-volume services.
+- **Retention Tiers** — Raw data at short retention (7 days), aggregated data longer (90 days), summaries for archive (1 year+).
+- **Aggregation** — Precompute and store aggregations rather than raw data. Recording rules reduce Prometheus query costs.
+- **Cardinality Control** — Limit label cardinality to prevent metric explosion. A label with 10000 unique values creates 10000 time series. Monitor cardinality with `prometheus_tsdb_head_series`.
+- **Log Levels** — Store INFO+ in production; DEBUG rotated quickly (24-48 hours).
+- **Log Content** — Avoid logging large payloads or sensitive data. Use sampling for high-volume debug logs.
+- **Efficient Exporters** — Batch telemetry before export. Configure appropriate batch size and export interval.
 
-## Summary
+---
+
+## Examples
+
+### Example 1: OpenTelemetry Instrumentation
+
+```typescript
+import { NodeSDK } from '@opentelemetry/sdk-node';
+import { ConsoleSpanExporter } from '@opentelemetry/sdk-trace-node';
+import { PeriodicExportingMetricReader } from '@opentelemetry/sdk-metrics';
+import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-proto';
+import { OTLPMetricExporter } from '@opentelemetry/exporter-metrics-otlp-proto';
+import { HttpInstrumentation } from '@opentelemetry/instrumentation-http';
+import { ExpressInstrumentation } from '@opentelemetry/instrumentation-express';
+import { PinoInstrumentation } from '@opentelemetry/instrumentation-pino';
+import { diag, DiagConsoleLogger, DiagLogLevel } from '@opentelemetry/api';
+
+diag.setLogger(new DiagConsoleLogger(), DiagLogLevel.INFO);
+
+const sdk = new NodeSDK({
+  serviceName: 'payment-service',
+  traceExporter: new OTLPTraceExporter({ url: 'http://otel-collector:4318/v1/traces' }),
+  metricReader: new PeriodicExportingMetricReader({
+    exporter: new OTLPMetricExporter({ url: 'http://otel-collector:4318/v1/metrics' }),
+    exportIntervalMillis: 10000,
+  }),
+  instrumentations: [
+    new HttpInstrumentation(),
+    new ExpressInstrumentation(),
+    new PinoInstrumentation(),
+  ],
+});
+
+sdk.start();
+
+process.on('SIGTERM', () => {
+  sdk.shutdown().then(() => process.exit(0));
+});
+```
+
+### Example 2: Trace Context Propagation Simulation
+
+```typescript
+interface Span {
+  traceId: string;
+  spanId: string;
+  parentSpanId?: string;
+  operationName: string;
+  startTime: number;
+  endTime?: number;
+  attributes: Record<string, string>;
+  status: 'OK' | 'ERROR';
+}
+
+interface Trace {
+  traceId: string;
+  spans: Span[];
+  rootService: string;
+}
+
+class TraceSimulator {
+  private traces: Trace[] = [];
+
+  generateTrace(services: string[], baseDuration: number): Trace {
+    const traceId = crypto.randomUUID().replace(/-/g, '').substring(0, 16);
+    const spans: Span[] = [];
+    const startTime = Date.now();
+    let currentParentId = '';
+
+    for (let i = 0; i < services.length; i++) {
+      const spanId = crypto.randomUUID().replace(/-/g, '').substring(0, 16);
+      const duration = baseDuration * (1 + Math.random());
+
+      const span: Span = {
+        traceId,
+        spanId,
+        parentSpanId: i === 0 ? undefined : currentParentId,
+        operationName: `${services[i]}.process`,
+        startTime: startTime + spans.reduce((sum, s) => sum + (s.endTime || 0) - s.startTime, 0),
+        endTime: startTime + i * baseDuration + duration,
+        attributes: {
+          'service.name': services[i],
+          'http.method': 'POST',
+        },
+        status: Math.random() > 0.1 ? 'OK' : 'ERROR',
+      };
+
+      currentParentId = spanId;
+      spans.push(span);
+    }
+
+    const trace: Trace = { traceId, spans, rootService: services[0] };
+    this.traces.push(trace);
+    return trace;
+  }
+
+  findSlowTraces(threshold: number): Trace[] {
+    return this.traces.filter(t => {
+      const totalDuration = Math.max(...t.spans.map(s => s.endTime || 0)) - Math.min(...t.spans.map(s => s.startTime));
+      return totalDuration > threshold;
+    });
+  }
+
+  findErrorTraces(): Trace[] {
+    return this.traces.filter(t => t.spans.some(s => s.status === 'ERROR'));
+  }
+
+  buildServiceGraph(): Record<string, string[]> {
+    const graph: Record<string, string[]> = {};
+
+    for (const trace of this.traces) {
+      for (let i = 0; i < trace.spans.length; i++) {
+        const service = trace.spans[i].attributes['service.name'];
+        if (!graph[service]) graph[service] = [];
+        if (i + 1 < trace.spans.length) {
+          const next = trace.spans[i + 1].attributes['service.name'];
+          if (!graph[service].includes(next)) graph[service].push(next);
+        }
+      }
+    }
+
+    return graph;
+  }
+
+  generateReport(): string {
+    let report = '# Trace Analysis Report\n\n';
+    report += `Total traces: ${this.traces.length}\n`;
+    report += `Error traces: ${this.findErrorTraces().length}\n`;
+    report += `Slow traces (>500ms): ${this.findSlowTraces(500).length}\n\n`;
+
+    report += '## Dependency Graph\n';
+    const graph = this.buildServiceGraph();
+    for (const [service, deps] of Object.entries(graph)) {
+      report += `- ${service} → ${deps.join(', ') || '(leaf)'}\n`;
+    }
+
+    return report;
+  }
+}
+
+const simulator = new TraceSimulator();
+simulator.generateTrace(['frontend', 'api-gateway', 'user-service', 'database'], 100);
+simulator.generateTrace(['frontend', 'api-gateway', 'payment-service', 'bank-api'], 200);
+simulator.generateTrace(['frontend', 'api-gateway', 'notification-service'], 50);
+
+console.log(simulator.generateReport());
+```
+
+### Example 3: SLO Compliance Dashboard Generator
+
+```typescript
+interface SLODefinition {
+  name: string;
+  target: number; // 99.9
+  windowDays: number;
+  sliQuery: string;
+  goodEventsQuery: string;
+  validEventsQuery: string;
+}
+
+interface SLOStatus {
+  name: string;
+  target: number;
+  compliance: number;
+  budgetRemaining: number;
+  budgetTotal: number;
+  status: 'healthy' | 'warning' | 'critical' | 'exhausted';
+}
+
+class SLOCalculator {
+  calculate(slo: SLODefinition, goodEvents: number, validEvents: number): SLOStatus {
+    const compliance = validEvents > 0 ? (goodEvents / validEvents) * 100 : 100;
+    const totalSeconds = slo.windowDays * 24 * 60 * 60;
+    const budgetTotal = totalSeconds * (1 - slo.target / 100);
+    const consumed = totalSeconds * (1 - compliance / 100);
+    const budgetRemaining = budgetTotal - consumed;
+    const remainingPercent = (budgetRemaining / budgetTotal) * 100;
+
+    let status: SLOStatus['status'] = 'healthy';
+    if (compliance < slo.target) status = 'exhausted';
+    else if (remainingPercent < 10) status = 'critical';
+    else if (remainingPercent < 30) status = 'warning';
+
+    return {
+      name: slo.name,
+      target: slo.target,
+      compliance: Math.round(compliance * 1000) / 1000,
+      budgetRemaining: Math.round(budgetRemaining),
+      budgetTotal: Math.round(budgetTotal),
+      status,
+    };
+  }
+
+  generateDashboard(slos: SLODefinition[], goodEvents: number[], validEvents: number[]): string {
+    let report = '# SLO Compliance Dashboard\n\n';
+    report += '| SLO | Target | Current | Budget Remaining | Status |\n';
+    report += '|-----|--------|---------|-----------------|--------|\n';
+
+    for (let i = 0; i < slos.length; i++) {
+      const status = this.calculate(slos[i], goodEvents[i], validEvents[i]);
+      const icon = status.status === 'healthy' ? '✅' : status.status === 'exhausted' ? '🔴' : '⚠️';
+      report += `| ${status.name} | ${status.target}% | ${status.compliance}% | ${status.budgetRemaining}s / ${status.budgetTotal}s | ${icon} ${status.status} |\n`;
+    }
+
+    return report;
+  }
+}
+
+const calculator = new SLOCalculator();
+const slos: SLODefinition[] = [
+  { name: 'api-availability', target: 99.9, windowDays: 30, sliQuery: '', goodEventsQuery: '', validEventsQuery: '' },
+  { name: 'api-latency', target: 99.5, windowDays: 30, sliQuery: '', goodEventsQuery: '', validEventsQuery: '' },
+  { name: 'payment-success', target: 99.99, windowDays: 30, sliQuery: '', goodEventsQuery: '', validEventsQuery: '' },
+];
+
+console.log(calculator.generateDashboard(slos, [999000, 994000, 999800], [1000000, 1000000, 1000000]));
+```
+
+---
 
 ## Concept Comparison Table
 
@@ -184,6 +439,8 @@ Observability infrastructure can become a significant cost driver. Optimization 
 | Traces | End-to-end request flow with causality |
 | OpenTelemetry | Standard API/SDK/Collector for telemetry |
 | Jaeger/Tempo | Distributed tracing backends |
+| SLO | Target reliability level for a service |
+| Error Budget | Allowed unreliability = (1 - SLO) × window |
 
 ## Quick Reference
 
@@ -194,6 +451,8 @@ Observability infrastructure can become a significant cost driver. Optimization 
 | USE Method | Utilization, Saturation, Errors for resources |
 | OpenTelemetry | API, SDK, Collector, Exporters |
 | SLO | target=99.9, window=30d, burn-rate alerts |
+| Context Propagation | W3C Trace-Context, traceparent header |
+| Sampling | Head-based (simple), Tail-based (accurate) |
 
 ## Cross-Application Matrix
 
@@ -212,10 +471,17 @@ Observability infrastructure can become a significant cost driver. Optimization 
 
 <details><summary>Question 3: What happens when error budget is exhausted?</summary>**A)** System shuts down<br>**B)** Releases are halted until budget recovers<br>**C)** SLA penalties apply automatically<br>**D)** Monitoring is disabled<br><br>**Answer: B)** Releases are halted until budget recovers</details>
 
+<details><summary>Question 4: What protocol does OpenTelemetry use for context propagation?</summary>**A)** HTTP headers<br>**B)** W3C Trace-Context<br>**C)** gRPC metadata<br>**D)** Custom headers<br><br>**Answer: B)** W3C Trace-Context</details>
+
+<details><summary>Question 5: What is the difference between head-based and tail-based sampling?</summary>**A)** Head-based samples at root span; tail-based after trace completes<br>**B)** Head-based is faster but less selective<br>**C)** Tail-based keeps interesting traces (errors, high latency)<br>**D)** All of the above<br><br>**Answer: D)** All of the above</details>
+
+---
 
 ## Summary
 
-Observability enables understanding complex distributed systems. The three pillars (logs, metrics, traces) provide complementary perspectives. OpenTelemetry standardizes instrumentation across languages and backends. Distributed tracing reveals request flows across service boundaries. RED metrics and the USE method provide structured monitoring approaches. SLOs and error budgets quantify reliability and inform release decisions. Cost optimization through sampling, aggregation, and retention management prevents observability costs from growing unbounded.
+Observability enables understanding complex distributed systems. The three pillars (logs, metrics, traces) provide complementary perspectives. OpenTelemetry standardizes instrumentation across languages and backends with API, SDK, and Collector components. Distributed tracing reveals request flows across service boundaries with parent-child span relationships and W3C context propagation. RED metrics (Rate, Errors, Duration) and the USE method (Utilization, Saturation, Errors) provide structured monitoring approaches for services and resources respectively. SLOs and error budgets quantify reliability, gate release decisions, and inform operational priorities. Cost optimization through sampling, aggregation, retention management, and cardinality control prevents observability costs from growing unbounded.
+
+---
 
 ## Exercises
 
@@ -231,8 +497,8 @@ Observability enables understanding complex distributed systems. The three pilla
 
 1. Instrument a simple microservice application (two services communicating via HTTP) with OpenTelemetry. Generate a trace that spans both services. Export to Jaeger or Tempo. Visualize the trace showing parent-child span relationships.
 2. Implement RED metrics for a REST API service. Instrument request counters, error counters, and latency histograms. Create a Grafana dashboard showing rate, error rate, and latency distributions (p50, p95, p99).
-3. Define SLOs for the API service: latency SLO (95% of requests under 300ms) and availability SLO (99.9%). Calculate the error budgets. Implement an SLO burn-rate alert that fires when error budget is consumed too quickly.
+3. Define SLOs for an API service: latency SLO (95% of requests under 300ms) and availability SLO (99.9%). Calculate the error budgets. Implement an SLO burn-rate alert that fires when error budget is consumed too quickly.
 
 ### Challenge Problem
 
-Design a comprehensive observability strategy for a 50-microservice platform processing 10,000 requests per second. The system uses Kubernetes, Kafka for messaging, PostgreSQL, Redis, and communicates via HTTP and gRPC. Define: OpenTelemetry instrumentation approach (manual vs auto, trace sampling strategy), backend selection (Tempo vs Jaeger, Prometheus vs Mimir, Loki vs Elasticsearch), retention policies per data type, SLO framework (which services, what targets, burn-rate alerting), cost budget allocation, and dashboard hierarchy. The observability budget is 5% of total infrastructure cost. Justify trade-offs between completeness and cost.
+Design a comprehensive observability strategy for a 50-microservice platform processing 10,000 requests per second. The system uses Kubernetes, Kafka for messaging, PostgreSQL, Redis, and communicates via HTTP and gRPC. Define: OpenTelemetry instrumentation approach (manual vs auto, trace sampling strategy), backend selection (Tempo vs Jaeger, Prometheus vs Mimir, Loki vs Elasticsearch), retention policies per data type, SLO framework (which services, what targets, burn-rate alerting), cost budget allocation (5% of total infrastructure cost), and dashboard hierarchy. Justify trade-offs between completeness and cost.

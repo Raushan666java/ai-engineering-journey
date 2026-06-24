@@ -1,233 +1,717 @@
-# Chapter 3: Build Tools and Packaging
+# Chapter 3: Build Tools
 
-> **Previous:** [Version Control with Git](./03-version-control.md) | **Next:** [CI/CD Pipelines](./04-cicd.md)
+> **Prev:** [Version Control](./03-version-control.md)
+> **Next:** [CI/CD](./04-cicd.md)
+
+---
 
 ## Learning Objectives
 
-![Build Tools and Packaging Ecosystem](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch03-build-tools.png)
+- Understand the role of build tools in the DevOps pipeline.
+- Differentiate between build automation tools, dependency managers, and task runners.
+- Master TypeScript/JavaScript build tools: npm, yarn, tsc, esbuild, webpack.
+- Configure build scripts for CI/CD pipelines.
+- Manage dependencies, versioning, and lock files.
+- Implement caching strategies for faster builds.
 
-By the end of this chapter, students will be able to:
-
-1. Distinguish between build and package phases in the software delivery lifecycle
-2. Use language-specific build tools correctly for multiple ecosystems
-3. Configure artifact repositories for secure and efficient dependency management
-4. Apply semantic versioning principles to software releases
-5. Generate and interpret Software Bill of Materials (SBOM) documents
-
+---
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Build vs Package | Build transforms source to artifacts; Package assembles deployable units | Separate build and release pipelines for better control |
-| Language-Specific Tools | npm, pip, Maven, Go modules, Cargo | Choose build tools based on language ecosystem |
-| Artifact Repositories | Nexus, Artifactory, cloud registries | Use proxy repos to cache public dependencies |
-| Versioning | SemVer, CalVer, zero-ver schemes | SemVer enables automated dependency resolution |
-| SBOM | Machine-readable inventory of all components | Integrate SBOM generation into CI/CD pipelines |
+| Build Automation | Compile, bundle, minify, optimize | Every CI/CD pipeline starts with a build step |
+| Package Managers | Dependencies, lock files, registry | Lock files ensure reproducible builds |
+| Module Bundlers | Bundle for browser or Node.js | Choose esbuild for speed, webpack for features |
+| TypeScript Compiler | Type checking and transpilation | Use `tsc --noEmit` in CI for type safety |
+| Build Caching | Avoid rebuilding unchanged code | Cache `node_modules` and build output in CI |
+| Task Runners | Automate lint, test, build sequences | Use npm scripts for simplicity |
+| Build Optimization | Code splitting, tree shaking | Reduce bundle size for faster deployments |
+| Monorepo Builds | Nx, Turborepo, Lerna | Parallel builds across packages |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Source Code] --> B[Build Phase]
-    B --> C[Language Tools]
-    C --> D[Artifact]
-    D --> E[Package Phase]
-    E --> F[Artifact Repository]
-    F --> G[Versioning]
-    G --> H[SBOM Generation]
+    A[Source Code] --> B[Package Manager]
+    B --> C[Dependency Resolution]
+    C --> D[Lock File]
+    A --> E[Transpiler]
+    A --> F[Bundler]
+    E & F --> G[Build Artifact]
+    G --> H[Optimization]
+    H --> I[Minification]
+    H --> J[Code Splitting]
+    H --> K[Tree Shaking]
+    I & J & K --> L[Deployable Output]
 ```
 
 ## Theory
 
-### 3.1 Build vs Package
+### The Build Process
 
-> **Pro Tip:** Use lock files (package-lock.json, go.sum) to ensure reproducible builds across environments.
+The build process transforms source code into deployable artifacts. In a DevOps pipeline, the build stage is the first automated gate:
 
-The software delivery lifecycle separates the **build** phase from the **package** phase, though these are often conflated in practice.
+```mermaid
+flowchart LR
+    A[Source] --> B[Lint]
+    B --> C[Type Check]
+    C --> D[Compile]
+    D --> E[Bundle]
+    E --> F[Minify]
+    F --> G[Test]
+    G --> H[Package]
+    H --> I[Artifact]
+```
 
-**Build** is the process of transforming source code into executable artifacts. This includes compilation (for compiled languages), minification (for JavaScript), asset compilation (SCSS to CSS), code generation, and resource processing. The output of a build is typically one or more binary or intermediate files.
+### Package Managers
 
-**Package** is the process of assembling build outputs and metadata into a deployable unit. A package includes the executable artifact, dependency declarations, version metadata, and sometimes configuration files or installation scripts. Packaging formats include JAR, Wheel, npm tarball, Debian package, RPM, and OCI container image.
+**npm (Node Package Manager):**
+- Default package manager for Node.js
+- `package.json` defines dependencies and scripts
+- `package-lock.json` ensures deterministic installs
+- `node_modules` holds installed packages
 
-Making this distinction explicit improves pipeline design. A build pipeline produces artifacts; a release pipeline packages, signs, and publishes them. Separation enables verifying build artifacts before committing to packaging.
+```text
+npm init          # Create package.json
+npm install       # Install all dependencies
+npm install express  # Install and save to dependencies
+npm install -D typescript  # Dev dependency
+npm ci            # Clean install (CI-friendly, uses lock file)
+npm audit         # Check for known vulnerabilities
+npm outdated      # Check for outdated packages
+npm update        # Update packages within semver range
+```
 
-### 3.2 Language-Specific Tools
+**yarn:**
+- Faster alternative to npm with better caching
+- `yarn.lock` for deterministic installs
+- Plug'n'Play (PnP) mode avoids `node_modules`
 
-> **Warning:** Never use latest as a version tag for dependencies. Pin specific versions or use SemVer ranges.
+```text
+yarn add express       # Install and save dependency
+yarn add -D typescript # Dev dependency
+yarn install --frozen-lockfile  # CI install
+yarn upgrade-interactive        # Interactive upgrade
+yarn why typescript             # Why is this dependency needed
+```
 
-**JavaScript/TypeScript** â€” npm (Node Package Manager) manages dependencies from the npm registry. `package.json` declares dependencies; `package-lock.json` pins exact versions for reproducibility. Yarn and pnpm are alternative package managers that offer faster installs and stricter dependency resolution. Build tooling includes Webpack (module bundling), Rollup (library bundling), esbuild (ultra-fast build), and Bun (runtime + package manager + bundler).
+**pnpm:**
+- Disk-efficient with content-addressable storage
+- Strict dependency isolation
+- Fastest installs for large projects
 
-**Python** â€” pip installs packages from PyPI. `requirements.txt` lists top-level dependencies; `pip freeze` outputs the full resolved dependency tree. Poetry and Pipenv provide more sophisticated dependency management with lock files, virtual environment management, and build system integration. Setuptools and Flit handle packaging: `setup.py` or `pyproject.toml` define package metadata, entry points, and build configuration.
+### TypeScript Build Configuration
 
-**Java** â€” Maven and Gradle are the dominant build tools. Maven uses XML (`pom.xml`) with a convention-over-configuration philosophy. Gradle uses a Groovy or Kotlin DSL, supporting incremental builds and build caching. Both resolve dependencies from Maven Central or private repositories. Build outputs are JAR, WAR, or EAR files.
-
-**Go** â€” Go uses a built-in module system (`go mod`). `go.mod` declares dependencies; `go.sum` provides verification hashes. Go compiles to a single static binary, simplifying deployment. Multi-stage builds in Docker leverage the Go compiler's efficiency.
-
-**Rust** â€” Cargo manages dependencies from crates.io. `Cargo.toml` declares dependencies with semantic version constraints. Cargo builds produce executables or libraries. It handles testing, benchmarking, documentation generation, and publishing.
-
-**.NET** â€” NuGet is the package format and registry. MSBuild and the dotnet CLI handle compilation and packaging. `csproj` files declare dependencies. Paket is an alternative dependency manager.
-
-### 3.3 Artifact Repositories
-
-> **Remember:** The uild once, deploy many pattern eliminates environment-specific build differences.
-
-Artifact repositories store and serve build outputs and dependencies. They provide access control, caching, version management, and metadata storage.
-
-**Nexus Repository OSS/Pro** â€” Supports Maven, npm, Docker, PyPI, NuGet, and more. Provides proxy repositories (cache remote registries), hosted repositories (store internal artifacts), and group repositories (aggregate multiple sources). Pro features include cleanup policies, S3 blob storage, and health checks.
-
-**JFrog Artifactory** â€” Universal artifact repository with support for all major package formats. Integrates natively with CI/CD tools. Features include build integration (traces which artifacts comprise a build), release management, and binary analysis. Artifactory also serves as a Helm chart repository and Docker registry.
-
-**Cloud Package Registries** â€” GitHub Packages, GitLab Container Registry, AWS CodeArtifact, Azure Artifacts, and GCP Artifact Registry provide integrated artifact storage within their respective platforms. These reduce operational overhead for teams already using the platform.
-
-**Docker Hub and Container Registries** â€” Container images are the dominant deployment artifact. Registries include Docker Hub (public and private), Amazon ECR, Azure Container Registry, Google Container Registry, and GitHub Container Registry. All support vulnerability scanning, immutable tags, and access control.
-
-### 3.4 Versioning
-
-Version numbers communicate meaning about the nature of changes between releases.
-
-**Semantic Versioning (SemVer)** â€” Format: `MAJOR.MINOR.PATCH`. Increment MAJOR for incompatible API changes, MINOR for backwards-compatible feature additions, and PATCH for backwards-compatible bug fixes. Pre-release versions append a hyphen and identifier (`1.0.0-alpha.1`). Build metadata appends a plus (`1.0.0+build.123`). SemVer enables dependency resolution tools to determine compatible versions automatically.
-
-**Calendar Versioning (CalVer)** â€” Format based on release date, such as `YY.MM.MINOR` or `YY.0M.0D`. Used by Ubuntu (`24.04`), Unity, and pip. CalVer communicates freshness rather than compatibility scope.
-
-**Zero-Ver and Other Schemes** â€” ZeroVer (`0.x`) indicates pre-stable development. Version Proliferation Review (VPR) and other organizational standards exist for specialized contexts.
-
-### 3.5 Software Bill of Materials (SBOM)
-
-An SBOM is a formal, machine-readable inventory of all components in a software artifact. It lists each component, its version, license, and dependency relationships.
-
-**Formats** â€” SPDX (Software Package Data Exchange) and CycloneDX are the dominant standards. Both are ISO/IEC standards. SPDX focuses on licensing; CycloneDX includes vulnerability metadata and cryptographic hashes.
-
-**Generation** â€” Tools like Syft, Trivy, and language-specific plugins analyze build outputs and generate SBOMs. Generation should be integrated into the CI/CD pipeline as a post-build step.
-
-**Use Cases** â€” Vulnerability management (correlate components against CVE databases), license compliance, supply chain risk assessment, and regulatory compliance (US Executive Order 14028 mandates SBOMs for government software).
-
-## Examples
-
-> **One-Sentence Takeaway:** Build and package are distinct phases that should be separated in the pipeline lifecycle.
-
-### Example 3.1: npm package.json with SemVer and Scripts
+TypeScript compilation via `tsconfig.json`:
 
 ```json
 {
-  "name": "@org/api-service",
-  "version": "2.1.0",
-  "description": "REST API service for order management",
-  "main": "dist/index.js",
-  "scripts": {
-    "build": "tsc",
-    "test": "jest --coverage",
-    "lint": "eslint src/",
-    "package": "npm pack"
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
   },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
+```
+
+### Module Bundlers
+
+**esbuild (fastest):**
+- Written in Go, 10-100x faster than JavaScript bundlers
+- Built-in TypeScript, JSX, CSS support
+- Ideal for rapid development and CI/CD
+
+```text
+esbuild src/index.ts --bundle --outfile=dist/bundle.js --minify
+esbuild src/index.ts --bundle --platform=node --outfile=dist/server.js
+esbuild --watch src/index.ts --outfile=dist/bundle.js
+```
+
+**webpack (most feature-rich):**
+- Code splitting, lazy loading, asset management
+- Extensive plugin ecosystem
+- Complex configuration for large applications
+
+```javascript
+// webpack.config.js
+module.exports = {
+  entry: './src/index.ts',
+  output: { path: path.resolve(__dirname, 'dist'), filename: 'bundle.js' },
+  resolve: { extensions: ['.ts', '.js'] },
+  module: {
+    rules: [
+      { test: /\.ts$/, use: 'ts-loader', exclude: /node_modules/ },
+    ],
+  },
+  optimization: {
+    splitChunks: { chunks: 'all' },
+    minimize: true,
+  },
+};
+```
+
+**Build speed comparison:**
+
+| Tool | Time (100 files) | Features | Popularity |
+|------|-----------------|----------|-----------|
+| esbuild | 0.3s | TypeScript, JSX, CSS, minify | Growing |
+| tsc | 2.5s | Full type checking only | Standard |
+| webpack | 4.0s | Code splitting, plugins, loaders | Popular |
+| rollup | 1.5s | Tree shaking, ES modules | Libraries |
+| parcel | 2.0s | Zero config, fast | Moderate |
+| swc | 0.4s | Rust-based, TypeScript | Growing |
+| bun | 0.2s | Built-in bundler | Emerging |
+
+### Build Caching Strategies
+
+**CI build caching:**
+
+```text
+# GitHub Actions cache example
+- uses: actions/cache@v3
+  with:
+    path: |
+      ~/.npm
+      .eslintcache
+      dist/
+    key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
+    restore-keys: |
+      ${{ runner.os }}-build-
+```
+
+**Node modules caching in CI:**
+- Cache `node_modules` or `~/.npm` directory
+- Use `npm ci` (not `npm install`) for deterministic installs
+- Invalidate cache when `package-lock.json` changes
+
+**Build output caching:**
+- Cache compiled output (dist/, build/)
+- Use incremental compilation (`tsc --incremental`)
+- Leverage esbuild's native speed (often no caching needed)
+
+### Dependency Management
+
+**Semantic versioning in dependencies:**
+
+```json
+{
   "dependencies": {
-    "express": "^4.18.0",
-    "pino": "^8.0.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.3.0",
-    "jest": "^29.0.0"
+    "express": "^4.18.0",     // Compatible with 4.x
+    "lodash": "~4.17.0",      // Compatible with 4.17.x
+    "typescript": "5.0.0",    // Exact version
+    "react": ">=17.0.0",      // Minimum version
   }
 }
 ```
 
-### Example 3.2: Maven pom.xml with Repository Configuration
+**Lock files (`package-lock.json`, `yarn.lock`):**
+- Pin exact versions of all transitive dependencies
+- Ensure reproducible installs across environments
+- Must be committed to version control
+- Use `npm ci` (CI) vs `npm install` (development)
 
-```xml
-<project>
-  <groupId>com.org</groupId>
-  <artifactId>payment-processor</artifactId>
-  <version>3.2.1</version>
-  <packaging>jar</packaging>
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-      <version>3.1.0</version>
-    </dependency>
-  </dependencies>
-  <distributionManagement>
-    <repository>
-      <id>internal-releases</id>
-      <url>https://nexus.internal.org/repository/maven-releases/</url>
-    </repository>
-  </distributionManagement>
-</project>
+**Monorepo dependency management:**
+
+```text
+my-project/
+├── package.json          # Root package with workspaces
+├── packages/
+│   ├── core/
+│   │   ├── package.json  # Depends on shared
+│   │   └── src/
+│   ├── api/
+│   │   ├── package.json  # Depends on core
+│   │   └── src/
+│   └── web/
+│       ├── package.json  # Depends on core
+│       └── src/
+└── package-lock.json     # Single lock file
 ```
 
-### Example 3.3: SBOM Generation with Syft
+### Build Optimization
 
-```bash
-# Generate SBOM for a container image in CycloneDX format
-syft packages myapp:latest -o cyclonedx-json > sbom.cdx.json
+**Tree shaking (dead code elimination):**
+- Remove unused exports from bundled output
+- Use ES module syntax (`import`/`export`) for static analysis
+- Side-effect-free declarations in `package.json`
 
-# Generate SBOM from a filesystem
-syft packages /path/to/build/output -o spdx-json > sbom.spdx.json
-
-# Verify the SBOM with Grype for known vulnerabilities
-grype sbom:sbom.cdx.json
+```json
+{
+  "sideEffects": false,
+  "sideEffects": ["*.css"]
+}
 ```
 
-## Summary
+**Code splitting:**
+- Split bundle into smaller chunks loaded on demand
+- Route-based splitting for SPAs
+- Vendor chunk for stable third-party libraries
 
-## Concept Comparison Table
+```typescript
+// Dynamic import for code splitting
+const AdminModule = await import('./modules/admin');
+// Webpack/parcel automatically creates separate chunk
+```
 
-| Concept | Description |
-|---------|-------------|
-| Build | Source code to executable artifacts (compilation, minification) |
-| Package | Artifacts + metadata into deployable units (JAR, Docker image) |
-| SemVer | MAJOR.MINOR.PATCH with pre-release and build metadata |
-| CalVer | Date-based versioning (YY.MM.MINOR) |
-| SBOM | SPDX or CycloneDX format component inventory |
+**Minification:**
+- Remove whitespace, rename variables, optimize syntax
+- esbuild: built-in minifier
+- Terser: standard for webpack
 
-## Quick Reference
+### npm Scripts and Task Running
 
-| Topic | Key Points |
-|-------|------------|
-| JS/TS | npm, Yarn, pnpm, Webpack, esbuild |
-| Python | pip, Poetry, Pipenv, Setuptools |
-| Java | Maven (pom.xml), Gradle (Groovy/Kotlin DSL) |
-| Go | go mod, go.sum for dependency verification |
-| Rust | Cargo with crates.io registry |
+```json
+{
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "build:prod": "tsc && esbuild src/index.ts --bundle --minify --outfile=dist/bundle.js",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "format:check": "prettier --check src/",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "clean": "rm -rf dist/",
+    "prebuild": "npm run clean && npm run lint",
+    "postbuild": "npm run test",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "ci": "npm ci && npm run lint && npm run build && npm run test"
+  }
+}
+```
 
-## Cross-Application Matrix
+---
 
-| Domain | Application |
-|--------|-------------|
-| Web | npm packages and JS bundling for web apps |
-| Cloud | Container images as deployment artifacts |
-| Enterprise | Private artifact repos for compliance |
-| Embedded | Cross-compilation toolchains and package managers |
+## Examples
+
+### Example 1: Custom Build Pipeline
+
+```typescript
+import { execSync } from 'child_process';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
+import { tmpdir } from 'os';
+import { join } from 'path';
+
+interface BuildConfig {
+  entry: string;
+  outDir: string;
+  minify: boolean;
+  sourceMaps: boolean;
+  platform: 'browser' | 'node';
+  env: Record<string, string>;
+}
+
+class BuildPipeline {
+  private config: BuildConfig;
+  private startTime: number = 0;
+
+  constructor(config: BuildConfig) {
+    this.config = config;
+  }
+
+  async run(): Promise<void> {
+    this.startTime = Date.now();
+    console.log('🚀 Starting build pipeline...\n');
+
+    this.ensureOutputDir();
+    this.validateEntry();
+    this.setEnvironmentVariables();
+    this.runTypeCheck();
+    this.bundleWithEsbuild();
+    this.copyStaticAssets();
+    this.generateBuildInfo();
+    this.printSummary();
+  }
+
+  private ensureOutputDir(): void {
+    if (!existsSync(this.config.outDir)) {
+      mkdirSync(this.config.outDir, { recursive: true });
+      console.log(`📁 Created output directory: ${this.config.outDir}`);
+    }
+  }
+
+  private validateEntry(): void {
+    if (!existsSync(this.config.entry)) {
+      throw new Error(`Entry point not found: ${this.config.entry}`);
+    }
+    console.log(`✅ Entry point validated: ${this.config.entry}`);
+  }
+
+  private setEnvironmentVariables(): void {
+    Object.entries(this.config.env).forEach(([key, value]) => {
+      process.env[key] = value;
+    });
+    console.log(`⚙️  Environment variables set (${Object.keys(this.config.env).length})`);
+  }
+
+  private runTypeCheck(): void {
+    console.log('🔍 Running TypeScript type check...');
+    try {
+      execSync('npx tsc --noEmit', { stdio: 'inherit' });
+      console.log('✅ TypeScript type check passed');
+    } catch {
+      throw new Error('TypeScript type check failed');
+    }
+  }
+
+  private bundleWithEsbuild(): void {
+    console.log('📦 Bundling with esbuild...');
+    const args = [
+      this.config.entry,
+      `--outdir=${this.config.outDir}`,
+      `--platform=${this.config.platform}`,
+      '--format=cjs',
+      '--target=es2022',
+      '--bundle',
+    ];
+
+    if (this.config.minify) args.push('--minify');
+    if (this.config.sourceMaps) args.push('--sourcemap');
+
+    try {
+      execSync(`npx esbuild ${args.join(' ')}`, { stdio: 'inherit' });
+      console.log('✅ Bundle complete');
+    } catch {
+      throw new Error('Bundle failed');
+    }
+  }
+
+  private copyStaticAssets(): void {
+    console.log('📎 Copying static assets...');
+    try {
+      execSync('cp -r src/public/* dist/ 2>/dev/null; true', { stdio: 'inherit' });
+    } catch {
+      // No public dir, skip
+    }
+  }
+
+  private generateBuildInfo(): void {
+    const buildInfo = {
+      buildTime: new Date().toISOString(),
+      duration: Date.now() - this.startTime,
+      entry: this.config.entry,
+      env: this.config.env.NODE_ENV,
+      minified: this.config.minify,
+      sourceMaps: this.config.sourceMaps,
+    };
+    writeFileSync(
+      join(this.config.outDir, 'build-info.json'),
+      JSON.stringify(buildInfo, null, 2),
+    );
+    console.log('📄 Build info generated');
+  }
+
+  private printSummary(): void {
+    const duration = ((Date.now() - this.startTime) / 1000).toFixed(2);
+    const outSize = this.getOutputSize();
+    console.log(`\n✅ Build complete in ${duration}s`);
+    console.log(`📦 Output size: ${outSize}`);
+  }
+
+  private getOutputSize(): string {
+    try {
+      const result = execSync(`du -sh ${this.config.outDir}`, { encoding: 'utf-8' });
+      return result.split('\t')[0];
+    } catch {
+      return 'unknown';
+    }
+  }
+}
+
+// Usage
+const pipeline = new BuildPipeline({
+  entry: 'src/index.ts',
+  outDir: 'dist',
+  minify: true,
+  sourceMaps: true,
+  platform: 'node',
+  env: { NODE_ENV: 'production', API_VERSION: '1.0.0' },
+});
+
+pipeline.run().catch(err => {
+  console.error('❌ Build failed:', err.message);
+  process.exit(1);
+});
+```
+
+### Example 2: Dependency Audit Script
+
+```typescript
+import { readFileSync } from 'fs';
+
+interface Dependency {
+  name: string;
+  version: string;
+  type: 'dependency' | 'devDependency' | 'peerDependency';
+  hasVulnerability: boolean;
+}
+
+class DependencyAuditor {
+  private packageJson: any;
+
+  constructor(packageJsonPath: string) {
+    this.packageJson = JSON.parse(readFileSync(packageJsonPath, 'utf-8'));
+  }
+
+  listDependencies(): Dependency[] {
+    const deps: Dependency[] = [];
+
+    if (this.packageJson.dependencies) {
+      for (const [name, version] of Object.entries(this.packageJson.dependencies)) {
+        deps.push({ name, version: version as string, type: 'dependency', hasVulnerability: false });
+      }
+    }
+
+    if (this.packageJson.devDependencies) {
+      for (const [name, version] of Object.entries(this.packageJson.devDependencies)) {
+        deps.push({ name, version: version as string, type: 'devDependency', hasVulnerability: false });
+      }
+    }
+
+    if (this.packageJson.peerDependencies) {
+      for (const [name, version] of Object.entries(this.packageJson.peerDependencies)) {
+        deps.push({ name, version: version as string, type: 'peerDependency', hasVulnerability: false });
+      }
+    }
+
+    return deps;
+  }
+
+  analyzeConsistency(): string[] {
+    const issues: string[] = [];
+    const deps = this.listDependencies();
+    const depMap = new Map<string, Dependency[]>();
+
+    for (const dep of deps) {
+      const existing = depMap.get(dep.name) || [];
+      existing.push(dep);
+      depMap.set(dep.name, existing);
+    }
+
+    for (const [name, versions] of depMap.entries()) {
+      const uniqueVersions = new Set(versions.map(v => v.version));
+      if (uniqueVersions.size > 1) {
+        issues.push(`${name} appears at ${uniqueVersions.size} different versions: ${[...uniqueVersions].join(', ')}`);
+      }
+    }
+
+    return issues;
+  }
+
+  generateReport(): string {
+    const deps = this.listDependencies();
+    const inconsistencies = this.analyzeConsistency();
+
+    let report = '# Dependency Audit Report\n\n';
+    report += `## Summary\n\n`;
+    report += `- **Total dependencies:** ${deps.length}\n`;
+    report += `- **Production:** ${deps.filter(d => d.type === 'dependency').length}\n`;
+    report += `- **Development:** ${deps.filter(d => d.type === 'devDependency').length}\n`;
+    report += `- **Peer:** ${deps.filter(d => d.type === 'peerDependency').length}\n\n`;
+
+    if (inconsistencies.length > 0) {
+      report += `## Inconsistencies\n\n`;
+      inconsistencies.forEach(i => report += `- ${i}\n`);
+    } else {
+      report += '✅ No version inconsistencies found\n';
+    }
+
+    return report;
+  }
+}
+
+const auditor = new DependencyAuditor('./package.json');
+console.log(auditor.generateReport());
+```
+
+### Example 3: Monorepo Build Orchestrator
+
+```typescript
+interface PackageConfig {
+  name: string;
+  path: string;
+  dependencies: string[];
+  buildTime: number;
+  lastBuild: string | null;
+}
+
+class MonorepoBuildOrchestrator {
+  private packages: Map<string, PackageConfig> = new Map();
+
+  addPackage(config: PackageConfig): void {
+    this.packages.set(config.name, config);
+  }
+
+  getBuildOrder(): string[] {
+    const visited = new Set<string>();
+    const order: string[] = [];
+
+    const visit = (name: string): void => {
+      if (visited.has(name)) return;
+      visited.add(name);
+
+      const pkg = this.packages.get(name);
+      if (!pkg) return;
+
+      // Visit and build dependencies first
+      for (const dep of pkg.dependencies) {
+        visit(dep);
+      }
+
+      order.push(name);
+    };
+
+    for (const name of this.packages.keys()) {
+      visit(name);
+    }
+
+    return order;
+  }
+
+  async buildAll(parallel: boolean = true): Promise<void> {
+    const order = this.getBuildOrder();
+    console.log(`Build order: ${order.join(' → ')}\n`);
+
+    if (parallel) {
+      const batches = this.batchParallel(order);
+      for (const batch of batches) {
+        console.log(`Building batch: ${batch.join(', ')}`);
+        await Promise.all(batch.map(name => this.buildPackage(name)));
+      }
+    } else {
+      for (const name of order) {
+        await this.buildPackage(name);
+      }
+    }
+  }
+
+  private batchParallel(order: string[]): string[][] {
+    const batches: string[][] = [];
+    const inDegree = new Map<string, number>();
+    const adjList = new Map<string, string[]>();
+
+    for (const name of order) {
+      inDegree.set(name, 0);
+      adjList.set(name, []);
+    }
+
+    for (const name of order) {
+      const pkg = this.packages.get(name)!;
+      for (const dep of pkg.dependencies) {
+        adjList.get(dep)?.push(name);
+        inDegree.set(name, (inDegree.get(name) || 0) + 1);
+      }
+    }
+
+    const queue: string[] = [];
+    for (const [name, degree] of inDegree) {
+      if (degree === 0) queue.push(name);
+    }
+
+    while (queue.length > 0) {
+      batches.push([...queue]);
+      const size = queue.length;
+      for (let i = 0; i < size; i++) {
+        const node = queue.shift()!;
+        for (const neighbor of adjList.get(node) || []) {
+          const newDegree = (inDegree.get(neighbor) || 1) - 1;
+          inDegree.set(neighbor, newDegree);
+          if (newDegree === 0) queue.push(neighbor);
+        }
+      }
+    }
+
+    return batches;
+  }
+
+  private async buildPackage(name: string): Promise<void> {
+    const pkg = this.packages.get(name)!;
+    console.log(`  Building ${name}...`);
+    await new Promise(resolve => setTimeout(resolve, pkg.buildTime));
+    pkg.lastBuild = new Date().toISOString();
+    console.log(`  ✅ ${name} built`);
+  }
+}
+
+const orchestrator = new MonorepoBuildOrchestrator();
+orchestrator.addPackage({ name: 'shared', path: './packages/shared', dependencies: [], buildTime: 200, lastBuild: null });
+orchestrator.addPackage({ name: 'core', path: './packages/core', dependencies: ['shared'], buildTime: 500, lastBuild: null });
+orchestrator.addPackage({ name: 'api', path: './packages/api', dependencies: ['core'], buildTime: 800, lastBuild: null });
+orchestrator.addPackage({ name: 'web', path: './packages/web', dependencies: ['core'], buildTime: 1200, lastBuild: null });
+
+orchestrator.buildAll(true);
+```
+
+---
+
+## Practical Takeaways
+
+1. **Use `npm ci` in CI pipelines, never `npm install`.** It respects the lock file and fails if there's a mismatch.
+2. **Cache `node_modules` in CI.** Use hash of `package-lock.json` as cache key for fast restores.
+3. **Run `tsc --noEmit` before bundling.** Type checking catches errors early, then esbuild handles fast bundling.
+4. **Commit lock files.** They ensure deterministic builds across all environments.
+5. **Avoid large dependency trees.** Audit regularly with `npm audit` and prune unused packages.
+6. **Use workspace tools for monorepos.** They handle cross-package dependency resolution automatically.
+
+---
 
 ## Chapter Quiz
 
-<details><summary>Question 1: When is a MAJOR version incremented in SemVer?</summary>**A)** Bug fixes<br>**B)** Backward-compatible features<br>**C)** Incompatible API changes<br>**D)** Documentation updates<br><br>**Answer: C)** Incompatible API changes</details>
+<details><summary>Question 1: Which build tool is fastest for TypeScript bundling?</summary>**A)** webpack<br>**B)** tsc<br>**C)** esbuild<br>**D)** rollup<br><br>**Answer: C)** esbuild</details>
 
-<details><summary>Question 2: What is an SBOM used for?</summary>**A)** Build automation<br>**B)** Component inventory with license and vulnerability info<br>**C)** Performance monitoring<br>**D)** Load balancing<br><br>**Answer: B)** Component inventory with license and vulnerability info</details>
+<details><summary>Question 2: What is the purpose of a lock file (package-lock.json)?</summary>**A)** Lock the package version range<br>**B)** Pin exact versions of all transitive dependencies<br>**C)** Encrypt the package contents<br>**D)** Prevent accidental deletion<br><br>**Answer: B)** Pin exact versions of all transitive dependencies</details>
 
-<details><summary>Question 3: Which is NOT a valid SemVer pre-release identifier?</summary>**A)** alpha.1<br>**B)** rc.2<br>**C)** build.123<br>**D)** stable<br><br>**Answer: D)** stable</details>
+<details><summary>Question 3: What does tree shaking do?</summary>**A)** Organize code into trees<br>**B)** Remove unused exports from the bundle<br>**C)** Shake the build tree for errors<br>**D)** Split code into chunks<br><br>**Answer: B)** Remove unused exports from the bundle</details>
 
+<details><summary>Question 4: In CI pipelines, should you use `npm install` or `npm ci`?</summary>**A)** `npm install` — it's faster<br>**B)** `npm ci` — it respects the lock file and is deterministic<br>**C)** Both work the same way<br>**D)** Neither — use `yarn` instead<br><br>**Answer: B)** `npm ci` — it respects the lock file and is deterministic</details>
+
+<details><summary>Question 5: What does the caret `^` in `"express": "^4.18.0"` mean?</summary>**A)** Compatible with version 4.x<br>**B)** Compatible with only 4.18.x<br>**C)** Compatible with 4.18.0 exactly<br>**D)** Compatible with any version<br><br>**Answer: A)** Compatible with version 4.x</details>
+
+---
 
 ## Summary
 
-Build tools and packaging form the foundation of the software delivery pipeline. Each language ecosystem provides specialized tools optimized for its compilation model and runtime characteristics. Artifact repositories enable secure, scalable dependency management. Semantic versioning communicates change impact. SBOM generation provides supply chain transparency. Understanding the complete build and packaging lifecycle is essential for designing effective CI/CD pipelines and maintaining secure software supply chains.
+- Build tools transform source code into deployable artifacts as the first automated stage of CI/CD.
+- Package managers (npm, yarn, pnpm) manage dependencies with lock files ensuring reproducibility.
+- TypeScript compilation with strict settings catches type errors at build time.
+- esbuild offers the fastest bundling; webpack provides the richest feature set.
+- Tree shaking and code splitting reduce bundle size for faster deployments.
+- Build caching in CI (node_modules, dist/) dramatically speeds up pipeline execution.
+- Monorepos require orchestrators (Nx, Turborepo) for efficient parallel builds.
+- Dependency hygiene involves regular auditing, pruning, and avoiding unnecessary packages.
+
+---
 
 ## Exercises
 
 ### Review Questions
-
-1. What is the difference between a build artifact and a package? Provide examples.
-2. How does Maven's convention-over-configuration differ from Gradle's approach?
-3. Explain the three components of semantic versioning and when each is incremented.
-4. What information does an SBOM contain, and in which two standard formats is it represented?
-5. Why would an organization use a private artifact repository instead of directly accessing public registries?
+1. What is the difference between `npm install` and `npm ci`?
+2. How does tree shaking work and what module syntax does it require?
+3. What are the advantages of esbuild over webpack? When would you choose webpack instead?
+4. Why should you commit `package-lock.json` to version control?
+5. How does incremental TypeScript compilation improve build performance?
 
 ### Application Problems
-
-1. Create a Node.js project with three npm dependencies. Generate a complete SBOM in CycloneDX format using Syft. Display the component list and identify any dependencies with known vulnerabilities using Grype.
-2. Configure a Maven project that publishes artifacts to a local Nexus repository. Include a dependency with a version range, and verify that Maven resolves the correct version from the repository.
-3. Build a Go project with multiple modules. Generate a `go.mod` and `go.sum`. Demonstrate how Go's minimal version selection resolves dependency conflicts differently than Maven's nearest-wins strategy.
+1. Create a build pipeline script that runs TypeScript type check, bundles with esbuild, minifies, generates source maps, and writes build metadata.
+2. Configure a monorepo with three packages (shared, server, client) using npm workspaces.
+3. Write an npm script to audit all dependencies, check for outdated packages, and generate a report.
+4. Implement a CI build cache strategy for a TypeScript project using GitHub Actions.
 
 ### Challenge Problem
-
-Design a complete artifact management strategy for an organization with 30 microservices written in three languages (Java, Go, Node.js). Define the artifact repository architecture (which registries, proxy configuration, cleanup policies), the versioning scheme (how SemVer maps to release channels), the SBOM generation and storage strategy, and how the CI/CD pipeline integrates with the repository. Address security concerns including signed artifacts, vulnerability scanning, and access control. The strategy must support 200+ daily deployments and compliance with SOC 2 and supply chain security requirements.
+1. Design and implement a complete build system for a microservices monorepo with 10 TypeScript services. Include: shared TypeScript configuration, incremental compilation for all packages, parallel build scheduling respecting dependency DAG, bundle size analysis and optimization, automated dependency upgrade PRs, vulnerability scanning as a build gate, and build artifact versioning with git commit hash.

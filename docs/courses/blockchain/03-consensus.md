@@ -8,9 +8,11 @@
 
 - Explain the Byzantine Generals' Problem and its relevance to distributed systems
 - Describe the Proof of Work (PoW) mechanism and the concept of "difficulty"
-- Analyze the Proof of Stake (PoS) mechanism and its variations (DPoS)
-- Compare BFT-based consensus (PBFT) with lottery-based consensus (PoW/PoS)
-- Understand the trade-offs between energy consumption, security, and decentralization
+- Analyze the Proof of Stake (PoS) mechanism and its variations (DPoS, LPoS)
+- Understand the PBFT protocol phases (pre-prepare, prepare, commit)
+- Compare BFT-based consensus with lottery-based consensus (PoW/PoS)
+- Explain finality types: probabilistic vs absolute
+- Understand the energy implications of different consensus mechanisms
 
 ## Chapter at a Glance
 
@@ -19,7 +21,9 @@
 | Byzantine Generals Problem | Distributed nodes must agree despite faulty/malicious actors | Consensus mechanisms solve this fundamental problem |
 | Proof of Work (PoW) | Solve computational puzzles to propose blocks | Energy-intensive but proven secure over 15+ years |
 | Proof of Stake (PoS) | Validators stake tokens as economic collateral | 99%+ energy reduction vs PoW, with slashing for misbehavior |
-| BFT Consensus | Voting-based finality among known validators | Near-instant finality, suited for permissioned networks |
+| PBFT | Multi-round voting protocol | Near-instant finality, suited for permissioned networks |
+| DPoS | Delegated voting for block producers | Faster than PoW, semi-centralized |
+| Finality | Probabilistic (PoW) vs Absolute (PBFT) | Affects how long to wait for confirmation |
 | Difficulty Adjustment | Network adjusts target to maintain consistent block time | Self-regulating — more miners = harder puzzles |
 
 ## Chapter Roadmap
@@ -28,9 +32,10 @@
 flowchart LR
     A[Byzantine Generals Problem] --> B[Proof of Work]
     B --> C[Proof of Stake]
-    C --> D[BFT Consensus]
-    D --> E[Consensus Comparison]
-    E --> F[Sybil Resistance]
+    C --> D[Delegated PoS]
+    D --> E[PBFT]
+    E --> F[Casper FFG]
+    F --> G[Energy & Security Comparison]
 ```
 
 ---
@@ -38,47 +43,325 @@ flowchart LR
 ## Theory
 
 ### The Byzantine Generals' Problem
+
 A classic problem in distributed computing where multiple generals must agree on a common battle plan (Attack or Retreat). Some generals might be traitors (malicious nodes). A consensus mechanism must ensure that all loyal generals reach the same decision even if a certain percentage of the network is faulty or malicious.
 
+The problem has three key requirements:
+1. **Agreement:** All loyal generals must agree on the same plan.
+2. **Validity:** The plan must be reasonable (not based on traitor messages).
+3. **Termination:** The generals must eventually reach a decision.
+
+For a system with `n` total nodes, Byzantine Fault Tolerance typically requires that no more than `n/3` nodes are faulty (`n > 3f` where `f` is the number of faulty nodes). This is because:
+- You need `2f+1` honest nodes to outvote `f` traitors
+- Total: `n = 3f + 1`
+
+```mermaid
+flowchart TB
+    subgraph Generals["Byzantine Generals"]
+        G1["General 1<br/>(Loyal)"]
+        G2["General 2<br/>(Traitor)"]
+        G3["General 3<br/>(Loyal)"]
+        G4["General 4<br/>(Loyal)"]
+    end
+    G1 -->|"Attack?"| G2
+    G2 -->|"Tells G1: Attack<br/>Tells G3: Retreat"| G3
+    G3 -->|"Retreat?"| G4
+```
+
 ### Proof of Work (PoW)
+
 Nodes (miners) compete to solve a computationally intensive puzzle.
-- **Mechanism:** Find a value (nonce) such that $Hash(BlockHeader + Nonce) < Target$.
+
+- **Mechanism:** Find a value (nonce) such that `Hash(BlockHeader + Nonce) < Target`.
 - **Security:** Requires enormous energy/hardware investment. An attacker must control 51% of the network's hash rate.
 - **Incentive:** Block rewards and transaction fees.
+- **Energy:** Bitcoin consumes approximately 150 TWh annually (comparable to Argentina).
 
-![Consensus Mechanisms](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/blockchain/ch03-consensus.png)
+```mermaid
+flowchart TB
+    subgraph MiningProcess["PoW Mining Process"]
+        Data["Block Data<br/>(transactions)"]
+        Header["Block Header<br/>(prev hash, timestamp,<br/>merkle root, nonce)"]
+        Hash["SHA-256<br/>(hash computation)"]
+        Check["Hash < Target?"]
+        Nonce["Increment nonce"]
+    end
+    
+    Data --> Header
+    Header --> Hash
+    Hash --> Check
+    Check -->|"No"| Nonce
+    Nonce --> Header
+    Check -->|"Yes"| Block["Valid Block Found!"]
+```
+
+The **difficulty** is adjusted periodically (Bitcoin: every 2016 blocks, ~2 weeks) to maintain consistent block times (10 minutes for Bitcoin).
 
 ### Proof of Stake (PoS)
-Validators are chosen based on the amount of cryptocurrency they "stake" (lock up).
-- **Mechanism:** Selection is often proportional to the stake size and age.
-- **Security:** Slashing (losing stake) discourages malicious behavior. No 51% hash rate attack, but "nothing at stake" and "long-range" attacks are concerns.
-- **Efficiency:** Drastically lower energy consumption compared to PoW.
 
-### Byzantine Fault Tolerance (BFT)
-BFT protocols (like PBFT) involve multiple rounds of voting among a fixed set of validators.
-- **Requirement:** Typically requires $n > 3f$ nodes to tolerate $f$ traitors.
-- **Speed:** High throughput and instant finality, but less scalable in terms of node count.
+Validators are chosen based on the amount of cryptocurrency they "stake" (lock up as collateral).
+
+- **Mechanism:** Selection is proportional to stake (or stake-age combinations).
+- **Security:** Slashing (losing stake) discourages malicious behavior.
+- **Efficiency:** Drastically lower energy consumption compared to PoW.
+- **Challenges:** Nothing-at-stake problem, long-range attacks, validator centralization.
+
+```mermaid
+flowchart TB
+    subgraph PoSProcess["PoS Validation Process"]
+        V1["Validator Alice<br/>Staked: 32 ETH"]
+        V2["Validator Bob<br/>Staked: 24 ETH"]
+        V3["Validator Charlie<br/>Staked: 16 ETH"]
+        Selection["Random Selection<br/>(weighted by stake)"]
+        Propose["Selected Validator<br/>proposes block"]
+        Attest["Other validators<br/>attest to block"]
+        Finalize["Block finalized<br/>after 2/3 attestations"]
+    end
+    
+    V1 --> Selection
+    V2 --> Selection
+    V3 --> Selection
+    Selection --> Propose
+    Propose --> Attest
+    Attest --> Finalize
+```
+
+**Casper FFG (Friendly Finality Gadget)** is the PoS finality mechanism used by Ethereum. It provides:
+- **Checkpoints:** Every 32 slots (6.4 minutes), a checkpoint is created.
+- **Justification:** A checkpoint is justified when 2/3 of validators attest to it.
+- **Finalization:** A checkpoint is finalized when the next checkpoint is also justified.
+- **Slashing:** Validators who equivocate (vote on conflicting chains) are slashed.
+
+### Delegated Proof of Stake (DPoS)
+
+DPoS is a variation where token holders vote for a small set of block producers (delegates).
+
+- **Voting:** Token holders vote with their stake weight.
+- **Block Producers:** A fixed number (e.g., 21 in EOS) of delegates produce blocks in rotation.
+- **Advantages:** High throughput (thousands of TPS), low latency.
+- **Disadvantages:** Semi-centralized, vulnerable to vote-buying and collusion.
+
+| Feature | PoS | DPoS |
+|---------|-----|------|
+| Validator Set | Open (anyone can stake) | Limited (elected delegates) |
+| Throughput | Moderate | High |
+| Centralization Risk | Moderate | Higher |
+| Governance | Token voting | Delegate voting |
+| Examples | Ethereum 2.0, Cardano | EOS, Tron |
+
+### Practical Byzantine Fault Tolerance (PBFT)
+
+PBFT uses a multi-round voting protocol among a known set of validators (replicas). One replica is the **primary** (leader) for a given view, and others are **backups**.
+
+The PBFT protocol has three phases:
+
+```mermaid
+sequenceDiagram
+    participant Client as Client
+    participant P as Primary (Replica 0)
+    participant R1 as Replica 1
+    participant R2 as Replica 2
+    participant R3 as Replica 3 (Faulty)
+    
+    Client->>P: Request (transaction)
+    
+    Note over P,R3: PRE-PREPARE Phase
+    P->>R1: Pre-Prepare (n, d, v)
+    P->>R2: Pre-Prepare (n, d, v)
+    P->>R3: Pre-Prepare (n, d, v)
+    
+    Note over P,R3: PREPARE Phase
+    R1->>P: Prepare (n, d, v, i)
+    R1->>R2: Prepare (n, d, v, i)
+    R2->>P: Prepare (n, d, v, i)
+    R2->>R1: Prepare (n, d, v, i)
+    R3->>P: Prepare (n, d, v, i) (faulty)
+    
+    Note over P,R3: Commit Phase (after 2f Prepare messages)
+    P->>R1: Commit (n, d, v)
+    P->>R2: Commit (n, d, v)
+    R1->>P: Commit (n, d, v)
+    R1->>R2: Commit (n, d, v)
+    R2->>P: Commit (n, d, v)
+    R2->>R1: Commit (n, d, v)
+    
+    Note over P,R3: Execute (after 2f+1 Commit messages)
+    P->>Client: Reply (result)
+    R1->>Client: Reply (result)
+    R2->>Client: Reply (result)
+```
+
+**PBFT phases explained:**
+
+1. **Pre-Prepare:** The primary assigns a sequence number `n` to the request and broadcasts a pre-prepare message to all backups.
+2. **Prepare:** Each backup validates the pre-prepare, then broadcasts a prepare message. After receiving `2f` prepare messages from different replicas (including the primary), the replica enters the prepared state.
+3. **Commit:** Each replica broadcasts a commit message. After receiving `2f+1` commit messages (including its own), the replica executes the request and sends the reply to the client.
+
+**Requirements:** `n > 3f` — for 4 nodes, tolerate 1 fault; for 7 nodes, tolerate 2 faults.
+
+PBFT provides **instant finality** — once a block is committed, it cannot be reverted. However, communication complexity is `O(n^2)`, limiting scalability to dozens of nodes.
+
+### Raft (Crash Fault Tolerant)
+
+Raft is a simpler consensus algorithm that tolerates crash faults (not Byzantine faults). It elects a leader and replicates logs:
+
+1. **Leader Election:** Nodes vote for a leader.
+2. **Log Replication:** The leader accepts client requests and replicates them to followers.
+3. **Commitment:** When the leader receives confirmation from a majority, it commits the entry.
+
+Raft is used in Hyperledger Fabric's default consensus and is suitable when all participants are trusted (no malicious actors).
+
+### Consensus Comparison Table
+
+| Property | PoW | PoS | DPoS | PBFT | Raft |
+|----------|-----|-----|------|------|------|
+| Fault Tolerance | Byzantine | Byzantine | Byzantine | Byzantine | Crash-only |
+| Finality | Probabilistic | Probabilistic/Final | Probabilistic | Instant | Instant |
+| Throughput | Low (7 TPS) | Moderate | High | High | Very High |
+| Scalability (Nodes) | Very High | High | Moderate | Low (dozens) | Low |
+| Energy Usage | Very High | Very Low | Very Low | Low | Low |
+| Sybil Resistance | Hash Power | Stake | Stake | Known IDs | Known IDs |
+| Fork Resolution | Longest Chain | LMD-GHOST | Most Votes | Never Forks | Never Forks |
+| Example | Bitcoin | Ethereum 2.0 | EOS | Zilliqa | Hyperledger Fabric |
+
+### Fork Resolution Strategies
+
+```mermaid
+flowchart TB
+    subgraph Forks["Fork Resolution"]
+        Chain1["Chain A<br/>(original chain)"]
+        Chain2["Chain B<br/>(fork)"]
+        PoW_Fork["PoW: Longest Chain Rule<br/>Chain with most cumulative work wins"]
+        PoS_Fork["PoS: LMD-GHOST<br/>Chain with most attestations wins"]
+        BFT_Fork["BFT: Never Forks<br/>Strict leader-driven ordering"]
+    end
+    
+    Chain1 --> PoW_Fork
+    Chain2 --> PoW_Fork
+    Chain1 --> PoS_Fork
+    Chain2 --> PoS_Fork
+    Chain1 --> BFT_Fork
+    Chain2 --> BFT_Fork
+```
+
+**LMD-GHOST (Latest Message Driven Greedy Heaviest Observed Sub-Tree)** is the fork choice rule in Ethereum 2.0. It weights branches by validator attestations, always choosing the heaviest subtree.
+
+### Security Assumptions
+
+| Consensus | Attack Cost | Attack Type | Defense |
+|-----------|------------|-------------|---------|
+| PoW | $5-10B (Bitcoin) | 51% hash rate | Economic disincentive |
+| PoS | 33% of staked value | 51% stake | Slashing |
+| DPoS | Majority of votes | Vote buying | Delegated accountability |
+| PBFT | Compromise 1/3 of nodes | Byzantine | Redundancy |
 
 ---
 
 ## Examples
 
 ### Example 1: PoW Difficulty Adjustment
+
 Bitcoin aims for a 10-minute block time. If miners solve blocks too fast (e.g., every 8 minutes), the network increases the **Difficulty**.
+
 - **Calculation:** The "Target" is lowered. A lower target means it is harder to find a hash that is smaller than it.
+- **Formula:** `New Target = Old Target * (Actual Time / Expected Time)`
 - **Output:** Miners must now perform more hashes on average to find a valid block.
 
+```typescript
+function adjustDifficulty(
+    currentTarget: bigint,
+    actualTimeSeconds: number,
+    expectedTimeSeconds: number = 600 // 10 minutes
+): bigint {
+    // Only adjust every 2016 blocks (~2 weeks)
+    const ratio = actualTimeSeconds / expectedTimeSeconds;
+    // Clamp adjustment to 4x max (can't change more than 400%)
+    const clampedRatio = Math.min(Math.max(ratio, 0.25), 4.0);
+    // New target is adjusted proportionally
+    return BigInt(Math.floor(Number(currentTarget) * clampedRatio));
+}
+
+// Example: Blocks coming in 8 minutes instead of 10
+const oldTarget = BigInt("0x00000000FFFF0000000000000000000000000000000000000000000000000000");
+const newTarget = adjustDifficulty(oldTarget, 480, 600);
+console.log(`Difficulty increased by ${((600/480) * 100 - 100).toFixed(1)}%`);
+```
+
 ### Example 2: PoS Validator Selection
+
 Imagine a network where:
 - Alice stakes 1,000 Tokens.
 - Bob stakes 500 Tokens.
+
 In a simple PoS model, Alice is twice as likely as Bob to be chosen to propose the next block. If Alice proposes an invalid block, the network "slashes" her 1,000 tokens, providing a strong economic deterrent.
+
+### Example 3: PBFT Node Requirement
+
+```typescript
+function minimumNodesForPBFT(faultyNodes: number): number {
+    // PBFT requires n > 3f
+    return 3 * faultyNodes + 1;
+}
+
+console.log(minimumNodesForPBFT(1));  // 4
+console.log(minimumNodesForPBFT(2));  // 7
+console.log(minimumNodesForPBFT(3));  // 10
+console.log(minimumNodesForPBFT(5));  // 16
+```
+
+### Example 4: Casper FFG Finality
+
+```typescript
+interface Checkpoint {
+    epoch: number;
+    blockHash: string;
+}
+
+enum CheckpointState {
+    UNJUSTIFIED,
+    JUSTIFIED,
+    FINALIZED,
+}
+
+function processCheckpoint(
+    checkpoint: Checkpoint,
+    previousCheckpoint: Checkpoint,
+    attestations: number,
+    totalValidators: number
+): CheckpointState {
+    const requiredAttestations = Math.ceil((2 / 3) * totalValidators);
+    
+    if (attestations < requiredAttestations) {
+        return CheckpointState.UNJUSTIFIED;
+    }
+    
+    // Checkpoint is justified
+    // If the previous checkpoint was also justified, this one is finalized
+    const previousJustified = /* check previous state */ true;
+    
+    if (previousJustified && checkpoint.epoch === previousCheckpoint.epoch + 1) {
+        return CheckpointState.FINALIZED;
+    }
+    
+    return CheckpointState.JUSTIFIED;
+}
+```
 
 > **Pro Tip:** When evaluating a PoS blockchain, check the slashing conditions carefully. Some protocols slash for going offline (inactive), while others only slash for equivocation (double-signing). The severity of slashing directly impacts validator behavior and decentralization.
 
-> **Warning:** The "nothing at stake" problem in pure PoS means validators might vote on every chain fork with no cost. Modern PoS (like Ethereum's Casper) solves this by penalizing validators who vote on conflicting chains.
+> **Warning:** The "nothing at stake" problem in pure PoS means validators might vote on every chain fork with no cost. Modern PoS (like Ethereum's Casper) solves this by penalizing validators who vote on conflicting chains (equivocation).
 
 ---
+
+## Energy Comparison Table
+
+| Blockchain | Consensus | Annual Energy (TWh) | TPS | Equivalent To |
+|------------|-----------|-------------------|-----|---------------|
+| Bitcoin | PoW | ~150 | 7 | Argentina |
+| Ethereum (pre-Merge) | PoW | ~112 | 15 | Netherlands |
+| Ethereum (post-Merge) | PoS | ~0.0026 | 15-30 | 2,600 US homes |
+| Solana | PoH+PoS | ~0.001 | 65,000 | Small town |
+| Cardano | PoS | ~0.0006 | 250 | Single home |
 
 ## Concept Comparison Table
 
@@ -86,20 +369,26 @@ In a simple PoS model, Alice is twice as likely as Bob to be chosen to propose t
 |---------|-----------|-----------------|----------|
 | PoW | Compute puzzle to propose next block | Energy-intensive, proven security | Bitcoin, Litecoin |
 | PoS | Economic stake determines validator | Energy-efficient, slashing risk | Ethereum 2.0, Cardano |
-| PBFT | Voting-based Byzantine agreement | Instant finality, node count limited | Hyperledger Fabric |
+| PBFT | Voting-based Byzantine agreement | Instant finality, limited nodes | Hyperledger Fabric |
 | DPoS | Delegated voting for block producers | Faster than PoW, semi-centralized | EOS, Tron |
 | Difficulty | Target value for PoW puzzle | Self-adjusting every 2016 blocks (Bitcoin) | Consistent block timing |
 | Slashing | Penalty for PoS misbehavior | Economic deterrent | Validator accountability |
+| Raft | Crash fault tolerant consensus | No Byzantine tolerance | Permissioned chains |
+| LMD-GHOST | PoS fork choice rule | Weights branches by attestations | Ethereum Beacon Chain |
+| Casper FFG | PoS finality gadget | Checkpoints + 2/3 attestations | Ethereum finalization |
 
 ## Quick Reference
 
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
 | **PoW Security** | 51% attack cost = hardware + electricity | Higher hash rate = more secure |
-| **PoS Security** | 1/3 stake attack, long-range attack | Slashing is the deterrent |
+| **PoS Security** | 33% stake attack, long-range attack | Slashing is the deterrent |
 | **BFT Requirements** | n > 3f for PBFT | 4 nodes tolerate 1 fault |
 | **Finality** | Probabilistic (PoW) vs Instant (BFT) | PoW: wait for 6+ confirmations |
 | **Energy** | PoW = country-scale, PoS = negligible | Ethereum switch saved ~99.9% energy |
+| **PBFT Phases** | Pre-prepare, Prepare, Commit | 2f+1 messages needed in Commit phase |
+| **Fork Choice** | PoW: Longest chain, PoS: Heaviest chain | Determines canonical chain |
+| **Sybil Resistance** | PoW: hash power, PoS: stake | Prevents fake identity proliferation |
 
 ## Cross-Application Matrix
 
@@ -110,6 +399,8 @@ In a simple PoS model, Alice is twice as likely as Bob to be chosen to propose t
 | PBFT | Not common | Not common | Hyperledger ordering | Consensus theory |
 | DPoS | EOS DeFi | Block producer voting | Delegated governance | Voting mechanism design |
 | Difficulty Adj | Mining profitability | N/A | N/A | Network stability |
+| Slashing | Validator economics | Game theory | Governance enforcement | Protocol security |
+| Raft | N/A | N/A | Fabric ordering | Leader election |
 
 ## Chapter Quiz
 
@@ -146,28 +437,69 @@ In a simple PoS model, Alice is twice as likely as Bob to be chosen to propose t
 **D) 7.** PBFT requires n > 3f, so for f=2: n > 6, meaning at least 7 nodes are needed.
 </details>
 
+4. What is the "nothing at stake" problem in Proof of Stake?
+   - A) Validators have nothing to lose
+   - B) Validators can vote on every fork without cost because there's no energy expenditure
+   - C) Validators can't stake anything
+   - D) Validators earn nothing
+
+<details>
+<summary>Answer</summary>
+**B) Validators can vote on every fork without cost because there's no energy expenditure.** In pure PoS, validators can vote on multiple competing forks without penalty. Casper FFG solves this by slashing validators who equivocate (vote on conflicting checkpoints).
+</details>
+
+5. In the Pre-Prepare phase of PBFT, what does the primary broadcast to all replicas?
+   - A) The final block
+   - B) A message containing the request, sequence number, and view number
+   - C) The prepared certificate
+   - D) A vote for the new leader
+
+<details>
+<summary>Answer</summary>
+**B) A message containing the request, sequence number, and view number.** The primary assigns a sequence number to the client request and broadcasts a pre-prepare message to all backup replicas, beginning the consensus process.
+</details>
+
 ## Summary
 
 - Consensus mechanisms enable distributed nodes to agree on the state of a ledger.
 - PoW uses computational power to secure the network but consumes significant energy.
 - PoS uses economic stake to secure the network, offering better scalability and efficiency.
-- BFT protocols are suitable for permissioned environments where the set of validators is known.
-- Sybil resistance is a core requirement, ensuring an attacker cannot easily create many identities to manipulate consensus.
+- BFT protocols (PBFT) are suitable for permissioned environments with known validators.
+- PBFT has three phases: pre-prepare, prepare, and commit, requiring 2f+1 messages in commit.
+- DPoS improves throughput by electing a small set of block producers.
+- Casper FFG provides finality for PoS using checkpoints justified by 2/3 validator attestations.
+- Sybil resistance is a core requirement for permissionless systems.
+- Raft provides crash fault tolerance but not Byzantine fault tolerance.
+- Fork choice rules (longest chain, LMD-GHOST) determine which chain is canonical.
+
+## Practical Takeaways
+
+1. Wait for 6+ block confirmations on Bitcoin PoW to achieve probabilistic finality (~1 hour).
+2. For enterprise, prefer BFT or Raft consensus for instant finality and high throughput.
+3. PoS slashing conditions determine validator behavior — study them before staking.
+4. Energy comparisons between consensus mechanisms differ by orders of magnitude.
+5. No single consensus mechanism is optimal for all use cases — choose based on trust assumptions, throughput needs, and finality requirements.
 
 ---
 
 ## Exercises
 
 ### Review Questions
+
 1. Why is a consensus mechanism needed in a decentralized network but not in a centralized one?
 2. Explain the "51% Attack" in a PoW network.
 3. What is "Slashing" in Proof of Stake?
 4. How does PBFT differ from PoW in terms of "finality"?
+5. Describe the three phases of the PBFT protocol.
 
 ### Application Problems
+
 1. If the current Target is `0x0000FFFF...` and the network wants to double the difficulty, what should the new Target be?
 2. Calculate the minimum number of nodes required in a PBFT system to tolerate 5 malicious nodes.
 3. Compare the "Cost of Attack" for a PoW network with $100M in hardware versus a PoS network with $100M in staked value.
+4. Explain why PBFT's O(n^2) communication complexity limits its scalability to small validator sets.
 
 ### Challenge Problem
+
 1. Evaluate the "Nothing at Stake" problem in PoS and discuss how modern protocols like Ethereum 2.0 (Casper) attempt to solve it.
+2. Research the concept of "View Change" in PBFT. Why is it necessary and how does the protocol handle a faulty primary?

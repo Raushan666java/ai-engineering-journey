@@ -7,10 +7,13 @@
 ## Learning Objectives
 
 - Identify common blockchain vulnerabilities (51% Attack, Sybil Attack, Long Range Attack)
-- Explain Layer 2 scaling solutions (State Channels, Sidechains, Rollups)
-- Understand the concept of "Sharding" and its role in Ethereum 2.0
-- Describe the risks of Zero-Knowledge Proofs (ZKP) in privacy-preserving blockchains
-- Analyze the impact of Quantum Computing on current cryptographic standards
+- Analyze Layer 2 scaling solutions (State Channels, Sidechains, Rollups)
+- Understand sharding and data availability in Ethereum's scaling roadmap
+- Compare Optimistic Rollups vs ZK-Rollups with detailed trade-off analysis
+- Describe Plasma architecture and its limitations
+- Understand zk-SNARKs vs zk-STARKs differences
+- Identify the data availability problem and its solutions
+- Analyze the impact of quantum computing on current cryptographic standards
 
 ## Chapter at a Glance
 
@@ -20,7 +23,9 @@
 | Layer 1 Scaling | Sharding splits the blockchain into parallel segments | Each shard is its own mini-blockchain |
 | Layer 2 Scaling | State Channels, Sidechains, Rollups | Computation moves off-chain, security remains on L1 |
 | Rollups | Optimistic (fraud proofs) vs ZK (validity proofs) | ZK-Rollups provide instant finality |
-| Smart Contract Security | Reentrancy, overflow, oracle manipulation | Largest source of real-world losses |
+| Data Availability | L2 must publish data so anyone can reconstruct state | Key bottleneck for scaling |
+| Lightning Network | Bitcoin payment channels | Instant, low-fee micro-transactions |
+| Quantum Threat | Shor's algorithm breaks ECDSA | Post-quantum cryptography needed |
 
 ## Chapter Roadmap
 
@@ -29,10 +34,12 @@ flowchart LR
     A[Trilemma] --> B[Layer 1: Sharding]
     A --> C[Layer 2: Rollups]
     A --> D[Layer 2: Channels]
-    B --> E[Security Threats]
-    C --> E
-    D --> E
-    E --> F[Quantum Future]
+    A --> E[Layer 2: Sidechains]
+    B --> F[Data Availability]
+    C --> F
+    C --> G[ZK vs Optimistic]
+    G --> H[Security Threats]
+    H --> I[Quantum Future]
 ```
 
 ---
@@ -40,38 +47,475 @@ flowchart LR
 ## Theory
 
 ### The Scalability Bottleneck
-Public blockchains face the "Trilemma": they can only optimize two out of three: **Decentralization, Security, Scalability**. Most chains struggle with throughput (Transactions Per Second - TPS) because every node must process every transaction.
 
-![Scaling and Security](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/blockchain/ch10-scaling.png)
+Public blockchains face the "Trilemma": they can only optimize two out of three: **Decentralization, Security, Scalability**. Most chains struggle with throughput because every node must process every transaction.
 
-### Scaling Solutions
-1. **On-Chain (Layer 1):**
-   - **Sharding:** Splitting the database into multiple segments (shards) so nodes only process a subset of transactions.
-2. **Off-Chain (Layer 2):**
-   - **State Channels (e.g., Lightning Network):** Opening a private channel for multiple transactions and only settling the final state on-chain.
-   - **Rollups (Optimistic vs. ZK):** Bundling hundreds of transactions into a single batch and submitting a summary/proof to Layer 1.
+```mermaid
+flowchart TB
+    subgraph Trilemma2["Blockchain Trilemma"]
+        S1["SECURITY<br/>51% resistance<br/>Immutability"]
+        S2["SCALABILITY<br/>High TPS<br/>Low latency"]
+        D1["DECENTRALIZATION<br/>Many nodes<br/>Permissionless"]
+    end
+    
+    S1 --- S2
+    S1 --- D1
+    S2 --- D1
+    
+    subgraph Examples["Examples"]
+        B["Bitcoin/Tor: Security + Decentralization<br/>(~7 TPS)"]
+        S["Solana/BSC: Security + Scalability<br/>(~4000+ TPS, fewer validators)"]
+        M["Monoxide: Scalability + Decentralization<br/>(weaker finality)"]
+    end
+```
 
-### Blockchain Security
-- **51% Attack:** An entity gains majority control of consensus and can double-spend or censor transactions.
-- **Sybil Attack:** An attacker creates a large number of pseudonymous identities to gain disproportionate influence.
-- **Smart Contract Bugs:** Logical errors (e.g., Reentrancy, Arithmetic Overflow) can lead to total fund loss.
+**Current throughput comparison:**
 
-### Zero-Knowledge Proofs (ZKP)
-ZKP allows one party (the prover) to prove to another (the verifier) that a statement is true without revealing any information beyond the validity of the statement. This is used for privacy (Zcash) and scalability (ZK-Rollups).
+| Blockchain | TPS | Block Time | Finality | Notes |
+|------------|-----|------------|----------|-------|
+| Bitcoin | 7 | 10 min | ~60 min (6 blocks) | Most secure, slowest |
+| Ethereum L1 | 15 | 12 sec | ~15 min (64 blocks) | Post-Merge |
+| Solana | 4000+ | 400ms | ~12 sec | Higher hardware requirements |
+| Polygon PoS | 7000+ | 2 sec | ~2 min | Sidechain |
+| Arbitrum (L2) | 40000+ | ~1 sec | ~15 min | Optimistic rollup |
+| zkSync (L2) | 10000+ | ~1 sec | ~10 min | ZK-rollup |
+| Lightning Network | 1M+ | Instant | Instant | Payment channels |
+
+### Layer 1 Scaling: Sharding
+
+**Sharding** splits the blockchain database into multiple segments (shards) so nodes only process a subset of transactions. Ethereum's Danksharding is the most advanced sharding design.
+
+```mermaid
+flowchart TB
+    subgraph Sharding["Sharded Blockchain"]
+        Beacon["Beacon Chain<br/>(Coordination)"]
+        
+        subgraph Shards["Shards"]
+            Shard1["Shard 1<br/>Validator Set A"]
+            Shard2["Shard 2<br/>Validator Set B"]
+            Shard3["Shard 3<br/>Validator Set C"]
+            ShardN["Shard N<br/>Validator Set D"]
+        end
+        
+        Beacon --> Shard1
+        Beacon --> Shard2
+        Beacon --> Shard3
+        Beacon --> ShardN
+        
+        Shard1 -->|"Cross-shard communication"| Beacon
+        Shard2 -->|"Via beacon chain"| Beacon
+    end
+```
+
+**Ethereum Danksharding:**
+- **EIP-4844 (Proto-Danksharding):** Already live (Dencun, March 2024). Introduces blob transactions for L2 data.
+- **Full Danksharding:** Future upgrade. Full validator set randomly sampled to attest to shard blobs.
+- **Data Availability Sampling (DAS):** Light nodes can verify data availability without downloading everything.
+- **Key metric:** Blob count per block (currently 3-6, planned to scale to 64+).
+
+### Layer 2: State Channels (Lightning Network)
+
+State channels allow participants to transact off-chain while only settling the final state on-chain.
+
+```mermaid
+sequenceDiagram
+    participant Alice as Alice
+    participant Bob as Bob
+    participant Chain as Bitcoin Blockchain
+    
+    Alice->>Chain: 1. Open channel (multisig tx)
+    Note over Chain: Channel funded: 2 BTC (1 each)
+    
+    Alice->>Bob: 2. Payment: Alice→Bob 0.01 BTC
+    Bob->>Alice: 3. Payment: Bob→Alice 0.02 BTC
+    Alice->>Bob: 4. Payment: Alice→Bob 0.005 BTC
+    Note over Alice,Bob: Thousands of transactions off-chain
+    
+    Bob->>Chain: 5. Close channel (final balance)
+    Note over Chain: Alice: 0.985 BTC, Bob: 1.015 BTC
+    Note over Chain: Only 2 on-chain transactions!
+```
+
+**Limitations of state channels:**
+- **Liquidity lock:** Funds must be locked in the channel.
+- **Routing:** Finding a path through the network (Lightning routing).
+- **Liveness:** Both parties must be online to challenge.
+- **Limited complexity:** Only payments, not arbitrary smart contracts.
+
+### Layer 2: Sidechains
+
+Sidechains are independent blockchains with their own consensus, connected to the main chain via a **bridge**.
+
+```mermaid
+flowchart LR
+    subgraph MainChain["Main Chain (Ethereum)"]
+        Bridge1["Bridge Contract"]
+    end
+    
+    subgraph Sidechain["Sidechain (Polygon PoS)"]
+        Bridge2["Bridge Contract"]
+        S1["Block 1"]
+        S2["Block 2"]
+        S3["Block 3"]
+    end
+    
+    User["User"] -->|"Lock 100 ETH<br/>in bridge"| Bridge1
+    Bridge1 -->|"Mint 100 ETH<br/>on sidechain"| Bridge2
+    Bridge2 --> S1
+    S1 --> S2
+    S2 --> S3
+    S3 -->|"Burn 100 ETH<br/>on sidechain"| Bridge2
+    Bridge2 -->|"Unlock 100 ETH<br/>on main chain"| Bridge1
+```
+
+**Sidechain risks:**
+- **Independent security:** If the sidechain's validators collude, funds can be stolen.
+- **Bridge vulnerability:** Bridges are the most hacked DeFi component (>$1.5B lost).
+- **No L1 inheritance:** Sidechain security is independent of the main chain.
+
+### Layer 2: Rollups
+
+Rollups batch hundreds of transactions into a single submission to L1. This is currently the most promising scaling solution.
+
+```mermaid
+flowchart TB
+    subgraph L1["Layer 1 (Ethereum)"]
+        L1State["Ethereum State"]
+        RollupContract["Rollup Contract"]
+    end
+    
+    subgraph L2["Layer 2 (Rollup)"]
+        Sequencer["Sequencer<br/>Batches transactions"]
+        L2State["L2 State"]
+        Batch["Batch + Proof<br/>→ L1 contract"]
+    end
+    
+    User -->|"Deposit"| RollupContract
+    User -->|"Transactions"| Sequencer
+    Sequencer --> L2State
+    Sequencer --> Batch
+    Batch --> RollupContract
+    RollupContract --> L1State
+```
+
+### Optimistic Rollups vs ZK-Rollups
+
+| Feature | Optimistic Rollup | ZK-Rollup |
+|---------|------------------|------------|
+| **Approach** | Assume valid, challenge later | Prove validity immediately |
+| **Proof** | Fraud proof (requires challenge) | Validity proof (zk-SNARK/STARK) |
+| **Finality** | ~7 day withdrawal delay | Instant (minutes on L1) |
+| **Computation** | Cheap (no proofs) | Expensive (proof generation) |
+| **Security** | Economic (bonded challengers) | Cryptographic (ZK proofs) |
+| **EVM Compatibility** | Full (Arbitrum, Optimism) | Partial (zkSync, Scroll improving) |
+| **Capital Efficiency** | Low (long withdrawal) | High (fast exit) |
+| **Data Posted to L1** | Full tx data (calldata/blobs) | Minimal (state diff + proof) |
+| **Example** | Arbitrum, Optimism | zkSync Era, StarkNet, Scroll |
+
+### ZK-SNARKs vs ZK-STARKs
+
+| Feature | zk-SNARK | zk-STARK |
+|---------|----------|----------|
+| Full Name | Zero-Knowledge Succinct Non-Interactive Argument of Knowledge | Zero-Knowledge Scalable Transparent ARgument of Knowledge |
+| Trusted Setup | Required (toxic waste risk) | Not required (transparent) |
+| Proof Size | ~100-200 bytes | ~100-200 KB |
+| Verification Speed | Fast (constant time) | Fast (logarithmic) |
+| Prover Speed | Fast | Slower |
+| Quantum Resistant | No (vulnerable to Shor) | Yes |
+| Adoption | Zcash, zkSync | StarkNet, dYdX |
+
+### The Data Availability Problem
+
+The key bottleneck for rollups is **data availability** — ensuring that L2 transaction data is available for anyone to reconstruct the L2 state.
+
+```mermaid
+flowchart TB
+    subgraph DAProblem["Data Availability Problem"]
+        Scenario["If the sequencer withholds<br/>transaction data:"]
+        Users["Users cannot prove<br/>their balance"]
+        Challenge["Fraud proof impossible<br/>(no data to challenge)"]
+        Censorship["Sequencer can censor<br/>with no consequence"]
+    end
+    
+    Scenario --> Users
+    Scenario --> Challenge
+    Scenario --> Censorship
+```
+
+**Solutions:**
+1. **Calldata (pre-Dencun):** Publish all tx data to L1 (expensive).
+2. **Blobs (EIP-4844):** Temporary data (pruned after ~18 days), much cheaper than calldata.
+3. **Data Availability Committee (DAC):** Trusted committee attests to data availability.
+4. **Data Availability Sampling (DAS):** Light nodes randomly sample data chunks to verify availability.
+
+### Plasma Architecture
+
+Plasma was an early L2 design that has been superseded by rollups:
+
+```mermaid
+flowchart TB
+    subgraph L1Plasma["Layer 1"]
+        RootChain["Root Chain Contract"]
+    end
+    
+    subgraph ChildChain["Plasma Child Chain"]
+        Operator["Operator<br/>Submits Merkle roots"]
+        Blocks["Block 1 | Block 2 | ..."]
+    end
+    
+    RootChain -->|"Periodic Merkle root<br/>submissions"| Blocks
+    User -->|"Deposit"| RootChain
+    User -->|"Exit with Merkle proof<br/>(challenge period)"| RootChain
+```
+
+**Plasma limitations:**
+- **Mass exit problem:** If the operator is malicious, everyone must exit simultaneously.
+- **Limited computation:** Only simple transfers, not arbitrary smart contracts.
+- **Exit games:** Complex challenge-response periods.
+
+### Validium
+
+Validium is like a ZK-Rollup but data is stored off-chain (not on L1):
+
+| Feature | ZK-Rollup | Validium |
+|---------|-----------|----------|
+| Data on L1 | Yes | No (off-chain) |
+| Security | L1 security | DAC or operator |
+| Cost | Lowest | Ultra-low |
+| Withdrawal | Trustless | Trusted exit |
+
+### Blockchain Security Threats
+
+**1. 51% Attack**
+
+An entity gains majority control of consensus and can:
+- Double-spend transactions
+- Censor transactions (exclude them from blocks)
+- Reorganize the chain to reverse transactions
+
+**Cost to attack:**
+- Bitcoin PoW: ~$1.3B/hour (hardware + electricity)
+- Ethereum PoS: ~$32B (staked ETH required, subject to slashing)
+- Small chains: Much cheaper (why smaller chains are attacked more)
+
+**2. Sybil Attack**
+
+An attacker creates many pseudonymous identities to gain disproportionate network influence.
+
+- **PoW defense:** Each identity requires computational work.
+- **PoS defense:** Each identity requires staked capital.
+- **PBFT defense:** Known identities (not vulnerable).
+
+**3. Long Range Attack (PoS)**
+
+An attacker creates a fork from a point far in the past, builds a longer chain, and tries to replace the canonical chain.
+
+**Defenses:**
+- **Checkpoints:** Nodes periodically save the state and refuse to reorganize beyond checkpoints.
+- **Weak Subjectivity:** New nodes trust a recent checkpoint from a trusted source.
+- **Slashing:** Validators who sign conflicting blocks are slashed.
+
+**4. Smart Contract Attacks**
+
+| Attack | Description | Losses (Est.) |
+|--------|-------------|---------------|
+| **Reentrancy** | External call re-enters contract before state update | The DAO: $60M |
+| **Flash Loan Attack** | Unc collateralized loan manipulates prices | $1B+ total |
+| **Oracle Manipulation** | Attacker manipulates off-chain data feed | Cream: $130M |
+| **Front-Running** | Attacker inserts tx ahead of victim's | $1B+ in MEV |
+| **Governance Attack** | Malicious proposal passes | Beanstalk: $182M |
+| **Bridge Hack** | Vulnerability in cross-chain bridge | Ronin: $625M, Wormhole: $326M |
+
+### MEV (Maximal Extractable Value)
+
+MEV is profit extracted by reordering, including, or excluding transactions within a block:
+
+```typescript
+// Sandwich attack example
+async function sandwichAttack(
+    victimTx: Transaction,
+    dexContract: ethers.Contract
+): Promise<void> {
+    // 1. Front-run: Buy token before victim
+    const buyTx = await dexContract.swapExactETHForTokens(
+        minAmount,
+        [WETH, TOKEN],
+        attackerAddress,
+        { gasPrice: victimTx.gasPrice + 1n, value: ethers.parseEther("10") }
+    );
+    
+    // 2. Victim's transaction executes (price goes up)
+    
+    // 3. Back-run: Sell token after victim
+    const sellTx = await dexContract.swapExactTokensForETH(
+        tokenBalance,
+        minEth,
+        [TOKEN, WETH],
+        attackerAddress,
+        { gasPrice: victimTx.gasPrice - 1n }
+    );
+}
+```
+
+**MEV solutions:**
+- **Flashbots:** Private mempool for transaction bundles.
+- **MEV-Boost:** PBS (Proposer-Builder Separation) in Ethereum.
+- **CowSwap:** Batch auctions and intent-based trading.
+
+### Quantum Computing Threat
+
+**Threats to current cryptography:**
+- **Shor's Algorithm:** Can factor large numbers and compute discrete logs in polynomial time.
+  - Breaks RSA (not used in crypto) and ECDSA (used everywhere!)
+- **Grover's Algorithm:** Square-root speedup for search (reduces SHA-256 from 256-bit to 128-bit security).
+
+```mermaid
+flowchart TB
+    subgraph QuantumThreat["Quantum Computing Impact on Blockchain"]
+        ECDSA["ECDSA (secp256k1)<br/>Bitcoin/Ethereum keys<br/>Shor → Broken completely"]
+        SHA256["SHA-256<br/>Mining/Bitcoin hashing<br/>Grover → 128-bit effective<br/>(still safe)"]
+        RSA["RSA<br/>Not used in crypto<br/>Shor → Broken"]
+    end
+    
+    subgraph Timeline["Timeline Estimates"]
+        T1["Today: No Q-Day risk<br/>(~1000 logical qubits)"]
+        T2["5-10 years: Possible<br/>(~10K logical qubits)"]
+        T3["15-20 years: Probable<br/>(1M+ logical qubits)"]
+    end
+    
+    ECDSA -->|"Needs PQC now"| Timeline
+    SHA256 -->|"Double hash (SHA256d)<br/>still safe for now"| Timeline
+```
+
+**Post-Quantum Cryptography candidates for blockchain:**
+- **Lamport Signatures:** Hash-based signatures (large, but quantum-safe).
+- **STARKs:** Already quantum-resistant (used in StarkNet).
+- **Lattice-based:** CRYSTALS-Dilithium (selected by NIST).
+- **Code-based:** Classic McEliece (large public keys).
+
+**What needs to change:**
+- **Address derivation:** Replace ECDSA with quantum-safe signature schemes.
+- **Consensus:** PoW with SHA-256 still partially safe (Grover is quadratic speedup, not exponential).
+- **Timeline:** Many experts predict Q-Day (quantum break of ECDSA) in 15-20 years.
 
 ---
 
 ## Examples
 
 ### Example 1: Lightning Network Payment
+
 Alice and Bob open a channel with 0.1 BTC each.
+
 1. Alice sends Bob 0.01 BTC. (Balance: A: 0.09, B: 0.11)
 2. Bob sends Alice 0.02 BTC. (Balance: A: 0.11, B: 0.09)
 3. They close the channel.
+
 Only **one** transaction is recorded on the main Bitcoin blockchain, but thousands of micro-payments could have happened off-chain.
 
+```typescript
+interface LightningChannel {
+    aliceBalance: number;  // satoshis
+    bobBalance: number;
+    commitmentNumber: number;
+    aliceSignature?: string;
+    bobSignature?: string;
+}
+
+function updateChannel(
+    channel: LightningChannel,
+    fromAlice: boolean,
+    amountSatoshis: number
+): LightningChannel {
+    const updated = { ...channel, commitmentNumber: channel.commitmentNumber + 1 };
+    
+    if (fromAlice) {
+        updated.aliceBalance -= amountSatoshis;
+        updated.bobBalance += amountSatoshis;
+    } else {
+        updated.aliceBalance += amountSatoshis;
+        updated.bobBalance -= amountSatoshis;
+    }
+    
+    return updated;  // New commitment transaction
+}
+```
+
 ### Example 2: ZK-Rollup Proof
+
 A sequencer collects 1,000 transactions. Instead of sending all 1,000 to Ethereum, it generates a **Validity Proof** (SNARK/STARK). Ethereum only verifies the proof, which is much cheaper and faster than verifying 1,000 individual signatures.
+
+```typescript
+interface RollupBatch {
+    batchNumber: number;
+    transactions: L2Transaction[];
+    stateRoot: string;     // L2 state after batch
+    previousStateRoot: string;
+    // For optimistic rollups:
+    fraudProof?: FraudProof;
+    // For ZK rollups:
+    validityProof?: string;  // zk-SNARK/STARK proof bytes
+    // Data (blob or calldata):
+    compressedData: string;  // Compressed transaction data
+}
+
+// Gas comparison: 1000 transfers
+const l1GasPerTx = 21000;         // L1 base transfer
+const l1BatchCost = 21000;        // L1 rollup contract call
+const l1CalldataCost = 16 * 100;  // 16 gas per byte, 100 bytes per tx (compressed)
+const l2RollupGas = l1BatchCost + 1000 * l1CalldataCost;
+const l1IndividualGas = 1000 * l1GasPerTx;
+console.log(`L1 gas: ${l1IndividualGas}`);  // 21,000,000
+console.log(`Rollup gas: ${l2RollupGas}`);  // 2,621,000
+console.log(`Savings: ${(1 - l2RollupGas / l1IndividualGas) * 100}%`);  // ~87.5%
+```
+
+### Example 3: Comparing Settlement Mechanisms
+
+```typescript
+interface ScalingSolution {
+    name: string;
+    security: string;
+    finalityTime: string;
+    tps: number;
+    onChainData: string;
+    trustAssumption: string;
+}
+
+const solutions: ScalingSolution[] = [
+    {
+        name: "Optimistic Rollup",
+        security: "L1 (fraud proof)",
+        finalityTime: "~7 days",
+        tps: 40000,
+        onChainData: "Full tx data (blobs)",
+        trustAssumption: "At least 1 honest challenger",
+    },
+    {
+        name: "ZK-Rollup",
+        security: "L1 (validity proof)",
+        finalityTime: "~10 minutes",
+        tps: 10000,
+        onChainData: "Minimal (proof + state diff)",
+        trustAssumption: "ZK proof system is sound",
+    },
+    {
+        name: "State Channel",
+        security: "L1 (final settlement)",
+        finalityTime: "Instant",
+        tps: "1M+",
+        onChainData: "Only open/close",
+        trustAssumption: "Counterparties are online",
+    },
+    {
+        name: "Sidechain",
+        security: "Independent consensus",
+        finalityTime: "Seconds",
+        tps: 7000,
+        onChainData: "Only bridge txs",
+        trustAssumption: "Sidechain validators are honest",
+    },
+];
+```
 
 > **One-Sentence Takeaway:** Every scaling solution involves a trade-off — Rollups inherit L1 security but add latency, sidechains have their own security models, and sharding increases complexity while maintaining full security.
 
@@ -91,6 +535,7 @@ A sequencer collects 1,000 transactions. Instead of sending all 1,000 to Ethereu
 | ZK-Rollup | Validity proof via SNARK/STARK | Instant finality, computationally intensive | zkSync, StarkNet |
 | Sidechain | Separate chain with own consensus model | Independent security, bridge risk | Polygon (PoS) |
 | Plasma | Child chains submit Merkle roots to L1 | Limited computation, exit game complexity | Early Ethereum scaling |
+| Validium | Off-chain data, on-chain proofs | Ultra-cheap, trusted data committee | Immutable X |
 
 ## Quick Reference
 
@@ -101,6 +546,9 @@ A sequencer collects 1,000 transactions. Instead of sending all 1,000 to Ethereu
 | **51% Attack** | Majority hash/stake control | Double-spend, reorg, censorship |
 | **Reentrancy** | External call re-enters contract | Update state before external calls |
 | **ZK Proofs** | zk-SNARK (trusted setup), zk-STARK (transparent) | STARKs need no trusted setup |
+| **MEV** | Transaction ordering profit | Flashbots, MEV-Boost, PBS |
+| **Data Availability** | Ensure L2 data is available for verification | Blobs, DAS, DAC |
+| **PQC** | Post-Quantum Cryptography | Lamport, Dilithium, STARKs |
 
 ## Cross-Application Matrix
 
@@ -111,6 +559,8 @@ A sequencer collects 1,000 transactions. Instead of sending all 1,000 to Ethereu
 | Sharding | Cross-shard DeFi | Shared state complexity | Not enterprise-relevant | Data availability sampling |
 | Lightning Network | Bitcoin micro-payments | N/A | Enterprise payments | Routing optimization |
 | ZK Proofs | Privacy DEX | zk-rollup settlement | Private enterprise data | Post-quantum ZK |
+| MEV Analysis | Sandwich protection | Fair ordering | Audit transparency | PBS research |
+| Quantum Safety | Future-proof assets | Post-quantum signatures | Long-term data security | PQC standardization |
 
 ## Chapter Quiz
 
@@ -144,33 +594,76 @@ A sequencer collects 1,000 transactions. Instead of sending all 1,000 to Ethereu
 
 <details>
 <summary>Answer</summary>
-**B) STARKs require no trusted setup ceremony.** SNARKs require an initial trusted setup — if the setup's toxic waste is leaked, false proofs can be generated. STARKs use only publicly verifiable randomness, making them fully transparent.
+**B) STARKs require no trusted setup ceremony.** SNARKs require an initial trusted setup — if the setup's toxic waste is leaked, false proofs can be generated. STARKs use only publicly verifiable randomness, making them fully transparent and quantum-resistant.
+</details>
+
+4. What is the "data availability problem" in rollups?
+   - A) There's not enough data to process transactions
+   - B) The rollup operator might withhold transaction data, preventing users from proving their balance or generating fraud proofs
+   - C) Data on L1 is too expensive to store
+   - D) Rollups can't process enough transactions
+
+<details>
+<summary>Answer</summary>
+**B) The rollup operator might withhold transaction data, preventing users from proving their balance or generating fraud proofs.** Without transaction data on L1, users cannot reconstruct the L2 state to challenge invalid state transitions. Blobs (EIP-4844) and data availability sampling solve this.
+</details>
+
+5. How does the Lightning Network achieve instant finality for Bitcoin payments?
+   - A) By using a faster blockchain
+   - B) By opening a multisig channel and updating balance commitments off-chain
+   - C) By reducing security requirements
+   - D) By mining blocks faster
+
+<details>
+<summary>Answer</summary>
+**B) By opening a multisig channel and updating balance commitments off-chain.** The Lightning Network creates 2-of-2 multisig payment channels where balance updates are signed off-chain but only the final balance is settled on-chain. This allows instant, low-fee micro-transactions without waiting for block confirmations.
 </details>
 
 ## Summary
 
-## Summary
-
 - Scalability is the primary hurdle for mainstream blockchain adoption.
-- Layer 2 solutions move the computation off-chain while inheriting the security of Layer 1.
-- Sharding increases throughput by distributing the workload among nodes.
-- Security remains a moving target, with risks evolving from basic consensus attacks to complex smart contract exploits.
-- ZKPs represent the frontier of both privacy and scaling technology.
+- Layer 1 scaling (sharding) splits the blockchain into parallel segments.
+- Layer 2 solutions move computation off-chain while inheriting L1 security.
+- Rollups (Optimistic and ZK) are the most promising L2 scaling technology.
+- Optimistic Rollups rely on fraud proofs with 7-day challenge periods.
+- ZK-Rollups use validity proofs for instant finality but require heavy computation.
+- zk-STARKs are quantum-resistant and need no trusted setup (unlike zk-SNARKs).
+- The data availability problem ensures L2 data is always accessible.
+- State channels (Lightning Network) enable instant Bitcoin micro-payments.
+- MEV extraction (sandwich attacks, front-running) is a systemic blockchain risk.
+- Quantum computing threatens ECDSA but post-quantum cryptography is being prepared.
+- Security remains a moving target, from consensus attacks to complex smart contract exploits.
+
+## Practical Takeaways
+
+1. For dApp deployment, prefer ZK-Rollups for instant finality; use Optimistic Rollups for full EVM compatibility.
+2. Always use slippage protection (minOut) and Flashbots for large trades to avoid MEV.
+3. Monitor data availability — verify that rollup sequencers are publishing data to L1 blobs.
+4. For Bitcoin micro-payments, the Lightning Network is the best option for instant settlement.
+5. Start preparing for quantum resistance — use wallets that support or plan to support post-quantum signatures.
+6. Sidechains have independent security — never assume a sidechain is as secure as its parent chain.
+7. Use MEV-Boost relays that enforce fair transaction ordering when running an Ethereum validator.
 
 ---
 
 ## Exercises
 
 ### Review Questions
+
 1. Define the "Blockchain Trilemma."
 2. What is the difference between an Optimistic Rollup and a ZK-Rollup?
 3. Explain the "Data Availability" problem.
 4. How does Sharding improve TPS?
+5. What is the difference between a SNARK and a STARK?
 
 ### Application Problems
+
 1. If a blockchain has 10 shards and each shard can process 15 TPS, what is the total theoretical TPS?
 2. Discuss the security trade-off of using a Sidechain versus a Rollup.
 3. Analyze how a "Front-running" attack works in a decentralized exchange.
+4. Calculate the gas savings of a ZK-Rollup processing 10,000 transfers versus L1 processing them individually, assuming each ZK proof costs 500,000 gas and each compressed transaction costs 100 bytes at 16 gas/byte.
 
 ### Challenge Problem
+
 1. Evaluate the threat of Shor's Algorithm (Quantum Computing) to ECDSA and research "Post-Quantum Cryptography" (PQC) candidates for blockchain.
+2. Design a scalability architecture for a hypothetical blockchain that processes 100,000 TPS while maintaining at least 1,000 validators. Justify your choice of L1/L2 split, consensus mechanism, and data availability solution.

@@ -1,217 +1,579 @@
-# Chapter 6: Cloud Networking and Delivery
+﻿# Chapter 6: Cloud Networking
 
-> **Previous:** [Chapter 5: Cloud Database Services](./05-cloud-database.md) | **Next:** [Chapter 7: Cloud Security and Identity](./07-cloud-security.md)
+> **Previous:** [Chapter 5: Cloud Database Services](./05-cloud-database.md) | **Next:** [Chapter 7: Cloud Security](./07-cloud-security.md)
 
 ## Learning Objectives
 
 After completing this chapter, students will be able to:
 
-1. Design isolated virtual networks using VPC (AWS/GCP) and VNet (Azure).
-2. Configure routing, subnets, and gateways for public and private traffic.
-3. Compare hybrid connectivity options including VPN and dedicated circuits (Direct Connect, ExpressRoute, Interconnect).
-4. Implement private service connectivity using endpoints and PrivateLink.
-5. Utilize global DNS services with advanced routing policies (latency, geolocation, failover).
-6. Design global content delivery strategies using CDN and Anycast IP.
-7. Apply multi-layered network security using firewalls, ACLs, and DDoS protection.
+1. Design Virtual Private Cloud (VPC) architectures with subnets, route tables, and gateways.
+2. Configure security groups and network ACLs for traffic filtering.
+3. Implement load balancers to distribute traffic across multiple targets.
+4. Establish private connectivity between on-premises and cloud networks.
+5. Design global network architectures using Direct Connect, VPN, and peering.
+6. Configure DNS resolution and routing policies with Route 53.
+7. Apply traffic shaping and bandwidth management strategies.
+8. Troubleshoot network connectivity using cloud-native diagnostic tools.
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| Virtual Networks | VPC/VNet provide isolated network environments | Each VPC is your own private data center in the cloud |
-| Subnets & Routing | Public (IGW) vs Private (NAT) subnets | Route tables control all traffic flow |
-| Hybrid Connectivity | VPN over internet vs Direct Connect private circuits | Dedicated circuits: consistent performance, higher cost |
-| DNS & Traffic Mgmt | Route 53, Cloud DNS — latency/geolocation routing | DNS-level routing enables global load balancing |
-| PrivateLink | Access services via private IP | Keeps traffic off the public internet |
-| Network Security | SG (stateful), NACL (stateless), WAF, DDoS | Defense in depth — apply all layers |
+| VPC Design | Virtual network in the cloud | Isolation through CIDR + subnets |
+| Security Groups | Stateful instance-level firewall | Allow rules only, evaluated as a whole |
+| Network ACLs | Stateless subnet-level firewall | Allow/deny rules, evaluated in order |
+| Load Balancers | ALB, NLB — distribute traffic across targets | Health checks + auto-scaling integration |
+| VPN | Encrypted tunnels via public internet | Simple site-to-site connectivity |
+| Direct Connect | Dedicated private bandwidth to cloud | Consistent latency, higher capacity |
+| DNS | Route 53 — global DNS resolution | Routing policies: latency, geo, weighted |
+| Peering | Connect VPCs across accounts/regions | Non-transitive, no overlapping CIDRs |
 
 ## Chapter Roadmap
 
-```mermaid
+\\\mermaid
 flowchart LR
-    A[Virtual Networks] --> B[Subnets & Routing]
-    B --> C[Hybrid Connectivity]
-    C --> D[DNS & Traffic Mgmt]
-    D --> E[Private Connectivity]
-    E --> F[Network Security]
-```
+    A[Cloud Networking] --> B[VPC and Subnets]
+    A --> C[Security: SGs + NACLs]
+    A --> D[Load Balancers]
+    A --> E[Hybrid Connectivity]
+    B --> F[Route Tables + IGW + NAT]
+    C --> G[Tiered Security Architecture]
+    D --> H[ALB / NLB / GLB]
+    E --> I[VPN / Direct Connect / Peering]
+\\\
 
 ## Theory
 
-### 6.1 Virtual Private Networks
+### 6.1 VPC Architecture
 
-Cloud providers allow users to create isolated virtual networks that function as their own private data centers in the cloud.
+A Virtual Private Cloud (VPC) is a logically isolated section of the cloud where you launch resources.
 
-- **AWS VPC:** Regional, spans multiple Availability Zones. Uses CIDR blocks for IP addressing.
-- **Azure VNet:** Regional, similar to AWS but uses "Address Spaces" and "Subnets".
-- **GCP VPC:** Global by default. Subnets are regional, allowing a single VPC to span the entire globe.
+**CIDR Notation:** Defines the IP address range for the VPC (e.g., 10.0.0.0/16 = 65,536 addresses). Choose CIDR blocks that don't overlap with on-premises networks.
 
-### 6.2 Subnets and Routing
+\\\mermaid
+graph TB
+    subgraph "VPC - 10.0.0.0/16"
+        subgraph "Public Subnet A - 10.0.1.0/24"
+            WEB1[Web Server 1]
+            WEB2[Web Server 2]
+            ALB[Application Load Balancer]
+        end
+        
+        subgraph "Private Subnet A - 10.0.2.0/24"
+            APP1[App Server 1]
+            APP2[App Server 2]
+        end
+        
+        subgraph "DB Subnet A - 10.0.3.0/24"
+            DB1[RDS Primary]
+            DB2[RDS Standby]
+        end
+        
+        IGW[Internet Gateway]
+        NAT[NAT Gateway]
+        
+        IGW --> ALB
+        APP1 --> NAT
+        APP2 --> NAT
+        NAT --> IGW
+    end
+    
+    INTERNET[Internet] --> IGW
+\\\
 
-Networks are subdivided into **Subnets** for organization and security.
-- **Public Subnets:** Have a direct route to an **Internet Gateway (IGW)**.
-- **Private Subnets:** No direct internet access. Outbound traffic is usually routed through a **NAT Gateway**.
-- **Route Tables:** Contain rules (routes) that determine where network traffic is directed.
+**Key VPC Components:**
 
-### 6.3 Connectivity Patterns
+| Component | Purpose | Direction |
+|-----------|---------|-----------|
+| Internet Gateway (IGW) | Allows inbound/outbound internet access | Bidirectional |
+| NAT Gateway | Allows private subnets to reach internet | Outbound only |
+| Route Table | Controls traffic between subnets and gateways | Per-subnet association |
+| VPC Peering | Connects VPCs privately | Direct, non-transitive |
+| Transit Gateway | Hub for connecting multiple VPCs/on-prem | Central routing |
 
-1. **Peering:** Directly connecting two virtual networks using the provider's private backbone. Traffic never touches the public internet.
-2. **Hub-and-Spoke:** A central network (hub) connected to multiple spoke networks. Often managed via a **Transit Gateway** (AWS) or **Virtual WAN** (Azure).
-3. **Hybrid Connectivity:**
-   - **Site-to-Site VPN:** Encrypted tunnel over the public internet (IPsec).
-   - **Dedicated Circuits:** Physical, private connection (AWS Direct Connect, Azure ExpressRoute, GCP Cloud Interconnect). Offers consistent performance and higher security.
+### 6.2 Security Groups vs Network ACLs
 
-![VPC Networking](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch06-vpc-networking.png)
+\\\mermaid
+graph TB
+    subgraph "Network Perimeter"
+        SUBNET[Subnet Boundary]
+        ACL[Network ACL - Stateless]
+        SG[Security Group - Stateful]
+        INSTANCE[EC2 Instance]
+        
+        TRAFFIC[Incoming Traffic] --> ACL
+        ACL -- "Allow/Deny rules<br/>Evaluated by number" --> SG
+        SG -- "Allow rules only<br/>Evaluated as a whole" --> INSTANCE
+    end
+\\\
 
-### 6.4 DNS and Traffic Management
+| Feature | Security Group | Network ACL |
+|---------|---------------|-------------|
+| Scope | Instance-level (ENI) | Subnet-level |
+| State | Stateful (return traffic auto-allowed) | Stateless (must allow both directions) |
+| Rules | Allow only | Allow and Deny |
+| Evaluation | All rules evaluated together | Rules evaluated in number order |
+| Default | Deny all inbound, allow all outbound | Allow all inbound and outbound |
+| Use Case | Instance-level micro-segmentation | Subnet-level guard rails |
 
-Cloud DNS services translate domain names and route traffic based on intelligent policies.
+\\\	ypescript
+interface SecurityGroupRule {
+  protocol: "tcp" | "udp" | "icmp";
+  fromPort: number;
+  toPort: number;
+  source: string;
+  description: string;
+}
 
-- **AWS Route 53:** Known for diverse routing policies (Simple, Weighted, Latency, Failover, Geolocation).
-- **Azure DNS / Google Cloud DNS:** Reliable, low-latency DNS hosting.
-- **Traffic Manager / Global Load Balancer:** Uses DNS or Anycast IP to route users to the nearest healthy application endpoint globally.
+interface SecurityGroup {
+  groupName: string;
+  description: string;
+  vpcId: string;
+  ingressRules: SecurityGroupRule[];
+  egressRules: SecurityGroupRule[];
+}
 
-### 6.5 Private Connectivity
+function createWebSecurityGroup(vpcId: string): SecurityGroup {
+  return {
+    groupName: "web-sg",
+    description: "Web tier security group",
+    vpcId: vpcId,
+    ingressRules: [
+      {
+        protocol: "tcp",
+        fromPort: 80,
+        toPort: 80,
+        source: "0.0.0.0/0",
+        description: "HTTP from anywhere",
+      },
+      {
+        protocol: "tcp",
+        fromPort: 443,
+        toPort: 443,
+        source: "0.0.0.0/0",
+        description: "HTTPS from anywhere",
+      },
+      {
+        protocol: "tcp",
+        fromPort: 22,
+        toPort: 22,
+        source: "10.0.0.0/8",
+        description: "SSH from internal network",
+      },
+    ],
+    egressRules: [
+      {
+        protocol: "tcp",
+        fromPort: 443,
+        toPort: 443,
+        source: "0.0.0.0/0",
+        description: "Allow outbound HTTPS",
+      },
+    ],
+  };
+}
 
-**PrivateLink (AWS/Azure)** and **Private Service Connect (GCP)** allow instances in a private network to access cloud services (like S3 or SQL) using private IP addresses. This enhances security by ensuring sensitive data never traverses the public internet.
+function createAppSecurityGroup(vpcId: string): SecurityGroup {
+  return {
+    groupName: "app-sg",
+    description: "Application tier — only accessible from web tier",
+    vpcId: vpcId,
+    ingressRules: [
+      {
+        protocol: "tcp",
+        fromPort: 3000,
+        toPort: 3000,
+        source: "sg-web-sg", // Reference to web SG
+        description: "App traffic from web tier only",
+      },
+    ],
+    egressRules: [],
+  };
+}
+\\\
 
-### 6.6 Content Delivery Networks (CDN)
+### 6.3 Load Balancers
 
-CDNs use a global network of "Edge Locations" to cache content closer to users.
-- **Anycast IP:** A networking technique where multiple servers share the same IP address. GCP uses this extensively to route traffic to the nearest Google edge location.
-- **Edge Functions:** Running code (Lambda@Edge, Cloudflare Workers) at the edge location to customize requests.
+Cloud load balancers distribute traffic across multiple targets (EC2 instances, Lambda, IP addresses).
 
-### 6.7 Network Security Layers
+**Types of Load Balancers (AWS):**
 
-1. **Security Groups (Stateful):** Act as firewalls for individual instances/VMs.
-2. **Network ACLs (Stateless):** Act as firewalls for entire subnets.
-3. **Web Application Firewall (WAF):** Protects against Layer 7 attacks (SQL Injection, XSS).
-4. **DDoS Protection:** Standard protection is usually free (AWS Shield Standard); advanced protection provides cost protection and dedicated support.
+| Type | Layer | Protocol | Best For |
+|------|-------|----------|----------|
+| ALB (Application) | L7 | HTTP, HTTPS, gRPC | Web apps, microservices |
+| NLB (Network) | L4 | TCP, UDP, TLS | High-throughput, static IP |
+| GLB (Gateway) | L3 | IP | Virtual appliances, firewall |
+
+**Load Balancing Algorithms:**
+
+- **Round Robin:** Default. Distributes evenly across targets.
+- **Least Outstanding Requests:** Sends to targets with fewest pending requests.
+- **Weighted:** Routes based on target weights (canary deployments).
+
+\\\mermaid
+sequenceDiagram
+    participant Client as Client
+    participant ALB as ALB
+    participant TG1 as Target Group 1 v1
+    participant TG2 as Target Group 2 v2 (Canary)
+
+    Client->>ALB: HTTP Request
+    ALB->>ALB: Evaluate listener rules
+    
+    alt 90% Traffic
+        ALB->>TG1: Forward to v1
+        TG1-->>ALB: Response
+    else 10% Traffic
+        ALB->>TG2: Forward to v2 (canary)
+        TG2-->>ALB: Response
+    end
+    
+    ALB-->>Client: HTTP Response
+\\\
+
+### 6.4 Hybrid Connectivity
+
+**VPN vs Direct Connect:**
+
+| Feature | Site-to-Site VPN | Direct Connect |
+|---------|-----------------|----------------|
+| Connectivity | Over public internet | Dedicated private line |
+| Bandwidth | Up to 1.25 Gbps per tunnel | 50 Mbps to 100 Gbps |
+| Latency | Variable (internet dependent) | Consistent, low |
+| Security | IPSec encryption | Private (can add encryption) |
+| Setup Time | Hours | Weeks to months |
+| Cost | Low (per hour + data out) | High (port hours + data out) |
+| SLA | No SLA on VPN | 99.99% availability |
+
+\\\mermaid
+graph TB
+    subgraph "On-Premises"
+        DC[Data Center]
+        CGW[Customer Gateway]
+        ROUTER[Router]
+    end
+    
+    subgraph "Cloud (AWS)"
+        VGW[Virtual Private Gateway]
+        VPC[VPC]
+    end
+    
+    subgraph "VPN Connection"
+        T1[Tunnel 1 - Primary]
+        T2[Tunnel 2 - Secondary]
+    end
+    
+    DC --> ROUTER
+    ROUTER --> CGW
+    CGW --> T1
+    CGW --> T2
+    T1 --> VGW
+    T2 --> VGW
+    VGW --> VPC
+\\\
+
+### 6.5 DNS and Route 53
+
+**Amazon Route 53** provides DNS resolution, domain registration, and health checking.
+
+**Routing Policies:**
+
+| Policy | Purpose | Example |
+|--------|---------|---------|
+| Simple | Route to a single resource | Basic A record |
+| Weighted | Route to multiple resources with weights | Canary deployments |
+| Latency | Route to lowest-latency region | Global applications |
+| Geolocation | Route based on user location | Content restrictions |
+| Failover | Route to primary, fail to secondary | Disaster recovery |
+| Multi-Value | Return multiple healthy records | Simple load balancing |
+
+**DNS Resolution Flow:**
+
+\\\mermaid
+sequenceDiagram
+    participant User as User Browser
+    participant Recursive as Recursive Resolver
+    participant Root as Root DNS
+    participant TLD as TLD (.com)
+    participant Route53 as Route 53 (example.com)
+    participant ALB as ALB IP
+
+    User->>Recursive: example.com?
+    Recursive->>Root: Where is .com?
+    Root-->>Recursive: Go to .com TLD servers
+    Recursive->>TLD: Where is example.com?
+    TLD-->>Recursive: Go to ns-xxx.awsdns-xx.com
+    Recursive->>Route53: example.com?
+    Route53-->>Recursive: ALB IP address (latency-based)
+    Recursive->>ALB: HTTP request
+    ALB-->>User: HTTP response
+\\\
+
+### 6.6 VPC Peering and Transit Gateway
+
+**VPC Peering:** Direct network connection between two VPCs. Non-transitive — if VPC A peers with B and B peers with C, A cannot reach C through B.
+
+**Transit Gateway:** A hub that connects multiple VPCs and on-premises networks through a central router.
+
+\\\mermaid
+graph TB
+    subgraph "Transit Gateway Hub"
+        TG[Transit Gateway]
+    end
+    
+    subgraph "VPC A - Production"
+        A1[App]
+    end
+    
+    subgraph "VPC B - Staging"
+        B1[App]
+    end
+    
+    subgraph "VPC C - Shared Services"
+        C1[Logging]
+        C2[Monitoring]
+        C3[AD]
+    end
+    
+    subgraph "On-Premises"
+        DC[Data Center]
+    end
+    
+    A1 --> TG
+    B1 --> TG
+    C1 --> TG
+    C2 --> TG
+    C3 --> TG
+    DC --> TG
+    
+    TG --> TG
+\\\
 
 ## Examples
 
-### Example 6.1: Designing a Multi-Tier VPC (AWS)
+### Example 6.1: VPC with Public and Private Subnets
 
-A common pattern for web applications:
-- **Public Subnet:** Contains Load Balancer and NAT Gateway.
-- **Private Subnet (App):** Contains Web Servers.
-- **Private Subnet (DB):** Contains Database (no internet access).
+\\\ash
+aws ec2 create-vpc --cidr-block 10.0.0.0/16
+aws ec2 create-subnet --vpc-id vpc-xxx --cidr-block 10.0.1.0/24
+aws ec2 create-internet-gateway
+aws ec2 attach-internet-gateway --vpc-id vpc-xxx --internet-gateway-id igw-xxx
+aws ec2 create-route-table --vpc-id vpc-xxx
+aws ec2 create-route --route-table-id rtb-xxx --destination-cidr-block 0.0.0.0/0 --gateway-id igw-xxx
+\\\
 
-### Example 6.2: Route 53 Failover Policy (CLI)
+### Example 6.2: TypeScript Network Architecture Validator
 
-Configuring a DNS failover from a primary to a secondary site:
-```bash
-aws route53 change-resource-record-sets --hosted-zone-id Z123 --change-batch '{
-  "Changes": [{
-    "Action": "CREATE",
-    "ResourceRecordSet": {
-      "Name": "app.example.com",
-      "Type": "A",
-      "SetIdentifier": "Primary",
-      "Failover": "PRIMARY",
-      "AliasTarget": { "HostedZoneId": "Z...","DNSName": "primary.alb.com", "EvaluateTargetHealth": true }
+\\\	ypescript
+interface SubnetConfig {
+  name: string;
+  cidr: string;
+  availabilityZone: string;
+  isPublic: boolean;
+}
+
+interface VPCPeerConfig {
+  sourceVpc: string;
+  destinationVpc: string;
+  sourceCidr: string;
+  destCidr: string;
+}
+
+class NetworkArchitect {
+  private subnets: SubnetConfig[] = [];
+
+  addSubnet(config: SubnetConfig): void {
+    if (this.cidrOverlaps(config.cidr)) {
+      throw new Error("CIDR overlaps with existing subnet: " + config.cidr);
     }
-  }]
-}'
-```
+    this.subnets.push(config);
+  }
 
-> **One-Sentence Takeaway:** Cloud networking gives you software-defined control over an entire global infrastructure — virtual networks, routing, firewalls, and connectivity — all managed through APIs instead of physical cables.
+  private cidrOverlaps(cidr: string): boolean {
+    return this.subnets.some((s) => s.cidr === cidr);
+  }
 
-> **Pro Tip:** Use AWS Transit Gateway or Azure Virtual WAN for hub-and-spoke architectures with more than 10 VPCs. Direct VPC peering doesn't scale — Transit Gateway handles transitive routing and centralizes inspection.
+  validatePeering(config: VPCPeerConfig): string[] {
+    const issues: string[] = [];
 
-> **Warning:** Security Groups are stateful (return traffic automatically allowed), but Network ACLs are stateless (you must explicitly allow return traffic). Mixing them up is a common source of "mysterious" connectivity failures.
+    if (config.sourceCidr === config.destCidr) {
+      issues.push("VPCs cannot peer with overlapping CIDR blocks");
+    }
+
+    return issues;
+  }
+
+  generateRouteTable(): Record<string, string> {
+    const routes: Record<string, string> = {};
+    for (const subnet of this.subnets) {
+      routes[subnet.name] = subnet.isPublic ? "igw-xxx" : "nat-xxx";
+    }
+    return routes;
+  }
+
+  generateNatGateway(count: number): string[] {
+    const azs = [...new Set(this.subnets.map((s) => s.availabilityZone))];
+    return Array.from({ length: Math.min(count, azs.length) }, (_, i) =>
+      "nat-" + azs[i]
+    );
+  }
+}
+
+const architect = new NetworkArchitect();
+architect.addSubnet({
+  name: "web",
+  cidr: "10.0.1.0/24",
+  availabilityZone: "us-east-1a",
+  isPublic: true,
+});
+architect.addSubnet({
+  name: "app",
+  cidr: "10.0.2.0/24",
+  availabilityZone: "us-east-1a",
+  isPublic: false,
+});
+architect.addSubnet({
+  name: "db",
+  cidr: "10.0.3.0/24",
+  availabilityZone: "us-east-1b",
+  isPublic: false,
+});
+
+console.log("Route table:", architect.generateRouteTable());
+console.log("NAT Gateways:", architect.generateNatGateway(2));
+\\\
+
+> **One-Sentence Takeaway:** A well-designed VPC with tiered subnets, stateful security groups, and stateless NACLs provides defense-in-depth for cloud workloads.
+
+> **Pro Tip:** Use VPC endpoints (Gateway and Interface) to privately access AWS services like S3 and DynamoDB without traversing the public internet — eliminates the need for NAT gateways for service access.
+
+> **Warning:** VPC Peering is non-transitive. If you need hub-and-spoke routing between multiple VPCs and on-premises, use Transit Gateway. Peering alone cannot route through intermediate VPCs.
 
 ## Concept Comparison Table
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| VPC / VNet | Isolated virtual network | Every resource lives in a VPC | Default for all cloud resources |
-| Security Group | Instance-level stateful firewall | Allows by default, deny by rule | Per-instance access control |
-| Network ACL | Subnet-level stateless firewall | Deny by default, allow by rule | Subnet-level guard rails |
-| IGW | Internet gateway for public subnets | Enables public internet access | Web servers, load balancers |
-| NAT Gateway | Outbound-only internet for private subnets | Private instances can update, not receive | Database patching |
-| Direct Connect | Dedicated physical circuit to cloud | Consistent latency, higher bandwidth | Hybrid cloud, large data transfer |
+| VPC | Virtual private cloud network | CIDR-isolated segment | All cloud resources |
+| Security Group | Instance-level stateful firewall | Allow rules, auto-return traffic | Instance micro-segmentation |
+| NACL | Subnet-level stateless firewall | Numbered allow/deny rules | Subnet guard rails |
+| ALB | L7 application load balancer | HTTP/HTTPS aware | Web traffic distribution |
+| NLB | L4 network load balancer | TCP/UDP, static IP | High-throughput scenarios |
+| VPN | Encrypted tunnel over internet | Quick setup, variable latency | Branch office connectivity |
+| Direct Connect | Dedicated private line | Consistent performance | Data center integration |
+| Route 53 | Cloud DNS service | Global routing policies | Traffic management |
 
 ## Quick Reference
 
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
-| **VPC Features** | Subnets, Route Tables, IGW, NAT, Peering | Region-scoped (AWS/Azure), global (GCP) |
-| **Security Layers** | SG (instance), NACL (subnet), WAF (app), DDoS | Defense in depth: use all four |
-| **Hybrid Connectivity** | Site-to-Site VPN, Direct Connect/ExpressRoute | VPN = internet, DC = private circuit |
-| **DNS Policies** | Simple, Weighted, Latency, Geolocation, Failover | Failover routing enables active-passive DR |
-| **Private Access** | VPC Endpoints, PrivateLink, Private Service Connect | Keeps traffic on provider backbone |
+| **VPC Design** | CIDR, subnets, route tables, IGW, NAT | Plan CIDR to avoid overlaps |
+| **Security** | Security Groups (stateful), NACLs (stateless) | SG allow only, NACL allow+deny |
+| **Load Balancing** | ALB (L7), NLB (L4), GLB (L3) | Health checks are mandatory |
+| **Hybrid** | VPN, Direct Connect, Transit Gateway | DX for prod, VPN for backup |
+| **DNS** | Route 53 routing policies | Latency-based for global apps |
+| **Peering** | VPC Peering, Transit Gateway | TG for hub-and-spoke |
 
 ## Cross-Application Matrix
 
 | Technique | Cloud Architecture | DevOps | Security | Enterprise |
 |-----------|-------------------|--------|----------|------------|
-| VPC Design | Network topology | Environment isolation | Network segmentation | Compliance zones |
-| Transit Gateway | Hub-and-spoke architecture | Centralized inspection | East-west traffic filter | Multi-account connectivity |
-| Direct Connect | Hybrid cloud | Consistent CI/CD performance | Encrypted private circuit | Regulatory compliance |
-| Route 53 | Global traffic management | Blue-green DNS switch | DNS-based DDoS mitig. | Multi-region HA |
-| WAF | App-layer protection | Bot detection | OWASP protection | PCI compliance |
+| VPC Isolation | Multi-account strategy | Environment separation | Network segmentation | Compliance boundaries |
+| Security Groups | Tiered architecture | CI/CD security scanning | Micro-segmentation | Zero trust networking |
+| Load Balancers | Auto-scaling integration | Blue/green deployments | TLS termination | High availability |
+| VPN/DX | Hybrid cloud | Build pipeline connectivity | Encrypted data in transit | Data center integration |
+| Transit Gateway | Hub-and-spoke | Shared services access | Centralized inspection | Multi-account networking |
 
 ## Chapter Quiz
 
 1. What is the key difference between a Security Group and a Network ACL?
-   - A) Security Groups are stateless; NACLs are stateful
-   - B) Security Groups are stateful (return traffic auto-allowed); NACLs are stateless
-   - C) There is no difference
-   - D) NACLs work at the instance level
+   - A) SGs are cheaper than NACLs
+   - B) SGs are stateful and allow-only; NACLs are stateless with allow/deny
+   - C) SGs apply to subnets; NACLs apply to instances
+   - D) There is no difference
 
 <details>
 <summary>Answer</summary>
-**B) Security Groups are stateful (return traffic auto-allowed); NACLs are stateless.** If you allow inbound HTTPS in a Security Group, the response is automatically allowed. With NACLs, you must explicitly allow both inbound and outbound traffic separately.
+**B) SGs are stateful and allow-only; NACLs are stateless with allow/deny.** Security Groups automatically allow return traffic; NACLs require explicit rules for both directions. SGs support only allow rules; NACLs support both allow and deny with numbered evaluation.
 </details>
 
-2. When should an organization choose Direct Connect/ExpressRoute over a Site-to-Site VPN?
-   - A) For lower cost
-   - B) For consistent latency, higher bandwidth, and private connection that doesn't traverse the internet
-   - C) When they want encryption
-   - D) VPN and Direct Connect are identical
+2. Which AWS load balancer type operates at Layer 4 (TCP/UDP)?
+   - A) Application Load Balancer
+   - B) Network Load Balancer
+   - C) Gateway Load Balancer
+   - D) Classic Load Balancer
 
 <details>
 <summary>Answer</summary>
-**B) For consistent latency, higher bandwidth, and private connection that doesn't traverse the internet.** Direct Connect provides a dedicated physical circuit from on-premises to the cloud provider, offering predictable performance and bypassing the public internet entirely.
+**B) Network Load Balancer.** NLB operates at the transport layer (L4) and is designed for high-throughput TCP/UDP traffic requiring static IP addresses.
 </details>
 
-3. How does VPC Peering differ from Transit Gateway for connecting multiple VPCs?
-   - A) Peering supports transitive routing; Transit Gateway does not
-   - B) Peering is point-to-point (no transitive routing); Transit Gateway enables hub-and-spoke with transitive routing
-   - C) They are identical
-   - D) Transit Gateway is cheaper than peering
+3. Why might you choose Direct Connect over Site-to-Site VPN?
+   - A) Direct Connect is cheaper
+   - B) Direct Connect provides consistent low latency and higher bandwidth
+   - C) Direct Connect is easier to set up
+   - D) VPN does not encrypt traffic
 
 <details>
 <summary>Answer</summary>
-**B) Peering is point-to-point (no transitive routing); Transit Gateway enables hub-and-spoke with transitive routing.** With VPC Peering, you need to create N-1 peering connections. Transit Gateway acts as a central hub, allowing any connected VPC to route to any other.
+**B) Direct Connect provides consistent low latency and higher bandwidth.** Direct Connect uses a dedicated private line, offering consistent performance from 50 Mbps to 100 Gbps. VPN uses the public internet with variable performance and lower bandwidth limits.
+</details>
+
+4. What is the limitation of VPC Peering?
+   - A) It requires a VPN connection
+   - B) It is non-transitive — traffic cannot route through an intermediate VPC
+   - C) It only works within the same region
+   - D) It only works between accounts in the same organization
+
+<details>
+<summary>Answer</summary>
+**B) It is non-transitive — traffic cannot route through an intermediate VPC.** If VPC A is peered with B and B with C, A cannot reach C through B. For hub-and-spoke routing, use Transit Gateway.
+</details>
+
+5. Which Route 53 routing policy is best for distributing traffic globally to the lowest-latency region?
+   - A) Simple routing
+   - B) Weighted routing
+   - C) Latency-based routing
+   - D) Geolocation routing
+
+<details>
+<summary>Answer</summary>
+**C) Latency-based routing.** Latency-based routing directs traffic to the region that provides the lowest latency for the user. Geolocation routing routes based on the user's physical location, which is not the same as latency.
 </details>
 
 ## Summary
 
-- Virtual networks (VPC/VNet) provide isolation in the cloud.
-- Routing is managed via Route Tables and Gateways (IGW/NAT).
-- Hybrid clouds use VPN or dedicated lines (Direct Connect/ExpressRoute) for connectivity.
-- PrivateLink ensures services are accessed securely via private IPs.
-- CDNs and Anycast networking reduce latency for global users.
-- Security is multi-layered, combining instance-level (SG) and subnet-level (NACL) firewalls.
+- A VPC provides network isolation with CIDR-defined IP ranges and subnet segmentation.
+- Security Groups are stateful instance-level firewalls; NACLs are stateless subnet-level firewalls.
+- ALB (L7) and NLB (L4) distribute traffic across targets with health check integration.
+- VPN provides quick encrypted connectivity; Direct Connect offers dedicated high-bandwidth links.
+- Transit Gateway enables hub-and-spoke routing across multiple VPCs and on-premises.
+- Route 53 routing policies (latency, weighted, geo, failover) enable global traffic management.
+- VPC Peering is non-transitive; use Transit Gateway for complex multi-VPC connectivity.
 
 ## Exercises
 
 ### Review Questions
 
-1. Why are subnets in GCP considered "Regional" while AWS subnets are "Zonal"?
-2. Explain the difference between a stateful and a stateless firewall.
-3. What is the "Longest Prefix Match" in routing?
-4. When should an organization choose ExpressRoute/Direct Connect over a standard VPN?
-5. How does a Global Load Balancer differ from a Regional Load Balancer?
+1. Explain the difference between Security Groups and Network ACLs in terms of state and rule evaluation.
+2. When would you use an NLB instead of an ALB?
+3. Describe the architecture of a three-tier VPC with public, private, and database subnets.
+4. Compare Site-to-Site VPN vs Direct Connect in terms of latency, bandwidth, and setup time.
+5. What is the purpose of a NAT Gateway in a VPC?
+6. Explain the different Route 53 routing policies and when to use each.
+7. What is Transit Gateway and when would you use it instead of VPC Peering?
 
 ### Application Problems
 
-1. A company has two VPCs in the same region. They want them to communicate but only for one specific database port. Propose a solution using Peering and Security Groups.
-2. A video streaming startup has customers in Europe and South America. Their origin server is in the US. Design a delivery strategy to minimize buffering for international users.
-3. An insurance company requires that all traffic to their S3 buckets stays off the public internet for compliance. Configure the necessary VPC components.
+1. Design a VPC architecture for a global e-commerce application with web, app, and database tiers across two Availability Zones.
+
+2. A company has 20 VPCs across 4 AWS accounts. Propose a networking strategy that allows all VPCs to communicate and share services like Active Directory and logging.
+
+3. Write a TypeScript function that calculates monthly networking cost given NAT Gateway hours, data transfer volume, and Direct Connect port hours.
+
+4. Design a hybrid network architecture for connecting a corporate data center to AWS with both primary (high-bandwidth) and backup (low-cost) connectivity options.
+
+5. Configure a load balancing strategy for a global web application that requires canary deployments, health-based routing, and geographic traffic distribution.
 
 ### Challenge Problem
 
-You are the network architect for a global bank. You must connect 500 branch offices (VPN), 3 major data centers (Dedicated Circuits), and 50 Cloud VPCs across 3 providers. Design a **Global Transit Network** that handles: 1) Encryption for all traffic, 2) Centralized firewall inspection for all internet-bound traffic, 3) Automated failover between dedicated lines and VPNs, and 4) Private access to cloud-native services.
+Design a multi-region network architecture for a global SaaS platform with the following requirements: 1) Primary region us-east-1, DR region eu-west-2, 2) Active-active web tier across both regions, 3) Database writes only in primary with cross-region replication, 4) Private connectivity between on-premises data center and both cloud regions, 5) Latency-based global traffic distribution, 6) Centralized inspection and logging across all VPCs, 7) No overlapping CIDR blocks. Propose specific services, configurations, and a traffic flow diagram.

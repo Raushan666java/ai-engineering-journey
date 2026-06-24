@@ -12,8 +12,10 @@ After completing this chapter, you will be able to:
 - Use universal ($\forall$) and existential ($\exists$) quantifiers
 - Translate between English statements and quantified logical expressions
 - Negate quantified statements correctly
-- Handle nested quantifiers
+- Handle nested quantifiers of arbitrary depth
 - Determine the truth value of quantified statements over different domains
+- Apply inference rules for quantified statements
+- Understand the limitations and power of first-order logic
 
 ## Chapter at a Glance
 
@@ -25,18 +27,22 @@ After completing this chapter, you will be able to:
 | Translation Patterns | "All A are B" uses $\rightarrow$; "Some A are B" uses $\land$ | The choice of connective is critical for correct translation |
 | Quantifier Negation | $\neg \forall \equiv \exists \neg$ and $\neg \exists \equiv \forall \neg$ | Negating a quantifier flips it and pushes negation inward |
 | Nested Quantifiers | $\forall x\; \exists y$ is NOT the same as $\exists y\; \forall x$ | Order matters — reversing quantifiers changes meaning completely |
+| Uniqueness Quantifier | $\exists!x\; P(x)$ means exactly one $x$ satisfies $P(x)$ | Useful for expressing "exactly one" in specifications |
+| Inference Rules | Universal instantiation, existential generalization | Formal reasoning with quantified statements |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Predicates & Truth Sets] --> B[Universal Quantifier]
+    A[Predicates and Truth Sets] --> B[Universal Quantifier]
     A --> C[Existential Quantifier]
     B --> D[English-Logic Translation]
     C --> D
     D --> E[Negating Quantified Statements]
     E --> F[Nested Quantifiers]
-    F --> G[Validity & Inference Rules]
+    F --> G[Uniqueness Quantifier]
+    G --> H[Validity and Inference Rules]
+    H --> I[First-Order Logic Applications]
 ```
 
 ## Theory
@@ -49,6 +55,8 @@ Example: $P(x)$ = "$x$ is prime". When $x = 2$, $P(2)$ is true; when $x = 4$, $P
 
 The **truth set** of a predicate $P(x)$ over domain $D$ is:
 $$\{x \in D \mid P(x)\}$$
+
+A predicate can have multiple variables: $Q(x, y)$ = "$x$ loves $y$". The truth set becomes a subset of $D_1 \times D_2$.
 
 > **One-Sentence Takeaway:** A predicate is like a function that returns a truth value — it only becomes a proposition when its variable is bound to a specific value.
 
@@ -63,6 +71,20 @@ $$\{x \in D \mid P(x)\}$$
 | $\forall x\; P(x)$ | $P(x)$ true for every element | at least one counterexample |
 | $\exists x\; P(x)$ | at least one element makes $P(x)$ true | $P(x)$ false for all elements |
 
+```mermaid
+flowchart LR
+    subgraph Universal
+        direction TB
+        A1[∀x Px]
+        A2[All elements satisfy P]
+    end
+    subgraph Existential
+        direction TB
+        B1[∃x Px]
+        B2[At least one element satisfies P]
+    end
+```
+
 > **One-Sentence Takeaway:** $\forall$ requires all elements to satisfy the condition; $\exists$ requires at least one — they are duals via negation.
 
 ### 3.3 Translation between English and Logic
@@ -72,8 +94,14 @@ English often uses implicit quantifiers. Careful translation requires identifyin
 - "All cats are mammals": $\forall x\;(\text{Cat}(x) \rightarrow \text{Mammal}(x))$
 - "Some cats are black": $\exists x\;(\text{Cat}(x) \land \text{Black}(x))$
 - "No cats are fish": $\forall x\;(\text{Cat}(x) \rightarrow \neg\text{Fish}(x))$ or $\neg\exists x\;(\text{Cat}(x) \land \text{Fish}(x))$
+- "Not all cats are black": $\neg\forall x\;(\text{Cat}(x) \rightarrow \text{Black}(x))$ or $\exists x\;(\text{Cat}(x) \land \neg\text{Black}(x))$
+- "Every student has a computer": $\forall x\;(\text{Student}(x) \rightarrow \exists y\;(\text{Computer}(y) \land \text{Owns}(x, y)))$
 
 Note the pattern: "all" uses $\rightarrow$; "some" uses $\land$.
+
+**Common translation errors:**
+- $\forall x\;(\text{Cat}(x) \land \text{Black}(x))$ means "everything is a black cat" — wrong!
+- $\exists x\;(\text{Cat}(x) \rightarrow \text{Black}(x))$ is trivially true if any non-cat exists — wrong!
 
 > **One-Sentence Takeaway:** Translate "all A are B" as $\forall x (A(x) \rightarrow B(x))$ and "some A are B" as $\exists x (A(x) \land B(x))$ — mixing these up is the most common quantifier mistake.
 
@@ -84,6 +112,22 @@ $$\neg \forall x\; P(x) \equiv \exists x\; \neg P(x)$$
 $$\neg \exists x\; P(x) \equiv \forall x\; \neg P(x)$$
 
 In words: the negation of "all are true" is "at least one is false". The negation of "some are true" is "none are true".
+
+```typescript
+function negateUniversal<T>(domain: T[], predicate: (x: T) => boolean): boolean {
+  // ¬∀x P(x) ≡ ∃x ¬P(x)
+  return domain.some(x => !predicate(x));
+}
+
+function negateExistential<T>(domain: T[], predicate: (x: T) => boolean): boolean {
+  // ¬∃x P(x) ≡ ∀x ¬P(x)
+  return domain.every(x => !predicate(x));
+}
+
+const nums = [1, 2, 3, 4, 5];
+console.log(negateUniversal(nums, x => x > 0)); // false (∀x x>0 is true, so negation is false)
+console.log(negateExistential(nums, x => x > 10)); // true (no element > 10)
+```
 
 > **One-Sentence Takeaway:** Negating a quantified statement flips every $\forall$ to $\exists$ and vice versa, then pushes the negation past all quantifiers.
 
@@ -100,6 +144,26 @@ When quantifiers appear within each other, order matters.
 
 **Important:** $\forall x\; \exists y\; P(x,y)$ and $\exists y\; \forall x\; P(x,y)$ are **not** equivalent.
 
+**Example over integers:**
+- $\forall x\; \exists y\; (y = x + 1)$: TRUE — for each $x$, choose $y = x + 1$.
+- $\exists y\; \forall x\; (y = x + 1)$: FALSE — no single $y$ equals $x + 1$ for all $x$.
+
+```typescript
+function checkForallExists(domain: number[]): boolean {
+  // ∀x ∃y (y > x)
+  return domain.every(x => domain.some(y => y > x));
+}
+
+function checkExistsForall(domain: number[]): boolean {
+  // ∃y ∀x (y > x)
+  return domain.some(y => domain.every(x => y > x));
+}
+
+const nums = [1, 2, 3];
+console.log(checkForallExists(nums)); // false (3 is not less than any element)
+console.log(checkExistsForall(nums)); // false (no single element > all others in [1,2,3])
+```
+
 > **One-Sentence Takeaway:** With nested quantifiers, order determines meaning — $\forall x\; \exists y$ allows $y$ to depend on $x$, while $\exists y\; \forall x$ requires a single $y$ that works for all $x$.
 
 ### 3.6 Negating Nested Quantifiers
@@ -108,9 +172,37 @@ Apply quantifier negation rules sequentially, from left to right:
 
 $$\neg \forall x\; \exists y\; P(x,y) \equiv \exists x\; \neg \exists y\; P(x,y) \equiv \exists x\; \forall y\; \neg P(x,y)$$
 
+For three quantifiers:
+$$\neg \forall x\; \exists y\; \forall z\; P(x,y,z) \equiv \exists x\; \forall y\; \exists z\; \neg P(x,y,z)$$
+
+**Procedure:**
+1. Flip $\forall \leftrightarrow \exists$.
+2. Push negation past each quantifier.
+3. Negate the innermost predicate.
+
 > **One-Sentence Takeaway:** Negating nested quantifiers is mechanical — flip each quantifier and push the negation through, working left to right.
 
-### 3.7 Validity of Arguments with Quantifiers
+### 3.7 Uniqueness Quantifier
+
+The **uniqueness quantifier** $\exists!x\; P(x)$ means "there exists exactly one $x$ such that $P(x)$." It can be expressed using $\forall$ and $\exists$:
+
+$$\exists!x\; P(x) \equiv \exists x\; (P(x) \land \forall y\; (P(y) \rightarrow y = x))$$
+
+This says: there is some $x$ satisfying $P$, and any $y$ satisfying $P$ must equal $x$.
+
+```typescript
+function existsUnique<T>(domain: T[], predicate: (x: T) => boolean): boolean {
+  const satisfying = domain.filter(predicate);
+  return satisfying.length === 1;
+}
+
+console.log(existsUnique([1, 2, 3, 4, 5], x => x % 2 === 0)); // false (2 and 4)
+console.log(existsUnique([1, 2, 3, 4, 5], x => x === 3));      // true
+```
+
+> **One-Sentence Takeaway:** $\exists!x\; P(x)$ — "there exists exactly one" — is shorthand for existence plus uniqueness.
+
+### 3.8 Validity of Arguments with Quantifiers
 
 An argument form with quantifiers is **valid** iff whenever all premises are true, the conclusion is also true. Inference rules for quantifiers include:
 
@@ -119,13 +211,39 @@ An argument form with quantifiers is **valid** iff whenever all premises are tru
 - **Existential instantiation:** $\exists x\; P(x) \implies P(c)$ for some new $c$
 - **Existential generalization:** $P(c) \implies \exists x\; P(x)$
 
+**Example (syllogism):**
+1. All humans are mortal. $\forall x\; (H(x) \rightarrow M(x))$
+2. Socrates is a human. $H(s)$
+Therefore: Socrates is mortal. $M(s)$
+
+*Proof.* From (1) by universal instantiation: $H(s) \rightarrow M(s)$. From (2): $H(s)$. By modus ponens: $M(s)$.
+
 > **One-Sentence Takeaway:** Universal instantiation (from "all" to "any particular") and existential generalization (from "a specific example" to "some") are the workhorse inference rules for quantified arguments.
+
+### 3.9 Prenex Normal Form
+
+A formula is in **prenex normal form** if all quantifiers appear at the front (prefix) followed by a quantifier-free matrix (body).
+
+**Conversion to prenex normal form:**
+1. Eliminate $\rightarrow$ and $\leftrightarrow$.
+2. Push negations inward (using quantifier negation).
+3. Rename bound variables to avoid conflicts.
+4. Move all quantifiers to the front.
+
+**Example:** Convert $\neg\forall x\; (P(x) \rightarrow \exists y\; Q(x,y))$ to prenex form.
+
+Step 1: $\neg\forall x\; (\neg P(x) \lor \exists y\; Q(x,y))$
+Step 2: $\exists x\; \neg(\neg P(x) \lor \exists y\; Q(x,y)) \equiv \exists x\; (P(x) \land \neg\exists y\; Q(x,y))$
+Step 3: $\exists x\; (P(x) \land \forall y\; \neg Q(x,y))$
+Step 4: $\exists x\; \forall y\; (P(x) \land \neg Q(x,y))$
 
 > **Pro Tip:** When translating "every student has a computer," use $\forall x (S(x) \rightarrow C(x))$ — NOT $\forall x (S(x) \land C(x))$, which incorrectly claims everyone is a student with a computer.
 >
 > **Pro Tip:** To disprove a universal statement $\forall x\; P(x)$, find exactly one counterexample — that's sufficient and often easier than attempting a proof.
 >
 > **Warning:** The statement "some A are B" translates to $\exists x (A(x) \land B(x))$, NOT $\exists x (A(x) \rightarrow B(x))$ — the latter would be trivially true if there is any element that is not A.
+>
+> **Warning:** Existential instantiation introduces a NEW constant symbol, not one already in use. This prevents incorrect deductions.
 
 ## Concept Comparison Table
 
@@ -134,9 +252,11 @@ An argument form with quantifiers is **valid** iff whenever all premises are tru
 | Predicate $P(x)$ | Statement whose truth depends on $x$ | Not a proposition until $x$ is bound | Expressing properties of elements |
 | $\forall x\; P(x)$ | $P(x)$ holds for all $x$ | Universal quantifier | "All," "every," "each" statements |
 | $\exists x\; P(x)$ | $P(x)$ holds for some $x$ | Existential quantifier | "Some," "there exists," "at least one" |
-| $\forall x\; \exists y\; P(x,y)$ | For each $x$, some $y$ works | $y$ can depend on $x$ | "Every student has a advisor" |
+| $\forall x\; \exists y\; P(x,y)$ | For each $x$, some $y$ works | $y$ can depend on $x$ | "Every student has an advisor" |
 | $\exists y\; \forall x\; P(x,y)$ | One $y$ works for all $x$ | $y$ is independent of $x$ | "There is a universal advisor" |
+| $\exists!x\; P(x)$ | Exactly one $x$ satisfies $P$ | Existence + uniqueness | "There is exactly one solution" |
 | $\neg \forall x\; P(x)$ | Equivalent to $\exists x\; \neg P(x)$ | Flips quantifier, negates predicate | Disproving universal claims |
+| Prenex Normal Form | All quantifiers at front | Standard form for first-order logic | Automated theorem proving |
 
 ## Quick Reference
 
@@ -150,17 +270,20 @@ An argument form with quantifiers is **valid** iff whenever all premises are tru
 | Existential Generalization | $P(c) \implies \exists x\; P(x)$ |
 | "All A are B" | $\forall x (A(x) \rightarrow B(x))$ |
 | "Some A are B" | $\exists x (A(x) \land B(x))$ |
+| "No A are B" | $\forall x (A(x) \rightarrow \neg B(x))$ |
+| Uniqueness | $\exists!x\; P(x) \equiv \exists x (P(x) \land \forall y (P(y) \rightarrow y = x))$ |
 
 ## Cross-Application Matrix
 
-| Area | How Predicates & Quantifiers Apply |
+| Area | How Predicates and Quantifiers Apply |
 |------|-----------------------------------|
 | Databases | SQL queries: WHERE = predicate, EXISTS = $\exists$, ALL = $\forall$ |
 | Programming Languages | Type systems use $\forall$ for polymorphic types |
 | Software Verification | Formal specifications use quantified logic to assert invariants |
 | Mathematics | Definitions of limits, continuity, and convergence use nested quantifiers |
-| AI & Knowledge Representation | First-order logic is the foundation of many knowledge bases |
+| AI and Knowledge Representation | First-order logic is the foundation of many knowledge bases |
 | Networking | Packet filtering rules use quantified conditions on packet properties |
+| Formal Methods | Model checkers and theorem provers use quantified logic |
 
 ## Chapter Quiz
 
@@ -188,14 +311,30 @@ An argument form with quantifiers is **valid** iff whenever all premises are tru
 
    <details><summary>Answer</summary>**C)** "All A are B" = $\forall x (A(x) \rightarrow B(x))$.</details>
 
+4. The prenex normal form of $\neg \exists x\; \forall y\; P(x,y)$ is:
+   - A) $\forall x\; \exists y\; \neg P(x,y)$
+   - B) $\exists x\; \forall y\; \neg P(x,y)$
+   - C) $\forall x\; \forall y\; \neg P(x,y)$
+   - D) $\exists x\; \exists y\; \neg P(x,y)$
+
+   <details><summary>Answer</summary>**A)** $\neg \exists x\; \forall y\; P(x,y) \equiv \forall x\; \neg \forall y\; P(x,y) \equiv \forall x\; \exists y\; \neg P(x,y)$.</details>
+
+5. Which inference rule allows concluding $P(c)$ from $\forall x\; P(x)$?
+   - A) Universal generalization
+   - B) Universal instantiation
+   - C) Existential generalization
+   - D) Existential instantiation
+
+   <details><summary>Answer</summary>**B)** Universal instantiation: from "all" we can deduce "any particular one."</details>
+
 ## Examples
 
 **Example 3.1** (Truth value). Let domain be $\mathbb{Z}$. Determine truth:
 
-- $\forall x\; (x^2 \geq 0)$: True â€” squares of integers are nonnegative.
-- $\exists x\; (x^2 = 2)$: False â€” no integer squares to 2.
-- $\forall x\; \exists y\; (y = x^2)$: True â€” for each $x$, we can choose $y = x^2$.
-- $\exists y\; \forall x\; (y = x^2)$: False â€” no single integer equals all squares.
+- $\forall x\; (x^2 \geq 0)$: True — squares of integers are nonnegative.
+- $\exists x\; (x^2 = 2)$: False — no integer squares to 2.
+- $\forall x\; \exists y\; (y = x^2)$: True — for each $x$, we can choose $y = x^2$.
+- $\exists y\; \forall x\; (y = x^2)$: False — no single integer equals all squares.
 
 **Example 3.2** (Translation). Translate "Every student in this class has taken exactly one math course."
 
@@ -226,12 +365,45 @@ Conclusion: $\forall x\; (P(x) \rightarrow R(x))$
 
 *Solution.* Pick an arbitrary element $c$. From (1), $P(c) \rightarrow Q(c)$. From (2), $Q(c) \rightarrow R(c)$. By hypothetical syllogism (transitivity of implication), $P(c) \rightarrow R(c)$. Since $c$ was arbitrary, $\forall x\; (P(x) \rightarrow R(x))$ holds. Valid.
 
+**Example 3.6** (TypeScript quantifier simulation).
+
+```typescript
+type Predicate<T> = (x: T) => boolean;
+
+function forAll<T>(domain: T[], pred: Predicate<T>): boolean {
+  return domain.every(pred);
+}
+
+function exists<T>(domain: T[], pred: Predicate<T>): boolean {
+  return domain.some(pred);
+}
+
+const people = [
+  { name: "Alice", age: 25 },
+  { name: "Bob", age: 17 },
+  { name: "Charlie", age: 30 },
+];
+
+// ∀x (Person(x) → Age(x) ≥ 18)
+console.log(forAll(people, p => p.age >= 18)); // false (Bob is 17)
+
+// ∃x (Person(x) ∧ Name(x) = "Alice")
+console.log(exists(people, p => p.name === "Alice")); // true
+```
+
+**Example 3.7** (Prenex normal form conversion). Convert $\forall x\; P(x) \rightarrow \exists y\; Q(y)$ to prenex normal form.
+
+*Solution.* $\neg\forall x\; P(x) \lor \exists y\; Q(y) \equiv \exists x\; \neg P(x) \lor \exists y\; Q(y) \equiv \exists x\; \exists y\; (\neg P(x) \lor Q(y))$.
+
 ## Summary
 
 - Predicates are statements that depend on variables. Quantifiers $\forall$ and $\exists$ bind variables.
 - $\neg \forall x\; P(x) \equiv \exists x\; \neg P(x)$ and $\neg \exists x\; P(x) \equiv \forall x\; \neg P(x)$.
 - Nested quantifier order matters; negate from left to right.
 - Translation between English and logic requires careful choice of $\rightarrow$ vs $\land$.
+- Prenex normal form places all quantifiers at the front.
+- Inference rules for quantifiers enable formal reasoning.
+- First-order logic is strictly more expressive than propositional logic.
 
 ## Exercises
 
@@ -242,22 +414,28 @@ Conclusion: $\forall x\; (P(x) \rightarrow R(x))$
 3. Write "Every CS major has taken a math course" in predicate logic.
 4. Is $\exists x\; \forall y\; P(x,y)$ equivalent to $\forall y\; \exists x\; P(x,y)$? Explain with a counterexample.
 5. What is the domain if $\forall x\; (x > 0)$ is false?
+6. Convert $\exists x\; P(x) \rightarrow \forall y\; Q(y)$ to prenex normal form.
+7. What rule licenses the step from $\exists x\; P(x)$ to $P(c)$?
 
 ### Application Problems
 
-6. Translate and then negate: "There is a student who has emailed every professor."
+8. Translate and then negate: "There is a student who has emailed every professor."
 
-7. Let domain be $\mathbb{R}$. Determine truth values:
+9. Let domain be $\mathbb{R}$. Determine truth values:
    (a) $\forall x\; \exists y\; (x + y = 0)$
    (b) $\exists y\; \forall x\; (x + y = 0)$
    (c) $\forall x\; \forall y\; (x^2 + y^2 \geq 0)$
 
-8. Negate: $\forall x\; \forall y\; \big((P(x) \land P(y)) \rightarrow x = y\big)$ (this states "at most one" element satisfies $P$).
+10. Negate: $\forall x\; \forall y\; \big((P(x) \land P(y)) \rightarrow x = y\big)$ (this states "at most one" element satisfies $P$).
 
-9. Show that $\exists x\; \forall y\; P(x,y) \implies \forall y\; \exists x\; P(x,y)$ is logically true, but the converse is not.
+11. Show that $\exists x\; \forall y\; P(x,y) \implies \forall y\; \exists x\; P(x,y)$ is logically true, but the converse is not.
 
-10. Express "There exist at least two elements satisfying $P(x)$" and "There exist at most two elements satisfying $P(x)$" using quantifiers.
+12. Express "There exist at least two elements satisfying $P(x)$" and "There exist at most two elements satisfying $P(x)$" using quantifiers.
+
+13. Write a TypeScript function `translateQuantified` that takes a domain and two predicates $A(x)$ and $B(x)$ and evaluates $\forall x (A(x) \rightarrow B(x))$ and $\exists x (A(x) \land B(x))$.
 
 ### Challenge Problem
 
-11. Define the **uniqueness quantifier** $\exists!x\; P(x)$ meaning "there exists exactly one $x$ satisfying $P(x)$." Express $\exists!x\; P(x)$ using only $\forall$, $\exists$, $\land$, $\rightarrow$, $=$ and $P(x)$. Then negate the expression and simplify.
+14. Define the **uniqueness quantifier** $\exists!x\; P(x)$ meaning "there exists exactly one $x$ satisfying $P(x)$." Express $\exists!x\; P(x)$ using only $\forall$, $\exists$, $\land$, $\rightarrow$, $=$ and $P(x)$. Then negate the expression and simplify.
+
+15. Prove that $\forall x\; (P(x) \land Q(x)) \equiv (\forall x\; P(x)) \land (\forall x\; Q(x))$ and $\exists x\; (P(x) \lor Q(x)) \equiv (\exists x\; P(x)) \lor (\exists x\; Q(x))$. Show by counterexample that $\forall x\; (P(x) \lor Q(x))$ is NOT equivalent to $(\forall x\; P(x)) \lor (\forall x\; Q(x))$.

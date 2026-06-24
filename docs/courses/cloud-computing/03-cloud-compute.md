@@ -13,6 +13,7 @@ After completing this chapter, students will be able to:
 5. Configure persistent block storage and instance-store volumes.
 6. Design high-availability architectures using placement groups and availability zones.
 7. Deploy and configure multi-layer load balancing solutions.
+8. Understand auto-scaling strategies and load balancing algorithms.
 
 ## Chapter at a Glance
 
@@ -24,6 +25,7 @@ After completing this chapter, students will be able to:
 | Scaling | Auto Scaling Groups, Scale Sets, MIGs | Horizontal scaling is the cloud-native approach |
 | Storage Types | Ephemeral (instance store) vs Persistent (EBS/PD) | Never store critical data on ephemeral volumes |
 | Load Balancing | L4 (network) vs L7 (application) | Use L7 for HTTP apps, L4 for ultra-low latency |
+| Autoscaling Strategies | Target tracking, Step scaling, Scheduled | Match scaling strategy to traffic pattern |
 
 ## Chapter Roadmap
 
@@ -33,14 +35,15 @@ flowchart LR
     B --> C[Pricing Models]
     C --> D[Storage Options]
     D --> E[Scaling & HA]
-    E --> F[Load Balancing]
+    E --> F[Auto Scaling Strategies]
+    F --> G[Load Balancing Algorithms]
 ```
 
 ## Theory
 
 ### 3.1 The Virtual Machine Model in the Cloud
 
-Cloud compute services provide resizable, on-demand virtual machine (VM) instances. These services form the fundamental "Infrastructure as a Service" (IaaS) layer. While the underlying hypervisors varyâ€”AWS uses Nitro (KVM-based), Azure uses Hyper-V, and GCP uses KVMâ€”the abstraction provided to the consumer is a consistent set of virtual CPU (vCPU), memory, storage, and networking resources.
+Cloud compute services provide resizable, on-demand virtual machine (VM) instances. These services form the fundamental "Infrastructure as a Service" (IaaS) layer. While the underlying hypervisors vary — AWS uses Nitro (KVM-based), Azure uses Hyper-V, and GCP uses KVM — the abstraction provided to the consumer is a consistent set of virtual CPU (vCPU), memory, storage, and networking resources.
 
 The primary advantage of cloud compute is the shift from physical hardware procurement to software-defined provisioning. This enables "just-in-time" infrastructure where resources are created in seconds and terminated when no longer needed, supporting the cloud's core promise of agility and elasticity.
 
@@ -59,24 +62,92 @@ The primary advantage of cloud compute is the shift from physical hardware procu
 
 Providers organize instances into families optimized for different workloads. Naming conventions typically include a family identifier, a generation number, and a size (e.g., AWS `m5.large`, Azure `D2s_v5`, GCP `n2-standard-2`).
 
-- **General Purpose:** Balanced resources. Ideal for web servers, development environments, and small databases.
-- **Compute Optimized:** High vCPU-to-memory ratio. Used for batch processing, media transcoding, and scientific modeling.
-- **Memory Optimized:** High memory-to-vCPU ratio. Designed for in-memory databases (SAP HANA, Redis) and real-time analytics.
-- **Storage Optimized:** Focused on high-throughput, low-latency local NVMe storage. Suited for NoSQL databases and data warehousing.
-- **Accelerated Computing:** Equipped with GPUs (NVIDIA) or TPUs (GCP) for machine learning, 3D rendering, and financial modeling.
+```mermaid
+graph TB
+    subgraph "Instance Families"
+        A[General Purpose] --> A1[Web servers]
+        A --> A2[Dev/test]
+        A --> A3[Small DBs]
+        
+        B[Compute Optimized] --> B1[Batch processing]
+        B --> B2[Media transcoding]
+        B --> B3[Scientific modeling]
+        
+        C[Memory Optimized] --> C1[In-memory DBs]
+        C --> C2[Real-time analytics]
+        C --> C3[SAP HANA]
+        
+        D[Storage Optimized] --> D1[NoSQL DBs]
+        D --> D2[Data warehousing]
+        D --> D3[Distributed FS]
+        
+        E[Accelerated Computing] --> E1[ML training]
+        E --> E2[3D rendering]
+        E --> E3[Financial modeling]
+    end
+```
 
-![Cloud Compute Instances](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch03-compute-instances.png)
+| Family | vCPU:Memory Ratio | Typical Use Case | AWS Example | Azure Example | GCP Example |
+|--------|-------------------|------------------|-------------|---------------|-------------|
+| General Purpose | 1:4 | Balanced workloads | t3, m5 | D-series | n2, e2 |
+| Compute Optimized | 1:2 | CPU-intensive | c5, c6g | F-series | c2, c3 |
+| Memory Optimized | 1:8 to 1:16 | Large in-memory | r5, x1 | E-series | m1, m3 |
+| Storage Optimized | 1:4 to 1:8 | High I/O | i3, d2 | L-series | l2 |
+| Accelerated | Varies | GPU/FPGA workloads | p3, g4 | NC, ND-series | a2, g2 |
 
-### 3.4 Lifecycle and Pricing Models
+### 3.4 Detailed Instance Type Specifications
+
+| AWS Type | vCPUs | Memory (GB) | Network (Gbps) | Price/hr (On-Demand) | Best For |
+|----------|-------|-------------|----------------|---------------------|----------|
+| t3.micro | 2 | 1 | Up to 5 | $0.0104 | Low-traffic web, dev |
+| t3.medium | 2 | 4 | Up to 5 | $0.0416 | Small apps, dev |
+| m5.large | 2 | 8 | Up to 10 | $0.096 | General purpose |
+| c5.2xlarge | 8 | 16 | Up to 10 | $0.34 | Batch processing |
+| r5.4xlarge | 16 | 128 | Up to 10 | $1.008 | In-memory databases |
+| p3.2xlarge | 8 | 61 | Up to 10 | $3.06 | ML training (1 GPU) |
+| i3.2xlarge | 8 | 61 | Up to 10 | $0.624 | NoSQL, NVMe SSD |
+
+### 3.5 Lifecycle and Pricing Models
 
 Cloud compute economics allow for significant cost optimization through tiered pricing:
+
+```mermaid
+graph LR
+    subgraph "Pricing Models"
+        A[On-Demand] -->|Highest cost,<br/>Max flexibility| D[Workload Matching]
+        B[Spot/Preemptible] -->|Up to 90% off,<br/>Can be interrupted| D
+        C[Reserved/CUD] -->|40-60% off,<br/>1-3yr commitment| D
+        E[Dedicated] -->|Full host,<br/>BYOL/Compliance| D
+    end
+    D --> F[Optimal Cost]
+```
 
 - **On-Demand:** Pay-per-second or per-hour with no commitment. Highest cost but maximum flexibility.
 - **Spot (AWS/Azure) / Preemptible (GCP):** Access to spare capacity at up to 90% discount. Instances can be reclaimed by the provider with short notice (30s to 2min). Best for fault-tolerant, stateless workloads.
 - **Reserved / Committed Use:** Discount for committing to 1- or 3-year usage. AWS uses Reserved Instances and Savings Plans; GCP uses Committed Use Discounts (CUDs); Azure uses Reserved Virtual Machine Instances.
 - **Dedicated Hardware:** Physical servers dedicated to a single tenant. Necessary for specific licensing (BYOL) or strict regulatory compliance.
 
-### 3.5 Storage for Compute
+**Spot Instance Lifecycle:**
+
+```mermaid
+sequenceDiagram
+    participant User as User
+    participant Spot as Spot Request
+    participant EC2 as EC2 Service
+
+    User->>Spot: Create spot request
+    Spot->>EC2: Bid for capacity
+    EC2-->>Spot: Instance launched
+    Spot-->>User: Instance running
+    Note over User,EC2: Normal operation
+    EC2->>Spot: Capacity needed elsewhere
+    Spot->>User: 2-minute termination notice
+    User->>EC2: Checkpoint state
+    EC2-->>Spot: Instance terminated
+    User->>Spot: Request new capacity
+```
+
+### 3.6 Storage for Compute
 
 VMs typically interact with two types of block storage:
 
@@ -84,17 +155,219 @@ VMs typically interact with two types of block storage:
 2. **Persistent Block Storage:** Network-attached storage that persists independently of the VM lifecycle. Can be detached from one instance and attached to another.
    - **Performance Tiers:** Standard HDD, Balanced SSD, High-Performance SSD (Provisioned IOPS), and Ultra Disks for sub-millisecond latency.
 
-### 3.6 Scaling and Availability Patterns
+```typescript
+interface StorageVolume {
+  type: "instance-store" | "ebs" | "persistent-disk";
+  sizeGB: number;
+  iops: number;
+  throughputMBps: number;
+  persistent: boolean;
+}
+
+function selectStorageForWorkload(
+  needsPersistence: boolean,
+  requiredIOPS: number,
+  budgetDollarsPerGB: number
+): StorageVolume {
+  if (!needsPersistence) {
+    return {
+      type: "instance-store",
+      sizeGB: 100,
+      iops: 30000,
+      throughputMBps: 500,
+      persistent: false,
+    };
+  }
+
+  if (requiredIOPS > 10000) {
+    return {
+      type: "ebs",
+      sizeGB: 500,
+      iops: requiredIOPS,
+      throughputMBps: 1000,
+      persistent: true,
+    }; // Provisioned IOPS SSD
+  }
+
+  return {
+    type: "ebs",
+    sizeGB: 500,
+    iops: 3000,
+    throughputMBps: 250,
+    persistent: true,
+  }; // General Purpose SSD
+}
+
+const dbStorage = selectStorageForWorkload(true, 20000, 0.5);
+console.log("Database storage:", JSON.stringify(dbStorage, null, 2));
+
+const cacheStorage = selectStorageForWorkload(false, 5000, 0.1);
+console.log("Cache storage:", JSON.stringify(cacheStorage, null, 2));
+```
+
+Output:
+```
+Database storage: {
+  "type": "ebs",
+  "sizeGB": 500,
+  "iops": 20000,
+  "throughputMBps": 1000,
+  "persistent": true
+}
+Cache storage: {
+  "type": "instance-store",
+  "sizeGB": 100,
+  "iops": 30000,
+  "throughputMBps": 500,
+  "persistent": false
+}
+```
+
+### 3.7 Scaling and Availability Patterns
 
 **Horizontal Scaling** involves adding more instances to a fleet, while **Vertical Scaling** involves increasing the size of an existing instance.
 
-- **Auto Scaling:** Providers use metrics (CPU utilization, request count) to dynamically adjust the number of instances.
+```mermaid
+graph TB
+    subgraph "Vertical Scaling (Scale Up)"
+        A1[2 vCPU / 8 GB] --> A2[4 vCPU / 16 GB] --> A3[8 vCPU / 32 GB]
+    end
+    subgraph "Horizontal Scaling (Scale Out)"
+        B1[1 instance] --> B2[2 instances] --> B3[5 instances]
+    end
+    subgraph "Key Differences"
+        C1[Vertical: Limited by max instance size, requires restart]
+        C2[Horizontal: Unlimited scale, no downtime, cloud-native]
+    end
+```
+
+**Auto Scaling:** Providers use metrics (CPU utilization, request count) to dynamically adjust the number of instances.
+
+**Auto Scaling Strategies:**
+
+| Strategy | Description | Best For | Example |
+|----------|-------------|----------|---------|
+| Target Tracking | Maintain a metric at target value | Steady-state workloads | CPU at 50% |
+| Step Scaling | Add/remove instances in steps based on metric magnitude | Variable traffic | Add 2 instances when CPU > 70% |
+| Scheduled Scaling | Scale at specific times | Predictable patterns | Scale up at 8 AM daily |
+| Predictive Scaling | ML-based future load prediction | Cyclical patterns | Scale for weekly peaks |
+
+**Virtual Machine Restart Policy:**
+
+```typescript
+type ScalingStrategy = "target-tracking" | "step-scaling" | "scheduled" | "predictive";
+
+interface ScalingPolicy {
+  strategy: ScalingStrategy;
+  minInstances: number;
+  maxInstances: number;
+  targetMetric?: string;
+  targetValue?: number;
+}
+
+function configureAutoScaling(
+  trafficPattern: "steady" | "variable" | "predictable" | "cyclical"
+): ScalingPolicy {
+  switch (trafficPattern) {
+    case "steady":
+      return { strategy: "target-tracking", minInstances: 2, maxInstances: 10, targetMetric: "CPUUtilization", targetValue: 50 };
+    case "variable":
+      return { strategy: "step-scaling", minInstances: 2, maxInstances: 20 };
+    case "predictable":
+      return { strategy: "scheduled", minInstances: 2, maxInstances: 50 };
+    case "cyclical":
+      return { strategy: "predictive", minInstances: 2, maxInstances: 30 };
+  }
+}
+
+console.log(configureAutoScaling("steady"));
+```
+
 - **Availability Sets / Placement Groups:** Strategies to ensure VMs are placed on different physical racks or power sources to avoid correlated failures.
+
+**Placement Group Types:**
+
+| Type | Description | Use Case | Limitations |
+|------|-------------|----------|-------------|
+| Cluster | Low latency, same rack | HPC, tightly coupled apps | Single AZ, limited instances |
+| Spread | Distinct hardware | Critical VMs, HA | 7 instances per AZ max |
+| Partition | Logical groups across racks | Distributed systems (Hadoop, Kafka) | 7 partitions per AZ |
+
 - **Health Checks:** The scaling service monitors instance health and automatically replaces failed instances.
 
-### 3.7 Load Balancing
+### 3.8 Load Balancing
 
 Load balancers distribute incoming traffic across a pool of healthy VM instances.
+
+**Load Balancer Types:**
+
+| Type | OSI Layer | Routing | Latency | Use Case |
+|------|-----------|---------|---------|----------|
+| Classic LB (CLB) | L4/L7 | TCP/HTTP | Moderate | Legacy apps |
+| Application LB (ALB) | L7 | HTTP/HTTPS, path, host, header | Low | Microservices, HTTP apps |
+| Network LB (NLB) | L4 | TCP/UDP, IP | Ultra-low | Ultra-low latency, static IP |
+| Gateway LB (GLB) | L3 | IP | Low | Inline network appliances |
+
+**Load Balancing Algorithms:**
+
+| Algorithm | Description | Best For |
+|-----------|-------------|----------|
+| Round Robin | Requests distributed sequentially | Equal-capacity servers |
+| Least Connections | Sends to server with fewest active connections | Variable request duration |
+| IP Hash | Client IP determines target server | Session persistence (sticky sessions) |
+| Weighted Round Robin | Servers receive proportional traffic | Heterogeneous server capacity |
+| Random | Random selection with optional weighting | Large server pools |
+
+```typescript
+interface LoadBalancerConfig {
+  type: "alb" | "nlb" | "clb" | "glb";
+  algorithm: "round-robin" | "least-connections" | "ip-hash" | "weighted";
+  healthCheckPath: string;
+  healthCheckInterval: number; // seconds
+  unhealthyThreshold: number;
+  stickySessions: boolean;
+}
+
+function configureLoadBalancer(
+  isHttp: boolean,
+  needStaticIp: boolean,
+  needPathRouting: boolean
+): LoadBalancerConfig {
+  if (isHttp && needPathRouting) {
+    return {
+      type: "alb",
+      algorithm: "least-connections",
+      healthCheckPath: "/health",
+      healthCheckInterval: 30,
+      unhealthyThreshold: 3,
+      stickySessions: false,
+    };
+  }
+
+  if (!isHttp && needStaticIp) {
+    return {
+      type: "nlb",
+      algorithm: "round-robin",
+      healthCheckPath: "",
+      healthCheckInterval: 10,
+      unhealthyThreshold: 2,
+      stickySessions: false,
+    };
+  }
+
+  return {
+    type: "alb",
+    algorithm: "round-robin",
+    healthCheckPath: "/health",
+    healthCheckInterval: 30,
+    unhealthyThreshold: 3,
+    stickySessions: false,
+  };
+}
+
+const webLB = configureLoadBalancer(true, false, true);
+console.log("Web app LB:", webLB.type, "with", webLB.algorithm);
+```
 
 - **Layer 7 (Application):** Inspects HTTP/HTTPS headers, paths, and cookies. Useful for microservices and URL-based routing.
 - **Layer 4 (Network):** Routes based on IP and TCP/UDP ports. Offers ultra-high performance and low latency.
@@ -130,6 +403,85 @@ aws autoscaling put-scaling-policy \
   --target-tracking-configuration "{\"TargetValue\": 50.0, \"PredefinedMetricSpecification\": {\"PredefinedMetricType\": \"ASGAverageCPUUtilization\"}}"
 ```
 
+### Example 3.3: TypeScript AWS SDK — Launch Instances
+
+```typescript
+import { EC2, AutoScaling, ElasticLoadBalancingV2 } from "@aws-sdk/client-ec2";
+
+interface LaunchConfig {
+  imageId: string;
+  instanceType: string;
+  minCount: number;
+  maxCount: number;
+  securityGroupIds: string[];
+  subnetIds: string[];
+}
+
+async function launchInstances(config: LaunchConfig): Promise<void> {
+  const ec2 = new EC2({ region: "us-east-1" });
+
+  const result = await ec2.runInstances({
+    ImageId: config.imageId,
+    InstanceType: config.instanceType,
+    MinCount: config.minCount,
+    MaxCount: config.maxCount,
+    SecurityGroupIds: config.securityGroupIds,
+    SubnetId: config.subnetIds[0],
+  });
+
+  const instanceIds = result.Instances?.map(i => i.InstanceId!) || [];
+  console.log(`Launched ${instanceIds.length} instances:`, instanceIds);
+}
+
+async function configureScaling(
+  asgName: string,
+  launchTemplateId: string,
+  subnetIds: string[]
+): Promise<void> {
+  const asg = new AutoScaling({ region: "us-east-1" });
+
+  await asg.createAutoScalingGroup({
+    AutoScalingGroupName: asgName,
+    LaunchTemplate: { LaunchTemplateId: launchTemplateId, Version: "$Default" },
+    MinSize: 2,
+    MaxSize: 10,
+    DesiredCapacity: 2,
+    VPCZoneIdentifier: subnetIds.join(","),
+    HealthCheckType: "ELB",
+    HealthCheckGracePeriod: 300,
+  });
+
+  await asg.putScalingPolicy({
+    AutoScalingGroupName: asgName,
+    PolicyName: "cpu-target-50",
+    PolicyType: "TargetTrackingScaling",
+    TargetTrackingConfiguration: {
+      TargetValue: 50,
+      PredefinedMetricSpecification: { PredefinedMetricType: "ASGAverageCPUUtilization" },
+    },
+  });
+
+  console.log(`Auto Scaling Group "${asgName}" configured with CPU tracking at 50%`);
+}
+
+async function createLoadBalancer(name: string, subnetIds: string[], vpcId: string): Promise<void> {
+  const elbv2 = new ElasticLoadBalancingV2({ region: "us-east-1" });
+
+  const lbResult = await elbv2.createLoadBalancer({
+    Name: name,
+    Subnets: subnetIds,
+    Scheme: "internet-facing",
+    Type: "application",
+    IpAddressType: "ipv4",
+  });
+
+  const lbArn = lbResult.LoadBalancers![0].LoadBalancerArn!;
+  console.log(`ALB "${name}" created with ARN: ${lbArn}`);
+}
+
+export { launchInstances, configureScaling, createLoadBalancer };
+```
+
 > **One-Sentence Takeaway:** Cloud compute is about matching the right instance family, pricing model, and scaling strategy to your workload — the cheapest instance is the one you don't leave running idle.
 
 > **Pro Tip:** For cost optimization, always start with Reserved Instances (or Savings Plans) for baseline capacity and use Spot Instances for fault-tolerant batch workloads. This combination can reduce compute costs by 50-70%.
@@ -146,6 +498,7 @@ aws autoscaling put-scaling-policy \
 | Dedicated Host | Physical server for single tenant | Compliance, BYOL licensing | Regulated industries |
 | Instance Store | Local physical storage | High IOPS, data lost on stop | Cache, temp data |
 | EBS/Persistent Disk | Network-attached block storage | Survives instance terminations | Databases, boot volumes |
+| Placement Group | Physical placement strategy | Cluster: low latency; Spread: HA | HPC vs critical apps |
 
 ## Quick Reference
 
@@ -154,6 +507,7 @@ aws autoscaling put-scaling-policy \
 | **Instance Families** | General, Compute, Memory, Storage, GPU | Choose by workload profile |
 | **Pricing Tiers** | On-Demand, Spot, Reserved, Dedicated | Mix for optimal cost |
 | **Scaling** | Horizontal (more instances) vs Vertical (bigger instance) | Horizontal is more resilient |
+| **Scaling Strategies** | Target tracking, Step, Scheduled, Predictive | Match to traffic pattern |
 | **Load Balancer Types** | L4 (TCP/UDP), L7 (HTTP/HTTPS) | L7 supports path-based routing |
 | **HA Patterns** | Multi-AZ, Auto Scaling, Health Checks | Design for failure from day one |
 
@@ -166,6 +520,7 @@ aws autoscaling put-scaling-policy \
 | Reserved Instances | Baseline capacity planning | N/A | N/A | Long-term cost mgmt |
 | Load Balancing | HA architecture | Blue-green deployment | TLS termination | Global traffic distribution |
 | Instance Families | Workload matching | Dev/test environments | Isolated GPU/Compute | Database provisioning |
+| Placement Groups | Performance optimization | Test isolation | Physical isolation | Compliance patterns |
 
 ## Chapter Quiz
 
@@ -202,14 +557,38 @@ aws autoscaling put-scaling-policy \
 **B) Persistent Block Storage.** Instance store data is lost when the VM stops or terminates. Persistent block storage survives VM lifecycle events and supports snapshots, replication, and independent resizing — essential for databases.
 </details>
 
+4. Which auto-scaling strategy is best for an application with predictable peak traffic every weekday at 9 AM?
+   - A) Target Tracking
+   - B) Step Scaling
+   - C) Scheduled Scaling
+   - D) Predictive Scaling
+
+<details>
+<summary>Answer</summary>
+**C) Scheduled Scaling.** Scheduled scaling allows you to set specific times to increase or decrease capacity, making it ideal for predictable traffic patterns like morning rush.
+</details>
+
+5. What is the maximum number of instances per AZ in a spread placement group?
+   - A) 7
+   - B) 20
+   - C) 100
+   - D) Unlimited
+
+<details>
+<summary>Answer</summary>
+**A) 7.** Spread placement groups are limited to 7 running instances per Availability Zone because each instance runs on distinct hardware, ensuring maximum fault isolation.
+</details>
+
 ## Summary
 
 - Cloud compute provides virtualized hardware (IaaS) through VMs.
 - Compute resources are organized into families (General Purpose, Compute, Memory, Storage, GPU).
 - Pricing models range from expensive but flexible (On-Demand) to cheap but interruptible (Spot).
 - Persistent storage (EBS/PD) survives instance termination, while instance store is ephemeral.
+- Auto-scaling strategies include target tracking, step scaling, scheduled, and predictive.
+- Load balancers (L4/L7) distribute traffic using algorithms like round robin, least connections, and IP hash.
+- Placement groups control physical server placement for performance or high availability.
 - Horizontal scaling via managed groups ensures application availability and cost efficiency.
-- Load balancers (L4/L7) act as the entry point, distributing traffic and performing health checks.
 
 ## Exercises
 
@@ -220,12 +599,20 @@ aws autoscaling put-scaling-policy \
 3. What is the difference between a Layer 4 and a Layer 7 load balancer?
 4. How does persistent block storage differ from local instance storage?
 5. Define "Noisy Neighbor" and explain how dedicated hosts mitigate this issue.
+6. Compare target tracking, step scaling, and scheduled scaling strategies.
+7. What are the three types of placement groups and when should each be used?
 
 ### Application Problems
 
 1. A news website expects a massive traffic spike during an election. The current load is 2 VMs. Recommend a scaling policy and load balancer configuration to handle the spike while maintaining 99.9% availability.
+
 2. A developer needs to run a 24-hour batch processing job that is checkpointed (saves state every 10 minutes). Compare the cost of using an On-Demand m5.large instance versus a Spot instance for this task.
+
 3. Design a high-availability architecture for a web application using two Availability Zones. Specify the components required to ensure the app stays online if one AZ fails.
+
+4. Write a TypeScript function that recommends an instance family given a workload description (CPU-intensive vs memory-intensive vs I/O-intensive) and a monthly budget.
+
+5. An e-commerce site experiences traffic spikes on holidays. Configure a combination of auto-scaling strategies to handle both predictable holiday spikes and unpredictable flash sales.
 
 ### Challenge Problem
 

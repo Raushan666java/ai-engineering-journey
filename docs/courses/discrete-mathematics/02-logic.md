@@ -13,8 +13,10 @@ After completing this chapter, you will be able to:
 - Apply logical connectives: $\neg, \land, \lor, \oplus, \rightarrow, \leftrightarrow$
 - Prove logical equivalence using truth tables and known equivalences
 - Apply De Morgan's laws for logic
-- Work with conditional and biconditional statements
-- Determine converse, inverse, and contrapositive
+- Convert expressions to CNF and DNF normal forms
+- Determine satisfiability of compound propositions
+- Validate arguments using inference rules (modus ponens, modus tollens, etc.)
+- Understand the limitations of propositional logic
 
 ## Chapter at a Glance
 
@@ -25,7 +27,10 @@ After completing this chapter, you will be able to:
 | Truth Tables | Exhaustive enumeration of all truth assignments | Truth tables are the ultimate arbiter of logical equivalence |
 | Logical Equivalence | $A \equiv B$ when they match on every row | De Morgan's and distributive laws simplify complex expressions |
 | Conditionals | $p \rightarrow q$ is false only when $p$ is true and $q$ is false | The contrapositive is equivalent; the converse is not |
-| Tautology & Satisfiability | A tautology is always true; a contradiction always false | Used to validate arguments and detect impossible conditions |
+| Normal Forms | CNF and DNF provide canonical representations | SAT solvers use CNF; circuit synthesis uses DNF |
+| Inference Rules | Modus ponens, modus tollens, syllogism validate arguments | Formal proof construction in mathematics and AI |
+| Satisfiability | A formula is satisfiable if some assignment makes it true | SAT is the canonical NP-complete problem |
+| Limitations | Propositional logic cannot express relationships between objects | Predicate logic (Chapter 3) adds quantifiers |
 
 ## Chapter Roadmap
 
@@ -34,9 +39,11 @@ flowchart LR
     A[Propositions] --> B[Logical Connectives]
     B --> C[Truth Tables]
     C --> D[Logical Equivalence]
-    D --> E[Conditionals & Related Statements]
-    E --> F[Satisfiability & Tautology]
-    F --> G[Applications]
+    D --> E[Conditionals and Related Statements]
+    E --> F[Normal Forms: CNF and DNF]
+    F --> G[Satisfiability]
+    G --> H[Inference Rules and Arguments]
+    H --> I[Limitations of Propositional Logic]
 ```
 
 ## Theory
@@ -104,6 +111,35 @@ $$\neg(p \lor q) \equiv \neg p \land \neg q$$
 | Implication | $p \rightarrow q \equiv \neg p \lor q$ |
 | Contrapositive | $p \rightarrow q \equiv \neg q \rightarrow \neg p$ |
 | Biconditional | $p \leftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p)$ |
+| Exportation | $p \rightarrow (q \rightarrow r) \equiv (p \land q) \rightarrow r$ |
+| Absorption | $p \lor (p \land q) \equiv p$, $p \land (p \lor q) \equiv p$ |
+
+**Implication variants:**
+- **Converse:** $q \rightarrow p$ (not equivalent)
+- **Inverse:** $\neg p \rightarrow \neg q$ (not equivalent)
+- **Contrapositive:** $\neg q \rightarrow \neg p$ (equivalent)
+
+```typescript
+function logicalEquivalence(vars: number): boolean[][] {
+  const rows: boolean[][] = [];
+  for (let i = 0; i < Math.pow(2, vars); i++) {
+    const row: boolean[] = [];
+    for (let j = vars - 1; j >= 0; j--) {
+      row.push(Boolean(i & (1 << j)));
+    }
+    rows.push(row);
+  }
+  return rows;
+}
+
+// Verify that p -> q is equivalent to ¬p ∨ q
+function implies(p: boolean, q: boolean): boolean { return !p || q; }
+function negOr(p: boolean, q: boolean): boolean { return !p || q; }
+
+const assignments = logicalEquivalence(2);
+const allMatch = assignments.every(([p, q]) => implies(p, q) === negOr(p, q));
+console.log(`p→q ≡ ¬p∨q: ${allMatch}`); // true
+```
 
 > **One-Sentence Takeaway:** Two propositions are logically equivalent when they have identical truth tables — De Morgan's laws are the most important equivalence pair.
 
@@ -117,19 +153,140 @@ For the conditional $p \rightarrow q$:
 
 The conditional is equivalent to its contrapositive. The converse is equivalent to the inverse.
 
+```mermaid
+flowchart TD
+    A["p → q (Original)"] --> B["q → p (Converse)"]
+    A --> C["¬p → ¬q (Inverse)"]
+    A --> D["¬q → ¬p (Contrapositive)"]
+    D -.->|Equivalent| A
+    B -.->|Equivalent| C
+```
+
 > **One-Sentence Takeaway:** The conditional $p \rightarrow q$ is logically equivalent to its contrapositive $\neg q \rightarrow \neg p$, but NOT to its converse $q \rightarrow p$.
 
-### 2.6 Satisfiability and Tautology
+### 2.6 Normal Forms
+
+**Literal:** a variable ($p$) or its negation ($\neg p$).
+
+**Clause:** a disjunction of literals, e.g., $p \lor \neg q \lor r$.
+
+**Conjunctive Normal Form (CNF):** a conjunction of clauses.
+Example: $(p \lor \neg q) \land (q \lor r) \land (\neg p \lor \neg r)$
+
+**Disjunctive Normal Form (DNF):** a disjunction of conjunctions (minterms).
+Example: $(p \land q) \lor (\neg p \land r) \lor (p \land \neg r)$
+
+**Theorem 2.2 (Existence of normal forms).** Every Boolean expression can be expressed in CNF and DNF.
+
+**Converting to DNF:**
+1. Write the truth table.
+2. For each row where output is T, form a conjunction (minterm) of all variables (negate if F).
+3. OR all minterms together.
+
+**Converting to CNF:**
+1. Write the truth table.
+2. For each row where output is F, form a disjunction (maxterm) of all variables (negate if T).
+3. AND all maxterms together.
+
+```typescript
+function toDNF(truthTable: { vars: boolean[], result: boolean }[]): string {
+  return truthTable
+    .filter(row => row.result)
+    .map(row => {
+      const terms = row.vars.map((v, i) => v ? `x${i}` : `¬x${i}`);
+      return `(${terms.join(' ∧ ')})`;
+    })
+    .join(' ∨ ');
+}
+```
+
+> **One-Sentence Takeaway:** CNF (product of sums) and DNF (sum of products) are canonical forms; SAT solvers require CNF input.
+
+### 2.7 Satisfiability and Tautology
 
 A compound proposition is a **tautology** if it is always true (e.g., $p \lor \neg p$). It is a **contradiction** if always false (e.g., $p \land \neg p$). It is **satisfiable** if there exists at least one truth assignment making it true.
 
+**Theorem 2.3 (SAT).** Determining whether a CNF formula is satisfiable (SAT) is NP-complete. This is the canonical NP-complete problem (Cook-Levin theorem).
+
+**Checking satisfiability in TypeScript:**
+
+```typescript
+function isSatisfiable(formula: (assign: Map<string, boolean>) => boolean, vars: string[]): boolean {
+  for (let i = 0; i < Math.pow(2, vars.length); i++) {
+    const assign = new Map<string, boolean>();
+    for (let j = 0; j < vars.length; j++) {
+      assign.set(vars[j], Boolean(i & (1 << (vars.length - 1 - j))));
+    }
+    if (formula(assign)) return true;
+  }
+  return false;
+}
+
+// Test: (p ∨ q) ∧ (¬p ∨ ¬q) is satisfiable
+const formula = (a: Map<string, boolean>) => 
+  (a.get('p')! || a.get('q')!) && (!a.get('p')! || !a.get('q')!);
+console.log(isSatisfiable(formula, ['p', 'q'])); // true
+```
+
 > **One-Sentence Takeaway:** Tautologies are always-true statements (valid arguments), contradictions are always-false (impossible conditions), and satisfiable statements have at least one path to truth.
 
-> **Pro Tip:** When simplifying a compound proposition, work step-by-step naming each equivalence you use — this makes errors easy to spot and grades easy to award.
+### 2.8 Arguments and Validity
+
+An **argument** consists of premises $P_1, P_2, \ldots, P_n$ and a conclusion $C$. It is **valid** when $(P_1 \land P_2 \land \cdots \land P_n) \rightarrow C$ is a tautology.
+
+**Inference rules:**
+
+| Rule | Name |
+|------|------|
+| $p \rightarrow q,\; p \;\therefore\; q$ | Modus ponens |
+| $p \rightarrow q,\; \neg q \;\therefore\; \neg p$ | Modus tollens |
+| $p \rightarrow q,\; q \rightarrow r \;\therefore\; p \rightarrow r$ | Hypothetical syllogism |
+| $p \lor q,\; \neg p \;\therefore\; q$ | Disjunctive syllogism |
+| $p \;\therefore\; p \lor q$ | Addition |
+| $p \land q \;\therefore\; p$ | Simplification |
+| $p,\; q \;\therefore\; p \land q$ | Conjunction |
+| $p \lor q,\; p \rightarrow r,\; q \rightarrow r \;\therefore\; r$ | Resolution |
+| $p \rightarrow q \;\therefore\; \neg q \rightarrow \neg p$ | Contraposition |
+
+```typescript
+// Modus ponens checker
+function modusPonens(p: boolean, impliesPQ: boolean): boolean | null {
+  if (p && impliesPQ) return true;      // q must be true
+  if (!p || !impliesPQ) return null;    // can't conclude
+  return null;
+}
+
+// Resolution: (p ∨ q) ∧ (¬p ∨ r) → (q ∨ r)
+function resolution(p: boolean, q: boolean, r: boolean): boolean {
+  const premise1 = p || q;
+  const premise2 = !p || r;
+  const conclusion = q || r;
+  return !(premise1 && premise2) || conclusion;
+}
+```
+
+**Common fallacies:**
+- **Affirming the converse:** $p \rightarrow q,\; q \;\therefore\; p$ (invalid)
+- **Denying the antecedent:** $p \rightarrow q,\; \neg p \;\therefore\; \neg q$ (invalid)
+
+> **One-Sentence Takeaway:** An argument is valid if the conclusion follows necessarily from the premises — modus ponens and modus tollens are the most fundamental inference rules.
+
+### 2.9 Limitations of Propositional Logic
+
+Propositional logic cannot express:
+- Statements about all/some objects: "All humans are mortal"
+- Relationships between objects: "x is the parent of y"
+- Properties of individuals: "x is prime"
+
+These require **predicate logic** (first-order logic), which adds quantifiers $\forall$ and $\exists$ and predicates $P(x)$. This is covered in Chapter 3.
+
+> **Pro Tip:** When simplifying a compound proposition, work step-by-step naming each equivalence you use — this makes errors easy to spot.
 >
 > **Pro Tip:** Use De Morgan's laws to push negations inward: $\neg(p \land q) \equiv \neg p \lor \neg q$. This is the single most useful equivalence for simplifying negated expressions.
 >
 > **Warning:** $p \rightarrow q$ is NOT equivalent to $q \rightarrow p$ (the converse). A common logical fallacy is assuming "if P then Q" means the same as "if Q then P."
+>
+> **Warning:** Material implication $p \rightarrow q$ is true when $p$ is false, regardless of $q$. This is counterintuitive in natural language but mathematically necessary.
 
 ## Concept Comparison Table
 
@@ -141,6 +298,8 @@ A compound proposition is a **tautology** if it is always true (e.g., $p \lor \n
 | Logical Equivalence | Same truth table | $A \equiv B$ iff identical columns | Simplifying expressions |
 | Conditional ($\rightarrow$) | False only when $p$ true, $q$ false | Material implication | "If-then" reasoning |
 | Biconditional ($\leftrightarrow$) | True when $p$ and $q$ match | Both directions must hold | Definitions and equivalences |
+| CNF | Conjunction of clauses | Product of sums | SAT solvers |
+| DNF | Disjunction of minterms | Sum of products | Circuit synthesis |
 
 ## Quick Reference
 
@@ -154,6 +313,7 @@ A compound proposition is a **tautology** if it is always true (e.g., $p \lor \n
 | $p \rightarrow q \equiv \neg p \lor q$ | Implication Law |
 | $p \rightarrow q \equiv \neg q \rightarrow \neg p$ | Contrapositive |
 | $p \leftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p)$ | Biconditional Law |
+| $(p \land q) \rightarrow r \equiv p \rightarrow (q \rightarrow r)$ | Exportation |
 
 ## Cross-Application Matrix
 
@@ -165,6 +325,7 @@ A compound proposition is a **tautology** if it is always true (e.g., $p \lor \n
 | Mathematics | Proofs rely on logical deduction and equivalence |
 | AI & Expert Systems | Inference engines apply logical deduction rules |
 | Law & Argumentation | Legal reasoning follows modus ponens and modus tollens |
+| SAT Solving | CNF satisfiability is the core of automated reasoning |
 
 ## Chapter Quiz
 
@@ -192,6 +353,22 @@ A compound proposition is a **tautology** if it is always true (e.g., $p \lor \n
 
    <details><summary>Answer</summary>**D)** A contradiction (e.g., $p \land \neg p$) is always false regardless of truth assignments.</details>
 
+4. Which inference rule does $(p \rightarrow q) \land p \therefore q$ represent?
+   - A) Modus tollens
+   - B) Modus ponens
+   - C) Hypothetical syllogism
+   - D) Disjunctive syllogism
+
+   <details><summary>Answer</summary>**B)** Modus ponens: if $p$ implies $q$ and $p$ is true, then $q$ must be true.</details>
+
+5. The CNF form of $p \oplus q$ is:
+   - A) $(p \lor q) \land (\neg p \lor \neg q)$
+   - B) $(p \land \neg q) \lor (\neg p \land q)$
+   - C) $p \lor q$
+   - D) $\neg p \land \neg q$
+
+   <details><summary>Answer</summary>**A)** $p \oplus q \equiv (p \lor q) \land (\neg p \lor \neg q)$ in CNF.</details>
+
 ## Examples
 
 **Example 2.1** (Truth table construction). Build the truth table for $(p \lor q) \rightarrow (p \land q)$.
@@ -217,8 +394,6 @@ A compound proposition is a **tautology** if it is always true (e.g., $p \lor \n
 - Inverse: "If it does not snow, school does not close" ($\neg p \rightarrow \neg q$)
 - Contrapositive: "If school does not close, it did not snow" ($\neg q \rightarrow \neg p$)
 
-Note the original and contrapositive are equivalent; the converse and inverse are equivalent (but not equivalent to the original).
-
 **Example 2.5** (Distributive law). Show $p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)$.
 
 | $p$ | $q$ | $r$ | $q \land r$ | $p \lor (q \land r)$ | $p \lor q$ | $p \lor r$ | RHS |
@@ -232,7 +407,30 @@ Note the original and contrapositive are equivalent; the converse and inverse ar
 | F | F | T | F | F | F | T | F |
 | F | F | F | F | F | F | F | F |
 
-The columns match, confirming equivalence.
+**Example 2.6** (DNF construction). Express $(p \rightarrow q) \land (q \rightarrow p)$ in DNF.
+
+*Solution.* The formula is true when $p$ and $q$ have the same truth value. So DNF = $(p \land q) \lor (\neg p \land \neg q)$.
+
+**Example 2.7** (Argument validity). Determine if the argument is valid: If it rains, the ground is wet. The ground is wet. Therefore, it rained.
+
+*Solution.* Premises: $p \rightarrow q$, $q$. Conclusion: $p$. This is affirming the converse — invalid. Counterexample: the ground could be wet from sprinklers.
+
+**Example 2.8** (Modus tollens in TypeScript).
+
+```typescript
+function isValidModusTollens(p: boolean, q: boolean, notQ: boolean): boolean {
+  // Premises: p → q, ¬q. Conclusion: ¬p
+  const premise1 = !p || q;    // p → q
+  const premise2 = notQ;       // ¬q
+  const conclusion = !p;       // ¬p
+  // If premises are true, conclusion must be true
+  return !(premise1 && premise2) || conclusion;
+}
+
+console.log(isValidModusTollens(false, false, true));  // true
+console.log(isValidModusTollens(true, false, true));   // true
+console.log(isValidModusTollens(true, true, false));   // false
+```
 
 ## Summary
 
@@ -240,7 +438,11 @@ The columns match, confirming equivalence.
 - Truth tables exhaustively enumerate truth values.
 - Logical equivalence means identical truth tables; De Morgan's and distributive laws are essential.
 - $p \rightarrow q$ is equivalent to $\neg p \lor q$ and to its contrapositive $\neg q \rightarrow \neg p$.
+- Every Boolean expression has CNF and DNF canonical forms.
 - A tautology is always true; a contradiction is always false.
+- Valid arguments correspond to tautological conditionals.
+- Inference rules (modus ponens, modus tollens, syllogism) formalize reasoning.
+- Propositional logic cannot express quantifiers — that requires predicate logic.
 
 ## Exercises
 
@@ -251,19 +453,27 @@ The columns match, confirming equivalence.
 3. State the converse and contrapositive of "If a number is even, its square is even."
 4. Show $p \rightarrow q$ and $\neg q \rightarrow \neg p$ are equivalent.
 5. What is the negation of $p \oplus q$?
+6. Convert $p \oplus q$ to CNF.
+7. Name the inference rule: $p \lor q$, $\neg p$, $\therefore q$.
 
 ### Application Problems
 
-6. Prove De Morgan's second law $\neg(p \lor q) \equiv \neg p \land \neg q$ by truth table.
+8. Prove De Morgan's second law $\neg(p \lor q) \equiv \neg p \land \neg q$ by truth table.
 
-7. Simplify $\neg(p \land (\neg p \lor q))$ using logical equivalences. Name each step.
+9. Simplify $\neg(p \land (\neg p \lor q))$ using logical equivalences. Name each step.
 
-8. Determine whether $(p \rightarrow q) \land (q \rightarrow p)$ is logically equivalent to $p \leftrightarrow q$.
+10. Determine whether $(p \rightarrow q) \land (q \rightarrow p)$ is logically equivalent to $p \leftrightarrow q$.
 
-9. Prove that $(p \lor q) \land \neg(p \land q)$ is equivalent to $p \oplus q$.
+11. Prove that $(p \lor q) \land \neg(p \land q)$ is equivalent to $p \oplus q$.
 
-10. Is $((p \rightarrow q) \rightarrow r) \rightarrow s$ a tautology, contradiction, or satisfiable? Justify.
+12. Is $((p \rightarrow q) \rightarrow r) \rightarrow s$ a tautology, contradiction, or satisfiable? Justify.
+
+13. Convert $p \rightarrow (q \land r)$ to DNF.
+
+14. Write a TypeScript function that takes a CNF formula as an array of clauses (each clause is an array of literals) and checks satisfiability by brute force for up to 5 variables.
 
 ### Challenge Problem
 
-11. A **Sheffer stroke** (NAND) is defined as $p \mid q \equiv \neg(p \land q)$. Show that all other logical connectives ($\neg, \land, \lor, \rightarrow$) can be expressed using only the Sheffer stroke.
+15. A **Sheffer stroke** (NAND) is defined as $p \mid q \equiv \neg(p \land q)$. Show that all other logical connectives ($\neg, \land, \lor, \rightarrow$) can be expressed using only the Sheffer stroke.
+
+16. The **resolution principle** states that if $(p \lor q)$ and $(\neg p \lor r)$ are both true, then $(q \lor r)$ must be true (the resolvent). Prove this equivalence. Then show that repeated resolution can determine unsatisfiability of any CNF formula.

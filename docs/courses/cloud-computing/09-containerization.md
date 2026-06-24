@@ -1,251 +1,565 @@
-# Chapter 09: Containerization and Orchestration
+﻿# Chapter 9: Containerization and Orchestration
 
-> **Previous:** [Chapter 8: Serverless Computing](./08-serverless.md) | **Next:** [Chapter 10: Cloud Architecture and Management](./10-architecture.md)
+> **Previous:** [Chapter 8: Serverless Computing](./08-serverless.md) | **Next:** [Chapter 10: Cloud Architecture Design](./10-architecture.md)
 
 ## Learning Objectives
 
-- Explain the difference between virtualization and containerization.
-- Describe the architecture and components of Docker.
-- Define the role of Kubernetes in container orchestration.
-- Identify the key components of a Kubernetes cluster (Nodes, Pods, Services, Deployments).
-- Compare managed Kubernetes services (EKS, AKS, GKE) and their benefits.
+After completing this chapter, students will be able to:
+
+1. Build and optimize Docker images for cloud deployment.
+2. Orchestrate containers with Kubernetes for production workloads.
+3. Design pod, service, and deployment configurations.
+4. Implement CI/CD pipelines for containerized applications.
+5. Configure auto-scaling and resource limits for container workloads.
+6. Manage container registries and image lifecycle policies.
+7. Apply security scanning and runtime protection for containers.
+8. Compare ECS, EKS, Fargate, and self-managed Kubernetes trade-offs.
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|--------------------|
-| Containers vs VMs | OS-level vs hardware-level virtualization | Containers: lighter, denser, faster start |
-| Docker Platform | Engine, Images, Containers, Registry | "Build once, run anywhere" |
-| Dockerfile | Layered image definition | Each instruction creates a cached layer |
-| Kubernetes | Container orchestration at scale | Self-healing, scaling, rolling updates |
-| K8s Objects | Pods, Deployments, Services, Namespaces | Declarative YAML defines desired state |
-| Managed K8s | EKS, AKS, GKE | Managed control plane, reduced ops burden |
+| Docker | Container images package code + dependencies | Build once, run anywhere |
+| Kubernetes | Container orchestration | Pods, Services, Deployments |
+| ECS vs EKS | AWS-native vs standard Kubernetes | ECS simpler, EKS more portable |
+| Fargate | Serverless containers | No node management, higher cost |
+| CI/CD | Automated build, test, deploy | Integrate with ECR and EKS |
+| Auto-Scaling | HPA, Cluster Autoscaler, KEDA | Scale pods and nodes based on metrics |
+| Security | Image scanning, runtime protection | Scan in pipeline, enforce at runtime |
+| Service Mesh | Istio, App Mesh | Traffic management, observability |
 
 ## Chapter Roadmap
 
-```mermaid
+\\\mermaid
 flowchart LR
-    A[Containers vs VMs] --> B[Docker Fundamentals]
-    B --> C[Docker Images & Registry]
-    C --> D[Kubernetes Concepts]
-    D --> E[K8s Architecture]
-    E --> F[Managed K8s Services]
-```
-
----
+    A[Containerization] --> B[Docker Images]
+    A --> C[Container Registries ECR]
+    C --> D[Orchestration]
+    D --> E[ECS]
+    D --> F[EKS / Kubernetes]
+    D --> G[Fargate]
+    F --> H[Pods, Services, Deployments]
+    H --> I[Auto-Scaling HPA + CA]
+    H --> J[Security: RBAC, PodSecurity, NetworkPolicies]
+\\\
 
 ## Theory
 
-### Containers vs. Virtual Machines
-While Virtual Machines (VMs) virtualize the underlying hardware, containers virtualize the operating system.
-- **Virtual Machines:** Include a full guest OS, a hypervisor, and virtualized hardware. They are hardware-independent but have higher overhead and slower boot times.
-- **Containers:** Share the host OS kernel and isolate the application processes. They are lightweight, start in seconds, and ensure "it works on my machine" consistency across environments.
+### 9.1 Docker Fundamentals
 
-### Docker Fundamentals
-Docker is the most popular platform for building, shipping, and running containers. Its architecture consists of:
-- **Docker Engine:** The runtime that executes containers.
-- **Dockerfile:** A text document containing all the commands a user could call on the command line to assemble an image.
-- **Image:** A read-only template used to create containers. Images are built in layers.
-- **Container:** A runnable instance of an image.
-- **Registry:** A storage and distribution system for Docker images (e.g., Docker Hub, Amazon ECR).
+Docker packages an application with all its dependencies into a portable image file.
 
-![Containerization Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch09-containerization.png)
+**Dockerfile Layers:**
 
-### Container Orchestration with Kubernetes
-As the number of containers grows, managing them manually becomes impossible. Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications.
-
-**Key Kubernetes Objects:**
-- **Pod:** The smallest deployable unit in Kubernetes, representing a single instance of a running process.
-- **Node:** A worker machine (VM or physical) in Kubernetes.
-- **Deployment:** Manages a set of identical Pods, handling updates and scaling.
-- **Service:** An abstract way to expose an application running on a set of Pods as a network service.
-- **Namespace:** Provides a mechanism for isolating groups of resources within a single cluster.
-
----
-
-## Examples
-
-### Example 1: Creating a Dockerized Web Application
-This example shows how to package a simple Python Flask application into a Docker image.
-
-**Dockerfile:**
-```dockerfile
-# Use an official Python runtime as a parent image
-FROM python:3.9-slim
-
-# Set the working directory in the container
+\\\dockerfile
+# Stage 1: Build
+FROM node:20-alpine AS builder
 WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production
+COPY . .
+RUN npm run build
 
-# Copy the current directory contents into the container at /app
-COPY . /app
+# Stage 2: Production
+FROM node:20-alpine
+WORKDIR /app
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/node_modules ./node_modules
+EXPOSE 3000
+CMD ["node", "dist/index.js"]
+\\\
 
-# Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+**Multi-stage builds** reduce final image size by separating build dependencies from runtime. The first stage includes TypeScript compiler, Dev dependencies; the second stage contains only the compiled output and production node_modules.
 
-# Make port 80 available to the world outside this container
-EXPOSE 80
+**Image Optimization:**
 
-# Define environment variable
-ENV NAME World
+| Technique | Impact | Implementation |
+|-----------|--------|----------------|
+| Multi-stage builds | 5-10x smaller images | Separate build and runtime stages |
+| Alpine base images | ~100 MB vs ~1 GB | Use alpine or distroless variants |
+| .dockerignore | Faster builds, smaller context | Exclude node_modules, .git, tests |
+| Layer caching | Faster CI builds | Order COPY by change frequency |
+| Distroless images | Minimal attack surface | No shell, no package manager |
 
-# Run app.py when the container launches
-CMD ["python", "app.py"]
-```
+\\\mermaid
+graph TB
+    subgraph "Docker Build Process"
+        A[Dockerfile] --> B[Layer 1: OS Base]
+        B --> C[Layer 2: Dependencies]
+        C --> D[Layer 3: Application Code]
+        D --> E[Layer 4: Entrypoint]
+        E --> F[Final Image]
+        
+        G[.dockerignore] --> A
+        H[Build Cache] --> B
+        H --> C
+    end
+    
+    subgraph "Image Registries"
+        F --> I[Local Docker]
+        F --> J[Amazon ECR]
+        F --> K[Docker Hub]
+        F --> L[GCR / Artifact Registry]
+    end
+\\\
 
-**Commands to Build and Run:**
-```bash
-docker build -t flask-app .
-docker run -p 4000:80 flask-app
-```
+### 9.2 Kubernetes Core Concepts
 
-**Expected Output:**
-Navigating to `http://localhost:4000` in a browser displays the application's response.
+**Pods:** Smallest deployable unit in Kubernetes. One or more containers sharing network and storage.
 
-> **One-Sentence Takeaway:** Containers package application code with its dependencies into a portable, immutable unit, while Kubernetes orchestrates those containers at scale — together they form the backbone of modern cloud-native applications.
+**Services:** Stable network endpoint for a set of pods. Types: ClusterIP (internal), NodePort (node port), LoadBalancer (cloud LB).
 
-> **Pro Tip:** Always use multi-stage Docker builds to minimize image size. A production image should contain only the compiled binary and runtime dependencies — not build tools, package managers, or source code. This also reduces the attack surface.
+**Deployments:** Declarative updates for pods and ReplicaSets. Supports rolling updates and rollbacks.
 
-> **Warning:** Never store sensitive data (API keys, database passwords) in Docker images. They persist in image layers and can be extracted even from older layers. Use Kubernetes Secrets or cloud secret managers and inject them at runtime.
+**ConfigMaps & Secrets:** External configuration injected into pods. ConfigMaps for non-sensitive, Secrets for sensitive data.
 
-### Example 2: Deploying to Kubernetes
-This example demonstrates a basic Kubernetes Deployment and Service manifest.
-
-**deployment.yaml:**
-```yaml
+\\\yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: web-app
+  labels:
+    app: web
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: web
   template:
     metadata:
       labels:
-        app: nginx
+        app: web
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: app
+        image: 123456789.dkr.ecr.us-east-1.amazonaws.com/web-app:1.2.3
         ports:
-        - containerPort: 80
+        - containerPort: 3000
+        resources:
+          requests:
+            cpu: 250m
+            memory: 256Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 3000
+          initialDelaySeconds: 30
+          periodSeconds: 10
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-service
+  name: web-service
 spec:
-  selector:
-    app: nginx
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
   type: LoadBalancer
-```
+  selector:
+    app: web
+  ports:
+  - port: 80
+    targetPort: 3000
+\\\
 
-**Command:**
-```bash
-kubectl apply -f deployment.yaml
-```
+### 9.3 Kubernetes Architecture
 
-**Expected Result:**
-Kubernetes creates 3 Nginx pods and a LoadBalancer to distribute traffic among them.
+\\\mermaid
+graph TB
+    subgraph "Kubernetes Cluster"
+        subgraph "Control Plane"
+            API[API Server]
+            ETCD[etcd]
+            SCH[Schedule]
+            CONTR[Controller Manager]
+            API --> ETCD
+            API --> SCH
+            API --> CONTR
+        end
+        
+        subgraph "Worker Node 1"
+            KUBE1[kubelet]
+            POD_A[Pod: app v1]
+            POD_B[Pod: app v1]
+        end
+        
+        subgraph "Worker Node 2"
+            KUBE2[kubelet]
+            POD_C[Pod: app v1]
+            POD_D[Pod: sidecar]
+        end
+        
+        API --> KUBE1
+        API --> KUBE2
+    end
+    
+    INGRESS[Ingress] --> SVC[Service: web]
+    SVC --> POD_A
+    SVC --> POD_B
+    SVC --> POD_C
+\\\
 
----
+### 9.4 Auto-Scaling
+
+**Horizontal Pod Autoscaler (HPA):** Scales pods based on CPU, memory, or custom metrics.
+
+\\\yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: web-app-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: web-app
+  minReplicas: 3
+  maxReplicas: 20
+  metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      target:
+        type: Utilization
+        averageUtilization: 70
+\\\
+
+**Cluster Autoscaler:** Adds or removes worker nodes based on unschedulable pods. Integrates with EC2 Auto Scaling Groups.
+
+**KEDA (Kubernetes Event-Driven Autoscaling):** Scales based on event sources: SQS queue length, Kafka lag, Prometheus metrics, custom scalers.
+
+\\\	ypescript
+interface AutoScalingConfig {
+  minReplicas: number;
+  maxReplicas: number;
+  targetCPUUtilization: number;
+  scaleUpCooldown: number;
+  scaleDownCooldown: number;
+}
+
+class ScalingCalculator {
+  constructor(private config: AutoScalingConfig) {}
+
+  calculateDesiredReplicas(currentCPULoad: number): number {
+    const target = this.config.targetCPUUtilization;
+    const ratio = currentCPULoad / target;
+    const desired = Math.ceil(this.config.minReplicas * ratio);
+    return Math.min(Math.max(desired, this.config.minReplicas), this.config.maxReplicas);
+  }
+}
+
+const calc = new ScalingCalculator({ minReplicas: 3, maxReplicas: 20, targetCPUUtilization: 70, scaleUpCooldown: 60, scaleDownCooldown: 300 });
+console.log("Desired replicas at 90% CPU:", calc.calculateDesiredReplicas(90));
+\\\
+
+### 9.5 Container Storage
+
+| Storage Type | Kubernetes Volume Type | Use Case |
+|-------------|----------------------|----------|
+| Ephemeral | emptyDir | Temporary scratch space, cache |
+| Persistent | PersistentVolumeClaim | Databases, stateful apps |
+| Shared | NFS / EFS | Multi-pod shared access |
+| High-Perf | EBS / Local SSD | Low-latency storage |
+
+**StatefulSets:** For stateful applications requiring stable network identities and persistent storage per pod.
+
+\\\yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+spec:
+  serviceName: postgres
+  replicas: 3
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:16
+        volumeMounts:
+        - name: data
+          mountPath: /var/lib/postgresql/data
+  volumeClaimTemplates:
+  - metadata:
+      name: data
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 100Gi
+\\\
+
+### 9.6 Container Security
+
+| Security Layer | Kubernetes Feature | Purpose |
+|---------------|--------------------|---------|
+| Image Scanning | ECR scanning, Trivy | Find vulnerabilities before deploy |
+| Network Policy | NetworkPolicy objects | Control pod-to-pod traffic |
+| Pod Security | Pod Security Standards | Restrict privileged containers |
+| RBAC | Roles, RoleBindings | Least privilege access to K8s API |
+| Secrets | etcd encryption | Encrypt secrets at rest |
+| Runtime | Falco, Sysdig | Detect anomalous behavior |
+
+**Pod Security Standards:**
+
+- **Privileged:** Unrestricted. For system-level components (rare).
+- **Baseline:** Minimal restrictions. Default for most workloads.
+- **Restricted:** Maximum security. No privileged containers, read-only root filesystem.
+
+\\\	ypescript
+interface ContainerImage {
+  name: string;
+  tag: string;
+  digest: string;
+  vulnerabilities: { critical: number; high: number; medium: number };
+}
+
+class ImageScanner {
+  async scan(imageName: string): Promise<ContainerImage> {
+    return {
+      name: imageName,
+      tag: "latest",
+      digest: "sha256:abc123",
+      vulnerabilities: { critical: 0, high: 2, medium: 5 },
+    };
+  }
+
+  isDeployable(image: ContainerImage, maxCritical = 0, maxHigh = 5): boolean {
+    if (image.vulnerabilities.critical > maxCritical) {
+      console.log("BLOCKED:", image.name, "has", image.vulnerabilities.critical, "critical vulns");
+      return false;
+    }
+    if (image.vulnerabilities.high > maxHigh) {
+      console.log("BLOCKED:", image.name, "has", image.vulnerabilities.high, "high vulns");
+      return false;
+    }
+    return true;
+  }
+}
+
+async function checkImage(): Promise<void> {
+  const scanner = new ImageScanner();
+  const result = await scanner.scan("web-app:latest");
+  console.log("Deployable:", scanner.isDeployable(result));
+}
+\\\
+
+### 9.7 ECS vs EKS vs Fargate
+
+| Feature | ECS | EKS | Fargate |
+|---------|-----|-----|---------|
+| Kubernetes | No (AWS-native) | Yes (standard K8s) | Yes (with EKS or ECS) |
+| Node Management | EC2 launch type | Managed node groups | No nodes to manage |
+| Portability | AWS-only | Portable across clouds | AWS-only |
+| Complexity | Lower | Higher | Lowest |
+| Cost | EC2 pricing | EC2 + control plane \.10/hr | Per-task pricing (higher) |
+| Control | Limited | Full K8s API | Limited |
+
+## Examples
+
+### Example 9.1: Multi-Stage TypeScript Dockerfile
+
+\\\dockerfile
+FROM node:20-alpine AS builder
+WORKDIR /build
+COPY tsconfig.json package*.json ./
+RUN npm ci
+COPY src/ src/
+RUN npm run build
+
+FROM node:20-alpine
+RUN apk add --no-cache tini
+WORKDIR /app
+COPY --from=builder /build/dist ./dist
+COPY --from=builder /build/node_modules ./node_modules
+EXPOSE 3000
+USER node
+ENTRYPOINT ["/sbin/tini", "--"]
+CMD ["node", "dist/index.js"]
+\\\
+
+### Example 9.2: CI/CD Pipeline (GitHub Actions)
+
+\\\yaml
+name: Build and Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build and scan
+      run: |
+        docker build -t app:latest .
+        docker run app:latest npm test
+    - name: Push to ECR and deploy to EKS
+      run: |
+        aws ecr get-login-password | docker login --password-stdin
+        docker tag app:latest \/app:latest
+        docker push \/app:latest
+        kubectl set image deployment/web-app app=\/app:latest
+\\\
+
+### Example 9.3: Docker Compose Local Development
+
+\\\yaml
+version: "3.8"
+services:
+  api:
+    build: .
+    ports: ["3000:3000"]
+    environment:
+      - DB_HOST=postgres
+    depends_on: [postgres]
+    volumes:
+      - ./src:/app/src
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: myapp
+      POSTGRES_PASSWORD: devpassword
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
+\\\
+
+> **One-Sentence Takeaway:** Containers provide consistent, portable application packaging; Kubernetes orchestrates them at scale; and choosing ECS vs EKS vs Fargate is a trade-off between simplicity, portability, and cost.
+
+> **Pro Tip:** Always set resource requests and limits on every container. Without limits, one container can starve the entire node. Without requests, the scheduler cannot make informed placement decisions.
+
+> **Warning:** Default Kubernetes Secrets are only base64-encoded, not encrypted. Enable etcd encryption at rest and use external secrets management (AWS Secrets Manager via CSI driver) for production secrets.
 
 ## Concept Comparison Table
 
 | Concept | Definition | Key Distinction | Use Case |
 |---------|-----------|-----------------|----------|
-| Docker Image | Read-only template with app + dependencies | Created from Dockerfile, stored in registry | Build artifact |
-| Docker Container | Runnable instance of an image | Ephemeral, stateless by default | Dev, test, prod deployment |
-| Kubernetes Pod | Smallest deployable unit in K8s | One or more containers sharing network/storage | Application instance |
-| Kubernetes Deployment | Manages desired state of Pods | Handles rolling updates, rollbacks, scaling | Stateless services |
-| Kubernetes Service | Stable network endpoint for Pods | Load-balanced access to dynamic Pod set | Internal/external access |
-| Namespace | Isolated virtual cluster within K8s | Enables multi-tenancy and environment separation | Dev/staging/prod isolation |
+| Docker Image | Portable application package | Build once, run anywhere | Container packaging |
+| Pod | Smallest K8s deployable unit | One or more containers | Application instances |
+| Deployment | Declarative pod management | Rolling updates, rollbacks | Stateless apps |
+| Service | Stable network endpoint for pods | Load-balanced access | Internal or external traffic |
+| StatefulSet | Stateful pod management | Stable identity, storage | Databases, queues |
+| ConfigMap / Secret | External configuration | Non-sensitive vs sensitive | Feature flags, DB passwords |
+| HPA | Pod scaling | CPU, memory, custom metrics | Auto-scaling workloads |
+| Ingress | HTTP(S) routing to services | Path-based, TLS termination | API routing |
 
 ## Quick Reference
 
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
-| **Docker Commands** | build, run, push, pull, exec, logs | docker build -t name . && docker run name |
-| **K8s Objects** | Pod, Deployment, Service, Ingress, ConfigMap, Secret | All defined in YAML |
-| **Service Types** | ClusterIP (internal), NodePort (node-level), LoadBalancer (cloud) | LoadBalancer integrates with cloud LB |
-| **Managed K8s** | EKS (AWS), AKS (Azure), GKE (GCP) | GKE has autopilot mode (fully managed) |
-| **Key Patterns** | Sidecar, Ambassador, Init containers | Sidecar is most common (logging, proxy) |
+| **Docker** | Images, containers, Dockerfile, multi-stage builds | Alpine for small images |
+| **Kubernetes** | Pods, Deployments, Services, ConfigMaps | Declarative YAML config |
+| **AWS** | ECS, EKS, Fargate, ECR, App Mesh | ECS simpler, EKS portable |
+| **Scaling** | HPA, Cluster Autoscaler, KEDA | CPU, queue, event-driven |
+| **Security** | Image scan, RBAC, NetworkPolicy, Falco | Defense in depth |
+| **CI/CD** | Docker build, push, deploy pipeline | Automate the entire flow |
 
 ## Cross-Application Matrix
 
 | Technique | Cloud Architecture | DevOps | Security | Enterprise |
 |-----------|-------------------|--------|----------|------------|
-| Docker | App packaging | Reproducible builds | Image scanning | Environment consistency |
-| Kubernetes | Container orchestration | GitOps (ArgoCD) | Pod security policies | Multi-tenant clusters |
-| Sidecar Pattern | Service mesh (Istio) | Logging agents | Security proxies | Observability |
-| Helm Charts | Package management | Standardized deployments | Policy enforcement | Enterprise app delivery |
-| Managed K8s | Infrastructure abstraction | Reduced ops overhead | Managed security controls | Compliance-ready clusters |
+| Multi-stage Builds | Smaller images | Faster CI/CD | Reduced attack surface | Lower costs |
+| K8s RBAC | Access control | CI/CD service accounts | Least privilege | Multi-team isolation |
+| HPA + CA | Auto-scaling | Cost optimization | DDoS resilience | Performance SLAs |
+| Network Policies | Micro-segmentation | Environment isolation | Zero trust networking | Compliance |
+| Image Scanning | Secure supply chain | Pipeline gate | Vulnerability management | Audit compliance |
 
 ## Chapter Quiz
 
-1. What is the primary advantage of containers over virtual machines in terms of resource utilization?
-   - A) Containers use less disk space
-   - B) Containers share the host OS kernel, eliminating the need for a full guest OS per instance
-   - C) Containers are encrypted by default
-   - D) Containers don't need memory
+1. What is the primary benefit of multi-stage Docker builds?
+   - A) Faster local development
+   - B) Smaller final image by separating build and runtime dependencies
+   - C) Better security through network isolation
+   - D) Automatic deployment to Kubernetes
 
 <details>
 <summary>Answer</summary>
-**B) Containers share the host OS kernel, eliminating the need for a full guest OS per instance.** Each VM includes a full guest OS (GBs), while containers share the host kernel and only package the application and its dependencies (MBs). This enables higher density and faster startup.
+**B) Smaller final image by separating build and runtime dependencies.** Multi-stage builds use one stage with all build tools to compile the application, then copy only the compiled artifacts to a minimal runtime stage — reducing image size by 5-10x.
 </details>
 
-2. In Kubernetes, what is the role of a Deployment?
-   - A) To expose Pods as a network service
-   - B) To manage the desired state of a set of identical Pods, including rolling updates and scaling
-   - C) To store configuration data
-   - D) To authenticate users
+2. Which Kubernetes resource provides stable networking for a set of pods?
+   - A) Deployment
+   - B) Service
+   - C) ConfigMap
+   - D) Ingress
 
 <details>
 <summary>Answer</summary>
-**B) To manage the desired state of a set of identical Pods, including rolling updates and scaling.** Deployments ensure the specified number of Pods are running, handle rolling updates without downtime, and automatically replace failed Pods.
+**B) Service.** Services provide a stable DNS name and IP address for a set of pods, which can change as pods are created and destroyed. Ingress is for HTTP routing; Deployments manage pod lifecycle.
 </details>
 
-3. What happens when a Kubernetes Service of type LoadBalancer is created on EKS?
-   - A) Nothing — it only works on GKE
-   - B) Kubernetes creates a cloud load balancer (e.g., AWS ALB/NLB) and maps it to the Service's Pods
-   - C) It creates a DNS entry
-   - D) It requires manual configuration
+3. What is the difference between ECS and EKS?
+   - A) ECS is AWS-native; EKS uses standard Kubernetes
+   - B) ECS is cheaper than EKS
+   - C) ECS supports Windows containers; EKS does not
+   - D) There is no difference
 
 <details>
 <summary>Answer</summary>
-**B) Kubernetes creates a cloud load balancer (e.g., AWS ALB/NLB) and maps it to the Service's Pods.** The cloud controller manager on EKS automatically provisions an AWS load balancer when a Service of type LoadBalancer is created, connecting external traffic to the internal Pod network.
+**A) ECS is AWS-native; EKS uses standard Kubernetes.** ECS uses AWS-proprietary scheduling while EKS runs standard Kubernetes, making workloads portable across clouds and on-premises K8s clusters.
+</details>
+
+4. What happens if a container does not specify resource limits?
+   - A) It is limited to default Kubernetes limits
+   - B) It can consume all CPU and memory on the node, starving other pods
+   - C) It is automatically assigned limits matching its requests
+   - D) The pod is not scheduled
+
+<details>
+<summary>Answer</summary>
+**B) It can consume all CPU and memory on the node, starving other pods.** Without limits, a container can use unbounded resources. Always set both resource requests (for scheduling) and limits (to prevent resource starvation).
+</details>
+
+5. Which Kubernetes security resource controls pod-to-pod traffic?
+   - A) RBAC
+   - B) Pod Security Standards
+   - C) NetworkPolicy
+   - D) Secret
+
+<details>
+<summary>Answer</summary>
+**C) NetworkPolicy.** NetworkPolicy controls which pods can communicate with each other at the network level. RBAC controls API access; Pod Security Standards control pod capabilities.
 </details>
 
 ## Summary
 
-- Containers provide a lightweight, consistent environment for applications by sharing the host OS kernel.
-- Docker simplifies the creation and distribution of container images.
-- Kubernetes is the industry-standard orchestrator for managing large-scale container deployments.
-- The control plane manages the cluster, while worker nodes execute the workloads.
-- Declarative configuration (YAML) allows for version-controlled and reproducible infrastructure.
-- Managed services like EKS, AKS, and GKE reduce the operational burden of managing the Kubernetes control plane.
-
----
+- Docker containers provide consistent, portable application packaging through images.
+- Kubernetes orchestrates containers with Pods, Services, Deployments, and ConfigMaps.
+- Multi-stage builds and Alpine base images significantly reduce container image size.
+- Auto-scaling combines HPA (pod scaling) with Cluster Autoscaler (node scaling).
+- ECS offers simpler AWS-native orchestration; EKS provides standard Kubernetes portability.
+- Fargate eliminates node management at a higher per-task cost.
+- Container security spans image scanning, RBAC, Network Policies, and runtime protection.
 
 ## Exercises
 
 ### Review Questions
-1. Why are containers considered more "efficient" than virtual machines in terms of resource utilization?
-2. Explain the concept of "layers" in a Docker image.
-3. What is the role of the `kube-scheduler` in a Kubernetes cluster?
-4. Differentiate between a `ClusterIP`, `NodePort`, and `LoadBalancer` service type in Kubernetes.
-5. What happens when a Pod in a Deployment fails?
+
+1. Explain the difference between ECS, EKS, and Fargate and when to use each.
+2. What is a multi-stage Docker build and why is it important for production images?
+3. Describe the relationship between Pods, Services, and Deployments in Kubernetes.
+4. How does Horizontal Pod Autoscaling work and what metrics can trigger scaling?
+5. What security measures should be applied to container workloads in production?
+6. Compare StatefulSets vs Deployments and when to use each.
 
 ### Application Problems
-1. Write a `Dockerfile` for a Node.js application that uses `npm install` and starts the app with `node index.js`.
-2. Create a Kubernetes YAML manifest that deploys 5 replicas of a Redis container and exposes it internally within the cluster.
-3. A development team reports that an application works in their local Docker environment but fails when deployed to EKS. List three potential configuration differences to investigate.
+
+1. Write a multi-stage Dockerfile for a TypeScript application that produces an image under 150 MB.
+
+2. Design a Kubernetes deployment for a Node.js web app with environment-specific ConfigMaps, secrets from Secrets Manager, and an ALB Ingress.
+
+3. A container periodically consumes 200% CPU during batch processing. Design a resource configuration and autoscaling strategy that handles this spike without affecting other workloads.
+
+4. Create a CI/CD pipeline for a containerized application with build, scan, push, and deploy stages using GitHub Actions and EKS.
+
+5. Design a service mesh architecture with traffic splitting for canary deployments of a microservice in EKS.
 
 ### Challenge Problem
-Design a CI/CD pipeline that automatically builds a Docker image from a GitHub repository, pushes it to a private registry (like Amazon ECR), and updates a Kubernetes Deployment in a production cluster. Specify the tools and steps involved.
+
+Design a complete container platform for a SaaS company migrating from EC2. Requirements: 1) Multi-tenant isolation at the cluster level, 2) Auto-scaling based on SQS queue depth and CPU, 3) Blue/green deployments with traffic shifting, 4) Centralized logging and monitoring, 5) Secret rotation without pod restart, 6) Network policies enforcing zero trust, 7) Image scanning gating the pipeline, 8) Cost allocation per tenant. Propose specific services, YAML configurations, and architecture diagrams.

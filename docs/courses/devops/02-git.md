@@ -1,200 +1,522 @@
 # Chapter 2: Advanced Git
 
-> **Previous:** [Introduction to DevOps](./01-introduction.md) | **Next:** [Linux Fundamentals](./02-linux-basics.md)
+> **Prev:** [Introduction](./01-introduction.md) | **Prev Section:** [Linux Basics](./02-linux-basics.md)
+
+---
 
 ## Learning Objectives
 
-By the end of this chapter, students will be able to:
+- Understand Git's internal object model (blobs, trees, commits, tags).
+- Master branching and merging strategies for collaborative development.
+- Implement workflows like GitFlow, trunk-based development, and forking.
+- Use interactive rebasing for clean commit history.
+- Resolve complex merge conflicts.
+- Set up Git hooks for automation.
 
-1. Evaluate and select appropriate branching strategies for different project contexts
-2. Differentiate between merge and rebase and apply each correctly
-3. Perform interactive rebase to clean up commit history
-4. Use git bisect to identify the commit that introduced a regression
-5. Implement git hooks for automation and policy enforcement
-6. Manage submodules, signed commits, and large file storage
-
+---
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Git Object Model | DAG of blobs, trees, commits, tags with SHA-1 hashes | Understanding objects is essential for advanced Git operations |
-| Branching Strategies | Git Flow, GitHub Flow, GitLab Flow, Trunk-Based | Match strategy to release cadence and team size |
-| Merge vs Rebase | Preserves history vs linearizes it | Rebase local work before push; merge after |
-| Git Bisect | Binary search for regression commits | Automate with git bisect run for efficient debugging |
-| Git Hooks | Client-side and server-side automation scripts | Use .githooks directory for team-wide hooks |
+| Git Internals | Objects and references | Understanding SHA hashes demystifies Git |
+| Branching | Lightweight pointers to commits | Branches are cheap — create them freely |
+| Merging | Fast-forward vs 3-way merges | Choose strategy based on team workflow |
+| Rebasing | Linearizing commit history | Rebase feature branches, merge main branches |
+| GitFlow | Structured release management | Good for versioned releases, bad for continuous delivery |
+| Trunk-Based | Short-lived feature branches | Best for CI/CD and DevOps pipelines |
+| Hooks | Client and server-side automation | Enforce policies, run checks automatically |
+| Conflict Resolution | Understanding diff3 and merge tools | Use `rerere` for recurring conflicts |
+| Cherry-Picking | Selective commit application | Useful for hotfixes across branches |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
     A[Git Object Model] --> B[Branching Strategies]
-    B --> C{Merge vs Rebase}
-    C --> D[Merge]
-    C --> E[Rebase]
-    E --> F[Interactive Rebase]
-    D & F --> G[Git Bisect]
-    G --> H[Hooks & Submodules]
-    H --> I[Automation]
+    A --> C[Rebasing]
+    A --> D[Merging]
+    B --> E[GitFlow]
+    B --> F[Trunk-Based]
+    B --> G[Forking]
+    H[Commit History] --> I[Interactive Rebase]
+    J[Hooks] --> K[CI/CD Integration]
+    L[Conflict Resolution] --> M[merge-tools]
+    N[Cherry-Pick] --> O[Hotfixes]
 ```
 
 ## Theory
 
-![Git, Linux Basics and Build Tools](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch02-git-linux-build.png)
+### Git Object Model
 
-### 2.1 Git Object Model
+Git is fundamentally a content-addressable filesystem with a VCS interface. Every Git object is identified by its SHA-1 hash and stored in `.git/objects/`.
 
-> **Pro Tip:** Use git bisect run with your test suite to automatically find regression commits overnight.
+**Four object types:**
 
-Git stores data as a directed acyclic graph of objects. Four object types exist: blobs (file contents), trees (directory listings), commits (snapshots referencing root tree, parent commits, author, committer, and message), and annotated tags (references to commits with metadata). References (branches, tags, HEAD) are pointers to specific commits. Understanding this model is essential for mastering advanced Git operations.
+**Blob:** Stores file content. Named by SHA-1 of the content. Does not store the filename — that's in the tree. Two files with identical content share the same blob.
 
-Each commit is identified by a SHA-1 hash of its contents, including parent hashes. This means the commit graph is tamper-evident: changing any historical commit changes all descendant hashes.
+**Tree:** Stores directory listings — filenames, permissions, and references to blobs or subtrees. Analogous to a filesystem directory.
 
-### 2.2 Branching Strategies
+**Commit:** Snapshot of the entire repository at a point in time. Contains:
+- Pointer to the root tree object
+- Parent commit(s)
+- Author and committer (name, email, timestamp)
+- Commit message
 
-> **Warning:** Rebasing shared branches rewrites history and causes chaos for collaborators. Follow the golden rule.
+**Tag:** A named reference to a specific commit. Annotated tags store metadata and can be signed with GPG.
 
-**Git Flow** â€” Proposed by Vincent Driessen in 2010. Uses two long-running branches: `main` (production-ready code) and `develop` (integration branch). Supporting branches include `feature/*` (new features, branch from develop, merge back to develop), `release/*` (release preparation, branch from develop, merge to main and develop), and `hotfix/*` (urgent production fixes, branch from main, merge to main and develop). Git Flow is well-suited for versioned software with scheduled releases but introduces complexity and overhead for continuous delivery.
+```mermaid
+flowchart TD
+    subgraph "Commit Object"
+        A[Tree: abc123] --> B[Parent: def456]
+        A --> C[Author]
+        A --> D[Message]
+    end
 
-**GitHub Flow** â€” A simpler model proposed by GitHub. Maintains a single long-running `main` branch. Features are developed on short-lived branches, submitted as pull requests, reviewed, and merged. Branches are deleted after merge. GitHub Flow works well for continuous delivery where every merge to main can be deployed. It does not support release branches or hotfix branches explicitly.
+    subgraph "Tree Object"
+        E[src/ -> tree 789] --> F[README.md -> blob 012]
+        E --> G[package.json -> blob 345]
+    end
 
-**GitLab Flow** â€” Combines elements of both. Adds environment branches (`staging`, `production`) that track deployments, and feature branches with merge requests. Introduces upstream-downstream relationships for forked contributions. Supports multiple environments through environment branches rather than release branches.
+    subgraph "Blob Objects"
+        H[README content]
+        I[package.json content]
+        J[Source code files]
+    end
 
-**Trunk-Based Development** â€” Developers commit directly to a shared trunk (main) or use very short-lived feature branches (fewer than 2 days). Frequent small commits avoid merge conflicts. Requires robust feature flags to manage incomplete features. Trunk-based development is associated with high-performing teams and is required for continuous deployment.
+    A --> E
+    F --> H
+    G --> I
+    E --> J
+```
 
-### 2.3 Merge vs Rebase
+**References (refs):** Pointers to commits stored in `.git/refs/`:
+- `refs/heads/main` — Local branch pointer
+- `refs/remotes/origin/main` — Remote tracking branch
+- `refs/tags/v1.0` — Tag pointer
+- `HEAD` — Current branch or commit
 
-> **Remember:** The golden rule of rebasing: never rebase commits that have been pushed to a shared repository.
+**The staging area (index):** Stored in `.git/index`. When you run `git add`, Git creates blob objects and updates the index with the new tree structure. When you run `git commit`, Git creates a commit object pointing to the staged tree.
 
-**Merging** â€” `git merge feature` creates a new commit that has two parents, preserving the complete history of both branches. This accurately represents what happened but can create non-linear history with many merge commits.
+### Branching Strategies
 
-**Rebasing** â€” `git rebase main` replays commits from the current branch onto the tip of main, creating new commits with different hashes. This produces a linear history but rewrites history, which is dangerous for shared branches.
+**GitFlow (Vincent Driessen, 2010):**
+- `main` — Production-ready code
+- `develop` — Integration branch for features
+- `feature/*` — Branched from `develop`
+- `release/*` — Branched from `develop` when preparing release
+- `hotfix/*` — Branched from `main` for critical fixes
 
-The golden rule of rebasing: never rebase commits that have been pushed to a shared repository. Rebase local work before pushing; merge after pushing. The choice between merge and rebase reflects a philosophical difference: merge preserves reality, rebase presents an idealized narrative.
+GitFlow works well for projects with scheduled releases and multiple concurrent versions. It is overly complex for continuous delivery.
 
-### 2.4 Interactive Rebase
+**Trunk-Based Development:**
+- All developers commit to a single branch (`main` or `trunk`)
+- Feature branches are short-lived (hours to a day)
+- Feature toggles hide incomplete work
+- Releases are tagged off `main`
 
-Interactive rebase (`git rebase -i HEAD~n`) opens an editor with instructions for each commit in the range: `pick` (keep as is), `reword` (change message), `edit` (amend commit), `squash` (combine into previous commit), `fixup` (squash discarding message), `drop` (remove). This enables cleaning up a feature branch before merging:
+Trunk-based development is the recommended approach for DevOps teams practicing CI/CD. It reduces merge complexity and ensures everyone integrates continuously.
 
-- Squash WIP commits into coherent logical units
-- Reword unclear commit messages
-- Drop commits that were experimental or wrong
-- Reorder commits for logical clarity
+**Forking Workflow:**
+- Each developer has a personal fork of the main repository
+- Changes flow between forks via pull requests
+- Maintained primarily in open-source projects
 
-Interactive rebase is a cornerstone of clean Git history, which improves code review effectiveness and project archaeology.
+### Merging vs Rebasing
 
-### 2.5 Git Bisect
+**Fast-forward merge:** When the target branch hasn't diverged, Git simply moves the pointer forward. No merge commit.
 
-`git bisect` performs a binary search through the commit graph to find the exact commit that introduced a bug. The user marks a known-good commit and a known-bad commit, then Git checks out the midpoint commit. The user tests the commit and marks it good or bad. Within log2(n) steps, Git identifies the first commit where the bug appeared.
+```text
+Before:  A---B---C (main)
+               \
+                D---E (feature)
+After:   A---B---C---D---E (main)
+```
 
-Automation via `git bisect run` passes a script that returns exit code 0 (good) or 1-127 (bad). For example, `git bisect run make test` runs the test suite at each checkpoint. This is invaluable for regression hunting in large codebases.
+**Three-way merge:** When branches have diverged, Git creates a merge commit with two parents.
 
-### 2.6 Git Hooks
+```text
+Before:  A---B---C---F (main)
+               \
+                D---E (feature)
+After:   A---B---C---F---M (main)
+               \         /
+                D---E---/
+```
 
-Git hooks are scripts that execute at specific points in the Git workflow. Hooks reside in `.git/hooks/` and are not version-controlled by default. Team-wide hooks can be managed through a `.githooks/` directory configured via `git config core.hooksPath .githooks`.
+**Rebasing:** Reapplies commits from one branch onto another, creating a linear history.
 
-Client-side hooks:
-- `pre-commit` â€” Run linters, formatters, and secret scanners before commit is recorded
-- `prepare-commit-msg` â€” Edit the default commit message
-- `commit-msg` â€” Validate commit message format
-- `pre-push` â€” Run tests before pushing
+```text
+Before:  A---B---C (main)
+               \
+                D---E (feature)
+After:   A---B---C---D'---E' (feature)
+```
 
-Server-side hooks:
-- `pre-receive` â€” Validate incoming pushes (e.g., enforce linear history)
-- `update` â€” Per-branch policy enforcement
-- `post-receive` â€” Trigger CI, notifications, deployments
+Rebasing rewrites history — never rebase shared/published branches.
 
-Tools like Husky and pre-commit manage hook installation and versioning across teams.
+### Interactive Rebase
 
-### 2.7 Submodules
+Interactive rebase (`git rebase -i HEAD~N`) enables editing commits before applying. Options per commit:
 
-Submodules embed one Git repository within another at a specific commit. `git submodule add <url> <path>` registers the submodule in `.gitmodules` and records the pinned commit in the parent repository. Submodules enable managing dependencies that are under active development but add complexity:
+- `pick` — Use as-is
+- `reword` — Change commit message
+- `edit` — Amend commit content
+- `squash` — Combine with previous commit
+- `fixup` — Combine but discard message
+- `drop` — Remove commit
+- `exec` — Run a shell command
 
-- `git clone --recurse-submodules` clones with all submodules
-- `git submodule update --remote` updates to latest commit on tracked branch
-- Detached HEAD state is normal in submodules; making changes requires checking out a branch
+### Cherry-Picking
 
-Alternatives include subtree merging and package managers.
+Cherry-picking applies a specific commit to the current HEAD:
 
-### 2.8 Signed Commits and Tags
+```text
+git cherry-pick <commit-hash>
+git cherry-pick -x <commit-hash>  # Adds source reference
+```
 
-Git supports cryptographic signing of commits and tags using GPG or SSH keys. Signed commits verify the identity of the author. Configuration requires generating a key pair, adding the public key to Git hosting, and configuring Git: `git config commit.gpgsign true` and `git config user.signingkey <key-id>`.
+### Git Hooks
 
-GitHub displays signed commits with a verified badge. Signed tags (`git tag -s`) provide assurance for release artifacts.
+Hooks are scripts that run automatically at specific Git lifecycle events. They live in `.git/hooks/` and must be executable.
 
-### 2.9 Git Large File Storage (LFS)
+**Client-side hooks (run on developer machine):**
+- `pre-commit` — Check code style, run linters
+- `prepare-commit-msg` — Edit default commit message
+- `commit-msg` — Validate commit message format
+- `pre-push` — Run tests before pushing
+- `post-merge` — Reindex after merge
 
-Git LFS replaces large files in the repository with text pointers while storing the actual file content on a remote server. This prevents repository bloat from binary files. `git lfs track "*.psd"` registers file patterns. The `git lfs migrate` command rewrites history to move previously committed large files into LFS. LFS is essential for game development, machine learning datasets, and any repository with binary artifacts.
+**Server-side hooks (run on remote repository):**
+- `pre-receive` — Enforce policies on incoming pushes
+- `update` — Per-branch policy enforcement
+- `post-receive` — Trigger CI/CD, deployments, notifications
 
-### 2.10 Git Workflow Automation
+**Example pre-commit hook:**
 
-Git aliases, scripting, and automation frameworks reduce repetitive operations. Examples include:
+```bash
+#!/bin/bash
+set -euo pipefail
 
-- Automation scripts that enforce branch naming conventions
-- CI/CD integration that validates commit history
-- Automation that synchronizes issue tracker state with commit references
-- Scripts that automate release branch creation and version bumping
+# Check for debug statements
+if grep -rn "console.log" src/ --include="*.ts" | grep -v "// OK"; then
+    echo "ERROR: Remove console.log statements before committing"
+    exit 1
+fi
 
-## Summary
+# Run formatter
+npx prettier --check src/
 
-## Concept Comparison Table
+# Run linter
+npx eslint src/
+```
 
-| Concept | Description |
-|---------|-------------|
-| Git Flow | Two long-running branches with feature/release/hotfix branches |
-| GitHub Flow | Single main branch with short-lived feature branches |
-| Trunk-Based Dev | Direct commits to main with very short branches |
-| Merge | Preserves full history with merge commits |
-| Rebase | Linearizes history by replaying commits |
+### Conflict Resolution
 
-## Quick Reference
+When Git cannot automatically merge, it marks conflict markers:
 
-| Topic | Key Points |
-|-------|------------|
-| Git Object Model | Blobs, trees, commits, tags in a DAG |
-| Branch Strategy | Git Flow, GitHub Flow, GitLab Flow, Trunk-Based |
-| Golden Rule | Never rebase shared branches |
-| Interactive Rebase | reword, squash, fixup, drop, edit |
-| Bisect Automation | git bisect run with test script |
+```text
+<<<<<<< HEAD
+Current change in main
+=======
+Incoming change in feature
+>>>>>>> feature/branch
+```
 
-## Cross-Application Matrix
+**Effective strategies:**
+1. Use `git diff` to understand conflict boundaries
+2. Use `git mergetool` with a visual tool (vimdiff, beyond compare)
+3. Use `diff3` conflict style: `git config --global merge.conflictstyle diff3`
+4. Enable `rerere` (reuse recorded resolution): `git config --global rerere.enabled true`
+5. For large conflicts, break resolution into smaller chunks
 
-| Domain | Application |
-|--------|-------------|
-| Web | Branch-based feature development with PR reviews |
-| Cloud | GitOps workflows with trunk-based deployment |
-| Enterprise | Git Flow for scheduled release cycles |
-| Embedded | Submodules for dependency management |
+### DevOps-Specific Git Patterns
+
+**Semantic commit messages:**
+```text
+feat(api): add user authentication endpoint
+fix(db): correct connection pool leak
+chore(deps): update lodash to 4.17.21
+docs(readme): update deployment instructions
+ci(pipeline): parallelize test runs
+refactor(core): extract payment validation
+test(auth): add unit tests for JWT token
+```
+
+**Conventional Commits specification:** Structure as `<type>(<scope>): <description>`. Enables automated changelog generation, semantic versioning, and release notes.
+
+**Git blame and bisect:**
+```text
+git blame -L 10,30 src/app.ts           # Line-level attribution
+git bisect start                        # Binary search for bug introduction
+git bisect bad                          # Current commit is bad
+git bisect good v1.0                    # v1.0 was good
+git bisect run npm test                 # Automated bisection
+```
+
+**Git worktrees for parallel work:**
+```text
+git worktree add ../hotfix hotfix-branch
+git worktree list
+git worktree remove ../hotfix
+```
+
+---
+
+## Examples
+
+### Example 1: Git Internal Object Inspection
+
+```typescript
+// Simulating Git's object storage model
+import { createHash } from 'crypto';
+
+interface GitObject {
+  type: 'blob' | 'tree' | 'commit' | 'tag';
+  content: string;
+  hash: string;
+}
+
+class GitObjectStore {
+  private objects: Map<string, GitObject> = new Map();
+
+  hashContent(type: string, content: string): string {
+    const raw = `${type} ${content.length}\0${content}`;
+    return createHash('sha1').update(raw).digest('hex');
+  }
+
+  createBlob(content: string): string {
+    const hash = this.hashContent('blob', content);
+    this.objects.set(hash, { type: 'blob', content, hash });
+    return hash;
+  }
+
+  createTree(entries: Array<{ mode: string; name: string; hash: string }>): string {
+    let content = '';
+    for (const entry of entries) {
+      content += `${entry.mode} ${entry.name}\0${Buffer.from(entry.hash, 'hex').toString('binary')}`;
+    }
+    const hash = this.hashContent('tree', content);
+    this.objects.set(hash, { type: 'tree', content, hash });
+    return hash;
+  }
+
+  createCommit(tree: string, parent: string | null, message: string): string {
+    let content = `tree ${tree}\n`;
+    if (parent) content += `parent ${parent}\n`;
+    content += `author Dev Ops <devops@example.com> ${Date.now()} +0000\n`;
+    content += `committer Dev Ops <devops@example.com> ${Date.now()} +0000\n\n`;
+    content += `${message}\n`;
+    const hash = this.hashContent('commit', content);
+    this.objects.set(hash, { type: 'commit', content, hash });
+    return hash;
+  }
+}
+
+const store = new GitObjectStore();
+const readmeHash = store.createBlob('# My Project\n');
+const srcTree = store.createTree([
+  { mode: '100644', name: 'index.ts', hash: store.createBlob('console.log("hello");') },
+]);
+const mainTree = store.createTree([
+  { mode: '100644', name: 'README.md', hash: readmeHash },
+  { mode: '040000', name: 'src', hash: srcTree },
+]);
+const commitHash = store.createCommit(mainTree, null, 'Initial commit');
+console.log(`Commit hash: ${commitHash}`);
+```
+
+### Example 2: Branch Management Workflow
+
+```typescript
+// Simulating branching and merging operations
+interface Commit {
+  hash: string;
+  message: string;
+  parent: string | null;
+}
+
+class GitRepository {
+  private commits: Map<string, Commit> = new Map();
+  private branches: Map<string, string> = new Map();
+  private HEAD: string | null = null;
+
+  commit(message: string): string {
+    const hash = `c${this.commits.size + 1}`;
+    const parent = this.HEAD;
+    const c: Commit = { hash, message, parent };
+    this.commits.set(hash, c);
+    this.HEAD = hash;
+    return hash;
+  }
+
+  createBranch(name: string): void {
+    this.branches.set(name, this.HEAD!);
+  }
+
+  checkoutBranch(name: string): void {
+    this.HEAD = this.branches.get(name)!;
+  }
+
+  fastForwardMerge(branch: string): boolean {
+    const targetHead = this.branches.get(branch)!;
+    // Check if current HEAD is ancestor of target
+    let current: string | null = targetHead;
+    while (current) {
+      if (current === this.HEAD) {
+        this.HEAD = targetHead;
+        return true;
+      }
+      current = this.commits.get(current)?.parent ?? null;
+    }
+    return false;
+  }
+
+  log(): Commit[] {
+    const history: Commit[] = [];
+    let current: string | null = this.HEAD;
+    while (current) {
+      history.push(this.commits.get(current)!);
+      current = this.commits.get(current)?.parent ?? null;
+    }
+    return history;
+  }
+}
+
+const repo = new GitRepository();
+repo.commit('Initial commit');
+repo.createBranch('feature/login');
+repo.commit('Add README');
+
+repo.checkoutBranch('feature/login');
+repo.commit('Add login form');
+repo.commit('Implement auth logic');
+
+console.log('Feature branch history:');
+repo.log().forEach(c => console.log(`  ${c.hash}: ${c.message}`));
+
+repo.checkoutBranch('main');
+repo.fastForwardMerge('feature/login');
+console.log('\nAfter merge, main history:');
+repo.log().forEach(c => console.log(`  ${c.hash}: ${c.message}`));
+```
+
+### Example 3: Git Hook Implementation
+
+```typescript
+// Git commit-msg hook implementation for conventional commit validation
+interface CommitMessage {
+  type: string;
+  scope: string | null;
+  description: string;
+}
+
+function parseCommitMessage(message: string): CommitMessage | null {
+  const pattern = /^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([\w.-]+\))?:\s(.+)$/;
+  const match = message.match(pattern);
+  if (!match) return null;
+  return {
+    type: match[1],
+    scope: match[2]?.replace(/[()]/g, '') ?? null,
+    description: match[3],
+  };
+}
+
+function validateConventionalCommit(message: string): string[] {
+  const errors: string[] = [];
+  const parsed = parseCommitMessage(message);
+
+  if (!parsed) {
+    return ['Invalid format. Use: <type>(<scope>): <description>'];
+  }
+
+  const validTypes = ['feat', 'fix', 'docs', 'style', 'refactor', 'perf', 'test', 'build', 'ci', 'chore', 'revert'];
+  if (!validTypes.includes(parsed.type)) {
+    errors.push(`Invalid type: ${parsed.type}`);
+  }
+
+  if (parsed.description.length > 72) {
+    errors.push('Description exceeds 72 characters');
+  }
+
+  if (parsed.description.endsWith('.')) {
+    errors.push('Description should not end with period');
+  }
+
+  return errors;
+}
+
+const testMessages = [
+  'feat(auth): add login endpoint',
+  'added cool stuff',
+  'fix(db): correct connection pool leak',
+];
+
+for (const msg of testMessages) {
+  const errors = validateConventionalCommit(msg);
+  if (errors.length > 0) {
+    console.log(`REJECTED: "${msg}"`);
+    errors.forEach(e => console.log(`  - ${e}`));
+  } else {
+    console.log(`ACCEPTED: "${msg}"`);
+  }
+}
+```
+
+---
+
+## Practical Takeaways
+
+1. **Use trunk-based development for CI/CD.** Short-lived branches keep integration pain low.
+2. **Squash merge feature branches.** Keep `main` history clean with one commit per feature.
+3. **Write descriptive commit messages.** Use conventional commits for automated tooling.
+4. **Never rebase shared branches.** It rewrites history and breaks other developers' clones.
+5. **Use `rerere` for recurrent conflicts.** Git remembers how you resolved conflicts before.
+6. **Automate with hooks.** Pre-commit hooks catch issues before they reach CI/CD.
+
+---
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What's the golden rule of rebasing?</summary>**A)** Always rebase before every push<br>**B)** Never rebase commits pushed to a shared repo<br>**C)** Rebase only on Fridays<br>**D)** Always squash commits during rebase<br><br>**Answer: B)** Never rebase commits pushed to a shared repo</details>
+<details><summary>Question 1: What are the four Git object types?</summary>**A)** Head, Branch, Tag, Commit<br>**B)** Blob, Tree, Commit, Tag<br>**C)** File, Directory, Snapshot, Reference<br>**D)** Index, Working, Staging, Remote<br><br>**Answer: B)** Blob, Tree, Commit, Tag</details>
 
-<details><summary>Question 2: Which branching strategy is recommended for CI/CD?</summary>**A)** Git Flow<br>**B)** Trunk-Based Development<br>**C)** Feature Branch<br>**D)** Release Branch<br><br>**Answer: B)** Trunk-Based Development</details>
+<details><summary>Question 2: What does `git rebase -i` allow you to do?</summary>**A)** Force push to remote<br>**B)** Edit commit history interactively<br>**C)** Merge two branches<br>**D)** Create a new branch<br><br>**Answer: B)** Edit commit history interactively</details>
 
-<details><summary>Question 3: What does interactive rebase NOT allow?</summary>**A)** Squash commits<br>**B)** Reword messages<br>**C)** Drop commits<br>**D)** Merge conflict resolution<br><br>**Answer: D)** Merge conflict resolution</details>
+<details><summary>Question 3: Why should you not rebase shared branches?</summary>**A)** It causes merge conflicts<br>**B)** It rewrites history, breaking other clones<br>**C)** It is slower than merging<br>**D)** It creates duplicate commits<br><br>**Answer: B)** It rewrites history, breaking other clones</details>
 
+<details><summary>Question 4: When does a three-way merge occur?</summary>**A)** When branches have diverged<br>**B)** When merging two unrelated repositories<br>**C)** When using rebase instead of merge<br>**D)** When pushing to a remote<br><br>**Answer: A)** When branches have diverged</details>
+
+<details><summary>Question 5: What is the purpose of `git rerere`?</summary>**A)** Revert resolved changes<br>**B)** Reuse recorded resolution of conflicts<br>**C)** Reset remote repository<br>**D)** Remove redundant entries<br><br>**Answer: B)** Reuse recorded resolution of conflicts</details>
+
+---
 
 ## Summary
 
-Advanced Git proficiency is foundational to DevOps practice. Branching strategies must align with delivery cadence and team size. Merge and rebase serve different purposes and must be applied deliberately. Interactive rebase, bisect, hooks, and submodules are powerful tools when understood properly. Signed commits and Git LFS address security and scale concerns. Git remains the most widely adopted version control system in professional software engineering.
+- Git's object model consists of blobs (file content), trees (directory listings), commits (snapshots), and tags (named references).
+- Branching strategies range from GitFlow (complex, release-oriented) to trunk-based (simple, CI/CD-friendly).
+- Merging creates merge commits; rebasing linearizes history but rewrites commits.
+- Interactive rebasing enables squashing, rewording, and reordering commits before sharing.
+- Git hooks automate policy enforcement at commit, push, and receive stages.
+- Cherry-picking applies individual commits across branches for hotfixes.
+- Semantic commit messages enable automated changelog and version management.
+- Understanding Git internals demystifies the tool and improves troubleshooting.
+
+---
 
 ## Exercises
 
 ### Review Questions
-
-1. Compare Git Flow and trunk-based development across: branch lifetime, merge frequency, suitability for CI/CD, and team coordination overhead.
-2. Explain the golden rule of rebasing. Why does rebasing shared branches cause problems?
-3. How does git bisect determine its search path? What is the worst-case number of bisect steps for 10,000 commits?
-4. List three client-side Git hooks and describe appropriate automation for each.
-5. When should Git LFS be used instead of standard Git commits?
+1. How does Git store file content? What determines whether two identical files share storage?
+2. What is the difference between `git merge` and `git rebase`?
+3. When would you use GitFlow over trunk-based development?
+4. How do conventional commit messages enable automation?
+5. What is the difference between client-side and server-side Git hooks?
 
 ### Application Problems
-
-1. Initialize a Git repository, create five commits with intentional WIP-style messages. Use interactive rebase to squash two commits, reword one message, and reorder two commits. Document the sequence of commands.
-2. Create a pre-commit hook that rejects commits with "TODO" or "FIXME" in staged files. Install it via `.githooks/` directory. Demonstrate it working with a test commit.
-3. Set up a repository with GPG-signed commits. Export your public key. Create a repository with a signed tag. Verify both the commit and tag signatures.
+1. Create a Git pre-commit hook that runs ESLint and Prettier checks.
+2. Simulate a merge conflict resolution scenario with two branches diverging on the same file.
+3. Design a branching strategy for a service that needs to support v1, v2, and v3 simultaneously while deploying daily.
+4. Write a script that uses `git bisect` to find a bug introduced in a range of commits.
 
 ### Challenge Problem
-
-Design a branching strategy for a team of 12 engineers practicing continuous delivery with daily deployments. The team maintains three active releases simultaneously (v2.x, v3.x, v4.x). Production hotfixes occur approximately twice per month. The system processes PCI-compliant financial data requiring audit trails for all code changes. Propose a branching model, specify merge strategies, define the commit message convention, specify hook-based enforcement mechanisms, and describe how the hotfix process flows through your model. Justify each design decision with reference to the constraints.
+1. Build a complete Git workflow automation system that: enforces conventional commits via pre-commit hook, automatically generates a changelog from commit messages, runs CI/CD via post-receive hook, creates release tags with annotated messages, and prevents force-push to `main` via server-side hooks. Implement the system as a set of scripts and configuration files.

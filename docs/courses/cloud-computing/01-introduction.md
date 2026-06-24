@@ -13,6 +13,8 @@ After completing this chapter, students will be able to:
 5. Analyze the economic differences between capital expenditure and operational expenditure models.
 6. Evaluate the benefits and challenges of adopting cloud computing.
 7. Identify the major cloud service providers and their market positioning.
+8. Apply the 6 Rs framework to cloud migration planning.
+9. Assess vendor lock-in risks and mitigation strategies.
 
 ## Chapter at a Glance
 
@@ -24,6 +26,7 @@ After completing this chapter, students will be able to:
 | SaaS | Fully managed applications | Zero ops, use as-is |
 | Deployment Models | Public, Private, Hybrid, Community, Multi-Cloud | Each has different trade-offs |
 | Cloud Economics | CAPEX → OPEX shift | Pay for what you use, no upfront investment |
+| 6 Rs Migration | Rehost, Replatform, Refactor, Repurchase, Retire, Retain | Choose strategy by business value |
 
 ## Chapter Roadmap
 
@@ -33,7 +36,9 @@ flowchart LR
     B --> C[Service Models]
     C --> D[Deployment Models]
     D --> E[Cloud Economics]
-    E --> F[Major Providers]
+    E --> F[Migration Strategies]
+    F --> G[Vendor Lock-in]
+    G --> H[Major Providers]
 ```
 
 ## Theory
@@ -64,9 +69,95 @@ The NIST definition is significant because it establishes a clear boundary betwe
 
 **Software as a Service (SaaS).** The consumer uses the provider's applications running on a cloud infrastructure. The applications are accessible from various client devices through either a thin client interface, such as a web browser (e.g., web-based email), or a programmatic interface. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings. Examples include Salesforce, Google Workspace, Microsoft 365, and Slack.
 
-![Cloud Service Models](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch01-service-models.png)
+```mermaid
+graph TB
+    subgraph On-Premises
+        A1[Applications]
+        A2[Data]
+        A3[Runtime]
+        A4[OS]
+        A5[Virtualization]
+        A6[Servers]
+        A7[Storage]
+        A8[Networking]
+    end
+    subgraph IaaS
+        B1[Applications]
+        B2[Data]
+        B3[Runtime]
+        B4[OS]
+        B5[Virtualization]
+        B6[Servers]
+        B7[Storage]
+        B8[Networking]
+    end
+    subgraph PaaS
+        C1[Applications]
+        C2[Data]
+        C3[Runtime]
+        C4[OS]
+        C5[Virtualization]
+        C6[Servers]
+        C7[Storage]
+        C8[Networking]
+    end
+    subgraph SaaS
+        D1[Applications]
+        D2[Data]
+        D3[Runtime]
+        D4[OS]
+        D5[Virtualization]
+        D6[Servers]
+        D7[Storage]
+        D8[Networking]
+    end
+    style A1 fill:#e74c3c,color:#fff
+    style A2 fill:#e74c3c,color:#fff
+    style A3 fill:#e74c3c,color:#fff
+    style A4 fill:#e74c3c,color:#fff
+    style A5 fill:#e74c3c,color:#fff
+    style A6 fill:#e74c3c,color:#fff
+    style A7 fill:#e74c3c,color:#fff
+    style A8 fill:#e74c3c,color:#fff
+    style B1 fill:#e74c3c,color:#fff
+    style B2 fill:#e74c3c,color:#fff
+    style B3 fill:#e74c3c,color:#fff
+    style B4 fill:#e74c3c,color:#fff
+    style B5 fill:#3498db,color:#fff
+    style B6 fill:#3498db,color:#fff
+    style B7 fill:#3498db,color:#fff
+    style B8 fill:#3498db,color:#fff
+    style C1 fill:#e74c3c,color:#fff
+    style C2 fill:#e74c3c,color:#fff
+    style C3 fill:#3498db,color:#fff
+    style C4 fill:#3498db,color:#fff
+    style C5 fill:#3498db,color:#fff
+    style C6 fill:#3498db,color:#fff
+    style C7 fill:#3498db,color:#fff
+    style C8 fill:#3498db,color:#fff
+    style D1 fill:#e74c3c,color:#fff
+    style D2 fill:#3498db,color:#fff
+    style D3 fill:#3498db,color:#fff
+    style D4 fill:#3498db,color:#fff
+    style D5 fill:#3498db,color:#fff
+    style D6 fill:#3498db,color:#fff
+    style D7 fill:#3498db,color:#fff
+    style D8 fill:#3498db,color:#fff
+```
 
-### 1.4 Deployment Models
+### 1.4 Service Model Comparison
+
+| Aspect | IaaS | PaaS | SaaS |
+|--------|------|------|------|
+| What you manage | Apps, data, runtime, OS, middleware | Apps, data | Users, configuration |
+| What provider manages | Virtualization, servers, storage, networking | Runtime, OS, virtualization, servers, storage, networking | Everything including apps |
+| Technical skill needed | System administration | Development only | No technical skill |
+| Customization | Full OS and app control | Platform-constrained | Limited config |
+| Scalability | Manual or auto via ASG | Auto-scaling built in | Provider handles |
+| Example providers | AWS EC2, Azure VMs, GCE | Elastic Beanstalk, App Service, App Engine | Salesforce, Google Workspace |
+| Typical use case | Legacy migration, specialized workloads | Web apps, APIs, microservices | Email, CRM, collaboration |
+
+### 1.5 Deployment Models
 
 **Public Cloud.** The cloud infrastructure is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organization, or some combination of them. It exists on the premises of the cloud provider. Public cloud offers economies of scale, elastic capacity, and pay-as-you-go pricing. The trade-off is reduced control over physical infrastructure and potential data residency concerns.
 
@@ -78,21 +169,117 @@ The NIST definition is significant because it establishes a clear boundary betwe
 
 **Multi-Cloud.** Multi-cloud refers to the use of two or more public cloud providers simultaneously. This strategy avoids vendor lock-in, provides geographic redundancy, and allows organizations to use the best-of-breed services from each provider. However, multi-cloud introduces significant complexity in networking, security, and operations.
 
-### 1.5 Cloud Economics
+```mermaid
+graph TD
+    subgraph "Deployment Model Spectrum"
+        A[On-Premises] -->|Virtualize| B[Private Cloud]
+        B -->|Connect| C[Hybrid Cloud]
+        C -->|Expand| D[Public Cloud]
+        D -->|Multiple| E[Multi-Cloud]
+    end
+    subgraph "Control vs Cost"
+        F[High Control] --> G[High Cost]
+        H[Low Control] --> I[Low Cost]
+    end
+    B -.-> F
+    D -.-> I
+```
+
+### 1.6 Cloud Economics
 
 **Capital Expenditure (CAPEX).** In the traditional on-premises IT model, organizations invest heavily in hardware, software, data center facilities, and staffing before realizing any value. CAPEX is characterized by large upfront costs, depreciation schedules spanning multiple years, and the risk of over-provisioning or under-provisioning. The organization bears the full financial risk of capacity planning errors.
 
 **Operational Expenditure (OPEX).** Cloud computing shifts costs from CAPEX to OPEX, where organizations pay only for the resources they consume. This model provides financial flexibility, eliminates upfront investment, and aligns costs directly with business activity. OPEX also includes the operational costs of managing cloud resources, including data transfer, support plans, and specialized services.
 
+| Cost Category | Traditional (CAPEX) | Cloud (OPEX) |
+|---------------|---------------------|---------------|
+| Hardware | $50,000–$500,000 upfront | $0 upfront |
+| Software licenses | Perpetual licenses, upfront | Subscription, monthly |
+| Facilities | Data center construction/lease | Included in provider price |
+| Power & cooling | $100–$300/kW/month | Included in provider price |
+| Staffing | Full-time ops team | Reduced ops headcount |
+| Scaling | Over-provision or under-provision | Elastic, pay-as-you-go |
+| Upgrades | Manual, disruptive | Automatic by provider |
+| Depreciation | 3-5 year schedules | No depreciation |
+
 **Total Cost of Ownership (TCO).** TCO analysis compares the full cost of on-premises infrastructure (hardware, software, labor, facilities, electricity, cooling, and network) against the equivalent cloud services. Cloud TCO must account for compute costs, storage costs, data transfer costs, and the labor costs of cloud operations. Organizations must also factor in the cost of downtime, disaster recovery, and security compliance. Cloud often proves more cost-effective for variable workloads, while predictable, high-utilization workloads may be cheaper on-premises.
 
-### 1.6 Benefits and Challenges
+### 1.7 Cloud Adoption Drivers
+
+Organizations adopt cloud computing for several strategic reasons:
+
+- **Agility and Speed:** Provision resources in minutes instead of weeks. Development teams can spin up test environments instantly and experiment without procurement delays.
+- **Elasticity:** Match capacity to demand in real time. No more over-provisioning for peak load or under-provisioning and losing revenue.
+- **Cost Efficiency:** Convert fixed costs to variable costs. Pay only for what you use, when you use it.
+- **Global Scale:** Deploy applications in data centers around the world with a few clicks. Reach users wherever they are with low latency.
+- **Innovation Access:** Leverage advanced services (AI/ML, big data, IoT, serverless) that would be prohibitively expensive to build on-premises.
+- **Focus on Core Business:** Offload undifferentiated heavy lifting (server maintenance, patching, capacity planning) to the provider.
+
+### 1.8 Common Cloud Myths
+
+Myth 1: "Cloud is always cheaper." Cloud can be more expensive for predictable, high-utilization workloads. A server running at 90% utilization 24/7 is often cheaper on-premises. Cloud's financial advantage comes from elasticity, not absolute cost.
+
+Myth 2: "Cloud is less secure." Major cloud providers invest billions in security — more than most organizations can afford. However, the shared responsibility model means customers must configure their part correctly. Misconfiguration, not the provider, causes most cloud breaches.
+
+Myth 3: "Cloud means losing control." Organizations retain full control over their data, who accesses it, and how it is encrypted. Cloud providers offer extensive governance tools for policy enforcement, auditing, and access control.
+
+Myth 4: "Migration is a one-time project." Cloud adoption is an ongoing journey. Initial lift-and-shift migration is just the first step. Modernization, optimization, and governance are continuous processes.
+
+Myth 5: "All workloads should move to the cloud." Some workloads are better kept on-premises due to latency requirements, regulatory constraints, or economic factors. The right strategy is selective migration, not wholesale movement.
+
+### 1.9 Cloud Migration Strategies (The 6 Rs)
+
+```mermaid
+graph TB
+    A[Current State] --> B{Which Strategy?}
+    B --> C[Rehost<br/>Lift & Shift]
+    B --> D[Replatform<br/>Lift, Tinker & Shift]
+    B --> E[Refactor<br/>Re-architect]
+    B --> F[Repurchase<br/>Replace with SaaS]
+    B --> G[Retire<br/>Decommission]
+    B --> H[Retain<br/>Keep as-is]
+    C --> I[Fastest migration<br/>Minimal change]
+    D --> J[Some cloud optimization<br/>Moderate effort]
+    E --> K[Maximum cloud benefit<br/>Highest effort]
+    F --> L[Buy instead of build<br/>Quick win]
+    G --> M[Reduce footprint<br/>Cost saving]
+    H --> N[Defer decision<br/>Zero risk]
+```
+
+**Rehost (Lift and Shift).** Move applications as-is to the cloud with minimal changes. Fastest migration path. Suitable for legacy applications that are difficult to modify. Often automated with tools like AWS Application Migration Service or Azure Migrate. Provides immediate benefits from data center exit but limited cloud-native advantages.
+
+**Replatform (Lift, Tinker, and Shift).** Make minor cloud-optimizing changes during migration without changing core architecture. Examples: moving from self-managed MySQL to RDS, or from on-premises load balancers to cloud-native ALB. Balances speed with some cloud benefits.
+
+**Refactor (Re-architect).** Rebuild the application using cloud-native patterns (microservices, serverless, containers). Highest effort but maximum benefit: elasticity, reduced costs, improved resilience. Usually reserved for applications where the business value justifies the investment.
+
+**Repurchase.** Replace the application with a SaaS alternative. Eliminates all maintenance burden. Common for CRM (replace with Salesforce), email (replace with Google Workspace), and HR systems.
+
+**Retire.** Decommission applications that are no longer needed. Many organizations find 10-20% of their application portfolio has no business owner or active users.
+
+**Retain.** Keep applications on-premises for now. Valid reasons: regulatory constraints, extreme latency sensitivity, recent major investment in on-premises infrastructure, or pending decommission.
+
+### 1.10 Vendor Lock-in
+
+Vendor lock-in occurs when a customer becomes dependent on a specific provider's proprietary services and faces significant cost or complexity when switching. In cloud computing, lock-in risks include:
+
+- **Data egress fees:** Most providers charge to move data out ($0.05–$0.12/GB). Moving petabytes of data can cost hundreds of thousands of dollars.
+- **Proprietary APIs:** Services like DynamoDB, SQS, and Lambda use provider-specific APIs. Code written for one provider requires rework for another.
+- **Managed service coupling:** Using managed databases, message queues, or AI services ties the architecture to that provider.
+
+**Mitigation strategies:**
+- Use open standards and multi-cloud tools (Terraform, Kubernetes, Docker)
+- Design for portability at the application layer
+- Maintain data portability (avoid proprietary database features)
+- Negotiate data egress discounts for large volumes
+- Use cloud-agnostic abstraction layers (Dapr, Knative, CloudEvents)
+
+### 1.11 Benefits and Challenges
 
 **Benefits.** Cloud computing offers agility through rapid provisioning, global reach through geographically distributed data centers, elasticity to match capacity to demand, pay-as-you-go pricing that aligns costs with usage, reduced maintenance burden, improved disaster recovery capabilities, automatic software updates, increased collaboration, and access to advanced technologies such as machine learning, big data analytics, and serverless computing that would be prohibitively expensive to implement on-premises.
 
 **Challenges.** Cloud adoption presents several challenges: security and compliance concerns around data protection and regulatory requirements, vendor lock-in risks associated with proprietary services, cost management complexity due to the granularity of billing, technical expertise requirements for cloud architecture and operations, latency and bandwidth constraints for latency-sensitive applications, data transfer costs for large-scale data movement, and the complexity of integrating cloud services with existing on-premises systems.
 
-### 1.7 Major Cloud Providers
+### 1.12 Major Cloud Providers
 
 Amazon Web Services (AWS), launched in 2006, remains the market leader with the broadest portfolio of services and the largest global infrastructure footprint. Microsoft Azure, launched in 2010, leads in enterprise integration with Microsoft products and hybrid cloud capabilities. Google Cloud Platform (GCP), launched in 2010, differentiates through leadership in data analytics, machine learning, and container-native infrastructure. Other significant providers include IBM Cloud, Oracle Cloud, and Alibaba Cloud, each with specific regional or industry specializations.
 
@@ -104,19 +291,69 @@ A company needs to run a web application with variable traffic. On-premises: the
 
 ### Example 1.2: Service Model Abstraction Layers
 
-| Layer | IaaS | PaaS | SaaS |
-|-------|------|------|------|
-| Applications | Managed | Managed | Managed by provider |
-| Data | Managed | Managed | Managed by provider |
-| Runtime | Managed | Managed by provider | Managed by provider |
-| OS | Managed by provider | Managed by provider | Managed by provider |
-| Virtualization | Managed by provider | Managed by provider | Managed by provider |
-| Servers | Managed by provider | Managed by provider | Managed by provider |
-| Storage | Managed by provider | Managed by provider | Managed by provider |
-| Networking | Managed by provider | Managed by provider | Managed by provider |
-| Customer manages: | Applications, data, runtime, OS | Applications, data | Nothing |
+| Layer | On-Premises | IaaS | PaaS | SaaS |
+|-------|-------------|------|------|------|
+| Applications | You manage | You manage | You manage | Provider manages |
+| Data | You manage | You manage | You manage | Provider manages |
+| Runtime | You manage | You manage | Provider manages | Provider manages |
+| OS | You manage | You manage | Provider manages | Provider manages |
+| Virtualization | You manage | Provider manages | Provider manages | Provider manages |
+| Servers | You manage | Provider manages | Provider manages | Provider manages |
+| Storage | You manage | Provider manages | Provider manages | Provider manages |
+| Networking | You manage | Provider manages | Provider manages | Provider manages |
 
-> **One-Sentence Takeaway:** Cloud computing transforms IT from a capital-intensive, capacity-planned utility to an elastic, pay-per-use model that lets organizations match infrastructure spend directly to business activity.
+### Example 1.3: 6 Rs Decision Flow
+
+```typescript
+type MigrationStrategy = "rehost" | "replatform" | "refactor" | "repurchase" | "retire" | "retain";
+
+interface Application {
+  name: string;
+  isLegacy: boolean;
+  canModify: boolean;
+  hasSaaSAlternative: boolean;
+  hasActiveUsers: boolean;
+  businessCriticality: "low" | "medium" | "high";
+}
+
+function determineMigrationStrategy(app: Application): MigrationStrategy {
+  if (!app.hasActiveUsers) return "retire";
+
+  if (app.hasSaaSAlternative && app.businessCriticality !== "high") {
+    return "repurchase";
+  }
+
+  if (app.isLegacy && !app.canModify) {
+    return "rehost";
+  }
+
+  if (app.businessCriticality === "high" && app.canModify) {
+    return "refactor";
+  }
+
+  return "replatform";
+}
+
+const apps: Application[] = [
+  { name: "Legacy CRM", isLegacy: true, canModify: false, hasSaaSAlternative: true, hasActiveUsers: true, businessCriticality: "high" },
+  { name: "Internal Dashboard", isLegacy: false, canModify: true, hasSaaSAlternative: false, hasActiveUsers: true, businessCriticality: "low" },
+  { name: "EOL Reporting Tool", isLegacy: true, canModify: false, hasSaaSAlternative: false, hasActiveUsers: false, businessCriticality: "low" },
+];
+
+for (const app of apps) {
+  const strategy = determineMigrationStrategy(app);
+  console.log(`${app.name}: ${strategy}`);
+}
+```
+
+Output:
+```
+Legacy CRM: repurchase
+Internal Dashboard: refactor
+EOL Reporting Tool: retire
+```
+
+> **One-Sentence Takeaway:** Cloud computing transforms IT from a capital-intensive, fixed-capacity utility to an elastic, pay-per-use model that lets organizations match infrastructure spend directly to business activity.
 
 > **Pro Tip:** Start your cloud journey with SaaS for standard business functions (email, CRM), then adopt PaaS for custom development, and finally IaaS only when you need fine-grained infrastructure control. This minimizes operational overhead.
 
@@ -132,6 +369,7 @@ A company needs to run a web application with variable traffic. On-premises: the
 | Public Cloud | Shared multi-tenant infrastructure | Economies of scale | Startups, variable workloads |
 | Private Cloud | Single-tenant dedicated infrastructure | Maximum control, compliance | Regulated industries |
 | Hybrid Cloud | Public + Private connected | Flexibility + control | Burst capacity, DR |
+| Multi-Cloud | Multiple public providers | Avoid lock-in, best-of-breed | Redundancy, geographic coverage |
 
 ## Quick Reference
 
@@ -141,6 +379,7 @@ A company needs to run a web application with variable traffic. On-premises: the
 | **Service Models** | IaaS, PaaS, SaaS | Increasing abstraction = decreasing control |
 | **Deployment Models** | Public, Private, Hybrid, Community, Multi-Cloud | Choice depends on compliance and workload |
 | **Cost Models** | CAPEX vs OPEX, TCO | Cloud wins for variable, loses for predictable high-usage |
+| **6 Rs** | Rehost, Replatform, Refactor, Repurchase, Retire, Retain | Select by app criticality and modifiability |
 | **Major Providers** | AWS, Azure, GCP | Each has different strengths |
 
 ## Cross-Application Matrix
@@ -152,6 +391,7 @@ A company needs to run a web application with variable traffic. On-premises: the
 | PaaS | App deployment | CI/CD pipelines | Managed security | Rapid development |
 | SaaS | End-user tools | Collaboration | Built-in compliance | Enterprise productivity |
 | Hybrid Cloud | Multi-site architecture | Consistent operations | Data residency | Regulatory compliance |
+| 6 Rs Migration | Migration planning | Environment strategy | Compliance mapping | Portfolio rationalization |
 
 ## Chapter Quiz
 
@@ -185,12 +425,34 @@ A company needs to run a web application with variable traffic. On-premises: the
 
 <details>
 <summary>Answer</summary>
-**B) Cloud's strength is elasticity — scaling down when not needed saves money; a fully utilized on-prem server is cheaper.** The cloud's pay-per-use model is most cost-effective for workloads with fluctuating demand. For predictable, high-utilization workloads (90%+ utilization), on-premises with reserved capacity can be cheaper.
+**B) Cloud's strength is elasticity — scaling down when not needed saves money; a fully utilized on-prem server is cheaper.** The cloud's pay-per-use model is most cost-effective for workloads with fluctuating demand.
+</details>
+
+4. Which cloud migration strategy involves making minimal changes and moving applications as-is?
+   - A) Refactor
+   - B) Replatform
+   - C) Rehost
+   - D) Repurchase
+
+<details>
+<summary>Answer</summary>
+**C) Rehost (Lift and Shift).** Rehost moves applications with minimal changes and is the fastest migration path, though it yields the least cloud-native benefit.
+</details>
+
+5. What is the primary risk of vendor lock-in in cloud computing?
+   - A) Provider goes out of business
+   - B) High switching costs due to data egress fees and proprietary APIs
+   - C) Loss of source code
+   - D) Mandatory software upgrades
+
+<details>
+<summary>Answer</summary>
+**B) High switching costs due to data egress fees and proprietary APIs.** Data egress fees ($0.05–$0.12/GB) and provider-specific service APIs create economic and technical barriers to switching providers.
 </details>
 
 ## Summary
 
-Cloud computing represents a paradigm shift from capital-intensive, fixed-capacity IT infrastructure to an elastic, pay-per-use utility model. The five essential characteristics of on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service define the boundaries of true cloud computing. The three service models (IaaS, PaaS, SaaS) offer increasing levels of abstraction, while deployment models (public, private, hybrid, community, multi-cloud) provide flexibility in how cloud infrastructure is owned and operated. Cloud economics favor variable workloads through the CAPEX-to-OPEX shift, though careful TCO analysis is required. Organizations must weigh the benefits of agility, scale, and innovation against the challenges of security, compliance, and operational complexity.
+Cloud computing represents a paradigm shift from capital-intensive, fixed-capacity IT infrastructure to an elastic, pay-per-use utility model. The five essential characteristics of on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service define the boundaries of true cloud computing. The three service models (IaaS, PaaS, SaaS) offer increasing levels of abstraction, while deployment models (public, private, hybrid, community, multi-cloud) provide flexibility in how cloud infrastructure is owned and operated. Cloud economics favor variable workloads through the CAPEX-to-OPEX shift, though careful TCO analysis is required. Organizations must weigh the benefits of agility, scale, and innovation against the challenges of security, compliance, and operational complexity. The 6 Rs framework provides a structured approach to cloud migration, while vendor lock-in awareness and mitigation strategies ensure long-term architectural flexibility.
 
 ## Exercises
 
@@ -205,7 +467,7 @@ Cloud computing represents a paradigm shift from capital-intensive, fixed-capaci
 7. What is the shared responsibility model in cloud computing, and why is it important?
 8. Identify three major cloud providers and describe a key differentiator for each.
 9. What challenges does vendor lock-in present in a multi-cloud strategy?
-10. How does measured service enable the pay-per-use billing model?
+10. Explain the 6 Rs of cloud migration and when to use each.
 
 ### Application Problems
 
@@ -216,6 +478,8 @@ Cloud computing represents a paradigm shift from capital-intensive, fixed-capaci
 3. A hospital system must store patient records subject to HIPAA regulations. Select a deployment model and explain how it addresses compliance, data residency, and security requirements while maintaining operational efficiency.
 
 4. An e-commerce platform experiences 95% normal traffic and 5% flash sales with ten times the normal load. Design a hybrid cloud strategy that handles the flash sales without maintaining excess idle capacity.
+
+5. Use the 6 Rs framework to create a migration plan for the following application portfolio: a) a legacy mainframe batch processing system, b) a modern Node.js API, c) an old SharePoint intranet, d) an Excel-based reporting tool used by three people, e) a Salesforce CRM system.
 
 ### Challenge Problem
 

@@ -4,8 +4,6 @@
 
 ## Learning Objectives
 
-![Container Networking Models and Tools](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch16-container-networking.png)
-
 By the end of this chapter, students will be able to:
 
 1. Explain container networking models: CNI, bridge, overlay, and their implementations
@@ -13,7 +11,8 @@ By the end of this chapter, students will be able to:
 3. Deploy and configure a service mesh (Istio, Linkerd) for traffic management and security
 4. Configure ingress controllers including NGINX, Traefik, HAProxy, and Envoy
 5. Implement network policies, mTLS, egress controls, and API gateways
-
+6. Understand Kubernetes DNS, service discovery, and CoreDNS configuration
+7. Apply network security patterns to microservice architectures
 
 ## Chapter at a Glance
 
@@ -24,13 +23,15 @@ By the end of this chapter, students will be able to:
 | Service Mesh | Istio, Linkerd for traffic management | Sidecar proxies enable mTLS without code changes |
 | Ingress Controllers | NGINX, Traefik, HAProxy, Envoy | NGINX is most widely adopted; Envoy powers Istio |
 | mTLS | Mutual TLS for service-to-service security | Service meshes implement mTLS transparently |
+| Network Policies | Kubernetes-native firewall rules | Deny-by-default when policy is applied |
+| Egress Controls | Restrict outbound traffic | Use NetworkPolicy egress rules and egress gateways |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
     A[Container Networking] --> B[Bridge]
-    A --> C[Overlay]
+    A --> C[Overlay/VXLAN]
     A --> D[Host]
     A --> E[MACVLAN]
     B & C & D & E --> F[CNI Plugins]
@@ -40,62 +41,144 @@ flowchart LR
     G & H & I --> J[Service Mesh]
     J --> K[Istio]
     J --> L[Linkerd]
+    A --> M[DNS/CoreDNS]
+    A --> N[Network Policies]
+    N --> O[mTLS]
+    N --> P[Egress Controls]
 ```
 
 ## Theory
 
 ### 16.1 Container Networking Models
 
-> **Pro Tip:** Cilium's eBPF-based approach can replace kube-proxy for better performance and security observability.
-
 Container networking enables communication between containers on the same host and across hosts. Multiple networking models exist:
 
-**Bridge Networking** â€” Default Docker networking. Creates a virtual bridge on the host, assigns IP addresses to containers from a private subnet. NAT enables outbound connectivity. Containers communicate via IP or DNS names.
+**Bridge Networking** — Default Docker networking:
+- Creates a virtual bridge (docker0) on the host
+- Assigns IP addresses from a private subnet (172.17.0.0/16)
+- NAT enables outbound connectivity
+- Containers communicate via IP or DNS names (--link)
+- Port mapping (-p 8080:80) exposes container ports on the host
 
-**Overlay Networking** â€” Encapsulates container traffic across hosts using VXLAN or similar tunneling. Enables multi-host container communication without modifying physical network infrastructure. Docker overlay, Flannel VXLAN, and Calico IPIP use this model.
+**Overlay Networking** — Encapsulates container traffic across hosts:
+- Uses VXLAN (Virtual Extensible LAN) or similar tunneling
+- Encapsulates Layer 2 frames in UDP packets
+- Enables multi-host container communication without physical network changes
+- Docker overlay, Flannel VXLAN, Calico IPIP, and Weave use this model
+- Trade-off: encapsulation adds ~5-10% CPU overhead
 
-**Host Networking** â€” Container uses the host's network stack directly. No network isolation, no NAT overhead. Higher performance, but ports cannot be remapped.
+**Host Networking** — Container uses the host's network stack:
+- No network isolation between container and host
+- No NAT overhead — full native performance
+- Ports cannot be remapped (container port = host port)
+- Best for latency-sensitive workloads (e.g., real-time services)
+- Security consideration: container has full host network access
 
-**MACVLAN/IPVLAN** â€” Assigns MAC or IP addresses directly from the physical network. Containers appear as separate hosts on the network. Provides better performance than bridge or overlay but requires physical network configuration changes.
+**MACVLAN/IPVLAN** — Assigns MAC or IP addresses from the physical network:
+- Containers appear as separate hosts with their own IPs
+- Best performance (no NAT, no encapsulation)
+- Requires physical network configuration (switch port allocation)
+- MACVLAN: each container gets a unique MAC (may exceed switch MAC limits)
+- IPVLAN: containers share the host MAC, get unique IPs
+
+| Model | Isolation | Performance | Multi-Host | Configuration |
+|-------|-----------|-------------|------------|---------------|
+| Bridge | Moderate | Moderate | No (without overlay) | Simple |
+| Overlay | High | Moderate (encap overhead) | Yes | Moderate |
+| Host | None | Native | N/A | None |
+| MACVLAN | Moderate | Native | No | Complex (network team) |
 
 ### 16.2 CNI (Container Network Interface)
 
-> **Remember:** By default, all Pods can communicate freely. NetworkPolicy restricts this--it's deny-by-default when applied.
+CNI is a specification and library for configuring network interfaces in Linux containers. Kubernetes uses CNI plugins for pod networking.
 
-CNI is a specification and library for configuring network interfaces in Linux containers. Kubernetes uses CNI plugins for pod networking. The CNI specification defines:
+**CNI Specification Operations:**
+- **ADD** — Add container to network: allocate IP, create interface, configure routes
+- **DEL** — Remove container from network: clean up IP allocation, delete interface
+- **CHECK** — Verify container network is correctly configured (idempotent)
+- **VERSION** — Report CNI specification version
 
-- **ADD** â€” Add container to network (allocate IP, create interface)
-- **DEL** â€” Remove container from network
-- **CHECK** â€” Verify container network is correctly configured
-- **VERSION** â€” Report CNI specification version
+**Plugin Categories:**
+- **Main plugins** — Bridge, VLAN, MACVLAN, IPVLAN, IPvlan
+- **IPAM plugins** — host-local (static pool), dhcp (external DHCP), whereabout (dynamic)
+- **Meta plugins** — tuning (sysctl), portmap (port forwarding), bandwidth (traffic shaping), firewall (iptables rules)
+- **Third-party plugins** — Flannel, Calico, Weave, Cilium, Antrea
 
-**CNI Plugin Types**:
-- **Main plugins** â€” Bridge, VLAN, MACVLAN, IPVLAN, IPvlan
-- **IPAM plugins** â€” host-local, dhcp, static
-- **Meta plugins** â€” tuning, portmap, bandwidth, firewall
-- **Third-party plugins** â€” Flannel, Calico, Weave, Cilium
+**CNI Configuration:**
+```json
+{
+  "cniVersion": "1.0.0",
+  "name": "mynet",
+  "plugins": [
+    {
+      "type": "bridge",
+      "bridge": "cni-bridge",
+      "ipam": {
+        "type": "host-local",
+        "ranges": [
+          [{"subnet": "10.244.0.0/16"}]
+        ]
+      }
+    },
+    {
+      "type": "portmap",
+      "capabilities": {"portMappings": true}
+    }
+  ]
+}
+```
 
 ### 16.3 CNI Plugins Compared
 
-> **Warning:** Service meshes add operational complexity. Start without one and adopt only when needed.
+**Flannel** — Simplest overlay network:
+- Uses VXLAN encapsulation (default), host-gw, or UDP
+- No network policy support
+- Simple deployment: `kubectl apply -f kube-flannel.yml`
+- Best for: basic connectivity, small clusters, development
 
-**Flannel** â€” Simplest overlay network. Uses VXLAN encapsulation. No network policy support. Suitable for basic connectivity requirements. Configuration via etcd or Kubernetes API.
+**Calico** — Full-featured CNI with advanced policy:
+- Uses BGP for routing (no encapsulation in pure L3 mode)
+- Supports VXLAN and IPIP overlay modes
+- Fine-grained network policies (Kubernetes NetworkPolicy + Calico extensions)
+- eBPF mode for improved performance (replaces kube-proxy)
+- Service graph for observability
+- Best for: security-conscious, production environments
 
-**Calico** â€” Full-featured CNI plugin with advanced network policy capabilities. Uses BGP for routing instead of overlay in pure Layer 3 mode. Supports eBPF for improved performance. Provides fine-grained network policies, ServiceGraph, and IPAM. Best for security-conscious environments.
+**Weave Net** — Mesh-based overlay:
+- Built-in DNS-based service discovery
+- Default encryption (NaCl cryptography)
+- Supports partial connectivity and firewall traversal
+- Simple setup but lower performance than Calico or Cilium
+- Best for: small to medium clusters requiring encryption
 
-**Weave Net** â€” Mesh-based overlay network with built-in DNS and encryption. Supports partial connectivity and firewall traversal. Encrypts traffic by default (NaCl cryptography). Simpler setup than Calico but less performant.
+**Cilium** — eBPF-based networking and security:
+- Replaces kube-proxy with eBPF for high-performance service handling
+- L3-L7 network policies (HTTP, gRPC, Kafka, DNS-aware policies)
+- Hubble for observability (flow logs, service map, metrics)
+- Transparent encryption (WireGuard)
+- Cluster mesh for multi-cluster networking
+- Best for: performance-sensitive, security-conscious, advanced policy environments
 
-**Cilium** â€” eBPF-based networking and security. Replaces kube-proxy with eBPF for high-performance service handling. Provides L3-L7 network policies, transparent encryption, and observability (Hubble). Best for performance-sensitive and security-conscious environments.
+| Plugin | Policy | Encryption | Performance | Multi-Cluster |
+|--------|--------|------------|-------------|---------------|
+| Flannel | No | No | Moderate | No |
+| Calico | Full (L3-L4) | Yes (WireGuard) | High (eBPF) | Yes |
+| Weave | Basic | Yes (NaCl) | Moderate | No |
+| Cilium | Full (L3-L7) | Yes (WireGuard) | Very High (eBPF) | Yes (Cluster Mesh) |
 
 ### 16.4 Service Mesh
 
 A service mesh manages inter-service communication in a microservice architecture. It adds observability, traffic management, and security without modifying application code.
 
-**Architecture**:
-- **Data Plane** â€” Sidecar proxies (Envoy) deployed alongside each service. Handle all traffic in/out of the service.
-- **Control Plane** â€” Manages proxy configuration, certificate issuance, and policy distribution.
+**Architecture:**
+- **Data Plane** — Sidecar proxies (Envoy) deployed alongside each service. Handle all traffic in/out of the service. Enforce routing, retries, timeouts, circuit breaking, and mTLS.
+- **Control Plane** — Manages proxy configuration, certificate issuance, policy distribution, and telemetry collection.
 
-**Istio** â€” Most feature-rich service mesh. Control plane components: Pilot (traffic management), Citadel (security, mTLS), Galley (config validation). Uses Envoy as the default proxy.
+**Istio** — Most feature-rich service mesh:
+- **Pilot** — Traffic management: virtual services, destination rules, service discovery
+- **Citadel** — Security: mTLS certificate issuance and rotation
+- **Galley** — Configuration validation and distribution
+- Uses Envoy as the default proxy (sidecar injection via mutating webhook)
 
 ```yaml
 # Istio VirtualService for traffic splitting
@@ -126,69 +209,378 @@ spec:
           weight: 10
 ```
 
-**Linkerd** â€” Lighter-weight service mesh than Istio. Uses its own Rust-based proxy (linkerd-proxy) instead of Envoy. Simpler to install and operate. Supports mTLS, HTTP/gRPC load balancing, retries, timeouts, and metrics.
-
-**Consul Connect** â€” Service mesh from HashiCorp. Integrates with Consul service discovery. Supports intentions for service-to-service authorization. Uses Envoy or built-in proxy.
+**Linkerd** — Lighter-weight service mesh:
+- Rust-based proxy (linkerd-proxy) instead of Envoy — 1/10th the resource usage
+- Simpler to install and operate (one command, no complex CRDs)
+- Features: mTLS, HTTP/gRPC load balancing, retries, timeouts, metrics
+- Limited traffic management compared to Istio
+- Best for: teams wanting service mesh benefits without complexity
 
 ### 16.5 Ingress Controllers
 
-Ingress controllers implement the Kubernetes Ingress specification and provide HTTP routing, TLS termination, and traffic management.
+Ingress controllers implement the Kubernetes Ingress specification and provide HTTP routing, TLS termination, and traffic management at the cluster edge.
 
-**NGINX Ingress Controller** â€” Most widely adopted. Uses NGINX as the reverse proxy. Supports path-based routing, host-based routing, TLS termination, annotations for custom behavior (rate limiting, cors, rewrite). High performance and extensive community.
+**NGINX Ingress Controller** — Most widely adopted:
+- Uses NGINX as the reverse proxy
+- Path-based routing, host-based routing, TLS termination
+- Annotations for rate limiting, CORS, rewrite, authentication
+- High performance (NGINX C-based core)
+- Extensive community and ecosystem
 
-**Traefik** â€” Dynamic, auto-discovering reverse proxy. Automatically detects services from Kubernetes, Docker, Consul, and other providers. Built-in dashboard, metrics, and circuit breakers. Supports automatic HTTPS with Let's Encrypt.
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rate-limit: "10r/s"
+    nginx.ingress.kubernetes.io/cors-enabled: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - api.example.com
+      secretName: api-tls
+  rules:
+    - host: api.example.com
+      http:
+        paths:
+          - path: /v1
+            pathType: Prefix
+            backend:
+              service:
+                name: api-v1
+                port:
+                  number: 8080
+          - path: /v2
+            pathType: Prefix
+            backend:
+              service:
+                name: api-v2
+                port:
+                  number: 8080
+```
 
-**HAProxy Ingress** â€” High-performance ingress based on HAProxy. Supports advanced load balancing algorithms, health checks, rate limiting, and connection queuing.
+**Traefik** — Dynamic, auto-discovering reverse proxy:
+- Automatically detects services from Kubernetes, Docker, Consul
+- Built-in dashboard and metrics
+- Supports automatic HTTPS with Let's Encrypt
+- Middleware for rate limiting, circuit breaking, authentication
 
-**Envoy** â€” High-performance proxy used as the foundation for Istio and other service meshes. Can be used as a standalone ingress controller. Feature-rich but complex to configure manually.
+**HAProxy Ingress** — High-performance ingress:
+- Advanced load balancing algorithms (least connections, first, source)
+- Health checks, rate limiting, connection queuing
+- Low resource usage at high throughput
+
+**Envoy** — High-performance proxy:
+- Foundation for Istio and other service meshes
+- Can be used as standalone ingress controller (Envoy Gateway project)
+- Feature-rich but complex to configure manually
+- L7 routing, load balancing, circuit breaking, retries
 
 ### 16.6 DNS in Kubernetes
 
 CoreDNS is the default DNS service for Kubernetes. It provides service discovery within the cluster.
 
-**DNS Naming**:
-- `service.namespace.svc.cluster.local` â€” Full DNS name
-- `service.namespace` â€” Within cluster
-- `service` â€” Within the same namespace
+**DNS Naming Convention:**
+- `service.namespace.svc.cluster.local` — Full DNS name
+- `service.namespace` — Within cluster
+- `service` — Within the same namespace
 
-CoreDNS configuration is stored in a ConfigMap. Custom DNS entries, stub domains, and upstream DNS can be configured.
+**CoreDNS Configuration:**
+CoreDNS configuration is stored in a ConfigMap (`coredns` in `kube-system`). Custom entries, stub domains, and upstream DNS resolvers can be configured.
 
 ### 16.7 Network Policies
 
 Network policies enforce firewall rules for Kubernetes pods. They control ingress and egress traffic based on pod selectors, namespace selectors, and IP blocks.
 
-Pod-to-pod communication is restricted by applying policies that select specific pods. By default, all pods can communicate freely. A policy applied to a pod restricts its traffic to only what the policy allows.
+**Default Behavior:** By default, all pods can communicate freely. A policy applied to a pod restricts its traffic to only what the policy allows.
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: api-network-policy
+spec:
+  podSelector:
+    matchLabels:
+      app: api
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app: frontend
+      ports:
+        - port: 8080
+  egress:
+    - to:
+        - podSelector:
+            matchLabels:
+              app: database
+      ports:
+        - port: 5432
+```
+
+**Network Policy Rules:**
+- **podSelector** — Selects pods within the same namespace
+- **namespaceSelector** — Selects entire namespaces
+- **ipBlock** — Selects specific CIDR ranges (external IPs)
+- Multiple rules are OR'd (any matching rule allows traffic)
+- Rules within a rule are AND'd (all conditions must match)
 
 ### 16.8 mTLS
 
-Mutual TLS (mTLS) encrypts and authenticates service-to-service communication:
+Mutual TLS encrypts and authenticates service-to-service communication:
 
 - Both client and server present certificates
 - Communication is encrypted in transit
 - Identity is verified at both ends
 - Certificates rotate automatically (in service meshes or cert-manager)
-
-Service meshes implement mTLS transparently to applications. The proxy handles certificate exchange and encryption.
+- No application code changes required with service mesh sidecars
 
 ### 16.9 Egress Controls
 
 Egress controls restrict outbound traffic from the cluster:
 
-- **NetworkPolicy egress rules** â€” Kubernetes-native egress restrictions
-- **Egress gateway** â€” Istio egress gateways for controlled external traffic
-- **NAT gateway** â€” Cloud provider NAT for controlled outbound access
-- **Proxy/Firewall** â€” Explicit proxy for external access logging and control
+- **NetworkPolicy egress rules** — Kubernetes-native egress restrictions
+- **Egress gateway** — Istio egress gateways for controlled external traffic through dedicated proxy instances
+- **NAT gateway** — Cloud provider NAT for controlled outbound access from private subnets
+- **Proxy/Firewall** — Explicit proxy for external access logging and control
 
 ### 16.10 API Gateways
 
 API gateways provide a single entry point for external API traffic:
 
-- **Kong** â€” Built on OpenResty/Lua. Plugin ecosystem (authentication, rate limiting, caching, logging).
-- **APIgee (GCP)** â€” Full-featured API management platform.
-- **AWS API Gateway** â€” AWS-managed gateway with Lambda integration, caching, throttling.
-- **Azure API Management** â€” Enterprise API gateway with developer portal and policy engine.
+- **Kong** — Built on OpenResty/Lua. Plugin ecosystem (authentication, rate limiting, caching, logging, IP restriction).
+- **Kong Gateway** — Kubernetes-native via Ingress Controller and Gateway API
+- **Apigee (GCP)** — Full-featured API management with developer portal, analytics, monetization
+- **AWS API Gateway** — AWS-managed gateway with Lambda integration, caching, throttling, WAF
+- **Azure API Management** — Enterprise gateway with developer portal, policy engine, versioning
 
-## Summary
+---
+
+## Examples
+
+### Example 1: NetworkPolicy Generator
+
+```typescript
+interface NetworkRule {
+  direction: 'ingress' | 'egress';
+  targets: Array<{ type: 'pod' | 'namespace' | 'ip'; value: string }>;
+  ports: number[];
+  protocol: 'TCP' | 'UDP';
+}
+
+interface NetworkPolicyConfig {
+  name: string;
+  namespace: string;
+  podSelector: Record<string, string>;
+  rules: NetworkRule[];
+}
+
+class NetworkPolicyGenerator {
+  generate(config: NetworkPolicyConfig): string {
+    const ingress = config.rules.filter(r => r.direction === 'ingress');
+    const egress = config.rules.filter(r => r.direction === 'egress');
+
+    const policy: Record<string, unknown> = {
+      apiVersion: 'networking.k8s.io/v1',
+      kind: 'NetworkPolicy',
+      metadata: { name: config.name, namespace: config.namespace },
+      spec: {
+        podSelector: { matchLabels: config.podSelector },
+        policyTypes: [] as string[],
+      },
+    };
+
+    if (ingress.length > 0) {
+      (policy.spec as Record<string, unknown>).policyTypes = [...(policy.spec as Record<string, unknown>).policyTypes as string[], 'Ingress'];
+      (policy.spec as Record<string, unknown>).ingress = ingress.map(this.buildRule);
+    }
+
+    if (egress.length > 0) {
+      (policy.spec as Record<string, unknown>).policyTypes = [...(policy.spec as Record<string, unknown>).policyTypes as string[], 'Egress'];
+      (policy.spec as Record<string, unknown>).egress = egress.map(this.buildRule);
+    }
+
+    return JSON.stringify(policy, null, 2);
+  }
+
+  private buildRule(rule: NetworkRule): Record<string, unknown> {
+    const ruleObj: Record<string, unknown> = {};
+
+    if (rule.targets.length > 0) {
+      const from = rule.direction === 'ingress' ? 'from' : 'to';
+      ruleObj[from] = rule.targets.map(t => {
+        if (t.type === 'pod') return { podSelector: { matchLabels: { app: t.value } } };
+        if (t.type === 'namespace') return { namespaceSelector: { matchLabels: { name: t.value } } };
+        return { ipBlock: { cidr: t.value } };
+      });
+    }
+
+    if (rule.ports.length > 0) {
+      ruleObj.ports = rule.ports.map(p => ({ port: p, protocol: rule.protocol }));
+    }
+
+    return ruleObj;
+  }
+
+  generateDefaultDeny(namespace: string): string {
+    return JSON.stringify({
+      apiVersion: 'networking.k8s.io/v1',
+      kind: 'NetworkPolicy',
+      metadata: { name: 'default-deny-all', namespace },
+      spec: {
+        podSelector: {},
+        policyTypes: ['Ingress', 'Egress'],
+      },
+    }, null, 2);
+  }
+}
+
+const generator = new NetworkPolicyGenerator();
+const config: NetworkPolicyConfig = {
+  name: 'api-policy',
+  namespace: 'production',
+  podSelector: { app: 'api' },
+  rules: [
+    { direction: 'ingress', targets: [{ type: 'pod', value: 'frontend' }], ports: [8080], protocol: 'TCP' },
+    { direction: 'egress', targets: [{ type: 'pod', value: 'database' }], ports: [5432], protocol: 'TCP' },
+    { direction: 'egress', targets: [{ type: 'ip', value: '8.8.8.8/32' }], ports: [53], protocol: 'UDP' },
+  ],
+};
+
+console.log(generator.generate(config));
+```
+
+### Example 2: Service Mesh Traffic Splitter
+
+```typescript
+interface VirtualServiceRule {
+  headers?: Record<string, string>;
+  weight: number;
+  destination: { host: string; subset: string };
+}
+
+class ServiceMeshConfigBuilder {
+  buildTrafficSplit(name: string, host: string, rules: VirtualServiceRule[]): string {
+    const http = rules.map(rule => {
+      const route = { destination: rule.destination, weight: rule.weight };
+      if (rule.headers) {
+        return { match: [{ headers: Object.fromEntries(Object.entries(rule.headers).map(([k, v]) => [k, { exact: v }])) }], route: [route] };
+      }
+      return { route: [route] };
+    });
+
+    const vs = {
+      apiVersion: 'networking.istio.io/v1beta1',
+      kind: 'VirtualService',
+      metadata: { name },
+      spec: { hosts: [host], http },
+    };
+
+    const dr = {
+      apiVersion: 'networking.istio.io/v1beta1',
+      kind: 'DestinationRule',
+      metadata: { name: `${name}-dr` },
+      spec: {
+        host,
+        subsets: rules.map(r => ({
+          name: r.destination.subset,
+          labels: { version: r.destination.subset },
+        })),
+      },
+    };
+
+    return JSON.stringify({ virtualService: vs, destinationRule: dr }, null, 2);
+  }
+
+  buildCanary(name: string, host: string, stableSubset: string, canarySubset: string, canaryWeight: number): string {
+    return this.buildTrafficSplit(name, host, [
+      { weight: 100 - canaryWeight, destination: { host, subset: stableSubset } },
+      { headers: { 'X-Canary': 'true' }, weight: canaryWeight, destination: { host, subset: canarySubset } },
+    ]);
+  }
+}
+
+const builder = new ServiceMeshConfigBuilder();
+console.log(builder.buildCanary('api-canary', 'api', 'v1', 'v2', 10));
+```
+
+### Example 3: Network Topology Mapper
+
+```typescript
+interface ServiceEndpoint {
+  name: string;
+  namespace: string;
+  ports: number[];
+  protocol: string;
+  ingress: boolean;
+  egress: Array<{ target: string; port: number; protocol: string }>;
+}
+
+class NetworkTopologyMapper {
+  private services: ServiceEndpoint[] = [];
+
+  addService(svc: ServiceEndpoint): void {
+    this.services.push(svc);
+  }
+
+  buildDependencyGraph(): string {
+    let graph = '```mermaid\nflowchart LR\n';
+
+    for (const svc of this.services) {
+      const id = svc.name.replace(/[^a-zA-Z0-9]/g, '');
+      if (svc.ingress) {
+        graph += `    Ingress -->|":${svc.ports[0]}"| ${id}[${svc.name}]\n`;
+      }
+
+      for (const egress of svc.egress) {
+        const targetId = egress.target.replace(/[^a-zA-Z0-9]/g, '');
+        graph += `    ${id} -->|":${egress.port}"| ${targetId}[${egress.target}]\n`;
+      }
+    }
+
+    graph += '```\n';
+    return graph;
+  }
+
+  buildServiceDepList(): string {
+    let report = '# Service Dependency Report\n\n';
+
+    for (const svc of this.services) {
+      report += `## ${svc.name}\n`;
+      report += `- Namespace: ${svc.namespace}\n`;
+      report += `- Ports: ${svc.ports.join(', ')}\n`;
+      report += `- External access: ${svc.ingress ? 'Yes' : 'No (internal only)'}\n`;
+
+      if (svc.egress.length > 0) {
+        report += '- Dependencies:\n';
+        for (const dep of svc.egress) {
+          report += `  - ${dep.target}:${dep.port}/${dep.protocol}\n`;
+        }
+      }
+
+      report += '\n';
+    }
+
+    return report;
+  }
+}
+
+const mapper = new NetworkTopologyMapper();
+mapper.addService({ name: 'frontend', namespace: 'prod', ports: [80, 443], protocol: 'TCP', ingress: true, egress: [{ target: 'api', port: 8080, protocol: 'HTTP' }] });
+mapper.addService({ name: 'api', namespace: 'prod', ports: [8080], protocol: 'TCP', ingress: false, egress: [{ target: 'database', port: 5432, protocol: 'PostgreSQL' }, { target: 'cache', port: 6379, protocol: 'Redis' }] });
+mapper.addService({ name: 'database', namespace: 'prod', ports: [5432], protocol: 'TCP', ingress: false, egress: [] });
+mapper.addService({ name: 'cache', namespace: 'prod', ports: [6379], protocol: 'TCP', ingress: false, egress: [] });
+
+console.log(mapper.buildServiceDepList());
+```
+
+---
 
 ## Concept Comparison Table
 
@@ -199,6 +591,8 @@ API gateways provide a single entry point for external API traffic:
 | Service Mesh | Sidecar proxies for traffic mgmt and security |
 | Ingress | HTTP/HTTPS external routing controller |
 | mTLS | Mutual certificate-based service authentication |
+| CNI | Container Network Interface specification |
+| NetworkPolicy | Kubernetes-native firewall rules |
 
 ## Quick Reference
 
@@ -209,6 +603,7 @@ API gateways provide a single entry point for external API traffic:
 | Ingress | NGINX, Traefik, HAProxy, Envoy |
 | DNS | CoreDNS, service.namespace.svc.cluster.local |
 | mTLS | Mutual TLS with automatic cert rotation |
+| NetworkPolicy | podSelector, ingress, egress, port rules |
 
 ## Cross-Application Matrix
 
@@ -227,10 +622,17 @@ API gateways provide a single entry point for external API traffic:
 
 <details><summary>Question 3: What does mTLS provide beyond TLS?</summary>**A)** Faster encryption<br>**B)** Mutual client and server authentication<br>**C)** Lower latency<br>**D)** Compression<br><br>**Answer: B)** Mutual client and server authentication</details>
 
+<details><summary>Question 4: What is the default pod communication behavior in Kubernetes?</summary>**A)** Deny all<br>**B)** Allow all<br>**C)** Only same namespace<br>**D)** Only specific ports<br><br>**Answer: B)** Allow all</details>
+
+<details><summary>Question 5: Which ingress controller is most widely adopted?</summary>**A)** Traefik<br>**B)** NGINX<br>**C)** HAProxy<br>**D)** Envoy<br><br>**Answer: B)** NGINX</details>
+
+---
 
 ## Summary
 
-Container networking spans multiple models and implementation options. CNI plugins provide standardized network configuration for Kubernetes. Service meshes (Istio, Linkerd) add traffic management, security, and observability to inter-service communication. Ingress controllers manage external traffic into the cluster. mTLS secures service-to-service communication. Network policies enforce traffic rules. API gateways manage external API access. The choice of networking technologies depends on security requirements, performance needs, and operational maturity.
+Container networking spans multiple models and implementation options with trade-offs between isolation, performance, and complexity. CNI plugins (Flannel, Calico, Cilium, Weave) provide standardized network configuration for Kubernetes with varying levels of policy support and performance. Service meshes (Istio, Linkerd) add traffic management, mTLS security, and observability to inter-service communication through sidecar proxies. Ingress controllers (NGINX, Traefik, HAProxy, Envoy) manage external traffic routing into the cluster. Network policies enforce Kubernetes-native firewall rules for least-privilege pod communication. The choice of networking technologies depends on security requirements, performance needs, and operational maturity.
+
+---
 
 ## Exercises
 

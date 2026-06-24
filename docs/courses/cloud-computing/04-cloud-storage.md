@@ -1,4 +1,4 @@
-# Chapter 4: Cloud Storage Services
+﻿# Chapter 4: Cloud Storage Services
 
 > **Previous:** [Chapter 3: Cloud Compute Services](./03-cloud-compute.md) | **Next:** [Chapter 5: Cloud Database Services](./05-cloud-database.md)
 
@@ -13,6 +13,7 @@ After completing this chapter, students will be able to:
 5. Apply lifecycle management policies to automate data tiering and cost optimization.
 6. Evaluate data durability and availability through replication strategies.
 7. Design content delivery strategies using global CDN services.
+8. Understand S3 consistency model and object versioning.
 
 ## Chapter at a Glance
 
@@ -24,19 +25,21 @@ After completing this chapter, students will be able to:
 | Storage Tiers | Hot, Cool, Archive | Automate tier transitions for cost savings |
 | Lifecycle Policies | Auto-move data between tiers | Essential for cost management at scale |
 | CDN | Edge caching for global performance | Cuts latency, reduces origin load |
+| Replication | Same-region vs cross-region | DR and compliance requirements drive choice |
 
 ## Chapter Roadmap
 
-```mermaid
+\\\mermaid
 flowchart LR
     A[Storage Taxonomy] --> B[Object Storage]
     A --> C[Block Storage]
     A --> D[File Storage]
-    B --> E[Lifecycle Policies]
-    D --> E
+    B --> E[Versioning and Lifecycle]
     C --> F[Performance Tiers]
-    E --> G[CDN & Distribution]
-```
+    D --> G[Shared Access Protocols]
+    E --> H[CDN and Distribution]
+    F --> H
+\\\
 
 ## Theory
 
@@ -48,7 +51,24 @@ Cloud providers offer three primary categories of storage, each optimized for di
 2. **Block Storage:** Provides raw storage volumes that can be formatted with a filesystem. Low latency, high throughput, attached to a single VM (mostly). Ideal for databases and OS boot volumes.
 3. **File Storage:** Provides managed file shares accessible via standard network protocols (NFS/SMB). Supports concurrent access by multiple VMs. Ideal for home directories and shared application data.
 
-![Cloud Storage Types](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch04-storage-types.png)
+\\\mermaid
+graph TB
+    subgraph "Cloud Storage Taxonomy"
+        direction TB
+        A[Cloud Storage]
+        A --> B[Object Storage]
+        A --> C[Block Storage]
+        A --> D[File Storage]
+        
+        B --> B1["S3, Blob, GCS<br/>HTTP/REST API<br/>Infinite scale"]
+        C --> C1["EBS, Disk, PD<br/>iSCSI/NVMe<br/>Low latency"]
+        D --> D1["EFS, Azure Files, Filestore<br/>NFS/SMB<br/>Shared access"]
+        
+        B1 --> E["Use: Backups, media, data lakes"]
+        C1 --> F["Use: Databases, boot volumes"]
+        D1 --> G["Use: Shared config, home dirs"]
+    end
+\\\
 
 ### 4.2 Object Storage: S3, Blob, and GCS
 
@@ -58,50 +78,236 @@ Object storage is the "Swiss Army Knife" of cloud storage, offering virtually in
 |---------|--------|-------------------|----------------------|
 | Container Unit | Bucket | Container | Bucket |
 | Identification | Key | Name | Name |
-| Namespace | Global (Unique names) | Account Level | Global (Unique names) |
+| Namespace | Global unique names | Account Level | Global unique names |
 | Standard Tier | S3 Standard | Hot | Standard |
 | Infrequent Tier | S3 Standard-IA | Cool | Nearline / Coldline |
 | Archive Tier | S3 Glacier | Archive | Archive |
+| Consistency | Read-after-write, Eventual overwrite | Immediate consistency | Strong consistency |
+| Encryption | SSE-S3, SSE-KMS, SSE-C | Azure Storage encryption | Server-side, CMEK |
+| Max Object Size | 5 TB | 4.75 TB | 5 TB |
 
-**Durability and Availability:** Providers typically guarantee "11 nines" (99.999999999%) durability by replicating data across multiple physical disks and data centers (Availability Zones).
+**Consistency Model:** S3 provides read-after-write consistency for PUTS of new objects and eventual consistency for overwrite PUTS and DELETES. Azure Blob and GCS provide strong consistency for all operations.
 
-### 4.3 Block Storage: EBS, Azure Disk, and Persistent Disk
+**Durability and Availability:** Providers typically guarantee "11 nines" (99.999999999%) durability by replicating data across multiple physical disks and data centers (Availability Zones). For 10 million objects, this means statistically one object might be lost every 10 million years.
+
+### 4.3 Object Versioning and Lifecycle Policies
+
+**Versioning:** Protects against accidental deletion and allows recovery of previous object states. When enabled, every object modification creates a new version. Delete operations create delete markers instead of permanently removing data.
+
+**Lifecycle Policies:** Automatically transition data from "Hot" (expensive, fast) to "Archive" (cheap, slow) based on time. Example: move to infrequent access after 30 days, archive after 90 days, delete after 365 days.
+
+\\\mermaid
+graph LR
+    subgraph "Object Versioning"
+        A[PUT object.jpg] --> B[Version ID: 111]
+        A --> C[Version ID: 222]
+        A --> D[Version ID: 333]
+        D --> E[Delete Marker]
+        E --> F[Previous Versions retained but hidden]
+    end
+    
+    subgraph "Lifecycle Transitions"
+        G[Day 0: Standard] --> H[Day 30: Standard-IA]
+        H --> I[Day 90: Glacier]
+        I --> J[Day 365: Expire/Delete]
+    end
+\\\
+
+\\\	ypescript
+interface LifecycleTransition {
+  days: number;
+  storageClass: string;
+}
+
+interface LifecycleRule {
+  id: string;
+  enabled: boolean;
+  prefix: string;
+  transitions: LifecycleTransition[];
+  expirationDays?: number;
+}
+
+function generateLifecyclePolicy(
+  dataCategory: "logs" | "media" | "backups" | "compliance"
+): LifecycleRule[] {
+  const policies: Record<string, LifecycleRule[]> = {
+    logs: [
+      {
+        id: "logs-lifecycle",
+        enabled: true,
+        prefix: "logs/",
+        transitions: [
+          { days: 30, storageClass: "S3 Standard-IA" },
+          { days: 90, storageClass: "S3 Glacier" },
+        ],
+        expirationDays: 365,
+      },
+    ],
+    media: [
+      {
+        id: "media-hot",
+        enabled: true,
+        prefix: "media/",
+        transitions: [
+          { days: 90, storageClass: "S3 Standard-IA" },
+          { days: 365, storageClass: "S3 Glacier" },
+        ],
+      },
+    ],
+    backups: [
+      {
+        id: "backups-long-term",
+        enabled: true,
+        prefix: "backups/",
+        transitions: [
+          { days: 30, storageClass: "S3 Standard-IA" },
+          { days: 180, storageClass: "S3 Glacier Deep Archive" },
+        ],
+      },
+    ],
+    compliance: [
+      {
+        id: "compliance-immutable",
+        enabled: true,
+        prefix: "compliance/",
+        transitions: [
+          { days: 365, storageClass: "S3 Glacier" },
+        ],
+        expirationDays: 2555,
+      },
+    ],
+  };
+
+  return policies[dataCategory] || [];
+}
+
+const logRules = generateLifecyclePolicy("logs");
+console.log(JSON.stringify(logRules, null, 2));
+\\\
+
+Output:
+\\\
+[
+  {
+    "id": "logs-lifecycle",
+    "enabled": true,
+    "prefix": "logs/",
+    "transitions": [
+      { "days": 30, "storageClass": "S3 Standard-IA" },
+      { "days": 90, "storageClass": "S3 Glacier" }
+    ],
+    "expirationDays": 365
+  }
+]
+\\\
+
+### 4.4 Block Storage: EBS, Azure Disk, and Persistent Disk
 
 Block storage behaves like a physical hard drive. It is typically confined to a specific Availability Zone because it requires low-latency connection to the host.
 
-- **Standard/Balanced SSD:** General purpose storage for most workloads.
-- **Provisioned IOPS:** High-performance volumes where you pay for a specific level of Input/Output Operations Per Second. Necessary for high-load databases.
-- **HDD:** Throughput-optimized or cold storage for large, sequential workloads.
+| Tier | Max IOPS | Max Throughput | Use Case | Cost/GB/month |
+|------|----------|----------------|----------|---------------|
+| gp3 (General Purpose) | 16,000 | 1,000 MB/s | Boot volumes, dev/test | \.08 |
+| io2 (Provisioned IOPS) | 256,000 | 4,000 MB/s | Large databases | \.125 |
+| st1 (Throughput Optimized) | 500 | 500 MB/s | Big data, ETL | \.045 |
+| sc1 (Cold HDD) | 250 | 250 MB/s | Cold backups | \.015 |
 
-### 4.4 File Storage: Managed Network Shares
+**Key Concepts:**
+
+- **IOPS:** Input/Output Operations Per Second. Measures how many read/write operations per second the volume can handle.
+- **Throughput:** Data transfer rate in MB/s. Critical for sequential workloads like data warehousing.
+- **Snapshot:** Point-in-time backup stored in S3. Can be used to create new volumes, resize, or migrate across AZs.
+- **Encryption:** EBS encryption at rest using KMS. Prevents unauthorized access if a volume or snapshot is compromised.
+
+### 4.5 File Storage: Managed Network Shares
 
 Managed file services eliminate the overhead of managing file servers.
 
-- **AWS EFS / FSx:** EFS for Linux (NFS), FSx for Windows (SMB) and Lustre (HPC).
+- **AWS EFS / FSx:** EFS for Linux (NFSv4), FSx for Windows (SMB) and Lustre (HPC).
 - **Azure Files:** Supports both SMB and NFS. Can be integrated with on-premises Active Directory.
 - **GCP Filestore:** Fully managed NFS server for Compute Engine and GKE.
 
-### 4.5 Storage Lifecycle and Cost Management
+| Service | Protocol | Performance | Use Case |
+|---------|----------|-------------|----------|
+| EFS | NFSv4 | Bursting to 3 GB/s | Shared storage for Linux VMs |
+| FSx for Windows | SMB | Up to 2 GB/s | Windows file servers, AD integration |
+| FSx for Lustre | Lustre | Up to 1 TB/s | HPC, ML training |
+| Azure Files | SMB/NFS | Up to 100 GB/s | Enterprise file shares |
+| Filestore | NFSv3 | Up to 320 GB/s | High-performance shared storage |
 
-Cost optimization in the cloud involves moving data to cheaper storage as it ages or becomes less frequently accessed.
+### 4.6 Storage Replication and Data Protection
 
-- **Lifecycle Policies:** Automatically transition data from "Hot" (expensive, fast) to "Archive" (cheap, slow) based on time (e.g., move to archive after 90 days).
-- **Intelligent Tiering:** Some services (like S3 Intelligent-Tiering) use machine learning to automatically move data between tiers based on actual access patterns.
+\\\mermaid
+graph TB
+    subgraph "Replication Strategies"
+        A[Source Bucket/Volume]
+        A --> B[Same-Region Replication]
+        A --> C[Cross-Region Replication]
+        B --> D[Compliance, Log aggregation]
+        C --> E[DR, Geo-compliance, Latency optimization]
+    end
+    
+    subgraph "Data Protection"
+        F[Versioning]
+        G[Immutable Object Lock]
+        H[Replication]
+        I[Snapshots]
+        J[MFA Delete]
+    end
+\\\
 
-### 4.6 Content Delivery Networks (CDN)
+**Replication Options:**
+
+- **Same-Region Replication (SRR):** Copies objects to another bucket in the same region. Used for compliance, log aggregation, or data protection within the same geography.
+- **Cross-Region Replication (CRR):** Copies objects across AWS regions. Used for disaster recovery, geographic compliance, and latency optimization for global users.
+
+**Data Protection Features:**
+
+- **Versioning:** Preserves all object versions. Protects against accidental deletion and overwrites.
+- **Object Lock:** Write-once-read-many (WORM) protection. Prevents object deletion even by root users. Essential for compliance (SEC 17a-4).
+- **MFA Delete:** Requires multi-factor authentication to delete objects or change versioning state.
+- **Snapshots:** Point-in-time backups of block storage volumes. Incremental — only changed data is saved.
+
+### 4.7 Content Delivery Networks (CDN)
 
 CDNs cache content at "Edge Locations" closer to the end-users to reduce latency.
 
-- **AWS CloudFront:** Deeply integrated with S3 and WAF.
+\\\mermaid
+sequenceDiagram
+    participant User as End User
+    participant Edge as Edge Location
+    participant Origin as Origin Server
+    participant S3 as S3 Bucket
+
+    User->>Edge: GET /image.jpg
+    Edge->>Edge: Check cache
+    alt Cache Hit
+        Edge-->>User: 200 OK + image (cached)
+    else Cache Miss
+        Edge->>Origin: Forward request
+        Origin->>S3: Fetch from origin
+        S3-->>Origin: image data
+        Origin-->>Edge: Cache response
+        Edge-->>User: 200 OK + image
+    end
+\\\
+
+- **AWS CloudFront:** Deeply integrated with S3 and WAF. Supports Lambda@Edge for serverless compute at the edge.
 - **Azure CDN / Front Door:** Optimized for enterprise content and global application acceleration.
-- **GCP Cloud CDN:** Leverages Google's global private network and Anycast IP.
+- **GCP Cloud CDN:** Leverages Google global private network and Anycast IP.
+
+**CDN Cache Behavior:**
+
+- **TTL (Time to Live):** How long the edge keeps content before checking for a new version. Controlled by Cache-Control headers or origin settings.
+- **Cache Invalidation:** Manually removing cached content before TTL expires. Use for immediate updates.
+- **Origin Shield:** An intermediate caching layer that reduces load on the origin server.
 
 ## Examples
 
 ### Example 4.1: Object Storage Lifecycle Policy (JSON)
 
 An S3 policy to move objects to Infrequent Access after 30 days and Archive after 90 days:
-```json
+\\\json
 {
   "Rules": [
     {
@@ -114,14 +320,113 @@ An S3 policy to move objects to Infrequent Access after 30 days and Archive afte
     }
   ]
 }
-```
+\\\
 
 ### Example 4.2: Mounting a Managed File Share (Linux)
 
-Mounting an AWS EFS volume:
-```bash
+\\\ash
 sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-01234567.efs.us-east-1.amazonaws.com:/ /mnt/efs
-```
+\\\
+
+### Example 4.3: TypeScript Storage Operations Wrapper
+
+\\\	ypescript
+interface StorageProvider {
+  upload(bucket: string, key: string, data: Buffer, storageClass?: string): Promise<string>;
+  download(bucket: string, key: string): Promise<Buffer>;
+  delete(bucket: string, key: string): Promise<void>;
+  list(bucket: string, prefix: string): Promise<string[]>;
+  copy(sourceBucket: string, sourceKey: string, destBucket: string, destKey: string): Promise<void>;
+}
+
+class S3StorageProvider implements StorageProvider {
+  private endpoint: string;
+
+  constructor(endpoint: string) {
+    this.endpoint = endpoint;
+  }
+
+  async upload(bucket: string, key: string, data: Buffer, storageClass = "STANDARD"): Promise<string> {
+    console.log("Uploading", key, "to", bucket, "class:", storageClass);
+    console.log("  Size:", (data.length / 1024 / 1024).toFixed(2), "MB");
+    return "https://" + bucket + ".s3.amazonaws.com/" + key;
+  }
+
+  async download(bucket: string, key: string): Promise<Buffer> {
+    console.log("Downloading", key, "from", bucket);
+    return Buffer.from("simulated data");
+  }
+
+  async delete(bucket: string, key: string): Promise<void> {
+    console.log("Deleted", key, "from", bucket);
+  }
+
+  async list(bucket: string, prefix: string): Promise<string[]> {
+    return ["file1.txt", "file2.txt", "file3.txt"];
+  }
+
+  async copy(sourceBucket: string, sourceKey: string, destBucket: string, destKey: string): Promise<void> {
+    console.log("Copied", sourceBucket + "/" + sourceKey, "to", destBucket + "/" + destKey);
+  }
+}
+
+class StorageManager {
+  private provider: StorageProvider;
+
+  constructor(provider: StorageProvider) {
+    this.provider = provider;
+  }
+
+  async backupDatabase(
+    databaseName: string,
+    backupData: Buffer,
+    retentionDays: number
+  ): Promise<string> {
+    const bucket = "company-db-backups";
+    const key = "databases/" + databaseName + "/" + Date.now() + ".bak";
+
+    let storageClass = "STANDARD";
+    if (retentionDays > 90) storageClass = "GLACIER";
+    else if (retentionDays > 30) storageClass = "STANDARD_IA";
+
+    return this.provider.upload(bucket, key, backupData, storageClass);
+  }
+
+  async replicateAcrossRegions(
+    bucket: string,
+    key: string,
+    destinationRegion: string
+  ): Promise<void> {
+    const destBucket = bucket + "-" + destinationRegion;
+    await this.provider.copy(bucket, key, destBucket, key);
+    console.log("Replicated", key, "to", destinationRegion);
+  }
+
+  async generateStorageReport(): Promise<void> {
+    const buckets = ["company-data", "company-logs", "company-backups"];
+    for (const bucket of buckets) {
+      const objects = await this.provider.list(bucket, "");
+      console.log(bucket + ":", objects.length, "objects");
+    }
+  }
+}
+
+const provider = new S3StorageProvider("https://s3.us-east-1.amazonaws.com");
+const manager = new StorageManager(provider);
+
+async function runDemo(): Promise<void> {
+  const backupLocation = await manager.backupDatabase(
+    "production-db",
+    Buffer.alloc(1024 * 1024 * 100),
+    180
+  );
+  console.log("Backup stored at:", backupLocation);
+  await manager.replicateAcrossRegions("company-data", "critical-file.pdf", "eu-west-1");
+  await manager.generateStorageReport();
+}
+
+runDemo();
+\\\
 
 > **One-Sentence Takeaway:** The three cloud storage models serve fundamentally different purposes — object for scale and durability, block for performance, and file for shared access — and knowing which to use is the key to cost-effective cloud architecture.
 
@@ -139,13 +444,15 @@ sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,ret
 | Hot Tier | Frequent access, highest cost | Low latency retrieval | Active data |
 | Cool/IA Tier | Infrequent access, lower cost | 30+ day retrieval | Backups, logs |
 | Archive Tier | Rare access, lowest cost | Minutes to hours retrieval | Compliance archives |
+| Versioning | Object modification history | Protects against accidental deletion | Data protection |
+| Replication | Cross-bucket or cross-region copy | DR and compliance | Disaster recovery |
 
 ## Quick Reference
 
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
-| **Object Storage** | S3, Blob, GCS — buckets, keys, tiers | 99.999999999% durability |
-| **Block Storage** | EBS, Disk, PD — IOPS tiers | Provisioned IOPS costs extra |
+| **Object Storage** | S3, Blob, GCS - buckets, keys, tiers | 99.999999999% durability |
+| **Block Storage** | EBS, Disk, PD - IOPS tiers | Provisioned IOPS costs extra |
 | **File Storage** | EFS (NFS), Azure Files (SMB), FSx | Scales with connected clients |
 | **Lifecycle** | Transition, Expiration, Intelligent-Tiering | Automate data tier movement |
 | **CDN** | CloudFront, Azure CDN, Cloud CDN | Edge caching reduces origin load |
@@ -195,13 +502,37 @@ sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,ret
 **C) Data is permanently lost.** Instance store volumes are physically attached to the host server. When the instance stops, the data on instance store volumes is lost. This is why critical data must always use persistent storage like EBS.
 </details>
 
+4. What is the purpose of Cross-Region Replication in object storage?
+   - A) To make copies for load balancing
+   - B) To provide disaster recovery and geographic compliance
+   - C) To increase storage capacity
+   - D) To reduce latency for local users
+
+<details>
+<summary>Answer</summary>
+**B) To provide disaster recovery and geographic compliance.** Cross-Region Replication copies objects to a bucket in a different AWS region, protecting against region-wide outages and meeting data residency requirements.
+</details>
+
+5. Which CDN behavior determines how long an edge location keeps content before checking for updates?
+   - A) Cache invalidation
+   - B) TTL (Time to Live)
+   - C) Origin pull
+   - D) Edge function
+
+<details>
+<summary>Answer</summary>
+**B) TTL (Time to Live).** TTL is set via Cache-Control headers and controls how long the edge location stores content before re-fetching from the origin server.
+</details>
+
 ## Summary
 
 - Cloud storage is categorized into Object, Block, and File models.
 - Object storage (S3/Blob/GCS) provides extreme durability and scale via HTTP access.
+- Object versioning protects against accidental deletion and enables data recovery.
+- Lifecycle policies automate cost optimization by transitioning data to cheaper tiers.
 - Block storage (EBS/Disk/PD) provides high-performance local storage for VMs.
-- File storage (EFS/Azure Files/Filestore) enables shared network access.
-- Lifecycle policies are essential for cost-optimizing data retention.
+- File storage (EFS/Azure Files/Filestore) enables shared network access across multiple VMs.
+- Replication strategies (SRR/CRR) provide disaster recovery and compliance capabilities.
 - CDNs improve user experience by caching static and dynamic content at the network edge.
 
 ## Exercises
@@ -213,13 +544,21 @@ sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,ret
 3. When should you use a File Storage service instead of attaching multiple Block volumes?
 4. Explain the trade-offs of using an Archive storage tier (e.g., retrieval time vs. cost).
 5. How does a CDN improve the performance of a global web application?
+6. What is the difference between Same-Region and Cross-Region Replication?
+7. How does object versioning protect against data loss?
 
 ### Application Problems
 
 1. A hospital needs to store X-ray images. Images are accessed frequently for the first 48 hours, then rarely for the next 5 years, but must be kept for 10 years for legal reasons. Design a storage and lifecycle strategy.
+
 2. A database requires 50,000 IOPS to handle peak transaction volume. Which block storage tier would you select on AWS, and how would you configure it?
+
 3. A team of developers needs to share a set of configuration files across 50 Linux servers. Propose a solution that ensures all servers see the same files in real-time.
+
+4. Write a TypeScript function that calculates the monthly storage cost for 10 TB of data using S3 Standard vs S3 Glacier, assuming 10% of data is accessed monthly.
+
+5. Design a CDN strategy for a global media company that serves 4K video content to users across North America, Europe, and Asia. Consider origin location, edge strategy, and cache TTL.
 
 ### Challenge Problem
 
-You are designing the storage backend for a YouTube-like video platform. Users upload 1000 videos per hour. Videos are transcoded into multiple resolutions. Popular videos are accessed globally, while old videos are rarely watched. Propose a comprehensive storage architecture that handles: 1) Initial upload, 2) Transcoding workspace, 3) Global distribution of popular content, and 4) Cost-effective long-term retention of unpopular content.
+You are designing the storage backend for a YouTube-like video platform. Users upload 1000 videos per hour. Videos are transcoded into multiple resolutions. Popular videos are accessed globally, while old videos are rarely watched. Propose a comprehensive storage architecture that handles: 1) Initial upload, 2) Transcoding workspace, 3) Global distribution of popular content, 4) Cost-effective long-term retention of unpopular content, and 5) Data durability across regional failures.

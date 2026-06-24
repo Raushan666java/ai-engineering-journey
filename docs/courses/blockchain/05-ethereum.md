@@ -1,16 +1,19 @@
 # Chapter 5: Ethereum and Smart Contracts
 
-> **Previous:** [Chapter 4: The Bitcoin Network](./04-bitcoin.md) | **Next:** [Chapter 6: Decentralized Applications (DApps)](./06-dapps.md)
+> **Previous:** [Chapter 4: The Bitcoin Network](./04-bitcoin.md) | **Next:** [Chapter 6: Smart Contract Development](./06-solidity.md)
 
 ---
 
 ## Learning Objectives
 
 - Compare the Ethereum Account model with the Bitcoin UTXO model
-- Define "Smart Contracts" and their execution environment (EVM)
-- Understand the role of Gas, Gas Price, and Gas Limit in preventing spam
-- Explain the difference between Externally Owned Accounts (EOA) and Contract Accounts
-- Describe the state transition function of the Ethereum blockchain
+- Distinguish between Externally Owned Accounts (EOA) and Contract Accounts
+- Understand the Ethereum Virtual Machine (EVM) architecture and bytecode execution
+- Analyze the state trie (Patricia Merkle Trie) and its role in Ethereum state
+- Calculate gas costs for common operations and understand EIP-1559 fee market
+- Describe EVM opcodes and their execution model
+- Explain the history of Ethereum upgrades (Merge, Shanghai, Dencun)
+- Understand the concept of Turing completeness and the halting problem in blockchain
 
 ## Chapter at a Glance
 
@@ -20,17 +23,21 @@
 | EVM | Sandboxed, deterministic runtime | Every node runs every transaction — expensive but trustless |
 | Smart Contracts | Self-executing immutable code | Deploy once, runs forever as programmed |
 | Gas | Computational cost measured per opcode | Prevents infinite loops, funds network security |
-| State Transition | (S, Tx) → S' | Deterministic state changes across all nodes |
+| State Trie | Patricia Merkle Trie maps address → state | Efficiently proves account existence and balance |
+| EIP-1559 | Base fee + priority fee (tip) | Deflationary burn mechanism, better fee estimation |
+| EIP-4844 | Proto-Danksharding (blob transactions) | Dramatically reduces L2 fees |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Account Model] --> B[EVM Architecture]
-    B --> C[Smart Contracts]
-    C --> D[Gas Economics]
-    D --> E[State Transitions]
-    E --> F[Ethereum Roadmap]
+    A[Account Model] --> B[State Trie]
+    B --> C[EVM Architecture]
+    C --> D[Smart Contracts]
+    D --> E[Gas Economics & EIP-1559]
+    E --> F[EVM Opcodes]
+    F --> G[Turing Completeness]
+    G --> H[Ethereum Upgrades]
 ```
 
 ---
@@ -38,32 +45,309 @@ flowchart LR
 ## Theory
 
 ### The Account Model
-Unlike Bitcoin, Ethereum uses an **Account-based model** (similar to a bank account).
-- **EOA (Externally Owned Account):** Controlled by private keys; can send transactions and hold Ether.
-- **Contract Account:** Controlled by code; has its own storage and logic.
-The "Global State" of Ethereum is a mapping of addresses to account states (Balance, Nonce, Code, Storage).
+
+Unlike Bitcoin, Ethereum uses an **Account-based model** (similar to a bank account). The "Global State" of Ethereum is a mapping of addresses to account states.
+
+**Two account types:**
+
+1. **EOA (Externally Owned Account):**
+   - Controlled by a private key
+   - Can initiate transactions
+   - Has ETH balance and nonce
+   - No associated code
+
+2. **Contract Account:**
+   - Controlled by code (smart contract)
+   - Executes when triggered by an EOA or another contract
+   - Has ETH balance, nonce, storage, and code hash
+   - Cannot initiate transactions on its own
+
+```mermaid
+flowchart TB
+    subgraph AccountTypes["Ethereum Account Types"]
+        EOA["EOA (Externally Owned)<br/>- Balance: 2.5 ETH<br/>- Nonce: 3<br/>- Code: None<br/>- Storage: None"]
+        CA["Contract Account<br/>- Balance: 10 ETH<br/>- Nonce: 1<br/>- CodeHash: 0xabc...<br/>- StorageRoot: 0xdef..."]
+    end
+    
+    EOA -->|"Creates transaction"| CA
+    CA -->|"Executes code"| CA
+    EOA -->|"Signs with private key"| Network
+    
+    User["Human User"] -->|"Controls"| EOA
+```
+
+**Account State Fields:**
+- **nonce:** Number of transactions sent (EOA) or number of contracts created (Contract)
+- **balance:** Ether balance in Wei (1 ETH = 10^18 Wei)
+- **storageRoot:** Root hash of the account's storage trie
+- **codeHash:** Hash of the account's bytecode (empty for EOAs)
+
+### State Trie (Patricia Merkle Trie)
+
+Ethereum uses a **Modified Merkle Patricia Trie** to store the global state. Unlike Bitcoin's simple UTXO set, Ethereum maintains a single authenticated data structure that maps every address to its account state.
+
+```mermaid
+flowchart TB
+    Root["State Root<br/>(Global state hash)"]
+    Node1["Branch Node"]
+    Node2["Branch Node"]
+    Leaf1["Leaf: 0xAb...<br/>Balance: 2.5 ETH<br/>Nonce: 3"]
+    Leaf2["Leaf: 0xBc...<br/>Balance: 10 ETH<br/>Nonce: 1<br/>CodeHash: 0xabc"]
+    Leaf3["Leaf: 0xDf...<br/>Balance: 0.1 ETH<br/>Nonce: 0"]
+    
+    Root --> Node1
+    Node1 --> Node2
+    Node1 --> Leaf1
+    Node2 --> Leaf2
+    Node2 --> Leaf3
+```
+
+**Why a Patricia Trie?**
+- **Efficient proofs:** Prove any account's state with `O(log n)` hashes
+- **Deterministic:** Same state always produces the same root hash
+- **Insertion order independent:** Different order of inserts still produces the same trie
+- **Update efficiency:** Writing to storage only updates affected branches
 
 ### The Ethereum Virtual Machine (EVM)
-The EVM is a sandboxed runtime environment for executing smart contract code. It is **Turing complete**, meaning it can perform any computation given enough resources. Every node in the network runs the EVM to verify the state transitions.
 
-### Smart Contracts
-A smart contract is a self-executing program stored on the blockchain. Once deployed, it is immutable and acts exactly as programmed without the need for an intermediary.
+The EVM is a sandboxed runtime environment for executing smart contract code. It is **Turing complete**, meaning it can perform any computation given enough resources and time.
 
-![Ethereum and EVM](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/blockchain/ch05-ethereum.png)
+```mermaid
+flowchart TB
+    subgraph EVMArchitecture["EVM Architecture"]
+        Code["Contract Bytecode"]
+        Stack["Stack<br/>(1024 max depth)"]
+        Memory["Memory<br/>(Volatile, byte-addressable)"]
+        Storage["Storage<br/>(Persistent, key-value)"]
+        PC["Program Counter"]
+        GasCounter["Gas Counter"]
+    end
+    
+    Code -->|"Fetches instruction"| PC
+    PC -->|"Executes opcode"| Stack
+    Stack --> Memory
+    Stack --> Storage
+    GasCounter -->|"Tracks consumption"| Stack
+```
+
+**EVM execution model:**
+- **Stack-based:** All operations push/pop from a 1024-element stack
+- **Deterministic:** Same code + same input → same output on every node
+- **Isolated:** Contracts cannot access the filesystem, network, or other contracts' internal storage directly
+- **Serialized:** One transaction executes at a time per contract (no concurrency issues)
+
+### EVM Opcodes
+
+The EVM has ~140+ opcodes categorized by function:
+
+| Category | Opcodes | Description |
+|----------|---------|-------------|
+| Arithmetic | ADD, SUB, MUL, DIV, MOD, ADDMOD, MULMOD | Integer math (256-bit) |
+| Comparison | LT, GT, EQ, ISZERO | Stack comparison |
+| Bitwise | AND, OR, XOR, NOT, SHL, SHR, SAR | Bit operations |
+| Memory | MLOAD, MSTORE, MSTORE8 | Volatile memory access |
+| Storage | SLOAD, SSTORE | Persistent storage (expensive) |
+| Environment | BALANCE, CALLER, ORIGIN, ADDRESS, CALLVALUE | Blockchain context |
+| Block Info | BLOCKHASH, COINBASE, TIMESTAMP, NUMBER, GASLIMIT | Block metadata |
+| Control Flow | JUMP, JUMPI, JUMPDEST, PC, STOP, RETURN, REVERT | Execution flow |
+| Logging | LOG0, LOG1, LOG2, LOG3, LOG4 | Event emission |
+| Calls | CALL, CALLCODE, DELEGATECALL, STATICCALL | Contract interaction |
+| Creation | CREATE, CREATE2 | Contract deployment |
+
+**Gas costs for common opcodes:**
+
+| Opcode | Gas | Description |
+|--------|-----|-------------|
+| ADD/SUB | 3 | Arithmetic operation |
+| MUL/DIV | 5 | Multiplication/division |
+| BALANCE | 2600 | Gets account balance (warm access) |
+| SLOAD | 2100 (cold), 100 (warm) | Load from storage |
+| SSTORE (zero→nonzero) | 22100 | Write to storage (cold) |
+| SSTORE (nonzero→nonzero) | 5000 | Update storage |
+| CALL | 2600 | Call another contract (warm) |
+| CREATE | 32000 | Deploy new contract |
+| SELFDESTRUCT | 5000 | Destroy contract |
 
 ### Gas and Economic Security
-To prevent infinite loops and resource abuse (The Halting Problem), Ethereum introduces **Gas**.
-- Every operation (addition, storage, etc.) costs a fixed amount of Gas.
-- **Gas Price:** What you are willing to pay per unit of gas (in Gwei).
-- **Gas Limit:** Maximum gas you allow the transaction to consume.
-- Total Fee = $GasUsed \times GasPrice$.
+
+To prevent infinite loops and resource abuse (the Halting Problem), Ethereum introduces **Gas**.
+
+```mermaid
+flowchart TB
+    subgraph GasMechanism["Gas Mechanism"]
+        Tx["Transaction"]
+        GasLimit["Gas Limit: 100,000"]
+        GasPrice["Gas Price: 50 Gwei"]
+        TotalFee["Max Fee: 100,000 × 50 = 5,000,000 Gwei<br/>= 0.005 ETH"]
+        Execution["EVM Executes..."
+        UsedGas["Gas Used: 45,000"]
+        Refund["Unused Gas Refunded:<br/>55,000 × 50 = 2,750,000 Gwei"]
+    end
+    
+    Tx --> GasLimit
+    Tx --> GasPrice
+    GasLimit --> TotalFee
+    GasPrice --> TotalFee
+    GasLimit --> Execution
+    Execution --> UsedGas
+    UsedGas --> Refund
+```
+
+- **Gas:** Unit of computational work (each opcode costs fixed gas)
+- **Gas Price:** Amount you pay per unit of gas (in Gwei, 1 Gwei = 10^-9 ETH)
+- **Gas Limit:** Maximum gas you allow the transaction to consume
+- **Total Fee:** Gas Used × Gas Price
+- **EIP-1559 (London fork):** Base fee (burned) + Priority fee (tip to miner)
+
+### EIP-1559 Fee Market
+
+Introduced in the London hard fork (August 2021):
+
+```typescript
+interface EIP1559Transaction {
+    maxFeePerGas: bigint;    // Maximum total fee willing to pay
+    maxPriorityFeePerGas: bigint;  // Tip to validator
+    baseFeePerGas: bigint;   // Network-calculated base fee (burned)
+}
+
+function calculateEffectiveFee(
+    maxFee: bigint,
+    maxPriority: bigint,
+    baseFee: bigint
+): bigint {
+    // Effective priority = min(maxPriority, maxFee - baseFee)
+    const effectivePriority = maxFee - baseFee < maxPriority
+        ? maxFee - baseFee
+        : maxPriority;
+    return baseFee + effectivePriority;
+}
+
+// Base fee adjusts based on block fullness
+function adjustBaseFee(
+    currentBaseFee: bigint,
+    blockGasUsed: number,
+    blockGasTarget: number  // 15M for pre-Dencun, 30M post
+): bigint {
+    // Target is 50% of gas limit
+    const target = blockGasTarget;
+    if (blockGasUsed > target) {
+        // Block >50% full → base fee increases by up to 12.5%
+        const excess = blockGasUsed - target;
+        const increase = (excess * currentBaseFee) / (BigInt(target) * 8n);
+        return currentBaseFee + increase;
+    } else {
+        // Block <50% full → base fee decreases
+        const deficit = target - blockGasUsed;
+        const decrease = (deficit * currentBaseFee) / (BigInt(target) * 8n);
+        return currentBaseFee - decrease;
+    }
+}
+```
+
+**Key changes from EIP-1559:**
+- Base fee is burned (removed from circulation) — can make ETH deflationary
+- Priority fee goes to validator as incentive
+- Better fee estimation (base fee is deterministic)
+- Users no longer need to guess gas prices manually
+
+### Gas Calculation Example
+
+```typescript
+function estimateContractCallGas(
+    functionComplexity: "simple" | "medium" | "complex"
+): number {
+    switch (functionComplexity) {
+        case "simple":
+            // Simple read/view function, no storage writes
+            return 50000;
+        case "medium":
+            // Some storage writes, basic computation
+            return 150000;
+        case "complex":
+            // Multiple storage writes, loops, external calls
+            return 500000;
+    }
+}
+
+// Example: Calling a token transfer function
+const gasUsed = 45000;  // Typical ERC-20 transfer
+const gasPrice = 50n;   // 50 Gwei
+const baseFee = 30n;    // 30 Gwei base, 20 Gwei tip
+
+const fee = gasUsed * Number(gasPrice);  // in Gwei
+const ethFee = fee / 1e9;  // Convert to ETH
+// 45000 * 50 = 2,250,000 Gwei = 0.00225 ETH
+```
+
+### Turing Completeness and The Halting Problem
+
+Ethereum is **Turing complete** — it can simulate any computable function. This is both a blessing and a curse:
+
+- **Benefit:** Can express any logic — complex DeFi protocols, NFTs, DAOs, etc.
+- **Challenge:** Can't know if a program will finish (the Halting Problem is undecidable)
+
+**Ethereum's solution:** Gas! Instead of proving a program halts, Ethereum charges for every computational step. If a transaction runs out of gas, it reverts but the miner keeps the gas. This ensures:
+- Infinite loops cost attackers real money
+- Miners are compensated for computation
+- The network remains available (no single transaction can halt all nodes)
+
+### Ethereum Upgrades
+
+```mermaid
+timeline
+    title Ethereum Major Upgrades
+    Frontier : July 2015 : First live release
+    Homestead : March 2016 : Second major release
+    DAO Fork : July 2016 : Reversed DAO hack
+    Metropolis Byzantium : Oct 2017 : Privacy features
+    Metropolis Constantinople : Feb 2019 : Gas optimization
+    Istanbul : Dec 2019 : ZK readiness
+    London : Aug 2021 : EIP-1559 fee burn
+    Paris (Merge) : Sept 2022 : PoS transition
+    Shanghai : April 2023 : ETH withdrawals
+    Dencun : March 2024 : EIP-4844 blobs
+```
+
+| Upgrade | Date | Key Changes |
+|---------|------|-------------|
+| Frontier | Jul 2015 | Initial release |
+| Homestead | Mar 2016 | Second major release |
+| The Merge | Sep 2022 | PoW → PoS, 99.9% energy reduction |
+| Shanghai | Apr 2023 | Enabled staking withdrawals (EIP-4895) |
+| Dencun | Mar 2024 | Proto-Danksharding (EIP-4844), blob transactions |
+| Electra | 2025+ | PeerDAS, further scalability |
+
+**The Merge (Paris):**
+- Transitioned execution layer from PoW to PoS (Beacon Chain)
+- Reduced energy consumption by ~99.9%
+- Validators replaced miners
+- Same EVM, same smart contracts, same execution
+
+**Dencun (EIP-4844):**
+- Introduced **blob transactions** — temporary data storage for L2 rollups
+- Reduced L2 fees by 10-100x
+- No permanent state storage for blobs (pruned after ~18 days)
+- Foundation for future full Danksharding
+
+### EOA vs Contract Account Comparison
+
+| Property | EOA | Contract Account |
+|----------|-----|-----------------|
+| Controlled by | Private key | Contract code |
+| Can initiate transactions | Yes | No |
+| Storage | None | Has persistent storage |
+| Code | None | Has bytecode |
+| Create at | User generates key | Deploy transaction |
+| Address derivation | `Keccak256(pubkey)[12:]` | `Keccak256(sender, nonce)[12:]` |
 
 ---
 
 ## Examples
 
-### Example 1: A Simple "Store Value" Contract
+### Example 1: Simple Storage Contract
+
 ```solidity
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
 contract SimpleStorage {
@@ -74,19 +358,114 @@ contract SimpleStorage {
     }
 }
 ```
+
 - **Deployment:** Alice sends a transaction with the contract's bytecode.
 - **Execution:** Bob calls `set(42)`. He pays for the gas required to update the `storedData` variable in Ethereum's global storage.
 
+**Gas breakdown for `set(42)`:**
+- Base cost: 21,000 gas (transaction)
+- SSTORE (zero → non-zero, cold): 22,100 gas
+- Total: ~43,100 gas
+
 ### Example 2: Out of Gas Error
+
 Alice sends a transaction to a complex contract with a Gas Limit of 21,000.
-1. The transaction starts.
-2. The EVM executes the first few steps, consuming 21,000 gas.
-3. The execution is still not finished.
-4. **Result:** The transaction fails. The state changes are reverted, but the 21,000 gas is **not refunded** because the miner already performed the work.
+
+1. The transaction starts (base cost: 21,000 gas consumed).
+2. There is 0 gas remaining for execution.
+3. **Result:** The transaction fails. The state changes are reverted, but the 21,000 gas is **not refunded** because the miner already performed the work.
+
+```typescript
+class EVM {
+    private gasCounter: number;
+    private gasLimit: number;
+
+    execute(code: string, gasLimit: number): ExecutionResult {
+        this.gasLimit = gasLimit;
+        this.gasCounter = 0;
+
+        // Base transaction cost
+        this.consumeGas(21000, "transaction base fee");
+
+        try {
+            // Execute opcodes
+            while (this.gasCounter < this.gasLimit) {
+                const opcode = this.fetchNextOpcode(code);
+                this.executeOpcode(opcode);
+            }
+            return { success: true, gasUsed: this.gasCounter };
+        } catch (error) {
+            if (error instanceof OutOfGasError) {
+                return {
+                    success: false,
+                    gasUsed: this.gasLimit,  // All gas consumed!
+                    error: "out of gas",
+                };
+            }
+            throw error;
+        }
+    }
+
+    private consumeGas(amount: number, reason: string): void {
+        if (this.gasCounter + amount > this.gasLimit) {
+            throw new OutOfGasError(reason);
+        }
+        this.gasCounter += amount;
+    }
+}
+```
+
+### Example 3: ERC-20 Transfer with Gas Calculation
+
+```typescript
+interface ERC20TransferParameters {
+    to: string;
+    value: bigint;
+}
+
+function estimateERC20TransferGas(totalHolders?: number): number {
+    // Base: 21000
+    // 2 SLOAD (balanceOf sender, totalSupply check): 2 * 2100 = 4200
+    // 2 SSTORE (sender balance--, receiver balance++): 2 * 5000 = 10000
+    // 2 LOG operations: 2 * 750 = 1500
+    // SLOAD for allowance if needed: 2100
+    // Various checks and overhead: ~5000
+    return 21000 + 4200 + 10000 + 1500 + 2100 + 5000;
+    // ≈ 45800 gas for a typical transfer
+}
+```
+
+### Example 4: State Trie Verification
+
+```typescript
+// Simplified representation of Patricia Merkle Trie verification
+function verifyAccountState(
+    address: string,
+    expectedBalance: bigint,
+    stateRootProof: string[],
+    globalStateRoot: string
+): boolean {
+    // Walk through the state trie using Merkle proofs
+    let currentNodeHash = globalStateRoot;
+    
+    for (const nibble of hexToNibbles(address)) {
+        const branchNode = getNode(currentNodeHash);
+        currentNodeHash = branchNode.children[parseInt(nibble, 16)];
+        
+        if (!currentNodeHash) {
+            return false; // Address does not exist
+        }
+    }
+    
+    // Leaf node contains the account's RLP-encoded state
+    const accountState = rlpDecode(getNode(currentNodeHash));
+    return BigInt(accountState.balance) === expectedBalance;
+}
+```
 
 > **One-Sentence Takeaway:** Ethereum's gas mechanism solves the halting problem for a Turing-complete blockchain by charging per-operation, ensuring infinite loops cost an attacker real money rather than halting the network.
 
-> **Pro Tip:** When deploying a smart contract, the gas cost scales with storage writes (SSTORE), not instruction count. Writing to a storage slot from zero costs ~20,000 gas, while writing from non-zero costs ~5,000 gas. Optimize by minimizing storage writes.
+> **Pro Tip:** When deploying a smart contract, the gas cost scales with storage writes (SSTORE), not instruction count. Writing to a storage slot from zero costs ~22,100 gas, while writing from non-zero costs ~5,000 gas. Optimize by minimizing storage writes and using events for non-critical data.
 
 > **Warning:** Smart contracts are immutable after deployment. If a bug is discovered, funds are at risk until a new contract is deployed and users migrate. Always audit contracts and include upgrade patterns (proxy contracts) for production systems.
 
@@ -101,16 +480,21 @@ Alice sends a transaction to a complex contract with a Gas Limit of 21,000.
 | UTXO Model (Bitcoin) | State = set of unspent outputs | No code execution | Simple payments |
 | Account Model (Ethereum) | State = address → balance mapping | Supports arbitrary computation | Smart contracts, DeFi |
 | Gas | Computation cost unit | Prevents DoS, funds network | All EVM operations |
+| State Trie | Patricia Merkle Trie | Efficient state proofs | Account verification |
+| EIP-1559 | Base fee burning | Deflationary, better UX | Fee market improvement |
+| EIP-4844 | Blob transactions | Cheap L2 data availability | Rollup scaling |
 
 ## Quick Reference
 
 | Category | Key Concepts | Notes |
 |----------|-------------|-------|
 | **Account Types** | EOA (externally owned), Contract | EOA txs are signed; Contract txs are triggered internally |
-| **EVM Ops** | ADD (3 gas), SSTORE (20K/5K), BALANCE (700) | Gas costs vary by operation complexity |
+| **EVM Ops** | ADD (3 gas), SSTORE (22K/5K), BALANCE (2600) | Gas costs vary by operation complexity |
 | **Denominations** | 1 ETH = 10⁹ Gwei = 10¹⁸ Wei | Gas price typically quoted in Gwei |
 | **Contract Lifecycle** | Deploy → Interact → Selfdestruct | No upgrade by default — use proxy pattern |
 | **State Transition** | σ[t+1] = Υ(σ[t], T) | Deterministic across all nodes |
+| **Base Fee** | EIP-1559: Burned, adjusts by up to 12.5%/block | Deflationary when blocks >50% full |
+| **Blobs** | EIP-4844: Temporary data, pruned after 18 days | 10-100x cheaper L2 fees |
 
 ## Cross-Application Matrix
 
@@ -121,6 +505,7 @@ Alice sends a transaction to a complex contract with a Gas Limit of 21,000.
 | Gas Economics | Swap pricing | Compute costs | Private chain pricing | EIP-1559 fee market |
 | Smart Contracts | Lending protocols | Automated logic | Supply chain rules | Formal verification |
 | State Transition | Flash loans | Cross-contract calls | Multi-chain state | Parallel EVM |
+| State Trie | Account state | Storage proofs | World state | Light client sync |
 
 ## Chapter Quiz
 
@@ -132,7 +517,7 @@ Alice sends a transaction to a complex contract with a Gas Limit of 21,000.
 
 <details>
 <summary>Answer</summary>
-**B) Writing from zero to non-zero is a cold storage access requiring more computation.** SSTORE from zero costs ~20,000 gas vs ~5,000 for updating existing storage. This incentivizes users to clear unused storage (gas refund).
+**B) Writing from zero to non-zero is a cold storage access requiring more computation.** SSTORE from zero costs ~22,100 gas vs ~5,000 for updating existing storage. This incentivizes users to clear unused storage (gas refund).
 </details>
 
 2. What happens to the state changes of an Ethereum transaction that runs out of gas?
@@ -157,7 +542,27 @@ Alice sends a transaction to a complex contract with a Gas Limit of 21,000.
 **B) Contract accounts can be programmed to execute multi-step operations atomically.** This enables composable DeFi operations (flash loans, multi-hop swaps) that execute as atomic units — either all steps succeed or none do.
 </details>
 
-## Summary
+4. What is the base fee in EIP-1559?
+   - A) A fee paid directly to the miner
+   - B) A mandatory fee that is burned (removed from circulation)
+   - C) An optional tip for priority
+   - D) A percentage of the transaction value
+
+<details>
+<summary>Answer</summary>
+**B) A mandatory fee that is burned (removed from circulation).** In EIP-1559, the base fee is calculated per-block based on demand and is burned, potentially making ETH deflationary. The priority fee (tip) goes to the validator.
+</details>
+
+5. Why does Ethereum use a Patricia Merkle Trie instead of Bitcoin's simple Merkle tree?
+   - A) Patricia tries are faster to compute
+   - B) Patricia tries allow efficient proof of individual account states (key-value queries)
+   - C) Patricia tries use less storage
+   - D) Bitcoin's tree is actually a Patricia trie
+
+<details>
+<summary>Answer</summary>
+**B) Patricia tries allow efficient proof of individual account states (key-value queries).** Ethereum needs to efficiently read, update, and prove the state of any account (balance, nonce, storage, code) by address. A Patricia Trie enables efficient key-value lookups and proofs, unlike Bitcoin's transaction-oriented Merkle tree.
+</details>
 
 ## Summary
 
@@ -165,22 +570,39 @@ Alice sends a transaction to a complex contract with a Gas Limit of 21,000.
 - Accounts (EOAs and Contracts) are the primary units of state.
 - The EVM provides a consistent, deterministic environment for smart contract execution.
 - Gas is the fundamental mechanism for resource allocation and network security.
+- The state trie (Patricia Merkle Trie) enables efficient account state proofs.
+- EIP-1559 introduced base fee burning for better fee estimation and deflationary pressure.
+- Ethereum has evolved through major upgrades (Merge, Shanghai, Dencun) to improve scalability and sustainability.
 - Smart contracts enable decentralized, trustless logic on a global scale.
+
+## Practical Takeaways
+
+1. Use EIP-1559 transactions (`type: 2`) for better fee estimation — set `maxFeePerGas` and `maxPriorityFeePerGas`.
+2. Minimize SSTORE operations in smart contracts — they cost the most gas.
+3. Use the `storageRoot` and `codeHash` in block headers to verify account state via light clients.
+4. For production contracts, always include upgrade mechanisms (proxy pattern) and emergency pause functions.
+5. Monitor EIP-4844 blob fees when deploying L2 applications — they are much cheaper than L1 calldata.
 
 ---
 
 ## Exercises
 
 ### Review Questions
+
 1. What is the difference between an EOA and a Contract Account?
 2. Why is Turing completeness both a benefit and a risk for Ethereum?
 3. Explain the relationship between Gwei and Ether.
 4. What happens to the "Nonce" of an account after a transaction is executed?
+5. How does the Patricia Merkle Trie differ from a standard Merkle tree?
 
 ### Application Problems
-1. Calculate the total fee in ETH for a transaction that uses 100,000 gas with a gas price of 50 Gwei.
+
+1. Calculate the total fee in ETH for a transaction that uses 100,000 gas with a max priority fee of 2 Gwei and a base fee of 30 Gwei.
 2. Compare the storage requirements of the UTXO model versus the Account model for a network with 1 million users.
 3. Explain why "Gas Price" fluctuates based on network demand.
+4. Calculate the base fee change if the previous block used 20M gas out of a 30M target.
 
 ### Challenge Problem
+
 1. Discuss the "Reentrancy" vulnerability at a high level and explain how it relates to the EVM's execution flow.
+2. Research ERC-4337 (Account Abstraction) and explain how it enables smart contract wallets, social recovery, and gas sponsorship without changing the core protocol.

@@ -11,6 +11,8 @@ After completing this chapter, you will be able to:
 - Use the binomial theorem to expand $(x+y)^n$
 - Apply the pigeonhole principle with generalizations
 - Count arrangements with repetitions and constraints
+- Use stars and bars to solve distribution problems
+- Apply inclusion-exclusion to overlapping sets
 
 ## Chapter at a Glance
 
@@ -22,6 +24,7 @@ After completing this chapter, you will be able to:
 | Binomial Theorem | Expansion of $(x+y)^n$ via coefficients | Pascal's triangle gives coefficients directly |
 | Pigeonhole Principle | If $n > m$, a collision is guaranteed | Ceil$(N/k)$ gives the minimum guaranteed count |
 | Stars and Bars | Combinations with unlimited repetition | Distribute identical items into distinct categories |
+| Inclusion-Exclusion | Avoid overcounting overlapping sets | Alternating sums and differences of intersections |
 
 ## Chapter Roadmap
 
@@ -34,7 +37,8 @@ flowchart LR
     D --> E[Pigeonhole Principle]
     E --> F[Permutations with Repetition]
     F --> G[Combinations with Repetition]
-    G --> H[General Inclusion-Exclusion]
+    G --> H[Stars and Bars]
+    H --> I[General Inclusion-Exclusion]
 ```
 
 ## Theory
@@ -72,8 +76,6 @@ $$\binom{n}{r} = C(n, r) = \frac{n!}{r!(n-r)!}$$
 - **Pascal's identity:** $\binom{n}{r} + \binom{n}{r-1} = \binom{n+1}{r}$ for $1 \leq r \leq n$
 
 > **One-Sentence Takeaway:** Combinations count unordered subsets; use $\binom{n}{r} = n!/(r!(n-r)!)$ when selection order does not matter.
->
-> **Pro Tip:** Use combinations whenever the problem says "choose," "select," or "committee" without caring about arrangement order. If order matters, it is a permutation.
 
 ### 5.4 The Binomial Theorem
 
@@ -84,6 +86,33 @@ $$(x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k$$
 
 *Corollary.* $\sum_{k=0}^{n} (-1)^k \binom{n}{k} = 0$ (set $x = 1$, $y = -1$).
 
+```typescript
+function binomialCoefficient(n: number, k: number): number {
+  if (k < 0 || k > n) return 0;
+  if (k === 0 || k === n) return 1;
+  // Use multiplicative formula for efficiency
+  let result = 1;
+  for (let i = 1; i <= k; i++) {
+    result = (result * (n - k + i)) / i;
+  }
+  return result;
+}
+
+function binomialExpansion(n: number): string[] {
+  const terms: string[] = [];
+  for (let k = 0; k <= n; k++) {
+    const coeff = binomialCoefficient(n, k);
+    const xPower = n - k === 0 ? "" : n - k === 1 ? "x" : `x^${n - k}`;
+    const yPower = k === 0 ? "" : k === 1 ? "y" : `y^${k}`;
+    const term = `${coeff}${xPower}${yPower}`;
+    terms.push(term);
+  }
+  return terms;
+}
+
+console.log(binomialExpansion(4)); // ["1x^4", "4x^3y", "6x^2y^2", "4xy^3", "1y^4"]
+```
+
 > **One-Sentence Takeaway:** The binomial theorem provides a closed-form expansion of $(x+y)^n$ using binomial coefficients from Pascal's triangle.
 
 ### 5.5 Pigeonhole Principle
@@ -93,22 +122,41 @@ $$(x + y)^n = \sum_{k=0}^{n} \binom{n}{k} x^{n-k} y^k$$
 **Generalized Pigeonhole Principle.** If $N$ items are placed into $k$ boxes, then at least one box contains at least $\lceil N/k \rceil$ items.
 
 > **One-Sentence Takeaway:** If there are more items than containers, at least one container must hold multiple items — a simple but powerful existence proof.
->
-> **Warning:** The pigeonhole principle only guarantees existence, not location. It tells you a collision must happen but not which box or how many items it contains.
 
-**Theorem 5.4 (ErdÅ‘sâ€“Szekeres).** Any sequence of $n^2 + 1$ distinct real numbers contains an increasing or decreasing subsequence of length $n + 1$.
+**Theorem 5.4 (Erdős–Szekeres).** Any sequence of $n^2 + 1$ distinct real numbers contains an increasing or decreasing subsequence of length $n + 1$.
+
+**Example (Birthday problem).** In a group of 23 people, the probability that at least two share a birthday is approximately 50%. By the pigeonhole principle, with 367 people a collision is guaranteed (only 366 possible birthdays including Feb 29).
 
 ### 5.6 Permutations with Repetition
 
 The number of distinct permutations of $n$ objects where there are $n_1$ of type 1, $n_2$ of type 2, ..., $n_k$ of type $k$ (with $n_1 + \cdots + n_k = n$) is:
 $$\frac{n!}{n_1!\, n_2! \,\cdots\, n_k!}$$
 
+```typescript
+function multinomialPermutation(n: number, counts: number[]): number {
+  // n! / (n1! * n2! * ... * nk!)
+  function factorial(x: number): number {
+    let r = 1;
+    for (let i = 2; i <= x; i++) r *= i;
+    return r;
+  }
+  let result = factorial(n);
+  for (const c of counts) result /= factorial(c);
+  return result;
+}
+
+// "MISSISSIPPI": M(1), I(4), S(4), P(2)
+console.log(multinomialPermutation(11, [1, 4, 4, 2])); // 34,650
+```
+
 > **One-Sentence Takeaway:** When objects have repeated types, divide the total permutations by the factorial of each repetition count to avoid overcounting identical arrangements.
 
-### 5.7 Combinations with Repetition
+### 5.7 Combinations with Repetition (Stars and Bars)
 
 The number of ways to choose $r$ items from $n$ types with unlimited repetition (stars and bars) is:
 $$\binom{n + r - 1}{r}$$
+
+**Proof.** Represent the selection as $r$ stars ($*$) partitioned by $n-1$ bars ($|$) into $n$ groups. The number of distinct arrangements of $r$ stars and $n-1$ bars is $\binom{(r) + (n-1)}{r} = \binom{n+r-1}{r}$.
 
 > **One-Sentence Takeaway:** Stars and bars counts ways to distribute $r$ identical items into $n$ distinct categories using $\binom{n+r-1}{r}$.
 >
@@ -119,7 +167,151 @@ $$\binom{n + r - 1}{r}$$
 For $n$ finite sets $A_1, A_2, \ldots, A_n$:
 $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
 
-> **One-Sentence Takeaway:** The generalized inclusion-exclusion formula alternates adding and subtracting intersections of increasing size to avoid overcounting in overlapping sets.
+**Example (Derangements).** A derangement is a permutation where no element appears in its original position. The number of derangements of $n$ elements is:
+$$!n = n! \sum_{i=0}^{n} \frac{(-1)^i}{i!}$$
+
+This follows from inclusion-exclusion: total permutations minus those fixing at least one element.
+
+### 5.9 Combinatorial Proofs
+
+A **combinatorial proof** counts the same set in two different ways and equates the expressions. This is a powerful technique for proving binomial identities.
+
+**Example:** Prove $\binom{n}{r} = \binom{n}{n-r}$ combinatorially.
+
+*Proof.* Choose $r$ elements from an $n$-element set. This is equivalent to choosing the $n-r$ elements to exclude. Both count the same subsets, so they are equal. $\square$
+
+**Theorem 5.5 (Vandermonde's identity).** For nonnegative integers $m, n, r$:
+$$\binom{m+n}{r} = \sum_{k=0}^{r} \binom{m}{k} \binom{n}{r-k}$$
+
+*Combinatorial proof.* Choose $r$ elements from a set of $m+n$ elements. Let $k$ be the number of elements chosen from the first $m$, and $r-k$ from the remaining $n$. Sum over all $k$. $\square$
+
+> **One-Sentence Takeaway:** Combinatorial proofs derive identities by counting the same set in two different ways — if both counting approaches are correct, the expressions must be equal.
+
+```typescript
+function vandermonde(m: number, n: number, r: number): number {
+  let sum = 0;
+  for (let k = 0; k <= r; k++) {
+    sum += binomialCoefficient(m, k) * binomialCoefficient(n, r - k);
+  }
+  return sum;
+}
+
+// Verify Vandermonde's identity for m=5, n=3, r=4
+const left = binomialCoefficient(8, 4); // C(5+3, 4)
+const right = vandermonde(5, 3, 4);
+console.log(left === right); // true (both = 70)
+```
+
+### 5.10 Catalan Numbers
+
+**Catalan numbers** count many combinatorial structures (valid parentheses, binary trees, lattice paths):
+
+$$C_n = \frac{1}{n+1}\binom{2n}{n}$$
+
+| $n$ | $C_n$ | Interpretation |
+|-----|-------|----------------|
+| 0 | 1 | Empty sequence |
+| 1 | 1 | () |
+| 2 | 2 | ()(), (()) |
+| 3 | 5 | 5 valid parenthesis strings of length 6 |
+| 4 | 14 | 14 full binary trees with 4 internal nodes |
+| 5 | 42 | Dyck paths of length 10 |
+
+```typescript
+function catalan(n: number): number {
+  return binomialCoefficient(2 * n, n) / (n + 1);
+}
+
+function generateParentheses(n: number): string[] {
+  const result: string[] = [];
+  function backtrack(s: string, open: number, close: number) {
+    if (s.length === 2 * n) { result.push(s); return; }
+    if (open < n) backtrack(s + "(", open + 1, close);
+    if (close < open) backtrack(s + ")", open, close + 1);
+  }
+  backtrack("", 0, 0);
+  return result;
+}
+
+console.log(catalan(3)); // 5
+console.log(generateParentheses(3)); // ["((()))", "(()())", "(())()", "()(())", "()()()"]
+```
+
+> **One-Sentence Takeaway:** Catalan numbers count recursively defined combinatorial objects; they appear in counting balanced parentheses, binary trees, and lattice paths.
+
+## Concept Comparison Table
+
+| Concept | Definition | Key Distinction | Use Case |
+|---------|-----------|----------------|----------|
+| Permutation | Ordered arrangement of distinct elements | **Order matters** | Passwords, rankings, race results |
+| Combination | Unordered selection (subset) | **Order does not matter** | Committees, poker hands, lottery |
+| Permutation with Repetition | Ordered, reuse allowed | Each position gets $n$ independent choices | PIN codes, binary strings |
+| Combination with Repetition | Unordered, reuse allowed (stars and bars) | $\binom{n+r-1}{r}$ formula | Distributing identical items into groups |
+| Binomial Coefficient | $\binom{n}{r} = n!/(r!(n-r)!)$ | Symmetry: $\binom{n}{r}=\binom{n}{n-r}$ | Probability, polynomial expansion |
+| Pigeonhole Principle | $n$ items into $m$ boxes, $n>m \implies$ collision | Existence guarantee, not constructive | Birthday problem, hash collisions |
+| Catalan Number | $C_n = \frac{1}{n+1}\binom{2n}{n}$ | Counts recursively defined structures | Parentheses, binary trees, triangulations |
+
+## Quick Reference
+
+| Operation | Formula | Example |
+|-----------|---------|---------|
+| Permutations (no repetition) | $P(n,r) = n!/(n-r)!$ | $P(8,3) = 8\cdot7\cdot6 = 336$ |
+| Permutations (with repetition) | $n^r$ | $36^6$ possible passwords |
+| Combinations (no repetition) | $\binom{n}{r} = n!/(r!(n-r)!)$ | $\binom{52}{5} = 2,598,960$ poker hands |
+| Permutations with identical items | $n!/(n_1! n_2! \cdots n_k!)$ | "MISSISSIPPI": $34,650$ |
+| Combinations with repetition | $\binom{n+r-1}{r}$ | 10 candies, 3 children: $\binom{12}{2}=66$ |
+| Binomial expansion term $k$ | $\binom{n}{k} x^{n-k} y^k$ | $(2x-3)^4$: term 2 is $-96x^3$ |
+| Inclusion-Exclusion (2 sets) | $|A \cup B| = |A| + |B| - |A \cap B|$ | 1-100 divisible by 2 or 3: $67$ |
+| Catalan number | $C_n = \frac{1}{n+1}\binom{2n}{n}$ | $C_3 = 5$ valid parentheses of length 6 |
+| Derangement number | $!n = n!\sum_{i=0}^{n} (-1)^i/i!$ | $!4 = 9$ (permutations of 4 with no fixed points) |
+
+## Cross-Application Matrix
+
+| Concept | Computer Science | Probability & Statistics | Cryptography | Algorithm Analysis |
+|---------|-----------------|------------------------|--------------|-------------------|
+| Permutations | Task scheduling, topological sorts | Arrangements in sample space | Brute-force password resistance | NP-complete search space size |
+| Combinations | Feature selection, subset problems | Lottery and card probabilities | Key-space size estimation | Subset-sum, knapsack problems |
+| Binomial Theorem | Bit pattern enumeration | Bernoulli trial formulas | Error-correcting code design | Divide-and-conquer recurrences |
+| Pigeonhole Principle | Hash collision guarantee | Birthday paradox | Collision resistance of hash functions | Lower-bound proofs |
+| Stars and Bars | Resource allocation, OS partitions | Multinomial distributions | Message partitioning | Integer partition complexity |
+| Catalan Numbers | Binary tree enumeration, dynamic programming | Random walks | — | Recursive algorithm analysis |
+
+## Chapter Quiz
+
+1. How many distinct ways can the letters of "BANANA" be arranged?
+   - A) 720
+   - B) 120
+   - C) 60
+   - D) 360
+   <details><summary>Answer</summary>**C)** 60 — $\frac{6!}{3!\,2!\,1!} = \frac{720}{6 \times 2} = 60$.</details>
+
+2. In a group of 23 people, what is the approximate probability that at least two share a birthday?
+   - A) Less than 25%
+   - B) About 50%
+   - C) About 75%
+   - D) Over 90%
+   <details><summary>Answer</summary>**B)** About 50% — the classic birthday paradox shows only 23 people are needed for a 50% collision probability.</details>
+
+3. How many nonnegative integer solutions does $x_1 + x_2 + x_3 + x_4 = 8$ have?
+   - A) $\binom{11}{3}$
+   - B) $\binom{8}{3}$
+   - C) $\binom{12}{4}$
+   - D) $\binom{11}{4}$
+   <details><summary>Answer</summary>**A)** $\binom{11}{3}$ — stars and bars with $n=4$ types and $r=8$ items gives $\binom{8+4-1}{4-1} = \binom{11}{3}$.</details>
+
+4. Vandermonde's identity generalizes which combinatorial operation?
+   - A) Summing binomial coefficients to get $2^n$
+   - B) Splitting a combination across two disjoint sets
+   - C) Distributing stars into bars
+   - D) Counting derangements by inclusion-exclusion
+   <details><summary>Answer</summary>**B)** $\binom{m+n}{r} = \sum \binom{m}{k}\binom{n}{r-k}$ splits a combination across two disjoint sets.</details>
+
+5. The number of derangements of 4 elements ($!4$) is:
+   - A) 24
+   - B) 12
+   - C) 9
+   - D) 15
+   <details><summary>Answer</summary>**C)** 9 — $4!(1 - 1/1! + 1/2! - 1/3! + 1/4!) = 24(1 - 1 + 1/2 - 1/6 + 1/24) = 24(12/24) = 9$.</details>
 
 ## Examples
 
@@ -151,61 +343,17 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
 
 *Solution.* $(2x-3)^4 = \sum_{k=0}^{4} \binom{4}{k} (2x)^{4-k} (-3)^k = 16x^4 - 96x^3 + 216x^2 - 216x + 81$.
 
-## Concept Comparison Table
+**Example 5.8** (Catalan numbers — balanced parentheses). How many valid parentheses strings of length 6?
 
-| Concept | Definition | Key Distinction | Use Case |
-|---------|-----------|----------------|----------|
-| Permutation | Ordered arrangement of distinct elements | **Order matters** | Passwords, rankings, race results |
-| Combination | Unordered selection (subset) | **Order does not matter** | Committees, poker hands, lottery |
-| Permutation with Repetition | Ordered, reuse allowed | Each position gets $n$ independent choices | PIN codes, binary strings |
-| Combination with Repetition | Unordered, reuse allowed (stars and bars) | $\binom{n+r-1}{r}$ formula | Distributing identical items into groups |
-| Binomial Coefficient | $\binom{n}{r} = n!/(r!(n-r)!)$ | Symmetry: $\binom{n}{r}=\binom{n}{n-r}$ | Probability, polynomial expansion |
-| Pigeonhole Principle | $n$ items into $m$ boxes, $n>m \implies$ collision | Existence guarantee, not constructive | Birthday problem, hash collisions |
+*Solution.* $C_3 = \frac{1}{4}\binom{6}{3} = \frac{20}{4} = 5$: ()()(), (())(), (()()), ((())), ()(()).
 
-## Quick Reference
+**Example 5.9** (Combinatorial proof — Pascal's identity). Prove $\binom{n}{r} + \binom{n}{r-1} = \binom{n+1}{r}$ combinatorially.
 
-| Operation | Formula | Example |
-|-----------|---------|---------|
-| Permutations (no repetition) | $P(n,r) = n!/(n-r)!$ | $P(8,3) = 8\cdot7\cdot6 = 336$ |
-| Permutations (with repetition) | $n^r$ | $36^6$ possible passwords |
-| Combinations (no repetition) | $\binom{n}{r} = n!/(r!(n-r)!)$ | $\binom{52}{5} = 2,598,960$ poker hands |
-| Permutations with identical items | $n!/(n_1! n_2! \cdots n_k!)$ | "MISSISSIPPI": $34,650$ |
-| Combinations with repetition | $\binom{n+r-1}{r}$ | 10 candies, 3 children: $\binom{12}{2}=66$ |
-| Binomial expansion term $k$ | $\binom{n}{k} x^{n-k} y^k$ | $(2x-3)^4$: term 2 is $-96x^3$ |
-| Inclusion-Exclusion (2 sets) | $\|A \cup B\| = \|A\| + \|B\| - \|A \cap B\|$ | 1-100 divisible by 2 or 3: $67$ |
+*Proof.* Consider choosing $r$ elements from $\{1, 2, \ldots, n+1\}$. Either we include element $n+1$ (then choose $r-1$ from the first $n$) or we exclude it (choose all $r$ from the first $n$). This gives $\binom{n}{r-1} + \binom{n}{r}$. $\square$
 
-## Cross-Application Matrix
+**Example 5.10** (Derangements by inclusion-exclusion). How many permutations of 1,2,3,4 have no fixed points?
 
-| Concept | Computer Science | Probability & Statistics | Cryptography | Algorithm Analysis |
-|---------|-----------------|------------------------|--------------|-------------------|
-| Permutations | Task scheduling, topological sorts | Arrangements in sample space | Brute-force password resistance | NP-complete search space size |
-| Combinations | Feature selection, subset problems | Lottery and card probabilities | Key-space size estimation | Subset-sum, knapsack problems |
-| Binomial Theorem | Bit pattern enumeration | Bernoulli trial formulas | Error-correcting code design | Divide-and-conquer recurrences |
-| Pigeonhole Principle | Hash collision guarantee | Birthday paradox | Collision resistance of hash functions | Lower-bound proofs |
-| Stars and Bars | Resource allocation, OS partitions | Multinomial distributions | Message partitioning | Integer partition complexity |
-
-## Chapter Quiz
-
-1. How many distinct ways can the letters of "BANANA" be arranged?
-   - A) 720
-   - B) 120
-   - C) 60
-   - D) 360
-   <details><summary>Answer</summary>**C)** 60 — $\frac{6!}{3!\,2!\,1!} = \frac{720}{6 \times 2} = 60$.</details>
-
-2. In a group of 23 people, what is the approximate probability that at least two share a birthday?
-   - A) Less than 25%
-   - B) About 50%
-   - C) About 75%
-   - D) Over 90%
-   <details><summary>Answer</summary>**B)** About 50% — the classic birthday paradox shows only 23 people are needed for a 50% collision probability.</details>
-
-3. How many nonnegative integer solutions does $x_1 + x_2 + x_3 + x_4 = 8$ have?
-   - A) $\binom{11}{3}$
-   - B) $\binom{8}{3}$
-   - C) $\binom{12}{4}$
-   - D) $\binom{11}{4}$
-   <details><summary>Answer</summary>**A)** $\binom{11}{3}$ — stars and bars with $n=4$ types and $r=8$ items gives $\binom{8+4-1}{4-1} = \binom{11}{3}$.</details>
+*Solution.* Total permutations: $4! = 24$. Subtract those fixing at least one: $\binom{4}{1}3! = 24$, add back $\binom{4}{2}2! = 12$, subtract $\binom{4}{3}1! = 4$, add $\binom{4}{4}0! = 1$. Result: $24 - 24 + 12 - 4 + 1 = 9$.
 
 ## Summary
 
@@ -214,7 +362,18 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
 - Binomial theorem gives expansion of $(x+y)^n$.
 - Pigeonhole principle guarantees collisions when there are more items than boxes.
 - Stars and bars counts combinations with repetition.
-- Inclusion-exclusion prevents double-counting.
+- Inclusion-exclusion prevents double-counting in overlapping sets.
+- Catalan numbers count recursively defined structures.
+- Combinatorial proofs equate two counting expressions for the same set.
+
+## Practical Takeaways
+
+1. **Identify order** — permutation if order matters, combination if not.
+2. **Check repetition** — allowed repetition increases counts dramatically.
+3. **Stars and bars for distribution** — identical items into distinct bins.
+4. **Pigeonhole for lower bounds** — guarantees at least one box has $\lceil N/k \rceil$.
+5. **Inclusion-exclusion for overlaps** — don't forget to subtract intersections.
+6. **Combinatorial proofs are clean** — no algebra, just two counting arguments.
 
 ## Exercises
 
@@ -238,6 +397,14 @@ $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i<j} |A_i \cap A_j
 
 10. How many solutions in nonnegative integers does $x_1 + x_2 + x_3 = 6$ have?
 
+11. How many ways are there to deal a 5-card poker hand that contains at least one ace?
+
+12. Derive a formula for the number of ways to choose 12 donuts from 5 varieties (unlimited of each).
+
 ### Challenge Problem
 
-11. Prove the **hockey-stick identity**: $\sum_{i=r}^{n} \binom{i}{r} = \binom{n+1}{r+1}$ using either a combinatorial argument or induction. Then use it to evaluate $\sum_{i=3}^{10} \binom{i}{3}$.
+13. Prove the **hockey-stick identity**: $\sum_{i=r}^{n} \binom{i}{r} = \binom{n+1}{r+1}$ using either a combinatorial argument or induction. Then use it to evaluate $\sum_{i=3}^{10} \binom{i}{3}$.
+
+14. Prove that the number of ways to pair up $2n$ people into $n$ pairs is $(2n)!/(2^n n!) = (2n-1)!!$ (the double factorial). Hint: how many ways to form $n$ unordered pairs?
+
+15. Use the inclusion-exclusion principle to count the number of positive integers less than or equal to 210 that are coprime to 210 (i.e., not divisible by 2, 3, 5, or 7).

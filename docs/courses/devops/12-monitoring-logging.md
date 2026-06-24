@@ -4,8 +4,6 @@
 
 ## Learning Objectives
 
-![Monitoring and Logging Stack Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch12-monitoring-logging.png)
-
 By the end of this chapter, students will be able to:
 
 1. Deploy and configure Prometheus for metrics collection and alerting
@@ -13,7 +11,8 @@ By the end of this chapter, students will be able to:
 3. Configure Loki for log aggregation and querying with LogQL
 4. Deploy the ELK stack (Elasticsearch, Logstash, Kibana) for centralized logging
 5. Implement structured logging with JSON and appropriate log levels
-
+6. Configure Alertmanager for deduplication, grouping, and notification
+7. Design monitoring strategies using USE and RED methods
 
 ## Chapter at a Glance
 
@@ -25,52 +24,85 @@ By the end of this chapter, students will be able to:
 | Grafana | Multi-source visualization and alerting | Design dashboard hierarchy from global to detailed |
 | Loki | Label-indexed log aggregation | Cheaper than ELK at scale; uses LogQL |
 | ELK Stack | Full-text search with Elasticsearch | Best for advanced log analytics and search |
+| Structured Logging | JSON output with correlation IDs | Enables machine parsing and cross-service tracing |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Monitoring Principles] --> B[Prometheus]
-    B --> C[Metrics Types]
-    B --> D[PromQL]
-    B --> E[Alertmanager]
-    A --> F[Loki]
-    A --> G[ELK Stack]
-    G --> H[Elasticsearch]
-    G --> I[Kibana]
-    F & H & I --> J[Structured Logging]
+    A[Monitoring Principles] --> B[USE Method]
+    A --> C[RED Method]
+    B & C --> D[Prometheus]
+    D --> E[Metrics Types]
+    D --> F[PromQL]
+    D --> G[Recording Rules]
+    D --> H[Alertmanager]
+    A --> I[Loki]
+    A --> J[ELK Stack]
+    J --> K[Elasticsearch]
+    J --> L[Logstash]
+    J --> M[Kibana]
+    I & K --> N[Structured Logging]
 ```
 
 ## Theory
 
 ### 12.1 Monitoring Principles
 
-> **Pro Tip:** Use histogram_quantile in PromQL to calculate percentile latencies from histogram metrics.
-
 Monitoring is the systematic collection, analysis, and visualization of system data to understand behavior, detect anomalies, and support decision making. Effective monitoring answers four questions:
 
-1. What is broken right now? (Alerting)
-2. What is trending in the wrong direction? (Dashboards)
-3. What happened during the incident last night? (Temporal analysis)
-4. Why did the system behave that way? (Diagnostics)
+1. **What is broken right now?** (Alerting) — Immediate notification of service degradation
+2. **What is trending in the wrong direction?** (Dashboards) — Visual indicators of approaching problems
+3. **What happened during the incident last night?** (Temporal analysis) — Historical data for root cause
+4. **Why did the system behave that way?** (Diagnostics) — Detailed investigation capabilities
 
-### 12.2 Prometheus
+**The USE Method** (Utilization, Saturation, Errors) — For resource-level monitoring:
+- **Utilization** — Percentage of resource being used (CPU %, memory %, disk space %)
+- **Saturation** — Degree of resource contention (queue length, run queue depth)
+- **Errors** — Error counts (disk I/O errors, network interface drops)
 
-> **Remember:** Loki does not index log content--only labels. Use LogQL for log stream filtering and aggregation.
+**The RED Method** (Rate, Errors, Duration) — For service-level monitoring:
+- **Rate** — Requests per second or transactions per second
+- **Errors** — Number of failed requests (explicit 5xx, implicit failures like wrong results)
+- **Duration** — Latency distributions (average, p50, p90, p95, p99)
+
+### 12.2 Prometheus Architecture
 
 Prometheus is a metrics-based monitoring system designed for reliability and operational simplicity.
 
-**Architecture**:
-- **Prometheus Server** â€” Scrapes metrics from targets at configured intervals, stores data in a time-series database.
-- **Exporters** â€” Agents that expose metrics in Prometheus format (node_exporter for host metrics, kube-state-metrics for Kubernetes, custom application exporters).
-- **Pushgateway** â€” Accepts metrics from short-lived jobs that cannot be scraped.
-- **Alertmanager** â€” Handles alerts: deduplication, grouping, routing, silencing, and notification.
+**Architecture Components:**
+- **Prometheus Server** — Scrapes metrics from targets at configured intervals, stores data in a time-series database. Default scrape interval is 15s.
+- **Exporters** — Agents that expose metrics in Prometheus format:
+  - `node_exporter` — Host-level metrics (CPU, memory, disk, network)
+  - `kube-state-metrics` — Kubernetes object metrics
+  - `blackbox_exporter` — Probes endpoints (HTTP, HTTPS, TCP, ICMP)
+  - Custom application exporters using client libraries
+- **Pushgateway** — Accepts metrics from short-lived jobs that cannot be scraped (batch jobs, scheduled tasks). Used carefully to avoid single points of failure.
+- **Alertmanager** — Handles alerts: deduplication, grouping, routing, silencing, and notification to channels (Slack, PagerDuty, email).
 
-**Data Model** â€” Metrics are identified by a metric name and key-value labels. Four metric types: Counter (monotonically increasing), Gauge (up/down values), Histogram (bucketed observations), Summary (quantile-based observations).
+**Data Model:**
+Metrics are identified by a metric name and key-value label pairs. Prometheus stores data as a time series — a stream of timestamped values belonging to the same metric and label set.
 
-**PromQL (Prometheus Query Language)** â€” Powerful query language for metric aggregation and analysis:
+**Four Metric Types:**
+1. **Counter** — Monotonically increasing value (requests total, errors total). Cannot decrease, only reset on restart.
+2. **Gauge** — Can go up or down (CPU temperature, memory usage, queue depth).
+3. **Histogram** — Samples observations into configurable buckets. Counts observations in each bucket and provides total count and sum. Use for latency, request sizes.
+4. **Summary** — Similar to histogram but calculates configurable quantiles over a sliding time window on the client side.
+
+### 12.3 PromQL (Prometheus Query Language)
+
+PromQL is a powerful functional query language for metric aggregation:
 
 ```promql
+# Instant vector query (current value)
+node_cpu_seconds_total{mode="idle"}
+
+# Range vector query (values over time)
+node_cpu_seconds_total{mode="idle"}[5m]
+
+# Rate calculation (per-second average rate of increase)
+rate(node_cpu_seconds_total{mode="idle"}[5m])
+
 # CPU utilization per instance
 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 
@@ -79,9 +111,15 @@ sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total
 
 # 95th percentile request latency
 histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, service))
+
+# Aggregation operators: sum, avg, min, max, count, quantile
+# Binary operators: +, -, *, /, %, ^
+# Comparison operators: ==, !=, >, <, >=, <=
 ```
 
-**Recording Rules** â€” Precompute frequently used or expensive queries for faster dashboard loading:
+### 12.4 Recording Rules
+
+Recording rules precompute frequently used or expensive queries for faster dashboard loading:
 
 ```yaml
 groups:
@@ -89,9 +127,13 @@ groups:
     rules:
       - record: instance:node_cpu_utilization:rate5m
         expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+      - record: instance:node_memory_utilization:ratio
+        expr: 1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)
 ```
 
-**Alerting Rules** â€” Define conditions that trigger alerts:
+### 12.5 Alerting Rules
+
+Alerting rules define conditions that trigger alerts:
 
 ```yaml
 groups:
@@ -104,11 +146,18 @@ groups:
           severity: warning
         annotations:
           summary: "Instance {{ $labels.instance }} CPU usage above 80%"
+          description: "CPU at {{ $value | humanizePercentage }} for 5 minutes"
+
+      - alert: InstanceDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Instance {{ $labels.instance }} is down"
 ```
 
-### 12.3 Alertmanager
-
-> **Warning:** Never log sensitive data (PII, passwords, tokens). Use structured fields, not string interpolation.
+### 12.6 Alertmanager Configuration
 
 Alertmanager processes alerts before sending notifications:
 
@@ -134,47 +183,66 @@ receivers:
   - name: team-chat
     slack_configs:
       - channel: "#alerts"
+        title: "{{ .GroupLabels.alertname }}"
+        text: "{{ .CommonAnnotations.description }}"
 ```
 
-### 12.4 Grafana
+### 12.7 Grafana Dashboard Design
 
 Grafana visualizes metrics from multiple data sources (Prometheus, Loki, Elasticsearch, CloudWatch, etc.).
 
-**Dashboard Design Principles**:
-- Top row: global status (service availability, overall error rate)
-- Second row: resource utilization (CPU, memory, disk, network)
-- Application-specific panels: request rate, latency, error count
-- Bottom row: detailed debugging views
+**Dashboard Hierarchy:**
+- **Top row:** Global status (service availability, overall error rate, SLO burn rate)
+- **Second row:** Resource utilization by service (CPU, memory, disk, network)
+- **Third row:** Application-specific panels (request rate, latency distributions, error count)
+- **Bottom row:** Detailed debugging views (per-instance metrics, logs correlation)
 
-**Alerting** â€” Grafana supports rule-based alerting from any data source. Rules can include multiple conditions, evaluation intervals, and notification channels.
+**Grafana Alerting:**
+- Supports rule-based alerting from any data source
+- Multiple conditions per rule (e.g., CPU > 80% AND memory > 90%)
+- Evaluation intervals and notification channels
+- Alert rule evaluation in Grafana or through Prometheus/Alertmanager
 
-### 12.5 Loki
+### 12.8 Loki for Log Aggregation
 
-Loki is a log aggregation system designed for cost-effective, scalable log storage. Unlike the ELK stack, Loki does not index log content; it indexes only metadata labels.
+Loki is a log aggregation system designed for cost-effective, scalable log storage. Unlike the ELK stack, Loki does not index log content — it indexes only metadata labels.
 
-**LogQL** â€” Loki's query language combines log stream selection with PromQL-like aggregation:
+**Architecture:**
+- **Loki** — Log storage and query engine
+- **Promtail** — Log shipping agent that discovers targets and attaches labels
+- **Grafana** — Query and visualization interface
 
-```logQL
+**LogQL** — Loki's query language combines log stream selection with PromQL-like aggregation:
+
+```logql
 # Count errors by service
 sum by (service) (count_over_time({job="api"} |= "ERROR" [5m]))
 
 # Extract JSON fields and filter
 {job="api"} | json | level = "error" | line_format "{{.message}}"
+
+# Rate of error logs per second
+rate({job="api"} |= "ERROR" [5m])
+
+# Top 5 services by log volume
+topk(5, sum by (service) (count_over_time({job="api"}[1h])))
 ```
 
-Loki works with Promtail (agent for shipping logs), Fluentd, or any log shipper.
+### 12.9 ELK Stack (Elastic Stack)
 
-### 12.6 ELK Stack (Elastic Stack)
+**Elasticsearch** — Distributed search and analytics engine. Stores logs as JSON documents. Provides full-text search, aggregations, and high availability through sharding and replication. Supports near-real-time indexing (refresh interval defaults to 1s).
 
-**Elasticsearch** â€” Distributed search and analytics engine. Stores logs as JSON documents. Provides full-text search, aggregations, and high availability through sharding and replication.
+**Logstash** — Server-side data processing pipeline. Ingests logs from multiple sources, transforms them (grok parsing, date manipulation, enrichment), and sends to Elasticsearch. Supports plugins for input, filter, and output stages.
 
-**Logstash** â€” Server-side data processing pipeline. Ingests logs from multiple sources, transforms them, and sends to Elasticsearch. Supports plugins for input, filter, and output stages.
+**Kibana** — Visualization and management interface. Provides log exploration (Discover), dashboard creation, alerting, machine learning anomaly detection, and system management.
 
-**Kibana** â€” Visualization and management interface. Provides log exploration (Discover), dashboard creation, and alerting.
+**Beats** — Lightweight data shippers:
+- **Filebeat** — Log files (tail, multiline, container logs)
+- **Metricbeat** — System metrics (CPU, memory, disk, network)
+- **Heartbeat** — Uptime monitoring (HTTP, TCP, ICMP)
+- **Winlogbeat** — Windows event logs
 
-**Beats** â€” Lightweight data shippers. Filebeat (log files), Metricbeat (system metrics), Heartbeat (uptime monitoring), Winlogbeat (Windows event logs).
-
-### 12.7 Structured Logging
+### 12.10 Structured Logging
 
 Structured logging outputs logs as machine-parseable structured data (JSON) rather than unstructured text:
 
@@ -199,29 +267,211 @@ Structured logging outputs logs as machine-parseable structured data (JSON) rath
 }
 ```
 
-### 12.8 Log Levels
+### 12.11 Log Levels
 
-Standard log levels and their appropriate usage:
+| Level | Usage | Example |
+|-------|-------|---------|
+| TRACE | Detailed debugging, development only | Function entry/exit, variable values |
+| DEBUG | Diagnostic info, non-production | SQL queries, external API call details |
+| INFO | Normal application events | Request started, payment processed, user registered |
+| WARN | Unexpected but non-fatal | Deprecated API usage, retry attempts, slow query |
+| ERROR | Failed operations needing attention | DB connection failure, payment processing error |
+| FATAL | Catastrophic, immediate intervention | Application crash, data corruption |
 
-- **TRACE** â€” Detailed debugging information, used only during development
-- **DEBUG** â€” Diagnostic information for troubleshooting in non-production environments
-- **INFO** â€” Normal application events (request started, payment processed, user registered)
-- **WARN** â€” Unexpected events that do not affect functionality (deprecated API usage, retry attempts)
-- **ERROR** â€” Failed operations that require attention (database connection failure, payment processing error)
-- **FATAL** â€” Catastrophic failures requiring immediate human intervention (application crash, data corruption)
-
-### 12.9 Logging Best Practices
+### 12.12 Logging Best Practices
 
 - Log in JSON format for machine parsing
 - Include correlation IDs (trace_id, request_id) for request tracing
-- Use consistent field names across services
-- Log at the appropriate level; avoid logging sensitive data (PII, passwords, tokens)
-- Implement log rotation and retention policies
-- Use structured context fields, not string interpolation
-- Ensure logs are asynchronous and non-blocking
-- Configure sampling for high-volume logs
+- Use consistent field names across all services
+- Log at the appropriate level; never log PII, passwords, or tokens
+- Implement log rotation and retention policies (30 days typical for production)
+- Use structured context fields, not string interpolation in messages
+- Ensure logging is asynchronous and non-blocking
+- Configure sampling for high-volume debug/trace logs
+- Use stderr for error/fatal logs, stdout for info/debug
 
-## Summary
+---
+
+## Examples
+
+### Example 1: Structured Logger Implementation
+
+```typescript
+type LogLevel = 'TRACE' | 'DEBUG' | 'INFO' | 'WARN' | 'ERROR' | 'FATAL';
+
+interface LogEntry {
+  timestamp: string;
+  level: LogLevel;
+  service: string;
+  message: string;
+  trace_id?: string;
+  [key: string]: unknown;
+}
+
+class StructuredLogger {
+  private service: string;
+  private minLevel: number;
+
+  private static LEVELS: Record<LogLevel, number> = {
+    TRACE: 0, DEBUG: 1, INFO: 2, WARN: 3, ERROR: 4, FATAL: 5,
+  };
+
+  constructor(service: string, level: LogLevel = 'INFO') {
+    this.service = service;
+    this.minLevel = StructuredLogger.LEVELS[level];
+  }
+
+  private log(level: LogLevel, message: string, context?: Record<string, unknown>): void {
+    if (StructuredLogger.LEVELS[level] < this.minLevel) return;
+
+    const entry: LogEntry = {
+      timestamp: new Date().toISOString(),
+      level,
+      service: this.service,
+      message,
+      ...context,
+    };
+
+    const output = JSON.stringify(entry) + '\n';
+    if (level === 'ERROR' || level === 'FATAL') {
+      process.stderr.write(output);
+    } else {
+      process.stdout.write(output);
+    }
+  }
+
+  trace(message: string, context?: Record<string, unknown>): void { this.log('TRACE', message, context); }
+  debug(message: string, context?: Record<string, unknown>): void { this.log('DEBUG', message, context); }
+  info(message: string, context?: Record<string, unknown>): void { this.log('INFO', message, context); }
+  warn(message: string, context?: Record<string, unknown>): void { this.log('WARN', message, context); }
+  error(message: string, context?: Record<string, unknown>): void { this.log('ERROR', message, context); }
+  fatal(message: string, context?: Record<string, unknown>): void { this.log('FATAL', message, context); }
+
+  child(service: string): StructuredLogger {
+    return new StructuredLogger(`${this.service}.${service}`);
+  }
+}
+
+const logger = new StructuredLogger('payment-service', 'INFO');
+logger.info('Payment request received', { payment_id: 'pay_123', amount: 4999, currency: 'USD' });
+logger.warn('Payment retry attempted', { payment_id: 'pay_123', attempt: 2, retry_delay_ms: 1000 });
+logger.error('Payment processing failed', { payment_id: 'pay_123', error_code: 'CARD_DECLINED', duration_ms: 342 });
+```
+
+### Example 2: Prometheus Alert Rule Generation
+
+```typescript
+interface AlertRule {
+  name: string;
+  expr: string;
+  duration: string;
+  severity: 'critical' | 'warning' | 'info';
+  summary: string;
+  description: string;
+}
+
+class AlertRuleGenerator {
+  generate(rule: AlertRule): string {
+    return `  - alert: ${rule.name}
+    expr: ${rule.expr}
+    for: ${rule.duration}
+    labels:
+      severity: ${rule.severity}
+    annotations:
+      summary: "${rule.summary}"
+      description: "${rule.description}"`;
+  }
+
+  generateAll(rules: AlertRule[]): string {
+    return `groups:
+  - name: custom-alerts
+    rules:
+${rules.map(r => this.generate(r)).join('\n\n')}
+`;
+  }
+}
+
+const generator = new AlertRuleGenerator();
+const rules: AlertRule[] = [
+  { name: 'HighErrorRate', expr: 'sum(rate(http_requests_total{status=~"5.."}[5m])) / sum(rate(http_requests_total[5m])) > 0.01', duration: '5m', severity: 'critical', summary: 'Error rate above 1%', description: 'Service error rate is {{ $value | humanizePercentage }}' },
+  { name: 'HighLatency', expr: 'histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) > 1', duration: '5m', severity: 'warning', summary: 'P95 latency above 1s', description: 'P95 latency is {{ $value }}s' },
+  { name: 'LowDiskSpace', expr: 'node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"} < 0.1', duration: '5m', severity: 'critical', summary: 'Disk space below 10%', description: 'Root filesystem has {{ $value | humanizePercentage }} free' },
+  { name: 'InstanceDown', expr: 'up == 0', duration: '1m', severity: 'critical', summary: 'Instance {{ $labels.instance }} down', description: 'Instance {{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute' },
+  { name: 'HighMemoryUsage', expr: 'node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes < 0.2', duration: '10m', severity: 'warning', summary: 'Memory below 20% available', description: 'Memory available is {{ $value | humanizePercentage }}' },
+];
+
+console.log(generator.generateAll(rules));
+```
+
+### Example 3: Log Aggregation Pipeline Config Generator
+
+```typescript
+interface LogPipelineConfig {
+  name: string;
+  input: { type: string; path: string };
+  filters: Array<{ type: string; config: Record<string, string> }>;
+  output: { host: string; index: string };
+}
+
+class LogPipelineGenerator {
+  generatePromtail(config: LogPipelineConfig): string {
+    const filters = config.filters.map(f => {
+      if (f.type === 'json') return '    - json:';
+      if (f.type === 'drop') return `    - drop:\n        ${f.config.reason}: "${f.config.value}"`;
+      if (f.type === 'template') return `    - template:\n        source: message\n        template: "${f.config.template}"`;
+      return '';
+    }).join('\n');
+
+    return `scrape_configs:
+  - job_name: ${config.name}
+    static_configs:
+      - targets:
+          - localhost
+        labels:
+          job: ${config.name}
+          __path__: ${config.input.path}
+    pipeline_stages:
+${filters}`;
+  }
+
+  generateFilebeat(config: LogPipelineConfig): string {
+    return `filebeat.inputs:
+  - type: ${config.input.type}
+    enabled: true
+    paths:
+      - ${config.input.path}
+    json:
+      keys_under_root: true
+      add_error_key: true
+
+output.elasticsearch:
+  hosts: ["${config.output.host}"]
+  index: "${config.output.index}"
+
+processors:
+${config.filters.map(f => `  - ${f.type}: ${JSON.stringify(f.config)}`).join('\n')}`;
+  }
+}
+
+const pipeline = new LogPipelineGenerator();
+const config: LogPipelineConfig = {
+  name: 'api-logs',
+  input: { type: 'log', path: '/var/log/api/*.json' },
+  filters: [
+    { type: 'json', config: {} },
+    { type: 'drop', config: { reason: 'level', value: 'DEBUG' } },
+    { type: 'template', config: { template: '{{ .message }}' } },
+  ],
+  output: { host: 'http://elasticsearch:9200', index: 'api-logs-%{+yyyy.MM.dd}' },
+};
+
+console.log('=== Promtail Config ===');
+console.log(pipeline.generatePromtail(config));
+console.log('\n=== Filebeat Config ===');
+console.log(pipeline.generateFilebeat(config));
+```
+
+---
 
 ## Concept Comparison Table
 
@@ -232,6 +482,8 @@ Standard log levels and their appropriate usage:
 | ELK Stack | Elasticsearch search, Logstash pipeline, Kibana viz |
 | Grafana | Multi-source dashboards and alerting |
 | Alertmanager | Dedup, grouping, routing, silencing |
+| USE Method | Utilization, Saturation, Errors for resources |
+| RED Method | Rate, Errors, Duration for services |
 
 ## Quick Reference
 
@@ -242,6 +494,7 @@ Standard log levels and their appropriate usage:
 | Loki vs ELK | Loki cheaper but no full-text search |
 | Best Practice | Structured JSON, correlation IDs, log rotation |
 | Alertmanager | group_wait, group_interval, repeat_interval |
+| PromQL | rate(), sum(), histogram_quantile(), avg() |
 
 ## Cross-Application Matrix
 
@@ -258,12 +511,19 @@ Standard log levels and their appropriate usage:
 
 <details><summary>Question 2: How does Loki differ from Elasticsearch?</summary>**A)** Loki indexes only labels, not content<br>**B)** Loki is slower<br>**C)** Loki has full-text search<br>**D)** Loki uses SQL<br><br>**Answer: A)** Loki indexes only labels, not content</details>
 
-<details><summary>Question 3: What log level should be used in production?</summary>**A)** TRACE<br>**B)** DEBUG<br>**C)** INFO<br>**D)** All of the above, with appropriate retention<br><br>**Answer: D)** All of the above, with appropriate retention</details>
+<details><summary>Question 3: What log level should be used for failed operations needing attention?</summary>**A)** TRACE<br>**B)** DEBUG<br>**C)** INFO<br>**D)** ERROR<br><br>**Answer: D)** ERROR</details>
 
+<details><summary>Question 4: What does the RED method stand for?</summary>**A)** Resource, Error, Debug<br>**B)** Rate, Errors, Duration<br>**C)** Reliable, Efficient, Durable<br>**D)** Request, Execute, Deliver<br><br>**Answer: B)** Rate, Errors, Duration</details>
+
+<details><summary>Question 5: What is the purpose of recording rules in Prometheus?</summary>**A)** Record all metric values permanently<br>**B)** Precompute expensive queries for faster dashboards<br>**C)** Record alert history<br>**D)** Log Prometheus server metrics<br><br>**Answer: B)** Precompute expensive queries for faster dashboards</details>
+
+---
 
 ## Summary
 
-Monitoring and logging provide visibility into system behavior. Prometheus collects and stores metrics with a powerful query language and integrated alerting. Grafana visualizes metrics from multiple data sources. Loki provides cost-effective log aggregation indexed by labels. The ELK stack offers full-text search and advanced log analytics. Structured logging with JSON enables machine parsing and correlation. Proper log levels and best practices ensure logs are useful without overwhelming storage or operators.
+Monitoring and logging provide visibility into system behavior. Prometheus collects and stores metrics with a powerful query language (PromQL) and integrated alerting. Grafana visualizes metrics from multiple data sources. Loki provides cost-effective log aggregation indexed by labels. The ELK stack offers full-text search and advanced log analytics. Structured logging with JSON enables machine parsing and cross-service correlation. Proper log levels and best practices ensure logs are useful without overwhelming storage or operators. The USE method and RED method provide structured approaches for resource and service monitoring respectively.
+
+---
 
 ## Exercises
 

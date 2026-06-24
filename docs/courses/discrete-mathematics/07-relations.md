@@ -12,7 +12,10 @@ After completing this chapter, you will be able to:
 - Determine whether a relation is reflexive, symmetric, antisymmetric, or transitive
 - Form equivalence relations and identify equivalence classes
 - Construct partial orders and draw Hasse diagrams
-- Find closures of relations
+- Find closures of relations including transitive closure via Warshall's algorithm
+- Compute compositions and powers of relations
+- Perform topological sorting on partially ordered sets
+- Apply n-ary relations to relational databases
 
 ## Chapter at a Glance
 
@@ -24,6 +27,7 @@ After completing this chapter, you will be able to:
 | Equivalence Relations | Reflexive + symmetric + transitive | Partitions the set into disjoint equivalence classes |
 | Partial Orders | Reflexive + antisymmetric + transitive | Posets model hierarchies, dependencies, and ordering |
 | n-ary Relations | Subset of $A_1 \times \dots \times A_n$ | Foundational to relational database theory |
+| Topological Sorting | Linear ordering consistent with a partial order | Used in build systems and scheduling |
 
 ## Chapter Roadmap
 
@@ -58,7 +62,36 @@ A **binary relation** $R$ from set $A$ to set $B$ is a subset of $A \times B$. W
 
 **Matrix representation.** If $A = \{a_1, \ldots, a_m\}$ and $B = \{b_1, \ldots, b_n\}$, the relation $R$ can be represented by an $m \times n$ zero-one matrix $M_R$ with $M_R[i, j] = 1$ iff $(a_i, b_j) \in R$.
 
+**Matrix operations on relations:**
+- $M_{R \cup S}[i,j] = M_R[i,j] \lor M_S[i,j]$ (Boolean OR)
+- $M_{R \cap S}[i,j] = M_R[i,j] \land M_S[i,j]$ (Boolean AND)
+- $M_{S \circ R} = M_R \cdot M_S$ (Boolean matrix multiplication)
+
 **Digraph representation.** For a relation on $A$, draw a directed graph with vertices $A$ and an edge $a \rightarrow b$ iff $(a, b) \in R$.
+
+```typescript
+// Represent a relation as a zero-one matrix
+type RelationMatrix = number[][];
+
+function compose(R: RelationMatrix, S: RelationMatrix): RelationMatrix {
+  const n = R.length;
+  const result: RelationMatrix = Array.from({ length: n }, () => Array(n).fill(0));
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      for (let k = 0; k < n; k++) {
+        if (R[i][k] && S[k][j]) { result[i][j] = 1; break; }
+      }
+    }
+  }
+  return result;
+}
+
+function power(R: RelationMatrix, n: number): RelationMatrix {
+  if (n === 0) return R.map((_, i) => R.map((_, j) => (i === j ? 1 : 0))); // identity
+  if (n === 1) return R;
+  return compose(R, power(R, n - 1));
+}
+```
 
 > **One-Sentence Takeaway:** Relations can be represented as zero-one matrices (for computation) or digraphs (for visualization); each representation makes different properties easy to verify.
 
@@ -72,9 +105,44 @@ Let $R$ be a relation on a set $A$.
 - **Asymmetric:** $a R b \implies b \not R a$.
 - **Transitive:** $(a R b \land b R c) \implies a R c$ for all $a, b, c \in A$.
 
+```typescript
+function isReflexive(M: RelationMatrix): boolean {
+  for (let i = 0; i < M.length; i++) {
+    if (M[i][i] !== 1) return false;
+  }
+  return true;
+}
+
+function isSymmetric(M: RelationMatrix): boolean {
+  for (let i = 0; i < M.length; i++) {
+    for (let j = 0; j < M.length; j++) {
+      if (M[i][j] !== M[j][i]) return false;
+    }
+  }
+  return true;
+}
+
+function isAntisymmetric(M: RelationMatrix): boolean {
+  for (let i = 0; i < M.length; i++) {
+    for (let j = 0; j < M.length; j++) {
+      if (i !== j && M[i][j] === 1 && M[j][i] === 1) return false;
+    }
+  }
+  return true;
+}
+
+function isTransitive(M: RelationMatrix): boolean {
+  const M2 = compose(M, M);
+  for (let i = 0; i < M.length; i++) {
+    for (let j = 0; j < M.length; j++) {
+      if (M2[i][j] === 1 && M[i][j] !== 1) return false;
+    }
+  }
+  return true;
+}
+```
+
 > **One-Sentence Takeaway:** The four core properties — reflexive, symmetric, antisymmetric, transitive — form the vocabulary for classifying any binary relation.
->
-> **Warning:** Do not confuse antisymmetric with asymmetric. Antisymmetric allows $a = b$; asymmetric ($a R b \implies b \not R a$) is stricter and implies irreflexive.
 
 ### 7.4 Combining Relations
 
@@ -83,6 +151,10 @@ $R$ and $S$ can be combined via set operations ($R \cup S$, $R \cap S$, $R \setm
 **Composition:** $S \circ R = \{(a, c) \mid \exists b \in A,\; (a, b) \in R \land (b, c) \in S\}$.
 
 **Powers:** $R^n = R \circ R \circ \cdots \circ R$ ($n$ times). $R^0$ is the identity relation $\{(a, a) \mid a \in A\}$.
+
+**Theorem 7.1 (Associativity of composition).** $(R \circ S) \circ T = R \circ (S \circ T)$.
+
+**Theorem 7.2 (Powers and transitivity).** $R$ is transitive iff $R^2 \subseteq R$.
 
 > **One-Sentence Takeaway:** Composition chains relations together ($a R b$ and $b S c$ give $a (S \circ R) c$); powers iterate a single relation.
 
@@ -94,6 +166,41 @@ The **symmetric closure** is $R \cup R^{-1}$ where $R^{-1} = \{(b, a) \mid (a, b
 
 The **transitive closure** is $\bigcup_{n=1}^{\infty} R^n$. Computed via **Warshall's algorithm** or by finding reachability in the digraph.
 
+**Warshall's algorithm** computes the transitive closure in $O(n^3)$:
+```
+Let W_k[i,j] = 1 iff there is a path from i to j using intermediate vertices only from {1,...,k}
+Initialize W_0 = M_R
+For k = 1 to n:
+  For i = 1 to n:
+    For j = 1 to n:
+      W_k[i,j] = W_{k-1}[i,j] OR (W_{k-1}[i,k] AND W_{k-1}[k,j])
+Return W_n
+```
+
+```typescript
+function warshall(M: RelationMatrix): RelationMatrix {
+  const n = M.length;
+  const W = M.map(row => [...row]); // deep copy
+  for (let k = 0; k < n; k++) {
+    for (let i = 0; i < n; i++) {
+      for (let j = 0; j < n; j++) {
+        W[i][j] = W[i][j] || (W[i][k] && W[k][j]) ? 1 : 0;
+      }
+    }
+  }
+  return W;
+}
+
+const R: RelationMatrix = [
+  [0, 1, 0, 0],
+  [0, 0, 1, 0],
+  [0, 0, 0, 1],
+  [1, 0, 0, 0],
+];
+console.log(warshall(R));
+// [[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]
+```
+
 > **One-Sentence Takeaway:** Closures add the minimum number of ordered pairs needed to make a relation reflexive, symmetric, or transitive without changing its original content.
 >
 > **Pro Tip:** Warshall's algorithm computes transitive closure in $O(n^3)$ using dynamic programming — it is essentially Floyd-Warshall for reachability on unweighted graphs.
@@ -104,7 +211,30 @@ The **transitive closure** is $\bigcup_{n=1}^{\infty} R^n$. Computed via **Warsh
 
 **Equivalence class** of $a$: $[a] = \{b \in A \mid a R b\}$.
 
-**Theorem 7.1 (Partition).** The equivalence classes of an equivalence relation on $A$ form a partition of $A$ (disjoint, nonempty, covering all of $A$). Conversely, any partition of $A$ defines an equivalence relation.
+**Theorem 7.3 (Partition).** The equivalence classes of an equivalence relation on $A$ form a partition of $A$ (disjoint, nonempty, covering all of $A$). Conversely, any partition of $A$ defines an equivalence relation.
+
+**Properties of equivalence classes:**
+- $a \in [a]$ (reflexivity)
+- $[a] = [b]$ iff $a R b$ (equivalent elements share the same class)
+- $[a] \cap [b] = \emptyset$ iff $\neg(a R b)$ (classes are disjoint or identical)
+
+```typescript
+function computeEquivalenceClasses(set: number[], relation: RelationMatrix): number[][] {
+  const n = set.length;
+  const visited = new Array(n).fill(false);
+  const classes: number[][] = [];
+  for (let i = 0; i < n; i++) {
+    if (!visited[i]) {
+      const cls: number[] = [];
+      for (let j = 0; j < n; j++) {
+        if (relation[i][j]) { visited[j] = true; cls.push(set[j]); }
+      }
+      classes.push(cls);
+    }
+  }
+  return classes;
+}
+```
 
 > **One-Sentence Takeaway:** An equivalence relation groups elements into equivalence classes that partition the set — two equivalence classes are either identical or disjoint.
 
@@ -132,38 +262,63 @@ A **lattice** is a poset where every pair of elements has a supremum and an infi
 
 **Topological sorting:** A linear ordering of a poset consistent with the partial order (if $a \preceq b$, then $a$ comes before $b$).
 
-> **One-Sentence Takeaway:** A partial order is reflexive, antisymmetric, and transitive; Hasse diagrams visualize posets by omitting transitive and reflexive edges.
+```typescript
+function topologicalSort(n: number, edges: [number, number][]): number[] {
+  // Kahn's algorithm
+  const inDegree = new Array(n).fill(0);
+  const adj: number[][] = Array.from({ length: n }, () => []);
+  for (const [u, v] of edges) {
+    adj[u].push(v);
+    inDegree[v]++;
+  }
+  const queue: number[] = [];
+  for (let i = 0; i < n; i++) {
+    if (inDegree[i] === 0) queue.push(i);
+  }
+  const result: number[] = [];
+  while (queue.length > 0) {
+    const u = queue.shift()!;
+    result.push(u);
+    for (const v of adj[u]) {
+      inDegree[v]--;
+      if (inDegree[v] === 0) queue.push(v);
+    }
+  }
+  return result; // If length !== n, graph has a cycle
+}
+
+const deps: [number, number][] = [
+  [0, 2], [0, 3],  // a before c, d
+  [1, 3],           // b before d
+  [2, 4],           // c before e
+  [3, 4], [3, 5],   // d before e, f
+];
+console.log(topologicalSort(6, deps)); // e.g., [0, 1, 2, 3, 4, 5]
+```
+
+> **One-Sentence Takeaway:** A partial order is reflexive, antisymmetric, and transitive; Hasse diagrams visualize posets by omitting transitive and reflexive edges; topological sorting produces a linear extension.
 
 ### 7.8 n-ary Relations
 
 An **n-ary relation** is a subset of $A_1 \times A_2 \times \cdots \times A_n$. Used in relational databases. Operations include projection ($\Pi$) and join ($\bowtie$).
 
+**Projection:** $\Pi_{i_1,\ldots,i_k}(R)$ selects specified columns from an n-ary relation.
+
+**Selection:** $\sigma_{\text{condition}}(R)$ selects rows satisfying a condition.
+
+**Join:** $R \bowtie S$ combines two relations based on a common attribute.
+
+**Example (Database relation).** A 3-ary relation $R \subseteq \text{Students} \times \text{Courses} \times \text{Grades}$:
+
+| Student | Course | Grade |
+|---------|--------|-------|
+| Alice | CS101 | A |
+| Bob | CS101 | B |
+| Alice | CS201 | A+ |
+
+Projection $\Pi_{\text{Student}}(R)$: $\{\text{Alice}, \text{Bob}\}$.
+
 > **One-Sentence Takeaway:** n-ary relations generalize binary relations to any number of sets and form the mathematical foundation of relational database theory.
-
-## Examples
-
-**Example 7.1** (Properties). Let $R = \{(1,1), (1,2), (2,2), (2,3), (3,3)\}$ on $A = \{1,2,3\}$.
-- Reflexive? Yes: $(1,1), (2,2), (3,3) \in R$.
-- Symmetric? No: $(1,2) \in R$ but $(2,1) \notin R$.
-- Antisymmetric? Yes: no distinct $a,b$ satisfy both $(a,b)$ and $(b,a)$.
-- Transitive? Yes. Check: $(1,2),(2,3) \implies (1,3)$ needed, but $(1,3) \notin R$. So NOT transitive.
-
-**Example 7.2** (Equivalence relation). On $\mathbb{Z}$, define $a R b \iff a \equiv b \pmod{3}$.
-- Reflexive: $a \equiv a \pmod{3}$.
-- Symmetric: $a \equiv b \pmod{3} \implies b \equiv a \pmod{3}$.
-- Transitive: $a \equiv b$ and $b \equiv c \pmod{3}$ implies $a \equiv c \pmod{3}$.
-Classes: $[0] = \{\ldots, -3, 0, 3, 6, \ldots\}$, $[1] = \{\ldots, -2, 1, 4, \ldots\}$, $[2] = \{\ldots, -1, 2, 5, \ldots\}$.
-
-**Example 7.3** (Partial order). The divisibility relation on $\{1, 2, 3, 6, 9, 18\}$: $a \preceq b \iff a \mid b$.
-Hasse diagram: 1 at bottom, above it 2, 3; above those 6, 9; 18 at top. Edges: $1 \rightarrow 2$, $1 \rightarrow 3$, $2 \rightarrow 6$, $2 \rightarrow 18$, $3 \rightarrow 6$, $3 \rightarrow 9$, $6 \rightarrow 18$, $9 \rightarrow 18$ (transitive edges like $1 \rightarrow 6$ omitted).
-
-**Example 7.4** (Transitive closure by Warshall's algorithm). Compute the transitive closure of $R = \{(1,2), (2,3), (3,1)\}$ on $\{1,2,3\}$.
-
-*Solution.* Initial matrix $M_0 = \begin{pmatrix}0 & 1 & 0\\ 0 & 0 & 1\\ 1 & 0 & 0\end{pmatrix}$. Applying Warshall's yields $M_3 = \begin{pmatrix}1 & 1 & 1\\ 1 & 1 & 1\\ 1 & 1 & 1\end{pmatrix}$, so the transitive closure is $A \times A$ (all pairs).
-
-**Example 7.5** (Topological sort). Topologically sort the poset $(\{a,b,c,d,e,f\}, \preceq)$ where $a \preceq c$, $a \preceq d$, $b \preceq d$, $c \preceq e$, $d \preceq e$, $d \preceq f$.
-
-One valid ordering: $a, b, c, d, e, f$. (Check: every precedence relation is satisfied.)
 
 ## Concept Comparison Table
 
@@ -175,6 +330,8 @@ One valid ordering: $a, b, c, d, e, f$. (Check: every precedence relation is sat
 | Transitive | $a R b \land b R c \implies a R c$ | Chain property | Ancestry, ordering, divisibility |
 | Equivalence Relation | Reflexive + Symmetric + Transitive | Partitions the set into classes | Congruence modulo $n$, same-color grouping |
 | Partial Order | Reflexive + Antisymmetric + Transitive | Defines a hierarchy, not all pairs comparable | Task dependencies, file-system directories |
+| Lattice | Poset with all supremums and infimums | Both operations defined for every pair | Boolean algebras, set inclusion |
+| Transitive Closure | $\bigcup_{n \geq 1} R^n$ | Reachability in a directed graph | Graph connectivity, database queries |
 
 ## Quick Reference
 
@@ -196,6 +353,7 @@ One valid ordering: $a, b, c, d, e, f$. (Check: every precedence relation is sat
 | Partial Orders | Schema versioning | DAGs, reachability | Inheritance hierarchies, type ordering | Build systems (make), topological sort |
 | Transitive Closure | Functional dependencies closure | Reachability, connectivity | Pointer analysis | Prerequisite chains |
 | Hasse Diagrams | — | Planar graph drawing | Class hierarchy visualization | Gantt chart of task ordering |
+| Topological Sort | Query plan optimization | — | Module dependency ordering | Makefiles, task scheduling |
 
 ## Chapter Quiz
 
@@ -220,6 +378,87 @@ One valid ordering: $a, b, c, d, e, f$. (Check: every precedence relation is sat
    - D) Only transitive edges
    <details><summary>Answer</summary>**B)** Both transitive edges (those implied by transitivity) and reflexive loops (implied by reflexivity) are omitted to keep the diagram clean.</details>
 
+4. Warshall's algorithm computes the transitive closure in what time complexity?
+   - A) $O(n)$
+   - B) $O(n^2)$
+   - C) $O(n^3)$
+   - D) $O(2^n)$
+   <details><summary>Answer</summary>**C)** $O(n^3)$ — three nested loops over $n$ elements make it cubic.</details>
+
+5. Which of the following is NOT a lattice operation?
+   - A) Join (supremum)
+   - B) Meet (infimum)
+   - C) Composition
+   - D) Both join and meet exist for every pair
+   <details><summary>Answer</summary>**C)** Composition is a relation operation, not a lattice operation. A lattice requires that every pair has a supremum and infimum.</details>
+
+## Examples
+
+**Example 7.1** (Properties). Let $R = \{(1,1), (1,2), (2,2), (2,3), (3,3)\}$ on $A = \{1,2,3\}$.
+- Reflexive? Yes: $(1,1), (2,2), (3,3) \in R$.
+- Symmetric? No: $(1,2) \in R$ but $(2,1) \notin R$.
+- Antisymmetric? Yes: no distinct $a,b$ satisfy both $(a,b)$ and $(b,a)$.
+- Transitive? Check: $(1,2),(2,3) \implies (1,3)$ needed, but $(1,3) \notin R$. So NOT transitive.
+
+**Example 7.2** (Equivalence relation). On $\mathbb{Z}$, define $a R b \iff a \equiv b \pmod{3}$.
+- Reflexive: $a \equiv a \pmod{3}$.
+- Symmetric: $a \equiv b \pmod{3} \implies b \equiv a \pmod{3}$.
+- Transitive: $a \equiv b$ and $b \equiv c \pmod{3}$ implies $a \equiv c \pmod{3}$.
+Classes: $[0] = \{\ldots, -3, 0, 3, 6, \ldots\}$, $[1] = \{\ldots, -2, 1, 4, \ldots\}$, $[2] = \{\ldots, -1, 2, 5, \ldots\}$.
+
+**Example 7.3** (Partial order). The divisibility relation on $\{1, 2, 3, 6, 9, 18\}$: $a \preceq b \iff a \mid b$.
+Hasse diagram: 1 at bottom, above it 2, 3; above those 6, 9; 18 at top.
+
+**Example 7.4** (Transitive closure by Warshall's algorithm). Compute the transitive closure of $R = \{(1,2), (2,3), (3,1)\}$ on $\{1,2,3\}$.
+
+*Solution.* Initial matrix $M_0 = \begin{pmatrix}0 & 1 & 0\\ 0 & 0 & 1\\ 1 & 0 & 0\end{pmatrix}$. Applying Warshall's yields $M_3 = \begin{pmatrix}1 & 1 & 1\\ 1 & 1 & 1\\ 1 & 1 & 1\end{pmatrix}$, so the transitive closure is $A \times A$ (all pairs).
+
+**Example 7.5** (Topological sort). Topologically sort the poset $(\{a,b,c,d,e,f\}, \preceq)$ where $a \preceq c$, $a \preceq d$, $b \preceq d$, $c \preceq e$, $d \preceq e$, $d \preceq f$.
+
+One valid ordering: $a, b, c, d, e, f$. (Check: every precedence relation is satisfied.)
+
+**Example 7.6** (Equivalence relation TypeScript).
+
+```typescript
+type Relation<T> = (a: T, b: T) => boolean;
+
+function isEquivalenceRelation<T>(set: T[], rel: Relation<T>): boolean {
+  // Reflexive
+  for (const a of set) { if (!rel(a, a)) return false; }
+  // Symmetric
+  for (const a of set) {
+    for (const b of set) {
+      if (rel(a, b) !== rel(b, a)) return false;
+    }
+  }
+  // Transitive
+  for (const a of set) {
+    for (const b of set) {
+      for (const c of set) {
+        if (rel(a, b) && rel(b, c) && !rel(a, c)) return false;
+      }
+    }
+  }
+  return true;
+}
+
+const sameMod3: Relation<number> = (a, b) => (a - b) % 3 === 0;
+console.log(isEquivalenceRelation([0, 1, 2, 3, 4, 5], sameMod3)); // true
+```
+
+**Example 7.7** (Partial order TypeScript). Check if the subset relation is a partial order.
+
+```typescript
+function subset<T>(a: Set<T>, b: Set<T>): boolean {
+  for (const x of a) if (!b.has(x)) return false;
+  return true;
+}
+
+// Reflexive: A ⊆ A always ✓
+// Antisymmetric: A ⊆ B and B ⊆ A → A = B ✓
+// Transitive: A ⊆ B and B ⊆ C → A ⊆ C ✓
+```
+
 ## Summary
 
 - Relations are sets of ordered pairs. They can be matrices or digraphs.
@@ -227,6 +466,17 @@ One valid ordering: $a, b, c, d, e, f$. (Check: every precedence relation is sat
 - Equivalence relations partition the set into equivalence classes.
 - Partial orders are reflexive, antisymmetric, transitive; visualized via Hasse diagrams.
 - Closures add minimum pairs to achieve a desired property.
+- Warshall's algorithm computes transitive closure in $O(n^3)$.
+- Topological sort produces a linear extension consistent with a partial order.
+
+## Practical Takeaways
+
+1. **Check diagonal for reflexivity** — all ones on the diagonal of the matrix.
+2. **Check symmetry via transpose** — $M_R = M_R^T$ means symmetric.
+3. **Use Warshall for reachability** — transitive closure tells you what's connected.
+4. **Equivalence = partition** — every equivalence relation splits the set into classes.
+5. **Partial order = hierarchy** — Hasse diagrams make hierarchies readable.
+6. **Topological sort for dependencies** — Kahn's algorithm handles scheduling.
 
 ## Exercises
 
@@ -250,6 +500,14 @@ One valid ordering: $a, b, c, d, e, f$. (Check: every precedence relation is sat
 
 10. Use Warshall's algorithm to find the transitive closure of $R = \{(1,3), (2,1), (3,2), (4,3)\}$ on $\{1,2,3,4\}$.
 
+11. Give a topological ordering for the poset: $a < c$, $a < d$, $b < d$, $b < e$, $c < f$, $d < f$, $e < f$.
+
+12. Determine if the relation $R$ on $\{1,2,3,4\}$ with $M_R = \begin{pmatrix}1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1\\ 1 & 0 & 1 & 0\\ 0 & 1 & 0 & 1\end{pmatrix}$ is an equivalence relation.
+
 ### Challenge Problem
 
-11. A relation $R$ on $A$ is **circular** if $a R b \land b R c \implies c R a$. Prove: $R$ is reflexive and circular if and only if $R$ is an equivalence relation.
+13. A relation $R$ on $A$ is **circular** if $a R b \land b R c \implies c R a$. Prove: $R$ is reflexive and circular if and only if $R$ is an equivalence relation.
+
+14. Give a combinatorial proof: the number of equivalence relations on an $n$-element set equals the $n$-th Bell number $B_n$, where $B_{n+1} = \sum_{k=0}^{n} \binom{n}{k} B_k$ and $B_0 = 1$.
+
+15. Prove that if $R$ is a partial order on $A$, then the transitive closure of $R \cup R^{-1}$ is the universal relation $A \times A$ if and only if $(A, R)$ is a total order.

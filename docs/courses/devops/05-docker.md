@@ -1,250 +1,487 @@
 # Chapter 5: Docker
 
-> **Previous:** [Containerization with Docker](./05-containerization.md) | **Next:** [Docker Compose](./06-docker-compose.md)
+> **Prev:** [Containerization](./05-containerization.md)
+> **Next:** [Docker Compose](./06-docker-compose.md)
+
+---
 
 ## Learning Objectives
 
-![Docker Architecture and Best Practices](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch05-docker.png)
+- Understand Docker's architecture (client, daemon, containerd, runc).
+- Master Dockerfile writing for efficient and secure image builds.
+- Manage containers, images, volumes, and networks via Docker CLI.
+- Implement Docker Compose for multi-container applications.
+- Optimize Docker build performance with caching strategies.
+- Apply Docker security best practices in CI/CD pipelines.
 
-By the end of this chapter, students will be able to:
-
-1. Differentiate between Docker images and containers and explain the layered filesystem
-2. Construct optimized Dockerfiles using multi-stage builds and layer caching
-3. Manage container networking, volumes, and resource constraints
-4. Apply Docker security best practices including non-root execution and read-only filesystems
-5. Use Dockerfile linters to detect configuration issues
-
+---
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Images vs Containers | Read-only layered templates vs running instances | Layered filesystem enables efficient caching |
-| Dockerfile Best Practices | Official base images, multi-stage builds, layer caching | Order instructions by change frequency |
-| Volumes and Mounts | Volumes, bind mounts, tmpfs for data persistence | Use volumes for production data, bind mounts for dev |
-| Docker Networking | Bridge, host, overlay, macvlan drivers | Choose network driver based on isolation needs |
-| Docker Security | Non-root user, read-only FS, capability dropping | Apply security hardening for production containers |
+| Docker Architecture | Client-server with containerd runtime | Docker CLI talks to daemon, which talks to containerd |
+| Dockerfile Best Practices | Layer ordering and caching | Least-changing layers first; combine RUN commands |
+| Container Lifecycle | Create, start, stop, remove | Use `--rm` for ephemeral containers |
+| Volumes and Bind Mounts | Persistent and shared data | Named volumes persist, bind mounts for dev |
+| Docker Networking | Bridge, host, overlay networks | Bridge for standalone, overlay for swarm |
+| Docker Compose | Multi-container orchestration | Define services, networks, volumes in YAML |
+| Build Cache | Layer caching optimization | Order matters: dependencies before code |
+| Security | Rootless, scanning, signing | Never run containers as root in production |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Images] --> B[Containers]
-    A --> C[Dockerfile Best Practices]
-    B --> D[Volumes]
-    B --> E[Networking]
-    B --> F[Resource Limits]
-    B --> G[Security]
-    C --> H[Multi-Stage Builds]
-    G --> I[Non-Root User]
+    A[Docker CLI] --> B[Docker Daemon dockerd]
+    B --> C[containerd]
+    C --> D[containerd-shim]
+    D --> E[runc]
+    E --> F[Container]
+    G[Dockerfile] --> H[Build]
+    H --> I[Image Layers]
+    I --> J[Image Registry]
+    J --> A
+    A --> K[Container Lifecycle]
+    K --> L[Volumes]
+    K --> M[Networks]
+    L & M --> N[Docker Compose]
 ```
 
 ## Theory
 
-### 5.1 Images vs Containers
+### Docker Architecture
 
-> **Pro Tip:** Use .dockerignore to exclude node_modules, .git, and build artifacts from the build context.
+Docker uses a client-server architecture:
 
-A **Docker image** is a read-only template containing instructions for creating a container. Images consist of layers, each representing a filesystem change (a RUN command, a COPY operation, a chmod change). Layers are cached and reused across images. An image includes the application code, runtime, libraries, environment variables, and configuration files.
+```mermaid
+flowchart TD
+    subgraph "Docker Client"
+        CLI[Docker CLI]
+    end
+    subgraph "Docker Host"
+        Daemon[Docker Daemon dockerd]
+        containerd[containerd]
+        shim[containerd-shim]
+        runc[runc]
+    end
+    CLI -->|REST API| Daemon
+    Daemon --> containerd
+    containerd --> shim
+    shim --> runc
+    runc --> CT1[Container 1]
+    runc --> CT2[Container 2]
+```
 
-A **container** is a running instance of an image. Containers leverage the host kernel through operating-system-level virtualization. Each container runs as an isolated process in user space. Containers share the host kernel but have their own filesystem, network stack, process tree, and resource limits.
+**Components:**
+- **Docker CLI (`docker`)**: User-facing command-line tool. Sends commands to the daemon via REST API.
+- **Docker Daemon (`dockerd`)**: Background service that manages containers, images, volumes, and networks.
+- **containerd**: Industry-standard container runtime. Manages container lifecycle (create, start, stop, delete).
+- **containerd-shim**: Per-container process that keeps the container running even if the daemon restarts.
+- **runc**: OCI-compliant runtime that uses Linux namespaces and cgroups to create containers.
 
-The layered filesystem is fundamental to Docker's efficiency. Each instruction in a Dockerfile creates a new layer. Docker uses a union filesystem (overlay2 by default) to present a single coherent filesystem from these layers. Write operations in a running container create an ephemeral container layer that is discarded when the container stops.
+### Dockerfile Best Practices
 
-### 5.2 Dockerfile Best Practices
+**Instruction reference:**
 
-> **Warning:** Docker containers run as root by default. Always use the USER directive to create a non-root user.
+| Instruction | Purpose | Best Practice |
+|-------------|---------|---------------|
+| FROM | Base image | Use specific versions, not `latest` |
+| RUN | Execute commands | Combine with `&&` to reduce layers |
+| COPY | Copy files from context | Copy `package*.json` before source code |
+| ADD | Copy with auto-extraction | Prefer COPY over ADD |
+| WORKDIR | Set working directory | Use absolute paths |
+| EXPOSE | Document port | Informational only, use `-p` at runtime |
+| ENV | Set environment variables | Minimize in production images |
+| CMD | Default command | Use exec form: `CMD ["node", "app.js"]` |
+| ENTRYPOINT | Container executable | Combine with CMD for default arguments |
+| HEALTHCHECK | Container health | Essential for orchestration |
+| USER | Runtime user | Always run as non-root |
 
-**Use Official Base Images** â€” Official images from Docker Hub are maintained by upstream teams and are regularly scanned for vulnerabilities. Pin specific versions rather than using `latest`.
-
-**Order Instructions by Cacheability** â€” Docker caches each layer. Instructions that change frequently (COPY of source code) should come after instructions that change rarely (installing system packages). This maximizes cache reuse.
-
-**Multi-Stage Builds** â€” Use multiple FROM statements in a single Dockerfile. Early stages contain build tooling (compilers, SDKs, package managers). The final stage copies only the runtime artifacts. This dramatically reduces image size.
+**Minimal TypeScript Dockerfile:**
 
 ```dockerfile
-# Build stage
-FROM node:20-slim AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
-COPY package*.json ./
+COPY package.json package-lock.json ./
 RUN npm ci
-COPY . .
+COPY tsconfig.json ./
+COPY src/ ./src/
 RUN npm run build
 
-# Runtime stage
 FROM node:20-alpine
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 WORKDIR /app
 COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/node_modules ./node_modules
+USER appuser
 EXPOSE 3000
-USER node
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1
 CMD ["node", "dist/index.js"]
 ```
 
-**Minimize Layers** â€” Combine related RUN commands with `&&` and clean up package manager caches in the same layer. Each RUN instruction adds a layer; fewer layers means smaller images and faster pulls.
+### Container Lifecycle Management
 
-**Metadata** â€” Use LABEL instructions for maintainer, version, license, and other metadata. HEALTHCHECK defines the command Docker uses to determine if the container is healthy.
+```mermaid
+stateDiagram-v2
+    [*] --> Created: docker create
+    Created --> Running: docker start
+    Running --> Paused: docker pause
+    Paused --> Running: docker unpause
+    Running --> Stopped: docker stop
+    Created --> Stopped: docker rm
+    Stopped --> Running: docker start
+    Stopped --> [*]: docker rm
+    Running --> [*]: docker kill
+```
 
-### 5.3 Layer Caching
+**Key commands:**
+```text
+docker run -d --name app -p 3000:3000 myapp    # Run container detached
+docker ps                                        # List running containers
+docker ps -a                                     # List all containers
+docker logs -f app                               # Follow logs
+docker exec -it app sh                           # Shell into container
+docker inspect app                               # Detailed metadata
+docker stats                                     # Resource usage live
+docker cp app:/app/log.txt ./                    # Copy files
+```
 
-> **Remember:** Layer caching is your friend. Place frequently changed instructions (COPY of source code) at the end.
+### Volumes and Storage
 
-Docker builds each layer and caches the result. On subsequent builds, if the build context and instruction haven't changed, Docker reuses the cached layer. This dramatically accelerates builds.
+**Volume types:**
+- **Named volumes:** Managed by Docker, persistent, stored in `/var/lib/docker/volumes/`
+- **Bind mounts:** Map host directory into container (for development)
+- **tmpfs mounts:** Temporary, in-memory storage (for secrets, scratch space)
 
-Cache invalidation occurs when:
-- The instruction changes (different package version, different commands)
-- The file content in a COPY changes
-- A preceding layer is invalidated (all subsequent layers must rebuild)
+```text
+# Named volume
+docker volume create mydata
+docker run -v mydata:/app/data myapp
 
-Use `.dockerignore` to exclude unnecessary files from the build context (node_modules, .git, build artifacts). This reduces context size and prevents cache invalidation from irrelevant changes.
+# Bind mount (development)
+docker run -v $(pwd):/app -w /app myapp
 
-### 5.4 Docker Compose
+# tmpfs mount
+docker run --tmpfs /tmp:noexec,nosuid,size=64m myapp
+```
 
-Docker Compose defines multi-container applications in a YAML file. It manages building, networking, and running related containers as a unit. Compose is essential for development environments and local testing.
+### Docker Networking
+
+**Network drivers:**
+- **bridge** (default): Isolated network on a single host. Containers communicate via IP.
+- **host**: Container uses host's network stack directly. No network isolation but better performance.
+- **overlay**: Multi-host networking for Docker Swarm. Enables container communication across hosts.
+- **macvlan**: Assign MAC addresses to containers for direct network attachment.
+- **none**: No network access. Only loopback interface.
+
+```text
+# Create a custom bridge network
+docker network create --driver bridge mynet
+docker run --network mynet --name api myapi
+docker run --network mynet --name web myweb
+# Containers can resolve each other by name
+```
+
+### Docker Compose
+
+Docker Compose defines multi-container applications in a YAML file:
 
 ```yaml
+version: '3.8'
+
 services:
   app:
     build: .
     ports:
       - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=db
     depends_on:
       - db
+    volumes:
+      - app_data:/app/data
+
   db:
-    image: postgres:16
+    image: postgres:16-alpine
     environment:
+      POSTGRES_DB: myapp
       POSTGRES_PASSWORD: ${DB_PASSWORD}
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
 
 volumes:
-  pgdata:
+  app_data:
+  pg_data:
 ```
 
-### 5.5 Volumes and Bind Mounts
+### Docker BuildKit
 
-**Volumes** â€” Managed by Docker, stored in `/var/lib/docker/volumes/`. Preferred for persistent data. Support volume drivers (NFS, cloud storage). Named volumes are easy to back up and share across containers.
+BuildKit is Docker's next-generation build system, enabled by default since Docker 23.0:
 
-**Bind Mounts** â€” Map a host directory into the container. Useful for development (hot-reloading) and sharing host configuration files. Less portable than volumes and depend on host filesystem structure.
-
-**tmpfs Mounts** â€” Stored in memory only. Used for sensitive data that should not persist (secrets, temporary processing data).
-
-### 5.6 Docker Networking
-
-Docker provides several network drivers:
-
-- **bridge** â€” Default. Isolated network for containers on the same host. Containers communicate via IP addresses or service names (with embedded DNS).
-- **host** â€” Container uses the host's network stack directly. No network isolation. Higher performance but reduced isolation.
-- **overlay** â€” Multi-host networking for Docker Swarm. Enables containers on different hosts to communicate securely.
-- **macvlan** â€” Assigns MAC addresses to containers, making them appear as physical devices on the network.
-- **none** â€” No networking. For isolation-only containers.
-- **ipvlan** â€” Similar to macvlan but uses the same MAC address with multiple IP addresses.
-
-### 5.7 Resource Constraints
-
-Containers should always specify resource limits to prevent resource starvation:
-
-```bash
-docker run --memory="512m" --cpus="1.5" --memory-reservation="256m" nginx
-```
-
-Resource types:
-- **CPU** â€” `--cpus` (core count), `--cpuset-cpus` (specific cores)
-- **Memory** â€” `--memory` (hard limit), `--memory-reservation` (soft limit)
-- **Disk I/O** â€” `--device-read-bps`, `--device-write-bps`
-- **Restart Policies** â€” `--restart no|on-failure[:max-retries]|always|unless-stopped`
-
-### 5.8 Docker Security
-
-Security is critical for production container deployments.
-
-**Non-Root User** â€” Containers run as root by default. Create a user in the Dockerfile and switch with USER directive. This limits the impact of container escape vulnerabilities.
-
-**Read-Only Root Filesystem** â€” Use `--read-only` flag. Write directories for temporary data are mounted as tmpfs volumes. Prevents attackers from modifying the container filesystem.
-
-**Secrets Management** â€” Docker supports build secrets (BuildKit) and runtime secrets. Build secrets enable using credentials during build without embedding them in the image.
+**Features:**
+- Parallel build stages
+- Better cache handling (cache mounts, `--mount=type=cache`)
+- Secret mounts (don't bake secrets into images)
+- SSH mount for private dependencies
+- Skip unused stages
 
 ```dockerfile
-# BuildKit syntax for secrets
-RUN --mount=type=secret,id=npmrc \
-    cp /run/secrets/npmrc ~/.npmrc
+# Syntax directive for BuildKit
+# syntax=docker/dockerfile:1
+
+# Cache mount for npm
+RUN --mount=type=cache,target=/root/.npm \
+    npm ci
+
+# Secret mount (no layer for secret)
+RUN --mount=type=secret,id=token \
+    TOKEN=$(cat /run/secrets/token) npm run build
+
+# SSH mount for private repos
+RUN --mount=type=ssh \
+    npm install
 ```
 
-**Capability Dropping** â€” Docker containers start with a reduced set of Linux capabilities. Further restrict with `--cap-drop=ALL` then add only necessary capabilities with `--cap-add=NET_BIND_SERVICE`.
+### Docker Security
 
-**Image Scanning** â€” Scan images for vulnerabilities before deployment. Trivy, Docker Scout, and Snyk provide CVE scanning integrated with CI/CD.
+**Image security scanning:**
+```text
+# Trivy scan
+docker scan myapp:latest
+trivy image myapp:latest
 
-### 5.9 Dockerfile Linters
-
-Hadolint parses Dockerfiles, applies best-practice rules, and returns warnings. It integrates with Dockerfile syntax checking, shell script analysis in RUN commands, and label conventions.
-
-```bash
-# Lint a Dockerfile
-hadolint Dockerfile
-
-# With severity filtering
-hadolint --failure-threshold error Dockerfile
+# Grype scan
+grype myapp:latest
 ```
 
-## Summary
+**Runtime security:**
+```text
+# Run with restricted capabilities
+docker run --cap-drop=ALL --cap-add=NET_BIND_SERVICE myapp
 
-## Concept Comparison Table
+# Read-only filesystem (except tmpfs)
+docker run --read-only --tmpfs /tmp myapp
 
-| Concept | Description |
-|---------|-------------|
-| Image | Read-only layered template for creating containers |
-| Container | Running instance of an image with isolated process |
-| Volume | Docker-managed persistent storage in /var/lib/docker/volumes |
-| Bind Mount | Host directory mapped into the container |
-| tmpfs Mount | In-memory storage for temporary data |
+# No new privileges
+docker run --security-opt=no-new-privileges myapp
 
-## Quick Reference
+# Seccomp profile
+docker run --security-opt seccomp=/path/to/profile.json myapp
 
-| Topic | Key Points |
-|-------|------------|
-| Dockerfile Key | FROM, RUN, COPY, CMD, EXPOSE, USER |
-| Volumes | docker volume create, -v flag |
-| Networks | bridge(default), host, overlay, macvlan |
-| Resources | --memory, --cpus, --restart |
-| Security | USER, --read-only, --cap-drop, image scanning |
+# AppArmor
+docker run --security-opt apparmor=myprofile myapp
+```
 
-## Cross-Application Matrix
+### Docker in CI/CD
 
-| Domain | Application |
-|--------|-------------|
-| Web | Development environments with hot-reload |
-| Cloud | Consistent deployment across environments |
-| Enterprise | Isolated microservice deployments |
-| ML | Reproducible model training environments |
+```yaml
+# GitHub Actions Docker build and push
+- name: Build and Push Docker Image
+  uses: docker/build-push-action@v5
+  with:
+    context: .
+    push: true
+    tags: |
+      ghcr.io/myorg/app:${{ github.sha }}
+      ghcr.io/myorg/app:latest
+    cache-from: type=gha
+    cache-to: type=gha,mode=max
+```
+
+---
+
+## Examples
+
+### Example 1: Docker Lifecycle Manager
+
+```typescript
+interface ContainerConfig {
+  image: string;
+  name: string;
+  port: number;
+  env: Record<string, string>;
+  volumes: string[];
+  network: string;
+}
+
+class DockerContainerManager {
+  async createContainer(config: ContainerConfig): Promise<void> {
+    console.log(`Creating container "${config.name}"...`);
+    const envFlags = Object.entries(config.env)
+      .map(([k, v]) => `-e ${k}=${v}`)
+      .join(' ');
+    const volumeFlags = config.volumes
+      .map(v => `-v ${v}`)
+      .join(' ');
+    console.log(`docker run -d --name ${config.name} -p ${config.port}:${config.port} ${envFlags} ${volumeFlags} --network ${config.network} ${config.image}`);
+  }
+
+  async healthCheck(containerName: string): Promise<boolean> {
+    console.log(`Checking health of "${containerName}"...`);
+    // Simulate health check
+    return true;
+  }
+
+  async getLogs(containerName: string, lines: number = 100): Promise<string[]> {
+    console.log(`Fetching last ${lines} lines from "${containerName}"...`);
+    return [`[INFO] Container ${containerName} is running`];
+  }
+
+  async cleanup(containerName: string): Promise<void> {
+    console.log(`docker stop ${containerName}`);
+    console.log(`docker rm ${containerName}`);
+  }
+
+  async scale(serviceName: string, replicas: number): Promise<void> {
+    console.log(`Scaling "${serviceName}" to ${replicas} replicas...`);
+    for (let i = 1; i <= replicas; i++) {
+      console.log(`  Starting ${serviceName}-${i}`);
+    }
+  }
+}
+
+const manager = new DockerContainerManager();
+manager.createContainer({
+  image: 'myapp:latest',
+  name: 'api-v1',
+  port: 3000,
+  env: { NODE_ENV: 'production', DB_HOST: 'postgres' },
+  volumes: ['app_data:/app/data'],
+  network: 'appnet',
+});
+```
+
+### Example 2: Docker Build Cache Analyzer
+
+```typescript
+interface BuildStep {
+  instruction: string;
+  command: string;
+  duration: number;
+  cached: boolean;
+  layerSize: number;
+}
+
+class BuildCacheAnalyzer {
+  analyze(steps: BuildStep[]): {
+    totalDuration: number;
+    cachedDuration: number;
+    cacheRate: number;
+    optimizationTips: string[];
+  } {
+    const totalDuration = steps.reduce((s, s) => s + s.duration, 0);
+    const cachedDuration = steps.filter(s => s.cached).reduce((s, s) => s + s.duration, 0);
+    const cacheRate = totalDuration > 0 ? cachedDuration / totalDuration : 0;
+
+    const tips: string[] = [];
+
+    // Find non-cached steps that could be optimized
+    for (let i = 0; i < steps.length; i++) {
+      if (!steps[i].cached && steps[i].instruction === 'COPY') {
+        if (steps[i].command.includes('package')) {
+          tips.push(`Move "COPY package*.json ./" before source code changes`);
+        }
+        if (steps[i].command.includes('.')) {
+          tips.push(`Use .dockerignore or more specific COPY patterns`);
+        }
+      }
+    }
+
+    // Check for npm install after code copy
+    const npmIndex = steps.findIndex(s => s.command.includes('npm'));
+    const copyIndex = steps.findLastIndex(s => s.instruction === 'COPY' && s.command.includes('.'));
+    if (npmIndex >= 0 && copyIndex >= 0 && copyIndex < npmIndex) {
+      steps.slice(0, npmIndex).forEach(s => {
+        if (s.instruction === 'COPY' && !s.command.includes('package')) {
+          tips.push(`Move npm install before COPY of source code`);
+        }
+      });
+    }
+
+    // Suggest combining RUN commands
+    const runCommands = steps.filter(s => s.instruction === 'RUN');
+    if (runCommands.length > 3) {
+      tips.push(`Consider combining RUN commands with && to reduce layers`);
+    }
+
+    return { totalDuration, cachedDuration, cacheRate, optimizationTips: tips };
+  }
+}
+
+const analyzer = new BuildCacheAnalyzer();
+const result = analyzer.analyze([
+  { instruction: 'FROM', command: 'node:20', duration: 2000, cached: true, layerSize: 150 },
+  { instruction: 'COPY', command: 'package*.json ./', duration: 500, cached: true, layerSize: 10 },
+  { instruction: 'RUN', command: 'npm ci', duration: 15000, cached: true, layerSize: 50 },
+  { instruction: 'COPY', command: '. .', duration: 3000, cached: false, layerSize: 200 },
+  { instruction: 'RUN', command: 'npm run build', duration: 8000, cached: false, layerSize: 30 },
+]);
+
+console.log(`Cache rate: ${(result.cacheRate * 100).toFixed(0)}%`);
+console.log('Tips:', result.optimizationTips);
+```
+
+---
+
+## Practical Takeaways
+
+1. **Use specific base image tags.** `node:20-alpine`, never `node:latest`.
+2. **Optimize layer caching.** COPY package.json separately before source code.
+3. **Combine RUN commands.** Fewer layers = smaller images.
+4. **Use `.dockerignore`.** Exclude `node_modules`, `.git`, `dist` from build context.
+5. **Run as non-root.** Always use `USER` instruction.
+6. **Use multi-stage builds.** Separate build tools from runtime.
+7. **Scan images.** Integrate Trivy or Snyk into CI pipeline.
+
+---
 
 ## Chapter Quiz
 
-<details><summary>Question 1: How does multi-stage builds help?</summary>**A)** Runs builds in parallel<br>**B)** Separates build and runtime to reduce image size<br>**C)** Improves network performance<br>**D)** Increases container security<br><br>**Answer: B)** Separates build and runtime to reduce image size</details>
+<details><summary>Question 1: Which component is responsible for the actual container creation in Docker's architecture?</summary>**A)** Docker CLI<br>**B)** Docker Daemon<br>**C)** containerd<br>**D)** runc<br><br>**Answer: D)** runc</details>
 
-<details><summary>Question 2: What is the purpose of the USER instruction?</summary>**A)** Create a user account<br>**B)** Switch to non-root user for security<br>**C)** Set container hostname<br>**D)** Configure user authentication<br><br>**Answer: B)** Switch to non-root user for security</details>
+<details><summary>Question 2: Why should you copy package.json before source code in a Dockerfile?</summary>**A)** It's required by Docker syntax<br>**B)** To maximize layer caching for npm install<br>**C)** It improves security<br>**D)** It speeds up the COPY command<br><br>**Answer: B)** To maximize layer caching for npm install</details>
 
-<details><summary>Question 3: Which network driver enables multi-host communication?</summary>**A)** bridge<br>**B)** host<br>**C)** overlay<br>**D)** none<br><br>**Answer: C)** overlay</details>
+<details><summary>Question 3: What is the default Docker network driver?</summary>**A)** host<br>**B)** overlay<br>**C)** bridge<br>**D)** macvlan<br><br>**Answer: C)** bridge</details>
 
+<details><summary>Question 4: What is BuildKit?</summary>**A)** A CI/CD tool for Docker<br>**B)** Docker's next-generation build system<br>**C)** A Kubernetes alternative<br>**D)** A container registry<br><br>**Answer: B)** Docker's next-generation build system</details>
+
+<details><summary>Question 5: Which Docker flag makes the container's filesystem read-only?</summary>**A)** `--read-only`<br>**B)** `--no-write`<br>**C)** `--secure`<br>**D)** `--locked`<br><br>**Answer: A)** `--read-only`</details>
+
+---
 
 ## Summary
 
-Docker provides lightweight, consistent application packaging through operating-system-level virtualization. Images are layered, immutable templates; containers are running instances with isolated processes. Multi-stage builds produce minimal production images. Layer caching accelerates iterative development. Volumes persist data; networks connect containers. Resource constraints prevent resource starvation. Security practices including non-root users, read-only filesystems, capability dropping, and image scanning reduce attack surface. Dockerfile linters enforce best practices automatically.
+- Docker's client-server architecture separates the CLI from the daemon, which delegates to containerd and runc for container execution.
+- Dockerfile best practices center on layer caching optimization: order instructions from least to most frequently changing.
+- Container lifecycle management includes creation, starting, stopping, removal, and health checking.
+- Volumes (named, bind, tmpfs) provide persistent and shared storage for containers.
+- Docker networks (bridge, host, overlay) enable container communication with different isolation levels.
+- Docker Compose defines multi-container applications in a single YAML file.
+- BuildKit provides parallel builds, cache mounts, and secret mounts for improved builds.
+- Docker security requires non-root users, capability dropping, and image scanning.
+
+---
 
 ## Exercises
 
 ### Review Questions
-
-1. How does Docker's layered filesystem work? What happens to changed files at runtime?
-2. Explain the cache invalidation rules for Docker builds. Why does instruction order matter?
-3. Compare volumes, bind mounts, and tmpfs mounts. When should each be used?
-4. What are the security risks of running containers as root? How should non-root execution be configured?
-5. How does Docker overlay networking enable multi-host communication?
+1. Describe Docker's architecture and the role of each component.
+2. How does Docker layer caching work and how can you optimize it?
+3. What is the difference between a named volume and a bind mount?
+4. How do you run a container with a read-only filesystem and tmpfs for temp data?
+5. What is the purpose of the `.dockerignore` file?
 
 ### Application Problems
-
-1. Create a Dockerfile for a Python Flask application that uses multi-stage builds. The build stage installs dev dependencies and runs tests. The runtime stage uses `python:3.12-slim`. Include a non-root user, HEALTHCHECK, and LABEL instructions. Run hadolint and resolve any warnings.
-2. Set up a three-service application with Docker Compose: a Node.js API, a PostgreSQL database, and a Redis cache. Configure volumes for database persistence, environment variables for credentials, depends_on with health conditions, and resource limits.
-3. Build a Docker image for a Go application using the `golang:1.22` build image and `alpine:3.19` runtime. Measure the image size with and without multi-stage builds. Verify layer count and hash with `docker history`.
+1. Write a Dockerfile for a TypeScript application with multi-stage builds and non-root user.
+2. Create a Docker Compose file for a web app with a PostgreSQL database and Redis cache.
+3. Implement a CI pipeline step that builds, scans, and pushes a Docker image.
+4. Debug a Dockerfile that rebuilds npm install every time even though package.json hasn't changed.
 
 ### Challenge Problem
-
-Design a container security strategy for a PCI-compliant e-commerce platform. The platform consists of 20 microservices (Node.js, Go, Python), a PostgreSQL database, Redis caching, and Kafka messaging. Requirements: non-root execution everywhere, no hardcoded secrets in images, vulnerability scanning in CI/CD, read-only root filesystem for stateless services, and capability dropping. Produce a Dockerfile template with annotations for each security decision, a Docker Compose overlay for production with security configurations, a set of Hadolint rules adapted for PCI compliance, and describe the image signing strategy for supply chain integrity.
+1. Design a complete Docker build and deployment pipeline for a 5-service microservices architecture. Include: a base image Dockerfile shared across all services (configurable per service), multi-stage builds with BuildKit cache mounts, a `.dockerignore` strategy per service, a Docker Compose overlay for development (hot reload with bind mounts) and production (optimized images), a security hardening layer (non-root, read-only, capabilities), and a CI pipeline that builds, scans, signs, and pushes images to a registry with SBOM generation.

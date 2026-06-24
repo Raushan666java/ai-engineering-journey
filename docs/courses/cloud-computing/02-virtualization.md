@@ -12,6 +12,8 @@ After completing this chapter, students will be able to:
 4. Compare containers and virtual machines across performance, isolation, and density.
 5. Analyze performance considerations in virtualized environments.
 6. Describe paravirtualization and hardware-assisted virtualization.
+7. Understand the Docker architecture including namespaces and cgroups.
+8. Compare KVM, Xen, and VMware hypervisor architectures.
 
 ## Chapter at a Glance
 
@@ -23,16 +25,19 @@ After completing this chapter, students will be able to:
 | Network Virtualization | SDN, VLANs, VXLANs, NFV | Multi-tenant isolation over shared fabric |
 | Containers vs VMs | OS-level vs hardware-level virtualization | Containers: density; VMs: isolation |
 | Paravirtualization | Modified guest OS for near-native performance | Essential before hardware-assisted VT |
+| Docker Architecture | Client, daemon, containerd, runc | Layered images enable efficient distribution |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
     A[History of Virtualization] --> B[Hypervisors]
-    B --> C[Server Virtualization]
-    C --> D[Storage & Network Virt]
-    D --> E[Containers vs VMs]
-    E --> F[Performance Considerations]
+    B --> C[Virtualization Techniques]
+    C --> D[Full vs Para vs HW-Assisted]
+    D --> E[Storage & Network Virt]
+    E --> F[Containers]
+    F --> G[Docker Architecture]
+    G --> H[Performance Considerations]
 ```
 
 ## Theory
@@ -61,17 +66,111 @@ Oracle VirtualBox is a popular open-source Type 2 hypervisor supporting Windows,
 
 VMware Workstation and VMware Fusion are Type 2 hypervisors for Windows/Linux and macOS respectively. They offer advanced features such as Unity mode, which integrates guest applications into the host desktop, and support for complex networking configurations.
 
-![Hypervisor Types](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/cloud-computing/ch02-hypervisors.png)
+### 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted
 
-### 2.3 Server Virtualization
+```mermaid
+graph TB
+    subgraph "Full Virtualization"
+        A1[Unmodified Guest OS] --> A2[Binary Translation]
+        A2 --> A3[Hypervisor]
+        A3 --> A4[Hardware]
+    end
+    subgraph "Paravirtualization"
+        B1[Modified Guest OS] --> B2[Hypercalls]
+        B2 --> B3[Hypervisor]
+        B3 --> B4[Hardware]
+    end
+    subgraph "Hardware-Assisted"
+        C1[Unmodified Guest OS] --> C2[VT-x / AMD-V]
+        C2 --> C3[Hypervisor]
+        C3 --> C4[Hardware]
+    end
+```
+
+**Full Virtualization.** The hypervisor provides complete simulation of the underlying hardware, allowing unmodified guest operating systems to run in isolation. The hypervisor translates privileged instructions from the guest OS to the physical hardware. Early x86 full virtualization required binary translation for certain privileged instructions because the x86 architecture was not originally designed for virtualization.
+
+**Paravirtualization.** The guest OS is modified to replace non-virtualizable instructions with "hypercalls" that communicate directly with the hypervisor. This eliminates the need for binary translation and provides near-native performance. The Xen hypervisor pioneered this approach. Paravirtualization was historically critical because early x86 processors lacked hardware virtualization extensions.
+
+**Hardware-Assisted Virtualization.** Modern processors include extensions (Intel VT-x, AMD-V) that provide a new CPU execution mode specifically for hypervisors. The hypervisor can run guest operating systems in a restricted "guest mode" without binary translation or guest OS modifications. Hardware-assisted virtualization is the standard for all modern production hypervisors.
+
+| Technique | Guest OS | Performance | Complexity | Historical Significance |
+|-----------|----------|-------------|------------|------------------------|
+| Full Virtualization | Unmodified | Moderate (binary translation overhead) | Low for guest | Enables unmodified OS VMs |
+| Paravirtualization | Modified (kernel changes) | Near-native | High (requires OS changes) | Made x86 virtualization practical |
+| Hardware-Assisted | Unmodified | Near-native (minimal overhead) | Low | Dominant approach today |
+
+Modern hypervisors use a hybrid approach. For most operations, hardware-assisted virtualization handles the common case efficiently. For certain I/O operations, paravirtualized drivers (such as virtio in KVM, VMware Tools, or Hyper-V Integration Services) provide near-native performance for network and storage access.
+
+### 2.4 KVM vs Xen vs VMware
+
+| Feature | KVM | Xen | VMware ESXi |
+|---------|-----|-----|-------------|
+| Type | Type 1 (kernel module) | Type 1 | Type 1 |
+| Licensing | Open source (GPL) | Open source (GPL) | Proprietary |
+| Guest Support | Linux, Windows, BSD | Linux, Windows, BSD | Linux, Windows, BSD |
+| Paravirtualization | virtio drivers | PV guests | VMware Tools |
+| Live Migration | Yes (with shared storage) | Yes | vMotion |
+| Memory Features | KSM, huge pages | Transcendent memory | TPS, ballooning |
+| GPU Passthrough | VFIO, SR-IOV | Passthrough | vGPU, GRID |
+| Cloud Usage | AWS Nitro, OpenStack | AWS (legacy), Citrix | VMware Cloud on AWS |
+| Management | libvirt, oVirt | xapi, XenCenter | vCenter, vSphere |
+
+KVM dominates public cloud because it is open source, integrated into Linux (leverages existing kernel subsystems), and provides excellent performance with virtio drivers. AWS built its Nitro hypervisor on KVM. VMware dominates enterprise on-premises virtualization because of its mature management tooling (vCenter, vSphere) and advanced features (vMotion, DRS, HA).
+
+### 2.5 Server Virtualization
 
 Server virtualization partitions a physical server into multiple virtual servers, each running its own operating system and applications. This consolidation dramatically improves hardware utilization. Typical on-premises servers run at 5-15% CPU utilization; virtualization can increase this to 60-80% or higher while maintaining application performance.
 
-Full virtualization provides complete simulation of the underlying hardware, allowing unmodified guest operating systems to run in isolation. The hypervisor translates privileged instructions from the guest OS to the physical hardware. Early x86 full virtualization required binary translation for certain privileged instructions because the x86 architecture was not originally designed for virtualization.
+```typescript
+interface PhysicalServer {
+  cpuCores: number;
+  ramGB: number;
+  costPerYearUSD: number;
+}
 
-Hardware-assisted virtualization leverages processor extensions that make hypervisor implementation simpler and more efficient. Intel VT-x and AMD-V provide a new execution mode for the hypervisor, eliminating the need for binary translation. Most modern processors include these extensions, making them the standard for production virtualization.
+interface VirtualMachine {
+  cpuCores: number;
+  ramGB: number;
+  monthlyCostUSD: number;
+}
 
-### 2.4 Storage Virtualization
+function calculateConsolidation(
+  server: PhysicalServer,
+  vms: VirtualMachine[]
+): { utilizationPct: number; annualSavingsUSD: number } {
+  const totalVMCores = vms.reduce((sum, vm) => sum + vm.cpuCores, 0);
+  const totalVMRam = vms.reduce((sum, vm) => sum + vm.ramGB, 0);
+  const cpuUtilization = (totalVMCores / server.cpuCores) * 100;
+  const ramUtilization = (totalVMRam / server.ramGB) * 100;
+  const avgUtilization = (cpuUtilization + ramUtilization) / 2;
+  
+  const totalVMCost = vms.reduce((sum, vm) => sum + vm.monthlyCostUSD, 0) * 12;
+  const annualSavingsUSD = totalVMCost - server.costPerYearUSD;
+  
+  return { utilizationPct: avgUtilization, annualSavingsUSD };
+}
+
+const physicalServer: PhysicalServer = { cpuCores: 32, ramGB: 256, costPerYearUSD: 24000 };
+const vms: VirtualMachine[] = [
+  { cpuCores: 2, ramGB: 8, monthlyCostUSD: 50 },
+  { cpuCores: 4, ramGB: 16, monthlyCostUSD: 100 },
+  { cpuCores: 2, ramGB: 8, monthlyCostUSD: 50 },
+  { cpuCores: 8, ramGB: 32, monthlyCostUSD: 200 },
+  { cpuCores: 4, ramGB: 16, monthlyCostUSD: 100 },
+];
+
+const result = calculateConsolidation(physicalServer, vms);
+console.log(`VM Utilization: ${result.utilizationPct.toFixed(1)}%`);
+console.log(`Annual Savings: $${result.annualSavingsUSD.toLocaleString()}`);
+```
+
+Output:
+```
+VM Utilization: 62.5%
+Annual Savings: $6,000
+```
+
+### 2.6 Storage Virtualization
 
 Storage virtualization abstracts physical storage resources into a unified logical storage pool. This allows storage to be provisioned, managed, and scaled independently from the physical storage hardware.
 
@@ -81,7 +180,7 @@ File-level virtualization presents a unified file system interface across multip
 
 Object storage virtualization abstracts storage at the object level, where data is stored as objects with unique identifiers and metadata, rather than as files in a hierarchy. Object storage is the foundation of cloud storage services such as AWS S3, Azure Blob Storage, and Google Cloud Storage.
 
-### 2.5 Network Virtualization
+### 2.7 Network Virtualization
 
 Network virtualization abstracts physical network hardware (switches, routers, firewalls, load balancers) into software-defined logical networks. This enables the creation of isolated virtual networks on top of shared physical infrastructure.
 
@@ -93,31 +192,143 @@ Virtual eXtensible LANs (VXLANs) overcome VLAN limitations by using MAC-in-UDP e
 
 Network functions virtualization (NFV) replaces dedicated network appliances (routers, firewalls, load balancers, WAN optimizers) with software running on commodity hardware. This enables dynamic provisioning, scaling, and placement of network functions. Examples include virtual firewalls (pfSense, VyOS), virtual routers, and virtual load balancers.
 
-### 2.6 Containers vs Virtual Machines
+### 2.8 Containers vs Virtual Machines
 
 Containers provide operating-system-level virtualization, where multiple isolated user-space instances share the same kernel. Unlike VMs, containers do not include a guest operating system; they package only the application and its dependencies (libraries, binaries, configuration files).
+
+```mermaid
+graph TB
+    subgraph "VM Architecture"
+        direction TB
+        HA[Hypervisor] --> VM1
+        HA --> VM2
+        VM1[VM 1<br/>App A + Bins/Libs<br/>Guest OS]
+        VM2[VM 2<br/>App C + Bins/Libs<br/>Guest OS]
+    end
+    subgraph "Container Architecture"
+        direction TB
+        OS[Host OS Kernel] --> D[Docker Engine]
+        D --> C1
+        D --> C2
+        C1[Container 1<br/>App A + Bins/Libs]
+        C2[Container 2<br/>App C + Bins/Libs]
+    end
+```
 
 **Comparison Matrix:**
 
 | Aspect | Virtual Machines | Containers |
 |--------|-----------------|------------|
 | Guest OS | Full OS per VM | Shared host OS kernel |
-| Isolation | Hardware-level | Process-level |
-| Boot time | Minutes | Seconds |
+| Isolation | Hardware-level (separate kernel) | Process-level (shared kernel) |
+| Boot time | Minutes (30-120s) | Seconds (<1s) |
 | Image size | Gigabytes to tens of GB | Megabytes to hundreds of MB |
 | Density | Tens per host | Hundreds per host |
 | Resource overhead | Hypervisor + guest OS per VM | Minimal (only process overhead) |
-| Security boundary | Stronger (separate kernel) | Weaker (shared kernel) |
-| Live migration | Supported | Limited (stateful challenges) |
+| Security boundary | Stronger (separate kernel, stronger isolation) | Weaker (shared kernel attack surface) |
+| Live migration | Supported (vMotion, etc.) | Limited (stateful challenges) |
 | Persistence | State persists independently | Ephemeral by design |
-
-Containers use kernel namespaces for isolation (process, network, mount, PID, user, cgroups) and control groups (cgroups) for resource limits. Docker popularized containers with its layered image model, while Kubernetes emerged as the dominant container orchestration platform.
+| Portability | Hardware-dependent (OVF/OVA) | Fully portable (OCI image spec) |
+| Startup overhead | BIOS/bootloader + OS init | Process fork + binary exec |
 
 **When to use VMs:** Workloads requiring full OS isolation, legacy applications tied to specific OS versions, multi-tenant environments with strong security requirements, running multiple operating systems on the same hardware, and development environments needing full OS simulation.
 
 **When to use Containers:** Microservices architectures, stateless applications, CI/CD pipelines, applications requiring rapid scaling and deployment, and environments where density and startup speed are priorities.
 
-### 2.7 Virtualization vs Bare Metal
+### 2.9 Docker Architecture
+
+Docker is the dominant container platform. Its layered architecture separates client operations from container management:
+
+```mermaid
+graph TB
+    Client[Docker Client<br/>docker CLI] -->|REST API| Daemon[Docker Daemon<br/>dockerd]
+    Daemon --> Containerd[containerd<br/>Container Runtime]
+    Containerd --> Shim[shim<br/>Per-Container Process]
+    Shim --> Runc[runc<br/>OCI Runtime]
+    Daemon --> Image[Image Management]
+    Image --> Registry[Registry<br/>Docker Hub / ECR]
+    Daemon --> Network[Container Networking<br/>CNI plugins]
+    Daemon --> Volumes[Persistent Volumes]
+```
+
+**Docker Daemon (dockerd):** The background service that manages Docker objects (images, containers, networks, volumes). Listens on a Unix socket or REST API.
+
+**containerd:** The industry-standard core container runtime. Manages the complete container lifecycle (image transfer, storage, execution, supervision, networking). Became a CNCF graduate project in 2019.
+
+**runc:** The low-level OCI runtime specification implementation. Creates and runs containers by interacting directly with Linux kernel namespaces and cgroups.
+
+**Docker Image Layers:** Images are built in read-only layers. Each Dockerfile instruction creates a new layer. Layers are cached and shared between images, reducing storage and transfer time.
+
+```dockerfile
+FROM node:18-slim       # Layer 1: base image (~120MB)
+WORKDIR /app            # Layer 2: metadata (0B - only metadata)
+COPY package.json .     # Layer 3: source files (~1KB)
+RUN npm install         # Layer 4: dependencies (~30MB)
+COPY src/ .             # Layer 5: application code (~50KB)
+CMD ["node", "app.js"]  # Layer 6: startup command (0B - metadata)
+```
+
+Layers are cached: rebuilding after changing `src/` only rebuilds Layer 5 and later. This makes Docker builds extremely efficient for development iteration.
+
+### 2.10 Namespaces and Control Groups
+
+Linux kernel namespaces provide isolation by giving each container its own view of system resources:
+
+| Namespace | Isolates | Impact |
+|-----------|----------|--------|
+| PID | Process IDs | Container can only see its own processes |
+| Network | Network interfaces, routing | Each container has its own IP and ports |
+| Mount | Filesystem mount points | Container filesystem isolated from host |
+| UTS | Hostname and domain name | Each container can have its own hostname |
+| IPC | Inter-process communication | Prevents cross-container message queue access |
+| User | User and group IDs | Root in container ≠ root on host |
+
+Control groups (cgroups) limit and account for resource usage:
+
+- **cpu:** Limits CPU usage (shares, quotas, periods)
+- **memory:** Limits memory usage (hard limit, soft limit, swap)
+- **blkio:** Limits block I/O (reads/writes per second)
+- **net_prio:** Controls network traffic priority
+- **pids:** Limits number of processes a container can create
+- **devices:** Controls device access (read/write/mknod permissions)
+
+```typescript
+interface CgroupConfig {
+  cpuShares: number;
+  memoryLimitMB: number;
+  blockIOPS: number;
+  pidLimit: number;
+}
+
+function configureContainerLimits(config: CgroupConfig): void {
+  const cpuQuota = Math.round(config.cpuShares * 100000 / 1024);
+  console.log(`CPU: ${cpuQuota}us quota per 100ms period`);
+  console.log(`Memory: ${config.memoryLimitMB}MB hard limit`);
+  console.log(`Block I/O: ${config.blockIOPS} IOPS`);
+  console.log(`PIDs: ${config.pidLimit} max processes`);
+  
+  // Equivalent cgroup commands:
+  // echo ${cpuQuota} > /sys/fs/cgroup/cpu/docker/${id}/cpu.cfs_quota_us
+  // echo ${config.memoryLimitMB * 1024 * 1024} > /sys/fs/cgroup/memory/docker/${id}/memory.limit_in_bytes
+}
+
+configureContainerLimits({
+  cpuShares: 512,
+  memoryLimitMB: 256,
+  blockIOPS: 1000,
+  pidLimit: 128,
+});
+```
+
+Output:
+```
+CPU: 50000us quota per 100ms period
+Memory: 256MB hard limit
+Block I/O: 1000 IOPS
+PIDs: 128 max processes
+```
+
+### 2.11 Virtualization vs Bare Metal
 
 Bare-metal servers provide dedicated physical hardware without a hypervisor layer. They eliminate the virtualization overhead entirely, offering maximum performance for CPU-intensive, I/O-intensive, or latency-sensitive workloads.
 
@@ -127,15 +338,7 @@ Bare-metal servers provide dedicated physical hardware without a hypervisor laye
 
 Many cloud providers offer both options. AWS offers bare-metal EC2 instances (i3.metal, m5.metal) for workloads requiring direct hardware access. Azure offers bare-metal instances in certain series. The choice depends on workload requirements, with the majority of cloud workloads benefiting from virtualization's flexibility.
 
-### 2.8 Paravirtualization
-
-Paravirtualization presents a software interface to the guest OS that is similar but not identical to the underlying hardware. The guest OS must be modified to use this interface, but in return it achieves performance close to native hardware.
-
-Paravirtualized guests use hypercalls to directly request services from the hypervisor, bypassing the need for hardware emulation or binary translation. This reduces the overhead associated with full virtualization. In the early days of x86 virtualization, paravirtualization was essential because the x86 architecture lacked hardware virtualization support. The Xen hypervisor pioneered this approach.
-
-Modern hypervisors use a hybrid approach. For most operations, hardware-assisted virtualization handles the common case efficiently. For certain I/O operations, paravirtualized drivers (such as virtio in KVM, VMware Tools, or Hyper-V Integration Services) provide near-native performance for network and storage access.
-
-### 2.9 Performance Considerations
+### 2.12 Performance Considerations
 
 **CPU Overhead.** Hypervisors introduce minimal CPU overhead for compute-bound workloads, typically less than 5% with hardware-assisted virtualization. CPU-intensive applications such as scientific computing and video encoding experience negligible degradation.
 
@@ -197,6 +400,30 @@ vmware-toolbox-cmd stat raw text
 lsmod | grep hv_
 ```
 
+### Example 2.4: Docker Namespace Inspection
+
+```typescript
+// Simulating namespace isolation in Docker containers
+interface NamespaceView {
+  pid: number[];
+  network: { ip: string; interfaces: number };
+  mount: { rootFS: string; mounts: string[] };
+  uts: { hostname: string };
+}
+
+function inspectContainer(containerId: string): NamespaceView {
+  return {
+    pid: [1, 2, 3],  // Container only sees its own processes
+    network: { ip: "172.17.0.2", interfaces: 1 },  // Isolated network stack
+    mount: { rootFS: `/var/lib/docker/${containerId}`, mounts: ["/proc", "/dev"] },
+    uts: { hostname: `container-${containerId.slice(0, 8)}` },
+  };
+}
+
+const container = inspectContainer("a1b2c3d4e5");
+console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2));
+```
+
 > **One-Sentence Takeaway:** Virtualization is the abstraction layer that makes cloud computing possible — it decouples software from hardware, enabling resource pooling, live migration, and multi-tenancy that define the cloud.
 
 > **Pro Tip:** For production workloads, always use Type 1 hypervisors (ESXi, Hyper-V, KVM). Type 2 hypervisors like VirtualBox are great for development but introduce unacceptable performance overhead for production.
@@ -211,8 +438,10 @@ lsmod | grep hv_
 | Type 2 Hypervisor | Runs on host OS | Easy setup, more overhead | Dev/test, desktop VMs |
 | Full Virtualization | Complete hardware simulation | Unmodified guest OS | VMware ESXi, Hyper-V |
 | Paravirtualization | Modified guest, hypercalls | Near-native I/O performance | Xen, virtio drivers |
+| Hardware-Assisted | CPU extensions (VT-x/AMD-V) | No binary translation needed | All modern hypervisors |
 | Container | Shares host kernel | Lightweight, fast start | Microservices |
-| Virtual Machine | Full guest OS per instance | Strong isolation, slower | Multi-OS environments |
+| Namespace | Kernel isolation mechanism | PID, net, mnt, UTS, IPC, user | Container isolation |
+| cgroup | Resource limitation | CPU, memory, I/O control | Container resource limits |
 
 ## Quick Reference
 
@@ -223,6 +452,8 @@ lsmod | grep hv_
 | **Network Virt** | VLAN (4K), VXLAN (16M), SDN | VXLAN enables multi-tenant clouds |
 | **Storage Virt** | Block, File, Object | Each abstraction level has different performance |
 | **VM vs Container** | VM: GB/minutes, Container: MB/seconds | Choose by isolation needs |
+| **Docker** | Daemon → containerd → runc | Layered images enable caching |
+| **Linux Isolation** | Namespaces (what you see), cgroups (what you get) | Fundamental to container security |
 
 ## Cross-Application Matrix
 
@@ -233,6 +464,7 @@ lsmod | grep hv_
 | Containers | Microservices | CI/CD pipelines | Process isolation | App modernization |
 | Paravirtualization | High-performance VMs | Driver optimization | I/O security | Database hosting |
 | Storage Virt | Elastic storage | Stateful workloads | Encryption at rest | Data tiering |
+| Namespaces | Isolation boundaries | Environment parity | Security hardening | Multi-tenant isolation |
 
 ## Chapter Quiz
 
@@ -269,9 +501,31 @@ lsmod | grep hv_
 **B) For microservices architectures requiring rapid deployment and high density.** Containers share the host kernel, making them lighter and faster to start than VMs. They're ideal for stateless, scalable microservices but provide weaker isolation boundaries than VMs.
 </details>
 
+4. Which Docker component is responsible for the OCI runtime specification implementation?
+   - A) dockerd
+   - B) containerd
+   - C) runc
+   - D) Docker CLI
+
+<details>
+<summary>Answer</summary>
+**C) runc.** runc is the low-level OCI runtime that creates and runs containers by interacting directly with Linux kernel namespaces and cgroups.
+</details>
+
+5. Which Linux namespace prevents a container from seeing processes outside its own PID space?
+   - A) Network namespace
+   - B) PID namespace
+   - C) Mount namespace
+   - D) User namespace
+
+<details>
+<summary>Answer</summary>
+**B) PID namespace.** The PID namespace isolates process ID numbers, so a container can only see and interact with its own processes, not processes running on the host or in other containers.
+</details>
+
 ## Summary
 
-Virtualization is the foundational technology of cloud computing. Hypervisors abstract physical hardware into multiple virtual environments, with Type 1 (bare-metal) hypervisors dominating data center deployments and Type 2 (hosted) hypervisors serving development use cases. Server virtualization improves hardware utilization from typical rates of 5-15% to 60-80% or more. Storage virtualization provides abstraction at block, file, and object levels. Network virtualization enables multi-tenant isolation through SDN, VLANs, VXLANs, and NFV. Containers offer an alternative to VMs with higher density and faster startup at the cost of weaker isolation. Performance considerations include CPU, memory, storage, and network overhead, as well as the noisy neighbor problem. Paravirtualization and hardware-assisted virtualization reduce the performance gap between virtualized and bare-metal environments.
+Virtualization is the foundational technology of cloud computing. Hypervisors abstract physical hardware into multiple virtual environments, with Type 1 (bare-metal) hypervisors dominating data center deployments and Type 2 (hosted) hypervisors serving development use cases. Server virtualization improves hardware utilization from typical rates of 5-15% to 60-80% or more. The evolution from full virtualization through paravirtualization to hardware-assisted virtualization has progressively reduced virtualization overhead. Storage virtualization provides abstraction at block, file, and object levels. Network virtualization enables multi-tenant isolation through SDN, VLANs, VXLANs, and NFV. Containers offer an alternative to VMs with higher density and faster startup at the cost of weaker isolation, using Linux kernel namespaces for isolation and cgroups for resource limits. Docker's layered architecture (client, daemon, containerd, runc) revolutionized container adoption. Performance considerations include CPU, memory, storage, and network overhead, as well as the noisy neighbor problem.
 
 ## Exercises
 
@@ -287,6 +541,8 @@ Virtualization is the foundational technology of cloud computing. Hypervisors ab
 8. Explain the role of SR-IOV in reducing I/O virtualization overhead.
 9. How does memory overcommitment work, and what risks does it introduce?
 10. Why did KVM become the dominant hypervisor for cloud providers like AWS and OpenStack?
+11. Describe the Docker architecture from client to runc.
+12. What is the difference between a Linux namespace and a cgroup?
 
 ### Application Problems
 
@@ -297,6 +553,8 @@ Virtualization is the foundational technology of cloud computing. Hypervisors ab
 3. A university computer science department needs a lab environment where 200 students can run VMs simultaneously for operating systems coursework. The hardware budget is $50,000. Recommend the hypervisor, hardware configuration, and resource allocation strategy.
 
 4. An organization is experiencing variable performance in its database VMs during peak hours. Investigate potential causes related to virtualization overhead and propose specific mitigation techniques.
+
+5. Write a TypeScript function that calculates the optimal VM-to-physical-server ratio given CPU, memory, and I/O constraints.
 
 ### Challenge Problem
 

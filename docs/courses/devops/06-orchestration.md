@@ -1,187 +1,585 @@
-# Chapter 6: Container Orchestration with Kubernetes
+# Chapter 6: Orchestration
 
-> **Previous:** [Docker Compose](./06-docker-compose.md) | **Next:** [Kubernetes Basics](./07-kubernetes.md)
+> **Prev:** [Docker Compose](./06-docker-compose.md)
+> **Next:** [Infrastructure as Code](./07-infrastructure-as-code.md)
 
 ---
 
 ## Learning Objectives
 
-![Kubernetes Orchestration Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch06-k8s-orchestration.png)
-
-- Define container orchestration and explain why it is necessary for large-scale applications.
-- Understand the high-level architecture of Kubernetes (Control Plane vs. Worker Nodes).
-- Identity core Kubernetes objects: Pods, Services, Deployments, and Namespaces.
-- Deploy a multi-container application using YAML manifests.
-- Explain how Kubernetes manages self-healing, scaling, and service discovery.
+- Understand the role and need for container orchestration in production.
+- Differentiate between orchestration solutions: Docker Swarm, Kubernetes, Nomad, ECS.
+- Understand orchestration primitives: deployment, service, scaling, rolling updates.
+- Configure service discovery, load balancing, and scheduling.
+- Implement self-healing, scaling, and rolling update strategies.
+- Evaluate orchestration platforms for different use cases.
 
 ---
-
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Orchestration Need | Manage hundreds of containers across multiple servers | Automation eliminates manual container management |
-| K8s Architecture | Control Plane (API, etcd, Scheduler) + Worker Nodes | Control plane manages; workers run workloads |
-| Core Objects | Pods, Deployments, Services, ConfigMaps | Pods are ephemeral; Deployments manage lifecycle |
-| Self-Healing | Desired state reconciliation ensures reliability | Controllers continuously adjust to match desired state |
-| Service Discovery | Services provide stable endpoints for Pods | Use Services for load-balanced pod access |
+| Why Orchestration | Manual container management doesn't scale | Orchestration automates placement, scaling, healing |
+| Orchestration Primitives | Deployments, services, ingress | Building blocks for running applications at scale |
+| Scheduling | Where to place containers | Scheduler considers resources, constraints, affinity |
+| Service Discovery | How containers find each other | DNS-based or key-value store |
+| Load Balancing | Distributing traffic | Internal (service mesh) and external (ingress) |
+| Rolling Updates | Zero-downtime deployments | Configurable strategy: max surge, max unavailable |
+| Self-Healing | Automatic recovery | Restart, reschedule, replace failed containers |
+| Scaling | Adjusting replica count | Horizontal (more replicas) vs vertical (more resources) |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Need for Orchestration] --> B[K8s Architecture]
-    B --> C[Control Plane]
-    B --> D[Worker Nodes]
-    C & D --> E[Pods]
-    E --> F[Deployments]
-    F --> G[Services]
-    G --> H[ConfigMaps & Secrets]
+    A[Orchestration Platforms] --> B[Kubernetes]
+    A --> C[Docker Swarm]
+    A --> D[Nomad]
+    A --> E[Amazon ECS]
+    B --> F[Pods]
+    B --> G[Deployments]
+    B --> H[Services]
+    B --> I[ConfigMaps]
+    F & G & H --> J[Scaling]
+    J --> K[Rolling Updates]
+    K --> L[Self-Healing]
+    L --> M[Service Discovery]
 ```
 
 ## Theory
 
-### The Need for Orchestration
+### Why Orchestration?
 
-> **Pro Tip:** Use kubectl explain to learn about any Kubernetes resource's schema directly from the CLI.
-While Docker is great for managing individual containers, managing hundreds of containers across multiple servers is complex. Container Orchestrators like Kubernetes (K8s) automate the deployment, scaling, and management of containerized applications.
+Running containers in production presents challenges that orchestration solves:
 
-### Kubernetes Architecture
+1. **Placement:** Where should each container run? Which host has enough resources?
+2. **Scaling:** How to handle increased traffic? Automatically add/remove replicas.
+3. **Health:** What happens when a container crashes? Automatically restart.
+4. **Updates:** How to update without downtime? Rolling updates with health checks.
+5. **Networking:** How do containers find each other across hosts? Service discovery.
+6. **Configuration:** How to manage config across environments? Config maps, secrets.
+7. **Storage:** How to persist data when containers move? Persistent volumes.
 
-> **Remember:** Pods are ephemeral. Never rely on a specific Pod's IP address--always use Services.
-- **Control Plane:** The "brains" of the cluster. Includes the API Server (interface), etcd (store), Scheduler (placement), and Controller Manager (health).
-- **Worker Nodes:** Where the applications run. Includes the Kubelet (agent), Kube-proxy (networking), and Container Runtime (e.g., Docker/containerd).
+### Orchestration Platforms
 
-### Core K8s Objects
+**Kubernetes (K8s):**
+- Industry standard for container orchestration
+- Declarative configuration (YAML)
+- Rich ecosystem: Helm, Istio, Prometheus, etc.
+- Complex but extremely powerful
+- Best for: large-scale, complex microservices
 
-> **Warning:** etcd is the single source of truth for cluster state. Always back it up regularly.
-1.  **Pod:** The smallest deployable unit. One or more containers sharing a network and storage.
-2.  **Deployment:** A higher-level object that manages Pods. It handles rolling updates and scaling.
-3.  **Service:** An abstraction that defines a logical set of Pods and a policy to access them (Load Balancing).
-4.  **ConfigMap/Secret:** Decoupling configuration data from the container image.
+**Docker Swarm:**
+- Built into Docker Engine
+- Simpler than Kubernetes
+- Native Docker CLI integration
+- Best for: small to medium deployments, Docker-native teams
+
+**HashiCorp Nomad:**
+- Simple, lightweight scheduler
+- Multi-platform (not just containers)
+- Single binary deployment
+- Best for: teams needing simplicity, multi-workload (containers + VMs + batch)
+
+**Amazon ECS:**
+- AWS-native container orchestration
+- Tightly integrated with AWS services (ALB, IAM, VPC)
+- Fargate provides serverless containers
+- Best for: AWS-focused teams, simpler than K8s
+
+### Orchestration Primitives
+
+**Deployment:** Desired state for a set of identical pods. Defines replicas, strategy, health checks.
+
+```mermaid
+flowchart LR
+    subgraph "Deployment"
+        D[Deployment Controller]
+        D --> RS1[ReplicaSet v1]
+        D --> RS2[ReplicaSet v2]
+        RS1 --> P1[Pod 1]
+        RS1 --> P2[Pod 2]
+        RS2 --> P3[Pod 3]
+        RS2 --> P4[Pod 4]
+    end
+```
+
+**Service:** Stable network endpoint for a set of pods. Load balances traffic across healthy pods.
+
+```mermaid
+flowchart LR
+    S[Service: my-api] --> P1[Pod: api-v1]
+    S --> P2[Pod: api-v1]
+    S --> P3[Pod: api-v1]
+    S --- LB[Load Balancer]
+    DNS[DNS my-api.svc.cluster.local] --> S
+```
+
+**Ingress:** External HTTP/HTTPS routing to services. Handles TLS termination, path-based routing, virtual hosts.
+
+```mermaid
+flowchart LR
+    Internet --> I[Ingress]
+    I --> S1[Service: web]
+    I --> S2[Service: api]
+    I --> S3[Service: admin]
+    S1 --> P1[Pods: web]
+    S2 --> P2[Pods: api]
+    S3 --> P3[Pods: admin]
+```
+
+### Scheduling
+
+The scheduler decides which node runs each pod:
+
+**Scheduling factors:**
+- Resource requests (CPU, memory)
+- Node affinity/anti-affinity
+- Taints and tolerations
+- Topology spread constraints
+- Pod priority and preemption
+
+```text
+# Node selector: schedule on specific nodes
+nodeSelector:
+  disktype: ssd
+
+# Affinity: schedule near API servers
+podAntiAffinity:
+  preferredDuringScheduling:
+    - podAffinityTerm:
+        labelSelector:
+          matchLabels:
+            app: cache
+        topologyKey: kubernetes.io/hostname
+```
+
+### Rolling Updates
+
+Strategy for updating pods without downtime:
+
+```yaml
+strategy:
+  type: RollingUpdate
+  rollingUpdate:
+    maxSurge: 1          # Extra pods during update
+    maxUnavailable: 0    # Keep all pods available
+```
+
+```mermaid
+flowchart LR
+    subgraph "Update Progress"
+        A[3 pods: v1.0] --> B[2 v1.0 + 1 v2.0]
+        B --> C[1 v1.0 + 2 v2.0]
+        C --> D[3 pods: v2.0]
+    end
+```
+
+### Self-Healing
+
+Orchestrators automatically maintain desired state:
+
+- **Pod failure:** If a pod crashes, the controller creates a replacement
+- **Node failure:** Pods on failed nodes are rescheduled to healthy nodes
+- **Readiness probe:** If a pod fails readiness checks, it's removed from service load balancer
+- **Liveness probe:** If a pod fails liveness checks, it's restarted
+
+### Autoscaling
+
+Horizontal Pod Autoscaler (HPA) scales replicas based on metrics:
+
+```yaml
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: myapp
+  minReplicas: 3
+  maxReplicas: 20
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 70
+```
+
+### Service Discovery
+
+**DNS-based (Kubernetes):**
+- Each service gets a DNS name: `service-name.namespace.svc.cluster.local`
+- Cluster DNS (CoreDNS) resolves names to service IPs
+- Environment variables: `SERVICE_NAME_SERVICE_HOST`, `SERVICE_NAME_SERVICE_PORT`
+
+**Key-value store (Swarm, Nomad):**
+- Services register with consul/etcd
+- Other services query the registry
+
+### Load Balancing
+
+**Internal load balancing:**
+- ClusterIP service distributes traffic to pods (round-robin by default)
+- Service mesh (Istio, Linkerd) provides advanced traffic management
+
+**External load balancing:**
+- LoadBalancer service provisions cloud LB
+- Ingress controller (Nginx, Traefik, HAProxy) routes HTTP traffic
+- NodePort exposes port on each node
 
 ---
 
 ## Examples
 
-> **One-Sentence Takeaway:** Container orchestration automates deployment, scaling, and management of containerized applications.
+### Example 1: Orchestration Configuration Generator
 
-### Example 1: Creating a Deployment
-Running three replicas of a web server.
-- **Step-by-step:**
-  1. Create `web-deployment.yaml`:
-     ```yaml
-     apiVersion: apps/v1
-     kind: Deployment
-     metadata:
-       name: nginx-deployment
-     spec:
-       replicas: 3
-       selector:
-         matchLabels:
-           app: nginx
-       template:
-         metadata:
-           labels:
-             app: nginx
-         spec:
-           containers:
-           - name: nginx
-             image: nginx:1.14.2
-             ports:
-             - containerPort: 80
-     ```
-  2. Apply: `kubectl apply -f web-deployment.yaml`
-- **Expected output:** Kubernetes creates 3 Pods running Nginx.
-- **What the example demonstrates:** Declarative management of application state.
+```typescript
+type Platform = 'kubernetes' | 'swarm' | 'nomad' | 'ecs';
 
-### Example 2: Exposing an App via a Service
-Making the Nginx deployment accessible to the outside world.
-- **Step-by-step:**
-  1. Create `web-service.yaml`:
-     ```yaml
-     apiVersion: v1
-     kind: Service
-     metadata:
-       name: nginx-service
-     spec:
-       selector:
-         app: nginx
-       ports:
-         - protocol: TCP
-           port: 80
-           targetPort: 80
-       type: LoadBalancer
-     ```
-  2. Apply: `kubectl apply -f web-service.yaml`
-- **Expected output:** An external IP address is assigned to the service.
-- **What the example demonstrates:** Service discovery and load balancing in a dynamic cluster.
+interface AppConfig {
+  name: string;
+  image: string;
+  replicas: number;
+  port: number;
+  cpu: string;
+  memory: string;
+  env: Record<string, string>;
+}
+
+class OrchestrationGenerator {
+  generate(config: AppConfig, platform: Platform): string {
+    switch (platform) {
+      case 'kubernetes': return this.generateK8s(config);
+      case 'swarm': return this.generateSwarm(config);
+      case 'nomad': return this.generateNomad(config);
+      case 'ecs': return this.generateECS(config);
+    }
+  }
+
+  private generateK8s(config: AppConfig): string {
+    return `apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${config.name}
+spec:
+  replicas: ${config.replicas}
+  selector:
+    matchLabels:
+      app: ${config.name}
+  template:
+    metadata:
+      labels:
+        app: ${config.name}
+    spec:
+      containers:
+        - name: ${config.name}
+          image: ${config.image}
+          ports:
+            - containerPort: ${config.port}
+          resources:
+            requests:
+              cpu: ${config.cpu}
+              memory: ${config.memory}
+            limits:
+              cpu: "${parseFloat(config.cpu) * 2}"
+              memory: "${parseInt(config.memory) * 2}M"
+          env:
+${Object.entries(config.env).map(([k, v]) => `            - name: ${k}
+              value: "${v}"`).join('\n')}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ${config.name}
+spec:
+  selector:
+    app: ${config.name}
+  ports:
+    - protocol: TCP
+      port: ${config.port}
+      targetPort: ${config.port}`;
+  }
+
+  private generateSwarm(config: AppConfig): string {
+    return `version: '3.8'
+
+services:
+  ${config.name}:
+    image: ${config.image}
+    deploy:
+      replicas: ${config.replicas}
+      resources:
+        limits:
+          cpus: '${parseFloat(config.cpu) * 2}'
+          memory: ${parseInt(config.memory) * 2}M
+        reservations:
+          cpus: '${config.cpu}'
+          memory: ${config.memory}M
+    ports:
+      - "${config.port}:${config.port}"
+    environment:
+${Object.entries(config.env).map(([k, v]) => `      ${k}: ${v}`).join('\n')}`;
+  }
+
+  private generateNomad(config: AppConfig): string {
+    return `job "${config.name}" {
+  datacenters = ["dc1"]
+  type = "service"
+
+  group "${config.name}" {
+    count = ${config.replicas}
+
+    task "${config.name}" {
+      driver = "docker"
+
+      config {
+        image = "${config.image}"
+        ports = ["http"]
+      }
+
+      resources {
+        cpu    = ${parseInt(config.cpu) * 1000}
+        memory = ${parseInt(config.memory)}
+      }
+
+      env {
+${Object.entries(config.env).map(([k, v]) => `        ${k} = "${v}"`).join('\n')}
+      }
+    }
+  }
+}`;
+  }
+
+  private generateECS(config: AppConfig): string {
+    return `{
+  "family": "${config.name}",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [{
+    "name": "${config.name}",
+    "image": "${config.image}",
+    "essential": true,
+    "portMappings": [{
+      "containerPort": ${config.port},
+      "protocol": "tcp"
+    }],
+    "environment": [
+${Object.entries(config.env).map(([k, v], i, a) => `      { "name": "${k}", "value": "${v}" }${i < a.length - 1 ? ',' : ''}`).join('\n')}
+    ],
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "/ecs/${config.name}",
+        "awslogs-region": "us-east-1"
+      }
+    }
+  }]
+}`;
+  }
+}
+
+const gen = new OrchestrationGenerator();
+const config: AppConfig = {
+  name: 'api-service', image: 'myapp:1.0.0', replicas: 3,
+  port: 3000, cpu: '0.25', memory: '256',
+  env: { NODE_ENV: 'production', DB_HOST: 'postgres.internal' },
+};
+console.log(gen.generate(config, 'kubernetes'));
+```
+
+### Example 2: Orchestration Simulator
+
+```typescript
+interface Node {
+  name: string;
+  cpu: number;
+  memory: number;
+  availableCpu: number;
+  availableMemory: number;
+  pods: Pod[];
+  healthy: boolean;
+}
+
+interface Pod {
+  name: string;
+  cpu: number;
+  memory: number;
+  node: string;
+  status: 'running' | 'pending' | 'failed' | 'terminated';
+  restartCount: number;
+}
+
+class OrchestrationSimulator {
+  private nodes: Map<string, Node> = new Map();
+  private pendingPods: Pod[] = [];
+
+  addNode(node: Node): void {
+    this.nodes.set(node.name, node);
+  }
+
+  schedulePod(pod: Pod): void {
+    const available = [...this.nodes.values()].filter(n =>
+      n.healthy && n.availableCpu >= pod.cpu && n.availableMemory >= pod.memory
+    );
+
+    if (available.length === 0) {
+      console.log(`⚠️  No node available for pod ${pod.name}, queuing...`);
+      this.pendingPods.push(pod);
+      pod.status = 'pending';
+      return;
+    }
+
+    // Simple bin-packing: schedule on node with most available resources
+    const target = available.sort((a, b) =>
+      (b.availableCpu + b.availableMemory) - (a.availableCpu + a.availableMemory)
+    )[0];
+
+    target.pods.push(pod);
+    target.availableCpu -= pod.cpu;
+    target.availableMemory -= pod.memory;
+    pod.node = target.name;
+    pod.status = 'running';
+    console.log(`📦 Scheduled ${pod.name} on ${target.name}`);
+  }
+
+  simulatePodFailure(podName: string): void {
+    for (const node of this.nodes.values()) {
+      const idx = node.pods.findIndex(p => p.name === podName);
+      if (idx >= 0) {
+        const pod = node.pods[idx];
+        node.pods.splice(idx, 1);
+        node.availableCpu += pod.cpu;
+        node.availableMemory += pod.memory;
+        pod.status = 'failed';
+        console.log(`💥 Pod ${podName} failed on ${node.name}`);
+
+        // Self-healing: reschedule
+        pod.status = 'terminated';
+        const newPod = { ...pod, name: `${pod.name}-restart-${pod.restartCount + 1}`, restartCount: pod.restartCount + 1 };
+        this.schedulePod(newPod);
+        return;
+      }
+    }
+  }
+
+  simulateNodeFailure(nodeName: string): void {
+    const node = this.nodes.get(nodeName);
+    if (!node) return;
+
+    node.healthy = false;
+    console.log(`💥 Node ${nodeName} failed`);
+
+    // Reschedule all pods from failed node
+    const podsToReschedule = [...node.pods];
+    node.pods = [];
+    node.availableCpu = 0;
+    node.availableMemory = 0;
+
+    for (const pod of podsToReschedule) {
+      pod.status = 'terminated';
+      const newPod = { ...pod, name: `${pod.name}-rescheduled`, restartCount: pod.restartCount };
+      this.schedulePod(newPod);
+    }
+  }
+
+  simulateScaleUp(podConfig: Omit<Pod, 'name'>, count: number): void {
+    for (let i = 0; i < count; i++) {
+      const pod: Pod = {
+        ...podConfig,
+        name: `scaled-pod-${i}`,
+        restartCount: 0,
+      };
+      this.schedulePod(pod);
+    }
+  }
+
+  getStatus(): void {
+    console.log('\n=== Cluster Status ===\n');
+    for (const node of this.nodes.values()) {
+      console.log(`Node: ${node.name} (${node.healthy ? '✅' : '❌'})`);
+      console.log(`  CPU: ${node.availableCpu}/${node.cpu}`);
+      console.log(`  Memory: ${node.availableMemory}/${node.memory}`);
+      console.log(`  Pods: ${node.pods.map(p => `${p.name}(${p.status})`).join(', ') || 'none'}`);
+      console.log('');
+    }
+    if (this.pendingPods.length > 0) {
+      console.log(`⚠️  Pending pods: ${this.pendingPods.length}`);
+    }
+  }
+}
+
+const sim = new OrchestrationSimulator();
+sim.addNode({ name: 'node-1', cpu: 4, memory: 8192, availableCpu: 4, availableMemory: 8192, pods: [], healthy: true });
+sim.addNode({ name: 'node-2', cpu: 4, memory: 8192, availableCpu: 4, availableMemory: 8192, pods: [], healthy: true });
+sim.addNode({ name: 'node-3', cpu: 2, memory: 4096, availableCpu: 2, availableMemory: 4096, pods: [], healthy: true });
+
+sim.schedulePod({ name: 'web-1', cpu: 0.5, memory: 256, node: '', status: 'running', restartCount: 0 });
+sim.schedulePod({ name: 'web-2', cpu: 0.5, memory: 256, node: '', status: 'running', restartCount: 0 });
+sim.schedulePod({ name: 'api-1', cpu: 1, memory: 512, node: '', status: 'running', restartCount: 0 });
+
+sim.simulateNodeFailure('node-3');
+sim.simulatePodFailure('web-1');
+sim.simulateScaleUp({ cpu: 0.5, memory: 256, node: '', status: 'running', restartCount: 0 }, 3);
+
+sim.getStatus();
+```
+
+---
+
+## Practical Takeaways
+
+1. **Start with simple orchestration.** Docker Swarm or ECS for small teams; Kubernetes for complex needs.
+2. **Always define resource requests and limits.** Unbounded containers destabilize the cluster.
+3. **Implement health checks.** Liveness and readiness probes enable self-healing.
+4. **Use rolling updates with health gates.** Never update all replicas at once.
+5. **Design for rescheduling.** Assume any pod can be terminated at any time.
+6. **Enable autoscaling.** Start with CPU-based, then add custom metrics.
+
+---
+
+## Chapter Quiz
+
+<details><summary>Question 1: What is the primary purpose of container orchestration?</summary>**A)** Building container images<br>**B)** Automating deployment, scaling, and management of containers<br>**C)** Storing container images<br>**D)** Writing Dockerfiles<br><br>**Answer: B)** Automating deployment, scaling, and management of containers</details>
+
+<details><summary>Question 2: Which orchestration platform is the industry standard for complex microservices?</summary>**A)** Docker Swarm<br>**B)** Kubernetes<br>**C)** Nomad<br>**D)** ECS<br><br>**Answer: B)** Kubernetes</details>
+
+<details><summary>Question 3: What does a liveness probe do?</summary>**A)** Checks if the application is ready to serve traffic<br>**B)** Checks if the container is still alive and restarts it if not<br>**C)** Checks disk space<br>**D)** Checks network connectivity<br><br>**Answer: B)** Checks if the container is still alive and restarts it if not</details>
+
+<details><summary>Question 4: What is the purpose of `maxSurge` in a rolling update?</summary>**A)** Maximum number of pods that can be unavailable<br>**B)** Maximum number of extra pods during update<br>**C)** Maximum number of updates per second<br>**D)** Maximum time for the update<br><br>**Answer: B)** Maximum number of extra pods during update</details>
+
+<details><summary>Question 5: How do pods typically discover service endpoints?</summary>**A)** Hardcoded IPs<br>**B)** DNS-based service discovery<br>**C)** Manual configuration<br>**D)** Broadcast messages<br><br>**Answer: B)** DNS-based service discovery</details>
 
 ---
 
 ## Summary
 
-## Concept Comparison Table
-
-| Concept | Description |
-|---------|-------------|
-| Pod | Smallest deployable unit (one or more containers) |
-| Deployment | Manages Pod replicas with rolling updates |
-| Service | Stable network endpoint for Pods |
-| ConfigMap | Non-sensitive configuration key-value store |
-| Secret | Sensitive data stored as base64-encoded values |
-
-## Quick Reference
-
-| Topic | Key Points |
-|-------|------------|
-| Control Plane | API Server, etcd, Scheduler, Controller Manager |
-| Worker Node | Kubelet, kube-proxy, container runtime |
-| Core Object | Pod, Deployment, Service, ConfigMap, Secret |
-| Self-Healing | Controllers reconcile desired vs actual state |
-| Service Types | ClusterIP, NodePort, LoadBalancer |
-
-## Cross-Application Matrix
-
-| Domain | Application |
-|--------|-------------|
-| Web | Scalable web application deployments |
-| Cloud | Multi-cloud container orchestration |
-| Enterprise | Microservice platform management |
-| ML | Distributed model training on K8s |
-
-## Chapter Quiz
-
-<details><summary>Question 1: What is the role of etcd in Kubernetes?</summary>**A)** Run containers<br>**B)** Store cluster state<br>**C)** Schedule pods<br>**D)** Load balance traffic<br><br>**Answer: B)** Store cluster state</details>
-
-<details><summary>Question 2: What is the smallest deployable unit in Kubernetes?</summary>**A)** Container<br>**B)** Pod<br>**C)** Service<br>**D)** Node<br><br>**Answer: B)** Pod</details>
-
-<details><summary>Question 3: Why use a Deployment instead of creating Pods directly?</summary>**A)** Deployments are faster<br>**B)** Deployments manage Pod lifecycle and self-healing<br>**C)** Pods cannot run Deployments<br>**D)** Deployments use less memory<br><br>**Answer: B)** Deployments manage Pod lifecycle and self-healing</details>
-
-
-## Summary
-
-- Kubernetes (K8s) is an open-source platform for orchestrating containerized workloads.
-- K8s provides a declarative way to define the "Desired State" of your infrastructure.
-- The Control Plane manages the cluster, while Worker Nodes run the actual containers.
-- Pods are ephemeral, but Services provide stable network identities.
-- Deployments ensure that the specified number of Pods are always running (self-healing).
+- Container orchestration automates deployment, scaling, networking, and management of containerized applications.
+- Kubernetes is the industry standard; Docker Swarm, Nomad, and ECS are alternatives for simpler use cases.
+- Orchestration primitives include deployments (replica management), services (networking), and ingress (external access).
+- Schedulers place containers on nodes based on resource requirements, constraints, and policies.
+- Self-healing automatically restarts failed pods and reschedules them on healthy nodes.
+- Rolling updates enable zero-downtime deployments with configurable surge and unavailable counts.
+- Autoscaling adjusts replica counts based on CPU, memory, or custom metrics.
+- Service discovery via DNS or key-value stores enables inter-service communication.
 
 ---
 
 ## Exercises
 
 ### Review Questions
-1. What is the role of the `etcd` component in Kubernetes?
-2. Why should you use a Deployment instead of creating Pods directly?
-3. What is the difference between a `ClusterIP` and a `LoadBalancer` service?
-4. Explain the concept of "Self-healing" in Kubernetes.
+1. What problems does container orchestration solve?
+2. Compare Kubernetes, Docker Swarm, and Nomad in terms of complexity and use cases.
+3. What is the difference between a liveness probe and a readiness probe?
+4. How does a rolling update strategy prevent downtime?
+5. How does an orchestrator handle a node failure?
 
 ### Application Problems
-1. Write a YAML manifest for a Pod that runs a Redis container.
-2. Scale your Nginx deployment from 3 to 10 replicas using the `kubectl scale` command.
-3. Update the image version in your deployment and observe the "Rolling Update" process.
+1. Design a Kubernetes deployment with rolling update strategy, health checks, and resource limits.
+2. Compare three orchestration platforms for a team of 5 deploying 10 microservices.
+3. Implement an autoscaling strategy based on CPU utilization.
+4. Create a service discovery and load balancing design for a multi-service application.
 
 ### Challenge Problem
-1. Imagine a scenario where a node in your cluster fails. Describe in detail how Kubernetes ensures that the applications running on that node remain available.
+1. Design a complete orchestration strategy for a 12-service microservices platform. Include: platform selection with justification (Kubernetes vs Swarm vs Nomad), deployment configuration with health checks, resource limits, and rolling updates, service discovery and ingress architecture, autoscaling policy (CPU, memory, custom metrics), disaster recovery (multi-AZ, pod anti-affinity, PDB), a strategy document comparing the chosen platform against alternatives with cost, complexity, and capability analysis.

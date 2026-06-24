@@ -13,6 +13,8 @@ After completing this chapter, you will be able to:
 - Compose functions and find inverses
 - Apply floor, ceiling, and other special functions
 - Analyze growth rates using big-O, big-$\Omega$, and big-$\Theta$ notation
+- Understand partial functions and recursive definitions
+- Distinguish between image and preimage
 
 ## Chapter at a Glance
 
@@ -24,6 +26,7 @@ After completing this chapter, you will be able to:
 | Inverse Functions | Exists only for bijections | $f^{-1}(y) = x$ iff $f(x) = y$; $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$ |
 | Floor & Ceiling | Round down and up to nearest integer | Essential for discrete math, algorithm analysis, and number theory |
 | Big-O / $\Omega$ / $\Theta$ | Classify function growth rates | Identify dominant term; constants and lower-order terms are ignored |
+| Partial Functions | May be undefined for some inputs | Useful in modeling non-total computations |
 
 ## Chapter Roadmap
 
@@ -46,6 +49,7 @@ flowchart LR
     L --> N[Big-Omega]
     L --> O[Big-Theta]
     A --> P[Partial Functions]
+    C --> Q[Recursive Functions]
 ```
 
 ## Theory
@@ -72,13 +76,36 @@ Equivalently: $f(A) = B$. The codomain equals the range.
 
 **Bijective (one-to-one correspondence):** Both injective and surjective.
 
-**Theorem 8.1.** A function is bijective if and only if it has an inverse (see below).
+**Theorem 8.1.** A function is bijective if and only if it has an inverse.
 
 **Theorem 8.2.** If $A$ and $B$ are finite sets with $|A| = |B|$, then $f: A \rightarrow B$ is injective iff it is surjective iff it is bijective.
 
+```typescript
+function isInjective<T, U>(domain: T[], f: (x: T) => U): boolean {
+  const images = new Set<U>();
+  for (const x of domain) {
+    const y = f(x);
+    if (images.has(y)) return false;
+    images.add(y);
+  }
+  return true;
+}
+
+function isSurjective<T, U>(
+  domain: T[],
+  codomain: U[],
+  f: (x: T) => U
+): boolean {
+  const images = new Set(domain.map(f));
+  return codomain.every(y => images.has(y));
+}
+
+const domain = [1, 2, 3, 4];
+console.log(isInjective(domain, x => x * 2)); // true
+console.log(isInjective(domain, x => Math.floor(x / 2))); // false
+```
+
 > **One-Sentence Takeaway:** Injective functions are one-to-one (distinct inputs map to distinct outputs); surjective functions hit every codomain element; bijective functions are both — and only bijections have inverses.
->
-> **Pro Tip:** For finite sets of equal size, injectivity automatically implies surjectivity and vice versa — a powerful shortcut for cardinality proofs.
 
 ### 8.3 Composition
 
@@ -86,6 +113,12 @@ If $f: A \rightarrow B$ and $g: B \rightarrow C$, then the **composition** $g \c
 $$(g \circ f)(a) = g(f(a))$$
 
 Composition is associative: $(h \circ g) \circ f = h \circ (g \circ f)$.
+
+**Theorem 8.3 (Composition and injectivity/surjectivity).**
+- If $f$ and $g$ are injective, then $g \circ f$ is injective.
+- If $f$ and $g$ are surjective, then $g \circ f$ is surjective.
+- If $g \circ f$ is injective, then $f$ is injective.
+- If $g \circ f$ is surjective, then $g$ is surjective.
 
 > **One-Sentence Takeaway:** Composition applies one function after another ($g \circ f$ means "first $f$, then $g$"); it is associative but not commutative.
 
@@ -107,13 +140,21 @@ Properties:
 
 **Ceiling function:** $\lceil x \rceil$ = the least integer $\geq x$.
 
+**Properties of floor and ceiling:**
+- $\lfloor x \rfloor \leq x < \lfloor x \rfloor + 1$
+- $\lceil x \rceil - 1 < x \leq \lceil x \rceil$
+- $\lfloor -x \rfloor = -\lceil x \rceil$
+- $\lfloor x \rfloor = n$ iff $n \leq x < n+1$
+- $\lceil x \rceil = n$ iff $n-1 < x \leq n$
+- $x - 1 < \lfloor x \rfloor \leq x \leq \lceil x \rceil < x + 1$
+
 **Factorial:** $n! = n \cdot (n-1) \cdots 2 \cdot 1$, with $0! = 1$.
 
 **Mod function:** $a \bmod m$ = the remainder when $a$ is divided by $m$ (integer $r$ with $0 \leq r < m$ and $a = qm + r$).
 
+**Stirling's approximation:** $n! \sim \sqrt{2\pi n}\,(n/e)^n$.
+
 > **One-Sentence Takeaway:** Floor rounds down toward $-\infty$, ceiling rounds up toward $+\infty$; factorial grows faster than any exponential.
->
-> **Warning:** Floor and ceiling behave counterintuitively for negative numbers: $\lfloor -2.3 \rfloor = -3$ (not $-2$). Always test with negatives.
 
 ### 8.6 Growth of Functions
 
@@ -128,9 +169,41 @@ Properties:
 **Common growth rates (ordered by growth):**
 $$1 \prec \log n \prec \sqrt{n} \prec n \prec n \log n \prec n^2 \prec n^3 \prec 2^n \prec n!$$
 
-**Theorem 8.3 (Sum rule).** If $f_1 = O(g_1)$ and $f_2 = O(g_2)$, then $f_1 + f_2 = O(\max(|g_1|, |g_2|))$.
+**Theorem 8.4 (Sum rule).** If $f_1 = O(g_1)$ and $f_2 = O(g_2)$, then $f_1 + f_2 = O(\max(|g_1|, |g_2|))$.
 
-**Theorem 8.4 (Product rule).** If $f_1 = O(g_1)$ and $f_2 = O(g_2)$, then $f_1 f_2 = O(g_1 g_2)$.
+**Theorem 8.5 (Product rule).** If $f_1 = O(g_1)$ and $f_2 = O(g_2)$, then $f_1 f_2 = O(g_1 g_2)$.
+
+**Theorem 8.6 (Polynomial dominance).** A polynomial of degree $d$ is $\Theta(n^d)$ — the highest-degree term dominates.
+
+```typescript
+function bigOClass(f: (n: number) => number): string {
+  const tests = [
+    { name: "O(1)", g: (n: number) => 1 },
+    { name: "O(log n)", g: (n: number) => Math.log2(n) },
+    { name: "O(n)", g: (n: number) => n },
+    { name: "O(n log n)", g: (n: number) => n * Math.log2(n) },
+    { name: "O(n²)", g: (n: number) => n * n },
+    { name: "O(2ⁿ)", g: (n: number) => Math.pow(2, n) },
+  ];
+
+  // Approximate check by ratio convergence
+  for (let n = 10; n < 1000; n *= 2) {
+    const ratio = f(n) / f(n / 2);
+    // pattern matching on growth factor
+  }
+  return "check dominant term";
+}
+
+// Verify O(n²) for a quadratic
+function isQuadraticGrowth(f: (n: number) => number): boolean {
+  const ratio1 = f(100) / f(50);
+  const ratio2 = f(200) / f(100);
+  // For n^2, doubling n quadruples the value
+  return Math.abs(ratio1 - 4) < 0.5 && Math.abs(ratio2 - 4) < 0.5;
+}
+
+console.log(isQuadraticGrowth(n => 3 * n * n + 2 * n + 1)); // roughly true
+```
 
 > **One-Sentence Takeaway:** Big-O provides an asymptotic upper bound, big-$\Omega$ a lower bound, and big-$\Theta$ a tight bound — the growth hierarchy is $1 \prec \log n \prec n \prec n \log n \prec n^2 \prec 2^n \prec n!$.
 
@@ -138,31 +211,18 @@ $$1 \prec \log n \prec \sqrt{n} \prec n \prec n \log n \prec n^2 \prec n^3 \prec
 
 A **partial function** $f: A \rightharpoonup B$ is a function defined on a subset of $A$. If $f$ is defined for all $a \in A$, it is a **total function**.
 
+**Example:** $f(x) = 1/x$ is a partial function from $\mathbb{R}$ to $\mathbb{R}$ (undefined at $x = 0$).
+
 > **One-Sentence Takeaway:** A partial function may be undefined for some domain elements; a total function is a partial function that is defined everywhere.
 
-## Examples
+### 8.8 Recursive Functions
 
-**Example 8.1** (Injective but not surjective). $f: \mathbb{Z} \rightarrow \mathbb{Z}$ with $f(n) = 2n$ is injective ($2n = 2m \implies n = m$) but not surjective (odd numbers have no preimage).
+Some functions are defined recursively (in terms of themselves):
 
-**Example 8.2** (Surjective but not injective). $f: \mathbb{Z} \rightarrow \{0,1\}$ with $f(n) = n \bmod 2$ is surjective (both 0 and 1 hit) but not injective ($f(2) = 0 = f(4)$).
+- $f(0) = 1$, $f(n) = n \cdot f(n-1)$ for $n > 0$ (factorial)
+- $F_1 = 1$, $F_2 = 1$, $F_n = F_{n-1} + F_{n-2}$ (Fibonacci)
 
-**Example 8.3** (Bijection). $f: \mathbb{Z} \rightarrow \mathbb{Z}$ with $f(n) = n + 1$ is bijective. Inverse: $f^{-1}(n) = n - 1$.
-
-**Example 8.4** (Composition). Let $f(n) = n^2$ and $g(n) = n + 1$, both $\mathbb{Z} \rightarrow \mathbb{Z}$. Then $(g \circ f)(n) = n^2 + 1$ and $(f \circ g)(n) = (n+1)^2 = n^2 + 2n + 1$. Composition is not commutative.
-
-**Example 8.5** (Floor and ceiling). $\lfloor 3.7 \rfloor = 3$, $\lceil 3.7 \rceil = 4$, $\lfloor -2.3 \rfloor = -3$, $\lceil -2.3 \rceil = -2$.
-
-**Example 8.6** (Big-O). Show $f(n) = 3n^2 + 2n + 5$ is $O(n^2)$.
-
-*Proof.* For $n \geq 1$, $3n^2 + 2n + 5 \leq 3n^2 + 2n^2 + 5n^2 = 10n^2$. So with $C = 10$, $k = 1$, $f(n) \leq C n^2$, hence $f(n) = O(n^2)$. $\square$
-
-**Example 8.7** (Big-Theta). Show $5n^3 + 10n$ is $\Theta(n^3)$.
-
-*Proof.* For $n \geq 1$: $5n^3 + 10n \leq 5n^3 + 10n^3 = 15n^3$, so $f(n) = O(n^3)$. Also $5n^3 + 10n \geq 5n^3$, so $f(n) = \Omega(n^3)$. Thus $f(n) = \Theta(n^3)$. $\square$
-
-**Example 8.8** (Inverse of bijection). Prove $f: \mathbb{R} \rightarrow \mathbb{R}$, $f(x) = 2x - 3$, is bijective and find its inverse.
-
-*Proof.* Injective: $2x - 3 = 2y - 3 \implies x = y$. Surjective: for any $y \in \mathbb{R}$, let $x = (y+3)/2$, then $f(x) = y$. Bijective. Inverse: $f^{-1}(y) = (y+3)/2$. $\square$
+Recursive definitions require base case(s) and a recursive rule that eventually reaches the base.
 
 ## Concept Comparison Table
 
@@ -174,13 +234,14 @@ A **partial function** $f: A \rightharpoonup B$ is a function defined on a subse
 | Floor | $\lfloor x \rfloor$ = greatest integer $\leq x$ | Rounds **down** toward $-\infty$ | Discrete math, algorithm analysis |
 | Ceiling | $\lceil x \rceil$ = least integer $\geq x$ | Rounds **up** toward $+\infty$ | Pagination, resource allocation |
 | Big-O | $f \leq Cg$ for large $x$ | **Upper** bound; not necessarily tight | Worst-case complexity analysis |
+| Big-Omega | $f \geq Cg$ for large $x$ | **Lower** bound | Best-case or minimum guarantee |
 
 ## Quick Reference
 
 | Asymptotic Notation | Definition | Meaning | Example |
 |--------------------|-----------|---------|---------|
-| $f = O(g)$ | $\|f(x)\| \leq C\|g(x)\|$ for $x > k$ | $f$ grows no faster than $g$ | $3n^2 + 2n = O(n^2)$ |
-| $f = \Omega(g)$ | $\|f(x)\| \geq C\|g(x)\|$ for $x > k$ | $f$ grows at least as fast as $g$ | $3n^2 + 2n = \Omega(n^2)$ |
+| $f = O(g)$ | $|f(x)| \leq C|g(x)|$ for $x > k$ | $f$ grows no faster than $g$ | $3n^2 + 2n = O(n^2)$ |
+| $f = \Omega(g)$ | $|f(x)| \geq C|g(x)|$ for $x > k$ | $f$ grows at least as fast as $g$ | $3n^2 + 2n = \Omega(n^2)$ |
 | $f = \Theta(g)$ | $f = O(g)$ and $f = \Omega(g)$ | $f$ grows at the same rate as $g$ | $3n^2 + 2n = \Theta(n^2)$ |
 | $f = o(g)$ | $\lim f/g = 0$ | $f$ grows strictly slower than $g$ | $n = o(n^2)$ |
 | $f \sim g$ | $\lim f/g = 1$ | $f$ and $g$ asymptotically equal | $n^2 + n \sim n^2$ |
@@ -216,7 +277,74 @@ A **partial function** $f: A \rightharpoonup B$ is a function defined on a subse
    - B) $-4$
    - C) $3$
    - D) $4$
-   <details><summary>Answer</summary>**B)** $-4$ — floor rounds **down** toward $-\infty$, so $-3.14$ goes to $-4$ (not $-3$).</details>
+   <details><summary>Answer</summary>**B)** $-4$ — floor rounds **down** toward $-\infty$, so $-3.14$ goes to $-4$.</details>
+
+4. If $g \circ f$ is injective, what can we conclude?
+   - A) Both $f$ and $g$ are injective
+   - B) $f$ is injective
+   - C) $g$ is injective
+   - D) $f$ is surjective
+   <details><summary>Answer</summary>**B)** If $g \circ f$ is injective, then $f$ must be injective (but $g$ may not be).</details>
+
+5. Stirling's approximation approximates:
+   - A) The floor function
+   - B) The factorial function
+   - C) The ceiling function
+   - D) The mod function
+   <details><summary>Answer</summary>**B)** $n! \sim \sqrt{2\pi n}(n/e)^n$ approximates the factorial.</details>
+
+## Examples
+
+**Example 8.1** (Injective but not surjective). $f: \mathbb{Z} \rightarrow \mathbb{Z}$ with $f(n) = 2n$ is injective ($2n = 2m \implies n = m$) but not surjective (odd numbers have no preimage).
+
+**Example 8.2** (Surjective but not injective). $f: \mathbb{Z} \rightarrow \{0,1\}$ with $f(n) = n \bmod 2$ is surjective (both 0 and 1 hit) but not injective ($f(2) = 0 = f(4)$).
+
+**Example 8.3** (Bijection). $f: \mathbb{Z} \rightarrow \mathbb{Z}$ with $f(n) = n + 1$ is bijective. Inverse: $f^{-1}(n) = n - 1$.
+
+**Example 8.4** (Composition). Let $f(n) = n^2$ and $g(n) = n + 1$, both $\mathbb{Z} \rightarrow \mathbb{Z}$. Then $(g \circ f)(n) = n^2 + 1$ and $(f \circ g)(n) = (n+1)^2 = n^2 + 2n + 1$. Composition is not commutative.
+
+**Example 8.5** (Floor and ceiling). $\lfloor 3.7 \rfloor = 3$, $\lceil 3.7 \rceil = 4$, $\lfloor -2.3 \rfloor = -3$, $\lceil -2.3 \rceil = -2$.
+
+**Example 8.6** (Big-O). Show $f(n) = 3n^2 + 2n + 5$ is $O(n^2)$.
+
+*Proof.* For $n \geq 1$, $3n^2 + 2n + 5 \leq 3n^2 + 2n^2 + 5n^2 = 10n^2$. So with $C = 10$, $k = 1$, $f(n) \leq C n^2$, hence $f(n) = O(n^2)$. $\square$
+
+**Example 8.7** (Big-Theta). Show $5n^3 + 10n$ is $\Theta(n^3)$.
+
+*Proof.* For $n \geq 1$: $5n^3 + 10n \leq 5n^3 + 10n^3 = 15n^3$, so $f(n) = O(n^3)$. Also $5n^3 + 10n \geq 5n^3$, so $f(n) = \Omega(n^3)$. Thus $f(n) = \Theta(n^3)$. $\square$
+
+**Example 8.8** (Inverse of bijection). Prove $f: \mathbb{R} \rightarrow \mathbb{R}$, $f(x) = 2x - 3$, is bijective and find its inverse.
+
+*Proof.* Injective: $2x - 3 = 2y - 3 \implies x = y$. Surjective: for any $y \in \mathbb{R}$, let $x = (y+3)/2$, then $f(x) = y$. Bijective. Inverse: $f^{-1}(y) = (y+3)/2$. $\square$
+
+**Example 8.9** (Recursive factorial).
+
+```typescript
+function factorial(n: number): number {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // 120
+```
+
+**Example 8.10** (Big-O in TypeScript — verifying growth). Show that $f(n) = 100n + 5$ is $O(n)$.
+
+```typescript
+function verifyLinearGrowth(f: (n: number) => number, nMax: number): boolean {
+  // Check if f(n) / n converges to a constant
+  const ratios: number[] = [];
+  for (let n = 1; n <= nMax; n++) {
+    ratios.push(f(n) / n);
+  }
+  // Variance should be small for large n
+  const mean = ratios.reduce((a, b) => a + b, 0) / ratios.length;
+  const variance = ratios.reduce((sum, r) => sum + (r - mean) ** 2, 0) / ratios.length;
+  return variance < 1; // heuristic
+}
+
+console.log(verifyLinearGrowth(n => 100 * n + 5, 1000)); // true
+```
 
 ## Summary
 
@@ -225,6 +353,18 @@ A **partial function** $f: A \rightharpoonup B$ is a function defined on a subse
 - Bijective functions have inverses; composition is associative but not commutative.
 - Floor/ceiling round to integers; growth rates are classified by big-O/$\Omega$/$\Theta$.
 - Common hierarchy: constant $\prec$ logarithmic $\prec$ linear $\prec$ polynomial $\prec$ exponential.
+
+## Practical Takeaways
+
+1. **Check injectivity via horizontal line test** — if any horizontal line hits the graph twice, not injective.
+2. **Surjectivity depends on codomain** — changing the codomain can make a non-surjective function surjective.
+3. **Inverse only for bijections** — only bijections have true inverses.
+4. **Big-O ignores constants** — $1000n$ is $O(n)$ just as much as $2n$ is.
+5. **Dominant term wins** — in a sum, only the fastest-growing term matters asymptotically.
+
+**Example 8.11** (Partial function composition). Let $f: \mathbb{R} \rightharpoonup \mathbb{R}$ with $f(x) = 1/x$ (undefined at 0) and $g(x) = x + 1$. Then $(g \circ f)(x) = 1/x + 1$, also undefined at $x = 0$.
+
+**Example 8.12** (Matrix of a function). For a finite function $f: \{1,\dots,m\} \rightarrow \{1,\dots,n\}$, represent as a $1 \times m$ vector: $[f(1), f(2), \dots, f(m)]$. Injectivity requires all distinct entries; surjectivity requires $\{1,\dots,n\} \subseteq \text{entries}$.
 
 ## Exercises
 
@@ -248,6 +388,14 @@ A **partial function** $f: A \rightharpoonup B$ is a function defined on a subse
 
 10. Let $f: A \rightarrow B$ and $g: B \rightarrow C$. Prove: if $g \circ f$ is injective, then $f$ is injective.
 
+11. Find $\lfloor \sqrt{1000} \rfloor$ without a calculator.
+
+12. Classify $f(n) = 2^n + n^{100}$ in big-O terms.
+
 ### Challenge Problem
 
-11. Let $f: A \rightarrow B$ and $g: B \rightarrow C$. Prove: $g \circ f$ is bijective if and only if $f$ is injective, $g$ is surjective, and the image of $f$ equals the domain of injectivity restriction of $g$. More directly: prove that if $g \circ f$ is bijective, then $f$ is injective and $g$ is surjective, but the converse (both injective and surjective individually) is not necessary â€” find a counterexample where $g \circ f$ is bijective but $f$ is not surjective.
+13. Let $f: A \rightarrow B$ and $g: B \rightarrow C$. Prove: $g \circ f$ is bijective if and only if $f$ is injective and $g$ is surjective, **and** the image of $f$ equals $B$. More precisely: if $g \circ f$ is bijective, then $f$ is injective and $g$ is surjective. Show by counterexample that the converse (both injective and surjective individually) is not sufficient — find an example where $f$ and $g$ are each bijective but $g \circ f$ is not (which actually cannot happen, so find an example where $g \circ f$ is bijective but $f$ is not surjective).
+
+14. Prove that $\lfloor 2x \rfloor = \lfloor x \rfloor + \lfloor x + 0.5 \rfloor$ for all real $x$.
+
+15. Estimate $30!$ using Stirling's approximation and compute the approximate number of decimal digits.

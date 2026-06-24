@@ -1,97 +1,142 @@
 # Chapter 6: Docker Compose
 
-> **Previous:** [Docker](./05-docker.md) | **Next:** [Container Orchestration with Kubernetes](./06-orchestration.md)
+> **Prev:** [Docker](./05-docker.md)
+> **Next:** [Orchestration](./06-orchestration.md)
+
+---
 
 ## Learning Objectives
 
-![Docker Compose Multi-Service Architecture](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch06-docker-compose.png)
+- Understand Docker Compose for defining and running multi-container applications.
+- Structure compose files with services, networks, and volumes.
+- Use environment variables, configs, and secrets in Compose.
+- Implement health checks, dependency ordering, and resource limits.
+- Apply Compose for development, testing, and production environments.
+- Extend and override compose files for different environments.
 
-By the end of this chapter, students will be able to:
-
-1. Define multi-service applications using Docker Compose with services, networks, and volumes
-2. Implement health checks and dependency management between services
-3. Use Compose profiles for environment-specific configurations
-4. Apply YAML extensions for DRY configuration
-5. Configure production-oriented Compose deployments with logging and secrets
-
+---
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Docker Compose Overview | Multi-container applications defined in YAML | Use for local dev and small-scale production |
-| Services | Image, build, ports, environment, volumes, health checks | Define each service with explicit health checks |
-| Networks | Default, custom bridge, internal networks | Use internal networks for database isolation |
-| Profiles | Conditional services per environment | Replace multiple compose files with profiles |
-| Production Patterns | Resource limits, logging, secrets, restart policies | Every production service needs resource constraints |
+| Compose File Structure | Services, networks, volumes | The three YAML top-level keys |
+| Service Configuration | Image, build, ports, env, volumes | Define each container's full configuration |
+| Networking | Automatic DNS resolution | Services communicate by service name |
+| Volume Management | Named volumes and bind mounts | Named volumes survive container restarts |
+| Environment Variables | Substitute variables in compose | Use `.env` file for environment-specific values |
+| Health Checks | Dependency ordering with depends_on | Wait for dependencies before starting |
+| Profiles | Group services for specific scenarios | Activate services with --profile flag |
+| Extends | Reuse common configurations | Avoid duplication across compose files |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Docker Compose] --> B[Services]
-    B --> C[Images]
-    B --> D[Networks]
-    B --> E[Volumes]
-    B --> F[Health Checks]
-    C & D & E & F --> G[Profiles]
-    G --> H[Production Deploy]
+    A[docker-compose.yml] --> B[Services]
+    A --> C[Networks]
+    A --> D[Volumes]
+    E[.env] --> A
+    B --> F[Container 1]
+    B --> G[Container 2]
+    B --> H[Container 3]
+    F --> C
+    G --> C
+    H --> C
+    F --> D
+    G --> D
+    H --> D
+    I[Health Checks] --> J[depends_on]
+    J --> K[Startup Order]
 ```
 
 ## Theory
 
-### 6.1 Docker Compose Overview
+### Compose File Structure
 
-> **Pro Tip:** Use depends_on with condition: service_healthy for proper startup ordering, not just simple depends.
+A Docker Compose file has three top-level keys:
 
-Docker Compose defines and runs multi-container Docker applications. A `compose.yaml` (or `docker-compose.yml`) file declares the application's services, networks, and volumes. A single command (`docker compose up`) creates and starts the entire application stack.
+```yaml
+version: '3.8'
 
-Compose is primarily a development and local-testing tool. In production, Docker Compose is suitable for small-scale deployments (single host, non-critical workloads). For multi-host, large-scale, or critical production deployments, Kubernetes or Docker Swarm is recommended.
+services:
+  # Define each container here
 
-Compose v2 is integrated into the Docker CLI as the `docker compose` command (replacing the standalone `docker-compose`).
+networks:
+  # Define custom networks here
 
-### 6.2 Services
+volumes:
+  # Define named volumes here
+```
 
-> **Remember:** Docker Compose is primarily for development. For multi-host production, use Kubernetes or Docker Swarm.
-
-Services are the core abstraction. Each service defines a container image, configuration, environment, and runtime behavior.
+### Service Configuration Reference
 
 ```yaml
 services:
-  api:
-    image: myapp-api:latest
-    build:
-      context: ./api
-      dockerfile: Dockerfile.dev
+  app:
+    build:                      # Build from Dockerfile
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - BUILD_ENV=production
+    image: myapp:latest         # Or use pre-built image
+    container_name: myapp
     ports:
-      - "8080:8080"
-    environment:
-      - NODE_ENV=development
-      - DB_HOST=db
-    env_file:
-      - ./config/api.env
+      - "3000:3000"             # host:container
+      - "443:443"
+    expose:
+      - "3000"                  # Internal port only
+    environment:                # Environment variables
+      NODE_ENV: production
+      DB_HOST: db
+    env_file: ./config/app.env # Or load from file
     volumes:
-      - ./api/src:/app/src:ro
+      - app_data:/app/data      # Named volume
+      - ./src:/app/src          # Bind mount (dev)
+      - /tmp:/tmp               # Host path
     depends_on:
-      db:
-        condition: service_healthy
+      - db
+      - redis
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    networks:
+      - frontend
+      - backend
+    dns:
+      - 8.8.8.8
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    user: "node"
+    working_dir: /app
+    command: node dist/index.js
+    entrypoint: ["/entrypoint.sh"]
+    labels:
+      - "app.name=myapp"
+      - "app.environment=production"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
 ```
 
-Each service can specify:
-- **image/build** â€” Use a pre-built image or build from source
-- **ports** â€” Publish container ports to the host
-- **environment / env_file** â€” Environment variables
-- **volumes** â€” Mount host paths or named volumes
-- **depends_on** â€” Startup and shutdown ordering
-- **healthcheck** â€” Container health verification
-- **restart** â€” Restart policy
-- **deploy** â€” Deployment configuration (replicas, resources, placement)
+### Networking in Compose
 
-### 6.3 Networks
-
-> **Warning:** Never hardcode secrets in compose files. Use secrets: with external files or Docker Swarm secrets.
-
-Compose creates a default network for the application stack. Custom networks enable service isolation and configuration:
+By default, Compose creates a single network for all services. Each service can reach others by service name:
 
 ```yaml
 networks:
@@ -101,230 +146,445 @@ networks:
       config:
         - subnet: 172.20.0.0/16
   backend:
-    internal: true
-
-services:
-  nginx:
-    networks:
-      - frontend
-  api:
-    networks:
-      - frontend
-      - backend
-  db:
-    networks:
-      - backend
+    driver: bridge
+    internal: true   # No external access
 ```
 
-The `internal: true` flag prevents external access to the network, useful for database networks.
+**DNS resolution:** Services resolve to their container IP by service name (e.g., `http://api:3000`).
 
-### 6.4 Volumes
+### Dependency Ordering
 
-Named volumes persist data across container restarts:
+`depends_on` controls startup order. With health checks, Compose waits for the dependency to be healthy:
 
 ```yaml
-volumes:
-  pgdata:
-    driver: local
-    driver_opts:
-      type: none
-      o: bind
-      device: /data/postgres
+services:
+  app:
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
 ```
 
-Volumes can use external storage drivers (NFS, cloud block storage) via `driver: rexray` or similar.
+### Profiles
 
-### 6.5 Health Checks
+Profiles enable conditional service activation:
 
-Health checks tell Compose when a container is ready to serve traffic:
+```yaml
+services:
+  app:
+    image: myapp
+    profiles: ["dev"]         # Only starts with --profile dev
 
+  db:
+    image: postgres:16
+    # No profile — always starts
+
+  mailhog:
+    image: mailhog/mailhog
+    profiles: ["dev", "test"]
+```
+
+Run: `docker compose --profile dev up`
+
+### Compose Override Files
+
+Split configuration across files for different environments:
+
+- `docker-compose.yml` — Base configuration
+- `docker-compose.override.yml` — Development overrides (auto-loaded)
+- `docker-compose.prod.yml` — Production overrides
+- `docker-compose.test.yml` — Test overrides
+
+```text
+# Development (override auto-loaded)
+docker compose up
+
+# Production
+docker compose -f docker-compose.yml -f docker-compose.prod.yml up
+
+# Test
+docker compose -f docker-compose.yml -f docker-compose.test.yml run test
+```
+
+### Environment Variables
+
+**Variable substitution in compose file:**
 ```yaml
 services:
   db:
     image: postgres:16
+    environment:
+      POSTGRES_DB: ${DB_NAME:-myapp}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+```
+
+**`.env` file (auto-loaded):**
+```text
+DB_NAME=myapp
+DB_USER=admin
+DB_PASSWORD=secret123
+```
+
+**Variable precedence:**
+1. Shell environment variables (highest)
+2. `.env` file
+3. Compose file defaults (`:-`)
+4. Empty (lowest)
+
+### Resource Management
+
+**CPU and memory limits:**
+```yaml
+services:
+  app:
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'       # 50% of one CPU
+          memory: 256M
+        reservations:
+          cpus: '0.25'
+          memory: 128M
+```
+
+---
+
+## Examples
+
+### Example 1: Full-Stack Application Compose File
+
+```yaml
+version: '3.8'
+
+name: myapp
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: myapp-db
+    environment:
+      POSTGRES_DB: ${DB_NAME:-myapp}
+      POSTGRES_USER: ${DB_USER:-myapp}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?error}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d
+    ports:
+      - "${DB_PORT:-5432}:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-myapp} -d ${DB_NAME:-myapp}"]
       interval: 5s
       timeout: 5s
       retries: 5
       start_period: 10s
-```
-
-Other services use `depends_on` with `condition: service_healthy` to wait for the database before starting. This replaces the unreliable `depends_on` without conditions.
-
-### 6.6 Profiles
-
-Profiles conditionally enable services based on the execution context:
-
-```yaml
-services:
-  db:
-    image: postgres:16
+    networks:
+      - backend
+    restart: unless-stopped
 
   redis:
-    image: redis:7
-
-  mailhog:
-    image: mailhog/mailhog
-    profiles:
-      - dev
-      - test
-
-  datadog-agent:
-    image: datadog/agent
-    profiles:
-      - monitoring
-```
-
-```bash
-# Start only core services
-docker compose up -d
-
-# Start core + dev tools
-docker compose --profile dev up -d
-
-# Start everything
-docker compose --profile '*' up -d
-```
-
-Profiles eliminate the need for multiple compose files for environment variation.
-
-### 6.7 Extensions
-
-YAML anchors and Compose extensions enable DRY configuration:
-
-```yaml
-x-logging: &logging
-  logging:
-    driver: json-file
-    options:
-      max-size: "10m"
-      max-file: "3"
-
-x-healthcheck: &healthcheck
-  healthcheck:
-    test: ["CMD", "curl", "-f", "http://localhost/health"]
-    interval: 30s
-    timeout: 10s
-    retries: 3
-
-services:
-  api:
-    image: myapp-api
-    <<: *logging
-    <<: *healthcheck
-```
-
-### 6.8 Docker Compose in Production
-
-For production single-host deployments:
-
-- Use `restart: unless-stopped` or `restart: always`
-- Configure logging drivers (`json-file` with rotation, `syslog`, `fluentd`)
-- Set resource limits (memory, CPU) on every service
-- Use secrets for sensitive data instead of environment variables
-- Specify `deploy.resources` for swarm deployments
-- Use `depends_on` with health checks for proper startup ordering
-- Implement graceful shutdown with `stop_grace_period`
-
-```yaml
-services:
-  api:
-    image: myapp:1.2.3
+    image: redis:7-alpine
+    container_name: myapp-redis
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD}
+    volumes:
+      - redisdata:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - backend
     restart: unless-stopped
-    logging:
-      driver: json-file
-      options:
-        max-size: "10m"
-        max-file: "3"
+
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+      target: production
+    container_name: myapp-api
+    environment:
+      NODE_ENV: production
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: ${DB_NAME:-myapp}
+      DB_USER: ${DB_USER:-myapp}
+      DB_PASSWORD: ${DB_PASSWORD}
+      REDIS_HOST: redis
+      REDIS_PASSWORD: ${REDIS_PASSWORD}
+      JWT_SECRET: ${JWT_SECRET}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    ports:
+      - "${API_PORT:-3000}:3000"
+    networks:
+      - frontend
+      - backend
+    restart: unless-stopped
     deploy:
       resources:
         limits:
-          cpus: "1.0"
-          memory: "512M"
-        reservations:
-          cpus: "0.5"
-          memory: "256M"
-    secrets:
-      - db_password
-    stop_grace_period: 30s
+          cpus: '0.5'
+          memory: 256M
 
-secrets:
-  db_password:
-    file: ./secrets/db_password.txt
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+      target: production
+    container_name: myapp-web
+    environment:
+      API_URL: http://api:3000
+    depends_on:
+      - api
+    ports:
+      - "${WEB_PORT:-80}:80"
+    networks:
+      - frontend
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    container_name: myapp-nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - web
+      - api
+    networks:
+      - frontend
+    restart: unless-stopped
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+    internal: true
+
+volumes:
+  pgdata:
+  redisdata:
 ```
 
-### 6.9 Docker Swarm Mode
+### Example 2: Development Compose Override
 
-Compose files (version 3+) are compatible with Docker Swarm for multi-host orchestration. The `docker stack deploy` command deploys a Compose file to a Swarm cluster. Swarm adds:
-- **Replicated and global services**
-- **Rolling updates** with configurable parallelism and delay
-- **Encrypted overlay networking**
-- **Load-balanced service discovery** via DNS
-- **Secret management** natively
+```yaml
+# docker-compose.override.yml
+version: '3.8'
 
-Swarm mode is simpler than Kubernetes but less capable for complex workloads.
+services:
+  api:
+    build:
+      target: development
+    volumes:
+      - ./api/src:/app/src:ro
+      - ./api/package.json:/app/package.json
+      - ./api/tsconfig.json:/app/tsconfig.json
+    environment:
+      NODE_ENV: development
+    command: npm run dev
 
-## Summary
+  web:
+    build:
+      target: development
+    volumes:
+      - ./web/src:/app/src:ro
+    environment:
+      NODE_ENV: development
+    command: npm run dev
 
-## Concept Comparison Table
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"    # Web UI
+      - "1025:1025"    # SMTP
+    networks:
+      - backend
 
-| Concept | Description |
-|---------|-------------|
-| Docker Compose | YAML-based multi-container app definition |
-| Docker Swarm | Multi-host orchestration using Compose files |
-| Service | Container definition with image, config, env |
-| Profile | Conditional service enablement per environment |
-| Health Check | Container readiness verification |
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - backend
+```
 
-## Quick Reference
+### Example 3: TypeScript Compose Validator
 
-| Topic | Key Points |
-|-------|------------|
-| Services | image, build, ports, environment, volumes |
-| Networks | driver(bridge/overlay), internal, ipam |
-| Volumes | driver, driver_opts, external |
-| Health Check | test, interval, timeout, retries |
-| Production | restart, logging, secrets, deploy.resources |
+```typescript
+import { readFileSync } from 'fs';
+import { parse } from 'yaml';
 
-## Cross-Application Matrix
+interface ComposeService {
+  image?: string;
+  build?: any;
+  ports?: string[];
+  environment?: Record<string, string>;
+  depends_on?: Record<string, { condition: string }> | string[];
+  volumes?: string[];
+  healthcheck?: any;
+  restart?: string;
+}
 
-| Domain | Application |
-|--------|-------------|
-| Web | Full-stack app with API, DB, and cache services |
-| Cloud | Local development mirroring cloud services |
-| Enterprise | Microservice stack for testing environments |
-| ML | Multiple service containers for model serving |
+interface ComposeFile {
+  version: string;
+  services: Record<string, ComposeService>;
+  networks?: Record<string, any>;
+  volumes?: Record<string, any>;
+}
+
+class ComposeValidator {
+  private errors: string[] = [];
+  private warnings: string[] = [];
+
+  validate(content: string): boolean {
+    let compose: ComposeFile;
+    try {
+      compose = parse(content) as ComposeFile;
+    } catch {
+      this.errors.push('Invalid YAML syntax');
+      return false;
+    }
+
+    if (!compose.services) {
+      this.errors.push('No services defined');
+      return false;
+    }
+
+    for (const [name, service] of Object.entries(compose.services)) {
+      this.validateService(name, service, compose.services);
+    }
+
+    this.printReport();
+    return this.errors.length === 0;
+  }
+
+  private validateService(
+    name: string,
+    service: ComposeService,
+    allServices: Record<string, ComposeService>,
+  ): void {
+    if (!service.image && !service.build) {
+      this.errors.push(`Service "${name}": must specify image or build`);
+    }
+
+    if (service.restart && !['no', 'always', 'on-failure', 'unless-stopped'].includes(service.restart)) {
+      this.errors.push(`Service "${name}": invalid restart policy "${service.restart}"`);
+    }
+
+    if (service.ports) {
+      for (const port of service.ports) {
+        const match = port.match(/^(\d+):(\d+)$/);
+        if (!match) {
+          this.warnings.push(`Service "${name}": port mapping "${port}" is unusual`);
+        }
+      }
+    }
+
+    if (service.depends_on) {
+      const deps = Array.isArray(service.depends_on)
+        ? service.depends_on
+        : Object.keys(service.depends_on);
+
+      for (const dep of deps) {
+        if (!allServices[dep]) {
+          this.errors.push(`Service "${name}": depends_on "${dep}" not defined`);
+        }
+      }
+    }
+
+    if (service.volumes) {
+      for (const vol of service.volumes) {
+        if (vol.includes(':') && !vol.startsWith('.') && !vol.startsWith('/')) {
+          this.warnings.push(`Service "${name}": volume "${vol}" uses a named volume — ensure it is declared`);
+        }
+      }
+    }
+  }
+
+  private printReport(): void {
+    if (this.errors.length > 0) {
+      console.log('❌ Validation failed:\n');
+      this.errors.forEach(e => console.log(`  ERROR: ${e}`));
+    }
+    if (this.warnings.length > 0) {
+      console.log('\n⚠️  Warnings:\n');
+      this.warnings.forEach(w => console.log(`  WARNING: ${w}`));
+    }
+    if (this.errors.length === 0) {
+      console.log('✅ Compose file is valid');
+    }
+  }
+}
+
+const validator = new ComposeValidator();
+const composeContent = readFileSync('docker-compose.yml', 'utf-8');
+validator.validate(composeContent);
+```
+
+---
+
+## Practical Takeaways
+
+1. **Use `.env` files for environment-specific values.** Never hardcode secrets in compose files.
+2. **Define health checks on all services.** `depends_on` with `condition: service_healthy` ensures reliable startup order.
+3. **Use override files for environments.** Base + override pattern avoids duplication.
+4. **Internal networks for backend services.** Use `internal: true` for database and cache networks.
+5. **Set resource limits.** Prevent containers from consuming all host resources.
+6. **Name your Compose project.** Use `name: myproject` for predictable container naming.
+
+---
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What is Docker Compose best suited for?</summary>**A)** Multi-host production deployments<br>**B)** Local development and testing<br>**C)** Database migrations<br>**D)** CI/CD pipelines<br><br>**Answer: B)** Local development and testing</details>
+<details><summary>Question 1: How do services in a Compose file resolve each other?</summary>**A)** By IP address only<br>**B)** By service name (DNS)<br>**C)** By container ID<br>**D)** By hostname in environment variables<br><br>**Answer: B)** By service name (DNS)</details>
 
-<details><summary>Question 2: What does depends_on: condition: service_healthy do?</summary>**A)** Starts services in random order<br>**B)** Waits for the service health check to pass<br>**C)** Ignores service health<br>**D)** Stops unhealthy services<br><br>**Answer: B)** Waits for the service health check to pass</details>
+<details><summary>Question 2: What is the purpose of `depends_on` with `condition: service_healthy`?</summary>**A)** To start services in alphabetical order<br>**B)** To wait until the dependency's health check passes before starting<br>**C)** To share health status across services<br>**D)** To restart unhealthy services<br><br>**Answer: B)** To wait until the dependency's health check passes before starting</details>
 
-<details><summary>Question 3: What problem do Compose profiles solve?</summary>**A)** Network performance<br>**B)** Environment-specific service configurations<br>**C)** Image layer caching<br>**D)** Volume backup<br><br>**Answer: B)** Environment-specific service configurations</details>
+<details><summary>Question 3: How do you load the `.env` file in Docker Compose?</summary>**A)** It must be explicitly loaded with `--env-file`<br>**B)** It is auto-loaded from the project directory<br>**C)** Environment variables cannot be used in Compose<br>**D)** It must be sourced in the shell first<br><br>**Answer: B)** It is auto-loaded from the project directory</details>
 
+<details><summary>Question 4: What does the `internal: true` network option do?</summary>**A)** Makes the network faster<br>**B)** Prevents external network access, providing isolation for backend services<br>**C)** Enables IPv6<br>**D)** Connects to the host network<br><br>**Answer: B)** Prevents external network access, providing isolation for backend services</details>
+
+<details><summary>Question 5: How do you start only specific services from a compose file?</summary>**A)** `docker compose start service1 service2`<br>**B)** `docker compose up --profile dev`<br>**C)** `docker compose run service1`<br>**D)** All of the above<br><br>**Answer: D)** All of the above</details>
+
+---
 
 ## Summary
 
-Docker Compose streamlines multi-service application management for development and small-scale production. Services define containers with images, ports, volumes, environment, and health checks. Networks isolate traffic between service tiers. Profiles enable environment-specific configurations in a single file. YAML extensions reduce configuration duplication. Production Compose deployments require resource limits, logging configuration, secrets management, and proper restart policies. Docker Swarm extends Compose to multi-host orchestration.
+- Docker Compose defines multi-container applications in YAML with services, networks, and volumes.
+- Services communicate by name within Compose networks.
+- `depends_on` with health check conditions ensures correct startup ordering.
+- Profiles enable conditional service activation for different scenarios.
+- Override files extend base configuration for environment-specific needs.
+- Environment variables are auto-loaded from `.env` files.
+- Resource limits prevent containers from exhausting host resources.
+- Health checks provide startup dependencies and runtime monitoring.
+
+---
 
 ## Exercises
 
 ### Review Questions
-
-1. Why is Docker Compose primarily recommended for development rather than large-scale production?
-2. How does `depends_on` with healthcheck conditions improve startup ordering?
-3. What problem do Compose profiles solve? Provide an example of profile usage.
-4. How do YAML anchors and extensions reduce duplication in compose files?
-5. Compare Docker Compose local volumes with Docker Swarm secrets for managing credentials.
+1. What are the three top-level keys in a Docker Compose file?
+2. How do you ensure a service waits for its database to be ready?
+3. What is the difference between a base compose file and an override file?
+4. How do profiles work in Docker Compose?
+5. How can you restrict a service to use at most 256MB of memory?
 
 ### Application Problems
-
-1. Create a Compose file for a web application stack: Nginx reverse proxy, Node.js API (with healthcheck), PostgreSQL database, and Redis cache. Configure isolated networks (frontend and backend), named volumes for database persistence, health checks with dependencies, and resource limits.
-2. Extend the above Compose file with profiles: `dev` (adds mailhog, pgadmin, and hot-reload volumes), `monitoring` (adds Prometheus and Grafana), and `test` (adds integration test runner). Demonstrate starting each profile combination.
-3. Configure a production-ready Compose file that limits log file size, uses secrets for database credentials, sets restart policies, and configures graceful shutdown timeouts.
+1. Write a Docker Compose file for a Node.js API with PostgreSQL and Redis, including health checks.
+2. Create a development override that enables hot reload and a debug port.
+3. Configure separate frontend and backend networks with different isolation levels.
+4. Implement a profile-based setup where only core services run in production, but dev tools (adminer, mailhog) are available with `--profile dev`.
 
 ### Challenge Problem
-
-Design a Docker Compose deployment for a multi-tier application that must support three environments (dev, staging, production) from a single configuration base. The application includes: React frontend (served via Nginx), Go API server (8 instances in production), PostgreSQL with replication (primary + read replica), Redis cluster, RabbitMQ message broker, and periodic background workers. Use profiles, extensions, and override files. Address secrets management, rolling updates, health checks, resource limits, logging, backup volumes for databases, and graceful shutdown. Document the startup ordering strategy and the production deploy command sequence.
+1. Design a complete Docker Compose architecture for a 6-service e-commerce platform including: an API gateway (Traefik/Nginx with SSL), a TypeScript API service with hot-reload in dev, PostgreSQL with automated backup init script, Redis for caching and session storage, a React frontend served through Nginx, a background worker for async job processing, a shared network architecture (public DMZ, internal App, private Data networks), a configurable profile system (minimal: api+db only, standard: everything, dev: +hot-reload+tools), and a CI validation step that lints and validates the compose files.

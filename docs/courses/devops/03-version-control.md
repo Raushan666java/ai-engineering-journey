@@ -1,165 +1,533 @@
-# Chapter 3: Version Control with Git
+# Chapter 3: Version Control
 
-> **Previous:** [Linux Fundamentals](./02-linux-basics.md) | **Next:** [Build Tools and Packaging](./03-build-tools.md)
+> **Prev:** [Advanced Git](./02-git.md)
+> **Next:** [Build Tools](./03-build-tools.md)
 
 ---
 
 ## Learning Objectives
 
-![Git Version Control Workflow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch03-git-workflow.png)
-
-- Explain the importance of version control in the DevOps lifecycle.
-- Master basic Git operations: init, add, commit, push, pull.
-- Manage branching and merging to support parallel development.
-- Implement common branching strategies like GitFlow and Trunk-Based Development.
-- Resolve merge conflicts efficiently.
+- Understand the purpose and benefits of version control systems (VCS).
+- Differentiate between centralized (CVCS) and distributed (DVCS) version control.
+- Master Git for collaborative development in DevOps pipelines.
+- Understand Git branching models, tagging, and release management.
+- Integrate version control with CI/CD and deployment automation.
+- Apply best practices for monorepos versus multi-repo strategies.
 
 ---
-
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Distributed Model | Full local copy of repository history | Offline work and faster operations |
-| Three States of Git | Working Directory, Staging Area, Repository | Stage changes deliberately for clean commit history |
-| Branching and Merging | Lightweight pointers for parallel development | Create branches for every feature or fix |
-| Branching Strategies | GitFlow vs Trunk-Based Development | Choose strategy based on release cadence |
-| Merge Conflicts | Occur when same file lines are modified | Communicate with team to minimize conflict frequency |
+| VCS Basics | Tracking changes over time | Every DevOps pipeline starts with version control |
+| Centralized vs Distributed | CVCS vs DVCS tradeoffs | DVCS suits distributed teams and CI/CD |
+| Git Workflow | Clone, branch, commit, push, pull request | Master the core loop before advanced features |
+| Branching Models | GitFlow, trunk-based, feature branches | Choose based on release cadence |
+| Tagging | Named snapshots for releases | Use semantic versioning for tags |
+| Monorepo vs Multi-Repo | Single repo vs many repos | Consider tooling and team autonomy |
+| VCS in CI/CD | Triggers, versioning, artifacts | Every commit should be a potential release |
+| Code Review | Pull request workflows | Automate checks in PR pipeline |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Distributed VCS] --> B[Git Three States]
-    B --> C[Working Dir]
-    B --> D[Staging Area]
-    B --> E[Repository]
-    C & D & E --> F[Branching]
-    F --> G[Merge]
-    F --> H[Rebase]
-    G & H --> I[Strategies]
+    A[Version Control] --> B[Centralized CVCS]
+    A --> C[Distributed DVCS]
+    B --> D[SVN, Perforce]
+    C --> E[Git, Mercurial]
+    E --> F[Git Workflow]
+    F --> G[Branching Models]
+    F --> H[Tagging]
+    F --> I[Pull Requests]
+    G --> J[CI/CD Integration]
+    H --> J
+    I --> J
+    J --> K[Release Automation]
 ```
 
 ## Theory
 
-### The Distributed Model
+### What is Version Control?
 
-> **Pro Tip:** Stage related changes separately using git add -p to keep commits atomic and focused.
-Unlike centralized version control systems, Git is distributed. Every developer has a full copy of the project history on their local machine. This enables offline work, faster operations, and robust redundancy.
+Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. It is the foundation of every DevOps practice:
 
-### The Three States of Git
+- **Collaboration:** Multiple developers can work on the same codebase without overwriting each other's work.
+- **History:** Every change is logged with who made it, when, and why.
+- **Branching:** Experiment with new features without affecting the stable codebase.
+- **Recovery:** Revert to any previous state if something breaks.
+- **Audit trail:** Know exactly what code is running in production and how it got there.
 
-> **Remember:** git status and git log --oneline --graph are your most frequently used commands.
-Git manages files in three main areas:
-1.  **Working Directory:** Where you modify files.
-2.  **Staging Area (Index):** Where you mark files to be included in your next commit.
-3.  **Repository (.git folder):** Where Git stores the metadata and object database for your project.
+### Centralized Version Control (CVCS)
 
-### Branching and Merging
+In CVCS (e.g., SVN, Perforce, CVS):
+- A single central server stores all versioned files
+- Clients check out files from the central repository
+- Most operations require network access to the server
 
-> **Warning:** Avoid committing large binary files, credentials, or generated artifacts to Git repositories.
-Branches are lightweight pointers to commits. They allow teams to work on features, fixes, and experiments in isolation.
-- **Merge:** Combining history from one branch into another.
-- **Rebase:** Re-applying commits on top of another base tip, creating a linear history.
+**Advantages:** Simple permission model, single source of truth, easier for non-technical users.
+**Disadvantages:** Single point of failure, requires network for all operations, slow diffs and history.
 
-### Branching Strategies
-- **GitFlow:** Uses permanent branches (`main`, `develop`) and short-lived branches (`feature`, `release`, `hotfix`). Good for scheduled releases.
-- **Trunk-Based Development:** All developers work on a single branch (`main`). Changes are small and integrated frequently. Essential for Continuous Integration.
+### Distributed Version Control (DVCS)
+
+In DVCS (e.g., Git, Mercurial):
+- Every developer has a complete copy of the repository
+- Most operations are local and fast
+- The server is just one of many copies
+
+**Advantages:** Full history offline, fast operations, multiple backups, flexible workflows.
+**Disadvantages:** Steeper learning curve, large initial clone, merging complexity.
+
+### Git Workflow in DevOps
+
+The core Git workflow maps directly to the DevOps pipeline:
+
+```mermaid
+flowchart LR
+    subgraph "Development"
+        A[Clone Repo] --> B[Create Branch]
+        B --> C[Make Changes]
+        C --> D[Stage Changes]
+        D --> E[Commit]
+    end
+    subgraph "Integration"
+        E --> F[Push Branch]
+        F --> G[Create PR]
+        G --> H[Code Review]
+        H --> I[Merge]
+    end
+    subgraph "Delivery"
+        I --> J[CI Pipeline Runs]
+        J --> K[Build & Test]
+        K --> L[Deploy]
+    end
+```
+
+### Branching Models
+
+**Feature Branching:** Every feature has its own branch. When complete, merge via PR.
+- Pros: Isolation, code review, parallel work
+- Cons: Long-lived branches cause integration pain
+
+**GitFlow:** Complex model with `main`, `develop`, `feature`, `release`, and `hotfix` branches.
+- Pros: Clear structure for versioned releases, hotfix isolation
+- Cons: Heavy ceremony, unsuitable for continuous delivery
+
+**Trunk-Based Development:** All work on short-lived branches off `main`, merged frequently.
+- Pros: Minimal merge conflicts, CI/CD friendly, simple
+- Cons: Requires feature flags for incomplete work, discipline
+
+```mermaid
+flowchart LR
+    subgraph "Trunk-Based"
+        T[main] --> T2[feature-branch]
+        T2 --> T
+        T --> T3[feature-branch-2]
+        T3 --> T
+    end
+    subgraph "GitFlow"
+        G[main] --> G2[develop]
+        G2 --> G3[feature/login]
+        G3 --> G2
+        G2 --> G4[release/v1.0]
+        G4 --> G
+        G --> G5[hotfix/1.0.1]
+        G5 --> G
+        G5 --> G2
+    end
+```
+
+### Monorepo vs Multi-Repo
+
+**Monorepo (single repository):**
+- Google, Microsoft, Meta use single massive repos
+- Atomic changes across teams
+- Shared build tooling and dependencies
+- Challenges: Scale, tooling required (Bazel, Nx)
+
+**Multi-Repo (many repositories):**
+- Each service/microservice has its own repo
+- Independent versioning and deployment
+- Team autonomy
+- Challenges: Cross-repo refactoring, dependency management
+
+**Hybrid (Polyrepo with workspaces):**
+- Related projects in a monorepo, unrelated in separate repos
+- Best of both worlds
+- Git submodules or workspace tools (npm workspaces, yarn workspaces)
+
+### Tagging and Release Management
+
+Tags create named, immutable references to specific commits:
+
+```text
+git tag v1.0.0                    # Lightweight tag
+git tag -a v1.0.0 -m "Release 1.0.0"  # Annotated tag
+git tag -s v1.0.0 -m "Signed release"  # GPG-signed tag
+git push origin v1.0.0            # Push tag
+git push --tags                   # Push all tags
+```
+
+**Semantic Versioning (SemVer):** `MAJOR.MINOR.PATCH`
+- MAJOR: Breaking changes
+- MINOR: New features, backward compatible
+- PATCH: Bug fixes, backward compatible
+
+### VCS and CI/CD Integration
+
+Every version control event can trigger CI/CD actions:
+
+| Event | CI/CD Action |
+|-------|-------------|
+| Push to feature branch | Run tests on the feature |
+| Create pull request | Run full test suite, code quality checks |
+| Merge to main | Build, test, deploy to staging |
+| Create release tag | Build, deploy to production |
+| Push to hotfix branch | Run regression tests, fast-track deployment |
+
+**Git tags in CI/CD:**
+```text
+# Extract version from git tag in CI pipeline
+VERSION=$(git describe --tags --always)
+echo "Building version: $VERSION"
+docker build -t myapp:$VERSION .
+docker push myapp:$VERSION
+```
+
+### Code Review Practices
+
+Effective code review in version control:
+
+1. **Small PRs** — Reviewers process small changes faster and catch more defects
+2. **Automated checks first** — Lint, style, tests run before human review
+3. **Clear description** — What changed and why
+4. **Review checklist** — Consistency, correctness, coverage, security
+5. **No blame** — Review the code, not the author
 
 ---
 
 ## Examples
 
-> **One-Sentence Takeaway:** Git is a distributed version control system where every developer has a full history copy.
+### Example 1: Version Management System
 
-### Example 1: Basic Workflow
-Starting a new project and making the first commit.
-- **Step-by-step:**
-  1. Initialize: `git init`
-  2. Add file: `git add README.md`
-  3. Commit: `git commit -m "Initial commit"`
-  4. Link remote: `git remote add origin <url>`
-  5. Push: `git push -u origin main`
-- **Expected output:** Files are tracked and uploaded to the remote server.
-- **What the example demonstrates:** The fundamental "add-commit-push" cycle.
+```typescript
+// Simulating version control operations
+type CommitId = string;
 
-### Example 2: Feature Branching and Merging
-Working on a new feature without affecting the main code.
-- **Step-by-step:**
-  1. Create branch: `git checkout -b feature/login`
-  2. Modify `auth.js` and commit.
-  3. Switch back: `git checkout main`
-  4. Merge feature: `git merge feature/login`
-  5. Delete branch: `git branch -d feature/login`
-- **Expected output:** The changes from the feature branch are now in `main`.
-- **What the example demonstrates:** Using branches to isolate work and integrate it safely.
+interface Commit {
+  id: CommitId;
+  message: string;
+  timestamp: Date;
+  author: string;
+  parent: CommitId | null;
+  files: Map<string, string>;
+}
+
+class VersionControlSystem {
+  private commits: Map<CommitId, Commit> = new Map();
+  private branches: Map<string, CommitId> = new Map();
+  private tags: Map<string, CommitId> = new Map();
+  private currentBranch: string = 'main';
+  private commitCounter: number = 0;
+
+  constructor() {
+    this.branches.set('main', '');
+  }
+
+  commit(message: string, author: string, files: Map<string, string>): CommitId {
+    const id = `c${++this.commitCounter}`;
+    const parent = this.branches.get(this.currentBranch) || null;
+    const commit: Commit = {
+      id,
+      message,
+      timestamp: new Date(),
+      author,
+      parent,
+      files: new Map(files),
+    };
+    this.commits.set(id, commit);
+    this.branches.set(this.currentBranch, id);
+    return id;
+  }
+
+  createBranch(name: string): void {
+    const currentHead = this.branches.get(this.currentBranch);
+    if (currentHead) this.branches.set(name, currentHead);
+  }
+
+  checkout(branch: string): void {
+    if (!this.branches.has(branch)) throw new Error(`Branch ${branch} not found`);
+    this.currentBranch = branch;
+  }
+
+  createTag(name: string): void {
+    const head = this.branches.get(this.currentBranch);
+    if (head) this.tags.set(name, head);
+  }
+
+  merge(sourceBranch: string): boolean {
+    const sourceHead = this.branches.get(sourceBranch);
+    const targetHead = this.branches.get(this.currentBranch);
+    if (!sourceHead || !targetHead) return false;
+
+    // Fast-forward check
+    let cursor: CommitId | null = sourceHead;
+    while (cursor) {
+      if (cursor === targetHead) {
+        this.branches.set(this.currentBranch, sourceHead);
+        return true;
+      }
+      cursor = this.commits.get(cursor)?.parent ?? null;
+    }
+
+    // Three-way merge: create merge commit
+    const id = `c${++this.commitCounter}`;
+    const mergeCommit: Commit = {
+      id,
+      message: `Merge branch '${sourceBranch}' into ${this.currentBranch}`,
+      timestamp: new Date(),
+      author: 'system',
+      parent: targetHead,
+      files: new Map(this.commits.get(sourceHead)!.files),
+    };
+    this.commits.set(id, mergeCommit);
+    this.branches.set(this.currentBranch, id);
+    return true;
+  }
+
+  getLog(branch?: string): Commit[] {
+    const log: Commit[] = [];
+    let cursor = this.branches.get(branch || this.currentBranch);
+    while (cursor) {
+      const commit = this.commits.get(cursor);
+      if (!commit) break;
+      log.push(commit);
+      cursor = commit.parent;
+    }
+    return log;
+  }
+}
+
+const vcs = new VersionControlSystem();
+vcs.commit('Initial commit', 'alice', new Map([['README.md', '# Project']]));
+vcs.createBranch('feature/x');
+vcs.checkout('feature/x');
+vcs.commit('Add feature X', 'bob', new Map([['README.md', '# Project\n## Feature X'], ['src/index.ts', '// feature']]));
+vcs.checkout('main');
+vcs.merge('feature/x');
+vcs.createTag('v1.0.0');
+
+vcs.getLog().forEach(c => console.log(`${c.id}: ${c.message} (${c.author})`));
+```
+
+### Example 2: Git Hooks for CI/CD
+
+```typescript
+// CI/CD integration with version control events
+interface HookEvent {
+  type: 'pre-commit' | 'pre-push' | 'post-receive' | 'post-merge';
+  data: Record<string, string>;
+}
+
+interface HookResult {
+  passed: boolean;
+  errors: string[];
+}
+
+class CICDIntegration {
+  async handleEvent(event: HookEvent): Promise<HookResult> {
+    switch (event.type) {
+      case 'pre-commit':
+        return this.runPreCommitChecks();
+      case 'pre-push':
+        return this.runPrePushChecks();
+      case 'post-receive':
+        return this.triggerCIPipeline(event.data);
+      case 'post-merge':
+        return this.triggerDeployment(event.data);
+    }
+  }
+
+  private async runPreCommitChecks(): Promise<HookResult> {
+    const errors: string[] = [];
+    // Check for debug statements
+    // Run linter
+    // Run formatter
+    // Check for secrets
+    return { passed: errors.length === 0, errors };
+  }
+
+  private async runPrePushChecks(): Promise<HookResult> {
+    const errors: string[] = [];
+    // Run full test suite
+    // Check branch naming convention
+    // Verify commit messages follow conventional commits
+    return { passed: errors.length === 0, errors };
+  }
+
+  private async triggerCIPipeline(data: Record<string, string>): Promise<HookResult> {
+    const { branch, ref } = data;
+    console.log(`Triggering CI pipeline for ${branch} (${ref})`);
+    // Build, test, package
+    return { passed: true, errors: [] };
+  }
+
+  private async triggerDeployment(data: Record<string, string>): Promise<HookResult> {
+    const { branch } = data;
+    if (branch === 'main') {
+      console.log('Deploying to staging...');
+    }
+    if (branch.startsWith('refs/tags/')) {
+      const version = branch.replace('refs/tags/', '');
+      console.log(`Releasing version ${version} to production...`);
+    }
+    return { passed: true, errors: [] };
+  }
+}
+```
+
+### Example 3: Automated Release Notes from Git History
+
+```typescript
+// Generate release notes from conventional commits
+interface CommitLog {
+  hash: string;
+  message: string;
+}
+
+interface ReleaseNotes {
+  version: string;
+  date: string;
+  features: string[];
+  fixes: string[];
+  breaking: string[];
+  other: string[];
+}
+
+class ReleaseNotesGenerator {
+  generate(commits: CommitLog[], version: string): ReleaseNotes {
+    const notes: ReleaseNotes = {
+      version,
+      date: new Date().toISOString().split('T')[0],
+      features: [],
+      fixes: [],
+      breaking: [],
+      other: [],
+    };
+
+    for (const commit of commits) {
+      const message = commit.message;
+
+      if (message.startsWith('feat')) {
+        notes.features.push(message.replace(/^feat(\(.+\))?:\s*/, ''));
+      } else if (message.startsWith('fix')) {
+        notes.fixes.push(message.replace(/^fix(\(.+\))?:\s*/, ''));
+      } else if (message.startsWith('BREAKING') || message.includes('!')){
+        notes.breaking.push(message.replace(/^.+(:\s*)?/, ''));
+      } else {
+        notes.other.push(message);
+      }
+    }
+
+    return notes;
+  }
+
+  formatMarkdown(notes: ReleaseNotes): string {
+    let md = `# v${notes.version} (${notes.date})\n\n`;
+
+    if (notes.breaking.length > 0) {
+      md += '## ⚠️ Breaking Changes\n\n';
+      notes.breaking.forEach(b => md += `- ${b}\n`);
+      md += '\n';
+    }
+
+    if (notes.features.length > 0) {
+      md += '## 🚀 Features\n\n';
+      notes.features.forEach(f => md += `- ${f}\n`);
+      md += '\n';
+    }
+
+    if (notes.fixes.length > 0) {
+      md += '## 🐛 Bug Fixes\n\n';
+      notes.fixes.forEach(f => md += `- ${f}\n`);
+      md += '\n';
+    }
+
+    if (notes.other.length > 0) {
+      md += '## 🔧 Maintenance\n\n';
+      notes.other.forEach(o => md += `- ${o}\n`);
+      md += '\n';
+    }
+
+    return md;
+  }
+}
+
+const commits: CommitLog[] = [
+  { hash: 'a1b2c3', message: 'feat(auth): add OAuth2 login support' },
+  { hash: 'd4e5f6', message: 'fix(db): resolve connection pool leak' },
+  { hash: 'g7h8i9', message: 'feat!: redesign API response format' },
+  { hash: 'j0k1l2', message: 'chore(deps): update lodash' },
+];
+
+const gen = new ReleaseNotesGenerator();
+const notes = gen.generate(commits, '2.0.0');
+console.log(gen.formatMarkdown(notes));
+```
+
+---
+
+## Practical Takeaways
+
+1. **Every commit should be a potential release.** Keep the main branch always deployable.
+2. **Use feature flags over long-lived branches.** Incomplete features behind flags integrate sooner.
+3. **Tag every release.** Tags provide a permanent reference for each production deployment.
+4. **Automate versioning.** Derive version from git tags, not manual files.
+5. **Write small, focused commits.** Each commit should represent one logical change.
+
+---
+
+## Chapter Quiz
+
+<details><summary>Question 1: What differentiates DVCS from CVCS?</summary>**A)** DVCS uses a central server; CVCS does not<br>**B)** DVCS gives every developer the full repository history<br>**C)** CVCS is faster than DVCS<br>**D)** DVCS cannot handle binary files<br><br>**Answer: B)** DVCS gives every developer the full repository history</details>
+
+<details><summary>Question 2: Which branching model is best suited for continuous delivery?</summary>**A)** GitFlow<br>**B)** Trunk-based development<br>**C)** Forking workflow<br>**D)** Release branching<br><br>**Answer: B)** Trunk-based development</details>
+
+<details><summary>Question 3: What does semantic versioning MAJOR.MINOR.PATCH represent?</summary>**A)** Breaking, new feature, bug fix<br>**B)** Bug fix, new feature, breaking<br>**C)** New feature, bug fix, breaking<br>**D)** Breaking, bug fix, new feature<br><br>**Answer: A)** Breaking, new feature, bug fix</details>
+
+<details><summary>Question 4: When should you use annotated tags over lightweight tags?</summary>**A)** Always<br>**B)** For release points requiring metadata<br>**C)** For temporary branches<br>**D)** Never<br><br>**Answer: B)** For release points requiring metadata</details>
+
+<details><summary>Question 5: What is the main advantage of a monorepo?</summary>**A)** Team autonomy<br>**B)** Independent versioning<br>**C)** Atomic cross-team changes<br>**D)** Faster builds<br><br>**Answer: C)** Atomic cross-team changes</details>
 
 ---
 
 ## Summary
 
-## Concept Comparison Table
-
-| Concept | Description |
-|---------|-------------|
-| DVCS | Full history on every developer machine |
-| CVCS | Centralized server with working copies |
-| Staging Area | Intermediate area for preparing commits |
-| Working Directory | Current file system state |
-| Repository | Stored object database in .git folder |
-
-## Quick Reference
-
-| Topic | Key Points |
-|-------|------------|
-| Basic Workflow | init, add, commit, push, pull |
-| Branching | checkout -b, merge, rebase, branch -d |
-| Three States | Working, Staging, Repository |
-| Strategies | GitFlow, Trunk-Based, GitHub Flow |
-| Conflict Resolution | Accept yours/theirs or manual merge |
-
-## Cross-Application Matrix
-
-| Domain | Application |
-|--------|-------------|
-| Web | Track website source code changes |
-| Cloud | GitOps with automated deployment from Git |
-| Enterprise | Multi-team collaboration with access control |
-| Embedded | Firmware version tracking |
-
-## Chapter Quiz
-
-<details><summary>Question 1: What are the three states of Git?</summary>**A)** Local, Remote, Branch<br>**B)** Working Directory, Staging Area, Repository<br>**C)** Dev, Test, Prod<br>**D)** Add, Commit, Push<br><br>**Answer: B)** Working Directory, Staging Area, Repository</details>
-
-<details><summary>Question 2: What is a key benefit of Git's distributed model?</summary>**A)** Requires constant internet connection<br>**B)** Every developer has full project history locally<br>**C)** Only one person can work at a time<br>**D)** No need for branching<br><br>**Answer: B)** Every developer has full project history locally</details>
-
-<details><summary>Question 3: Which branching strategy is ideal for Continuous Integration?</summary>**A)** GitFlow<br>**B)** Trunk-Based Development<br>**C)** Feature Branching only<br>**D)** Release Branching<br><br>**Answer: B)** Trunk-Based Development</details>
-
-
-## Summary
-
-- Version control is the "Single Source of Truth" for all DevOps automation.
-- Git is the industry standard distributed version control system.
-- Understanding the staging area is key to making clean, atomic commits.
-- Branching is cheap and should be used frequently to isolate changes.
-- Selecting the right branching strategy is critical for team velocity and release stability.
-- Git history should be treated as a professional record of the project's evolution.
+- Version control is the foundation of DevOps, tracking every change with full history and accountability.
+- DVCS (Git) provides offline capabilities, faster operations, and flexible workflows over CVCS.
+- Branching models range from simple (trunk-based) to complex (GitFlow), chosen based on release cadence.
+- Tags create immutable named references, ideally using semantic versioning.
+- CI/CD pipelines integrate with VCS through hooks and triggers for every event type.
+- Monorepos enable atomic changes; multi-repos provide team autonomy — choose based on context.
+- Code review via pull requests is essential for quality, with automated checks before human review.
 
 ---
 
 ## Exercises
 
 ### Review Questions
-1. What is the difference between `git pull` and `git fetch`?
-2. Why is the Staging Area useful?
-3. What is a "Fast-forward" merge?
-4. Explain the difference between `git merge` and `git rebase`.
+1. What are the advantages of DVCS over CVCS for DevOps teams?
+2. Why is trunk-based development recommended for CI/CD?
+3. How does semantic versioning differ from sequential numbering?
+4. What events in Git can trigger CI/CD pipeline runs?
+5. How do you create a signed annotated tag?
 
 ### Application Problems
-1. You accidentally committed a large binary file. How do you remove it from the latest commit before pushing?
-2. Create a `.gitignore` file for a Python project that ignores the `venv` folder and `__pycache__`.
-3. Simulate a merge conflict by editing the same line in two different branches and attempting to merge them.
+1. Design a Git workflow for a team of 10 developers deploying 50 times per day.
+2. Create a script that extracts the latest version from git tags and writes it to a file.
+3. Configure a pre-commit hook that prevents committing AWS access keys.
+4. Write a CI configuration that runs different pipelines based on branch patterns.
 
 ### Challenge Problem
-1. Describe how you would implement Trunk-Based Development in a team of 50 developers to ensure that the `main` branch is always in a deployable state.
+1. Design and implement a complete version control strategy for a microservices architecture with 15 services, 3 environments (dev/staging/prod), and daily deployments. Include: branch naming conventions, commit message format, release tagging strategy, CI/CD event mapping, rollback procedure using tags, monorepo vs multi-repo decision with justification, and automated changelog generation.

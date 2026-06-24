@@ -41,13 +41,92 @@ flowchart LR
     I --> J[Rollback]
 ```
 
+## Theory
+
+### 18.1 Capstone Design Philosophy
+
+The capstone project is the culminating assessment of DevOps mastery. Unlike individual chapter exercises that focus on isolated skills, the capstone requires integration across the entire toolchain. The design philosophy follows three principles:
+
+**Integration over Isolation** — Individual tools (Docker, Kubernetes, Terraform, Prometheus) are easy to learn in isolation. The capstone tests whether you can compose them into a working system where each component correctly interfaces with its neighbors.
+
+**Production Realism** — The pipeline must handle real-world concerns: zero-downtime deployments, automated rollback on failure, security scanning gates that block vulnerable code, and observability that provides actionable insight. Toy exercises are replaced with production-grade patterns.
+
+**Incremental Build** — The project is too large to build in one pass. The recommended sequence is: local Docker Compose → Terraform infrastructure → Kubernetes manifests → CI/CD pipeline → blue-green → observability → security. Each step builds on the previous one.
+
+### 18.2 Project Planning and Estimation
+
+DevOps engineers must estimate work and sequence dependencies. This capstone requires 40-60 hours of work depending on experience level:
+
+| Phase | Tasks | Estimated Time |
+|-------|-------|----------------|
+| 1. Setup & Local Dev | Repository structure, Docker Compose, Makefile | 4-6 hours |
+| 2. Infrastructure | Terraform VPC, K8s cluster, database, registry | 8-10 hours |
+| 3. Kubernetes | Deployments, Services, Ingress, HPA, PDB, NetworkPolicy | 8-10 hours |
+| 4. CI/CD Pipeline | GitHub Actions workflows, quality gates, artifact management | 8-10 hours |
+| 5. Blue-Green | Deployment color logic, service switch, monitoring window, rollback | 6-8 hours |
+| 6. Observability | Prometheus, Grafana, Loki, alerts, dashboards | 4-6 hours |
+| 7. Security | SAST, secret scanning, container scanning, DAST, SCA | 3-4 hours |
+| 8. Documentation | README, architecture diagram, runbook, presentation | 4-6 hours |
+
+**Dependency Graph:**
+```mermaid
+flowchart TD
+    A[Local Docker Compose] --> B[Infrastructure]
+    A --> C[Kubernetes Manifests]
+    B --> C
+    C --> D[CI/CD Pipeline]
+    D --> E[Security Integration]
+    D --> F[Blue-Green Deployment]
+    D --> G[Observability]
+    F --> H[Automated Rollback]
+    G --> I[Dashboards & Alerts]
+```
+
+### 18.3 Pipeline Stage Design
+
+Each pipeline stage has a specific purpose, trigger, and gate:
+
+**Stage 1 — Lint & Test (trigger: every push)**
+- Purpose: Catch code quality and logic errors early
+- Gate: Zero lint errors, 80%+ test coverage, zero SAST high findings
+- Fast feedback loop (< 5 minutes)
+
+**Stage 2 — Build & Scan (trigger: push to main)**
+- Purpose: Produce container images with verified security posture
+- Gate: No CRITICAL or HIGH vulnerabilities in container scan, SBOM generated
+- Artifact: Container images tagged with commit SHA
+
+**Stage 3 — Deploy Staging (trigger: successful Stage 2)**
+- Purpose: Validate deployment in production-like environment
+- Gate: Integration tests pass, DAST scan finds no HIGH findings
+- Contains: Database migrations run before app deploy
+
+**Stage 4 — Deploy Production (trigger: manual approval after Stage 3)**
+- Purpose: Zero-downtime release to production
+- Gate: Smoke tests pass, 10-minute monitoring window with error rate < 1%
+- Fallback: Automatic rollback if gate fails
+
+**Stage 5 — Observe (continuous)**
+- Purpose: Provide visibility into system health
+- Alert thresholds: Error rate > 1% for 5 minutes, p95 latency > 500ms, pod crash loops
+
+### 18.4 Risk Mitigation Strategies
+
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| Cloud costs exceed budget | Financial overrun | Use free tiers, destroy resources when not in use, set budget alerts |
+| Pipeline takes too long | Developer frustration | Parallelize stages, cache dependencies, optimize build |
+| Blue-green fails during deployment | Production outage | Manual rollback procedure documented and tested in staging |
+| Security scan false positives | Pipeline blocked | Vulnerability exceptions with documented justification in policy file |
+| Database migration conflicts | Data loss or corruption | Always run migrations in staging first, backup database before production deploy |
+
 ## Project Overview
 
 You will build a complete DevOps pipeline for a sample e-commerce application. The application consists of three microservices:
 
-- **Frontend** â€” React single-page application served by Nginx
-- **API** â€” Node.js or Go REST API service
-- **Database** â€” PostgreSQL
+- **Frontend** — React single-page application served by Nginx
+- **API** — Node.js or Go REST API service
+- **Database** — PostgreSQL
 
 The pipeline must automate build, test, security scan, deploy, monitor, and rollback. All infrastructure is provisioned through code. All operations are observable.
 

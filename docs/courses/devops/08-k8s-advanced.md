@@ -1,245 +1,118 @@
-# Chapter 8: Kubernetes Advanced
+# Chapter 8: Advanced Kubernetes
 
-> **Previous:** [Infrastructure as Code (IaC)](./07-infrastructure-as-code.md) | **Next:** [Configuration Management with Ansible](./08-configuration-management.md)
+> **Prev:** [Configuration Management](./08-configuration-management.md)
+> **Next:** [Continuous Delivery](./09-continuous-delivery.md)
+
+---
 
 ## Learning Objectives
 
-![Advanced Kubernetes Concepts](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/devops/ch08-k8s-advanced.png)
+- Master advanced Kubernetes concepts: RBAC, Network Policies, Custom Resource Definitions.
+- Implement service mesh (Istio/Linkerd) for traffic management and security.
+- Configure advanced scheduling: taints, tolerations, affinity, pod topology spread.
+- Manage cluster upgrades, backup, and disaster recovery.
+- Implement GitOps with ArgoCD for declarative deployments.
+- Optimize resource utilization with vertical pod autoscaling and cluster autoscaling.
 
-By the end of this chapter, students will be able to:
-
-1. Configure Ingress controllers for HTTP-based routing and TLS termination
-2. Implement persistent storage with PersistentVolumes, PersistentVolumeClaims, and StorageClasses
-3. Deploy stateful applications using StatefulSets with stable identities
-4. Configure autoscaling with Horizontal Pod Autoscaler
-5. Apply RBAC for fine-grained access control
-6. Package and deploy applications with Helm and Kustomize
-
+---
 
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
-| Ingress | HTTP/HTTPS routing with TLS termination | Use Ingress controller annotations for advanced routing |
-| Persistent Storage | PV, PVC, StorageClass for stateful workloads | Use CSI drivers for cloud provider storage integration |
-| StatefulSet | Stable identities for stateful applications | Use for databases requiring ordered deployment |
-| HPA | Automatic scaling based on CPU/memory/custom metrics | Set min/max replicas with target utilization |
-| RBAC | Fine-grained API access control | Use ClusterRole for cluster-wide permissions sparingly |
-| Helm & Kustomize | Package management and configuration customization | Helm for templating; Kustomize for overlays |
+| RBAC | Role-based access control | Define least-privilege roles per namespace |
+| Network Policies | Micro-segmentation | Default deny ingress, allow specific traffic |
+| CRDs | Extend Kubernetes API | Build custom controllers for domain-specific resources |
+| Service Mesh | Traffic management, security | Istio for observability, security, traffic control |
+| Advanced Scheduling | Pod placement control | Taints repel, tolerations allow, affinity attracts |
+| GitOps | Declarative Git-driven operations | ArgoCD syncs cluster state to Git repository |
+| Cluster Autoscaler | Node-level scaling | Scale nodes when pods are pending |
+| VPA | Vertical pod optimization | Right-size container resource requests |
 
 ## Chapter Roadmap
 
 ```mermaid
 flowchart LR
-    A[Ingress] --> B[Storage]
-    B --> C[PV/PVC/StorageClass]
-    A --> D[StatefulSet]
-    D --> E[DaemonSet]
-    A --> F[HPA]
-    A --> G[RBAC]
-    A --> H[Helm]
-    A --> I[Kustomize]
+    A[Advanced Kubernetes] --> B[RBAC]
+    A --> C[Network Policies]
+    A --> D[CRDs & Operators]
+    A --> E[Service Mesh]
+    A --> F[Advanced Scheduling]
+    A --> G[GitOps]
+    B --> H[Roles & ClusterRoles]
+    B --> I[RoleBindings]
+    C --> J[Pod Selectors]
+    C --> K[Ingress/Egress Rules]
+    D --> L[Custom Resources]
+    D --> M[Controllers]
+    E --> N[Istio]
+    E --> O[Linkerd]
+    G --> P[ArgoCD]
+    G --> Q[Flux]
 ```
 
 ## Theory
 
-### 8.1 Ingress
+### RBAC (Role-Based Access Control)
 
-> **Pro Tip:** Use Helm and Kustomize together: Helm for generic chart distribution, Kustomize for environment-specific overlays.
-
-Ingress exposes HTTP and HTTPS routes from outside the cluster to Services within the cluster. An Ingress controller (NGINX, Traefik, HAProxy, AWS ALB Ingress Controller) implements the Ingress specification.
+RBAC controls access to Kubernetes resources based on roles and bindings:
 
 ```yaml
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+# Namespace-scoped role
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
 metadata:
-  name: main-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-spec:
-  ingressClassName: nginx
-  tls:
-    - hosts:
-        - app.example.com
-      secretName: app-tls
-  rules:
-    - host: app.example.com
-      http:
-        paths:
-          - path: /api
-            pathType: Prefix
-            backend:
-              service:
-                name: api-service
-                port:
-                  number: 80
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: web-service
-                port:
-                  number: 80
-```
-
-Ingress supports path-based routing, host-based routing, TLS termination, sticky sessions, rate limiting, and custom error pages via annotations.
-
-### 8.2 Storage
-
-> **Warning:** StatefulSet rolling updates are ordered (N-1 to 0). This is slower than Deployment updates but maintains data integrity.
-
-Persistent storage in Kubernetes follows a three-layer model:
-
-**PersistentVolume (PV)** â€” Cluster resource provisioned by an administrator or dynamically provisioned via StorageClass. Represents a storage unit (NFS share, EBS volume, GCE PD).
-
-**PersistentVolumeClaim (PVC)** â€” Request for storage by a user. PVCs specify size, access mode (ReadWriteOnce, ReadOnlyMany, ReadWriteMany), and StorageClass.
-
-**StorageClass** â€” Defines storage provisioner parameters. Enables dynamic provisioning.
-
-```yaml
-apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: fast-ssd
-provisioner: ebs.csi.aws.com
-parameters:
-  type: io1
-  iopsPerGB: "10"
+  namespace: production
+  name: pod-reader
+rules:
+  - apiGroups: [""]
+    resources: ["pods", "pods/log"]
+    verbs: ["get", "watch", "list"]
 ---
-apiVersion: v1
-kind: PersistentVolumeClaim
+# Bind role to user/group
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
 metadata:
-  name: data-pvc
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 100Gi
-  storageClassName: fast-ssd
+  namespace: production
+  name: pod-reader-binding
+subjects:
+  - kind: User
+    name: developer@example.com
+    apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
 ```
 
-Container Storage Interface (CSI) drivers standardize storage plugin development. Major cloud providers and storage vendors provide CSI drivers.
-
-### 8.3 StatefulSet
-
-> **Remember:** NetworkPolicy is deny-by-default when applied. Always ensure essential traffic is explicitly allowed.
-
-StatefulSet manages stateful applications that require stable, unique network identities and persistent storage. Unlike Deployments, StatefulSet Pods are created and deleted in order, and each Pod gets a stable identity (`podname-0`, `podname-1`, etc.).
-
+**Cluster-scoped resources (ClusterRole, ClusterRoleBinding):**
 ```yaml
-apiVersion: apps/v1
-kind: StatefulSet
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
 metadata:
-  name: postgres
-spec:
-  serviceName: postgres
-  replicas: 3
-  selector:
-    matchLabels:
-      app: postgres
-  template:
-    metadata:
-      labels:
-        app: postgres
-    spec:
-      containers:
-        - name: postgres
-          image: postgres:16
-          volumeMounts:
-            - name: data
-              mountPath: /var/lib/postgresql/data
-  volumeClaimTemplates:
-    - metadata:
-        name: data
-      spec:
-        storageClassName: fast-ssd
-        accessModes: [ReadWriteOnce]
-        resources:
-          requests:
-            storage: 50Gi
+  name: cluster-admin-reader
+rules:
+  - apiGroups: [""]
+    resources: ["nodes", "namespaces", "persistentvolumes"]
+    verbs: ["get", "list", "watch"]
 ```
 
-Use StatefulSet for databases, message queues, key-value stores, and any workload requiring stable network identity or ordered deployment.
+**RBAC best practices:**
+- Use least privilege: grant only necessary verbs on specific resources
+- Prefer namespaced Roles over ClusterRoles when possible
+- Use Groups instead of individual Users for easier management
+- Regularly audit RBAC with `kubectl auth can-i --list`
 
-### 8.4 DaemonSet
+### Network Policies
 
-DaemonSet ensures that every node (or a subset) runs a copy of a Pod. Used for node-level infrastructure: log collectors (Fluentd), monitoring agents (Prometheus Node Exporter), service mesh proxies (Envoy), and CNI plugins.
-
-### 8.5 Job and CronJob
-
-Job manages pods that run to completion. CronJob creates Jobs on a schedule.
-
-```yaml
-apiVersion: batch/v1
-kind: CronJob
-metadata:
-  name: db-backup
-spec:
-  schedule: "0 2 * * *"
-  jobTemplate:
-    spec:
-      template:
-        spec:
-          containers:
-            - name: backup
-              image: backup-tool:1.0
-              command: ["backup", "--database=prod"]
-          restartPolicy: OnFailure
-```
-
-### 8.6 Horizontal Pod Autoscaler
-
-HPA automatically scales Pod replicas based on observed CPU, memory, or custom metrics.
-
-```yaml
-apiVersion: autoscaling/v2
-kind: HorizontalPodAutoscaler
-metadata:
-  name: api-hpa
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: api
-  minReplicas: 3
-  maxReplicas: 20
-  metrics:
-    - type: Resource
-      resource:
-        name: cpu
-        target:
-          type: Utilization
-          averageUtilization: 70
-```
-
-HPA requires a metrics source: metrics-server (resource metrics), Prometheus Adapter (custom metrics), or Kubernetes Events API.
-
-### 8.7 PodDisruptionBudget
-
-PDB limits the number of Pods that can be unavailable simultaneously during voluntary disruptions (node maintenance, cluster upgrades).
-
-```yaml
-apiVersion: policy/v1
-kind: PodDisruptionBudget
-metadata:
-  name: api-pdb
-spec:
-  minAvailable: 2
-  selector:
-    matchLabels:
-      app: api
-```
-
-### 8.8 NetworkPolicy
-
-NetworkPolicy controls traffic flow to and from Pods. By default, Pods accept all traffic. A NetworkPolicy applied to a Pod restricts its traffic.
+Network Policies control traffic between pods and external endpoints:
 
 ```yaml
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: api-policy
+  name: api-network-policy
+  namespace: production
 spec:
   podSelector:
     matchLabels:
@@ -252,157 +125,496 @@ spec:
         - podSelector:
             matchLabels:
               app: web
+        - namespaceSelector:
+            matchLabels:
+              purpose: monitoring
       ports:
-        - port: 8080
+        - protocol: TCP
+          port: 3000
   egress:
     - to:
         - podSelector:
             matchLabels:
               app: database
+      ports:
+        - protocol: TCP
+          port: 5432
+    - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+            except:
+              - 10.0.0.0/8
 ```
 
-### 8.9 RBAC
+**Network policy patterns:**
+- **Default deny ingress:** Block all incoming traffic, then allow specific
+- **Default deny egress:** Block all outgoing traffic, then allow specific
+- **Isolate environments:** Prevent dev pods from accessing prod databases
+- **Allow monitoring:** Let Prometheus scrape metrics from all namespaces
 
-RBAC controls access to Kubernetes API resources.
+### Custom Resource Definitions (CRDs)
+
+CRDs extend the Kubernetes API with custom resources:
 
 ```yaml
-apiVersion: v1
-kind: ServiceAccount
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
 metadata:
-  name: app-sa
-  namespace: production
+  name: databases.example.com
+spec:
+  group: example.com
+  names:
+    kind: Database
+    singular: database
+    plural: databases
+    shortNames:
+      - db
+  scope: Namespaced
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          required: ["spec"]
+          properties:
+            spec:
+              type: object
+              required: ["engine", "version", "size"]
+              properties:
+                engine:
+                  type: string
+                  enum: ["postgres", "mysql"]
+                version:
+                  type: string
+                size:
+                  type: string
+                replicas:
+                  type: integer
+                  minimum: 1
+                  maximum: 5
+```
+
+**Operators:** Controllers that watch CRDs and automate management:
+- Prometheus Operator (manage monitoring stacks)
+- PostgreSQL Operator (manage database clusters)
+- Cert-Manager (automate TLS certificates)
+- External Secrets Operator (sync secrets from external providers)
+
+### Service Mesh
+
+A service mesh provides a dedicated infrastructure layer for service-to-service communication:
+
+```mermaid
+flowchart LR
+    subgraph "Service A"
+        A[App] --- P1[sidecar-proxy]
+    end
+    subgraph "Service B"
+        B[App] --- P2[sidecar-proxy]
+    end
+    P1 -->|mTLS| P2
+    P1 --- CP[Control Plane]
+    P2 --- CP
+    CP --> CP1[Pilot]
+    CP --> CP2[Mixer]
+    CP --> CP3[Citadel]
+```
+
+**Istio features:**
+- **Traffic management:** Canary releases, traffic splitting, circuit breaking
+- **Security:** mTLS between services, fine-grained authorization
+- **Observability:** Metrics, traces, access logs automatically
+- **Resilience:** Retries, timeouts, circuit breakers, fault injection
+
+```yaml
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: myapp
+spec:
+  hosts:
+    - myapp
+  http:
+    - match:
+        - headers:
+            version:
+              exact: v2
+      route:
+        - destination:
+            host: myapp
+            subset: v2
+          weight: 100
+    - route:
+        - destination:
+            host: myapp
+            subset: v1
+          weight: 90
+        - destination:
+            host: myapp
+            subset: v2
+          weight: 10
+```
+
+### Advanced Scheduling
+
+**Taints and Tolerations:** Control which pods can run on which nodes:
+
+```yaml
+# Taint a node
+kubectl taint nodes node1 dedicated=gpu:NoSchedule
+
+# Pod toleration
+spec:
+  tolerations:
+    - key: "dedicated"
+      operator: "Equal"
+      value: "gpu"
+      effect: "NoSchedule"
+```
+
+**Node Affinity:** Attract pods to specific nodes:
+
+```yaml
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: topology.kubernetes.io/zone
+                operator: In
+                values:
+                  - us-east-1a
+      preferredDuringSchedulingIgnoredDuringExecution:
+        - weight: 100
+          preference:
+            matchExpressions:
+              - key: instance-type
+                operator: In
+                values:
+                  - m5.large
+```
+
+**Pod Anti-Affinity:** Spread pods across topology to avoid single points of failure:
+
+```yaml
+spec:
+  affinity:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+        - weight: 100
+          podAffinityTerm:
+            labelSelector:
+              matchLabels:
+                app: myapp
+            topologyKey: kubernetes.io/hostname
+```
+
+**Pod Topology Spread Constraints:** Evenly distribute pods across zones:
+
+```yaml
+spec:
+  topologySpreadConstraints:
+    - maxSkew: 1
+      topologyKey: topology.kubernetes.io/zone
+      whenUnsatisfiable: DoNotSchedule
+      labelSelector:
+        matchLabels:
+          app: myapp
+```
+
+### GitOps with ArgoCD
+
+GitOps uses Git as the single source of truth for declarative infrastructure:
+
+```mermaid
+flowchart LR
+    A[Git Repository] -->|ArgoCD Sync| B[Kubernetes Cluster]
+    C[Developer PR] --> A
+    B -->|Drift Detected| A
+    D[ArgoCD UI] --> B
+```
+
+**ArgoCD Application:**
+```yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myapp
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/org/myapp-config.git
+    targetRevision: HEAD
+    path: kubernetes/overlays/production
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: production
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+```
+
+**Benefits of GitOps:**
+- Declarative: desired state in Git, cluster converges to match
+- Version controlled: full audit trail for every change
+- Self-healing: drift detection auto-corrects cluster state
+- Pull-based: ArgoCD pulls from Git, no CI/CD credentials in cluster
+
+### Cluster Autoscaler
+
+Dynamically adjusts the number of nodes in the cluster:
+
+```yaml
+# AWS EKS managed node group with autoscaling
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: my-cluster
+  region: us-east-1
+managedNodeGroups:
+  - name: standard-workers
+    minSize: 2
+    maxSize: 20
+    desiredCapacity: 2
+    instanceType: m5.large
+    labels:
+      role: worker
+    tags:
+      Environment: production
+```
+
+### Vertical Pod Autoscaler (VPA)
+
+Recommends or automatically adjusts CPU/memory requests:
+
+```yaml
+apiVersion: autoscaling.k8s.io/v1
+kind: VerticalPodAutoscaler
+metadata:
+  name: myapp-vpa
+spec:
+  targetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: myapp
+  updatePolicy:
+    updateMode: Auto
+  resourcePolicy:
+    containerPolicies:
+      - containerName: '*'
+        minAllowed:
+          cpu: 100m
+          memory: 128Mi
+        maxAllowed:
+          cpu: 2
+          memory: 4Gi
+```
+
 ---
-apiVersion: rbac.authorization.k8s.io/v1
+
+## Examples
+
+### Example 1: RBAC Configuration Generator
+
+```typescript
+interface RBACRole {
+  name: string;
+  namespace: string;
+  rules: Array<{ apiGroups: string[]; resources: string[]; verbs: string[] }>;
+}
+
+interface RBACBinding {
+  name: string;
+  namespace: string;
+  role: string;
+  subjects: Array<{ kind: string; name: string }>;
+}
+
+class RBACManager {
+  generateRole(role: RBACRole): string {
+    return `apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
-  namespace: production
-  name: pod-reader
+  namespace: ${role.namespace}
+  name: ${role.name}
 rules:
-  - apiGroups: [""]
-    resources: ["pods", "pods/log"]
-    verbs: ["get", "list", "watch"]
----
-apiVersion: rbac.authorization.k8s.io/v1
+${role.rules.map(r => `  - apiGroups: [${r.apiGroups.map(g => `"${g}"`).join(', ')}]
+    resources: [${r.resources.map(res => `"${res}"`).join(', ')}]
+    verbs: [${r.verbs.map(v => `"${v}"`).join(', ')}]`).join('\n')}`;
+  }
+
+  generateBinding(binding: RBACBinding): string {
+    return `apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: read-pods
-  namespace: production
+  namespace: ${binding.namespace}
+  name: ${binding.name}
 subjects:
-  - kind: ServiceAccount
-    name: app-sa
-    namespace: production
+${binding.subjects.map(s => `  - kind: ${s.kind}
+    name: ${s.name}
+    apiGroup: rbac.authorization.k8s.io`).join('\n')}
 roleRef:
   kind: Role
-  name: pod-reader
-  apiGroup: rbac.authorization.k8s.io
+  name: ${binding.role}
+  apiGroup: rbac.authorization.k8s.io`;
+  }
+
+  auditPermissions(allowedActions: string[][]): string[] {
+    const violations: string[] = [];
+    for (const action of allowedActions) {
+      // Check if any action violates the least privilege principle
+      if (action.includes('*') && action.length > 3) {
+        violations.push(`Wildcard verb in: ${action.join(' ')}`);
+      }
+    }
+    return violations;
+  }
+}
+
+const rbac = new RBACManager();
+console.log(rbac.generateRole({
+  name: 'developer',
+  namespace: 'development',
+  rules: [
+    { apiGroups: [''], resources: ['pods', 'services', 'configmaps'], verbs: ['get', 'list', 'watch', 'create', 'update'] },
+    { apiGroups: ['apps'], resources: ['deployments'], verbs: ['get', 'list', 'watch'] },
+  ],
+}));
 ```
 
-ClusterRole and ClusterRoleBinding apply across all namespaces for cluster-wide permissions.
+### Example 2: Resource Optimizer
 
-### 8.10 Helm
+```typescript
+interface PodResourceUsage {
+  name: string;
+  namespace: string;
+  cpuRequest: number;
+  cpuActual: number;
+  memoryRequest: number;
+  memoryActual: number;
+  cpuUtilization: number;
+  memoryUtilization: number;
+}
 
-Helm is the Kubernetes package manager. Charts package Kubernetes manifests with templates and default values.
+class ResourceOptimizer {
+  constructor(private pods: PodResourceUsage[]) {}
 
-```bash
-# Install a chart
-helm install release-name ./chart
+  findOverprovisioned(threshold: number = 0.3): PodResourceUsage[] {
+    return this.pods.filter(p =>
+      p.cpuUtilization < threshold || p.memoryUtilization < threshold
+    );
+  }
 
-# Create a chart skeleton
-helm create mychart
+  findUnderprovisioned(cpuThreshold: number = 0.9, memThreshold: number = 0.9): PodResourceUsage[] {
+    return this.pods.filter(p =>
+      p.cpuUtilization > cpuThreshold || p.memoryUtilization > memThreshold
+    );
+  }
 
-# Template rendering (dry run)
-helm template ./mychart
+  calculateSavings(): { totalRequested: number; totalActual: number; potentialSavings: number } {
+    const totalRequested = this.pods.reduce((s, p) => s + p.cpuRequest, 0);
+    const totalActual = this.pods.reduce((s, p) => s + p.cpuActual, 0);
+    return {
+      totalRequested,
+      totalActual,
+      potentialSavings: (totalRequested - totalActual) / totalRequested,
+    };
+  }
 
-# Upgrade with values
-helm upgrade release-name ./chart -f values-prod.yaml
+  generateRightSizingRecommendations(): string {
+    let report = '# Resource Optimization Report\n\n';
+    const over = this.findOverprovisioned();
+
+    if (over.length === 0) {
+      report += '✅ No over-provisioned pods found\n\n';
+    } else {
+      report += `## Over-Provisioned Pods\n\n`;
+      report += '| Pod | Namespace | CPU Request | CPU Actual | Mem Request | Mem Actual\n';
+      report += '|-----|-----------|------------|------------|-------------|----------|\n';
+      for (const p of over) {
+        report += `| ${p.name} | ${p.namespace} | ${p.cpuRequest}m | ${p.cpuActual}m | ${p.memoryRequest}Mi | ${p.memoryActual}Mi\n`;
+      }
+    }
+
+    const savings = this.calculateSavings();
+    report += `\n## Potential Savings\n\n`;
+    report += `- Total CPU requested: ${savings.totalRequested}m\n`;
+    report += `- Total CPU used: ${savings.totalActual}m\n`;
+    report += `- Potential savings: ${(savings.potentialSavings * 100).toFixed(1)}%\n`;
+
+    return report;
+  }
+}
+
+const optimizer = new ResourceOptimizer([
+  { name: 'api-v1', namespace: 'prod', cpuRequest: 1000, cpuActual: 200, memoryRequest: 1024, memoryActual: 256, cpuUtilization: 0.2, memoryUtilization: 0.25 },
+  { name: 'web-v2', namespace: 'prod', cpuRequest: 500, cpuActual: 450, memoryRequest: 512, memoryActual: 480, cpuUtilization: 0.9, memoryUtilization: 0.94 },
+]);
+
+console.log(optimizer.generateRightSizingRecommendations());
 ```
 
-Helm templates use Go templating with Sprig function library. Charts support dependencies, hooks, subcharts, and testing.
+---
 
-### 8.11 Kustomize
+## Practical Takeaways
 
-Kustomize provides native Kubernetes configuration customization without templating. It overlays patches on base configurations.
+1. **RBAC: least privilege always.** Start with deny, grant specific access as needed.
+2. **Network Policies: default deny.** Block all traffic, then explicitly allow required paths.
+3. **GitOps: Git is the source of truth.** All changes to Kubernetes go through Git merges.
+4. **Use affinity rules to spread pods.** Anti-affinity prevents all replicas from running on one node.
+5. **Monitor resource utilization.** Use VPA recommendations to right-size requests.
+6. **Enable HPA and Cluster Autoscaler together.** HPA adds pods, CA adds nodes for pending pods.
 
-```yaml
-# kustomization.yaml
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-  - deployment.yaml
-  - service.yaml
-patches:
-  - path: prod-patch.yaml
-    target:
-      kind: Deployment
-      name: api
-```
-
-### 8.12 Operators and CRDs
-
-Operators extend Kubernetes with application-specific operational knowledge. A Custom Resource Definition (CRD) defines new resource types. An operator controller reconciles desired state with actual state for the custom resource.
-
-Popular operators: Prometheus Operator, PostgreSQL Operator (Crunchy, Zalando), Cert-Manager, External Secrets Operator.
-
-## Summary
-
-## Concept Comparison Table
-
-| Concept | Description |
-|---------|-------------|
-| Ingress | HTTP/HTTPS external routing controller |
-| StatefulSet | Ordered, stable Pods for stateful apps |
-| DaemonSet | One Pod per node for infrastructure agents |
-| HPA | Automatic Pod scaling based on metrics |
-| RBAC | Role-based API access control |
-
-## Quick Reference
-
-| Topic | Key Points |
-|-------|------------|
-| Ingress | Path/host routing, TLS, annotations |
-| Storage | PV(cluster), PVC(request), StorageClass(dynamic) |
-| Controllers | StatefulSet, DaemonSet, Job, CronJob |
-| HPA | CPU/memory target, min/max replicas |
-| RBAC | Role, RoleBinding, ClusterRole, ClusterRoleBinding |
-
-## Cross-Application Matrix
-
-| Domain | Application |
-|--------|-------------|
-| Web | TLS ingress for multiple web services |
-| Cloud | Cloud-specific CSI storage drivers |
-| Enterprise | RBAC for multi-team cluster access |
-| ML | GPU nodes via DaemonSet drivers |
+---
 
 ## Chapter Quiz
 
-<details><summary>Question 1: What does HPA stand for?</summary>**A)** High Performance Architecture<br>**B)** Horizontal Pod Autoscaler<br>**C)** Host Process Allocator<br>**D)** Hierarchical Pod Automation<br><br>**Answer: B)** Horizontal Pod Autoscaler</details>
+<details><summary>Question 1: What is the default behavior when a Network Policy selects a pod?</summary>**A)** All traffic is allowed<br>**B)** All traffic is denied except what the policy allows<br>**C)** Only HTTP traffic is allowed<br>**D)** Traffic is routed through a proxy<br><br>**Answer: B)** All traffic is denied except what the policy allows</details>
 
-<details><summary>Question 2: Why use StatefulSet instead of Deployment for databases?</summary>**A)** StatefulSets are faster<br>**B)** StatefulSets provide stable network identities<br>**C)** Deployments cannot run databases<br>**D)** StatefulSets use less memory<br><br>**Answer: B)** StatefulSets provide stable network identities</details>
+<details><summary>Question 2: What is the purpose of a ClusterRole?</summary>**A)** Manage pods in a namespace<br>**B)** Define permissions for cluster-scoped resources<br>**C)** Create network policies<br>**D)** Configure service meshes<br><br>**Answer: B)** Define permissions for cluster-scoped resources</details>
 
-<details><summary>Question 3: What does a RoleBinding grant?</summary>**A)** Network access to Pods<br>**B)** API permissions within a namespace<br>**C)** Storage access<br>**D)** Image pull access<br><br>**Answer: B)** API permissions within a namespace</details>
+<details><summary>Question 3: What is GitOps?</summary>**A)** Using Git for source control<br>**B)** Using Git as the single source of truth for cluster state<br>**C)** Git-based CI/CD<br>**D)** Git hooks for Kubernetes<br><br>**Answer: B)** Using Git as the single source of truth for cluster state</details>
 
+<details><summary>Question 4: What does a pod anti-affinity rule prevent?</summary>**A)** Pods from running on the same node<br>**B)** Pods from communicating with each other<br>**C)** Pods from being deleted<br>**D)** Pods from using too much CPU<br><br>**Answer: A)** Pods from running on the same node</details>
+
+<details><summary>Question 5: What is the role of a service mesh sidecar proxy?</summary>**A)** Serve HTTP requests<br>**B)** Handle inter-service communication with mTLS, routing, and observability<br>**C)** Store application data<br>**D)** Manage container images<br><br>**Answer: B)** Handle inter-service communication with mTLS, routing, and observability</details>
+
+---
 
 ## Summary
 
-Advanced Kubernetes topics address production requirements. Ingress provides sophisticated HTTP routing and TLS termination. Persistent storage is managed through PV/PVC/StorageClass abstractions. StatefulSets handle stateful workloads with stable identities. HPA enables dynamic scaling. RBAC secures API access. Helm and Kustomize package and customize deployments. Operators and CRDs extend Kubernetes for domain-specific automation. Together, these capabilities make Kubernetes suitable for production-grade workloads.
+- RBAC provides fine-grained access control through roles, bindings, and service accounts.
+- Network Policies implement micro-segmentation by controlling pod-to-pod traffic.
+- CRDs extend the Kubernetes API for custom resources managed by operators.
+- Service meshes (Istio, Linkerd) add traffic management, security, and observability.
+- Advanced scheduling uses taints, tolerations, affinity, and topology spread constraints.
+- GitOps with ArgoCD keeps cluster state synchronized with Git repositories.
+- Cluster Autoscaler dynamically adds/removes nodes; VPA adjusts resource requests.
+- Resource optimization reduces waste by right-sizing container requests.
+
+---
 
 ## Exercises
 
 ### Review Questions
-
-1. How does StatefulSet ordering differ from Deployment ordering during scaling and updates?
-2. What conditions would cause a Horizontal Pod Autoscaler to scale down?
-3. Compare Helm and Kustomize: what problem does each solve, and when would you use one over the other?
-4. How does a NetworkPolicy affect traffic to pods that are not matched by the policy selector?
-5. What components must a custom operator implement to manage a CRD?
+1. How does a Network Policy differ from a traditional firewall?
+2. What is the difference between a Role and a ClusterRole?
+3. How does GitOps ensure the cluster state matches the desired state in Git?
+4. What is the purpose of pod topology spread constraints?
+5. How do taints and tolerations work together?
 
 ### Application Problems
-
-1. Deploy a StatefulSet running PostgreSQL with persistent storage, a headless Service, and a ClusterIP Service for read replicas. Configure probes and resource limits.
-2. Create an NGINX Ingress controller deployment. Configure an Ingress resource that routes /api/* to one Service and /* to another, with TLS termination using a self-signed certificate stored as a Secret.
-3. Package the PostgreSQL StatefulSet as a Helm chart with configurable values for storage size, replica count, and image tag.
+1. Create RBAC configuration for developers (read-only on pods and logs) and CI/CD system (full access to deployments in CI namespace).
+2. Write a Network Policy that allows the monitoring namespace to scrape metrics from all namespaces.
+3. Configure a canary deployment using Istio VirtualService with 90/10 traffic split.
+4. Implement a GitOps workflow with ArgoCD that auto-syncs a Kubernetes overlay directory.
 
 ### Challenge Problem
-
-Design a production-ready database platform on Kubernetes for a SaaS application with the following requirements: PostgreSQL with automated backups (hourly snapshots, daily full), point-in-time recovery, automated failover (primary replica), monitoring with Prometheus, rotation of TLS certificates, and zero-downtime major version upgrades. Use Operators where appropriate. Define the architecture, CRDs, Helm chart structure, backup schedule, monitoring integration, and disaster recovery procedure. Include applicable YAML for the operator configuration and backup CronJob.
+1. Design a complete production-grade Kubernetes security and operations framework including: RBAC with least privilege roles for developers, operators, CI/CD, and auditors, Network Policies implementing default deny with explicit allow rules for each tier (web, api, db), a service mesh with mTLS and canary deployment support, multi-AZ pod distribution with topology spread constraints, GitOps setup with ArgoCD for declarative cluster management, Cluster Autoscaler and VPA for resource efficiency, and regular RBAC and security audits.

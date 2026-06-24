@@ -1,0 +1,432 @@
+# Chapter 1: Linear Algebra
+
+> **Previous:** None | **Next:** [Chapter 2: Single Variable Calculus](02-calculus-i.md)
+
+## Learning Objectives
+
+After completing this chapter, you will be able to:
+
+- Perform matrix operations including multiplication, inversion, and decomposition
+- Compute determinants and understand their geometric interpretation
+- Solve systems of linear equations using Gaussian elimination and matrix methods
+- Determine vector spaces, subspaces, bases, and dimensions
+- Find eigenvalues and eigenvectors and apply diagonalization
+- Understand the Singular Value Decomposition and its applications in data science
+- Apply linear algebra to problems in computer graphics, ML, and engineering
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|-------------------|
+| Matrices & Operations | Matrices are linear transformations represented as arrays | Matrix multiplication encodes composition of transformations |
+| Determinants | Determinant measures volume scaling factor | Zero determinant = singular matrix = information loss |
+| Linear Systems | $Ax = b$ has unique solution iff $A$ is invertible | Gaussian elimination is the workhorse algorithm |
+| Vector Spaces | A vector space is any set closed under linear combinations | Understanding dimensions reveals degrees of freedom |
+| Eigenvalues | $Av = \lambda v$: special vectors that don't change direction under $A$ | PCA, PageRank, quantum mechanics all use eigen-decomposition |
+| SVD | Any matrix factors as $A = U\Sigma V^T$ | The fundamental theorem of linear algebra for data science |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Matrices & Operations] --> B[Determinants]
+    B --> C[Linear Systems]
+    C --> D[Vector Spaces]
+    D --> E[Linear Transformations]
+    E --> F[Eigenvalues & Eigenvectors]
+    F --> G[Diagonalization]
+    G --> H[SVD & Applications]
+```
+
+## Theory
+
+### 1.1 Matrices and Matrix Operations
+
+A **matrix** is a rectangular array of numbers arranged in rows and columns. An $m \times n$ matrix has $m$ rows and $n$ columns:
+
+$$A = \begin{pmatrix} a_{11} & a_{12} & \cdots & a_{1n} \\ a_{21} & a_{22} & \cdots & a_{2n} \\ \vdots & \vdots & \ddots & \vdots \\ a_{m1} & a_{m2} & \cdots & a_{mn} \end{pmatrix}$$
+
+We denote the entry in row $i$, column $j$ as $a_{ij}$ or $A[i,j]$.
+
+**Matrix Addition:** Matrices of the same dimensions are added element-wise:
+
+$$(A + B)[i,j] = a_{ij} + b_{ij}$$
+
+**Scalar Multiplication:** Multiply every entry by the scalar:
+
+$$(cA)[i,j] = c \cdot a_{ij}$$
+
+**Matrix Multiplication:** $A$ ($m \times n$) times $B$ ($n \times p$) yields $C$ ($m \times p$):
+
+$$C[i,j] = \sum_{k=1}^{n} a_{ik} \cdot b_{kj}$$
+
+This is the **row-by-column** rule. Each entry $c_{ij}$ is the dot product of row $i$ of $A$ with column $j$ of $B$.
+
+**Properties of Matrix Multiplication:**
+
+- Associative: $(AB)C = A(BC)$
+- Distributive: $A(B + C) = AB + AC$
+- **Not commutative:** $AB \neq BA$ in general
+- Identity matrix $I$ satisfies $AI = IA = A$
+
+**Transpose:** The transpose $A^T$ swaps rows and columns: $(A^T)[i,j] = A[j,i]$
+
+**Trace:** The sum of diagonal entries: $\text{tr}(A) = \sum_{i=1}^{n} a_{ii}$
+
+**Special Matrices:**
+
+- **Symmetric:** $A = A^T$ (entries symmetric across diagonal)
+- **Skew-symmetric:** $A = -A^T$ (diagonal entries are zero)
+- **Orthogonal:** $A^T A = AA^T = I$ (columns are orthonormal vectors)
+- **Diagonal:** $a_{ij} = 0$ for $i \neq j$
+- **Upper triangular:** $a_{ij} = 0$ for $i > j$
+- **Lower triangular:** $a_{ij} = 0$ for $i < j$
+
+### 1.2 Determinants
+
+The determinant is a scalar value that encodes key properties of a square matrix.
+
+For a $2 \times 2$ matrix:
+
+$$\det\begin{pmatrix} a & b \\ c & d \end{pmatrix} = ad - bc$$
+
+For a $3 \times 3$ matrix (Sarrus' rule):
+
+$$\det\begin{pmatrix} a & b & c \\ d & e & f \\ g & h & i \end{pmatrix} = aei + bfg + cdh - ceg - bdi - afh$$
+
+For general $n \times n$, we use **cofactor expansion** along any row or column:
+
+$$\det(A) = \sum_{j=1}^{n} a_{ij} \cdot C_{ij}$$
+
+where $C_{ij} = (-1)^{i+j} \cdot M_{ij}$ is the **cofactor**, and $M_{ij}$ is the **minor** (determinant of the matrix obtained by deleting row $i$ and column $j$).
+
+**Properties of Determinants:**
+
+- $\det(AB) = \det(A) \cdot \det(B)$
+- $\det(A^T) = \det(A)$
+- $\det(A^{-1}) = 1/\det(A)$
+- Swapping two rows flips the sign of the determinant
+- Multiplying a row by scalar $c$ multiplies the determinant by $c$
+- Adding a multiple of one row to another does not change the determinant
+- $\det(A) = 0$ iff $A$ is singular (not invertible)
+
+**Geometric Interpretation:** The absolute value of the determinant equals the volume scaling factor of the linear transformation represented by the matrix. For a $2 \times 2$ matrix, $|\det(A)|$ is the area of the parallelogram formed by the column vectors. For $3 \times 3$, it's the volume of the parallelepiped.
+
+### 1.3 Systems of Linear Equations
+
+A system of $m$ linear equations in $n$ unknowns:
+
+$$a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n = b_1$$
+$$a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n = b_2$$
+$$\vdots$$
+$$a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n = b_m$$
+
+In matrix form: $Ax = b$, where $A$ is the $m \times n$ coefficient matrix, $x$ is the $n \times 1$ unknown vector, and $b$ is the $m \times 1$ right-hand side.
+
+**Gaussian Elimination** transforms the augmented matrix $[A|b]$ into row-echelon form using elementary row operations:
+
+1. **Swap** two rows
+2. **Multiply** a row by a nonzero scalar
+3. **Add** a multiple of one row to another
+
+**Rank:** The rank of a matrix is the number of linearly independent rows (or columns). A solution exists iff $\text{rank}(A) = \text{rank}([A|b])$.
+
+**Solution Classification:**
+- **Unique solution:** $\text{rank}(A) = \text{rank}([A|b]) = n$
+- **Infinite solutions:** $\text{rank}(A) = \text{rank}([A|b]) < n$
+- **No solution:** $\text{rank}(A) < \text{rank}([A|b])$
+
+**Matrix Inverse:** For a square matrix $A$, the inverse $A^{-1}$ satisfies $A A^{-1} = A^{-1} A = I$. The solution to $Ax = b$ is $x = A^{-1}b$.
+
+$A$ is invertible iff $\det(A) \neq 0$, equivalently $\text{rank}(A) = n$.
+
+### 1.4 Vector Spaces
+
+A **vector space** $V$ over a field $\mathbb{F}$ (typically $\mathbb{R}$ or $\mathbb{C}$) is a set closed under vector addition and scalar multiplication, satisfying eight axioms (associativity, commutativity, distributivity, existence of zero vector, existence of additive inverses, and closure under both operations).
+
+**Examples:**
+- $\mathbb{R}^n$: all n-tuples of real numbers
+- $\mathbb{R}^{m \times n}$: all $m \times n$ matrices
+- $\mathcal{P}_n$: all polynomials of degree $\leq n$
+- $C[a,b]$: all continuous functions on $[a,b]$
+
+**Subspace:** A subset $W \subseteq V$ that is itself a vector space. $W$ must contain the zero vector and be closed under addition and scalar multiplication.
+
+**Linear Independence:** Vectors $v_1, v_2, \ldots, v_k$ are linearly independent if:
+
+$$c_1 v_1 + c_2 v_2 + \cdots + c_k v_k = 0 \implies c_1 = c_2 = \cdots = c_k = 0$$
+
+**Basis:** A set of linearly independent vectors that span the entire space. Every vector in the space can be written uniquely as a linear combination of basis vectors.
+
+**Dimension:** The number of vectors in any basis of $V$.
+
+**Span:** The set of all linear combinations of a given set of vectors.
+
+**Column Space:** $\text{Col}(A)$ = span of columns of $A$. Dimension = rank.
+
+**Null Space:** $\text{Null}(A) = \{x : Ax = 0\}$. Dimension = $n - \text{rank}(A)$.
+
+**Rank-Nullity Theorem:** $\dim(\text{Col}(A)) + \dim(\text{Null}(A)) = n$
+
+### 1.5 Linear Transformations
+
+A **linear transformation** $T: V \to W$ satisfies:
+
+- $T(u + v) = T(u) + T(v)$ (additivity)
+- $T(cv) = cT(v)$ (homogeneity)
+
+Every linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ can be represented by an $m \times n$ matrix $A$ such that $T(x) = Ax$.
+
+**Kernel (Null Space):** $\ker(T) = \{v \in V : T(v) = 0\}$
+
+**Image (Range):** $\text{Im}(T) = \{T(v) : v \in V\}$
+
+**Change of Basis:** If $P$ is the change-of-basis matrix from basis $B$ to basis $B'$, then the matrix of transformation $T$ in basis $B'$ is $A' = P^{-1} A P$.
+
+**Orthogonal Projections:** The projection of vector $v$ onto subspace $W$ with orthonormal basis $\{u_1, \ldots, u_k\}$ is:
+
+$$\text{proj}_W(v) = \sum_{i=1}^{k} (v \cdot u_i) u_i$$
+
+### 1.6 Eigenvalues and Eigenvectors
+
+For a square matrix $A$, a nonzero vector $v$ is an **eigenvector** with **eigenvalue** $\lambda$ if:
+
+$$Av = \lambda v$$
+
+Geometrically, $v$ is a direction that $A$ only stretches (not rotates).
+
+**Characteristic Equation:** $\det(A - \lambda I) = 0$
+
+The roots of this polynomial are the eigenvalues.
+
+**Eigenspace:** The null space of $A - \lambda I$ — all eigenvectors corresponding to $\lambda$ (plus the zero vector).
+
+**Properties:**
+- $\text{tr}(A) = \sum \lambda_i$ (sum of eigenvalues)
+- $\det(A) = \prod \lambda_i$ (product of eigenvalues)
+- Eigenvalues of a triangular matrix are its diagonal entries
+- A symmetric matrix has all real eigenvalues and orthogonal eigenvectors
+
+**Diagonalization:** If $A$ has $n$ linearly independent eigenvectors, then:
+
+$$A = PDP^{-1}$$
+
+where $D$ is diagonal with eigenvalues on the diagonal and $P$ has eigenvectors as columns.
+
+**Use Cases:**
+- **Principal Component Analysis:** Eigenvectors of the covariance matrix give principal components
+- **PageRank:** The dominant eigenvector of the Google matrix gives page ranks
+- **Markov Chains:** Stationary distribution is the eigenvector with eigenvalue 1
+- **Differential Equations:** Decouple systems using diagonalization
+- **Spectral Clustering:** Graph Laplacian eigenvectors reveal cluster structure
+
+### 1.7 Singular Value Decomposition (SVD)
+
+The SVD is the factorization of ANY matrix $A$ (not just square):
+
+$$A_{m \times n} = U_{m \times m} \Sigma_{m \times n} V_{n \times n}^T$$
+
+where:
+- $U$ has orthonormal columns (left singular vectors)
+- $V$ has orthonormal columns (right singular vectors)
+- $\Sigma$ is diagonal with singular values $\sigma_1 \geq \sigma_2 \geq \cdots \geq \sigma_r > 0$
+
+**Connection to Eigenvalues:** $\sigma_i^2$ are eigenvalues of $A^T A$ and $AA^T$.
+
+**Low-Rank Approximation (Eckart-Young Theorem):** The best rank-$k$ approximation to $A$ is:
+
+$$A_k = \sum_{i=1}^{k} \sigma_i u_i v_i^T$$
+
+**Applications:**
+- **Dimensionality Reduction:** Truncate small singular values (like PCA)
+- **Compression:** Store only top-$k$ singular values and vectors
+- **Recommender Systems:** Matrix factorization via SVD
+- **Latent Semantic Analysis:** SVD on term-document matrices
+- **Pseudoinverse:** $A^+ = V\Sigma^+ U^T$ for solving least squares
+
+### 1.8 Matrix Calculus
+
+For ML and optimization, we need derivatives with respect to matrices and vectors.
+
+**Gradient:** For scalar function $f: \mathbb{R}^n \to \mathbb{R}$:
+
+$$\nabla f = \left(\frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \ldots, \frac{\partial f}{\partial x_n}\right)^T$$
+
+**Jacobian:** For vector function $f: \mathbb{R}^n \to \mathbb{R}^m$, the Jacobian $J$ has entries $J_{ij} = \frac{\partial f_i}{\partial x_j}$.
+
+**Hessian:** Matrix of second partial derivatives: $H_{ij} = \frac{\partial^2 f}{\partial x_i \partial x_j}$
+
+**Key Matrix Derivatives:**
+- $\frac{\partial}{\partial x} (a^T x) = a$
+- $\frac{\partial}{\partial x} (x^T A x) = (A + A^T)x$
+- $\frac{\partial}{\partial X} \text{tr}(AX) = A^T$
+- $\frac{\partial}{\partial X} \det(X) = \det(X) (X^{-1})^T$
+
+## Examples
+
+### Example 1: Matrix Operations and Solving Linear Systems
+
+Solve the system:
+
+$$2x + y - z = 8$$
+$$-3x - y + 2z = -11$$
+$$-2x + y + 2z = -3$$
+
+**Solution using Gaussian Elimination:**
+
+Write the augmented matrix:
+
+$$\begin{pmatrix} 2 & 1 & -1 & | & 8 \\ -3 & -1 & 2 & | & -11 \\ -2 & 1 & 2 & | & -3 \end{pmatrix}$$
+
+Step 1: Make $a_{11} = 1$ by dividing row 1 by 2:
+
+$$\begin{pmatrix} 1 & 0.5 & -0.5 & | & 4 \\ -3 & -1 & 2 & | & -11 \\ -2 & 1 & 2 & | & -3 \end{pmatrix}$$
+
+Step 2: Eliminate $x$ from rows 2 and 3:
+- $R_2 \leftarrow R_2 + 3R_1$: $\begin{pmatrix} 0 & 0.5 & 0.5 & | & 1 \end{pmatrix}$
+- $R_3 \leftarrow R_3 + 2R_1$: $\begin{pmatrix} 0 & 2 & 1 & | & 5 \end{pmatrix}$
+
+$$\begin{pmatrix} 1 & 0.5 & -0.5 & | & 4 \\ 0 & 0.5 & 0.5 & | & 1 \\ 0 & 2 & 1 & | & 5 \end{pmatrix}$$
+
+Step 3: Make $a_{22} = 1$ by multiplying row 2 by 2:
+
+$$\begin{pmatrix} 1 & 0.5 & -0.5 & | & 4 \\ 0 & 1 & 1 & | & 2 \\ 0 & 2 & 1 & | & 5 \end{pmatrix}$$
+
+Step 4: Eliminate $y$ from row 3: $R_3 \leftarrow R_3 - 2R_2$:
+
+$$\begin{pmatrix} 1 & 0.5 & -0.5 & | & 4 \\ 0 & 1 & 1 & | & 2 \\ 0 & 0 & -1 & | & 1 \end{pmatrix}$$
+
+Step 5: Back-substitution:
+- From $R_3$: $-z = 1 \implies z = -1$
+- From $R_2$: $y + z = 2 \implies y - 1 = 2 \implies y = 3$
+- From $R_1$: $x + 0.5y - 0.5z = 4 \implies x + 1.5 + 0.5 = 4 \implies x = 2$
+
+**Solution:** $x = 2, y = 3, z = -1$
+
+**Verification:** $2(2) + 3 - (-1) = 4 + 3 + 1 = 8 \checkmark$
+
+### Example 2: Computing Eigenvalues and Eigenvectors
+
+Find the eigenvalues and eigenvectors of $A = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}$
+
+**Step 1:** Set up characteristic equation:
+
+$$\det(A - \lambda I) = \det\begin{pmatrix} 4-\lambda & 1 \\ 2 & 3-\lambda \end{pmatrix} = 0$$
+
+$$(4-\lambda)(3-\lambda) - 2 = 0$$
+$$12 - 7\lambda + \lambda^2 - 2 = 0$$
+$$\lambda^2 - 7\lambda + 10 = 0$$
+$$(\lambda - 5)(\lambda - 2) = 0$$
+
+**Eigenvalues:** $\lambda_1 = 5$, $\lambda_2 = 2$
+
+**Step 2:** Find eigenvector for $\lambda_1 = 5$:
+
+$$(A - 5I)v = 0 \implies \begin{pmatrix} -1 & 1 \\ 2 & -2 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}$$
+
+$$-v_1 + v_2 = 0 \implies v_1 = v_2$$
+
+So $v_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix}$ (any scalar multiple works).
+
+**Step 3:** Find eigenvector for $\lambda_2 = 2$:
+
+$$(A - 2I)v = 0 \implies \begin{pmatrix} 2 & 1 \\ 2 & 1 \end{pmatrix} \begin{pmatrix} v_1 \\ v_2 \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}$$
+
+$$2v_1 + v_2 = 0 \implies v_2 = -2v_1$$
+
+So $v_2 = \begin{pmatrix} 1 \\ -2 \end{pmatrix}$.
+
+**Verification:** $A \begin{pmatrix} 1 \\ 1 \end{pmatrix} = \begin{pmatrix} 5 \\ 5 \end{pmatrix} = 5 \begin{pmatrix} 1 \\ 1 \end{pmatrix} \checkmark$
+
+### Example 3: SVD for Dimensionality Reduction
+
+Given matrix $A = \begin{pmatrix} 3 & 1 & 1 \\ -1 & 3 & 1 \end{pmatrix}$, find its SVD and rank-1 approximation.
+
+**Step 1:** Compute $A^T A$:
+
+$$A^T A = \begin{pmatrix} 3 & -1 \\ 1 & 3 \\ 1 & 1 \end{pmatrix} \begin{pmatrix} 3 & 1 & 1 \\ -1 & 3 & 1 \end{pmatrix} = \begin{pmatrix} 10 & 0 & 2 \\ 0 & 10 & 4 \\ 2 & 4 & 2 \end{pmatrix}$$
+
+**Step 2:** Find eigenvalues of $A^T A$:
+
+$$\det(A^T A - \lambda I) = 0$$
+
+The characteristic polynomial is $-\lambda^3 + 22\lambda^2 - 120\lambda = 0$ with roots $\lambda = 12, 10, 0$.
+
+**Step 3:** Singular values are $\sigma_i = \sqrt{\lambda_i}$: $\sigma_1 = \sqrt{12} \approx 3.46$, $\sigma_2 = \sqrt{10} \approx 3.16$, $\sigma_3 = 0$.
+
+**Step 4:** Rank-1 approximation:
+
+$$A_1 = \sigma_1 u_1 v_1^T$$
+
+This captures the dominant pattern in the data. For a data science application, if $A$ represents 2 data points in 3D space, the rank-1 approximation finds the best 1D subspace (line) that captures the most variance.
+
+### Example 4: Gram-Schmidt Orthogonalization
+
+Find an orthonormal basis for the subspace spanned by $v_1 = \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}$ and $v_2 = \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix}$.
+
+**Step 1:** Set $u_1 = v_1 = \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}$, normalize: $e_1 = \frac{u_1}{\|u_1\|} = \frac{1}{\sqrt{2}} \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix}$
+
+**Step 2:** Project $v_2$ onto $u_1$:
+
+$$\text{proj}_{u_1}(v_2) = \frac{v_2 \cdot u_1}{u_1 \cdot u_1} u_1 = \frac{1}{2} \begin{pmatrix} 1 \\ 1 \\ 0 \end{pmatrix} = \begin{pmatrix} 0.5 \\ 0.5 \\ 0 \end{pmatrix}$$
+
+**Step 3:** $u_2 = v_2 - \text{proj}_{u_1}(v_2) = \begin{pmatrix} 1 \\ 0 \\ 1 \end{pmatrix} - \begin{pmatrix} 0.5 \\ 0.5 \\ 0 \end{pmatrix} = \begin{pmatrix} 0.5 \\ -0.5 \\ 1 \end{pmatrix}$
+
+**Step 4:** Normalize: $e_2 = \frac{u_2}{\|u_2\|} = \frac{1}{\sqrt{1.5}} \begin{pmatrix} 0.5 \\ -0.5 \\ 1 \end{pmatrix}$
+
+**Result:** $\{e_1, e_2\}$ is an orthonormal basis.
+
+## Summary
+
+- A matrix is a linear transformation; matrix multiplication composes transformations
+- The determinant measures volume scaling; zero determinant means singular
+- Gaussian elimination solves $Ax = b$ via row operations
+- Vector spaces are sets closed under linear combinations; bases are minimal spanning sets
+- Eigenvalues and eigenvectors satisfy $Av = \lambda v$; they reveal invariant directions
+- Diagonalization $A = PDP^{-1}$ simplifies matrix powers and DE systems
+- SVD $A = U\Sigma V^T$ works for any matrix and is the foundation of data-driven linear algebra
+- Rank-nullity theorem: column space dimension + null space dimension = number of columns
+- Matrix calculus extends derivatives to vector/matrix functions, essential for ML
+
+## Exercises
+
+### Review Questions
+
+1. Prove that the determinant of a product equals the product of determinants: $\det(AB) = \det(A)\det(B)$
+2. Show that if $\lambda$ is an eigenvalue of $A$, then $\lambda^2$ is an eigenvalue of $A^2$
+3. What is the geometric meaning of a zero eigenvalue? Of a negative eigenvalue?
+4. Explain why the columns of $U$ in SVD are eigenvectors of $AA^T$
+5. Prove that similar matrices ($B = P^{-1}AP$) have the same eigenvalues
+
+### Application Problems
+
+1. **PageRank Simulation:** A web has 3 pages with links: Page 1 links to 2 and 3, Page 2 links to 3, Page 3 links to 1. Find the dominant eigenvector of the Google matrix (damping factor 0.85).
+
+2. **PCA on 2D Data:** Given data points $(1,1), (2,2), (3,3), (1,3), (2,4)$, compute the covariance matrix, find its eigenvectors, and determine the principal component.
+
+3. **Image Compression via SVD:** Explain how you would compress a $1000 \times 1000$ grayscale image using SVD. How many singular values would you keep for 10x compression?
+
+### Challenge Problem
+
+**Matrix Exponential:** The matrix exponential $e^A = \sum_{k=0}^\infty \frac{A^k}{k!}$ is used to solve systems of ODEs. For the matrix $A = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$:
+
+a) Compute $A^2, A^3, A^4$ and identify the pattern
+b) Use the series definition to find $e^A$ in closed form
+c) Verify that your result satisfies $(e^A)^{-1} = e^{-A}$ and $e^{A+B} = e^A e^B$ for this $A$
+
+## Notation Reference
+
+| Symbol | Meaning |
+|--------|---------|
+| $A^T$ | transpose of $A$ |
+| $\det(A)$ | determinant of $A$ |
+| $\text{tr}(A)$ | trace of $A$ |
+| $A^{-1}$ | inverse of $A$ |
+| $A^+$ | pseudoinverse of $A$ |
+| $\|v\|$ | Euclidean norm of $v$ |
+| $\text{span}\{v_i\}$ | set of all linear combinations |
+| $\text{Col}(A)$ | column space |
+| $\text{Null}(A)$ | null space |
+| $\text{rank}(A)$ | rank of $A$ |
+| $\mathbb{R}^n$ | n-dimensional Euclidean space |
+| $\mathcal{P}_n$ | polynomials of degree $\leq n$ |

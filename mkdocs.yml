@@ -1295,6 +1295,26 @@ nav:
     - Strategy: courses/placement-preparation/05-placement-strategy.md
     - HR/GD/Soft Skills: courses/placement-preparation/06-hr-gd-soft-skills.md
     - Company PYQs: courses/placement-preparation/07-company-wise-pyqs.md
+  - "∫ Engineering Mathematics":
+    - Overview: courses/engineering-mathematics/index.md
+    - "01 — Linear Algebra": courses/engineering-mathematics/01-linear-algebra.md
+    - "02 — Calculus I": courses/engineering-mathematics/02-calculus-i.md
+    - "03 — Calculus II": courses/engineering-mathematics/03-calculus-ii.md
+    - "04 — Differential Equations": courses/engineering-mathematics/04-differential-equations.md
+    - "05 — Complex Analysis": courses/engineering-mathematics/05-complex-analysis.md
+    - "06 — Probability & Statistics": courses/engineering-mathematics/06-probability-statistics.md
+    - "07 — Numerical Methods": courses/engineering-mathematics/07-numerical-methods.md
+    - "08 — Integral Transforms": courses/engineering-mathematics/08-integral-transforms.md
+    - "09 — Optimization": courses/engineering-mathematics/09-optimization.md
+    - "10 — Vector Calculus": courses/engineering-mathematics/10-vector-calculus.md
+  - "🧪 General Aptitude":
+    - Overview: courses/general-aptitude/index.md
+    - "01 — Quantitative Aptitude": courses/general-aptitude/01-quantitative-aptitude.md
+    - "02 — Logical Reasoning": courses/general-aptitude/02-logical-reasoning.md
+    - "03 — Verbal Ability": courses/general-aptitude/03-verbal-ability.md
+    - "04 — Data Interpretation": courses/general-aptitude/04-data-interpretation.md
+    - "05 — Non-Verbal Reasoning": courses/general-aptitude/05-non-verbal-reasoning.md
+    - "06 — Advanced Reasoning": courses/general-aptitude/06-advanced-reasoning.md
   - "🧠 Learning How to Learn":
     - Overview: courses/learning-how-to-learn/index.md
     - "Ch 1: How Your Brain Learns": courses/learning-how-to-learn/ch-01-how-your-brain-learns.md

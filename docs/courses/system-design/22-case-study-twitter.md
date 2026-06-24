@@ -504,6 +504,24 @@ The pre-computed timeline lists (fan-on-write output) are stored in Redis as lis
 
 ---
 
+### TypeScript: Fan-Out Decision
+
+```typescript
+function fanOutStrategy(followers: number, threshold = 1500): "push" | "pull" {
+  return followers <= threshold ? "push" : "pull";
+}
+
+function buildTimeline(tweets: string[], followerCounts: number[]): Map<string, string[]> {
+  const timeline = new Map<string, string[]>();
+  for (let i = 0; i < tweets.length; i++) {
+    const strategy = fanOutStrategy(followerCounts[i]);
+    if (strategy === "push") timeline.set(tweets[i], ["pushed to home timelines"]);
+    else timeline.set(tweets[i], ["pulled on request"]);
+  }
+  return timeline;
+}
+```
+
 ## Summary
 
 - The timeline fan-out problem requires choosing between push (O(1) read, O(followers) write) and pull (O(1) write, O(followees) read); Twitter uses a hybrid approach with a follower-count threshold.

@@ -494,6 +494,41 @@ graph TB
 
 ---
 
+### Mermaid: Uber Architecture Evolution
+
+```mermaid
+flowchart TD
+    M[Monolith: Python + MySQL] --> S[Service Split: Trip, Payment, Dispatch]
+    S --> K[Kafka Event Bus]
+    K --> D[Dispatch Service]
+    K --> T[Trip Service]
+    K --> P[Payment Service]
+    K --> R[Real-time: Flink]
+    D --> G[Geospatial Index]
+    T --> DB[(MySQL Cluster)]
+    R --> A[ETA Predictions]
+```
+
+### TypeScript: Ride Matching
+
+```typescript
+interface RideRequest { userId: string; lat: number; lng: number; }
+interface Driver { id: string; lat: number; lng: number; available: boolean; }
+
+class RideMatcher {
+  match(request: RideRequest, drivers: Driver[]): Driver | null {
+    let best: Driver | null = null;
+    let minDist = Infinity;
+    for (const d of drivers) {
+      if (!d.available) continue;
+      const dist = Math.sqrt((d.lat - request.lat) ** 2 + (d.lng - request.lng) ** 2);
+      if (dist < minDist) { minDist = dist; best = d; }
+    }
+    return best;
+  }
+}
+```
+
 ## Summary
 
 - Uber's architecture evolved from a Python monolith with a single MySQL database to a 750+ service microservice ecosystem powered by Kafka and Flink.

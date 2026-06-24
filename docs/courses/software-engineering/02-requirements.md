@@ -501,6 +501,259 @@ A university library commissioned a new management system. The requirements team
 
 **Answer: C** — Basic needs (threshold attributes) must be present but do not delight when available.
 
+## Automated Requirements Validation Engine
+
+```typescript
+interface RequirementSpec {
+  id: string;
+  text: string;
+  type: 'functional' | 'non-functional' | 'domain';
+  source: string;
+  priority: 'MUST' | 'SHOULD' | 'COULD' | 'WONT';
+}
+
+interface ValidationResult {
+  requirementId: string;
+  passed: boolean;
+  checks: ValidationCheck[];
+  suggestion?: string;
+}
+
+interface ValidationCheck {
+  rule: string;
+  passed: boolean;
+  message: string;
+}
+
+class RequirementValidator {
+  private readonly qualityPatterns = {
+    testableKeywords: /\b(shall|must|will|should)\b/i,
+    vagueTerms: /\b(user[- ]friendly|easy|intuitive|robust|flexible|fast|efficient|reliable|simple|modern|state[- ]of[- ]the[- ]art)\b/i,
+    measurableMetrics: /\b(seconds|milliseconds|percent|concurrent|requests|transactions|uptime|availability|nines)\b/i,
+    ambiguousQuantifiers: /\b(some|many|several|often|sometimes|usually|most|various|numerous)\b/i,
+  };
+
+  public validate(requirement: RequirementSpec): ValidationResult {
+    const checks: ValidationCheck[] = [];
+    checks.push(this.checkTestable(requirement));
+    checks.push(this.checkVagueTerms(requirement));
+    checks.push(this.checkMeasurable(requirement));
+    checks.push(this.checkAmbiguous(requirement));
+    checks.push(this.checkUniqueness(requirement));
+    checks.push(this.checkWellFormed(requirement));
+    const passed = checks.every((c) => c.passed);
+    return {
+      requirementId: requirement.id,
+      passed,
+      checks,
+      suggestion: passed ? undefined : this.generateSuggestion(requirement, checks),
+    };
+  }
+
+  private checkTestable(req: RequirementSpec): ValidationCheck {
+    const hasKeyword = this.qualityPatterns.testableKeywords.test(req.text);
+    return {
+      rule: 'testable-statement',
+      passed: hasKeyword,
+      message: hasKeyword
+        ? 'Contains verifiable keyword (shall/must)'
+        : 'Missing verifiable keyword — use "shall" or "must" for testable requirements',
+    };
+  }
+
+  private checkVagueTerms(req: RequirementSpec): ValidationCheck {
+    const matches = req.text.match(this.qualityPatterns.vagueTerms);
+    return {
+      rule: 'no-vague-terms',
+      passed: !matches,
+      message: matches
+        ? `Contains vague term(s): "${matches.join(', ')}" — replace with specific, measurable criteria`
+        : 'No vague terms detected',
+    };
+  }
+
+  private checkMeasurable(req: RequirementSpec): ValidationCheck {
+    const hasMetric = this.qualityPatterns.measurableMetrics.test(req.text);
+    return {
+      rule: 'measurable-metric',
+      passed: hasMetric || req.type !== 'non-functional',
+      message: hasMetric
+        ? 'Contains measurable metrics'
+        : 'Non-functional requirement should include measurable metric (seconds, percent, etc.)',
+    };
+  }
+
+  private checkAmbiguous(req: RequirementSpec): ValidationCheck {
+    const matches = req.text.match(this.qualityPatterns.ambiguousQuantifiers);
+    return {
+      rule: 'no-ambiguous-quantifiers',
+      passed: !matches,
+      message: matches
+        ? `Contains ambiguous quantifier(s): "${matches.join(', ')}" — use exact numbers`
+        : 'No ambiguous quantifiers',
+    };
+  }
+
+  private checkUniqueness(req: RequirementSpec): ValidationCheck {
+    const idFormat = /^(REQ|FR|NFR|US)-\d+$/i.test(req.id);
+    return {
+      rule: 'unique-identifier',
+      passed: idFormat,
+      message: idFormat
+        ? 'Valid requirement identifier format'
+        : 'Identifier should follow pattern: REQ-001, FR-001, NFR-001, or US-001',
+    };
+  }
+
+  private checkWellFormed(req: RequirementSpec): ValidationCheck {
+    const hasActor = /\b(the system|user|admin|customer|operator)\b/i.test(req.text);
+    const hasAction = /\b(shall|must|will|should|can|may)\b/i.test(req.text);
+    return {
+      rule: 'well-formed-structure',
+      passed: hasActor && hasAction,
+      message: !hasActor
+        ? 'Missing actor — specify who or what performs the action'
+        : !hasAction
+          ? 'Missing action verb — specify what the system shall do'
+          : 'Well-formed requirement structure',
+    };
+  }
+
+  private generateSuggestion(req: RequirementSpec, failedChecks: ValidationCheck[]): string {
+    return failedChecks
+      .filter((c) => !c.passed)
+      .map((c) => c.message)
+      .join('; ');
+  }
+}
+
+// User Story Decomposition Engine
+interface Epic {
+  title: string;
+  description: string;
+}
+
+interface UserStory {
+  role: string;
+  goal: string;
+  benefit: string;
+  acceptanceCriteria: string[];
+  storyPoints?: number;
+}
+
+class UserStoryDecomposer {
+  public decomposeEpic(epic: Epic): UserStory[] {
+    return [
+      {
+        role: 'user',
+        goal: `view ${epic.title.toLowerCase()} list`,
+        benefit: `see available ${epic.title.toLowerCase()} options`,
+        acceptanceCriteria: [
+          `List displays all ${epic.title.toLowerCase()} items`,
+          'Items are paginated at 20 per page',
+          'Each item shows name and status',
+        ],
+        storyPoints: 3,
+      },
+      {
+        role: 'user',
+        goal: `search ${epic.title.toLowerCase()} by keyword`,
+        benefit: `quickly find relevant ${epic.title.toLowerCase()}`,
+        acceptanceCriteria: [
+          'Search returns results within 2 seconds',
+          'Supports partial matching',
+          'Results highlight matching terms',
+        ],
+        storyPoints: 5,
+      },
+      {
+        role: 'user',
+        goal: `create new ${epic.title.toLowerCase()} item`,
+        benefit: `add ${epic.title.toLowerCase()} to the system`,
+        acceptanceCriteria: [
+          'Form validates all required fields',
+          'Duplicates are detected and rejected',
+          'Confirmation shown on successful creation',
+        ],
+        storyPoints: 8,
+      },
+      {
+        role: 'admin',
+        goal: `manage ${epic.title.toLowerCase()} permissions`,
+        benefit: 'control access to sensitive features',
+        acceptanceCriteria: [
+          'Admin can grant/revoke access per user',
+          'Audit log tracks all permission changes',
+          'Changes take effect within 60 seconds',
+        ],
+        storyPoints: 13,
+      },
+    ];
+  }
+
+  public formatStory(story: UserStory): string {
+    const lines = [
+      `As a ${story.role},`,
+      `I want to ${story.goal}`,
+      `So that ${story.benefit}.`,
+      '',
+      'Acceptance Criteria:',
+      ...story.acceptanceCriteria.map((ac) => `  - ${ac}`),
+      story.storyPoints ? `\nEstimate: ${story.storyPoints} SP` : '',
+    ];
+    return lines.join('\n');
+  }
+}
+
+// Usage
+const validator = new RequirementValidator();
+const result = validator.validate({
+  id: 'FR-001',
+  text: 'The system shall process 1,000 transactions per second with 99.9% uptime',
+  type: 'non-functional',
+  source: 'Stakeholder interview #5',
+  priority: 'MUST',
+});
+console.log(`Validation ${result.passed ? 'PASSED' : 'FAILED'} for ${result.requirementId}`);
+result.checks.forEach((c) => console.log(`  [${c.passed ? '✓' : '✗'}] ${c.message}`));
+
+const decomposer = new UserStoryDecomposer();
+const stories = decomposer.decomposeEpic({ title: 'Inventory Management', description: 'Full inventory tracking system' });
+stories.forEach((s) => console.log(decomposer.formatStory(s)));
+```
+
+```mermaid
+graph TD
+    subgraph "Requirements Validation Pipeline"
+        RAW[Raw Requirement] --> PARSE[Parse & Classify]
+        PARSE --> TYPE{Type?}
+        TYPE -->|Functional| FCHECKS[Functional Checks]
+        TYPE -->|Non-Functional| NFCHECKS[Non-Functional Checks]
+        TYPE -->|Domain| DCHECKS[Domain Checks]
+        
+        FCHECKS --> T1[Testable?]
+        FCHECKS --> T2[Unambiguous?]
+        FCHECKS --> T3[Complete?]
+        
+        NFCHECKS --> T4[Metrics Defined?]
+        NFCHECKS --> T5[Verifiable?]
+        NFCHECKS --> T6[Boundaries Clear?]
+        
+        T1 --> AGG[Aggregate Results]
+        T2 --> AGG
+        T3 --> AGG
+        T4 --> AGG
+        T5 --> AGG
+        T6 --> AGG
+        
+        AGG --> PASSED{All Checks Passed?}
+        PASSED -->|Yes| APPROVED[Requirement Approved]
+        PASSED -->|No| FEEDBACK[Generate Feedback]
+        FEEDBACK --> REVISE[Revise Requirement]
+        REVISE --> RAW
+    end
+```
+
 ## Summary
 
 Requirements engineering is the foundation of successful software development. Functional requirements define what the system must do; non-functional constraints how it does it; and domain requirements capture the context. FURPS+ provides a comprehensive classification. Feasibility studies determine project viability. Elicitation techniques must be selected based on project context. Specifications take different forms — IEEE 830 documents, user stories with Gherkin acceptance criteria, or use cases. MoSCoW and the Kano model support prioritisation. Validation ensures correctness. Management through traceability, prioritisation, and change control maintains the specification's integrity as the system evolves.

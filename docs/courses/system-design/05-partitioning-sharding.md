@@ -489,6 +489,144 @@ sequenceDiagram
 
 ---
 
+## Code Examples
+
+### Consistent Hashing Implementation
+
+The following TypeScript class implements a consistent hash ring with virtual nodes. This is the foundational algorithm behind DynamoDB, Cassandra, and Discord's sharding layer. Virtual nodes ensure balanced key distribution even when physical nodes have heterogeneous capacity.
+
+```typescript
+/**
+ * ConsistentHashRing — implements consistent hashing with virtual nodes
+ * for distributed key-value placement.
+ *
+ * When a node joins or leaves, only O(1/N) keys are remapped (compared
+ * to O(N) with naive modulo-N hashing).
+ */
+class ConsistentHashRing<T> {
+  private ring: Map<number, T> = new Map();
+  private sortedPositions: number[] = [];
+  private nodes: Map<string, T> = new Map();
+
+  constructor(
+    private readonly virtualNodeCount: number = 100,
+    private readonly hashFn: (key: string) => number = ConsistentHashRing.defaultHash
+  ) {}
+
+  /** Register a physical node with its virtual-node replicas */
+  addNode(nodeId: string, node: T): void {
+    this.nodes.set(nodeId, node);
+    for (let i = 0; i < this.virtualNodeCount; i++) {
+      const pos = this.hashFn(`${nodeId}:vnode:${i}`);
+      this.ring.set(pos, node);
+    }
+    this.rebuildSortedPositions();
+  }
+
+  /** Remove a physical node and all its virtual nodes */
+  removeNode(nodeId: string): void {
+    if (!this.nodes.has(nodeId)) return;
+    this.nodes.delete(nodeId);
+    for (let i = 0; i < this.virtualNodeCount; i++) {
+      const pos = this.hashFn(`${nodeId}:vnode:${i}`);
+      this.ring.delete(pos);
+    }
+    this.rebuildSortedPositions();
+  }
+
+  /** Locate the responsible node for a given key */
+  getNode(key: string): T | undefined {
+    if (this.sortedPositions.length === 0) return undefined;
+    const hash = this.hashFn(key);
+    const pos =
+      this.sortedPositions.find((p) => p >= hash) ?? this.sortedPositions[0];
+    return this.ring.get(pos);
+  }
+
+  /** Number of physical nodes currently registered */
+  get physicalNodeCount(): number {
+    return this.nodes.size;
+  }
+
+  /** Distribution statistics: keys-per-node for a sample of N keys */
+  distribution(sampleKeys: string[]): Map<string, number> {
+    const counts = new Map<string, number>();
+    for (const key of sampleKeys) {
+      const node = this.getNode(key);
+      if (node) {
+        const label = String(node);
+        counts.set(label, (counts.get(label) ?? 0) + 1);
+      }
+    }
+    return counts;
+  }
+
+  // ── Private helpers ──────────────────────────────────────────
+
+  private rebuildSortedPositions(): void {
+    this.sortedPositions = [...this.ring.keys()].sort((a, b) => a - b);
+  }
+
+  private static defaultHash(key: string): number {
+    let hash = 0;
+    for (let i = 0; i < key.length; i++) {
+      hash = ((hash << 5) - hash) + key.charCodeAt(i);
+      hash = hash & hash; // force 32-bit integer
+    }
+    return Math.abs(hash);
+  }
+}
+
+// ── Example: ring with 4 nodes, 50 virtual nodes each ───────────
+const ring = new ConsistentHashRing<string>(50);
+
+ring.addNode('node-a', '192.168.1.10');
+ring.addNode('node-b', '192.168.1.11');
+ring.addNode('node-c', '192.168.1.12');
+ring.addNode('node-d', '192.168.1.13');
+
+const testKeys = Array.from({ length: 1000 }, (_, i) => `user:${i}`);
+const dist = ring.distribution(testKeys);
+
+console.log('=== Key distribution across 4 nodes ===');
+for (const [node, count] of dist) {
+  const pct = ((count / testKeys.length) * 100).toFixed(1);
+  console.log(`${node}: ${count} keys (${pct}%)`);
+}
+
+// ── Simulate node failure ──────────────────────────────────────
+ring.removeNode('node-c');
+const distAfter = ring.distribution(testKeys);
+const moved = testKeys.filter(
+  (k) => ring.getNode(k) !== dist.get(String(ring.getNode(k)))
+).length;
+console.log(`\nAfter node-c failure: ${moved} keys moved (${((moved / testKeys.length) * 100).toFixed(1)}%)`);
+```
+
+### Consistent Hash Ring Visualization
+
+```mermaid
+flowchart TD
+    subgraph Hash_Ring
+        A[("hash=0<br/>Node A")] --> B[("hash=25<br/>Node B")]
+        B --> C[("hash=50<br/>Node C")]
+        C --> D[("hash=75<br/>Node D")]
+        D --> A
+    end
+
+    subgraph Key_Placement
+        K1["key user:alice<br/>hash=10"] -->|"clockwise walk"| B
+        K2["key user:bob<br/>hash=40"] -->|"clockwise walk"| C
+        K3["key user:carol<br/>hash=90"] -->|"clockwise walk<br/>(wrap around)"| A
+    end
+
+    subgraph Virtual_Nodes
+        V1["Node A<br/>v0@10 v1@72 v2@91"] --- V2["Node B<br/>v0@25 v1@45 v2@82"]
+        V2 --- V3["Node C<br/>v0@50 v1@33 v2@67"]
+        V3 --- V1
+    end
+```
+
 ## Summary
 
 - Vertical partitioning splits by columns for I/O and cache efficiency; horizontal partitioning (sharding) splits by rows for distributed scale

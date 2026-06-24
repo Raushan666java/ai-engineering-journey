@@ -455,6 +455,198 @@ A fintech startup developing a mobile payments app adopted Scrum with 2-week Spr
 
 **Answer: B** — The V-model's explicit links between development and testing phases make it ideal for regulated domains.
 
+## Process Model Selection Simulator
+
+```typescript
+type ProjectProfile = {
+  requirementsClarity: 'high' | 'medium' | 'low';
+  projectSize: 'small' | 'medium' | 'large';
+  riskLevel: 'low' | 'medium' | 'high';
+  customerInvolvement: 'low' | 'medium' | 'high';
+  documentationNeed: 'low' | 'medium' | 'high';
+  teamSkill: 'low' | 'medium' | 'high';
+  regulatorySuitability: 'low' | 'medium' | 'high';
+  teamSize: number;
+  timelineMonths: number;
+  budgetMillions: number;
+};
+
+type ModelScore = { model: string; score: number; strengths: string[]; risks: string[] };
+
+class ProcessModelSelector {
+  private readonly weights = {
+    requirementsClarity: 0.2,
+    projectSize: 0.1,
+    riskLevel: 0.15,
+    customerInvolvement: 0.1,
+    documentationNeed: 0.1,
+    teamSkill: 0.1,
+    regulatorySuitability: 0.15,
+    timelineUrgency: 0.1,
+  };
+
+  public recommend(project: ProjectProfile): ModelScore[] {
+    const candidates = [
+      this.evaluateWaterfall(project),
+      this.evaluateVModel(project),
+      this.evaluateIncremental(project),
+      this.evaluateSpiral(project),
+      this.evaluateUnified(project),
+      this.evaluateScrum(project),
+      this.evaluateXP(project),
+    ];
+    return candidates.sort((a, b) => b.score - a.score);
+  }
+
+  private scoreValue(value: string): number {
+    const map: Record<string, number> = { high: 3, medium: 2, low: 1 };
+    return map[value] ?? 1;
+  }
+
+  private evaluateWaterfall(p: ProjectProfile): ModelScore {
+    const clarityScore = this.scoreValue(p.requirementsClarity) === 3 ? 3 : 1;
+    const docScore = this.scoreValue(p.documentationNeed) === 3 ? 3 : 1;
+    const riskScore = this.scoreValue(p.riskLevel) <= 2 ? 3 : 1;
+    const total = clarityScore * 3 + docScore * 2 + riskScore * 2;
+    return {
+      model: 'Waterfall',
+      score: total,
+      strengths: ['Clear milestones', 'Strong documentation', 'Predictable timeline'],
+      risks: ['No iteration', 'Late working software', 'Cannot accommodate changes'],
+    };
+  }
+
+  private evaluateVModel(p: ProjectProfile): ModelScore {
+    const regScore = this.scoreValue(p.regulatorySuitability) === 3 ? 3 : 1;
+    const clarityScore = this.scoreValue(p.requirementsClarity) >= 2 ? 3 : 1;
+    const total = regScore * 4 + clarityScore * 3 + (p.teamSize > 20 ? 2 : 1);
+    return {
+      model: 'V-Model',
+      score: total,
+      strengths: ['Full traceability', 'Test-design linkage', 'Regulatory compliance'],
+      risks: ['Heavy documentation', 'Slow to change', 'Expensive overhead'],
+    };
+  }
+
+  private evaluateIncremental(p: ProjectProfile): ModelScore {
+    const changeScore = this.scoreValue(p.requirementsClarity) <= 2 ? 3 : 1;
+    const sizeScore = p.projectSize === 'large' ? 3 : 1;
+    const total = changeScore * 3 + sizeScore * 2 + this.scoreValue(p.customerInvolvement);
+    return {
+      model: 'Incremental',
+      score: total,
+      strengths: ['Early value delivery', 'Flexible scope', 'User feedback'],
+      risks: ['Integration complexity', 'Refactoring needed', 'Architecture drift'],
+    };
+  }
+
+  private evaluateSpiral(p: ProjectProfile): ModelScore {
+    const riskScore = this.scoreValue(p.riskLevel) === 3 ? 3 : 1;
+    const skillScore = this.scoreValue(p.teamSkill) === 3 ? 3 : 1;
+    const sizeScore = p.projectSize === 'large' ? 3 : 1;
+    const total = riskScore * 4 + skillScore * 3 + sizeScore * 2;
+    return {
+      model: 'Spiral',
+      score: total,
+      strengths: ['Risk mitigation', 'Handles complexity', 'Adaptive planning'],
+      risks: ['Requires expert risk managers', 'Expensive', 'Hard to sell to clients'],
+    };
+  }
+
+  private evaluateUnified(p: ProjectProfile): ModelScore {
+    const sizeScore = p.projectSize === 'large' ? 3 : 1;
+    const skillScore = this.scoreValue(p.teamSkill) >= 2 ? 3 : 1;
+    const total = sizeScore * 3 + skillScore * 3 + this.scoreValue(p.documentationNeed) * 2;
+    return {
+      model: 'Unified Process',
+      score: total,
+      strengths: ['Architecture focus', 'Iterative', 'Risk mitigation'],
+      risks: ['Process overhead', 'Complex tooling', 'Steep learning curve'],
+    };
+  }
+
+  private evaluateScrum(p: ProjectProfile): ModelScore {
+    const customerScore = this.scoreValue(p.customerInvolvement) === 3 ? 3 : 1;
+    const changeScore = this.scoreValue(p.requirementsClarity) <= 2 ? 3 : 1;
+    const sizeScore = p.projectSize !== 'large' ? 3 : 1;
+    const total = customerScore * 3 + changeScore * 3 + sizeScore * 2;
+    return {
+      model: 'Scrum',
+      score: total,
+      strengths: ['Adapts to change', 'Customer collaboration', 'Fast feedback'],
+      risks: ['Scope creep', 'Requires committed PO', 'Less documentation'],
+    };
+  }
+
+  private evaluateXP(p: ProjectProfile): ModelScore {
+    const changeScore = this.scoreValue(p.requirementsClarity) <= 2 ? 3 : 1;
+    const skillScore = this.scoreValue(p.teamSkill) === 3 ? 3 : 1;
+    const total = changeScore * 3 + skillScore * 3 + (p.teamSize <= 10 ? 2 : 0);
+    return {
+      model: 'XP',
+      score: total,
+      strengths: ['Technical excellence', 'Continuous testing', 'Collective ownership'],
+      risks: ['Pair programming fatigue', 'Requires discipline', 'Scales poorly'],
+    };
+  }
+}
+
+function simulateProcessSelection(): void {
+  const selector = new ProcessModelSelector();
+  const startupProject: ProjectProfile = {
+    requirementsClarity: 'low',
+    projectSize: 'small',
+    riskLevel: 'medium',
+    customerInvolvement: 'high',
+    documentationNeed: 'low',
+    teamSkill: 'medium',
+    regulatorySuitability: 'low',
+    teamSize: 6,
+    timelineMonths: 6,
+    budgetMillions: 0.5,
+  };
+  const results = selector.recommend(startupProject);
+  console.log('=== Process Model Recommendation for Startup ===');
+  for (const r of results) {
+    console.log(`${r.model}: ${r.score} pts`);
+    console.log(`  Strengths: ${r.strengths.join(', ')}`);
+    console.log(`  Risks: ${r.risks.join(', ')}`);
+  }
+}
+```
+
+```mermaid
+graph TD
+    subgraph "Process Model Selection Flow"
+        INPUT[Project Profile] --> ANALYZE{Analyze Dimensions}
+        ANALYZE --> REQ{Requirements Stable?}
+        ANALYZE --> RISK{Risk Level?}
+        ANALYZE --> SIZE{Project Size?}
+        ANALYZE --> CUST{Customer Access?}
+        
+        REQ -->|Yes| WF[Waterfall / V-Model]
+        REQ -->|No| AG[Agile Methods]
+        
+        RISK -->|High| SP[Spiral]
+        RISK -->|Low| INCR[Incremental]
+        
+        SIZE -->|Large| UP[Unified Process]
+        SIZE -->|Small| XP[Extreme Programming]
+        
+        CUST -->|High| SCRUM[Scrum]
+        CUST -->|Low| PLAN[Plan-Driven]
+    end
+    WF --> DECIDE[Select Best Fit]
+    AG --> DECIDE
+    SP --> DECIDE
+    INCR --> DECIDE
+    UP --> DECIDE
+    XP --> DECIDE
+    SCRUM --> DECIDE
+    PLAN --> DECIDE
+    DECIDE --> RESULT[Recommended Process Model]
+```
+
 ## Summary
 
 Software process models provide structure and guidance for development activities. No single model is appropriate for all projects. The Waterfall model offers simplicity but lacks flexibility. The V-model emphasises verification and traceability. Incremental and iterative approaches deliver early value and accommodate change. The Spiral model incorporates explicit risk management. The Unified Process provides an iterative, architecture-centric framework. Agile methods (Scrum, XP) prioritise people, working software, and responsiveness to change. The selection of a process model should be based on project characteristics including requirements stability, risk profile, team size, and organisational context.

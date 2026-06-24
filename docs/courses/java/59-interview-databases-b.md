@@ -427,6 +427,261 @@ List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 | Collections | Basic usage | Performance trade-offs | Concurrent collections | Custom implementations |
 | Concurrency | Syntax knowledge | Write thread-safe code | Debug deadlocks | Design concurrent systems |
 
+## TypeScript Optimistic Locking Retry Simulator
+
+The following TypeScript code simulates optimistic locking retry logic and migration validation patterns used in Spring Boot database applications:
+
+```typescript
+interface VersionedEntity {
+  id: number;
+  version: number;
+  data: Record<string, unknown>;
+}
+
+interface MigrationScript {
+  version: string;
+  description: string;
+  sql: string;
+  checksum: string;
+  appliedAt: Date | null;
+}
+
+class OptimisticLockSimulator {
+  private store = new Map<number, VersionedEntity>();
+
+  constructor() {
+    this.store.set(1, { id: 1, version: 1, data: { balance: 1000 } });
+    this.store.set(2, { id: 2, version: 1, data: { balance: 500 } });
+  }
+
+  read(id: number): VersionedEntity {
+    const entity = this.store.get(id);
+    if (!entity) throw new Error(`Entity ${id} not found`);
+    return { ...entity };
+  }
+
+  write(id: number, newData: Record<string, unknown>, expectedVersion: number): boolean {
+    const current = this.store.get(id);
+    if (!current) throw new Error(`Entity ${id} not found`);
+    if (current.version !== expectedVersion) {
+      console.log(
+        `[CONFLICT] Entity ${id}: expected v${expectedVersion}, actual v${current.version}`
+      );
+      return false;
+    }
+    this.store.set(id, {
+      ...current,
+      data: newData,
+      version: current.version + 1,
+    });
+    console.log(
+      `[COMMIT] Entity ${id} updated to v${current.version + 1}, balance=${newData['balance']}`
+    );
+    return true;
+  }
+
+  transfer(fromId: number, toId: number, amount: number, maxRetries = 3): boolean {
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      console.log(`\n[ATTEMPT ${attempt}/${maxRetries}] Transfer $${amount} from ${fromId} to ${toId}`);
+
+      const from = this.read(fromId);
+      const to = this.read(toId);
+
+      const fromBalance = from.data['balance'] as number;
+      const toBalance = to.data['balance'] as number;
+
+      if (fromBalance < amount) {
+        console.log(`[FAIL] Insufficient balance in account ${fromId}: $${fromBalance}`);
+        return false;
+      }
+
+      const fromOk = this.write(fromId, { balance: fromBalance - amount }, from.version);
+      if (!fromOk) {
+        console.log(`[RETRY] Conflict on debit — retrying...`);
+        continue;
+      }
+
+      const toOk = this.write(toId, { balance: toBalance + amount }, to.version);
+      if (!toOk) {
+        console.log(`[RETRY] Conflict on credit — rolling back debit...`);
+        this.write(fromId, { balance: fromBalance }, from.version + 1);
+        continue;
+      }
+
+      console.log(`[SUCCESS] Transfer complete. From: $${fromBalance - amount}, To: $${toBalance + amount}`);
+      return true;
+    }
+    console.log(`[FAIL] Transfer failed after ${maxRetries} attempts`);
+    return false;
+  }
+}
+
+// ── Concurrent transfer simulation ──
+const sim = new OptimisticLockSimulator();
+console.log('=== OPTIMISTIC LOCKING RETRY SIMULATION ===\n');
+sim.transfer(1, 2, 200);
+sim.transfer(2, 1, 100);
+
+// ── Migration validator ──
+class MigrationValidator {
+  private migrations: MigrationScript[] = [];
+
+  register(version: string, description: string, sql: string): void {
+    this.migrations.push({
+      version,
+      description,
+      sql,
+      checksum: this.hash(sql),
+      appliedAt: null,
+    });
+  }
+
+  private hash(input: string): string {
+    let hash = 0;
+    for (let i = 0; i < input.length; i++) {
+      const char = input.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash |= 0;
+    }
+    return Math.abs(hash).toString(16);
+  }
+
+  validate(): string[] {
+    const errors: string[] = [];
+    const versions = this.migrations.map(m => m.version);
+
+    for (let i = 0; i < versions.length - 1; i++) {
+      const current = this.migrations[i];
+      const next = this.migrations[i + 1];
+      if (this.compareVersions(current.version, next.version) >= 0) {
+        errors.push(`Version order error: v${current.version} → v${next.version} must be ascending`);
+      }
+      if (current.sql.toLowerCase().includes('drop column') && !current.sql.toLowerCase().includes('if exists')) {
+        errors.push(`Safety: v${current.version} DROP COLUMN without IF EXISTS`);
+      }
+    }
+    return errors;
+  }
+
+  private compareVersions(a: string, b: string): number {
+    const partsA = a.split('_').map(Number);
+    const partsB = b.split('_').map(Number);
+    for (let i = 0; i < Math.max(partsA.length, partsB.length); i++) {
+      const diff = (partsA[i] || 0) - (partsB[i] || 0);
+      if (diff !== 0) return diff;
+    }
+    return 0;
+  }
+
+  applyAll(): void {
+    const errors = this.validate();
+    if (errors.length > 0) {
+      console.log('\nMigration validation FAILED:');
+      errors.forEach(e => console.log(`  ✗ ${e}`));
+      return;
+    }
+    for (const m of this.migrations) {
+      m.appliedAt = new Date();
+      console.log(`[APPLIED] v${m.version}: ${m.description} (${m.checksum})`);
+    }
+  }
+}
+
+console.log('\n=== MIGRATION VALIDATOR ===\n');
+const validator = new MigrationValidator();
+validator.register('1', 'create_users_table', 'CREATE TABLE users (id BIGSERIAL PRIMARY KEY, name TEXT);');
+validator.register('2', 'add_email_column', 'ALTER TABLE users ADD COLUMN email VARCHAR(255);');
+validator.register('3', 'add_active_flag', 'ALTER TABLE users ADD COLUMN active BOOLEAN DEFAULT TRUE;');
+validator.applyAll();
+```
+
+## Mermaid: JPA Inheritance Strategy Comparison
+
+```mermaid
+flowchart TD
+    A[JPA Inheritance] --> B[SINGLE_TABLE]
+    A --> C[JOINED]
+    A --> D[TABLE_PER_CLASS]
+
+    B --> E[One table, discriminator column]
+    B --> F[Best query performance]
+    B --> G[Nullable columns for subclasses]
+
+    C --> H[One table per class + parent FK]
+    C --> I[Best normalization]
+    C --> J[Requires JOINs for polymorphic queries]
+
+    D --> K[Complete table per concrete class]
+    D --> L[No polymorphism support]
+    D --> M[UNION queries are expensive]
+
+    style B fill:#4caf50,color:#fff
+    style C fill:#2196f3,color:#fff
+    style D fill:#ff9800,color:#fff
+```
+
+## Mermaid: Flyway Migration Lifecycle
+
+```mermaid
+flowchart LR
+    subgraph Development
+        A[Write V1__init.sql]
+        B[Write V2__add_column.sql]
+    end
+
+    subgraph Build
+        C[Compile + package JAR]
+    end
+
+    subgraph Deploy
+        D[Flyway migrates]
+        E[Check flyway_schema_history]
+    end
+
+    subgraph Production
+        F[(Database)]
+        G[History table]
+    end
+
+    A --> C
+    B --> C
+    C --> D
+    D --> E
+    E -->|New migration found| D
+    D --> F
+    D --> G
+    E -->|Already applied| H[SKIP]
+
+    style D fill:#4caf50,color:#fff
+    style E fill:#ff9800,color:#fff
+    style H fill:#607d8b,color:#916
+```
+
+## Mermaid: JOIN vs LEFT JOIN vs JOIN FETCH
+
+```mermaid
+flowchart TD
+    A[Query Type] --> B[JOIN / INNER JOIN]
+    A --> C[LEFT JOIN]
+    A --> D[JOIN FETCH]
+
+    B --> E[Only matching rows]
+    B --> F[Excludes orphans]
+    B --> G[Does NOT populate entity]
+
+    C --> H[All left-side rows]
+    C --> I[NULL for non-matching]
+    C --> J[Does NOT populate entity]
+
+    D --> K[Eagerly loads association]
+    D --> L[Populates entity state]
+    D --> M[Prevents N+1 queries]
+
+    style B fill:#2196f3,color:#fff
+    style C fill:#ff9800,color:#fff
+    style D fill:#4caf50,color:#fff
+```
+
 ## Chapter Quiz
 
 1. What is the difference between equals() and == in Java?

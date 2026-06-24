@@ -505,6 +505,138 @@ Key insight: CDN cost dominates. Solution: encode photos to multiple resolutions
 
 ---
 
+## Code Examples
+
+### CAP Theorem Simulator
+
+The following TypeScript class models the fundamental trade-off between Consistency, Availability, and Partition Tolerance. Given any two chosen properties, the simulator returns the resulting system classification (CP, AP, or CA) along with real-world database examples.
+
+```typescript
+/**
+ * CAPTheoremSimulator — models the trade-off between Consistency,
+ * Availability, and Partition Tolerance in distributed systems.
+ *
+ * Usage:
+ *   const cap = new CapTheoremSimulator();
+ *   cap.pick('partitionTolerance', 'consistency', true);
+ *   // → "CP system (e.g., ZooKeeper, HBase, Google Spanner). Sacrifices
+ *   //    availability during partitions to guarantee consistency."
+ */
+type CapProperty = 'consistency' | 'availability' | 'partitionTolerance';
+type CapSystem = 'CP' | 'AP' | 'CA';
+
+class CapTheoremSimulator {
+  private examples: Record<CapSystem, string[]> = {
+    CP: ['ZooKeeper', 'HBase', 'Google Spanner'],
+    AP: ['Cassandra', 'DynamoDB', 'Riak'],
+    CA: ['PostgreSQL (single-site)', 'MySQL (single-site)'],
+  };
+
+  private definitions: Record<CapSystem, string> = {
+    CP: 'Sacrifices availability during partitions to guarantee consistency.',
+    AP: 'Sacrifices consistency during partitions to guarantee availability.',
+    CA: 'No partition tolerance — relies on a reliable network; entire system fails on split.',
+  };
+
+  pick(a: CapProperty, b: CapProperty, partitionHappens: boolean): string {
+    const hasP =
+      a === 'partitionTolerance' || b === 'partitionTolerance';
+    const hasC = a === 'consistency' || b === 'consistency';
+
+    if (!hasP && partitionHappens) {
+      return 'CA system with partition → system becomes unavailable (no partition tolerance).';
+    }
+
+    const system: CapSystem = hasP ? (hasC ? 'CP' : 'AP') : 'CA';
+    const dbExamples = this.examples[system].join(', ');
+    return `**${system}** system (e.g., ${dbExamples}). ${this.definitions[system]}`;
+  }
+}
+```
+
+### Latency vs Throughput Bounds (Little's Law)
+
+This calculator applies Little's Law (`L = λ × W`) to reason about the relationship between latency, concurrency, and throughput in distributed systems. It also includes tail-latency assessment and connection-pool sizing.
+
+```typescript
+/**
+ * LatencyThroughputCalculator — models the relationship between
+ * latency (L), throughput (λ), and concurrency (W) via Little's Law.
+ */
+class LatencyThroughputCalculator {
+  constructor(
+    public readonly latencyMs: number,
+    public readonly concurrency: number
+  ) {}
+
+  /** L = λ × W  →  λ = W / L (converted from ms to seconds) */
+  maxThroughputQps(): number {
+    return this.concurrency / (this.latencyMs / 1000);
+  }
+
+  /** W = λ × L — required concurrency to hit a target QPS */
+  requiredConcurrency(targetQps: number): number {
+    return targetQps * (this.latencyMs / 1000);
+  }
+
+  /** Assess tail-latency severity via the p99 / p50 ratio */
+  assessTailLatency(p99: number, p50: number): string {
+    const ratio = p99 / p50;
+    if (ratio > 10) {
+      return 'Critical tail — investigate GC pauses, queue buildup, or straggler tasks.';
+    }
+    if (ratio > 5) {
+      return 'High tail — check hot partitions or consider hedged requests.';
+    }
+    if (ratio > 3) {
+      return 'Moderate tail — request coalescing or caching may help.';
+    }
+    return 'Healthy — tail latency is well-contained.';
+  }
+
+  /** Estimate optimal DB connection-pool size with 20 % headroom */
+  optimalPoolSize(targetLatencyMs: number, expectedQps: number): number {
+    return Math.ceil(expectedQps * (targetLatencyMs / 1000) * 1.2);
+  }
+}
+
+// ── Example ──────────────────────────────────────────────────────
+const calc = new LatencyThroughputCalculator(50, 500);
+console.log(`Max throughput:         ${calc.maxThroughputQps()} qps`);
+console.log(`Required concurrency:   ${calc.requiredConcurrency(10000)}`);
+console.log(`Tail-latency verdict:   ${calc.assessTailLatency(2000, 50)}`);
+console.log(`Optimal pool size:      ${calc.optimalPoolSize(50, 10000)}`);
+```
+
+### CAP Theorem Trade-off Visualization
+
+```mermaid
+flowchart TD
+    subgraph CAP_Theorem
+        direction LR
+        C[Consistency<br/>Every read returns latest write]
+        A[Availability<br/>Every request gets a non-error response]
+        P[Partition Tolerance<br/>System continues despite network splits]
+    end
+
+    subgraph Trade_offs
+        CP[CP<br/>Consistency + Partition Tolerance]
+        AP[AP<br/>Availability + Partition Tolerance]
+        CA[CA<br/>Consistency + Availability]
+    end
+
+    C --> CP
+    P --> CP
+    A --> AP
+    P --> AP
+    C --> CA
+    A --> CA
+
+    CP -.-> DB1["ZooKeeper, HBase<br/>Spanner"]
+    AP -.-> DB2["Cassandra, DynamoDB<br/>Riak"]
+    CA -.-> DB3["Single-site RDBMS<br/>PostgreSQL, MySQL"]
+```
+
 ## Summary
 
 - System design is distinct from software architecture (system-wide concerns) and algorithm design (computational efficiency at bounded scales).

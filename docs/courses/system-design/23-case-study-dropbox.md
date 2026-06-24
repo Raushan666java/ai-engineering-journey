@@ -495,6 +495,19 @@ graph TB
 
 ---
 
+### Mermaid: Dropbox Sync State Machine
+
+```mermaid
+flowchart LR
+    A[Local: File Created] --> B{Compare with Remote}
+    B -->|Identical| C[Synced]
+    B -->|Different| D{Conflict?}
+    D -->|No| E[Upload to Remote]
+    D -->|Yes| F[Create Conflict Copy]
+    E --> C
+    F --> G[Both Versions Saved]
+```
+
 ## Summary
 
 - Dropbox's sync engine uses a three-state state machine (local, remote, desired) to reconcile file differences across devices, communicating with the server via HTTPS with persistent connections and exponential backoff.

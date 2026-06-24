@@ -499,6 +499,414 @@ Build a WebSocket echo server. Connect to it from a browser console (`new WebSoc
 
 ---
 
+## TypeScript Equivalents — Backend Patterns
+
+The following TypeScript examples mirror the Python patterns taught in this phase. They are useful for Laravel developers who want to see familiar syntax while learning new concepts.
+
+### Redis Wrapper with TypeScript Generics
+
+```typescript
+// TypeScript: Redis cache + queue abstraction
+import { createClient, RedisClientType } from "redis";
+
+interface CacheConfig {
+  ttlSeconds: number;
+  prefix: string;
+}
+
+class CacheService<T> {
+  private client: RedisClientType;
+  private config: CacheConfig;
+
+  constructor(config: CacheConfig) {
+    this.client = createClient({ url: process.env.REDIS_URL ?? "redis://localhost:6379" });
+    this.config = config;
+  }
+
+  async connect(): Promise<void> {
+    await this.client.connect();
+  }
+
+  private key(id: string): string {
+    return `${this.config.prefix}:${id}`;
+  }
+
+  async get(id: string): Promise<T | null> {
+    const raw = await this.client.get(this.key(id));
+    return raw ? (JSON.parse(raw) as T) : null;
+  }
+
+  async set(id: string, value: T): Promise<void> {
+    await this.client.setEx(this.key(id), this.config.ttlSeconds, JSON.stringify(value));
+  }
+
+  async invalidate(id: string): Promise<void> {
+    await this.client.del(this.key(id));
+  }
+
+  async disconnect(): Promise<void> {
+    await this.client.quit();
+  }
+}
+
+// Usage: caching LLM responses
+interface LlmResponse {
+  text: string;
+  tokensUsed: number;
+  model: string;
+}
+
+const responseCache = new CacheService<LlmResponse>({
+  ttlSeconds: 300,
+  prefix: "llm:response",
+});
+
+await responseCache.connect();
+const cached = await responseCache.get("prompt-hash-abc123");
+```
+
+### Token Bucket Rate Limiter
+
+```typescript
+// TypeScript: Token-bucket rate limiter for AI API cost control
+interface BucketState {
+  tokens: number;
+  lastRefill: number;
+}
+
+class TokenBucketRateLimiter {
+  private buckets: Map<string, BucketState> = new Map();
+
+  constructor(
+    private capacity: number,    // max burst size
+    private refillRate: number,  // tokens per second
+  ) {}
+
+  private refill(key: string, now: number): void {
+    const bucket = this.buckets.get(key);
+    if (!bucket) return;
+    const elapsed = (now - bucket.lastRefill) / 1000;
+    bucket.tokens = Math.min(this.capacity, bucket.tokens + elapsed * this.refillRate);
+    bucket.lastRefill = now;
+  }
+
+  allow(key: string): boolean {
+    const now = Date.now();
+    let bucket = this.buckets.get(key);
+
+    if (!bucket) {
+      bucket = { tokens: this.capacity, lastRefill: now };
+      this.buckets.set(key, bucket);
+    }
+
+    this.refill(key, now);
+
+    if (bucket.tokens >= 1) {
+      bucket.tokens -= 1;
+      return true;
+    }
+
+    return false;
+  }
+
+  remaining(key: string): number {
+    const bucket = this.buckets.get(key);
+    if (!bucket) return this.capacity;
+    this.refill(key, Date.now());
+    return bucket.tokens;
+  }
+}
+
+// Usage: limit OpenAI calls to 60 requests/minute with burst of 10
+const openAiLimiter = new TokenBucketRateLimiter(10, 1); // burst 10, refill 1/sec
+
+async function callLlm(prompt: string): Promise<string | null> {
+  const key = `user:${prompt.slice(0, 20)}`;
+  if (!openAiLimiter.allow(key)) {
+    console.warn(`Rate limited — ${openAiLimiter.remaining(key)} tokens remaining`);
+    return null;
+  }
+  // ... actual API call
+  return "response";
+}
+```
+
+### Sliding Window Rate Limiter
+
+```typescript
+// TypeScript: Sliding-window log for precise rate enforcement
+interface WindowEntry {
+  timestamp: number;
+}
+
+class SlidingWindowRateLimiter {
+  private windows: Map<string, WindowEntry[]> = new Map();
+
+  constructor(
+    private windowMs: number,
+    private maxRequests: number,
+  ) {}
+
+  allow(key: string): boolean {
+    const now = Date.now();
+    const cutoff = now - this.windowMs;
+    let entries = this.windows.get(key) ?? [];
+
+    // Remove expired entries
+    entries = entries.filter((e) => e.timestamp > cutoff);
+
+    if (entries.length >= this.maxRequests) {
+      this.windows.set(key, entries);
+      return false;
+    }
+
+    entries.push({ timestamp: now });
+    this.windows.set(key, entries);
+    return true;
+  }
+
+  usage(key: string): { current: number; limit: number; resetsInMs: number } {
+    const now = Date.now();
+    const entries = this.windows.get(key) ?? [];
+    const cutoff = now - this.windowMs;
+    const active = entries.filter((e) => e.timestamp > cutoff);
+    const oldestActive = active.length > 0 ? Math.min(...active.map((e) => e.timestamp)) : now;
+    return {
+      current: active.length,
+      limit: this.maxRequests,
+      resetsInMs: oldestActive + this.windowMs - now,
+    };
+  }
+}
+
+// Usage: enforce 100 requests per 60 seconds per API key
+const apiKeyLimiter = new SlidingWindowRateLimiter(60_000, 100);
+
+function checkRateLimit(apiKey: string): boolean {
+  return apiKeyLimiter.allow(apiKey);
+}
+```
+
+### JWT Token Service with Rotation
+
+```typescript
+// TypeScript: Refresh-token rotation with invalidation tracking
+import { randomBytes, createHash } from "node:crypto";
+
+interface TokenPair {
+  accessToken: string;
+  refreshToken: string;
+}
+
+interface StoredRefresh {
+  userId: string;
+  family: string;   // token family for rotation detection
+  expiresAt: number;
+}
+
+class JwtRotationService {
+  private store: Map<string, StoredRefresh> = new Map(); // In production: Redis
+  private revokedFamilies: Set<string> = new Set();
+
+  private hash(token: string): string {
+    return createHash("sha256").update(token).digest("hex");
+  }
+
+  issuePair(userId: string): TokenPair {
+    const family = randomBytes(16).toString("hex");
+    const accessToken = randomBytes(32).toString("hex");
+    const refreshToken = randomBytes(64).toString("hex");
+
+    this.store.set(this.hash(refreshToken), {
+      userId,
+      family,
+      expiresAt: Date.now() + 7 * 24 * 60 * 60 * 1000, // 7 days
+    });
+
+    return { accessToken, refreshToken };
+  }
+
+  rotate(oldRefreshToken: string): TokenPair | { error: string } {
+    const hash = this.hash(oldRefreshToken);
+    const stored = this.store.get(hash);
+
+    if (!stored) {
+      return { error: "Invalid refresh token" };
+    }
+
+    // Replay attack: same family used twice
+    if (this.revokedFamilies.has(stored.family)) {
+      this.revokeFamily(stored.family); // revoke ALL tokens in this family
+      return { error: "Token family compromised — all tokens revoked" };
+    }
+
+    // Revoke old token family (rotation)
+    this.revokeFamily(stored.family);
+
+    // Issue new pair with NEW family
+    const newFamily = randomBytes(16).toString("hex");
+    const accessToken = randomBytes(32).toString("hex");
+    const refreshToken = randomBytes(64).toString("hex");
+
+    this.store.set(this.hash(refreshToken), {
+      userId: stored.userId,
+      family: newFamily,
+      expiresAt: Date.now() + 7 * 24 * 60 * 60 * 1000,
+    });
+
+    return { accessToken, refreshToken };
+  }
+
+  private revokeFamily(family: string): void {
+    this.revokedFamilies.add(family);
+    // In production: also remove all store entries matching family
+  }
+}
+```
+
+### API Versioning Strategy Pattern
+
+```typescript
+// TypeScript: Express/Fastify-style versioned route registration
+import { Router, Request, Response } from "express";
+
+interface VersionedRoute {
+  version: number;
+  path: string;
+  handler: (req: Request, res: Response) => void | Promise<void>;
+}
+
+class ApiVersionManager {
+  private routers: Map<number, Router> = new Map();
+  private routes: VersionedRoute[] = [];
+
+  register(route: VersionedRoute): void {
+    this.routes.push(route);
+  }
+
+  build(): Map<number, Router> {
+    for (const route of this.routes) {
+      if (!this.routers.has(route.version)) {
+        this.routers.set(route.version, Router());
+      }
+      const router = this.routers.get(route.version)!;
+      router.get(route.path, route.handler);
+    }
+    return this.routers;
+  }
+}
+
+// Example
+const mgr = new ApiVersionManager();
+
+mgr.register({
+  version: 1,
+  path: "/query",
+  handler: async (req, res) => {
+    res.json({ answer: `v1: ${req.query.q}` });
+  },
+});
+
+mgr.register({
+  version: 2,
+  path: "/query",
+  handler: async (req, res) => {
+    res.json({ answer: `v2: ${req.query.q}`, sources: [] });
+  },
+});
+```
+
+## Architecture Diagrams — Phase 0 Patterns
+
+### Redis Usage Patterns
+
+```mermaid
+flowchart LR
+    subgraph Client["Client"]
+        A["FastAPI App"]
+    end
+
+    subgraph Redis["Redis"]
+        direction TB
+        CACHE["Cache Layer<br/>SETEX / GET<br/>TTL-based expiry<br/>Response caching"]
+        QUEUE["Queue Layer<br/>RPUSH / BLPOP<br/>Durable background jobs<br/>RQ / Celery"]
+        PUBSUB["Pub/Sub Layer<br/>PUBLISH / SUBSCRIBE<br/>Fire-and-forget events<br/>Real-time notifications"]
+    end
+
+    A -- "Cache API responses" --> CACHE
+    A -- "Enqueue document ingestion" --> QUEUE
+    A -- "Broadcast pipeline events" --> PUBSUB
+    QUEUE -- "Processed by workers" --> W["Background Workers"]
+```
+
+### JWT Refresh-Token Rotation Flow
+
+```mermaid
+sequenceDiagram
+    participant C as Client
+    participant A as Auth API
+    participant S as Token Store (Redis)
+
+    Note over C,A: Initial Login
+    C->>A: POST /auth/login (credentials)
+    A->>S: Store refresh token hash
+    A-->>C: { access_token, refresh_token }
+
+    Note over C,A: Token Rotation
+    C->>A: POST /auth/refresh (refresh_token)
+    A->>S: Lookup hash → get token family
+    A->>S: Check family not revoked
+    A->>S: Remove old hash
+    A->>S: Store NEW hash with NEW family
+    A-->>C: { access_token: NEW, refresh_token: NEW }
+
+    Note over C,A: Replay Attack
+    C->>A: POST /auth/refresh (OLD refresh_token)
+    A->>S: Lookup hash → not found
+    A->>S: Check family → already revoked!
+    A->>S: Revoke ALL tokens in this family
+    A-->>C: 401 "Token family compromised"
+```
+
+### Rate Limiting Algorithms
+
+```mermaid
+flowchart TB
+    subgraph TB["Token Bucket"]
+        T1["Bucket: 10 tokens"]
+        T2["Refill: 1 token/sec"]
+        T3["Allows bursts up to 10"]
+        T4["Good for: AI endpoints,<br/>spiky cost patterns"]
+    end
+
+    subgraph SW["Sliding Window"]
+        S1["Window: 60 seconds"]
+        S2["Limit: 100 requests"]
+        S3["Precise per-window cap"]
+        S4["Good for: login endpoints,<br/>rate guarantees"]
+    end
+
+    subgraph FW["Fixed Window"]
+        F1["Window: 1 minute"]
+        F2["Reset at boundary"]
+        F3["Edge burst: 2x limit"]
+        F4["Good for: simple rate caps,<br/>dashboard stats"]
+    end
+
+    REQ["Incoming Request"] --> CHECK{"Rate Limit Check"}
+    CHECK --> TB
+    CHECK --> SW
+    CHECK --> FW
+    TB --> ALLOW["Allow + Deduct Token"]
+    SW --> ALLOW
+    FW --> ALLOW
+    TB --> DENY["429 Too Many Requests"]
+    SW --> DENY
+    FW --> DENY
+```
+
+---
+
 ## Phase 0 Done Checkpoint
 
 Before moving to Phase 1, you should be able to:

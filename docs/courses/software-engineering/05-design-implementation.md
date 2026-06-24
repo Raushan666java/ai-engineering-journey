@@ -521,6 +521,343 @@ console.log(`${coffee.getDescription()} costs $${coffee.getCost()}`);
 
 **Answer: B** — The Decorator pattern dynamically adds responsibilities to objects.
 
+## SOLID Principle Compliance Checker
+
+```typescript
+type ViolationSeverity = 'critical' | 'major' | 'minor';
+type SolidPrinciple = 'SRP' | 'OCP' | 'LSP' | 'ISP' | 'DIP';
+
+interface Violation {
+  principle: SolidPrinciple;
+  className: string;
+  severity: ViolationSeverity;
+  description: string;
+  recommendation: string;
+}
+
+interface ClassDescriptor {
+  name: string;
+  methods: string[];
+  fields: string[];
+  dependencies: string[];
+  interfaces: string[];
+  superClass?: string;
+  linesOfCode: number;
+}
+
+class SolidComplianceChecker {
+  public checkAll(classes: ClassDescriptor[]): Violation[] {
+    return [
+      ...this.checkSRP(classes),
+      ...this.checkOCP(classes),
+      ...this.checkLSP(classes),
+      ...this.checkISP(classes),
+      ...this.checkDIP(classes),
+    ];
+  }
+
+  private checkSRP(classes: ClassDescriptor[]): Violation[] {
+    const violations: Violation[] = [];
+    for (const cls of classes) {
+      const responsibilityGroups = this.identifyResponsibilities(cls);
+      if (responsibilityGroups.size > 4) {
+        violations.push({
+          principle: 'SRP',
+          className: cls.name,
+          severity: 'critical',
+          description: `Class has ${responsibilityGroups.size} distinct responsibilities: ${Array.from(responsibilityGroups).join(', ')}`,
+          recommendation: `Split ${cls.name} into ${responsibilityGroups.size} separate classes, each with one responsibility`,
+        });
+      } else if (responsibilityGroups.size >= 3) {
+        violations.push({
+          principle: 'SRP',
+          className: cls.name,
+          severity: 'major',
+          description: `Class may have multiple responsibilities: ${Array.from(responsibilityGroups).join(', ')}`,
+          recommendation: 'Consider extracting related methods into separate classes',
+        });
+      }
+    }
+    return violations;
+  }
+
+  private identifyResponsibilities(cls: ClassDescriptor): Set<string> {
+    const responsibilities = new Set<string>();
+    const patterns: [RegExp, string][] = [
+      [/(save|persist|store|update|delete|insert|remove)/i, 'Data Persistence'],
+      [/(validate|check|verify|ensure)/i, 'Validation'],
+      [/(send|notify|email|push|publish)/i, 'Notification'],
+      [/(render|display|format|show|present|export|generate)/i, 'Presentation'],
+      [/(calculate|compute|process|aggregate|transform)/i, 'Business Logic'],
+      [/(log|audit|trace|monitor)/i, 'Logging / Monitoring'],
+      [/(parse|deserialize|serialize|convert|map)/i, 'Data Transformation'],
+      [/(auth|login|logout|authorize|authenticate)/i, 'Authentication'],
+      [/(config|configure|settings)/i, 'Configuration'],
+      [/(connect|disconnect|query|execute|fetch)/i, 'Data Access'],
+    ];
+    for (const method of cls.methods) {
+      for (const [pattern, resp] of patterns) {
+        if (pattern.test(method)) {
+          responsibilities.add(resp);
+        }
+      }
+    }
+    return responsibilities;
+  }
+
+  private checkOCP(classes: ClassDescriptor[]): Violation[] {
+    const violations: Violation[] = [];
+    for (const cls of classes) {
+      const switchPattern = /\b(if\s+.*\b(type|kind|categor|variant)\b|switch\s*\(.*\b(type|kind)\b)/i;
+      const riskyMethods = cls.methods.filter((m) => switchPattern.test(m));
+      if (riskyMethods.length > 0) {
+        violations.push({
+          principle: 'OCP',
+          className: cls.name,
+          severity: 'major',
+          description: `Methods ${riskyMethods.join(', ')} use type-checking conditionals that violate Open-Closed`,
+          recommendation: 'Replace type-based conditionals with polymorphic dispatch via interfaces',
+        });
+      }
+    }
+    return violations;
+  }
+
+  private checkLSP(classes: ClassDescriptor[]): Violation[] {
+    const violations: Violation[] = [];
+    for (const cls of classes) {
+      if (cls.superClass) {
+        const overrideMethods = cls.methods.filter((m) =>
+          m.startsWith('override ')
+        );
+        const throwingOverride = cls.methods.filter((m) =>
+          m.includes('throw new Error') && m.includes('Not implemented')
+        );
+        if (throwingOverride.length > 0) {
+          violations.push({
+            principle: 'LSP',
+            className: cls.name,
+            severity: 'critical',
+            description: `${cls.name} overrides methods with "not implemented" exceptions, breaking substitutability`,
+            recommendation: 'Either implement the method properly or use composition instead of inheritance',
+          });
+        }
+      }
+    }
+    return violations;
+  }
+
+  private checkISP(classes: ClassDescriptor[]): Violation[] {
+    const violations: Violation[] = [];
+    for (const cls of classes) {
+      if (cls.interfaces.length > 0) {
+        const methodNames = new Set(cls.methods.map((m) => m.split('(')[0].split(' ').pop()!));
+        for (const iface of cls.interfaces) {
+          if (cls.dependencies.includes(iface)) {
+            violations.push({
+              principle: 'ISP',
+              className: cls.name,
+              severity: 'minor',
+              description: `${cls.name} depends on methods from ${iface} it may not use`,
+              recommendation: `Split ${iface} into smaller, focused interfaces`,
+            });
+          }
+        }
+      }
+    }
+    return violations;
+  }
+
+  private checkDIP(classes: ClassDescriptor[]): Violation[] {
+    const violations: Violation[] = [];
+    const concreteClassPattern = /^(Postgres|Mongo|MySQL|Redis|AWS|Azure|GCP|Concrete)/;
+    for (const cls of classes) {
+      for (const dep of cls.dependencies) {
+        if (concreteClassPattern.test(dep)) {
+          violations.push({
+            principle: 'DIP',
+            className: cls.name,
+            severity: 'major',
+            description: `${cls.name} depends directly on concrete class ${dep} instead of an abstraction`,
+            recommendation: `Create an interface for ${dep} and inject it through the constructor`,
+          });
+        }
+      }
+    }
+    return violations;
+  }
+}
+
+// Design Pattern Registry
+interface PatternDefinition {
+  name: string;
+  type: 'creational' | 'structural' | 'behavioral';
+  intent: string;
+  participants: string[];
+  problem: string;
+  solution: string;
+  applicableWhen: string[];
+  consequences: string[];
+}
+
+class DesignPatternRegistry {
+  private patterns: Map<string, PatternDefinition> = new Map();
+
+  constructor() {
+    this.registerBuiltIn();
+  }
+
+  private registerBuiltIn(): void {
+    this.register({
+      name: 'Singleton',
+      type: 'creational',
+      intent: 'Ensure a class has only one instance and provide a global point of access',
+      participants: ['Singleton', 'Client'],
+      problem: 'Exactly one instance of a class is needed with controlled access',
+      solution: 'Make constructor private, provide static getInstance() method',
+      applicableWhen: ['Shared resource access', 'Configuration manager', 'Connection pool'],
+      consequences: ['Global state', 'Difficult to test', 'Violates SRP in some contexts'],
+    });
+    this.register({
+      name: 'Factory Method',
+      type: 'creational',
+      intent: 'Define an interface for creating objects but let subclasses decide which class to instantiate',
+      participants: ['Product', 'ConcreteProduct', 'Creator', 'ConcreteCreator'],
+      problem: 'A class cannot anticipate the exact objects it needs to create',
+      solution: 'Encapsulate object creation in a separate method that subclasses override',
+      applicableWhen: ['Object creation logic varies', 'Reducing coupling'],
+      consequences: ['Subclassing required', 'Parallel class hierarchies'],
+    });
+    this.register({
+      name: 'Observer',
+      type: 'behavioral',
+      intent: 'Define a one-to-many dependency so that when one object changes state, dependents are notified',
+      participants: ['Subject', 'Observer', 'ConcreteSubject', 'ConcreteObserver'],
+      problem: 'Multiple objects need to stay consistent with another object\'s state',
+      solution: 'Subject maintains list of observers and notifies them on state change',
+      applicableWhen: ['Event handling systems', 'UI updates from model', 'Distributed event systems'],
+      consequences: ['Unexpected updates', 'Memory leaks if observers not deregistered'],
+    });
+    this.register({
+      name: 'Strategy',
+      type: 'behavioral',
+      intent: 'Define a family of algorithms, encapsulate each, and make them interchangeable',
+      participants: ['Strategy', 'ConcreteStrategy', 'Context'],
+      problem: 'Multiple algorithms exist for the same task and should be swappable at runtime',
+      solution: 'Encapsulate algorithms behind a common interface; context delegates to strategy',
+      applicableWhen: ['Multiple algorithm variants', 'Conditional logic proliferation'],
+      consequences: ['Increased number of objects', 'Clients must understand strategy differences'],
+    });
+    this.register({
+      name: 'Adapter',
+      type: 'structural',
+      intent: 'Convert the interface of a class into another interface that clients expect',
+      participants: ['Target', 'Adapter', 'Adaptee', 'Client'],
+      problem: 'Existing class has the right functionality but wrong interface',
+      solution: 'Create adapter class that wraps the adaptee and implements the target interface',
+      applicableWhen: ['Legacy system integration', 'Third-party library wrapping'],
+      consequences: ['Adds indirection', 'Can be overused for every minor mismatch'],
+    });
+    this.register({
+      name: 'Decorator',
+      type: 'structural',
+      intent: 'Attach additional responsibilities to an object dynamically',
+      participants: ['Component', 'ConcreteComponent', 'Decorator', 'ConcreteDecorator'],
+      problem: 'Responsibilities need to be added to individual objects, not to whole classes',
+      solution: 'Wrap object in decorator classes that add behavior before/after delegating',
+      applicableWhen: ['Layers of functionality', 'Feature flags', 'Cross-cutting concerns'],
+      consequences: ['Many small classes', 'Complicates object identity'],
+    });
+  }
+
+  public register(def: PatternDefinition): void {
+    this.patterns.set(def.name.toLowerCase(), def);
+  }
+
+  public getPattern(name: string): PatternDefinition | undefined {
+    return this.patterns.get(name.toLowerCase());
+  }
+
+  public findByProblem(keyword: string): PatternDefinition[] {
+    return Array.from(this.patterns.values()).filter(
+      (p) =>
+        p.problem.toLowerCase().includes(keyword.toLowerCase()) ||
+        p.applicableWhen.some((a) => a.toLowerCase().includes(keyword.toLowerCase()))
+    );
+  }
+
+  public findByType(type: PatternDefinition['type']): PatternDefinition[] {
+    return Array.from(this.patterns.values()).filter((p) => p.type === type);
+  }
+
+  public compare(nameA: string, nameB: string): { common: string[]; differences: string[] } {
+    const a = this.patterns.get(nameA.toLowerCase());
+    const b = this.patterns.get(nameB.toLowerCase());
+    if (!a || !b) throw new Error('One or both patterns not found');
+    return {
+      common: [
+        a.type === b.type ? `Both are ${a.type} patterns` : '',
+        a.participants.some((p) => b.participants.includes(p))
+          ? `Shared participant: ${a.participants.filter((p) => b.participants.includes(p)).join(', ')}`
+          : '',
+      ].filter(Boolean),
+      differences: [
+        a.type !== b.type ? `${a.name} is ${a.type}, ${b.name} is ${b.type}` : '',
+        a.applicableWhen.filter((x) => !b.applicableWhen.includes(x)).length > 0
+          ? `${a.name} applicable when: ${a.applicableWhen.filter((x) => !b.applicableWhen.includes(x)).join(', ')}`
+          : '',
+        b.applicableWhen.filter((x) => !a.applicableWhen.includes(x)).length > 0
+          ? `${b.name} applicable when: ${b.applicableWhen.filter((x) => !a.applicableWhen.includes(x)).join(', ')}`
+          : '',
+      ].filter(Boolean),
+    };
+  }
+}
+
+// Usage
+const checker = new SolidComplianceChecker();
+const violations = checker.checkAll([
+  {
+    name: 'OrderService',
+    methods: ['save(order)', 'sendConfirmation(order)', 'generateInvoice(order)', 'validatePayment(order)', 'logActivity(entry)', 'parseWebhook(payload)', 'renderReceipt(order)'],
+    fields: ['repository', 'emailService', 'logger'],
+    dependencies: ['PostgresOrderRepository'],
+    interfaces: ['OrderProcessor'],
+    linesOfCode: 350,
+  },
+]);
+console.log('SOLID Violations:');
+violations.forEach((v) => console.log(`  [${v.severity}] ${v.principle}: ${v.className} — ${v.description}`));
+
+const registry = new DesignPatternRegistry();
+console.log('\nAvailable Creational Patterns:');
+registry.findByType('creational').forEach((p) => console.log(`  - ${p.name}: ${p.intent}`));
+```
+
+```mermaid
+graph TD
+    subgraph "Design Quality Pipeline"
+        SRC[Source Code] --> PARSER[AST Parser]
+        PARSER --> METRICS[Compute Metrics]
+        METRICS --> COHESION[Cohesion Analysis]
+        METRICS --> COUPLING[Coupling Analysis]
+        METRICS --> COMPLEXITY[Complexity Analysis]
+        
+        COHESION --> SRP[SRP Check]
+        COUPLING --> DIP[DIP Check]
+        COMPLEXITY --> OCP[OCP Check]
+        
+        SRP --> AGG2[Aggregate Violations]
+        DIP --> AGG2
+        OCP --> AGG2
+        
+        AGG2 --> REPORT[Generate Report]
+        REPORT --> SCORE[Quality Score]
+        REPORT --> VIOLATIONS[Violations List]
+        REPORT --> RECOMMEND[Recommendations]
+    end
+```
+
 ## Summary
 
 Design principles guide the creation of maintainable, understandable software. The SOLID principles address class-level design; DRY, KISS, and YAGNI promote simplicity and avoid duplication. Low coupling and high cohesion are the primary indicators of design quality. GoF design patterns (Singleton, Factory, Observer, Strategy, Adapter, Decorator) provide reusable solutions to common problems. Design by contract formalises preconditions, postconditions, and invariants. Refactoring systematically improves design without changing behaviour. Design reviews provide structured evaluation of design quality.

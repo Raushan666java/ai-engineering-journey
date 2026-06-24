@@ -541,9 +541,62 @@ class CriticalPathAnalyzer {
 
 **Answer: B** — CV = EV - AC = $200K - $230K = -$30K (over budget).
 
+### TypeScript: Risk Register
+
+```typescript
+interface Risk {
+  id: string;
+  description: string;
+  probability: number; // 0 to 1
+  impact: number; // 1 to 5
+  exposure: number; // probability * impact
+  mitigation: string;
+  owner: string;
+  status: "identified" | "mitigated" | "monitoring" | "closed";
+}
+
+class RiskManager {
+  private risks: Risk[] = [];
+
+  add(risk: Risk): void { this.risks.push(risk); }
+
+  prioritize(): Risk[] {
+    return [...this.risks].sort((a, b) => b.exposure - a.exposure);
+  }
+
+  topRisks(n = 5): Risk[] { return this.prioritize().slice(0, n); }
+
+  byStatus(status: Risk["status"]): Risk[] {
+    return this.risks.filter(r => r.status === status);
+  }
+
+  exposureByCategory(): number {
+    return this.risks.reduce((sum, r) => sum + r.exposure, 0);
+  }
+}
+```
+
+### TypeScript: PERT Estimation
+
+```typescript
+interface PERTInput { optimistic: number; mostLikely: number; pessimistic: number; }
+
+function pertEstimate(input: PERTInput): { expected: number; stdDev: number } {
+  const expected = (input.optimistic + 4 * input.mostLikely + input.pessimistic) / 6;
+  const stdDev = (input.pessimistic - input.optimistic) / 6;
+  return { expected, stdDev };
+}
+
+function pertRange(input: PERTInput, confidence = 0.95): { low: number; high: number } {
+  const { expected, stdDev } = pertEstimate(input);
+  const z = confidence === 0.95 ? 1.96 : confidence === 0.68 ? 1 : 2.58;
+  return { low: expected - z * stdDev, high: expected + z * stdDev };
+}
+```
+
 ## Summary
 
-Software project management addresses the challenges of planning, estimating, scheduling, and controlling software projects. The Work Breakdown Structure decomposes work into manageable units. Estimation techniques range from expert judgement to algorithmic models (function points, COCOMO II). Scheduling methods include Gantt charts for visualisation, PERT for uncertainty, and CPM for critical path analysis. Risk management identifies, analyses, and responds to potential problems. Earned Value Management integrates scope, schedule, and cost into objective performance metrics. Team organisation patterns balance authority with collaboration. Effective project management is essential for delivering quality software on time and within budget.
+Software project management addresses the challenges of planning, estimating, scheduling, and controlling software projects. The Work Breakdown Structure decomposes work into manageable units. Estimation techniques range from expert judgement to algorithmic models (function points, COCOMO II). Scheduling methods include Gantt charts for visualisation, PERT for uncertainty, and CPM for critical path analysis. Risk management identifies, analyses, and responds to potential problems. Earned Value Management integrates scope, scope, schedule, and cost into objective performance metrics. Team organisation patterns balance authority with collaboration. Effective project management is essential for delivering quality software on time and within budget.
 
 ## Exercises
 

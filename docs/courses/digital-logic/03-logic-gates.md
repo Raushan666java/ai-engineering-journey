@@ -458,6 +458,303 @@ A CMOS gate operates at V_{DD} = 3.3 V, drives a 15 pF load, and switches at 100
 5. **Tri-state enables shared buses** — but ensuring only one driver is active at a time is critical.
 6. **Open-drain for wired-AND** — useful for shared interrupt lines and I²C protocol.
 
+## TypeScript Examples
+
+### Logic Gate Simulator
+
+This class simulates all seven fundamental logic gates and demonstrates universal gate conversions:
+
+```typescript
+type Bit = 0 | 1;
+
+class LogicGate {
+  static and(a: Bit, b: Bit): Bit { return (a & b) as Bit; }
+  static or(a: Bit, b: Bit): Bit { return (a | b) as Bit; }
+  static not(a: Bit): Bit { return (a ^ 1) as Bit; }
+  static nand(a: Bit, b: Bit): Bit { return ((a & b) ^ 1) as Bit; }
+  static nor(a: Bit, b: Bit): Bit { return ((a | b) ^ 1) as Bit; }
+  static xor(a: Bit, b: Bit): Bit { return (a ^ b) as Bit; }
+  static xnor(a: Bit, b: Bit): Bit { return ((a ^ b) ^ 1) as Bit; }
+
+  static truthTable(gate: string, fn: (...args: Bit[]) => Bit, inputs: number = 2): void {
+    console.log(`\n=== ${gate} Truth Table ===`);
+    const header = inputs === 2 ? "A | B | F" : "A | F";
+    console.log(`  ${header}`);
+    console.log(`  ${inputs === 2 ? "--- | --- | ---" : "--- | ---"}`);
+    const rows = inputs === 2 ? [[0, 0], [0, 1], [1, 0], [1, 1]] : [[0], [1]];
+    for (const args of rows) {
+      const result = fn(...(args as [Bit, Bit]));
+      console.log(`  ${args.join(" | ")} | ${result}`);
+    }
+  }
+}
+
+const gate = LogicGate;
+console.log("=== Fundamental Logic Gates ===");
+gate.truthTable("AND", gate.and);
+gate.truthTable("OR", gate.or);
+gate.truthTable("NOT", gate.not, 1);
+gate.truthTable("NAND", gate.nand);
+gate.truthTable("NOR", gate.nor);
+gate.truthTable("XOR", gate.xor);
+gate.truthTable("XNOR", gate.xnor);
+```
+
+### Universal Gate Conversions
+
+Demonstrating how NAND and NOR gates can implement all other gate types:
+
+```typescript
+class UniversalGates {
+  // NAND-based implementations
+  static nandAsNot(a: Bit): Bit { return LogicGate.nand(a, a); }
+  static nandAsAnd(a: Bit, b: Bit): Bit { return this.nandAsNot(LogicGate.nand(a, b)); }
+  static nandAsOr(a: Bit, b: Bit): Bit {
+    return LogicGate.nand(this.nandAsNot(a), this.nandAsNot(b));
+  }
+  static nandAsXor(a: Bit, b: Bit): Bit {
+    const n1 = LogicGate.nand(a, b);
+    const n2 = LogicGate.nand(a, n1);
+    const n3 = LogicGate.nand(b, n1);
+    return LogicGate.nand(n2, n3);
+  }
+
+  // NOR-based implementations
+  static norAsNot(a: Bit): Bit { return LogicGate.nor(a, a); }
+  static norAsOr(a: Bit, b: Bit): Bit { return this.norAsNot(LogicGate.nor(a, b)); }
+  static norAsAnd(a: Bit, b: Bit): Bit {
+    return LogicGate.nor(this.norAsNot(a), this.norAsNot(b));
+  }
+  static norAsXor(a: Bit, b: Bit): Bit {
+    const n1 = LogicGate.nor(a, b);
+    const n2 = LogicGate.nor(a, n1);
+    const n3 = LogicGate.nor(b, n1);
+    return LogicGate.nor(n2, n3);
+  }
+}
+
+const ug = UniversalGates;
+console.log("\n=== NAND Universal Gate Conversions ===");
+for (const a of [0, 1] as Bit[]) {
+  for (const b of [0, 1] as Bit[]) {
+    console.log(`  A=${a} B=${b}: NOT=${ug.nandAsNot(a)} AND=${ug.nandAsAnd(a,b)} OR=${ug.nandAsOr(a,b)} XOR=${ug.nandAsXor(a,b)}`);
+  }
+}
+
+console.log("\n=== NOR Universal Gate Conversions ===");
+for (const a of [0, 1] as Bit[]) {
+  for (const b of [0, 1] as Bit[]) {
+    console.log(`  A=${a} B=${b}: NOT=${ug.norAsNot(a)} OR=${ug.norAsOr(a,b)} AND=${ug.norAsAnd(a,b)} XOR=${ug.norAsXor(a,b)}`);
+  }
+}
+```
+
+### Gate Network Composer
+
+Building complex functions from fundamental gates:
+
+```typescript
+class GateNetwork {
+  static halfAdder(a: Bit, b: Bit): { sum: Bit; carry: Bit } {
+    return { sum: LogicGate.xor(a, b), carry: LogicGate.and(a, b) };
+  }
+
+  static fullAdder(a: Bit, b: Bit, carryIn: Bit): { sum: Bit; carryOut: Bit } {
+    const ha1 = this.halfAdder(a, b);
+    const ha2 = this.halfAdder(ha1.sum, carryIn);
+    return {
+      sum: ha2.sum,
+      carryOut: LogicGate.or(ha1.carry, ha2.carry)
+    };
+  }
+
+  static fourBitRippleCarry(
+    a: [Bit, Bit, Bit, Bit],
+    b: [Bit, Bit, Bit, Bit]
+  ): { sum: [Bit, Bit, Bit, Bit]; carry: Bit; overflow: boolean } {
+    const fa0 = this.fullAdder(a[3], b[3], 0);
+    const fa1 = this.fullAdder(a[2], b[2], fa0.carryOut);
+    const fa2 = this.fullAdder(a[1], b[1], fa1.carryOut);
+    const fa3 = this.fullAdder(a[0], b[0], fa2.carryOut);
+    const overflow = fa2.carryOut !== fa3.carryOut;
+    return {
+      sum: [fa3.sum, fa2.sum, fa1.sum, fa0.sum],
+      carry: fa3.carryOut,
+      overflow
+    };
+  }
+
+  static mux2x1(sel: Bit, a: Bit, b: Bit): Bit {
+    return LogicGate.or(
+      LogicGate.and(LogicGate.not(sel), a),
+      LogicGate.and(sel, b)
+    );
+  }
+
+  static decoder1x2(input: Bit): [Bit, Bit] {
+    return [LogicGate.not(input), input];
+  }
+}
+
+const net = GateNetwork;
+console.log("\n=== Gate Network: 4-bit Ripple Carry ===");
+const a: [Bit, Bit, Bit, Bit] = [0, 1, 0, 1];
+const b: [Bit, Bit, Bit, Bit] = [0, 0, 1, 1];
+const r = net.fourBitRippleCarry(a, b);
+console.log(`  ${a.join("")} + ${b.join("")} = ${r.sum.join("")} (carry=${r.carry}, overflow=${r.overflow})`);
+
+console.log("\n=== Gate Network: 2-to-1 Multiplexer ===");
+for (const sel of [0, 1] as Bit[]) {
+  console.log(`  sel=${sel}: mux(${sel}, 1, 0) = ${net.mux2x1(sel, 1, 0)}`);
+}
+
+console.log("\n=== Gate Network: 1-to-2 Decoder ===");
+for (const input of [0, 1] as Bit[]) {
+  const [y0, y1] = net.decoder1x2(input);
+  console.log(`  input=${input}: y0=${y0}, y1=${y1}`);
+}
+```
+
+### Propagation Delay Simulator
+
+```typescript
+class TimingSimulator {
+  static readonly GATE_DELAY_NS: Record<string, number> = {
+    AND: 10, OR: 10, NAND: 8, NOR: 8, NOT: 5, XOR: 15, XNOR: 15
+  };
+
+  static criticalPath(gates: string[][]): { path: string[]; delay: number } {
+    let maxDelay = 0;
+    let maxPath: string[] = [];
+
+    for (const path of gates) {
+      const delay = path.reduce((sum, g) => sum + (this.GATE_DELAY_NS[g] ?? 10), 0);
+      if (delay > maxDelay) {
+        maxDelay = delay;
+        maxPath = path;
+      }
+    }
+    return { path: maxPath, delay: maxDelay };
+  }
+}
+
+console.log("\n=== Propagation Delay Analysis ===");
+const paths = [
+  { name: "4-bit AND chain", gates: ["AND", "AND", "AND", "AND"] },
+  { name: "Ripple-carry path", gates: ["XOR", "AND", "OR", "XOR", "AND", "OR", "XOR"] },
+  { name: "NAND-only decoder", gates: ["NAND", "NAND", "NAND"] },
+  { name: "XOR tree (8-bit)", gates: ["XOR", "XOR", "XOR", "XOR", "XOR", "XOR", "XOR"] },
+];
+
+for (const p of paths) {
+  const r = TimingSimulator.criticalPath([p.gates]);
+  console.log(`  ${p.name}: ${r.delay}ns (${p.gates.length} gates)`);
+}
+
+const freq = 1_000_000_000 / TimingSimulator.criticalPath([paths[1].gates]).delay;
+console.log(`\n  Max clock frequency (ripple-carry): ${(freq / 1_000_000).toFixed(2)} MHz`);
+```
+
+### Tri-State Bus Controller
+
+```typescript
+class TriStateBus {
+  static drive(data: Bit, enable: Bit): Bit | null {
+    return enable ? data : null;
+  }
+
+  static priorityArbiter(requests: [Bit, Bit, Bit, Bit]): [Bit, Bit, Bit, Bit] {
+    const enables: [Bit, Bit, Bit, Bit] = [0, 0, 0, 0];
+    if (requests[0]) { enables[0] = 1; }
+    else if (requests[1]) { enables[1] = 1; }
+    else if (requests[2]) { enables[2] = 1; }
+    else if (requests[3]) { enables[3] = 1; }
+    return enables;
+  }
+}
+
+console.log("\n=== Tri-State Bus Arbiter ===");
+const testRequests: [Bit, Bit, Bit, Bit][] = [
+  [0, 0, 0, 0], [1, 0, 0, 0], [0, 1, 0, 0], [1, 1, 0, 0], [0, 0, 1, 1], [0, 1, 1, 1]
+];
+for (const req of testRequests) {
+  const en = TriStateBus.priorityArbiter(req);
+  const active = en.findIndex(e => e === 1);
+  console.log(`  Req=${req.join("")} → En=${en.join("")} (M${active >= 0 ? active + 1 : "none"} drives bus)`);
+}
+```
+
+## Mermaid Diagrams
+
+### Fundamental Logic Gate Symbols
+
+```mermaid
+flowchart LR
+    subgraph AND[AND & NAND]
+        A1[A] -->|&| Y1[Y = A·B]
+        B1[B] -->|&| Y1
+    end
+    subgraph OR[OR & NOR]
+        A2[A] -->|≥1| Y2[Y = A+B]
+        B2[B] -->|≥1| Y2
+    end
+    subgraph NOT[NOT]
+        A3[A] -->|1| Y3[Y = A']
+    end
+    subgraph XOR[XOR & XNOR]
+        A4[A] -->|=1| Y4[Y = A⊕B]
+        B4[B] -->|=1| Y4
+    end
+```
+
+### Universal Gate Conversions (NAND)
+
+```mermaid
+flowchart TD
+    subgraph NAND_Only[NAND as Universal Gate]
+        NA[INV: NAND A,A] --> NAo[A']
+        NAND_AB[NAND A,B] --> NAND_A[NAND with A,A] --> AAND[AND A·B]
+        NAND_AB2[NAND A,B] --> NAND_B
+        NA_A[NAND A,A] --> NAND_BB[NAND B,B] --> NAND_AB3[NAND ...] --> AOR[OR A+B]
+        N1[NAND A,B] --> NAND_N1[NAND A,N1]
+        N1 --> NAND_N2[NAND B,N1]
+        NAND_N1 --> NAND_N3[NAND N2,N3]
+        NAND_N2 --> NAND_N3
+        NAND_N3 --> AXOR[XOR A⊕B]
+    end
+```
+
+### Tri-State Bus Architecture
+
+```mermaid
+flowchart LR
+    M1[Module 1] -->|Data| T1[Tri-State<br/>Buffer 1]
+    M2[Module 2] -->|Data| T2[Tri-State<br/>Buffer 2]
+    M3[Module 3] -->|Data| T3[Tri-State<br/>Buffer 3]
+    Arbiter[Priority<br/>Arbiter] -->|Enable 1| T1
+    Arbiter -->|Enable 2| T2
+    Arbiter -->|Enable 3| T3
+    T1 --> Bus[Shared Data Bus]
+    T2 --> Bus
+    T3 --> Bus
+```
+
+### CMOS Inverter Structure
+
+```mermaid
+flowchart TD
+    VDD[VDD] --> P[PMOS<br/>Q₁]
+    Input[Input A] --> P
+    Input --> N[NMOS<br/>Q₂]
+    P --> Output[Output Y = A']
+    N --> Output
+    N --> GND[GND]
+    subgraph Behavior
+        A1["A=0 → P ON, N OFF → Y=1"] -->|Pull-up to VDD| H[Output = VDD]
+        A0["A=1 → P OFF, N ON → Y=0"] -->|Pull-down to GND| L[Output = GND]
+    end
+```
+
 ## Summary
 
 - Seven fundamental gates exist: AND, OR, NOT, NAND, NOR, XOR, and XNOR.

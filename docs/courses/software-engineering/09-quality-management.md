@@ -584,9 +584,450 @@ class QualityTrendAnalyzer {
 
 **Answer: C** — ISO 25010 defines eight characteristics: functional suitability, reliability, performance efficiency, operability, security, compatibility, maintainability, portability.
 
+### Example 5: Test Coverage Calculator
+
+The test coverage calculator measures the proportion of source code exercised by the test suite across three dimensions: **line coverage**, **branch coverage**, and **function coverage**. These metrics help teams identify untested code paths and enforce coverage thresholds in CI pipelines.
+
+```typescript
+type CoverageType = 'line' | 'branch' | 'function';
+
+interface CoverageResult {
+  type: CoverageType;
+  covered: number;
+  total: number;
+  rate: number;
+}
+
+interface TestRun {
+  file: string;
+  totalLines: number;
+  exercisedLines: number;
+  totalBranches: number;
+  exercisedBranches: number;
+  totalFunctions: number;
+  exercisedFunctions: number;
+}
+
+class CoverageCalculator {
+  public lineCoverage(run: TestRun): CoverageResult {
+    const rate = run.totalLines > 0
+      ? run.exercisedLines / run.totalLines
+      : 0;
+    return {
+      type: 'line',
+      covered: run.exercisedLines,
+      total: run.totalLines,
+      rate,
+    };
+  }
+
+  public branchCoverage(run: TestRun): CoverageResult {
+    const rate = run.totalBranches > 0
+      ? run.exercisedBranches / run.totalBranches
+      : 0;
+    return {
+      type: 'branch',
+      covered: run.exercisedBranches,
+      total: run.totalBranches,
+      rate,
+    };
+  }
+
+  public functionCoverage(run: TestRun): CoverageResult {
+    const rate = run.totalFunctions > 0
+      ? run.exercisedFunctions / run.totalFunctions
+      : 0;
+    return {
+      type: 'function',
+      covered: run.exercisedFunctions,
+      total: run.totalFunctions,
+      rate,
+    };
+  }
+
+  public aggregate(files: TestRun[]): {
+    overall: CoverageResult[];
+    thresholds: { passed: boolean; failures: string[] };
+    minRate: number;
+  } {
+    const totals = files.reduce(
+      (acc, f) => ({
+        lines: acc.lines + f.totalLines,
+        exercisedLines: acc.exercisedLines + f.exercisedLines,
+        branches: acc.branches + f.totalBranches,
+        exercisedBranches: acc.exercisedBranches + f.exercisedBranches,
+        functions: acc.functions + f.totalFunctions,
+        exercisedFunctions: acc.exercisedFunctions + f.exercisedFunctions,
+      }),
+      {
+        lines: 0, exercisedLines: 0,
+        branches: 0, exercisedBranches: 0,
+        functions: 0, exercisedFunctions: 0,
+      }
+    );
+
+    const lineRate = totals.lines > 0 ? totals.exercisedLines / totals.lines : 0;
+    const branchRate = totals.branches > 0 ? totals.exercisedBranches / totals.branches : 0;
+    const funcRate = totals.functions > 0 ? totals.exercisedFunctions / totals.functions : 0;
+
+    const overall: CoverageResult[] = [
+      { type: 'line', covered: totals.exercisedLines, total: totals.lines, rate: lineRate },
+      { type: 'branch', covered: totals.exercisedBranches, total: totals.branches, rate: branchRate },
+      { type: 'function', covered: totals.exercisedFunctions, total: totals.functions, rate: funcRate },
+    ];
+
+    const minRate = Math.min(lineRate, branchRate, funcRate);
+    const failures: string[] = [];
+    const threshold = 0.80;
+
+    if (lineRate < threshold) failures.push(`Line coverage ${(lineRate * 100).toFixed(1)}% < 80%`);
+    if (branchRate < threshold) failures.push(`Branch coverage ${(branchRate * 100).toFixed(1)}% < 80%`);
+    if (funcRate < threshold) failures.push(`Function coverage ${(funcRate * 100).toFixed(1)}% < 80%`);
+
+    return {
+      overall,
+      thresholds: { passed: failures.length === 0, failures },
+      minRate,
+    };
+  }
+
+  public generateReport(files: TestRun[]): string {
+    const result = this.aggregate(files);
+    const rows = result.overall.map(
+      (r) => `  ${r.type.padEnd(12)} ${r.covered}/${r.total} (${(r.rate * 100).toFixed(1)}%)`
+    );
+    const status = result.thresholds.passed ? 'PASSED' : 'FAILED';
+    return [
+      '=== Coverage Report ===',
+      ...rows,
+      `  ${'─'.repeat(40)}`,
+      `  Status: ${status}`,
+      ...result.thresholds.failures.map((f) => `  ⚠ ${f}`),
+      `  Minimum coverage rate: ${(result.minRate * 100).toFixed(1)}%`,
+    ].join('\n');
+  }
+}
+
+// Usage example
+const calculator = new CoverageCalculator();
+const runs: TestRun[] = [
+  { file: 'auth.ts', totalLines: 120, exercisedLines: 115, totalBranches: 30, exercisedBranches: 28, totalFunctions: 8, exercisedFunctions: 8 },
+  { file: 'api.ts', totalLines: 200, exercisedLines: 140, totalBranches: 50, exercisedBranches: 30, totalFunctions: 15, exercisedFunctions: 12 },
+];
+console.log(calculator.generateReport(runs));
+```
+
+### Example 6: Quality Metrics Dashboard
+
+The quality metrics dashboard aggregates multiple quality dimensions into a single scoreboard, enabling teams to track trends and detect regressions at a glance. It normalises disparate metrics into a unified dashboard with traffic-light indicators.
+
+```typescript
+interface MetricDefinition {
+  name: string;
+  value: number;
+  unit: string;
+  threshold: { warning: number; critical: number };
+  direction: 'lower_is_better' | 'higher_is_better';
+}
+
+enum DashboardStatus {
+  HEALTHY = 'healthy',
+  WARNING = 'warning',
+  CRITICAL = 'critical',
+}
+
+interface DashboardEntry {
+  metric: string;
+  value: string;
+  status: DashboardStatus;
+  trend: 'up' | 'down' | 'flat';
+}
+
+class QualityDashboard {
+  private readonly history: Map<string, number[]> = new Map();
+
+  public evaluate(metrics: MetricDefinition[]): {
+    entries: DashboardEntry[];
+    overallStatus: DashboardStatus;
+    score: number;
+  } {
+    let totalScore = 0;
+    const entries: DashboardEntry[] = [];
+
+    for (const m of metrics) {
+      this.pushHistory(m.name, m.value);
+      const status = this.computeStatus(m);
+      const trend = this.computeTrend(m.name);
+      const statusWeight = status === DashboardStatus.HEALTHY ? 1
+        : status === DashboardStatus.WARNING ? 0.5 : 0;
+
+      totalScore += statusWeight;
+      entries.push({
+        metric: m.name,
+        value: `${m.value}${m.unit}`,
+        status,
+        trend,
+      });
+    }
+
+    const overallScore = metrics.length > 0
+      ? Math.round((totalScore / metrics.length) * 100)
+      : 0;
+
+    const overallStatus = overallScore >= 80
+      ? DashboardStatus.HEALTHY
+      : overallScore >= 50
+        ? DashboardStatus.WARNING
+        : DashboardStatus.CRITICAL;
+
+    return { entries, overallStatus, score: overallScore };
+  }
+
+  private computeStatus(m: MetricDefinition): DashboardStatus {
+    const { value, threshold, direction } = m;
+    const isWorse = direction === 'lower_is_better'
+      ? (v: number, t: number) => v > t
+      : (v: number, t: number) => v < t;
+
+    if (isWorse(value, threshold.critical)) return DashboardStatus.CRITICAL;
+    if (isWorse(value, threshold.warning)) return DashboardStatus.WARNING;
+    return DashboardStatus.HEALTHY;
+  }
+
+  private computeTrend(name: string): 'up' | 'down' | 'flat' {
+    const values = this.history.get(name);
+    if (!values || values.length < 3) return 'flat';
+
+    const recent = values.slice(-5);
+    const half = Math.floor(recent.length / 2);
+    const firstHalfAvg = recent.slice(0, half).reduce((a, b) => a + b, 0) / half;
+    const secondHalfAvg = recent.slice(half).reduce((a, b) => a + b, 0) / (recent.length - half);
+    const diff = secondHalfAvg - firstHalfAvg;
+    const threshold = Math.max(0.01, Math.abs(firstHalfAvg) * 0.02);
+
+    if (Math.abs(diff) < threshold) return 'flat';
+    return diff > 0 ? 'up' : 'down';
+  }
+
+  private pushHistory(name: string, value: number): void {
+    if (!this.history.has(name)) this.history.set(name, []);
+    this.history.get(name)!.push(value);
+    if (this.history.get(name)!.length > 100) {
+      this.history.get(name)!.shift();
+    }
+  }
+
+  public renderDashboard(entries: DashboardEntry[], overallStatus: DashboardStatus, score: number): string {
+    const statusIcon = (s: DashboardStatus) =>
+      s === DashboardStatus.HEALTHY ? '🟢' : s === DashboardStatus.WARNING ? '🟡' : '🔴';
+    const trendIcon = (t: 'up' | 'down' | 'flat') =>
+      t === 'up' ? '▲' : t === 'down' ? '▼' : '─';
+
+    const rows = entries.map(
+      (e) => `  ${statusIcon(e.status)} ${trendIcon(e.trend)} ${e.metric.padEnd(25)} ${e.value.padEnd(12)} ${e.status}`
+    ).join('\n');
+
+    return [
+      '=== Quality Dashboard ===',
+      `  Overall Score: ${score}/100 ${statusIcon(overallStatus)}`,
+      `  Overall Status: ${overallStatus.toUpperCase()}`,
+      '  ' + '─'.repeat(55),
+      rows,
+    ].join('\n');
+  }
+}
+
+// Usage example
+const dashboard = new QualityDashboard();
+const metrics: MetricDefinition[] = [
+  { name: 'Code Coverage', value: 82, unit: '%', threshold: { warning: 75, critical: 60 }, direction: 'higher_is_better' },
+  { name: 'Cyclomatic Complexity', value: 14, unit: '', threshold: { warning: 15, critical: 25 }, direction: 'lower_is_better' },
+  { name: 'Duplicate Code', value: 6.5, unit: '%', threshold: { warning: 5, critical: 10 }, direction: 'lower_is_better' },
+  { name: 'Test Failure Rate', value: 3, unit: '%', threshold: { warning: 2, critical: 5 }, direction: 'lower_is_better' },
+  { name: 'Technical Debt Ratio', value: 8, unit: '%', threshold: { warning: 10, critical: 20 }, direction: 'lower_is_better' },
+];
+const dashboardResult = dashboard.evaluate(metrics);
+console.log(dashboard.renderDashboard(dashboardResult.entries, dashboardResult.overallStatus, dashboardResult.score));
+```
+
+### Example 7: Defect Density Analyzer
+
+Defect density measures the number of confirmed defects per unit of software size (typically per thousand lines of code — KLOC). This example implements a module-level defect density analyzer that identifies high-risk components and tracks density trends across releases.
+
+```typescript
+interface ModuleDefectData {
+  moduleName: string;
+  linesOfCode: number;
+  defects: {
+    id: string;
+    severity: 'critical' | 'major' | 'minor' | 'trivial';
+    introducedInRelease: string;
+  }[];
+}
+
+interface DensityReportEntry {
+  module: string;
+  ksloc: number;
+  defectCount: number;
+  density: number;
+  severityBreakdown: Record<string, number>;
+  riskLevel: 'low' | 'moderate' | 'high' | 'critical';
+}
+
+class DefectDensityAnalyzer {
+  public analyzeModules(modules: ModuleDefectData[]): DensityReportEntry[] {
+    return modules.map((mod) => {
+      const ksloc = mod.linesOfCode / 1000;
+      const defectCount = mod.defects.length;
+      const density = ksloc > 0 ? defectCount / ksloc : 0;
+
+      const breakdown: Record<string, number> = {};
+      for (const d of mod.defects) {
+        breakdown[d.severity] = (breakdown[d.severity] || 0) + 1;
+      }
+
+      const riskLevel = density <= 2 ? 'low'
+        : density <= 5 ? 'moderate'
+          : density <= 10 ? 'high' : 'critical';
+
+      return {
+        module: mod.moduleName,
+        ksloc: Math.round(ksloc * 100) / 100,
+        defectCount,
+        density: Math.round(density * 100) / 100,
+        severityBreakdown: breakdown,
+        riskLevel,
+      };
+    });
+  }
+
+  public identifyHotspots(entries: DensityReportEntry[], threshold: number = 5): DensityReportEntry[] {
+    return entries
+      .filter((e) => e.density > threshold)
+      .sort((a, b) => b.density - a.density);
+  }
+
+  public releaseTrend(allModules: ModuleDefectData[], releases: string[]): {
+    release: string;
+    totalDefects: number;
+    totalKsloc: number;
+    density: number;
+  }[] {
+    return releases.map((release) => {
+      let totalDefects = 0;
+      let totalKsloc = 0;
+
+      for (const mod of allModules) {
+        const releaseDefects = mod.defects.filter(
+          (d) => d.introducedInRelease === release
+        );
+        totalDefects += releaseDefects.length;
+        totalKsloc += mod.linesOfCode / 1000;
+      }
+
+      return {
+        release,
+        totalDefects,
+        totalKsloc: Math.round(totalKsloc * 100) / 100,
+        density: totalKsloc > 0
+          ? Math.round((totalDefects / totalKsloc) * 100) / 100
+          : 0,
+      };
+    });
+  }
+
+  public generateReport(entries: DensityReportEntry[], trend: { release: string; density: number }[]): string {
+    const header = '=== Defect Density Report ===\n';
+    const tableHeader = `${'Module'.padEnd(20)} ${'KS LOC'.padEnd(8)} ${'Defects'.padEnd(8)} ${'Density'.padEnd(8)} ${'Risk'}`;
+    const separator = '─'.repeat(60);
+
+    const rows = entries.map((e) =>
+      `${e.module.padEnd(20)} ${String(e.ksloc).padEnd(8)} ${String(e.defectCount).padEnd(8)} ${String(e.density).padEnd(8)} ${e.riskLevel.toUpperCase()}`
+    ).join('\n');
+
+    const hotspots = entries.filter((e) => e.density > 5);
+    const hotspotSection = hotspots.length > 0
+      ? `\n\n⚠ Hotspots (density > 5):\n${hotspots.map((h) => `  - ${h.module} (${h.density} defects/KLOC)`).join('\n')}`
+      : '\n\n✓ No hotspots detected';
+
+    const trendLines = trend.map((t) => `  ${t.release.padEnd(12)} ${t.density} defects/KLOC`).join('\n');
+    const trendSection = `\n\n=== Density Trend ===\n${trendLines}`;
+
+    return [header, tableHeader, separator, rows, hotspotSection, trendSection].join('\n');
+  }
+}
+
+// Usage example
+const analyzer = new DefectDensityAnalyzer();
+const modules: ModuleDefectData[] = [
+  {
+    moduleName: 'auth-module',
+    linesOfCode: 4500,
+    defects: [
+      { id: 'A1', severity: 'critical', introducedInRelease: 'v2.0' },
+      { id: 'A2', severity: 'major', introducedInRelease: 'v2.0' },
+      { id: 'A3', severity: 'minor', introducedInRelease: 'v2.1' },
+    ],
+  },
+  {
+    moduleName: 'payment-gateway',
+    linesOfCode: 12000,
+    defects: [
+      { id: 'P1', severity: 'critical', introducedInRelease: 'v1.0' },
+      { id: 'P2', severity: 'critical', introducedInRelease: 'v1.0' },
+      { id: 'P3', severity: 'major', introducedInRelease: 'v2.0' },
+      { id: 'P4', severity: 'major', introducedInRelease: 'v2.0' },
+      { id: 'P5', severity: 'minor', introducedInRelease: 'v2.1' },
+      { id: 'P6', severity: 'minor', introducedInRelease: 'v2.1' },
+    ],
+  },
+];
+const reportEntries = analyzer.analyzeModules(modules);
+const trend = analyzer.releaseTrend(modules, ['v1.0', 'v2.0', 'v2.1']);
+console.log(analyzer.generateReport(reportEntries, trend));
+```
+
+### Additional Mermaid Diagrams
+
+```mermaid
+graph TD
+    subgraph "Quality Metrics Pipeline"
+        CI[CI Pipeline Trigger] --> STATIC[Static Analysis]
+        STATIC --> TESTS[Test Execution]
+        TESTS --> COV[Coverage Calculation]
+        COV --> DD[Defect Density Analysis]
+        DD --> DASH[Dashboard Aggregation]
+        DASH --> GATE{Quality Gate}
+        GATE -->|Pass| DEPLOY[Deploy to Production]
+        GATE -->|Fail| BLOCK[Block Merge / Notify Team]
+        BLOCK --> FIX[Fix Issues]
+        FIX --> CI
+    end
+```
+
+```mermaid
+graph LR
+    subgraph "Coverage Types"
+        LC[Line Coverage] -->|Executed lines / Total lines| LR[Rate]
+        BC[Branch Coverage] -->|Taken branches / Total branches| BR[Rate]
+        FC[Function Coverage] -->|Called functions / Total functions| FR[Rate]
+    end
+    subgraph "Defect Density Zones"
+        D1[Density 0-2] -->|Low Risk| ACCEPT[Acceptable]
+        D2[Density 2-5] -->|Moderate| MONITOR[Monitor]
+        D3[Density 5-10] -->|High| REVIEW[Review Required]
+        D4[Density 10+] -->|Critical| IMMEDIATE[Must Refactor]
+    end
+    subgraph "Dashboard Status"
+        DS1[Score 80-100] -->|🟢| HLTH[Healthy]
+        DS2[Score 50-79] -->|🟡| WARN[Warning]
+        DS3[Score 0-49] -->|🔴| CRIT[Critical]
+    end
+```
+
 ## Summary
 
-Software quality management encompasses three interrelated components: quality planning defines the approach, quality assurance ensures processes are followed, and quality control verifies product quality. Standards like ISO 9001 provide general quality frameworks, while CMMI offers staged maturity levels from ad hoc (Level 1) to continuously improving (Level 5). ISO 25010 defines eight quality characteristics for software products. Formal inspections such as Fagan inspections detect up to 70% of defects before testing. Static analysis tools measure code metrics like cyclomatic complexity, which predicts testability. Statistical process control distinguishes common cause variation from special cause events. Automated quality gates integrated into CI/CD pipelines prevent quality degradation.
+Software quality management encompasses three interrelated components: quality planning defines the approach, quality assurance ensures processes are followed, and quality control verifies product quality. Standards like ISO 9001 provide general quality frameworks, while CMMI offers staged maturity levels from ad hoc (Level 1) to continuously improving (Level 5). ISO 25010 defines eight quality characteristics for software products. Formal inspections such as Fagan inspections detect up to 70% of defects before testing. Static analysis tools measure code metrics like cyclomatic complexity, which predicts testability. Statistical process control distinguishes common cause variation from special cause events. Automated quality gates integrated into CI/CD pipelines prevent quality degradation. Practical tools like coverage calculators, defect density analyzers, and quality dashboards enable teams to measure, track, and improve quality systematically across the software lifecycle.
 
 ## Exercises
 

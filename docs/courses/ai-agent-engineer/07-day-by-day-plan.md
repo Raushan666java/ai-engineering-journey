@@ -382,6 +382,346 @@ flowchart LR
 **Adjust for next week:** [what to change]
 ```
 
+---
+
+## TypeScript: Study Plan Scheduler
+
+These TypeScript types and utilities model the daily schedule system for programmatic plan generation, calendar integration, and progress dashboards.
+
+```typescript
+// ---- Core Schedule Types ----
+
+type DayOfWeek = "Mon" | "Tue" | "Wed" | "Thu" | "Fri" | "Sat" | "Sun";
+
+interface DailyTask {
+  day: number;
+  dayOfWeek: DayOfWeek;
+  topic: string;
+  action: string;
+  doneCondition: string;
+  estimatedMinutes: number;
+  isBuffer: boolean;
+}
+
+interface WeekSchedule {
+  weekNumber: number;
+  phaseName: string;
+  phaseSubtitle: string;
+  days: DailyTask[];
+}
+
+interface StudySession {
+  date: string;
+  dayOfWeek: DayOfWeek;
+  weekNumber: number;
+  topic: string;
+  actualMinutes: number;
+  completed: boolean;
+  notes: string;
+}
+
+// ---- Complete 12-Week Schedule Data ----
+
+const FULL_SCHEDULE: WeekSchedule[] = [
+  {
+    weekNumber: 1,
+    phaseName: "Phase 0",
+    phaseSubtitle: "Backend Gap-Fill",
+    days: [
+      { day: 1, dayOfWeek: "Mon", topic: "Redis as cache vs queue", action: "Read 0.1, run both examples locally", doneCondition: "Explain SETEX vs RQ", estimatedMinutes: 180, isBuffer: false },
+      { day: 2, dayOfWeek: "Tue", topic: "Redis pub/sub + OpenAPI", action: "Read 0.2–0.3, build pub/sub demo", doneCondition: "Working publisher + subscriber", estimatedMinutes: 180, isBuffer: false },
+      { day: 3, dayOfWeek: "Wed", topic: "JWT refresh rotation", action: "Read 0.4, diagram lifecycle", doneCondition: "Draw access/refresh flow", estimatedMinutes: 120, isBuffer: false },
+      { day: 4, dayOfWeek: "Thu", topic: "Rate limiting + API versioning", action: "Read 0.5, SlowAPI test, versioning", doneCondition: "Explain token bucket vs sliding window", estimatedMinutes: 180, isBuffer: false },
+      { day: 5, dayOfWeek: "Fri", topic: "Microservices vs monolith", action: "Read 0.6, write ApexERP analysis", doneCondition: "1-page comparison written", estimatedMinutes: 120, isBuffer: false },
+      { day: 6, dayOfWeek: "Sat", topic: "Idempotency keys + WebSocket", action: "Read 0.7, WebSocket section, build echo", doneCondition: "Idempotency check + echo server", estimatedMinutes: 180, isBuffer: false },
+      { day: 7, dayOfWeek: "Sun", topic: "Phase 0 checkpoint", action: "Run all exercises, verify checklist", doneCondition: "All checklist items verified", estimatedMinutes: 120, isBuffer: true },
+    ],
+  },
+  {
+    weekNumber: 2,
+    phaseName: "Phase 1",
+    phaseSubtitle: "Python + FastAPI (Part 1)",
+    days: [
+      { day: 1, dayOfWeek: "Mon", topic: "Type hints + dataclasses vs Pydantic", action: "Read 1.1–1.2, annotate 10 functions", doneCondition: "Write list[dict[str,int]] without checking", estimatedMinutes: 180, isBuffer: false },
+      { day: 2, dayOfWeek: "Tue", topic: "Context managers + comprehensions", action: "Read 1.3–1.4, write custom DB context mgr", doneCondition: "Working context manager", estimatedMinutes: 180, isBuffer: false },
+      { day: 3, dayOfWeek: "Wed", topic: "Decorators", action: "Read 1.5, write @retry(times=3)", doneCondition: "Decorator works on any function", estimatedMinutes: 180, isBuffer: false },
+      { day: 4, dayOfWeek: "Thu", topic: "FastAPI params + validation", action: "Read 1.6, build CRUD endpoint", doneCondition: "4 endpoints with correct param types", estimatedMinutes: 240, isBuffer: false },
+      { day: 5, dayOfWeek: "Fri", topic: "FastAPI DI + middleware", action: "Read 1.7–1.8, wire get_current_user", doneCondition: "3 endpoints with DI chain", estimatedMinutes: 240, isBuffer: false },
+      { day: 6, dayOfWeek: "Sat", topic: "Background tasks + Pydantic v2", action: "Read 1.9–1.10, add model-level validator", doneCondition: "Validator rejects invalid data", estimatedMinutes: 180, isBuffer: false },
+      { day: 7, dayOfWeek: "Sun", topic: "Pydantic settings + review", action: "Read 1.11, config to pydantic-settings", doneCondition: ".env loads into typed config", estimatedMinutes: 120, isBuffer: true },
+    ],
+  },
+  // Weeks 3–12 follow same pattern; omitted for brevity
+];
+
+// ---- Schedule Utilities ----
+
+function totalMinutesForWeek(schedule: WeekSchedule): number {
+  return schedule.days.reduce((sum, d) => sum + d.estimatedMinutes, 0);
+}
+
+function totalHoursForAllWeeks(schedules: WeekSchedule[]): number {
+  return Math.round(schedules.reduce((sum, w) => sum + totalMinutesForWeek(w), 0) / 60);
+}
+
+function findDay(schedules: WeekSchedule[], weekNum: number, dayNum: number): DailyTask | undefined {
+  return schedules.find((w) => w.weekNumber === weekNum)?.days.find((d) => d.day === dayNum);
+}
+
+function bufferDays(schedules: WeekSchedule[]): DailyTask[] {
+  return schedules.flatMap((w) => w.days.filter((d) => d.isBuffer));
+}
+
+function phaseBoundaries(schedules: WeekSchedule[]): Map<string, { start: number; end: number }> {
+  const phases = new Map<string, { start: number; end: number }>();
+  for (const week of schedules) {
+    if (!phases.has(week.phaseName)) {
+      phases.set(week.phaseName, { start: week.weekNumber, end: week.weekNumber });
+    } else {
+      const p = phases.get(week.phaseName)!;
+      p.end = week.weekNumber;
+    }
+  }
+  return phases;
+}
+
+// ---- Progress Tracker ----
+
+interface ProgressSummary {
+  totalDays: number;
+  completedDays: number;
+  completionRate: number;
+  totalHoursLogged: number;
+  currentStreak: number;
+  longestStreak: number;
+}
+
+class StudyProgressTracker {
+  private sessions: StudySession[] = [];
+
+  logSession(session: StudySession): void {
+    this.sessions.push(session);
+  }
+
+  getSummary(): ProgressSummary {
+    const completed = this.sessions.filter((s) => s.completed);
+    const sorted = [...this.sessions].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
+    // Calculate streak
+    let currentStreak = 0;
+    let longestStreak = 0;
+    let tempStreak = 0;
+    const seenDates = new Set(sorted.map((s) => s.date));
+
+    for (const session of sorted) {
+      if (session.completed) {
+        tempStreak++;
+        longestStreak = Math.max(longestStreak, tempStreak);
+        if (session.date === sorted[sorted.length - 1].date) {
+          currentStreak = tempStreak;
+        }
+      } else {
+        tempStreak = 0;
+      }
+    }
+
+    return {
+      totalDays: this.sessions.length,
+      completedDays: completed.length,
+      completionRate: this.sessions.length > 0
+        ? Math.round((completed.length / this.sessions.length) * 100)
+        : 0,
+      totalHoursLogged: Math.round(this.sessions.reduce((sum, s) => sum + s.actualMinutes, 0) / 60),
+      currentStreak,
+      longestStreak,
+    };
+  }
+
+  weeklyReport(weekNumber: number): StudySession[] {
+    return this.sessions.filter((s) => s.weekNumber === weekNumber);
+  }
+
+  daysRemainingInPhase(schedules: WeekSchedule[], phaseName: string): number {
+    const phase = schedules.filter((w) => w.phaseName === phaseName);
+    const total = phase.reduce((sum, w) => sum + w.days.length, 0);
+    const completed = this.sessions.filter(
+      (s) => s.completed && phase.some((w) => w.weekNumber === s.weekNumber),
+    ).length;
+    return total - completed;
+  }
+}
+
+// ---- Weekly Planner Generator ----
+
+interface CalendarEvent {
+  title: string;
+  date: Date;
+  durationMinutes: number;
+  description: string;
+}
+
+function generateCalendarEvents(
+  schedule: WeekSchedule,
+  startDate: Date,
+): CalendarEvent[] {
+  const dayIndexMap: Record<DayOfWeek, number> = {
+    Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6,
+  };
+
+  return schedule.days.map((task) => {
+    const date = new Date(startDate);
+    const currentDayOfWeek = date.getDay(); // 0=Sun
+    const targetDay = dayIndexMap[task.dayOfWeek];
+    // Adjust to the correct day of week
+    const diff = targetDay - ((currentDayOfWeek + 6) % 7);
+    date.setDate(date.getDate() + diff + (task.day - 1) * 7);
+
+    return {
+      title: `${schedule.phaseName}: ${task.topic}`,
+      date,
+      durationMinutes: task.estimatedMinutes,
+      description: `${task.action}\nDone when: ${task.doneCondition}`,
+    };
+  });
+}
+
+// ---- Example Usage ----
+
+const tracker = new StudyProgressTracker();
+
+tracker.logSession({
+  date: "2026-06-01",
+  dayOfWeek: "Mon",
+  weekNumber: 1,
+  topic: "Redis as cache vs queue",
+  actualMinutes: 165,
+  completed: true,
+  notes: "Got both examples running, understood the durability difference",
+});
+
+tracker.logSession({
+  date: "2026-06-02",
+  dayOfWeek: "Tue",
+  weekNumber: 1,
+  topic: "Redis pub/sub",
+  actualMinutes: 190,
+  completed: true,
+  notes: "Pub/sub demo works — confirmed message loss without subscriber",
+});
+
+const summary = tracker.getSummary();
+console.log(`Progress: ${summary.completedDays}/${summary.totalDays} days (${summary.completionRate}%)`);
+console.log(`Total hours logged: ${summary.totalHoursLogged}`);
+console.log(`Current streak: ${summary.currentStreak} days`);
+console.log(`Days remaining in Phase 0: ${tracker.daysRemainingInPhase(FULL_SCHEDULE, "Phase 0")}`);
+
+// Generate calendar events for week 1
+const events = generateCalendarEvents(FULL_SCHEDULE[0], new Date("2026-06-01"));
+console.log(`Generated ${events.length} calendar events for week 1`);
+```
+
+## Mermaid: Weekly Schedule Gantt Chart
+
+```mermaid
+gantt
+    title 12-Week Course Schedule
+    dateFormat  YYYY-MM-DD
+    axisFormat  %b %d
+
+    section Phase 0
+    Backend Gap-Fill           :p0, 2026-06-01, 7d
+
+    section Phase 1
+    Python + FastAPI Pt 1      :p1a, after p0, 7d
+    Python + FastAPI Pt 2      :p1b, after p1a, 7d
+
+    section Phase 2
+    LLM + RAG Pt 1             :p2a, after p1b, 7d
+    LLM + RAG Pt 2             :p2b, after p2a, 7d
+
+    section Phase 3
+    Agents Pt 1                :p3a, after p2b, 7d
+    Agents Pt 2                :p3b, after p3a, 7d
+    Agents Pt 3 (Buffer)       :p3c, after p3b, 7d
+
+    section Phase 4
+    Production Hardening Pt 1  :p4a, after p3c, 7d
+    Production Hardening Pt 2  :p4b, after p4a, 7d
+
+    section Phase 5
+    Portfolio + Job Search     :p5a, after p4b, 7d
+    Interview Prep + Apps      :p5b, after p5a, 7d
+```
+
+## Mermaid: Daily Decision Flow
+
+```mermaid
+flowchart TD
+    START["Day Start<br/>Review today's topic"] --> CHECK{"Spent &lt; 30 min<br/>researching?"}
+    CHECK -->|"Yes — make progress"| WORK["Work Session<br/>2-4 hours"]
+    CHECK -->|"No — stuck"| SIMPLIFY["Build simplest version<br/>Skip research, iterate later"]
+    SIMPLIFY --> WORK
+    WORK --> DONE{"Done condition met?"}
+    DONE -->|"Yes"| LOG["Log completion<br/>Write 1-sentence reflection"]
+    DONE -->|"No"| ADJUST{"Deadline pressure?"}
+    ADJUST -->|"Plenty of time"| CONTINUE["Continue tomorrow<br/>Mark as partial"]
+    ADJUST -->|"Buffer day available"| BUFFER["Use buffer day<br/>to complete"]
+    ADJUST -->|"Behind schedule"| REDUCE["Reduce scope<br/>Skip optional exercises"]
+    LOG --> END["Log entry complete"]
+    CONTINUE --> END
+    BUFFER --> END
+    REDUCE --> END
+```
+
+## Mermaid: Phase Dependency with Project Artifacts
+
+```mermaid
+flowchart LR
+    subgraph Foundation["Weeks 1–3"]
+        P0["Phase 0<br/>Backend Gap-Fill"]
+        P1["Phase 1<br/>Python + FastAPI"]
+    end
+
+    subgraph CoreAI["Weeks 4–8"]
+        P2["Phase 2<br/>LLM + RAG"]
+        P3["Phase 3<br/>LangGraph + MCP"]
+    end
+
+    subgraph Production["Weeks 9–12"]
+        P4["Phase 4<br/>Docker + CI/CD"]
+        P5["Phase 5<br/>Portfolio + Search"]
+    end
+
+    P0 --> P1
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+
+    P1 -.-> PROJ1["Project 1<br/>Booking Module"]
+    P2 -.-> PROJ2["Project 2<br/>RAG Demo API"]
+    P3 -.-> PROJ3["Project 3<br/>LangGraph Agent"]
+    PROJ1 --> PORTFOLIO["Portfolio GitHub"]
+    PROJ2 --> PORTFOLIO
+    PROJ3 --> PORTFOLIO
+    PORTFOLIO --> INTERVIEW["Interview Readiness"]
+    P5 --> INTERVIEW
+```
+
+## Phase Time Budget Breakdown
+
+| Phase | Working Days | Buffer Days | Core Hours | Buffer Hours | Total |
+|-------|-------------|-------------|------------|--------------|-------|
+| 0     | 6           | 1           | 16         | 2            | 18    |
+| 1     | 12          | 2           | 30         | 4            | 34    |
+| 2     | 12          | 2           | 25         | 5            | 30    |
+| 3     | 16          | 5           | 35         | 5            | 40    |
+| 4     | 10          | 4           | 20         | 6            | 26    |
+| 5     | 12          | 2           | 15         | 5            | 20    |
+| **Total** | **68** | **16** | **141** | **27** | **168** |
+
+The 16 buffer days across 12 weeks (19% of total days) are the safety valve. If you use fewer than 10, you're ahead of pace. If you use more than 12, reduce scope in the next phase.
+
 ## Detailed Daily Action Descriptions
 
 ### Week 1 Deep Dive

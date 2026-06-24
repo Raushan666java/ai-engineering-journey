@@ -413,6 +413,257 @@ class ImpactAnalyzer {
 
 **Answer: B** — Prudent & Deliberate debt is an intentional short-term decision with a plan to fix later.
 
+## Technical Debt Quantification Engine
+
+```typescript
+type DebtQuadrant = 'reckless-deliberate' | 'reckless-inadvertent' | 'prudent-deliberate' | 'prudent-inadvertent';
+
+interface DebtItem {
+  id: string;
+  description: string;
+  location: string;
+  quadrant: DebtQuadrant;
+  estimatedHoursToFix: number;
+  estimatedHoursToPayInterest: number;
+  createdAt: Date;
+  tags: string[];
+  severity: 'low' | 'medium' | 'high' | 'critical';
+}
+
+interface DebtReport {
+  totalDebtHours: number;
+  totalInterestHours: number;
+  debtRatio: number; // interest / principal
+  itemsByQuadrant: Record<DebtQuadrant, DebtItem[]>;
+  itemsBySeverity: Record<string, DebtItem[]>;
+  topPriorityItems: DebtItem[];
+  principalPerModule: Map<string, number>;
+}
+
+class TechnicalDebtCalculator {
+  private debtItems: DebtItem[] = [];
+
+  public addDebt(item: DebtItem): void {
+    this.debtItems.push(item);
+  }
+
+  public addDebts(items: DebtItem[]): void {
+    this.debtItems.push(...items);
+  }
+
+  public calculate(): DebtReport {
+    const totalDebtHours = this.debtItems.reduce((s, i) => s + i.estimatedHoursToFix, 0);
+    const totalInterestHours = this.debtItems.reduce((s, i) => s + i.estimatedHoursToPayInterest, 0);
+
+    const itemsByQuadrant: Record<DebtQuadrant, DebtItem[]> = {
+      'reckless-deliberate': [],
+      'reckless-inadvertent': [],
+      'prudent-deliberate': [],
+      'prudent-inadvertent': [],
+    };
+    const itemsBySeverity: Record<string, DebtItem[]> = {};
+    const principalPerModule = new Map<string, number>();
+
+    for (const item of this.debtItems) {
+      itemsByQuadrant[item.quadrant].push(item);
+      if (!itemsBySeverity[item.severity]) itemsBySeverity[item.severity] = [];
+      itemsBySeverity[item.severity].push(item);
+      const module = item.location.split('/')[0];
+      principalPerModule.set(module, (principalPerModule.get(module) ?? 0) + item.estimatedHoursToFix);
+    }
+
+    const topPriorityItems = [...this.debtItems]
+      .sort((a, b) => {
+        const severityRank = { critical: 4, high: 3, medium: 2, low: 1 };
+        const interestA = a.estimatedHoursToPayInterest - a.estimatedHoursToFix;
+        const interestB = b.estimatedHoursToPayInterest - b.estimatedHoursToFix;
+        return (severityRank[b.severity] - severityRank[a.severity]) || (interestB - interestA);
+      })
+      .slice(0, 10);
+
+    return {
+      totalDebtHours,
+      totalInterestHours,
+      debtRatio: totalDebtHours > 0 ? totalInterestHours / totalDebtHours : 0,
+      itemsByQuadrant,
+      itemsBySeverity,
+      topPriorityItems,
+      principalPerModule,
+    };
+  }
+
+  public generateReport(): string {
+    const report = this.calculate();
+    const lines: string[] = [
+      '=== Technical Debt Report ===',
+      `Generated: ${new Date().toISOString()}`,
+      '',
+      '┌─────────────────────────────────┬─────────────┐',
+      '│ Metric                          │ Value       │',
+      '├─────────────────────────────────┼─────────────┤',
+      `│ Total Items                     │ ${this.debtItems.length.toString().padStart(11)} │`,
+      `│ Principal (Fix Hours)           │ ${report.totalDebtHours.toString().padStart(11)} │`,
+      `│ Interest (Hours Paid)           │ ${report.totalInterestHours.toString().padStart(11)} │`,
+      `│ Debt Ratio (Interest/Principal) │ ${report.debtRatio.toFixed(2).padStart(9)}    │`,
+      '└─────────────────────────────────┴─────────────┘',
+      '',
+      '--- By Quadrant ---',
+    ];
+    for (const [quadrant, items] of Object.entries(report.itemsByQuadrant)) {
+      const hours = items.reduce((s, i) => s + i.estimatedHoursToFix, 0);
+      lines.push(`  ${quadrant.padEnd(25)} ${items.length} items, ${hours}h principal`);
+    }
+    lines.push('', '--- By Severity ---');
+    for (const [severity, items] of Object.entries(report.itemsBySeverity)) {
+      const hours = items.reduce((s, i) => s + i.estimatedHoursToFix, 0);
+      lines.push(`  ${severity.padEnd(10)} ${items.length} items, ${hours}h`);
+    }
+    lines.push('', '--- Top Priority Items ---');
+    for (const item of report.topPriorityItems) {
+      const interestCost = item.estimatedHoursToPayInterest - item.estimatedHoursToFix;
+      lines.push(`  [${item.severity.toUpperCase()}] ${item.description}`);
+      lines.push(`    Location: ${item.location} | Fix: ${item.estimatedHoursToFix}h | Interest premium: ${interestCost > 0 ? '+' : ''}${interestCost}h`);
+    }
+    lines.push('', '--- Principal by Module ---');
+    for (const [module, hours] of report.principalPerModule) {
+      lines.push(`  ${module.padEnd(20)} ${hours}h`);
+    }
+    lines.push('', '--- Recommendations ---');
+    if (report.debtRatio > 2) {
+      lines.push('  CRITICAL: Interest exceeds principal by 2x+ — prioritize debt reduction sprint');
+    }
+    if (report.itemsByQuadrant['reckless-deliberate'].length > 5) {
+      lines.push('  WARNING: High reckless deliberate debt — schedule dedicated refactoring');
+    }
+    if (report.itemsByQuadrant['reckless-inadvertent'].length > 10) {
+      lines.push('  INFO: Consider team training on design principles to reduce inadvertent debt');
+    }
+    return lines.join('\n');
+  }
+}
+
+// Dependency Graph Evolution Analyzer
+interface DependencyNode {
+  name: string;
+  version: string;
+  dependencies: string[];
+  deprecationStatus?: 'active' | 'deprecated' | 'end-of-life';
+  ageMonths: number;
+}
+
+class EvolutionAnalyzer {
+  public analyzeDependencyGraph(nodes: DependencyNode[]): {
+    health: 'healthy' | 'aging' | 'critical';
+    deprecatedCount: number;
+    averageAgeMonths: number;
+    circularDependencies: string[][];
+    recommendations: string[];
+  } {
+    const circularDeps = this.findCircularDependencies(nodes);
+    const deprecatedCount = nodes.filter((n) => n.deprecationStatus === 'deprecated' || n.deprecationStatus === 'end-of-life').length;
+    const averageAgeMonths = nodes.reduce((s, n) => s + n.ageMonths, 0) / nodes.length;
+    const recommendations: string[] = [];
+
+    if (deprecatedCount > 0) {
+      recommendations.push(`Replace ${deprecatedCount} deprecated dependencies immediately`);
+    }
+    if (circularDeps.length > 0) {
+      recommendations.push(`Resolve ${circularDeps.length} circular dependencies by extracting shared interfaces`);
+    }
+    if (averageAgeMonths > 24) {
+      recommendations.push('Average dependency age exceeds 24 months — schedule dependency audit');
+    }
+    const health = deprecatedCount > 3 || circularDeps.length > 2 ? 'critical' : averageAgeMonths > 18 ? 'aging' : 'healthy';
+    return { health, deprecatedCount, averageAgeMonths: Math.round(averageAgeMonths), circularDependencies: circularDeps, recommendations };
+  }
+
+  private findCircularDependencies(nodes: DependencyNode[]): string[][] {
+    const cycles: string[][] = [];
+    const visited = new Set<string>();
+    const recursionStack = new Set<string>();
+    const path: string[] = [];
+    const nodeMap = new Map(nodes.map((n) => [n.name, n]));
+
+    const dfs = (name: string): void => {
+      if (recursionStack.has(name)) {
+        const cycleStart = path.indexOf(name);
+        if (cycleStart >= 0) cycles.push(path.slice(cycleStart));
+        return;
+      }
+      if (visited.has(name)) return;
+      visited.add(name);
+      recursionStack.add(name);
+      path.push(name);
+      const node = nodeMap.get(name);
+      if (node) {
+        for (const dep of node.dependencies) {
+          if (nodeMap.has(dep)) dfs(dep);
+        }
+      }
+      path.pop();
+      recursionStack.delete(name);
+    };
+    for (const node of nodes) dfs(node.name);
+    return cycles;
+  }
+}
+
+// Usage
+const calculator = new TechnicalDebtCalculator();
+calculator.addDebts([
+  { id: 'TD-001', description: 'No input validation on user API endpoint', location: 'api/users.ts', quadrant: 'reckless-deliberate', estimatedHoursToFix: 8, estimatedHoursToPayInterest: 40, createdAt: new Date('2025-06-01'), tags: ['security', 'api'], severity: 'critical' },
+  { id: 'TD-002', description: 'Unused imports and dead code in payment module', location: 'payments/processor.ts', quadrant: 'prudent-inadvertent', estimatedHoursToFix: 4, estimatedHoursToPayInterest: 12, createdAt: new Date('2025-07-15'), tags: ['maintainability'], severity: 'medium' },
+  { id: 'TD-003', description: 'Hardcoded database credentials in config', location: 'config/database.ts', quadrant: 'reckless-deliberate', estimatedHoursToFix: 2, estimatedHoursToPayInterest: 30, createdAt: new Date('2025-05-10'), tags: ['security'], severity: 'critical' },
+  { id: 'TD-004', description: 'Monolithic 5000-line service class without tests', location: 'services/order-service.ts', quadrant: 'prudent-deliberate', estimatedHoursToFix: 40, estimatedHoursToPayInterest: 120, createdAt: new Date('2025-03-20'), tags: ['refactoring', 'testing'], severity: 'high' },
+  { id: 'TD-005', description: 'Inconsistent error handling patterns across modules', location: 'api/', quadrant: 'reckless-inadvertent', estimatedHoursToFix: 16, estimatedHoursToPayInterest: 30, createdAt: new Date('2025-08-01'), tags: ['reliability'], severity: 'medium' },
+]);
+console.log(calculator.generateReport());
+
+const analyzer = new EvolutionAnalyzer();
+const result = analyzer.analyzeDependencyGraph([
+  { name: 'express', version: '4.18.2', dependencies: ['body-parser', 'accepts', 'type-is'], deprecationStatus: 'active', ageMonths: 18 },
+  { name: 'body-parser', version: '1.20.2', dependencies: ['bytes', 'content-type'], ageMonths: 30 },
+  { name: 'legacy-lib', version: '0.5.0', dependencies: ['express'], deprecationStatus: 'deprecated', ageMonths: 48 },
+  { name: 'bytes', version: '3.1.2', dependencies: ['legacy-lib'], ageMonths: 36 },
+]);
+console.log(`\nEvolution Health: ${result.health}`);
+result.recommendations.forEach((r) => console.log(`  → ${r}`));
+```
+
+```mermaid
+graph TD
+    subgraph "Technical Debt Lifecycle"
+        COMMIT[New Code Written] --> DEBT{Debt Incurred?}
+        DEBT -->|Yes| QUADRANT[Classify Quadrant]
+        QUADRANT --> RCD[Reckless Deliberate]
+        QUADRANT --> RCI[Reckless Inadvertent]
+        QUADRANT --> PD[Prudent Deliberate]
+        QUADRANT --> PI[Prudent Inadvertent]
+        
+        RCD --> TRACK[Record in Debt Register]
+        RCI --> TRACK
+        PD --> TRACK
+        PI --> TRACK
+        
+        TRACK --> INTEREST[Interest Accumulates]
+        INTEREST --> REVIEW{Quarterly Review}
+        REVIEW -->|Pay Down| REFACTOR2[Schedule Refactoring]
+        REVIEW -->|Defer| INTEREST
+        REVIEW -->|Principal Too High| PRIORITIZE[Prioritize in Backlog]
+        
+        REFACTOR2 --> FIX[Refactor & Reduce Debt]
+        FIX --> VALIDATE[Validate with Tests]
+        VALIDATE --> RETIRE[Retire Debt Item]
+    end
+    
+    subgraph "Lehman's Feedback Loops"
+        CHANGE[System Change] --> COMPLEXITY[Increasing Complexity]
+        COMPLEXITY --> REFACTOR3[Refactoring Required]
+        REFACTOR3 -->|Without Refactoring| DECLINE[Quality Decline - Law VII]
+        REFACTOR3 -->|With Refactoring| STABILITY[Controlled Evolution]
+    end
+```
+
 ## Summary
 
 Software evolution consumes the majority of lifecycle costs. Maintenance is classified as corrective, adaptive, perfective, and preventive. Lehman's eight laws describe the empirical dynamics of evolution, including the inevitable increase in complexity (Law II) and the necessity of continuing change (Law I). Reverse engineering recovers design information from existing code. Refactoring catalogues provide behaviour-preserving transformations (Extract Method, Replace Conditional with Polymorphism, Extract Class). The technical debt quadrant helps prioritise improvement work. Legacy systems require strategies from scrapping to wrapping. Impact analysis quantifies change consequences. Regression testing is essential throughout evolution.

@@ -469,6 +469,383 @@ This worker runs in 330+ locations globally. JWT verification completes in ~200�
 
 ---
 
+## Practical Implementation
+
+### CDN Cache Simulator
+
+The following TypeScript class models a CDN edge cache with TTL-based expiry, LRU eviction, and hit/miss tracking — useful for understanding cache behavior under load:
+
+```typescript
+interface CacheEntry<T> {
+  data: T;
+  cachedAt: number;
+  ttl: number;
+  lastAccessed: number;
+  sizeBytes: number;
+}
+
+class CdnEdgeCache<T> {
+  private store: Map<string, CacheEntry<T>> = new Map();
+  private maxEntries: number;
+  private maxMemoryBytes: number;
+  private currentMemoryBytes = 0;
+  public hits = 0;
+  public misses = 0;
+
+  constructor(maxEntries = 10000, maxMemoryMB = 512) {
+    this.maxEntries = maxEntries;
+    this.maxMemoryBytes = maxMemoryMB * 1024 * 1024;
+  }
+
+  get(key: string): T | null {
+    const entry = this.store.get(key);
+    if (!entry) { this.misses++; return null; }
+    if (Date.now() - entry.cachedAt > entry.ttl * 1000) {
+      this.store.delete(key);
+      this.currentMemoryBytes -= entry.sizeBytes;
+      this.misses++;
+      return null;
+    }
+    entry.lastAccessed = Date.now();
+    this.hits++;
+    return entry.data;
+  }
+
+  set(key: string, data: T, ttl: number, sizeBytes: number): void {
+    while (
+      this.store.size >= this.maxEntries ||
+      this.currentMemoryBytes + sizeBytes > this.maxMemoryBytes
+    ) {
+      this.evictLRU();
+    }
+    this.store.set(key, {
+      data, cachedAt: Date.now(), ttl,
+      lastAccessed: Date.now(), sizeBytes,
+    });
+    this.currentMemoryBytes += sizeBytes;
+  }
+
+  private evictLRU(): void {
+    let oldest = Date.now();
+    let oldestKey = '';
+    for (const [k, v] of this.store) {
+      if (v.lastAccessed < oldest) { oldest = v.lastAccessed; oldestKey = k; }
+    }
+    if (oldestKey) {
+      const evicted = this.store.get(oldestKey)!;
+      this.currentMemoryBytes -= evicted.sizeBytes;
+      this.store.delete(oldestKey);
+    }
+  }
+
+  getHitRate(): number {
+    const total = this.hits + this.misses;
+    return total === 0 ? 0 : this.hits / total;
+  }
+
+  getMemoryUsageMB(): number {
+    return Math.round(this.currentMemoryBytes / (1024 * 1024));
+  }
+}
+
+// Usage simulation
+const edge = new CdnEdgeCache<string>(1000, 64);
+for (let i = 0; i < 10000; i++) {
+  const key = `/images/photo_${i % 500}.jpg`;
+  let img = edge.get(key);
+  if (!img) { edge.set(key, `binary_${i}`, 3600, 200_000); }
+}
+console.log(`Hit rate: ${(edge.getHitRate() * 100).toFixed(1)}%`);
+console.log(`Memory: ${edge.getMemoryUsageMB()} MB`);
+console.log(`Hits: ${edge.hits}, Misses: ${edge.misses}`);
+```
+
+### DNS Resolution Chain Simulator
+
+This TypeScript implementation models the full recursive DNS walk from stub resolver through root, TLD, and authoritative servers with timing:
+
+```typescript
+interface Nameserver {
+  name: string;
+  ip: string;
+  latencyMs: number;
+  records: Map<string, DnsRecord[]>;
+}
+
+interface DnsRecord {
+  type: 'A' | 'AAAA' | 'CNAME' | 'NS' | 'MX' | 'SOA';
+  name: string;
+  value: string;
+  ttl: number;
+}
+
+class DnsResolutionChain {
+  private rootServers: Nameserver[] = [
+    {
+      name: 'a.root-servers.net', ip: '198.41.0.4',
+      latencyMs: 15, records: new Map(),
+    },
+  ];
+  private tldServers: Nameserver[] = [
+    {
+      name: 'a.gtld-servers.net', ip: '192.5.6.30',
+      latencyMs: 25, records: new Map(),
+    },
+  ];
+  private authoritativeServers: Nameserver[] = [];
+  private resolverCache: Map<string, { record: DnsRecord; expiresAt: number }> = new Map();
+  private totalTimeMs = 0;
+
+  registerDomain(domain: string, records: DnsRecord[]): void {
+    const ns: Nameserver = {
+      name: `ns1.${domain}`, ip: `1.2.3.4`,
+      latencyMs: 10 + Math.random() * 20,
+      records: new Map(),
+    };
+    ns.records.set(domain, records);
+    this.authoritativeServers.push(ns);
+  }
+
+  async resolve(domain: string, type: string): Promise<{ ip: string; timeMs: number; hops: string[] }> {
+    const hops: string[] = [];
+    const cached = this.resolverCache.get(`${domain}:${type}`);
+    if (cached && Date.now() < cached.expiresAt) {
+      return { ip: cached.record.value, timeMs: 0, hops: ['cache hit'] };
+    }
+
+    // Walk root
+    const root = this.rootServers[0];
+    this.totalTimeMs += root.latencyMs;
+    hops.push(`root(${root.name}) → referral to TLD`);
+
+    // Walk TLD
+    const tld = this.tldServers[0];
+    this.totalTimeMs += tld.latencyMs;
+    const tldDomain = domain.split('.').slice(-1)[0];
+    hops.push(`tld(${tld.name}, ${tldDomain}) → referral to authoritative`);
+
+    // Walk authoritative
+    const auth = this.authoritativeServers.find(
+      s => s.records.has(domain)
+    );
+    if (!auth) throw new Error(`No authoritative server for ${domain}`);
+    this.totalTimeMs += auth.latencyMs;
+    const records = auth.records.get(domain)!;
+    const record = records.find(r => r.type === type);
+    if (!record) throw new Error(`No ${type} record for ${domain}`);
+    hops.push(`auth(${auth.name}) → ${record.type} ${record.value}`);
+
+    this.resolverCache.set(`${domain}:${type}`, {
+      record, expiresAt: Date.now() + record.ttl * 1000,
+    });
+    return { ip: record.value, timeMs: this.totalTimeMs, hops };
+  }
+}
+
+const dns = new DnsResolutionChain();
+dns.registerDomain('example.com', [
+  { type: 'A', name: 'example.com', value: '93.184.216.34', ttl: 3600 },
+]);
+dns.resolve('example.com', 'A').then(r =>
+  console.log(`Resolved → ${r.ip} in ${r.timeMs}ms\n  ${r.hops.join('\n  ')}`)
+);
+```
+
+### Latency-Aware Edge Router
+
+An edge computing request router that selects the optimal PoP based on real-time latency probes and geo-proximity:
+
+```typescript
+interface PopEndpoint {
+  id: string;
+  region: string;
+  latitude: number;
+  longitude: number;
+  capacity: number;      // requests/sec
+  currentLoad: number;   // requests/sec
+  baseLatencyMs: number; // baseline RTT from region
+}
+
+interface RoutingDecision {
+  popId: string;
+  estimatedLatencyMs: number;
+  originFallback: boolean;
+}
+
+class LatencyAwareEdgeRouter {
+  private pops: PopEndpoint[] = [];
+  private latencyMatrix: Map<string, Map<string, number>> = new Map();
+  private readonly ORIGIN_LATENCY_MS = 150;
+
+  constructor() {
+    this.pops = [
+      { id: 'us-east-1', region: 'NA', latitude: 39.0, longitude: -77.0,
+        capacity: 50000, currentLoad: 12000, baseLatencyMs: 10 },
+      { id: 'us-west-1', region: 'NA', latitude: 37.7, longitude: -122.4,
+        capacity: 40000, currentLoad: 18000, baseLatencyMs: 12 },
+      { id: 'eu-west-1', region: 'EU', latitude: 53.3, longitude: -6.2,
+        capacity: 35000, currentLoad: 8000, baseLatencyMs: 8 },
+      { id: 'ap-southeast-1', region: 'SEA', latitude: 1.3, longitude: 103.8,
+        capacity: 30000, currentLoad: 15000, baseLatencyMs: 15 },
+    ];
+  }
+
+  private haversineKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
+    const R = 6371;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat / 2) ** 2 +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLon / 2) ** 2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  route(clientLat: number, clientLon: number): RoutingDecision {
+    let best: PopEndpoint | null = null;
+    let bestScore = Infinity;
+
+    for (const pop of this.pops) {
+      const distanceKm = this.haversineKm(clientLat, clientLon, pop.latitude, pop.longitude);
+      const geoLatency = distanceKm / 200; // ~5ms per 1000km fiber
+      const loadFactor = pop.currentLoad / pop.capacity;
+      const latencyEstimate = pop.baseLatencyMs + geoLatency + loadFactor * 20;
+      const score = latencyEstimate + loadFactor * 50;
+      if (score < bestScore) { bestScore = score; best = pop; }
+    }
+
+    const estimatedLatencyMs = Math.round(bestScore);
+    return {
+      popId: best!.id,
+      estimatedLatencyMs,
+      originFallback: estimatedLatencyMs > this.ORIGIN_LATENCY_MS,
+    };
+  }
+
+  recordRequest(popId: string): void {
+    const pop = this.pops.find(p => p.id === popId);
+    if (pop) pop.currentLoad = Math.min(pop.currentLoad + 1, pop.capacity);
+  }
+}
+
+const router = new LatencyAwareEdgeRouter();
+const locations = [
+  { city: 'New York', lat: 40.7, lon: -74.0 },
+  { city: 'London', lat: 51.5, lon: -0.1 },
+  { city: 'Singapore', lat: 1.3, lon: 103.8 },
+];
+for (const loc of locations) {
+  const decision = router.route(loc.lat, loc.lon);
+  console.log(
+    `${loc.city} → ${decision.popId} ` +
+    `(~${decision.estimatedLatencyMs}ms, ` +
+    `originFallback: ${decision.originFallback})`
+  );
+}
+```
+
+### CDN Origin Pull — Sequence Diagram
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant EdgePOP as Edge PoP (Cache)
+    participant Shield as Shield PoP
+    participant Origin
+    participant Registry as Image Registry
+
+    User->>EdgePOP: GET /images/photo.webp
+    EdgePOP->>EdgePOP: Cache Miss (no entry)
+    EdgePOP->>Shield: Forward request
+    Shield->>Shield: Cache Miss
+    Shield->>Origin: GET /images/photo.webp
+    Origin->>Registry: Fetch source PNG
+    Registry-->>Origin: Source image (1.2MB)
+    Origin->>Origin: Resize to 800px
+    Origin->>Origin: Convert to WebP (q=80)
+    Origin-->>Shield: Return 200 (85KB)
+    Shield->>Shield: Store with max-age=86400
+    Shield-->>EdgePOP: Return cached response
+    EdgePOP->>EdgePOP: Store with max-age=86400
+    EdgePOP-->>User: 200 OK (image/webp, 85KB)
+
+    User->>EdgePOP: GET /images/photo.webp (2nd user)
+    EdgePOP->>EdgePOP: Cache HIT
+    EdgePOP-->>User: 200 OK (from edge cache)
+```
+
+### Global Edge Architecture — Deployment View
+
+```mermaid
+flowchart TB
+    subgraph DNS_Layer["DNS Layer"]
+        ANYCAST["Anycast DNS<br/>1.1.1.1 / 8.8.8.8"]
+        LATENCY_RT["Latency-Based Routing<br/>Route53 / CloudDNS"]
+    end
+
+    subgraph EDGE_POPS["Edge PoPs (330+ Locations)"]
+        POP1["North America<br/>Cache + Workers"]
+        POP2["Europe<br/>Cache + Workers"]
+        POP3["Asia-Pacific<br/>Cache + Workers"]
+        POP4["South America<br/>Cache + Workers"]
+    end
+
+    subgraph EDGE_SERVICES["Edge Services"]
+        WAF["WAF + Rate Limiting<br/>OWASP Ruleset"]
+        AUTH["JWT Validation<br/>Cloudflare Worker"]
+        IMG_OPT["Image Optimization<br/>AVIF/WebP Resize"]
+        BOT_DETECT["Bot Detection<br/>ML + JS Challenge"]
+    end
+
+    subgraph EDGE_STORAGE["Edge Storage Layer"]
+        KV["EdgeKV<br/>Eventually Consistent<br/>Feature Flags / Config"]
+        DO["Durable Objects<br/>Strongly Consistent<br/>Matchmaking State"]
+    end
+
+    subgraph ORIGIN["Origin Infrastructure"]
+        API["API Servers<br/>Auto-scaling Group"]
+        DB["Primary Database<br/>RDS / Aurora"]
+        OBJ_STORE["Object Store<br/>S3 / GCS"]
+        REDIS["Redis Cache<br/>Session / Leaderboard"]
+    end
+
+    ANYCAST --> POP1 & POP2 & POP3 & POP4
+    LATENCY_RT --> POP1 & POP2 & POP3 & POP4
+    POP1 & POP2 & POP3 & POP4 --> WAF
+    WAF --> AUTH & IMG_OPT & BOT_DETECT
+    AUTH --> KV & DO
+    IMG_OPT --> OBJ_STORE
+    KV & DO --> API
+    API --> DB & REDIS
+
+    classDef aws fill:#FF9900,color:#000
+    classDef cf fill:#F38020,color:#000
+    classDef infra fill:#1E293B,color:#fff
+    class ANYCAST,LATENCY_RT aws
+    class WAF,AUTH,IMG_OPT,BOT_DETECT cf
+    class API,DB,OBJ_STORE,REDIS infra
+```
+
+### Cache Hit Ratio vs Latency — Trade-off Visualization
+
+```mermaid
+quadrantChart
+    title CDN Cache Configuration Trade-offs
+    x-axis "Low Hit Ratio" --> "High Hit Ratio"
+    y-axis "High Latency" --> "Low Latency"
+    quadrant-1 "Optimal Region"
+    quadrant-2 "Good — high cache but slower"
+    quadrant-3 "Poor — miss-heavy"
+    quadrant-4 "Good — fast but uncached"
+    "Long TTL (86400s)": [0.95, 0.25]
+    "Short TTL (60s)": [0.45, 0.85]
+    "Origin Shield + Long TTL": [0.97, 0.40]
+    "Push Zone (all content)": [0.99, 0.10]
+    "No CDN (direct origin)": [0.00, 0.95]
+    "Worker + KV Auth": [0.70, 0.90]
+```
+
+---
+
 ## Summary
 
 - DNS hierarchy has 4 levels: root, TLD, authoritative, recursive resolver â€” each delegation step is a query from resolver to nameserver

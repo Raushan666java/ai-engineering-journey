@@ -452,6 +452,305 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ---
 
+## Course Architecture Overview
+
+The following diagram illustrates how each phase builds on the last, with final portfolio projects feeding into the job-search pipeline:
+
+```mermaid
+flowchart TB
+    subgraph Foundation["Foundation (Weeks 1-4)"]
+        P0["Phase 0<br/>Backend Gap-Fill<br/>Redis, Async, JWT"]
+        P1["Phase 1<br/>Python + FastAPI<br/>Types, Pydantic, AsyncIO"]
+    end
+
+    subgraph Core["Core AI (Weeks 5-8)"]
+        P2["Phase 2<br/>LLM + RAG<br/>Embeddings, Vector Search"]
+        P3["Phase 3<br/>AI Agents<br/>LangGraph, CrewAI, MCP"]
+    end
+
+    subgraph Hardening["Hardening + Market (Weeks 9-12)"]
+        P4["Phase 4<br/>Production Hardening<br/>Docker, CI/CD, Monitoring"]
+        P5["Phase 5<br/>Portfolio + Positioning<br/>Profiles, Apps, Interviews"]
+    end
+
+    P0 --> P1
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+
+    P1 --> PROJ1["Project 1<br/>Booking Module<br/>(FastAPI)"]
+    P2 --> PROJ2["Project 2<br/>RAG Memory API<br/>(FastAPI + ChromaDB)"]
+    P3 --> PROJ3["Project 3<br/>LangGraph Agent<br/>(State Machine + MCP)"]
+
+    PROJ1 --> PORTFOLIO["Portfolio"]
+    PROJ2 --> PORTFOLIO
+    PROJ3 --> PORTFOLIO
+    PORTFOLIO --> JOBS["Job Search<br/>LinkedIn / Upwork / Dubai"]
+```
+
+## Skill Progression Map
+
+This diagram shows the skill arc from a Laravel baseline to a target AI Agent Engineer role:
+
+```mermaid
+flowchart LR
+    subgraph Baseline["Laravel Baseline"]
+        A1["Multi-Tenant ERP"]
+        A2["Payment Gateways"]
+        A3["n8n Orchestration"]
+        A4["Docker + Redis"]
+    end
+
+    subgraph Bridge["Python Bridge (Phase 0-1)"]
+        B1["AsyncIO / Event Loop"]
+        B2["Pydantic v2 / Type Hints"]
+        B3["FastAPI / Dependency Injection"]
+        B4["pytest / Alembic"]
+    end
+
+    subgraph AI["AI Engineering (Phase 2-3)"]
+        C1["Embeddings / Vector Search"]
+        C2["RAG Pipeline Design"]
+        C3["LangGraph State Machines"]
+        C4["MCP Protocol / Tools"]
+    end
+
+    subgraph Production["Production (Phase 4-5)"]
+        D1["Docker / CI/CD"]
+        D2["Cost Tracking / Monitoring"]
+        D3["Portfolio / Interview Prep"]
+    end
+
+    A1 --> B2
+    A2 --> B3
+    A3 --> C3
+    A4 --> B1
+    B1 --> C1
+    B2 --> C2
+    B3 --> C4
+    C1 --> D2
+    C3 --> D1
+    C4 --> D3
+```
+
+## TypeScript — Course Curriculum Type System
+
+While the course itself uses Python/FastAPI, the following TypeScript types model the curriculum structure for tooling around enrollment tracking, progress dashboards, or CLI planners:
+
+```typescript
+// ---- Domain Types ----
+
+type PhaseId = "phase-0" | "phase-1" | "phase-2" | "phase-3" | "phase-4" | "phase-5";
+
+interface Phase {
+  id: PhaseId;
+  name: string;
+  weeks: number;
+  hoursMin: number;
+  hoursMax: number;
+  prerequisites: PhaseId[];
+  checkpointChecklist: string[];
+  project?: string;
+}
+
+interface DailyTask {
+  day: number;
+  topic: string;
+  action: string;
+  doneCondition: string;
+  estimatedHours: number;
+}
+
+interface WeekPlan {
+  weekNumber: number;
+  phaseId: PhaseId;
+  days: DailyTask[];
+  bufferDay: number; // which day is catch-up
+}
+
+// ---- Enrollment & Progress ----
+
+type CompletionStatus = "not-started" | "in-progress" | "complete" | "skipped";
+
+interface DailyLog {
+  date: string;
+  topic: string;
+  completed: boolean;
+  hoursSpent: number;
+  notes: string;
+}
+
+interface Enrollment {
+  userId: string;
+  startedAt: Date;
+  weeksCompleted: number;
+  currentPhase: PhaseId;
+  dailyLogs: DailyLog[];
+}
+
+// ---- Phase Definitions ----
+
+const PHASES: Phase[] = [
+  {
+    id: "phase-0",
+    name: "Backend Gap-Fill",
+    weeks: 1,
+    hoursMin: 14,
+    hoursMax: 18,
+    prerequisites: [],
+    checkpointChecklist: [
+      "Redis SETEX vs RQ",
+      "Pub/sub publisher + subscriber",
+      "JWT access/refresh flow diagram",
+      "Token bucket vs sliding window",
+    ],
+  },
+  {
+    id: "phase-1",
+    name: "Python + FastAPI + AsyncIO",
+    weeks: 2,
+    hoursMin: 32,
+    hoursMax: 34,
+    prerequisites: ["phase-0"],
+    checkpointChecklist: [
+      "Type hints without docs",
+      "Custom DB context manager",
+      "@retry decorator",
+      "FastAPI CRUD with DI",
+    ],
+    project: "Booking module port",
+  },
+  {
+    id: "phase-2",
+    name: "LLM + RAG",
+    weeks: 2,
+    hoursMin: 28,
+    hoursMax: 32,
+    prerequisites: ["phase-1"],
+    checkpointChecklist: [
+      "Token count estimation",
+      "Cosine similarity explanation",
+      "RAG pipeline drawn from memory",
+    ],
+    project: "RAG demo API",
+  },
+  {
+    id: "phase-3",
+    name: "AI Agents — LangGraph, CrewAI, MCP",
+    weeks: 3,
+    hoursMin: 35,
+    hoursMax: 40,
+    prerequisites: ["phase-2"],
+    checkpointChecklist: [
+      "Minimal ReAct loop",
+      "LangGraph StateGraph end-to-end",
+      "Graph resume from checkpoint",
+      "All 3 MCP primitives",
+    ],
+    project: "Purvanchal LangGraph rebuild",
+  },
+  {
+    id: "phase-4",
+    name: "Production Hardening",
+    weeks: 2,
+    hoursMin: 24,
+    hoursMax: 26,
+    prerequisites: ["phase-3"],
+    checkpointChecklist: [
+      "Docker image < 300 MB",
+      "Background jobs survive restart",
+      "Prometheus scrapes /metrics",
+      "Green CI badge",
+    ],
+  },
+  {
+    id: "phase-5",
+    name: "Portfolio + Positioning",
+    weeks: 2,
+    hoursMin: 16,
+    hoursMax: 20,
+    prerequisites: ["phase-4"],
+    checkpointChecklist: [
+      "60-second README",
+      "90-second demo videos",
+      "LinkedIn headline updated",
+      "10 applications sent",
+    ],
+  },
+];
+
+// ---- Utility Functions ----
+
+function totalHours(phase: Phase): string {
+  return `${phase.hoursMin}-${phase.hoursMax} hours over ${phase.weeks} week(s)`;
+}
+
+function courseTotalHours(): { min: number; max: number } {
+  return PHASES.reduce(
+    (acc, p) => ({ min: acc.min + p.hoursMin, max: acc.max + p.hoursMax }),
+    { min: 0, max: 0 },
+  );
+}
+
+function currentPhase(
+  enrollment: Enrollment,
+  allPhases: Phase[],
+): Phase | undefined {
+  return allPhases.find((p) => p.id === enrollment.currentPhase);
+}
+
+function isEligible(
+  enrollment: Enrollment,
+  phase: Phase,
+  allPhases: Phase[],
+): boolean {
+  return phase.prerequisites.every((preqId) => {
+    const preq = allPhases.find((p) => p.id === preqId);
+    return preq
+      ? enrollment.dailyLogs.some(
+          (log) => log.topic.includes(preq.name) && log.completed,
+        )
+      : true;
+  });
+}
+
+function completionPercentage(enrollment: Enrollment, totalWeeks: number): number {
+  return Math.round((enrollment.weeksCompleted / totalWeeks) * 100);
+}
+
+// ---- Example Usage ----
+
+const total = courseTotalHours();
+console.log(`Course total: ${total.min}-${total.max} hours`);
+
+const sampleEnrollment: Enrollment = {
+  userId: "user-001",
+  startedAt: new Date("2026-06-01"),
+  weeksCompleted: 2,
+  currentPhase: "phase-1",
+  dailyLogs: [],
+};
+
+const current = currentPhase(sampleEnrollment, PHASES);
+if (current) {
+  console.log(`Current phase: ${current.name} — ${totalHours(current)}`);
+  console.log(`Eligible for next: ${isEligible(sampleEnrollment, PHASES[2], PHASES)}`);
+}
+```
+
+## Learning Path — Weekly Rhythms
+
+```mermaid
+flowchart LR
+    W["Monday – Thursday<br/>New Topics + Code"] --> F["Friday<br/>Catch-up"]
+    F --> S["Saturday<br/>Checkpoint Review"]
+    S --> SUN["Sunday<br/>Rest / Preview"]
+    SUN --> W
+```
+
+---
+
 ## Navigation
 
 | File | Phase | Lines | What's Inside |

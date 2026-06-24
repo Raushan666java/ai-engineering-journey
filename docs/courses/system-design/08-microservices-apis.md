@@ -536,6 +536,31 @@ class OrderSaga:
 
 ---
 
+### TypeScript: Service Registry
+
+```typescript
+class ServiceRegistry {
+  private services = new Map<string, { url: string; health: boolean }>();
+
+  register(name: string, url: string): void { this.services.set(name, { url, health: true }); }
+
+  deregister(name: string): void { this.services.delete(name); }
+
+  discover(name: string): string | undefined { return this.services.get(name)?.url; }
+
+  healthCheck(name: string): boolean { return this.services.get(name)?.health ?? false; }
+
+  reportUnhealthy(name: string): void {
+    const svc = this.services.get(name);
+    if (svc) svc.health = false;
+  }
+
+  listHealthy(): string[] {
+    return [...this.services.entries()].filter(([, v]) => v.health).map(([k]) => k);
+  }
+}
+```
+
 ## Summary
 
 - Microservices decompose applications into independently deployable services aligned to business capabilities; the modular monolith is a pragmatic starting point

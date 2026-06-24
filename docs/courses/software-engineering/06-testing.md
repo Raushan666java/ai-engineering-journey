@@ -425,6 +425,243 @@ describe('PriceCalculator', () => {
 
 **Answer: B** — Empirical evidence shows defects cluster at boundary conditions.
 
+## Test Coverage Analyzer and Quality Dashboard
+
+```typescript
+interface TestCase {
+  id: string;
+  description: string;
+  requirementIds: string[];
+  level: 'unit' | 'integration' | 'system' | 'acceptance';
+  technique: 'white-box' | 'black-box';
+  passed: boolean;
+  executionTimeMs: number;
+}
+
+interface CoverageMetrics {
+  statementCoverage: number;
+  branchCoverage: number;
+  conditionCoverage: number;
+  functionCoverage: number;
+  lineCoverage: number;
+}
+
+type TestResultSummary = {
+  totalTests: number;
+  passed: number;
+  failed: number;
+  skipped: number;
+  passRate: number;
+  totalExecutionTimeMs: number;
+  byLevel: Record<string, { total: number; passed: number }>;
+  byRequirement: Map<string, { total: number; passed: number }>;
+};
+
+class TestCoverageAnalyzer {
+  private testCases: TestCase[] = [];
+  private coverage: CoverageMetrics = {
+    statementCoverage: 0,
+    branchCoverage: 0,
+    conditionCoverage: 0,
+    functionCoverage: 0,
+    lineCoverage: 0,
+  };
+
+  public recordTests(tests: TestCase[]): void {
+    this.testCases.push(...tests);
+  }
+
+  public setCoverage(metrics: CoverageMetrics): void {
+    this.coverage = metrics;
+  }
+
+  public analyze(): TestResultSummary {
+    const byLevel: Record<string, { total: number; passed: number }> = {};
+    const byRequirement = new Map<string, { total: number; passed: number }>();
+
+    for (const test of this.testCases) {
+      if (!byLevel[test.level]) byLevel[test.level] = { total: 0, passed: 0 };
+      byLevel[test.level].total++;
+      if (test.passed) byLevel[test.level].passed++;
+
+      for (const reqId of test.requirementIds) {
+        if (!byRequirement.has(reqId)) byRequirement.set(reqId, { total: 0, passed: 0 });
+        const entry = byRequirement.get(reqId)!;
+        entry.total++;
+        if (test.passed) entry.passed++;
+      }
+    }
+
+    const passed = this.testCases.filter((t) => t.passed).length;
+    return {
+      totalTests: this.testCases.length,
+      passed,
+      failed: this.testCases.filter((t) => !t.passed).length,
+      skipped: 0,
+      passRate: this.testCases.length > 0 ? passed / this.testCases.length : 0,
+      totalExecutionTimeMs: this.testCases.reduce((s, t) => s + t.executionTimeMs, 0),
+      byLevel,
+      byRequirement,
+    };
+  }
+
+  public generateReport(): string {
+    const summary = this.analyze();
+    const lines: string[] = [
+      '=== Test Coverage Report ===',
+      `Generated: ${new Date().toISOString()}`,
+      '',
+      '┌──────────────────────────────┬────────────┐',
+      '│ Metric                       │ Value      │',
+      '├──────────────────────────────┼────────────┤',
+      `│ Total Tests                  │ ${summary.totalTests.toString().padStart(10)} │`,
+      `│ Passed                       │ ${summary.passed.toString().padStart(10)} │`,
+      `│ Failed                       │ ${summary.failed.toString().padStart(10)} │`,
+      `│ Pass Rate                    │ ${(summary.passRate * 100).toFixed(1).padStart(8)}%   │`,
+      `│ Total Time                   │ ${summary.totalExecutionTimeMs.toString().padStart(8)}ms │`,
+      '├──────────────────────────────┼────────────┤',
+      `│ Statement Coverage           │ ${(this.coverage.statementCoverage * 100).toFixed(1).padStart(8)}%   │`,
+      `│ Branch Coverage              │ ${(this.coverage.branchCoverage * 100).toFixed(1).padStart(8)}%   │`,
+      `│ Condition Coverage           │ ${(this.coverage.conditionCoverage * 100).toFixed(1).padStart(8)}%   │`,
+      `│ Function Coverage            │ ${(this.coverage.functionCoverage * 100).toFixed(1).padStart(8)}%   │`,
+      '└──────────────────────────────┴────────────┘',
+      '',
+      '--- By Test Level ---',
+    ];
+    for (const [level, data] of Object.entries(summary.byLevel)) {
+      lines.push(`  ${level.padEnd(15)} ${data.passed}/${data.total} passed`);
+    }
+    lines.push('', '--- Requirement Traceability ---');
+    for (const [reqId, data] of summary.byRequirement) {
+      const status = data.passed === data.total ? '✓' : '✗';
+      lines.push(`  ${status} ${reqId}: ${data.passed}/${data.total} tests passing`);
+    }
+    lines.push('', '--- Coverage Assessment ---');
+    const allMetrics = [
+      { name: 'Statement', value: this.coverage.statementCoverage, min: 0.8 },
+      { name: 'Branch', value: this.coverage.branchCoverage, min: 0.7 },
+      { name: 'Condition', value: this.coverage.conditionCoverage, min: 0.6 },
+      { name: 'Function', value: this.coverage.functionCoverage, min: 0.85 },
+    ];
+    for (const m of allMetrics) {
+      const meets = m.value >= m.min ? 'PASS' : 'FAIL';
+      lines.push(`  [${meets}] ${m.name.padEnd(10)} ${(m.value * 100).toFixed(1)}% (min ${(m.min * 100).toFixed(0)}%)`);
+    }
+    return lines.join('\n');
+  }
+
+  public suggestAdditionalTests(codeStructure: { branches: number; conditions: number; functions: number; lines: number }): string[] {
+    const suggestions: string[] = [];
+    if (this.coverage.branchCoverage < 0.7) {
+      const uncovered = Math.ceil(codeStructure.branches * (1 - this.coverage.branchCoverage));
+      suggestions.push(`Add ${uncovered} test(s) to cover untested branches (target: 70% branch coverage)`);
+    }
+    if (this.coverage.functionCoverage < 0.85) {
+      const uncovered = Math.ceil(codeStructure.functions * (1 - this.coverage.functionCoverage));
+      suggestions.push(`Add ${uncovered} test(s) for uncovered functions (target: 85% function coverage)`);
+    }
+    if (this.coverage.lineCoverage < 0.8) {
+      const uncovered = Math.ceil(codeStructure.lines * (1 - this.coverage.lineCoverage));
+      suggestions.push(`Add ${uncovered} test(s) for uncovered lines (target: 80% line coverage)`);
+    }
+    if (this.testCases.filter((t) => t.technique === 'black-box').length < 3) {
+      suggestions.push('Add boundary value analysis tests — defects frequently occur at input boundaries');
+    }
+    return suggestions;
+  }
+}
+
+// Decision Table Test Generator
+class DecisionTableTestGenerator {
+  public generate(conditions: string[], actions: string[], rules: boolean[][]): TestCase[] {
+    const tests: TestCase[] = [];
+    for (let i = 0; i < rules.length; i++) {
+      const rule = rules[i];
+      const description = `Rule ${i + 1}: When ${conditions.map((c, j) => `${c}=${rule[j]}`).join(', ')}`;
+      tests.push({
+        id: `DT-R${i + 1}`,
+        description,
+        requirementIds: ['DT-GEN'],
+        level: 'unit',
+        technique: 'black-box',
+        passed: true,
+        executionTimeMs: 5,
+      });
+    }
+    return tests;
+  }
+
+  public generateLoginTable(): TestCase[] {
+    const conditions = ['Valid Account', 'Account Unlocked', 'Correct Password', 'Under Max Attempts'];
+    const actions = ['Allow Login', 'Show Error', 'Increment Attempts', 'Lock Account'];
+    const rules = [
+      [true, true, true, true],
+      [false, true, true, true],
+      [true, false, true, true],
+      [true, true, false, true],
+      [true, true, true, false],
+      [false, false, true, true],
+      [true, false, false, true],
+    ];
+    return this.generate(conditions, actions, rules);
+  }
+}
+
+// Usage
+const analyzer = new TestCoverageAnalyzer();
+analyzer.recordTests([
+  { id: 'UT-001', description: 'empty cart returns 0', requirementIds: ['FR-001'], level: 'unit', technique: 'white-box', passed: true, executionTimeMs: 2 },
+  { id: 'UT-002', description: 'single item calculated correctly', requirementIds: ['FR-001'], level: 'unit', technique: 'white-box', passed: true, executionTimeMs: 1 },
+  { id: 'UT-003', description: 'multiple items sum correctly', requirementIds: ['FR-001', 'FR-002'], level: 'unit', technique: 'white-box', passed: false, executionTimeMs: 3 },
+  { id: 'IT-001', description: 'order service integration', requirementIds: ['FR-003'], level: 'integration', technique: 'black-box', passed: true, executionTimeMs: 150 },
+  { id: 'ST-001', description: 'end-to-end checkout flow', requirementIds: ['FR-001', 'FR-002', 'FR-003', 'FR-004'], level: 'system', technique: 'black-box', passed: true, executionTimeMs: 2500 },
+]);
+analyzer.setCoverage({ statementCoverage: 0.82, branchCoverage: 0.65, conditionCoverage: 0.58, functionCoverage: 0.79, lineCoverage: 0.75 });
+console.log(analyzer.generateReport());
+console.log('\nSuggestions:');
+analyzer.suggestAdditionalTests({ branches: 30, conditions: 20, functions: 15, lines: 500 }).forEach((s) => console.log(`  → ${s}`));
+
+const dtGen = new DecisionTableTestGenerator();
+dtGen.generateLoginTable().forEach((t) => console.log(`  ${t.id}: ${t.description}`));
+```
+
+```mermaid
+graph TD
+    subgraph "Test Quality Pipeline"
+        CODE[Source Code] --> STATIC[Static Analysis]
+        STATIC --> METRICS2[Complexity Metrics]
+        STATIC --> STRUCTURE[Control Flow Graph]
+        
+        SPEC[Requirements] --> BLACK[Black-Box Design]
+        BLACK --> EP[Equivalence Partitioning]
+        BLACK --> BVA[Boundary Value Analysis]
+        BLACK --> DT[Decision Tables]
+        BLACK --> ST[State Transition]
+        
+        STRUCTURE --> WHITE[White-Box Design]
+        METRICS2 --> WHITE
+        WHITE --> SC[Statement Coverage]
+        WHITE --> BC[Branch Coverage]
+        WHITE --> PC[Path Coverage]
+        
+        EP --> TESTGEN[Test Case Generation]
+        BVA --> TESTGEN
+        DT --> TESTGEN
+        ST --> TESTGEN
+        SC --> TESTGEN
+        BC --> TESTGEN
+        PC --> TESTGEN
+        
+        TESTGEN --> EXEC[Execute Tests]
+        EXEC --> REPORT2[Coverage Report]
+        EXEC --> RESULTS[Test Results]
+        REPORT2 --> GATES{Quality Gates Met?}
+        RESULTS --> GATES
+        GATES -->|Yes| PASS[Build Passes]
+        GATES -->|No| FAIL[Build Fails - Fix Issues]
+    end
+```
+
 ## Summary
 
 Software testing is the primary dynamic verification and validation technique. Testing occurs at four levels: unit, integration, system, and acceptance. White-box techniques use knowledge of internal structure; black-box techniques derive test cases from specifications. The test pyramid guides automation investment. TDD follows the red-green-refactor cycle and produces testable designs. Test doubles (dummy, fake, stub, spy, mock) isolate units under test. Property-based testing verifies behavioural properties across input ranges. Non-functional testing addresses performance, security, and usability. Regression testing protects against regression defects.

@@ -434,6 +434,259 @@ Codeword: P1 P2 D1 P3 D2 D3 D4 = 0 1 1 0 0 1 1 = 0110011
 4. **BCD correction is simple** — anytime a BCD sum exceeds 9, add 6 to produce the correct digit and carry.
 5. **Parity is cheap, Hamming is robust** — parity adds 1 bit for detection; Hamming adds log₂(n) bits for single-error correction.
 
+## Number System Evolution
+
+```mermaid
+timeline
+    title Evolution of Number Systems in Computing
+    Early Mechanical : Binary-coded decimal (BCD) : Relays use 2-state logic
+    Vacuum Tubes : Binary arithmetic becomes standard : ENIAC uses decimal
+    Transistors : Hexadecimal for memory addressing : Octal for Unix permissions
+    Integrated Circuits : Two's complement universal : IEEE 754 for floating-point
+    Modern VLSI : Gray code for state machines : Hamming codes for ECC memory
+    Future : Post-binary logic explored : Ternary / quantum computing
+```
+
+## TypeScript Examples
+
+### Number System Converter
+
+The following TypeScript class implements conversions between binary, decimal, octal, and hexadecimal:
+
+```typescript
+class NumberSystemConverter {
+  static toDecimal(value: string, base: number): number {
+    const result = parseInt(value, base);
+    if (isNaN(result)) throw new Error(`Invalid ${base}-base value: ${value}`);
+    return result;
+  }
+
+  static fromDecimal(value: number, base: number): string {
+    if (!Number.isInteger(value) || value < 0)
+      throw new Error("Non-negative integer required");
+    return value.toString(base).toUpperCase();
+  }
+
+  static binToDec(bin: string): number { return this.toDecimal(bin, 2); }
+  static decToBin(dec: number): string { return this.fromDecimal(dec, 2); }
+  static hexToDec(hex: string): number { return this.toDecimal(hex, 16); }
+  static decToHex(dec: number): string { return this.fromDecimal(dec, 16); }
+  static octToDec(oct: string): number { return this.toDecimal(oct, 8); }
+  static decToOct(dec: number): string { return this.fromDecimal(dec, 8); }
+  static binToHex(bin: string): string {
+    return this.fromDecimal(this.binToDec(bin), 16);
+  }
+  static hexToBin(hex: string): string {
+    return this.fromDecimal(this.hexToDec(hex), 2);
+  }
+
+  static twosComplement(value: number, bits: number): string {
+    if (value >= 0) return value.toString(2).padStart(bits, "0");
+    return ((1 << bits) + value).toString(2);
+  }
+
+  static fromTwosComplement(bin: string): number {
+    const bits = bin.length;
+    const val = parseInt(bin, 2);
+    return val >= 1 << (bits - 1) ? val - (1 << bits) : val;
+  }
+}
+
+const cvt = NumberSystemConverter;
+console.log("=== Conversions ===");
+console.log(`  218 decimal     → ${cvt.decToBin(218)} binary`);
+console.log(`  DA hex          → ${cvt.hexToDec("DA")} decimal`);
+console.log(`  332 octal       → ${cvt.octToDec("332")} decimal`);
+console.log(`  218 decimal     → ${cvt.decToHex(218)} hex`);
+console.log(`  1010 binary     → ${cvt.binToDec("1010")} decimal`);
+console.log(`  15 decimal      → ${cvt.decToOct(15)} octal`);
+console.log(`  11011010 binary → ${cvt.binToHex("11011010")} hex`);
+console.log(`  -6 (4-bit)      → ${cvt.twosComplement(-6, 4)}`);
+console.log(`  1010 (2's C)    → ${cvt.fromTwosComplement("1010")} decimal`);
+```
+
+### Binary Adder Simulation
+
+Half adders, full adders, and ripple-carry adders form the arithmetic core of every ALU:
+
+```typescript
+interface AdderResult {
+  sum: number;
+  carryOut: number;
+}
+
+class HalfAdder {
+  static add(a: number, b: number): AdderResult {
+    return { sum: a ^ b, carryOut: a & b };
+  }
+}
+
+class FullAdder {
+  static add(a: number, b: number, carryIn: number): AdderResult {
+    return {
+      sum: a ^ b ^ carryIn,
+      carryOut: (a & b) | (carryIn & (a ^ b))
+    };
+  }
+}
+
+class BinaryAdder {
+  static addNBits(a: number, b: number, bits: number) {
+    const aBits: number[] = [];
+    const bBits: number[] = [];
+    for (let i = 0; i < bits; i++) {
+      aBits.push((a >> i) & 1);
+      bBits.push((b >> i) & 1);
+    }
+    const sumBits: number[] = [];
+    let carry = 0;
+    for (let i = 0; i < bits; i++) {
+      const fa = FullAdder.add(aBits[i], bBits[i], carry);
+      sumBits.push(fa.sum);
+      carry = fa.carryOut;
+    }
+    sumBits.reverse();
+    const sum = parseInt(sumBits.join(""), 2);
+    const msbA = aBits[bits - 1];
+    const msbB = bBits[bits - 1];
+    const msbS = sumBits[0];
+    const overflow = (msbA === msbB) && (msbS !== msbA);
+    return { sum, carry, overflow, sumBits: sumBits.join("") };
+  }
+}
+
+console.log("\n=== Half Adder Truth Table ===");
+for (const a of [0, 1]) {
+  for (const b of [0, 1]) {
+    const r = HalfAdder.add(a, b);
+    console.log(`  ${a} + ${b}: sum=${r.sum}, carry=${r.carryOut}`);
+  }
+}
+
+console.log("\n=== Full Adder Truth Table ===");
+for (const a of [0, 1]) {
+  for (const b of [0, 1]) {
+    for (const ci of [0, 1]) {
+      const r = FullAdder.add(a, b, ci);
+      console.log(`  ${a}+${b}+${ci}: sum=${r.sum}, cout=${r.carryOut}`);
+    }
+  }
+}
+
+console.log("\n=== 4-bit Addition ===");
+const testPairs = [[3, 4], [7, 1], [11, 5], [9, 8], [-3, 5]];
+for (const [a, b] of testPairs) {
+  const safeA = a >= 0 ? a : (1 << 4) + a;
+  const safeB = b >= 0 ? b : (1 << 4) + b;
+  const r = BinaryAdder.addNBits(safeA, safeB, 4);
+  const aStr = safeA.toString(2).padStart(4, "0");
+  const bStr = safeB.toString(2).padStart(4, "0");
+  console.log(`  ${aStr} + ${bStr} = ${r.sumBits} (carry=${r.carry}, overflow=${r.overflow})`);
+}
+
+console.log("\n=== Gray Code Generation ===");
+function grayCode(n: number): string[] {
+  const result: string[] = [];
+  for (let i = 0; i < 1 << n; i++) {
+    result.push((i ^ (i >> 1)).toString(2).padStart(n, "0"));
+  }
+  return result;
+}
+console.log(grayCode(3).map((c, i) => `  G(${i.toString(2).padStart(3,"0")}) = ${c}`).join("\n"));
+```
+
+### BCD Adder Correction
+
+```typescript
+class BCDAdder {
+  static add4Bit(a: number, b: number): { digit: number; carry: number } {
+    const raw = a + b;
+    if (raw <= 9) return { digit: raw, carry: 0 };
+    const corrected = raw + 6;
+    return { digit: corrected & 0xF, carry: 1 };
+  }
+
+  static addDecimal(a: number, b: number): number {
+    let result = 0;
+    let carry = 0;
+    let multiplier = 1;
+    while (a > 0 || b > 0 || carry > 0) {
+      const da = a % 10;
+      const db = b % 10;
+      const r = this.add4Bit(da + carry, db);
+      result += r.digit * multiplier;
+      carry = r.carry;
+      a = Math.floor(a / 10);
+      b = Math.floor(b / 10);
+      multiplier *= 10;
+    }
+    return result;
+  }
+}
+
+console.log("\n=== BCD Addition ===");
+console.log(`  5 + 3 = ${BCDAdder.addDecimal(5, 3)} (correct: 8)`);
+console.log(`  8 + 7 = ${BCDAdder.addDecimal(8, 7)} (correct: 15)`);
+console.log(`  19 + 25 = ${BCDAdder.addDecimal(19, 25)} (correct: 44)`);
+console.log(`  49 + 38 = ${BCDAdder.addDecimal(49, 38)} (correct: 87)`);
+console.log(`  589 + 326 = ${BCDAdder.addDecimal(589, 326)} (correct: 915)`);
+```
+
+## Mermaid Diagrams
+
+### Number System Interconversion
+
+```mermaid
+flowchart LR
+    Dec[Decimal<br/>Base 10] -->|÷2 read remainder| Bin[Binary<br/>Base 2]
+    Bin -->|∑ digit × 2ⁿ| Dec
+    Dec -->|÷8 read remainder| Oct[Octal<br/>Base 8]
+    Oct -->|∑ digit × 8ⁿ| Dec
+    Dec -->|÷16 read remainder| Hex[Hex<br/>Base 16]
+    Hex -->|∑ digit × 16ⁿ| Dec
+    Bin -->|group 4 bits from right| Hex
+    Hex -->|expand 1 digit to 4 bits| Bin
+    Bin -->|group 3 bits from right| Oct
+    Oct -->|expand 1 digit to 3 bits| Bin
+```
+
+### Two's Complement Overflow Detection
+
+```mermaid
+flowchart TD
+    A[Addition Operation] --> Check{Sign of inputs?}
+    Check -->|Same sign| Compare{Input sign vs<br/>result sign?}
+    Compare -->|Same| OK[No overflow ✓]
+    Compare -->|Different| OVF[Overflow ✗]
+    Check -->|Different signs| OK2[No overflow ✓<br/>(result always valid)]
+```
+
+### 4-Bit Ripple-Carry Adder
+
+```mermaid
+flowchart TD
+    subgraph Inputs
+        direction LR
+        A0[A₀=1] B0[B₀=0] Cin[C₀=0]
+        A1[A₁=0] B1[B₁=1]
+        A2[A₂=1] B2[B₂=1]
+        A3[A₃=0] B3[B₃=0]
+    end
+    subgraph Adders
+        FA0[FA₀] -->|C₁=0| FA1[FA₁]
+        FA1 -->|C₂=1| FA2[FA₂]
+        FA2 -->|C₃=0| FA3[FA₃]
+    end
+    subgraph Outputs
+        S0[S₀=1] S1[S₁=0] S2[S₂=1] S3[S₃=1] Cout[C₄=0]
+    end
+    A0 & B0 & Cin --> FA0 --> S0
+    A1 & B1 --> FA1 --> S1
+    A2 & B2 --> FA2 --> S2
+    A3 & B3 --> FA3 --> S3
+    FA3 --> Cout
+```
+
 ## Summary
 
 - Positional number systems represent quantities using weighted digit positions.

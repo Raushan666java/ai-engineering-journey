@@ -393,6 +393,295 @@ If the expanded segment has significantly higher CPA and lower conversion rate, 
 The stakeholder receives a concise diagnosis: "ROAS dropped from 3.2x to 1.8x because we expanded from a high-intent lookalike audience (1% seed) to broad targeting, and ad frequency exceeded 5x on the original audience. Recommendation: refresh creatives, reduce frequency cap to 3x/week, and pull broad targeting back to 30% of budget â€” reallocate the remaining 70% to a new 3% lookalike based on recent converters."
 ---
 
+## TypeScript Examples
+
+### Marketing Interview Question Generator
+
+```typescript
+interface MarketingQuestion {
+  id: string;
+  category: "campaign" | "segmentation" | "analytics" | "automation" | "content" | "attribution";
+  difficulty: "junior" | "mid" | "senior" | "lead";
+  question: string;
+  expectedKeywords: string[];
+  scoringRubric: { criterion: string; maxScore: number }[];
+}
+
+class MarketingInterviewQuestionGenerator {
+  private questions: MarketingQuestion[] = [
+    {
+      id: "mq-001",
+      category: "campaign",
+      difficulty: "senior",
+      question: "Describe how you would design a multi-channel campaign optimization system that dynamically reallocates budget across channels based on real-time ROAS data.",
+      expectedKeywords: ["ROAS", "budget allocation", "channel performance", "optimization loop", "attribution window"],
+      scoringRubric: [
+        { criterion: "Architecture understanding", maxScore: 25 },
+        { criterion: "Channel knowledge depth", maxScore: 20 },
+        { criterion: "Optimization methodology", maxScore: 30 },
+        { criterion: "Analytics integration", maxScore: 25 },
+      ],
+    },
+    {
+      id: "mq-002",
+      category: "segmentation",
+      difficulty: "mid",
+      question: "How would you implement a behavioral segmentation engine that groups users by purchase patterns, content engagement, and lifecycle stage?",
+      expectedKeywords: ["segment", "RFM", "cohort", "behavioral scoring", "cluster"],
+      scoringRubric: [
+        { criterion: "Segmentation methodology", maxScore: 30 },
+        { criterion: "Data source integration", maxScore: 25 },
+        { criterion: "Implementation approach", maxScore: 25 },
+        { criterion: "Scalability considerations", maxScore: 20 },
+      ],
+    },
+    {
+      id: "mq-003",
+      category: "analytics",
+      difficulty: "lead",
+      question: "Design an attribution modeling system that supports first-click, last-click, linear, time-decay, and data-driven attribution models with validation methodology.",
+      expectedKeywords: ["attribution", "touchpoint", "conversion path", "shapley value", "holdout test"],
+      scoringRubric: [
+        { criterion: "Attribution model knowledge", maxScore: 25 },
+        { criterion: "Data-driven approach", maxScore: 30 },
+        { criterion: "Validation methodology", maxScore: 25 },
+        { criterion: "Business context alignment", maxScore: 20 },
+      ],
+    },
+    {
+      id: "mq-004",
+      category: "automation",
+      difficulty: "senior",
+      question: "Architect a marketing automation platform with email, SMS, push, and social channels, unified frequency capping, and suppression list management.",
+      expectedKeywords: ["workflow automation", "trigger", "frequency cap", "suppression", "channel orchestration"],
+      scoringRubric: [
+        { criterion: "System architecture", maxScore: 30 },
+        { criterion: "Channel integration", maxScore: 25 },
+        { criterion: "Compliance handling", maxScore: 25 },
+        { criterion: "Scalability design", maxScore: 20 },
+      ],
+    },
+    {
+      id: "mq-005",
+      category: "content",
+      difficulty: "mid",
+      question: "Build a content personalization engine that adapts hero banners, CTAs, and product recommendations based on real-time visitor behavior and segment membership.",
+      expectedKeywords: ["personalization", "A/B testing", "visitor profile", "segment", "real-time decision"],
+      scoringRubric: [
+        { criterion: "Personalization strategy", maxScore: 25 },
+        { criterion: "Technical implementation", maxScore: 30 },
+        { criterion: "Performance constraints", maxScore: 25 },
+        { criterion: "Measurement approach", maxScore: 20 },
+      ],
+    },
+  ];
+
+  generateQuiz(difficulty: string, count: number): MarketingQuestion[] {
+    return this.questions
+      .filter(q => q.difficulty === difficulty)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, count);
+  }
+
+  scoreAnswer(question: MarketingQuestion, answer: string): { total: number; details: Record<string, number> } {
+    const text = answer.toLowerCase();
+    const keywordRatio = question.expectedKeywords.filter(kw => text.includes(kw.toLowerCase())).length
+      / question.expectedKeywords.length;
+
+    const details: Record<string, number> = {};
+    let total = 0;
+    for (const rubric of question.scoringRubric) {
+      const score = Math.round(rubric.maxScore * (0.6 + 0.4 * Math.random()) * (0.5 + 0.5 * keywordRatio));
+      details[rubric.criterion] = Math.min(score, rubric.maxScore);
+      total += details[rubric.criterion];
+    }
+    return { total, details };
+  }
+}
+```
+
+### Campaign ROI Analyzer
+
+```typescript
+interface CampaignMetrics {
+  id: string;
+  impressions: number;
+  clicks: number;
+  conversions: number;
+  spend: number;
+  channel: "email" | "social" | "search" | "display" | "direct";
+}
+
+interface CampaignROI {
+  ctr: number;
+  cpc: number;
+  cpa: number;
+  roas: number;
+  conversionRate: number;
+}
+
+class CampaignROIAnalyzer {
+  compute(metrics: CampaignMetrics): CampaignROI {
+    const ctr = metrics.clicks / metrics.impressions;
+    const cpc = metrics.spend / metrics.clicks;
+    const cpa = metrics.spend / metrics.conversions;
+    const revenue = metrics.conversions * this.averageOrderValue(metrics.channel);
+    const roas = revenue / metrics.spend;
+    return { ctr, cpc, cpa, roas, conversionRate: metrics.conversions / metrics.clicks };
+  }
+
+  private averageOrderValue(channel: string): number {
+    const map: Record<string, number> = { email: 45, social: 35, search: 60, display: 25, direct: 50 };
+    return map[channel] ?? 40;
+  }
+
+  efficiencyScore(roi: CampaignROI): number {
+    return roi.roas * 0.4 + (1 / Math.max(roi.cpa, 1)) * 30 * 0.3 + roi.ctr * 100 * 0.2 + roi.conversionRate * 100 * 0.1;
+  }
+
+  reallocate(
+    campaigns: { metrics: CampaignMetrics; budget: number }[],
+    totalBudget: number
+  ): { id: string; current: number; recommended: number; delta: number }[] {
+    const scored = campaigns.map(c => ({ ...c, score: this.efficiencyScore(this.compute(c.metrics)) }));
+    const totalScore = scored.reduce((s, c) => s + c.score, 0);
+    return scored.map(c => {
+      const recommended = Math.round((c.score / totalScore) * totalBudget);
+      return { id: c.metrics.id, current: c.budget, recommended, delta: recommended - c.budget };
+    });
+  }
+
+  detectAnomalies(daily: CampaignMetrics[], threshold = 2): { day: number; value: number; zScore: number }[] {
+    const values = daily.map(m => m.conversions);
+    const mean = values.reduce((s, v) => s + v, 0) / values.length;
+    const std = Math.sqrt(values.reduce((s, v) => s + (v - mean) ** 2, 0) / values.length);
+    return values.map((v, i) => ({ day: i + 1, value: v, zScore: Math.abs((v - mean) / (std || 1)) }))
+      .filter(r => r.zScore > threshold);
+  }
+
+  trendDirection(daily: CampaignROI[], window = 7): "up" | "down" | "flat" {
+    const recent = daily.slice(-window);
+    const slope = recent.reduce((s, r, i) => s + r.roas * (i - (window - 1) / 2), 0)
+      / recent.reduce((s, r, i) => (i - (window - 1) / 2) ** 2, 0);
+    return slope > 0.05 ? "up" : slope < -0.05 ? "down" : "flat";
+  }
+}
+```
+
+### A/B Test Statistical Analyzer
+
+```typescript
+interface VariantData {
+  id: string;
+  impressions: number;
+  conversions: number;
+}
+
+interface ABTestResult {
+  winnerId: string | null;
+  pValue: number;
+  lift: number;
+  confidence: number;
+  adequateSample: boolean;
+}
+
+class ABTestAnalyzer {
+  private readonly Z_ALPHA = 1.96;
+  private readonly Z_BETA = 0.84;
+
+  run(control: VariantData, treatment: VariantData, mde = 0.05): ABTestResult {
+    const pA = control.conversions / control.impressions;
+    const pB = treatment.conversions / treatment.impressions;
+    const pooled = (control.conversions + treatment.conversions) / (control.impressions + treatment.impressions);
+    const se = Math.sqrt(pooled * (1 - pooled) * (1 / control.impressions + 1 / treatment.impressions));
+    const z = (pB - pA) / Math.max(se, 0.0001);
+
+    const pValue = 2 * (1 - this.normalCdf(Math.abs(z)));
+    const lift = (pB - pA) / Math.max(pA, 0.0001);
+    const requiredSample = Math.ceil(
+      ((this.Z_ALPHA + this.Z_BETA) ** 2 * (pA * (1 - pA) + pB * (1 - pB))) / (mde ** 2)
+    );
+
+    return {
+      winnerId: pValue < 0.05 ? (pB > pA ? treatment.id : control.id) : null,
+      pValue,
+      lift,
+      confidence: (1 - pValue) * 100,
+      adequateSample: control.impressions >= requiredSample && treatment.impressions >= requiredSample,
+    };
+  }
+
+  private normalCdf(x: number): number {
+    const a1 = 0.254829592, a2 = -0.284496736, a3 = 1.421413741;
+    const a4 = -1.453152027, a5 = 1.061405429, p = 0.3275911;
+    const sign = x < 0 ? -1 : 1;
+    x = Math.abs(x) / Math.sqrt(2);
+    const t = 1 / (1 + p * x);
+    const y = 1 - (((((a5 * t + a4) * t) + a3) * t + a2) * t + a1) * t * Math.exp(-x * x);
+    return 0.5 * (1 + sign * y);
+  }
+
+  sequentialMonitor(dailyVariants: { control: VariantData; treatment: VariantData }[]): ABTestResult[] {
+    return dailyVariants.map((d, i) => ({
+      day: i + 1,
+      ...this.run(d.control, d.treatment),
+    }));
+  }
+}
+```
+
+### Campaign Optimization Cycle
+
+```mermaid
+flowchart TD
+    A[Active Campaigns] --> B[Collect Analytics]
+    B --> C[Compute Per-Channel KPIs]
+    C --> D[Compare vs Trailing Average]
+    D --> E{Channel Trending?}
+
+    E -- Up --> F[Increase Budget Cap]
+    E -- Down --> G[Decrease Budget]
+    E -- Flat --> H[Maintain Allocation]
+
+    F --> I[Update Campaign Config]
+    G --> I
+    H --> I
+
+    I --> J[Deploy Changes]
+    J --> K[Monitor Impact]
+    K --> B
+```
+
+### Lead Scoring & Nurturing Pipeline
+
+```mermaid
+flowchart LR
+    A[Lead Created] --> B[Collect Interactions]
+    B --> C[Event Type Mapping]
+    C --> D[Weighted Score Calc]
+    D --> E[Decay Factor Applied]
+
+    E --> F{Score Range}
+    F -- "< 20" --> G[Cold Segment]
+    F -- "20-49" --> H[Warm Segment]
+    F -- "50+" --> I[Hot Segment]
+
+    G --> J[Educational Drip]
+    H --> K[Case Study Email]
+    I --> L[Sales Alert + Demo Offer]
+
+    J --> M[Re-score in 7d]
+    K --> M
+    L --> M
+    M --> B
+```
+
+## Summary
+
+This chapter covered marketing & advertising interview questions for Laravel developers, spanning campaign management, audience segmentation, content strategy, marketing automation, and performance analytics. Key takeaways include understanding multi-channel campaign architecture, implementing AI-driven segmentation and personalization, building statistical A/B testing frameworks, and designing scalable analytics pipelines. TypeScript examples demonstrated interview question generation with rubric-based scoring, campaign ROI analysis with budget reallocation optimization, and A/B test statistical computation.
+
+---
+
 ## Concept Comparison
 > **One-Sentence Takeaway:** Compare key marketing concepts for interview preparation.
 

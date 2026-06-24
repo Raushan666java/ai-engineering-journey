@@ -528,6 +528,34 @@ class CuckooFilter:
 
 ---
 
+### TypeScript: Bloom Filter
+
+```typescript
+class BloomFilter {
+  private bits: boolean[];
+  constructor(private size: number, private hashCount: number) { this.bits = new Array(size).fill(false); }
+
+  add(item: string): void {
+    for (let i = 0; i < this.hashCount; i++) this.bits[this._hash(item, i) % this.size] = true;
+  }
+
+  has(item: string): boolean {
+    for (let i = 0; i < this.hashCount; i++) if (!this.bits[this._hash(item, i) % this.size]) return false;
+    return true; // false positive possible
+  }
+
+  private _hash(item: string, seed: number): number {
+    let h = seed * 31;
+    for (let i = 0; i < item.length; i++) h = (h << 5) - h + item.charCodeAt(i);
+    return h >>> 0;
+  }
+}
+// const bf = new BloomFilter(1000, 7);
+// bf.add("hello"); bf.add("world");
+// console.log(bf.has("hello")); // true
+// console.log(bf.has("nope"));  // likely false
+```
+
 ## Summary
 
 - Consistent hashing maps keys to nodes on a ring with O(log N) lookup; virtual nodes (R â‰ˆ 150) smooth load imbalance to CV < 0.01

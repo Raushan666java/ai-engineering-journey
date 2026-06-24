@@ -440,6 +440,188 @@ List<User> findActiveUsersByEmailDomain(@Param("domain") String domain);
 | Collections | Basic usage | Performance trade-offs | Concurrent collections | Custom implementations |
 | Concurrency | Syntax knowledge | Write thread-safe code | Debug deadlocks | Design concurrent systems |
 
+## TypeScript SQL Query Plan Analyzer
+
+The following TypeScript utility simulates SQL query plan analysis, helping you detect N+1 problems and inefficient joins before they hit production:
+
+```typescript
+interface QueryPlan {
+  queryType: 'SELECT' | 'INSERT' | 'UPDATE' | 'DELETE';
+  tableScans: number;
+  joinCount: number;
+  estimatedRows: number;
+  actualRows: number;
+  indexUsage: string[];
+  executionTimeMs: number;
+}
+
+class SqlQueryAnalyzer {
+  private readonly plans: QueryPlan[] = [];
+
+  analyze(query: string, params: Record<string, unknown> = {}): QueryPlan {
+    const plan: QueryPlan = {
+      queryType: this.detectQueryType(query),
+      tableScans: this.countTableScans(query),
+      joinCount: (query.match(/\bJOIN\b/gi) || []).length,
+      estimatedRows: 0,
+      actualRows: 0,
+      indexUsage: this.detectIndexUsage(query),
+      executionTimeMs: 0
+    };
+    this.plans.push(plan);
+    return plan;
+  }
+
+  private detectQueryType(query: string): QueryPlan['queryType'] {
+    if (/^\s*SELECT/i.test(query)) return 'SELECT';
+    if (/^\s*INSERT/i.test(query)) return 'INSERT';
+    if (/^\s*UPDATE/i.test(query)) return 'UPDATE';
+    if (/^\s*DELETE/i.test(query)) return 'DELETE';
+    throw new Error(`Unknown query type: ${query.substring(0, 40)}`);
+  }
+
+  private countTableScans(query: string): number {
+    const fromTables = query.match(/\bFROM\s+(\w+)/gi) || [];
+    return fromTables.length;
+  }
+
+  private detectIndexUsage(query: string): string[] {
+    const indexes: string[] = [];
+    if (/WHERE\s+\w+\s*=\s*/i.test(query)) {
+      indexes.push('primary-index-lookup');
+    }
+    if (/\bJOIN\b.*\bON\b/i.test(query)) {
+      indexes.push('foreign-key-index');
+    }
+    if (/\bORDER\s+BY\b/i.test(query)) {
+      indexes.push('sort-index');
+    }
+    return indexes.length > 0
+      ? indexes
+      : ['table-scan-warning-index-missing'];
+  }
+
+  simulateExecution(plan: QueryPlan, rowCount: number): QueryPlan {
+    const baseTime = plan.tableScans * 0.5;
+    const joinTime = plan.joinCount * 0.3;
+    const nPlusOneRisk = plan.joinCount > 1 && plan.tableScans > 1 ? 5.0 : 0;
+    return {
+      ...plan,
+      estimatedRows: rowCount,
+      actualRows: rowCount,
+      executionTimeMs: baseTime + joinTime + nPlusOneRisk
+    };
+  }
+
+  detectNPlusOne(queries: QueryPlan[]): string[] {
+    const warnings: string[] = [];
+    const selectCount = queries.filter(q => q.queryType === 'SELECT').length;
+    if (selectCount > 5 && selectCount > queries.length * 0.7) {
+      warnings.push(
+        `N+1 risk: ${selectCount} SELECT queries detected — consider JOIN FETCH or @EntityGraph`
+      );
+    }
+    for (const q of queries) {
+      if (q.executionTimeMs > 100) {
+        warnings.push(
+          `Slow query (${q.executionTimeMs.toFixed(1)}ms): consider adding an index`
+        );
+      }
+    }
+    return warnings;
+  }
+
+  summary(): string {
+    const total = this.plans.reduce((a, b) => a + b.executionTimeMs, 0);
+    const warnings = this.detectNPlusOne(this.plans);
+    return `
+Query Plan Analysis Summary
+═══════════════════════════
+Total queries: ${this.plans.length}
+Total time: ${total.toFixed(1)}ms
+Warnings: ${warnings.length > 0 ? warnings.map(w => `  ⚠ ${w}`).join('\n') : 'None'}
+    `.trim();
+  }
+}
+
+// ── Example: detecting N+1 in a blog post fetch ──
+const analyzer = new SqlQueryAnalyzer();
+const plan1 = analyzer.analyze('SELECT * FROM posts WHERE author_id = 1');
+const plan2 = analyzer.analyze('SELECT * FROM comments WHERE post_id = 1');
+const plan3 = analyzer.analyze('SELECT * FROM comments WHERE post_id = 2');
+const plan4 = analyzer.analyze('SELECT * FROM comments WHERE post_id = 3');
+
+const results = [
+  analyzer.simulateExecution(plan1, 3),
+  analyzer.simulateExecution(plan2, 5),
+  analyzer.simulateExecution(plan3, 8),
+  analyzer.simulateExecution(plan4, 2),
+];
+
+console.log(results.map(r => `${r.queryType}: ${r.executionTimeMs}ms`).join('\n'));
+console.log(analyzer.detectNPlusOne(results));
+```
+
+## Mermaid: Transaction Isolation Levels Decision Flow
+
+```mermaid
+flowchart TD
+    A[Choose Isolation Level] --> B{Concurrency Risk?}
+    B -->|Low| C[READ_COMMITTED]
+    B -->|Medium| D[REPEATABLE_READ]
+    B -->|High| E[SERIALIZABLE]
+
+    C --> F[Dirty reads prevented]
+    C --> G[Non-repeatable reads possible]
+
+    D --> H[Dirty + non-repeatable prevented]
+    D --> I[Phantom reads possible]
+
+    E --> J[All anomalies prevented]
+    E --> K[Lowest concurrency]
+
+    C --> L{Use case}
+    L --> M[Web apps, dashboards]
+    D --> N[Reporting, financial queries]
+    E --> O[Inventory, transfers]
+
+    style C fill:#4caf50,color:#fff
+    style D fill:#ff9800,color:#fff
+    style E fill:#f44336,color:#fff
+```
+
+## Mermaid: JPA Cache Architecture
+
+```mermaid
+flowchart LR
+    subgraph Application
+        A[EntityManager/Session]
+        B[SessionFactory]
+    end
+
+    subgraph Caching
+        C[L1 Cache<br/>Session-scoped]
+        D[L2 Cache<br/>Factory-scoped]
+        E[Query Cache]
+    end
+
+    subgraph Database
+        F[(PostgreSQL<br/>MySQL<br/>Oracle)]
+    end
+
+    A -->|read/write| C
+    C -->|miss| D
+    D -->|miss| F
+    B --> D
+    A -->|cached queries| E
+    E -->|miss| F
+
+    style C fill:#2196f3,color:#fff
+    style D fill:#ff9800,color:#fff
+    style E fill:#9c27b0,color:#fff
+    style F fill:#607d8b,color:#fff
+```
+
 ## Chapter Quiz
 
 1. What is the difference between equals() and == in Java?

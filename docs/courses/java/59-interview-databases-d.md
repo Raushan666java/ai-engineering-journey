@@ -528,6 +528,288 @@ Never rename or drop columns without a multi-phase migration. Never make columns
 | Collections | Basic usage | Performance trade-offs | Concurrent collections | Custom implementations |
 | Concurrency | Syntax knowledge | Write thread-safe code | Debug deadlocks | Design concurrent systems |
 
+## TypeScript Indexing Strategy Validator
+
+The following TypeScript code validates database indexing strategies, simulates shard key routing, and demonstrates batch processing patterns:
+
+```typescript
+interface ColumnDef {
+  name: string;
+  type: string;
+  nullable: boolean;
+  isPrimaryKey: boolean;
+}
+
+interface IndexDef {
+  name: string;
+  columns: string[];
+  unique: boolean;
+  partial: string | null;
+  type: 'btree' | 'gin' | 'gist' | 'hash' | 'brin';
+}
+
+class IndexingStrategyValidator {
+  analyze(query: string): string[] {
+    const recommendations: string[] = [];
+    const whereColumns = this.extractWhereColumns(query);
+    const orderByColumns = this.extractOrderByColumns(query);
+    const joinColumns = this.extractJoinColumns(query);
+
+    if (whereColumns.length === 0 && orderByColumns.length === 0) {
+      return ['Query has no WHERE or ORDER BY — no index needed'];
+    }
+
+    const allColumns = [...new Set([...whereColumns, ...orderByColumns, ...joinColumns])];
+
+    if (allColumns.length === 1) {
+      recommendations.push(`Single-column B-tree index on ${allColumns[0]}`);
+    } else if (allColumns.length > 1) {
+      const eqColumns = whereColumns.filter(c => !c.includes('>') && !c.includes('<') && !c.includes('LIKE'));
+      const rangeColumns = whereColumns.filter(c => c.includes('>') || c.includes('<'));
+      const compositeCols = [...eqColumns, ...rangeColumns, ...orderByColumns.filter(c => !whereColumns.includes(c))];
+      recommendations.push(
+        `Composite B-tree index on (${compositeCols.join(', ')}) — equality columns first, range/sort last`
+      );
+    }
+
+    if (query.includes('ORDER BY') && !whereColumns.some(c => orderByColumns.includes(c))) {
+      recommendations.push('ORDER BY columns differ from WHERE — consider a covering index');
+
+      const coveringIndex = [...new Set([...allColumns, ...this.extractSelectColumns(query)])];
+      recommendations.push(
+        `Covering index suggestion: (${coveringIndex.join(', ')}) to avoid table lookups`
+      );
+    }
+
+    if (query.includes('LIKE')) {
+      const likeCols = whereColumns.filter(c => c.includes('LIKE'));
+      if (likeCols.length > 0) {
+        recommendations.push(`Consider GIN with pg_trgm for ${likeCols[0]} if using prefix/suffix LIKE`);
+      }
+    }
+
+    if (query.includes('jsonb') || query.includes('JSONB') || query.includes('@>')) {
+      recommendations.push('JSONB containment query detected — use GIN index with jsonb_path_ops');
+    }
+
+    return recommendations;
+  }
+
+  private extractWhereColumns(query: string): string[] {
+    const whereMatch = query.match(/WHERE\s+(.+?)(?:ORDER\s+BY|GROUP\s+BY|HAVING|LIMIT|$)/i);
+    if (!whereMatch) return [];
+    return whereMatch[1]
+      .split(/\s+(?:AND|OR)\s+/i)
+      .map(clause => {
+        const colMatch = clause.match(/^\s*(\w+)\.?(\w+)?\s*(=|>|<|>=|<=|!=|LIKE|IN|BETWEEN)/i);
+        return colMatch ? (colMatch[2] || colMatch[1]) : null;
+      })
+      .filter((c): c is string => c !== null);
+  }
+
+  private extractOrderByColumns(query: string): string[] {
+    const orderMatch = query.match(/ORDER\s+BY\s+(.+?)(?:LIMIT|OFFSET|$)/i);
+    if (!orderMatch) return [];
+    return orderMatch[1]
+      .split(',')
+      .map(c => c.trim().split(/\s+/)[0]);
+  }
+
+  private extractJoinColumns(query: string): string[] {
+    const joinMatches = query.matchAll(/JOIN\s+\w+\s+\w+\s+ON\s+\w+\.(\w+)\s*=\s*\w+\.(\w+)/gi);
+    const columns: string[] = [];
+    for (const match of joinMatches) {
+      columns.push(match[1], match[2]);
+    }
+    return columns;
+  }
+
+  private extractSelectColumns(query: string): string[] {
+    const selectMatch = query.match(/SELECT\s+(.+?)\s+FROM/i);
+    if (!selectMatch) return [];
+    return selectMatch[1]
+      .split(',')
+      .map(c => c.trim().replace(/.*\./, ''));
+  }
+
+  costEstimate(query: string, rowCount: number): { sequential: number; indexed: number } {
+    const sequential = rowCount * 0.1;
+    const hasIndex = this.extractWhereColumns(query).length > 1;
+    const indexed = hasIndex ? Math.log2(rowCount) * 0.05 : sequential;
+    return {
+      sequential: Number(sequential.toFixed(2)),
+      indexed: Number(indexed.toFixed(2)),
+    };
+  }
+}
+
+// ── Example usage ──
+const idxValidator = new IndexingStrategyValidator();
+
+const queries = [
+  'SELECT * FROM orders WHERE user_id = 123',
+  'SELECT * FROM orders WHERE user_id = 123 AND status = \'ACTIVE\' ORDER BY created_at DESC',
+  'SELECT * FROM orders WHERE total > 1000',
+  'SELECT * FROM products WHERE metadata @> \'{"color": "red"}\'',
+  'SELECT o.*, u.name FROM orders o JOIN users u ON o.user_id = u.id WHERE o.status = \'PENDING\'',
+];
+
+console.log('=== INDEXING STRATEGY VALIDATOR ===\n');
+for (const q of queries) {
+  console.log(`Query: ${q.substring(0, 60)}...`);
+  const recs = idxValidator.analyze(q);
+  recs.forEach(r => console.log(`  → ${r}`));
+  const cost = idxValidator.costEstimate(q, 100000);
+  console.log(`  Cost: sequential=${cost.sequential}ms, indexed=${cost.indexed}ms`);
+  console.log();
+}
+
+// ── Shard key router ──
+class ConsistentHashRouter {
+  private ring: number[] = [];
+  private nodes: Map<number, string> = new Map();
+  private readonly virtualNodes = 100;
+
+  constructor(shards: string[]) {
+    for (const shard of shards) {
+      for (let i = 0; i < this.virtualNodes; i++) {
+        const hash = this.hash(`${shard}:${i}`);
+        this.ring.push(hash);
+        this.nodes.set(hash, shard);
+      }
+    }
+    this.ring.sort((a, b) => a - b);
+  }
+
+  private hash(key: string): number {
+    let hash = 0;
+    for (let i = 0; i < key.length; i++) {
+      hash = ((hash << 5) - hash) + key.charCodeAt(i);
+      hash |= 0;
+    }
+    return Math.abs(hash);
+  }
+
+  getShard(key: string): string {
+    if (this.ring.length === 0) throw new Error('No shards available');
+    const hash = this.hash(key);
+    for (const ringHash of this.ring) {
+      if (hash <= ringHash) {
+        return this.nodes.get(ringHash)!;
+      }
+    }
+    return this.nodes.get(this.ring[0])!;
+  }
+
+  addShard(shard: string): void {
+    for (let i = 0; i < this.virtualNodes; i++) {
+      const hash = this.hash(`${shard}:${i}`);
+      this.ring.push(hash);
+      this.nodes.set(hash, shard);
+    }
+    this.ring.sort((a, b) => a - b);
+  }
+}
+
+console.log('=== CONSISTENT HASH SHARD ROUTER ===\n');
+const router = new ConsistentHashRouter(['shard-a', 'shard-b', 'shard-c']);
+const userIds = [101, 202, 303, 404, 505, 606];
+for (const uid of userIds) {
+  console.log(`User ${uid} → ${router.getShard(`user:${uid}`)}`);
+}
+```
+
+## Mermaid: Database Sharding Architecture
+
+```mermaid
+flowchart TD
+    A[Application] --> B[Shard Router]
+    B --> C{Shard Key<br/>user_id % N}
+
+    C -->|Shard 0| D[(Shard A)]
+    C -->|Shard 1| E[(Shard B)]
+    C -->|Shard 2| F[(Shard C)]
+
+    D --> G[users_0]
+    D --> H[orders_0]
+    E --> I[users_1]
+    E --> J[orders_1]
+    F --> K[users_2]
+    F --> L[orders_2]
+
+    A --> M[Read Replicas]
+    M --> N[(Replica 1)]
+    M --> O[(Replica 2)]
+
+    D -.->|async replication| N
+    E -.->|async replication| N
+    F -.->|async replication| O
+
+    style A fill:#2196f3,color:#fff
+    style B fill:#ff9800,color:#fff
+    style D fill:#4caf50,color:#fff
+    style E fill:#4caf50,color:#fff
+    style F fill:#4caf50,color:#fff
+    style M fill:#9c27b0,color:#fff
+```
+
+## Mermaid: Batch Processing Flow
+
+```mermaid
+flowchart LR
+    A[Read CSV/XLSX] --> B[Parse rows]
+    B --> C[Create entities]
+    C --> D{Batch full?}
+    D -->|No| C
+    D -->|Yes, batch_size=50| E[em.flush()]
+    E --> F[em.clear()]
+    F --> G{More rows?}
+    G -->|Yes| C
+    G -->|No| H[Final flush]
+    H --> I[Commit transaction]
+
+    subgraph Hibernate Internals
+        J[Persist context queue]
+        K[SQL statement batching]
+        L[JDBC batch execution]
+    end
+
+    E --> J
+    J --> K
+    K --> L
+
+    style E fill:#4caf50,color:#fff
+    style F fill:#ff9800,color:#fff
+    style H fill:#2196f3,color:#fff
+    style I fill:#9c27b0,color:#fff
+```
+
+## Mermaid: Cascade Type Decision Tree
+
+```mermaid
+flowchart TD
+    A[Choose Cascade Type] --> B{Child has<br/>independent lifecycle?}
+    B -->|Yes| C[Use PERSIST + MERGE only]
+    B -->|No| D{Relationship type?}
+
+    D -->|@OneToMany| E[CascadeType.ALL]
+    D -->|@ManyToMany| F[PERSIST + MERGE<br/>NEVER ALL]
+    D -->|@OneToOne| G[CascadeType.ALL]
+
+    C --> H[Parent saves -> child saved]
+    C --> I[Parent merges -> child merged]
+    C --> J[Parent delete -> NOT cascaded]
+
+    E --> K[All operations cascade]
+    F --> L[Only persist/merge propagate]
+    G --> M[Full lifecycle sync]
+
+    style C fill:#ff9800,color:#fff
+    style E fill:#4caf50,color:#fff
+    style F fill:#f44336,color:#fff
+    style G fill:#2196f3,color:#fff
+```
+
 ## Chapter Quiz
 
 1. What is the difference between equals() and == in Java?

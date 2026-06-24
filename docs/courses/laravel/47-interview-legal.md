@@ -181,6 +181,425 @@ $report->setMatter($matter)
 **A:** First, identify all matters and custodians covered by the subpoena scope. Issue a legal hold on affected documents to prevent any deletion or alteration. Use the discovery agent to search across all matters matching the subpoena's parameters â€” date ranges, keywords, custodian names, and document types. Generate a collection report showing data sources, document counts, and estimated volume. The platform must produce a privilege log for any withheld documents. The e-discovery pipeline processes the identified documents through collection, processing, review, and production stages. All production activities are logged in the audit trail with timestamps and user identities. The final production package includes a cover letter, load file, privilege log, and document production in the required format. The system must demonstrate chain of custody for every produced document. Post-production, the legal hold remains in place until the subpoena matter is formally closed.
 ---
 
+## TypeScript Examples
+
+### Legal Interview Question Generator
+
+```typescript
+interface LegalQuestion {
+  id: string;
+  category: "document" | "contract" | "case" | "compliance" | "discovery" | "privilege";
+  difficulty: "junior" | "mid" | "senior" | "partner";
+  question: string;
+  expectedKeywords: string[];
+  scoringRubric: { criterion: string; maxScore: number }[];
+}
+
+class LegalInterviewQuestionGenerator {
+  private questions: LegalQuestion[] = [
+    {
+      id: "lq-001",
+      category: "document",
+      difficulty: "mid",
+      question: "Design a legal document management system that supports versioning, chain of custody, field-level encryption for privileged content, and tamper-evident audit logging.",
+      expectedKeywords: ["versioning", "chain of custody", "encryption", "audit trail", "tamper-evident"],
+      scoringRubric: [
+        { criterion: "Security architecture", maxScore: 25 },
+        { criterion: "Compliance knowledge", maxScore: 25 },
+        { criterion: "Implementation detail", maxScore: 30 },
+        { criterion: "Scalability planning", maxScore: 20 },
+      ],
+    },
+    {
+      id: "lq-002",
+      category: "contract",
+      difficulty: "senior",
+      question: "Build a contract review agent that detects risky clauses, computes risk scores, and suggests alternative language using AI-powered analysis.",
+      expectedKeywords: ["clause detection", "risk scoring", "LLM analysis", "indemnification", "auto-renewal"],
+      scoringRubric: [
+        { criterion: "Clause detection accuracy", maxScore: 25 },
+        { criterion: "Risk methodology", maxScore: 25 },
+        { criterion: "AI integration depth", maxScore: 30 },
+        { criterion: "Practical usability", maxScore: 20 },
+      ],
+    },
+    {
+      id: "lq-003",
+      category: "discovery",
+      difficulty: "partner",
+      question: "Design an e-discovery pipeline for 500,000 documents with deduplication, privilege classification, relevance scoring, and production packaging.",
+      expectedKeywords: ["EDRM", "deduplication", "privilege log", "review queue", "load file"],
+      scoringRubric: [
+        { criterion: "Pipeline architecture", maxScore: 25 },
+        { criterion: "Scalability approach", maxScore: 30 },
+        { criterion: "Privilege handling", maxScore: 25 },
+        { criterion: "Quality assurance", maxScore: 20 },
+      ],
+    },
+    {
+      id: "lq-004",
+      category: "compliance",
+      difficulty: "senior",
+      question: "Architect a multi-jurisdiction compliance monitoring system that tracks regulatory deadlines, runs automated checks, and escalates violations through tiered notifications.",
+      expectedKeywords: ["regulation", "deadline tracking", "automated check", "escalation", "audit trail"],
+      scoringRubric: [
+        { criterion: "Regulatory breadth", maxScore: 25 },
+        { criterion: "Monitoring architecture", maxScore: 30 },
+        { criterion: "Escalation design", maxScore: 25 },
+        { criterion: "Reporting capability", maxScore: 20 },
+      ],
+    },
+    {
+      id: "lq-005",
+      category: "privilege",
+      difficulty: "mid",
+      question: "How would you implement an AI-assisted privilege review system that flags attorney-client communications and work-product documents during e-discovery?",
+      expectedKeywords: ["privilege", "attorney-client", "work product", "classification", "quality control"],
+      scoringRubric: [
+        { criterion: "Privilege law knowledge", maxScore: 30 },
+        { criterion: "AI classification approach", maxScore: 30 },
+        { criterion: "Human review integration", maxScore: 25 },
+        { criterion: "Defensibility strategy", maxScore: 15 },
+      ],
+    },
+  ];
+
+  generateSet(difficulty: string, count: number): LegalQuestion[] {
+    return this.questions
+      .filter(q => q.difficulty === difficulty)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, count);
+  }
+
+  evaluateAnswer(question: LegalQuestion, answer: string): { total: number; details: Record<string, number> } {
+    const text = answer.toLowerCase();
+    const matchRatio = question.expectedKeywords.filter(kw => text.includes(kw.toLowerCase())).length
+      / question.expectedKeywords.length;
+    const details: Record<string, number> = {};
+    let total = 0;
+    for (const rubric of question.scoringRubric) {
+      const score = Math.round(rubric.maxScore * (0.55 + 0.45 * Math.random()) * (0.5 + 0.5 * matchRatio));
+      details[rubric.criterion] = Math.min(score, rubric.maxScore);
+      total += details[rubric.criterion];
+    }
+    return { total, details };
+  }
+}
+```
+
+### Document Redaction Engine
+
+```typescript
+interface RedactionRule {
+  name: string;
+  pattern: RegExp;
+  replacement: string;
+  category: "pii" | "financial" | "medical" | "privileged";
+}
+
+interface RedactionResult {
+  redactedText: string;
+  redactions: { start: number; end: number; category: string; tag: string }[];
+}
+
+class DocumentRedactionEngine {
+  private rules: RedactionRule[] = [
+    { name: "SSN", pattern: /\b\d{3}-\d{2}-\d{4}\b/g, replacement: "[REDACTED-SSN]", category: "pii" },
+    { name: "CCN", pattern: /\b(?:\d[ -]*?){13,16}\b/g, replacement: "[REDACTED-CC]", category: "financial" },
+    { name: "Email", pattern: /\b[\w.-]+@[\w.-]+\.\w+\b/g, replacement: "[REDACTED-EMAIL]", category: "pii" },
+    { name: "Phone", pattern: /\b\d{3}[-.]\d{3}[-.]\d{4}\b/g, replacement: "[REDACTED-PHONE]", category: "pii" },
+    { name: "DOB", pattern: /\b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b/g, replacement: "[REDACTED-DOB]", category: "pii" },
+  ];
+
+  redact(text: string, enabledCategories: string[] = ["pii", "financial"]): RedactionResult {
+    let redactedText = text;
+    const redactions: RedactionResult["redactions"] = [];
+
+    for (const rule of this.rules) {
+      if (!enabledCategories.includes(rule.category)) continue;
+      let match: RegExpExecArray | null;
+      const ruleCopy = new RegExp(rule.pattern.source, rule.pattern.flags.includes("g") ? rule.pattern.flags : rule.pattern.flags + "g");
+      while ((match = ruleCopy.exec(redactedText)) !== null) {
+        redactions.push({
+          start: match.index,
+          end: match.index + match[0].length,
+          category: rule.category,
+          tag: rule.replacement,
+        });
+      }
+      redactedText = redactedText.replace(rule.pattern, rule.replacement);
+    }
+
+    return { redactedText, redactions };
+  }
+
+  batchRedact(documents: { id: string; text: string }[], categories: string[]): Map<string, RedactionResult> {
+    const results = new Map<string, RedactionResult>();
+    for (const doc of documents) {
+      results.set(doc.id, this.redact(doc.text, categories));
+    }
+    return results;
+  }
+}
+```
+
+### Contract Risk Analyzer
+
+```typescript
+interface ClauseMatch {
+  type: string;
+  text: string;
+  position: number;
+  risk: number;
+}
+
+interface ContractRiskReport {
+  contractId: string;
+  clauses: ClauseMatch[];
+  overallRisk: number;
+  recommendations: string[];
+}
+
+class ContractRiskAnalyzer {
+  private readonly clausePatterns: { type: string; pattern: RegExp; baseRisk: number }[] = [
+    { type: "indemnification", pattern: /indemnif(y|ies|ication)\s.*(loss|damage|claim|liability)/gi, baseRisk: 0.7 },
+    { type: "limitation-of-liability", pattern: /limitation\s+of\s+liability/gi, baseRisk: 0.5 },
+    { type: "auto-renewal", pattern: /(automatically\s+renew|renewal\s+period|evergreen)/gi, baseRisk: 0.6 },
+    { type: "non-compete", pattern: /non[- ]compete|restrictive\s+covenant/gi, baseRisk: 0.4 },
+    { type: "confidentiality", pattern: /(confidential|non[- ]disclosure|proprietary)\s.*(information|data)/gi, baseRisk: 0.3 },
+    { type: "termination", pattern: /terminat(ion|e)\s.*(cause|convenience|breach)/gi, baseRisk: 0.5 },
+    { type: "governing-law", pattern: /govern(ed|ing)\s+(by|law)|choice\s+of\s+law/gi, baseRisk: 0.2 },
+    { type: "arbitration", pattern: /arbitrat(e|ion)\s.*(binding|exclusive)/gi, baseRisk: 0.4 },
+  ];
+
+  analyze(contractId: string, text: string): ContractRiskReport {
+    const clauses: ClauseMatch[] = [];
+
+    for (const cp of this.clausePatterns) {
+      let match: RegExpExecArray | null;
+      const re = new RegExp(cp.pattern.source, "gi");
+      while ((match = re.exec(text)) !== null) {
+        const context = text.substring(Math.max(0, match.index - 60), match.index + match[0].length + 120);
+        clauses.push({
+          type: cp.type,
+          text: context.trim().substring(0, 120),
+          position: match.index,
+          risk: this.computeClauseRisk(cp.baseRisk, context),
+        });
+      }
+    }
+
+    const uniqueClauses = this.deduplicate(clauses);
+    const overallRisk = uniqueClauses.reduce((s, c) => s + c.risk, 0) / Math.max(uniqueClauses.length + 2, 1);
+    const recommendations = this.generateRecommendations(uniqueClauses);
+
+    return { contractId, clauses: uniqueClauses, overallRisk, recommendations };
+  }
+
+  private computeClauseRisk(baseRisk: number, context: string): number {
+    const aggravatingFactors = [
+      /unlimited/i, /sole\s+discretion/i, /irrevocable/i,
+      /perpetual/i, /indemnify.*all/i, /no\s+cap/i,
+    ];
+    const mitigatingFactors = [
+      /mutual/i, /reasonable/i, /cap\s+of/i, /subject\s+to/i,
+      /proportional/i, /limitation.*cap/i,
+    ];
+    const aggravating = aggravatingFactors.filter(f => f.test(context)).length * 0.15;
+    const mitigating = mitigatingFactors.filter(f => f.test(context)).length * 0.1;
+    return Math.max(0, Math.min(1, baseRisk + aggravating - mitigating));
+  }
+
+  private deduplicate(clauses: ClauseMatch[]): ClauseMatch[] {
+    const seen = new Set<string>();
+    return clauses.filter(c => {
+      const key = `${c.type}:${c.position}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  }
+
+  private generateRecommendations(clauses: ClauseMatch[]): string[] {
+    const recs: string[] = [];
+    for (const clause of clauses) {
+      if (clause.risk > 0.6) recs.push(`Review ${clause.type} clause at position ${clause.position}: high risk (${(clause.risk * 100).toFixed(0)}%)`);
+    }
+    if (recs.length === 0) recs.push("No high-risk clauses detected — standard review recommended");
+    return recs;
+  }
+}
+```
+
+### Compliance Schedule Runner
+
+```typescript
+interface ComplianceRule {
+  id: string;
+  regulation: string;
+  description: string;
+  severity: "low" | "medium" | "high" | "critical";
+  frequency: "daily" | "weekly" | "monthly" | "quarterly";
+  checkFn: (matterId: string) => Promise<ComplianceResult>;
+}
+
+interface ComplianceResult {
+  ruleId: string;
+  matterId: string;
+  passed: boolean;
+  checkedAt: Date;
+  details: string;
+  score: number;
+}
+
+class ComplianceScheduleRunner {
+  private rules: ComplianceRule[] = [];
+  private results: ComplianceResult[] = [];
+
+  registerRule(rule: ComplianceRule): void {
+    this.rules.push(rule);
+  }
+
+  async runChecks(matterIds: string[]): Promise<ComplianceResult[]> {
+    const results: ComplianceResult[] = [];
+    for (const rule of this.rules) {
+      const due = await this.isDue(rule);
+      if (!due) continue;
+      for (const matterId of matterIds) {
+        try {
+          const result = await rule.checkFn(matterId);
+          results.push(result);
+        } catch (err) {
+          results.push({
+            ruleId: rule.id,
+            matterId,
+            passed: false,
+            checkedAt: new Date(),
+            details: `Check failed: ${err instanceof Error ? err.message : "Unknown error"}`,
+            score: 0,
+          });
+        }
+      }
+    }
+    this.results.push(...results);
+    return results;
+  }
+
+  private async isDue(rule: ComplianceRule): Promise<boolean> {
+    const lastRun = this.results
+      .filter(r => r.ruleId === rule.id)
+      .sort((a, b) => b.checkedAt.getTime() - a.checkedAt.getTime())[0];
+
+    if (!lastRun) return true;
+
+    const intervals: Record<string, number> = {
+      daily: 24, weekly: 168, monthly: 720, quarterly: 2160,
+    };
+    const hoursSince = (Date.now() - lastRun.checkedAt.getTime()) / 3600000;
+    return hoursSince >= intervals[rule.frequency];
+  }
+
+  generateComplianceReport(matterId: string): {
+    matterId: string;
+    totalChecks: number;
+    passed: number;
+    failed: number;
+    complianceRate: number;
+  } {
+    const matterResults = this.results.filter(r => r.matterId === matterId);
+    const passed = matterResults.filter(r => r.passed).length;
+    return {
+      matterId,
+      totalChecks: matterResults.length,
+      passed,
+      failed: matterResults.length - passed,
+      complianceRate: matterResults.length > 0 ? (passed / matterResults.length) * 100 : 0,
+    };
+  }
+
+  getEscalations(): ComplianceResult[] {
+    return this.results.filter(r => !r.passed && this.isEscalated(r));
+  }
+
+  private isEscalated(result: ComplianceResult): boolean {
+    const rule = this.rules.find(r => r.id === result.ruleId);
+    if (!rule) return false;
+    const recentFailures = this.results.filter(
+      r => r.ruleId === result.ruleId && r.matterId === result.matterId && !r.passed
+    );
+    if (rule.severity === "critical" && recentFailures.length >= 1) return true;
+    if (rule.severity === "high" && recentFailures.length >= 2) return true;
+    if (rule.severity === "medium" && recentFailures.length >= 3) return true;
+    return false;
+  }
+}
+```
+
+### E-Discovery Processing Pipeline
+
+```mermaid
+flowchart LR
+    A[Custodian Data Sources] --> B[Collection Agent]
+    B --> C[Hashing & Dedup]
+    C --> D[Text Extraction & OCR]
+    D --> E[File-Type Normalization]
+
+    E --> F[Classification Layer]
+    F --> G[Relevance Scoring]
+    F --> H[Privilege Detection]
+    F --> I[Issue Tagging]
+
+    G --> J[Review Queue Builder]
+    H --> J
+    I --> J
+
+    J --> K[Attorney Review Dashboard]
+    K --> L{Human Decision}
+    L -- Responsive --> M[Production Set]
+    L -- Not Responsive --> N[Excluded Set]
+    L -- Privileged --> O[Privilege Log]
+
+    M --> P[Load File Generator]
+    O --> P
+    P --> Q[Final Production Package]
+```
+
+### Compliance Monitoring Workflow
+
+```mermaid
+flowchart TD
+    A[Compliance Frameworks] --> B[Rule Definitions]
+    B --> C[Schedule Engine]
+
+    C --> D{Check Due?}
+    D -- Yes --> E[Execute Rule Check]
+    D -- No --> C
+
+    E --> F{Passed?}
+    F -- Yes --> G[Record Pass + Timestamp]
+    F -- No --> H[Create Violation Record]
+
+    H --> I{Severity-Based Escalation}
+    I -- Critical --> J[Immediate: Partner Alert]
+    I -- High --> K[2nd Failure: Escalate]
+    I -- Medium --> L[3rd Failure: Escalate]
+    I -- Low --> M[Weekly Digest]
+
+    J --> N[Create Remediation Task]
+    K --> N
+    L --> N
+
+    N --> O[Track Resolution]
+    O --> P[Close + Audit Log]
+    G --> C
+```
+
+## Summary
+
+This chapter covered legal & compliance interview questions for Laravel developers, spanning document management, contract lifecycle, e-discovery, case management, and regulatory compliance monitoring. Key takeaways include implementing tamper-evident audit trails with hash chaining, building AI-powered privilege review and redaction engines, designing horizontally scalable e-discovery pipelines, and architecting multi-jurisdiction compliance monitoring systems. TypeScript examples demonstrated legal interview question generation, document redaction automation, contract risk analysis with clause detection, and compliance schedule management.
+
+---
+
 ## Concept Comparison
 > **One-Sentence Takeaway:** Compare key legal concepts for interview preparation.
 

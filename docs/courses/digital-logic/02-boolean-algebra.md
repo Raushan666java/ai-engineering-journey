@@ -360,6 +360,319 @@ function evenParity(bits: boolean[]): boolean {
 4. **XOR is more useful than it seems** — parity, comparators, adders, and LFSRs all rely on XOR.
 5. **Function completeness tells you what gates you need** — {NAND} alone suffices for any digital circuit.
 
+## TypeScript Examples
+
+### Truth Table Generator
+
+This class generates truth tables from Boolean expressions specified in SOP (sum-of-products) form:
+
+```typescript
+interface TruthTableRow {
+  inputs: Record<string, number>;
+  output: number;
+}
+
+class TruthTableGenerator {
+  static generate(variables: string[], expression: (vals: Record<string, number>) => number): TruthTableRow[] {
+    const rows: TruthTableRow[] = [];
+    const n = variables.length;
+    for (let i = 0; i < 1 << n; i++) {
+      const vals: Record<string, number> = {};
+      for (let j = 0; j < n; j++) {
+        vals[variables[j]] = (i >> (n - 1 - j)) & 1;
+      }
+      rows.push({ inputs: vals, output: expression(vals) });
+    }
+    return rows;
+  }
+
+  static print(rows: TruthTableRow[], label: string = "Truth Table"): void {
+    const vars = Object.keys(rows[0].inputs);
+    const header = [...vars, "F"].join(" | ");
+    const sep = vars.map(() => "---").join(" | ") + " | ---";
+    console.log(`\n=== ${label} ===`);
+    console.log(`| ${header} |`);
+    console.log(`| ${sep} |`);
+    for (const row of rows) {
+      const vals = vars.map(v => row.inputs[v]).join(" | ");
+      console.log(`| ${vals} | ${row.output} |`);
+    }
+  }
+}
+
+const F_A = TruthTableGenerator.generate(["A", "B"], ({ A, B }) => (A && B) ? 1 : 0);
+TruthTableGenerator.print(F_A, "AND Gate");
+
+const F_XOR = TruthTableGenerator.generate(["X", "Y"], ({ X, Y }) => X ^ Y);
+TruthTableGenerator.print(F_XOR, "XOR Gate");
+
+const F_MAJ = TruthTableGenerator.generate(["A", "B", "C"],
+  ({ A, B, C }) => (A + B + C >= 2) ? 1 : 0);
+TruthTableGenerator.print(F_MAJ, "Majority Circuit");
+
+const F_SOP = TruthTableGenerator.generate(["A", "B", "C"],
+  ({ A, B, C }) => (!A && !B && C) || (!A && B && C) || (A && B && !C) ? 1 : 0);
+TruthTableGenerator.print(F_SOP, "F = Σ(1,3,6)");
+```
+
+### Boolean Expression Engine
+
+A simple engine that tokenizes and evaluates Boolean expressions:
+
+```typescript
+type BoolToken =
+  | { type: "VAR"; name: string }
+  | { type: "NOT" }
+  | { type: "AND" }
+  | { type: "OR" }
+  | { type: "XOR" }
+  | { type: "LPAREN" }
+  | { type: "RPAREN" };
+
+class BooleanEngine {
+  static tokenize(expr: string): BoolToken[] {
+    const tokens: BoolToken[] = [];
+    for (const ch of expr.replace(/\s+/g, "")) {
+      if (/[A-Z]/i.test(ch)) tokens.push({ type: "VAR", name: ch.toUpperCase() });
+      else if (ch === "'" || ch === "!") tokens.push({ type: "NOT" });
+      else if (ch === "·" || ch === "*" || ch === "&") tokens.push({ type: "AND" });
+      else if (ch === "+" || ch === "|") tokens.push({ type: "OR" });
+      else if (ch === "⊕" || ch === "^") tokens.push({ type: "XOR" });
+      else if (ch === "(") tokens.push({ type: "LPAREN" });
+      else if (ch === ")") tokens.push({ type: "RPAREN" });
+      else throw new Error(`Unknown token: ${ch}`);
+    }
+    return tokens;
+  }
+
+  static evaluate(expr: string, vars: Record<string, number>): number {
+    const t = this.tokenize(expr);
+    const evalExpr = (tokens: BoolToken[], start: number): { val: number; end: number } => {
+      let result: number = -1;
+      let op: string | null = null;
+      let i = start;
+      const next = (): number => {
+        if (i >= tokens.length) throw new Error("Unexpected end");
+        const tok = tokens[i];
+        if (tok.type === "NOT") { i++; return next() ^ 1; }
+        if (tok.type === "LPAREN") { i++; const r = evalExpr(tokens, i); i = r.end; return r.val; }
+        if (tok.type === "VAR") { i++; return vars[tok.name] ?? 0; }
+        throw new Error(`Unexpected token at ${i}`);
+      };
+      result = next();
+      while (i < tokens.length) {
+        const tok = tokens[i];
+        if (tok.type === "RPAREN") { i++; break; }
+        if (tok.type === "AND" || tok.type === "OR" || tok.type === "XOR") {
+          op = tok.type; i++;
+          const r = next();
+          result = op === "AND" ? result & r : op === "OR" ? result | r : result ^ r;
+        } else break;
+      }
+      return { val: result, end: i };
+    };
+    return evalExpr(t, 0).val;
+  }
+
+  static generateTruthTable(expr: string, variables: string[]): TruthTableRow[] {
+    return TruthTableGenerator.generate(variables, (vals) => this.evaluate(expr, vals));
+  }
+}
+
+const be = BooleanEngine;
+console.log("\n=== Boolean Expression Evaluation ===");
+const vars1 = { A: 1, B: 0, C: 1 };
+console.log(`  A·B + C with A=1,B=0,C=1: ${be.evaluate("A*B+C", vars1)}`);
+console.log(`  (A+B)'·C with A=1,B=0,C=1: ${be.evaluate("!(A+B)*C", vars1)}`);
+console.log(`  A⊕B⊕C with A=1,B=0,C=1: ${be.evaluate("A^B^C", vars1)}`);
+
+TruthTableGenerator.print(
+  be.generateTruthTable("(A+B)*(A+C)", ["A", "B", "C"]),
+  "F = (A+B)(A+C) = A + BC"
+);
+```
+
+### Algebraic Simplification Demonstrator
+
+```typescript
+class BooleanSimplifier {
+  static absorptionLaw(a: number, b: number): Record<string, number> {
+    return {
+      "A + A·B": a | (a & b),
+      "A": a,
+      "A·(A + B)": a & (a | b),
+      "Equal? A + A·B == A": (a | (a & b)) === a ? 1 : 0,
+      "Equal? A·(A+B) == A": (a & (a | b)) === a ? 1 : 0,
+    };
+  }
+
+  static consensusLaw(a: number, b: number, c: number): Record<string, number> {
+    return {
+      "A·B + A'·C + B·C": (a & b) | ((a ^ 1) & c) | (b & c),
+      "A·B + A'·C": (a & b) | ((a ^ 1) & c),
+      "Equal?": ((a & b) | ((a ^ 1) & c) | (b & c)) === ((a & b) | ((a ^ 1) & c)) ? 1 : 0,
+    };
+  }
+
+  static deMorganVerify(a: number, b: number): Record<string, number> {
+    return {
+      "(A·B)'": ((a & b) ^ 1),
+      "A' + B'": ((a ^ 1) | (b ^ 1)),
+      "Equal?": ((a & b) ^ 1) === ((a ^ 1) | (b ^ 1)) ? 1 : 0,
+      "(A+B)'": ((a | b) ^ 1),
+      "A'·B'": ((a ^ 1) & (b ^ 1)),
+      "Equal?": ((a | b) ^ 1) === ((a ^ 1) & (b ^ 1)) ? 1 : 0,
+    };
+  }
+}
+
+console.log("\n=== Absorption Law Verification ===");
+for (const a of [0, 1]) for (const b of [0, 1]) {
+  const r = BooleanSimplifier.absorptionLaw(a, b);
+  console.log(`  A=${a}, B=${b}: A+A·B=${r["A + A·B"]}, A·(A+B)=${r["A·(A + B)"]}, Equal? ${r["Equal? A + A·B == A"]}`);
+}
+
+console.log("\n=== Consensus Theorem Verification ===");
+for (const a of [0, 1]) for (const b of [0, 1]) for (const c of [0, 1]) {
+  const r = BooleanSimplifier.consensusLaw(a, b, c);
+  console.log(`  A=${a}, B=${b}, C=${c}: ${r["Equal?"] ? "A·B + A'·C + B·C = A·B + A'·C ✓" : "FAIL"}`);
+}
+
+console.log("\n=== De Morgan's Theorem Verification ===");
+console.log("  A B | (A·B)' | A'+B' | Equal | (A+B)' | A'·B' | Equal");
+for (const a of [0, 1]) for (const b of [0, 1]) {
+  const r = BooleanSimplifier.deMorganVerify(a, b);
+  console.log(`  ${a} ${b} |   ${r["(A·B)'"]}    |  ${r["A' + B'"]}    |  ${r["Equal?"]}    |   ${r["(A+B)'"]}    |  ${r["A'·B'"]}    |  ${r["Equal?"]}`);
+}
+
+console.log("\n=== All Canonical Minterms (3 variables) ===");
+const allMinterms = TruthTableGenerator.generate(["A", "B", "C"],
+  () => 1);
+TruthTableGenerator.print(allMinterms, "All 8 minterms");
+```
+
+### Boolean Function Equivalence Checker
+
+```typescript
+class FunctionChecker {
+  static areEquivalent(
+    vars: string[],
+    f1: (v: Record<string, number>) => number,
+    f2: (v: Record<string, number>) => number
+  ): boolean {
+    const n = vars.length;
+    for (let i = 0; i < 1 << n; i++) {
+      const vals: Record<string, number> = {};
+      for (let j = 0; j < n; j++) {
+        vals[vars[j]] = (i >> (n - 1 - j)) & 1;
+      }
+      if (f1(vals) !== f2(vals)) return false;
+    }
+    return true;
+  }
+
+  static checkDistributive(): void {
+    const vars = ["A", "B", "C"];
+    const lhs = (v: Record<string, number>) => v.A & (v.B | v.C);
+    const rhs = (v: Record<string, number>) => (v.A & v.B) | (v.A & v.C);
+    const distributive = this.areEquivalent(vars, lhs, rhs);
+    console.log(`  A·(B+C) == (A·B)+(A·C): ${distributive ? "✓ EQUIVALENT" : "✗ NOT EQUIVALENT"}`);
+  }
+
+  static checkXORProperties(): void {
+    const vars = ["A", "B"];
+    const xorComm = this.areEquivalent(vars,
+      v => v.A ^ v.B, v => v.B ^ v.A);
+    console.log(`  A⊕B == B⊕A: ${xorComm ? "✓ COMMUTATIVE" : "✗ NOT"}`);
+  }
+}
+
+console.log("\n=== Function Equivalence ===");
+FunctionChecker.checkDistributive();
+FunctionChecker.checkXORProperties();
+
+const sopForm = (v: Record<string, number>) =>
+  ((~v.A) & (~v.B) & v.C) | ((~v.A) & v.B & v.C) | (v.A & v.B & (~v.C));
+const simplified = (v: Record<string, number>) =>
+  ((~v.A) & v.C) | (v.A & v.B & (~v.C));
+const equiv = FunctionChecker.areEquivalent(["A", "B", "C"], sopForm, simplified);
+console.log(`  F = Σ(1,3,6) simplified: ${equiv ? "✓ EQUIVALENT" : "✗ NOT EQUIVALENT"}`);
+```
+
+## Mermaid Diagrams
+
+### Boolean Algebra Hierarchy
+
+```mermaid
+flowchart TD
+    BA[Boolean Algebra] --> P[Postulates]
+    BA --> T[Theorems]
+    BA --> C[Canonical Forms]
+    BA --> M[Minimisation]
+
+    P --> C1[Closure]
+    P --> C2[Identity: 0, 1]
+    P --> C3[Commutativity]
+    P --> C4[Distributivity]
+    P --> C5[Complements]
+    P --> C6[Associativity]
+
+    T --> DM[De Morgan's Laws]
+    T --> AB[Absorption]
+    T --> CN[Consensus]
+    T --> INV[Involution]
+    T --> SH[Shannon Expansion]
+
+    C --> SOP[Sum of Products<br/>Σ minterms]
+    C --> POS[Product of Sums<br/>Π maxterms]
+
+    M --> ALG[Algebraic]
+    M --> KM[Karnaugh Maps]
+    M --> QMC[Quine-McCluskey]
+
+    DM -->|(A·B)' = A' + B'| DM1
+    DM -->|(A+B)' = A'·B'| DM2
+```
+
+### De Morgan's Law — Gate Transformations
+
+```mermaid
+flowchart LR
+    subgraph Original
+        AND[AND Gate] --> NOT1[NOT]
+        AND -->|Output inverted| NAND_equiv[NAND]
+    end
+    subgraph Equivalent
+        NOT2[NOT] --> OR[OR Gate]
+        NOT2 --> OR
+        OR -->|Equivalent| NAND_equiv
+    end
+
+    subgraph Original2
+        OR2[OR Gate] --> NOT3[NOT]
+        OR2 -->|Output inverted| NOR_equiv[NOR]
+    end
+    subgraph Equivalent2
+        NOT4[NOT] --> AND2[AND Gate]
+        NOT4 --> AND2
+        AND2 -->|Equivalent| NOR_equiv
+    end
+```
+
+### Canonical Form Conversion Flow
+
+```mermaid
+flowchart LR
+    F[F = A·B + C] -->|Expand missing vars| SOP[Canonical SOP<br/>F = Σ(5,6,7)]
+    F -->|Complement & expand| POS[Canonical POS<br/>F = Π(0,1,2,3,4)]
+    SOP -->|Complement & simplify| POS
+    POS -->|Complement & expand| SOP
+    SOP -->|Read from 1s in truth table| TT[Truth Table]
+    POS -->|Read from 0s in truth table| TT
+    TT -->|Minterms → 1s| SOP
+    TT -->|Maxterms → 0s| POS
+```
+
 ## Summary
 
 - Boolean algebra, with operators AND, OR, and NOT on the set {0, 1}, is the mathematical foundation of digital logic design.

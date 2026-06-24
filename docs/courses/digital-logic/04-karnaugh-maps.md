@@ -454,6 +454,406 @@ Minimal expression: F = x'·z'
 5. **Use QMC for 5+ variables** — K-maps become impractical; automate with the tabulation method.
 6. **SOP and POS are duals** — minimising one form is equivalent to minimising the other on the complementary map.
 
+## TypeScript Examples
+
+### Karnaugh Map Solver
+
+This class implements K-map minimization for 2, 3, and 4-variable functions:
+
+```typescript
+type MintermList = number[];
+
+class KarnaughMap {
+  static grayCode(n: number): number[] {
+    const result: number[] = [];
+    for (let i = 0; i < 1 << n; i++) {
+      result.push(i ^ (i >> 1));
+    }
+    return result;
+  }
+
+  static createMap(vars: number, minterms: MintermList, dontCares: MintermList = []): string[][] {
+    if (vars < 2 || vars > 4) throw new Error("2-4 variables supported");
+    const rows = vars <= 3 ? 2 : this.grayCode(2);
+    const cols = vars === 2 ? 2 : this.grayCode(vars === 3 ? 2 : 2);
+    const rCount = vars <= 3 ? 2 : 4;
+    const cCount = vars === 2 ? 2 : 4;
+    const map: string[][] = Array.from({ length: rCount }, () => Array(cCount).fill("0"));
+    const totalCells = 1 << vars;
+    for (let cell = 0; cell < totalCells; cell++) {
+      const row = vars <= 3 ? (cell >> 1) & 1 : this.getRow(vars, cell);
+      const col = vars === 2 ? cell & 1 : this.getCol(vars, cell);
+      if (minterms.includes(cell)) map[row][col] = "1";
+      else if (dontCares.includes(cell)) map[row][col] = "X";
+    }
+    return map;
+  }
+
+  private static getRow(vars: number, cell: number): number {
+    if (vars === 4) {
+      const a = (cell >> 3) & 1;
+      const b = (cell >> 2) & 1;
+      return this.grayCode(2).indexOf((a << 1) | b);
+    }
+    return this.grayCode(2).indexOf(cell >> 1);
+  }
+
+  private static getCol(vars: number, cell: number): number {
+    if (vars === 4) {
+      const c = (cell >> 1) & 1;
+      const d = cell & 1;
+      return this.grayCode(2).indexOf((c << 1) | d);
+    }
+    if (vars === 3) {
+      const c = cell & 1;
+      const b = (cell >> 1) & 1;
+      return this.grayCode(2).indexOf((b << 1) | c);
+    }
+    return cell & 1;
+  }
+
+  static printMap(vars: number, minterms: MintermList, label: string = ""): void {
+    const map = this.createMap(vars, minterms);
+    const rows = map.length;
+    const cols = map[0].length;
+    console.log(`\n=== ${label || `${vars}-Variable K-Map`} ===`);
+    const rowLabels = vars <= 3 ? ["0", "1"] : ["00", "01", "11", "10"];
+    const colLabels = vars === 2 ? ["0", "1"] : ["00", "01", "11", "10"];
+    console.log(`      ${colLabels.map(c => c.padStart(3)).join(" ")}`);
+    for (let i = 0; i < rows; i++) {
+      console.log(`  ${rowLabels[i]}  ${map[i].map(c => c.padStart(3)).join(" ")}`);
+    }
+  }
+
+  static findGroups(vars: number, minterms: MintermList): string[] {
+    const groups: string[] = [];
+    const covered = new Set<number>();
+    const total = 1 << vars;
+    const sizeOrder = [8, 4, 2, 1];
+    for (const size of sizeOrder) {
+      if (size > total) continue;
+      for (let mask = 0; mask < total; mask++) {
+        const group: number[] = [];
+        for (let i = 0; i < size; i++) {
+          const cell = (mask + i) % total;
+          if (minterms.includes(cell)) group.push(cell);
+        }
+        if (group.length === size) {
+          const allUncovered = group.some(c => !covered.has(c));
+          if (allUncovered) {
+            group.forEach(c => covered.add(c));
+            groups.push(`Group(${size}): {${group.join(",")}}`);
+          }
+        }
+      }
+    }
+    return groups;
+  }
+}
+
+const km = KarnaughMap;
+// 2-variable: F = Σ(0,2)
+km.printMap(2, [0, 2], "F = Σ(0,2)");
+// 3-variable: F = Σ(1,3,5,7) → F = C
+km.printMap(3, [1, 3, 5, 7], "F = Σ(1,3,5,7)");
+// 4-variable: F = Σ(0,1,3,5,7,9,11,13,15)
+km.printMap(4, [0, 1, 3, 5, 7, 9, 11, 13, 15], "F = Σ(0,1,3,5,7,9,11,13,15)");
+// With don't-cares
+km.printMap(4, [1, 3, 5, 7, 9], [11, 13, 15], "F = Σ(1,3,5,7,9) + d(11,13,15)");
+
+console.log("\n=== Prime Implicant Groups (F = Σ(0,2,4,6,7,8,10,12,14,15)) ===");
+const groups = km.findGroups(4, [0, 2, 4, 6, 7, 8, 10, 12, 14, 15]);
+groups.forEach(g => console.log(`  ${g}`));
+```
+
+### Gray Code Generator
+
+```typescript
+class GrayCode {
+  static generate(n: number): string[] {
+    const codes: string[] = [];
+    for (let i = 0; i < 1 << n; i++) {
+      codes.push((i ^ (i >> 1)).toString(2).padStart(n, "0"));
+    }
+    return codes;
+  }
+
+  static recursiveGenerate(n: number): string[] {
+    if (n === 1) return ["0", "1"];
+    const prev = this.recursiveGenerate(n - 1);
+    const reflected = [...prev].reverse();
+    return [
+      ...prev.map(c => "0" + c),
+      ...reflected.map(c => "1" + c)
+    ];
+  }
+
+  static verifySingleBit(codes: string[]): boolean {
+    for (let i = 0; i < codes.length; i++) {
+      const next = codes[(i + 1) % codes.length];
+      let diff = 0;
+      for (let j = 0; j < codes[i].length; j++) {
+        if (codes[i][j] !== next[j]) diff++;
+      }
+      if (diff !== 1) return false;
+    }
+    return true;
+  }
+
+  static toDecimal(codes: string[]): number[] {
+    return codes.map(c => parseInt(c, 2));
+  }
+}
+
+const gc = GrayCode;
+console.log("\n=== Gray Code (3-bit) ===");
+const g3 = gc.generate(3);
+console.log(`  Binary → Gray`);
+g3.forEach((g, i) => {
+  const bin = i.toString(2).padStart(3, "0");
+  console.log(`  ${bin}  →  ${g}`);
+});
+console.log(`  Single-bit transitions: ${gc.verifySingleBit(g3) ? "✓ VERIFIED" : "✗ FAILED"}`);
+
+console.log("\n=== Gray Code (4-bit) ===");
+const g4 = gc.generate(4);
+g4.forEach((g, i) => {
+  const bin = i.toString(2).padStart(4, "0");
+  if (i < 8 || i >= 12) console.log(`  ${bin}  →  ${g}`);
+  else if (i === 8) console.log("  ... (16 entries total)");
+});
+console.log(`  Single-bit transitions: ${gc.verifySingleBit(g4) ? "✓ VERIFIED" : "✗ FAILED"}`);
+
+console.log("\n=== Recursive Gray Code (verify identical) ===");
+const g3r = gc.recursiveGenerate(3);
+console.log(`  Iterative == Recursive: ${JSON.stringify(g3) === JSON.stringify(g3r) ? "✓ IDENTICAL" : "✗ DIFFERENT"}`);
+
+console.log("\n=== Gray Code Decimal Sequence (4-bit) ===");
+console.log(`  ${gc.toDecimal(g4).join(", ")}`);
+```
+
+### Minterm/Maxterm Converter
+
+```typescript
+class MintermMaxtermConverter {
+  static sopToPos(vars: number, minterms: MintermList): MintermList {
+    const all = new Set(Array.from({ length: 1 << vars }, (_, i) => i));
+    minterms.forEach(m => all.delete(m));
+    return Array.from(all);
+  }
+
+  static posToSop(vars: number, maxterms: MintermList): MintermList {
+    return this.sopToPos(vars, maxterms);
+  }
+
+  static mintermToBinary(vars: number, minterm: number): string {
+    return minterm.toString(2).padStart(vars, "0");
+  }
+
+  static mintermToExpression(vars: number, minterm: number, usePrime: boolean = true): string {
+    const bin = this.mintermToBinary(vars, minterm);
+    const varsList = "ABCDEFGH".slice(0, vars);
+    const terms: string[] = [];
+    for (let i = 0; i < vars; i++) {
+      if (usePrime) {
+        terms.push(bin[i] === "1" ? varsList[i] : `${varsList[i]}'`);
+      } else {
+        terms.push(bin[i] === "1" ? varsList[i] : `¬${varsList[i]}`);
+      }
+    }
+    return terms.join("·");
+  }
+
+  static maxtermToExpression(vars: number, maxterm: number, usePrime: boolean = true): string {
+    const bin = this.mintermToBinary(vars, maxterm);
+    const varsList = "ABCDEFGH".slice(0, vars);
+    const terms: string[] = [];
+    for (let i = 0; i < vars; i++) {
+      if (usePrime) {
+        terms.push(bin[i] === "0" ? varsList[i] : `${varsList[i]}'`);
+      } else {
+        terms.push(bin[i] === "0" ? varsList[i] : `¬${varsList[i]}`);
+      }
+    }
+    return `(${terms.join("+")})`;
+  }
+
+  static convert(vars: number, minterms: MintermList): void {
+    const maxterms = this.sopToPos(vars, minterms);
+    const sopTerms = minterms.map(m => this.mintermToExpression(vars, m));
+    const posTerms = maxterms.map(m => this.maxtermToExpression(vars, m));
+    console.log(`\n=== Canonical Form Conversion (${vars} vars) ===`);
+    console.log(`  Minterms:  Σ(${minterms.join(", ")})`);
+    console.log(`  Maxterms:  Π(${maxterms.join(", ")})`);
+    console.log(`  SOP:       F = ${sopTerms.join(" + ")}`);
+    console.log(`  POS:       F = ${posTerms.join(" · ")}`);
+  }
+}
+
+const conv = MintermMaxtermConverter;
+conv.convert(3, [0, 2, 4]);
+conv.convert(3, [1, 3, 5, 7]);
+conv.convert(4, [0, 2, 5, 7, 10, 13, 15]);
+
+console.log("\n=== Detailed Minterm Binary ===");
+console.log("  m | Binary | Expression");
+for (const m of [0, 1, 3, 5, 7, 9, 11, 13, 15]) {
+  console.log(`  m${m.toString().padStart(2)} | ${conv.mintermToBinary(4, m)} | ${conv.mintermToExpression(4, m)}`);
+}
+```
+
+### Quine-McCluskey Prime Implicant Finder
+
+```typescript
+class QuineMcCluskey {
+  static combine(term1: string, term2: string): string | null {
+    let diffPos = -1;
+    for (let i = 0; i < term1.length; i++) {
+      if (term1[i] !== term2[i]) {
+        if (diffPos !== -1) return null;
+        diffPos = i;
+      }
+    }
+    if (diffPos === -1) return null;
+    return term1.slice(0, diffPos) + "-" + term1.slice(diffPos + 1);
+  }
+
+  static countOnes(term: string): number {
+    return (term.match(/1/g) || []).length;
+  }
+
+  static findPrimeImplicants(minterms: number[], bits: number): string[] {
+    const terms = minterms.map(m => m.toString(2).padStart(bits, "0"));
+    let current: Set<string> = new Set(terms);
+    const primeSet: Set<string> = new Set();
+
+    while (current.size > 0) {
+      const next: Set<string> = new Set();
+      const used: Set<string> = new Set();
+      const arr = Array.from(current);
+
+      for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+          const combined = this.combine(arr[i], arr[j]);
+          if (combined) {
+            next.add(combined);
+            used.add(arr[i]);
+            used.add(arr[j]);
+          }
+        }
+      }
+
+      for (const t of arr) {
+        if (!used.has(t)) primeSet.add(t);
+      }
+      current = next;
+    }
+
+    return Array.from(primeSet).sort((a, b) => {
+      const aOnes = this.countOnes(a.replace(/-/g, ""));
+      const bOnes = this.countOnes(b.replace(/-/g, ""));
+      return aOnes !== bOnes ? aOnes - bOnes : a.localeCompare(b);
+    });
+  }
+}
+
+const qmc = QuineMcCluskey;
+console.log("\n=== Quine-McCluskey Prime Implicants ===");
+const testCases = [
+  { vars: 3, minterms: [0, 2, 4, 6] },
+  { vars: 4, minterms: [0, 2, 5, 7, 10, 13, 15] },
+  { vars: 4, minterms: [0, 2, 3, 6, 7, 8, 10, 12, 13] },
+];
+for (const tc of testCases) {
+  console.log(`\n  F(w,x,y,z) = Σ(${tc.minterms.join(", ")})`);
+  const primes = qmc.findPrimeImplicants(tc.minterms, tc.vars);
+  console.log(`  Prime implicants:`);
+  primes.forEach(p => console.log(`    ${p}  (covers ${p.replace(/-/g, "X")})`));
+}
+
+// Prime number detector verification
+console.log("\n=== 4-bit Prime Number Detector ===");
+const primes = qmc.findPrimeImplicants([2, 3, 5, 7, 11, 13], 4);
+console.log(`  Prime numbers: {2, 3, 5, 7, 11, 13}`);
+console.log(`  Prime implicants from QMC:`);
+primes.forEach(p => console.log(`    ${p}`));
+```
+
+## Mermaid Diagrams
+
+### K-Map Cell Adjacency (3-Variable)
+
+```mermaid
+flowchart TD
+    subgraph KM[3-Variable K-Map]
+        C0[AB=00<br/>C=0 → 0] -->|adjacent| C1[AB=01<br/>C=0 → 1]
+        C1 -->|adjacent| C3[AB=11<br/>C=0 → 3]
+        C3 -->|adjacent| C2[AB=10<br/>C=0 → 2]
+        C4[AB=00<br/>C=1 → 4] -->|adjacent| C5[AB=01<br/>C=1 → 5]
+        C5 -->|adjacent| C7[AB=11<br/>C=1 → 7]
+        C7 -->|adjacent| C6[AB=10<br/>C=1 → 6]
+    end
+    C0 ---|vertical<br/>adjacent| C4
+    C1 ---|vertical| C5
+    C3 ---|vertical| C7
+    C2 ---|vertical| C6
+    note[Cells differ by<br/>exactly 1 variable<br/>due to Gray code]
+```
+
+### Group Formation Flow
+
+```mermaid
+flowchart TD
+    Start[Express function<br/>as minterm list] --> Place[Place 1s in K-map<br/>at Gray-code positions]
+    Place --> Find[Find largest<br/>power-of-2 groups]
+    Find --> Check{All 1s<br/>covered?}
+    Check -->|No| Wrap[Wrap around edges<br/>& overlap groups]
+    Wrap --> Check
+    Check -->|Yes| Essential[Identify essential<br/>prime implicants]
+    Essential --> Select[Select minimal cover]
+    Select --> Write[Write simplified<br/>Boolean expression]
+    Write --> Verify[Verify against original<br/>truth table]
+
+    subgraph GroupRules[Grouping Rules]
+        Size[Group sizes: 1, 2, 4, 8, 16]
+        Rect[Rectangular shapes only]
+        Wrap2[Wraparound at edges]
+        Overlap[Overlap allowed & encouraged]
+        Corners[Four corners = valid group]
+    end
+```
+
+### 4-Variable K-Map Structure
+
+```mermaid
+block-beta
+  columns 5
+  KMap["K-Map<br/>F(A,B,C,D)"]:1
+  Space[""]:1
+  CD00["CD=00"] CD01["CD=01"] CD11["CD=11"] CD10["CD=10"]
+  AB00["AB=00"]:1 M0["0"] M1["1"] M3["3"] M2["2"]
+  AB01["AB=01"]:1 M4["4"] M5["5"] M7["7"] M6["6"]
+  AB11["AB=11"]:1 M12["12"] M13["13"] M15["15"] M14["14"]
+  AB10["AB=10"]:1 M8["8"] M9["9"] M11["11"] M10["10"]
+```
+
+### SOP vs POS Minimisation Paths
+
+```mermaid
+flowchart LR
+    TT[Truth Table] --> Minterms[List minterms<br/>where F=1]
+    TT --> Maxterms[List maxterms<br/>where F=0]
+    Minterms --> SOP_K[Enter 1s in K-map]
+    Maxterms --> POS_K[Enter 0s in K-map]
+    SOP_K --> Group1s[Group adjacent 1s<br/>in powers of 2]
+    POS_K --> Group0s[Group adjacent 0s<br/>in powers of 2]
+    Group1s --> SOP_Expr[Read SOP expression<br/>variables that don't change]
+    Group0s --> POS_Expr[Read POS expression<br/>complement of changing vars]
+    SOP_Expr --> Compare[Compare gate counts<br/>pick minimal form]
+    POS_Expr --> Compare
+    Compare --> Final[Final minimised circuit]
+```
+
 ## Summary
 
 - Karnaugh maps provide a visual method for minimising Boolean functions of up to 6 variables.

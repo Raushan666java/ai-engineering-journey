@@ -487,6 +487,239 @@ Switching databases requires zero changes to `UserService`. Testing is trivial: 
 
 ---
 
+## Code Examples
+
+### SOLID Principle Validator
+
+The following TypeScript class programmatically analyzes class metadata against all five SOLID principles. It detects SRP violations (multiple actors), OCP violations (type-switching), LSP contract gaps, ISP interface bloat, and DIP concrete-dependency coupling.
+
+```typescript
+/**
+ * SOLID Principle Validator — analyzes class definitions against
+ * the five SOLID principles and returns actionable violations.
+ */
+interface ClassMetadata {
+  name: string;
+  methods: string[];
+  fields: string[];
+  dependencies: string[];
+  inheritedFrom?: string;
+}
+
+interface InterfaceMetadata {
+  name: string;
+  methods: string[];
+  implementedBy: string;
+}
+
+class SolidValidator {
+  violations: string[] = [];
+
+  /** SRP: one reason to change = one actor */
+  checkSingleResponsibility(cls: ClassMetadata, actors: string[]): void {
+    if (actors.length > 1) {
+      this.violations.push(
+        `SRP Violation: ${cls.name} serves ${actors.length} actors ` +
+        `(${actors.join(', ')}). Extract responsibilities per actor.`
+      );
+    }
+  }
+
+  /** OCP: extend behavior without modifying existing code */
+  checkOpenClosed(cls: ClassMetadata): void {
+    const switchMethods = cls.methods.filter(
+      (m) => m.startsWith('handle') && (m.includes('Type') || m.includes('switch'))
+    );
+    if (switchMethods.length > 0) {
+      this.violations.push(
+        `OCP Violation: ${cls.name} uses type-dispatch in ` +
+        `${switchMethods.join(', ')}. Replace with polymorphic strategy classes.`
+      );
+    }
+  }
+
+  /** LSP: subtypes must satisfy the base type's behavioral contract */
+  checkLiskovSubstitution(
+    base: ClassMetadata,
+    derived: ClassMetadata
+  ): void {
+    const baseSet = new Set(base.methods);
+    const overridden = derived.methods.filter((m) => baseSet.has(m));
+    const missing = base.methods.length - overridden.length;
+    if (missing > 0) {
+      this.violations.push(
+        `LSP Risk: ${derived.name} overrides ${overridden.length}/${base.methods.length} ` +
+        `of ${base.name}'s methods. ${missing} method(s) inherited without override — ` +
+        `may violate the base contract.`
+      );
+    }
+  }
+
+  /** ISP: small, focused interfaces */
+  checkInterfaceSegregation(interfaces: InterfaceMetadata[]): void {
+    for (const iface of interfaces) {
+      if (iface.methods.length > 4) {
+        this.violations.push(
+          `ISP Suggestion: ${iface.name} has ${iface.methods.length} methods. ` +
+          `Split into role-specific interfaces (e.g., ${iface.methods.slice(0, 3).join(', ')} → one group).`
+        );
+      }
+    }
+  }
+
+  /** DIP: depend on abstractions, not concretions */
+  checkDependencyInversion(cls: ClassMetadata): void {
+    const concreteDeps = cls.dependencies.filter(
+      (d) => d.startsWith('Concrete') || d.endsWith('Impl') || d.endsWith('Service')
+    );
+    for (const dep of concreteDeps) {
+      this.violations.push(
+        `DIP Violation: ${cls.name} depends on concrete class ${dep}. ` +
+        `Program to an interface instead.`
+      );
+    }
+  }
+}
+
+// ── Example usage ──────────────────────────────────────────────
+const validator = new SolidValidator();
+
+const empClass: ClassMetadata = {
+  name: 'EmployeeManager',
+  methods: ['calculatePay', 'saveToDB', 'sendEmail', 'generateReport', 'handleType'],
+  fields: ['name', 'salary', 'email'],
+  dependencies: ['MailServiceImpl', 'ConcreteRepository'],
+};
+
+validator.checkSingleResponsibility(empClass, ['Payroll', 'HR', 'IT']);
+validator.checkOpenClosed(empClass);
+validator.checkDependencyInversion(empClass);
+
+console.log(validator.violations);
+```
+
+### OOP Design Quality Checker (LCOM + Coupling)
+
+This checker evaluates low-level design quality using the Lack of Cohesion of Methods (LCOM4) metric and the instability metric from Robert C. Martin's package principles.
+
+```typescript
+/**
+ * OopDesignChecker — evaluates class cohesion (LCOM4) and
+ * coupling (fan-in / fan-out / instability metrics).
+ */
+class OopDesignChecker {
+  /**
+   * LCOM4: number of connected components in the method-field graph.
+   * Two methods share an edge if they access at least one common field.
+   *
+   * LCOM4 = 1 → high cohesion (ideal)
+   * LCOM4 = 2-3 → moderate cohesion, consider extracting a helper
+   * LCOM4 > 3   → low cohesion, should be split
+   */
+  lcom4(methods: { name: string; accessedFields: string[] }[]): number {
+    const n = methods.length;
+    const adj: number[][] = Array.from({ length: n }, () => []);
+
+    for (let i = 0; i < n; i++) {
+      for (let j = i + 1; j < n; j++) {
+        const sharesField = methods[i].accessedFields.some((f) =>
+          methods[j].accessedFields.includes(f)
+        );
+        if (sharesField) {
+          adj[i].push(j);
+          adj[j].push(i);
+        }
+      }
+    }
+
+    const visited = new Set<number>();
+    let components = 0;
+
+    const dfs = (node: number): void => {
+      visited.add(node);
+      for (const neighbor of adj[node]) {
+        if (!visited.has(neighbor)) dfs(neighbor);
+      }
+    };
+
+    for (let i = 0; i < n; i++) {
+      if (!visited.has(i)) {
+        components++;
+        dfs(i);
+      }
+    }
+    return components;
+  }
+
+  /**
+   * Instability = fan-out / (fan-in + fan-out).
+   * 0 → maximally stable (many depend on it).
+   * 1 → maximally unstable (depends on many).
+   */
+  instability(fanIn: number, fanOut: number): number {
+    const total = fanIn + fanOut;
+    return total === 0 ? 0 : fanOut / total;
+  }
+
+  /** Human-readable assessment of LCOM4 */
+  assessCohesion(components: number): string {
+    if (components === 1) return 'High cohesion — all methods share state.';
+    if (components <= 3) return 'Moderate cohesion — consider extraction.';
+    if (components <= 5) return 'Low cohesion — strongly recommend splitting.';
+    return 'Very low cohesion — class does too many unrelated things.';
+  }
+
+  /** Abstractness for package-level analysis (from Martin's metrics) */
+  abstractness(abstractClasses: number, totalClasses: number): number {
+    return totalClasses === 0 ? 0 : abstractClasses / totalClasses;
+  }
+}
+
+// ── Example ──────────────────────────────────────────────────────
+const checker = new OopDesignChecker();
+
+const methods = [
+  { name: 'calculatePay', accessedFields: ['salary', 'rate'] },
+  { name: 'saveToDB', accessedFields: ['connection', 'salary'] },
+  { name: 'sendEmail', accessedFields: ['smtpHost', 'email'] },
+  { name: 'generateReport', accessedFields: ['reportData'] },
+];
+
+const lcom = checker.lcom4(methods);
+console.log(`LCOM4: ${lcom} — ${checker.assessCohesion(lcom)}`);
+console.log(`Instability: ${checker.instability(3, 5).toFixed(2)} ` +
+  `(fan-in=3, fan-out=5)`);
+console.log(`Abstractness: ${checker.abstractness(2, 8).toFixed(2)} ` +
+  `(2 abstract / 8 total classes)`);
+```
+
+### SOLID Principles Interaction Diagram
+
+```mermaid
+flowchart TD
+    subgraph SOLID_Principles
+        SRP[SRP<br/>Single Responsibility<br/>One actor, one reason to change]
+        OCP[OCP<br/>Open / Closed<br/>Extend via new classes, not modification]
+        LSP[LSP<br/>Liskov Substitution<br/>Subtypes satisfy base contract]
+        ISP[ISP<br/>Interface Segregation<br/>Small role-specific interfaces]
+        DIP[DIP<br/>Dependency Inversion<br/>Both layers depend on abstractions]
+    end
+
+    SRP -->|drives| COHESION[High Cohesion]
+    ISP -->|drives| COHESION
+    OCP -->|enables| EXTENSIBILITY[Extensibility]
+    LSP -->|ensures| RELIABILITY[Behavioral Reliability]
+    DIP -->|enables| LOOSE_COUPLING[Loose Coupling]
+
+    COHESION --> QUALITY[Maintainable Software]
+    EXTENSIBILITY --> QUALITY
+    RELIABILITY --> QUALITY
+    LOOSE_COUPLING --> QUALITY
+
+    SRP -.->|measured by| LCOM[LCOM4 Metric]
+    DIP -.->|measured by| INSTABILITY[Instability Metric]
+```
+
 ## Summary
 - SRP demands one reason to change per class, keyed to a single actor or stakeholder.
 - OCP is achieved through abstraction: add behavior via new classes, not by modifying existing ones.

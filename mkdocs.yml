@@ -1333,4 +1333,16 @@ nav:
     - "Ch 9: Framework & Language Learning": courses/learning-how-to-learn/ch-09-framework-language-learning.md
     - "Ch 10: Meta-Learning & Lifelong System": courses/learning-how-to-learn/ch-10-meta-learning-system.md
     - Archive (Full Reference): courses/learning-how-to-learn/archive-complete-reference.md
+  - "🔄 Loop Engineering":
+    - Overview: courses/loop-engineering/index.md
+    - "Ch 1 — Loop Foundations": courses/loop-engineering/ch01-loop-foundations.md
+    - "Ch 2 — Agent Loop Architecture": courses/loop-engineering/ch02-agent-loop-architecture.md
+    - "Ch 3 — Human-in-the-Loop": courses/loop-engineering/ch03-human-in-the-loop.md
+    - "Ch 4 — Feedback Loops": courses/loop-engineering/ch04-feedback-loops.md
+    - "Ch 5 — Self-Improvement Loops": courses/loop-engineering/ch05-self-improvement-loops.md
+    - "Ch 6 — Production Loops": courses/loop-engineering/ch06-production-loops.md
+    - "Ch 7 — Loop Safety": courses/loop-engineering/ch07-loop-safety.md
+    - "Ch 8 — Multi-Agent Loops": courses/loop-engineering/ch08-multi-agent-loops.md
+    - "Ch 9 — Loop Tooling": courses/loop-engineering/ch09-loop-tooling.md
+    - "Ch 10 — Capstone: Build a Coding Agent": courses/loop-engineering/ch10-capstone.md
 

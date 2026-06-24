@@ -1,0 +1,801 @@
+# Chapter 4: Feedback Loops
+
+> **Previous:** [Human-in-the-Loop](./ch03-human-in-the-loop.md) | **Next:** [Self-Improvement Loops](./ch05-self-improvement-loops.md)
+
+## Learning Objectives
+
+By the end of this chapter, you will be able to:
+
+- Design eval-driven loops where agents generate output, score it against criteria, and retry
+- Build code review loops with AI authoring and human reviewing rounds
+- Implement test-driven agent loops where tests are written first and the agent implements to satisfy them
+- Convert failed task attempts into concrete subtasks for retry
+- Construct sweep loops that automatically detect and fix failures across a task set
+- Distinguish open-loop from closed-loop feedback and choose the right one per context
+- Reason about loop termination: when to stop retrying and when to escalate
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Eval-Driven Loops | Generate → score → adjust → repeat | Converge on quality through iterative scoring |
+| Code Review Loops | AI writes → human reviews → AI fixes | Pair AI breadth with human judgment |
+| Test-Driven Loops | Write test first → implement → verify | Tests are executable specifications |
+| Failure-to-Task | Failed attempt → structured subtask | Never throw away partial progress |
+| Sweep Loops | Scan → detect → fix → verify | Automated maintenance at scale |
+
+---
+
+## Theory
+
+### 1. Eval-Driven Loops
+
+An eval-driven loop is the most general form of agentic feedback. The agent produces an output, evaluates it against a set of criteria, adjusts its approach based on the evaluation, and repeats.
+
+```
+ ┌──────────┐   generate   ┌─────────┐   score    ┌────────┐
+ │  Agent   │ ────────────>│ Output  │ ──────────> │  Eval  │
+ │          │<──────────── │         │<────────── │  (LLM  │
+ │  (LLM)   │   adjust     │         │   scores   │  or fx)│
+ └──────────┘              └─────────┘            └────────┘
+```
+
+**Key parameters:**
+
+| Parameter | What It Controls | Typical Values |
+|-----------|-----------------|----------------|
+| `max_iterations` | Hard cap on retries | 3-10 |
+| `min_score` | Bar to clear for acceptance | 0.7-0.9 |
+| `decay_factor` | How much to penalize repeated failures | 0.5-0.95 |
+| `early_stop` | Stop if score stops improving | Δ < 0.05 |
+
+**Termination conditions.** The loop must always have a stopping rule:
+
+1. **Score threshold met** — normal success, exit.
+2. **Max iterations reached** — escalate or return best effort.
+3. **Score plateau** — no improvement over last N rounds, exit.
+4. **Score regression** — latest round scored worse than previous, roll back.
+
+### 2. Code Review Loops
+
+In a code review loop, the AI authors code and a human plays the role of reviewer. This mirrors real engineering workflows and is one of the most practical agent patterns.
+
+```
+Round 1:  AI writes code ──> Human reviews ──> Feedback
+Round 2:  AI applies feedback ──> Human re-reviews ──> Approve or iterate
+Round N:  (repeat until approval or max rounds)
+```
+
+**Feedback granularity.** Review comments should be specific, actionable, and scoped:
+
+| Quality | Example |
+|---------|---------|
+| Vague | "This doesn't look right." |
+| Actionable | "Line 34: the null check is redundant because `getUser()` already returns `never null`. Remove the if-block." |
+| Scoped | Each comment references a specific file, line, and concern. |
+
+The agent should restate its understanding of each comment before making changes, to catch misinterpretation early.
+
+### 3. Test-Driven Loops
+
+Test-driven agent loops invert the normal flow: a human (or automated test generator) writes a failing test first, then the agent implements code to make it pass.
+
+```
+Step 1:  Write test (fails) ──> Agent implements ──> Run test
+Step 2:  Test passes? ──> Done.  Test fails? ──> Agent debugs and retries.
+```
+
+This pattern is especially powerful because:
+
+- Tests provide an unambiguous pass/fail signal — no LLM-as-judge needed.
+- The test suite becomes the specification. If the agent passes all tests, the task is done.
+- Regression is automatic: the test suite catches regressions on subsequent iterations.
+
+**Caveat:** The agent must be able to read test failures (stack traces, assertion messages) and translate them into debugging actions. A test that says "expected 5 but got 3" is only useful if the agent can trace which code produced the 3.
+
+### 4. Failure-to-Task Conversion
+
+When an agent fails at a step, the failure should not be discarded — it should be converted into a new subtask. This is the agentic equivalent of "fail fast, fail forward."
+
+```
+Task: "Implement user authentication"
+  ├─ Step 1: Add password hashing ──> FAIL (bcrypt import error)
+  │      └─ New subtask: "Install bcrypt package and verify import"
+  ├─ Step 2: Add login endpoint ──> FAIL (missing JWT secret)
+  │      └─ New subtask: "Add JWT secret to config and wire into login flow"
+  └─ Step 3: Add session middleware ──> SUCCESS
+```
+
+**Design rules:**
+
+- The subtask must be smaller and more specific than the parent task.
+- The subtask must include the error message from the failure.
+- The subtask should inherit the parent's context (files, imports, types).
+- If a subtask also fails, escalate to a human — do not create subtasks of subtasks indefinitely.
+
+### 5. Sweep Loops
+
+A sweep loop processes a collection of items (bugs, tasks, PRs) and automatically creates fix tasks for any that fail. It is the batch-processing counterpart to the eval-driven loop.
+
+```
+ ┌──────────┐   for each    ┌───────────┐   pass     ┌────────┐
+ │  Input   │ ────────────> │  Process  │ ──────────>│  Done  │
+ │  Queue   │               │  Agent    │            │        │
+ └──────────┘               └───────────┘            └────────┘
+                                  │ fail
+                                  v
+                            ┌──────────┐
+                            │  Create   │
+                            │  Fix Task │
+                            └──────────┘
+```
+
+Sweep loops are common in:
+
+- **Dependency updates:** Run tests against new dependency version; create fix PRs for breakages.
+- **Linting at scale:** Run a new linter rule across the codebase; create tasks for each violation.
+- **Flaky test remediation:** Detect flaky tests, create tasks with reproduction evidence.
+- **Accessibility audits:** Run axe-core across all pages; create issues for each violation found.
+
+---
+
+## Examples
+
+### Example 1: EvalLoopAgent — Generate, Score, Adjust, Repeat
+
+```typescript
+// ch04-example1-eval-loop.ts
+// Bun: bun run ch04-example1-eval-loop.ts
+
+interface EvalCriterion {
+  name: string;
+  weight: number;
+  score: (output: string) => number;
+}
+
+interface EvalResult {
+  overallScore: number;
+  dimensionScores: Record<string, number>;
+  feedback: string;
+}
+
+interface EvalLoopConfig {
+  maxIterations: number;
+  minScore: number;
+  plateauWindow: number;
+  improvementThreshold: number;
+}
+
+interface GeneratorInput {
+  prompt: string;
+  context: Record<string, unknown>;
+}
+
+class EvalLoopAgent {
+  private config: EvalLoopConfig;
+  private criteria: EvalCriterion[] = [];
+  private iterationHistory: Array<{ iteration: number; score: number; output: string }> = [];
+  private currentParameters: Record<string, number> = {
+    temperature: 0.8,
+    topP: 0.9,
+    repetitionPenalty: 1.0,
+  };
+
+  constructor(config: Partial<EvalLoopConfig> = {}) {
+    this.config = {
+      maxIterations: 5,
+      minScore: 0.8,
+      plateauWindow: 2,
+      improvementThreshold: 0.05,
+      ...config,
+    };
+  }
+
+  addCriterion(criterion: EvalCriterion): void {
+    this.criteria.push(criterion);
+  }
+
+  private simulateGenerate(input: GeneratorInput, params: Record<string, number>): string {
+    const quality = Math.min(1, params.temperature * 0.5 + Math.random() * 0.5);
+    let output = `Generated response for: "${input.prompt}"\n`;
+    output += `Parameters: temp=${params.temperature.toFixed(2)}, `;
+    output += `topP=${params.topP.toFixed(2)}\n---\n`;
+    if (quality > 0.7) {
+      output += "This is a high-quality response that addresses the prompt thoroughly.";
+    } else if (quality > 0.4) {
+      output += "This response covers the topic but lacks depth in some areas.";
+    } else {
+      output += "Brief response that partially addresses the prompt.";
+    }
+    return output;
+  }
+
+  private evaluate(output: string): EvalResult {
+    let totalWeight = 0;
+    let weightedSum = 0;
+    const dimensionScores: Record<string, number> = {};
+
+    for (const criterion of this.criteria) {
+      const score = criterion.score(output);
+      dimensionScores[criterion.name] = score;
+      weightedSum += score * criterion.weight;
+      totalWeight += criterion.weight;
+    }
+
+    const overallScore = totalWeight > 0 ? weightedSum / totalWeight : 0;
+    const worstDimension = Object.entries(dimensionScores).sort((a, b) => a[1] - b[1])[0];
+    const feedback = overallScore < this.config.minScore
+      ? `Lowest dimension: ${worstDimension[0]} (${(worstDimension[1] * 100).toFixed(0)}%). Improve ${worstDimension[0]}.`
+      : "All criteria met or exceeded.";
+
+    return { overallScore, dimensionScores, feedback };
+  }
+
+  private adjustParameters(iteration: number, lastScore: number, prevScore: number | null): void {
+    if (prevScore === null) {
+      this.currentParameters.temperature = 0.8 - iteration * 0.1;
+    } else if (lastScore < prevScore) {
+      this.currentParameters.temperature = Math.max(0.1, this.currentParameters.temperature - 0.1);
+      this.currentParameters.repetitionPenalty += 0.1;
+    } else {
+      this.currentParameters.temperature = Math.min(1.5, this.currentParameters.temperature + 0.05);
+    }
+    this.currentParameters.temperature = Math.max(0.1, Math.min(1.5, this.currentParameters.temperature));
+  }
+
+  async run(input: GeneratorInput): Promise<{ output: string; history: typeof this.iterationHistory }> {
+    let prevScore: number | null = null;
+    let plateauCount = 0;
+
+    for (let i = 0; i < this.config.maxIterations; i++) {
+      console.log(`\n=== Iteration ${i + 1}/${this.config.maxIterations} ===`);
+
+      const output = this.simulateGenerate(input, this.currentParameters);
+      const evalResult = this.evaluate(output);
+
+      this.iterationHistory.push({
+        iteration: i + 1,
+        score: evalResult.overallScore,
+        output,
+      });
+
+      console.log(`  Score: ${(evalResult.overallScore * 100).toFixed(0)}%`);
+      console.log(`  Dimensions: ${JSON.stringify(evalResult.dimensionScores)}`);
+      console.log(`  Parameters: temp=${this.currentParameters.temperature.toFixed(2)}`);
+      console.log(`  Feedback: ${evalResult.feedback}`);
+
+      if (evalResult.overallScore >= this.config.minScore) {
+        console.log(`  => Score threshold met. Stopping.`);
+        return { output, history: this.iterationHistory };
+      }
+
+      if (prevScore !== null) {
+        const improvement = evalResult.overallScore - prevScore;
+        if (improvement < 0) {
+          console.log(`  => Score regressed. Rolling back and adjusting.`);
+        } else if (improvement < this.config.improvementThreshold) {
+          plateauCount++;
+          console.log(`  => Plateau detected (${plateauCount}/${this.config.plateauWindow})`);
+          if (plateauCount >= this.config.plateauWindow) {
+            console.log(`  => Max plateau reached. Stopping.`);
+            return { output, history: this.iterationHistory };
+          }
+        } else {
+          plateauCount = 0;
+        }
+      }
+
+      this.adjustParameters(i + 1, evalResult.overallScore, prevScore);
+      prevScore = evalResult.overallScore;
+    }
+
+    console.log(`\n=> Max iterations (${this.config.maxIterations}) reached. Returning best result.`);
+    const best = this.iterationHistory.reduce((a, b) => (a.score > b.score ? a : b));
+    return { output: best.output, history: this.iterationHistory };
+  }
+}
+
+async function main() {
+  const agent = new EvalLoopAgent({ maxIterations: 4, minScore: 0.75 });
+
+  agent.addCriterion({
+    name: "relevance",
+    weight: 0.4,
+    score: (output) => {
+      if (output.includes("addresses the prompt")) return 0.9;
+      if (output.includes("covers the topic")) return 0.6;
+      return 0.3;
+    },
+  });
+
+  agent.addCriterion({
+    name: "detail",
+    weight: 0.35,
+    score: (output) => {
+      if (output.includes("high-quality")) return 0.85;
+      if (output.includes("lacks depth")) return 0.5;
+      return 0.2;
+    },
+  });
+
+  agent.addCriterion({
+    name: "clarity",
+    weight: 0.25,
+    score: (_output) => 0.7 + Math.random() * 0.2,
+  });
+
+  const result = await agent.run({
+    prompt: "Explain the CAP theorem in distributed systems.",
+    context: { audience: "senior engineers", maxTokens: 500 },
+  });
+
+  console.log("\n=== Result ===");
+  console.log(result.output);
+  console.log(`\nIterations: ${result.history.length}`);
+  console.log(`Best score: ${(Math.max(...result.history.map((h) => h.score)) * 100).toFixed(0)}%`);
+}
+
+await main();
+```
+
+### Example 2: ReviewLoopAgent — AI Writes, Human Reviews, AI Fixes
+
+```typescript
+// ch04-example2-review-loop.ts
+// Bun: bun run ch04-example2-review-loop.ts
+
+interface ReviewComment {
+  file: string;
+  line: number;
+  severity: "error" | "warning" | "nit";
+  message: string;
+  suggestion: string;
+}
+
+interface ReviewRound {
+  round: number;
+  code: string;
+  comments: ReviewComment[];
+  approved: boolean;
+}
+
+class ReviewLoopAgent {
+  private currentRound = 0;
+  private readonly maxRounds: number;
+  private history: ReviewRound[] = [];
+
+  constructor(maxRounds = 3) {
+    this.maxRounds = maxRounds;
+  }
+
+  private simulateWriteCode(task: string): string {
+    const templates: Record<string, string> = {
+      "add-user-endpoint": `import { Router } from "express";
+import { hash } from "bcrypt";
+import { prisma } from "../db";
+
+const router = Router();
+
+router.post("/users", async (req, res) => {
+  const { email, password, name } = req.body;
+  const hashed = await hash(password, 10);
+  const user = await prisma.user.create({
+    data: { email, password: hashed, name },
+  });
+  res.status(201).json(user);
+});
+
+export default router;`,
+
+      "add-login-endpoint": `import { Router } from "express";
+import { compare } from "bcrypt";
+import { sign } from "jsonwebtoken";
+import { prisma } from "../db";
+
+const router = Router();
+
+router.post("/login", async (req, res) => {
+  const { email, password } = req.body;
+  const user = await prisma.user.findUnique({ where: { email } });
+  if (!user) return res.status(401).json({ error: "Invalid credentials" });
+  const valid = await compare(password, user.password);
+  if (!valid) return res.status(401).json({ error: "Invalid credentials" });
+  const token = sign({ userId: user.id }, process.env.JWT_SECRET!);
+  res.json({ token });
+});
+
+export default router;`,
+    };
+
+    return templates[task] ?? `// Implement ${task}\nexport function solve() {\n  // TODO\n}`;
+  }
+
+  private simulateHumanReview(code: string): ReviewComment[] {
+    const comments: ReviewComment[] = [];
+    const lines = code.split("\n");
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const lineNum = i + 1;
+
+      if (line.includes("any")) {
+        comments.push({
+          file: "impl.ts",
+          line: lineNum,
+          severity: "error",
+          message: "Avoid `any` type. Use a proper interface or type alias.",
+          suggestion: line.replace("any", "unknown"),
+        });
+      }
+
+      if (line.includes("process.env") && !line.includes("!")) {
+        comments.push({
+          file: "impl.ts",
+          line: lineNum,
+          severity: "warning",
+          message: "Environment variable access without non-null assertion. Consider validating at startup.",
+          suggestion: line.replace("process.env.", "process.env.").replace(";", "!;"),
+        });
+      }
+
+      if (line.includes("TODO")) {
+        comments.push({
+          file: "impl.ts",
+          line: lineNum,
+          severity: "warning",
+          message: "TODO left in code. Complete the implementation or add a tracking issue.",
+          suggestion: "Implement the function body or add a @todo comment with an issue link.",
+        });
+      }
+    }
+
+    comments.push({
+      file: "impl.ts",
+      line: 1,
+      severity: "nit",
+      message: "Consider adding JSDoc comments to exported functions.",
+      suggestion: "/** Creates a new user. */",
+    });
+
+    return comments;
+  }
+
+  private applyFeedback(code: string, comments: ReviewComment[]): string {
+    let result = code;
+    for (const comment of comments) {
+      if (comment.severity === "error") {
+        result = result.replace(/any/g, "unknown");
+      }
+      if (comment.message.includes("TODOs")) {
+        result = result.replace("// TODO", "// Implemented");
+      }
+    }
+    return result;
+  }
+
+  async run(task: string): Promise<ReviewRound> {
+    let code = this.simulateWriteCode(task);
+
+    while (this.currentRound < this.maxRounds) {
+      this.currentRound++;
+      console.log(`\n=== Review Round ${this.currentRound} ===`);
+
+      const comments = this.simulateHumanReview(code);
+      const errors = comments.filter((c) => c.severity === "error").length;
+      const warnings = comments.filter((c) => c.severity === "warning").length;
+      const nits = comments.filter((c) => c.severity === "nit").length;
+
+      console.log(`  Errors: ${errors}, Warnings: ${warnings}, Nits: ${nits}`);
+
+      for (const comment of comments) {
+        console.log(`  [${comment.severity}] L${comment.line}: ${comment.message}`);
+      }
+
+      const approved = errors === 0;
+
+      this.history.push({ round: this.currentRound, code, comments, approved });
+
+      if (approved) {
+        console.log("  => Approved! No errors remaining.");
+        return this.history[this.history.length - 1];
+      }
+
+      if (this.currentRound < this.maxRounds) {
+        code = this.applyFeedback(code, comments);
+        console.log("  => Applied fixes. Re-submitting for review...");
+      }
+    }
+
+    console.log(`\n=> Max review rounds (${this.maxRounds}) reached.`);
+    return this.history[this.history.length - 1];
+  }
+
+  getHistory(): ReviewRound[] {
+    return this.history;
+  }
+}
+
+async function main() {
+  const agent = new ReviewLoopAgent(3);
+
+  const result = await agent.run("add-user-endpoint");
+
+  console.log("\n=== Review History ===");
+  for (const round of agent.getHistory()) {
+    console.log(`\nRound ${round.round}: ${round.approved ? "APPROVED" : "NEEDS WORK"}`);
+    console.log(`  ${round.comments.length} comments`);
+  }
+
+  console.log(`\nFinal approved: ${result.approved}`);
+  console.log("Final code:");
+  console.log(result.code);
+}
+
+await main();
+```
+
+### Example 3: SweepLoop — Process, Detect Failures, Create Fix Tasks
+
+```typescript
+// ch04-example3-sweep-loop.ts
+// Bun: bun run ch04-example3-sweep-loop.ts
+
+interface Task {
+  id: string;
+  description: string;
+  category: string;
+  priority: "low" | "medium" | "high" | "critical";
+}
+
+interface TaskResult {
+  taskId: string;
+  succeeded: boolean;
+  error?: string;
+  output?: string;
+}
+
+interface FixTask {
+  id: string;
+  parentTaskId: string;
+  description: string;
+  error: string;
+  category: string;
+  priority: "low" | "medium" | "high" | "critical";
+}
+
+class SweepLoop {
+  private fixTasks: FixTask[] = [];
+  private processedCount = 0;
+  private fixRound = 0;
+  private readonly maxFixRounds: number;
+
+  constructor(maxFixRounds = 2) {
+    this.maxFixRounds = maxFixRounds;
+  }
+
+  private async executeTask(task: Task): Promise<TaskResult> {
+    await new Promise((r) => setTimeout(r, 10 + Math.random() * 20));
+    const willFail = Math.random() < 0.4;
+    if (willFail) {
+      const errors = [
+        "ModuleNotFoundError: No module named 'requests'",
+        "TypeError: Cannot read properties of undefined (reading 'map')",
+        "SyntaxError: Unexpected token ) in JSON at position 42",
+        "TimeoutError: Connection to database timed out",
+        "AssertionError: expected 5 to equal 3",
+      ];
+      return {
+        taskId: task.id,
+        succeeded: false,
+        error: errors[Math.floor(Math.random() * errors.length)],
+      };
+    }
+    return {
+      taskId: task.id,
+      succeeded: true,
+      output: `Successfully completed: ${task.description}`,
+    };
+  }
+
+  private severityToPriority(severity: number): Task["priority"] {
+    if (severity > 0.8) return "critical";
+    if (severity > 0.5) return "high";
+    if (severity > 0.2) return "medium";
+    return "low";
+  }
+
+  private parseErrorForFixTask(error: string, parent: Task): string {
+    if (error.includes("ModuleNotFoundError")) {
+      return `Install missing dependency for ${parent.description}. Error: ${error}`;
+    }
+    if (error.includes("TypeError")) {
+      return `Fix null/undefined check in ${parent.description}. Error: ${error}`;
+    }
+    if (error.includes("SyntaxError")) {
+      return `Fix JSON parsing in ${parent.description}. Error: ${error}`;
+    }
+    if (error.includes("TimeoutError")) {
+      return `Add connection retry logic or increase timeout for ${parent.description}. Error: ${error}`;
+    }
+    if (error.includes("AssertionError")) {
+      return `Fix incorrect return value in ${parent.description}. Error: ${error}`;
+    }
+    return `General fix for ${parent.description}: ${error}`;
+  }
+
+  private createFixTask(task: Task, result: TaskResult): FixTask {
+    return {
+      id: `fix-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+      parentTaskId: task.id,
+      description: this.parseErrorForFixTask(result.error!, task),
+      error: result.error!,
+      category: task.category,
+      priority: task.priority === "critical" ? "critical" : "medium",
+    };
+  }
+
+  async sweep(tasks: Task[]): Promise<{
+    successes: TaskResult[];
+    failures: TaskResult[];
+    fixTasks: FixTask[];
+    resolvedByFixes: TaskResult[];
+  }> {
+    const successes: TaskResult[] = [];
+    const failures: TaskResult[] = [];
+    const resolvedByFixes: TaskResult[] = [];
+
+    console.log(`=== SWEEP: Processing ${tasks.length} tasks ===\n`);
+
+    for (const task of tasks) {
+      this.processedCount++;
+      console.log(`[${this.processedCount}/${tasks.length}] ${task.description} (${task.priority})`);
+      const result = await this.executeTask(task);
+      if (result.succeeded) {
+        successes.push(result);
+        console.log(`  => OK`);
+      } else {
+        failures.push(result);
+        const fixTask = this.createFixTask(task, result);
+        this.fixTasks.push(fixTask);
+        console.log(`  => FAIL: ${result.error}`);
+        console.log(`  => Created fix task: ${fixTask.description.slice(0, 60)}...`);
+      }
+    }
+
+    if (this.fixTasks.length > 0 && this.maxFixRounds > 0) {
+      console.log(`\n=== FIX ROUND ${++this.fixRound}: Processing ${this.fixTasks.length} fix tasks ===\n`);
+      const pendingFixes = [...this.fixTasks];
+      this.fixTasks = [];
+
+      for (const fix of pendingFixes) {
+        console.log(`[FIX] ${fix.description.slice(0, 60)}...`);
+        const result = await this.executeTask({
+          id: fix.id,
+          description: fix.description,
+          category: fix.category,
+          priority: fix.priority,
+        });
+        if (result.succeeded) {
+          resolvedByFixes.push(result);
+          console.log(`  => FIX SUCCEEDED`);
+        } else {
+          console.log(`  => FIX FAILED: ${result.error}`);
+          if (this.fixRound < this.maxFixRounds) {
+            const subFix = this.createFixTask(
+              { id: fix.parentTaskId, description: fix.description, category: fix.category, priority: fix.priority },
+              result
+            );
+            this.fixTasks.push(subFix);
+            console.log(`  => Re-queued for next fix round`);
+          } else {
+            console.log(`  => Max fix rounds reached. Escalating.`);
+          }
+        }
+      }
+
+      if (this.fixTasks.length > 0 && this.fixRound < this.maxFixRounds) {
+        const remaining = await this.sweep(
+          this.fixTasks.map((f) => ({
+            id: f.id,
+            description: f.description,
+            category: f.category,
+            priority: f.priority,
+          }))
+        );
+        return {
+          successes: [...successes, ...remaining.successes],
+          failures: [...failures, ...remaining.failures],
+          fixTasks: remaining.fixTasks,
+          resolvedByFixes: [...resolvedByFixes, ...remaining.resolvedByFixes],
+        };
+      }
+    }
+
+    return { successes, failures, fixTasks: this.fixTasks, resolvedByFixes };
+  }
+}
+
+async function main() {
+  const sweeper = new SweepLoop(2);
+
+  const tasks: Task[] = [
+    { id: "t1", description: "Update axios to v1.7.0", category: "deps", priority: "high" },
+    { id: "t2", description: "Add input validation to signup form", category: "feature", priority: "high" },
+    { id: "t3", description: "Fix pagination off-by-one", category: "bug", priority: "medium" },
+    { id: "t4", description: "Add rate limiting to login endpoint", category: "security", priority: "critical" },
+    { id: "t5", description: "Refactor user service to use repository pattern", category: "refactor", priority: "low" },
+    { id: "t6", description: "Upgrade ESLint config to flat config", category: "tooling", priority: "medium" },
+    { id: "t7", description: "Add integration test for payment flow", category: "testing", priority: "high" },
+    { id: "t8", description: "Replace moment.js with date-fns", category: "deps", priority: "low" },
+  ];
+
+  const result = await sweeper.sweep(tasks);
+
+  console.log("\n=== SWEEP RESULTS ===");
+  console.log(`Total tasks: ${tasks.length}`);
+  console.log(`Immediate successes: ${result.successes.length}`);
+  console.log(`Immediate failures: ${result.failures.length}`);
+  console.log(`Resolved by auto-fix: ${result.resolvedByFixes.length}`);
+  console.log(`Unresolved (escalated): ${result.fixTasks.length}`);
+  console.log(`Final pass rate: ${((result.successes.length + result.resolvedByFixes.length) / tasks.length * 100).toFixed(0)}%`);
+
+  if (result.fixTasks.length > 0) {
+    console.log("\n=== ESCALATED FIX TASKS ===");
+    for (const fix of result.fixTasks) {
+      console.log(`  ${fix.id}: ${fix.description}`);
+      console.log(`    Priority: ${fix.priority} | Original error: ${fix.error}`);
+    }
+  }
+}
+
+await main();
+```
+
+---
+
+## Summary
+
+- **Eval-driven loops** are the general-purpose feedback mechanism: generate, score against explicit criteria, adjust parameters, and retry until quality converges.
+- **Code review loops** mirror real engineering workflows: AI authors, humans review with actionable line-level comments, AI applies fixes, and the cycle repeats until approval.
+- **Test-driven loops** use tests as executable specifications — a passing test suite is the most objective success signal available to an agent.
+- **Failure-to-task conversion** ensures that failures produce concrete next steps instead of dead ends. Each failed attempt shrinks the problem space.
+- **Sweep loops** scale feedback to entire collections — process items, detect failures, generate fix tasks, and iterate the fixes until resolution or escalation.
+- All feedback loops must have explicit termination conditions: score thresholds, max iterations, plateau detection, and escalation paths.
+
+---
+
+## Exercises
+
+### Review Questions
+
+1. What are the four termination conditions for an eval-driven loop? When would you use each one?
+
+2. Why is "actionable" feedback important in a code review loop? Give an example of a non-actionable comment and rewrite it to be actionable.
+
+3. How does a test-driven loop differ from an eval-driven loop in terms of the evaluation signal? What advantage does this provide?
+
+4. What is the failure-to-task conversion rule regarding subtask depth? Why is this rule important?
+
+5. In the sweep loop, what distinguishes a fix task that is re-queued from one that is escalated?
+
+### Application Problems
+
+1. **Weight-aware eval loop.** Modify Example 1 so that when a dimension scores below 0.5, its weight is temporarily doubled for the next iteration. This forces the agent to focus on its weakest area.
+
+2. **Multi-file review.** Extend Example 2 so that the review loop handles multiple files in a single review round. The `ReviewComment` type already has a `file` field — modify `ReviewLoopAgent` to track changes round by round across a `Map<string, string>` of file paths to code contents.
+
+3. **Sweep with dependency ordering.** Modify Example 3 so that tasks can declare dependencies (`dependsOn: string[]`). If task B depends on task A and A fails, B is deferred until A's fix task succeeds. If A's fix also fails, B is escalated without attempting execution.
+
+4. **Adaptive max iterations.** Change the eval loop in Example 1 so that `maxIterations` is not a fixed number. Instead, the agent computes a budget based on the importance score of the input prompt (higher importance = more iterations). Importance is derived from keyword matching (e.g., "production", "security", "critical" each add 2 extra iterations).
+
+### Challenge
+
+**Build a multi-stage feedback pipeline.** Create a class `FeedbackPipeline` that chains all three feedback loop patterns into a single pipeline:
+
+1. **Eval phase:** Run the prompt through an eval-driven loop (Example 1) to produce a first draft.
+2. **Code review phase:** Pass the output through a code review loop (Example 2) for human-style review.
+3. **Test phase:** Run the reviewed code against a test suite. If tests fail, generate subtasks.
+4. **Sweep phase:** Collect all failures from the test phase and run a sweep loop (Example 3) to produce fix tasks.
+5. **Escalation:** Any fix task that survives two sweep rounds is escalated.
+
+Implement with simulated versions of each phase (no real LLM calls). The pipeline should accept a `PromptTask` and return a structured `PipelineReport` showing which phase each item passed or failed. Demonstrate with at least 5 prompt tasks covering different failure modes.

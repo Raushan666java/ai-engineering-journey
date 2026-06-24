@@ -1,0 +1,987 @@
+# Chapter 8: Multi-Agent Loops
+
+> **Previous:** [Loop Safety](./ch07-loop-safety.md) | **Next:** [Loop Tooling](./ch09-loop-tooling.md)
+
+## Learning Objectives
+
+After completing this chapter, you will be able to:
+
+- Design a supervisor loop that orchestrates workers, aggregates results, and decides on next actions
+- Implement debate loops where agents argue with adversarial scoring and judge evaluation
+- Build negotiation loops where agents trade resources and iterate toward agreement
+- Construct consensus loops with BFT-style voting, tie-breaking, and configurable quorum
+- Understand swarm loops where simple agent rules produce emergent behavior
+- Choose the right multi-agent pattern for a given problem domain
+
+## Chapter at a Glance
+
+| Topic | Key Insight | Practical Takeaway |
+|-------|-------------|--------------------|
+| Supervisor Loop | Central orchestrator distributes work and aggregates results | Use score-based aggregation; re-route on failure |
+| Debate Loop | Agents generate adversarial arguments scored by a judge | Higher-quality reasoning emerges from structured disagreement |
+| Negotiation Loop | Agents trade proposals iteratively toward a mutually acceptable outcome | Track concession rates; detect deadlock with timeout |
+| Consensus Loop | BFT-style voting with tie-breakers and quorum thresholds | N = 3f + 1 agents tolerate f failures |
+| Swarm Loop | Simple per-agent rules produce complex collective behavior | No central coordinator; emergent result from local interactions |
+
+## Chapter Roadmap
+
+```mermaid
+flowchart LR
+    A[Supervisor Loop] --> B[Debate Loop]
+    B --> C[Negotiation Loop]
+    C --> D[Consensus Loop]
+    D --> E[Swarm Loop]
+    E --> F[Pattern Selection Guide]
+```
+
+---
+
+## 1. Theory
+
+### 1.1 Supervisor Loop
+
+The **supervisor loop** is the most widely deployed multi-agent pattern. A single orchestrator agent (the supervisor) manages a pool of worker agents:
+
+```
+Supervisor
+  ├─ Worker A: research
+  ├─ Worker B: code generation
+  ├─ Worker C: testing
+  └─ Worker D: documentation
+```
+
+**Loop flow:**
+
+1. Supervisor receives a task.
+2. Supervisor decomposes the task into subtasks.
+3. Supervisor dispatches subtasks to workers (in parallel or sequentially).
+4. Workers execute and return results.
+5. Supervisor aggregates results and scores them.
+6. Supervisor decides: emit final output, re-route a failed subtask, or loop back to step 2 with refined decomposition.
+
+**Aggregation strategies:**
+
+- **Score-based.** Each worker result is scored (by the supervisor or an evaluator). The highest-scoring result is selected or results are combined weighted by score.
+- **Voting.** Workers vote on the best outcome. Requires 3+ workers for majority.
+- **Ensemble.** All results are combined into a single output (e.g., multiple code reviews merged into one report).
+- **Best-of-N.** All workers run independently; the best single result is chosen.
+
+**Failure handling.** If a worker fails or times out, the supervisor can:
+- Retry the same worker (with backoff)
+- Re-route the subtask to a different worker
+- Decompose the subtask further and distribute to multiple workers
+- Mark the subtask as failed and continue
+
+### 1.2 Debate Loop
+
+Debate loops simulate structured argumentation between agents. They produce higher-quality reasoning than single-agent approaches by forcing each agent to defend its position against critique.
+
+```
+       ┌─────────────┐
+       │   Motion    │
+       └──────┬──────┘
+              │
+              ▼
+    ┌───────────────────┐
+    │  Agent Pro        │
+    │  (argues for)     │
+    └────────┬──────────┘
+             │
+             ▼
+    ┌───────────────────┐
+    │  Agent Con        │
+    │  (argues against) │
+    └────────┬──────────┘
+             │
+    ┌────────▼──────────┐
+    │  More rounds?     │───yes──► (loop back)
+    └────────┬──────────┘
+             │ no
+             ▼
+    ┌───────────────────┐
+    │  Judge            │
+    │  (evaluates,      │
+    │   scores, decides)│
+    └───────────────────┘
+```
+
+**Key design decisions:**
+
+- **Number of rounds.** 2-3 rounds are typical. More rounds produce diminishing returns and increase token costs.
+- **Adversary mode.** Agents are explicitly prompted to find flaws in the opponent's argument. This prevents groupthink.
+- **Judge architecture.** The judge can be:
+  - A separate LLM call with a rubric
+  - A panel of judges with majority vote
+  - A human (for high-stakes decisions)
+- **Scoring criteria.** Clarity, evidence quality, logical consistency, responsiveness to counter-arguments.
+
+### 1.3 Negotiation Loop
+
+Negotiation loops model agents with different resources or objectives that must reach a mutually acceptable agreement through iterative proposal exchange.
+
+**Formal model:**
+
+- Each agent has a **utility function** `U_i(x)` over outcomes `x`.
+- Each agent has a **reservation price** `R_i` — the minimum utility they will accept.
+- The **negotiation set** `N = {x | U_i(x) ≥ R_i for all i}` is the set of mutually acceptable outcomes.
+- The goal is to find an outcome in the negotiation set, ideally on the **Pareto frontier**.
+
+**Loop flow:**
+
+1. Agents exchange initial proposals.
+2. Each agent evaluates the other's proposal against its own utility.
+3. Agents make concessions (reduce demands) or counter-propose.
+4. Repeat until agreement or timeout.
+5. If timeout, agents can: walk away, accept the best-so-far, or escalate to a human.
+
+**Concession strategies:**
+
+- **Boulware.** Start with an extreme position and concede slowly. Strong if you have time.
+- **Conceder.** Start with a reasonable position and concede quickly. Fast but weak.
+- **Tit-for-Tat.** Match the other agent's concession level. Reciprocity-based.
+
+### 1.4 Consensus Loop
+
+Consensus loops are inspired by Byzantine Fault Tolerance (BFT) distributed systems. A group of agents must agree on a single outcome even if some agents are faulty or adversarial.
+
+**BFT model:** With `N = 3f + 1` agents, the system tolerates up to `f` faulty agents. Each agent broadcasts its proposal, collects proposals from others, and runs a deterministic decision function.
+
+```
+Agent Proposals:
+  A1: "option X"
+  A2: "option X"
+  A3: "option Y"
+  A4: "option X"
+
+Quorum threshold = ceil(2N/3) = ceil(2*4/3) = 3
+"option X" has 3 votes ≥ 3 → CONSENSUS REACHED
+```
+
+**Tie-breaking strategies:**
+
+- **Predefined tiebreaker.** A designated agent's vote breaks ties.
+- **External oracle.** A fresh LLM call evaluates the tied options.
+- **Escalation.** The tied options are passed to a judge agent or human.
+- **Random.** Select randomly among tied options.
+
+**Quorum thresholds:**
+
+| System | f | N | Quorum |
+|--------|---|---|--------|
+| Simple majority | 0 | 3 | 2 (50%+1) |
+| BFT minimum | 1 | 4 | 3 (75%) |
+| BFT high tolerance | 2 | 7 | 5 (71%) |
+| Supermajority | - | any | 2/3 |
+
+### 1.5 Swarm Loop
+
+Swarm loops take inspiration from ant colonies, bird flocking, and fish schooling. Simple per-agent rules produce complex emergent behavior without central coordination.
+
+**Principles:**
+
+- **Decentralization.** No single agent has a global view. Each agent acts on local information.
+- **Simple rules.** Each agent follows 2-3 simple rules (e.g., "move toward the best neighbor solution", "avoid overcrowding", "random perturbation with small probability").
+- **Emergence.** Complex patterns arise from local interactions and positive feedback.
+
+**In agent systems, swarm-like patterns include:**
+
+- **Parallel exploration.** Each agent explores a different part of the solution space. Agents share findings through a shared blackboard. Positive feedback: promising areas attract more agents.
+- **Stigmergy.** Agents leave traces (e.g., preference votes, partial solutions) that influence other agents' behavior. No direct communication needed.
+- **Pheromone maps.** Agents mark solution paths with "pheromone" scores. Other agents preferentially follow high-pheromone paths. Pheromone evaporates over time to avoid local optima.
+
+**Comparison with other patterns:**
+
+| Aspect | Supervisor | Swarm |
+|--------|-----------|-------|
+| Coordination | Central | Decentralized |
+| State | Supervisor holds global state | Agents share via stigmergy |
+| Failure tolerance | Supervisor is single point of failure | Highly resilient |
+| Scalability | Limited by supervisor capacity | Scales with swarm size |
+| Predictability | Deterministic | Emergent, harder to predict |
+
+---
+
+## 2. Examples
+
+### 2.1 SupervisorLoop — Task Distribution and Score-Based Aggregation
+
+```typescript
+/**
+ * SupervisorLoop.ts
+ * Orchestrator dispatches subtasks to workers, aggregates results with scores.
+ * Run: bun run examples/ch08/SupervisorLoop.ts
+ */
+
+interface Task {
+  id: string;
+  description: string;
+  requiredCapability: string;
+  priority: number;
+}
+
+interface WorkerResult {
+  workerId: string;
+  taskId: string;
+  output: string;
+  score: number;
+  confidence: number;
+  latencyMs: number;
+}
+
+interface WorkerConfig {
+  id: string;
+  capabilities: string[];
+  costPerCall: number;
+}
+
+// ─── Worker simulation ──────────────────────────────────────────────────────
+
+const WORKERS: WorkerConfig[] = [
+  { id: "researcher-a", capabilities: ["research", "analysis"], costPerCall: 0.01 },
+  { id: "coder-b", capabilities: ["code", "debug"], costPerCall: 0.02 },
+  { id: "reviewer-c", capabilities: ["review", "analysis"], costPerCall: 0.015 },
+  { id: "architect-d", capabilities: ["design", "review"], costPerCall: 0.025 },
+];
+
+async function executeWorker(worker: WorkerConfig, task: Task): Promise<WorkerResult> {
+  const startTime = Date.now();
+  const latencyMs = 100 + Math.floor(Math.random() * 400);
+
+  await new Promise(resolve => setTimeout(resolve, latencyMs));
+
+  // Simulate varying quality
+  const baseScore = task.priority > 5 ? 0.9 : 0.75;
+  const capabilityBonus = worker.capabilities.includes(task.requiredCapability)
+    ? 0.15
+    : -0.1;
+  const noise = (Math.random() - 0.5) * 0.2;
+  const score = Math.max(0, Math.min(1, baseScore + capabilityBonus + noise));
+
+  return {
+    workerId: worker.id,
+    taskId: task.id,
+    output: `${worker.id} processed "${task.description}"`,
+    score,
+    confidence: score,
+    latencyMs,
+  };
+}
+
+// ─── Supervisor ─────────────────────────────────────────────────────────────
+
+interface SupervisorConfig {
+  minWorkersPerTask: number;
+  scoreThreshold: number;
+  maxRetries: number;
+}
+
+class Supervisor {
+  private results: Map<string, WorkerResult[]> = new Map();
+  private totalCost = 0;
+
+  constructor(private config: SupervisorConfig) {}
+
+  async execute(tasks: Task[]): Promise<Map<string, WorkerResult>> {
+    const finalResults = new Map<string, WorkerResult>();
+
+    for (const task of tasks) {
+      console.log(`\n── Task: "${task.description}" (capability: ${task.requiredCapability}) ──`);
+      const result = await this.executeTaskWithRetries(task, 0);
+      if (result) {
+        finalResults.set(task.id, result);
+      }
+    }
+
+    console.log(`\nTotal cost: $${this.totalCost.toFixed(4)}`);
+    return finalResults;
+  }
+
+  private async executeTaskWithRetries(
+    task: Task,
+    attempt: number,
+  ): Promise<WorkerResult | null> {
+    if (attempt >= this.config.maxRetries) {
+      console.log(`  Task ${task.id} failed after ${attempt} retries`);
+      return null;
+    }
+
+    // Select qualified workers
+    const candidates = WORKERS.filter(w =>
+      w.capabilities.includes(task.requiredCapability) ||
+      w.capabilities.some(c => task.description.toLowerCase().includes(c))
+    );
+
+    // Fall back to all workers if none match
+    const selectedWorkers = candidates.length >= this.config.minWorkersPerTask
+      ? candidates.slice(0, this.config.minWorkersPerTask)
+      : WORKERS.slice(0, this.config.minWorkersPerTask);
+
+    console.log(`  Selected workers: ${selectedWorkers.map(w => w.id).join(", ")}`);
+
+    // Execute workers in parallel
+    const workerResults = await Promise.all(
+      selectedWorkers.map(w => executeWorker(w, task))
+    );
+
+    // Track results and cost
+    for (const r of workerResults) {
+      this.totalCost += WORKERS.find(w => w.id === r.workerId)!.costPerCall;
+    }
+    this.results.set(task.id, workerResults);
+
+    // Aggregate with score weighting
+    const bestResult = this.aggregateByBestScore(workerResults);
+    console.log(`  Best result: ${bestResult.workerId} (score: ${bestResult.score.toFixed(3)})`);
+
+    if (bestResult.score >= this.config.scoreThreshold) {
+      return bestResult;
+    }
+
+    console.log(`  Score ${bestResult.score.toFixed(3)} below threshold ${this.config.scoreThreshold}, retrying...`);
+    return this.executeTaskWithRetries(task, attempt + 1);
+  }
+
+  private aggregateByBestScore(results: WorkerResult[]): WorkerResult {
+    return results.reduce((best, current) =>
+      current.score > best.score ? current : best
+    );
+  }
+
+  getReport(): string {
+    const lines: string[] = [];
+    for (const [taskId, results] of this.results) {
+      lines.push(`Task ${taskId}:`);
+      for (const r of results) {
+        lines.push(`  ${r.workerId}: score=${r.score.toFixed(3)}, latency=${r.latencyMs}ms`);
+      }
+    }
+    lines.push(`Total cost: $${this.totalCost.toFixed(4)}`);
+    return lines.join("\n");
+  }
+}
+
+// ─── Main ───────────────────────────────────────────────────────────────────
+
+const supervisor = new Supervisor({
+  minWorkersPerTask: 2,
+  scoreThreshold: 0.7,
+  maxRetries: 2,
+});
+
+const tasks: Task[] = [
+  { id: "t1", description: "Research caching strategies", requiredCapability: "research", priority: 6 },
+  { id: "t2", description: "Implement Redis cache client", requiredCapability: "code", priority: 8 },
+  { id: "t3", description: "Review cache architecture", requiredCapability: "review", priority: 5 },
+];
+
+console.log("╔══════════════════════════════════════╗");
+console.log("║      SupervisorLoop Execution        ║");
+console.log("╚══════════════════════════════════════╝");
+
+const results = await supervisor.execute(tasks);
+
+console.log("\n── Final Results ──");
+for (const [taskId, result] of results) {
+  console.log(`${taskId}: ${result.output} (worker: ${result.workerId}, score: ${result.score.toFixed(3)})`);
+}
+
+console.log("\n── Full Report ──");
+console.log(supervisor.getReport());
+```
+
+### 2.2 DebateAgent — Adversarial Arguments with Judge Evaluation
+
+```typescript
+/**
+ * DebateAgent.ts
+ * Two agents debate a motion with adversarial scoring and a judge evaluator.
+ * Run: bun run examples/ch08/DebateAgent.ts
+ */
+
+interface Argument {
+  agentId: string;
+  stance: "pro" | "con";
+  round: number;
+  content: string;
+  evidence: string[];
+}
+
+interface JudgeScore {
+  clarity: number;
+  evidence: number;
+  logic: number;
+  responsiveness: number;
+  total: number;
+}
+
+interface DebateResult {
+  motion: string;
+  rounds: Argument[];
+  scores: { pro: JudgeScore; con: JudgeScore };
+  winner: "pro" | "con" | "draw";
+  judgeRationale: string;
+}
+
+// ─── Debate Agent ───────────────────────────────────────────────────────────
+
+class DebateAgent {
+  constructor(
+    public id: string,
+    public stance: "pro" | "con",
+  ) {}
+
+  async generateArgument(
+    motion: string,
+    round: number,
+    opponentArgument: Argument | null,
+  ): Promise<Argument> {
+    // Simulate LLM call with debate generation
+    await new Promise(resolve => setTimeout(resolve, 150 + Math.random() * 200));
+
+    const proArguments: Record<number, string[]> = {
+      1: [
+        "Adopting microservices improves deployment independence",
+        "Teams can scale independently with bounded contexts",
+        "Fault isolation prevents system-wide outages",
+      ],
+      2: [
+        "Response: The monolith already has deployment bottlenecks costing $2M/year",
+        "Counter: Your coupling argument ignores well-bounded domain contexts",
+        "Further evidence: Netflix and Amazon successfully sustained this model",
+      ],
+      3: [
+        "Rebuttal: Your complexity argument conflates accidental vs essential complexity",
+        "Migration cost is one-time; flexibility overhead is perpetual",
+        "Data: 80% of teams report faster feature velocity after migration",
+      ],
+    };
+
+    const conArguments: Record<number, string[]> = {
+      1: [
+        "Microservices add network latency and operational complexity",
+        "Distributed transactions are significantly harder to debug",
+        "Most teams lack the operational maturity for distributed systems",
+      ],
+      2: [
+        "Response: $2M/year is 0.1% of revenue — not a compelling justification",
+        "Counter: bounded contexts require extensive upfront domain modeling",
+        "Further evidence: 60% of microservices migrations fail or are rolled back",
+      ],
+      3: [
+        "Rebuttal: Feature velocity gains are typically measured during the rewrite, not sustained",
+        "Essential complexity of distributed systems is higher than monoliths",
+        "Data: Post-migration incident frequency increases 3x on average",
+      ],
+    };
+
+    const args = this.stance === "pro" ? proArguments : conArguments;
+    const content = (args[round] || args[1]).join(". ");
+    const evidence = args[round] || args[1];
+
+    return {
+      agentId: this.id,
+      stance: this.stance,
+      round,
+      content,
+      evidence,
+    };
+  }
+}
+
+// ─── Judge ──────────────────────────────────────────────────────────────────
+
+class DebateJudge {
+  async evaluate(
+    motion: string,
+    rounds: Argument[],
+  ): Promise<{ scores: { pro: JudgeScore; con: JudgeScore }; winner: "pro" | "con" | "draw"; rationale: string }> {
+    await new Promise(resolve => setTimeout(resolve, 200));
+
+    const proArgs = rounds.filter(a => a.stance === "pro");
+    const conArgs = rounds.filter(a => a.stance === "con");
+
+    const proScore: JudgeScore = {
+      clarity: 0.85 + Math.random() * 0.1,
+      evidence: 0.7 + Math.random() * 0.2,
+      logic: 0.75 + Math.random() * 0.15,
+      responsiveness: 0.7 + Math.random() * 0.2,
+      total: 0,
+    };
+    const conScore: JudgeScore = {
+      clarity: 0.8 + Math.random() * 0.15,
+      evidence: 0.75 + Math.random() * 0.2,
+      logic: 0.8 + Math.random() * 0.1,
+      responsiveness: 0.75 + Math.random() * 0.15,
+      total: 0,
+    };
+
+    proScore.total = (proScore.clarity + proScore.evidence + proScore.logic + proScore.responsiveness) / 4;
+    conScore.total = (conScore.clarity + conScore.evidence + conScore.logic + conScore.responsiveness) / 4;
+
+    const diff = proScore.total - conScore.total;
+    const winner: "pro" | "con" | "draw" =
+      Math.abs(diff) < 0.03 ? "draw" : diff > 0 ? "pro" : "con";
+
+    const rationale = winner === "draw"
+      ? "Both sides presented compelling, well-evidenced arguments. The debate is too close to call."
+      : `${winner === "pro" ? "Pro" : "Con"} demonstrated stronger logical consistency and evidence quality across ${rounds.length} rounds.`;
+
+    return { scores: { pro: proScore, con: conScore }, winner, rationale };
+  }
+}
+
+// ─── Debate Orchestrator ────────────────────────────────────────────────────
+
+interface DebateConfig {
+  maxRounds: number;
+  judgeModel: string;
+  scoringRubric: string[];
+}
+
+class DebateOrchestrator {
+  private proAgent: DebateAgent;
+  private conAgent: DebateAgent;
+  private judge: DebateJudge;
+  private rounds: Argument[] = [];
+
+  constructor(
+    proId: string,
+    conId: string,
+    private config: DebateConfig,
+  ) {
+    this.proAgent = new DebateAgent(proId, "pro");
+    this.conAgent = new DebateAgent(conId, "con");
+    this.judge = new DebateJudge();
+  }
+
+  async debate(motion: string): Promise<DebateResult> {
+    console.log(`\nMotion: "${motion}"\n`);
+
+    for (let round = 1; round <= this.config.maxRounds; round++) {
+      console.log(`── Round ${round} ──`);
+
+      const lastPro = this.rounds.findLast(a => a.stance === "pro") ?? null;
+      const lastCon = this.rounds.findLast(a => a.stance === "con") ?? null;
+
+      // Pro argues first each round
+      const proArg = await this.proAgent.generateArgument(motion, round, lastCon);
+      this.rounds.push(proArg);
+      console.log(`PRO [${proArg.agentId}]: ${proArg.content.slice(0, 80)}...`);
+
+      // Con responds
+      const conArg = await this.conAgent.generateArgument(motion, round, proArg);
+      this.rounds.push(conArg);
+      console.log(`CON [${conArg.agentId}]: ${conArg.content.slice(0, 80)}...`);
+    }
+
+    // Judge evaluates
+    console.log(`\n── Judge Evaluation ──`);
+    const { scores, winner, rationale } = await this.judge.evaluate(motion, this.rounds);
+
+    console.log(`Pro score: ${scores.pro.total.toFixed(3)}`);
+    console.log(`Con score: ${scores.con.total.toFixed(3)}`);
+    console.log(`Winner: ${winner.toUpperCase()}`);
+    console.log(`Rationale: ${rationale}`);
+
+    return {
+      motion,
+      rounds: this.rounds,
+      scores,
+      winner,
+      judgeRationale: rationale,
+    };
+  }
+}
+
+// ─── Main ───────────────────────────────────────────────────────────────────
+
+const orchestrator = new DebateOrchestrator(
+  "agent-alpha",
+  "agent-beta",
+  {
+    maxRounds: 3,
+    judgeModel: "claude-sonnet-4",
+    scoringRubric: ["clarity", "evidence", "logic", "responsiveness"],
+  },
+);
+
+console.log("╔════════════════════════════════════════╗");
+console.log("║      Structured Debate Session         ║");
+console.log("╚════════════════════════════════════════╝");
+
+const result = await orchestrator.debate(
+  "Microservices architecture is superior to monoliths for mid-size engineering teams"
+);
+
+console.log("\n── Final Debate Result ──");
+console.log(JSON.stringify({
+  winner: result.winner,
+  proScore: result.scores.pro.total,
+  conScore: result.scores.con.total,
+  rounds: result.rounds.length,
+  rationale: result.judgeRationale,
+}, null, 2));
+```
+
+### 2.3 ConsensusVote — Tie-Breaking, Thresholds, and Quorum
+
+```typescript
+/**
+ * ConsensusVote.ts
+ * Multi-agent consensus with configurable quorum, tie-breaking, and escalation.
+ * Run: bun run examples/ch08/ConsensusVote.ts
+ */
+
+interface Vote {
+  agentId: string;
+  option: string;
+  confidence: number;
+  rationale: string;
+}
+
+interface ConsensusConfig {
+  quorumThreshold: number;      // fraction of total agents that must vote (e.g., 0.67)
+  winThreshold: number;         // fraction of votes needed to win (e.g., 0.5)
+  maxRounds: number;
+  tiebreakerStrategy: "predefined" | "random" | "escalate";
+  tiebreakerAgentId?: string;
+}
+
+interface ConsensusResult {
+  winner: string | null;
+  votes: Vote[];
+  round: number;
+  reached: boolean;
+  voteDistribution: Record<string, number>;
+  totalVoters: number;
+  tiebroken: boolean;
+}
+
+// ─── Consensus Voter ────────────────────────────────────────────────────────
+
+class ConsensusVoter {
+  constructor(
+    public id: string,
+    private preferenceBias: Record<string, number>,
+  ) {}
+
+  async vote(options: string[], context: string): Promise<Vote> {
+    await new Promise(resolve => setTimeout(resolve, 50 + Math.random() * 100));
+
+    // Simulate reasoning
+    let bestOption = options[0];
+    let bestScore = -Infinity;
+
+    for (const option of options) {
+      const bias = this.preferenceBias[option] || 0;
+      const randomFactor = Math.random() * 0.3;
+      const score = bias + randomFactor;
+      if (score > bestScore) {
+        bestScore = score;
+        bestOption = option;
+      }
+    }
+
+    return {
+      agentId: this.id,
+      option: bestOption,
+      confidence: Math.min(1, bestScore + 0.5),
+      rationale: `Preference for "${bestOption}" based on analysis of ${context}`,
+    };
+  }
+
+  async changeVote(currentVote: Vote, roundResults: Vote[]): Promise<Vote> {
+    // Simulate deliberation: an agent may switch if its option is losing
+    await new Promise(resolve => setTimeout(resolve, 50));
+
+    const counts: Record<string, number> = {};
+    for (const v of roundResults) {
+      counts[v.option] = (counts[v.option] || 0) + 1;
+    }
+
+    const myOption = currentVote.option;
+    const myCount = counts[myOption] || 0;
+    const total = roundResults.length;
+
+    // If my option has less than 20% support, consider switching with 30% probability
+    if (myCount / total < 0.2 && Math.random() < 0.3) {
+      const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+      const leading = sorted[0][0];
+      if (leading !== myOption) {
+        return {
+          ...currentVote,
+          option: leading,
+          rationale: `Switched to "${leading}" as it has majority support (${sorted[0][1]}/${total})`,
+        };
+      }
+    }
+
+    return currentVote;
+  }
+}
+
+// ─── Consensus Engine ───────────────────────────────────────────────────────
+
+class ConsensusEngine {
+  private voters: ConsensusVoter[];
+
+  constructor(
+    voterIds: string[],
+    private options: string[],
+    private config: ConsensusConfig,
+  ) {
+    this.voters = voterIds.map((id, i) =>
+      new ConsensusVoter(id, this.generateBias(i))
+    );
+  }
+
+  private generateBias(index: number): Record<string, number> {
+    const bias: Record<string, number> = {};
+    const numOptions = this.options.length;
+    for (let i = 0; i < numOptions; i++) {
+      // Each voter has a slight preference for option matching their index
+      const preference = i === index % numOptions ? 0.4 : Math.random() * 0.3;
+      bias[this.options[i]] = preference;
+    }
+    return bias;
+  }
+
+  async reachConsensus(context: string): Promise<ConsensusResult> {
+    let votes: Vote[] = [];
+
+    // Round 1: initial votes
+    console.log("\n── Round 1: Initial Votes ──");
+    votes = await Promise.all(
+      this.voters.map(v => v.vote(this.options, context))
+    );
+    this.printVotes(votes);
+
+    let result = this.checkConsensus(votes, 1);
+    if (result.reached) return result;
+
+    // Subsequent rounds: allow vote changes
+    for (let round = 2; round <= this.config.maxRounds; round++) {
+      console.log(`\n── Round ${round}: Deliberation ──`);
+      votes = await Promise.all(
+        this.voters.map((v, i) => v.changeVote(votes[i], votes))
+      );
+      this.printVotes(votes);
+
+      result = this.checkConsensus(votes, round);
+      if (result.reached) return result;
+    }
+
+    // Max rounds reached without consensus — apply tie-breaking
+    return this.resolveWithoutConsensus(votes);
+  }
+
+  private checkConsensus(votes: Vote[], round: number): ConsensusResult {
+    const distribution = this.countVotes(votes);
+    const totalVoters = votes.length;
+    const quorumNeeded = Math.ceil(totalVoters * this.config.quorumThreshold);
+    const winNeeded = Math.ceil(totalVoters * this.config.winThreshold);
+
+    const quorumMet = totalVoters >= quorumNeeded;
+
+    if (!quorumMet) {
+      return {
+        winner: null,
+        votes,
+        round,
+        reached: false,
+        voteDistribution: distribution,
+        totalVoters,
+        tiebroken: false,
+      };
+    }
+
+    for (const [option, count] of Object.entries(distribution)) {
+      if (count >= winNeeded) {
+        return {
+          winner: option,
+          votes,
+          round,
+          reached: true,
+          voteDistribution: distribution,
+          totalVoters,
+          tiebroken: false,
+        };
+      }
+    }
+
+    return {
+      winner: null,
+      votes,
+      round,
+      reached: false,
+      voteDistribution: distribution,
+      totalVoters,
+      tiebroken: false,
+    };
+  }
+
+  private resolveWithoutConsensus(votes: Vote[]): ConsensusResult {
+    const distribution = this.countVotes(votes);
+    const totalVoters = votes.length;
+    const maxVotes = Math.max(...Object.values(distribution));
+    const tiedOptions = Object.entries(distribution)
+      .filter(([_, count]) => count === maxVotes)
+      .map(([option]) => option);
+
+    let winner: string | null;
+    let tiebroken = false;
+
+    if (tiedOptions.length === 1) {
+      winner = tiedOptions[0];
+    } else {
+      tiebroken = true;
+      switch (this.config.tiebreakerStrategy) {
+        case "predefined": {
+          const tiebreaker = this.config.tiebreakerAgentId;
+          const tiebreakerVote = votes.find(v => v.agentId === tiebreaker);
+          winner = tiebreakerVote?.option ?? tiedOptions[0];
+          console.log(`\n  Tiebreaker agent "${tiebreaker}" chose: ${winner}`);
+          break;
+        }
+        case "random": {
+          winner = tiedOptions[Math.floor(Math.random() * tiedOptions.length)];
+          console.log(`\n  Random tiebreaker chose: ${winner}`);
+          break;
+        }
+        case "escalate": {
+          winner = null;
+          console.log(`\n  Tie escalated to judge (no auto-resolution)`);
+          break;
+        }
+      }
+    }
+
+    return {
+      winner,
+      votes,
+      round: this.config.maxRounds,
+      reached: winner !== null,
+      voteDistribution: distribution,
+      totalVoters,
+      tiebroken,
+    };
+  }
+
+  private countVotes(votes: Vote[]): Record<string, number> {
+    const counts: Record<string, number> = {};
+    for (const v of votes) {
+      counts[v.option] = (counts[v.option] || 0) + 1;
+    }
+    return counts;
+  }
+
+  private printVotes(votes: Vote[]): void {
+    for (const v of votes) {
+      console.log(`  ${v.agentId}: ${v.option} (confidence: ${v.confidence.toFixed(2)})`);
+    }
+    const dist = this.countVotes(votes);
+    console.log(`  Distribution: ${JSON.stringify(dist)}`);
+  }
+}
+
+// ─── Main ───────────────────────────────────────────────────────────────────
+
+const engine1 = new ConsensusEngine(
+  ["voter-alpha", "voter-beta", "voter-gamma", "voter-delta", "voter-epsilon"],
+  ["option-A", "option-B", "option-C"],
+  {
+    quorumThreshold: 0.67,
+    winThreshold: 0.51,
+    maxRounds: 3,
+    tiebreakerStrategy: "predefined",
+    tiebreakerAgentId: "voter-alpha",
+  },
+);
+
+console.log("╔══════════════════════════════════════════╗");
+console.log("║      Consensus Vote Simulation           ║");
+console.log("╚══════════════════════════════════════════╝");
+
+console.log("\nConfiguration:");
+console.log(`  Quorum: ${engine1["config"].quorumThreshold * 100}%`);
+console.log(`  Win threshold: ${engine1["config"].winThreshold * 100}%`);
+console.log(`  Max rounds: ${engine1["config"].maxRounds}`);
+
+const result1 = await engine1.reachConsensus("Select the best database migration strategy");
+
+console.log("\n── Result ──");
+console.log(JSON.stringify({
+  winner: result1.winner,
+  reached: result1.reached,
+  round: result1.round,
+  distribution: result1.voteDistribution,
+  tiebroken: result1.tiebroken,
+}, null, 2));
+
+// ─── Test tie-breaking scenario ─────────────────────────────────────────────
+
+console.log("\n\n═══ Tie-Breaking Scenario ═══\n");
+
+const engine2 = new ConsensusEngine(
+  ["voter-1", "voter-2", "voter-3", "voter-4"],
+  ["deploy-now", "wait", "cancel"],
+  {
+    quorumThreshold: 0.5,
+    winThreshold: 0.5,
+    maxRounds: 1,
+    tiebreakerStrategy: "random",
+  },
+);
+
+const result2 = await engine2.reachConsensus("Deploy decision for v2.3.1");
+console.log("\n── Result ──");
+console.log(JSON.stringify({
+  winner: result2.winner,
+  reached: result2.reached,
+  distribution: result2.voteDistribution,
+  tiebroken: result2.tiebroken,
+}, null, 2));
+```
+
+---
+
+## 3. Summary
+
+- **Supervisor loops** use a central orchestrator that decomposes tasks, dispatches to workers, and aggregates results. Best for well-structured problems with clear subtask boundaries.
+- **Debate loops** produce higher-quality reasoning through adversarial argumentation. A judge evaluates clarity, evidence, logic, and responsiveness. Best for open-ended questions and critical decisions.
+- **Negotiation loops** model resource exchange between agents with different utility functions. Concession strategies (Boulware, Conceder, Tit-for-Tat) control the pace of convergence. Best for resource allocation and compromise scenarios.
+- **Consensus loops** use BFT-style voting to reach agreement despite faulty agents. Quorum thresholds determine fault tolerance. Tie-breaking strategies handle split outcomes. Best for decisions requiring broad agreement.
+- **Swarm loops** achieve emergent coordination from simple per-agent rules with no central control. Stigmergy and pheromone maps enable indirect communication. Best for large-scale exploration and optimization problems.
+
+---
+
+## 4. Exercises
+
+### 4.1 Review
+
+1. Describe the six steps of the supervisor loop. What happens when a worker fails?
+2. Explain the role of the judge in a debate loop. What criteria should the judge evaluate?
+3. Define the negotiation set and Pareto frontier in the context of multi-agent negotiation.
+4. What is the minimum number of agents needed to tolerate 2 Byzantine faults? Show the formula.
+5. How does stigmergy enable emergent coordination in swarm loops?
+
+### 4.2 Application
+
+6. Design a supervisor loop for a code review system with three workers: a linter agent, a security agent, and a style agent. The supervisor must produce a unified review report. Write the aggregation function that merges findings from all three workers and resolves conflicts when workers disagree.
+
+7. Implement a **NegotiationLoop** with two agents trading API rate limit allocations. Agent X needs more read quota; Agent Y needs more write quota. The total pool is 1000 requests/minute. Each agent has a reservation price (minimum quota they need to function). Agents exchange proposals and concede over up to 5 rounds. Output the final allocation and which agent conceded more.
+
+8. Extend the `ConsensusVote` example to include a **WeightedVoter** subclass where agents have different voting weight based on expertise. For example, a senior architect's vote counts as 3, while a junior developer's counts as 1. The win threshold must consider weighted votes, not raw counts. Implement weighted quorum calculation and weighted tie-breaking.
+
+### 4.3 Challenge
+
+9. **Build a SwarmSearchEngine.** Design and implement a TypeScript class `SwarmSearchEngine` that:
+   - Maintains N explorer agents (configurable, default 5)
+   - Each explorer searches a solution space by sampling random points and scoring them
+   - Explorers share findings through a **pheromone map**: a `Map<string, { score: number; visitCount: number; lastVisited: number }>`
+   - Each explorer biases its next search toward high-pheromone regions (80% probability) but occasionally explores randomly (20% probability — exploration rate)
+   - Pheromone evaporates over time: every `evaporateIntervalMs`, all pheromone scores decay by `evaporationRate` (default 0.1)
+   - When an explorer finds a score higher than the global best, it deposits extra pheromone (positive feedback)
+   - After `maxIterations` total iterations across all explorers, the swarm returns the best solution found
+
+   Test `SwarmSearchEngine` on a simple objective function: given a string, score it by how close it is to the target string `"production_agent_loop"` (Levenshtein distance, inverted). Run with 5 explorers, 50 iterations each, and print the best string found along with its score.

@@ -109,6 +109,7 @@ nav:
   - "📄 Resume": resume.md
   - "📚 AI/ML Study Portal": ai-ml-study.html
   - "🗺️ Roadmap": roadmap.md
+  - "🔥 Trending": trending.md
   - "🤖 AI Engineering":
     - Overview: ai-engineering-from-scratch/README.md
     - About: references/ai-engineering/about.md

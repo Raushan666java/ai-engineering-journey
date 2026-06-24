@@ -1,134 +1,614 @@
-# Quality Management
+# Software Quality Management
 
 ## Learning Objectives
 
-After completing this chapter, the student will be able to: explain the principles of software quality management; describe the requirements of ISO 9001 for software organisations; describe the five maturity levels of the Capability Maturity Model Integration; explain the Six Sigma approach and the DMAIC cycle; define quality metrics including defect density, mean time between failures, and customer satisfaction; distinguish between walkthroughs, inspections, and technical reviews; and describe approaches to continuous process improvement.
+After completing this chapter, the student will be able to:
+- Explain the three components of software quality management
+- Apply quality standards (ISO 9001, CMMI, ISO 25010) to software projects
+- Differentiate between software quality assurance (QA) and quality control (QC)
+- Use quality review techniques including inspections and walkthroughs
+- Implement static analysis metrics and tools in TypeScript
+- Apply statistical process control to software quality
+- Measure quality using ISO 25010 characteristics
 
 ## Theory
 
-![Quality Management Framework](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-09-quality-management.png)
+### What is Software Quality?
 
-### The Concept of Software Quality
+Software quality is the degree to which a software product satisfies stated and implied needs. Quality is not merely the absence of defects — it encompasses the entire user experience, maintainability, performance, and security.
 
-Software quality has been defined in multiple ways. The transcendental view sees quality as something that can be recognised but not defined. The user view sees quality as fitness for purpose. The manufacturing view sees quality as conformance to specification. The product view sees quality as the presence of desirable attributes. The value-based view sees quality as the degree to which a product provides value for its cost.
+```mermaid
+graph TD
+    subgraph "Quality Management System"
+        QP[Quality Planning] --> QA[Quality Assurance]
+        QA --> QC[Quality Control]
+        QC --> QM[Quality Management]
+    end
+    
+    QP --> |Define| STANDARDS[Standards & Procedures]
+    QA --> |Process Compliance| AUDITS[Process Audits]
+    QC --> |Product Verification| TEST[Testing & Reviews]
+    QM --> |Continuous Improvement| FEEDBACK[Feedback Loops]
+```
 
-A comprehensive definition is provided by ISO 25010, which defines quality in terms of eight characteristics: functional suitability, performance efficiency, compatibility, usability, reliability, security, maintainability, and portability. Each characteristic is further divided into subcharacteristics. This model provides a framework for specifying and evaluating software quality.
+### The Three Components of Quality Management
 
-### Quality Management Principles
+| Component | Focus | Activities | Verifies |
+|-----------|-------|------------|----------|
+| **Quality Planning** | Future quality activities | Define standards, set quality goals, identify processes | Plans |
+| **Quality Assurance (QA)** | Process compliance | Audits, process checks, training | Processes |
+| **Quality Control (QC)** | Product quality | Reviews, testing, static analysis | Products |
 
-Quality management encompasses three primary activities: quality assurance, which defines the processes and standards to be followed; quality planning, which selects appropriate quality procedures and standards for a project and defines how they will be implemented; and quality control, which monitors the software and its development to ensure that it conforms to planned quality standards.
+### Quality Standards and Models
 
-The fundamental premise of quality management in software is the prevention principle: it is more cost-effective to prevent defects than to detect and correct them. This principle motivates investment in activities such as requirements validation, design review, and static analysis.
+#### ISO 9001
 
-### ISO 9001
+ISO 9001 is a general quality management standard applicable to any organisation. Key principles relevant to software:
 
-ISO 9001 is an international standard that specifies requirements for a quality management system. While it is not specific to software, ISO 9001 can be applied to software development organisations. The standard is based on quality management principles including customer focus, leadership, engagement of people, process approach, improvement, evidence-based decision making, and relationship management.
+- **Customer focus:** Understanding customer needs
+- **Leadership:** Establishing quality vision
+- **Engagement of people:** Involving all team members
+- **Process approach:** Managing activities as processes
+- **Improvement:** Continuous improvement focus
+- **Evidence-based decision making:** Data-driven quality
+- **Relationship management:** Managing supplier relationships
 
-ISO 9001 requires organisations to: establish a quality policy and quality objectives; document their quality management system; plan and control processes; manage resources; plan and implement product realisation; measure, analyse, and improve processes; and conduct internal audits and management reviews.
+#### CMMI (Capability Maturity Model Integration)
 
-Certification to ISO 9001 demonstrates that an organisation has implemented a compliant quality management system. However, certification does not guarantee the quality of any specific product â€” it indicates that the organisation follows defined processes.
+```mermaid
+graph LR
+    L1[Level 1: Initial] --> L2[Level 2: Managed]
+    L2 --> L3[Level 3: Defined]
+    L3 --> L4[Level 4: Quantitatively Managed]
+    L4 --> L5[Level 5: Optimising]
+    
+    style L1 fill:#ff6b6b,color:#fff
+    style L2 fill:#ffa726,color:#fff
+    style L3 fill:#ffd54f,color:#000
+    style L4 fill:#66bb6a,color:#fff
+    style L5 fill:#2196f3,color:#fff
+```
 
-### Capability Maturity Model Integration
+| Level | Name | Characteristics |
+|-------|------|-----------------|
+| 1 | Initial | Processes unpredictable, ad hoc, reactive |
+| 2 | Managed | Project-level processes, basic project management |
+| 3 | Defined | Organisation-wide standard processes |
+| 4 | Quantitatively Managed | Process measured and controlled statistically |
+| 5 | Optimising | Continuous process improvement |
 
-CMMI is a process improvement framework developed by the Software Engineering Institute. It provides a structured approach for assessing and improving an organisation's software processes. CMMI defines five maturity levels.
+#### ISO/IEC 25010 Quality Model
 
-Level 1 â€” Initial: Processes are ad hoc, chaotic, and reactive. Success depends on individual heroics rather than organisational capability. There are no defined processes, and the organisation cannot reliably repeat successful projects.
+ISO 25010 (replacing ISO 9126) defines eight quality characteristics:
 
-Level 2 â€” Managed: Basic project management processes are established. Projects are planned, performed, measured, and controlled. The organisation can repeat successful practices from similar projects. Requirements management, project planning, project monitoring and control, supplier agreement management, measurement and analysis, process and product quality assurance, and configuration management are practised.
+```mermaid
+graph TD
+    SW[Software Product Quality] --> FSU[Functional Suitability]
+    SW --> REL[Reliability]
+    SW --> PER[Performance Efficiency]
+    SW --> OPE[Operability]
+    SW --> SEC[Security]
+    SW --> COM[Compatibility]
+    SW --> MAI[Maintainability]
+    SW --> POR[Portability]
+    
+    FSU --> FS1[Functional Completeness]
+    FSU --> FS2[Functional Correctness]
+    FSU --> FS3[Functional Appropriateness]
+    
+    REL --> RE1[Maturity]
+    REL --> RE2[Availability]
+    REL --> RE3[Fault Tolerance]
+    REL --> RE4[Recoverability]
+    
+    MAI --> MA1[Modularity]
+    MAI --> MA2[Reusability]
+    MAI --> MA3[Analysability]
+    MAI --> MA4[Modifiability]
+    MAI --> MA5[Testability]
+```
 
-Level 3 â€” Defined: Processes are documented, standardised, and integrated across the organisation. All projects use approved customisations of the organisation's standard processes. The organisation has a defined process asset library, and processes are tailored per project.
+### Quality Assurance vs Quality Control
 
-Level 4 â€” Quantitatively Managed: Quantitative objectives for quality and process performance are established and used to manage projects. Subprocesses are selected and controlled using statistical techniques. The organisation can predict process performance within established bounds.
+| Aspect | Quality Assurance | Quality Control |
+|--------|-------------------|-----------------|
+| **Orientation** | Process-oriented | Product-oriented |
+| **Timing** | Prevention (before) | Detection (during/after) |
+| **Focus** | How work is done | What is produced |
+| **Activities** | Audits, training, process definition | Testing, inspections, reviews |
+| **Goal** | Prevent defects | Find defects |
 
-Level 5 â€” Optimising: The organisation continuously improves its processes based on quantitative understanding. Process improvement is institutionalised as a core organisational competency. The organisation can rapidly adapt to changes and exploit improvement opportunities.
+### Quality Reviews: Inspections and Walkthroughs
 
-CMMI is available in two representations: staged, which uses the five maturity levels, and continuous, which uses capability levels for individual process areas. The staged representation provides a roadmap for process improvement, while the continuous representation allows organisations to target specific process areas.
+#### Fagan Inspections
 
-### Six Sigma
+A structured, formal review process developed by Michael Fagan at IBM:
 
-Six Sigma is a data-driven methodology for eliminating defects and reducing variation in processes. The term "Six Sigma" refers to a statistical target â€” 3.4 defects per million opportunities â€” which corresponds to six standard deviations between the process mean and the nearest specification limit.
+| Phase | Activities | Participants |
+|-------|------------|--------------|
+| **Planning** | Select material, schedule, assign roles | Moderator |
+| **Overview** | Author introduces the material | All reviewers |
+| **Preparation** | Individual review of material | All reviewers |
+| **Inspection Meeting** | Systematic defect detection | All participants |
+| **Rework** | Fix defects | Author |
+| **Follow-up** | Verify fixes are correct | Moderator |
 
-The DMAIC cycle is the core improvement methodology of Six Sigma: Define, where the problem, goals, and project scope are defined; Measure, where baseline data is collected and the current process performance is quantified; Analyse, where root causes of defects are identified through data analysis; Improve, where solutions are designed and implemented to address root causes; and Control, where the improved process is monitored to sustain the gains.
+**Inspection Roles:**
+- **Moderator:** Leads the inspection, ensures process compliance
+- **Author:** Creator of the work product
+- **Reviewers:** Domain experts who examine the product
+- **Recorder:** Documents defects and decisions
 
-Six Sigma roles include: Champions, who sponsor and support improvement projects; Master Black Belts, who serve as coaches and experts; Black Belts, who lead improvement projects full-time; and Green Belts, who participate in projects while maintaining their regular responsibilities.
+#### Walkthroughs vs Inspections
 
-### Quality Metrics
+| Aspect | Walkthrough | Inspection |
+|--------|-------------|------------|
+| Formality | Informal | Formal |
+| Preparation time | Minimal | Significant |
+| Data collection | None | Detailed defect data |
+| Meeting length | Longer (presentation) | Shorter (focused) |
+| Best for | Education, consensus | Defect detection |
+| Defect detection rate | Low (~20%) | High (~70%) |
 
-Quality metrics provide quantitative data for assessing and controlling quality.
+### Static Analysis
 
-Defect density measures the number of defects per unit of product size, typically per thousand lines of code or per function point. It can be used to compare the quality of different modules or to track quality trends over time.
+Static analysis examines source code without executing it. Modern tools detect bug patterns, security vulnerabilities, style violations, and maintainability issues.
 
-Mean time between failures (MTBF) measures the average time between system failures. It is used primarily for reliability assessment in operational systems. Related metrics include mean time to failure (MTTF) and mean time to repair (MTTR).
+**Types of static analysis:**
 
-Customer satisfaction metrics are collected through surveys that measure attributes such as product reliability, usability, performance, and support quality. The Net Promoter Score (NPS) measures the likelihood that customers would recommend the product.
+| Type | Checks | Example Tools |
+|------|--------|---------------|
+| Style | Code formatting, naming conventions | ESLint, Prettier |
+| Bug patterns | Null pointers, type mismatches, dead code | TypeScript compiler, SonarQube |
+| Security | Injection, XSS, hardcoded secrets | CodeQL, Semgrep |
+| Complexity | Cyclomatic complexity, depth of inheritance | SonarQube, Plato |
+| Duplication | Copy-paste detection | PMD-CPD, jscpd |
 
-### Reviews
+**Cyclomatic Complexity:** `M = E - N + 2P`
 
-Software reviews are a static verification technique in which the software work products are examined by people other than the author. Reviews are the most effective technique for detecting defects in requirements and design artefacts.
+Where E = number of edges, N = number of nodes, P = number of connected components in the control flow graph.
 
-Walkthroughs are informal reviews where the author presents the work product to colleagues. The presentation is unstructured, and the goal is to find defects and to familiarise participants with the work product. Walkthroughs are low-cost and easy to organise.
+| Cyclomatic Complexity | Risk Assessment |
+|----------------------|-----------------|
+| 1-10 | Simple, low risk |
+| 11-20 | Moderate complexity |
+| 21-50 | High risk, difficult to test |
+| 50+ | Untestable, must refactor |
 
-Technical reviews are more formal than walkthroughs. The review team, which includes peers and possibly management, examines the work product against defined criteria. A technical review verifies that the work product meets its specification and conforms to standards.
+### Statistical Process Control (SPC)
 
-Inspections are the most formal review technique, following a defined process with trained moderators, defined roles, and formal documentation of defects. The inspection process comprises: planning, where the moderator selects the inspection team and distributes the work product; overview, where the author presents background; preparation, where each inspector examines the work product individually; the inspection meeting, where defects are identified and recorded; rework, where the author corrects defects; and follow-up, where the moderator verifies corrections.
+SPC uses statistical methods to monitor and control process quality. In software, it is applied to defect rates, test pass rates, and cycle times.
 
-Fagan inspections, developed at IBM, are the original formal inspection methodology. Their effectiveness has been extensively validated: inspections can detect sixty to ninety per cent of defects in inspected artefacts.
+**Key SPC concepts:**
+- **Control limits:** Upper (UCL) and lower (LCL) boundaries for acceptable variation
+- **Common cause variation:** Natural process variation (expected)
+- **Special cause variation:** Unusual events requiring investigation
+- **Defect density:** `Defects per KLOC` or `Defects per FP`
 
-### Process Improvement
+```mermaid
+graph LR
+    subgraph "Control Chart"
+        UCL[Upper Control Limit] ---
+        MEAN[Mean] ---
+        LCL[Lower Control Limit]
+    end
+    DATA[Data Points] --> PLOT[Plot on Chart]
+    PLOT --> CHECK{Within Limits?}
+    CHECK -->|Yes| COMMON[Common Cause - Process Stable]
+    CHECK -->|No| SPECIAL[Special Cause - Investigate]
+```
 
-Process improvement is the systematic approach to increasing an organisation's capability to deliver quality software. The IDEAL model, from the SEI, provides a five-phase improvement framework: Initiating, where the improvement infrastructure is established; Diagnosing, where the current process maturity is assessed; Establishing, where improvement plans are developed; Acting, where improvements are implemented; and Leveraging, where lessons are learned and improvements are institutionalised.
+## Practical Takeaways
+
+1. **Quality must be planned, not inspected in** — allocate dedicated time for quality activities
+2. **Process quality drives product quality** — fix the process, and product defects decrease
+3. **Inspections catch defects cheaper than testing** — the cost of fixing a bug increases exponentially through the lifecycle
+4. **Static analysis is cheap insurance** — run linters and vulnerability scanning as part of CI
+5. **Track quality metrics over time** — trends reveal process degradation before it becomes critical
+6. **Automate quality checks** — manual quality control does not scale
 
 ## Examples
 
-### Case Study: CMMI Level 5 Organisation
+### Example 1: Quality Metric Collector
 
-A defence software contractor achieved CMMI Level 5 certification. At Level 5, the organisation used statistical process control on key subprocesses, maintained a quantitative process database, and continuously improved productivity and quality. Defect density was reduced from 2.5 defects per KLOC to 0.4 defects per KLOC over three years.
+```typescript
+interface QualityMetrics {
+  cyclomaticComplexity: number;
+  linesOfCode: number;
+  commentDensity: number; // as decimal
+  testCoverage: number;   // as decimal
+  duplicateCodeRate: number; // as decimal
+}
 
-### Template: Inspection Checklist for Requirements
+interface QualityGates {
+  maxComplexity: number;
+  minCoverage: number;
+  maxDuplication: number;
+}
 
-- Is each requirement uniquely identified?
-- Is each requirement testable?
-- Are terms defined consistently throughout?
-- Are all stakeholder categories represented?
-- Are conflicts between requirements resolved?
-- Is the rationale for each requirement documented?
-- Are performance requirements expressed quantitatively?
-- Are boundary conditions specified?
+class QualityAggregator {
+  private readonly gates: QualityGates;
 
-### Template: Quality Metrics Dashboard
+  constructor(gates: QualityGates) {
+    this.gates = gates;
+  }
 
-| Metric | Target | Current | Trend |
-|--------|--------|---------|-------|
-| Defect density (per KLOC) | < 1.0 | 0.8 | Improving |
-| Test coverage | > 85% | 82% | Stable |
-| Build success rate | > 95% | 97% | Improving |
-| Customer satisfaction | > 4.0 | 4.2 | Stable |
+  public evaluate(metrics: QualityMetrics): {
+    passed: boolean;
+    violations: string[];
+    score: number;
+  } {
+    const violations: string[] = [];
+
+    if (metrics.cyclomaticComplexity > this.gates.maxComplexity) {
+      violations.push(
+        `Complexity ${metrics.cyclomaticComplexity} exceeds ${this.gates.maxComplexity}`
+      );
+    }
+    if (metrics.testCoverage < this.gates.minCoverage) {
+      violations.push(
+        `Coverage ${(metrics.testCoverage * 100).toFixed(1)}% below ${(this.gates.minCoverage * 100).toFixed(0)}%`
+      );
+    }
+    if (metrics.duplicateCodeRate > this.gates.maxDuplication) {
+      violations.push(
+        `Duplication ${(metrics.duplicateCodeRate * 100).toFixed(1)}% exceeds ${(this.gates.maxDuplication * 100).toFixed(0)}%`
+      );
+    }
+
+    // Composite score (0-100)
+    const complexityScore = Math.max(
+      0,
+      100 - (metrics.cyclomaticComplexity / this.gates.maxComplexity) * 100
+    );
+    const coverageScore = metrics.testCoverage / this.gates.minCoverage * 100;
+    const duplicationScore = Math.max(
+      0,
+      100 - (metrics.duplicateCodeRate / this.gates.maxDuplication) * 100
+    );
+    const score = Math.round(
+      (complexityScore * 0.3 + coverageScore * 0.4 + duplicationScore * 0.3)
+    );
+
+    return {
+      passed: violations.length === 0,
+      violations,
+      score,
+    };
+  }
+}
+```
+
+### Example 2: Cyclomatic Complexity Calculator
+
+```typescript
+enum NodeType {
+  SEQUENCE,
+  DECISION,   // if, ternary, switch
+  LOOP,       // for, while, do-while
+  LOGICAL,    // &&, ||
+  CATCH,      // exception handler
+}
+
+interface ControlFlowNode {
+  id: number;
+  type: NodeType;
+  children: number[];
+}
+
+class ComplexityAnalyzer {
+  public calculate(nodes: ControlFlowNode[]): number {
+    // M = E - N + 2P
+    const edges = nodes.reduce((sum, n) => sum + n.children.length, 0);
+    const vertexCount = nodes.length;
+
+    // Count decision predicates for additional precision
+    const predicateCount = nodes.filter(
+      (n) =>
+        n.type === NodeType.DECISION ||
+        n.type === NodeType.LOOP ||
+        n.type === NodeType.CATCH
+    ).length;
+
+    // For a single connected component (P=1):
+    const cyclomatic = edges - vertexCount + 2;
+    // Alternative: 1 + predicateCount
+    const alternativeFormula = 1 + predicateCount;
+
+    return Math.max(cyclomatic, alternativeFormula);
+  }
+
+  public static async analyzeFile(
+    sourceCode: string
+  ): Promise<{ function: string; complexity: number; risk: string }[]> {
+    // Simplified parser: counts control flow keywords
+    const lines = sourceCode.split('\n');
+    const functions: { function: string; complexity: number; risk: string }[] = [];
+    let currentFunction = '';
+    let predicates = 0;
+    let inFunction = false;
+
+    for (const line of lines) {
+      const trimmed = line.trim();
+
+      if (trimmed.startsWith('function ') || trimmed.match(/^\w+\s*\(.*\)\s*{/)) {
+        if (inFunction) {
+          functions.push({
+            function: currentFunction,
+            complexity: predicates + 1,
+            risk: this.riskLevel(predicates + 1),
+          });
+        }
+        currentFunction = trimmed.split('{')[0].trim();
+        predicates = 0;
+        inFunction = true;
+      }
+
+      if (inFunction) {
+        if (trimmed.startsWith('if ') || trimmed.startsWith('else if ')) predicates++;
+        if (trimmed.startsWith('for ') || trimmed.startsWith('while ')) predicates++;
+        if (trimmed.startsWith('case ')) predicates++;
+        if (trimmed.match(/\|\||&&/)) predicates++;
+        if (trimmed.startsWith('catch ')) predicates++;
+      }
+
+      if (trimmed === '}' && inFunction) {
+        functions.push({
+          function: currentFunction,
+          complexity: predicates + 1,
+          risk: this.riskLevel(predicates + 1),
+        });
+        inFunction = false;
+      }
+    }
+
+    return functions;
+  }
+
+  private static riskLevel(complexity: number): string {
+    if (complexity <= 10) return 'Low';
+    if (complexity <= 20) return 'Moderate';
+    if (complexity <= 50) return 'High';
+    return 'Untestable';
+  }
+}
+```
+
+### Example 3: Inspection Defect Logger
+
+```typescript
+type DefectSeverity = 'major' | 'minor' | 'cosmetic';
+type DefectType =
+  | 'logic_error'
+  | 'interface_error'
+  | 'data_error'
+  | 'documentation_error'
+  | 'standards_violation'
+  | 'performance_issue';
+
+interface Defect {
+  id: string;
+  inspectionId: string;
+  location: string;
+  description: string;
+  severity: DefectSeverity;
+  defectType: DefectType;
+  finder: string;
+  status: 'open' | 'rework_done' | 'verified' | 'rejected';
+}
+
+class InspectionManager {
+  private defects: Defect[] = [];
+
+  public logDefect(
+    inspectionId: string,
+    location: string,
+    description: string,
+    severity: DefectSeverity,
+    defectType: DefectType,
+    finder: string
+  ): Defect {
+    const defect: Defect = {
+      id: `DEF-${this.defects.length + 1}`,
+      inspectionId,
+      location,
+      description,
+      severity,
+      defectType,
+      finder,
+      status: 'open',
+    };
+    this.defects.push(defect);
+    return defect;
+  }
+
+  public getInspectionStats(inspectionId: string): {
+    total: number;
+    bySeverity: Record<DefectSeverity, number>;
+    byType: Record<DefectType, number>;
+  } {
+    const relevant = this.defects.filter((d) => d.inspectionId === inspectionId);
+
+    const bySeverity = { major: 0, minor: 0, cosmetic: 0 };
+    const byType = {
+      logic_error: 0, interface_error: 0, data_error: 0,
+      documentation_error: 0, standards_violation: 0, performance_issue: 0,
+    };
+
+    for (const d of relevant) {
+      bySeverity[d.severity]++;
+      byType[d.defectType]++;
+    }
+
+    return { total: relevant.length, bySeverity, byType };
+  }
+
+  public defectDensity(inspectionId: string, ksloc: number): number {
+    const relevant = this.defects.filter((d) => d.inspectionId === inspectionId);
+    return relevant.length / ksloc;
+  }
+
+  public generateReport(): string {
+    const total = this.defects.length;
+    const open = this.defects.filter((d) => d.status !== 'verified').length;
+    const majorCount = this.defects.filter((d) => d.severity === 'major').length;
+
+    return [
+      '=== Inspection Report ===',
+      `Total Defects Found: ${total}`,
+      `Open Defects: ${open}`,
+      `Critical/Major Defects: ${majorCount}`,
+      `Defect Closure Rate: ${(((total - open) / total) * 100).toFixed(1)}%`,
+      '---',
+      this.defects.map((d) =>
+        `  ${d.id} | ${d.severity.toUpperCase()} | ${d.location} | ${d.description} | ${d.status}`
+      ).join('\n'),
+    ].join('\n');
+  }
+}
+```
+
+### Example 4: Quality Dashboard Data Generator
+
+```typescript
+interface QualitySnapshot {
+  timestamp: Date;
+  codeCoverage: number;
+  cyclomaticComplexity: number;
+  technicalDebtRatio: number;
+  blockerIssues: number;
+  criticalIssues: number;
+  testCount: number;
+  testFailures: number;
+}
+
+class QualityTrendAnalyzer {
+  private snapshots: QualitySnapshot[] = [];
+
+  public recordSnapshot(data: Omit<QualitySnapshot, 'timestamp'>): void {
+    this.snapshots.push({ ...data, timestamp: new Date() });
+  }
+
+  public getCoverageTrend(): { direction: 'improving' | 'declining' | 'stable'; rate: number } {
+    const recent = this.snapshots.slice(-10);
+    if (recent.length < 3) return { direction: 'stable', rate: 0 };
+
+    const first = recent[0].codeCoverage;
+    const last = recent[recent.length - 1].codeCoverage;
+    const change = last - first;
+    const rate = change / recent.length;
+
+    return {
+      direction: rate > 0.01 ? 'improving' : rate < -0.01 ? 'declining' : 'stable',
+      rate,
+    };
+  }
+
+  public getQualityGateStatus(thresholds: {
+    minCoverage: number;
+    maxComplexity: number;
+    maxBlockerIssues: number;
+  }): { passed: boolean; summary: string } {
+    if (this.snapshots.length === 0) {
+      return { passed: false, summary: 'No quality data available' };
+    }
+
+    const latest = this.snapshots[this.snapshots.length - 1];
+    const failures: string[] = [];
+
+    if (latest.codeCoverage < thresholds.minCoverage) {
+      failures.push(
+        `Coverage ${(latest.codeCoverage * 100).toFixed(1)}% < ${(thresholds.minCoverage * 100).toFixed(0)}%`
+      );
+    }
+    if (latest.cyclomaticComplexity > thresholds.maxComplexity) {
+      failures.push(
+        `Complexity ${latest.cyclomaticComplexity} > ${thresholds.maxComplexity}`
+      );
+    }
+    if (latest.blockerIssues > thresholds.maxBlockerIssues) {
+      failures.push(
+        `Blocker issues ${latest.blockerIssues} > ${thresholds.maxBlockerIssues}`
+      );
+    }
+
+    return {
+      passed: failures.length === 0,
+      summary: failures.length > 0
+        ? `Quality gate failed: ${failures.join('; ')}`
+        : 'Quality gate passed',
+    };
+  }
+}
+```
+
+## Chapter Quiz
+
+**Q1: What is the primary difference between quality assurance and quality control?**
+- A) QA is cheaper than QC
+- B) QA focuses on process, QC focuses on product
+- C) QA is done by testers, QC by developers
+- D) QA uses automated tools, QC uses manual review
+
+**Answer: B** — QA ensures processes are followed; QC verifies product quality.
+
+**Q2: The CMMI level that requires organisation-wide standard processes is:**
+- A) Level 2 (Managed)
+- B) Level 3 (Defined)
+- C) Level 4 (Quantitatively Managed)
+- D) Level 5 (Optimising)
+
+**Answer: B** — Level 3 establishes standard processes across the organisation.
+
+**Q3: In Fagan inspections, the participant who leads the process is called the:**
+- A) Author
+- B) Reviewer
+- C) Moderator
+- D) Recorder
+
+**Answer: C** — The moderator leads the inspection and ensures process compliance.
+
+**Q4: What cyclomatic complexity value is considered high risk and difficult to test?**
+- A) 1-10
+- B) 11-20
+- C) 21-50
+- D) 50+
+
+**Answer: C** — Cyclomatic complexity 21-50 is high risk.
+
+**Q5: ISO 25010 defines how many quality characteristics?**
+- A) 5
+- B) 6
+- C) 8
+- D) 10
+
+**Answer: C** — ISO 25010 defines eight characteristics: functional suitability, reliability, performance efficiency, operability, security, compatibility, maintainability, portability.
 
 ## Summary
 
-Software quality management encompasses quality assurance, planning, and control. ISO 9001 provides a framework for quality management systems. CMMI defines five maturity levels for process improvement, from Initial to Optimising. Six Sigma and DMAIC provide a data-driven approach to defect reduction. Quality metrics enable objective measurement of product and process quality. Reviews â€” walkthroughs, technical reviews, and inspections â€” are the most effective techniques for detecting defects in early work products. Continuous process improvement is essential for organisational growth.
+Software quality management encompasses three interrelated components: quality planning defines the approach, quality assurance ensures processes are followed, and quality control verifies product quality. Standards like ISO 9001 provide general quality frameworks, while CMMI offers staged maturity levels from ad hoc (Level 1) to continuously improving (Level 5). ISO 25010 defines eight quality characteristics for software products. Formal inspections such as Fagan inspections detect up to 70% of defects before testing. Static analysis tools measure code metrics like cyclomatic complexity, which predicts testability. Statistical process control distinguishes common cause variation from special cause events. Automated quality gates integrated into CI/CD pipelines prevent quality degradation.
 
 ## Exercises
 
 ### Review Questions
 
-1. What are the eight quality characteristics defined by ISO 25010?
-2. Distinguish between quality assurance and quality control.
-3. What are the seven quality management principles underlying ISO 9001?
-4. Describe the five maturity levels of CMMI.
-5. What distinguishes Level 3 (Defined) from Level 4 (Quantitatively Managed)?
-6. State the Six Sigma target in defects per million opportunities.
-7. Describe the five phases of the DMAIC cycle.
-8. How does an inspection differ from a walkthrough?
-9. List the roles in a Fagan inspection.
-10. Describe the five phases of the IDEAL improvement model.
+1. What are the three components of software quality management?
+2. Explain the five levels of the CMMI maturity model.
+3. List the eight quality characteristics defined by ISO 25010.
+4. Describe the six phases of a Fagan inspection.
+5. What is the difference between a walkthrough and an inspection?
+6. Write the formula for cyclomatic complexity and explain each term.
+7. What is the difference between common cause and special cause variation?
+8. What is defect density and how is it calculated?
 
 ### Application Problems
 
-1. An organisation at CMMI Level 2 wants to advance to Level 3. Identify the process areas that must be addressed and describe the changes required.
-2. A project has a defect density of 3.2 per KLOC at the end of system testing. Industry benchmarks suggest a target of 0.5 per KLOC for the type of product being developed. Develop a Six Sigma DMAIC plan to achieve the target.
-3. Design a quality management plan for a medical device software project. Address quality standards, review processes, testing strategy, and metrics. Consider the regulatory requirements of FDA or equivalent bodies.
+1. Design a quality plan for a team developing a medical device software system (IEC 62304 regulated). Include quality standards, review frequency, metrics to collect, and acceptance criteria.
+
+2. Calculate cyclomatic complexity for a function with the following control flow: sequential entry, one if-else, two nested for loops, one switch with four cases, and one catch block. Provide the control flow graph.
+
+3. Using the quality metric collector, evaluate a project with complexity 14, coverage 72%, and duplication 8% against gates of max complexity 12, min coverage 80%, and max duplication 5%. Report violations and overall score.
 
 ### Challenge Problem
 
-A medium-sized software company (200 employees) is struggling with quality problems. Customer support tickets are rising, software releases frequently introduce regressions, and the development team is spending increasing time on rework rather than new features. The company has no formal quality management system. The CEO has asked you to develop a comprehensive quality improvement programme. Propose a staged approach that delivers visible improvements within six months while building toward long-term organisational maturity. Address how you will gain buy-in from developers who resist formal processes, what metrics you will use to demonstrate improvement, which review practices you will introduce and in what order, and how you will sustain improvements over time. Justify your recommendations with reference to quality management frameworks.
+Your organisation is at CMMI Level 1 and aims to reach CMMI Level 3 within 18 months. The 200-person engineering department is distributed across three continents with different quality cultures. Develop a staged quality improvement plan covering process area implementation (requirements management, project planning, quality assurance, configuration management, measurement and analysis). For each month, specify the process areas to implement, training required, tools to deploy, metrics to collect, and expected outcomes. Include how you will handle resistance to process adoption. Implement a TypeScript program that models the maturity progression and tracks whether milestone criteria are met each month.

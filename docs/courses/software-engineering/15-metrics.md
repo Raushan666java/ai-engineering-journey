@@ -1,136 +1,791 @@
-# Software Metrics
+# Software Metrics and Measurement
 
 ## Learning Objectives
 
-After completing this chapter, the student will be able to: explain the purpose of software measurement; measure product metrics including lines of code, cyclomatic complexity, Halstead metrics, function points, and object-oriented metrics; measure process metrics including defect removal efficiency and process maturity; measure project metrics using earned value analysis and burn-down charts; and interpret metric data to support decision making.
+After completing this chapter, the student will be able to:
+- Distinguish between process, product, and project metrics
+- Measure software size using LOC, function points, and object points
+- Calculate and interpret complexity metrics (cyclomatic, Halstead, coupling)
+- Analyse maintainability using the Maintainability Index
+- Apply GQM (Goal-Question-Metric) to derive meaningful metrics
+- Implement metrics collection and dashboards in TypeScript
+- Interpret metrics to drive process improvement
 
 ## Theory
 
-![Software Metrics Categories](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-15-metrics.png)
+### Why Measure Software?
 
-### The Purpose of Software Measurement
+"If you cannot measure it, you cannot improve it." — Lord Kelvin
 
-Software measurement is the process of assigning numbers to attributes of software products, processes, and projects. Measurement provides the quantitative basis for understanding, controlling, and improving software development.
+Software measurement serves four purposes:
 
-The fundamental axiom of software measurement is that what cannot be measured cannot be controlled or improved. However, measurement is not an end in itself â€” it is a means to support decision making. Metrics must be interpreted in context and used to guide action, not merely to generate numbers.
+```mermaid
+graph TD
+    MEAS[Measurement] --> DESC[Describe: What is happening?]
+    MEAS --> EVAL[Evaluate: How well are we doing?]
+    MEAS --> PRED[Predict: What will happen?]
+    MEAS --> IMPROVE[Improve: How can we get better?]
+    
+    DESC --> BASELINE[Baseline Metrics]
+    EVAL --> KPI[Key Performance Indicators]
+    PRED --> EST[Estimation Models]
+    IMPROVE --> TREND[Trend Analysis]
+```
 
-Software metrics are classified into three categories: product metrics, which measure attributes of the software artefact; process metrics, which measure attributes of the development process; and project metrics, which measure attributes of the project and its environment.
+### Metric Classification
 
-### Product Metrics
+| Category | What it measures | Examples |
+|----------|-----------------|----------|
+| **Product metrics** | Software product characteristics | Size, complexity, defects, performance |
+| **Process metrics** | Development process characteristics | Cycle time, defect injection rate, rework % |
+| **Project metrics** | Project management characteristics | Schedule variance, cost variance, team velocity |
 
-Product metrics quantify characteristics of the software itself, including its size, complexity, and quality.
+### GQM Paradigm (Goal-Question-Metric)
 
-#### Lines of Code
+GQM provides a structured way to derive metrics from goals:
 
-Lines of code (LOC) is the most basic size metric. It measures the physical length of the source code. Variants include: source lines of code (SLOC), which counts only executable source statements; physical lines of code, which counts all lines including blanks and comments; and logical lines of code, which counts statements regardless of layout.
+```mermaid
+graph TD
+    GOAL[Goal: Improve defect detection] --> Q1[Question 1: How many defects are found before release?]
+    GOAL --> Q2[Question 2: Which phase finds the most defects?]
+    GOAL --> Q3[Question 3: How long do defects remain undetected?]
+    
+    Q1 --> M1[Metric: Pre-release defect density]
+    Q1 --> M2[Metric: Post-release defect density]
+    Q2 --> M3[Metric: Defects found per phase]
+    Q2 --> M4[Metric: Phase defect detection rate]
+    Q3 --> M5[Metric: Defect latency (days)]
+```
 
-LOC is easily measured and widely understood, but it is language-dependent, sensitive to coding style, and provides no information about functionality or complexity. LOC should not be used for productivity comparisons across different languages.
+**Applying GQM:**
 
-#### McCabe's Cyclomatic Complexity
+| Level | Example |
+|-------|---------|
+| **Goal** | Improve on-time delivery |
+| **Question 1** | How accurate are our estimates? |
+| Metric 1 | Estimation accuracy (actual / estimated) |
+| Metric 2 | Schedule variance |
+| **Question 2** | What causes schedule overruns? |
+| Metric 3 | Requirements change rate |
+| Metric 4 | Rework percentage |
 
-Cyclomatic complexity, developed by McCabe, measures the complexity of a program's control flow. It is calculated from the program's control flow graph as: M = E - N + 2P, where E is the number of edges, N is the number of nodes, and P is the number of connected components. For a single program, P equals one, giving M = E - N + 2.
+### Size Metrics
 
-Cyclomatic complexity can be more intuitively understood as the number of linearly independent paths through the program. It is also equal to the number of decision points plus one: M = number of decision points + 1. Decision points include conditions in if statements, loops, and case statements.
+#### Lines of Code (LOC)
 
-The value of cyclomatic complexity provides guidance for testing: the value indicates the number of test cases needed to achieve branch coverage. Industry guidelines recommend that cyclomatic complexity should not exceed ten per module. Higher values indicate that the module should be refactored or at least subjected to intensive testing.
+| Type | Counts | Usage |
+|------|--------|-------|
+| **Physical LOC** | All lines, including comments and blanks | Simple counting |
+| **Logical LOC** | Executable statements only | Language-independent comparison |
+| **Source LOC (SLOC)** | Source statements (no comments/blanks) | Productivity measurement |
 
-#### Halstead's Software Science
+**Normalisation:**
 
-Halstead's metrics are based on counting operators and operands in a program. The fundamental counts are: n1, the number of distinct operators; n2, the number of distinct operands; N1, the total number of operator occurrences; and N2, the total number of operand occurrences.
-
-From these counts, Halstead derived: program vocabulary n = n1 + n2; program length N = N1 + N2; program volume V = N * log2(n), which measures the size of the implementation; program difficulty D = (n1 / 2) * (N2 / n2), which measures the difficulty of writing or understanding the program; and effort E = V * D, which measures the mental effort required to develop the program.
-
-The validity of Halstead's metrics has been debated. The counts are sensitive to language and programming style, and the theoretical basis has been questioned. However, the metrics provide insight into the cognitive complexity of code.
+| Measure | Formula |
+|---------|---------|
+| **Productivity** | LOC / person-month |
+| **Defect density** | Defects / KLOC |
+| **Cost per LOC** | Total cost / LOC |
 
 #### Function Points
 
-Function points measure the functional size of a system from the user's perspective. The unadjusted function point count is computed by counting five function types: external inputs, external outputs, external inquiries, internal logical files, and external interface files. Each function type is classified as simple, average, or complex, and assigned a weight.
+As detailed in Chapter 8 (Project Management), function points measure functionality from the user's perspective.
 
-The unadjusted count is adjusted by a value adjustment factor (VAF) computed from fourteen general system characteristics, each rated on a scale of zero to five. The VAF ranges from 0.65 to 1.35. The final function point count is: FP = UFP * VAF.
+| Type | Weight (Simple) | Weight (Average) | Weight (Complex) |
+|------|-----------------|------------------|-----------------|
+| External Input | 3 | 4 | 6 |
+| External Output | 4 | 5 | 7 |
+| External Inquiry | 3 | 4 | 6 |
+| Internal Logical File | 7 | 10 | 15 |
+| External Interface File | 5 | 7 | 10 |
 
-Function points are language-independent, can be estimated from requirements before implementation, and provide a basis for productivity and quality comparisons across projects. However, counting function points requires training and judgment, and function points are less intuitive than lines of code.
+### Complexity Metrics
 
-#### Object-Oriented Metrics
+#### Cyclomatic Complexity (McCabe)
 
-Traditional metrics require adaptation for object-oriented systems. Chidamber and Kemerer proposed six OO metrics: Weighted Methods per Class (WMC), which counts the number of methods in a class; Depth of Inheritance Tree (DIT), which measures the length of the inheritance chain; Number of Children (NOC), which counts immediate subclasses; Coupling Between Objects (CBO), which counts classes coupled to a given class; Response for a Class (RFC), which counts the number of methods that can be invoked in response to a message; and Lack of Cohesion of Methods (LCOM), which measures the degree to which methods share instance variables.
+`M = E - N + 2P`
 
-These metrics provide insights into class complexity, coupling, cohesion, and inheritance depth. Empirically derived thresholds can flag classes that may need redesign.
+Where E = edges, N = nodes, P = connected components.
+
+```mermaid
+graph TD
+    START(Start) --> DECISION{Decision}
+    DECISION -->|True| PATH_A[Path A]
+    DECISION -->|False| PATH_B[Path B]
+    PATH_A --> MERGE(Merge)
+    PATH_B --> MERGE
+    MERGE --> END(End)
+```
+
+**Complexity = 3** (3 decision points: start, decision, merge)
+
+| M | Risk | Test Cases Needed |
+|---|------|-------------------|
+| 1-10 | Low risk, simple | M |
+| 11-20 | Moderate risk | M |
+| 21-50 | High risk | M |
+| 50+ | Untestable | M |
+
+#### Halstead Complexity Metrics
+
+Maurice Halstead's software science metrics measure program vocabulary and length:
+
+| Metric | Formula | Meaning |
+|--------|---------|---------|
+| **n₁** | Unique operators | Program vocabulary richness |
+| **n₂** | Unique operands | Data complexity |
+| **N₁** | Total operators | Program length |
+| **N₂** | Total operands | Data usage |
+| **Vocabulary** | n = n₁ + n₂ | Total vocabulary |
+| **Length** | N = N₁ + N₂ | Program length |
+| **Volume** | V = N × log₂(n) | Program size in bits |
+| **Difficulty** | D = (n₁ / 2) × (N₂ / n₂) | How hard to write/understand |
+| **Effort** | E = D × V | Required mental effort |
+| **Time (seconds)** | T = E / 18 | Time to implement |
+
+### Maintainability Index
+
+The Maintainability Index (MI) combines four metrics:
+
+```
+MI = 171 - 5.2 × ln(V) - 0.23 × (G) - 16.2 × ln(LOC) + 50 × sin(√(2.4 × CM))
+```
+
+Where:
+- V = Halstead Volume
+- G = Cyclomatic Complexity
+- LOC = Lines of Code
+- CM = Percent of comments
+
+| MI Score | Maintainability |
+|----------|----------------|
+| 85-100 | Highly maintainable |
+| 65-85 | Moderately maintainable |
+| < 65 | Difficult to maintain |
+
+### Defect Metrics
+
+| Metric | Formula | Target |
+|--------|---------|--------|
+| **Defect density** | Defects / KLOC | < 1 defect/KLOC for high quality |
+| **Defect detection rate** | Pre-release defects / Total defects | > 95% |
+| **Defect removal efficiency** | Fixed defects / Reported defects | > 90% |
+| **Mean time to failure (MTTF)** | Operating time / Failures | Application dependent |
+| **Defect arrival rate** | Defects / time period | Decreasing trend |
+| **Backlog index** | Open defects / Total defects | < 10% |
 
 ### Process Metrics
 
-Process metrics measure attributes of the development process.
+| Metric | Formula | Purpose |
+|--------|---------|---------|
+| **Cycle time** | Time from start to completion | Process efficiency |
+| **Lead time** | Time from request to delivery | Customer satisfaction |
+| **Velocity** | Story points per sprint | Team throughput |
+| **Rework %** | Rework effort / Total effort | Quality of initial work |
+| **Phase containment** | Defects found in phase / Defects injected | Phase effectiveness |
 
-Defect removal efficiency (DRE) measures the proportion of defects found before delivery: DRE = (defects found during development) / (defects found during development + defects found after delivery). A higher DRE indicates a more effective quality process. Industry benchmarks suggest DRE targets of ninety-five per cent or higher for mature processes.
+## Practical Takeaways
 
-Process maturity metrics assess the capability of the organisation's processes using frameworks such as CMMI. The maturity level provides a high-level indicator of process quality and predictability.
-
-### Project Metrics
-
-Project metrics track the progress and performance of individual projects.
-
-Earned value analysis (EVA) integrates scope, schedule, and cost. The key metrics are: Planned Value (PV), the budgeted cost of work scheduled; Earned Value (EV), the budgeted cost of work performed; and Actual Cost (AC), the actual cost incurred. Variance metrics include Schedule Variance (SV = EV - PV) and Cost Variance (CV = EV - AC). Performance indices include Schedule Performance Index (SPI = EV / PV) and Cost Performance Index (CPI = EV / AC).
-
-Burn-down charts track the amount of work remaining over time in an agile project. The chart shows the remaining effort on the vertical axis against time on the horizontal axis. The ideal burn-down is a straight line from the starting effort to zero at the Sprint's end. Actual burn-down that stays above the ideal line indicates the team is behind schedule.
-
-Burn-up charts complement burn-down charts by showing both completed work and total work. As scope changes, the total work line moves, providing a more accurate picture of progress.
-
-### Applying Metrics
-
-Metrics should be collected consistently and interpreted in context. Guidelines for effective measurement include: measure what matters for decision making; collect data automatically where possible; validate metrics against actual outcomes; combine multiple metrics for a comprehensive view; present metrics visually for easier interpretation; and avoid using individual metrics for performance evaluation, which can lead to gaming.
-
-The Goal-Question-Metric (GQM) approach helps ensure that metrics are aligned with goals. GQM works backwards from goals to questions to metrics. For example, given the goal "improve product quality," the questions might include "how many defects are found during testing?" and the metrics might include defect density and defect removal efficiency.
+1. **Metrics are means, not ends** — measure to improve, not to judge
+2. **Never use a single metric in isolation** — each metric tells part of the story
+3. **GQM prevents vanity metrics** — always derive metrics from goals
+4. **Automate collection** — manual metrics are unreliable and unsustainable
+5. **Trends over thresholds** — a declining trend matters more than a single value
+6. **Share metrics transparently** — hidden metrics erode trust
 
 ## Examples
 
-### Case Study: Metrics-Driven Quality Improvement
+### Example 1: Metrics Collection Framework
 
-A development team used cyclomatic complexity thresholds to identify modules requiring refactoring. Modules with complexity above fifteen were prioritised for redesign. Over six releases, the average module complexity decreased from fourteen to eight, and the defect rate in production decreased by forty-five per cent.
+```typescript
+interface CodeMetrics {
+  loc: number;
+  sloc: number;
+  commentLines: number;
+  cyclomaticComplexity: number;
+  functionCount: number;
+  classCount: number;
+  depthOfInheritance: number;
+  couplingBetweenObjects: number;
+}
 
-### Template: GQM for Test Effectiveness
+class MetricsCollector {
+  public async analyzeFile(sourceCode: string): Promise<CodeMetrics> {
+    const lines = sourceCode.split('\n');
+    const codeLines = lines.filter((l) => l.trim().length > 0);
+    const commentLines = lines.filter(
+      (l) => l.trim().startsWith('//') || l.trim().startsWith('/*') || l.trim().startsWith('*')
+    );
 
-Goal: Reduce production defects
-Question: How effective is testing at finding defects?
-Metric: Defect Removal Efficiency
-Question: Which modules have the highest defect density?
-Metric: Defects per KLOC per module
-Goal: Improve test coverage
-Question: What proportion of code is exercised by tests?
-Metric: Statement coverage percentage
+    // Count functions and classes
+    const functionMatches = sourceCode.match(/(function\s+\w+|=>\s*{|\([^)]*\)\s*{)/g) ?? [];
+    const classMatches = sourceCode.match(/class\s+\w+/g) ?? [];
 
-### Template: Object-Oriented Metrics Thresholds
+    // Simple cyclomatic complexity count
+    const predicates = (
+      sourceCode.match(/if\s*\(|else\s+if|for\s*\(|while\s*\(|case\s+|catch\s*\(/g) ?? []
+    ).length;
 
-| Metric | Low | Moderate | High | Interpretation |
-|--------|-----|----------|------|----------------|
-| WMC | < 10 | 10-20 | > 20 | High WMC indicates class complexity |
-| DIT | < 3 | 3-5 | > 5 | Deep inheritance increases reuse but complexity |
-| CBO | < 5 | 5-10 | > 10 | High coupling reduces maintainability |
-| LCOM | < 40% | 40-60% | > 60% | Low cohesion indicates multiple responsibilities |
+    // Inheritance depth (simplified: count extends keywords)
+    const extendsCount = (sourceCode.match(/extends\s+\w+/g) ?? []).length;
+
+    // Coupling (simplified: count import statements)
+    const imports = (sourceCode.match(/import\s+\{[^}]*\}\s+from/g) ?? []).length;
+
+    return {
+      loc: lines.length,
+      sloc: codeLines.length,
+      commentLines: commentLines.length,
+      cyclomaticComplexity: 1 + predicates,
+      functionCount: functionMatches.length,
+      classCount: classMatches.length,
+      depthOfInheritance: extendsCount > 0 ? extendsCount + 1 : 0,
+      couplingBetweenObjects: imports,
+    };
+  }
+
+  public calculateMaintainabilityIndex(metrics: CodeMetrics): number {
+    const V = metrics.sloc * Math.log2(
+      Math.max(1, metrics.functionCount + metrics.classCount)
+    );
+    const G = metrics.cyclomaticComplexity;
+    const LOC = metrics.sloc;
+    const CM = LOC > 0 ? metrics.commentLines / LOC : 0;
+
+    const mi = 171
+      - 5.2 * Math.log(Math.max(1, V))
+      - 0.23 * G
+      - 16.2 * Math.log(Math.max(1, LOC))
+      + 50 * Math.sin(Math.sqrt(2.4 * CM * 100));
+
+    return Math.min(100, Math.max(0, Math.round(mi)));
+  }
+}
+
+// Performance metrics
+interface PerformanceMetrics {
+  responseTimePercentiles: { p50: number; p90: number; p95: number; p99: number };
+  throughput: number;
+  errorRate: number;
+  cpuUsage: number;
+  memoryUsage: number;
+}
+
+class PerformanceMonitor {
+  private responseTimes: number[] = [];
+  private errorCount = 0;
+  private requestCount = 0;
+
+  public recordResponseTime(ms: number): void {
+    this.responseTimes.push(ms);
+    this.requestCount++;
+  }
+
+  public recordError(): void {
+    this.errorCount++;
+    this.requestCount++;
+  }
+
+  public getMetrics(): PerformanceMetrics {
+    const sorted = [...this.responseTimes].sort((a, b) => a - b);
+    const len = sorted.length;
+
+    return {
+      responseTimePercentiles: {
+        p50: len > 0 ? sorted[Math.floor(len * 0.5)] : 0,
+        p90: len > 0 ? sorted[Math.floor(len * 0.9)] : 0,
+        p95: len > 0 ? sorted[Math.floor(len * 0.95)] : 0,
+        p99: len > 0 ? sorted[Math.floor(len * 0.99)] : 0,
+      },
+      throughput: this.requestCount,
+      errorRate: this.requestCount > 0 ? this.errorCount / this.requestCount : 0,
+      cpuUsage: process.cpuUsage().user / 1000000,
+      memoryUsage: process.memoryUsage().heapUsed / 1024 / 1024,
+    };
+  }
+
+  public reset(): void {
+    this.responseTimes = [];
+    this.errorCount = 0;
+    this.requestCount = 0;
+  }
+}
+```
+
+### Example 2: GQM Metric Designer
+
+```typescript
+type GoalCategory = 'quality' | 'productivity' | 'predictability' | 'customer_satisfaction';
+
+interface Goal {
+  id: string;
+  description: string;
+  category: GoalCategory;
+  questions: Question[];
+}
+
+interface Question {
+  id: string;
+  text: string;
+  metrics: Metric[];
+}
+
+interface Metric {
+  id: string;
+  name: string;
+  formula: string;
+  collectionMethod: 'automated' | 'manual' | 'survey';
+  frequency: 'daily' | 'weekly' | 'sprint' | 'monthly' | 'release';
+  target: string;
+}
+
+class GQMFramework {
+  private goals: Goal[] = [];
+
+  public createGoal(
+    description: string,
+    category: GoalCategory
+  ): Goal {
+    const goal: Goal = {
+      id: `G-${this.goals.length + 1}`,
+      description,
+      category,
+      questions: [],
+    };
+    this.goals.push(goal);
+    return goal;
+  }
+
+  public addQuestion(goalId: string, text: string): Question {
+    const goal = this.goals.find((g) => g.id === goalId);
+    if (!goal) throw new Error(`Goal ${goalId} not found`);
+
+    const question: Question = {
+      id: `Q-${goal.questions.length + 1}`,
+      text,
+      metrics: [],
+    };
+    goal.questions.push(question);
+    return question;
+  }
+
+  public addMetric(
+    questionId: string,
+    name: string,
+    formula: string,
+    collectionMethod: Metric['collectionMethod'],
+    frequency: Metric['frequency'],
+    target: string
+  ): Metric {
+    const question = this.findQuestion(questionId);
+    const metric: Metric = {
+      id: `M-${this.countAllMetrics() + 1}`,
+      name,
+      formula,
+      collectionMethod,
+      frequency,
+      target,
+    };
+    question.metrics.push(metric);
+    return metric;
+  }
+
+  private findQuestion(questionId: string): Question {
+    for (const goal of this.goals) {
+      const q = goal.questions.find((q) => q.id === questionId);
+      if (q) return q;
+    }
+    throw new Error(`Question ${questionId} not found`);
+  }
+
+  private countAllMetrics(): number {
+    return this.goals.reduce(
+      (sum, g) => sum + g.questions.reduce(
+        (sq, q) => sq + q.metrics.length, 0
+      ), 0
+    );
+  }
+
+  public generateReport(): string {
+    return this.goals.map((goal) => {
+      const lines = [
+        `Goal: ${goal.description} [${goal.category}]`,
+      ];
+      for (const question of goal.questions) {
+        lines.push(`  Question: ${question.text}`);
+        for (const metric of question.metrics) {
+          lines.push(`    [${metric.id}] ${metric.name}: ${metric.formula}`);
+          lines.push(`      Collection: ${metric.collectionMethod}, Frequency: ${metric.frequency}`);
+          lines.push(`      Target: ${metric.target}`);
+        }
+      }
+      return lines.join('\n');
+    }).join('\n\n');
+  }
+}
+```
+
+### Example 3: Quality Dashboard
+
+```typescript
+interface QualityGate {
+  name: string;
+  metric: string;
+  threshold: number;
+  operator: 'lt' | 'gt' | 'lte' | 'gte' | 'eq';
+}
+
+interface DashboardSnapshot {
+  timestamp: Date;
+  buildId: string;
+  metrics: Record<string, number>;
+  gates: { gate: string; passed: boolean; actual: number }[];
+  overallStatus: 'pass' | 'fail' | 'warning';
+}
+
+class QualityDashboard {
+  private readonly gates: QualityGate[] = [];
+  private readonly history: DashboardSnapshot[] = [];
+
+  public addGate(gate: QualityGate): void {
+    this.gates.push(gate);
+  }
+
+  public recordSnapshot(buildId: string, metrics: Record<string, number>): DashboardSnapshot {
+    const gateResults = this.gates.map((gate) => {
+      const actual = metrics[gate.metric] ?? 0;
+      let passed: boolean;
+
+      switch (gate.operator) {
+        case 'lt': passed = actual < gate.threshold; break;
+        case 'gt': passed = actual > gate.threshold; break;
+        case 'lte': passed = actual <= gate.threshold; break;
+        case 'gte': passed = actual >= gate.threshold; break;
+        case 'eq': passed = actual === gate.threshold; break;
+        default: passed = false;
+      }
+
+      return { gate: gate.name, passed, actual };
+    });
+
+    const failures = gateResults.filter((g) => !g.passed).length;
+    const overallStatus: 'pass' | 'fail' | 'warning' =
+      failures === 0 ? 'pass' : failures <= 1 ? 'warning' : 'fail';
+
+    const snapshot: DashboardSnapshot = {
+      timestamp: new Date(),
+      buildId,
+      metrics,
+      gates: gateResults,
+      overallStatus,
+    };
+
+    this.history.push(snapshot);
+    return snapshot;
+  }
+
+  public getTrend(metricName: string, lastN: number = 10): {
+    values: number[];
+    direction: 'improving' | 'declining' | 'stable';
+    average: number;
+  } {
+    const recent = this.history.slice(-lastN);
+    const values = recent.map((s) => s.metrics[metricName] ?? 0);
+
+    if (values.length < 2) {
+      return { values, direction: 'stable', average: values[0] ?? 0 };
+    }
+
+    const average = values.reduce((a, b) => a + b, 0) / values.length;
+    const firstHalf = values.slice(0, Math.floor(values.length / 2));
+    const secondHalf = values.slice(Math.floor(values.length / 2));
+    const firstAvg = firstHalf.reduce((a, b) => a + b, 0) / firstHalf.length;
+    const secondAvg = secondHalf.reduce((a, b) => a + b, 0) / secondHalf.length;
+
+    const direction = secondAvg < firstAvg * 0.95
+      ? 'improving'
+      : secondAvg > firstAvg * 1.05
+        ? 'declining'
+        : 'stable';
+
+    return { values, direction, average };
+  }
+
+  public generateSummary(): string {
+    if (this.history.length === 0) return 'No data recorded';
+
+    const latest = this.history[this.history.length - 1];
+    const passRate = this.history.filter((s) => s.overallStatus === 'pass').length / this.history.length;
+
+    return [
+      `Dashboard Summary (${this.history.length} snapshots)`,
+      `Latest Build: ${latest.buildId} | Status: ${latest.overallStatus.toUpperCase()}`,
+      `Pass Rate: ${(passRate * 100).toFixed(1)}%`,
+      '',
+      'Gates:',
+      ...latest.gates.map((g) =>
+        `  ${g.passed ? '✓' : '✗'} ${g.gate}: ${g.actual} (${g.passed ? 'pass' : 'FAIL'})`
+      ),
+      '',
+      'Metrics:',
+      ...Object.entries(latest.metrics)
+        .map(([key, val]) => `  ${key}: ${typeof val === 'number' ? val.toFixed(2) : val}`),
+    ].join('\n');
+  }
+}
+```
+
+### Example 4: Halstead Complexity Calculator
+
+```typescript
+interface HalsteadMetrics {
+  uniqueOperators: number;    // n1
+  uniqueOperands: number;    // n2
+  totalOperators: number;    // N1
+  totalOperands: number;     // N2
+  vocabulary: number;        // n = n1 + n2
+  length: number;            // N = N1 + N2
+  volume: number;            // V = N * log2(n)
+  difficulty: number;        // D = (n1/2) * (N2/n2)
+  effort: number;            // E = D * V
+  timeSeconds: number;       // T = E / 18
+  bugsDelivered: number;     // B = V / 3000
+}
+
+class HalsteadAnalyzer {
+  // Operator keywords in TypeScript
+  private static readonly OPERATORS = new Set([
+    '+', '-', '*', '/', '%', '=', '==', '===', '!=', '!==',
+    '<', '>', '<=', '>=', '&&', '||', '!', '&', '|', '^', '~',
+    '<<', '>>', '>>>', '??', '?.',
+    'if', 'else', 'for', 'while', 'do', 'switch', 'case',
+    'return', 'break', 'continue', 'throw', 'try', 'catch',
+    'function', '=>', 'class', 'new', 'typeof', 'instanceof',
+    'void', 'delete', 'in', 'of', 'as', 'is',
+  ]);
+
+  public analyze(sourceCode: string): HalsteadMetrics {
+    const tokens = this.tokenize(sourceCode);
+    const operators = new Map<string, number>();
+    const operands = new Map<string, number>();
+
+    for (const token of tokens) {
+      if (HalsteadAnalyzer.OPERATORS.has(token)) {
+        operators.set(token, (operators.get(token) ?? 0) + 1);
+      } else if (/^\w+$/.test(token)) {
+        operands.set(token, (operands.get(token) ?? 0) + 1);
+      }
+    }
+
+    const n1 = operators.size;
+    const n2 = operands.size;
+    const N1 = Array.from(operators.values()).reduce((a, b) => a + b, 0);
+    const N2 = Array.from(operands.values()).reduce((a, b) => a + b, 0);
+    const n = n1 + n2;
+    const N = N1 + N2;
+    const V = n > 0 ? N * Math.log2(n) : 0;
+    const D = n2 > 0 ? (n1 / 2) * (N2 / n2) : 0;
+    const E = D * V;
+    const T = E / 18;
+    const B = V / 3000;
+
+    return {
+      uniqueOperators: n1,
+      uniqueOperands: n2,
+      totalOperators: N1,
+      totalOperands: N2,
+      vocabulary: n,
+      length: N,
+      volume: Math.round(V * 100) / 100,
+      difficulty: Math.round(D * 100) / 100,
+      effort: Math.round(E),
+      timeSeconds: Math.round(T),
+      bugsDelivered: Math.round(B * 100) / 100,
+    };
+  }
+
+  private tokenize(code: string): string[] {
+    // Simple tokenizer for analysis
+    return code
+      .replace(/\/\/.*$/gm, '')        // Remove single-line comments
+      .replace(/\/\*[\s\S]*?\*\//g, '')  // Remove block comments
+      .replace(/"[^"]*"/g, '""')         // Normalize string literals
+      .replace(/'[^']*'/g, "''")
+      .replace(/`[^`]*`/g, '``')
+      .split(/\s+|(?=[{}\[\]();.,:])|(?<=[{}\[\]();.,:])/g)
+      .filter((t) => t.length > 0);
+  }
+}
+```
+
+### Example 5: Defect Metrics Tracker
+
+```typescript
+type DefectPhase = 'requirements' | 'design' | 'implementation' | 'testing' | 'production';
+type DefectSeverity = 'critical' | 'major' | 'minor' | 'trivial';
+
+interface DefectRecord {
+  id: string;
+  description: string;
+  injectedPhase: DefectPhase;
+  detectedPhase: DefectPhase;
+  severity: DefectSeverity;
+  fixEffortHours: number;
+  detectionDate: Date;
+  fixDate?: Date;
+}
+
+class DefectMetricsAnalyzer {
+  private defects: DefectRecord[] = [];
+  private sequence = 0;
+
+  public recordDefect(
+    description: string,
+    injectedPhase: DefectPhase,
+    detectedPhase: DefectPhase,
+    severity: DefectSeverity,
+    fixEffortHours: number
+  ): DefectRecord {
+    const defect: DefectRecord = {
+      id: `BUG-${++this.sequence}`,
+      description,
+      injectedPhase,
+      detectedPhase,
+      severity,
+      fixEffortHours,
+      detectionDate: new Date(),
+    };
+    this.defects.push(defect);
+    return defect;
+  }
+
+  public markFixed(defectId: string): void {
+    const defect = this.defects.find((d) => d.id === defectId);
+    if (defect) {
+      defect.fixDate = new Date();
+    }
+  }
+
+  public getDefectDensity(kloc: number): number {
+    return this.defects.length / kloc;
+  }
+
+  public getPhaseContainment(phase: DefectPhase): number {
+    const injected = this.defects.filter((d) => d.injectedPhase === phase);
+    const detected = injected.filter((d) => d.detectedPhase === phase);
+    return injected.length > 0 ? detected.length / injected.length : 0;
+  }
+
+  public getDefectDetectionRate(): number {
+    const total = this.defects.length;
+    const preRelease = this.defects.filter((d) => d.detectedPhase !== 'production').length;
+    return total > 0 ? preRelease / total : 0;
+  }
+
+  public getAverageFixTime(detectedPhase: DefectPhase): number {
+    const relevant = this.defects
+      .filter((d) => d.detectedPhase === detectedPhase && d.fixDate);
+    if (relevant.length === 0) return 0;
+    const totalHours = relevant.reduce((sum, d) => {
+      const diff = d.fixDate!.getTime() - d.detectionDate.getTime();
+      return sum + diff / 3600000;
+    }, 0);
+    return totalHours / relevant.length;
+  }
+
+  public generatePhaseDefectReport(): string {
+    const phases: DefectPhase[] = ['requirements', 'design', 'implementation', 'testing', 'production'];
+    return [
+      'Phase Defect Report',
+      'Injected → Detected | Count | Containment',
+      ...phases.map((injected) => {
+        const injectedCount = this.defects.filter((d) => d.injectedPhase === injected).length;
+        const detectedInPhase = this.defects.filter(
+          (d) => d.injectedPhase === injected && d.detectedPhase === injected
+        ).length;
+        const containment = injectedCount > 0 ? detectedInPhase / injectedCount : 0;
+        return `${injected.padEnd(15)} | ${String(injectedCount).padStart(4)} | ${(containment * 100).toFixed(1)}%`;
+      }),
+      '',
+      `Detection Rate: ${(this.getDefectDetectionRate() * 100).toFixed(1)}%`,
+    ].join('\n');
+  }
+}
+```
+
+## Chapter Quiz
+
+**Q1: The GQM paradigm stands for:**
+- A) Goal, Quality, Metric
+- B) Goal, Question, Metric
+- C) General, Quantitative, Measurement
+- D) Graded, Qualified, Measured
+
+**Answer: B** — GQM stands for Goal-Question-Metric, a structured approach to deriving metrics from goals.
+
+**Q2: The Halstead complexity metric that represents the mental effort required to implement a program is:**
+- A) Volume
+- B) Difficulty
+- C) Effort
+- D) Length
+
+**Answer: C** — Halstead Effort (E = D × V) represents the total mental effort required.
+
+**Q3: A Maintainability Index score of 60 indicates:**
+- A) Highly maintainable
+- B) Moderately maintainable
+- C) Difficult to maintain
+- D) Cannot be maintained
+
+**Answer: B** — 65-85 is moderately maintainable; 60 is just below moderate threshold (difficult).
+
+**Q4: Which metric measures the percentage of defects caught in the same phase they were introduced?**
+- A) Defect detection rate
+- B) Phase containment
+- C) Defect density
+- D) Defect removal efficiency
+
+**Answer: B** — Phase containment ratio measures defects caught in their injection phase.
+
+**Q5: A cyclomatic complexity value of 15 would be classified as:**
+- A) Low risk
+- B) Moderate risk
+- C) High risk
+- D) Untestable
+
+**Answer: B** — 11-20 is moderate risk.
 
 ## Summary
 
-Software metrics provide quantitative insight into products, processes, and projects. Product metrics such as LOC, cyclomatic complexity, Halstead metrics, function points, and object-oriented metrics measure size and complexity. Process metrics such as defect removal efficiency measure quality process effectiveness. Project metrics such as earned value and burn-down charts track progress. The GQM approach ensures metrics are aligned with goals. Metrics must be interpreted in context and used to support, not replace, human judgment.
+Software metrics provide quantitative data for describing, evaluating, predicting, and improving software processes and products. The GQM paradigm ensures metrics align with goals. Size metrics (LOC, function points) measure scale. Complexity metrics (cyclomatic complexity, Halstead) assess understandability and testability. The Maintainability Index combines multiple metrics into a single maintainability score. Defect metrics track quality across phases. Process metrics measure development efficiency. Metrics collection should be automated, trend-focused, and transparent. Meaningful interpretation requires context, trends over time, and multiple metrics used together.
 
 ## Exercises
 
 ### Review Questions
 
-1. What are the three categories of software metrics?
-2. How is McCabe's cyclomatic complexity calculated from a control flow graph?
-3. What is the significance of a cyclomatic complexity value of ten?
-4. What are the five function types counted in function point analysis?
-5. What is the range of the value adjustment factor in function points?
-6. What does the Weighted Methods per Class metric measure?
-7. How is defect removal efficiency calculated?
-8. What is the difference between a burn-down chart and a burn-up chart?
-9. What does a cost performance index value of 0.9 indicate?
-10. Describe the Goal-Question-Metric approach.
+1. What is the difference between product, process, and project metrics?
+2. Describe the GQM approach with an example.
+3. What does cyclomatic complexity measure and how is it calculated?
+4. What four components make up the Maintainability Index?
+5. What is the difference between defect density and defect detection rate?
 
 ### Application Problems
 
-1. Calculate the cyclomatic complexity of code containing an if-else statement with two conditions joined by AND, followed by a for loop, followed by a switch statement with three cases.
-2. A 50,000-LOC project had 120 defects found during development and 15 defects reported in the first year after deployment. Calculate the defect removal efficiency and defect density.
-3. At the end of Sprint 3, a team had planned to complete 30 story points across Sprints 1-3. They completed 8, 7, and 9 story points in Sprints 1, 2, and 3 respectively. Plot the burn-down chart and calculate the schedule variance. Predict the number of additional Sprints required to complete the remaining 60 story points.
+1. Apply GQM to derive metrics for the goal "Reduce production defects by 50% in six months."
+
+2. Calculate Halstead metrics for the following code:
+   ```typescript
+   function factorial(n: number): number {
+     let result = 1;
+     for (let i = 2; i <= n; i++) {
+       result *= i;
+     }
+     return result;
+   }
+   ```
+
+3. A project has 15 KLOC and 12 defects detected during development and 8 defects found post-release. Calculate: defect density, defect detection rate, and phase containment. Interpret the results.
 
 ### Challenge Problem
 
-A software division is considering implementing a company-wide metrics programme. There are fifty development teams working on different products in different domains, using different technologies and process models. Design a metrics programme that balances consistency across teams with relevance to individual projects. Specify the mandatory metrics that all teams must collect, the optional metrics that teams may adopt based on context, and the metrics that should not be used due to risk of gaming. Address how you will ensure data quality, how you will present metrics to different audiences (developers, project managers, and executives), and how you will evolve the programme based on experience. Use the GQM approach to justify your recommended metrics.
+Design a comprehensive measurement program for a 50-person software engineering organisation. Apply GQM to derive metrics for three goals: improve on-time delivery, reduce post-release defects, and increase team productivity. For each goal, define 2-3 questions and 2-4 metrics per question. Specify collection methods (automated tooling, manual entry), collection frequency, visualisation dashboards, and review cadence. Identify and discuss potential Goodhart's Law effects for each metric (what behaviours might the metric incentivise that undermine the true goal?). Implement a TypeScript program that collects five metrics daily, tracks them over time, generates trend reports, and alerts when any metric deviates more than 2 standard deviations from its rolling 30-day mean.

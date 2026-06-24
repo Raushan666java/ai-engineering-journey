@@ -2,115 +2,432 @@
 
 ## Learning Objectives
 
-After completing this chapter, the student will be able to: distinguish between verification and validation; describe the levels of testing from unit to acceptance; explain the differences between functional, structural, and non-functional testing; apply white-box testing techniques including statement, branch, path, and condition coverage; apply black-box testing techniques including equivalence partitioning, boundary value analysis, decision tables, and state transition testing; explain regression, smoke, performance, security, and usability testing; describe test automation approaches; and explain test-driven development and behaviour-driven development.
+After completing this chapter, the student will be able to:
+- Distinguish between verification and validation
+- Describe the levels of testing from unit to acceptance
+- Apply white-box testing techniques (statement, branch, path, condition coverage)
+- Apply black-box testing techniques (equivalence partitioning, boundary value analysis, decision tables, state transition)
+- Apply the test pyramid and understand its trade-offs
+- Execute the TDD cycle (red-green-refactor) with a worked TypeScript example
+- Create mock objects and test doubles
+- Understand property-based testing
+- Distinguish between regression, smoke, performance, security, and usability testing
 
 ## Theory
 
-![Software Testing Levels Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/06-testing.png)
-
 ### Verification and Validation
 
-Verification and validation (V&V) are the two principal approaches to establishing that a software system meets its specification and satisfies stakeholder needs. Verification answers the question "Are we building the product right?" It checks that the software conforms to its specification. Validation answers the question "Are we building the right product?" It checks that the software meets the actual needs of the customer.
+Verification and validation (V&V) are the two principal approaches to establishing that a software system meets its specification and satisfies stakeholder needs.
 
-Both verification and validation are achieved through a combination of static techniques, which analyse the software without executing it, and dynamic techniques, which execute the software with selected test cases.
+```mermaid
+graph TD
+    VV[V&V Activities] --> V[Verification: Are we building the product RIGHT?]
+    VV --> V2[Validation: Are we building the RIGHT product?]
+    V --> S[Static: Reviews, inspections, walkthroughs]
+    V --> D[Dynamic: Testing]
+    V2 --> AT[Acceptance Testing]
+    V2 --> PROTO[Prototyping]
+```
+
+- **Verification:** "Are we building the product right?" — checks conformance to specification
+- **Validation:** "Are we building the right product?" — checks that the system meets actual customer needs
+
+### The Test Pyramid
+
+The test pyramid, proposed by Cohn, describes the ideal distribution of automated tests:
+
+```mermaid
+graph TD
+    subgraph "Test Pyramid"
+        E2E[End-to-End Tests] -->|Few| L1
+        SVC[Service / API Tests] -->|Some| L2
+        UNIT[Unit Tests] -->|Many| L3
+    end
+    L1(( ))
+    L2(( ))
+    L3(( ))
+```
+
+| Layer | Count | Speed | Confidence | Fragility |
+|-------|-------|-------|------------|-----------|
+| Unit tests | Many (70-80%) | Fast (ms) | Low | Low |
+| Service/API tests | Some (15-20%) | Medium (s) | Medium | Medium |
+| End-to-end tests | Few (5-10%) | Slow (min) | High | High |
 
 ### Levels of Testing
 
-Testing is organised into levels that correspond to phases of development.
+```mermaid
+graph TD
+    subgraph "Testing Levels"
+        UT[Unit Testing] --> IT[Integration Testing]
+        IT --> ST[System Testing]
+        ST --> AT[Acceptance Testing]
+    end
+    UT -->|Component isolation| C1[Single module]
+    IT -->|Interface between components| C2[Module interactions]
+    ST -->|Complete system| C3[Whole system]
+    AT -->|Customer requirements| C4[User acceptance]
+```
 
-Unit testing verifies individual components or modules in isolation. The goal is to ensure that each unit performs its specified function correctly. Unit tests are typically written by the developer who coded the unit and are automated using a unit testing framework such as JUnit, NUnit, or pytest.
+**Unit testing** verifies individual components in isolation. Tested by developers using frameworks like Bun test, JUnit.
 
-Integration testing verifies that units work correctly together. It focuses on the interfaces between components and the interactions across component boundaries. Integration testing strategies include big bang integration, where all components are combined at once; top-down integration, where high-level components are tested by stubbing lower-level components; bottom-up integration, where low-level components are tested using drivers for higher-level components; and sandwich integration, which combines top-down and bottom-up approaches.
+**Integration testing** verifies that units work together. Strategies include:
+- **Big bang:** All components combined at once
+- **Top-down:** High-level components tested first, lower-level components stubbed
+- **Bottom-up:** Low-level components tested with drivers
+- **Sandwich:** Combination of top-down and bottom-up
 
-System testing verifies that the complete, integrated system meets its specified requirements. It is performed against the system requirements specification and includes functional and non-functional testing.
+**System testing** verifies the complete system against requirements.
 
-Acceptance testing determines whether the system satisfies the customer's acceptance criteria. It is performed by or with the customer and is the final testing phase before deployment. Alpha testing is performed by the customer at the developer's site. Beta testing is performed by the customer at their own site. User acceptance testing (UAT) validates that the system supports the intended business processes.
+**Acceptance testing** determines whether the system satisfies acceptance criteria:
+- **Alpha testing:** Customer at developer's site
+- **Beta testing:** Customer at their own site
+- **UAT:** Validates business processes
 
-### Functional Testing
+### White-Box Testing Techniques
 
-Functional testing verifies that the system functions as specified. It is typically performed as black-box testing, where test cases are derived from the requirements or specification without knowledge of the internal implementation.
+```mermaid
+graph TD
+    subgraph "Coverage Criteria"
+        SC[Statement Coverage] -->|Subsumes nothing| BC[Branch Coverage]
+        BC -->|Subsumes statement| PC[Path Coverage]
+        CC[Condition Coverage] -->|Subsumes condition| MCC[Multiple Condition Coverage]
+    end
+```
 
-### Structural Testing
-
-Structural testing, also known as white-box testing, derives test cases from the internal structure of the software. The tester has access to the source code and can design tests that exercise specific code paths.
-
-Statement coverage measures the percentage of executable statements that have been executed by the test suite. The goal is typically 100 per cent statement coverage, although achieving this does not guarantee that all defects have been found.
-
-Branch coverage measures the percentage of decision outcomes that have been exercised. For each decision point, both the true and false branches must be executed. Branch coverage subsumes statement coverage because exercising all branches ensures that all statements are executed.
-
-Path coverage measures the percentage of possible execution paths that have been exercised. A path is a unique sequence of branches from the entry of a method to its exit. Path coverage is a stronger criterion than branch coverage but is often impractical because the number of paths grows exponentially with the number of decision points.
-
-Condition coverage measures the percentage of atomic conditions within decisions that have been evaluated to both true and false. Multiple condition coverage requires all combinations of atomic condition outcomes to be exercised.
+| Technique | Description | Strength |
+|-----------|-------------|----------|
+| **Statement coverage** | Every executable statement executed | Weakest |
+| **Branch coverage** | Every decision outcome exercised | Stronger |
+| **Path coverage** | Every unique execution path exercised | Strongest (often impractical) |
+| **Condition coverage** | Each atomic condition evaluated to T/F | Moderate |
+| **MC/DC** | Each condition independently affects outcome | Required for DO-178C |
 
 ### Black-Box Testing Techniques
 
-Equivalence partitioning divides the input domain into equivalence classes such that the behaviour of the system is equivalent for all values within a class. If the system behaves correctly for one value from a class, it is assumed to behave correctly for all values in that class. Test cases are selected from each equivalence class. Equivalent classes are identified for valid input and for invalid input.
+**Equivalence Partitioning:** Divides the input domain into equivalence classes where the system behaves equivalently for all values in a class.
 
-Boundary value analysis selects test cases at the boundaries of equivalence classes. Experience shows that defects frequently occur at boundaries. For each boundary, three test cases are typically created: the boundary value itself, the value immediately above the boundary, and the value immediately below the boundary.
+**Boundary Value Analysis:** Selects test cases at the boundaries of equivalence classes. Defects frequently occur at boundaries.
 
-Decision tables capture complex combinations of conditions and corresponding actions. A decision table has four sections: conditions, which are Boolean expressions; condition entries, which show the values of conditions for each rule; actions, which are the outcomes; and action entries, which show which actions are triggered for each rule. Decision tables ensure that all combinations of conditions are considered.
+```typescript
+// Example: testing a function that accepts ages 18-120
+function validateAge(age: number): boolean {
+  return age >= 18 && age <= 120;
+}
 
-State transition testing models the system as a finite state machine with states, transitions, and events. Test cases are designed to cover states, transitions, and sequences of transitions. This technique is particularly effective for testing control-intensive systems such as telecommunications protocols and embedded systems.
+// Equivalence classes:
+// Valid: 18-120
+// Invalid: < 18, > 120, non-numeric, null, undefined
+
+// Boundary values:
+// Low boundary: 17 (invalid), 18 (valid), 19 (valid)
+// High boundary: 119 (valid), 120 (valid), 121 (invalid)
+```
+
+**Decision Tables:**
+
+| Conditions | Rule 1 | Rule 2 | Rule 3 | Rule 4 |
+|------------|--------|--------|--------|--------|
+| Valid account? | T | T | T | F |
+| Account locked? | F | F | T | — |
+| Password correct? | T | F | — | — |
+| **Actions** | | | | |
+| Allow login | X | | | |
+| Show error | | X | X | X |
+| Increment attempts | | X | | |
+| Lock account (3 failures) | (if count≥3) | | | |
+
+**State Transition Testing:**
+
+```typescript
+interface TestState {
+  currentState: string;
+  transitions: { from: string; event: string; to: string }[];
+  testCases: { initialState: string; events: string[]; expectedFinalState: string }[];
+}
+```
+
+### Test Doubles
+
+| Type | Description | Use Case |
+|------|-------------|----------|
+| **Dummy** | Passed but never used | Filling parameter lists |
+| **Fake** | Working implementation with shortcuts | In-memory database |
+| **Stub** | Returns predefined answers | When you need specific responses |
+| **Spy** | Records interactions | Verifying method calls |
+| **Mock** | Pre-programmed expectations | Behaviour verification |
+
+```typescript
+// Example: Mock repository for testing
+interface UserRepository {
+  findById(id: string): Promise<User | null>;
+  save(user: User): Promise<void>;
+}
+
+class MockUserRepository implements UserRepository {
+  private users: Map<string, User> = new Map();
+  public findById(id: string): Promise<User | null> {
+    return Promise.resolve(this.users.get(id) ?? null);
+  }
+  public save(user: User): Promise<void> {
+    this.users.set(user.id, user);
+    return Promise.resolve();
+  }
+}
+```
+
+### TDD Cycle: Red-Green-Refactor
+
+```mermaid
+graph LR
+    RED[RED: Write failing test] --> GREEN[GREEN: Write minimal code to pass]
+    GREEN --> REFACTOR[REFACTOR: Improve code]
+    REFACTOR --> RED
+```
+
+#### Worked Example: String Calculator
+
+**Step 1 (RED):** Write a failing test.
+
+```typescript
+import { describe, expect, test } from 'bun:test';
+
+describe('StringCalculator', () => {
+  test('returns 0 for empty string', () => {
+    expect(add('')).toBe(0);
+  });
+
+  test('returns the number for a single number', () => {
+    expect(add('1')).toBe(1);
+  });
+
+  test('returns sum for two numbers separated by comma', () => {
+    expect(add('1,2')).toBe(3);
+  });
+
+  test('returns sum for multiple numbers', () => {
+    expect(add('1,2,3,4,5')).toBe(15);
+  });
+
+  test('handles newline as delimiter', () => {
+    expect(add('1\n2,3')).toBe(6);
+  });
+
+  test('supports custom delimiter', () => {
+    expect(add('//;\n1;2')).toBe(3);
+  });
+
+  test('throws on negative numbers', () => {
+    expect(() => add('1,-2,3')).toThrow('negatives not allowed: -2');
+  });
+
+  test('ignores numbers greater than 1000', () => {
+    expect(add('2,1001')).toBe(2);
+  });
+});
+```
+
+**Step 2 (GREEN):** Write minimal code to pass.
+
+```typescript
+function add(input: string): number {
+  if (input === '') return 0;
+
+  let delimiter = /,|\n/;
+  let numbers = input;
+
+  if (input.startsWith('//')) {
+    const delimiterEnd = input.indexOf('\n');
+    delimiter = new RegExp(input.substring(2, delimiterEnd));
+    numbers = input.substring(delimiterEnd + 1);
+  }
+
+  const tokens = numbers.split(delimiter);
+  const negatives = tokens.filter((n) => parseInt(n) < 0);
+
+  if (negatives.length > 0) {
+    throw new Error(`negatives not allowed: ${negatives.join(',')}`);
+  }
+
+  return tokens
+    .map((n) => parseInt(n))
+    .filter((n) => n <= 1000)
+    .reduce((sum, n) => sum + n, 0);
+}
+```
+
+**Step 3 (REFACTOR):** Improve the code.
+
+```typescript
+function add(input: string): number {
+  if (input === '') return 0;
+
+  const { delimiter, numberStr } = parseDelimiter(input);
+  const numbers = parseNumbers(numberStr, delimiter);
+  validateNoNegatives(numbers);
+  return sumNumbers(numbers);
+}
+
+function parseDelimiter(input: string): { delimiter: RegExp; numberStr: string } {
+  if (input.startsWith('//')) {
+    const delimiterEnd = input.indexOf('\n');
+    const delim = input.substring(2, delimiterEnd);
+    return { delimiter: new RegExp(delim), numberStr: input.substring(delimiterEnd + 1) };
+  }
+  return { delimiter: /,|\n/, numberStr: input };
+}
+
+function parseNumbers(input: string, delimiter: RegExp): number[] {
+  return input.split(delimiter).map((n) => parseInt(n));
+}
+
+function validateNoNegatives(numbers: number[]): void {
+  const negatives = numbers.filter((n) => n < 0);
+  if (negatives.length > 0) {
+    throw new Error(`negatives not allowed: ${negatives.join(',')}`);
+  }
+}
+
+function sumNumbers(numbers: number[]): number {
+  return numbers
+    .filter((n) => n <= 1000)
+    .reduce((sum, n) => sum + n, 0);
+}
+```
+
+### Property-Based Testing
+
+Property-based testing verifies that a function satisfies certain properties for a wide range of inputs, rather than checking specific examples.
+
+```typescript
+import { describe, expect, test } from 'bun:test';
+
+// Property: reversing a string twice gives the original string
+function reverse(str: string): string {
+  return str.split('').reverse().join('');
+}
+
+// Property-based test
+describe('reverse properties', () => {
+  test('reversing twice gives original', () => {
+    const inputs = ['hello', 'a', '', 'racecar', '12345'];
+    for (const input of inputs) {
+      expect(reverse(reverse(input))).toBe(input);
+    }
+  });
+
+  test('reversing preserves length', () => {
+    const inputs = ['hello', 'world', '', 'typescript'];
+    for (const input of inputs) {
+      expect(reverse(input).length).toBe(input.length);
+    }
+  });
+
+  test('reversing a palindrome gives same string', () => {
+    const palindromes = ['racecar', 'level', 'radar', 'madam'];
+    for (const p of palindromes) {
+      expect(reverse(p)).toBe(p);
+    }
+  });
+});
+```
 
 ### Non-Functional Testing
 
-Performance testing evaluates system behaviour under load. Load testing applies expected usage levels; stress testing applies extreme levels; endurance testing applies sustained load over extended periods; and spike testing applies sudden increases in load.
+| Type | What It Tests | Techniques |
+|------|---------------|------------|
+| **Performance** | System behaviour under load | Load testing, stress testing, endurance testing, spike testing |
+| **Security** | Vulnerability identification | Penetration testing, SAST, DAST, dependency scanning |
+| **Usability** | Ease of learning and use | User observation, heuristic evaluation, A/B testing |
+| **Reliability** | System uptime and fault tolerance | Chaos engineering, failover testing, soak testing |
 
-Security testing identifies vulnerabilities in the system. It includes authentication testing, authorisation testing, input validation testing, and penetration testing.
+### Test Automation Pyramid in Practice
 
-Usability testing evaluates how easy the system is to learn and use. It typically involves observing representative users performing representative tasks. Heuristic evaluation is a review-based approach where evaluators assess the interface against established usability heuristics.
+```typescript
+// Unit test (fast, many)
+import { describe, expect, test } from 'bun:test';
 
-### Regression Testing
+class PriceCalculator {
+  calculateTotal(items: { price: number; quantity: number }[]): number {
+    return items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  }
+}
 
-Regression testing verifies that changes to the system have not introduced new defects in previously working functionality. When a change is made, the entire existing test suite or a carefully selected subset is re-executed. The regression test suite should be automated to ensure frequent execution. Regression test selection techniques include retest-all, which executes all existing tests; selective retest, which executes tests related to the changed code; and test case prioritisation, which orders tests to maximise early defect detection.
+describe('PriceCalculator', () => {
+  const calc = new PriceCalculator();
 
-### Smoke Testing
+  test('empty cart returns 0', () => {
+    expect(calc.calculateTotal([])).toBe(0);
+  });
 
-Smoke testing, also called build verification testing, is a preliminary set of tests that verify whether the most critical functions of the system work. Smoke tests are run after each build to determine whether the build is stable enough for more thorough testing. A failed smoke test causes the build to be rejected.
+  test('single item calculates correctly', () => {
+    expect(calc.calculateTotal([{ price: 10, quantity: 3 }])).toBe(30);
+  });
 
-### Test Automation
+  test('multiple items sum correctly', () => {
+    const items = [
+      { price: 10, quantity: 2 },
+      { price: 5, quantity: 3 },
+    ];
+    expect(calc.calculateTotal(items)).toBe(35);
+  });
+});
+```
 
-Test automation uses software tools to control the execution of tests and compare actual outcomes with predicted outcomes. Automated tests can be executed frequently and consistently, enabling continuous testing.
+## Practical Takeaways
 
-The test automation pyramid, proposed by Cohn, recommends three layers: unit tests form the broad base, service or API tests form the middle, and end-to-end UI tests form the narrow top. This distribution reflects the trade-offs between speed, reliability, and confidence: unit tests are fast and reliable but provide limited confidence; end-to-end tests provide high confidence but are slow and fragile.
+1. **Write tests first (TDD)** — it forces you to think about design before implementation
+2. **Follow the test pyramid** — invest most in fast, reliable unit tests
+3. **Test behaviours, not methods** — focus on what the code does, not how it's structured
+4. **Coverage is a hint, not a goal** — 100% coverage doesn't mean 100% correctness
+5. **Use test doubles wisely** — mock external dependencies, but prefer real objects for core logic
+6. **A failing test is progress** — it means you've found a spec-to-implementation gap before production
 
-Test automation frameworks include data-driven frameworks, where test data is separated from test logic; keyword-driven frameworks, where test actions are specified as keywords; and hybrid frameworks combining multiple approaches.
+## Chapter Quiz
 
-### Test-Driven Development
+**Q1: What is the correct order of the TDD cycle?**
+- A) Green → Red → Refactor
+- B) Red → Green → Refactor
+- C) Refactor → Red → Green
+- D) Red → Refactor → Green
 
-Test-driven development (TDD) reverses the traditional order of writing code then tests. In TDD, the developer writes a failing test first, then writes the minimum code to pass the test, then refactors the code. This cycle is often expressed as red-green-refactor.
+**Answer: B** — Write a failing test (Red), make it pass (Green), improve the code (Refactor).
 
-TDD produces a comprehensive suite of automated unit tests and tends to produce code with low coupling and high cohesion because testability drives design. Studies provide mixed evidence on TDD's effect on productivity, but the practice is widely adopted in agile development.
+**Q2: Which coverage criterion is strongest (finds the most defects)?**
+- A) Statement coverage
+- B) Branch coverage
+- C) Path coverage
+- D) Function coverage
 
-### Behaviour-Driven Development
+**Answer: C** — Path coverage exercises all unique execution paths but is often impractical.
 
-Behaviour-driven development (BDD) extends TDD by expressing tests in a format that can be understood by non-technical stakeholders. BDD uses the Given-When-Then template: Given a context, when an event occurs, then an outcome should be observed.
+**Q3: What type of test double is an in-memory database that provides a simplified but working implementation?**
+- A) Stub
+- B) Mock
+- C) Fake
+- D) Dummy
 
-BDD frameworks such as Cucumber and SpecFlow parse feature files written in Gherkin syntax and map them to automated test code. BDD promotes collaboration between developers, testers, and domain experts in defining system behaviour.
+**Answer: C** — A Fake is a working implementation with shortcuts.
 
-## Examples
+**Q4: According to the test pyramid, which layer should have the most tests?**
+- A) End-to-end tests
+- B) Service tests
+- C) Unit tests
+- D) Manual tests
 
-### Case Study: Test Strategy for an E-Commerce Platform
+**Answer: C** — Unit tests form the broad base of the pyramid.
 
-An e-commerce platform implemented a four-level test strategy. Unit tests (3,400 tests, 87 per cent coverage) verified individual service methods. Integration tests (420 tests) verified database access, API endpoints, and message queue interactions. System tests (150 tests) verified complete business workflows. Acceptance tests (45 scenarios) were expressed in Gherkin and validated by product owners.
+**Q5: Boundary value analysis is most effective at finding defects because:**
+- A) It tests random values
+- B) Defects frequently occur at input boundaries
+- C) It requires the least test cases
+- D) It tests internal code structure
 
-### Template: Equivalence Partitioning for Age Field
-
-Requirement: A system accepts age values between 18 and 120 inclusive.
-Valid equivalence classes: Ages 18 to 120 (single class)
-Invalid equivalence classes: Ages below 18, ages above 120, non-numeric input, null input
-Boundary values: 17, 18, 19 and 119, 120, 121
-
-### Template: White-Box Coverage Matrix
-
-| Method | Statements | Branches | Conditions | Paths |
-|--------|------------|----------|------------|-------|
-| calculateDiscount | 12/12 (100%) | 6/6 (100%) | 4/4 (100%) | 3/5 (60%) |
-| processOrder | 28/30 (93%) | 14/16 (88%) | 8/10 (80%) | 12/24 (50%) |
+**Answer: B** — Empirical evidence shows defects cluster at boundary conditions.
 
 ## Summary
 
-Software testing is the primary dynamic verification and validation technique. Testing occurs at four levels: unit, integration, system, and acceptance. White-box techniques use knowledge of the internal structure to design test cases; black-box techniques derive test cases from specifications. Non-functional testing addresses performance, security, and usability. Regression testing protects against regression defects. Test automation is essential for frequent, consistent testing. TDD and BDD integrate testing into the development process.
+Software testing is the primary dynamic verification and validation technique. Testing occurs at four levels: unit, integration, system, and acceptance. White-box techniques use knowledge of internal structure; black-box techniques derive test cases from specifications. The test pyramid guides automation investment. TDD follows the red-green-refactor cycle and produces testable designs. Test doubles (dummy, fake, stub, spy, mock) isolate units under test. Property-based testing verifies behavioural properties across input ranges. Non-functional testing addresses performance, security, and usability. Regression testing protects against regression defects.
 
 ## Exercises
 
@@ -118,21 +435,25 @@ Software testing is the primary dynamic verification and validation technique. T
 
 1. Distinguish between verification and validation.
 2. What are the four levels of testing, and what does each level verify?
-3. Explain the difference between top-down and bottom-up integration testing.
+3. Explain top-down versus bottom-up integration testing.
 4. What is the difference between statement coverage and branch coverage?
-5. Why is path coverage often impractical for real-world systems?
-6. Describe the equivalence partitioning technique with an example.
+5. Why is path coverage often impractical?
+6. Describe equivalence partitioning with an example.
 7. How does boundary value analysis complement equivalence partitioning?
-8. What is the purpose of regression testing?
-9. Describe the three layers of the test automation pyramid.
-10. Explain the red-green-refactor cycle of test-driven development.
+8. What are the five types of test doubles?
+9. What does the TDD acronym stand for, and what are its three phases?
+10. Describe the three layers of the test automation pyramid.
 
 ### Application Problems
 
-1. Apply equivalence partitioning and boundary value analysis to a function that accepts a date in the format DD/MM/YYYY and validates that the date is within the range 01/01/2000 to 31/12/2099. List the test cases.
-2. Construct a decision table for a login system with the following rules: the user must have a valid account; the account must not be locked; the password must match; after three failed attempts, the account is locked.
-3. Calculate statement coverage and branch coverage for the following code fragment and identify which tests would achieve 100 per cent branch coverage: if (a > 0) { if (b > 0) { x = 1; } else { x = 2; } } else { x = 3; }
+1. Apply equivalence partitioning and boundary value analysis to a function that validates dates in DD/MM/YYYY format between 01/01/2000 and 31/12/2099. List all test cases.
+
+2. Construct a decision table for a login system: valid account required; account must not be locked; password must match; after 3 failed attempts, account is locked. Cover all combinations.
+
+3. Implement the FizzBuzz kata using TDD in TypeScript. Show each red-green-refactor cycle.
+
+4. Write a TypeScript property-based test suite for a `sort` function, verifying properties like idempotence, order preservation, and length preservation.
 
 ### Challenge Problem
 
-You lead the testing effort for a medical device software system that calculates radiation dosage for cancer treatment. The system must meet FDA regulatory requirements, which mandate traceability from requirements to test cases, 100 per cent decision coverage at the unit level, and documented risk-based testing at the system level. Design a comprehensive testing strategy that addresses unit testing, integration testing, system testing, and acceptance testing. Specify the coverage criteria, describe how you will achieve traceability, explain your approach to risk-based testing, and design the test automation framework. Include consideration of the specific challenges of safety-critical testing and how you will verify non-functional requirements such as response time and reliability.
+You lead the testing effort for a medical device software system that calculates radiation dosage for cancer treatment. The system must meet FDA regulatory requirements: full traceability from requirements to test cases, 100% decision coverage at unit level, and documented risk-based testing. Design a comprehensive testing strategy. Specify coverage criteria, traceability approach, risk-based testing methods, and the test automation framework. Implement a TypeScript test coverage tracker that maps requirements to test cases and calculates coverage metrics.

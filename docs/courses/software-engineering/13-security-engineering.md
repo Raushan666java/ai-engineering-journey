@@ -2,141 +2,807 @@
 
 ## Learning Objectives
 
-After completing this chapter, the student will be able to: explain the principles of the secure development lifecycle; apply threat modelling using STRIDE and attack trees; describe security design patterns; identify the OWASP Top 10 vulnerabilities and their mitigations; implement input validation, authentication, and authorisation; apply cryptography in software; and describe penetration testing methodology.
+After completing this chapter, the student will be able to:
+- Explain the core principles of security engineering
+- Apply the OWASP Top 10 to web application development
+- Implement authentication and authorisation patterns
+- Protect against injection, XSS, CSRF, and SSRF attacks
+- Use secure coding practices in TypeScript
+- Apply cryptographic primitives correctly
+- Manage secrets and configuration securely
+- Design security testing: SAST, DAST, dependency scanning
 
 ## Theory
 
-![Security Engineering Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-13-security-engineering.png)
+### The CIA Triad
 
-### Security as an Engineering Discipline
+Security engineering rests on three fundamental principles:
 
-Security engineering is the discipline of building systems that remain dependable in the face of malice, error, or mischance. Unlike safety engineering, which addresses accidental failures, security engineering addresses intentional attacks. Security must be engineered into software from the beginning; retrofitting security is significantly more expensive and less effective.
+```mermaid
+graph TD
+    CIA[Security Objectives] --> CONF[Confidentiality]
+    CIA --> INT[Integrity]
+    CIA --> AVAIL[Availability]
+    
+    CONF --> |Ensure| ENC[Encryption]
+    CONF --> |Control| AUTH[Access Control]
+    
+    INT --> |Protect| HASH[Hash Functions]
+    INT --> |Detect| SIG[Digital Signatures]
+    
+    AVAIL --> |Maintain| RED[Redundancy]
+    AVAIL --> |Respond| DR[Disaster Recovery]
+```
 
-The fundamental security goals are captured by the CIA triad: confidentiality, which ensures that information is not disclosed to unauthorised parties; integrity, which ensures that information is not modified by unauthorised parties; and availability, which ensures that authorised parties can access information when needed. Additional goals include authentication, which verifies the identity of users; authorisation, which controls what authenticated users can do; non-repudiation, which prevents parties from denying their actions; and accountability, which ensures that actions can be traced to responsible parties.
+| Principle | Definition | Attack Example | Defence |
+|-----------|------------|----------------|---------|
+| **Confidentiality** | Unauthorised parties cannot read data | Data breach | Encryption, access control |
+| **Integrity** | Data cannot be modified undetected | SQL injection | Input validation, hashing |
+| **Availability** | System is accessible when needed | DDoS | Rate limiting, CDN |
 
-### The Secure Development Lifecycle
+### The OWASP Top 10
 
-The Secure Development Lifecycle (SDL) integrates security activities throughout the software development process. Microsoft's SDL includes: training, where developers learn secure coding practices; requirements, where security requirements are defined; design, where threat modelling is performed; implementation, where security tools are used and secure coding standards are enforced; verification, where security testing and code review are conducted; release, where the final security review is performed; and response, where a security incident response plan is established.
+The Open Web Application Security Project publishes the Top 10 Web Application Security Risks:
 
-The Building Security In Maturity Model (BSIMM) provides a framework for measuring and improving security practices across organisations.
+| Rank | Risk | Description |
+|------|------|-------------|
+| A01 | **Broken Access Control** | Users can act outside their permissions |
+| A02 | **Cryptographic Failures** | Weak or missing encryption |
+| A03 | **Injection** | Untrusted data executes as commands |
+| A04 | **Insecure Design** | Missing security controls in design |
+| A05 | **Security Misconfiguration** | Default credentials, unnecessary features enabled |
+| A06 | **Vulnerable Components** | Outdated libraries with known CVEs |
+| A07 | **AuthN/AuthZ Failures** | Weak authentication, session management flaws |
+| A08 | **Software & Data Integrity** | Supply chain attacks, unsigned updates |
+| A09 | **Logging & Monitoring Failures** | Undetected breaches |
+| A10 | **SSRF** | Server-side request forgery |
 
 ### Threat Modelling
 
-Threat modelling is a structured approach to identifying and mitigating security threats during design. It answers four questions: what are we building; what can go wrong; what should we do about it; and did we do a good job.
+```mermaid
+graph TD
+    TM[Threat Modelling] --> ID[Identify Assets]
+    TM --> ARCH[Decompose Application]
+    TM --> THREATS[Identify Threats]
+    TM --> RISK[Risk Assessment]
+    TM --> MITIGATION[Define Mitigations]
+    
+    THREATS --> STRIDE[S.T.R.I.D.E.]
+    RISK --> DREAD[DREAD Scoring]
+```
 
-STRIDE is a mnemonic for six categories of security threats developed at Microsoft: Spoofing, where an attacker impersonates a user or system; Tampering, where data is maliciously modified; Repudiation, where an attacker denies performing an action; Information Disclosure, where sensitive data is exposed; Denial of Service, where system availability is compromised; and Elevation of Privilege, where an attacker gains unauthorised access to higher-level functions.
+**STRIDE Model (Microsoft):**
+- **S**poofing: Faking identity
+- **T**ampering: Modifying data
+- **R**epudiation: Denying actions
+- **I**nformation Disclosure: Exposing data
+- **D**enial of Service: Crashing the system
+- **E**levation of Privilege: Gaining unauthorised access
 
-STRIDE is applied by analysing each component of the system against each threat category, typically using a data flow diagram as the analytical basis.
+### Authentication vs Authorisation
 
-Attack trees model threats hierarchically. The root of the tree represents the attacker's goal. Children represent alternative ways to achieve the goal. Attack trees enable systematic analysis of attack paths and identification of controls that break the tree.
+| Aspect | Authentication | Authorisation |
+|--------|----------------|---------------|
+| **Question** | Who are you? | What can you do? |
+| **Mechanism** | Passwords, MFA, SSO | Roles, permissions, ACLs |
+| **Storage** | Session tokens, JWT | Policy database |
+| **Failure** | 401 Unauthorized | 403 Forbidden |
+| **Protocol** | OAuth 2.0, OpenID Connect | RBAC, ABAC, PBAC |
 
-### Security Patterns
+### Common Attack Vectors
 
-Security patterns are reusable solutions to common security problems. Examples include: the Single Access Point pattern, which centralises all authentication through a gatekeeper component; the Check Point pattern, which enforces authorisation at specific boundaries; the Secure Session pattern, which manages authenticated sessions with timeouts and encryption; the Role-Based Access Control pattern, which authorises actions based on role membership; and the Secure Factory pattern, which creates security-relevant objects through validated factories.
+#### SQL Injection
 
-### OWASP Top 10
+SQL injection occurs when untrusted data is concatenated into SQL queries.
 
-The OWASP Top 10 is a widely referenced list of the most critical web application security risks.
+```mermaid
+graph LR
+    INPUT["' OR 1=1; --"] --> APP[Application]
+    APP --> Q["SELECT * FROM users WHERE user = '' OR 1=1; --'"]
+    Q --> DB[(Database)]
+    DB -->|All users returned| ATTACKER
+```
 
-Injection occurs when untrusted data is sent to an interpreter as part of a command or query. SQL injection is the most common form. Mitigations include parameterised queries, input validation, and least privilege for database accounts.
+**Defence:** Parameterised queries / prepared statements.
 
-Broken Authentication encompasses vulnerabilities in authentication and session management. Common problems include weak password policies, credential stuffing, session fixation, and exposed session tokens. Mitigations include multi-factor authentication, secure password storage with salted hashing, and secure session management.
+#### Cross-Site Scripting (XSS)
 
-Sensitive Data Exposure occurs when sensitive information such as financial data or passwords is inadequately protected. Mitigations include encryption at rest and in transit, secure key management, and minimising the collection of sensitive data.
+XSS injects malicious scripts into web pages viewed by other users.
 
-XML External Entities (XXE) occurs when XML processors process external entity references. Mitigations include disabling external entity processing and using less complex data formats.
+| Type | Description | Persistence |
+|------|-------------|-------------|
+| **Stored XSS** | Malicious script stored in database | Permanent |
+| **Reflected XSS** | Script in URL, echoed back | Single request |
+| **DOM XSS** | Client-side script modifies DOM | Client-only |
 
-Broken Access Control occurs when users can act outside their intended permissions. Mitigations include enforcing access controls on the server side, denying access by default, and implementing strict role-based or attribute-based access control.
+**Defence:** Output encoding, Content Security Policy (CSP).
 
-Security Misconfiguration is among the most common vulnerabilities. It includes default credentials, unnecessary features, unprotected cloud storage, and overly permissive cross-origin resource sharing. Mitigations include automated configuration scanning and minimal configurations.
+#### Cross-Site Request Forgery (CSRF)
 
-Cross-Site Scripting (XSS) occurs when untrusted data is included in web pages without proper validation or escaping. Stored XSS persists in the application; reflected XSS appears in immediate responses; DOM-based XSS occurs in client-side scripts. Mitigations include context-appropriate output encoding and content security policies.
+CSRF tricks authenticated users into performing unintended actions.
 
-Insecure Deserialisation occurs when application data is deserialised without validation, potentially enabling remote code execution. Mitigations include not deserialising data from untrusted sources and using integrity checks.
+**Defence:** CSRF tokens, SameSite cookies, Origin/Referer header validation.
 
-Using Components with Known Vulnerabilities is a growing risk as applications incorporate more third-party code. Mitigations include maintaining a software bill of materials, scanning dependencies for vulnerabilities, and promptly updating affected components.
+### Secure Coding Principles
 
-Insufficient Logging and Monitoring enables attackers to maintain persistence and exfiltrate data without detection. Mitigations include logging security-relevant events, monitoring for anomalies, and establishing incident response procedures.
+1. **Least Privilege:** Every component operates with the minimum permissions needed.
+2. **Defence in Depth:** Multiple independent security layers.
+3. **Fail Secure:** When something fails, it should fail in a secure state.
+4. **Complete Mediation:** Every access is checked, every time.
+5. **Secure by Default:** Default configuration is the most secure.
+6. **Economy of Mechanism:** Keep security mechanisms simple.
+7. **Open Design:** Security should not rely on secrecy of implementation.
+8. **Psychological Acceptability:** Security should not make the system difficult to use.
 
-### Input Validation
+### Cryptographic Primitives
 
-Input validation is the first line of defence against injection and other input-related attacks. Input validation should be positive (accept known-good input) rather than negative (reject known-bad input). Validation checks include: type checking, which verifies that input matches the expected data type; length checking, which ensures input does not exceed expected limits; range checking, which verifies values fall within acceptable bounds; format checking, which validates against expected patterns using regular expressions; and whitelist validation, which accepts only values from a set of allowed values.
+```mermaid
+graph TD
+    CRYPTO[Cryptography] --> SYM[Symmetric]
+    CRYPTO --> ASYM[Asymmetric]
+    CRYPTO --> HASH[Hash Functions]
+    
+    SYM --> AES[AES-256-GCM]
+    SYM --> CHACHA[ChaCha20-Poly1305]
+    
+    ASYM --> RSA[RSA-4096]
+    ASYM --> ECC[ECDSA / Ed25519]
+    
+    HASH --> SHA[SHA-256 / SHA-3]
+    HASH --> ARGON[Argon2id / bcrypt]
+```
 
-### Authentication and Authorisation
+| Use Case | Algorithm | Key Length |
+|----------|-----------|------------|
+| **Encrypt data at rest** | AES-256-GCM | 256 bits |
+| **Encrypt data in transit** | TLS 1.3 | 2048+ bits RSA / ECDHE |
+| **Password hashing** | Argon2id, bcrypt | Salt + work factor |
+| **Integrity / signatures** | SHA-256, Ed25519 | 256 bits |
+| **Key exchange** | ECDHE | Curve25519 |
 
-Authentication verifies the identity of a user. Strong authentication requires multiple factors: something you know (password), something you have (token), and something you are (biometric). Password best practices include: minimum length requirements, salted hashing with algorithms such as bcrypt or Argon2, rate limiting on login attempts, and multi-factor authentication support.
+## Practical Takeaways
 
-Authorisation determines what an authenticated user is permitted to do. Access control models include: Discretionary Access Control (DAC), where owners control access to their resources; Mandatory Access Control (MAC), where system-wide policies control access; Role-Based Access Control (RBAC), where permissions are assigned to roles; and Attribute-Based Access Control (ABAC), where access decisions are based on user attributes, resource attributes, and environment conditions.
-
-### Cryptography in Software
-
-Cryptography provides the technical foundation for confidentiality, integrity, and authentication. Software engineers should use well-vetted cryptographic libraries rather than implementing cryptographic algorithms themselves.
-
-Encryption transforms data with a key such that only parties with the appropriate key can recover the original data. Symmetric encryption uses the same key for encryption and decryption. AES is the standard symmetric algorithm. Asymmetric encryption uses a public-private key pair. RSA and ECC are common asymmetric algorithms.
-
-Hashing produces a fixed-length digest of data. Cryptographic hash functions are one-way and collision-resistant. SHA-256 is widely used. Hashing is used for password storage, data integrity verification, and digital signatures.
-
-Key management is the most challenging aspect of applied cryptography. Keys must be generated securely, stored safely, rotated periodically, and revoked when compromised. Hardware security modules (HSMs) provide tamper-resistant key storage.
-
-### Penetration Testing
-
-Penetration testing simulates real-world attacks to identify security vulnerabilities. Testing methodologies follow a standard process: reconnaissance, where information about the target is gathered; enumeration, where services, protocols, and applications are identified; vulnerability analysis, where potential vulnerabilities are identified; exploitation, where vulnerabilities are exploited to gain access; post-exploitation, where the extent of compromise is assessed; and reporting, where findings are documented with remediation recommendations.
-
-Penetration testing may be internal or external, white-box (with full knowledge of the system) or black-box (with no prior knowledge). Responsible disclosure requires that findings be reported to the system owner before public disclosure.
+1. **Never roll your own crypto** — use well-audited libraries
+2. **Sanitise input, encode output** — two different operations, both required
+3. **Password hashing is not encryption** — bcrypt/Argon2id, never SHA or MD5
+4. **Security is not a feature — it is a property of the system**
+5. **HTTPS everywhere** — even internal services should use TLS
+6. **Log security events** — you cannot respond to breaches you do not detect
 
 ## Examples
 
-### Case Study: OWASP Top 10 in an E-Commerce Application
+### Example 1: Secure Authentication with JWT
 
-A security audit of an e-commerce application found SQL injection in the product search function, broken authentication allowing credential stuffing, and sensitive customer data stored without encryption. The remediation included parameterised queries, rate limiting on login, integration of an OAuth provider, encryption of stored payment data, and a comprehensive input validation framework.
+```typescript
+import { randomBytes, createHash, timingSafeEqual } from 'crypto';
 
-### Template: STRIDE Threat Model for Login Component
+interface JWTPayload {
+  sub: string;
+  role: string;
+  iat: number;
+  exp: number;
+}
 
-| Threat | Description | Mitigation |
-|--------|-------------|------------|
-| Spoofing | Attacker impersonates legitimate user | Multi-factor authentication |
-| Tampering | Attacker modifies login request | TLS, request signing |
-| Repudiation | User denies logging in | Audit logging |
-| Information Disclosure | Attacker intercepts credentials | TLS, password hashing |
-| Denial of Service | Attacker floods login endpoint | Rate limiting, CAPTCHA |
-| Elevation of Privilege | Attacker escalates from standard user to admin | Server-side authorisation checks |
+class AuthService {
+  private readonly JWT_SECRET: string;
+  private readonly ISSUER = 'myapp';
+  private readonly ACCESS_TOKEN_EXPIRY = 900; // 15 min
+  private readonly REFRESH_TOKEN_EXPIRY = 604800; // 7 days
 
-### Template: Security Checklist for Code Review
+  constructor() {
+    this.JWT_SECRET = process.env['JWT_SECRET'] ?? this.generateSecret();
+  }
 
-- Is input validated against a whitelist?
-- Are queries parameterised?
-- Are passwords stored with salted hashing?
-- Is TLS enforced for all sensitive communications?
-- Are authorisation checks performed on the server side?
-- Are session tokens secure (random, HTTP-only, SameSite)?
-- Are error messages free of information leakage?
-- Are third-party dependencies scanned for vulnerabilities?
+  private generateSecret(): string {
+    return randomBytes(64).toString('hex');
+  }
+
+  public generateAccessToken(userId: string, role: string): string {
+    return this.signJWT({
+      sub: userId,
+      role,
+      iat: Math.floor(Date.now() / 1000),
+      exp: Math.floor(Date.now() / 1000) + this.ACCESS_TOKEN_EXPIRY,
+    });
+  }
+
+  public generateRefreshToken(): string {
+    return randomBytes(64).toString('hex');
+  }
+
+  public verifyAccessToken(token: string): JWTPayload {
+    return this.verifyJWT(token);
+  }
+
+  // Secure password hashing
+  public async hashPassword(password: string): Promise<string> {
+    const salt = randomBytes(16).toString('hex');
+    const iterations = 100000;
+    const hash = createHash('sha512');
+
+    let derived = password;
+    for (let i = 0; i < iterations; i++) {
+      derived = hash.update(derived + salt).digest('hex');
+    }
+
+    return `${iterations}:${salt}:${derived}`;
+  }
+
+  public async verifyPassword(
+    password: string,
+    storedHash: string
+  ): Promise<boolean> {
+    const [iterations, salt, hash] = storedHash.split(':');
+    const parsedIterations = parseInt(iterations, 10);
+
+    let derived = password;
+    const hashObj = createHash('sha512');
+    for (let i = 0; i < parsedIterations; i++) {
+      derived = hashObj.update(derived + salt).digest('hex');
+    }
+
+    // Timing-safe comparison prevents timing attacks
+    return timingSafeEqual(
+      Buffer.from(hash),
+      Buffer.from(derived)
+    );
+  }
+
+  // Simple JWT implementation for educational purposes
+  private signJWT(payload: JWTPayload): string {
+    const header = Buffer.from(
+      JSON.stringify({ alg: 'HS256', typ: 'JWT' })
+    ).toString('base64url');
+    const body = Buffer.from(JSON.stringify(payload)).toString('base64url');
+    const signature = createHash('sha256')
+      .update(`${header}.${body}${this.JWT_SECRET}`)
+      .digest('base64url');
+    return `${header}.${body}.${signature}`;
+  }
+
+  private verifyJWT(token: string): JWTPayload {
+    const [header, body, signature] = token.split('.');
+    const expectedSignature = createHash('sha256')
+      .update(`${header}.${body}${this.JWT_SECRET}`)
+      .digest('base64url');
+
+    if (!timingSafeEqual(
+      Buffer.from(signature),
+      Buffer.from(expectedSignature)
+    )) {
+      throw new Error('Invalid token signature');
+    }
+
+    const payload: JWTPayload = JSON.parse(
+      Buffer.from(body, 'base64url').toString()
+    );
+
+    if (payload.exp < Math.floor(Date.now() / 1000)) {
+      throw new Error('Token expired');
+    }
+
+    return payload;
+  }
+}
+```
+
+### Example 2: SQL Injection Prevention
+
+```typescript
+import { randomBytes } from 'crypto';
+
+// Parameterised query builder (type-safe)
+interface QueryParams {
+  text: string;
+  values: unknown[];
+}
+
+class QueryBuilder {
+  public static select(
+    table: string,
+    columns: string[],
+    where?: { field: string; operator: string; value: unknown }[]
+  ): QueryParams {
+    const params: unknown[] = [];
+    const conditions: string[] = [];
+
+    for (const clause of where ?? []) {
+      const paramIndex = params.length + 1;
+      conditions.push(`${clause.field} ${clause.operator} $${paramIndex}`);
+      params.push(clause.value);
+    }
+
+    const whereClause = conditions.length > 0
+      ? ` WHERE ${conditions.join(' AND ')}`
+      : '';
+
+    return {
+      text: `SELECT ${columns.join(', ')} FROM ${table}${whereClause}`,
+      values: params,
+    };
+  }
+
+  public static insert(
+    table: string,
+    data: Record<string, unknown>
+  ): QueryParams {
+    const columns = Object.keys(data);
+    const values = Object.values(data);
+    const placeholders = values.map((_, i) => `$${i + 1}`);
+
+    return {
+      text: `INSERT INTO ${table} (${columns.join(', ')}) VALUES (${placeholders.join(', ')}) RETURNING id`,
+      values,
+    };
+  }
+
+  public static update(
+    table: string,
+    data: Record<string, unknown>,
+    where: { field: string; value: unknown }
+  ): QueryParams {
+    const columns = Object.keys(data);
+    const values = Object.values(data);
+    const setClauses = columns.map((col, i) => `${col} = $${i + 1}`);
+
+    const whereIdx = values.length + 1;
+    return {
+      text: `UPDATE ${table} SET ${setClauses.join(', ')} WHERE ${where.field} = $${whereIdx}`,
+      values: [...values, where.value],
+    };
+  }
+
+  public static sanitizeIdentifier(identifier: string): string {
+    // Prevent SQL injection in table/column names (whitelist approach)
+    if (!/^[a-zA-Z_][a-zA-Z0-9_]*$/.test(identifier)) {
+      throw new Error(`Invalid identifier: ${identifier}`);
+    }
+    return identifier;
+  }
+}
+
+// Usage
+const query = QueryBuilder.select(
+  'users',
+  ['id', 'email', 'name'],
+  [{ field: 'email', operator: '=', value: 'user@example.com' }]
+);
+// query.text = "SELECT id, email, name FROM users WHERE email = $1"
+// query.values = ['user@example.com']
+```
+
+### Example 3: Input Validation and Sanitisation
+
+```typescript
+class InputValidator {
+  private errors: string[] = [];
+
+  public validateEmail(email: string): this {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      this.errors.push('Invalid email format');
+    }
+    return this;
+  }
+
+  public validateRequired(value: string, fieldName: string): this {
+    if (!value || value.trim().length === 0) {
+      this.errors.push(`${fieldName} is required`);
+    }
+    return this;
+  }
+
+  public validateLength(
+    value: string,
+    min: number,
+    max: number,
+    fieldName: string
+  ): this {
+    const len = value.trim().length;
+    if (len < min || len > max) {
+      this.errors.push(
+        `${fieldName} must be ${min}-${max} characters (got ${len})`
+      );
+    }
+    return this;
+  }
+
+  public validateAllowedValues<T>(
+    value: T,
+    allowed: T[],
+    fieldName: string
+  ): this {
+    if (!allowed.includes(value)) {
+      this.errors.push(
+        `${fieldName} must be one of: ${allowed.join(', ')}`
+      );
+    }
+    return this;
+  }
+
+  public validatePattern(
+    value: string,
+    pattern: RegExp,
+    fieldName: string
+  ): this {
+    if (!pattern.test(value)) {
+      this.errors.push(`${fieldName} has invalid format`);
+    }
+    return this;
+  }
+
+  public validateNumeric(
+    value: string,
+    fieldName: string,
+    min?: number,
+    max?: number
+  ): this {
+    const num = Number(value);
+    if (isNaN(num)) {
+      this.errors.push(`${fieldName} must be a number`);
+      return this;
+    }
+    if (min !== undefined && num < min) {
+      this.errors.push(`${fieldName} must be >= ${min}`);
+    }
+    if (max !== undefined && num > max) {
+      this.errors.push(`${fieldName} must be <= ${max}`);
+    }
+    return this;
+  }
+
+  public hasErrors(): boolean {
+    return this.errors.length > 0;
+  }
+
+  public getErrors(): string[] {
+    return [...this.errors];
+  }
+}
+
+// Output encoding to prevent XSS
+class OutputEncoder {
+  public static encodeHtml(input: string): string {
+    return input
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#x27;')
+      .replace(/\//g, '&#x2F;');
+  }
+
+  public static encodeJs(input: string): string {
+    return input.replace(/['"\\\n\r\t\b\f]/g, (char) => {
+      const replacements: Record<string, string> = {
+        "'": "\\'",
+        '"': '\\"',
+        '\\': '\\\\',
+        '\n': '\\n',
+        '\r': '\\r',
+        '\t': '\\t',
+        '\b': '\\b',
+        '\f': '\\f',
+      };
+      return replacements[char] ?? char;
+    });
+  }
+
+  public static encodeUrl(input: string): string {
+    return encodeURIComponent(input);
+  }
+}
+```
+
+### Example 4: CSRF Protection Middleware
+
+```typescript
+import { randomBytes, createHash, timingSafeEqual } from 'crypto';
+
+interface SessionData {
+  csrfToken: string;
+  userId?: string;
+}
+
+class CSRFProtection {
+  private readonly sessions = new Map<string, SessionData>();
+
+  public generateToken(sessionId: string): string {
+    const token = randomBytes(32).toString('hex');
+    const hash = this.hashToken(token);
+
+    this.sessions.set(sessionId, {
+      ...this.sessions.get(sessionId),
+      csrfToken: hash,
+    });
+
+    return token;
+  }
+
+  public validateToken(sessionId: string, token: string): boolean {
+    const session = this.sessions.get(sessionId);
+    if (!session?.csrfToken) return false;
+
+    const hash = this.hashToken(token);
+    return timingSafeEqual(
+      Buffer.from(hash),
+      Buffer.from(session.csrfToken)
+    );
+  }
+
+  private hashToken(token: string): string {
+    return createHash('sha256').update(token).digest('hex');
+  }
+
+  // Middleware for Express-like frameworks
+  public middleware(
+    req: { method: string; headers: Record<string, string>; body: Record<string, string> },
+    res: { status: (code: number) => { json: (data: object) => void } }
+  ): boolean {
+    const safeMethods = ['GET', 'HEAD', 'OPTIONS'];
+    if (safeMethods.includes(req.method.toUpperCase())) {
+      return true; // Safe methods do not need CSRF protection
+    }
+
+    const token =
+      req.headers['x-csrf-token'] ??
+      req.headers['x-xsrf-token'] ??
+      req.body?.['_csrf'];
+
+    const sessionId = req.headers['cookie'] ?? '';
+
+    if (!token || !this.validateToken(sessionId, token as string)) {
+      res.status(403).json({ error: 'Invalid CSRF token' });
+      return false;
+    }
+
+    return true;
+  }
+}
+
+// Content Security Policy builder
+class CSPBuilder {
+  private directives: Record<string, string[]> = {};
+
+  public defaultSrc(...sources: string[]): this {
+    this.directives['default-src'] = sources;
+    return this;
+  }
+
+  public scriptSrc(...sources: string[]): this {
+    this.directives['script-src'] = sources;
+    return this;
+  }
+
+  public styleSrc(...sources: string[]): this {
+    this.directives['style-src'] = sources;
+    return this;
+  }
+
+  public imgSrc(...sources: string[]): this {
+    this.directives['img-src'] = sources;
+    return this;
+  }
+
+  public connectSrc(...sources: string[]): this {
+    this.directives['connect-src'] = sources;
+    return this;
+  }
+
+  public build(): string {
+    return Object.entries(this.directives)
+      .map(([key, sources]) => `${key} ${sources.join(' ')}`)
+      .join('; ');
+  }
+}
+
+// Usage
+const csp = new CSPBuilder()
+  .defaultSrc("'self'")
+  .scriptSrc("'self'", "'strict-dynamic'", "'nonce-abc123'")
+  .styleSrc("'self'", "'unsafe-inline'")
+  .imgSrc("'self'", 'https:')
+  .connectSrc("'self'", 'https://api.example.com')
+  .build();
+```
+
+### Example 5: Secrets Manager
+
+```typescript
+import { createCipheriv, createDecipheriv, randomBytes } from 'crypto';
+
+interface SecretConfig {
+  key: Buffer;
+  algorithm: string;
+}
+
+class SecretsManager {
+  private static readonly ALGORITHM = 'aes-256-gcm';
+  private static readonly KEY_LENGTH = 32;
+  private static readonly IV_LENGTH = 16;
+  private static readonly TAG_LENGTH = 16;
+
+  private config!: SecretConfig;
+
+  constructor() {
+    const keyHex = process.env['SECRETS_ENCRYPTION_KEY'];
+    if (!keyHex || keyHex.length !== 64) {
+      throw new Error(
+        'SECRETS_ENCRYPTION_KEY must be a 64-character hex string'
+      );
+    }
+    this.config = {
+      key: Buffer.from(keyHex, 'hex'),
+      algorithm: SecretsManager.ALGORITHM,
+    };
+  }
+
+  public encryptSecret(plaintext: string): string {
+    const iv = randomBytes(SecretsManager.IV_LENGTH);
+    const cipher = createCipheriv(
+      this.config.algorithm,
+      this.config.key,
+      iv,
+      { authTagLength: SecretsManager.TAG_LENGTH }
+    );
+
+    let encrypted = cipher.update(plaintext, 'utf8', 'hex');
+    encrypted += cipher.final('hex');
+    const authTag = cipher.getAuthTag().toString('hex');
+
+    // Store iv:authTag:ciphertext
+    return `${iv.toString('hex')}:${authTag}:${encrypted}`;
+  }
+
+  public decryptSecret(encrypted: string): string {
+    const [ivHex, tagHex, ciphertext] = encrypted.split(':');
+    const iv = Buffer.from(ivHex, 'hex');
+    const authTag = Buffer.from(tagHex, 'hex');
+
+    const decipher = createDecipheriv(
+      this.config.algorithm,
+      this.config.key,
+      iv,
+      { authTagLength: SecretsManager.TAG_LENGTH }
+    );
+    decipher.setAuthTag(authTag);
+
+    let plaintext = decipher.update(ciphertext, 'hex', 'utf8');
+    plaintext += decipher.final('utf8');
+    return plaintext;
+  }
+
+  public static validateSecretKey(keyHex: string): boolean {
+    return /^[0-9a-f]{64}$/i.test(keyHex);
+  }
+}
+
+// Environment variable validator
+class EnvConfig {
+  private readonly errors: string[] = [];
+
+  public requireString(key: string): this {
+    if (!process.env[key]) {
+      this.errors.push(`Missing required env: ${key}`);
+    }
+    return this;
+  }
+
+  public requireUrl(key: string): this {
+    const val = process.env[key];
+    if (!val) {
+      this.errors.push(`Missing required env: ${key}`);
+      return this;
+    }
+    try {
+      new URL(val);
+    } catch {
+      this.errors.push(`Invalid URL in env: ${key}`);
+    }
+    return this;
+  }
+
+  public requireNumber(key: string, min?: number, max?: number): this {
+    const val = process.env[key];
+    if (val === undefined) {
+      this.errors.push(`Missing required env: ${key}`);
+      return this;
+    }
+    const num = Number(val);
+    if (isNaN(num)) {
+      this.errors.push(`Invalid number in env: ${key}`);
+      return this;
+    }
+    if (min !== undefined && num < min) {
+      this.errors.push(`${key} must be >= ${min}`);
+    }
+    if (max !== undefined && num > max) {
+      this.errors.push(`${key} must be <= ${max}`);
+    }
+    return this;
+  }
+
+  public hasErrors(): boolean {
+    return this.errors.length > 0;
+  }
+
+  public getErrors(): string[] {
+    return [...this.errors];
+  }
+
+  public validate(): void {
+    if (this.errors.length > 0) {
+      throw new Error(`Configuration errors:\n${this.errors.join('\n')}`);
+    }
+  }
+}
+```
+
+## Chapter Quiz
+
+**Q1: Which of the following is NOT part of the STRIDE threat model?**
+- A) Spoofing
+- B) Tampering
+- C) Injection
+- D) Information Disclosure
+
+**Answer: C** — Injection is from OWASP Top 10, not STRIDE. STRIDE includes Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege.
+
+**Q2: What is the best defence against SQL injection?**
+- A) Input escaping
+- B) Parameterised queries
+- C) Stored procedures
+- D) WAF rules
+
+**Answer: B** — Parameterised queries (prepared statements) ensure separation of code and data.
+
+**Q3: The HTTP status code returned when a user is authenticated but not authorised to access a resource is:**
+- A) 401 Unauthorized
+- B) 403 Forbidden
+- C) 404 Not Found
+- D) 405 Method Not Allowed
+
+**Answer: B** — 401 is for unauthenticated, 403 is for authenticated but not authorised.
+
+**Q4: Which algorithm is recommended for password storage?**
+- A) SHA-256
+- B) AES-256
+- C) Argon2id
+- D) MD5
+
+**Answer: C** — Argon2id (and bcrypt) are memory-hard password hashing algorithms. SHA and MD5 are fast and vulnerable to brute force.
+
+**Q5: Content Security Policy (CSP) is primarily a defence against:**
+- A) SQL Injection
+- B) Cross-Site Scripting (XSS)
+- C) CSRF
+- D) SSRF
+
+**Answer: B** — CSP restricts which scripts can execute, preventing XSS.
 
 ## Summary
 
-Security engineering embeds security throughout the software lifecycle. The SDL integrates security into every phase. Threat modelling with STRIDE and attack trees identifies risks systematically. Security patterns provide reusable solutions. The OWASP Top 10 catalogues the most critical web vulnerabilities. Input validation, strong authentication, and server-side authorisation are foundational controls. Cryptography provides confidentiality, integrity, and authentication. Penetration testing validates the effectiveness of security controls.
+Security engineering is the discipline of building systems that remain secure under attack. The CIA triad (Confidentiality, Integrity, Availability) provides foundational principles. The OWASP Top 10 catalogues the most critical web application risks. Threat modelling using STRIDE identifies security threats systematically. Secure coding practices include input validation, output encoding, parameterised queries, CSRF tokens, and Content Security Policy. Cryptographic primitives must be applied correctly using well-audited libraries. Secrets management ensures that credentials and keys are never hardcoded or exposed. Security testing includes static analysis (SAST), dynamic analysis (DAST), and dependency scanning. Security is an emergent property of the entire system, not a single feature.
 
 ## Exercises
 
 ### Review Questions
 
-1. What are the three goals of the CIA triad?
-2. List the phases of the Microsoft SDL.
-3. What does the STRIDE acronym represent?
-4. How does an attack tree model threats?
-5. List five entries from the OWASP Top 10 and their mitigations.
-6. Distinguish between positive and negative input validation.
-7. What is the difference between authentication and authorisation?
-8. Distinguish between symmetric and asymmetric encryption.
-9. What is the purpose of a cryptographic hash function as applied to password storage?
-10. Describe the phases of a penetration test.
+1. Explain the CIA triad with an example of an attack on each principle.
+2. List the OWASP Top 10 and describe the three highest-ranked risks.
+3. What is the difference between authentication and authorisation?
+4. Describe stored XSS, reflected XSS, and DOM XSS.
+5. What is CSRF and how is it prevented?
+6. What is the principle of least privilege?
 
 ### Application Problems
 
-1. Apply STRIDE threat modelling to a password reset feature. Identify at least one threat in each category and propose a mitigation.
-2. A web application accepts user comments and displays them on a public page. Identify the security risks and propose a defence-in-depth approach to mitigate them.
-3. Design an authentication architecture for a banking mobile application. Address registration, login, session management, password recovery, and multi-factor authentication.
+1. Design a threat model for an online banking application using STRIDE. Identify at least two threats per category.
+
+2. Implement a secure password change endpoint that requires the current password, enforces complexity rules, prevents reuse, and logs the event. Use TypeScript.
+
+3. Write a Content Security Policy for a blog that loads scripts only from self, Google Analytics, and a CDN, with 'strict-dynamic' for inline scripts.
 
 ### Challenge Problem
 
-You are the security architect for a healthcare platform that stores electronic medical records, processes insurance claims, and provides patient portals. The platform must comply with HIPAA regulations. Design a comprehensive security architecture covering: authentication and authorisation; data protection at rest and in transit; network security; application security; incident response; and third-party integration security. For each area, specify the threats you are addressing, the controls you will implement, and how you will verify the effectiveness of the controls. Address the tension between security and usability, particularly for the patient portal. Include a threat model for the most critical use case â€” a physician accessing a patient record.
+You are the security lead for a healthcare SaaS platform (HIPAA regulated) that stores patient health records. It uses a React frontend, Java Spring Boot backend, PostgreSQL database, and AWS infrastructure. The system was recently pen-tested and the report found: SQL injection in patient search, stored XSS in notes, missing encryption on PHI at rest, no MFA for providers, and hardcoded AWS keys in source code. Design a comprehensive remediation plan. Prioritise fixes by risk. For each finding, specify the vulnerable code pattern, the exploit scenario, the fix (with code examples), and the verification method. Implement a TypeScript security scanner that checks code patterns for the five vulnerabilities found.

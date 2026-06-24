@@ -1,22 +1,23 @@
 # Chapter 1: Introduction to Compiler Design
 
-**â† Prerequisite:** None | **Next:** [Chapter 2: Lexical Analysis](02-lexical.md)
+**← Prerequisite:** None | **Next:** [Chapter 2: Lexical Analysis](02-lexical.md)
 
 ## Learning Objectives
 
-After completing this chapter, students will be able to: describe the analysis-synthesis model of compilation; enumerate and explain the principal phases of a compiler; distinguish between compilers and interpreters; identify appropriate compiler construction tools for each phase; and recognize the role of formal language theory in compilation.
+After completing this chapter, students will be able to: describe the analysis-synthesis model of compilation; enumerate and explain the principal phases of a compiler with their input/output representations; distinguish between compilers, interpreters, and JIT compilers with concrete performance analysis; implement a symbol table in TypeScript; construct T-diagrams for bootstrapping scenarios; explain cross-compilation, JIT vs AOT trade-offs; and identify appropriate compiler construction tools for each phase.
 
 ### Chapter at a Glance
 
 | Section | Description |
 |---------|-------------|
-| The Analysis-Synthesis Model | Front end/back end division and the N-plus-M architecture |
-| Phases of Compilation | Lexical analysis through code generation |
-| Symbol Table Management | Hash-table-based storage of identifier information |
-| Interpreters versus Compilers | Execution-time vs compile-time translation trade-offs |
-| Compiler Construction Tools | Lex, Yacc, and automatic code-generator generators |
+| The Analysis-Synthesis Model | Front end/back end division and the N+M architecture |
+| Phases of Compilation | Detailed phase-by-phase walkthrough of a complete program |
+| Symbol Table Management | Hash-table-based storage with scope handling in TypeScript |
+| Interpreters vs Compilers vs JIT | Performance analysis and trade-off quantification |
+| Compiler Construction Tools | Lex, Yacc, LLVM, and automatic code-generator generators |
 | The Role of Formal Language Theory | Chomsky hierarchy and language classification in compilation |
 | The Evolution of Compiler Architecture | From monoliths through IR to LLVM's three-phase design |
+| Bootstrapping and Cross-Compilation | T-diagrams, self-hosting compilers, retargeting |
 
 ### Chapter Roadmap
 
@@ -34,124 +35,584 @@ flowchart LR
     D --> K[Annotated AST]
     E --> L[Three-Address Code]
     F --> M[Optimized IR]
+
+    subgraph FrontEnd
+        B
+        C
+        D
+    end
+    subgraph BackEnd
+        F
+        G
+    end
+    subgraph IR_Bridge
+        E
+    end
+    style FrontEnd fill:#e3f2fd
+    style BackEnd fill:#fff3e0
+    style IR_Bridge fill:#e8f5e9
 ```
 
 ## Theory
 
-![Compiler Phases Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/compiler-design/ch01-overview.png)
-
 ### The Analysis-Synthesis Model
 
-A compiler is a program that reads a program written in a source language and translates it into an equivalent program in a target language. This translation process is conventionally partitioned into two broad components: the analysis phase (front end) and the synthesis phase (back end). Analysis decomposes the source program into a structured intermediate representation, exposing its grammatical structure and semantic content. Synthesis constructs the desired target program from this intermediate representation, typically performing resource-conscious transformations such as register allocation and instruction selection.
+A **compiler** is a program that reads a program written in a source language and translates it into an equivalent program in a target language. This translation process is conventionally partitioned into two broad components: the **analysis phase** (front end) and the **synthesis phase** (back end). Analysis decomposes the source program into a structured intermediate representation, exposing its grammatical structure and semantic content. Synthesis constructs the desired target program from this intermediate representation, typically performing resource-conscious transformations such as register allocation and instruction selection.
 
-The rationale for this division is modularity. The front end depends only on the source language and is largely independent of the target architecture. The back end depends on the target architecture and is largely independent of the source language. A compiler writer may combine N front ends with M back ends to support N source languages on M target machines, incurring N plus M development efforts rather than N times M. This architecture is prominently realized in the GNU Compiler Collection (GCC) and the LLVM Compiler Infrastructure, where language-specific front ends (C, C++, Fortran, Rust, Swift) share common back ends (x86, ARM, RISC-V, WebAssembly).
+The rationale for this division is modularity. The front end depends only on the source language and is largely independent of the target architecture. The back end depends on the target architecture and is largely independent of the source language. A compiler writer may combine N front ends with M back ends to support N source languages on M target machines, incurring **N + M** development efforts rather than **N × M**. This architecture is prominently realized in the GNU Compiler Collection (GCC) and the LLVM Compiler Infrastructure, where language-specific front ends (C, C++, Fortran, Rust, Swift) share common back ends (x86, ARM, RISC-V, WebAssembly).
 
-> **One-Sentence Takeaway:** The N-plus-M model is the central architectural insight in compiler design â€” it reduces the implementation problem from NÃ—M to N+M.
+> **One-Sentence Takeaway:** The N+M model is the central architectural insight in compiler design — it reduces the implementation problem from N×M to N+M.
 
 > **Pro Tip:** When designing a new language, always plan for an intermediate representation. A well-designed IR lets you target multiple architectures with minimal additional effort.
 
 ### Phases of Compilation
 
-A compiler operates as a pipeline of phases, each transforming one representation of the program into another. The following enumeration proceeds from earliest to latest.
+A compiler operates as a pipeline of phases, each transforming one representation of the program into another. We walk through each phase using a concrete program:
 
-**Lexical analysis** (scanning) reads the stream of characters comprising the source program and groups them into meaningful sequences called lexemes, to which it assigns tokens. A token is a pair comprising a token name and an optional attribute value. Lexical analysis discards whitespace and comments and produces a token stream that serves as input to the syntax analyzer. The scanner is typically implemented as a deterministic finite automaton driven by a transition table, often generated automatically by tools such as Lex or Flex.
+```typescript
+// Source program to compile:
+// result = (a + b) * (c + d) - e / f;
+```
 
-**Syntax analysis** (parsing) imposes a hierarchical grammatical structure on the token stream. Using a context-free grammar that defines the syntax of the source language, the parser constructs a parse tree or its equivalent. This phase detects and reports syntax errors and produces a tree representation that makes explicit the nesting and precedence relationships among language constructs. Parsing may be done top-down (recursive descent, LL) or bottom-up (LR, LALR).
+**Lexical analysis (scanning)** reads the stream of characters and groups them into meaningful sequences called lexemes, to which it assigns tokens. A token is a pair comprising a token name and an optional attribute value. For our example, the scanner produces:
 
-**Semantic analysis** augments the parse tree with type information and other context-sensitive attributes. The semantic analyzer performs type checking, enforces scope rules, and in many compilers annotates the tree with type expressions and symbol table references. An important subtask is name resolution, which associates each occurrence of an identifier with its declaration. Semantic analysis detects errors such as type mismatches, undeclared variables, and incorrect argument counts.
+```
+id(result)   =   (   id(a)   +   id(b)   )   *   (   id(c)   +   id(d)   )   -   id(e)   /   id(f)   ;
+```
 
-**Intermediate code generation** translates the annotated parse tree into a machine-independent intermediate representation. Three-address code, in which each instruction contains at most one operator on the right-hand side, is a common choice. This representation facilitates subsequent optimization and retargeting because it exposes the operations and data dependencies of the source program without committing to a specific instruction set.
+The scanner discards whitespace and comments.
 
-**Code optimization** improves the intermediate representation so that the eventual target code runs faster, occupies less memory, or consumes less energy. Optimizations may be machine-independent, such as constant folding and dead code elimination, or machine-dependent, such as instruction scheduling. Optimization may be applied at multiple levels: local (within a basic block), global (across basic blocks within a function), or interprocedural (across function boundaries).
+**Syntax analysis (parsing)** imposes hierarchical grammatical structure on the token stream. Using a context-free grammar, the parser constructs a parse tree that makes explicit the nesting and precedence relationships:
 
-**Code generation** maps the optimized intermediate representation into the target machine's instruction set. This phase selects machine instructions for each IR operation, allocates registers for variables and temporaries, and resolves addressing modes. The generated code must correctly implement the semantics of the source program while making efficient use of the target machine's resources.
+```mermaid
+graph TD
+    assign["="] --> id_result["id(result)"]
+    assign --> minus["-"]
+    minus --> times["*"]
+    times --> plus1["+"]
+    plus1 --> id_a["id(a)"]
+    plus1 --> id_b["id(b)"]
+    times --> plus2["+"]
+    plus2 --> id_c["id(c)"]
+    plus2 --> id_d["id(d)"]
+    minus --> divide["/"]
+    divide --> id_e["id(e)"]
+    divide --> id_f["id(f)"]
+```
 
-> **One-Sentence Takeaway:** Each compiler phase transforms one representation into another, and the clean separation of these phases is what makes compiler construction tractable.
+**Semantic analysis** augments the parse tree with type information. It determines that all identifiers are `float`, so no implicit conversions are needed. It also resolves each identifier to its declaration via the symbol table and checks that the `-` and `/` operators are defined for float operands.
+
+**Intermediate code generation** translates the annotated parse tree into three-address code (TAC):
+
+```
+t1 = a + b
+t2 = c + d
+t3 = t1 * t2
+t4 = e / f
+t5 = t3 - t4
+result = t5
+```
+
+**Code optimization** improves the IR. If any operands are compile-time constants, constant folding applies. If common subexpressions exist across basic blocks, CSE eliminates redundant computation.
+
+**Code generation** maps TAC to target assembly. On x86-64 with floating-point registers:
+
+```nasm
+movss   xmm0, [a]
+addss   xmm0, [b]
+movss   xmm1, [c]
+addss   xmm1, [d]
+mulss   xmm0, xmm1
+movss   xmm1, [e]
+divss   xmm1, [f]
+subss   xmm0, xmm1
+movss   [result], xmm0
+```
 
 ### Symbol Table Management
 
-The symbol table is a data structure maintained throughout compilation that stores information about identifiers appearing in the source program. Each entry typically contains the identifier's name, type, scope level, memory location (relative or absolute), and possibly other attributes. Symbol tables are commonly implemented as hash tables, binary search trees, or linked lists organized by scope. The scope management strategy must handle nested scopes correctly, ensuring that references resolve to the most recent declaration.
+The symbol table is a data structure maintained throughout compilation that stores information about identifiers. Each entry contains the identifier's name, type, scope level, memory location, and possibly other attributes.
 
-> **One-Sentence Takeaway:** The symbol table is the shared memory of all compiler phases â€” every phase both reads and writes identifier information through it.
+Here is a complete TypeScript implementation of a scope-aware symbol table:
 
-> **Warning:** Scope mismanagement is one of the most common sources of compiler bugs. Always test deeply nested scopes with shadowed identifiers.
+```typescript
+interface SymbolAttributes {
+    type: string;
+    kind: "variable" | "function" | "parameter";
+    scopeLevel: number;
+    offset: number;
+    isInitialized: boolean;
+}
 
-### Interpreters versus Compilers
+class SymbolTable {
+    private scopes: Map<string, SymbolAttributes>[] = [];
+    private currentOffset = 0;
 
-An interpreter performs the operations specified by the source program directly, without first producing a target-language translation. Pure interpretation reanalyzes each statement on every encounter and consequently exhibits slower execution than compiled code. However, interpreters provide a more interactive development environment and are easier to implement for languages with dynamic features such as eval, dynamic typing, and runtime code modification.
+    constructor() {
+        this.enterScope(); // global scope
+    }
 
-Some language processors blend the two approaches. A **just-in-time (JIT) compiler** translates intermediate code into native machine code at runtime, caching the compiled code for repeated execution. Modern virtual machine implementations for Java and .NET employ JIT compilation, combining portability with performance that approaches that of traditional ahead-of-time compilation. JIT systems may also employ adaptive optimization, where frequently executed methods are compiled at higher optimization levels.
+    enterScope(): void {
+        this.scopes.unshift(new Map());
+    }
 
-> **One-Sentence Takeaway:** Compilers trade off startup time for steady-state performance; interpreters do the opposite â€” JIT compilation attempts to get the best of both.
+    exitScope(): Map<string, SymbolAttributes> {
+        const scope = this.scopes.shift();
+        if (!scope) throw new Error("No scope to exit");
+        return scope;
+    }
 
-> **Remember:** Interpreters shine for dynamic languages and rapid prototyping; compilers are essential for production systems where runtime performance matters.
+    declare(
+        name: string,
+        type: string,
+        kind: SymbolAttributes["kind"]
+    ): boolean {
+        const current = this.scopes[0];
+        if (current.has(name)) return false; // already declared in current scope
+        current.set(name, {
+            type,
+            kind,
+            scopeLevel: this.scopes.length - 1,
+            offset: this.currentOffset++,
+            isInitialized: false,
+        });
+        return true;
+    }
+
+    lookup(name: string): SymbolAttributes | undefined {
+        for (const scope of this.scopes) {
+            const entry = scope.get(name);
+            if (entry) return entry;
+        }
+        return undefined;
+    }
+
+    isDeclaredInCurrentScope(name: string): boolean {
+        return this.scopes[0].has(name);
+    }
+
+    markInitialized(name: string): void {
+        const entry = this.lookup(name);
+        if (entry) entry.isInitialized = true;
+    }
+
+    getCurrentOffset(): number {
+        return this.currentOffset;
+    }
+}
+
+// Usage example
+const symtab = new SymbolTable();
+symtab.declare("x", "int", "variable");
+symtab.declare("printf", "(int)→int", "function");
+
+symtab.enterScope(); // block scope
+symtab.declare("x", "float", "variable"); // shadows outer x
+console.log(symtab.lookup("x")?.type); // "float"
+symtab.exitScope();
+
+console.log(symtab.lookup("x")?.type); // "int" (restored)
+```
+
+### Interpreters vs Compilers vs JIT
+
+An **interpreter** performs the operations specified by the source program directly without first producing a target-language translation. Pure interpretation reanalyzes each statement on every encounter. A **compiler** translates the entire program ahead of time (AOT). A **just-in-time (JIT) compiler** translates intermediate code to native machine code at runtime, caching compiled code for repeated execution.
+
+**Performance analysis model:**
+
+Let:
+- `N` = number of statement executions
+- `C_compile` = cost of compiling once (AOT)
+- `C_interpret` = cost of interpreting one statement
+- `C_jit_compile` = cost of JIT compiling a method
+- `C_jit_exec` = cost of executing a JIT-compiled statement
+
+Total costs:
+- **AOT compiler**: `C_compile + N × C_machine`
+- **Interpreter**: `N × C_interpret`
+- **JIT compiler**: `C_jit_compile + N × C_jit_exec`
+
+Typical ratios: `C_interpret ≈ 10-50 × C_machine`, `C_jit_exec ≈ 1.5-3 × C_machine`, `C_jit_compile ≈ 0.1-0.5 × C_compile`.
+
+**Break-even analysis**: A JIT beats interpretation when `C_jit_compile / (C_interpret - C_jit_exec) < N`. For a method executing 10,000+ iterations, JIT almost always wins. JIT beats AOT when startup time matters and total execution is bounded — the JIT compiles only hot paths while AOT compiles everything.
+
+Modern virtual machine implementations for Java (HotSpot) and .NET (RyūJIT) employ JIT compilation, combining portability with performance approaching AOT. JIT systems may also employ **adaptive optimization**, where frequently executed methods are recompiled at higher optimization levels.
+
+### Bootstrapping and Cross-Compilation
+
+**Bootstrapping** is the process of writing a compiler in the source language it compiles. A T-diagram visualizes this:
+
+```mermaid
+graph TD
+    subgraph T-Diagram for Pascal Compiler
+        A["Pascal Source"] --> B["Pascal Compiler (in Pascal)"]
+        B --> C["Machine Code"]
+    end
+    subgraph Bootstrap Step 1
+        D["Pascal Source"] --> E["Pascal Compiler (in Pascal)"]
+        E --> F["Pascal Compiler (in Machine Code)"]
+    end
+    subgraph Bootstrap Step 2
+        G["Pascal Source"] --> H["Pascal Compiler (in Machine Code)"]
+        H --> I["Optimized Pascal Compiler (in Machine Code)"]
+    end
+```
+
+A **T-diagram** is a three-cornered notation: the top corner is the source language, the left corner is the implementation language, and the right corner is the target language. For a compiler `C` that translates `S` to `T` and is written in `L`:
+
+```
+    S → T
+   /     \
+  L       L
+```
+
+**Cross-compilation** occurs when the compiler runs on one platform (the **host**) but produces code for a different platform (the **target**). Cross-compilers are essential for embedded systems where the target device cannot host a compiler (e.g., compiling ARM firmware on an x86 machine).
+
+**Self-hosting**: A compiler is self-hosting when it can compile its own source code. GCC achieved self-hosting in 1992. The bootstrap sequence for a new language typically starts with a minimal compiler in an existing language, then uses that to compile a more complete version, repeatedly until the full compiler is self-hosting.
 
 ### Compiler Construction Tools
 
-A variety of specialized tools automate the construction of compiler components. **Lexical-analyzer generators** such as Lex and Flex accept regular-expression specifications and produce deterministic finite automata as scanning routines. **Parser generators** such as Yacc and Bison accept context-free grammar specifications and produce LALR(1) parsing tables. **Syntax-directed translation engines** integrate semantic actions with grammar productions, automating the construction of attributed parse trees.
+A variety of specialized tools automate the construction of compiler components:
 
-**Automatic code-generator generators** accept a description of the target machine's instruction set and produce instruction-selection routines based on tree-pattern matching. **Data-flow analysis frameworks** provide iterative solvers for reaching-definitions, live-variable, and available-expressions problems. Modern compilers such as GCC and LLVM incorporate many of these tools within a single, integrated infrastructure, providing reusable intermediate representations and analysis passes across multiple language front ends and target back ends.
+| Tool | Phase | Input | Output |
+|------|-------|-------|--------|
+| Lex / Flex | Lexical analysis | Regular expressions | DFA-based scanner in C |
+| Yacc / Bison | Syntax analysis | CFG with actions | LALR(1) parser in C |
+| ANTLR | Parsing + SDT | Grammar with actions | LL(*) parser in Java/TS |
+| LLVM | IR + optimization + codegen | LLVM IR | Machine code (multi-target) |
+| PCCTS / SableCC | Parser generation | Grammar specification | Java/C# parser |
+
+**Automatic code-generator generators** accept a description of the target machine's instruction set and produce instruction-selection routines based on tree-pattern matching. **Data-flow analysis frameworks** provide iterative solvers for reaching-definitions, live-variable, and available-expressions problems.
 
 ### The Role of Formal Language Theory
 
-Formal language theory provides the mathematical foundation for compilation. Regular languages (recognized by finite automata) describe the lexical structure of programming languages. Context-free languages (recognized by pushdown automata) describe their syntactic structure. Context-sensitive attributes, such as the requirement that identifiers be declared before use, are addressed by semantic analysis. The Chomsky hierarchy situates these language classes within a broader theory of computation, establishing the limits of what each compiler phase can and cannot express.
+Formal language theory provides the mathematical foundation for compilation.
+
+| Language Class | Automaton | Compiler Phase | Example |
+|---------------|-----------|---------------|---------|
+| Regular (Type 3) | Finite automaton | Lexical analysis | `[a-zA-Z_][a-zA-Z0-9_]*` |
+| Context-free (Type 2) | Pushdown automaton | Syntax analysis | CFG for expressions |
+| Context-sensitive (Type 1) | Linear bounded automaton | Semantic analysis | Type checking |
+| Recursively enumerable (Type 0) | Turing machine | Optimization / evaluation | Full program behavior |
+
+The **Chomsky hierarchy** situates these language classes within a broader theory of computation, establishing the limits of what each compiler phase can and cannot express. Regular languages describe tokens; context-free languages describe nesting structure. Context-sensitive properties like "declare before use" and type consistency require semantic analysis.
 
 ### The Evolution of Compiler Architecture
 
-Early compilers in the 1950s and 1960s were monolithic programs that translated directly from source to machine code without an explicit intermediate representation. The introduction of intermediate languages, attributed grammars, and formal parsing algorithms in the 1970s led to the modern modular structure. Today, compilers like LLVM employ a three-phase architecture: a language-specific front end produces LLVM IR, a shared optimizer performs passes on the IR, and a target-specific back end generates machine code. This design enables a single optimizer and back end to serve many languages, dramatically reducing implementation effort.
+Early compilers in the 1950s and 1960s (FORTRAN I, 1957) were monolithic programs that translated directly from source to machine code without an explicit intermediate representation. The introduction of intermediate languages, attributed grammars, and formal parsing algorithms in the 1970s led to modern modular structure.
 
-## Examples
+Today, compilers like LLVM employ a **three-phase architecture**:
 
-### Example 1.1: Compilation Pipeline for an Assignment
+1. **Front end**: language-specific, produces LLVM IR
+2. **Optimizer**: shared, performs passes on LLVM IR
+3. **Back end**: target-specific, generates machine code
 
-Consider the source statement `position = initial + rate * 60`. The lexical analyzer produces the token sequence `id = id + id * number`. The parser builds a parse tree reflecting that multiplication has higher precedence than addition. The semantic analyzer determines that the identifiers refer to real-number variables and that the multiplication involves an implicit type conversion of the integer literal. Intermediate code generation emits three-address instructions:
+This design enables a single optimizer and back end to serve many languages, dramatically reducing implementation effort. The `clang` front end (C/C++/Objective-C) and `rustc` (Rust) both target LLVM IR, sharing optimization and code generation.
 
+### TypeScript CompilerPipeline: A Complete Phase Simulator
+
+```typescript
+interface Token {
+    type: string;
+    lexeme: string;
+    line: number;
+    column: number;
+}
+
+interface ASTNode {
+    kind: string;
+    children: ASTNode[];
+    value?: string;
+}
+
+interface TACInstruction {
+    op: string;
+    arg1?: string;
+    arg2?: string;
+    result?: string;
+}
+
+class CompilerPipeline {
+    private source: string;
+    private tokens: Token[] = [];
+    private ast: ASTNode | null = null;
+    private tac: TACInstruction[] = [];
+
+    constructor(source: string) {
+        this.source = source;
+    }
+
+    /** Phase 1: Lexical Analysis */
+    lex(): Token[] {
+        const tokenSpec: [RegExp, string][] = [
+            [/^\s+/, null!],
+            [/^\/\/.*/, null!],
+            [/^[a-zA-Z_]\w*/, "ID"],
+            [/^\d+(\.\d+)?/, "NUMBER"],
+            [/^[+\-*/=();{}]/, "OP"],
+        ];
+        let pos = 0;
+        let line = 1, col = 1;
+        while (pos < this.source.length) {
+            let matched = false;
+            for (const [pattern, type] of tokenSpec) {
+                const match = this.source.slice(pos).match(pattern);
+                if (match) {
+                    if (type !== null) {
+                        this.tokens.push({
+                            type,
+                            lexeme: match[0],
+                            line,
+                            column: col,
+                        });
+                    }
+                    const lines = match[0].split("\n");
+                    line += lines.length - 1;
+                    col = lines.length > 1 ? lines[lines.length - 1].length + 1 : col + match[0].length;
+                    pos += match[0].length;
+                    matched = true;
+                    break;
+                }
+            }
+            if (!matched) throw new Error(`Unexpected char '${source[pos]}' at ${line}:${col}`);
+        }
+        this.tokens.push({ type: "EOF", lexeme: "", line, column: col });
+        return this.tokens;
+    }
+
+    /** Phase 2: Syntax Analysis (recursive descent) */
+    parse(): ASTNode {
+        let idx = 0;
+        const peek = () => this.tokens[idx];
+        const consume = (expected?: string): Token => {
+            const tok = peek();
+            if (expected && tok.type !== expected)
+                throw new Error(`Expected ${expected} got ${tok.type} at ${tok.line}:${tok.column}`);
+            idx++;
+            return tok;
+        };
+
+        const parseExpr = (): ASTNode => {
+            let node = parseTerm();
+            while (peek().lexeme === "+" || peek().lexeme === "-") {
+                const op = consume().lexeme;
+                node = { kind: "BinOp", children: [node, parseTerm()], value: op };
+            }
+            return node;
+        };
+
+        const parseTerm = (): ASTNode => {
+            let node = parseFactor();
+            while (peek().lexeme === "*" || peek().lexeme === "/") {
+                const op = consume().lexeme;
+                node = { kind: "BinOp", children: [node, parseFactor()], value: op };
+            }
+            return node;
+        };
+
+        const parseFactor = (): ASTNode => {
+            if (peek().lexeme === "(") {
+                consume("OP");
+                const node = parseExpr();
+                consume("OP"); // )
+                return node;
+            }
+            const tok = consume("ID");
+            return { kind: "Ident", children: [], value: tok.lexeme };
+        };
+
+        this.ast = parseExpr();
+        return this.ast;
+    }
+
+    /** Phase 3: IR Generation */
+    generateIR(): TACInstruction[] {
+        let tempCount = 0;
+        const newTemp = () => `t${++tempCount}`;
+
+        const emit = (op: string, arg1?: string, arg2?: string): string => {
+            const result = newTemp();
+            this.tac.push({ op, arg1, arg2, result });
+            return result;
+        };
+
+        const codegen = (node: ASTNode): string => {
+            if (node.kind === "Ident") return node.value!;
+            if (node.kind === "BinOp") {
+                const left = codegen(node.children[0]);
+                const right = codegen(node.children[1]);
+                return emit(node.value!, left, right);
+            }
+            throw new Error(`Unknown node ${node.kind}`);
+        };
+
+        codegen(this.ast!);
+        return this.tac;
+    }
+
+    /** Phase 4: Optimization (constant folding) */
+    optimize(): TACInstruction[] {
+        for (const inst of this.tac) {
+            const a1 = parseFloat(inst.arg1 ?? "");
+            const a2 = parseFloat(inst.arg2 ?? "");
+            if (!isNaN(a1) && !isNaN(a2)) {
+                let result: number;
+                switch (inst.op) {
+                    case "+": result = a1 + a2; break;
+                    case "-": result = a1 - a2; break;
+                    case "*": result = a1 * a2; break;
+                    case "/": result = a1 / a2; break;
+                    default: continue;
+                }
+                inst.op = "copy";
+                inst.arg1 = String(result);
+                inst.arg2 = undefined;
+            }
+        }
+        return this.tac;
+    }
+
+    /** Phase 5: Code Generation (to stack VM) */
+    generateAssembly(): string[] {
+        const asm: string[] = [];
+        for (const inst of this.tac) {
+            if (inst.op === "copy") {
+                asm.push(`  PUSH ${inst.arg1}`);
+            } else if (["+", "-", "*", "/"].includes(inst.op)) {
+                asm.push(`  PUSH ${inst.arg1}`);
+                asm.push(`  PUSH ${inst.arg2}`);
+                asm.push(`  ${inst.op === "+" ? "ADD" : inst.op === "-" ? "SUB" : inst.op === "*" ? "MUL" : "DIV"}`);
+            }
+        }
+        return asm;
+    }
+
+    run(): void {
+        console.log("Source:", this.source);
+        console.log("Phase 1 - Tokens:", this.lex());
+        console.log("Phase 2 - AST:", JSON.stringify(this.parse(), null, 2));
+        console.log("Phase 3 - TAC:", this.generateIR());
+        console.log("Phase 4 - Optimized:", this.optimize());
+        console.log("Phase 5 - Assembly:");
+        this.generateAssembly().forEach(l => console.log(l));
+    }
+}
+
+// Demo
+const pipeline = new CompilerPipeline("a+b*c");
+pipeline.run();
 ```
-t1 = int_to_real(60)
-t2 = rate * t1
-t3 = initial + t2
-position = t3
+
+### Error Handling Strategies
+
+Compilers must handle errors gracefully, reporting them clearly without crashing. Four major strategies:
+
+1. **Panic mode**: On error, discard input tokens until a synchronizing token (e.g., `;`, `}`) is found. Simple and prevents cascading errors.
+2. **Phrase-level recovery**: Insert, delete, or replace tokens to complete the current construct (e.g., insert a missing semicolon).
+3. **Error productions**: Augment the grammar with productions that deliberately match common mistakes (e.g., `stmt → error ;`), associating recovery actions.
+4. **Global correction**: Find the minimal edit distance to a valid program (expensive, used in some IDEs).
+
+TypeScript implementation of lexical error recovery:
+
+```typescript
+class ErrorRecoveringLexer {
+    private source: string;
+    private pos = 0;
+    private errors: string[] = [];
+    private tokens: Token[] = [];
+
+    constructor(source: string) { this.source = source; }
+
+    scan(): Token[] {
+        while (this.pos < this.source.length) {
+            try {
+                const token = this.scanToken();
+                if (token) this.tokens.push(token);
+            } catch (e: any) {
+                this.errors.push(e.message);
+                this.pos++; // skip one character and continue
+            }
+        }
+        return this.tokens;
+    }
+
+    private scanToken(): Token | null {
+        // Skip whitespace
+        while (this.pos < this.source.length && /\s/.test(this.source[this.pos]))
+            this.pos++;
+        if (this.pos >= this.source.length) return null;
+        const ch = this.source[this.pos];
+        if (/[a-zA-Z_]/.test(ch)) return this.scanWord();
+        if (/[0-9]/.test(ch)) return this.scanNumber();
+        if ("+-*/=();{}".includes(ch)) return { type: "OP", lexeme: this.source[this.pos++], line: 0, column: 0 };
+        throw new Error(`Unrecognized character '${ch}' at position ${this.pos}`);
+    }
+
+    private scanWord(): Token {
+        const start = this.pos;
+        while (this.pos < this.source.length && /[a-zA-Z0-9_]/.test(this.source[this.pos])) this.pos++;
+        return { type: "ID", lexeme: this.source.slice(start, this.pos), line: 0, column: start };
+    }
+
+    private scanNumber(): Token {
+        const start = this.pos;
+        while (this.pos < this.source.length && /[0-9.]/.test(this.source[this.pos])) this.pos++;
+        return { type: "NUMBER", lexeme: this.source.slice(start, this.pos), line: 0, column: start };
+    }
+
+    getErrors(): string[] { return this.errors; }
+}
 ```
 
-The optimizer may fold the constant conversion or, if the values are known at compile time, perform arithmetic evaluation. The code generator maps these instructions into target assembly language.
+## Practical Takeaways
 
-### Example 1.2: N-plus-M Model
-
-A compiler organization has three front ends (C, C++, Ada) and two back ends (x86-64, ARM64). Under the N-plus-M architecture, the implementation cost is 3 plus 2 equals 5 components plus shared IR infrastructure, as opposed to 3 times 2 equals 6 full compilers. Each additional front end or back end adds only one component rather than a full cross-product.
-
-### Concept Comparison
-
-| Concept | Description | Key Insight |
-|---------|-------------|-------------|
-| Front End (Analysis) | Source-language-dependent phases | Independent of target architecture |
-| Back End (Synthesis) | Target-machine-dependent phases | Independent of source language |
-| Compiler | Static translation to target code | Higher performance, longer build cycle |
-| Interpreter | Direct execution without translation | Faster development, slower execution |
-| JIT Compiler | Runtime dynamic translation | Hybrid approach combining portability and speed |
-
-### Quick Reference
-
-| Phase | Input | Output | Key Data Structure |
-|-------|-------|--------|-------------------|
-| Lexical Analysis | Character stream | Token stream | Deterministic finite automaton |
-| Syntax Analysis | Token stream | Parse tree | Context-free grammar |
-| Semantic Analysis | Parse tree | Annotated AST | Symbol table |
-| IC Generation | Annotated AST | Three-address code | Quadruples / triples |
-| Optimization | TAC / IR | Optimized IR | Flow graph |
-| Code Generation | Optimized IR | Target machine code | Register allocation |
-
-### Cross-Application Matrix
-
-| Domain | Application | Relevance |
-|--------|-------------|-----------|
-| Language Design | Implementing new DSLs | Every language needs a compiler or interpreter |
-| Systems Programming | GCC, LLVM, Rustc | Production compilers implement all phases |
-| Web Development | TypeScript â†’ JavaScript transpilation | Compilation concepts apply to transpilers |
-| Tooling | Linters, formatters, static analyzers | Lexing and parsing form the foundation |
+1. **Always design the IR first**: The intermediate representation is the most consequential architectural decision. A well-designed IR (like LLVM's) enables multi-language, multi-target compilation.
+2. **Scope management in the symbol table**: Use a stack of scopes with enter/exit operations. Always test deeply nested scopes with shadowed identifiers.
+3. **Start with a working interpreter**: For a new language, build an interpreter first. It gives you instant feedback and is much faster to implement than a full compiler.
+4. **Leverage existing tools**: Use Lex/Flex, Yacc/Bison, or ANTLR for the front end. Focus your effort on optimization and code generation where tool support is weaker.
+5. **Error recovery is a feature**: A compiler that crashes on the first error is frustrating. Implement panic-mode recovery early — it costs little but dramatically improves usability.
+6. **Plan for self-hosting**: Even if you never self-host, designing the language to be compilable in itself leads to cleaner semantics.
 
 ## Summary
 
-Compilers translate source programs into target programs through a sequence of phases organized into front end (analysis) and back end (synthesis). Lexical analysis, syntax analysis, semantic analysis, intermediate code generation, optimization, and code generation each transform one representation into another. Interpreters offer flexibility at the cost of execution speed. Specialized tools automate the construction of scanners, parsers, and other compiler components. The modern three-phase architecture with a shared IR enables efficient retargeting across source languages and target machines.
+Compilers translate source programs into target programs through a sequence of phases organized into front end (analysis) and back end (synthesis). Lexical analysis, syntax analysis, semantic analysis, intermediate code generation, optimization, and code generation each transform one representation into another. Interpreters offer flexibility at the cost of execution speed, while JIT compilers attempt to bridge the gap. Specialized tools automate the construction of scanners, parsers, and other compiler components. The modern three-phase architecture with a shared IR enables efficient retargeting across source languages and target machines. Bootstrapping and T-diagrams illustrate how compilers can be self-hosting, and careful error handling strategies ensure robustness.
+
+## Chapter Quiz
+
+1. Which of the following best describes the relationship between the front end and back end of a compiler?
+   - A) The front end generates target code; the back end analyzes source code
+   - B) The front end analyzes source code; the back end synthesizes target code
+   - C) Both front end and back end perform optimization equally
+   - D) The front end is machine-dependent; the back end is language-dependent
+
+2. In the N+M model, how many components are needed for 3 front ends and 4 back ends?
+   - A) 7
+   - B) 12
+   - C) 5
+   - D) 9
+
+3. Which of the following is NOT a phase of compilation?
+   - A) Lexical analysis
+   - B) Syntax analysis
+   - C) Memory management
+   - D) Code generation
+
+4. In a T-diagram, what does the left corner represent?
+   - A) The source language
+   - B) The target language
+   - C) The implementation language
+   - D) The intermediate representation
+
+5. What is the primary advantage of JIT compilation over AOT compilation?
+   - A) JIT always produces faster code
+   - B) JIT compiles only hot paths, reducing startup time
+   - C) JIT requires no runtime
+   - D) JIT eliminates all runtime overhead
+
+<details>
+<summary>Answers</summary>
+1. B, 2. A, 3. C, 4. C, 5. B
+</details>
 
 ## Exercises
 
@@ -166,35 +627,12 @@ Compilers translate source programs into target programs through a sequence of p
 ### Application Problems
 
 1. Consider the source statement `total = (price + tax) * quantity`. Trace the output that each compiler phase would produce. Assume standard operator precedence and floating-point arithmetic.
-2. A compiler has three front ends (C, C++, Java) and two back ends (x86-64, ARM64). How many compiler implementations are required under the N-plus-M model? Explain your reasoning.
+2. A compiler has three front ends (C, C++, Java) and two back ends (x86-64, ARM64). How many compiler implementations are required under the N+M model?
 3. Identify which of the following tasks are performed by the front end and which by the back end: type checking, register allocation, lexical analysis, peephole optimization, intermediate code generation, instruction selection, symbol table management.
-4. For a dynamically typed language like Python, what are the implications of pursuing ahead-of-time compilation versus interpretation? Discuss the trade-offs in terms of development speed, execution performance, and language feature support.
+4. Extend the `CompilerPipeline` class to handle subtraction and division correctly. Add a `parseStmt` method that handles assignment statements (`id = expr;`).
+5. Draw T-diagrams for the following bootstrap scenario: (a) A Pascal-to-C compiler written in Pascal. (b) Using the output of (a) to compile a better Pascal compiler written in C.
 
 ### Challenge Problem
 
-1. Design a minimal two-phase compiler for arithmetic expressions composed of integers, addition, and multiplication. The front end should convert the expression into postfix notation. The back end should evaluate the postfix expression using a stack machine. Implement both phases in your language of choice and demonstrate correct translation and evaluation. Extend your implementation to support subtraction and division, handling the error condition of division by zero with a meaningful error message.
-
-### Chapter Quiz
-
-1. Which of the following best describes the relationship between the front end and back end of a compiler?
-   - A) The front end generates target code; the back end analyzes source code
-   - B) The front end analyzes source code; the back end synthesizes target code
-   - C) Both front end and back end perform optimization equally
-   - D) The front end is machine-dependent; the back end is language-dependent
-
-2. In the N-plus-M model, how many components are needed for 3 front ends and 4 back ends?
-   - A) 7
-   - B) 12
-   - C) 5
-   - D) 9
-
-3. Which of the following is NOT a phase of compilation?
-   - A) Lexical analysis
-   - B) Syntax analysis
-   - C) Memory management
-   - D) Code generation
-
-<details>
-<summary>Answers</summary>
-1. B, 2. A, 3. C
+1. Design a minimal two-phase compiler for arithmetic expressions composed of integers, addition, and multiplication. The front end should convert the expression into postfix notation. The back end should evaluate the postfix expression using a stack machine. Implement both phases in TypeScript and demonstrate correct translation and evaluation. Extend your implementation to support subtraction and division, handling the error condition of division by zero with a meaningful error message. Use the `CompilerPipeline` pattern from this chapter as your starting point.
 </details>

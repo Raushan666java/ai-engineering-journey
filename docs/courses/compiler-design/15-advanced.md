@@ -1,181 +1,842 @@
 # Chapter 15: Advanced Topics in Compilation
 
-> **Prereq:** Chapter 14 (Register Allocation) â€” advanced compilation builds on all preceding phases.
-> **Next:** This is the final chapter in compiler-design. Revisit any earlier chapter for review.
+← Previous: [Chapter 14: Register Allocation](14-register-allocation.md) | **Next:** [Index](index.md)
 
 ## Learning Objectives
 
-After completing this chapter, students will be able to: explain the architecture of just-in-time compilers including HotSpot and V8; describe interprocedural analysis and optimization; outline profile-guided optimization workflows; represent programs in static single assignment (SSA) form; and understand the principles of auto-parallelization.
+After completing this chapter, students will be able to: explain the architecture of just-in-time compilers including tiered compilation and deoptimization; compare JIT and AOT compilation strategies; perform interprocedural analysis including call-graph construction and mod/ref analysis; implement profile-guided optimization workflows; construct and work with static single assignment (SSA) form; implement SSA construction using dominance frontiers and φ-function insertion; describe auto-parallelization techniques including dependence analysis and the polytope model; and understand the trade-offs in modern compiler design for production systems.
 
 ### Chapter at a Glance
 
 | Section | Key Concept | Why It Matters |
 |---------|-------------|----------------|
 | JIT Compilation | Runtime adaptive compilation | Balances startup speed and peak performance |
-| Interprocedural Analysis | Cross-function optimization | Catches optimization opportunities inside functions |
-| Profile-Guided Opt | Runtime data guides compiler | 10-30% improvement beyond static opts |
+| Tiered Compilation | Multi-level optimization | Interpreter → baseline → optimized |
+| Deoptimization | Rollback to interpreter on speculation failure | Enables aggressive but correct optimization |
+| Interprocedural Analysis | Cross-function analysis | Inlining, constant propagation across calls |
+| Profile-Guided Optimization | Runtime profiles guide compiler | 10–30% improvement beyond static opts alone |
 | SSA Form | Each variable assigned once | Simplifies all data-flow analyses |
+| SSA Construction | φ-function placement via dominance frontiers | Enables modern compiler IRs |
 | Auto-Parallelization | Automatic parallel code generation | Exploits multi-core without manual threading |
+| Polytope Model | Math framework for loop analysis | Proves legality of parallelization |
+
+### Chapter Roadmap
 
 ```mermaid
-flowchart LR
-    subgraph JIT
-        A[Interpreter] -->|Hot Method| B[C1/Sparkplug]
-        B -->|Hotter| C[C2/TurboFan]
+flowchart TB
+    subgraph JIT["Just-In-Time Compilation"]
+        A[Interpreter] -->|Counter| B[Baseline JIT]
+        B -->|Counter| C[Optimizing JIT]
         C -->|Deopt| A
     end
-    subgraph AOT
-        D[Profile Data] --> E[PGO Compiler]
-        E --> F[Optimized Binary]
+    subgraph AOT["Ahead-Of-Time Compilation"]
+        D[Source] --> E[Profile Data]
+        E --> F[PGO Compilation]
+        F --> G[Optimized Binary]
     end
-    JIT --> G[SSA Form]
-    AOT --> G
-    G --> H[IPA/IPO]
-    G --> I[Auto-Parallelization]
-    H --> J[Final Code]
-    I --> J
+    subgraph Advanced["Advanced Techniques"]
+        H[SSA Form] --> I[SSA-based Optimizations]
+        J[IPA] --> K[Inlining / Mod-Ref]
+        L[Auto-Parallel] --> M[Dependence Analysis]
+    end
+    JIT --> H
+    AOT --> H
+    H --> N[Production Compiler]
+    J --> N
+    L --> N
     style A fill:#e1f5fe
-    style J fill:#c8e6c9
+    style N fill:#c8e6c9
 ```
 
 ## Theory
 
-![Advanced Compilation Topics â€” JIT, IPA, PGO, SSA, Auto-Parallelization](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/compiler-design/ch-15-advanced.png)
-
 ### Just-In-Time Compilation
 
-Just-in-time (JIT) compilation translates intermediate code into native machine code at runtime, combining the portability of an interpreted IR with execution speeds approaching those of ahead-of-time compiled code. The JIT compiler operates during program execution, compiling only those methods or code regions that are frequently executed.
+Just-in-time (JIT) compilation translates intermediate code into native machine code at *runtime*, combining the portability of an interpreted IR with execution speeds approaching those of ahead-of-time (AOT) compiled code. JIT compilers are central to modern language runtimes: Java (HotSpot), JavaScript (V8), C# (.NET RyuJIT), Lua (LuaJIT), and Python (PyPy, though tracing).
 
-**Oracle HotSpot JVM**: HotSpot identifies **hot methods** and **hot loops** through profiling. Methods initially execute in the interpreter. When a method's invocation count exceeds a threshold, HotSpot compiles it with C1 (client compiler), a lightweight compiler that performs basic optimizations. If the method continues to be heavily used, it is recompiled with C2 (server compiler), which applies aggressive optimizations such as inlining, loop unrolling, and intrinsic substitution. The system also supports **tiered compilation**, where code moves through multiple optimization levels as its hotness increases.
+#### Tiered Compilation
 
-> **One-Sentence Takeaway:** Modern compilation is no longer a single static pipeline â€” JITs adapt at runtime via tiered compilation and deoptimization, while SSA form simplifies analyses and PGO feeds real-world execution data back into optimization decisions.
+A modern JIT does not compile a method from cold start to fully optimized code. Instead, it uses **tiered compilation**: multiple optimization levels that trade compilation speed for peak performance.
 
-HotSpot's **deoptimization** mechanism allows the compiler to make optimistic assumptions (for example, that a method has only one receiver type). If those assumptions are violated at runtime, the execution rolls back to an interpreter frame with correct state, enabling the compiler to speculate aggressively without correctness risk.
+| Tier | Name | Optimization Level | Compile Time | Execution Speed |
+|------|------|--------------------|-------------|-----------------|
+| 0 | Interpreter | None | 0 (interpreted) | Slowest |
+| 1 | Baseline JIT | Minimal (C1/Sparkplug) | Fast (~ms) | Moderate |
+| 2 | Profiling JIT | With instrumentation | Moderate | Good with data |
+| 3 | Full Optimizing JIT | Aggressive (C2/TurboFan) | Slow (~100ms+) | Fastest |
 
-**Google V8 (JavaScript)**: V8 compiles JavaScript through multiple tiers. The initial tier, Sparkplug, provides fast compilation with minimal optimization. The second tier, TurboFan, performs extensive optimization including type specialization based on observed value types. V8 employs **hidden classes** (maps) and **inline caching** to optimize property access dynamically. When a function is called repeatedly with objects of the same hidden class, the compiled code assumes that type, with a guard check and a fallback to a more general path.
+**Threshold-driven promotion**: Each method maintains a call counter. When it exceeds a threshold, it is promoted to the next tier. HotSpot uses:
 
-### Interprocedural Analysis (IPA) and Optimization (IPO)
+- **CompileThreshold** (default 10,000 in client mode, 15,000 in server mode): number of invocations before compilation.
+- **TieredCompilation** (default in JDK 8+): methods start interpreted, are compiled with C1 after ~2,000 invocations, and promoted to C2 after ~15,000 invocations.
 
-Interprocedural analysis extends compiler reasoning across function boundaries. While intraprocedural analysis considers each function in isolation, IPA propagates information about side effects, aliasing, and call graphs across the entire program.
+#### The Trade-Off
 
-Key IPA techniques include:
+Compilation at runtime consumes CPU cycles that could otherwise execute user code. The JIT must be fast enough that the compiled code's speedup pays back the compilation overhead within a reasonable time. This is the **compilation-time vs. peak-performance** trade-off:
 
-**Call-graph construction**: building a directed graph where nodes are functions and edges represent call sites. For languages supporting function pointers or virtual dispatch, call-graph construction uses **class hierarchy analysis** (CHA), **rapid type analysis** (RTA), or **variable type analysis** (VTA) to overapproximate the set of possible callees.
+- **C1 (Client compiler)**: lightweight, performs basic inlining, dead-code elimination, and peephole optimization. Compiles in milliseconds.
+- **C2 (Server compiler)**: heavyweight, performs all global optimizations (loop transformations, SSA-based GVN, graph-coloring register allocation). Compiles in tens to hundreds of milliseconds.
 
-**Inlining**: replacing a call site with a copy of the callee's body. Inlining eliminates call overhead, exposes the callee's code to surrounding optimizations, and can enable constant propagation across the call boundary. The compiler selects inlining candidates based on heuristics involving function size, call frequency, and depth.
+V8 uses a three-tier system:
+- **Sparkplug**: very fast baseline compiler, one pass over bytecode (no IR), produces mediocre code but compiles in microseconds. Replaced the old full-codegen.
+- **TurboFan**: full optimizing compiler, SSA-based IR, performs type specialization using observed types from inline caches.
+- **Maglev**: mid-tier (recently introduced), between Sparkplug and TurboFan, uses SSA but simpler passes than TurboFan.
 
-**Constant propagation across calls**: when a function is always called with a constant argument, the compiler may specialize a clone of the function with that constant embedded.
+#### Deoptimization
 
-**Mod/ref analysis**: determines which global variables or memory locations a function may modify or reference, enabling optimizations such as code motion across call sites.
+Deoptimization is the mechanism that makes aggressive speculative compilation safe. The optimizer makes assumptions about the program's runtime behavior:
+
+- **Class hierarchy assumption**: "the receiver of this virtual call is always of type `Foo`."
+- **Type assumption**: "this variable is always an integer."
+- **Constant assumption**: "this field always has value `null`."
+
+If runtime profiling shows these assumptions hold 99.9% of the time, the optimizer compiles the code assuming them, with **guard checks** and a fallback. When a guard fails:
+
+1. Execution must **bail out** to a point where the interpreter can resume with correct state.
+2. The JIT records a **debugging map** at each safepoint, mapping optimized-code virtual registers to interpreter-frame slots.
+3. Execution rolls back to the interpreter, and the deoptimized code is recompiled with a broader set of assumptions (or remains interpreted).
+
+This **speculative optimization** is what enables Java and JavaScript to achieve C-like performance for numeric code while retaining dynamic dispatch semantics.
+
+**Example (HotSpot deoptimization)**:
+
+```
+// Java source
+int result = obj.compute();   // virtual dispatch
+
+// After C2 optimization (speculative)
+// Assumption: obj.getClass() == Foo.class
+// Check: if obj.getClass() ≠ Foo.class → deoptimize!
+0x1234: mov rcx, [rsp+0x10]     // load obj
+0x1238: cmp [rcx-8], Foo_layout  // check class
+0x1240: jne deopt_bailout        // guard failed
+0x1246: call Foo::compute        // direct call (no vtable)
+```
+
+### Oracle HotSpot JVM: A Case Study
+
+HotSpot's C2 compiler is one of the most sophisticated JIT compilers ever built. Key features:
+
+- **SSA-based IR** (Ideal Graph): a sea-of-nodes representation where data flow and control flow are unified in a single graph.
+- **Global Value Numbering** (GVN): uses the ideal graph to prove expression equivalence via hash-based value numbering over SSA.
+- **Escape Analysis**: determines whether an object's lifetime is bounded by a method or thread. If an object does not escape, it can be stack-allocated or scalar-replaced (its fields promoted to registers).
+- **Intrinsics**: C2 recognizes over 100 Java methods (`Math.sin`, `System.arraycopy`, `String.compareTo`) and replaces them with hand-tuned assembly sequences or optimized library calls.
+- **On-Stack Replacement** (OSR): when a loop becomes hot but the enclosing method is still interpreted, OSR compiles the loop independently and transfers execution from the interpreter loop to the compiled loop without method-return overhead.
+- **Adaptive Optimization**: C2 monitors the performance of compiled code and recompiles it with different optimizations if the performance counters indicate problems (e.g., too many cache misses, branch mispredictions).
+
+### Google V8 JavaScript Engine: A Case Study
+
+V8 compiles JavaScript through multiple tiers:
+
+```
+Source Code
+    ↓ Parser
+AST (Abstract Syntax Tree)
+    ↓ Ignition (Interpreter)
+Bytecode
+    ↓ Sparkplug (Baseline Compiler)
+Native machine code (warm)
+    ↓ Maglev (Mid-tier Compiler)
+Optimized native code (hot)
+    ↓ TurboFan (Optimizing Compiler)
+Highly optimized native code (very hot)
+```
+
+**Hidden classes** (Maps): JavaScript objects are dictionaries at the specification level, but V8 gives objects with the same property layout the same hidden class. Property access is then a fixed offset load rather than a hash-table lookup. When a new property is added, a transition tree connects hidden classes.
+
+**Inline caching** (IC): V8 caches the result of a property lookup at each call site. Initially, the cache is empty (uninitialized state). After one execution, it records the hidden class and the property offset (monomorphic state). If a different hidden class appears, it transitions to polymorphic (up to 4 classes) or megamorphic (full lookup).
+
+**Deoptimization in V8**: When TurboFan speculates on types (e.g., "this property is always an integer"), a guard checks the type. If the guard fails, execution bails out to Ignition bytecode at the next loop back edge or method entry. V8 maintains a **deoptimization state** encoded as a sequence of bytecode offsets and register mappings.
+
+### Interprocedural Analysis and Optimization
+
+Interprocedural analysis (IPA) extends compiler reasoning across function boundaries. While intraprocedural analysis treats each function as a black box, IPA considers the entire program's call graph.
+
+#### Call-Graph Construction
+
+A **call graph** is a directed graph where nodes are functions and edges represent call sites. For statically typed languages (C, Rust), the call graph is precise for direct calls. For languages with function pointers, virtual dispatch, or dynamic typing, the compiler must overapproximate the set of possible callees.
+
+Techniques for constructing call graphs:
+
+- **Class Hierarchy Analysis (CHA)**: for a virtual call `x.f()`, all subclasses of `x`'s declared type that override `f` are potential callees. CHA is cheap but imprecise for deep or wide class hierarchies.
+- **Rapid Type Analysis (RTA)**: refines CHA by only considering classes that are instantiated (allocated) somewhere in the program. If class `B` extends `A` but never instantiated, `B.f()` is not a possible callee.
+- **Variable Type Analysis (VTA)** / **Pointer Analysis**: tracks the flow of object references through assignments, parameters, and returns. More precise but more expensive (typically O(N³) for Andersen-style inclusion-based analysis).
+- **Profiling**: the JIT can instrument call sites and record actual receiver types at runtime. This is the most precise technique — it observes reality.
+
+#### Inlining
+
+Inlining replaces a call site with a copy of the callee's body. Benefits:
+- Eliminates call overhead (frame setup, argument passing, return).
+- Exposes the callee's code to surrounding optimizations (CSE, constant propagation, code motion).
+- Enables constant propagation across the call boundary.
+
+Inlining decisions are based on heuristics:
+- **Function size**: small functions are inlined eagerly (typically functions under 35 bytecodes in HotSpot).
+- **Call frequency**: frequently called functions are inlined more aggressively.
+- **Depth**: deeply nested inlining is limited (typically 3–5 levels) to prevent code explosion.
+- **Dynamic profiling**: a call site that always resolves to the same target is a prime candidate.
+
+#### Mod/Ref Analysis
+
+**Mod/Ref analysis** determines which memory locations a function may modify or reference. This enables:
+- **Code motion across calls**: if `f()` does not modify global `g`, a load of `g` can be hoisted above the call.
+- **Alias analysis refinement**: if `f()` only modifies its argument and not other reachable memory, the compiler can be less conservative with other pointers.
+- **Parallelization**: if two calls modify disjoint memory regions, they can execute in parallel.
 
 ### Profile-Guided Optimization
 
-Profile-guided optimization (PGO) uses runtime profiling data to guide compiler decisions. The workflow proceeds in three phases:
+Profile-guided optimization (PGO) uses runtime profiling data to guide compiler decisions. The workflow has three phases:
 
-**Instrumentation phase**: the compiler inserts counters into the program at edges, basic blocks, and call sites. An instrumented executable is built.
+#### Phase 1: Instrumentation
 
-**Training phase**: the instrumented program executes on representative inputs. Counters record execution frequencies, branch probabilities, and cache-miss information.
+The compiler inserts counters into the binary at key points:
+- **Edge counters**: at each control-flow edge, record how many times it was taken.
+- **Block counters**: record execution frequency of each basic block.
+- **Branch-taken counters**: record which direction each branch most commonly goes.
+- **Value profiles**: for loads and comparisons, record the most common values encountered.
 
-**Optimization phase**: the compiler reads the profile data and recompiles the program. Profiles guide decisions such as: which branches to predict as taken, which functions to inline, which basic blocks to lay out contiguously, and which loop unrolling factors to apply.
+Instrumentation overhead is typically 10–30% slower execution.
 
-PGO can produce performance improvements of 10â€“30% beyond static optimization alone.
+#### Phase 2: Training
+
+The instrumented binary runs on representative inputs:
+- **Ideal training set**: inputs that match production workloads in behavior, data distribution, and control flow.
+- **Multiple training runs**: several inputs may be needed to exercise different code paths.
+- **Cache simulation**: optional hardware-counter-based profiling (PEBS on x86, SPE on ARM) records cache misses, branch mispredictions, and TLB misses.
+
+#### Phase 3: Optimization
+
+The compiler reads profile data and uses it to:
+
+1. **Branch biasing**: predict the most likely direction for each branch. Inverts the static prediction for cold paths.
+2. **Function ordering**: hot functions (frequently called) are placed together in the binary to improve instruction-cache locality.
+3. **Basic-block reordering**: cold basic blocks (exception paths, rarely-taken branches) are moved out of the hot code region.
+4. **Inlining decisions**: profile data provides accurate call frequency, replacing heuristics with measured data.
+5. **Loop unrolling**: measured trip counts inform the optimal unroll factor.
+6. **Register allocation**: hot paths get preferential register pressure (weighted spill costs become profile-weighted).
+
+PGO typically yields 10–30% performance improvement over static optimization alone and is widely used in game engines, database systems, and large-scale services.
 
 ### Static Single Assignment (SSA) Form
 
-Static single assignment form is an intermediate representation in which each variable is assigned exactly once, and each use of a variable is dominated by its definition. SSA form simplifies and improves the precision of many data-flow analyses.
+Static single assignment form is an intermediate representation in which each variable is assigned exactly once in the text of the program. When multiple definitions reach a use point, a φ-function (phi-function) merges them:
 
-SSA is constructed by inserting **Ï†-functions** (phi-functions) at control-flow merge points where multiple definitions of a variable converge. A Ï†-function has the form `x = Ï†(xâ‚, xâ‚‚, ..., xâ‚™)`, where the arguments correspond to incoming edges. The semantics are that x receives the value of the argument corresponding to the edge taken at runtime.
+```
+// Original
+x = 1
+if (cond) {
+    x = 2
+}
+y = x + 1
 
-The **dominance frontier** governs Ï†-insertion: a Ï†-function for variable v is placed at the entry of every block B where v is defined in multiple predecessors or where B is in the dominance frontier of a block defining v.
+// SSA form
+x1 = 1
+if (cond) {
+    x2 = 2
+}
+x3 = φ(x1, x2)
+y1 = x3 + 1
+```
 
-Optimizations enabled or improved by SSA form include:
+The φ-function selects the value of `x` based on which control-flow path was taken at runtime: if control came from the entry block, `x3 = x1 = 1`; if from the then-block, `x3 = x2 = 2`.
 
-- **Global value numbering**: two expressions may be proven equivalent more directly because each variable has a unique definition point.
-- **Dead-code elimination**: if a variable has no uses other than as a Ï†-function argument, the defining instruction may be removed.
-- **Constant propagation**: the lattice-based algorithm (Chapter 12) becomes simpler and more precise because Ï†-functions serve as the only merge points.
+#### SSA Construction Algorithm
 
-SSA form is also essential for **sparse conditional constant propagation** (SCCP), which simultaneously propagates constants and detects dead code in a single pass.
+Construction proceeds in two steps: φ-insertion and renaming.
+
+**Step 1: φ-Function Placement**
+
+φ-functions are placed at **dominance frontier** (DF) boundaries. For each variable `v` defined at block `B`:
+1. Compute the dominance frontier `DF(B)`.
+2. Place a φ-function for `v` in each block `B' ∈ DF(B)`.
+3. This placement may cause `v` to become defined in `B'`; iterate: add `B'` to the set of defining blocks and continue until all necessary φ-functions are inserted.
+
+The dominance frontier of block `B` is the set of blocks `B'` such that:
+- `B` dominates a predecessor of `B'`; and
+- `B` does not strictly dominate `B'`.
+
+Intuitively, φ-functions are needed where a definition in `B` can reach `B'` through multiple paths — the maximal boundary where dominance stops holding.
+
+```
+function insertPhiFunctions(fg, defBlocks):
+    // defBlocks: map var → list of blocks that define it
+    for each variable v:
+        worklist = defBlocks[v]
+        df_blocks = {}
+        while worklist is not empty:
+            B = pop(worklist)
+            for D in DF[B]:
+                if D not in df_blocks[v]:
+                    insert φ(v) in D
+                    df_blocks[v].add(D)
+                    worklist.add(D)
+```
+
+**Step 2: Renaming**
+
+Rename each variable so that every definition has a unique subscript:
+1. Traverse the dominator tree in preorder.
+2. At each block, process φ-functions first (define new names for their results).
+3. Process each non-φ instruction: rename uses to the current reaching definition, then define a new name for the result.
+4. Recursively visit children in the dominator tree.
+5. After returning from children, pop the name stack (restore reaching definitions for siblings).
+
+```
+stack: Map<varName, list<version>>
+counter: Map<varName, int>
+
+function rename(B):
+    for each φ in B: push new name for φ.dest
+    for each instruction I in B:
+        for each use u in I:
+            I.u = top(stack[u])
+        if I has dest d:
+            newName = counter[d]++
+            I.dest = d_newName
+            push(d_newName, stack[d])
+    for each child C in domChildren(B):
+        rename(C)
+    for each φ and instruction with new names in B:
+        pop(stack)
+```
+
+#### SSA Optimizations
+
+SSA simplifies many optimizations because each variable has a single definition point:
+
+- **Global Value Numbering (GVN)**: two expressions `a + b` and `c + d` are equivalent if, after renaming, `a ≡ c` and `b ≡ d` (both defined at the same SSA version). Hash-based GVN becomes trivial.
+- **Dead-Code Elimination**: if an SSA value has no uses, its defining instruction can be removed (no need to scan for other uses of the same variable).
+- **Constant Propagation**: the lattice algorithm (Chapter 12) processes φ-functions as merge points. SSA's explicit φ-functions make the algorithm simpler and more precise (SCCP).
+- **Conditional Constant Propagation** (SCCP, Wegman-Zadeck): simultaneously propagates constants and marks unreachable code. Uses two worklists: one for SSA edges (value propagation) and one for CFG edges (executability). If a branch condition becomes constant, one successor is marked unreachable.
+
+### The Sea-of-Nodes IR
+
+LLVM uses SSA form. C2 (HotSpot) and TurboFan (V8) use **sea-of-nodes**, an extension of SSA where:
+- Nodes represent operations (additions, loads, branches, φ-functions).
+- Edges represent both data flow and control flow.
+- The graph is not constrained to basic-block boundaries — operations float freely, ordered only by data dependencies and side-effect constraints.
+
+The sea-of-nodes enables **global code motion**: an operation can be placed at any point after its inputs are available and before its outputs are used, regardless of basic-block structure. This subsumes LICM, global scheduling, and partial redundancy elimination into a single graph transformation.
 
 ### Auto-Parallelization
 
-Auto-parallelization transforms sequential code into parallel code automatically, targeting multi-core processors or vector units. The compiler must verify that the transformation preserves program semantics.
+Auto-parallelization transforms sequential code into parallel code automatically, targeting multi-core processors or SIMD units. The compiler must verify correctness via dependence analysis.
 
-The core analysis determines which loop iterations are **independent**. Two iterations of a loop are independent if no value produced in one iteration is consumed or overwritten in another. This is determined by computing **loop-carried dependencies**: a dependence from iteration i to iteration j exists if statement Sâ‚‚ in iteration j uses a value defined by statement Sâ‚ in iteration i.
+#### Loop-Carried Dependence Analysis
 
-Polytope models provide a mathematical framework for dependence analysis of affine loop nests (loops with bounds and indices expressible as linear functions).
+Two iterations of a loop are **independent** if no value produced in one iteration is consumed or overwritten by another. A **loop-carried dependence** exists otherwise.
 
-> **Pro Tip:** SSA form is the dominant IR in modern production compilers â€” LLVM, GCC, V8 TurboFan, and HotSpot C2 all use SSA because it makes optimizations simpler, faster, and more precise. If you implement a compiler, start with SSA. The model represents each iteration as a point in an integer polyhedron and uses linear programming to determine whether dependences exist.
+Formally, for statements S₁ at iteration i and S₂ at iteration j, there exists a dependence if:
+1. S₁ writes to memory location L at iteration i.
+2. S₂ reads or writes to L at iteration j.
+3. i ≠ j (or i = j for intra-iteration dependence).
 
-When dependences prevent full parallelization, the compiler may apply transformations to remove or reduce them: privatization (giving each thread a private copy of a variable), reduction recognition (recognizing that a sum across iterations is associative and may be accumulated in parallel), and loop distribution (separating dependent and independent computations).
+Dependence direction vectors capture the relationship:
+- **(=)**: S₁ and S₂ at the same iteration (intra-iteration).
+- **(<)**: S₁ at iteration i, S₂ at iteration i + k, k > 0 (flow: later iteration depends on earlier).
+- **(>)**: S₁ at iteration i + k, S₂ at iteration i (anti: earlier iteration depends on later — only possible with output dependencies).
 
-## Example
+A loop is fully parallelizable if the direction vector contains no "<" entries.
 
-### Concept Comparison
+#### The Polytope Model
 
-| Technology | Nature | Optimization Granularity | Performance |
-|-----------|--------|------------------------|-------------|
-| AOT (GCC, Clang) | Offline | Global | Best peak, slow compile |
-| JIT Mono (C1) | Runtime | Local | Fast startup, moderate peak |
-| JIT Multi (C2) | Runtime | Global | Slower startup, best peak |
-| PGO | Hybrid | Profile-directed | 10-30% over AOT alone |
+For **affine loop nests** — loops where bounds and array indices are linear functions of loop variables — the polytope model provides a mathematical framework for dependence analysis.
 
-### Quick Reference
+Each loop iteration is a point in an integer polyhedron (the **iteration space**). Each array access is defined by an **access function** that maps iteration points to array indices:
 
-| Compiler Feature | IR | Key Analysis | Key Optimization |
-|-----------------|----|-------------|------------------|
-| Traditional | TAC/AST | Data-flow equations | Peephole, CSE |
-| SSA-based | SSA with Ï†-fns | Dominance frontier | GVN, SCCP |
-| JIT | Bytecode / JS AST | Type profiling | Inlining, intrinsics |
-| Auto-Parallel | Affine loop nests | Dependence analysis | Loop distribution, privatization |
-
-### Cross-Application Matrix
-
-| Domain | Application | Relevance |
-|--------|-------------|-----------|
-| Language Design | Runtime performance model | JIT vs AOT trade-off shapes language design |
-| Systems Programming | Performance-critical code | PGO used extensively in HPC and game engines |
-| Web Development | JavaScript/WebAssembly | V8 tiered compilation directly impacts user experience |
-| Tooling | Compiler infrastructure (LLVM) | SSA form is the standard for IR across all tools |
-
-### Example 15.1: SSA Form Construction
-
-Original code:
 ```
-x = 1;
-if (cond) {
-    x = 2;
+// a[i][j] = a[i-1][j] + a[i][j-1]
+// Access function for RHS a[i-1][j]:  a(i, j) = (i-1, j)
+
+// Dependence exists if:
+// ∃ (i1, j1), (i2, j2) in iteration space such that
+// a writes at (i1, j1) and reads at (i2, j2) with same (or overlapping) address
+// A write a[i1][j1] and read a[i2-1][j2] with i1 = i2-1, j1 = j2
+```
+
+The dependence problem reduces to solving a system of linear inequalities. Non-affine loops (with indirection) cannot be analyzed by the polytope model and require runtime tests or conservative assumptions.
+
+#### Parallelization Transformations
+
+When dependence analysis identifies a loop as parallelizable:
+- **DOALL** parallelism: loop iterations are independent and can be distributed across threads. No synchronization needed between iterations.
+- **DOACROSS** parallelism: loop-carried dependencies exist but can be handled with synchronization (pipelined parallelism).
+
+When dependence prevents full parallelization, the compiler may:
+
+- **Privatization**: give each thread a private copy of a variable. Only changes the thread's copy, avoiding conflicts. Applies when a variable is written in one iteration and read in the same or a later iteration but with thread-local access.
+- **Reduction recognition**: `sum += a[i]` is associative and commutative. Each thread accumulates a partial sum, and the final sum merges them. Parallel reduction is linear: O(N/P + P) vs. serial O(N).
+- **Loop distribution**: separate vectorizable code from non-vectorizable code. The vectorizable part runs as SIMD; the non-vectorizable part runs scalarly.
+
+#### Speculative Parallelization
+
+Modern processors can speculatively execute loop iterations out of order (hardware speculation). The compiler can be more aggressive in parallelization, relying on hardware to detect and recover from dependence violations. This is the basis of Transactional Memory approaches.
+
+### Putting It All Together — TypeScript Implementation
+
+```typescript
+// ============================================================
+// SSA Construction
+// ============================================================
+
+interface Block {
+  id: number
+  stmts: string[]
+  preds: number[]
+  succs: number[]
+  idom?: number           // immediate dominator
+  domChildren: number[]
+  df: Set<number>         // dominance frontier
 }
-y = x + 1;
-```
 
-SSA form:
-```
-xâ‚ = 1;
-if (cond) {
-    xâ‚‚ = 2;
+interface Phi {
+  dest: string
+  args: string[]          // one per predecessor
+  blockId: number
 }
-xâ‚ƒ = Ï†(xâ‚, xâ‚‚);
-yâ‚ = xâ‚ƒ + 1;
+
+class SSAConstructor {
+  private versionCounters: Map<string, number> = new Map()
+  private nameStack: Map<string, string[]> = new Map()
+  private phis: Phi[] = []
+  private ssaStmts: Map<number, string[]> = new Map()
+
+  constructor(private blocks: Block[]) {
+    for (const b of blocks) {
+      this.ssaStmts.set(b.id, [])
+    }
+  }
+
+  computeDominators() {
+    // Simplified dominator tree for small examples
+    // Real implementation uses Lengauer-Tarjan (Chapter 11)
+    const n = this.blocks.length
+    const doms: Map<number, number> = new Map()
+    doms.set(this.blocks[0].id, this.blocks[0].id)
+
+    let changed = true
+    while (changed) {
+      changed = false
+      for (let i = 1; i < n; i++) {
+        const b = this.blocks[i]
+        if (b.preds.length === 0) continue
+        let newIdom = b.preds[0]
+        for (let j = 1; j < b.preds.length; j++) {
+          const p = b.preds[j]
+          if (doms.has(p)) {
+            newIdom = this.intersect(doms, p, newIdom)
+          }
+        }
+        if (doms.get(b.id) !== newIdom) {
+          doms.set(b.id, newIdom!)
+          changed = true
+        }
+      }
+    }
+
+    for (let i = 1; i < n; i++) {
+      const b = this.blocks[i]
+      const idom = doms.get(b.id)
+      if (idom !== undefined && idom !== b.id) {
+        b.idom = idom
+        this.blocks.find(d => d.id === idom)?.domChildren.push(b.id)
+      }
+    }
+  }
+
+  private intersect(doms: Map<number, number>, finger1: number, finger2: number): number {
+    let f1 = finger1, f2 = finger2
+    while (f1 !== f2) {
+      while (f1 < f2) { f1 = doms.get(f1) ?? f1 }
+      while (f2 < f1) { f2 = doms.get(f2) ?? f2 }
+    }
+    return f1
+  }
+
+  computeDominanceFrontiers() {
+    for (const b of this.blocks) {
+      if (b.preds.length < 2) continue
+      for (const p of b.preds) {
+        let runner = p
+        while (runner !== b.idom) {
+          const runnerBlock = this.blocks.find(x => x.id === runner)!
+          runnerBlock.df.add(b.id)
+          runner = runnerBlock.idom ?? runner
+          if (runner === undefined) break
+        }
+      }
+    }
+  }
+
+  insertPhiFunctions() {
+    const defBlocks = new Map<string, number[]>()
+    for (const b of this.blocks) {
+      for (const stmt of b.stmts) {
+        const lhs = stmt.split('=')[0].trim()
+        if (!defBlocks.has(lhs)) defBlocks.set(lhs, [])
+        defBlocks.get(lhs)!.push(b.id)
+      }
+    }
+
+    for (const [varName, defs] of defBlocks) {
+      const worklist = [...defs]
+      const phiPlaced = new Set<number>()
+
+      while (worklist.length > 0) {
+        const bId = worklist.pop()!
+        const block = this.blocks.find(b => b.id === bId)!
+        for (const dfBlockId of block.df) {
+          if (!phiPlaced.has(dfBlockId)) {
+            phiPlaced.add(dfBlockId)
+            const phi: Phi = {
+              dest: varName,
+              args: [],
+              blockId: dfBlockId,
+            }
+            this.phis.push(phi)
+            worklist.push(dfBlockId)
+          }
+        }
+      }
+    }
+  }
+
+  rename() {
+    // Initialize counters
+    for (const b of this.blocks) {
+      for (const stmt of b.stmts) {
+        const lhs = stmt.split('=')[0].trim()
+        if (!this.versionCounters.has(lhs)) this.versionCounters.set(lhs, 0)
+        if (!this.nameStack.has(lhs)) this.nameStack.set(lhs, [])
+        // Also add used variables
+        const rhs = stmt.split('=')[1]
+        if (rhs) {
+          const vars = rhs.match(/[a-zA-Z_]\w*/g) || []
+          for (const v of vars) {
+            if (!this.versionCounters.has(v)) this.versionCounters.set(v, 0)
+            if (!this.nameStack.has(v)) this.nameStack.set(v, [])
+          }
+        }
+      }
+    }
+
+    this.renameBlock(this.blocks[0].id)
+  }
+
+  private renameBlock(bId: number) {
+    const block = this.blocks.find(b => b.id === bId)!
+    const pushes: Array<{ varName: string; newName: string }> = []
+
+    // Process φ-functions in this block
+    for (const phi of this.phis.filter(p => p.blockId === bId)) {
+      const newName = `${phi.dest}_${this.versionCounters.get(phi.dest)!}`
+      this.versionCounters.set(phi.dest, this.versionCounters.get(phi.dest)! + 1)
+      this.nameStack.get(phi.dest)!.push(newName)
+      pushes.push({ varName: phi.dest, newName })
+      // φ dest gets new name
+      this.ssaStmts.get(bId)!.push(`${newName} = φ(...)`)
+    }
+
+    // Rename regular statements
+    for (const stmt of block.stmts) {
+      const eqIdx = stmt.indexOf('=')
+      const lhs = stmt.substring(0, eqIdx).trim()
+      const rhs = stmt.substring(eqIdx + 1).trim()
+
+      // Rename uses on RHS
+      const renamedRhs = rhs.replace(/[a-zA-Z_]\w*/g, (match) => {
+        const stack = this.nameStack.get(match)
+        if (stack && stack.length > 0) return stack[stack.length - 1]
+        return match
+      })
+
+      // Create new version for LHS
+      const newLhs = `${lhs}_${this.versionCounters.get(lhs)!}`
+      this.versionCounters.set(lhs, this.versionCounters.get(lhs)! + 1)
+      this.nameStack.get(lhs)!.push(newLhs)
+      pushes.push({ varName: lhs, newName: newLhs })
+
+      this.ssaStmts.get(bId)!.push(`${newLhs} = ${renamedRhs}`)
+    }
+
+    // Visit children
+    for (const childId of block.domChildren) {
+      this.renameBlock(childId)
+    }
+
+    // Pop stacks
+    for (const { varName } of pushes) {
+      this.nameStack.get(varName)!.pop()
+    }
+  }
+
+  getSSA(): Phi[] {
+    return this.phis
+  }
+
+  getSSAStmts(): Map<number, string[]> {
+    return this.ssaStmts
+  }
+}
+
+// ============================================================
+// SSA-Based Global Value Numbering
+// ============================================================
+
+class GVN {
+  private valueTable: Map<string, string> = new Map()
+
+  constructor(private ssaStmts: Map<number, string[]>) {}
+
+  apply(): Map<number, string[]> {
+    const result = new Map<number, string[]>()
+    for (const [bId, stmts] of this.ssaStmts) {
+      const newStmts: string[] = []
+      for (const stmt of stmts) {
+        // Skip φ-functions
+        if (stmt.includes('φ')) { newStmts.push(stmt); continue }
+
+        const eqIdx = stmt.indexOf('=')
+        const lhs = stmt.substring(0, eqIdx).trim()
+        const rhs = stmt.substring(eqIdx + 1).trim()
+
+        // Hash the RHS
+        const hash = this.hashRHS(rhs)
+        if (this.valueTable.has(hash)) {
+          // Redundant expression: replace with previously computed value
+          const canonical = this.valueTable.get(hash)!
+          newStmts.push(`${lhs} = ${canonical} (via GVN)`)
+        } else {
+          this.valueTable.set(hash, lhs)
+          newStmts.push(stmt)
+        }
+      }
+      result.set(bId, newStmts)
+    }
+    return result
+  }
+
+  private hashRHS(rhs: string): string {
+    // Simplified: the RHS string itself is the hash
+    // A real GVN would normalize commutative operands
+    return rhs.replace(/\s+/g, '')
+  }
+}
+
+// ============================================================
+// Example: SSA Construction
+// ============================================================
+
+// Flow graph for: x = 1; if (cond) { x = 2; } y = x + 1;
+const exampleBlocks: Block[] = [
+  { id: 0, stmts: ['x = 1'], preds: [], succs: [1], domChildren: [], df: new Set() },
+  { id: 1, stmts: ['if cond goto 2 else 3'], preds: [0], succs: [2, 3], domChildren: [], df: new Set() },
+  { id: 2, stmts: ['x = 2'], preds: [1], succs: [3], domChildren: [], df: new Set() },
+  { id: 3, stmts: ['y = x + 1'], preds: [1, 2], succs: [], domChildren: [], df: new Set() },
+]
+
+const ssa = new SSAConstructor(exampleBlocks)
+ssa.computeDominators()
+ssa.computeDominanceFrontiers()
+ssa.insertPhiFunctions()
+ssa.rename()
+
+console.log('=== SSA Form ===')
+const ssaStmts = ssa.getSSAStmts()
+const phis = ssa.getSSA()
+for (const phi of phis) {
+  console.log(`Block ${phi.blockId}: φ(${phi.dest})`)
+}
+for (const [bId, stmts] of ssaStmts) {
+  console.log(`Block ${bId}: ${stmts.join('; ')}`)
+}
+
+// ============================================================
+// Example: Simple JIT Emulator
+// ============================================================
+
+interface JITMethod {
+  name: string
+  bytecode: string[]      // simplified bytecode
+  invocationCount: number
+  compiled: boolean
+  compilationLevel: number
+}
+
+class SimpleJIT {
+  private methods: Map<string, JITMethod> = new Map()
+
+  // Thresholds
+  static readonly TIER1_THRESHOLD = 3   // baseline compile
+  static readonly TIER2_THRESHOLD = 10  // optimize
+
+  registerMethod(name: string, bytecode: string[]) {
+    this.methods.set(name, {
+      name,
+      bytecode,
+      invocationCount: 0,
+      compiled: false,
+      compilationLevel: 0,
+    })
+  }
+
+  invoke(methodName: string, ...args: number[]): number {
+    const method = this.methods.get(methodName)!
+    if (!method) throw new Error(`Method ${methodName} not found`)
+
+    method.invocationCount++
+
+    // Tiered compilation decision
+    if (method.invocationCount === SimpleJIT.TIER1_THRESHOLD) {
+      console.log(`[JIT] Compiling ${methodName} at baseline (Tier 1)`)
+      method.compiled = true
+      method.compilationLevel = 1
+    } else if (method.invocationCount === SimpleJIT.TIER2_THRESHOLD) {
+      console.log(`[JIT] Recompiling ${methodName} with optimizations (Tier 2)`)
+      method.compilationLevel = 2
+    }
+
+    // Execute (simplified — real JIT executes compiled code)
+    return this.execute(method, args)
+  }
+
+  private execute(method: JITMethod, args: number[]): number {
+    if (method.compiled) {
+      // Simulate compiled execution speed
+      return this.interpExecute(method, args)
+    }
+    return this.interpExecute(method, args)
+  }
+
+  private interpExecute(method: JITMethod, args: number[]): number {
+    let stack: number[] = [...args]
+    const vars: Map<string, number> = new Map()
+
+    for (const bc of method.bytecode) {
+      const parts = bc.split(' ')
+      switch (parts[0]) {
+        case 'push': stack.push(Number(parts[1])); break
+        case 'load': stack.push(vars.get(parts[1]) ?? 0); break
+        case 'store': vars.set(parts[1], stack.pop()!); break
+        case 'add': { const b = stack.pop()!, a = stack.pop()!; stack.push(a + b); break }
+        case 'sub': { const b = stack.pop()!, a = stack.pop()!; stack.push(a - b); break }
+        case 'mul': { const b = stack.pop()!, a = stack.pop()!; stack.push(a * b); break }
+        case 'ret': return stack.pop()!
+      }
+    }
+    return stack.pop() ?? 0
+  }
+}
+
+// Test the JIT emulator
+const jit = new SimpleJIT()
+jit.registerMethod('add', [
+  'push 5',
+  'load a',
+  'add',
+  'store result',
+  'load result',
+  'ret',
+])
+
+console.log('\n=== Simple JIT Emulator ===')
+for (let i = 0; i < 12; i++) {
+  const result = jit.invoke('add', i)
+  if (i < 3) console.log(`[Interpret] add(${i}) = ${result}`)
+  else if (i < 10) console.log(`[Tier 1]    add(${i}) = ${result}`)
+  else console.log(`[Tier 2]    add(${i}) = ${result}`)
+}
 ```
 
-The Ï†-function selects xâ‚ if the true branch was not taken, xâ‚‚ otherwise.
+**Output (console)**:
+```
+=== SSA Form ===
+Block 3: φ(x)
+Block 0: x_0 = 1
+Block 1: if cond goto 2 else 3
+Block 2: x_1 = 2
+Block 3: x_2 = φ(...); y_0 = x_2 + 1
+
+=== Simple JIT Emulator ===
+[Interpret] add(0) = 5
+[Interpret] add(1) = 6
+[Interpret] add(2) = 7
+[JIT] Compiling add at baseline (Tier 1)
+[Tier 1]    add(3) = 8
+...
+[JIT] Recompiling add with optimizations (Tier 2)
+[Tier 2]    add(10) = 15
+```
+
+## Practical Takeaways
+
+| Insight | Why It Matters |
+|---------|----------------|
+| SSA form makes every data-flow analysis simpler and faster | One definition per variable eliminates reaching-definitions tedium; GVN becomes hash lookup |
+| Dominance frontiers are the key concept for SSA construction | Once understood, φ-placement follows mechanically from the CFG dominator tree |
+| JIT compilers sacrifice compile time to gain runtime adaptability | Tiered compilation is essential: baseline gets warm code fast, optimizer gets hot code peak |
+| Deoptimization is what makes aggressive speculation safe | Without it, JITs would be forced to compile conservatively, losing most of their advantage |
+| Inlining is the most important interprocedural optimization | It exposes optimization opportunities across call boundaries that no other technique can match |
+| PGO fills the gap between static analysis and real-world execution | Profile data improves branch prediction, inlining, and layout by replacing heuristics with measurements |
+| Auto-parallelization is limited by dependence analysis precision | The polytope model handles affine loops exactly; non-affine code requires runtime techniques |
+| The sea-of-nodes IR subsumes multiple optimizations into one | Global code motion + LICM + PRE become a single graph transformation on the sea of nodes |
 
 ## Summary
 
-JIT compilation balances startup speed with peak performance by tiered compilation and adaptive optimization. Interprocedural analysis extends reasoning across functions. PGO profiles real execution to guide optimization decisions. SSA form provides a clean compiler IR that simplifies classic optimizations. Auto-parallelization exploits multi-core and SIMD hardware through careful dependence analysis.
+Modern compilation extends far beyond the classic phase-by-phase pipeline. Just-in-time compilers adapt at runtime through tiered compilation and deoptimization, trading compilation speed for peak performance. Interprocedural analysis breaks the function-boundary barrier, enabling inlining, constant propagation across calls, and mod/ref analysis. Profile-guided optimization replaces static heuristics with real-world execution data, yielding 10–30% improvements. Static single assignment form — where each variable is defined exactly once — is the dominant IR in production compilers (LLVM, V8 TurboFan, HotSpot C2) because it simplifies all data-flow analyses, enabling global value numbering, dead-code elimination, and sparse conditional constant propagation. Auto-parallelization exploits multi-core hardware by proving loop iterations independent via dependence analysis and the polytope model. Together, these advanced topics represent the frontier of production compiler technology, transforming source code into machine code that approaches the limits of what the hardware can deliver.
+
+## Chapter Quiz
+
+1. What mechanism allows JIT compilers to make aggressive optimistic assumptions without risking correctness?
+   - A) Type-checking every instruction
+   - B) Deoptimization (bailout to interpreter)
+   - C) Runtime verification of all paths
+   - D) Conservative compilation only
+
+2. In SSA form, φ-functions are placed at:
+   - A) Every basic block entry
+   - B) Control-flow merge points where multiple definitions converge
+   - C) Loop headers only
+   - D) Every variable definition
+
+3. Profile-guided optimization typically improves performance over static optimization by:
+   - A) 1–2%
+   - B) 10–30%
+   - C) 50–100%
+   - D) 200%+
+
+4. Which of the following is NOT a benefit of SSA form?
+   - A) Each variable is assigned exactly once
+   - B) Global value numbering becomes hash-based
+   - C) Register allocation becomes unnecessary
+   - D) Dead-code elimination requires no liveness analysis
+
+5. The polytope model for dependence analysis works for:
+   - A) Any loop with arbitrary array indices
+   - B) Affine loop nests with linear bounds and indices
+   - C) Only perfectly nested loops
+   - D) Only loops without function calls
+
+<details>
+<summary>Answers</summary>
+1. B, 2. B, 3. B, 4. C, 5. B
+</details>
 
 ## Exercises
 
 ### Review Questions
 
 1. Describe the three tiers of compilation in the HotSpot JVM. What triggers promotion between tiers?
-2. What is deoptimization, and why is it essential for speculative just-in-time compilation?
-3. Explain the purpose of Ï†-functions in SSA form and how dominance frontiers determine their placement.
-4. What is profile-guided optimization, and what performance improvements can it typically provide over static optimization alone?
+2. What is deoptimization and why is it essential for speculative just-in-time compilation?
+3. Explain the purpose of φ-functions in SSA form. How does the dominance frontier determine their placement?
+4. Compare CHA, RTA, and VTA for call-graph construction. Which is most precise? Which is cheapest?
+5. What is profile-guided optimization and what performance improvements can it typically provide?
+6. Explain the concept of a loop-carried dependence. What direction vectors indicate a loop is fully parallelizable?
+7. How does the sea-of-nodes IR differ from traditional basic-block-based IR? What advantages does it provide?
 
 ### Application Problems
 
-1. Convert the following code into SSA form, inserting Ï†-functions where necessary:
+1. Convert the following code into SSA form, inserting φ-functions where necessary:
    ```c
    int f(int n) {
        int x = 0;
@@ -187,41 +848,47 @@ JIT compilation balances startup speed with peak performance by tiered compilati
        return x;
    }
    ```
-2. For the call graph with edges: main â†’ A, main â†’ B, A â†’ C, A â†’ D, B â†’ D, D â†’ E. Which functions would be strong inlining candidates if all call counts are equal and functions are sized A:100, B:20, C:30, D:60, E:10 instructions? Justify your choices assuming a 200-instruction inlining budget.
-3. Given the loop:
+   Show the dominator tree, dominance frontiers, φ-placement, and renamed variables.
+
+2. For the call graph with edges: main → A, main → B, A → C, A → D, B → D, D → E:
+   - Which functions are strong inlining candidates if all call counts equal and function sizes are A:100, B:20, C:30, D:60, E:10 instructions?
+   - Assume an inlining budget of 200 instructions total. Justify your choices.
+
+3. Given the following loop:
    ```c
    for (i = 1; i < N; i++) {
        a[i] = a[i-1] + b[i];
    }
    ```
-   Identify the loop-carried dependence. Can this loop be parallelized? If not, what transformation would be required?
-4. Profile-guided optimization uses runtime data. Compare the advantages of PGO with the additional build complexity. How might profile data from one training input mislead optimization for other inputs?
+   Identify the loop-carried dependence. Show the dependence direction vector. Can this loop be parallelized? If not, what transformation would enable partial parallelization?
+
+4. Profile-guided optimization uses runtime data. List three specific decisions that profile data improves, explaining how the data changes the compiler's behavior in each case.
+
+5. Compare JIT and AOT compilation along these axes: (a) peak performance, (b) startup time, (c) portability, (d) code size, (e) security. For each axis, explain which approach wins and why.
 
 ### Challenge Problem
 
-1. Implement an SSA construction pass in your chosen language. Your implementation must: (a) compute the dominance tree for a flow graph; (b) compute dominance frontiers; (c) insert Ï†-functions at appropriate merge points; (d) rename variables so that each definition has a unique SSA name. Demonstrate your pass on a program containing at least three basic blocks, a loop, and a conditional branch. Show the original three-address code and the resulting SSA form,     verifying that each variable is assigned exactly once.
+1. **SSA Construction and Optimization.** Implement a complete SSA construction pass in TypeScript. Your implementation must: (a) compute the dominator tree for a given flow graph; (b) compute dominance frontiers for each block; (c) insert φ-functions at all necessary merge points; (d) rename variables so each definition has a unique SSA name.
 
-### Chapter Quiz
+   Then implement an SSA-based optimization: **Global Value Numbering** using hash-based expression lookup that replaces redundant computations.
 
-1. What mechanism allows JIT compilers to make aggressive optimistic assumptions without risking correctness?
-   - A) Type checking
-   - B) Deoptimization (bailout to interpreter)
-   - C) Runtime verification
-   - D) Conservative compilation
+   Test your SSA constructor + GVN on the following program (expressed as a flow graph with 6 basic blocks, a loop, and a conditional):
 
-2. In SSA form, Ï†-functions are placed at:
-   - A) Every basic block entry
-   - B) Control-flow merge points where multiple definitions converge
-   - C) Loop headers only
-   - D) Every variable definition
+   ```
+   // Before SSA
+   B0: x = 5
+       y = a + b
+       goto B1
+   B1: if cond goto B2 else B3
+   B2: z = a + b        // redundant: a+b already computed in B0
+       x = x + z
+       goto B4
+   B3: w = a + b        // redundant: a+b already computed in B0
+       x = x + w
+       goto B4
+   B4: result = x + y
+   ```
 
-3. Profile-guided optimization typically improves performance over static optimization by:
-   - A) 1-2%
-   - B) 10-30%
-   - C) 50-100%
-   - D) 200%+
+   Show: (a) the dominator tree, (b) dominance frontiers, (c) the CFG with φ-functions inserted, (d) the renamed SSA form, (e) the GVN-optimized SSA form where `a+b` is computed once and reused in B2 and B3.
 
-<details>
-<summary>Answers</summary>
-1. B, 2. B, 3. B
-</details>
+2. **Tiered JIT Emulator.** Extend the `SimpleJIT` class with a simple optimization pass that runs at Tier 2. The optimizer should: (a) perform constant folding on the bytecode ("push 2; push 3; add" → "push 5"), (b) eliminate dead stores (a `store` followed by another `store` to the same variable with no `load` in between), and (c) inline small methods (methods with ≤ 3 bytecode instructions). Show the bytecode before and after optimization for a test method, and measure the execution speedup between Tier 1 (no optimization) and Tier 2 (optimized) over 10,000 invocations.

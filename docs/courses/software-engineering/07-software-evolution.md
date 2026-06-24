@@ -2,125 +2,444 @@
 
 ## Learning Objectives
 
-After completing this chapter, the student will be able to: distinguish between the four categories of software maintenance; explain the challenges of reverse engineering and tools that support it; describe refactoring and its relationship to design quality; identify the characteristics of legacy systems and strategies for their management; explain the role of regression testing in software evolution; and articulate Lehman's laws of software evolution.
+After completing this chapter, the student will be able to:
+- Distinguish between the four categories of software maintenance
+- Explain Lehman's laws of software evolution
+- Describe reverse engineering and reengineering
+- Apply refactoring techniques with before/after TypeScript code
+- Identify the characteristics of legacy systems and strategies for their management
+- Quantify technical debt and analyse its quadrant
+- Perform impact analysis for proposed changes
 
 ## Theory
-
-![Software Evolution Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/ch-07-software-evolution.png)
 
 ### The Nature of Software Evolution
 
 Software evolution is the continuous process of adapting a software system after its initial deployment. Unlike hardware, software does not wear out, but it must evolve to remain useful. Changes in the operational environment, the emergence of new user needs, and the correction of latent defects all drive software evolution.
 
-Studies have shown that the cost of software evolution typically exceeds the cost of initial development over the lifetime of a system. For many long-lived systems, maintenance costs represent sixty to eighty per cent of total lifecycle costs. This economic reality makes software evolution a central concern of software engineering.
+Studies show that maintenance costs typically represent **60-80% of total lifecycle costs**. This economic reality makes software evolution a central concern of software engineering.
+
+```mermaid
+graph TD
+    subgraph "Software Lifecycle Costs"
+        DEV[Initial Development: 20-40%]
+        MAINT[Maintenance & Evolution: 60-80%]
+    end
+    MAINT --> COR[Corrective: 17%]
+    MAINT --> ADP[Adaptive: 18%]
+    MAINT --> PER[Perfective: 55%]
+    MAINT --> PRE[Preventive: 10%]
+```
 
 ### Categories of Maintenance
 
-Software maintenance is conventionally classified into four categories.
-
-Corrective maintenance involves fixing defects discovered after deployment. These defects include logic errors that cause incorrect behaviour, implementation errors that deviate from the specification, and failures that occur under specific conditions.
-
-Adaptive maintenance involves modifying the system to cope with changes in the external environment. Environment changes include new operating system versions, hardware upgrades, database system updates, and regulatory requirements.
-
-Perfective maintenance involves enhancing the system to improve performance, usability, or maintainability. Most maintenance effort falls into this category as users identify opportunities for improvement through experience.
-
-Preventive maintenance involves making changes to prevent future problems. This includes refactoring to improve maintainability, adding defensive checks, updating documentation, and replacing deprecated dependencies.
-
-### Reverse Engineering
-
-Reverse engineering is the process of analysing a software system to extract design information and create representations at a higher level of abstraction. Unlike forward engineering, which proceeds from requirements to implementation, reverse engineering proceeds from implementation to design.
-
-Reverse engineering is necessary when documentation is missing, outdated, or inaccurate. It is commonly applied to legacy systems where the original developers are no longer available. Tools that support reverse engineering include static analysers that extract structure from source code, dependency analysers that generate dependency graphs, and database reverse engineering tools that derive data models from database schemas.
-
-Reverse engineering does not change the system; it produces information about the system. When the extracted information is used to modify the system, the process is called reengineering.
-
-### Refactoring
-
-Refactoring is the process of restructuring existing code without changing its external behaviour. The goal of refactoring is to improve the internal structure of the code to make it more maintainable and understandable.
-
-Refactoring is performed through a catalogue of small, behaviour-preserving transformations. Each transformation addresses a specific design problem. Common refactorings include Extract Method, which moves code from a long method into a new method; Rename Variable, which improves naming clarity; Move Class, which relocates a class to a more appropriate package; Replace Conditional with Polymorphism, which replaces conditional logic with polymorphic dispatch; and Extract Class, which splits a class with multiple responsibilities into separate classes.
-
-Refactoring must be performed in small steps with frequent testing to avoid introducing defects. Most modern IDEs provide automated refactoring tools that guarantee behaviour preservation. Refactoring is a continuous practice in agile development, where it is applied as part of the TDD cycle or as dedicated refactoring sprints.
-
-### Legacy Systems
-
-Legacy systems are older systems that continue to serve critical business functions but are difficult and expensive to maintain. Legacy systems typically have one or more of the following characteristics: outdated technology platforms that are no longer supported; poor documentation or documentation that has drifted from the implementation; a degraded structure resulting from years of ad hoc changes; reliance on obsolete hardware or operating systems; and a shortage of developers with relevant skills.
-
-Strategies for managing legacy systems include: scrap and rebuild, where the system is replaced entirely; freeze, where changes are minimised to essential corrections; maintain, where the system continues to be evolved using current practices; transform, where the system is reengineered to a modern platform; and wrap, where the legacy system is encapsulated with a modern interface.
-
-The choice of strategy depends on the system's business value and technical quality. A portfolio analysis classifies systems by these two dimensions and recommends appropriate strategies for each quadrant.
-
-### Regression Testing During Evolution
-
-Regression testing is essential during software evolution to detect defects introduced by changes. As the system evolves, the regression test suite grows, and maintaining it becomes a significant effort.
-
-Test suite maintenance challenges include test obsolescence, where existing tests no longer match the changed system; test fragility, where tests fail due to unrelated changes; and test suite bloat, where the growing suite takes too long to execute.
-
-Strategies for managing the regression test suite include: prioritisation, which orders tests to maximise early defect detection; minimisation, which removes redundant test cases; and test case selection, which identifies a subset of tests relevant to the change.
+| Category | Description | Example | Proportion |
+|----------|-------------|---------|------------|
+| **Corrective** | Fixing defects discovered after deployment | Logic errors, implementation deviations | ~17% |
+| **Adaptive** | Modifying the system for environmental changes | New OS version, hardware upgrade, regulatory changes | ~18% |
+| **Perfective** | Enhancing the system to improve performance or usability | Adding features, improving UI | ~55% |
+| **Preventive** | Making changes to prevent future problems | Refactoring, updating dependencies, adding defensive checks | ~10% |
 
 ### Lehman's Laws of Software Evolution
 
-Lehman formulated eight laws describing the dynamics of software evolution based on empirical studies of large systems.
+Lehman formulated eight laws based on empirical studies of large systems:
 
-The Law of Continuing Change states that a system must be continually adapted or it becomes progressively less satisfactory. Systems that are not changed become increasingly irrelevant.
+| Law | Statement | Implication |
+|-----|-----------|-------------|
+| **I. Continuing Change** | A system must be continually adapted or it becomes progressively less satisfactory | Software that isn't changed becomes irrelevant |
+| **II. Increasing Complexity** | As a system evolves, its complexity increases unless work is performed to reduce it | Without deliberate refactoring, entropy increases |
+| **III. Self-Regulation** | The evolution process is self-regulating with statistically regular distributions | Process metrics follow predictable patterns |
+| **IV. Conservation of Organisational Stability** | The average effective global activity rate is invariant over the product lifetime | Team productivity tends to stabilise |
+| **V. Conservation of Familiarity** | The incremental growth of each release is statistically invariant | Release sizes tend to remain consistent |
+| **VI. Continuing Growth** | Functional content must be continually increased to maintain user satisfaction | Features must grow to keep users engaged |
+| **VII. Declining Quality** | Quality declines unless rigorously maintained | Without active maintenance, perceived quality drops |
+| **VIII. Feedback System** | Evolution processes constitute multi-loop, multi-level feedback systems | Changes at one level affect all others |
 
-The Law of Increasing Complexity states that as a system evolves, its complexity increases unless work is performed to reduce it. Without deliberate refactoring, entropy increases.
+### Reverse Engineering
 
-The Law of Self-Regulation states that the evolution process is self-regulating with statistically regular distributions of product and process metrics.
+Reverse engineering is the process of analysing a software system to extract design information and create representations at a higher level of abstraction.
 
-The Law of Conservation of Organisational Stability states that the average effective global activity rate in an evolving system is invariant over the product lifetime.
+```mermaid
+graph LR
+    subgraph "Forward Engineering"
+        REQ[Requirements] --> DES[Design]
+        DES --> CODE[Code]
+    end
+    subgraph "Reverse Engineering"
+        CODE2[Code] --> DES2[Design Recovery]
+        DES2 --> REQ2[Requirements Discovery]
+    end
+    subgraph "Reengineering"
+        CODE3[Legacy Code] --> REV[Reverse Engineering]
+        REV --> REDES[Redesign]
+        REDES --> FWD[Forward Engineering]
+        FWD --> NEW[New System]
+    end
+```
 
-The Law of Conservation of Familiarity states that the incremental growth of each release is statistically invariant.
+**Reverse engineering tools:**
+- **Static analysers:** Extract structure from source code
+- **Dependency analysers:** Generate dependency graphs
+- **Database reverse engineering:** Derive data models from schemas
+- **Decompilers:** Reconstruct source from binaries
 
-The Law of Continuing Growth states that the functional content of a system must be continually increased to maintain user satisfaction.
+### Technical Debt Quadrant
 
-The Law of Declining Quality states that the quality of a system will appear to decline unless it is rigorously maintained and adapted to operational environment changes.
+The technical debt quadrant, proposed by Fowler, classifies debt by intent and prudence:
 
-The Law of Feedback System states that evolution processes constitute multi-loop, multi-level feedback systems.
+```mermaid
+graph TD
+    subgraph "Technical Debt Quadrant"
+        RQ1[Reckless & Deliberate] -->|"We don't have time for design"| EX1["Quick hack without refactoring"]
+        RQ2[Reckless & Inadvertent] -->|"What is a design pattern?"| EX2["Inexperienced team creates poor design"]
+        RQ3[Prudent & Deliberate] -->|"We must ship now, we'll fix later"| EX3["Deliberate shortcut with TODO item"]
+        RQ4[Prudent & Inadvertent] -->|"Now we know what we should have done"| EX4["Refactoring after learning better approach"]
+    end
+```
 
-## Examples
+| Quadrant | Description | Example | Action |
+|----------|-------------|---------|--------|
+| Reckless & Deliberate | Team knows better but chooses not to | Skipping tests to meet deadline | Prioritise fixing |
+| Reckless & Inadvertent | Team doesn't know what good design is | No design patterns applied | Training + refactoring |
+| Prudent & Deliberate | Intentional short-term decision | Ship now, refactor next sprint | Track and schedule |
+| Prudent & Inadvertent | Discovered better approach after implementing | Improve design on second iteration | Refactor when encountered |
 
-### Case Study: Reengineering a Legacy Banking System
+### Refactoring Catalog
 
-A major bank maintained a core banking system written in COBOL running on a mainframe. The system had evolved over thirty years, and the cost of maintenance was escalating. The bank adopted a wrapping strategy: they created REST APIs in Java that encapsulated the COBOL transactions, enabling modern web and mobile applications to access the legacy functionality without modifying the core system. Over a five-year period, individual COBOL modules were incrementally replaced with Java implementations, following the strangler fig pattern.
+Refactoring is the process of restructuring existing code without changing its external behaviour.
 
-### Case Study: Refactoring a Large Codebase
+#### Extract Method
 
-A SaaS company with a million-line PHP codebase adopted a systematic refactoring programme. Each sprint included time for refactoring alongside feature work. The team used automated refactoring tools to extract classes, reduce duplication, and improve naming. Over eighteen months, the cyclomatic complexity of the codebase was reduced by thirty per cent, and the defect rate decreased by forty per cent.
+**Before:**
+```typescript
+function processOrder(order: Order): void {
+  // Validate order
+  if (!order.customerId) throw new Error('Missing customer');
+  if (!order.items || order.items.length === 0) throw new Error('No items');
+  for (const item of order.items) {
+    if (item.quantity <= 0) throw new Error('Invalid quantity');
+  }
+  // Calculate total
+  let total = 0;
+  for (const item of order.items) {
+    total += item.price * item.quantity;
+  }
+  // Apply discounts
+  if (order.customerType === 'premium') total *= 0.9;
+  if (order.customerType === 'vip') total *= 0.85;
+  // Save order
+  saveOrder({ ...order, total });
+}
+```
 
-### Template: Legacy System Portfolio Analysis
+**After:**
+```typescript
+function processOrder(order: Order): void {
+  validateOrder(order);
+  const total = calculateTotal(order);
+  const discountedTotal = applyDiscounts(total, order.customerType);
+  saveOrder({ ...order, total: discountedTotal });
+}
 
-| System | Business Value | Technical Quality | Strategy |
-|--------|---------------|-------------------|----------|
-| Customer Accounts | High | Low | Reengineer |
-| Reporting | Low | High | Maintain |
-| Payroll | High | High | Continue evolution |
-| Print Queue | Low | Low | Scrap and replace |
+function validateOrder(order: Order): void {
+  if (!order.customerId) throw new Error('Missing customer');
+  if (!order.items || order.items.length === 0) throw new Error('No items');
+  for (const item of order.items) {
+    if (item.quantity <= 0) throw new Error('Invalid quantity');
+  }
+}
+
+function calculateTotal(order: Order): number {
+  return order.items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+}
+
+function applyDiscounts(total: number, customerType: string): number {
+  if (customerType === 'vip') return total * 0.85;
+  if (customerType === 'premium') return total * 0.9;
+  return total;
+}
+```
+
+#### Replace Conditional with Polymorphism
+
+**Before:**
+```typescript
+class Bird {
+  constructor(private type: string, private name: string) {}
+  
+  getSpeed(): number {
+    if (this.type === 'european') return 10;
+    if (this.type === 'african') return 20;
+    if (this.type === 'norwegian') return 30;
+    return 0;
+  }
+}
+```
+
+**After:**
+```typescript
+interface Bird {
+  getSpeed(): number;
+}
+
+class EuropeanBird implements Bird {
+  constructor(private name: string) {}
+  getSpeed(): number { return 10; }
+}
+
+class AfricanBird implements Bird {
+  constructor(private name: string) {}
+  getSpeed(): number { return 20; }
+}
+
+class NorwegianBird implements Bird {
+  constructor(private name: string) {}
+  getSpeed(): number { return 30; }
+}
+
+class BirdFactory {
+  static create(type: string, name: string): Bird {
+    switch (type) {
+      case 'european': return new EuropeanBird(name);
+      case 'african': return new AfricanBird(name);
+      case 'norwegian': return new NorwegianBird(name);
+      default: throw new Error('Unknown bird type');
+    }
+  }
+}
+```
+
+#### Extract Class
+
+**Before:**
+```typescript
+class Employee {
+  constructor(
+    public name: string,
+    public email: string,
+    public salary: number,
+    public bankAccount: string,
+    public taxId: string,
+    public department: string,
+    public officePhone: string,
+    public mobilePhone: string,
+    public street: string,
+    public city: string,
+    public postalCode: string
+  ) {}
+}
+```
+
+**After:**
+```typescript
+class Employee {
+  constructor(
+    public name: string,
+    public contact: ContactInfo,
+    public compensation: CompensationInfo,
+    public department: string
+  ) {}
+}
+
+class ContactInfo {
+  constructor(
+    public email: string,
+    public officePhone: string,
+    public mobilePhone: string,
+    public address: Address
+  ) {}
+}
+
+class Address {
+  constructor(
+    public street: string,
+    public city: string,
+    public postalCode: string
+  ) {}
+}
+
+class CompensationInfo {
+  constructor(
+    public salary: number,
+    public bankAccount: string,
+    public taxId: string
+  ) {}
+}
+```
+
+#### Rename Variable/Method
+
+**Before:** `const d = new Date(); const r = calculate(a, b);`
+
+**After:** `const currentDate = new Date(); const revenue = calculateRevenue(startDate, endDate);`
+
+### Legacy Systems
+
+**Characteristics of legacy systems:**
+- Outdated technology platforms (no longer supported)
+- Poor or outdated documentation
+- Degraded structure from ad hoc changes
+- Obsolete hardware or OS dependencies
+- Shortage of developers with relevant skills
+
+**Legacy system management strategies:**
+
+| Strategy | Description | When to Use |
+|----------|-------------|-------------|
+| **Scrap & rebuild** | Replace entirely | Low business value, low technical quality |
+| **Freeze** | Minimise changes to essential corrections | Low business value, high technical quality |
+| **Maintain** | Continue evolution with current practices | High business value, high technical quality |
+| **Transform** | Reengineer to modern platform | High business value, low technical quality |
+| **Wrap** | Encapsulate with modern interface | High business value, risk of replacement too high |
+
+```mermaid
+graph TD
+    subgraph "Legacy System Portfolio"
+        direction LR
+        A[High Business Value<br>Low Technical Quality<br>TRANSFORM] --> B[High Business Value<br>High Technical Quality<br>MAINTAIN]
+        C[Low Business Value<br>Low Technical Quality<br>SCRAP] --> D[Low Business Value<br>High Technical Quality<br>FREEZE]
+    end
+```
+
+### Impact Analysis
+
+Impact analysis identifies the consequences of a proposed change. It answers: what will be affected, what is the ripple effect, and what is the estimated effort?
+
+```typescript
+interface Dependency {
+  sourceFile: string;
+  targetFile: string;
+  dependencyType: 'import' | 'extends' | 'implements' | 'calls' | 'uses';
+}
+
+class ImpactAnalyzer {
+  private dependencies: Dependency[] = [];
+
+  public addDependency(dep: Dependency): void {
+    this.dependencies.push(dep);
+  }
+
+  public analyzeImpact(changedFile: string): {
+    directlyAffected: string[];
+    transitivelyAffected: string[];
+    estimatedEffort: number;
+  } {
+    const directlyAffected = this.dependencies
+      .filter((d) => d.targetFile === changedFile)
+      .map((d) => d.sourceFile);
+
+    const transitivelyAffected = new Set<string>();
+    const queue = [...directlyAffected];
+    while (queue.length > 0) {
+      const file = queue.shift()!;
+      const affected = this.dependencies
+        .filter((d) => d.targetFile === file)
+        .map((d) => d.sourceFile);
+      for (const a of affected) {
+        if (!transitivelyAffected.has(a)) {
+          transitivelyAffected.add(a);
+          queue.push(a);
+        }
+      }
+    }
+
+    return {
+      directlyAffected,
+      transitivelyAffected: Array.from(transitivelyAffected),
+      estimatedEffort: (directlyAffected.length + transitivelyAffected.size) * 4, // hours
+    };
+  }
+}
+```
+
+### Modernization Strategies
+
+| Strategy | Risk | Effort | Time | Result |
+|----------|------|--------|------|--------|
+| **Strangler Fig** | Low | High | Long | Incremental replacement |
+| **Big Bang Rewrite** | High | Very high | Medium | Brand new system |
+| **Incremental Migration** | Medium | Medium | Medium | Gradual transition |
+| **Database First** | Medium | Medium | Medium | Modernise data layer first |
+| **API Encapsulation** | Low | Low | Short | Legacy wrapped behind APIs |
+
+## Practical Takeaways
+
+1. **Refactoring is not optional** — without it, Lehman's Law of Increasing Complexity guarantees degradation
+2. **Track technical debt explicitly** — quantify it, prioritise it, schedule it alongside features
+3. **The strangler fig pattern is safer than big-bang rewrites** — incremental replacement preserves business continuity
+4. **Automated tests are essential for evolution** — without them, refactoring is just "changing code and hoping"
+5. **Document decisions, not just code** — future maintainers need to know why, not just what
+6. **Legacy systems are valuable** — they represent years of business logic; treat them with respect
+
+## Chapter Quiz
+
+**Q1: What proportion of total lifecycle costs does maintenance typically represent?**
+- A) 20-30%
+- B) 40-50%
+- C) 60-80%
+- D) 80-90%
+
+**Answer: C** — Maintenance typically consumes 60-80% of total software lifecycle costs.
+
+**Q2: Lehman's Law of Increasing Complexity states that:**
+- A) Systems must be continually adapted or become unsatisfactory
+- B) Complexity increases unless deliberate work is performed to reduce it
+- C) The growth of each release is statistically invariant
+- D) Quality declines unless rigorously maintained
+
+**Answer: B** — Without deliberate refactoring, system complexity inevitably increases.
+
+**Q3: Which is NOT a characteristic of legacy systems?**
+- A) Outdated technology platforms
+- B) Modern architecture patterns
+- C) Poor documentation
+- D) Shortage of developers with relevant skills
+
+**Answer: B** — Legacy systems are characterised by outdated technology and architecture, not modern patterns.
+
+**Q4: The strangler fig pattern is:**
+- A) Rewriting the entire system at once
+- B) Incrementally replacing legacy functionality with new implementations
+- C) Wrapping legacy systems with APIs
+- D) Freezing all changes to the system
+
+**Answer: B** — The strangler fig pattern incrementally replaces legacy components.
+
+**Q5: In the technical debt quadrant, "we must ship now, we'll fix later" represents:**
+- A) Reckless & Deliberate
+- B) Prudent & Deliberate
+- C) Reckless & Inadvertent
+- D) Prudent & Inadvertent
+
+**Answer: B** — Prudent & Deliberate debt is an intentional short-term decision with a plan to fix later.
 
 ## Summary
 
-Software evolution consumes the majority of lifecycle costs. Maintenance is classified as corrective, adaptive, perfective, and preventive. Reverse engineering recovers design information from existing code. Refactoring improves internal structure without changing external behaviour. Legacy systems pose particular challenges due to outdated technology and degraded structure. Regression testing is essential during evolution. Lehman's laws describe the empirical dynamics of software evolution, including the tendency toward increasing complexity and the necessity of continuing change.
+Software evolution consumes the majority of lifecycle costs. Maintenance is classified as corrective, adaptive, perfective, and preventive. Lehman's eight laws describe the empirical dynamics of evolution, including the inevitable increase in complexity (Law II) and the necessity of continuing change (Law I). Reverse engineering recovers design information from existing code. Refactoring catalogues provide behaviour-preserving transformations (Extract Method, Replace Conditional with Polymorphism, Extract Class). The technical debt quadrant helps prioritise improvement work. Legacy systems require strategies from scrapping to wrapping. Impact analysis quantifies change consequences. Regression testing is essential throughout evolution.
 
 ## Exercises
 
 ### Review Questions
 
 1. What proportion of total lifecycle costs is typically consumed by maintenance?
-2. Distinguish between corrective and adaptive maintenance.
-3. What distinguishes reverse engineering from reengineering?
-4. What is the principal constraint on refactoring â€” what must be preserved?
-5. List five characteristics of legacy systems.
+2. Distinguish between corrective and adaptive maintenance with examples.
+3. List and explain Lehman's eight laws of software evolution.
+4. What distinguishes reverse engineering from reengineering?
+5. What is the principal constraint on refactoring — what must be preserved?
 6. Describe the strangler fig pattern for legacy system replacement.
 7. What are the two dimensions used in legacy system portfolio analysis?
-8. State Lehman's Law of Increasing Complexity and its implication for maintenance.
-9. What challenges arise in maintaining the regression test suite as a system evolves?
+8. What are the four quadrants of the technical debt model?
 
 ### Application Problems
 
-1. A system has 500,000 lines of code with an annual change rate of 15 per cent. The current maintenance team costs $1.2 million per year. If a refactoring programme costing $300,000 would reduce the annual change rate to 10 per cent, calculate the break-even period for the investment.
-2. Propose a refactoring plan for a class that has grown to 2,000 lines, handles persistence, business logic, and presentation, and contains duplicated code in five locations.
-3. Analyse a legacy system in your organisation (or a case study of your choice) using Lehman's laws. Identify which laws are most relevant to the system's current challenges.
+1. A 500,000-LOC system has an annual change rate of 15%. The maintenance team costs $1.2M/year. If a $300K refactoring programme reduces the annual change rate to 10%, calculate the break-even period.
+
+2. Propose a refactoring plan for a 2,000-line class handling persistence, business logic, and presentation with duplicated code in five locations. Show the before/after TypeScript code.
+
+3. Implement a `CodeSmellDetector` TypeScript class that detects long methods, large classes, duplicate code, and excessive parameter lists.
+
+4. Analyse a legacy system using Lehman's laws. For each law, provide an example of how it applies to the system.
 
 ### Challenge Problem
 
-A government social security agency operates a thirty-year-old system that processes benefit claims. The system is written in an obsolete language, the documentation is incomplete, the original developers have retired, and the system cannot be replaced because the business rules are not fully understood by anyone in the organisation. However, recent legislation requires significant changes to eligibility rules, and the system must be integrated with a modern citizen portal. Develop a comprehensive evolution strategy for this system. Address how you will recover knowledge about the current system, how you will manage the legislative changes, what testing approach you will use, and how you will plan the transition to a more maintainable architecture. Consider the organisational, technical, and human factors involved.
+A government social security agency operates a thirty-year-old system written in an obsolete language. Documentation is incomplete, original developers have retired, and the system cannot be replaced because business rules are not fully understood. Recent legislation requires significant changes to eligibility rules, and the system must integrate with a modern citizen portal. Develop a comprehensive evolution strategy. Address knowledge recovery, legislative changes, testing approach, and transition planning. Implement a TypeScript modernization planner that tracks the migration of legacy modules through the strangler fig pattern.

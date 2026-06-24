@@ -2,118 +2,688 @@
 
 ## Learning Objectives
 
-After completing this chapter, the student will be able to: explain the purpose of system modelling in software engineering; construct UML use case diagrams, class diagrams, sequence diagrams, activity diagrams, and state machine diagrams; describe component and deployment diagrams; distinguish between UML and SysML; construct data flow diagrams and entity-relationship diagrams; explain model-driven engineering and its benefits; and write constraints using the Object Constraint Language.
+After completing this chapter, the student will be able to:
+- Explain the purpose of system modelling in software engineering
+- Construct UML use case, class, sequence, activity, and state machine diagrams
+- Describe component and deployment diagrams
+- Develop data flow diagrams and entity-relationship diagrams
+- Explain model-driven engineering and its benefits
+- Write constraints using the Object Constraint Language
+- Map UML models to TypeScript type definitions
 
 ## Theory
 
-![UML Diagram Types Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/software-engineering/03-system-modeling.png)
-
 ### The Purpose of System Modelling
 
-System modelling is the process of developing abstract representations of a system from different perspectives. Each model emphasises certain aspects of the system while suppressing others, enabling stakeholders to understand, analyse, and communicate about the system. Models serve several purposes: they facilitate discussion between stakeholders and developers, they provide input to the design process, they document design decisions, and they can be used to generate implementation artefacts automatically.
+System modelling is the process of developing abstract representations of a system from different perspectives. Each model emphasises certain aspects while suppressing others, enabling stakeholders to understand, analyse, and communicate about the system.
 
-A software system can be modelled from three complementary perspectives: the external perspective, which models the system's context and environment; the interaction perspective, which models interactions between the system and its environment or between components; and the structural perspective, which models the organisation of the system and its data.
+Models serve several purposes:
+- **Communication:** Facilitate discussion between stakeholders and developers
+- **Input to design:** Provide input to the design process
+- **Documentation:** Document design decisions for future reference
+- **Code generation:** Generate implementation artefacts automatically
+
+A software system can be modelled from three complementary perspectives:
+- **External perspective:** Models the system's context and environment
+- **Interaction perspective:** Models interactions between the system and its environment
+- **Structural perspective:** Models the organisation of the system and its data
+
+```mermaid
+graph TD
+    subgraph "Modelling Perspectives"
+        EXT[External Perspective] --> CTX[Context & Environment]
+        INT[Interaction Perspective] --> SEQ[Sequences & Messages]
+        STR[Structural Perspective] --> CLS[Classes & Data]
+    end
+    subgraph "UML 2.x Diagram Types"
+        UML[UML 2.x] --> STR2[Structure Diagrams]
+        UML --> BEH[Behaviour Diagrams]
+        STR2 --> CLS2[Class Diagram]
+        STR2 --> CMP[Component Diagram]
+        STR2 --> DEP[Deployment Diagram]
+        STR2 --> OBJ[Object Diagram]
+        STR2 --> PKG[Package Diagram]
+        BEH --> UC[Use Case Diagram]
+        BEH --> SEQ2[Sequence Diagram]
+        BEH --> ACT[Activity Diagram]
+        BEH --> SM[State Machine Diagram]
+        BEH --> COMM[Communication Diagram]
+    end
+```
 
 ### The Unified Modeling Language
 
-The Unified Modeling Language (UML) is a general-purpose visual modelling language standardised by the Object Management Group (OMG). UML provides thirteen diagram types divided into two categories: structure diagrams, which describe the static structure of a system, and behaviour diagrams, which describe the dynamic behaviour.
+The Unified Modeling Language (UML) is a general-purpose visual modelling language standardised by the Object Management Group (OMG). UML provides thirteen diagram types in two categories: **structure diagrams** (static structure) and **behaviour diagrams** (dynamic behaviour).
 
-UML is extensible through stereotypes, tagged values, and constraints. Stereotypes extend the UML vocabulary by defining new model elements derived from existing ones. Tagged values extend the properties of model elements. Constraints extend the semantics by adding rules expressed in natural language or OCL.
+UML is extensible through:
+- **Stereotypes:** Extend UML vocabulary (`<<entity>>`, `<<controller>>`, `<<service>>`)
+- **Tagged values:** Extend properties of model elements (`{version=1.0}`)
+- **Constraints:** Add rules expressed in natural language or OCL
 
 ### Use Case Diagrams
 
-Use case diagrams show the interactions between actors and the system. An actor is a role played by a user or another system that interacts with the system under development. A use case represents a complete unit of functionality. Relationships between use cases include include, where one use case incorporates the behaviour of another; extend, where one use case optionally extends the behaviour of another; and generalisation, where one use case inherits from another.
+Use case diagrams show interactions between actors and the system. An **actor** is a role played by a user or another system. A **use case** represents a complete unit of functionality.
 
-Use case diagrams are valuable for establishing the system boundary and identifying the principal functions. They are accessible to non-technical stakeholders and provide a starting point for detailed specification.
+```mermaid
+graph TD
+    subgraph "Library System"
+        UC1[Search Catalogue] 
+        UC2[Borrow Book]
+        UC3[Return Book]
+        UC4[Manage Inventory]
+        UC5[Generate Reports]
+    end
+    A1[Patron] --> UC1
+    A1 --> UC2
+    A1 --> UC3
+    A2[Librarian] --> UC3
+    A2 --> UC4
+    A3[Administrator] --> UC4
+    A3 --> UC5
+    UC4 -.->|extends| UC5
+    UC1 -.->|includes| UC3
+```
+
+| Relationship | Notation | Description |
+|-------------|----------|-------------|
+| **Association** | Solid line | Actor participates in use case |
+| **Include** | Dashed arrow `<<include>>` | One use case always includes another |
+| **Extend** | Dashed arrow `<<extend>>` | One use case optionally extends another |
+| **Generalisation** | Hollow triangle arrow | Child use case inherits from parent |
 
 ### Class Diagrams
 
-Class diagrams describe the static structure of a system by showing classes, their attributes and operations, and the relationships between classes. A class is a template for objects that share structure and behaviour. Attributes represent the data held by instances of the class; operations represent the behaviours.
+Class diagrams describe the static structure of a system by showing classes, attributes, operations, and relationships.
 
-Relationships include association, which represents a structural connection between instances; aggregation, which represents a whole-part relationship where the part can exist independently; composition, a stronger form of aggregation where the part cannot exist independently; inheritance, where a subclass inherits the structure and behaviour of a superclass; and dependency, where a change to one class may affect another.
+```mermaid
+classDiagram
+    class Book {
+        -isbn: string
+        -title: string
+        -author: string
+        -publicationYear: int
+        -status: BookStatus
+        +getDetails(): BookDetails
+        +changeStatus(newStatus: BookStatus): void
+    }
+    class Patron {
+        -patronId: string
+        -name: string
+        -email: string
+        -maxLoans: int
+        +borrowBook(book: Book): Loan
+        +returnBook(book: Book): void
+        +getLoanHistory(): Loan[]
+    }
+    class Loan {
+        -loanId: string
+        -loanDate: Date
+        -dueDate: Date
+        -returnDate: Date
+        +isOverdue(): boolean
+        +calculateFine(): number
+    }
+    class Library {
+        -name: string
+        -location: string
+        +searchCatalogue(query: string): Book[]
+        +registerPatron(patron: Patron): void
+    }
+    Library "1" --> "*" Book : contains
+    Library "1" --> "*" Patron : serves
+    Patron "1" --> "*" Loan : makes
+    Book "1" --> "*" Loan : subject of
+```
 
-Multiplicity specifies how many instances participate in a relationship. Common multiplicities include one-to-one, one-to-many, and many-to-many.
+**Relationships:**
+
+| Type | Notation | Meaning |
+|------|----------|---------|
+| **Association** | Solid line | Structural connection |
+| **Aggregation** | Hollow diamond | Whole-part (part exists independently) |
+| **Composition** | Filled diamond | Whole-part (part cannot exist independently) |
+| **Inheritance** | Hollow triangle | Subclass inherits from superclass |
+| **Dependency** | Dashed arrow | Change to one may affect the other |
+
+**Multiplicity:**
+
+| Notation | Meaning |
+|----------|---------|
+| `1` | Exactly one |
+| `0..1` | Zero or one |
+| `*` | Zero or more |
+| `1..*` | One or more |
+| `0..5` | Zero to five |
 
 ### Sequence Diagrams
 
-Sequence diagrams model the interactions between objects over time. They show the messages exchanged between objects arranged in chronological order. Each object has a lifeline represented by a vertical dashed line. Messages are shown as arrows between lifelines. The ordering of messages indicates the sequence of interactions.
+Sequence diagrams model interactions between objects over time, showing messages exchanged in chronological order.
 
-Sequence diagrams can show alternative behaviours using combined fragments with operators such as alt (alternative), opt (optional), loop (iteration), and par (parallel). They are particularly useful for detailing the logic of a use case scenario.
+```mermaid
+sequenceDiagram
+    participant P as Patron
+    participant UI as SearchUI
+    participant Ctrl as SearchController
+    participant DB as CatalogueDB
+    
+    P->>UI: enter search query
+    UI->>Ctrl: search(query)
+    Ctrl->>DB: findBooks(query)
+    DB-->>Ctrl: matching books
+    Ctrl-->>UI: search results
+    UI-->>P: display results
+    
+    alt Book available
+        P->>UI: select book
+        UI->>Ctrl: borrowBook(bookId)
+        Ctrl->>DB: checkAvailability(bookId)
+        DB-->>Ctrl: available
+        Ctrl->>DB: createLoan(patronId, bookId)
+        DB-->>Ctrl: loan created
+        Ctrl-->>UI: confirmation
+        UI-->>P: "Book borrowed successfully"
+    else Book unavailable
+        UI-->>P: "Book is currently on loan"
+    end
+```
+
+**Combined Fragments:**
+
+| Operator | Meaning |
+|----------|---------|
+| `alt` | Alternative scenarios |
+| `opt` | Optional scenario |
+| `loop` | Repetition |
+| `par` | Parallel execution |
+| `ref` | Reference to another diagram |
 
 ### Activity Diagrams
 
-Activity diagrams model the flow of control from one activity to another. They are essentially flowcharts that can represent sequential, concurrent, and conditional behaviour. Initial nodes mark the start of an activity; final nodes mark completion. Activity nodes represent actions, and edges represent the transition between actions.
+Activity diagrams model the flow of control from one activity to another, supporting sequential, concurrent, and conditional behaviour.
 
-Fork nodes split a flow into multiple concurrent flows; join nodes synchronise concurrent flows. Decision nodes represent conditional branching, and merge nodes bring alternative paths back together. Swimlanes partition activities according to the actor responsible for them.
+```mermaid
+graph TD
+    START((Start)) --> A[Receive Order]
+    A --> B{Validate Order}
+    B -->|Valid| C[Check Inventory]
+    B -->|Invalid| D[Reject Order]
+    D --> END((End))
+    C --> E{In Stock?}
+    E -->|Yes| F[Process Payment]
+    E -->|No| G[Order from Supplier]
+    G --> C
+    F --> H[Pack Order]
+    H --> I[Ship Order]
+    I --> J[Send Confirmation]
+    J --> END
+```
+
+**Activity Elements:**
+
+| Element | Notation | Description |
+|---------|----------|-------------|
+| **Initial node** | Filled circle | Start of activity |
+| **Activity** | Rounded rectangle | Action to perform |
+| **Decision** | Diamond | Conditional branch |
+| **Fork** | Thick bar | Split into concurrent flows |
+| **Join** | Thick bar | Synchronise concurrent flows |
+| **Final node** | Bullseye | End of activity |
+| **Swimlane** | Partition | Responsibilities by actor |
 
 ### State Machine Diagrams
 
-State machine diagrams model the behaviour of an object as it responds to events over its lifetime. They show the states an object can occupy, the transitions between states, the events that trigger transitions, and the actions that occur during transitions.
+State machine diagrams model the behaviour of an object as it responds to events over its lifetime.
 
-An initial state indicates the starting point. A state represents a condition during which the object satisfies some condition, performs some activity, or waits for an event. Transitions are triggered by events and may have guard conditions that must be true for the transition to fire. Actions may be associated with entering a state, exiting a state, or responding to an event.
+```mermaid
+stateDiagram-v2
+    [*] --> Available
+    Available --> OnLoan: borrow()
+    OnLoan --> Overdue: 14 days pass
+    OnLoan --> Available: return()
+    Overdue --> Available: return() + payFine()
+    Overdue --> Lost: reportLost()
+    Lost --> [*]
+    Available --> Reserved: reserve()
+    Reserved --> OnLoan: borrow()
+    Reserved --> Available: cancelReservation()
+```
 
-Composite states contain nested states, enabling hierarchical modelling. Concurrent regions within a composite state represent independent aspects of behaviour.
+| Element | Description |
+|---------|-------------|
+| **Initial state** | Starting point (filled circle) |
+| **State** | Condition during which object waits or performs activity |
+| **Transition** | Movement between states triggered by events |
+| **Guard condition** | Boolean condition that must be true for transition |
+| **Composite state** | Nested states within a state |
+| **Concurrent region** | Independent sub-states within a composite state |
 
 ### Component Diagrams
 
-Component diagrams show the organisation and dependencies among software components. A component is a modular, deployable, and replaceable part of a system that encapsulates implementation and exposes a set of interfaces. Components have provided interfaces, which define the services they offer, and required interfaces, which define the services they need from the environment.
+Component diagrams show the organisation and dependencies among software components. A **component** is a modular, deployable, and replaceable part that encapsulates implementation and exposes interfaces.
 
-Component diagrams are used to model the high-level structure of a system and to reason about system composition, reuse, and deployment.
+```mermaid
+graph TD
+    subgraph "Web Tier"
+        WEB[Web Application] -->|HTTP| API[API Gateway]
+    end
+    subgraph "Application Tier"
+        API --> AUTH[Auth Service]
+        API --> ORDER[Order Service]
+        API --> PAY[Payment Service]
+        API --> NOTIFY[Notification Service]
+    end
+    subgraph "Data Tier"
+        ORDER --> DB[(Order Database)]
+        PAY --> PDB[(Payment Database)]
+        AUTH --> UDB[(User Database)]
+    end
+    ORDER -->|Message| Q[Message Queue]
+    Q --> NOTIFY
+```
+
+- **Provided interfaces:** Services offered by component (lollipop notation)
+- **Required interfaces:** Services needed from environment (socket notation)
 
 ### Deployment Diagrams
 
-Deployment diagrams show the physical deployment of software components on hardware nodes. Nodes represent computational resources such as servers, workstations, or embedded processors. Artefacts represent physical pieces of information such as executable files or configuration files. Communication paths between nodes indicate network connections.
+Deployment diagrams show the physical deployment of software components on hardware nodes.
 
-Deployment diagrams are used to reason about system performance, reliability, and security in the target environment.
-
-### UML versus SysML
-
-The Systems Modeling Language (SysML) is a profile of UML adapted for systems engineering. SysML extends UML with constructs for modelling requirements, parametrics, and the flow-based behaviour of physical systems. While UML is focused on software-intensive systems, SysML supports the modelling of hardware, software, data, personnel, and facilities. SysML retains a subset of UML diagrams â€” use case, sequence, activity, state machine, and block definition diagrams (replacing class diagrams) â€” and adds requirements diagrams and parametric diagrams.
+```mermaid
+graph TD
+    subgraph "Production Environment"
+        subgraph "Load Balancer"
+            LB[HAProxy:80/443]
+        end
+        subgraph "App Cluster"
+            A1[App Server 1:8080]
+            A2[App Server 2:8080]
+            A3[App Server 3:8080]
+        end
+        subgraph "Database Cluster"
+            DB1[(Primary DB:5432)]
+            DB2[(Replica DB:5432)]
+        end
+        subgraph "Cache"
+            REDIS[(Redis:6379)]
+        end
+    end
+    LB --> A1
+    LB --> A2
+    LB --> A3
+    A1 --> DB1
+    A2 --> DB1
+    A3 --> DB1
+    DB1 --> DB2
+    A1 --> REDIS
+    A2 --> REDIS
+    A3 --> REDIS
+```
 
 ### Data Flow Diagrams
 
-Data flow diagrams (DFDs) model the flow of data through a system. They are not part of UML but remain widely used for requirements analysis. A DFD consists of processes, which transform data; data flows, which represent data in motion; data stores, which represent data at rest; and external entities, which represent sources or destinations of data outside the system.
+Data flow diagrams (DFDs) model the flow of data through a system. They are hierarchically organised:
 
-DFDs are hierarchically organised: a context diagram shows the system as a single process with its environment, and successive levels decompose processes into increasing detail. Level-1 DFDs show the major processes; level-2 DFDs refine each major process.
+```mermaid
+graph TD
+    subgraph "Context Diagram (Level 0)"
+        USER[User] -->|Search Request| SYS[Library System]
+        SYS -->|Search Results| USER
+        ADMIN[Administrator] -->|Inventory Data| SYS
+        SYS -->|Reports| ADMIN
+    end
+```
+
+**DFD Elements:**
+
+| Symbol | Name | Description |
+|--------|------|-------------|
+| Circle/rounded rectangle | Process | Transforms data |
+| Arrow | Data flow | Data in motion |
+| Double line | Data store | Data at rest |
+| Rectangle | External entity | Source/destination outside system |
 
 ### Entity-Relationship Diagrams
 
-Entity-relationship (ER) diagrams model the data perspective of a system. They show entity types, which represent categories of things of interest to the organisation; attributes, which describe properties of entities; and relationships, which represent associations between entities.
+Entity-relationship (ER) diagrams model the data perspective, showing entity types, attributes, and relationships.
 
-ER diagrams are central to data modelling and database design. They are complemented by the Enhanced Entity-Relationship (EER) model, which adds support for inheritance, categorisation, and complex relationships.
-
-### Model-Driven Engineering
-
-Model-driven engineering (MDE) elevates models from documentation artefacts to primary development artefacts from which implementation code can be generated automatically. In MDE, the developer creates models at different levels of abstraction using a domain-specific modelling language. Transformation tools convert platform-independent models into platform-specific models and then into executable code.
-
-The Model-Driven Architecture (MDA) framework, standardised by OMG, distinguishes between Platform-Independent Models (PIM), which describe the system independently of the implementation platform, and Platform-Specific Models (PSM), which incorporate platform-specific details. Transformations between models are defined using the Query/View/Transformation (QVT) standard or using template-based approaches.
+```mermaid
+erDiagram
+    PATRON ||--o{ LOAN : makes
+    BOOK ||--o{ LOAN : "subject of"
+    PATRON {
+        string patronId PK
+        string name
+        string email
+        int maxLoans
+    }
+    BOOK {
+        string isbn PK
+        string title
+        string author
+        int publicationYear
+        string status
+    }
+    LOAN {
+        string loanId PK
+        date loanDate
+        date dueDate
+        date returnDate
+        float fine
+    }
+```
 
 ### Object Constraint Language
 
-The Object Constraint Language (OCL) is a formal language for expressing constraints on UML models. OCL is a declarative language that does not have side effects. Expressions can specify invariants on classes, preconditions and postconditions on operations, and guard conditions on transitions.
+OCL is a formal language for expressing constraints on UML models. It is declarative with no side effects.
 
-An OCL invariant has the form "context ClassName inv: boolean-expression". For example, a constraint that an account balance must never be negative is expressed as: "context Account inv: self.balance >= 0". OCL expressions navigate the model using dot notation and support set operations through collection types including Set, Bag, Sequence, and OrderedSet.
+**OCL Expression Types:**
+
+| Type | Example |
+|------|---------|
+| **Invariant** | `context Account inv: self.balance >= 0` |
+| **Precondition** | `context Account::withdraw(a: Integer) pre: self.balance >= a` |
+| **Postcondition** | `context Account::withdraw(a: Integer) post: self.balance = self@pre.balance - a` |
+| **Query** | `context Library::getOverdueLoans(): Set(Loan) body: self.loans->select(l \| l.isOverdue())` |
+
+**OCL Collection Operations:**
+
+```typescript
+// OCL: context Library inv: self.books->forAll(b | b.status <> BookStatus::LOST)
+// OCL: context Patron inv: self.loans->select(l | l.isOverdue())->size() <= 3
+// OCL: context Library::getAvailableBooks(): Set(Book) 
+//      body: self.books->select(b | b.status = BookStatus::AVAILABLE)
+```
+
+### Model-Driven Engineering
+
+Model-driven engineering (MDE) elevates models from documentation to primary development artefacts:
+
+```mermaid
+graph LR
+    PIM[Platform-Independent Model] -->|QVT Transformation| PSM[Platform-Specific Model]
+    PSM -->|Code Generation| CODE[Executable Code]
+    PSM -->|Reverse Engineering| PIM
+```
+
+- **PIM (Platform-Independent Model):** Describes system independently of implementation platform
+- **PSM (Platform-Specific Model):** Incorporates platform-specific details
+- **QVT (Query/View/Transformation):** Standard for model transformations
+
+## Practical Takeaways
+
+1. **Model what matters** — not every detail needs a model; focus on complex or critical aspects
+2. **Keep diagrams consistent** — the same class should appear identically across all diagrams
+3. **Use the right diagram for the audience** — use case diagrams for stakeholders, class diagrams for developers
+4. **Don't over-model** — excessive detail makes diagrams hard to read; use multiple levels of abstraction
+5. **Models should be living documents** — update them as the code evolves, or they become misleading
+6. **Combine UML with code** — generate skeleton code from class diagrams to ensure consistency
 
 ## Examples
 
-### Case Study: UML for an Online Banking System
+### Example 1: Mapping UML to TypeScript
 
-An online banking system was modelled using seven UML diagram types. Use case diagrams showed the interactions between customers, tellers, and administrators with the system. A class diagram defined seventy-five classes across the domain, customer, transaction, and persistence layers. Sequence diagrams detailed the flow of funds transfer and bill payment scenarios. State machine diagrams modelled the lifecycle of a transaction through pending, completed, failed, and cancelled states. Component diagrams organised the system into web, application, and data tiers. Deployment diagrams specified a three-server architecture with load balancing and database replication.
+```typescript
+// UML Class: Book
+// - isbn: string
+// - title: string
+// - status: BookStatus
+// + getDetails(): BookDetails
+// + changeStatus(newStatus: BookStatus): void
+enum BookStatus {
+  AVAILABLE = 'AVAILABLE',
+  ON_LOAN = 'ON_LOAN',
+  RESERVED = 'RESERVED',
+  LOST = 'LOST',
+  WITHDRAWN = 'WITHDRAWN',
+}
 
-### Case Study: SysML for an Autonomous Vehicle
+class Book {
+  constructor(
+    private readonly isbn: string,
+    private readonly title: string,
+    private readonly author: string,
+    private readonly publicationYear: number,
+    private status: BookStatus
+  ) {}
 
-An autonomous vehicle project adopted SysML for system-level modelling. Block definition diagrams described the vehicle's physical and logical architecture. Parametric diagrams modelled constraints such as braking distance as a function of speed and friction. Requirements diagrams traced system requirements to subsystem specifications. Activity diagrams modelled the sensing-planning-acting pipeline with concurrent flows for sensor fusion, path planning, and actuation.
+  public getDetails(): BookDetails {
+    return {
+      isbn: this.isbn,
+      title: this.title,
+      author: this.author,
+      year: this.publicationYear,
+      status: this.status,
+    };
+  }
 
-### Template: OCL Constraints
+  public changeStatus(newStatus: BookStatus): void {
+    const validTransitions: Record<BookStatus, BookStatus[]> = {
+      [BookStatus.AVAILABLE]: [BookStatus.ON_LOAN, BookStatus.RESERVED, BookStatus.WITHDRAWN],
+      [BookStatus.ON_LOAN]: [BookStatus.AVAILABLE, BookStatus.LOST],
+      [BookStatus.RESERVED]: [BookStatus.ON_LOAN, BookStatus.AVAILABLE],
+      [BookStatus.LOST]: [BookStatus.WITHDRAWN],
+      [BookStatus.WITHDRAWN]: [],
+    };
+    if (!validTransitions[this.status].includes(newStatus)) {
+      throw new Error(`Cannot transition from ${this.status} to ${newStatus}`);
+    }
+    this.status = newStatus;
+  }
+}
 
-context Loan inv maximumAmount: self.amount <= 100000
-context Account::withdraw(a: Integer) precondition sufficientFunds: self.balance >= a
-context Account::withdraw(a: Integer) postcondition balanceReduced: self.balance = self@pre.balance - a
-context Customer inv uniqueIdentifier: Customer.allInstances()->forAll(c1, c2 | c1 <> c2 implies c1.identifier <> c2.identifier)
+interface BookDetails {
+  isbn: string;
+  title: string;
+  author: string;
+  year: number;
+  status: BookStatus;
+}
+
+// UML Sequence: Borrow Book
+class CatalogueDB {
+  private books: Map<string, Book> = new Map();
+
+  public findBooks(query: string): BookDetails[] {
+    return Array.from(this.books.values())
+      .filter((b) => b.getDetails().title.includes(query))
+      .map((b) => b.getDetails());
+  }
+
+  public checkAvailability(isbn: string): boolean {
+    const book = this.books.get(isbn);
+    return book !== undefined && book.getDetails().status === BookStatus.AVAILABLE;
+  }
+
+  public createLoan(patronId: string, isbn: string): string {
+    const book = this.books.get(isbn);
+    if (!book || book.getDetails().status !== BookStatus.AVAILABLE) {
+      throw new Error('Book not available');
+    }
+    book.changeStatus(BookStatus.ON_LOAN);
+    return `LOAN-${patronId}-${isbn}-${Date.now()}`;
+  }
+}
+
+class SearchController {
+  constructor(private readonly catalogue: CatalogueDB) {}
+
+  public search(query: string): BookDetails[] {
+    return this.catalogue.findBooks(query);
+  }
+
+  public borrowBook(patronId: string, isbn: string): string {
+    if (!this.catalogue.checkAvailability(isbn)) {
+      throw new Error('Book not available for borrowing');
+    }
+    return this.catalogue.createLoan(patronId, isbn);
+  }
+}
+```
+
+### Example 2: TypeScript State Machine from UML State Diagram
+
+```typescript
+type State = 'available' | 'onLoan' | 'overdue' | 'reserved' | 'lost' | 'withdrawn';
+type Event = 'borrow' | 'return' | 'reserve' | 'cancelReservation' | 'reportLost' | 'daysPass' | 'withdraw';
+
+interface Transition {
+  from: State;
+  to: State;
+  event: Event;
+  guard?: () => boolean;
+  action?: () => void;
+}
+
+class BookStateMachine {
+  private currentState: State;
+  private readonly transitions: Transition[];
+
+  constructor() {
+    this.currentState = 'available';
+    this.transitions = [
+      { from: 'available', to: 'onLoan', event: 'borrow' },
+      { from: 'available', to: 'reserved', event: 'reserve' },
+      { from: 'onLoan', to: 'overdue', event: 'daysPass', guard: () => true },
+      { from: 'onLoan', to: 'available', event: 'return' },
+      { from: 'overdue', to: 'available', event: 'return' },
+      { from: 'overdue', to: 'lost', event: 'reportLost' },
+      { from: 'reserved', to: 'onLoan', event: 'borrow' },
+      { from: 'reserved', to: 'available', event: 'cancelReservation' },
+      { from: 'lost', to: 'withdrawn', event: 'withdraw' },
+    ];
+  }
+
+  public send(event: Event): boolean {
+    const transition = this.transitions.find(
+      (t) => t.from === this.currentState && t.event === event
+    );
+    if (!transition) {
+      throw new Error(
+        `No transition from state '${this.currentState}' on event '${event}'`
+      );
+    }
+    if (transition.guard && !transition.guard()) {
+      throw new Error('Guard condition not met');
+    }
+    this.currentState = transition.to;
+    if (transition.action) transition.action();
+    return true;
+  }
+
+  public getState(): State {
+    return this.currentState;
+  }
+}
+```
+
+### Example 3: OCL Constraints in TypeScript
+
+```typescript
+// OCL: context Account inv: self.balance >= 0
+// TypeScript equivalent using a library-like approach:
+
+interface OCLConstraint<T> {
+  evaluate(target: T): boolean;
+  message: string;
+}
+
+class Account {
+  constructor(
+    public readonly id: string,
+    public readonly owner: string,
+    public balance: number,
+    public readonly minimumBalance: number = 0
+  ) {}
+
+  public withdraw(amount: number): void {
+    if (this.balance - amount < this.minimumBalance) {
+      throw new Error('Insufficient funds');
+    }
+    this.balance -= amount;
+  }
+
+  public deposit(amount: number): void {
+    this.balance += amount;
+  }
+}
+
+class OCLValidator {
+  private constraints: OCLConstraint<unknown>[] = [];
+
+  public addConstraint<T>(constraint: OCLConstraint<T>): void {
+    this.constraints.push(constraint as OCLConstraint<unknown>);
+  }
+
+  public validate<T>(target: T): { valid: boolean; violations: string[] } {
+    const violations: string[] = [];
+    for (const constraint of this.constraints) {
+      if (!constraint.evaluate(target)) {
+        violations.push(constraint.message);
+      }
+    }
+    return { valid: violations.length === 0, violations };
+  }
+}
+
+// OCL: context Account inv: self.balance >= 0
+const accountValidator = new OCLValidator();
+accountValidator.addConstraint<Account>({
+  evaluate: (a) => a.balance >= 0,
+  message: 'Account balance must be non-negative',
+});
+
+// OCL: context Account::withdraw(a: Integer) pre: self.balance >= a
+accountValidator.addConstraint<Account>({
+  evaluate: (a) => a.balance >= 0,
+  message: 'Precondition: sufficient balance',
+});
+```
+
+## Chapter Quiz
+
+**Q1: Which UML diagram is best suited for showing the flow of control across multiple actors?**
+- A) Class diagram
+- B) Activity diagram
+- C) Component diagram
+- D) Deployment diagram
+
+**Answer: B** — Activity diagrams model control flow across actors using swimlanes.
+
+**Q2: What does the UML relationship `<<include>>` mean in a use case diagram?**
+- A) One use case optionally extends another
+- B) One use case always includes the behaviour of another
+- C) One actor specialises another
+- D) A use case inherits from an actor
+
+**Answer: B** — Include means the base use case always incorporates the included use case's behaviour.
+
+**Q3: In a class diagram, composition (filled diamond) differs from aggregation (hollow diamond) because:**
+- A) Composition implies the part cannot exist without the whole
+- B) Composition implies shared ownership
+- C) Aggregation implies the part cannot exist without the whole
+- D) There is no difference
+
+**Answer: A** — In composition, the part's lifecycle depends on the whole.
+
+**Q4: What is the primary challenge of model checking in formal verification?**
+- A) It requires a formal specification language
+- B) The state explosion problem
+- C) It cannot handle concurrent systems
+- D) It requires manual proof construction
+
+**Answer: B** — The number of states grows exponentially with system components.
+
+**Q5: What is the purpose of a PIM in Model-Driven Architecture?**
+- A) To describe the system independently of the implementation platform
+- B) To specify deployment topology
+- C) To define database schemas
+- D) To generate test cases
+
+**Answer: A** — A Platform-Independent Model describes the system without platform-specific details.
 
 ## Summary
 
-System modelling provides multiple perspectives on a software system. UML is the standard modelling language for software systems, offering thirteen diagram types for structural and behavioural modelling. SysML extends UML for systems engineering. DFDs and ER diagrams remain valuable for data-oriented modelling. Model-driven engineering transforms models from documentation into primary development artefacts. OCL adds formal precision to UML models by expressing constraints that cannot be captured graphically.
+System modelling provides multiple perspectives on a software system. UML is the standard modelling language, offering thirteen diagram types for structural and behavioural modelling. Use case diagrams establish system boundaries and functionality. Class diagrams define static structure. Sequence diagrams detail interactions over time. Activity diagrams model control flow. State machine diagrams capture lifecycle behaviour. Component and deployment diagrams show physical organisation. DFDs and ER diagrams remain valuable for data-oriented modelling. OCL adds formal precision to UML models. Model-driven engineering transforms models from documentation into primary development artefacts.
 
 ## Exercises
 
@@ -125,7 +695,7 @@ System modelling provides multiple perspectives on a software system. UML is the
 4. How does a sequence diagram convey the timing of interactions?
 5. What is the purpose of a fork node in an activity diagram?
 6. Distinguish between aggregation and composition in class diagrams.
-7. What is the difference between a provided interface and a required interface in component diagrams?
+7. What is the difference between a provided interface and a required interface?
 8. How does SysML extend UML for systems engineering?
 9. What is the distinction between a PIM and a PSM in MDA?
 10. What does an OCL invariant specify?
@@ -133,9 +703,10 @@ System modelling provides multiple perspectives on a software system. UML is the
 ### Application Problems
 
 1. Draw a use case diagram for a university library system. Identify at least four actors and twelve use cases.
-2. Develop a class diagram for an online course registration system. Include classes for Student, Course, Instructor, Registration, and Department with appropriate attributes, operations, and relationships.
-3. Construct a sequence diagram for the "Place Order" use case of an e-commerce system showing interactions between the customer, the shopping cart, the inventory system, and the payment gateway.
+2. Develop a class diagram for an online course registration system. Include Student, Course, Instructor, Registration, and Department with appropriate attributes, operations, and relationships.
+3. Construct a sequence diagram for the "Place Order" use case of an e-commerce system showing interactions between customer, cart, inventory system, and payment gateway.
+4. Implement the full class diagram from problem 2 in TypeScript with type definitions, methods, and appropriate relationships.
 
 ### Challenge Problem
 
-You are the chief architect for a hospital information system that must integrate patient records, appointment scheduling, billing, laboratory results, and pharmacy management. Develop a modelling strategy that addresses all five subsystems. Specify which UML diagram types you would use for each subsystem and in what order you would develop them. Explain how you would ensure consistency across the models. Provide an OCL constraint for at least three business rules, such as "a patient cannot be scheduled for two appointments at the same time" or "a prescription must be authorised by a licensed physician."
+You are the chief architect for a hospital information system that must integrate patient records, appointment scheduling, billing, laboratory results, and pharmacy management. Develop a modelling strategy that addresses all five subsystems. Specify which UML diagram types you would use for each subsystem and in what order you would develop them. Explain how you would ensure consistency across the models. Implement a TypeScript model consistency checker that verifies cross-diagram references (e.g., a class appearing in a class diagram must match its usage in sequence diagrams).

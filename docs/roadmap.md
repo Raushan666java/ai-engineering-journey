@@ -72,6 +72,47 @@ A structured, semester-by-semester plan to master Computer Science.
 
 ---
 
+---
+
+## Phase 2 — Depth Upgrade Status (GFG/Javatpoint)
+
+| Course | Status | Lines Added | Ch |
+|--------|--------|-------------|-----|
+| Algorithms | ✅ Done | +17.5K | 18 |
+| Data-Structures | ✅ Done | +26.1K | 18 |
+| Applied-AI | ✅ Done | +4.5K | 4 |
+| Artificial-Intelligence | ✅ Done | +32.1K | 27 |
+| Operating-Systems | ✅ Done | +41.4K | 18 |
+| Computer-Networks | ✅ Done | +38.3K | 18 |
+| Database-Management-Systems | ✅ Done | +44.5K | 19 |
+| C-Programming | ✅ Done | +30.7K | 18 |
+| OOP with C++ | ✅ Done | +38.7K | 17 |
+| Java | ⬜ Pending | — | 18 |
+| Python | ⬜ Pending | — | 20 |
+| Web Development | ⬜ Pending | — | 18 |
+| Machine Learning | ⬜ Pending | — | 18 |
+| System Design | ⬜ Pending | — | 12 |
+| DevOps | ⬜ Pending | — | 13 |
+| Cloud Computing | ⬜ Pending | — | 12 |
+| Big Data | ⬜ Pending | — | 8 |
+| Blockchain | ⬜ Pending | — | 12 |
+| Compiler Design | ⬜ Pending | — | 12 |
+| Cyber Security | ⬜ Pending | — | 14 |
+| Digital Logic | ⬜ Pending | — | 15 |
+| Discrete Mathematics | ⬜ Pending | — | 11 |
+| GATE CS Preparation | ⬜ Pending | — | — |
+| Laravel | ⬜ Pending | — | — |
+| Learning How to Learn | ⬜ Pending | — | — |
+| Placement Preparation | ⬜ Pending | — | — |
+| Software Engineering | ⬜ Pending | — | — |
+| Theory of Computation | ⬜ Pending | — | 15 |
+
+**Total:** 9 courses done (~274K lines added), 19 remaining.
+
+Each upgraded chapter includes: real-world analogies, numbered steps, pseudocode,
+multi-language code with output, dry-run trace tables, complexity analysis with WHY,
+A&D comparison tables, edge case coverage, interview corner, real-world applications.
+
 ## Daily Practice
 
 - **LeetCode / Codeforces** — 1-2 problems daily

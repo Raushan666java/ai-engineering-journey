@@ -15,6 +15,9 @@
 | 4 | LinkedIn rewrite | 1 | Headline leads with "AI Automation Engineer" |
 | 5 | Case-study post | 2 | One published write-up on LinkedIn or dev.to |
 | 6 | Dubai job search + applications | Ongoing, 1hr/week | 3-5 applications/week sustained for 4 weeks |
+| 7 | Technical interview prep | 2 | Can explain RAG pipeline, ReAct loop, and MCP protocol from memory without notes |
+| 8 | Salary negotiation | 1 | Written walk-away number + target range for Dubai market |
+| 9 | Freelance pricing strategy | 1 | Rate card set for 3 engagement types (hourly, fixed-price, retainer) |
 
 ---
 
@@ -229,6 +232,166 @@ Spend 1 hour identifying 20 target postings. Apply to 3-5 of them using your pro
 
 ---
 
+## 5.7 Technical Interview Prep
+
+The AI Agent Engineer interview typically covers: system design (RAG pipeline), agent architecture (ReAct, LangGraph), and production concerns (latency, cost, safety).
+
+### 10 common questions with concise answers
+
+**Q1: Walk me through the RAG pipeline from ingestion to response.**
+```
+Ingestion: Document → chunk (500-800 tokens) → embed (text-embedding-3-small, 1536d) → store in ChromaDB with metadata.
+Query: User question → embed → ANN search (HNSW, top_k=5) → re-rank (Cohere reranker) → combine chunks + query → LLM generates answer with citations.
+```
+
+**Q2: Why cosine similarity for text embeddings?**
+Cosine measures angle, ignoring magnitude. In embedding space, a document's meaning is its direction, not its length. A long and short document saying the same thing have the same direction.
+
+**Q3: What's the difference between an agent and a chain?**
+A chain is a fixed sequence of LLM calls. An agent decides which action to take next based on the current state — it can choose tool A or tool B depending on what the user asked.
+
+**Q4: How do you prevent hallucination in RAG?**
+1. Set a relevance threshold on retrieved chunks (reject low-score results)
+2. Instruct the LLM: "If the context doesn't contain the answer, say 'I don't know'"
+3. Add citation requirements — force the model to cite specific chunks
+4. Re-rank to push irrelevant chunks below the cutoff
+
+**Q5: LangGraph vs OpenAI Agents SDK — when to use what?**
+OpenAI Agents SDK: simple tool-use, single-agent, fast setup (5 min). LangGraph: complex state machines, multi-agent coordination, human-in-the-loop, production reliability (checkpointer, crash recovery).
+
+**Q6: How do you handle rate limiting for an AI API?**
+Token bucket per user with 5 req/min burst. Sliding window for total API load. Queue overflow to Redis and process async. Return 429 with Retry-After header.
+
+**Q7: Explain the MCP protocol.**
+Model Context Protocol: 3 primitives — Tools (actions the LLM can take), Resources (data the LLM can read), Prompts (pre-built prompt templates). The LLM discovers these at connection time and uses them as needed.
+
+**Q8: How do you estimate LLM API costs?**
+Token count × per-token price. GPT-4: $30/1M input, $60/1M output. A 4-step agent chain with 4K tokens per step costs ~$0.48 per run. Add 20% for retries.
+
+**Q9: How do you test an agent?**
+1. Unit test each tool function independently
+2. Integration test: feed input, check that the correct tools were called
+3. E2E test: run the full agent, verify output quality with LLM-as-judge
+4. Load test: measure cost and latency under concurrent requests
+
+**Q10: What's your experience with production AI systems?**
+"I run a multi-tenant ERP on Hetzner with Docker and Cloudflare Tunnel. I've ported a real estate booking module to FastAPI, deployed a public RAG API with ChromaDB, and rebuilt a visual n8n workflow as a LangGraph state machine with checkpointer persistence and human-in-the-loop."
+
+### Exercise
+
+Record yourself answering all 10 questions. Play it back. If you stall on any question, re-read that phase's content. Repeat until all 10 flow naturally.
+
+---
+
+## 5.8 Salary Negotiation
+
+### Dubai market ranges (2026)
+
+| Role | Junior (0-2yr) | Mid (2-5yr) | Senior (5-8yr) | Lead (8+yr) |
+|------|---------------|-------------|----------------|-------------|
+| AI Engineer | 8K-12K AED | 12K-18K AED | 18K-28K AED | 28K-40K AED |
+| AI Agent Engineer | 10K-15K AED | 15K-22K AED | 22K-32K AED | 32K-45K AED |
+| Freelance hourly | $35-50 | $50-80 | $80-120 | $120-175 |
+
+### Your walk-away numbers
+
+```python
+# Calculate your minimum acceptable rate
+current_income = 0  # Your current monthly income in USD
+desired_income = 3000  # Minimum monthly target
+hours_per_week = 20
+weeks_per_month = 4
+
+min_hourly = desired_income / (hours_per_week * weeks_per_month)
+print(f"Minimum hourly rate: ${min_hourly:.0f}/hr")
+# → $38/hr minimum
+
+# For full-time role
+current_annual = 0  # Your current annual salary in USD
+desired_annual = 36000  # Minimum annual target
+print(f"Minimum annual salary: ${desired_annual:,}")
+# For Dubai: convert to AED (÷ 3.67)
+print(f"Minimum monthly AED: {desired_annual / 12 * 3.67:.0f} AED")
+```
+
+### Negotiation scripts
+
+**On rate:**
+> "I'd love to work on this. Based on the scope you described, which involves building a custom LangGraph pipeline with MCP integration, my rate is $X/hr. If the budget is tighter, I can scope it down to a simpler architecture — what range were you targeting?"
+
+**On salary:**
+> "I'm targeting roles in the 18K-25K AED range for AI agent engineering positions, given my experience with LangGraph, MCP, and production deployment. Is that aligned with your budget for this role?"
+
+### Exercise
+
+Calculate your walk-away number. Write your rate card (hourly, fixed-price for a RAG demo build, monthly retainer for maintenance). Save it as a private note. Never name a number first in a negotiation.
+
+---
+
+## 5.9 Freelance Pricing Strategy
+
+### Three engagement models
+
+| Model | When to use | Your rate | Risk level |
+|-------|------------|-----------|------------|
+| Hourly | Discovery phase, ongoing maintenance | $50-80/hr | Low |
+| Fixed-price | Well-defined scope ("build a RAG API") | $1,500-5,000 per project | Medium |
+| Retainer | Monthly maintenance + improvements | $1,000-3,000/month | Low |
+
+### Estimating fixed-price projects
+
+```python
+def estimate_fixed_price(
+    hours: float,
+    hourly_rate: float = 60,
+    risk_buffer: float = 1.5,  # 50% buffer for unknown unknowns
+    complexity_mult: float = 1.0,
+) -> dict:
+    base = hours * hourly_rate
+    total = base * risk_buffer * complexity_mult
+    return {
+        "base_estimate": base,
+        "risk_buffer_pct": (risk_buffer - 1) * 100,
+        "total_quote": total,
+    }
+
+# RAG demo API build: ~40 hours
+print(estimate_fixed_price(40, 60, 1.5, 1.2))
+# → base: $2,400, buffer: 50%, total: $4,320
+
+# LangGraph workflow: ~60 hours
+print(estimate_fixed_price(60, 70, 1.5, 1.3))
+# → base: $4,200, buffer: 50%, total: $8,190
+```
+
+### Upwork proposal pricing strategy
+
+| Project type | Your bid | Competitor range | Win rate |
+|-------------|----------|-----------------|----------|
+| Simple API build | $1,500-2,500 | $500-5,000 | 40% |
+| RAG system | $3,000-5,000 | $1,000-10,000 | 30% |
+| Agent workflow | $4,000-8,000 | $2,000-15,000 | 25% |
+| Consultation (hourly) | $60-80 | $30-150 | 50% |
+
+### Street-smart pricing rules
+
+1. **Never compete on price** — compete on specificity ("I've built this exact system for real estate")
+2. **Anchor high** — your first number sets the range; say your rate confidently
+3. **Discount scope, not rate** — if they can't afford $5K, offer $3K with reduced scope
+4. **First client at any rate** — your first Upwork gig validates your profile; take a lower rate for the first one
+5. **Raise rates every 3 months** — if you're fully booked, you're undercharging
+
+### Exercise
+
+Build your rate card:
+- Hourly rate: $__
+- Fixed-price: RAG demo $__, Agent workflow $__, Consultation $__/hr
+- Monthly retainer: $__
+- Minimum engagement: $__
+- Walk-away minimum (below which you say no): $__
+
+---
+
 ## Phase 5 Done Checkpoint
 
 Before declaring yourself ready to apply:
@@ -241,8 +404,11 @@ Before declaring yourself ready to apply:
 - [ ] 20 target postings identified
 - [ ] Proposal tracker started
 - [ ] 3-5 applications sent
+- [ ] Can answer all 10 interview questions from memory without notes
+- [ ] Walk-away number + rate card written and saved
+- [ ] 3 engagement types priced (hourly, fixed, retainer)
 
-**Estimated time to checkpoint:** 12-15 hours over 2 weeks, plus ongoing applications.
+**Estimated time to checkpoint:** 16-20 hours over 2 weeks, plus ongoing applications.
 
 ---
 

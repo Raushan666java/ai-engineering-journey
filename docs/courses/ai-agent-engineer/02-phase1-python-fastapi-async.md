@@ -24,6 +24,8 @@
 | 13 | `asyncio.gather` vs sequential awaits | 2 | Rewrite 3 sequential calls as concurrent, measure speedup |
 | 14 | Async HTTP with `httpx.AsyncClient` | 1.5 | Make concurrent outbound API calls without blocking |
 | 15 | Common async pitfalls | 2 | Identify why `requests.get()` inside `async def` kills concurrency |
+| 16 | pytest for FastAPI (fixtures, DI, httpx) | 2 | Write 3 tests with mocked dependencies that pass |
+| 17 | Alembic migrations | 1.5 | Init migration, autogenerate, apply and roll back |
 
 ---
 
@@ -670,6 +672,199 @@ GET    /bookings/{id}/documents  List documents for a booking
 
 ---
 
+## 1.16 pytest for FastAPI: Fixtures, DI, httpx
+
+Testing FastAPI requires more than unit tests — you need to test endpoints with real request/response cycles.
+
+### Basic FastAPI test
+
+```python
+from fastapi.testclient import TestClient
+
+from app.main import app
+
+client = TestClient(app)
+
+def test_healthz():
+    response = client.get("/healthz")
+    assert response.status_code == 200
+    assert response.json() == {"status": "ok"}
+
+def test_create_item():
+    response = client.post(
+        "/items",
+        json={"name": "test", "price": 10.0},
+    )
+    assert response.status_code == 201
+    data = response.json()
+    assert data["name"] == "test"
+    assert "id" in data
+```
+
+### Mocking dependencies
+
+```python
+import pytest
+from fastapi.testclient import TestClient
+
+from app.deps import get_current_user
+from app.main import app
+from app.schemas import User
+
+def mock_user():
+    return User(id="test-123", email="test@example.com", name="Test")
+
+# Override DI at the app level
+app.dependency_overrides[get_current_user] = mock_user
+
+def test_protected_endpoint():
+    client = TestClient(app)
+    response = client.get("/me")
+    assert response.status_code == 200
+    assert response.json()["email"] == "test@example.com"
+
+# Clean up after test
+app.dependency_overrides.clear()
+```
+
+### Async tests with httpx
+
+```python
+import pytest
+from httpx import AsyncClient, ASGITransport
+
+from app.main import app
+
+@pytest.mark.anyio
+async def test_async_endpoint():
+    transport = ASGITransport(app=app)
+    async with AsyncClient(transport=transport, base_url="http://test") as ac:
+        response = await ac.post(
+            "/v1/collections",
+            json={"name": "test-collection"},
+        )
+    assert response.status_code == 200
+    assert response.json()["name"] == "test-collection"
+```
+
+### Test fixtures for database
+
+```python
+import pytest
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from app.database import Base, get_db
+from app.main import app
+
+TEST_DATABASE_URL = "sqlite:///./test.db"
+engine = create_engine(TEST_DATABASE_URL)
+TestingSessionLocal = sessionmaker(bind=engine)
+
+@pytest.fixture
+def db_session():
+    Base.metadata.create_all(bind=engine)
+    session = TestingSessionLocal()
+    yield session
+    session.close()
+    Base.metadata.drop_all(bind=engine)
+
+@pytest.fixture
+def client(db_session):
+    def override_get_db():
+        yield db_session
+    app.dependency_overrides[get_db] = override_get_db
+    yield TestClient(app)
+    app.dependency_overrides.clear()
+```
+
+### Exercise
+
+Write tests for your booking module:
+1. Test healthz returns 200
+2. Test creating a booking with valid data returns 201
+3. Test creating a booking with missing fields returns 422
+4. Test creating a booking with overlapping dates returns 409
+5. Test an endpoint that requires auth returns 401 without token
+
+Run `pytest -v` and get all green.
+
+---
+
+## 1.17 Alembic Migrations
+
+Alembic is the SQLAlchemy equivalent of Laravel's migrations. You use it whenever your schema changes.
+
+### Setup
+
+```bash
+pip install alembic
+alembic init alembic
+```
+
+Edit `alembic/env.py` to point at your models:
+
+```python
+from app.models import Base  # your SQLAlchemy Base
+from app.config import settings
+
+target_metadata = Base.metadata
+
+config.set_main_option("sqlalchemy.url", settings.database_url)
+```
+
+### Creating a migration
+
+```bash
+alembic revision --autogenerate -m "add bookings table"
+```
+
+This compares your current models against the database and generates a migration:
+
+```python
+"""add bookings table
+
+Revision ID: a1b2c3d4e5f6
+"""
+from alembic import op
+import sqlalchemy as sa
+
+def upgrade():
+    op.create_table(
+        "bookings",
+        sa.Column("id", sa.Integer(), nullable=False),
+        sa.Column("property_id", sa.Integer(), nullable=False),
+        sa.Column("guest_name", sa.String(length=255), nullable=False),
+        sa.Column("check_in", sa.Date(), nullable=False),
+        sa.Column("check_out", sa.Date(), nullable=False),
+        sa.Column("status", sa.String(length=50), nullable=False),
+        sa.PrimaryKeyConstraint("id"),
+    )
+
+def downgrade():
+    op.drop_table("bookings")
+```
+
+### Applying and rolling back
+
+```bash
+alembic upgrade head   # Apply all pending
+alembic downgrade -1   # Roll back one step
+alembic history        # View migration history
+```
+
+### Best practices
+
+1. **Always review autogenerated migrations** — Alembic misses some changes (table renames, column type changes)
+2. **Never edit a migration that's already been applied** — create a new one
+3. **Test both upgrade and downgrade** before deploying
+4. **Commit migration files to git** — they're part of your schema history
+
+### Exercise
+
+Add a `phone_number` column to your bookings table. Create a migration with `--autogenerate`. Apply it. Verify the column exists. Roll it back. Apply it again. Commit the migration file.
+
+---
+
 ## Phase 1 Done Checkpoint
 
 Before moving to Phase 2, you should be able to:
@@ -682,7 +877,9 @@ Before moving to Phase 2, you should be able to:
 - [ ] Use `asyncio.gather` to speed up 3 concurrent API calls
 - [ ] Add a Pydantic model-level validator (start_date < end_date)
 - [ ] Load typed settings from `.env` via `pydantic-settings`
+- [ ] Write 3 FastAPI tests with mocked dependencies that all pass
+- [ ] Create an Alembic migration from scratch, apply and roll back
 
-**Estimated time to checkpoint:** 25-30 hours over 2 weeks.
+**Estimated time to checkpoint:** 28-34 hours over 2 weeks.
 
 [Next: Phase 2 — LLM Fundamentals + RAG Theory](03-phase2-llm-rag-theory.md)

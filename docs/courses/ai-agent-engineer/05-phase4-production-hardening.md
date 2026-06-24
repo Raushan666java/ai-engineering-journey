@@ -19,6 +19,8 @@
 | 8 | Secrets management | 1.5 | Move all keys to .env, document the pattern |
 | 9 | API cost monitoring | 2 | Build a token-usage logging wrapper for OpenAI/Anthropic calls |
 | 10 | GitHub Actions CI | 2.5 | Write a test workflow for each project repo |
+| 11 | Load testing (k6 / locust) | 2 | Run a load test against your RAG endpoint, report P50/P95/P99 |
+| 12 | Monitoring + alerting (Grafana + Prometheus) | 2.5 | Deploy a Grafana dashboard showing request rate, latency, error rate |
 
 ---
 
@@ -415,6 +417,237 @@ Write a `.github/workflows/test.yml` for your RAG demo repo. Push it. Verify the
 
 ---
 
+## 4.11 Load Testing (k6 / Locust)
+
+Before you tell a client your API handles "thousands of requests," you need to prove it.
+
+### k6 basics
+
+```bash
+# Install k6
+winget install k6  # Windows
+brew install k6    # macOS
+
+# Run a test
+k6 run load_test.js
+```
+
+```javascript
+// load_test.js
+import http from 'k6/http';
+import { check, sleep } from 'k6';
+
+export const options = {
+  stages: [
+    { duration: '30s', target: 10 },   // Ramp up to 10 users
+    { duration: '1m', target: 10 },    // Stay at 10
+    { duration: '30s', target: 0 },    // Ramp down
+  ],
+  thresholds: {
+    http_req_duration: ['p(95)<2000'], // 95% of requests under 2s
+    http_req_failed: ['rate<0.01'],    // <1% failure rate
+  },
+};
+
+export default function () {
+  const res = http.post(
+    'https://rag-demo.apexpillar.tech/v1/query',
+    JSON.stringify({ query: 'What is RAG?', top_k: 3 }),
+    { headers: { 'Content-Type': 'application/json' } },
+  );
+
+  check(res, {
+    'status is 200': (r) => r.status === 200,
+    'response time < 3s': (r) => r.timings.duration < 3000,
+  });
+
+  sleep(1); // Think time between requests
+}
+```
+
+### Locust (Python alternative)
+
+```python
+# locustfile.py
+from locust import HttpUser, task, between
+
+class RAGUser(HttpUser):
+    wait_time = between(1, 3)  # Simulate user think time
+
+    @task
+    def query_rag(self):
+        self.client.post(
+            "/v1/query",
+            json={"query": "Explain embeddings", "top_k": 3},
+        )
+
+    @task(3)  # Weight: this runs 3x more often
+    def health_check(self):
+        self.client.get("/healthz")
+```
+
+```bash
+# Run Locust (web UI at http://localhost:8089)
+locust -f locustfile.py --host https://rag-demo.apexpillar.tech
+
+# Headless mode
+locust -f locustfile.py --host https://rag-demo.apexpillar.tech \
+  --headless -u 20 -r 2 --run-time 2m
+```
+
+### What to measure
+
+| Metric | What it tells you | Target |
+|--------|------------------|--------|
+| Requests/sec (RPS) | Throughput | Depends on infra |
+| P50 latency | Typical experience | < 500ms |
+| P95 latency | Slow but acceptable | < 2s |
+| P99 latency | Worst case | < 5s |
+| Error rate | Failures under load | < 1% |
+| Memory usage | Memory leak detection | Flat or stable |
+
+### Exercise
+
+Run a k6 load test against your RAG demo query endpoint:
+1. Start with 5 concurrent users for 1 minute
+2. Ramp to 20 concurrent users for 2 minutes
+3. Record P50, P95, P99 latencies
+4. Identify the bottleneck (LLM API call? Vector search? Network?)
+5. Document your findings in the project README
+
+---
+
+## 4.12 Monitoring + Alerting (Grafana + Prometheus)
+
+You can't improve what you don't measure. Grafana + Prometheus is the industry standard for monitoring AI services.
+
+### Prometheus setup
+
+```python
+# app/metrics.py
+from prometheus_client import Counter, Histogram, generate_latest
+from fastapi import Request
+import time
+
+REQUEST_COUNT = Counter(
+    "http_requests_total",
+    "Total HTTP requests",
+    ["method", "endpoint", "status"],
+)
+
+LATENCY = Histogram(
+    "http_request_duration_seconds",
+    "HTTP request latency",
+    ["method", "endpoint"],
+)
+
+LLM_TOKEN_COUNT = Counter(
+    "llm_tokens_total",
+    "Total LLM tokens used",
+    ["model", "operation"],
+)
+```
+
+```python
+# Middleware to record metrics
+@app.middleware("http")
+async def metrics_middleware(request: Request, call_next):
+    start = time.time()
+    response = await call_next(request)
+    duration = time.time() - start
+
+    REQUEST_COUNT.labels(
+        method=request.method,
+        endpoint=request.url.path,
+        status=response.status_code,
+    ).inc()
+
+    LATENCY.labels(
+        method=request.method,
+        endpoint=request.url.path,
+    ).observe(duration)
+
+    return response
+
+
+@app.get("/metrics")
+async def metrics():
+    return Response(
+        content=generate_latest(),
+        media_type="text/plain",
+    )
+```
+
+### docker-compose with monitoring
+
+```yaml
+# docker-compose.monitoring.yml
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+```
+
+```yaml
+# prometheus.yml
+scrape_configs:
+  - job_name: "rag-demo"
+    scrape_interval: 15s
+    static_configs:
+      - targets: ["rag-demo.apexpillar.tech:8000"]
+```
+
+### Grafana dashboard panels to create
+
+| Panel | Query | Why |
+|-------|-------|-----|
+| Request rate | `rate(http_requests_total[5m])` | See traffic patterns |
+| P95 latency | `histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))` | Track performance regressions |
+| Error rate | `rate(http_requests_total{status=~"5.."}[5m])` | Alert on server errors |
+| LLM cost | `rate(llm_tokens_total[1h]) * $price_per_token` | Watch spending |
+| Active users | `rate(http_requests_total[5m]) / avg_request_rate_per_user` | Estimate concurrency |
+
+### Alerting rules (Prometheus)
+
+```yaml
+groups:
+  - name: rag-demo-alerts
+    rules:
+      - alert: HighErrorRate
+        expr: rate(http_requests_total{status=~"5.."}[5m]) > 0.05
+        for: 2m
+        annotations:
+          summary: "Error rate above 5% for 2 minutes"
+
+      - alert: HighLatency
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m])) > 3
+        for: 5m
+        annotations:
+          summary: "P95 latency above 3s"
+
+      - alert: HighLLMCost
+        expr: rate(llm_tokens_total[1h]) * 30 / 1_000_000 > 10
+        for: 10m
+        annotations:
+          summary: "LLM cost exceeding $10/hour"
+```
+
+### Exercise
+
+Deploy Prometheus + Grafana alongside your RAG demo using docker-compose. Add the `/metrics` endpoint. Create a Grafana dashboard showing request rate and P95 latency. Verify that hitting your endpoint from the browser produces visible data points within 15 seconds.
+
+---
+
 ## Phase 4 Done Checkpoint
 
 Before moving to Phase 5, you should be able to:
@@ -429,7 +662,9 @@ Before moving to Phase 5, you should be able to:
 - [ ] Load all secrets from pydantic-settings with startup validation
 - [ ] Log per-query cost for every LLM call
 - [ ] Both project repos have green CI badges
+- [ ] Run a k6/locust load test, report P50/P95/P99
+- [ ] Deploy Grafana dashboard showing request rate + P95 latency
 
-**Estimated time to checkpoint:** 18-20 hours over 2 weeks.
+**Estimated time to checkpoint:** 24-26 hours over 2 weeks.
 
 [Next: Phase 5 — Portfolio + Market Positioning](06-phase5-portfolio-positioning.md)

@@ -22,6 +22,8 @@
 | 11 | Multi-agent orchestration patterns | 2 | Sketch a CRM assistant with 3 agents, justify the pattern |
 | 12 | Agent evaluation | 2 | Describe 2 concrete ways to test an agent |
 | 13 | Cost/latency in multi-step agent chains | 1.5 | Estimate per-run cost of a 4-step agent chain |
+| 14 | OpenAI Agents SDK | 2 | Build an agent using OpenAI Agents SDK with built-in tools |
+| 15 | Advanced MCP server development | 2 | Add resources + prompts to your MCP server, not just tools |
 
 ---
 
@@ -827,6 +829,200 @@ Run both pipelines on the same input topic. Measure: total execution time, numbe
 
 ---
 
+## 3.14 OpenAI Agents SDK
+
+OpenAI released the Agents SDK as a lightweight alternative to LangGraph for simpler agent patterns. It's worth knowing because (a) clients ask about it and (b) it's genuinely faster for linear tool-use chains.
+
+### Key concepts
+
+| Concept | LangGraph | OpenAI Agents SDK |
+|---------|-----------|-------------------|
+| Agent definition | StateGraph + nodes | `Agent` class with instructions + tools |
+| Tool calling | ToolNode + bind_tools | Decorator-based `@function_tool` |
+| Handoffs | Conditional edges | `handoffs` param |
+| Guardrails | Custom node | `input_guardrails` param |
+| Persistence | Checkpointer | Built-in, no config |
+
+### Basic agent
+
+```python
+from agents import Agent, Runner, function_tool
+
+@function_tool
+def get_weather(location: str) -> str:
+    """Get the current weather for a location."""
+    return f"The weather in {location} is 72°F and sunny."
+
+agent = Agent(
+    name="Weather agent",
+    instructions="You are a helpful weather assistant.",
+    tools=[get_weather],
+)
+
+result = Runner.run_sync(agent, "What's the weather in Dubai?")
+print(result.final_output)
+# The weather in Dubai is 72°F and sunny.
+```
+
+### Multi-agent with handoffs
+
+```python
+from agents import Agent, Runner
+
+# Specialist agents
+spanish_agent = Agent(
+    name="Spanish agent",
+    instructions="You translate English to Spanish.",
+)
+
+english_agent = Agent(
+    name="English agent",
+    instructions="You translate Spanish to English.",
+)
+
+# Triage agent
+triage_agent = Agent(
+    name="Triage agent",
+    instructions="Route the user to the right translation agent.",
+    handoffs=[spanish_agent, english_agent],
+)
+
+result = Runner.run_sync(triage_agent, "Hola, ¿cómo estás?")
+print(result.final_output)
+# "Hello, how are you?"
+```
+
+### Comparison to LangGraph
+
+| Dimension | OpenAI Agents SDK | LangGraph |
+|-----------|------------------|-----------|
+| Setup time | 5 minutes | 30 minutes |
+| Complex routing | Limited | Arbitrary Python |
+| State control | Minimal | Full control |
+| Tracing | Built-in | Requires LangSmith |
+| Cost monitoring | Built-in | Requires wrapper |
+| Open source | Yes | Yes |
+
+### Exercise
+
+Build an agent with OpenAI Agents SDK that has 2 tools: `search_web` (mock) and `summarize_text`. Run it with 3 different queries. Then compare the code length against the equivalent LangGraph graph. When would you use one over the other?
+
+---
+
+## 3.15 Advanced MCP Server Development
+
+Your existing MCP memory server exposes tools. MCP also supports **resources** (readable data) and **prompts** (templated prompts). Adding these makes your server more capable.
+
+### MCP recap: 3 primitives
+
+| Primitive | Purpose | Example |
+|-----------|---------|---------|
+| **Tools** | Action the LLM can invoke | `create_memory`, `search_memories` |
+| **Resources** | Data the LLM can read | `file:///logs`, `memory:///recent` |
+| **Prompts** | Pre-built prompt templates | `summarize-memories`, `extract-insights` |
+
+### Adding resources
+
+```python
+from mcp.server.fastmcp import FastMCP
+
+mcp = FastMCP("Advanced Memory Server")
+
+# Tool — action
+@mcp.tool()
+def search_memories(query: str) -> list[dict]:
+    return memory_store.search(query, top_k=5)
+
+# Resource — readable data
+@mcp.resource("memory://recent/{count}")
+def recent_memories(count: int = 10) -> str:
+    memories = memory_store.get_recent(count)
+    return "\n---\n".join(
+        f"[{m['id']}] {m['text']} (score: {m['score']})"
+        for m in memories
+    )
+
+# Resource — static file
+@mcp.resource("config://prompts/analyze")
+def analyze_prompt() -> str:
+    return """Analyze the following information and provide:
+1. Key themes
+2. Open questions
+3. Recommended actions"""
+```
+
+### Adding prompt templates
+
+```python
+@mcp.prompt()
+def summarize_memories(topic: str) -> str:
+    """Generate a prompt to summarize all memories about a topic."""
+    return f"""
+Please review all memories related to "{topic}" and provide:
+- A 3-sentence summary of what we know
+- Any contradictions in the information
+- Suggested next research questions
+
+Memories to analyze:
+{topic}
+"""
+
+@mcp.prompt()
+def extract_action_items(text: str) -> str:
+    return f"""
+Extract action items from this text. Format as a table with:
+| Action | Owner | Deadline | Priority |
+|--------|-------|----------|----------|
+
+Text: {text}
+"""
+```
+
+### Dynamic resources with URI templates
+
+```python
+# Access patterns like memory:///search/acme or memory:///search/ranch
+from mcp.server import ResourceTemplate
+
+@mcp.resource("memory:///search/{query}")
+async def search_resource(query: str) -> str:
+    results = memory_store.search(query, top_k=3)
+    if not results:
+        return f"No memories found for '{query}'"
+    return "\n".join(f"- {r['text']} (confidence: {r['score']:.2f})" for r in results)
+```
+
+### Testing your server
+
+```bash
+# With MCP Inspector
+npx @anthropic-ai/mcp-inspector http://localhost:8000/mcp
+
+# Or with a client
+python -c "
+from mcp import ClientSession, StdioServerParameters
+import asyncio
+
+async def test():
+    params = StdioServerParameters(
+        command='python', args=['memory_server.py']
+    )
+    async with ClientSession(params) as session:
+        result = await session.list_resources()
+        print('Resources:', result.resources)
+        result = await session.list_prompts()
+        print('Prompts:', result.prompts)
+
+asyncio.run(test())
+"
+```
+
+### Exercise
+
+Add at least 1 resource and 1 prompt template to your MCP memory server. Test with MCP Inspector that both are discoverable. Then connect Claude Desktop to your server and verify the resource appears in the "Attach from MCP" menu.
+
+---
+
 ## Phase 3 Done Checkpoint
 
 Before moving to Phase 4, you should be able to:
@@ -840,7 +1036,9 @@ Before moving to Phase 4, you should be able to:
 - [ ] Estimate per-run cost of a 4-step agent chain
 - [ ] Argue when to use n8n vs LangGraph for a given workflow
 - [ ] LangGraph Purvanchal pipeline produces output from end to end
+- [ ] Build an agent with OpenAI Agents SDK and compare code to LangGraph
+- [ ] Add resources + prompts to your MCP server, verify via MCP Inspector
 
-**Estimated time to checkpoint:** 30-35 hours over 3 weeks.
+**Estimated time to checkpoint:** 35-40 hours over 3 weeks.
 
 [Next: Phase 4 — Production Hardening](05-phase4-production-hardening.md)

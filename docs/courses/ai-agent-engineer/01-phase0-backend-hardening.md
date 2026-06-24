@@ -16,6 +16,8 @@
 | 5 | Rate limiting: token bucket vs sliding window | 1.5 | Can name which algorithm `slowapi` uses by default and why it matters for AI endpoints |
 | 6 | Microservices vs modular monolith | 1 | Can argue both sides applied to ApexERP architecture |
 | 7 | Idempotency keys for payment/webhook endpoints | 1.5 | Can explain why a webhook retry without idempotency breaks a payment flow |
+| 8 | API versioning strategies | 1 | Can argue URL prefix vs header vs query param vs all three |
+| 9 | WebSocket fundamentals | 1.5 | Can build a WebSocket echo server and explain stateful vs stateless |
 
 ---
 
@@ -378,6 +380,125 @@ Add an idempotency-key check to a mock payment endpoint. Send the same key twice
 
 ---
 
+## 0.8 API Versioning Strategies
+
+API versioning matters for AI products because your agent endpoints evolve fast — and agents on the other end can't click "upgrade."
+
+### Four common strategies
+
+| Strategy | How | Pros | Cons |
+|----------|-----|------|------|
+| URL prefix | `/v1/query`, `/v2/query` | Obvious, easy to route | Pollutes URLs, violates REST purity |
+| Query param | `/query?version=1` | Simple | Easy to forget, no caching |
+| Header | `Accept: application/vnd.myapp.v1+json` | REST-correct, clean URLs | Harder to test from browser |
+| Content negotiation | `Content-Type: application/vnd.myapp.v1+json` | Most RESTful | Complex client logic |
+
+### Recommendation: URL prefix for external APIs
+
+```python
+from fastapi import APIRouter
+
+router_v1 = APIRouter(prefix="/v1")
+router_v2 = APIRouter(prefix="/v2")
+
+@router_v1.post("/query")
+async def query_v1(query: str):
+    return {"answer": f"v1: {query}"}
+
+@router_v2.post("/query")
+async def query_v2(query: str, top_k: int = 3):
+    return {"answer": f"v2: {query}", "sources": [...]}
+
+app.include_router(router_v1)
+app.include_router(router_v2)
+```
+
+### When to bump version
+
+1. Breaking schema change (response field removed)
+2. Behavior change (same input → different meaning)
+3. Endpoint removal
+
+### When NOT to bump
+
+1. Adding a field (clients ignore unknown fields)
+2. Performance improvement (opaque to client)
+3. Bug fix (expected correct behavior)
+
+### Exercise
+
+Add `/v1/collections` and `/v2/collections` to your RAG demo. `/v2` should return paginated results while `/v1` returns all. Run both and verify the difference.
+
+---
+
+## 0.9 WebSocket Fundamentals
+
+Agent pipelines often need real-time communication — streaming token output, live status updates, or bidirectional messaging.
+
+### WebSocket vs HTTP
+
+| HTTP | WebSocket |
+|------|-----------|
+| Request-response | Bidirectional |
+| Stateless | Stateful connection |
+| New connection per request | Single persistent connection |
+| Headers on every request | No headers after upgrade |
+| No server push | Server can push anytime |
+
+### FastAPI WebSocket example
+
+```python
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+import asyncio
+
+app = FastAPI()
+
+@app.websocket("/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    try:
+        while True:
+            data = await websocket.receive_text()
+            # Echo back with processing simulation
+            await asyncio.sleep(0.5)
+            await websocket.send_text(f"Processed: {data}")
+    except WebSocketDisconnect:
+        print("Client disconnected")
+```
+
+### WebSocket for agent streaming
+
+```python
+from fastapi import WebSocket
+from langgraph.graph import StateGraph
+
+@app.websocket("/agent/run")
+async def agent_stream(websocket: WebSocket):
+    await websocket.accept()
+    user_input = await websocket.receive_text()
+
+    async for event in graph.astream_events({"input": user_input}):
+        if event["event"] == "on_chat_model_stream":
+            await websocket.send_json({
+                "type": "token",
+                "content": event["data"]["chunk"].content,
+            })
+        elif event["event"] == "on_tool_start":
+            await websocket.send_json({
+                "type": "tool_call",
+                "tool": event["name"],
+            })
+
+    await websocket.send_json({"type": "done"})
+    await websocket.close()
+```
+
+### Exercise
+
+Build a WebSocket echo server. Connect to it from a browser console (`new WebSocket("ws://localhost:8000/ws")`). Send messages and verify echo. Then extend it to broadcast to all connected clients — useful for monitoring multiple agent runs.
+
+---
+
 ## Phase 0 Done Checkpoint
 
 Before moving to Phase 1, you should be able to:
@@ -388,7 +509,9 @@ Before moving to Phase 1, you should be able to:
 - [ ] Explain token bucket vs sliding window, and say which `slowapi` uses by default
 - [ ] Argue both sides of microservices vs monolith for ApexERP specifically
 - [ ] Write an idempotency-key check on a webhook endpoint
+- [ ] Argue URL prefix vs header vs query param for API versioning
+- [ ] Build a WebSocket echo server and broadcast to all clients
 
-**Estimated time to checkpoint:** 12-15 hours over 1 week.
+**Estimated time to checkpoint:** 14-18 hours over 1 week.
 
 [Next: Phase 1 — Python + FastAPI + AsyncIO](02-phase1-python-fastapi-async.md)

@@ -22,6 +22,9 @@
 | 11 | Retrieval ranking + re-ranking | 2 | Explain why a re-rancer improves results even with a good retriever |
 | 12 | Vector DB comparison (ChromaDB/Qdrant/pgvector) | 2.5 | Write a 1-paragraph honest comparison citing real tradeoffs |
 | 13 | Hallucination in RAG | 1.5 | Explain 2 RAG-specific hallucination causes |
+| 14 | Fine-tuning: LoRA, QLoRA, when to use | 2 | Explain when fine-tuning beats RAG and vice versa |
+| 15 | Model evaluation + comparison (GPT vs Claude vs local) | 2 | Run an eval harness comparing 2 models on the same test set |
+| 16 | Guardrails / content moderation | 1.5 | Add input + output guardrails to your RAG endpoint |
 
 ---
 
@@ -620,6 +623,251 @@ async def healthz():
 
 ---
 
+## 2.14 Fine-Tuning: LoRA, QLoRA, When to Use
+
+Fine-tuning adapts a pretrained model to your specific task. RAG and fine-tuning are complementary, not replacements.
+
+### RAG vs Fine-Tuning
+
+| RAG | Fine-Tuning |
+|-----|-------------|
+| Adds knowledge at query time | Bakes knowledge into weights |
+| Cheaper per query (no training cost) | Expensive upfront (training cost) |
+| Easy to update (swap documents) | Requires retraining to update |
+| Good for: factual Q&A, customer docs | Good for: style, tone, output format |
+| No model weights change | Model weights change |
+
+### LoRA (Low-Rank Adaptation)
+
+Instead of updating all weights, LoRA inserts small trainable matrices:
+
+```
+Full fine-tune:  ΔW with shape (d, k) → 7B parameters updated
+LoRA:           BA with shapes (d, r) × (r, k) → 0.1% parameters updated
+```
+
+```python
+from transformers import AutoModelForCausalLM, LoraConfig, TrainingArguments
+from peft import get_peft_model
+
+model = AutoModelForCausalLM.from_pretrained("mistralai/Mistral-7B-v0.1")
+
+lora_config = LoraConfig(
+    r=8,              # rank — higher = more capacity, more memory
+    lora_alpha=32,    # scaling factor
+    target_modules=["q_proj", "v_proj"],
+    lora_dropout=0.05,
+    bias="none",
+    task_type="CAUSAL_LM",
+)
+
+model = get_peft_model(model, lora_config)
+print(f"Trainable params: {model.num_parameters(only_trainable=True):,}")
+# ~4.2M params instead of 7B
+```
+
+### QLoRA (Quantized LoRA)
+
+QLoRA quantizes the base model to 4-bit, then applies LoRA on top. Fits a 7B model in ~8GB VRAM.
+
+```python
+from transformers import BitsAndBytesConfig
+
+quant_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype="float16",
+)
+
+model = AutoModelForCausalLM.from_pretrained(
+    "mistralai/Mistral-7B-v0.1",
+    quantization_config=quant_config,
+)
+# Then apply LoRA on top
+```
+
+### When to fine-tune (and when not to)
+
+**Fine-tune for:**
+- Output format (always respond in JSON)
+- Tone/style (technical docs, customer support voice)
+- Domain vocabulary (medical, legal, financial terms)
+- Reducing latency by making smaller models as good as larger ones for your task
+
+**Don't fine-tune for:**
+- Adding factual knowledge (use RAG)
+- One-off tasks (use prompting)
+- Rapidly changing information (RAG is cheaper to update)
+
+### Exercise
+
+Your RAG demo doesn't need fine-tuning — RAG is the right solution for your use case. But as an exercise: download a small model (Mistral-7B), apply LoRA config, and print trainable parameter count. Then argue in writing why RAG beats fine-tuning for a document Q&A system.
+
+---
+
+## 2.15 Model Evaluation + Comparison
+
+When you have multiple models (GPT-4, Claude, local LLM), you need a systematic way to compare them.
+
+### Building an eval harness
+
+```python
+import json
+from openai import OpenAI
+from anthropic import Anthropic
+
+openai_client = OpenAI()
+anthropic_client = Anthropic()
+
+test_cases = [
+    {"question": "What is RAG?", "expected_topics": ["retrieval", "generation", "knowledge base"]},
+    {"question": "Explain cosine similarity", "expected_topics": ["vector", "angle", "0 to 1"]},
+]
+
+def evaluate_model(model: str, provider: str, test_cases: list) -> dict:
+    results = []
+    for tc in test_cases:
+        if provider == "openai":
+            response = openai_client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": tc["question"]}],
+            )
+            answer = response.choices[0].message.content
+        elif provider == "anthropic":
+            response = anthropic_client.messages.create(
+                model=model,
+                max_tokens=500,
+                messages=[{"role": "user", "content": tc["question"]}],
+            )
+            answer = response.content[0].text
+
+        score = sum(1 for t in tc["expected_topics"] if t.lower() in answer.lower())
+        results.append({
+            "question": tc["question"],
+            "score": score / len(tc["expected_topics"]),
+            "answer_snippet": answer[:200],
+        })
+
+    avg_score = sum(r["score"] for r in results) / len(results)
+    return {"model": model, "avg_score": avg_score, "results": results}
+
+# Run comparison
+gpt_score = evaluate_model("gpt-4", "openai", test_cases)
+claude_score = evaluate_model("claude-sonnet-4-20250514", "anthropic", test_cases)
+
+print(f"GPT-4: {gpt_score['avg_score']:.2%}")
+print(f"Claude: {claude_score['avg_score']:.2%}")
+```
+
+### What to measure
+
+| Metric | What it captures | How to measure |
+|--------|-----------------|----------------|
+| Factual accuracy | Does the answer contain expected facts? | Keyword overlap, LLM-as-judge |
+| Hallucination rate | Does the answer fabricate? | Human review, external fact check |
+| Latency (TTFT) | How fast does it start responding? | `time` the first token |
+| Cost per query | $ per 1K queries | Token count × pricing |
+| Instruction following | Does it obey format constraints? | Regex/JSON parse success rate |
+
+### Exercise
+
+Build an eval harness with 5 test cases. Run the same prompt through GPT-4 and Claude. Score each on a 1-5 rubric. Write a paragraph comparing them for your RAG use case. Which wins and why?
+
+---
+
+## 2.16 Guardrails / Content Moderation
+
+Agents that talk to users need guardrails — both input (what users can ask) and output (what the model can say).
+
+### Input guardrails: detect harmful queries
+
+```python
+import re
+
+HARMLESS_THRESHOLD = 0.7
+
+# Simple keyword-based pre-filter
+BLOCKED_PATTERNS = [
+    r"ignore.*instructions",
+    r"forget.*previous",
+    r"system.*prompt.*reveal",
+    r"generate.*harmful.*content",
+]
+
+def input_guardrail(user_input: str) -> tuple[bool, str]:
+    """Returns (blocked, reason)"""
+    for pattern in BLOCKED_PATTERNS:
+        if re.search(pattern, user_input.lower()):
+            return True, "Prompt injection attempt detected"
+    return False, ""
+```
+
+### Output guardrails: validate model responses
+
+```python
+# Block personal information in responses
+PII_PATTERNS = [
+    r"\b\d{3}-\d{2}-\d{4}\b",           # SSN
+    r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b",  # Email
+    r"\b(?:\+?1[-.]?)?\(?[2-9]\d{2}\)?[-.]?\d{3}[-.]?\d{4}\b",  # Phone
+]
+
+def output_guardrail(response: str) -> tuple[bool, str]:
+    for pattern in PII_PATTERNS:
+        if re.search(pattern, response):
+            return True, "Response contains PII"
+    return False, ""
+```
+
+### Integrating guardrails into your RAG pipeline
+
+```python
+@app.post("/v1/query")
+async def query_with_guardrails(request: QueryRequest):
+    # Input guardrail
+    blocked, reason = input_guardrail(request.query)
+    if blocked:
+        raise HTTPException(status_code=400, detail=reason)
+
+    # Normal RAG pipeline
+    result = rag_pipeline(request.query)
+
+    # Output guardrail
+    blocked, reason = output_guardrail(result["answer"])
+    if blocked:
+        result["answer"] = "I can't provide that information."
+
+    return result
+```
+
+### Using dedicated guardrail libraries
+
+```bash
+pip install guardrails-ai
+```
+
+```python
+from guardrails import Guard
+from guardrails.validators import TwoWords, LowerCase
+
+guard = Guard().use_many(
+    TwoWords(),    # Response must be exactly 2 words
+    LowerCase(),   # Response must be lowercase
+)
+
+response = guard.validate("hello world")
+print(response.validation_passed)  # True
+
+response = guard.validate("Hello World!")
+print(response.validation_passed)  # False
+```
+
+### Exercise
+
+Add input + output guardrails to your RAG demo query endpoint. Test with a prompt injection attempt. Test that the model doesn't return email addresses. Verify the guardrails block the right things and pass normal queries.
+
+---
+
 ## Phase 2 Done Checkpoint
 
 Before moving to Phase 3, you should be able to:
@@ -633,7 +881,10 @@ Before moving to Phase 3, you should be able to:
 - [ ] Write a 1-paragraph comparison of ChromaDB vs Qdrant vs pgvector
 - [ ] Defend every architectural choice in your RAG demo README
 - [ ] Public RAG demo API deployed and returning cited answers
+- [ ] Can explain when fine-tuning beats RAG and vice versa
+- [ ] Run an eval harness comparing 2 models on the same test set
+- [ ] Input + output guardrails added and verified on your RAG endpoint
 
-**Estimated time to checkpoint:** 22-25 hours over 2 weeks.
+**Estimated time to checkpoint:** 28-32 hours over 2 weeks.
 
 [Next: Phase 3 — AI Agents: LangGraph, CrewAI, MCP](04-phase3-agents-langgraph-mcp.md)

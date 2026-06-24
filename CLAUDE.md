@@ -34,5 +34,6 @@
 - `docs/courses/java/56-interview-java.md`: completed, 1700 lines, 45 Q&As.
 - `docs/courses/java/57-interview-spring.md`: completed, 7297 lines, 50 Q&As.
 - `docs/courses/java/58-interview-rest-api.md`: completed, 6476 lines, 25 Q&As.
+- `docs/courses/c-programming/07-strings.md`: rewritten, 3008 lines (prev 1795) — full depth with analogies, dry runs, complexity, A&D tables, edge cases, comparison tables, interview corner, real-world apps.
 - Target: `docs/courses/java/59-interview-databases.md` (25 Q&As).
 - Target: `docs/courses/java/60-interview-microservices.md` (25 Q&As).

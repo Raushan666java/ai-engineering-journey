@@ -46,6 +46,8 @@ flowchart LR
 
 ---
 
+![Searching Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch02-searching.png)
+
 ## 2.1 Linear Search
 
 **Real-World Analogy:** Looking for a specific book on an unsorted shelf — you check each book one by one from left to right until you find it.

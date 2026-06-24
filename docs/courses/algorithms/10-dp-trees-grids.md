@@ -2359,6 +2359,8 @@ flowchart LR
     F --> T[Hamiltonian]
 ```
 
+![Trees Grids DP Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch10-dp-trees-grids.png)
+
 ## Concept Comparison Table
 
 | Domain | State Representation | Traversal | Transition | Time |

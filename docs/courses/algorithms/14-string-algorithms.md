@@ -66,6 +66,8 @@ flowchart LR
 
 ---
 
+![String Algorithms Diagram](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/algorithms/ch14-string-algorithms.png)
+
 ## 14.1 Naive Pattern Search
 
 **Real-world analogy:** You have a key (the pattern) and a long row of locks (the text). You try the key at the first lock, then the second, then the third — at each position, you check whether every tumbler aligns. If the key doesn't fit at position i, you move to i+1 and try again.

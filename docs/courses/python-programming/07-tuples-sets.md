@@ -44,9 +44,8 @@ flowchart LR
 
 ## 7.1 Tuples
 
-> **One-Sentence Takeaway:** 
+> **One-Sentence Takeaway:** Tuples are immutable sequences created with commas -- use them for fixed data and dict keys.
 > **Pro Tip:** Use tuples as dictionary keys -- they are hashable. Lists cannot be dict keys.
-Tuples are immutable sequences created with commas -- use them for fixed data and dict keys.
 
 A tuple is an ordered, immutable sequence of objects. Tuples are created with parentheses or just commas:
 
@@ -74,7 +73,7 @@ print(3 in t)    # True
 print(len(t))    # 6
 ```
 
-Tuples are immutable â€” attempting to modify one raises `TypeError`:
+Tuples are immutable -- attempting to modify one raises `TypeError`:
 
 ```python
 t[0] = 10  # TypeError: 'tuple' object does not support item assignment
@@ -94,6 +93,48 @@ def min_max(lst):
 result = min_max([3, 1, 4, 1, 5, 9])
 print(result)   # (1, 9)
 print(type(result))  # <class 'tuple'>
+```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: tuples are typed arrays with fixed lengths
+// Declared with [type, type, ...] syntax:
+const point: [number, number] = [3, 4];
+console.log(point[0]);  // 3
+console.log(point[1]);  // 4
+
+// TypeScript tuples are NOT immutable by default
+// Use readonly for immutability:
+const readonlyPoint: readonly [number, number] = [3, 4];
+// readonlyPoint[0] = 10;  // Error
+
+// Destructuring (like Python unpacking):
+const [x, y] = point;
+console.log(x, y);  // 3 4
+
+// Named tuple type for readability:
+type Point = readonly [number, number];
+function minMax(lst: number[]): [number, number] {
+    return [Math.min(...lst), Math.max(...lst)];
+}
+const result = minMax([3, 1, 4, 1, 5, 9]);
+console.log(result);  // [1, 9]
+```
+
+```mermaid
+flowchart TD
+    subgraph Python[Python Tuples]
+        P1["t = (1, 2, 3)"] --> P2[Immutable, hashable]
+        P2 --> P3[Can be dict keys]
+        P3 --> P4[Unpacking: a, b = t]
+    end
+
+    subgraph TS[TypeScript Tuples]
+        T1["const t: [number, number] = [1, 2]"] --> T2[Fixed-length array]
+        T2 --> T3["readonly for immutability"]
+        T3 --> T4["Destructuring: const [a, b] = t"]
+    end
 ```
 
 ## 7.2 Tuple Unpacking
@@ -130,6 +171,37 @@ print(tail)  # [1, 2, 3, 4]
 print(last)  # 50
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: destructuring (same concept, different syntax)
+const point: [number, number] = [10, 20];
+const [x, y] = point;
+console.log(x, y);  // 10 20
+
+// Swapping (requires temp or array)
+let a = 1, b = 2;
+[a, b] = [b, a];   // same swap technique in TS!
+console.log(a, b);  // 2 1
+
+// Rest/spread for extended unpacking (ES2018+):
+const [first, ...middle] = [1, 2, 3, 4, 5];
+console.log(first);   // 1
+console.log(middle);  // [2, 3, 4]
+
+// The rest element must be at the end (no *middle in middle)
+const [, , ...rest] = [10, 20, 30, 40, 50];
+console.log(rest);  // [30, 40, 50]
+```
+
+| Feature | Python | TypeScript |
+|---------|--------|------------|
+| Basic unpacking | `x, y = (1, 2)` | `const [x, y] = [1, 2]` |
+| Swap | `a, b = b, a` | `[a, b] = [b, a]` |
+| Rest | `first, *rest = lst` | `const [first, ...rest] = lst` |
+| Ignore | `*_, last = lst` | `const [_, , last] = lst` |
+| Nested unpacking | `(a, (b, c)) = pair` | `const [a, [b, c]] = pair` |
+
 ## 7.3 namedtuple
 
 > **One-Sentence Takeaway:** namedtuple creates tuple subclasses with named fields -- more readable than bare tuples.
@@ -150,37 +222,55 @@ print(p)           # Point(x=3, y=4)
 Named fields improve code readability compared to bare tuples:
 
 ```python
-# Without namedtuple â€” magic numbers
-employees[0][1]  # what is index 1?
-
-# With namedtuple â€” self-documenting
+# With namedtuple -- self-documenting
 Employee = namedtuple("Employee", ["name", "age", "department", "salary"])
 emp = Employee("Alice", 30, "Engineering", 95000)
 print(emp.department)  # Engineering
 ```
-
-
-> **Remember:** For complex data objects, consider @dataclass instead of namedtuple -- it offers type annotations.
-`namedtuple` provides useful methods:
 
 ```python
 print(p._asdict())   # {'x': 3, 'y': 4}
 p2 = p._replace(x=5)  # returns new namedtuple
 print(p2)            # Point(x=5, y=4)
 print(p._fields)     # ('x', 'y')
-
-# Create from dict
-data = {"x": 7, "y": 8}
-p3 = Point(**data)
-print(p3)            # Point(x=7, y=8)
 ```
 
-Modern alternatives include `@dataclass` (Chapter 12) and Pydantic (Chapter 19), but `namedtuple` remains useful for its tuple compatibility and lightweight nature.
+### TypeScript Parallel
+
+```typescript
+// TypeScript: interfaces/classes for the namedtuple equivalent
+interface Point {
+    readonly x: number;
+    readonly y: number;
+}
+
+// Simple object literal (most common):
+const p: Point = { x: 3, y: 4 };
+console.log(p.x, p.y);  // 3 4
+
+// Interface with methods:
+interface Employee {
+    readonly name: string;
+    readonly age: number;
+    readonly department: string;
+    readonly salary: number;
+}
+
+const emp: Employee = {
+    name: "Alice",
+    age: 30,
+    department: "Engineering",
+    salary: 95000
+};
+console.log(emp.department);  // Engineering
+
+// Python's namedtuple is between a tuple and a class
+// TypeScript has explicit interfaces/classes instead
+```
 
 ## 7.4 Sets
 
 > **One-Sentence Takeaway:** Sets provide O(1) membership testing and powerful algebra: union, intersection, difference.
-
 
 > **Warning:** Sets are unordered -- never rely on element position. Use dict.fromkeys() if order matters.
 A set is an unordered collection of unique, hashable elements:
@@ -189,17 +279,14 @@ A set is an unordered collection of unique, hashable elements:
 empty = set()      # not {} (that's an empty dict)
 numbers = {1, 2, 3, 4, 5}
 mixed = {1, "hello", (1, 2)}  # tuples are hashable
-# Sets do NOT contain mutable elements like lists
-# {[1, 2]}  # TypeError: unhashable type: 'list'
 ```
 
 ### 7.4.1 Creating Sets
 
 ```python
-from_list = set([1, 2, 3, 2, 1])   # {1, 2, 3}  â€” duplicates removed
-from_string = set("hello")          # {'h', 'e', 'l', 'o'} â€” unordered
+from_list = set([1, 2, 3, 2, 1])   # {1, 2, 3} -- duplicates removed
+from_string = set("hello")          # {'h', 'e', 'l', 'o'} -- unordered
 from_generator = set(x ** 2 for x in range(5))
-print(from_generator)  # {0, 1, 4, 9, 16}
 ```
 
 ### 7.4.2 Set Methods
@@ -207,8 +294,8 @@ print(from_generator)  # {0, 1, 4, 9, 16}
 ```python
 s = {1, 2, 3, 4, 5}
 s.add(6)             # {1, 2, 3, 4, 5, 6}
-s.discard(3)         # {1, 2, 4, 5, 6}  â€” no error if missing
-s.remove(2)          # {1, 4, 5, 6}     â€” KeyError if missing
+s.discard(3)         # {1, 2, 4, 5, 6} -- no error if missing
+s.remove(2)          # {1, 4, 5, 6}     -- KeyError if missing
 popped = s.pop()     # removes and returns an arbitrary element
 s.clear()            # set()
 
@@ -225,19 +312,11 @@ b = {4, 5, 6, 7, 8}
 print(a | b)   # Union:        {1, 2, 3, 4, 5, 6, 7, 8}
 print(a & b)   # Intersection: {4, 5}
 print(a - b)   # Difference:   {1, 2, 3}
-print(b - a)   # Difference:   {8, 6, 7}
 print(a ^ b)   # Symmetric diff: {1, 2, 3, 6, 7, 8}
-
-# In-place operations
-c = a.copy()
-c |= b         # c = a | b
-print(c)
 
 # Comparison
 print({1, 2} <= {1, 2, 3})    # subset: True
 print({1, 2, 3} >= {1, 2})    # superset: True
-print({1, 2} < {1, 2, 3})     # proper subset: True
-print({1, 2} < {1, 2})        # False (not proper)
 print({1, 2}.isdisjoint({3}))  # True (no common elements)
 ```
 
@@ -245,35 +324,85 @@ print({1, 2}.isdisjoint({3}))  # True (no common elements)
 
 ```python
 squares = {x ** 2 for x in range(10)}
-print(squares)  # {0, 1, 4, 64, 9, 16, 81, 49, 36, 25} (order not preserved)
-
 even_squares = {x ** 2 for x in range(20) if x % 2 == 0}
-print(even_squares)  # {0, 4, 16, 36, 64, 100, 144, 196, 256, 324}
 ```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: Set class (ES2015+)
+const empty = new Set<number>();
+const numbers = new Set([1, 2, 3, 4, 5]);
+
+// Methods:
+numbers.add(6);              // add
+numbers.delete(3);           // discard (returns boolean - no error if missing)
+// numbers.delete(3);        // remove equivalent
+// No direct pop equivalent - get first value with next()
+numbers.clear();
+
+// Membership testing:
+console.log(numbers.has(2));  // true (like Python's `in`)
+console.log(numbers.size);    // 3  (like Python's len())
+
+// Set operations (no built-in -- manual):
+const a = new Set([1, 2, 3, 4, 5]);
+const b = new Set([4, 5, 6, 7, 8]);
+
+// Union:
+const union = new Set([...a, ...b]);
+console.log(union);  // {1, 2, 3, 4, 5, 6, 7, 8}
+
+// Intersection:
+const intersection = new Set([...a].filter(x => b.has(x)));
+console.log(intersection);  // {4, 5}
+
+// Difference:
+const difference = new Set([...a].filter(x => !b.has(x)));
+console.log(difference);  // {1, 2, 3}
+
+// Symmetric difference:
+const symDiff = new Set([...a].filter(x => !b.has(x))
+    .concat([...b].filter(x => !a.has(x))));
+console.log(symDiff);  // {1, 2, 3, 6, 7, 8}
+
+// Comparison:
+console.log([1, 2].every(x => a.has(x)));  // subset check
+```
+
+| Operation | Python | TypeScript |
+|-----------|--------|------------|
+| Create | `{1, 2, 3}` | `new Set([1, 2, 3])` |
+| Add | `s.add(x)` | `s.add(x)` |
+| Remove | `s.discard(x)` / `s.remove(x)` | `s.delete(x)` |
+| Check | `x in s` | `s.has(x)` |
+| Size | `len(s)` | `s.size` |
+| Union | `a \| b` | `new Set([...a, ...b])` |
+| Intersection | `a & b` | `new Set([...a].filter(x => b.has(x)))` |
+| Difference | `a - b` | `new Set([...a].filter(x => !b.has(x)))` |
 
 ## 7.5 frozenset
 
 > **One-Sentence Takeaway:** frozenset is an immutable, hashable set that can serve as dictionary keys.
 
-A `frozenset` is an immutable, hashable set:
-
 ```python
 fs = frozenset([1, 2, 3, 3, 2])
 print(fs)         # frozenset({1, 2, 3})
-
-# frozenset supports all set operations except mutation
 print(fs | frozenset([3, 4]))  # frozenset({1, 2, 3, 4})
 
-# frozenset can be a dictionary key or set element
 d = {frozenset({1, 2}): "value"}
-sets = {frozenset({1, 2}), frozenset({3, 4})}
 ```
 
-`frozenset` is useful when you need an immutable set for use as a dictionary key or within another set.
+### TypeScript Parallel
+
+```typescript
+// TypeScript: no direct frozenset equivalent
+// Use ReadonlySet<number> for a read-only view:
+const fs: ReadonlySet<number> = new Set([1, 2, 3]);
+// fs.add(4);  // Error: Property 'add' does not exist on type 'ReadonlySet'
+```
 
 ## 7.6 Choosing Between Data Structures
-
-> **One-Sentence Takeaway:** Use tuples for fixed data, lists for mutable data, sets for uniqueness, frozenset for hashable uniqueness.
 
 | Property | List | Tuple | Set | frozenset |
 |----------|------|-------|-----|-----------|
@@ -309,16 +438,35 @@ def common_elements(lst1, lst2):
 print(common_elements([1, 2, 3, 4], [3, 4, 5, 6]))  # [3, 4]
 ```
 
-### 7.7.3 Return Multiple Values from Function
+### TypeScript Parallel
 
-```python
-def analyze(nums):
-    return (min(nums), max(nums), sum(nums) / len(nums))
+```typescript
+// Deduplicate with Set:
+const items: number[] = [3, 1, 2, 1, 3, 4, 2];
+const uniqueItems = [...new Set(items)];
+console.log(uniqueItems);  // [3, 1, 2, 4]
 
-lo, hi, avg = analyze([1, 2, 3, 4, 5])
-print(f"min={lo}, max={hi}, avg={avg}")  # min=1, max=5, avg=3.0
+// Preserve order (Set iteration is insertion-order in JS):
+console.log(uniqueItems);  // [3, 1, 2, 4] (order maintained)
+
+// Common elements:
+function commonElements<T>(lst1: T[], lst2: T[]): T[] {
+    const set2 = new Set(lst2);
+    return [...new Set(lst1)].filter(x => set2.has(x));
+}
+console.log(commonElements([1, 2, 3, 4], [3, 4, 5, 6]));  // [3, 4]
 ```
 
+## Practical Takeaways
+
+| Concept | Key Point | Common Mistake |
+|---------|-----------|----------------|
+| Tuples | Immutable, hashable, for fixed data | Using `(42)` instead of `(42,)` for single-element tuple |
+| Unpacking | `*` captures into list | Forgetting only one starred expression allowed |
+| namedtuple | Named fields + tuple compatibility | Using bare tuples when namedtuple clarifies intent |
+| Sets | O(1) membership, deduplication, algebra | Creating `{}` instead of `set()` for empty set |
+| frozenset | Hashable immutable set | Using mutable set as dict key |
+| Python vs TS | TS has tuples (arrays) and Set class, no frozenset | Expecting Python's `\|` operator syntax in TS |
 
 ## Concept Comparison Table
 
@@ -413,6 +561,8 @@ fs = frozenset([1, 2, 3])
 - Sets provide O(1) membership testing and powerful set algebra.
 - Use `frozenset` when an immutable, hashable set is needed.
 - Set comprehension syntax mirrors list comprehension.
+- TypeScript has tuples (readonly arrays) and Set class; no namedtuple or frozenset equivalents.
+- TypeScript requires manual implementation of set operations like union and intersection.
 
 ## Exercises
 
@@ -423,13 +573,33 @@ fs = frozenset([1, 2, 3])
 3. What is a practical use case for `frozenset`?
 4. How does `namedtuple` differ from regular tuples?
 5. What is the difference between `s.discard(x)` and `s.remove(x)`?
+6. How does TypeScript model tuples differently from Python?
+7. What TypeScript type acts like Python's frozenset?
 
 ### Application Problems
 
 1. Write a function `unique_elements_preserving_order(seq)` that returns a list of unique elements in the order they first appear. Use a set for tracking seen elements.
 2. Given two lists of email addresses, find the intersection (people in both lists), the symmetric difference (people in exactly one list), and list each clearly.
 3. Create a `namedtuple` called `Student` with fields `name`, `id`, and `grades` (a list). Create a list of students. Compute the average grade for each student and print a report sorted by average descending.
+4. Write a function `jaccard_similarity(set1, set2)` that computes the Jaccard index: `|A & B| / |A | B|`. Test with two sets and ensure it handles empty sets correctly.
+5. Use tuple unpacking to implement a function `split_list(lst)` that returns `(first_half, second_half)` for any list, splitting at the midpoint.
 
 ### Challenge Problem
 
 Implement a simple spell checker. Load a dictionary of English words into a set. Accept a sentence and flag any word not in the dictionary. For each misspelled word, suggest corrections by generating candidate words that differ by one edit (insertion, deletion, substitution). Use set operations to find which candidates are in the dictionary. Test with sample sentences containing deliberate misspellings.
+
+### TypeScript Challenge
+
+Rewrite the `jaccard_similarity` function in TypeScript. Implement union, intersection, and difference as separate helper functions that operate on TypeScript `Set<T>`. Then compare TypeScript's Set performance vs Python's set for 10,000-element operations.
+
+### Practical Takeaways
+
+| Python Concept | TypeScript Equivalent | Key Difference |
+|----------------|----------------------|----------------|
+| `tuple` | `readonly [T, U]` | TS tuples are typed; Python tuples are not |
+| `namedtuple` | Define a class or interface | TS has no structural equivalent |
+| `set` | `Set<T>` | Similar API (`add`, `has`, `delete`) |
+| `frozenset` | Manual `ReadonlySet<T>` | No built-in frozen set in TS |
+| `set` operations | Manual loops or 3rd-party library | TS has no built-in `union`/`intersection` |
+| Tuple unpacking | Destructuring `[a, b] = tuple` | Same concept, different syntax |
+| Multiple return | Return a tuple and unpack | Same pattern |

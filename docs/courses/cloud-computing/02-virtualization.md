@@ -523,7 +523,39 @@ console.log("Container Namespace Isolation:", JSON.stringify(container, null, 2)
 **B) PID namespace.** The PID namespace isolates process ID numbers, so a container can only see and interact with its own processes, not processes running on the host or in other containers.
 </details>
 
+### TypeScript: Migration Planner
+
+```typescript
+interface MigrationPlan {
+  source: string;
+  target: string;
+  strategy: "P2V" | "V2V" | "V2C" | "P2C";
+}
+
+class MigrationEstimator {
+  estimateDowntime(vms: number, totalDataGb: number, strategy: string): number {
+    const rates = { "P2V": 50, "V2V": 200, "V2C": 100, "P2C": 30 };
+    const rate = rates[strategy] ?? 50;
+    return (vms * 30 + totalDataGb * 60) / rate;
+  }
+
+  generateMigrationPlan(
+    physical: number, virtual: number, storageGb: number
+  ): MigrationPlan[] {
+    const plans: MigrationPlan[] = [];
+    for (let i = 0; i < physical; i++) plans.push({ source: `p${i}`, target: `vm${i}`, strategy: "P2V" });
+    for (let i = 0; i < virtual; i++) plans.push({ source: `vm${i}`, target: `c${i}`, strategy: "V2C" });
+    return plans;
+  }
+}
+```
+
 ## Summary
+
+- Hypervisors abstract physical hardware into multiple virtual machines with strong isolation.
+- Type 1 (bare-metal) hypervisors dominate data centers; Type 2 (hosted) serve development use cases.
+- Server virtualization improves hardware utilization from 5-15% to 60-80%.
+- Full → para → hardware-assisted virtualization reduced overhead over three generations.
 
 Virtualization is the foundational technology of cloud computing. Hypervisors abstract physical hardware into multiple virtual environments, with Type 1 (bare-metal) hypervisors dominating data center deployments and Type 2 (hosted) hypervisors serving development use cases. Server virtualization improves hardware utilization from typical rates of 5-15% to 60-80% or more. The evolution from full virtualization through paravirtualization to hardware-assisted virtualization has progressively reduced virtualization overhead. Storage virtualization provides abstraction at block, file, and object levels. Network virtualization enables multi-tenant isolation through SDN, VLANs, VXLANs, and NFV. Containers offer an alternative to VMs with higher density and faster startup at the cost of weaker isolation, using Linux kernel namespaces for isolation and cgroups for resource limits. Docker's layered architecture (client, daemon, containerd, runc) revolutionized container adoption. Performance considerations include CPU, memory, storage, and network overhead, as well as the noisy neighbor problem.
 
@@ -555,6 +587,25 @@ Virtualization is the foundational technology of cloud computing. Hypervisors ab
 4. An organization is experiencing variable performance in its database VMs during peak hours. Investigate potential causes related to virtualization overhead and propose specific mitigation techniques.
 
 5. Write a TypeScript function that calculates the optimal VM-to-physical-server ratio given CPU, memory, and I/O constraints.
+
+```typescript
+// VM density optimizer
+function optimalDensity(hosts: number, vms: number, overhead: number): number {
+  const cost = hosts * overhead;
+  const revenue = vms * 50; // $/month per VM
+  return revenue - cost;
+}
+// Find best VM count via binary search
+function findOptimalVms(hosts: number, overhead: number): number {
+  let lo = hosts, hi = hosts * 40;
+  while (lo < hi) {
+    const mid = Math.floor((lo + hi) / 2);
+    if (optimalDensity(hosts, mid, overhead) < optimalDensity(hosts, mid + 1, overhead)) lo = mid + 1;
+    else hi = mid;
+  }
+  return lo;
+}
+```
 
 ### Challenge Problem
 

@@ -522,3 +522,145 @@ for (const finding of findings) {
 ### Challenge Problem
 
 Design a comprehensive security architecture for a multi-account AWS organization serving 100,000 users. Requirements: 1) Centralized logging and monitoring across all accounts, 2) Automated incident response for common threats, 3) Encryption of all data at rest and in transit, 4) Network isolation between environments, 5) Compliance with SOC 2 Type II, 6) Secrets management with rotation for all databases, 7) IAM federation with corporate SSO, and 8) Automated security scanning in CI/CD pipelines. Propose specific services, configurations, and an architecture diagram.
+
+## AWS CDK: IAM Roles and Policies
+
+Define IAM infrastructure as TypeScript with the AWS CDK:
+
+```typescript
+import * as iam from "aws-cdk-lib/aws-iam";
+import * as cdk from "aws-cdk-lib";
+
+class SecurityStack extends cdk.Stack {
+  constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+
+    const webAppRole = new iam.Role(this, "WebAppRole", {
+      assumedBy: new iam.ServicePrincipal("ec2.amazonaws.com"),
+      description: "Role for web application EC2 instances",
+      managedPolicies: [
+        iam.ManagedPolicy.fromAwsManagedPolicyName("AmazonSSMManagedInstanceCore"),
+      ],
+    });
+
+    webAppRole.addToPolicy(new iam.PolicyStatement({
+      effect: iam.Effect.ALLOW,
+      actions: ["s3:GetObject", "s3:ListBucket"],
+      resources: ["arn:aws:s3:::app-assets", "arn:aws:s3:::app-assets/*"],
+      conditions: { StringEquals: { "aws:ResourceAccount": [this.account] } },
+    }));
+
+    webAppRole.addToPolicy(new iam.PolicyStatement({
+      effect: iam.Effect.DENY,
+      actions: ["s3:DeleteBucket", "rds:DeleteDBInstance"],
+      resources: ["*"],
+    }));
+
+    const readonlyRole = new iam.Role(this, "ReadOnlyRole", {
+      assumedBy: new iam.AccountPrincipal(this.account),
+      managedPolicies: [
+        iam.ManagedPolicy.fromAwsManagedPolicyName("ReadOnlyAccess"),
+      ],
+    });
+
+    new iam.CfnInstanceProfile(this, "WebAppInstanceProfile", {
+      roles: [webAppRole.roleName],
+    });
+  }
+}
+```
+
+## Pulumi: KMS Key and Encryption Setup
+
+```typescript
+import * as aws from "@pulumi/aws";
+
+const appKey = new aws.kms.Key("app-encryption-key", {
+  description: "Application encryption key with automatic rotation",
+  deletionWindowInDays: 30,
+  enableKeyRotation: true,
+  policy: {
+    Version: "2012-10-17",
+    Statement: [
+      {
+        Effect: "Allow",
+        Principal: { AWS: "*" },
+        Action: "kms:*",
+        Resource: "*",
+        Condition: {
+          StringEquals: {
+            "kms:CallerAccount": aws.config.require("accountId"),
+          },
+        },
+      },
+    ],
+  },
+});
+
+const s3Bucket = new aws.s3.Bucket("encrypted-assets", {
+  bucket: "encrypted-app-assets-prod",
+  serverSideEncryptionConfiguration: {
+    rule: {
+      applyServerSideEncryptionByDefault: {
+        kmsMasterKeyId: appKey.arn,
+        sseAlgorithm: "aws:kms",
+      },
+      bucketKeyEnabled: true,
+    },
+  },
+});
+
+const logBucket = new aws.s3.Bucket("access-logs", {
+  bucket: "app-access-logs-prod",
+  acl: "log-delivery-write",
+  forceDestroy: false,
+});
+```
+
+## Automated Incident Response Flow
+
+```mermaid
+sequenceDiagram
+    participant GD as GuardDuty
+    participant EB as EventBridge
+    participant Lambda as Remediation Function
+    participant SNS as SNS Topic
+    participant SecHub as Security Hub
+    
+    GD->>EB: Finding detected (e.g., CryptoCurrency)
+    EB->>Lambda: Trigger remediation
+    Lambda->>Lambda: Isolate instance (modify SG)
+    Lambda->>Lambda: Create forensic snapshot
+    Lambda->>SNS: Send alert to security team
+    Lambda->>SecHub: Update finding status
+    SNS->>SNS: PagerDuty / Slack / Email
+```
+
+## Real-World Case Study: Capital One Data Breach (2019)
+
+The 2019 Capital One breach illustrates what happens when cloud security fundamentals are missed.
+
+**Incident:** A former AWS employee exploited a misconfigured web application firewall (WAF) to access Capital One's S3 data. The attacker used a Server-Side Request Forgery (SSRF) attack against a vulnerable EC2 instance to reach the AWS metadata service, assumed an IAM role with excessive permissions, and exfiltrated 140,000 SSNs and 80,000 bank account numbers.
+
+**Root Causes:**
+- **WAF Misconfiguration:** The WAF did not block SSRF-style attacks against the metadata service
+- **Overly Permissive IAM Role:** The EC2 role had S3 read access to all buckets, not just the required subset
+- **Missing Network Controls:** No VPC endpoint or IMDSv2 enforcement on the vulnerable instance
+- **No Data Perimeter:** Lack of S3 bucket policies restricting access to trusted identities
+
+**Remediations Applied:**
+- IMDSv2 enforced on all EC2 instances
+- S3 bucket policies with aws:SourceIp and aws:PrincipalOrgID conditions
+- WAF rules updated to block metadata service endpoints
+- IAM permission boundaries implemented across all roles
+- VPC endpoints for S3 with bucket policy restrictions
+
+**Key Lesson:** Cloud security failures are almost never about the provider's infrastructure security — they are about misconfiguration of customer-controlled services. Following the principle of least privilege and implementing defense in depth at every layer would have prevented this breach.
+
+### Additional Exercises
+
+6. **IAM Audit:** Write a TypeScript function that reads a set of IAM policies and identifies any that violate least privilege by granting wildcard actions ("*") on sensitive services (IAM, S3, KMS).
+
+7. **Encryption Strategy:** Design an encryption strategy for a multi-region application that needs customer-managed keys in each region, automatic key rotation, and the ability to revoke access to specific regions in case of a compliance incident.
+
+8. **Incident Response Playbook:** Create a step-by-step incident response playbook for a detected S3 bucket with public read access that contains customer PII. Include containment, investigation, remediation, and post-mortem phases with specific actions and responsible teams.

@@ -346,6 +346,28 @@ function verifyLinearGrowth(f: (n: number) => number, nMax: number): boolean {
 console.log(verifyLinearGrowth(n => 100 * n + 5, 1000)); // true
 ```
 
+### TypeScript: Function Properties Checker
+
+```typescript
+type Func<T, U> = Map<T, U>;
+
+function isInjective<T, U>(f: Func<T, U>): boolean {
+  const seen = new Set<U>();
+  for (const v of f.values()) { if (seen.has(v)) return false; seen.add(v); }
+  return true;
+}
+
+function isSurjective<T, U>(f: Func<T, U>, codomain: Set<U>): boolean {
+  const images = new Set(f.values());
+  for (const v of codomain) if (!images.has(v)) return false;
+  return true;
+}
+
+function isBijective<T, U>(f: Func<T, U>, codomain: Set<U>): boolean {
+  return isInjective(f) && isSurjective(f, codomain);
+}
+```
+
 ## Summary
 
 - Functions map each input to exactly one output.

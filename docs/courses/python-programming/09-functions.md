@@ -537,6 +537,64 @@ def outer():
 - a class method
 
 
+## TypeScript Parallel
+
+TypeScript functions share many concepts with Python but differ in syntax:
+
+```typescript
+// Parameters: required, optional, default, rest
+function greet(
+  name: string,
+  greeting: string = "Hello",       // default parameter
+  title?: string,                    // optional parameter
+  ...tags: string[]                  // rest parameter (like *args)
+): string {
+  const prefix = title ? `${title} ` : "";
+  return `${greeting}, ${prefix}${name}!`;
+}
+console.log(greet("Alice"));                   // Hello, Alice!
+console.log(greet("Bob", "Hi", "Dr."));        // Hi, Dr. Bob!
+console.log(greet("Charlie", "Hey", "Mr.", "guest", "vip"));
+// Hey, Mr. Charlie!
+
+// Arrow functions (like lambdas)
+const square = (x: number): number => x * x;
+const add = (a: number, b: number): number => a + b;
+
+// TypeScript scope: similar to LEGB
+let globalVar = "global";
+function outer(): void {
+  let outerVar = "outer";
+  function inner(): void {
+    let innerVar = "inner";
+    console.log(globalVar);  // accesses global
+    console.log(outerVar);   // closure over outer
+  }
+  inner();
+}
+
+// Closures in TypeScript
+function makeCounter(start: number = 0): () => number {
+  let count = start;
+  return () => count++;  // captures count by reference
+}
+const counter = makeCounter(10);
+console.log(counter());  // 10
+console.log(counter());  // 11
+```
+
+### Python vs TypeScript Functions
+
+| Feature | Python | TypeScript |
+|---------|--------|------------|
+| Default args | `def f(x=5)` | `function f(x: number = 5)` |
+| Variable args | `*args` (tuple) | `...args: T[]` (array) |
+| Keyword args | `**kwargs` (dict) | Destructured object param |
+| Lambda | `lambda x: expr` | `x => expr` |
+| Type hints | Optional annotations | Required types (strict) |
+| Doc in body | Docstring `"""..."""` | JSDoc `/** ... */` |
+| Anonymous | `lambda` or `def` | `() => {}` arrow function |
+
 ## Summary
 
 - Parameters: positional, keyword, default, `*args`, `**kwargs`, positional-only (`/`), keyword-only (`*`).

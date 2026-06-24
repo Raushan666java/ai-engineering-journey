@@ -86,7 +86,7 @@ Unlike some languages, Python has no `switch` statement (prior to 3.10). The `el
 
 
 > **Pro Tip:** Mixing tabs and spaces causes IndentationError. Configure your editor to convert tabs to spaces for Python files.
-Indentation is the only delimiter â€” there is no `endif` or closing brace. The colon after each condition is mandatory:
+Indentation is the only delimiter -- there is no `endif` or closing brace. The colon after each condition is mandatory:
 
 ```python
 if x:     # colon required
@@ -97,6 +97,59 @@ if x > 0:
     pass
 else:
     pass
+```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: if/else if/else with curly braces
+let temperature: number = 30;
+if (temperature > 35) {
+    console.log("Extreme heat");
+} else if (temperature > 25) {
+    console.log("Warm");
+} else if (temperature > 15) {
+    console.log("Mild");
+} else if (temperature > 5) {
+    console.log("Cool");
+} else {
+    console.log("Cold");
+}
+
+// TypeScript switch statement (Python's if/elif/else is closer to this)
+switch (temperature) {
+    case 0:
+        console.log("Freezing");
+        break;
+    case 100:
+        console.log("Boiling");
+        break;
+    default:
+        console.log("Neither");
+        break;
+}
+```
+
+Python uses `elif`; TypeScript uses `else if`. Python has no `switch`-statement (until 3.10's match-case); TypeScript has a C-style `switch`.
+
+```mermaid
+flowchart TD
+    subgraph Python[Python if/elif/else]
+        A1[if condition] -->|True| B1[if block]
+        A1 -->|False| C1[elif condition]
+        C1 -->|True| D1[elif block]
+        C1 -->|False| E1[elif ...]
+        E1 -->|None True| F1[else block]
+    end
+
+    subgraph TS[TypeScript if/else if/else + switch]
+        A2[if (condition)] -->|True| B2[if body]
+        A2 -->|False| C2[else if]
+        C2 -->|True| D2[else if body]
+        C2 -->|False| E2[else => default]
+        F2[switch (value)] --> G2[case matching]
+        G2 --> H2[break / default]
+    end
 ```
 
 ## 3.2 Truthiness and Condition Evaluation
@@ -118,7 +171,7 @@ Common truthiness pitfalls:
 ```python
 # Checking if a list is empty
 items = []
-if items:           # Pythonic â€” no len(items) > 0
+if items:           # Pythonic -- no len(items) > 0
     print(items[0])
 else:
     print("Empty")
@@ -131,6 +184,34 @@ if result is not None:   # correct
 if result:               # wrong if result could be 0 or False
     print(result)
 ```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: same truthiness concept
+let name: string = "";  // empty string
+if (name) {             // false for empty string
+    console.log(`Hello, ${name}`);
+} else {
+    console.log("No name entered");
+}
+
+// Falsy values: false, 0, NaN, "", null, undefined
+// Python falsy: False, 0, 0.0, "", [], {}, (), set(), None
+
+// TypeScript has extra falsy values: NaN, undefined
+let notANumber: number = NaN;
+if (notANumber) {
+    // This block NEVER runs - NaN is falsy in TypeScript
+}
+```
+
+| Language | Falsy Values |
+|----------|-------------|
+| Python | `False`, `None`, `0`, `0.0`, `""`, `[]`, `{}`, `()`, `set()` |
+| TypeScript | `false`, `null`, `undefined`, `0`, `NaN`, `""` |
+| Extra in TS | `undefined`, `NaN` |
+| Extra in Python | `[]`, `{}`, `()`, `set()` (all empty containers) |
 
 ## 3.3 Chained Comparisons
 
@@ -158,6 +239,26 @@ print(1 < get_value() < 10)  # get_value called once
 
 This is more readable and efficient than the equivalent `1 < x and x < 10`.
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: chained comparison NOT supported
+// Must use && explicitly
+let x: number = 5;
+console.log(1 < x && x < 10);   // true  (Python: 1 < x < 10)
+console.log(1 < x && x < 5);    // false (Python: 1 < x < 5)
+
+// Python evaluates the middle operand ONCE
+// TypeScript evaluates x TWICE -- not identical behavior
+function getValue(): number {
+    console.log("getValue called");
+    return 5;
+}
+console.log(1 < getValue() && getValue() < 10);  // getValue called TWICE!
+```
+
+Python's chained comparison is a unique feature. TypeScript (and most C-family languages) require explicit `&&` and evaluate the middle operand twice.
+
 ## 3.4 Short-Circuit Evaluation
 
 > **One-Sentence Takeaway:** and stops at the first falsy operand; or stops at the first truthy operand.
@@ -183,6 +284,27 @@ If the input is empty, `""` is falsy, so `or` returns `"Guest"`.
 
 This pattern is less common since the walrus operator and `None`-aware idioms gained popularity, but it remains concise for simple defaults.
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: same short-circuit behavior
+function divide(a: number, b: number): number | boolean {
+    return b !== 0 && a / b;   // returns false if b is 0
+}
+
+console.log(divide(10, 2));    // 5
+console.log(divide(10, 0));    // false (no error)
+
+// Default value (same pattern as Python)
+const input = "";  // user input (empty)
+const name = input || "Guest";
+console.log(`Hello, ${name}`);  // Hello, Guest
+
+// TypeScript also has nullish coalescing:
+const displayName = input ?? "Guest";
+// ?? only checks null/undefined, not empty string
+```
+
 ## 3.5 Ternary Conditional Expression
 
 > **One-Sentence Takeaway:** x if cond else y is an expression, not a statement, so it can be used inside other expressions.
@@ -199,7 +321,7 @@ status = "Adult" if age >= 18 else "Minor"
 print(status)   # Adult
 ```
 
-Ternary expressions are expressions, not statements â€” they can be used inside other expressions:
+Ternary expressions are expressions, not statements -- they can be used inside other expressions:
 
 ```python
 print("Even" if 5 % 2 == 0 else "Odd")   # Odd
@@ -211,6 +333,31 @@ result = "A" if score >= 90 else "B" if score >= 80 else "C" if score >= 70 else
 
 > **Warning:** Nested ternaries are hard to read. Limit to one level; use if-elif-else blocks for anything more complex.
 Avoid deep nesting. For complex logic, use a full `if-elif-else` block.
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: C-style ternary operator
+let age: number = 20;
+let status: string = age >= 18 ? "Adult" : "Minor";
+console.log(status);   // Adult
+
+// Python:    value_if_true if condition else value_if_false
+// TypeScript: condition ? value_if_true : value_if_false
+
+// Can be used in expressions:
+console.log(5 % 2 === 0 ? "Even" : "Odd");   // Odd
+
+// Nesting (also discouraged):
+let score: number = 85;
+let result: string = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "F";
+```
+
+| Feature | Python | TypeScript |
+|---------|--------|------------|
+| Syntax | `x if cond else y` | `cond ? x : y` |
+| Expression type | Expression (usable inline) | Expression (usable inline) |
+| Readability | Reads naturally as English | Compact |
 
 ## 3.6 match-case (Structural Pattern Matching)
 
@@ -302,7 +449,29 @@ greet(Person("Alice", 35))   # Hi Alice, you're 35
 greet(Person("Bob", 15))     # Hello Bob, young one
 ```
 
-Match-case is exhaustive â€” if no pattern matches and no wildcard `_` is provided, no exception is raised (the match simply does nothing). Use wildcards to avoid silent failures.
+Match-case is exhaustive -- if no pattern matches and no wildcard `_` is provided, no exception is raised (the match simply does nothing). Use wildcards to avoid silent failures.
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: switch statement is the closest equivalent
+// (less powerful than Python's match-case)
+
+function describeStatus(code: number): string {
+    switch (code) {
+        case 200: return "OK";
+        case 404: return "Not Found";
+        case 500: return "Internal Server Error";
+        default:  return "Unknown";
+    }
+}
+
+console.log(describeStatus(404));  // Not Found
+
+// TypeScript does NOT have destructuring patterns in switch
+// No guards in case clauses
+// No sequence/mapping/class patterns
+```
 
 ## 3.7 Conditional Expressions and Assignment
 
@@ -327,6 +496,27 @@ results = [y for x in range(10) if (y := x ** 2) > 20]
 print(results)  # [25, 36, 49, 64, 81]
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: NO walrus operator equivalent
+// Must separate assignment from condition
+
+function fetchData(): string[] | null {
+    return null;
+}
+
+// TypeScript requires two statements:
+let data = fetchData();
+if (data === null) {
+    data = [];
+}
+
+// No inline assignment in conditions
+// Python: if (n := len(items)) > 0: ...
+// TypeScript: const n = items.length; if (n > 0) { ... }
+```
+
 ## 3.8 Boolean Operator Precedence in Conditions
 
 > **One-Sentence Takeaway:** not has highest precedence, then and, then or -- parenthesise when mixing them.
@@ -334,7 +524,7 @@ print(results)  # [25, 36, 49, 64, 81]
 Understanding precedence is critical for complex conditions:
 
 ```python
-# Equivalent to (a and b) or c  â€” and has higher precedence
+# Equivalent to (a and b) or c  -- and has higher precedence
 if a and b or c:
     pass
 
@@ -352,6 +542,15 @@ When mixing `and` and `or`, parenthesise for clarity:
 valid = (age >= 18) and (has_id or is_vip)
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: same precedence ordering: ! > && > ||
+// Python: not > and > or
+// TypeScript: ! > && > ||
+
+let valid: boolean = (age >= 18) && (hasId || isVip);
+```
 
 ## Concept Comparison Table
 
@@ -392,6 +591,16 @@ if (n := len(items)) > 0:
     print(f"Count: {n}")
 ```
 
+## Practical Takeaways
+
+| Concept | Key Point | Common Mistake |
+|---------|-----------|----------------|
+| if/elif/else | elif chains replace switch | Using `else if` instead of `elif` |
+| Truthiness | Empty = falsy, non-empty = truthy | Using `if result:` when `result` could be valid zero |
+| Chained comparison | `1 < x < 10` is Pythonic | Writing `if x > 10 and x < 20` instead of `10 < x < 20` |
+| Ternary | `x if cond else y` | Putting complex logic in ternaries |
+| match-case | Use `_` for default case | Forgetting wildcard causes silent fall-through |
+| Python vs TS | Python has chained comparisons, walrus; TS has switch | Expecting same syntax across languages |
 
 ## Cross-Application Matrix
 
@@ -444,6 +653,7 @@ if (n := len(items)) > 0:
 - `and`/`or` short-circuit; ternary `x if cond else y` is an expression.
 - Match-case supports literals, captures, guards, sequences, mappings, and class patterns.
 - The walrus operator can simplify conditions.
+- TypeScript uses C-style ternary `cond ? x : y` and does not have chained comparisons or the walrus operator.
 
 ## Exercises
 
@@ -454,13 +664,21 @@ if (n := len(items)) > 0:
 3. Why does `print(True and "hello" or "world")` produce `"hello"`?
 4. What is the wildcard pattern in match-case and why is it useful?
 5. How are chained comparisons more efficient than their expanded form?
+6. How does Python's ternary syntax differ from TypeScript's?
+7. Why does TypeScript not have chained comparisons?
 
 ### Application Problems
 
 1. Write a program that reads a student's numeric score (0-100) and prints a letter grade (A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: below 60) with a descriptive message.
 2. Use match-case to implement a simple calculator that accepts "add 5 3", "sub 10 4", "mul 6 7", "div 15 3" strings and prints the result. Handle unknown operations and division by zero.
 3. Write a program that reads three side lengths and classifies the triangle as equilateral, isosceles, scalene, or invalid (violates triangle inequality). Use chained comparisons.
+4. Rewrite problem 1 in TypeScript. Use nested ternary operators for the grade logic. Compare readability with the Python version -- which do you prefer?
+5. Write a function that validates a password: must be 8+ characters, contain at least one digit and one uppercase letter. Use short-circuit evaluation to only check the next condition if the previous one passes.
 
 ### Challenge Problem
 
 Build a simple state machine for a traffic light. The states are GREEN, YELLOW, RED. Transitions: GREEN -> YELLOW (after 30 seconds), YELLOW -> RED (after 5 seconds), RED -> GREEN (after 25 seconds). Use match-case to implement the transition logic. Accept the current state and elapsed time as input, and output the next state. Include validation for invalid states or negative time.
+
+### TypeScript Challenge
+
+Write a TypeScript version of the match-case based calculator from Application Problem 2. TypeScript's switch statement cannot destructure strings, so use string splitting and if-else chains instead. Compare the implementation effort and readability of both solutions.

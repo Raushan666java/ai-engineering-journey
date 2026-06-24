@@ -88,7 +88,7 @@ for i in range(10, 0, -1):   # 10, 9, ..., 1
     print(i, end=" ")        # 10 9 8 7 6 5 4 3 2 1
 ```
 
-`range()` is lazy â€” it produces values on demand, not as a list. Cast to `list()` to see all values.
+`range()` is lazy -- it produces values on demand, not as a list. Cast to `list()` to see all values.
 
 ### 4.1.2 Iterating Over Sequences
 
@@ -109,19 +109,62 @@ for value in numbers:
 Modifying a list while iterating over it is dangerous:
 
 ```python
-# BAD â€” skips elements
+# BAD -- skips elements
 numbers = [1, 2, 3, 4, 5]
 for n in numbers:
     if n % 2 == 0:
         numbers.remove(n)
 print(numbers)  # [1, 3, 5]  (works here by luck, fails in general)
 
-# CORRECT â€” iterate over a copy
+# CORRECT -- iterate over a copy
 numbers = [1, 2, 3, 4, 5]
 for n in numbers[:]:
     if n % 2 == 0:
         numbers.remove(n)
 print(numbers)  # [1, 3, 5]
+```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: for-of loop (like Python's for-in)
+const fruits: string[] = ["apple", "banana", "cherry"];
+for (const fruit of fruits) {
+    console.log(fruit);
+}
+
+// TypeScript: traditional for loop (like range)
+for (let i = 0; i < 5; i++) {
+    console.log(i);  // 0 1 2 3 4
+}
+
+// TypeScript: forEach method (functional style)
+fruits.forEach((fruit) => console.log(fruit));
+
+// TypeScript does NOT have range(); use for(let i=0; i<n; i++)
+// Python's range(start, stop, step):
+for (let i = 0; i < 10; i += 2) {
+    console.log(i);  // 0 2 4 6 8
+}
+```
+
+```mermaid
+flowchart TD
+    subgraph Python[Python for Loop]
+        P1[for item in iterable:] --> P2[Get next item]
+        P2 --> P3{More items?}
+        P3 -->|Yes| P4[Execute body]
+        P4 --> P2
+        P3 -->|No| P5[Exit loop]
+    end
+
+    subgraph TS[TypeScript for Loop]
+        T1[for let i=0; i<n; i++] --> T2{Condition true?}
+        T2 -->|Yes| T3[Execute body]
+        T3 --> T4[Increment]
+        T4 --> T2
+        T2 -->|No| T5[Exit loop]
+    end
 ```
 
 ## 4.2 The while Loop
@@ -141,7 +184,7 @@ while count < 5:
 Ensure the condition eventually becomes falsy, or use `break`:
 
 ```python
-# Infinite loop â€” ensure termination
+# Infinite loop -- ensure termination
 total = 0
 while True:
     n = int(input("Enter a number (0 to quit): "))
@@ -161,8 +204,36 @@ print(f"Total: {total}")
 x = 1.0
 while abs(x ** 2 - 2) > 1e-10:
     x = (x + 2 / x) / 2   # Newton's method for sqrt(2)
-print(f"sqrt(2) â‰ˆ {x}")
+print(f"sqrt(2) ~ {x}")
 ```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: while loop (identical to Python)
+let count: number = 0;
+while (count < 5) {
+    console.log(count);  // 0 1 2 3 4
+    count++;
+}
+
+// Infinite loop with break (identical)
+let total: number = 0;
+while (true) {
+    // prompt doesn't work in Node.js without readline
+    // But the pattern is identical
+    break;
+}
+
+// Convergence algorithm (identical)
+let x: number = 1.0;
+while (Math.abs(x ** 2 - 2) > 1e-10) {
+    x = (x + 2 / x) / 2;
+}
+console.log(`sqrt(2) ~ ${x}`);
+```
+
+The `while` loop is nearly identical between Python and TypeScript. The key difference is the loop syntax -- Python uses a colon and indentation, TypeScript uses parentheses and curly braces.
 
 ## 4.3 break and continue
 
@@ -198,11 +269,37 @@ for i in range(3):
             break       # breaks inner loop only
         print(f"({i},{j})", end=" ")
     print()
-# (0,0) (0,1)? â€” actually break after j=1, so prints (0,0) then inner loop ends
-# Output: (0,0) (1,0) (2,0) â€” wait j=0, then j=1 -> break
-# Let's trace: i=0: j=0 -> prints, j=1 -> break. i=1: j=0 prints, j=1 break.
-# (0,0) (1,0) (2,0)
 ```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: break and continue (identical behavior)
+for (let i = 0; i < 100; i++) {
+    if (i * i > 50) break;
+    console.log(i, i * i);
+}
+
+for (let i = 0; i < 10; i++) {
+    if (i % 2 === 0) continue;
+    console.log(i);   // 1 3 5 7 9
+}
+
+// TypeScript also has labeled break (Python does not)
+outer: for (let i = 0; i < 3; i++) {
+    inner: for (let j = 0; j < 3; j++) {
+        if (j === 1) break outer;  // breaks BOTH loops!
+        console.log(i, j);
+    }
+}
+```
+
+| Feature | Python | TypeScript |
+|---------|--------|------------|
+| break | Yes | Yes |
+| continue | Yes | Yes |
+| Labeled break | No | Yes (outer/inner labels) |
+| Loop control | Same behavior | TypeScript has labeled break |
 
 ## 4.4 The else Clause on Loops
 
@@ -236,6 +333,34 @@ else:
     print("Input is a power of two")
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: NO else clause on loops
+// Must use a flag variable instead:
+function isPrime(n: number): boolean {
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            return false;  // like break + else executed
+        }
+    }
+    return true;  // like else clause
+}
+
+// Flag approach for the else clause:
+function checkPowerOfTwo(x: number): boolean {
+    while (x > 1) {
+        if (x % 2 !== 0) {
+            return false;  // break from success path
+        }
+        x = Math.floor(x / 2);
+    }
+    return true;  // no break occurred
+}
+```
+
+Python's `else` on loops is unique. In TypeScript and most other languages, you use a flag variable or early return from a function to achieve the same effect.
+
 ## 4.5 enumerate()
 
 > **One-Sentence Takeaway:** enumerate() yields (index, value) pairs -- avoid manual counter variables.
@@ -260,6 +385,32 @@ for i, color in enumerate(colors, start=1):
 # 2. green
 # 3. blue
 ```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: entries() on arrays
+const colors: string[] = ["red", "green", "blue"];
+for (const [i, color] of colors.entries()) {
+    console.log(`${i}: ${color}`);
+}
+
+// Traditional for loop:
+for (let i = 0; i < colors.length; i++) {
+    console.log(`${i}: ${colors[i]}`);
+}
+
+// forEach with index:
+colors.forEach((color, i) => {
+    console.log(`${i}: ${color}`);
+});
+```
+
+| Feature | Python | TypeScript |
+|---------|--------|------------|
+| Index-value pairs | `enumerate(iterable)` | `iterable.entries()` |
+| Custom start | `enumerate(iterable, start=N)` | Manual (add offset) |
+| Destructuring | `for i, val in enumerate(x):` | `for (const [i, val] of x.entries())` |
 
 ## 4.6 zip()
 
@@ -304,6 +455,29 @@ print(list(first))   # [1, 2, 3]
 print(list(second))  # [10, 20, 30]
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: NO built-in zip() in older versions
+// Manual implementation or use lodash
+function zip<T, U>(a: T[], b: U[]): [T, U][] {
+    const len = Math.min(a.length, b.length);
+    return Array.from({ length: len }, (_, i) => [a[i], b[i]]);
+}
+
+const names: string[] = ["Alice", "Bob", "Charlie"];
+const scores: number[] = [85, 92, 78];
+const zipped = zip(names, scores);
+// [["Alice", 85], ["Bob", 92], ["Charlie", 78]]
+
+// forEach with index (manual approach):
+names.forEach((name, i) => {
+    if (i < scores.length) {
+        console.log(`${name}: ${scores[i]}`);
+    }
+});
+```
+
 ## 4.7 reversed()
 
 > **One-Sentence Takeaway:** reversed() returns a reverse iterator without copying the sequence.
@@ -317,6 +491,25 @@ print()
 
 for n in reversed([1, 2, 3]):
     print(n, end=" ")  # 3 2 1
+```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: reverse() on arrays (mutates) or manual loop
+// Option 1: reverse() - but this MUTATES the array
+const nums: number[] = [1, 2, 3];
+const reversed = [...nums].reverse();  // copy first to avoid mutation
+console.log(reversed);  // [3, 2, 1]
+
+// Option 2: manual reverse iteration
+for (let i = nums.length - 1; i >= 0; i--) {
+    console.log(nums[i]);  // 3 2 1
+}
+
+// Strings can be reversed:
+const str: string = "hello";
+console.log(str.split("").reverse().join(""));  // "olleh"
 ```
 
 ## 4.8 sorted()
@@ -343,6 +536,31 @@ for w in sorted(words, key=len):
 
 `sorted()` returns a new list; the original iterable is unchanged.
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: toSorted() - non-mutating (ES2023+)
+const nums: number[] = [3, 1, 4, 1, 5, 9, 2];
+const sorted = nums.toSorted((a, b) => a - b);
+console.log(sorted);  // [1, 1, 2, 3, 4, 5, 9]
+
+// Custom key (sort by length)
+const words: string[] = ["banana", "apple", "cherry", "date"];
+words.sort((a, b) => a.length - b.length);
+// Note: sort() MUTATES the array in TypeScript!
+console.log(words);  // ["date", "apple", "banana", "cherry"]
+```
+
+### Loop Utilities Comparison
+
+| Function | Python | TypeScript |
+|----------|--------|------------|
+| Numeric range | `range(start, stop, step)` | `for (let i=0; i<n; i++)` |
+| Index-value | `enumerate(iter)` | `iter.entries()` |
+| Parallel iteration | `zip(a, b)` | Manual or library |
+| Reverse | `reversed(seq)` | `[...arr].reverse()` |
+| Sorted | `sorted(iter, key=func)` | `arr.toSorted(compare)` |
+
 ## 4.9 Nested Loops
 
 > **One-Sentence Takeaway:** Nested loops multiply complexity -- use comprehensions for matrix operations.
@@ -357,12 +575,30 @@ for i in range(3):
 # (2,0) (2,1) (2,2)
 ```
 
-Nested loops multiply iterations â€” O(n*m) complexity. For matrix operations:
+Nested loops multiply iterations -- O(n*m) complexity. For matrix operations:
 
 ```python
 matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 transpose = [[row[i] for row in matrix] for i in range(3)]
 print(transpose)  # [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
+```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: nested loops (identical structure)
+for (let i = 0; i < 3; i++) {
+    for (let j = 0; j < 3; j++) {
+        console.log(`(${i},${j})`);
+    }
+}
+
+// Matrix transpose (identical logic)
+const matrix: number[][] = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+const transpose: number[][] = matrix[0].map((_, i) =>
+    matrix.map(row => row[i])
+);
+console.log(transpose);  // [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
 ```
 
 ## 4.10 Loop Idioms
@@ -401,6 +637,32 @@ for fruit in fruits:
 
 Prefer `enumerate()`.
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: filter instead of remove during iteration
+const items: number[] = [1, 2, 3, 4, 5];
+const filtered = items.filter(x => x % 2 !== 0);  // [1, 3, 5]
+
+// Chunking:
+const data: number[] = [10, 20, 30, 40, 50];
+const chunks: number[][] = [];
+for (let i = 0; i < data.length; i += 2) {
+    chunks.push(data.slice(i, i + 2));
+}
+console.log(chunks);  // [[10, 20], [30, 40], [50]]
+```
+
+## Practical Takeaways
+
+| Concept | Key Point | Common Mistake |
+|---------|-----------|----------------|
+| for vs while | for iterates collections; while runs until condition | Using while when for is more natural |
+| range() | Lazy, use list() to materialise | Forgetting range stops before stop value |
+| Modify during iteration | Iterate over a copy | Removing items from list during for loop |
+| else clause | Runs only if no break | Confusing else with "always" |
+| enumerate | Avoid manual counters | Writing `i = 0; i += 1` |
+| Python vs TS | TS has labeled break; Python has else; both have for-of | Expecting TS range() helper |
 
 ## Concept Comparison Table
 
@@ -496,6 +758,8 @@ for x in sorted(seq, key=len): pass
 - `enumerate()` yields index-value pairs; `zip()` merges iterables.
 - `reversed()` and `sorted()` return iterators and sorted lists respectively.
 - Avoid modifying a collection while iterating over it.
+- TypeScript has labeled break; Python has else clauses on loops. Both have for-of iteration.
+- TypeScript lacks range() and zip() natively, requiring manual for loops or utility functions.
 
 ## Exercises
 
@@ -506,13 +770,21 @@ for x in sorted(seq, key=len): pass
 3. What does `zip(['a', 'b', 'c'], [1, 2])` return?
 4. Why is modifying a list during iteration problematic?
 5. How does `enumerate` differ from manually incrementing a counter?
+6. How does TypeScript's labeled break differ from Python's loop control?
+7. What is the TypeScript equivalent of Python's `range(5)`?
 
 ### Application Problems
 
 1. Write a program that prints the multiplication table (1-12) using nested loops, formatted in aligned columns.
 2. Implement the Collatz conjecture: for a given starting integer n, repeatedly compute n/2 if even, 3n+1 if odd, counting how many steps to reach 1. Use a while loop and print each step.
 3. Given two lists of student names and scores, use `zip` and `enumerate` to print a ranked leaderboard sorted by score descending.
+4. Write a Python function that finds the first duplicate in a list. Use the `for`/`else` pattern instead of a flag variable. Return the duplicate value or None.
+5. Write a script that reads integers from the user until they enter 0, then prints the sum, average, minimum, and maximum. Use a while loop with break.
 
 ### Challenge Problem
 
 Implement a simple text-based inventory management system. Start with an inventory of items (dict mapping names to quantities). Repeatedly prompt the user for commands: "add X N", "remove X N", "list", or "quit". Use a while loop with break. Handle invalid items, insufficient quantity, and non-numeric counts gracefully. Use membership operators (`in`) to validate items before modification.
+
+### TypeScript Challenge
+
+Implement the Collatz conjecture from Application Problem 2 in TypeScript. Add a performance comparison -- time how long it takes Python vs TypeScript to compute the Collatz sequence for n = 1,000,000. Which is faster and why?

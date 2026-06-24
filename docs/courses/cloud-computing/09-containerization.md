@@ -527,8 +527,59 @@ volumes:
 **C) NetworkPolicy.** NetworkPolicy controls which pods can communicate with each other at the network level. RBAC controls API access; Pod Security Standards control pod capabilities.
 </details>
 
+### TypeScript: Container Orchestrator Simulator
+
+```typescript
+interface PodSpec { cpu: number; mem: number; image: string; replicas: number; }
+interface NodeResource { cpu: number; mem: number; }
+
+class KubeScheduler {
+  private nodes: Map<string, { capacity: NodeResource; allocatable: NodeResource }> = new Map();
+
+  addNode(name: string, cpu: number, mem: number): void {
+    this.nodes.set(name, {
+      capacity: { cpu, mem },
+      allocatable: { cpu, mem },
+    });
+  }
+
+  schedule(pod: PodSpec): string[] {
+    const assignments: string[] = [];
+    for (let i = 0; i < pod.replicas; i++) {
+      for (const [name, node] of this.nodes) {
+        if (node.allocatable.cpu >= pod.cpu && node.allocatable.mem >= pod.mem) {
+          node.allocatable.cpu -= pod.cpu;
+          node.allocatable.mem -= pod.mem;
+          assignments.push(`${pod.image}@${name}`);
+          break;
+        }
+      }
+    }
+    return assignments;
+  }
+
+  utilization(): Record<string, { cpuPct: number; memPct: number }> {
+    const result: Record<string, any> = {};
+    for (const [name, node] of this.nodes) {
+      result[name] = {
+        cpuPct: ((node.capacity.cpu - node.allocatable.cpu) / node.capacity.cpu) * 100,
+        memPct: ((node.capacity.mem - node.allocatable.mem) / node.capacity.mem) * 100,
+      };
+    }
+    return result;
+  }
+}
+```
+
 ## Summary
 
+- Docker packages applications with dependencies into portable images.
+- Kubernetes orchestrates containers at scale with self-healing and rolling updates.
+- Multi-stage builds significantly reduce production image sizes.
+- Fargate removes node management overhead at higher per-task cost.
+- Container security spans image scanning, RBAC, and runtime protection.
+- HPA scales pods on CPU/memory; Cluster Autoscaler scales nodes.
+- ECS and EKS offer managed Kubernetes with different trade-offs.
 - Docker containers provide consistent, portable application packaging through images.
 - Kubernetes orchestrates containers with Pods, Services, Deployments, and ConfigMaps.
 - Multi-stage builds and Alpine base images significantly reduce container image size.

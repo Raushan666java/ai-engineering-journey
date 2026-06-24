@@ -505,3 +505,130 @@ aws rds create-db-instance-read-replica \
 ### Challenge Problem
 
 Design a global e-commerce database architecture handling 1M products, 10M users, and 100K orders/day across US, EU, and APAC. The system needs: 1) Fast product catalog reads globally, 2) ACID-compliant order processing, 3) Real-time inventory updates, 4) Analytics on sales trends, and 5) Per-region data residency compliance. Propose specific database services and replication strategies.
+
+## Database Selection Decision Flow
+
+```mermaid
+graph TB
+    Q1{Need ACID<br/>transactions?}
+    Q1 -->|Yes| Q2{Schema changes<br/>frequently?}
+    Q1 -->|No| Q3{High read/write<br/>throughput?}
+    Q2 -->|Yes| Q4[Relational DB<br/>RDS / Aurora / Cloud SQL]
+    Q2 -->|No| Q5[Consider NoSQL<br/>or document DB]
+    Q3 -->|Yes| Q6{Need sub-ms<br/>latency?}
+    Q3 -->|No| Q7[Standard RDS<br/>with read replicas]
+    Q6 -->|Yes| Q8[In-Memory Cache<br/>ElastiCache / Memorystore]
+    Q6 -->|No| Q9[NoSQL Key-Value<br/>DynamoDB / CosmosDB]
+    Q4 --> Q10{Analytics-heavy<br/>workload?}
+    Q10 -->|Yes| Q11[Add Data Warehouse<br/>Redshift / BigQuery]
+    Q10 -->|No| Q12[Standalone RDS<br/>with Multi-AZ HA]
+```
+
+## AWS CDK: DynamoDB Table with Auto-Scaling
+
+Define DynamoDB infrastructure as TypeScript using the AWS CDK:
+
+```typescript
+import * as dynamodb from "aws-cdk-lib/aws-dynamodb";
+import * as cdk from "aws-cdk-lib";
+
+class DatabaseStack extends cdk.Stack {
+  constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+
+    const userSessionsTable = new dynamodb.Table(this, "UserSessions", {
+      partitionKey: { name: "sessionId", type: dynamodb.AttributeType.STRING },
+      sortKey: { name: "createdAt", type: dynamodb.AttributeType.STRING },
+      billingMode: dynamodb.BillingMode.PROVISIONED,
+      readCapacity: 50,
+      writeCapacity: 25,
+      encryption: dynamodb.TableEncryption.AWS_MANAGED,
+      pointInTimeRecovery: true,
+      timeToLiveAttribute: "expiresAt",
+      removalPolicy: cdk.RemovalPolicy.RETAIN,
+    });
+
+    userSessionsTable.autoScaleReadCapacity({
+      minCapacity: 10,
+      maxCapacity: 500,
+    }).scaleOnUtilization({ targetUtilizationPercent: 70 });
+
+    userSessionsTable.autoScaleWriteCapacity({
+      minCapacity: 5,
+      maxCapacity: 250,
+    }).scaleOnUtilization({ targetUtilizationPercent: 70 });
+
+    const ordersTable = new dynamodb.Table(this, "Orders", {
+      partitionKey: { name: "customerId", type: dynamodb.AttributeType.STRING },
+      sortKey: { name: "orderDate", type: dynamodb.AttributeType.STRING },
+      billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
+      encryption: dynamodb.TableEncryption.CUSTOMER_MANAGED,
+    });
+  }
+}
+```
+
+## Pulumi: RDS PostgreSQL Instance
+
+```typescript
+import * as aws from "@pulumi/aws";
+import * as pulumi from "@pulumi/pulumi";
+
+const config = new pulumi.Config();
+const dbPassword = config.requireSecret("dbPassword");
+
+const vpc = aws.ec2.getVpc({ default: true });
+const subnets = aws.ec2.getSubnetIds({ vpcId: vpc.then(v => v.id) });
+
+const dbSubnetGroup = new aws.rds.SubnetGroup("db-subnet-group", {
+  subnetIds: subnets.then(s => s.ids),
+});
+
+const db = new aws.rds.Instance("production-db", {
+  engine: "postgres",
+  engineVersion: "16",
+  instanceClass: "db.r5.large",
+  allocatedStorage: 200,
+  storageType: "gp3",
+  dbName: "appdb",
+  username: "appadmin",
+  password: dbPassword,
+  dbSubnetGroupName: dbSubnetGroup.name,
+  multiAz: true,
+  backupRetentionPeriod: 30,
+  backupWindow: "03:00-04:00",
+  maintenanceWindow: "sun:04:00-sun:05:00",
+  storageEncrypted: true,
+  deletionProtection: true,
+  skipFinalSnapshot: false,
+  finalSnapshotIdentifier: "prod-db-final-snapshot",
+});
+
+export const dbAddress = db.address;
+export const dbPort = db.port;
+```
+
+## Real-World Case Study: Airbnb's Database Evolution
+
+Airbnb's journey from a monolithic MySQL database to a polyglot persistence architecture illustrates the cloud database decision process.
+
+**2010–2013 — Monolithic RDS:** Airbnb ran a single large RDS MySQL instance serving all traffic. As the platform grew to 10M+ users, database bottlenecks appeared. Read replicas were added for analytics, but the primary database remained a single point of pressure.
+
+**2014–2016 — Sharding:** Airbnb sharded their MySQL database by region and feature. They developed the "Spinal Tap" sharding framework and later migrated to AWS Aurora for improved throughput and built-in replication.
+
+**2017–2020 — Polyglot Persistence:** Airbnb adopted specialized databases for specific workloads:
+- **Aurora** for transactional bookings and payments (ACID required)
+- **DynamoDB** for session stores and user preferences (high-scale KV)
+- **ElastiCache (Redis)** for real-time pricing and availability lookups (sub-ms)
+- **Redshift** for analytics and business intelligence (OLAP)
+- **Elasticsearch** for search and discovery (full-text search)
+
+**Key Lesson:** No single database satisfies all requirements. The right approach is to match each workload to the best-fit database service.
+
+### Additional Exercises
+
+6. **Database Selection:** For each workload below, recommend a cloud database service and justify: a) Real-time leaderboard for a gaming app with 10M daily users, b) Document storage for a legal compliance system with strict audit requirements, c) Time-series sensor data from 100K IoT devices, d) Graph-based social network with friend recommendations.
+
+7. **Migration Strategy:** Design a plan to migrate a 500 GB on-premises MySQL database to Aurora with less than 15 minutes of downtime. Include replication setup, cutover procedure, and rollback strategy.
+
+8. **Cost Analysis:** Compare the monthly cost of running PostgreSQL on RDS (db.r5.xlarge, Multi-AZ, 500 GB gp3) vs Aurora (serverless v2 with equivalent capacity) vs self-hosting on EC2 (two r5.xlarge instances with EBS gp3). Include storage, I/O, backup, and data transfer costs.

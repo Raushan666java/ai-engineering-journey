@@ -322,7 +322,74 @@ Object.defineProperty(user, 'id', {
 });
 ```
 
-### 3.7 Arrays
+### 3.7 Promises and Async/Await
+
+JavaScript handles asynchronous operations via Promises and async/await.
+
+```javascript
+// Creating a Promise
+function fetchUser(id) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (id > 0) {
+        resolve({ id, name: "Alice", role: "admin" });
+      } else {
+        reject(new Error("Invalid user ID"));
+      }
+    }, 1000);
+  });
+}
+
+// Consuming with .then/.catch
+fetchUser(1)
+  .then((user) => console.log(user.name))
+  .catch((err) => console.error(err));
+
+// Consuming with async/await (preferred)
+async function loadUserProfile(id) {
+  try {
+    const user = await fetchUser(id);
+    return user;
+  } catch (error) {
+    console.error("Failed to load user:", error);
+    return null;
+  }
+}
+
+// Parallel execution with Promise.all
+async function loadDashboard() {
+  const [user, posts, notifications] = await Promise.all([
+    fetchUser(1),
+    fetchPosts(),
+    fetchNotifications(),
+  ]);
+  return { user, posts, notifications };
+}
+
+// Promise.race - returns first settled promise
+async function fetchWithTimeout(url, ms = 5000) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), ms);
+  try {
+    const response = await fetch(url, { signal: controller.signal });
+    return response;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+// Promise.allSettled - waits for all, regardless of rejection
+const results = await Promise.allSettled([
+  fetch("/api/users"),
+  fetch("/api/posts"),
+  fetch("/api/invalid-endpoint"),
+]);
+
+const successful = results.filter((r) => r.status === "fulfilled").map((r) => r.value);
+const failed = results.filter((r) => r.status === "rejected").map((r) => r.reason);
+```
+
+### 3.8 Arrays
 
 Arrays are ordered, zero-indexed collections.
 
@@ -503,6 +570,85 @@ Test your understanding with these quick questions.
 6. Implement a function `groupBy(arr, key)` that groups an array of objects by a specified key and returns an object mapping keys to arrays of matching objects.
 7. Write a pipeline function `pipe(...fns)` that composes functions left-to-right: `pipe(f, g)(x)` should return `g(f(x))`.
 
+### Application Problems
+
+8. Implement a function `retry(fn, retries)` that calls an async function and retries it up to N times if it rejects, with exponential backoff (100ms, 200ms, 400ms, ...) between attempts.
+9. Write a function `parallelWithLimit(tasks, limit)` that runs an array of async functions with at most `limit` concurrent executions, returning results in order.
+
+### structuredClone and Deep Copying
+
+The `structuredClone` global creates deep copies of objects.
+
+```javascript
+const original = {
+  name: "Alice",
+  hobbies: ["reading", "coding"],
+  address: { city: "Portland", zip: 97201 },
+};
+
+// Deep clone — no mutation to original
+const clone = structuredClone(original);
+clone.hobbies.push("hiking");
+clone.address.zip = 97202;
+
+console.log(original.hobbies); // ["reading", "coding"] — unchanged
+console.log(original.address.zip); // 97201 — unchanged
+
+// Supports: objects, arrays, maps, sets, dates, regexps, typed arrays, blobs
+// Not supported: functions, DOM nodes, class instances with prototypes, Error objects
+```
+
+### Event Loop Deep Dive: Microtasks vs Macrotasks
+
+```javascript
+console.log("1: sync");
+
+setTimeout(() => console.log("2: macrotask"), 0);
+
+Promise.resolve().then(() => console.log("3: microtask"));
+
+queueMicrotask(() => console.log("4: queueMicrotask"));
+
+requestAnimationFrame(() => console.log("5: animation frame"));
+
+// Output order:
+// 1: sync
+// 3: microtask  (microtask queue empties after each macrotask)
+// 4: queueMicrotask
+// 2: macrotask  (next macrotask cycle)
+// 5: animation frame (before paint, after macrotask)
+```
+
+### WeakRef and FinalizationRegistry
+
+```javascript
+const cache = new Map();
+
+function fetchData(id) {
+  if (cache.has(id)) return cache.get(id);
+  const data = { id, timestamp: Date.now() };
+  cache.set(id, new WeakRef(data));
+  return data;
+}
+
+// Clean up unreferenced entries
+const registry = new FinalizationRegistry((id) => {
+  console.log(`Data ${id} was garbage collected`);
+});
+
+function track(id, ref) {
+  registry.register(ref, id);
+}
+```
+
 ### Challenge Problem
 
-8. Implement a `class`-free functional event emitter with methods `on(event, handler)`, `off(event, handler)`, and `emit(event, ...args)`. The implementation must support multiple handlers per event, removal of specific handlers, and wildcard listeners that receive all events. Use a plain object as the handlers store and the rest/spread syntax for variable arguments. Ensure that removing a handler during emission does not skip other handlers. Write unit-test-style assertions that demonstrate all three methods working correctly, including the wildcard behavior.
+10. Implement a `class`-free functional event emitter with methods `on(event, handler)`, `off(event, handler)`, and `emit(event, ...args)`. The implementation must support multiple handlers per event, removal of specific handlers, and wildcard listeners that receive all events. Use a plain object as the handlers store and the rest/spread syntax for variable arguments. Ensure that removing a handler during emission does not skip other handlers. Write unit-test-style assertions that demonstrate all three methods working correctly, including the wildcard behavior.
+
+### Practical Takeaways
+
+1. **Prefer `const` by default** — use `const` for variables that are never reassigned. Use `let` only when you need to reassign. Never use `var` in modern code.
+2. **Always use `===` for equality** — avoid `==` coercion surprises. The only exception is `== null` to check both `null` and `undefined`.
+3. **Use async/await over raw Promises** — it reads like synchronous code, has better error stacks, and works naturally with try/catch.
+4. **Use `Promise.all` for independent parallel work** — when tasks do not depend on each other, `Promise.all` runs them concurrently and fails fast on any rejection.
+5. **Prefer array methods over loops** — `map`, `filter`, `reduce`, `find`, and `some` express data transformations declaratively without manual indexing.

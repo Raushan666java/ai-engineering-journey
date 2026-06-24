@@ -409,6 +409,191 @@ reduce(lambda a,b: a+b, [1,2,3,4])
 - operator.sum
 
 
+## TypeScript Parallel
+
+TypeScript uses arrow functions `(args) => expr` as the direct equivalent of Python lambdas:
+
+```typescript
+// TypeScript arrow functions (equivalent to Python lambdas)
+const square = (x: number): number => x * x;
+const add = (a: number, b: number): number => a + b;
+
+// map equivalent (Python: map(lambda x: x*2, nums))
+const nums: number[] = [1, 2, 3, 4, 5];
+const doubled = nums.map(x => x * 2);  // [2, 4, 6, 8, 10]
+
+// filter equivalent (Python: filter(lambda x: x > 2, nums))
+const big = nums.filter(x => x > 2);   // [3, 4, 5]
+
+// reduce equivalent (Python: reduce(lambda a, b: a + b, nums))
+const sum = nums.reduce((acc, x) => acc + x, 0);  // 15
+
+// partial application via bind and closures
+function multiply(a: number, b: number): number {
+  return a * b;
+}
+const doubleTS = multiply.bind(null, 2);
+console.log(doubleTS(5));  // 10
+
+// Curried closure (like partial)
+const multiplyBy = (a: number) => (b: number) => a * b;
+const triple = multiplyBy(3);
+console.log(triple(7));  // 21
+
+// Method reference equivalent
+type Op = (a: number, b: number) => number;
+const ops: Record<string, Op> = {
+  add: (a, b) => a + b,
+  mul: (a, b) => a * b
+};
+console.log(ops["add"](3, 4));  // 7
+```
+
+### Arrow Functions vs Python Lambdas
+
+| Feature | Python lambda | TypeScript Arrow |
+|---------|---------------|------------------|
+| Syntax | `lambda x: expr` | `x => expr` |
+| Multiple params | `lambda a,b: expr` | `(a,b) => expr` |
+| Statements | Single expression only | Expression or block `{}` |
+| `this` binding | N/A (lexical) | Lexical `this` |
+| Typing | No type annotations | Full type support |
+| Common use | `map`/`filter`/`reduce` | `.map()`/`.filter()`/`.reduce()` |
+
+### Functional Programming vs Pythonic Style
+
+Python is not a purely functional language, so idiomatic Python often prefers alternatives:
+
+```python
+# Lambda style vs Pythonic style
+
+# 1. Sorting with complex keys
+data = [("Alice", 30), ("Bob", 25), ("Charlie", 35)]
+
+# Lambda approach
+sorted_by_age = sorted(data, key=lambda x: x[1])
+
+# operator approach (preferred for simple attribute access)
+from operator import itemgetter
+sorted_by_age = sorted(data, key=itemgetter(1))
+
+# 2. Conditional logic
+nums = [1, 2, 3, 4, 5, 6]
+
+# Lambda approach
+result = list(map(lambda x: x * 2 if x % 2 == 0 else x * 3, nums))
+
+# Comprehension approach (more readable)
+result = [x * 2 if x % 2 == 0 else x * 3 for x in nums]
+
+# 3. Multiple aggregations
+records = [{"sales": 100}, {"sales": 200}, {"sales": 150}]
+
+# Functional approach
+from functools import reduce
+total = reduce(lambda acc, r: acc + r["sales"], records, 0)
+
+# Comprehension approach (more pythonic)
+total = sum(r["sales"] for r in records)
+
+# 4. Data transformation pipeline
+# Lambda pipeline
+pipeline = lambda data: list(
+    map(lambda x: x.upper(),
+        filter(lambda x: len(x) > 3, data))
+)
+
+# Comprehension pipeline
+pipeline = [x.upper() for x in data if len(x) > 3]
+```
+
+### Advanced Partial Application
+
+```python
+# Partial with keyword arguments
+from functools import partial
+
+def log_message(level: str, source: str, message: str) -> str:
+    return f"[{level.upper()}] [{source}] {message}"
+
+info_logger = partial(log_message, "info", "app")
+error_logger = partial(log_message, "error", "app")
+
+print(info_logger("Server started"))      # [INFO] [app] Server started
+print(error_logger("Connection failed"))  # [ERROR] [app] Connection failed
+
+# Partial as callback factory
+def make_request(url: str, method: str = "GET", timeout: int = 30):
+    return f"{method} {url} (timeout={timeout}s)"
+
+get_api = partial(make_request, method="GET", timeout=10)
+post_api = partial(make_request, method="POST", timeout=30)
+print(get_api("https://api.example.com/users"))
+# GET https://api.example.com/users (timeout=10s)
+```
+
+### Performance: Lambda vs Named Function
+
+```python
+import timeit
+
+# Lambda
+lambda_time = timeit.timeit(
+    'list(map(lambda x: x * 2, range(1000)))',
+    number=10000
+)
+
+# List comprehension
+comp_time = timeit.timeit(
+    '[x * 2 for x in range(1000)]',
+    number=10000
+)
+
+# Named function
+def double(x):
+    return x * 2
+
+named_time = timeit.timeit(
+    'list(map(double, range(1000)))',
+    globals={'double': double},
+    number=10000
+)
+
+print(f"Lambda:   {lambda_time:.3f}s")
+print(f"Comprehension: {comp_time:.3f}s")
+print(f"Named:    {named_time:.3f}s")
+```
+
+List comprehensions are typically faster than `map` with lambdas because they avoid function call overhead. `map` with a built-in function (`map(str.upper, items)`) can be faster than the equivalent comprehension. Always profile when performance matters.
+
+### Lambda Pitfalls
+
+```python
+# Pitfall 1: Late binding in closures
+funcs = [lambda: i for i in range(5)]
+print([f() for f in funcs])  # [4, 4, 4, 4] not [0, 1, 2, 3, 4]
+
+# Fix: capture value at creation time
+funcs = [lambda i=i: i for i in range(5)]
+print([f() for f in funcs])  # [0, 1, 2, 3, 4]
+
+# Pitfall 2: Overusing lambda when def is clearer
+# Hard to read:
+process = lambda items: list(
+    filter(lambda x: x > 0,
+        map(lambda x: x.strip().lower(), items))
+)
+
+# Better as named function:
+def process(items):
+    result = []
+    for item in items:
+        cleaned = item.strip().lower()
+        if cleaned:
+            result.append(cleaned)
+    return result
+```
+
 ## Summary
 
 - Lambdas are anonymous, single-expression functions.

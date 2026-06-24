@@ -518,6 +518,60 @@ Test your understanding with these quick questions.
 - Static files and template engines enable full-stack applications.
 - HTTP endpoints are testable with curl, Postman, or HTTPie.
 
+### Middleware Patterns in Practice
+
+```typescript
+// Rate limiter
+import rateLimit from "express-rate-limit";
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 100,
+  message: { error: "Too many requests" },
+});
+app.use("/api/", apiLimiter);
+
+// Security headers
+import helmet from "helmet";
+app.use(helmet());
+
+// CORS configuration
+import cors from "cors";
+app.use(cors({
+  origin: ["https://example.com"],
+  credentials: true,
+}));
+
+// Conditional logging
+if (process.env.NODE_ENV === "development") {
+  const morgan = require("morgan");
+  app.use(morgan("dev"));
+}
+```
+
+### Environment Configuration with Validation
+
+```typescript
+import { z } from "zod";
+
+const envSchema = z.object({
+  NODE_ENV: z.enum(["development", "staging", "production"]),
+  PORT: z.coerce.number().default(3000),
+  DATABASE_URL: z.string().url(),
+  JWT_SECRET: z.string().min(32),
+});
+
+const parsed = envSchema.safeParse(process.env);
+if (!parsed.success) {
+  console.error("Invalid env:", parsed.error.flatten());
+  process.exit(1);
+}
+
+export const config = {
+  port: parsed.data.PORT,
+  isDev: parsed.data.NODE_ENV === "development",
+} as const;
+```
+
 ## Exercises
 
 > **One-Sentence Takeaway:** Express serves static files and supports template engines for server-side rendering.

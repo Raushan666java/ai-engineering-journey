@@ -477,6 +477,186 @@ console.log(calculator.generateDashboard(slos, [999000, 994000, 999800], [100000
 
 ---
 
+## TypeScript: OpenTelemetry Instrumentation Setup
+
+Below is a TypeScript example that configures OpenTelemetry for a microservice with traces, metrics, and logs:
+
+```typescript
+// instrumentation.ts
+// Configure OpenTelemetry for a Node.js/TypeScript microservice
+
+import { NodeSDK } from '@opentelemetry/sdk-node';
+import { OTLPTraceExporter } from '@opentelemetry/exporter-trace-otlp-http';
+import { OTLPMetricExporter } from '@opentelemetry/exporter-metrics-otlp-http';
+import { OTLPLogExporter } from '@opentelemetry/exporter-logs-otlp-http';
+import { HttpInstrumentation } from '@opentelemetry/instrumentation-http';
+import { ExpressInstrumentation } from '@opentelemetry/instrumentation-express';
+
+interface ObservabilityConfig {
+  serviceName: string;
+  serviceVersion: string;
+  environment: string;
+  otlpEndpoint: string;
+  samplingRatio: number;
+  enableMetrics: boolean;
+  enableTracing: boolean;
+  enableLogging: boolean;
+}
+
+class ObservabilitySetup {
+  private sdk: NodeSDK | null = null;
+
+  initialize(config: ObservabilityConfig): void {
+    const exporters = [];
+
+    if (config.enableTracing) {
+      exporters.push(new OTLPTraceExporter({
+        url: `${config.otlpEndpoint}/v1/traces`,
+      }));
+    }
+
+    if (config.enableMetrics) {
+      exporters.push(new OTLPMetricExporter({
+        url: `${config.otlpEndpoint}/v1/metrics`,
+      }));
+    }
+
+    if (config.enableLogging) {
+      exporters.push(new OTLPLogExporter({
+        url: `${config.otlpEndpoint}/v1/logs`,
+      }));
+    }
+
+    this.sdk = new NodeSDK({
+      serviceName: config.serviceName,
+      instrumentations: [
+        new HttpInstrumentation(),
+        new ExpressInstrumentation(),
+      ],
+      traceExporter: exporters[0],
+      metricExporter: exporters[1],
+      logExporter: exporters[2],
+      sampler: {
+        shouldSample: () => ({ decision: Math.random() < config.samplingRatio ? 1 : 0 }),
+        toString: () => `ProbabilitySampler_${config.samplingRatio}`,
+      },
+    });
+
+    this.sdk.start();
+    console.log(`OpenTelemetry initialized for ${config.serviceName} (env: ${config.environment})`);
+  }
+
+  async shutdown(): Promise<void> {
+    await this.sdk?.shutdown();
+  }
+}
+
+// Example usage
+const telemetry = new ObservabilitySetup();
+telemetry.initialize({
+  serviceName: 'payment-api',
+  serviceVersion: '2.1.0',
+  environment: 'production',
+  otlpEndpoint: 'http://otel-collector:4318',
+  samplingRatio: 0.1, // 10% trace sampling
+  enableMetrics: true,
+  enableTracing: true,
+  enableLogging: true,
+});
+```
+
+## Mermaid: OpenTelemetry Collector Pipeline
+
+```mermaid
+flowchart LR
+    subgraph "Application"
+        APP1[Service A] --> |OTLP| COL[OpenTelemetry Collector]
+        APP2[Service B] --> |OTLP| COL
+        APP3[Service C] --> |OTLP| COL
+    end
+    subgraph "Collector Pipeline"
+        COL --> RCV[Receivers: OTLP]
+        RCV --> PROC[Processors]
+        PROC --> BATCH[Batch Processor]
+        PROC --> MEM[Memory Limiter]
+        PROC --> ATTR[Attributes Processor]
+        BATCH --> EXP[Exporters]
+    end
+    subgraph "Backends"
+        EXP --> TRACE[Tempo / Jaeger]
+        EXP --> METRIC[Prometheus / Mimir]
+        EXP --> LOG[Loki / Elasticsearch]
+    end
+    subgraph "Visualization"
+        TRACE --> GRAFANA[Grafana]
+        METRIC --> GRAFANA
+        LOG --> GRAFANA
+    end
+    style COL fill:#FF6B35,color:#fff
+    style GRAFANA fill:#F46800,color:#fff
+```
+
+## Mermaid: Distributed Tracing Flow
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Gateway as API Gateway
+    participant Auth as Auth Service
+    participant Orders as Orders Service
+    participant Payment as Payment Service
+    participant DB as Database
+
+    User->>Gateway: POST /orders
+    Note over Gateway: TraceID: abc123
+    Gateway->>Auth: Validate token (span 1)
+    Note over Auth: SpanID: span1
+    Auth-->>Gateway: Token valid
+    Gateway->>Orders: Create order (span 2)
+    Note over Orders: SpanID: span2<br/>Parent: span1
+    Orders->>DB: Insert order (span 3)
+    Note over DB: SpanID: span3<br/>Parent: span2
+    DB-->>Orders: Order created
+    Orders->>Payment: Charge payment (span 4)
+    Note over Payment: SpanID: span4<br/>Parent: span2
+    Payment-->>Orders: Payment confirmed
+    Orders-->>Gateway: Order complete
+    Gateway-->>User: 201 Created
+    Note over User,Gateway: Trace reflects full 900ms journey
+```
+
+## Deeper Explanation: Trace Sampling Strategies
+
+**When to use each sampling strategy:**
+
+| Strategy | Approach | Best For | Cost |
+|----------|----------|----------|------|
+| Head-based | Decide at root span | General observability, dashboards | Low |
+| Tail-based | Decide after trace completes | Error analysis, debugging | Medium |
+| Probabilistic | Random % of traces | High-volume services | Lowest |
+| Rate-limited | Max spans/second | Cost control with burst protection | Low |
+| Health-based | Always sample errors + slow | SRE, reliability monitoring | Medium |
+
+**Adaptive sampling configuration:**
+
+```typescript
+interface SamplingConfig {
+  defaultRatio: number;
+  errorSampleRatio: number; // always sample errors
+  slowTraceThresholdMs: number;
+  slowTraceRatio: number;
+  maxSpansPerSecond: number;
+}
+
+const samplerConfig: SamplingConfig = {
+  defaultRatio: 0.05,     // 5% of all traces
+  errorSampleRatio: 1.0,  // 100% of error traces
+  slowTraceThresholdMs: 1000,
+  slowTraceRatio: 0.5,    // 50% of slow traces
+  maxSpansPerSecond: 100,
+};
+```
+
 ## Summary
 
 Observability enables understanding complex distributed systems. The three pillars (logs, metrics, traces) provide complementary perspectives. OpenTelemetry standardizes instrumentation across languages and backends with API, SDK, and Collector components. Distributed tracing reveals request flows across service boundaries with parent-child span relationships and W3C context propagation. RED metrics (Rate, Errors, Duration) and the USE method (Utilization, Saturation, Errors) provide structured monitoring approaches for services and resources respectively. SLOs and error budgets quantify reliability, gate release decisions, and inform operational priorities. Cost optimization through sampling, aggregation, retention management, and cardinality control prevents observability costs from growing unbounded.
@@ -498,6 +678,9 @@ Observability enables understanding complex distributed systems. The three pilla
 1. Instrument a simple microservice application (two services communicating via HTTP) with OpenTelemetry. Generate a trace that spans both services. Export to Jaeger or Tempo. Visualize the trace showing parent-child span relationships.
 2. Implement RED metrics for a REST API service. Instrument request counters, error counters, and latency histograms. Create a Grafana dashboard showing rate, error rate, and latency distributions (p50, p95, p99).
 3. Define SLOs for an API service: latency SLO (95% of requests under 300ms) and availability SLO (99.9%). Calculate the error budgets. Implement an SLO burn-rate alert that fires when error budget is consumed too quickly.
+4. Configure the OpenTelemetry Collector pipeline from the TypeScript example. Set up batch processing, memory limiting, and attribute enrichment. Export traces to Tempo, metrics to Prometheus, and logs to Loki.
+5. Implement custom span attributes and events in a sample application. Add business context (user ID, order ID) as span attributes and record meaningful events (cache hit/miss, retry attempt) as span events.
+6. Calculate the cost of running observability for a 20-service microservice architecture generating 500 spans/sec per service. Compare head-based sampling at 10% vs tail-based sampling that keeps all error and slow traces. Assume storage costs of $0.02/GB for traces and $0.01/GB for logs.
 
 ### Challenge Problem
 

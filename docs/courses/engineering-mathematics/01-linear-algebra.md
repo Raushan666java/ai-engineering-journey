@@ -565,6 +565,35 @@ a) Compute $A^2, A^3, A^4$ and identify the pattern
 b) Use the series definition to find $e^A$ in closed form
 c) Verify that your result satisfies $(e^A)^{-1} = e^{-A}$ and $e^{A+B} = e^A e^B$ for this $A$
 
+### TypeScript: Linear Algebra Operations
+
+```typescript
+type Matrix = number[][];
+
+class LinearAlgebra {
+  multiply(A: Matrix, B: Matrix): Matrix {
+    const m = A.length, n = A[0].length, p = B[0].length;
+    const C: Matrix = Array.from({ length: m }, () => new Array(p).fill(0));
+    for (let i = 0; i < m; i++)
+      for (let k = 0; k < n; k++)
+        for (let j = 0; j < p; j++)
+          C[i][j] += A[i][k] * B[k][j];
+    return C;
+  }
+
+  svd2x2(M: Matrix): { U: Matrix; S: number[]; V: Matrix } {
+    const a = M[0][0], b = M[0][1], c = M[1][0], d = M[1][1];
+    const theta = 0.5 * Math.atan2(2 * b + 2 * c, a - d + a - d); // simplified
+    const cos = Math.cos(theta), sin = Math.sin(theta);
+    const U = [[cos, -sin], [sin, cos]];
+    const V = [[cos, sin], [-sin, cos]];
+    const s1 = Math.abs(a * cos + c * sin);
+    const s2 = Math.abs(d * cos + b * sin);
+    return { U, S: [s1, s2].sort((x, y) => y - x), V };
+  }
+}
+```
+
 ## Notation Reference
 
 | Symbol | Meaning |

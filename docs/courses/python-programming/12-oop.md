@@ -446,6 +446,167 @@ print(buddy.bark())
 - __slots__
 
 
+## TypeScript Parallel
+
+TypeScript supports classes with a similar but distinct syntax. TypeScript adds visibility modifiers (`public`, `private`, `protected`) and parameter properties:
+
+```typescript
+class BankAccount {
+  // TypeScript: visibility modifiers and type annotations
+  private _balance: number;
+  static interestRate: number = 0.05;
+  readonly accountNumber: string;
+
+  // Constructor with parameter property (shorthand)
+  constructor(
+    public owner: string,
+    initialBalance: number = 0,
+    public readonly bankName: string = "Default Bank"
+  ) {
+    this._balance = initialBalance;
+    this.accountNumber = `ACC-${Date.now()}`;
+  }
+
+  // Getter (like @property)
+  get balance(): number {
+    return this._balance;
+  }
+
+  // Setter
+  set balance(amount: number) {
+    if (amount < 0) throw new Error("Balance cannot be negative");
+    this._balance = amount;
+  }
+
+  deposit(amount: number): void {
+    if (amount <= 0) throw new Error("Amount must be positive");
+    this._balance += amount;
+  }
+
+  withdraw(amount: number): boolean {
+    if (amount > this._balance) return false;
+    this._balance -= amount;
+    return true;
+  }
+
+  // Static method (like @classmethod but no cls context)
+  static createDefault(owner: string): BankAccount {
+    return new BankAccount(owner, 100);
+  }
+}
+
+// Usage
+const acc = new BankAccount("Alice", 500);
+acc.deposit(200);
+console.log(acc.balance);  // 700 (uses getter)
+console.log(BankAccount.interestRate);  // 0.05
+
+// TypeScript property decorator (Python @property equivalent)
+// Built-in get/set in TypeScript classes as shown above
+
+// Data class equivalent (like @dataclass)
+interface Book {
+  title: string;
+  author: string;
+  readonly isbn: string;
+}
+
+// Or use a class with constructor shorthand
+class BookClass {
+  constructor(
+    public title: string,
+    public author: string,
+    public readonly isbn: string,
+    public year: number
+  ) {}
+}
+```
+
+### Python vs TypeScript OOP
+
+| Concept | Python | TypeScript |
+|---------|--------|------------|
+| Constructor | `__init__` | `constructor()` |
+| Instance reference | `self` (explicit) | `this` (implicit) |
+| Visibility | Convention `_`, `__` | `private`, `protected`, `public` |
+| Properties | `@property` decorator | `get`/`set` keywords |
+| Static | `@staticmethod` / `@classmethod` | `static` keyword |
+| Data class | `@dataclass` | `interface` or constructor shorthand |
+| Abstract | `ABC` + `@abstractmethod` | `abstract class` + `abstract` methods |
+
+### OOP Design Best Practices
+
+```python
+# 1. Favor composition over inheritance
+# Instead of: class Car(Engine, Wheels, Body)
+class Engine:
+    def start(self): ...
+    def stop(self): ...
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()  # composition
+        self._speed = 0
+
+    def start(self):
+        self.engine.start()
+        self._speed = 0
+
+# 2. Single Responsibility Principle
+# A class should have one reason to change
+class Invoice:
+    """Handles invoice data only."""
+
+class InvoicePrinter:
+    """Handles invoice formatting and printing."""
+
+class InvoiceRepository:
+    """Handles invoice persistence."""
+
+# 3. Encapsulate what varies
+class PaymentProcessor:
+    def process(self, amount: float, method: str):
+        if method == "credit_card":
+            self._process_credit(amount)
+        elif method == "paypal":
+            self._process_paypal(amount)
+        elif method == "crypto":
+            self._process_crypto(amount)
+
+    def _process_credit(self, amount): ...
+    def _process_paypal(self, amount): ...
+    def _process_crypto(self, amount): ...
+
+# 4. Use @dataclass for data containers
+from dataclasses import dataclass, field
+
+@dataclass
+class Address:
+    street: str
+    city: str
+    zip_code: str
+    country: str = "US"  # default
+
+@dataclass
+class Customer:
+    name: str
+    email: str
+    address: Address
+    orders: list = field(default_factory=list)
+    active: bool = True
+
+# 5. Define clear interfaces with abstract base classes
+from abc import ABC, abstractmethod
+
+class Repository(ABC):
+    @abstractmethod
+    def save(self, entity): ...
+    @abstractmethod
+    def find_by_id(self, id): ...
+    @abstractmethod
+    def delete(self, id): ...
+```
+
 ## Summary
 
 - Classes define blueprints; `__init__` initialises instances.
@@ -453,7 +614,7 @@ print(buddy.bark())
 - `@classmethod`: alternative constructors. `@staticmethod`: utility functions.
 - `@property`: computed attributes with getter/setter/deleter.
 - `__slots__`: memory optimisation; disallows dynamic attributes.
-- Name mangling (`__attr`): prevents subclass attribute collisions.
+- Name mangling (`__attr__`): prevents subclass attribute collisions.
 - `@dataclass`: auto-generates boilerplate for data-oriented classes.
 
 ## Exercises

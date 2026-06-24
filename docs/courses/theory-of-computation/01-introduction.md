@@ -583,6 +583,44 @@ The Theory of Computation provides the mathematical foundations for understandin
 
 5. **Countability arguments are your intuition.** When evaluating whether a problem might be solvable, ask: "Is the search space countable?" If the answer produces a diagonalization argument reminiscent of Cantor, you are likely facing an undecidable problem.
 
+### TypeScript: DFA Runner
+
+```typescript
+interface DFA {
+  states: Set<string>;
+  alphabet: Set<string>;
+  transition: Map<string, Map<string, string>>;
+  start: string;
+  accept: Set<string>;
+}
+
+function runDFA(dfa: DFA, input: string): boolean {
+  let state = dfa.start;
+  for (const symbol of input) {
+    if (!dfa.alphabet.has(symbol)) throw new Error(`Invalid symbol: ${symbol}`);
+    const next = dfa.transition.get(state)?.get(symbol);
+    if (!next) return false;
+    state = next;
+  }
+  return dfa.accept.has(state);
+}
+
+// Example: DFA for binary strings ending in "01"
+const dfa: DFA = {
+  states: new Set(["q0", "q1", "q2"]),
+  alphabet: new Set(["0", "1"]),
+  transition: new Map([
+    ["q0", new Map([["0", "q1"], ["1", "q0"]])],
+    ["q1", new Map([["0", "q1"], ["1", "q2"]])],
+    ["q2", new Map([["0", "q1"], ["1", "q0"]])],
+  ]),
+  start: "q0",
+  accept: new Set(["q2"]),
+};
+// console.log(runDFA(dfa, "101"));  // false
+// console.log(runDFA(dfa, "10101")); // true
+```
+
 ## Further Reading
 
 - **Sipser, Michael.** *Introduction to the Theory of Computation* (3rd ed.). Chapters 0–1 provide an excellent introduction to mathematical preliminaries and the Chomsky hierarchy.

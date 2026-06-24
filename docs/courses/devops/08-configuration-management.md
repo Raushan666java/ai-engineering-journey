@@ -267,6 +267,88 @@ Configuration management enables continuous compliance:
         enabled: yes
 ```
 
+### Ansible Modules for Containers and Orchestration
+
+Ansible extends into container management and orchestration:
+
+```yaml
+# Docker container management
+- name: Manage Docker containers
+  docker_container:
+    name: myapp
+    image: "myapp:{{ version }}"
+    state: started
+    restart_policy: always
+    ports:
+      - "3000:3000"
+    env:
+      NODE_ENV: "{{ env }}"
+    networks:
+      - name: appnet
+
+# Docker Compose management
+- name: Deploy with Docker Compose
+  community.docker.docker_compose:
+    project_src: /opt/app
+    files:
+      - docker-compose.prod.yml
+    state: present
+    restarted: yes
+```
+
+```yaml
+# Kubernetes management with Ansible
+- name: Create ConfigMap from env file
+  kubernetes.core.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: ConfigMap
+      metadata:
+        name: app-config
+        namespace: "{{ namespace }}"
+      data:
+        NODE_ENV: "{{ env }}"
+        LOG_LEVEL: "{{ log_level }}"
+
+- name: Rolling update deployment
+  kubernetes.core.k8s_rolling_update:
+    api_version: apps/v1
+    kind: Deployment
+    name: myapp
+    namespace: "{{ namespace }}"
+    wait: yes
+    wait_timeout: 300
+```
+
+### Ansible Performance Optimization
+
+Optimizing Ansible for large-scale deployments (500+ nodes):
+
+| Technique | Description | Impact |
+|-----------|-------------|--------|
+| **SSH pipelining** | Reduce SSH connections by pipelining module execution | 2-3x speedup |
+| **ControlPersist** | Reuse SSH connections across tasks | Significant for multi-task plays |
+| **Facts caching** | Cache gathered facts in Redis or JSON file | Avoids regathering on every run |
+| **Async polling** | Run long tasks asynchronously | Prevents timeout failures |
+| **Strategy plugins** | `free` strategy vs default `linear` | Free continues on failures |
+| **Mitogen** | Dramatically faster connection layer | Up to 7x speedup |
+
+```ini
+# ansible.cfg performance settings
+[ssh_connection]
+pipelining = True
+control_path = /tmp/ansible-%%h-%%r
+ssh_args = -o ControlMaster=auto -o ControlPersist=60s
+
+[defaults]
+gathering = smart
+fact_caching = jsonfile
+fact_caching_connection = /tmp/ansible_facts
+fact_caching_timeout = 3600
+strategy = free
+```
+
 ### Ansible in CI/CD
 
 ```yaml
@@ -528,6 +610,10 @@ console.log(detector.generateReport(report));
 2. Create an Ansible role for deploying a Node.js application with environment variables.
 3. Implement a configuration drift detection system using Ansible in check mode.
 4. Configure Ansible Vault to encrypt database credentials.
+
+### Application Problems (continued)
+5. Extend the `DriftDetector` class to support: scheduled daily drift scans that generate time-stamped reports, integration with a `Notifier` interface (Slack, email, webhook), and auto-remediation mode that applies the expected configuration when drift is detected (with a rollback plan).
+6. Using the `AnsiblePlaybookGenerator`, create a playbook generator that produces a complete Node.js deployment playbook including: system dependencies installation, application code sync, environment configuration via template, systemd service setup with health checks, and idempotent restart only on config changes.
 
 ### Challenge Problem
 1. Design a complete configuration management system for a 3-tier application (web, API, database) across 3 environments (dev, staging, prod). Include: Ansible roles for each tier (nginx, node-app, postgres), idempotent tasks for all configurations, Jinja2 templates for environment-specific settings, Ansible Vault for secrets (DB passwords, API keys), drift detection playbook that runs daily and alerts on non-compliant servers, CI/CD integration to run playbooks after infrastructure provisioning, and a compliance report showing the current state of all managed servers.

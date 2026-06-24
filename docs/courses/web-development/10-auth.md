@@ -310,7 +310,111 @@ router.delete(
 );
 ```
 
-## 10.6 Multi-Factor Authentication with TOTP
+## 10.6 API Key Authentication
+
+For machine-to-machine communication, API keys provide a simple authentication mechanism.
+
+```typescript
+import crypto from "crypto";
+
+interface ApiKey {
+  key: string;
+  name: string;
+  scopes: string[];
+  expiresAt: Date | null;
+  createdAt: Date;
+}
+
+// Generate a secure API key
+function generateApiKey(): { key: string; hash: string } {
+  const key = `tf_${crypto.randomBytes(32).toString("hex")}`;
+  const hash = crypto.createHash("sha256").update(key).digest("hex");
+  return { key, hash };
+}
+
+// API key authentication middleware
+async function authenticateApiKey(req: Request, res: Response, next: NextFunction) {
+  const apiKey = req.headers["x-api-key"] as string;
+  if (!apiKey) {
+    return res.status(401).json({ message: "API key required" });
+  }
+
+  const hash = crypto.createHash("sha256").update(apiKey).digest("hex");
+  const keyRecord = await prisma.apiKey.findUnique({ where: { hash } });
+
+  if (!keyRecord || (keyRecord.expiresAt && keyRecord.expiresAt < new Date())) {
+    return res.status(401).json({ message: "Invalid or expired API key" });
+  }
+
+  req.user = { id: keyRecord.userId, scopes: keyRecord.scopes };
+  next();
+}
+
+// Scope-based authorization
+function requireScope(...scopes: string[]) {
+  return (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
+    const hasScope = scopes.some((s) => req.user.scopes?.includes(s));
+    if (!hasScope) {
+      return res.status(403).json({ message: "Insufficient scope" });
+    }
+    next();
+  };
+}
+
+// Routes
+router.get("/api/orders", authenticateApiKey, requireScope("orders:read"), getOrders);
+router.post("/api/orders", authenticateApiKey, requireScope("orders:write"), createOrder);
+```
+
+## 10.7 Session Management Dashboard
+
+```typescript
+// List active sessions for a user
+router.get("/api/sessions", authenticate, async (req, res) => {
+  const sessions = await prisma.session.findMany({
+    where: { userId: req.user.userId },
+    select: {
+      id: true,
+      createdAt: true,
+      lastUsedAt: true,
+      ipAddress: true,
+      userAgent: true,
+    },
+    orderBy: { lastUsedAt: "desc" },
+  });
+
+  res.json({
+    data: sessions.map((s) => ({
+      ...s,
+      isCurrentSession: s.id === req.session.id,
+    })),
+  });
+});
+
+// Revoke a specific session
+router.delete("/api/sessions/:id", authenticate, async (req, res) => {
+  const session = await prisma.session.findFirst({
+    where: { id: req.params.id, userId: req.user.userId },
+  });
+
+  if (!session) {
+    return res.status(404).json({ message: "Session not found" });
+  }
+
+  await prisma.session.delete({ where: { id: req.params.id } });
+  res.json({ message: "Session revoked" });
+});
+
+// Revoke all sessions except current
+router.post("/api/sessions/revoke-all", authenticate, async (req, res) => {
+  await prisma.session.deleteMany({
+    where: { userId: req.user.userId, id: { not: req.session.id } },
+  });
+  res.json({ message: "All other sessions revoked" });
+});
+```
+
+## 10.8 Multi-Factor Authentication with TOTP
 
 ```typescript
 import { authenticator } from "otplib";
@@ -353,7 +457,68 @@ router.post("/mfa/verify", authenticate, async (req, res) => {
 > [!REMEMBER]
 > Authentication failures should return 401 Unauthorized. Authorization failures (insufficient permissions) should return 403 Forbidden. Never confuse these two status codes.
 
+### Session Management Best Practices
 
+```typescript
+// Session token rotation — re-issue after privilege elevation
+function rotateSession(req: Request, res: Response) {
+  const oldSid = req.sessionID;
+  req.session.regenerate((err) => {
+    if (err) return res.status(500).end();
+    req.session.userId = res.locals.userId;
+    req.session.role = res.locals.role;
+    sessionStore.destroy(oldSid);
+    res.json({ rotated: true });
+  });
+}
+
+// Session fingerprinting — detect hijacking via user-agent + IP mismatch
+function sessionFingerprint(req: Request): string {
+  const ua = req.headers["user-agent"] ?? "";
+  const ip = req.ip ?? "";
+  return crypto.createHash("sha256").update(`${ua}|${ip}`).digest("hex");
+}
+
+app.use((req, res, next) => {
+  if (req.session.fingerprint && req.session.fingerprint !== sessionFingerprint(req)) {
+    req.session.destroy(() => res.status(401).json({ error: "Session hijacked" }));
+    return;
+  }
+  req.session.fingerprint = sessionFingerprint(req);
+  next();
+});
+```
+
+### Passwordless Authentication with WebAuthn
+
+WebAuthn replaces passwords with public-key cryptography.
+
+```typescript
+// Registration (browser side)
+const credential = await navigator.credentials.create({
+  publicKey: {
+    challenge: new Uint8Array(challenge),
+    rp: { name: "TaskFlow", id: "taskflow.example.com" },
+    user: {
+      id: new Uint8Array(userId),
+      name: "alice@example.com",
+      displayName: "Alice Johnson",
+    },
+    pubKeyCredParams: [{ type: "public-key", alg: -7 }], // ES256
+  },
+});
+
+// Authentication (server side)
+const assertion = await navigator.credentials.get({
+  publicKey: {
+    challenge: new Uint8Array(challenge),
+    allowCredentials: credentialIds.map((id) => ({
+      type: "public-key",
+      id: new Uint8Array(id),
+    })),
+  },
+});
+```
 
 ## Concept Comparison Table
 
@@ -459,6 +624,17 @@ Authentication verifies identity while authorization controls access. JWTs provi
 2. Implement session invalidation on password change
 3. Add rate limiting per user based on their authentication tier
 
+4. Implement API key authentication with granular scopes (read, write, admin) for a public REST API.
+5. Build a session management dashboard that lists active sessions with device info and provides a "revoke all other sessions" button.
+
 ### Challenge Project
 
 Build a complete auth system with Google OAuth, MFA/TOTP, role-based permissions (Admin/Editor/Viewer), session management dashboard showing active sessions with revoke capability, and automatic lockout after failed login attempts.
+
+### Practical Takeaways
+
+1. **Never store plaintext passwords** — use bcrypt with 12+ salt rounds. Argon2id is even better if your platform supports it.
+2. **Short-lived access tokens + rotating refresh tokens** — keep access tokens at 15min, rotate refresh tokens on each use to detect theft.
+3. **Always check auth before authz** — authenticate the user first, then check permissions. Never skip either step.
+4. **Use SameSite Strict cookies** — prevents CSRF on modern browsers without needing token-based CSRF protection.
+5. **Log auth events** — failed logins, password changes, MFA enrollments, and session revocations should all be audited.

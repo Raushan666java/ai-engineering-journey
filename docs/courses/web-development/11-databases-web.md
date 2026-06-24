@@ -79,7 +79,54 @@ await db.collection("posts").insertOne({
 });
 ```
 
-## 11.2 Prisma ORM
+## 11.2 Prisma ORM Setup and Configuration
+
+```bash
+# Initialize Prisma in an existing project
+npm install @prisma/client
+npm install prisma --save-dev
+npx prisma init
+
+# This creates:
+# prisma/schema.prisma - Your data model
+# .env - Database connection string
+```
+
+```typescript
+// prisma/seed.ts - Database seeding for development
+import { PrismaClient } from "@prisma/client";
+import bcrypt from "bcryptjs";
+
+const prisma = new PrismaClient();
+
+async function main() {
+  // Create users with posts
+  const alice = await prisma.user.upsert({
+    where: { email: "alice@example.com" },
+    update: {},
+    create: {
+      email: "alice@example.com",
+      name: "Alice Johnson",
+      passwordHash: await bcrypt.hash("password123", 12),
+      posts: {
+        create: [
+          { title: "Getting Started with Prisma", published: true },
+          { title: "Advanced Database Patterns", published: true },
+          { title: "Draft: Upcoming Features", published: false },
+        ],
+      },
+    },
+  });
+
+  console.log("Seeded user:", alice.email);
+}
+
+main()
+  .catch((e) => { console.error(e); process.exit(1); })
+  .finally(() => prisma.$disconnect());
+```
+
+### CRUD with Prisma
 
 > **One-Sentence Takeaway:** Proper indexing dramatically improves query performance with minimal write overhead.
 
@@ -296,6 +343,182 @@ app.get("/api/posts", async (req, res) => {
 > Indexes speed up SELECT but slow down INSERT/UPDATE/DELETE. Only index columns that are actually used in WHERE, JOIN, or ORDER BY clauses.
 
 
+## 11.8 Transactions and Batch Operations
+
+Database transactions ensure atomicity — a group of operations either all succeed or all fail.
+
+```typescript
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+
+// Transaction with rollback on failure
+async function transferFunds(fromId: string, toId: string, amount: number) {
+  return prisma.$transaction(async (tx) => {
+    const fromAccount = await tx.account.findUniqueOrThrow({
+      where: { id: fromId },
+    });
+    if (fromAccount.balance < amount) {
+      throw new Error("Insufficient funds");
+    }
+
+    await tx.account.update({
+      where: { id: fromId },
+      data: { balance: { decrement: amount } },
+    });
+
+    await tx.account.update({
+      where: { id: toId },
+      data: { balance: { increment: amount } },
+    });
+
+    return { success: true };
+  });
+}
+
+// Batch create with skipDuplicates
+await prisma.user.createMany({
+  data: [
+    { email: "a@test.com", name: "Alice" },
+    { email: "b@test.com", name: "Bob" },
+    { email: "a@test.com", name: "Alice Dup" },
+  ],
+  skipDuplicates: true, // Skips conflicting records
+});
+```
+
+### Connection Pooling
+
+```typescript
+import { Pool } from "pg";
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  max: 20,                // Maximum connections in pool
+  idleTimeoutMillis: 30000, // Close idle connections after 30s
+  connectionTimeoutMillis: 5000, // Fail if can't connect in 5s
+});
+
+// Query using pool — automatically acquires and releases connections
+async function getUsers() {
+  const client = await pool.connect();
+  try {
+    const { rows } = await client.query("SELECT * FROM users");
+    return rows;
+  } finally {
+    client.release(); // Always release back to pool
+  }
+}
+```
+
+```mermaid
+graph LR
+    A[Client Request] --> B[Prisma Client]
+    B --> C{Connection Pool}
+    C --> D[(PostgreSQL)]
+    C --> E[(PostgreSQL)]
+    C --> F[(PostgreSQL)]
+    B --> G[Redis Cache]
+    G -.-> B
+    B --> H[Response]
+```
+
+### Prisma Middleware and Logging
+
+Prisma middleware intercepts query operations for logging, caching, or modification.
+
+```typescript
+import { PrismaClient } from "@prisma/client";
+
+const prisma = new PrismaClient();
+
+// Middleware: log all queries
+prisma.$use(async (params, next) => {
+  const before = Date.now();
+  const result = await next(params);
+  const after = Date.now();
+  console.log(`Query ${params.model}.${params.action} took ${after - before}ms`);
+  return result;
+});
+
+// Middleware: soft-delete filter
+prisma.$use(async (params, next) => {
+  if (params.model === "Post" && params.action === "findMany") {
+    if (!params.args) params.args = {};
+    if (!params.args.where) params.args.where = {};
+    params.args.where.deletedAt = null;
+  }
+  return next(params);
+});
+```
+
+### Database Migration Strategy
+
+```mermaid
+graph LR
+    A[Schema Change] --> B[Create Migration]
+    B --> C[Review SQL]
+    C --> D[Apply to Staging]
+    D --> E[Run Tests]
+    E -->|Pass| F[Apply to Production]
+    E -->|Fail| G[Rollback]
+    G --> H[Fix Migration]
+    H --> B
+    F --> I[Verify]
+    I -->|Issue| J[Rollback Migration]
+    J --> B
+```
+
+### Query Performance Analysis
+
+Use `EXPLAIN ANALYZE` to understand query execution plans.
+
+```sql
+-- Analyze a slow query
+EXPLAIN ANALYZE
+SELECT u.*, COUNT(p.id) as post_count
+FROM users u
+LEFT JOIN posts p ON p.author_id = u.id
+WHERE u.active = true
+  AND p.created_at > NOW() - INTERVAL '30 days'
+GROUP BY u.id
+ORDER BY post_count DESC;
+
+-- Look for: Sequential scans on large tables, missing indexes
+-- Expected: Index Scan using idx_users_active, Index Scan using idx_posts_author_created
+```
+
+### Read Replicas and Sharding
+
+For read-heavy workloads, offload queries to read replicas:
+
+```typescript
+const prisma = new PrismaClient({
+  datasources: {
+    db: {
+      url: process.env.READ_REPLICA_URL, // Read replica for queries
+    },
+  },
+});
+
+// Replica-aware configuration with separate clients
+const writeClient = new PrismaClient({
+  datasources: { db: { url: process.env.DATABASE_URL } },
+});
+
+const readClient = new PrismaClient({
+  datasources: { db: { url: process.env.READ_REPLICA_URL } },
+});
+
+// Route reads to replica, writes to primary
+export async function getPosts() {
+  return readClient.post.findMany(); // Read replica
+}
+
+export async function createPost(data: CreatePostInput) {
+  return writeClient.post.create({ data }); // Primary
+}
+```
 
 ## Concept Comparison Table
 
@@ -401,6 +624,20 @@ Databases are the persistence layer of web applications. Prisma ORM provides typ
 2. Implement a leaderboard feature using Redis sorted sets
 3. Create a database migration strategy with rollback support
 
+4. Implement a database transaction for transferring inventory between warehouse locations, ensuring stock consistency across multiple product tables.
+5. Write a Prisma middleware that logs all slow queries (execution time > 100ms) with their parameters and duration.
+
+6. Implement a database read-replica pattern where `GET` requests use a read replica and `POST/PUT/DELETE` requests use the primary database, with automatic fallback if the replica is unavailable.
+7. Create a migration rollback strategy with a script that can revert the last N migrations while preserving data integrity across all environments.
+
 ### Challenge Project
 
 Build a database layer for an e-commerce platform with products, categories, inventory, orders, and users. Include composite indexes for reporting queries, Redis caching for product listings, migration scripts for schema changes, and a query analysis tool that identifies slow queries.
+
+### Practical Takeaways
+
+1. **Always use parameterized queries** — never interpolate user input into SQL strings, even in internal tools.
+2. **Model first, then migrate** — define your Prisma schema completely before generating the first migration to minimize schema drift.
+3. **Index with intent** — add indexes only for actual query patterns, not speculatively. Use `EXPLAIN ANALYZE` to verify index usage.
+4. **Cache judiciously** — cache only data that is expensive to compute and frequently read. Set TTLs and invalidate on writes.
+5. **Batch in transactions** — wrap multi-row operations in `$transaction` to ensure atomicity and improve throughput.

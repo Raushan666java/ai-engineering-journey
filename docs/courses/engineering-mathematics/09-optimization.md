@@ -581,6 +581,27 @@ $$u^{k+1} = u^k + x^{k+1} - z^{k+1}$$
 
 where $S_\kappa(\cdot)$ is the soft-thresholding operator. ADMM decomposes the non-smooth $\ell_1$ penalty from the smooth least-squares term.
 
+### Mermaid: Optimization Algorithm Classification
+
+```mermaid
+flowchart TD
+    A[Optimization] --> B[Unconstrained]
+    A --> C[Constrained]
+    B --> D[Gradient-based]
+    B --> E[Derivative-free]
+    D --> F[Gradient Descent]
+    D --> G[Newton Method]
+    D --> H[Conjugate Gradient]
+    E --> I[Simulated Annealing]
+    E --> J[Genetic Algorithms]
+    C --> K[Linear Programming]
+    C --> L[NLP]
+    K --> M[Simplex Method]
+    K --> N[Interior Point]
+    L --> O[KKT Conditions]
+    L --> P[Penalty Methods]
+```
+
 ## Notation Reference
 
 | Symbol | Meaning |

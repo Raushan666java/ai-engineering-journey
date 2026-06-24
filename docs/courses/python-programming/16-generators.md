@@ -433,6 +433,174 @@ list(islice(range(100), 5))
 - chain
 
 
+## TypeScript Parallel
+
+TypeScript uses generator functions with `function*` and `yield`:
+
+```typescript
+// TypeScript generator function
+function* fibonacci(): Generator<number> {
+  let a = 0, b = 1;
+  while (true) {
+    yield a;
+    [a, b] = [b, a + b];
+  }
+}
+
+// Consume with next()
+const fibGen = fibonacci();
+console.log(fibGen.next().value);  // 0
+console.log(fibGen.next().value);  // 1
+console.log(fibGen.next().value);  // 1
+console.log(fibGen.next().value);  // 2
+
+// Helper to take first N values
+function take<T>(n: number, gen: Generator<T>): T[] {
+  const result: T[] = [];
+  for (let i = 0; i < n; i++) {
+    const next = gen.next();
+    if (next.done) break;
+    result.push(next.value);
+  }
+  return result;
+}
+console.log(take(10, fibonacci()));  // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+
+// yield* delegation (equivalent to Python yield from)
+function* range(start: number, end: number): Generator<number> {
+  for (let i = start; i <= end; i++) yield i;
+}
+
+function* flattened(): Generator<number> {
+  yield* range(1, 3);
+  yield* range(10, 12);
+  yield* range(100, 102);
+}
+console.log(take(10, flattened()));  // [1, 2, 3, 10, 11, 12, 100, 101, 102]
+
+// Iterable protocol more common in TS than generators
+class RangeIterable implements Iterable<number> {
+  constructor(private start: number, private end: number) {}
+
+  [Symbol.iterator](): Iterator<number> {
+    let current = this.start;
+    return {
+      next: (): IteratorResult<number> => {
+        if (current > this.end) return { done: true, value: undefined as any };
+        return { done: false, value: current++ };
+      }
+    };
+  }
+}
+
+for (const n of new RangeIterable(1, 5)) console.log(n);  // 1, 2, 3, 4, 5
+```
+
+### Python vs TypeScript Generators
+
+| Concept | Python | TypeScript |
+|---------|--------|------------|
+| Syntax | `def gen(): yield x` | `function* gen(): yield x` |
+| Delegation | `yield from subgen` | `yield* subgen()` |
+| Send values | `gen.send(value)` | `gen.next(value)` |
+| Throw | `gen.throw(Exception)` | `gen.throw(error)` |
+| Expression | `(x for x in items)` | Not available |
+| Common utility | `itertools.chain`, `islice` | Manual `take()` function |
+| Lazy by default | `range()`, `map()`, `filter()` | `.map()`/`.filter()` on arrays (eager) |
+
+### Practical Generator Applications
+
+Generators shine in real-world scenarios where memory efficiency and lazy evaluation matter:
+
+```python
+# 1. Streaming log file reader (memory-safe for GB-sized files)
+def follow_log(filepath: str):
+    """Yield new lines as they're written to a log file."""
+    with open(filepath, "r") as f:
+        f.seek(0, 2)  # Go to end of file
+        while True:
+            line = f.readline()
+            if line:
+                yield line.strip()
+            else:
+                import time
+                time.sleep(0.1)
+
+# 2. Infinite paginated API consumer
+def fetch_all_pages(api_base: str, page_size: int = 100):
+    """Yield items from a paginated API, one by one."""
+    page = 1
+    while True:
+        import requests
+        response = requests.get(
+            f"{api_base}?page={page}&size={page_size}"
+        )
+        data = response.json()
+        if not data["items"]:
+            break
+        for item in data["items"]:
+            yield item
+        page += 1
+
+# 3. Sliding window over a sequence
+def sliding_window(iterable, n: int):
+    """Yield sliding windows of size n over an iterable."""
+    from collections import deque
+    it = iter(iterable)
+    window = deque((next(it) for _ in range(n)), maxlen=n)
+    yield tuple(window)
+    for item in it:
+        window.append(item)
+        yield tuple(window)
+
+list(sliding_window([1, 2, 3, 4, 5], 3))
+# [(1, 2, 3), (2, 3, 4), (3, 4, 5)]
+
+# 4. Lazy CSV reader (parse without loading all into memory)
+def read_csv_lazy(filepath: str):
+    """Yield rows from a CSV file as dicts, one at a time."""
+    import csv
+    with open(filepath, newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            yield row
+
+# 5. Generator-based state machine
+def state_machine():
+    """Yield state transitions based on received inputs."""
+    state = "idle"
+    while True:
+        event = yield state
+        if state == "idle" and event == "start":
+            state = "running"
+        elif state == "running" and event == "pause":
+            state = "paused"
+        elif state == "running" and event == "stop":
+            state = "stopped"
+        elif state == "paused" and event == "resume":
+            state = "running"
+        elif state == "paused" and event == "stop":
+            state = "stopped"
+        elif state == "stopped" and event == "reset":
+            state = "idle"
+
+sm = state_machine()
+next(sm)                      # Initialize
+print(sm.send("start"))       # running
+print(sm.send("pause"))       # paused
+print(sm.send("resume"))      # running
+print(sm.send("stop"))        # stopped
+```
+
+### When NOT to Use Generators
+
+| Situation | Use Instead | Why |
+|-----------|-------------|-----|
+| Need random access by index | List or tuple | Generators don't support indexing |
+| Multiple passes over data | List | Generators are single-use |
+| Small fixed dataset | List comprehension | Overhead of generator protocol |
+| Parallel processing | `concurrent.futures` | Generators are single-threaded |
+
 ## Summary
 
 - Generators use `yield` to produce sequences lazily.

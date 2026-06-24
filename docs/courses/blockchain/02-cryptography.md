@@ -452,6 +452,109 @@ function verifySignature(
 **B) They support signature aggregation.** Schnorr signatures allow multiple signatures from different participants to be combined into a single signature, reducing transaction size and improving privacy. This was a key feature of the Bitcoin Taproot upgrade.
 </details>
 
+### TypeScript: Digital Signature with ECDSA
+
+```typescript
+import { createSign, createVerify, generateKeyPairSync } from "node:crypto";
+
+class Wallet {
+  public publicKey: string;
+  private privateKey: string;
+
+  constructor() {
+    const { publicKey, privateKey } = generateKeyPairSync("ec", {
+      namedCurve: "prime256v1",
+      publicKeyEncoding: { type: "spki", format: "pem" },
+      privateKeyEncoding: { type: "pkcs8", format: "pem" },
+    });
+    this.publicKey = publicKey;
+    this.privateKey = privateKey;
+  }
+
+  sign(data: string): string {
+    const sign = createSign("sha256");
+    sign.update(data);
+    return sign.sign(this.privateKey, "hex");
+  }
+
+  static verify(data: string, signature: string, publicKey: string): boolean {
+    const verify = createVerify("sha256");
+    verify.update(data);
+    return verify.verify(publicKey, signature, "hex");
+  }
+}
+
+interface Transaction {
+  from: string;
+  to: string;
+  amount: number;
+  signature: string;
+}
+
+function createTransaction(from: Wallet, toPubKey: string, amount: number): Transaction {
+  const data = `${from.publicKey}${toPubKey}${amount}`;
+  return { from: from.publicKey, to: toPubKey, amount, signature: from.sign(data) };
+}
+
+function verifyTransaction(tx: Transaction): boolean {
+  const data = `${tx.from}${tx.to}${tx.amount}`;
+  return Wallet.verify(data, tx.signature, tx.from);
+}
+
+// const alice = new Wallet(), bob = new Wallet();
+// const tx = createTransaction(alice, bob.publicKey, 10);
+// console.log(verifyTransaction(tx)); // true
+```
+
+### Merkle Tree Verification Process
+
+A Merkle proof allows a light client to verify that a transaction belongs in a block by reconstructing the Merkle root from the leaf upward using only ~log₂(n) sibling hashes instead of downloading all transactions.
+
+```mermaid
+flowchart TB
+    subgraph Proof["Proof Data"]
+        L["H3=H(Tx3)"]; S1["H4"]; S2["H12"]; MR["Root"]
+    end
+    subgraph Verify["Verification"]
+        C1["H34=H(H3+H4)"]; C2["Root'=H(H12+H34)"]; C3["Root'==Root?"]
+    end
+    subgraph Result["Result"]
+        V1["✓ Confirmed"]; V2["✗ Rejected"]
+    end
+    L --> C1
+    S1 --> C1
+    C1 --> C2
+    S2 --> C2
+    C2 --> C3
+    MR --> C3
+    C3 -->|"Yes"| V1
+    C3 -->|"No"| V2
+```
+
+### Digital Signature Sign and Verify Flow
+
+Elliptic curve digital signatures bind a signer's public key to a message. The private key produces the signature; the public key verifies it — without the private key ever being transmitted.
+
+```mermaid
+flowchart LR
+    subgraph Signer["Signer (Alice)"]
+        direction TB
+        A1["Message M"] --> A2["Hash h=H(M)"] --> A3["Pick nonce k"]
+        A3 --> A4["R=k×G"] --> A5["s=k⁻¹(h+r·sk)"] --> A6["Sig (r,s)"]
+    end
+    subgraph Verifier["Verifier (Bob)"]
+        direction TB
+        B1["Message M"] --> B2["Hash h=H(M)"] --> B3["w=s⁻¹"]
+        B3 --> B4["u₁=h·w"] --> B5["u₂=r·w"]
+        B5 --> B6["P=u₁·G+u₂·PK"] --> B7["Accept P.x≡r?"]
+    end
+    AliceSK["Private Key"] --> A5
+    AlicePK["Public Key"] --> B6
+    Signer -->|"(M,r,s)"| Verifier
+```
+
+This flow ensures the private key never leaves the signer's device, yet any network participant can independently verify the signature without trusting a third party.
+
 ## Summary
 
 - Cryptographic hash functions are the "glue" that keeps the blockchain immutable.
@@ -494,3 +597,5 @@ function verifySignature(
 
 1. Research the "Short Signature" problem and explain why Bitcoin uses SECP256K1 specifically for its elliptic curve cryptography.
 2. Analyze the computational overhead of verifying a BLS signature aggregate from 10,000 Ethereum validators versus verifying each signature individually. Why does this matter for the Ethereum beacon chain?
+
+BLS aggregation reduces 10,000 individual signature verifications (10,000 pairings) to a single aggregated verification (3 pairings + 1 exponentiation), which is essential for beacon chain scalability.

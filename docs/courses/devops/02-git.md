@@ -230,6 +230,103 @@ Incoming change in feature
 4. Enable `rerere` (reuse recorded resolution): `git config --global rerere.enabled true`
 5. For large conflicts, break resolution into smaller chunks
 
+### Git Large File Storage (LFS)
+
+Git LFS replaces large files (binaries, datasets, assets) with text pointers in the repository while storing the actual content on a remote server:
+
+```mermaid
+flowchart LR
+    subgraph "Git Repository"
+        P1[pointer: .png<br/>version=<oid>]
+        P2[pointer: .zip<br/>version=<oid>]
+    end
+    subgraph "LFS Server"
+        F1[actual-file.png<br/>1.2 GB]
+        F2[actual-file.zip<br/>500 MB]
+    end
+    P1 -.-> F1
+    P2 -.-> F2
+```
+
+**Setup:**
+```text
+git lfs install
+git lfs track "*.psd" "*.zip" "*.mp4"
+git add .gitattributes
+git commit -m "chore: configure Git LFS for binary files"
+```
+
+**When to use LFS:**
+- Binary assets (design files, audio, video)
+- Large datasets or model weights
+- Package archives or SDK distributions
+- Game assets or 3D models
+
+**When NOT to use LFS:**
+- Frequently changing binaries (LFS pulls all versions on clone)
+- Very frequent writes (LFS has per-bandwidth costs on most hosts)
+- Small files that compress well (Git handles these fine)
+
+### Git Submodules and Subtrees
+
+Managing dependencies across repositories:
+
+| Feature | Submodules | Subtrees |
+|---------|------------|----------|
+| Reference | Pointer to external repo commit | Copy of external repo files |
+| History | External history stays separate | History merged into parent |
+| Changes | Easy to pull updates | Harder to pull updates |
+| Local edits | Read-only by default | Full write access |
+| Clone | Must init/update submodules | Included in clone |
+
+```text
+# Submodule workflow
+git submodule add https://github.com/example/lib.git lib/
+git submodule update --init --recursive
+cd lib && git checkout v2.0.0
+
+# Subtree workflow
+git subtree add --prefix=lib/ https://github.com/example/lib.git main --squash
+git subtree pull --prefix=lib/ https://github.com/example/lib.git main --squash
+git subtree push --prefix=lib/ https://github.com/example/lib.git main
+```
+
+**Decision guide:**
+- Use **submodules** for consuming external libraries that change infrequently
+- Use **subtrees** for vendoring dependencies when you need to modify them
+
+### Squash Merge vs Rebase Merge vs Regular Merge
+
+**Squash merge:** Combines all feature branch commits into one commit on main. Clean history but loses granularity.
+
+```mermaid
+flowchart LR
+    subgraph "Before Merge"
+        A1[c1] --> A2[c2]
+        A2 --> A3[c3]
+        A2 --> F1[f1]
+        F1 --> F2[f2]
+        F2 --> F3[f3]
+    end
+    subgraph "After Squash Merge"
+        A1 --> A2
+        A2 --> A3
+        A3 --> S[f1+f2+f3<br/>squashed]
+    end
+```
+
+**Rebase merge:** Rebases feature commits onto main, then fast-forwards. Linear history, each commit preserved with new hashes.
+
+**Regular (3-way) merge:** Creates a merge commit with two parents. Preserves exact commit history and topology.
+
+| Strategy | History | Traceability | Complexity |
+|----------|---------|-------------|------------|
+| Squash merge | Linear, clean | Loses per-commit context | Easiest |
+| Rebase merge | Linear, detailed | Preserves commits (new hashes) | Medium |
+| Regular merge | Non-linear, complete | Preserves everything | Cleanest topology |
+
+**Recommendation:** Squash merge feature branches, rebase merge short-lived branches, regular merge long-running release branches.
+
 ### DevOps-Specific Git Patterns
 
 **Semantic commit messages:**
@@ -517,6 +614,8 @@ for (const msg of testMessages) {
 2. Simulate a merge conflict resolution scenario with two branches diverging on the same file.
 3. Design a branching strategy for a service that needs to support v1, v2, and v3 simultaneously while deploying daily.
 4. Write a script that uses `git bisect` to find a bug introduced in a range of commits.
+5. Extend the `GitRepository` class to support: interactive rebase simulation (squash the last 3 commits into one), cherry-pick (apply a specific commit to current branch), and git blame (show which commit last modified each line of a file).
+6. Implement a `GitLFSSimulator` class that: tracks file patterns that should use LFS, stores a pointer file for LFS-tracked files while keeping actual content on a simulated remote, and reports storage savings (sum of actual file sizes vs pointer file sizes). Test with .psd (50MB), .zip (200MB), .mp4 (500MB), and .ts (1MB) files.
 
 ### Challenge Problem
 1. Build a complete Git workflow automation system that: enforces conventional commits via pre-commit hook, automatically generates a changelog from commit messages, runs CI/CD via post-receive hook, creates release tags with annotated messages, and prevents force-push to `main` via server-side hooks. Implement the system as a set of scripts and configuration files.

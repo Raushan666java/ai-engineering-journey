@@ -524,6 +524,33 @@ function pdaToCFG(
 **B)** The PDA must nondeterministically guess the midpoint — a DPDA cannot.
 </details>
 
+### TypeScript: PDA Simulator
+
+```typescript
+interface PDAConfig {
+  states: Set<string>;
+  inputAlphabet: Set<string>;
+  stackAlphabet: Set<string>;
+  transition: Map<string, Map<string, Array<{ to: string; push: string[] }>>>;
+  start: string;
+  accept: Set<string>;
+}
+
+function runPDA(pda: PDAConfig, input: string): boolean {
+  const stack: string[] = ["Z0"];
+  let state = pda.start;
+  for (const symbol of input) {
+    const trans = pda.transition.get(state)?.get(symbol) ?? [];
+    if (trans.length === 0) return false;
+    const { to, push } = trans[0];
+    state = to;
+    stack.pop();
+    for (const s of [...push].reverse()) if (s !== "ε") stack.push(s);
+  }
+  return pda.accept.has(state);
+}
+```
+
 ## Summary
 
 - PDA = NFA + stack (LIFO memory).

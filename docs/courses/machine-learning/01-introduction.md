@@ -209,6 +209,47 @@ A typical ML project follows a structured workflow with feedback loops:
 - Retrain on fresh data periodically
 - Roll back if metrics degrade
 
+### TypeScript: ML Pipeline
+
+```typescript
+interface Dataset<T, U> { features: T[]; labels: U[]; }
+
+abstract class MLModel<T, U> {
+  abstract train(data: Dataset<T, U>): void;
+  abstract predict(input: T): U;
+  evaluate(test: Dataset<T, U>): { accuracy: number } {
+    let correct = 0;
+    for (let i = 0; i < test.features.length; i++)
+      if (this.predict(test.features[i]) === test.labels[i]) correct++;
+    return { accuracy: correct / test.features.length };
+  }
+}
+
+class KNN extends MLModel<number[], number> {
+  private data: Dataset<number[], number> = { features: [], labels: [] };
+  constructor(private k = 3) { super(); }
+  train(data: Dataset<number[], number>): void { this.data = data; }
+  predict(input: number[]): number {
+    const dists = this.data.features
+      .map((f, i) => ({ d: Math.sqrt(f.reduce((s, v, j) => s + (v - input[j]) ** 2, 0)), l: this.data.labels[i] }))
+      .sort((a, b) => a.d - b.d);
+    const votes = new Map<number, number>();
+    for (let i = 0; i < this.k; i++) votes.set(dists[i].l, (votes.get(dists[i].l) ?? 0) + 1);
+    return [...votes.entries()].sort((a, b) => b[1] - a[1])[0][0];
+  }
+}
+
+function trainTestSplit<T, U>(data: Dataset<T, U>, ratio = 0.2): { train: Dataset<T, U>; test: Dataset<T, U> } {
+  const idx = Array.from({ length: data.features.length }, (_, i) => i);
+  for (let i = idx.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [idx[i], idx[j]] = [idx[j], idx[i]]; }
+  const split = Math.floor(idx.length * (1 - ratio));
+  return {
+    train: { features: idx.slice(0, split).map(i => data.features[i]), labels: idx.slice(0, split).map(i => data.labels[i]) },
+    test: { features: idx.slice(split).map(i => data.features[i]), labels: idx.slice(split).map(i => data.labels[i]) },
+  };
+}
+```
+
 ```mermaid
 flowchart TD
     subgraph "Phase 1: Problem"
@@ -458,6 +499,196 @@ console.log(evaluateLearning(housingPrice, neuralHypothesis));
 
 <details><summary>Answer</summary>**C)** Data preparation (cleaning, transformation, feature engineering) commonly accounts for 60-80% of project time.
 </details>
+
+---
+
+### TypeScript: Model Evaluation Metrics
+
+```typescript
+/**
+ * Comprehensive model evaluation metrics implementation
+ */
+interface ClassificationMetrics {
+    accuracy: number;
+    precision: number;
+    recall: number;
+    f1Score: number;
+    specificity: number;
+    mcc: number;
+}
+
+class ConfusionMatrix {
+    constructor(
+        public tp: number,
+        public fp: number,
+        public tn: number,
+        public fn: number
+    ) {}
+
+    accuracy(): number {
+        const total = this.tp + this.tn + this.fp + this.fn;
+        return total === 0 ? 0 : (this.tp + this.tn) / total;
+    }
+
+    precision(): number {
+        return this.tp + this.fp === 0 ? 0 : this.tp / (this.tp + this.fp);
+    }
+
+    recall(): number {
+        return this.tp + this.fn === 0 ? 0 : this.tp / (this.tp + this.fn);
+    }
+
+    f1Score(): number {
+        const p = this.precision();
+        const r = this.recall();
+        return p + r === 0 ? 0 : 2 * (p * r) / (p + r);
+    }
+
+    specificity(): number {
+        return this.tn + this.fp === 0 ? 0 : this.tn / (this.tn + this.fp);
+    }
+
+    mcc(): number {
+        const num = this.tp * this.tn - this.fp * this.fn;
+        const den = Math.sqrt(
+            (this.tp + this.fp) * (this.tp + this.fn) *
+            (this.tn + this.fp) * (this.tn + this.fn)
+        );
+        return den === 0 ? 0 : num / den;
+    }
+}
+
+function binaryConfusionMatrix(
+    actual: number[],
+    predicted: number[]
+): ConfusionMatrix {
+    let tp = 0, fp = 0, tn = 0, fn = 0;
+    for (let i = 0; i < actual.length; i++) {
+        if (predicted[i] === 1 && actual[i] === 1) tp++;
+        else if (predicted[i] === 1 && actual[i] === 0) fp++;
+        else if (predicted[i] === 0 && actual[i] === 0) tn++;
+        else if (predicted[i] === 0 && actual[i] === 1) fn++;
+    }
+    return new ConfusionMatrix(tp, fp, tn, fn);
+}
+
+function multiclassReport(
+    actual: number[],
+    predicted: number[],
+    numClasses: number
+): Map<number, ClassificationMetrics> {
+    const report = new Map<number, ClassificationMetrics>();
+    for (let c = 0; c < numClasses; c++) {
+        const ba = actual.map(a => a === c ? 1 : 0);
+        const bp = predicted.map(p => p === c ? 1 : 0);
+        const cm = binaryConfusionMatrix(ba, bp);
+        report.set(c, {
+            accuracy: cm.accuracy(),
+            precision: cm.precision(),
+            recall: cm.recall(),
+            f1Score: cm.f1Score(),
+            specificity: cm.specificity(),
+            mcc: cm.mcc()
+        });
+    }
+    return report;
+}
+
+function kFoldCrossValidation(
+    modelFactory: new () => MLModel<number[], number>,
+    data: Dataset<number[], number>,
+    k: number = 5
+): { folds: ConfusionMatrix[]; mean: ClassificationMetrics; std: ClassificationMetrics } {
+    const indices = Array.from({ length: data.features.length }, (_, i) => i)
+        .sort(() => Math.random() - 0.5);
+    const foldSize = Math.floor(indices.length / k);
+    const folds: ConfusionMatrix[] = [];
+
+    for (let i = 0; i < k; i++) {
+        const testSet = new Set(indices.slice(i * foldSize, (i + 1) * foldSize));
+        const train: Dataset<number[], number> = { features: [], labels: [] };
+        const test: Dataset<number[], number> = { features: [], labels: [] };
+
+        for (let j = 0; j < data.features.length; j++) {
+            if (testSet.has(j)) {
+                test.features.push(data.features[j]);
+                test.labels.push(data.labels[j]);
+            } else {
+                train.features.push(data.features[j]);
+                train.labels.push(data.labels[j]);
+            }
+        }
+
+        const model = new modelFactory();
+        model.train(train);
+        const predicted = test.features.map(f => model.predict(f));
+        folds.push(binaryConfusionMatrix(test.labels, predicted));
+    }
+
+    const allMetrics = folds.map(f => ({
+        accuracy: f.accuracy(), precision: f.precision(),
+        recall: f.recall(), f1Score: f.f1Score(),
+        specificity: f.specificity(), mcc: f.mcc()
+    }));
+
+    const avg = (vals: number[]) =>
+        vals.reduce((s, v) => s + v, 0) / vals.length;
+    const stdDev = (vals: number[], m: number) =>
+        Math.sqrt(vals.reduce((s, v) => s + (v - m) ** 2, 0) / vals.length);
+
+    const mean: ClassificationMetrics = {
+        accuracy: avg(allMetrics.map(m => m.accuracy)),
+        precision: avg(allMetrics.map(m => m.precision)),
+        recall: avg(allMetrics.map(m => m.recall)),
+        f1Score: avg(allMetrics.map(m => m.f1Score)),
+        specificity: avg(allMetrics.map(m => m.specificity)),
+        mcc: avg(allMetrics.map(m => m.mcc)),
+    };
+
+    const std: ClassificationMetrics = {
+        accuracy: stdDev(allMetrics.map(m => m.accuracy), mean.accuracy),
+        precision: stdDev(allMetrics.map(m => m.precision), mean.precision),
+        recall: stdDev(allMetrics.map(m => m.recall), mean.recall),
+        f1Score: stdDev(allMetrics.map(m => m.f1Score), mean.f1Score),
+        specificity: stdDev(allMetrics.map(m => m.specificity), mean.specificity),
+        mcc: stdDev(allMetrics.map(m => m.mcc), mean.mcc),
+    };
+
+    return { folds, mean, std };
+}
+
+function standardize(features: number[][]): number[][] {
+    const n = features.length;
+    if (n === 0) return features;
+    const dim = features[0].length;
+    const means = new Array(dim).fill(0);
+    const stds = new Array(dim).fill(0);
+
+    for (let j = 0; j < dim; j++) {
+        for (let i = 0; i < n; i++) means[j] += features[i][j];
+        means[j] /= n;
+    }
+
+    for (let j = 0; j < dim; j++) {
+        for (let i = 0; i < n; i++) stds[j] += (features[i][j] - means[j]) ** 2;
+        stds[j] = Math.sqrt(stds[j] / n);
+    }
+
+    return features.map(row =>
+        row.map((val, j) => stds[j] === 0 ? 0 : (val - means[j]) / stds[j])
+    );
+}
+
+// Example usage
+const sampleData: Dataset<number[], number> = {
+    features: [[1, 2], [2, 3], [3, 4], [4, 5], [5, 6], [6, 7], [7, 8], [8, 9], [9, 10], [10, 11]],
+    labels: [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+};
+const scaled = standardize(sampleData.features);
+const cvResult = kFoldCrossValidation(KNN, { features: scaled, labels: sampleData.labels }, 5);
+console.log(`Mean F1: ${cvResult.mean.f1Score.toFixed(3)} ± ${cvResult.std.f1Score.toFixed(3)}`);
+console.log(`Mean Accuracy: ${cvResult.mean.accuracy.toFixed(3)} ± ${cvResult.std.accuracy.toFixed(3)}`);
+```
 
 ---
 

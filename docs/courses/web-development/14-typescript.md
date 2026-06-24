@@ -51,7 +51,46 @@ graph TD
 - Write type-safe React components and API routes
 - Configure TypeScript for strict mode
 
-## 14.1 Basic Types
+## 14.1 Setting Up TypeScript
+
+```bash
+# Initialize TypeScript in a project
+npm install typescript --save-dev
+npx tsc --init
+
+# Key tsconfig.json options for strict mode
+```
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "noUncheckedIndexedAccess": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
+```
+
+```typescript
+// Compile and run
+// npx tsc --noEmit    # Type-check only
+// npx tsc             # Compile to JavaScript
+// npx tsx src/index.ts # Run directly (tsx = TypeScript Execute)
+```
+
+## 14.2 Basic Types
 
 > **One-Sentence Takeaway:** Utility types like `Partial`, `Pick`, and `Omit` derive new types from existing ones without duplication.
 
@@ -298,7 +337,126 @@ function useLocalStorage<T>(key: string, initial: T): [T, (value: T) => void] {
 }
 ```
 
-## 14.7 TypeScript with Express
+## 14.7 Conditional Types and Template Literal Types
+
+```typescript
+// Conditional types select a type based on a condition
+type IsString<T> = T extends string ? "yes" : "no";
+type A = IsString<string>;  // "yes"
+type B = IsString<number>;  // "no"
+
+// Filter types from a union
+type ExtractStrings<T> = T extends string ? T : never;
+type StringsOnly = ExtractStrings<string | number | boolean>; // string
+
+// Infer return type
+type Unwrap<T> = T extends Promise<infer U> ? U : T;
+type Result1 = Unwrap<Promise<string>>; // string
+type Result2 = Unwrap<number>; // number
+
+// Template literal types (TS 4.1+)
+type EventName = `on${Capitalize<string>}`;
+type ClickEvent = `onClick`; // Valid
+
+type HttpMethod = "GET" | "POST" | "PUT" | "DELETE";
+type ApiEndpoint = `/api/${string}`;
+type FullRoute = `${HttpMethod} ${ApiEndpoint}`;
+// "GET /api/users" | "POST /api/users" | ...
+
+// Mapping with template literals
+type CSSProperty = "margin" | "padding";
+type CSSDirection = "top" | "right" | "bottom" | "left";
+type CSSKey = `${CSSProperty}-${CSSDirection}`;
+// "margin-top" | "margin-right" | "margin-bottom" | "margin-left" | ...
+
+// Parsing URL params
+type ExtractParam<S extends string> =
+  S extends `${string}[${infer Param}]${string}` ? Param : never;
+type Param = ExtractParam<"/api/users/[userId]">; // "userId"
+
+// Mapped types with key remapping
+type Getters<T> = {
+  [K in keyof T as `get${Capitalize<string & K>}`]: () => T[K];
+};
+type UserGetters = Getters<{ name: string; age: number }>;
+// { getName: () => string; getAge: () => number }
+```
+
+### Branded Types and Nominal Typing
+
+TypeScript uses structural typing, but branded types simulate nominal typing for type safety.
+
+```typescript
+// Branded type pattern
+type Brand<K, T> = K & { __brand: T };
+
+type UserId = Brand<string, "UserId">;
+type PostId = Brand<string, "PostId">;
+type Email = Brand<string, "Email">;
+
+function getUser(id: UserId) {
+  return prisma.user.findUnique({ where: { id } });
+}
+
+function getPost(id: PostId) {
+  return prisma.post.findUnique({ where: { id } });
+}
+
+// TypeScript error: Argument of type 'string' is not assignable to parameter of type 'UserId'
+const id: string = "abc123";
+// getUser(id); // Error!
+
+// Must create branded type explicitly
+const userId = "abc123" as UserId;
+getUser(userId); // OK
+
+// Flavoring (weak brand) — only structural check, no runtime cost
+type Flavor<T, F> = T & { __flavor?: F };
+type Meters = Flavor<number, "meters">;
+type Seconds = Flavor<number, "seconds">;
+
+function travel(distance: Meters, time: Seconds): Meters {
+  return (distance / (time as number)) as Meters;
+}
+
+travel(100 as Meters, 9.58 as Seconds);
+```
+
+### satisfies Operator Deep Dive
+
+The `satisfies` operator (TS 4.9+) checks type compatibility without altering inference.
+
+```typescript
+// Without satisfies — type widening loses literal info
+const palette1: Record<string, string | string[]> = {
+  red: ["255", "0", "0"],
+  green: "#00ff00",
+};
+palette1.red.map(Number); // Error: string | string[] may not have .map
+
+// With satisfies — checks type but keeps narrow inference
+const palette2 = {
+  red: ["255", "0", "0"],
+  green: "#00ff00",
+} satisfies Record<string, string | string[]>;
+
+palette2.red.map(Number); // OK — inferred as string[]
+palette2.green.toUpperCase(); // OK — inferred as string
+
+// Useful for connecting objects to types without losing precision
+type Color = "red" | "green" | "blue";
+type ColorMap = Record<Color, { hex: string; rgb: [number, number, number] }>;
+
+const colors = {
+  red: { hex: "#ff0000", rgb: [255, 0, 0] as const },
+  green: { hex: "#00ff00", rgb: [0, 255, 0] as const },
+  blue: { hex: "#0000ff", rgb: [0, 0, 255] as const },
+} satisfies ColorMap;
+
+colors.red.rgb; // Inferred as readonly [255, 0, 0], not number[]
+```
+
+## 14.9 TypeScript with Express
 
 ```typescript
 import express, { Request, Response, NextFunction, RequestHandler } from "express";
@@ -456,6 +614,20 @@ TypeScript adds static type checking to JavaScript, catching errors at compile t
 2. Create a generic API client with typed responses
 3. Build a type-safe event emitter using generics
 
+4. Create a type-safe event emitter using generics where each event name maps to its payload type: `emit("userLogin", { userId: string })`.
+5. Build a conditional type that extracts the resolved value type from a nested `Promise` type: `DeepUnwrap<Promise<Promise<string>>>` should produce `string`.
+
+6. Create a branded type system for a banking app with `AccountId`, `TransactionId`, and `Currency` branded types. Write functions that accept only the correct branded types at compile time.
+7. Implement a `satisfies`-based configuration validator that checks a config object against a `Record<string, string | number | boolean>` type while preserving the literal types of each property for autocomplete.
+
 ### Challenge Project
 
 Build a type-safe ORM-like query builder using TypeScript generics, template literal types, and mapped types. Support typed `where` clauses, `select` projections, `join` inference, and return types that match the query structure.
+
+### Practical Takeaways
+
+1. **Enable `strict: true`** — it activates strictNullChecks, noImplicitAny, and other critical checks in one flag.
+2. **Prefer `interface` for public APIs** — interfaces support declaration merging and extension, making them ideal for library consumers.
+3. **Use `unknown` over `any`** — `unknown` forces type narrowing before use, preventing runtime errors. Reserve `any` for migration scenarios only.
+4. **Leverage `satisfies`** — the `satisfies` operator (TS 4.9+) checks type compatibility without changing the inferred type.
+5. **Compose utility types** — chain `Partial`, `Pick`, `Omit`, and `Record` to derive types that stay in sync with their source.

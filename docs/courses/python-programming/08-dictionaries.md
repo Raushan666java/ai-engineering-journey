@@ -421,6 +421,182 @@ Counter("mississippi").most_common(2)
 - merge()
 
 
+## TypeScript Parallel
+
+TypeScript uses `Map<K, V>` for general dictionary semantics and `Record<K, V>` (plain objects) for string-keyed mappings:
+
+```typescript
+// TypeScript Map (ordered, any key type)
+const scores: Map<string, number> = new Map([
+  ["Alice", 95],
+  ["Bob", 87],
+  ["Charlie", 92]
+]);
+scores.set("Diana", 88);
+console.log(scores.get("Alice"));  // 95
+console.log(scores.has("Eve"));    // false
+
+// Iteration equivalent to dict.items()
+for (const [name, score] of scores) {
+  console.log(`${name}: ${score}`);
+}
+
+// TypeScript Record (string keys via plain object)
+type Inventory = Record<string, number>;
+const stock: Inventory = {
+  apples: 5,
+  bananas: 3
+};
+stock["cherries"] = 10;
+
+// Default value pattern (Python dict.get equivalent)
+function getScore(map: Map<string, number>, key: string): number {
+  return map.get(key) ?? 0;  // nullish coalescing
+}
+
+// Map iteration methods
+scores.keys();     // like dict.keys()
+scores.values();   // like dict.values()
+scores.entries();  // like dict.items()
+
+// Object.keys/values/entries for Record types
+const names = Object.keys(stock);     // ["apples", "bananas", "cherries"]
+const counts = Object.values(stock);  // [5, 3, 10]
+```
+
+### Key Differences
+
+| Feature | Python dict | TypeScript Map | TypeScript Record |
+|---------|-------------|----------------|-------------------|
+| Key types | Any immutable | Any type | string (or number) |
+| Ordered | Yes (3.7+) | Yes | Insertion (own props) |
+| Literal | `{k: v}` | `new Map()` | `{k: v}` |
+| Length | `len(d)` | `map.size` | `Object.keys(r).length` |
+| Missing key | `d.get(k)` or raise | `.get(k)` or `undefined` | `r.k ?? default` |
+| Delete | `del d[k]` | `.delete(k)` | `delete r.k` |
+| Clear | `d.clear()` | `.clear()` | reassign or loop delete |
+
+### Dict Performance and Internals
+
+```mermaid
+flowchart LR
+    A[Key] --> B[hash function]
+    B --> C[hash value]
+    C --> D[table index]
+    D --> E{Slot occupied?}
+    E -->|No| F[Store key-value]
+    E -->|Yes, key match| G[Overwrite value]
+    E -->|Yes, key mismatch| H[Open addressing]
+    H --> D
+```
+
+Python dictionaries use a hash table with open addressing. Keys are hashed, and the hash determines the slot. On collision, Python probes the next available slot. Load factor (ratio of filled slots) triggers resizing at ~2/3 capacity to maintain O(1) average lookup.
+
+```python
+# Memory usage comparison
+import sys
+
+d = dict(zip(range(1000), range(1000)))
+print(f"Dict size: {sys.getsizeof(d)} bytes")  # ~41KB for 1000 items
+
+# Key distribution matters
+# Strings, tuples of strings, and integers are most efficient
+# Custom objects need good __hash__ implementation
+```
+
+### Real-World Dict Patterns
+
+```python
+# Caching / memoization
+cache: dict[str, int] = {}
+
+def expensive_compute(n: int) -> int:
+    key = str(n)
+    if key not in cache:
+        cache[key] = sum(i * i for i in range(n))
+    return cache[key]
+
+# Configuration with nested dicts
+config = {
+    "database": {
+        "host": "localhost",
+        "port": 5432,
+        "credentials": {
+            "user": "admin",
+            "password": "${DB_PASSWORD}"  # placeholder pattern
+        }
+    },
+    "logging": {
+        "level": "INFO",
+        "file": "/var/log/app.log"
+    }
+}
+
+# Graph represented as adjacency dict
+graph: dict[str, list[str]] = {
+    "A": ["B", "C"],
+    "B": ["A", "D", "E"],
+    "C": ["A", "F"],
+    "D": ["B"],
+    "E": ["B", "F"],
+    "F": ["C", "E"]
+}
+
+# BFS traversal
+from collections import deque
+def bfs(graph: dict, start: str) -> list[str]:
+    visited = set()
+    queue = deque([start])
+    result = []
+    while queue:
+        node = queue.popleft()
+        if node not in visited:
+            visited.add(node)
+            result.append(node)
+            queue.extend(neighbor for neighbor in graph[node]
+                        if neighbor not in visited)
+    return result
+
+print(bfs(graph, "A"))  # ['A', 'B', 'C', 'D', 'E', 'F']
+```
+
+### Dict vs Other Data Structures
+
+| Need | Data Structure | Example |
+|------|---------------|---------|
+| Key-value mapping | `dict` | `{"name": "Alice", "age": 30}` |
+| Ordered key-value | `OrderedDict` | Maintains explicit order (rarely needed since 3.7+) |
+| Default values | `defaultdict` | `dd["missing"]` returns a default |
+| Counting | `Counter` | `Counter("abracadabra")` |
+| Multiple keys same value | `dict` of lists | `defaultdict(list)` |
+| Bi-directional map | Two dicts or `bidict` | Lookup by key or value |
+| LRU cache | `functools.lru_cache` | Cache with max size |
+
+```python
+# LRU cache using dict (manual implementation)
+class LRUCache:
+    def __init__(self, capacity: int):
+        self.capacity = capacity
+        self.cache: dict = {}
+        self.order: list = []
+
+    def get(self, key):
+        if key in self.cache:
+            self.order.remove(key)
+            self.order.append(key)
+            return self.cache[key]
+        return -1
+
+    def put(self, key, value):
+        if key in self.cache:
+            self.order.remove(key)
+        elif len(self.cache) >= self.capacity:
+            oldest = self.order.pop(0)
+            del self.cache[oldest]
+        self.cache[key] = value
+        self.order.append(key)
+```
+
 ## Summary
 
 - Dictionaries map hashable keys to values; insertion order is preserved (3.7+).

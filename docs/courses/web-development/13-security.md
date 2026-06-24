@@ -297,7 +297,180 @@ function sanitize(input: string): string {
 }
 ```
 
-## 13.9 Server-Side Request Forgery (SSRF) Prevention
+## 13.9 HTTPS and Secure Communication
+
+Enforcing HTTPS ensures data encryption between client and server.
+
+```typescript
+import express from "express";
+import fs from "fs";
+import https from "https";
+import helmet from "helmet";
+
+const app = express();
+app.use(helmet());
+
+// Redirect HTTP to HTTPS in production
+if (process.env.NODE_ENV === "production") {
+  app.use((req, res, next) => {
+    if (!req.secure && req.headers["x-forwarded-proto"] !== "https") {
+      return res.redirect(301, `https://${req.headers.host}${req.url}`);
+    }
+    next();
+  });
+}
+
+// HTTPS server (terminate TLS at your reverse proxy in production)
+const options = {
+  key: fs.readFileSync("/etc/ssl/private/key.pem"),
+  cert: fs.readFileSync("/etc/ssl/certs/cert.pem"),
+};
+
+https.createServer(options, app).listen(443);
+```
+
+### Security Logging and Monitoring
+
+```typescript
+import pino from "pino";
+
+const auditLogger = pino({
+  name: "audit",
+  level: "info",
+  redact: ["req.headers.authorization", "req.body.password"],
+});
+
+// Audit log middleware for sensitive operations
+function auditLog(action: string) {
+  return (req: Request, res: Response, next: NextFunction) => {
+    const originalJson = res.json.bind(res);
+    res.json = function (body: any) {
+      auditLogger.info({
+        action,
+        userId: (req as any).user?.id,
+        ip: req.ip,
+        userAgent: req.headers["user-agent"],
+        timestamp: new Date().toISOString(),
+        status: res.statusCode,
+      });
+      return originalJson(body);
+    };
+    next();
+  };
+}
+
+// Usage on sensitive routes
+router.delete("/api/users/:id", authenticate, auditLog("USER_DELETE"), deleteUser);
+```
+
+### Secure Session Configuration
+
+```typescript
+import session from "express-session";
+import RedisStore from "connect-redis";
+import { createClient } from "redis";
+
+const redisClient = createClient({ url: process.env.REDIS_URL });
+redisClient.connect().catch(console.error);
+
+app.use(
+  session({
+    store: new RedisStore({ client: redisClient }),
+    secret: process.env.SESSION_SECRET!,
+    name: "__Secure-session", // __Secure- prefix requires HTTPS
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,      // Prevents JavaScript access
+      secure: true,        // HTTPS only
+      sameSite: "strict",  // Prevents CSRF
+      maxAge: 24 * 60 * 60 * 1000, // 24 hours
+      path: "/",
+    },
+    rolling: true, // Reset expiry on each request
+  })
+);
+```
+
+### Dependency Security and Supply Chain
+
+Vulnerable dependencies are a common attack vector (OWASP #6).
+
+```bash
+# Audit dependencies
+npm audit          # Check known vulnerabilities
+npm audit fix      # Auto-fix patch-level vulnerabilities
+npm audit --audit-level=high  # Only report high/critical
+
+# Check for malicious packages
+npx npm audit --registry=https://registry.npmjs.org
+
+# Lockfile integrity
+# Use "integrity" field in package-lock.json to verify package contents
+# CI should fail if lockfile changes unexpectedly
+```
+
+```yaml
+# .github/workflows/dependency-security.yml
+name: Dependency Security Check
+on: [pull_request]
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm audit --audit-level=high
+      - run: npx socket-cli scan
+```
+
+```typescript
+// Safe dependency patterns
+// 1. Pin exact versions in production
+// "express": "4.21.0" not "express": "^4.21.0"
+
+// 2. Use lockfile
+// Commit package-lock.json and verify CI uses npm ci
+
+// 3. Minimize dependencies
+import defaultImport from "lodash"; // BAD — imports entire library (500KB+)
+import debounce from "lodash/debounce"; // GOOD — imports only what's needed
+
+// 4. Validate package provenance with npm attestations
+npm publish --provenance
+```
+
+### Environment-Specific Security
+
+```typescript
+// Security configuration per environment
+interface SecurityConfig {
+  corsOrigins: string[];
+  rateLimits: { windowMs: number; max: number };
+  cookieSecure: boolean;
+  hstsMaxAge: number;
+}
+
+const securityConfigs: Record<string, SecurityConfig> = {
+  development: {
+    corsOrigins: ["http://localhost:3000"],
+    rateLimits: { windowMs: 15 * 60 * 1000, max: 1000 },
+    cookieSecure: false,
+    hstsMaxAge: 0,
+  },
+  production: {
+    corsOrigins: ["https://example.com", "https://admin.example.com"],
+    rateLimits: { windowMs: 15 * 60 * 1000, max: 100 },
+    cookieSecure: true,
+    hstsMaxAge: 31536000,
+  },
+};
+
+function getSecurityConfig(env: string): SecurityConfig {
+  return securityConfigs[env] ?? securityConfigs.development;
+}
+```
+
+## 13.10 Server-Side Request Forgery (SSRF) Prevention
 
 ```typescript
 import { createHash } from "crypto";
@@ -457,6 +630,20 @@ Web security requires defense in depth: parameterized queries prevent SQL inject
 2. Implement a Content Security Policy for a React SPA
 3. Add rate limiting with different tiers for authenticated vs anonymous users
 
+4. Implement an audit logging system that records all admin actions (user deletion, role changes, configuration updates) with IP, user agent, and timestamp.
+5. Build a secure session configuration using Redis storage with httpOnly, secure, and sameSite flags properly configured.
+
+6. Create an environment-specific security configuration that applies strict CSP headers, HSTS, and rate limits only in production, with relaxed settings for development.
+7. Implement a dependency security audit pipeline that runs `npm audit` on every PR and blocks merging if any high-severity vulnerabilities are found without an approved exception.
+
 ### Challenge Project
 
 Perform a security audit of a web application covering OWASP Top 10, using automated scanners (ZAP) and manual testing. Document findings, implement fixes, and verify with a second scan.
+
+### Practical Takeaways
+
+1. **Defense in depth** — never rely on a single security control. Combine CSP, CORS, rate limiting, input validation, and authentication together.
+2. **Validate server-side always** — client validation is UX only. Every API endpoint must re-validate inputs regardless of frontend checks.
+3. **Use Helmet for baseline security** — it sets 15+ security headers with sensible defaults in a single middleware call.
+4. **Rate limit by endpoint sensitivity** — auth endpoints get strict limits (5/15min), public API gets moderate limits, internal endpoints get generous limits.
+5. **Log security events** — failed logins, unauthorized access attempts, and permission denials must be logged with enough context for investigation.

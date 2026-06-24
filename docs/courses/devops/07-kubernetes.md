@@ -569,6 +569,46 @@ console.log(checker.generateSummary());
 
 ---
 
+### Resource Quotas and Limit Ranges
+
+Multi-tenant Kubernetes clusters require resource governance to prevent one team from starving others:
+
+**ResourceQuota:** Enforces aggregate resource consumption per namespace:
+```yaml
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: team-compute-quota
+spec:
+  hard:
+    requests.cpu: "10"
+    requests.memory: 20Gi
+    limits.cpu: "20"
+    limits.memory: 40Gi
+    persistentvolumeclaims: 5
+    pods: 20
+    services: 10
+```
+
+**LimitRange:** Sets default resource requests/limits per pod:
+```yaml
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: default-limits
+spec:
+  limits:
+    - default:
+        cpu: "500m"
+        memory: 512Mi
+      defaultRequest:
+        cpu: "200m"
+        memory: 256Mi
+      type: Container
+```
+
+**Admission controllers** enforce these policies at pod creation time. `kubectl describe quota` and `kubectl describe limitrange` verify active constraints.
+
 ## Exercises
 
 ### Review Questions

@@ -586,6 +586,25 @@ console.log(`Marketing female managers: ${femaleMgrs}`);
 
 11. **Complex Table:** A table with production data for 5 factories across 4 quarters. Calculate: (a) highest total production (b) quarter with most output (c) factory with most consistent production (lowest variance)
 
+### Mermaid: Data Interpretation Flow
+
+```mermaid
+flowchart TD
+    A[Raw Data Table/Chart] --> B{What is asked?}
+    B -->|Percentage| C[Identify numerator & denominator]
+    B -->|Ratio| D[Extract both quantities]
+    B -->|Trend| E[Compare consecutive values]
+    B -->|Average| F[Sum ÷ count]
+    C --> G[Compute: numerator/denominator × 100]
+    D --> H[Simplify ratio]
+    E --> I[↑ increase or ↓ decrease]
+    F --> J[Mean value]
+    G --> K[Answer]
+    H --> K
+    I --> K
+    J --> K
+```
+
 ### Answer Key
 
 1. 50% | 2. 20% | 3. D | 4. 2:3 | 5. 20% | 6. 532 | 7a. 155, 7b. April (30.8%), 7c. 400 | 9. C (need both)

@@ -485,6 +485,225 @@ console.log(ts);
 
 ---
 
+## TypeScript: Pulumi Infrastructure as Code
+
+Pulumi brings IaC to TypeScript with native programming constructs:
+
+```typescript
+// infrastructure.ts
+// Define cloud infrastructure using Pulumi with TypeScript
+
+import * as aws from '@pulumi/aws';
+import * as pulumi from '@pulumi/pulumi';
+
+interface ServiceConfig {
+  name: string;
+  environment: string;
+  cpu: string;
+  memory: string;
+  desiredCount: number;
+  containerPort: number;
+  healthCheckPath: string;
+}
+
+class MicroserviceInfrastructure {
+  private readonly vpc: aws.ec2.Vpc;
+  private readonly cluster: aws.ecs.Cluster;
+  private readonly alb: aws.lb.LoadBalancer;
+
+  constructor(private config: ServiceConfig) {
+    this.vpc = this.createVpc();
+    this.cluster = this.createCluster();
+    this.alb = this.createLoadBalancer();
+  }
+
+  private createVpc(): aws.ec2.Vpc {
+    return new aws.ec2.Vpc(`${this.config.name}-vpc`, {
+      cidrBlock: '10.0.0.0/16',
+      enableDnsSupport: true,
+      enableDnsHostnames: true,
+      tags: { Name: `${this.config.name}-vpc`, Environment: this.config.environment },
+    });
+  }
+
+  private createCluster(): aws.ecs.Cluster {
+    return new aws.ecs.Cluster(`${this.config.name}-cluster`, {
+      tags: { Name: `${this.config.name}-cluster`, Environment: this.config.environment },
+    });
+  }
+
+  private createLoadBalancer(): aws.lb.LoadBalancer {
+    return new aws.lb.LoadBalancer(`${this.config.name}-alb`, {
+      internal: false,
+      loadBalancerType: 'application',
+      securityGroups: [this.createSecurityGroup().id],
+      subnets: this.createSubnets().map(s => s.id),
+      tags: { Name: `${this.config.name}-alb`, Environment: this.config.environment },
+    });
+  }
+
+  private createSecurityGroup(): aws.ec2.SecurityGroup {
+    return new aws.ec2.SecurityGroup(`${this.config.name}-sg`, {
+      vpcId: this.vpc.id,
+      ingress: [
+        { protocol: 'tcp', fromPort: 443, toPort: 443, cidrBlocks: ['0.0.0.0/0'] },
+        { protocol: 'tcp', fromPort: 80, toPort: 80, cidrBlocks: ['0.0.0.0/0'] },
+      ],
+      egress: [{ protocol: '-1', fromPort: 0, toPort: 0, cidrBlocks: ['0.0.0.0/0'] }],
+    });
+  }
+
+  private createSubnets(): aws.ec2.Subnet[] {
+    return [
+      new aws.ec2.Subnet(`${this.config.name}-subnet-a`, {
+        vpcId: this.vpc.id, cidrBlock: '10.0.1.0/24', availabilityZone: 'us-east-1a',
+      }),
+      new aws.ec2.Subnet(`${this.config.name}-subnet-b`, {
+        vpcId: this.vpc.id, cidrBlock: '10.0.2.0/24', availabilityZone: 'us-east-1b',
+      }),
+    ];
+  }
+
+  deployService(): aws.ecs.Service {
+    const taskDef = new aws.ecs.TaskDefinition(`${this.config.name}-task`, {
+      family: this.config.name,
+      cpu: this.config.cpu,
+      memory: this.config.memory,
+      networkMode: 'awsvpc',
+      containerDefinitions: JSON.stringify([{
+        name: this.config.name,
+        image: `${this.config.name}:latest`,
+        essential: true,
+        portMappings: [{ containerPort: this.config.containerPort, protocol: 'tcp' }],
+        healthCheck: {
+          command: [`CMD-SHELL`, `curl -f http://localhost:${this.config.containerPort}${this.config.healthCheckPath} || exit 1`],
+          interval: 30,
+          timeout: 5,
+          retries: 3,
+        },
+        environment: [{ name: 'NODE_ENV', value: this.config.environment }],
+      }]),
+    });
+
+    return new aws.ecs.Service(`${this.config.name}-service`, {
+      cluster: this.cluster.arn,
+      taskDefinition: taskDef.arn,
+      desiredCount: this.config.desiredCount,
+      launchType: 'FARGATE',
+      networkConfiguration: {
+        assignPublicIp: true,
+        subnets: this.createSubnets().map(s => s.id),
+        securityGroups: [this.createSecurityGroup().id],
+      },
+      loadBalancers: [{
+        targetGroupArn: this.createTargetGroup().arn,
+        containerName: this.config.name,
+        containerPort: this.config.containerPort,
+      }],
+    });
+  }
+
+  private createTargetGroup(): aws.lb.TargetGroup {
+    return new aws.lb.TargetGroup(`${this.config.name}-tg`, {
+      port: this.config.containerPort,
+      protocol: 'HTTP',
+      targetType: 'ip',
+      vpcId: this.vpc.id,
+      healthCheck: { path: this.config.healthCheckPath, interval: 30 },
+    });
+  }
+}
+
+// Deploy API service infrastructure
+const apiInfra = new MicroserviceInfrastructure({
+  name: 'api-service',
+  environment: 'production',
+  cpu: '512',
+  memory: '1024',
+  desiredCount: 3,
+  containerPort: 3000,
+  healthCheckPath: '/health',
+});
+
+export const service = apiInfra.deployService();
+```
+
+## Mermaid: Terraform State Management Workflow
+
+```mermaid
+flowchart TD
+    subgraph "Terraform Operations"
+        A[terraform init] --> B[terraform plan]
+        B --> C{Plan review}
+        C -->|Approve| D[terraform apply]
+        C -->|Reject| E[terraform plan -destroy]
+        D --> F[(State File)]
+        F --> G[terraform refresh]
+        G --> B
+    end
+    subgraph "Remote State (S3 + DynamoDB)"
+        S3[(S3 Bucket<br/>state storage)] --> LOCK[DynamoDB<br/>State Locking]
+        LOCK --> H{Lock acquired?}
+        H -->|Yes| I[Read state]
+        H -->|No| J[Wait for lock release]
+        I --> K[Plan/Apply]
+        K --> L[Write state]
+    end
+    subgraph "CI/CD Integration"
+        PR[Open PR] --> PLAN[tf plan in PR]
+        PLAN --> REVIEW[Review plan output]
+        REVIEW --> MERGE[Merge to main]
+        MERGE --> APPLY[tf apply in pipeline]
+    end
+```
+
+## Mermaid: Terraform Module Composition
+
+```mermaid
+flowchart LR
+    subgraph "Root Module"
+        ROOT[main.tf] --> MOD[Module Calls]
+        ROOT --> BACKEND[backend.tf]
+        ROOT --> VARS[variables.tf]
+        ROOT --> OUT[outputs.tf]
+    end
+    subgraph "Reusable Modules"
+        MOD --> VPC[module/vpc]
+        MOD --> ECS[module/ecs-fargate]
+        MOD --> RDS[module/rds]
+        MOD --> S3[module/s3-bucket]
+    end
+    subgraph "Module Structure"
+        VPC --> M1[main.tf]
+        VPC --> M2[variables.tf]
+        VPC --> M3[outputs.tf]
+        VPC --> M4[README.md]
+    end
+    subgraph "Registry"
+        R1[Terraform Registry]
+        R2[GitHub: org/terraform-modules]
+    end
+    MOD -.-> R1
+    MOD -.-> R2
+```
+
+## Deeper Explanation: Terraform State and Locking
+
+**Why remote state matters:**
+- **Collaboration:** Multiple team members work on the same infrastructure simultaneously
+- **State safety:** State file not lost if local machine fails
+- **Locking:** Prevents concurrent modifications that could corrupt state
+- **Versioning:** S3 versioning provides state change history and recovery
+
+**State locking mechanisms:**
+| Backend | Locking | Notes |
+|---------|---------|-------|
+| S3 + DynamoDB | DynamoDB table | Best for AWS, most common |
+| AzureRM | Azure Blob Storage lease | Native Azure support |
+| GCS | Cloud Storage object lock | Native GCP support |
+| Terraform Cloud | Built-in | Simplest, managed |
+| Consul | Session lock | Good for multi-cloud |
+
 ## Summary
 
 - Terraform workspaces isolate state for different environments using the same configuration.
@@ -512,6 +731,8 @@ console.log(ts);
 2. Configure a remote backend with S3 and DynamoDB with state locking.
 3. Write a Terraform configuration that deploys resources across AWS and GCP.
 4. Implement a CI/CD pipeline that runs `terraform plan` in PRs and `apply` on merge to main.
+5. Convert the Pulumi TypeScript example above to Terraform. Create equivalent resources: VPC with subnets, ECS Fargate cluster, ALB, security group, and auto-scaling service. Compare the two approaches in terms of readability, reusability, and type safety.
+6. Create a Terragrunt configuration that reduces boilerplate across dev, staging, and prod environments. Each environment should share the same Terraform module but with different variable values for instance size, desired count, and database tier.
 
 ### Challenge Problem
 1. Design a complete multi-cloud infrastructure provisioning system using Terraform including: reusable modules for VPC (with public/private subnets, NAT gateway), ECS Fargate cluster with auto-scaling, RDS PostgreSQL with read replicas and backups, S3 buckets with lifecycle policies and encryption, IAM roles with least privilege, Route53 DNS with health checks, CloudFront CDN distribution, separate workspaces for dev, staging, prod, remote state with locking and encryption, a CI/CD pipeline with plan in PRs, apply on merge, and policy-as-code checks, and cost estimation and tagging for resource tracking.

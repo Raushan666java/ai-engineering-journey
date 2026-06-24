@@ -75,6 +75,51 @@ camelCase = 4  # unconventional in Python (PEP 8 prefers snake_case)
 snake_case = 5 # preferred
 ```
 
+### TypeScript Parallel: Static Typing
+
+TypeScript uses static type annotations, so variables cannot change type once declared:
+
+```typescript
+// TypeScript: variables are type-checked at compile time
+let x: number = 42;   // x can only hold numbers
+// x = "hello";       // Error: Type 'string' is not assignable to type 'number'
+
+// Inferred typing (TypeScript infers the type)
+let y = "hello";      // inferred as string
+// y = 42;            // Error: Type 'number' is not assignable to type 'string'
+
+// Union types allow multiple types
+let z: number | string = 42;
+z = "hello";          // OK - z can be number or string
+```
+
+Python's dynamic typing offers flexibility but catches type errors only at runtime. TypeScript's static typing catches type mismatches during compilation, before the code ever runs.
+
+```typescript
+// Reference behavior is identical: both are references
+const a: number[] = [1, 2, 3];
+const b = a;           // b references the same array
+b.push(4);
+console.log(a);        // [1, 2, 3, 4]
+```
+
+```mermaid
+flowchart TD
+    subgraph Python[Dynamic Typing - Python]
+        P1[Declare: x = 42] --> P2[Runtime: x is int]
+        P2 --> P3[Reassign: x = \"hello\"]
+        P3 --> P4[Runtime: x is str]
+        P4 --> P5[x has no fixed type]
+    end
+
+    subgraph TS[Static Typing - TypeScript]
+        T1[Declare: let x: number = 42] --> T2[Compile: type checked]
+        T2 --> T3[Runtime: x is always number]
+        T3 --> T4[Reassign: x = \"hello\"]
+        T4 --> T5[Compile Error before running]
+    end
+```
+
 ## 2.2 Basic Types
 
 > **One-Sentence Takeaway:** Python provides six atomic built-in types: int, float, str, bool, NoneType, and complex.
@@ -89,9 +134,30 @@ b = 1_000_000       # underscores improve readability
 c = 0xFF            # hexadecimal (255)
 d = 0b1010          # binary (10)
 e = 0o77            # octal (63)
-f = 10 ** 100       # googol â€” huge integer
+f = 10 ** 100       # googol - huge integer
 print(f)            # 100000000000000000000000000000000...
 ```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript numbers: all are 64-bit IEEE 754 floats
+let a: number = 42;
+let b = 1_000_000;    // underscores for readability
+let c = 0xFF;         // hexadecimal (255)
+let d = 0b1010;       // binary (10)
+let e = 0o77;         // octal (63)
+
+// TypeScript does NOT have arbitrary precision numbers
+// BigInt for large integers:
+let f = 10n ** 100n;  // BigInt supports arbitrary precision
+console.log(f.toString());
+
+// Python's int can grow without limit
+// TypeScript's number is capped at 2^53
+```
+
+Python's arbitrary-precision integers can grow to any size limited only by memory. TypeScript's `number` type is a 64-bit float (safe integer up to 2^53), with `BigInt` as an alternative for large integers.
 
 ### 2.2.2 float
 
@@ -114,6 +180,22 @@ import math
 print(math.isclose(0.1 + 0.2, 0.3))  # True
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: same IEEE 754 doubles
+let g: number = 3.14159;
+let h = 1.5e-10;         // scientific notation
+let i = Infinity;        // infinity
+let j = NaN;             // Not a Number
+console.log(0.1 + 0.2);  // 0.30000000000000004
+
+// TypeScript: safe comparison
+const epsilon = 0.000001;
+const isClose = Math.abs((0.1 + 0.2) - 0.3) < epsilon;
+console.log(isClose);     // true
+```
+
 ### 2.2.3 str
 
 Strings are immutable sequences of Unicode code points:
@@ -123,6 +205,20 @@ name = "Alice"
 greeting = 'Hello'          # single or double quotes
 multi = """Line one
 Line two"""
+```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: strings are also immutable sequences
+let name: string = "Alice";
+let greeting = 'Hello';     // single or double quotes
+let multi = `Line one
+Line two`;                 // backticks for multi-line
+
+// TypeScript has template literals (like f-strings):
+let age = 30;
+let message = `${name} is ${age} years old`;  // f-string equivalent
 ```
 
 ### 2.2.4 bool
@@ -136,6 +232,19 @@ print(is_valid + 2)  # 3
 
 Falsy values: `False`, `None`, `0`, `0.0`, `""`, `[]`, `{}`, `()`, `set()`. Everything else is truthy.
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: booleans are NOT numbers
+let isValid: boolean = true;
+// console.log(isValid + 2);  // Error: Operator '+' cannot be applied
+
+// Falsy values: false, null, undefined, 0, NaN, ""
+// TypeScript has null AND undefined (Python has only None)
+let val: any = null;
+let notAssigned: undefined = undefined;
+```
+
 ### 2.2.5 NoneType
 
 `None` represents the absence of a value. It is Python's null:
@@ -144,6 +253,19 @@ Falsy values: `False`, `None`, `0`, `0.0`, `""`, `[]`, `{}`, `()`, `set()`. Ever
 result = None
 if result is None:
     print("No result yet")
+```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: null and undefined
+let result: null | undefined = null;
+if (result === null) {
+    console.log("No result yet");
+}
+
+// Python has only None
+// TypeScript separates null (explicitly empty) from undefined (not yet assigned)
 ```
 
 ### 2.2.6 complex
@@ -155,6 +277,26 @@ c = 3 + 4j
 print(c.real, c.imag)  # 3.0 4.0
 print(abs(c))          # 5.0 (magnitude)
 ```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: no built-in complex type (must use library or custom class)
+// Python has first-class complex numbers; TypeScript does not
+```
+
+### Type Comparison Summary
+
+| Type | Python | TypeScript |
+|------|--------|------------|
+| Integer | `int` (arbitrary precision) | `number` (53-bit safe) or `bigint` |
+| Float | `float` (double) | `number` (double) |
+| String | `str` | `string` |
+| Boolean | `bool` (subclass of int) | `boolean` |
+| Null | `None` (one type) | `null`, `undefined` (two types) |
+| Complex | `complex` (built-in) | No built-in |
+| Infinity | `float("inf")` | `Infinity` |
+| NaN | `float("nan")` | `NaN` |
 
 ## 2.3 Type Conversion
 
@@ -184,6 +326,23 @@ Converting a string like `"hello"` to `int` raises `ValueError`:
 int("hello")  # ValueError: invalid literal for int() with base 10: 'hello'
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: explicit conversion uses functions, not constructors
+console.log(Math.floor(3.99));        // 3 (like int(3.99))
+console.log(Number("3.14"));          // 3.14 (like float("3.14"))
+console.log(String(42));              // "42" (like str(42))
+console.log(Boolean(0));              // false (like bool(0))
+console.log(Boolean("hello"));        // true (like bool("hello"))
+
+// Implicit conversion: TypeScript does NOT auto-promote types
+// let result = 3 + 4.5;   // Works (number)
+// "3" + 4 = "34"          // String concatenation, NOT addition
+// Python: ("3" + 4) => TypeError
+// TypeScript: "3" + 4 => "34" (string concatenation wins)
+```
+
 ## 2.4 Operators
 
 > **One-Sentence Takeaway:** Python has seven operator categories: arithmetic, comparison, logical, assignment, bitwise, identity, membership.
@@ -208,6 +367,28 @@ print(-10 // 3)  # -4 (not -3)
 print(10 // -3)  # -4
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript arithmetic
+let a = 10, b = 3;
+console.log(a + b);     // 13
+console.log(a - b);     // 7
+console.log(a * b);     // 30
+console.log(a / b);     // 3.333...  true division
+console.log(Math.floor(a / b));  // 3   floor division (manual)
+console.log(a % b);     // 1   modulus
+console.log(a ** b);    // 1000  exponentiation (ES2016+)
+
+// NO separate // operator - use Math.floor instead
+// Python: -10 // 3 = -4 (floor toward negative infinity)
+// TypeScript: Math.floor(-10 / 3) = -4 (same result)
+
+// TypeScript does NOT have Python's chained comparison
+// Python: 3 < x < 7
+// TypeScript: 3 < x && x < 7
+```
+
 ### 2.4.2 Comparison Operators
 
 ```python
@@ -227,6 +408,26 @@ print(3 < x < 7)   # True  equivalent to (3 < x) and (x < 7)
 print(3 < x > 10)  # False equivalent to (3 < x) and (x > 10)
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: same comparison operators (no chaining)
+console.log(5 === 5);   // true (strict equal - recommended)
+console.log(5 == 5);    // true (loose equal - avoid)
+console.log(5 !== 4);   // true (strict not equal)
+console.log(5 > 3);     // true
+console.log(5 < 3);     // false
+console.log(5 >= 5);    // true
+console.log(5 <= 4);    // false
+
+// TypeScript uses === and !== instead of == and !=
+// Python's == is strict by default; TypeScript needs === to avoid type coercion
+
+// Chained comparison must use &&:
+let x = 5;
+console.log(3 < x && x < 7);  // true (Python: 3 < x < 7)
+```
+
 ### 2.4.3 Logical Operators
 
 ```python
@@ -236,7 +437,7 @@ print(a or b)    # True
 print(not a)     # False
 ```
 
-`and` and `or` short-circuit â€” they stop evaluating as soon as the result is determined:
+`and` and `or` short-circuit -- they stop evaluating as soon as the result is determined:
 
 ```python
 def expensive():
@@ -254,6 +455,30 @@ print(0 and 42)   # 0
 print(3 and 42)   # 42
 print(0 or 42)    # 42
 print(3 or 42)    # 3
+```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: same logical operators (different keywords)
+let a: boolean = true, b: boolean = false;
+console.log(a && b);  // false
+console.log(a || b);  // true
+console.log(!a);      // false
+
+// Short-circuit works identically
+function expensive(): boolean {
+    console.log("called");
+    return true;
+}
+console.log(false && expensive());  // false (expensive() not called)
+console.log(true || expensive());   // true  (expensive() not called)
+
+// Truthy/falsy return values work the same:
+console.log(0 && 42);   // 0
+console.log(3 && 42);   // 42
+console.log(0 || 42);   // 42
+console.log(3 || 42);   // 3
 ```
 
 ### 2.4.4 Assignment Operators
@@ -281,6 +506,14 @@ if (n := len("hello")) > 4:
     print(f"Length {n} exceeds 4")
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: same assignment operators
+// Python and TypeScript share all arithmetic assignment operators
+// TypeScript does NOT have a walrus operator equivalent
+```
+
 ### 2.4.5 Bitwise Operators
 
 ```python
@@ -294,6 +527,22 @@ print(bin(a >> 2))  # 0b11 right shift
 ```
 
 Bitwise operators are commonly used for flags and low-level protocols.
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: identical bitwise operators
+let a: number = 0b1100;  // 12
+let b: number = 0b1010;  // 10
+console.log((a & b).toString(2));   // 1000  AND
+console.log((a | b).toString(2));   // 1110  OR
+console.log((a ^ b).toString(2));   // 110   XOR
+console.log((~a).toString(2));      // ...11110011 (32-bit)
+console.log((a << 2).toString(2));  // 110000
+console.log((a >> 2).toString(2));  // 11
+
+// Python prints unsigned binary; TypeScript prints signed 32-bit
+```
 
 ### 2.4.6 Identity Operators
 
@@ -319,6 +568,23 @@ print(x is None)     # True
 print(x is not None)  # False
 ```
 
+### TypeScript Parallel
+
+```typescript
+// TypeScript: === for value+type, Object.is() for identity
+// No built-in identity operator like 'is'
+// Use === for null/undefined checks
+let x: any = null;
+console.log(x === null);   // True
+
+// For object identity comparison:
+const a = [1, 2, 3];
+const b = [1, 2, 3];
+const c = a;
+console.log(a === b);   // false (different objects)
+console.log(a === c);   // true  (same object)
+```
+
 ### 2.4.7 Membership Operators
 
 `in` and `not in` test whether a value is in a container:
@@ -329,6 +595,17 @@ print("e" in "hello")       # True
 print("x" not in "hello")   # True
 print(4 in {1, 2, 3})       # False
 print("key" in {"key": 1})  # True (checks keys)
+```
+
+### TypeScript Parallel
+
+```typescript
+// TypeScript: includes() for arrays, includes() for strings, in for objects
+console.log([1, 2, 3].includes(3));     // true  (Python: 3 in [1,2,3])
+console.log("hello".includes("e"));     // true  (Python: "e" in "hello")
+console.log(!("hello".includes("x")));  // true  (Python: "x" not in "hello")
+console.log(!([1, 2, 3].includes(4)));  // true  (Python: 4 not in [1,2,3])
+console.log("key" in { key: 1 });       // true  (Python: "key" in {"key": 1})
 ```
 
 ## 2.5 Operator Precedence
@@ -358,6 +635,24 @@ When in doubt, use parentheses:
 result = (2 + 3) * 4   # 20, not 2 + 12 = 14
 ```
 
+### TypeScript Parallel
+
+TypeScript's operator precedence mirrors C-family languages and differs from Python:
+
+```mermaid
+flowchart LR
+    subgraph Python[Python Precedence]
+        direction LR
+        PY[not > and > or]
+    end
+    subgraph TS[TypeScript Precedence]
+        direction LR
+        TY[! > && > ||]
+    end
+
+    PY --> Note[Same relative ordering]
+    TY --> Note
+```
 
 ## Concept Comparison Table
 
@@ -401,6 +696,16 @@ x in y, x not in y
 | Systems | Bitwise flags for permissions | 2.4.5 |
 | Security | is None in input validation | 2.4.6 |
 
+## Practical Takeaways
+
+| Concept | Key Point | Common Mistake |
+|---------|-----------|----------------|
+| Dynamic typing | Variables are references, not containers | Confusing reassignment with mutation |
+| Float comparison | Use math.isclose() | Using == on floats |
+| None check | Use `is None`, never `== None` | `x == None` |
+| Boolean | bool is a subclass of int | Expecting True is not 1 in other langs |
+| Short-circuit | and/or stop early | Side effects in second operand |
+| Python vs TS | Dynamic vs static typing | Assuming TS allows type changes |
 
 ## Chapter Quiz
 
@@ -445,6 +750,8 @@ x in y, x not in y
 - `and`/`or` short-circuit; `is` checks identity; `in` checks membership.
 - Chained comparisons are a unique Python feature.
 - The walrus operator `:=` assigns within expressions.
+- TypeScript uses static typing with type annotations, catching errors at compile time.
+- TypeScript separates null and undefined where Python only has None.
 
 ## Exercises
 
@@ -455,13 +762,21 @@ x in y, x not in y
 3. What values are considered falsy in Python?
 4. Explain short-circuit evaluation with an example.
 5. What operator precedence rule causes `2 ** 3 ** 2` to compute 512 rather than 64?
+6. How does Python's dynamic typing compare to TypeScript's static typing?
+7. Why does TypeScript use `===` instead of `==`?
 
 ### Application Problems
 
 1. Write a program that takes an integer input, then prints whether it is even or odd, positive or negative, and its absolute value.
 2. Implement a BMI calculator: weight (kg) / height (m)^2. Use appropriate types and print a health category message.
 3. Given `a = 0b1010` and `b = 0b1100`, write a program that prints the AND, OR, XOR, and left-shift results in binary.
+4. Write a function that takes a string and returns whether it contains the letter "a". Use the `in` operator. Write the equivalent TypeScript version using `.includes()`.
+5. Create a script that demonstrates the walrus operator by reading lines from a list and printing only those longer than 10 characters.
 
 ### Challenge Problem
 
 Implement a simple simulated-annealing flag decoder: define a set of bit flags (READ=1, WRITE=2, EXECUTE=4, DELETE=8). Accept an integer permission mask and print which flags are set. Then accept a flag name and toggle it in the mask using bitwise XOR. Use the walrus operator in at least one expression.
+
+### TypeScript Challenge
+
+Rewrite the BMI calculator from Application Problem 2 in TypeScript. Add explicit type annotations for all variables. Compare the Python and TypeScript versions -- how does type safety help catch errors? Create a function signature with types for both the input parameters and return value.

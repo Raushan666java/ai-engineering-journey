@@ -178,6 +178,150 @@ function detectFlakyTests(testResults: TestResult[][]): string[] {
 }
 ```
 
+### CI Pipeline Optimization
+
+Optimizing CI pipelines reduces feedback time and infrastructure costs:
+
+**Caching strategies:**
+```yaml
+# npm cache with fallback keys
+- name: Cache node_modules
+  uses: actions/cache@v4
+  with:
+    path: ~/.npm
+    key: npm-${{ hashFiles('package-lock.json') }}-${{ runner.os }}
+    restore-keys: |
+      npm-${{ runner.os }}-
+      npm-
+```
+
+**Parallel execution patterns:**
+```yaml
+# Matrix builds for parallel execution across environments
+jobs:
+  test:
+    strategy:
+      matrix:
+        node: [18, 20, 22]
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - run: npm test
+
+  lint:
+    steps:
+      - run: npm run lint
+
+  security:
+    steps:
+      - run: npm audit
+```
+
+**Conditional execution:**
+```typescript
+function optimizePipeline(steps: PipelineStep[]): PipelineStep[] {
+  // Skip expensive steps when only docs change
+  if (changedFiles.every(f => f.endsWith('.md'))) {
+    return steps.filter(s => !s.expensive);
+  }
+  // Run all steps for production branch
+  return steps;
+}
+```
+
+### Artifact Management and Versioning
+
+Every CI run should produce versioned, immutable artifacts:
+
+| Artifact Type | Storage | Retention | Use Case |
+|--------------|---------|-----------|----------|
+| **Build output** | S3/GCS/Azure Blob | 30-90 days | Deployment packages |
+| **Docker images** | Container registry | Immutable tags | Containerized deployments |
+| **Test reports** | CI platform | 90 days | Audit trail |
+| **Coverage reports** | Codecov/SonarQube | Per-project history | Quality trending |
+| **SBOM** | S3 + registry | Indefinite | Supply chain compliance |
+
+```typescript
+interface Artifact {
+  name: string;
+  version: string;
+  sha256: string;
+  type: 'container' | 'binary' | 'report' | 'sbom';
+  metadata: Record<string, string>;
+}
+
+class ArtifactManager {
+  private artifacts: Artifact[] = [];
+
+  createArtifact(name: string, version: string, type: Artifact['type']): Artifact {
+    const artifact: Artifact = {
+      name,
+      version,
+      sha256: crypto.createHash('sha256').update(`${name}@${version}`).digest('hex'),
+      type,
+      metadata: {
+        buildNumber: process.env.CI_BUILD_NUMBER || 'local',
+        commitSha: process.env.GITHUB_SHA || 'unknown',
+        builtAt: new Date().toISOString(),
+      },
+    };
+    this.artifacts.push(artifact);
+    return artifact;
+  }
+
+  generateBom(): string {
+    return this.artifacts.map(a =>
+      `${a.sha256}  ${a.name}:${a.version} (${a.type})`
+    ).join('\n');
+  }
+}
+```
+
+### Security Scanning in CI
+
+Integrating security tools into CI catches vulnerabilities before deployment:
+
+```mermaid
+flowchart LR
+    A[Code Push] --> B[SAST]
+    A --> C[SCA]
+    A --> D[Secret Scan]
+    A --> E[Container Scan]
+    B --> F{Actions Fail?}
+    C --> F
+    D --> F
+    E --> F
+    F -->|No| G[Build & Deploy]
+    F -->|Critical/High| H[Block Pipeline]
+    F -->|Medium/Low| I[Create Ticket]
+```
+
+**SAST (Static Application Security Testing):** Analyzes source code for security vulnerabilities (SQL injection, XSS, command injection) without executing the code.
+
+**SCA (Software Composition Analysis):** Scans dependencies for known vulnerabilities (npm audit, Snyk, Dependabot).
+
+**Secret detection:** Scans for hardcoded credentials, API keys, and tokens (GitHub secret scanning, TruffleHog).
+
+```typescript
+interface ScanResult {
+  type: 'sast' | 'sca' | 'secret' | 'container';
+  severity: 'critical' | 'high' | 'medium' | 'low';
+  description: string;
+  location: string;
+}
+
+class SecurityGate {
+  evaluate(results: ScanResult[]): { passed: boolean; blocked: ScanResult[] } {
+    const blocked = results.filter(r =>
+      r.severity === 'critical' || r.severity === 'high'
+    );
+    return {
+      passed: blocked.length === 0,
+      blocked,
+    };
+  }
+}
+```
+
 ### CI Services and Infrastructure
 
 **Self-hosted runners:**
@@ -543,6 +687,8 @@ notifier.notify({
 2. Create a strategy for test parallelization across multiple CI runners.
 3. Implement a flaky test detection system that tracks test results across runs.
 4. Configure a monorepo CI setup that only builds and tests affected packages.
+5. Extend the `CIPipelineConfig` class to support: security scanning steps (SAST, SCA, secret scan) with configurable severity thresholds, matrix testing across 3 Node.js versions and 2 operating systems, and conditional pipeline stages that skip when only documentation files change. Generate the complete GitHub Actions YAML.
+6. Implement an `ArtifactVersionManager` that: derives version from git tags (semver), auto-increments patch version for non-tagged commits on main, appends build metadata (`+build.123`) for CI builds, and stores artifacts in a versioned S3-like path structure: `artifacts/{name}/{version}/{file}`.
 
 ### Challenge Problem
 1. Design and implement a comprehensive CI system for a TypeScript monorepo with 12 packages. Include: dependency graph-based change detection for selective builds, parallel test execution with sharding and load balancing, quality gate enforcement (lint, type check, 85% coverage, no critical vulnerabilities), artifact versioning and publishing, flaky test detection and quarantine with automated issue creation, and a CI health dashboard tracking build time trends, test count trends, coverage trends, and cache hit rate.

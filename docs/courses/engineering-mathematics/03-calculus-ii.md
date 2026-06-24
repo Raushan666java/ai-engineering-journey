@@ -539,6 +539,36 @@ This is the chain rule: the gradient at layer $l$ depends on gradients at layer 
 
 **Gaussian Integral:** Evaluate $I = \int_{-\infty}^\infty e^{-x^2}\,dx = \sqrt{\pi}$ by squaring $I^2$ and converting to polar coordinates. This is the normalization constant for the normal distribution.
 
+### TypeScript: Multivariable Calculus Operations
+
+```typescript
+type Vec2 = [number, number];
+type Vec3 = [number, number, number];
+
+class MultivariableCalculus {
+  gradient(f: (v: Vec2) => number, x: number, y: number, h = 1e-6): Vec2 {
+    return [
+      (f([x + h, y]) - f([x - h, y])) / (2 * h),
+      (f([x, y + h]) - f([x, y - h])) / (2 * h),
+    ];
+  }
+
+  jacobian(f: (v: Vec2) => Vec2, x: number, y: number): Matrix {
+    const h = 1e-6;
+    const fxy = f([x, y]);
+    return [
+      [(f([x + h, y])[0] - f([x - h, y])[0]) / (2 * h), (f([x, y + h])[0] - f([x, y - h])[0]) / (2 * h)],
+      [(f([x + h, y])[1] - f([x - h, y])[1]) / (2 * h), (f([x, y + h])[1] - f([x, y - h])[1]) / (2 * h)],
+    ];
+  }
+
+  laplacian(f: (v: Vec2) => number, x: number, y: number): number {
+    const h = 1e-5;
+    return (f([x + h, y]) + f([x - h, y]) + f([x, y + h]) + f([x, y - h]) - 4 * f([x, y])) / (h * h);
+  }
+}
+```
+
 ## Notation Reference
 
 | Symbol | Meaning |
@@ -553,3 +583,29 @@ This is the chain rule: the gradient at layer $l$ depends on gradients at layer 
 | $d\mathbf{S}$ | oriented surface element |
 | $\oint_C$ | line integral around closed curve |
 | $\partial M$ | boundary of manifold $M$ |
+
+### Mermaid: Optimization with Gradient Descent
+
+```mermaid
+flowchart LR
+    A[Start θ₀] --> B[Compute ∇f(θ)]
+    B --> C{‖∇f(θ)‖ < ε?}
+    C -->|Yes| D[Converged]
+    C -->|No| E[θ ← θ − α∇f(θ)]
+    E --> B
+    D --> F[Return θ*]
+```
+
+### Mermaid: Double Integral Over a Region
+
+```mermaid
+flowchart TD
+    A[Region R] --> B[Type I: x-simple]
+    A --> C[Type II: y-simple]
+    B --> D[∫ₐᵇ ∫_{g₁(x)}^{g₂(x)} f dy dx]
+    C --> E[∫ₐᵇ ∫_{h₁(y)}^{h₂(y)} f dx dy]
+    D --> F[Evaluate inner integral]
+    F --> G[Evaluate outer integral]
+    E --> H[Evaluate inner integral]
+    H --> I[Evaluate outer integral]
+```

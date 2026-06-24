@@ -514,6 +514,96 @@ Magic methods hook into Python's built-in behaviours:
 | Iterator | `__iter__`, `__next__` |
 | Arithmetic | `__add__`, `__sub__`, `__mul__`, etc. |
 
+## TypeScript Parallel
+
+TypeScript doesn't have magic methods in the same sense, but has equivalents for several protocols:
+
+```typescript
+// toString / toJSON (equivalent to __str__ / __repr__)
+class Point {
+  constructor(public x: number, public y: number) {}
+
+  toString(): string {
+    return `Point(${this.x}, ${this.y})`;
+  }
+
+  toJSON(): object {
+    return { x: this.x, y: this.y, type: "Point" };
+  }
+}
+
+// ValueOf for primitive coercion
+class Money {
+  constructor(public amount: number, public currency: string) {}
+
+  valueOf(): number {
+    return this.amount;
+  }
+}
+const price = new Money(29.99, "USD");
+console.log(price + 10);  // 39.99 (uses valueOf)
+
+// Symbol.iterator for iteration (like __iter__)
+class Range implements Iterable<number> {
+  constructor(private start: number, private end: number) {}
+
+  [Symbol.iterator](): Iterator<number> {
+    let current = this.start;
+    return {
+      next: (): IteratorResult<number> => {
+        if (current > this.end) return { done: true, value: undefined as any };
+        return { done: false, value: current++ };
+      }
+    };
+  }
+}
+for (const n of new Range(1, 5)) console.log(n);  // 1, 2, 3, 4, 5
+
+// Custom getter/setter (like __getitem__ / __setitem__)
+class FixedArray<T> {
+  private data: T[] = [];
+
+  constructor(private capacity: number) {}
+
+  get(index: number): T | undefined {
+    if (index < 0 || index >= this.capacity) throw new Error("Index out of bounds");
+    return this.data[index];
+  }
+
+  set(index: number, value: T): void {
+    if (index < 0 || index >= this.capacity) throw new Error("Index out of bounds");
+    this.data[index] = value;
+  }
+
+  get length(): number {
+    return this.capacity;
+  }
+}
+
+// Symbol.toPrimitive (like __int__ / __float__)
+class Vector2D {
+  constructor(public x: number, public y: number) {}
+
+  [Symbol.toPrimitive](hint: string): number | string {
+    if (hint === "number") return Math.sqrt(this.x ** 2 + this.y ** 2);
+    return `(${this.x}, ${this.y})`;
+  }
+}
+```
+
+### Python Magic Methods vs TypeScript Equivalents
+
+| Python | TypeScript | Purpose |
+|--------|------------|---------|
+| `__str__` / `__repr__` | `toString()` | String representation |
+| `__iter__` / `__next__` | `[Symbol.iterator]()` | Iteration protocol |
+| `__getitem__` / `__setitem__` | `get()` / `set()` methods | Indexed access |
+| `__len__` | `get length()` property | Size query |
+| `__enter__` / `__exit__` | `using` (TS 5.2+) / try-finally | Context management |
+| `__call__` | `() =>` function type | Callable objects |
+| `__eq__` | `equals()` method or `===` | Equality comparison |
+| `__add__` | method like `add()` or `+` overload | Arithmetic |
+
 ## Exercises
 
 ### Review Questions

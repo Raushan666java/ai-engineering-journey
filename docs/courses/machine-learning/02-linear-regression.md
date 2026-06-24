@@ -585,5 +585,20 @@ console.log('After scaling:', X_scaled.map(r => r.map(v => v.toFixed(4))));
 4. Fit a polynomial regression of degree 2 to the points $(-2, 4), (-1, 1), (0, 0), (1, 1), (2, 4)$ using the normal equation and report $R^2$.
 5. Given a dataset with $n=100, d=50$ and severe multicollinearity, which regularization strategy would you recommend? Justify.
 
+### Mermaid: Linear Regression Pipeline
+
+```mermaid
+flowchart LR
+    A[Features X] --> C
+    B[Labels y] --> C
+    C[Gradient Descent] --> D[Weights w]
+    D --> E[Predict ŷ = Xw]
+    E --> F[MSE = ½(y − ŷ)²]
+    F --> G{Converged?}
+    G -->|No| C
+    G -->|Yes| H[Model w*]
+    H --> I[Predict on new data]
+```
+
 ### Challenge Problem
 1. Derive the Normal Equation $\mathbf{w} = (\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}$ by setting the gradient of $J(\mathbf{w}) = \frac{1}{2}(\mathbf{X}\mathbf{w} - \mathbf{y})^T(\mathbf{X}\mathbf{w} - \mathbf{y})$ to zero. Under what conditions does $\mathbf{X}^T\mathbf{X}$ become non-invertible? Show how Ridge regularization fixes this issue by modifying the matrix to $\mathbf{X}^T\mathbf{X} + \lambda\mathbf{I}$.

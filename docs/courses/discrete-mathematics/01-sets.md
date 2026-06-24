@@ -387,6 +387,24 @@ console.log(jaccardSimilarity(A, B)); // 0.333...
 
 *Solution.* $|M \cup P| = |M| + |P| - |M \cap P| = 30 + 25 - 10 = 45$. So $50 - 45 = 5$ study neither.
 
+### Mermaid: Set Operations
+
+```mermaid
+flowchart LR
+    subgraph Union
+        A1["A"] --- U1["A ∪ B"]
+        B1["B"] --- U1
+    end
+    subgraph Intersection
+        A2["A"] --- I2["A ∩ B"]
+        B2["B"] --- I2
+    end
+    subgraph Difference
+        A3["A"] --- D3["A - B"]
+        B3["B"] --- D3
+    end
+```
+
 ## Summary
 
 - A set is a collection of distinct objects. Sets are equal when they contain exactly the same elements.

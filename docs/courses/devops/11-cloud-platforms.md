@@ -196,6 +196,71 @@ Auto-scaling adjusts compute resources dynamically based on demand:
 - Scale-in protection to prevent terminating instances with active connections
 - Metrics selection (CPU, memory, request count, custom metrics)
 
+### 11.9 Infrastructure as Code Across Clouds
+
+Each cloud provider offers its own IaC tooling, but Pulumi and CDK enable a unified TypeScript experience:
+
+```mermaid
+flowchart LR
+    subgraph "IaC Layer"
+        A[Pulumi / CDK / Terraform]
+    end
+    subgraph "Cloud Providers"
+        B[AWS]
+        C[Azure]
+        D[GCP]
+    end
+    A --> B
+    A --> C
+    A --> D
+    E[TypeScript] --> A
+```
+
+**Terraform (multi-cloud):** HCL-based, works across all three providers with state management and module reuse.
+
+**AWS CDK (TypeScript):** Define AWS infrastructure as TypeScript classes. Offers higher-level constructs (L2/L3) that reduce boilerplate.
+
+**Pulumi (TypeScript):** Native TypeScript/JavaScript SDK. Works across AWS, Azure, GCP, and Kubernetes. Supports unit testing of infrastructure code.
+
+**Cross-cloud patterns with TypeScript:**
+- Use a unified `CloudProvider` interface to abstract resource creation
+- Define environment-specific configuration via typed config objects
+- Share types between infrastructure and application code
+- Write infrastructure tests with Pulumi's `Policy as Code` or CDK's `assertions`
+
+### 11.10 Serverless Comparison
+
+| Aspect | AWS Lambda | Azure Functions | GCP Cloud Functions |
+|--------|-----------|-----------------|-------------------|
+| Max memory | 10,240 MB | 1,536 MB (Premium: 14 GB) | 32 GB (2nd gen) |
+| Max timeout | 15 min | 10 min (Premium: 60 min) | 60 min (2nd gen) |
+| Languages | Node, Python, Java, Go, Ruby, .NET | C#, JS, Python, Java, PowerShell | Node, Python, Go, Java, .NET, Ruby, PHP |
+| Cold start | ~100-500ms | ~200-800ms | ~100-300ms |
+| Concurrent exec | 1,000 (can increase) | Unlimited (Consumption) | 3,000 |
+| Trigger sources | 15+ (S3, SQS, SNS, DynamoDB, etc.) | 20+ (Blob, Queue, Event Grid, etc.) | 10+ (Storage, Pub/Sub, Firestore, etc.) |
+| Pricing | $0.20/1M requests + $0.0000166667/GB-s | $0.20/1M executions + $0.000016/GB-s | $0.40/1M invocations + $0.0000025/GB-s (1st gen) |
+
+### 11.11 Cloud Migration Strategies
+
+The **7 Rs of cloud migration** guide workload migration decisions:
+
+| Strategy | Description | Tooling | Effort |
+|----------|-------------|---------|--------|
+| **Retire** | Decommission unused applications | Application portfolio analysis | Low |
+| **Retain** | Keep on-premises for compliance/latency | Keep existing infrastructure | None |
+| **Rehost** | Lift-and-shift, move as-is | AWS SMS, Azure Migrate, Migrate for Compute Engine | Low |
+| **Relocate** | Move to cloud-native VMs | AWS Replication Agent, Azure Site Recovery | Low-Medium |
+| **Replatform** | Move with minimal optimizations (e.g., to managed DB) | AWS DMS, Azure Database Migration Service | Medium |
+| **Refactor** | Re-architect for cloud-native patterns | Strangler fig pattern, event-driven architecture | High |
+| **Reimagine** | Rebuild using cloud-native services entirely | Serverless, managed services, SaaS | Very High |
+
+**Migration assessment steps:**
+1. Inventory all workloads and dependencies
+2. Classify each workload into one of the 7 Rs
+3. Assess data gravity and network bandwidth constraints
+4. Plan migration waves with rollback criteria
+5. Execute with automated testing at each wave
+
 ---
 
 ## Examples
@@ -470,6 +535,81 @@ Each major cloud provider offers comprehensive compute, storage, networking, and
 
 ---
 
+### Cloud Disaster Recovery Strategies
+
+Every cloud architecture needs a disaster recovery plan aligned to Recovery Time Objective (RTO) and Recovery Point Objective (RPO):
+
+| Strategy | RTO | RPO | Cost | Description |
+|----------|-----|-----|------|-------------|
+| **Backup & Restore** | Hours | 24h | Low | Periodic backups to object storage, restore when needed |
+| **Pilot Light** | Minutes | Minutes | Medium | Core services running minimal, scale up on failover |
+| **Warm Standby** | Minutes | Seconds | Medium-High | Scaled-down full copy, scale up on failover |
+| **Multi-Site Active/Active** | Near-zero | Seconds | High | Full production in two regions, traffic split |
+| **Multi-Cloud DR** | Minutes | Minutes | High | Secondary provider for critical workloads |
+
+```mermaid
+flowchart LR
+    subgraph "Primary Region"
+        A[Production<br/>us-east-1]
+    end
+    subgraph "DR Region"
+        B[Standby<br/>us-west-2]
+    end
+    A -->|Data Replication| B
+    A -->|Route 53 Failover| C[DNS]
+    B --> C
+    C --> D[Users]
+```
+
+```typescript
+interface DRPlan {
+  strategy: string;
+  rto: number; // minutes
+  rpo: number; // minutes
+  costPerMonth: number;
+  steps: string[];
+}
+
+class DisasterRecoveryPlanner {
+  generatePlan(service: string, criticality: 'critical' | 'high' | 'medium'): DRPlan {
+    const plans: Record<string, DRPlan> = {
+      critical: {
+        strategy: 'Multi-Site Active/Active',
+        rto: 1, rpo: 1, costPerMonth: 15000,
+        steps: [
+          'Deploy identical infrastructure in second region',
+          'Configure synchronous database replication',
+          'Set up global load balancer with health checks',
+          'Implement automated failover and failback',
+          'Run quarterly Game Day exercises',
+        ],
+      },
+      high: {
+        strategy: 'Warm Standby',
+        rto: 15, rpo: 5, costPerMonth: 5000,
+        steps: [
+          'Deploy scaled-down infrastructure in DR region',
+          'Configure asynchronous replication',
+          'Automate scale-up and DNS switch on failover',
+          'Test failover monthly',
+        ],
+      },
+      medium: {
+        strategy: 'Pilot Light',
+        rto: 60, rpo: 30, costPerMonth: 1000,
+        steps: [
+          'Store AMIs and database snapshots in DR region',
+          'Maintain minimal networking in DR region',
+          'Automate infrastructure provisioning on failover',
+          'Test quarterly',
+        ],
+      },
+    };
+    return plans[criticality];
+  }
+}
+```
+
 ## Exercises
 
 ### Review Questions
@@ -485,6 +625,15 @@ Each major cloud provider offers comprehensive compute, storage, networking, and
 1. Create an AWS architecture diagram for a three-tier web application (web, API, database) using VPC, ALB, EC2 auto-scaling group, RDS Multi-AZ, ElastiCache, and S3 for static assets. Justify each service choice.
 2. Calculate the cost comparison for a workload running 24/7: on-demand vs 1-year reserved vs 3-year reserved vs spot instances using public pricing.
 3. Set up budget alerts on a cloud provider. Create a tagging strategy that allocates costs by project, environment, and team.
+4. Write a TypeScript Pulumi program that deploys an S3 bucket with versioning, lifecycle rules to transition objects to Glacier after 90 days, and public access blocking. Use the CostAllocator class to estimate monthly costs based on 100GB storage with 10GB daily uploads.
+5. Using the AutoScalerSimulator class from this chapter, configure a policy that: scales up when CPU exceeds 60% (add 1 instance), scales down when CPU drops below 30% (remove 1 instance), has min 3 and max 15 instances, and has a 60-second cooldown. Simulate with a workload pattern that spikes to 90% CPU during business hours (8 AM-6 PM) and drops to 10% overnight.
+6. Extend the `CostEstimator` class to support: monthly cost projections accounting for reserved instance discounts (1-year: 40% off, 3-year: 60% off), spot instance pricing (70% off on-demand), and data transfer costs between providers (AWS→GCP $0.09/GB, GCP→AWS $0.12/GB, Azure→AWS $0.087/GB). Generate a 12-month cost projection for a multi-cloud deployment with 5 EC2-equivalent instances, 2TB storage, and 5TB monthly egress split 60/40 across two providers.
+7. Write a `CloudGovernanceEnforcer` class that: defines required tagging policies (team, environment, project, cost-center), scans a list of resources for compliance, generates weekly violation reports with cost impact of untagged resources, and auto-remediates by applying default tags to non-compliant resources (with dry-run mode). Use the `CostAllocator` class for the cost impact calculation.
+
+### Challenge Problems
+
+8. Write a TypeScript class `CloudMigrationPlanner` that implements the 7 Rs migration strategy. The class should: accept a list of workloads (each with name, dependencies, current location, criticality, and data size), classify each workload into one of the 7 Rs based on dependency analysis and criticality, generate a migration wave schedule respecting dependency ordering (critical path), calculate total data transfer costs based on egress pricing from the source provider, and output a JSON migration plan with per-wave resource requirements and rollback criteria.
+9. Design a `MultiCloudOrchestrator` class that: defines a unified `CloudProvider` interface with methods `provisionCompute()`, `provisionStorage()`, `provisionDatabase()`, and `createNetwork()`; implements the interface for AWS (using EC2/S3/RDS/VPC), Azure (VM/Blob/SQL/VNet), and GCP (Compute Engine/Storage/Cloud SQL/VPC); provides a `selectOptimalProvider` method that picks the cheapest provider for each resource type given a workload profile; and generates a combined Terraform/Pulumi configuration that provisions resources across all three providers from a single deployment script.
 
 ### Challenge Problem
 

@@ -174,6 +174,124 @@ git push --tags                   # Push all tags
 - MINOR: New features, backward compatible
 - PATCH: Bug fixes, backward compatible
 
+### Advanced Merge Strategies
+
+Choosing the right merge strategy affects commit history readability:
+
+| Strategy | History | Use Case | Command |
+|----------|---------|----------|---------|
+| **Regular merge** | Preserves full branch history with merge commits | Feature branches with multiple contributors | `git merge --no-ff feature` |
+| **Squash merge** | Collapses all branch commits into one | Single-author features, cleanup history | `git merge --squash feature` |
+| **Rebase merge** | Linear history, no merge commits | Personal branches, CI/CD branches | `git rebase main; git merge feature` |
+| **Fast-forward** | Linear, only possible when no divergence | Trunk-based, short-lived branches | `git merge --ff-only feature` |
+
+```mermaid
+flowchart LR
+    subgraph "Regular Merge"
+        direction LR
+        A1[main] --> A2[a] --> A3[b] --> A4[Merge Commit]
+        B1[feature] --> B2[x] --> B3[y] --> A4
+    end
+    subgraph "Squash Merge"
+        direction LR
+        C1[main] --> C2[a] --> C3[b] --> C4[Squash: x+y]
+        D1[feature] --> D2[x] --> D3[y]
+    end
+    subgraph "Rebase"
+        direction LR
+        E1[main] --> E2[a] --> E3[b]
+        F1[feature] --> F2[x] --> F3[y]
+        E2 -.-> F2
+        E3 -.-> F3
+    end
+```
+
+### Git Bisect for Root Cause Analysis
+
+`git bisect` uses binary search to find the exact commit that introduced a bug:
+
+```typescript
+// Automate git bisect with a test script
+interface BisectResult {
+  firstBadCommit: string;
+  suspectRange: { good: string; bad: string };
+  steps: number;
+}
+
+class GitBisector {
+  async bisect(goodCommit: string, badCommit: string, testScript: () => Promise<boolean>): Promise<BisectResult> {
+    console.log(`Starting bisect: good=${goodCommit.slice(0,7)} bad=${badCommit.slice(0,7)}`);
+
+    // Simulate binary search across commits
+    const commits = this.getCommitRange(goodCommit, badCommit);
+    let low = 0;
+    let high = commits.length - 1;
+    let steps = 0;
+
+    while (low < high) {
+      steps++;
+      const mid = Math.floor((low + high) / 2);
+      const commit = commits[mid];
+      console.log(`Step ${steps}: checking ${commit.slice(0,7)}`);
+
+      if (testScript()) {
+        high = mid;
+      } else {
+        low = mid + 1;
+      }
+    }
+
+    return {
+      firstBadCommit: commits[low],
+      suspectRange: { good: commits[low - 1], bad: commits[low] },
+      steps,
+    };
+  }
+
+  private getCommitRange(good: string, bad: string): string[] {
+    // Simulate 100 commits in range for demo
+    return Array.from({ length: 100 }, (_, i) => `commit-${i}`);
+  }
+}
+```
+
+### Signed Commits and Verification
+
+GPG-signing commits provides cryptographic proof of authorship:
+
+```text
+# Configure GPG key
+gpg --full-generate-key
+git config --global user.signingkey KEY_ID
+git config --global commit.gpgsign true
+
+# Sign commits and tags
+git commit -S -m "feat: add payment integration"
+git tag -s v1.0.0 -m "Release 1.0.0"
+
+# Verify signatures
+git log --show-signature
+git verify-commit HEAD
+git verify-tag v1.0.0
+```
+
+**Why signed commits matter in DevOps:**
+- **Supply chain security:** Prevent malicious commits from spoofed authors
+- **Compliance:** Meet SOC 2, FedRAMP audit trail requirements
+- **CI/CD trust:** Only run pipelines for verified commits
+- **DCO (Developer Certificate of Origin):** Automate `Signed-off-by` with `git commit -s`
+
+```mermaid
+flowchart LR
+    A[Developer] --> B[GPG Key]
+    B --> C[Sign Commit]
+    C --> D[Push to Remote]
+    D --> E[CI/CD Checks Signature]
+    E --> F{Valid?}
+    F -->|Yes| G[Run Pipeline]
+    F -->|No| H[Block & Notify]
+```
+
 ### VCS and CI/CD Integration
 
 Every version control event can trigger CI/CD actions:
@@ -528,6 +646,8 @@ console.log(gen.formatMarkdown(notes));
 2. Create a script that extracts the latest version from git tags and writes it to a file.
 3. Configure a pre-commit hook that prevents committing AWS access keys.
 4. Write a CI configuration that runs different pipelines based on branch patterns.
+5. Extend the `VersionControlSystem` class to support signed commits: add a `sign(keyId)` method that appends a GPG signature to the commit metadata, implement `verifySignatures()` that returns only commits with valid signatures, and add `getSignedAuthors()` that lists unique authors whose commits are all signed. Demonstrate with a sequence of mixed signed and unsigned commits.
+6. Implement a `MergeStrategyEngine` class that accepts a list of source commits and a strategy type (`squash`, `rebase`, `merge-commit`) and produces the resulting history. Include: squash creates one commit with combined message, rebase replays commits sequentially onto target, merge-commit creates a single merge commit. Show all three outputs from the same input.
 
 ### Challenge Problem
 1. Design and implement a complete version control strategy for a microservices architecture with 15 services, 3 environments (dev/staging/prod), and daily deployments. Include: branch naming conventions, commit message format, release tagging strategy, CI/CD event mapping, rollback procedure using tags, monorepo vs multi-repo decision with justification, and automated changelog generation.

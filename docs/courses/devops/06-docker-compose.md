@@ -571,6 +571,50 @@ validator.validate(composeContent);
 
 ---
 
+### Compose Debugging and Troubleshooting
+
+Common Docker Compose debugging techniques:
+
+```bash
+# View service logs in real-time
+docker compose logs -f api
+
+# Check container resource usage
+docker compose stats
+
+# Debug inside a running service
+docker compose exec api sh
+
+# Rebuild without cache for stubborn build issues
+docker compose build --no-cache api
+
+# Validate compose file syntax
+docker compose config
+
+# Check port mappings
+docker compose port api 3000
+
+# Visualize the dependency graph
+docker compose config --services
+
+# Force recreate containers (not reuse)
+docker compose up --force-recreate
+
+# Tear down completely (including volumes)
+docker compose down -v
+```
+
+**Common issues and fixes:**
+
+| Problem | Symptom | Solution |
+|---------|---------|----------|
+| Port conflict | `port already allocated` | Change host port or stop conflicting container |
+| Volume permission | `Permission denied` | Ensure container user matches host UID |
+| DNS resolution | `Service name not found` | Ensure services share a network `docker compose network` |
+| Health check timeout | Service never healthy | Increase `start_period` and `interval` |
+| Cache invalidation | Stale build | `docker compose build --no-cache` |
+| Environment missing | `$VAR undefined` | Check `.env` file location and variable names |
+
 ## Exercises
 
 ### Review Questions

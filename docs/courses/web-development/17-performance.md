@@ -327,7 +327,141 @@ function VirtualTaskList({ tasks }: { tasks: Task[] }) {
 }
 ```
 
-## 17.8 Database Performance
+## 17.8 Font Optimization
+
+Custom fonts can significantly impact performance if not loaded correctly.
+
+```typescript
+// Preload critical fonts
+// In <head>:
+<link
+  rel="preload"
+  href="/fonts/Inter-Variable.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+
+// CSS with font-display: swap
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap; /* Show fallback text immediately */
+  unicode-range: U+0000-00FF; /* Limit character set */
+}
+
+// In Next.js, use next/font for automatic optimization
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  preload: true,
+});
+```
+
+### Performance Budgets
+
+A performance budget sets thresholds your app must not exceed.
+
+```typescript
+// performance-budget.ts
+interface Budget {
+  maxBundleSizeKB: number;
+  maxImageSizeKB: number;
+  maxRequests: number;
+  maxLCP: number; // ms
+  maxTBT: number; // ms (Total Blocking Time)
+}
+
+const BUDGET: Budget = {
+  maxBundleSizeKB: 300,
+  maxImageSizeKB: 200,
+  maxRequests: 25,
+  maxLCP: 2500,
+  maxTBT: 200,
+};
+
+// CI check
+async function checkBundleSize(): Promise<boolean> {
+  const fs = await import("fs/promises");
+  const stats = await fs.stat(".next/static/chunks/pages");
+  const totalKB = stats.size / 1024;
+  if (totalKB > BUDGET.maxBundleSizeKB) {
+    console.error(`Bundle size ${totalKB}KB exceeds budget ${BUDGET.maxBundleSizeKB}KB`);
+    process.exit(1);
+  }
+  return true;
+}
+
+```
+
+### Lighthouse CI Budget
+
+```json
+{
+  "ci": {
+    "assert": {
+      "categories:performance": ["error", { "minScore": 0.9 }],
+      "categories:accessibility": ["error", { "minScore": 0.9 }]
+    }
+  }
+}
+```
+
+### requestAnimationFrame and Frame Rate Optimization
+
+Smooth animations run at 60fps (16.6ms per frame). Avoid long tasks that push frame budget.
+
+```typescript
+// Defer non-critical work
+function scheduleIdleTask(task: () => void, timeout = 1000) {
+  if (typeof requestIdleCallback !== "undefined") {
+    requestIdleCallback(() => task(), { timeout });
+  } else {
+    setTimeout(task, 1);
+  }
+}
+
+// Batch DOM reads/writes to avoid layout thrashing
+const scheduledUpdates = new Map<string, () => void>();
+let rafScheduled = false;
+
+function batchUpdate(key: string, update: () => void) {
+  scheduledUpdates.set(key, update);
+  if (!rafScheduled) {
+    rafScheduled = true;
+    requestAnimationFrame(() => {
+      // Read phase first (all gets)
+      // Then write phase (all sets)
+      for (const [, fn] of scheduledUpdates) fn();
+      scheduledUpdates.clear();
+      rafScheduled = false;
+    });
+  }
+}
+```
+
+### Resource Hints for Faster Navigation
+
+```html
+<!-- DNS prefetch for cross-origin resources -->
+<link rel="dns-prefetch" href="//api.example.com" />
+
+<!-- Preconnect for critical third-party origins -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://api.example.com" crossorigin />
+
+<!-- Prefetch for likely-next pages -->
+<link rel="prefetch" href="/dashboard" as="document" />
+
+<!-- Preload for critical above-the-fold resources -->
+<link rel="preload" href="/styles/critical.css" as="style" />
+<link rel="preload" href="/hero.webp" as="image" />
+```
+
+## 17.9 Database Performance
 
 ```typescript
 // Efficient queries
@@ -473,6 +607,20 @@ Web performance optimization spans the entire stack. Core Web Vitals (LCP, FID, 
 2. Implement virtual scrolling for a data table with 10,000+ rows
 3. Set up a service worker for offline-first caching
 
+4. Add resource hints (preconnect, prefetch, preload) to improve page load time for a multi-page application.
+5. Optimize web font loading using `font-display: swap` and subsetting to reduce the critical render path.
+
+6. Implement a performance budget CI check that fails the build if bundle size exceeds 300KB or Lighthouse performance score drops below 90.
+7. Write a requestAnimationFrame-based batching system that groups DOM reads and writes into separate frames to eliminate layout thrashing.
+
 ### Challenge Project
 
 Optimize a web application achieving 95+ Lighthouse performance score by implementing: code splitting at route and component level, responsive images with WebP/AVIF, CDN caching with stale-while-revalidate, service worker for offline support, virtual scrolling for large lists, database query optimization with proper indexes, and real user monitoring (RUM) to track Core Web Vitals in production.
+
+### Practical Takeaways
+
+1. **Measure before optimizing** — always profile with Lighthouse, React DevTools, or the Chrome Performance tab before adding complexity. Premature optimization is the root of all evil.
+2. **Reduce JavaScript bundle size first** — the single biggest performance win is shipping less JS. Analyze bundles regularly, use dynamic imports, and tree-shake unused exports.
+3. **Optimize images aggressively** — use AVIF/WebP with responsive `srcSet` and lazy loading. Images are typically the largest assets on a page.
+4. **Layer your caches** — CDN for static assets, service worker for offline, browser cache for API responses, and in-memory cache for computed data.
+5. **Use resource hints** — `preload` critical resources, `preconnect` to third-party origins, and `prefetch` likely-next pages to eliminate network wait times.

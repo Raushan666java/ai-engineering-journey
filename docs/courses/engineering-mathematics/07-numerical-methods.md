@@ -497,6 +497,161 @@ console.log(`sqrt(5) ≈ ${result.root}, iterations: ${result.iterations}`);
 // Output: sqrt(5) ≈ 2.23606797749979, iterations: 4
 ```
 
+## TypeScript Implementation: Bisection Method
+
+```typescript
+function bisection(
+  f: (x: number) => number,
+  a: number,
+  b: number,
+  tolerance: number = 1e-7,
+  maxIterations: number = 100
+): { root: number; iterations: number; converged: boolean } {
+  if (f(a) * f(b) >= 0) {
+    return { root: NaN, iterations: 0, converged: false };
+  }
+  let left = a, right = b;
+  for (let i = 0; i < maxIterations; i++) {
+    const mid = (left + right) / 2;
+    const fMid = f(mid);
+    if (Math.abs(fMid) < tolerance || (right - left) / 2 < tolerance) {
+      return { root: mid, iterations: i + 1, converged: true };
+    }
+    if (f(left) * fMid < 0) {
+      right = mid;
+    } else {
+      left = mid;
+    }
+  }
+  return { root: (left + right) / 2, iterations: maxIterations, converged: false };
+}
+
+// Solve cos(x) = x on [0, 1]
+const bisectResult = bisection((x) => Math.cos(x) - x, 0, 1);
+console.log(`cos(x) = x at x ≈ ${bisectResult.root.toFixed(6)}, iterations: ${bisectResult.iterations}`);
+// Output: cos(x) = x at x ≈ 0.739085, iterations: 21
+```
+
+## TypeScript Implementation: Simpson's Rule
+
+```typescript
+function simpsonRule(
+  f: (x: number) => number,
+  a: number,
+  b: number,
+  n: number
+): number {
+  if (n % 2 !== 0) throw new Error("n must be even for Simpson's 1/3 rule");
+  const h = (b - a) / n;
+  let sum = f(a) + f(b);
+  for (let i = 1; i < n; i++) {
+    const x = a + i * h;
+    sum += i % 2 === 0 ? 2 * f(x) : 4 * f(x);
+  }
+  return (h / 3) * sum;
+}
+
+// ∫₀¹ e^(-x²) dx ≈ 0.746824
+const integral = simpsonRule((x) => Math.exp(-x * x), 0, 1, 100);
+console.log(`∫₀¹ e^(-x²) dx ≈ ${integral.toFixed(6)}`);
+// Output: ∫₀¹ e^(-x²) dx ≈ 0.746824
+
+function simpsonError(
+  f: (x: number) => number,
+  a: number,
+  b: number,
+  exactValue: number,
+  nValues: number[]
+): void {
+  for (const n of nValues) {
+    const approx = simpsonRule(f, a, b, n);
+    const error = Math.abs(exactValue - approx);
+    const ratio = nValues.indexOf(n) > 0
+      ? Math.abs(exactValue - simpsonRule(f, a, b, n / 2)) / error
+      : 0;
+    console.log(`n=${n}: approx=${approx.toFixed(10)}, error=${error.toExponential(3)}${ratio ? ', ratio=' + ratio.toFixed(2) : ''}`);
+  }
+}
+
+// Verify O(h⁴) convergence: doubling n should reduce error by ~16x
+simpsonError((x) => Math.exp(-x * x), 0, 1, 0.746824132812427, [4, 8, 16, 32]);
+```
+
+## TypeScript Implementation: Euler's Method for ODEs
+
+```typescript
+function eulerMethod(
+  f: (t: number, y: number) => number,
+  t0: number,
+  y0: number,
+  h: number,
+  steps: number
+): { t: number[]; y: number[] } {
+  const t: number[] = [t0];
+  const y: number[] = [y0];
+  for (let i = 0; i < steps; i++) {
+    y.push(y[i] + h * f(t[i], y[i]));
+    t.push(t[i] + h);
+  }
+  return { t, y };
+}
+
+// y' = -2ty, y(0) = 1 (exact: y = e^(-t²))
+const eulerResult = eulerMethod((t, y) => -2 * t * y, 0, 1, 0.1, 10);
+for (let i = 0; i <= 10; i += 5) {
+  const exact = Math.exp(-eulerResult.t[i] ** 2);
+  console.log(`t=${eulerResult.t[i].toFixed(1)}: Euler=${eulerResult.y[i].toFixed(6)}, exact=${exact.toFixed(6)}`);
+}
+```
+
+## Bisection Method Algorithm Flowchart
+
+```mermaid
+flowchart TB
+    START([Start]) --> INPUT[Input f, a, b, tol]
+    INPUT --> CHECK{f(a) × f(b) < 0?}
+    CHECK -->|No| ERR[Error: No sign change]
+    CHECK -->|Yes| LOOP
+    subgraph LOOP [Iteration Loop]
+        C[Compute c = (a+b)/2]
+        C --> FC[Compute f[c]]
+        FC --> CONV{|f[c]| < tol OR (b-a)/2 < tol?}
+        CONV -->|Yes| DONE[Return c]
+        CONV -->|No| SIGN{f[a] × f[c] < 0?}
+        SIGN -->|Yes| SETB[Set b = c]
+        SIGN -->|No| SETA[Set a = c]
+        SETB --> LOOP
+        SETA --> LOOP
+    end
+    DONE --> OUTPUT[Output root, iterations]
+    OUTPUT --> END([End])
+```
+
+## Newton-Raphson Convergence Visualization
+
+```mermaid
+flowchart TB
+    START([Start x₀]) --> EVAL[Compute f[xₙ] and f'[xₙ]]
+    EVAL --> CHECK{f'[xₙ] = 0?}
+    CHECK -->|Yes| FAIL[Fail: zero derivative]
+    CHECK -->|No| UPDATE[xₙ₊₁ = xₙ - f[xₙ]/f'[xₙ]]
+    UPDATE --> CONV{|f[xₙ₊₁]| < tol?}
+    CONV -->|Yes| DONE[Return xₙ₊₁]
+    CONV -->|No| COUNT{Max iterations reached?}
+    COUNT -->|Yes| DONE2[Return best estimate]
+    COUNT -->|No| EVAL
+    DONE --> OUT[Root found]
+    DONE2 --> OUT2[Not fully converged]
+```
+
+### Additional Exercises
+
+9. **Comparison Study:** Solve $x^3 - x - 2 = 0$ on $[1, 2]$ using bisection, Newton-Raphson, and secant methods. Compare iteration counts and accuracy for tolerance $10^{-8}$.
+
+10. **Adaptive Quadrature:** Implement an adaptive Simpson's rule that subdivides intervals where the error estimate exceeds a threshold. Test on $\int_0^1 \sin(1/x)\,dx$ where naive quadrature fails due to rapid oscillations near $x = 0$.
+
+11. **Stiff ODE:** Solve the stiff ODE $y' = -1000y + 1000t$, $y(0) = 0$ from $t=0$ to $t=5$ using Euler's method with $h = 0.001$ and $h = 0.1$. Explain why the larger step fails and what implicit method would fix it.
+
 ## Practical Takeaways
 
 | Method | When to Use | Watch Out |

@@ -530,6 +530,34 @@ console.log(grammar.canDerive('aaabbb', 50)); // true
 
 7. **CFG ↔ PDA equivalence** is the foundation for syntax analysis in compilers. Grammars are how we *specify* syntax; PDAs are how we *implement* recognizers.
 
+### TypeScript: CYK Parser
+
+```typescript
+type CNFRule = { lhs: string; rhs: string[] };
+
+function cykParse(grammar: CNFRule[], input: string): boolean {
+  const n = input.length;
+  const table: Set<string>[][] = Array.from({ length: n }, () =>
+    Array.from({ length: n }, () => new Set<string>())
+  );
+  for (let i = 0; i < n; i++)
+    for (const r of grammar)
+      if (r.rhs.length === 1 && r.rhs[0] === input[i]) table[i][i].add(r.lhs);
+  for (let len = 2; len <= n; len++)
+    for (let i = 0; i <= n - len; i++) {
+      const j = i + len - 1;
+      for (let k = i; k < j; k++)
+        for (const r of grammar)
+          if (r.rhs.length === 2)
+            for (const B of table[i][k])
+              if (r.rhs[0] === B)
+                for (const C of table[k + 1][j])
+                  if (r.rhs[1] === C) table[i][j].add(r.lhs);
+    }
+  return table[0][n - 1].has("S");
+}
+```
+
 ## Summary
 
 - A CFG consists of variables, terminals, productions, and a start variable.

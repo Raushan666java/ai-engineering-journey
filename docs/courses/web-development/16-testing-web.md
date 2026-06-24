@@ -302,7 +302,48 @@ test.describe("Task Management", () => {
 });
 ```
 
-## 16.6 Mocking with MSW
+## 16.6 Snapshot Testing
+
+Snapshot tests capture the rendered output of a component and flag unexpected changes.
+
+```typescript
+import { describe, it, expect } from "vitest";
+import { render } from "@testing-library/react";
+import { TaskCard } from "./TaskCard";
+
+describe("TaskCard snapshot", () => {
+  it("matches snapshot for a high-priority task", () => {
+    const { container } = render(
+      <TaskCard
+        task={{
+          id: "1",
+          title: "Write tests",
+          priority: "HIGH",
+          dueDate: "2024-02-01T00:00:00Z",
+        }}
+      />
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  it("matches snapshot for a completed task", () => {
+    const { container } = render(
+      <TaskCard
+        task={{
+          id: "2",
+          title: "Completed task",
+          priority: "LOW",
+          dueDate: null,
+          completedAt: "2024-01-15T00:00:00Z",
+        }}
+      />
+    );
+    expect(container).toMatchSnapshot();
+  });
+});
+```
+
+## 16.7 Mocking with MSW
 
 ```typescript
 // mocks/handlers.ts
@@ -353,6 +394,95 @@ afterAll(() => server.close());
 > MSW intercepts at the network level, not the module level. This means your code runs exactly as it would in production, with no mocking framework leaks in your application code — unlike mocking fetch or axios directly.
 
 
+## 16.9 Code Coverage Configuration
+
+```typescript
+// vitest.config.ts
+import { defineConfig } from "vitest/config";
+
+export default defineConfig({
+  test: {
+    coverage: {
+      provider: "v8",
+      reporter: ["text", "json", "html"],
+      thresholds: {
+        branches: 80,
+        functions: 80,
+        lines: 80,
+        statements: 80,
+      },
+      exclude: ["**/*.config.ts", "**/*.d.ts", "**/types/**"],
+    },
+  },
+});
+```
+
+### Accessibility Testing with axe-core
+
+Automated accessibility testing catches common WCAG violations.
+
+```typescript
+// vitest-setup.ts
+import { toHaveNoViolations } from "jest-axe";
+expect.extend(toHaveNoViolations);
+
+// Component test with axe
+import { render } from "@testing-library/react";
+import axe from "axe-core";
+
+it("has no accessibility violations", async () => {
+  const { container } = render(<Navigation />);
+  const results = await axe.run(container);
+  expect(results.violations).toHaveLength(0);
+});
+
+// Playwright a11y check
+import { injectAxe, checkA11y } from "axe-playwright";
+
+test("dashboard page is accessible", async ({ page }) => {
+  await page.goto("/dashboard");
+  await injectAxe(page);
+  await checkA11y(page, null, {
+    includedImpacts: ["critical", "serious"],
+  });
+});
+```
+
+### Test-Driven Development (TDD) Workflow
+
+```mermaid
+graph LR
+    A[Write Failing Test] --> B[Write Minimum Code]
+    B --> C[Run Tests]
+    C -->|Pass| D[Refactor]
+    D --> E[Write Next Test]
+    C -->|Fail| B
+    E --> A
+```
+
+### Debugging Flaky Tests
+
+```typescript
+import { describe, it, expect, retry } from "vitest";
+
+// Retry flaky tests
+describe("flaky integration", () => {
+  it("retries on failure", { retry: 3 }, async () => {
+    const response = await fetch("http://localhost:4001/api/status");
+    expect(response.ok).toBe(true);
+  });
+});
+
+// Isolate test with .only
+it.only("only this test runs", () => {
+  expect(true).toBe(true);
+});
+
+// Skip slow tests
+it.skip("slow e2e test", async () => {
+  // ...
+});
+```
 
 ## Concept Comparison Table
 
@@ -458,6 +588,20 @@ Testing follows the pyramid model: many unit tests for isolated logic, some inte
 2. Write integration tests for all CRUD endpoints of an API
 3. Set up visual regression tests with Playwright
 
+4. Set up code coverage thresholds that fail the build if coverage drops below 80%.
+5. Write a Playwright test that verifies form validation messages appear when required fields are empty.
+
+6. Add axe-core accessibility testing to an existing component test suite, asserting zero critical or serious violations across all component states.
+7. Implement a TDD cycle for a form validation function: write tests first for email format, password strength, and required field validation before implementing the logic.
+
 ### Challenge Project
 
 Achieve 90%+ code coverage on a web application with unit tests for utility functions, component tests with all states (loading, empty, error, populated), integration tests for all API routes, and E2E tests covering the complete user journey from registration to task completion.
+
+### Practical Takeaways
+
+1. **Test behavior, not implementation** — use `getByRole` and `getByText` over `getByTestId` to test what users actually experience.
+2. **Use MSW for network mocking** — it intercepts at the network level so application code runs unchanged, unlike mocking `fetch` directly.
+3. **Structure tests with the AAA pattern** — Arrange (set up), Act (perform action), Assert (check result) makes tests readable and maintainable.
+4. **Run E2E tests sparingly** — E2E tests are slow and brittle. Cover critical user journeys only. Use unit and integration tests for everything else.
+5. **Enforce coverage thresholds** — set minimum coverage percentages in CI to prevent regressions from being merged.

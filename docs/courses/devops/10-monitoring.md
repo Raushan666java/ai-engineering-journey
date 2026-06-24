@@ -387,6 +387,315 @@ console.log(`API budget remaining: ${apiBudget.remainingPercent}% - ${calc.alert
 
 ---
 
+## TypeScript: Programmatic Monitoring Dashboard Configuration
+
+Modern monitoring platforms support dashboard as code. Below is a TypeScript example that generates Grafana dashboard JSON configurations programmatically:
+
+```typescript
+// dashboard-generator.ts
+// Generates Grafana dashboard configurations as code
+
+interface PanelDefinition {
+  title: string;
+  type: 'graph' | 'stat' | 'table' | 'heatmap';
+  datasource: string;
+  query: string;
+  unit?: string;
+  decimals?: number;
+  thresholds?: { value: number; color: string }[];
+}
+
+interface DashboardConfig {
+  title: string;
+  description?: string;
+  tags: string[];
+  timeRange: string;
+  refreshInterval: string;
+  panels: PanelDefinition[];
+}
+
+class GrafanaDashboardGenerator {
+  generatePanel(panel: PanelDefinition, index: number): object {
+    const base = {
+      id: index + 1,
+      title: panel.title,
+      type: panel.type,
+      gridPos: { h: 8, w: 12, x: (index % 2) * 12, y: Math.floor(index / 2) * 8 },
+      datasource: panel.datasource,
+    };
+
+    const targets = [{ expr: panel.query, legendFormat: '{{label}}' }];
+
+    if (panel.thresholds) {
+      return {
+        ...base,
+        fieldConfig: {
+          defaults: {
+            unit: panel.unit,
+            decimals: panel.decimals,
+            thresholds: { steps: panel.thresholds.map(t => ({ value: t.value, color: t.color })) },
+          },
+        },
+        targets,
+      };
+    }
+
+    return { ...base, targets };
+  }
+
+  generateDashboard(config: DashboardConfig): object {
+    return {
+      title: config.title,
+      tags: config.tags,
+      time: { from: `now-${config.timeRange}`, to: 'now' },
+      refresh: config.refreshInterval,
+      panels: config.panels.map((p, i) => this.generatePanel(p, i)),
+      schemaVersion: 38,
+      version: 1,
+    };
+  }
+}
+
+// Example: Microservice RED dashboard
+const generator = new GrafanaDashboardGenerator();
+const dashboard = generator.generateDashboard({
+  title: 'API Service RED Dashboard',
+  tags: ['api', 'microservice', 'sre'],
+  timeRange: '6h',
+  refreshInterval: '30s',
+  panels: [
+    { title: 'Request Rate', type: 'graph', datasource: 'Prometheus', query: 'rate(http_requests_total[5m])', unit: 'reqps' },
+    { title: 'Error Rate', type: 'graph', datasource: 'Prometheus', query: 'rate(http_requests_total{status=~"5.."}[5m])', unit: 'reqps', thresholds: [{ value: 5, color: 'red' }] },
+    { title: 'Latency p99', type: 'graph', datasource: 'Prometheus', query: 'histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m]))', unit: 's' },
+    { title: 'Error Budget', type: 'stat', datasource: 'Prometheus', query: 'error_budget_remaining', unit: 'percent', thresholds: [{ value: 0, color: 'red' }, { value: 50, color: 'yellow' }, { value: 100, color: 'green' }] },
+  ],
+});
+
+console.log(JSON.stringify(dashboard, null, 2));
+```
+
+This approach enables teams to manage monitoring configurations in version control, enforce dashboard standards, and generate per-service dashboards from templates.
+
+## Mermaid: SRE Incident Response Workflow
+
+```mermaid
+flowchart TD
+    A[Incident Occurs] --> B{Automated Detection?}
+    B -->|Yes| C[Alert triggers via Alertmanager]
+    B -->|No| D[User reports issue]
+    C --> E[On-call engineer acknowledged]
+    D --> E
+    E --> F{Burn rate within error budget?}
+    F -->|Yes: Within budget| G[Classify as low priority]
+    F -->|No: Budget overrun| H[Classify as high priority]
+    G --> I[Fix during business hours]
+    H --> J[Immediate incident response]
+    J --> K[Declare severity level]
+    K --> L{Severity >= P2?}
+    L -->|Yes| M[Incident commander assigned]
+    L -->|No| N[Engineer handles solo]
+    M --> O[Communicate status page update]
+    N --> O
+    O --> P[Root cause analysis begins]
+    P --> Q[Implement fix]
+    Q --> R[Run postmortem]
+    R --> S[Add monitoring & alerting]
+    S --> T[Update runbooks]
+    T --> U[Conduct incident review]
+    U --> V[Track action items]
+    V --> A
+```
+
+## Mermaid: Error Budget Burn Rate Visualization
+
+```mermaid
+flowchart LR
+    subgraph "Monthly Error Budget (99.9% SLO)"
+        A[Total time: 43m 12s budgeted downtime]
+    end
+    subgraph "Budget Consumption"
+        B[Week 1: 15m used]
+        C[Week 2: 8m used]
+        D[Week 3: 12m used]
+        E[Week 4: 5m remaining]
+    end
+    subgraph "Burn Rate Alerts (multi-window approach)"
+        F["<1x: Normal - no action"]
+        G["1-2x: Warning - review ops"]
+        H["2-5x: Page - immediate"]
+        I[">5x: Critical - freeze deploys"]
+    end
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+```
+
+## Deeper Explanation: Implementing SLO-Driven Operations
+
+Error budgets are the foundation of SRE practice. They determine when reliability concerns trump feature velocity:
+
+**When error budget is full (>50% remaining):**
+- Deployments proceed normally
+- Feature velocity is priority
+- Technical debt addressed at normal pace
+
+**When error budget is depleting (10-50% remaining):**
+- Deployments are gated: require additional testing or longer canary
+- Team shifts focus to reliability improvements
+- On-call rotations get additional support
+
+**When error budget is exhausted (<10% remaining):**
+- Feature deployments freeze entirely
+- All engineering effort goes to reliability
+- Incident response activated for any further degradation
+- Postmortem required before deployments resume
+
+**Calculating error budget programmatically:**
+
+```typescript
+interface SLOConfig {
+  target: number; // e.g., 0.999 for 99.9%
+  windowDays: number;
+  totalRequests: number;
+  successfulRequests: number;
+}
+
+class ErrorBudgetCalculator {
+  calculateBudget(config: SLOConfig): {
+    totalBudgetSeconds: number;
+    usedBudgetSeconds: number;
+    remainingBudget: number;
+    burnRate: number;
+    status: string;
+  } {
+    const totalSeconds = config.windowDays * 24 * 3600;
+    const allowedFailures = totalSeconds * (1 - config.target);
+    const actualAvailability = config.successfulRequests / config.totalRequests;
+    const actualFailures = totalSeconds * (1 - actualAvailability);
+    const budget = ((allowedFailures - actualFailures) / allowedFailures) * 100;
+    const burnRate = actualFailures / (totalSeconds * (1 - config.target));
+
+    return {
+      totalBudgetSeconds: Math.round(allowedFailures),
+      usedBudgetSeconds: Math.round(actualFailures),
+      remainingBudget: Math.round(budget * 100) / 100,
+      burnRate: Math.round(burnRate * 100) / 100,
+      status: budget > 50 ? 'HEALTHY' : budget > 10 ? 'WARNING' : 'EXHAUSTED',
+    };
+  }
+}
+
+const calc = new ErrorBudgetCalculator();
+const result = calc.calculateBudget({
+  target: 0.999, windowDays: 30, totalRequests: 10000000, successfulRequests: 9995000,
+});
+console.log(JSON.stringify(result, null, 2));
+// Output: ~{ totalBudgetSeconds: 2592, usedBudgetSeconds: 1296, remainingBudget: 50, burnRate: 0.5, status: "HEALTHY" }
+```
+
+### Alert Fatigue and Noise Reduction
+
+**Common causes of alert fatigue:**
+- Too many alerts firing simultaneously during incidents
+- Alerts that never trigger any action (dead alerts)
+- Alerts that always fire but are always ignored (background noise)
+- Alerts with no clear runbook or remediation steps
+
+**Strategies for reducing noise:**
+1. **Alert on symptoms, not causes:** Alert when users are affected (latency exceeds threshold, error rate increases), not when internal metrics deviate.
+2. **Use alert aggregation:** Group related alerts into a single notification. Alertmanager's grouping feature prevents alert storms.
+3. **Implement alert suppression:** During scheduled maintenance, suppress related alerts using maintenance windows.
+4. **Require sustained duration:** Fire alerts only when a condition persists for a minimum duration (e.g., 5 minutes).
+5. **Remove zombie alerts:** Quarterly audit of all alert rules. Remove any that haven't fired or been acted on in 90 days.
+
+**Alert routing based on severity:**
+
+```typescript
+enum AlertSeverity { CRITICAL = 'CRITICAL', WARNING = 'WARNING', INFO = 'INFO' }
+
+interface AlertConfig {
+  severity: AlertSeverity;
+  condition: string;
+  duration: string;
+  notificationChannels: string[];
+  runbook?: string;
+}
+
+const alertConfigs: AlertConfig[] = [
+  {
+    severity: AlertSeverity.CRITICAL,
+    condition: 'error_rate > 5%',
+    duration: '5m',
+    notificationChannels: ['pagerduty', 'slack-urgent'],
+    runbook: '/runbooks/high-error-rate.md',
+  },
+  {
+    severity: AlertSeverity.WARNING,
+    condition: 'error_rate > 2%',
+    duration: '10m',
+    notificationChannels: ['slack-alerts'],
+  },
+  {
+    severity: AlertSeverity.INFO,
+    condition: 'disk_usage > 80%',
+    duration: '30m',
+    notificationChannels: ['slack-alerts'],
+  },
+];
+```
+
+### Multi-Tenant Monitoring Design
+
+In enterprise environments, monitoring must support multiple teams and services:
+
+```mermaid
+flowchart TD
+    subgraph "Service A Team"
+        A1[App Metrics] --> A2[Team Grafana]
+        A2 --> A3[Team Alertmanager]
+    end
+    subgraph "Service B Team"
+        B1[App Metrics] --> B2[Team Grafana]
+        B2 --> B3[Team Alertmanager]
+    end
+    subgraph "Platform SRE Team"
+        A2 --> C1[Global Grafana]
+        B2 --> C1
+        A3 --> C2[Global Alertmanager]
+        B3 --> C2
+        C1 --> C3[Executive Dashboard]
+        C2 --> C4[On-call Rotation]
+    end
+
+    style A2 fill:#4A90D9,color:#fff
+    style B2 fill:#4A90D9,color:#fff
+    style C1 fill:#E6522C,color:#fff
+    style C2 fill:#F05032,color:#fff
+```
+
+Each team owns their own dashboards and alerts. The platform team provides global visibility and escalation oversight.
+
+### Service Level Objectives in Practice
+
+**Choosing SLO targets:**
+- **99.9%** (~8.7h downtime/year): Internal tools, development environments, non-critical services
+- **99.95%** (~4.4h downtime/year): Standard production services with acceptable maintenance windows
+- **99.99%** (~52m downtime/year): Customer-facing services, payment systems, core infrastructure
+- **99.999%** (~5m downtime/year): Critical infrastructure, emergency services, real-time systems
+
+**SLO implementation checklist:**
+1. Define SLIs for each service (latency, error rate, throughput, availability)
+2. Set SLO targets based on business requirements
+3. Calculate error budgets monthly
+4. Configure burn-rate alerts with multi-window, multi-burn-rate approach
+5. Gate deployments when budget is depleted
+6. Review SLOs quarterly and adjust targets based on actual performance
+
 ## Summary
 
 - SRE applies engineering principles to system operations to ensure high reliability.
@@ -414,6 +723,8 @@ console.log(`API budget remaining: ${apiBudget.remainingPercent}% - ${calc.alert
 2. Write a PromQL query to find the average CPU usage across all nodes in a cluster over the last hour.
 3. Identify three sources of "Toil" in an operations team and propose how an SRE would automate them.
 4. Create a burn-rate alert rule that fires when 5% of a 30-day error budget is consumed in 1 hour.
+5. Implement the TypeScript dashboard generator above to create a RED dashboard for a sample microservice. Extend it with panels for database connection pool usage and garbage collection metrics.
+6. Using the error budget calculator, model the following scenario: a service has a 99.95% SLO over 30 days. On day 15, the service experiences a 30-minute outage. Calculate the remaining budget and determine whether deployments should be gated.
 
 ### Challenge Problem
 1. You are tasked with setting up monitoring for a new microservices-based application. Describe the full stack you would choose and the first five alerts you would configure to ensure system health. Define SLOs for each service, calculate error budgets, and specify the monitoring dashboard layout using the Four Golden Signals framework. Include a toil reduction plan that would bring operational work below 50% of team time.

@@ -208,6 +208,177 @@ spec:
           averageUtilization: 70
 ```
 
+### Stateful Workloads in Orchestration
+
+Not all applications are stateless — databases, caches, and message queues require stateful orchestration:
+
+**StatefulSet (Kubernetes):**
+- Each pod gets a stable, unique network identity (`pod-0`, `pod-1`)
+- Persistent storage tied to pod identity (survives rescheduling)
+- Ordered, graceful deployment and scaling
+
+```yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+spec:
+  serviceName: postgres
+  replicas: 3
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    spec:
+      containers:
+        - name: postgres
+          image: postgres:16
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/postgresql/data
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 100Gi
+```
+
+**Operator pattern:** Extends Kubernetes with application-specific operational knowledge.
+- **Prometheus Operator:** Manages monitoring stack lifecycle
+- **Kafka Operator:** Handles topic creation, partition reassignment, broker scaling
+- **Postgres Operator:** Manages backups, replication, failover
+
+```mermaid
+flowchart LR
+    subgraph "StatefulSet"
+        S[Service: postgres] --> P0[Pod: postgres-0<br/>Stable Identity]
+        S --> P1[Pod: postgres-1<br/>Stable Identity]
+        S --> P2[Pod: postgres-2<br/>Stable Identity]
+        P0 --> PVC0[PVC: data-postgres-0]
+        P1 --> PVC1[PVC: data-postgres-1]
+        P2 --> PVC2[PVC: data-postgres-2]
+    end
+```
+
+### Advanced Scheduling
+
+Fine-grained control over pod placement:
+
+**Taints and Tolerations:** Nodes repel pods that don't tolerate the taint.
+```yaml
+# Taint a node for dedicated GPU workloads
+kubectl taint nodes gpu-node gpu=true:NoSchedule
+
+# Pod tolerates the taint
+tolerations:
+  - key: "gpu"
+    operator: "Equal"
+    value: "true"
+    effect: "NoSchedule"
+```
+
+**Node Affinity:** Attract pods to specific nodes.
+```yaml
+affinity:
+  nodeAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+      nodeSelectorTerms:
+        - matchExpressions:
+            - key: node.kubernetes.io/instance-type
+              operator: In
+              values:
+                - c5.large
+                - c5.xlarge
+    preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 100
+        preference:
+          matchExpressions:
+            - key: topology.kubernetes.io/zone
+              operator: In
+              values:
+                - us-east-1a
+```
+
+**Pod Topology Spread Constraints:** Distribute pods across failure domains:
+```yaml
+topologySpreadConstraints:
+  - maxSkew: 1
+    topologyKey: topology.kubernetes.io/zone
+    whenUnsatisfiable: DoNotSchedule
+    labelSelector:
+      matchLabels:
+        app: web
+```
+
+### Pod Lifecycle and Termination
+
+Understanding pod lifecycle ensures graceful handling:
+```mermaid
+flowchart LR
+    A[Pending] --> B[ContainerCreating]
+    B --> C[Running]
+    C --> D[PreStop Hook]
+    D --> E[SIGTERM]
+    E --> F[terminationGracePeriodSeconds]
+    F --> G[SIGKILL]
+    F -->|Graceful shutdown| H[Container Exits]
+    H --> I[Pod Terminated]
+```
+
+- **terminationGracePeriodSeconds** (default 30s): Time between SIGTERM and SIGKILL
+- **PreStop hook:** Runs before SIGTERM — drain connections, flush buffers
+- **PostStart hook:** Runs after container starts — register with service mesh
+
+```yaml
+lifecycle:
+  preStop:
+    exec:
+      command: ["/bin/sh", "-c", "sleep 10 && node drain-connections.js"]
+```
+
+```typescript
+// Simulate pod lifecycle with termination handling
+interface PodLifecycleConfig {
+  terminationGracePeriod: number;
+  hasPreStopHook: boolean;
+}
+
+class PodLifecycleSimulator {
+  async simulateShutdown(config: PodLifecycleConfig): Promise<void> {
+    console.log('📥 Pod shutdown initiated');
+
+    if (config.hasPreStopHook) {
+      console.log('  Running preStop hook...');
+      await this.sleep(2000);
+      console.log('  Connections drained');
+    }
+
+    console.log('  SIGTERM sent');
+    const shutdownStart = Date.now();
+
+    while (Date.now() - shutdownStart < config.terminationGracePeriod * 1000) {
+      // Check active connections
+      if (this.activeConnections === 0) {
+        console.log('  All connections closed, exiting gracefully');
+        return;
+      }
+      await this.sleep(1000);
+    }
+
+    // Grace period expired, force kill
+    console.log(`  Grace period (${config.terminationGracePeriod}s) expired, SIGKILL sent`);
+  }
+
+  private activeConnections: number = 5;
+  private async sleep(ms: number): Promise<void> {
+    return new Promise(r => setTimeout(r, ms));
+  }
+}
+```
+
 ### Service Discovery
 
 **DNS-based (Kubernetes):**
@@ -580,6 +751,8 @@ sim.getStatus();
 2. Compare three orchestration platforms for a team of 5 deploying 10 microservices.
 3. Implement an autoscaling strategy based on CPU utilization.
 4. Create a service discovery and load balancing design for a multi-service application.
+5. Extend the `OrchestrationSimulator` class to support: **StatefulSet** behavior (pods with stable identity — rescheduled pods retain their name), **pod topology spread constraints** (ensure pods are distributed across at least 3 nodes with a max skew of 1), and **graceful termination** (pods run a preStop hook that drains connections in 5s before SIGKILL at 30s).
+6. Implement a `SchedulingPolicyEngine` that accepts pod requirements and node labels then returns the optimal node assignment. Support the following constraint types: `requiredNodeAffinity` (pod must run on matching nodes), `preferredNodeAffinity` (weighted preference for node attributes), `podAntiAffinity` (prevent same-app pods on same node), and `toleration` (pod tolerates tainted nodes). Use the engine to schedule 6 web pods across a 3-node cluster where each node has a different zone label.
 
 ### Challenge Problem
 1. Design a complete orchestration strategy for a 12-service microservices platform. Include: platform selection with justification (Kubernetes vs Swarm vs Nomad), deployment configuration with health checks, resource limits, and rolling updates, service discovery and ingress architecture, autoscaling policy (CPU, memory, custom metrics), disaster recovery (multi-AZ, pod anti-affinity, PDB), a strategy document comparing the chosen platform against alternatives with cost, complexity, and capability analysis.

@@ -278,7 +278,88 @@ Structured logging outputs logs as machine-parseable structured data (JSON) rath
 | ERROR | Failed operations needing attention | DB connection failure, payment processing error |
 | FATAL | Catastrophic, immediate intervention | Application crash, data corruption |
 
-### 12.12 Logging Best Practices
+### 12.12 Monitoring as Code
+
+Define monitoring configuration declaratively, version-controlled alongside application code:
+
+```yaml
+# monitoring-as-code.yml
+prometheus:
+  rules:
+    - record: "service:error_ratio:rate5m"
+      expr: "sum(rate(http_requests_total{status=~\"5..\"}[5m])) / sum(rate(http_requests_total[5m]))"
+  alerts:
+    - name: "HighErrorRate"
+      expr: "service:error_ratio:rate5m > 0.01"
+      severity: "critical"
+      annotations:
+        runbook: "https://runbooks.example.com/high-error-rate"
+
+grafana:
+  dashboards:
+    - name: "Service Overview"
+      panels:
+        - title: "Request Rate"
+          metric: "sum(rate(http_requests_total[5m]))"
+        - title: "P99 Latency"
+          metric: "histogram_quantile(0.99, rate(http_request_duration_seconds_bucket[5m]))"
+```
+
+**Benefits of monitoring as code:**
+- Version-controlled dashboards and alerts
+- Code review for monitoring changes
+- Automated deployment across environments
+- Reproducible dashboards from scratch
+- Audit trail for monitoring changes
+
+**Tools:** Grafana (provisioning via YAML), Prometheus (config reload), Jsonnet (grafonnet) for dashboard generation, Terraform Grafana provider.
+
+### 12.13 Log Sampling and Cost Management
+
+At scale, storing every log entry becomes cost-prohibitive:
+
+| Strategy | Description | Savings |
+|----------|-------------|---------|
+| **Head-based sampling** | Keep first N logs per time window | Simple but may miss rare errors |
+| **Tail-based sampling** | Keep last N logs, drop rest | Loses some context |
+| **Importance sampling** | Keep all ERROR/FATAL, 50% WARN, 10% INFO, 0% DEBUG | High signal, controlled cost |
+| **Rule-based sampling** | Downsample high-volume paths, keep low-volume full | Best balance |
+| **Adaptive sampling** | Adjust rates based on error rate and volume | Optimal but complex |
+
+```typescript
+interface SamplingConfig {
+  level: string;
+  keepRate: number; // 0.0 to 1.0
+  maxPerSecond: number;
+}
+
+class LogSampler {
+  private configs: SamplingConfig[] = [
+    { level: 'ERROR', keepRate: 1.0, maxPerSecond: 1000 },
+    { level: 'WARN', keepRate: 0.5, maxPerSecond: 500 },
+    { level: 'INFO', keepRate: 0.1, maxPerSecond: 200 },
+    { level: 'DEBUG', keepRate: 0.0, maxPerSecond: 0 },
+  ];
+
+  shouldSample(level: string): boolean {
+    const config = this.configs.find(c => c.level === level);
+    if (!config) return false;
+    return Math.random() < config.keepRate;
+  }
+}
+```
+
+### 12.14 Observability Maturity Model
+
+| Level | Metrics | Logs | Traces | Alerting | Automation |
+|-------|---------|------|--------|----------|------------|
+| 1 - Initial | Basic CPU/mem | Unstructured files | None | Manual checks | None |
+| 2 - Reactive | Service-level dashboards | Centralized ELK | Manual trace injection | Basic email alerts | Runbooks |
+| 3 - Proactive | RED metrics, SLOs | Structured JSON | Distributed tracing | PagerDuty, on-call | Auto-remediation |
+| 4 - Predictive | ML anomaly detection | Log pattern analysis | Trace sampling | Severity-based routing | Self-healing |
+| 5 - Autonomous | AI-driven optimization | Automated root cause | Full trace fidelity | Predict-before-break | Auto-scaling, chaos |
+
+### 12.15 Logging Best Practices
 
 - Log in JSON format for machine parsing
 - Include correlation IDs (trace_id, request_id) for request tracing
@@ -540,6 +621,10 @@ Monitoring and logging provide visibility into system behavior. Prometheus colle
 1. Deploy Prometheus and node_exporter on a Linux host. Configure targets in prometheus.yml. Monitor CPU, memory, disk, and network metrics. Create a Grafana dashboard with panels for each metric.
 2. Write recording rules for CPU utilization, memory utilization, and disk space usage. Create alerting rules that fire when any resource exceeds 80% utilization for 5 minutes. Configure Alertmanager to send alerts to a webhook endpoint.
 3. Implement structured logging in a Node.js application using Pino or Winston. Output JSON logs with levels, timestamps, service name, correlation ID, and contextual fields. Ship logs to Loki using Promtail.
+
+### Application Problems (continued)
+4. Extend the `StructuredLogger` class to support: child loggers that inherit parent context, a sampling rate configuration (only log N% of INFO messages), structured error serialization (capture stack traces as JSON), and LogQL-formatted output that Loki can parse directly.
+5. Using the `AlertRuleGenerator` class, create a complete alerting strategy for a payment service that fires alerts at these thresholds: error rate > 0.5% for 5 minutes (critical), P99 latency > 2s for 10 minutes (warning), success rate < 99.9% over 1 hour (critical SLA breach), and queue depth > 1000 for 2 minutes (warning pending capacity).
 
 ### Challenge Problem
 

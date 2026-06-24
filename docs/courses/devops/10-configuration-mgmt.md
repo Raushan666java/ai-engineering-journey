@@ -259,6 +259,94 @@ In pull mode, nodes fetch configuration from Git and apply locally:
 - IoT and edge devices
 - Ephemeral instances that self-configure on boot
 
+### Ansible Molecule for Testing
+
+Molecule provides a framework for testing Ansible roles:
+
+```
+molecule init role myrole --driver docker
+molecule converge    # Apply role to test container
+molecule verify      # Run verification tests
+molecule test        # Full lifecycle: create, converge, verify, destroy
+```
+
+```yaml
+# molecule/default/molecule.yml
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: instance
+    image: geerlingguy/docker-ubuntu2204-ansible:latest
+    pre_build_image: true
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
+```
+
+```yaml
+# molecule/default/verify.yml
+- name: Verify role applied correctly
+  hosts: all
+  tasks:
+    - name: Check nginx is installed
+      package:
+        name: nginx
+        state: present
+      check_mode: yes
+
+    - name: Check nginx is running
+      service:
+        name: nginx
+        state: started
+      check_mode: yes
+```
+
+**Benefits of role testing:**
+- Catch regressions before production deployment
+- Reproducible test environments
+- CI integration for automated role validation
+- Documentation of expected behavior
+
+### Ansible Content Collections
+
+Collections package Ansible content (roles, modules, plugins, playbooks) in distributable bundles:
+
+```yaml
+# requirements.yml
+collections:
+  - name: community.docker
+    version: ">=3.0.0"
+  - name: kubernetes.core
+    version: ">=2.0.0"
+  - name: amazon.aws
+    version: ">=5.0.0"
+  - name: community.hashi_vault
+    version: ">=4.0.0"
+```
+
+**Using collections in playbooks:**
+```yaml
+- name: Deploy application
+  hosts: all
+  collections:
+    - community.docker
+    - kubernetes.core
+  tasks:
+    - name: Build image
+      docker_image:
+        name: myapp
+        tag: "{{ version }}"
+        source: build
+
+    - name: Deploy to K8s
+      k8s:
+        state: present
+        definition: "{{ lookup('template', 'deployment.yaml.j2') }}"
+```
+
 ### Delegation and Local Actions
 
 Delegate tasks to specific hosts:
@@ -538,6 +626,10 @@ console.log('\nHardcoded secrets audit:\n', vault.auditHardcodedSecrets('site.ym
 2. Write a compliance playbook that checks and remediates SSH hardening settings.
 3. Configure an Ansible workflow that deploys a Docker container with Kubernetes integration.
 4. Implement a secrets management pattern that loads database credentials from Vault at runtime.
+
+### Application Problems (continued)
+5. Using the `ComplianceScanner` class, implement a complete CIS Level 1 compliance scanner for Ubuntu Linux that checks: SSH configuration (no root login, key-only auth), filesystem permissions (shadow, passwd, sudoers), kernel parameters (IP forwarding disabled, source routing disabled), and audit logging enabled. Generate an HTML report with severity-colored rows.
+6. Implement a `DynamicInventoryManager` class that: queries a simulated AWS API (return list of EC2 instances with tags), groups instances by tag (Role, Environment), generates an Ansible-compatible inventory YAML with host groups, and supports filtering by custom criteria (e.g., "all production web servers with instance type t3.large").
 
 ### Challenge Problem
 1. Design a complete enterprise configuration management system using Ansible including: dynamic inventory for 500+ AWS EC2 instances across 3 environments, Ansible Tower/AWX with RBAC (developers can deploy to dev/staging, operators approve prod), compliance automation running CIS benchmarks daily with email reports for violations, secrets integration with HashiCorp Vault for dynamic database credentials, pull-mode configuration for auto-scaling instances using ansible-pull, CI/CD integration running playbooks from GitHub Actions on infrastructure changes, and a self-service portal (via Tower API) allowing developers to trigger common playbooks.

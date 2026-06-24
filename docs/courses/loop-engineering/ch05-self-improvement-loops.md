@@ -510,6 +510,85 @@ async function main() {
 main();
 ```
 
+### TypeScript: Preference Optimization Loop
+
+```typescript
+interface PreferencePair { chosen: string; rejected: string; reward: number; }
+
+class SelfImprovementLoop {
+  private policy: Map<string, number> = new Map();
+
+  generate(prompt: string): string {
+    return [...this.policy.entries()]
+      .filter(([k]) => k.startsWith(prompt))
+      .sort((a, b) => b[1] - a[1])[0]?.[0] ?? `${prompt}_default`;
+  }
+
+  critique(output: string): string[] {
+    const issues: string[] = [];
+    if (output.length < 10) issues.push("too_short");
+    if (output.includes("harmful")) issues.push("unsafe");
+    return issues;
+  }
+
+  revise(output: string, critique: string[]): string {
+    let r = output;
+    if (critique.includes("too_short")) r += "_expanded";
+    if (critique.includes("unsafe")) r = r.replace(/harmful/g, "safe");
+    return r;
+  }
+
+  collectPairs(outputs: string[]): PreferencePair[] {
+    const pairs: PreferencePair[] = [];
+    for (let i = 0; i < outputs.length; i++)
+      for (let j = i + 1; j < outputs.length; j++) {
+        const a = this.policy.get(outputs[i]) ?? 0.5;
+        const b = this.policy.get(outputs[j]) ?? 0.5;
+        pairs.push({
+          chosen: a >= b ? outputs[i] : outputs[j],
+          rejected: a >= b ? outputs[j] : outputs[i],
+          reward: a >= b ? 1 : 0,
+        });
+      }
+    return pairs;
+  }
+
+  async run(prompts: string[], iterations = 10): Promise<void> {
+    for (let iter = 0; iter < iterations; iter++) {
+      const outputs = prompts.map(p => this.revise(this.generate(p), this.critique(this.generate(p))));
+      for (const p of this.collectPairs(outputs))
+        this.policy.set(p.chosen, (this.policy.get(p.chosen) ?? 0) + 0.01);
+    }
+  }
+}
+```
+
+### Mermaid: DPO vs RLHF
+
+```mermaid
+flowchart TD
+    subgraph RLHF["RLHF Pipeline"]
+        A1[Base Model] --> A2[Sample completions]
+        A2 --> A3[Human label preferences]
+        A3 --> A4[Train Reward Model]
+        A4 --> A5[Reward scores completions]
+        A5 --> A6[PPO optimizes policy]
+        A6 --> A7[Updated Model]
+        A7 -.-> A2
+    end
+
+    subgraph DPO["DPO Pipeline"]
+        B1[Base Model] --> B2[Sample pairs]
+        B2 --> B3[Human label preferences]
+        B3 --> B4[DPO loss function]
+        B4 --> B5[Direct policy update]
+        B5 --> B6[Updated Model]
+        B6 -.-> B2
+    end
+
+    RLHF --> |"No reward model needed"| DPO
+```
+
 ## Summary
 
 Self-improvement loops are the engine behind modern alignment and capability bootstrapping. Constitutional AI provides runtime guardrails through self-critique and revision against written principles. RLAIF and RLHF train reward models from preference pairs, then optimize policy against them. STaR and ReST bootstrap reasoning by filtering self-generated traces and retraining. DPO eliminates the reward model entirely, optimizing preferences directly with a closed-form objective.

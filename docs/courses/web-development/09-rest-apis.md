@@ -535,6 +535,123 @@ Test your understanding with these quick questions.
 
 </details>
 
+### Pagination Best Practices
+
+```typescript
+// Cursor-based pagination (stable with insertions/deletions)
+interface CursorPage<T> {
+  data: T[];
+  nextCursor: string | null;
+  hasMore: boolean;
+}
+
+async function paginatePosts(cursor?: string, limit = 20): Promise<CursorPage<Post>> {
+  const posts = await prisma.post.findMany({
+    take: limit + 1, // fetch one extra to check hasMore
+    ...(cursor ? { cursor: { id: cursor }, skip: 1 } : {}),
+    orderBy: { createdAt: "desc" },
+  });
+
+  const hasMore = posts.length > limit;
+  const data = hasMore ? posts.slice(0, limit) : posts;
+
+  return {
+    data,
+    nextCursor: hasMore ? data[data.length - 1].id : null,
+    hasMore,
+  };
+}
+
+// Offset-based pagination (simpler, unstable with mutations)
+interface OffsetPage<T> {
+  data: T[];
+  page: number;
+  totalPages: number;
+  total: number;
+  hasNext: boolean;
+  hasPrev: boolean;
+}
+
+app.get("/api/posts", async (req, res) => {
+  const page = Math.max(1, Number(req.query.page) || 1);
+  const limit = Math.min(100, Number(req.query.limit) || 20);
+  const skip = (page - 1) * limit;
+
+  const [data, total] = await Promise.all([
+    prisma.post.findMany({ skip, take: limit }),
+    prisma.post.count(),
+  ]);
+
+  res.json({
+    data,
+    page,
+    totalPages: Math.ceil(total / limit),
+    total,
+    hasNext: page * limit < total,
+    hasPrev: page > 1,
+  } satisfies OffsetPage<Post>);
+});
+```
+
+### Error Handling API Pattern
+
+```typescript
+// Standardized API error shape
+interface ApiError {
+  status: number;
+  code: string;
+  message: string;
+  details?: Record<string, string[]>;
+  requestId?: string;
+}
+
+// Error class hierarchy
+class AppError extends Error {
+  constructor(
+    public statusCode: number,
+    public code: string,
+    message: string,
+    public details?: Record<string, string[]>
+  ) {
+    super(message);
+  }
+}
+
+class NotFoundError extends AppError {
+  constructor(resource: string, id: string) {
+    super(404, "NOT_FOUND", `${resource} with id ${id} not found`);
+  }
+}
+
+class ValidationError extends AppError {
+  constructor(details: Record<string, string[]>) {
+    super(400, "VALIDATION_ERROR", "Input validation failed", details);
+  }
+}
+
+// Centralized error handler
+app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+  if (err instanceof AppError) {
+    return res.status(err.statusCode).json({
+      status: err.statusCode,
+      code: err.code,
+      message: err.message,
+      ...(err.details && { details: err.details }),
+      requestId: req.id,
+    } satisfies ApiError);
+  }
+
+  // Unexpected error
+  console.error("Unhandled error:", err);
+  res.status(500).json({
+    status: 500,
+    code: "INTERNAL_ERROR",
+    message: "An unexpected error occurred",
+    requestId: req.id,
+  } satisfies ApiError);
+});
+```
+
 ## Summary
 
 REST API design follows resource-oriented principles with consistent URI naming, proper HTTP method usage, and appropriate status codes. Key practices include input validation with Zod, structured error responses, pagination, filtering, sorting, and comprehensive documentation with OpenAPI. Versioning strategies ensure backward compatibility as APIs evolve.

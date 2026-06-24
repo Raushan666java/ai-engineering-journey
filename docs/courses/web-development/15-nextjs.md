@@ -329,7 +329,93 @@ export default async function sitemap() {
 }
 ```
 
-## 15.7 Image and Font Optimization
+## 15.7 Error Handling and Loading States
+
+```typescript
+// app/dashboard/error.tsx
+"use client";
+
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error & { digest?: string };
+  reset: () => void;
+}) {
+  return (
+    <div className="error-container">
+      <h2>Something went wrong!</h2>
+      <p>{error.message}</p>
+      <button onClick={() => reset()}>Try again</button>
+    </div>
+  );
+}
+
+// app/dashboard/loading.tsx
+export default function Loading() {
+  return (
+    <div className="loading-skeleton">
+      <div className="skeleton-header" />
+      <div className="skeleton-content">
+        {Array.from({ length: 3 }).map((_, i) => (
+          <div key={i} className="skeleton-card" />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// app/dashboard/not-found.tsx
+import Link from "next/link";
+
+export default function NotFound() {
+  return (
+    <div>
+      <h2>Page Not Found</h2>
+      <p>Could not find the requested dashboard page.</p>
+      <Link href="/dashboard">Return to Dashboard</Link>
+    </div>
+  );
+}
+```
+
+### Route Groups and Parallel Routes
+
+```typescript
+// Route groups organize routes without affecting URL structure
+// app/(marketing)/about/page.tsx -> /about
+// app/(marketing)/pricing/page.tsx -> /pricing
+// app/(dashboard)/dashboard/page.tsx -> /dashboard
+
+// Parallel routes render multiple pages in the same layout
+// app/dashboard/@analytics/page.tsx
+// app/dashboard/@tasks/page.tsx
+
+// app/dashboard/layout.tsx
+export default function DashboardLayout({
+  children,
+  analytics,
+  tasks,
+}: {
+  children: React.ReactNode;
+  analytics: React.ReactNode;
+  tasks: React.ReactNode;
+}) {
+  return (
+    <div className="dashboard-grid">
+      <main>{children}</main>
+      <aside>{analytics}</aside>
+      <aside>{tasks}</aside>
+    </div>
+  );
+}
+
+// Intercepting routes for modal patterns
+// app/feed/page.tsx -> /feed
+// app/feed/(..)photo/[id]/page.tsx -> Intercepts /photo/123 from /feed
+```
+
+## 15.8 Image and Font Optimization
 
 ```typescript
 // Image optimization with next/image
@@ -472,6 +558,64 @@ Test your understanding with these quick questions.
 
 Next.js is a React framework providing SSR, SSG, ISR, and client rendering. The App Router uses file-based routing with nested layouts. Server Components fetch data directly without client JavaScript. API routes handle backend logic. Middleware intercepts requests. SEO is managed through metadata export and sitemap generation.
 
+### Server Actions Deep Dive
+
+Server Actions let you mutate server-side data directly from client components.
+
+```typescript
+// app/actions/todo.ts — Server Action
+"use server";
+
+import { revalidatePath } from "next/cache";
+
+export async function addTodo(formData: FormData) {
+  const title = formData.get("title");
+  if (!title || typeof title !== "string") {
+    throw new Error("Title is required");
+  }
+
+  const todo = await prisma.todo.create({
+    data: { title, userId: "user_123" },
+  });
+
+  revalidatePath("/todos");
+  return { success: true, todo };
+}
+```
+
+```typescript
+// app/todos/page.tsx — consuming Server Action
+export default function TodoPage() {
+  return (
+    <form action={addTodo}>
+      <input name="title" required />
+      <button type="submit">Add</button>
+    </form>
+  );
+}
+```
+
+### Caching Deep Dive
+
+Next.js has four cache layers. Understanding their interaction prevents stale data.
+
+```mermaid
+graph TD
+    A[Request] --> B[Full Route Cache persistent]
+    B -->|Cache MISS| C[Data Cache persistent]
+    B -->|Cache HIT| D[Serve cached page]
+    C --> E[Router Cache client 30s]
+    E -->|Navigate| F[React Cache per-request]
+    F --> G[Origin]
+```
+
+| Cache | Location | Duration | Invalidation |
+|-------|----------|----------|-------------|
+| Full Route Cache | Server (disk) | Persistent until rebuild | `revalidatePath`, `revalidateTag`, redeploy |
+| Data Cache | Server (disk) | Configurable via `next: { revalidate }` or `cache: "no-store"` | `revalidateTag`, time-based |
+| Router Cache | Client (memory) | 30s default, 5min for static pages | `router.refresh()`, mutation |
+| React Cache | Server (request) | Single request lifetime | Automatic (per-request) |
+
 ## Exercises
 
 ### Review Questions
@@ -486,6 +630,17 @@ Next.js is a React framework providing SSR, SSG, ISR, and client rendering. The 
 2. Implement ISR for a blog with hourly revalidation
 3. Add middleware for internationalization (i18n)
 
+4. Implement an error boundary and loading skeleton for a dashboard page that fetches data from three separate API endpoints.
+5. Create a modal using intercepting routes that shows a photo detail view when navigated from a gallery page.
+
 ### Challenge Project
 
 Build a multi-tenant SaaS application in Next.js with dynamic routing by tenant subdomain, middleware for authentication, ISR for public pages, API routes for data operations, image optimization for user uploads, and a complete sitemap with all public URLs.
+
+### Practical Takeaways
+
+1. **Default to Server Components** — fetch data in Server Components to eliminate client-side waterfalls and reduce bundle size. Add `"use client"` only for interactivity.
+2. **Use layouts for persistent UI** — navbars, sidebars, and footers belong in `layout.tsx` so they do not remount on navigation.
+3. **Choose the right rendering strategy** — SSG for static marketing pages, ISR for blog content with periodic updates, SSR for personalized dashboards, client rendering for highly interactive tools.
+4. **Leverage parallel routes for complex layouts** — render independent page sections (analytics, tasks, feed) concurrently in the same layout using `@slot` conventions.
+5. **Generate metadata dynamically** — use `generateMetadata()` to set per-page title, description, and Open Graph tags from fetched data for optimal SEO.

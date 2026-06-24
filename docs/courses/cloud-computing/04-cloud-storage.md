@@ -524,9 +524,47 @@ runDemo();
 **B) TTL (Time to Live).** TTL is set via Cache-Control headers and controls how long the edge location stores content before re-fetching from the origin server.
 </details>
 
+### TypeScript: Cost Calculator
+
+```typescript
+interface StorageCostConfig {
+  tier: "standard" | "infrequent" | "archive" | "glacier";
+  storageGb: number;
+  monthlyGetRequests: number;
+  monthlyPutRequests: number;
+}
+
+class StorageCostCalculator {
+  rates = {
+    standard: { perGb: 0.023, perGet: 4e-7, perPut: 5e-7 },
+    infrequent: { perGb: 0.0125, perGet: 1e-6, perPut: 1e-6 },
+    glacier: { perGb: 0.004, perGet: 4e-4, perPut: 3e-5 },
+    archive: { perGb: 0.001, perGet: 8e-4, perPut: 5e-5 },
+  };
+
+  monthlyCost(config: StorageCostConfig): number {
+    const r = this.rates[config.tier];
+    return config.storageGb * r.perGb + config.monthlyGetRequests * r.perGet + config.monthlyPutRequests * r.perPut;
+  }
+
+  compareTiers(config: Omit<StorageCostConfig, "tier">): Record<string, number> {
+    const result: Record<string, number> = {};
+    for (const tier of Object.keys(this.rates)) {
+      result[tier] = this.monthlyCost({ ...config, tier: tier as any });
+    }
+    return result;
+  }
+}
+// const calc = new StorageCostCalculator();
+// console.log(calc.compareTiers({ storageGb: 5000, monthlyGetRequests: 1e6, monthlyPutRequests: 1e5 }));
+```
+
 ## Summary
 
 - Cloud storage is categorized into Object, Block, and File models.
+- Object storage excels at unstructured data with HTTP access and 11 nines durability.
+- Block storage provides low-latency random I/O ideal for database workloads.
+- File storage enables NFS/SMB shared access across multiple compute instances.
 - Object storage (S3/Blob/GCS) provides extreme durability and scale via HTTP access.
 - Object versioning protects against accidental deletion and enables data recovery.
 - Lifecycle policies automate cost optimization by transitioning data to cheaper tiers.

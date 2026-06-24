@@ -543,6 +543,23 @@ console.log(simulateBirthdayCollision(23, 50000)); // ~0.507
 
 20. Show that $\text{Cov}(X, Y) = E[XY] - E[X]E[Y]$ and use it to prove that for independent variables, $\text{Cov}(X, Y) = 0$.
 
+### Mermaid: Probability Distributions
+
+```mermaid
+flowchart TD
+    A[Probability Distributions] --> B[Discrete]
+    A --> C[Continuous]
+    B --> D[Bernoulli]
+    B --> E[Binomial]
+    B --> F[Poisson]
+    C --> G[Uniform]
+    C --> H[Normal]
+    C --> I[Exponential]
+    D --> J["P(1)=p, P(0)=1-p"]
+    E --> K["P(k)=C(n,k)pᵏ(1-p)ⁿ⁻ᵏ"]
+    F --> L["P(k)=e⁻ˡ'λᵏ/k!"]
+```
+
 ## Summary
 
 - Probability measures likelihood from 0 to 1; all rules derive from Kolmogorov's axioms.

@@ -585,6 +585,14 @@ Test your understanding with these quick questions.
 6. Create a `ProductList` component that fetches from `/api/products`, displays loading/error/data states, and renders each product as a card with image, name, and price.
 7. Implement a `SearchFilter` component that takes a list of items and renders a search input that filters the list in real time as the user types.
 
+### Practical Takeaways
+
+1. **Components return JSX trees** — every component is a function returning a single root element. Use fragments (`<>...</>`) to avoid extra DOM nodes.
+2. **State drives the UI** — never mutate state directly. Use the setter function and treat state as immutable.
+3. **Keep components small** — if a component does more than one thing, split it. Aim for single-responsibility components under 50 lines.
+4. **Lift state up, drill props down** — shared state lives in the closest common ancestor. Pass data via props, not global state.
+5. **Effects have cleanup** — every `useEffect` that subscribes, timers, or event listeners must return a cleanup function to prevent memory leaks.
+
 ### Challenge Problem
 
 8. Build a multi-step checkout form with the following steps: (1) Shipping Address, (2) Payment Method, (3) Order Review, (4) Confirmation. Use a single parent component (`Checkout`) that holds all form state as a single object and passes down only the relevant slice to each step component. Implement:

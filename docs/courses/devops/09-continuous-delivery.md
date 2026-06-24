@@ -477,6 +477,162 @@ orchestrator.promote(release, 'dev', 'staging');
 
 ---
 
+## TypeScript: Canary Deployment Pipeline Controller
+
+TypeScript can orchestrate canary deployments with traffic shifting logic:
+
+```typescript
+// canary-deployment.ts
+// Manages canary deployment with gradual traffic shifting
+
+interface CanaryConfig {
+  serviceName: string;
+  namespace: string;
+  newVersion: string;
+  steps: number[];
+  observationPeriodMs: number;
+  errorRateThreshold: number;
+  healthEndpoint: string;
+}
+
+class CanaryDeployer {
+  private currentStep = 0;
+
+  constructor(private config: CanaryConfig) {}
+
+  async deploy(): Promise<void> {
+    console.log(`Starting canary deployment of ${this.config.newVersion}`);
+
+    for (const weight of this.config.steps) {
+      this.currentStep = weight;
+      console.log(`Shifting ${weight}% traffic to new version`);
+      await this.updateTrafficWeight(weight);
+      await this.observe();
+
+      if (await this.detectIssues()) {
+        console.error('Canary failed, initiating rollback');
+        await this.rollback();
+        return;
+      }
+    }
+
+    console.log('Canary deployment completed successfully');
+  }
+
+  private async updateTrafficWeight(weight: number): Promise<void> {
+    // In Kubernetes, this would update a Service or VirtualService
+    console.log(`kubectl set weight --service=${this.config.serviceName} --new=${weight}%`);
+  }
+
+  private async observe(): Promise<void> {
+    await new Promise(resolve => setTimeout(resolve, this.config.observationPeriodMs));
+  }
+
+  private async detectIssues(): Promise<boolean> {
+    // Check health endpoint
+    try {
+      const response = await fetch(this.config.healthEndpoint);
+      const data = await response.json() as { errorRate: number };
+      return data.errorRate > this.config.errorRateThreshold;
+    } catch {
+      return true;
+    }
+  }
+
+  private async rollback(): Promise<void> {
+    await this.updateTrafficWeight(0);
+    console.log('Rolled back to previous version');
+  }
+}
+
+// Example: Deploy API service v2.1
+const deployer = new CanaryDeployer({
+  serviceName: 'api-service',
+  namespace: 'production',
+  newVersion: 'v2.1',
+  steps: [5, 10, 25, 50, 75, 100],
+  observationPeriodMs: 300000, // 5 minutes per step
+  errorRateThreshold: 1, // rollback if error rate > 1%
+  healthEndpoint: 'http://api-service-canary/health',
+});
+
+deployer.deploy().catch(console.error);
+```
+
+## Mermaid: Deployment Strategy Decision Tree
+
+```mermaid
+flowchart TD
+    A[Choose Deployment Strategy] --> B{System complexity?}
+    B -->|Single service| C[Rolling update]
+    B -->|Multiple services| D{Stateful components?}
+    D -->|Yes| E[Rolling with health checks]
+    D -->|No| F{Downtime tolerance?}
+    F -->|Zero downtime required| G{Traffic control available?}
+    G -->|Yes| H[Blue-green deployment]
+    G -->|No| I[Canary with LB weight]
+    F -->|Some downtime OK| J[Rolling update]
+    F -->|Maintenance window| K[Recreate strategy]
+
+    style H fill:#4CAF50,color:#fff
+    style I fill:#FF9800,color:#fff
+    style J fill:#2196F3,color:#fff
+```
+
+## Mermaid: Feature Flag Architecture
+
+```mermaid
+flowchart LR
+    subgraph "Application"
+        APP[App Code] --> FLAG[Feature Flag SDK]
+        FLAG --> CODE1[Old Code Path]
+        FLAG --> CODE2[New Code Path]
+    end
+    subgraph "Flag Management"
+        UI[Dashboard UI] --> API[Flag API]
+        API --> DB[(Flag Config Store)]
+    end
+    subgraph "Targeting Rules"
+        DB --> R1[User % rollout]
+        DB --> R2[User ID ranges]
+        DB --> R3[Geo/region]
+        DB --> R4[Plan/account tier]
+    end
+    FLAG --> |Fetch rules| API
+    CODE2 --> |Canary metrics| MON[Monitoring]
+    MON --> |Auto-disable flag on error| API
+```
+
+## Deeper Explanation: Canary Analysis and Automation
+
+Canary deployments require automated analysis to determine if the new version is safe:
+
+**Statistical analysis techniques:**
+1. **Z-score comparison:** Compare canary error rate vs baseline. If z-score > 3, reject.
+2. **Mann-Whitney U test:** Non-parametric test comparing latency distributions. If p < 0.05, reject.
+3. **Confidence interval overlap:** If 95% CI of canary metrics does not overlap with baseline, reject.
+4. **Effect size (Cohen's d):** Even if statistically significant, is the difference practically significant?
+
+**Automated canary analysis configuration:**
+
+```typescript
+interface CanaryAnalysisConfig {
+  metrics: string[];
+  analysisDurationMinutes: number;
+  comparisonMethod: 'zscore' | 'mannwhitney' | 'ci_overlap';
+  threshold: number;
+  minimumSampleSize: number;
+}
+
+const analysisConfig: CanaryAnalysisConfig = {
+  metrics: ['error_rate', 'p99_latency', 'request_rate'],
+  analysisDurationMinutes: 15,
+  comparisonMethod: 'zscore',
+  threshold: 3.0,
+  minimumSampleSize: 100,
+};
+```
+
 ## Summary
 
 - Continuous Delivery ensures every commit is potentially deployable through automated pipelines and testing.
@@ -503,6 +659,9 @@ orchestrator.promote(release, 'dev', 'staging');
 2. Implement a feature flag system with targeted rollout based on user ID hashing.
 3. Create an environment promotion strategy for dev, staging, and production with gates.
 4. Write a deployment script that automatically rolls back if the error rate exceeds 1%.
+5. Implement the TypeScript canary deployer above. Extend it to support weighted traffic distribution using Kubernetes VirtualService or a service mesh (Istio/Linkerd).
+6. Create a release notes generator that parses conventional commits and produces markdown release notes grouped by type (feat, fix, breaking) with contributor attribution.
+7. Write a deployment decision matrix similar to the decision tree above. For each of these scenarios, select the appropriate strategy and justify: (a) a database migration, (b) a frontend CSS change, (c) a payment service API change.
 
 ### Challenge Problem
 1. Design a complete release management system including: deployment pipeline with environment promotion (dev → staging → prod) with automated gates, canary deployment strategy with 5-step traffic shifting (10%, 25%, 50%, 75%, 100%) with 5-minute observation periods, rollback automation triggered by error rate > 1%, latency p99 > 500ms, or health check failure, feature flag management with gradual rollout and kill switches, automated release notes generated from conventional commits, and a deployment dashboard showing current versions per environment, deployment history, and rollback status.

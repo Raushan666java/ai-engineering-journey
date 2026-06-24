@@ -378,7 +378,53 @@ Transition shorthand: `property duration timing-function delay`.
 
 The `animation` shorthand: `name duration timing-function delay iteration-count direction fill-mode play-state`.
 
-### 2.8 @font-face
+### 2.8 Container Queries
+
+Container queries allow styling based on a parent container's size rather than the viewport.
+
+```css
+/* Define a containment context */
+.card-container {
+  container-type: inline-size;
+  container-name: card;
+}
+
+/* Style based on container width */
+@container card (min-width: 400px) {
+  .card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 16px;
+  }
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@container card (max-width: 399px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* Container query units */
+.card-title {
+  font-size: clamp(1rem, 5cqw, 2rem); /* 5% of container width */
+}
+.card {
+  padding: 2cqw; /* 2% of container width */
+  margin-bottom: 2cqh; /* 2% of container height */
+}
+```
+
+### 2.9 @font-face
 
 Embed custom fonts for consistent typography:
 
@@ -525,6 +571,97 @@ Test your understanding with these quick questions.
 6. Build a sticky footer layout using Flexbox that keeps the footer at the bottom of the viewport even when content is sparse.
 7. Implement a dark-mode toggle using CSS custom properties: define a `[data-theme="dark"]` selector that overrides surface and text colors, and write the JavaScript to toggle the attribute.
 
+### Practical Takeaways
+
+1. **Always use `box-sizing: border-box` globally** — this single rule prevents countless layout headaches by including padding and border in element width calculations.
+2. **Master Flexbox for one-dimensional layouts** — learn `justify-content` (main axis), `align-items` (cross axis), and `flex: grow shrink basis` for 90% of layout needs.
+3. **Use CSS Grid for two-dimensional layouts** — `grid-template-areas` makes layout intent readable at a glance. Reserve Flexbox for content within grid cells.
+4. **Build mobile-first with `min-width` breakpoints** — base styles are for narrow screens; media queries add complexity as space increases.
+5. **Use container queries for reusable components** — container queries let a component adapt to its parent's size, not the viewport, making the component truly reusable in any context.
+
+### CSS Cascade Layers and @layer
+
+Cascade layers let authors control specificity order at the layer level.
+
+```css
+/* Declare layer order (first declared = lowest precedence) */
+@layer reset, base, components, utilities;
+
+/* Reset layer — zero specificity wins */
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* Base layer — element defaults */
+@layer base {
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+  }
+}
+
+/* Component layer — class-based styles */
+@layer components {
+  .card {
+    background: var(--color-surface);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+/* Utilities layer — highest precedence */
+@layer utilities {
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+}
+```
+
+### Container Queries Deep Dive
+
+Container queries let components respond to their parent size, not the viewport.
+
+```css
+/* Define containment context */
+.card-container {
+  container-type: inline-size;
+  container-name: card;
+}
+
+/* Query the container width */
+@container card (min-width: 400px) {
+  .card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+  }
+}
+
+@container card (max-width: 399px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Style queries — check container style values */
+@container card style(--theme: dark) {
+  .card { background: #222; color: #fff; }
+}
+```
+
+### Application Problems: at container widths >= 400px show a horizontal layout with image on the left, below 400px show a vertical stacked layout.
+9. Build a CSS-only accordion component using the `:target` pseudo-class or `details`/`summary` elements with smooth open/close transitions.
+
 ### Challenge Problem
 
-8. Build a complete responsive landing page layout using both Flexbox and Grid with the following constraints: mobile (single column, stacked), tablet (two columns for content, sidebar below), desktop (three-column grid with fixed-width sidebar, main content, and aside). Use only CSS (no JavaScript). Implement a sticky header, a hero section with centered content, a card grid, and a footer. Use `clamp()` for fluid typography. Add a `prefers-reduced-motion` media query that disables all animations. Include custom properties for the entire color scheme.
+10. Build a complete responsive landing page layout using both Flexbox and Grid with the following constraints: mobile (single column, stacked), tablet (two columns for content, sidebar below), desktop (three-column grid with fixed-width sidebar, main content, and aside). Use only CSS (no JavaScript). Implement a sticky header, a hero section with centered content, a card grid, and a footer. Use `clamp()` for fluid typography. Add a `prefers-reduced-motion` media query that disables all animations. Include custom properties for the entire color scheme.

@@ -441,6 +441,145 @@ flowchart LR
 **B) Consistency and Partition Tolerance.** Blockchains prioritize consistency (all nodes see the same state) and partition tolerance (network continues during splits). Availability may be temporarily sacrificed during network partitions or reorgs.
 </details>
 
+### TypeScript: Simple Blockchain
+
+```typescript
+import { createHash } from "node:crypto";
+
+class Block {
+  public hash: string;
+  constructor(
+    public index: number,
+    public timestamp: number,
+    public data: string,
+    public previousHash: string,
+    public nonce = 0
+  ) {
+    this.hash = this.computeHash();
+  }
+
+  computeHash(): string {
+    return createHash("sha256")
+      .update(this.index + this.timestamp + this.data + this.previousHash + this.nonce)
+      .digest("hex");
+  }
+
+  mine(difficulty: number): void {
+    while (this.hash.substring(0, difficulty) !== "0".repeat(difficulty)) {
+      this.nonce++;
+      this.hash = this.computeHash();
+    }
+  }
+}
+
+class Blockchain {
+  chain: Block[] = [];
+
+  constructor() { this.chain.push(this.genesis()); }
+
+  genesis(): Block {
+    return new Block(0, Date.now(), "Genesis Block", "0");
+  }
+
+  latest(): Block { return this.chain[this.chain.length - 1]; }
+
+  addBlock(data: string, difficulty = 4): void {
+    const block = new Block(
+      this.latest().index + 1, Date.now(), data, this.latest().hash
+    );
+    block.mine(difficulty);
+    this.chain.push(block);
+  }
+
+  isValid(): boolean {
+    for (let i = 1; i < this.chain.length; i++) {
+      const cur = this.chain[i];
+      const prev = this.chain[i - 1];
+      if (cur.hash !== cur.computeHash()) return false;
+      if (cur.previousHash !== prev.hash) return false;
+    }
+    return true;
+  }
+}
+// const bc = new Blockchain();
+// bc.addBlock("Tx1");
+// bc.addBlock("Tx2");
+// console.log(bc.isValid()); // true
+// bc.chain[1].data = "Tampered";
+// console.log(bc.isValid()); // false
+```
+
+### TypeScript: Merkle Tree
+
+```typescript
+import { createHash } from "node:crypto";
+
+const sha256 = (d: string): string =>
+  createHash("sha256").update(d).digest("hex");
+
+class MerkleNode {
+  constructor(
+    public left: MerkleNode | null,
+    public right: MerkleNode | null,
+    public hash: string
+  ) {}
+}
+
+class MerkleTree {
+  private root: MerkleNode | null = null;
+  build(transactions: string[]): void {
+    if (!transactions.length) throw new Error("No transactions");
+    let nodes = transactions.map(tx => new MerkleNode(null, null, sha256(tx)));
+    while (nodes.length > 1) {
+      const next: MerkleNode[] = [];
+      for (let i = 0; i < nodes.length; i += 2) {
+        const l = nodes[i];
+        const r = i + 1 < nodes.length ? nodes[i + 1] : l;
+        next.push(new MerkleNode(l, r, sha256(l.hash + r.hash)));
+      }
+      nodes = next;
+    }
+    this.root = nodes[0];
+  }
+  getRoot(): string {
+    if (!this.root) throw new Error("Tree not built");
+    return this.root.hash;
+  }
+  getProof(tx: string): { hash: string; left: boolean }[] {
+    const target = sha256(tx);
+    const proof: { hash: string; left: boolean }[] = [];
+    this.findProof(this.root, target, proof);
+    return proof;
+  }
+  private findProof(
+    node: MerkleNode | null,
+    target: string,
+    proof: { hash: string; left: boolean }[]
+  ): boolean {
+    if (!node) return false;
+    if (!node.left && !node.right) return node.hash === target;
+    if (this.findProof(node.left, target, proof)) {
+      if (node.right) proof.push({ hash: node.right.hash, left: false });
+      return true;
+    }
+    if (this.findProof(node.right, target, proof)) {
+      if (node.left) proof.push({ hash: node.left.hash, left: true });
+      return true;
+    }
+    return false;
+  }
+  static verifyProof(
+    rootHash: string,
+    tx: string,
+    proof: { hash: string; left: boolean }[]
+  ): boolean {
+    let cur = sha256(tx);
+    for (const s of proof) cur = sha256(s.left ? s.hash + cur : cur + s.hash);
+    return cur === rootHash;
+  }
+}
+```
+
 ## Summary
 
 - Blockchain is a decentralized, distributed ledger technology ensuring data integrity without central authority.

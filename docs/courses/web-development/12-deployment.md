@@ -297,7 +297,61 @@ jobs:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
 ```
 
-## 12.6 Monitoring and Logging
+## 12.6 Environment-Specific Configuration
+
+```typescript
+// config/index.ts
+import { z } from "zod";
+
+const envSchema = z.object({
+  NODE_ENV: z.enum(["development", "staging", "production", "test"]),
+  DATABASE_URL: z.string().url(),
+  REDIS_URL: z.string().url().optional(),
+  JWT_SECRET: z.string().min(32),
+  LOG_LEVEL: z.enum(["debug", "info", "warn", "error"]).default("info"),
+  PORT: z.coerce.number().default(4000),
+  CORS_ORIGIN: z.string().default("http://localhost:3000"),
+  SENTRY_DSN: z.string().url().optional(),
+});
+
+const env = envSchema.parse(process.env);
+export default env;
+
+// config/deploy.ts
+interface DeployConfig {
+  environment: string;
+  domain: string;
+  scale: { min: number; max: number };
+  features: { maintenance: boolean; beta: boolean };
+}
+
+const deployConfigs: Record<string, DeployConfig> = {
+  development: {
+    environment: "dev",
+    domain: "localhost:3000",
+    scale: { min: 1, max: 1 },
+    features: { maintenance: false, beta: true },
+  },
+  staging: {
+    environment: "stg",
+    domain: "staging.example.com",
+    scale: { min: 1, max: 2 },
+    features: { maintenance: false, beta: true },
+  },
+  production: {
+    environment: "prd",
+    domain: "example.com",
+    scale: { min: 2, max: 10 },
+    features: { maintenance: false, beta: false },
+  },
+};
+
+export function getDeployConfig(env: string): DeployConfig {
+  return deployConfigs[env] ?? deployConfigs.development;
+}
+```
+
+## 12.7 Monitoring and Logging
 
 ```typescript
 import pino from "pino";
@@ -324,6 +378,23 @@ app.use((req, res, next) => {
   });
   next();
 });
+```
+
+### Deployment Pipeline Architecture
+
+```mermaid
+graph LR
+    A[Git Push] --> B[GitHub Actions]
+    B --> C{Lint & Type Check}
+    C -->|Pass| D[Run Tests]
+    D -->|Pass| E[Build]
+    E --> F[Deploy to Staging]
+    F --> G[Smoke Tests]
+    G -->|Pass| H[Deploy to Production]
+    H --> I[Health Check Monitor]
+    I -->|Healthy| J[Done]
+    I -->|Unhealthy| K[Rollback]
+    K --> L[Previous Version]
 ```
 
 ### Health Check Endpoint
@@ -454,6 +525,93 @@ Test your understanding with these quick questions.
 
 Deployment transforms development code into production services. Modern platforms like Vercel, Netlify, and Railway abstract infrastructure management. Docker containerizes applications for consistent deployment across environments. CI/CD pipelines automate testing and deployment. Monitoring with structured logging and health checks ensures production reliability.
 
+### Rollback Strategies
+
+Rollbacks restore a previous known-good version when a deployment causes issues.
+
+```mermaid
+graph LR
+    A[Deploy v2.0] --> B{Health Check}
+    B -->|Pass| C[Gradual Traffic Shift]
+    B -->|Fail| D[Rollback to v1.0]
+    C --> E{Monitor 15min}
+    E -->|OK| F[Keep v2.0]
+    E -->|Errors| D
+```
+
+```typescript
+// Database rollback with migration reversal
+// package.json script
+{
+  "migrate:up": "prisma migrate deploy",
+  "migrate:down": "prisma migrate resolve --rolled-back",
+  "rollback": "npm run migrate:down && git revert HEAD --no-edit && git push"
+}
+
+// Feature flag gated — disable feature without redeploy
+async function getPricingPage() {
+  if (await featureFlags.isEnabled("new-pricing-v2")) {
+    return renderNewPricing();
+  }
+  return renderLegacyPricing();
+}
+```
+
+### Feature Flags with LaunchDarkly Pattern
+
+Feature flags decouple deployment from release — ship code dark and enable when ready.
+
+```typescript
+// Feature flag manager (LaunchDarkly-like pattern)
+class FeatureFlags {
+  private store = new Map<string, boolean>();
+
+  async isEnabled(flag: string, userId?: string): Promise<boolean> {
+    // Check DB/Redis cache (1s TTL)
+    return this.store.get(flag) ?? false;
+  }
+
+  // Kill switch — disable immediately without redeploy
+  async setFlag(flag: string, enabled: boolean) {
+    await redis.set(`flag:${flag}`, enabled ? "1" : "0", "EX", 3600);
+    this.store.set(flag, enabled);
+  }
+}
+
+// Usage
+const flags = new FeatureFlags();
+
+router.get("/checkout", async (req, res) => {
+  if (await flags.isEnabled("new-checkout-ui")) {
+    return res.render("checkout-v2");
+  }
+  return res.render("checkout-v1");
+});
+```
+
+### Canary Deployment
+
+Canary deployments route a small percentage of traffic to a new version.
+
+```yaml
+# docker-compose.canary.yml
+services:
+  app-stable:
+    image: myapp:v1.0
+    ports: ["3001:3000"]
+    environment:
+      - VERSION=stable
+
+  app-canary:
+    image: myapp:v2.0-canary
+    ports: ["3002:3000"]
+    environment:
+      - VERSION=canary
+
+# nginx — route 5% to canary
+# upstream app { server app-stable:3001 weight=95; server app-canary:3002 weight=5; }
+```
+
 ## Exercises
 
 ### Review Questions
@@ -468,6 +626,21 @@ Deployment transforms development code into production services. Modern platform
 2. Implement blue-green deployment strategy
 3. Set up Sentry error tracking in production
 
+4. Implement environment-specific configuration with Zod validation per environment (development, staging, production).
+5. Set up a GitHub Actions workflow that deploys to a staging environment and runs smoke tests before promoting to production.
+6. Implement a feature flag system backed by Redis that allows toggling a dark-mode feature without redeploying.
+7. Create a rollback script that reverts the last deployment by restoring the previous Docker image tag and reversing database migrations.
+
 ### Challenge Project
 
-Deploy a full-stack application (Next.js frontend + Express API + PostgreSQL) using Docker Compose on a VPS with custom domain, SSL via Let's Encrypt, automated backups, monitoring dashboard with Grafana, and CI/CD with GitHub Actions.
+Deploy a full-stack application (Next.js frontend + Express API + PostgreSQL) using Docker Compose on a VPS with custom domain, SSL via Let's Encrypt, automated backups, monitoring dashboard with Grafana, and CI/CD with GitHub Actions. Add canary deployment support that routes 5% of traffic to a new version, monitors error rates, and automatically rollbacks if the error rate exceeds 1%.
+
+### Practical Takeaways
+
+1. **Validate env vars at startup** — use Zod to validate all environment variables when the app boots. A startup crash is far easier to debug than a runtime failure from a missing variable.
+2. **Use multi-stage Docker builds** — separate deps, build, and runner stages keep production images minimal and secure.
+3. **Pin dependency versions in CI** — use `npm ci` (not `npm install`) for reproducible builds that match the lockfile exactly.
+4. **Layer caches** — CDN for static assets, browser cache for API responses, service worker for offline fallback. Each layer reduces load on the next.
+5. **Monitor with health checks** — every service should expose a `/health` endpoint that verifies connectivity to its critical dependencies (database, cache, external APIs).
+6. **Feature flags decouple deploy from release** — ship code dark, enable when ready. A kill switch lets you disable broken features without rolling back.
+7. **Canary deployments reduce blast radius** — route 5% of traffic to new versions, monitor for 15-30 minutes, then promote or rollback.

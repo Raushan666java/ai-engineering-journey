@@ -553,6 +553,39 @@ console.log(`z = ${z.toFixed(3)}, p = ${pValue.toFixed(4)}`);
 // z ≈ -1.21, p ≈ 0.226 — not significant
 ```
 
+### TypeScript: Bootstrap Resampling
+
+```typescript
+function bootstrapCI(
+  data: number[],
+  statistic: (sample: number[]) => number,
+  nResamples = 10000,
+  alpha = 0.05
+): { lower: number; upper: number; estimate: number } {
+  const estimates: number[] = [];
+  for (let i = 0; i < nResamples; i++) {
+    const sample = Array.from({ length: data.length }, () =>
+      data[Math.floor(Math.random() * data.length)]
+    );
+    estimates.push(statistic(sample));
+  }
+  estimates.sort((a, b) => a - b);
+  return {
+    lower: estimates[Math.floor(nResamples * alpha / 2)],
+    upper: estimates[Math.floor(nResamples * (1 - alpha / 2))],
+    estimate: statistic(data),
+  };
+}
+
+// Example: 95% CI for median
+const data = [2.3, 3.1, 4.5, 3.7, 5.2, 4.8, 6.1, 3.9, 5.5, 4.2];
+const ci = bootstrapCI(data, d => {
+  const s = [...d].sort((a, b) => a - b);
+  return s[Math.floor(s.length / 2)];
+});
+console.log(ci); // { lower, upper, estimate }
+```
+
 ## Notation Reference
 
 | Symbol | Meaning |

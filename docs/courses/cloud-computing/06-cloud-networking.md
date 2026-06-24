@@ -540,8 +540,42 @@ console.log("NAT Gateways:", architect.generateNatGateway(2));
 **C) Latency-based routing.** Latency-based routing directs traffic to the region that provides the lowest latency for the user. Geolocation routing routes based on the user's physical location, which is not the same as latency.
 </details>
 
+### TypeScript: CIDR Calculator
+
+```typescript
+function cidrRange(cidr: string): { network: string; broadcast: string; count: number } {
+  const [base, bits] = cidr.split("/");
+  const mask = ~(2 ** (32 - parseInt(bits)) - 1) >>> 0;
+  const ip = base.split(".").reduce((acc, oct) => (acc << 8) + parseInt(oct), 0) >>> 0;
+  const network = ip & mask;
+  const count = 2 ** (32 - parseInt(bits));
+  const broadcast = network | (count - 1);
+  const toIp = (n: number) => [(n >>> 24) & 255, (n >>> 16) & 255, (n >>> 8) & 255, n & 255].join(".");
+  return { network: toIp(network), broadcast: toIp(broadcast), count };
+}
+
+function availableSubnets(vpcCidr: string, subnetSize: number): string[] {
+  const { network, count } = cidrRange(vpcCidr);
+  const ips = network.split(".").reduce((acc, oct) => (acc << 8) + parseInt(oct), 0) >>> 0;
+  const subnetsPerVpc = count / subnetSize;
+  return Array.from({ length: subnetsPerVpc }, (_, i) => {
+    const start = ips + i * subnetSize;
+    const bits = 32 - Math.log2(subnetSize);
+    return `${[(start >>> 24) & 255, (start >>> 16) & 255, (start >>> 8) & 255, start & 255].join(".")}/${bits}`;
+  });
+}
+// console.log(availableSubnets("10.0.0.0/16", 256)); // 256 /24 subnets
+```
+
 ## Summary
 
+- VPCs isolate cloud resources within user-defined IP address ranges.
+- Security groups (stateful) and NACLs (stateless) provide layered firewall protection.
+- Load balancers distribute traffic and perform health checks across targets.
+- VPN and Direct Connect provide secure hybrid connectivity to on-premises.
+- Transit Gateway enables hub-and-spoke routing across VPCs and on-prem networks.
+- Route 53 offers latency, geo, weighted, and failover routing policies.
+- Multi-AZ architecture is essential for high availability in cloud networking.
 - A VPC provides network isolation with CIDR-defined IP ranges and subnet segmentation.
 - Security Groups are stateful instance-level firewalls; NACLs are stateless subnet-level firewalls.
 - ALB (L7) and NLB (L4) distribute traffic across targets with health check integration.

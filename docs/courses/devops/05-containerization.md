@@ -176,6 +176,79 @@ flowchart LR
 - Use AppArmor/SELinux for mandatory access control
 - Disable privilege escalation (`--security-opt no-new-privileges`)
 
+### Container Networking and Communication
+
+Containers communicate through various network models:
+
+```mermaid
+flowchart LR
+    subgraph "Host A"
+        C1[Container 1<br/>port 3000]
+        C2[Container 2<br/>port 3000]
+        B1[Bridge Network<br/>172.17.0.0/16]
+        C1 --- B1
+        C2 --- B1
+    end
+    subgraph "Host B"
+        C3[Container 3<br/>port 3000]
+        C4[Container 4<br/>port 3000]
+        B2[Bridge Network<br/>172.18.0.0/16]
+        C3 --- B2
+        C4 --- B2
+    end
+    B1 <--> O[Overlay Network]
+    B2 <--> O
+```
+
+**Network modes:**
+- **Bridge:** Default isolated network with internal DNS
+- **Host:** Container uses host network stack directly
+- **Overlay:** Multi-host networking for orchestration platforms
+- **Macvlan:** Assign MAC addresses for direct network attachment
+
+**Communication patterns:**
+- **Sidecar proxy:** Envoy, Linkerd for service mesh
+- **Ambassador:** Proxy container that brokers external connections
+- **Adapter:** Normalizes container output to monitoring systems
+
+### Container Runtime Deep Dive
+
+Container runtimes implement the OCI runtime specification and can be categorized by isolation level:
+
+| Runtime | Type | Isolation | Performance | Use Case |
+|---------|------|-----------|-------------|----------|
+| runc | Standard | Namespace/cgroup | Native | General-purpose containers |
+| crun | Standard (C) | Namespace/cgroup | ~30% faster than runc | High-density deployments |
+| Youki | Standard (Rust) | Namespace/cgroup | Comparable to crun | Memory-safe runtime |
+| Kata Containers | VM-based | Lightweight VM | ~10% overhead | Multi-tenant security |
+| gVisor | Sandboxed | Application kernel | ~30-50% overhead | Untrusted workloads |
+| Firecracker | MicroVM | Lightweight VM | Near-native | AWS Lambda/Fargate |
+
+**Choosing a runtime:**
+- Standard workloads with trusted containers → `runc` or `crun`
+- Multi-tenant SaaS with untrusted code → `Kata Containers`
+- Serverless/functions with fast startup → `Firecracker`
+- High-security environments with untrusted images → `gVisor`
+
+### Container Storage Patterns
+
+Container storage follows ephemeral-by-default with options for persistence:
+
+| Pattern | Description | Persistence | Use Case |
+|---------|-------------|-------------|----------|
+| Ephemeral | Container's writable layer | Lost on restart | Stateless apps |
+| Volume mount | Docker-managed storage | Survives restart | Databases, stateful apps |
+| Bind mount | Host directory mapped in | Host-persistent | Development hot-reload |
+| tmpfs | In-memory storage | Lost on restart | Secrets, cache |
+| CSI (Container Storage Interface) | Plugin-based storage for orchestrators | Orchestrator-managed | Production stateful workloads |
+
+**Container storage best practices:**
+- Separate compute from storage — use managed databases instead of database containers
+- Use persistent volumes for logs that must survive container restarts
+- Avoid storing secrets in container images — use secret injection mechanisms
+- Configure storage quotas per container to prevent disk exhaustion
+- Use ReadWriteMany volumes for shared file access across replicas
+
 ### Container Registries
 
 Registries store and distribute container images:
@@ -460,6 +533,92 @@ console.log(dockerfile);
 
 ---
 
+### Container Runtime Security
+
+Beyond image security, runtime container security enforces constraints on running containers:
+
+**Linux Capabilities:** Fine-grained privileges instead of root:
+```dockerfile
+# Drop all capabilities, add only what's needed
+RUN setcap cap_net_bind_service=+ep /usr/local/bin/app
+```
+```yaml
+# Docker Compose capability control
+services:
+  app:
+    cap_drop:
+      - ALL
+    cap_add:
+      - NET_BIND_SERVICE
+      - NET_ADMIN
+```
+
+**Seccomp Profiles:** Restrict system calls available to the container:
+```text
+# Default Docker seccomp profile blocks 44 of 300+ syscalls
+# Custom profile — allow only specific syscalls
+{
+  "defaultAction": "SCMP_ACT_ERRNO",
+  "architectures": ["SCMP_ARCH_X86_64"],
+  "syscalls": [
+    {"names": ["accept4", "bind", "connect", "execve", "exit", "exit_group", "fstat", "getdents64", "mmap", "openat", "read", "write"], "action": "SCMP_ACT_ALLOW"}
+  ]
+}
+```
+
+**AppArmor/SELinux:** Mandatory Access Control labels:
+```yaml
+# Kubernetes security context
+securityContext:
+  runAsNonRoot: true
+  runAsUser: 1000
+  capabilities:
+    drop: ["ALL"]
+  seccompProfile:
+    type: RuntimeDefault
+  appArmorProfile:
+    type: RuntimeDefault
+```
+
+```typescript
+// Container security benchmarking
+interface SecurityBenchmark {
+  category: string;
+  check: string;
+  passed: boolean;
+  severity: 'critical' | 'high' | 'medium' | 'low';
+}
+
+class ContainerSecurityBenchmarker {
+  runBenchmarks(): SecurityBenchmark[] {
+    return [
+      { category: 'User', check: 'Running as non-root user', passed: true, severity: 'critical' },
+      { category: 'Capabilities', check: 'All capabilities dropped except NET_BIND_SERVICE', passed: true, severity: 'high' },
+      { category: 'Filesystem', check: 'Root filesystem read-only', passed: false, severity: 'medium' },
+      { category: 'Network', check: 'No host network mode', passed: true, severity: 'high' },
+      { category: 'Seccomp', check: 'Seccomp profile applied', passed: true, severity: 'medium' },
+      { category: 'Resources', check: 'Memory limit set to 512MB', passed: true, severity: 'medium' },
+      { category: 'Secrets', check: 'No secrets in environment variables', passed: false, severity: 'critical' },
+    ];
+  }
+
+  generateReport(): string {
+    const results = this.runBenchmarks();
+    const passed = results.filter(r => r.passed).length;
+    const failed = results.filter(r => !r.passed);
+
+    let report = `# Container Security Benchmark Report\n\n`;
+    report += `**Score:** ${passed}/${results.length} checks passed\n\n`;
+
+    failed.forEach(f => report += `❌ [${f.severity.toUpperCase()}] ${f.category}: ${f.check}\n`);
+    report += '\n';
+    results.filter(r => r.passed).forEach(p => report += `✅ [${p.severity.toUpperCase()}] ${p.category}: ${p.check}\n`);
+
+    return report;
+  }
+}
+```
+
 ## Exercises
 
 ### Review Questions
@@ -474,6 +633,8 @@ console.log(dockerfile);
 2. Create a security scanning CI step that fails builds on critical vulnerabilities.
 3. Design an image tagging strategy that supports traceability and rollback.
 4. Implement resource limits for a containerized application running alongside other services.
+5. Write a TypeScript function that simulates OverlayFS layer merging. Given a list of layers (each represented as a `Map<string, string>` of file path to content), implement merge and diff operations. Show that upper layers shadow lower layers for the same file path.
+6. Using the ContainerSecurityScanner class, extend it to support: vulnerability exception management (allow specific CVEs with expiration), a CVSS score threshold configuration (fail builds above 7.0), and HTML report generation with color-coded severity levels.
 
 ### Challenge Problem
 1. Design a complete container strategy for a microservices architecture with 6 TypeScript services. Include: multi-stage Dockerfiles for each service (optimized for caching), a Docker Compose file for local development, a CI pipeline that builds, scans, and pushes images with immutable tags, a registry cleanup policy (keep last 30 days of images), a security hardening checklist applied to all images, and a base image update strategy to regularly rebuild images with security patches.

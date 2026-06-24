@@ -494,6 +494,100 @@ for a in [Dog(), Animal()]:
 - it is simpler
 
 
+## TypeScript Parallel
+
+TypeScript supports inheritance with `extends` and interfaces for contract enforcement:
+
+```typescript
+// Base class
+abstract class Shape3D {
+  constructor(protected name: string) {}
+
+  abstract volume(): number;       // like @abstractmethod
+  abstract surfaceArea(): number;  // like @abstractmethod
+
+  describe(): string {
+    return `${this.name}: volume=${this.volume()}, area=${this.surfaceArea()}`;
+  }
+}
+
+// Single inheritance with extends
+class Sphere extends Shape3D {
+  constructor(name: string, public radius: number) {
+    super(name);
+  }
+
+  volume(): number {
+    return (4 / 3) * Math.PI * this.radius ** 3;
+  }
+
+  surfaceArea(): number {
+    return 4 * Math.PI * this.radius ** 2;
+  }
+}
+
+// Mixin pattern in TypeScript (using interfaces)
+interface TimestampMixin {
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+// Apply mixin via class expression
+function applyTimestamp<TBase extends new (...args: any[]) => object>(
+  Base: TBase
+) {
+  return class extends Base implements TimestampMixin {
+    createdAt = new Date();
+    updatedAt = new Date();
+
+    touch(): void {
+      this.updatedAt = new Date();
+    }
+  };
+}
+
+class Note {
+  constructor(public content: string) {}
+}
+
+const TimestampedNote = applyTimestamp(Note);
+const note = new TimestampedNote("Hello");
+console.log(note.createdAt);  // Date object
+
+// Interface-based contract (like Protocol)
+interface Playable {
+  play(): void;
+  duration: number;
+}
+
+class MusicTrack implements Playable {
+  duration: number;
+  constructor(public title: string, duration: number) {
+    this.duration = duration;
+  }
+  play(): void {
+    console.log(`Playing ${this.title}`);
+  }
+}
+
+function playAll(items: Playable[]): void {
+  items.forEach(item => item.play());
+  // TypeScript guarantees type safety at compile time
+  // Python Protocol checks at runtime with isinstance()
+}
+```
+
+### Python vs TypeScript Inheritance
+
+| Concept | Python | TypeScript |
+|---------|--------|------------|
+| Base class call | `super().__init__()` | `super()` or omit |
+| Abstract method | `ABC` + `@abstractmethod` | `abstract` keyword + `abstract class` |
+| Multiple inheritance | Supported directly | Use mixins or interfaces |
+| Interface | `Protocol` / `ABC` | `interface` or `abstract class` |
+| Method override | Automatic | Automatic (explicit `override` keyword optional) |
+| super() in MRO | C3 linearization | Single chain (no multiple inheritance) |
+
 ## Summary
 
 - `super()` delegates to the next class in the MRO.

@@ -491,6 +491,102 @@ print(module.greet("Alice"))
 - Wheels are preferred over source distributions for faster installation.
 - Circular imports indicate design issues.
 
+## TypeScript Parallel
+
+TypeScript uses ES modules with `import`/`export` statements as the standard module system:
+
+```typescript
+// TypeScript: named exports vs default exports
+
+// math.ts -- module file
+export function add(a: number, b: number): number {
+  return a + b;
+}
+export const PI: number = 3.14159;
+export default class Calculator {
+  sum(...nums: number[]): number {
+    return nums.reduce((a, b) => a + b, 0);
+  }
+}
+
+// app.ts -- consumer file
+import Calculator, { add, PI } from "./math.js";
+import * as math from "./math.js";  // namespace import
+
+// Equivalent Python:
+// from math import add, PI
+// from math import Calculator
+// import math as m
+
+// TypeScript entry point check
+// Python: if __name__ == "__main__":
+// TypeScript: Not needed -- top-level code runs when file is executed directly
+// $ bun run app.ts  # or ts-node app.ts
+
+// Conditional execution pattern in Node
+if (require.main === module) {
+  console.log(add(2, 3));
+}
+```
+
+### TypeScript Module System vs Python
+
+| Feature | Python | TypeScript |
+|---------|--------|------------|
+| Default | `def foo()` in module | `export default class/function` |
+| Named export | `def foo()` (all names exported) | `export function foo()` |
+| Import | `import module` | `import * as mod from "./mod"` |
+| Selective | `from mod import foo` | `import { foo } from "./mod"` |
+| Aliasing | `import mod as m` | `import * as m from "./mod"` |
+| Re-export | `from .sub import foo` | `export { foo } from "./sub"` |
+| Package file | `__init__.py` | `index.ts` or `package.json` exports |
+
+### Publishing a Package to PyPI
+
+```mermaid
+flowchart LR
+    A[Project directory] --> B[pyproject.toml]
+    B --> C[Build: python -m build]
+    C --> D[.whl + .tar.gz]
+    D --> E[Upload: twine upload dist/*]
+    E --> F[PyPI]
+    F --> G[pip install your-package]
+```
+
+```python
+# pyproject.toml (modern standard)
+"""
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "example-package"
+version = "0.1.0"
+description = "A minimal Python package"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28",
+]
+"""
+
+# Build and publish commands:
+# $ python -m build          # Creates dist/*.whl and dist/*.tar.gz
+# $ twine check dist/*       # Verify distributions
+# $ twine upload dist/*      # Upload to PyPI
+```
+
+### Python Package Ecosystem
+
+```python
+# Common package categories
+data_science = ["numpy", "pandas", "matplotlib", "scipy", "scikit-learn"]
+web_dev = ["fastapi", "uvicorn", "django", "flask", "requests"]
+testing = ["pytest", "unittest", "coverage", "tox", "mock"]
+async = ["httpx", "aiohttp", "asyncio", "asyncpg"]
+devops = ["ansible", "fabric", "invoke", "docker-py"]
+```
+
 ## Exercises
 
 ### Review Questions

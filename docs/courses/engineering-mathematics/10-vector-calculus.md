@@ -504,6 +504,180 @@ This field IS divergence-free! This means the net flux through any closed surfac
 
 **Physical interpretation:** A divergence-free vector field represents a source-free flow — whatever flows into a region must flow out. This is the mathematical basis of incompressible fluid dynamics and conservation of mass.
 
+## TypeScript: Parametrized Surface Area
+
+```typescript
+type SurfaceParam = (u: number, v: number) => [number, number, number];
+
+function cross(a: number[], b: number[]): number[] {
+  return [
+    a[1] * b[2] - a[2] * b[1],
+    a[2] * b[0] - a[0] * b[2],
+    a[0] * b[1] - a[1] * b[0],
+  ];
+}
+
+function magnitude(v: number[]): number {
+  return Math.sqrt(v[0] ** 2 + v[1] ** 2 + v[2] ** 2);
+}
+
+function surfaceArea(
+  r: SurfaceParam,
+  uRange: [number, number],
+  vRange: [number, number],
+  nu: number,
+  nv: number
+): number {
+  const du = (uRange[1] - uRange[0]) / nu;
+  const dv = (vRange[1] - vRange[0]) / nv;
+  let area = 0;
+
+  for (let i = 0; i < nu; i++) {
+    for (let j = 0; j < nv; j++) {
+      const u = uRange[0] + i * du;
+      const v = vRange[0] + j * dv;
+
+      const rU = derivativeU(r, u, v, 1e-5);
+      const rV = derivativeV(r, u, v, 1e-5);
+      const dS = magnitude(cross(rU, rV));
+
+      area += dS * du * dv;
+    }
+  }
+  return area;
+}
+
+function derivativeU(r: SurfaceParam, u: number, v: number, h: number): number[] {
+  const p1 = r(u + h, v);
+  const p2 = r(u - h, v);
+  return [(p1[0] - p2[0]) / (2 * h), (p1[1] - p2[1]) / (2 * h), (p1[2] - p2[2]) / (2 * h)];
+}
+
+function derivativeV(r: SurfaceParam, u: number, v: number, h: number): number[] {
+  const p1 = r(u, v + h);
+  const p2 = r(u, v - h);
+  return [(p1[0] - p2[0]) / (2 * h), (p1[1] - p2[1]) / (2 * h), (p1[2] - p2[2]) / (2 * h)];
+}
+
+// Surface area of a sphere of radius R
+// Parametrization: r(u,v) = (R sin u cos v, R sin u sin v, R cos u)
+const sphere: SurfaceParam = (u, v) => [
+  2 * Math.sin(u) * Math.cos(v),
+  2 * Math.sin(u) * Math.sin(v),
+  2 * Math.cos(u),
+];
+
+const sphereArea = surfaceArea(sphere, [0, Math.PI], [0, 2 * Math.PI], 40, 60);
+console.log(`Sphere (R=2) surface area ≈ ${sphereArea.toFixed(4)} (expected: ${(4 * Math.PI * 4).toFixed(4)})`);
+```
+
+## TypeScript: Flux Computation via Divergence Theorem
+
+```typescript
+function tripleIntegral(
+  integrand: (x: number, y: number, z: number) => number,
+  xRange: [number, number],
+  yRange: [number, number],
+  zRange: [number, number],
+  nx: number,
+  ny: number,
+  nz: number
+): number {
+  const dx = (xRange[1] - xRange[0]) / nx;
+  const dy = (yRange[1] - yRange[0]) / ny;
+  const dz = (zRange[1] - zRange[0]) / nz;
+  let sum = 0;
+
+  for (let i = 0; i < nx; i++) {
+    for (let j = 0; j < ny; j++) {
+      for (let k = 0; k < nz; k++) {
+        const x = xRange[0] + (i + 0.5) * dx;
+        const y = yRange[0] + (j + 0.5) * dy;
+        const z = zRange[0] + (k + 0.5) * dz;
+        sum += integrand(x, y, z) * dx * dy * dz;
+      }
+    }
+  }
+  return sum;
+}
+
+// Example: F = [x, y, z], flux through cube [0,1]³
+// div(F) = 1 + 1 + 1 = 3
+// Flux = ∫∫∫ 3 dV = 3 * volume = 3
+const fluxViaDivergence = tripleIntegral(
+  (x, y, z) => 3, // div(F) = 3
+  [0, 1], [0, 1], [0, 1],
+  50, 50, 50
+);
+console.log(`Flux of F=[x,y,z] through unit cube ≈ ${fluxViaDivergence.toFixed(4)} (expected: 3.0000)`);
+
+// Example: F = [x³, y³, z³], flux through sphere of radius R
+// div(F) = 3x² + 3y² + 3z² = 3r²
+// In spherical: ∫∫∫ 3r² dV = 3 * 4π * R⁵/5 = 12πR⁵/5
+const R = 2;
+const expectedFlux = (12 * Math.PI * R ** 5) / 5;
+console.log(`Flux of F=[x³,y³,z³] through sphere R=${R}: expected = ${expectedFlux.toFixed(4)}`);
+```
+
+## Vector Calculus Theorem Relationships
+
+```mermaid
+graph TB
+    subgraph "Fundamental Theorem of Calculus"
+        FTC["∫ₐᵇ f'(x)dx = f(b) - f(a)"]
+    end
+    
+    subgraph "Gradient Theorem (1D → 3D)"
+        GT["∫_C ∇φ · dr = φ(b) - φ(a)"]
+    end
+    
+    subgraph "Green's Theorem (2D)"
+        GR["∮_C P dx + Q dy = ∬_D (∂Q/∂x - ∂P/∂y) dA"]
+    end
+    
+    subgraph "Stokes' Theorem (3D, Circulation)"
+        ST["∮_C F · dr = ∬_S (∇ × F) · dS"]
+    end
+    
+    subgraph "Divergence Theorem (3D, Flux)"
+        DT["∬_S F · dS = ∭_E (∇ · F) dV"]
+    end
+    
+    FTC -->|Generalizes to| GT
+    GT -->|Specializes to 2D| GR
+    GR -->|Generalizes to 3D| ST
+    GR -->|Divergence form| DT
+```
+
+## Physical Intuition Diagram
+
+```mermaid
+flowchart LR
+    subgraph "Gradient ∇f"
+        GRAD[Points uphill<br/>Direction of steepest ascent]
+    end
+    subgraph "Divergence ∇·F"
+        DIV[Measures outflow<br/>Source (+) or Sink (-)]
+    end
+    subgraph "Curl ∇×F"
+        CURL[Measures rotation<br/>Vorticity / Circulation]
+    end
+    
+    GRAD -->|Integrate| GT[Line integral = potential difference]
+    DIV -->|Integrate| DT[Flux = total sources inside]
+    CURL -->|Integrate| ST[Circulation = curl through surface]
+```
+
+### Additional Exercises
+
+9. **Flux Through a Cylinder:** Compute the flux of $\mathbf{F} = \langle x, y, 2z \rangle$ through the lateral surface of the cylinder $x^2 + y^2 = 4$, $0 \leq z \leq 3$ using both direct surface integration and the divergence theorem.
+
+10. **Conservative Field Comparison:** Show that $\mathbf{F} = \langle y \cos(xy), x \cos(xy) \rangle$ is conservative. Find its potential and compute the work done along the helix $\mathbf{r}(t) = \langle \cos t, \sin t, t \rangle$ from $t=0$ to $t=2\pi$.
+
+11. **Maxwell's Equation Verification:** Verify that $\mathbf{B} = \nabla \times \mathbf{A}$ (where $\mathbf{A}$ is the magnetic vector potential) automatically satisfies $\nabla \cdot \mathbf{B} = 0$. Create a TypeScript function that takes a vector potential $\mathbf{A}$ and numerically verifies this identity at several points.
+
+12. **Gradient Flow Implementation:** Implement gradient flow $\frac{dw}{dt} = -\nabla L(w)$ for the Rosenbrock function $f(x,y) = (1-x)^2 + 100(y - x^2)^2$ using Euler's method. Visualize the trajectory from $(0,0)$ toward the minimum at $(1,1)$.
+
 ## Notation Reference
 
 | Symbol | Meaning |

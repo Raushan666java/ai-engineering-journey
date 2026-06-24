@@ -327,9 +327,117 @@ const observer = new IntersectionObserver(
 document.querySelectorAll('img[data-src]').forEach((img) => observer.observe(img));
 ```
 
-### 4.7 ResizeObserver
+### 4.7 MutationObserver
 
-`ResizeObserver` reports changes to element dimensions â€” useful for responsive components.
+`MutationObserver` watches for DOM changes — useful for detecting when content is dynamically added.
+
+```javascript
+const observer = new MutationObserver((mutations) => {
+  for (const mutation of mutations) {
+    if (mutation.type === 'childList') {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === Node.ELEMENT_NODE) {
+          console.log('Element added:', node);
+          // Apply behavior to dynamically added elements
+          if (node.matches('[data-lazy]')) {
+            loadLazyContent(node);
+          }
+        }
+      });
+    }
+
+    if (mutation.type === 'attributes') {
+      console.log(`Attribute ${mutation.attributeName} changed`);
+    }
+
+    if (mutation.type === 'characterData') {
+      console.log('Text content changed');
+    }
+  }
+});
+
+observer.observe(document.getElementById('comments-section'), {
+  childList: true,      // Watch for added/removed children
+  subtree: true,        // Watch entire subtree
+  attributes: false,    // Watch attribute changes
+  characterData: false, // Watch text changes
+});
+
+// Disconnect when done
+// observer.disconnect();
+```
+
+### 4.8 Custom Element Lifecycle
+
+Custom elements (Web Components) provide lifecycle callbacks.
+
+```javascript
+class TooltipElement extends HTMLElement {
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+    this._tooltipVisible = false;
+    this._tooltipText = 'Default tooltip text';
+  }
+
+  // Called when element is added to DOM
+  connectedCallback() {
+    this._tooltipText = this.getAttribute('text') || this._tooltipText;
+    this.render();
+    this.addEventListener('mouseenter', this._showTooltip.bind(this));
+    this.addEventListener('mouseleave', this._hideTooltip.bind(this));
+  }
+
+  // Called when element is removed from DOM
+  disconnectedCallback() {
+    this.removeEventListener('mouseenter', this._showTooltip);
+    this.removeEventListener('mouseleave', this._hideTooltip);
+  }
+
+  // Called when observed attributes change
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'text') {
+      this._tooltipText = newValue;
+      this.render();
+    }
+  }
+
+  static get observedAttributes() {
+    return ['text'];
+  }
+
+  _showTooltip() { this._tooltipVisible = true; this.render(); }
+  _hideTooltip() { this._tooltipVisible = false; this.render(); }
+
+  render() {
+    this.shadowRoot.innerHTML = `
+      <style>
+        .tooltip { position: relative; display: inline-block; }
+        .tooltip-text {
+          visibility: ${this._tooltipVisible ? 'visible' : 'hidden'};
+          background: #333; color: #fff; padding: 4px 8px;
+          border-radius: 4px; position: absolute; bottom: 100%;
+        }
+      </style>
+      <div class="tooltip">
+        <slot></slot>
+        <div class="tooltip-text">${this._tooltipText}</div>
+      </div>
+    `;
+  }
+}
+
+customElements.define('my-tooltip', TooltipElement);
+```
+
+Usage in HTML:
+```html
+<my-tooltip text="Click to save your changes">
+  <button>Save</button>
+</my-tooltip>
+```
+
+### 4.9 ResizeObserver
 
 ```javascript
 const resizeObserver = new ResizeObserver((entries) => {
@@ -471,9 +579,21 @@ Test your understanding with these quick questions.
 6. Build an image gallery that uses `IntersectionObserver` to lazy-load images as the user scrolls, with a 100px rootMargin.
 7. Create a form with `FormData` that collects a user's name, email, profile picture (file), and selected interests (checkboxes). Log the complete `FormData` on submit.
 
+### Application Problems
+
+8. Build a custom `<my-avatar>` Web Component that displays a user avatar with initials fallback. It should accept `src`, `name`, and `size` attributes and render initials (first letter of name) as a fallback when the image fails to load.
+
 ### Challenge Problem
 
-8. Implement a fully accessible custom dropdown select (replacing `<select>`) using ARIA roles (`listbox`, `option`), keyboard navigation (arrow keys, Enter, Escape), and `ResizeObserver` to ensure the dropdown panel stays within the viewport. The component must:
+9. Implement a fully accessible custom dropdown select (replacing `<select>`) using ARIA roles
+
+### Practical Takeaways
+
+1. **Use event delegation for dynamic content** — attach one listener to a parent and use `event.target.closest()` to handle events from elements added after initial render.
+2. **Prefer `textContent` over `innerHTML`** — `textContent` is safe from XSS and faster because it does not parse HTML. Use `insertAdjacentHTML` when you must insert safe HTML.
+3. **Use `IntersectionObserver` for lazy loading** — it is more performant than scroll event listeners because it is browser-native and does not block the main thread.
+4. **Passive event listeners improve scroll performance** — add `{ passive: true }` to scroll and touch event listeners when you do not need `preventDefault()`.
+5. **Custom Elements encapsulate reusable behavior** — use Shadow DOM for style isolation and lifecycle callbacks for setup/cleanup. (`listbox`, `option`), keyboard navigation (arrow keys, Enter, Escape), and `ResizeObserver` to ensure the dropdown panel stays within the viewport. The component must:
    - Expand and collapse on click and Enter/Space
    - Navigate options with arrow keys (circular wrapping)
    - Set `aria-selected` on the active option

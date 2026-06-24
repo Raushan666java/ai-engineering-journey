@@ -283,9 +283,144 @@ Search engines use `<meta>` tags and structured data to understand page content 
 </head>
 ```
 
-### 1.6 HTML APIs
+### 1.6 The Picture Element and Responsive Images
 
-**Web Storage** provides key-value storage with two scopes: `localStorage` (persists across sessions) and `sessionStorage` (cleared when the tab closes).
+The `<picture>` element provides art-direction and format-fallback capabilities for responsive images.
+
+```html
+<picture>
+  <!-- AVIF: Best compression, not universally supported -->
+  <source srcset="/hero.avif" type="image/avif" media="(min-width: 1024px)" />
+  <source srcset="/hero-small.avif" type="image/avif" media="(max-width: 1023px)" />
+
+  <!-- WebP: Good fallback -->
+  <source srcset="/hero.webp" type="image/webp" media="(min-width: 1024px)" />
+  <source srcset="/hero-small.webp" type="image/webp" media="(max-width: 1023px)" />
+
+  <!-- JPEG: Universal fallback -->
+  <img src="/hero.jpg" alt="Hero banner" width="1200" height="600" loading="lazy" decoding="async" />
+</picture>
+```
+
+### 1.7 Microdata and Structured Data
+
+Structured data helps search engines understand page content and display rich snippets.
+
+```html
+<article itemscope itemtype="https://schema.org/Article">
+  <meta itemprop="identifier" content="https://example.com/blog/post-1" />
+  <h1 itemprop="headline">Introduction to HTML5</h1>
+  <p itemprop="description">A comprehensive guide to modern HTML5 features.</p>
+  <meta itemprop="datePublished" content="2026-01-15" />
+  <meta itemprop="author" content="Web Development Faculty" />
+
+  <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+    <img src="/images/html5-guide.png" alt="HTML5 Guide" itemprop="url" />
+    <meta itemprop="width" content="1200" />
+    <meta itemprop="height" content="630" />
+  </div>
+
+  <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+    <meta itemprop="name" content="AI Engineering Journey" />
+    <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+      <meta itemprop="url" content="https://example.com/logo.png" />
+    </div>
+  </div>
+</article>
+
+<!-- Breadcrumb structured data -->
+<nav aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <ol>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+      <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="/courses"><span itemprop="name">Courses</span></a>
+      <meta itemprop="position" content="2" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="/courses/web-dev"><span itemprop="name">Web Development</span></a>
+      <meta itemprop="position" content="3" />
+    </li>
+  </ol>
+</nav>
+```
+
+### 1.8 Web Components: Templates and Slots
+
+The `<template>` element holds HTML that is not rendered until cloned into the DOM.
+
+```html
+<template id="user-card-template">
+  <style>
+    .card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; }
+    .name { font-weight: bold; }
+  </style>
+  <div class="card">
+    <slot name="avatar"><img src="default-avatar.png" alt="" /></slot>
+    <p class="name"><slot name="fullname">Name</slot></p>
+    <p><slot name="email">Email</slot></p>
+  </div>
+</template>
+
+<user-card>
+  <img slot="avatar" src="alice.jpg" alt="Alice" />
+  <span slot="fullname">Alice Johnson</span>
+  <span slot="email">alice@example.com</span>
+</user-card>
+```
+
+```javascript
+// Instantiate template
+const template = document.getElementById("user-card-template");
+const clone = template.content.cloneNode(true);
+document.body.appendChild(clone);
+
+// Programmatic slot assignment
+class UserCard extends HTMLElement {
+  constructor() {
+    super();
+    const tmpl = document.getElementById("user-card-template");
+    this.attachShadow({ mode: "open" }).appendChild(tmpl.content.cloneNode(true));
+  }
+}
+customElements.define("user-card", UserCard);
+```
+
+### 1.9 Internationalization (i18n)
+
+The `lang` attribute and `Intl` API handle multilingual content.
+
+```html
+<html lang="fr">
+  <p>Bonjour le monde</p>
+</html>
+```
+
+```javascript
+// Intl.DateTimeFormat for locale-aware dates
+const date = new Date();
+const formatter = new Intl.DateTimeFormat("fr-FR", {
+  dateStyle: "full",
+  timeStyle: "short",
+});
+console.log(formatter.format(date)); // "mercredi 24 juin 2026 à 14:30"
+
+// Intl.NumberFormat for currency
+const price = new Intl.NumberFormat("de-DE", {
+  style: "currency",
+  currency: "EUR",
+}).format(1234.56);
+console.log(price); // "1.234,56 €"
+
+// Plural rules
+const pluralRules = new Intl.PluralRules("en-US");
+console.log(pluralRules.select(1)); // "one"
+console.log(pluralRules.select(3)); // "other"
+```
+
+### 1.10 HTML APIs
 
 ```javascript
 // Store
@@ -474,6 +609,25 @@ Test your understanding with these quick questions.
 6. Build a page layout using `<header>`, `<nav>`, `<main>`, `<article>`, `<aside>`, and `<footer>` that represents a blog post with a sidebar containing related links.
 7. Implement an audio player with fallback text and both MP3 and OGG source formats.
 
+### Application Problems
+
+### Practical Takeaways
+
+1. **Use semantic elements by default** — reach for `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>` before `<div>`. They improve SEO, accessibility, and code readability.
+2. **Always include `alt` text** — every `<img>` needs an `alt` attribute. Use `alt=""` for decorative images so screen readers ignore them.
+3. **Validate forms with HTML attributes first** — `required`, `pattern`, `min`, `max` provide zero-JS validation. Enhance with JavaScript, never replace.
+4. **Use `<picture>` for responsive images** — serve WebP/AVIF with JPEG fallback and different resolutions per viewport for bandwidth savings.
+5. **Add structured data** — Schema.org microdata or JSON-LD helps search engines display rich snippets, improving click-through rates.
+
+### Application Problems
+
+8. Implement the `<picture>` element to serve WebP images with a JPEG fallback, and specify different images for mobile vs desktop viewports.
+9. Add structured data (JSON-LD or microdata) to a recipe page that includes the recipe name, ingredients, cook time, and nutrition information.
+
 ### Challenge Problem
 
-8. Build a fully accessible tab panel component using only HTML and ARIA attributes. The component must have three tabs labeled "Description", "Specifications", and "Reviews". Include proper keyboard interaction semantics (`role`, `aria-selected`, `aria-controls`, `aria-labelledby`, `tabindex`). Demonstrate the expected DOM structure with all three tab panels containing placeholder content. Add JavaScript that handles click events to switch tabs, updating `aria-selected` and hiding/showing the corresponding panels. Ensure only the active tab panel is visible.
+10. Build a fully accessible tab panel component using only HTML and ARIA attributes. The component must have three tabs labeled "Description", "Specifications", and "Reviews". Include proper keyboard interaction semantics (`role`, `aria-selected`, `aria-controls`, `aria-labelledby`, `tabindex`). Demonstrate the expected DOM structure with all three tab panels containing placeholder content. Add JavaScript that handles click events to switch tabs, updating `aria-selected` and hiding/showing the corresponding panels. Ensure only the active tab panel is visible.
+
+11. Create a Web Component `<star-rating>` using `<template>` and Shadow DOM that displays 1-5 star ratings. It should accept a `value` attribute (1-5), render filled/empty stars using Unicode characters, emit a `change` custom event when a star is clicked, and use `<slot>` for a label. Style the component so that external CSS cannot affect its appearance.
+
+12. Build an internationalized product page that uses the `Intl.DateTimeFormat`, `Intl.NumberFormat`, and `Intl.PluralRules` APIs to display a product price, release date, and stock count in three different locales (en-US, de-DE, ja-JP). Use the `lang` attribute on the `<html>` element and demonstrate how a user could switch between locales with a button.

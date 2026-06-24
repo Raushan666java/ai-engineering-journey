@@ -57,6 +57,50 @@ Python 2.0 was released in 2000, introducing list comprehensions and garbage col
 
 The design philosophy is captured in The Zen of Python (PEP 20), which emphasises readability, simplicity, and explicitness over implicit behaviour.
 
+### TypeScript Parallel
+
+TypeScript (and JavaScript) share Python's multi-paradigm nature but with static typing and a C-family syntax:
+
+```typescript
+// TypeScript: compiled to JavaScript, static typing
+const greeting: string = "Hello, World!";
+console.log(greeting);
+
+// TypeScript runs on Node.js or in the browser
+// Equivalent of python --version:
+// $ node --version
+// $ tsc --version
+```
+
+While Python uses indentation for blocks, TypeScript uses curly braces `{}`. Both support REPL environments -- Python has `python`, TypeScript has `node` and `ts-node`.
+
+### More on Python's Design Philosophy
+
+The Zen of Python (PEP 20) includes aphorisms that guide language design:
+
+| Aphorism | Meaning |
+|----------|---------|
+| Beautiful is better than ugly | Readability matters; code is read more often than written |
+| Explicit is better than implicit | Clear code beats magic; imports should be explicit |
+| Simple is better than complex | Prefer simple solutions; avoid over-engineering |
+| Flat is better than nested | Shallow hierarchies are easier to understand |
+| There should be one obvious way to do it | Python values consistency over flexibility |
+
+```python
+# The Zen of Python in action
+import this  # Displays all 19 aphorisms
+```
+
+### Python vs. Other Languages: Philosophy Comparison
+
+| Language | Philosophy | Typing | Block Syntax |
+|----------|-----------|--------|--------------|
+| Python | Readability, simplicity | Dynamic (optional hints) | Indentation |
+| TypeScript | Reliability at scale | Static (fully typed) | Curly braces |
+| Java | WORA (write once, run anywhere) | Static | Curly braces |
+| Go | Simplicity, fast compilation | Static | Curly braces |
+| Ruby | Developer happiness | Dynamic | `do`/`end` + indentation |
+
 ## 1.2 Installing Python
 
 > **One-Sentence Takeaway:** Install Python from python.org or use Anaconda for data-science workflows.
@@ -91,6 +135,19 @@ conda --version
 
 
 The Read-Eval-Print Loop (REPL) is an interactive environment for experimenting with Python. Start it by typing `python` (or `python3`) in a terminal:
+
+```mermaid
+flowchart LR
+    A[Type python in terminal] --> B[REPL Starts]
+    B --> C[Read: Parse Input]
+    C --> D[Eval: Execute Expression]
+    D --> E[Print: Display Result]
+    E --> B
+    B -.-> F[Type exit\(\)]
+    F --> G[REPL Terminates]
+```
+
+Python REPL in action:
 
 ```python
 Python 3.12.0 (main, Oct  2 2023, 12:22:05)
@@ -256,10 +313,10 @@ pip install -r requirements.txt  # install from file
 
 Common commands:
 
-- `pip install --upgrade pip` â€” upgrade pip itself
-- `pip show <package>` â€” package metadata
-- `pip uninstall <package>` â€” remove a package
-- `pip cache purge` â€” reclaim disk space
+- `pip install --upgrade pip` -- upgrade pip itself
+- `pip show <package>` -- package metadata
+- `pip uninstall <package>` -- remove a package
+- `pip cache purge` -- reclaim disk space
 
 ## 1.10 Running Python Scripts
 
@@ -341,6 +398,53 @@ if (x > 5) {
 console.log("This is outside the if block");
 ```
 
+### Python vs TypeScript: Ecosystem Comparison
+
+| Concept | Python | TypeScript |
+|---------|--------|------------|
+| Package manager | pip | npm / yarn / bun |
+| Virtual env | venv / conda | node_modules (local) |
+| REPL | `python` | `node`, `ts-node` |
+| Style guide | PEP 8 | ESLint + Prettier |
+| Type system | Optional (gradual via type hints) | Static (compiled) |
+| Build step | None (interpreted) | tsc / esbuild / bun |
+| Config file | pyproject.toml / setup.py | tsconfig.json |
+| Module format | .py file | .ts file (compiled to .js) |
+| Run script | `python script.py` | `bun run script.ts` |
+| Package install | `pip install requests` | `bun add express` |
+
+### Python Execution Model
+
+```mermaid
+flowchart TD
+    A[Source Code .py] --> B[Compiler]
+    B --> C[Bytecode .pyc]
+    C --> D[Python Virtual Machine]
+    D --> E[Output]
+
+    F[Source Code .ts] --> G[TypeScript Compiler tsc]
+    G --> H[JavaScript .js]
+    H --> I[Node.js / Bun Runtime]
+    I --> J[Output]
+
+    A -.->|Different| F
+    C -.->|Different| H
+```
+
+Python compiles source code to platform-independent bytecode (`.pyc` files in `__pycache__/`), which the Python Virtual Machine executes. TypeScript compiles to JavaScript, which then runs in a JS runtime (Node.js, Bun, or browser). Both use intermediate representations, but Python's VM is part of the runtime itself, while TypeScript targets an existing JS engine.
+
+```typescript
+// TypeScript: Running and packaging
+// $ bun run hello.ts       (like python hello.py)
+// $ bun add express        (like pip install requests)
+
+// TypeScript REPL (like Python's python command)
+// $ node
+// > console.log("Hello")
+// Hello
+// > .exit
+```
+
 ## Practical Takeaways
 
 | Python Concept | Key Point | Common Mistake |
@@ -385,6 +489,84 @@ console.log("This is outside the if block");
 - Checks if port 8000 is open
 
 
+### Python IDEs and Tools
+
+Choosing the right editor significantly impacts productivity:
+
+| Tool | Type | Best For |
+|------|------|----------|
+| VS Code + Python extension | Editor | General Python development |
+| PyCharm (Community/Professional) | Full IDE | Large projects, Django, data science |
+| Jupyter Lab / Notebook | Interactive notebook | Data analysis, exploration, teaching |
+| Thonny | Beginner IDE | Learning Python for the first time |
+| IDLE | Built-in IDE | Quick tests, no installation needed |
+
+```python
+# Python's built-in debugger
+import pdb
+
+def buggy_function(x):
+    result = []
+    for i in range(x):
+        pdb.set_trace()  # Execution pauses here for inspection
+        result.append(i ** 2)
+    return result
+```
+
+### Python Community and Resources
+
+The Python ecosystem thrives on community contributions:
+
+- **PyPI** (Python Package Index): Over 500,000 packages available via `pip install`
+- **PSF** (Python Software Foundation): Non-profit that manages Python development
+- **PEPs** (Python Enhancement Proposals): Design documents for language evolution
+- **Core contributors**: Thousands of developers worldwide submit improvements
+- **Conferences**: PyCon (global), EuroPython, PyData for data science
+
+```python
+# Find documentation for any module
+import math
+help(math)  # Displays full documentation
+
+# List all attributes of a module
+print([m for m in dir(math) if not m.startswith('_')])
+# ['acos', 'acosh', 'asin', 'asinh', 'atan', ...]
+```
+
+### Python Version History
+
+| Version | Release | Key Features |
+|---------|---------|--------------|
+| 2.7 | 2010 | Last of Python 2 line (EOL 2020) |
+| 3.5 | 2015 | `async`/`await`, `typing`, `@` matrix mul |
+| 3.6 | 2016 | f-strings, underscore in numeric literals |
+| 3.7 | 2018 | `dataclasses`, `breakpoint()`, dict ordering |
+| 3.8 | 2019 | Walrus operator `:=`, positional-only params |
+| 3.9 | 2020 | `dict` merge `\|`, `str.removeprefix`, generic types |
+| 3.10 | 2021 | Pattern matching `match/case`, `X \| Y` types |
+| 3.11 | 2022 | Exception groups, `Self` type, faster runtime |
+| 3.12 | 2023 | Type parameter syntax, `@override`, perf improvements |
+| 3.13 | 2024 | Free-threaded CPython, JIT compiler, improved error messages |
+
+Python 2 reached end-of-life on January 1, 2020. All modern Python development uses Python 3.x. The 3.10+ series introduced structural pattern matching (`match/case`), and 3.13 begins experimenting with a JIT compiler for performance improvements.
+
+```bash
+# Check Python version
+python --version
+# Python 3.13.1
+
+# Check TypeScript version
+tsc --version
+# Version 5.7.0
+```
+
+```typescript
+// TypeScript version info
+const version: string = process.version;
+console.log(`Node.js version: ${version}`);
+// Node.js v22.0.0
+```
+
 ## Summary
 
 - Python is an interpreted, dynamically typed language emphasising readability.
@@ -402,13 +584,27 @@ console.log("This is outside the if block");
 3. What is the difference between `venv` and `conda`?
 4. How do you check which packages are installed in the current environment?
 5. What does `python -m http.server 8000` do?
+6. How does Python's execution model differ from TypeScript's compilation model?
+7. What is the purpose of the `__pycache__` directory?
 
 ### Application Problems
 
 1. Install Python 3.10 or later. Create a virtual environment named `.venv` and activate it. Run `pip list` to show the baseline packages.
 2. Write a script that prints your name, age, and favourite programming language. Execute it from the terminal.
 3. Use the REPL to compute the factorial of 10 (hint: use `math.factorial` after importing `math`). Use the underscore variable to double the result.
+4. Create a Python script that demonstrates three different comment styles (single-line, inline, and docstring). Run the script and use `help()` on a function to verify the docstring appears.
+5. Write a TypeScript version of your Python script from problem 2. Compare the syntax differences -- how does TypeScript declare types? How does it print output?
 
 ### Challenge Problem
 
-Write a script that creates a virtual environment, installs the `requests` and `pandas` packages, generates a `requirements.txt` file, then deactivates and removes the environment â€” all using `subprocess.run` or `os.system`. Verify each step with print statements.
+Write a script that creates a virtual environment, installs the `requests` and `pandas` packages, generates a `requirements.txt` file, then deactivates and removes the environment using `subprocess.run` or `os.system`. Verify each step with print statements.
+
+### TypeScript Challenge
+
+Create both a Python script (`compare.py`) and a TypeScript script (`compare.ts`) that each:
+1. Print the language name and version
+2. Create a list/array of 5 items and print each with its index
+3. Define a function that takes two numbers and returns their sum
+4. Call the function with test values and print the result
+
+Run both and note the differences in syntax, execution, and output.

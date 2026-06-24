@@ -492,6 +492,150 @@ echo "Size: $(du -h "$BACKUP_FILE" | cut -f1)"
 
 ---
 
+## TypeScript: Linux Automation with Node.js
+
+DevOps engineers often automate Linux tasks. TypeScript with Node.js provides a cross-platform alternative to bash for complex automation:
+
+```typescript
+// linux-automation.ts
+// System administration tasks automated with TypeScript
+
+import * as fs from 'fs';
+import * as path from 'path';
+import { execSync } from 'child_process';
+
+interface SystemHealth {
+  diskUsage: number;
+  memoryUsage: number;
+  cpuLoad: number;
+  runningServices: number;
+  failedServices: number;
+}
+
+class LinuxSystemAdmin {
+  private logFile: string;
+
+  constructor(logDir = '/var/log/admin') {
+    this.logFile = path.join(logDir, `system-check-${new Date().toISOString().slice(0, 10)}.log`);
+    if (!fs.existsSync(logDir)) {
+      execSync(`mkdir -p ${logDir}`);
+    }
+  }
+
+  checkHealth(): SystemHealth {
+    const df = execSync("df / | tail -1 | awk '{print $5}'").toString().trim();
+    const free = execSync("free | grep Mem | awk '{printf \"%.0f\", $3/$2 * 100}'").toString().trim();
+    const load = execSync("uptime | awk -F'load average:' '{print $2}' | cut -d, -f1").toString().trim();
+    const services = execSync('systemctl list-units --type=service --state=running --no-legend | wc -l').toString().trim();
+    const failed = execSync('systemctl list-units --type=service --state=failed --no-legend | wc -l').toString().trim();
+
+    return {
+      diskUsage: parseInt(df),
+      memoryUsage: parseInt(free),
+      cpuLoad: parseFloat(load),
+      runningServices: parseInt(services),
+      failedServices: parseInt(failed),
+    };
+  }
+
+  checkThresholds(health: SystemHealth): string[] {
+    const alerts: string[] = [];
+    if (health.diskUsage > 90) alerts.push(`ALERT: Disk usage at ${health.diskUsage}%`);
+    if (health.memoryUsage > 90) alerts.push(`ALERT: Memory at ${health.memoryUsage}%`);
+    if (health.failedServices > 0) alerts.push(`ALERT: ${health.failedServices} failed services`);
+    return alerts;
+  }
+
+  logResult(health: SystemHealth, alerts: string[]): void {
+    const entry = [
+      `=== System Check ${new Date().toISOString()} ===`,
+      `Disk: ${health.diskUsage}% | Memory: ${health.memoryUsage}% | Load: ${health.cpuLoad}`,
+      `Services: ${health.runningServices} running, ${health.failedServices} failed`,
+      ...alerts,
+      '',
+    ].join('\n');
+    fs.appendFileSync(this.logFile, entry);
+    console.log(alerts.length ? alerts.join('\n') : 'System healthy');
+  }
+
+  cleanupLogs(daysToKeep = 30): void {
+    const cutoff = Date.now() - daysToKeep * 86400000;
+    const logDir = path.dirname(this.logFile);
+    fs.readdirSync(logDir).forEach(file => {
+      const filePath = path.join(logDir, file);
+      if (fs.statSync(filePath).mtimeMs < cutoff) {
+        fs.unlinkSync(filePath);
+        console.log(`Removed old log: ${file}`);
+      }
+    });
+  }
+}
+
+// Usage
+const admin = new LinuxSystemAdmin();
+const health = admin.checkHealth();
+const alerts = admin.checkThresholds(health);
+admin.logResult(health, alerts);
+admin.cleanupLogs();
+```
+
+## Mermaid: Systemd Service Lifecycle
+
+```mermaid
+stateDiagram-v2
+    [*] --> inactive
+    inactive --> activating : systemctl start
+    activating --> active : Started successfully
+    activating --> failed : Startup failure
+    active --> deactivating : systemctl stop
+    deactivating --> inactive : Stopped
+    active --> reloading : systemctl reload
+    reloading --> active : Reloaded
+    active --> failed : Process crash
+    failed --> inactive : systemctl reset-failed
+    inactive --> enabled : systemctl enable (boot auto-start)
+    enabled --> disabled : systemctl disable
+    disabled --> enabled : systemctl enable
+```
+
+## Mermaid: Linux Process States
+
+```mermaid
+flowchart TD
+    A[Process Created: fork/exec] --> B{Running}
+    B -->|Preempted by scheduler| C[Runnable]
+    C -->|Scheduled| B
+    B -->|Waiting for I/O| D[Sleeping - Interruptible]
+    B -->|Waiting for disk I/O| E[Sleeping - Uninterruptible]
+    D -->|I/O complete| C
+    E -->|I/O complete| C
+    B -->|Stopped by signal| F[Stopped]
+    F -->|SIGCONT| C
+    B -->|Exit| G[Zombie - waiting for parent]
+    G -->|Parent reaps| H[Terminated]
+```
+
+## Deeper Explanation: Linux Performance Troubleshooting
+
+**The USE Method (Brendan Gregg) for Linux:**
+
+| Resource | Utilization | Saturation | Errors |
+|----------|-------------|------------|--------|
+| CPU | `mpstat` (%user, %sys) | Load average, run queue | `dmesg` machine check |
+| Memory | `free` (used/total) | Swap usage, OOM | `dmesg` OOM killer |
+| Disk | `iostat` (%util) | I/O wait, queue depth | `smartctl` errors |
+| Network | `sar -n DEV` (bandwidth) | Interface drops, backlog | `ifconfig` errors |
+| Filesystem | `df` (space used) | `inode` count | `dmesg` FS errors |
+
+**Quick triage flow:**
+1. `uptime` → load averages (if > CPU cores, saturation)
+2. `dmesg -T | tail` → kernel errors (OOM, disk I/O errors)
+3. `vmstat 1` → run queue, swapping, context switches
+4. `mpstat -P ALL 1` → per-CPU utilization
+5. `pidstat 1` → top processes by CPU
+6. `iostat -xz 1` → disk I/O and await times
+7. `sar -n DEV 1` → network throughput and errors
+
 ## Summary
 
 - The Linux filesystem hierarchy (FHS) standardizes where configuration, log, and binary files reside.
@@ -520,6 +664,8 @@ echo "Size: $(du -h "$BACKUP_FILE" | cut -f1)"
 2. Create a systemd unit file for a Node.js application that depends on PostgreSQL.
 3. Build a log analysis pipeline that extracts all 5xx errors from an access log.
 4. Write a deployment script that backs up the current version, deploys new code, and supports rollback.
+5. Implement the TypeScript system admin tool above. Add a webhook notification that sends Alerts to a Slack channel when disk usage exceeds 90% or memory exceeds 85%.
+6. Using the USE method, diagnose a system with high load averages but low CPU utilization. What commands would you run to identify the bottleneck? Write a script that automates this diagnosis and produces a report.
 
 ### Challenge Problem
 1. Write a complete bash framework for automated deployment that includes: pre-deployment checks (disk space, service health), backup creation, zero-downtime deployment (blue-green or canary), health verification after deploy, and automatic rollback on failure. The script should log everything to syslog and send notifications via both email and webhook.

@@ -564,6 +564,46 @@ where $\hat{x}(t)$ is the Hilbert transform. The analytic signal enables:
 
 **Riemann Zeta Function:** The Riemann zeta function is $\zeta(s) = \sum_{n=1}^\infty n^{-s}$ for $\text{Re}(s) > 1$. Show that it has an analytic continuation to $\mathbb{C}\setminus\{1\}$ with a simple pole at $s = 1$ with residue 1. (Hint: relate to the gamma function and contour integrals.)
 
+### TypeScript: Complex Number Operations
+
+```typescript
+class Complex {
+  constructor(public re: number, public im: number) {}
+  add(z: Complex): Complex { return new Complex(this.re + z.re, this.im + z.im); }
+  sub(z: Complex): Complex { return new Complex(this.re - z.re, this.im - z.im); }
+  mul(z: Complex): Complex {
+    return new Complex(
+      this.re * z.re - this.im * z.im,
+      this.re * z.im + this.im * z.re
+    );
+  }
+  div(z: Complex): Complex {
+    const d = z.re * z.re + z.im * z.im;
+    return new Complex(
+      (this.re * z.re + this.im * z.im) / d,
+      (this.im * z.re - this.re * z.im) / d
+    );
+  }
+  conj(): Complex { return new Complex(this.re, -this.im); }
+  mag(): number { return Math.sqrt(this.re * this.re + this.im * this.im); }
+  arg(): number { return Math.atan2(this.im, this.re); }
+}
+
+function contourIntegrate(
+  f: (z: Complex) => Complex,
+  t0: number, t1: number, n: number,
+  gamma: (t: number) => Complex
+): Complex {
+  let sum = new Complex(0, 0);
+  const dt = (t1 - t0) / n;
+  for (let i = 0; i < n; i++) {
+    const t = t0 + i * dt;
+    sum = sum.add(f(gamma(t)).mul(new Complex(gamma(t + dt).re - gamma(t).re, gamma(t + dt).im - gamma(t).im)));
+  }
+  return sum;
+}
+```
+
 ## Notation Reference
 
 | Symbol | Meaning |

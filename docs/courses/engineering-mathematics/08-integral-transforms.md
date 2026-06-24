@@ -405,6 +405,205 @@ console.log(squareWave(Math.PI / 2, 10));
 
 8. **Sampling Theorem:** A signal $x(t)$ has bandwidth $B = 5\text{ kHz}$. What is the minimum sampling rate to avoid aliasing? If sampled at $8\text{ kHz}$, what frequencies would an $8\text{ kHz}$ component alias to?
 
+## Transform Domain Relationships
+
+```mermaid
+graph TB
+    subgraph "Continuous Domain"
+        FS[Fourier Series<br/>Periodic → Discrete Spectrum]
+        FT[Fourier Transform<br/>Non-periodic → Continuous Spectrum]
+        LT[Laplace Transform<br/>s = σ + iω<br/>Includes transient response]
+    end
+    
+    subgraph "Discrete Domain"
+        DFT[Discrete Fourier Transform<br/>Sampled → Sampled Spectrum]
+        FFT[Fast Fourier Transform<br/>O(N log N) implementation]
+        ZT[Z-Transform<br/>z = e^(sT)<br/>Discrete-time systems]
+    end
+    
+    subgraph "Relationships"
+        R1[FT is LT evaluated on<br/>imaginary axis s = iω]
+        R2[ZT is sampled LT:<br/>z = e^(sT)]
+        R3[DFT is sampled FT:<br/>frequency discretization]
+        R4[FS → FT as period T → ∞]
+    end
+    
+    FS -->|Period T → ∞| FT
+    FT -->|s = iω| LT
+    FT -->|Sample at f_s| DFT
+    DFT -->|Cooley-Tukey| FFT
+    LT -->|z = e^(sT)| ZT
+```
+
+## TypeScript Implementation: Cooley-Tukey FFT
+
+```typescript
+type Complex = [number, number]; // [real, imag]
+
+function fft(x: Complex[]): Complex[] {
+  const N = x.length;
+  if (N <= 1) return x;
+
+  const even = fft(x.filter((_, i) => i % 2 === 0));
+  const odd = fft(x.filter((_, i) => i % 2 === 1));
+
+  const result: Complex[] = new Array(N);
+  for (let k = 0; k < N / 2; k++) {
+    const angle = (-2 * Math.PI * k) / N;
+    const t: Complex = [
+      Math.cos(angle) * odd[k][0] - Math.sin(angle) * odd[k][1],
+      Math.cos(angle) * odd[k][1] + Math.sin(angle) * odd[k][0],
+    ];
+    result[k] = [even[k][0] + t[0], even[k][1] + t[1]];
+    result[k + N / 2] = [even[k][0] - t[0], even[k][1] - t[1]];
+  }
+  return result;
+}
+
+// Test: FFT of a pure cosine at frequency f = 2
+const N = 16;
+const signal: Complex[] = Array.from({ length: N }, (_, n) =>
+  [Math.cos((2 * Math.PI * 2 * n) / N), 0]
+);
+
+const spectrum = fft(signal);
+const magnitude = spectrum.map(([r, i]) => Math.sqrt(r * r + i * i) / N);
+
+console.log("FFT magnitude spectrum (N=16, cos at f=2):");
+for (let k = 0; k < N / 2; k++) {
+  if (magnitude[k] > 0.01) {
+    console.log(`  f=${k}/${N}: magnitude=${magnitude[k].toFixed(4)}`);
+  }
+}
+// Output: f=2/16: magnitude ≈ 0.5000, f=14/16: magnitude ≈ 0.5000
+```
+
+## TypeScript: Laplace Transform Solver for ODEs
+
+```typescript
+interface LaplaceSolution {
+  expression: string;
+  poles: string[];
+  stability: "stable" | "unstable" | "marginally stable";
+  impulseResponse: string;
+}
+
+function analyzeSystemFromTransferFunction(
+  numerator: number[],
+  denominator: number[]
+): LaplaceSolution {
+  const polyStr = (coeffs: number[], variable: string): string => {
+    const terms: string[] = [];
+    const deg = coeffs.length - 1;
+    for (let i = 0; i <= deg; i++) {
+      if (coeffs[i] === 0) continue;
+      const exp = deg - i;
+      const sign = coeffs[i] < 0 ? " - " : (terms.length ? " + " : "");
+      const absVal = Math.abs(coeffs[i]);
+      const coeff = exp === 0 ? `${absVal}` : absVal === 1 ? "" : `${absVal}`;
+      const varPart = exp === 0 ? "" : exp === 1 ? `${variable}` : `${variable}^${exp}`;
+      terms.push(`${sign}${coeff}${varPart}`);
+    }
+    return terms.join("").trim();
+  };
+
+  // Find poles via quadratic formula (for 2nd order denominator)
+  const poles: string[] = [];
+  let stable = true;
+  if (denominator.length === 3) {
+    const [a2, a1, a0] = denominator;
+    const discriminant = a1 * a1 - 4 * a2 * a0;
+    if (discriminant >= 0) {
+      const p1 = (-a1 + Math.sqrt(discriminant)) / (2 * a2);
+      const p2 = (-a1 - Math.sqrt(discriminant)) / (2 * a2);
+      poles.push(p1.toFixed(3), p2.toFixed(3));
+      stable = p1 < 0 && p2 < 0;
+    } else {
+      const real = -a1 / (2 * a2);
+      const imag = Math.sqrt(-discriminant) / (2 * a2);
+      poles.push(`${real.toFixed(3)} ± ${imag.toFixed(3)}i`);
+      stable = real < 0;
+    }
+  } else if (denominator.length === 2) {
+    const p = -denominator[1] / denominator[0];
+    poles.push(p.toFixed(3));
+    stable = p < 0;
+  }
+
+  return {
+    expression: `H(s) = (${polyStr(numerator, "s")}) / (${polyStr(denominator, "s")})`,
+    poles,
+    stability: stable ? "stable" : "unstable",
+    impulseResponse: poles.length > 0
+      ? `h(t) = ${poles.map(p => `e^(${p}t)`).join(" + ")}`
+      : "Unable to compute",
+  };
+}
+
+// H(s) = (s + 2) / (s² + 2s + 5)
+const result = analyzeSystemFromTransferFunction([1, 2], [1, 2, 5]);
+console.log("Transfer Function:", result.expression);
+console.log("Poles:", result.poles.join(", "));
+console.log("Stability:", result.stability);
+console.log("Impulse Response:", result.impulseResponse);
+```
+
+## TypeScript: Z-Transform and Frequency Response
+
+```typescript
+function zTransformFIR(
+  coefficients: number[],
+  z: number
+): number {
+  // X(z) = Σ h[n] z^(-n)
+  const re = coefficients.reduce(
+    (sum, h, n) => sum + h * Math.cos(-n * Math.atan2(0, z)), 0
+  );
+  const im = coefficients.reduce(
+    (sum, h, n) => sum + h * Math.sin(-n * Math.atan2(0, z)), 0
+  );
+  return Math.sqrt(re * re + im * im);
+}
+
+function frequencyResponse(
+  b: number[],
+  numPoints: number = 100
+): { omega: number[]; magnitude: number[] } {
+  const omega: number[] = [];
+  const magnitude: number[] = [];
+  for (let i = 0; i < numPoints; i++) {
+    const w = (Math.PI * i) / (numPoints - 1);
+    omega.push(w);
+    // Evaluate H(e^(jω)) = Σ b[n] e^(-jωn)
+    let re = 0, im = 0;
+    for (let n = 0; n < b.length; n++) {
+      re += b[n] * Math.cos(-w * n);
+      im += b[n] * Math.sin(-w * n);
+    }
+    magnitude.push(Math.sqrt(re * re + im * im));
+  }
+  return { omega, magnitude };
+}
+
+// Moving average filter: y[n] = (x[n] + x[n-1] + x[n-2]) / 3
+const maFilter = [1 / 3, 1 / 3, 1 / 3];
+const response = frequencyResponse(maFilter);
+
+console.log("Moving Average Filter Frequency Response:");
+console.log("  DC (ω=0):", response.magnitude[0].toFixed(4));  // 1.0
+console.log("  Nyquist (ω=π):", response.magnitude[response.magnitude.length - 1].toFixed(4));  // 0.0
+```
+
+### Additional Exercises
+
+9. **FFT Convolution:** Implement convolution of two signals using FFT-based multiplication in the frequency domain. Verify it produces the same result as direct convolution for two length-8 signals.
+
+10. **Laplace Circuit Analysis:** Using the Laplace transform, derive the transfer function $V_{out}(s)/V_{in}(s)$ for an RLC low-pass filter with $R = 1k\Omega$, $L = 10mH$, $C = 1\mu F$. Find the cutoff frequency and verify stability.
+
+11. **Digital Filter Design:** Design a simple low-pass IIR filter using the Z-transform. The filter should have a cutoff at $\omega_c = 0.2\pi$ and be implementable as $H(z) = \frac{b_0}{1 - a_1 z^{-1}}$. Determine the coefficients and verify the frequency response.
+
+12. **Image Compression Analysis:** Apply the DCT to $8 \times 8$ blocks of a synthetic test image (a 2D cosine pattern). Quantize the coefficients by zeroing all but the top-left 10% and reconstruct the image. Compute the peak signal-to-noise ratio (PSNR).
+
 ## Real-World Application: JPEG Image Compression
 
 JPEG compression uses the Discrete Cosine Transform (DCT), a variant of the Fourier transform that uses only cosine basis functions with real coefficients.

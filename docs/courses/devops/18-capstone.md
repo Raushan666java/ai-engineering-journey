@@ -386,7 +386,223 @@ Submit the following:
 <details><summary>Question 2: How does blue-green achieve zero-downtime?</summary>**A)** Rolling restart<br>**B)** Service selector switch between environments<br>**C)** Canary traffic routing<br>**D)** Parallel deployments<br><br>**Answer: B)** Service selector switch between environments</details>
 
 <details><summary>Question 3: What metric triggers automated rollback?</summary>**A)** Build time<br>**B)** Error rate threshold exceeded<br>**C)** Code coverage<br>**D)** Number of commits<br><br>**Answer: B)** Error rate threshold exceeded</details>
+## TypeScript: Complete Pipeline Orchestration Script
 
+Below is a TypeScript script that orchestrates the entire capstone pipeline with automated rollback detection:
+
+```typescript
+// capstone-pipeline.ts - Orchestrates the complete CI/CD pipeline with safety gates
+
+interface PipelineResult {
+  stage: string;
+  status: 'passed' | 'failed' | 'skipped';
+  duration: number;
+  output?: string;
+}
+
+class CapstonePipeline {
+  private results: PipelineResult[] = [];
+  private rollbackTriggered = false;
+
+  private async runStage(name: string, fn: () => Promise<string>): Promise<PipelineResult> {
+    const start = Date.now();
+    try {
+      const output = await fn();
+      const result: PipelineResult = { stage: name, status: 'passed', duration: Date.now() - start, output };
+      this.results.push(result);
+      console.log(`[PASS] ${name} (${result.duration}ms)`);
+      return result;
+    } catch (error) {
+      const result: PipelineResult = { stage: name, status: 'failed', duration: Date.now() - start, output: String(error) };
+      this.results.push(result);
+      console.error(`[FAIL] ${name}: ${error}`);
+      throw error;
+    }
+  }
+
+  async run(): Promise<{ results: PipelineResult[]; rollbackTriggered: boolean }> {
+    try {
+      await this.runStage('Lint & Type Check', async () => {
+        return await this.exec('npx tsc --noEmit && npx eslint src/');
+      });
+      await this.runStage('Unit Tests', async () => {
+        const output = await this.exec('npx vitest run --coverage');
+        if (output.includes('FAIL')) throw new Error('Unit tests failed');
+        return output;
+      });
+      await this.runStage('Build & Containerize', async () => {
+        return await this.exec('docker build -t app:${CI_COMMIT_SHA} .');
+      });
+      await this.runStage('Security Scan', async () => {
+        const output = await this.exec('trivy image --severity CRITICAL app:${CI_COMMIT_SHA}');
+        if (output.includes('Total:') && !output.includes('Total: 0')) throw new Error('Critical vulns');
+        return output;
+      });
+      await this.runStage('Deploy Staging', async () => {
+        return await this.exec('kubectl apply -f k8s/overlays/staging/');
+      });
+      await this.runStage('Integration Tests', async () => {
+        const output = await this.exec('npx playwright test');
+        if (output.includes('failed')) throw new Error('Integration tests failed');
+        return output;
+      });
+      await this.runStage('Deploy Production', async () => {
+        return await this.exec('kubectl apply -f k8s/overlays/production/');
+      });
+      await this.runStage('Post-Deploy Monitoring', async () => {
+        const output = await this.exec('kubectl get pods -l app=myapp');
+        if (this.rollbackTriggered) throw new Error('Rollback triggered');
+        return output;
+      });
+    } catch (error) {
+      console.error('[ROLLBACK] Pipeline failed, initiating rollback...');
+      await this.initiateRollback();
+    }
+    return { results: this.results, rollbackTriggered: this.rollbackTriggered };
+  }
+
+  private async exec(command: string): Promise<string> {
+    const { execSync } = require('child_process');
+    return execSync(command, { encoding: 'utf8', timeout: 120000 }).toString();
+  }
+
+  private async initiateRollback(): Promise<void> {
+    this.rollbackTriggered = true;
+    await this.exec('kubectl rollout undo deployment/myapp -n production');
+    console.log('[ROLLBACK] Production deployment reverted to previous version');
+  }
+}
+
+const pipeline = new CapstonePipeline();
+pipeline.run().then(result => {
+  console.log('Pipeline complete:', JSON.stringify(result, null, 2));
+});
+```
+
+## Mermaid: Full Capstone Architecture
+
+```mermaid
+flowchart TD
+    subgraph "Developer Workstation"
+        DEV[Git Push] --> GIT[GitHub Repository]
+    end
+    subgraph "CI Pipeline (GitHub Actions)"
+        GIT --> LINT[Lint & Type Check]
+        LINT --> UNIT[Unit Tests]
+        UNIT --> BUILD[Docker Build]
+        BUILD --> SCAN[Security Scan]
+        SCAN --> PUSH[Push to Registry]
+    end
+    subgraph "CD Pipeline (ArgoCD)"
+        REG[Container Registry] --> STAGING[Deploy to Staging]
+        STAGING --> INTEG[Integration Tests]
+        INTEG --> APPROVAL{Manual Approval}
+        APPROVAL -->|Approve| BLUE[Deploy Blue]
+        APPROVAL -->|Reject| HALT[Pipeline Halted]
+    end
+    subgraph "Production Cluster"
+        BLUE --> HEALTH{Health Check}
+        HEALTH -->|Pass| SWITCH[Switch LB to Blue]
+        HEALTH -->|Fail| ROLLBACK[Rollback to Green]
+        SWITCH --> MONITOR[Monitoring Window]
+        MONITOR -->|Healthy| COMPLETE[Deployment Complete]
+        MONITOR -->|Degraded| AUTO_ROLLBACK[Auto Rollback]
+    end
+    subgraph "Observability Stack"
+        PROM[Prometheus] --> GRAFANA[Grafana]
+        PROM --> ALERT[Alertmanager]
+        LOKI[Loki] --> GRAFANA
+        TEMPO[Tempo] --> GRAFANA
+    end
+    COMPLETE --> GRAFANA
+    AUTO_ROLLBACK --> ALERT
+    style BLUE fill:#2E77D0,color:#fff
+    style SWITCH fill:#4CAF50,color:#fff
+    style ROLLBACK fill:#F44336,color:#fff
+    style AUTO_ROLLBACK fill:#F44336,color:#fff
+    style ALERT fill:#FF9800,color:#fff
+```
+
+## Deeper Explanation: Production Deployment Strategy
+
+### Blue-Green Deployment Mechanics
+
+The blue-green deployment pattern maintains two identical production environments:
+
+1. **Initial state:** Green serves all traffic. Blue is idle.
+2. **Deploy to blue:** The new application version is deployed to the blue environment. Green continues serving users.
+3. **Test blue:** Run smoke tests against blue to verify the new version works correctly.
+4. **Switch traffic:** Update the load balancer or service selector to point at blue. Traffic switches instantly.
+5. **Monitor:** Run a monitoring window (15-60 minutes) observing error rates, latency, and resource usage.
+6. **Rollback if needed:** If monitoring detects issues, switch the load balancer back to green.
+7. **Cleanup:** Once confident, scale down green. Keep green ready for the next deployment.
+
+**Key implementation details:**
+- Two Kubernetes Deployments with different labels (version: blue vs version: green)
+- A single Service that uses a mutable selector label (active: blue or active: green)
+- The pipeline updates the Service selector to switch traffic
+- Database migrations must be backward-compatible
+
+### Health Check Implementation
+
+```typescript
+interface HealthCheckConfig {
+  readinessEndpoint: string;
+  livenessEndpoint: string;
+  startupEndpoint?: string;
+  initialDelaySeconds: number;
+  periodSeconds: number;
+  failureThreshold: number;
+}
+
+function generateProbeYaml(config: HealthCheckConfig): string {
+  return [
+    'startupProbe:',
+    '  httpGet:',
+    `    path: ${config.startupEndpoint || '/health/startup'}`,
+    '    port: 3000',
+    `  initialDelaySeconds: ${config.initialDelaySeconds}`,
+    '  periodSeconds: 10',
+    '  failureThreshold: 30',
+    'livenessProbe:',
+    '  httpGet:',
+    `    path: ${config.livenessEndpoint}`,
+    '    port: 3000',
+    `  initialDelaySeconds: ${config.initialDelaySeconds + 30}`,
+    `  periodSeconds: ${config.periodSeconds}`,
+    `  failureThreshold: ${config.failureThreshold}`,
+    'readinessProbe:',
+    '  httpGet:',
+    `    path: ${config.readinessEndpoint}`,
+    '    port: 3000',
+    '  initialDelaySeconds: 5',
+    '  periodSeconds: 5',
+    '  failureThreshold: 2',
+  ].join('\n');
+}
+
+const probes = generateProbeYaml({
+  readinessEndpoint: '/health/ready',
+  livenessEndpoint: '/health/live',
+  startupEndpoint: '/health/startup',
+  initialDelaySeconds: 10,
+  periodSeconds: 15,
+  failureThreshold: 3,
+});
+console.log(probes);
+```
+
+### Pipeline Gate Decision Matrix
+
+| Gate | Criteria | Pass Action | Fail Action |
+|------|----------|-------------|-------------|
+| Lint | Zero errors | Continue to tests | Block, notify PR author |
+| Unit Tests | 100% pass, >80% coverage | Continue to build | Block, notify team |
+| Security Scan | Zero critical/high | Continue | Block, create ticket |
+| Integration Tests | All e2e pass | Continue to prod | Block, roll back staging |
+| Manual Approval | Approver signs | Deploy blue | Wait or abort |
+| Health Check | All pods Ready | Switch traffic | Rollback, page SRE |
+| Monitoring Window | Error rate <1%, p99 <500ms | Mark complete | Auto-rollback, page SRE |
 
 ## Summary
 
@@ -407,12 +623,15 @@ The capstone project integrates all course topics into a single cohesive system.
 1. Implement the complete pipeline described in this chapter. Demonstrate each stage working with screenshots or terminal output. Verify that a pipeline failure at each gate correctly blocks the next stage.
 2. Test the blue-green deployment by deploying two different application versions (distinguishable by a visible feature or header). Verify zero-downtime by maintaining a continuous HTTP request stream during deployment.
 3. Simulate a pipeline failure scenario: introduce a security vulnerability (e.g., a known-vulnerable dependency version or a hardcoded secret) and verify that the pipeline correctly detects and blocks it.
+4. Implement the TypeScript pipeline orchestrator above. Add a stage for database migration that runs before deployment and verifies backward compatibility.
+5. Create a rollback test: Deploy a version with a deliberate bug, verify that the monitoring window detects increased error rates, and confirm the automated rollback triggers correctly.
+6. Write a script that generates Helm chart values for blue-green deployments across multiple environments (dev, staging, prod) using TypeScript. Include configurable health check probes.
 
 ### Challenge Problem
 
 Extend the capstone system with the following advanced features (choose two):
-1. **Feature flags** â€” Integrate LaunchDarkly or Unleash to decouple deployment from feature release. Implement a canary release that gradually shifts 1%, 10%, 50%, 100% of traffic to the new version.
-2. **Chaos engineering** â€” Integrate Chaos Mesh or Litmus to inject faults during the post-deployment monitoring window. Verify that the system degrades gracefully and auto-heals.
-3. **Cost optimization** â€” Implement a FinOps dashboard showing per-service and per-environment infrastructure costs. Configure automatic scaling policies and spot instance usage for non-critical workloads.
-4. **Multi-cloud** â€” Deploy the database on a second cloud provider. Implement cross-region failover and replication using streaming replication or change data capture.
-5. **ML/AI integration** â€” Add a service that uses a machine learning model for recommendation or personalization. Implement model versioning, A/B testing, and automated model retraining in the pipeline.
+1. **Feature flags** - Integrate LaunchDarkly or Unleash to decouple deployment from feature release. Implement a canary release that gradually shifts 1%, 10%, 50%, 100% of traffic to the new version.
+2. **Chaos engineering** - Integrate Chaos Mesh or Litmus to inject faults during the post-deployment monitoring window. Verify that the system degrades gracefully and auto-heals.
+3. **Cost optimization** - Implement a FinOps dashboard showing per-service and per-environment infrastructure costs. Configure automatic scaling policies and spot instance usage for non-critical workloads.
+4. **Multi-cloud** - Deploy the database on a second cloud provider. Implement cross-region failover and replication using streaming replication or change data capture.
+5. **ML/AI integration** - Add a service that uses a machine learning model for recommendation or personalization. Implement model versioning, A/B testing, and automated model retraining in the pipeline.

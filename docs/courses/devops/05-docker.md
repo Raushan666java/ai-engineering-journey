@@ -278,6 +278,142 @@ docker run --security-opt seccomp=/path/to/profile.json myapp
 docker run --security-opt apparmor=myprofile myapp
 ```
 
+### Docker Compose for Development vs Production
+
+Docker Compose supports overlay configuration for different environments:
+
+**Development compose file (docker-compose.dev.yml):**
+```yaml
+services:
+  app:
+    ports:
+      - "3000:3000"
+      - "9229:9229"  # debugger
+    volumes:
+      - .:/app        # hot reload
+    environment:
+      - NODE_ENV=development
+      - DEBUG=app:*
+```
+
+**Production compose file (docker-compose.prod.yml):**
+```yaml
+services:
+  app:
+    image: myapp:${TAG}
+    deploy:
+      replicas: 3
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      retries: 3
+```
+
+**Merge command:** `docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d`
+
+### Docker Health Check Patterns
+
+Docker supports container-level health checks via the `HEALTHCHECK` instruction:
+
+```
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD wget --no-verbose --tries=1 --spider http://localhost:3000/health || exit 1
+```
+
+**Health check best practices:**
+- **Application-level checks:** Test actual application logic, not just process existence
+- **Dependency checks:** Verify database, cache, and upstream service connectivity
+- **Graceful degradation:** Return 200 even if non-critical dependencies are down
+- **Start period:** Allow the application time to initialize before health checks begin
+- **Timeouts:** Keep checks fast (<5s) to avoid cascading health failures
+
+### Docker Image Optimization
+
+Docker image size directly affects deployment speed and attack surface:
+
+**Optimization strategies with TypeScript examples:**
+
+```dockerfile
+# ---- Strategy 1: Multi-stage with minimal base ----
+FROM node:20-alpine AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci && npm cache clean --force
+COPY . .
+RUN npm run build
+
+FROM gcr.io/distroless/nodejs20-debian12
+COPY --from=builder /app/dist /app
+COPY --from=builder /app/node_modules /app/node_modules
+EXPOSE 3000
+CMD ["/app/server.js"]
+# Image size: ~180MB (vs 1.2GB for full node:20)
+```
+
+```dockerfile
+# ---- Strategy 2: Dependency pruning ----
+FROM node:20-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --only=production && \
+    npm cache clean --force && \
+    rm -rf /root/.npm/* && \
+    rm -rf /tmp/*
+COPY --chown=node:node dist/ ./dist/
+USER node
+EXPOSE 3000
+CMD ["node", "dist/server.js"]
+```
+
+**Size budget framework in TypeScript:**
+```typescript
+interface ImageOptimizationTarget {
+  maxSizeMB: number;
+  targetBase: 'alpine' | 'distroless' | 'scratch';
+  includeDevDeps: boolean;
+  compressLayers: boolean;
+}
+
+class ImageSizeBudget {
+  evaluate(imageName: string, target: ImageOptimizationTarget): {
+    currentSizeMB: number;
+    passesBudget: boolean;
+    savingsTips: string[];
+  } {
+    // Simulate image size evaluation
+    const baseSizes: Record<string, number> = {
+      alpine: 120, distroless: 180, scratch: 2
+    };
+    const currentSizeMB = 1024; // example detected size
+    const targetSize = target.maxSizeMB;
+    const savingsTips: string[] = [];
+
+    if (currentSizeMB > targetSize) {
+      if (target.targetBase !== 'alpine') {
+        savingsTips.push(`Switch to ${target.targetBase} base image (estimated ${baseSizes[target.targetBase]}MB)`);
+      }
+      if (target.includeDevDeps) {
+        savingsTips.push('Remove devDependencies from production image');
+      }
+      if (currentSizeMB > targetSize * 2) {
+        savingsTips.push('Consider multi-stage build to separate build artifacts');
+      }
+      savingsTips.push('Run npm cache clean --force after installation');
+    }
+
+    return {
+      currentSizeMB,
+      passesBudget: currentSizeMB <= targetSize,
+      savingsTips,
+    };
+  }
+}
+```
+
 ### Docker in CI/CD
 
 ```yaml
@@ -482,6 +618,8 @@ console.log('Tips:', result.optimizationTips);
 2. Create a Docker Compose file for a web app with a PostgreSQL database and Redis cache.
 3. Implement a CI pipeline step that builds, scans, and pushes a Docker image.
 4. Debug a Dockerfile that rebuilds npm install every time even though package.json hasn't changed.
+5. Extend the `DockerContainerManager` class to add: a `listContainers()` method that filters by status (running, stopped, all), an `execCommand()` method that runs a command inside a running container and returns output, and a `prune()` method that removes stopped containers and unused images older than 24 hours.
+6. Using the `ImageSizeBudget` class, implement a CI gate that: evaluates image size against a 200MB budget, generates a diff report showing size changes per layer compared to the previous build, and blocks the build if size exceeds budget by more than 10%.
 
 ### Challenge Problem
 1. Design a complete Docker build and deployment pipeline for a 5-service microservices architecture. Include: a base image Dockerfile shared across all services (configurable per service), multi-stage builds with BuildKit cache mounts, a `.dockerignore` strategy per service, a Docker Compose overlay for development (hot reload with bind mounts) and production (optimized images), a security hardening layer (non-root, read-only, capabilities), and a CI pipeline that builds, scans, signs, and pushes images to a registry with SBOM generation.

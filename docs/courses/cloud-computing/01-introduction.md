@@ -484,3 +484,173 @@ Cloud computing represents a paradigm shift from capital-intensive, fixed-capaci
 ### Challenge Problem
 
 A multinational corporation operates in 30 countries with varying data sovereignty laws. The company runs 200 applications, including 50 legacy applications that cannot be modified and 150 modern microservices. The board has mandated a 40% reduction in IT operating costs over three years and a 50% improvement in time-to-market for new features. Design a comprehensive cloud adoption strategy covering the following: recommended deployment model(s), service model allocation, migration timeline with phase descriptions, cost optimization approach, compliance architecture spanning multiple jurisdictions, and a governance framework for managing cloud resources across business units.
+
+## TypeScript Infrastructure as Code: AWS CDK Multi-Tier App
+
+The AWS Cloud Development Kit (CDK) lets you define cloud infrastructure in TypeScript:
+
+```typescript
+import * as cdk from "aws-cdk-lib";
+import * as ec2 from "aws-cdk-lib/aws-ec2";
+import * as rds from "aws-cdk-lib/aws-rds";
+import * as elb from "aws-cdk-lib/aws-elasticloadbalancingv2";
+import * as autoscaling from "aws-cdk-lib/aws-autoscaling";
+
+class MultiTierAppStack extends cdk.Stack {
+  constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+
+    const vpc = new ec2.Vpc(this, "AppVpc", {
+      maxAzs: 2,
+      natGateways: 1,
+    });
+
+    const alb = new elb.ApplicationLoadBalancer(this, "AppALB", {
+      vpc,
+      internetFacing: true,
+    });
+
+    const asg = new autoscaling.AutoScalingGroup(this, "AppASG", {
+      vpc,
+      instanceType: ec2.InstanceType.of(
+        ec2.InstanceClass.T3, ec2.InstanceSize.MEDIUM
+      ),
+      machineImage: ec2.MachineImage.latestAmazonLinux2(),
+      minCapacity: 2,
+      maxCapacity: 10,
+    });
+
+    const listener = alb.addListener("HttpListener", { port: 80 });
+    listener.addTargets("AppTarget", {
+      port: 80,
+      targets: [asg],
+    });
+
+    new rds.DatabaseInstance(this, "AppDatabase", {
+      engine: rds.DatabaseInstanceEngine.postgres({
+        version: rds.PostgresEngineVersion.VER_16,
+      }),
+      vpc,
+      allocatedStorage: 100,
+      multiAz: true,
+      backupRetention: cdk.Duration.days(7),
+      deletionProtection: true,
+    });
+  }
+}
+
+const app = new cdk.App();
+new MultiTierAppStack(app, "MultiTierApp");
+```
+
+This CDK stack provisions a production-ready three-tier architecture: an ALB for traffic distribution, an auto-scaling group for compute capacity, and a Multi-AZ RDS database — all in about 50 lines of TypeScript. The same infrastructure would require hundreds of lines of YAML in CloudFormation or manual clicks in the console.
+
+## Pulumi: Cloud-Agnostic Infrastructure as Code
+
+Pulumi provides a similar experience across AWS, Azure, and GCP using standard TypeScript:
+
+```typescript
+import * as aws from "@pulumi/aws";
+import * as pulumi from "@pulumi/pulumi";
+
+const config = new pulumi.Config();
+const instanceType = config.get("instanceType") || "t3.medium";
+
+const vpc = new aws.ec2.Vpc("app-vpc", {
+  cidrBlock: "10.0.0.0/16",
+  enableDnsHostnames: true,
+  tags: { Name: "app-vpc" },
+});
+
+const subnet = new aws.ec2.Subnet("app-subnet", {
+  vpcId: vpc.id,
+  cidrBlock: "10.0.1.0/24",
+  mapPublicIpOnLaunch: true,
+});
+
+const sg = new aws.ec2.SecurityGroup("app-sg", {
+  vpcId: vpc.id,
+  ingress: [
+    { protocol: "tcp", fromPort: 80, toPort: 80, cidrBlocks: ["0.0.0.0/0"] },
+    { protocol: "tcp", fromPort: 22, toPort: 22, cidrBlocks: ["10.0.0.0/8"] },
+  ],
+  egress: [
+    { protocol: "-1", fromPort: 0, toPort: 0, cidrBlocks: ["0.0.0.0/0"] },
+  ],
+});
+
+const instance = new aws.ec2.Instance("app-server", {
+  instanceType,
+  vpcSecurityGroupIds: [sg.id],
+  ami: "ami-0c55b159cbfafe1f0",
+  subnetId: subnet.id,
+  userData: `#!/bin/bash
+yum install -y httpd
+systemctl start httpd
+echo "<h1>Deployed with Pulumi</h1>" > /var/www/html/index.html`,
+});
+
+export const publicIp = instance.publicIp;
+```
+
+## Real-World Case Study: Capital One's Cloud Migration
+
+Capital One transformed from a traditional bank operating on-premises data centers to one of the most cloud-forward financial institutions.
+
+**Phase 1 (2015–2016) — Foundation:** Capital One adopted AWS as their primary cloud provider, establishing a cloud center of excellence and training 1,000+ engineers. They focused on the shared responsibility model and security-first migration.
+
+**Phase 2 (2017–2019) — Migration:** Capital One migrated 65% of their applications to AWS using a combination of rehosting and refactoring. They developed internal tooling for automated security scanning and compliance validation. Customer-facing applications like the Capital One Mobile app and CreditWise were re-architected as cloud-native microservices.
+
+**Phase 3 (2020–2023) — Modernization:** Capital One adopted a cloud-first strategy for all new development. They migrated core banking systems to AWS, became the first major US bank to go all-in on public cloud, and closed all their primary data centers. They saved $2.5 billion in infrastructure costs over five years.
+
+**Key Success Factors:** Executive commitment from the CEO, a dedicated cloud engineering team, investment in cloud training and certification, automated compliance and security tooling, and a phased approach balancing speed with risk management.
+
+## Multi-Cloud Architecture Comparison
+
+```mermaid
+graph TB
+    subgraph "AWS-Centric"
+        A1[Route53]
+        A2[CloudFront CDN]
+        A3[ALB]
+        A4[ECS Fargate]
+        A5[RDS Multi-AZ]
+        A1 --> A2 --> A3 --> A4 --> A5
+    end
+    subgraph "Azure-Centric"
+        B1[Azure DNS]
+        B2[Azure Front Door]
+        B3[App Gateway]
+        B4[AKS]
+        B5[Azure SQL DB]
+        B1 --> B2 --> B3 --> B4 --> B5
+    end
+    subgraph "GCP-Centric"
+        C1[Cloud DNS]
+        C2[Cloud CDN]
+        C3[HTTP LB]
+        C4[Cloud Run]
+        C5[Cloud SQL]
+        C1 --> C2 --> C3 --> C4 --> C5
+    end
+```
+
+## Cloud Adoption Journey Stages
+
+```mermaid
+graph LR
+    P1[Assess<br/>Portfolio analysis<br/>TCO modeling] --> P2[Pilot<br/>3-5 apps<br/>Build expertise]
+    P2 --> P3[Migrate<br/>Phase 1<br/>Rehost + Replatform]
+    P3 --> P4[Modernize<br/>Phase 2<br/>Refactor key apps]
+    P4 --> P5[Optimize<br/>Ongoing<br/>FinOps + Governance]
+    P5 --> P1
+    style P1 fill:#4a90d9,color:#fff
+    style P2 fill:#50b86c,color:#fff
+    style P3 fill:#f5a623,color:#fff
+    style P4 fill:#d94a4a,color:#fff
+    style P5 fill:#7b61d9,color:#fff
+```
+
+### Additional Exercise
+
+6. **TCO Analysis:** A company runs 50 servers at 60% utilization on-premises (each server costs $8,000 upfront + $3,000/year in ops). Calculate the 3-year TCO. Compare this to running equivalent EC2 instances on-demand (t3.large at $0.0832/hr) versus 1-year reserved instances ($0.0525/hr). Factor in data transfer costs of $500/month and managed database costs of $200/month. Which option is most cost-effective?

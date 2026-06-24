@@ -459,6 +459,114 @@ function processCheckpoint(
 **B) A message containing the request, sequence number, and view number.** The primary assigns a sequence number to the client request and broadcasts a pre-prepare message to all backup replicas, beginning the consensus process.
 </details>
 
+### TypeScript: PBFT Consensus Simulator
+
+```typescript
+type Message = { type: "PRE-PREPARE" | "PREPARE" | "COMMIT"; view: number; seq: number; value: string; node: number };
+
+class PBFTNode {
+  private log: Message[] = [];
+  private prepared: Set<string> = new Set();
+  private committed: Set<string> = new Set();
+
+  constructor(public id: number, private totalNodes: number) {}
+
+  private broadcast(msg: Message): void {
+    this.log.push(msg);
+    // Simulate broadcast to all other nodes
+  }
+
+  request(value: string, seq: number): void {
+    this.broadcast({ type: "PRE-PREPARE", view: 0, seq, value, node: this.id });
+  }
+
+  receivePrePrepare(msg: Message): void {
+    if (msg.type !== "PRE-PREPARE") return;
+    this.broadcast({ type: "PREPARE", view: msg.view, seq: msg.seq, value: msg.value, node: this.id });
+  }
+
+  receivePrepare(msg: Message): void {
+    if (msg.type !== "PREPARE") return;
+    const key = `${msg.view}:${msg.seq}:${msg.value}`;
+    const prepareCount = this.log.filter(
+      m => m.type === "PREPARE" && m.view === msg.view && m.seq === msg.seq && m.value === msg.value
+    ).length + 1;
+    if (prepareCount >= Math.floor(2 * this.totalNodes / 3) && !this.prepared.has(key)) {
+      this.prepared.add(key);
+      this.broadcast({ type: "COMMIT", view: msg.view, seq: msg.seq, value: msg.value, node: this.id });
+    }
+  }
+
+  receiveCommit(msg: Message): void {
+    if (msg.type !== "COMMIT") return;
+    const key = `${msg.view}:${msg.seq}:${msg.value}`;
+    const commitCount = this.log.filter(
+      m => m.type === "COMMIT" && m.view === msg.view && m.seq === msg.seq && m.value === msg.value
+    ).length + 1;
+    if (commitCount >= Math.floor(2 * this.totalNodes / 3) && !this.committed.has(key)) {
+      this.committed.add(key);
+    }
+  }
+}
+```
+
+### PBFT View Change Sequence
+
+When the primary (leader) is suspected to be faulty, a view change protocol elects a new primary:
+
+```mermaid
+sequenceDiagram
+    participant R0 as Primary (Replica 0)
+    participant R1 as Replica 1
+    participant R2 as Replica 2
+    participant R3 as Replica 3
+    
+    Note over R0,R3: View 0: Primary behaves faulty
+    R0->>R1: ... (no response / invalid message)
+    R0->>R2: ... (no response / invalid message)
+    
+    Note over R1,R3: Timeout triggers View Change
+    R1->>R2: View-Change (newView=1, lastSeq=42)
+    R1->>R3: View-Change (newView=1, lastSeq=42)
+    R2->>R1: View-Change (newView=1, lastSeq=42)
+    R2->>R3: View-Change (newView=1, lastSeq=42)
+    R3->>R1: View-Change (newView=1, lastSeq=42)
+    R3->>R2: View-Change (newView=1, lastSeq=42)
+    
+    Note over R1: New primary collects 2f View-Change messages
+    R1->>R2: New-View (view=1, checkpoint, log)
+    R1->>R3: New-View (view=1, checkpoint, log)
+    
+    Note over R1,R3: View 1: Normal operation resumes with new primary
+    R1->>R2: Pre-Prepare (seq=43, d, v=1)
+    R1->>R3: Pre-Prepare (seq=43, d, v=1)
+```
+
+### Nakamoto Consensus vs PBFT Comparison
+
+```typescript
+interface ConsensusComparison {
+  property: string;
+  nakamotoConsensus: string;
+  pbft: string;
+}
+
+const comparisonTable: ConsensusComparison[] = [
+  { property: "Type", nakamotoConsensus: "Lottery-based (probabilistic)", pbft: "Voting-based (deterministic)" },
+  { property: "Finality", nakamotoConsensus: "Probabilistic (6+ blocks)", pbft: "Instant (after commit phase)" },
+  { property: "Node Identity", nakamotoConsensus: "Permissionless (anonymous)", pbft: "Permissioned (known validators)" },
+  { property: "Leader Selection", nakamotoConsensus: "Hash power / stake lottery", pbft: "Round-robin by view number" },
+  { property: "Communication", nakamotoConsensus: "Gossip (O(n))", pbft: "All-to-all (O(n²))" },
+  { property: "Fault Tolerance", nakamotoConsensus: "≤50% hash power / stake", pbft: "≤33% Byzantine replicas" },
+  { property: "Energy Cost", nakamotoConsensus: "Very high (PoW) / Low (PoS)", pbft: "Low (no computation race)" },
+  { property: "Throughput", nakamotoConsensus: "Low to moderate", pbft: "High (thousands TPS)" },
+  { property: "Scalability (nodes)", nakamotoConsensus: "Thousands to millions", pbft: "Dozens to low hundreds" },
+  { property: "Fork Behavior", nakamotoConsensus: "Temporary forks expected", pbft: "Never forks under normal operation" },
+];
+
+console.table(comparisonTable);
+```
+
 ## Summary
 
 - Consensus mechanisms enable distributed nodes to agree on the state of a ledger.

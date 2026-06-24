@@ -535,3 +535,201 @@ async function apiHandler(event: APIGatewayEvent): Promise<{ statusCode: number;
 ### Challenge Problem
 
 Design a fully serverless e-commerce backend with the following requirements: 1) Product catalog with search, 2) Shopping cart persisted across sessions, 3) Order processing with inventory deduction, 4) Payment processing with retry logic, 5) Order confirmation email, 6) Admin dashboard for analytics, 7) Image processing for product photos, 8) Scheduled daily sales report generation, 9) API rate limiting per user, 10) 99.95% availability SLA. Propose specific services, Lambda functions, triggers, and an architecture diagram.
+
+## AWS CDK: Lambda Function with API Gateway and DynamoDB
+
+Define serverless infrastructure as TypeScript using the AWS CDK:
+
+```typescript
+import * as lambda from "aws-cdk-lib/aws-lambda";
+import * as apigateway from "aws-cdk-lib/aws-apigateway";
+import * as dynamodb from "aws-cdk-lib/aws-dynamodb";
+import * as cdk from "aws-cdk-lib";
+import { NodejsFunction } from "aws-cdk-lib/aws-lambda-nodejs";
+
+class ServerlessStack extends cdk.Stack {
+  constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
+    super(scope, id, props);
+
+    const ordersTable = new dynamodb.Table(this, "OrdersTable", {
+      partitionKey: { name: "orderId", type: dynamodb.AttributeType.STRING },
+      billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
+      encryption: dynamodb.TableEncryption.AWS_MANAGED,
+      pointInTimeRecovery: true,
+    });
+
+    const createOrderFn = new NodejsFunction(this, "CreateOrderHandler", {
+      runtime: lambda.Runtime.NODEJS_20_X,
+      entry: "src/create-order.ts",
+      handler: "handler",
+      memorySize: 256,
+      timeout: cdk.Duration.seconds(10),
+      reservedConcurrentExecutions: 50,
+      environment: {
+        ORDERS_TABLE: ordersTable.tableName,
+      },
+    });
+
+    ordersTable.grantWriteData(createOrderFn);
+
+    const api = new apigateway.RestApi(this, "OrdersApi", {
+      restApiName: "Orders Service",
+      deployOptions: {
+        stageName: "prod",
+        dataTraceEnabled: false,
+        loggingLevel: apigateway.MethodLoggingLevel.ERROR,
+        throttlingRateLimit: 1000,
+        throttlingBurstLimit: 500,
+      },
+    });
+
+    const ordersResource = api.root.addResource("orders");
+    ordersResource.addMethod("POST", new apigateway.LambdaIntegration(createOrderFn));
+  }
+}
+```
+
+## Pulumi: Lambda with SQS Integration
+
+```typescript
+import * as aws from "@pulumi/aws";
+import * as pulumi from "@pulumi/pulumi";
+
+const dlq = new aws.sqs.Queue("order-dlq", {
+  messageRetentionSeconds: 1209600,
+});
+
+const queue = new aws.sqs.Queue("order-processing-queue", {
+  visibilityTimeoutSeconds: 60,
+  receiveWaitTimeSeconds: 20,
+  redrivePolicy: pulumi.jsonStringify({
+    deadLetterTargetArn: dlq.arn,
+    maxReceiveCount: 3,
+  }),
+});
+
+const role = new aws.iam.Role("lambda-execution-role", {
+  assumeRolePolicy: pulumi.jsonStringify({
+    Version: "2012-10-17",
+    Statement: [{
+      Effect: "Allow",
+      Principal: { Service: "lambda.amazonaws.com" },
+      Action: "sts:AssumeRole",
+    }],
+  }),
+});
+
+new aws.iam.RolePolicyAttachment("lambda-basic-execution", {
+  role: role.name,
+  policyArn: aws.iam.ManagedPolicies.AWSLambdaBasicExecutionRole,
+});
+
+const processOrderFn = new aws.lambda.Function("process-order", {
+  runtime: "nodejs20.x",
+  handler: "index.handler",
+  role: role.arn,
+  code: new pulumi.asset.AssetArchive({
+    "index.mjs": new pulumi.asset.StringAsset(`
+export const handler = async (event) => {
+  for (const record of event.Records) {
+    const order = JSON.parse(record.body);
+    console.log("Processing order:", order.id);
+  }
+  return { statusCode: 200 };
+};`),
+  }),
+  memorySize: 256,
+  timeout: 30,
+  environment: { variables: { QUEUE_URL: queue.id } },
+});
+
+new aws.lambda.EventSourceMapping("sqs-trigger", {
+  eventSourceArn: queue.arn,
+  functionName: processOrderFn.arn,
+  batchSize: 10,
+});
+```
+
+## Event-Driven Serverless Architecture
+
+```mermaid
+graph TB
+    subgraph "Event Sources"
+        S3[(S3 Upload)]
+        API[API Gateway]
+        CRON[EventBridge Schedule]
+        SNS[SNS Topic]
+    end
+    
+    subgraph "Processing Layer"
+        L1[Image Resize<br/>Lambda]
+        L2[Order API<br/>Lambda]
+        L3[Report Gen<br/>Lambda]
+        L4[Email Notify<br/>Lambda]
+    end
+    
+    subgraph "Data Layer"
+        D1[(DynamoDB<br/>Orders)]
+        D2[(S3<br/>Images)]
+        D3[(ElastiCache<br/>Sessions)]
+    end
+    
+    subgraph "Orchestration"
+        SF[Step Functions<br/>Order Workflow]
+    end
+    
+    subgraph "Observability"
+        CW[CloudWatch<br/>Metrics + Logs]
+        XR[X-Ray<br/>Tracing]
+    end
+    
+    S3 --> L1
+    API --> L2
+    CRON --> L3
+    SNS --> L4
+    
+    L1 --> D2
+    L2 --> D1
+    L2 --> SF
+    SF --> D1
+    SF --> L4
+    
+    L1 --> CW
+    L2 --> CW
+    L3 --> CW
+    
+    L1 --> XR
+    L2 --> XR
+    SF --> XR
+```
+
+## Real-World Case Study: Nordstrom's Serverless Transformation
+
+Nordstrom migrated their e-commerce notification platform to a fully serverless architecture, reducing operational overhead by 40%.
+
+**Before:** A monolith application on EC2 running 24/7 sent 100M+ notifications per month (email, SMS, push). It required constant patching, capacity planning, and had frequent outages during peak shopping events.
+
+**After (Serverless Architecture):**
+- **Lambda** functions for each notification channel (email, SMS, push)
+- **SQS** for queuing and decoupling notification generation from delivery
+- **SNS** for fan-out to multiple channels
+- **DynamoDB** for storing notification templates and delivery status
+- **Step Functions** for orchestrating multi-step notification workflows (e.g., order confirmation → shipping update → delivery)
+- **EventBridge** for scheduling recurring notifications
+
+**Results:**
+- 40% reduction in operational costs
+- Zero infrastructure management
+- Automatic scaling during Black Friday (from 1K to 100K notifications/min)
+- 99.99% delivery uptime
+- Developers ship new notification types in days instead of weeks
+
+**Key Lesson:** Serverless is ideal for spiky, event-driven workloads like e-commerce notifications where traditional provisioned infrastructure would be wasteful and complex to operate at scale.
+
+### Additional Exercises
+
+6. **Step Functions Workflow:** Design a Step Functions state machine for a serverless document approval workflow: user uploads document → Lambda extracts text → SNS notifies approvers → wait for approval (callback pattern) → if approved, store in S3 and notify user; if rejected, notify with reason.
+
+7. **Cost Optimization:** A Lambda function runs 10M times/month with 512 MB memory, 2s average duration, and 50 Provisioned Concurrency. Calculate the monthly cost. Then suggest three cost optimization strategies and estimate savings for each.
+
+8. **Hybrid Architecture:** Design a hybrid architecture where a Lambda function processes API requests but needs to query an on-premises database behind a VPN. Include VPC configuration, security group rules, NAT gateway, and the Lambda VPC networking setup. Discuss the performance implications of this approach.

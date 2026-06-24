@@ -481,6 +481,107 @@ def timer(func):
 - network latency
 
 
+## TypeScript Parallel
+
+TypeScript has its own decorator proposal (TC39 stage 3) with a different syntax:
+
+```typescript
+// TypeScript decorator (TS 5.x native decorators)
+function logged<T extends (...args: any[]) => any>(
+  target: T,
+  context: ClassMethodDecoratorContext
+): T {
+  function replacement(this: any, ...args: any[]) {
+    console.log(`Calling ${String(context.name)} with`, args);
+    const result = target.call(this, ...args);
+    console.log(`Result:`, result);
+    return result;
+  }
+  return replacement as T;
+}
+
+class Calculator {
+  @logged
+  add(a: number, b: number): number {
+    return a + b;
+  }
+
+  @logged
+  multiply(a: number, b: number): number {
+    return a * b;
+  }
+}
+
+// Timing decorator
+function timed<T extends (...args: any[]) => any>(
+  target: T,
+  context: ClassMethodDecoratorContext
+): T {
+  function replacement(this: any, ...args: any[]) {
+    const start = performance.now();
+    const result = target.call(this, ...args);
+    const elapsed = performance.now() - start;
+    console.log(`${String(context.name)} took ${elapsed.toFixed(2)}ms`);
+    return result;
+  }
+  return replacement as T;
+}
+
+// Higher-order function (more common TS pattern, no decorator needed)
+function memoize<T extends (...args: any[]) => any>(fn: T): T {
+  const cache = new Map<string, any>();
+  return function (this: any, ...args: any[]) {
+    const key = JSON.stringify(args);
+    if (cache.has(key)) return cache.get(key);
+    const result = fn.call(this, ...args);
+    cache.set(key, result);
+    return result;
+  } as T;
+}
+
+const fib = memoize(function (n: number): number {
+  if (n <= 1) return n;
+  return fib(n - 1) + fib(n - 2);
+});
+console.log(fib(40));  // computed quickly with memoization
+
+// Property decorator for read-only
+function readOnly(target: any, key: string): void {
+  Object.defineProperty(target, key, { writable: false });
+}
+```
+
+### Python vs TypeScript Decorators
+
+| Concept | Python | TypeScript |
+|---------|--------|------------|
+| Syntax | `@decorator` | `@decorator` |
+| Targets | Functions + classes | Methods + properties (TS-native) |
+| Arguments | Factory wrapper pattern | `context` parameter |
+| Composition | `@a @b` bottom-up | Same |
+| Common use | `@lru_cache`, `@property` | Logging, timing, validation |
+| Status | Core feature | Stage 3 (native in TS 5.x) |
+
+### When to Use Decorators vs Wrappers
+
+```python
+# Option 1: Decorator (applied at definition time)
+@timer
+def compute(): ...
+
+# Option 2: Explicit wrapper (applied at call time)
+compute = timer(compute)
+
+# Option 3: Context manager (applied at execution time)
+with timing("compute"):
+    compute()
+
+# Rule of thumb:
+# - Use decorators when the behavior should apply to ALL calls
+# - Use context managers when timing varies per invocation
+# - Use explicit wrappers when you need conditional application
+```
+
 ## Summary
 
 - Decorators wrap functions to extend behaviour.

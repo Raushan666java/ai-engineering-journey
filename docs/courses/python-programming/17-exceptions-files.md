@@ -554,6 +554,95 @@ with open("file.txt") as f:
 - CSV handling
 
 
+## TypeScript Parallel
+
+TypeScript uses `try/catch/finally` with similar semantics but some differences:
+
+```typescript
+// Basic try/catch/finally
+try {
+  const data = JSON.parse(userInput);
+  console.log(data.name);
+} catch (error) {
+  // TypeScript: error is `unknown` type by default
+  if (error instanceof SyntaxError) {
+    console.error("Invalid JSON:", error.message);
+  } else {
+    console.error("Unexpected error:", error);
+  }
+} finally {
+  console.log("Parse attempt finished");
+}
+
+// Custom error classes
+class ConfigError extends Error {
+  constructor(
+    message: string,
+    public readonly configKey?: string
+  ) {
+    super(message);
+    this.name = "ConfigError";
+  }
+}
+
+class ConfigParseError extends ConfigError {
+  constructor(key: string, value: string) {
+    super(`Cannot parse ${key}=${value}`, key);
+    this.name = "ConfigParseError";
+  }
+}
+
+// Throw and catch custom errors
+function parseConfig(json: string): Record<string, string> {
+  try {
+    return JSON.parse(json);
+  } catch (e) {
+    throw new ConfigParseError("root", json.slice(0, 50));
+  }
+}
+
+// Resource management (like Python's `with`)
+// TypeScript 5.2+ has `using` for disposable resources
+class FileHandle {
+  constructor(private path: string) {}
+  [Symbol.dispose](): void {
+    console.log(`Closing ${this.path}`);
+  }
+  read(): string {
+    return `content of ${this.path}`;
+  }
+}
+
+// Using declaration (TS 5.2+)
+{
+  using file = new FileHandle("data.txt");
+  console.log(file.read());
+}  // `file` is disposed here automatically
+
+// fs module for file operations
+import * as fs from "node:fs";
+import * as path from "node:path";
+
+const content = fs.readFileSync(
+  path.join("data", "config.json"),
+  "utf-8"
+);
+```
+
+### Python vs TypeScript Error Handling
+
+| Concept | Python | TypeScript |
+|---------|--------|------------|
+| Try/catch | `try/except` | `try/catch` |
+| Finally | `finally` | `finally` |
+| Custom error | Inherit `Exception` | Extend `Error` |
+| Error type | Named exception class | `instanceof` check |
+| Stack trace | `traceback` module | `error.stack` |
+| Resource mgmt | `with` statement | `using` (TS 5.2+) |
+| Assertions | `assert` statement | No built-in (use `if` + throw) |
+| File I/O | `pathlib` + built-in functions | `node:fs` module |
+| JSON | `json` module (built-in) | `JSON.parse`/`JSON.stringify` |
+
 ## Summary
 
 - `try/except/else/finally` handles exceptions; `finally` always executes.

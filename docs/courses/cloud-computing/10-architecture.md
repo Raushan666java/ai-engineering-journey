@@ -526,8 +526,58 @@ console.log(generateReviewActions(review).join("\n"));
 **B) Each service has its own database.** Microservices follow the "database per service" pattern to ensure loose coupling. Sharing a database between services creates tight coupling and defeats the purpose of microservices.
 </details>
 
+### TypeScript: TCO Calculator
+
+```typescript
+interface CostInputs {
+  onPremCost: number;
+  rehostCost: number;
+  refactorCost: number;
+  migrationYear: number;
+  years: number;
+  annualGrowth: number;
+}
+
+class TcoCalculator {
+  compute(inputs: CostInputs): { rehost: number[]; refactor: number[]; onPrem: number[] } {
+    const onPrem: number[] = [];
+    const rehost: number[] = [];
+    const refactor: number[] = [];
+    let workload = 1;
+    for (let y = 0; y < inputs.years; y++) {
+      onPrem.push(inputs.onPremCost * workload);
+      if (y < inputs.migrationYear) {
+        rehost.push(inputs.onPremCost * workload);
+        refactor.push(inputs.onPremCost * workload);
+      } else {
+        rehost.push(inputs.rehostCost * workload);
+        refactor.push(inputs.refactorCost * workload);
+      }
+      workload *= 1 + inputs.annualGrowth;
+    }
+    return { onPrem, rehost, refactor };
+  }
+
+  roi(inputs: CostInputs): { rehostVsOnPrem: number; refactorVsOnPrem: number } {
+    const { onPrem, rehost, refactor } = this.compute(inputs);
+    const onPremTotal = onPrem.reduce((a, b) => a + b, 0);
+    return {
+      rehostVsOnPrem: ((onPremTotal - rehost.reduce((a, b) => a + b, 0)) / onPremTotal) * 100,
+      refactorVsOnPrem: ((onPremTotal - refactor.reduce((a, b) => a + b, 0)) / onPremTotal) * 100,
+    };
+  }
+}
+```
+
 ## Summary
 
+- The Well-Architected Framework has 6 pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.
+- Migration follows the 6 Rs: Rehost, Replatform, Refactor, Repurchase, Retire, and Retain.
+- DR strategies range from Backup & Restore (RTO hours) to Multi-Region Active/Active (RTO seconds).
+- Fault tolerance requires redundancy at every layer: compute, storage, network, and database.
+- Microservices decompose monoliths into independently deployable services.
+- Observability combines metrics, logs, and distributed traces for system insight.
+- RTO and RPO targets drive all DR and backup architecture decisions.
 - The Well-Architected Framework provides six pillars for evaluating cloud architectures.
 - Migration strategies range from Rehost (quick) to Refactor (max benefit).
 - DR strategies form a spectrum from Backup & Restore (cheap, slow) to Active/Active (expensive, fast).
